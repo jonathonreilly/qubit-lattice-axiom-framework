@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_cubic_record_carrier_cp_seed_mixed_slab_2026_08_27.py
+runner_sha256: 8019084e448cfa56a8445795c4d97e928ada0869b98b83f4d81e7e7d283d4c4e
+input_fingerprint_sha256: c9bd4412c71037a9df5b66c9854ee6523020a019323d7ed6acdaf523dbee665e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.69
+status: ok
+----- stdout -----
+PASS 24 proper cubic rotations
+PASS rotation signed-permutation determinants
+PASS rotation group closure
+PASS 52 status labels
+PASS 12 status rotation orbits
+PASS six-bit information bound for 52
+PASS six-bit information bound for 53
+PASS six-shell orbit-sum dimension 10
+PASS literal six-shell invariant nonembedding
+PASS 12 perpendicular incidence rows
+PASS incidence Gram spectrum 2,2,4,4,4,8
+PASS q column Gram identity
+PASS joint code has 52 vectors
+PASS joint code orthonormal
+PASS joint code rotation intertwiner
+PASS seven-bit complement covariance
+PASS Omega unit norm
+PASS Omega orthogonal to all code vectors
+PASS Omega proper-cubic invariant
+PASS Omega complement invariant
+PASS decoder effects are orthogonal projectors
+PASS decoder effects sum to code projector
+PASS decoder is not full identity
+DATA product-orbit histograms six={1: 2, 3: 2, 6: 2, 8: 1, 12: 3}; center+six={1: 4, 3: 4, 6: 4, 8: 2, 12: 6}; corner={1: 2, 2: 1, 4: 2, 6: 2, 8: 5, 12: 6, 24: 5}; center+corner={1: 4, 2: 2, 4: 4, 6: 4, 8: 10, 12: 12, 24: 10}
+PASS centered candidates have four fixed configurations
+PASS centered candidates have only four size-six orbits
+PASS sub-12 complete-orbit product candidates fail status supply
+PASS product code has 52 labels
+PASS product code states distinct
+PASS two-shell product rotation covariance
+PASS two-shell product complement covariance
+PASS 31 writer contexts partition identity
+PASS deterministic writer target map cubic and complement covariant
+PASS mixed contexts exchange and bad context is fixed
+PASS writer Kraus completeness
+PASS writer manifest Choi positive
+PASS writer trace preservation controls
+PASS all 52 recorded states exactly locked
+PASS bad context preserves precursor
+PASS all 28 deterministic good writes exact
+PASS equal mixed write pair exact on both event orders
+PASS good writes have zero code leakage
+PASS good writes create code probability from Omega
+PASS orthogonal non-code sector is locked rather than reset
+PASS mixed event-swap complement covariance
+PASS Cycle-823 endpoint pointer is exact XOR opportunity control
+PASS event effects positive and nontrivial
+PASS event effects sum to opportunity
+PASS opportunity-control Kraus completeness
+PASS opportunity-control outcome normalization
+PASS mixed slab exact 26-word census
+PASS mixed slab independent terminal equations
+PASS mixed slab four parity-class bits
+PASS independent-coin success is 2^-12
+PASS mixed precursor symmetry has no fixed binary output
+PASS shared-four-bit benchmark precursor completeness
+PASS shared-four-bit benchmark complement covariance
+PASS shared-four-bit benchmark is correlated nonlocal
+PASS allowed source anchors
+PASS five exact dependency links
+PASS required boundary prose
+SUMMARY PASS 60 FAIL 0
+CLASSIFICATION: positive-carrier-boundary
+TOTAL: PASS=60 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_cubic_record_carrier_cp_seed_mixed_slab_independent_2026_08_27.py
+runner_sha256: 0e817118ffc6810521bd7b00f8bea473d4a62088ebd81c28091817344ecc94c3
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.88
+status: ok
+----- stdout -----
+PASS PROPER_ROTATIONS
+PASS LABEL_AND_WORD_CONVENTION — labels=52; rotation orbits=12; complement pairs=26; words=26
+PASS SIX_SHELL_ORBITS — 64 patterns give 10 orbits
+BOUNDARY 12 invariant label vectors cannot inject into 10 configuration orbits for the six-shell product representation.
+PASS PAIR_FRAME — spec(G)=(2.0, 2.0, 4.0, 4.0, 4.0, 8.0); symmetric eigh
+PASS CODE_GRAM — 52x52 residual=8.88e-16
+PASS ROTATION_INTERTWINERS — all 24x52 actions
+PASS COMPLEMENT_INTERTWINERS — all 52 actions
+PASS OMEGA_PRECURSOR — |+> tensor uniform weight-three; norm/code/symmetry
+PASS DECODE_PROJECTORS — ranks 26+26=52
+PASS CARRIER_HISTOGRAMS — fixed/size-six=((2, 2), (4, 4), (2, 2), (4, 4))
+PASS TWO_SHELL_PRODUCT_CODE — distinct=52; rotations=True; complement=True
+PASS WRITER_CONTEXT_CATALOG
+PASS DETERMINISTIC_WRITER_COVARIANCE — all 28 contexts intertwine 24 rotations and complement
+PASS MIXED_BAD_CONTEXT_COVARIANCE
+PASS WRITER_COMPLETENESS — 31 context blocks; residual=1.02e-15
+PASS WRITER_CHOI_POSITIVE — direct-sum manifest Choi minimum=0.5
+PASS WRITER_TRACE_PRESERVATION — state seeds 218,823,863
+PASS LOCKED_STATE_INVARIANCE — all 31x52 context/code inputs
+PASS BAD_CONTEXT_PRECURSOR
+PASS DETERMINISTIC_WRITER_ACTIONS — all 28 targets
+PASS MIXED_WRITER_ACTIONS — both event-order contexts
+PASS MIXED_BRANCH_COVARIANCE — equal BG branches swap under complement
+PASS NONCODE_LOCK_SECTOR
+PASS WRITER_KRAUS_DELETION — positive completeness residual=1
+PASS CYCLE823_XOR_POINTER
+PASS EVENT_BRANCH_EFFECTS — four positive noncommuting effects sum to the opportunity projector
+PASS EVENT_MENU_COMPLETENESS — four-seed bank plus failure and lock Kraus operators
+PASS EVENT_EFFECT_DELETIONS — deleting any branch leaves a positive completeness residual
+PASS SLAB_DIRECT_CENSUS — valid=16; touched words=3145728; complement=True
+PASS SLAB_PARITY_EQUATIONS — rank=12; free bits=4; solutions=16
+PASS SLAB_FAIR_SUCCESS — independent fair success=1/4096
+PASS SHARED_FOUR_BIT_ISOMETRY — outputs=16; amplitude=1/4; norm=1; complement=True
+SCOPE plane isometry is nonlocal on the 16-site plane.
+SUMMARY PASS 32 FAIL 0
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

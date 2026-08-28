@@ -1,6 +1,6 @@
 {
- "edge_count": 16236,
- "node_count": 5640,
+ "edge_count": 16239,
+ "node_count": 5641,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -445,6 +445,10 @@
   "admissibility_d4_h1_action_native_score_quotient_record_dilation_boundary_bounded_theorem_note_2026-08-27": {
    "deps_hash": "6aa58ef31ceb",
    "out_degree": 5
+  },
+  "admissibility_d4_h1_cubic_record_carrier_cp_seed_mixed_slab_boundary_bounded_theorem_note_2026-08-27": {
+   "deps_hash": "466fd0545e5e",
+   "out_degree": 3
   },
   "admissibility_d4_h1_edge_comparison_cell_corner_t2_factorization_boundary_bounded_theorem_note_2026-08-26": {
    "deps_hash": "1f0a5e1eefbc",

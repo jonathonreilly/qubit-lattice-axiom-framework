@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block226-tagged-relational-echo-20260828
 campaign_number: 226
-status: preregistered_before_runner
-phase: exact_linear_transition_compiler
+status: preregistration_amended_before_runner
+phase: relational_confirmation_linear_transition_compiler
 parent_commit: 3adc3da49c
 parent_branch: physics-loop/toe-axiom-closure-block225-record-qnd-three-pass-echo-20260828
 branch: physics-loop/toe-axiom-closure-block226-tagged-relational-echo-20260828
@@ -17,6 +17,10 @@ new_onsite_rays_allowed: 0
 hidden_query_id_allowed: false
 epoch_coordinate_size_allowed: false
 path_lengths_primary: [0,1,2,3,4]
+block225_nine_states_used_as_capacity_only: true
+first_good_confirmation_held_relationally: true
+success_confirmation_consumption: atomic_two_arm
+SS_physical_candidate_meaning: failed_barrier
 width_two_parallel_required: true
 y_parent_two_child_triples: 12
 contact_signatures_required: 47
@@ -29,4 +33,3 @@ decision_class: pending
 axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0
-

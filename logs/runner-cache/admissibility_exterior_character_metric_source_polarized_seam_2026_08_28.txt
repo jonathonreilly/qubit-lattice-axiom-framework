@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_metric_source_polarized_seam_2026_08_28.py
+runner_sha256: a6dad037e5bde0dc68a61cc4e5646d86d7f1d262cf2e53821e1038f1780f9807
+input_fingerprint_sha256: c613a99f87d2ba46f57b0906dab550f4fa5c8d3083183d5b19f4d60cf743c9d0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+[PASS] source boundary: the parents supply the metric carrier and character action but no metric/source extension
+[PASS] polarization identity: the mismatch coefficient cancels the character constant exactly
+[PASS] matched curved witness: the supplied metric and source receive exact nonzero response
+[PASS] same-action reciprocity: metric/source and connection mixed derivatives agree in both orders
+[PASS] common-chart covariance: simultaneous proper-cubic conjugation preserves the metric/source pairing
+[PASS] source normalization: a supplied strictly positive relative scale separates the scalar feature
+[PASS] coframe quotient: the kernel resolves metrics, not left-orthogonal coframe gauge copies
+[PASS] naive metric average falsifier: positive endpoint weights alone do not imply joint reflection positivity
+[PASS] exact positive control: the polarized metric/connection Gram is positive definite
+[PASS] joint Gram expansion: nonnegative coupling gives tensor-feature squares for metric, source, and character data
+[PASS] source-scale boundary: zero scale has identical scalar rows and negative scale has an exact indefinite Gram
+[PASS] strict-support bridge: the parent supplies all group irreps with trivial padding and metric polynomial tails retain arbitrarily high degree
+[PASS] improper-sector boundary: curvature can stress metric/source data while the within-component connection force vanishes
+[PASS] zero-coupling boundary: a nontrivial dynamic metric/source domain makes the constant transfer noninjective
+[PASS] physical boundary: the compact metric/source domain, measure, seam action, and physical identification remain supplied
+per_element: exact pairings, character constants, responses, and Gram determinants were checked
+per_site: one common-chart metric/source seam item and its reciprocal variations were checked exactly
+per_mode: proper curved, improper curved, negative-sign, naive-average, and zero-coupling modes were executed
+per_block: checked and not executed — finite-slab positivity follows by products and pullback of the proved seam kernels
+lattice_wide: checked and not executed — no continuum metric dynamics, Einstein equation, or physical source law is claimed
+STATUS: supplied joint metric/source seam is reflection positive for nonnegative coupling; physical selection remains open
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

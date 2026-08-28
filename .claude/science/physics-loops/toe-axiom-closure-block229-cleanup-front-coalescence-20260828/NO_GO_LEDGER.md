@@ -13,3 +13,17 @@ scanning, and coherent arbitration. Any negative result must preserve all live
 routes and run the current no-go-discipline N1--N8 gate. Failure to establish
 an arbitrary-length rank is a rank-basis/compiler result, not proof that no
 termination order exists.
+
+## Result
+
+The one-cell completion passes every declared bounded density census but fails
+the preregistered contiguous eight-site translated-join obligation. The exact
+overlap is `CF_T@7 / CF_A@9` on the reachable source
+`R-H-L-T-T_F-T-L-T-T-T_F-T-T_F-A`. It joins globally, but a translated
+participant/L-count invariant forces the join to reach the distant cleanup
+head.
+
+The N1--N8 gate rejects every broader no-go and demotes the result to
+`partial-attempt-with-named-untested-routes`. General component coalescence,
+distributed incidence, serial scanning, and coherent arbitration remain live.
+This is not an alphabet, support, Record, physical locality, or axiom no-go.

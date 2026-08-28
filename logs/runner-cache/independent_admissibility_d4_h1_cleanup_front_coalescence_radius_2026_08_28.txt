@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_h1_cleanup_front_coalescence_radius_2026_08_28.py
+runner_sha256: a691f77e417b3675f46f31813335119621dbdfd2d9aa072be2a3648cb7c97ce5
+input_fingerprint_sha256: 5faf1484c6dee038b3ee9e080d2bce780b995e38a7e1c2d5a7e709a4142b64ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 14.98
+status: ok
+----- stdout -----
+PASS literal Block-229 packet, result note, and N1-N8 sidecar bind the oracle
+PASS 45 completed parent cylinders plus sole C2 reconstruct 46 exact local rows
+PASS all 2,046 contact subsets through n=10 are acyclic, unique, and accounted
+PASS reachable CF_A@9 and CF_T@7 branches reproduce the exact overlap witness
+PASS every containing neighborhood of at most eight sites has zero common state
+PASS no width-six-through-eleven interval joins; width twelve is the first join
+PASS the two successors remain globally confluent at the exact abort normal
+PASS the two Pareto-minimal exact joins and branch depths are reconstructed
+PASS changed-site cardinality/hull differ from the twelve-site inspected neighborhood
+PASS the first joining interval grows from twelve to eighteen on reachable translations
+PASS the participant and L-count invariant forces every translated join to reach H
+PASS scope stops at the exact reduced compiler and does not promote a broad no-go
+PASS stdout remains below the six-thousand-character forensic budget
+TABLE rows=46 sources=46 max_support=4 sha256=f20b9424cc14a0c2bd984d32e60e1e980f11c20a972a74748d21f0ef2573efaf
+A1_ALL_SUBSETS fixtures=2046 states=249006 transitions=576990 max_states=513 cyclic_graphs=0 accounting_failures=0
+CRITICAL_SOURCE R-H-L-T-T_F-T-L-T-T-T_F-T-T_F-A trace=CF_T@5>M@5>Q_T@0
+CRITICAL_BRANCH_A R-H-L-T-T_F-T-L-T-T-T-T-L-A
+CRITICAL_BRANCH_T R-H-L-T-T_F-T-L-T-T-L-T-T_F-A
+WINDOW_PROFILE [[7,12,4,4,0],[6,12,4,4,0],[5,12,4,4,0],[4,12,14,20,0],[3,12,20,33,0],[2,12,20,33,0],[1,12,72,120,23]]
+MIN_TOTAL_JOIN depths=(2, 8) state=R-P-P-H-T-L-L-T-T-T-T-L-A changed_sites=(1, 2, 3, 4, 5, 9, 11) changed_cardinality=7 changed_hull=11 inspected_cardinality=12 inspected_hull=12
+MIN_MAX_JOIN depths=(5, 7) state=R-P-P-P-P-P-H-T-L-T-T-L-A
+TRANSLATED_MIN_WINDOWS [[10,12],[11,13],[12,14],[13,15],[14,16],[15,17],[16,18]]
+SYMBOLIC the CF_A branch irreversibly removed the seam participant, so any common state omits it
+SYMBOLIC without H, the CF_T branch can remove that lone pre-A participant only through CF_A
+SYMBOLIC that CF_A step adds one L, while every other H-free row preserves L-count
+SYMBOLIC no H-free row removes the surplus L, so an exact join must inspect the distant H head
+DECISION_CLASS scoped-coalescence-critical-pair-radius-failure
+SCOPE partial-attempt-with-named-untested-routes exact_46_row_reduced_compiler_only
+AUDIT_INPUT_SHA256 8aad2cd331e39c4ae0017f37dc380c558b89cb978af5452e8b68166105bc04e5
+per_element: checked — all 46 exact reduced source cylinders, masks, targets, and participant consumptions are literal; labelled darts are absent.
+per_site: checked — every contact subset through n=10 and every containing interval through the first exact join are exhaustively enumerated.
+per_mode: checked and not executed — labelled carrier modes, projectors, Kraus completeness, and CP are outside this reduced oracle.
+per_block: checked — A0/A1 reduced behavior and the A2 radius hard stop are reproduced; A3 and the labelled/physical stages are not executed.
+lattice_wide: checked and not executed — the symbolic family refutes fixed-radius closure only for this compiler; other tables and physical laws remain open.
+RUNNER_SHA256 a691f77e417b3675f46f31813335119621dbdfd2d9aa072be2a3648cb7c97ce5
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

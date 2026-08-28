@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_cleanup_front_coalescence_radius_2026_08_28.py
+runner_sha256: 73ebafaaea675519fa3e3aef046bde7200e7d90c81e99b1d466b994d9180d418
+input_fingerprint_sha256: 32cacf9b14401c13d65e6856712ff30c842835108a8d4ccbe35830a8c455354d
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 76.53
+status: ok
+----- stdout -----
+PASS literal committed Block-229 packet and landed N1-N8 sidecar bind the run
+PASS the parent reconstructs 50 raw rows, 45 exact cylinders, and four common joins
+PASS C2 is added exactly once without alphabet or support growth
+PASS fixture 21 reproduces three parent normals and C2 joins all histories to exact abort
+PASS all 2,046 contact subsets through length ten are acyclic, unique, and accounted
+PASS all 1,560 zero/one/two-contact words through length twenty pass
+PASS all 333 adjacent/dense adversarial controls through length twenty pass
+PASS the reachable CF_A/CF_T overlap has no common successor in any allowed eight-site window
+PASS the same two successors do join globally at the exact declared abort
+PASS the minimum joining window grows under exact reachable translations
+PASS a symbolic participant/L-count invariant proves every translated join must reach H
+PASS the hard-stop prevents rank, labelled lift, CP, fairness, Record, or axiom promotion
+TABLE rows=46 sources=46 max_support=4 sha256=a91e3f45f10eba43831a68505a58ee3ea239a23e1dfb756c09e1d149a4c98a65
+PARENT_FIXTURE_21 normals=R-H-T-L-L-T-A | R-P-H-T-L-L-A | R-P-P-P-P-P-S
+A1_ALL_SUBSETS fixtures=2046 states=249006 transitions=576990 max_states=513
+A1_SPARSE fixtures=1560 states=317665 transitions=693482 max_states=1502
+A1_ADVERSARIAL fixtures=333 states=368883 transitions=1684731 max_states=177201
+CRITICAL_SOURCE R-H-L-T-T_F-T-L-T-T-T_F-T-T_F-A
+CRITICAL_BRANCH_A R-H-L-T-T_F-T-L-T-T-T-T-L-A
+CRITICAL_BRANCH_T R-H-L-T-T_F-T-L-T-T-L-T-T_F-A
+RADIUS_WINDOWS [[5,12,4,4,0],[6,12,4,4,0],[7,12,4,4,0]]
+GLOBAL_JOIN left_states=72 right_states=120 common=23 normal=R-P-P-P-P-P-P-P-P-P-P-P-S
+TRANSLATED_MIN_WINDOWS [[10,12],[11,13],[12,14],[13,15],[14,16],[15,17],[16,18]]
+SYMBOLIC for every n>=10 the displayed source is reached by CF_T@(n-5), M@(n-5), Q_T@0
+SYMBOLIC the overlapping successors are CF_A@(n-1) and CF_T@(n-3) on six sites
+SYMBOLIC without H, only CF_A/CF_T/E_TL/M/M_F can act and only CF rows increase L-count
+SYMBOLIC the CF_A branch has already quenched the seam participant; the CF_T branch must quench it
+SYMBOLIC the fixed seam A excludes E_TL/M_F there, so quenching uses CF_A and creates one surplus L
+SYMBOLIC M preserves L-count and every L-removing/coalescing row contains H; hence any join must reach H
+STAGE_A3 checked and not executed — Stage A2's frozen radius counterexample triggers the preregistered hard stop before rank search.
+DECISION_CLASS scoped-coalescence-critical-pair-radius-failure
+NO_GO_STATUS partial-attempt-with-named-untested-routes
+NEXT_ROUTE general_associative_commutative_idempotent_component_coalescence
+SCOPE one_cell_reduced_cleanup_table_only fullstate_CP_fairness_Record_law_axioms_unexecuted
+AUDIT_INPUT_SHA256 8d0a7dfe44324b108aa15de23d268b706e2d7cc35a81407464df54921a94c8b3
+per_element: checked — all 46 exact reduced source cylinders and participant masks are reconstructed and transition-accounted.
+per_site: checked — exhaustive subsets through length ten plus sparse and adversarial arms through length twenty are executed.
+per_mode: checked and not executed — labelled darts and the 128-ray carrier are downstream of the failed translated-radius gate.
+per_block: checked and not executed — CP completeness and strong-fairness components cannot inherit a reduced radius failure.
+lattice_wide: checked and not executed — no fixed-radius physical Record law, arbitrary lattice theorem, or axiom conclusion is claimed.
+TOE zero obligation retirement; zero axiom retirement; zero TOE percentage movement; retained-positive end-to-end theory count remains zero.
+RUNNER_SHA256 73ebafaaea675519fa3e3aef046bde7200e7d90c81e99b1d466b994d9180d418
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

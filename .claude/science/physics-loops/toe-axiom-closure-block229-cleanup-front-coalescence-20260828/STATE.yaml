@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block229-cleanup-front-coalescence-20260828
 campaign_number: 229
-status: preregistration_ready
-phase: pre_execution_one_cell_freeze
+status: result_packaged
+phase: scoped_radius_failure
 parent_commit: 590d5326ac
 parent_branch: physics-loop/toe-axiom-closure-block228-phase-contact-product-20260828
 branch: physics-loop/toe-axiom-closure-block229-cleanup-front-coalescence-20260828
@@ -11,9 +11,9 @@ campaign_target_end: 2026-08-28T20:53:52-04:00
 portfolio_recheck_interval: 3h_or_each_decisive_stage
 review_loop_allowed: false
 pre_result_panel_vote: 3_one_cell_completion_1_general_coalescence_1_gravity
-latest_external_pr_checked: 7776
-latest_external_pr_effect: fixed_carrier_transfer_limit_no_record_route_rerank
-active_route: one_cell_cleanup_front_completion
+latest_external_pr_checked: 7779
+latest_external_pr_effect: one_exact_changing_carrier_cell_no_record_route_rerank
+active_route: general_deterministic_component_coalescence
 fallback_route: general_deterministic_component_coalescence
 new_reduced_rows_allowed: 1
 new_reduced_row: H-T-L-L_to_P-H-T-L
@@ -28,6 +28,9 @@ global_absence_or_priority_allowed: false
 path_length_or_contact_count_guard_allowed: false
 full_state_stage: gated_after_reduced_census_critical_pairs_and_rank
 cp_fairness_stage: gated_after_full_state
+decision_class: scoped-coalescence-critical-pair-radius-failure
+claim_status: partial-attempt-with-named-untested-routes
+next_action: preregister_Block230_general_associative_component_coalescence
 axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0

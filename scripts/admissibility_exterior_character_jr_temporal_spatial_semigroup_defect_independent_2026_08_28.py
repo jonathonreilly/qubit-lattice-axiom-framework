@@ -9,7 +9,7 @@ NumPy, or a campaign scratch module.
 from __future__ import annotations
 
 from fractions import Fraction as F
-from itertools import combinations, product
+from itertools import combinations, permutations, product
 from math import comb, factorial
 
 
@@ -38,6 +38,14 @@ def matmul(left: Matrix, right: Matrix) -> Matrix:
 def subtract(left: Matrix, right: Matrix) -> Matrix:
     return tuple(
         tuple(left[row][column] - right[row][column]
+              for column in range(len(left[0])))
+        for row in range(len(left))
+    )
+
+
+def add(left: Matrix, right: Matrix) -> Matrix:
+    return tuple(
+        tuple(left[row][column] + right[row][column]
               for column in range(len(left[0])))
         for row in range(len(left))
     )
@@ -496,11 +504,147 @@ def complete_step_response_fixture() -> tuple[tuple[int, F, F, F, F], ...]:
     return tuple(rows)
 
 
+def _s3_multiply(left: tuple[int, ...],
+                 right: tuple[int, ...]) -> tuple[int, ...]:
+    return tuple(left[right[index]] for index in range(3))
+
+
+def _s3_cycle_type(permutation: tuple[int, ...]) -> tuple[int, ...]:
+    seen: set[int] = set()
+    lengths: list[int] = []
+    for start in range(3):
+        if start in seen:
+            continue
+        point = start
+        length = 0
+        while point not in seen:
+            seen.add(point)
+            length += 1
+            point = permutation[point]
+        lengths.append(length)
+    return tuple(sorted(lengths, reverse=True))
+
+
+def s3_mixed_response_fixture() -> dict[str, object]:
+    """Independent r=3 mixed kinetic/action response over normalized S3 Haar."""
+
+    group = tuple(permutations(range(3)))
+    group_index = {element: index for index, element in enumerate(group)}
+    identity_element = (0, 1, 2)
+    transpositions = tuple(
+        element for element in group if _s3_cycle_type(element) == (2, 1)
+    )
+    potential = {
+        element: F({(1, 1, 1): 0, (2, 1): 2, (3,): 5}[
+            _s3_cycle_type(element)
+        ])
+        for element in group
+    }
+    width = 3
+    states = tuple(product(group, repeat=width))
+
+    def coarse_product_s3(state: tuple[tuple[int, ...], ...]) -> tuple[int, ...]:
+        result = identity_element
+        for element in state:
+            result = _s3_multiply(element, result)
+        return result
+
+    fibers = {
+        delta: tuple(row for row, state in enumerate(states)
+                     if coarse_product_s3(state) == delta)
+        for delta in group
+    }
+    isometry: Matrix = tuple(
+        tuple(F(1, 6) if coarse_product_s3(state) == delta else F(0)
+              for delta in group)
+        for state in states
+    )
+    actions = tuple(
+        sum((potential[element] for element in state), F(0))
+        for state in states
+    )
+    means = tuple(
+        sum((actions[row] for row in fibers[delta]), F(0)) / 36
+        for delta in group
+    )
+    variances = tuple(
+        sum(((actions[row] - means[group_index[delta]]) ** 2
+             for row in fibers[delta]), F(0)) / 36
+        for delta in group
+    )
+    centered = tuple(value - F(8) for value in actions)
+    b_matrix: Matrix = tuple(
+        tuple(centered[row] * isometry[row][column]
+              for column in range(len(group)))
+        for row in range(len(states))
+    )
+
+    def apply_fine_laplacian(matrix: Matrix) -> Matrix:
+        rows: list[tuple[F, ...]] = []
+        for row, state in enumerate(states):
+            values = [F(width) * matrix[row][column]
+                      for column in range(len(matrix[0]))]
+            for coordinate in range(width):
+                for transposition in transpositions:
+                    neighbor = list(state)
+                    neighbor[coordinate] = _s3_multiply(
+                        transposition, neighbor[coordinate]
+                    )
+                    neighbor_row = states.index(tuple(neighbor))
+                    for column in range(len(values)):
+                        values[column] -= F(1, 3) * matrix[neighbor_row][column]
+            rows.append(tuple(values))
+        return tuple(rows)
+
+    coarse_laplacian: Matrix = tuple(
+        tuple(
+            F(int(row == column))
+            - sum((F(1, 3) * F(int(
+                _s3_multiply(transposition, group[row]) == group[column]
+            )) for transposition in transpositions), F(0))
+            for column in range(len(group))
+        )
+        for row in range(len(group))
+    )
+    induced = matmul(
+        matmul(transpose(isometry), apply_fine_laplacian(isometry)),
+        identity(len(group)),
+    )
+    gamma = matmul(transpose(b_matrix), b_matrix)
+    dirichlet = matmul(
+        transpose(b_matrix), apply_fine_laplacian(b_matrix)
+    )
+    mixed_k = add(
+        dirichlet,
+        scale(F(29, 3), induced),
+    )
+    expected_k = add(
+        scale(F(11), identity(len(group))),
+        scale(F(47), coarse_laplacian),
+    )
+    mixed_coefficient = scale(F(-1), mixed_k)
+
+    return {
+        "fiber_sizes": tuple(len(fibers[delta]) for delta in group),
+        "isometry": isometry,
+        "means": means,
+        "variances": variances,
+        "coarse_laplacian": coarse_laplacian,
+        "induced": induced,
+        "gamma": gamma,
+        "dirichlet": dirichlet,
+        "mixed_k": mixed_k,
+        "expected_k": expected_k,
+        "mixed_coefficient": mixed_coefficient,
+    }
+
+
 def main() -> int:
     matrix = matrix_fixture()
     z2 = z2_conditional_fixture()
     general = general_r_response_fixture()
     complete = complete_step_response_fixture()
+    mixed = s3_mixed_response_fixture()
 
     expected_defect: Matrix = ((F(1, 16), F(0)), (F(0), F(0)))
     expected_packet_defect: Matrix = ((F(1, 64), F(0)), (F(0), F(0)))
@@ -599,6 +743,41 @@ def main() -> int:
             "complete M C M step preserves the rth response coefficient",
             all(plus == expected_plus and minus == expected_minus
                 for _width, plus, minus, expected_plus, expected_minus in complete),
+        ),
+        (
+            "S3 normalized product fibers and induced kinetic intertwiner",
+            set(mixed["fiber_sizes"]) == {36}
+            and matmul(transpose(mixed["isometry"]), mixed["isometry"])
+            == identity(6)
+            and mixed["induced"] == scale(F(3), mixed["coarse_laplacian"]),
+        ),
+        (
+            "S3 conditional mean and variance are fiber independent",
+            set(mixed["means"]) == {F(8)}
+            and set(mixed["variances"]) == {F(29, 3)}
+            and mixed["gamma"] == scale(F(29, 3), identity(6)),
+        ),
+        (
+            "S3 mixed quadratic response is -11 I -47 A_c",
+            mixed["mixed_k"] == mixed["expected_k"]
+            and mixed["mixed_coefficient"]
+            == scale(F(-1), mixed["expected_k"]),
+        ),
+        (
+            "S3 mixed response is non-scalar kinetic rather than multiplication",
+            mixed["mixed_coefficient"] != scale(
+                mixed["mixed_coefficient"][0][0], identity(6)
+            )
+            and any(mixed["mixed_coefficient"][row][column] != 0
+                    for row in range(6) for column in range(6)
+                    if row != column),
+        ),
+        (
+            "S3 zero kinetic and common scalar controls preserve the boundary",
+            scale(F(0), mixed["mixed_k"]) == zero(6, 6)
+            and any((add(mixed["mixed_coefficient"], scale(F(7), identity(6))))[row][column] != 0
+                    for row in range(6) for column in range(6)
+                    if row != column),
         ),
     )
 

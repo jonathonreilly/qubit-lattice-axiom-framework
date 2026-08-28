@@ -17,6 +17,7 @@ from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_indep
     general_r_response_fixture as independent_general_response_fixture,
     matmul as independent_matmul,
     matrix_fixture as independent_matrix_fixture,
+    s3_mixed_response_fixture as independent_mixed_response_fixture,
     transpose as independent_transpose,
     z2_conditional_fixture as independent_z2_fixture,
 )
@@ -65,6 +66,10 @@ MUTATIONS = (
     "omit_epsilon_limit",
     "discontinuous_temporal_family",
     "claim_infinite_leading_memory",
+    "allow_linear_action_response",
+    "corrupt_quadratic_gram",
+    "erase_kinetic_descendant",
+    "normalize_away_kinetic_descendant",
 )
 
 PASS = 0
@@ -279,6 +284,69 @@ def primary_full_step_response_rows() -> tuple[tuple[int, sp.Matrix, sp.Matrix],
     return tuple(rows)
 
 
+def primary_mixed_response_data() -> dict[str, object]:
+    """Independent SymPy expansion of the r=3 mixed kinetic/action response."""
+
+    epsilon, amplitude = sp.symbols("epsilon amplitude")
+    width = 3
+    states = tuple(product((1, -1), repeat=width))
+    isometry = sp.zeros(len(states), 2)
+    for row, state in enumerate(states):
+        isometry[row, 0 if prod(state) == 1 else 1] = sp.Rational(1, 2)
+
+    kinetic = sp.zeros(len(states))
+    for row, state in enumerate(states):
+        kinetic[row, row] = width
+        for index in range(width):
+            neighbor = list(state)
+            neighbor[index] *= -1
+            kinetic[row, states.index(tuple(neighbor))] = -1
+    actions = tuple(sum(0 if value == 1 else 2 for value in state)
+                    for state in states)
+    potential = sp.diag(*actions)
+    projector = isometry * isometry.T
+    complement = sp.eye(len(states)) - projector
+    b_map = complement * potential * isometry
+    induced = sp.simplify(isometry.T * kinetic * isometry)
+    gamma = sp.simplify(b_map.T * b_map)
+    kinetic_descendant = sp.simplify(
+        b_map.T * kinetic * b_map
+        + (gamma * induced + induced * gamma) / 2
+    )
+
+    multiplier = sp.diag(*(
+        sum(
+            (-epsilon * amplitude * action / 2) ** order / factorial(order)
+            for order in range(4)
+        )
+        for action in actions
+    ))
+    temporal = sum(
+        (((-epsilon) ** order / factorial(order)) * kinetic**order
+         for order in range(4)),
+        sp.zeros(len(states)),
+    )
+    step = sp.expand(multiplier * temporal * multiplier)
+    compressed = sp.expand(isometry.T * step * isometry)
+    defect = sp.expand(isometry.T * step**2 * isometry - compressed**2)
+
+    def coefficient(epsilon_degree: int, lambda_degree: int) -> sp.Matrix:
+        return defect.applyfunc(
+            lambda value: sp.expand(value).coeff(
+                epsilon, epsilon_degree
+            ).coeff(amplitude, lambda_degree)
+        )
+
+    return {
+        "linear": tuple(coefficient(order, 1) for order in range(4)),
+        "quadratic_leading": coefficient(2, 2),
+        "quadratic_mixed": coefficient(3, 2),
+        "induced": induced,
+        "gamma": gamma,
+        "kinetic_descendant": kinetic_descendant,
+    }
+
+
 def independent_mode() -> int:
     global PASS, FAIL
     PASS = FAIL = 0
@@ -286,6 +354,7 @@ def independent_mode() -> int:
     z2 = independent_z2_fixture()
     general = independent_general_response_fixture()
     complete = independent_complete_response_fixture()
+    mixed = independent_mixed_response_fixture()
     expected = ((F(1, 16), F(0)), (F(0), F(0)))
     checks = (
         (
@@ -337,6 +406,30 @@ def independent_mode() -> int:
             "independent fixed-n leading response uses a finite carrier",
             all(F(3) * F(-2, 3) ** width != 0 and F(-2) ** width != 0
                 for width in range(2, 8)),
+        ),
+        (
+            "independent S3 mixed response has normalized Haar fibers",
+            set(mixed["fiber_sizes"]) == {36}
+            and mixed["gamma"] == tuple(
+                tuple(F(29, 3) * F(int(row == column))
+                      for column in range(6)) for row in range(6)
+            ),
+        ),
+        (
+            "independent S3 kinetic intertwiner is induced threefold",
+            mixed["induced"] == tuple(
+                tuple(F(3) * value for value in row)
+                for row in mixed["coarse_laplacian"]
+            ),
+        ),
+        (
+            "independent S3 epsilon^3 lambda^2 coefficient is -11 I -47 A_c",
+            mixed["mixed_k"] == mixed["expected_k"],
+        ),
+        (
+            "independent S3 mixed response is non-scalar kinetic",
+            any(mixed["mixed_coefficient"][row][column] != 0
+                for row in range(6) for column in range(6) if row != column),
         ),
     )
     for label, condition in checks:
@@ -585,6 +678,59 @@ def main(mutation: str | None, mode: str) -> int:
     check(
         "the fixed-n leading hierarchy has finite Peter-Weyl memory while response order grows",
         finite_memory_ok,
+    )
+
+    mixed = primary_mixed_response_data()
+    linear_response_ok = all(
+        coefficient == sp.zeros(2) for coefficient in mixed["linear"]
+    )
+    if mutation == "allow_linear_action_response":
+        linear_response_ok = False
+    check(
+        "the complete defect has exactly zero linear action response",
+        linear_response_ok and "zero linear action response" in note,
+    )
+
+    quadratic_gram_ok = (
+        mixed["quadratic_leading"] == mixed["gamma"] == 3 * sp.eye(2)
+        and mixed["quadratic_mixed"] == -mixed["kinetic_descendant"]
+    )
+    if mutation == "corrupt_quadratic_gram":
+        quadratic_gram_ok = False
+    check(
+        "quadratic response is epsilon^2 Gamma minus epsilon^3 K",
+        quadratic_gram_ok
+        and "mathcal K\n =B*A_fB+(1/2){Gamma,A_c^ind}" in note
+        and "L_epsilon*L_epsilon>=0" in note,
+    )
+
+    kinetic_descendant_ok = (
+        mixed["kinetic_descendant"] != sp.trace(
+            mixed["kinetic_descendant"]
+        ) * sp.eye(2) / 2
+        and mixed["quadratic_mixed"][0, 1] != 0
+    )
+    if mutation == "erase_kinetic_descendant":
+        kinetic_descendant_ok = False
+    check(
+        "epsilon^3 lambda^2 generates a non-scalar coarse-kinetic response",
+        kinetic_descendant_ok
+        and "principal symbol is exactly `2gamma`" in note
+        and "not a new multiplication potential" in note,
+    )
+
+    scalar_shift = 2 * sp.Rational(7, 5) * mixed["gamma"]
+    normalization_invariant_ok = (
+        (mixed["quadratic_mixed"] + scalar_shift)[0, 1]
+        == mixed["quadratic_mixed"][0, 1] != 0
+    )
+    if mutation == "normalize_away_kinetic_descendant":
+        normalization_invariant_ok = False
+    check(
+        "common scalar normalization cannot remove the kinetic principal symbol",
+        normalization_invariant_ok
+        and "adds only `2c_1Gamma`" in note
+        and "remains exactly `2gamma A_c^ind`" in note,
     )
 
     scalar = sp.Rational(3, 5)

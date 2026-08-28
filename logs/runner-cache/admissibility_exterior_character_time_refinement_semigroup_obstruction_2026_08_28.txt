@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_time_refinement_semigroup_obstruction_2026_08_28.py
+runner_sha256: 410cda91d7fbe06371377126938ac370a04c3c9daaeb89d700413137d6485a8f
+input_fingerprint_sha256: 888965fe852b45e2e5f681c665041b94303b1ede037e186d6a3083a7ce810afb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+[PASS] import boundary: the parent supplies f_n and a finite transfer but no clock or semigroup law
+[PASS] exterior character: chi=(1+det)(1+Tr) vanishes on the improper component
+[PASS] component bookkeeping: r_det is the proper-minus-improper mass
+[PASS] linear character series: four b_l series are derived from exact tensor multiplicities
+[PASS] linear common-clock obstruction: equal vanishing orders but leading ratio three forbid equal channel laws
+[PASS] nonlinear multiplicities: the general binomial ratios give Catalan and spin-one counts
+[PASS] all-f_n common-clock obstruction: determinant/vector leading ratios equal (n+2)/n, never one
+[PASS] projected periodic cycle: determinant and vector spin networks retain the unequal leading ratio to power L
+[PASS] improper sector: conjugation projection preserves det while constant improper density gives r_V=r_detV
+[PASS] heat plus component-jump comparator: h_V=h_det h_detV conflicts with r_V=r_detV and 0<r_det<1
+[PASS] SO(3) escape boundary: the n=1 restriction has its own common-clock mismatch, not a borrowed O(3) determinant proof
+[PASS] fixed nonconstant half multiplier: rank-one and multiplication endpoint transfers do not commute
+[PASS] topology boundary: a tree quotient can remove both decisive nontrivial character modes
+[PASS] fixed-step logarithm boundary: spectral powers do not supply an exterior-family refinement law
+[PASS] physical boundary: the obstruction is dimensionless and supplies no clock, continuum, or selected dynamics
+[PASS] full-transfer boundary: the theorem is exact on the projected cycle and fixed-M anisotropic control only
+per_element: exterior characters, component masses, and normalized irrep multipliers were recomputed
+per_site: the one-loop and finite-cycle gauge projections were separated from tree quotients
+per_mode: determinant, vector, det-vector, higher-spin, and fixed-M endpoint modes were checked
+per_block: every finite f_n common-clock obstruction and one projected periodic-cycle lift were executed
+lattice_wide: checked and not executed — no co-scaled carrier refinement, continuum family, or physical clock is supplied
+STATUS: the supplied exterior-character coupling family is not an exact common-clock convolution semigroup; fixed-step logs remain valid
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

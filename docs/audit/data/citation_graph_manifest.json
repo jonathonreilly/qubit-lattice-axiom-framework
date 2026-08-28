@@ -1,6 +1,6 @@
 {
- "edge_count": 16158,
- "node_count": 5645,
+ "edge_count": 16160,
+ "node_count": 5646,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -881,6 +881,10 @@
   "admissibility_exterior_character_metric_source_polarized_seam_bounded_theorem_note_2026-08-28": {
    "deps_hash": "6da1461c9129",
    "out_degree": 3
+  },
+  "admissibility_exterior_character_time_refinement_semigroup_obstruction_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "822839546fbf",
+   "out_degree": 2
   },
   "admissibility_fixed_metric_nonlinear_regge_kkt_continuation_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "e6d013e0a56f",

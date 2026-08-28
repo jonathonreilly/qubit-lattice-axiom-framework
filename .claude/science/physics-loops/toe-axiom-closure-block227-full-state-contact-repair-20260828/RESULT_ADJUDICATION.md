@@ -37,6 +37,9 @@ an executable missing product cell, not a scheduler preference.
 - `13/13` science and `15/15` full-source checks;
 - `18/18` static-contract checks over 48 named defects, explicitly with
   `behaviorally_executed=0` after fail-fast.
+- independent reduced-word execution: `10/10`, with `8/55` frozen
+  one-contact successes, `36/36` interior successes under the isolated
+  read-only-lookahead control, and exact adjacent/separated residues.
 
 Stage B multi-contact/Y/parallel execution, literal CP, fair components,
 Record writing, physical time, and law selection are unexecuted.  The static
@@ -61,6 +64,12 @@ choice.  Block 228 must generate all product cells before execution, test all
 230 zero/one/two-contact words through length ten, and derive a well-founded
 rank plus CP instrument.  It pivots immediately to fixed-alphabet component
 coalescence on support growth, state-capacity overflow, or a nonjoinable cell.
+
+The subsequent check of PR #7776 confirms a nonconstant fixed-carrier
+co-scaled transfer limit but leaves its clock, scaling, action family, and
+carrier supplied.  Its changing-carrier and physical-law obligations therefore
+remain longer than the finite local product test, so it does not rerank Block
+228.
 
 No axiom update, audit verdict, retained-status promotion, obligation
 retirement, or TOE percentage movement is made.

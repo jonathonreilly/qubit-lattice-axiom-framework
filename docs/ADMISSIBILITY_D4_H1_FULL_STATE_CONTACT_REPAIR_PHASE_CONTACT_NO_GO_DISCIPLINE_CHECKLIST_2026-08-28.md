@@ -73,8 +73,12 @@ phase/contact completion, not a one-guard claim of closure.
 
 Working-oracle SHA-256:
 `c038e907b0763f2204d99eb37074b90f351af3578d87bbf22a15167e2f0f99c9`.
-The independent script and cache must land separately if this diagnostic is
-used as audit evidence.
+The landing-form independent runner is
+[`independent_admissibility_d4_h1_full_state_contact_repair_2026_08_28.py`](../scripts/independent_admissibility_d4_h1_full_state_contact_repair_2026_08_28.py),
+SHA-256
+`28fd30a4e4ab682b899c26c9fb2092d2b25d72f078f9c08bb09690f550ee3f75`.
+It reproduces these facts in `10/10` checks and declares this note and the
+source theorem as literal cache-bound inputs.
 
 ## N1 — Normalized alternative-route enumeration
 

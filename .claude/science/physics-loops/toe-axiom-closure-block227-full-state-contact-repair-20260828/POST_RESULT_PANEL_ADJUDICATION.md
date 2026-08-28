@@ -8,10 +8,12 @@
   allowing good return to preserve an incident participant on its unchanged
   lookahead site closes all `36/36` interior placements, but not boundaries.
 - Two-contact controls remain nonconfluent or stuck.
-- PR #7774 narrows one supplied common-clock family but does not select a
-  clock, action, continuum, or Record law.  PR #7768 remains a conditional
-  supplied-family gravity/matter construction.  Neither retires a TOE
-  obligation.
+- PR #7776 upgrades the #7774 line to a strong fixed-spatial-carrier
+  co-scaled transfer limit, but still supplies its clock, scaling, spatial
+  coefficients, action family, and carrier.  Changing-carrier compression,
+  law selection, gravity, and Record formation remain open.  PR #7768 remains
+  a conditional supplied-family gravity/matter construction.  None retires a
+  TOE obligation or reranks the one-block Record route.
 
 ## Five roles
 

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_full_state_contact_repair_2026_08_28.py
+runner_sha256: 66f6efd6ad1cd65d344497ef897aa6fdbf4f1414b003e7aaf83fe9a1a98d6397
+input_fingerprint_sha256: 6226c26aa94daeb96c5e34b051c2d6fcfef381668a0c02dfd4752b98f5633241
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 5.25
+status: ok
+----- stdout -----
+PASS frozen carrier arithmetic remains 35 transient rays per parity, 74 named, rank-54 default, rank 128
+PASS all simple labelled arms of lengths zero through eight are generated
+PASS all labelled quiet endpoints have exact incidence and each length's canonical stored history reaches relational H-L-A hold
+PASS D_T/D_A and C0/CQ/CF/M/K1/K0/B/A all instantiate through one parametric generator
+PASS every instantiated row uses executable guards, deterministic weight, and at most four arm sites
+PASS discovery binds next T/A, rejects next L, and is blocked by an incident boundary participant
+PASS root turn remains enabled when the only participant is outside its displayed support
+PASS all four frozen root-turn/contact/certificate diamonds have identical full-state joins
+PASS strict fixture census includes every live T rather than only sites already matching a contact row
+PASS first exact Stage-A failure is the length-one seam-boundary R-P-H-T_F-A source
+PASS the failing source is a complete labelled-dart state with exact incident foreign P-H-T wake
+PASS fail-fast stops before Stage B, CP, fairness, Record writing, or a broader carrier conclusion
+PASS all 48 preregistered defect clauses retain a finite static contract without downstream behavioral credit
+PASS committed packet freezes the ten repair rows and strict all-live-T Stage-A census
+PASS committed mutation plan and runner both retain the required 48-defect static contract surface
+FACT labelled_arms=189948 by_length={"0":36,"1":100,"2":284,"3":780,"4":2172,"5":5916,"6":16268,"7":44100,"8":120292}
+FIRST_STAGE_A_FAILURE spec=(1, (0, 0, 0, 0)) phase=0 site=3 source=R-P(2)-H(2,0)-T(2)-A(2) foreign_tip=3 enabled=() reason=no-enabled-row
+DECISION_CLASS scoped-four-site-or-certificate-restoration-failure
+FAILURE_SCOPE frozen Block-227 grammar on the first length-one seam-boundary incident contact only
+MUTATION_SURFACE contract_bound=48 behaviorally_executed=0 status=static-type-negative-after-stage-a-fail-fast
+per_element: checked — the first incident foreign tip and every dart on its bound row support are explicit full-state objects.
+per_site: checked — all length-zero fixtures and the first length-one live-T boundary site were enumerated before stopping.
+per_mode: checked and not executed — the first Stage-A boundary source stops remaining labelled contact modes and physical transports.
+per_block: checked and not executed — Stage B multi-contact, Y, parallel, CP, and fairness gates are downstream of Stage A.
+lattice_wide: checked and not executed — no infinite-volume fixation, physical time, law selection, or Record claim is inferred.
+OBSERVABLE_SHA256 5fddef5d6d6857056e6937934018b2598e881581d3b17b9aa15fc29f64327657
+RUNNER_SHA256 66f6efd6ad1cd65d344497ef897aa6fdbf4f1414b003e7aaf83fe9a1a98d6397
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

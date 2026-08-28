@@ -31,6 +31,9 @@ toe_percentage_movement: 0
 Primary runner:
 [admissibility_d4_h1_full_state_contact_repair_2026_08_28.py](../scripts/admissibility_d4_h1_full_state_contact_repair_2026_08_28.py).
 
+Independent reduced-word runner:
+[independent_admissibility_d4_h1_full_state_contact_repair_2026_08_28.py](../scripts/independent_admissibility_d4_h1_full_state_contact_repair_2026_08_28.py).
+
 No-go-discipline packet:
 [ADMISSIBILITY_D4_H1_FULL_STATE_CONTACT_REPAIR_PHASE_CONTACT_NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md](ADMISSIBILITY_D4_H1_FULL_STATE_CONTACT_REPAIR_PHASE_CONTACT_NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md).
 
@@ -112,7 +115,10 @@ law selection, and Record writing.  None inherits a result.
 - primary runner SHA-256:
   `66f6efd6ad1cd65d344497ef897aa6fdbf4f1414b003e7aaf83fe9a1a98d6397`;
 - static mutation-contract fingerprint:
-  `2532cc2ba43f31424b8f9afe15bcc94f1edc8f35548ff533729ce6ad677b06ad`.
+  `2532cc2ba43f31424b8f9afe15bcc94f1edc8f35548ff533729ce6ad677b06ad`;
+- independent reduced-word checks: `10/10`;
+- independent runner SHA-256:
+  `28fd30a4e4ab682b899c26c9fb2092d2b25d72f078f9c08bb09690f550ee3f75`.
 
 No axiom update, audit verdict, retained-status promotion, obligation
 retirement, or TOE percentage movement is claimed.

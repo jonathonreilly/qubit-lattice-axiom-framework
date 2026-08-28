@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_h1_full_state_contact_repair_2026_08_28.py
+runner_sha256: 28fd30a4e4ab682b899c26c9fb2092d2b25d72f078f9c08bb09690f550ee3f75
+input_fingerprint_sha256: acdc387684943370677c9d6bc44552b45094b7b039483d5bcc6b8d0bb1b05a9f
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+PASS literal source-note and no-go-sidecar audit inputs exist and bind the reduced result
+PASS frozen one-contact census has exactly 8 successes and 47 failures among all 55 placements
+PASS every frozen one-contact reachable graph is acyclic
+PASS first interior failure is n=4 contact=3 with exactly the bad and restored normal forms
+PASS interior witness independently has Q-only bad and CF-Q-K1-B-A restored histories
+PASS only the good-return read-only-F control closes all 36 interior fixtures and leaves 19 boundary failures
+PASS frozen adjacent two-contact witness has exactly two stuck non-abort normal forms
+PASS frozen separated two-contact witness has exactly six stuck non-abort normal forms
+PASS scope remains a reduced word diagnostic with no full-state or broad controller conclusion
+PASS stdout remains below the six-thousand-character forensic budget
+MODEL reduced_word_oracle_only no_primary_or_prior_imports no_labelled_darts_bindings_projectors_CP_or_fairness
+FROZEN one_contact_pass=8/55 fail=47/55 cycles=0 pass_positions=(n>=3,j=2)
+FIRST_INTERIOR n=4 j=3 states=9 normals=2 cycles=0 source=R-H-T-T-T_F-T-A
+FIRST_INTERIOR_BAD trace=Q normal=R-H-L-T-T_F-T-A
+FIRST_INTERIOR_GOOD trace=CF>Q>K1>B>A normal=R-P-P-P-P-P-S
+CONTROL good_readonly_F_only interior_pass=36/36 boundary_fail=19/19 cycles=0
+ADJACENT n=5 contacts=2,3 states=5 stuck_normals=2 cycles=0
+ADJACENT_NORMALS R-H-L-T_F-T_F-T-T-A | R-P-H-T_F-L-T-T-A
+SEPARATED n=8 contacts=3,7 states=42 stuck_normals=6 cycles=0
+SEPARATED_NORMALS R-H-L-T-T_F-L-T-T-T-T-A | R-P-H-T-L-L-T-T-T-T-A | R-P-P-H-T-L-L-T-T-T-A | R-P-P-P-H-T-L-L-T-T-A | R-P-P-P-P-H-T-L-L-T-A | R-P-P-P-P-H-T-L-T_F-T-A
+SCOPE no_broad_no_go product_completion_coalescence_scanning_and_coherent_arbitration_remain_live
+AUDIT_INPUT_SHA256 1cba9ca79daf8b6e19d63f7c31f3e5de66caeeedce60329f8462f0af0f46f312
+per_element: checked — each reduced word symbol and incident-F position is explicit, while full-state darts are deliberately absent.
+per_site: checked — all 55 one-contact positions, 36 interior controls, 19 boundaries, and both frozen contact pairs are enumerated.
+per_mode: checked and not executed — the reduced oracle has no 74+54 carrier phases, labelled transports, projectors, or Kraus modes.
+per_block: checked and not executed — this independent word model corroborates mechanisms but cannot adjudicate the full-state Block-227 packet.
+lattice_wide: checked and not executed — Y networks, fair components, fixation, physical time, Record writing, and law selection remain open.
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

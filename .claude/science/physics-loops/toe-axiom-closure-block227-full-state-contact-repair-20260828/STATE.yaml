@@ -1,6 +1,6 @@
 loop_id: toe-axiom-closure-block227-full-state-contact-repair-20260828
 campaign_number: 227
-status: result_packaged_pending_independent_reproduction
+status: result_packaged_with_independent_reproduction
 phase: scoped_stage_a_failure_and_block228_handoff
 parent_commit: bffbc1fb6c
 parent_branch: physics-loop/toe-axiom-closure-block226-tagged-relational-echo-20260828
@@ -12,8 +12,8 @@ portfolio_recheck_interval: 3h_or_each_decisive_result
 review_loop_allowed: false
 pre_result_panel_vote: 4_repair_1_component_coalescence_0_serial_scan
 post_result_panel_vote: 2_product_1_component_coalescence_1_born_1_gravity_0_serial
-latest_external_pr_checked: 7774
-latest_external_pr_effect: exact_common_clock_obstruction_no_record_route_rerank
+latest_external_pr_checked: 7776
+latest_external_pr_effect: fixed_carrier_coscaled_transfer_limit_improves_route_confidence_but_no_record_route_rerank
 active_route: block228_controller_phase_incident_contact_finite_product
 fallback_route: deterministic_component_coalescence_fixed_local_alphabet
 record_scratch_roles_allowed: false
@@ -53,6 +53,12 @@ full_checks: 15/15
 static_contract_checks: 18/18
 mutation_contract_bound: 48
 mutation_behaviorally_executed: 0
+independent_runner: scripts/independent_admissibility_d4_h1_full_state_contact_repair_2026_08_28.py
+independent_runner_sha256: 28fd30a4e4ab682b899c26c9fb2092d2b25d72f078f9c08bb09690f550ee3f75
+independent_checks: 10/10
+independent_frozen_one_contact: 8/55
+independent_control_interior: 36/36
+independent_control_boundary_failures: 19/19
 no_go_discipline_status: fail_demoted_partial_attempt_with_named_untested_routes
 decision_class: partial-attempt-with-named-untested-routes
 block228_zero_one_two_contact_words: 230

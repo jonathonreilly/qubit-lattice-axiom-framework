@@ -1,6 +1,6 @@
 {
- "edge_count": 16249,
- "node_count": 5645,
+ "edge_count": 16263,
+ "node_count": 5663,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -446,6 +446,14 @@
    "deps_hash": "6aa58ef31ceb",
    "out_degree": 5
   },
+  "admissibility_d4_h1_cleanup_front_coalescence_radius_boundary_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "35d68aaf0032",
+   "out_degree": 1
+  },
+  "admissibility_d4_h1_cleanup_front_coalescence_radius_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "admissibility_d4_h1_cubic_record_carrier_cp_seed_mixed_slab_boundary_bounded_theorem_note_2026-08-27": {
    "deps_hash": "466fd0545e5e",
    "out_degree": 3
@@ -466,6 +474,22 @@
    "deps_hash": "162cfc90a9c5",
    "out_degree": 5
   },
+  "admissibility_d4_h1_full_state_contact_repair_phase_contact_boundary_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "adf604e3ced8",
+   "out_degree": 1
+  },
+  "admissibility_d4_h1_full_state_contact_repair_phase_contact_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "admissibility_d4_h1_multiroot_five_colour_ancestry_dart_alias_boundary_note_2026-08-28": {
+   "deps_hash": "c30e39af3266",
+   "out_degree": 1
+  },
+  "admissibility_d4_h1_multiroot_five_colour_ancestry_dart_alias_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "7ed4729fac55",
+   "out_degree": 2
+  },
   "admissibility_d4_h1_multisize_local_formation_instrument_boundary_bounded_theorem_note_2026-08-27": {
    "deps_hash": "729cea7a88a3",
    "out_degree": 2
@@ -474,9 +498,33 @@
    "deps_hash": "e549a00f9639",
    "out_degree": 7
   },
+  "admissibility_d4_h1_parent_dart_forest_single_probe_simultaneous_anchor_boundary_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "7d1c87e67421",
+   "out_degree": 1
+  },
+  "admissibility_d4_h1_parent_dart_forest_single_probe_simultaneous_anchor_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "admissibility_d4_h1_phase_contact_product_multi_certificate_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "a1bd793e10bc",
+   "out_degree": 1
+  },
+  "admissibility_d4_h1_phase_contact_product_multi_certificate_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "admissibility_d4_h1_port_free_neighbor_phase_m2_context_descent_boundary_bounded_theorem_note_2026-08-26": {
    "deps_hash": "f38fd9cdb739",
    "out_degree": 5
+  },
+  "admissibility_d4_h1_record_qnd_nine_state_distributed_echo_capacity_boundary_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "cdeb5f32e67c",
+   "out_degree": 1
+  },
+  "admissibility_d4_h1_record_qnd_nine_state_distributed_echo_capacity_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_d4_h1_schur_record_probability_germ_bounded_theorem_note_2026-08-26": {
    "deps_hash": "ca2d0aba1bea",
@@ -485,6 +533,30 @@
   "admissibility_d4_h1_shared_shell_overlap_cross_moment_and_unique_writer_boundary_bounded_theorem_note_2026-08-27": {
    "deps_hash": "841353e0ea56",
    "out_degree": 5
+  },
+  "admissibility_d4_h1_tagged_relational_echo_interior_seed_orphan_boundary_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "10ed04028000",
+   "out_degree": 1
+  },
+  "admissibility_d4_h1_tagged_relational_echo_interior_seed_orphan_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "e53c8be55eb0",
+   "out_degree": 3
+  },
+  "admissibility_d4_h1_two_arm_backoff_fairness_quotient_boundary_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "4ead23636133",
+   "out_degree": 1
+  },
+  "admissibility_d4_h1_two_arm_backoff_fairness_quotient_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "admissibility_d4_h1_two_arm_higher_block_static_overlap_deterministic_retry_boundary_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "8abe26b7696c",
+   "out_degree": 1
+  },
+  "admissibility_d4_h1_two_arm_higher_block_static_overlap_deterministic_retry_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_d4_h1_two_time_clifford_cell_m2_record_compiler_boundary_bounded_theorem_note_2026-08-26": {
    "deps_hash": "e3b0c44298fc",

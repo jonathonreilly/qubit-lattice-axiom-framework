@@ -23,11 +23,17 @@ PACK = (
     "toe-axiom-closure-block220-conflict-safe-record-finality-20260827"
 )
 AUDIT_INPUT_PATHS = (
-    f"{PACK}/GOAL.md",
-    f"{PACK}/NO_GO_LEDGER.md",
-    f"{PACK}/REPAIR_PREREGISTRATION.md",
-    f"{PACK}/COVARIANCE_CERTIFICATE_PREREGISTRATION.md",
-    f"{PACK}/FROZEN_MARKOV_RULE.json",
+    ".claude/science/physics-loops/"
+    "toe-axiom-closure-block220-conflict-safe-record-finality-20260827/GOAL.md",
+    ".claude/science/physics-loops/"
+    "toe-axiom-closure-block220-conflict-safe-record-finality-20260827/NO_GO_LEDGER.md",
+    ".claude/science/physics-loops/"
+    "toe-axiom-closure-block220-conflict-safe-record-finality-20260827/REPAIR_PREREGISTRATION.md",
+    ".claude/science/physics-loops/"
+    "toe-axiom-closure-block220-conflict-safe-record-finality-20260827/"
+    "COVARIANCE_CERTIFICATE_PREREGISTRATION.md",
+    ".claude/science/physics-loops/"
+    "toe-axiom-closure-block220-conflict-safe-record-finality-20260827/FROZEN_MARKOV_RULE.json",
     "docs/ADMISSIBILITY_D4_H1_EVENT_SEEDED_RECORD_FINALITY_"
     "MARKOV_REPAIR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-28.md",
     "docs/ADMISSIBILITY_D4_H1_EVENT_SEEDED_RECORD_FINALITY_COMPILER_"

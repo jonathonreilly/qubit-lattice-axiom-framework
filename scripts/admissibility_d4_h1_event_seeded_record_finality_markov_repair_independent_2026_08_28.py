@@ -33,7 +33,17 @@ CHECKLIST = (
     "docs/ADMISSIBILITY_D4_H1_EVENT_SEEDED_RECORD_FINALITY_COMPILER_"
     "NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md"
 )
-AUDIT_INPUT_PATHS = (SIDECAR, PREREGISTRATION, NOTE, CHECKLIST)
+AUDIT_INPUT_PATHS = (
+    ".claude/science/physics-loops/"
+    "toe-axiom-closure-block220-conflict-safe-record-finality-20260827/FROZEN_MARKOV_RULE.json",
+    ".claude/science/physics-loops/"
+    "toe-axiom-closure-block220-conflict-safe-record-finality-20260827/"
+    "COVARIANCE_CERTIFICATE_PREREGISTRATION.md",
+    "docs/ADMISSIBILITY_D4_H1_EVENT_SEEDED_RECORD_FINALITY_"
+    "MARKOV_REPAIR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-28.md",
+    "docs/ADMISSIBILITY_D4_H1_EVENT_SEEDED_RECORD_FINALITY_COMPILER_"
+    "NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md",
+)
 MUTATIONS = (
     "digest",
     "schema",

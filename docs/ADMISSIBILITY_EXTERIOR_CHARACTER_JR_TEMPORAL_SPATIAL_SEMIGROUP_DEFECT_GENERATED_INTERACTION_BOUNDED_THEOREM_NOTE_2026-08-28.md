@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_generated_interaction_bounded_theorem_note_2026-08-28
 claim_type: bounded_theorem
-claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. For arbitrary fixed finite r and q, disclose an action-amplitude lambda in the complete Block227 step and prove that the rth lambda response of the actual J_r defect, after epsilon^-r scaling and projection off the scalar coarse channel, converges strongly on the core to (-1)^r(2^r-2) times the r-fold centered exterior convolution, summed once per retained cell. Prove the (r-1)-wise Haar mechanism, the scalar leading variance for r>=3, and the finite leading Peter--Weyl response carrier. At quadratic action-response order derive the exact finite-epsilon Gram insertion and the next core coefficient K=B*A_fB+{Gamma,A_c}/2; for r>=3 prove the exact decomposition K=2 gamma A_c+u I, with u the explicit rq-accumulated exterior Dirichlet energy, so the epsilon^3 lambda^2 response has a non-scalar coarse-kinetic term but no first-order or coarse-word-dependent multiplication remainder. On the actual original-link carrier, prove the exact all-(r,q) determinant-sector offdiagonal selection rule: quadratic coarse determinant mixing occurs only for r=2 coarse-hypercube neighbors, including the positive seven-link vacuum witness, while r>=3 determinant-to-determinant offdiagonals vanish at this response order. For every pair of coarse determinant words at Hamming distance d, prove the first possible finite-epsilon offdiagonal response is derivative order rd, give its positive full-O(3) residual-subset formula after deleting all 2^d block-cylindrical subsets, and recover the small-step coefficient 2^(rd)-2^d. Derive the shared-retained-rung context dependence. Bound finite Peter--Weyl approximation of the complete defect value, its exact quadratic Gram response, and the selected all-pairs determinant responses, with explicit rq accumulation and common normalization. This is a conditional finite mathematical generated-interaction and supplied-action-response theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
+claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. For arbitrary fixed finite r and q, disclose an action-amplitude lambda in the complete Block227 step and prove that the rth lambda response of the actual J_r defect, after epsilon^-r scaling and projection off the scalar coarse channel, converges strongly on the core to (-1)^r(2^r-2) times the r-fold centered exterior convolution, summed once per retained cell. Prove the (r-1)-wise Haar mechanism, the scalar leading variance for r>=3, and the finite leading Peter--Weyl response carrier. At quadratic action-response order derive the exact finite-epsilon Gram insertion and the next core coefficient K=B*A_fB+{Gamma,A_c}/2; for r>=3 prove the exact decomposition K=2 gamma A_c+u I, with u the explicit rq-accumulated exterior Dirichlet energy, so the epsilon^3 lambda^2 response has a non-scalar coarse-kinetic term but no first-order or coarse-word-dependent multiplication remainder. On the actual original-link carrier, prove the exact all-(r,q) determinant-sector offdiagonal selection rule: quadratic coarse determinant mixing occurs only for r=2 coarse-hypercube neighbors, including the positive seven-link vacuum witness, while r>=3 determinant-to-determinant offdiagonals vanish at this response order. For every pair of coarse determinant words at Hamming distance d, prove the first possible finite-epsilon offdiagonal response is derivative order rd, give its positive full-O(3) residual-subset formula after deleting all 2^d block-cylindrical subsets, and recover the small-step coefficient 2^(rd)-2^d. Resum that complete minimal response as an ordered bond-dimension-four cell automaton, prove its rank-one unchanged-cell reset, and derive its exact positive separation-independent stripped coefficient for downstream locality tests. Bound finite Peter--Weyl approximation of the complete defect value, its exact quadratic Gram response, and the selected all-pairs determinant responses, with explicit rq accumulation and common normalization. This is a conditional finite mathematical generated-interaction and supplied-action-response theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
 depends_on:
   - admissibility_exterior_character_co_scaled_temporal_trotter_and_cylindrical_refinement_boundary_bounded_theorem_note_2026-08-28
   - admissibility_exterior_character_bounded_degree_ladder_history_message_flow_bounded_theorem_note_2026-08-28
@@ -18,11 +18,11 @@ target_blocker_text: "Compare the Block227 co-scaled temporal generator with Blo
 source_of_blocker_text: user_goal
 reachability_to_target: closes
 artifact_role: theorem
-next_trace_action: "Any multiscale construction must retain the generated coarse-kinetic descendant, the exact determinant-sector response-order selection and shared-rung context, and the finite leading multiplication-response channels, or approximate the exact exterior weight with those errors controlled; physical spacing, time, states, and observables remain separate suppliers."
-conditional_surface_status: "exact finite physical-space temporal-spatial compression defect, nonconstant two-cell generated interaction, arbitrary-fixed-r complete-step supplied-action response, quadratic-response coarse-kinetic descendant, exact all-(r,q) finite-epsilon determinant selection, exact all-pairs Hamming-distance response-order filtration, and response-specific finite packet bounds, conditional on the supplied co-scaled action, ladder, Haar measure, projector, and J_r stack"
+next_trace_action: "Use the exact four-state minimal-response history coordinate to test connected/log reorganizations and locality norms; its stripped response coefficient has an exact positive separation plateau, while locality conclusions require a disclosed amplitude, normalization, and norm family. Physical spacing, time, states, observables, and the full non-determinant kernel remain separate suppliers."
+conditional_surface_status: "exact finite physical-space temporal-spatial compression defect, nonconstant two-cell generated interaction, arbitrary-fixed-r complete-step supplied-action response, quadratic-response coarse-kinetic descendant, exact all-pairs Hamming-distance response-order filtration, fixed-memory determinant-response automaton, raw-coordinate separation plateau, and response-specific finite packet bounds, conditional on the supplied co-scaled action, ladder, Haar measure, projector, and J_r stack"
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "the compression identity, core limit, cylindrical kinetic calculation, conditioned-product Haar lemma, arbitrary-r complete-step response limit, quadratic-response Gram/Dirichlet coefficient, original-link determinant scale-selection and all-pairs finite-step response-order rules, exterior convolution coefficients, exact finite controls, and finite-packet defect/response bounds are exact mathematical results with no fitted datum"
+claim_type_reason: "the compression identity, core limit, cylindrical kinetic calculation, conditioned-product Haar lemma, arbitrary-r complete-step response limit, quadratic-response Gram/Dirichlet coefficient, original-link all-pairs response-order rules, exact four-state automaton and separation plateau, exterior convolution coefficients, exact finite controls, and finite-packet defect/response bounds are exact mathematical results with no fitted datum"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ---
@@ -202,6 +202,17 @@ quadratic order. Shared retained rungs make the nonzero `q>1` coefficients
 background dependent, so they do not factor into one-cell responses. This is
 an exact response/memory consumer, not a reduced increment model or
 a generic compactness statement.
+
+For arbitrary determinant words `y,z`, the first offdiagonal response order
+is `r d_H(y,z)`.  Its exact finite-step coefficient admits two ordered
+four-state cell contractions: one sums every residual history and one sums
+only the whole-block cylindrical histories removed by `Q`.  This gives a
+fixed-memory response coordinate independent of `q,r`.  The actual run weight
+sharpens its Hamming activity base from `2^r` to
+`2+(2^r-2)t_det^2`, while a rank-one empty-cell reset produces a positive
+stripped two-cell coefficient independent of every nonzero empty separation.
+This supplies a concrete locality test input; connected/log or explicitly
+scaled downstream coordinates and their norms remain open.
 
 ## Authority and imports
 
@@ -1108,6 +1119,139 @@ nonzero amplitudes the sign is `sign(product_(p in H)a_p)`.  This is a
 positive all-pairs classification at fixed finite `r,q,n`, not an all-channel
 or all-lambda no-go statement.
 
+### Fixed-memory response automaton and separation plateau
+
+The exponentially large residual-subset sum in (34ad) has an exact
+scale-compatible history coordinate.  Put `t=t_det(epsilon)` and, for
+`b,sigma,u,v in {0,1}`, define the two-state original-link update
+
+```text
+T_(b,sigma)[u,v]
+ =1_(sigma=1 or v=b) t^[2v+2(1-u)v].               (34af)
+```
+
+Rows carry the preceding fine determinant bit and columns the current bit;
+`sigma=0` fixes the current word to the supplied base bit, whereas `sigma=1`
+sums both possibilities.  Thus `T_(b,1)=T_(b,0)+T_(1-b,0)`.  For a changed
+coarse cell `b -> 1-b`, set
+
+```text
+M_(b,0)=T_(b,0) tensor T_(1-b,1),
+M_(b,1)=T_(b,1) tensor T_(1-b,0),
+
+A_b=(M_(b,0)+M_(b,1))^r,
+B_b=M_(b,0)^r+M_(b,1)^r.                           (34ag)
+```
+
+For an unchanged cell put
+
+```text
+U_b=(T_(b,0) tensor T_(b,0))^r.                   (34ah)
+```
+
+Let `C=C(y,z)` as in (34ab), and define the two cell updates
+
+```text
+C_c^all = A_(y_c)  if c in C,  else U_(y_c),
+C_c^cyl = B_(y_c)  if c in C,  else U_(y_c).
+```
+
+With `e_00` the initial pair of zero preceding bits and `1_4` the terminal
+sum, the residual response factor is exactly
+
+```text
+Z_(y,z)(t)
+ =e_00^T[product_(c=0)^(q-1) C_c^all
+          -product_(c=0)^(q-1) C_c^cyl]1_4,
+
+mathcal R_(y,z)^[m]
+ =nu_epsilon^2(epsilon c_det^(n)/2)^m
+   product_(p in H)a_p Z_(y,z)(t),
+m=r d_H(y,z).                                      (34ai)
+```
+
+Here `nu_epsilon=1` in the fixed Block227 normalization; one common supplied
+`lambda`-independent scalar contributes its square.  The product order is the
+original-link cell order and is load-bearing: the four-state matrices do not
+generally commute.  At each changed fine plaquette, `M_(b,0)+M_(b,1)` sums
+both placements of the residual bit and both temporal multiplier halves.
+Consequently the first contraction sums every `X subseteq H`, while replacing
+`(M_(b,0)+M_(b,1))^r` by `M_(b,0)^r+M_(b,1)^r` retains exactly the two
+whole-block choices in each changed cell.  Their difference therefore removes
+`Cyl(H)` exactly and equals the sum in (34ad).  This is a bond dimension `4`
+contraction with fixed memory independent of `q` and `r`; it computes the
+complete full-`O(3)` *minimal determinant response* because the exclusive-rail
+argument has already removed every other irrep at order `m`.  It is not a
+finite-memory representation of the full response kernel or full perfect
+action.
+
+The same automaton gives a sharp quantitative scale boundary.  Write
+`A_c=product_(p in H_c)|a_p|` and
+
+```text
+B_r(t)=2+(2^r-2)t^2 < 2^r.                         (34aj)
+```
+
+If `X` is partial in `k>=1` changed cells, the two temporal words contain at
+least `k` occupied bits and one run, so each paired multiplier is at most
+`t^(2k+2)`.  Counting the partial and whole-block choices gives
+
+```text
+|mathcal R_(y,z)^[rd]|
+ <=nu_epsilon^2(epsilon c_det^(n))^(rd)
+   product_(c in C)A_c t^2[B_r(t)^d-2^d].          (34ak)
+```
+
+Thus, for `alpha=(|lambda|epsilon c_det^(n))^r` and
+`L_q=sum_(c=0)^(q-1)A_c`, the selected raw response has the finite-volume row
+bound
+
+```text
+sup_y sum_(z!=y)|lambda|^[r d_H(y,z)]
+                    |mathcal R_(y,z)^[r d_H(y,z)]|
+ <=nu_epsilon^2 t^2{
+    product_c(1+B_r(t)alpha A_c)
+    -product_c(1+2alpha A_c)}
+ <=nu_epsilon^2 t^2{
+    exp[B_r(t)alpha L_q]-exp[2alpha L_q]}.          (34al)
+```
+
+This strictly improves the generic Hamming base at every supplied
+`0<t<1`.  Conversely, on the vacuum background the `r` singleton residuals
+in a one-cell response give the exact lower estimate
+
+```text
+|mathcal R_(0,e_c)^[r]|
+ >=nu_epsilon^2 r t^4
+   (epsilon c_det^(n)/2)^r A_c.                   (34am)
+```
+
+The upper and lower estimates display the same `sum_c A_c` activity input.
+In particular, a uniform bound on that sum is sufficient for the displayed
+raw-row upper bound to be uniform, while the one-cell entries test any proposed
+indexed amplitude prescription from below.  No indexed amplitude/volume
+prescription or locality norm is supplied here.
+
+There is also an exact positive separation plateau.  On the zero background,
+`U_0` is a rank-one idempotent with
+`e_00^T U_0=e_00^T` and `U_0 1_4=1_4`.  For two changed cells separated by
+`ell>=1` unchanged zero cells,
+
+```text
+Z_sep,r
+ =e_00^T[A_0 U_0^ell A_0-B_0 U_0^ell B_0]1_4
+ =e_00^T[A_0 U_0 A_0-B_0 U_0 B_0]1_4 >0,          (34an)
+```
+
+independent of `ell>=1`.  This is a statement about the stripped coefficient
+`Z_sep,r`.  The corresponding full entries share the plateau only when the
+changed-cell amplitude product and common normalization are held fixed as the
+cells are separated.  The equality is a test input for a later disclosed
+locality norm; it does not by itself assert or exclude a connected/log or
+Mobius-subtracted response, volume-dependent normalization or amplitudes,
+local-source norms, another perfect-action coordinate, physical spacing, or
+continuum locality.
+
 ## Finite Peter--Weyl approximation of the defect
 
 At each fixed `epsilon`, specialize the
@@ -1316,6 +1460,26 @@ coefficient uses one first derivative on each distinct plaquette in `H`.
 Equation (49b) is an all-pairs determinant-block response bound, not an
 operator-norm bound on every response channel.
 
+Summing (49b) over every changed-cell set gives a Schur-row consumer for the
+same selected response.  With `alpha,L_q,A_c` from (34al),
+
+```text
+sup_y sum_(z!=y)|lambda|^[r d_H(y,z)]
+ |mathcal R_(y,z)^[m]-mathcal R_(y,z;K)^[m]|
+ <=2nu_epsilon^2 theta_K{
+    product_c(1+2^r alpha A_c)
+    -product_c(1+2alpha A_c)}
+
+ <=2nu_epsilon^2 theta_K{
+    exp(2^r alpha L_q)-exp(2alpha L_q)},
+theta_K<=(3rq+1)delta_kappa.                       (50)
+```
+
+This makes the `rq` accumulation and the additional activity/volume factor
+simultaneously explicit.  In particular, the packet does not become
+scale-uniform from `theta_K` control alone; the response activity must also
+be controlled.
+
 ## Prior-art and exact increment
 
 The closest current and in-flight surfaces are distinct:
@@ -1343,6 +1507,12 @@ The closest current and in-flight surfaces are distinct:
 - Neither the open stack nor generic cumulant algebra supplies the all-pairs
   filtration `ord_lambda=r d_H`, the deletion of every block-cylindrical
   residual, or the actual-link context and packet law (34ab)--(34ae), (49b).
+- Block229's generated four-frame message is continuous and does not give the
+  ordered bond-dimension-four determinant-response contraction, its exact
+  whole-block subtraction, or the separation plateau (34af)--(34an).
+- Generic shell counting gives the weaker base `2^r`; it does not use the
+  actual run weight to obtain `B_r(t)<2^r`, the sharp one-cell lower bound, or
+  the simultaneous response/packet Schur consumers (34ak)--(34am), (50).
 - Generic compression inequalities and conditional variances are credited
   mathematical machinery, not the novelty claim.
 
@@ -1352,7 +1522,7 @@ nonconstant exterior variance (4)--(5), together with the arbitrary-`r`
 conditioned-Haar hierarchy (25)--(28), the complete-step response (29)--(34),
 the quadratic kinetic response (34a)--(34j), the finite-step determinant
 selection and all-pairs response-order law (34k)--(34ae), and the full packet
-consumer (38), (40)--(49b).
+consumer and fixed-memory boundary (34af)--(34an), (38), (40)--(50).
 
 ## Obligation graph and boundaries
 
@@ -1373,10 +1543,13 @@ consumer (38), (40)--(49b).
 | exact finite-step determinant offdiagonal selection and context | proved for finite `r>=2,q`; positive only on `r=2` hypercube edges for positive coefficients | (34k)--(34w) |
 | exact finite-step determinant response order | proved for fixed finite `r>=2,q,n`; orders below `r` vanish and the `r`th vacuum-to-cell derivative is positive for positive local coefficients | (34x)--(34aa) |
 | exact all-pairs determinant response-order filtration | proved for fixed finite `r>=2,q,n`; order `r d_H`, `2^d` cylindrical deletions, and positive coefficient for positive changed-cell amplitudes | (34ab)--(34ae) |
+| exact fixed-memory determinant-response coordinate | proved with ordered bond dimension `4`, rank-one empty-cell reset, and complete minimal-response typing | (34af)--(34ai) |
+| selected response activity and separation plateau | proved as upper/lower activity estimates and a positive stripped-coefficient equality; indexed locality norms remain open | (34aj)--(34an) |
 | finite packet error with explicit `rq` | proved | (35)--(39) |
 | finite packet quadratic half-response with explicit `rq` | proved | (40)--(45) |
 | finite packet selected order-`r` determinant response with explicit `rq` | proved | (46)--(48) |
 | finite packet all-pairs determinant response with explicit `rq` | proved | (49a)--(49b) |
+| finite packet selected-response Schur row with activity factor | proved | (50) |
 | physical scale/time/state/observable family | open | not supplied |
 | metric/source/matter response | open | pure-gauge carrier omits these variables |
 | continuum, Lorentz, gravity, action selection | open and not inferred | scope fence |
@@ -1416,6 +1589,16 @@ projector removes all `2^d` block-cylindrical residuals, and the small-step
 coefficient is `2^(rd)-2^d`.  At finite step the global temporal multipliers
 retain placement and background information, so equal-distance entries need
 not agree.
+
+Equations (34af)--(34ai) make that context computationally closed at the
+minimal determinant order: two ordered four-state contractions update one
+coarse cell at a time, with memory dimension independent of `q` and `r`.
+Equations (34aj)--(34am) give corresponding activity/row estimates, while
+(34an) gives an exact positive stripped coefficient independent of every
+nonzero empty separation.  The full-entry comparison requires the changed-cell
+amplitude product and common normalization to be held fixed.  Connected/log
+reorganizations, scaled amplitudes or normalization, locality norms,
+non-determinant histories, and physical locality remain open.
 
 ## Reproduction and landing conditions
 

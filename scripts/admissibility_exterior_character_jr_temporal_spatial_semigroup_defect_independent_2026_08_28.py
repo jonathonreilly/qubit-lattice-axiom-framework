@@ -1376,6 +1376,209 @@ def multi_cell_determinant_response_fixture() -> dict[str, object]:
     }
 
 
+def determinant_response_automaton_fixture() -> dict[str, object]:
+    """Clean-room four-state contraction of the minimal determinant response."""
+
+    def matrix_power(matrix: Matrix, exponent: int) -> Matrix:
+        result = identity(len(matrix))
+        for _ in range(exponent):
+            result = matmul(result, matrix)
+        return result
+
+    def kronecker(left: Matrix, right: Matrix) -> Matrix:
+        return tuple(
+            tuple(
+                left[left_row][left_column] * right[right_row][right_column]
+                for left_column in range(len(left[0]))
+                for right_column in range(len(right[0]))
+            )
+            for left_row in range(len(left))
+            for right_row in range(len(right))
+        )
+
+    temporal_base = F(1, 2)
+
+    def local(base: int, free: int) -> Matrix:
+        return tuple(
+            tuple(
+                temporal_base ** (2 * current + 2 * (1 - previous) * current)
+                if free or current == base else F(0)
+                for current in (0, 1)
+            )
+            for previous in (0, 1)
+        )
+
+    def contract(cells: tuple[Matrix, ...]) -> F:
+        history = identity(4)
+        for cell in cells:
+            history = matmul(history, cell)
+        return sum(history[0], F(0))
+
+    def automaton(width: int, cell_count: int,
+                  coarse_left: int, coarse_right: int) -> F:
+        unrestricted: list[Matrix] = []
+        cylindrical: list[Matrix] = []
+        for cell in range(cell_count):
+            left_bit = (coarse_left >> cell) & 1
+            right_bit = (coarse_right >> cell) & 1
+            if left_bit == right_bit:
+                unchanged = matrix_power(
+                    kronecker(local(left_bit, 0), local(right_bit, 0)),
+                    width,
+                )
+                unrestricted.append(unchanged)
+                cylindrical.append(unchanged)
+                continue
+            first = kronecker(local(left_bit, 0), local(right_bit, 1))
+            second = kronecker(local(left_bit, 1), local(right_bit, 0))
+            unrestricted.append(matrix_power(add(first, second), width))
+            cylindrical.append(add(
+                matrix_power(first, width),
+                matrix_power(second, width),
+            ))
+        return contract(tuple(unrestricted)) - contract(tuple(cylindrical))
+
+    def direct(width: int, cell_count: int,
+               coarse_left: int, coarse_right: int) -> F:
+        fine_count = width * cell_count
+        fine_left = sum(
+            1 << (width * cell + offset)
+            for cell in range(cell_count)
+            if coarse_left & (1 << cell)
+            for offset in range(width)
+        )
+        fine_right = sum(
+            1 << (width * cell + offset)
+            for cell in range(cell_count)
+            if coarse_right & (1 << cell)
+            for offset in range(width)
+        )
+        changed = fine_left ^ fine_right
+
+        def temporal(word: int) -> F:
+            runs = sum(
+                1 for position in range(fine_count)
+                if word & (1 << position)
+                and (position == 0 or not word & (1 << (position - 1)))
+            )
+            return temporal_base ** (2 * word.bit_count() + 2 * runs)
+
+        def subwords(word: int) -> tuple[int, ...]:
+            values: list[int] = []
+            current = word
+            while True:
+                values.append(current)
+                if current == 0:
+                    return tuple(values)
+                current = (current - 1) & word
+
+        changed_cells = tuple(
+            cell for cell in range(cell_count)
+            if (coarse_left ^ coarse_right) & (1 << cell)
+        )
+        cylindrical = {
+            sum(
+                ((1 << width) - 1) << (width * cell)
+                for index, cell in enumerate(changed_cells)
+                if mask & (1 << index)
+            )
+            for mask in range(1 << len(changed_cells))
+        }
+        value = F(0)
+        for subset in subwords(changed):
+            if subset in cylindrical:
+                continue
+            first = sum(
+                (temporal(fine_left ^ part) for part in subwords(subset)),
+                F(0),
+            )
+            complement = changed ^ subset
+            second = sum(
+                (temporal(fine_right ^ part)
+                 for part in subwords(complement)),
+                F(0),
+            )
+            value += first * second
+        return value
+
+    cases = (
+        (2, 1, 0, 1),
+        (2, 2, 0, 3),
+        (2, 3, 2, 7),
+        (2, 3, 0, 7),
+        (3, 2, 1, 2),
+        (4, 1, 0, 1),
+        (3, 3, 2, 5),
+    )
+    rows = tuple(
+        (case, direct(*case), automaton(*case)) for case in cases
+    )
+    shell_bound = all(
+        automaton_value
+        <= 2 ** (width * (left ^ right).bit_count()) * temporal_base**2
+        * (
+            (2 + (2**width - 2) * temporal_base**2)
+            ** (left ^ right).bit_count()
+            - 2 ** (left ^ right).bit_count()
+        )
+        for (width, _q, left, right), _direct, automaton_value in rows
+    )
+    one_cell_lower = all(
+        automaton(width, 1, 0, 1) >= width * temporal_base**4
+        for width in range(2, 7)
+    )
+    activity = F(1, 7)
+    packet_theta = F(1, 9)
+    schur_identity = all(
+        sum(
+            F(comb(cell_count, distance)) * 2 * packet_theta
+            * (2 ** (width * distance) - 2**distance)
+            * activity**distance
+            for distance in range(1, cell_count + 1)
+        )
+        == 2 * packet_theta * (
+            (1 + 2**width * activity) ** cell_count
+            - (1 + 2 * activity) ** cell_count
+        )
+        for width in range(2, 5) for cell_count in range(1, 6)
+    )
+    fixed_zero = local(0, 0)
+    unchanged_zero = matrix_power(kronecker(fixed_zero, fixed_zero), 3)
+    changed_first = kronecker(local(0, 0), local(1, 1))
+    changed_second = kronecker(local(0, 1), local(1, 0))
+    order_sensitive = matmul(changed_first, changed_second) != matmul(
+        changed_second, changed_first
+    )
+    separated = tuple(
+        (
+            width,
+            tuple(
+                automaton(width, gap + 2, 0, 1 | (1 << (gap + 1)))
+                for gap in range(6)
+            ),
+        )
+        for width in range(2, 5)
+    )
+    return {
+        "rows": rows,
+        "exact": all(direct_value == automaton_value
+                     for _case, direct_value, automaton_value in rows),
+        "bond_dimension": 4,
+        "ordered": order_sensitive,
+        "rank_one_reset": matmul(unchanged_zero, unchanged_zero)
+        == unchanged_zero,
+        "separated": separated,
+        "nondecay": all(
+            values[1] > 0 and len(set(values[1:])) == 1
+            and values[0] != values[1]
+            for _width, values in separated
+        ),
+        "shell_bound": shell_bound,
+        "one_cell_lower": one_cell_lower,
+        "schur_identity": schur_identity,
+    }
+
+
 def main() -> int:
     matrix = matrix_fixture()
     z2 = z2_conditional_fixture()
@@ -1388,6 +1591,7 @@ def main() -> int:
     determinant_selection = determinant_scale_selection_fixture()
     finite_rth = finite_rth_determinant_response_fixture()
     multi_cell = multi_cell_determinant_response_fixture()
+    automaton = determinant_response_automaton_fixture()
 
     expected_defect: Matrix = ((F(1, 16), F(0)), (F(0), F(0)))
     expected_packet_defect: Matrix = ((F(1, 64), F(0)), (F(0), F(0)))
@@ -1604,6 +1808,26 @@ def main() -> int:
             "all-pairs selected response obeys the explicit temporal packet bound",
             multi_cell["packet_bound_holds"]
             and multi_cell["factor_two_needed"],
+        ),
+        (
+            "four-state ordered automaton equals direct residual-subset enumeration",
+            automaton["exact"] and automaton["bond_dimension"] == 4,
+        ),
+        (
+            "ordered response history is noncommutative and has a rank-one reset",
+            automaton["ordered"] and automaton["rank_one_reset"],
+        ),
+        (
+            "raw two-cell response does not decay across an empty separator",
+            automaton["nondecay"],
+        ),
+        (
+            "actual run weight sharpens the shell bound and has a one-cell lower control",
+            automaton["shell_bound"] and automaton["one_cell_lower"],
+        ),
+        (
+            "packet all-pairs bounds sum to the exact Schur activity factor",
+            automaton["schur_identity"],
         ),
     )
 

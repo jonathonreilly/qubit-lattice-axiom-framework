@@ -19,6 +19,7 @@ from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_indep
     matrix_fixture as independent_matrix_fixture,
     determinant_scale_selection_fixture as independent_determinant_selection_fixture,
     finite_rth_determinant_response_fixture as independent_finite_rth_fixture,
+    determinant_response_automaton_fixture as independent_automaton_fixture,
     multi_cell_determinant_response_fixture as independent_multi_cell_fixture,
     original_link_determinant_offblock_fixture as independent_determinant_fixture,
     packet_quadratic_response_fixture as independent_packet_response_fixture,
@@ -97,6 +98,11 @@ MUTATIONS = (
     "delete_only_cylindrical_endpoints",
     "collapse_all_pairs_context",
     "corrupt_all_pairs_packet_bound",
+    "corrupt_response_automaton",
+    "commute_response_history",
+    "invent_raw_diameter_decay",
+    "corrupt_response_shell_bound",
+    "hide_packet_activity_factor",
 )
 
 PASS = 0
@@ -999,6 +1005,142 @@ def primary_multi_cell_determinant_data() -> dict[str, object]:
     }
 
 
+def primary_determinant_automaton_data() -> dict[str, object]:
+    """SymPy four-state contraction on the actual determinant history."""
+
+    t_value = sp.Rational(1, 2)
+
+    def local(base: int, free: int) -> sp.Matrix:
+        return sp.Matrix([
+            [
+                t_value ** (2 * current + 2 * (1 - previous) * current)
+                if free or current == base else 0
+                for current in (0, 1)
+            ]
+            for previous in (0, 1)
+        ])
+
+    def contract(cells: tuple[sp.Matrix, ...]) -> sp.Rational:
+        history = sp.eye(4)
+        for cell in cells:
+            history = history * cell
+        return sp.factor(sum(history[0, column] for column in range(4)))
+
+    def automaton(width: int, cell_count: int,
+                  coarse_left: int, coarse_right: int) -> sp.Rational:
+        unrestricted: list[sp.Matrix] = []
+        cylindrical: list[sp.Matrix] = []
+        for cell in range(cell_count):
+            left_bit = (coarse_left >> cell) & 1
+            right_bit = (coarse_right >> cell) & 1
+            if left_bit == right_bit:
+                unchanged = sp.kronecker_product(
+                    local(left_bit, 0), local(right_bit, 0)
+                ) ** width
+                unrestricted.append(unchanged)
+                cylindrical.append(unchanged)
+                continue
+            first = sp.kronecker_product(
+                local(left_bit, 0), local(right_bit, 1)
+            )
+            second = sp.kronecker_product(
+                local(left_bit, 1), local(right_bit, 0)
+            )
+            unrestricted.append((first + second) ** width)
+            cylindrical.append(first**width + second**width)
+        return contract(tuple(unrestricted)) - contract(tuple(cylindrical))
+
+    cases = (
+        (2, 2, 0, 3),
+        (2, 3, 2, 7),
+        (2, 3, 0, 7),
+        (2, 3, 0, 3),
+        (2, 3, 0, 5),
+        (2, 3, 4, 7),
+        (3, 2, 1, 2),
+        (4, 1, 0, 1),
+    )
+    responses: list[sp.Rational] = []
+    raw_values: list[sp.Rational] = []
+    for width, cell_count, coarse_left, coarse_right in cases:
+        fine_count = width * cell_count
+        changed_positions = tuple(
+            width * cell + offset
+            for cell in range(cell_count)
+            if (coarse_left ^ coarse_right) & (1 << cell)
+            for offset in range(width)
+        )
+        amplitudes = tuple(sp.Rational(position + 1, position + 2)
+                           for position in range(fine_count))
+        prefactor = sp.Rational(3, 14) ** len(changed_positions) * prod(
+            amplitudes[position] for position in changed_positions
+        )
+        raw_value = automaton(width, cell_count, coarse_left, coarse_right)
+        raw_values.append(raw_value)
+        responses.append(sp.factor(prefactor * raw_value))
+
+    fixed_zero = local(0, 0)
+    unchanged_zero = sp.kronecker_product(fixed_zero, fixed_zero) ** 3
+    first = sp.kronecker_product(local(0, 0), local(1, 1))
+    second = sp.kronecker_product(local(0, 1), local(1, 0))
+    separated = tuple(
+        (
+            width,
+            tuple(
+                automaton(width, gap + 2, 0, 1 | (1 << (gap + 1)))
+                for gap in range(6)
+            ),
+        )
+        for width in range(2, 5)
+    )
+    shell_bound = all(
+        raw_value
+        <= 2 ** (width * (left ^ right).bit_count()) * t_value**2
+        * (
+            (2 + (2**width - 2) * t_value**2)
+            ** (left ^ right).bit_count()
+            - 2 ** (left ^ right).bit_count()
+        )
+        for (width, _q, left, right), raw_value
+        in zip(cases, raw_values)
+    )
+    one_cell_lower = all(
+        automaton(width, 1, 0, 1) >= width * t_value**4
+        for width in range(2, 7)
+    )
+    activity = sp.Rational(1, 7)
+    packet_theta = sp.Rational(1, 9)
+    schur_identity = all(
+        sum(
+            sp.binomial(cell_count, distance) * 2 * packet_theta
+            * (2 ** (width * distance) - 2**distance)
+            * activity**distance
+            for distance in range(1, cell_count + 1)
+        )
+        == 2 * packet_theta * (
+            (1 + 2**width * activity) ** cell_count
+            - (1 + 2 * activity) ** cell_count
+        )
+        for width in range(2, 5) for cell_count in range(1, 6)
+    )
+    return {
+        "responses": tuple(responses),
+        "bond_dimension": 4,
+        "ordered": first * second != second * first,
+        "rank_one_reset": unchanged_zero.rank() == 1
+        and unchanged_zero**2 == unchanged_zero,
+        "separated": separated,
+        "nondecay": all(
+            values[1] > 0 and len(set(values[1:])) == 1
+            and values[0] != values[1]
+            for _width, values in separated
+        ),
+        "shell_bound": shell_bound,
+        "one_cell_lower": one_cell_lower,
+        "schur_identity": schur_identity,
+    }
+
+
 def independent_mode() -> int:
     global PASS, FAIL
     PASS = FAIL = 0
@@ -1013,6 +1155,7 @@ def independent_mode() -> int:
     determinant_selection = independent_determinant_selection_fixture()
     finite_rth = independent_finite_rth_fixture()
     multi_cell = independent_multi_cell_fixture()
+    automaton = independent_automaton_fixture()
     expected = ((F(1, 16), F(0)), (F(0), F(0)))
     checks = (
         (
@@ -1164,6 +1307,26 @@ def independent_mode() -> int:
             "independent all-pairs response packet bound",
             multi_cell["packet_bound_holds"]
             and multi_cell["factor_two_needed"],
+        ),
+        (
+            "independent four-state determinant response automaton",
+            automaton["exact"] and automaton["bond_dimension"] == 4,
+        ),
+        (
+            "independent ordered rank-one memory reset",
+            automaton["ordered"] and automaton["rank_one_reset"],
+        ),
+        (
+            "independent raw response separation nondecay",
+            automaton["nondecay"],
+        ),
+        (
+            "independent determinant response shell and lower bounds",
+            automaton["shell_bound"] and automaton["one_cell_lower"],
+        ),
+        (
+            "independent packet Schur activity identity",
+            automaton["schur_identity"],
         ),
     )
     for label, condition in checks:
@@ -1585,6 +1748,8 @@ def main(mutation: str | None, mode: str) -> int:
     independent_finite_rth = independent_finite_rth_fixture()
     multi_cell = primary_multi_cell_determinant_data()
     independent_multi_cell = independent_multi_cell_fixture()
+    automaton = primary_determinant_automaton_data()
+    independent_automaton = independent_automaton_fixture()
     all_q_selection_ok = (
         determinant_selection["exact"]
         and determinant_selection["r2_positive"]
@@ -1739,6 +1904,80 @@ def main(mutation: str | None, mode: str) -> int:
         all_pairs_packet_ok
         and "<=2(2^m-2^d)(epsilon c_det^(n))^m" in note
         and "m=r d_H(y,z)" in note,
+    )
+
+    automaton_ok = (
+        automaton["responses"] == tuple(row[6] for row in multi_cell["rows"])
+        and independent_automaton["exact"]
+        and automaton["bond_dimension"]
+        == independent_automaton["bond_dimension"] == 4
+    )
+    if mutation == "corrupt_response_automaton":
+        automaton_ok = False
+    check(
+        "ordered bond-dimension-four automaton contracts the complete minimal response",
+        automaton_ok
+        and "bond dimension `4`" in note
+        and "(M_(b,0)+M_(b,1))^r" in note
+        and "M_(b,0)^r+M_(b,1)^r" in note,
+    )
+
+    ordered_history_ok = (
+        automaton["ordered"] and independent_automaton["ordered"]
+        and automaton["rank_one_reset"]
+        and independent_automaton["rank_one_reset"]
+    )
+    if mutation == "commute_response_history":
+        ordered_history_ok = False
+    check(
+        "actual shared-rung response has ordered four-state memory and exact reset",
+        ordered_history_ok
+        and "The product order is the original-link cell order"
+        in " ".join(note.split())
+        and "rank-one idempotent" in note,
+    )
+
+    raw_nondeccay_ok = (
+        automaton["nondecay"] and independent_automaton["nondecay"]
+    )
+    if mutation == "invent_raw_diameter_decay":
+        raw_nondeccay_ok = False
+    check(
+        "raw minimal response has an exact positive separation plateau",
+        raw_nondeccay_ok
+        and "independent of `ell>=1`" in note
+        and "changed-cell amplitude product and common normalization are held fixed"
+        in " ".join(note.split())
+        and "locality norm" in note,
+    )
+
+    shell_bound_ok = (
+        automaton["shell_bound"] and automaton["one_cell_lower"]
+        and independent_automaton["shell_bound"]
+        and independent_automaton["one_cell_lower"]
+    )
+    if mutation == "corrupt_response_shell_bound":
+        shell_bound_ok = False
+    check(
+        "actual run weight gives quantitative response-activity estimates",
+        shell_bound_ok
+        and "B_r(t)=2+(2^r-2)t^2 < 2^r" in note
+        and "one-cell entries test any proposed" in " ".join(note.split())
+        and "No indexed amplitude/volume prescription"
+        in " ".join(note.split()),
+    )
+
+    packet_activity_ok = (
+        automaton["schur_identity"]
+        and independent_automaton["schur_identity"]
+    )
+    if mutation == "hide_packet_activity_factor":
+        packet_activity_ok = False
+    check(
+        "packet Schur consumer exposes rq tails and response activity together",
+        packet_activity_ok
+        and "exp(2^r alpha L_q)-exp(2alpha L_q)" in note
+        and "theta_K<=(3rq+1)delta_kappa" in note,
     )
 
     scalar_shift = 2 * sp.Rational(7, 5) * mixed["gamma"]

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: 044026f6da35f3c33249a8b3d2a2b97a8c0c3df5e790365509a396f87af1aa13
-input_fingerprint_sha256: 22cd67b887f4c6cd9c2dd813b69a4e5fa1fdb95533dde3d5c9b42959bd1acd8e
+runner_sha256: b66add2f5532625a1540060e13f6ef8e0290e93f31da3102fb4ce236b75d8b26
+input_fingerprint_sha256: bea16e2512139372ff04562b7afa7d2e453930c450b25d41bf11e7d71ab55be6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 8.72
+elapsed_sec: 7.45
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms
@@ -54,6 +54,11 @@ status: ok
 [PASS] Q deletes all 2^d block-cylindrical residual subsets
 [PASS] all-pairs finite-step response retains shared-rung and background context
 [PASS] all-pairs determinant response has explicit temporal rq packet control
+[PASS] ordered bond-dimension-four automaton contracts the complete minimal response
+[PASS] actual shared-rung response has ordered four-state memory and exact reset
+[PASS] raw minimal response has an exact positive separation plateau
+[PASS] actual run weight gives quantitative response-activity estimates
+[PASS] packet Schur consumer exposes rq tails and response activity together
 [PASS] common scalar normalization cannot remove the kinetic principal symbol
 [PASS] one common normalization scalar rescales the defect quadratically
 [PASS] normalization convention is fixed before comparing direct and staged paths
@@ -70,7 +75,7 @@ per_mode: the Peter--Weyl core commutator square and nontrivial convolution chan
 per_block: the complete physical J_r direct/staged defect and rq packet census were checked
 per_scale: conditioned fibers r=2,...,7 and all-pairs determinant responses through q=3,d=3 were checked
 lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied
-TOTAL: PASS=57 FAIL=0
+TOTAL: PASS=62 FAIL=0
 
 ----- stderr -----
 

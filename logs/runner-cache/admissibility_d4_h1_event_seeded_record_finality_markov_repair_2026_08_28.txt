@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_event_seeded_record_finality_markov_repair_2026_08_28.py
+runner_sha256: 9116e59d5a4422a17cf0fbadc0e22680c7721584fc370230d63ccb36ad3cfa80
+input_fingerprint_sha256: b267086aba41477d70a049b9d1358ffc5f958610aa6dd0d65ae7c71b2a4cf47c
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 11.13
+status: ok
+----- stdout -----
+PASS 24 proper-cubic rotations
+PASS Block-218 Record code is rank-52 orthonormal
+PASS complement is a commuting involutive Record-code symmetry
+PASS Block-219 transient pair is orthonormal and noncode
+PASS post-transient controller complement has rank 74
+PASS controller complement parity sectors are 37 plus 37
+PASS proper-cubic conjugacy classes have sizes 1,6,3,8,6
+PASS controller character is class-constant and exact
+PASS controller irreps are 3A1+2A2+4E+6T_other+2T_axis
+PASS twisted-root 40-ray representation embeds with 34 dimensions unused
+PASS explicit expandable intertwiners have full rank
+PASS explicit 40 rays are orthonormal, noncode and covariant
+PASS executable rule has no hidden size coordinate or runtime history
+PASS the canonical digest binds the executable semantics
+PASS frozen transition DSL has executable guards and writes
+PASS all transition Kraus rows are deterministic and separately indexed
+PASS four physical root-port Kraus rows are exactly normalized
+PASS every pre-existing Record input is QND
+PASS separate Kraus rows cancel the projective A2 branch phases
+PASS frozen port ordinals are conjugated to actual signed-axis carrier columns
+PASS all six normal contexts realize inverse and successor by signed-axis geometry
+PASS 34 named rays plus the covariant rank-94 X_n projector partition each site
+PASS actual named rays and signature projectors transport with their A2 phases
+PASS 29,400 directed-pair Kraus branches give one winner/default and complete I tensor I
+PASS 3,360 guarded-star Kraus branches give one winner/default and complete I tensor 5
+PASS 48 genesis Kraus rows are normalized on every supplied normal and bit
+PASS all compiled Kraus branches transport under 24 rotations and complement
+PASS A2-odd commit and eroder branches carry the explicit projective Kraus phase
+PASS L=4 component graph preserves four labelled ports
+PASS L=6 component graph preserves four labelled ports
+PASS L=8 component graph preserves four labelled ports
+PASS every tested parity torus remains connected after removing the root
+PASS oriented-normal cross product transports the cyclic port successor
+PASS executable table succeeds iff consensus on every L=4,6 event branch
+PASS punctured DFS scans exactly 4(n-1)+1 labelled darts on success
+PASS identical complete physical states have identical successor distributions
+PASS R-inclusive cleanup is strictly decreasing confluent and exact
+PASS Record-free reachable commit and matching flood have strong diamonds
+PASS reachable commit cleanup and QND phases are mutually exclusive
+PASS training plus declared fixtures hit every load-bearing transition row
+PASS conditional first-commit cylinders are normalized for every root
+PASS all declared source inputs exist
+PASS frozen sidecar is the executable table consumed by the primary
+PASS source note records the hidden-state invalidation and Markov repair
+PASS N1-N8 packet remains complete and broad no-go stays demoted
+PASS source note preserves every conditional boundary
+DATA {"classification":"positive-markov-event-seeded-compiler-boundary","cleanup":[[4,60,1,28],[6,14222,1,1917]],"controller_character":[37,5,5,1,-3],"controller_decomposition":{"A1":3,"A2":2,"E":4,"T_axis":2,"T_other":6},"desired_character":[20,0,8,2,2],"digest":"159dd7dfb9787d146eb55440749577db6818c8f88be743191a633e758ac8e223","embedding_digest":"370e5a949e50fda3d27b196c57366610443df4aaf7127a489816cef5b61197de","failure_cases":18584,"flood":[[4,13],[6,397],[8,37293]],"geometry":[[4,4,8,4],[6,9,18,18],[8,16,32,32]],"kraus_certificate":{"context_projector_rank":94,"genesis_branches":48,"pair_branches":29400,"star_branches":3360},"max_steps":41,"row_hits":{"failure_guarded_decay":36496,"failure_spread":17912,"head_descend":9240,"head_fail_opposite_transient":9240,"head_return_parent":568,"head_return_root_commit":104,"head_skip_parent_cross_edge":568,"head_skip_reserved_cross_edge":568,"head_skip_root_cross_edge":3120,"matching_record_flood":672,"root_launch_match":9344,"root_launch_mismatch":9344},"state_action_classes":77054,"success_cases":104}
+per_element: checked all 52 Record rays, both transient rays, the explicit 40-ray controller embedding and every executable table row.
+per_site: checked every L=4,6 word, event site and four physical root-port states with no post-genesis host root or history input.
+per_mode: checked complement bits, proper-cubic classes, ordinary and A2-twisted direction actions, Kraus-row phases and port transport.
+per_block: checked complete L=4,6 event domains, all cleanup schedules and L=4,6,8 monotone Record floods.
+lattice_wide: checked and not executed — finite Record-free supplied-event support only; autonomy, renewal and infinite-volume stopping remain open.
+TOTAL: PASS=46 FAIL=0
+
+----- stderr -----
+

@@ -75,3 +75,15 @@ controller, the bare-metal commit boundary, Block 218's supplied
 precursor/context/effect/site walls, Block 219's transient voter, and Block
 208's one/many/none history gate.  Do not relabel known supplied structure as
 autonomy.
+
+## Block 220 disposition
+
+The committed [N1--N8 packet](../../../../docs/ADMISSIBILITY_D4_H1_EVENT_SEEDED_RECORD_FINALITY_COMPILER_NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md)
+returns `FAIL` for a broad finality, Record, Admissibility or axiom no-go. The
+exact negatives are that the independently named single-block multiphase
+pointer grammar cannot be justified from raw dimension and that the first
+30-ray simulator was not Markov because it kept root/first-port history in the
+host. Those claims are `partial-narrowing`, not a finality no-go. The repaired
+40-ray carrier uses a projectively twisted physical root orbit; its executable
+Record-free supplied-event compiler is positive and preserves the autonomous
+forest, higher-block, coherent and continuous-time routes.

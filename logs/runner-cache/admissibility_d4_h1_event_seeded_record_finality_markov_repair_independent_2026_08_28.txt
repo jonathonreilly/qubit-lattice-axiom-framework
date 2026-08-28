@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_event_seeded_record_finality_markov_repair_independent_2026_08_28.py
+runner_sha256: a0b24cb1ba75a63f0c0f8567f41fd785905cfb687fad600fa7fbb59f95040ce6
+input_fingerprint_sha256: a9b52c8453682e31d4781a8d8448f95372afdbfa206bf36ea37d992fbd941229
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 56.96
+status: ok
+----- stdout -----
+PASS independent digest binds the complete executable table
+PASS independent parser finds every load-bearing local transition row
+PASS independent genesis cylinders normalize without history memory
+PASS independent semantics gate preserves dart return rollback commit flood and QND
+PASS independent consumer binds every disclosed physical-embedding field
+PASS independent literal rank-128 carrier reconstructs Block218 plus tau
+PASS independent physical character arithmetic embeds the twisted controller
+PASS independent Hom polar factors give 40 orthonormal covariant physical rays
+PASS independent literal certificate binds ports inverse successor X default and A2 roles
+PASS all six port maps are signed D6 tangent columns with geometric inverse and cross successor
+PASS each context is 34 named rays plus rank-94 X and has the 26/102 guard split
+PASS 29,400 independently compiled pair rows are explicit partial isometries summing to I tensor I
+PASS 3,360 independently compiled star rows are explicit partial isometries summing to I tensor 5
+PASS 48 genesis rows give four explicit weighted isometries summing to each U projector
+PASS literal rays X and guard projectors transport as physical matrices with computed A2 phases
+PASS all 32,808 compiled rows preserve winner default weights outputs and factors under 24 rotations and complement
+PASS computed A2 factor phases occur on genesis commit and guarded-decay operators
+PASS independent compiler builds an unambiguous physical-state dispatch
+PASS held L=8 consumes the frozen table on every word event site and port
+PASS independent L=4 table execution preserves parallel dart identities
+PASS held cleanup reads R as erodible and uses the local boundary guard
+PASS held cleanup potential decreases for spread and guarded decay
+PASS every held nonfull Record cut has a matching table flood action
+PASS held matching-flood critical pairs have strong diamonds
+PASS independent declared sources exist
+PASS independent source gate binds the preregistered literal-certificate scope
+PASS source surfaces disclose invalidation and all conditional boundaries
+DATA {"certificate_sha256":"4f282aff6c9e2cd8e2422d7ace8b441815ce55ab100ed41ad799452848ee923e","classification":"independent-heldout-positive-markov-event-seeded-compiler","controller_sha256":"6042e82940161c93197357027885250710e706807d2b507ad21f73c5d54800c6","digest":"159dd7dfb9787d146eb55440749577db6818c8f88be743191a633e758ac8e223","genesis_branches":48,"held_cases":4194304,"held_connected_reservations":37293,"held_failures":4194176,"held_max_scans":61,"held_successes":128,"negative_genesis_phases":576,"negative_pair_phases":23040,"negative_star_phases":144,"pair_branches":29400,"pair_default_branches":26040,"star_branches":3360,"star_default_branches":3348,"x_projector_rank":94}
+per_element: independently reconstructed the rank-128 carrier and parsed every frozen transition signature and physical Kraus factor.
+per_site: executed the frozen physical-state table for every held L=8 word, event site and root-port state.
+per_mode: checked both bits, six normals, four transported ports, all 24 rotations, complement, computed A2 phases and rollback/flood cuts.
+per_block: checked 29,400 pair, 3,360 star and 48 genesis Kraus rows; 4,194,304 held events; 37,293 connected reservations; every flood cut.
+lattice_wide: checked and not executed — finite Record-free supplied-event support only; autonomy and infinite-volume fixation remain open.
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

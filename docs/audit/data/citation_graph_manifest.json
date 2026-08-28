@@ -1,6 +1,6 @@
 {
- "edge_count": 16248,
- "node_count": 5643,
+ "edge_count": 16249,
+ "node_count": 5645,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -453,6 +453,14 @@
   "admissibility_d4_h1_edge_comparison_cell_corner_t2_factorization_boundary_bounded_theorem_note_2026-08-26": {
    "deps_hash": "1f0a5e1eefbc",
    "out_degree": 8
+  },
+  "admissibility_d4_h1_event_seeded_record_finality_compiler_no_go_discipline_checklist_2026-08-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "admissibility_d4_h1_event_seeded_record_finality_markov_repair_boundary_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "33086b81a78d",
+   "out_degree": 1
   },
   "admissibility_d4_h1_full_shell_sft_mergeability_and_autonomous_front_boundary_bounded_theorem_note_2026-08-27": {
    "deps_hash": "162cfc90a9c5",

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: 61b33a37f71eca551adc2a95b6279b32beb3db25c9f3d310a54ca5e52d150987
-input_fingerprint_sha256: fdb87d2075808a43db08a4927a26fc55c4583b7d504cfb74a4f405723b9e6ab8
+runner_sha256: 044026f6da35f3c33249a8b3d2a2b97a8c0c3df5e790365509a396f87af1aa13
+input_fingerprint_sha256: 22cd67b887f4c6cd9c2dd813b69a4e5fa1fdb95533dde3d5c9b42959bd1acd8e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.58
+elapsed_sec: 8.72
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms
@@ -50,6 +50,10 @@ status: ok
 [PASS] residual projector removes exactly the two cylindrical endpoint subsets
 [PASS] finite-step order-r response is positive and recovers 2^r-2 at small step
 [PASS] selected order-r determinant response has explicit temporal rq packet control
+[PASS] all-pairs determinant response first appears at r times coarse Hamming distance
+[PASS] Q deletes all 2^d block-cylindrical residual subsets
+[PASS] all-pairs finite-step response retains shared-rung and background context
+[PASS] all-pairs determinant response has explicit temporal rq packet control
 [PASS] common scalar normalization cannot remove the kinetic principal symbol
 [PASS] one common normalization scalar rescales the defect quadratically
 [PASS] normalization convention is fixed before comparing direct and staged paths
@@ -64,9 +68,9 @@ per_element: all 48 signed O(3) frames and their exterior-character values were 
 per_site: the two-cell hidden-Haar fiber and both retained coarse sectors were enumerated exactly
 per_mode: the Peter--Weyl core commutator square and nontrivial convolution channel were checked
 per_block: the complete physical J_r direct/staged defect and rq packet census were checked
-per_scale: conditioned fibers r=2,...,7 and exact finite-step determinant responses r=2,...,6 were checked
+per_scale: conditioned fibers r=2,...,7 and all-pairs determinant responses through q=3,d=3 were checked
 lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied
-TOTAL: PASS=53 FAIL=0
+TOTAL: PASS=57 FAIL=0
 
 ----- stderr -----
 

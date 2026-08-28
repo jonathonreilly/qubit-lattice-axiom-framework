@@ -19,6 +19,7 @@ from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_indep
     matrix_fixture as independent_matrix_fixture,
     determinant_scale_selection_fixture as independent_determinant_selection_fixture,
     finite_rth_determinant_response_fixture as independent_finite_rth_fixture,
+    multi_cell_determinant_response_fixture as independent_multi_cell_fixture,
     original_link_determinant_offblock_fixture as independent_determinant_fixture,
     packet_quadratic_response_fixture as independent_packet_response_fixture,
     s3_mixed_response_fixture as independent_mixed_response_fixture,
@@ -92,6 +93,10 @@ MUTATIONS = (
     "retain_cylindrical_endpoints",
     "restore_alternating_response_sign",
     "corrupt_finite_rth_packet_bound",
+    "corrupt_all_pairs_order",
+    "delete_only_cylindrical_endpoints",
+    "collapse_all_pairs_context",
+    "corrupt_all_pairs_packet_bound",
 )
 
 PASS = 0
@@ -788,6 +793,212 @@ def primary_finite_rth_determinant_data() -> dict[str, object]:
     }
 
 
+def primary_multi_cell_determinant_data() -> dict[str, object]:
+    """Direct four-half assignment check of the all-pairs response law."""
+
+    cases = (
+        (2, 2, 0, 3),
+        (2, 3, 2, 7),
+        (2, 3, 0, 7),
+        (2, 3, 0, 3),
+        (2, 3, 0, 5),
+        (2, 3, 4, 7),
+        (3, 2, 1, 2),
+        (4, 1, 0, 1),
+    )
+    t_value = sp.Rational(1, 2)
+    alpha = sp.Rational(3, 14)
+    rows: list[tuple[
+        int, int, int, int, int, sp.Rational, sp.Rational,
+        int, int, sp.Rational, sp.Rational,
+    ]] = []
+
+    for width, cell_count, coarse_left, coarse_right in cases:
+        fine_count = width * cell_count
+        changed_cells = tuple(
+            cell for cell in range(cell_count)
+            if bool(coarse_left & (1 << cell))
+            != bool(coarse_right & (1 << cell))
+        )
+        distance = len(changed_cells)
+        changed_positions = tuple(
+            width * cell + offset
+            for cell in changed_cells for offset in range(width)
+        )
+        response_order = len(changed_positions)
+        changed_word = sum(1 << position for position in changed_positions)
+        amplitudes = tuple(sp.Rational(position + 1, position + 2)
+                           for position in range(fine_count))
+
+        def pullback(coarse: int) -> int:
+            return sum(
+                1 << (width * cell + offset)
+                for cell in range(cell_count)
+                if coarse & (1 << cell)
+                for offset in range(width)
+            )
+
+        fine_left = pullback(coarse_left)
+        fine_right = pullback(coarse_right)
+
+        def run_count(word: int) -> int:
+            return sum(
+                1 for position in range(fine_count)
+                if word & (1 << position)
+                and (position == 0 or not word & (1 << (position - 1)))
+            )
+
+        def temporal(word: int) -> sp.Rational:
+            return t_value ** (2 * word.bit_count() + 2 * run_count(word))
+
+        def cylindrical(word: int) -> bool:
+            return all(
+                ((word >> (width * cell)) & ((1 << width) - 1))
+                in (0, (1 << width) - 1)
+                for cell in range(cell_count)
+            )
+
+        assignment_sum = sp.Rational(0)
+        accepted = 0
+        for choices in product(range(4), repeat=response_order):
+            first_subset = sum(
+                1 << changed_positions[index]
+                for index, choice in enumerate(choices) if choice < 2
+            )
+            if cylindrical(first_subset):
+                continue
+            first_right = sum(
+                1 << changed_positions[index]
+                for index, choice in enumerate(choices) if choice == 1
+            )
+            second_right = sum(
+                1 << changed_positions[index]
+                for index, choice in enumerate(choices) if choice == 3
+            )
+            assignment_sum += (
+                temporal(fine_left ^ first_right)
+                * temporal(fine_right ^ second_right)
+            )
+            accepted += 1
+
+        subset_sum = sp.Rational(0)
+        allowed_count = 0
+        local_full = (1 << response_order) - 1
+        for local_subset in range(local_full + 1):
+            subset = sum(
+                1 << changed_positions[offset]
+                for offset in range(response_order)
+                if local_subset & (1 << offset)
+            )
+            if cylindrical(subset):
+                continue
+            first_sum = sum(
+                temporal(fine_left ^ sum(
+                    1 << changed_positions[offset]
+                    for offset in range(response_order)
+                    if local_part & (1 << offset)
+                ))
+                for local_part in range(local_full + 1)
+                if not local_part & ~local_subset
+            )
+            complement = local_full ^ local_subset
+            second_sum = sum(
+                temporal(fine_right ^ sum(
+                    1 << changed_positions[offset]
+                    for offset in range(response_order)
+                    if local_part & (1 << offset)
+                ))
+                for local_part in range(local_full + 1)
+                if not local_part & ~complement
+            )
+            subset_sum += first_sum * second_sum
+            allowed_count += 1
+
+        prefactor = alpha**response_order * prod(
+            amplitudes[position] for position in changed_positions
+        )
+        temporal_count = 3 * fine_count + 1
+        packet_trivial = sp.Rational(7, 8)
+        packet_determinant = sp.Rational(3, 8)
+
+        def packet_temporal(word: int) -> sp.Rational:
+            incidence = 2 * word.bit_count() + 2 * run_count(word)
+            return (
+                packet_determinant**incidence
+                * packet_trivial ** (temporal_count - incidence)
+            )
+
+        packet_sum = sp.Rational(0)
+        for local_subset in range(local_full + 1):
+            subset = sum(
+                1 << changed_positions[offset]
+                for offset in range(response_order)
+                if local_subset & (1 << offset)
+            )
+            if cylindrical(subset):
+                continue
+            first_sum = sum(
+                packet_temporal(fine_left ^ sum(
+                    1 << changed_positions[offset]
+                    for offset in range(response_order)
+                    if local_part & (1 << offset)
+                ))
+                for local_part in range(local_full + 1)
+                if not local_part & ~local_subset
+            )
+            complement = local_full ^ local_subset
+            second_sum = sum(
+                packet_temporal(fine_right ^ sum(
+                    1 << changed_positions[offset]
+                    for offset in range(response_order)
+                    if local_part & (1 << offset)
+                ))
+                for local_part in range(local_full + 1)
+                if not local_part & ~complement
+            )
+            packet_sum += first_sum * second_sum
+        theta = 1 - (1 - sp.Rational(1, 8)) ** temporal_count
+        packet_bound = (
+            2 * (2**response_order - 2**distance)
+            * (2 * alpha) ** response_order
+            * prod(amplitudes[position] for position in changed_positions)
+            * theta
+        )
+        rows.append((
+            width, cell_count, coarse_left, coarse_right, response_order,
+            sp.factor(prefactor * assignment_sum),
+            sp.factor(prefactor * subset_sum),
+            accepted, 2**response_order * (2**response_order - 2**distance),
+            abs(sp.factor(prefactor * (subset_sum - packet_sum))),
+            packet_bound,
+        ))
+
+    return {
+        "rows": tuple(rows),
+        "exact": all(row[5] == row[6] for row in rows),
+        "placement_count": all(row[7] == row[8] for row in rows),
+        "packet_bound": all(row[9] <= row[10] for row in rows),
+        "factor_two_needed": all(
+            (1 - (1 - sp.Rational(1, 4)) ** 2)
+            * (2**order - 2**distance)
+            > sp.Rational(1, 4) * (2**order - 2**distance)
+            and (1 - (1 - sp.Rational(1, 4)) ** 2)
+            * (2**order - 2**distance)
+            <= 2 * sp.Rational(1, 4) * (2**order - 2**distance)
+            for width, _q, left, right, order, *_rest in rows
+            for distance in ((left ^ right).bit_count(),)
+        ),
+        "context_distinct": (
+            rows[3][6] != rows[4][6]
+            and rows[3][6] != rows[5][6]
+        ),
+        "orders": tuple(
+            (width, (left ^ right).bit_count(), order)
+            for width, _q, left, right, order, *_rest in rows
+        ),
+    }
+
+
 def independent_mode() -> int:
     global PASS, FAIL
     PASS = FAIL = 0
@@ -801,6 +1012,7 @@ def independent_mode() -> int:
     determinant = independent_determinant_fixture()
     determinant_selection = independent_determinant_selection_fixture()
     finite_rth = independent_finite_rth_fixture()
+    multi_cell = independent_multi_cell_fixture()
     expected = ((F(1, 16), F(0)), (F(0), F(0)))
     checks = (
         (
@@ -934,6 +1146,24 @@ def independent_mode() -> int:
         (
             "independent selected order-r response packet bound",
             finite_rth["packet_bound_holds"],
+        ),
+        (
+            "independent all-pairs determinant series has order r times Hamming distance",
+            multi_cell["formula_exact"] and multi_cell["lower_orders_zero"],
+        ),
+        (
+            "independent projector deletes all block-cylindrical residuals",
+            multi_cell["cylindrical_count_exact"]
+            and multi_cell["has_multi_cell_cases"],
+        ),
+        (
+            "independent all-pairs coefficient retains background context",
+            multi_cell["context_distinct"],
+        ),
+        (
+            "independent all-pairs response packet bound",
+            multi_cell["packet_bound_holds"]
+            and multi_cell["factor_two_needed"],
         ),
     )
     for label, condition in checks:
@@ -1353,6 +1583,8 @@ def main(mutation: str | None, mode: str) -> int:
     determinant_selection = primary_determinant_scale_selection_data()
     finite_rth = primary_finite_rth_determinant_data()
     independent_finite_rth = independent_finite_rth_fixture()
+    multi_cell = primary_multi_cell_determinant_data()
+    independent_multi_cell = independent_multi_cell_fixture()
     all_q_selection_ok = (
         determinant_selection["exact"]
         and determinant_selection["r2_positive"]
@@ -1384,7 +1616,7 @@ def main(mutation: str | None, mode: str) -> int:
         "shared retained rung makes the exact r=2 response nonfactorizing across q",
         shared_rung_ok
         and "85/2048" in note and "67/2097152" in note
-        and "not a tensor product of one-cell responses" in note,
+        and "not a tensor product of one-cell responses" in " ".join(note.split()),
     )
 
     finite_rth_ok = finite_rth["exact"] and independent_finite_rth["formula_exact"]
@@ -1435,6 +1667,78 @@ def main(mutation: str | None, mode: str) -> int:
         and "<=2(2^r-2)(epsilon c_det^(n))^r" in note
         and "product_(p in H_c)|a_p|(3rq+1)delta_kappa" in note
         and "There is no `delta_beta` term" in note,
+    )
+
+    all_pairs_order_ok = (
+        multi_cell["exact"]
+        and independent_multi_cell["formula_exact"]
+        and independent_multi_cell["lower_orders_zero"]
+    )
+    if mutation == "corrupt_all_pairs_order":
+        all_pairs_order_ok = all(
+            order == width * distance + 1
+            for width, distance, order in multi_cell["orders"]
+        )
+    check(
+        "all-pairs determinant response first appears at r times coarse Hamming distance",
+        all_pairs_order_ok
+        and "m=|H|=rd" in note
+        and "ord_lambda(y,z)=r d_H(y,z)" in note,
+    )
+
+    cylindrical_deletion_ok = (
+        multi_cell["placement_count"]
+        and independent_multi_cell["cylindrical_count_exact"]
+    )
+    if mutation == "delete_only_cylindrical_endpoints":
+        cylindrical_deletion_ok = all(
+            placements == 2**order * (2**order - 2)
+            for _r, _q, left, right, order, _actual, _predicted,
+            placements, _expected, _error, _bound in multi_cell["rows"]
+            if (left ^ right).bit_count() > 1
+        )
+    check(
+        "Q deletes all 2^d block-cylindrical residual subsets",
+        cylindrical_deletion_ok
+        and "It has exactly `2^d` members" in note
+        and "X notin Cyl(H)" in note
+        and "2^m-2^d" in note,
+    )
+
+    all_pairs_context_ok = (
+        multi_cell["context_distinct"]
+        and independent_multi_cell["context_distinct"]
+    )
+    if mutation == "collapse_all_pairs_context":
+        all_pairs_context_ok = (
+            multi_cell["rows"][3][6] == multi_cell["rows"][4][6]
+            == multi_cell["rows"][5][6]
+        )
+    check(
+        "all-pairs finite-step response retains shared-rung and background context",
+        all_pairs_context_ok
+        and "not a function\nof Hamming distance alone" in note,
+    )
+
+    all_pairs_packet_ok = (
+        multi_cell["packet_bound"]
+        and independent_multi_cell["packet_bound_holds"]
+        and multi_cell["factor_two_needed"]
+        and independent_multi_cell["factor_two_needed"]
+    )
+    if mutation == "corrupt_all_pairs_packet_bound":
+        all_pairs_packet_ok = all(
+            (1 - (1 - sp.Rational(1, 4)) ** 2)
+            * (2**order - 2**distance)
+            <= sp.Rational(1, 4) * (2**order - 2**distance)
+            for width, _q, left, right, order, *_rest in multi_cell["rows"]
+            for distance in ((left ^ right).bit_count(),)
+        )
+    check(
+        "all-pairs determinant response has explicit temporal rq packet control",
+        all_pairs_packet_ok
+        and "<=2(2^m-2^d)(epsilon c_det^(n))^m" in note
+        and "m=r d_H(y,z)" in note,
     )
 
     scalar_shift = 2 * sp.Rational(7, 5) * mixed["gamma"]
@@ -1563,7 +1867,7 @@ def main(mutation: str | None, mode: str) -> int:
     print("per_site: the two-cell hidden-Haar fiber and both retained coarse sectors were enumerated exactly")
     print("per_mode: the Peter--Weyl core commutator square and nontrivial convolution channel were checked")
     print("per_block: the complete physical J_r direct/staged defect and rq packet census were checked")
-    print("per_scale: conditioned fibers r=2,...,7 and exact finite-step determinant responses r=2,...,6 were checked")
+    print("per_scale: conditioned fibers r=2,...,7 and all-pairs determinant responses through q=3,d=3 were checked")
     print("lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied")
 
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

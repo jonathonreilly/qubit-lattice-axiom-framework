@@ -1161,6 +1161,221 @@ def finite_rth_determinant_response_fixture() -> dict[str, object]:
     }
 
 
+def multi_cell_determinant_response_fixture() -> dict[str, object]:
+    """Direct full-hypercube series control of the all-pairs filtration."""
+
+    def polynomial_multiply(left: tuple[F, ...], right: tuple[F, ...],
+                            cutoff: int) -> tuple[F, ...]:
+        result = [F(0)] * (cutoff + 1)
+        for left_order, left_value in enumerate(left):
+            for right_order, right_value in enumerate(right):
+                if left_order + right_order <= cutoff:
+                    result[left_order + right_order] += left_value * right_value
+        return tuple(result)
+
+    def subwords(word: int) -> tuple[int, ...]:
+        values: list[int] = []
+        current = word
+        while True:
+            values.append(current)
+            if current == 0:
+                break
+            current = (current - 1) & word
+        return tuple(values)
+
+    cases = (
+        (2, 2, 0, 3),
+        (2, 3, 2, 7),
+        (2, 3, 0, 7),
+        (2, 3, 0, 3),
+        (2, 3, 0, 5),
+        (2, 3, 4, 7),
+        (3, 2, 1, 2),
+        (4, 1, 0, 1),
+    )
+    rows: list[tuple[
+        int, int, int, int, int, F, F, bool, bool, int, int, F, F,
+    ]] = []
+
+    for width, cell_count, coarse_left, coarse_right in cases:
+        fine_count = width * cell_count
+        fine_size = 1 << fine_count
+        changed_cells = tuple(
+            cell for cell in range(cell_count)
+            if bool(coarse_left & (1 << cell))
+            != bool(coarse_right & (1 << cell))
+        )
+        distance = len(changed_cells)
+        changed_word = sum(
+            1 << (width * cell + offset)
+            for cell in changed_cells for offset in range(width)
+        )
+        response_order = width * distance
+
+        def pullback(coarse: int) -> int:
+            return sum(
+                1 << (width * cell + offset)
+                for cell in range(cell_count)
+                if coarse & (1 << cell)
+                for offset in range(width)
+            )
+
+        fine_left = pullback(coarse_left)
+        fine_right = pullback(coarse_right)
+        amplitudes = tuple(F(position + 1, position + 2)
+                           for position in range(fine_count))
+        alpha = F(3, 14)
+        temporal_base = F(1, 2)
+
+        def run_count(word: int) -> int:
+            return sum(
+                1 for position in range(fine_count)
+                if word & (1 << position)
+                and (position == 0 or not word & (1 << (position - 1)))
+            )
+
+        def temporal(word: int) -> F:
+            return temporal_base ** (
+                2 * word.bit_count() + 2 * run_count(word)
+            )
+
+        def cylindrical(word: int) -> bool:
+            for cell in range(cell_count):
+                block = (word >> (width * cell)) & ((1 << width) - 1)
+                if block not in (0, (1 << width) - 1):
+                    return False
+            return True
+
+        multiplier: dict[int, tuple[F, ...]] = {}
+        for difference in range(fine_size):
+            series = (F(1),) + (F(0),) * response_order
+            for position, amplitude in enumerate(amplitudes):
+                parity = bool(difference & (1 << position))
+                factor = tuple(
+                    ((alpha * amplitude) ** order / factorial(order)
+                     if bool(order % 2) == parity else F(0))
+                    for order in range(response_order + 1)
+                )
+                series = polynomial_multiply(series, factor, response_order)
+            multiplier[difference] = series
+
+        leakage: dict[tuple[int, int], tuple[F, ...]] = {}
+        residual_words = tuple(word for word in range(fine_size)
+                               if not cylindrical(word))
+        for residual in residual_words:
+            for coarse_word in (fine_left, fine_right):
+                series = [F(0)] * (response_order + 1)
+                for intermediate in range(fine_size):
+                    term = polynomial_multiply(
+                        multiplier[residual ^ intermediate],
+                        multiplier[intermediate ^ coarse_word],
+                        response_order,
+                    )
+                    for order, value in enumerate(term):
+                        series[order] += temporal(intermediate) * value
+                leakage[(residual, coarse_word)] = tuple(series)
+
+        direct = [F(0)] * (response_order + 1)
+        for residual in residual_words:
+            term = polynomial_multiply(
+                leakage[(residual, fine_left)],
+                leakage[(residual, fine_right)],
+                response_order,
+            )
+            for order, value in enumerate(term):
+                direct[order] += value
+
+        predicted_sum = F(0)
+        allowed_count = 0
+        for subset in subwords(changed_word):
+            if cylindrical(subset):
+                continue
+            first = sum(
+                (temporal(fine_left ^ part) for part in subwords(subset)),
+                F(0),
+            )
+            complement = changed_word ^ subset
+            second = sum(
+                (temporal(fine_right ^ part)
+                 for part in subwords(complement)),
+                F(0),
+            )
+            predicted_sum += first * second
+            allowed_count += 1
+        prefactor = alpha**response_order * prod(
+            amplitudes[position] for position in range(fine_count)
+            if changed_word & (1 << position)
+        )
+        predicted = prefactor * predicted_sum
+
+        packet_trivial = F(7, 8)
+        packet_determinant = F(3, 8)
+        temporal_count = 3 * fine_count + 1
+
+        def packet_temporal(word: int) -> F:
+            incidence = 2 * word.bit_count() + 2 * run_count(word)
+            return (
+                packet_determinant**incidence
+                * packet_trivial ** (temporal_count - incidence)
+            )
+
+        packet_sum = F(0)
+        for subset in subwords(changed_word):
+            if cylindrical(subset):
+                continue
+            first = sum(
+                (packet_temporal(fine_left ^ part)
+                 for part in subwords(subset)),
+                F(0),
+            )
+            complement = changed_word ^ subset
+            second = sum(
+                (packet_temporal(fine_right ^ part)
+                 for part in subwords(complement)),
+                F(0),
+            )
+            packet_sum += first * second
+        packet_value = prefactor * packet_sum
+        theta = 1 - (1 - F(1, 8)) ** temporal_count
+        packet_bound = (
+            2 * (2**response_order - 2**distance)
+            * (2 * alpha) ** response_order
+            * prod(amplitudes[position] for position in range(fine_count)
+                   if changed_word & (1 << position)) * theta
+        )
+        rows.append((
+            width, cell_count, coarse_left, coarse_right, response_order,
+            direct[response_order], predicted,
+            direct[response_order] == predicted,
+            all(value == 0 for value in direct[:response_order]),
+            allowed_count, 2**response_order - 2**distance,
+            abs(predicted - packet_value), packet_bound,
+        ))
+
+    return {
+        "rows": tuple(rows),
+        "formula_exact": all(row[7] for row in rows),
+        "lower_orders_zero": all(row[8] for row in rows),
+        "cylindrical_count_exact": all(row[9] == row[10] for row in rows),
+        "packet_bound_holds": all(row[11] <= row[12] for row in rows),
+        "factor_two_needed": all(
+            (1 - (1 - F(1, 4)) ** 2) * row[10]
+            > F(1, 4) * row[10]
+            and (1 - (1 - F(1, 4)) ** 2) * row[10]
+            <= 2 * F(1, 4) * row[10]
+            for row in rows
+        ),
+        "has_multi_cell_cases": any(
+            (left ^ right).bit_count() > 1
+            for _r, _q, left, right, *_rest in rows
+        ),
+        "context_distinct": (
+            rows[3][6] != rows[4][6]
+            and rows[3][6] != rows[5][6]
+        ),
+    }
+
+
 def main() -> int:
     matrix = matrix_fixture()
     z2 = z2_conditional_fixture()
@@ -1172,6 +1387,7 @@ def main() -> int:
     determinant = original_link_determinant_offblock_fixture()
     determinant_selection = determinant_scale_selection_fixture()
     finite_rth = finite_rth_determinant_response_fixture()
+    multi_cell = multi_cell_determinant_response_fixture()
 
     expected_defect: Matrix = ((F(1, 16), F(0)), (F(0), F(0)))
     expected_packet_defect: Matrix = ((F(1, 64), F(0)), (F(0), F(0)))
@@ -1370,6 +1586,24 @@ def main() -> int:
             "selected order-r response obeys the explicit temporal packet bound",
             finite_rth["packet_bound_holds"]
             and finite_rth["factor_two_needed"],
+        ),
+        (
+            "direct all-pairs determinant series first mixes at order r times Hamming distance",
+            multi_cell["formula_exact"] and multi_cell["lower_orders_zero"],
+        ),
+        (
+            "full residual projector removes every block-cylindrical subset",
+            multi_cell["cylindrical_count_exact"]
+            and multi_cell["has_multi_cell_cases"],
+        ),
+        (
+            "all-pairs finite-step coefficient retains shared-rung background context",
+            multi_cell["context_distinct"],
+        ),
+        (
+            "all-pairs selected response obeys the explicit temporal packet bound",
+            multi_cell["packet_bound_holds"]
+            and multi_cell["factor_two_needed"],
         ),
     )
 

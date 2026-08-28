@@ -838,6 +838,152 @@ def original_link_determinant_offblock_fixture() -> dict[str, object]:
     }
 
 
+def determinant_scale_selection_fixture() -> dict[str, object]:
+    """Original-link determinant selection for finite r and q.
+
+    The open ladder plaquette cycles are represented as exact edge sets.
+    This independently checks when a vacuum-column one-plaquette insertion
+    can overlap a coarse determinant-chain column with one insertion removed.
+    """
+
+    t_value = F(1, 2)
+    epsilon = F(1)
+    coefficient = F(1)
+    rows: list[tuple[int, int, tuple[int, ...], F, F]] = []
+
+    def plaquette_edges(index: int) -> frozenset[tuple[str, int]]:
+        return frozenset((
+            ("u", index), ("v", index),
+            ("h", index), ("h", index + 1),
+        ))
+
+    def chain_edges(plaquettes: frozenset[int]) -> frozenset[tuple[str, int]]:
+        edges: set[tuple[str, int]] = set()
+        for plaquette in plaquettes:
+            edges.symmetric_difference_update(plaquette_edges(plaquette))
+        return frozenset(edges)
+
+    for width in range(2, 6):
+        for cell_count in range(1, 4):
+            plaquette_count = width * cell_count
+            weights = tuple(F(index + 1) for index in range(plaquette_count))
+            cells = tuple(
+                frozenset(range(width * cell, width * (cell + 1)))
+                for cell in range(cell_count)
+            )
+            for mask in range(1, 2**cell_count):
+                selected_cells = tuple(
+                    cell for cell in range(cell_count) if mask & (1 << cell)
+                )
+                coarse_chain = frozenset().union(
+                    *(cells[cell] for cell in selected_cells)
+                )
+                coarse_edges = chain_edges(coarse_chain)
+                target_multiplier = t_value ** len(coarse_edges)
+                overlap = F(0)
+                for left in range(plaquette_count):
+                    left_edges = plaquette_edges(left)
+                    for right in range(plaquette_count):
+                        residual_edges = coarse_edges ^ plaquette_edges(right)
+                        if left_edges != residual_edges:
+                            continue
+                        residual_multiplier = t_value ** len(left_edges)
+                        overlap += (
+                            epsilon**2 * coefficient**2
+                            * weights[left] * weights[right] / 4
+                            * (1 + residual_multiplier)
+                            * (target_multiplier + residual_multiplier)
+                        )
+                expected = F(0)
+                if width == 2 and len(selected_cells) == 1:
+                    cell = selected_cells[0]
+                    left, right = tuple(cells[cell])
+                    expected = (
+                        epsilon**2 * coefficient**2
+                        * weights[left] * weights[right] / 2
+                        * (1 + t_value**4) * (t_value**4 + t_value**6)
+                    )
+                rows.append((
+                    width, cell_count, selected_cells, overlap, expected
+                ))
+
+    offdiagonal_rows: list[tuple[int, int, int, int, F]] = []
+    for width in range(2, 6):
+        for cell_count in range(1, 4):
+            plaquette_count = width * cell_count
+            cells = tuple(
+                frozenset(range(width * cell, width * (cell + 1)))
+                for cell in range(cell_count)
+            )
+            coarse_chains = tuple(
+                frozenset().union(*(
+                    (cells[cell] if mask & (1 << cell) else frozenset())
+                    for cell in range(cell_count)
+                ))
+                for mask in range(2**cell_count)
+            )
+            for left_mask, left_chain in enumerate(coarse_chains):
+                for right_mask, right_chain in enumerate(coarse_chains):
+                    if left_mask == right_mask:
+                        continue
+                    left_edges = chain_edges(left_chain)
+                    right_edges = chain_edges(right_chain)
+                    value = F(0)
+                    for left in range(plaquette_count):
+                        residual = left_edges ^ plaquette_edges(left)
+                        residual_multiplier = t_value ** len(residual)
+                        for right in range(plaquette_count):
+                            if residual != right_edges ^ plaquette_edges(right):
+                                continue
+                            value += (
+                                epsilon**2 * coefficient**2 / 4
+                                * (t_value ** len(left_edges) + residual_multiplier)
+                                * (t_value ** len(right_edges) + residual_multiplier)
+                            )
+                    offdiagonal_rows.append((
+                        width, cell_count, left_mask, right_mask, value
+                    ))
+
+    def hamming_one(left: int, right: int) -> bool:
+        return (left ^ right).bit_count() == 1
+
+    r2_q2 = {
+        (left, right): value
+        for width, cell_count, left, right, value in offdiagonal_rows
+        if width == 2 and cell_count == 2
+    }
+
+    return {
+        "rows": tuple(rows),
+        "selection_exact": all(overlap == expected
+                               for _r, _q, _cells, overlap, expected in rows),
+        "r2_singletons_positive": all(
+            overlap > 0
+            for width, _q, cells, overlap, _expected in rows
+            if width == 2 and len(cells) == 1
+        ),
+        "r3plus_zero": all(
+            overlap == 0
+            for width, _q, _cells, overlap, _expected in rows
+            if width >= 3
+        ),
+        "full_offdiagonal_selection": all(
+            (value > 0) == (width == 2 and hamming_one(left, right))
+            for width, _q, left, right, value in offdiagonal_rows
+        ),
+        "shared_rung_values": (
+            r2_q2[(0, 1)], r2_q2[(2, 3)]
+        ),
+        "tensor_prediction": r2_q2[(0, 1)] * t_value**12,
+        "shared_rung_nonfactor": (
+            r2_q2[(0, 1)] == F(85, 2048)
+            and r2_q2[(2, 3)] == F(67, 2097152)
+            and r2_q2[(0, 1)] * t_value**12 == F(85, 8388608)
+            and r2_q2[(2, 3)] != r2_q2[(0, 1)] * t_value**12
+        ),
+    }
+
+
 def main() -> int:
     matrix = matrix_fixture()
     z2 = z2_conditional_fixture()
@@ -847,6 +993,7 @@ def main() -> int:
     carre = u1_carre_du_champ_fixture()
     response_packet = packet_quadratic_response_fixture()
     determinant = original_link_determinant_offblock_fixture()
+    determinant_selection = determinant_scale_selection_fixture()
 
     expected_defect: Matrix = ((F(1, 16), F(0)), (F(0), F(0)))
     expected_packet_defect: Matrix = ((F(1, 64), F(0)), (F(0), F(0)))
@@ -1013,6 +1160,20 @@ def main() -> int:
             "exact finite-epsilon determinant response has a positive off-block",
             determinant["offblock"] == determinant["predicted"] == F(85, 32)
             and determinant["positive"],
+        ),
+        (
+            "all-rq determinant vacuum selection is exact on original-link cycles",
+            determinant_selection["selection_exact"],
+        ),
+        (
+            "quadratic determinant off-block is positive only for r=2 singleton cells",
+            determinant_selection["r2_singletons_positive"]
+            and determinant_selection["r3plus_zero"]
+            and determinant_selection["full_offdiagonal_selection"],
+        ),
+        (
+            "shared retained rung makes the r=2 q=2 response context dependent",
+            determinant_selection["shared_rung_nonfactor"],
         ),
     )
 

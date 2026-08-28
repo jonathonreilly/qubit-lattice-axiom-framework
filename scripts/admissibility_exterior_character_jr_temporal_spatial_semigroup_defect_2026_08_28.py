@@ -17,6 +17,7 @@ from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_indep
     general_r_response_fixture as independent_general_response_fixture,
     matmul as independent_matmul,
     matrix_fixture as independent_matrix_fixture,
+    determinant_scale_selection_fixture as independent_determinant_selection_fixture,
     original_link_determinant_offblock_fixture as independent_determinant_fixture,
     packet_quadratic_response_fixture as independent_packet_response_fixture,
     s3_mixed_response_fixture as independent_mixed_response_fixture,
@@ -83,6 +84,9 @@ MUTATIONS = (
     "corrupt_original_link_census",
     "erase_determinant_offblock",
     "replace_actual_carrier_by_increment_model",
+    "invent_r3_determinant_offblock",
+    "drop_all_q_determinant_selection",
+    "factorize_shared_rung_response",
 )
 
 PASS = 0
@@ -481,6 +485,134 @@ def primary_determinant_offblock_data() -> dict[str, object]:
     }
 
 
+def primary_determinant_scale_selection_data() -> dict[str, object]:
+    """Bit-incidence check of the exact determinant selection rule."""
+
+    t_value = sp.Rational(1, 2)
+    coefficient = sp.Rational(1)
+    rows: list[tuple[int, int, tuple[int, ...], sp.Rational, sp.Rational]] = []
+    for width in range(2, 6):
+        for cell_count in range(1, 4):
+            plaquette_count = width * cell_count
+
+            def plaquette_mask(index: int) -> int:
+                return (
+                    (1 << index)
+                    | (1 << (plaquette_count + index))
+                    | (1 << (2 * plaquette_count + index))
+                    | (1 << (2 * plaquette_count + index + 1))
+                )
+
+            cycles = tuple(plaquette_mask(index)
+                           for index in range(plaquette_count))
+            for coarse_mask in range(1, 2**cell_count):
+                selected = tuple(
+                    cell for cell in range(cell_count)
+                    if coarse_mask & (1 << cell)
+                )
+                target = 0
+                for cell in selected:
+                    for offset in range(width):
+                        target ^= cycles[width * cell + offset]
+                target_multiplier = t_value ** target.bit_count()
+                overlap = sp.Rational(0)
+                for left, left_cycle in enumerate(cycles):
+                    for right, right_cycle in enumerate(cycles):
+                        residual = target ^ right_cycle
+                        if left_cycle != residual:
+                            continue
+                        residual_multiplier = t_value ** left_cycle.bit_count()
+                        overlap += (
+                            coefficient**2 * (left + 1) * (right + 1) / 4
+                            * (1 + residual_multiplier)
+                            * (target_multiplier + residual_multiplier)
+                        )
+                expected = sp.Rational(0)
+                if width == 2 and len(selected) == 1:
+                    cell = selected[0]
+                    left, right = 2 * cell, 2 * cell + 1
+                    expected = (
+                        coefficient**2 * (left + 1) * (right + 1) / 2
+                        * (1 + t_value**4) * (t_value**4 + t_value**6)
+                    )
+                rows.append((width, cell_count, selected, overlap, expected))
+    offdiagonal_rows: list[
+        tuple[int, int, int, int, sp.Rational]
+    ] = []
+    for width in range(2, 6):
+        for cell_count in range(1, 4):
+            plaquette_count = width * cell_count
+            cycles = tuple(
+                (1 << index)
+                | (1 << (plaquette_count + index))
+                | (1 << (2 * plaquette_count + index))
+                | (1 << (2 * plaquette_count + index + 1))
+                for index in range(plaquette_count)
+            )
+            coarse_cycles: list[int] = []
+            for coarse in range(2**cell_count):
+                cycle = 0
+                for cell in range(cell_count):
+                    if not coarse & (1 << cell):
+                        continue
+                    for offset in range(width):
+                        cycle ^= cycles[width * cell + offset]
+                coarse_cycles.append(cycle)
+            for left, left_cycle in enumerate(coarse_cycles):
+                for right, right_cycle in enumerate(coarse_cycles):
+                    if left == right:
+                        continue
+                    value = sp.Rational(0)
+                    for p, plaquette in enumerate(cycles):
+                        residual = left_cycle ^ plaquette
+                        residual_multiplier = t_value ** residual.bit_count()
+                        for k, other in enumerate(cycles):
+                            if residual != right_cycle ^ other:
+                                continue
+                            value += (
+                                coefficient**2 / 4
+                                * (t_value ** left_cycle.bit_count()
+                                   + residual_multiplier)
+                                * (t_value ** right_cycle.bit_count()
+                                   + residual_multiplier)
+                            )
+                    offdiagonal_rows.append((
+                        width, cell_count, left, right, value
+                    ))
+    q2_values = {
+        (left, right): value
+        for width, cell_count, left, right, value in offdiagonal_rows
+        if width == 2 and cell_count == 2
+    }
+    return {
+        "rows": tuple(rows),
+        "exact": all(overlap == expected
+                     for _r, _q, _cells, overlap, expected in rows),
+        "r2_positive": all(
+            overlap > 0 for width, _q, cells, overlap, _expected in rows
+            if width == 2 and len(cells) == 1
+        ),
+        "r3plus_zero": all(
+            overlap == 0 for width, _q, _cells, overlap, _expected in rows
+            if width >= 3
+        ),
+        "full_selection": all(
+            (value > 0)
+            == (width == 2 and (left ^ right).bit_count() == 1)
+            for width, _q, left, right, value in offdiagonal_rows
+        ),
+        "shared_rung_values": (q2_values[(0, 1)], q2_values[(2, 3)]),
+        "tensor_prediction": q2_values[(0, 1)] * t_value**12,
+        "shared_rung_nonfactor": (
+            q2_values[(0, 1)] == sp.Rational(85, 2048)
+            and q2_values[(2, 3)] == sp.Rational(67, 2097152)
+            and q2_values[(0, 1)] * t_value**12
+            == sp.Rational(85, 8388608)
+            and q2_values[(2, 3)] != q2_values[(0, 1)] * t_value**12
+        ),
+    }
+
+
 def independent_mode() -> int:
     global PASS, FAIL
     PASS = FAIL = 0
@@ -492,6 +624,7 @@ def independent_mode() -> int:
     carre = independent_carre_du_champ_fixture()
     response_packet = independent_packet_response_fixture()
     determinant = independent_determinant_fixture()
+    determinant_selection = independent_determinant_selection_fixture()
     expected = ((F(1, 16), F(0)), (F(0), F(0)))
     checks = (
         (
@@ -599,6 +732,15 @@ def independent_mode() -> int:
             "independent exact determinant half-response off-block",
             determinant["offblock"] == determinant["predicted"] == F(85, 32)
             and determinant["positive"],
+        ),
+        (
+            "independent all-rq determinant selection on original-link cycles",
+            determinant_selection["selection_exact"],
+        ),
+        (
+            "independent determinant quadratic off-block selects only r=2 singleton cells",
+            determinant_selection["r2_singletons_positive"]
+            and determinant_selection["r3plus_zero"],
         ),
     )
     for label, condition in checks:
@@ -1013,6 +1155,41 @@ def main(mutation: str | None, mode: str) -> int:
         "shared-rung cancellation distinguishes the actual carrier from a reduced increment model",
         actual_carrier_ok
         and "`t_det^8`, not the actual `t_det^6`" in note,
+    )
+
+    determinant_selection = primary_determinant_scale_selection_data()
+    all_q_selection_ok = (
+        determinant_selection["exact"]
+        and determinant_selection["r2_positive"]
+        and determinant_selection["full_selection"]
+    )
+    if mutation == "drop_all_q_determinant_selection":
+        all_q_selection_ok = False
+    check(
+        "exact determinant offdiagonal selection is coarse-hypercube adjacency only at r=2",
+        all_q_selection_ok
+        and "for every finite `q`" in note
+        and "`r=2` gives precisely the edges" in note,
+    )
+
+    r3_selection_ok = determinant_selection["r3plus_zero"]
+    if mutation == "invent_r3_determinant_offblock":
+        r3_selection_ok = False
+    check(
+        "the full O3 quadratic vacuum-to-determinant selection vanishes for r>=3",
+        r3_selection_ok
+        and "determinant-to-determinant\noffdiagonal block vanishes" in note
+        and "mixed kinetic descendant (34c)--(34g)" in note,
+    )
+
+    shared_rung_ok = determinant_selection["shared_rung_nonfactor"]
+    if mutation == "factorize_shared_rung_response":
+        shared_rung_ok = False
+    check(
+        "shared retained rung makes the exact r=2 response nonfactorizing across q",
+        shared_rung_ok
+        and "85/2048" in note and "67/2097152" in note
+        and "not a tensor product of one-cell responses" in note,
     )
 
     scalar_shift = 2 * sp.Rational(7, 5) * mixed["gamma"]

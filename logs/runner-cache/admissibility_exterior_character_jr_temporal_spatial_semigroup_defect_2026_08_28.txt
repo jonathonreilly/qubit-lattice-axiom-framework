@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: 9cfa9f63a40a821f5ecb638596bb3733f3f1c88404a326496ad26302c85ffa4a
-input_fingerprint_sha256: e21473b3fdfc0c1b53183da81754bc28fa84af89df7e22771f36746cec000f5a
+runner_sha256: 019342cc0176b1de0a29a53f59d9b6a968ca8a56e03cb539d7cb7e3b1cd14d79
+input_fingerprint_sha256: 9722147b277d5f4d46ca88118c398bca035c2e72dcabb6e61e4ce66ea130c304
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.26
+elapsed_sec: 4.61
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms
@@ -43,6 +43,9 @@ status: ok
 [PASS] actual r=2 determinant cycles have four/four/six original-link multipliers
 [PASS] complete finite-epsilon J_2 response has an exact positive determinant off-block
 [PASS] shared-rung cancellation distinguishes the actual carrier from a reduced increment model
+[PASS] exact determinant offdiagonal selection is coarse-hypercube adjacency only at r=2
+[PASS] the full O3 quadratic vacuum-to-determinant selection vanishes for r>=3
+[PASS] shared retained rung makes the exact r=2 response nonfactorizing across q
 [PASS] common scalar normalization cannot remove the kinetic principal symbol
 [PASS] one common normalization scalar rescales the defect quadratically
 [PASS] normalization convention is fixed before comparing direct and staged paths
@@ -59,7 +62,7 @@ per_mode: the Peter--Weyl core commutator square and nontrivial convolution chan
 per_block: the complete physical J_r direct/staged defect and rq packet census were checked
 per_scale: conditioned fibers r=2,...,7 and complete-step response bidegrees r=3,4 were checked
 lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied
-TOTAL: PASS=46 FAIL=0
+TOTAL: PASS=49 FAIL=0
 
 ----- stderr -----
 

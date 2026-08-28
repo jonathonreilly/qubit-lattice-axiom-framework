@@ -7,6 +7,10 @@ parent_pr: 7755
 origin_main: 66e478505e055faf4a5b9e6f4883211e44304718
 branch: physics-loop/toe-axiom-closure-block218-same-law-seed-instrument-20260827
 base: physics-loop/toe-axiom-closure-block213-mergeable-full-shell-sft-20260827
+pr_number: 7760
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7760
+pr_state: draft
+science_commit: 8215308616
 worktree: /private/tmp/toe-axiom-block218.AnFXvt/worktree
 runtime_budget: 24h
 portfolio_recheck_interval: 3h

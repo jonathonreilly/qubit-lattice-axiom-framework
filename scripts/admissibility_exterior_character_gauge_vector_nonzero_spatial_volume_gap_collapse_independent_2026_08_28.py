@@ -157,7 +157,7 @@ def independent_facts() -> dict[str, bool]:
         "the coframe domain gives the exact hopping weight ceiling": (
             F(1, 7) * 7 == 1
         ),
-        "the shrinking tubes give the exact nonzero spatial action ceiling": (
+        "the shrinking tubes give the exact nonzero spatial matter-connection action ceiling": (
             radial_action_bound(m, m) == F(64 * m - 32, m**2)
             and radial_action_bound(m, m) <= F(64 * m, m**2)
         ),

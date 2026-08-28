@@ -17,7 +17,7 @@ source_of_blocker_text: frontier_question
 reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: "Test a fixed-temporal-coupling connected volume family or supply a gauge-invariant physical excitation and time/refinement comparison maps; the present joint volume/temporal-coupling collapse does not decide either route."
-conditional_surface_status: "exact complete projected nonzero-spatial-action gap collapse on a supplied joint subquadratic-volume/strong-temporal-coupling family; no fixed-coupling thermodynamic, refinement, physical-sector, time, continuum, mass, or Hamiltonian conclusion"
+conditional_surface_status: "exact gap collapse for the complete projected transfer with nonzero spatial matter-connection hopping and onsite/source action on a supplied joint subquadratic-volume/strong-temporal-coupling family; no spatial-plaquette, fixed-coupling thermodynamic, refinement, physical-sector, time, continuum, mass, or Hamiltonian conclusion"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 claim_type_reason: "exact coframe/source coefficient bounds, full-ball shell volumes, Gaussian retention and leakage bounds, common-projector invariance, and a two-mode min-max estimate prove the declared mathematical family without fitted spectra or floating reconstruction"
@@ -104,7 +104,7 @@ spatial plaquette topology or determinant-sector selection.
 Here `m` is the integer discriminator index, not the onsite coefficient
 `m_x^2=3`.
 
-## Supplied complete nonzero spatial action
+## Supplied nonzero spatial matter--connection action
 
 For every site, the linked diagonal coframe specialization gives.  Every path
 edge is the supplied direction-`1` edge anchored at its source site, so the
@@ -470,7 +470,7 @@ physical time step, or unregistered excitation label is hidden.
 
 | Source and literal location | Residual | Use here | Match |
 |---|---|---|---:|
-| prior spectral discriminator, `docs/ADMISSIBILITY_EXTERIOR_CHARACTER_GAUGE_VECTOR_FINITE_GAP_STRICT_COUPLING_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-08-28.md:18`, `:395-400`, `:430-441` | complete nonzero spatial action and indexed volume/physical sector open | target blocker and finite spectral boundary | yes |
+| prior spectral discriminator, `docs/ADMISSIBILITY_EXTERIOR_CHARACTER_GAUGE_VECTOR_FINITE_GAP_STRICT_COUPLING_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-08-28.md:18`, `:395-400`, `:430-441` | nonzero spatial matter--connection hopping/onsite/source action and indexed volume/physical sector open | target blocker and finite spectral boundary | yes |
 | complete gauge-vector transfer, `docs/ADMISSIBILITY_EXTERIOR_CHARACTER_GAUGE_VECTOR_MATTER_SOURCE_TRANSFER_BOUNDED_THEOREM_NOTE_2026-08-28.md:116-185`, `:470-532` | supplies exact action/projector/support but no volume spectrum | load-bearing transfer and action | yes |
 | minimal axioms, `docs/MINIMAL_AXIOMS_2026-06-29.md:114-130`, `:173-190`, `:205-213` | no selected matter, source/action, time, or continuum | premise boundary only | yes |
 
@@ -509,9 +509,11 @@ refinement, and physical time were checked as absent and were not executed.
 | free continuum transfer | `docs/FREE_STAGGERED_3PLUS1_SAME_ACTION_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12.md:51-78,187-214,252-282` gives a free `U=1` CAR scaling family | different carrier and no integrated shared `O(3)` projector; no continuum result imported |
 | literature | no precise external theorem is needed; all shell, Gaussian, positivity, and min--max bounds are proved here | no literature imported |
 
-The complete nonzero-spatial joint-family estimate closes one named spectral
-residual.  Fixed-coupling volume, refinement/time, physical-sector, and
-topology-sector routes remain open.
+The joint-family estimate for the complete projected transfer with nonzero
+spatial matter--connection hopping and onsite/source action closes one named
+spectral residual.  It does not test a nonconstant pure-gauge spatial
+plaquette multiplier.  Fixed-coupling volume, refinement/time,
+physical-sector, and topology-sector routes remain open.
 
 ### N7 -- steelman
 

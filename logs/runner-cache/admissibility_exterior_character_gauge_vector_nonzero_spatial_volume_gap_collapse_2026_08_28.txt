@@ -1,20 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_gauge_vector_nonzero_spatial_volume_gap_collapse_2026_08_28.py
-runner_sha256: 019aec80fc93a7df285c61f5feda10a558ae850a69d3cbae306d820e7ecf118c
-input_fingerprint_sha256: d038bd994c882dca2e23e84192298ba404d0b5f4f8932130a9c12b5ec5389b4d
+runner_sha256: 525872be119c8ee291bf310141525b1f9274480b6221d1034ee65332bac3b12e
+input_fingerprint_sha256: 13e1419dc7ad0076624f5b5e8d105d5eb9c8a27f190e487c02a071ef0393f230
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
-[PASS] import boundary: the parents supply the compact shared transfer and leave the complete nonzero-spatial volume estimate open
+[PASS] import boundary: the parents supply the compact shared transfer and leave nonzero spatial matter-connection/volume control open
 [PASS] full-ball tubes: the two shrinking radial shell masses are exact
 [PASS] radial erosion: the smaller retained fraction has the displayed exact polynomial
 [PASS] radial erosion ordering: the second shell is less lossy for m greater than two
 [PASS] Gaussian retention: the supplied temporal scale and erosion give loss three over m to the sixth
 [PASS] cross-shell leakage: exact radical and exponential bounds give eta_m=368/m^15
 [PASS] coframe incidence: the supplied compact diagonal domain bounds lambda_e d_e by one
-[PASS] nonzero spatial action: every tube history obeys S_matter less than 64 N over m squared
+[PASS] nonzero spatial matter-connection action: every tube history obeys S_matter less than 64 N over m squared
 [PASS] common projector: all proper and improper signed frames preserve every radial tube
 [PASS] transporter covariance: the hopping norm survives independent endpoint transformations only with the link
 [PASS] sign boundary: a negative hopping coefficient gives S_matter=-12/7 and destroys M less than or equal to one
@@ -28,7 +28,7 @@ per_site: full B3 shells, local O(3) covariance, onsite positivity, and nonzero 
 per_mode: two projected collective radial tubes, finite strict support, and the quadratic-volume boundary were separated
 per_block: the connected N=m joint volume/temporal-coupling compression was executed; no fixed-coupling thermodynamic theorem
 lattice_wide: checked and not executed — no refinement embeddings, fixed-coupling infinite volume, physical time, or continuum family is supplied
-STATUS: complete nonzero-spatial projected transfer has an exact joint-family mathematical gap collapse; physical and fixed-coupling limits remain open
+STATUS: the complete projected transfer with nonzero spatial matter-connection hopping and onsite/source action has an exact joint-family mathematical gap collapse; pure-gauge plaquettes and physical/fixed-coupling limits remain open
 TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----

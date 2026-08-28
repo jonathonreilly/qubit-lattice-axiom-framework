@@ -143,7 +143,7 @@ def main(mutation: str | None, mode: str) -> int:
         and "source/action" in axioms
     )
     check(
-        "import boundary: the parents supply the compact shared transfer and leave the complete nonzero-spatial volume estimate open",
+        "import boundary: the parents supply the compact shared transfer and leave nonzero spatial matter-connection/volume control open",
         import_boundary,
     )
 
@@ -265,7 +265,7 @@ def main(mutation: str | None, mode: str) -> int:
     if mutation == "break_action_bound":
         action_bound += 1 / m
     check(
-        "nonzero spatial action: every tube history obeys S_matter less than 64 N over m squared",
+        "nonzero spatial matter-connection action: every tube history obeys S_matter less than 64 N over m squared",
         onsite_coefficient_max == 2
         and onsite_per_site == 32 / m**2
         and hopping_coefficient_max == sp.Rational(1, 2)
@@ -395,7 +395,7 @@ def main(mutation: str | None, mode: str) -> int:
     print("per_mode: two projected collective radial tubes, finite strict support, and the quadratic-volume boundary were separated")
     print("per_block: the connected N=m joint volume/temporal-coupling compression was executed; no fixed-coupling thermodynamic theorem")
     print("lattice_wide: checked and not executed — no refinement embeddings, fixed-coupling infinite volume, physical time, or continuum family is supplied")
-    print("STATUS: complete nonzero-spatial projected transfer has an exact joint-family mathematical gap collapse; physical and fixed-coupling limits remain open")
+    print("STATUS: the complete projected transfer with nonzero spatial matter-connection hopping and onsite/source action has an exact joint-family mathematical gap collapse; pure-gauge plaquettes and physical/fixed-coupling limits remain open")
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return int(FAIL != 0)
 

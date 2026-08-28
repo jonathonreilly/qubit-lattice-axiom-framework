@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: 351ed6b2f7a89f60a0a26d0e76988ef9b7980715c7d5d78f014a6e6def837209
-input_fingerprint_sha256: 2da0fab22132231d4e949a4a6d98a274322dd27f459f7b76b07ac25015b22aa6
+runner_sha256: dde142a01f3f6e701baf3b1b797948c0e6b9850213bbb7fe1ddd5f5ad3d3b2da
+input_fingerprint_sha256: 19a7b2befd31ba80588152718e303664a595a4f3a69d61d4130166e1247e45df
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.13
+elapsed_sec: 2.77
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms
@@ -33,6 +33,10 @@ status: ok
 [PASS] the complete defect has exactly zero linear action response
 [PASS] quadratic response is epsilon^2 Gamma minus epsilon^3 K
 [PASS] epsilon^3 lambda^2 generates a non-scalar coarse-kinetic response
+[PASS] exact double commutator isolates the conditioned carre-du-champ
+[PASS] differential-Casimir control closes as kinetic plus scalar multiplication
+[PASS] the exact r>=3 remainder contains no first-order differential term
+[PASS] scalar carre-du-champ has the four-link and rq coefficient census
 [PASS] common scalar normalization cannot remove the kinetic principal symbol
 [PASS] one common normalization scalar rescales the defect quadratically
 [PASS] normalization convention is fixed before comparing direct and staged paths
@@ -49,7 +53,7 @@ per_mode: the Peter--Weyl core commutator square and nontrivial convolution chan
 per_block: the complete physical J_r direct/staged defect and rq packet census were checked
 per_scale: conditioned fibers r=2,...,7 and complete-step response bidegrees r=3,4 were checked
 lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied
-TOTAL: PASS=36 FAIL=0
+TOTAL: PASS=40 FAIL=0
 
 ----- stderr -----
 

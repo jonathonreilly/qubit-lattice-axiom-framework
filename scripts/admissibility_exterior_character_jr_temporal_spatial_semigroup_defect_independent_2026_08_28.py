@@ -639,12 +639,63 @@ def s3_mixed_response_fixture() -> dict[str, object]:
     }
 
 
+def u1_carre_du_champ_fixture() -> dict[str, object]:
+    """Exact Fourier control of the r>=3 scalar remainder mechanism.
+
+    This is a one-edge U(1) differential-Casimir analogue, not an O(3)
+    physics input.  Multiplication by cos(x_i) shifts one fine Fourier index
+    by plus or minus one, while the fine Casimir is diagonal with eigenvalue
+    sum_i k_i^2.
+    """
+
+    rows: list[tuple[int, int, F, F, F]] = []
+    for width in (3, 4, 5):
+        weights = tuple(F(index + 1) for index in range(width))
+        gamma = sum((weight * weight for weight in weights), F(0)) / 2
+        scalar_remainder = gamma
+        for coarse_mode in range(-4, 5):
+            amplitudes: dict[tuple[int, ...], F] = {}
+            for coordinate, weight in enumerate(weights):
+                for shift in (-1, 1):
+                    fine_mode = [coarse_mode] * width
+                    fine_mode[coordinate] += shift
+                    key = tuple(fine_mode)
+                    amplitudes[key] = amplitudes.get(key, F(0)) + weight / 2
+            exact = sum(
+                (amplitude * amplitude
+                 * sum((index * index for index in fine_mode), 0)
+                 for fine_mode, amplitude in amplitudes.items()),
+                F(0),
+            )
+            induced_kinetic = F(width * coarse_mode * coarse_mode)
+            predicted = gamma * induced_kinetic + scalar_remainder
+            rows.append((width, coarse_mode, exact, predicted, gamma))
+    return {
+        "rows": tuple(rows),
+        "exact_decomposition": all(exact == predicted
+                                   for _r, _k, exact, predicted, _gamma in rows),
+        "even_modes": all(
+            next(exact for row_width, row_mode, exact, _predicted, _gamma in rows
+                 if row_width == width and row_mode == mode)
+            == next(exact for row_width, row_mode, exact, _predicted, _gamma in rows
+                    if row_width == width and row_mode == -mode)
+            for width in (3, 4, 5) for mode in range(5)
+        ),
+        "scalar_accumulation": all(
+            gamma == sum(F(index * index, 2)
+                         for index in range(1, width + 1))
+            for width, _mode, _exact, _predicted, gamma in rows
+        ),
+    }
+
+
 def main() -> int:
     matrix = matrix_fixture()
     z2 = z2_conditional_fixture()
     general = general_r_response_fixture()
     complete = complete_step_response_fixture()
     mixed = s3_mixed_response_fixture()
+    carre = u1_carre_du_champ_fixture()
 
     expected_defect: Matrix = ((F(1, 16), F(0)), (F(0), F(0)))
     expected_packet_defect: Matrix = ((F(1, 64), F(0)), (F(0), F(0)))
@@ -778,6 +829,18 @@ def main() -> int:
             and any((add(mixed["mixed_coefficient"], scale(F(7), identity(6))))[row][column] != 0
                     for row in range(6) for column in range(6)
                     if row != column),
+        ),
+        (
+            "U1 differential-Casimir control has exact kinetic plus scalar remainder",
+            carre["exact_decomposition"],
+        ),
+        (
+            "U1 scalar remainder has no first-order Fourier drift",
+            carre["even_modes"],
+        ),
+        (
+            "U1 scalar remainder accumulates the disclosed coefficient squares",
+            carre["scalar_accumulation"],
         ),
     )
 

@@ -18,6 +18,7 @@ from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_indep
     matmul as independent_matmul,
     matrix_fixture as independent_matrix_fixture,
     s3_mixed_response_fixture as independent_mixed_response_fixture,
+    u1_carre_du_champ_fixture as independent_carre_du_champ_fixture,
     transpose as independent_transpose,
     z2_conditional_fixture as independent_z2_fixture,
 )
@@ -70,6 +71,10 @@ MUTATIONS = (
     "corrupt_quadratic_gram",
     "erase_kinetic_descendant",
     "normalize_away_kinetic_descendant",
+    "corrupt_double_commutator",
+    "restore_first_order_remainder",
+    "make_zero_order_nonconstant",
+    "corrupt_carre_du_champ_census",
 )
 
 PASS = 0
@@ -347,6 +352,44 @@ def primary_mixed_response_data() -> dict[str, object]:
     }
 
 
+def primary_u1_carre_du_champ_data() -> dict[str, object]:
+    """Independent SymPy Fourier-state derivation of the scalar remainder."""
+
+    rows: list[tuple[int, int, sp.Rational, sp.Rational]] = []
+    for width, weights in (
+        (3, (sp.Rational(1), sp.Rational(3), sp.Rational(4))),
+        (4, (sp.Rational(2), sp.Rational(3), sp.Rational(5), sp.Rational(7))),
+    ):
+        gamma = sum((weight**2 for weight in weights), sp.Rational(0)) / 2
+        for coarse_mode in range(-5, 6):
+            amplitudes: dict[tuple[int, ...], sp.Rational] = {}
+            for coordinate, weight in enumerate(weights):
+                for shift in (-1, 1):
+                    fine_mode = [coarse_mode] * width
+                    fine_mode[coordinate] += shift
+                    key = tuple(fine_mode)
+                    amplitudes[key] = amplitudes.get(key, sp.Rational(0)) + weight / 2
+            exact = sum(
+                (amplitude**2 * sum(index**2 for index in fine_mode)
+                 for fine_mode, amplitude in amplitudes.items()),
+                sp.Rational(0),
+            )
+            predicted = gamma * (width * coarse_mode**2) + gamma
+            rows.append((width, coarse_mode, exact, predicted))
+    return {
+        "rows": tuple(rows),
+        "exact": all(exact == predicted
+                     for _width, _mode, exact, predicted in rows),
+        "no_drift": all(
+            next(exact for row_width, row_mode, exact, _predicted in rows
+                 if row_width == width and row_mode == mode)
+            == next(exact for row_width, row_mode, exact, _predicted in rows
+                    if row_width == width and row_mode == -mode)
+            for width in (3, 4) for mode in range(6)
+        ),
+    }
+
+
 def independent_mode() -> int:
     global PASS, FAIL
     PASS = FAIL = 0
@@ -355,6 +398,7 @@ def independent_mode() -> int:
     general = independent_general_response_fixture()
     complete = independent_complete_response_fixture()
     mixed = independent_mixed_response_fixture()
+    carre = independent_carre_du_champ_fixture()
     expected = ((F(1, 16), F(0)), (F(0), F(0)))
     checks = (
         (
@@ -430,6 +474,18 @@ def independent_mode() -> int:
             "independent S3 mixed response is non-scalar kinetic",
             any(mixed["mixed_coefficient"][row][column] != 0
                 for row in range(6) for column in range(6) if row != column),
+        ),
+        (
+            "independent differential-Casimir kinetic plus scalar closure",
+            carre["exact_decomposition"],
+        ),
+        (
+            "independent scalar closure has no first-order drift",
+            carre["even_modes"],
+        ),
+        (
+            "independent scalar closure accumulates coefficient squares",
+            carre["scalar_accumulation"],
         ),
     )
     for label, condition in checks:
@@ -715,8 +771,52 @@ def main(mutation: str | None, mode: str) -> int:
     check(
         "epsilon^3 lambda^2 generates a non-scalar coarse-kinetic response",
         kinetic_descendant_ok
-        and "principal symbol is exactly `2gamma`" in note
+        and "mathcal K=2gamma A_c^ind+u_(r,q)I" in note
         and "not a new multiplication potential" in note,
+    )
+
+    carre = primary_u1_carre_du_champ_data()
+    double_commutator_ok = all(token in note for token in (
+        "M_f A_f M_f",
+        "(1/2){A_f,M_(f^2)}+(1/2)[M_f,[A_f,M_f]]",
+        "(1/2)J_r*[M_f,[A_f,M_f]]J_r",
+    ))
+    if mutation == "corrupt_double_commutator":
+        double_commutator_ok = False
+    check(
+        "exact double commutator isolates the conditioned carre-du-champ",
+        double_commutator_ok,
+    )
+
+    scalar_closure_ok = carre["exact"]
+    if mutation == "make_zero_order_nonconstant":
+        scalar_closure_ok = False
+    check(
+        "differential-Casimir control closes as kinetic plus scalar multiplication",
+        scalar_closure_ok
+        and "B*A_fB=gamma A_c^ind+u_(r,q)I" in note
+        and "remaining coefficient is independent" in note
+        and "of every retained coarse word" in note,
+    )
+
+    first_order_ok = carre["no_drift"]
+    if mutation == "restore_first_order_remainder":
+        first_order_ok = False
+    check(
+        "the exact r>=3 remainder contains no first-order differential term",
+        first_order_ok and "There is no first-order remainder" in note,
+    )
+
+    carre_census_ok = all(token in note for token in (
+        "u_(r,q)=2D E_v sum_(c=0)^(q-1)sum_(i=0)^(r-1)a_(c,i)^2",
+        "Each ladder plaquette has two rail and two\nrung links",
+        "sum_(rho!=1)L_rho m_(rho,n)^2",
+    ))
+    if mutation == "corrupt_carre_du_champ_census":
+        carre_census_ok = False
+    check(
+        "scalar carre-du-champ has the four-link and rq coefficient census",
+        carre_census_ok,
     )
 
     scalar_shift = 2 * sp.Rational(7, 5) * mixed["gamma"]
@@ -729,8 +829,8 @@ def main(mutation: str | None, mode: str) -> int:
     check(
         "common scalar normalization cannot remove the kinetic principal symbol",
         normalization_invariant_ok
-        and "adds only `2c_1Gamma`" in note
-        and "remains exactly `2gamma A_c^ind`" in note,
+        and "sends\n`mathcal K` to `mathcal K-2c_1Gamma`" in note
+        and "leaves the exact coefficient `2gamma A_c^ind` unchanged" in note,
     )
 
     scalar = sp.Rational(3, 5)

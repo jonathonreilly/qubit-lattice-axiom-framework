@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_dirac_kahler_exterior_character_action_transfer_2026_08_28.py
-runner_sha256: 90e8f15ec6d4f90eb44253943ab98d1cd8558213f71e65974c7058465bbd8bd3
-input_fingerprint_sha256: c6ecc1d19f31b6b779245d00366c09c5ddcbac9dd0795208aebc9498893a2396
+runner_sha256: f6200bc5704c9f0c38d3c9db2bb021e13e06106c3e88b0093dad13b655be148b
+input_fingerprint_sha256: df93f39ce35eb5c1a44957a71f5e142f8d1d31f7e8570f07fa5d59c457b6bacd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.36
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 [PASS] exterior character: Tr Lambda(M)=det(I+M) as a generic polynomial

@@ -2,7 +2,7 @@
 claim_id: admissibility_dirac_kahler_exterior_character_action_transfer_bounded_theorem_note_2026-08-28
 final_path: docs/ADMISSIBILITY_DIRAC_KAHLER_EXTERIOR_CHARACTER_ACTION_TRANSFER_BOUNDED_THEOREM_NOTE_2026-08-28.md
 claim_type: bounded_theorem
-claim_scope: "Exact finite classification of the Block217 D3 plaquette defect as the full-exterior O(3) character; the ordered local link equation and flat covariant-curl Hessian for an explicitly supplied plaquette-action family; exact improper-sector, topology, and fixed-connection metric-response boundaries; and reflection positivity, gauge-projected transfer, injective-support, and self-adjoint logarithm results for the same supplied finite action. The action, couplings, Haar measure, temporal extension, gauge carrier, and physical interpretation are explicit inputs rather than framework-selected consequences."
+claim_scope: "Exact finite classification of the parent connection-curvature note's positive plaquette defect as the O(3) character of the full exterior representation; the ordered local link equation and flat covariant-curl Hessian for an explicitly supplied plaquette-action family; exact improper-sector and topology boundaries; zero endpoint coframe/metric response only at fixed orthogonal links, constant weights, and fixed measure; reflection positivity and gauge-projected transfer positivity only for nonnegative crossing couplings; injectivity only when every crossing coupling is strictly positive and only on the gauge-invariant Hilbert space or before gauge projection in temporal gauge; and the corresponding support-qualified self-adjoint logarithm. The action, coupling map and signs, Haar measure, temporal extension, gauge carrier/projection, metric/source extensions, and every physical interpretation are explicit inputs rather than framework-selected consequences."
 runner: scripts/admissibility_dirac_kahler_exterior_character_action_transfer_2026_08_28.py
 independent_checker: scripts/admissibility_dirac_kahler_exterior_character_action_transfer_independent_2026_08_28.py
 status: proposed_retained
@@ -15,18 +15,12 @@ source_of_blocker_text: handoff
 reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: "Attempt to derive an equivariant reversible edge transport from the actual neighbor-conditioned M2(C) conditional law; the supplied action and temporal measure here are consistency tests, not a selection theorem."
-conditional_surface_status: "stacked on unmerged Blocks214-217 and conditional on a supplied action, couplings, Haar measure, temporal extension, and gauge carrier"
+conditional_surface_status: "conditional on the cited parent science chain and on a supplied action, couplings, Haar measure, temporal extension, and gauge carrier"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 claim_type_reason: "the exterior-character, variation, Hessian, finite RP, transfer, topology, and metric-response statements are exact bounded theorems for a disclosed finite family, while physical selection and identification remain open"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-parent_ref: origin/physics-loop/toe-metric-dynamics-bridge-block217-plaquette-holonomy-20260827
-parent_commit: 73261a6e7cea53554397d47ac1aaa199e0e4ac7f
-current_main: 66e478505e055faf4a5b9e6f4883211e44304718
-registered: 0
-adopted: 0
-axiom_movement: none
 ---
 
 # Exterior-character plaquette action and finite transfer boundary
@@ -39,7 +33,7 @@ axiom_movement: none
 
 ## Exact target
 
-The [Block217 plaquette theorem](ADMISSIBILITY_DIRAC_KAHLER_PLAQUETTE_HOLONOMY_CONNECTION_CURVATURE_BOUNDED_THEOREM_NOTE_2026-08-27.md)
+The [plaquette-holonomy connection-curvature parent](ADMISSIBILITY_DIRAC_KAHLER_PLAQUETTE_HOLONOMY_CONNECTION_CURVATURE_BOUNDED_THEOREM_NOTE_2026-08-27.md)
 constructed an orthogonal plaquette product `W_p`, its full exterior lift, and
 the positive defect
 
@@ -59,6 +53,20 @@ distribution, but not the displayed action, its coefficient values, Haar link
 measure, temporal links, or a physical connection interpretation.  The
 [kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
 supplies OS0 graining form only.  It supplies none of those dynamical inputs.
+
+## Imports and open boundaries
+
+| Input | Role in this note | Provenance | Open boundary |
+|---|---|---|---|
+| orthogonal edge factors `R_e`, plaquette words `W_p`, and defects `Q_p` | finite connection/curvature carrier | [plaquette-holonomy connection-curvature parent](ADMISSIBILITY_DIRAC_KAHLER_PLAQUETTE_HOLONOMY_CONNECTION_CURVATURE_BOUNDED_THEOREM_NOTE_2026-08-27.md) on its conditional parent chain | physical selection of `R_e` remains the connection wall |
+| action form `f_n` and finite spatial half-action | object tested by variation, RP, and transfer | supplied definition (1)–(2) in this note | physical action selection remains the action-form wall |
+| real plaquette/crossing couplings `kappa_p`, including their map, magnitudes, and signs | weights in the field equation and seam kernel | supplied coefficients; sign hypotheses are stated separately for every theorem | the coupling map and signs are not derived |
+| normalized product Haar link measure on `O(3)` | finite integration measure used in RP and transfer | supplied mathematical measure | the measure wall and any physical or metric-dependent measure remain open |
+| temporal vertex links, link reflection, seam assignment, and reflected spatial half-actions | finite Euclidean temporal extension | supplied construction (21), (25) | the temporal-seam wall and physical time evolution remain open |
+| `O(3)` gauge carrier, temporal-link gauge averaging `P`, and choice of `L^2` versus `H_phys` | projection and Hilbert-space domain | supplied finite gauge construction (26)–(27) | the gauge-space wall and physical state-space identification remain open |
+| fixed independent `R_e`, constant weights, fixed measure, and no matter/Record source | domain of the endpoint stress calculation | explicit fixed-family hypothesis in (16)–(17) | the geometry and reciprocal-source walls remain open |
+| OS0 graining form | structural equality of time/space kinetic graining only | [approved kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) | supplies no action, coupling, measure, Hamiltonian, clock, or Lorentz theorem |
+| physical reading of `-log T_hat` | none; expressly excluded from the mathematical reconstruction | no supplying authority | the Hamiltonian-identification and clock/Lorentz walls remain open |
 
 ## Supplied finite action family
 
@@ -218,7 +226,8 @@ D^2 S_(n,kappa)|_(R^0)(a,b)
 
 The flat Hessian is therefore identical for every `n`.  For strictly positive
 weights its kernel is `ker d_(R^0)`.  Gauge variations lie in this kernel, but
-topology can add more.  At the identity background the quotient by gauge is
+topology can add more.  At the identity background the linearized kernel
+quotient by infinitesimal gauge variations is
 
 ```text
 H^1(X;R) tensor so(3).                              (15)
@@ -245,7 +254,7 @@ bundle, or instanton classification from one plaquette holonomy.
 
 ## Endpoint coframe and metric response
 
-Block217 gives
+The plaquette-holonomy connection-curvature parent gives
 
 ```text
 H_A = E_0^-1 W_p E_0,
@@ -268,8 +277,8 @@ partial S_(n,kappa)/partial E_s |_R,kappa = 0.       (17)
 
 This is the requested stress calculation for the disclosed compatible
 variables.  It does not license an unrestricted off-domain variation at fixed
-tangent maps: changing endpoint metrics arbitrarily can violate Block216
-metric compatibility.  Metric-dependent plaquette weights or volumes, a
+tangent maps: changing endpoint metrics arbitrarily can violate the cited
+parent chain's metric-compatibility domain.  Metric-dependent plaquette weights or volumes, a
 metric-dependent measure, a derived relation `R(E)`, or matter/source terms
 can all produce nonzero reciprocal response.  Equation (17) says only that the
 pure fixed-`R`, constant-weight character action supplies none.
@@ -425,10 +434,13 @@ configuration space.
 At zero coupling an edge convolution is projection onto the trivial
 representation.  Uniform zero coupling is rank one on the raw configuration
 space.  On the source-free gauge-invariant space it is injective only when the
-spatial graph is a forest, whose gauge quotient is a point; a cycle carries a
-nonconstant Wilson-loop mode that the zero-coupling transfer kills.  More
-generally, a zero-coupling edge is harmless only when no admissible nonconstant
-spin network can label it nontrivially.
+spatial graph is a forest, whose gauge quotient is a point.  If the graph has a
+cycle, its gauge-invariant space has dimension greater than one, so the
+rank-one transfer has a nonzero kernel.  A Wilson-loop observable certifies the
+extra dimension; after multiplication by `m`, a transfer-orthogonalized
+combination, rather than necessarily the bare loop itself, is the kernel
+vector.  More generally, a zero-coupling edge is harmless only when no
+admissible nonconstant spin network can label it nontrivially.
 
 On any Hilbert space where `T` is positive and injective, let
 `lambda_0=||T||>0`, set `T_hat=T/lambda_0`, and define by spectral calculus
@@ -491,7 +503,7 @@ distinguish the members.  No broad action-selection no-go is asserted.
 
 | Obligation | Disposition |
 |---|---|
-| Block217 compatible holonomy and defect | supplied by the linked parent and independently rechecked |
+| plaquette-holonomy compatible holonomy and defect | supplied by the linked parent and independently rechecked |
 | exterior character and `O(3)` sectors | proved by (4)–(6) |
 | ordered local link equation | proved by (7)–(11) |
 | flat Hessian and null space | proved by (12)–(15), with explicit topology controls |
@@ -506,7 +518,7 @@ distinguish the members.  No broad action-selection no-go is asserted.
 
 The proof graph is acyclic.  The generic compact-group Wilson transfer method
 already appears on `origin/main`; the new scientific content is the
-Block217-specific exterior-character classification, ordered variation and
+parent-specific exterior-character classification, ordered variation and
 Hessian, improper/topological/metric discriminators, exact nonlinear
 reflection-positive family, and the corrected injectivity scope.
 
@@ -517,32 +529,60 @@ so N1–N8 are recorded even though no `no_go` claim type is proposed.
 
 ### N1 — alternative routes
 
-| Route | Attempt and result | Marker |
-|---|---|---|
-| determinant or other-character action | Adding `det W` or another `O(3)` character distinguishes data that `Q` identifies, but changes the supplied action and therefore does not refute (6). | `ATTEMPTED` |
-| global Wilson-loop or boundary term | Such a term can select a noncontractible flat sector; it confirms that the topology witness is only about plaquette-local (2). | `ATTEMPTED` |
-| metric-dependent weights or measure | These can generate coframe stress; they are absent from the constant-weight derivative (17), so the metric statement is kept at fixed `R,kappa,measure`. | `ATTEMPTED` |
-| matter or Record source coupling | A reciprocal source term can generate stress and backreaction; the four axioms do not supply that term, and this note does not rule it out. | `ATTEMPTED` |
-| Admissibility-derived selector | The actual neighbor-conditioned probability law could distinguish `f_n`; its extensional form is not fixed by the axiom memo, so the broad selection no-go is withdrawn. | `ATTEMPTED` |
-| restrict to `SO(3)` | A disclosed sector restriction removes improper holonomies but is a different supplied domain; it does not change the `O(3)` classification proved here. | `ATTEMPTED` |
-| support/OS quotient | Passing to the gauge-invariant space or OS support removes projector null modes and is exactly the qualified injective route used in (27)–(29). | `ATTEMPTED` |
+| Route | Attempt and result | Exact anchor | Marker |
+|---|---|---|---|
+| determinant or other-character action | Adding `det W` or another `O(3)` character distinguishes data that `Q` identifies, but changes the supplied action and therefore does not refute the classification of that action. | This note, (6) and the two fences immediately below it: `Q=16` identifies both the improper component and proper pi rotations. | `ATTEMPTED` |
+| global Wilson-loop or boundary term | Such a term can select a noncontractible flat sector; it confirms that the topology witness is only about the plaquette-local family (2). | This note, the exact seam-holonomy and fixed-boundary witnesses following (15). | `ATTEMPTED` |
+| metric-dependent weights or measure | These can generate coframe stress; they are absent from the constant-weight derivative, so the shipped statement stays at fixed `R,kappa,measure`. | This note, (16)–(17) and their explicit off-family list. | `ATTEMPTED` |
+| matter or Record source coupling | A reciprocal source term can generate stress and backreaction, but is a different action family and does not refute the fixed-source-free derivative (17). | [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md), lines 175–187, place source/action and observable identification outside the axioms; this note, (17), fixes the source-free family. | `ATTEMPTED` |
+| Admissibility-derived selector | A completed neighbor-conditioned probability law could distinguish `f_n`; its extensional form and values are not fixed, so this route defeats a broad selection no-go but not the narrow same-diagnostics witness. | [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md), lines 205–213; this note, (30)–(31). | `ATTEMPTED` |
+| restrict to `SO(3)` | A disclosed sector restriction removes improper holonomies but is a different supplied domain; it does not change the `O(3)` classification proved here. | This note, (6), including the proper pi-rotation collision immediately below it. | `ATTEMPTED` |
+| support/OS quotient | Passing to the gauge-invariant space or OS support removes projector null modes and is exactly the qualified injective route, not a counterexample to the support-qualified theorem. | This note, (26)–(29), including `ker P` and the explicit spectral domain. | `ATTEMPTED` |
 
 All seven routes were evaluated in this cycle.  Because several remain live
 for stronger physical claims, the note ships only the quantified boundaries.
 
 ### N2 — wall independence
 
-The open physical inputs are collapsed to four walls.  No one supplies any
-other.
+The actual imported wall set is not collapsed into composite labels:
 
-| Pair | First closes second? | Second closes first? | Independent? |
-|---|---:|---:|---:|
-| action/connection selector vs temporal measure/extension | no | no | yes |
-| action/connection selector vs metric/source coupling | no | no | yes |
-| action/connection selector vs physical Hamiltonian identification | no | no | yes |
-| temporal measure/extension vs metric/source coupling | no | no | yes |
-| temporal measure/extension vs physical Hamiltonian identification | no | no | yes |
-| metric/source coupling vs physical Hamiltonian identification | no | no | yes |
+| Scientific label | Independently closable wall |
+|---|---|
+| connection | physical selection of the orthogonal edge connection `R_e` |
+| action-form | physical selection of the plaquette action form `f` |
+| couplings | coupling map, magnitudes, and signs |
+| measure | normalized link integration measure (Haar is supplied here) |
+| temporal-seam | temporal links, seam action, and reflection extension |
+| gauge-space | gauge carrier/projection and choice of physical state space |
+| geometry | metric-dependent weights, geometry family, or a derived `R(E)` relation |
+| source | matter/Record source coupling and reciprocal variation |
+| Hamiltonian-identification | identification of the support logarithm as a physical Hamiltonian |
+| clock/Lorentz | physical clock and Lorentzian/Lorentz-covariant interpretation |
+
+For every unordered pair below, `I` means that closing either member does not
+automatically close the other; equivalently both directed closure questions
+have answer `no`.  The diagonal is omitted as `--`.
+
+| | connection | action-form | couplings | measure | temporal-seam | gauge-space | geometry | source | Hamiltonian-identification | clock/Lorentz |
+|---|---|---|---|---|---|---|---|---|---|---|
+| connection | -- | I | I | I | I | I | I | I | I | I |
+| action-form | I | -- | I | I | I | I | I | I | I | I |
+| couplings | I | I | -- | I | I | I | I | I | I | I |
+| measure | I | I | I | -- | I | I | I | I | I | I |
+| temporal-seam | I | I | I | I | -- | I | I | I | I | I |
+| gauge-space | I | I | I | I | I | -- | I | I | I | I |
+| geometry | I | I | I | I | I | I | -- | I | I | I |
+| source | I | I | I | I | I | I | I | -- | I | I |
+| Hamiltonian-identification | I | I | I | I | I | I | I | I | -- | I |
+| clock/Lorentz | I | I | I | I | I | I | I | I | I | -- |
+
+The exact witnesses also separate the closest-looking pairs.  Equations
+(18)–(24) analyze the action-form and coupling walls after the connection,
+measure, temporal-seam, and gauge-space inputs have been supplied, without
+selecting any of them.  Equations (16)–(17) settle the fixed-family geometry
+response without adding a source.  Equations (28)–(29) construct a
+mathematical logarithm without closing Hamiltonian identification or the
+clock/Lorentz wall.  No wall follows from another, so none is collapsed.
 
 ### N3 — hidden-wall scan
 
@@ -552,19 +592,23 @@ are explicit hypotheses.  `Compact-group representation` and spectral
 calculus are mathematical mechanisms proved or stated at their exact role,
 not hidden physical bridges.  The registered kinetic-isotropy primitive is
 cited only for its OS0 graining boundary and supplies no dynamics.
+The three uses of `background` are also explicit mathematical hypotheses: a
+flat connection at the start of the Hessian calculation, its identity
+specialization for ordinary cubical curl, and the identity-background
+cohomology specialization.  None is a hidden preferred physical state.
 
 ### N4 — residual matching
 
-| Cited surface | Residual it supplies | Residual used here | Match |
+| Cited witness and exact source location | Residual it supplies | Residual used here | Match |
 |---|---|---|---:|
-| Block217 note, equations for `W_p,Q_p` | compatible plaquette carrier with action/time still open | starting carrier and quoted blocker | yes |
-| minimal-axiom memo, dynamics boundary | adjacency and conditional distribution but no action/time/source | import boundary only | yes |
-| kinetic-isotropy primitive | OS0 graining form but no dynamics or Lorentz theorem | primitive boundary only | yes |
-| `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md` | generic finite `SU(N)` Wilson plane positivity | prior-art context, not an `O(3)` or Block217 dependency | no; context only |
-| `GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md` | generic finite `SU(N)` gauge-projected Wilson transfer | prior-art context, not the new exterior action classification | no; context only |
+| [Plaquette-holonomy connection-curvature parent](ADMISSIBILITY_DIRAC_KAHLER_PLAQUETTE_HOLONOMY_CONNECTION_CURVATURE_BOUNDED_THEOREM_NOTE_2026-08-27.md), lines 5, 16, and 280–297 | supplied orthogonal holonomy and `Q_p`; physical edge selection, action, OS test, and physical time remain open | starting carrier plus the exact action/OS blocker quoted here | yes |
+| [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md), lines 114–130 and 173–187 | neighbor-conditioned distribution, but no weight values, Hamiltonian/transfer, time metric, source/action, or physical observable identification | action-form, couplings, measure, temporal-seam, source, Hamiltonian-identification, and clock/Lorentz walls are explicit imports, not axiom consequences | yes |
+| [Kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md), lines 13–34 and 62–75 | OS0 graining form only; no coupling, dynamics, selector, or Lorentz theorem | structural graining context only, never an action or physical-time bridge | yes |
 
-The two nonmatching generic Wilson notes are not load-bearing citations and do
-not support a novelty claim for generic transfer theory.
+The generic Wilson positivity and transfer notes cited in N8 and in the prior-art
+paragraph are exact method precedent, but their `SU(N)` Wilson residual does not
+match the parent `O(3)` exterior-character residual.  They are therefore
+dropped from N4 witness support and supply no novelty or closure claim here.
 
 ### N5 — rhetoric audit
 
@@ -600,13 +644,20 @@ counterexamples for the disclosed family only.
 
 ### N8 — cross-cycle echo
 
-Prior Wilson-action rows repeatedly separate positive transfer consistency
-from action-form selection; the current generic transfer notes above do the
-same.  Prior metric/source rows also retire apparent zero-response walls by
-adding explicit reciprocal couplings.  Those mechanisms are incorporated as
-live escape routes here.  The result is narrowed to fixed-action character,
-topology, and metric-response facts rather than repeating a broad selection or
-gravity wall.
+The cross-cycle search used the pinned `origin/main` tree.  The structurally
+similar landed rows are:
+
+| Prior wall | Current status at pinned `origin/main` | Retired? / mechanism | Application here |
+|---|---|---|---|
+| `COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md`, lines 66–112 and 183–207 | `bounded_theorem`, `unaudited`, effective `unaudited` | conditional polar transport exists after supplying a full-rank cross-object; physical carrier, rank sector, action, and dynamics selection are not retired | identifies the exact cross-object/nondegeneracy mechanism that remains live for the connection wall |
+| `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`, lines 381–399 | `bounded_theorem`, `unaudited`, effective `unaudited` | the positivity question is closed only after importing the Wilson action, sign, normalized Haar measure, and seam; action selection is not retired | same import-to-bounded-theorem mechanism is used in (18)–(24), with every import disclosed |
+| `GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`, lines 820–835 | `positive_theorem`, `unaudited`, effective `unaudited` | finite Wilson transfer is constructed for a supplied action; neither physical-action selection nor physical-Hamiltonian identification is retired | motivates the explicit separation of action/transfer inputs from Hamiltonian and clock/Lorentz identification |
+| `ADMISSIBILITY_CODE_SWAP_CUT_AREA_LOCAL_SOURCE_IMPROVEMENT_METRIC_RESPONSE_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`, lines 385–431 | source status `bounded-support`; no current ledger row on the pinned tree | its fixed-background ambiguity is not a universal zero-stress wall: supplying a geometry family gives inequivalent exact first derivatives | the same mechanism remains live for geometry and source, so (17) stays fixed-`R`, fixed-weight, fixed-measure, and source-free |
+
+None of these rows supplies authority for this note.  They expose mechanisms by
+which similar walls were narrowed or conditionally crossed, and every such
+mechanism is kept as a live escape.  The shipped result is therefore only
+the fixed-action character, topology, metric-response, and transfer boundary.
 
 ```yaml
 no_go_discipline:
@@ -622,7 +673,7 @@ no_go_discipline:
 The statement-level prior-art sweep was performed on `origin/main` commit
 `66e478505e055faf4a5b9e6f4883211e44304718`.  It found generic `SU(N)` Wilson
 reflection-positive and gauge-projected transfer theorems, but no matching
-Block217 exterior-character variational, improper-sector, topology,
+parent exterior-character variational, improper-sector, topology,
 metric-response, or nonlinear-family theorem.  Generic transfer positivity is
 therefore rederived and credited as prior art rather than advertised as new.
 

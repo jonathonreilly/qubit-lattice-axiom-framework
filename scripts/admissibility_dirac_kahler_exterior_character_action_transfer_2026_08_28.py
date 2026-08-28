@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact exterior-character action, variation, and transfer checks.
 
-The finite action family is built from the Block217 plaquette defect.  This
+The finite action family is built from the plaquette-holonomy parent's defect. This
 runner checks the O(3) character classification, the ordered link variation,
 the flat curl Hessian, coframe independence, topology controls, positive and
 negative transfer signs, and an independently implemented reconstruction.
@@ -226,7 +226,7 @@ def main(mutation: str | None, mode: str) -> int:
     check("topology: a torus cell has exact closed non-gauge flat Hessian directions",
           torus_nullity == 2)
 
-    # Endpoint coframes telescope from the compatible Block217 defect.
+    # Endpoint coframes telescope from the compatible parent defect.
     frames = (
         sp.eye(3),
         sp.Matrix(((sp.Rational(5, 4), sp.Rational(-3, 4), 0),

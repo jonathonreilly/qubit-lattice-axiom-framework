@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block230-aci-component-summary-20260828
 campaign_number: 230
-status: preregistration_ready
-phase: pre_execution_aci_freeze
+status: result_ready
+phase: stage_a1_scoped_terminal_confluence_failure
 parent_commit: c6ab3c9094
 parent_branch: physics-loop/toe-axiom-closure-block229-cleanup-front-coalescence-20260828
 branch: physics-loop/toe-axiom-closure-block230-aci-component-summary-20260828
@@ -13,7 +13,7 @@ review_loop_allowed: false
 pre_result_panel_vote: 4_aci_summary_1_associative_haar_0_axiom
 latest_external_pr_checked: 7779
 latest_external_pr_effect: one_exact_changing_carrier_cell_no_primary_rerank
-active_route: finite_locally_readable_aci_component_summary
+active_route: neighbor_ready_aci_component_summary_next_block
 fallback_route: distributed_set_valued_incidence
 summary_atoms: [rho,alpha,lambda,chi,phi]
 summary_cardinality: 32
@@ -30,7 +30,11 @@ new_cleanup_rows_after_execution_allowed: 0
 owner_id_coordinate_size_count_clock_allowed: false
 full_state_stage: gated_after_abstract_algebra_arbitrary_tree_theorem
 cp_absorption_stage: gated_after_labelled_full_state
-next_action: commit_preregistration_then_execute_Stage_A0
+next_action: package_Block230_then_preregister_neighbor_ready_Block231
 axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0
+stage_a0: pass
+stage_a1: fail_51_states_70_transitions_19_terminal_normals
+independent_reproduction: pass
+strongest_control: neighbor_ready_33_states_52_transitions_1_normal

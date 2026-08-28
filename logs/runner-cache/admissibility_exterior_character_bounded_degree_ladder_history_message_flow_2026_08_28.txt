@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_bounded_degree_ladder_history_message_flow_2026_08_28.py
+runner_sha256: db0c0ffb91dd0cb256a54b91c32e075803a4adafa8a70a8188ff7d816ea15d7b
+input_fingerprint_sha256: 00ed2468ee5006d31352f30a88a47bfe558f3c2a23b8dfb5fd566ebaf394260f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.91
+status: ok
+----- stdout -----
+[PASS] bounded carrier: Gamma_L has 2L+2 vertices, 3L+1 links, and maximum degree three
+[PASS] rail-forest convention: both rail forests are fixed while all L+1 rung variables retain product Haar
+[PASS] Haar isometry: every one-cell coarse configuration has eight length-two fine preimages
+[PASS] projector typing: hidden gauge frames cancel and P_f J=J P_c on the exact Z2 quotient
+[PASS] typed coarsening: J_uv^[q]=J_v^[uq] J_u^[q] preserves the noncommuting ordered rail product
+[PASS] onsite measure: nu is normalized and retains the nonconstant actual rung crossing
+[PASS] actual-edge temporal kernel: the one-cell cycle is 1+t^4 W'W and the two-cell outer cycle is t^6
+[PASS] reciprocal spatial action: every message bond contains output and input plaquette half-actions
+[PASS] message associativity: direct and staged r=4 contractions agree with the same nu integration
+[PASS] physical marginal: q=2 direct retain-four equals staged retain-two with the shared retained frame integrated once
+[PASS] endpoint typing: E is isometric and R=E* for the exact onsite-weighted history measure
+[PASS] weighted positive Gram: the rational Z2 history matrix is the exact nonnegative tensor-feature sum
+[PASS] strict support: every rail and plaquette Fourier feature coefficient is positive
+[PASS] Doob constant: two w and two m ratios give c=exp[-(32kappa+16beta)/n] and delta=c^2
+[PASS] tail typing: exact op/HS/TV constants apply only to the one-bond auxiliary history message
+[PASS] connector-deleted control: the four exact eigenvalues follow from the independently derived characteristic polynomial
+[PASS] disconnected O(3) carrier: proper and improper determinant assignments both survive
+[PASS] autonomous scalar control: the determinant merge associator is exactly 12/343
+[PASS] scope boundary: no inherited-family locality, physical time, continuum, or minimality is claimed
+[PASS] import integrity: declared note, parent, axiom fence, helper, and every hostile mutation are packet-bound
+per_element: exact temporal-link, half-action, feature-weight, and determinant-component factors were derived
+per_site: exhaustive Z2 local projector frames and the rail-forest residual quotient were executed
+per_mode: exact perimeter characters, connector-control spectrum, and scalar associator were executed
+per_block: direct and staged four-frame history contractions plus Doob constants were executed
+lattice_wide: checked and not executed — no complete-volume transfer norm, continuum, or physical clock is supplied
+STATUS: exact bounded-degree history-message powers represent the supplied finite projected ladder transfer
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

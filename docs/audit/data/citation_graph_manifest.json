@@ -1,6 +1,6 @@
 {
- "edge_count": 16164,
- "node_count": 5648,
+ "edge_count": 16166,
+ "node_count": 5649,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -865,6 +865,10 @@
   "admissibility_endogenous_geometry_joint_record_rn_local_covariant_contact_selection_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "908bca83f8ca",
    "out_degree": 7
+  },
+  "admissibility_exterior_character_bounded_degree_ladder_history_message_flow_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "33cb4e19bc56",
+   "out_degree": 2
   },
   "admissibility_exterior_character_co_scaled_temporal_trotter_and_cylindrical_refinement_boundary_bounded_theorem_note_2026-08-28": {
    "deps_hash": "e9f708158228",

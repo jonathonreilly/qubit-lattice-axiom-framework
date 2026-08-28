@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_phase_contact_product_2026_08_28.py
+runner_sha256: d0a9d9071b38948b835959a90aaa8b8870443e4cbd0c5e909ed8f87edbc767c6
+input_fingerprint_sha256: f0182c1164bc40c1964c5cbfaf37c15d85bbfbd169efae360090905be71ea439
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS literal committed Block-228 packet binds the product compiler
+PASS fixture generator emits exactly 230 zero/one/two-contact words
+PASS all compiled rows use a fixed onsite alphabet and at most four arm sites
+PASS read-only controller lifts preserve only unchanged contacted T sites
+PASS every product row consumes its complete exact displayed contact mask
+PASS all four unequal raw cylinders mechanically reduce to bounded common joins
+PASS the completed table has one output distribution per exact local cylinder
+PASS the canonical 230-word exploration stops only at its first exact failure or exhausts the suite
+PASS every executed transition preserves valid participant accounting
+PASS first failing fixture and every normal/cycle residue are explicit
+COMPLETION raw_rows=50 raw_sources=45 duplicate_sources=4 completed_sources=4 unresolved=0
+TABLE rows=45 sources=45 controller=15 product=30 by_boundary={"interior":28,"root":6,"seam":11} max_support=4
+CENSUS passed=20/230 states=117 transitions=120 max_states=13
+ACCOUNTING transitions=120 mismatches=0
+FIRST_FAILURE fixture=21 n=4 contacts=(1, 4) reason=multiple-normal-forms source=R-H-T_F-T-T-T_F-A expected=R-P-P-P-P-P-S
+FIRST_FAILURE_NORMALS R-H-T-L-L-T-A | R-P-H-T-L-L-A | R-P-P-P-P-P-S
+FIRST_FAILURE_TRACES CF_A>M>QF_T | CF_A>QF_T>B | QF_T>B>B_F3>A
+FIRST_FAILURE_CYCLES 
+RANK formula=(live,unquenched_F,phase,phase_gated_displacement) checked=0 failures=0 translated=false
+RANK_FIRST none
+DECISION_CLASS scoped-product-cell-nonjoinable
+SCOPE reduced_word_product_only labelled_darts_carrier_CP_fairness_Record_and_law_selection_unexecuted
+TABLE_SHA256 43d54670f255530f774604a5080e77edbd2f4945bb092224f8b163e65d6d3fde
+AUDIT_INPUT_SHA256 27646d400bf308b932d36a4b7a21b3256fecac82f6161ce8004e65fb04f0033e
+per_element: checked — every reduced onsite symbol and exact displayed contact mask is explicit in the frozen table.
+per_site: checked — the canonical suite covers all 230 words through length ten and stops at the first exact residue.
+per_mode: checked and not executed — labelled carrier modes, projectors, Kraus labels, and physical transports remain gated.
+per_block: checked and not executed — full-state Y/parallel, CP, and fairness stages cannot inherit a reduced-word result.
+lattice_wide: checked and not executed — arbitrary finite arms, infinite-volume fixation, physical time, Record writing, and law selection remain open.
+RUNNER_SHA256 d0a9d9071b38948b835959a90aaa8b8870443e4cbd0c5e909ed8f87edbc767c6
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

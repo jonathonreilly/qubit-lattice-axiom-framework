@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_h1_phase_contact_product_2026_08_28.py
+runner_sha256: 6ebd81c89fff84b4abb960b81d9ab30c7afc99ab90d61cdada1fad2259fd118d
+input_fingerprint_sha256: ab5fe7a8849b26680db17f87a0064b4f2176ecec0088919436a2453d332357a2
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.96
+status: ok
+----- stdout -----
+PASS audit_inputs=source_note+no_go_sidecar
+PASS canonical_fixture_census=230
+PASS raw_rule_reconstruction=13
+PASS raw_support_bound=4
+PASS block228_prefix_pass=20/230
+PASS block228_prefix_cycles=0
+PASS first_failure=n4_contacts(1,4)
+PASS first_failure_normals=3_exact
+PASS first_failure_states=12_cycles=0
+WITNESS source=R-H-T_F-T-T-T_F-A expected=R-P-P-P-P-P-S
+NORMAL 1 R-H-T-L-L-T-A trace=CONTACT_CERTIFICATE > M > ROOT_CONTACT
+NORMAL 2 R-P-H-T-L-L-A trace=CONTACT_CERTIFICATE > ROOT_CONTACT > B
+NORMAL 3 R-P-P-P-P-P-S trace=ROOT_CONTACT > B > SEAM_ABORT
+PASS block229_diagnostic_census=2046
+PASS block229_diagnostic_unique_normals=2046/2046
+PASS block229_diagnostic_cycles=0
+SCOPE reduced words only; no labelled darts, carrier, CP, fairness, Record, or arbitrary-length theorem
+per_element: checked and not executed — reduced words contain no labelled element or dart carrier
+per_site: checked — every displayed reduced role and incident-F position is explicit in explored states
+per_mode: checked and not executed — the reduced oracle defines no modal or spectral decomposition
+per_block: checked — the frozen Block228 table stops at its exact first nonunique reduced fixture
+lattice_wide: checked and not executed — bounded n<=10 word graphs imply no lattice-wide result
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

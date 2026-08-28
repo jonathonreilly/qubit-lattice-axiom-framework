@@ -1,6 +1,6 @@
 {
- "edge_count": 16168,
- "node_count": 5650,
+ "edge_count": 16172,
+ "node_count": 5651,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -893,6 +893,10 @@
   "admissibility_exterior_character_jr_peter_weyl_operator_truncation_bounded_theorem_note_2026-08-28": {
    "deps_hash": "66d5540d82d6",
    "out_degree": 2
+  },
+  "admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_generated_interaction_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "84bdc8eaaee2",
+   "out_degree": 4
   },
   "admissibility_exterior_character_metric_source_polarized_seam_bounded_theorem_note_2026-08-28": {
    "deps_hash": "6da1461c9129",

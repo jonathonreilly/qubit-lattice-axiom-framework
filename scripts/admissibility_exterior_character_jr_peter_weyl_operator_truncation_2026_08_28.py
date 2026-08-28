@@ -39,6 +39,7 @@ MUTATIONS = (
     "absolute_only_operator_bound",
     "misuse_auxiliary_perron",
     "corrupt_normalization_power",
+    "misstate_absolute_operator_bound",
     "drop_projector_restriction",
     "corrupt_independent_reconstruction",
     "hide_historic_prior_art",
@@ -258,6 +259,15 @@ def main(mutation: str | None, mode: str) -> int:
     check(
         "normalization scalar: the original normalized-w kernel differs by exactly Z_kappa^(3rq+1)",
         normalization_power == 7 and "Z_kappa^(3 r q + 1)" in note,
+    )
+
+    absolute_operator = mutation != "misstate_absolute_operator_bound"
+    check(
+        "absolute original-transfer bound: telescoping avoids false hatted-kernel normalization while HS retains Z_kappa power",
+        absolute_operator
+        and "(3 r q + 1) delta_kappa + 2 r q delta_beta" in note
+        and "Z_kappa^(-(3 r q + 1)) epsilon_(K,r,q)" in note
+        and "rather than renormalizing it by a new truncated partition function" in note,
     )
 
     projector_ok = mutation != "drop_projector_restriction"

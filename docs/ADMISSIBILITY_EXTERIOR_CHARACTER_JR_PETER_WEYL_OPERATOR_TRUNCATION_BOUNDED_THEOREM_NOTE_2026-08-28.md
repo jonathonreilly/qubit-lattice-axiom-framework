@@ -327,6 +327,55 @@ known scalar `Z_kappa^(3 r q + 1)`.  Dividing both exact and truncated raw
 kernels by this same scalar leaves (12)--(18) unchanged.  `Z_kappa` is not
 being reinterpreted as a transfer eigenvalue.
 
+## Absolute original-transfer bound and Hilbert--Schmidt normalization
+
+The relative order bound above is invariant under the common normalization.
+For completeness, an independent telescoping argument gives an absolute
+operator bound directly on the parent's original normalized transfer.  Keep
+the exact normalization in the truncated temporal weight,
+
+```text
+w_K=bar w_K/Z_kappa,
+```
+
+rather than renormalizing it by a new truncated partition function.  Young's
+inequality and the relative local tail give
+
+```text
+||C_w-C_(w_K)||_op <= ||w-w_K||_1 <= delta_kappa,
+```
+
+while both convolutions are contractions.  On either spatial slice the exact
+and truncated multiplication operators are contractions and
+
+```text
+||M-M_K||_op <= 1-(1-delta_beta)^(r q)
+              <= r q delta_beta.
+```
+
+Telescoping the `3rq+1` temporal factors and the two spatial half-actions,
+then applying the orthogonal projector, `J_r`, and the residual physical
+restriction, proves for the original normalized physical transfer
+
+```text
+||mathcal T_(r,q)-mathcal T_(r,q)^K||_op
+ <= (3 r q + 1) delta_kappa + 2 r q delta_beta.       (18a)
+```
+
+Equation (18a) is an absolute operator estimate; (16) is the complementary
+relative estimate.  The absolute Hilbert--Schmidt estimate has different
+normalization bookkeeping.  Since the raw factor-maximum kernel is at most
+one on normalized external Haar measure, (12) gives
+
+```text
+||mathcal T_(r,q)-mathcal T_(r,q)^K||_HS
+ <= Z_kappa^(-(3 r q + 1)) epsilon_(K,r,q).           (18b)
+```
+
+The relative Hilbert--Schmidt statement (17) remains invariant under the
+common scalar.  Omitting the factor in (18b), or normalizing `w_K` by its own
+partition function while retaining the monotone sandwich, would be incorrect.
+
 ## Explicit cutoff and volume dependence
 
 For a simple common cutoff put

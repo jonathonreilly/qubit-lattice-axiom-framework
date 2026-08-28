@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_tagged_relational_echo_physical_compiler_2026_08_28.py
+runner_sha256: 71c2229261e64454fa240ab30a0f643553263be019fd21d5989403826d92aae5
+input_fingerprint_sha256: 86b69f8ae30ab8b3b578911984d1c9f3b0549f50ec785f802ef7c0a5cbde8d0f
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.71
+status: ok
+----- stdout -----
+PASS frozen role inventory derives 35 transient rays/parity, 74 named, rank-54 default, and rank 128
+PASS nine seam-pair capacity states and 24 proper-cubic rotations are reconstructed
+PASS row grammar is explicitly not credited as full 74+54 physical projector support
+PASS all simple length-0..4 labelled port/turn words are generated
+PASS every quiet reachable state has exact labelled parent/child incidence and conserved row darts
+PASS PHT discovery, RHT root turn, HLT good step/hold, and HTLT abort rows are explicit
+PASS complete labelled input projectors have one output distribution and obligation
+PASS every stored transition equals Row.apply on its complete source metadata
+PASS all stored quiet, boundary, and witness transition chains are consecutive
+PASS all quiet arms hold terminal H-L-A relationally with both exact darts
+PASS all direct-root boundary contacts atomically restore and enter reciprocal S-S
+PASS all one-edge H-T-L degeneracies atomically restore and enter reciprocal S-S
+PASS explicit HTLT abort step preserves its T tag, exact darts, and labelled incidence
+PASS every row records support, full roles/darts, guards, priority, symmetry orbit, and squared weight
+PASS one parametric enabled-row generator instantiates every frozen row family
+PASS all row guards are executable and contact/quiet-root enablement is guard-consistent
+PASS untagged wake erasure reproduces one visible source with success/abort obligations
+PASS tagged clean/abort sources are distinct and require two clean confirmations with tag dominance
+PASS success/abort projectors stay disjoint without priority and cleanup Kraus rows stay separate
+PASS first interior contact executes exact R-H-T-T-T-A to R-H-H-T-L-A seed
+PASS declared contact fixture is a complete physical row input and foreign participants quench in-row
+PASS foreign-participant contact enables T-T-T contact and disables quiet-root
+PASS tagged T-L-A arrival changes reciprocal seam to S-S in the same provenance-consuming row
+PASS exact post-arrival state has one rootward H orphan and no enabled frozen repair row
+PASS all frozen-family restoration alternatives come from the generator and are absent on the orphan
+PASS parametric enabled-row generator derives zero successors on the orphan state
+PASS restoration failure is exactly the original rootward H, not a hidden/global recolour
+PASS live H/T/L/S roles and attached darts forbid early site/root/seam reuse
+PASS width-two and 12x4 Y controls remain labelled and order-free but Stage B is not credited
+PASS 47 contacts, 5,040 dynamic images, held lengths 5-8, physical CP, and fair graph stop unexecuted
+PASS LOCK/BG stay scratch-free, no hidden field enters a guard, and default identity remains required
+PASS covariant partners remain required and Block224 quotient liveness is not credited
+PASS decision is scoped only to the Amendment-2 seed grammar with no broad/governance promotion
+PASS Block226 source packet includes both pre-runner amendments
+PASS runner imports no prior admissibility helper or dynamic module
+PASS preregistration freezes explicit rows, fail-fast order, and no global hidden state
+PASS Amendment 1 freezes relational clean success and atomic tagged S-S failure
+PASS Amendment 2 freezes local T-T-T seeding, visible restoration, and narrow scope
+PASS committed and executable mutation inventories both meet the 33-defect floor
+PASS no-go ledger keeps six distinct live routes and forbids a broad carrier/finality claim
+FACT paths specs=3372 by_length={"0":36,"1":100,"2":284,"3":780,"4":2172} quiet_states=33508 rows=30136
+FACT boundary direct=36/36 one_edge=100/100
+WITNESS source=R-H(2,0)-T(2)-T(2)-T(2)-A(2) seed=R-H(2,0)-H(2,0)-T(2)-L(2)-A(2) final=R-H(2,0)-P(2)-P(2)-P(2)-S(2) orphan=((1, 'H(2,0)'),) enabled=()
+FACT restoration_alternatives={"ABORT_STEP":[],"ATOMIC_SUCCESS":[],"CONTACT":[],"DIRECT_ROOT":[],"DISCOVERY":[],"GOOD_HOLD":[],"GOOD_STEP":[],"ONE_EDGE":[],"ROOT_TURN":[],"SS_CLEANUP":[],"TAGGED_ARRIVAL":[]}
+per_element: checked — exact labelled-dart row application leaves one original rootward H after atomic tagged arrival.
+per_site: checked — the frozen radius-two T-T-T seed and direct/one-edge degeneracies were physically executed.
+per_mode: checked and not executed — abstract symmetry orbit metadata is present, but 74+54 projector support and phases were not compiled.
+per_block: checked and not executed — first linear restoration failure stops Y, 47 contacts, 5,040 dynamic images, and physical CP.
+lattice_wide: checked and not executed — physical fair components, held lengths 5-8, liveness rates, law selection, and fixation remain open.
+DECISION_CLASS scoped-tagged-echo-orphan-or-restoration-failure
+FAILURE_SCOPE Amendment-2 local interior T-T-T seed grammar only
+OBSERVABLE_SHA256 d7e429f07ca3871ce69990f487e6eab2bac59ce8be4f2f53a53d5b2ed350846c
+NO_GO_PACKET checked and not landed — this uncommitted runner is evidence only; a landed N1-N8 checklist is required before packaging.
+RUNNER_SHA256 71c2229261e64454fa240ab30a0f643553263be019fd21d5989403826d92aae5
+TOTAL: PASS=40 FAIL=0
+
+----- stderr -----
+

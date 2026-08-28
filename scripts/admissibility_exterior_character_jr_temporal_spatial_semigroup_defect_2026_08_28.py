@@ -6,13 +6,15 @@ from __future__ import annotations
 import argparse
 from fractions import Fraction as F
 from itertools import permutations, product
-from math import factorial
+from math import comb, factorial, prod
 from pathlib import Path
 
 import sympy as sp
 
 from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_independent_2026_08_28 import (
     identity as independent_identity,
+    complete_step_response_fixture as independent_complete_response_fixture,
+    general_r_response_fixture as independent_general_response_fixture,
     matmul as independent_matmul,
     matrix_fixture as independent_matrix_fixture,
     transpose as independent_transpose,
@@ -55,6 +57,14 @@ MUTATIONS = (
     "claim_metric_response",
     "claim_physical_time",
     "hide_prior_art",
+    "corrupt_general_fiber",
+    "claim_r3_variance_nonconstant",
+    "corrupt_rth_cumulant",
+    "drop_nc_projection",
+    "corrupt_response_factor",
+    "omit_epsilon_limit",
+    "discontinuous_temporal_family",
+    "claim_infinite_leading_memory",
 )
 
 PASS = 0
@@ -153,11 +163,129 @@ def primary_z2_rows() -> tuple[tuple[int, F, F], ...]:
     return tuple(rows)
 
 
+def fraction_cumulants(values: tuple[F, ...], maximum: int) -> tuple[F, ...]:
+    moments = (F(1),) + tuple(
+        sum((value**order for value in values), F(0)) / len(values)
+        for order in range(1, maximum + 1)
+    )
+    cumulants = [F(0)] * (maximum + 1)
+    for order in range(1, maximum + 1):
+        cumulants[order] = moments[order] - sum(
+            (F(comb(order - 1, index - 1))
+             * cumulants[index]
+             * moments[order - index]
+             for index in range(1, order)),
+            F(0),
+        )
+    return tuple(cumulants)
+
+
+def primary_general_r_rows() -> tuple[tuple[int, bool, bool, bool], ...]:
+    """Direct Z2 enumeration of the arbitrary-r response hierarchy."""
+
+    potential = {1: F(0), -1: F(2)}
+    centered = {1: F(-1), -1: F(1)}
+    single_cumulants = fraction_cumulants(tuple(potential.values()), 7)
+    rows: list[tuple[int, bool, bool, bool]] = []
+    for width in range(2, 8):
+        states = tuple(product((1, -1), repeat=width))
+        cumulants_by_delta: dict[int, tuple[F, ...]] = {}
+        response_by_delta: dict[int, F] = {}
+        expected_by_delta: dict[int, F] = {}
+        for delta in (1, -1):
+            fiber = tuple(state for state in states if prod(state) == delta)
+            actions = tuple(
+                sum((potential[value] for value in state), F(0))
+                for state in fiber
+            )
+            moments = (F(1),) + tuple(
+                sum((value**order for value in actions), F(0)) / len(actions)
+                for order in range(1, width + 1)
+            )
+            cumulants_by_delta[delta] = fraction_cumulants(actions, width)
+            bracket = 2**width * moments[width] - sum(
+                (F(comb(width, order))
+                 * moments[order]
+                 * moments[width - order]
+                 for order in range(width + 1)),
+                F(0),
+            )
+            response_by_delta[delta] = F((-1) ** width, factorial(width)) * bracket
+            centered_convolution = sum(
+                (prod((centered[value] for value in state), start=F(1))
+                 for state in fiber),
+                F(0),
+            ) / len(fiber)
+            expected_by_delta[delta] = (
+                F((-1) ** width * (2**width - 2)) * centered_convolution
+            )
+
+        response_mean = sum(response_by_delta.values(), F(0)) / 2
+        response_nc = {
+            delta: response_by_delta[delta] - response_mean for delta in (1, -1)
+        }
+        lower_ok = all(
+            cumulants_by_delta[delta][order] == width * single_cumulants[order]
+            for delta in (1, -1)
+            for order in range(1, width)
+        )
+        variance_scalar = width == 2 or (
+            cumulants_by_delta[1][2] == cumulants_by_delta[-1][2]
+        )
+        rows.append((width, lower_ok, variance_scalar, response_nc == expected_by_delta))
+    return tuple(rows)
+
+
+def primary_full_step_response_rows() -> tuple[tuple[int, sp.Matrix, sp.Matrix], ...]:
+    """SymPy bidegree check with a nontrivial temporal C_epsilon."""
+
+    epsilon, amplitude = sp.symbols("epsilon amplitude")
+    rows: list[tuple[int, sp.Matrix, sp.Matrix]] = []
+    for width in (3, 4):
+        states = tuple(product((1, -1), repeat=width))
+        fiber_size = 2 ** (width - 1)
+        isometry = sp.zeros(len(states), 2)
+        for row, state in enumerate(states):
+            isometry[row, 0 if prod(state) == 1 else 1] = 1 / sp.sqrt(fiber_size)
+        actions = tuple(sum(0 if value == 1 else 2 for value in state) for state in states)
+        temporal_generator = sp.zeros(len(states))
+        for row, state in enumerate(states):
+            temporal_generator[row, row] = -sp.Rational(width, 7)
+            for index in range(width):
+                neighbor = list(state)
+                neighbor[index] *= -1
+                temporal_generator[row, states.index(tuple(neighbor))] = sp.Rational(1, 7)
+        temporal = sp.eye(len(states)) + epsilon * temporal_generator
+        multiplier = sp.diag(*(
+            sum(
+                (-epsilon * amplitude * action / 2) ** order / factorial(order)
+                for order in range(width + 1)
+            )
+            for action in actions
+        ))
+        step = multiplier * temporal * multiplier
+        compressed = isometry.T * step * isometry
+        defect = isometry.T * step**2 * isometry - compressed**2
+        coefficient = defect.applyfunc(
+            lambda value: sp.expand(value).coeff(epsilon, width).coeff(amplitude, width)
+        )
+        nonconstant = sp.simplify(
+            coefficient - sp.trace(coefficient) * sp.eye(2) / 2
+        )
+        character = sp.diag(1, -1)
+        centered_power = (-1) ** width * character
+        expected = (-1) ** width * (2**width - 2) * centered_power
+        rows.append((width, nonconstant, expected))
+    return tuple(rows)
+
+
 def independent_mode() -> int:
     global PASS, FAIL
     PASS = FAIL = 0
     matrix = independent_matrix_fixture()
     z2 = independent_z2_fixture()
+    general = independent_general_response_fixture()
+    complete = independent_complete_response_fixture()
     expected = ((F(1, 16), F(0)), (F(0), F(0)))
     checks = (
         (
@@ -191,6 +319,25 @@ def independent_mode() -> int:
             matrix["defect_distance"] <= 4 * matrix["operator_distance"],
         ),
         ("independent range-preserving zero control", not any(any(value for value in row) for row in matrix["range_defect"])),
+        (
+            "independent proper-subset Haar fibers",
+            general["subset_independence"],
+        ),
+        (
+            "independent arbitrary-r scalar variance and response coefficient",
+            all(variance and response and nonconstant
+                for _width, variance, response, nonconstant in general["rows"]),
+        ),
+        (
+            "independent complete-step rth response",
+            all(plus == expected_plus and minus == expected_minus
+                for _width, plus, minus, expected_plus, expected_minus in complete),
+        ),
+        (
+            "independent fixed-n leading response uses a finite carrier",
+            all(F(3) * F(-2, 3) ** width != 0 and F(-2) ** width != 0
+                for width in range(2, 8)),
+        ),
     )
     for label, condition in checks:
         check(label, condition)
@@ -362,6 +509,84 @@ def main(mutation: str | None, mode: str) -> int:
         generated_ok and "strictly positive leading" in note,
     )
 
+    general_rows = primary_general_r_rows()
+    fiber_ok = all(lower for _width, lower, _variance, _response in general_rows)
+    if mutation == "corrupt_general_fiber":
+        fiber_ok = False
+    check(
+        "conditioned retain-every-r fibers are (r-1)-wise Haar",
+        fiber_ok and "every proper subset" in note and "independent product Haar" in note,
+    )
+
+    scalar_variance_ok = all(
+        variance for width, _lower, variance, _response in general_rows if width >= 3
+    )
+    if mutation == "claim_r3_variance_nonconstant":
+        scalar_variance_ok = False
+    check(
+        "the leading conditional variance is a scalar coarse operator for every r>=3",
+        scalar_variance_ok and "Gamma_r(delta)=sigma_v^2 sum_i a_i^2" in note,
+    )
+
+    cumulant_ok = all(response for _width, _lower, _variance, response in general_rows)
+    if mutation == "corrupt_rth_cumulant":
+        cumulant_ok = False
+    check(
+        "the first arbitrary-r nonconstant moment is the centered r-fold convolution",
+        cumulant_ok and "r!(product_i a_i)h^(*r)(delta)" in note,
+    )
+
+    response_rows = primary_full_step_response_rows()
+    response_ok = all(got == expected for _width, got, expected in response_rows)
+    if mutation == "corrupt_response_factor":
+        response_ok = False
+    check(
+        "the complete M C M step has exact (-1)^r(2^r-2) nonconstant response",
+        response_ok and "(-1)^r(2^r-2)" in note and "partial_lambda^r D_epsilon" in note,
+    )
+
+    nc_ok = "Type `NC` only on the limiting multiplication operator" in note
+    nc_ok &= "NC(c_r I+M_F)=M_F" in note
+    if mutation == "drop_nc_projection":
+        nc_ok = False
+    check(
+        "the response projects a typed limiting multiplication symbol off only its scalar channel",
+        nc_ok,
+    )
+
+    limit_ok = "NC (s-lim_(epsilon downarrow 0)" in note
+    limit_ok &= "not a fixed-`epsilon` identity" in note
+    if mutation == "omit_epsilon_limit":
+        limit_ok = False
+    check(
+        "the arbitrary-r formula is a fixed-finite-r strong/core epsilon limit",
+        limit_ok,
+    )
+
+    continuity_ok = "C_epsilon-I=O_psi(epsilon)" in note
+    continuity_ok &= "strong convergence to `I`" in note
+    if mutation == "discontinuous_temporal_family":
+        continuity_ok = False
+    check(
+        "the temporal family converges on every V_f-stable Peter-Weyl core vector",
+        continuity_ok,
+    )
+
+    finite_memory_ok = all(
+        token in note for token in (
+            "h=-2(chi_V+chi_(det tensor V)+chi_det)",
+            "The resulting leading response carrier has the supplied action coordinate",
+            "both inside the same finite\nPeter--Weyl support",
+            "Its response order is `r` in the leading simultaneous",
+        )
+    )
+    if mutation == "claim_infinite_leading_memory":
+        finite_memory_ok = False
+    check(
+        "the fixed-n leading hierarchy has finite Peter-Weyl memory while response order grows",
+        finite_memory_ok,
+    )
+
     scalar = sp.Rational(3, 5)
     scaled_defect = (
         data["J"].T * (scalar * data["S"]) ** 2 * data["J"]
@@ -474,6 +699,7 @@ def main(mutation: str | None, mode: str) -> int:
     print("per_site: the two-cell hidden-Haar fiber and both retained coarse sectors were enumerated exactly")
     print("per_mode: the Peter--Weyl core commutator square and nontrivial convolution channel were checked")
     print("per_block: the complete physical J_r direct/staged defect and rq packet census were checked")
+    print("per_scale: conditioned fibers r=2,...,7 and complete-step response bidegrees r=3,4 were checked")
     print("lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied")
 
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

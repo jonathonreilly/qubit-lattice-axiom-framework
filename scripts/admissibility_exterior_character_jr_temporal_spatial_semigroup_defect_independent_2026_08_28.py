@@ -9,7 +9,8 @@ NumPy, or a campaign scratch module.
 from __future__ import annotations
 
 from fractions import Fraction as F
-from itertools import product
+from itertools import combinations, product
+from math import comb, factorial
 
 
 AUDIT_TIMEOUT_SEC = 120
@@ -272,9 +273,234 @@ def z2_conditional_fixture() -> dict[str, object]:
     }
 
 
+def general_r_response_fixture() -> dict[str, object]:
+    """Independent conditioned-fiber response for r=2,...,7."""
+
+    potential = {1: F(0), -1: F(2)}
+    mean = F(1)
+    centered = {1: -mean, -1: mean}
+    rows: list[tuple[int, bool, bool, bool]] = []
+    subset_independence = True
+
+    for width in range(2, 8):
+        states = tuple(product(Z2, repeat=width))
+        fibers = {
+            delta: tuple(state for state in states
+                         if _product(state) == delta)
+            for delta in Z2
+        }
+
+        if width <= 5:
+            for delta in Z2:
+                fiber = fibers[delta]
+                for size in range(1, width):
+                    for indices in combinations(range(width), size):
+                        counts: dict[tuple[int, ...], int] = {}
+                        for state in fiber:
+                            key = tuple(state[index] for index in indices)
+                            counts[key] = counts.get(key, 0) + 1
+                        target = 2 ** (width - 1 - size)
+                        subset_independence &= (
+                            len(counts) == 2**size
+                            and set(counts.values()) == {target}
+                        )
+
+        moments: dict[int, tuple[F, ...]] = {}
+        variances: dict[int, F] = {}
+        centered_convolution: dict[int, F] = {}
+        for delta in Z2:
+            actions = tuple(
+                sum((potential[value] for value in state), F(0))
+                for state in fibers[delta]
+            )
+            moments[delta] = tuple(
+                F(1) if order == 0 else
+                sum((value**order for value in actions), F(0)) / len(actions)
+                for order in range(width + 1)
+            )
+            variances[delta] = moments[delta][2] - moments[delta][1] ** 2
+            centered_convolution[delta] = sum(
+                (_fraction_product(tuple(centered[value] for value in state))
+                 for state in fibers[delta]),
+                F(0),
+            ) / len(fibers[delta])
+
+        response: dict[int, F] = {}
+        for delta in Z2:
+            bracket = 2**width * moments[delta][width] - sum(
+                (F(comb(width, order))
+                 * moments[delta][order]
+                 * moments[delta][width - order]
+                 for order in range(width + 1)),
+                F(0),
+            )
+            response[delta] = F((-1) ** width, factorial(width)) * bracket
+        response_mean = sum(response.values(), F(0)) / 2
+        response_nc = {
+            delta: response[delta] - response_mean for delta in Z2
+        }
+        expected = {
+            delta: F((-1) ** width * (2**width - 2))
+            * centered_convolution[delta]
+            for delta in Z2
+        }
+        variance_scalar = width == 2 or variances[1] == variances[-1]
+        response_exact = response_nc == expected
+        response_nonconstant = response_nc[1] != response_nc[-1]
+        rows.append((width, variance_scalar, response_exact, response_nonconstant))
+
+    return {
+        "subset_independence": subset_independence,
+        "rows": tuple(rows),
+    }
+
+
+def _product(values: tuple[int, ...]) -> int:
+    result = 1
+    for value in values:
+        result *= value
+    return result
+
+
+def _fraction_product(values: tuple[F, ...]) -> F:
+    result = F(1)
+    for value in values:
+        result *= value
+    return result
+
+
+Poly = dict[tuple[int, int], F]
+PolyMatrix = tuple[tuple[Poly, ...], ...]
+
+
+def _poly_add(left: Poly, right: Poly) -> Poly:
+    result = dict(left)
+    for degree, value in right.items():
+        result[degree] = result.get(degree, F(0)) + value
+        if result[degree] == 0:
+            del result[degree]
+    return result
+
+
+def _poly_mul(left: Poly, right: Poly, cutoff: int) -> Poly:
+    result: Poly = {}
+    for (epsilon_left, lambda_left), value_left in left.items():
+        for (epsilon_right, lambda_right), value_right in right.items():
+            degree = (epsilon_left + epsilon_right,
+                      lambda_left + lambda_right)
+            if degree[0] <= cutoff and degree[1] <= cutoff:
+                result[degree] = result.get(degree, F(0)) + value_left * value_right
+    return {degree: value for degree, value in result.items() if value}
+
+
+def _poly_matrix_multiply(left: PolyMatrix, right: PolyMatrix,
+                          cutoff: int) -> PolyMatrix:
+    return tuple(
+        tuple(
+            _poly_sum(tuple(
+                _poly_mul(left[row][middle], right[middle][column], cutoff)
+                for middle in range(len(right))
+            ))
+            for column in range(len(right[0]))
+        )
+        for row in range(len(left))
+    )
+
+
+def _poly_sum(values: tuple[Poly, ...]) -> Poly:
+    result: Poly = {}
+    for value in values:
+        result = _poly_add(result, value)
+    return result
+
+
+def _poly_matrix_subtract(left: PolyMatrix, right: PolyMatrix) -> PolyMatrix:
+    return tuple(
+        tuple(_poly_add(left[row][column], {
+            degree: -value for degree, value in right[row][column].items()
+        }) for column in range(len(left[0])))
+        for row in range(len(left))
+    )
+
+
+def _compress_poly_matrix(matrix: PolyMatrix,
+                          states: tuple[tuple[int, ...], ...]) -> PolyMatrix:
+    fiber_size = len(states) // 2
+    fibers = {
+        delta: tuple(index for index, state in enumerate(states)
+                     if _product(state) == delta)
+        for delta in Z2
+    }
+    return tuple(
+        tuple({
+            degree: value / fiber_size
+            for degree, value in _poly_sum(tuple(
+                matrix[left][right]
+                for left in fibers[delta_left]
+                for right in fibers[delta_right]
+            )).items()
+        } for delta_right in Z2)
+        for delta_left in Z2
+    )
+
+
+def _poly_exp_half(action: int, cutoff: int) -> Poly:
+    return {
+        (order, order): F((-action) ** order, (2**order) * factorial(order))
+        for order in range(cutoff + 1)
+    }
+
+
+def complete_step_response_fixture() -> tuple[tuple[int, F, F, F, F], ...]:
+    """Formal Fraction check with a nontrivial C_epsilon between M halves."""
+
+    rows: list[tuple[int, F, F, F, F]] = []
+    for width in (3, 4):
+        states = tuple(product(Z2, repeat=width))
+        size = len(states)
+        actions = tuple(sum(0 if value == 1 else 2 for value in state)
+                        for state in states)
+        multiplier: PolyMatrix = tuple(
+            tuple(_poly_exp_half(actions[row], width) if row == column else {}
+                  for column in range(size))
+            for row in range(size)
+        )
+        temporal: PolyMatrix = tuple(
+            tuple(
+                ({(0, 0): F(1), (1, 0): F(-width, 7)} if row == column else
+                 {(1, 0): F(1, 7)} if sum(
+                     states[row][index] != states[column][index]
+                     for index in range(width)
+                 ) == 1 else {})
+                for column in range(size)
+            )
+            for row in range(size)
+        )
+        step = _poly_matrix_multiply(
+            _poly_matrix_multiply(multiplier, temporal, width),
+            multiplier,
+            width,
+        )
+        direct = _compress_poly_matrix(
+            _poly_matrix_multiply(step, step, width), states
+        )
+        compressed = _compress_poly_matrix(step, states)
+        staged = _poly_matrix_multiply(compressed, compressed, width)
+        defect = _poly_matrix_subtract(direct, staged)
+        plus = defect[0][0].get((width, width), F(0))
+        minus = defect[1][1].get((width, width), F(0))
+        mean = (plus + minus) / 2
+        rows.append((width, plus - mean, minus - mean,
+                     F(6 if width == 3 else 14),
+                     F(-6 if width == 3 else -14)))
+    return tuple(rows)
+
+
 def main() -> int:
     matrix = matrix_fixture()
     z2 = z2_conditional_fixture()
+    general = general_r_response_fixture()
+    complete = complete_step_response_fixture()
 
     expected_defect: Matrix = ((F(1, 16), F(0)), (F(0), F(0)))
     expected_packet_defect: Matrix = ((F(1, 64), F(0)), (F(0), F(0)))
@@ -354,6 +580,25 @@ def main() -> int:
             "range-preserving control has exactly zero defect",
             matrix["range_leak"] == zero(3, 2)
             and matrix["range_defect"] == zero(2, 2),
+        ),
+        (
+            "conditioned product fibers are proper-subset Haar through r=5",
+            general["subset_independence"],
+        ),
+        (
+            "general-r variance is scalar for r>=3 and response is nonconstant",
+            all(variance and nonconstant
+                for _width, variance, _response, nonconstant in general["rows"]),
+        ),
+        (
+            "general-r nonconstant response has exact (-1)^r(2^r-2) coefficient",
+            all(response for _width, _variance, response, _nonconstant
+                in general["rows"]),
+        ),
+        (
+            "complete M C M step preserves the rth response coefficient",
+            all(plus == expected_plus and minus == expected_minus
+                for _width, plus, minus, expected_plus, expected_minus in complete),
         ),
     )
 

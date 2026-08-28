@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: 14b4fc9fb5d55234698ca4f1376d94f303be7e3debc38eecaa3b7feecbb88ba2
-input_fingerprint_sha256: 01670483e0598a08e376764c9f8997ddcdcffdbbe1ddbd0306ad0e7ae465bb6d
+runner_sha256: ed51a75a75832b39e36e93252dc0d2457cddb9820b81e29b989cc09a9890664b
+input_fingerprint_sha256: b0c00e620d3dd1b54c9110eaea4828fc99d0b1ee3deac646a2b4c6438731142d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 1.32
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms
@@ -22,6 +22,14 @@ status: ok
 [PASS] the exterior potential is nonconstant and has a nontrivial Peter-Weyl channel
 [PASS] exact Z2 finite control gives Gamma(+)=256/n^2 and Gamma(-)=0
 [PASS] the specified two-cell paths have a nonzero leading separation coefficient
+[PASS] conditioned retain-every-r fibers are (r-1)-wise Haar
+[PASS] the leading conditional variance is a scalar coarse operator for every r>=3
+[PASS] the first arbitrary-r nonconstant moment is the centered r-fold convolution
+[PASS] the complete M C M step has exact (-1)^r(2^r-2) nonconstant response
+[PASS] the response projects a typed limiting multiplication symbol off only its scalar channel
+[PASS] the arbitrary-r formula is a fixed-finite-r strong/core epsilon limit
+[PASS] the temporal family converges on every V_f-stable Peter-Weyl core vector
+[PASS] the fixed-n leading hierarchy has finite Peter-Weyl memory while response order grows
 [PASS] one common normalization scalar rescales the defect quadratically
 [PASS] normalization convention is fixed before comparing direct and staged paths
 [PASS] complete physical packet error has explicit (3rq+1) delta_kappa + 2rq delta_beta accumulation
@@ -35,8 +43,9 @@ per_element: all 48 signed O(3) frames and their exterior-character values were 
 per_site: the two-cell hidden-Haar fiber and both retained coarse sectors were enumerated exactly
 per_mode: the Peter--Weyl core commutator square and nontrivial convolution channel were checked
 per_block: the complete physical J_r direct/staged defect and rq packet census were checked
+per_scale: conditioned fibers r=2,...,7 and complete-step response bidegrees r=3,4 were checked
 lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied
-TOTAL: PASS=24 FAIL=0
+TOTAL: PASS=32 FAIL=0
 
 ----- stderr -----
 

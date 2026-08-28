@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_generated_interaction_bounded_theorem_note_2026-08-28
 claim_type: bounded_theorem
-claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. Bound finite Peter--Weyl approximation of the complete defect by four times the Block231 physical-transfer error with explicit rq accumulation. This is a conditional finite mathematical generated-interaction theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
+claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. For arbitrary fixed finite r and q, disclose an action-amplitude lambda in the complete Block227 step and prove that the rth lambda response of the actual J_r defect, after epsilon^-r scaling and projection off the scalar coarse channel, converges strongly on the core to (-1)^r(2^r-2) times the r-fold centered exterior convolution, summed once per retained cell. Prove the (r-1)-wise Haar mechanism, the scalar leading variance for r>=3, and the finite leading Peter--Weyl response carrier. Bound finite Peter--Weyl approximation of the complete defect by four times the Block231 physical-transfer error with explicit rq accumulation. This is a conditional finite mathematical generated-interaction and supplied-action-response theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
 depends_on:
   - admissibility_exterior_character_co_scaled_temporal_trotter_and_cylindrical_refinement_boundary_bounded_theorem_note_2026-08-28
   - admissibility_exterior_character_bounded_degree_ladder_history_message_flow_bounded_theorem_note_2026-08-28
@@ -18,11 +18,11 @@ target_blocker_text: "Compare the Block227 co-scaled temporal generator with Blo
 source_of_blocker_text: user_goal
 reachability_to_target: closes
 artifact_role: theorem
-next_trace_action: "Any multiscale construction must retain or approximate the generated conditional-variance interaction and control its accumulation; physical spacing, time, states, and observables remain separate suppliers."
-conditional_surface_status: "exact finite physical-space temporal-spatial compression defect and nonconstant generated exterior interaction, conditional on the supplied co-scaled action, ladder, Haar measure, projector, and J_r stack"
+next_trace_action: "Any multiscale construction must retain the finite leading response channels or approximate the exact exterior weight and control the r-dependent response order; physical spacing, time, states, and observables remain separate suppliers."
+conditional_surface_status: "exact finite physical-space temporal-spatial compression defect, nonconstant two-cell generated interaction, and arbitrary-fixed-r complete-step supplied-action response, conditional on the supplied co-scaled action, ladder, Haar measure, projector, and J_r stack"
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "the compression identity, core limit, cylindrical kinetic calculation, conditional-variance formula, nonconstancy proof, exact finite control, and finite-packet defect bound are exact mathematical results with no fitted datum"
+claim_type_reason: "the compression identity, core limit, cylindrical kinetic calculation, conditioned-product Haar lemma, arbitrary-r complete-step response limit, exterior convolution coefficients, exact finite controls, and finite-packet defect bound are exact mathematical results with no fitted datum"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ---
@@ -104,6 +104,38 @@ It compares the two paths around the actual temporal--spatial square on the
 physical `J_r` spaces.  The pure-gauge parent carrier contains no matter,
 source, or coframe variables, so this theorem supplies no such response.
 
+The scale dependence is sharp.  In one retain-every-`r` cell the constrained
+increments `W_(r-1)...W_0=delta` are `(r-1)`-wise independent Haar variables.
+Consequently the leading variance in (3) is a scalar for every `r>=3`; the
+nonconstant order-`epsilon^2` interaction in (4) is special to `r=2`.
+
+Nevertheless the complete step has an exact arbitrary-fixed-`r` response.
+Multiply only the already-supplied spatial action by a disclosed amplitude
+`lambda`, keep `J_r`, every projector, Haar measure, and temporal
+normalization fixed, and call the resulting complete defect
+`D_epsilon(lambda)`.  On the physical Peter--Weyl core, after projecting the
+limiting multiplication symbol off its scalar coarse-Haar channel,
+
+```text
+NC (s-lim_(epsilon downarrow 0) [
+  (r! epsilon^r)^-1
+  partial_lambda^r D_epsilon(lambda)|_(lambda=0)])
+
+ =M_{(-1)^r(2^r-2) sum_(c=0)^(q-1)
+      (product_(i=0)^(r-1) a_(c,i))
+      (v-<v>)^(*r)(delta_c)}.                      (5a)
+```
+
+The `2^r` is the direct path and the `2` is the pair of staged Leibniz
+endpoints. This is the first nonconstant coefficient whose `lambda^r` response
+is taken at its minimal `epsilon^r` degree; it does not exclude lower `lambda`
+degree mixed kinetic terms at higher powers of `epsilon`. At fixed exterior
+member `n`, the right
+side closes in the finite character support of `Lambda^(tensor n)`. Thus no
+additional Peter--Weyl support is needed in this leading response: for each
+blocking factor `r`, the first nonconstant minimal bidegree is
+`epsilon^r lambda^r` inside that fixed finite carrier.
+
 ## Authority and imports
 
 The pinned landed authority is `origin/main` commit
@@ -120,7 +152,7 @@ an open, unmerged, conditional proposal.
 | `J_r=pi_r^*`, `P_(rq)J_r=J_rP_q` | physical coarse isometry | supplied Block229 | no transfer intertwining inferred from isometry |
 | co-scaled `S_epsilon=M_epsilon P C_epsilon P M_epsilon` | fine temporal step | supplied Block227 | mathematical Euclidean parameter, not physical time |
 | core derivative `(S_epsilon-I)/epsilon -> -G_f` | leading generator | supplied Block227 | strong/core statement, not operator norm |
-| equal positive coefficients on the two fine plaquettes | explicit witness specialization | supplied here inside the Block227 action family | no uniqueness or physical coefficient claim |
+| positive fine plaquette coefficients `a_(c,i)` and fixed amplitude `lambda` | two-cell witness and arbitrary-`r` supplied-action response | disclosed here inside the Block227 action family | no uniqueness, physical coefficient, metric, or source claim |
 | Block231 finite positive packet and full-transfer error | defect approximation | supplied Block231 | no generic Poisson-tail novelty |
 
 The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) provide no action,
@@ -328,6 +360,190 @@ the nonconstant defect and leaves it nonzero for `c_epsilon !=0`.  Separately
 normalizing the direct and staged two-step operators by different scalars
 defines a different square and is not covered.
 
+## Arbitrary-`r` conditioned-Haar hierarchy
+
+Fix finite `r>=2` and `q>=1`. In rail-forest gauge, write the fine plaquette
+increments in retained cell `c` as
+
+```text
+W_(c,i)=X_(cr+i+1)X_(cr+i)^-1,       0<=i<r,
+delta_c=X_((c+1)r)X_(cr)^-1
+       =W_(c,r-1)...W_(c,0).                         (25)
+```
+
+At fixed retained `X_(cr),X_((c+1)r)`, normalized Haar on the `r-1` hidden
+rungs is the conditional Haar fiber in (25). If coordinate `k` is omitted,
+put `A=W_(r-1)...W_(k+1)` and `B=W_(k-1)...W_0`. The constraint solves
+uniquely as `W_k=A^-1 delta B^-1`. Left/right Haar invariance therefore makes
+every proper subset of the `r` increments independent product Haar. This
+remains true on disconnected `O(3)`; only the total determinant product is
+fixed. Different retained cells use disjoint hidden variables and are
+conditionally independent at fixed retained rungs.
+
+The kinetic range statement also extends. A hidden rung does not occur in a
+pullback, a retained rung occurs once, and each of the `r` fine bi-invariant
+rail Casimirs becomes the same coarse rail Casimir. Hence
+
+```text
+A_fJ_r=J_r A_c^(r),
+A_c^(r)=A_(retained rungs)+r A_(coarse rails).       (26)
+```
+
+The factor `r` is an induced anisotropic coefficient, not a physical scale
+law. Equations (16) and (26) reduce the leading generated operator to the
+conditional variance in every retained cell.
+
+Let
+
+```text
+V_f=sum_(c=0)^(q-1) sum_(i=0)^(r-1)
+        a_(c,i)v(W_(c,i)),
+mu=int_G v,       sigma_v^2=int_G v^2-mu^2.
+```
+
+For one cell, `(r-1)`-wise independence gives
+
+```text
+Gamma_2(delta)
+ =sigma_v^2(a_0^2+a_1^2)
+  +2a_0a_1[(v*v)(delta)-mu^2],
+
+Gamma_r(delta)=sigma_v^2 sum_i a_i^2,       r>=3.  (27)
+```
+
+Thus the order-`epsilon^2` leakage remains positive but is a scalar coarse
+operator for `r>=3`. Equation (32) locates the first nonconstant
+minimal-bidegree supplied-action response for general `r` at order `r`.
+
+More generally, for `V_r=sum_i a_i v(W_i)`, every conditional moment and
+cumulant below order `r` equals the independent-Haar value. At order `r`,
+only a monomial using every coordinate once can depend on `delta`. With
+`h=v-mu`,
+
+```text
+kappa_m(V_r|delta)=kappa_m^Haar(v) sum_i a_i^m,
+                                                    m<r,
+
+kappa_r(V_r|delta)
+ =kappa_r^Haar(v) sum_i a_i^r
+  +r!(product_i a_i)h^(*r)(delta).                 (28)
+```
+
+Convolution follows the ordered product in (25). Centrality of the exterior
+`v` makes the order immaterial, but it cannot be permuted for a noncentral
+insertion. If any `a_i=0`, the full conditional law depends on a proper subset
+and is `delta`-independent.
+
+## Complete-step arbitrary-`r` action response
+
+Disclose a scalar amplitude `lambda` multiplying only the already-supplied
+spatial potential. Keep `J_r`, `Q`, every physical projector, normalized Haar
+measure, and temporal normalization fixed, and define
+
+```text
+M_(epsilon,lambda)=exp[-epsilon lambda V_f/2],
+S_epsilon(lambda)
+ =M_(epsilon,lambda)P_(rq)C_epsilon P_(rq)
+  M_(epsilon,lambda),
+
+D_epsilon(lambda)
+ =J_r*S_epsilon(lambda)^2J_r
+  -(J_r*S_epsilon(lambda)J_r)^2.                   (29)
+```
+
+On `H_f^phys` the fine projector is the identity. The class potential commutes
+with it and, under forest-gauge equivalence, with `P_lr`. The algebraic Peter--
+Weyl core is stable under every fixed power of bounded `V_f`. Block227's
+channel expansion gives `C_epsilon-I=O_psi(epsilon)` on each fixed core vector
+required below; uniform boundedness and strong convergence to `I` would
+already suffice for the leading fixed-`r` limit.
+
+After `r` `lambda` derivatives, every multiplier derivative supplies one
+factor `epsilon`. Any occurrence of `C_epsilon-I` supplies an additional small
+factor on the core. Dividing by `epsilon^r` therefore reduces (29) in the
+strong/core limit to
+
+```text
+J_r*exp[-2epsilon lambda V_f]J_r
+ -(J_r*exp[-epsilon lambda V_f]J_r)^2.              (30)
+```
+
+No commutation of `C_epsilon` with `V_f` is assumed. Put
+`m_k=E[V_f^k|delta_0,...,delta_(q-1)]`. Direct differentiation of (30) gives
+
+```text
+epsilon^-r partial_lambda^r D_epsilon|_0
+ ->(-1)^r[2^r m_r
+          -sum_(k=0)^r binom(r,k)m_k m_(r-k)].      (31)
+```
+
+For `k<r`, every monomial misses at least one increment in every retained
+cell, so `m_k` is independent of all coarse words. The nonconstant part of
+`m_r` is
+
+```text
+r! sum_(c=0)^(q-1)(product_(i=0)^(r-1)a_(c,i))
+    h^(*r)(delta_c).
+```
+
+Only the `k=0,r` endpoints in the staged sum in (31) contain this term. Thus
+the direct coefficient `2^r` loses exactly the two staged endpoints.
+
+Type `NC` only on the limiting multiplication operator: if the strong limit
+in (31) is `c_r I+M_F` with `int F=0` over all retained coarse words, set
+`NC(c_r I+M_F)=M_F`. Then
+
+```text
+NC (s-lim_(epsilon downarrow 0) [
+ (r! epsilon^r)^-1
+ partial_lambda^r D_epsilon(lambda)|_(lambda=0)])
+
+ =M_{(-1)^r(2^r-2) sum_(c=0)^(q-1)
+      (product_(i=0)^(r-1)a_(c,i))
+      h^(*r)(delta_c)}.                            (32)
+```
+
+Within the leading `C_epsilon -> I` hierarchy used in (32), dependence on two
+different coarse words first requires `2r` action-amplitude derivatives.
+Equation (32) is fixed in finite `r,q,n` and
+strong/core topology. It is not a fixed-`epsilon` identity, an operator-norm
+limit, or a joint `r,q -> infinity` statement. It also does not exclude
+nonconstant mixed kinetic terms of lower `lambda` degree at higher powers of
+`epsilon`.
+
+A common temporal scalar `c_epsilon`, independent of `lambda`, multiplies the
+answer by `lim c_epsilon^2`; (32) uses Block227's normalized convention
+`c_epsilon ->1`. Varying `J_r`, Haar measure, a projector, or normalization
+with `lambda`, or separately normalizing the two paths, adds derivative terms
+and defines a different response. The amplitude in (29) is an auxiliary
+action response, not a metric, coframe, physical source, or matter current.
+
+For the exterior member, let `m_(rho,n)` be the multiplicity of nontrivial
+`O(3)` irrep `rho` in `Lambda^(tensor n)`. The centered scalar Fourier
+multiplier is
+
+```text
+h_rho=-(16/n)m_(rho,n)/(d_rho 8^n),
+h^(*r)(delta)=sum_(rho!=1)d_rho h_rho^r chi_rho(delta). (33)
+```
+
+Vector and determinant channels occur by trivial padding, so (33) is
+nonconstant for every finite `r`; odd/even `r` changes signs, not survival of
+the improper component. At fixed `n`, `h` is a finite character polynomial,
+so every leading response in (32) lies in one fixed finite Peter--Weyl span.
+For `n=1` exactly,
+
+```text
+h=-2(chi_V+chi_(det tensor V)+chi_det),
+h^(*r)=3(-2/3)^r(chi_V+chi_(det tensor V))
+       +(-2)^r chi_det.                            (34)
+```
+
+The resulting leading response carrier has the supplied action coordinate
+and the generated `h^(*r)` coordinate, both inside the same finite
+Peter--Weyl support.  Its response order is `r` in the leading simultaneous
+`epsilon,lambda` hierarchy.
+
 ## Finite Peter--Weyl approximation of the defect
 
 At each fixed `epsilon`, specialize the
@@ -341,20 +557,20 @@ convention.  Write
 
 ```text
 eta_(K,r,q)
- =(3rq+1)delta_kappa+2rq delta_beta,                (25)
+ =(3rq+1)delta_kappa+2rq delta_beta,                (35)
 ```
 
 where the local tails and cutoffs are exactly those of Block231.  Its
 absolute physical operator theorem gives
 
 ```text
-||S_epsilon-S_epsilon^K||_op<=eta_(K,r,q).          (26)
+||S_epsilon-S_epsilon^K||_op<=eta_(K,r,q).          (36)
 ```
 
 Both steps are contractions.  For the defect map
 
 ```text
-Def_J(S)=J*S^2J-(J*SJ)^2,                           (27)
+Def_J(S)=J*S^2J-(J*SJ)^2,                           (37)
 ```
 
 two telescoping products give
@@ -362,11 +578,11 @@ two telescoping products give
 ```text
 ||Def_J(S)-Def_J(S^K)||_op
  <=4||S-S^K||_op
- <=4 eta_(K,r,q).                                  (28)
+ <=4 eta_(K,r,q).                                  (38)
 ```
 
 The same `3rq+1`/`2rq` census therefore controls the actual square, not an
-auxiliary message.  Generic Poisson tails are prior art; equation (28) is
+auxiliary message.  Generic Poisson tails are prior art; equation (38) is
 their typed consumer here.
 
 For the Block227 co-scaled family, the temporal packet scale grows as the
@@ -374,13 +590,19 @@ inverse small step.  To resolve the nonzero coefficient `Gamma` in (13), the
 cutoff must be chosen so
 
 ```text
-eta_(K,r,q)=o(epsilon^2).                           (29)
+eta_(K,r,q)=o(epsilon^2).                           (39)
 ```
 
 Block231's explicit rule supplies such a finite cutoff at every finite
 `epsilon,r,q`; it grows at least linearly with the local coupling scale and
 logarithmically with `rq/epsilon^2`.  This is a quantitative approximation
 cost, not a continuum theorem.
+
+For the pure-potential specialization, resolving the nonconstant order-`r`
+value contribution underlying (32) at fixed nonzero `lambda` requires the stronger
+`eta_(K,r,q)=o(epsilon^r)`.  Equation (38) is a value bound; differentiating
+separately normalized exact and truncated transfers would require a distinct
+response estimate and is not inferred from it.
 
 ## Prior-art and exact increment
 
@@ -394,12 +616,17 @@ The closest current and in-flight surfaces are distinct:
   message; it does not claim temporal range invariance.
 - Block231 controls a finite packet for one complete transfer; it does not
   form or bound the semigroup defect.
+- Current source and the open stack contain generic free-Haar cumulants and
+  character convolution powers, but no conditioned-product `(r-1)`-wise Haar
+  hierarchy or `2^r-2` action response of the complete physical `J_r` square.
 - Generic compression inequalities and conditional variances are credited
   mathematical machinery, not the novelty claim.
 
 The exact increment is the physical `J_r` square (1), its Block227 core
 interaction (14), the kinetic-range reduction (15)--(16), and the explicit
-nonconstant exterior variance (4)--(5), with the full packet consumer (28).
+nonconstant exterior variance (4)--(5), together with the arbitrary-`r`
+conditioned-Haar hierarchy (25)--(28), the complete-step response (29)--(34),
+and the full packet consumer (38).
 
 ## Obligation graph and boundaries
 
@@ -413,16 +640,22 @@ nonconstant exterior variance (4)--(5), with the full packet consumer (28).
 | prove nonconstant full-`O(3)` exterior channel | proved | Peter--Weyl argument after (21) |
 | exact independent finite control | proved | (22)--(23) |
 | normalization scaling | proved | (24) |
-| finite packet error with explicit `rq` | proved | (25)--(29) |
+| arbitrary-`r` Haar independence and leading variance | proved | (25)--(28) |
+| complete-step `r`th action response | proved strong/core at fixed finite `r,q,n` | (29)--(32) |
+| finite leading exterior response carrier | proved | (33)--(34) |
+| finite packet error with explicit `rq` | proved | (35)--(39) |
 | physical scale/time/state/observable family | open | not supplied |
 | metric/source/matter response | open | pure-gauge carrier omits these variables |
 | continuum, Lorentz, gravity, action selection | open and not inferred | scope fence |
 
-The result supplies a concrete multiscale consumer: retaining the generated
-interaction `Gamma` (or a controlled approximation to it) reproduces the
-order-`epsilon^2` direct/staged separation that an inherited one-step
-recompression omits.  Enlarged perfect actions, memory kernels, and continuum
-limits remain separate open constructions.
+The result supplies a concrete multiscale consumer.  At blocking factor two,
+retaining `Gamma` reproduces the order-`epsilon^2` direct/staged separation
+that inherited one-step recompression omits.  For arbitrary fixed `r`, the
+nonconstant supplied-action response moves to bidegree
+`epsilon^r lambda^r` but remains in a finite leading exterior character
+carrier.  For each fixed `r`, equation (32) gives its exact leading
+coefficient.  Enlarged perfect actions, exact finite-`epsilon` memory kernels,
+and continuum limits remain separate open constructions.
 
 ## Reproduction and landing conditions
 

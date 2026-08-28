@@ -40,4 +40,5 @@ same-variable Cartan/Palatini--Regge action/Hessian bridge as the independent
 portfolio hedge.
 
 No axiom update, obligation retirement, TOE movement, retained verdict or
-`review-loop` use follows from Block 219.
+`review-loop` use follows from Block 219.  The bounded-support package is open
+as clean draft PR [#7762](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7762).

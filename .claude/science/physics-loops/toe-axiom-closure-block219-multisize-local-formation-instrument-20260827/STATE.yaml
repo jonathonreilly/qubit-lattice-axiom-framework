@@ -7,11 +7,11 @@ parent_pr: 7760
 origin_main: 66e478505e055faf4a5b9e6f4883211e44304718
 branch: physics-loop/toe-axiom-closure-block219-bounded-local-parity-factorization-20260827
 base: physics-loop/toe-axiom-closure-block218-same-law-seed-instrument-20260827
-pr_number: null
-pr_url: null
-pr_state: not_opened
+pr_number: 7762
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7762
+pr_state: draft_clean
 preregistration_commit: db12e0486ee9fce216e9034e9e7b5099c8b80c19
-science_commit: pending
+science_commit: a2be2db92e
 worktree: /private/tmp/toe-axiom-block219.1GT74J/worktree
 runtime_budget: 24h
 portfolio_recheck_interval: 3h

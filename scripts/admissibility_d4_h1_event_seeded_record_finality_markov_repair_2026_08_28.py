@@ -26,6 +26,7 @@ AUDIT_INPUT_PATHS = (
     f"{PACK}/GOAL.md",
     f"{PACK}/NO_GO_LEDGER.md",
     f"{PACK}/REPAIR_PREREGISTRATION.md",
+    f"{PACK}/COVARIANCE_CERTIFICATE_PREREGISTRATION.md",
     f"{PACK}/FROZEN_MARKOV_RULE.json",
     "docs/ADMISSIBILITY_D4_H1_EVENT_SEEDED_RECORD_FINALITY_"
     "MARKOV_REPAIR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-28.md",
@@ -41,6 +42,15 @@ DIRECTIONS = (
     (0, 1, 0),
     (0, 0, -1),
     (0, 0, 1),
+)
+INVERSE_D6 = (1, 0, 3, 2, 5, 4)
+CONTEXT_PORT_MAPS = (
+    (3, 4, 2, 5),  # -x: +y,-z,-y,+z
+    (3, 5, 2, 4),  # +x: +y,+z,-y,-z (tested runtime base frame)
+    (5, 0, 4, 1),  # -y: +z,-x,-z,+x
+    (5, 1, 4, 0),  # +y: +z,+x,-z,-x
+    (1, 2, 0, 3),  # -z: +x,-y,-x,+y
+    (1, 3, 0, 2),  # +z: +x,+y,-x,-y
 )
 CLASS_ORDER = ("identity", "edge_pi", "axis_pi", "body_third", "axis_quarter")
 CLASS_SIZES = (1, 6, 3, 8, 6)
@@ -74,6 +84,12 @@ MUTATIONS = (
     "root_persistent",
     "punctured_connectivity",
     "eroder_commit",
+    "direction_map",
+    "physical_inverse",
+    "successor_cross",
+    "x_projector",
+    "kraus_default",
+    "kraus_phase",
 )
 
 
@@ -93,6 +109,16 @@ class Checks:
             if self.verbose:
                 suffix = f": {detail}" if detail else ""
                 print(f"FAIL {name}{suffix}")
+
+
+RayLabel = tuple[str, int, int]
+
+
+@dataclass
+class CarrierData:
+    rotations: list[np.ndarray]
+    complement: np.ndarray
+    rays: dict[RayLabel, np.ndarray]
 
 
 def canonical_json(value: object) -> str:
@@ -310,7 +336,13 @@ def build_sector_intertwiner(
 
 def representation_checks(
     checks: Checks, mutation: str | None
-) -> tuple[tuple[int, ...], dict[str, int], tuple[int, ...], str]:
+) -> tuple[
+    tuple[int, ...],
+    dict[str, int],
+    tuple[int, ...],
+    str,
+    CarrierData | None,
+]:
     rotations = signed_permutation_rotations()
     if mutation == "rotation":
         rotations[0] = np.diag((-1, 1, 1))
@@ -319,7 +351,8 @@ def representation_checks(
     )
     checks.check("24 proper-cubic rotations", proper)
 
-    code_matrix = np.column_stack(list(make_joint_code().values()))
+    joint_code = make_joint_code()
+    code_matrix = np.column_stack(list(joint_code.values()))
     code_projector = code_matrix @ code_matrix.T
     checks.check(
         "Block-218 Record code is rank-52 orthonormal",
@@ -424,6 +457,7 @@ def representation_checks(
     )
 
     embedding_digest = "unavailable"
+    carrier: CarrierData | None = None
     if proper:
         v_plus, plus_floor = build_sector_intertwiner(
             rotations, remaining @ plus, mutation
@@ -470,6 +504,18 @@ def representation_checks(
             embedding_digest = hashlib.sha256(
                 np.round(rays, 12).astype("<f8").tobytes()
             ).hexdigest()
+            physical_rays: dict[RayLabel, np.ndarray] = {}
+            for bit, block in enumerate((bit_zero, bit_one)):
+                physical_rays[("U", bit, -1)] = tau_matrix[:, bit]
+                for direction in range(6):
+                    physical_rays[("P", bit, direction)] = block[:, direction]
+                    physical_rays[("H", bit, direction)] = block[:, 6 + direction]
+                    physical_rays[("R", bit, direction)] = block[:, 12 + direction]
+                physical_rays[("L", bit, -1)] = block[:, 18]
+                physical_rays[("S", bit, -1)] = block[:, 19]
+                physical_rays[("LOCK", bit, -1)] = joint_code[("LOCK", None, bit)]
+                physical_rays[("BG", bit, -1)] = joint_code[("BG", None, bit)]
+            carrier = CarrierData(rotations, complement, physical_rays)
         else:
             checks.check(
                 "explicit 40 rays are orthonormal, noncode and covariant", False
@@ -477,7 +523,7 @@ def representation_checks(
     else:
         checks.check("explicit expandable intertwiners have full rank", False)
         checks.check("explicit 40 rays are orthonormal, noncode and covariant", False)
-    return character, decomposition, desired, embedding_digest
+    return character, decomposition, desired, embedding_digest, carrier
 
 
 def site_template(kind: str, bit: str, direction: str = "none") -> dict[str, str]:
@@ -715,9 +761,21 @@ def rule_spec(mutation: str | None) -> dict[str, object]:
             "successor_step": 2 if mutation == "skip_port" else 1,
             "parallel_darts_are_distinct": True,
         },
+        "direction_encoding": {
+            "storage": "actual_signed_axis_D6",
+            "physical_labels": [list(direction) for direction in DIRECTIONS],
+            "normal_domain": list(range(6)),
+            "base_normal": 1,
+            "base_runtime_to_physical": list(CONTEXT_PORT_MAPS[1]),
+            "context_port_maps": [list(row) for row in CONTEXT_PORT_MAPS],
+            "physical_inverse": list(INVERSE_D6),
+            "successor": "cross(normal,direction)",
+            "runtime_interpreter": "base_ordinals_conjugated_through_base_map",
+        },
         "state_schema": {
             "directed": ["R", "P", "H"],
-            "scalar": ["U", "L", "S", "LOCK", "BG", "X"],
+            "scalar": ["U", "L", "S", "LOCK", "BG"],
+            "context_projector": ["X_n"],
             "bit_coloured": ["U", "R", "P", "H", "L", "S", "LOCK", "BG"],
             "record": ["LOCK", "BG"],
             "reserved": ["R", "P", "H", "L"],
@@ -745,10 +803,33 @@ def rule_spec(mutation: str | None) -> dict[str, object]:
             "site_occurrence_normal_and_rate": "supplied",
         },
         "kraus_schema": {
-            "row_form": "sqrt(weight)*|output_signature><input_signature|",
+            "row_form": "tensor_product_partial_isometry_on_signature_sector",
             "rows_are_separately_indexed": True,
             "default_identity_on_unmatched_signatures": True,
             "projective_A2_roles": ["R", "S"],
+            "role_representations": {
+                "U": "A1",
+                "P": "D6",
+                "H": "D6",
+                "R": "D6_tensor_A2",
+                "L": "A1",
+                "S": "A2",
+                "LOCK": "A1",
+                "BG": "A1",
+                "X_n": "transported_context_complement_projector",
+            },
+            "signature_partition": {
+                "named_rays_per_normal": 34,
+                "X_n_rank": 94,
+                "pair_branches_per_normal_port": 1225,
+                "star_branches_per_normal": 560,
+            },
+            "compiler": "priority_winner_else_default_per_scheduler_support",
+            "completeness_domains": [
+                "genesis_U_b",
+                "directed_pair_I_tensor_I",
+                "guarded_star_I_tensor_5",
+            ],
             "coherent_row_sums_forbidden": True,
         },
         "transitions": rows,
@@ -758,12 +839,24 @@ def rule_spec(mutation: str | None) -> dict[str, object]:
         "punctured_component_connected": mutation != "punctured_connectivity",
         "claim_domain": "one finite connected Record-free parity component with one supplied R_b,d event state",
         "preexisting_record_domain": "QND status preservation only; failure-plus-flood composition is outside the positive theorem",
-        "physical_scheduler_and_rate": "supplied",
+        "physical_scheduler_and_rate": "supplied_fair_nonstuttering_scheduler_and_supplied_rate",
     }
     if mutation == "hidden_size":
         spec["torus_size"] = 6
     if mutation == "coordinate":
         spec["root_coordinate"] = [0, 0]
+    if mutation == "direction_map":
+        spec["direction_encoding"]["base_runtime_to_physical"] = [0, 1, 2, 3]
+    if mutation == "physical_inverse":
+        spec["direction_encoding"]["physical_inverse"] = [0, 1, 3, 2, 5, 4]
+    if mutation == "successor_cross":
+        spec["direction_encoding"]["context_port_maps"][1] = [3, 4, 2, 5]
+    if mutation == "x_projector":
+        spec["kraus_schema"]["signature_partition"]["X_n_rank"] = 1
+    if mutation == "kraus_default":
+        spec["kraus_schema"]["default_identity_on_unmatched_signatures"] = False
+    if mutation == "kraus_phase":
+        spec["kraus_schema"]["role_representations"]["R"] = "D6"
     return spec
 
 
@@ -1318,7 +1411,552 @@ def table_syntax_and_kraus_checks(
     )
 
 
-def protocol_checks(checks: Checks, mutation: str | None) -> dict[str, object]:
+Sector = RayLabel | str
+
+
+@dataclass(frozen=True)
+class KrausBranch:
+    row_id: str
+    squared_weight: tuple[int, int]
+    inputs: tuple[Sector, ...]
+    outputs: tuple[Sector, ...]
+
+
+def active_ray_labels(normal: int, spec: dict[str, object]) -> tuple[RayLabel, ...]:
+    maps = spec["direction_encoding"]["context_port_maps"]
+    tangent = tuple(int(direction) for direction in maps[normal])
+    labels: list[RayLabel] = [("U", bit, -1) for bit in range(2)]
+    for kind in ("R", "P", "H"):
+        labels.extend(
+            (kind, bit, direction)
+            for bit in range(2)
+            for direction in tangent
+        )
+    for kind in ("L", "S", "LOCK", "BG"):
+        labels.extend((kind, bit, -1) for bit in range(2))
+    return tuple(labels)
+
+
+def sector_to_site(
+    sector: Sector, normal: int, spec: dict[str, object]
+) -> Site:
+    if sector == "X_n":
+        return Site("X", -1, -1)
+    assert isinstance(sector, tuple)
+    kind, bit, direction = sector
+    if kind in {"R", "P", "H"}:
+        port_map = list(spec["direction_encoding"]["context_port_maps"][normal])
+        return Site(kind, bit, port_map.index(direction))
+    return Site(kind, bit, -1)
+
+
+def site_to_sector(
+    site: Site, normal: int, spec: dict[str, object]
+) -> Sector:
+    if site.kind == "X":
+        return "X_n"
+    direction = -1
+    if site.kind in {"R", "P", "H"}:
+        direction = int(
+            spec["direction_encoding"]["context_port_maps"][normal][site.direction]
+        )
+    return (site.kind, site.bit, direction)
+
+
+def compile_pair_branch(
+    spec: dict[str, object],
+    normal: int,
+    selected_port: int,
+    actor_sector: Sector,
+    target_sector: Sector,
+) -> KrausBranch:
+    actor = sector_to_site(actor_sector, normal, spec)
+    target = sector_to_site(target_sector, normal, spec)
+    choices: list[tuple[int, str, Site, Site, tuple[int, int]]] = []
+    for row in spec["transitions"]:
+        if row["support"] != "directed_pair" or actor.kind not in row["actor_kinds"]:
+            continue
+        if selected_port not in selected_ports(str(row["port_selector"]), actor, spec):
+            continue
+        if target.kind not in row["target_kinds"]:
+            continue
+        if not bit_matches(str(row["bit_relation"]), actor, target):
+            continue
+        relation = str(row["direction_relation"])
+        exact = target.direction == inverse_port(selected_port, spec)
+        if relation == "inverse_port" and not exact:
+            continue
+        if relation == "not_inverse_port" and exact:
+            continue
+        if relation not in {"any", "inverse_port", "not_inverse_port"}:
+            continue
+        actor_out = resolve_site(
+            row["actor_write"], actor, target, actor, selected_port, spec
+        )
+        target_out = resolve_site(
+            row["target_write"], actor, target, target, selected_port, spec
+        )
+        weight = tuple(int(value) for value in row["squared_weight"])
+        choices.append(
+            (int(row["priority"]), str(row["id"]), actor_out, target_out, weight)
+        )
+    if not choices:
+        return KrausBranch(
+            "__default__", (1, 1), (actor_sector, target_sector),
+            (actor_sector, target_sector)
+        )
+    maximum = max(choice[0] for choice in choices)
+    winners = [choice for choice in choices if choice[0] == maximum]
+    if len(winners) != 1:
+        raise AssertionError(
+            f"ambiguous pair certificate normal={normal} port={selected_port}: {winners}"
+        )
+    _, row_id, actor_out, target_out, weight = winners[0]
+    return KrausBranch(
+        row_id,
+        weight,
+        (actor_sector, target_sector),
+        (
+            site_to_sector(actor_out, normal, spec),
+            site_to_sector(target_out, normal, spec),
+        ),
+    )
+
+
+def compile_star_branch(
+    spec: dict[str, object], normal: int, center_sector: Sector, mask: int
+) -> KrausBranch:
+    center = sector_to_site(center_sector, normal, spec)
+    choices: list[tuple[int, str, Site, tuple[int, int]]] = []
+    for row in spec["transitions"]:
+        if row["support"] != "radius_two_star" or center.kind not in row["actor_kinds"]:
+            continue
+        guarded = mask == 0
+        if row["guard"] == "always":
+            guarded = True
+        if not guarded:
+            continue
+        output = resolve_site(row["actor_write"], center, center, center, -1, spec)
+        weight = tuple(int(value) for value in row["squared_weight"])
+        choices.append((int(row["priority"]), str(row["id"]), output, weight))
+    neighbour_inputs: tuple[Sector, ...] = tuple(
+        "RESERVED_n" if mask & (1 << port) else "NONRESERVED_n"
+        for port in range(4)
+    )
+    if not choices:
+        return KrausBranch(
+            "__default__", (1, 1), (center_sector,) + neighbour_inputs,
+            (center_sector,) + neighbour_inputs
+        )
+    maximum = max(choice[0] for choice in choices)
+    winners = [choice for choice in choices if choice[0] == maximum]
+    if len(winners) != 1:
+        raise AssertionError(
+            f"ambiguous star certificate normal={normal} mask={mask}: {winners}"
+        )
+    _, row_id, output, weight = winners[0]
+    return KrausBranch(
+        row_id,
+        weight,
+        (center_sector,) + neighbour_inputs,
+        (site_to_sector(output, normal, spec),) + neighbour_inputs,
+    )
+
+
+def transport_sector(
+    sector: Sector, permutation: tuple[int, ...] | None
+) -> Sector:
+    if not isinstance(sector, tuple):
+        return sector
+    kind, bit, direction = sector
+    transported_direction = direction
+    if direction >= 0 and permutation is not None:
+        transported_direction = permutation[direction]
+    return (kind, bit, transported_direction)
+
+
+def complement_sector(sector: Sector) -> Sector:
+    if not isinstance(sector, tuple):
+        return sector
+    kind, bit, direction = sector
+    return (kind, 1 - bit, direction)
+
+
+def sector_rotation_phase(sector: Sector, rotation: np.ndarray) -> int:
+    if isinstance(sector, tuple) and sector[0] in {"R", "S"}:
+        return a2_sign(rotation)
+    return 1
+
+
+def transported_mask(
+    mask: int,
+    normal: int,
+    transported_normal: int,
+    permutation: tuple[int, ...],
+    spec: dict[str, object],
+) -> int:
+    old_map = tuple(spec["direction_encoding"]["context_port_maps"][normal])
+    new_map = tuple(spec["direction_encoding"]["context_port_maps"][transported_normal])
+    result = 0
+    for old_port, direction in enumerate(old_map):
+        if mask & (1 << old_port):
+            result |= 1 << new_map.index(permutation[int(direction)])
+    return result
+
+
+def kraus_covariance_certificate_checks(
+    checks: Checks,
+    spec: dict[str, object],
+    carrier: CarrierData | None,
+    mutation: str | None,
+) -> dict[str, object]:
+    encoding = spec["direction_encoding"]
+    kraus = spec["kraus_schema"]
+    schema_ok = (
+        encoding["storage"] == "actual_signed_axis_D6"
+        and encoding["physical_labels"] == [list(direction) for direction in DIRECTIONS]
+        and encoding["normal_domain"] == list(range(6))
+        and encoding["base_normal"] == 1
+        and encoding["base_runtime_to_physical"] == list(CONTEXT_PORT_MAPS[1])
+        and encoding["context_port_maps"] == [list(row) for row in CONTEXT_PORT_MAPS]
+        and encoding["physical_inverse"] == list(INVERSE_D6)
+        and encoding["successor"] == "cross(normal,direction)"
+        and kraus["default_identity_on_unmatched_signatures"] is True
+        and kraus["projective_A2_roles"] == ["R", "S"]
+        and kraus["role_representations"]["R"] == "D6_tensor_A2"
+        and kraus["role_representations"]["S"] == "A2"
+        and kraus["signature_partition"]["X_n_rank"] == 94
+    )
+    checks.check(
+        "frozen port ordinals are conjugated to actual signed-axis carrier columns",
+        schema_ok,
+    )
+    if mutation is not None:
+        return {"pair_branches": 0, "star_branches": 0, "genesis_branches": 0}
+    if carrier is None or not schema_ok:
+        checks.check("literal local Kraus certificate is constructible", False)
+        return {"pair_branches": 0, "star_branches": 0, "genesis_branches": 0}
+
+    maps = tuple(tuple(int(value) for value in row) for row in encoding["context_port_maps"])
+    geometric = True
+    for normal, port_map in enumerate(maps):
+        nvec = np.asarray(DIRECTIONS[normal])
+        geometric &= len(set(port_map)) == 4
+        for port, direction in enumerate(port_map):
+            dvec = np.asarray(DIRECTIONS[direction])
+            successor = tuple(int(value) for value in np.cross(nvec, dvec))
+            geometric &= int(np.dot(nvec, dvec)) == 0
+            geometric &= DIRECTIONS[port_map[(port + 1) % 4]] == successor
+            geometric &= port_map[(port + 2) % 4] == INVERSE_D6[direction]
+    checks.check(
+        "all six normal contexts realize inverse and successor by signed-axis geometry",
+        geometric,
+    )
+
+    context_labels = {normal: active_ray_labels(normal, spec) for normal in range(6)}
+    context_projectors: dict[int, np.ndarray] = {}
+    reserved_projectors: dict[int, np.ndarray] = {}
+    carrier_partition = True
+    for normal, labels in context_labels.items():
+        matrix = np.column_stack([carrier.rays[label] for label in labels])
+        active = matrix @ matrix.T
+        x_projector = np.eye(128) - active
+        reserved_labels = [
+            label for label in labels if label[0] in {"R", "P", "H", "L"}
+        ]
+        reserved_matrix = np.column_stack([carrier.rays[label] for label in reserved_labels])
+        reserved = reserved_matrix @ reserved_matrix.T
+        context_projectors[normal] = x_projector
+        reserved_projectors[normal] = reserved
+        carrier_partition &= (
+            len(labels) == 34
+            and len(set(labels)) == 34
+            and np.linalg.norm(matrix.T @ matrix - np.eye(34)) < 5.0e-9
+            and abs(np.trace(x_projector) - 94.0) < 5.0e-9
+            and np.linalg.norm(x_projector @ x_projector - x_projector) < 5.0e-9
+            and abs(np.trace(reserved) - 26.0) < 5.0e-9
+            and np.linalg.norm(reserved @ reserved - reserved) < 5.0e-9
+        )
+    checks.check(
+        "34 named rays plus the covariant rank-94 X_n projector partition each site",
+        carrier_partition,
+    )
+
+    ray_transport = True
+    projector_transport = True
+    for rotation in carrier.rotations:
+        permutation = direction_permutation(rotation)
+        operator = rotation_operator(permutation)
+        for normal in range(6):
+            transported_normal = permutation[normal]
+            for label in context_labels[normal]:
+                target = transport_sector(label, permutation)
+                assert isinstance(target, tuple)
+                phase = sector_rotation_phase(label, rotation)
+                ray_transport &= (
+                    np.linalg.norm(operator @ carrier.rays[label] - phase * carrier.rays[target])
+                    < 5.0e-9
+                )
+            projector_transport &= (
+                np.linalg.norm(
+                    operator @ context_projectors[normal] @ operator.T
+                    - context_projectors[transported_normal]
+                )
+                < 5.0e-8
+                and np.linalg.norm(
+                    operator @ reserved_projectors[normal] @ operator.T
+                    - reserved_projectors[transported_normal]
+                )
+                < 5.0e-8
+            )
+    complement_transport = True
+    for normal in range(6):
+        for label in context_labels[normal]:
+            target = complement_sector(label)
+            assert isinstance(target, tuple)
+            complement_transport &= (
+                np.linalg.norm(carrier.complement @ carrier.rays[label] - carrier.rays[target])
+                < 5.0e-9
+            )
+        complement_transport &= (
+            np.linalg.norm(
+                carrier.complement @ context_projectors[normal] @ carrier.complement.T
+                - context_projectors[normal]
+            )
+            < 5.0e-8
+            and np.linalg.norm(
+                carrier.complement @ reserved_projectors[normal] @ carrier.complement.T
+                - reserved_projectors[normal]
+            )
+            < 5.0e-8
+        )
+    checks.check(
+        "actual named rays and signature projectors transport with their A2 phases",
+        ray_transport and projector_transport and complement_transport,
+    )
+
+    sectors = {
+        normal: context_labels[normal] + ("X_n",) for normal in range(6)
+    }
+    pair: dict[tuple[int, int, Sector, Sector], KrausBranch] = {}
+    pair_complete = True
+    for normal in range(6):
+        for port in range(4):
+            dimension_sum = 0
+            for actor_sector in sectors[normal]:
+                for target_sector in sectors[normal]:
+                    branch = compile_pair_branch(
+                        spec, normal, port, actor_sector, target_sector
+                    )
+                    pair[(normal, port, actor_sector, target_sector)] = branch
+                    input_dimensions = [
+                        94 if sector == "X_n" else 1 for sector in branch.inputs
+                    ]
+                    output_dimensions = [
+                        94 if sector == "X_n" else 1 for sector in branch.outputs
+                    ]
+                    pair_complete &= (
+                        branch.squared_weight == (1, 1)
+                        and math.prod(input_dimensions) == math.prod(output_dimensions)
+                    )
+                    dimension_sum += math.prod(input_dimensions)
+            pair_complete &= dimension_sum == 128**2
+    checks.check(
+        "29,400 directed-pair Kraus branches give one winner/default and complete I tensor I",
+        pair_complete and len(pair) == 29_400,
+    )
+
+    star: dict[tuple[int, Sector, int], KrausBranch] = {}
+    star_complete = True
+    for normal in range(6):
+        for center_sector in sectors[normal]:
+            center_dimension = 94 if center_sector == "X_n" else 1
+            dimension_sum = 0
+            for mask in range(16):
+                branch = compile_star_branch(spec, normal, center_sector, mask)
+                star[(normal, center_sector, mask)] = branch
+                neighbour_dimensions = [
+                    26 if mask & (1 << port) else 102 for port in range(4)
+                ]
+                input_dimension = center_dimension * math.prod(neighbour_dimensions)
+                output_center_dimension = 94 if branch.outputs[0] == "X_n" else 1
+                output_dimension = output_center_dimension * math.prod(neighbour_dimensions)
+                star_complete &= (
+                    branch.squared_weight == (1, 1)
+                    and input_dimension == output_dimension
+                )
+                dimension_sum += input_dimension
+            star_complete &= dimension_sum == center_dimension * 128**4
+    checks.check(
+        "3,360 guarded-star Kraus branches give one winner/default and complete I tensor 5",
+        star_complete and len(star) == 3_360,
+    )
+
+    genesis: dict[tuple[int, int, int], KrausBranch] = {}
+    genesis_complete = True
+    weights = tuple(
+        tuple(int(value) for value in weight)
+        for weight in spec["genesis"]["squared_weights"]
+    )
+    for normal in range(6):
+        for bit in range(2):
+            total = 0.0
+            for port, weight in enumerate(weights):
+                branch = KrausBranch(
+                    "genesis",
+                    weight,
+                    (("U", bit, -1),),
+                    (("R", bit, maps[normal][port]),),
+                )
+                genesis[(normal, bit, port)] = branch
+                total += weight[0] / weight[1]
+            genesis_complete &= abs(total - 1.0) < TOL
+    checks.check(
+        "48 genesis Kraus rows are normalized on every supplied normal and bit",
+        genesis_complete and len(genesis) == 48,
+    )
+
+    pair_covariant = True
+    star_covariant = True
+    genesis_covariant = True
+    saw_odd_commit_phase = False
+    saw_odd_decay_phase = False
+    for rotation in carrier.rotations:
+        permutation = direction_permutation(rotation)
+        odd = a2_sign(rotation) == -1
+        for normal in range(6):
+            transported_normal = permutation[normal]
+            old_map = maps[normal]
+            new_map = maps[transported_normal]
+            for port, direction in enumerate(old_map):
+                transported_port = new_map.index(permutation[direction])
+                for actor_sector in sectors[normal]:
+                    for target_sector in sectors[normal]:
+                        branch = pair[(normal, port, actor_sector, target_sector)]
+                        transported_inputs = tuple(
+                            transport_sector(sector, permutation) for sector in branch.inputs
+                        )
+                        transported_outputs = tuple(
+                            transport_sector(sector, permutation) for sector in branch.outputs
+                        )
+                        target_branch = pair[
+                            (
+                                transported_normal,
+                                transported_port,
+                                transported_inputs[0],
+                                transported_inputs[1],
+                            )
+                        ]
+                        pair_covariant &= (
+                            branch.row_id == target_branch.row_id
+                            and branch.squared_weight == target_branch.squared_weight
+                            and transported_outputs == target_branch.outputs
+                        )
+                        input_phase = math.prod(
+                            sector_rotation_phase(sector, rotation)
+                            for sector in branch.inputs
+                        )
+                        output_phase = math.prod(
+                            sector_rotation_phase(sector, rotation)
+                            for sector in branch.outputs
+                        )
+                        phase = input_phase * output_phase
+                        pair_covariant &= phase in {-1, 1}
+                        if odd and branch.row_id == "head_return_root_commit" and phase == -1:
+                            saw_odd_commit_phase = True
+            for center_sector in sectors[normal]:
+                for mask in range(16):
+                    branch = star[(normal, center_sector, mask)]
+                    target_mask = transported_mask(
+                        mask, normal, transported_normal, permutation, spec
+                    )
+                    target_center = transport_sector(center_sector, permutation)
+                    target_branch = star[(transported_normal, target_center, target_mask)]
+                    transported_outputs = (
+                        transport_sector(branch.outputs[0], permutation),
+                    ) + tuple(
+                        "RESERVED_n" if target_mask & (1 << port) else "NONRESERVED_n"
+                        for port in range(4)
+                    )
+                    star_covariant &= (
+                        branch.row_id == target_branch.row_id
+                        and branch.squared_weight == target_branch.squared_weight
+                        and transported_outputs == target_branch.outputs
+                    )
+                    phase = (
+                        sector_rotation_phase(branch.inputs[0], rotation)
+                        * sector_rotation_phase(branch.outputs[0], rotation)
+                    )
+                    star_covariant &= phase in {-1, 1}
+                    if odd and branch.row_id == "failure_guarded_decay" and phase == -1:
+                        saw_odd_decay_phase = True
+            for bit in range(2):
+                for port, direction in enumerate(old_map):
+                    transported_port = new_map.index(permutation[direction])
+                    branch = genesis[(normal, bit, port)]
+                    target_branch = genesis[(transported_normal, bit, transported_port)]
+                    genesis_covariant &= (
+                        branch.squared_weight == target_branch.squared_weight
+                        and tuple(
+                            transport_sector(sector, permutation) for sector in branch.outputs
+                        )
+                        == target_branch.outputs
+                    )
+    for normal in range(6):
+        for port in range(4):
+            for actor_sector in sectors[normal]:
+                for target_sector in sectors[normal]:
+                    branch = pair[(normal, port, actor_sector, target_sector)]
+                    complemented_inputs = tuple(
+                        complement_sector(sector) for sector in branch.inputs
+                    )
+                    target_branch = pair[
+                        (normal, port, complemented_inputs[0], complemented_inputs[1])
+                    ]
+                    pair_covariant &= (
+                        branch.row_id == target_branch.row_id
+                        and branch.squared_weight == target_branch.squared_weight
+                        and tuple(
+                            complement_sector(sector) for sector in branch.outputs
+                        )
+                        == target_branch.outputs
+                    )
+        for center_sector in sectors[normal]:
+            for mask in range(16):
+                branch = star[(normal, center_sector, mask)]
+                target_branch = star[(normal, complement_sector(center_sector), mask)]
+                star_covariant &= (
+                    branch.row_id == target_branch.row_id
+                    and (complement_sector(branch.outputs[0]),)
+                    == (target_branch.outputs[0],)
+                )
+        for bit in range(2):
+            for port in range(4):
+                branch = genesis[(normal, bit, port)]
+                target_branch = genesis[(normal, 1 - bit, port)]
+                genesis_covariant &= (
+                    tuple(complement_sector(sector) for sector in branch.outputs)
+                    == target_branch.outputs
+                )
+    checks.check(
+        "all compiled Kraus branches transport under 24 rotations and complement",
+        pair_covariant and star_covariant and genesis_covariant,
+    )
+    checks.check(
+        "A2-odd commit and eroder branches carry the explicit projective Kraus phase",
+        saw_odd_commit_phase and saw_odd_decay_phase,
+    )
+    return {
+        "pair_branches": len(pair),
+        "star_branches": len(star),
+        "genesis_branches": len(genesis),
+        "context_projector_rank": 94,
+    }
+
+
+def protocol_checks(
+    checks: Checks, mutation: str | None, carrier: CarrierData | None
+) -> dict[str, object]:
     spec = rule_spec(mutation)
     serialized = canonical_json(spec)
     digest = hashlib.sha256(serialized.encode()).hexdigest()
@@ -1334,6 +1972,9 @@ def protocol_checks(checks: Checks, mutation: str | None) -> dict[str, object]:
         reported == digest and spec["semantic_binding"] is True,
     )
     table_syntax_and_kraus_checks(checks, spec)
+    certificate = kraus_covariance_certificate_checks(
+        checks, spec, carrier, mutation
+    )
 
     geometry_rows = []
     punctured = bool(spec["punctured_component_connected"])
@@ -1525,6 +2166,7 @@ def protocol_checks(checks: Checks, mutation: str | None) -> dict[str, object]:
         "cleanup": cleanup_rows,
         "flood": flood_rows,
         "row_hits": dict(sorted(hit_totals.items())),
+        "kraus_certificate": certificate,
     }
 
 
@@ -1533,9 +2175,9 @@ def source_checks(checks: Checks, root: Path) -> None:
     checks.check("all declared source inputs exist", not missing, str(missing))
     if missing:
         return
-    note = (root / AUDIT_INPUT_PATHS[4]).read_text(encoding="utf-8")
-    checklist = (root / AUDIT_INPUT_PATHS[5]).read_text(encoding="utf-8")
-    envelope = json.loads((root / AUDIT_INPUT_PATHS[3]).read_text(encoding="utf-8"))
+    note = (root / AUDIT_INPUT_PATHS[5]).read_text(encoding="utf-8")
+    checklist = (root / AUDIT_INPUT_PATHS[6]).read_text(encoding="utf-8")
+    envelope = json.loads((root / AUDIT_INPUT_PATHS[4]).read_text(encoding="utf-8"))
     frozen = canonical_json(envelope["rule"])
     checks.check(
         "frozen sidecar is the executable table consumed by the primary",
@@ -1574,10 +2216,10 @@ def run(
     mutation: str | None, verbose: bool, training_only: bool
 ) -> tuple[Checks, str]:
     checks = Checks(verbose)
-    character, decomposition, desired, embedding_digest = representation_checks(
+    character, decomposition, desired, embedding_digest, carrier = representation_checks(
         checks, mutation
     )
-    result = protocol_checks(checks, mutation)
+    result = protocol_checks(checks, mutation, carrier)
     if mutation is None and not training_only:
         source_checks(checks, Path(__file__).resolve().parents[1])
     summary = {

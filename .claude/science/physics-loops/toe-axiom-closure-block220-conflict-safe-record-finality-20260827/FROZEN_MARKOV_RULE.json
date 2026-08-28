@@ -2,6 +2,104 @@
   "rule": {
     "claim_domain": "one finite connected Record-free parity component with one supplied R_b,d event state",
     "default_action": "identity",
+    "direction_encoding": {
+      "base_normal": 1,
+      "base_runtime_to_physical": [
+        3,
+        5,
+        2,
+        4
+      ],
+      "context_port_maps": [
+        [
+          3,
+          4,
+          2,
+          5
+        ],
+        [
+          3,
+          5,
+          2,
+          4
+        ],
+        [
+          5,
+          0,
+          4,
+          1
+        ],
+        [
+          5,
+          1,
+          4,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          3
+        ],
+        [
+          1,
+          3,
+          0,
+          2
+        ]
+      ],
+      "normal_domain": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "physical_inverse": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ],
+      "physical_labels": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "runtime_interpreter": "base_ordinals_conjugated_through_base_map",
+      "storage": "actual_signed_axis_D6",
+      "successor": "cross(normal,direction)"
+    },
     "embedding": {
       "abstract_irreps": "3A1+2A2+3E+T_other+2T_axis",
       "ambient": "Block218 seven-qubit rank-128 center-plus-shell block",
@@ -53,15 +151,38 @@
     },
     "kraus_schema": {
       "coherent_row_sums_forbidden": true,
+      "compiler": "priority_winner_else_default_per_scheduler_support",
+      "completeness_domains": [
+        "genesis_U_b",
+        "directed_pair_I_tensor_I",
+        "guarded_star_I_tensor_5"
+      ],
       "default_identity_on_unmatched_signatures": true,
       "projective_A2_roles": [
         "R",
         "S"
       ],
-      "row_form": "sqrt(weight)*|output_signature><input_signature|",
-      "rows_are_separately_indexed": true
+      "role_representations": {
+        "BG": "A1",
+        "H": "D6",
+        "L": "A1",
+        "LOCK": "A1",
+        "P": "D6",
+        "R": "D6_tensor_A2",
+        "S": "A2",
+        "U": "A1",
+        "X_n": "transported_context_complement_projector"
+      },
+      "row_form": "tensor_product_partial_isometry_on_signature_sector",
+      "rows_are_separately_indexed": true,
+      "signature_partition": {
+        "X_n_rank": 94,
+        "named_rays_per_normal": 34,
+        "pair_branches_per_normal_port": 1225,
+        "star_branches_per_normal": 560
+      }
     },
-    "physical_scheduler_and_rate": "supplied",
+    "physical_scheduler_and_rate": "supplied_fair_nonstuttering_scheduler_and_supplied_rate",
     "ports": {
       "count": 4,
       "inverse_offset": 2,
@@ -85,6 +206,9 @@
         "LOCK",
         "BG"
       ],
+      "context_projector": [
+        "X_n"
+      ],
       "directed": [
         "R",
         "P",
@@ -105,8 +229,7 @@
         "L",
         "S",
         "LOCK",
-        "BG",
-        "X"
+        "BG"
       ]
     },
     "transitions": [
@@ -541,5 +664,5 @@
       }
     ]
   },
-  "sha256": "a3b67204fcbbadcea05cfb22fb7cc3983da1d986c8251dc780abc0d853ca1138"
+  "sha256": "159dd7dfb9787d146eb55440749577db6818c8f88be743191a633e758ac8e223"
 }

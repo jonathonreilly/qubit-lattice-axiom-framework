@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from fractions import Fraction as F
 from itertools import combinations, permutations, product
-from math import comb, factorial
+from math import comb, factorial, prod
 
 
 AUDIT_TIMEOUT_SEC = 120
@@ -750,6 +750,94 @@ def packet_quadratic_response_fixture() -> dict[str, object]:
     }
 
 
+def original_link_determinant_offblock_fixture() -> dict[str, object]:
+    """Seven-link Z2 control for the actual r=2 determinant off-block.
+
+    This uses the original ladder links, rather than a reduced two-increment
+    carrier.  Characters are represented by their binary edge-incidence
+    vectors and all inner products are normalized counting-Haar sums.
+    """
+
+    # Edge order is (u0,u1,v0,v1,h0,h1,h2).  The two plaquette cycles and
+    # their outer-boundary sum have exactly the actual 4,4,6 incidences.
+    plaquette_0 = (1, 0, 1, 0, 1, 1, 0)
+    plaquette_1 = (0, 1, 0, 1, 0, 1, 1)
+    outer = tuple((left + right) % 2
+                  for left, right in zip(plaquette_0, plaquette_1))
+    fine_states = tuple(product((1, -1), repeat=7))
+
+    def character(state: tuple[int, ...], incidence: tuple[int, ...]) -> int:
+        return prod(
+            (value for value, used in zip(state, incidence) if used), start=1
+        )
+
+    one = {state: F(1) for state in fine_states}
+    psi_0 = {state: F(character(state, plaquette_0)) for state in fine_states}
+    psi_1 = {state: F(character(state, plaquette_1)) for state in fine_states}
+    phi = {state: F(character(state, outer)) for state in fine_states}
+
+    def inner(left: dict[tuple[int, ...], F],
+              right: dict[tuple[int, ...], F]) -> F:
+        return sum((left[state] * right[state] for state in fine_states), F(0)) / 128
+
+    # A rational normalized single-link determinant multiplier.  C acts on
+    # a character by t to the number of occupied original links.
+    t_value = F(1, 2)
+    epsilon = F(1)
+    determinant_coefficient = F(8)
+    a_0, a_1 = F(1), F(1)
+    t_4, t_6 = t_value**4, t_value**6
+
+    leakage_one = {
+        state: epsilon * determinant_coefficient * (1 + t_4) / 2
+        * (a_0 * psi_0[state] + a_1 * psi_1[state])
+        for state in fine_states
+    }
+    leakage_phi = {
+        state: epsilon * determinant_coefficient * (t_4 + t_6) / 2
+        * (a_1 * psi_0[state] + a_0 * psi_1[state])
+        for state in fine_states
+    }
+    offblock = inner(leakage_one, leakage_phi)
+    predicted = (
+        epsilon**2 * determinant_coefficient**2 * a_0 * a_1 / 2
+        * (1 + t_4) * (t_4 + t_6)
+    )
+
+    # The raw pi_2 fibers have eight points.  W0 and W1 are exactly the two
+    # cycle characters and their product is the pulled-back coarse plaquette.
+    def coarse_map(state: tuple[int, ...]) -> tuple[int, int, int, int]:
+        u_0, u_1, v_0, v_1, h_0, _h_1, h_2 = state
+        return (u_1 * u_0, v_1 * v_0, h_0, h_2)
+
+    fibers: dict[tuple[int, ...], int] = {}
+    product_word_ok = True
+    for state in fine_states:
+        coarse = coarse_map(state)
+        fibers[coarse] = fibers.get(coarse, 0) + 1
+        product_word_ok &= psi_0[state] * psi_1[state] == phi[state]
+
+    orthonormal = all(
+        inner(left, right) == F(int(left_name == right_name))
+        for left_name, left in (("one", one), ("p0", psi_0),
+                                ("p1", psi_1), ("outer", phi))
+        for right_name, right in (("one", one), ("p0", psi_0),
+                                  ("p1", psi_1), ("outer", phi))
+    )
+
+    return {
+        "incidence_weights": (
+            sum(plaquette_0), sum(plaquette_1), sum(outer)
+        ),
+        "fiber_sizes": tuple(fibers.values()),
+        "product_word_ok": product_word_ok,
+        "orthonormal": orthonormal,
+        "offblock": offblock,
+        "predicted": predicted,
+        "positive": offblock > 0,
+    }
+
+
 def main() -> int:
     matrix = matrix_fixture()
     z2 = z2_conditional_fixture()
@@ -758,6 +846,7 @@ def main() -> int:
     mixed = s3_mixed_response_fixture()
     carre = u1_carre_du_champ_fixture()
     response_packet = packet_quadratic_response_fixture()
+    determinant = original_link_determinant_offblock_fixture()
 
     expected_defect: Matrix = ((F(1, 16), F(0)), (F(0), F(0)))
     expected_packet_defect: Matrix = ((F(1, 64), F(0)), (F(0), F(0)))
@@ -912,6 +1001,18 @@ def main() -> int:
             "spatial packet derivative is exact iff the tested cutoff is at least one",
             response_packet["exact_linear_cutoffs"]
             and response_packet["zero_cutoff_fails"],
+        ),
+        (
+            "seven-link determinant cycles have exact 4,4,6 incidence and Haar fibers",
+            determinant["incidence_weights"] == (4, 4, 6)
+            and set(determinant["fiber_sizes"]) == {8}
+            and determinant["product_word_ok"]
+            and determinant["orthonormal"],
+        ),
+        (
+            "exact finite-epsilon determinant response has a positive off-block",
+            determinant["offblock"] == determinant["predicted"] == F(85, 32)
+            and determinant["positive"],
         ),
     )
 

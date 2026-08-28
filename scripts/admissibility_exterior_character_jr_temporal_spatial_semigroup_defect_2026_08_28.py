@@ -17,6 +17,7 @@ from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_indep
     general_r_response_fixture as independent_general_response_fixture,
     matmul as independent_matmul,
     matrix_fixture as independent_matrix_fixture,
+    original_link_determinant_offblock_fixture as independent_determinant_fixture,
     packet_quadratic_response_fixture as independent_packet_response_fixture,
     s3_mixed_response_fixture as independent_mixed_response_fixture,
     u1_carre_du_champ_fixture as independent_carre_du_champ_fixture,
@@ -79,6 +80,9 @@ MUTATIONS = (
     "corrupt_response_packet_bound",
     "drop_spatial_linear_cutoff",
     "renormalize_response_packet",
+    "corrupt_original_link_census",
+    "erase_determinant_offblock",
+    "replace_actual_carrier_by_increment_model",
 )
 
 PASS = 0
@@ -436,6 +440,47 @@ def primary_packet_response_data() -> dict[str, object]:
     }
 
 
+def primary_determinant_offblock_data() -> dict[str, object]:
+    """SymPy control of the actual seven-link r=2 determinant sector."""
+
+    t_value = sp.Rational(1, 2)
+    epsilon = sp.Rational(1)
+    coefficient = sp.Rational(8)
+    a_0 = a_1 = sp.Rational(1)
+    # Physical Fourier order: vacuum, plaquette 0, plaquette 1, outer loop.
+    temporal = sp.diag(1, t_value**4, t_value**4, t_value**6)
+    isometry = sp.Matrix(((1, 0), (0, 0), (0, 0), (0, 1)))
+    complement = sp.eye(4) - isometry * isometry.T
+    potential = coefficient * sp.Matrix(
+        ((0, a_0, a_1, 0),
+         (a_0, 0, 0, a_1),
+         (a_1, 0, 0, a_0),
+         (0, a_1, a_0, 0))
+    )
+    residual = complement * potential * isometry
+    coarse_temporal = isometry.T * temporal * isometry
+    leakage = -epsilon * (
+        residual * coarse_temporal + temporal * residual
+    ) / 2
+    half_response = sp.simplify(leakage.T * leakage)
+    predicted = (
+        epsilon**2 * coefficient**2 * a_0 * a_1 / 2
+        * (1 + t_value**4) * (t_value**4 + t_value**6)
+    )
+    return {
+        "temporal": temporal,
+        "coarse_temporal": coarse_temporal,
+        "residual": residual,
+        "half_response": half_response,
+        "offblock": half_response[0, 1],
+        "predicted": predicted,
+        "reduced_increment_prediction": (
+            epsilon**2 * coefficient**2 * a_0 * a_1 / 2
+            * (1 + t_value**4) * (t_value**4 + t_value**8)
+        ),
+    }
+
+
 def independent_mode() -> int:
     global PASS, FAIL
     PASS = FAIL = 0
@@ -446,6 +491,7 @@ def independent_mode() -> int:
     mixed = independent_mixed_response_fixture()
     carre = independent_carre_du_champ_fixture()
     response_packet = independent_packet_response_fixture()
+    determinant = independent_determinant_fixture()
     expected = ((F(1, 16), F(0)), (F(0), F(0)))
     checks = (
         (
@@ -542,6 +588,17 @@ def independent_mode() -> int:
             "independent packet spatial derivative requires cutoff at least one",
             response_packet["exact_linear_cutoffs"]
             and response_packet["zero_cutoff_fails"],
+        ),
+        (
+            "independent seven-link determinant incidence and normalized Haar fibers",
+            determinant["incidence_weights"] == (4, 4, 6)
+            and set(determinant["fiber_sizes"]) == {8}
+            and determinant["orthonormal"],
+        ),
+        (
+            "independent exact determinant half-response off-block",
+            determinant["offblock"] == determinant["predicted"] == F(85, 32)
+            and determinant["positive"],
         ),
     )
     for label, condition in checks:
@@ -914,6 +971,48 @@ def main(mutation: str | None, mode: str) -> int:
         and "<=2epsilon^2||Gamma|| theta_K" in note
         and "<=2epsilon^2||Gamma||(3rq+1)delta_kappa" in note
         and "bound for the full `partial_lambda^2D|_0` is twice" in note,
+    )
+
+    determinant = primary_determinant_offblock_data()
+    original_link_census_ok = (
+        determinant["temporal"]
+        == sp.diag(1, sp.Rational(1, 2) ** 4,
+                   sp.Rational(1, 2) ** 4, sp.Rational(1, 2) ** 6)
+        and determinant["coarse_temporal"]
+        == sp.diag(1, sp.Rational(1, 2) ** 6)
+    )
+    if mutation == "corrupt_original_link_census":
+        original_link_census_ok = False
+    check(
+        "actual r=2 determinant cycles have four/four/six original-link multipliers",
+        original_link_census_ok
+        and "two four-link plaquette" in note
+        and "six-link outer boundary" in note,
+    )
+
+    determinant_offblock_ok = (
+        determinant["offblock"] == determinant["predicted"]
+        == sp.Rational(85, 32)
+        and determinant["offblock"] > 0
+    )
+    if mutation == "erase_determinant_offblock":
+        determinant_offblock_ok = False
+    check(
+        "complete finite-epsilon J_2 response has an exact positive determinant off-block",
+        determinant_offblock_ok
+        and "<1,R_epsilon phi_det>" in note
+        and "not a central convolution" in note,
+    )
+
+    actual_carrier_ok = (
+        determinant["predicted"] != determinant["reduced_increment_prediction"]
+    )
+    if mutation == "replace_actual_carrier_by_increment_model":
+        actual_carrier_ok = False
+    check(
+        "shared-rung cancellation distinguishes the actual carrier from a reduced increment model",
+        actual_carrier_ok
+        and "`t_det^8`, not the actual `t_det^6`" in note,
     )
 
     scalar_shift = 2 * sp.Rational(7, 5) * mixed["gamma"]

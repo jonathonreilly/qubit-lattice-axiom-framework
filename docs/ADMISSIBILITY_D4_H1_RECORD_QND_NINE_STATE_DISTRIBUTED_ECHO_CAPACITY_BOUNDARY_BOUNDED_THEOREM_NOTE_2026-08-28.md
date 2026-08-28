@@ -31,6 +31,9 @@ toe_percentage_movement: 0
 Primary executable gate:
 [admissibility_d4_h1_record_qnd_three_pass_echo_gate_2026_08_28.py](../scripts/admissibility_d4_h1_record_qnd_three_pass_echo_gate_2026_08_28.py).
 
+Independent executable reproduction:
+[admissibility_d4_h1_record_qnd_three_pass_echo_gate_independent_2026_08_28.py](../scripts/admissibility_d4_h1_record_qnd_three_pass_echo_gate_independent_2026_08_28.py).
+
 No-go-discipline packet:
 [ADMISSIBILITY_D4_H1_RECORD_QND_NINE_STATE_DISTRIBUTED_ECHO_CAPACITY_NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md](ADMISSIBILITY_D4_H1_RECORD_QND_NINE_STATE_DISTRIBUTED_ECHO_CAPACITY_NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md).
 
@@ -168,6 +171,11 @@ reciprocal interceptions:             5,040/5,040
 - all `32/32` declared mutations rejected with stdout below 6,000 characters;
 - runner SHA-256:
   `c47beddc0a0db33fb3f7b4317f0cd03c30afdde293f57fe1798e2e9e57cf87bb`;
+- independent science/full/self-test: `32/32`, `39/39`, and `42/42`;
+- the independent implementation reconstructs rather than imports or executes
+  the primary, and all `26/26` distinct behavioral mutations are rejected;
+- independent runner SHA-256:
+  `343d3a5c8920f14b2d2ecb740df9eed68fccd9133875aeb7824fcf2bbe233627`;
 - no full physical transition production, critical-pair confluence, complete
   CP/Kraus partition, physical fair-component, expected-time, uniform-rate,
   infinite-volume, time, law-selection, Record-writing, audit verdict, axiom

@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_record_qnd_three_pass_echo_gate_independent_2026_08_28.py
+runner_sha256: 343d3a5c8920f14b2d2ecb740df9eed68fccd9133875aeb7824fcf2bbe233627
+input_fingerprint_sha256: f2c895a8b2fe90de7152f5d01dfd56012b37600b54b75b2c8a266b00d40b577c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 18.04
+status: ok
+----- stdout -----
+PASS 24 proper rotations and the independent 52+2+74 decomposition are exact
+PASS physical/logical C4 characters and residual modes are exact
+PASS canonical averaged isometries reproduce both Gram floors and carrier digest
+PASS six normal frames carry orthogonal rank-74 named and rank-54 default sectors
+PASS all 576 normal/port transports retain reciprocal darts and paired phase
+PASS the default rank-54 sector keeps its independent identity route
+PASS actual carrier columns separate every tested H-L-A/T-L-A product source
+PASS width-2 forest/seam/contact anchors are independently exact
+PASS width-3 forest/seam/contact anchors are independently exact
+PASS the exhaustive width-three quotient has all 47 contact signatures
+PASS all 5,040 reciprocal crosswires are intercepted with the frozen first witness
+PASS nine states enumerate exactly 72 closed state/event rows
+PASS all frozen active and duplicate seam rows are reproduced semantically
+PASS the seam table is exchange covariant with the frozen projective partition
+PASS success needs two acknowledgements and confirmations; abort stays absorbing
+PASS relaunch, S-decay, and guarded-U foreign claims remain blocked
+PASS the raw hostile critical pair remains explicitly divergent SUCCESS/ABORT
+PASS BFS finds the exact shortest untagged good/abort alias of total length seven
+PASS 2,160 neighbor cylinders have the exact P/L/R/H/T inventory
+PASS central-only Y states alias while full neighbor-retained patterns separate
+PASS all 7,641 service schedules conserve darts and end ownerless/orphan-free
+PASS width-two ports 0/2 share an endpoint but retain distinct wake labels
+PASS 48 onsite Y cases exceed 35 transient rays while H keeps 16 ordered pairs
+PASS clean H-L-A/P-R--L and tagged T-L-A/H-T-L source cylinders are disjoint
+PASS 18,432 transformed sources remain separate under cubic, complement, exchange, and Y contexts
+PASS root/contact incidences use commutative union with no first owner
+PASS smallest discovery/good/abort live codewords match the frozen repair
+PASS LOCK/BG and the controller remain scratch-free and Record-QND
+PASS no hidden history, ID, epoch, coordinate, size, or owner field is introduced
+PASS physical production, physical critical pairs, full CP, fair dynamics, and Record writing stay open
+PASS classification stays at the positive seam/static-distributed boundary
+PASS local compression controls imply no broad no-go or governance movement
+PASS the frozen Block225 packet and primary source are all present
+PASS STATE and this runner independently bind the exact frozen primary SHA256
+PASS AST-only inspection agrees on the primary's declared states, events, and audit structure
+PASS the independent runner imports no primary, helper runner, or dynamic module
+PASS the packet has at least 27 defects and this independent lane has at least 15 distinct hooks
+PASS the N1-N8 packet rejects the broad gate and preserves distributed bypasses
+PASS Amendment 1 binds the shortest alias and clean/tagged complete-source repair
+FACT carrier ranks=52+2+74 named_default=74+54 sha256=09d24d6a23b5987a9a4e0a6b21052caa1d58ec16b4462019e01da9302dc79a76
+FACT static w2_forests=225 w2_seams=1240 w3_forests=614656 w3_seams=7112448 signatures=18/47 crosswires=5040/5040
+FACT seam states=9 rows=72 raw_pair=SUCCESS/ABORT alias_lengths=3+4
+FACT distributed Y=2160 schedules=7641 capacity=48>35 transformed=18432
+per_element: checked — the reconstructed LOCK/BG algebra is QND and uses no controller scratch.
+per_site: checked — 48 one-shot Y cases exceed 35 transient rays; exact neighbor retention bypasses that local wall.
+per_mode: checked — proper-cubic, complement, exchange, projective phase, and H-L-A/T-L-A separation close.
+per_block: checked and not executed — finite source separation is shown, while physical source production and physical critical pairs remain open.
+lattice_wide: checked and not executed — full CP confluence, fair dynamics, Record writing, finality, and TOE movement remain open.
+CLASSIFICATION positive-record-qnd-seam-controller-open-distributed-compiler
+RUNNER_SHA256 343d3a5c8920f14b2d2ecb740df9eed68fccd9133875aeb7824fcf2bbe233627
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

@@ -28,7 +28,7 @@ distributed_dart_erasure_allowed: false
 central_y_compression_allowed: false
 literal_physical_instrument_compiled: false
 primary_runner_reconstruction: complete
-independent_reproduction: pending
+independent_reproduction: complete
 seam_controller_rows: 72
 y_cylinders_executed: 2160
 y_service_orders_executed: 7641
@@ -43,6 +43,10 @@ full_cp_executed: false
 runner_sha256: c47beddc0a0db33fb3f7b4317f0cd03c30afdde293f57fe1798e2e9e57cf87bb
 science_gate: 33_pass_0_fail
 full_self_test: 41_pass_0_fail_32_of_32_mutations_rejected
+independent_runner_sha256: 343d3a5c8920f14b2d2ecb740df9eed68fccd9133875aeb7824fcf2bbe233627
+independent_science_gate: 32_pass_0_fail
+independent_full_gate: 39_pass_0_fail
+independent_self_test: 42_pass_0_fail_26_of_26_mutations_rejected
 decision_class: positive-record-qnd-seam-controller-open-distributed-compiler
 next_route: H_T_H_L_H_T_L_physical_transition_and_kraus_compiler
 axiom_update: none

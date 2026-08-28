@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_jr_peter_weyl_operator_truncation_2026_08_28.py
+runner_sha256: e080a8f0d637137f5c80ea273e20150da51e43271dc0abd58864dab75f00cb3d
+input_fingerprint_sha256: 2ed34afb12f8b18961d28fca709c214454d7fe363991afcd4cfe2d9a579ad675
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+[PASS] full O(3) member: Q=16-2 chi_Lambda and f_n=(16/n)(1-(chi_Lambda/8)^n)
+[PASS] improper component: chi_Lambda=0 and every finite member has f_n=16/n
+[PASS] finite packet: occupation k is the positive character of Lambda^(tensor nk) divided by 8^(nk)
+[PASS] local tail: the exact Poisson remainder is monotone in u_n and is bounded by s^(K+1)/(K+1)!
+[PASS] actual J_r census: 3rq+1 temporal crossings and 2rq plaquette half-actions
+[PASS] J_r compatibility: direct and staged Haar contractions use each shared retained frame once
+[PASS] algorithm boundary: Fubini reorders one fine packet but an intermediate fresh truncation is not associative
+[PASS] retained-cell accumulation: gamma=(1-delta_kappa)^(3rq+1)(1-delta_beta)^(2rq) and 1-gamma obeys the union bound
+[PASS] explicit cutoff: the factorial/Stirling rule controls a requested tolerance with logarithmic volume dependence
+[PASS] finite spin-network: bounded incidence gives finite frame, rung, and rail tensor-order bounds
+[PASS] physical kernel sandwich: gamma K_exact <= K_K <= K_exact after the complete shared-frame marginal
+[PASS] operator comparison: lattice-order domination gives ||T-T_K|| <= epsilon ||T||
+[PASS] top-norm comparison: separately normalizing the two complete positive transfers costs at most 2 epsilon
+[PASS] normalization scalar: the original normalized-w kernel differs by exactly Z_kappa^(3rq+1)
+[PASS] projector typing: the full Haar-space bound descends to the residual GxG physical subspace by contraction
+[PASS] independent reconstruction: raw fine-link and history-message sums agree with hidden and shared columns
+[PASS] prior-art fence: archived SU3 Poissonized occupation/intertwiner tails are credited but not imported as authority
+[PASS] volume accounting: the guaranteed tolerance rule carries explicit rq-dependent cutoff growth
+[PASS] trace reachability: the theorem controls the actual J_r shared-frame transfer rather than B^r alone
+[PASS] scope boundary: supplied action/measure/projector remain explicit and no action selection, physical time, continuum, Lorentz, or gravity follows
+[PASS] import integrity: note, exact parent, axiom fence, independent helper, and every mutation are packet-bound
+per_element: exterior-character occupations, positive coefficients, and Poisson tails were derived
+per_site: frame/rung/rail incidence and finite channel bounds were checked
+per_mode: finite tensor orders, improper parity, and re-truncation failure were checked
+per_block: exact shared-frame J_r contraction and rq accumulation were executed on finite controls
+lattice_wide: complete physical operator/top-norm error is proved with K depending on rq; no continuum scale is supplied
+STATUS: bounded physical-transfer Peter--Weyl truncation conditional on the supplied parent action and measure
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_record_qnd_three_pass_echo_gate_2026_08_28.py
+runner_sha256: c47beddc0a0db33fb3f7b4317f0cd03c30afdde293f57fe1798e2e9e57cf87bb
+input_fingerprint_sha256: f3ca76caf801308920408c38141dad2b74d3070b1e5d1c5e55332caa2c7b03e7
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 16.91
+status: ok
+----- stdout -----
+PASS proper cubic inventory and independent 52+2+74 carrier ranks are exact
+PASS physical/logical C4 characters and residual [1,0,2,0] are exact
+PASS canonical intertwiners reproduce frozen Gram floors and carrier digest
+PASS six transported 74+54 partitions are proper-cubic and complement covariant
+PASS all 24x6x4 directional darts transport reciprocally with paired projective phase
+PASS default sector retains a separate identity/Kraus route
+PASS width-2 Block223 forest, seam, contact, and disjoint anchors are independently exact
+PASS width-3 Block223 forest, seam, contact, and disjoint anchors are independently exact
+PASS all 47 width-three contact buckets are present
+PASS all 5,040 reciprocal crosswires are intercepted with the frozen first witness
+PASS nine persistent seam states exhaust all events with explicit frozen and duplicate rows
+PASS seam rows close under endpoint exchange and preserve ordinary/projective phase facts
+PASS success needs both exact acknowledgements and confirmations; abort is absorbing
+PASS AA relaunch, generic S decay, and foreign claims against guarded U are blocked
+PASS raw final-confirm/late-conflict macro pair is explicitly divergent, not called confluent
+PASS shortest untagged two-pass histories alias one seam source with success/abort obligations
+PASS finite clean P/R-L and tagged T-L complete source cylinders are disjoint
+PASS clean/tagged cylinders stay disjoint under exchange, 24x6 cubic-complement transport, and all Y contexts
+PASS width-two scalar latch aliases ports 0/2 while distributed wakes retain them
+PASS one-site Y latch needs 48 cases beyond 35 transient rays; H remains 16 ordered pairs
+PASS smallest H-T, H-L, and H-T-L live codewords match the frozen repair
+PASS 2,160 Y cylinders exhaust P/H/T/L/R parent-child-extra subsets and nine seam states
+PASS Y center compression has aliases but neighbor-retained signatures have none
+PASS every finite child-service order conserves darts and has one orphan-free normal form
+PASS contact/root incidences use visible union with no first-port or first-root winner
+PASS load-bearing acknowledgement dart and seam erasure barrier remain live through latch
+PASS finite clean/tagged product projectors are disjoint at the hostile source boundary
+PASS LOCK/BG stay scratch-free QND and the seam terminal is not a Record write
+PASS no hidden history/ID/epoch/coordinate/size/owner field enters the finite compiler
+PASS quiet/same/contact outcome labels are frozen targets, explicitly not executed dynamics
+PASS fair component remains visible/open rather than silently promoted
+PASS classification is the positive seam-controller/static-distributed-capacity boundary
+PASS compression witnesses remain local controls with no broad no-go or governance movement
+PASS Block225 committed source packet including Amendment 1 is complete
+PASS runner independently imports no Block223 or other admissibility helper
+PASS preregistration freezes carrier, nine states, static domains, and Record-QND boundary
+PASS Amendment 1 freezes the shortest untagged alias and clean/tagged live repair
+PASS committed mutation plan has at least 27 defects and runner has at least 27 distinct hooks
+PASS no-go ledger authorizes only conditional compression controls, not a broad negative
+FACT carrier ranks=52+2+74 residual=(1, 0, 2, 0) sha256=09d24d6a23b5987a9a4e0a6b21052caa1d58ec16b4462019e01da9302dc79a76
+FACT static width2_forests=225 width3=forests=614656 signatures=47 reciprocal=5040/5040
+FACT seam states=9 rows=72 raw_hostile_pair=SUCCESS/ABORT
+FACT distributed Y=2160 schedules=7641 onsite=48>35 distributed_aliases=0
+per_element: checked — LOCK/BG are identity-QND inputs with zero controller scratch or writes.
+per_site: checked — nine seam states and 35 transient rays reject the 48-case onsite Y latch.
+per_mode: checked — exchange, proper-cubic, complement, and projective phase source facts close.
+per_block: checked and not executed — clean/tagged source-projector exclusion is finite; physical production and critical-pair completeness remain open.
+lattice_wide: checked and not executed — full reachable dynamics, fair liveness, Record writing, and any TOE movement remain open.
+CLASSIFICATION positive-record-qnd-seam-controller-open-distributed-compiler
+RUNNER_SHA256 c47beddc0a0db33fb3f7b4317f0cd03c30afdde293f57fe1798e2e9e57cf87bb
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

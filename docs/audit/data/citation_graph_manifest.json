@@ -1,6 +1,6 @@
 {
- "edge_count": 16162,
- "node_count": 5647,
+ "edge_count": 16164,
+ "node_count": 5648,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -881,6 +881,10 @@
   "admissibility_exterior_character_gauge_vector_nonzero_spatial_volume_gap_collapse_bounded_theorem_note_2026-08-28": {
    "deps_hash": "6bf0db7cd4fc",
    "out_degree": 3
+  },
+  "admissibility_exterior_character_haar_coarse_compression_generated_crossing_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "7564add40d8c",
+   "out_degree": 2
   },
   "admissibility_exterior_character_metric_source_polarized_seam_bounded_theorem_note_2026-08-28": {
    "deps_hash": "6da1461c9129",

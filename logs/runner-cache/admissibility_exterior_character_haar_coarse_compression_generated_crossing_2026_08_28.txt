@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_haar_coarse_compression_generated_crossing_2026_08_28.py
+runner_sha256: 941d30e3527f8192282bc13f26da95f876892b477e0c23c4da076217a8d76536
+input_fingerprint_sha256: ba20b9a232eb146b0ececadb3faa734c54133600c0f042e9e9a9c34a942d42ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.28
+status: ok
+----- stdout -----
+[PASS] Haar coarsening: ordered path holonomies have the normalized product pushforward
+[PASS] ordered coarsening: the two-link word retains its orientation on all signed frames
+[PASS] common projector diagnostic: all 48 proper/improper signed-permutation internal frames cancel
+[PASS] full transfer fiber: both spatial half-actions enter H=m*a*m
+[PASS] double Haar integral: convolution squares the half-action Fourier scalar
+[PASS] generated crossing: the pointwise product aH obeys the exact character-fusion formula
+[PASS] Peter-Weyl normalization: representation dimensions survive the fusion contraction
+[PASS] probability normalization: Z=kappa_triv makes the generated trivial multiplier one
+[PASS] strict-support diagnostic: all three generated S3 Fourier multipliers are positive
+[PASS] disconnected-component control: the exact Z2 quotient multiplier is 20/37
+[PASS] quantitative comparison: the normalized log-density and convolution bounds use 16 N beta/n
+[PASS] induced sector: the first nonconstant correction is beta^2 kappa^2[4 chi_det+4(chi_V+chi_detV)/27]
+[PASS] proper/improper discriminator: the vector pair cancels only on the improper component
+[PASS] action-family boundary: the generated tangent is not a scalar shift of the inherited path crossing
+[PASS] refinement typing: canonical compression is not the bare intertwining equation
+[PASS] scope boundary: no iterable RG, physical time, continuum, or action-selection theorem is claimed
+[PASS] import integrity: all declared inputs and hostile mutations are packet-bound
+per_element: exact Z2/S3 exterior and spatial-half diagnostic coefficients were derived
+per_site: Z2 ordered coarsening and all 48 signed-permutation frame controls were executed
+per_mode: S3 fusion, determinant/vector arithmetic, and dimension factors were checked
+per_block: exact compression ingredients and the quantitative coarse-action constants were executed; the full O(3) identity is analytic
+lattice_wide: checked and not executed — no iterated graph flow, uniform locality, continuum, or physical clock is supplied
+STATUS: one-cell Haar compression generates an exact positive crossing distinct from the inherited path crossing and its local scalar-coupling tangent
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

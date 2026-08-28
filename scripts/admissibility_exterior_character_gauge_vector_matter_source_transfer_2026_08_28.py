@@ -119,6 +119,7 @@ def main(mutation: str | None, mode: str) -> int:
         return int(FAIL != 0)
 
     root = Path(__file__).resolve().parents[1]
+    source_note = (root / AUDIT_INPUT_PATHS[0]).read_text()
     seam_parent = (root / AUDIT_INPUT_PATHS[1]).read_text()
     action_parent = (root / AUDIT_INPUT_PATHS[2]).read_text()
     axioms = (root / AUDIT_INPUT_PATHS[3]).read_text()
@@ -126,7 +127,12 @@ def main(mutation: str | None, mode: str) -> int:
           "every `O(3)` irreducible coefficient is strictly positive" in action_parent
           and "b(X,Y)^m chi_(rho^(tensor nm))" in seam_parent
           and "G=E^T E" in seam_parent
-          and "source/action" in axioms)
+          and "source/action" in axioms
+          and "(Theta F)(z_-)=overline(F(theta z_-))" in source_note
+          and "K_cross(z_-,z_+)" in source_note
+          and "incident improper plaquette word" in source_note
+          and "per-block and" in source_note
+          and "checked but not executed" in source_note)
 
     identity = sp.eye(3)
     e1 = sp.Matrix((1, 0, 0))
@@ -406,6 +412,9 @@ def main(mutation: str | None, mode: str) -> int:
         feature_variable, 0, 7).removeO()
     matter_coefficients = tuple(sp.expand(matter_series).coeff(
         feature_variable, degree) for degree in range(7))
+    ball_radius = sp.symbols("ball_radius", nonnegative=True)
+    ball_measure_normalization = sp.integrate(
+        3 * ball_radius**2, (ball_radius, 0, 1))
     if mutation == "erase_matter_support_degree":
         matter_coefficients = matter_coefficients[:3] + (sp.Integer(0),) + matter_coefficients[4:]
     check("strict-support bridge: positive temporal hopping supplies every tensor degree and the parent supplies every group irrep",
@@ -413,6 +422,9 @@ def main(mutation: str | None, mode: str) -> int:
                   == temporal_strength**degree / sp.factorial(degree)
               and matter_coefficients[degree] > 0
               for degree in range(7))
+          and ball_measure_normalization == 1
+          and "sum_(k>=0) tau^k/k!" in source_note
+          and "density on the compact ball" in source_note.lower()
           and "every `O(3)` irreducible coefficient is strictly positive" in action_parent
           and "homogeneous metric/source" in seam_parent)
 

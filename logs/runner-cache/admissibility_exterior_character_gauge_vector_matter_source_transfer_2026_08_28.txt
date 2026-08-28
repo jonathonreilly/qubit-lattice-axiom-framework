@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_gauge_vector_matter_source_transfer_2026_08_28.py
-runner_sha256: d625d6d0337bb559c7ac5029bf7631f49a7674336a19ef567c83a5ded99f8588
-input_fingerprint_sha256: c6bf9cbe3dec689c8fe57b3368643ecc8105b7b421da130193192fa7c0f3819e
+runner_sha256: 9949bee0c589ac3dbfa4ba7c56f812f16719484a22eab8707d9e3bd19a6b6e36
+input_fingerprint_sha256: a71f4e34e97fa932f87a50fd284cb50d749b6edd96b1e741ae2b2c072f3edfaa
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.48

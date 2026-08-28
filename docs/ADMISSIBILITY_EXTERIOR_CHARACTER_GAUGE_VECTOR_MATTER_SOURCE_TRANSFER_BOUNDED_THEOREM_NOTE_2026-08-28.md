@@ -79,9 +79,13 @@ kernel has a tensor-product representation Gram before the common Haar
 projection.  Strict signs give injectivity in temporal gauge and, after
 projection, only on the gauge-invariant Hilbert space.  Negative gauge or
 matter signs give exact `[[1,2],[2,1]]` Grams.  An unmatched source profile
-gives a non-Hermitian kernel.  Matter can produce a nonzero continuous current
-on an improper link, but it does not select the determinant sector or remove a
-noncontractible improper flat holonomy.
+gives a non-Hermitian kernel.  In the explicit one-plaquette witness below,
+the incident plaquette word stays in the improper component and therefore has
+zero exterior-character tangent force while matter produces a nonzero
+continuous current on its shared link.  This does not select the determinant
+sector or remove a noncontractible improper flat holonomy.  A
+determinant-minus-one link alone does not imply that every incident plaquette
+word is improper.
 
 This is a supplied internal Euclidean vector model.  It is not a Standard
 Model field, a Record source, a physical stress tensor, an Einstein equation,
@@ -363,17 +367,23 @@ zero-gauge-force special case.
 
 ## Improper component and topology
 
-Let `F=diag(-1,1,1)`, `phi_s=e_1`, and `phi_t=e_2`.  Every continuous tangent
-variation within the improper component leaves the exterior character
-constant, so the plaquette term has zero tangent force.  The matter current is
+For a one-plaquette control, let its word and shared link both be
+`F=diag(-1,1,1)`, with all other ordered factors equal to the identity, and
+take `phi_s=e_1`, `phi_t=e_2`.  Every continuous tangent variation of this
+incident plaquette word stays within the improper component and leaves the
+exterior character constant, so its plaquette term has zero tangent force.
+The matter current on the shared link is
 
 ```text
 skw(F e_1 e_2^T)
  = (1/2) [[0,-1,0],[1,0,0],[0,0,0]] != 0.            (19)
 ```
 
-Matter can therefore exert a continuous current on an improper link.  It does
-not select that component.  Let
+Matter can therefore exert a continuous current on this link while the
+incident improper plaquette word supplies no exterior-character tangent
+force.  This is a one-plaquette comparison, not a claim that the determinant
+of one link fixes the components of all incident plaquettes.  It does not
+select the determinant component.  Let
 
 ```text
 P=diag(-1,-1,1) in SO(3),
@@ -417,6 +427,54 @@ integration is the orthogonal projector onto their simultaneous invariant
 subspace.  Thus the complete shared-link crossing kernel is a sum of squares;
 this is not an inference from pointwise-positive Boltzmann weights.
 
+Here is the full reflected form.  Write a positive-half history as
+`z_+=(X_+,U_+,phi_+)`, including the site metric/scalar pairs, every oriented
+spatial link, and every matter vector.  Geometric time reflection sends sites
+and ordered edge endpoints to their reflected sites and endpoints.  Define
+`theta z_-` by pullback to the positive half:
+
+```text
+(theta G)_x=G_(theta x),   (theta r)_x=r_(theta x),
+(theta phi)_x=phi_(theta x),
+(theta U)_(x->y)=U_(theta x->theta y),
+U_(y->x)=U_(x->y)^(-1).                              (23a)
+```
+
+The last convention automatically inverts any canonically reoriented
+temporal edge.  Thus `G` and the dynamic `r` reflect as site fields, `phi`
+reflects as an internal Euclidean vector, and link orientation is explicit.
+For a bounded positive-half observable `F`, the antilinear reflection is
+
+```text
+(Theta F)(z_-)=overline(F(theta z_-)).
+```
+
+In temporal gauge, the product of the parent feature expansion and (22) has
+one joint feature index `A` and the explicit form
+
+```text
+K_cross(z_-,z_+)
+ = sum_A c_A overline(Phi_A(theta z_-)) Phi_A(z_+),
+c_A >= 0.                                             (23b)
+```
+
+Let `W_+(z_+)>0` contain every plus-half multiplier, including
+`exp[-S_slice(z_+)/2]` and the one-sided factors extracted from the parent
+seam.  Reflection matching means `W_-(z_-)=W_+(theta z_-)`; the finite product
+measure has the same property.  Consequently
+
+```text
+Z^(-1) int (Theta F) F exp(-S_step) dmu_- dmu_+
+ = Z^(-1) sum_A c_A
+   |int_+ F(z_+) W_+(z_+) Phi_A(z_+) dmu_+|^2 >= 0.   (23c)
+```
+
+This is the antilinear reflected Gram for the full supplied
+metric/scalar/gauge/matter carrier.  Restoring the temporal links and
+integrating their normalized Haar measures applies the same simultaneous
+gauge projector `P` to the joint features; it does not create independent
+gauge and matter projectors.
+
 All spatial plaquettes, spatial hopping, onsite potentials, and scalar-source
 terms are real, gauge invariant, and reflection matched.  They enter through
 a bounded strictly positive multiplier `M` on the compact domain.  With `C`
@@ -427,7 +485,11 @@ T = M P C M = M C P M >=0,       [M,P]=[C,P]=0.      (23)
 ```
 
 The source is therefore inside the complete transfer multiplier rather than
-deleted from the OS test.
+deleted from the OS test.  In particular the dynamic coordinate `r` in
+(23a) reflects as a scalar.  The unmatched-source control (26) instead freezes
+a deliberately non-reflection-matched external profile
+`r_-(x) != r_+(theta x)` and therefore changes the reflection data; it is not
+a counterexample to the matched dynamic-source kernel.
 
 ## Strict support and transfer logarithm
 

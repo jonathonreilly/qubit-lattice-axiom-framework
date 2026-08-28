@@ -9,9 +9,9 @@
 | exact four-parity terminal family | target language | derived in Block 218 on (L=4); rederived for every tested (L) |
 | radius-two neighborhood | frozen search family | supplied for this tournament |
 | at most sixteen transient symbols | frozen search family | must carry explicit cubic/complement action and noncode embedding |
-| fair asynchronous scheduling | termination quantifier | mathematical fairness only; no host schedule may become a physical law |
+| fair asynchronous scheduling | termination quantifier | terminal weights are invariant under fair outcome-blind adaptive ordering; timing/history and physical event authority remain supplied |
 | finite Hilbert/CP/GF(2)/SAT algebra | mathematics | allowed |
-| branch labels | readable instrument data | must be local and normalized; no hidden global outcome |
+| branch labels | readable instrument data | equal, unequal and outside-lock are distinct; no hidden global outcome or lock/even merge |
 | site, hazard, rate and renewal | full formation law | open unless constructed by the same rule |
 | block orientation and phase | geometry/context | orientation may transform covariantly; no fixed coordinate phase is allowed |
 | trace/Born meaning | probability authority | not supplied by channel normalization alone |

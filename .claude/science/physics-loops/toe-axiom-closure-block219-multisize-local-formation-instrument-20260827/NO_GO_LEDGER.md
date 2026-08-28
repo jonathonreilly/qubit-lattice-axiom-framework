@@ -1,7 +1,10 @@
 # No-Go Ledger
 
-Any negative is confined to the preregistered radius-two, at-most-sixteen-
-transient-symbol tournament until every item below is discharged.
+Any negative is confined to the displayed memoryless local-even and finite-
+patience quiet commit guards. The complete landing-surface execution record is
+the [Block 219 N1--N8 checklist](../../../../docs/ADMISSIBILITY_D4_H1_MULTISIZE_LOCAL_FORMATION_INSTRUMENT_NO_GO_DISCIPLINE_CHECKLIST_2026-08-27.md).
+Its broad-finality gate status is `FAIL`, and the disposition is
+`partial-narrowing`.
 
 ## N1 -- alternative routes
 
@@ -13,10 +16,16 @@ and the independent Cartan/Regge gravity hedge.
 
 ## N2 -- wall independence
 
-Correlation factorization, transient embedding, safe commit, event genesis,
-site selection, branch-effect selection, hazard/rate, resource renewal,
-history consistency and gravity dynamics are independent walls.  A failure of
-one frozen message family cannot close the others.
+The raw open-condition list is collapsed exactly as in the landing checklist:
+`W_F` conflict-safe finality/permanent Record commit; `W_E` physical event,
+context, effect, and site authority; `W_Q` hazard/rate selection; `W_R`
+renewal/rearming; `W_H` projectively consistent readable histories; and `W_I`
+controlled infinite-volume stopping/local fixation.  Carrier capacity, parity
+rank, local normalization, and transient formation are positively closed on
+the theorem's stated domain and are not counted as walls.  The checklist's
+pair table establishes independence only among the six collapsed obligations;
+the sole attempted negative concerns a subset of `W_F`, so no broad no-go
+follows from their independence or from failure of one frozen message family.
 
 ## N3 -- hidden-wall scan
 

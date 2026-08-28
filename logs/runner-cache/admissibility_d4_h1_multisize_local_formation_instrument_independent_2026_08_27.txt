@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_multisize_local_formation_instrument_independent_2026_08_27.py
+runner_sha256: 6c13399b9ba93042a74f4ccdaa522d1bd0226326eb90d4ae3ae19b0c53135dc8
+input_fingerprint_sha256: 9de6cc600f605cc30b9026377eb145e00654d168f34afd484866c4d746c680f0
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.57
+status: ok
+----- stdout -----
+PASS frozen primary rule digest reproduced
+PASS frozen primary voter digest reproduced
+PASS held checker sees no commit or global metadata
+PASS all 52 Record supports avoid shell weight three
+PASS 40-dimensional weight-three transient space is noncode
+PASS transient supports complement-paired
+PASS local branch sum on (0, 0)
+PASS local branch sum on (0, 1)
+PASS local branch sum on (0, 2)
+PASS local branch sum on (1, 0)
+PASS local branch sum on (1, 1)
+PASS local branch sum on (1, 2)
+PASS local branch sum on (2, 0)
+PASS local branch sum on (2, 1)
+PASS local branch sum on (2, 2)
+PASS outside endpoints have a distinct lock label and never zero syndrome
+PASS all 27 typed overlap truth-table critical pairs join
+PASS held-out L=8 local graph
+PASS held-out rank 60 and four components
+PASS held-out kernel is exactly sixteen lawful words
+PASS held-out all-even probability is 2^-60
+PASS held-out sixteen outcomes complement-paired
+PASS independent L=4 centered ownership preserves duplicate checks
+PASS held-out voter Kraus columns are complete
+PASS held-out readable voter branches transform covariantly
+PASS held-out all-transient 65536-state component has only consensus absorbers
+PASS held-out uniform-block certificate proves fair-scheduler absorption
+PASS held-out all-transient density products preserve all sixteen terminal weights
+PASS mixed Record/transient fixed witness is excluded from terminal-support claim
+PASS held-out local-even commit has an eleven-sixteenths conflict branch
+PASS independent even-period size lift through L=12
+PASS independent reversed-order cylinders normalize
+PASS independent scope anchors
+DATA FROZEN_RULE_SHA256=df9895a4eed23a8aca1a9963ae0906f8399c1957d10fad0da4d82401cf205f1b
+DATA FROZEN_VOTER_SHA256=6fcec36d06470026018a368929be765de543c76457f55109d76b226998d9a6a8
+DATA HELD L=8 sites=64 edges=128 components=4 rank=60 success=1/1152921504606846976
+SUMMARY PASS 33 FAIL 0
+CLASSIFICATION: positive-size-lifted-factorization
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

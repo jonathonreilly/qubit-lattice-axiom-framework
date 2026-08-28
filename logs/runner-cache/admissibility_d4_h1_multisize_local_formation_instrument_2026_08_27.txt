@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_multisize_local_formation_instrument_2026_08_27.py
+runner_sha256: 4aa85e9d017b90687be58a7c254aaacdc9c79309030da1c70896afa270aa2b87
+input_fingerprint_sha256: 9de6cc600f605cc30b9026377eb145e00654d168f34afd484866c4d746c680f0
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.65
+status: ok
+----- stdout -----
+PASS 24 proper cubic rotations
+PASS Block-218 code rebuilt orthonormally
+PASS rank-76 noncode complement
+PASS transient bit orthonormal
+PASS transient bit lies in noncode complement
+PASS transient bit proper-cubic scalar
+PASS transient bit complement pair
+PASS Block-218 precursor recovered
+PASS all 52 Records and 74 nonactive complement directions are in the exact lock sector
+PASS frozen numerical local-rule digest
+PASS rule contains no size coordinate phase scheduler or global label
+PASS rule is radius two and pre-commit
+PASS local three-branch syndrome instrument CP
+PASS local equal-unequal-lock instrument normalized
+PASS outside sector has a distinct readable lock branch
+PASS local branch complement covariance
+PASS proper-cubic stencil covariance
+PASS all 27 typed overlap sectors have branchwise commuting critical pairs
+PASS local voter/coalescence channel normalized
+PASS voter channel endpoint and complement covariant
+PASS readable voter branch labels transform covariantly
+PASS every selected mismatch edge is locally resolved
+PASS voter update preserves expected one-count
+PASS voter channel preserves Record/nonactive lock sector
+PASS all-transient finite-volume voter process has only consensus recurrent classes
+PASS outcome-blind edge-fair schedules absorb on the all-transient sector
+PASS all-transient component-density products preserve all sixteen terminal hitting weights
+PASS premature local-commit counterexamples on training volumes
+PASS held-out L=8 excluded from synthesis runner
+PASS same local rule gives four parity sectors on L=4 and L=6
+PASS L=4 exhaustive terminal support exact
+PASS all L=4 syndrome transcripts and both generator orders normalize
+PASS L=4 centered duplicate events have deterministic repeated outcomes
+PASS global success and permanent finality remain unclaimed
+PASS source anchors
+PASS three exact dependency links
+PASS landing-surface N1-N8 packet demotes the broad no-go
+PASS required boundary prose
+DATA frozen_numerical_rule_sha256=df9895a4eed23a8aca1a9963ae0906f8399c1957d10fad0da4d82401cf205f1b
+DATA frozen_voter_rule_sha256=6fcec36d06470026018a368929be765de543c76457f55109d76b226998d9a6a8
+DATA L=4: centered_events=32 unique_edges=16 components=4 rank=12 success=1/4096 | L=6: centered_events=72 unique_edges=72 components=4 rank=32 success=1/4294967296
+per_element: checked all 52 Record directions, both transient vectors, 74 other nonactive directions, and every displayed local Kraus entry.
+per_site: checked every centered event and unique radius-two edge on training periods L=4 and L=6; arbitrary mixed Record starts were not executed.
+per_mode: checked three readable syndrome branches, seven voter branches, four parity components, complement, endpoint exchange, and 24 rotations.
+per_block: checked complete L=4 syndrome support and training-component voter state graphs for L=4 and L=6; held L=8 is delegated independently.
+lattice_wide: checked the analytic finite-even-L graph/rank law and a uniform-block fair-scheduler proof; infinite-lattice stopping was not executed.
+SUMMARY PASS 38 FAIL 0
+CLASSIFICATION: positive-size-lifted-factorization
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

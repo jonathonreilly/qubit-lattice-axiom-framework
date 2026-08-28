@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_h1_phase_contact_product_2026_08_28.py
 runner_sha256: d0a9d9071b38948b835959a90aaa8b8870443e4cbd0c5e909ed8f87edbc767c6
-input_fingerprint_sha256: f0182c1164bc40c1964c5cbfaf37c15d85bbfbd169efae360090905be71ea439
+input_fingerprint_sha256: ee466d57b2d49506eb1269302682e06eb1bec0c7989151615eba84ed847e9538
 timeout_sec: 240
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 PASS literal committed Block-228 packet binds the product compiler
@@ -30,7 +30,7 @@ RANK_FIRST none
 DECISION_CLASS scoped-product-cell-nonjoinable
 SCOPE reduced_word_product_only labelled_darts_carrier_CP_fairness_Record_and_law_selection_unexecuted
 TABLE_SHA256 43d54670f255530f774604a5080e77edbd2f4945bb092224f8b163e65d6d3fde
-AUDIT_INPUT_SHA256 27646d400bf308b932d36a4b7a21b3256fecac82f6161ce8004e65fb04f0033e
+AUDIT_INPUT_SHA256 1eeb13affc6f69b1db3b2d111a87f595c2ebe063c071d44e70bd0e59745a335a
 per_element: checked — every reduced onsite symbol and exact displayed contact mask is explicit in the frozen table.
 per_site: checked — the canonical suite covers all 230 words through length ten and stops at the first exact residue.
 per_mode: checked and not executed — labelled carrier modes, projectors, Kraus labels, and physical transports remain gated.

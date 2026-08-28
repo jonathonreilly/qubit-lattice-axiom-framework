@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/independent_admissibility_d4_h1_phase_contact_product_2026_08_28.py
 runner_sha256: 6ebd81c89fff84b4abb960b81d9ab30c7afc99ab90d61cdada1fad2259fd118d
-input_fingerprint_sha256: ab5fe7a8849b26680db17f87a0064b4f2176ecec0088919436a2453d332357a2
+input_fingerprint_sha256: 59428f74166db6f3797f8267bdc499b49340e963a69183719937d3356e4770c8
 timeout_sec: 60
 exit_code: 0
 elapsed_sec: 1.96

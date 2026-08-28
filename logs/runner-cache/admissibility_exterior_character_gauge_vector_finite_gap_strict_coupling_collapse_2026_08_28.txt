@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_gauge_vector_finite_gap_strict_coupling_collapse_2026_08_28.py
-runner_sha256: c11e793f74311d8dd6d7cc567a33447b3807ced91f95cf5a679f6a698c7a50a0
-input_fingerprint_sha256: bfed5c3b7e7864bbbb6f3559064693429796977d019f18591f87d65eb17cf623
+runner_sha256: 4fefe654b0ea0980277b7747ec85e67d18a42370df912451c0381a2c51b3733a
+input_fingerprint_sha256: a4cf9cad008c8bf33dc84e3490f2e04247c602b202ccf2ef352222d2285f0dc8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 [PASS] import boundary: the parent supplies the strict finite gauge-vector transfer but not a uniform spectral or physical mass gap
@@ -25,7 +25,7 @@ status: ok
 per_element: exact kernel extrema, shell probabilities, Gaussian scale, and projected diagnostic entries were recomputed
 per_site: two full-ball radial shells and one projected finite gauge-matter site were checked
 per_mode: Perron, two radial, determinant, even, odd, zero-coupling, and large-coupling modes were separated
-per_block: one fixed finite gauge-invariant transfer and its projected tensor-factor strict-coupling family were executed; no volume-uniform claim
+per_block: exact full-ball and signed-frame ingredients were executed; the note carries the analytic parent-times-B3 projected theorem; no volume-uniform claim
 lattice_wide: checked and not executed — no refinement, thermodynamic, Lorentzian, physical-mass, or Hamiltonian-gap family is supplied
 STATUS: fixed finite mathematical gap with an explicit full-ball strict-coupling collapse family; no uniform or physical gap
 TOTAL: PASS=15 FAIL=0

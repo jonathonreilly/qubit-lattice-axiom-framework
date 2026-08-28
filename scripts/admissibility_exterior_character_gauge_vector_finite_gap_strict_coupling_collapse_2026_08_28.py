@@ -86,15 +86,29 @@ def main(mutation: str | None, mode: str) -> int:
         return int(FAIL != 0)
 
     root = Path(__file__).resolve().parents[1]
+    source = (root / AUDIT_INPUT_PATHS[0]).read_text()
     parent = (root / AUDIT_INPUT_PATHS[1]).read_text()
     axioms = (root / AUDIT_INPUT_PATHS[2]).read_text()
+    if mutation == "break_import_boundary":
+        source = source.replace(
+            "delta_fin := 1-lambda_1/lambda_0",
+            "delta_fin := 1-lambda_1",
+            1,
+        )
+    source_bound = (
+        "delta_fin := 1-lambda_1/lambda_0" in source
+        and "mu_1^rad(tau)/mu_0(tau) >= L_m" in source
+        and "delta_GI(m)" in source
+        and "The logarithmic mathematical gap also closes" in source
+        and "physical excitation sector" in source
+        and "No continuum conclusion follows" in source
+    )
     import_boundary_ok = (
-        "finite mathematical transfer" in parent
+        source_bound
+        and "finite mathematical transfer" in parent
         and "uniformly controlled matter spectral gap" in parent
         and "source/action" in axioms
     )
-    if mutation == "break_import_boundary":
-        import_boundary_ok = "uniformly controlled matter spectral gap" not in parent
     check(
         "import boundary: the parent supplies the strict finite gauge-vector transfer but not a uniform spectral or physical mass gap",
         import_boundary_ok,
@@ -115,8 +129,10 @@ def main(mutation: str | None, mode: str) -> int:
 
     first_inner, first_outer = sp.Rational(1, 4), sp.Rational(1, 3)
     second_inner, second_outer = sp.Rational(1, 2), sp.Rational(2, 3)
-    first_mass = shell_probability(first_inner, first_outer)
-    second_mass = shell_probability(second_inner, second_outer)
+    first_mass_exact = shell_probability(first_inner, first_outer)
+    second_mass_exact = shell_probability(second_inner, second_outer)
+    first_mass = first_mass_exact
+    second_mass = second_mass_exact
     if mutation == "break_shell_mass":
         second_mass += 1
     check(
@@ -128,7 +144,8 @@ def main(mutation: str | None, mode: str) -> int:
     tau = sp.symbols("tau", positive=True)
     normalization = sp.Rational(3, 4) / sp.pi
     line_gaussian = sp.sqrt(2 * sp.pi / tau)
-    gaussian_scale = sp.simplify(normalization * line_gaussian**3)
+    gaussian_scale_exact = sp.simplify(normalization * line_gaussian**3)
+    gaussian_scale = gaussian_scale_exact
     if mutation == "break_gaussian_scale":
         gaussian_scale *= 2
     check(
@@ -185,6 +202,13 @@ def main(mutation: str | None, mode: str) -> int:
 
     diagonal_lower = sp.cancel(
         first_closed * (1 - gaussian_second_moment / m**2))
+    gaussian_scale_at_m = sp.simplify(gaussian_scale_exact.subs(tau, m**4))
+    cross_scale = sp.simplify(
+        sp.sqrt(first_mass_exact * second_mass_exact) / gaussian_scale_at_m
+    )
+    expected_cross_scale = (
+        sp.Integer(37) * m**6 / (sp.Integer(1296) * sp.sqrt(sp.pi))
+    )
     cross_prefactor = sp.cancel(
         sp.Integer(37) * sp.factorial(4) * sp.Integer(72) ** 4
         / sp.Integer(1296)
@@ -197,7 +221,8 @@ def main(mutation: str | None, mode: str) -> int:
     selected_ratios = tuple(sp.cancel(ratio_lower.subs(m, value))
                             for value in selected_m)
     cross_ok = (
-        cross_prefactor == 18_413_568
+        sp.simplify(cross_scale - expected_cross_scale) == 0
+        and cross_prefactor == 18_413_568
         and all(value > 0 for value in selected_ratios)
         and all(left < right for left, right
                 in zip(selected_ratios, selected_ratios[1:]))
@@ -362,7 +387,7 @@ def main(mutation: str | None, mode: str) -> int:
     print("per_element: exact kernel extrema, shell probabilities, Gaussian scale, and projected diagnostic entries were recomputed")
     print("per_site: two full-ball radial shells and one projected finite gauge-matter site were checked")
     print("per_mode: Perron, two radial, determinant, even, odd, zero-coupling, and large-coupling modes were separated")
-    print("per_block: one fixed finite gauge-invariant transfer and its projected tensor-factor strict-coupling family were executed; no volume-uniform claim")
+    print("per_block: exact full-ball and signed-frame ingredients were executed; the note carries the analytic parent-times-B3 projected theorem; no volume-uniform claim")
     print("lattice_wide: checked and not executed — no refinement, thermodynamic, Lorentzian, physical-mass, or Hamiltonian-gap family is supplied")
     print("STATUS: fixed finite mathematical gap with an explicit full-ball strict-coupling collapse family; no uniform or physical gap")
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

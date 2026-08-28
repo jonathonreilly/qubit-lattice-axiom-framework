@@ -104,6 +104,7 @@ def independent_facts() -> dict[str, bool]:
         (normalized_gaussian_even_moment(2) for _ in range(3)), F(0)
     )
     cross_prefactor = cross_upper(1)
+    cross_scale_squared_without_pi = F(2, 9) * shell_one * shell_two
 
     vector = (F(1, 4), F(1, 5), F(1, 6))
     vector_norm = sum((coordinate**2 for coordinate in vector), F(0))
@@ -198,6 +199,9 @@ def independent_facts() -> dict[str, bool]:
         "the rational cross-shell majorant decays by ten powers": (
             cross_upper(96) == cross_upper(48) / 2**10
             and cross_prefactor == F(18_413_568)
+        ),
+        "the normalized cross-shell Gaussian prefactor is independently derived": (
+            cross_scale_squared_without_pi == F(37, 1296) ** 2
         ),
         "the Gaussian tail loss derives from three coordinate moments": (
             gaussian_second_moment == 3

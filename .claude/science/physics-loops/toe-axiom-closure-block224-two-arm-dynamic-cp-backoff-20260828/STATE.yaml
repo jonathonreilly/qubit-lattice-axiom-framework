@@ -3,6 +3,7 @@ campaign_number: 224
 status: preregistration_amended_before_runner
 phase: hostile_scheduler_stage0_before_dynamic_compiler
 parent_commit: 49daa56f7e
+parent_independent_commit: 607eaba9aa
 parent_branch: physics-loop/toe-axiom-closure-block223-two-arm-higher-block-ancestry-20260828
 branch: physics-loop/toe-axiom-closure-block224-two-arm-dynamic-cp-backoff-20260828
 worktree: /private/tmp/toe-axiom-block224.KgwGVc/worktree

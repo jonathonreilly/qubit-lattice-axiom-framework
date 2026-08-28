@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_two_arm_higher_block_ancestry_gate_independent_2026_08_28.py
+runner_sha256: da8c832ab0103a2ec834dca248cc38865cd31827c3fbaa90f37acac9d176fd12
+input_fingerprint_sha256: 5bb191904e43d792f7dbabdf52a8aa2b2da6bee6eea6600ded76313cd56fc683
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 17.61
+status: ok
+----- stdout -----
+PASS proper cubic inventory and independent 52+2+74 carrier ranks are exact
+PASS both physical characters are [37,-3,5,-3] and logical residual is [1,0,2,0]
+PASS two canonical full-rank intertwiners reproduce the frozen Gram floors and carrier digest
+PASS six unique frames give covariant 74-ray named and rank-54 default blocks
+PASS all 576 seam transports preserve reciprocal darts, ordinary pair phase, and zero new onsite rays
+PASS width-2 parent-forest and labelled collision-seam census is exact
+PASS width-3 parent-forest and labelled collision-seam census is exact
+PASS same-tree seams roll back while every quiet foreign-tree seam completes nonvacuously
+PASS parent child collision launch and return darts preserve every labelled edge including width-two parallels
+PASS all 2,844 width-two unordered seam pairs give 2,772 contacts, 72 disjoint, and 18 signatures
+PASS all 37,975,392 width-three unordered seam pairs give 34,801,947 contacts and 47 signatures
+PASS combined census is 7,113,688 seams and 37,978,236 static pairs with 34,804,719 contacts
+PASS all eight normalized unexpected-contact families have one visible CONFLICT action
+PASS both marked arms turn all 5,040 reciprocal scalar-anchor witnesses into root contacts
+PASS first intercepted witness is exactly 0-2-5-3-4 versus 1-7-6 with frozen ports
+PASS abort-both immediate retry has the exact fair LAUNCHED-CONTACT-ROLLED_BACK cycle
+PASS supplied p=1/2 geometric comparator gives exact positive finite unique-minimum probabilities
+PASS scope is explicitly static overlap, not hostile-schedule rollback, Record finality, or a CP theorem
+PASS fifteen independent hostile mutations have unique behaviors and no primary-suite name overlap
+PASS independent Block223 source packet is complete
+PASS independent runner imports no Block223 primary or Block222/220 helper
+PASS preregistration freezes the 74+54 seam object and exhaustive static domains before dynamics
+PASS N1-N4 normalize six routes and isolate only W_R without hidden or mismatched walls
+PASS N5-N8 retain five resolutions, six closure paths, a concrete steelman, and bypass echoes
+PASS landed note explicitly limits the result to static overlap and the lockstep retry cycle
+PASS source ledger keeps hostile schedules, CP compilation, law selection, and governance movement open
+DATA {"carrier":{"characters":[[37,-3,5,-3],[34,-2,2,-2]],"gram_floors":[38.507483548,22.203469813],"named_default":[74,54],"residual":[1,0,2,0],"sha256":"09d24d6a23b5987a9a4e0a6b21052caa1d58ec16b4462019e01da9302dc79a76"},"classification":"positive-static-two-arm-overlap-plus-scoped-lockstep-retry-cycle","contacts":{"families":8,"one_conflict_action":true,"quotient_consistent":true,"visible_classes":8},"reciprocal":{"contact_sizes":[2],"first_witness":{"left_actor_path":[0,2,5,3,4],"left_anchor":4,"left_ports":[3,0,1,1],"left_target":1,"right_actor_path":[1,7,6],"right_anchor":6,"right_ports":[2,3],"right_target":0},"intercepted_pairs":5040,"original_pairs":5040},"retry":{"deterministic_size_independent_liveness":false,"fair_lockstep_cycle":true,"finite_escape_positive":true,"probability_law_selected":false,"retry_cycle":["LAUNCHED","CONTACT","ROLLED_BACK","LAUNCHED"],"supplied_geometric_p":"1/2","uniform_or_infinite_volume_rate":false,"unique_minimum_probabilities":{"2":"2/3","3":"3/7","4":"4/15","5":"5/31","6":"2/21","7":"7/127","8":"8/255"}},"runner_sha256":"da8c832ab0103a2ec834dca248cc38865cd31827c3fbaa90f37acac9d176fd12","scope":{"axiom_amendment":"none","cp_instrument_constructed":false,"hostile_schedules_exhausted":false,"obligation_retirement":0,"record_finality_theorem":false,"rollback_transition_table_complete":false,"static_overlap_certificate":true,"toe_percentage_movement":0},"seam":{"context_patterns":24,"new_onsite_rays":0,"pair_phase_values":[1],"reciprocal_darts_exact":true,"residual_phase_capacity":[1,0,2,0],"transported_instances":576},"verdict":"CLEAN","width2":{"contacting_pairs":2772,"disjoint_pairs":72,"foreign_disjoint_pairs":40,"foreign_tree":424,"same_tree":816,"seams":1240,"signature_count":18,"unordered_pairs":2844,"valid_forests":225},"width3":{"contacting_pairs":34801947,"disjoint_pairs":3173445,"foreign_disjoint_pairs":2940813,"foreign_tree":4292820,"same_tree":2819628,"seams":7112448,"signature_count":47,"unordered_pairs":37975392,"valid_forests":614656}}
+per_element: checked the exact 74+54 carrier, two seam endpoints, attached fronts, reciprocal darts, and ordinary pair phase.
+per_site: checked every static parent, child, launch, return, collision, root-guard, acknowledgement, and conflict mark.
+per_mode: checked both parities, six normals, 24 rotations, eight contact families, and fifteen behaviorally distinct mutations.
+per_block: checked every declared width-two/three forest seam and all 37,978,236 unordered static two-query pairs.
+lattice_wide: checked and not executed — hostile schedules, orphan-free dynamic rollback, uniform liveness, and literal CP compilation remain open.
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

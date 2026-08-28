@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_h1_two_arm_higher_block_ancestry_gate_2026_08_28.py
 runner_sha256: 41660d2bb312597edfc9a6f871fcb3eb9a0bc564b4b24ac3d59e6f7e69b5a9ee
-input_fingerprint_sha256: 51b8fb8e0c42e6f00ee6b9ee826995d0f9b1ac8c043cd44ff3623048bf9dc8c8
+input_fingerprint_sha256: 2a537c0eb0efdee7c447631a00b2286159a3ade0696594d6cb07e567e4c781b6
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 14.21
+elapsed_sec: 14.61
 status: ok
 ----- stdout -----
 PASS Block222 physical carrier is independently reconstructed

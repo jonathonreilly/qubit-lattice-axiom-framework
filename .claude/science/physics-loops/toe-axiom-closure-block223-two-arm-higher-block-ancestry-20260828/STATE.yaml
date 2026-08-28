@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block223-two-arm-higher-block-ancestry-20260828
 campaign_number: 223
-status: primary_static_certificate_complete
-phase: result_freeze_and_dynamic_transition
+status: independently_reproduced_static_certificate_complete
+phase: independent_result_freeze_and_dynamic_transition
 parent_commit: 4f2a306538
 parent_branch: physics-loop/toe-axiom-closure-block222-parent-dart-forest-ancestry-20260828
 branch: physics-loop/toe-axiom-closure-block223-two-arm-higher-block-ancestry-20260828
@@ -40,7 +40,12 @@ deterministic_fair_retry_cycle: true
 finite_supplied_geometric_escape_positive: true
 dynamic_hostile_schedule_executed: false
 literal_physical_instrument_compiled: false
-independent_reconstruction: pending
+independent_reconstruction: passed
+independent_science_checks: 19
+independent_full_checks: 26
+independent_mutation_meta_checks: 27
+independent_mutations_rejected: 15
+independent_runner_sha256: da8c832ab0103a2ec834dca248cc38865cd31827c3fbaa90f37acac9d176fd12
 decision_class: positive-two-arm-static-overlap-certificate
 no_go_discipline_status: broad_gate_fail_scoped_lockstep_retry_only
 axiom_update: none

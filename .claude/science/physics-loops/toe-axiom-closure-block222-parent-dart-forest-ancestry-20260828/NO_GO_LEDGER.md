@@ -18,3 +18,12 @@ Live escape families that must remain explicit:
 
 Forbidden broad phrases include “one-site ancestry is impossible”,
 “permanent Records are impossible”, and “the axioms must change”.
+
+## Result
+
+The exact carrier and all frozen single-probe gates pass.  The first
+concurrent gate finds 5,040 disjoint reciprocal foreign-probe pairs whose two
+indistinguishable scalar anchors can be cross-wired.  This stops only the
+frozen one-probe scalar-anchor protocol.  The N1--N8 broad gate fails and the
+disposition is partial narrowing.  In particular, the explicit two-arm
+higher-block forest is now active rather than evidence for an axiom issue.

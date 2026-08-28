@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block222-parent-dart-forest-ancestry-20260828
 campaign_number: 222
-status: preregistered_not_executed
-phase: carrier_and_root_probe_gate
+status: primary_complete_independent_pending
+phase: scoped_result_freeze
 parent_commit: 459c374865
 parent_branch: physics-loop/toe-axiom-closure-block221-time-multiplexed-ancestry-finality-20260828
 branch: physics-loop/toe-axiom-closure-block222-parent-dart-forest-ancestry-20260828
@@ -11,8 +11,9 @@ campaign_target_end: 2026-08-28T20:53:52-04:00
 portfolio_recheck_interval: 3h_or_each_decisive_result
 review_loop_allowed: false
 lock_owner: physics-loop-block222-codex
-active_route: port_aware_parent_dart_forest_one_probe
-fallback_route: explicit_two_arm_higher_block_forest
+active_route: explicit_two_arm_higher_block_forest
+stopped_route: port_aware_parent_dart_forest_one_probe
+fallback_route: larger_overlap_visible_block
 parent_named_rays: 46
 candidate_named_rays: 74
 candidate_default_rank: 54
@@ -27,7 +28,22 @@ coordinate_or_size_allowed: false
 fixed_dimer_phase_allowed: false
 independent_edge_factor_allowed: false
 random_safety_allowed: false
-decision_class: pending
+carrier_physical_character: [37, -3, 5, -3]
+carrier_logical_character: [34, -2, 2, -2]
+carrier_residual_multiplicities: [1, 0, 2, 0]
+carrier_gram_floors: [38.507483548, 22.203469813]
+carrier_digest: 09d24d6a23b5987a9a4e0a6b21052caa1d58ec16b4462019e01da9302dc79a76
+block221_false_routes_intercepted: 96
+width2_static_probes: 256
+width3_static_probes: 13428
+static_probe_classification_failures: 0
+static_probe_restoration_failures: 0
+simultaneous_crosswire_aliases: 5040
+decision_class: scoped-simultaneous-anchor-failure
+no_go_discipline_status: broad_gate_fail_scoped_partial_narrowing_only
+latest_pr_checked: 7767
+latest_pr_effect: bounded_spectral_discriminator_no_toe_retirement
+independent_reconstruction: pending
 axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0

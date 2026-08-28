@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_parent_dart_forest_ancestry_gate_2026_08_28.py
+runner_sha256: 7349de32a0e5aa95e6f8c10e90b02adbf3f6e3ed4a59356bfbf608e1582cae50
+input_fingerprint_sha256: f937b9285546ebc05fbf9b9fd3469e8270d9faba041d68910352e09e31bdd0ef
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.68
+status: ok
+----- stdout -----
+PASS canonical Block220 sidecar remains byte bound
+PASS Record code U pair and controller complement reconstruct as 52 plus 2 plus 74
+PASS fixed-normal physical character is exact
+PASS parent-dart logical character leaves a positive three-dimensional residual
+PASS H action carries parent and rotor darts independently
+PASS both complement-parity intertwiners have rank 34
+PASS six ordered normal frames are uniquely transported
+PASS all 24 rotations and complement transport the context carrier
+PASS 74 named rays plus the rank-54 default projector partition 128
+PASS independent L4 census partitions 576 same-bit and 768 opposite-bit starts
+PASS the exact 96 versus zero Block221 Record defect is reproduced
+PASS reachable-set and shortest-trace maxima remain 51 and 5
+PASS every known false route meets a foreign root before commit
+PASS width-2 parent-dart probes classify and restore every labelled path
+PASS width-3 parent-dart probes classify and restore every labelled path
+PASS pointer reversal preserves width-two parallel darts rather than endpoints
+PASS Record commit is disabled beside every active A T or zipper-front guard
+PASS simultaneous foreign probes expose the preregistered cross-anchor alias
+PASS the first simultaneous-anchor alias stops the one-probe route
+PASS scope remains a one-probe narrowing with the two-arm higher block live
+PASS preregistered source packet is complete and bounded
+DATA {"block221_census":{"direct":96,"false_routes_intercepted":96,"max_reached":51,"max_trace":5,"opposite":[0,768],"same":[96,576],"zipper":0},"carrier":{"digest":"09d24d6a23b5987a9a4e0a6b21052caa1d58ec16b4462019e01da9302dc79a76","gram_floors":[38.507483548,22.203469813],"logical_character":[34,-2,2,-2],"logical_multiplicities":[8,8,10,8],"named_plus_default":[74,54],"physical_character":[37,-3,5,-3],"physical_multiplicities":[9,8,12,8],"residual_multiplicities":[1,0,2,0]},"classification":"scoped-simultaneous-anchor-failure","first_crosswire":{"left_actor_path":[0,2,5,3,4],"left_anchor":4,"left_ports":[3,0,1,1],"left_target":1,"mechanism":"each foreign actor root is rebound toward the other probe's indistinguishable A anchor","right_actor_path":[1,7,6],"right_anchor":6,"right_ports":[2,3],"right_target":0},"next":"explicit-two-arm-higher-block-forest","probe_widths":{"2":{"classification_failures":0,"dart_failures":0,"foreign":96,"own":160,"probes":256,"restoration_failures":0},"3":{"classification_failures":0,"dart_failures":0,"foreign":9036,"own":4392,"probes":13428,"restoration_failures":0}},"sidecar_sha256":"159dd7dfb9787d146eb55440749577db6818c8f88be743191a633e758ac8e223","simultaneous_crosswire_aliases":5040,"toe":"zero obligation retirement; zero percentage movement"}
+per_element: reconstructed the 74-ray carrier, rank-54 default block and exact projective phases.
+per_site: checked parent, scan, return-child and collision darts without endpoint substitution.
+per_mode: checked both complement parities, six normals, 24 rotations and hostile mutations.
+per_block: reproduced all L4 false routes and exhausted width-two/three static root probes.
+lattice_wide: checked and stopped at an L6 simultaneous-anchor cross-wire; two-arm ancestry remains live.
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

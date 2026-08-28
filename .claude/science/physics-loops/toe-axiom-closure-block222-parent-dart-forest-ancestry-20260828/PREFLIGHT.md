@@ -1,8 +1,10 @@
 # Preflight
 
-- Latest open PRs were rechecked before target selection.  PRs #7764, #7765
-  and draft #7766 were merge-clean; #7765 remains a conditional supplied
-  matter/source construction rather than a selected physical law.
+- Latest open PRs were rechecked before target selection and after execution.
+  PRs #7764, #7765, draft #7766 and new #7767 were merge-clean.  #7767 proves
+  a fixed-finite mathematical gap and a supplied strict-coupling collapse
+  family, but explicitly leaves carrier/action/measure/source/clock/scaling
+  selection open and therefore does not retire a TOE obligation.
 - Block 221 is independently reproduced: primary `18/18`, independent full
   `21/21`, independent mutation-meta `22/22`, with 10/10 disjoint mutations
   rejected and 96 stronger recovery collision classes.

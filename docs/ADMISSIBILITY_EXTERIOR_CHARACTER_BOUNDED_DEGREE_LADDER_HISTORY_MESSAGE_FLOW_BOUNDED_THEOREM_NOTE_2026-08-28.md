@@ -30,7 +30,7 @@ bare_retained_allowed: false
 
 **Type:** `bounded_theorem`
 
-**Status:** `conditional-support`
+**Status:** `proposed_retained`
 
 ## Result up front
 

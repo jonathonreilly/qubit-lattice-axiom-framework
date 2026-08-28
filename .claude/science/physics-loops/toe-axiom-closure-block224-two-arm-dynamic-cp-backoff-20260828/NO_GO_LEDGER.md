@@ -21,3 +21,15 @@ not an axiom edit.
 Forbidden conclusions include “two-arm dynamics is impossible”, “local
 finality is impossible”, “permanent Records are impossible”, and “the axioms
 must change”.
+
+## Stage-0 result
+
+The preregistered synchronizer is nonanticipating and weakly fair with
+almost-sure finite delays, but it is not action/support strongly fair: the
+positive `FIRST_GO` completion row recurs and is never selected.  It has zero
+absorption only in the weaker class.  Exhaustive fair closure of the complete
+six-row quotient finds no nonterminal action-strong-fair recurrent class, so
+the quotient absorbs almost surely for every supplied `0<p<1`.
+
+The broad gate remains `FAIL`.  The result does not execute local rollback
+safety or full CP and does not select a physical scheduler law.

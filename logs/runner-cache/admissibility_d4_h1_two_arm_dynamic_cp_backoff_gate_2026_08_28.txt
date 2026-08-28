@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_two_arm_dynamic_cp_backoff_gate_2026_08_28.py
+runner_sha256: c3de1c366ea7ea4d7427388374c9872ff2e27227f24be3be94cb68d35594687c
+input_fingerprint_sha256: 7c948300fd3922457979ac767d71ea7161f440e5b8af97c5220c6d8aa5f0e5a4
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 13.05
+status: ok
+----- stdout -----
+PASS the 74 plus 54 onsite carrier is independently reconstructed
+PASS carrier characters and the three-dimensional residual are exact
+PASS all rotations complement frames and transported defaults remain covariant
+PASS the parent width-two and exhaustive width-three contact anchors are reproduced
+PASS all 5040 reciprocal crosswires and the first witness are independently reproduced
+PASS labelled parallel darts and frozen visible contact buckets remain distinct
+PASS the finite retry contact rollback table is explicit deterministic where required and input-unique
+PASS the Stage-zero quotient binds but does not execute the frozen local-safety boundary
+PASS no hidden identity epoch coordinate size Record write or LOCK BG write occurs
+PASS the synchronizing scheduler is nonanticipating and weakly fair with almost-sure finite delays
+PASS the synchronizer is not action-strongly-fair because one recurrent positive row is starved
+PASS the weaker policy still induces a closed nonterminal recurrent class
+PASS weak-fair-policy absorption probability is exactly zero for symbolic 0 less than p less than 1
+PASS the complete six-row quotient has no action-strong-fair nonterminal recurrent class
+PASS the deterministic p equals one lockstep boundary is reproduced but excluded from the open family
+PASS a favorable supplied random-support scheduler has positive escape and repeated absorption
+PASS the two retry Kraus effects sum exactly to the retry projector with default identity
+PASS p remains supplied and no full dynamic CP instrument is claimed
+PASS the failed strong-fair refuter leaves the frozen dynamic compiler route live
+PASS quotient absorption is almost sure but no expected-time or uniform-rate bound is claimed
+PASS no uniform rate infinite-volume physical-time law-selection or broad no-go claim is made
+PASS literal preregistered input packet is present and byte-bound
+DATA {"carrier":{"characters":[[37,-3,5,-3],[34,-2,2,-2]],"digest":"09d24d6a23b5987a9a4e0a6b21052caa1d58ec16b4462019e01da9302dc79a76","named_plus_default":[74,54],"residual":[1,0,2,0]},"classification":"positive-two-arm-action-strong-fair-quotient-absorption","favorable":{"one_regeneration":"s/[s+(1-s)p]>0","repeated_absorption":"1"},"hostile":{"absorption":"0","component":["BOTH_GO","BOTH_RETRY","CONTACT","FIRST_GO","ROLLBACK"],"declared_strong_fair":false,"fair_components":[],"mean":"E[N]=1/p<infinity","p_one_boundary":["BOTH_RETRY","FIRST_GO","BOTH_GO","CONTACT","ROLLBACK","BOTH_RETRY"],"policy":["retry1-until-go","delay-forward1","retry2-until-go","advance-both","contact","rollback","repeat"],"round_mean":"E[round]=2/p+3<infinity","starved":["favorable_complete_seam1"],"strong_fair_absorption_as":true,"tail":"Pr[N>n]=(1-p)^n->0"},"imports":{"complete":true,"count":13,"sha256":"2b064b0e40a5bafce863a6b03f316977f69b0957104d62ce512e4b678ce60afd"},"kraus":{"effect_sum":["1","0"],"full_dynamic_cp_claimed":false,"weights":["p","1-p"]},"model":{"digest":"10e8828f0be4f3207eb9de838a3330627cc892738d99b74ac8f6a8a56186cd63","lockstep_cycle":["BOTH_RETRY","FIRST_GO","BOTH_GO","CONTACT","ROLLBACK","BOTH_RETRY"],"rows":6,"states":["BOTH_GO","BOTH_RETRY","CONTACT","FIRST_GO","POSITIVE","ROLLBACK"]},"scope":{"broad_no_go":false,"infinite_volume":false,"law_selection":false,"physical_time":false,"pivot":"continue-dynamic-compiler-with-coalescence-as-fallback","uniform_rate":false},"static":{"bucket_digest":"fca3912551f12853534a4863f4faf092e2f3fb3de2464aff8d121e3f21166374","contact_buckets":47,"first_witness":{"left_actor_path":[0,2,5,3,4],"left_anchor":4,"left_ports":[3,0,1,1],"left_target":1,"right_actor_path":[1,7,6],"right_anchor":6,"right_ports":[2,3],"right_target":0},"reciprocal":5040,"total_pairs":37978236,"total_queries":7113688,"width3_forests":614656}}
+per_element: independently rebuilt the 74 plus 54 carrier, 24 rotations, complement, and retry-projector Kraus identity.
+per_site: constructed the exact six-row five-state retry/contact/rollback quotient; LOCK and BG remain QND.
+per_block: exhausted 614,656 width-three forests, 7,113,688 total queries, 37,978,236 total pairs, 47 contact buckets, and 5,040 reciprocal witnesses.
+lattice_wide: the synchronizer has zero absorption only under weak finite-delay fairness; the complete quotient has no action-strong-fair nonterminal recurrent class and absorbs almost surely, without an expected-time or uniform-rate bound.
+scope: no full dynamic CP, uniform-rate, infinite-volume, time, physical-law-selection, broad no-go, obligation-retirement, or axiom claim.
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

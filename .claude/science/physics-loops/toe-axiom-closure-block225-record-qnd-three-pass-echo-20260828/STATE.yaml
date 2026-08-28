@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block225-record-qnd-three-pass-echo-20260828
 campaign_number: 225
-status: preregistered_before_runner
-phase: record_qnd_seam_and_distributed_capacity_gate
+status: preregistration_amended_before_runner
+phase: clean_wake_tagged_wake_distributed_capacity_gate
 parent_commit: 74c598ee55
 parent_branch: physics-loop/toe-axiom-closure-block224-two-arm-dynamic-cp-backoff-20260828
 branch: physics-loop/toe-axiom-closure-block225-record-qnd-three-pass-echo-20260828
@@ -21,6 +21,9 @@ new_onsite_rays_allowed: 0
 hidden_query_id_allowed: false
 epoch_coordinate_size_allowed: false
 seam_pair_states: 9
+untagged_two_pass_alias_control: frozen
+tagged_abort_wake: T_L_domino
+good_acknowledgement_wake: P_or_R_L
 distributed_dart_erasure_allowed: false
 central_y_compression_allowed: false
 literal_physical_instrument_compiled: false
@@ -28,4 +31,3 @@ decision_class: pending
 axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0
-

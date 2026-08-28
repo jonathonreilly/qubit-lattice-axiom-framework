@@ -1,0 +1,545 @@
+{
+  "rule": {
+    "claim_domain": "one finite connected Record-free parity component with one supplied R_b,d event state",
+    "default_action": "identity",
+    "embedding": {
+      "abstract_irreps": "3A1+2A2+3E+T_other+2T_axis",
+      "ambient": "Block218 seven-qubit rank-128 center-plus-shell block",
+      "bit_pairing": "v_b=(v_plus+(-1)^b*v_minus)/sqrt(2)",
+      "columns_per_complement_parity": [
+        "P_d:0..5",
+        "H_d:0..5",
+        "R_d_twisted_A2:0..5",
+        "L",
+        "S_A2"
+      ],
+      "hom_average_seed": "(((i+1)*(j+3)+i+2*j)%97)-48",
+      "normalization": "positive_inverse_square_root_of_Gram",
+      "removed": "rank-52 Record code plus Block219 tau pair"
+    },
+    "genesis": {
+      "input": "one supplied event at a U_b site",
+      "outputs": [
+        "R_b,d",
+        "R_b,d",
+        "R_b,d",
+        "R_b,d"
+      ],
+      "port_labels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "site_occurrence_normal_and_rate": "supplied",
+      "squared_weights": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    "kraus_schema": {
+      "coherent_row_sums_forbidden": true,
+      "default_identity_on_unmatched_signatures": true,
+      "projective_A2_roles": [
+        "R",
+        "S"
+      ],
+      "row_form": "sqrt(weight)*|output_signature><input_signature|",
+      "rows_are_separately_indexed": true
+    },
+    "physical_scheduler_and_rate": "supplied",
+    "ports": {
+      "count": 4,
+      "inverse_offset": 2,
+      "parallel_darts_are_distinct": true,
+      "successor_step": 1
+    },
+    "preexisting_record_domain": "QND status preservation only; failure-plus-flood composition is outside the positive theorem",
+    "punctured_component_connected": true,
+    "radius": 2,
+    "runtime_memory_fields": [],
+    "schema": "block220-event-seeded-record-finality-markov-v2",
+    "semantic_binding": true,
+    "state_schema": {
+      "bit_coloured": [
+        "U",
+        "R",
+        "P",
+        "H",
+        "L",
+        "S",
+        "LOCK",
+        "BG"
+      ],
+      "directed": [
+        "R",
+        "P",
+        "H"
+      ],
+      "record": [
+        "LOCK",
+        "BG"
+      ],
+      "reserved": [
+        "R",
+        "P",
+        "H",
+        "L"
+      ],
+      "scalar": [
+        "U",
+        "L",
+        "S",
+        "LOCK",
+        "BG",
+        "X"
+      ]
+    },
+    "transitions": [
+      {
+        "actor_kinds": [
+          "R"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "same",
+          "kind": "R"
+        },
+        "bit_relation": "same",
+        "direction_relation": "any",
+        "id": "root_launch_match",
+        "port_selector": "actor_direction",
+        "priority": 100,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "U"
+        ],
+        "target_write": {
+          "bit": "actor",
+          "direction": "inverse_port",
+          "kind": "H"
+        }
+      },
+      {
+        "actor_kinds": [
+          "R"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "S"
+        },
+        "bit_relation": "opposite",
+        "direction_relation": "any",
+        "id": "root_launch_mismatch",
+        "port_selector": "actor_direction",
+        "priority": 100,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "U"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "same",
+          "kind": "same"
+        }
+      },
+      {
+        "actor_kinds": [
+          "R"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "S"
+        },
+        "bit_relation": "any",
+        "direction_relation": "any",
+        "id": "root_launch_record_or_malformed",
+        "port_selector": "actor_direction",
+        "priority": 100,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "LOCK",
+          "BG",
+          "X"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "same",
+          "kind": "same"
+        }
+      },
+      {
+        "actor_kinds": [
+          "H"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "L"
+        },
+        "bit_relation": "same",
+        "direction_relation": "inverse_port",
+        "id": "head_return_root_commit",
+        "port_selector": "successor_direction",
+        "priority": 120,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "R"
+        ],
+        "target_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "LOCK"
+        }
+      },
+      {
+        "actor_kinds": [
+          "H"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "L"
+        },
+        "bit_relation": "same",
+        "direction_relation": "inverse_port",
+        "id": "head_return_parent",
+        "port_selector": "successor_direction",
+        "priority": 120,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "P"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "same",
+          "kind": "H"
+        }
+      },
+      {
+        "actor_kinds": [
+          "H"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "selected_port",
+          "kind": "P"
+        },
+        "bit_relation": "same",
+        "direction_relation": "any",
+        "id": "head_descend",
+        "port_selector": "successor_direction",
+        "priority": 110,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "U"
+        ],
+        "target_write": {
+          "bit": "actor",
+          "direction": "inverse_port",
+          "kind": "H"
+        }
+      },
+      {
+        "actor_kinds": [
+          "H"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "selected_port",
+          "kind": "H"
+        },
+        "bit_relation": "same",
+        "direction_relation": "not_inverse_port",
+        "id": "head_skip_root_cross_edge",
+        "port_selector": "successor_direction",
+        "priority": 100,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "R"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "same",
+          "kind": "same"
+        }
+      },
+      {
+        "actor_kinds": [
+          "H"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "selected_port",
+          "kind": "H"
+        },
+        "bit_relation": "same",
+        "direction_relation": "not_inverse_port",
+        "id": "head_skip_parent_cross_edge",
+        "port_selector": "successor_direction",
+        "priority": 100,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "P"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "same",
+          "kind": "same"
+        }
+      },
+      {
+        "actor_kinds": [
+          "H"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "selected_port",
+          "kind": "H"
+        },
+        "bit_relation": "same",
+        "direction_relation": "any",
+        "id": "head_skip_reserved_cross_edge",
+        "port_selector": "successor_direction",
+        "priority": 100,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "H",
+          "L"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "same",
+          "kind": "same"
+        }
+      },
+      {
+        "actor_kinds": [
+          "H"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "S"
+        },
+        "bit_relation": "opposite",
+        "direction_relation": "any",
+        "id": "head_fail_opposite_transient",
+        "port_selector": "successor_direction",
+        "priority": 90,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "U"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "same",
+          "kind": "same"
+        }
+      },
+      {
+        "actor_kinds": [
+          "H"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "S"
+        },
+        "bit_relation": "opposite",
+        "direction_relation": "any",
+        "id": "head_fail_opposite_reservation",
+        "port_selector": "successor_direction",
+        "priority": 90,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "R",
+          "P",
+          "H",
+          "L"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "same",
+          "kind": "same"
+        }
+      },
+      {
+        "actor_kinds": [
+          "H"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "S"
+        },
+        "bit_relation": "any",
+        "direction_relation": "any",
+        "id": "head_fail_record_eroder_or_malformed",
+        "port_selector": "successor_direction",
+        "priority": 90,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "S",
+          "LOCK",
+          "BG",
+          "X"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "same",
+          "kind": "same"
+        }
+      },
+      {
+        "actor_kinds": [
+          "S"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "same",
+          "kind": "same"
+        },
+        "bit_relation": "any",
+        "direction_relation": "any",
+        "id": "failure_spread",
+        "port_selector": "each_port",
+        "priority": 80,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "R",
+          "P",
+          "H",
+          "L"
+        ],
+        "target_write": {
+          "bit": "target",
+          "direction": "none",
+          "kind": "S"
+        }
+      },
+      {
+        "actor_kinds": [
+          "S"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "U"
+        },
+        "guard": "no_reserved_neighbor",
+        "id": "failure_guarded_decay",
+        "priority": 70,
+        "reserved_kinds": [
+          "R",
+          "P",
+          "H",
+          "L"
+        ],
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "radius_two_star"
+      },
+      {
+        "actor_kinds": [
+          "LOCK",
+          "BG"
+        ],
+        "actor_write": {
+          "bit": "actor",
+          "direction": "same",
+          "kind": "same"
+        },
+        "bit_relation": "same",
+        "direction_relation": "any",
+        "id": "matching_record_flood",
+        "port_selector": "each_port",
+        "priority": 60,
+        "squared_weight": [
+          1,
+          1
+        ],
+        "support": "directed_pair",
+        "target_kinds": [
+          "L"
+        ],
+        "target_write": {
+          "bit": "actor",
+          "direction": "none",
+          "kind": "BG"
+        }
+      }
+    ]
+  },
+  "sha256": "a3b67204fcbbadcea05cfb22fb7cc3983da1d986c8251dc780abc0d853ca1138"
+}

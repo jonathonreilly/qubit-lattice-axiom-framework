@@ -1,6 +1,6 @@
 {
- "edge_count": 16143,
- "node_count": 5639,
+ "edge_count": 16146,
+ "node_count": 5640,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -521,6 +521,10 @@
   "admissibility_dirac_kahler_exchange_condition_contract_bounded_theorem_note_2026-08-20": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "admissibility_dirac_kahler_exterior_character_action_transfer_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "59e3706b6d2e",
+   "out_degree": 3
   },
   "admissibility_dirac_kahler_facet_charge_bridge_bounded_theorem_note_2026-08-17": {
    "deps_hash": "0e19da153048",

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_exterior_character_action_transfer_2026_08_28.py
+runner_sha256: 90e8f15ec6d4f90eb44253943ab98d1cd8558213f71e65974c7058465bbd8bd3
+input_fingerprint_sha256: c6ecc1d19f31b6b779245d00366c09c5ddcbac9dd0795208aebc9498893a2396
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+[PASS] exterior character: Tr Lambda(M)=det(I+M) as a generic polynomial
+[PASS] O(3) sectors: SO(3) is Wilson-type while every tested improper holonomy has Q=16
+[PASS] improper boundary: the SO(3) trace formula is not extended across det(W)=-1
+[PASS] improper force boundary: Q is constant with zero first and second tangent derivatives
+[PASS] maximum defect is not a determinant classifier: a proper pi rotation also has Q=16
+[PASS] orientation: Q(W^-1)=Q(W) on proper and improper representatives
+[PASS] local variation: forward and inverse occurrences retain cyclic order and orientation sign
+[PASS] flat Hessian: H=8 d1^T K d1 and all linearized gauge gradients are null
+[PASS] topology: a torus cell has exact closed non-gauge flat Hessian directions
+[PASS] coframe response: fixed supplied R gives the same exact Q for unequal endpoint metrics
+[PASS] nonselection witness: f1 and nonlinear f2 share f(0)=0 and unit flat slope
+[PASS] nonlinear witness: f2 is nonnegative on Q in [0,16] with the same unique minimum
+[PASS] finite-curvature nonselection: f1 stationarity can fail for f2 despite the shared flat Hessian
+[PASS] positive character mechanism: character and its square are exact representation Grams
+[PASS] OS sign: nonnegative temporal coupling gives a positive injective local seam kernel
+[PASS] negative-sign falsifier: the exact two-history Gram has eigenvalues 3 and -1
+[PASS] zero-coupling boundary: the nontrivial two-history transfer is rank one, not injective
+[PASS] gauge projection: full kinematic transfer has a projector kernel but is positive on its image
+[PASS] transfer logarithm: normalized exact spectrum gives Hamiltonian levels 0 and log(3)
+[PASS] independent checker: separate principal-minor, derivative, and transfer paths all agree
+per_element: exact O(3) character sectors, link occurrences, and two-history seam signs were checked.
+per_site: endpoint coframe independence and local gauge-projector action were checked exactly.
+per_mode: flat gauge and torus null modes plus transfer eigenmodes were checked exactly.
+per_block: the supplied finite plaquette action, Hessian, OS kernel, and logarithm were checked.
+lattice_wide: checked finite-cell topology boundaries; no continuum, Lorentz, or gravity claim was executed.
+scope_note: finite matrices are hostile controls only; the all-O(3) reflected-Gram and spectral-domain proofs are source-load-bearing.
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

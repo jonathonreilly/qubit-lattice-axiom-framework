@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block224-two-arm-dynamic-cp-backoff-20260828
 campaign_number: 224
-status: preregistration
-phase: frozen_dynamic_compiler_before_runner
+status: preregistration_amended_before_runner
+phase: hostile_scheduler_stage0_before_dynamic_compiler
 parent_commit: 49daa56f7e
 parent_branch: physics-loop/toe-axiom-closure-block223-two-arm-higher-block-ancestry-20260828
 branch: physics-loop/toe-axiom-closure-block224-two-arm-dynamic-cp-backoff-20260828
@@ -12,6 +12,8 @@ portfolio_recheck_interval: 3h_or_each_decisive_result
 review_loop_allowed: false
 active_route: symmetric_quench_hostile_dynamics_and_conditional_cp_backoff
 fallback_route: deterministic_coalescing_or_component_root_lock
+stage0_policy: nonanticipating_almost_sure_strongly_fair_retry_synchronizer
+record_scratch_roles_allowed: false
 parent_named_rays: 74
 parent_default_rank: 54
 parent_contact_signatures: 47

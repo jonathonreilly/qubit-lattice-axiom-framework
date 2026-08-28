@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_co_scaled_temporal_trotter_refinement_2026_08_28.py
+runner_sha256: 923627766d477c544f70d42df8d27707e095ffbc5264f5e3539df10dc4fc9215
+input_fingerprint_sha256: d9168a86ab2691dbd476b63dd84cc66a3edc456c5a60bd1f2180359d6e58c09c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.34
+status: ok
+----- stdout -----
+[PASS] actual action: the full f_n common-axis Taylor series is derived through theta^8
+[PASS] Haar and character geometry: normalized class curvature and all-spin theta^6 coefficients are exact
+[PASS] radial Gaussian measure: normalized three-dimensional moments are generated recursively
+[PASS] actual full O(3) multiplier: the proper log and exponentially flat component-mass factor are both derived
+[PASS] corrected scalar clock: the q^2 and q^3 coefficients are solved from the channel expansion
+[PASS] irreducible residual: scalar clock correction leaves D^3(3n-1)L^2 epsilon^3/48
+[PASS] channel invariant: spin one and spin two retain the exact cubic common-clock mismatch
+[PASS] cylindrical refinement: full spin-one matching leaves both spin-two and matched-clock determinant defects
+[PASS] determinant component: diffusive scaling freezes the Arrhenius jump channel
+[PASS] Haar pullback: product measure pushes forward exactly under ordered multiplication
+[PASS] common projector: the internal fine gauge frame cancels in the coarse ordered holonomy
+[PASS] equal-flux plaquette: four subplaquettes with beta_f=4 beta_c match theta^2 but leave the quartic defect
+[PASS] finite plaquette witness: the pi defect is exact in Q(sqrt(2)) and positive for every n>=1
+[PASS] symmetric product: the free-word logarithm derives both nested-commutator signs
+[PASS] noncommuting exact control: the intrinsic exterior K term and Strang commutators reconstruct the matrix log
+[PASS] scope and imports: the result is strong fixed-carrier mathematics, not norm refinement or physical time
+per_element: actual f_n, Haar, characters, radial moments, and component asymptotics were derived
+per_site: ordered fine-edge gauge cancellation and product-Haar pushforward were executed
+per_mode: all-spin logs, the corrected clock, spin-one/two defects, and determinant freeze were checked
+per_block: the nonconstant-potential symmetric product and both bare refinement boundaries were reconstructed
+lattice_wide: checked and not executed — no changing-graph strong comparison, thermodynamic limit, or physical clock is supplied
+STATUS: the actual exterior family has a co-scaled fixed-carrier strong product but no exact bare same-family cylindrical refinement
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

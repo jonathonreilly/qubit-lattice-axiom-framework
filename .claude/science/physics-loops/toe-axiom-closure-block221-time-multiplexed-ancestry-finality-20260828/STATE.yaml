@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block221-time-multiplexed-ancestry-finality-20260828
 campaign_number: 221
-status: stage_a_scoped_five_colour_dart_alias_independent_check_pending
-phase: frozen_one_site_attempt_stopped_higher_block_oriented_edge_pivot
+status: stage_a_scoped_five_colour_dart_alias_independently_reproduced
+phase: frozen_one_site_attempt_closed_higher_block_oriented_edge_pivot
 parent_commit: c2da0af7f9
 parent_pr: 7766
 branch: physics-loop/toe-axiom-closure-block221-time-multiplexed-ancestry-finality-20260828
@@ -40,9 +40,15 @@ stage_a_width3_ambiguous_cycles: 1440
 stage_a_first_alias_path: [0, 2, 3, 1]
 stage_a_first_alias_ports: [0, 1, 0]
 stage_a_first_alias_reason: lost_parallel_child_dart
+independent_stage_a_baseline_checks: 17_of_17
+independent_stage_a_full_checks: 21_of_21
+independent_stage_a_checks_with_mutation_meta: 22_of_22
+independent_stage_a_mutations_rejected: 10_of_10
+independent_visible_recovery_collision_classes: 96
+independent_runner_sha256: bed8b41ed7abff2faed0c936ee447fc002474c7881f73c3bffb8735d135269c2
 decision_class: partial-narrowing
 no_go_discipline: broad_gate_fail_scoped_counterexample_only
-independent_check: pending
+independent_check: clean_structurally_independent_reconstruction
 axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0

@@ -29,6 +29,9 @@ toe_percentage_movement: 0
 Primary executable gate:
 [admissibility_d4_h1_multiroot_five_colour_ancestry_alias_gate_2026_08_28.py](../scripts/admissibility_d4_h1_multiroot_five_colour_ancestry_alias_gate_2026_08_28.py).
 
+Structurally independent executable reconstruction:
+[admissibility_d4_h1_multiroot_five_colour_ancestry_alias_gate_independent_2026_08_28.py](../scripts/admissibility_d4_h1_multiroot_five_colour_ancestry_alias_gate_independent_2026_08_28.py).
+
 No-go-discipline packet:
 [ADMISSIBILITY_D4_H1_MULTIROOT_FIVE_COLOUR_ANCESTRY_DART_ALIAS_NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md](ADMISSIBILITY_D4_H1_MULTIROOT_FIVE_COLOUR_ANCESTRY_DART_ALIAS_NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md).
 
@@ -64,6 +67,16 @@ width-two parallel-dart loss. Because a training falsifier exists, the
 preregistered gate stops before held L8 inspection and before a full
 classical/Kraus grammar. No retuning is allowed.
 
+The independent reconstruction adds a stronger recovery-quotient check. It
+groups histories by every datum visible to the frozen depth-only state:
+complete marker layout, root and launch dart, anchor and collision dart,
+restoration site, predecessor and incoming dart. There are 96 visible-state
+classes whose members require incompatible restored child darts. In the first
+class the required child endpoint is site 3 in both histories, but the
+physical obligation is port 1 in one history and port 3 in the other. Thus no
+deterministic decoder of the frozen visible state can repair the first alias;
+the missing datum must be represented physically.
+
 As a control, the same runner reconstructs the unchanged Block 220 L4
 two-root census: 96/576 same-bit mixed starts can reach a false Record,
 whereas 0/768 opposite-bit starts reach a Record. Its first five-action trace
@@ -89,14 +102,20 @@ higher block.
 
 - baseline: `17/17`;
 - mutation-meta run: `18/18`, rejecting `10/10` nonidentical mutations;
+- structurally independent baseline: `17/17`; full source/N1--N8 run:
+  `21/21`; independent mutation-meta run: `22/22`, rejecting `10/10`
+  disjoint mutations;
+- independent runner SHA-256:
+  `bed8b41ed7abff2faed0c936ee447fc002474c7881f73c3bffb8735d135269c2`;
 - exact Block 220 L4 two-root census reproduced, including maximum reachable
   set 51 and maximum shortest false-Record trace 5;
 - every simple candidate root-cross cycle on training widths two and three
   enumerated with periodic wrap and labelled parallel darts preserved;
 - N1--N8 returns FAIL for every broad negative and permits only this partial
   narrowing;
-- independent reconstruction remains required before packaging any Block 221
-  result.
+- the independent runner imports neither primary runner; it supplies its own
+  frozen-JSON transition interpreter, reachability search, periodic labelled
+  multigraph enumeration and recovery quotient.
 
 No axiom amendment, formal audit verdict, obligation retirement or TOE
 percentage movement is claimed.

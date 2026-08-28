@@ -18,6 +18,7 @@ from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_indep
     matmul as independent_matmul,
     matrix_fixture as independent_matrix_fixture,
     determinant_scale_selection_fixture as independent_determinant_selection_fixture,
+    finite_rth_determinant_response_fixture as independent_finite_rth_fixture,
     original_link_determinant_offblock_fixture as independent_determinant_fixture,
     packet_quadratic_response_fixture as independent_packet_response_fixture,
     s3_mixed_response_fixture as independent_mixed_response_fixture,
@@ -87,6 +88,10 @@ MUTATIONS = (
     "invent_r3_determinant_offblock",
     "drop_all_q_determinant_selection",
     "factorize_shared_rung_response",
+    "corrupt_finite_rth_subset_sum",
+    "retain_cylindrical_endpoints",
+    "restore_alternating_response_sign",
+    "corrupt_finite_rth_packet_bound",
 )
 
 PASS = 0
@@ -613,6 +618,176 @@ def primary_determinant_scale_selection_data() -> dict[str, object]:
     }
 
 
+def primary_finite_rth_determinant_data() -> dict[str, object]:
+    """SymPy/assignment check of the exact finite-step order-r formula."""
+
+    t_value = sp.Rational(1, 2)
+    epsilon = sp.Rational(3, 5)
+    determinant_coefficient = sp.Rational(5, 7)
+    cases = (
+        (2, 1, 0, 0),
+        (2, 2, 1, 1),
+        (3, 1, 0, 0),
+        (3, 2, 1, 1),
+        (4, 1, 0, 0),
+        (5, 1, 0, 0),
+        (6, 1, 0, 0),
+    )
+    rows: list[tuple[
+        int, int, int, int, sp.Rational, sp.Rational, int,
+        sp.Rational, sp.Rational,
+    ]] = []
+
+    for width, cell_count, cell, background in cases:
+        fine_count = width * cell_count
+        cell_word = sum(1 << (width * cell + offset)
+                        for offset in range(width))
+        base_word = sum(
+            1 << (width * coarse_cell + offset)
+            for coarse_cell in range(cell_count)
+            if background & (1 << coarse_cell)
+            for offset in range(width)
+        )
+        target_word = base_word ^ cell_word
+        positions = tuple(width * cell + offset for offset in range(width))
+        amplitudes = tuple(sp.Rational(offset + 1, offset + 2)
+                           for offset in range(width))
+
+        def run_count(word: int) -> int:
+            return sum(
+                1 for position in range(fine_count)
+                if word & (1 << position)
+                and (position == 0 or not word & (1 << (position - 1)))
+            )
+
+        def temporal(word: int) -> sp.Rational:
+            return t_value ** (2 * word.bit_count() + 2 * run_count(word))
+
+        temporal_count = 3 * fine_count + 1
+        packet_trivial = sp.Rational(7, 8)
+        packet_determinant = sp.Rational(3, 8)
+
+        def packet_temporal(word: int) -> sp.Rational:
+            incidence = 2 * word.bit_count() + 2 * run_count(word)
+            return (
+                packet_determinant**incidence
+                * packet_trivial ** (temporal_count - incidence)
+            )
+
+        assignment_sum = sp.Rational(0)
+        packet_assignment_sum = sp.Rational(0)
+        accepted = 0
+        for choices in product(range(4), repeat=width):
+            first_positions = tuple(
+                positions[index] for index, choice in enumerate(choices)
+                if choice < 2
+            )
+            if not first_positions or len(first_positions) == width:
+                continue
+            first_right = sum(
+                1 << positions[index] for index, choice in enumerate(choices)
+                if choice == 1
+            )
+            second_right = sum(
+                1 << positions[index] for index, choice in enumerate(choices)
+                if choice == 3
+            )
+            assignment_sum += (
+                temporal(base_word ^ first_right)
+                * temporal(target_word ^ second_right)
+            )
+            packet_assignment_sum += (
+                packet_temporal(base_word ^ first_right)
+                * packet_temporal(target_word ^ second_right)
+            )
+            accepted += 1
+
+        subset_sum = sp.Rational(0)
+        local_full = (1 << width) - 1
+        for local_subset in range(1, local_full):
+            global_subset = sum(
+                1 << positions[offset] for offset in range(width)
+                if local_subset & (1 << offset)
+            )
+            complement = cell_word ^ global_subset
+            first_sum = sum(
+                (temporal(base_word ^ subword)
+                 for subword in range(1 << fine_count)
+                 if not subword & ~global_subset),
+                sp.Rational(0),
+            )
+            second_sum = sum(
+                (temporal(target_word ^ subword)
+                 for subword in range(1 << fine_count)
+                 if not subword & ~complement),
+                sp.Rational(0),
+            )
+            subset_sum += first_sum * second_sum
+
+        prefactor = (
+            (epsilon * determinant_coefficient / 2) ** width
+            * prod(amplitudes)
+        )
+        theta = 1 - (1 - sp.Rational(1, 8)) ** temporal_count
+        packet_bound = (
+            2 * (2**width - 2)
+            * (epsilon * determinant_coefficient) ** width
+            * prod(amplitudes) * theta
+        )
+        rows.append((
+            width, cell_count, cell, background,
+            sp.factor(prefactor * assignment_sum),
+            sp.factor(prefactor * subset_sum),
+            accepted,
+            abs(sp.factor(prefactor * (assignment_sum - packet_assignment_sum))),
+            packet_bound,
+        ))
+
+    scalar_loss = sp.Rational(1, 4)
+    factor_two_rows = tuple(
+        (
+            width,
+            (1 - (1 - scalar_loss) ** 2) * (
+                sum(2**subset.bit_count()
+                    * 2**(width - subset.bit_count())
+                    for subset in range(1, (1 << width) - 1))
+                / 2**width
+            ),
+            2 * scalar_loss * (2**width - 2),
+            scalar_loss * (2**width - 2),
+        )
+        for width in range(2, 7)
+    )
+    return {
+        "rows": tuple(rows),
+        "exact": all(assignment == predicted
+                     for _r, _q, _c, _y, assignment, predicted, _n,
+                     _error, _bound in rows),
+        "positive": all(assignment > 0
+                        for _r, _q, _c, _y, assignment, _predicted, _n,
+                        _error, _bound in rows),
+        "endpoint_count": all(
+            accepted == 4**width - 2 ** (width + 1)
+            for width, _q, _c, _y, _assignment, _predicted, accepted,
+            _error, _bound in rows
+        ),
+        "packet_bound": all(error <= bound
+                            for _r, _q, _c, _y, _assignment, _predicted,
+                            _accepted, error, bound in rows),
+        "factor_two_needed": all(
+            error <= full_bound and error > halved_bound
+            for _width, error, full_bound, halved_bound in factor_two_rows
+        ),
+        "factor_two_rows": factor_two_rows,
+        "small_step": all(
+            sum(2**subset.bit_count() * 2**(width - subset.bit_count())
+                for subset in range(1, (1 << width) - 1))
+            == 2**width * (2**width - 2)
+            for width in range(2, 7)
+        ),
+    }
+
+
 def independent_mode() -> int:
     global PASS, FAIL
     PASS = FAIL = 0
@@ -625,6 +800,7 @@ def independent_mode() -> int:
     response_packet = independent_packet_response_fixture()
     determinant = independent_determinant_fixture()
     determinant_selection = independent_determinant_selection_fixture()
+    finite_rth = independent_finite_rth_fixture()
     expected = ((F(1, 16), F(0)), (F(0), F(0)))
     checks = (
         (
@@ -741,6 +917,23 @@ def independent_mode() -> int:
             "independent determinant quadratic off-block selects only r=2 singleton cells",
             determinant_selection["r2_singletons_positive"]
             and determinant_selection["r3plus_zero"],
+        ),
+        (
+            "independent direct series first reaches the determinant off-block at order r",
+            finite_rth["formula_exact"] and finite_rth["lower_orders_zero"],
+        ),
+        (
+            "independent finite-r formula recovers the exact r=2 half-response",
+            finite_rth["r2_matches"],
+        ),
+        (
+            "independent small-step limit counts proper residual subsets",
+            finite_rth["small_step_counts"]
+            == tuple((width, 2**width - 2) for width in range(2, 7)),
+        ),
+        (
+            "independent selected order-r response packet bound",
+            finite_rth["packet_bound_holds"],
         ),
     )
     for label, condition in checks:
@@ -1158,6 +1351,8 @@ def main(mutation: str | None, mode: str) -> int:
     )
 
     determinant_selection = primary_determinant_scale_selection_data()
+    finite_rth = primary_finite_rth_determinant_data()
+    independent_finite_rth = independent_finite_rth_fixture()
     all_q_selection_ok = (
         determinant_selection["exact"]
         and determinant_selection["r2_positive"]
@@ -1190,6 +1385,56 @@ def main(mutation: str | None, mode: str) -> int:
         shared_rung_ok
         and "85/2048" in note and "67/2097152" in note
         and "not a tensor product of one-cell responses" in note,
+    )
+
+    finite_rth_ok = finite_rth["exact"] and independent_finite_rth["formula_exact"]
+    if mutation == "corrupt_finite_rth_subset_sum":
+        finite_rth_ok = False
+    check(
+        "exact finite-step determinant off-block first appears at response order r",
+        finite_rth_ok and independent_finite_rth["lower_orders_zero"]
+        and "All determinant offdiagonal\nderivatives of order below `r` vanish" in note
+        and "F_Z(H_c\\X)" in note,
+    )
+
+    endpoint_ok = finite_rth["endpoint_count"]
+    if mutation == "retain_cylindrical_endpoints":
+        endpoint_ok = False
+    check(
+        "residual projector removes exactly the two cylindrical endpoint subsets",
+        endpoint_ok
+        and "deletes exactly the endpoint\nwords `X=emptyset,H_c`" in note
+        and "emptyset != X proper_subset H_c" in note,
+    )
+
+    finite_sign_ok = finite_rth["positive"] and finite_rth["small_step"]
+    if mutation == "restore_alternating_response_sign":
+        finite_sign_ok = False
+    check(
+        "finite-step order-r response is positive and recovers 2^r-2 at small step",
+        finite_sign_ok and independent_finite_rth["r2_matches"]
+        and "<h,chi_det>^r=(-c_det^(n))^r" in note
+        and "epsilon^r(c_det^(n))^r(2^r-2)" in note,
+    )
+
+    finite_packet_ok = (
+        finite_rth["packet_bound"]
+        and independent_finite_rth["packet_bound_holds"]
+        and finite_rth["factor_two_needed"]
+        and independent_finite_rth["factor_two_needed"]
+    )
+    if mutation == "corrupt_finite_rth_packet_bound":
+        finite_packet_ok = all(
+            error <= halved_bound
+            for _width, error, _full_bound, halved_bound
+            in finite_rth["factor_two_rows"]
+        )
+    check(
+        "selected order-r determinant response has explicit temporal rq packet control",
+        finite_packet_ok
+        and "<=2(2^r-2)(epsilon c_det^(n))^r" in note
+        and "product_(p in H_c)|a_p|(3rq+1)delta_kappa" in note
+        and "There is no `delta_beta` term" in note,
     )
 
     scalar_shift = 2 * sp.Rational(7, 5) * mixed["gamma"]
@@ -1318,7 +1563,7 @@ def main(mutation: str | None, mode: str) -> int:
     print("per_site: the two-cell hidden-Haar fiber and both retained coarse sectors were enumerated exactly")
     print("per_mode: the Peter--Weyl core commutator square and nontrivial convolution channel were checked")
     print("per_block: the complete physical J_r direct/staged defect and rq packet census were checked")
-    print("per_scale: conditioned fibers r=2,...,7 and complete-step response bidegrees r=3,4 were checked")
+    print("per_scale: conditioned fibers r=2,...,7 and exact finite-step determinant responses r=2,...,6 were checked")
     print("lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied")
 
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

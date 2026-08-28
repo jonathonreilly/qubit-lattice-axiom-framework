@@ -984,6 +984,183 @@ def determinant_scale_selection_fixture() -> dict[str, object]:
     }
 
 
+def finite_rth_determinant_response_fixture() -> dict[str, object]:
+    """Direct truncated-series control of the finite-step order-r response.
+
+    This constructs both multiplier halves and the temporal diagonal on the
+    determinant-cycle hypercube.  It does not use the residual-subset formula
+    to obtain the direct coefficients.
+    """
+
+    def polynomial_multiply(left: tuple[F, ...], right: tuple[F, ...],
+                            cutoff: int) -> tuple[F, ...]:
+        result = [F(0)] * (cutoff + 1)
+        for left_order, left_value in enumerate(left):
+            for right_order, right_value in enumerate(right):
+                if left_order + right_order <= cutoff:
+                    result[left_order + right_order] += left_value * right_value
+        return tuple(result)
+
+    def run_count(word: int, width: int) -> int:
+        return sum(
+            1 for position in range(width)
+            if word & (1 << position)
+            and (position == 0 or not word & (1 << (position - 1)))
+        )
+
+    rows: list[tuple[int, F, F, bool, bool, F, F]] = []
+    small_step_counts: list[tuple[int, int]] = []
+    for width in range(2, 7):
+        state_count = 1 << width
+        full_word = state_count - 1
+        temporal_base = F(1, 2)
+        epsilon = F(3, 5)
+        determinant_coefficient = F(5, 7)
+        alpha = epsilon * determinant_coefficient / 2
+        amplitudes = tuple(F(position + 1, position + 2)
+                           for position in range(width))
+
+        def temporal(word: int) -> F:
+            incidence = 2 * word.bit_count() + 2 * run_count(word, width)
+            return temporal_base ** incidence
+
+        def multiplier_series(left: int, right: int) -> tuple[F, ...]:
+            series = (F(1),) + (F(0),) * width
+            difference = left ^ right
+            for position, amplitude in enumerate(amplitudes):
+                parity = bool(difference & (1 << position))
+                factor = tuple(
+                    ((alpha * amplitude) ** order / factorial(order)
+                     if bool(order % 2) == parity else F(0))
+                    for order in range(width + 1)
+                )
+                series = polynomial_multiply(series, factor, width)
+            return series
+
+        multiplier = tuple(
+            tuple(multiplier_series(left, right)
+                  for right in range(state_count))
+            for left in range(state_count)
+        )
+        leakage: dict[tuple[int, int], tuple[F, ...]] = {}
+        for residual in range(1, full_word):
+            for coarse in (0, full_word):
+                series = [F(0)] * (width + 1)
+                for intermediate in range(state_count):
+                    term = polynomial_multiply(
+                        multiplier[residual][intermediate],
+                        multiplier[intermediate][coarse],
+                        width,
+                    )
+                    for order, value in enumerate(term):
+                        series[order] += temporal(intermediate) * value
+                leakage[(residual, coarse)] = tuple(series)
+
+        direct = [F(0)] * (width + 1)
+        for residual in range(1, full_word):
+            term = polynomial_multiply(
+                leakage[(residual, 0)],
+                leakage[(residual, full_word)],
+                width,
+            )
+            for order, value in enumerate(term):
+                direct[order] += value
+
+        predicted = F(0)
+        for residual in range(1, full_word):
+            first = sum(
+                (temporal(subset) for subset in range(state_count)
+                 if not subset & ~residual),
+                F(0),
+            )
+            complement = full_word ^ residual
+            second = sum(
+                (temporal(full_word ^ subset)
+                 for subset in range(state_count)
+                 if not subset & ~complement),
+                F(0),
+            )
+            predicted += first * second
+        predicted *= alpha**width * prod(amplitudes)
+
+        packet_trivial = F(7, 8)
+        packet_determinant = F(3, 8)
+        temporal_count = 3 * width + 1
+
+        def packet_temporal(word: int) -> F:
+            incidence = 2 * word.bit_count() + 2 * run_count(word, width)
+            return (
+                packet_determinant**incidence
+                * packet_trivial ** (temporal_count - incidence)
+            )
+
+        packet_predicted = F(0)
+        for residual in range(1, full_word):
+            first = sum(
+                (packet_temporal(subset) for subset in range(state_count)
+                 if not subset & ~residual),
+                F(0),
+            )
+            complement = full_word ^ residual
+            second = sum(
+                (packet_temporal(full_word ^ subset)
+                 for subset in range(state_count)
+                 if not subset & ~complement),
+                F(0),
+            )
+            packet_predicted += first * second
+        packet_predicted *= alpha**width * prod(amplitudes)
+        theta = 1 - (1 - F(1, 8)) ** temporal_count
+        packet_bound = (
+            2 * (2**width - 2)
+            * (epsilon * determinant_coefficient) ** width
+            * prod(amplitudes) * theta
+        )
+        rows.append((
+            width,
+            direct[width],
+            predicted,
+            direct[width] == predicted,
+            all(value == 0 for value in direct[:width]),
+            abs(predicted - packet_predicted),
+            packet_bound,
+        ))
+        half_assignments = sum(
+            1 for choices in product(range(4), repeat=width)
+            if any(choice < 2 for choice in choices)
+            and any(choice >= 2 for choice in choices)
+        )
+        small_step_counts.append((width, half_assignments // 2**width))
+
+    r2_unit = F(1, 4) * 2 * (1 + F(1, 2) ** 4) * (
+        F(1, 2) ** 4 + F(1, 2) ** 6
+    )
+    scalar_loss = F(1, 4)
+    factor_two_rows = tuple(
+        (
+            width,
+            (1 - (1 - scalar_loss) ** 2) * count,
+            2 * scalar_loss * count,
+            scalar_loss * count,
+        )
+        for width, count in small_step_counts
+    )
+    return {
+        "rows": tuple(rows),
+        "formula_exact": all(row[3] for row in rows),
+        "lower_orders_zero": all(row[4] for row in rows),
+        "packet_bound_holds": all(row[5] <= row[6] for row in rows),
+        "factor_two_needed": all(
+            error <= full_bound and error > halved_bound
+            for _width, error, full_bound, halved_bound in factor_two_rows
+        ),
+        "factor_two_rows": factor_two_rows,
+        "r2_half_response": r2_unit,
+        "r2_matches": r2_unit == F(85, 2048),
+        "small_step_counts": tuple(small_step_counts),
+    }
+
+
 def main() -> int:
     matrix = matrix_fixture()
     z2 = z2_conditional_fixture()
@@ -994,6 +1171,7 @@ def main() -> int:
     response_packet = packet_quadratic_response_fixture()
     determinant = original_link_determinant_offblock_fixture()
     determinant_selection = determinant_scale_selection_fixture()
+    finite_rth = finite_rth_determinant_response_fixture()
 
     expected_defect: Matrix = ((F(1, 16), F(0)), (F(0), F(0)))
     expected_packet_defect: Matrix = ((F(1, 64), F(0)), (F(0), F(0)))
@@ -1174,6 +1352,24 @@ def main() -> int:
         (
             "shared retained rung makes the r=2 q=2 response context dependent",
             determinant_selection["shared_rung_nonfactor"],
+        ),
+        (
+            "direct finite-step determinant series first mixes at response order r",
+            finite_rth["formula_exact"] and finite_rth["lower_orders_zero"],
+        ),
+        (
+            "finite-step order-r formula recovers the exact r=2 half-response",
+            finite_rth["r2_matches"],
+        ),
+        (
+            "small-step determinant coefficient counts all proper residual subsets",
+            finite_rth["small_step_counts"]
+            == tuple((width, 2**width - 2) for width in range(2, 7)),
+        ),
+        (
+            "selected order-r response obeys the explicit temporal packet bound",
+            finite_rth["packet_bound_holds"]
+            and finite_rth["factor_two_needed"],
         ),
     )
 

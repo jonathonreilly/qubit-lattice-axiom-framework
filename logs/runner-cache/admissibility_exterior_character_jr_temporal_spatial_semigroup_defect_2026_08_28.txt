@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: 019342cc0176b1de0a29a53f59d9b6a968ca8a56e03cb539d7cb7e3b1cd14d79
-input_fingerprint_sha256: 9722147b277d5f4d46ca88118c398bca035c2e72dcabb6e61e4ce66ea130c304
+runner_sha256: 61b33a37f71eca551adc2a95b6279b32beb3db25c9f3d310a54ca5e52d150987
+input_fingerprint_sha256: fdb87d2075808a43db08a4927a26fc55c4583b7d504cfb74a4f405723b9e6ab8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.61
+elapsed_sec: 6.58
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms
@@ -46,6 +46,10 @@ status: ok
 [PASS] exact determinant offdiagonal selection is coarse-hypercube adjacency only at r=2
 [PASS] the full O3 quadratic vacuum-to-determinant selection vanishes for r>=3
 [PASS] shared retained rung makes the exact r=2 response nonfactorizing across q
+[PASS] exact finite-step determinant off-block first appears at response order r
+[PASS] residual projector removes exactly the two cylindrical endpoint subsets
+[PASS] finite-step order-r response is positive and recovers 2^r-2 at small step
+[PASS] selected order-r determinant response has explicit temporal rq packet control
 [PASS] common scalar normalization cannot remove the kinetic principal symbol
 [PASS] one common normalization scalar rescales the defect quadratically
 [PASS] normalization convention is fixed before comparing direct and staged paths
@@ -60,9 +64,9 @@ per_element: all 48 signed O(3) frames and their exterior-character values were 
 per_site: the two-cell hidden-Haar fiber and both retained coarse sectors were enumerated exactly
 per_mode: the Peter--Weyl core commutator square and nontrivial convolution channel were checked
 per_block: the complete physical J_r direct/staged defect and rq packet census were checked
-per_scale: conditioned fibers r=2,...,7 and complete-step response bidegrees r=3,4 were checked
+per_scale: conditioned fibers r=2,...,7 and exact finite-step determinant responses r=2,...,6 were checked
 lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied
-TOTAL: PASS=49 FAIL=0
+TOTAL: PASS=53 FAIL=0
 
 ----- stderr -----
 

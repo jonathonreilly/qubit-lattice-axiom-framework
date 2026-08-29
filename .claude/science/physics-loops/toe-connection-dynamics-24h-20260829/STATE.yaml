@@ -2,10 +2,10 @@ loop: toe-connection-dynamics-24h-20260829
 mode: campaign
 deadline_utc: 2026-08-30T01:29:00Z
 target_status: best-honest-status
-current_block: 243
-active_branch: physics-loop/toe-connection-dynamics-block243-q4-temporal-q-20260829
-active_route: q4_combined_response_landed_then_gram_memory
-hard_residual: test Gram positivity and the minimal history carrier of the exact eight-history response, then compare the arbitrary-r transfer route
+current_block: 244
+active_branch: physics-loop/toe-connection-dynamics-block244-r3q2-adjacent-product-20260829
+active_route: r3_q2_adjacent_product_vector_response
+hard_residual: independently refute or validate the closed r3-q2 cubic candidate, then package it only if the physical-Q and normalization gates survive
 actual_current_surface_status: conditional-support
 conditional_surface_status: exact local cup-compression theorem plus exact eight-history combined q4 response after physical Q on the supplied open Block232-242 Class-C stack
 trace_class: direct_blocker_closure
@@ -48,5 +48,22 @@ block240_pr: 7794
 block241_pr: 7795
 block242_pr: 7796
 block243_pr: 7797
-next_exact_action: test Gram positivity/minimal history memory of the exact combined kernel, then compare the arbitrary-r transfer route
+block244_preflight:
+  q4_physical_response_psd: inherited_exactly_from_R_equals_L_dagger_L
+  q4_canonical_two_word_feature_rank: rank_2_for_0_lt_t_lt_1_rank_1_at_identity_rank_0_at_Haar_endpoint
+  q4_global_minimal_memory: remains_open_without_diagonal_and_exclusive_histories
+  selected_new_route: r3_q2_adjacent_product_background
+  identity_crossing_raw_overlaps: six_of_six_equal_1_over_9_over_three_primes
+block244_candidate:
+  response_order: cubic_first_possible_entry
+  proper_action_partitions: 6
+  temporal_half_histories: 48
+  active_original_links: 17_of_19_after_h4_h5_merged_loop_cancellation
+  endpoint_kernel_types: 2_to_2_and_1_to_3
+  physical_q: proper_J3_histories_have_zero_conditional_Haar_mean_and_remain_in_ker_Q_after_supplied_commuting_crossing
+  primary_exact_checks: 162_of_162
+  multi_sample_hostile_checks: 432_of_432_reported_pending_independent_refuter
+  identity_control: 2_over_3_after_cubic_half_action_normalization
+  review_state: independent_refuter_active
+next_exact_action: complete the independent reconstruction and hostile review of the r3-q2 closed polynomial, then run review-loop and open one stacked PR only if every gate passes
 stop_condition: campaign deadline or global queue exhaustion after required deep-work gates

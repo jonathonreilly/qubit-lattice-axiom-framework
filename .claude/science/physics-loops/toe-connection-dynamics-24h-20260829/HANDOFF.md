@@ -79,3 +79,34 @@ changed.
 
 Block243 is open as stacked review PR #7797 on Block242 PR #7796. Do not merge
 either PR in this campaign.
+
+Block244 preflight rejects a premature global-memory claim. The full physical
+response is positive semidefinite by the parent exact identity `R=L^dagger L`.
+On the two supplied Block243 words, the canonical shared O01/O10 feature
+completion has exact rank two for every finite supplied step `0<t<1`, dropping
+to rank one at identity and zero at the Haar endpoint. But Block243 computes a
+cross-response, not the diagonal and exclusive histories, so it does not fix
+the globally minimal physical history carrier. This boundary is recorded rather
+than packaged as a low-value corollary PR.
+
+The active exact target is now the first genuinely new intersection of the two
+already established extension lanes: the `r=3,q=2` adjacent-product vector
+background with physical `J_3/Q`. Its original-link carrier has six nonempty
+proper action partitions and 19 links. As an exact control, all six raw identity
+crossing overlaps equal `1/9` over `F_1009`, `F_1013`, and `F_1019`; the open
+kernel has two endpoint-selected types (`2<->2` and `1<->3`). Next derive the
+fully dressed temporal monomials for all six histories, prove the physical-`Q`
+step, and hostile-test any naive reuse of the one-cell or `r=2` formulas. No
+axiom or approved primitive changed.
+
+The exact derivation has now produced a closed candidate. With
+`M_1=1+3t+5u` and `M_2=1+3t^2+5u^2`, the normalized cubic response is
+`(epsilon c_V^(n)/2)^3 a_0 a_1 a_2 S(t,u)`, where `S` is a positive-power
+polynomial assembled from one linear-moment, one quadratic-moment, and one
+scalar endpoint class. All 48 half-action histories match the original-link
+Brauer contraction over three primes, and the exact identity limit is `2/3`.
+The primary replay is `162/162`; an additional signed, independently varied
+`d,t,u,v` suite is reported as `432/432` and is being independently refuted.
+The claim is only the first `r>2,q>1` product-background cubic coordinate on
+the supplied conditional action/Q stack, not an arbitrary-`(r,q)` transfer,
+full Gram, minimal-memory theorem, clock, continuum, or gravity result.

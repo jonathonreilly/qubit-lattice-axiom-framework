@@ -2,9 +2,9 @@
 
 | Rank | Target | Why it can move the science | Next falsifier |
 |---:|---|---|---|
-| 1 | Gram positivity and minimal history carrier of the exact q=4 response | Converts the newly closed local response into a reusable dynamical kernel and identifies the actual memory cost | construct the finite history Gram directly; reject positivity inferred only from the scalar formula |
-| 2 | Arbitrary-r scalar-fused defining-vector transfer | Extends the exact bridge in spatial width | reconstruct from original links, not exponent extrapolation |
-| 3 | First multicell vector history with physical Q | Tests whether the exact local kernel survives composition | preserve conditional means and test the composed Gram directly |
+| 1 | `r=3,q=2` adjacent product-vector response with physical `J_3/Q` | First genuinely new intersection of arbitrary spatial width and a retained-rung multicell background; a closed cubic candidate now exists with two endpoint kernels and load-bearing `M_1,M_2` channels | independently reconstruct all 48 temporal histories, physical `Q`, cubic normalization, and the disappearance of `d,v`; package only after hostile review |
+| 2 | Diagonal and exclusive-history completion of the `q=4` Gram | Required before any global minimal-memory theorem; Block243 fixes only the `Y,Z` cross-response | construct the missing physical histories and compare their exact feature rank with the canonical rank-two cross completion |
+| 3 | Larger product/multirun word at `r=2` | Extends the known channel alphabet beyond the already closed adjacent-pair and gap-fill examples | test whether genuinely new fusion states survive physical `Q` rather than repackaging Blocks236--238 |
 | 4 | Conditional six-channel Hermitian local Jacobian from POSITIVE_PATH Result92 | Exact representation theorem after supplying Hermitian tangent slices, linearization, and diagonal spatial-to-Bloch action; not axiom-native | keep imports explicit; do not treat Results92--99 as minimal-axiom dynamics |
 
 Result92's `96 -> 6` count is exact only after importing a four-real-dimensional
@@ -22,3 +22,19 @@ open-stack inputs. Results107 and 110--111 are classical/conditional structure;
 they do not prove or falsify the exact connection-dynamics kernel here.
 Blocks241--242 solve both static row-reduced orientations; do not repeat their
 91-coordinate static reductions component by component.
+
+Results113--125 do not redirect this campaign. Their propagation law is a
+supplied Dirac operator with cross-site frame and difference-rule imports,
+`M_2(C) -> M_4(C)` would change the axiom, and the claimed chiral off-diagonal
+kinetic block is not by itself a Yukawa or Dirac-mass interaction. The remaining
+doubler, commutant, and Clifford statements are classical or prior-art facts and
+do not supply the missing record dynamics.
+
+The Block244 Gram preflight also fixes a sharp boundary. Positivity of the full
+physical response is inherited from the exact parent identity `R=L^dagger L`,
+not inferred from Block243's scalar cross-entry. The canonical two-word shared
+feature completion has rank two for `0<t<1` (rank one at identity and zero at
+the Haar endpoint), but the global minimal history carrier remains open without
+the diagonal and exclusive histories. That observation is not a separate
+science block; the active exact route is therefore the new `r=3,q=2`
+adjacent-product calculation.

@@ -151,8 +151,13 @@
   controls, and incomplete N1 route markers/citations. The working tree adds an
   independent census oracle and full-table comparison, mutates the note text
   for all five scope controls, and rewrites N1 as five substantive attempted
-  routes with evidence citations. Focused confirmation by the same reviewer is
-  pending; no audit verdict, PR, push, or merge is recorded here.
+  routes with evidence citations. The same reviewer then found a stale
+  source-input cache fingerprint and four non-portable completion links. Those
+  two mechanical defects were repaired at `20d1299d8f`; focused confirmation
+  independently reproduced a fresh byte-identical `33/33` cache, resolving
+  repository-relative links, and seeded changed evidence with `checked=1`,
+  `failures=0`, and `forensic_evidence_ready=true`. The reviewer issued final
+  `PASS` on the exact tree. No audit verdict, PR, push, or merge is recorded here.
 - Block247 author-side repository gates: vocabulary lint has zero violations;
   compilation and strict audit lint pass; citation topology records four direct
   dependencies; and the full pipeline reaches graph build, seed, classifier,
@@ -162,3 +167,18 @@
   `1/1`, including the independent helper. Its branch-wide run against current
   `origin/main` checks 220 rows and inherits four unrelated failures; the
   Block247 row itself reports `forensic_evidence_ready: true`.
+- Cluster-cap evaluation for the seventh PR in this parent-row family: `OPEN`.
+  Block247 is not another finite-rank coordinate, relabeling, or determinant
+  corollary. It introduces a distinct no-go theorem: defining-vector fusion
+  creates a unique new top spin at every ordered physical-`Q` action/crossing
+  layer, proving that the selected orbit cannot lie in any finite-dimensional
+  linear invariant carrier. That premise was absent from Blocks241--246, which
+  constructed finite kernels, responses, Grams, and bounded leakage witnesses.
+  The claim is independently reviewable from its exact recurrence, primary
+  runner, independent Laurent-character implementation, and explicit imported
+  multiplier boundary. Its marginal review value is therefore the retirement
+  of a finite-closure strategy, not another sample in an already-reviewed
+  family. The audit burden is justified despite the long stack because the
+  claim type changes from finite constructive support to an unbounded selected
+  obstruction and directly determines the next falsifier: the complete
+  symmetric response may cancel or reinforce the unique top-spin branch.

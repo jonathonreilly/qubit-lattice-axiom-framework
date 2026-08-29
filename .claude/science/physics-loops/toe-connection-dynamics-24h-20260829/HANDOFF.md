@@ -321,10 +321,27 @@ full action exponential, nonlinear or indexed recurrence memory, arbitrary
 Independent root review found three packaging defects without finding a
 counterexample to the selected theorem: decisive crossing-power mutations were
 self-confirming, five scope checks did not mutate note text, and N1 lacked
-per-route markers/citations. The current working tree repairs those defects and
-awaits focused confirmation from the same reviewer. No PR was opened, no branch
-was pushed, and no merge was performed. The best next
+per-route markers/citations. The same reviewer then found only a stale
+source-input cache fingerprint and four non-portable completion links. The
+final repair at `20d1299d8f` refreshes the exact cache and uses only
+repository-relative targets. Focused confirmation independently reproduced
+fresh cache identity, resolving links, and seeded changed evidence
+(`checked=1`, `failures=0`, `forensic_evidence_ready=true`) before issuing
+`FINAL VERDICT: PASS` on the exact tree. No audit verdict, PR, push, or merge
+was performed during review. The best next
 falsifier is an exact top-spin calculation for the complete symmetric branch:
 if its two operator orders cancel at some layer, the selected no-go does not
 widen; if their top coefficients add with the supplied positive multipliers,
 the no-go can be strengthened toward the complete local action kernel.
+
+The mandatory seventh-PR cluster-cap evaluation is `OPEN`. Block247 contributes
+a new load-bearing no-go rather than a relabeled finite-rank consequence: the
+unique top-spin induction proves an unbounded selected physical-`Q`
+action/crossing tower, whereas Blocks241--246 supplied finite permutation
+kernels, temporal responses, Gram carriers, and bounded leakage witnesses. Its
+claim type, proof obligation, and falsifier are distinct; the note and paired
+independent runners can be audited on their own stated imported-multiplier
+boundary. Reviewing this delta retires the finite linear invariant-carrier
+strategy and determines whether the complete symmetric response is the next
+meaningful widening target. That marginal science value justifies one stacked
+review PR despite the existing family depth.

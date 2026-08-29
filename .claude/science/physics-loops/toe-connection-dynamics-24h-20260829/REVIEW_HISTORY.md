@@ -46,3 +46,5 @@
   runners before reaching the same inherited dependency-policy epoch-manifest
   mismatch disclosed on the parent stack. Generated control-plane churn was
   stripped; no audit verdict was applied.
+- Block242 review PR #7796 opened on the reviewed Block241 branch; no merge was
+  performed.

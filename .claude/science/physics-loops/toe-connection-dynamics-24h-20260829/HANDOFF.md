@@ -13,4 +13,5 @@ endpoint or a full q=4 response. Different column closures, the nested temporal
 multipliers, physical Q, four Gram histories, reachability/observability, and
 minimal memory remain open. Next: assemble the supplied pair/triple/quadruple
 operators on the exact Block241 O01 cycle and Block242 O10 cup maps, then apply
-physical Q. Block241 is open as review PR #7795; Block242 review is pending.
+physical Q. Block241 is open as review PR #7795 and Block242 is open as stacked
+review PR #7796; do not merge either PR in this campaign.

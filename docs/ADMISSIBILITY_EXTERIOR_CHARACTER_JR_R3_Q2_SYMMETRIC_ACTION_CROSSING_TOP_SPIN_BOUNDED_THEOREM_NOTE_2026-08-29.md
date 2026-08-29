@@ -41,7 +41,7 @@ next_trace_action: "Enumerate mixed-placement top channels of the summed action 
 
 # The two action/crossing orders reinforce the local highest-spin branch
 
-**Status:** `proposed_retained`
+**Status:** `conditional-support`
 
 **Type:** `bounded_theorem`
 

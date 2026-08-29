@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_r3_q2_second_crossing_leakage_2026_08_29.py
 runner_sha256: a2f27cf682dab2d32de70dee3f8fe5292744c3ef5beeffe8095ce4d34776fbe2
-input_fingerprint_sha256: 8e07243a0cf90cc52ed9bd24ba3450610520c5e0bc345fc024f598e5f2d1bc56
+input_fingerprint_sha256: 6befad11c60d38091c575aafe842c7ab508c49241b0d63ab576837cd78051585
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 78.20
+elapsed_sec: 77.26
 status: ok
 ----- stdout -----
 temporal disclosed 1009 {'sector_rows': [((0,), 5, 11, 15), ((1,), 5, 10, 14), ((2,), 6, 13, 17), ((0, 1), 4, 6, 8), ((0, 2), 4, 6, 8), ((1, 2), 5, 8, 10)], 'old_rank': 29, 'twice_crossed_rank': 54, 'union_rank': 72, 'leakage_rank': 43, 'repeated_half_residuals': [0, 0, 0, 0, 0, 0], 'reversal_residuals': [0, 0, 0, 0, 0, 0]}

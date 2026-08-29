@@ -7,9 +7,9 @@ active_branch: physics-loop/toe-connection-dynamics-block246-rank29-action-leaka
 active_route: r3_q2_rank29_second_crossing_leakage
 hard_residual: independently validate the sample-wise rank-72 non-closure witness under a second supplied central crossing without claiming an unproved generic upper bound
 actual_current_surface_status: conditional-support
-conditional_surface_status: exact six-sector selected-history Gram on the supplied r=3, q=2 action, temporal, and physical-J3/Q stack
-trace_class: direct_blocker_closure
-reachability_to_target: partially_closes
+conditional_surface_status: exact finite non-closure witnesses for the selected r=3, q=2 history carrier on the supplied crossing, exterior-action, and physical-J3/Q stack
+trace_class: negative_route_pruning
+reachability_to_target: prunes
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

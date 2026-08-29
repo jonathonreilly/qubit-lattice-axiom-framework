@@ -341,8 +341,8 @@ selected carrier.
 
 A repo-wide status/retirement scan was run with
 `rg -n -i "static cup|cup-image projector|global minimal memory|invariant closure|rank-29" docs .claude/science/physics-loops/toe-connection-dynamics-24h-20260829`.
-It found the prior static-cup wall in the [q=4 temporal bridge, lines
-289--298](ADMISSIBILITY_EXTERIOR_CHARACTER_JR_R2_Q4_O10_TEMPORAL_CUP_BRIDGE_BOUNDED_THEOREM_NOTE_2026-08-29.md#L289-L298):
+It found the prior static-cup wall in
+`docs/ADMISSIBILITY_EXTERIOR_CHARACTER_JR_R2_Q4_O10_TEMPORAL_CUP_BRIDGE_BOUNDED_THEOREM_NOTE_2026-08-29.md:289-298`:
 that surface retires only the artificial intermediate cup-projection route and
 explicitly preserves the eight-axis temporal identities. It also found the
 [parent's still-open invariant-closure residual, lines

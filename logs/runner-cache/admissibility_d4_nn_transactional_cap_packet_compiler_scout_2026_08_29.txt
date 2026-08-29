@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_nn_transactional_cap_packet_compiler_scout_2026_08_29.py
+runner_sha256: a2e9eee43e5bd0f7f44bdf6d5a7007effeec557726b88124e7feee5cf10606e2
+input_fingerprint_sha256: 8cedb32d6f9d861687a000263a34ae36f6d71e88356828c227c3df504a01dbe6
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 7.42
+status: ok
+----- stdout -----
+PASS provenance: corrected two-commit authority and nine forensic inputs including source note and registry
+PASS signed-ray-fan: derived B=43 F=73, K=761, shells, 41 orbits, 72 radius-rule nonconflicts
+PASS overlap-symbolic-OR: all 6,859 displacements in [-9,9]^3 plus one symbolic 760-variable OR normal form
+PASS two-phase-transaction: fresh six-A2 geometry inference and all 2,688 clear/blocked controller controls
+PASS arbitrary-reference: writer block basis 696341272098026404630757376 / surviving 79164837199872, local coefficients 72; controller 5376/10752
+PASS exact-packet-effects: generated 6+8 coin, 143 writer state, 144/1/111 affine state, positivity and effects
+PASS isolated-sparse-maps: individual basis maps are exact; invocation binding is tested separately and fails
+PASS netlist-structural-partial: 596 route skeletons and ordering census pass, but this checker is mutation-incomplete; sha256=9dc4176d66894d2e1d1a71b949c7bffa55ec1f995fc40cf4d5cf8044fd81c020
+PASS resources-and-depth: 354 base bits/site*73 +4253 route/binding bits +714 retained = 30809; 24 routed edge rounds, 34 scheduled rounds, depth 114
+PASS frozen-construction-falsifier: 85 unsourced route seeds, three load-bearing opcode/map arity families disconnected, 8/8 fresh hostile mutations survive the old structural checks
+PASS strict-M2-N1-N8: one fibre-nonconstancy wall; center/dimension corroboration; exactly six live exits
+PASS original-hostile-mutations: 32 original mutants rejected, but the independent eight-mutation extension exposes the blind spot
+N5 per_element: exact mixtures checked; one common quotient input has unequal writer and STOP outputs
+N5 per_site: 85 blank/predicate/obstacle route seeds have no producer in the emitted netlist
+N5 per_mode: selected equal-six writer mode compared with STOP; no negative claim about other modes
+N5 per_block: geometry and abstract channel formulas survive, but the frozen netlist does not bind their payloads
+N5 lattice_wide: checked and not executed — supplied trigger batch has no occurrence hazard, concurrency law, or physical clock
+SUBCERTIFICATE: NO-FACTORIZATION-THROUGH-STRICT-M2 — exact same-environment full-domain strict quotient only
+UNAWARDED: HYBRID-RECORD-SECTOR-NN-TRANSACTION-GRAMMAR — payload provenance and executable map binding fail
+TERMINAL: SCOUT-FAILED-TO-CONSTRUCT-FROZEN-SIGNED-RAY-FAN-GRAMMAR — this frozen candidate only; other finite local constructions remain live
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

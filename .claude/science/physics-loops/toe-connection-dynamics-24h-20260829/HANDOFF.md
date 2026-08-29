@@ -409,3 +409,21 @@ composable physical-response carrier, the full exponential, invariant closure,
 and global minimal memory receive no conclusion in Block248. Every parent PR
 is treated as open. The worker performs no push, PR, merge, audit verdict,
 axiom edit, or primitive edit.
+
+The same independent reviewer issued a superseding final `PASS` on repaired
+commit `8f48b5a850`: the sole earlier failure was a stale cache fingerprint after
+a wording-only claim-status repair, and the final commit changes only that
+cache.  Live and cached primary output remain byte-identical at `21/21`; the
+independent and hostile suites remain `12/12` and `14/14`.
+
+The mandatory eighth-PR cluster-cap verdict is `OPEN`.  This is not a relabeled
+rank corollary: Block247 left cancellation in the complete symmetric
+`B C_c+C B` response as its decisive falsifier, while Block248 proves that the
+two orders reinforce on all three fixed placements and supplies an exact signed
+boundary where cancellation returns outside the positive supplied domain.  It
+is a distinct positive theorem with a self-contained note, primary certificate,
+and independent oriented-link reconstruction.  Its marginal review value is to
+decide whether Block247's selected ordered tower is an ordering artifact before
+the campaign attempts mixed placements or the full exponential.  The verdict
+gates only opening a review PR; it is not an audit verdict or permission to
+merge.

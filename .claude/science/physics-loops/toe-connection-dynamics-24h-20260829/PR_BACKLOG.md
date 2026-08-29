@@ -64,7 +64,10 @@ the same reviewer issued a final `PASS` after five narrow packaging repairs.
 The mandatory seventh-PR cluster-cap evaluation is `OPEN`. The campaign will
 not merge it.
 
-Block248 has no PR. The user-directed worker contract requires one local commit
-on `physics-loop/toe-connection-dynamics-block248-symmetric-action-crossing-20260829`
-and explicitly forbids push or PR creation. Every parent PR, including #7801,
-is treated as an open dependency; no merge is performed.
+Block248 has passed fresh independent review on repaired commit `8f48b5a850`.
+The mandatory eighth-PR cluster-cap verdict is `OPEN` because it resolves the
+Block247 cancellation falsifier with a distinct positive complete-symmetric
+fixed-placement theorem and a signed hostile boundary.  Root may open one
+stacked review PR on Block247 after the final governance gates; the worker
+itself performed no push or PR creation.  Every parent PR, including #7801,
+remains an open dependency and no merge is performed.

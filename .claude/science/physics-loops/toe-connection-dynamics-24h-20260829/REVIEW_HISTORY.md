@@ -222,3 +222,22 @@
   `changed_surfaces` and `helper_runner_paths`. The temporary 1,033 generated
   ledger shards and derived summaries were removed after the check; no audit-
   owned result is committed.
+- Block248 final independent review: the fresh maximum-reasoning reviewer found
+  no science defect and initially failed commit `1c85b1d408` only because the
+  preceding claim-status repair left the source-bound primary cache fingerprint
+  stale.  Commit `8f48b5a850` regenerates only that cache.  The same reviewer
+  independently reproduced its runner SHA and seven-input fingerprint, verified
+  byte-identical `21/21` stdout, confirmed that the other 19 reviewed blobs are
+  unchanged and the tree is clean, and issued the superseding `FINAL VERDICT:
+  PASS`.  The packet remains `conditional-support`; this review applies no audit
+  verdict and does not close any open parent.
+- Block248 mandatory eighth-PR cluster-cap: `OPEN`.  The block answers
+  Block247's named cancellation falsifier with a distinct positive coefficient
+  theorem: the two typed operator orders reinforce rather than cancel on every
+  named fixed placement under the supplied positive multipliers.  That premise,
+  claim type, and signed-cancellation hostile boundary are not restatements of
+  the earlier finite kernels, Gram/rank results, leakage witness, or selected
+  ordered no-go.  The theorem note and independent runner are separately
+  reviewable, and deciding whether the selected tower survives the complete
+  symmetric local response has enough marginal audit value to justify one more
+  stacked review PR.

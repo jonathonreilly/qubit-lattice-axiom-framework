@@ -135,3 +135,7 @@ the graph, seeding the ledger, and classifying runners. Generated audit churn
 was stripped and no audit verdict was applied. Open one stacked review PR for
 this coherent block, then move directly to the complete six-history Gram/rank
 problem rather than polishing this single coordinate.
+
+Block244 is open as stacked review PR #7798 on Block243 PR #7797. Do not merge
+either PR in this campaign. The next worker has been dispatched on the complete
+six-history `r=3,q=2` Gram/rank problem.

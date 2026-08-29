@@ -97,3 +97,5 @@
   mismatch on the parent stack. Generated audit churn was stripped, the
   citation manifest alone was retained for the new node/edges, and no audit
   verdict was applied.
+- Block244 review PR #7798 opened on the reviewed Block243 branch. It is open
+  and cleanly stacked; no merge was performed.

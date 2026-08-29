@@ -27,3 +27,12 @@ Its direct all-link certificate passes `247/247`, its combined response runner
 passes `30/30`, and `7/7` hostile mutations are rejected. Fresh independent
 review and the focused review loop both pass. Changed-science evidence
 readiness passes `1/1`. The campaign will not merge it.
+
+Block244 exact `r=3,q=2` adjacent-product cubic-response review PR #7798 is
+open:
+<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7798>.
+
+It is stacked on Block243 PR #7797. Its primary exact certificate passes
+`612/612`, all `9/9` hostile mutations are rejected, and the independent dense
+temporal reconstruction passes `96/96` at two signed samples. Changed-science
+evidence readiness passes `1/1`. The campaign will not merge it.

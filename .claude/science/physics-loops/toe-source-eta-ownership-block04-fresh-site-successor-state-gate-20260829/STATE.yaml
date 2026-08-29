@@ -11,7 +11,7 @@ minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 goal_blob: 10926b15206d92ea49cc7f1b3f0820824764bdd3
 preflight_blob: 52515476e975cf169f2dbe3842b90266e613e26a
 preregistration_commit: 5e64f859d9e5aee0df108333aa6830f9e415af4f
-result_commit: pending
+result_commit: 54032f5737367851f3d84c7ce2ec27f7399ebf2e
 result_pr: backlogged
 latest_gravity_pr: 7792
 latest_gravity_head: 9111b1fe2bdbc7ebd3f8a0bcb532ee48a2a0c65d

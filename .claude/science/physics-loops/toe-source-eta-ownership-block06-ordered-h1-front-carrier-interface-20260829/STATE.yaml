@@ -1,6 +1,6 @@
 loop_id: toe-source-eta-ownership-block06-ordered-h1-front-carrier-interface-20260829
 block: source_eta_06
-status: executed_cached_delivery_pending
+status: executed_cached_delivery_backlogged
 phase: ordered_h1_front_carrier_interface
 branch: physics-loop/toe-source-eta-ownership-block06-ordered-h1-front-carrier-interface-20260829
 parent_commit: abf7fe23dcc3a9cff7e4cf27911ea8af8e08f47c
@@ -9,8 +9,8 @@ minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 goal_blob: 32d10cf951e4c7faf7249eb2553f5e2ecb8f1d71
 preflight_blob: a7db10e90f98cabc7c2a6e4fe64e8f241a5caa3d
 preregistration_commit: e75608573e5029521878731b30bb798ce70f8a9a
-result_commit: pending
-result_pr: pending
+result_commit: a09262a7d86f08e4aa7100bad7ab3f29acf937df
+result_pr: backlogged
 latest_gravity_pr: 7793
 latest_gravity_head: e5be453f7c5ba9505b3ae956eee52b207b9bca93
 panel_route_vote: 3_ordered_h1_1_q4_gravity_1_held_out_h2

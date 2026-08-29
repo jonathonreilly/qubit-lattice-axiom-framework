@@ -1,6 +1,6 @@
 loop_id: toe-source-eta-ownership-block02-action-native-record-dilation-20260828
 block: source_eta_02
-status: exact_result_packaging
+status: delivered_draft_pr
 phase: affine_eta_positive_center_corner_writer_positive_join_open
 branch: physics-loop/toe-source-eta-ownership-block02-action-native-record-dilation-20260828
 parent_branch: physics-loop/toe-source-eta-ownership-block01-action-factorized-six-record-decoder-20260828
@@ -14,6 +14,9 @@ fixture: H1
 target_runner_written_before_registration: false
 target_runner_executed_before_registration: false
 preregistration_commit: d182453a70
+result_commit: 03c3629fd0
+result_pr: 7787
+result_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7787
 primary_runner: scripts/admissibility_d4_block208_source_eta_action_native_record_dilation_2026_08_28.py
 independent_runner: scripts/independent_admissibility_d4_block208_source_eta_action_native_record_dilation_2026_08_28.py
 source_note: docs/ADMISSIBILITY_D4_BLOCK208_AFFINE_SIX_RECORD_H1_DECODER_CENTER_CORNER_QND_DILATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-28.md

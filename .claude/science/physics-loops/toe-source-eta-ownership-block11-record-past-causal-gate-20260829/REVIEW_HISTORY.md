@@ -27,7 +27,9 @@
 - the citation manifest acknowledges exactly one new node and two dependency
   edges; staged cache, explicit claim-typing, forensic-readiness, diff, and
   audit-lint gates pass (audit lint reports only inherited warnings/notices);
-- result commit and final delivery checkpoint remain pending;
+- science result commit `08451abcc246ba804663f684e21aaf43bf89c2e6`
+  was pushed to the registered branch;
+- this follow-up records the pushed delivery checkpoint;
 - no `review-loop` or audit verdict used.
 
 ## Generation-time conformance read

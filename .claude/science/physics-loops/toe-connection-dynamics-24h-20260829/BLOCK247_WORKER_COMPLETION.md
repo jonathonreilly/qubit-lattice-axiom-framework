@@ -14,10 +14,10 @@ Separately, crossing alone preserves Peter–Weyl labels and satisfies a finite 
 
 Artifacts:
 
-- [No-go theorem note](/private/tmp/toe-connection-dynamics-block247-crossing-action-closure-20260829/docs/ADMISSIBILITY_EXTERIOR_CHARACTER_JR_R3_Q2_PHYSICAL_Q_ACTION_CROSSING_TOWER_NO_GO_NOTE_2026-08-29.md)
-- [Primary exact runner](/private/tmp/toe-connection-dynamics-block247-crossing-action-closure-20260829/scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_2026_08_29.py)
-- [Independent Laurent-character checker](/private/tmp/toe-connection-dynamics-block247-crossing-action-closure-20260829/scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_independent_2026_08_29.py)
-- [Campaign handoff](/private/tmp/toe-connection-dynamics-block247-crossing-action-closure-20260829/.claude/science/physics-loops/toe-connection-dynamics-24h-20260829/HANDOFF.md)
+- [No-go theorem note](../../../../docs/ADMISSIBILITY_EXTERIOR_CHARACTER_JR_R3_Q2_PHYSICAL_Q_ACTION_CROSSING_TOWER_NO_GO_NOTE_2026-08-29.md)
+- [Primary exact runner](../../../../scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_2026_08_29.py)
+- [Independent Laurent-character checker](../../../../scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_independent_2026_08_29.py)
+- [Campaign handoff](HANDOFF.md)
 
 Checks:
 

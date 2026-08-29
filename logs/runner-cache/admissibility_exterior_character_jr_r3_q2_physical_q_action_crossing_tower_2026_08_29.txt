@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_2026_08_29.py
 runner_sha256: 8685d778727b410230f991384cd3cec7a21a2c270cf3ada040a84ed3aea02d9e
-input_fingerprint_sha256: a47d593438121eb1e868ad9389f41ac56fca1cfaf27d868dd7df5d1ff3fe0e4d
+input_fingerprint_sha256: 9ea15e71c01f2755f05c7bdc2a44d246c54a09ca9794a9dbd88a896f2687ace2
 timeout_sec: 30
 exit_code: 0
 elapsed_sec: 0.09

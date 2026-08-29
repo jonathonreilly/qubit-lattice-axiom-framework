@@ -5,11 +5,10 @@ target_blocker_text: "Resolve the K=1,2,3,4 multiplicity blocks and the seven od
 source_of_blocker_text: handoff
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Resolve the full O10 V3-to-V5 kernel, then insert nested central temporal multipliers and physical Q."
+next_trace_action: "Insert nested central temporal multipliers into the exact O01 cycle and O10 cup maps, then apply physical Q."
 ```
 
-Block241 directly closes the K=1--4 O01 half of Block240's next blocker by fixing
-every static O01 total-spin block as the restriction of one exact directed
-cycle.  The odd O10 half remains open, so reachability is only partial.  The
-result does not prove that the q3 `(L,J)` labels are insufficient, close minimal
-memory, or supply a full transfer law.
+Block242 directly closes the odd O10 half of Block240's static blocker by fixing
+the entire reduced `Hom_O(3)(V^5,V^3)` map as one exact adjoint cup. Temporal
+assembly and physical Q remain open, so reachability is still partial. The
+result does not close minimal memory or supply a full transfer law.

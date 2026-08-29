@@ -2,30 +2,31 @@ loop: toe-connection-dynamics-24h-20260829
 mode: campaign
 deadline_utc: 2026-08-30T01:29:00Z
 target_status: best-honest-status
-current_block: 241
-active_branch: physics-loop/toe-connection-dynamics-block241-q4-multiplicity-20260829
-active_route: q4_v4_all_spin_permutation_kernel
-hard_residual: resolve the full O10 V3-to-V5 kernel, insert nested temporal multipliers, and verify physical Q
+current_block: 242
+active_branch: physics-loop/toe-connection-dynamics-block242-o10-cup-factorization-20260829
+active_route: q4_o10_row_reduced_cup_factorization
+hard_residual: insert nested temporal multipliers into the exact O01/O10 maps and verify physical Q
 actual_current_surface_status: conditional-support
-conditional_surface_status: bounded theorem on the supplied open Block232-240 Class-C stack
+conditional_surface_status: bounded theorem on the supplied open Block232-241 Class-C stack
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 axiom_or_primitive_edits: 0
-open_prs: [7784, 7786, 7788, 7789, 7790, 7791, 7792, 7793, 7794]
-block241_checks:
-  finite_field_companion: 21/21
-  finite_field_mutations: 6/6
-  exact_rational_primary: 38/38
+open_prs: [7784, 7786, 7788, 7789, 7790, 7791, 7792, 7793, 7794, 7795]
+block242_checks:
+  finite_field_companion: 24/24
+  finite_field_mutations: 7/7
+  exact_rational_primary: 35/35
   exact_rational_mutations: 6/6
   exact_row_tensor_mismatches: 0/6561
-  explicit_all_spin_coordinate_blocks: 5/5
-claim_boundary: complete_static_column_closed_O01_kernel; O10_full_response_and_minimal_memory_remain_open
+  cup_complement_leakage: 0
+claim_boundary: complete_static_column_closed_O01_and_O10_maps; temporal_response_physical_Q_and_minimal_memory_remain_open
 review_loop_disposition: pass
 full_pipeline_disposition: inherited_dependency_policy_epoch_mismatch_after_graph_seed_classifier
 block240_pr: 7794
 block241_pr: 7795
-next_exact_action: prove or refute exact O10 cup factorization before inserting the nested pair/triple/quadruple temporal multipliers
+block242_pr: pending
+next_exact_action: insert the nested pair/triple/quadruple temporal multipliers into the exact O01 cycle and O10 cup maps, then apply physical Q
 stop_condition: campaign deadline or global queue exhaustion after required deep-work gates

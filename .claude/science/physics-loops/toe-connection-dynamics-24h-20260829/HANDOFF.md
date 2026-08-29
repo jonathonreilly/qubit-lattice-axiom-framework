@@ -1,17 +1,16 @@
 # Handoff
 
-Block241 collapses the complete static, column-closed O01 q=4 problem to one
-exact operator.  In occurrence order the row-reduced `3^8` tensor is
-`I_(V^4)/243`; in physical sequential order it is the directed cycle
-`P|A,D,E,F>=|D,E,F,A>` divided by 243.  Exact nested Casimir projectors give
-multiplicities `3,6,6,3,1` and explicit full-rank rational coordinate blocks
-for all 19 paths.  This fixes all 91 O01 equivariant coefficients, including
-the 82 outside Block240 K=0, while reproducing the reviewed K=0 matrix.
+Block242 closes the remaining static, row-reduced O10 q=4 problem. After four
+declared trace-normalized `I/3` column pairings, the complete rational `3^8`
+row tensor is `K10=C^dagger/243`, with 81 nonzeros and 0/6561 mismatches. The
+raw cup obeys `C^dagger C=3I`; hence `K10 C=I/81`, the cup-complement leakage is
+zero, and the operator has rank 27. This fixes the entire 91-coordinate
+equivariant O10 obligation at once and recovers Block240's `2/27` determinant
+overlap as a consequence.
 
-No axioms or primitives changed.  This is not the unrestricted sixteen-index
-endpoint or a full q=4 response.  O10 remains a 91-coefficient V3-to-V5 problem;
-Block240 checks only one raw K=0 cup overlap.  Minimal memory, physical Q, the
-nested temporal multipliers, and the four Gram histories remain open.  Next:
-prove or refute exact O10 cup factorization before temporal assembly.  The
-reviewed Block241 result is open as stacked review PR #7795; do not merge it in
-this campaign.
+No axioms or primitives changed. This is not the unrestricted sixteen-index
+endpoint or a full q=4 response. Different column closures, the nested temporal
+multipliers, physical Q, four Gram histories, reachability/observability, and
+minimal memory remain open. Next: assemble the supplied pair/triple/quadruple
+operators on the exact Block241 O01 cycle and Block242 O10 cup maps, then apply
+physical Q. Block241 is open as review PR #7795; Block242 review is pending.

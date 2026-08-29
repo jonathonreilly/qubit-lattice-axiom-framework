@@ -35,3 +35,14 @@
   errors.  The full repository pipeline reaches the same inherited
   dependency-policy epoch mismatch disclosed on the parent stack after graph,
   seed, and runner classification; generated pipeline churn was stripped.
+- Block242 exact reconstruction: the complete rational `3^8` row-reduced O10
+  tensor is `C^dagger/243`, with 81 nonzeros and zero mismatches; three finite
+  fields agree. Independent authority/governance, exact Brauer/code, and
+  cup/temporal-boundary reviewers all returned final PASS after the dependency
+  range, closure-tensor terminology, and arithmetic-provenance surfaces were
+  repaired. The focused Block242 review-loop disposition is pass.
+- Block242 formal repository compatibility run rebuilt the 5,661-node,
+  16,206-edge citation graph, seeded the ledger to a fixed point, and classified
+  runners before reaching the same inherited dependency-policy epoch-manifest
+  mismatch disclosed on the parent stack. Generated control-plane churn was
+  stripped; no audit verdict was applied.

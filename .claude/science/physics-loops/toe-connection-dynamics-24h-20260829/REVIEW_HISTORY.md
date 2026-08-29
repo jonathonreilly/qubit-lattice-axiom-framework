@@ -182,3 +182,6 @@
   claim type changes from finite constructive support to an unbounded selected
   obstruction and directly determines the next falsifier: the complete
   symmetric response may cancel or reinforce the unique top-spin branch.
+- Block247 review PR #7801 opened on the independently reviewed Block246
+  branch after the cluster-cap returned `OPEN`. It is review-only; no merge or
+  audit verdict was performed.

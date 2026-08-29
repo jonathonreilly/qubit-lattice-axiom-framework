@@ -327,8 +327,9 @@ final repair at `20d1299d8f` refreshes the exact cache and uses only
 repository-relative targets. Focused confirmation independently reproduced
 fresh cache identity, resolving links, and seeded changed evidence
 (`checked=1`, `failures=0`, `forensic_evidence_ready=true`) before issuing
-`FINAL VERDICT: PASS` on the exact tree. No audit verdict, PR, push, or merge
-was performed during review. The best next
+`FINAL VERDICT: PASS` on the exact tree. After the final governance gates,
+Block247 was opened as stacked review PR #7801 on Block246 PR #7800; no audit
+verdict or merge was performed. The best next
 falsifier is an exact top-spin calculation for the complete symmetric branch:
 if its two operator orders cancel at some layer, the selected no-go does not
 widen; if their top coefficients add with the supplied positive multipliers,

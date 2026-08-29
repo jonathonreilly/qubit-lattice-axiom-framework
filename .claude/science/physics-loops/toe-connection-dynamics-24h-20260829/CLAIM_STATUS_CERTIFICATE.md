@@ -45,5 +45,5 @@ commit `20d1299d8f` after reproducing the fresh source-bound cache, portable
 links, and seeded `1/1` evidence readiness. The mandatory seventh-PR
 cluster-cap evaluation is `OPEN` because this is a distinct unbounded selected
 no-go rather than another finite-rank corollary. Independent audit remains
-pending. No PR, push, merge, axiom edit, primitive edit, or audit verdict has
-been performed.
+pending. The reviewed branch is open as stacked review PR #7801 on Block246;
+no merge, axiom edit, primitive edit, or audit verdict has been performed.

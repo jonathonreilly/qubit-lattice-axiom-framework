@@ -54,8 +54,12 @@ representation/Haar reconstruction passes `12/12`. The same reviewer confirmed
 the repaired governance packet and issued a final `PASS`. The campaign will not
 merge it.
 
-Block247 has no PR action in this worker. The dispatch explicitly reserves the
-next step for independent root review and forbids opening a PR here. The local
-candidate branch is
-`physics-loop/toe-connection-dynamics-block247-crossing-action-closure-20260829`;
-no push or merge has been performed.
+Block247 selected action/crossing tower no-go review PR #7801 is open:
+<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7801>.
+
+It is stacked on Block246 PR #7800. The primary certificate passes `33/33`,
+the independent Laurent-character reconstruction passes `9/9`, all `13/13`
+hostile mutations are rejected, the changed-evidence gate passes `1/1`, and
+the same reviewer issued a final `PASS` after five narrow packaging repairs.
+The mandatory seventh-PR cluster-cap evaluation is `OPEN`. The campaign will
+not merge it.

@@ -51,6 +51,7 @@ block243_pr: 7797
 block244_pr: 7798
 block245_pr: 7799
 block246_pr: 7800
+block247_pr: 7801
 block244_preflight:
   q4_physical_response_psd: inherited_exactly_from_R_equals_L_dagger_L
   q4_canonical_two_word_feature_rank: rank_2_for_0_lt_t_lt_1_rank_1_at_identity_rank_0_at_Haar_endpoint
@@ -160,5 +161,6 @@ block247_candidate:
   global_minimal_memory: remains_open_for_full_symmetric_nonlinear_or_indexed_carriers
   review_state: final_review_PASS_on_commit_20d1299d8f_after_same_reviewer_confirmed_cache_links_and_seeded_evidence
   cluster_cap: OPEN_for_seventh_parent_row_family_PR_as_distinct_unbounded_selected_no_go
+  review_pr: 7801_open_stacked_on_block246_never_merge_in_campaign
 next_exact_action: test the complete symmetric BC_c_plus_CB action/crossing branch and multiple plaquette placements for top-spin cancellation; do not widen the selected linear-carrier no-go to global minimal memory
-stop_condition: final independent review passed; cluster cap OPEN; complete final gates and open one stacked review PR without merging
+stop_condition: block247 reviewed_and_open_as_PR_7801_without_merge; continue_complete_symmetric_response_falsifier_until_campaign_deadline

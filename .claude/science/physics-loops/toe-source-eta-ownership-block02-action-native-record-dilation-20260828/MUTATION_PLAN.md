@@ -12,3 +12,10 @@ closure.
 The independent checker must rebuild the group, orbit histograms, code Gram
 matrix, completeness blocks, polynomial constraints, and source/probability
 image without importing primary result flags.
+
+Executed result: the primary runner passes 11/11 checks and rejects 33/33
+mutations; the independent checker passes 12/12 and rejects 25/25.  Mutations
+cover group closure, cocycle rank/class count, stabilizer matching, ANF degree
+and covariance, carrier injectivity/covariance, POVM and Kraus completeness,
+QND locking, overlap, sharpness nonselection, branch/source collision, exact
+110/110 source equality, cache identity, and claim-scope sentinels.

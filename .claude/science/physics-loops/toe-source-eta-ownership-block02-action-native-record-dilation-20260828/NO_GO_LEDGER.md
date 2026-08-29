@@ -1,9 +1,16 @@
 # No-Go Ledger
 
-No negative result is preregistered.
+The committed N1-N8 sidecar permits only three scoped boundaries:
 
-Any empty class must remain scoped to the explicitly exhausted carrier,
-readability, polynomial degree, and action family.  Larger support, histories,
-joint carriers, nonlinear higher degree, different actions, and stochastic
-symmetry-breaking remain live unless separately executed.  Run and commit the
-current N1-N8 discipline before shipping any named wall.
+1. the literal six-site permutation action has no 24-orbit and therefore no
+   deterministic covariant H1 contrast image;
+2. all affine bit-flip actions over six sites and center plus six have zero
+   stabilizer-compatible full 36-outcome embeddings; and
+3. the complete natural-action Boolean polynomial family through degree two
+   has Hom dimension two but zero H1-fitting masks.
+
+Broad no-go language fails.  In particular, the nontrivial affine class gives
+an exact degree-four/five six-Record H1 decoder, center plus eight corners gives
+a positive readable writer, and two six-shells give a positive control.
+Larger support, histories, joint carriers with proved readout, higher-degree
+actions, direct binary writers, and different laws remain live.

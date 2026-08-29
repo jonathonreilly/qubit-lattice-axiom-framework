@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_block208_source_eta_action_native_record_dilation_2026_08_28.py
+runner_sha256: 95ab72c5fd16f15f0b7290fa148fb13ade19319a3a641d0db9ff4d38cea88c97
+input_fingerprint_sha256: 007d9d7b9b1b3499eaecb24344eae6bfb1c81900013922f8c6baa52e1f153e63
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 11.33
+status: ok
+----- stdout -----
+PASS A: authority and immutable registration reconstruct independently
+PASS B: generator closure gives the complete 24-element proper-cubic group
+PASS C: outcome and literal-shell orbit mismatch is reproduced
+PASS D: one affine class carries the 24-orbit, but stabilizer matching finds no complete 36-outcome six- or seven-site embedding
+PASS E: two-shell product code is injective, orthogonal, and covariant
+PASS F: the explicit nine-site center-corner code and POVM blank/write/lock completeness prove total CP-QND writing
+PASS G: all old one-qubit outputs overlap and are not Record codes
+PASS H: sharp and unsharp menus remain distinct normalized readable laws with the same decoded phase
+PASS I: the same recorded branch occurs at equal positive weight for different source phases, so one sample is not the rate vector
+PASS J: character theory plus explicit covariants gives Hom dimension two and no H1 binary fit
+PASS K: independent Mobius reconstruction gives exact degree-4 contrast and degree-5 shear decoders on the unique affine regular orbit
+PASS L: independent native paths retain the 110/110 rank-three H1 source while closure remains open
+INDEPENDENT_ORBITS: outcomes={6: 2, 24: 1}; shell={1: 2, 3: 2, 6: 2, 8: 1, 12: 3}; affine6_classes=2; affine6_orbit24=1; affine6_full36=0.
+INDEPENDENT_POLYNOMIAL: character_sum=48; Hom_dim=2; fitting_masks=0.
+INDEPENDENT_AFFINE_ETA: base=000101; contrast_degree=4; shear_degree=5.
+MUTATIONS: rejected=25/25
+SCORECARD PASS=12 FAIL=0
+
+----- stderr -----
+

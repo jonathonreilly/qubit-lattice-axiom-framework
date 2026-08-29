@@ -29,3 +29,17 @@
 - Standard compact-group projectors, cup intertwiners, and representation
   multiplicities are prior mathematics; the exact original-link assembly and
   combined response are the load-bearing new result.
+- Block244 imports the arbitrary-`r` defining-vector action convention,
+  proper-subset carrier, `J_3/Q`, outer cubic response normalization, and the
+  two-cell adjacent-product geometry from its linked parent notes.
+- Block244 imports parent original-link representation-label diagonality and
+  `[C,Q]=0` to preserve the six conditional-Haar zero-mean histories through
+  temporal crossing. Symmetry alone is not claimed to prove this step.
+- Block244 imports formal central spin multipliers from the time-refinement
+  note. They are algebraic inputs, not a derived clock or physical dynamics.
+- Exact Block244 mathematics: exclusive-rail Peter--Weyl selection of the
+  complete cubic action channel; six proper partitions; 48 half-action
+  histories; original-link `O(3)` Haar/Brauer contraction; and exact summation
+  of the linear-moment, quadratic-moment, and scalar endpoint classes.
+- No literature value, empirical target, axiom edit, or approved primitive
+  edit enters Block244.

@@ -1,16 +1,16 @@
 ```yaml
 trace_class: direct_blocker_closure
-target_claim_id: admissibility_exterior_character_jr_r2_q3_seven_channel_temporal_response_bounded_theorem_note_2026-08-29
-target_blocker_text: "extend the finite exact response from q=3 to the first q=4 junction without assuming static cup closure commutes with temporal insertion"
+target_claim_id: admissibility_exterior_character_jr_arbitrary_r_scalar_fused_vector_transfer_bounded_theorem_note_2026-08-29
+target_blocker_text: "compute the first exact higher-r adjacent-product response after the physical conditional-Haar subtraction"
 source_of_blocker_text: handoff
-reachability_to_target: closes
+reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Test Gram positivity and the minimal history carrier of the exact combined kernel, then compare the arbitrary-r scalar-fused transfer route."
+next_trace_action: "Construct the complete six-history Gram carrier, or extend the exact original-link method to a second independent q or r, before making a transfer or memory claim."
 ```
 
-Block243 closes the stated first-q=4 finite-response blocker: all four O01 and
-all four O10 histories are exact, their combined normalization is fixed, and
-physical conditional-Haar `Q` acts on the relevant first-order history span
-without any static-cup substitution. This closure remains conditional on the
-supplied multipliers, response prefactor, and open dependency stack. It does
-not close minimal memory or supply an arbitrary-width transfer law.
+Block244 partially closes the arbitrary-width blocker by computing the first
+exact higher-`r` adjacent-product coordinate: the complete `r=3,q=2` cubic
+`Y`-to-`Z` response after physical conditional-Haar subtraction. The result is
+conditional on supplied multipliers, response prefactor, parent label
+diagonality, and the open dependency stack. It does not supply an arbitrary
+`r,q` transfer, a complete Gram, or a minimal-memory theorem.

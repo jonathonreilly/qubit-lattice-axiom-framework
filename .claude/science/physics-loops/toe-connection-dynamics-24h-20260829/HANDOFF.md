@@ -110,3 +110,18 @@ The primary replay is `162/162`; an additional signed, independently varied
 The claim is only the first `r>2,q>1` product-background cubic coordinate on
 the supplied conditional action/Q stack, not an arbitrary-`(r,q)` transfer,
 full Gram, minimal-memory theorem, clock, continuum, or gravity result.
+
+Fresh restricted-input review has now reconstructed the candidate on a
+separate mathematical path. Exact union-find `O(3)` Weingarten integration
+reproduces all six raw overlaps. An independent dense second/fourth-moment and
+spin-projector implementation matches all 48 histories at two unrelated signed
+samples (`96/96`, maximum discrepancy below `1.1e-23`), reproduces the closed
+polynomial, identity value `2/3`, disclosed rational and prime residues, and
+confirms that varying unused `d,v` data has no effect. The primary certificate
+passes `612/612`, including `594/594` load-bearing all-link comparisons, and
+all `9/9` hostile mutations are rejected. Review repaired two scope/proof
+surfaces: preservation through crossing is conditional on the supplied parent
+label diagonality and `[C,Q]=0`, and cubic completeness uses full
+Peter--Weyl action-irrep selection rather than a preselected vector channel.
+The finite theorem is therefore ready for the formal review-loop and
+audit-compatibility gates. It remains only one conditional response coordinate.

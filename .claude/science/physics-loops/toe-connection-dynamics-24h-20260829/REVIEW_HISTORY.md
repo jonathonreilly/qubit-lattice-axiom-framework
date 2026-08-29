@@ -75,3 +75,15 @@
   passed `1/1`, and no audit verdict was applied.
 - Block243 review PR #7797 opened on the reviewed Block242 branch; it is open
   and mergeable. No merge was performed.
+- Block244 fresh restricted-input review: PASS WITH BOUNDED CLAIMS after two
+  load-bearing repairs. The note now makes the physical-`Q` crossing step
+  conditional on the parent label-diagonality/commutation input and proves
+  cubic completeness by full action-irrep Peter--Weyl selection. An exact
+  union-find `O(3)` Weingarten calculation independently returns `1/9` for all
+  six raw overlaps. A separate dense second/fourth-moment and spin-projector
+  implementation matches all 48 histories at two signed samples (`96/96`,
+  maximum discrepancy below `1.1e-23`), reproduces the closed polynomial,
+  identity and rational controls, and confirms `d,v` independence. Primary
+  evidence passes `612/612`; all `9/9` hostile mutations are rejected.
+- Block244 formal review-loop and repository audit-compatibility gates are now
+  active. No audit verdict has been applied and no PR has been opened yet.

@@ -5,11 +5,11 @@ target_status: best-honest-status
 current_block: 244
 active_branch: physics-loop/toe-connection-dynamics-block244-r3q2-adjacent-product-20260829
 active_route: r3_q2_adjacent_product_vector_response
-hard_residual: independently refute or validate the closed r3-q2 cubic candidate, then package it only if the physical-Q and normalization gates survive
+hard_residual: complete review-loop and audit-compatibility gates for the independently reconstructed r3-q2 cubic candidate, then package it only if the branch remains clean
 actual_current_surface_status: conditional-support
 conditional_surface_status: exact local cup-compression theorem plus exact eight-history combined q4 response after physical Q on the supplied open Block232-242 Class-C stack
 trace_class: direct_blocker_closure
-reachability_to_target: closes
+reachability_to_target: partially_closes
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -61,9 +61,14 @@ block244_candidate:
   active_original_links: 17_of_19_after_h4_h5_merged_loop_cancellation
   endpoint_kernel_types: 2_to_2_and_1_to_3
   physical_q: proper_J3_histories_have_zero_conditional_Haar_mean_and_remain_in_ker_Q_after_supplied_commuting_crossing
-  primary_exact_checks: 162_of_162
-  multi_sample_hostile_checks: 432_of_432_reported_pending_independent_refuter
+  primary_exact_checks: 612_of_612
+  load_bearing_all_link_comparisons: 594_of_594
+  hostile_mutations: 9_of_9_rejected
+  independent_exact_topology_overlaps: 6_of_6_equal_1_over_9
+  independent_dense_temporal_reconstruction: 96_of_96_at_two_signed_samples
+  independent_maximum_numerical_discrepancy: less_than_1_1e_minus_23
+  independent_refuter_disposition: pass_with_bounded_claims
   identity_control: 2_over_3_after_cubic_half_action_normalization
-  review_state: independent_refuter_active
-next_exact_action: complete the independent reconstruction and hostile review of the r3-q2 closed polynomial, then run review-loop and open one stacked PR only if every gate passes
+  review_state: review_loop_and_audit_compatibility_gates_active
+next_exact_action: finish review-loop and audit-compatibility gates, open one stacked review PR if they pass, then construct the complete six-history Gram carrier
 stop_condition: campaign deadline or global queue exhaustion after required deep-work gates

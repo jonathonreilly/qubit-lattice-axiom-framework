@@ -1,6 +1,6 @@
 {
- "edge_count": 16217,
- "node_count": 5663,
+ "edge_count": 16221,
+ "node_count": 5664,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -941,6 +941,10 @@
   "admissibility_exterior_character_jr_r3_q2_adjacent_product_cubic_response_bounded_theorem_note_2026-08-29": {
    "deps_hash": "e58a993f7efb",
    "out_degree": 5
+  },
+  "admissibility_exterior_character_jr_r3_q2_six_history_gram_bounded_theorem_note_2026-08-29": {
+   "deps_hash": "92ef09062d0d",
+   "out_degree": 4
   },
   "admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_generated_interaction_bounded_theorem_note_2026-08-28": {
    "deps_hash": "84bdc8eaaee2",

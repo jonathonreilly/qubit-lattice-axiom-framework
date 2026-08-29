@@ -99,3 +99,27 @@
   verdict was applied.
 - Block244 review PR #7798 opened on the reviewed Block243 branch. It is open
   and cleanly stacked; no merge was performed.
+- Block245 preliminary construction was narrowed after independent review
+  caught that the complete temporal-half carrier contains 36 raw vectors, not
+  only the twelve normalized derivative sums. The repaired runner reconstructs
+  the full `36 by 36` Gram, proves exact six-sector orthogonality, gates seven
+  exact `t^4` relations, and finds raw sector ranks `(5,5,6,4,4,5)`.
+- Block245 independent restricted-input refuter: PASS WITH BOUNDED CLAIMS. The
+  refuter independently identified the seven rank relations, confirmed exact
+  generic raw rank 29 and normalized-sum rank 12, repaired the cross-sector
+  proof from an incomplete trivial-versus-vector sentence to the correct
+  inversion-parity argument, and required the note to disclose that diagonal
+  blocks depend on odd multipliers `d,v` even though the Block244 cross sum does
+  not. Full identity is `d=t=u=v=1`; both carriers have rank 12 there and rank
+  zero at `t=0`. Primary replay is `92/92`, all `6/6` hostile mutations are
+  rejected, compilation and diff checks are clean. No invariant-span or global
+  minimal-memory claim is allowed.
+- Block245 focused review-loop disposition: PASS WITH BOUNDED CLAIMS after the
+  same restricted-input reviewer found and confirmed repair of one stale
+  campaign `conditional_surface_status` line. Vocabulary lint is clean, strict
+  audit lint has no errors, the primary passes `92/92`, and all `6/6` hostile
+  mutations are rejected. The full repository pipeline builds the 5,664-node,
+  16,221-edge graph, seeds the ledger, and classifies runners before reaching
+  the inherited dependency-policy epoch-manifest mismatch on the parent stack.
+  Generated audit churn was stripped; the citation manifest alone records the
+  intended one-node/four-edge topology delta. No audit verdict was applied.

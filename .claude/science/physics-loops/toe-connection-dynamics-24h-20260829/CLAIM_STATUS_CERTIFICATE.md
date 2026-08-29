@@ -2,27 +2,30 @@
 actual_current_surface_status: conditional-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "one exact finite r=3, q=2 adjacent-product cubic response after physical Q on the supplied open parent stack"
+conditional_surface_status: "exact selected six-sector 36-path r=3, q=2 physical-history Gram on the supplied open action, multiplier, and J3/Q stack"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The result depends on supplied formal multipliers, an outer response coefficient, parent label diagonality and Q commutation, and an open stacked dependency surface; the author lane does not assign an effective audit status."
+proposal_allowed_reason: "The result depends on supplied formal multipliers, action data, parent label diagonality and Q commutation, and an open stacked dependency surface; only the selected six proper sectors are complete and no invariant-span or global-memory theorem is proved."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: pass_with_inherited_dependency_policy_epoch_debt_disclosed
+review_loop_disposition: pass_with_bounded_claims_and_inherited_dependency_policy_epoch_debt_disclosed
 ```
 
-Block244 computes all six proper action partitions and all 48 temporal
-half-histories for one `r=3,q=2` cubic adjacent-product response. Independent
-Weingarten and dense-projector reconstructions agree with the primary exact
-calculation. The result does not derive the supplied central multipliers,
-outer response coefficient, parent crossing/`Q` inputs, a complete Gram,
-arbitrary-width transfer, minimal memory, physical time, gravity, or TOE
-completion. Independent scientific review and the focused review-loop pass with
-bounded claims. The primary certificate passes `612/612`, all `9/9` hostile
-mutations are rejected, strict audit lint has no errors, and changed-evidence
-readiness passes `1/1` with both helper runners visible. The full repository
-pipeline reaches the inherited dependency-policy epoch-manifest mismatch
-already present on the stacked parent surface after graph construction,
-seeding, and runner classification. Generated control-plane churn was stripped;
-only the required citation manifest remains. No audit verdict has been applied.
+Block245 completes all 36 temporal halves in the six selected proper sectors.
+Inversion-parity orthogonality gives six exact `6 by 6` raw Gram blocks; seven
+exact `t^4` relations and nonzero exact minors prove generic raw rank 29. The
+twelve normalized derivative sums have generic rank 12. Both literal Grams are
+Hermitian/PSD before Taylor extraction, have rank 12 at full identity, and rank
+zero at `t=0`. Odd-channel data affect diagonals while cancelling from the
+Block244 cross sum. The claim does not derive the supplied multipliers/action/Q
+inputs, invariant-span closure, a full response kernel, arbitrary width, global
+minimal memory, physical time, gravity, or TOE completion. Primary evidence
+passes `92/92`, all `6/6` hostile mutations are rejected, and independent
+restricted-input review returns PASS WITH BOUNDED CLAIMS. Focused review-loop
+also passes after repairing one stale campaign-status line. Vocabulary lint is
+clean and strict audit lint has no errors. The full pipeline reaches the
+inherited dependency-policy epoch-manifest mismatch after graph construction,
+ledger seeding, and runner classification. Generated audit churn was stripped;
+the citation manifest records exactly one new node and four intended edges. No
+audit verdict has been applied.

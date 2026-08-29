@@ -43,3 +43,19 @@
   of the linear-moment, quadratic-moment, and scalar endpoint classes.
 - No literature value, empirical target, axiom edit, or approved primitive
   edit enters Block244.
+- Block245 imports Block244's six proper sectors, physical conditional-Haar
+  witnesses, original-link ladder, temporal insertion convention, and cubic
+  cross polynomial. It does not import a diagonal norm, rank, or memory claim.
+- Block245 continues to import parent original-link label diagonality and
+  `[C,Q]=0`; these keep all 36 dressed proper half histories in `ker Q`.
+  Physical `Q` remains distinct from every static cup.
+- Exact Block245 mathematics: inversion-parity orthogonality splits the 36 raw
+  paths into six sectors; seven exact `t^4` relations give the rank-29 upper
+  bound; nonzero exact minors give the generic lower bound; and the complete
+  matrix is a literal Gram and therefore Hermitian/PSD before Taylor extraction.
+- Odd-channel multipliers `d,v` affect diagonal Gram data even though they
+  cancel from Block244's cubic cross sum. Full identity requires
+  `d=t=u=v=1`.
+- The cubic off-diagonal Taylor coefficient is not itself promoted to a PSD
+  matrix. Raw rank 29, normalized-sum rank 12, and coarse rank two are selected
+  carrier ranks, not global minimal memory or invariant-span theorems.

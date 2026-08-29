@@ -1,16 +1,17 @@
 ```yaml
 trace_class: direct_blocker_closure
-target_claim_id: admissibility_exterior_character_jr_arbitrary_r_scalar_fused_vector_transfer_bounded_theorem_note_2026-08-29
-target_blocker_text: "compute the first exact higher-r adjacent-product response after the physical conditional-Haar subtraction"
+target_claim_id: admissibility_exterior_character_jr_r3_q2_adjacent_product_cubic_response_bounded_theorem_note_2026-08-29
+target_blocker_text: "construct the complete six-history Gram carrier and test its exact rank and positivity boundary"
 source_of_blocker_text: handoff
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Construct the complete six-history Gram carrier, or extend the exact original-link method to a second independent q or r, before making a transfer or memory claim."
+next_trace_action: "Test whether the selected 36-path carrier is preserved by the next exact action/crossing block, or construct a wider diagonal/exclusive coarse-word completion before making any global memory claim."
 ```
 
-Block244 partially closes the arbitrary-width blocker by computing the first
-exact higher-`r` adjacent-product coordinate: the complete `r=3,q=2` cubic
-`Y`-to-`Z` response after physical conditional-Haar subtraction. The result is
-conditional on supplied multipliers, response prefactor, parent label
-diagonality, and the open dependency stack. It does not supply an arbitrary
-`r,q` transfer, a complete Gram, or a minimal-memory theorem.
+Block245 directly addresses Block244's named next blocker. It completes all 36
+temporal half histories in the selected six proper sectors, proves their exact
+six-block Gram structure, and establishes generic raw rank 29, normalized-sum
+rank 12, full-identity rank 12, and `t=0` rank zero. The result remains
+conditional on the supplied multipliers, action, physical `J_3/Q`, parent label
+diagonality, and the open dependency stack. It does not prove invariant closure,
+a full response kernel, arbitrary `r,q`, or a globally minimal memory.

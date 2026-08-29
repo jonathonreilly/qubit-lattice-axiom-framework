@@ -139,3 +139,33 @@ problem rather than polishing this single coordinate.
 Block244 is open as stacked review PR #7798 on Block243 PR #7797. Do not merge
 either PR in this campaign. The next worker has been dispatched on the complete
 six-history `r=3,q=2` Gram/rank problem.
+
+Block245
+constructs the named Gram completion one level above the cubic coefficient.
+The first 12-vector draft was correctly rejected as incomplete: expanding the
+temporal halves gives 36 raw physical vectors, six in each proper-subset sector.
+Supplied label diagonality and `[C,Q]=0` keep them in `ker Q`; physical `Q` is
+never replaced by a static cup. Inversion parity makes different sectors
+exactly orthogonal, so the raw Gram has six `6 by 6` blocks. Seven exact `t^4`
+relations give raw rank at most 29, and nonzero exact minors at the full sample
+`(d,t,u,v)=(1/5,3/10,2/5,1/2)` give generic rank exactly 29. The twelve
+normalized derivative sums have generic rank 12. Both objects are literal
+Hermitian/PSD Grams before Taylor extraction; the cubic coefficient alone is
+not labeled PSD. Full identity means `d=t=u=v=1`, where both ranks are 12;
+at `t=0` both are zero even with live `u`. Odd multipliers affect diagonals but
+cancel from Block244's cross sum.
+
+The repaired exact runner passes `92/92`; all `6/6` hostile mutations are
+rejected. Independent restricted-input review returns PASS WITH BOUNDED CLAIMS
+after forcing the 36-vector completion, odd-channel disclosure, generic-rank
+upper bound, and the correct inversion-parity proof. Raw rank 29, sum rank 12,
+and coarse selected rank two are selected-carrier data only, not invariant
+closure or globally minimal memory. Focused review-loop passes after one stale
+campaign-status line was repaired and rechecked by the same reviewer.
+Vocabulary lint is clean, strict audit lint has no errors, and the full
+repository pipeline reaches only the inherited dependency-policy epoch mismatch
+after rebuilding the graph, seeding the ledger, and classifying runners.
+Generated audit churn was stripped, the required one-node/four-edge citation
+manifest delta remains, and no audit verdict was applied. The next exact route
+is an invariant-closure/leakage test under one further action/crossing block;
+no Block245 PR has been opened.

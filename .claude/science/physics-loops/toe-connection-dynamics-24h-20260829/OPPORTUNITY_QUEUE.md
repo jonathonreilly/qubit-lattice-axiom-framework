@@ -2,7 +2,7 @@
 
 | Rank | Target | Why it can move the science | Next falsifier |
 |---:|---|---|---|
-| 1 | Complete six-history Gram around the `r=3,q=2` adjacent-product coordinate | The reviewed cross entry is the first higher-`r` physical-Q response, but rank, positivity structure, and minimal carrier require the diagonal and exclusive histories | construct every physical history with the same original-link method; test Hermiticity, exact PSD inherited from `R=L^dagger L`, rank across generic formal multipliers, and hostile nonclosure controls |
+| 1 | Invariant-closure test for the repaired `r=3,q=2` 36-path Gram | Block245 completes the selected proper sectors and finds raw rank 29, but this is not yet a memory theorem because the next action/crossing can leave the span | apply one further exact action/crossing step to a basis of the 29-dimensional image; test leakage into new Peter--Weyl sectors with physical `Q` |
 | 2 | Diagonal and exclusive-history completion of the `q=4` Gram | Required before any global minimal-memory theorem; Block243 fixes only the `Y,Z` cross-response | construct the missing physical histories and compare their exact feature rank with the canonical rank-two cross completion |
 | 3 | Larger product/multirun word at `r=2` | Extends the known channel alphabet beyond the already closed adjacent-pair and gap-fill examples | test whether genuinely new fusion states survive physical `Q` rather than repackaging Blocks236--238 |
 | 4 | Conditional six-channel Hermitian local Jacobian from POSITIVE_PATH Result92 | Exact representation theorem after supplying Hermitian tangent slices, linearization, and diagonal spatial-to-Bloch action; not axiom-native | keep imports explicit; do not treat Results92--99 as minimal-axiom dynamics |
@@ -38,3 +38,10 @@ the Haar endpoint), but the global minimal history carrier remains open without
 the diagonal and exclusive histories. That observation is not a separate
 science block; the active exact route is therefore the new `r=3,q=2`
 adjacent-product calculation.
+
+Block245 now completes every temporal half inside the selected six proper
+`r=3,q=2` sectors. The raw carrier has 36 paths and generic rank 29; the twelve
+normalized derivative sums have generic rank 12. Those ranks do not establish
+minimal memory because no invariant-span closure has been shown. The next
+highest-leverage route is therefore a leakage/closure test, not another rank
+corollary.

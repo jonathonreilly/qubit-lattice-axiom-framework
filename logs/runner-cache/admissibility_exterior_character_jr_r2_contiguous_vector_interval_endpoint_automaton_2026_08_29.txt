@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_jr_r2_contiguous_vector_interval_endpoint_automaton_2026_08_29.py
+runner_sha256: d58be07224b9607882a436d03f0a642e69fb22a9c0549ccd2006abda29c46c6d
+input_fingerprint_sha256: efe0c8b508052caf73ae2f5f911bf7d0b7f3c325241332505e1237d40d2d03b0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.81
+status: ok
+----- stdout -----
+[PASS] typed parent and minimal-axiom dependencies are explicit
+[PASS] interval Wilson-loop states form an orthonormal coarse family
+[PASS] original-link support matching selects exactly one changed endpoint cell
+[PASS] the full action-parity census forces two negative-parity insertions
+[PASS] the two surviving placements are the changed cell's opposite fine plaquettes
+[PASS] the arbitrary-ell O(3) menu forces V on both insertions
+[PASS] the arbitrary-q interval graph has exactly q squared unordered edges
+[PASS] vacuum and occupied-background recouplings use the exact parent coefficients
+[PASS] every additional common cell contributes exactly t_V^8
+[PASS] left and right endpoint extensions are reflection symmetric
+[PASS] the six-state weighted recognizer equals every direct interval entry
+[PASS] shifted intervals and changes of two or more cells vanish
+[PASS] scope excludes diagonal closure, product loops, and physics identification
+[PASS] negative-scope rhetoric carries a landed N1-N8 discipline gate
+[PASS] independent bitmask and matrix implementation agrees
+TOTAL: PASS=15 FAIL=0
+per_element: checked every original-link incidence for all interval pairs through q=7 and proved the repeated-bit selector for arbitrary q
+per_site: checked every vacuum-singleton and left/right endpoint-extension position, including both open boundaries
+per_mode: checked the complete distinct-state offdiagonal block on vacuum plus one contiguous merged defining-vector loop
+per_block: checked r=2 and arbitrary finite q with a six-state weighted recognizer whose live memory is q-independent
+lattice_wide: checked the arbitrary-q interval language but not diagonal histories, product-loop words, multirun words, or the full vector kernel
+
+----- stderr -----
+

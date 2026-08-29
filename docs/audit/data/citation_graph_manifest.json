@@ -1,6 +1,6 @@
 {
- "edge_count": 16176,
- "node_count": 5653,
+ "edge_count": 16179,
+ "node_count": 5654,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -897,6 +897,10 @@
   "admissibility_exterior_character_jr_peter_weyl_operator_truncation_bounded_theorem_note_2026-08-28": {
    "deps_hash": "66d5540d82d6",
    "out_degree": 2
+  },
+  "admissibility_exterior_character_jr_r2_contiguous_vector_interval_endpoint_automaton_bounded_theorem_note_2026-08-29": {
+   "deps_hash": "034098c15051",
+   "out_degree": 3
   },
   "admissibility_exterior_character_jr_r2_nested_merged_vector_interval_response_bounded_theorem_note_2026-08-29": {
    "deps_hash": "401b35823c41",

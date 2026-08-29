@@ -18,7 +18,7 @@ fixture: H1
 target_runner_written_before_registration: false
 target_runner_executed_before_registration: false
 preregistration_commit: 61547d21fed6c2941da7ccee8ac993eb0b222249
-result_commit: pending
+result_commit: d8cc11fb5210321cf081866572b90a6ce290edcf
 result_pr: backlogged
 primary_runner: scripts/admissibility_d4_affine_lineage_binary_record_join_2026_08_29.py
 independent_runner: scripts/independent_admissibility_d4_affine_lineage_binary_record_join_2026_08_29.py

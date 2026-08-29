@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_generated_interaction_bounded_theorem_note_2026-08-28
 claim_type: bounded_theorem
-claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. For arbitrary fixed finite r and q, disclose an action-amplitude lambda in the complete Block227 step and prove that the rth lambda response of the actual J_r defect, after epsilon^-r scaling and projection off the scalar coarse channel, converges strongly on the core to (-1)^r(2^r-2) times the r-fold centered exterior convolution, summed once per retained cell. Prove the (r-1)-wise Haar mechanism, the scalar leading variance for r>=3, and the finite leading Peter--Weyl response carrier. At quadratic action-response order derive the exact finite-epsilon Gram insertion and the next core coefficient K=B*A_fB+{Gamma,A_c}/2; for r>=3 prove the exact decomposition K=2 gamma A_c+u I, with u the explicit rq-accumulated exterior Dirichlet energy, so the epsilon^3 lambda^2 response has a non-scalar coarse-kinetic term but no first-order or coarse-word-dependent multiplication remainder. On the actual original-link carrier, prove the exact all-(r,q) determinant-sector offdiagonal selection rule: quadratic coarse determinant mixing occurs only for r=2 coarse-hypercube neighbors, including the positive seven-link vacuum witness, while r>=3 determinant-to-determinant offdiagonals vanish at this response order. For every pair of coarse determinant words at Hamming distance d, prove the first possible finite-epsilon offdiagonal response is derivative order rd, give its positive full-O(3) residual-subset formula after deleting all 2^d block-cylindrical subsets, and recover the small-step coefficient 2^(rd)-2^d. Resum that complete minimal response as an ordered bond-dimension-four cell automaton, prove its rank-one unchanged-cell reset, and derive its exact positive separation-independent stripped coefficient for downstream locality tests. Bound finite Peter--Weyl approximation of the complete defect value, its exact quadratic Gram response, and the selected all-pairs determinant responses, with explicit rq accumulation and common normalization. This is a conditional finite mathematical generated-interaction and supplied-action-response theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
+claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. For arbitrary fixed finite r and q, disclose an action-amplitude lambda in the complete Block227 step and prove that the rth lambda response of the actual J_r defect, after epsilon^-r scaling and projection off the scalar coarse channel, converges strongly on the core to (-1)^r(2^r-2) times the r-fold centered exterior convolution, summed once per retained cell. Prove the (r-1)-wise Haar mechanism, the scalar leading variance for r>=3, and the finite leading Peter--Weyl response carrier. At quadratic action-response order derive the exact finite-epsilon Gram insertion and the next core coefficient K=B*A_fB+{Gamma,A_c}/2; for r>=3 prove the exact decomposition K=2 gamma A_c+u I, with u the explicit rq-accumulated exterior Dirichlet energy, so the epsilon^3 lambda^2 response has a non-scalar coarse-kinetic term but no first-order or coarse-word-dependent multiplication remainder. On the actual original-link carrier, prove the exact all-(r,q) determinant-sector offdiagonal selection rule: quadratic coarse determinant mixing occurs only for r=2 coarse-hypercube neighbors, including the positive seven-link vacuum witness, while r>=3 determinant-to-determinant offdiagonals vanish at this response order. For every pair of coarse determinant words at Hamming distance d, prove the first possible finite-epsilon offdiagonal response is derivative order rd, give its positive full-O(3) residual-subset formula after deleting all 2^d block-cylindrical subsets, and recover the small-step coefficient 2^(rd)-2^d. Resum that complete minimal response as an ordered bond-dimension-four cell automaton, prove its rank-one unchanged-cell reset, and derive its exact positive separation-independent stripped coefficient for downstream locality tests. On the homogeneous zero-determinant background, take the log ratio of the all-history and cylindrical-history contractions, prove exact Boolean connected reconstruction with no disconnected support, and use the explicit three-state positive restrictions and Birkhoff contraction to obtain a q-uniform exponentially weighted connected-interval norm at every fixed r and 0<t_det<1. Bound finite Peter--Weyl approximation of the complete defect value, its exact quadratic Gram response, and the selected all-pairs determinant responses, with explicit rq accumulation and common normalization. This is a conditional finite mathematical generated-interaction and supplied-action-response theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
 depends_on:
   - admissibility_exterior_character_co_scaled_temporal_trotter_and_cylindrical_refinement_boundary_bounded_theorem_note_2026-08-28
   - admissibility_exterior_character_bounded_degree_ladder_history_message_flow_bounded_theorem_note_2026-08-28
@@ -18,7 +18,7 @@ target_blocker_text: "Compare the Block227 co-scaled temporal generator with Blo
 source_of_blocker_text: user_goal
 reachability_to_target: closes
 artifact_role: theorem
-next_trace_action: "Use the exact four-state minimal-response history coordinate to test connected/log reorganizations and locality norms; its stripped response coefficient has an exact positive separation plateau, while locality conclusions require a disclosed amplitude, normalization, and norm family. Physical spacing, time, states, observables, and the full non-determinant kernel remain separate suppliers."
+next_trace_action: "The homogeneous zero-background connected determinant coordinate now has a q-uniform weighted interval norm at fixed r,t_det. Test uniformity in a disclosed blocking-scale window or derive the first complete original-link non-determinant recoupling response. Physical spacing, time, states, observables, amplitudes, and the full non-determinant kernel remain separate suppliers."
 conditional_surface_status: "exact finite physical-space temporal-spatial compression defect, nonconstant two-cell generated interaction, arbitrary-fixed-r complete-step supplied-action response, quadratic-response coarse-kinetic descendant, exact all-pairs Hamming-distance response-order filtration, fixed-memory determinant-response automaton, raw-coordinate separation plateau, and response-specific finite packet bounds, conditional on the supplied co-scaled action, ladder, Haar measure, projector, and J_r stack"
 hypothetical_axiom_status: null
 admitted_observation_status: null
@@ -213,6 +213,16 @@ sharpens its Hamming activity base from `2^r` to
 stripped two-cell coefficient independent of every nonzero empty separation.
 This supplies a concrete locality test input; connected/log or explicitly
 scaled downstream coordinates and their norms remain open.
+
+On the homogeneous zero-determinant background that connected coordinate can
+be completed exactly.  The log ratio of the all-history and cylindrical
+history weights is additive over changed runs, its Boolean interaction
+vanishes on disconnected supports, and the interval coefficients, together
+with the supplied amplitude prefactor and cylindrical baseline, reconstruct
+the complete minimal response.  The active three-state restrictions inside
+the two four-state channels are strictly positive.  Standard Birkhoff contraction
+then makes the connected interval coefficients exponentially summable in a
+`q`-uniform coarse-cell norm at every fixed `r` and `0<t_det<1`.
 
 ## Authority and imports
 
@@ -1252,6 +1262,134 @@ Mobius-subtracted response, volume-dependent normalization or amplitudes,
 local-source norms, another perfect-action coordinate, physical spacing, or
 continuum locality.
 
+### Connected determinant history and a fixed-parameter locality norm
+
+There is a precise connected coordinate in which the stripped plateau is
+removed rather than reinterpreted.  Restrict to the homogeneous
+zero-determinant coarse background and put
+
+```text
+X_all=A_0,       X_cyl=B_0,
+m_X(l)=e_00^T X^l 1_4,       m_X(0)=1.             (34ao)
+```
+
+For a changed-cell set `C subseteq {0,...,q-1}`, let `W_X(C)` be the ordered
+automaton contraction with `X` on `C` and `U_0` elsewhere.  Since
+`U_0=1_4 e_00^T`, every unchanged cell cuts the contraction exactly.  If
+`Runs(C)` denotes the maximal nonempty consecutive intervals in `C`, then
+
+```text
+W_X(C)=product_(I in Runs(C)) m_X(|I|),
+mathscr H(C)=log[W_all(C)/W_cyl(C)]
+    =sum_(I in Runs(C)) log[m_all(|I|)/m_cyl(|I|)]. (34ap)
+```
+
+The scalar contractions `W_X(C)` and `m_X(l)` are positive for the supplied
+`0<t<1`, so the logarithms are defined.  Put
+`H_C=union_(c in C) H_c` for the changed fine-plaquette support.  The complete
+minimal-response coefficient is reconstructed exactly:
+
+```text
+mathcal R_(0,1_C)^[r|C|]
+ =nu_epsilon^2(epsilon c_det^(n)/2)^[r|C|]
+   product_(p in H_C)a_p
+   W_cyl(C){exp[mathscr H(C)]-1}.                   (34aq)
+```
+
+This is why taking a cumulant of `mathcal R` itself would be the wrong
+operation: the cylindrical dressing must be separated before the logarithm.
+Define the Boolean connected interaction
+
+```text
+Psi(S)=sum_(A subseteq S)(-1)^[|S|-|A|] mathscr H(A). (34ar)
+```
+
+Equation (34ap) implies `Psi(S)=0` for every disconnected `S`.  For an interval
+of length `l`, write `h_l=log[m_all(l)/m_cyl(l)]`, `h_0=0`; then
+
+```text
+Psi_1=h_1,
+Psi_l=h_l-2h_(l-1)+h_(l-2) for l>=2,
+mathscr H(C)=sum_(empty != I subseteq C, I interval)Psi_|I|. (34as)
+```
+
+For complete reconstruction also put `g_l=log m_cyl(l)`, `g_0=0`, and
+`Phi_1^cyl=g_1`,
+`Phi_l^cyl=g_l-2g_(l-1)+g_(l-2)` for `l>=2`.  The same inversion applied to
+the cylindrical dressing gives
+
+```text
+W_cyl(C)=exp[sum_(empty != I subseteq C, I interval)Phi_|I|^cyl],
+
+mathcal R_(0,1_C)^[r|C|]
+ =nu_epsilon^2(epsilon c_det^(n)/2)^[r|C|]
+  product_(p in H_C)a_p
+  exp[sum_(empty != I subseteq C interval)Phi_|I|^cyl]
+  {exp[sum_(empty != I subseteq C interval)Psi_|I|]-1}. (34as')
+```
+
+Thus the supplied amplitude prefactor and cylindrical baseline, together with
+the two interval coordinates, reconstruct the exact complete minimal response
+without enumerating the `2^(r|C|)` fine residual words.  The connected
+coordinate does not by itself control that prefactor or baseline.
+Equivalently, propagate normalized positive rows separately
+in the all and cylindrical channels.  At an unchanged cell the rank-one
+`U_0` sends both normalized rows exactly to `e_00^T`, while their accumulated
+scalar log ratio is retained.  This is the update law behind the run
+factorization, rather than a post-hoc probabilistic cumulant.
+
+The interval coordinate is quantitatively summable at fixed supplied
+blocking factor and temporal multiplier.  Both `X_all` and `X_cyl` have one
+transient zero column, while their restrictions `hat X` to
+`S_0={00,01,11}` are strictly positive for every fixed `r>=2` and `0<t<1`.
+Explicitly, before the `r`th power `M_0` has positive active columns
+`{00,01}` and `M_1` has positive active columns `{01,11}`; for `r>=2` every
+active entry of `(M_0+M_1)^r` and `M_0^r+M_1^r` is therefore positive.  The
+full four-state matrices are not strictly positive because their `10` column
+vanishes.  For the active restriction of
+`X in {X_all,X_cyl}`, define the explicit Hilbert-projective quantities
+
+```text
+d_Hil(u,v)=log[(max_i u_i/v_i)/(min_i u_i/v_i)],
+Delta_X=log max_(i,j,k,l in S_0)
+              [hat X_(i,k)hat X_(j,l)/(hat X_(i,l)hat X_(j,k))],
+tau_X=tanh(Delta_X/4)<1,
+D_X=d_Hil(e_00^T hat X^2,e_00^T hat X).            (34at)
+```
+
+Let `phi_l^X=log m_X(l)-2log m_X(l-1)+log m_X(l-2)`.
+For `l>=3`, Birkhoff contraction on the positive three-state cone gives
+
+```text
+|phi_l^X| <= D_X tau_X^(l-3),
+|Psi_l| <=D_all tau_all^(l-3)+D_cyl tau_cyl^(l-3). (34au)
+```
+
+Indeed `phi_l^X` is the logarithmic difference of the successive ratios
+`m_X(l)/m_X(l-1)`.  That ratio is a positive projective functional of
+`e_00^T hat X^(l-1)`; its logarithmic oscillation is bounded by Hilbert
+distance, and one application of `hat X` contracts that distance by `tau_X`.
+Consequently, for every `mu>=0` satisfying
+`exp(mu) max(tau_all,tau_cyl)<1`,
+
+```text
+sup_(q>=1) sup_(0<=c<q)
+ sum_(I interval subseteq {0,...,q-1}, c in I)
+       exp[mu(|I|-1)] |Psi_|I|| < infinity.        (34av)
+```
+
+At most `l` intervals of length `l` contain a fixed cell, so (34av) follows by
+summing (34au), with the finite `l=1,2` terms added separately.  The same
+estimate for `X_cyl` controls `Phi^cyl`.  More explicitly, with
+`rho_X=exp(mu)tau_X`, the complete bound is at most
+`|Psi_1|+2exp(mu)|Psi_2|` plus
+`sum_X exp(2mu)D_X[3/(1-rho_X)+rho_X/(1-rho_X)^2]`.  This is a
+`q`-uniform mathematical locality norm for the connected *minimal determinant
+history* on the homogeneous zero background at fixed `r,t`.  It is not a norm
+on the full response kernel, is not uniform in an undisclosed `r,t` scale
+family, and does not define physical distance, a continuum limit, or a
+physical perfect action.
+
 ## Finite Peter--Weyl approximation of the defect
 
 At each fixed `epsilon`, specialize the
@@ -1513,6 +1651,11 @@ The closest current and in-flight surfaces are distinct:
 - Generic shell counting gives the weaker base `2^r`; it does not use the
   actual run weight to obtain `B_r(t)<2^r`, the sharp one-cell lower bound, or
   the simultaneous response/packet Schur consumers (34ak)--(34am), (50).
+- Log/Mobius inversion, one-dimensional cluster bookkeeping, and Birkhoff
+  contraction are generic credited machinery.  The framework-specific content
+  of (34ao)--(34av) is the identification of the actual `J_r`
+  all/cylindrical automata, their rank-one reset, and their positive active
+  three-state restrictions; it does not claim those generic tools as novelty.
 - Generic compression inequalities and conditional variances are credited
   mathematical machinery, not the novelty claim.
 
@@ -1522,7 +1665,8 @@ nonconstant exterior variance (4)--(5), together with the arbitrary-`r`
 conditioned-Haar hierarchy (25)--(28), the complete-step response (29)--(34),
 the quadratic kinetic response (34a)--(34j), the finite-step determinant
 selection and all-pairs response-order law (34k)--(34ae), and the full packet
-consumer and fixed-memory boundary (34af)--(34an), (38), (40)--(50).
+consumer, fixed-memory boundary, and connected homogeneous-background norm
+(34af)--(34av), (38), (40)--(50).
 
 ## Obligation graph and boundaries
 
@@ -1545,6 +1689,7 @@ consumer and fixed-memory boundary (34af)--(34an), (38), (40)--(50).
 | exact all-pairs determinant response-order filtration | proved for fixed finite `r>=2,q,n`; order `r d_H`, `2^d` cylindrical deletions, and positive coefficient for positive changed-cell amplitudes | (34ab)--(34ae) |
 | exact fixed-memory determinant-response coordinate | proved with ordered bond dimension `4`, rank-one empty-cell reset, and complete minimal-response typing | (34af)--(34ai) |
 | selected response activity and separation plateau | proved as upper/lower activity estimates and a positive stripped-coefficient equality; indexed locality norms remain open | (34aj)--(34an) |
+| connected minimal determinant history | exact all/cylindrical log ratio, disconnected-support cancellation, interval reconstruction, and fixed-`r,t` `q`-uniform weighted norm on the homogeneous zero background | (34ao)--(34av) |
 | finite packet error with explicit `rq` | proved | (35)--(39) |
 | finite packet quadratic half-response with explicit `rq` | proved | (40)--(45) |
 | finite packet selected order-`r` determinant response with explicit `rq` | proved | (46)--(48) |
@@ -1599,6 +1744,14 @@ nonzero empty separation.  The full-entry comparison requires the changed-cell
 amplitude product and common normalization to be held fixed.  Connected/log
 reorganizations, scaled amplitudes or normalization, locality norms,
 non-determinant histories, and physical locality remain open.
+
+On the homogeneous zero background, (34ao)--(34as) remove the disconnected
+cylindrical dressing in an exact connected coordinate and still reconstruct
+the complete minimal determinant response.  The explicit positive
+three-state channel restrictions then give (34au)--(34av), a `q`-uniform
+exponentially weighted interval norm at every fixed supplied `r,t`.  This is a
+coarse-cell mathematical norm on one selected response coordinate, not a
+full-kernel, scale-uniform, continuum, or physical locality theorem.
 
 ## Reproduction and landing conditions
 

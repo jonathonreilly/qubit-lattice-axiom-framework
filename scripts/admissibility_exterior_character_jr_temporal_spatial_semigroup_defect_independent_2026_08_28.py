@@ -1559,6 +1559,147 @@ def determinant_response_automaton_fixture() -> dict[str, object]:
         )
         for width in range(2, 5)
     )
+
+    def channels(width: int) -> tuple[Matrix, Matrix, Matrix]:
+        first = kronecker(local(0, 0), local(1, 1))
+        second = kronecker(local(0, 1), local(1, 0))
+        all_channel = matrix_power(add(first, second), width)
+        cylindrical_channel = add(
+            matrix_power(first, width),
+            matrix_power(second, width),
+        )
+        reset = matrix_power(
+            kronecker(local(0, 0), local(0, 0)), width,
+        )
+        return all_channel, cylindrical_channel, reset
+
+    def channel_weight(channel: Matrix, reset: Matrix, cell_count: int,
+                       changed: frozenset[int]) -> F:
+        return contract(tuple(
+            channel if cell in changed else reset
+            for cell in range(cell_count)
+        ))
+
+    def run_lengths(changed: frozenset[int]) -> tuple[int, ...]:
+        if not changed:
+            return ()
+        lengths: list[int] = []
+        length = 0
+        previous = -2
+        for cell in sorted(changed):
+            if cell != previous + 1 and length:
+                lengths.append(length)
+                length = 0
+            length += 1
+            previous = cell
+        lengths.append(length)
+        return tuple(lengths)
+
+    def ratio(width: int, cell_count: int,
+              changed: frozenset[int]) -> tuple[F, F]:
+        all_channel, cylindrical_channel, reset = channels(width)
+        return (
+            channel_weight(all_channel, reset, cell_count, changed),
+            channel_weight(cylindrical_channel, reset, cell_count, changed),
+        )
+
+    def mobius_ratio(width: int, cell_count: int,
+                     support: tuple[int, ...]) -> F:
+        numerator = F(1)
+        denominator = F(1)
+        for mask in range(1 << len(support)):
+            changed = frozenset(
+                support[index] for index in range(len(support))
+                if mask & (1 << index)
+            )
+            all_weight, cylindrical_weight = ratio(
+                width, cell_count, changed,
+            )
+            if (len(support) - len(changed)) % 2:
+                numerator *= cylindrical_weight
+                denominator *= all_weight
+            else:
+                numerator *= all_weight
+                denominator *= cylindrical_weight
+        return numerator / denominator
+
+    connected_cases = tuple(
+        (width, cell_count, frozenset(
+            cell for cell in range(cell_count) if mask & (1 << cell)
+        ))
+        for width in range(2, 6)
+        for cell_count in range(1, 6)
+        for mask in range(1 << cell_count)
+    )
+    run_factorization = True
+    reconstruction = True
+    for width, cell_count, changed in connected_cases:
+        all_channel, cylindrical_channel, reset = channels(width)
+        all_weight, cylindrical_weight = ratio(
+            width, cell_count, changed,
+        )
+        all_product = F(1)
+        cylindrical_product = F(1)
+        for length in run_lengths(changed):
+            all_product *= contract((all_channel,) * length)
+            cylindrical_product *= contract(
+                (cylindrical_channel,) * length
+            )
+        run_factorization &= (
+            all_weight == all_product
+            and cylindrical_weight == cylindrical_product
+        )
+        reconstruction &= (
+            cylindrical_weight
+            * (all_weight / cylindrical_weight - 1)
+            == all_weight - cylindrical_weight
+        )
+
+    disconnected_mobius = all(
+        mobius_ratio(width, 5, support) == 1
+        for width in range(2, 6)
+        for support in ((0, 2), (0, 1, 3), (0, 1, 3, 4))
+    )
+    interval_mobius = tuple(
+        (width, length, mobius_ratio(
+            width, max(length, 3), tuple(range(length)),
+        ))
+        for width in range(2, 6) for length in (1, 2, 3)
+    )
+    endpoint_recursion = all(
+        mobius_value
+        == (ratio(width, max(length, 3), frozenset((0,)))[0]
+            / ratio(width, max(length, 3), frozenset((0,)))[1]
+            if length == 1 else (
+            (ratio(width, max(length, 3), frozenset(range(length)))[0]
+             / ratio(width, max(length, 3), frozenset(range(length)))[1])
+            * (F(1) if length == 2 else (
+                ratio(width, max(length, 3),
+                      frozenset(range(1, length - 1)))[0]
+                / ratio(width, max(length, 3),
+                        frozenset(range(1, length - 1)))[1]
+            ))
+            / (
+                (ratio(width, max(length, 3),
+                       frozenset(range(1, length)))[0]
+                 / ratio(width, max(length, 3),
+                         frozenset(range(1, length)))[1])
+                * (ratio(width, max(length, 3),
+                         frozenset(range(length - 1)))[0]
+                   / ratio(width, max(length, 3),
+                           frozenset(range(length - 1)))[1])
+            )
+        ))
+        for width, length, mobius_value in interval_mobius
+    )
+    active_states = (0, 1, 3)
+    active_positive = all(
+        all(channel[row][column] > 0
+            for row in active_states for column in active_states)
+        and all(channel[row][2] == 0 for row in range(4))
+        for width in range(2, 6)
+        for channel in channels(width)[:2]
+    )
     return {
         "rows": rows,
         "exact": all(direct_value == automaton_value
@@ -1576,6 +1717,18 @@ def determinant_response_automaton_fixture() -> dict[str, object]:
         "shell_bound": shell_bound,
         "one_cell_lower": one_cell_lower,
         "schur_identity": schur_identity,
+        "connected_reconstruction": reconstruction,
+        "run_factorization": run_factorization,
+        "disconnected_mobius": disconnected_mobius,
+        "interval_mobius": interval_mobius,
+        "interval_nontrivial": all(value != 1
+                                   for _width, _length, value
+                                   in interval_mobius),
+        "endpoint_recursion": endpoint_recursion,
+        "active_positive": active_positive,
+        "raw_mobius_nonzero": (
+            automaton(2, 3, 0, 5) - 2 * automaton(2, 1, 0, 1)
+        ) != 0,
     }
 
 
@@ -1828,6 +1981,25 @@ def main() -> int:
         (
             "packet all-pairs bounds sum to the exact Schur activity factor",
             automaton["schur_identity"],
+        ),
+        (
+            "branch log ratio reconstructs the selected minimal response exactly",
+            automaton["connected_reconstruction"]
+            and automaton["run_factorization"],
+        ),
+        (
+            "Boolean connected history vanishes exactly on disconnected supports",
+            automaton["disconnected_mobius"]
+            and automaton["interval_nontrivial"]
+            and automaton["endpoint_recursion"],
+        ),
+        (
+            "all and cylindrical channels have positive active three-state faces",
+            automaton["active_positive"],
+        ),
+        (
+            "raw response Mobius subtraction does not remove disconnected dressing",
+            automaton["raw_mobius_nonzero"],
         ),
     )
 

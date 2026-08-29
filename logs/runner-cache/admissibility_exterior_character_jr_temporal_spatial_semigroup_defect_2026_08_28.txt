@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: b66add2f5532625a1540060e13f6ef8e0290e93f31da3102fb4ce236b75d8b26
-input_fingerprint_sha256: bea16e2512139372ff04562b7afa7d2e453930c450b25d41bf11e7d71ab55be6
+runner_sha256: a716da5274e78be9d7a470e091c53c3dded540480de2a88bd523d5097d58388c
+input_fingerprint_sha256: 403d2e8b46b0345d3a5ee5b0f8abbd0de475d99da137aba75a871f24cfc6f692
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.45
+elapsed_sec: 4.92
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms
@@ -59,6 +59,10 @@ status: ok
 [PASS] raw minimal response has an exact positive separation plateau
 [PASS] actual run weight gives quantitative response-activity estimates
 [PASS] packet Schur consumer exposes rq tails and response activity together
+[PASS] only the all-over-cylindrical branch log removes disconnected dressing
+[PASS] supplied prefactor and baseline plus interval coordinates reconstruct the minimal response
+[PASS] rank-one reset makes the Boolean connected history interval supported
+[PASS] positive active channels give a q-uniform connected interval norm
 [PASS] common scalar normalization cannot remove the kinetic principal symbol
 [PASS] one common normalization scalar rescales the defect quadratically
 [PASS] normalization convention is fixed before comparing direct and staged paths
@@ -75,7 +79,7 @@ per_mode: the Peter--Weyl core commutator square and nontrivial convolution chan
 per_block: the complete physical J_r direct/staged defect and rq packet census were checked
 per_scale: conditioned fibers r=2,...,7 and all-pairs determinant responses through q=3,d=3 were checked
 lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied
-TOTAL: PASS=62 FAIL=0
+TOTAL: PASS=66 FAIL=0
 
 ----- stderr -----
 

@@ -103,6 +103,10 @@ MUTATIONS = (
     "invent_raw_diameter_decay",
     "corrupt_response_shell_bound",
     "hide_packet_activity_factor",
+    "log_raw_defect_instead",
+    "invent_disconnected_history",
+    "drop_cylindrical_dressing",
+    "corrupt_birkhoff_tail",
 )
 
 PASS = 0
@@ -1123,6 +1127,104 @@ def primary_determinant_automaton_data() -> dict[str, object]:
         )
         for width in range(2, 5) for cell_count in range(1, 6)
     )
+
+    def channel_matrices(width: int) -> tuple[sp.Matrix, sp.Matrix, sp.Matrix]:
+        first_matrix = sp.kronecker_product(
+            local(0, 0), local(1, 1),
+        )
+        second_matrix = sp.kronecker_product(
+            local(0, 1), local(1, 0),
+        )
+        return (
+            (first_matrix + second_matrix) ** width,
+            first_matrix**width + second_matrix**width,
+            sp.kronecker_product(local(0, 0), local(0, 0)) ** width,
+        )
+
+    def history_weight(channel: sp.Matrix, reset: sp.Matrix,
+                       cell_count: int, changed: frozenset[int]) -> sp.Rational:
+        product_matrix = sp.eye(4)
+        for cell in range(cell_count):
+            product_matrix *= channel if cell in changed else reset
+        return sp.factor(sum(product_matrix[0, column] for column in range(4)))
+
+    def history_ratio(width: int, cell_count: int,
+                      changed: frozenset[int]) -> sp.Rational:
+        all_channel, cylindrical_channel, reset = channel_matrices(width)
+        return sp.factor(
+            history_weight(all_channel, reset, cell_count, changed)
+            / history_weight(cylindrical_channel, reset, cell_count, changed)
+        )
+
+    def mobius_ratio(width: int, cell_count: int,
+                     support: tuple[int, ...]) -> sp.Rational:
+        value = sp.Rational(1)
+        for mask in range(1 << len(support)):
+            changed = frozenset(
+                support[index] for index in range(len(support))
+                if mask & (1 << index)
+            )
+            ratio_value = history_ratio(width, cell_count, changed)
+            if (len(support) - len(changed)) % 2:
+                value /= ratio_value
+            else:
+                value *= ratio_value
+        return sp.factor(value)
+
+    active_states = (0, 1, 3)
+    spectral_rows: list[tuple[int, str, sp.Expr, sp.Expr, bool]] = []
+    active_positive = True
+    for width in range(2, 6):
+        for label, channel in zip(("all", "cyl"), channel_matrices(width)[:2]):
+            active = channel.extract(active_states, active_states)
+            active_positive &= (
+                all(value > 0 for value in active)
+                and all(channel[row, 2] == 0 for row in range(4))
+            )
+            cross_ratios = tuple(
+                active[i, k] * active[j, ell]
+                / (active[i, ell] * active[j, k])
+                for i in range(3) for j in range(3)
+                for k in range(3) for ell in range(3)
+            )
+            diameter = sp.log(max(cross_ratios))
+            tau = sp.tanh(diameter / 4)
+            first_row = sp.Matrix([[1, 0, 0]]) * active
+            second_row = first_row * active
+            initial_ratios = tuple(
+                second_row[column] / first_row[column]
+                for column in range(3)
+            )
+            initial_distance = sp.log(
+                max(initial_ratios) / min(initial_ratios)
+            )
+            moments = [sp.Rational(1)]
+            row = sp.Matrix([[1, 0, 0]])
+            for _length in range(18):
+                row *= active
+                moments.append(sp.factor(sum(row)))
+            bounds_hold = all(
+                abs(float(sp.N(sp.log(
+                    moments[length] * moments[length - 2]
+                    / moments[length - 1] ** 2
+                ), 50)))
+                <= float(sp.N(
+                    initial_distance * tau ** (length - 3), 50
+                )) + 1e-40
+                for length in range(3, 18)
+            )
+            spectral_rows.append(
+                (width, label, tau, initial_distance, bounds_hold)
+            )
+
+    disconnected_ratio = mobius_ratio(3, 5, (0, 2, 4))
+    interval_ratio = mobius_ratio(3, 3, (0, 1, 2))
+    all_channel, cylindrical_channel, reset = channel_matrices(3)
+    changed = frozenset((0, 1, 3, 4))
+    all_weight = history_weight(all_channel, reset, 5, changed)
+    cylindrical_weight = history_weight(
+        cylindrical_channel, reset, 5, changed,
+    )
     return {
         "responses": tuple(responses),
         "bond_dimension": 4,
@@ -1138,6 +1240,17 @@ def primary_determinant_automaton_data() -> dict[str, object]:
         "shell_bound": shell_bound,
         "one_cell_lower": one_cell_lower,
         "schur_identity": schur_identity,
+        "connected_reconstruction": sp.factor(
+            cylindrical_weight * (all_weight / cylindrical_weight - 1)
+        ) == all_weight - cylindrical_weight,
+        "disconnected_mobius": disconnected_ratio == 1,
+        "interval_nontrivial": interval_ratio != 1,
+        "active_positive": active_positive,
+        "spectral_rows": tuple(spectral_rows),
+        "birkhoff_bound": all(row[-1] for row in spectral_rows),
+        "raw_mobius_nonzero": (
+            automaton(2, 3, 0, 5) - 2 * automaton(2, 1, 0, 1)
+        ) != 0,
     }
 
 
@@ -1327,6 +1440,22 @@ def independent_mode() -> int:
         (
             "independent packet Schur activity identity",
             automaton["schur_identity"],
+        ),
+        (
+            "independent connected branch ratio reconstructs the minimal response",
+            automaton["connected_reconstruction"]
+            and automaton["run_factorization"]
+            and automaton["raw_mobius_nonzero"],
+        ),
+        (
+            "independent Boolean history has interval-only connected support",
+            automaton["disconnected_mobius"]
+            and automaton["interval_nontrivial"]
+            and automaton["endpoint_recursion"],
+        ),
+        (
+            "independent active three-state channels are strictly positive",
+            automaton["active_positive"],
         ),
     )
     for label, condition in checks:
@@ -1978,6 +2107,65 @@ def main(mutation: str | None, mode: str) -> int:
         packet_activity_ok
         and "exp(2^r alpha L_q)-exp(2alpha L_q)" in note
         and "theta_K<=(3rq+1)delta_kappa" in note,
+    )
+
+    raw_log_boundary_ok = (
+        automaton["raw_mobius_nonzero"]
+        and independent_automaton["raw_mobius_nonzero"]
+    )
+    if mutation == "log_raw_defect_instead":
+        raw_log_boundary_ok = False
+    check(
+        "only the all-over-cylindrical branch log removes disconnected dressing",
+        raw_log_boundary_ok
+        and "taking a cumulant of `mathcal R` itself would be the wrong"
+        in " ".join(note.split()),
+    )
+
+    connected_reconstruction_ok = (
+        automaton["connected_reconstruction"]
+        and independent_automaton["connected_reconstruction"]
+        and independent_automaton["run_factorization"]
+    )
+    if mutation == "drop_cylindrical_dressing":
+        connected_reconstruction_ok = False
+    check(
+        "supplied prefactor and baseline plus interval coordinates reconstruct the minimal response",
+        connected_reconstruction_ok
+        and "W_cyl(C)=exp[sum_" in note
+        and "two interval coordinates, reconstruct the exact complete minimal response"
+        in " ".join(note.split()),
+    )
+
+    connected_support_ok = (
+        automaton["disconnected_mobius"]
+        and automaton["interval_nontrivial"]
+        and independent_automaton["disconnected_mobius"]
+        and independent_automaton["interval_nontrivial"]
+        and independent_automaton["endpoint_recursion"]
+    )
+    if mutation == "invent_disconnected_history":
+        connected_support_ok = False
+    check(
+        "rank-one reset makes the Boolean connected history interval supported",
+        connected_support_ok
+        and "`Psi(S)=0` for every disconnected `S`" in note
+        and "rather than a post-hoc probabilistic cumulant" in note,
+    )
+
+    birkhoff_tail_ok = (
+        automaton["active_positive"]
+        and independent_automaton["active_positive"]
+        and automaton["birkhoff_bound"]
+    )
+    if mutation == "corrupt_birkhoff_tail":
+        birkhoff_tail_ok = False
+    check(
+        "positive active channels give a q-uniform connected interval norm",
+        birkhoff_tail_ok
+        and "D_X tau_X^(l-3)" in note
+        and "exp(mu) max(tau_all,tau_cyl)<1" in note
+        and "not uniform in an undisclosed `r,t` scale" in note,
     )
 
     scalar_shift = 2 * sp.Rational(7, 5) * mixed["gamma"]

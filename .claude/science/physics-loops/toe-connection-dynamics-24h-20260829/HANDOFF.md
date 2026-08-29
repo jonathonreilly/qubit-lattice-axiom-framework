@@ -427,3 +427,7 @@ decide whether Block247's selected ordered tower is an ordering artifact before
 the campaign attempts mixed placements or the full exponential.  The verdict
 gates only opening a review PR; it is not an audit verdict or permission to
 merge.
+
+After those final gates, Block248 was opened as stacked review PR #7803 on
+Block247 PR #7801.  It remains review-only; the campaign performed no merge or
+audit verdict.

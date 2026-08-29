@@ -64,10 +64,14 @@ the same reviewer issued a final `PASS` after five narrow packaging repairs.
 The mandatory seventh-PR cluster-cap evaluation is `OPEN`. The campaign will
 not merge it.
 
-Block248 has passed fresh independent review on repaired commit `8f48b5a850`.
+Block248 review PR #7803 is open:
+<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7803>.
+
+It is stacked on Block247 PR #7801 and passed fresh independent review on
+repaired commit `8f48b5a850`.
 The mandatory eighth-PR cluster-cap verdict is `OPEN` because it resolves the
 Block247 cancellation falsifier with a distinct positive complete-symmetric
-fixed-placement theorem and a signed hostile boundary.  Root may open one
-stacked review PR on Block247 after the final governance gates; the worker
-itself performed no push or PR creation.  Every parent PR, including #7801,
-remains an open dependency and no merge is performed.
+fixed-placement theorem and a signed hostile boundary.  The final gates passed
+before root opened this one stacked review PR; the worker itself performed no
+push or PR creation.  Every parent PR, including #7801, remains an open
+dependency and the campaign will not merge it.

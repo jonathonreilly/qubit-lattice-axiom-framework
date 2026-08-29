@@ -214,3 +214,11 @@
   stopping at the inherited dependency-policy epoch-manifest mismatch. All
   generated ledger/status churn was removed and only the intended new-node/
   five-edge citation manifest delta remains. No audit verdict was applied.
+- Block248 exact-commit evidence readiness: after commit `2a5588bb0c`, a
+  temporary graph/ledger seed followed by
+  `check_changed_audit_evidence.py --base HEAD^ --json` checks exactly one row,
+  reports no failures or control failures, marks the row
+  `forensic_evidence_ready: true`, and includes the independent checker in both
+  `changed_surfaces` and `helper_runner_paths`. The temporary 1,033 generated
+  ledger shards and derived summaries were removed after the check; no audit-
+  owned result is committed.

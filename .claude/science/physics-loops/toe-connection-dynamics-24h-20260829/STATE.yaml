@@ -195,7 +195,7 @@ block248_candidate:
   citation_graph_manifest: one_new_node_five_edges_5667_nodes_16232_edges
   full_pipeline: inherited_dependency_policy_epoch_manifest_mismatch_after_graph_seed_classifier_and_effective_status
   generated_audit_churn: removed_manifest_only_retained
-  changed_evidence_readiness: pending_post_commit_isolated_delta_check
+  changed_evidence_readiness: pass_1_of_1_forensic_ready_with_independent_helper_on_commit_2a5588bb0c
   review_pr: none_user_forbids_PR_creation
 next_exact_action: enumerate the shortest mixed p0_or_p1 with p2 top channels under physical Q and exact recoupling; do not identify formal selected-packet iteration with powers of the actual response
 stop_condition: block248_local_worker_packet_committed_without_push_or_PR_after_review_preflight_and_audit_compatibility_checks

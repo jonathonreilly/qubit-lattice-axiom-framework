@@ -12,4 +12,6 @@ No axioms or primitives changed.  This is not the unrestricted sixteen-index
 endpoint or a full q=4 response.  O10 remains a 91-coefficient V3-to-V5 problem;
 Block240 checks only one raw K=0 cup overlap.  Minimal memory, physical Q, the
 nested temporal multipliers, and the four Gram histories remain open.  Next:
-prove or refute exact O10 cup factorization before temporal assembly.
+prove or refute exact O10 cup factorization before temporal assembly.  The
+reviewed Block241 result is open as stacked review PR #7795; do not merge it in
+this campaign.

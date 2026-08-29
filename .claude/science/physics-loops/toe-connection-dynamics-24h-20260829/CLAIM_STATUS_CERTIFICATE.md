@@ -20,7 +20,7 @@ proposal_allowed: false
 proposal_allowed_reason: "The exact selected no-go depends on supplied action/crossing/J3-Q inputs and open stacked dependencies, and it does not classify the complete symmetric response, all placements, or global minimal memory."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: pending_independent_root_review
+review_loop_disposition: pending_focused_confirmation_after_three_review_repairs
 ```
 
 Block247 derives the complete coefficient recurrence for the selected ordered
@@ -31,8 +31,9 @@ rescales it by `r_(ell,p)^4 r_V^8`. Induction proves layer `n` has a nonzero
 spin-`n` coefficient at every nonzero finite supplied crossing, so every finite
 prefix has rank `n` and no finite-dimensional selected linear invariant carrier
 exists. Crossing alone has a finite spectral recurrence on fixed finite
-Peter--Weyl support. Primary evidence passes `31/31`, all `10/10` mutations are
-rejected, and the independent Laurent-character implementation passes `7/7`.
+Peter--Weyl support. Repaired primary evidence passes `33/33`, all `13/13`
+formula/text mutations are rejected, and the independent Laurent-character
+implementation passes `9/9` with an explicit four/eight-link census.
 Vocabulary lint has zero violations, strict audit lint has no errors, and the
 Block247-scoped changed-evidence gate passes `1/1`, including the independent
 helper. The branch-wide gate against current `origin/main` inherits four

@@ -314,27 +314,42 @@ unbounded.
 
 ### N1 — alternative attacks
 
-All six relevant attacks were attempted.
+The following five normalized attack families were attempted. Each attacks a
+different load-bearing part of the selected theorem rather than counting a
+second implementation as a new route.
 
-1. **Finite recurrence route.** Crossing alone does close by the exact
-   spectral polynomial (11), but the action raises the support and defeats any
-   fixed version of that polynomial.
-2. **Physical-projector route.** Equation (3) applies conditional Haar exactly
-   at every layer. It deletes only `(0,+)` and cannot delete the top spin.
-3. **Operator-order route.** The runner evaluates both `CA` and `AC`; they are
-   unequal generically, so the theorem keeps only the Block246 order.
-4. **Endpoint route.** Haar and `t_V=0` do close the selected tower by killing
-   it. They are named singular endpoints rather than counterexamples to the
-   nonzero-multiplier theorem.
-5. **Cancellation route.** The top spin at each layer has a unique parent and
-   multiplicity one, so no lower-spin term inside this selected branch can
-   cancel it.
-6. **Independent character route.** The Laurent-character implementation
-   reconstructs the same first layers, scalar subtraction, top coefficient,
-   and order mismatch without importing the primary runner.
+1. **Fusion-cancellation attack — `ATTEMPTED`.** This route asks whether two
+   parents or a lower-spin contribution can cancel the new spin-`n` term. It
+   fails because the exact `O(3)` fusion rule gives that top term a unique
+   multiplicity-one parent, as proved in [equations (5)--(10) of this
+   note](#unbounded-top-spin-theorem).
+2. **Original-link power-census attack — `ATTEMPTED`.** This route asks whether
+   overlap or miscounting changes the four `p0` and eight disjoint `C1` powers.
+   It fails under the explicit disjoint sets reconstructed by the
+   [independent census checker](../scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_independent_2026_08_29.py),
+   which is compared coefficient-by-coefficient with the [primary
+   recurrence](../scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_2026_08_29.py).
+3. **Physical-`Q` removal attack — `ATTEMPTED`.** This route asks whether
+   conditional Haar can remove the determinant channel or a positive-spin top
+   term. It fails because the supplied fixed-`delta0` conditional-Haar theorem
+   removes only `(0,+)`, as stated in the [parent conditional-Haar
+   reduction](ADMISSIBILITY_EXTERIOR_CHARACTER_JR_TEMPORAL_SPATIAL_SEMIGROUP_DEFECT_GENERATED_INTERACTION_BOUNDED_THEOREM_NOTE_2026-08-28.md),
+   and the exact identity layers retain `(0,-)`.
+4. **Fixed-support recurrence attack — `ATTEMPTED`.** This route asks whether
+   the crossing-only annihilating polynomial can close the full selected
+   orbit. It fails because that polynomial acts on a fixed finite
+   Peter--Weyl packet, whereas defining-vector multiplication raises the
+   maximum spin at every layer; the positive crossing-only statement is
+   equation (11), not a recurrence for `K`.
+5. **Singular-endpoint attack — `ATTEMPTED`.** This route sets the supplied
+   crossing to Haar or kills the disjoint spectator multiplier. It does close
+   the tower, and the [primary endpoint checks](../scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_2026_08_29.py)
+   reproduce that collapse. It fails as a counterexample to the stated theorem
+   because the theorem explicitly assumes nonzero finite-positive multipliers;
+   the singular endpoints remain named boundary cases rather than being hidden.
 
-These attacks do not exhaust the full symmetric response or alternative
-global memory representations, and no broader no-go is asserted.
+The full symmetric response and alternative global memory representations are
+not among the five closed attacks, and no broader no-go is asserted.
 
 ### N2 — independence of supplied conditions
 

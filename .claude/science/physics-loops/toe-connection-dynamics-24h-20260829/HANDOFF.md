@@ -294,12 +294,14 @@ Peter--Weyl support and obeys the annihilating polynomial formed from its
 finitely many crossing eigenvalues. Thus the new note provides both the
 finite crossing-only recurrence and the unbounded action/crossing recurrence.
 
-The primary runner passes `31/31`, including two positive rational samples, an
+The repaired primary runner passes `33/33`, including two positive rational samples, an
 unrelated signed sample, `F_1009`, `F_1013`, `F_1019`, held-out `F_10007`, the
 identity crossing, Haar, `t_V=0` with higher spins live, action/crossing order
-reversal, delayed `Q`, and the fixed-packet spectral recurrence. All `10/10`
-mutations are rejected. A separate Laurent-character implementation imports no
-primary code and passes `7/7`.
+reversal, delayed `Q`, the fixed-packet spectral recurrence, held-out exact
+crossing coefficients, and a full primary/helper table comparison. All `13/13`
+real formula/text mutations are rejected. A separate Laurent-character
+implementation imports no primary code, reconstructs the disjoint four/eight
+link census, and passes `9/9`.
 
 Vocabulary lint reports zero violations and strict audit lint has no errors.
 The tracked citation-graph manifest records the new node and all four direct
@@ -316,8 +318,12 @@ The no-go is deliberately selected and linear. It does not classify the full
 symmetric `BC_c+CB` response, cancellations among all action placements, the
 full action exponential, nonlinear or indexed recurrence memory, arbitrary
 `r/q`, or global minimal memory. No axiom or approved primitive changed.
-Independent root review remains pending. Per the worker dispatch, no PR was
-opened, no branch was pushed, and no merge was performed. The best next
+Independent root review found three packaging defects without finding a
+counterexample to the selected theorem: decisive crossing-power mutations were
+self-confirming, five scope checks did not mutate note text, and N1 lacked
+per-route markers/citations. The current working tree repairs those defects and
+awaits focused confirmation from the same reviewer. No PR was opened, no branch
+was pushed, and no merge was performed. The best next
 falsifier is an exact top-spin calculation for the complete symmetric branch:
 if its two operator orders cancel at some layer, the selected no-go does not
 widen; if their top coefficients add with the supplied positive multipliers,

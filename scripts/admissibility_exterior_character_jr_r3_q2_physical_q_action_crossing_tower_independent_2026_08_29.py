@@ -21,6 +21,8 @@ AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_EXTERIOR_CHARACTER_JR_TEMPORAL_SPATIAL_SEMIGROUP_DEFECT_GENERATED_INTERACTION_BOUNDED_THEOREM_NOTE_2026-08-28.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
+P0_LINKS = frozenset({"u0", "h1", "v0", "h0"})
+C1_LINKS = frozenset({"u3", "u4", "u5", "h6", "v5", "v4", "v3", "h3"})
 
 
 def character(spin):
@@ -80,6 +82,20 @@ def sample_a():
     }
 
 
+def census_crossing_eigenvalue(spin, parity, sample):
+    """Original-link oracle independent of the primary power formula."""
+    if spin == 0:
+        local = F(1) if parity == 1 else sample["det"]
+    else:
+        local = sample[spin]
+    result = F(1)
+    for _link in P0_LINKS:
+        result *= local
+    for _link in C1_LINKS:
+        result *= sample[1]
+    return result
+
+
 def crossing_eigenvalue(spin, parity, sample):
     if spin == 0:
         local = F(1) if parity == 1 else sample["det"]
@@ -122,6 +138,14 @@ def tower(sample, count=MAX_LAYER):
     return levels
 
 
+def coefficient_tables(sample, count=MAX_LAYER):
+    """Full irrep tables for primary/helper comparison."""
+    return tuple(
+        {(spin, parity): coefficient for spin, coefficient in decomposition.items()}
+        for _polynomial, parity, decomposition in tower(sample, count)
+    )
+
+
 def top_formula(sample, layer_index):
     result = F(1)
     for spin in range(2, layer_index + 1):
@@ -153,8 +177,22 @@ def run_checks():
         identity_levels[2][2].get(0) == 1 and identity_levels[2][1] == -1,
     ))
 
+    checks.append((
+        "independent original-link census is disjoint with powers four and eight",
+        not (P0_LINKS & C1_LINKS) and len(P0_LINKS) == 4 and len(C1_LINKS) == 8,
+    ))
+
     exact_sample = sample_a()
     levels = tower(exact_sample)
+    checked_irreps = ((0, -1), (1, -1), (2, 1), (3, -1))
+    checks.append((
+        "power formula agrees with independently enumerated original-link census",
+        all(
+            crossing_eigenvalue(spin, parity, exact_sample)
+            == census_crossing_eigenvalue(spin, parity, exact_sample)
+            for spin, parity in checked_irreps
+        ),
+    ))
     checks.append((
         "every Laurent layer has the universal top spin and coefficient",
         all(

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_2026_08_29.py
-runner_sha256: dc5b9d020511a0cce8c869d346cc52cb163a15158b1bab8252d41621a318983e
-input_fingerprint_sha256: 02bbf83955fbe3b12caa2ae564a5833a447f7eb99477df55dab6eac3406b75f5
-timeout_sec: 60
+runner_sha256: 8685d778727b410230f991384cd3cec7a21a2c270cf3ada040a84ed3aea02d9e
+input_fingerprint_sha256: a47d593438121eb1e868ad9389f41ac56fca1cfaf27d868dd7df5d1ff3fe0e4d
+timeout_sec: 30
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 [PASS] positive_a: direct composition equals coefficient recurrence
@@ -29,6 +29,8 @@ status: ok
 [PASS] signed F_1013: exact layer rank 8
 [PASS] signed F_1019: exact layer rank 8
 [PASS] held-out F_10007: exact layer rank eight
+[PASS] held-out exact crossing coefficients match the independent census oracle
+[PASS] full primary tower tables match the independent Laurent-character tables
 [PASS] identity crossing: first four successive physical-Q action layers
 [PASS] Haar endpoint: the first crossed residual and all descendants vanish
 [PASS] t=0 endpoint with live higher spins: the C1 spectator kills the tower
@@ -46,7 +48,7 @@ per_site: checked and not executed — no physical lattice-site evolution law is
 per_mode: checked and not executed — no continuum or lattice momentum mode is constructed
 per_block: checked and executed — one selected disjoint p0/C1 physical-J3 fiber is complete
 lattice_wide: checked and not executed — global minimal memory and the full symmetric step remain open
-TOTAL: PASS=31 FAIL=0
+TOTAL: PASS=33 FAIL=0
 
 ----- stderr -----
 

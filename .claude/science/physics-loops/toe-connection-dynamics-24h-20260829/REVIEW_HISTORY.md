@@ -139,14 +139,20 @@
 - Block246 review PR #7800 opened on the reviewed Block245 branch. It is open
   and cleanly stacked; no merge and no audit verdict were performed.
 - Block247 author-side exact verification: the selected physical-`Q`
-  action/crossing recurrence passes `31/31`; all `10/10` hostile mutations are
-  rejected; and a separate Laurent-character implementation that imports no
-  primary code passes `7/7`. The analytic top-spin induction, rather than the
+  action/crossing recurrence now passes `33/33`; all `13/13` hostile formula
+  and note-text mutations are rejected; and a separate Laurent-character
+  implementation that imports no primary code passes `9/9`, including an
+  explicit disjoint four/eight-link census. The analytic top-spin induction, rather than the
   checked layer-eight rank tables, supplies the universal selected no-go.
   Physical `Q`, action/crossing order, singular endpoints, sample-wise rank
   boundaries, and global-memory limitations are explicit. Independent root
-  review is pending by dispatch; no review-loop verdict, audit verdict, PR,
-  push, or merge is recorded here.
+  first independent review returned `FAIL` on three package defects rather than
+  the theorem: self-confirming crossing-power checks, five name-only scope
+  controls, and incomplete N1 route markers/citations. The working tree adds an
+  independent census oracle and full-table comparison, mutates the note text
+  for all five scope controls, and rewrites N1 as five substantive attempted
+  routes with evidence citations. Focused confirmation by the same reviewer is
+  pending; no audit verdict, PR, push, or merge is recorded here.
 - Block247 author-side repository gates: vocabulary lint has zero violations;
   compilation and strict audit lint pass; citation topology records four direct
   dependencies; and the full pipeline reaches graph build, seed, classifier,

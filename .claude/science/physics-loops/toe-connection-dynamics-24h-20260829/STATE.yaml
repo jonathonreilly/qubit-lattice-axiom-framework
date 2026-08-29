@@ -42,7 +42,7 @@ block243_checks:
   physical_q: acts_as_identity_after_I_minus_Q_on_fixed_delta0_first_order_history_span; static_cup_identification_rejected
   combined_response_primary_checks: 30_of_30
   combined_response_mutations: 7_of_7_rejected
-review_loop_disposition: pending_independent_root_review
+review_loop_disposition: pending_focused_confirmation_after_three_review_repairs
 full_pipeline_disposition: inherited_dependency_policy_epoch_mismatch_after_graph_seed_classifier_and_effective_status
 block240_pr: 7794
 block241_pr: 7795
@@ -136,9 +136,12 @@ block247_candidate:
   universal_top_spin: layer_n_contains_spin_n_with_coefficient_rV_power_8n_minus_8_times_product_spin2_through_n_of_rj_power4
   invariant_conclusion: no_finite_dimensional_linear_invariant_carrier_containing_the_selected_orbit_when_displayed_multipliers_are_nonzero
   crossing_only_boundary: fixed_finite_Peter_Weyl_support_obeys_a_finite_spectral_recurrence_and_creates_no_new_irrep
-  primary_exact_checks: 31_of_31
-  hostile_mutations: 10_of_10_rejected
-  independent_laurent_character_checks: 7_of_7
+  primary_exact_checks: 33_of_33
+  hostile_mutations: 13_of_13_rejected
+  independent_laurent_character_checks: 9_of_9
+  independent_original_link_census: p0_4_links_C1_8_links_disjoint
+  heldout_crossing_coefficients: exact_primary_equals_independent_census_oracle
+  full_primary_independent_tables: exact_at_positive_a_positive_b_and_signed_samples
   exact_rational_samples: [positive_a, positive_b, signed]
   exact_prime_fields: [1009, 1013, 1019]
   heldout_field: 10007
@@ -155,6 +158,6 @@ block247_candidate:
   order_reversal: generically_nonzero_difference_between_CA_and_AC
   generic_rank_boundary: analytic_top_spin_induction_not_a_sample_rank_extrapolation
   global_minimal_memory: remains_open_for_full_symmetric_nonlinear_or_indexed_carriers
-  review_state: pending_independent_root_review
+  review_state: pending_focused_confirmation_after_three_review_repairs
 next_exact_action: test the complete symmetric BC_c_plus_CB action/crossing branch and multiple plaquette placements for top-spin cancellation; do not widen the selected linear-carrier no-go to global minimal memory
 stop_condition: worker packet complete and handed to independent root review; no PR or merge in this worker

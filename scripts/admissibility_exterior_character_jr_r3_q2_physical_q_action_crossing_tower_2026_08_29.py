@@ -38,6 +38,9 @@ NOTE = ROOT / AUDIT_INPUT_PATHS[0]
 TRIVIAL = (0, 1)
 VECTOR = (1, -1)
 MUTATIONS = (
+    "p0_power_4_to_3",
+    "C1_power_8_to_7",
+    "determinant_channel_to_vector",
     "reverse_action_crossing_order",
     "drop_physical_q",
     "delay_physical_q",
@@ -49,6 +52,28 @@ MUTATIONS = (
     "identify_physical_q_with_static_cup",
     "axiom_edit",
 )
+SCOPE_MUTATIONS = {
+    "identify_temporal_multiplicity_as_new_irreps": (
+        "temporal multiplicity leakage is not new Peter--Weyl content",
+        "temporal multiplicity leakage is new Peter--Weyl content",
+    ),
+    "claim_global_minimal_memory": (
+        "Global minimal memory remains open",
+        "Global minimal memory is closed",
+    ),
+    "identify_sample_rank_as_universal": (
+        "Sample-wise Block246 ranks are not used as universal generic ranks",
+        "Sample-wise Block246 ranks are universal generic ranks",
+    ),
+    "identify_physical_q_with_static_cup": (
+        "physical conditional-Haar `Q`, not a static cup projector",
+        "physical conditional-Haar `Q` is a static cup projector",
+    ),
+    "axiom_edit": (
+        "No axiom or approved primitive is edited",
+        "An axiom or approved primitive is edited",
+    ),
+}
 
 
 @dataclass(frozen=True)
@@ -281,19 +306,47 @@ def scope_check(mutation=None):
         "physical conditional-Haar `Q`, not a static cup projector",
         "No axiom or approved primitive is edited",
     )
-    if mutation in {
-        "identify_temporal_multiplicity_as_new_irreps",
-        "claim_global_minimal_memory",
-        "identify_sample_rank_as_universal",
-        "identify_physical_q_with_static_cup",
-        "axiom_edit",
-    }:
-        return False
+    if mutation in SCOPE_MUTATIONS:
+        source, replacement = SCOPE_MUTATIONS[mutation]
+        if text.count(source) != 1:
+            raise AssertionError(f"scope mutation source count for {mutation}: {text.count(source)}")
+        text = text.replace(source, replacement, 1)
     return all(phrase in text for phrase in required)
+
+
+def independent_sample(sample):
+    return {
+        "det": sample.determinant,
+        **{spin: sample.spins[spin] for spin in range(1, MAX_LAYER + 1)},
+    }
+
+
+def mutated_crossing_eigenvalue(irrep, sample, mutation):
+    """Hostile formula variants checked against the independent link census."""
+    spin, parity = irrep
+    if spin == 0:
+        local = sample.spins[1] if mutation == "determinant_channel_to_vector" else sample.determinant
+    else:
+        local = sample.spins[spin]
+    p0_power = 3 if mutation == "p0_power_4_to_3" else 4
+    c1_power = 7 if mutation == "C1_power_8_to_7" else 8
+    return local**p0_power * sample.spins[1]**c1_power
 
 
 def mutation_detected(mutation):
     seed = {VECTOR: F(1)}
+    if mutation in {
+        "p0_power_4_to_3",
+        "C1_power_8_to_7",
+        "determinant_channel_to_vector",
+    }:
+        probes = ((0, -1), (2, 1), (3, -1))
+        oracle_sample = independent_sample(POSITIVE_A)
+        return any(
+            mutated_crossing_eigenvalue(irrep, POSITIVE_A, mutation)
+            != independent.census_crossing_eigenvalue(*irrep, oracle_sample)
+            for irrep in probes
+        )
     if mutation == "reverse_action_crossing_order":
         return physical_layer(seed, POSITIVE_A) != reversed_layer(seed, POSITIVE_A)
     if mutation == "drop_physical_q":
@@ -314,7 +367,7 @@ def mutation_detected(mutation):
         hostile_sample = Sample("killed_top", POSITIVE_A.determinant, tuple(spins))
         hostile = tower(hostile_sample, 5)[-1]
         return hostile.get((5, -1), F(0)) == 0
-    return not scope_check(mutation)
+    return scope_check() and not scope_check(mutation)
 
 
 def main():
@@ -369,6 +422,23 @@ def main():
     heldout_levels = tower(POSITIVE_B)
     check("held-out F_10007: exact layer rank eight",
           modular_rank(heldout_levels, 10007) == MAX_LAYER)
+
+    heldout_eigenvalues = {
+        (0, -1): F(1, 5) ** 4 * F(3, 7) ** 8,
+        (2, 1): F(4, 9) ** 4 * F(3, 7) ** 8,
+        (3, -1): F(5, 11) ** 4 * F(3, 7) ** 8,
+    }
+    check("held-out exact crossing coefficients match the independent census oracle",
+          all(crossing_eigenvalue(irrep, POSITIVE_A) == expected
+              == independent.census_crossing_eigenvalue(
+                  *irrep, independent_sample(POSITIVE_A)
+              )
+              for irrep, expected in heldout_eigenvalues.items()))
+    check("full primary tower tables match the independent Laurent-character tables",
+          all(tuple(tower(sample)) == independent.coefficient_tables(
+                  independent_sample(sample)
+              )
+              for sample in (POSITIVE_A, POSITIVE_B, SIGNED)))
 
     expected_identity = (
         {(1, -1): F(1)},

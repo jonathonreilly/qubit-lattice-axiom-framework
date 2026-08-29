@@ -185,3 +185,63 @@
 - Block247 review PR #7801 opened on the independently reviewed Block246
   branch after the cluster-cap returned `OPEN`. It is review-only; no merge or
   audit verdict was performed.
+- Block248 authority reconstruction: fetched `origin/main` at
+  `3cc632921c36aa90266c5c62e56816577ce59a0a`; searched titles, note bodies,
+  scripts, and derivation obligations for symmetric-order/top-spin cancellation
+  results; found no `origin/main` derivation of the target formulas. Re-read the
+  Block247 no-go and both runners, their Block239/Block246 and parent action/
+  multiplier authorities, and reconstructed the typed response and every local
+  original link. All parent PRs remain open dependencies.
+- Block248 exact algebra: transport gives `A_i C+C A_i`. The disjoint crossing
+  eigenvalue is `r_n^4r_1^8`; the shared `h3` channel has the independently
+  derived `3/7/1` eigenvalue `r_n^3r_1^7r_(n+1)`. Both operator orders reach the
+  same unit-multiplicity top network and add. Strict positive supplied
+  multipliers reinforce; a signed shared-rung control cancels exactly outside
+  that domain.
+- Block248 implementation preflight: the full disjoint exact recurrence and
+  all three top formulas pass `21/21`; an independent oriented-link/maximal-
+  torus implementation passes `12/12`; all `14/14` formula and scope mutations
+  are rejected. Identity, Haar, vector-spectator-zero, physical conditional-
+  Haar, and response-scalar controls pass. Repository, cache, citation graph,
+  lint, and review-loop results are recorded after their final executions; no
+  audit verdict is applied.
+- Block248 repository preflight: vocabulary lint reports zero violations; both
+  runners compile; the source-and-declared-input-bound primary cache is fresh;
+  strict audit lint reports no errors; and repository invariants report zero
+  link or Class-F violations with the citation delta acknowledged. The full
+  pipeline passes axiom purity, constructs the 5,667-node/16,232-edge graph,
+  seeds the new row, classifies runners, and computes effective statuses before
+  stopping at the inherited dependency-policy epoch-manifest mismatch. All
+  generated ledger/status churn was removed and only the intended new-node/
+  five-edge citation manifest delta remains. No audit verdict was applied.
+- Block248 exact-commit evidence readiness: after commit `2a5588bb0c`, a
+  temporary graph/ledger seed followed by
+  `check_changed_audit_evidence.py --base HEAD^ --json` checks exactly one row,
+  reports no failures or control failures, marks the row
+  `forensic_evidence_ready: true`, and includes the independent checker in both
+  `changed_surfaces` and `helper_runner_paths`. The temporary 1,033 generated
+  ledger shards and derived summaries were removed after the check; no audit-
+  owned result is committed.
+- Block248 final independent review: the fresh maximum-reasoning reviewer found
+  no science defect and initially failed commit `1c85b1d408` only because the
+  preceding claim-status repair left the source-bound primary cache fingerprint
+  stale.  Commit `8f48b5a850` regenerates only that cache.  The same reviewer
+  independently reproduced its runner SHA and seven-input fingerprint, verified
+  byte-identical `21/21` stdout, confirmed that the other 19 reviewed blobs are
+  unchanged and the tree is clean, and issued the superseding `FINAL VERDICT:
+  PASS`.  The packet remains `conditional-support`; this review applies no audit
+  verdict and does not close any open parent.
+- Block248 mandatory eighth-PR cluster-cap: `OPEN`.  The block answers
+  Block247's named cancellation falsifier with a distinct positive coefficient
+  theorem: the two typed operator orders reinforce rather than cancel on every
+  named fixed placement under the supplied positive multipliers.  That premise,
+  claim type, and signed-cancellation hostile boundary are not restatements of
+  the earlier finite kernels, Gram/rank results, leakage witness, or selected
+  ordered no-go.  The theorem note and independent runner are separately
+  reviewable, and deciding whether the selected tower survives the complete
+  symmetric local response has enough marginal audit value to justify one more
+  stacked review PR.
+- Block248 review PR #7803 was opened on Block247 PR #7801 after the final
+  cache, vocabulary, strict-lint, repository-invariant, portability, and
+  audit-output-clean gates passed.  It is review-only; no merge or audit verdict
+  was performed.

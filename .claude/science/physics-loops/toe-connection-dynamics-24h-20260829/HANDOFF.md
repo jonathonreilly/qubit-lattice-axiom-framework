@@ -346,3 +346,88 @@ boundary. Reviewing this delta retires the finite linear invariant-carrier
 strategy and determines whether the complete symmetric response is the next
 meaningful widening target. That marginal science value justifies one stacked
 review PR despite the existing family depth.
+
+## Block248 complete two-order fixed-placement coefficient
+
+Block248 resolves the exact cancellation test named by the Block247 handoff.
+The parent finite-step response has the typed form
+
+```text
+L_epsilon=-(epsilon/2)(B C_c+C B).
+```
+
+With `A_i=(I-Q)M_(chi_V(p_i))`, `C J_3=J_3 C_c`, and `[C,Q]=0`, its normalized
+fine-packet core is `S_i=A_i C+C A_i`. If `g_n^i` is the unique selected top
+network, the crossing-first path contributes `d_n^i g_(n+1)^i` and the
+action-first path contributes `d_(n+1)^i g_(n+1)^i`. Both paths have the same
+unit fusion coefficient and the parent sign is plus.
+
+The original-link reconstruction gives two placement types. For `p0` and
+`p1`, the action loop is disjoint from the eight-link `C1` spectator:
+
+```text
+d_n^D=r_n^4 r_1^8,
+s_n^D=d_n^D+d_(n+1)^D
+     =r_1^8(r_n^4+r_(n+1)^4).
+```
+
+For `p2`, the loops share `h3` with opposite orientation. The highest coupled
+network has three spin-`n` links, seven vector links, and one spin-`n+1` shared
+link:
+
+```text
+d_n^S=r_n^3 r_1^7 r_(n+1),
+s_n^S=d_n^S+d_(n+1)^S
+     =r_1^7[r_n^3r_(n+1)+r_(n+1)^3r_(n+2)].
+```
+
+Every supplied finite-positive multiplier is strictly positive, so neither
+formula cancels: the two orders reinforce on all three fixed placements. A
+signed hostile assignment `r_n=r_(n+1)=1,r_(n+2)=-1` cancels the shared factor
+exactly and records the sharp algebraic boundary outside the supplied domain.
+At identity crossing each symmetric factor is two; at the Haar endpoint or
+with `r_1=0`, all three factors vanish.
+
+Physical `Q` remains conditional Haar. The proper one-plaquette top output has
+nontrivial first-cell Peter--Weyl label and zero coarse conditional mean; no
+static cup projector is substituted. The pure-placement selected coefficient
+at spin `N` is the product of the corresponding `s_j`, but this is a formal
+fine-packet extension and a pure amplitude-monomial coefficient. It is not
+identified with powers of the actual coarse-to-residual response.
+
+The primary exact certificate passes `21/21`; all `14/14` hostile formula and
+scope mutations are rejected. A separate checker imports no primary code,
+reconstructs the oriented loops and maximal-torus top monomial, and passes
+`12/12`. No sample-rank extrapolation enters the proof. The result is a bounded
+positive coefficient theorem, so no new N1--N8 no-go packet is invoked; the
+primary cache nevertheless emits the five-resolution rhetoric lines.
+
+The exact next falsifier is the shortest mixed word containing one disjoint
+action and one `p2` action. Enumerate all maximum-label networks and their
+recoupling signs after physical conditional Haar. Mixed placements, a
+composable physical-response carrier, the full exponential, invariant closure,
+and global minimal memory receive no conclusion in Block248. Every parent PR
+is treated as open. The worker performs no push, PR, merge, audit verdict,
+axiom edit, or primitive edit.
+
+The same independent reviewer issued a superseding final `PASS` on repaired
+commit `8f48b5a850`: the sole earlier failure was a stale cache fingerprint after
+a wording-only claim-status repair, and the final commit changes only that
+cache.  Live and cached primary output remain byte-identical at `21/21`; the
+independent and hostile suites remain `12/12` and `14/14`.
+
+The mandatory eighth-PR cluster-cap verdict is `OPEN`.  This is not a relabeled
+rank corollary: Block247 left cancellation in the complete symmetric
+`B C_c+C B` response as its decisive falsifier, while Block248 proves that the
+two orders reinforce on all three fixed placements and supplies an exact signed
+boundary where cancellation returns outside the positive supplied domain.  It
+is a distinct positive theorem with a self-contained note, primary certificate,
+and independent oriented-link reconstruction.  Its marginal review value is to
+decide whether Block247's selected ordered tower is an ordering artifact before
+the campaign attempts mixed placements or the full exponential.  The verdict
+gates only opening a review PR; it is not an audit verdict or permission to
+merge.
+
+After those final gates, Block248 was opened as stacked review PR #7803 on
+Block247 PR #7801.  It remains review-only; the campaign performed no merge or
+audit verdict.

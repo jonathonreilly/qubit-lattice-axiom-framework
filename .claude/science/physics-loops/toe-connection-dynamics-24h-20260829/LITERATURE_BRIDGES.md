@@ -1,4 +1,6 @@
 # Literature bridges
 
-No external literature is load-bearing in Block242. Standard `O(3)` Haar and
-Brauer identities are reconstructed directly by the runners.
+No external literature is load-bearing in Block248. Standard compact-group
+character fusion, maximal-torus weights, and conditional Haar orthogonality are
+reconstructed in the note and independent runner. All physical inputs are
+identified as supplied repository authorities.

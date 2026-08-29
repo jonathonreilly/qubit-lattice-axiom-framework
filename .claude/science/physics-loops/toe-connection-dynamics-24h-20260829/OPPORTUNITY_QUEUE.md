@@ -2,8 +2,8 @@
 
 | Rank | Target | Why it can move the science | Next falsifier |
 |---:|---|---|---|
-| 1 | Complete symmetric action/crossing top-spin test | Block247 proves the selected ordered `C(I-Q)M_V` orbit has one new top spin per layer, but the parent physical response contains both action/crossing orders | derive the top-spin coefficient of the complete `BC_c+CB` branch and test whether the two orders add or cancel for the supplied positive multipliers |
-| 2 | Multiple-placement physical-Q action tower | The one-plaquette tower is unbounded, while cancellations or fusion constraints across all three fine plaquettes remain unclassified | construct the two- and three-placement highest-weight sectors without replacing physical `Q` by a cup projector |
+| 1 | Mixed-placement physical-Q top channels | Block248 proves reinforcement for every pure fixed placement, while a sum of different placements introduces recoupling coefficients not present in the pure monomials | enumerate the shortest disjoint/shared word, including every maximum-label channel and exact sign |
+| 2 | Typed response-domain closure | The selected fine-packet extension has exact pure-placement products, but the parent physical map is coarse-to-residual | identify a supplied composable carrier or keep response powers outside the claim |
 | 3 | Diagonal and exclusive-history completion of the `q=4` Gram | Required before any global minimal-memory theorem; Block243 fixes only the `Y,Z` cross-response | construct the missing physical histories and compare their exact feature rank with the canonical rank-two cross completion |
 | 4 | Larger product/multirun word at `r=2` | Extends the known channel alphabet beyond the already closed adjacent-pair and gap-fill examples | test whether genuinely new fusion states survive physical `Q` rather than repackaging Blocks236--238 |
 | 5 | Conditional six-channel Hermitian local Jacobian from POSITIVE_PATH Result92 | Exact representation theorem after supplying Hermitian tangent slices, linearization, and diagonal spatial-to-Bloch action; not axiom-native | keep imports explicit; do not treat Results92--99 as minimal-axiom dynamics |
@@ -54,3 +54,11 @@ then crossing create a nonzero new top spin at every layer. This rules out a
 finite-dimensional selected linear invariant carrier but does not determine
 global minimal memory. The next route must test the complete symmetric branch
 or multiple placements rather than add more sampled ranks to the same orbit.
+
+Block248 resolves the fixed-placement symmetric-order question analytically.
+The plus-signed order terms reinforce on both disjoint placements and on the
+shared-rung placement with its corrected `3/7/1` census. The shared factor has
+an exact signed cancellation locus outside the supplied positive domain. The
+next route is therefore not another pure-placement layer: it is the first mixed
+placement recoupling, with physical conditional Haar and typed domains kept
+explicit.

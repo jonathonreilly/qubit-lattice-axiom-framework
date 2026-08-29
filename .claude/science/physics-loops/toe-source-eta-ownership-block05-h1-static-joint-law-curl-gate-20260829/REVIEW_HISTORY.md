@@ -10,6 +10,7 @@
 - Primary execution passed 6/6 and rejected 27/27 mutations.
 - Independent Boolean-coefficient execution passed 6/6 and rejected 27/27
   mutations, reproducing the 4,032/6,144 census and 60/63 ranks.
+- Science result committed at `8867b9ff051e603aec8b1da4a2970cb231f4a531`.
 - Identity-bound caches completed with status `ok` at runner/input hashes
   `3460cdb893a3`/`5b8806f9d04f` and
   `c40f11b86043`/`40f84aa98c6d`; each used the declared 300-second budget.

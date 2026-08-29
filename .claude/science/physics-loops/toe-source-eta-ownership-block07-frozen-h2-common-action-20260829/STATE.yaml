@@ -1,13 +1,13 @@
 loop_id: toe-source-eta-ownership-block07-frozen-h2-common-action-20260829
 block: source_eta_07
-status: executed_cached_delivery_pending
+status: executed_cached_delivery_backlogged
 phase: frozen_h2_common_action_source_image
 branch: physics-loop/toe-source-eta-ownership-block07-frozen-h2-common-action-20260829
 parent_commit: a9b4285a17a3a35941667b074bda2f20fa8f1c70
 origin_main: 004f64e1c87dad696b282cf2b526f3e7312dc82d
 minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 preregistration_commit: 0169137102e9c2677de51aa8e13f4e1ea2665bce
-result_commit: pending
+result_commit: 093a01ff03527fa6d2be189d0e5fb924356c524d
 result_pr: backlogged
 latest_gravity_pr: 7793
 latest_gravity_head: e5be453f7c5ba9505b3ae956eee52b207b9bca93

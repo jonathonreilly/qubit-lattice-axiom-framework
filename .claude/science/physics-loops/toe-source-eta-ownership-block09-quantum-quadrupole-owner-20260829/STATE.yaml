@@ -1,13 +1,13 @@
 loop_id: toe-source-eta-ownership-block09-quantum-quadrupole-owner-20260829
 block: source_eta_09
-status: executed_cached
+status: checkpointed_pushed
 phase: quantum_direction_corner_common_source_owner
 branch: physics-loop/toe-source-eta-ownership-block09-quantum-quadrupole-owner-20260829
 parent_commit: b7cf0c7ed83bd3e57c4538b29fc3d5f784ed9ca5
 origin_main: 004f64e1c87dad696b282cf2b526f3e7312dc82d
 minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 preregistration_commit: 916fda761aa9a168b4ae90e29af09e1fdb9457a1
-result_commit: pending
+result_commit: 8bcb2edba7006296e384ca3854edf547725e4569
 result_pr: backlogged
 latest_gravity_pr: 7793
 latest_gravity_head: e5be453f7c5ba9505b3ae956eee52b207b9bca93

@@ -20,4 +20,5 @@
 - staged cache preflight passed for both runners; staged audit lint then
   reported the expected `1008` unmaterialized-ledger errors downstream of the
   same stage-7 stop (the new row makes the count one above Block 08);
+- science result commit `8bcb2edba7006296e384ca3854edf547725e4569` was pushed to the registered branch;
 - no `review-loop` or audit verdict used.

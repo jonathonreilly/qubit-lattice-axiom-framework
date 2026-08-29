@@ -1,6 +1,6 @@
 {
- "edge_count": 16253,
- "node_count": 5650,
+ "edge_count": 16255,
+ "node_count": 5651,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -433,6 +433,10 @@
   "admissibility_d4_common_spin2_source_module_six_bit_capacity_boundary_bounded_theorem_note_2026-08-29": {
    "deps_hash": "ccdba709e112",
    "out_degree": 4
+  },
+  "admissibility_d4_covariant_conditional_cap_packet_instrument_boundary_bounded_theorem_note_2026-08-29": {
+   "deps_hash": "82895bea4225",
+   "out_degree": 2
   },
   "admissibility_d4_detector_conditioned_m2_pointer_discriminator_boundary_bounded_theorem_note_2026-08-25": {
    "deps_hash": "c8eee4235fc9",

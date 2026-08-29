@@ -1,7 +1,7 @@
 # Artifact plan
 
-- Exact-support theorem note for the q=4 K=0 junction and O10 cup.
-- Fast exact-field endpoint runner.
-- Exact-rational decisive-block runner.
-- Independent hostile review of the tracked row projection, cup placement, and normalization.
+- Bounded-theorem note for the all-spin q=4 O01 permutation kernel.
+- Three-field companion endpoint runner over every `3^8` entry.
+- Exact-rational primary with complete row tensor and nested-Casimir path blocks.
+- Independent hostile review of strand direction, normalization, path basis, and scope.
 - One stacked review PR only after review-loop pass.

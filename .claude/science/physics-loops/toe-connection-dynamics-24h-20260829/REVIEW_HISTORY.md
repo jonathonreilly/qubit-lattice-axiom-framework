@@ -15,7 +15,23 @@
 - Focused confirmation round: exact cup/normalization, Brauer/code, and
   authority/audit reviewers all returned `FINAL VERDICT: PASS` on the repaired
   current tree.
-- Formal review-loop disposition: pass.  The full repository pipeline reaches
+- Block240 formal review-loop disposition: pass.  Its full repository pipeline reaches
   the inherited dependency-policy epoch mismatch already disclosed on the
   stacked Block239 PR; that generated-control-plane drift is not included in
   this science block.
+- Block241 preliminary independent reconstruction: the complete rational
+  `3^8` row tensor and all three finite fields give the same directed cycle
+  `P/243`; nested Casimirs resolve all 19 paths and 91 coordinates.  Focused
+  final-file review then passed after two narrow repairs: the retained-proposal
+  firewall/trace surfaces were aligned, and the pivot-rational coordinate
+  blocks were distinguished from their orthonormal representatives through
+  `A^T D A=D`.
+- Block241 authority/governance reviewer: PASS.
+- Block241 exact Brauer/code/path-basis reviewer: PASS with 38/38 exact checks,
+  21/21 three-field checks, and 12/12 hostile mutations rejected.
+- Block241 O10/cup/temporal-boundary reviewer: PASS; O10, physical Q, full
+  response, and minimal memory remain explicitly open.
+- Block241 formal review-loop disposition: pass.  Strict audit lint has no
+  errors.  The full repository pipeline reaches the same inherited
+  dependency-policy epoch mismatch disclosed on the parent stack after graph,
+  seed, and runner classification; generated pipeline churn was stripped.

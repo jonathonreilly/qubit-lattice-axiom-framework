@@ -1,14 +1,15 @@
 # Handoff
 
-Block240 resolves the first q=4 scalar junction.  Exact rational contraction
-gives the non-diagonal O01 K=0 block `U0/243`.  For O10, the tracked result is
-the explicitly unnormalized raw epsilon/cup row overlap `2/27` and its
-three-field row-projected `cup(p0,A) tensor I(D,E,F)` endpoint.  The complete
-unprojected tensor and normalized determinant-channel weight remain open.  The
-O01 block falsifies same-`L` diagonal propagation only; it does not yet prove
-that `(L,J)` is an insufficient state coordinate.
+Block241 collapses the complete static, column-closed O01 q=4 problem to one
+exact operator.  In occurrence order the row-reduced `3^8` tensor is
+`I_(V^4)/243`; in physical sequential order it is the directed cycle
+`P|A,D,E,F>=|D,E,F,A>` divided by 243.  Exact nested Casimir projectors give
+multiplicities `3,6,6,3,1` and explicit full-rank rational coordinate blocks
+for all 19 paths.  This fixes all 91 O01 equivariant coefficients, including
+the 82 outside Block240 K=0, while reproducing the reviewed K=0 matrix.
 
-No axioms or primitives changed.  Do not claim a full q=4 response, arbitrary
-memory, dynamics, gravity, or TOE closure.  Three focused reviewers passed the
-repaired block, now open as review PR #7794.  Next: resolve K=1--4 and the seven
-odd residual routes.
+No axioms or primitives changed.  This is not the unrestricted sixteen-index
+endpoint or a full q=4 response.  O10 remains a 91-coefficient V3-to-V5 problem;
+Block240 checks only one raw K=0 cup overlap.  Minimal memory, physical Q, the
+nested temporal multipliers, and the four Gram histories remain open.  Next:
+prove or refute exact O10 cup factorization before temporal assembly.

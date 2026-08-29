@@ -1,6 +1,6 @@
 {
- "edge_count": 16243,
- "node_count": 5646,
+ "edge_count": 16247,
+ "node_count": 5647,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -512,6 +512,10 @@
   },
   "admissibility_d4_ordered_h1_front_carrier_interface_boundary_bounded_theorem_note_2026-08-29": {
    "deps_hash": "7082817764be",
+   "out_degree": 4
+  },
+  "admissibility_d4_outcome_typed_generated_front_prefix_boundary_bounded_theorem_note_2026-08-29": {
+   "deps_hash": "82b5054e15c1",
    "out_degree": 4
   },
   "admissibility_d4_quantum_direction_corner_common_source_owner_boundary_bounded_theorem_note_2026-08-29": {

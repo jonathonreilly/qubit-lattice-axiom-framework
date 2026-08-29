@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: f7cd77e3e1dc2e29b6b353f0adaaca778df214d6a868df269f9fd72ee2f3ba43
-input_fingerprint_sha256: 3d841cb4e8751e143f1e728baae5bbb3923b8323ddce3a6a9559c949d0e16417
+runner_sha256: 2a48560d2e587129b1265239e11e9d368ba90470df01545c7010ff3f30be3f9b
+input_fingerprint_sha256: d92a51680be86846b7e390dc82c3e2b1aa657069ba8454281382fba463305c2d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 5.24
+elapsed_sec: 10.41
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms

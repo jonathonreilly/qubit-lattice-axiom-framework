@@ -471,7 +471,9 @@ def primary_packet_response_data() -> dict[str, object]:
     }
 
 
-def primary_vector_o3_offblock_data() -> dict[str, object]:
+def primary_vector_o3_offblock_data(
+    mutation: str | None = None,
+) -> dict[str, object]:
     """Exact defining-O(3) recoupling on the actual seven-link r=2 cell."""
 
     dimension = 3
@@ -493,6 +495,17 @@ def primary_vector_o3_offblock_data() -> dict[str, object]:
          * haar_second((j, j), (k, ell))
          for i in range(dimension) for j in range(dimension)
          for k in range(dimension) for ell in range(dimension)),
+        sp.Rational(0),
+    )
+    r3_complement_overlap = sum(
+        (
+            haar_second((i, i), (c, a))
+            * haar_second((j, j), (b, c))
+            * haar_second((k, k), (a, b))
+            for i in range(dimension) for j in range(dimension)
+            for k in range(dimension) for a in range(dimension)
+            for b in range(dimension) for c in range(dimension)
+        ),
         sp.Rational(0),
     )
 
@@ -530,20 +543,105 @@ def primary_vector_o3_offblock_data() -> dict[str, object]:
         / (2 * dimension)
         * (1 + t_value**4) * (t_value**4 + t_value**8)
     )
-    t_symbol = sp.symbols("t_V", positive=True)
-    r3_polynomial = (
-        3 * t_symbol**4 + 6 * t_symbol**6 + 12 * t_symbol**8
-        + 8 * t_symbol**10 + 15 * t_symbol**12 + 2 * t_symbol**14
-        + 2 * t_symbol**16
-    )
-    perimeters = {
-        frozenset((0,)): 4, frozenset((1,)): 4,
-        frozenset((2,)): 4, frozenset((0, 1)): 6,
-        frozenset((1, 2)): 6, frozenset((0, 2)): 8,
+    # The r=3 evidence is built from the actual ten original links.  Taking
+    # symmetric differences fuses every doubled V edge through its scalar
+    # channel and leaves precisely the boundary spin network of the subset.
+    r3_plaquettes = {
+        0: frozenset(("u0", "v0", "h0", "h1")),
+        1: frozenset(("u1", "v1", "h1", "h2")),
+        2: frozenset(("u2", "v2", "h2", "h3")),
     }
+    if mutation == "corrupt_vector_r3_polynomial":
+        r3_plaquettes[2] = frozenset(("u2", "v2", "h2"))
+    r3_edges = frozenset().union(*r3_plaquettes.values())
+    r3_cell = frozenset(r3_plaquettes)
+
+    def r3_boundary(subset: frozenset[int]) -> frozenset[str]:
+        boundary: frozenset[str] = frozenset()
+        for index in sorted(subset):
+            boundary ^= r3_plaquettes[index]
+        return boundary
+
+    r3_outer = r3_boundary(r3_cell)
+    r3_subsets = tuple(
+        frozenset(index for index in r3_cell if mask & (1 << index))
+        for mask in range(1, (1 << len(r3_cell)) - 1)
+    )
+    perimeters = {subset: len(r3_boundary(subset)) for subset in r3_subsets}
+
+    # On one edge, 0, 1, or 2 defining-vector factors carry respectively the
+    # trivial label, V, or the full V tensor V = 0(+) + 1(+) + 2(+) menu.
+    # Intersect the menus of the complementary vacuum/vector histories.  This
+    # derives, rather than assumes, that every doubled edge is forced to 0(+)
+    # and that the common support is exactly the subset boundary.
+    def fusion_menu(multiplicity: int) -> frozenset[int]:
+        assert multiplicity in (0, 1, 2)
+        if mutation == "invent_vector_r3_nonscalar_channel" and multiplicity == 0:
+            return frozenset((0, 2))
+        return (
+            frozenset((0,)) if multiplicity == 0
+            else frozenset((1,)) if multiplicity == 1
+            else frozenset((0, 1, 2))
+        )
+
+    scalar_match_rows: dict[frozenset[int], dict[str, object]] = {}
+    nonscalar_channels: set[int] = set()
+    for subset in r3_subsets:
+        complement = r3_cell - subset
+        common_labels: dict[str, frozenset[int]] = {}
+        doubled_edges: set[str] = set()
+        for edge in sorted(r3_edges):
+            vacuum_count = sum(
+                int(edge in r3_plaquettes[index]) for index in subset
+            )
+            vector_count = int(edge in r3_outer) + sum(
+                int(edge in r3_plaquettes[index]) for index in complement
+            )
+            common = fusion_menu(vacuum_count) & fusion_menu(vector_count)
+            common_labels[edge] = common
+            if max(vacuum_count, vector_count) == 2:
+                doubled_edges.add(edge)
+                nonscalar_channels.update(label for label in common if label)
+        unique = all(len(labels) == 1 for labels in common_labels.values())
+        common_support = frozenset(
+            edge for edge, labels in common_labels.items() if labels == {1}
+        )
+        scalar_match_rows[subset] = {
+            "unique": unique,
+            "common_support": common_support,
+            "boundary": r3_boundary(subset),
+            "doubled_edges": frozenset(doubled_edges),
+        }
+
+    t_symbol = sp.symbols("t_V", positive=True)
+
+    def tau(subset: frozenset[int]) -> sp.Expr:
+        return t_symbol ** len(r3_boundary(subset))
+
+    # Expand the two complement orientations in (34sV), once for each of the
+    # three singleton choices.  No coefficient of P_3 is supplied by hand.
+    r3_polynomial = sp.Rational(0)
+    for singleton in (subset for subset in r3_subsets if len(subset) == 1):
+        complement = r3_cell - singleton
+        first, second = sorted(complement)
+        r3_polynomial += (
+            (1 + tau(singleton))
+            * (
+                tau(r3_cell) + tau(singleton)
+                + tau(singleton | {first}) + tau(singleton | {second})
+            )
+            + (tau(r3_cell) + tau(complement))
+            * (1 + tau(complement) + tau({first}) + tau({second}))
+        )
+    r3_polynomial = sp.expand(r3_polynomial)
+    scalar_match_exact = all(
+        row["unique"] and row["common_support"] == row["boundary"]
+        for row in scalar_match_rows.values()
+    )
     return {
         "character_norm": character_norm,
         "shared_recoupling": shared_recoupling,
+        "r3_complement_overlap": r3_complement_overlap,
         "surviving_labels": surviving_labels,
         "incidence_weights": (len(plaquette_0), len(plaquette_1), len(outer)),
         "shared_rung": plaquette_0 & plaquette_1,
@@ -552,11 +650,14 @@ def primary_vector_o3_offblock_data() -> dict[str, object]:
         "offblock": half_response[0, 1],
         "predicted": predicted,
         "reduced_prediction": reduced_prediction,
-        "r3_polynomial": sp.expand(r3_polynomial),
+        "r3_polynomial": r3_polynomial,
         "r3_perimeters": perimeters,
+        "r3_outer": r3_outer,
+        "r3_scalar_match_exact": scalar_match_exact,
+        "r3_scalar_match_rows": scalar_match_rows,
         "r3_small_step": sp.simplify(r3_polynomial.subs(t_symbol, 1) / 72),
         "r3_unit_value": sp.simplify(r3_polynomial.subs(t_symbol, t_value) / 72),
-        "r3_nonscalar_channels": (),
+        "r3_nonscalar_channels": tuple(sorted(nonscalar_channels)),
     }
 
 
@@ -1476,8 +1577,11 @@ def independent_mode() -> int:
             "independent exact r3 vector complement polynomial",
             vector_o3["r3_coefficients"]
             == {4: 3, 6: 6, 8: 12, 10: 8, 12: 15, 14: 2, 16: 2}
+            and vector_o3["r3_complement_overlap"] == F(1, 9)
             and vector_o3["r3_small_step"] == F(2, 3)
             and vector_o3["r3_perimeters"] == (4, 4, 4, 6, 6, 8)
+            and vector_o3["r3_outer_perimeter"] == 8
+            and vector_o3["r3_scalar_match_exact"]
             and vector_o3["r3_nonscalar_channels"] == (),
         ),
         (
@@ -1904,7 +2008,7 @@ def main(mutation: str | None, mode: str) -> int:
     )
 
     response_packet = primary_packet_response_data()
-    vector_o3 = primary_vector_o3_offblock_data()
+    vector_o3 = primary_vector_o3_offblock_data(mutation)
     independent_vector_o3 = independent_vector_o3_fixture()
     spatial_derivative_ok = (
         response_packet["derivatives"][0] == -1
@@ -2012,12 +2116,12 @@ def main(mutation: str | None, mode: str) -> int:
     )
     vector_r3_ok = (
         vector_o3["r3_polynomial"] == expected_r3
+        and vector_o3["r3_complement_overlap"] == sp.Rational(1, 9)
         and vector_o3["r3_small_step"] == sp.Rational(2, 3)
         and tuple(sorted(vector_o3["r3_perimeters"].values()))
         == (4, 4, 4, 6, 6, 8)
+        and len(vector_o3["r3_outer"]) == 8
     )
-    if mutation == "corrupt_vector_r3_polynomial":
-        vector_r3_ok = False
     check(
         "actual r=3 vector response has the exact positive finite-step polynomial",
         vector_r3_ok
@@ -2025,9 +2129,10 @@ def main(mutation: str | None, mode: str) -> int:
         in note.replace(" ", "").replace("\n", ""),
     )
 
-    vector_r3_channel_ok = vector_o3["r3_nonscalar_channels"] == ()
-    if mutation == "invent_vector_r3_nonscalar_channel":
-        vector_r3_channel_ok = False
+    vector_r3_channel_ok = (
+        vector_o3["r3_scalar_match_exact"]
+        and vector_o3["r3_nonscalar_channels"] == ()
+    )
     check(
         "selected r=3 complement overlaps project doubled vector rungs to scalar",
         vector_r3_channel_ok

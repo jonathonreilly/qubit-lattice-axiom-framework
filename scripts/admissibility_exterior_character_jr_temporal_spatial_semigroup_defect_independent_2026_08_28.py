@@ -784,6 +784,15 @@ def original_link_vector_o3_offblock_fixture() -> dict[str, object]:
             F(0),
         ) / (len(frames) ** 2)
 
+    def average_three(function: object) -> F:
+        return sum(
+            (
+                function(first, second, third)
+                for first in frames for second in frames for third in frames
+            ),
+            F(0),
+        ) / (len(frames) ** 3)
+
     # Uniform signed frames reproduce the defining O(3) first and second Haar
     # moments exactly.  The source proof remains the continuous-Haar theorem.
     first_moment = tuple(
@@ -880,12 +889,110 @@ def original_link_vector_o3_offblock_fixture() -> dict[str, object]:
         / (2 * dimension) * (1 + t_4)
         * (t_4 + temporal_vector**8)
     )
-    r3_coefficients = {4: 3, 6: 6, 8: 12, 10: 8, 12: 15, 14: 2, 16: 2}
+    r3_complement_overlap = average_three(
+        lambda w0, w1, w2: (
+            trace(w0) * trace(w1) * trace(w2)
+            * trace(matmul(w2, matmul(w1, w0)))
+        )
+    )
+    # Independent ten-link implementation: bit positions are
+    # u0,u1,u2,v0,v1,v2,h0,h1,h2,h3.  Boundary masks and all polynomial
+    # coefficients are derived below; none of the target exponents is stored.
+    r3_plaquettes = (
+        (1 << 0) | (1 << 3) | (1 << 6) | (1 << 7),
+        (1 << 1) | (1 << 4) | (1 << 7) | (1 << 8),
+        (1 << 2) | (1 << 5) | (1 << 8) | (1 << 9),
+    )
+    r3_full_subset = 0b111
+
+    def boundary_mask(subset: int) -> int:
+        result = 0
+        for index, plaquette in enumerate(r3_plaquettes):
+            if subset & (1 << index):
+                result ^= plaquette
+        return result
+
+    r3_outer_mask = boundary_mask(r3_full_subset)
+    r3_proper_subsets = tuple(range(1, r3_full_subset))
+    r3_perimeter_by_subset = {
+        subset: boundary_mask(subset).bit_count()
+        for subset in r3_proper_subsets
+    }
+
+    def fusion_menu(multiplicity: int) -> frozenset[int]:
+        assert multiplicity in (0, 1, 2)
+        if multiplicity == 0:
+            return frozenset((0,))
+        if multiplicity == 1:
+            return frozenset((1,))
+        return frozenset((0, 1, 2))
+
+    r3_nonscalar = set()
+    r3_scalar_match = True
+    for subset in r3_proper_subsets:
+        complement = r3_full_subset ^ subset
+        common_support = 0
+        for edge in range(10):
+            vacuum_count = sum(
+                int(bool(subset & (1 << index)))
+                * int(bool(plaquette & (1 << edge)))
+                for index, plaquette in enumerate(r3_plaquettes)
+            )
+            vector_count = int(bool(r3_outer_mask & (1 << edge))) + sum(
+                int(bool(complement & (1 << index)))
+                * int(bool(plaquette & (1 << edge)))
+                for index, plaquette in enumerate(r3_plaquettes)
+            )
+            common = fusion_menu(vacuum_count) & fusion_menu(vector_count)
+            r3_scalar_match &= len(common) == 1
+            if common == {1}:
+                common_support |= 1 << edge
+            if max(vacuum_count, vector_count) == 2:
+                r3_nonscalar.update(label for label in common if label)
+        r3_scalar_match &= common_support == boundary_mask(subset)
+
+    # Expand (34sV) as monomial exponent lists.  This is deliberately
+    # independent of the primary runner's SymPy expression.
+    def tau_exponent(subset: int) -> int:
+        return boundary_mask(subset).bit_count()
+
+    r3_coefficients: dict[int, int] = {}
+
+    def accumulate_product(left: tuple[int, ...],
+                           right: tuple[int, ...]) -> None:
+        for left_power in left:
+            for right_power in right:
+                power = left_power + right_power
+                r3_coefficients[power] = r3_coefficients.get(power, 0) + 1
+
+    for singleton in (1, 2, 4):
+        complement = r3_full_subset ^ singleton
+        complement_indices = tuple(
+            index for index in range(3) if complement & (1 << index)
+        )
+        first, second = complement_indices
+        accumulate_product(
+            (0, tau_exponent(singleton)),
+            (
+                tau_exponent(r3_full_subset),
+                tau_exponent(singleton),
+                tau_exponent(singleton | (1 << first)),
+                tau_exponent(singleton | (1 << second)),
+            ),
+        )
+        accumulate_product(
+            (tau_exponent(r3_full_subset), tau_exponent(complement)),
+            (
+                0, tau_exponent(complement),
+                tau_exponent(1 << first), tau_exponent(1 << second),
+            ),
+        )
+    r3_coefficients = dict(sorted(r3_coefficients.items()))
     r3_polynomial_at_half = sum(
         (F(coefficient) * temporal_vector**power
          for power, coefficient in r3_coefficients.items()), F(0)
     )
-    r3_perimeters = (4, 4, 4, 6, 6, 8)
+    r3_perimeters = tuple(sorted(r3_perimeter_by_subset.values()))
     return {
         "dimension": dimension,
         "frame_count": len(frames),
@@ -907,12 +1014,15 @@ def original_link_vector_o3_offblock_fixture() -> dict[str, object]:
         "positive": offblock > 0,
         "zero_amplitude_boundary": predicted * F(0) == 0,
         "reduced_eight_link_prediction": reduced_eight_link_prediction,
+        "r3_complement_overlap": r3_complement_overlap,
         "r3_coefficients": r3_coefficients,
         "r3_polynomial_at_half": r3_polynomial_at_half,
         "r3_response_at_half": r3_polynomial_at_half / 72,
         "r3_small_step": F(sum(r3_coefficients.values()), 72),
         "r3_perimeters": r3_perimeters,
-        "r3_nonscalar_channels": (),
+        "r3_outer_perimeter": r3_outer_mask.bit_count(),
+        "r3_scalar_match_exact": r3_scalar_match,
+        "r3_nonscalar_channels": tuple(sorted(r3_nonscalar)),
     }
 
 
@@ -2098,6 +2208,7 @@ def main() -> int:
             "ten-link r3 O3 vector response has the exact positive polynomial",
             vector_o3["r3_coefficients"]
             == {4: 3, 6: 6, 8: 12, 10: 8, 12: 15, 14: 2, 16: 2}
+            and vector_o3["r3_complement_overlap"] == F(1, 9)
             and vector_o3["r3_response_at_half"] > 0
             and vector_o3["r3_small_step"] == F(2, 3),
         ),
@@ -2107,7 +2218,9 @@ def main() -> int:
         ),
         (
             "r3 selected overlap removes nonscalar doubled-rung channels",
-            vector_o3["r3_nonscalar_channels"] == (),
+            vector_o3["r3_outer_perimeter"] == 8
+            and vector_o3["r3_scalar_match_exact"]
+            and vector_o3["r3_nonscalar_channels"] == (),
         ),
         (
             "seven-link determinant cycles have exact 4,4,6 incidence and Haar fibers",

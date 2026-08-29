@@ -138,3 +138,21 @@
   at commit `b561d094d3`, issuing a final `PASS`.
 - Block246 review PR #7800 opened on the reviewed Block245 branch. It is open
   and cleanly stacked; no merge and no audit verdict were performed.
+- Block247 author-side exact verification: the selected physical-`Q`
+  action/crossing recurrence passes `31/31`; all `10/10` hostile mutations are
+  rejected; and a separate Laurent-character implementation that imports no
+  primary code passes `7/7`. The analytic top-spin induction, rather than the
+  checked layer-eight rank tables, supplies the universal selected no-go.
+  Physical `Q`, action/crossing order, singular endpoints, sample-wise rank
+  boundaries, and global-memory limitations are explicit. Independent root
+  review is pending by dispatch; no review-loop verdict, audit verdict, PR,
+  push, or merge is recorded here.
+- Block247 author-side repository gates: vocabulary lint has zero violations;
+  compilation and strict audit lint pass; citation topology records four direct
+  dependencies; and the full pipeline reaches graph build, seed, classifier,
+  and effective-status completion before the inherited dependency-policy epoch
+  mismatch stops restoration. Generated ledger churn was not retained.
+- The changed-evidence readiness gate passes the isolated Block247 commit
+  `1/1`, including the independent helper. Its branch-wide run against current
+  `origin/main` checks 220 rows and inherits four unrelated failures; the
+  Block247 row itself reports `forensic_evidence_ready: true`.

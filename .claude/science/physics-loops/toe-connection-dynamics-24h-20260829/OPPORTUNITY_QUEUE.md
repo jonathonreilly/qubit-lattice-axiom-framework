@@ -2,10 +2,11 @@
 
 | Rank | Target | Why it can move the science | Next falsifier |
 |---:|---|---|---|
-| 1 | Construct the crossing/action closure tower or a finite recurrence | Reviewed Block246 rules out invariance of the selected rank-29 carrier and separates 43 sample-wise temporal multiplicity directions from one new even-spin physical direction | apply the next exact supplied crossing and exterior-action layers with physical Q; seek a stable recurrence or another bounded nonclosure witness without promoting sampled ranks to generic equalities |
-| 2 | Diagonal and exclusive-history completion of the `q=4` Gram | Required before any global minimal-memory theorem; Block243 fixes only the `Y,Z` cross-response | construct the missing physical histories and compare their exact feature rank with the canonical rank-two cross completion |
-| 3 | Larger product/multirun word at `r=2` | Extends the known channel alphabet beyond the already closed adjacent-pair and gap-fill examples | test whether genuinely new fusion states survive physical `Q` rather than repackaging Blocks236--238 |
-| 4 | Conditional six-channel Hermitian local Jacobian from POSITIVE_PATH Result92 | Exact representation theorem after supplying Hermitian tangent slices, linearization, and diagonal spatial-to-Bloch action; not axiom-native | keep imports explicit; do not treat Results92--99 as minimal-axiom dynamics |
+| 1 | Complete symmetric action/crossing top-spin test | Block247 proves the selected ordered `C(I-Q)M_V` orbit has one new top spin per layer, but the parent physical response contains both action/crossing orders | derive the top-spin coefficient of the complete `BC_c+CB` branch and test whether the two orders add or cancel for the supplied positive multipliers |
+| 2 | Multiple-placement physical-Q action tower | The one-plaquette tower is unbounded, while cancellations or fusion constraints across all three fine plaquettes remain unclassified | construct the two- and three-placement highest-weight sectors without replacing physical `Q` by a cup projector |
+| 3 | Diagonal and exclusive-history completion of the `q=4` Gram | Required before any global minimal-memory theorem; Block243 fixes only the `Y,Z` cross-response | construct the missing physical histories and compare their exact feature rank with the canonical rank-two cross completion |
+| 4 | Larger product/multirun word at `r=2` | Extends the known channel alphabet beyond the already closed adjacent-pair and gap-fill examples | test whether genuinely new fusion states survive physical `Q` rather than repackaging Blocks236--238 |
+| 5 | Conditional six-channel Hermitian local Jacobian from POSITIVE_PATH Result92 | Exact representation theorem after supplying Hermitian tangent slices, linearization, and diagonal spatial-to-Bloch action; not axiom-native | keep imports explicit; do not treat Results92--99 as minimal-axiom dynamics |
 
 Result92's `96 -> 6` count is exact only after importing a four-real-dimensional
 Hermitian slice, real linearization, and a diagonal spatial-to-Bloch cubic
@@ -45,3 +46,11 @@ normalized derivative sums have generic rank 12. Those ranks do not establish
 minimal memory because no invariant-span closure has been shown. The next
 highest-leverage route is therefore a leakage/closure test, not another rank
 corollary.
+
+Block247 resolves the selected one-plaquette action tower analytically. The
+crossing-only orbit on fixed Peter--Weyl support has a finite spectral
+recurrence, while successive defining-vector action, exact physical `Q`, and
+then crossing create a nonzero new top spin at every layer. This rules out a
+finite-dimensional selected linear invariant carrier but does not determine
+global minimal memory. The next route must test the complete symmetric branch
+or multiple placements rather than add more sampled ranks to the same orbit.

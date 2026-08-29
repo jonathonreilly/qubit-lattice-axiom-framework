@@ -77,3 +77,29 @@
 - Block246 does not prove closure of the action/crossing tower, a globally
   minimal history memory, arbitrary `r` or `q`, physical time evolution,
   gravity, or TOE closure. No axiom or approved primitive is edited.
+- Block247 imports Block246's selected disjoint `p0/C1` seed and exact operator
+  order: defining-vector multiplication, physical conditional-Haar `(I-Q)`,
+  then the supplied original-link central crossing. It does not commute the
+  action through the crossing or replace this branch by the full symmetric
+  response.
+- Block247 imports physical `J_3/Q`, `[C,Q]=0`, representation-label
+  diagonality, and the normalized `O(3)` multiplier family. The parent exact
+  positive-character expansion supplies nonzero multipliers at every finite
+  positive exterior coupling; the rational multiplier tables in the runner
+  are implementation controls only.
+- Exact Block247 mathematics: conditional Haar removes exactly the trivial
+  `p0` character; defining-vector fusion raises spin by at most one with a
+  unique multiplicity-one top summand; crossing multiplies
+  `chi_(ell,p)(p0)chi_V(C1)` by `r_(ell,p)^4 r_V^8`; induction gives one
+  nonzero new top spin at every layer.
+- The universal top-spin induction proves no finite-dimensional linear
+  invariant carrier can contain the selected ordered orbit. It does not prove
+  global minimal memory, exclude nonlinear or indexed recurrences, classify
+  the complete symmetric response, or establish cancellation behavior among
+  all action placements.
+- Crossing alone preserves fixed finite Peter--Weyl support and obeys its
+  finite spectral annihilating polynomial. Block246's 43 checked quotient
+  directions remain temporal multiplicity leakage and a sample-wise lower
+  bound, not 43 new irreps or a universal generic equality.
+- No literature value, observed target, fitted input, axiom edit, or approved
+  primitive edit enters Block247.

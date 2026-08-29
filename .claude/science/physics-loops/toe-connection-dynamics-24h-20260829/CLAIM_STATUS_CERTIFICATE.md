@@ -1,42 +1,43 @@
 ```yaml
 actual_current_surface_status: conditional-support
-claim_type: bounded_theorem
+claim_type: no_go
 trace_class: negative_route_pruning
 reachability_to_target: prunes
-conditional_surface_status: "exact finite non-closure witnesses for the selected r=3, q=2 history carrier on the supplied crossing, exterior-action, and physical-J3/Q stack"
+conditional_surface_status: "exact selected unbounded linear action/crossing tower on the supplied r=3, q=2 physical-J3/Q stack"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 dependency_classes:
-  - open_conditional_parent_carrier
-  - supplied_crossing_action_and_physical_J3_Q_stack
-  - exact_compact_group_representation_and_Gram_linear_algebra
+  - open_conditional_Block246_selected_fiber
+  - supplied_ordered_crossing_action_and_physical_J3_Q_stack
+  - supplied_nonzero_finite_step_O3_multiplier_family
+  - exact_compact_group_representation_recurrence
 open_imports:
-  - "the open Block245 selected 36-history carrier and its structural rank-29 upper bound"
-  - "the supplied central crossing and formal spin multipliers"
-  - "the defining-vector exterior action"
-  - "physical conditional-Haar J3/Q, parent label diagonality, and [C,Q]=0"
+  - "the open Block246 selected p0/C1 action residual and operator order"
+  - "the supplied defining-vector exterior action and central crossing"
+  - "physical conditional-Haar J3/Q, representation-label diagonality, and [C,Q]=0"
+  - "nonzero normalized O(3) multipliers at finite positive exterior coupling"
 proposal_allowed: false
-proposal_allowed_reason: "The result falsifies invariance of one selected finite carrier but depends on supplied crossing/action data, parent label diagonality, Q commutation, and an open stacked dependency surface; it does not close the action/crossing tower or determine global memory."
+proposal_allowed_reason: "The exact selected no-go depends on supplied action/crossing/J3-Q inputs and open stacked dependencies, and it does not classify the complete symmetric response, all placements, or global minimal memory."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: pass_with_bounded_claims_and_inherited_dependency_policy_epoch_debt_disclosed
+review_loop_disposition: pending_independent_root_review
 ```
 
-Block246 applies one more supplied central crossing to the selected 36-history
-carrier. At the disclosed rational sample, exact ranks are `29,54,72` for the
-old, twice-crossed, and union spans over each of three prime fields, with the
-same ranks at an unrelated signed sample and a held-out field. This proves the
-rank-29 carrier is not invariant, but the absence of a universal rank-72 upper
-bound forbids identifying 72 as an exact generic rank. Separately, one further
-defining-vector character followed by physical conditional-Haar subtraction
-has exact residual `(chi_V(p0)^2-1)chi_V(C1)`, norm two, and even-parity spin-one
-plus spin-two content. It adds a new independent direction before and after the
-supplied crossing at the checked samples. Primary evidence passes `30/30`, all
-`7/7` hostile mutations are rejected, and the independent restricted-input
-action reconstruction passes `12/12`. Strict audit lint has no errors and the
-seeded changed-evidence gate passes `1/1`, including the independent helper.
-The full repository pipeline reaches only the inherited dependency-policy epoch
-mismatch after graph construction, ledger seeding, and runner classification.
-The same fresh-context reviewer confirmed the repaired packet and issued a
-final `PASS` at commit `b561d094d3`. Stacked review PR #7800 is open on
-Block245; no merge and no audit verdict have been applied.
+Block247 derives the complete coefficient recurrence for the selected ordered
+`C(I-Q)M_V` orbit on the disjoint `p0/C1` fiber. Physical conditional Haar
+removes only the trivial `p0` character. Defining-vector fusion creates a
+unique multiplicity-one top spin, and the supplied original-link crossing
+rescales it by `r_(ell,p)^4 r_V^8`. Induction proves layer `n` has a nonzero
+spin-`n` coefficient at every nonzero finite supplied crossing, so every finite
+prefix has rank `n` and no finite-dimensional selected linear invariant carrier
+exists. Crossing alone has a finite spectral recurrence on fixed finite
+Peter--Weyl support. Primary evidence passes `31/31`, all `10/10` mutations are
+rejected, and the independent Laurent-character implementation passes `7/7`.
+Vocabulary lint has zero violations, strict audit lint has no errors, and the
+Block247-scoped changed-evidence gate passes `1/1`, including the independent
+helper. The branch-wide gate against current `origin/main` inherits four
+unrelated failures across 220 checked rows; the Block247 row is ready. The
+full pipeline reaches only the inherited dependency-policy epoch mismatch after
+graph construction, ledger seeding, runner classification, and effective-status
+computation. Independent root review and audit remain pending. No PR, push,
+merge, axiom edit, primitive edit, or audit verdict has been performed.

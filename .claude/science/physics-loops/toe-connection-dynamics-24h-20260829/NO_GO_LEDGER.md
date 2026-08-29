@@ -15,3 +15,10 @@
   cup-projector support and the `K C=I/81` normalization are both required.
 - POSITIVE_PATH Result79's consecutive-pair spectrum test is tautological Hodge
   decomposition and cannot test taste splitting.
+- On the selected disjoint `p0/C1` physical-`J_3` fiber, the ordered operator
+  `C(I-Q)M_(chi_V(p0))` has no finite-dimensional linear invariant carrier
+  containing the defining-vector seed when the supplied finite-step channel
+  multipliers are nonzero: layer `n` has a unique nonzero spin-`n` component.
+  This does not exclude cancellation in the complete symmetric response,
+  nonlinear or indexed recurrences, alternative quotients, or finite global
+  minimal memory.

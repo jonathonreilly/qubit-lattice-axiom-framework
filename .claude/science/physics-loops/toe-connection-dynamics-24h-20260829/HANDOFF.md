@@ -261,3 +261,64 @@ issued a final `PASS` at commit `b561d094d3`. Block246 is open as stacked review
 PR #7800 on Block245; no merge was performed. The next exact route is the wider
 crossing/action closure tower or a finite recurrence, with temporal multiplicity
 growth kept distinct from genuinely new Peter--Weyl content.
+
+## Block247 selected action/crossing tower
+
+Block247 takes the analytic route rather than extending the sampled-rank table.
+On the disjoint `p0/C1` fiber, put
+
+```text
+e_(ell,p)=chi_(ell,p)(p0) chi_V(C1),
+K=C(I-Q)M_(chi_V(p0)).
+```
+
+At fixed coarse deltas, physical conditional-Haar `Q` removes exactly
+`e_(0,+)`; it does not remove the odd determinant character. Defining-vector
+multiplication has the exact three-term `O(3)` fusion rule, while original-link
+crossing is diagonal with eigenvalue
+`c_(ell,p)=r_(ell,p)^4 r_V^8`: four `p0` edges and the disjoint eight-link
+`C1` vector spectator. Hence layer `n` has the universal top coefficient
+
+```text
+r_V^[8(n-1)] product_(j=2)^n r_(j,(-1)^j)^4
+```
+
+in spin `n`. The coefficient is nonzero for every supplied finite positive
+exterior crossing. Every finite prefix is therefore linearly independent, so
+no finite-dimensional linear invariant carrier containing this selected orbit
+can close under `K`.
+
+This is genuinely new Peter--Weyl content after physical `Q`, not the temporal
+multiplicity leakage of Block246. Crossing alone preserves any fixed finite
+Peter--Weyl support and obeys the annihilating polynomial formed from its
+finitely many crossing eigenvalues. Thus the new note provides both the
+finite crossing-only recurrence and the unbounded action/crossing recurrence.
+
+The primary runner passes `31/31`, including two positive rational samples, an
+unrelated signed sample, `F_1009`, `F_1013`, `F_1019`, held-out `F_10007`, the
+identity crossing, Haar, `t_V=0` with higher spins live, action/crossing order
+reversal, delayed `Q`, and the fixed-packet spectral recurrence. All `10/10`
+mutations are rejected. A separate Laurent-character implementation imports no
+primary code and passes `7/7`.
+
+Vocabulary lint reports zero violations and strict audit lint has no errors.
+The tracked citation-graph manifest records the new node and all four direct
+dependencies. The full repository pipeline completes graph construction,
+seeding, runner classification, and effective-status computation, then stops
+at the inherited dependency-policy epoch mismatch already disclosed by the
+parent stack. Generated ledger changes from that diagnostic run were removed.
+The changed-evidence gate passes the isolated Block247 commit `1/1`, including
+the independent helper. Against current `origin/main`, the much wider diverged
+branch comparison checks 220 rows and inherits four unrelated failures; its
+Block247 row is explicitly ready.
+
+The no-go is deliberately selected and linear. It does not classify the full
+symmetric `BC_c+CB` response, cancellations among all action placements, the
+full action exponential, nonlinear or indexed recurrence memory, arbitrary
+`r/q`, or global minimal memory. No axiom or approved primitive changed.
+Independent root review remains pending. Per the worker dispatch, no PR was
+opened, no branch was pushed, and no merge was performed. The best next
+falsifier is an exact top-spin calculation for the complete symmetric branch:
+if its two operator orders cancel at some layer, the selected no-go does not
+widen; if their top coefficients add with the supplied positive multipliers,
+the no-go can be strengthened toward the complete local action kernel.

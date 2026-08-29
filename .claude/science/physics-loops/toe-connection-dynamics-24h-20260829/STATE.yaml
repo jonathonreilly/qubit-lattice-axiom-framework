@@ -2,12 +2,12 @@ loop: toe-connection-dynamics-24h-20260829
 mode: campaign
 deadline_utc: 2026-08-30T01:29:00Z
 target_status: best-honest-status
-current_block: 246
-active_branch: physics-loop/toe-connection-dynamics-block246-rank29-action-leakage-20260829
-active_route: r3_q2_crossing_action_closure_tower
-hard_residual: construct the next exact crossing/action layers or a finite recurrence while separating temporal multiplicity leakage from new Peter--Weyl content
+current_block: 247
+active_branch: physics-loop/toe-connection-dynamics-block247-crossing-action-closure-20260829
+active_route: r3_q2_physical_q_action_crossing_tower
+hard_residual: test the complete symmetric action/crossing branch and multiple placements after the selected ordered tower proved unbounded
 actual_current_surface_status: conditional-support
-conditional_surface_status: exact finite non-closure witnesses for the selected r=3, q=2 history carrier on the supplied crossing, exterior-action, and physical-J3/Q stack
+conditional_surface_status: exact selected unbounded linear action/crossing tower on the supplied r=3, q=2 physical-J3/Q stack
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
@@ -42,8 +42,8 @@ block243_checks:
   physical_q: acts_as_identity_after_I_minus_Q_on_fixed_delta0_first_order_history_span; static_cup_identification_rejected
   combined_response_primary_checks: 30_of_30
   combined_response_mutations: 7_of_7_rejected
-review_loop_disposition: pass_with_inherited_dependency_policy_epoch_debt_disclosed
-full_pipeline_disposition: inherited_dependency_policy_epoch_mismatch_after_graph_seed_classifier
+review_loop_disposition: pending_independent_root_review
+full_pipeline_disposition: inherited_dependency_policy_epoch_mismatch_after_graph_seed_classifier_and_effective_status
 block240_pr: 7794
 block241_pr: 7795
 block242_pr: 7796
@@ -128,5 +128,33 @@ block246_preflight:
   interpretation: exact_finite_nonclosure_witness_for_at_least_43_samplewise_temporal_multiplicity_directions_and_one_new_even_spin_physical_direction
   independent_refuter_disposition: pass_with_bounded_claims
   review_state: review_loop_pass_with_bounded_claims_and_inherited_epoch_debt_disclosed
-next_exact_action: construct the wider crossing/action closure tower or a finite recurrence, preserving physical Q and the distinction between multiplicity leakage and new Peter--Weyl sectors
-stop_condition: campaign deadline or global queue exhaustion after required deep-work gates
+block247_candidate:
+  selected_fiber: chi_ell_parity_of_p0_times_chi_V_of_disjoint_eight_link_C1
+  ordered_operator: central_crossing_after_physical_I_minus_Q_after_defining_vector_multiplication
+  physical_q: removes_exactly_the_trivial_p0_character_at_every_layer
+  exact_recurrence: three_term_O3_spin_fusion_followed_by_diagonal_original_link_crossing
+  universal_top_spin: layer_n_contains_spin_n_with_coefficient_rV_power_8n_minus_8_times_product_spin2_through_n_of_rj_power4
+  invariant_conclusion: no_finite_dimensional_linear_invariant_carrier_containing_the_selected_orbit_when_displayed_multipliers_are_nonzero
+  crossing_only_boundary: fixed_finite_Peter_Weyl_support_obeys_a_finite_spectral_recurrence_and_creates_no_new_irrep
+  primary_exact_checks: 31_of_31
+  hostile_mutations: 10_of_10_rejected
+  independent_laurent_character_checks: 7_of_7
+  exact_rational_samples: [positive_a, positive_b, signed]
+  exact_prime_fields: [1009, 1013, 1019]
+  heldout_field: 10007
+  checked_layer_rank: 8_at_every_nonzero_sample_and_field
+  vocabulary_lint: pass_zero_violations
+  strict_audit_lint: pass_no_errors_with_inherited_warning_and_notice_set
+  citation_graph_manifest: refreshed_with_four_direct_dependencies
+  changed_evidence_readiness: block247_commit_pass_1_of_1_including_independent_helper
+  branchwide_changed_evidence: four_inherited_failures_across_220_rows_against_current_origin_main; block247_row_ready
+  full_pipeline: inherited_dependency_policy_epoch_mismatch_after_graph_seed_classifier_and_effective_status
+  identity_control: exact_first_four_physical_q_action_layers_and_unbounded_top_spin
+  haar_control: first_crossed_residual_and_all_descendants_vanish
+  t_zero_control: live_higher_spins_cannot_revive_the_killed_C1_vector_spectator
+  order_reversal: generically_nonzero_difference_between_CA_and_AC
+  generic_rank_boundary: analytic_top_spin_induction_not_a_sample_rank_extrapolation
+  global_minimal_memory: remains_open_for_full_symmetric_nonlinear_or_indexed_carriers
+  review_state: pending_independent_root_review
+next_exact_action: test the complete symmetric BC_c_plus_CB action/crossing branch and multiple plaquette placements for top-spin cancellation; do not widen the selected linear-carrier no-go to global minimal memory
+stop_condition: worker packet complete and handed to independent root review; no PR or merge in this worker

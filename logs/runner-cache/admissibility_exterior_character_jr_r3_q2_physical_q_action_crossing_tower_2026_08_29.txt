@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_jr_r3_q2_physical_q_action_crossing_tower_2026_08_29.py
+runner_sha256: dc5b9d020511a0cce8c869d346cc52cb163a15158b1bab8252d41621a318983e
+input_fingerprint_sha256: 02bbf83955fbe3b12caa2ae564a5833a447f7eb99477df55dab6eac3406b75f5
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+[PASS] positive_a: direct composition equals coefficient recurrence
+[PASS] positive_a: every layer has the exact nonzero top-spin coefficient
+[PASS] positive_a: physical-Q mean vanishes at every layer
+[PASS] positive_a: first 8 selected layers are rationally independent
+[PASS] positive_a F_1009: exact layer rank 8
+[PASS] positive_a F_1013: exact layer rank 8
+[PASS] positive_a F_1019: exact layer rank 8
+[PASS] positive_b: direct composition equals coefficient recurrence
+[PASS] positive_b: every layer has the exact nonzero top-spin coefficient
+[PASS] positive_b: physical-Q mean vanishes at every layer
+[PASS] positive_b: first 8 selected layers are rationally independent
+[PASS] positive_b F_1009: exact layer rank 8
+[PASS] positive_b F_1013: exact layer rank 8
+[PASS] positive_b F_1019: exact layer rank 8
+[PASS] signed: direct composition equals coefficient recurrence
+[PASS] signed: every layer has the exact nonzero top-spin coefficient
+[PASS] signed: physical-Q mean vanishes at every layer
+[PASS] signed: first 8 selected layers are rationally independent
+[PASS] signed F_1009: exact layer rank 8
+[PASS] signed F_1013: exact layer rank 8
+[PASS] signed F_1019: exact layer rank 8
+[PASS] held-out F_10007: exact layer rank eight
+[PASS] identity crossing: first four successive physical-Q action layers
+[PASS] Haar endpoint: the first crossed residual and all descendants vanish
+[PASS] t=0 endpoint with live higher spins: the C1 spectator kills the tower
+[PASS] action/crossing reversal is a nonzero hostile control
+[PASS] delaying physical Q changes the third action layer
+[PASS] crossing-only fixed Peter-Weyl support obeys its finite spectral recurrence
+[PASS] crossing-only action creates no new Peter-Weyl irrep
+[PASS] bounded no-go scope
+[PASS] independent Laurent-character implementation
+identity_layers ({(1, -1): Fraction(1, 1)}, {(1, 1): Fraction(1, 1), (2, 1): Fraction(1, 1)}, {(0, -1): Fraction(1, 1), (1, -1): Fraction(2, 1), (2, -1): Fraction(2, 1), (3, -1): Fraction(1, 1)}, {(1, 1): Fraction(5, 1), (2, 1): Fraction(5, 1), (3, 1): Fraction(3, 1), (4, 1): Fraction(1, 1)})
+sample_summaries {'positive_a': {'layers': 8, 'rational_rank': 8, 'top': Fraction(1083989664492439708976187766210560000, 963040341497378202036052011660929714946976440540743751627844303441)}, 'positive_b': {'layers': 8, 'rational_rank': 8, 'top': Fraction(23229561214726725753719765316652910481, 74019223225987709195380118869279617893909295052993444194549760000)}, 'signed': {'layers': 8, 'rational_rank': 8, 'top': Fraction(1208925819614629174706176, 1207895133190385110426217099260169422253382892713713779752636822637528841900625)}}
+crossing_only_recurrence_order 4
+per_element: checked and executed — every recurrence coefficient through layer eight is exact
+per_site: checked and not executed — no physical lattice-site evolution law is claimed
+per_mode: checked and not executed — no continuum or lattice momentum mode is constructed
+per_block: checked and executed — one selected disjoint p0/C1 physical-J3 fiber is complete
+lattice_wide: checked and not executed — global minimal memory and the full symmetric step remain open
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

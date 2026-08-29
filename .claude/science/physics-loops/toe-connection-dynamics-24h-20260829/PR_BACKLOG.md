@@ -53,3 +53,9 @@ It is stacked on Block245 PR #7799. Its primary certificate passes `30/30`, all
 representation/Haar reconstruction passes `12/12`. The same reviewer confirmed
 the repaired governance packet and issued a final `PASS`. The campaign will not
 merge it.
+
+Block247 has no PR action in this worker. The dispatch explicitly reserves the
+next step for independent root review and forbids opening a PR here. The local
+candidate branch is
+`physics-loop/toe-connection-dynamics-block247-crossing-action-closure-20260829`;
+no push or merge has been performed.

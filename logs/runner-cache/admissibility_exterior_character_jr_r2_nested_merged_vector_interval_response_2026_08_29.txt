@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_jr_r2_nested_merged_vector_interval_response_2026_08_29.py
+runner_sha256: 0bb9f72d74aeaaa0753c2bdc28dbeb8e44cf77a7c9e1daa00b35fba4d526177f
+input_fingerprint_sha256: ba605fe0a5edb0680233fc78abe7e1f374fd1d659ba747e6fcb09874ac2b4f68
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+[PASS] typed parent and minimal-axiom dependencies are explicit
+[PASS] coarse Wilson-loop states are normalized and orthogonal
+[PASS] actual 6q+1 original-link intervals have exact weights
+[PASS] only cross-cell action pairs have matching vector support
+[PASS] exclusive rails force both action irreps to be V
+[PASS] global O(3) Haar recoupling is one ninth
+[PASS] same-index pairings vanish by an unpaired Haar first moment
+[PASS] physical Q kills all four first-order histories
+[PASS] two temporal channels give the exact interval polynomial
+[PASS] both spatial half-actions give the normalized one-over-36 factor
+[PASS] small-step response coefficient is two ninths
+[PASS] s=1 c=2 half-step fixture is exact
+[PASS] one additional merged background cell contributes t^8
+[PASS] s=0 is excluded because its global Haar factor is one third
+[PASS] claim scope excludes product backgrounds and physical identification
+[PASS] negative-scope rhetoric carries a landed N1-N8 discipline gate
+[PASS] independent signed-frame and Fraction implementation agrees
+TOTAL: PASS=17 FAIL=0
+per_element: checked every original-link incidence and the unique exclusive-rail forcing of the defining-vector action irrep
+per_site: checked the changed cell and every adjacent nested merged-loop span s=1 through s=6 on exact finite carriers
+per_mode: checked one offdiagonal pair of normalized merged defining-vector Wilson-loop characters and no tensor-product background
+per_block: checked r=2 for arbitrary finite interval span 1<=s<q with exact temporal exponents and global Haar recoupling
+lattice_wide: checked and not executed — the theorem supplies no arbitrary background word, volume norm, or continuum family
+
+----- stderr -----
+

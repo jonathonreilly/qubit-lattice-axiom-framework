@@ -133,5 +133,8 @@
   failed audit-reachability and no-go packaging. The repaired primary statically
   executes the independent representation/Haar reduction, passes `30/30`,
   rejects all `7/7` hostile mutations, and the restricted-input reduction
-  passes `12/12`. Same-reviewer confirmation and the formal repository gates
-  are active; no PR has been opened and no audit verdict has been applied.
+  passes `12/12`. The same reviewer confirmed the repaired audit graph,
+  N1--N8/N5 packet, source-bound cache, claim boundary, and pipeline disclosure
+  at commit `b561d094d3`, issuing a final `PASS`.
+- Block246 review PR #7800 opened on the reviewed Block245 branch. It is open
+  and cleanly stacked; no merge and no audit verdict were performed.

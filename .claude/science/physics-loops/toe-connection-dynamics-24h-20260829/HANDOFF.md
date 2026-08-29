@@ -254,7 +254,10 @@ crossing, and the hostile `t=0` endpoint. All `7/7` targeted mutations are
 rejected. The note now states the exact finite target and acyclic obligation
 graph, includes an N1--N8 negative-claim stress test that must land with the
 source packet, and carries the required five-resolution execution certificate
-in the primary runner. The
-rank-72 observation is explicitly sample-wise: it proves rational rank at
-least 72 and nonclosure of rank 29, not exact generic rank 72. Same-reviewer
-confirmation and repository gates are active; no Block246 PR exists yet.
+in the primary runner. The rank-72 observation is explicitly sample-wise: it
+proves rational rank at least 72 and nonclosure of rank 29, not exact generic
+rank 72. The same fresh-context reviewer confirmed every repaired surface and
+issued a final `PASS` at commit `b561d094d3`. Block246 is open as stacked review
+PR #7800 on Block245; no merge was performed. The next exact route is the wider
+crossing/action closure tower or a finite recurrence, with temporal multiplicity
+growth kept distinct from genuinely new Peter--Weyl content.

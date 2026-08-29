@@ -36,3 +36,20 @@ It is stacked on Block243 PR #7797. Its primary exact certificate passes
 `612/612`, all `9/9` hostile mutations are rejected, and the independent dense
 temporal reconstruction passes `96/96` at two signed samples. Changed-science
 evidence readiness passes `1/1`. The campaign will not merge it.
+
+Block245 complete selected `r=3,q=2` six-history Gram review PR #7799 is open:
+<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7799>.
+
+It is stacked on Block244 PR #7798. Its primary exact certificate passes
+`92/92`, all `6/6` hostile mutations are rejected, and independent review
+confirms the bounded 36-vector, generic-rank-29 result. The campaign will not
+merge it.
+
+Block246 selected-carrier crossing/action leakage review PR #7800 is open:
+<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7800>.
+
+It is stacked on Block245 PR #7799. Its primary certificate passes `30/30`, all
+`7/7` hostile mutations are rejected, and the independent restricted-input
+representation/Haar reconstruction passes `12/12`. The same reviewer confirmed
+the repaired governance packet and issued a final `PASS`. The campaign will not
+merge it.

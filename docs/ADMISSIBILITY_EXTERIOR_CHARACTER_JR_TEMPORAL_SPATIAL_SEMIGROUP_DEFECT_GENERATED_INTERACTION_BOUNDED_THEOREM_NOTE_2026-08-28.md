@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_generated_interaction_bounded_theorem_note_2026-08-28
 claim_type: bounded_theorem
-claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. For arbitrary fixed finite r and q, disclose an action-amplitude lambda in the complete Block227 step and prove that the rth lambda response of the actual J_r defect, after epsilon^-r scaling and projection off the scalar coarse channel, converges strongly on the core to (-1)^r(2^r-2) times the r-fold centered exterior convolution, summed once per retained cell. Prove the (r-1)-wise Haar mechanism, the scalar leading variance for r>=3, and the finite leading Peter--Weyl response carrier. At quadratic action-response order derive the exact finite-epsilon Gram insertion and the next core coefficient K=B*A_fB+{Gamma,A_c}/2; for r>=3 prove the exact decomposition K=2 gamma A_c+u I, with u the explicit rq-accumulated exterior Dirichlet energy, so the epsilon^3 lambda^2 response has a non-scalar coarse-kinetic term but no first-order or coarse-word-dependent multiplication remainder. On the actual original-link carrier, prove the exact all-(r,q) determinant-sector offdiagonal selection rule: quadratic coarse determinant mixing occurs only for r=2 coarse-hypercube neighbors, including the positive seven-link vacuum witness, while r>=3 determinant-to-determinant offdiagonals vanish at this response order. For every pair of coarse determinant words at Hamming distance d, prove the first possible finite-epsilon offdiagonal response is derivative order rd, give its positive full-O(3) residual-subset formula after deleting all 2^d block-cylindrical subsets, and recover the small-step coefficient 2^(rd)-2^d. Resum that complete minimal response as an ordered bond-dimension-four cell automaton, prove its rank-one unchanged-cell reset, and derive its exact positive separation-independent stripped coefficient for downstream locality tests. On the homogeneous zero-determinant background, take the log ratio of the all-history and cylindrical-history contractions, prove exact Boolean connected reconstruction with no disconnected support, and use the explicit three-state positive restrictions and Birkhoff contraction to obtain a q-uniform exponentially weighted connected-interval norm at every fixed r and 0<t_det<1. Bound finite Peter--Weyl approximation of the complete defect value, its exact quadratic Gram response, and the selected all-pairs determinant responses, with explicit rq accumulation and common normalization. This is a conditional finite mathematical generated-interaction and supplied-action-response theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
+claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. For arbitrary fixed finite r and q, disclose an action-amplitude lambda in the complete Block227 step and prove that the rth lambda response of the actual J_r defect, after epsilon^-r scaling and projection off the scalar coarse channel, converges strongly on the core to (-1)^r(2^r-2) times the r-fold centered exterior convolution, summed once per retained cell. Prove the (r-1)-wise Haar mechanism, the scalar leading variance for r>=3, and the finite leading Peter--Weyl response carrier. At quadratic action-response order derive the exact finite-epsilon Gram insertion and the next core coefficient K=B*A_fB+{Gamma,A_c}/2; for r>=3 prove the exact decomposition K=2 gamma A_c+u I, with u the explicit rq-accumulated exterior Dirichlet energy, so the epsilon^3 lambda^2 response has a non-scalar coarse-kinetic term but no first-order or coarse-word-dependent multiplication remainder. On the actual r=2,q=1 original-link carrier, derive the first non-determinant defining-vector off-block, including the unique V tensor V scalar recoupling, physical residual projector, 4/4/6 incidence, and exact positive coefficient when both local amplitudes are positive. On the actual original-link carrier, prove the exact all-(r,q) determinant-sector offdiagonal selection rule: quadratic coarse determinant mixing occurs only for r=2 coarse-hypercube neighbors, including the positive seven-link vacuum witness, while r>=3 determinant-to-determinant offdiagonals vanish at this response order. For every pair of coarse determinant words at Hamming distance d, prove the first possible finite-epsilon offdiagonal response is derivative order rd, give its positive full-O(3) residual-subset formula after deleting all 2^d block-cylindrical subsets, and recover the small-step coefficient 2^(rd)-2^d. Resum that complete minimal response as an ordered bond-dimension-four cell automaton, prove its rank-one unchanged-cell reset, and derive its exact positive separation-independent stripped coefficient for downstream locality tests. On the homogeneous zero-determinant background, take the log ratio of the all-history and cylindrical-history contractions, prove exact Boolean connected reconstruction with no disconnected support, and use the explicit three-state positive restrictions and Birkhoff contraction to obtain a q-uniform exponentially weighted connected-interval norm at every fixed r and 0<t_det<1. Bound finite Peter--Weyl approximation of the complete defect value, its exact quadratic Gram response, and the selected all-pairs determinant responses, with explicit rq accumulation and common normalization. This is a conditional finite mathematical generated-interaction and supplied-action-response theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
 depends_on:
   - admissibility_exterior_character_co_scaled_temporal_trotter_and_cylindrical_refinement_boundary_bounded_theorem_note_2026-08-28
   - admissibility_exterior_character_bounded_degree_ladder_history_message_flow_bounded_theorem_note_2026-08-28
@@ -18,11 +18,11 @@ target_blocker_text: "Compare the Block227 co-scaled temporal generator with Blo
 source_of_blocker_text: user_goal
 reachability_to_target: closes
 artifact_role: theorem
-next_trace_action: "The homogeneous zero-background connected determinant coordinate now has a q-uniform weighted interval norm at fixed r,t_det. Test uniformity in a disclosed blocking-scale window or derive the first complete original-link non-determinant recoupling response. Physical spacing, time, states, observables, amplitudes, and the full non-determinant kernel remain separate suppliers."
-conditional_surface_status: "exact finite physical-space temporal-spatial compression defect, nonconstant two-cell generated interaction, arbitrary-fixed-r complete-step supplied-action response, quadratic-response coarse-kinetic descendant, exact all-pairs Hamming-distance response-order filtration, fixed-memory determinant-response automaton, raw-coordinate separation plateau, and response-specific finite packet bounds, conditional on the supplied co-scaled action, ladder, Haar measure, projector, and J_r stack"
+next_trace_action: "Extend the independently reviewed r=2,q=1 defining-vector off-block to a general-r or multi-cell recoupling/history coordinate, or derive the next non-determinant irrep channel. Physical spacing, time, states, observables, amplitudes, and the full non-determinant kernel remain separate suppliers."
+conditional_surface_status: "exact finite physical-space temporal-spatial compression defect, nonconstant two-cell generated interaction, arbitrary-fixed-r complete-step supplied-action response, quadratic-response coarse-kinetic descendant, first complete r=2,q=1 defining-vector off-block, exact all-pairs Hamming-distance response-order filtration, fixed-memory determinant-response automaton, raw-coordinate separation plateau, and response-specific finite packet bounds, conditional on the supplied co-scaled action, ladder, Haar measure, projector, and J_r stack"
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "the compression identity, core limit, cylindrical kinetic calculation, conditioned-product Haar lemma, arbitrary-r complete-step response limit, quadratic-response Gram/Dirichlet coefficient, original-link all-pairs response-order rules, exact four-state automaton and separation plateau, exterior convolution coefficients, exact finite controls, and finite-packet defect/response bounds are exact mathematical results with no fitted datum"
+claim_type_reason: "the compression identity, core limit, cylindrical kinetic calculation, conditioned-product Haar lemma, arbitrary-r complete-step response limit, quadratic-response Gram/Dirichlet coefficient, original-link defining-vector recoupling and all-pairs response-order rules, exact four-state automaton and separation plateau, exterior convolution coefficients, exact finite controls, and finite-packet defect/response bounds are exact mathematical results with no fitted datum"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ---
@@ -175,6 +175,21 @@ derivative at zero is exact.  Only the `3rq+1` temporal tails accumulate, and
 
 Here `R=(1/2)partial_lambda^2D|_0`; the full second derivative has twice the
 right side.  Exact and packet families use the same Block231 normalization.
+
+On the actual `r=2,q=1` seven-link carrier, the first non-determinant
+off-block is also explicit.  Edgewise Peter--Weyl orthogonality selects the
+defining vector on both plaquette insertions, its shared rung contributes the
+unique scalar recoupling `1/3`, and the pulled-back coarse vector occupies the
+six-link outer boundary.  For `a_0,a_1>0`,
+
+```text
+<1,R_epsilon phi_V>
+ =epsilon^2(c_V^(n))^2 a_0a_1/6
+  (1+t_V^4)(t_V^4+t_V^6)>0.                       (5cV)
+```
+
+This is one selected defining-vector matrix element, not a classification of
+the full non-determinant kernel.
 
 At `r=2`, for every finite `q`, the exact finite-`epsilon` Gram response is
 more restrictive than its small-step coefficient.  Let `phi_det` be the normalized coarse
@@ -791,6 +806,102 @@ first-order drift, and its remainder is the coefficient-square scalar.  This
 checks the differential product-rule mechanism independently of both the
 `O(3)` proof and the finite jump-generator `S_3` control; it is not a physical
 group substitution.
+
+## First complete original-link non-determinant `O(3)` off-block
+
+Fix `r=2,q=1` and label `O(3)` irreps by `(ell,p)`, with `p` the inversion
+parity.  For the defining vector,
+
+```text
+V=(1,-),       d_V=3,
+V tensor V contains (0,+) once,
+C^(0,+)_(V,V)=delta_ab/sqrt(3).                    (34kV)
+```
+
+This is a continuous-`O(3)` representation statement, not a finite-group
+witness.  In the Block229 rail-forest gauge put
+
+```text
+delta=W_1W_0,
+psi_(0,V)=chi_V(W_0),       psi_(1,V)=chi_V(W_1),
+phi_V=chi_V(delta).                                  (34lV)
+```
+
+The actual physical coarse map and residual projector are
+
+```text
+(J_2 f)(W_0,W_1)=f(W_1W_0),
+(J_2^*F)(delta)=integral_G F(x,delta x^-1)dx,
+(QF)(W_0,W_1)=integral_G F(x,(W_1W_0)x^-1)dx,
+Q=J_2J_2^*.                                         (34mV)
+```
+
+Thus `Q psi_(i,V)=0`, while `QJ_2phi_V=J_2phi_V`.  These are the physical
+`J_2,Q` after Block229's unitary forest-gauge and residual-projector
+equivalence, not a new increment-space projection.  Write
+
+```text
+v-<v>=-sum_(rho!=1)c_rho^(n)chi_rho,
+c_rho^(n)=16m_(rho,n)/(n8^n),       c_V^(n)>0.      (34nV)
+```
+
+For `n=1`, the explicit nontrivial labels are `V=(1,-)`,
+`det tensor V=(1,+)`, and `det=(0,-)`, each with coefficient `-2`; hence
+`c_V^(1)=2`.  In an overlap between the vacuum and coarse-vector columns of
+`B=(I-Q)V_fJ_2`, the exclusive rails of the vacuum insertion force its label
+to be `V`.  On the other column, the opposite-plaquette insertion `beta`
+must make `V tensor beta` scalar on its exclusive rails, forcing `beta=V`.
+The shared rung then carries `V` on both sides.  Edgewise Peter--Weyl
+orthogonality therefore removes `det tensor V`, `det`, and every other
+exterior irrep; no omitted channel can cancel the selected element.
+
+The remaining shared-rung contraction is the unique scalar recoupling.  The
+exact defining-representation Haar identity
+`integral R_ab R_cd dR=delta_ac delta_bd/3` gives
+
+```text
+integral chi_V(A)chi_V(B)chi_V(BA)=1/3.             (34oV)
+```
+
+Indeed, expanding `chi_V(BA)=sum_(k,l)B_kl A_lk` leaves one common index out
+of the two Haar second moments and hence `3/3^2`.  The same-plaquette
+candidate has one unpaired vector coefficient and vanishes.  With residual
+rows `psi_(0,V),psi_(1,V)` and coarse columns `1,phi_V`, the complete selected
+block is
+
+```text
+P_V B|_(1,phi_V)
+ =-c_V^(n) [[a_0,a_1/3],[a_1,a_0/3]].              (34pV)
+```
+
+Let `t_V=r_V^(n)(q_epsilon)` be the normalized one-original-link multiplier.
+For the supplied positive finite step `0<t_V<1`.  A fine vector plaquette
+occupies four original links, while `J_2phi_V` occupies the six-link outer
+boundary, so `C_epsilon psi_(i,V)=t_V^4psi_(i,V)` and
+`C_c,epsilon phi_V=t_V^6phi_V`.  For nonnegative local amplitudes the selected
+entry below is nonnegative, and it is strictly positive exactly when
+`a_0a_1>0`.  In particular, assume `a_0,a_1>0` for the displayed strict
+inequality.  The exact Gram insertion (34b) now yields
+
+```text
+<1,R_epsilon phi_V>
+ =epsilon^2(c_V^(n))^2 a_0a_1/6
+  (1+t_V^4)(t_V^4+t_V^6)>0,                        (34qV)
+
+R_epsilon=(1/2)partial_lambda^2D_epsilon|_0.
+```
+
+For `n=1`, unit amplitudes, `epsilon=1`, and the exact test value `t_V=1/2`,
+this is `85/1536`.  In original-link order
+`(u_0,u_1,v_0,v_1,h_0,h_1,h_2)`, the plaquettes occupy
+`{u_0,v_0,h_0,h_1}` and `{u_1,v_1,h_1,h_2}`.  Their common `h_1` contracts
+through (34oV) and cancels from the outer boundary, giving the load-bearing
+`4,4,6` census; replacing `t_V^6` by an independent-plaquette `t_V^8`
+changes the answer.  Equation (34qV) is therefore the first complete
+original-link non-determinant `O(3)` response matrix element that survives
+edgewise Peter--Weyl orthogonality.  It is not the full non-determinant kernel
+and supplies no metric, source, matter, selected-action, time, or continuum
+response.
 
 ## Exact finite-`epsilon` determinant off-block on the actual `r=2` carrier
 
@@ -1658,12 +1769,16 @@ The closest current and in-flight surfaces are distinct:
   three-state restrictions; it does not claim those generic tools as novelty.
 - Generic compression inequalities and conditional variances are credited
   mathematical machinery, not the novelty claim.
+- Generic Clebsch--Gordan rules do not supply the actual seven-link `J_2,Q`
+  residual block, its 4/4/6 temporal incidence, or the positive defining-vector
+  matrix element (34kV)--(34qV).
 
 The exact increment is the physical `J_r` square (1), its Block227 core
 interaction (14), the kinetic-range reduction (15)--(16), and the explicit
 nonconstant exterior variance (4)--(5), together with the arbitrary-`r`
 conditioned-Haar hierarchy (25)--(28), the complete-step response (29)--(34),
-the quadratic kinetic response (34a)--(34j), the finite-step determinant
+the quadratic kinetic response (34a)--(34j), the defining-vector off-block
+(34kV)--(34qV), the finite-step determinant
 selection and all-pairs response-order law (34k)--(34ae), and the full packet
 consumer, fixed-memory boundary, and connected homogeneous-background norm
 (34af)--(34av), (38), (40)--(50).
@@ -1684,6 +1799,7 @@ consumer, fixed-memory boundary, and connected homogeneous-background norm
 | complete-step `r`th action response | proved strong/core at fixed finite `r,q,n` | (29)--(32) |
 | finite leading exterior response carrier | proved | (33)--(34) |
 | quadratic complete-step action response and induced kinetic descendant | proved strong/core at fixed finite `r,q,n` | (34a)--(34j) |
+| first non-determinant defining-vector off-block | proved on the actual `r=2,q=1` seven-link carrier; nonnegative for nonnegative local amplitudes and positive iff both are positive | (34kV)--(34qV) |
 | exact finite-step determinant offdiagonal selection and context | proved for finite `r>=2,q`; positive only on `r=2` hypercube edges for positive coefficients | (34k)--(34w) |
 | exact finite-step determinant response order | proved for fixed finite `r>=2,q,n`; orders below `r` vanish and the `r`th vacuum-to-cell derivative is positive for positive local coefficients | (34x)--(34aa) |
 | exact all-pairs determinant response-order filtration | proved for fixed finite `r>=2,q,n`; order `r d_H`, `2^d` cylindrical deletions, and positive coefficient for positive changed-cell amplitudes | (34ab)--(34ae) |

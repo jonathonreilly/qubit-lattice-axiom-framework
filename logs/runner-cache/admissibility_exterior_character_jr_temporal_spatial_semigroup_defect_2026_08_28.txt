@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: a716da5274e78be9d7a470e091c53c3dded540480de2a88bd523d5097d58388c
-input_fingerprint_sha256: 403d2e8b46b0345d3a5ee5b0f8abbd0de475d99da137aba75a871f24cfc6f692
+runner_sha256: e8521d0af65a6e280b2ab14ea0c88dfacfdafb5a83483bf9fc79000bb3dfc420
+input_fingerprint_sha256: 74dc2f9a02b6f7e69e6509bf321b814b5a7dafd9090a47c2a9d0ed9ad0485cce
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.92
+elapsed_sec: 5.07
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms
@@ -40,6 +40,9 @@ status: ok
 [PASS] K_beta at least one preserves every spatial half-action first derivative
 [PASS] packet response keeps the common normalization and cylindrical range
 [PASS] complete quadratic half-response has explicit temporal rq packet bound
+[PASS] full O3 edgewise selection leaves the unique V tensor V scalar recoupling
+[PASS] explicit conditional Haar map removes vector plaquette means and fixes pullbacks
+[PASS] complete finite-epsilon J_2 response has a positive O3 vector off-block
 [PASS] actual r=2 determinant cycles have four/four/six original-link multipliers
 [PASS] complete finite-epsilon J_2 response has an exact positive determinant off-block
 [PASS] shared-rung cancellation distinguishes the actual carrier from a reduced increment model
@@ -79,7 +82,7 @@ per_mode: the Peter--Weyl core commutator square and nontrivial convolution chan
 per_block: the complete physical J_r direct/staged defect and rq packet census were checked
 per_scale: conditioned fibers r=2,...,7 and all-pairs determinant responses through q=3,d=3 were checked
 lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied
-TOTAL: PASS=66 FAIL=0
+TOTAL: PASS=69 FAIL=0
 
 ----- stderr -----
 

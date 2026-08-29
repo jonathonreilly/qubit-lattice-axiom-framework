@@ -22,6 +22,7 @@ from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_indep
     determinant_response_automaton_fixture as independent_automaton_fixture,
     multi_cell_determinant_response_fixture as independent_multi_cell_fixture,
     original_link_determinant_offblock_fixture as independent_determinant_fixture,
+    original_link_vector_o3_offblock_fixture as independent_vector_o3_fixture,
     packet_quadratic_response_fixture as independent_packet_response_fixture,
     s3_mixed_response_fixture as independent_mixed_response_fixture,
     u1_carre_du_champ_fixture as independent_carre_du_champ_fixture,
@@ -85,6 +86,10 @@ MUTATIONS = (
     "drop_spatial_linear_cutoff",
     "renormalize_response_packet",
     "corrupt_original_link_census",
+    "corrupt_vector_recoupling",
+    "corrupt_vector_projector",
+    "corrupt_vector_amplitude_boundary",
+    "corrupt_vector_incidence",
     "erase_determinant_offblock",
     "replace_actual_carrier_by_increment_model",
     "invent_r3_determinant_offblock",
@@ -461,6 +466,79 @@ def primary_packet_response_data() -> dict[str, object]:
         "u": u_symbol,
         "range_exact": exact * isometry == isometry * coarse_exact,
         "range_packet": packet * isometry == isometry * coarse_packet,
+    }
+
+
+def primary_vector_o3_offblock_data() -> dict[str, object]:
+    """Exact defining-O(3) recoupling on the actual seven-link r=2 cell."""
+
+    dimension = 3
+
+    def haar_second(first: tuple[int, int],
+                    second: tuple[int, int]) -> sp.Rational:
+        return sp.Rational(
+            int(first[0] == second[0]) * int(first[1] == second[1]),
+            dimension,
+        )
+
+    character_norm = sum(
+        (haar_second((i, i), (j, j))
+         for i in range(dimension) for j in range(dimension)),
+        sp.Rational(0),
+    )
+    shared_recoupling = sum(
+        (haar_second((i, i), (ell, k))
+         * haar_second((j, j), (k, ell))
+         for i in range(dimension) for j in range(dimension)
+         for k in range(dimension) for ell in range(dimension)),
+        sp.Rational(0),
+    )
+
+    vector = (1, -1)
+    action_labels = (vector, (1, 1), (0, -1))
+    surviving_labels = tuple(
+        label for label in action_labels
+        if label[0] == vector[0] and label[1] * vector[1] == 1
+    )
+    plaquette_0 = frozenset(("u0", "v0", "h0", "h1"))
+    plaquette_1 = frozenset(("u1", "v1", "h1", "h2"))
+    outer = plaquette_0 ^ plaquette_1
+
+    epsilon = sp.Rational(1)
+    coefficient = sp.Rational(2)
+    t_value = sp.Rational(1, 2)
+    a_0 = a_1 = sp.Rational(1)
+    residual = -coefficient * sp.Matrix((
+        (a_0, a_1 * shared_recoupling),
+        (a_1, a_0 * shared_recoupling),
+    ))
+    residual_temporal = t_value**4 * sp.eye(2)
+    coarse_temporal = sp.diag(1, t_value**6)
+    leakage = -epsilon * (
+        residual * coarse_temporal + residual_temporal * residual
+    ) / 2
+    half_response = sp.simplify(leakage.T * leakage)
+    predicted = (
+        epsilon**2 * coefficient**2 * a_0 * a_1
+        / (2 * dimension)
+        * (1 + t_value**4) * (t_value**4 + t_value**6)
+    )
+    reduced_prediction = (
+        epsilon**2 * coefficient**2 * a_0 * a_1
+        / (2 * dimension)
+        * (1 + t_value**4) * (t_value**4 + t_value**8)
+    )
+    return {
+        "character_norm": character_norm,
+        "shared_recoupling": shared_recoupling,
+        "surviving_labels": surviving_labels,
+        "incidence_weights": (len(plaquette_0), len(plaquette_1), len(outer)),
+        "shared_rung": plaquette_0 & plaquette_1,
+        "residual": residual,
+        "half_response": half_response,
+        "offblock": half_response[0, 1],
+        "predicted": predicted,
+        "reduced_prediction": reduced_prediction,
     }
 
 
@@ -1264,6 +1342,7 @@ def independent_mode() -> int:
     mixed = independent_mixed_response_fixture()
     carre = independent_carre_du_champ_fixture()
     response_packet = independent_packet_response_fixture()
+    vector_o3 = independent_vector_o3_fixture()
     determinant = independent_determinant_fixture()
     determinant_selection = independent_determinant_selection_fixture()
     finite_rth = independent_finite_rth_fixture()
@@ -1365,6 +1444,15 @@ def independent_mode() -> int:
             "independent packet spatial derivative requires cutoff at least one",
             response_packet["exact_linear_cutoffs"]
             and response_packet["zero_cutoff_fails"],
+        ),
+        (
+            "independent continuous-O3 vector recoupling and actual J2 off-block",
+            vector_o3["character_norm"] == F(1)
+            and vector_o3["shared_recoupling"] == F(1, 3)
+            and vector_o3["surviving_labels"] == ((1, -1),)
+            and vector_o3["incidence_weights"] == (4, 4, 6)
+            and vector_o3["offblock"] == vector_o3["predicted"]
+            == F(85, 1536),
         ),
         (
             "independent seven-link determinant incidence and normalized Haar fibers",
@@ -1790,6 +1878,8 @@ def main(mutation: str | None, mode: str) -> int:
     )
 
     response_packet = primary_packet_response_data()
+    vector_o3 = primary_vector_o3_offblock_data()
+    independent_vector_o3 = independent_vector_o3_fixture()
     spatial_derivative_ok = (
         response_packet["derivatives"][0] == -1
         and all(derivative == response_packet["u"] - 1
@@ -1828,6 +1918,64 @@ def main(mutation: str | None, mode: str) -> int:
         and "<=2epsilon^2||Gamma|| theta_K" in note
         and "<=2epsilon^2||Gamma||(3rq+1)delta_kappa" in note
         and "bound for the full `partial_lambda^2D|_0` is twice" in note,
+    )
+
+    vector_recoupling_ok = (
+        vector_o3["character_norm"] == 1
+        and vector_o3["shared_recoupling"] == sp.Rational(1, 3)
+        and vector_o3["surviving_labels"] == ((1, -1),)
+        and independent_vector_o3["first_moment_zero"]
+        and independent_vector_o3["second_moment_exact"]
+        and independent_vector_o3["shared_recoupling"] == F(1, 3)
+        and independent_vector_o3["same_plaquette_zero"]
+        and independent_vector_o3["surviving_labels"] == ((1, -1),)
+        and independent_vector_o3["opposite_placement_pairs"]
+        == (((1, -1), (1, -1)),)
+    )
+    if mutation == "corrupt_vector_recoupling":
+        vector_recoupling_ok = False
+    check(
+        "full O3 edgewise selection leaves the unique V tensor V scalar recoupling",
+        vector_recoupling_ok
+        and "C^(0,+)_(V,V)=delta_ab/sqrt(3)" in note
+        and "integral chi_V(A)chi_V(B)chi_V(BA)=1/3" in note,
+    )
+
+    vector_projector_ok = (
+        independent_vector_o3["q_psi_zero"]
+        and independent_vector_o3["q_phi_fixed"]
+    )
+    if mutation == "corrupt_vector_projector":
+        vector_projector_ok = False
+    check(
+        "explicit conditional Haar map removes vector plaquette means and fixes pullbacks",
+        vector_projector_ok
+        and "Q psi_(i,V)=0" in note
+        and "QJ_2phi_V=J_2phi_V" in note,
+    )
+
+    vector_offblock_ok = (
+        vector_o3["incidence_weights"] == (4, 4, 6)
+        and vector_o3["shared_rung"] == frozenset(("h1",))
+        and vector_o3["offblock"] == vector_o3["predicted"]
+        == sp.Rational(85, 1536)
+        and vector_o3["predicted"] != vector_o3["reduced_prediction"]
+        and independent_vector_o3["offblock"]
+        == independent_vector_o3["predicted"] == F(85, 1536)
+        and independent_vector_o3["zero_amplitude_boundary"]
+    )
+    if mutation == "corrupt_vector_amplitude_boundary":
+        vector_offblock_ok = False
+    if mutation == "corrupt_vector_incidence":
+        vector_offblock_ok = False
+    check(
+        "complete finite-epsilon J_2 response has a positive O3 vector off-block",
+        vector_offblock_ok
+        and "<1,R_epsilon phi_V>" in note
+        and "c_V^(n)" in note
+        and "Q psi_(i,V)=0" in note
+        and "strictly positive exactly when `a_0a_1>0`"
+        in " ".join(note.split()),
     )
 
     determinant = primary_determinant_offblock_data()

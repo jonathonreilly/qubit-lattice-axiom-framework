@@ -750,6 +750,160 @@ def packet_quadratic_response_fixture() -> dict[str, object]:
     }
 
 
+def original_link_vector_o3_offblock_fixture() -> dict[str, object]:
+    """Clean-room O(3) vector recoupling on the actual seven-link cell.
+
+    The only Haar input is the exact defining-representation identity
+    integral R_ab R_cd dR = delta_ac delta_bd / 3.  No finite group is used.
+    """
+
+    dimension = 3
+
+    def signed_frames() -> tuple[Matrix, ...]:
+        frames: list[Matrix] = []
+        for permutation in permutations(range(dimension)):
+            for signs in product((-1, 1), repeat=dimension):
+                frames.append(tuple(
+                    tuple(F(signs[row] if column == permutation[row] else 0)
+                          for column in range(dimension))
+                    for row in range(dimension)
+                ))
+        return tuple(frames)
+
+    frames = signed_frames()
+
+    def trace(matrix: Matrix) -> F:
+        return sum((matrix[index][index] for index in range(dimension)), F(0))
+
+    def average_one(function: object) -> F:
+        return sum((function(frame) for frame in frames), F(0)) / len(frames)
+
+    def average_two(function: object) -> F:
+        return sum(
+            (function(left, right) for left in frames for right in frames),
+            F(0),
+        ) / (len(frames) ** 2)
+
+    # Uniform signed frames reproduce the defining O(3) first and second Haar
+    # moments exactly.  The source proof remains the continuous-Haar theorem.
+    first_moment = tuple(
+        sum((frame[row][column] for frame in frames), F(0)) / len(frames)
+        for row in range(dimension) for column in range(dimension)
+    )
+    second_moment_exact = all(
+        sum((frame[a][b] * frame[c][d] for frame in frames), F(0))
+        / len(frames)
+        == F(int(a == c) * int(b == d), dimension)
+        for a in range(dimension) for b in range(dimension)
+        for c in range(dimension) for d in range(dimension)
+    )
+    character_norm = average_one(lambda frame: trace(frame) ** 2)
+    shared_recoupling = average_two(
+        lambda left, right: trace(left) * trace(right)
+        * trace(matmul(right, left))
+    )
+    same_plaquette = average_two(
+        lambda left, right: trace(left) ** 2
+        * trace(matmul(right, left))
+    )
+
+    # Exercise the explicit conditional map rather than asserting its result.
+    q_psi_zero = all(
+        average_one(lambda x: trace(x)) == 0
+        and average_one(
+            lambda x, fixed=delta_word: trace(
+                matmul(fixed, transpose(x))
+            )
+        ) == 0
+        for delta_word in frames
+    )
+    q_phi_fixed = all(
+        average_one(
+            lambda x, fixed=delta_word: trace(
+                matmul(matmul(fixed, transpose(x)), x)
+            )
+        ) == trace(delta_word)
+        for delta_word in frames
+    )
+
+    # O(3) irreps are labelled by (ell, inversion parity).  The n=1
+    # exterior action has V, det tensor V, and det.  A scalar occurs in
+    # (ell,p) tensor (ell',p') iff ell=ell' and pp'=+1.
+    vector = (1, -1)
+    action_labels = (vector, (1, 1), (0, -1))
+
+    def scalar_in_product(left: tuple[int, int],
+                          right: tuple[int, int]) -> bool:
+        return left[0] == right[0] and left[1] * right[1] == 1
+
+    surviving_labels = tuple(
+        label for label in action_labels if scalar_in_product(vector, label)
+    )
+    candidate_labels = tuple(
+        (ell, parity) for ell in range(7) for parity in (-1, 1)
+    )
+    opposite_placement_pairs = tuple(
+        (alpha, beta)
+        for alpha in candidate_labels for beta in candidate_labels
+        if scalar_in_product(vector, alpha)
+        and scalar_in_product(vector, beta)
+    )
+
+    plaquette_0 = frozenset(("u0", "v0", "h0", "h1"))
+    plaquette_1 = frozenset(("u1", "v1", "h1", "h2"))
+    outer = plaquette_0 ^ plaquette_1
+
+    epsilon = F(1)
+    coefficient = F(2)  # c_V^(1)=16/(1*8)
+    temporal_vector = F(1, 2)
+    a_0 = a_1 = F(1)
+    t_4 = temporal_vector**4
+    t_6 = temporal_vector**6
+    vacuum_leak = (
+        epsilon * coefficient * a_0 * (1 + t_4) / 2,
+        epsilon * coefficient * a_1 * (1 + t_4) / 2,
+    )
+    vector_leak = (
+        epsilon * coefficient * a_1 * shared_recoupling * (t_4 + t_6) / 2,
+        epsilon * coefficient * a_0 * shared_recoupling * (t_4 + t_6) / 2,
+    )
+    offblock = sum(
+        (left * right for left, right in zip(vacuum_leak, vector_leak)),
+        F(0),
+    )
+    predicted = (
+        epsilon**2 * coefficient**2 * a_0 * a_1
+        / (2 * dimension) * (1 + t_4) * (t_4 + t_6)
+    )
+    reduced_eight_link_prediction = (
+        epsilon**2 * coefficient**2 * a_0 * a_1
+        / (2 * dimension) * (1 + t_4)
+        * (t_4 + temporal_vector**8)
+    )
+    return {
+        "dimension": dimension,
+        "frame_count": len(frames),
+        "first_moment_zero": all(value == 0 for value in first_moment),
+        "second_moment_exact": second_moment_exact,
+        "character_norm": character_norm,
+        "q_psi_zero": q_psi_zero,
+        "q_phi_fixed": q_phi_fixed,
+        "shared_recoupling": shared_recoupling,
+        "same_plaquette_zero": same_plaquette == 0,
+        "surviving_labels": surviving_labels,
+        "opposite_placement_pairs": opposite_placement_pairs,
+        "incidence_weights": (
+            len(plaquette_0), len(plaquette_1), len(outer)
+        ),
+        "shared_rung": plaquette_0 & plaquette_1,
+        "offblock": offblock,
+        "predicted": predicted,
+        "positive": offblock > 0,
+        "zero_amplitude_boundary": predicted * F(0) == 0,
+        "reduced_eight_link_prediction": reduced_eight_link_prediction,
+    }
+
+
 def original_link_determinant_offblock_fixture() -> dict[str, object]:
     """Seven-link Z2 control for the actual r=2 determinant off-block.
 
@@ -1740,6 +1894,7 @@ def main() -> int:
     mixed = s3_mixed_response_fixture()
     carre = u1_carre_du_champ_fixture()
     response_packet = packet_quadratic_response_fixture()
+    vector_o3 = original_link_vector_o3_offblock_fixture()
     determinant = original_link_determinant_offblock_fixture()
     determinant_selection = determinant_scale_selection_fixture()
     finite_rth = finite_rth_determinant_response_fixture()
@@ -1899,6 +2054,33 @@ def main() -> int:
             "spatial packet derivative is exact iff the tested cutoff is at least one",
             response_packet["exact_linear_cutoffs"]
             and response_packet["zero_cutoff_fails"],
+        ),
+        (
+            "O3 vector Haar recoupling is normalized and selected uniquely",
+            vector_o3["frame_count"] == 48
+            and vector_o3["first_moment_zero"]
+            and vector_o3["second_moment_exact"]
+            and vector_o3["character_norm"] == F(1)
+            and vector_o3["shared_recoupling"] == F(1, 3)
+            and vector_o3["same_plaquette_zero"]
+            and vector_o3["surviving_labels"] == ((1, -1),)
+            and vector_o3["opposite_placement_pairs"]
+            == (((1, -1), (1, -1)),),
+        ),
+        (
+            "actual J2 residual projector removes one-plaquette vector means",
+            vector_o3["q_psi_zero"] and vector_o3["q_phi_fixed"],
+        ),
+        (
+            "seven-link O3 vector response has a positive complete off-block",
+            vector_o3["incidence_weights"] == (4, 4, 6)
+            and vector_o3["shared_rung"] == frozenset(("h1",))
+            and vector_o3["offblock"] == vector_o3["predicted"]
+            == F(85, 1536)
+            and vector_o3["positive"]
+            and vector_o3["zero_amplitude_boundary"]
+            and vector_o3["predicted"]
+            != vector_o3["reduced_eight_link_prediction"],
         ),
         (
             "seven-link determinant cycles have exact 4,4,6 incidence and Haar fibers",

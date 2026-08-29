@@ -76,3 +76,6 @@ strict audit lint has no errors and no audit verdict was applied. The next
 science gate is Gram positivity/minimal history memory, then comparison with
 the arbitrary-r scalar-fused transfer route. No axiom or approved primitive
 changed.
+
+Block243 is open as stacked review PR #7797 on Block242 PR #7796. Do not merge
+either PR in this campaign.

@@ -71,4 +71,7 @@
   seeds the ledger, and classifies runners before reaching the same inherited
   dependency-policy epoch-manifest mismatch disclosed on Blocks240--242.
   Generated control-plane churn was stripped, the citation manifest alone was
-  regenerated for the new dependency links, and no audit verdict was applied.
+  regenerated for the new dependency links, changed-science evidence readiness
+  passed `1/1`, and no audit verdict was applied.
+- Block243 review PR #7797 opened on the reviewed Block242 branch; it is open
+  and mergeable. No merge was performed.

@@ -14,7 +14,7 @@ proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 axiom_or_primitive_edits: 0
-open_prs: [7784, 7786, 7788, 7789, 7790, 7791, 7792, 7793, 7794, 7795, 7796]
+open_prs: [7784, 7786, 7788, 7789, 7790, 7791, 7792, 7793, 7794, 7795, 7796, 7797]
 block242_checks:
   finite_field_companion: 24/24
   finite_field_mutations: 7/7
@@ -47,5 +47,6 @@ full_pipeline_disposition: inherited_dependency_policy_epoch_mismatch_after_grap
 block240_pr: 7794
 block241_pr: 7795
 block242_pr: 7796
-next_exact_action: open one stacked review PR for the combined block, then test Gram positivity/minimal history memory and compare the arbitrary-r transfer route
+block243_pr: 7797
+next_exact_action: test Gram positivity/minimal history memory of the exact combined kernel, then compare the arbitrary-r transfer route
 stop_condition: campaign deadline or global queue exhaustion after required deep-work gates

@@ -185,3 +185,32 @@
 - Block247 review PR #7801 opened on the independently reviewed Block246
   branch after the cluster-cap returned `OPEN`. It is review-only; no merge or
   audit verdict was performed.
+- Block248 authority reconstruction: fetched `origin/main` at
+  `3cc632921c36aa90266c5c62e56816577ce59a0a`; searched titles, note bodies,
+  scripts, and derivation obligations for symmetric-order/top-spin cancellation
+  results; found no `origin/main` derivation of the target formulas. Re-read the
+  Block247 no-go and both runners, their Block239/Block246 and parent action/
+  multiplier authorities, and reconstructed the typed response and every local
+  original link. All parent PRs remain open dependencies.
+- Block248 exact algebra: transport gives `A_i C+C A_i`. The disjoint crossing
+  eigenvalue is `r_n^4r_1^8`; the shared `h3` channel has the independently
+  derived `3/7/1` eigenvalue `r_n^3r_1^7r_(n+1)`. Both operator orders reach the
+  same unit-multiplicity top network and add. Strict positive supplied
+  multipliers reinforce; a signed shared-rung control cancels exactly outside
+  that domain.
+- Block248 implementation preflight: the full disjoint exact recurrence and
+  all three top formulas pass `21/21`; an independent oriented-link/maximal-
+  torus implementation passes `12/12`; all `14/14` formula and scope mutations
+  are rejected. Identity, Haar, vector-spectator-zero, physical conditional-
+  Haar, and response-scalar controls pass. Repository, cache, citation graph,
+  lint, and review-loop results are recorded after their final executions; no
+  audit verdict is applied.
+- Block248 repository preflight: vocabulary lint reports zero violations; both
+  runners compile; the source-and-declared-input-bound primary cache is fresh;
+  strict audit lint reports no errors; and repository invariants report zero
+  link or Class-F violations with the citation delta acknowledged. The full
+  pipeline passes axiom purity, constructs the 5,667-node/16,232-edge graph,
+  seeds the new row, classifies runners, and computes effective statuses before
+  stopping at the inherited dependency-policy epoch-manifest mismatch. All
+  generated ledger/status churn was removed and only the intended new-node/
+  five-edge citation manifest delta remains. No audit verdict was applied.

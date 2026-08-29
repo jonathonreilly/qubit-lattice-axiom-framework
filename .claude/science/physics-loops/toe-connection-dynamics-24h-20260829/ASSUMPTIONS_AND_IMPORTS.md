@@ -103,3 +103,27 @@
   bound, not 43 new irreps or a universal generic equality.
 - No literature value, observed target, fitted input, axiom edit, or approved
   primitive edit enters Block247.
+- Block248 imports the parent exact symmetric response with its common plus
+  sign, `C J_3=J_3 C_c`, `[C,Q]=0`, the defining-vector action component, and
+  physical conditional-Haar `Q=J_3J_3^*`. The two response orders are not
+  replaced by a commutator or an independently normalized pair.
+- Block248 reconstructs all local links: `p0` and `p1` are disjoint from the
+  eight-link `C1`; `p2` shares exactly `h3` with opposite orientation. On the
+  highest coupled channel, the shared placement has three spin-`n` links,
+  seven vector links, and one spin-`n+1` link. The shared rung is neither
+  ignored nor counted twice.
+- Exact Block248 mathematics: defining-vector fusion has a unique unit top
+  summand; the crossing-first and action-first top coefficients are `d_n` and
+  `d_(n+1)` on the same network; the parent plus sign therefore gives their
+  sum. Strict positivity of the supplied finite-positive multipliers makes the
+  sum nonzero on all three fixed placements.
+- A signed shared-rung sample reaches an exact algebraic cancellation locus.
+  It is an implementation falsifier and parameter-boundary witness, not a
+  supplied physical multiplier point.
+- The all-layer products in Block248 are coefficients of a normalized selected
+  fine-packet extension and of formal pure-placement amplitude monomials. The
+  actual parent response maps a coarse packet to a residual fine packet; no
+  composable physical power, mixed-placement classification, full exponential,
+  invariant closure, or global minimal-memory theorem is imported or inferred.
+- No literature value, observed target, fitted input, axiom edit, or approved
+  primitive edit enters Block248.

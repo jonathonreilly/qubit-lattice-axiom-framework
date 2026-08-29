@@ -1,9 +1,11 @@
 # Route portfolio
 
-1. **Selected physical-Q action/crossing recurrence — selected.** Work on the
-   disjoint `p0/C1` fiber from exact character fusion and conditional Haar.
-   This produced an all-layer top-spin induction and a selected finite-linear-
-   carrier no-go, rather than another sampled-rank table.
+1. **Complete two-order fixed-placement coefficient — selected and
+   completed.** Transport the parent response to `A_i C+C A_i` and compute its
+   unique top coefficient. Both disjoint placements give
+   `r_1^8(r_n^4+r_(n+1)^4)`; the shared-rung placement gives
+   `r_1^7[r_n^3r_(n+1)+r_(n+1)^3r_(n+2)]`. The supplied positive multipliers
+   make both orders reinforce.
 2. **Third partial crossing of the 36-history packet.** Exact but expensive;
    the depth-three history count grows to 3,120 before Gram symmetry. It could
    add a lower-bound table but does not by itself separate multiplicity from
@@ -12,15 +14,15 @@
    partial central selections on each fixed tensor packet. Crossing-only
    spectral recurrence is now exact; the complete selected multiplicity-
    algebra dimension remains open.
-4. **Complete symmetric action branch.** Combine the two parent orders
-   `BC_c+CB` and test the unique top-spin coefficient for cancellation. This is
-   the highest-ranked next falsifier because it can widen or sharply bound the
-   selected no-go.
-5. **Multiple plaquette placements.** Couple action towers on `p0,p1,p2` with
-   physical `Q`. This can test whether fusion constraints or placement sums
-   alter the one-plaquette unbounded result.
+4. **Mixed-placement recoupling — selected next.** Couple one disjoint action
+   with one shared-rung `p2` action, enumerate every maximum-label channel, and
+   test exact recoupling signs under physical `Q`.
+5. **Typed physical-response carrier.** Reconstruct a composable domain and
+   codomain, if supplied, before treating the formal fine-packet extension as
+   repeated physical response. No such identification is made in Block248.
 
-The selected route has hard-residual pressure three: it introduces an exact
-recurrence and a universal falsifier for finite selected linear closure. The
-third-crossing table was demoted because it would mainly extend sample-wise
-corollaries without closing the representation question.
+The completed route has hard-residual pressure three: it tests the exact
+relative sign, the physical projector, and the original-link geometry rather
+than extending a sampled-rank table. The next route is mixed recoupling because
+pure-placement positivity alone does not determine interference among distinct
+action placements.

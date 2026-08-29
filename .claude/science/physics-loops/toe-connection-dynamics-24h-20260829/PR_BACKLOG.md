@@ -63,3 +63,8 @@ hostile mutations are rejected, the changed-evidence gate passes `1/1`, and
 the same reviewer issued a final `PASS` after five narrow packaging repairs.
 The mandatory seventh-PR cluster-cap evaluation is `OPEN`. The campaign will
 not merge it.
+
+Block248 has no PR. The user-directed worker contract requires one local commit
+on `physics-loop/toe-connection-dynamics-block248-symmetric-action-crossing-20260829`
+and explicitly forbids push or PR creation. Every parent PR, including #7801,
+is treated as an open dependency; no merge is performed.

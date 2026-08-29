@@ -22,3 +22,9 @@
   This does not exclude cancellation in the complete symmetric response,
   nonlinear or indexed recurrences, alternative quotients, or finite global
   minimal memory.
+- Block248 removes one stated escape hatch from that selected ordered result:
+  on every fixed `p0`, `p1`, or `p2` placement, the two terms of the supplied
+  `B C_c+C B` response add on the unique top branch. This is a positive
+  coefficient theorem, not a new no-go. It does not convert the ordered result
+  into a conclusion about mixed placements, powers of the actual response,
+  invariant closure, the action exponential, or global memory.

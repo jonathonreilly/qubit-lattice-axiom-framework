@@ -1,19 +1,56 @@
 # Assumptions And Imports
 
-## Pinned conditional inputs
+## Conditional scientific inputs
 
-| source | commit | note blob | runner blob |
-|---|---|---|---|
-| Source/Eta Block 02 | 03c3629fd0 | 95e67961ffe80fb89b6c0ef7f37337ca0aa5099d | cfa8f0f635db689fba9c9a66963efacae35d26a4 |
-| Block 206 | 42b2528048 | 3da5ba134fb6947e62a5db32f12e75b254adf555 | 59893ed2a5bd1182a65a97dc1abc51fea0f16ca2 |
-| Block 205 | ff1c77c8a2 | 77ff334f280e6cbf7679c670eef4d2ae7bb0649e | 7eb65ab81efa33b0ee18c7647ed1f68ceb8fe05f |
+- Source/Eta Block 02 result head `f5e5c140c0`.
+- Block 206 result head `42b2528048` and its actual-`C32` cache blob
+  `368e228405762936079edd269cb61a42bb0a9556`.
+- Block 205 result head `ff1c77c8a2`.
+- Minimal-axiom blob `bc23300becfe4e4db57153c0e94cfcdf2338da71`.
+- Immutable Block-03 goal and preflight blobs `da1a8e551e` and
+  `203110c432`.
 
-Permitted mathematics includes exact finite-group cohomology, tensor-product
-M2 automorphisms, Boolean ANF and reversible circuits, exact symbolic matrix
-and Schur algebra, finite-dimensional CP/Kraus/Choi algebra, and exhaustive
-finite configuration enumeration.
+The runners verify these identities before using their objects.  Open or draft
+PR status does not promote any imported source to retained standing.
 
-Forbidden imports include a runtime p/q, frame, coframe, port, source
-displacement, orbit index, 64-row probability lookup, uncounted blank or
-workspace, supplied site/rate/clock, unrealized rate vector, or generated
-evidence from the Block-231/232 and gravity worktrees.
+## Supplied candidate choices
+
+- the nontrivial affine proper-cubic action on the six neighboring binary
+  Record contents;
+- the inactive-orbit extension with zero H1 source/effect direction;
+- the response-max direction selector;
+- the H1 right-Schur state/source carrier;
+- a formation occurrence with a separately typed precursor and output site.
+
+The construction classifies the consequences of these choices.  It does not
+derive them from the minimal axioms.
+
+## Permitted mathematics
+
+- exact finite-group, cocycle, representation, and full-local-`M2`
+  automorphism algebra;
+- exact Boolean Möbius inversion over all 64 eta;
+- exact rational/symbolic matrix and resolvent algebra;
+- exact tensor-term Frobenius bounds and rational positivity inequalities;
+- exact finite POVM, matrix-root, Kraus, CPTP, QND, and Record-projector
+  algebra;
+- complete finite active/inactive orbit and mutation enumeration.
+
+## Forbidden imports
+
+- a scalar configuration-to-probability table;
+- a runtime frame, coframe, `p/q`, port, orbit label, source displacement, or
+  unrealized outcome-rate vector;
+- active-only reachability asserted from the existence of the active orbit;
+- Record permanence renamed as repeatability of the pre-Record action system;
+- an uncounted blank, precursor, output site, clock, scheduler, formation rate,
+  reset, or postselection;
+- a Taylor germ renamed as a finite positive state without an explicit
+  remainder/resolvent certificate;
+- evidence from the live Block-231 worktree, staged Block-232 packet, or
+  separately staffed gravity branches.
+
+The independent checker shares the frozen scientific inputs but rebuilds the
+group/action, eta decoder, source/effect transport, instrument, and
+repeatability logic.  It uses a reduced-`C32` endpoint inequality separate from
+the primary full-Gram proof and imports no primary result boolean.

@@ -13,3 +13,10 @@ axiom update, obligation retirement, retained status, or TOE movement.
 The independent checker must rebuild the group action, decoder truth table,
 source equality, effect probabilities, and branch-level QND/completeness
 relations without importing primary result flags.
+
+Executed result: the primary rejects 51/51 mutations and the independent
+checker rejects 40/40.  Added endpoint, representation-unitarity, explicit
+Schur-intertwiner, translation-writer, controlled-complement, whole-continuum,
+state/effect/root transport, eta-projector, Record-code, precursor-lock,
+active/inactive repeatability, false global-no-member promotion, and false-TOE
+mutations all reject.

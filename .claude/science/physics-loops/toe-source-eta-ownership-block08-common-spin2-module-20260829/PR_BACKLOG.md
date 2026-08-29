@@ -3,6 +3,7 @@
 - branch: `physics-loop/toe-source-eta-ownership-block08-common-spin2-module-20260829`
 - base: Block-07 delivery `5445bccc4e6e6a47197930caae22bcc9cdc30fc5`
 - disposition: author-side science checkpoint; stacked PR may remain backlogged
+- result commit: `5c472dd7323614e6ed6c0902ca85de78dab831c8`
 - audit: unset
 - review-loop: prohibited
 - full pipeline: build `4e8da1cdf18b` completed through stage 6 and stopped at

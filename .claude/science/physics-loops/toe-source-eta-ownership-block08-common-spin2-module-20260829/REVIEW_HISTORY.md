@@ -18,4 +18,6 @@
 - the staged pre-commit audit check consequently reproduced the inherited
   unmaterialized-ledger errors after that stage-7 stop; science-specific cache,
   vocabulary, forensic-readiness, syntax, and diff gates remained clean;
+- result commit `5c472dd7323614e6ed6c0902ca85de78dab831c8` was pushed to the
+  registered Block-08 branch;
 - no `review-loop` or audit verdict used.

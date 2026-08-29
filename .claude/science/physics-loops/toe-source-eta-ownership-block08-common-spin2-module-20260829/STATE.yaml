@@ -1,13 +1,13 @@
 loop_id: toe-source-eta-ownership-block08-common-spin2-module-20260829
 block: source_eta_08
-status: executed_cached_pre_delivery
+status: executed_cached_delivery_backlogged
 phase: common_spin2_module_six_bit_capacity
 branch: physics-loop/toe-source-eta-ownership-block08-common-spin2-module-20260829
 parent_commit: 5445bccc4e6e6a47197930caae22bcc9cdc30fc5
 origin_main: 004f64e1c87dad696b282cf2b526f3e7312dc82d
 minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 preregistration_commit: a4cbc76a77297a093a08e382f769df1390fc02c4
-result_commit: pending
+result_commit: 5c472dd7323614e6ed6c0902ca85de78dab831c8
 result_pr: backlogged
 latest_gravity_pr: 7793
 latest_gravity_head: e5be453f7c5ba9505b3ae956eee52b207b9bca93

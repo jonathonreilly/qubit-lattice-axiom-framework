@@ -1,6 +1,6 @@
 loop_id: toe-source-eta-ownership-block13-collision-safe-controller-20260829
 block: source_eta_13
-status: result_ready_uncommitted
+status: checkpointed_pushed
 phase: record_flag_collision_safe_controller_boundary
 branch: physics-loop/toe-source-eta-ownership-block13-collision-safe-controller-20260829
 parent_commit: 1a42db99a3f8a388625ebc620ade12dac8caf4dd
@@ -8,8 +8,8 @@ block12_result_commit: 4db65374c6b04b52045fc46e4b312864dc9c5f08
 origin_main: 3cc632921c36aa90266c5c62e56816577ce59a0a
 minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 preregistration_commit: 8d08827b404628b3444d40226894aa8b3f5e2c89
-result_commit: pending
-result_pr: pending
+result_commit: 88cd67d464c9da93fbb025c1f9943d14376ad267
+result_pr: backlogged
 latest_connection_pr: 7798
 latest_connection_head: d214fbbe9855f558413f7d948ec8cbb9eb979d43
 primary_runner: scripts/admissibility_d4_record_flag_collision_safe_controller_2026_08_29.py
@@ -45,6 +45,11 @@ axiom_update: false
 independent_audit_status: unset
 review_loop_allowed: false
 no_go_discipline: pass
+forensic_readiness: "1_1"
+citation_graph_delta: "1_node_2_edges"
+pipeline_build: 4541bea8b942
+pipeline_classifier_inputs: 739217868aeb
+pipeline_status: inherited_stage7_dependency_policy_epoch_mismatch
 obligation_retirement: 0
 toe_percentage_movement: 0
 toe_records: "95_92_50"

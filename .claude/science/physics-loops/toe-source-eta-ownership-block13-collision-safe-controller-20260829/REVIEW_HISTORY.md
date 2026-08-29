@@ -28,6 +28,16 @@ connection/gravity last until the supplied time/response inputs are retired.
 
 ## Delivery state
 
-No independent audit verdict has been applied.  No `review-loop` was used.
+- result commit `88cd67d464c9da93fbb025c1f9943d14376ad267` is pushed;
+- vocabulary, strict lint, syntax, cache, claim typing, whitespace, forensic
+  N5 (`1/1`), and graph/link gates pass;
+- citation manifest delta is exactly one node and two edges;
+- full pipeline build `4541bea8b942`, classifier input `739217868aeb`, reaches
+  the inherited stage-7 dependency-policy epoch mismatch after graph, seed,
+  runner classification, and effective-status stages;
+- the generated helper mapping attaches unrelated heuristic helpers and omits
+  the exact independent checker, so the review PR is backlogged;
+- no independent audit verdict has been applied and no `review-loop` was used.
+
 The next science block is content-oriented signed-front readout plus the same
 collision guard.

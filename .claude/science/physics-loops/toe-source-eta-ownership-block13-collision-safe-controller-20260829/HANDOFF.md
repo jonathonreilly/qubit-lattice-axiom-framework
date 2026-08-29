@@ -30,3 +30,11 @@ bridge.
 
 No minimal-axiom edit, audit verdict, obligation retirement, or TOE percentage
 movement is authorized here.  No `review-loop` was used.
+
+Science result `88cd67d464c9da93fbb025c1f9943d14376ad267` is pushed.
+Claim-specific forensic readiness is `1/1`, and the citation manifest adds one
+node with two declared dependencies.  Full pipeline build `4541bea8b942`
+reaches the inherited stage-7 dependency-policy epoch mismatch only after
+graph build, seeding, runner classification, and effective status.  Review PR
+creation is backlogged because the generated helper registry does not bind the
+exact independent checker and currently attaches unrelated heuristic helpers.

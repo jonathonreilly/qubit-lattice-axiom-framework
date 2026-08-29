@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_r3_q2_symmetric_action_crossing_top_spin_2026_08_29.py
 runner_sha256: 0221d07d1edd02190dd5669b38cdaefc2062d554ffee5f184d31869d8a4263a4
-input_fingerprint_sha256: 46b556fa948996a9c2111e2ff9409fb9fedabf1f01f8487f2f4b31f31015aded
+input_fingerprint_sha256: 68a402064b757cd3789a2c69e6c9c1f0a3235d781e38c73e186f3a72e48dd804
 timeout_sec: 30
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 [PASS] positive_a: direct A C + C A composition equals the independent coefficient recurrence

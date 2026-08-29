@@ -61,6 +61,22 @@ The panel required the preregistration to:
 All five corrections were incorporated before a target runner, result cache,
 or target mutation was executed.
 
+## Post-freeze hostile correction
+
+A subsequent theorem referee caught a small-torus wraparound defect before
+either target worker edited or executed a runner. The exact lumpability
+fixture now uses `L>=6` with the five other neighbors of its tested future
+site blank; `L=3,4,5` are explicit hostile failures. The same correction
+narrows infinite-volume existence to local cylinders, distinguishes kernel
+covariance from invariance of an initial law, proves eventual Record
+formation, and replaces the merely semigroup-level derivative comparison with
+a local first-Record order statistic giving the same `1/2` versus `2/3` odds
+without absolute clock calibration. Full details are frozen in
+[PREFLIGHT_SUPPORT_CORRECTION.md](PREFLIGHT_SUPPORT_CORRECTION.md).
+
+These repairs strengthen the panel's reason for choosing Block18; they do not
+change its one-block stop rule or authorize any terminal in advance.
+
 ## Stop and rerank rule
 
 Block18 receives one bounded primary/independent campaign. If the Harris

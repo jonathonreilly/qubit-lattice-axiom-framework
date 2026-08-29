@@ -24,11 +24,11 @@ Records form and remain permanent; it does not supply a process generator.
 | field | frozen contract |
 |---|---|
 | Target statement | Construct exact finite- and infinite-volume covariant pure-Record processes, then determine whether the current premises select one dimensionless activation law modulo a global time-unit rescaling. |
-| State domain | The six-mark restricted witness `R in ({bottom} union {rho_f:f in D})^(Z^3)`, with `D={+-e_1,+-e_2,+-e_3}`; a blank site may append one Record and a recorded site never changes. |
+| State domain | The invariant seven-state witness sector `R in ({bottom} union {rho_f:f in D})^(Z^3)`, with `D={+-e_1,+-e_2,+-e_3}`; a blank site may append one Record and a recorded site never changes. “Arbitrary initial law” means a Borel law on this restricted product space. |
 | Allowed premises | Minimal axioms; approved primitives only at their registered scope; exact finite-state Markov-generator mathematics; a declared bounded local Markov/process ansatz; one explicit conditional Admissibility witness kernel; standard Harris graphical construction proved in the runner. |
 | Forbidden imports | External scheduler, global next-event clock on the infinite lattice, hidden site ordering, supplied realized direction, a subnormalized mark law with “no event” mass, branch-dependent hazard disguised as a mark, physical-clock calibration, Block16 atomic three-site production from bounded one-site jumps, or source-free conservation of cumulative Record count on a torus. |
-| Selection witness | Under one fixed hypothesis set, either derive one exact generator/event arity uniquely modulo `L -> cL`, or exhibit two complete compatible processes with one dimensionless future-cylinder discriminator. A selector obtained only after adding physical conditions is a separate conditional result. |
-| Required process witness | Conservative finite-volume `Q` matrices; exact history density; bounded local rates; nonexplosive infinite-volume graphical construction; shared-field local-cylinder convergence; covariance; permanence; all local mark profiles; mutation rejection. |
+| Selection witness | Under one fixed hypothesis set, either derive one exact generator/event arity uniquely modulo multiplying every intensity by one common positive constant, or exhibit two complete compatible processes with one dimensionless local Record-order cylinder discriminator. A selector obtained only after adding physical conditions is a separate conditional result. |
+| Required process witness | Conservative finite-volume `Q` matrices; exact history density; bounded local rates; locally/cylinder-nonexplosive infinite-volume graphical construction; shared-field local-cylinder convergence; equivariant transition kernel; formation and permanence; all local mark profiles; mutation rejection. |
 | Required interface witness | Exact single-Record versus Block16 three-Record short-time comparison; strong-lumpability test for any proposed quotient; periodic incidence/source theorem; explicit live source/debit repairs. |
 | Outcomes that do not close | One chosen simulation generator, two generators differing only by global scale, a finite torus without an infinite-cylinder law, a scheduler convention, or an underselection result promoted automatically to an axiom amendment. |
 
@@ -84,13 +84,14 @@ direction table.
 Use the same mark law (3) with the two activation hazards
 
 ```text
-lambda_x^(0)(R) = a 1_(R_x=bottom),                        (4)
+lambda_x^(0)(R) = alpha 1_(R_x=bottom),                    (4)
 
-lambda_x^(1)(R) = a(1+n_x(R)/6) 1_(R_x=bottom),            (5)
+lambda_x^(1)(R) = alpha(1+n_x(R)/6) 1_(R_x=bottom),        (5)
 ```
 
 where `n_x(R)` is the number of recorded nearest neighbors. Both hazards are
-range one, covariant, and bounded by `2a`. Here monotonicity means only the
+range one, covariant, and bounded by `2 alpha`. The symbol `alpha` is a rate
+scale and is not the registered lattice scale. Here monotonicity means only the
 pathwise append-only occupancy order: a recorded site never returns to
 `bottom`. No colored attractiveness or stochastic ordering of mark contents
 is claimed.
@@ -107,10 +108,28 @@ P(x_6 next | next site is x_0 or x_6)
 ```
 
 This embedded-jump-chain statistic is dimensionless and survives
-`a -> c a`. In the infinite process the corresponding local discriminator is
-the ratio of the two right derivatives at `t=0`; no global next event is
-invoked. The runner must construct both surrounding configurations and derive
-(6) from exact intensities, not stipulate the fractions.
+`alpha -> c alpha`. In the infinite process the ratio of the two right
+derivatives at `t=0` is a scale-free semigroup discriminator, but it is not
+advertised by itself as an operational clock-free probability.
+
+For the Record-only discriminator, use the same configuration on `Z^3` and
+put
+
+```text
+U = {x_0,x_6} union N(x_0),
+tau_U = first new Record at a site of U.
+```
+
+Before `tau_U`, the two tested hazards remain respectively
+`(alpha,alpha)` or `(alpha,2 alpha)`: every neighbor of `x_6` is permanently
+recorded, while every neighbor of `x_0` belongs to `U` and remains blank.
+Consequently, for every `T>0`, conditional on `tau_U<=T` and its site lying
+in `{x_0,x_6}`, the probability that the site is `x_6` is again exactly
+`1/2` or `2/3`. Competing clocks elsewhere in `U` contribute the same survival
+factor to both numerator densities and cancel. This statistic uses the order
+of readable Record births and no absolute clock calibration. The runner must
+construct the surrounding configuration and derive both the finite and local
+order statistics from exact intensities, not stipulate the fractions.
 
 The base-premise underselection terminal is available only if both laws pass
 the complete finite/infinite process construction and every named premise
@@ -132,8 +151,10 @@ with all other entries zero. The proof must establish off-diagonal
 positivity, exact row sum zero, one-Record-per-site permanence, and at most
 `L^3` accepted jumps.
 
-For a marked history
-`gamma=((x_i,v_i,t_i))_(i=1)^k`, `0<t_1<...<t_k<T`, derive
+For a specified initial state `R_0` and marked history
+`gamma=((x_i,v_i,t_i))_(i=1)^k`, put `t_0=0` and
+`0<t_1<...<t_k<T`. Relative to counting measure on sites and marks and
+Lebesgue measure on this ordered time simplex, derive
 
 ```text
 prod_(i=1)^k exp[-Lambda(R_(i-1))(t_i-t_(i-1))]
@@ -142,20 +163,27 @@ prod_(i=1)^k exp[-Lambda(R_(i-1))(t_i-t_(i-1))]
 ```
 
 where `Lambda(R)=sum_x lambda_x(R)`. Normalization must follow from the
-finite conservative generator rather than sampled trajectories. A proposed
-history has density zero if it repeats a previously recorded site, names an
-incompatible mark/state transition, or violates the strict time ordering.
+finite conservative generator rather than sampled trajectories: the sum and
+integral over `k=0,...,#blanks(R_0)` and every compatible marked history must
+equal one. A proposed history has density zero if it names a site occupied in
+`R_0`, repeats a previously recorded site, names an illegal mark or site,
+fails the recursively implied state transition, or violates strict time
+ordering. For random initial data, mix this conditional density against its
+initial law.
 
 ## Infinite-volume graphical construction
 
-Fix `0<a<infinity` and an arbitrary deterministic initial Record
-configuration, or an initial probability law on the product state space. The
-infinite lattice has infinite global proposal rate and therefore no single
-global exponential holding time. Construct it locally instead:
+Fix `0<alpha<infinity` and an arbitrary deterministic initial configuration
+in the seven-state witness sector, or a Borel probability law `mu` on that
+restricted product space. Sample the initial configuration independently of
+the canonical proposal/key field. The infinite lattice has infinite global
+proposal and accepted-event rates for infinitely blank data and therefore no
+single global exponential holding time or global jump chain. Construct it
+locally instead:
 
-1. place an independent rate-`2a` proposal process at every site;
+1. place an independent rate-`2 alpha` proposal process at every site;
 2. attach an independent `U~Uniform[0,1]` to each proposal, reject recorded
-   sites, and accept a blank site iff `U<=lambda_x(R)/(2a)`;
+   sites, and accept a blank site iff `U<=lambda_x(R)/(2 alpha)`;
 3. attach six independent unit-rate exponential keys `E_f` and select the
    unique minimizer of `E_f/2^(m_x(f;R))`;
 4. rotate the six keys with the signed-axis orbit.
@@ -167,19 +195,40 @@ finite. A safe domination target is
 
 ```text
 P(ancestor radius >= m)
-  <= |A| sum_(k>=m) (14 a T)^k/k! -> 0,                    (9)
+  <= |A| sum_(k>=m) (14 alpha T)^k/k! -> 0,                (9)
 ```
 
 where radius means nearest-neighbor graph distance (equivalently the cubic
 `L^1` distance), the factor seven covers the queried site plus its six
-neighbors, and the proposal domination rate is `2a`. A sharper constant may
-be reported only if proved. Bounded ancestor radius plus finitely many Poisson
-points in the resulting finite spacetime box must be used to conclude
-pathwise construction. Fixed-exterior and periodic approximants that agree
-with the initial state on that ancestor set must agree on every finite local
-cylinder with probability tending to one. This is a shared-random-field local
-convergence statement, not exact projective consistency of finite-volume
-chains.
+neighbors, and the proposal domination rate is `2 alpha`. A sharper constant
+may be reported only if proved. Bounded ancestor radius plus finitely many
+Poisson points in the resulting finite spacetime box must be used to define a
+measurable sample map, first simultaneously on finite sets at rational query
+times and then by a local cadlag extension. Fixed-exterior and periodic
+approximants that agree with the initial state on the ancestor set and whose
+clan avoids their boundary must agree on the queried finite local cylinder;
+the probability of disagreement tends to zero. This is a shared-random-field
+local convergence statement, not exact projective consistency of finite-
+volume chains and not global nonexplosion.
+
+For a translation or proper cubic rotation `g`, relabel the field by
+`E'_(g f)(g x,t)=E_f(x,t)` and the analogous proposal/uniform rule. Exponential
+ties form a null set and are rejected by the finite exact fixtures. The sample
+map is equivariant almost surely, and its laws obey
+`g_* Law_mu = Law_(g_*mu)`. A chosen evolved law is invariant only when `mu`
+is invariant.
+
+Both hazards satisfy `lambda_x>=alpha` while `x` is blank. The proposals with
+uniform key at most `1/2` alone form a rate-`alpha` baseline, so
+
+```text
+P(x remains blank at t) <= exp(-alpha t).
+```
+
+Every initially blank site therefore records eventually almost surely, and a
+countable intersection gives one probability-one event on which every site of
+`Z^3` eventually records. There is no common finite time at which the whole
+infinite lattice is complete.
 
 Failure of this construction earns only an infinite-process construction
 failure. A finite-torus witness cannot support the underselection terminal by
@@ -197,9 +246,11 @@ C_(c,f) = {c-2f,c,c+f -> rho_f}.                           (10)
 ```
 
 `C_(c,f)` is the three-site Record projection of the Block16 writer event; it
-is not the complete Block16 quantum/output state. For any generator with
-uniformly bounded one-site append rates, starting with all three target sites
-blank, `E_(c,f)` requires at least three accepted target-site jumps, hence
+is not the complete Block16 quantum/output state. Work on `Z^3` or an
+injective finite fixture (uniformly `L>=6` below). For any generator with a
+uniform bound on the total one-site rates at the three targets, starting with
+all three target sites blank, `E_(c,f)` requires at least three accepted
+target-site jumps, hence
 
 ```text
 P_single(C_(c,f) by t) = O(t^3).                           (11)
@@ -212,12 +263,17 @@ A direct compound event with `0<kappa_c(R)<infinity` and oriented rate
 P_atom(C_(c,f) by t) = (kappa_c(R)/6)t + O(t^2).           (12)
 ```
 
-Matching a nonzero linear term requires an explicit compound-jump generator,
-pre-existing Records, or singular/unbounded rates. None may be silently
-imported.
+provided this named jump is the sole direct transition into the cylinder and
+the local generator is bounded enough for the displayed `O(t^2)` remainder.
+In general the linear coefficient is the total generator rate of every direct
+transition into the cylinder. Matching a nonzero linear term requires an
+explicit compound-jump generator, pre-existing Records, or singular/unbounded
+rates. None may be silently imported.
 
-Now place the full states `R_S` and `R_C` on a finite torus, identical outside
-the displayed seeds. Consider a projection `pi` that identifies
+Now place the full states `R_S` and `R_C` on a finite torus `Lambda_L` with
+`L>=6`, identical outside the displayed seeds, and require all five neighbors
+of `y=c+2f` other than `c+f` to be blank in both states. Consider a projection
+`pi` that identifies
 `R_S,R_C` while retaining the future append `y:c+2f -> rho_f` as one common,
 distinguishable coarse target cell `A_(y,f)`, with no other one-jump transition
 from either representative mapped into that cell. Such a projection must pass
@@ -232,8 +288,8 @@ for every common fibre and coarse cell `A`. At `y=c+2f`, the witness kernel
 must reproduce
 
 ```text
-q^(0)(S -> y:f) = a/6,     q^(0)(C -> y:f) = 2a/7,
-q^(1)(S -> y:f) = a/6,     q^(1)(C -> y:f) = a/3.          (14)
+q^(0)(S -> y:f) = alpha/6,   q^(0)(C -> y:f) = 2 alpha/7,
+q^(1)(S -> y:f) = alpha/6,   q^(1)(C -> y:f) = alpha/3.    (14)
 ```
 
 Failure means these are different process states under this witness and this
@@ -241,6 +297,12 @@ future-preserving quotient, not that every projection fails: the constant
 projection is trivially lumpable. Starting from `C`, importing a compound
 event, using a coarser projection that discards the future event, or finding a
 different successfully lumpable process remains live.
+
+The small periodic volumes are mandatory hostile controls, not members of
+the fixture: at `L=3` the two nominal outer seed sites coincide and the
+one-site arity order is only `O(t^2)`; at `L=4`
+`y=c-2f` is already recorded; and at `L=5` two seed sites neighbor `y`, giving
+`p_y(f)=4/9`, `q^(0)=4 alpha/9`, and `q^(1)=16 alpha/27`.
 
 ## Periodic source/current boundary
 
@@ -259,47 +321,63 @@ Delta rho + B_L j = 0                                  (16)
 ```
 
 on the torus. A three-Record compound event has total increment three and the
-same boundary. For one-site formation the correct form is either
+same boundary whenever its sites are distinct (`L>=4` for the displayed
+`C_(c,f)`, and `L>=6` in the lumpability fixture). For one-site formation the
+correct form is either
 
 ```text
 Delta rho + B_L j = sigma,      sum_y sigma_y = 1,         (17)
 ```
 
-or an enlarged conserved inventory with a reservoir debit `Delta d=-1`. For a
-three-Record compound event, `sum_y sigma_y=3` and the matching debit is `-3`.
-Open-boundary flux, neutral paired events, signed zero-total Record content,
-and worldline-transition decoders remain live.
+or an enlarged globally balanced inventory with a scalar reservoir debit
+`Delta d=-1`. For a three-Record compound event, `sum_y sigma_y=3` and the
+matching debit is `-3`. A scalar debit alone is not a local current; that
+requires an explicit reservoir incidence. Open-boundary flux, neutral paired
+events, signed zero-total Record content, and worldline-transition decoders
+remain live.
 
 This is a boundary theorem for raw cumulative Record occupancy, not a gravity
-no-go. Its value is to type the event source that any gravity join must carry.
+no-go. Its value is to type the event source for a downstream join that elects
+to identify raw Record occupancy with a conserved density.
 
 ## Required test battery
 
 The primary must:
 
 1. generate all six directions and 24 proper cubic rotations;
-2. exhaust all `117,649` local profiles for normalization, positivity,
-   variation, and covariance of (3);
+2. derive the six `rho_f` density-matrix spectra and exhaust all `117,649`
+   local profiles for normalization, positivity, variation, and covariance of
+   (3);
 3. check `sum_v q_x=lambda_x` and reject any no-event mark;
 4. certify finite `Q_L` positivity, conservation, pathwise append-only
    permanence, and absorption, without claiming colored attractiveness;
-5. derive the exact history density and finite jump bound;
-6. build the shared Harris proposal construction and verify (9) plus local
-   finite-volume coupling;
+5. derive the exact history density, its sum/integral normalization, invalid-
+   history zeroes, and finite jump bound;
+6. build the shared Harris proposal construction and verify (9), measurable
+   local construction, equivariance, formation, and local finite-volume
+   coupling, including an asymmetric point-mass initial-law control, without
+   claiming global nonexplosion or initial-law invariance;
 7. compare both hazards for `n=0,...,6` and derive the dimensionless statistic
-   (6), rejecting pure global rescalings;
-8. test all six seed directions and exact short-time orders (11)--(12);
-9. evaluate the decisive strong-lumpability row sums (14) and generic criterion
-   (13);
+   (6) plus the local Record-order race, rejecting pure global rescalings;
+8. test all six seed directions, the `L=3,4,5` wrap controls, and exact
+   short-time orders (11)--(12);
+9. evaluate the decisive `L>=6` strong-lumpability row sums (14), the generic
+   criterion (13), and a compensating-target transition falsifier;
 10. prove analytically for every `L>=3` that connectedness gives
     `rank B_L=L^3-1`; use `L=3,4,5` only as regressions, reject (16), and
     verify the one- and three-birth source/debit repairs;
 11. reject mutations that overwrite a Record, break mark normalization or
-    covariance, hide no-event mass, unbound a hazard, remove a lumpability
-    fibre, replace the inequivalent pair by a global rescaling, or suppress
-    the source; and
+    covariance, confuse an asymmetric initial law with an invariant one,
+    tie/fix mark keys, hide no-event mass, exceed the frozen
+    range/rate bound, set a blank hazard to zero, accept an invalid history,
+    remove or compensate a lumpability fibre, hide a direct triple jump,
+    replace the inequivalent pair by a global rescaling, suppress the source,
+    or replace the connected periodic incidence by an open/disconnected one;
+    and
 12. emit substantive N5 lines at per-element, per-site, per-mode, per-block,
-    and lattice-wide resolution.
+    and lattice-wide resolution. Because this block has no physical mode
+    decomposition, the per-mode line must say `checked and not executed` and
+    explain why rather than manufacture a mode claim.
 
 The independent checker must not import the primary. It must reconstruct the
 local-profile orbit census, finite generator, Harris bound, dimensionless
@@ -341,12 +419,20 @@ including how its rate units relate to any already approved scale input. An
 absolute clock calibration and source/debit interface are additional
 requirements only for a claimed time-calibrated or occurrence-to-gravity law.
 One compatible witness generator, one simulation convention, fixing only
-`a`, or a finite-volume fit cannot justify the update.
+`alpha`, or a finite-volume fit cannot justify the update.
 
 The pure-Record state closure, readable blank/Record status used by the
 process, instantaneous atomic-jump ansatz, Markov/exponential proposal law,
 and six-mark support restriction are all downstream model assumptions. They
 are not silently attributed to the four axioms.
+
+The six-mark sector is an invariant restricted model, and every compatibility
+or underselection statement in this block is sector-scoped. A common
+full-`M_2(C)` extension remains a live technical completion: one may count
+exact `rho_f` neighbors in `m_f`, count every Record in `n_x`, and append only
+the six supported `rho_f` values while leaving arbitrary pre-existing Record
+contents permanent. That extension is not executed here and is not a new-
+axiom wall.
 
 This block does not re-claim the earlier finite underselection results. The
 [permanent-Record scheduler note](../../../../docs/ADMISSIBILITY_PERMANENT_RECORD_FORMATION_SCHEDULER_LORENTZIAN_TIME_CONSTRAINT_SELECTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md)

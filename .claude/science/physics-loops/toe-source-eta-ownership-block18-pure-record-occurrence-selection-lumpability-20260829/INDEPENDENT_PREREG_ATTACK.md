@@ -24,7 +24,7 @@ applied before any Block18 runner, cache, or target mutation was executed.
    obtained only after adding an action, dilation, reconstruction theorem, or
    other physical condition cannot override base-premise underselection. A
    generic first-failed-gate terminal was added.
-4. The Harris statement now fixes `0<a<infinity`, initial configurations or
+4. The Harris statement now fixes `0<alpha<infinity`, initial configurations or
    laws, one shared proposal/key field, local agreement of approximants, and
    the final implication from bounded ancestor radius plus finitely many
    Poisson points in the resulting finite spacetime box.
@@ -50,9 +50,10 @@ The reviewer confirmed before execution:
 
 - exact normalization and covariance of the `2^m` six-mark kernel;
 - the finite conservative pure-birth generator and ordered-history density;
-- the safe Harris domination constant `14aT`;
+- the safe Harris domination constant `14 alpha T`;
 - `O(t^3)` one-site versus `O(t)` compound three-Record formation;
-- the exact four future rates `a/6,2a/7,a/6,a/3`;
+- the exact four future rates
+  `alpha/6,2 alpha/7,alpha/6,alpha/3` on the corrected fixture;
 - the periodic incidence obstruction for positive occupancy births; and
 - the axiom reading that Admissibility conditions the mark on formation but
   does not supply the formation site or rate.
@@ -76,3 +77,42 @@ BLOCK18-PREREG-EXECUTION-READY.
 
 The N1--N8 packet and five N5 cache lines remain post-execution deliverables;
 they are correctly gated before any negative terminal.
+
+## Post-freeze hostile theorem review
+
+After preregistration commit `54f1d5c5e0`, a second hostile reviewer returned
+
+```text
+REVISE-BEFORE-EXECUTION
+```
+
+before either target worker created a file or ran a target. It found that the
+nominal lumpability geometry wraps on `L=3,4,5` and required seven additional
+clarifications: local rather than global nonexplosion; kernel covariance
+versus initial-law invariance; restricted-sector scope; explicit eventual
+Record formation; an operational local Record-order discriminator; fully
+normalized invalid-history handling; and exact compound/source/lumpability
+scope.
+
+All corrections are recorded in
+[PREFLIGHT_SUPPORT_CORRECTION.md](PREFLIGHT_SUPPORT_CORRECTION.md) and applied
+to the target and preflight contracts. The corrected execution gate is:
+
+- use `L>=6` and five explicitly blank exterior neighbors for (14), while
+  reproducing the `L=3,4,5` failures as hostile controls;
+- construct a measurable locally finite Harris sample map and prove
+  `g_*Law_mu=Law_(g_*mu)` without claiming a global jump chain or invariance
+  for arbitrary `mu`;
+- prove formation from the positive baseline hazard;
+- use the local first-Record order statistic for the clock-free discriminator;
+- keep the model sector-scoped and the full-`M_2(C)` extension live; and
+- narrow the arity, quotient, reservoir, and raw-occupancy claims exactly as
+  stated in the support correction.
+
+A fresh hostile reread found every correction present and no mathematical
+blocker. Its exact content verdict, contingent only on committing and pushing
+this six-file correction before execution, is
+
+```text
+BLOCK18-PREREG-EXECUTION-READY
+```

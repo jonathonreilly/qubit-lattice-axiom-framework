@@ -1,17 +1,18 @@
 ```yaml
-trace_class: direct_blocker_closure
-target_claim_id: admissibility_exterior_character_jr_r3_q2_adjacent_product_cubic_response_bounded_theorem_note_2026-08-29
-target_blocker_text: "construct the complete six-history Gram carrier and test its exact rank and positivity boundary"
+trace_class: negative_route_pruning
+target_claim_id: admissibility_exterior_character_jr_r3_q2_six_history_gram_bounded_theorem_note_2026-08-29
+target_blocker_text: "test whether the selected 36-path carrier is preserved by the next exact action/crossing block"
 source_of_blocker_text: handoff
-reachability_to_target: partially_closes
+reachability_to_target: prunes
 artifact_role: theorem
-next_trace_action: "Test whether the selected 36-path carrier is preserved by the next exact action/crossing block, or construct a wider diagonal/exclusive coarse-word completion before making any global memory claim."
+next_trace_action: "Construct the closure tower or a finite recurrence for successive crossing/action layers; do not promote the checked sample rank 72 to an exact generic rank without a universal upper bound."
 ```
 
-Block245 directly addresses Block244's named next blocker. It completes all 36
-temporal half histories in the selected six proper sectors, proves their exact
-six-block Gram structure, and establishes generic raw rank 29, normalized-sum
-rank 12, full-identity rank 12, and `t=0` rank zero. The result remains
-conditional on the supplied multipliers, action, physical `J_3/Q`, parent label
-diagonality, and the open dependency stack. It does not prove invariant closure,
-a full response kernel, arbitrary `r,q`, or a globally minimal memory.
+Block246 directly tests the selected carrier's named invariance blocker. One
+additional supplied temporal crossing produces sample-wise exact union rank 72
+against old rank 29, so the carrier is not invariant. A separate defining-vector
+action residual supplies new even-parity spin-one plus spin-two Peter--Weyl
+content and raises the checked carrier rank by one after physical `Q` and the
+crossing. The result prunes the finite rank-29 closure route. It remains
+conditional on the supplied crossing/action/physical-`J_3/Q` stack and does not
+prove a closed tower, an exact generic union rank, or global minimal memory.

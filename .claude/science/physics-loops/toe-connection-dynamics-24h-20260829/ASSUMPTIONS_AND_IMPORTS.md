@@ -59,3 +59,21 @@
 - The cubic off-diagonal Taylor coefficient is not itself promoted to a PSD
   matrix. Raw rank 29, normalized-sum rank 12, and coarse rank two are selected
   carrier ranks, not global minimal memory or invariant-span theorems.
+- Block246 imports the selected Block245 36-history carrier, its exact rank-29
+  structural upper bound, the supplied central crossing, physical `J_3/Q`,
+  parent representation-label diagonality, `[C,Q]=0`, and the defining-vector
+  exterior-action character. None is reclassified as axiom-native dynamics.
+- Exact Block246 temporal mathematics: at the disclosed rational sample the old,
+  twice-crossed, and union ranks are `29,54,72` over three unrelated prime
+  fields and the rational union rank is at least 72. This proves non-invariance
+  of the rank-29 carrier but supplies no universal rank-72 upper bound and hence
+  no exact generic union-rank theorem.
+- Exact Block246 action mathematics: physical conditional-Haar subtraction sends
+  `chi_V(p0)^2 chi_V(C1)` to `(chi_V(p0)^2-1)chi_V(C1)`, whose `O(3)` content is
+  even-parity spin one plus spin two and whose norm is exactly two. It is
+  independent of the selected carrier before and after the supplied crossing at
+  the checked samples. This is new Peter--Weyl content; the temporal rank growth
+  alone is only multiplicity leakage.
+- Block246 does not prove closure of the action/crossing tower, a globally
+  minimal history memory, arbitrary `r` or `q`, physical time evolution,
+  gravity, or TOE closure. No axiom or approved primitive is edited.

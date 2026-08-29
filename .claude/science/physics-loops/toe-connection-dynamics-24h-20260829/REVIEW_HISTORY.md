@@ -123,3 +123,15 @@
   the inherited dependency-policy epoch-manifest mismatch on the parent stack.
   Generated audit churn was stripped; the citation manifest alone records the
   intended one-node/four-edge topology delta. No audit verdict was applied.
+- Block246 preflight: applying a second supplied central crossing gives exact
+  checked ranks `29,54,72` for the old, twice-crossed, and union spans over
+  `F_1009`, `F_1013`, and `F_1019`, reproduced at an unrelated signed sample and
+  at held-out `F_10007`; identity gives `12,12,12`. A separate physical-`Q`
+  defining-vector residual has exact norm two, even-parity spin-one plus spin-two
+  content, and adds one independent direction before and after the supplied
+  crossing. Fresh-context review reproduced the bounded algebra but initially
+  failed audit-reachability and no-go packaging. The repaired primary statically
+  executes the independent representation/Haar reduction, passes `30/30`,
+  rejects all `7/7` hostile mutations, and the restricted-input reduction
+  passes `12/12`. Same-reviewer confirmation and the formal repository gates
+  are active; no PR has been opened and no audit verdict has been applied.

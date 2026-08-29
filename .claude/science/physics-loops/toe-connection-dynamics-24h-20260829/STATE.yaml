@@ -2,10 +2,10 @@ loop: toe-connection-dynamics-24h-20260829
 mode: campaign
 deadline_utc: 2026-08-30T01:29:00Z
 target_status: best-honest-status
-current_block: 245
-active_branch: physics-loop/toe-connection-dynamics-block245-r3q2-six-history-gram-20260829
-active_route: r3_q2_six_sector_physical_history_gram
-hard_residual: test invariant closure or exact leakage of the selected 36-path carrier under the next action/crossing block without inferring global minimal memory
+current_block: 246
+active_branch: physics-loop/toe-connection-dynamics-block246-rank29-action-leakage-20260829
+active_route: r3_q2_rank29_second_crossing_leakage
+hard_residual: independently validate the sample-wise rank-72 non-closure witness under a second supplied central crossing without claiming an unproved generic upper bound
 actual_current_surface_status: conditional-support
 conditional_surface_status: exact six-sector selected-history Gram on the supplied r=3, q=2 action, temporal, and physical-J3/Q stack
 trace_class: direct_blocker_closure
@@ -14,7 +14,7 @@ proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 axiom_or_primitive_edits: 0
-open_prs: [7784, 7786, 7788, 7789, 7790, 7791, 7792, 7793, 7794, 7795, 7796, 7797, 7798]
+open_prs: [7784, 7786, 7788, 7789, 7790, 7791, 7792, 7793, 7794, 7795, 7796, 7797, 7798, 7799]
 block242_checks:
   finite_field_companion: 24/24
   finite_field_mutations: 7/7
@@ -49,6 +49,7 @@ block241_pr: 7795
 block242_pr: 7796
 block243_pr: 7797
 block244_pr: 7798
+block245_pr: 7799
 block244_preflight:
   q4_physical_response_psd: inherited_exactly_from_R_equals_L_dagger_L
   q4_canonical_two_word_feature_rank: rank_2_for_0_lt_t_lt_1_rank_1_at_identity_rank_0_at_Haar_endpoint
@@ -95,5 +96,34 @@ block245_candidate:
   global_minimal_memory: explicitly_open
   independent_refuter_disposition: pass_with_bounded_claims
   review_state: review_loop_pass_with_bounded_claims_and_inherited_epoch_debt_disclosed
-next_exact_action: apply one further exact action/crossing step to the rank-29 image and test leakage into new Peter-Weyl sectors with physical Q
+block246_preflight:
+  tested_map: one_additional_copy_of_the_supplied_central_crossing_on_every_Block245_raw_history
+  physical_q_boundary: conditional_on_parent_C_Q_commutation_the_second_crossing_preserves_ker_Q
+  disclosed_sample_old_rank: 29
+  disclosed_sample_twice_crossed_rank: 54
+  disclosed_sample_union_rank: 72
+  disclosed_sample_new_multiplicity_directions: 43
+  exact_prime_fields: [1009, 1013, 1019]
+  unrelated_signed_sample_union_rank_over_F_1009: 72
+  full_identity_old_twice_and_union_rank: 12
+  repeated_half_squared_multiplier_residuals_over_F_1009: [0, 0, 0, 0, 0, 0]
+  first_physical_action_residual: (chi_V_p0_squared_minus_1)_times_chi_V_C1
+  action_residual_peter_weyl_content: spin1_even_plus_spin2_even
+  action_residual_old_identity_crossings: 0_of_12_nonzero_over_each_prime
+  action_residual_exact_norm: 2_over_each_prime
+  action_residual_identity_rank_growth: 12_to_13_over_each_prime
+  crossed_action_residual_old_crossings: 0_of_36_nonzero_over_each_prime_at_disclosed_and_signed_samples
+  crossed_action_residual_generic_rank_growth: 29_to_30_over_each_prime_at_disclosed_and_signed_samples
+  crossed_action_residual_identity_rank_growth: 12_to_13_over_each_prime
+  crossed_action_residual_t_zero_rank_growth: 0_to_0_over_each_prime_with_live_other_multipliers
+  heldout_large_field: F_10007_reproduces_29_54_72_at_unrelated_sample
+  crossing_order_reversal: zero_column_residual_in_all_six_sectors
+  independent_action_representation_ring_checks: 12_of_12_exact_tensor_product_and_conditional_Haar_reductions
+  independent_action_residual: O3_spin1_even_plus_spin2_even_norm_2_with_six_conditional_Haar_witnesses
+  primary_certificate: 30_of_30_checks_including_disclosed_signed_heldout_identity_t_zero_and_static_independent_reduction_controls
+  hostile_mutations: 7_of_7_rejected
+  no_go_discipline: N1_through_N8_and_five_resolution_runner_certificate_added_for_the_finite_conditional_noninvariance_statement
+  generic_rank_boundary: samplewise_rational_rank_at_least_72_only_no_universal_rank72_upper_bound
+  interpretation: exact_finite_nonclosure_witness_for_at_least_43_samplewise_temporal_multiplicity_directions_and_one_new_even_spin_physical_direction_pending_fresh_context_review
+next_exact_action: obtain same-reviewer confirmation on repaired packet, then complete pipeline and review-loop gates before any stacked PR
 stop_condition: campaign deadline or global queue exhaustion after required deep-work gates

@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_jr_r3_q2_second_crossing_leakage_2026_08_29.py
+runner_sha256: a2f27cf682dab2d32de70dee3f8fe5292744c3ef5beeffe8095ce4d34776fbe2
+input_fingerprint_sha256: 8e07243a0cf90cc52ed9bd24ba3450610520c5e0bc345fc024f598e5f2d1bc56
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 78.20
+status: ok
+----- stdout -----
+temporal disclosed 1009 {'sector_rows': [((0,), 5, 11, 15), ((1,), 5, 10, 14), ((2,), 6, 13, 17), ((0, 1), 4, 6, 8), ((0, 2), 4, 6, 8), ((1, 2), 5, 8, 10)], 'old_rank': 29, 'twice_crossed_rank': 54, 'union_rank': 72, 'leakage_rank': 43, 'repeated_half_residuals': [0, 0, 0, 0, 0, 0], 'reversal_residuals': [0, 0, 0, 0, 0, 0]}
+[PASS] disclosed F_1009: exact temporal rank triple
+[PASS] disclosed F_1009: exact sector rank table
+[PASS] same-half repetition equals squared multipliers
+[PASS] two central selections reverse with zero Gram residual
+temporal disclosed 1013 {'sector_rows': [((0,), 5, 11, 15), ((1,), 5, 10, 14), ((2,), 6, 13, 17), ((0, 1), 4, 6, 8), ((0, 2), 4, 6, 8), ((1, 2), 5, 8, 10)], 'old_rank': 29, 'twice_crossed_rank': 54, 'union_rank': 72, 'leakage_rank': 43, 'repeated_half_residuals': [], 'reversal_residuals': []}
+[PASS] disclosed F_1013: exact temporal rank triple
+[PASS] disclosed F_1013: exact sector rank table
+temporal disclosed 1019 {'sector_rows': [((0,), 5, 11, 15), ((1,), 5, 10, 14), ((2,), 6, 13, 17), ((0, 1), 4, 6, 8), ((0, 2), 4, 6, 8), ((1, 2), 5, 8, 10)], 'old_rank': 29, 'twice_crossed_rank': 54, 'union_rank': 72, 'leakage_rank': 43, 'repeated_half_residuals': [], 'reversal_residuals': []}
+[PASS] disclosed F_1019: exact temporal rank triple
+[PASS] disclosed F_1019: exact sector rank table
+temporal signed 1009 {'sector_rows': [((0,), 5, 11, 15), ((1,), 5, 10, 14), ((2,), 6, 13, 17), ((0, 1), 4, 6, 8), ((0, 2), 4, 6, 8), ((1, 2), 5, 8, 10)], 'old_rank': 29, 'twice_crossed_rank': 54, 'union_rank': 72, 'leakage_rank': 43, 'repeated_half_residuals': [], 'reversal_residuals': []}
+[PASS] signed F_1009: exact temporal rank triple
+temporal signed 1013 {'sector_rows': [((0,), 5, 11, 15), ((1,), 5, 10, 14), ((2,), 6, 13, 17), ((0, 1), 4, 6, 8), ((0, 2), 4, 6, 8), ((1, 2), 5, 8, 10)], 'old_rank': 29, 'twice_crossed_rank': 54, 'union_rank': 72, 'leakage_rank': 43, 'repeated_half_residuals': [], 'reversal_residuals': []}
+[PASS] signed F_1013: exact temporal rank triple
+temporal signed 1019 {'sector_rows': [((0,), 5, 11, 15), ((1,), 5, 10, 14), ((2,), 6, 13, 17), ((0, 1), 4, 6, 8), ((0, 2), 4, 6, 8), ((1, 2), 5, 8, 10)], 'old_rank': 29, 'twice_crossed_rank': 54, 'union_rank': 72, 'leakage_rank': 43, 'repeated_half_residuals': [], 'reversal_residuals': []}
+[PASS] signed F_1019: exact temporal rank triple
+temporal heldout 10007 {'sector_rows': [((0,), 5, 11, 15), ((1,), 5, 10, 14), ((2,), 6, 13, 17), ((0, 1), 4, 6, 8), ((0, 2), 4, 6, 8), ((1, 2), 5, 8, 10)], 'old_rank': 29, 'twice_crossed_rank': 54, 'union_rank': 72, 'leakage_rank': 43, 'repeated_half_residuals': [], 'reversal_residuals': []}
+[PASS] heldout F_10007: exact temporal rank triple
+temporal identity 1009 {'sector_rows': [((0,), 2, 2, 2), ((1,), 2, 2, 2), ((2,), 2, 2, 2), ((0, 1), 2, 2, 2), ((0, 2), 2, 2, 2), ((1, 2), 2, 2, 2)], 'old_rank': 12, 'twice_crossed_rank': 12, 'union_rank': 12, 'leakage_rank': 0, 'repeated_half_residuals': [], 'reversal_residuals': []}
+[PASS] identity F_1009: exact temporal rank triple
+physical_action_residual 1009 {'old_rank': 12, 'augmented_rank': 13, 'residual_norm': 2, 'nonzero_old_crossings': 0}
+crossed_action_residual 1009 {'old_rank': 29, 'augmented_rank': 30, 'residual_norm': 458, 'nonzero_old_crossings': 0} {'old_rank': 29, 'augmented_rank': 30, 'residual_norm': 458, 'nonzero_old_crossings': 0} {'old_rank': 12, 'augmented_rank': 13, 'residual_norm': 2, 'nonzero_old_crossings': 0} {'old_rank': 0, 'augmented_rank': 0, 'residual_norm': 0, 'nonzero_old_crossings': 0}
+[PASS] F_1009: physical Q removes scalar action component
+[PASS] F_1009: crossed action residual is new at disclosed sample
+[PASS] F_1009: crossed action residual is new at signed sample
+[PASS] F_1009: identity action endpoint has norm two and rank 13
+[PASS] F_1009: t=0 hostile endpoint vanishes
+physical_action_residual 1013 {'old_rank': 12, 'augmented_rank': 13, 'residual_norm': 2, 'nonzero_old_crossings': 0}
+crossed_action_residual 1013 {'old_rank': 29, 'augmented_rank': 30, 'residual_norm': 416, 'nonzero_old_crossings': 0} {'old_rank': 29, 'augmented_rank': 30, 'residual_norm': 416, 'nonzero_old_crossings': 0} {'old_rank': 12, 'augmented_rank': 13, 'residual_norm': 2, 'nonzero_old_crossings': 0} {'old_rank': 0, 'augmented_rank': 0, 'residual_norm': 0, 'nonzero_old_crossings': 0}
+[PASS] F_1013: physical Q removes scalar action component
+[PASS] F_1013: crossed action residual is new at disclosed sample
+[PASS] F_1013: crossed action residual is new at signed sample
+[PASS] F_1013: identity action endpoint has norm two and rank 13
+[PASS] F_1013: t=0 hostile endpoint vanishes
+physical_action_residual 1019 {'old_rank': 12, 'augmented_rank': 13, 'residual_norm': 2, 'nonzero_old_crossings': 0}
+crossed_action_residual 1019 {'old_rank': 29, 'augmented_rank': 30, 'residual_norm': 197, 'nonzero_old_crossings': 0} {'old_rank': 29, 'augmented_rank': 30, 'residual_norm': 197, 'nonzero_old_crossings': 0} {'old_rank': 12, 'augmented_rank': 13, 'residual_norm': 2, 'nonzero_old_crossings': 0} {'old_rank': 0, 'augmented_rank': 0, 'residual_norm': 0, 'nonzero_old_crossings': 0}
+[PASS] F_1019: physical Q removes scalar action component
+[PASS] F_1019: crossed action residual is new at disclosed sample
+[PASS] F_1019: crossed action residual is new at signed sample
+[PASS] F_1019: identity action endpoint has norm two and rank 13
+[PASS] F_1019: t=0 hostile endpoint vanishes
+[PASS] bounded theorem scope
+[PASS] independent representation-ring and six conditional-Haar reductions
+per_element: checked and executed — every old and twice-crossed finite original-link history enters the exact Gram rank witness
+per_site: checked and not executed — this finite loop-character carrier constructs no physical lattice-site evolution law
+per_mode: checked and not executed — no continuum or lattice momentum-mode non-invariance statement is made
+per_block: checked and executed — all six proper action-sector Gram blocks are evaluated independently and summed
+lattice_wide: checked and not executed — the result does not claim a lattice-wide dynamics, transfer closure, or memory theorem
+TOTAL PASS=30 FAIL=0
+
+----- stderr -----
+

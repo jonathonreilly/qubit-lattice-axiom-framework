@@ -169,3 +169,92 @@ Generated audit churn was stripped, the required one-node/four-edge citation
 manifest delta remains, and no audit verdict was applied. The next exact route
 is an invariant-closure/leakage test under one further action/crossing block;
 no Block245 PR has been opened.
+
+## Block246 second-crossing preflight
+
+Block245 is now independently reviewed and open as stacked review PR #7799;
+no merge was performed. Block246 starts from its exact head and tests the
+narrowest closure question first: apply one additional copy of the supplied
+central crossing to every selected raw history, without yet inserting another
+exterior-action character. The parent commutator input `[C,Q]=0` keeps these
+images in `ker Q`; this does not compute `Q` on a new action sector.
+
+At `(d,t,u,v)=(1/5,3/10,2/5,1/2)`, the old carrier has rank 29, the
+twice-crossed images have rank 54, and their union has rank 72 in each of
+`F_1009`, `F_1013`, and `F_1019`. Thus the restricted second crossing exposes
+exactly 43 new directions over each checked field and at least 43 rational
+directions at the disclosed sample. No universal rank-72 upper bound has yet
+been proved, so the exact generic union rank may be larger. An unrelated signed sample over `F_1009`
+repeats the same sector ranks; full identity has old, new, and union rank 12,
+so it correctly shows no leakage. As an operator-order control, histories with
+the same half selected twice agree entrywise with the Block245 Gram evaluated
+at squared spin multipliers, with zero residual in all six sectors.
+
+This is a strong preflight, not yet a theorem. It disproves closure under this
+specific repeated supplied crossing if independently confirmed, but does not
+yet show new Peter--Weyl sectors, include a new exterior-action insertion,
+establish global memory, or derive physical dynamics. The next gate is an
+independent reconstruction of the composed operator and rank certificate,
+followed by the first extra action insertion with physical conditional-Haar Q.
+
+The first action-insertion endpoint test is also now exact. Start from the
+identity-crossing `Y`, `X={0}` history `chi_V(p0) chi_V(C1)` and multiply by one
+further defining-vector action character on the already active `p0`. At fixed
+coarse `delta0`, `p0` is Haar, so physical conditional expectation gives
+
+```text
+(I-Q)[chi_V(p0)^2 chi_V(C1)]
+  = (chi_V(p0)^2-1) chi_V(C1).
+```
+
+For `O(3)`, `(1,-) tensor (1,-)=(0,+)+(1,+)+(2,+)`, so the residual has the
+new even-parity spin-one and spin-two content. A separate original-link Brauer
+Gram calculation finds exact residual norm `2`, zero overlap with every one of
+the twelve distinct Block245 identity-limit carrier directions, and rank growth
+`12 -> 13` over each of `F_1009`, `F_1013`, and `F_1019`. This is a genuine new
+physical Peter--Weyl direction at the identity endpoint, unlike the generic
+second-crossing result, which so far establishes multiplicity leakage only.
+The next load-bearing test is to propagate this residual through the supplied
+central crossing using the parent `[C,Q]=0` and label-diagonality inputs.
+
+That propagation test now passes exactly. The crossed residual has zero overlap
+with all 36 Block245 raw histories at both the disclosed and an unrelated signed
+sample, and augments their generic Gram rank `29 -> 30` over each of `F_1009`,
+`F_1013`, and `F_1019`. At full identity it gives the expected `12 -> 13` rank
+growth and norm `2`; at a hostile `t=0` point with other multipliers live, both
+the old carrier and the residual are killed and the rank remains zero. Thus the
+new even-spin direction is not removed by the supplied crossing at generic
+parameters, while the one-strand Haar endpoint behaves correctly.
+
+Fresh-context review reproduced the bounded algebra but initially failed the
+governance packet: the sibling checker was audit-invisible, its six Haar tests
+were prose-only, and the machine/no-go/citation surfaces were incomplete. Those
+specific surfaces are being repaired before the same reviewer is asked to
+confirm the final tree.
+
+The first independent reconstruction is now complete for the action residual.
+A separate representation-ring checker imports none of the Brauer runner. It
+reconstructs `(1,-) tensor (1,-)=(0,+)+(1,+)+(2,+)`, removes exactly the
+trivial `(0,+)` component under physical conditional expectation, obtains
+residual norm `1^2+1^2=2`, and gives an explicit fixed-`delta0` Haar-integration
+witness against each of the six proper products. The repaired implementation
+computes exact `O(3)` tensor products and all six trivial-irrep multiplicities;
+it passes `12/12` checks and is statically executed by the primary runner. The
+temporal leakage also survives an unrelated held-out `F_10007` sample with the
+same `(29,54,72)` ranks. Reversing the two central-crossing selections gives
+zero Gram-column residual in all six sectors, so the composed histories commute
+on this carrier and the leakage is not an ordering convention artifact.
+
+The Block246 primary certificate is now fail-closed rather than print-only. It
+passes `30/30` checks: the disclosed rank table over three prime fields, the
+same table at an unrelated signed sample over all three fields, a held-out
+`F_10007` sample, the identity collapse, same-half/squared-multiplier and
+operator-order controls, the physical-`Q` action residual before and after
+crossing, and the hostile `t=0` endpoint. All `7/7` targeted mutations are
+rejected. The note now states the exact finite target and acyclic obligation
+graph, includes an N1--N8 negative-claim stress test that must land with the
+source packet, and carries the required five-resolution execution certificate
+in the primary runner. The
+rank-72 observation is explicitly sample-wise: it proves rational rank at
+least 72 and nonclosure of rank 29, not exact generic rank 72. Same-reviewer
+confirmation and repository gates are active; no Block246 PR exists yet.

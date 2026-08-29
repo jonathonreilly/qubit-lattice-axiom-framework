@@ -1,31 +1,28 @@
 ```yaml
 actual_current_surface_status: conditional-support
-trace_class: direct_blocker_closure
-reachability_to_target: partially_closes
-conditional_surface_status: "exact selected six-sector 36-path r=3, q=2 physical-history Gram on the supplied open action, multiplier, and J3/Q stack"
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+conditional_surface_status: "exact finite non-closure witnesses for the selected r=3, q=2 history carrier on the supplied crossing, exterior-action, and physical-J3/Q stack"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The result depends on supplied formal multipliers, action data, parent label diagonality and Q commutation, and an open stacked dependency surface; only the selected six proper sectors are complete and no invariant-span or global-memory theorem is proved."
+proposal_allowed_reason: "The result falsifies invariance of one selected finite carrier but depends on supplied crossing/action data, parent label diagonality, Q commutation, and an open stacked dependency surface; it does not close the action/crossing tower or determine global memory."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: pass_with_bounded_claims_and_inherited_dependency_policy_epoch_debt_disclosed
+review_loop_disposition: pending_fresh_context_review_and_repository_gates
 ```
 
-Block245 completes all 36 temporal halves in the six selected proper sectors.
-Inversion-parity orthogonality gives six exact `6 by 6` raw Gram blocks; seven
-exact `t^4` relations and nonzero exact minors prove generic raw rank 29. The
-twelve normalized derivative sums have generic rank 12. Both literal Grams are
-Hermitian/PSD before Taylor extraction, have rank 12 at full identity, and rank
-zero at `t=0`. Odd-channel data affect diagonals while cancelling from the
-Block244 cross sum. The claim does not derive the supplied multipliers/action/Q
-inputs, invariant-span closure, a full response kernel, arbitrary width, global
-minimal memory, physical time, gravity, or TOE completion. Primary evidence
-passes `92/92`, all `6/6` hostile mutations are rejected, and independent
-restricted-input review returns PASS WITH BOUNDED CLAIMS. Focused review-loop
-also passes after repairing one stale campaign-status line. Vocabulary lint is
-clean and strict audit lint has no errors. The full pipeline reaches the
-inherited dependency-policy epoch-manifest mismatch after graph construction,
-ledger seeding, and runner classification. Generated audit churn was stripped;
-the citation manifest records exactly one new node and four intended edges. No
+Block246 applies one more supplied central crossing to the selected 36-history
+carrier. At the disclosed rational sample, exact ranks are `29,54,72` for the
+old, twice-crossed, and union spans over each of three prime fields, with the
+same ranks at an unrelated signed sample and a held-out field. This proves the
+rank-29 carrier is not invariant, but the absence of a universal rank-72 upper
+bound forbids identifying 72 as an exact generic rank. Separately, one further
+defining-vector character followed by physical conditional-Haar subtraction
+has exact residual `(chi_V(p0)^2-1)chi_V(C1)`, norm two, and even-parity spin-one
+plus spin-two content. It adds a new independent direction before and after the
+supplied crossing at the checked samples. Primary evidence passes `30/30`, all
+`7/7` hostile mutations are rejected, and the independent restricted-input
+action reconstruction passes `12/12`. Same-reviewer confirmation, strict audit lint,
+changed-evidence readiness, and the repository pipeline remain pending. No
 audit verdict has been applied.

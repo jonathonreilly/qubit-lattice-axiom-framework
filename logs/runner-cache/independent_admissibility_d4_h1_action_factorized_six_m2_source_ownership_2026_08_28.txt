@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_h1_action_factorized_six_m2_source_ownership_2026_08_28.py
+runner_sha256: b77b7e5d238cd4327a5e0b709e84cb37172c82d1274b20d01b2660d7ad474523
+input_fingerprint_sha256: 5b64db1d4cb6773e53ab6717c50044a056a64b3eaabbc7e64c981d681e47ed22
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 5.75
+status: ok
+----- stdout -----
+[independent_authority] PASS: main, parent, preregistration, goal, and preflight are pinned
+[independent_input_typing] PASS: alternative displacement conditions are not simultaneous eta
+[independent_path_factorization] PASS: fresh monomial paths reconstruct 110 forward/reverse terms and radius-three effective support from unit factors
+[independent_t2_injection] PASS: the Laurent source map has exact rank three on T2
+[independent_hom_solve] PASS: fresh 54-variable covariance constraints have rank 52 and two decoder classes
+[independent_phase_fit_falsifier] PASS: eight distinct fitted maps agree on H1 and all 28 pairs differ on a one-site basis witness
+[independent_scope] PASS: no internal action, physical compiler, H2, eta, axiom, TOE, or retained closure is imported
+INDEPENDENT_RESULT: support=(110, 3, 3); T2 rank=3; Hom=2; phase fits/maps=8/8.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

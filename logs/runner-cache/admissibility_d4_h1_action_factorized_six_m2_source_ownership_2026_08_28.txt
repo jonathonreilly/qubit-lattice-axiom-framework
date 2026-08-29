@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_action_factorized_six_m2_source_ownership_2026_08_28.py
+runner_sha256: d8a939544cc1f521a5d61cdcd700d1a7033445bbbb88fe4a8a98f722c664f81d
+input_fingerprint_sha256: 5b64db1d4cb6773e53ab6717c50044a056a64b3eaabbc7e64c981d681e47ed22
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 5.61
+status: ok
+----- stdout -----
+[authority_and_preregistration] PASS: origin/main, parent, preregistration, goal, preflight, axiom, and registry blobs are pinned
+[carrier_and_input_typing] PASS: six alternative phase conditions are not renamed as six simultaneous M2 inputs
+[native_factorization] PASS: H1 source has exact depth-three native factors with staged support 8/8/8/60/60/110
+[forward_actual_reverse_reconstruction] PASS: literal forward and actual reverse each reconstruct all 110 Laurent terms
+[t2_source_injection_boundary] PASS: the action injects all three T2 coordinates but supplies no physical eta-to-M2 compiler
+[conditional_decoder_family] PASS: the exact proper-cubic decoder space remains two-dimensional and no internal coframe or member is selected
+[overgenerous_phase_ambiguity] PASS: even the phase-as-six-Bloch comparator has eight distinct H1 fits separated by held-out one-site inputs
+[scope_and_accounting] PASS: H2/C32, formation, history, axiom, retention, obligation, and TOE gates remain closed
+FACTOR: primitive depth=3; staged supports=(8, 8, 8, 60, 60, 110); forward/reverse=110/110; effective radius=3.
+DECODER: conditional Hom dimension=2; phase comparator fits=8; distinct laws=8; selected=false.
+DECISION: algebraic locality closes; actual eta supplier, internal cubic action, decoder selection, and physical M2 compiler remain open; obligation retirement=0; TOE movement=0.
+per_element: exact native Laurent factors, T2 source injection, and odd/even decoder matrices are checked separately.
+per_site: checked and not executed — the parent supplies no six-simultaneous-M2 condition tuple or physical local instrument.
+per_mode: the fixed H1 p,q,TT fixture is reconstructed in literal forward and actual-reverse conventions; H2 remains sealed.
+per_block: the complete 110-term source is reproduced from depth-three native factors, but no physical M2 compiler is inferred.
+lattice_wide: checked and not executed — 24 covariance frames do not instantiate autonomous formation, continuation, or a lattice history.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

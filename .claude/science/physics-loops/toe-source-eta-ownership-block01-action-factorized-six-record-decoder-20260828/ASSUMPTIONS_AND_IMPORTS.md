@@ -22,3 +22,13 @@
 
 The approved primitives supply no source selector, probability formula,
 coframe, decoder, dynamics, or readout context for this target.
+
+## Result-specific accounting
+
+No new input was needed to prove native factor locality, T2 source rank, Hom
+dimension, or the generous comparator ambiguity. The conditional Bloch action
+is used only inside the explicitly conditional Hom/falsifier surface. It is
+not promoted into a physical M2 action.
+
+The missing source-ownership compiler remains candidate-law content. It is
+not automatically a new axiom and is not supplied by any approved primitive.

@@ -14,3 +14,16 @@
   inferred from a typed boundary.
 - N5 output lines begin exactly per_element:, per_site:, per_mode:, per_block:,
   and lattice_wide:.
+
+## Result gate
+
+- Native stages have exact term counts 8/8/8/60/60/110 and maximum shifted
+  depth three.
+- Literal forward and actual reverse each have 110 terms and agree exactly
+  with independent reconstruction.
+- The T2 source map has rank three; the conditional decoder Hom has dimension
+  two.
+- The generous phase comparator has eight distinct fits and 28/28 held-out
+  pair witnesses.
+- No actual eta input, physical M2 compiler, broad no-go, H2, C32, axiom,
+  formation/history, retained, obligation, or TOE closure is claimed.

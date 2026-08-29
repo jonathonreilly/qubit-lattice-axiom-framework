@@ -1,0 +1,114 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_jr_r3_q2_six_history_gram_2026_08_29.py
+runner_sha256: da64c50818cde4beea239afcfbb7e8bd63df08ac3628b12917b23a7994e0fa2b
+input_fingerprint_sha256: e74c6a67ae0589794971dc425fb6ad46039bacd28fb9e26c819fb2c020f53143
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 9.57
+status: ok
+----- stdout -----
+[PASS] identity F_1009: raw 36-path exact Hermiticity
+[PASS] identity F_1009: six raw sectors are orthogonal
+[PASS] identity F_1009: 12-sum exact Hermiticity
+[PASS] identity F_1009: seven structural t^4 relations
+[PASS] identity F_1009: complete raw block template
+[PASS] identity F_1009: six aggregate [[1,1/9],[1/9,1]] blocks
+[PASS] identity F_1009: off-diagonal sum reproduces Block244
+[PASS] identity F_1013: raw 36-path exact Hermiticity
+[PASS] identity F_1013: six raw sectors are orthogonal
+[PASS] identity F_1013: 12-sum exact Hermiticity
+[PASS] identity F_1013: seven structural t^4 relations
+[PASS] identity F_1013: complete raw block template
+[PASS] identity F_1013: six aggregate [[1,1/9],[1/9,1]] blocks
+[PASS] identity F_1013: off-diagonal sum reproduces Block244
+[PASS] identity F_1019: raw 36-path exact Hermiticity
+[PASS] identity F_1019: six raw sectors are orthogonal
+[PASS] identity F_1019: 12-sum exact Hermiticity
+[PASS] identity F_1019: seven structural t^4 relations
+[PASS] identity F_1019: complete raw block template
+[PASS] identity F_1019: six aggregate [[1,1/9],[1/9,1]] blocks
+[PASS] identity F_1019: off-diagonal sum reproduces Block244
+[PASS] disclosed F_1009: raw 36-path exact Hermiticity
+[PASS] disclosed F_1009: six raw sectors are orthogonal
+[PASS] disclosed F_1009: 12-sum exact Hermiticity
+[PASS] disclosed F_1009: seven structural t^4 relations
+[PASS] disclosed F_1009: all six aggregate blocks are nonsingular
+[PASS] disclosed F_1009: raw sector ranks are 5,5,6,4,4,5
+[PASS] disclosed F_1009: off-diagonal sum reproduces Block244
+[PASS] disclosed F_1013: raw 36-path exact Hermiticity
+[PASS] disclosed F_1013: six raw sectors are orthogonal
+[PASS] disclosed F_1013: 12-sum exact Hermiticity
+[PASS] disclosed F_1013: seven structural t^4 relations
+[PASS] disclosed F_1013: all six aggregate blocks are nonsingular
+[PASS] disclosed F_1013: raw sector ranks are 5,5,6,4,4,5
+[PASS] disclosed F_1013: off-diagonal sum reproduces Block244
+[PASS] disclosed F_1019: raw 36-path exact Hermiticity
+[PASS] disclosed F_1019: six raw sectors are orthogonal
+[PASS] disclosed F_1019: 12-sum exact Hermiticity
+[PASS] disclosed F_1019: seven structural t^4 relations
+[PASS] disclosed F_1019: all six aggregate blocks are nonsingular
+[PASS] disclosed F_1019: raw sector ranks are 5,5,6,4,4,5
+[PASS] disclosed F_1019: off-diagonal sum reproduces Block244
+[PASS] odd_variant F_1009: raw 36-path exact Hermiticity
+[PASS] odd_variant F_1009: six raw sectors are orthogonal
+[PASS] odd_variant F_1009: 12-sum exact Hermiticity
+[PASS] odd_variant F_1009: seven structural t^4 relations
+[PASS] odd_variant F_1009: all six aggregate blocks are nonsingular
+[PASS] odd_variant F_1009: off-diagonal sum reproduces Block244
+[PASS] odd_variant F_1013: raw 36-path exact Hermiticity
+[PASS] odd_variant F_1013: six raw sectors are orthogonal
+[PASS] odd_variant F_1013: 12-sum exact Hermiticity
+[PASS] odd_variant F_1013: seven structural t^4 relations
+[PASS] odd_variant F_1013: all six aggregate blocks are nonsingular
+[PASS] odd_variant F_1013: off-diagonal sum reproduces Block244
+[PASS] odd_variant F_1019: raw 36-path exact Hermiticity
+[PASS] odd_variant F_1019: six raw sectors are orthogonal
+[PASS] odd_variant F_1019: 12-sum exact Hermiticity
+[PASS] odd_variant F_1019: seven structural t^4 relations
+[PASS] odd_variant F_1019: all six aggregate blocks are nonsingular
+[PASS] odd_variant F_1019: off-diagonal sum reproduces Block244
+[PASS] signed0 F_1009: raw 36-path exact Hermiticity
+[PASS] signed0 F_1009: six raw sectors are orthogonal
+[PASS] signed0 F_1009: 12-sum exact Hermiticity
+[PASS] signed0 F_1009: seven structural t^4 relations
+[PASS] signed0 F_1009: all six aggregate blocks are nonsingular
+[PASS] signed0 F_1009: off-diagonal sum reproduces Block244
+[PASS] signed0 F_1013: raw 36-path exact Hermiticity
+[PASS] signed0 F_1013: six raw sectors are orthogonal
+[PASS] signed0 F_1013: 12-sum exact Hermiticity
+[PASS] signed0 F_1013: seven structural t^4 relations
+[PASS] signed0 F_1013: all six aggregate blocks are nonsingular
+[PASS] signed0 F_1013: off-diagonal sum reproduces Block244
+[PASS] signed0 F_1019: raw 36-path exact Hermiticity
+[PASS] signed0 F_1019: six raw sectors are orthogonal
+[PASS] signed0 F_1019: 12-sum exact Hermiticity
+[PASS] signed0 F_1019: seven structural t^4 relations
+[PASS] signed0 F_1019: all six aggregate blocks are nonsingular
+[PASS] signed0 F_1019: off-diagonal sum reproduces Block244
+[PASS] F_1009: odd-channel variation leaves only the cross sum fixed
+[PASS] F_1013: odd-channel variation leaves only the cross sum fixed
+[PASS] F_1019: odd-channel variation leaves only the cross sum fixed
+[PASS] Haar F_1009: raw and aggregate carriers vanish
+[PASS] Haar F_1013: raw and aggregate carriers vanish
+[PASS] Haar F_1019: raw and aggregate carriers vanish
+[PASS] t-zero-u-live F_1009: raw and aggregate carriers vanish
+[PASS] t-zero-u-live F_1013: raw and aggregate carriers vanish
+[PASS] t-zero-u-live F_1019: raw and aggregate carriers vanish
+[PASS] generic raw rank 29 is witnessed at the disclosed exact sample
+[PASS] normalized 12-sum Gram is generically full rank
+[PASS] full identity endpoint has raw and aggregate rank twelve
+[PASS] Haar and the wider t=0 endpoint have both ranks zero
+[PASS] scope and projector boundaries remain explicit
+identity: {1009: {'raw_rank': 12, 'raw_sector_ranks': (2, 2, 2, 2, 2, 2), 'aggregate_rank': 12, 'aggregate_block_determinants': (574, 574, 574, 574, 574, 574), 'cross_sum': 337}, 1013: {'raw_rank': 12, 'raw_sector_ranks': (2, 2, 2, 2, 2, 2), 'aggregate_rank': 12, 'aggregate_block_determinants': (26, 26, 26, 26, 26, 26), 'cross_sum': 676}, 1019: {'raw_rank': 12, 'raw_sector_ranks': (2, 2, 2, 2, 2, 2), 'aggregate_rank': 12, 'aggregate_block_determinants': (630, 630, 630, 630, 630, 630), 'cross_sum': 680}}
+disclosed: {1009: {'raw_rank': 29, 'raw_sector_ranks': (5, 5, 6, 4, 4, 5), 'aggregate_rank': 12, 'aggregate_block_determinants': (779, 335, 618, 899, 412, 215), 'cross_sum': 83}, 1013: {'raw_rank': 29, 'raw_sector_ranks': (5, 5, 6, 4, 4, 5), 'aggregate_rank': 12, 'aggregate_block_determinants': (369, 213, 394, 551, 790, 391), 'cross_sum': 121}, 1019: {'raw_rank': 29, 'raw_sector_ranks': (5, 5, 6, 4, 4, 5), 'aggregate_rank': 12, 'aggregate_block_determinants': (338, 58, 856, 88, 387, 351), 'cross_sum': 659}}
+odd_variant: {1009: {'raw_rank': 29, 'raw_sector_ranks': (5, 5, 6, 4, 4, 5), 'aggregate_rank': 12, 'aggregate_block_determinants': (171, 141, 618, 170, 412, 215), 'cross_sum': 83}, 1013: {'raw_rank': 29, 'raw_sector_ranks': (5, 5, 6, 4, 4, 5), 'aggregate_rank': 12, 'aggregate_block_determinants': (780, 868, 394, 879, 790, 391), 'cross_sum': 121}, 1019: {'raw_rank': 29, 'raw_sector_ranks': (5, 5, 6, 4, 4, 5), 'aggregate_rank': 12, 'aggregate_block_determinants': (221, 379, 856, 256, 387, 351), 'cross_sum': 659}}
+signed0: {1009: {'raw_rank': 29, 'raw_sector_ranks': (5, 5, 6, 4, 4, 5), 'aggregate_rank': 12, 'aggregate_block_determinants': (259, 371, 478, 925, 225, 1002), 'cross_sum': 315}, 1013: {'raw_rank': 29, 'raw_sector_ranks': (5, 5, 6, 4, 4, 5), 'aggregate_rank': 12, 'aggregate_block_determinants': (96, 583, 82, 713, 49, 756), 'cross_sum': 711}, 1019: {'raw_rank': 29, 'raw_sector_ranks': (5, 5, 6, 4, 4, 5), 'aggregate_rank': 12, 'aggregate_block_determinants': (527, 795, 589, 391, 474, 427), 'cross_sum': 589}}
+Haar: {1009: {'raw_rank': 0, 'aggregate_rank': 0}, 1013: {'raw_rank': 0, 'aggregate_rank': 0}, 1019: {'raw_rank': 0, 'aggregate_rank': 0}}
+t-zero-u-live: {1009: {'raw_rank': 0, 'aggregate_rank': 0}, 1013: {'raw_rank': 0, 'aggregate_rank': 0}, 1019: {'raw_rank': 0, 'aggregate_rank': 0}}
+structural_psd: exact 36-path Gram F^dagger F on six proper sectors
+derived_aggregate: 12 normalized derivative-selected sums
+cubic_boundary: only the off-diagonal order-three coefficient is reused
+TOTAL: PASS=92 FAIL=0
+
+----- stderr -----
+

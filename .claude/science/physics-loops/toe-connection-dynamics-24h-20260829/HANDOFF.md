@@ -10,5 +10,5 @@ that `(L,J)` is an insufficient state coordinate.
 
 No axioms or primitives changed.  Do not claim a full q=4 response, arbitrary
 memory, dynamics, gravity, or TOE closure.  Three focused reviewers passed the
-repaired block.  Next: open the stacked review PR; afterward resolve K=1--4 and
-the seven odd residual routes.
+repaired block, now open as review PR #7794.  Next: resolve K=1--4 and the seven
+odd residual routes.

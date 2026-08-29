@@ -22,6 +22,6 @@ block240_checks:
   independent_modular_overflow_margin: greater_than_9e10
 claim_boundary: non_diagonal_same_L_shortcut_falsified; minimal_memory_remains_open
 review_loop_disposition: pass
-block240_pr: null
-next_exact_action: open the stacked Block240 review PR, then resolve K=1,2,3,4 and the seven odd residual routes
+block240_pr: 7794
+next_exact_action: resolve K=1,2,3,4 and the seven odd residual routes, then assemble the complete finite q4 response
 stop_condition: campaign deadline or global queue exhaustion after required deep-work gates

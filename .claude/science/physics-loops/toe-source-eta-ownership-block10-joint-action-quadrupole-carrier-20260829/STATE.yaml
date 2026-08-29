@@ -1,13 +1,13 @@
 loop_id: toe-source-eta-ownership-block10-joint-action-quadrupole-carrier-20260829
 block: source_eta_10
-status: executed_cached
+status: checkpointed_pushed
 phase: same_six_m2_joint_action_quadrupole_carrier
 branch: physics-loop/toe-source-eta-ownership-block10-joint-action-quadrupole-carrier-20260829
 parent_commit: ac1473f94fd5df2647bda77b22a191987f4aa05f
 origin_main: 004f64e1c87dad696b282cf2b526f3e7312dc82d
 minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 preregistration_commit: 67accddd65f15396fb810237147ba6902c94a9bc
-result_commit: pending
+result_commit: 5388552e789b91fa09ac0fdee94daefc867601fb
 result_pr: backlogged
 latest_gravity_pr: 7794
 latest_gravity_head: 29a178a3a2ccdbd2236012ae18c2dde4bbb9d08c

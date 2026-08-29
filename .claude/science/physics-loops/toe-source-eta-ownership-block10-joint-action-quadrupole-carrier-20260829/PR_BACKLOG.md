@@ -3,7 +3,7 @@
 - branch: `physics-loop/toe-source-eta-ownership-block10-joint-action-quadrupole-carrier-20260829`
 - base: Block-09 delivery `ac1473f94fd5df2647bda77b22a191987f4aa05f`
 - preregistration: `67accddd65f15396fb810237147ba6902c94a9bc`
-- result: pending
+- result: `5388552e789b91fa09ac0fdee94daefc867601fb`
 - disposition: author-side science checkpoint; stacked PR may remain backlogged
 - audit: unset
 - review-loop: prohibited

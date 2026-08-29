@@ -23,5 +23,6 @@
   stage-7 stop;
 - the initial rendered note lacked the parser-specific `Type`/runner labels;
   those claim surfaces were repaired and their caches refreshed before commit;
+- science result commit `5388552e789b91fa09ac0fdee94daefc867601fb` was pushed to the registered branch;
 - no negative claim or No-Go Discipline delivery was needed;
 - no `review-loop` or audit verdict used.

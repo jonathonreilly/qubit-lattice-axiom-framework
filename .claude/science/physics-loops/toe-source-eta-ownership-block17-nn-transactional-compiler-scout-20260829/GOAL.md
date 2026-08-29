@@ -8,7 +8,7 @@ conflict handling, explicit environment accounting, and exact channel—not
 sample-state—equality.
 
 This block must also decide a carrier-type question rather than hiding it.
-Block16 acts on
+As a selected downstream effective carrier, Block16 acts on
 
 ```text
 A_B = direct_sum over Record masks S subset B of M2(C)^(tensor B)
@@ -18,9 +18,12 @@ A_B = direct_sum over Record masks S subset B of M2(C)^(tensor B)
 The two local summands distinguish no-Record and Record status while retaining
 arbitrary `M2(C)` content in each.  The scout separately tests whether the
 required channel factors through a strict single-`M2(C)` carrier after that
-status is forgotten.  A failure of this strict factorization is not a locality
-or dynamics no-go: the framework's Record ontology, a hybrid classical-quantum
-law, a distributed orthogonal pointer, or a wider carrier remain live.
+status is forgotten.  Neither this direct-sum carrier nor support of the
+proposed `rho_f` and `rho(r_(f,b))` contents at the relevant neighboring
+conditions is supplied by the minimal axioms.  A failure of this strict
+factorization is not a locality or dynamics no-go: a downstream hybrid
+classical-quantum law, a distributed orthogonal pointer, or a wider carrier
+remain live.
 
 ## Exact target contract
 
@@ -93,6 +96,19 @@ translated `F`.  A multiply claimed site returns abort along every reverse
 path.  At a conflicted center `h=1`, the full transaction takes deterministic
 identity/STOP before any branch coin or Record lock.  At `h=0`, it may commit.
 Disjoint footprints must factorize exactly.
+
+Finite trigger examples are only regressions.  The construction must prove
+symbolically, for arbitrary centers and an arbitrary trigger field,
+
+```text
+(c+F) intersects (c'+F)
+  iff c'-c belongs to (F-F) without {0},
+```
+
+and its generated tag rails must compute exactly the Boolean OR in `h(c)` for
+arbitrary assignments of those local trigger variables.  This set/Boolean
+identity, not enumeration of a few trigger shapes, carries the universal
+simultaneous-trigger quantifier.
 
 The protocol must derive, not embed, `K`; prove that the center decision needs
 and admits eight nearest-neighbor hop layers; make every visible commit wait
@@ -175,13 +191,57 @@ If any destination has a Record, it leaves all ten source/destination contents
 unchanged after the new Record forms.  This controller STOP is distinct from
 the pre-coin transaction-conflict STOP.
 
+Channel equality is required here as well as for the writer.  For candidate
+`x=2f`, let `S` be the ten source/destination content registers, let `R` be an
+arbitrary reference, let `U_m` be the product of the five disjoint SWAPs for
+the clear obstacle mask and the identity for every blocked mask, and let
+`w_b` be `1/12` for an axis outcome or `1/16` for a corner outcome.  The
+outcome subchannel must satisfy, for every operator `X_(xSR)`,
+
+```text
+(Theta_(f,b,m) tensor id_R)(X_(xSR))
+  = w_b rho(r_(f,b))_x tensor
+      Tr_x[(U_m tensor I_R) X_(xSR) (U_m^dagger tensor I_R)],
+```
+
+together with the exact Record-sector lock at `x` and preservation of every
+other Record flag.  Thus the 2,688 discrete geometry/outcome/mask cases are a
+control census, not a substitute for equality of the CP instrument on
+arbitrary contents and reference entanglement.  Summing all fourteen outcome
+subchannels must be trace preserving for each fixed `f,m`.
+
+The composed blank-sector instrument must additionally expose the product
+weights rather than infer them from two separate normalizations.  Its 36
+`(f,axis)` branches have effects `Pi_blank/72`, its 48 `(f,corner)` branches
+have effects `Pi_blank/96`, and all 84 effects sum exactly to `Pi_blank`.
+Nonblank writer masks belong to the separate deterministic pre-coin STOP
+branch.
+
 ## Environment and erasure ledger
 
 For `d=2^43`, each full-rank trace-and-prepare branch has Choi rank `d^2`, so
-the six labeled branches require environment dimension at least `6 d^2`.
-Any pure-environment realization therefore needs at least 89 qubits' worth:
-43 input-dump qubits, 43 output-purification qubits, and a three-qubit branch
-register already meet the qubit ceiling before reusable workspace.
+an instrument dilation that retains the six blank-sector outcomes in
+orthogonal environment sectors has rank `6 d^2`.  The deterministic nonblank
+STOP sector adds one Kraus branch, for exact rank `6 d^2 + 1`.
+Any such pure-environment realization therefore has a **dilation lower
+bound** of 89 environment qubits' worth: 43 input-dump qubits, 43 output-
+purification qubits, and a three-qubit branch sink meet this lower bound before
+reusable workspace.  The branch sink is part of those 89 environment qubits.
+If the outcome is also exposed as a readable apparatus/output register, that
+register is additional and is not included in the 89.  This is not a qubit
+ceiling, and coarse-graining away the outcome would be a different channel.
+
+That 89-qubit lower bound is writer-only.  For the composed six-direction,
+fourteen-outcome target, each of the 84 orthogonally labeled blank-sector
+branches still discards the original 43-site `B` input and prepares 43
+full-rank contents; the 30 added footprint contents are transported unitarily.
+The deterministic nonblank writer-STOP sector adds one Kraus branch.  The
+composed Choi rank is therefore `84 * 2^86 + 1`, still giving a 93-environment-
+qubit dilation lower bound.  The runner must derive its own finite realization
+allocation, including all candidate dumps, purifiers, direction/outcome and
+affine-mixture sinks, conflict provenance, and reusable workspace.  No upper
+allocation is frozen here.  Exposed direction/outcome apparatus registers are
+additional outputs.
 
 The scout must distinguish:
 
@@ -223,23 +283,37 @@ The primary must derive and check:
 - `K=F-F`, its complete bounded-box membership, shell/orbit/multiplicity
   census, every conflicting pair, and every in-radius nonconflict;
 - singleton, pair, path, triangle, isolate-plus-edge, and dense trigger
-  configurations under the exact STOP-all predicate;
+  configurations as regressions, plus the parametric overlap equivalence and
+  exact arbitrary-trigger Boolean OR under the STOP-all predicate;
 - prefix identity before commit, transaction STOP identity, disjoint
-  factorization, commit barrier, and workspace cleanup;
+  factorization on arbitrary cross-footprint/spectator entanglement, commit
+  barrier, and workspace cleanup as an exact reversible isometry/channel
+  identity rather than deletion or reset of simulator variables;
 - the six writer branches, exact physical state preparations, branch effects,
   full arbitrary-reference channel identity, and every nonblank writer mask
   symbolically rather than sampling `2^43-1` cases;
 - every direction, fourteen outcomes, 32 branch-destination obstacle masks,
-  exact Record state, five SWAPs/identity, and Record permanence for the first
-  Block15 step;
+  exact Record state, five SWAPs/identity, Record permanence, and the full
+  arbitrary-reference controller-instrument identity for the first Block15
+  step;
 - the strict-`M2` quotient witness, all declared resource bounds, and source/
   AST scans excluding coordinate arrays, output tables, branch dictionaries,
   target-programmed ancillas, scheduler inputs, and hidden prior-runner calls.
 
+Source/AST scans are supplementary.  The primary must build the construction
+through an allowlisted circuit DSL and canonical emitted netlist that accounts
+for every register, support, algebraic constant, gate matrix or Kraus map, and
+inverse/uncompute operation.  Its six-way and fourteen-way coins must be
+generated from the signed-axis and axis/corner orbit grammars, never a hidden
+row list.  Translation covariance must be parametric in the center rather
+than sampled.  The runner must report edge-transfer communication rounds
+separately from actual elementary depth, which also counts onsite scatter,
+collision logic, preparation, SWAP, lock, and cleanup layers.
+
 The structurally independent checker must not import the Block17 primary,
 Block16 primary, or Block15 primary.  It must reconstruct geometry, conflict,
-states, and the carrier quotient by different data structures and extend at
-least one trigger or reference-system axis.
+states, netlist semantics, and the carrier quotient by different data
+structures and extend at least one trigger or reference-system axis.
 
 ## Prospective adjudication
 
@@ -255,11 +329,35 @@ Exactly one overall terminal must be returned:
   physical update remains an explicit downstream import;
 - `NN-WRITER-ONLY`: the writer channel compiles but conflict, cleanup, or the
   first controller step fails;
-- `NO-MEMBER-IN-FROZEN-COMPILER-CLASS`: no branch-independent local grammar in
-  the frozen hybrid class meets the target.
+- `SCOUT-FAILED-TO-CONSTRUCT-FROZEN-SIGNED-RAY-FAN-GRAMMAR`: the one frozen
+  construction fails at a named identity or implementation boundary.  This
+  terminal makes no no-member claim about the unbounded class of all finite
+  alphabets, depths, environments, or exact onsite gates.
 
 The strict-`M2` quotient result is a mandatory subcertificate and not by
 itself the overall terminal.
+
+### Pre-execution support correction
+
+The framework's current minimal premises describe realized Record
+configurations and make non-Record sites unreadable.  They do not derive a
+local `M2 direct_sum M2` hardware carrier with arbitrary hidden content in
+both sectors, mask superselection, a QND Record-presence sensor, a microscopic
+monotone lock, the proposed conditional Record contents, or the synchronous
+invocation/update law used by this compiler.  Those are selected Block16
+downstream effective-law imports.  Consequently the
+`NN-TRANSACTIONAL-CAP-PACKET-AND-FIRST-STEP-COMPILER` terminal above is a
+counterfactual completion target and **cannot be awarded in this block**.
+Even if every finite circuit identity passes, the strongest honest terminal
+is `HYBRID-RECORD-SECTOR-NN-TRANSACTION-GRAMMAR`, with those imports named.
+This correction was frozen before either Block17 runner was executed.
+
+The originally listed `NO-MEMBER-IN-FROZEN-COMPILER-CLASS` failure terminal
+is also unavailable.  The allowed finite alphabet, environment, fixed depth,
+and exact onsite gates were not capped, and no exhaustive decision procedure
+over that infinite union was preregistered.  Failure of this scout can support
+only the construction-specific terminal above, followed by the declared
+occurrence-law pivot.
 
 ## Hard falsifiers and kill criteria
 

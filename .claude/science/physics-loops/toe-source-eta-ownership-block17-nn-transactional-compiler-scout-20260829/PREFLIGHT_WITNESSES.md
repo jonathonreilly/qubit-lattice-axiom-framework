@@ -82,6 +82,13 @@ return reaches every actual intersection.  A four-hop commit broadcast then
 makes layer twelve the earliest common public-write bound for the frozen
 protocol.  These are causal-depth facts, not a formation clock.
 
+The universal certificate is algebraic rather than sampled: translating the
+intersection equation gives `(c+F) intersects (c'+F)` exactly when
+`c'-c` is a nonzero member of `F-F`.  One Boolean trigger variable per
+generated displacement then makes the collision-rail expression identical to
+the OR defining `h(c)` for every assignment.  The named finite trigger shapes
+remain mutation/regression cases only.
+
 ## Carrier-factorization witness
 
 Locally, `M2 direct_sum M2` has complex dimension eight and a two-dimensional
@@ -103,19 +110,35 @@ while STOP leaves zero Bloch vector.  Hence even their mask-forgotten quantum
 outputs differ.  No channel can factor the exact effective target through
 that forgetful quotient.
 
-This witness says nothing against the hybrid Record state already declared by
-the framework.  It instead prevents a compiler from claiming that its local
-Record flag was somehow contained in the lone qubit.
+This witness says nothing against a downstream hybrid Record state.  The
+minimal axioms declare realized Record configurations and make non-Record
+sites unreadable; they do not themselves grant the selected Block16
+`M2 direct_sum M2` carrier, arbitrary hidden content in both sectors, mask
+superselection, QND presence sensing, monotone locks, or support of the
+proposed conditional Record contents.  The witness only prevents this scout
+from claiming that its effective local status flag was somehow contained in
+the lone qubit.
 
 ## Environment witness
 
 For one branch on 43 input/output qubits, the Choi operator is the tensor
 product of a full-rank input identity and full-rank product output, so its rank
-is `2^86`.  Six labeled branches have total rank `6*2^86`.  The qubit ceiling
-is therefore 89 before reusable workspace.  The natural allocation is 43
-input-dump qubits, 43 output purifiers, and a three-qubit six-state branch
-register.  Any cleanup claim must retain those sinks while blanking only
-reusable work.
+is `2^86`.  An instrument dilation retaining six blank-sector outcomes in
+orthogonal environment sectors has rank `6*2^86`; deterministic nonblank STOP
+adds one Kraus branch, giving `6*2^86+1`.  This is a lower bound of 89
+environment qubits before reusable workspace, not a ceiling.  The natural
+allocation is 43 input-dump qubits, 43 output purifiers, and a three-qubit
+six-state branch sink.  That sink is included in the 89; an externally
+readable outcome register is additional output/apparatus.  Any cleanup claim
+must retain those sinks while blanking only reusable work.
+
+This 89-qubit number is writer-only.  The composed instrument has 84 labeled
+blank-sector direction/outcome branches, while deterministic nonblank STOP
+adds one Kraus branch.  Its Choi rank is `84*2^86 + 1`, hence the same
+93-environment-qubit dilation lower bound.  No construction upper allocation
+is frozen: the runner must derive and count its candidate dumps, purifiers,
+direction/outcome and affine-mixture sinks, provenance, and reusable work.
+Externally exposed labels are additional apparatus/output registers.
 
 Conflict provenance can be finite but large.  At one lattice site at most 73
 trigger footprints contribute.  A conservative implementation may allocate
@@ -139,6 +162,47 @@ reported rather than called microscopic economy.
 7. Another output-table wrapper, approximate gate synthesis, or hidden branch
    register would trigger the kill criterion and immediate occurrence-law
    pivot.
+8. Python source/AST scans cannot by themselves exclude a semantic target
+   table.  A passing construction needs an allowlisted DSL and canonical
+   emitted netlist covering registers, gates/Kraus maps, supports, constants,
+   and inverses.
+9. Eight and twelve are edge-transfer communication-round bounds.  Elementary
+   circuit depth must additionally count onsite logic, preparation, locking,
+   SWAP, and cleanup.
+
+## Pre-execution adversarial correction
+
+The first-step controller must be certified as an instrument on arbitrary
+source/destination content entangled with an arbitrary reference.  Exhausting
+the 2,688 direction/outcome/obstacle controls alone cannot establish channel
+equality.  The required trace-and-prepare plus conditional five-SWAP formula
+is now explicit in `GOAL.md`.
+
+Composition must also retain the product effects explicitly: the 36
+direction/axis branches each have effect `Pi_blank/72`, the 48 direction/
+corner branches each have effect `Pi_blank/96`, and the 84 effects sum to
+`Pi_blank`.  Separate writer and conditional-outcome normalization checks do
+not by themselves certify this composed instrument.
+
+Translation covariance must be proved with a symbolic center, the fourteen-
+way coin must be generated by the six-axis/eight-corner orbit construction,
+and cleanup must be an exact inverse/isometry identity rather than deletion of
+workspace variables.  Disjoint-factorization and controller tests must hold
+with arbitrary spectator and cross-footprint reference entanglement.
+
+The same review also makes the terminal ceiling explicit.  The minimal
+premises do not derive the hybrid local carrier, a QND Record sensor, a
+microscopic lock, or an invocation/update law.  A passing finite grammar can
+therefore reach `HYBRID-RECORD-SECTOR-NN-TRANSACTION-GRAMMAR`, not the full
+physical-compiler terminal.  This correction precedes all Block17 runner
+execution and changes no target data, axiom, score, or audit verdict.
+
+Nor can an unsuccessful instance establish that the whole frozen compiler
+class is empty.  The allowed alphabet, depth, environment, and exact onsite
+gate family have no finite caps, so the preregistration supplies no exhaustive
+class decision.  The only lawful failure terminal is
+`SCOUT-FAILED-TO-CONSTRUCT-FROZEN-SIGNED-RAY-FAN-GRAMMAR`, naming the first
+failed boundary and leaving other finite constructions live.
 
 No risk permits changing the target, axioms, TOE accounting, or terminal after
 execution begins.

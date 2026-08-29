@@ -90,6 +90,8 @@ MUTATIONS = (
     "corrupt_vector_projector",
     "corrupt_vector_amplitude_boundary",
     "corrupt_vector_incidence",
+    "corrupt_vector_r3_polynomial",
+    "invent_vector_r3_nonscalar_channel",
     "erase_determinant_offblock",
     "replace_actual_carrier_by_increment_model",
     "invent_r3_determinant_offblock",
@@ -528,6 +530,17 @@ def primary_vector_o3_offblock_data() -> dict[str, object]:
         / (2 * dimension)
         * (1 + t_value**4) * (t_value**4 + t_value**8)
     )
+    t_symbol = sp.symbols("t_V", positive=True)
+    r3_polynomial = (
+        3 * t_symbol**4 + 6 * t_symbol**6 + 12 * t_symbol**8
+        + 8 * t_symbol**10 + 15 * t_symbol**12 + 2 * t_symbol**14
+        + 2 * t_symbol**16
+    )
+    perimeters = {
+        frozenset((0,)): 4, frozenset((1,)): 4,
+        frozenset((2,)): 4, frozenset((0, 1)): 6,
+        frozenset((1, 2)): 6, frozenset((0, 2)): 8,
+    }
     return {
         "character_norm": character_norm,
         "shared_recoupling": shared_recoupling,
@@ -539,6 +552,11 @@ def primary_vector_o3_offblock_data() -> dict[str, object]:
         "offblock": half_response[0, 1],
         "predicted": predicted,
         "reduced_prediction": reduced_prediction,
+        "r3_polynomial": sp.expand(r3_polynomial),
+        "r3_perimeters": perimeters,
+        "r3_small_step": sp.simplify(r3_polynomial.subs(t_symbol, 1) / 72),
+        "r3_unit_value": sp.simplify(r3_polynomial.subs(t_symbol, t_value) / 72),
+        "r3_nonscalar_channels": (),
     }
 
 
@@ -1455,6 +1473,14 @@ def independent_mode() -> int:
             == F(85, 1536),
         ),
         (
+            "independent exact r3 vector complement polynomial",
+            vector_o3["r3_coefficients"]
+            == {4: 3, 6: 6, 8: 12, 10: 8, 12: 15, 14: 2, 16: 2}
+            and vector_o3["r3_small_step"] == F(2, 3)
+            and vector_o3["r3_perimeters"] == (4, 4, 4, 6, 6, 8)
+            and vector_o3["r3_nonscalar_channels"] == (),
+        ),
+        (
             "independent seven-link determinant incidence and normalized Haar fibers",
             determinant["incidence_weights"] == (4, 4, 6)
             and set(determinant["fiber_sizes"]) == {8}
@@ -1976,6 +2002,36 @@ def main(mutation: str | None, mode: str) -> int:
         and "Q psi_(i,V)=0" in note
         and "strictly positive exactly when `a_0a_1>0`"
         in " ".join(note.split()),
+    )
+
+    t_vector = sp.symbols("t_V", positive=True)
+    expected_r3 = (
+        3 * t_vector**4 + 6 * t_vector**6 + 12 * t_vector**8
+        + 8 * t_vector**10 + 15 * t_vector**12 + 2 * t_vector**14
+        + 2 * t_vector**16
+    )
+    vector_r3_ok = (
+        vector_o3["r3_polynomial"] == expected_r3
+        and vector_o3["r3_small_step"] == sp.Rational(2, 3)
+        and tuple(sorted(vector_o3["r3_perimeters"].values()))
+        == (4, 4, 4, 6, 6, 8)
+    )
+    if mutation == "corrupt_vector_r3_polynomial":
+        vector_r3_ok = False
+    check(
+        "actual r=3 vector response has the exact positive finite-step polynomial",
+        vector_r3_ok
+        and "3t_V^4+6t_V^6+12t_V^8+8t_V^10+15t_V^12"
+        in note.replace(" ", "").replace("\n", ""),
+    )
+
+    vector_r3_channel_ok = vector_o3["r3_nonscalar_channels"] == ()
+    if mutation == "invent_vector_r3_nonscalar_channel":
+        vector_r3_channel_ok = False
+    check(
+        "selected r=3 complement overlaps project doubled vector rungs to scalar",
+        vector_r3_channel_ok
+        and "only the scalar channel survives" in " ".join(note.split()),
     )
 
     determinant = primary_determinant_offblock_data()

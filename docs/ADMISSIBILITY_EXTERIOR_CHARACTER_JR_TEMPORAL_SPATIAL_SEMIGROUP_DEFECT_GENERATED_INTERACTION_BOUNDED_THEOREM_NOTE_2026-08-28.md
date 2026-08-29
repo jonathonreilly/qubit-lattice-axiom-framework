@@ -18,7 +18,7 @@ target_blocker_text: "Compare the Block227 co-scaled temporal generator with Blo
 source_of_blocker_text: user_goal
 reachability_to_target: closes
 artifact_role: theorem
-next_trace_action: "Extend the independently reviewed r=2,q=1 defining-vector off-block to a general-r or multi-cell recoupling/history coordinate, or derive the next non-determinant irrep channel. Physical spacing, time, states, observables, amplitudes, and the full non-determinant kernel remain separate suppliers."
+next_trace_action: "Generalize the exact r=3 scalar-fused defining-vector complement transfer to arbitrary fixed r or a multicell vector history, retaining the physical projector and original-link temporal weights. Physical spacing, time, states, observables, amplitudes, and the full non-determinant kernel remain separate suppliers."
 conditional_surface_status: "exact finite physical-space temporal-spatial compression defect, nonconstant two-cell generated interaction, arbitrary-fixed-r complete-step supplied-action response, quadratic-response coarse-kinetic descendant, first complete r=2,q=1 defining-vector off-block, exact all-pairs Hamming-distance response-order filtration, fixed-memory determinant-response automaton, raw-coordinate separation plateau, and response-specific finite packet bounds, conditional on the supplied co-scaled action, ladder, Haar measure, projector, and J_r stack"
 hypothetical_axiom_status: null
 admitted_observation_status: null
@@ -902,6 +902,48 @@ original-link non-determinant `O(3)` response matrix element that survives
 edgewise Peter--Weyl orthogonality.  It is not the full non-determinant kernel
 and supplies no metric, source, matter, selected-action, time, or continuum
 response.
+
+### Exact finite-step `r=3` defining-vector response
+
+Put `H={0,1,2}`, `p_i=chi_V(W_i)`, `phi_V=chi_V(W_2W_1W_0)`, and
+
+```text
+tau_X=t_V^[2|X|+2 runs(X)].                         (34rV)
+```
+
+The six proper nonempty subsets have perimeters `4,4,4,6,6,8`; the coarse
+outer vector has eight crossings.  For `A={i}`, `B=H\A={j,k}`, the two
+complement orientations contribute, after the common factor
+`epsilon^3(c_V^(n))^3a_0a_1a_2/72`,
+
+```text
+(1+tau_A)(tau_H+tau_A+tau_(A union {j})+tau_(A union {k}))
+ +(tau_H+tau_B)(1+tau_B+tau_j+tau_k).               (34sV)
+```
+
+The normalized complement overlap is `1/9`.  Although a doubled shared rung
+contains `(0,+) direct-sum (1,+) direct-sum (2,+)`, only the scalar channel
+survives against the complementary vacuum/vector history; the other channels
+have unmatched original-link labels.  Every first-order history is in
+`ker Q`, including after `C_epsilon`, so any cylindrical component of its
+second-order partner is orthogonal and no additional proper subset is removed.
+
+Summing (34sV) over the three singleton choices gives
+
+```text
+P_3(t_V)=3t_V^4+6t_V^6+12t_V^8+8t_V^10+15t_V^12
+          +2t_V^14+2t_V^16,
+
+(1/3!)<1,partial_lambda^3D_epsilon|_0 phi_V>
+ =epsilon^3(c_V^(n))^3a_0a_1a_2 P_3(t_V)/72>0.    (34tV)
+```
+
+Strict positivity assumes `a_0a_1a_2>0` and `0<t_V<1`; nonnegative amplitudes
+give a nonnegative entry.  Since `P_3(1)=48`, the small-step limit is
+`2(c_V^(n))^3a_0a_1a_2/3`, exactly the vector Fourier component of (32).
+The same complement calculation at `r=2` recovers (34qV).  This is one
+`r=3,q=1` entry, not an arbitrary-`r` finite-step formula, full kernel, or
+positivity theorem for every vector/tensor block.
 
 ## Exact finite-`epsilon` determinant off-block on the actual `r=2` carrier
 

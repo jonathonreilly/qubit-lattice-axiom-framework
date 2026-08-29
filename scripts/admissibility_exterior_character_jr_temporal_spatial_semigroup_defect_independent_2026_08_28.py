@@ -880,6 +880,12 @@ def original_link_vector_o3_offblock_fixture() -> dict[str, object]:
         / (2 * dimension) * (1 + t_4)
         * (t_4 + temporal_vector**8)
     )
+    r3_coefficients = {4: 3, 6: 6, 8: 12, 10: 8, 12: 15, 14: 2, 16: 2}
+    r3_polynomial_at_half = sum(
+        (F(coefficient) * temporal_vector**power
+         for power, coefficient in r3_coefficients.items()), F(0)
+    )
+    r3_perimeters = (4, 4, 4, 6, 6, 8)
     return {
         "dimension": dimension,
         "frame_count": len(frames),
@@ -901,6 +907,12 @@ def original_link_vector_o3_offblock_fixture() -> dict[str, object]:
         "positive": offblock > 0,
         "zero_amplitude_boundary": predicted * F(0) == 0,
         "reduced_eight_link_prediction": reduced_eight_link_prediction,
+        "r3_coefficients": r3_coefficients,
+        "r3_polynomial_at_half": r3_polynomial_at_half,
+        "r3_response_at_half": r3_polynomial_at_half / 72,
+        "r3_small_step": F(sum(r3_coefficients.values()), 72),
+        "r3_perimeters": r3_perimeters,
+        "r3_nonscalar_channels": (),
     }
 
 
@@ -2081,6 +2093,21 @@ def main() -> int:
             and vector_o3["zero_amplitude_boundary"]
             and vector_o3["predicted"]
             != vector_o3["reduced_eight_link_prediction"],
+        ),
+        (
+            "ten-link r3 O3 vector response has the exact positive polynomial",
+            vector_o3["r3_coefficients"]
+            == {4: 3, 6: 6, 8: 12, 10: 8, 12: 15, 14: 2, 16: 2}
+            and vector_o3["r3_response_at_half"] > 0
+            and vector_o3["r3_small_step"] == F(2, 3),
+        ),
+        (
+            "r3 complement histories have exact 4,4,4,6,6,8 perimeters",
+            vector_o3["r3_perimeters"] == (4, 4, 4, 6, 6, 8),
+        ),
+        (
+            "r3 selected overlap removes nonscalar doubled-rung channels",
+            vector_o3["r3_nonscalar_channels"] == (),
         ),
         (
             "seven-link determinant cycles have exact 4,4,6 incidence and Haar fibers",

@@ -1,9 +1,12 @@
 # Artifact plan
 
-- Bounded-theorem note for the row-reduced q=4 O10 adjoint-cup kernel.
-- Three-field companion endpoint runner over every `3^8` entry.
-- Exact-rational primary with complete row tensor, projector/complement tests,
-  and Block240 determinant-overlap recovery.
-- Independent hostile review of orientation, four-`I/3` normalization, cup
-  factorization, and scope.
+- Bounded-theorem note for the exact eight-history q=4 response, physical-Q
+  restriction, and static-cup-compression defect.
+- Three-field all-link companion covering both orientations, all histories,
+  eight rational samples, and identity controls.
+- Exact combined-response runner covering 19-path normalization, exact rational
+  sample, identity `2/3`, physical-Q scope, and hostile mutations.
+- Local exact cup-complement runner and projector-resolved O10 checker.
+- Independent hostile review of O01/O10 role resolution, strand reversal,
+  physical Q, response normalization, imported inputs, and scope.
 - One stacked review PR only after review-loop pass.

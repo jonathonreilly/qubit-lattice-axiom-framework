@@ -18,3 +18,9 @@ Block242 row-reduced O10 cup-factorization review PR #7796 is open:
 
 Its base is Block241 PR #7795. It passed the focused review loop and remains
 `conditional-support`; the campaign does not merge review PRs.
+
+Block243 exact q=4 combined temporal-response work is active on top of Block242.
+Its direct all-link certificate passes `247/247`, its combined response runner
+passes `30/30`, and `7/7` hostile mutations are rejected. Fresh independent
+review and the focused review loop both pass. One stacked review PR is ready to
+open after the committed changed-evidence check; the campaign will not merge it.

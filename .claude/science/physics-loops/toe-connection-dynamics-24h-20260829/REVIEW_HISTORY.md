@@ -48,3 +48,27 @@
   stripped; no audit verdict was applied.
 - Block242 review PR #7796 opened on the reviewed Block241 branch; no merge was
   performed.
+- Block243 preliminary reconstruction: all four O10 and all four O01 histories
+  reduce to the 19 nested paths with coefficient `(2K+1)/243`; the combined
+  response has coefficient `(2K+1)/972`. The all-link certificate passes
+  `247/247`, the combined runner passes `30/30`, and `7/7` hostile mutations
+  are rejected. A false local equality between the `pDEF` and `ADEF` projector
+  actions was rejected and replaced by the complete trace-bundle strand
+  reversal. Physical conditional-Haar `Q` is kept distinct from the static cup
+  projector. Fresh final independent review and review-loop disposition remain
+  pending.
+- Block243 fresh independent final review: PASS after three narrow repairs to
+  the current files—correct the front-matter `Q` wording to "annihilates all",
+  label the multiplier family parity-resolved, and distinguish raw degree-five
+  census entries from the reduced `y_J` factors rather than calling them
+  `r_5`. Independent O01 projector-hostile reconstruction passed `82/82`; the
+  independent O10 other-history check passed `62/62`; full evidence replay
+  confirmed `247/247`, `30/30`, `7/7`, `8/8`, and `6/6`.
+- Block243 focused review-loop disposition: PASS. Vocabulary lint reports zero
+  violations, strict audit lint reports no errors, all four runners compile,
+  the combined primary passes `30/30`, and all `7/7` combined hostile
+  mutations are rejected. The full repository pipeline builds the graph,
+  seeds the ledger, and classifies runners before reaching the same inherited
+  dependency-policy epoch-manifest mismatch disclosed on Blocks240--242.
+  Generated control-plane churn was stripped, the citation manifest alone was
+  regenerated for the new dependency links, and no audit verdict was applied.

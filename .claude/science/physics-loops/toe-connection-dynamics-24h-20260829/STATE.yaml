@@ -2,14 +2,14 @@ loop: toe-connection-dynamics-24h-20260829
 mode: campaign
 deadline_utc: 2026-08-30T01:29:00Z
 target_status: best-honest-status
-current_block: 242
-active_branch: physics-loop/toe-connection-dynamics-block242-o10-cup-factorization-20260829
-active_route: q4_o10_row_reduced_cup_factorization
-hard_residual: insert nested temporal multipliers into the exact O01/O10 maps and verify physical Q
+current_block: 243
+active_branch: physics-loop/toe-connection-dynamics-block243-q4-temporal-q-20260829
+active_route: q4_combined_response_landed_then_gram_memory
+hard_residual: test Gram positivity and the minimal history carrier of the exact eight-history response, then compare the arbitrary-r transfer route
 actual_current_surface_status: conditional-support
-conditional_surface_status: bounded theorem on the supplied open Block232-241 Class-C stack
+conditional_surface_status: exact local cup-compression theorem plus exact eight-history combined q4 response after physical Q on the supplied open Block232-242 Class-C stack
 trace_class: direct_blocker_closure
-reachability_to_target: partially_closes
+reachability_to_target: closes
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -22,11 +22,30 @@ block242_checks:
   exact_rational_mutations: 6/6
   exact_row_tensor_mismatches: 0/6561
   cup_complement_leakage: 0
-claim_boundary: complete_static_column_closed_O01_and_O10_maps; temporal_response_physical_Q_and_minimal_memory_remain_open
-review_loop_disposition: pass
+claim_boundary: exact_local_cup_complement_defect_and_exact_eight_history_combined_q4_response_after_physical_Q; supplied_multiplier_prefactor_Gram_positivity_minimal_memory_and_arbitrary_words_remain_open
+block243_checks:
+  direct_all_link_feasible: true
+  o01_post_pre_19_path_control: exact_match_over_3_primes
+  o10_post_pre_initial_o01_exponent_assignment: rejected_as_bookkeeping_error
+  o10_post_pre_selected_power_census: exact_Counter_1_17_2_8_3_11_4_7
+  o10_post_pre_corrected_19_path: exact_projector_selection_theorem
+  projector_resolved_path_selection_checks: 90_of_90
+  independent_all_history_projector_checks: 182_of_182
+  full_all_link_original_sample_terms: 24_of_24
+  initial_post_pre_finite_field_certificate_checks: 54_of_54
+  four_history_finite_field_certificate_checks: 138_of_138
+  both_orientation_finite_field_certificate_checks: 247_of_247
+  o01_role_resolved_formulas: exact_by_h2_spin_zero_role_power_five_cup_intertwiner_and_Block241_P_path_intertwiner
+  cup_complement_bridge: exact_symbolic_primary_8_of_8
+  cup_complement_mutations: 6_of_6_rejected
+  independent_symbolic_review: final_PASS_after_O01_82_of_82_O10_other_history_62_of_62_and_full_evidence_replay
+  physical_q: acts_as_identity_after_I_minus_Q_on_fixed_delta0_first_order_history_span; static_cup_identification_rejected
+  combined_response_primary_checks: 30_of_30
+  combined_response_mutations: 7_of_7_rejected
+review_loop_disposition: pass_with_inherited_dependency_policy_epoch_debt_disclosed
 full_pipeline_disposition: inherited_dependency_policy_epoch_mismatch_after_graph_seed_classifier
 block240_pr: 7794
 block241_pr: 7795
 block242_pr: 7796
-next_exact_action: insert the nested pair/triple/quadruple temporal multipliers into the exact O01 cycle and O10 cup maps, then apply physical Q
+next_exact_action: open one stacked review PR for the combined block, then test Gram positivity/minimal history memory and compare the arbitrary-r transfer route
 stop_condition: campaign deadline or global queue exhaustion after required deep-work gates

@@ -1,6 +1,6 @@
 loop_id: toe-source-eta-ownership-block17-nn-transactional-compiler-scout-20260829
 block: source_eta_17
-status: construction_specific_failure_package_in_progress
+status: construction_specific_failure_delivered
 phase: frozen_candidate_payload_binding_failure
 branch: physics-loop/toe-source-eta-ownership-block17-nn-transactional-compiler-scout-20260829
 parent_commit: 7cda8b604004d16c1becf08c503e05c54c48844a
@@ -9,8 +9,8 @@ origin_main: 3cc632921c36aa90266c5c62e56816577ce59a0a
 minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 preregistration_commit: 091308fdec
 support_correction_commit: 58a2b5d532
-result_commit: pending
-result_pr: pending
+result_commit: 45758dfc4e
+result_pr: 7802
 latest_source_eta_pr: 7787
 latest_source_eta_head: f5e5c140c06df6aaf6c1b76c2e165c5a49ca4a90
 latest_connection_pr: 7800

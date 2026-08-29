@@ -1,6 +1,6 @@
 {
- "edge_count": 16172,
- "node_count": 5651,
+ "edge_count": 16174,
+ "node_count": 5652,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -888,6 +888,10 @@
   },
   "admissibility_exterior_character_haar_coarse_compression_generated_crossing_bounded_theorem_note_2026-08-28": {
    "deps_hash": "7564add40d8c",
+   "out_degree": 2
+  },
+  "admissibility_exterior_character_jr_arbitrary_r_scalar_fused_vector_transfer_bounded_theorem_note_2026-08-29": {
+   "deps_hash": "6ac5fc68dd23",
    "out_degree": 2
   },
   "admissibility_exterior_character_jr_peter_weyl_operator_truncation_bounded_theorem_note_2026-08-28": {

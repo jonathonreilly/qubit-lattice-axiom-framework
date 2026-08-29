@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_jr_arbitrary_r_scalar_fused_vector_transfer_2026_08_29.py
+runner_sha256: 5631b0360cbca7e8e9f15233ac3a3a7dc37d44b841515dfc6b75689a1a0406ea
+input_fingerprint_sha256: 39fb106c158526932b01e185284a319d02d2c002b9a8b8c2345b17b7487c16ff
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.98
+status: ok
+----- stdout -----
+[PASS] typed parent-theorem and minimal-axiom inputs are explicit
+[PASS] actual r-cell ladder has 3r+1 links and exact boundary census
+[PASS] physical q=1 projector deletes exactly empty/full partitions
+[PASS] all derivative orders below r vanish by exclusive-rail parity
+[PASS] normalized Gram Leibniz rule retains both half-action factors
+[PASS] all proper complements select scalar doubled rungs only
+[PASS] Haar second moment gives overlap 3^(1-r)
+[PASS] direct proper-subset sum equals the three-state transfer
+[PASS] r2 finite-step polynomial is recovered exactly
+[PASS] r3 finite-step polynomial is recovered exactly
+[PASS] every finite-step transfer coefficient is positive
+[PASS] t=1 response matches (2^r-2)/3^(r-1)
+[PASS] fixed memory is three states independent of r
+[PASS] claim scope keeps action time gravity and full kernel open
+[PASS] negative-scope rhetoric carries a landed N1-N8 discipline gate
+[PASS] independent Fraction/frame implementation reproduces all rows
+TOTAL: PASS=16 FAIL=0
+per_element: checked every original-link label menu, boundary incidence, and scalar overlap for the selected complement histories
+per_site: checked one retained q=1 cell symbolically for fixed r and directly for every width from r=2 through r=8
+per_mode: checked the vacuum-to-coarse-defining-vector entry with explicit O(3) inversion parity and no other irrep entry
+per_block: checked the arbitrary-fixed-r three-state transfer with a separate exact two-state endpoint subtraction
+lattice_wide: checked and not executed — no volume family, infinite-volume norm, or continuum limit is an input to this theorem
+
+----- stderr -----
+

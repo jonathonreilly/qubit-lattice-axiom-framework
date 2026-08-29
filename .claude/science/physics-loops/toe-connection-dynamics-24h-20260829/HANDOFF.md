@@ -125,3 +125,13 @@ label diagonality and `[C,Q]=0`, and cubic completeness uses full
 Peter--Weyl action-irrep selection rather than a preselected vector channel.
 The finite theorem is therefore ready for the formal review-loop and
 audit-compatibility gates. It remains only one conditional response coordinate.
+
+Those formal gates now pass at the claim level. Vocabulary lint is clean,
+strict audit lint has no errors, changed-evidence readiness reports the new row
+`1/1` forensic-ready with both imported helper runners, and the staged delta
+matches its Block243 merge base. The full repository pipeline again reaches
+only the inherited dependency-policy epoch-manifest mismatch after rebuilding
+the graph, seeding the ledger, and classifying runners. Generated audit churn
+was stripped and no audit verdict was applied. Open one stacked review PR for
+this coherent block, then move directly to the complete six-history Gram/rank
+problem rather than polishing this single coordinate.

@@ -87,3 +87,13 @@
   evidence passes `612/612`; all `9/9` hostile mutations are rejected.
 - Block244 formal review-loop and repository audit-compatibility gates are now
   active. No audit verdict has been applied and no PR has been opened yet.
+- Block244 focused review-loop disposition: PASS WITH BOUNDED CLAIMS.
+  Vocabulary lint is clean, the runner compiles, the final primary replay is
+  `612/612`, `9/9` mutations are rejected, strict audit lint has no errors,
+  changed-science evidence readiness passes `1/1` with both imported helper
+  runners, and the Block243 merge-base delta is internally consistent. The
+  full pipeline rebuilds the 5,663-node, 16,217-edge graph, seeds the ledger,
+  and classifies runners before reaching the inherited dependency-policy epoch
+  mismatch on the parent stack. Generated audit churn was stripped, the
+  citation manifest alone was retained for the new node/edges, and no audit
+  verdict was applied.

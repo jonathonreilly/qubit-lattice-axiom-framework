@@ -5,7 +5,7 @@ target_status: best-honest-status
 current_block: 244
 active_branch: physics-loop/toe-connection-dynamics-block244-r3q2-adjacent-product-20260829
 active_route: r3_q2_adjacent_product_vector_response
-hard_residual: complete review-loop and audit-compatibility gates for the independently reconstructed r3-q2 cubic candidate, then package it only if the branch remains clean
+hard_residual: construct the complete six-history Gram carrier around the independently reviewed r3-q2 cubic coordinate without inferring global memory from one cross entry
 actual_current_surface_status: conditional-support
 conditional_surface_status: exact local cup-compression theorem plus exact eight-history combined q4 response after physical Q on the supplied open Block232-242 Class-C stack
 trace_class: direct_blocker_closure
@@ -69,6 +69,9 @@ block244_candidate:
   independent_maximum_numerical_discrepancy: less_than_1_1e_minus_23
   independent_refuter_disposition: pass_with_bounded_claims
   identity_control: 2_over_3_after_cubic_half_action_normalization
-  review_state: review_loop_and_audit_compatibility_gates_active
-next_exact_action: finish review-loop and audit-compatibility gates, open one stacked review PR if they pass, then construct the complete six-history Gram carrier
+  changed_evidence_readiness: 1_of_1_forensic_ready_with_two_helper_runners
+  strict_audit_lint: no_errors
+  full_pipeline: inherited_dependency_policy_epoch_mismatch_after_graph_seed_classifier
+  review_state: review_loop_pass_with_inherited_epoch_debt_disclosed
+next_exact_action: open one stacked review PR for Block244, then construct the complete six-history Gram carrier and test its exact rank and positivity boundary
 stop_condition: campaign deadline or global queue exhaustion after required deep-work gates

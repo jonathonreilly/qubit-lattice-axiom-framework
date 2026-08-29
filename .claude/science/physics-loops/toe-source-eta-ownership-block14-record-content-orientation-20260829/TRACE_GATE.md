@@ -18,7 +18,7 @@
 - primary: `10/10`; mutations: `45/45`;
 - independent reconstruction: `7/7`; mutations: `47/47`; longer exact census:
   pass;
-- fresh content/input-bound primary and independent caches: pending;
+- fresh content/input-bound primary and independent caches: pass;
 - microscopic readout/control, generated seed, concurrent fronts, rate/time,
   gravity: open;
 - obligation retirement and TOE movement: zero.

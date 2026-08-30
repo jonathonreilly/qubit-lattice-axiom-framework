@@ -1,0 +1,26 @@
+PASS provenance frozen packet/source hashes; primary imports=0
+PASS cubic_group order=24 closure exact
+PASS povm_coefficients independent STF coefficient reconstruction
+PASS povm_completeness sum E_b=I
+PASS full_effect_spectra axis_levels=9 corner_levels=7 multiplicity=64
+PASS explicit_square_roots 64 commuting sign sectors per effect
+PASS effect_covariance 24 frames x 14 effects; sites and Pauli axes rotate
+PASS tomographic_uniqueness product rank=4^6=4096
+PASS correlated_psd_extension three-state rational PSD mixture; min=0.05960023
+PASS radial_geometry 6 live + 26 pointer; radius=4
+PASS common_onsite_action P_q(r)->P_q(gr); no scalar site type
+PASS radial_code 6 Ready + 84 Locked orthogonal product words
+PASS pair_orbits sizes=[6, 6, 24, 24, 24]
+PASS template_anchor all 13^3 registered translations; isolated anchor unique
+PASS choi_covariance C4 Kraus phase=-i; branch Choi/CP map phase=1
+PASS instrument_cp_tp sum K^dagger K + STOP=I; arbitrary references
+PASS locked_permanence all 84 outputs outside P_ready; repeat=STOP identity
+PASS qnd_boundary positive branches under identity channel have scalar effects; Block09 effects nonconstant
+PASS hostile_mutations rejected=33/33
+PASS scope isolated live-to-Record writer only; causal bridge remains open
+per_element: exact 14 effects, 24 rotations, radial projectors, and codewords reconstructed.
+per_site: 6 live and 26 recorded pointer sites checked with one onsite spin action.
+per_block: full spectra, CP/TP, C4 phase-gauge Choi covariance, template decode, and lock checked.
+lattice_wide: not executed; overlap, relay, local-infinite process, clock, source, and gravity remain open.
+terminal: POVM-AND-COVARIANT-LIVE-TO-RECORD-WRITER; RECORD-TO-RECORD-CAUSAL-BRIDGE-OPEN
+TOTAL: PASS=20 FAIL=0

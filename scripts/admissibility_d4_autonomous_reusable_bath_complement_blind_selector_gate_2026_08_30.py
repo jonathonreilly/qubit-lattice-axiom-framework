@@ -311,6 +311,21 @@ def main() -> int:
         transition[mark][0] = Fraction(1, 6)
         transition[mark][mark] = Fraction(1)
     column_stochastic = all(sum(transition[i][j] for i in range(7)) == 1 for j in range(7))
+    # For generic h,p_1,...,p_6, unitality gives h=1 and p_f=0
+    # coefficient-by-coefficient.  Solve that seven-variable linear system
+    # exactly rather than inferring the universal statement from one sample.
+    unital_matrix = [
+        [Fraction(int(i == j)) for j in range(7)] for i in range(7)
+    ]
+    unital_rhs = [Fraction(1)] + [Fraction(0)] * 6
+    unital_rank = matrix_rank(unital_matrix, 7)
+    augmented_rank = matrix_rank(
+        [row + [rhs] for row, rhs in zip(unital_matrix, unital_rhs)], 8
+    )
+    generic_unital_unique = (
+        unital_rank == augmented_rank == 7
+        and unital_rhs[0] + sum(unital_rhs[1:], Fraction(0)) == 1
+    )
     identity_image = transition_apply(transition, (Fraction(1),) * 7)
     nonunital = identity_image != (Fraction(1),) * 7
     mixed = (Fraction(1, 7),) * 7
@@ -319,8 +334,8 @@ def main() -> int:
     entropy_output_ok = mixed_output == (Fraction(0),) + (Fraction(1, 6),) * 6
     check(
         "append_nonunitality",
-        column_stochastic and nonunital and entropy_output_ok and entropy_drop > 0,
-        f"T(I)={identity_image} entropy_drop=log(7/6)",
+        column_stochastic and generic_unital_unique and nonunital and entropy_output_ok and entropy_drop > 0,
+        f"generic_unital_solution=(h=1,p=0); sample_T(I)={identity_image}; entropy_drop=log(7/6)",
         results,
     )
 

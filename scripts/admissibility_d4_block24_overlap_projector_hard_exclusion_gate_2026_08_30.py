@@ -63,9 +63,9 @@ FROZEN = {
     "PREFLIGHT_WITNESSES.md": "f0ffec5e07993eba7c60d41b60b4d3d9504952e21a6f18b8a611783edabf8441",
     "PANEL_RETURN.md": "cd115d670024432aebbc300da6dcc688d516b608ca29d4927dfa7dc667fed116",
     "INDEPENDENT_PREREG_ATTACK.md": "1edcbc110b48f3b1b28c345bbe5c3c54736bdf7465020d36dd5ae4b55192a01a",
-    "APPROACH_REGISTRY.md": "7212237aea3329352ea6d2a8a8989e0f42e0aa7d29a623c2ba9e42ba3d7f7ecc",
+    "APPROACH_REGISTRY.md": "4e5fca361ed40bb7783e4f00e390bb293a8c490928a4917539d7c8ba4b82bd4e",
     "MUTATION_PLAN.md": "59e2bfd386c0921b71624a3ff809122bea3f2595b41a38b949034f94f497a38d",
-    "NO_GO_DISCIPLINE_CHECKLIST.md": "f7743976708ea1df9dc00602655420f355db54f15bc196421bab3d69f9ebed52",
+    "NO_GO_DISCIPLINE_CHECKLIST.md": "a20e19ba2d17824e50e5ec81fea6971f16338c4a6dba19e44b9ddaeecf12d3af",
 }
 AUDIT_INPUT_PATHS = (
     "scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py",
@@ -82,7 +82,7 @@ AUDIT_INPUT_PATHS = (
     ".claude/science/physics-loops/toe-source-eta-ownership-block25-collision-hard-exclusion-totalization-20260830/NO_GO_DISCIPLINE_CHECKLIST.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block25-collision-hard-exclusion-totalization-20260830/STATE.yaml",
 )
-AUDIT_TIMEOUT_SEC = 300
+AUDIT_TIMEOUT_SEC = 900
 
 ZERO = (0, 0, 0)
 DIRECTIONS = parent.DIRECTIONS

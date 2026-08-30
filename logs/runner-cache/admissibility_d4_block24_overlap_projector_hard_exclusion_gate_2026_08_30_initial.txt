@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_block24_overlap_projector_hard_exclusion_gate_2026_08_30.py
+runner_sha256: c36c26113162a7a960b2b7101b2efed26f667903b9a38c89e6ed2b615b00401e
+input_fingerprint_sha256: a866fec77d81bcb549ad4c0f7ee7793dce69b1e49871bfb33eb74f51a8327072
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 519.80
+status: ok
+----- stdout -----
+PASS freeze: eight preregistration surfaces plus exact Block23/24 sources, Block24 note, and axiom memo are content frozen
+PASS literal_physical_controls: both tips contain all 26 current-pointer and 32 selected-Blank physical input factors
+PASS clean_target_overlap: the derived pair has disjoint current/cross blocks and overlaps only in its two target carriers
+PASS exact_shared_factor_contraction: shared physical Bloch factors contract to the displayed exact product fidelity
+PASS noncommuting_sharp_projectors: 0<q<1 gives exact positive commutator factor 2q(1-q), so no joint sharp eligibility sector exists
+PASS direct_shared_Hilbert_commutator: literal shared-site qubit matrices independently reproduce the exact positive Hilbert-Schmidt commutator norm
+PASS source_label_independence: the clean witness is a Blank-carrier overlap and is independent of the two stored outcome labels
+PASS proper_cubic_and_translation_orbit: the complete proper-cubic orbit and translated copies retain the same exact q and clean geometry
+PASS commuting_controls: exact shared-target and disjoint pairs commute, guarding against a blanket overlap rejection
+PASS A0_stop_gate: Stage B is not constructed after the registered Stage-A noncommutation wall
+PASS mutation_drop_current_factor: designated check literal_physical_controls rejects
+PASS mutation_drop_blank_factor: designated check literal_physical_controls rejects
+PASS mutation_label_only_overlap: designated check literal_physical_controls rejects
+PASS mutation_nonzero_means_commuting: designated check noncommuting_sharp_projectors rejects
+PASS mutation_shared_target_only: designated check clean_target_overlap rejects
+PASS mutation_fake_coordinate: designated check literal_physical_controls rejects
+PASS mutation_incomplete_frames: designated check proper_cubic_and_translation_orbit rejects
+PASS executed_model_mutations: 7/7 altered physical models reject at their designated checks
+PASS scope_stage_b_unconstructed
+PASS scope_no_conflicting_tip_activation
+PASS scope_no_coordinate_priority
+PASS scope_no_double_writer
+PASS scope_no_old_record_overwrite
+PASS scope_no_blank_debit_claim
+PASS scope_no_stop_completion_claim
+PASS scope_no_arbitrary_reference_channel_claim
+PASS scope_no_runtime_oracle
+PASS scope_no_padding_theorem
+PASS scope_no_collision_liveness_claim
+PASS scope_no_blank_production_claim
+PASS scope_no_rate_claim
+PASS scope_no_gravity_claim
+PASS scope_no_axiom_change_claim
+PASS scope_no_audit_retention_claim
+PASS scope_no_obligation_retirement_claim
+PASS scope_no_toe_movement_claim
+PASS scope_no_general_arbitration_no_go
+PASS coverage_scope_guards: 19/19 unexecuted Stage-B and promotion surfaces remain outside the claim
+WITNESS front_a=(-1, 0, 0) front_b=(1, 0, 0)
+WITNESS anchor_a=(0, 0, 0) anchor_b=(-19, -1, 0)
+WITNESS target_a=(-9, 0, 0) target_b=(-10, -1, 0)
+WITNESS target_shift=(-1, -1, 0)
+WITNESS shared_carrier_sites=2
+WITNESS shared_constrained_sites=2
+WITNESS local_overlaps=(1/2, 1/2)
+WITNESS product_fidelity_q=1/4
+WITNESS commutator_norm_factor=3/8
+per_element: checked all 58 constrained factors on each witness tip, all 2 shared factor overlaps, and the exact product/commutator contraction
+per_site: checked literal translated lattice coordinates for current pointer, target live, and target pointer factors; the witness overlaps only in target carriers
+per_mode: checked stored-label independence plus the complete 24-frame proper-cubic orbit and exact symbolic covariance under every global translation
+per_block: checked a clean partial target-target overlap, an exact shared-target commuting control, and a disjoint factorization control
+lattice_wide: checked and not executed -- sharp joint sectors fail at Stage A; Stage-B graph totalization, unsharp arbitration, owned substrate, collision liveness, Blank generation, clock, source, gravity, retention, obligations, and TOE closure remain open
+TERMINAL: EXACT-NONCOMMUTING-BLANK-OVERLAP-WALL-FOR-SHARP-BLOCK24-HARD-EXCLUSION-SECTORS
+SCOPE: fixed Block24 radial alphabet and sharp memoryless eligibility sectors only; owned disjoint carriers, unsharp controllers, enlarged pointers, and recorded collision resources remain live
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

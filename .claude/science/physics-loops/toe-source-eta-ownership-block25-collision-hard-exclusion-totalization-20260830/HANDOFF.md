@@ -1,6 +1,18 @@
 # Block25 handoff
 
-Active route: test literal physical eligibility-projector overlap before
-building hard-exclusion graph sectors. Preserve Block24 exact singleton
-semantics and every named open wall. A0 red reranks owned substrate; A0 green
-continues to arbitrary finite conflict graphs.
+Block25 closes only A0's displayed joint sharp eligibility-sector shortcut. The
+exact clean witness has `q=1/4` and commutator factor `3/8`; all outcome labels,
+cubic frames, and translations preserve it. Do not reopen that construction or
+widen it to a collision/dynamics no-go.
+
+The independently run author-side, non-audit postexecution panel selected B0
+`5-0`. First prove the finite
+certified sector: pairwise-disjoint **complete** Block24 footprints tensorize to
+one CPTP/QND/covariant multi-front channel with projective consistency, unique
+ownership, and one Blank debit. Then attack the real autonomy gate with an
+existing-qubit finite-range mark--claim--grant--append/renew-transfer law.
+
+Stop at the first shared dependency, double lease, symmetry deadlock,
+order-dependent channel, or hidden phase/priority/clock/fresh-packet
+requirement. Rerank rather than expanding fixtures. Gravity remains downstream
+until this process supplies a selected conserved current.

@@ -38,15 +38,24 @@ clock, or Record-production process.
 Every imported science claim keeps its current source and audit status. This
 packet does not promote a conditional parent.
 
+The factor two in the conditional mark kernel is supplied by Block19's input;
+Block21 does not call it predicted. Block19's target lock/QND statement is
+also limited to its fresh-vacuum collision boundary. Lock on every bath state
+reachable under reuse must be proved again.
+
 ## Not imported
 
 - control-complement blindness or the equality `u=o=p`;
+- equality of opposite and perpendicular gains before membership in the
+  Block19 beta family;
 - a `U(6)` complement symmetry, binary equality-query law, minimal-coupling
   rule, bath state, spectral density, energy gap, KMS temperature, cadence,
   boundary condition, fresh temporal mode, reset, or disposal;
 - a claim about two-use, approximate, correlated-input, changing-unitary, or
   infinite-memory baths from the finite exact-repeatability theorem;
 - an action-to-bath, bath-to-gravity, or Euclidean-to-physical-time bridge;
+- a lattice location, transport law, interaction ordering, or physical clock
+  for one finite mediator reused across sites;
 - any audit verdict, axiom necessity claim, approved premise, obligation
   retirement, or TOE score movement.
 

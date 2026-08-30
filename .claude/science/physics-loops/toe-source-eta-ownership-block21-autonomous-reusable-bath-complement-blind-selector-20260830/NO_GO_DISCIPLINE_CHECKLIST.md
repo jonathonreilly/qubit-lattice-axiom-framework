@@ -9,7 +9,7 @@ landed primary and independent evidence.
 
 ## Exact candidate boundary
 
-The initial finite pre-gate covers only R1--R6 in `APPROACH_REGISTRY.md` at
+The initial finite pre-gate covers only R1--R7 in `APPROACH_REGISTRY.md` at
 their frozen hypotheses. Extensive, approximate-return, outcome-carrying,
 distributed-pointer, non-Markov, and governed-law routes remain live.
 
@@ -20,15 +20,18 @@ unexecuted family live.
 
 ## N2 — wall independence and collapse
 
-`PENDING`: distinguish symmetry underselection, nonunital/reuse, memory,
-parameter relocation, and downstream process walls. Collapse implications
-rather than counting the same missing selector repeatedly.
+`PENDING`: distinguish `G_cov` symmetry underselection, illegal beta
+projection, named finite-use memory, `G_fin,infinity` nonunital repeatability,
+parameter relocation, reachable-state lock, and downstream process walls.
+Collapse implications rather than counting the same missing selector
+repeatedly.
 
 ## N3 — hidden-condition scan
 
-`PENDING`: scan reset, disposal, fresh factors, state preparation, spectral
-choice, gap, temperature, cadence, boundary state, scheduler, averaging,
-initial correlations, bath return, pointer carrier, event arity, and Markov
+`PENDING`: scan reset, disposal, fresh factors, tied/reparameterized source
+coordinates, state preparation, spectral choice, gap, temperature, cadence,
+boundary state, scheduler, averaging, instruments, initial correlations, bath
+return, reachable bath states, pointer carrier, event arity, and Markov
 assumptions.
 
 ## N4 — exact residual matching

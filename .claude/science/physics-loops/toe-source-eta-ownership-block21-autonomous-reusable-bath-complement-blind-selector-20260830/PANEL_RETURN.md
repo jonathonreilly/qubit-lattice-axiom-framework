@@ -14,8 +14,10 @@ lattice quantum-information seat preferred the distributed-pointer route.
 ## Panel decision
 
 Run the `6--8` hour pre-gate. Continue for at most three focused days only if
-it physically derives identity on the full `I-P_f` complement, fixes one beta
-ray, and passes exact reuse/process tests. Otherwise pivot immediately to the
+it physically derives identity on the full `I-P_f` complement from an
+independently frozen source superfamily, fixes one beta ray, uses one joint
+six-mark interaction, and has a credible all-use instrument/process route.
+Two uses are necessary but not sufficient. Otherwise pivot immediately to the
 distributed orthogonal pointer plus causal-past action-state campaign.
 
 The panel will be reconvened early if:

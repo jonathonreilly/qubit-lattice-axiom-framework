@@ -1,0 +1,32 @@
+PASS freeze: 8/8 preregistration hashes
+PASS fixed_star_geometry: old 32 + six disjoint 32-site successors; R=9, radius=13
+PASS frozen_q_state_family: 14 geometry-derived pure products; Q_-b=Q_b; positive sign load-bearing
+PASS common_action_states: 24 rotations act on every Blank and prepared physical Bloch state
+PASS record_controls: 90 physical radial product projectors are pairwise orthogonal/covariant; 84 Locked controls decode
+PASS record_generated_target: all 192 target factors explicit; one rho_b+Ready_f block and five exact Blank blocks covary
+PASS prep_cptp: 84 explicit 224-factor A_(f,b); P_valid projector; K_STOP=I-P completes I_R tensor I
+PASS classical_record_qnd: Lambda^dag(C_fb)=C_fb by projector algebra; valid cross-Record matrix units dephase
+PASS kraus_map_covariance: all 84 separate input/output product-projector Kraus branches covary under the common 24-frame action
+PASS imported_effect_completion: 14 Block22 effects rederive coefficientwise sum I_64
+PASS explicit_lueders_roots: 14 commuting 64-sector square roots reconstruct every E_b coefficientwise
+PASS derived_signed_kernel: 196 entries derived from Q_b and effects; strict positive stochastic rows
+PASS kernel_covariance_lumping: 24-frame invariance and exact 14-to-7 antipodal strong lumping
+PASS seven_ray_quotient: 3 axis + 4 corner ray kernel exact and strictly positive
+PASS reversible_stationary_kernel: detailed balance: signed 1/12,1/16 and ray 1/6,1/8 weights
+PASS invariant_subspace_spectrum: spectrum 1,0,(1/12)^2,(sqrt2/16)^3 derived without eigensolver
+PASS reduced_cylinder_normalization: reduced E_b1*T table normalizes and retains its first marginal; this is not the Kraus derivation
+PASS parallel_writer_product: tensor product of six local writer/STOP channels gives 14 branches: one sqrt(E_b2) write plus five exact STOPs
+PASS full_composite_prefix: on Ready_f tensor supplied BlankStar, all 1176 factorized branches compose and normalize with symbolic I_R extension
+PASS scope_boundary: one backward candidate is the Locked predecessor; five candidates are unsupplied/unknown; 42-state graph has six components
+PASS scope_ast: no target table, future outcome, selected-site oracle, imported runner, or dense eigensolve
+PASS executed_model_mutations: 26/26 altered models reject their target invariant
+PASS coverage_scope_guards: 14/14 non-mutation coverage/scope guards hold
+PASS external_negative_controls: 2/2 explicit external controls behave as expected
+per_element: all 196 derived transition entries, exact detailed-balance residuals, and branch-effect prefix identities are checked
+per_site: all 224 primitive sites, six successor centers, radial Blank/Ready states, and two decoded Locked packets are checked
+per_mode: the seven invariant outcome-ray modes are checked exactly; no Fourier, clock, or spacetime normal-mode claim is made
+per_block: 84 Record-indexed prep branches, STOP complement, one active successor writer, and five inactive STOP blocks are checked
+lattice_wide: checked and not executed -- predecessor-aware recurrence, overlapping fronts, substrate generation, rate, source, gravity, retention, and TOE closure remain open
+TERMINAL: EXACT-COVARIANT-CLASSICAL-RECORD-QND-TWO-EVENT-PREFIX-WITH-STRICTLY-POSITIVE-REVERSIBLE-SEVEN-RAY-REDUCED-KERNEL
+SCOPE: supplied six-block Blank star; atomic radius 13; internal kernel only; no coherent-code QND, event 3, stationary Record process, overlap, clock, source, gravity, axiom, audit, obligation, or TOE move
+TOTAL: PASS=24 FAIL=0

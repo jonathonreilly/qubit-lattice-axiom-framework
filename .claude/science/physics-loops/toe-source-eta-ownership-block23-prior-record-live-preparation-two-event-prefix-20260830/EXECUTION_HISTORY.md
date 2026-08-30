@@ -95,3 +95,30 @@ occurred during those reviews.
 `RUNNER_SOURCE_REPIN_COMPLETION.md` is the execution gate for this source.  Its
 first run must preserve combined stdout/stderr at the new path
 `logs/runner-cache/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30_strengthened.txt`.
+
+## Strengthened-primary execution and bounded reconciliation
+
+The first execution of the repinned strengthened source exited zero and
+preserved combined stdout/stderr at the required new cache path.
+
+- source SHA-256:
+  `426488df2a431cb7d415d5e933013f7ce0826cc9514f96cd041b9fc6ff49742a`;
+- cache:
+  `logs/runner-cache/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30_strengthened.txt`;
+- cache SHA-256:
+  `abcb354ae385421af7c847c697800d873f9e1d1f2359ebe65023b6a36b712b55`;
+- displayed result: `TOTAL: PASS=24 FAIL=0`;
+- executed altered-model mutations: `26/26` rejected;
+- scope and coverage guards: `14/14` passed;
+- external negative controls: `2/2` passed.
+
+The strengthened runner explicitly contracts the global preparation channel,
+classical-Record QND action, every reachable two-event composite branch, both
+prefix marginals, arbitrary-reference normalization on the conditional input
+domain, and the event-three support census.  Postexecution adversarial
+reconciliation supports a bounded positive two-event-prefix note.  It does not
+support a stationary spatial process, direct event-three closure, recurrence,
+substrate ownership, an axiom change, an audit verdict, obligation retirement,
+or TOE percentage movement.  The architecture-specific all-six-Blank
+event-three boundary is accompanied by a complete N1--N8 sidecar; the strongest
+live escape is a predecessor-aware third-event channel.

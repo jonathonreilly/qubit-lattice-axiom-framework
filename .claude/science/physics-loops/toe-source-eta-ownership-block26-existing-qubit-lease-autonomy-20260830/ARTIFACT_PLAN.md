@@ -4,8 +4,9 @@
 2. Implement one source-derived runner importing the literal Block24 and
    Block25 constructors, not stored geometry or terminal booleans.
 3. Obtain an independent static hostile review before first target execution.
-4. Content-pin the runner and every declared input, then execute once to a new
-   non-overwriting cache.
+4. Commit the reviewed runner, write a separate source-SHA pin without
+   modifying that runner, content-pin every declared input, then execute once
+   to a new non-overwriting cache.
 5. If a negative boundary survives, land the complete N1--N8 checklist and
    substantive five-resolution execution certificate with the source note.
 6. Run source, mutation, vocabulary, evidence-readiness, graph, invariant,

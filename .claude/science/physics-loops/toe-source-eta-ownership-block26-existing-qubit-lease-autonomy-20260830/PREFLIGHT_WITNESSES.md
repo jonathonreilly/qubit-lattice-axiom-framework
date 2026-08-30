@@ -33,9 +33,22 @@ covariantly related stored labels; whether it has a lattice fixed point; and
 what equivariance implies for two classical grant bits. Expected answers are
 not accepted as stored booleans.
 
-## Recorded-owner candidate
+## Physical stochastic-channel candidate
 
-On two declared existing status qubits, compare
+For the q=1/4 pair, take the equal convex mixture of the two literal complete
+Block24 append channels, including each channel's STOP. Every actual Kraus
+trajectory therefore chooses at most one append family. On a success, the
+new `Locked(front,outcome)` target word records which family wrote; a STOP
+forms no new owner Record. Derive the effects
+
+```text
+F_A=P_A/2, F_B=P_B/2, F_0=I-(P_A+P_B)/2
+```
+
+and their exact spectrum on the two-projector span. Use four commuting
+old-current-Record presence sectors to recover literal singleton behavior.
+
+As a kinematic comparison only, on two abstract qubits compare
 
 ```text
 rho_ind = I4/4
@@ -43,9 +56,15 @@ rho_one = (|10><10| + |01><01|)/2.
 ```
 
 The source must derive normalization, positivity, equal one-site marginals,
-swap covariance, exact-one probability, and a complete Kraus instrument from
-the declared status-Blank input. It must then bind each owner outcome to only
-one selected Block24 append family and prove that no branch double-writes.
+swap covariance, and exact-one probability. This abstract coupling is not a
+lattice Record certificate and cannot carry the physical terminal.
+
+For the six-way exact common target, test every separately supplied nonempty
+front subset and every stored source label. The physical law is the equal
+convex mixture of the selected literal channels. On the declared sector where
+every selected current Record is present and the shared target is Blank, it
+must write exactly one Locked target; off-sector it retains every selected
+channel's STOP completion.
 
 ## Transfer adversary
 

@@ -7,8 +7,11 @@ Target type: `bounded_theorem`.
 Allowed final standing:
 
 - conditional author-side exact finite tensorization;
-- conditional author-side exact pair/clique recorded-owner construction;
-- narrowly scoped deterministic symmetry boundary with linked N1--N8;
+- conditional author-side physical pair/clique append-channel mixtures, with
+  a successful Locked target identifying the writer and no owner claimed on
+  STOP;
+- deterministic pair/cycle enumeration retained only as a non-terminal
+  diagnostic because the linked N1--N8 gate fails the negative;
 - an exact transfer/cycle counterexample that leaves named live routes open.
 
 Disallowed promotion:

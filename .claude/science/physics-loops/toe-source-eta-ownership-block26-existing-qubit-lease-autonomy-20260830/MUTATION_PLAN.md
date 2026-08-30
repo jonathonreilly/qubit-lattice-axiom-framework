@@ -11,14 +11,25 @@ designated checks. Stored-answer toggles do not qualify.
 6. claim absolute ownership from membership in a supplied lease list;
 7. claim renewal from initial carrier disjointness on the inward `0/27e1` pair;
 8. replace the proper-cubic half-turn in the pair witness by an improper map;
-9. choose a coordinate-ordered deterministic winner on the exchanged pair;
-10. weaken mutual exclusion so the symmetric deterministic grant `11` passes;
-11. replace the anticorrelated one-owner state by independent equal marginals;
-12. delete one Kraus owner outcome from the symmetric recorded instrument;
-13. activate both overlapping append maps in one owner branch;
-14. erase one old-current-Record QND control from the collision instrument;
-15. remove one proper-cubic frame from the covariance orbit;
-16. promote the conditional instrument to Blank generation, rate, gravity,
+9. break the claimant-exchange predicate and require the deterministic
+   obstruction itself to disappear;
+10. choose a coordinate-ordered deterministic winner on the exchanged pair;
+11. weaken mutual exclusion so the symmetric deterministic grant `11` passes;
+12. freeze one source label in the three-cycle instead of rotating it;
+13. replace the anticorrelated kinematic state by independent equal marginals;
+14. delete one Kraus outcome from the kinematic one-hot preparation;
+15. restrict the common-target proof to one stored source label;
+16. remove one claimant from a registered `1/k` common-target mixture;
+17. delete one selected common-target channel's STOP completion;
+18. activate two literal common-target append maps in one branch;
+19. activate both q=1/4 append maps in one branch;
+20. delete one q=1/4 selected channel's STOP completion;
+21. replace one old-current QND factor by an actual overwrite factor;
+22. apply the raw half-mixture on a singleton current-Record sector;
+23. remove one proper-cubic frame from the covariance orbit;
+24. reinsert a general arbitration no-go into the positive-only terminal after
+    the written N1--N8 gate demotes it;
+25. promote the conditional instrument to Blank generation, rate, gravity,
     axiom, audit, obligation-retirement, or TOE movement.
 
 The final source may consolidate checks when one physical mutation has

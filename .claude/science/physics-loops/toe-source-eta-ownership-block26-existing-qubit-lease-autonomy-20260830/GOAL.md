@@ -22,29 +22,35 @@ state oracle?
    The test must include every symmetry that exchanges the two claimants and
    must not widen a classical deterministic obstruction to stochastic,
    quantum-instrument, or global-history laws.
-3. Construct the strongest existing-qubit recorded stochastic escape on that
-   same orbit. It must be a normalized joint instrument with an explicit
-   one-owner code, no double write, no preferred claimant, and honest resource
-   accounting. It must also state exactly why the construction does or does
-   not extend to autonomous renewal and arbitrary conflict graphs.
+3. Construct a physical symmetric stochastic escape on that same orbit by
+   composing or mixing the literal Block24 append channels. It must be CPTP,
+   branchwise no-double-write, QND on both old current Records, and use the
+   new Locked target Record itself to identify the successful owner. STOP
+   branches must be named as no-new-owner outcomes. Separately test every
+   supplied nonempty subset of the exact six-way common-target geometry. The
+   selected `1/k` law, invocation, and resource assumptions must remain
+   explicit rather than being attributed to the axioms.
 
 ## Positive terminal
 
-A content-bound runner proves the disjoint finite lease theorem and an exact
-symmetric recorded-owner channel closes the named two-tip collision while
-preserving both old Records and writing at most one new target Record. Any
-remaining supplied status Blank, joint kernel, invocation, renewal, or
-general-graph condition stays explicit.
+A content-bound runner proves the disjoint finite lease theorem; a physical
+equal convex mixture closes the no-double-write channel question on the named
+two-tip collision; and every separately supplied exact-common-target subset
+has an exact-one Locked winner on its declared valid sector. The q=1/4 pair
+may retain a positive no-write remainder, and no physical owner is claimed on
+that STOP outcome. The selected joint weights, invocation, renewal, and
+general-graph conditions stay explicit.
 
-## Permitted bounded terminal
+## Deterministic diagnostic (not a terminal claim)
 
 An exact swap-symmetric pair forces every deterministic equivariant
 single-valued grant map to return equal grant bits, so mutual exclusion and
-exactly-one liveness cannot both hold. This may be shipped only with a
-positive stochastic/recorded counterroute and the full N1--N8 gate. It is not
-a no-go for covariant stochastic instruments, recorded collision histories,
-coherent arbitration, supplied asymmetric boundary data, or global-history
-selection.
+exactly-one liveness cannot both hold on the supplied unordered descriptor.
+The N1--N8 steelman is constructive, so this classification may guide the
+portfolio but may not appear as a negative/no-go terminal. It is not an
+actual jointly sharp target-state theorem and says nothing negative about
+covariant stochastic instruments, recorded collision histories, coherent
+arbitration, supplied asymmetric boundary data, or global-history selection.
 
 ## Exclusions
 

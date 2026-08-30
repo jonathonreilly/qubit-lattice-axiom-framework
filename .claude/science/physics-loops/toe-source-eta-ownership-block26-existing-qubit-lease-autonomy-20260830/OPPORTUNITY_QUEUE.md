@@ -3,10 +3,11 @@
 1. **Now:** prove the arbitrary finite complete-carrier tensor theorem and
    execute its projectivity and one-debit mutations.
 2. **Now:** execute the fixed-point-free claimant-exchange symmetry gate,
-   the three-cycle extension, and the strongest joint recorded-owner
-   counterroute on the same physical family.
-3. **Now:** test every exact common-target clique of up to six fronts using
-   the existing pointer shell, including singleton equality and one debit.
+   the three-cycle extension, and a physical equal-mixture append-channel
+   counterroute on the same family.
+3. **Now:** test every separately supplied exact common-target subset of up
+   to six fronts by mixing literal append channels, including all stored
+   labels, singleton equality, STOP completion, and one debit on success.
 4. **If the partial-overlap pair bridge is positive:** generalize the owner
    registry to a bounded-degree conflict graph with exact all-window
    consistency and no hidden global phase.

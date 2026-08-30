@@ -1,7 +1,7 @@
 loop_id: toe-source-eta-ownership-block26-existing-qubit-lease-autonomy-20260830
 block: source_eta_26
-status: active_preregistered
-phase: repaired_physical_append_mixture_static_gate
+status: content_pinned_unexecuted
+phase: source_committed_static_safe_awaiting_first_execution
 branch: physics-loop/toe-source-eta-ownership-block26-existing-qubit-lease-autonomy-20260830
 parent_commit: 673ebcc4e25d528e82829a53e43b7e8aa8f4e790
 parent_pr: 7811
@@ -10,7 +10,7 @@ minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 campaign_started_utc: 2026-08-30T12:20:44Z
 campaign_deadline_utc: 2026-08-31T12:20:44Z
 target_claim_type: bounded_theorem
-actual_current_surface_status: preregistered_unexecuted
+actual_current_surface_status: content_pinned_unexecuted
 trace_class: direct_blocker_attack
 reachability_to_target: closes_or_sharply_bounds_existing_qubit_lease_bridge_above_Block24_and_Block25
 active_route: existing_qubit_recorded_lease_with_exact_disjoint_sector_tensorization
@@ -21,7 +21,12 @@ gravity_pr_state_at_launch: OPEN_CLEAN_no_newer_gravity_PR
 review_loop_allowed: false
 audit_edit_allowed: false
 axiom_edit_allowed: false
-independent_audit_status: unset
+runner_source_commit: 82e940b22742112f606049756f37a7debc29c42a
+runner_source_sha256: c728895b949f2e4db7adc3d810fe6d026fdb53431db354282faf52b3fbd6e72f
+declared_input_count: 43
+independent_audit_status: three_static_scopes_SAFE_conditional_on_manifest_refresh_and_source_pin
+static_gate_source_sha256: fa944ecc0e4528f3995e968f91808df7214008168c68268a444601c58015ebfa
+next_action: write_separate_source_pin_then_execute_once_to_new_nonoverwriting_cache
 obligation_retirement: 0
 toe_percentage_movement: 0
 toe_records: 95_92_50

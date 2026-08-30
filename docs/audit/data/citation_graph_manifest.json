@@ -1,6 +1,6 @@
 {
- "edge_count": 16279,
- "node_count": 5661,
+ "edge_count": 16282,
+ "node_count": 5662,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -461,6 +461,10 @@
   "admissibility_d4_directed_action_transfer_record_generator_interface_gate_boundary_bounded_theorem_note_2026-08-30": {
    "deps_hash": "679b3504571d",
    "out_degree": 7
+  },
+  "admissibility_d4_existing_qubit_finite_lease_tensor_physical_convex_collision_channel_bounded_theorem_note_2026-08-30": {
+   "deps_hash": "867ce644c8a1",
+   "out_degree": 3
   },
   "admissibility_d4_fixed_l24_record_law_discriminator_boundary_bounded_theorem_note_2026-08-25": {
    "deps_hash": "c8eee4235fc9",

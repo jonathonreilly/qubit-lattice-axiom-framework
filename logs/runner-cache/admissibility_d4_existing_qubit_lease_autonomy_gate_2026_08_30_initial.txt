@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_existing_qubit_lease_autonomy_gate_2026_08_30.py
+runner_sha256: c728895b949f2e4db7adc3d810fe6d026fdb53431db354282faf52b3fbd6e72f
+input_fingerprint_sha256: d11cbc8773aa727a21b2011b3c3d4d7792816880e22a1d80a1cfa3b551a297a7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 528.61
+status: ok
+----- stdout -----
+PASS freeze
+PASS literal_Block24_channel_import
+PASS complete_carrier_geometry
+PASS finite_hard_core_family
+PASS hard_core_excludes_Block25_pair
+PASS finite_tensor_CPTP
+PASS tensor_order_independence
+PASS projective_consistency
+PASS carrier_family_covariance
+PASS relative_ownership_only
+PASS Blank_debit_and_classical_Record_QND
+PASS renewal_boundary
+PASS pair_exchange_symmetry
+PASS deterministic_pair_boundary
+PASS three_cycle_boundary
+PASS kinematic_one_owner_coupling
+PASS kinematic_owner_preparation
+PASS common_target_clique
+PASS unsharp_partial_overlap
+PASS collision_old_Record_QND
+PASS sectorized_singleton_reduction
+PASS negative_claim_demoted
+PASS scope_guards
+PASS mutations=25/25 selected_64_only,admit_partial_overlap,global_all_or_none_stop,bad_row,postselected_containment,absolute_owner_claim,initial_implies_renewal,improper_pair_map,break_claimant_exchange,coordinate_winner,allow_double_grant,frozen_triangle_source,independent_owner_state,delete_owner_outcome,single_source_clique,drop_clique_winner,delete_clique_stop,double_clique_writer,double_writer_branch,delete_pair_stop,overwrite_other_record,raw_mixture_singletons,incomplete_frames,ship_negative_terminal,promote_scope
+WITNESS pair_anchors=(0, 0, 0),(-19, -1, 0)
+WITNESS pair_targets=(-9, 0, 0),(-10, -1, 0)
+WITNESS pair_q=1/4
+WITNESS pair_commutator_norm_squared=3/8
+WITNESS named_E11_principal_fiber_no_write_eigenvalues=[1/4, 3/4]
+WITNESS deterministic_safe_invariant_grants=((0, 0),)
+WITNESS renewal_initial_overlap=0 returned_overlap=64
+per_element: checked 1,176 literal success factors, exact rows, STOP algebra, selected-fiber effects, and physical mutations
+per_site: checked 224-site carriers, current/target intersections, Blank debit, output-owner decoding, and returned overlap
+per_mode: checked all 84 current labels, 63 nonempty common-target subsets, 24 cubic frames, and source-label covariance
+per_block: checked full anchored channels, arbitrary finite disjoint tensor algebra, physical pair/clique mixtures, and four Record sectors
+lattice_wide: checked and not executed — no endogenous registry, renewal, Blank production, invocation/rate, gravity, Born derivation, retention, obligation retirement, or TOE closure is constructed
+TERMINAL: CONDITIONAL-FINITE-LEASE-TENSOR-AND-PHYSICAL-CONVEX-COLLISION-CHANNELS-POSITIVE
+SCOPE: supplied finite disjoint carriers, separately supplied common-target subsets, and the exact q=1/4 pair; collision-law identity, renewal, firing, rate, retention, obligation retirement, and TOE closure remain open; deterministic descriptor classifications are diagnostics, not impossibility claims
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

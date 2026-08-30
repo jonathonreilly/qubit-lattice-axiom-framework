@@ -1,11 +1,11 @@
 # Block26 runner source pin
 
-source_sha256: c728895b949f2e4db7adc3d810fe6d026fdb53431db354282faf52b3fbd6e72f
-source_commit: 82e940b22742112f606049756f37a7debc29c42a
+source_sha256: 977b26b38eb46b71c2cccccc9e84a6b0679af56e5d0d1a3f32a3fd659558d087
+source_commit: e6081b33781d916588171e98e0df11bcc5f7bc8e
 declared_input_count: 43
-input_fingerprint_sha256: d11cbc8773aa727a21b2011b3c3d4d7792816880e22a1d80a1cfa3b551a297a7
+input_fingerprint_sha256: fc1a37a36858dbd97ef485c950fd4b70ede8c102d065164ab99c3fe8b4faecc2
 canonical_cache: logs/runner-cache/admissibility_d4_existing_qubit_lease_autonomy_gate_2026_08_30.txt
-state: content_pinned_unexecuted
+state: final_packet_content_pinned_awaiting_canonical_reproduction
 
 The pin is deliberately outside `AUDIT_INPUT_PATHS` to avoid a
 self-referential input fingerprint. The runner verifies its source SHA against

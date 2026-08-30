@@ -1,15 +1,18 @@
-# Block26 PR backlog
+# Block26 PR delivery
 
-No PR is open for Block26.
+PR `#7812` is open:
 
-If the evidence lands cleanly, open one stacked PR on Block25 with:
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7812
+```
 
-- title containing `[physics-loop]`, the Block26 slug, `claim_type`, and an
-  honest bounded/conditional status;
-- source, canonical cache, theorem note, loop packet, N1--N8 landing sidecar,
-  and citation-graph acknowledgment;
-- no review-loop invocation, audit edit, merge, axiom edit, obligation
-  retirement, or TOE-score change.
+It is stacked on Block25 PR `#7811` and carries the source, initial and final
+content-bound caches, theorem note, loop packet, N1--N8 demotion sidecar,
+postexecution panel, and citation-graph acknowledgment.
 
-Before opening, recheck latest open PRs and record whether any concurrent
-gravity/source branch changes the portfolio ranking or overlaps files.
+The live PR sweep found no gravity/connection PR newer than `#7803` and no
+file overlap with its physics source/note/cache. Its conditional action
+coefficients do not change the selected repeated Record-process route.
+
+No review-loop invocation, audit verdict edit, merge, axiom edit, obligation
+retirement, or TOE-score change was performed.

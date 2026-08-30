@@ -9,9 +9,9 @@ invocation, renewal, Blank supply, rate, or a general process law.
 
 The reconciled canonical reproduction is also green against the final packet:
 `23/23` science checks, `25/25` mutations, `TOTAL: PASS=24 FAIL=0`, exit zero,
-and empty stderr. Open one stacked Block26 science PR on Block25 without
-review-loop, merge, audit edits, axiom edits, obligation retirement, or
-TOE-score changes.
+and empty stderr. Stacked Block26 PR `#7812` is open on Block25. Review-loop,
+merge, audit edits, axiom edits, obligation retirement, and TOE-score changes
+remain outside this campaign.
 
 The postexecution panel selects one two-use returned-tip causal diamond as the
 next exact block. Start from disjoint carriers at `0` and `27 e1`; after one

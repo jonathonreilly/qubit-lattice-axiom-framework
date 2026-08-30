@@ -376,14 +376,11 @@ def main() -> int:
     odds = {beta: Fraction(beta, 1 + beta) for beta in (1, 2)}
     check("equal_z_discriminator", fixtures_ok and odds == {1: Fraction(1, 2), 2: Fraction(2, 3)}, f"odds={odds}", results)
 
-    primary_terminal = "CUBIC-RESPONSE-SYMMETRY-UNDERSELECTED-IN-G_COV"
-    terminal_ok = (
-        not derived_cb
-        and projected == (Fraction(1), Fraction(2))
-        and repeatability_obstruction
-        and third_use_failure
-        and relocation
-    )
+    # Several registered side findings are simultaneously true.  The exact
+    # all-use finite-memory theorem takes terminal precedence; the G_cov,
+    # G_fin,2, and thermal findings remain controls rather than extra terminals.
+    primary_terminal = "FINITE-EXACT-INDEFINITE-REPEATABILITY-OBSTRUCTED-FOR-NONTRIVIAL-APPEND-IN-G_FIN_INFINITY"
+    terminal_ok = nonunital and entropy_drop > 0 and repeatability_obstruction
     check("terminal_scope", terminal_ok, primary_terminal, results)
 
     mutations = {
@@ -426,7 +423,7 @@ def main() -> int:
     print("per_block: checked fixed two-ready-factor uses one and two, explicit third-use change, and the exact finite-memory all-use entropy obstruction; no all-history positive instrument was constructed.")
     print("lattice_wide: checked and not executed — G_extensive transport/archive, distributed bath ownership, local-infinite process, physical clock, action bridge, gravity source, and full mark-kernel derivation remain live.")
     print(f"PRIMARY_TERMINAL: {primary_terminal}")
-    print("SIDE_BOUNDARIES: G_fin,infinity nontrivial append obstructed at exact hypotheses; named G_fin,2 has memory/lock failure; G_extensive and visibly lumpable memory routes live.")
+    print("SIDE_BOUNDARIES: G_cov leaves beta=1 and beta=2; named G_fin,2 has memory/lock failure; KMS data relocate beta; G_extensive and visibly lumpable memory routes live.")
     print("ACCOUNTING: factor two supplied not predicted; obligation retirement=0; TOE percentage movement=0; audit/axiom/gravity changes=0.")
     passed_count = sum(passed for _, passed, _ in results)
     failed_count = len(results) - passed_count

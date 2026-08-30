@@ -103,6 +103,17 @@ TOE percentage movement: 0
 No selector, factor-two law, process, action bridge, physical clock, gravity
 source, axiom change, approved primitive, or audit verdict is supplied.
 
+## Imported framework surfaces
+
+The conditional writer target comes from the
+[Block19 pair-factor QND writer](ADMISSIBILITY_D4_PAIR_FACTOR_QND_OCCURRENCE_SELECTOR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-29.md).
+The route-selection context comes from the
+[Block20 directed action/transfer interface gate](ADMISSIBILITY_D4_DIRECTED_ACTION_TRANSFER_RECORD_GENERATOR_INTERFACE_GATE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-30.md).
+The
+[minimal axioms](MINIMAL_AXIOMS_2026-06-29.md)
+are used only at their declared lattice, possibility, covariant-distribution,
+and permanent-Record boundary. Their statuses are not promoted here.
+
 ## Conditional target inherited from Block19
 
 The conditionally imported Block19 family is

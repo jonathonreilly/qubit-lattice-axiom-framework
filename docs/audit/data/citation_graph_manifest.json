@@ -1,6 +1,6 @@
 {
- "edge_count": 16264,
- "node_count": 5655,
+ "edge_count": 16267,
+ "node_count": 5656,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -425,6 +425,10 @@
   "admissibility_d4_affine_lineage_binary_record_multi_join_repeatability_selector_boundary_bounded_theorem_note_2026-08-29": {
    "deps_hash": "c6f20e8a8c35",
    "out_degree": 5
+  },
+  "admissibility_d4_autonomous_reusable_bath_complement_blind_selector_gate_boundary_bounded_theorem_note_2026-08-30": {
+   "deps_hash": "9f639a9f097d",
+   "out_degree": 3
   },
   "admissibility_d4_block208_affine_six_record_h1_decoder_center_corner_qnd_dilation_boundary_bounded_theorem_note_2026-08-28": {
    "deps_hash": "e3b0c44298fc",

@@ -6,7 +6,7 @@ branch: physics-loop/toe-source-eta-ownership-block20-directed-action-transfer-r
 parent_commit: ac643ece3f0293400ef458581db5615836e41564
 origin_main: 3cc632921c36aa90266c5c62e56816577ce59a0a
 minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
-preregistration_commit: 6c5281743fcab608d8983d4cf633aa1515c6eed2
+preregistration_commit: 6c5281743f77131abd62a798c2e88a65d3dba634
 block19_result_commit: 278abf6cd9d4de21a9b052b869a6f5aa9d2f42c3
 block19_pr: 7805
 latest_connection_pr: 7803

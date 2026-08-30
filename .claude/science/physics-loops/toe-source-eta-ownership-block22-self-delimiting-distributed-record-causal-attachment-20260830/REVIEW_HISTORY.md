@@ -79,4 +79,12 @@ PR body, execution history, and review history. It does not edit an audit
 verdict or obligation ledger.
 
 The result packet committed at
-`9165b35041042e169b19e73fdd6fd9537c8783cd`. Pull-request delivery is pending.
+`9165b35041042e169b19e73fdd6fd9537c8783cd`.
+
+## Delivery
+
+- stacked pull request: `#7808`;
+- base: `physics-loop/toe-source-eta-ownership-block21-autonomous-reusable-bath-complement-blind-selector-20260830`;
+- branch: `physics-loop/toe-source-eta-ownership-block22-self-delimiting-distributed-record-causal-attachment-20260830`;
+- local primary and independent cache reproduction: byte-identical; and
+- independent audit remains unset.

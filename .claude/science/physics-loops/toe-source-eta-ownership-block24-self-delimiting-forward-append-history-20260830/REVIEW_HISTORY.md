@@ -118,3 +118,6 @@ targets, literal scalars, symbolic `P(n)->P(n+1)`, QND/tip predicates, actual
 factor bindings, cache dependencies, and relocated-writer rejection. Neither
 verdict is an execution, review-loop outcome, audit verdict, obligation
 retirement, or TOE-score move.
+
+The accepted second repair and its provenance were committed, without target
+execution, at `e55cc32326f9481466a47f4c438023930041f8de`.

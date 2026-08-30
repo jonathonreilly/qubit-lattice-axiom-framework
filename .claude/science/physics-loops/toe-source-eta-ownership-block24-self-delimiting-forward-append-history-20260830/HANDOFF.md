@@ -69,6 +69,8 @@ physical validation; writer sites enter the actual carrier union; and a real
 `(99,99,99)` relocated-writer mutation must reject. Two independent static
 challengers returned `SAFE TO COMMIT/REPIN` for exact source SHA-256
 `e7a581904cb65eb221470fad1edb3430537da64c88f0a50e5973909399bc529b`.
-No execution of that source has occurred.
+The accepted source and provenance were committed at
+`e55cc32326f9481466a47f4c438023930041f8de`. No execution of that source has
+occurred.
 
 No review-loop is authorized. Independent audit remains unset.

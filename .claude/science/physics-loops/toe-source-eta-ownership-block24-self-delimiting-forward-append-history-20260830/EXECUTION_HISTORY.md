@@ -105,4 +105,6 @@ to reject.
 Two independent static challengers accepted exact repaired source SHA-256
 `e7a581904cb65eb221470fad1edb3430537da64c88f0a50e5973909399bc529b`
 for commit and repin. They did not import, compile, execute, or edit it. Runtime
-and every predicate after the prior timeout remain unverified.
+and every predicate after the prior timeout remain unverified. The accepted
+source and provenance were committed at
+`e55cc32326f9481466a47f4c438023930041f8de` before execution.

@@ -1,9 +1,10 @@
 loop_id: toe-source-eta-ownership-block22-self-delimiting-distributed-record-causal-attachment-20260830
 block: source_eta_22
-status: corrected_preregistration_draft
+status: preregistration_frozen_runner_absent
 phase: exact_povm_common_cubic_radial_pointer_live_to_record_writer
 branch: physics-loop/toe-source-eta-ownership-block22-self-delimiting-distributed-record-causal-attachment-20260830
 parent_commit: e0250e1edee5eb41fe797857f3460dfcf77c736b
+preregistration_commit: d12f2fbab0ef082e40491ad05d02425d6048d628
 origin_main: 3cc632921c36aa90266c5c62e56816577ce59a0a
 minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 latest_record_pr: 7807

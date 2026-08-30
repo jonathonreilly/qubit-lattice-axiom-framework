@@ -1,6 +1,6 @@
 {
- "edge_count": 16267,
- "node_count": 5656,
+ "edge_count": 16271,
+ "node_count": 5657,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -429,6 +429,10 @@
   "admissibility_d4_autonomous_reusable_bath_complement_blind_selector_gate_boundary_bounded_theorem_note_2026-08-30": {
    "deps_hash": "9f639a9f097d",
    "out_degree": 3
+  },
+  "admissibility_d4_block09_six_qubit_povm_radial_product_record_writer_boundary_bounded_theorem_note_2026-08-30": {
+   "deps_hash": "7c0d0e9f873e",
+   "out_degree": 4
   },
   "admissibility_d4_block208_affine_six_record_h1_decoder_center_corner_qnd_dilation_boundary_bounded_theorem_note_2026-08-28": {
    "deps_hash": "e3b0c44298fc",

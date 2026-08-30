@@ -1,314 +1,363 @@
-# Block20 pre-execution No-Go Discipline checklist
+# Block20 post-execution No-Go Discipline checklist
 
 Date: 2026-08-30
 
-Status: PENDING — preregistration scaffold only. No Block20 scientific
-execution, primary runner, cache, independent checker, terminal, or release
-decision exists.
+Status: **PASS for the exact inspected-stack authority/type terminal only.**
+The primary and independent caches are landed and fresh. This checklist is
+ready to land with the author packet. No broader action, transfer, axiom,
+gravity, audit, obligation, or TOE negative claim passes this gate.
 
 ## Release table
 
-| release item | pre-execution status |
+| release item | post-execution status |
 |---|---|
-| exact action/transfer input domain A_AT | PENDING |
-| typed map Phi_AT | PENDING |
-| C_AT definition and membership | PENDING |
-| C_Record definition and membership | PENDING |
-| B_AT projection of C_AT intersect C_Record onto q_f(r)=c beta^n(r) 2^m_f(r) | PENDING |
-| primary evidence | PENDING |
-| independent evidence | PENDING |
-| N1 | PENDING |
-| N2 | PENDING |
-| N3 | PENDING |
-| N4 | PENDING |
-| N5 | PENDING |
-| N6 | PENDING |
-| N7 | PENDING |
-| N8 | PENDING |
-| overall No-Go Discipline verdict | PENDING |
-| negative-claim release | PENDING — no negative claim may ship from this scaffold |
+| exact action/transfer input domain `A_AT` | `NOT FORMED` — the execution froze a six-surface inspection set, not one mathematical action domain |
+| typed map `Phi_AT` | `UNSUPPLIED-ON-INSPECTED-STACK` |
+| `C_AT` definition and membership | `UNDEFINED-NOT-EMPTY` because `Phi_AT` is absent |
+| `C_Record` definition and membership | independent contract preserved; image-membership test not executed because there is no image |
+| `B_AT` projection onto `q_f(r)=c beta^n(r) 2^m_f(r)` | `UNDEFINED-NOT-EMPTY` because `C_AT` is undefined |
+| primary evidence | `PASS=12 FAIL=0`; hostile mutations rejected `15/15` |
+| independent evidence | `PASS=7 FAIL=0`; hostile mutations rejected `10/10`; no primary import |
+| N1 | `PASS` — six normalized literal candidate families attempted; all broader mechanisms kept live |
+| N2 | `PASS` — raw walls collapsed to one inspected-interface wall; downstream cone/process obligations excluded |
+| N3 | `PASS` — hidden operations and scope assumptions made explicit or prohibited |
+| N4 | `PASS` — residuals matched exactly; Block18 process output dropped as interface evidence |
+| N5 | `PASS` — five substantive resolution lines landed in the primary cache |
+| N6 | `PASS` — primitive, physical-construction, convention, and governance routes kept distinct |
+| N7 | `PASS` — strongest positive steelman accepted as a scope limit and answered for the narrow terminal |
+| N8 | `PASS` — cross-cycle echoes checked without importing their conclusions |
+| overall No-Go Discipline verdict | `PASS` for the exact terminal below |
+| negative-claim release | `READY-TO-LAND` for the exact terminal only; universal no-go and axiom/TOE moves prohibited |
 
-## Prospective claim firewall
+## Exact released boundary
 
-The only current type statement is:
+```text
+DIRECTED-ACTION/TRANSFER-TO-PERMANENT-RECORD-APPEND-INTENSITY-INTERFACE-UNSUPPLIED-ON-INSPECTED-STACK
+```
 
-> AUTHORITY/INTERFACE-UNSUPPLIED.
+This says that no member of the frozen six-surface source stack literally
+supplies all nine fields of the required directed coefficient-to-intensity
+bridge. It does not say that the mathematical image is empty or that another
+bridge cannot be built.
 
-The registered foundation does not itself instantiate a typed
-action/transfer-to-permanent-Record append-edge intensity map. Before such a
-map is frozen, C_AT is undefined rather than empty.
+The type consequences are exact:
 
-The later evaluator must distinguish these outcomes:
+```text
+Phi_AT : UNSUPPLIED-ON-INSPECTED-STACK
+C_AT   : UNDEFINED-NOT-EMPTY
+B_AT   : UNDEFINED-NOT-EMPTY
+```
 
-| future outcome | eligible interpretation | current status |
-|---|---|---|
-| Phi_AT is never frozen | interface remains unsupplied | PENDING — not an empty-cone result |
-| a frozen map yields a one-point B_AT | positive scoped action/transfer selection theorem | PENDING |
-| a frozen map yields a multiple-point B_AT | literal-bridge-scoped underselection candidate | PENDING — requires final N1-N8 |
-| exhaustive classification yields an empty B_AT | literal-bridge-scoped no-compatible-ray candidate | PENDING — requires final N1-N8 and does not make C_AT empty |
-| one candidate projection fails | partial failed construction | PENDING — cannot be promoted to an action no-go |
+No exponentiation, modulus square, arrow, cadence, row normalization,
+transfer logarithm, reverse-edge deletion, positive scaling, addition, or
+convex mixing was inferred from an action or transfer object.
 
-No future wording may infer exponentiation, squaring, an arrow, cadence,
-normalization, a generator logarithm, positive scaling, addition, or convex
-mixing from an action/transfer object unless the frozen map proves or supplies
-that operation.
+## Evidence intake and exact hashes
 
-Any eventual terminal is restricted to the literal supplied bridge and its
-exact carrier, boundary state, cadence, locality, arity, process class, and
-equivalence relation. A universal action no-go, axiom-necessity claim, gravity
-no-go, audit upgrade, obligation retirement, or TOE conclusion is prohibited.
+Frozen preregistration commit:
+`6c5281743f77131abd62a798c2e88a65d3dba634`.
 
-## Evidence intake
+Primary-source commit:
+`7c595093d993312e238264279937691b7c23b55a`.
 
-| artifact | required later | current status |
-|---|---|---|
-| primary source path and digest | exact frozen source | PENDING — no Block20 source exists |
-| primary cached stdout path and digest | fresh execution with honest totals | PENDING — no Block20 cache exists |
-| primary hostile mutations | named changes to type, arrow, normalization, detailed balance, cone closure, and scope | PENDING |
-| independent source and digest | separately implemented reconstruction | PENDING — no checker exists |
-| independent cached stdout and digest | fresh independent execution | PENDING — no cache exists |
-| primary/independent non-import certificate | source-level and execution-level independence | PENDING |
-| five-line N5 certificate | substantive cache lines at all five resolutions | PENDING |
-| checklist landing | checklist and future cache must land with any negative claim | PENDING |
+Execution commit:
+`f763be4c110040223026158a94e594f18df80ca7`.
 
-Prior artifacts are preregistration inputs only. No prior execution total,
-formula, or review status is a Block20 execution result.
-
-## N1 — normalized alternative-route preregistration
-
-Each later route must be normalized by
-
-> primary object or formulation; load-bearing mechanism or invariant; terminal
-> obligation.
-
-The final checklist must replace every route status with the allowed honesty
-marker and exact evidence. At preregistration, every route remains PENDING.
-
-| ID | normalized family | what the route will attempt | exact future obligation | evidence | honesty status |
-|---|---|---|---|---|---|
-| R1 | local action increment; explicitly typed intensity functional; directed-generator classification | map one admitted local action/transfer increment to each legal append edge without inserting the desired beta | freeze Phi_AT and prove positivity, conservation, covariance, permanence, locality, and B_AT classification | PENDING | PENDING |
-| R2 | August 11 four-state conditional; literal null-to-occupied projection; scoped nonempty-generator witness | project equation (5) of the local geometry/Record bond-transfer note to directed append edges | supply cadence and carrier lift, prove the diagonal generator, and decide whether its mark-resolved image intersects B_AT | PENDING | PENDING |
-| R3 | monotone Record histories; oriented path-space action; normalized cylinder-to-hazard recovery | weight only append-compatible histories and derive conditional local hazards | prove normalization, consistency, locality, process existence, and a typed relation to the admitted action | PENDING | PENDING |
-| R4 | absorbing transfer; invariant occupied sectors; permanent reduced Record law | enlarge or modify a positive transfer so occupied Record sectors are absorbing without reverse erasure | prove the reduced semigroup is conservative, append-only, physical at the frozen scope, and classifiable in B_AT | PENDING | PENDING |
-| R5 | enlarged Record-plus-auxiliary state; explicit boundary-state reduction; irreversible Record marginal | retain reversible or unitary dynamics on a larger space while deriving an append-only marginal | prove no hidden reset, arrow, cadence, or normalization import and derive the exact Record decoder | PENDING | PENDING |
-| R6 | PR #7803 fixed-placement action coefficients; mixed-placement composition; normalized history decoder | extend the conditional positive two-order coefficients beyond three fixed placements | derive composable history weights or a full-action map, then prove normalization, Record semantics, and B_AT projection | PENDING | PENDING |
-| R7 | small-step positive transfer family; embeddability or controlled continuous limit; local Metzler generator | derive rather than assume a continuous-time directed generator | prove embeddability, locality, positivity, permanence, and the exact relation between transfer step and cadence | PENDING | PENDING |
-
-These are mathematical families, not different agents or artifact types.
-Failure of R2 or R6 alone cannot close R1, R3, R4, R5, or R7.
-
-Live routes outside any narrow action/transfer terminal must remain explicit:
-
-| outside family | why it changes the target | status |
-|---|---|---|
-| autonomous reusable bath | derives coupling ratios and cadence from a different microscopic object | PENDING — live fallback |
-| distributed pointer encoder | changes the carrier and QND/readout constraints | PENDING — live fallback |
-| compound, correlated, or non-Markov occurrence law | changes event arity or history class | PENDING — live scope exit |
-| owner-governed intensity law | supplies an exact premise through approval rather than deriving it | PENDING — governance only |
-
-N1 status: PENDING.
-
-## N2 — raw-wall and independence preregistration
-
-The raw walls below are provisional. The final evaluator must collapse any
-dependency before counting them:
-
-- W_A: freeze the admitted action/transfer domain and verify its exact status;
-- W_M: supply and type Phi_AT without implicit action-to-rate conventions;
-- W_G: freeze C_Record and prove which image members are positive,
-  conservative, covariant, append-only permanent-Record generators;
-- W_C: classify C_AT and B_AT under the exact equivalence relation;
-- W_P: prove finite-history normalization and every claimed local-infinite
-  process obligation.
-
-| pair | closing first automatically closes second? | closing second automatically closes first? | independent after collapse? |
+| artifact | SHA-256 | Git blob | execution evidence |
 |---|---|---|---|
-| W_A, W_M | PENDING | PENDING | PENDING |
-| W_A, W_G | PENDING | PENDING | PENDING |
-| W_A, W_C | PENDING | PENDING | PENDING |
-| W_A, W_P | PENDING | PENDING | PENDING |
-| W_M, W_G | PENDING | PENDING | PENDING |
-| W_M, W_C | PENDING | PENDING | PENDING |
-| W_M, W_P | PENDING | PENDING | PENDING |
-| W_G, W_C | PENDING | PENDING | PENDING |
-| W_G, W_P | PENDING | PENDING | PENDING |
-| W_C, W_P | PENDING | PENDING | PENDING |
+| `scripts/admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.py` | `7da64acf8d306fa502cb319233a8aa2532b845a7776735fd46c77ed6912cb482` | `e109efa41888e71a04413778615d3bb2e2466385` | committed alone at the primary-source commit; reads the frozen packet and named source stack |
+| `logs/runner-cache/admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.txt` | `fd2c5908db5239e3bf6cf9a88e1f8bd3650d05a2fa7007f74eb8eccd18f206df` | `3a0e64deaeb9f1f9d61d240aab7e80e8669d706b` | fresh landed cache; `12/12`, `15/15`, `CONE_STATUS: UNDEFINED-NOT-EMPTY` |
+| `scripts/independent_admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.py` | `7cc01158decbc305141e422c753771a70c6000ef764191006450b44175fba825` | `6287f6cac6fb6fa56fe7e54ea64007c633400edb` | separately implemented; its audit-input list excludes both runners and it imports no primary code |
+| `logs/runner-cache/independent_admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.txt` | `995fa7b9e5a3b8f985b38fe299cd733f8e42ad731c29b22434c707a6e7cb4c68` | `4ad42357ebf252631006865110525d737cf7ce6f` | fresh landed cache; `7/7`, `10/10`, `C_AT=UNDEFINED B_AT=UNDEFINED NOT_EMPTY=true` |
 
-AUTHORITY/INTERFACE-UNSUPPLIED is not an additional empty-cone wall. It is the
-reason W_A and W_M must be frozen before C_AT exists.
+The primary matrix checked six named surfaces over nine required fields and
+found no complete row; the exact missing-field counts were
+`(6,8,6,7,6,7)`. The independent checker reconstructed the source typing,
+Perron boundaries, detailed-balance identity, equal-`Z` fixtures, mutations,
+and terminal without reading a remote PR object or importing the primary.
 
-N2 status: PENDING.
+## N1 — normalized alternative routes
 
-## N3 — hidden-condition scan template
+Each adjudicated route is normalized as
 
-| possible hidden condition | required later treatment | classification |
+> primary object or formulation; load-bearing mechanism or invariant;
+> terminal obligation.
+
+Here `ATTEMPTED` means the literal source/type test was executed. It does not
+mean that an unsupplied projection or new physical construction was silently
+performed.
+
+| ID | normalized candidate family | executed attempt and terminal obligation | exact evidence | honesty status |
+|---|---|---|---|---|
+| R1 | minimal foundation; neighbor-dependent admissibility plus permanent Records; obtain a native action source and directed intensity bridge | inspect the current minimal axioms and approved-premise registry for all nine bridge fields | `docs/MINIMAL_AXIOMS_2026-06-29.md:116-123`; matrix row `minimal_axioms`, missing `6/9` fields | `ATTEMPTED` — no action/transfer source, six-mark decoder, append edge, intensity map, normalization, or cadence is supplied on this surface |
+| R2 | supplied post-Record interfaces; conditional kernel/rule semantics; obtain a physical action-derived kernel, orientation, and clock | inspect all four exact post-Record ledger objects rather than treating interface semantics as the missing dynamics | four `docs/audit/data/ledger/po/post_record_*_2026-06-06.json` rows are `meta/unaudited` or `bounded_theorem/unaudited`; matrix row missing `8/9` | `ATTEMPTED` — the semantics activate only after a kernel/rule is supplied |
+| R3 | August 11 four-state transfer; symmetric positive Perron law and reversible heat bath; obtain a one-site permanent six-mark append generator | inspect the literal carrier, transfer, sampler, decoder, permanence, direction, and cadence | `docs/ADMISSIBILITY_LOCAL_GEOMETRY_RECORD_BOND_TRANSFER_REFLECTION_RESPONSE_CONNECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md:233,240-242,258`; matrix row missing `6/9` | `ATTEMPTED` — the literal sampler is Record-erasing and lacks the six-mark directed bridge; a directed projection remains a new live rule |
+| R4 | August 10 null-anchored joint Perron transfer; positive normalized joint law; obtain a selected causal append kernel and instrument | inspect whether the extensional law and causal Record update are selected | `docs/ADMISSIBILITY_NULL_ANCHORED_JOINT_GEOMETRY_RECORD_TRANSFER_PERRON_RESPONSE_SELECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md:201,279-285`; matrix row missing `7/9` | `ATTEMPTED` — the extensional kernel and autonomous causal Record update remain unsupplied |
+| R5 | canonical two-TT transfer; positive constraint-preserving propagation; obtain a selected transfer and transition-based Record source-current instrument | inspect the exact transfer-selection and decoder residual | `docs/ADMISSIBILITY_CANONICAL_TWO_TT_POSITIVE_TRANSFER_RECORD_SOURCE_CONTINUITY_LSTAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md:36-37,134,142`; matrix row missing `6/9` | `ATTEMPTED` — no selected transfer, Record instrument, or source-current decoder is supplied |
+| R6 | PR `#7803` fixed-placement coefficients; positive action/crossing reinforcement; obtain normalized mixed histories and a permanent-Record intensity decoder | inspect the pinned conditional surface at `dac92a5ed9a8ddaa90aa4300223a2c77fb4cd203` | `PREFLIGHT_WITNESSES.md:68-69,156-175`; matrix row missing `7/9` | `ATTEMPTED` — no mixed history, full action, decoder, intensity map, normalization, arrow, or cadence is supplied |
+
+The attempted source families support only the finite inspected-stack result.
+The following materially different routes are deliberately outside that
+terminal:
+
+| live route | mechanism that changes the problem | final status |
 |---|---|---|
-| admitted action/transfer source | name exact object, source, status, and quantifiers | PENDING |
-| action/transfer-to-intensity map | state Phi_AT as a typed formula, not prose | PENDING |
-| exponentiation or squaring | derive or declare; never infer from notation | PENDING |
-| time arrow | state boundary/orientation source and its authority | PENDING |
-| cadence or time step | keep physical cadence distinct from a regulator or units quotient | PENDING |
-| normalization | prove row conservation and history normalization at each claimed scope | PENDING |
-| scaling, addition, or convex mixing | prove closure before calling C_AT a cone in the algebraic sense | PENDING |
-| carrier and Record content | freeze blank, mark, auxiliary, and readout state spaces | PENDING |
-| permanence | reject occupied-to-null and repeated-write transitions at the exact state-space level | PENDING |
-| event arity and memory | freeze one-site versus compound and Markov versus history-bearing semantics | PENDING |
-| locality and covariance | freeze range and simultaneous spatial/label symmetry | PENDING |
-| finite versus local-infinite process | state volume, initial-law, measurability, and convergence quantifiers | PENDING |
-| global-rate equivalence | quotient c only if the bridge supplies one common rate-unit equivalence | PENDING |
-| Block19 beta projection | derive B_AT membership on every frozen profile and the equal-Z discriminator | PENDING |
-| August 11 projection | keep equation (5), directed projection, cadence, geometry update, and mark lift separately supplied | PENDING |
-| PR #7803 | retain open/conditional status, positive-multiplier domain, fixed placements, and missing history decoder | PENDING |
-| ordinary detailed balance | do not impose it on the same nontrivial append-only graph | PENDING |
-| registered primitives | read current source notes and grant no selector, action, dynamics, or probability content beyond their scopes | PENDING |
+| oriented monotone histories | derive hazards from normalized append-compatible cylinder weights | `LIVE — NOT EXECUTED` |
+| absorbing transfer | make occupied sectors invariant without same-space reversible erasure | `LIVE — NOT EXECUTED` |
+| enlarged reversible carrier | derive an irreversible Record marginal from an explicit boundary state and auxiliary archive/environment | `LIVE — NOT EXECUTED` |
+| action-derived instrument | supply outcome, normalization, and intensity semantics through an explicit instrument | `LIVE — NOT EXECUTED` |
+| alternative decoder or nonreversible/embeddable transfer | change the codomain or derive a controlled local generator | `LIVE — NOT EXECUTED` |
+| autonomous reusable bath | derive ratios and cadence from a different microscopic object without hidden reset | `LIVE — NOT EXECUTED` |
+| distributed pointer encoder | change the carrier and local QND/readout constraints | `LIVE — NOT EXECUTED` |
+| compound, correlated, or non-Markov law | change event arity or history class | `LIVE — NOT EXECUTED` |
+| owner-governed exact intensity law | supply an extensional premise through approval rather than derivation | `LIVE GOVERNANCE ROUTE — NO PROPOSAL OR APPROVAL` |
 
-The final proof, source, caches, and prose must be rescanned for assumed,
-constructed, standard, framework-provided, bridge-context, background,
-natural, obvious, registered, and canonical language.
+N1 status: **PASS.** Six normalized literal families were attempted, and no
+unexecuted broader family was mislabeled as failed.
 
-N3 status: PENDING.
+## N2 — wall collapse and independence
 
-## N4 — residual-matching template
+The preregistration named five raw walls:
 
-| prospective witness | witness residual | Block20 residual | match and use |
-|---|---|---|---|
-| Block19 pair-factor QND result and handoff | beta survives inside one fresh-ancilla pair-factor grammar; action/transfer selection remains live | whether a separately typed action/transfer bridge defines and selects B_AT | PENDING — route provenance only until exact matching is certified |
-| August 11 local geometry/Record bond-transfer note, equation (5) and lines 239-242 | a reversible single-site sampler exists but erases Records; scheduler and permanent causal update are not inferred | test one explicitly supplied directed projection | PENDING — candidate formula, not proof of physical action selection |
-| open PR #7803 on repaired commit 8f48b5a850 | positive two-order coefficients reinforce on three fixed placements under supplied positive multipliers | normalized mixed-placement/full-action histories and a permanent-Record decoder | PENDING — conditional input only |
-| canonical minimal-axiom note | the registered foundation does not choose a transfer, weights, update, or Record-production dynamics | exact image of a later supplied Phi_AT | PENDING — supports interface typing only and cannot witness an empty cone |
-| Block18 pure-Record process result | finite and local-infinite processes exist for its frozen classical generators | process completion for action-derived image members | PENDING — method provenance only; rates must be rederived |
+- `W_A`: exact action/transfer source domain and status;
+- `W_M`: typed `Phi_AT` without an implicit action-to-rate convention;
+- `W_G`: `C_Record` generator membership;
+- `W_C`: `C_AT`/`B_AT` classification;
+- `W_P`: finite-history and local-infinite process obligations.
 
-Every final witness needs an exact path, line or Git object, authority/status
-check, named residual, and disposition. Nonmatching witnesses must be dropped.
+For the terminal actually released, `W_A` and `W_M` collapse to one wall:
 
-N4 status: PENDING.
+> `W_I`: no literal member of the frozen six-surface stack supplies the
+> complete nine-field directed action/transfer-to-Record intensity interface.
 
-## N5 — rhetoric and resolution scaffold
+The bridge type itself includes its source, domain, and authority status, so
+counting `W_A` separately would double-count the same incomplete interface.
+`W_G`, `W_C`, and `W_P` are downstream construction obligations. They were not
+executed and are not used as negative walls.
 
-No Block20 resolution was executed. A later primary cached stdout must land
-with five honest, substantive lines. The preregistered placeholders are:
-
-    per_element: PENDING — no Block20 runner or cache exists; later evidence must check every frozen action/transfer input and legal append-edge intensity identity.
-    per_site: PENDING — no Block20 runner or cache exists; later evidence must check blank writes, recorded locks, illegal transitions, row conservation, and local covariance.
-    per_mode: PENDING — no Block20 runner or cache exists; later evidence must check the exact C_AT and B_AT coordinates, quotient, and same-Z beta discriminator.
-    per_block: PENDING — no Block20 runner or cache exists; later evidence must check finite histories, ordering or transfer composition, normalization, and boundary cases.
-    lattice_wide: PENDING — no Block20 runner or cache exists; later evidence must state exactly which local-infinite process, convergence, cadence, and global claims were and were not executed.
-
-If a resolution remains outside the executed contract, its later cache line
-must use the honest form checked and not executed — reason rather than imply a
-calculation occurred.
-
-| resolution | exact future object | tested now? | negative scope now |
-|---|---|---|---|
-| per_element | action/transfer inputs and append edges | PENDING | PENDING |
-| per_site | one target, neighborhood, and local decoder | PENDING | PENDING |
-| per_mode | generator-image and beta projection coordinates | PENDING | PENDING |
-| per_block | finite histories or transfer products | PENDING | PENDING |
-| lattice_wide | local-infinite process and convergence claims | PENDING | PENDING |
-
-Any later phrase such as action does not select the generator must be narrowed
-to the literal bridge and only the resolutions actually executed.
-
-N5 status: PENDING.
-
-## N6 — partial closure, primitive, and governance scaffold
-
-The preregistration source reading distinguishes current premise types, but
-the final N6 audit must be rerun against the then-current registry:
-
-| source type | declared scope relevant here | later treatment |
+| raw pair | implication/independence result | final treatment |
 |---|---|---|
-| docs/MINIMAL_AXIOMS_2026-06-29.md | Records form and are permanent; Admissibility determines a neighbor-dependent distribution but does not choose transfer, weights, update, cadence, or Record-production dynamics | PENDING |
-| docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md | units conversion only | PENDING |
-| docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md | OS0 kinetic-form graining only, not dynamics or a selector | PENDING |
-| docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md | pointwise realized-state evaluation only, not a history law, measure, or weighting | PENDING |
+| `W_A`, `W_M` | a complete typed map necessarily fixes its domain and source; source status alone does not supply the map | collapse both into `W_I` |
+| `W_A`, `W_G` | neither would automatically close the other | `W_G` removed from the terminal, so no independent-wall count |
+| `W_A`, `W_C` | classification needs a typed domain and map, not source naming alone | `W_C` is downstream and removed |
+| `W_A`, `W_P` | source status does not prove process existence | `W_P` is downstream and removed |
+| `W_M`, `W_G` | a bridge may output non-generators, while generator criteria do not produce a bridge | logically distinct, but `W_G` is untested and excluded |
+| `W_M`, `W_C` | `C_AT` and `B_AT` are undefined before the map exists | `W_C` is dependent downstream work, not a second wall |
+| `W_M`, `W_P` | an action-image process cannot be tested before the image is formed | `W_P` is dependent downstream work, not a second wall |
+| `W_G`, `W_C` | membership and image classification require separate proofs after a bridge exists | both excluded from this terminal |
+| `W_G`, `W_P` | local generator conditions do not automatically prove a history or local-infinite process | both excluded from this terminal |
+| `W_C`, `W_P` | beta-image classification and process existence do not automatically imply each other | both excluded from this terminal |
 
-| partial-closure path | what it could close | classification |
+Final claimed wall count: **one** (`W_I`). Pairwise independence is therefore
+vacuous after collapse. The evidence is the primary six-by-nine matrix with
+zero complete rows and the independent terminal agreement.
+
+N2 status: **PASS.**
+
+## N3 — hidden-condition scan
+
+| possible hidden condition | executed treatment | classification |
 |---|---|---|
-| frozen derived Phi_AT | W_M and possibly later generator/classification obligations | PENDING — physical derivation route |
-| literal August 11 directed projection | one scoped nonempty candidate | PENDING — supplied bridge candidate, not general selection |
-| PR #7803 composition | one action-coefficient-to-history bridge | PENDING — conditional open input |
-| oriented, absorbing, or enlarged-state construction | arrow and permanence without same-space reversibility | PENDING — live physical routes |
-| one common rate convention | only a state-independent units quotient if explicitly licensed | PENDING — convention, not beta selection |
-| owner-governed exact intensity law | supply the missing extensional formation law | PENDING — approval route, not derivation |
+| admitted source and authority | six exact surfaces frozen; minimal premises, four ledger statuses, August notes, and PR head checked literally | `PASS — EXPLICIT` |
+| typed coefficient-to-intensity map | no prose or notation was promoted into `Phi_AT` | `PASS — UNSUPPLIED` |
+| exponentiation or modulus square | primary hostile mutations reject both; no probability/rate inferred | `PASS — PROHIBITED` |
+| time arrow or reverse-edge deletion | no Euclidean direction was called causal and no erasing edge was discarded | `PASS — PROHIBITED` |
+| cadence, step size, or clock | kept absent; no regulator slice or units reference became physical cadence | `PASS — UNSUPPLIED` |
+| normalization or transfer logarithm | holding terms, history normalization, and embeddability remain separate bridge obligations | `PASS — NOT INFERRED` |
+| addition, positive scaling, or convex mixing | no algebraic cone closure assumed; `C_AT` remains an undefined image | `PASS — NOT INFERRED` |
+| carrier and Record decoder | blank-plus-six-mark target kept distinct from the August 11 four-state carrier and ten-ray weights | `PASS — TYPE MISMATCH EXPLICIT` |
+| permanence | literal occupied-to-null erasure detected; no projection was silently substituted | `PASS — EXPLICIT` |
+| event arity and memory | one-site target kept distinct from slice transfers and unbuilt histories | `PASS — EXPLICIT/UNEXECUTED` |
+| locality and covariance | proper-cubic covariance was one matrix field; it never substituted for missing bridge fields | `PASS — EXPLICIT` |
+| finite or local-infinite process | finite histories, Harris limits, initial laws, and convergence were explicitly not executed | `PASS — OUTSIDE TERMINAL` |
+| common-rate equivalence `c` | no quotient used because no bridge licenses a common state-independent scale | `PASS — UNUSED` |
+| Block19 beta projection | equal-`Z` fixtures reconstructed only as future discriminators; no `B_AT` membership inferred | `PASS — UNDEFINED` |
+| ordinary detailed balance | used only for the same-visible-graph reversible/append-only zero-edge lemma | `PASS — NARROW SCOPE` |
+| approved primitives | current registry and all four source notes reread; none enlarged beyond declared scope | `PASS — CURRENT` |
+| conditional/open status | August/Block19 surfaces and PR `#7803` were not promoted to effective retained authority | `PASS — VISIBLE` |
 
-The absence of Phi_AT from the registered foundation does not imply that a new
-axiom is required. An owner proposal has zero premise weight until approved,
-and approval would supply a premise rather than prove a microscopic action
-theorem.
+The runner, caches, registry, and checklist were rescanned for language that
+could launder a choice as “standard”, “natural”, “canonical”, “framework
+provided”, or “constructed”. The primary `15/15` and independent `10/10`
+hostile mutations cover bridge type, permanence, authority, axiom, empty-cone,
+and TOE scope changes.
 
-N6 status: PENDING.
+N3 status: **PASS.**
 
-## N7 — preregistered hostile steelman
+## N4 — exact residual matching
 
-The strongest current counterargument to any future narrow action no-go is:
+| witness | exact residual | match and disposition |
+|---|---|---|
+| `docs/MINIMAL_AXIOMS_2026-06-29.md:116-123,181-189` and `docs/audit/data/axiom_premise_nodes.json` | permanent Records and a local distribution are supplied, but no action/transfer, transition values, clock, or Record-production process is supplied | `MATCH — USED` for the foundation type boundary only; not an empty-cone witness |
+| four exact `docs/audit/data/ledger/po/post_record_*_2026-06-06.json` objects | history/selection semantics are conditional on a supplied kernel and rule; statuses are meta/unaudited or bounded-theorem/unaudited | `MATCH — USED` to prevent conditional interface semantics from becoming physical dynamics |
+| August 11 local Geometry/Record note at lines `233,240-242,258` | symmetric positive Perron transfer and normalized reversible sampler; literal occupied-to-null erasure; no scheduler or permanent update | `MATCH — USED` for the literal carrier/permanence mismatch and same-graph detailed-balance firewall |
+| August 10 joint Perron note at lines `201,279-285` | normalized positive law exists, while the extensional transition rule and autonomous causal update remain separate | `MATCH — USED` for an inspected transfer boundary only |
+| canonical two-TT note at lines `36-37,134,142` | positive propagation is feasible, but the transfer, Record instrument, and transition-based conserved source-current decoder are not selected | `MATCH — USED` for an inspected transfer boundary only |
+| PR `#7803`, pinned head `dac92a5ed9a8ddaa90aa4300223a2c77fb4cd203`; `PREFLIGHT_WITNESSES.md:68-69,156-175` | fixed-placement positive reinforcement under supplied multipliers; no mixed histories, full action, decoder, intensity, normalization, arrow, or cadence | `MATCH — USED` as conditional fixed-placement input only |
+| Block19 pair-factor note, `docs/ADMISSIBILITY_D4_PAIR_FACTOR_QND_OCCURRENCE_SELECTOR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-29.md:631-633` | `beta` survives and a separately justified action/transfer or bath selector is the next question | `PARTIAL MATCH — USED` for target provenance and equal-`Z` discriminator only; not evidence that a bridge exists or fails |
+| Block18 process note, `docs/ADMISSIBILITY_D4_PURE_RECORD_OCCURRENCE_SELECTION_LUMPABILITY_GATE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-29.md` | finite/local-infinite process methods apply to its own frozen classical rates | `NONMATCH — DROPPED` as interface evidence; action-image rates must first be derived |
 
-> A hostile reviewer should reject the move from an unsupplied interface or one
-> failed literal projection to an empty action image. The August 11 conditional
-> can be turned into a supplied null-to-occupied generator once cadence and the
-> mark lift are stated; an oriented path-space action can normalize monotone
-> histories directly; an absorbing transfer can make recorded sectors
-> invariant; and a reversible or unitary enlarged-state dynamics can generate
-> an irreversible Record marginal from an explicit boundary state. PR #7803
-> adds a separate positive fixed-placement action input that may compose after
-> mixed placements are controlled. Each mechanism has a concrete terminal
-> obligation: freeze Phi_AT, prove generator and process membership, and
-> classify B_AT. Until those routes are executed, neither an empty B_AT for a
-> frozen literal bridge nor a universal action obstruction is established.
+No residual was upgraded from “missing from this source” to “mathematically
+impossible”. No citation to Block18 or Block19 was used to stand in for the
+missing action/transfer bridge.
 
-Evidence answering this steelman: PENDING.
+N4 status: **PASS.**
 
-N7 status: PENDING.
+## N5 — rhetoric and resolution audit
 
-## N8 — cross-cycle echo scaffold
+The primary cache landed at execution commit
+`f763be4c110040223026158a94e594f18df80ca7`. Lines 16–20 are the required five
+substantive resolution statements:
 
-| prior echo | mechanism that changed or could change the wall | required Block20 treatment | status |
+```text
+per_element: checked the exact source anchors and nine required bridge fields on six named candidate surfaces; no append-intensity element was fabricated.
+per_site: checked the August 11 four-state carrier, missing six-mark decoder, literal occupied-to-null erasure, and same-graph detailed-balance zero-edge lemma.
+per_mode: checked and not executed — C_AT and B_AT are undefined because no typed bridge is frozen; no action coefficient was exponentiated, squared, or normalized.
+per_block: checked and not executed — the positive Perron and fixed-placement action objects do not supply a normalized directed permanent-Record history or cadence.
+lattice_wide: checked and not executed — no local-infinite action-derived Record process, physical clock, conserved gravity source, or full-lattice generator is claimed.
+```
+
+| resolution | what was actually checked | scope disposition |
+|---|---|---|
+| per-element | exact source anchors and all nine fields on six named surfaces | `EXECUTED`; no intensity element fabricated |
+| per-site | August 11 carrier/decoder/permanence mismatch and zero-edge lemma | `EXECUTED` at the literal source/type level |
+| per-mode | formation of `C_AT` and `B_AT` | `CHECKED AND NOT EXECUTED` because `Phi_AT` is unsupplied |
+| per-block | finite directed histories, composition, normalization, and cadence | `CHECKED AND NOT EXECUTED` because no directed kernel exists |
+| lattice-wide | local-infinite process, physical clock, source, and generator | `CHECKED AND NOT EXECUTED` because no generator exists |
+
+The independent cache separately contains the same five-resolution structure,
+with honest nonexecution at mode, block, and lattice-wide scales. The prose
+therefore supports only “no complete interface on the inspected stack”, never
+“action does not select a generator” without that qualifier.
+
+N5 status: **PASS.**
+
+## N6 — partial closure, primitives, conventions, and governance
+
+The current allowlist contains exactly four premise nodes. Their source notes
+were reread after execution:
+
+| approved source | exact relevant scope | final treatment |
+|---|---|---|
+| `docs/MINIMAL_AXIOMS_2026-06-29.md` | local possibility domain, neighbor-dependent conditional distribution, Records form, one record per site, permanence | `INSPECTED`; supplies no action/transfer, formation site/rate, update, clock, or Record-production process |
+| `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` | units conversion through one dimensionful scale | `INSPECTED`; supplies no dimensionless selector, rate ratio, or cadence |
+| `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` | OS0 kinetic-form graining `c_t=c_s` | `INSPECTED`; supplies no dynamics, selector, readout bridge, or physical time evolution |
+| `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` | pointwise evaluation at one law-admissible realized state | `INSPECTED`; supplies no state choice, measure, probability, history weighting, or boundary condition |
+
+Partial physical closures remain separate from approved premises and from each
+other:
+
+| partial-closure path | what it could close | final classification |
+|---|---|---|
+| newly derived frozen `Phi_AT` | the single inspected-interface wall and later image obligations | `LIVE PHYSICAL DERIVATION — NOT EXECUTED` |
+| explicitly supplied August 11 directed projection | one scoped nonempty generator candidate | `LIVE BRIDGE CANDIDATE — NOT THE LITERAL PARENT RESULT` |
+| PR `#7803` mixed-history/full-action composition | one action-to-history or action-instrument route | `LIVE CONDITIONAL ROUTE — NOT EXECUTED` |
+| oriented, absorbing, nonreversible, or enlarged-state construction | arrow and permanence without same-space reversibility | `LIVE PHYSICAL ROUTES — NOT EXECUTED` |
+| autonomous bath or distributed pointer | a microscopic decoder, ratios, and possibly cadence | `LIVE PHYSICAL ROUTES — NOT EXECUTED` |
+| one common rate convention | only a state-independent units quotient if the eventual bridge licenses it | `CONVENTION ONLY — DOES NOT SELECT BETA` |
+| owner-governed exact intensity law | supply the missing extensional formation law | `LIVE GOVERNANCE ROUTE — NO PROPOSAL OR APPROVAL` |
+
+The current absence of `Phi_AT` is a missing downstream law/interface. It does
+not establish that a new axiom is necessary. A future owner-approved law would
+be premise supply, not a retrospective microscopic derivation, and carries
+zero premise weight before approval.
+
+N6 status: **PASS.**
+
+## N7 — strongest hostile steelman
+
+The strongest actionable counterclaim is:
+
+> The inspected stack is not the space of possible action-to-Record bridges.
+> One may explicitly orient and normalize append-compatible history weights,
+> make recorded sectors absorbing, derive an irreversible marginal from a
+> larger reversible Record-plus-environment carrier, construct an
+> action-derived instrument, or supply a different six-mark decoder. The
+> August 11 positive conditional can seed a directed generator once cadence,
+> mark lift, and physical provenance are supplied, and PR `#7803` may yet
+> compose after mixed placements and the full action are controlled. Baths,
+> distributed pointers, and governed premise supply provide still different
+> routes. Therefore a failed literal scout cannot prove an empty action image
+> or a universal action obstruction.
+
+The evidence agrees with that steelman. Primary cache line 15 explicitly keeps
+oriented histories, absorbing transfers, enlarged carriers, action-derived
+instruments, alternative decoders, baths, and governed supply live. None was
+counted as a failed N1 route.
+
+The exact terminal nevertheless survives the steelman because it quantifies
+only over six named literal surfaces at the frozen source/status snapshot.
+The primary matrix has zero complete rows, and the independent checker agrees
+that the corresponding interface is unsupplied. A future complete bridge
+would close or supersede `W_I`; it would not contradict this frozen-stack
+typing result.
+
+N7 status: **PASS.** The steelman defeats every broader negative formulation
+and leaves the narrow inspected-stack terminal intact.
+
+## N8 — cross-cycle echo audit
+
+| prior echo | mechanism relevant to the current wall | post-execution treatment | status |
 |---|---|---|---|
-| August 11 reversible Record-erasing heat bath | directed projection, absorbing transfer, or enlarged state can change permanence semantics | test the literal projection without inheriting reversibility | PENDING |
-| Block18 pure-Record underselection | completing a process did not supply microscopic selection | rederive every action-image process rather than importing the Harris output | PENDING |
-| Block19 pair-factor underselection | a microscopic family left beta live and explicitly queued action/transfer | project B_AT onto the same beta fixtures with a separately typed bridge | PENDING |
-| PR #7803 fixed-placement reinforcement | composition across mixed placements or the full action may add a history mechanism | keep it conditional and test the missing decoder | PENDING |
-| prior axiom-decision boundaries | downstream theorem, convention, or governed supply can retire an import without proving axiom necessity | keep governance live and separate from derivation | PENDING |
+| August 11 reversible Record-erasing heat bath | a directed projection, absorbing transfer, nonreversible law, or enlarged carrier changes permanence semantics | literal parent inspected; new mechanisms kept live and not inherited silently | `MATCHED` |
+| Block18 pure-Record process completion | a Harris/process proof starts only after rates are supplied | no Block18 rate or process result imported into the undefined action image | `MATCHED AS METHOD; DROPPED AS INTERFACE EVIDENCE` |
+| Block19 pair-factor underselection | the explicit writer leaves `beta` live and queues a separately justified action/transfer or bath selector | equal-`Z` fixtures reconstructed, but `B_AT` left undefined because the bridge is absent | `MATCHED` |
+| PR `#7803` fixed-placement reinforcement | mixed-placement or full-action composition could add a history mechanism | pinned conditional surface inspected; future composition remains live | `MATCHED` |
+| post-Record supplied-interface notes | exact histories become available after a kernel, rule, orientation, and clock/order bridge are supplied | semantics retained conditionally; missing physics not laundered from the interface | `MATCHED` |
+| prior axiom-decision boundaries | physical derivation, convention, and governed supply can close different residuals | no axiom necessity inferred; governance kept separate from derivation | `MATCHED` |
 
-The final N8 search must inspect later ledgers and authority changes rather than
-copy these preregistered echoes as proof.
+The echo search changes the release wording materially: it requires
+“on-inspected-stack”, preserves every positive bridge family, and prevents the
+Block18 process theorem or Block19 writer from being reused as evidence that
+an action-derived process was executed.
 
-N8 status: PENDING.
+N8 status: **PASS.**
 
 ## Ordinary detailed-balance firewall
 
-For a full-support pi on the same state graph, an append edge with
-q(R,R-prime)>0 and permanent prohibition q(R-prime,R)=0 cannot satisfy ordinary
-detailed balance:
+For a full-support `pi` on the same visible state graph, permanence gives
+`q(R',R)=0` for the reverse of an append edge. Ordinary detailed balance then
+gives
 
-    pi(R) q(R,R-prime) = pi(R-prime) q(R-prime,R).
+```text
+pi(R) q(R,R') = pi(R') q(R',R) = 0,
+```
 
-This algebraic conflict is preregistered as a scope guard, not an action no-go.
-The later proof must not demand same-space reversibility and append permanence
-simultaneously. Oriented histories, absorbing transfers, enlarged state spaces,
-and explicit boundary-state reductions remain live.
+so `q(R,R')=0`. This rules out only a nontrivial append-only generator being
+the literal full-support reversible dynamics on that same graph. It does not
+rule out oriented histories, absorbing or nonreversible transfers, enlarged
+state spaces, action-derived instruments, boundary reductions, baths, or
+pointers.
 
-## Final pre-execution gate
+## Final release gate
 
-| release condition | status |
+| release condition | final status |
 |---|---|
-| exact A_AT and Phi_AT frozen | PENDING |
-| C_AT defined without assumed convexity or inferred rate map | PENDING |
-| C_Record frozen independently of the bridge output | PENDING |
-| B_AT projection and c equivalence frozen | PENDING |
-| at least five normalized N1 routes honestly adjudicated | PENDING |
-| raw walls collapsed by the completed N2 table | PENDING |
-| hidden conditions promoted and rescanned | PENDING |
-| residual citations matched and nonmatches dropped | PENDING |
-| five substantive N5 cache lines executed and landing | PENDING |
-| primitive and partial-closure scan refreshed | PENDING |
-| hostile steelman answered with evidence | PENDING |
-| cross-cycle echoes refreshed | PENDING |
-| primary and independent evidence complete | PENDING |
-| checklist and future evidence artifacts landing together | PENDING |
-| broad action, axiom, gravity, audit, obligation, and TOE promotions excluded | PENDING |
-| overall gate | PENDING |
+| exact source/status snapshot frozen | `PASS` — preregistration `6c5281743f77131abd62a798c2e88a65d3dba634`; PR head pinned in the packet |
+| complete `A_AT` and `Phi_AT` found | `NO` — this is the scoped type finding; no substitute map fabricated |
+| `C_AT` classified without assumed closure | `NOT APPLICABLE` — `UNDEFINED-NOT-EMPTY` |
+| `C_Record` kept independent | `PASS` — no absent image was called a failed Record generator |
+| `B_AT` and common-rate quotient classified | `NOT APPLICABLE` — `UNDEFINED-NOT-EMPTY`; equal-`Z` fixtures are future discriminators only |
+| at least five normalized N1 routes honestly adjudicated | `PASS` — six literal families marked `ATTEMPTED` with exact evidence |
+| broader route families remain live | `PASS` — oriented, absorbing, enlarged, instrument, decoder, bath, pointer, non-Markov, and governance routes explicit |
+| raw walls collapsed | `PASS` — one final inspected-interface wall |
+| hidden conditions promoted and rescanned | `PASS` |
+| residuals matched and nonmatches dropped | `PASS` |
+| five substantive N5 cache lines executed and landed | `PASS` — primary cache lines 16–20 at execution commit |
+| primitive and partial-closure scan refreshed | `PASS` |
+| hostile steelman answered with evidence | `PASS` |
+| cross-cycle echoes refreshed | `PASS` |
+| primary and independent evidence complete and fresh | `PASS` — `12/12`, `15/15`; `7/7`, `10/10` |
+| checklist landing | `READY-TO-LAND` — this file must be committed before the author claim is treated as shipped |
+| broad action, axiom, gravity, audit, obligation, and TOE promotions excluded | `PASS` |
+| overall gate | `PASS FOR THE EXACT INSPECTED-STACK TERMINAL ONLY` |
 
-Final preregistration disposition:
+Final post-execution disposition:
 
-> NO NEGATIVE CLAIM IS RELEASED. N1-N8 AND EVERY EVIDENCE FIELD REMAIN PENDING.
+> **RELEASE-ELIGIBLE AFTER THIS CHECKLIST LANDS:**
+> `DIRECTED-ACTION/TRANSFER-TO-PERMANENT-RECORD-APPEND-INTENSITY-INTERFACE-UNSUPPLIED-ON-INSPECTED-STACK`.
+> `C_AT` and `B_AT` are `UNDEFINED-NOT-EMPTY`. Oriented, absorbing,
+> enlarged-state, action-instrument, alternative-decoder, bath, pointer,
+> compound/non-Markov, and governance routes remain live. No universal no-go,
+> new-axiom requirement, audit change, obligation retirement, or TOE movement
+> is released.

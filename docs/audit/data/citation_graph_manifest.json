@@ -1,6 +1,6 @@
 {
- "edge_count": 16257,
- "node_count": 5654,
+ "edge_count": 16264,
+ "node_count": 5655,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -445,6 +445,10 @@
   "admissibility_d4_dirac_kahler_common_action_ward_tt_record_mark_boundary_bounded_theorem_note_2026-08-24": {
    "deps_hash": "25d2b6b6325f",
    "out_degree": 6
+  },
+  "admissibility_d4_directed_action_transfer_record_generator_interface_gate_boundary_bounded_theorem_note_2026-08-30": {
+   "deps_hash": "679b3504571d",
+   "out_degree": 7
   },
   "admissibility_d4_fixed_l24_record_law_discriminator_boundary_bounded_theorem_note_2026-08-25": {
    "deps_hash": "c8eee4235fc9",

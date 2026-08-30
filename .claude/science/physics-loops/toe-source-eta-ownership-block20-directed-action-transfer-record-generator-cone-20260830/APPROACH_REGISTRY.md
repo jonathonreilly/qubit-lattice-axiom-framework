@@ -2,155 +2,148 @@
 
 Date: 2026-08-30
 
-Status: pre-execution proof-search registry. No Block20 runner, cache,
-calculation, verdict, audit change, obligation retirement, or TOE movement
-exists.
+Status: post-execution registry. The frozen six-surface scout completed with
+the exact terminal
+
+```text
+DIRECTED-ACTION/TRANSFER-TO-PERMANENT-RECORD-APPEND-INTENSITY-INTERFACE-UNSUPPLIED-ON-INSPECTED-STACK
+```
+
+This is a finite authority/type result. It is not an empty-cone calculation,
+an action- or transfer-wide no-go, an axiom-necessity result, an audit verdict,
+an obligation retirement, or TOE percentage movement.
+
+## Executed evidence
+
+Frozen preregistration commit:
+`6c5281743f77131abd62a798c2e88a65d3dba634`.
+
+Primary-source commit:
+`7c595093d993312e238264279937691b7c23b55a`.
+
+Execution commit containing the independent source and both fresh caches:
+`f763be4c110040223026158a94e594f18df80ca7`.
+
+| artifact | SHA-256 | Git blob | result |
+|---|---|---|---|
+| `scripts/admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.py` | `7da64acf8d306fa502cb319233a8aa2532b845a7776735fd46c77ed6912cb482` | `e109efa41888e71a04413778615d3bb2e2466385` | primary source; committed separately before execution |
+| `logs/runner-cache/admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.txt` | `fd2c5908db5239e3bf6cf9a88e1f8bd3650d05a2fa7007f74eb8eccd18f206df` | `3a0e64deaeb9f1f9d61d240aab7e80e8669d706b` | fresh primary cache; `PASS=12 FAIL=0`; hostile mutations `15/15` rejected |
+| `scripts/independent_admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.py` | `7cc01158decbc305141e422c753771a70c6000ef764191006450b44175fba825` | `6287f6cac6fb6fa56fe7e54ea64007c633400edb` | independent implementation; no primary import |
+| `logs/runner-cache/independent_admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.txt` | `995fa7b9e5a3b8f985b38fe299cd733f8e42ad731c29b22434c707a6e7cb4c68` | `4ad42357ebf252631006865110525d737cf7ce6f` | fresh independent cache; `PASS=7 FAIL=0`; hostile mutations `10/10` rejected |
+
+The primary matrix inspected six literal surfaces over nine required bridge
+fields. No surface was complete; the missing-field counts in matrix order were
+`(6,8,6,7,6,7)`. Both implementations returned `C_AT=UNDEFINED` and
+`B_AT=UNDEFINED`, expressly not empty.
 
 ## Authority and interface boundary
 
-The current foundation supplies Lattice, Qubit, Admissibility, and Record, but
-the canonical minimal-axiom note explicitly does not choose a Hamiltonian or
-transfer operator, give transition weights, define a time metric, or provide a
-Record-production or persistence dynamics. The registered scale-reference,
+The current foundation supplies Lattice, Qubit, Admissibility, and Record.
+The canonical minimal-axiom note explicitly does not choose a Hamiltonian or
+transfer operator, give transition weights, define a time metric, or provide
+a Record-production or persistence dynamics. The registered scale-reference,
 kinetic-isotropy, and realized-state primitives supply respectively units,
-OS0 kinetic-form graining, and pointwise evaluation only. None of those source
-types instantiates an action/transfer-to-Record update interface.
+OS0 kinetic-form graining, and pointwise evaluation only. None instantiates an
+action/transfer-to-Record update interface.
 
-The correct current label is therefore:
+Let `A_AT` denote a later frozen action/transfer domain and let
 
-> AUTHORITY/INTERFACE-UNSUPPLIED.
-
-This is a type statement, not an empty-set theorem. It says that the registered
-foundation does not itself furnish the map needed to form the Block20 object.
-It does not say that no downstream action, transfer, dilation, history
-functional, bath, encoder, or governed law can furnish one.
-
-Let A_AT denote a later frozen action/transfer input domain and let
-
-    Phi_AT : A_AT -> append-edge intensity tables
+```text
+Phi_AT : A_AT -> append-edge intensity tables
+```
 
 denote a later frozen typed map into permanent-Record transitions. Only after
-A_AT, Phi_AT, the Record carrier, and the equivalence relation are stated may
-the campaign define
+`A_AT`, `Phi_AT`, the Record carrier, and the equivalence relation are supplied
+may one define
 
-    C_AT(Phi_AT)
-      = {Phi_AT(a): a in A_AT},
+```text
+C_AT(Phi_AT) = {Phi_AT(a): a in A_AT}.
+```
 
-the exact append-intensity image of the literal bridge. Separately let
-C_Record be the frozen set satisfying nonnegativity, conservation, covariance,
-one-site append permanence, the Block19 mark cross-products, and every claimed
-process obligation.
+`C_Record` is a separate contract enforcing nonnegativity, conservation,
+covariance, one-site append permanence, the Block19 mark cross-products, and
+every claimed process obligation. Before the bridge freeze, `C_AT` is
+undefined, not empty. The campaign word “cone” grants no addition, positive
+scaling, or convex-mixing closure.
 
-Before that freeze, C_AT is undefined, not empty. The word cone in the campaign
-name does not grant convexity: closure under addition, positive scaling, or
-convex mixing must be derived from Phi_AT or explicitly supplied. Likewise,
-no exponentiation, squaring, arrow, cadence, normalization, or intensity
-conversion may be inferred merely because an action or transfer weight exists.
+Likewise, only after that freeze may one define
 
-For the Block19 comparison, define only after the same freeze the projection
+```text
+B_AT(Phi_AT)
+  = {beta > 0: there is a c > 0 for which
+     c v(beta) lies in C_AT(Phi_AT) intersection C_Record}.
+```
 
-    B_AT(Phi_AT)
-      = {beta > 0: there is a c > 0 for which
-         q_f(r) = c beta^n(r) 2^m_f(r)
-         lies in C_AT(Phi_AT) intersect C_Record}.
+The quotient by `c` is licensed only if the bridge supplies one
+state-independent common rate-unit equivalence. No exponentiation, squaring,
+arrow, cadence, normalization, transfer logarithm, reverse-edge deletion, or
+intensity conversion follows merely from the existence of an action or
+transfer weight.
 
-The treatment of c as a common rate-unit quotient is allowed only if the
-frozen bridge explicitly supplies that equivalence. Otherwise c remains part
-of the classified image. One beta value, several beta values, and no beta-form
-member are all live B_AT outcomes.
+## Executed target contract
 
-## Exact target contract
-
-| target field | preregistered contract |
+| target field | post-execution disposition |
 |---|---|
-| target statement | freeze a typed directed action/transfer-to-permanent-Record append-edge intensity map; construct its image C_AT; intersect it with C_Record; and classify B_AT on the Block19 family |
-| quantifiers and domain | the exact carrier, action/transfer inputs, finite-volume class, local-infinite limit if claimed, initial-law class, and state/history domain must be frozen before execution |
-| allowed premises | the current minimal axioms and approved primitives at their declared scopes; the landed Block19 pair-factor result as the comparison target; any separately status-checked action/transfer source named as conditional or retained at its exact scope |
-| forbidden inferences | exponentiating an action into a probability, squaring an amplitude into an intensity, choosing an arrow, supplying cadence, normalizing histories, taking a logarithm, adding generators, or convexly mixing laws without an explicit theorem or supplied bridge |
-| required edge cases | blank versus recorded targets, illegal marks, repeated writes, occupied-to-null erasure, zero rates, disconnected histories, boundary carriers, global-rate equivalence, equal-Z beta discriminator, and any auxiliary-state trace or absorption |
-| completion witness | a frozen Phi_AT; a complete C_AT intersection C_Record classification; positivity, conservation, covariance, append-only permanence, normalized finite histories, and every claimed local-infinite obligation for surviving members; plus an exact one-point, multiple-point, or empty B_AT proof |
-| outcomes that do not close the target | AUTHORITY/INTERFACE-UNSUPPLIED; one erasing reversible sampler; one unnormalized path weight; fixed-placement coefficients; a supplied desired beta; a candidate whose process obligations are unchecked; or failure of one bridge |
+| target statement | search the frozen literal stack for a typed directed action/transfer-to-permanent-Record append-intensity map before forming any cone |
+| inspected domain | six named source surfaces: minimal axioms, supplied post-Record interfaces, August 11 local Geometry/Record transfer, August 10 joint Perron transfer, canonical two-TT transfer, and PR `#7803` fixed-placement coefficients |
+| required bridge | nine fields: source, blank-plus-six-mark decoder, directed append edge, nonnegative intensity map, holding normalization, cadence/common-rate quotient, one-site arity, permanent lock, and proper-cubic covariance |
+| observed outcome | zero complete literal bridges; `C_AT` and `B_AT` were not formed |
+| terminal | `DIRECTED-ACTION/TRANSFER-TO-PERMANENT-RECORD-APPEND-INTENSITY-INTERFACE-UNSUPPLIED-ON-INSPECTED-STACK` |
+| accounting | obligation retirement `0`; TOE percentage movement `0`; no axiom or primitive edit |
 
-## Ranked portfolio
+## Ranked portfolio after execution
 
-| rank | family | object or formulation | mechanism or invariant | terminal obligation | strength versus target | status | concrete evidence now | advance or reopen condition |
-|---:|---|---|---|---|---|---|---|---|
-| 1 | frozen typed directed action/transfer bridge | explicit tuple of A_AT, Phi_AT, Record carrier, boundary data, and equivalence relation | directed append-edge intensities obtained by a stated map rather than an implicit action-to-rate convention | define C_AT, classify C_AT intersect C_Record, and determine B_AT | target-equivalent | active | target contract only; no Block20 result | freeze the literal map and input status before any calculation |
-| 2 | literal August 11 projection candidate | the four-state conditional law in docs/ADMISSIBILITY_LOCAL_GEOMETRY_RECORD_BOND_TRANSFER_REFLECTION_RESPONSE_CONNECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md, equation (5), projected from null states to occupied states | keep only null-to-occupied off-diagonal entries, compensate the diagonal, and supply rather than infer any cadence or action meaning | test a scoped nonempty directed generator candidate, then determine whether it lifts from coarse occupancy to the Block19 mark-resolved B_AT family | weaker | provisional | the source note proves the parent sampler is normalized and reversible but explicitly Record-erasing; the directed projection is not its retained conclusion | freeze the projection formula, cadence, carrier lift, and physical-status claim |
-| 3 | PR #7803 fixed-placement composition input | the open Block248 complete two-order fixed-placement coefficient formulas on repaired commit 8f48b5a850 | positive crossing-first and action-first contributions reinforce on three frozen placements under supplied positive multipliers | compose mixed placements or the full action into normalized monotone histories and a typed action-to-Record decoder before projecting B_AT | weaker | provisional | open stacked PR #7803 supplies a bounded fixed-placement coefficient theorem, not a permanent-Record history or decoder | bind an admissible input status and prove composition, normalization, arrow, and Record semantics |
-| 4 | autonomous reusable bath fallback | one local many-body unitary and reusable bath state, without fresh per-visit reset | bath correlations and autonomous dynamics may derive coupling ratios and cadence | derive a permanent-Record generator and classify its Block19 beta image without inserting beta or the clock | unknown/comparable | unexplored | no Block20 evidence | explicit bath construction with no hidden reset or disposal oracle |
-| 5 | distributed pointer fallback | finite-range encoded blank-plus-six-mark carrier | encoder algebra, local QND readout, and append lock may constrain gains | construct the encoder and classify the induced permanent-Record generator | unknown/comparable | unexplored | no Block20 evidence | explicit distributed encoding with local process semantics |
-| 6 | owner-governed intensity law | exact extensional formation-intensity/kernel premise and registry update | explicit supply with dependency and import-retirement accounting | owner decision and reviewed registry/policy change; distinguish supply from derivation | stronger | unexplored | governance-only; no proposal is approved by this registry | explicit owner approval after a complete law and consequence packet |
+| rank | family | object or mechanism | exact post-execution status | evidence and boundary | advance or reopen condition |
+|---:|---|---|---|---|---|
+| 1 | frozen typed directed action/transfer bridge | explicit `A_AT`, `Phi_AT`, Record carrier, boundary data, and equivalence relation | `BLOCKED-LOCAL` on the inspected stack | the six-by-nine matrix has no complete literal member; this does not exhaust other bridges | supply and status-check a complete literal map before forming `C_AT` |
+| 2 | August 11 local transfer as an already-supplied bridge | positive symmetric four-state Perron transfer and reversible heat bath | `BLOCKED-LOCAL`; directed projection remains live but unexecuted | the literal carrier lacks the six-mark decoder and one-site append edge, and its sampler permits occupied-to-null erasure; deleting reverse edges or adding cadence would be a new rule | freeze the projection, cadence, geometry convention, six-mark lift, and physical-status claim |
+| 3 | PR `#7803` fixed-placement action route | positive reinforcement of two action/crossing orders on three pinned placements at head `dac92a5ed9a8ddaa90aa4300223a2c77fb4cd203` | `BLOCKED-LOCAL`; composition route remains live | the conditional surface supplies no mixed history, full action, Record decoder, intensity map, normalization, direction, or cadence | derive composable normalized histories and a typed action-to-Record instrument |
+| 4 | autonomous reusable bath | one local many-body interaction and reusable bath without a fresh-reset oracle | `LIVE — NOT EXECUTED` | outside the inspected action/transfer stack | derive ratios and cadence without relocating `beta` into bath data |
+| 5 | distributed pointer | finite-range encoded blank-plus-six-mark carrier | `LIVE — NOT EXECUTED` | outside the inspected carrier stack | construct the encoder, QND readout, append lock, and induced generator |
+| 6 | owner-governed intensity law | exact extensional formation-intensity/kernel premise | `LIVE GOVERNANCE ROUTE — NO PROPOSAL OR APPROVAL` | supply through governance is distinct from microscopic derivation | owner approval only after a complete law and consequence packet |
 
-The rankings above are portfolio priorities. The first-ranked program must
-still keep materially incompatible bridge mechanisms separate during proof
-search:
+The first-ranked family contains incompatible mechanisms that must remain
+separate:
 
-| subfamily | primary object | load-bearing mechanism | terminal obligation | preregistration status |
-|---|---|---|---|---|
-| direct local intensity decoder | local action increment and one append edge | explicitly typed rate functional | positivity, covariance, permanence, and B_AT classification | unexplored |
-| oriented monotone history action | finite Record histories | normalized directed cylinder weights and conditional hazard ratios | Kolmogorov consistency, locality, and generator recovery | unexplored |
-| absorbing transfer | substochastic or absorbing transfer object | occupied Record sectors are absorbing without reverse erasure | conservative reduced Record law and classified generator image | unexplored |
-| enlarged-state lift | reversible or unitary dynamics on Record plus auxiliary state | arrow and irreversibility arise only after an explicit boundary state and reduction | exact permanent-Record marginal with no hidden reset and a typed decoder | unexplored |
-| embeddable semigroup | a supplied small-step transfer family | a proved local Metzler generator or controlled continuous-time limit | generator existence, locality, normalization, and B_AT projection | unexplored |
+| subfamily | load-bearing mechanism | post-execution status | terminal obligation |
+|---|---|---|---|
+| direct local intensity decoder | an explicitly typed functional maps local action increments to legal append edges | `BLOCKED-LOCAL` on the six inspected surfaces; live beyond them | positivity, covariance, permanence, locality, and `B_AT` classification |
+| oriented monotone history action | normalized directed cylinder weights yield conditional hazards | `LIVE — NOT EXECUTED` | normalization, Kolmogorov consistency, locality, and generator recovery |
+| absorbing transfer | occupied Record sectors are invariant without reverse erasure | `LIVE — NOT EXECUTED` | conservative append-only reduced law and classified image |
+| enlarged-state lift | explicit boundary state and reduction generate an irreversible Record marginal | `LIVE — NOT EXECUTED` | no hidden reset, a typed decoder, and exact permanent marginal |
+| action-derived instrument | a completely positive or stochastic instrument supplies the Record outcome and rate semantics | `LIVE — NOT EXECUTED` | instrument normalization, mark decoder, cadence, permanence, and action provenance |
+| embeddable or nonreversible transfer | a supplied small-step family has a local Metzler generator or controlled limit | `LIVE — NOT EXECUTED` | embeddability, locality, normalization, cadence, and `B_AT` projection |
+| alternative decoder | a separately derived map changes the action/transfer codomain to six-mark append intensities | `LIVE — NOT EXECUTED` | exact type, physical status, covariance, and no inserted selector |
 
 Different notation, workers, source-note types, or runner implementations do
-not make additional families.
-
-## Literal August 11 candidate boundary
-
-The August 11 source orders the local coarse states as
-
-    (0,null), (0,occupied), (1,null), (1,occupied)
-
-and gives a normalized single-site conditional in equation (5). It also says
-that the associated reversible heat-bath sampler permits occupied-to-null
-transitions and is therefore Record-erasing; no scheduler or permanent-Record
-causal update is inferred.
-
-Block20 may test the literal directed projection
-
-    q_A11(s,t | neighbors)
-      = lambda_A11 P_A11(t | neighbors)
-        when s is null and t is occupied,
-      = 0
-        for every other off-diagonal transition,
-
-with the diagonal fixed by row conservation. Here lambda_A11, the choice of
-whether geometry may change on formation, the mark-resolved lift, and the
-physical connection to the parent transfer must all be supplied in the frozen
-candidate. Nothing in equation (5) derives them. A successful calculation
-would establish only a result about this literal supplied projection.
+not make additional mathematical families.
 
 ## Ordinary detailed-balance caveat
 
-Ordinary full-support detailed balance on the same append-only Record graph is
-incompatible with a nonzero one-way append edge. If q(R,R-prime)>0 while
-permanence requires q(R-prime,R)=0, then
+For a full-support law on the same visible state graph, if
+`q(R,R')>0` is a one-way append edge while permanence requires
+`q(R',R)=0`, ordinary detailed balance gives
 
-    pi(R) q(R,R-prime) = pi(R-prime) q(R-prime,R)
+```text
+pi(R) q(R,R') = pi(R') q(R',R) = 0,
+```
 
-forces q(R,R-prime)=0 for full-support pi.
-
-This is not an action no-go. It says only that a nontrivial append-only
-generator cannot simultaneously be an ordinary reversible detailed-balance
-chain on that same state space. Oriented histories, absorbing transfers,
-enlarged-state dynamics, boundary-state reductions, and other explicitly
-non-erasing bridges remain live. The literal August 11 projection deliberately
-drops the parent's reversible heat-bath property and therefore needs a new
-physical bridge rather than inheriting one.
+and therefore forces `q(R,R')=0`. This is only a same-visible-graph
+reversibility obstruction. It does not rule out oriented histories, absorbing
+or nonreversible transfers, enlarged Record-plus-environment states,
+action-derived instruments, or boundary-state reductions.
 
 ## Outcome and scope matrix
 
-| future evidence | permitted result type | forbidden promotion |
+| evidence | permitted result type | forbidden promotion |
 |---|---|---|
-| Phi_AT remains unspecified | AUTHORITY/INTERFACE-UNSUPPLIED type result | C_AT is empty; action cannot generate Records; new axiom required |
-| one literal candidate fails | named bridge failure | all action, transfer, oriented-history, absorbing, or enlarged-state routes fail |
-| frozen B_AT contains one beta value | positive scoped selector theorem | universal occurrence law or physical clock |
-| frozen B_AT contains multiple nonproportional beta values | literal-bridge-scoped underselection candidate, subject to completed N1-N8 | universal action underselection |
-| frozen B_AT is empty after C_AT intersect C_Record is exhaustively classified | literal-bridge-scoped no-compatible-ray candidate, subject to completed N1-N8 | C_AT itself is empty, universal action no-go, or axiom necessity |
-| an owner approves an exact intensity law | governed premise supply and import-retirement accounting | retrospective microscopic derivation |
+| current executed six-surface matrix | inspected-stack interface-unsupplied type result; `C_AT` and `B_AT` undefined | empty `C_AT`; failed action/transfer generation; axiom necessity |
+| one later literal candidate fails | named bridge failure | all oriented-history, absorbing, enlarged-state, instrument, bath, pointer, or decoder routes fail |
+| a frozen `B_AT` contains one beta | positive bridge-scoped selector theorem | universal occurrence law or physical clock |
+| a frozen `B_AT` contains multiple beta values | bridge-scoped underselection candidate after a fresh N1–N8 audit | universal action underselection |
+| a frozen `B_AT` is empty after exhaustive intersection | bridge-scoped no-compatible-ray candidate after a fresh N1–N8 audit | empty `C_AT`, universal action no-go, or axiom necessity |
+| an owner approves an exact intensity law | governed premise supply and dependency accounting | retrospective microscopic derivation |
 
-No outcome in this registry changes an audit verdict, retires a formal
-obligation, amends an axiom, moves a TOE percentage, or licenses a broad action
-or gravity claim.
+No result in this registry changes an audit verdict, retires a formal
+obligation, amends an axiom, moves a TOE percentage, or licenses a broad
+action, gravity, bath, pointer, or governance claim.

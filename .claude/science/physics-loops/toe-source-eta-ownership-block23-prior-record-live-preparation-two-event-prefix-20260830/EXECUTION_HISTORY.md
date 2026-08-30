@@ -42,3 +42,35 @@ may be changed to inspect `transition.__wrapped__.__code__`.  No geometry,
 state, effect, channel, kernel, covariance, spectrum, composition, scope, or
 mutation expectation may change.  The repaired source must be committed,
 hashed, and explicitly repinned before its first reexecution.
+
+## First repaired-primary execution and coverage rejection
+
+After repin commit `1c6700d943`, the first repaired primary ran to exit zero:
+
+- source SHA-256:
+  `82dd0f631fb70662e696c7a92f0997fa26094c32e7ed6ad37671f144eed2bdea`;
+- preserved cache:
+  `logs/runner-cache/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30_coverage_insufficient.txt`;
+- cache SHA-256:
+  `8d22c939430f41b4f77ec27c8f79e1622fd79e32ca643b0b2b9a78e9635bd9cc`;
+- displayed result: `TOTAL: PASS=20 FAIL=0`, mutations `37/37`.
+
+A separate static completion audit rejected that green cache as insufficient
+evidence for the strong terminal.  The effect/kernel/quotient/spectrum checks
+were substantive, but several channel, composition, scope, and mutation
+checks used label/count surrogates:
+
+1. no explicit symbolic `A_(f,b)`, `P_valid`, `K_STOP`, or Heisenberg action;
+2. incomplete encoding of all five inactive Blank blocks and target-star
+   covariance;
+3. no full branch-map/coherent-cross-term covariance model;
+4. no explicit preparation-plus-six-writer composition on reachable symbolic
+   sectors;
+5. predecessor and closed-front walls reduced to center arithmetic; and
+6. many mutation booleans checked baseline counts rather than executing a
+   mutated model.
+
+This cache is therefore preserved as `COVERAGE-INSUFFICIENT`, not promoted as
+the primary result.  The independently authored `20/20`, `57/57` certificate
+remains successful and materially covers these structures, but the primary
+must be strengthened and repinned before terminal reconciliation.

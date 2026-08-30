@@ -1866,7 +1866,7 @@ def mutation_rejections():
         )
     )
 
-    locked_forward = parent.block_product(
+    locked_forward = parent.BlockProduct(
         parent.BLANK_LIVE, parent.locked_word(front, source)
     )
     nonblank_rejected = contraction_rejects(forward_input_override=locked_forward)

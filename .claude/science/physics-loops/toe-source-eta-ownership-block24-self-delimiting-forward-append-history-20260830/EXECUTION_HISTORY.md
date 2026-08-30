@@ -137,3 +137,9 @@ which expects a site-indexed mapping and orders it internally. The intended
 typed object is directly `parent.BlockProduct(parent.BLANK_LIVE, locked_word)`.
 This is a harness fixture failure after a strictly stronger positive diagnostic,
 not a failed predicate, negative physics result, green runner, or terminal.
+
+Two independent static tail reviews accepted the direct-constructor repair at
+exact source SHA-256
+`f98534f07655e0de296f2060932e34aa7a600f08545f3661be2843d05accc15d`.
+They found no analogous constructor/type trap in the remaining mutation path.
+They did not import, compile, execute, or edit it.

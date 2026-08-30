@@ -128,3 +128,9 @@ before any mutation result. The exact cache is preserved. The proposed repair
 changes only the constructor from a mapping-ordering helper to the direct
 `BlockProduct` constructor for the already ordered `BLANK_LIVE` tuple; it must
 receive a fresh static check and source pin before execution.
+
+Two independent static reviewers accepted exact one-line repaired source SHA
+`f98534f07655e0de296f2060932e34aa7a600f08545f3661be2843d05accc15d`.
+They verified the typed nonblank fixture and traced the remaining mutation path
+without finding another statically evident constructor, shape, or empty-witness
+exception. These static reads are not runner or audit results.

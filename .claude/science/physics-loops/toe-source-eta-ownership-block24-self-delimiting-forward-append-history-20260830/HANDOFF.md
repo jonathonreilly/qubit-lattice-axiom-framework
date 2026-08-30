@@ -85,4 +85,11 @@ The intended fixture is exactly `parent.BlockProduct(parent.BLANK_LIVE,
 locked_word)`; that one-line harness repair must be static-reviewed, committed,
 and repinned before executing the unreached mutation tail.
 
+Two independent static tail reviews accepted exact repaired source SHA-256
+`f98534f07655e0de296f2060932e34aa7a600f08545f3661be2843d05accc15d`.
+They confirmed that direct `BlockProduct(BLANK_LIVE, locked_word)` is the exact
+32-factor nonblank fixture and found no analogous constructor, shape, empty
+`next`, or uncaught intended-mutation exception in the remaining tail. No
+execution of that source has occurred.
+
 No review-loop is authorized. Independent audit remains unset.

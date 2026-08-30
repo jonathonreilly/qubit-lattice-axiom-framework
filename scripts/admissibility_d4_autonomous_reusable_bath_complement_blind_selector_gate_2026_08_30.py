@@ -270,7 +270,11 @@ def main() -> int:
         (target, source) in nonhermitian_edges for source, target in nonhermitian_edges
     )
     block19_text = BLOCK19_NOTE.read_text(encoding="utf-8")
-    factor_two_supplied = "p_f=2^(m_f)/Z` is supplied" in block19_text and "does not predict its factor of two" in block19_text
+    block19_normalized = " ".join(block19_text.split())
+    factor_two_supplied = (
+        "`p_f=2^(m_f)/Z` is supplied" in block19_normalized
+        and "does not predict its factor of two" in block19_normalized
+    )
     check(
         "joint_six_mark_type",
         len(profiles) == 7**6 and all_profile_covariance and all_profile_positive and all_profile_kraus_tp and hermitian_type,

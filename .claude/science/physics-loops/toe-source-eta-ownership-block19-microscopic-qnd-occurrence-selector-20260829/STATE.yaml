@@ -1,6 +1,6 @@
 loop_id: toe-source-eta-ownership-block19-microscopic-qnd-occurrence-selector-20260829
 block: source_eta_19
-status: family_scoped_qnd_occurrence_underselection_ready
+status: family_scoped_qnd_occurrence_underselection_delivered
 phase: pair_factor_qnd_collision_generator_classification
 branch: physics-loop/toe-source-eta-ownership-block19-microscopic-qnd-occurrence-selector-20260829
 parent_commit: aba5624e051ec37228f647eb34859aa3d817ab1b
@@ -9,8 +9,8 @@ minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 initial_preregistration_commit: 3d35ec50807305c682abee677e799359cb262830
 support_correction_commit: 809a64b74d7e61e81829d7696f3d9a1394afa554
 no_go_scaffold_commit: 97b0b6d14f7ce45a7ea520142953e3e5f657b361
-result_commit: pending
-result_pr: pending
+result_commit: 278abf6cd9d4de21a9b052b869a6f5aa9d2f42c3
+result_pr: 7805
 latest_record_pr: 7804
 latest_record_head: aba5624e051ec37228f647eb34859aa3d817ab1b
 latest_connection_pr: 7803

@@ -51,4 +51,4 @@ pointer encoder.  A minimal-axiom intensity rule should be considered only
 after those physical selection routes are exhausted or explicitly shown not
 to select the law.
 
-Result commit and stacked PR are filled by the delivery checkpoint.
+Science result `278abf6cd9` is pushed in stacked PR `#7805`.

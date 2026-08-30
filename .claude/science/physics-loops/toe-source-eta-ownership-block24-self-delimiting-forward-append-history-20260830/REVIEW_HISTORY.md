@@ -82,3 +82,7 @@ executing, or editing it. Both returned `SAFE TO COMMIT/REPIN`:
 
 Neither read is a runner result, review-loop outcome, audit verdict, obligation
 retirement, or TOE-score move.
+
+The exact accepted repair and preserved initial-timeout cache were committed
+at `63471f53403275d7ee39608fb46f52b23cd11340` before any repaired-source
+execution.

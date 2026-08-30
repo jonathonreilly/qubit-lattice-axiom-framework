@@ -41,4 +41,6 @@ and repinned to a different cache path before reexecution.
 Two independent static challengers accepted the exact repaired source SHA-256
 `0a228689587f492fb3e922ee441e5bd23f7d827e6888f954c72c30c3a0b7cbb7`
 for commit and repin. They did not execute the source; runtime and every
-unreached predicate remain unverified.
+unreached predicate remain unverified. The accepted repair and this preserved
+initial-timeout record were committed at
+`63471f53403275d7ee39608fb46f52b23cd11340`.

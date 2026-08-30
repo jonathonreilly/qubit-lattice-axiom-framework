@@ -40,6 +40,8 @@ source SHA-256
 They found that all 16,464 literal composites, both append contractions and
 handoffs, exact initial effects, marginals, suffix sums, symbolic-reference
 identities, and the coefficientwise total remain bound without substituting
-the expected transition law. No repaired-source execution has occurred.
+the expected transition law. The repair and preserved initial timeout were
+committed at `63471f53403275d7ee39608fb46f52b23cd11340`. No repaired-source
+execution has occurred.
 
 No review-loop is authorized. Independent audit remains unset.

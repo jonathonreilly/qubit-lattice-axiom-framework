@@ -1,11 +1,15 @@
 # Block28 handoff
 
-The first content-bound Block28 run is green: `13/13` named checks, `24/24`
-designated mutations, exit zero, empty stderr, and `589.53` seconds.  It
+The final declared-timeout Block28 reproduction is green: `13/13` named
+checks, `24/24` designated mutations, exit zero, empty stderr, and `588.66`
+seconds.  The content-bound wrapper reports its cache `fresh`.  It
 constructs two supplied-`q`, conditional compound CPTP instruments on the
 same returned-tip pair carrier.  Both have strict support and uniform
 single-tip marginals; their decoded matching-exit Record odds are `1/4` and
 `5/8`.
+
+Citeable bounded-theorem note:
+[`ADMISSIBILITY_D4_RETURNED_TIP_SUPPLIED_Q_CONDITIONAL_PAIR_INSTRUMENT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-30.md`](../../../../docs/ADMISSIBILITY_D4_RETURNED_TIP_SUPPLIED_Q_CONDITIONAL_PAIR_INSTRUMENT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-30.md).
 
 The result is not a classification of the complete process-law image.  The
 compound carrier, `q`, and invocation are supplied, and singleton extension,
@@ -13,18 +17,32 @@ repeat use, projective history consistency, finite-resource renewal,
 microscopic compilation, rate, clock, and gravity/source attachment remain
 open.
 
-The next science block is the common-extension discriminator frozen in
-`PREREG_AMENDMENT_1.md`:
+The postexecution panel narrows the next science block to the first stage of
+the common-extension discriminator: a visible-common-cause depth-two
+cylinder.  The supplied matrices obey
 
-1. extend both instruments through the same singleton sectors, two-use causal
-   diamond, prefix/projective history consistency, finite Blank accounting,
-   and autonomous invocation contract;
-2. if both extend, run the process-level selector/source test;
-3. if exactly one extends, record process consistency as the selector;
-4. if neither extends through a literal local-factor obstruction, dispatch
-   that exact obstruction to the targeted `M_2(C)` compiler; and
-5. if a finite process fails only because remembered state must grow, dispatch
-   to an extensive causal Record-history dilation.
+```text
+nonnegative rank(q_0) = 1
+nonnegative rank(q_1/2) = 4
+```
+
+so the correlated instrument needs at least a four-valued shared cause in
+every separable left/right realization.  Test that cause on one physical
+Locked-Record carrier before bundling the question with cadence, all-time
+renewal, or gravity:
+
+1. impose one common empty/singleton/pair sector rule and exact depth-two
+   cylinder identity;
+2. permit inter-arm correlation only through a finite orthogonal
+   Locked-Record cause carried and debited inside the declared causal region;
+3. require literal factors, full STOP, QND old Records, no double write,
+   covariance, and a finite Blank/cause ledger;
+4. classify the minimal shared-cause dimension for both frozen couplings;
+5. if both complete, proceed to the autonomous-reuse stage and run
+   selector/source only if both survive it; if exactly one completes, record
+   only the scoped depth-two consistency selector and then test its reuse; and
+6. route only an exact factor failure to the compiler or a proved
+   growing-memory requirement to extensive history.
 
 An incomplete search or timeout makes no scientific dispatch.
 

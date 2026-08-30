@@ -28,10 +28,13 @@ act as identity on current-live degrees of freedom.
 ## Evidence
 
 - exact source SHA-256:
-  `f1090371f20ed03b869d0ae727849496a94ff85b66d4bb02f559b3e0a30a462c`;
+  `91141d7b917b52eef1335cc6d405acd5927d75ab32ce2f4e0620d4c9007b9a2a`;
 - exact `19`-input fingerprint:
-  `b7ca993dba0773c7909ffc76966c7d41f52e37c730e53a7623316e4fc5b32823`;
-- exit zero, empty stderr, `589.53` seconds;
+  `334e234780033a19357d2443a153b300c494e9975ad7fc22625087fe7cc6e8df`;
+- exact cache SHA-256:
+  `78562003af71a691a285824386945888fe3e9a74b84a0f76574b469f65b81726`;
+- declared timeout `900` seconds; exit zero, empty stderr, `588.66`
+  seconds;
 - `13/13` named checks and `24/24` designated mutation rejections; and
 - three exact-byte independent preexecution attacks returned `SAFE`.
 

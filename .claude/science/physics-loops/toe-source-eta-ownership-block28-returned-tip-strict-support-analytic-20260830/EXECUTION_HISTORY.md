@@ -36,6 +36,35 @@ The emitted terminal was:
 TWO-EXPLICIT-SUPPLIED-Q-CONDITIONAL-RETURNED-PAIR-INSTRUMENTS-WITH-STRICT-SUPPORT-UNIFORM-MARGINALS-AND-DISTINCT-READABLE-ODDS
 ```
 
+## Declared-timeout final reproduction
+
+The first execution supplied the same `900`-second limit to the cache wrapper,
+but the runner itself did not yet declare the required
+`AUDIT_TIMEOUT_SEC = 900` constant.  Commit
+`32488c1f0d2e62c0e3fec92979671b7ce1372c43` added only that inert declaration.
+Three independent reviewers rebound their static attacks to the resulting
+source SHA-256, and the final source pin plus attack record landed at
+`1bba9e33c31c6187f53149cfa3d40119bde399fa` before reproduction.
+
+The canonical cache was then refreshed without a command-line timeout
+override:
+
+```text
+runner SHA-256: 91141d7b917b52eef1335cc6d405acd5927d75ab32ce2f4e0620d4c9007b9a2a
+input fingerprint SHA-256: 334e234780033a19357d2443a153b300c494e9975ad7fc22625087fe7cc6e8df
+canonical cache: logs/runner-cache/admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30.txt
+canonical cache SHA-256: 78562003af71a691a285824386945888fe3e9a74b84a0f76574b469f65b81726
+declared timeout: 900 seconds
+elapsed: 588.66 seconds
+exit: 0
+stderr: empty
+TOTAL: PASS=13 FAIL=0
+designated mutations: rejected=24/24
+```
+
+The wrapper's subsequent `--check-only` query reported the cache `fresh`.
+The terminal and all substantive check results exactly match the first run.
+
 The run checked the literal `1,568`-branch local turn module, `196` exact
 source-pair controls, the ten-atom success guards, the active projector plus
 complement STOP, proper-cubic and translation covariance, two complete

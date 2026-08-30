@@ -1,6 +1,6 @@
 loop_id: toe-source-eta-ownership-block22-self-delimiting-distributed-record-causal-attachment-20260830
 block: source_eta_22
-status: packaged_local_validation_passed_pr_pending
+status: result_committed_pr_pending
 phase: exact_povm_common_cubic_radial_pointer_live_to_record_writer
 branch: physics-loop/toe-source-eta-ownership-block22-self-delimiting-distributed-record-causal-attachment-20260830
 parent_commit: e0250e1edee5eb41fe797857f3460dfcf77c736b
@@ -72,7 +72,7 @@ post_execution_nogo_status: PASS_EXACT_COMPLETE_M2_IDENTITY_CHANNEL_ONLY
 post_execution_approach_registry: .claude/science/physics-loops/toe-source-eta-ownership-block22-self-delimiting-distributed-record-causal-attachment-20260830/POST_EXECUTION_APPROACH_REGISTRY.md
 post_execution_panel_vote: "5_0_prior_record_to_live_preparation_then_mixed_front"
 remote_pr_check: no_pr_newer_than_7807_all_inspected_stacks_open
-result_commit: unset
+result_commit: 9165b35041042e169b19e73fdd6fd9537c8783cd
 pull_request: unset
 obligation_retirement: 0
 toe_percentage_movement: 0

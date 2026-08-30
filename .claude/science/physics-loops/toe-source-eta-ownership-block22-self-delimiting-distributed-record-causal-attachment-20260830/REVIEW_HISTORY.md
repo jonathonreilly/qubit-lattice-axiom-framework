@@ -77,3 +77,6 @@ The package adds the theorem note, final claim-status, imports, handoff,
 post-execution approach registry, completed N1--N8, five-seat portfolio return,
 PR body, execution history, and review history. It does not edit an audit
 verdict or obligation ledger.
+
+The result packet committed at
+`9165b35041042e169b19e73fdd6fd9537c8783cd`. Pull-request delivery is pending.

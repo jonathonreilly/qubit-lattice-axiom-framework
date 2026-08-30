@@ -1,6 +1,6 @@
 {
- "edge_count": 16277,
- "node_count": 5660,
+ "edge_count": 16279,
+ "node_count": 5661,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -437,6 +437,10 @@
   "admissibility_d4_block208_affine_six_record_h1_decoder_center_corner_qnd_dilation_boundary_bounded_theorem_note_2026-08-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "admissibility_d4_block24_overlap_projector_hard_exclusion_totalization_boundary_bounded_theorem_note_2026-08-30": {
+   "deps_hash": "0c0aa2b1ab6e",
+   "out_degree": 2
   },
   "admissibility_d4_common_spin2_source_module_six_bit_capacity_boundary_bounded_theorem_note_2026-08-29": {
    "deps_hash": "ccdba709e112",

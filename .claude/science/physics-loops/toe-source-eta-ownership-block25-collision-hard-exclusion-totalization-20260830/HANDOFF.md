@@ -5,6 +5,11 @@ exact clean witness has `q=1/4` and commutator factor `3/8`; all outcome labels,
 cubic frames, and translations preserve it. Do not reopen that construction or
 widen it to a collision/dynamics no-go.
 
+The final content-bound cache is fresh at source SHA `5a1be287...`, declared-
+input fingerprint `17a88c86...`, and cache SHA `f0b6ed42...`. It reproduces
+`TOTAL: PASS=30 FAIL=0`; independent postexecution static reconciliation is
+safe, while independent audit remains unset.
+
 The independently run author-side, non-audit postexecution panel selected B0
 `5-0`. First prove the finite
 certified sector: pairwise-disjoint **complete** Block24 footprints tensorize to

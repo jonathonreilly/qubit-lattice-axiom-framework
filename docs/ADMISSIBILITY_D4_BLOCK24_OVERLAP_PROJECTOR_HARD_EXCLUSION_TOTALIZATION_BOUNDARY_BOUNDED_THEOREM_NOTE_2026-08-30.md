@@ -4,7 +4,7 @@ claim_type: bounded_theorem
 claim_scope: "Import the conditional Block24 one-current-Record/one-forward-Blank append factors without changing their fixed 32-site radial alphabet. There is a clean two-tip configuration with fronts (-1,0,0) and (1,0,0), anchors (0,0,0) and (-19,-1,0), and target shift (-1,-1,0), whose current carriers and cross current/target carriers are disjoint while its target carriers share exactly two constrained qubits. The literal shared one-qubit input fidelities are 1/2 and 1/2, so the product rank-one eligibility-projector fidelity is q=1/4 and the direct shared-Hilbert squared commutator norm is 2q(1-q)=3/8. Hence this pair does not admit one joint sharp eligibility-sector decomposition. The result holds for all 14x14 ordered stored-outcome labels, all 24 proper cubic rotations, and every global translation. Exact shared-target and disjoint controls commute. This blocks only the displayed fixed-alphabet, sharp, memoryless joint-sector hard-exclusion construction; it does not block a collision-safe CPTP channel, coherent/unsharp arbitration, owned disjoint substrate, enlarged orthogonal status carriers, recorded collision resources, Record histories, dynamics, gravity, the axioms, or TOE closure."
 claim_type_reason: "The physical factor maps, clean support intersection, rank-one projector identities, exact product fidelity, direct matrix commutator, label census, cubic orbit, and symbolic translation covariance are finite exact algebra/combinatorics. Standing remains bounded because Block24 is conditional author-side law data and the theorem addresses only one joint-sharp-sector construction class on one named orbit, not arbitrary arbitration or autonomous dynamics."
 actual_current_surface_status: conditional-support
-conditional_surface_status: "primary 30/30 aggregate checks, 7/7 designated altered-model rejections, 19/19 unexecuted scope guards; two preexecution independent static gates; independent audit unset"
+conditional_surface_status: "initial and final content-bound runs each report 30/30 aggregate checks, 7/7 designated altered-model rejections, and 19/19 unexecuted scope guards; independent content review safe; independent audit unset"
 target_claim_type: bounded_theorem
 trace_class: direct_blocker_narrowing
 target_claim_id: admissibility_d4_self_delimiting_forward_record_append_finite_history_boundary_bounded_theorem_note_2026-08-30
@@ -204,23 +204,23 @@ general.
 
 ## Executed evidence
 
-The first content-bound run used source SHA-256
+The final content-bound reproduction used source SHA-256
 
 ```text
-c36c26113162a7a960b2b7101b2efed26f667903b9a38c89e6ed2b615b00401e
+5a1be28753ca13adc8fb22c1909fe3b2e86b79e9e8e65ab38aae02a625f6901f
 ```
 
 and declared-input fingerprint
 
 ```text
-a866fec77d81bcb549ad4c0f7ee7793dce69b1e49871bfb33eb74f51a8327072
+17a88c863e3ba440c0d8b0436a97c899c40dde4505bf5a0099b5263fd5433b35
 ```
 
-It completed in `519.80` seconds with exit zero, empty stderr, and initial-cache
+It completed in `517.98` seconds with exit zero, empty stderr, and canonical-cache
 SHA-256
 
 ```text
-46bfccc716e05f35573514cf7c68d0de73e7edfe4eac85161efd733dc39842d6
+f0b6ed4205591604b6a9a250caab730cb28d9933255ac288650d5596ddcda272
 ```
 
 It reports
@@ -238,9 +238,16 @@ nonzero overlaps as commuting, scan only exact shared targets, move a factor
 to a fake coordinate, and remove one actual cubic frame. Each counts only when
 its preregistered load-bearing check fails.
 
-The final repinned source/input/cache identities will replace this paragraph's
-delivery metadata after the landing packet is frozen. The first cache remains
-preserved as historical execution evidence.
+The final cache reproduces the first run's exact witness, all five substantive
+resolution lines, terminal, scope, and `30/0` aggregate. The first cache
+remains preserved as historical execution evidence under `_initial.txt`; its
+source SHA-256 is
+`c36c26113162a7a960b2b7101b2efed26f667903b9a38c89e6ed2b615b00401e`,
+input fingerprint is
+`a866fec77d81bcb549ad4c0f7ee7793dce69b1e49871bfb33eb74f51a8327072`,
+cache SHA-256 is
+`46bfccc716e05f35573514cf7c68d0de73e7edfe4eac85161efd733dc39842d6`,
+and elapsed time is `519.80` seconds.
 
 ## Exact scope
 

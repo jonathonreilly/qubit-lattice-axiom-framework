@@ -1,0 +1,26 @@
+packet_pins: PASS files=8
+proper_cubic_group: PASS order=24 closure=True
+fixed_f_orbits: PASS stabilizer=4 sizes=[1, 1, 1, 4] invariant_dim=4
+g_cov_source: PASS u,o,p independent; CB is a codimension-2 added tie
+derived_cb_provenance: PASS DERIVED_CB=False reparameterized_rejections=5/5
+block19_beta_projection: PASS rays=(Fraction(1, 1), Fraction(2, 1)) o_ne_p=OUTSIDE
+joint_six_mark_type: PASS profiles=117649 shared_bath=true CP_TP=true fresh_type_control=true
+factor_two_authority: PASS SUPPLIED-CONDITIONAL-NOT-DERIVED
+complement_blind_control: PASS beta=1 is sufficient inside G_CB-assumed; no physical provenance supplied
+pure_exact_return_control: PASS six orthogonality equations force six blank-to-mark amplitudes to zero
+append_nonunitality: PASS T(I)=(Fraction(0, 1), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6)) entropy_drop=log(7/6)
+finite_indefinite_repeatability: PASS G_fin,infinity obstructed; finite-use bounds={2: 4, 7: 12, 49: 25}; extensive memory live
+g_fin_2_counterexample: PASS fixed_permutation=true inputs=(0, 0, 1) outputs=(1, 1, 0) third_use_and_lock_fail=true
+bath_parameter_relocation: PASS free theta*DeltaE and spectral ratio leave multiple beta values
+equal_z_discriminator: PASS odds={1: Fraction(1, 2), 2: Fraction(2, 3)}
+terminal_scope: PASS FINITE-EXACT-INDEFINITE-REPEATABILITY-OBSTRUCTED-FOR-NONTRIVIAL-APPEND-IN-G_FIN_INFINITY
+hostile_mutations: PASS rejected=27/27
+per_element: checked 24 proper-cubic rotations, four control orbits, independent u/o/p source directions, provenance mutants, legal beta projection, and exact channel identities.
+per_site: checked blank/same/opposite/perpendicular sectors, one joint six-mark fresh type control, append nonunitality, pure-catalyst zero-write, and reachable-state lock failure in named G_fin,2.
+per_mode: checked o=p before beta projection; beta=1 and beta=2 survive G_cov plus the supplied factor two; KMS and spectral inputs relocate rather than derive the selector.
+per_block: checked fixed two-ready-factor uses one and two, explicit third-use change, and the exact finite-memory all-use entropy obstruction; no all-history positive instrument was constructed.
+lattice_wide: checked and not executed — G_extensive transport/archive, distributed bath ownership, local-infinite process, physical clock, action bridge, gravity source, and full mark-kernel derivation remain live.
+PRIMARY_TERMINAL: FINITE-EXACT-INDEFINITE-REPEATABILITY-OBSTRUCTED-FOR-NONTRIVIAL-APPEND-IN-G_FIN_INFINITY
+SIDE_BOUNDARIES: G_cov leaves beta=1 and beta=2; named G_fin,2 has memory/lock failure; KMS data relocate beta; G_extensive and visibly lumpable memory routes live.
+ACCOUNTING: factor two supplied not predicted; obligation retirement=0; TOE percentage movement=0; audit/axiom/gravity changes=0.
+TOTAL: PASS=17 FAIL=0

@@ -72,3 +72,12 @@ No review-loop was used. Independent audit remains unset.
 This package adds the bounded theorem note and author-side assumptions,
 claim-status, handoff, PR-body, review-history, completed N1--N8, precedence,
 and panel surfaces. It does not edit audit verdict data.
+
+## Delivery
+
+- result commit: `3e0f738f7c4fa912fb6f33b62db0014c592cee6b`;
+- stacked pull request: `#7807`, based on the Block20 branch;
+- primary and independent caches were fresh at delivery;
+- citation graph, repository invariants, audit lint, vocabulary lint, and
+  whitespace checks passed at their declared scopes; and
+- independent audit remains unset.

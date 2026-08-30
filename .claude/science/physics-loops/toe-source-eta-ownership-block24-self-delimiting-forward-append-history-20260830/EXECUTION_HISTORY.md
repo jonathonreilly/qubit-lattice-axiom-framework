@@ -108,3 +108,32 @@ for commit and repin. They did not import, compile, execute, or edit it. Runtime
 and every predicate after the prior timeout remain unverified. The accepted
 source and provenance were committed at
 `e55cc32326f9481466a47f4c438023930041f8de` before execution.
+
+## Arbitrary-induction execution
+
+- source commit: `e55cc32326f9481466a47f4c438023930041f8de`;
+- source-repin commit: `c81cdb358bace14ffc9d9988a68fef392c7d0dc8`;
+- source SHA-256:
+  `e7a581904cb65eb221470fad1edb3430537da64c88f0a50e5973909399bc529b`;
+- declared-input fingerprint:
+  `c65f4b87555295ebe5bfeee72b78674f5a88fc380773f2e2b053159233594227`;
+- preserved cache:
+  `logs/runner-cache/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30_induction_optimized.txt`;
+- cache SHA-256:
+  `8cd51b20aed30755fb2374735a9d22cceb0464e781ce7993ef576c3be023940b`;
+- process result: nonzero exit after `411.75` seconds, exit `1`; and
+- merged stderr was empty because the traceback was captured in merged stdout.
+
+The run passed all fourteen displayed predicates through
+`arbitrary_finite_cylinders`, `single_Blank_resource_scope`, and `scope_ast`.
+In particular, the symbolic arbitrary-depth, translated-anchor,
+nineteen-component system effect, prior cylinder weight, and arbitrary-reference
+sum-back all passed after the 16,464 three-event composites.
+
+The runner then raised `TypeError: tuple indices must be integers or slices,
+not tuple` before mutation results. The mutation fixture constructed a block
+with already ordered `parent.BLANK_LIVE` by calling `parent.block_product`,
+which expects a site-indexed mapping and orders it internally. The intended
+typed object is directly `parent.BlockProduct(parent.BLANK_LIVE, locked_word)`.
+This is a harness fixture failure after a strictly stronger positive diagnostic,
+not a failed predicate, negative physics result, green runner, or terminal.

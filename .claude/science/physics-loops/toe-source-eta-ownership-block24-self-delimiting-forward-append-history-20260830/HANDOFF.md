@@ -73,4 +73,16 @@ The accepted source and provenance were committed at
 `e55cc32326f9481466a47f4c438023930041f8de`. No execution of that source has
 occurred.
 
+The repinned second repair completed in 411.75 seconds and passed every
+displayed science predicate through `arbitrary_finite_cylinders`, plus the
+single-Blank scope and AST scope checks. It then raised a Python `TypeError`
+before mutation results because the deliberately Locked-forward fixture passed
+the already ordered `BLANK_LIVE` tuple to `parent.block_product`, whose public
+helper expects a site-indexed mapping. No predicate printed `FAIL`. The exact
+nonzero cache is preserved with SHA-256
+`8cd51b20aed30755fb2374735a9d22cceb0464e781ce7993ef576c3be023940b`.
+The intended fixture is exactly `parent.BlockProduct(parent.BLANK_LIVE,
+locked_word)`; that one-line harness repair must be static-reviewed, committed,
+and repinned before executing the unreached mutation tail.
+
 No review-loop is authorized. Independent audit remains unset.

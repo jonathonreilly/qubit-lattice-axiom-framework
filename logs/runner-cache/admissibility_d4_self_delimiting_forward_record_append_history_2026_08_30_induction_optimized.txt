@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py
+runner_sha256: e7a581904cb65eb221470fad1edb3430537da64c88f0a50e5973909399bc529b
+input_fingerprint_sha256: c65f4b87555295ebe5bfeee72b78674f5a88fc380773f2e2b053159233594227
+timeout_sec: 900
+exit_code: 1
+elapsed_sec: 411.75
+status: nonzero_exit
+----- stdout -----
+PASS freeze: 8/8 Block24 preregistration hashes plus exact Block23 parent source
+PASS fixed_anchor_geometry: one current plus six possible forward 32-site blocks; common carrier 224 sites, radius 13
+PASS imported_effect_completion: fourteen Block22 effects rederive coefficientwise sum I_64
+PASS explicit_positive_roots: all fourteen 64-sector positive roots reconstruct their physical effects
+PASS Record_selected_target: 84 complete physical Locked words uniquely decode front/outcome and one forward center
+PASS factorized_append_branches: all 1176 prepare-plus-root-plus-pointer append Kraus branches are physical factor lists
+PASS global_append_CPTP: 84 factor-recontracted Record/Blank Gram terms form P_valid; K_STOP=I-P completes the anchored channel with symbolic I_R
+PASS classical_Record_QND: every old classical Record projector is fixed; eligible cross-word coherences dephase, so no coherent-code QND claim
+PASS physical_append_covariance: all separate branches rotate physical supports/live/pointers/roots under 24 frames and translate as one anchored family
+PASS self_delimiting_tip: old source STOPs after forward becomes Locked; translated new complete Record accepts one new Blank
+PASS exact_three_event_composite: all 16464 literal sequential composites contract to E_b1*T(b2|b1)*T(b3|b2), both prefix marginals, total I, and symbolic I_R
+PASS arbitrary_finite_cylinders: physical base prefix plus Record-preserving returned-tip induction and a coefficientwise stochastic/reference step prove every fixed finite cylinder
+PASS single_Blank_resource_scope: one exact Blank is consumed; 160 explicit spectator identities plus I_outside preserve every earlier/backward/lateral block
+PASS scope_ast: target site derives only from anchor plus physical current Record; append has no backward/lateral/future-site input
+Traceback (most recent call last):
+  File "/private/tmp/toe-record-block24.rp4VIx/worktree/scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py", line 2611, in <module>
+    main()
+    ~~~~^^
+  File "/private/tmp/toe-record-block24.rp4VIx/worktree/scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py", line 2576, in main
+    report = mutation_rejections()
+  File "/private/tmp/toe-record-block24.rp4VIx/worktree/scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py", line 1869, in mutation_rejections
+    locked_forward = parent.block_product(
+        parent.BLANK_LIVE, parent.locked_word(front, source)
+    )
+  File "/private/tmp/toe-record-block24.rp4VIx/worktree/scripts/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30.py", line 267, in block_product
+    return BlockProduct(ordered_live(live_vectors), pointer_word)
+                        ~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/private/tmp/toe-record-block24.rp4VIx/worktree/scripts/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30.py", line 239, in ordered_live
+    return tuple(vectors[site] for site in DIRECTIONS)
+  File "/private/tmp/toe-record-block24.rp4VIx/worktree/scripts/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30.py", line 239, in <genexpr>
+    return tuple(vectors[site] for site in DIRECTIONS)
+                 ~~~~~~~^^^^^^
+TypeError: tuple indices must be integers or slices, not tuple
+
+----- stderr -----
+

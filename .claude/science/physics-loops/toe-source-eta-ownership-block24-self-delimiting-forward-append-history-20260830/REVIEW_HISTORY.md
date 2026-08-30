@@ -121,3 +121,10 @@ retirement, or TOE-score move.
 
 The accepted second repair and its provenance were committed, without target
 execution, at `e55cc32326f9481466a47f4c438023930041f8de`.
+
+The repinned source subsequently passed the arbitrary-finite-cylinder theorem
+and every preceding/scope predicate, then raised a mutation-fixture `TypeError`
+before any mutation result. The exact cache is preserved. The proposed repair
+changes only the constructor from a mapping-ordering helper to the direct
+`BlockProduct` constructor for the already ordered `BLANK_LIVE` tuple; it must
+receive a fresh static check and source pin before execution.

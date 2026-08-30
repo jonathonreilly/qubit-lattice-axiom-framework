@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_pair_factor_qnd_occurrence_selector_2026_08_29.py
+runner_sha256: 08795b48e2f45dc892f2079ddc4e4222eb7bc0a2ec79bad9f422548c3381de22
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 24.26
+status: ok
+----- stdout -----
+PASS A_group_profiles: directions=6, rotations=24, profiles=117649, orbit census derived twice=5075
+PASS B_exact_star_unitary: derived characteristic lambda^5(lambda^2-h), H^3=hH, and the bright/dark exponential block exactly
+PASS C_kraus_qnd_lock: fresh-vacuum Kraus completeness, recorded-subspace lock, and neighbor-projector QND pass with coherent/nonvacuum scope retained
+PASS D_weak_generator: vacuum-centered star expansion derives Lindblad jumps and diagonal q_f=c_f^2; finite write mass retains its nonzero -delta^2 h^2/3 term
+PASS E_pair_factor_classification: one-record kernel forces kappa=2; beta>0 survives modulo g^2, with 7 profile ratios for beta=2 versus beta=1
+PASS F_same_z_discriminator: equal raw sums Z=9; derived x3-first odds beta=1:1/2 and beta=2:2/3, common delta=1/736
+PASS G_ordered_product_limit: scan-order delta term=0; derived delta^2 controls={Fraction(1, 1): 1/6, Fraction(1, 2): -5/12}; uniform finite-L sweep remainder telescopes to zero
+PASS H_finite_histories: exact conservative first-jump identity closes the append-only finite DAG induction; occupied, repeated, illegal-mark, and unordered histories vanish
+PASS I_harris_process: derived alpha=1, hazard interval=[1,736], proposal rate=736, clan parameter=5152*T, z=1 tails=(Fraction(5, 96), Fraction(1, 35840), Fraction(13, 5748019200))
+PASS J_outer_structural_control: arbitrary orbit-controlled cone has 5075 coordinates/5074 modulo scale; count-only cone has 7/6
+PASS K_provenance_scope: auxiliary pointer, fresh bath/disposal, weak mesh, and one-site arity remain imported family premises; only the local/cylinder diagonal process is licensed
+PASS L_hostile_mutations: rejected 27/27 changes spanning star, QND/lock, kernel, beta, rotations, order, Harris, and scope
+PASS M_n5_resolution: five substantive resolution certificates are present and retain the diagonal/local scope
+EXACT: Burnside fixed-profile multiset=(49, 49, 49, 49, 49, 49, 49, 49, 63, 63, 63, 63, 63, 63, 343, 343, 343, 343, 343, 343, 441, 441, 441, 117649); hazard extrema alpha units beta1=(Fraction(1, 1), Fraction(23, 2)), beta2=(Fraction(1, 1), Fraction(736, 1)).
+CLASSIFICATION: supplied one-record ratio fixes kappa=2; matching-only beta=1 has h=g^2 Z, while beta remains a non-clock generator coordinate.
+PROCESS: common proposal=736, branching=7, clan coefficient=5152; local Record-order odds=1/2,2/3.
+per_element: checked 117649 profiles, six marks, exact relation factors, Kraus normalization, and all 24 simultaneous slot-label rotations.
+per_site: checked the Hermitian star spectrum, fresh-vacuum recorded lock, pointer-projector QND, exact sine/cosine channel, and permanent one-site append generator.
+per_mode: checked six mark channels, the positive-real beta quotient, 5075 outer profile orbits, and the 7-coordinate count-only cone; coherent phases were outside the frozen grammar.
+per_block: checked arbitrary ordered finite-volume sweep bounds, exact O(delta^2) order dependence, normalized pure-birth histories, and same-Z odds 1/2 versus 2/3.
+lattice_wide: checked the common rate-736 Harris field, finite backward clans, local cadlag/cylinder convergence, covariance, formation, and permanence; no global quantum unitary, next-event chain, completion time, or clock is claimed.
+POSITIVE_CONSTRUCTION: PAIR-FACTOR-QND-WEAK-COLLISION-REALIZES-PERMANENT-RECORD-GENERATOR
+CONDITIONAL_IDENTITY: MATCHING-FACTOR-ANSATZ-REALIZES-SUPPLIED-KERNEL-WITH-HAZARD-PROPORTIONAL-TO-Z
+COMPUTATIONAL_TERMINAL: PAIR-FACTOR-QND-WEAK-COLLISION-REALIZES-MARK-KERNEL-RECORDED-NEIGHBOR-GAIN-UNDERSELECTED
+SCOPE: auxiliary orthogonal pointer, positive-real pair factors, fresh vacuum/disposal, weak mesh, one-site arity, and diagonal classical generator only.
+SHIP_GATE: terminal is eligible computationally; independent reconstruction and a landed post-execution N1-N8 checklist remain mandatory.
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

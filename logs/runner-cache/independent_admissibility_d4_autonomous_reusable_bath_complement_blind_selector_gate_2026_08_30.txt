@@ -1,0 +1,27 @@
+PASS A_corrected_freeze: 8/8 science hashes pinned at d20a49e1a875; metadata history pinned at f036fdefad; both runners absent at all freezes
+PASS B_corrected_contract: provenance, joint-six-mark, reachable-lock, finite/all-use, relocation, and live-route clauses all present
+PASS C_proper_cubic_group: order=24; exact signed-permutation closure/inverses; six-mark orbit=6
+PASS D_orbits_and_source_rank: fixed +z stabilizer=4; orbits=(blank,same,opposite,perpendicular); invariant diagonal dimension=4; u/o/p rank=3
+PASS E_cb_provenance: cubic covariance leaves three independent complement coordinates; 6 insertion forms classified assumed/relocated, never derived
+PASS F_beta_membership: o=p, positivity, common phase, supplied factor-two, and global scaling enforced; beta=1 and beta=2 rays both survive G_cov
+PASS G_joint_six_mark_type: one 84-term Hermitian shared-bath template; CP/TP append instrument; profiles=117649 per mark, signatures=84
+PASS H_pure_exact_return_control: six occupied-state inner products give a rank-6 constraint, so every blank-to-mark amplitude vanishes at exact pure return
+PASS I_append_nonunitality: nonzero six-mark append is CP/TP but T(I)=(1/2,13/12 x6); maximally mixed entropy decreases strictly
+PASS J_exact_repeatability_entropy_bound: n*entropy_drop <= log(dim K) reconstructed at exact theorem hypotheses; dim(K)=4 fails by use n=56
+PASS K_two_ready_factor_stock: named TWO_READY_FACTOR_CURSOR_STOCK has identical conditional instruments on uses 1-2 and a changed third-use channel
+PASS L_reachable_state_lock: lock holds on 137 reachable conditional bath states; initial-only check misses the depleted-state erase mutant
+PASS M_kms_spectral_relocation: free theta*DeltaE gives distinct exp(-theta*DeltaE) rays; temperature, gap, spectral, and coupling choices relocate beta
+PASS N_equal_z_discriminator: Z=9/10 pairs and Z=12 chain reconstructed; adjacent-n odds are 1/2 at beta=1 and 2/3 at beta=2 without fitting
+PASS O_hostile_mutations: rejected 34/34 group, provenance, beta, joint-type, reuse, lock, relocation, and scope mutations
+PASS P_terminal_scope: single terminal limited to nontrivial append in exact G_fin,infinity; G_cov, G_fin,k, KMS are side controls and broader routes stay live
+PASS Q_five_resolution_lines: five substantive lines separate executed finite algebra/channel checks from unexecuted lattice-wide routes
+SIDE_CONTROLS: cubic covariance leaves four response sectors and beta=1,2 rays; the named two-ready stock changes on use 3; free KMS/spectral data relocate beta.
+LIVE_ROUTES: finite correlated or visibly lumpable memory, growing archives, distributed baths/pointers, extensive translating reservoirs, approximate/non-Markov laws, and governance.
+per_element: PASS exact 24-element group, independent source coordinates, provenance labels, beta membership, and channel identities checked.
+per_site: PASS blank/same/opposite/perpendicular sectors, append nonunitality, and lock on every reachable finite-stock bath state checked.
+per_mode: PASS legal o=p beta projection, one joint six-mark type, all 7^6 profiles, and KMS/spectral relocation checked.
+per_block: PASS two-ready-factor conditional instruments and third-use failure checked; exact all-use entropy obstruction proved at its hypotheses.
+lattice_wide: PASS checked and not executed — extensive ownership, transport, local-infinite process, physical clock, action, and gravity remain live.
+COMPUTATIONAL_TERMINAL: FINITE-EXACT-INDEFINITE-REPEATABILITY-OBSTRUCTED-FOR-NONTRIVIAL-APPEND-IN-G_FIN_INFINITY
+SCOPE: no universal bath no-go, selector, factor-two derivation, process/clock, action/gravity bridge, axiom/audit change, obligation retirement, or TOE movement.
+TOTAL: PASS=17 FAIL=0

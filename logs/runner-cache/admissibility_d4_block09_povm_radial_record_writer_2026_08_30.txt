@@ -2,7 +2,7 @@ PASS freeze: 8/8 preregistration hashes
 PASS povm_lift: 14 effects rederived from Block09 product law
 PASS full_spectra: 14*64 sectors; strict floors 1/18 and (8-3sqrt2)/128
 PASS povm_complete: sum_b E_b=I_64 coefficientwise
-PASS spectral_square_roots: positive 64-sector square root for every effect
+PASS spectral_square_roots: explicit 14x64 projector resolutions square to every positive effect with no higher Walsh terms
 PASS effect_covariance: 14 outcomes x 24 proper cubic rotations
 PASS geometry: 6 live + 26 pointer sites, sparse radius four
 PASS orthogonal_code: 6 Ready + 84 Locked product words are distinct
@@ -10,11 +10,13 @@ PASS common_action_code: same onsite spin action rotates physical projectors and
 PASS anchored_decode: 26 recorded positions have unique centroid/template anchor
 PASS pair_orbits: same/opposite/perpendicular axis and two corner classes
 PASS instrument: Kraus CP/TP, STOP complement, arbitrary-reference positivity, Locked fixed
+PASS branch_lueders_reference: 14 exact branch probabilities and normalized Lueders outputs on a correlated live/reference fixture
 PASS branch_map_covariance: CP maps exact; fixed-label C4 Kraus phase is pure gauge
-PASS downstream_controls: H1, H2, 24 frames, and symbolic five-parameter source moment
+PASS downstream_controls: H1, H2, 24 frames, symbolic five-parameter moment, and functorial forward/actual-reverse composition
 PASS qnd_boundary: rank-one identity Choi forbids informative complete-M2-QND branches
+PASS commuting_record_control: orthogonal diagonal Record labels copy QND by CNOT while a noncommuting superposition does not
 PASS scope_ast: no fixture/source input, role type, imported target runner, or outcome table
-PASS mutations: 27/27 hostile mutations rejected
+PASS mutations: 30/30 hostile mutations rejected
 per_element: exact Block09 effect coefficients, spectra, positivity, completeness, and the M2 identity-Choi boundary are checked
 per_site: all 32 physical sites, the 26-site radial Record code, onsite spin action, and anchor recovery are checked
 per_mode: checked and not executed -- this finite selected-writer theorem makes no Fourier-space or normal-mode claim
@@ -22,4 +24,4 @@ per_block: the complete selected-anchor instrument, STOP complement, branch cova
 lattice_wide: checked and not executed -- overlap arbitration, relay composition, global dynamics, gravity, and TOE closure remain open
 TERMINALS: EXACT-BLOCK09-SIX-QUBIT-POVM-LIFT; COVARIANT-PRIMITIVE-M2-RADIAL-POINTER-LUEDERS-WRITER-FROM-LIVE-INPUT; INFORMATIVE-BLOCK09-POVM-INCOMPATIBLE-WITH-COMPLETE-M2-RECORD-QND
 SCOPE: selected isolated anchor; 32 primitive qubits; compound 26-site Record; consumable live input; no overlap, relay, process, clock, source, gravity, axiom, audit, obligation, or TOE move
-TOTAL: PASS=17 FAIL=0
+TOTAL: PASS=19 FAIL=0

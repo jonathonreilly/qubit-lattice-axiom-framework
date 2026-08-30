@@ -1,253 +1,455 @@
 # Goal
 
-Source/Eta Block 19 executes the post-Block18 panel's `4-1` choice: one
-bounded microscopic QND repeated-interaction classification. The target is not
-to exhibit another possible occurrence law. It is to determine whether a
-fixed local quantum collision architecture derives one Record generator ray
-up to a common time scale, or whether the dimensionless hazard freedom found
-in Block 18 survives inside the microscopic coupling norm.
+Source/Eta Block 19 executes the post-Block18 panel's 4-1 choice:
+classify one bounded microscopic QND repeated-interaction family before moving
+to the action/transfer selector. The independent preregistration attack found
+that the first packet's arbitrary orbit-controlled hazard family made
+nonuniqueness true by definition. That family is now only an outer control.
+The terminal-bearing target is the finite relation-factor Hamiltonian grammar
+below.
 
-No Block19 target runner, cache, or mutation may execute before this packet is
-committed.
+No Block19 target runner or cache existed or executed before this corrected
+support packet was committed. The committed initial packet remains provenance;
+this file and PREFLIGHT_SUPPORT_CORRECTION.md supersede its conflicting
+family, finite-collision, QND, and product-limit language.
 
 ## Exact target contract
 
-| field | frozen contract |
+| field | corrected frozen contract |
 |---|---|
-| Positive target | `MICROSCOPIC-QND-DILATION-DERIVES-PERMANENT-RECORD-JOINT-INTENSITY-UP-TO-GLOBAL-TIME-SCALE` |
-| State carrier | At every site, an orthogonal seven-state pointer `H_R=span{|bottom>,|f>:f in D}`, `D={+-e_1,+-e_2,+-e_3}`. The classical label `f` decodes the Block18 density-matrix content `rho_f`; the enlarged orthogonal pointer is not identified with strict one-qubit `M_2(C)`. |
-| Condition carrier | The six nearest-neighbor Record pointers, read only through their commuting label projectors. A recorded condition is unchanged by the interaction. |
-| Mark law | The frozen Block18 kernel `p_f(R)=2^(m_f(R))/Z(R)`, where `m_f` counts neighboring label `f` and `Z=sum_g 2^(m_g)`. This is a supplied conditional law, not axiom content. |
-| Microscopic family | One fresh seven-state ancilla per candidate collision, initialized in `|0>`, one vacuum-to-single-mark controlled rotation, QND neighbor controls, append-only target write, identity lock on already recorded targets, range one, translation covariance, and proper-cubic covariance. No postselection. |
-| Classification variable | The squared vacuum-to-mark coupling norm `h(R)=sum_f |a_f(R)|^2` on a blank target. Relative squared amplitudes must equal `p_f(R)`. Phases may vary covariantly but do not alter the classical jump generator. |
-| Selection gate | Classify every admissible `h` inside the frozen family modulo multiplying all profiles by one positive constant. One generator ray closes the positive target. Two positive, bounded, covariant nonproportional rays with a local Record-order discriminator close only the narrow underselection terminal. |
-| Required dynamics bridge | Exact CP/TP collision instrument and explicit unitary extension; QND neighbor preservation; pointer orthogonality/readability; target permanence; first-order finite-volume generator; order-independent continuous-time limit; equality to the corresponding Block18 classical generator; local-infinite process inherited only after that equality is proved. |
-| Forbidden imports | A profile-dependent attempt rate called a mark probability; a supplied scheduler or absolute clock called derived; nonorthogonal strict-`M_2` contents called perfectly QND-readable; a target table hidden in an ancilla; one chosen dilation presented as uniqueness; environment resets or weak-coupling scaling attributed to the minimal axioms; compound events; source/gravity claims. |
-| Outcomes that do not close | Generic Stinespring existence, one CPTP instrument, CP/TP without a scaling limit, a constant-hazard construction without classification, a discrete scan order called physical time, or two couplings differing only by one global constant. |
+| Positive construction target | PAIR-FACTOR-QND-WEAK-COLLISION-REALIZES-PERMANENT-RECORD-GENERATOR |
+| Conditional algebraic result | MATCHING-FACTOR-ANSATZ-REALIZES-SUPPLIED-KERNEL-WITH-HAZARD-PROPORTIONAL-TO-Z |
+| Eligible narrow terminal | PAIR-FACTOR-QND-WEAK-COLLISION-REALIZES-MARK-KERNEL-RECORDED-NEIGHBOR-GAIN-UNDERSELECTED |
+| State carrier | At every site, an auxiliary orthogonal seven-state pointer with one blank state and six states labeled by D={+-e_1,+-e_2,+-e_3}. It is not identified with the physical strict one-qubit M_2(C) carrier. |
+| Condition carrier | Six nearest-neighbor pointer observables, read through their commuting label projectors. QND means conservation of those projectors and diagonal labels, not identity of an arbitrary coherent neighbor marginal. |
+| Supplied conditional law | p_f(r)=2^(m_f(r))/Z(r), Z(r)=sum_g 2^(m_g(r)). The ratio and its factor of two are downstream inputs, not derived axiom content. |
+| Core microscopic grammar | One common positive real triple (g,a,b); one identical three-relation factor per neighbor (blank, same label, other recorded label); one fresh seven-state vacuum ancilla; one target plus six controls; Hermitian star Hamiltonian; no profile/orbit lookup coefficient, higher-body profile gate, postselection, or simultaneous overlapping-unitary claim. |
+| Classification variable | beta=b^2 after the supplied mark law fixes (a/b)^2=2; g^2 is one common rate scale. The blank relation coefficient is fixed to one as factorization gauge. |
+| Equivalence relation | Only multiplication of every generator intensity by one state-independent positive constant. A factor depending on profile, occupancy, label, site, or history is not a clock-unit quotient. |
+| Collision protocol | At each finite-volume mesh sweep, every site is visited once in an arbitrary permutation and receives a fresh vacuum ancilla; permutations may vary between sweeps. Ancilla preparation, disposal, cadence, and the weak scaling U_delta=exp(-i sqrt(delta)H) are declared imports. |
+| Required bridge | Exact local unitary and fresh-vacuum Kraus channel; exact pointer-label QND and target lock on the physical input sector; conditional mark law at finite delta; first-order quantum and diagonal generators; arbitrary-order finite-volume product limit; finite and local-infinite pure-Record dynamics; a clock-free local Record-order discriminator. |
+| Outer control | Arbitrary proper-cubic orbit-controlled h(r) rotations may be classified only as a structural dilation control. Their many free coefficients cannot be used as evidence that the core pair-factor grammar is underselected. |
+| Forbidden conclusions | No strict-M_2 encoder, autonomous bath, physical clock, compound-event selector, gravity source, full instrument uniqueness, axiom edit, audit verdict, obligation retirement, or TOE percentage movement. |
 
-## Local pointer instrument
+The family is selected as a bounded physics ansatz; Block19 does not derive the
+ansatz from the minimal axioms. The campaign asks what the ansatz actually
+fixes once the conditional mark kernel is supplied.
 
-For a fixed neighbor profile `r`, write
+## Pointer profiles and supplied mark kernel
 
-```text
-w_f(r)=2^(m_f(r)),      Z(r)=sum_g w_g(r),
-p_f(r)=w_f(r)/Z(r).
-```
+Let
 
-Let `0<delta<=1/h_max`, and let `h(r)>0` be a bounded coupling-norm function.
-On a blank target define exact Kraus operators
+~~~
+P_y^rec = sum_(g in D) P_(y,g),
+P_(y,other(f)) = P_y^rec - P_(y,f).
+~~~
 
-```text
-K_f(r,delta)=sqrt(delta h(r) p_f(r)) |f><bottom|,
-K_0(r,delta)=P_rec + sqrt(1-delta h(r)) |bottom><bottom|,
-P_rec=sum_f |f><f|.                                      (1)
-```
+For a classical neighbor profile r, define
 
-They obey
+~~~
+n(r)   = number of recorded neighbors,
+m_f(r) = number of neighbors carrying label f,
+w_f(r) = 2^(m_f(r)),
+Z(r)   = sum_g w_g(r),
+p_f(r) = w_f(r)/Z(r).                                   (1)
+~~~
 
-```text
-K_0^dagger K_0 + sum_f K_f^dagger K_f = I.              (2)
-```
+There are 7^6=117,649 ordered profiles. Proper-cubic covariance rotates the
+six neighbor slots and the six nonblank labels simultaneously.
 
-The neighbor profile enters through mutually orthogonal commuting control
-projectors, so (1) combines into one controlled instrument. Already recorded
-targets are fixed by `K_0` and annihilated by every `K_f`. Neighbor controls
-are not changed. The six written targets are orthogonal and perfectly
-readable.
+## Frozen relation-factor Hamiltonian grammar
 
-An explicit Stinespring isometry sends
+For target site x, fresh ancilla a_x, and candidate label f, define
 
-```text
-|bottom>|0> -> sqrt(1-delta h(r)) |bottom>|0>
-               + sum_f sqrt(delta h(r)p_f(r)) |f>|f>,
-|g>|0>      -> |g>|0>.
-```
+~~~
+D_(x,f)(a,b)
+  = product_(y nearest x)
+      [P_(y,bottom) + a P_(y,f) + b P_(y,other(f))],
 
-The two displayed subspaces have equal finite dimension and the isometry must
-be extended by explicit profile-controlled two-plane rotations to a unitary,
-not merely cited as generic Stinespring existence. The runner may represent
-the square roots by exact radicands; every norm and orthogonality identity must
-be exact.
+A_(x,f)
+  = g (|f><bottom|)_x tensor (|f><0|)_(a_x) D_(x,f)(a,b),
 
-The one-collision classical kernel is
+H_x(a,b,g) = sum_f [A_(x,f) + A_(x,f)^dagger],
 
-```text
-P(r:bottom -> f)=delta h(r)p_f(r),
-P(r:bottom -> bottom)=1-delta h(r).                       (3)
-```
+U_(x,delta) = exp[-i sqrt(delta) H_x].                   (2)
+~~~
 
-Thus its local first-order generator has joint intensity
+The allowlist in (2) is the complete core grammar: finite sums, products, and
+adjoints of the displayed target/ancilla transitions and one-neighbor
+orthogonal relation projectors, with the same positive real a, b, and g at
+every site and label. A hidden orbit/profile table, an extra common profile
+polynomial, or a higher-body control is outside the core family.
 
-```text
-q_f(r)=h(r)p_f(r),       lambda(r)=sum_f q_f(r)=h(r).      (4)
-```
+On profile r,
 
-The mark completeness relation fixes the relative amplitudes. Whether the
-declared microscopic constraints also fix `h(r)` is the target question.
+~~~
+c_f(r) = g a^(m_f(r)) b^(n(r)-m_f(r)),
+h_(a,b)(r) = sum_f c_f(r)^2.                             (3)
+~~~
 
-## Table-free factorized pincer
+Let
 
-The full classification is attacked from a smaller positive family rather
-than only by arbitrary profile controls. Let `P_(y,f)` be the orthogonal
-projector that says neighbor `y` carries label `f`, and define the raw
-vacuum-to-mark coupling
+~~~
+|B> = |bottom>_x |0>_(a_x),
+|chi_r> = h_(a,b)(r)^(-1/2) sum_f c_f(r)|f>_x|f>_(a_x).
+~~~
 
-```text
-J_(x,f) = g |f><bottom|_x
-            product_(y nearest x) [I+(sqrt(2)-1)P_(y,f)]. (5)
-```
+Every other neighbor label is a control. On
+span\{|B>,|chi_r>\}, H_x is sqrt(h_(a,b)(r)) sigma_x,
+and it annihilates the orthogonal dark space. Hence
 
-The neighbor factors commute. On a profile with `m_f` matching neighbors,
-the amplitude is `g(sqrt(2))^(m_f)`, so
+~~~
+U_(x,delta)|B>
+  = cos(sqrt(delta h)) |B>
+    - i sin(sqrt(delta h)) |chi_r>.                      (4)
+~~~
 
-```text
-q_f(r)=|g|^2 2^(m_f(r)),
-h_raw(r)=|g|^2 Z(r),
-q_f/h_raw=p_f.                                             (6)
-```
+This is the required explicit unitary, not generic Stinespring rhetoric.
 
-This is a table-free microscopic lift of the Block18 kernel: the denominator
-`Z` appears only when conditioning on the occurrence of some mark. Within the
-frozen **minimal matching-gain subfamily**—one common base coupling, one
-identical factor per matching neighbor, no label-blind occupancy factor, and
-no additional common profile gate—the probability ratio `2` fixes the gain
-magnitude to `sqrt(2)`, and (6) is unique modulo `|g|^2` and irrelevant
-covariant phases. The runner must prove this classification rather than print
-the formula.
+## Exact fresh-vacuum channel and scope of QND
 
-That conditional positive selector is not allowed to masquerade as robustness.
-The same frozen block must test the nearest symmetry-allowed extension
+Tracing the fresh ancilla after (4) gives, on profile r,
 
-```text
-J_(x,f)^(b) = J_(x,f)
-              product_(y nearest x)
-                [I+(b-1)P_y^recorded],                   (7)
-```
+~~~
+K_0(r,delta)
+  = P_rec + cos(sqrt(delta h(r))) P_bottom,
 
-where `b>0` is common to all labels and
-`P_y^recorded=sum_g P_(y,g)`. It leaves `p_f` unchanged but gives
+K_f(r,delta)
+  = -i [c_f(r)/sqrt(h(r))]
+       sin(sqrt(delta h(r))) |f><bottom|.                (5)
+~~~
 
-```text
-h_b(r)=|g|^2 b^(2n(r)) Z(r).                              (8)
-```
+The exact completeness identity is
 
-If (7) obeys the same full-family locality, covariance, QND, carrier, ancilla,
-and scaling premises, then the minimal result is only a conditional
-subtheorem: symmetry and QND consistency do not forbid a dimensionless
-label-blind gain. The primary and independent checker must report both the
-minimal factorized classification and the robustness verdict.
+~~~
+K_0^dagger K_0 + sum_f K_f^dagger K_f = I.              (6)
+~~~
 
-## Finite-volume and continuous-time bridge
+The exact finite-collision probabilities are
 
-On a finite torus, couple one fresh ancilla to each site. The simultaneous
-finite-volume unitary or any product ordering of the local collision maps may
-differ at order `delta^2` because neighboring candidate maps overlap. The
-runner must prove that every declared ordering has the same first-order map
+~~~
+P_delta(bottom -> f | r)
+  = sin^2(sqrt(delta h(r))) c_f(r)^2/h(r),
 
-```text
-T_delta = I + delta sum_x L_x + O(delta^2),               (9)
-```
+P_delta(bottom -> bottom | r)
+  = cos^2(sqrt(delta h(r))).                             (7)
+~~~
 
-with a volume-local bound, and that `(T_(t/N))^N` converges on the diagonal
-pointer algebra to the continuous-time pure-Record semigroup generated by
-(4). A finite scan order is a regulator, not a physical scheduler. The limit
-must be translation/proper-cubic covariant.
+Thus the conditional mark law c_f^2/h is exact whenever a collision writes,
+while the total write probability is sinusoidal. It is not exactly
+delta h. For all-profile nonzero conditional probabilities one may take a
+shared interval 0<delta h_max<pi^2; the generator limit only requires
+delta -> 0.
 
-Once (4) is derived exactly, the finite-history and local-infinite Harris
-existence theorem of Block 18 may be inherited for the two executed bounded
-hazards by exact generator identity. This block must not claim a global next
-event on `Z^3`, a common finite completion time, or an absolute clock.
+The fresh-vacuum induced channel fixes every already recorded target:
 
-## Uniqueness classification
+~~~
+K_0 P_rec=P_rec,       K_f P_rec=0.
+~~~
 
-Let the proper cubic group act simultaneously on the six neighbor slots and
-six Record labels. The frozen family permits a positive bounded control norm
-`h(r)` precisely when it is constant on the resulting profile orbits. The
-primary must derive the orbit count rather than quote Block18. It must then
-classify:
+The Hamiltonian commutes with every neighbor label projector, so those pointer
+observables and all diagonal Record labels are nondemolished. It can entangle
+different coherent profile sectors, and H_x can erase |f>_x|f>_(a_x) for a
+nonvacuum ancilla. Therefore neither complete neighbor-state identity nor an
+ancilla-state-independent target lock is claimed. Append-only permanence is
+an exact statement about each collision boundary under the frozen fresh-vacuum
+protocol.
 
-1. the full orbit-invariant family;
-2. the smaller count-only family `h(r)=H(n(r))`, `n=0,...,6`; and
-3. the quotient of each family by one common positive scale.
+## Weak generator
 
-The anticipated hostile witness pair, to be rederived rather than assumed,
-is
+Removing the ancilla transition from (2), define system jump operators
 
-```text
-h_0(r)=alpha,
-h_1(r)=alpha(1+n(r)/6).                                  (10)
-```
+~~~
+J_(x,f) = g |f><bottom|_x D_(x,f)(a,b).                  (8)
+~~~
 
-If both are realized by the same carrier, ancilla type, QND rule, event arity,
-scaling, and initial-law contract, their `n=0` versus `n=6` Record-order odds
-must be recomputed. A nonconstant ratio proves that QND dilation existence did
-not select the coupling norm. The permitted terminal is then only
+The local quantum channel has the expansion
 
-```text
-QND-REPEATED-INTERACTION-LIFTS-EXIST-HAZARD-NORM-UNDERSELECTED.
-```
+~~~
+Phi_(x,delta) = I + delta L_x + O(delta^2),
 
-This statement is restricted to the frozen orthogonal-pointer collision
-family. It does not rule out an action-selected coupling, an autonomous bath,
-a strict-`M_2` construction, a compound instrument, or another microscopic
-architecture, and it cannot authorize an axiom edit.
+L_x(rho)
+  = sum_f [J_(x,f) rho J_(x,f)^dagger
+           - (1/2){J_(x,f)^dagger J_(x,f),rho}].         (9)
+~~~
 
-## Relation to the direction/corner law
+There is no first-order Hamiltonian term because the fresh-vacuum expectation
+of H_x vanishes. On the diagonal pointer algebra, (9) is the pure-Record
+generator
 
-Block 09's phrase “directions compare qubits; cells weigh corners” supplies a
-positive normalized fourteen-outcome conditional law and Block 10 supplies a
-joint condition carrier. Those results materially help with relative mark
-probabilities. They do not fix the scalar `h=sum_f q_f` in (4), and Block 11
-shows that unchanged perfect readout of noncommuting strict-`M_2` inputs is a
-separate microscopic obstacle. Block19 therefore uses orthogonal Record
-pointers and tests only the occurrence-norm selection seam. It does not replay
-the Block09/10 probability construction or broaden their strict-`M_2` scope.
+~~~
+(L_x F)(R)
+  = 1_(R_x=bottom) sum_f q_f(r_x(R))
+      [F(R^(x,f))-F(R)],
+
+q_f(r) = g^2 a^(2m_f(r)) b^(2(n(r)-m_f(r))),
+h(r)   = sum_f q_f(r).                                  (10)
+~~~
+
+Recorded targets have zero rate and never overwrite.
+
+## Exact classification inside the core grammar
+
+Let
+
+~~~
+kappa = (a/b)^2,       beta=b^2.
+~~~
+
+Equation (10) gives
+
+~~~
+q_f(r)=g^2 beta^(n(r)) kappa^(m_f(r)).
+~~~
+
+A profile with one recorded neighbor has same-label/nonmatching-label
+intensity ratio kappa. Requiring (1) on that profile forces kappa=2.
+Conversely kappa=2 reproduces (1) on every profile. Therefore all positive
+real members of the core grammar that match the supplied kernel are
+
+~~~
+a=sqrt(2 beta),        b=sqrt(beta),
+
+q_f^(beta)(r)=g^2 beta^(n(r)) 2^(m_f(r)),
+h_beta(r)=g^2 beta^(n(r)) Z(r),          beta>0.         (11)
+~~~
+
+The beta=1 member is the matching-only identity
+
+~~~
+q_f=g^2 2^(m_f),       h=g^2 Z.
+~~~
+
+It is unique modulo g^2 only after the syntax fixes the other-recorded gain
+equal to the blank gain. This is a simple realization of the supplied ratio,
+not physical selection of that ratio or of beta=1.
+
+For beta' != beta,
+
+~~~
+h_(beta')(r)/h_beta(r)=(beta'/beta)^(n(r)),
+~~~
+
+which is not one constant on the full profile space. The freedom cannot be
+absorbed into g^2.
+
+## Same-premise dimensionless discriminator
+
+Use the same carrier, ancilla, protocol, g, and core grammar for:
+
+~~~
+law A: beta=1,   b=1,       a=sqrt(2),
+law B: beta=2,   b=sqrt(2), a=2.                         (12)
+~~~
+
+Choose two blank targets with disjoint radius-one neighborhoods:
+
+~~~
+x_2: n=2, both recorded neighbors have the same label,
+     Z=2^2+5=9;
+
+x_3: n=3, three recorded neighbors have three distinct labels,
+     Z=3*2+3=9.                                          (13)
+~~~
+
+Their hazard ratio is
+
+~~~
+h_beta(x_3)/h_beta(x_2)=beta.
+~~~
+
+Conditional on the next tested Record occurring at one of the two sites,
+
+~~~
+P_beta(x_3 first)=beta/(1+beta)
+                 =1/2  at beta=1,
+                 =2/3  at beta=2.                       (14)
+~~~
+
+The common scale g^2 and the equal raw sum Z=9 cancel. In the local-infinite
+reading, put both targets and all of their blank neighbors in the observation
+region. Conditional on exterior graphical history, other candidate sites
+contribute one common predictable survival functional to the two target
+densities; it cancels in their conditional ratio exactly as in Block18. No
+constant-rate assumption is made for those competitors.
+
+The n=0 versus n=6 Block18 fixture is a hostile control here, not an oracle:
+for one of each of the six labels its Z values are 6 and 12, and the
+x_6 odds are 2 beta^6/(1+2 beta^6).
+
+## Finite-volume ordered-product bridge
+
+Fix Lambda_L=(Z/LZ)^3, L>=3, with M=L^3. One mesh sweep:
+
+1. chooses any permutation containing every site exactly once;
+2. applies each local fresh-vacuum channel (5) in that order; and
+3. discards every used ancilla.
+
+Permutations may vary from sweep to sweep. This is a regulator, not a physical
+scheduler. No simultaneous product of overlapping local unitaries is claimed.
+
+On the diagonal pointer algebra, write the local Markov operator as
+
+~~~
+T_(x,delta)F
+  = F + sin^2(sqrt(delta h_x))
+      [sum_f p_f F(R^(x,f))-F].
+~~~
+
+For delta h_max<=1,
+
+~~~
+0 <= delta h-sin^2(sqrt(delta h))
+   <= (delta h)^2/3,
+
+||L_x||_infinity <= 2 h_max,
+
+||T_(x,delta)-I-delta L_x||_infinity
+   <= (2/3) delta^2 h_max^2.                             (15)
+~~~
+
+For any sweep permutation pi, with A=sum_x L_x,
+
+~~~
+||T_(delta,pi)-I-delta A||_infinity
+ <= (2/3)M delta^2 h_max^2
+    + exp(2 delta M h_max)-1-2 delta M h_max.            (16)
+~~~
+
+The right side is O_L(delta^2) and is uniform over the finitely many
+permutations. Markov contractions plus a telescoping comparison with
+exp(delta A) then give, for any sequence of sweep permutations,
+
+~~~
+T_(t/N,pi_N) ... T_(t/N,pi_1)
+  -> exp(t A)                                             (17)
+~~~
+
+on the finite diagonal algebra. The bound is not uniform in volume and proves
+neither a global infinite-lattice collision unitary nor a physical clock.
+
+An exact adjacent-site finite-step control must show that scan order can
+change probabilities at O(delta^2) while leaving (10) unchanged at first
+order. It must not report that regulator artifact as physical selection.
+
+## Finite and local-infinite process gate
+
+For the executed pair (12), set alpha=6g^2. Exhaustive profile bounds must
+rederive
+
+~~~
+alpha <= h_beta(r) <= 736 alpha,       beta in {1,2}.     (18)
+~~~
+
+Finite-volume generators are conservative pure-birth generators and their
+ordered-history laws normalize by the append-only finite DAG argument.
+
+For local-infinite existence, a common rate-736 alpha proposal field,
+uniform acceptance key, and exponential mark race realize both generators.
+A backward query step exposes at most seven sites, giving the explicit
+factorial-tail domination
+
+~~~
+P(ancestor radius >= m)
+ <= |A| sum_(k>=m) (5152 alpha T)^k/k! -> 0.             (19)
+~~~
+
+This supplies finite backward clans, a measurable local cadlag process,
+fixed/periodic local-cylinder convergence, and translation/proper-cubic
+covariance after the runner proves the displayed premises. The lower bound
+in (18) gives
+
+~~~
+P(x remains blank at t)<=exp(-alpha t).
+~~~
+
+Every fixed initially blank site records almost surely and then remains
+locked. There is no global next-event chain for infinitely blank data and no
+common finite completion time.
+
+This is a new microscopic membership proof for two pure-Record generators; it
+reuses the Block18 Harris method only after the generator, sector, rate bound,
+initial law, and local-cylinder contract are matched explicitly.
+
+## Outer orbit-controlled structural control
+
+The original exact engineered Kraus family with an arbitrary positive bounded
+proper-cubic-invariant h(r) remains useful only to classify a broad
+structural dilation. It contains one free coefficient per simultaneous
+slot-and-label profile orbit, so it cannot test physical one-ray selection.
+The held-out desk census is 5,075 orbits (5,074 dimensions modulo scale);
+the count-only cone has seven coordinates (6 modulo scale). Both runners
+must rederive those values without using them as pass oracles.
+
+The exact engineered linear-in-delta Kraus family and the exponential
+Hamiltonian family (2) are different finite-collision realizations that share
+a first-order generator when their h agrees. They must never be printed as
+one exact map.
+
+## Provenance boundary
+
+- Block02 supplies an orthogonal-writer precedent only. It does not supply
+  this one-site carrier, collision, attachment, rate, or history.
+- Blocks09 and 10 do not supply the six-mark kernel or the auxiliary
+  seven-state pointer used here. Their direction/corner and joint-carrier
+  results remain separate upstream work.
+- Block11's strict-M_2 no-information-without-disturbance boundary is
+  preserved. Block19 takes the explicitly named orthogonal-pointer exit and
+  derives no strict-M_2 encoder or causal preparation.
+- Block18 supplies the pure-Record process target and Harris proof method, not
+  the pair-factor Hamiltonian or a selector.
+- Fresh bath fragments, vacuum preparation, trace/disposal, weak scaling, and
+  mesh cadence are downstream protocol inputs.
 
 ## Required test battery
 
 The primary runner must:
 
-1. generate the six directions and `24` proper cubic rotations;
-2. exhaust all `7^6` ordered profiles, derive kernel normalization and
-   covariance, and independently compute the profile-orbit census;
-3. construct (1)--(3) exactly for every profile and both hostile hazards;
-4. verify CP/TP, explicit isometry/unitary-block completion, orthogonal
-   readability, neighbor QND preservation, target append, and locked-sector
-   identity;
-5. derive (4), including the no-jump coefficient, without inserting the
-   expected generator as a test oracle;
-6. prove the finite-volume first-order product formula and continuous-time
-   diagonal-sector convergence, with schedule differences only at
-   `O(delta^2)`;
-7. classify full orbit-invariant and count-only coupling norms modulo global
-   scaling;
-8. derive the raw-weight product coupling (5), prove its uniqueness inside the
-   minimal matching-gain subfamily, and execute the label-blind extension (7);
-9. reconstruct the local `1/2` versus `2/3` Record-order discriminator if two
-   nonproportional lifts survive;
-10. bind the exact Block18 generator/Harris inheritance and repeat its local,
-   not global, scope;
-11. reject hostile mutations and print substantive `per_element:`,
-    `per_site:`, `per_mode:`, `per_block:`, and `lattice_wide:` lines, ending
-    in `TOTAL: PASS=n FAIL=n` with stdout below `6000` bytes.
+1. generate the six directions and 24 proper cubic rotations;
+2. exhaust all 7^6 profiles and rotate slots and labels together;
+3. derive the relation-factor coefficients, star spectrum, exact sine/cosine
+   Kraus channel, CP/TP, fresh-vacuum target lock, pointer-projector QND,
+   range-one support, and covariance;
+4. derive the quantum weak generator and its diagonal jump intensities from
+   the exact unitary rather than inserting (10) as an oracle;
+5. prove that the supplied conditional kernel forces (a/b)^2=2 and classify
+   the surviving beta family modulo g^2;
+6. execute beta=1 and beta=2 under one membership contract and reconstruct
+   the same-Z 1/2 versus 2/3 local Record-order discriminator;
+7. prove (15)--(17), including varying scan orders and an exact O(delta^2)
+   order-dependence control;
+8. prove finite histories and the local-infinite construction at the exact
+   scope of (18)--(19);
+9. independently derive the outer orbit census and demote it to a structural
+   control;
+10. bind the exact Block18 provenance and reject strict-M_2, autonomous-bath,
+    compound-event, clock, gravity, axiom, audit, and TOE upgrades;
+11. reject hostile mutations and print substantive per_element:,
+    per_site:, per_mode:, per_block:, and lattice_wide: lines, ending
+    in TOTAL: PASS=n FAIL=n with stdout below 6000 bytes.
 
-The independent checker must reconstruct the classification without importing
-the primary. A negative/underselection terminal additionally requires the
-full N1--N8 No-Go Discipline sidecar.
+The independent checker must reconstruct the same claims without importing
+the primary implementation or treating the anticipated terminal, witness
+fractions, orbit count, or hazard bounds as test oracles.
 
-## Stop rule
+If an underselection terminal is observed, a post-execution N1--N8 No-Go
+Discipline checklist with five honest N5 resolution lines is mandatory. The
+preregistration attack is not that release certificate.
 
-Run this one frozen collision family to a result without widening its carrier,
-ancilla, support, or premise set mid-block.
+## Stop rule and terminal matrix
 
-- One generator ray modulo scale in the full frozen family: ship the positive
-  selector terminal. Uniqueness only after forbidding (7) earns a conditional
-  minimal-factorized subtheorem, not full selection.
-- Two dimensionlessly inequivalent admissible lifts: ship only the narrow
-  hazard-norm underselection terminal and pivot to the action/transfer
-  uniqueness audit.
-- Failure of CP/TP, QND permanence, locality, or the controlled limit: stop at
-  the first exact construction gate; do not infer microscopic impossibility.
+| observed result | permitted disposition |
+|---|---|
+| pair-factor grammar, QND quantifier, protocol, or equivalence remains ambiguous | stop before target execution |
+| exact star unitary, CP/TP, lock, QND, locality, covariance, or common protocol fails | first named construction failure only |
+| no controlled finite-volume diagonal limit | scaling/protocol failure only |
+| matching-only beta=1 lift passes but the extended grammar is not classified | conditional realization identity only; classification inconclusive |
+| two same-premise beta values survive but differ only by global scale | no underselection; classification remains open |
+| beta=1,2 survive every gate and give different local Record-order odds | narrow pair-factor hazard underselection becomes eligible after N1--N8 |
+| the complete corrected grammar is independently proved one ray modulo global scale | positive generator-selection theorem inside the imported grammar |
 
-No outcome changes formal TOE percentages, audit status, or axiom text in this
-author-side block.
+No result in this author-side block changes formal TOE percentages, audit
+status, or axiom text. If the narrow terminal survives, the next campaign is
+the action/transfer generator-cone audit: determine whether the retained
+action structure fixes beta or supplies an equivalent positive history
+measure.

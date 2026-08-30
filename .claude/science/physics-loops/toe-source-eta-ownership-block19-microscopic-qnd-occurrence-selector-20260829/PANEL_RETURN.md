@@ -19,3 +19,24 @@ result and pivot to the action/transfer generator-cone audit. PR `#7803`
 strengthens fixed-placement action/crossing reinforcement but supplies no
 Record-history measure, occurrence instrument, clock, or conserved source and
 therefore does not rerank this block.
+
+## Hostile preregistration return
+
+Before execution, three independent attacks unanimously rejected the original
+arbitrary orbit-controlled family as a selector experiment: allowing every
+cubic-invariant h profile makes its negative answer tautological. They
+unanimously accepted the corrected relation-factor Hamiltonian as the
+nontrivial bounded target, subject to exact scope:
+
+- derive the sine/cosine fresh-vacuum channel from one Hermitian interaction;
+- classify the shared same-label and other-recorded coefficients;
+- keep pointer-projector QND separate from complete-state identity;
+- use ordered fresh-ancilla sweeps and a proved weak limit;
+- compare beta=1 and beta=2 on the same-Z local Record race; and
+- call the matching-only sqrt(2) construction a realization of a supplied
+  probability ratio, not a prediction or physical selector.
+
+The corrected panel verdict is therefore unanimous: execute the fixed
+relation-factor grammar once. If the dimensionless other-recorded gain
+survives, package the narrow result and immediately pivot to whether the
+action/transfer structure fixes that exact parameter.

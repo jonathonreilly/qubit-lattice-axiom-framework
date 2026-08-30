@@ -2,21 +2,22 @@
 
 | family | object/formulation | mechanism/invariant | terminal obligation | strength | status | reopen condition |
 |---|---|---|---|---|---|---|
-| orthogonal-pointer repeated interaction | seven-state Record pointer plus fresh seven-state ancilla | controlled vacuum-to-mark rotation, QND neighbor projectors, locked target | classify generator ray modulo scale | target family | active | execute exact primary and independent certificates |
-| one chosen normalized instrument | one fixed `h` | CP/TP completeness and mark normalization | existence only | weaker | rejected as closure | prove uniqueness of `h`, not one example |
-| full orbit-invariant norm family | coupling norm on all profile orbits | `h(gr)=h(r)` | exact dimension and nonproportional witnesses | target-equivalent classification | active | hidden microscopic condition forces one ray |
-| count-only norm family | seven values `H(n)` | dependence only on recorded-neighbor count | fast dimensionless discriminator | target-equivalent subfamily | active | all but a common scale are excluded |
-| minimal raw-weight matching lift | product of identical matching-label controls | each match multiplies amplitude by `sqrt(2)` | derive `q_f proportional 2^m_f` and `h proportional Z` uniquely modulo scale | positive conditional selector | active pincer | a second matching-only factorization survives |
-| label-blind occupancy gain | one extra common recorded-neighbor control | multiply every amplitude by `b^n` | robustness of the minimal selector | full-family falsifier | mandatory active control | a frozen physical condition derives `b=1` |
-| strict-`M_2` nondemolition readout | six nonorthogonal qubit contents | perfect information without disturbance | microscopic same-carrier realization | stronger/different | live but outside block | new commuting/orthogonal encoding or weaker readout theorem |
-| Block09 direction/corner law | fourteen conditional qubit possibilities | directions compare neighbors; composite cells weigh corners | relative mark law | useful upstream input | preserved/not replayed | selected occurrence norm and QND carrier supplied |
-| Block02/16 orthogonal writer | nine-site or 43-site effective pointer | trace-and-prepare/QND write | readable branch output | positive template | preserved | physical local collision/history join |
-| autonomous environment | reusable bath with no reset | unitary many-body dynamics | derive collisions and clock | stronger | live/unexecuted | explicit local autonomous bath construction |
-| action/transfer selector | retained path/action object | unique positive history measure or generator cone | select `h` modulo scale | immediate fallback | queued | QND family has multiple rays or fails construction |
-| compound QND instrument | multi-site atomic pointer write | simultaneous direct event | derive Block16 arity | target-changing | live/unexecuted | selected compound intensity and collision composition |
-| gravity source/clock join | selected event law plus local current | Ward/Bianchi-compatible source map | end-to-end gravity dynamics | downstream | blocked upstream | occurrence selector and physical clock close |
-| axiom amendment | owner-governed premise placement | adopt selected law | foundation change | unavailable here | forbidden | independently retained physical law and provenance case |
+| relation-factor QND Hamiltonian | one target, six pointer controls, fresh seven-state vacuum ancilla, three shared positive coefficients | exact bright-state unitary and weak collision generator | classify every member matching the supplied p_f modulo one global scale | terminal-bearing fixed grammar | active after support correction | execute primary and independent certificates |
+| matching-only member | b=1 and a=sqrt(2) | each same-label neighbor multiplies intensity by two | realize q_f proportional to 2^m_f and h proportional to Z | positive conditional identity | active subtheorem | a second member survives after b is fixed syntactically |
+| other-recorded gain | beta=b^2 | common beta^n cancels from p_f and changes h | determine whether beta is fixed inside the full relation-factor grammar | terminal-bearing robustness attack | mandatory active | a frozen derived physical condition fixes beta |
+| same-Z local race | n=2/two equal labels versus n=3/three distinct labels, both Z=9 | beta alone changes the target hazard ratio | prove 1/2 versus 2/3 after global-scale and exterior-survival cancellation | dimensionless discriminator | active | profiles or process membership fail |
+| exact sine/cosine collision | exp(-i sqrt(delta)H) | two-plane Rabi block | CP/TP, conditional marks, fresh-vacuum lock, and weak generator | microscopic construction gate | active | any exact local identity fails |
+| ordered finite-volume sweeps | one fresh ancilla per site visit | uniform O_L(delta^2) remainder over varying permutations | derive one diagonal semigroup generator | process bridge | active | first-order order dependence or no convergence |
+| outer orbit-controlled Kraus family | arbitrary positive cubic-invariant h(r) | profile-controlled rotation | structural dilation and orbit census only | nonterminal tautology control | demoted | never use as core physical selection evidence |
+| count-only outer family | seven values H(0),...,H(6) | occupancy-only profile control | outer projective dimension control | nonterminal classifier | demoted | a physical grammar derives count-only form |
+| engineered linear-delta instrument | K_f=sqrt(delta h p_f) and exact square-root no-jump term | profile functional calculus | structural exact Euler map | comparator only | separate from core | prove membership in a separately frozen gate grammar |
+| strict-M_2 nondemolition readout | six nonorthogonal qubit contents | perfect information without disturbance | same-carrier microscopic realization | stronger/different | live outside block | derived orthogonal encoding or weaker readout theorem |
+| autonomous environment | reusable bath without resets | many-body dynamics and bath state | derive collisions, cadence, and coupling | stronger | live outside block | explicit local autonomous construction |
+| action/transfer selector | retained path/action object | positive history measure, balance, or generator cone | select beta or one equivalent generator ray | immediate fallback | queued next | Block19 packages its exact residual |
+| compound QND process | atomic multi-target write | correlated direct event | select event arity and intensity | target-changing | live outside block | supplied compound carrier and process |
+| gravity source/clock join | selected occurrence law plus local current | Ward/Bianchi-compatible source map | end-to-end gravity dynamics | downstream | blocked upstream | occurrence selector and conserved source close |
+| axiom amendment | owner-governed premise placement | independently retained physical law | foundation change | unavailable here | forbidden | audit-retained law and provenance case |
 
-Terminal precedence applies only inside one identical frozen collision family.
-No failure or nonuniqueness here rules out action-selected, autonomous-bath,
-strict-`M_2`, compound, or other microscopic routes.
+The core negative, if observed, is restricted to the relation-factor
+orthogonal-pointer fresh-ancilla grammar. It cannot be broadened to all QND,
+microscopic, action, bath, strict-M_2, compound, or non-Markov routes.

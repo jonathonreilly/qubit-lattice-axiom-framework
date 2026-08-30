@@ -1,133 +1,264 @@
 # Preflight Witnesses
 
-No Block19 target runner, cache, or target mutation has been executed. These
-are analytical design witnesses and falsifiers that the independent
-implementations must rederive after the preregistration commit.
+No Block19 target runner, target cache, or target mutation has executed. The
+committed initial packet was attacked independently before execution. These
+corrected analytical witnesses must be rederived by independent
+implementations after the support-correction commit.
 
-## Exact local dilation witness
+## Why the initial target was revised
 
-For a fixed profile `r`, the blank input and six marked outputs are mutually
-orthogonal. Equation (1) in `GOAL.md` gives
+The initial full family explicitly allowed every positive bounded
+proper-cubic orbit-invariant hazard h(r). That makes full-family one-ray
+selection impossible by definition and turns a generic controlled dilation
+into an encoding of a chosen classical generator. The broad family is now an
+outer structural control only.
 
-```text
-K_0^dag K_0 = P_rec + (1-delta h)P_blank,
-sum_f K_f^dag K_f = delta h P_blank.
-```
+The terminal-bearing family is the finite relation-factor Hamiltonian in
+GOAL.md: one shared coefficient for a blank neighbor, one for a neighbor with
+the candidate label, and one for any other recorded label. It contains no
+profile lookup table.
 
-Their sum is the identity. The Stinespring image of `|bottom>|0>` has squared
-norm `(1-delta h)+delta h sum_f p_f=1` and is orthogonal to every locked
-`|g>|0>`. A direct sum of two-plane rotations supplies an exact finite
-unitary. This establishes an existence design only; it does not classify the
-allowed function `h`.
+## Exact star-unitary witness
 
-## Generator witness
+On a fixed profile r, the relation-factor coefficients are
 
-On diagonal pointer states, one collision changes a blank profile by
+~~~
+c_f(r)=g a^(m_f(r)) b^(n(r)-m_f(r)),
+h(r)=sum_f c_f(r)^2.
+~~~
 
-```text
-delta sum_f h(r)p_f(r)[F(r^f)-F(r)].
-```
+The Hermitian interaction couples |bottom,0> only to the bright state
 
-There is no remainder in the local classical probability kernel. Products at
-overlapping sites have cross terms starting at `delta^2`, so every finite
-ordering has the same first-order generator. Standard finite-dimensional
-product convergence must be proved in the runner from an explicit norm bound,
-not cited as a label.
+~~~
+|chi_r>=h(r)^(-1/2) sum_f c_f(r)|f,f>.
+~~~
 
-## Selection witness
+The seven-dimensional star block has eigenvalues +sqrt(h), -sqrt(h), and five
+zero modes. Its exact
+exponential gives the sine/cosine channel in GOAL.md. The induced
+fresh-vacuum Kraus completeness reduces exactly to
 
-If only positivity, boundedness, range one, translation covariance, proper
-cubic covariance, QND controls, and the fixed `p_f` are imposed, multiplying
-all six amplitudes at profile `r` by `sqrt(h(r))` preserves every listed
-property. Cubic covariance requires only `h(gr)=h(r)`. It does not visibly
-require a profile-independent constant.
+~~~
+cos^2(sqrt(delta h))
+  + sin^2(sqrt(delta h)) sum_f c_f^2/h
+=1.
+~~~
 
-The count-only controls
+This witnesses exact unitarity and CP/TP. It does not authorize the runner to
+insert the expected block as an oracle; the spectrum and channel must be
+derived from the displayed Hamiltonian.
 
-```text
-H_0(n)=alpha,
-H_1(n)=alpha(1+n/6)
-```
+The target lock is exact only on a recorded target paired with the stipulated
+vacuum ancilla. The Hamiltonian can reverse |f,f> to |bottom,0> on a
+nonvacuum ancilla. Neighbor QND means every neighbor label projector commutes
+with the Hamiltonian. Coherent profile marginals can still dephase after
+discarding the target or ancilla.
 
-are positive, bounded, and covariant. Their ratio is not constant. The runner
-must determine whether some frozen microscopic condition omitted from this
-preflight removes one member; if none does, the positive selector target
-fails and the narrower lift-plus-underselection terminal becomes eligible.
+## Weak-generator witness
 
-## Raw-weight factorization witness
+For z=sqrt(delta h) with 0<=z<=1,
 
-The displayed product coupling in `GOAL.md` has no profile lookup and no
-normalizing denominator. Every matching-neighbor projector multiplies the
-amplitude by `sqrt(2)`, hence multiplies its squared jump intensity by `2`.
-The six raw intensities are proportional to `w_f=2^m_f`, and their sum is
-proportional to `Z`. Conditionalizing on a jump recovers `p_f=w_f/Z`.
+~~~
+0 <= z^2-sin^2(z) <= z^4/3.
+~~~
 
-Inside the minimal matching-only product form, one probability doubling per
-match forces the gain magnitude `sqrt(2)`. A common base amplitude supplies
-only global scale. This is an anticipated positive conditional theorem.
+The upper bound follows from sin(z)>=z-z^3/6. Therefore the exact collision
+probability has first-order coefficient h with a uniform O(delta^2)
+profile remainder. The target label probability conditional on a write is
+exactly c_f^2/h at every allowed finite delta.
 
-The label-blind factor with gain `b` is the mandatory robustness attack. It is
-also a fixed, table-free product of commuting range-one QND controls and is
-proper-cubic invariant. It multiplies every mark intensity at a profile by
-`b^(2n)`, so it cancels from `p` but not from the occurrence hazard. Unless an
-additional frozen physical condition excludes it, `b!=1` defeats full-family
-uniqueness while leaving the minimal matching-only theorem intact.
+The fresh-vacuum expectation of the Hermitian interaction vanishes. The
+second-order expansion in sqrt(delta) therefore gives Lindblad jump operators
 
-## Profile-census witness
+~~~
+J_f=g |f><bottom| D_f,
+~~~
 
-Each neighbor slot is blank or one of six labels, giving `117,649` profiles.
-The full proper-cubic orbit census was independently found in Block18, but it
-is held out as a cross-check rather than inserted into the primary. The
-classification must rotate both slots and labels. A rotation of slots alone
-is a hostile mutation.
+and diagonal intensities q_f=c_f^2. A mutation that prints q_f without
+recovering it from the sine expansion and Kraus coefficients must fail.
 
-The count-only subfamily has seven positive values `H(0),...,H(6)` and hence
-six independent dimensionless ratios after quotienting one global scale. The
-full orbit family is expected to be much larger; exact orbit count and
-projective dimension are target outputs.
+## Core classification witness
 
-## Strict-`M_2` and fresh-bath scope
+Let beta=b^2 and kappa=(a/b)^2. Then
 
-The orthogonal pointer carrier makes QND label controls possible. It is an
-enlarged readable Record carrier, not a proof that the six nonorthogonal
-`rho_f` matrices can be perfectly distinguished and preserved as strict
-one-qubit states. The Block11 no-information-without-disturbance boundary is
-therefore preserved, not evaded by rhetoric.
+~~~
+q_f=g^2 beta^n kappa^(m_f).
+~~~
 
-Fresh ancillas, their vacuum preparation, and the collision scaling are
-declared downstream inputs. The block asks what generator family they induce;
-it does not attribute the bath, reset, or absolute cadence to the axioms.
+A one-record profile has one same-label intensity and five other-label
+intensities, with ratio kappa. The supplied kernel demands ratio two, so it
+forces kappa=2. Conversely this value gives p_f=2^(m_f)/Z on all profiles.
+
+The complete positive-real family matching the supplied kernel is therefore
+
+~~~
+q_f^(beta)=g^2 beta^n 2^(m_f),
+h_beta=g^2 beta^n Z,       beta>0.
+~~~
+
+The overall g^2 is a clock-unit scale. Beta is not: changing beta multiplies
+a profile with n records by beta^n. This is a one-dimensional
+dimensionless freedom derived inside a fixed coefficient-sharing grammar.
+
+The beta=1 matching-only member gives h=g^2 Z. It is a useful realization
+identity, but its apparent uniqueness is conditional on equating the
+other-recorded and blank gains.
+
+## Same-Z discriminator witness
+
+Use two separated blank targets:
+
+- target x_2 has two same-label recorded neighbors, so n=2 and Z=9;
+- target x_3 has three distinct-label recorded neighbors, so n=3 and Z=9.
+
+Their rate ratio is beta. With the same g and all other premises:
+
+~~~
+beta=1: P(x_3 first | x_2 or x_3)=1/2,
+beta=2: P(x_3 first | x_2 or x_3)=2/3.
+~~~
+
+The equal Z isolates the occupancy gain. For the local-infinite event, include
+both targets and all blank target neighbors in the observation region.
+Conditioning on exterior graphical history yields one common predictable
+survival factor for the two named target densities; it cancels in the ratio.
+Other competitors are not assumed to have constant rates.
+
+The old n=0/n=6 fixture gives
+
+~~~
+P(x_6 first)=2 beta^6/(1+2 beta^6)
+~~~
+
+for one of each neighboring label. It is a hostile mutation if a checker
+blindly reuses 1/2 and 2/3 on that fixture.
+
+## Finite-step order witness
+
+Normalize g^2=1/6. For two adjacent initially blank sites with all other
+neighbors blank, define
+
+~~~
+r_0(delta)=sin^2(sqrt(delta)),
+r_(1,beta)(delta)=sin^2(sqrt(7 beta delta/6)).
+~~~
+
+If x is visited before y,
+
+~~~
+P(y writes)=r_0+r_0[r_(1,beta)-r_0].
+~~~
+
+If y is visited before x, P(y writes)=r_0. The exact difference is
+
+~~~
+Delta_beta=r_0[r_(1,beta)-r_0].
+~~~
+
+Its leading terms are +delta^2/6 for beta=1 and
+-5 delta^2/12 for beta=1/2. Finite scan order can therefore change an
+O(delta^2) probability and can even reverse its sign. This must vanish from
+the first-order generator; it is a regulator control, not a physical
+selection statistic.
+
+## Finite-volume convergence witness
+
+On a finite torus, every local diagonal channel is a Markov contraction and
+has
+
+~~~
+T_(x,delta)=I+delta L_x+R_(x,delta),
+||R_(x,delta)||<=2 delta^2 h_max^2/3,
+||L_x||<=2 h_max.
+~~~
+
+Expanding an ordered sweep and bounding all cross products gives the explicit
+finite-volume remainder in GOAL.md. Its O(delta^2) constant depends on
+L^3 but is uniform over every sweep permutation. Telescoping contractions at
+delta=t/N give the same exp(t sum_x L_x) for arbitrary varying order
+sequences. No volume-uniform or simultaneous-unitary result follows.
+
+## Finite and local-infinite witness
+
+For beta in \{1,2\} and alpha=6g^2, the profile extrema are anticipated to be
+
+~~~
+alpha <= h_beta <= 736 alpha.
+~~~
+
+The maximum occurs for beta=2 with six identical recorded neighbors:
+
+~~~
+h=(alpha/6) 2^6 (2^6+5)=736 alpha.
+~~~
+
+A common rate-736 alpha proposal field and an acceptance key realize both
+hazards. Exponential keys with rates 2^(m_f) realize the conditional marks.
+Each backward proposal query branches to at most the target and six
+neighbors, giving the factorial-tail parameter 7*736 alpha T. The runner must
+rederive the bounds, measurable local construction, covariance, formation,
+and permanence rather than citing them as labels.
+
+## Outer structural control
+
+The simultaneous proper-cubic action on slots and labels has a held-out desk
+census of 5,075 profile orbits. An arbitrary positive orbit-controlled h
+therefore has 5,074 dimensionless coordinates modulo scale, while count-only
+H(0),...,H(6) has six. This is expected to confirm that broad symmetry and
+QND alone do not classify a coupling, but it is not evidence for the
+pair-factor terminal.
+
+The primary and independent implementations must derive the census
+independently; the number may be checked only after the derivation.
+
+## Strict carrier and provenance scope
+
+The orthogonal seven-state pointer makes the label controls readable. It is
+an auxiliary enlarged carrier, not a strict-M_2 construction and not a
+derived encoder from the six nonorthogonal rho_f contents. Blocks09 and 10 do
+not supply the six-mark law used here. Block02 is only a writer precedent.
+Block11's noncommuting-readout boundary remains intact.
+
+Fresh ancillas, vacuum preparation, discarding, mesh cadence, and weak
+scaling are supplied. The campaign does not derive an autonomous bath,
+physical time, or an action.
 
 ## Principal risks
 
-1. Generic dilation existence may be mistaken for physical selection.
-2. Normalizing `p_f` may silently normalize away the target scalar `h`.
-3. A profile-controlled coupling norm may be forbidden in prose but still
-   present in the unitary.
-4. Finite collision ordering may be mistaken for a physical scheduler.
-5. QND control on orthogonal labels may be misreported as strict-`M_2` QND.
-6. Fresh-ancilla reset may be hidden as autonomous dynamics.
-7. One collision may be called a complete history without a scaling limit.
-8. Phases irrelevant to the classical generator may be counted as distinct
-   occurrence laws.
-9. A common global coupling scale may be counted as physical nonuniqueness.
-10. An underselection result may be broadened to all microscopic dynamics or
-    used to propose an axiom amendment.
+1. Reverse-engineering the supplied factor of two may be called a prediction.
+2. The exact sine/cosine collision may be conflated with an engineered
+   linear-in-delta Kraus map.
+3. Fresh-vacuum channel lock may be overstated as a Hamiltonian identity for
+   arbitrary ancilla input.
+4. Pointer-projector QND may be overstated as complete-state preservation.
+5. A finite scan order may be called a clock.
+6. The beta freedom may be confused with global g^2 rescaling.
+7. The broad 5,075-coordinate outer family may be used to make the core
+   result look stronger than it is.
+8. One-site arity or the seven-state carrier may be reported as selected.
+9. A local-infinite classical process may be reported as a global quantum
+   collision unitary.
+10. A bounded family result may be promoted to gravity, axiom, or TOE closure.
 
 ## Hard falsifiers
 
-- missing no-jump Kraus mass or failed CP/TP completeness;
-- nonorthogonal output labels called perfectly readable;
-- any change to a recorded target or neighboring Record control;
-- fixed direction labels that do not rotate with the profile;
-- an ancilla preloaded with the realized mark;
-- a hidden profile-dependent scheduler outside the displayed coupling norm;
-- only one constructed `h` with no uniqueness classification;
-- a raw-weight selector called robust without executing the label-blind gain;
-- two `h` functions related by one global positive constant;
-- a finite scan order called an absolute or framework clock;
-- a product formula with an unbounded or unproved remainder;
-- inheritance of Block18 infinite dynamics without exact generator equality;
-- a global next-event chain on infinitely blank `Z^3`;
-- a strict-`M_2`, compound-event, gravity-source, or full-TOE upgrade; or
-- an axiom change inferred from the frozen collision family.
+- any profile lookup coefficient in the core pair-factor Hamiltonian;
+- missing Hermitian conjugate, wrong star norm, or failed exact CP/TP;
+- target lock tested outside but described beyond the fresh-vacuum sector;
+- neighbor-label projectors that fail to commute with H;
+- an exact total jump probability printed as delta h instead of
+  sin^2(sqrt(delta h));
+- failure to recover the first-order q_f from the exact collision;
+- a conditional mark ratio other than two on the one-record profile;
+- beta=1 and beta=2 compared with different carriers, baths, schedules,
+  event arities, initial laws, or weak scalings;
+- quotienting beta as if it were a global time scale;
+- failure of the same-Z local Record-order witness;
+- first-order scan-order dependence;
+- a simultaneous overlapping unitary asserted without construction;
+- slot-only or label-only cubic rotations;
+- arbitrary orbit controls used as the core terminal witness;
+- no local-infinite generator construction or an invalid global next-event
+  chain on infinitely blank Z^3;
+- a strict-M_2, autonomous-bath, compound-event, gravity, axiom, audit,
+  obligation, or TOE upgrade.

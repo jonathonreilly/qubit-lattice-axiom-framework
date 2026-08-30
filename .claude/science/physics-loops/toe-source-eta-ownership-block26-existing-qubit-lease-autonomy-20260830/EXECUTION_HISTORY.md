@@ -40,4 +40,25 @@ delivery.
 
 ## Final content-bound reproduction
 
-Pending postexecution packet freeze and repin.
+The reconciled result packet and refreshed frozen-input manifest were
+committed at `e6081b33781d916588171e98e0df11bcc5f7bc8e`. The science source
+outside the three refreshed manifest hashes remained byte-identical to the
+green initial source. The final state and source repin were committed at
+`6015be4d90` before execution.
+
+```text
+source SHA-256: 977b26b38eb46b71c2cccccc9e84a6b0679af56e5d0d1a3f32a3fd659558d087
+input fingerprint: fc1a37a36858dbd97ef485c950fd4b70ede8c102d065164ab99c3fe8b4faecc2
+canonical cache: logs/runner-cache/admissibility_d4_existing_qubit_lease_autonomy_gate_2026_08_30.txt
+canonical cache SHA-256: 789d9a3323a33ffaaddd9af0e04a1584c876113d4bcd7efdf37d2a2c5689e2b1
+elapsed: 531.82 seconds
+exit: 0
+stderr: empty
+TOTAL: PASS=24 FAIL=0
+```
+
+The reproduction repeats all `23` named science checks, all `25` designated
+mutation rejections, all seven derived witnesses, all five substantive
+resolution lines, and the exact positive-only terminal. The runner and all
+`43` declared inputs remained unchanged across execution; the canonical cache
+is fresh.

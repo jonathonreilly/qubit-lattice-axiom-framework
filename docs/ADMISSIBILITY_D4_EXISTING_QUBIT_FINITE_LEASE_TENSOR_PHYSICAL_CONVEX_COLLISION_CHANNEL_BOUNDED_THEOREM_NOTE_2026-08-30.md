@@ -4,7 +4,7 @@ claim_type: bounded_theorem
 claim_scope: "Conditioned on the Block24 one-Record/one-forward-Blank append instrument, every supplied finite family of pairwise-disjoint complete 224-site carriers supports the tensor product of the complete translated append channels, with exact CPTP normalization, arbitrary-reference extension, order independence, projective consistency, proper-cubic/translation covariance, old-Record QND, and one Blank debit per successful append. On the exact Block25 q=1/4 partial-overlap pair, the equal convex mixture of the two complete channels is CPTP and every Kraus trajectory appends at most one new Locked Record; four commuting old-current-Record sectors route the full singleton channel when only one claimant is present and the equal mixture when both are present. Separately, every supplied nonempty subset of six exact-common-target claimants admits a covariant 1/|S| mixture of the complete channels which writes exactly one Locked winner on the declared all-valid/common-Blank sector. The weights and claimant subset are supplied downstream law data; invocation, renewal, Blank production, rate, retention, gravity, and TOE closure are not derived."
 claim_type_reason: "The carrier geometry, full 1,176-success translated channels, STOP Gram identities, finite tensor induction, arbitrary-reference coefficient identity, exact q=1/4 effect spectrum, direct-sum sector Gram, 63 supplied common-target subsets, 84 current-label rows, owner decoding, QND/debit/covariance checks, and 25 altered-model rejections are exact finite algebra and combinatorics. Standing remains bounded because the lease family, claimant subset, collision weights, and application of the channel are supplied rather than derived as one autonomous local process law."
 actual_current_surface_status: conditional-support
-conditional_surface_status: "initial content-bound run reports 23/23 science checks, 25/25 designated altered-model rejections, and TOTAL PASS=24 FAIL=0; three independent preexecution static scopes safe; final content-bound reproduction pending; independent audit unset"
+conditional_surface_status: "initial and final content-bound runs each report 23/23 science checks, 25/25 designated altered-model rejections, and TOTAL PASS=24 FAIL=0; three independent preexecution static scopes safe; independent audit unset"
 target_claim_type: bounded_theorem
 trace_class: positive_bridge_with_named_open_process_law
 target_claim_id: admissibility_d4_block24_overlap_projector_hard_exclusion_totalization_boundary_bounded_theorem_note_2026-08-30
@@ -74,7 +74,7 @@ Primary runner:
 Initial content-bound cache:
 [`admissibility_d4_existing_qubit_lease_autonomy_gate_2026_08_30_initial.txt`](../logs/runner-cache/admissibility_d4_existing_qubit_lease_autonomy_gate_2026_08_30_initial.txt).
 
-Final content-bound cache, pending reproduction:
+Final content-bound cache:
 [`admissibility_d4_existing_qubit_lease_autonomy_gate_2026_08_30.txt`](../logs/runner-cache/admissibility_d4_existing_qubit_lease_autonomy_gate_2026_08_30.txt).
 
 Parent append/history theorem:
@@ -330,8 +330,25 @@ The cache reports:
 TOTAL: PASS=24 FAIL=0
 ```
 
-The final cache remains pending until the postexecution packet is frozen and
-reproduced against its new declared-input fingerprint.
+The reconciled packet was then frozen and reproduced against source SHA-256
+
+```text
+977b26b38eb46b71c2cccccc9e84a6b0679af56e5d0d1a3f32a3fd659558d087
+```
+
+and declared-input fingerprint
+
+```text
+fc1a37a36858dbd97ef485c950fd4b70ede8c102d065164ab99c3fe8b4faecc2
+```
+
+The canonical reproduction completed in `531.82` seconds with exit zero,
+empty stderr, the same `23/23` checks and `25/25` mutation rejections, and
+`TOTAL: PASS=24 FAIL=0`. Its cache SHA-256 is
+
+```text
+789d9a3323a33ffaaddd9af0e04a1584c876113d4bcd7efdf37d2a2c5689e2b1
+```
 
 ## Scope and accounting
 

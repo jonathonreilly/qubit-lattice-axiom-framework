@@ -7,9 +7,11 @@ collision channels for the exact `q=1/4` pair and all supplied subsets of the
 six-front common-target geometry. It does not derive the collision weights,
 invocation, renewal, Blank supply, rate, or a general process law.
 
-Package the reconciled packet and reproduce it once to the canonical cache.
-Then open one stacked Block26 science PR on Block25 without review-loop,
-merge, audit edits, axiom edits, obligation retirement, or TOE-score changes.
+The reconciled canonical reproduction is also green against the final packet:
+`23/23` science checks, `25/25` mutations, `TOTAL: PASS=24 FAIL=0`, exit zero,
+and empty stderr. Open one stacked Block26 science PR on Block25 without
+review-loop, merge, audit edits, axiom edits, obligation retirement, or
+TOE-score changes.
 
 The postexecution panel selects one two-use returned-tip causal diamond as the
 next exact block. Start from disjoint carriers at `0` and `27 e1`; after one

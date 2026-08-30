@@ -1,0 +1,24 @@
+PASS A_preregistration_integrity: prereg=6c5281743f77, four frozen artifacts unchanged, target runner absent at freeze
+PASS B_foundation_type_boundary: premise nodes=('kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive'); no action/transfer/rate/process primitive
+PASS C_post_record_authority: four exact rows are meta/unaudited supplied-interface semantics, not a physical generator
+PASS D_aug11_literal_type: four-state geometry/occupancy carrier; symmetric Perron transfer; literal sampler erases Records
+PASS E_other_transfer_boundaries: joint Perron law remains extensional; two-TT law lacks selected transfer and source-current decoder
+PASS F_pr7803_scope_pin: pinned fixed-placement reinforcement has no decoder, intensity map, normalization, arrow, or cadence
+PASS G_detailed_balance_firewall: full-support same-visible-graph reversibility plus zero erase forces every forward append edge to zero
+PASS H_same_z_desk_witnesses: Z=9/10 pairs and Z=12 chain reconstructed; beta=1,2 higher-n odds=(Fraction(1, 2), Fraction(2, 3))
+PASS I_inspected_stack_bridge_matrix: 6 literal surfaces checked over 9 fields; missing counts=(6, 8, 6, 7, 6, 7)
+PASS J_hostile_scope_mutations: rejected 15/15 type, bridge, permanence, authority, axiom, and TOE mutations
+PASS K_n5_resolution: five substantive resolution lines distinguish inspected source/type checks from unexecuted cone/process scales
+PASS L_terminal_scope: inspected-stack interface result only; mathematical cone, other bridges, axiom necessity, and TOE movement excluded
+SOURCE_MATRIX: candidates=6 fields=9 complete=0.
+TYPE_RESULT: C_AT and B_AT remain undefined before a frozen directed coefficient-to-intensity bridge; this is not an empty-cone calculation.
+POSITIVE_ROUTE: oriented histories, absorbing transfers, enlarged reversible carriers, action-derived instruments, alternative decoders, baths, and governed supply remain live.
+per_element: checked the exact source anchors and nine required bridge fields on six named candidate surfaces; no append-intensity element was fabricated.
+per_site: checked the August 11 four-state carrier, missing six-mark decoder, literal occupied-to-null erasure, and same-graph detailed-balance zero-edge lemma.
+per_mode: checked and not executed — C_AT and B_AT are undefined because no typed bridge is frozen; no action coefficient was exponentiated, squared, or normalized.
+per_block: checked and not executed — the positive Perron and fixed-placement action objects do not supply a normalized directed permanent-Record history or cadence.
+lattice_wide: checked and not executed — no local-infinite action-derived Record process, physical clock, conserved gravity source, or full-lattice generator is claimed.
+COMPUTATIONAL_TERMINAL: DIRECTED-ACTION/TRANSFER-TO-PERMANENT-RECORD-APPEND-INTENSITY-INTERFACE-UNSUPPLIED-ON-INSPECTED-STACK
+CONE_STATUS: UNDEFINED-NOT-EMPTY
+TOE_ACCOUNTING: obligation retirement=0; TOE percentage movement=0.
+TOTAL: PASS=12 FAIL=0

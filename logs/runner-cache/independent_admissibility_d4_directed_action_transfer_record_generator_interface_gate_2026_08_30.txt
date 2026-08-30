@@ -1,0 +1,14 @@
+prereg_source: PASS frozen_packet=true pr=7803 head=dac92a5ed9a8ddaa90aa4300223a2c77fb4cd203 remote_object_reads=0 primary_imports=0
+foundation: PASS premises=minimal_axioms,scale_reference_primitive,kinetic_isotropy_primitive,realized_state_primitive axiom_dynamics_bridge_absent=true
+post_Record_authority: PASS rows=4 audit_status=unaudited effective=meta/unaudited
+aug11_type: PASS carrier=4 symmetric_Perron=true reversible=true reverse_erasure=true marks=10_vs_6
+other_transfers: PASS Aug10_extensional_kernel_gap=true two_TT_selector_and_Record_instrument_gap=true
+exact_desk: PASS detailed_balance_reverse_zero_implies_forward_zero Z9=2/3 Z10=3/4 Z12=4/5/6 beta2_odds=1/7,2/7,4/7
+hostile_and_terminal: PASS mutations=10/10 C_AT=UNDEFINED B_AT=UNDEFINED NOT_EMPTY=true terminal=DIRECTED-ACTION/TRANSFER-TO-PERMANENT-RECORD-APPEND-INTENSITY-INTERFACE-UNSUPPLIED-ON-INSPECTED-STACK
+per_element: PASS exact source clauses, ledger fields, balance identity, and desk fixtures checked
+per_site: PASS four-state carrier, reversible erasure, and six-mark Record type mismatch checked
+per_mode: PASS checked and not executed — typed bridge absent, so C_AT and B_AT modes were not formed
+per_block: PASS checked and not executed — no directed kernel or cadence exists for finite histories
+lattice_wide: PASS checked and not executed — no generator exists for a Harris limit or physical clock
+scope: PASS inspected stack only; no action-wide no-go, axiom, audit, gravity, obligation, or TOE promotion
+TOTAL: PASS=7 FAIL=0

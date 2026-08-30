@@ -30,6 +30,8 @@ import admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_3
 import admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30 as block24  # noqa: E402
 
 
+AUDIT_TIMEOUT_SEC = 900
+
 PACKET_REL = (
     ".claude/science/physics-loops/"
     "toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-"

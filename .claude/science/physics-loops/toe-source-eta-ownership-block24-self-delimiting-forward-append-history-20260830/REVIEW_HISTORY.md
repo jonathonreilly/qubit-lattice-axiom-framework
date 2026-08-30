@@ -38,4 +38,6 @@ artifacts exist.
   source after the final provenance repair bound all ten execution inputs;
 - runtime remains explicitly unverified; and
 - no source commit, source pin, target import, target compilation, or target
-  execution had occurred when those verdicts were issued.
+  execution had occurred when those verdicts were issued; and
+- the accepted unexecuted source was then committed unchanged at
+  `eb47d71ccc649c153982cb73018a868da2557af0`.

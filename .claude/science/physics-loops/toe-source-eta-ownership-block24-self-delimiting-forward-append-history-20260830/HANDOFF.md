@@ -25,7 +25,8 @@ contractions, and a physical-prefix induction. Frozen hostile mutations are
 implemented as altered factor/channel models rather than count-only controls.
 No target runner import, compilation, or execution has occurred.
 
-The next gate is a committed source and source-pin file, followed by a single
-new non-overwriting first cache. Runtime remains unverified until that run.
+The unexecuted source was committed at `eb47d71ccc`. The next gate is a
+committed source-pin file, followed by a single new non-overwriting first
+cache. Runtime remains unverified until that run.
 
 No review-loop is authorized. Independent audit remains unset.

@@ -317,8 +317,13 @@ def contract_append_effect(factors):
     current_maps = data["current_pointer_projectors"]
     current_input = tuple(entry[1] for entry in current_maps)
     current_output = tuple(entry[2] for entry in current_maps)
+    current_sites = tuple(entry[0] for entry in current_maps)
     decoded = parent.decode_locked_word(current_input)
-    if decoded is None or current_output != current_input:
+    if (
+        decoded is None
+        or current_output != current_input
+        or current_sites != parent.POINTER_ORDER
+    ):
         raise ValueError("current Record control/output is not exact QND")
     front, _source = decoded
     anchor = data["anchor"]
@@ -332,6 +337,10 @@ def contract_append_effect(factors):
         raise ValueError("forward target is not selected by current Record content")
     live_maps = data["forward_live_prep_maps"]
     prep_pointer_maps = data["forward_pointer_prep_maps"]
+    if tuple(entry[0] for entry in live_maps) != DIRECTIONS:
+        raise ValueError("forward live preparation is not on the physical sites")
+    if tuple(entry[0] for entry in prep_pointer_maps) != parent.POINTER_ORDER:
+        raise ValueError("forward pointer preparation is not on the physical sites")
     forward_input = block_from_factor_inputs(live_maps, prep_pointer_maps)
     if forward_input != parent.BLANK_BLOCK:
         raise ValueError("append input is not the exact complete Blank block")
@@ -341,6 +350,8 @@ def contract_append_effect(factors):
     writer_pointer = data["forward_writer_pointer_maps"]
     if len(writer_pointer) != 26:
         raise ValueError("writer pointer map is not physically complete")
+    if tuple(entry[0] for entry in writer_pointer) != parent.POINTER_ORDER:
+        raise ValueError("writer pointer map is not on the physical sites")
     writer_input = tuple(entry[1] for entry in writer_pointer)
     writer_output = tuple(entry[2] for entry in writer_pointer)
     if writer_input != prepared.pointer:
@@ -563,27 +574,26 @@ def append_factorization_is_physical(branch):
     } | {site for site, _input, _output in current_maps}
     forward_relative_sites = {
         site for site, _input, _output in live_maps
-    } | {site for site, _input, _output in prep_pointer}
-    represented_carrier_sites = {
-        add(branch.anchor, site) for site in current_relative_sites
     } | {
-        add(branch.forward_center, site) for site in forward_relative_sites
+        site for site, _input, _output in prep_pointer
     } | {
-        add(center, site) for center, site, _operator in spectator_factors
+        site for site, _input, _output in writer_pointer
     }
-    expected_carrier_sites = fixed_anchor_geometry(branch.anchor)["blocks"]
-    expected_carrier_sites = set().union(*expected_carrier_sites.values())
     return (
         data["anchor"] == branch.anchor
         and data["current_live_identities"] == parent.OLD_LIVE_IDENTITIES
         and len(current_maps) == 26
+        and tuple(entry[0] for entry in current_maps) == parent.POINTER_ORDER
         and tuple(entry[1] for entry in current_maps) == branch.current_word
         and tuple(entry[2] for entry in current_maps) == branch.current_word
         and len(live_maps) == 6
+        and tuple(entry[0] for entry in live_maps) == DIRECTIONS
         and block_from_factor_inputs(live_maps, prep_pointer) == parent.BLANK_BLOCK
         and prepared
         == parent.block_product(parent.prepared_vectors(branch.source), parent.ready_word(branch.front))
         and len(prep_pointer) == len(writer_pointer) == 26
+        and tuple(entry[0] for entry in prep_pointer) == parent.POINTER_ORDER
+        and tuple(entry[0] for entry in writer_pointer) == parent.POINTER_ORDER
         and tuple(entry[1] for entry in writer_pointer) == parent.ready_word(branch.front)
         and tuple(entry[2] for entry in writer_pointer)
         == parent.locked_word(branch.front, branch.target)
@@ -608,8 +618,7 @@ def append_factorization_is_physical(branch):
         and all(operator == "I_2" for _center, _site, operator in spectator_factors)
         and current_relative_sites == parent.SUPPORT
         and forward_relative_sites == parent.SUPPORT
-        and len(represented_carrier_sites) == 224
-        and represented_carrier_sites == expected_carrier_sites
+        and physical_append_carrier_certificate(branch.anchor, branch.front)
         and data["outside_carrier_identity"] == "I_outside"
         and data["lateral_touch"] is False
         and branch.effect.current_word == branch.current_word
@@ -618,12 +627,31 @@ def append_factorization_is_physical(branch):
     )
 
 
+@lru_cache(maxsize=None)
+def physical_append_carrier_certificate(anchor, front):
+    """Cache geometry only at its true ``(anchor, front)`` dependency."""
+    current_sites = {add(anchor, site) for site in parent.SUPPORT}
+    selected_center = forward_center(anchor, front)
+    forward_sites = {
+        add(selected_center, site) for site in parent.SUPPORT
+    }
+    spectator_sites = {
+        add(center, site)
+        for center, site, _operator in spectator_identity_factors(anchor, front)
+    }
+    represented = current_sites | forward_sites | spectator_sites
+    expected_blocks = fixed_anchor_geometry(anchor)["blocks"]
+    expected = set().union(*expected_blocks.values())
+    return len(represented) == 224 and represented == expected
+
+
 def projector_reduce(expression, symbol):
     polynomial = sp.Poly(sp.expand(expression), symbol)
     relation = sp.Poly(symbol ** 2 - symbol, symbol)
     return sp.simplify(sp.rem(polynomial, relation).as_expr())
 
 
+@lru_cache(maxsize=None)
 def append_valid_sector_eigenvalue(current_word, forward_is_blank):
     decoded = parent.decode_locked_word(current_word)
     if decoded is None or not forward_is_blank:
@@ -820,6 +848,7 @@ def append_branch_covariance_certificate(branch, rotation):
     )
 
 
+@lru_cache(maxsize=None)
 def translation_covariance_certificate():
     a0, a1, a2, t0, t1, t2 = sp.symbols("a0 a1 a2 t0 t1 t2")
     anchor = (a0, a1, a2)
@@ -1456,6 +1485,7 @@ def history_prefix_is_physical(prefix):
     )
 
 
+@lru_cache(maxsize=None)
 def append_preserves_arbitrary_prior_records(branch):
     """Current, predecessor, and all older Records receive exact identities."""
     data = factor_dictionary(branch.factors)
@@ -1503,6 +1533,15 @@ def physical_history_effect(front, outcomes):
 
 
 @dataclass(frozen=True)
+class FactorizedGenericEffect:
+    """Exact arbitrary prefix effect times a branch-derived scalar and I_R."""
+
+    base_effect: tuple
+    scalar: object
+    reference_delta: object
+
+
+@dataclass(frozen=True)
 class GenericPhysicalPrefix:
     """Induction hypothesis at arbitrary depth and translated tip anchor."""
 
@@ -1512,8 +1551,7 @@ class GenericPhysicalPrefix:
     last_outcome: tuple
     tip_word: tuple
     next_blank_block: parent.BlockProduct
-    system_effect: tuple
-    reference_effect: tuple
+    factorized_effect: FactorizedGenericEffect
     unique_eligible_tip: bool
     earlier_records_qnd: bool
 
@@ -1559,6 +1597,7 @@ def extend_generic_physical_prefix(prefix, target):
     returned_tip_accepts = append_valid_sector_eigenvalue(
         parent.locked_word(prefix.front, target), True
     ) == 1
+    old_effect = prefix.factorized_effect
     return GenericPhysicalPrefix(
         record_count=prefix.record_count + 1,
         tip_anchor=branch.forward_center,
@@ -1566,11 +1605,10 @@ def extend_generic_physical_prefix(prefix, target):
         last_outcome=target,
         tip_word=parent.locked_word(prefix.front, target),
         next_blank_block=parent.BLANK_BLOCK,
-        system_effect=parent.scale_effect_data(
-            prefix.system_effect, contracted.scalar
-        ),
-        reference_effect=parent.scale_effect_data(
-            prefix.reference_effect, contracted.scalar
+        factorized_effect=FactorizedGenericEffect(
+            base_effect=old_effect.base_effect,
+            scalar=sp.simplify(old_effect.scalar * contracted.scalar),
+            reference_delta=old_effect.reference_delta,
         ),
         unique_eligible_tip=(
             prefix.unique_eligible_tip
@@ -1584,6 +1622,48 @@ def extend_generic_physical_prefix(prefix, target):
     )
 
 
+def factorized_generic_sum_certificate(prefix_effect, extension_effects):
+    """Check exact coefficientwise system/reference recovery on one common H."""
+    extension_effects = tuple(extension_effects)
+    if not extension_effects:
+        return False
+    if any(
+        effect.base_effect != prefix_effect.base_effect
+        or effect.reference_delta != prefix_effect.reference_delta
+        for effect in extension_effects
+    ):
+        return False
+    constant, coefficients = prefix_effect.base_effect
+    if set(coefficients) != set(DIRECTIONS) or any(
+        len(coefficients[site]) != 3 for site in DIRECTIONS
+    ):
+        return False
+    components = (constant,) + tuple(
+        coefficients[site][axis]
+        for site in DIRECTIONS
+        for axis in range(3)
+    )
+    difference = sp.simplify(
+        sum(effect.scalar for effect in extension_effects)
+        - prefix_effect.scalar
+    )
+    reference_difference = sp.simplify(
+        prefix_effect.reference_delta * difference
+    )
+    return (
+        len(components) == 19
+        and len(set(components)) == 19
+        and all(isinstance(component, sp.Symbol) for component in components)
+        and difference == 0
+        and reference_difference == 0
+        and all(sp.simplify(difference * component) == 0 for component in components)
+        and all(
+            sp.simplify(reference_difference * component) == 0
+            for component in components
+        )
+    )
+
+
 def generic_prefix_extension_certificate():
     """Check P(n)->P(n+1) coefficientwise for symbolic n, anchor, and I_R."""
     n = sp.Symbol("n_history", integer=True, positive=True)
@@ -1594,7 +1674,7 @@ def generic_prefix_extension_certificate():
         "r_history s_history", integer=True, nonnegative=True
     )
     delta = sp.KroneckerDelta(reference_row, reference_column)
-    reference_effect = parent.scale_effect_data(effect_data, delta)
+    prior_weight = sp.Symbol("w_history")
     valid = True
     for front in DIRECTIONS:
         for source in OUTCOMES:
@@ -1605,16 +1685,27 @@ def generic_prefix_extension_certificate():
                 last_outcome=source,
                 tip_word=parent.locked_word(front, source),
                 next_blank_block=parent.BLANK_BLOCK,
-                system_effect=effect_data,
-                reference_effect=reference_effect,
+                factorized_effect=FactorizedGenericEffect(
+                    base_effect=effect_data,
+                    scalar=prior_weight,
+                    reference_delta=delta,
+                ),
                 unique_eligible_tip=True,
                 earlier_records_qnd=True,
             )
-            extensions = tuple(
-                extend_generic_physical_prefix(prefix, target)
+            labeled_extensions = tuple(
+                (target, extend_generic_physical_prefix(prefix, target))
                 for target in OUTCOMES
             )
-            for target, extended in zip(OUTCOMES, extensions):
+            valid &= len(labeled_extensions) == 14
+            valid &= (
+                tuple(target for target, _extended in labeled_extensions)
+                == OUTCOMES
+            )
+            extensions = tuple(
+                extended for _target, extended in labeled_extensions
+            )
+            for target, extended in labeled_extensions:
                 scalar = contract_append_effect(
                     append_branch(
                         anchor, prefix.tip_word, target
@@ -1626,25 +1717,19 @@ def generic_prefix_extension_certificate():
                 valid &= extended.next_blank_block == parent.BLANK_BLOCK
                 valid &= extended.unique_eligible_tip
                 valid &= extended.earlier_records_qnd
-                valid &= parent.effect_equal(
-                    extended.system_effect,
-                    parent.scale_effect_data(effect_data, scalar),
+                valid &= extended.factorized_effect.base_effect == effect_data
+                valid &= (
+                    extended.factorized_effect.reference_delta == delta
                 )
-                valid &= parent.effect_equal(
-                    extended.reference_effect,
-                    parent.scale_effect_data(reference_effect, scalar),
+                valid &= sp.simplify(
+                    extended.factorized_effect.scalar
+                    - prior_weight * scalar
+                ) == 0
+            valid &= factorized_generic_sum_certificate(
+                prefix.factorized_effect,
+                tuple(
+                    extended.factorized_effect for extended in extensions
                 )
-            valid &= parent.effect_equal(
-                parent.summed_effects(
-                    [extended.system_effect for extended in extensions]
-                ),
-                effect_data,
-            )
-            valid &= parent.effect_equal(
-                parent.summed_effects(
-                    [extended.reference_effect for extended in extensions]
-                ),
-                reference_effect,
             )
     return valid
 
@@ -1808,6 +1893,23 @@ def mutation_rejections():
 
     baseline_factors = make_append_factors(ZERO, current_word, target)
     baseline_data = factor_dictionary(baseline_factors)
+    relocated_writer_maps = list(
+        baseline_data["forward_writer_pointer_maps"]
+    )
+    _writer_site, writer_input, writer_output = relocated_writer_maps[0]
+    relocated_writer_maps[0] = (
+        (99, 99, 99),
+        writer_input,
+        writer_output,
+    )
+    relocated_writer_factors = replace_factor_field(
+        baseline_factors,
+        "forward_writer_pointer_maps",
+        tuple(relocated_writer_maps),
+    )
+    relocated_writer_site_rejected = altered_factors_rejected(
+        relocated_writer_factors
+    )
     prep_source = (1, 1, 1)
     prep_target = (1, 0, 0)
     prep_word = parent.locked_word(front, prep_source)
@@ -2173,6 +2275,7 @@ def mutation_rejections():
         "nonblank_forward_input_is_rejected": nonblank_rejected,
         "overwrite_current_Record_breaks_QND": overwrite_rejected,
         "drop_writer_pointer_factor_breaks_physical_map": pointer_drop_rejected,
+        "relocate_writer_factor_breaks_physical_carrier": relocated_writer_site_rejected,
         "future_outcome_preparation_breaks_causal_state_rule": future_rejected,
         "one_prepared_live_factor_replaced_by_Blank_breaks_kernel": one_blank_factor_rejected,
         "one_positive_root_sector_perturbation_breaks_contraction": one_root_sector_rejected,

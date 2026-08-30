@@ -54,4 +54,21 @@ No predicate failed. The next permitted repair is representation-only:
 factorize the arbitrary symbolic prefix effect and reference scalar so the
 same coefficientwise sum-back is not materialized per branch.
 
+The second repair stores one arbitrary 19-component prefix effect, a symbolic
+prior cylinder weight, and a symbolic reference delta, then attaches only the
+literal-contracted scalar to each of all 1,176 symbolic-anchor extensions. It
+retains symbolic depth and anchor, exact target enumeration, returned-tip and
+Blank typing, QND preservation, and coefficientwise system/reference sum-back.
+Geometry is cached only at its true `(anchor, front)` dependency.
+
+A hostile static read found that the prior source had not bound writer-map site
+coordinates, allowing a relocated writer factor to preserve its bit tuples and
+scalar. The repair now enforces canonical site sequences for current-pointer,
+live-preparation, pointer-preparation, and writer maps in both contraction and
+physical validation; writer sites enter the actual carrier union; and a real
+`(99,99,99)` relocated-writer mutation must reject. Two independent static
+challengers returned `SAFE TO COMMIT/REPIN` for exact source SHA-256
+`e7a581904cb65eb221470fad1edb3430537da64c88f0a50e5973909399bc529b`.
+No execution of that source has occurred.
+
 No review-loop is authorized. Independent audit remains unset.

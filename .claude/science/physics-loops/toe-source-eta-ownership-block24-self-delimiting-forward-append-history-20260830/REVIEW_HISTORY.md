@@ -92,3 +92,29 @@ and timed out inside the arbitrary finite induction at 900.01 seconds. That
 preserved run adds positive execution evidence but is not a green runner or a
 review/audit result. A second pair of static design challenges was requested
 for the narrower symbolic-induction representation hotspot.
+
+## Arbitrary-induction repair challenge
+
+The first static design challenge identified repeated materialization of two
+nineteen-component symbolic effects across 1,176 extensions as the dominant
+hotspot. The second independently identified both that work and repeated
+carrier construction. The implementation preserves literal factor contraction
+and stores a common arbitrary effect, symbolic prior weight, and symbolic
+reference delta, while caching geometry only by `(anchor, front)`.
+
+One hostile implementation read returned `BLOCK` for intermediate source SHA
+`95a19956dd27a886a959ea3efa8b89083b1a7daadf856d2789b844e36d12fa2a`:
+writer-map site coordinates were absent from the actual carrier union and not
+otherwise bound. The source was not executed. The repair added exact site-order
+checks for all current and forward maps in both contraction and factor
+validation, included writer sites in the forward union, and added a literal
+relocated-writer mutation.
+
+Both independent challengers then returned `SAFE TO COMMIT/REPIN` for exact
+source SHA-256
+`e7a581904cb65eb221470fad1edb3430537da64c88f0a50e5973909399bc529b`.
+They confirmed the arbitrary 19-component effect, prior weight, `I_R`, all
+targets, literal scalars, symbolic `P(n)->P(n+1)`, QND/tip predicates, actual
+factor bindings, cache dependencies, and relocated-writer rejection. Neither
+verdict is an execution, review-loop outcome, audit verdict, obligation
+retirement, or TOE-score move.

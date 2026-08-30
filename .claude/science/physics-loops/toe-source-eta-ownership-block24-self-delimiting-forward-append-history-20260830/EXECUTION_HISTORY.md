@@ -76,3 +76,33 @@ effect plus each literal-contracted scalar and materialize only the summed
 coefficientwise identity. It must retain symbolic depth and anchor, exact
 returned-tip/QND typing, all target branches, factor-derived row normalization,
 and symbolic `I_R`.
+
+## Authorized arbitrary-induction runtime repair
+
+The second repair replaces per-extension materialization of both nineteen
+arbitrary system coefficients and their symbolic-reference copies with the
+exact factorized object
+
+```text
+(arbitrary H, prior cylinder weight w, KroneckerDelta(r,s)).
+```
+
+Every one of the 1,176 symbolic-anchor extensions still constructs and
+contracts its literal append factors. Each returned object carries
+`w*g_target`; all fourteen exact target labels are required; and their actual
+contracted scalars must recover `w`. The resulting difference multiplies each
+of the nineteen distinct `H` symbols and the reference delta coefficientwise.
+No expected transition table enters this induction certificate.
+
+The repair also caches the 224-site geometry at its actual `(anchor, front)`
+dependency. During hostile review, one challenger found a pre-existing
+false-green: writer-map site coordinates were not bound even though their bit
+tuples were. Canonical site sequences are now required for all current and
+forward maps in both contraction and factor validation, writer sites enter the
+actual forward carrier union, and a relocated-writer altered model is required
+to reject.
+
+Two independent static challengers accepted exact repaired source SHA-256
+`e7a581904cb65eb221470fad1edb3430537da64c88f0a50e5973909399bc529b`
+for commit and repin. They did not import, compile, execute, or edit it. Runtime
+and every predicate after the prior timeout remain unverified.

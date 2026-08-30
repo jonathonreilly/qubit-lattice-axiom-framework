@@ -1,6 +1,6 @@
 loop_id: toe-source-eta-ownership-block21-autonomous-reusable-bath-complement-blind-selector-20260830
 block: source_eta_21
-status: independent_preregistration_correction_drafting
+status: corrected_preregistration_frozen
 phase: autonomous_reusable_bath_algebraic_commutant_two_use_gate
 branch: physics-loop/toe-source-eta-ownership-block21-autonomous-reusable-bath-complement-blind-selector-20260830
 parent_commit: 40a71a4a3a7c42db28fd49b1a4eec15e2a29aff9
@@ -11,6 +11,7 @@ block19_pr: 7805
 block20_result_commit: 8246f77ecf359a549d264962232313eba24f104b
 block20_pr: 7806
 initial_preregistration_commit: 6fdaadd635a1c1004ccbb8e78fa208531943ba2c
+corrected_preregistration_commit: d20a49e1a875aa45c1fad810f21cda914fdb45d1
 target: AUTONOMOUS_REUSABLE_BATH_DERIVES_COMPLEMENT_BLIND_ONE_BETA_RAY_AND_PERMANENT_RECORD_PROCESS
 writer_family: q_f_equals_c_beta_pow_n_2_pow_m
 target_beta: 1

@@ -8,7 +8,7 @@ joint_six_mark_type: PASS profiles=117649 shared_bath=true CP_TP=true fresh_type
 factor_two_authority: PASS SUPPLIED-CONDITIONAL-NOT-DERIVED
 complement_blind_control: PASS beta=1 is sufficient inside G_CB-assumed; no physical provenance supplied
 pure_exact_return_control: PASS six orthogonality equations force six blank-to-mark amplitudes to zero
-append_nonunitality: PASS T(I)=(Fraction(0, 1), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6)) entropy_drop=log(7/6)
+append_nonunitality: PASS generic_unital_solution=(h=1,p=0); sample_T(I)=(Fraction(0, 1), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6), Fraction(7, 6)); entropy_drop=log(7/6)
 finite_indefinite_repeatability: PASS G_fin,infinity obstructed; finite-use bounds={2: 4, 7: 12, 49: 25}; extensive memory live
 g_fin_2_counterexample: PASS fixed_permutation=true inputs=(0, 0, 1) outputs=(1, 1, 0) third_use_and_lock_fail=true
 bath_parameter_relocation: PASS free theta*DeltaE and spectral ratio leave multiple beta values

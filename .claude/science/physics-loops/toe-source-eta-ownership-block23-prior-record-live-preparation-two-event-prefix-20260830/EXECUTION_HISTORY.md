@@ -74,3 +74,24 @@ This cache is therefore preserved as `COVERAGE-INSUFFICIENT`, not promoted as
 the primary result.  The independently authored `20/20`, `57/57` certificate
 remains successful and materially covers these structures, but the primary
 must be strengthened and repinned before terminal reconciliation.
+
+## Strengthened-primary source and completion repin
+
+Commit `167855bdc35981c79243f1cfbe1d7933292ec01e` implements the static
+completion repair demanded above.  Its exact source hash is:
+
+```text
+426488df2a431cb7d415d5e933013f7ce0826cc9514f96cd041b9fc6ff49742a  scripts/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30.py
+```
+
+Before execution, two independent static challenges rechecked the actual
+projector/Kraus algebra, symbolic reference extension, Record-QND action,
+factor-only composite contraction, active-writer spatial binding,
+reachable-domain scope, event-three support geometry, and mutation/guard
+classification.  Their last exact objection (`dephased != 1` was weaker than
+exact dephasing) was repaired to require equality to zero.  No runner execution
+occurred during those reviews.
+
+`RUNNER_SOURCE_REPIN_COMPLETION.md` is the execution gate for this source.  Its
+first run must preserve combined stdout/stderr at the new path
+`logs/runner-cache/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30_strengthened.txt`.

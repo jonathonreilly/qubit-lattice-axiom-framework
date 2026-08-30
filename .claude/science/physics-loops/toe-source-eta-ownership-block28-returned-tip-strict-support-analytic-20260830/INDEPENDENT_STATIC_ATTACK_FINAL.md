@@ -1,7 +1,7 @@
 # Block28 final independent static attack
 
-reviewed_source_commit: `db1f896dbee2a6a51ca0d8f4d835d6810f29efa0`
-reviewed_source_sha256: `f1090371f20ed03b869d0ae727849496a94ff85b66d4bb02f559b3e0a30a462c`
+reviewed_source_commit: `32488c1f0d2e62c0e3fec92979671b7ce1372c43`
+reviewed_source_sha256: `91141d7b917b52eef1335cc6d405acd5927d75ab32ce2f4e0620d4c9007b9a2a`
 verdict: `SAFE_FOR_ONE_CONTENT_BOUND_EXECUTION`
 target_executed_by_reviewers: `no`
 
@@ -38,3 +38,10 @@ mutation from producing a false green.
 A timeout or incomplete terminal carries no physics inference.  A green
 terminal dispatches only the common-extension discriminator frozen in
 `PREREG_AMENDMENT_1.md`.
+
+After the initial green execution, conformance review added the required
+top-level declaration `AUDIT_TIMEOUT_SEC = 900`.  All three reviewers rebound
+to the new committed bytes above and verified that this assignment is the sole
+delta from the prior SAFE source.  It occurs once, changes no science,
+control, channel, or terminal logic, and is SAFE for one final content-bound
+reproduction.  The earlier cache is not evidence for the new source bytes.

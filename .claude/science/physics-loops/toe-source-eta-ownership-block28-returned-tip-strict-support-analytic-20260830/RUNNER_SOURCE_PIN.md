@@ -1,10 +1,10 @@
 # Block28 runner source pin
 
-source_sha256: `f1090371f20ed03b869d0ae727849496a94ff85b66d4bb02f559b3e0a30a462c`
-source_commit: `db1f896dbee2a6a51ca0d8f4d835d6810f29efa0`
+source_sha256: `91141d7b917b52eef1335cc6d405acd5927d75ab32ce2f4e0620d4c9007b9a2a`
+source_commit: `32488c1f0d2e62c0e3fec92979671b7ce1372c43`
 declared_input_count: `19`
 canonical_cache: `logs/runner-cache/admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30.txt`
-state: `final_packet_content_pinned_awaiting_first_execution`
+state: `final_packet_content_pinned_awaiting_reproduction`
 
 This pin is itself one of the 19 declared audit inputs.  It therefore omits
 a purported full-input fingerprint, which would be self-referential.  The

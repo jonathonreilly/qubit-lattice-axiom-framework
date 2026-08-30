@@ -122,3 +122,13 @@ substrate ownership, an axiom change, an audit verdict, obligation retirement,
 or TOE percentage movement.  The architecture-specific all-six-Blank
 event-three boundary is accompanied by a complete N1--N8 sidecar; the strongest
 live escape is a predecessor-aware third-event channel.
+
+## Delivery
+
+- result commit: `cf9c3c9e3a042d02d44121304d03a12fe47ac9ee`;
+- stacked pull request: `#7809`;
+- base: Block22 branch / pull request `#7808`;
+- all inspected Record/source and connection/gravity stack heads were clean at
+  delivery time;
+- no review-loop was used; and
+- independent audit remains unset.

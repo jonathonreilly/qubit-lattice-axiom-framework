@@ -42,6 +42,16 @@ handoffs, exact initial effects, marginals, suffix sums, symbolic-reference
 identities, and the coefficientwise total remain bound without substituting
 the expected transition law. The repair and preserved initial timeout were
 committed at `63471f53403275d7ee39608fb46f52b23cd11340`. No repaired-source
-execution has occurred.
+execution had occurred at that commit.
+
+The content-repinned repaired source then ran once for 900.01 seconds. It
+reproduced every earlier pass and newly passed all 16,464 exact three-event
+composites, including both marginals, total identity, and symbolic reference,
+before timing out inside the arbitrary-finite-cylinder induction. The cache is
+preserved at the repinned optimized path with SHA-256
+`193a074c40305d6e4760f12861ea24621c227813105b18cc699706960f0dc5fa`.
+No predicate failed. The next permitted repair is representation-only:
+factorize the arbitrary symbolic prefix effect and reference scalar so the
+same coefficientwise sum-back is not materialized per branch.
 
 No review-loop is authorized. Independent audit remains unset.

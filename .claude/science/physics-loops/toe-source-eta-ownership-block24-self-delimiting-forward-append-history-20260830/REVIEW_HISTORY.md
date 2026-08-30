@@ -86,3 +86,9 @@ retirement, or TOE-score move.
 The exact accepted repair and preserved initial-timeout cache were committed
 at `63471f53403275d7ee39608fb46f52b23cd11340` before any repaired-source
 execution.
+
+The repinned repaired source later passed the complete three-event predicate
+and timed out inside the arbitrary finite induction at 900.01 seconds. That
+preserved run adds positive execution evidence but is not a green runner or a
+review/audit result. A second pair of static design challenges was requested
+for the narrower symbolic-induction representation hotspot.

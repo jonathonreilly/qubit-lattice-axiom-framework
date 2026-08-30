@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py
+runner_sha256: 0a228689587f492fb3e922ee441e5bd23f7d827e6888f954c72c30c3a0b7cbb7
+input_fingerprint_sha256: 411f71c8b0a45f76a968aa6878abc4018757f286e25283469162188bc296ea2f
+timeout_sec: 900
+exit_code: -9
+elapsed_sec: 900.01
+status: timeout
+----- stdout -----
+PASS freeze: 8/8 Block24 preregistration hashes plus exact Block23 parent source
+PASS fixed_anchor_geometry: one current plus six possible forward 32-site blocks; common carrier 224 sites, radius 13
+PASS imported_effect_completion: fourteen Block22 effects rederive coefficientwise sum I_64
+PASS explicit_positive_roots: all fourteen 64-sector positive roots reconstruct their physical effects
+PASS Record_selected_target: 84 complete physical Locked words uniquely decode front/outcome and one forward center
+PASS factorized_append_branches: all 1176 prepare-plus-root-plus-pointer append Kraus branches are physical factor lists
+PASS global_append_CPTP: 84 factor-recontracted Record/Blank Gram terms form P_valid; K_STOP=I-P completes the anchored channel with symbolic I_R
+PASS classical_Record_QND: every old classical Record projector is fixed; eligible cross-word coherences dephase, so no coherent-code QND claim
+PASS physical_append_covariance: all separate branches rotate physical supports/live/pointers/roots under 24 frames and translate as one anchored family
+PASS self_delimiting_tip: old source STOPs after forward becomes Locked; translated new complete Record accepts one new Blank
+PASS exact_three_event_composite: all 16464 literal sequential composites contract to E_b1*T(b2|b1)*T(b3|b2), both prefix marginals, total I, and symbolic I_R
+
+----- stderr -----
+

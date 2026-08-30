@@ -1,6 +1,6 @@
 loop_id: toe-source-eta-ownership-block22-self-delimiting-distributed-record-causal-attachment-20260830
 block: source_eta_22
-status: primary_coverage_repair_frozen_unexecuted
+status: dual_runners_positive_packaging_result
 phase: exact_povm_common_cubic_radial_pointer_live_to_record_writer
 branch: physics-loop/toe-source-eta-ownership-block22-self-delimiting-distributed-record-causal-attachment-20260830
 parent_commit: e0250e1edee5eb41fe797857f3460dfcf77c736b
@@ -22,10 +22,10 @@ initial_primary_cache: logs/runner-cache/admissibility_d4_block09_povm_radial_re
 initial_primary_cache_sha256: c4ad88865d6b503ba819e861b2210f2a7876cd6a6983d1ed425bafcb1697e596
 initial_primary_status: "17_17"
 initial_primary_mutations_rejected: "27_27"
-primary_cache: unset
-primary_cache_sha256: unset
-primary_status: unset
-primary_mutations_rejected: unset
+primary_cache: logs/runner-cache/admissibility_d4_block09_povm_radial_record_writer_2026_08_30.txt
+primary_cache_sha256: ebef20cc42958774f8bd67e9f592ccc203b8ef7576185b2ece08aa9cd67a71a4
+primary_status: "19_19"
+primary_mutations_rejected: "30_30"
 primary_terminal: EXACT_BLOCK09_POVM_PLUS_COVARIANT_LIVE_TO_RECORD_WRITER_PLUS_COMPLETE_M2_QND_BOUNDARY
 independent_runner: scripts/independent_admissibility_d4_block09_povm_radial_record_writer_2026_08_30.py
 independent_runner_sha256: 2b4116ad201b71d609e71b97b8884a4cffe277c7e5d9562e90b22e58984581c7
@@ -34,7 +34,8 @@ independent_cache_sha256: 3f454af7e03dbd07d3cc1b021ca8af2e6c3706cb76267b96c455e0
 independent_status: "20_20"
 independent_mutations_rejected: "33_33"
 independent_terminal: POVM_AND_COVARIANT_LIVE_TO_RECORD_WRITER_RECORD_TO_RECORD_CAUSAL_BRIDGE_OPEN
-execution_cache_commit: ab26ddf55d76fbb40cb41c32ff76b4ebda244c26
+initial_execution_cache_commit: ab26ddf55d76fbb40cb41c32ff76b4ebda244c26
+execution_cache_commit: 7244b9da2e7d1baba91141b87ffa3d216a65fe6b
 status_sites: 6
 front_sites: 6
 outcome_sites: 14

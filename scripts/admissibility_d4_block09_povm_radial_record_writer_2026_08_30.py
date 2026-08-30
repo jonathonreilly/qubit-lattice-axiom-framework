@@ -456,6 +456,11 @@ def main():
     rejected = sum(bool(value) for value in mutations.values())
     checks.check("mutations", rejected == len(mutations), f"{rejected}/{len(mutations)} hostile mutations rejected")
 
+    print("per_element: exact Block09 effect coefficients, spectra, positivity, completeness, and the M2 identity-Choi boundary are checked")
+    print("per_site: all 32 physical sites, the 26-site radial Record code, onsite spin action, and anchor recovery are checked")
+    print("per_mode: checked and not executed -- this finite selected-writer theorem makes no Fourier-space or normal-mode claim")
+    print("per_block: the complete selected-anchor instrument, STOP complement, branch covariance, and permanent output code are checked")
+    print("lattice_wide: checked and not executed -- overlap arbitration, relay composition, global dynamics, gravity, and TOE closure remain open")
     print("TERMINALS: EXACT-BLOCK09-SIX-QUBIT-POVM-LIFT; COVARIANT-PRIMITIVE-M2-RADIAL-POINTER-LUEDERS-WRITER-FROM-LIVE-INPUT; INFORMATIVE-BLOCK09-POVM-INCOMPATIBLE-WITH-COMPLETE-M2-RECORD-QND")
     print("SCOPE: selected isolated anchor; 32 primitive qubits; compound 26-site Record; consumable live input; no overlap, relay, process, clock, source, gravity, axiom, audit, obligation, or TOE move")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")

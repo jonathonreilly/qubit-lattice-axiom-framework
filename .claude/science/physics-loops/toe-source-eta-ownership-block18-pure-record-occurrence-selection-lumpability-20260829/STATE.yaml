@@ -1,6 +1,6 @@
 loop_id: toe-source-eta-ownership-block18-pure-record-occurrence-selection-lumpability-20260829
 block: source_eta_18
-status: sector_scoped_underselection_packaged
+status: sector_scoped_underselection_delivered
 phase: pure_record_harris_occurrence_selection_and_interfaces
 branch: physics-loop/toe-source-eta-ownership-block18-pure-record-occurrence-selection-lumpability-20260829
 parent_commit: a1c2fc2efc34fd2540144d9a1a2ee62b5312aac6
@@ -8,8 +8,8 @@ origin_main: 3cc632921c36aa90266c5c62e56816577ce59a0a
 minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
 preregistration_commit: 54f1d5c5e0
 support_correction_commit: 5dd5f77522
-result_commit: pending
-result_pr: pending
+result_commit: 5b56b7527ce1aef062837b25dd7f8ea0b29542e3
+result_pr: 7804
 latest_record_pr: 7802
 latest_record_head: a1c2fc2efc34fd2540144d9a1a2ee62b5312aac6
 latest_connection_pr: 7803

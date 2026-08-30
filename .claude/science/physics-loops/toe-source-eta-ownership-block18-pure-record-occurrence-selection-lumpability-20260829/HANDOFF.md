@@ -52,3 +52,5 @@ event arity. A same-premise action/detailed-balance selector is the immediate
 fallback. The gravity result in PR `#7803` strengthens its supplied
 fixed-placement action/crossing tower but does not yet supply this selector,
 clock, or Record-to-conserved-source map.
+
+Science result `5b56b7527c` is pushed in stacked PR `#7804`.

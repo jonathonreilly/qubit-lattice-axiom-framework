@@ -9,9 +9,12 @@ TOTAL: PASS=17 FAIL=0
 1/1 external control
 ```
 
-Open exactly one stacked science PR with base
+The single stacked science PR is
+[`#7810`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7810),
+with base
 `physics-loop/toe-source-eta-ownership-block23-prior-record-live-preparation-two-event-prefix-20260830`.
-The PR must land the terminal cache, bounded theorem note with inline N1--N8
-gate, claim/trace/execution surfaces, and deterministic citation-graph manifest.
-Verify the live base/head and conformance gates before delivery. Do not merge
-and do not invoke review-loop.
+Its delivered head is `fea2027f0a9723dfb8e9bcb8549a1f65ec608b0f`.
+GitHub reports it open, mergeable, and `CLEAN`. It contains the terminal cache,
+bounded theorem note with inline N1--N8 gate, claim/trace/execution surfaces,
+and deterministic citation-graph manifest. Do not merge and do not invoke
+review-loop.

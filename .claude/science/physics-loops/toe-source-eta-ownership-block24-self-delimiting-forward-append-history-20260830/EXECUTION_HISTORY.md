@@ -181,3 +181,10 @@ WITH-PROJECTIVELY-CONSISTENT-ARBITRARY-FINITE-STRAIGHT-RAY-CYLINDERS
 This supports an author-side bounded theorem candidate. Independent audit,
 retention, obligation retirement, axiom change, and TOE-score movement remain
 unset or zero.
+
+## Delivery
+
+The bounded result package was committed at
+`fea2027f0a9723dfb8e9bcb8549a1f65ec608b0f`, pushed, and opened as stacked
+science PR `#7810` on Block23 PR `#7809`. At delivery GitHub reported the PR
+open, mergeable, and `CLEAN`. No merge, review-loop, or audit edit occurred.

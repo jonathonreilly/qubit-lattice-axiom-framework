@@ -137,3 +137,20 @@ exception. These static reads are not runner or audit results.
 
 The accepted one-line repair and its provenance were committed, without target
 execution, at `4cd86e4171c2bd477f418f4381c764162158cb50`.
+
+## Terminal execution and reconciliation
+
+The exact repinned source completed once with exit zero in `410.24` seconds.
+It reports `TOTAL: PASS=17 FAIL=0`, with all 32 executed altered models, 11
+scope guards, and one external control. The terminal cache SHA-256 is
+`40c8f35ce6a1a8eb7b6359498f76bc16b4a1327fdf8d593d40986beee018d999`.
+
+One independent postexecution static reconciler matched the source SHA, input
+fingerprint, cache header, each displayed predicate, the arbitrary fixed finite
+cylinder induction, scope line, and terminal. It accepted packaging as a
+runner-supported bounded positive theorem candidate only. It explicitly
+rejected promotion to a simultaneous lattice process, infinite physical
+history, Blank ownership, nearest-neighbor compiler, time/rate,
+action/source/gravity, Born derivation, axiom change, audit retention,
+obligation retirement, or TOE movement. This reconciliation is not an audit
+verdict.

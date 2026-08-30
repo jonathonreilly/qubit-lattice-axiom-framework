@@ -93,4 +93,21 @@ They confirmed that direct `BlockProduct(BLANK_LIVE, locked_word)` is the exact
 execution of that source had occurred when it and the provenance were committed
 at `4cd86e4171c2bd477f418f4381c764162158cb50`.
 
+The final content-bound run completed in `410.24` seconds with exit zero and
+empty stderr. Exact source SHA-256
+`f98534f07655e0de296f2060932e34aa7a600f08545f3661be2843d05accc15d`
+and declared-input fingerprint
+`7d9070dc0748121fa237a2d29dc2030028f8cec7114b614091ead7c7f867ffb7`
+match the repin. The terminal cache SHA-256 is
+`40c8f35ce6a1a8eb7b6359498f76bc16b4a1327fdf8d593d40986beee018d999`.
+It reports `17/17`, `32/32` executed altered models, `11/11` scope guards,
+`1/1` external control, and `FAIL=0`.
+
+The supported author-side claim is a bounded fixed-anchor append instrument
+and every fixed finite isolated straight-ray cylinder under a selected seed,
+sequential invocation, and supplied one-Blank-per-append rail. Global
+collisions, Blank ownership, nearest-neighbor compilation, cadence,
+action/source/gravity, audit retention, obligations, and TOE scores remain
+open. A postexecution static reconciliation found no terminal false-green.
+
 No review-loop is authorized. Independent audit remains unset.

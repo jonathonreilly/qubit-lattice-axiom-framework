@@ -145,3 +145,39 @@ They found no analogous constructor/type trap in the remaining mutation path.
 They did not import, compile, execute, or edit it. The exact repair and
 provenance were committed at
 `4cd86e4171c2bd477f418f4381c764162158cb50` before execution.
+
+## Terminal execution
+
+- source commit: `4cd86e4171c2bd477f418f4381c764162158cb50`;
+- source-repin commit: `09fa94a3dd17f6bb0761a04cd8100b84bced51b9`;
+- source SHA-256:
+  `f98534f07655e0de296f2060932e34aa7a600f08545f3661be2843d05accc15d`;
+- declared-input fingerprint:
+  `7d9070dc0748121fa237a2d29dc2030028f8cec7114b614091ead7c7f867ffb7`;
+- preserved cache:
+  `logs/runner-cache/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30_terminal.txt`;
+- cache SHA-256:
+  `40c8f35ce6a1a8eb7b6359498f76bc16b4a1327fdf8d593d40986beee018d999`;
+- process result: `ok` after `410.24` seconds, exit `0`; and
+- merged stderr: empty.
+
+The run reports:
+
+```text
+PASS arbitrary_finite_cylinders
+PASS executed_model_mutations: 32/32
+PASS coverage_scope_guards: 11/11
+PASS external_negative_controls: 1/1
+TOTAL: PASS=17 FAIL=0
+```
+
+The exact terminal is
+
+```text
+EXACT-COVARIANT-SELF-DELIMITING-ONE-BLANK-RECORD-APPEND-INSTRUMENT-
+WITH-PROJECTIVELY-CONSISTENT-ARBITRARY-FINITE-STRAIGHT-RAY-CYLINDERS
+```
+
+This supports an author-side bounded theorem candidate. Independent audit,
+retention, obligation retirement, axiom change, and TOE-score movement remain
+unset or zero.

@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py
+runner_sha256: f98534f07655e0de296f2060932e34aa7a600f08545f3661be2843d05accc15d
+input_fingerprint_sha256: 7d9070dc0748121fa237a2d29dc2030028f8cec7114b614091ead7c7f867ffb7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 410.24
+status: ok
+----- stdout -----
+PASS freeze: 8/8 Block24 preregistration hashes plus exact Block23 parent source
+PASS fixed_anchor_geometry: one current plus six possible forward 32-site blocks; common carrier 224 sites, radius 13
+PASS imported_effect_completion: fourteen Block22 effects rederive coefficientwise sum I_64
+PASS explicit_positive_roots: all fourteen 64-sector positive roots reconstruct their physical effects
+PASS Record_selected_target: 84 complete physical Locked words uniquely decode front/outcome and one forward center
+PASS factorized_append_branches: all 1176 prepare-plus-root-plus-pointer append Kraus branches are physical factor lists
+PASS global_append_CPTP: 84 factor-recontracted Record/Blank Gram terms form P_valid; K_STOP=I-P completes the anchored channel with symbolic I_R
+PASS classical_Record_QND: every old classical Record projector is fixed; eligible cross-word coherences dephase, so no coherent-code QND claim
+PASS physical_append_covariance: all separate branches rotate physical supports/live/pointers/roots under 24 frames and translate as one anchored family
+PASS self_delimiting_tip: old source STOPs after forward becomes Locked; translated new complete Record accepts one new Blank
+PASS exact_three_event_composite: all 16464 literal sequential composites contract to E_b1*T(b2|b1)*T(b3|b2), both prefix marginals, total I, and symbolic I_R
+PASS arbitrary_finite_cylinders: physical base prefix plus Record-preserving returned-tip induction and a coefficientwise stochastic/reference step prove every fixed finite cylinder
+PASS single_Blank_resource_scope: one exact Blank is consumed; 160 explicit spectator identities plus I_outside preserve every earlier/backward/lateral block
+PASS scope_ast: target site derives only from anchor plus physical current Record; append has no backward/lateral/future-site input
+PASS executed_model_mutations: 32/32 altered channels/rules reject their target invariant
+PASS coverage_scope_guards: 11/11 non-mutation coverage/scope guards hold
+PASS external_negative_controls: 1/1 explicit external controls behave as expected
+per_element: all 1176 append effects, all 16464 three-event effects, 196 kernel entries, and exact prefix identities are checked
+per_site: every factor on the 224-site fixed-anchor carrier and every translated straight-ray block support is checked; one realized append consumes one 32-site Blank block
+per_mode: all 84 current Record sectors, fourteen next-outcome branches, six front fibers, and 24 proper cubic frames are checked; no physical clock mode is claimed
+per_block: the current 32-site Record block, one selected forward block, five unrestricted spectator blocks, STOP complement, and arbitrary finite returned-tip induction are checked
+lattice_wide: checked and not executed -- shared-target arbitration, simultaneous global scheduling, Blank generation, turns, rate, source, gravity, retention, and TOE closure remain open
+TERMINAL: EXACT-COVARIANT-SELF-DELIMITING-ONE-BLANK-RECORD-APPEND-INSTRUMENT-WITH-PROJECTIVELY-CONSISTENT-ARBITRARY-FINITE-STRAIGHT-RAY-CYLINDERS
+SCOPE: anchored isolated straight ray; supplied one-Blank-per-append boundary; atomic range 13; no global scheduler, mixed-front safety, substrate ownership, nearest-neighbor compiler, time, source, gravity, axiom, audit, obligation, or TOE move
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

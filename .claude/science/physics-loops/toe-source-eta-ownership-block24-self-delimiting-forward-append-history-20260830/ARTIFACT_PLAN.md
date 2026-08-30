@@ -25,3 +25,10 @@
 - deterministic citation-graph manifest acknowledgment when the note adds a
   node; and
 - one stacked science PR on Block23, with no review-loop or audit edit.
+
+## Postexecution status
+
+The terminal cache is green at `17/17`; the bounded theorem note, inline
+N1--N8 gate, claim/trace/handoff surfaces, deterministic graph manifest, and
+one stacked PR are the remaining packaging gates. No review-loop or audit edit
+is authorized.

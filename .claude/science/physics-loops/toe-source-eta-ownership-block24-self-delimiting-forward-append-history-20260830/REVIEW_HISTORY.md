@@ -134,3 +134,6 @@ Two independent static reviewers accepted exact one-line repaired source SHA
 They verified the typed nonblank fixture and traced the remaining mutation path
 without finding another statically evident constructor, shape, or empty-witness
 exception. These static reads are not runner or audit results.
+
+The accepted one-line repair and its provenance were committed, without target
+execution, at `4cd86e4171c2bd477f418f4381c764162158cb50`.

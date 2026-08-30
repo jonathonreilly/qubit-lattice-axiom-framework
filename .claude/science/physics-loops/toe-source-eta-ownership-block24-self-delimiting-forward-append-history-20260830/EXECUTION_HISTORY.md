@@ -142,4 +142,6 @@ Two independent static tail reviews accepted the direct-constructor repair at
 exact source SHA-256
 `f98534f07655e0de296f2060932e34aa7a600f08545f3661be2843d05accc15d`.
 They found no analogous constructor/type trap in the remaining mutation path.
-They did not import, compile, execute, or edit it.
+They did not import, compile, execute, or edit it. The exact repair and
+provenance were committed at
+`4cd86e4171c2bd477f418f4381c764162158cb50` before execution.

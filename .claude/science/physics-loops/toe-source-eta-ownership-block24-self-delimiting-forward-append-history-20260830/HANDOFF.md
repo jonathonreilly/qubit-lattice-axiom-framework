@@ -90,6 +90,7 @@ Two independent static tail reviews accepted exact repaired source SHA-256
 They confirmed that direct `BlockProduct(BLANK_LIVE, locked_word)` is the exact
 32-factor nonblank fixture and found no analogous constructor, shape, empty
 `next`, or uncaught intended-mutation exception in the remaining tail. No
-execution of that source has occurred.
+execution of that source had occurred when it and the provenance were committed
+at `4cd86e4171c2bd477f418f4381c764162158cb50`.
 
 No review-loop is authorized. Independent audit remains unset.

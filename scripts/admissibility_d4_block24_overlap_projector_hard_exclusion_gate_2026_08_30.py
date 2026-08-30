@@ -68,10 +68,10 @@ FROZEN = {
     "NO_GO_DISCIPLINE_CHECKLIST.md": "f7743976708ea1df9dc00602655420f355db54f15bc196421bab3d69f9ebed52",
 }
 AUDIT_INPUT_PATHS = (
-    BLOCK24_SOURCE,
-    BLOCK24_NOTE,
-    BLOCK23_SOURCE,
-    AXIOM_NOTE,
+    "scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py",
+    "docs/ADMISSIBILITY_D4_SELF_DELIMITING_FORWARD_RECORD_APPEND_FINITE_HISTORY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-30.md",
+    "scripts/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block25-collision-hard-exclusion-totalization-20260830/GOAL.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block25-collision-hard-exclusion-totalization-20260830/AUTHORITY_GATE.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block25-collision-hard-exclusion-totalization-20260830/PREFLIGHT_WITNESSES.md",

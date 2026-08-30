@@ -24,3 +24,9 @@ selector, with a distributed-pointer/causal-solder hybrid as the immediate
 fallback. It unanimously deferred gravity and axiom work.
 
 No review-loop was used. Independent audit remains unset.
+
+## Delivery
+
+- result commit: `8246f77ecf359a549d264962232313eba24f104b`;
+- stacked pull request: `#7806`, based on the Block19 branch; and
+- author-side checks were green at delivery; independent audit remains unset.

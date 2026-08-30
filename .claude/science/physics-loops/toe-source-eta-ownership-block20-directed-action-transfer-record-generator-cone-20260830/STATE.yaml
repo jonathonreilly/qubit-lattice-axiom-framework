@@ -1,7 +1,7 @@
 loop_id: toe-source-eta-ownership-block20-directed-action-transfer-record-generator-cone-20260830
 block: source_eta_20
-status: inspected_stack_interface_unsupplied_result_packaging
-phase: directed_action_transfer_record_generator_authority_type_result
+status: inspected_stack_interface_unsupplied_delivered
+phase: directed_action_transfer_record_generator_authority_type_boundary
 branch: physics-loop/toe-source-eta-ownership-block20-directed-action-transfer-record-generator-cone-20260830
 parent_commit: ac643ece3f0293400ef458581db5615836e41564
 origin_main: 3cc632921c36aa90266c5c62e56816577ce59a0a
@@ -20,6 +20,8 @@ same_z_primary: 9
 same_z_cross_checks: "10_12"
 primary_source_commit: 7c595093d993312e238264279937691b7c23b55a
 execution_commit: f763be4c110040223026158a94e594f18df80ca7
+result_commit: 8246f77ecf359a549d264962232313eba24f104b
+result_pr: 7806
 primary_runner: scripts/admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.py
 primary_runner_sha256: 7da64acf8d306fa502cb319233a8aa2532b845a7776735fd46c77ed6912cb482
 primary_cache: logs/runner-cache/admissibility_d4_directed_action_transfer_record_generator_interface_gate_2026_08_30.txt

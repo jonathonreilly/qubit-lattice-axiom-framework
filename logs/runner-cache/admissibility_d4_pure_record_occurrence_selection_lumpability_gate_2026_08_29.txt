@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_pure_record_occurrence_selection_lumpability_gate_2026_08_29.py
+runner_sha256: c1f7e00b8f42111d677fc5e53ced6f6a25a4871325671270f3984670d5f7b799
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 29.84
+status: ok
+----- stdout -----
+PASS A_directions_rotations: generated directions=6, det+1 signed permutations=24
+PASS B_rho_kernel: rho spectra derived=(Fraction(113, 512), Fraction(399, 512)); profiles=117649 x rotations=24
+PASS C_joint_intensity: sum_f q_x(f|R)=lambda_x exactly; six supported marks and no hidden no-event mass
+PASS D_finite_generator: Q rows exact on Lambda_3; append bound=27; absorption/permanence hold
+PASS E_history_law: conditional counting x ordered-Lebesgue density normalized by conservative pure-birth DAG induction
+PASS F_harris_construction: rate=2alpha; clan=22 sites/radius 2; tail z=1; local coupling/equivariance/formation
+PASS G_dimensionless_selection: finite and local Record-order cylinders=(Fraction(1, 2), Fraction(2, 3)); invariant under alpha rescaling
+PASS H_seed_arity: six directions: bounded one-site order=3, sole compound order=1; L3/4/5 wraps reproduced
+PASS I_lumpability: L>=6 future-cell row pairs=((Fraction(1, 6), Fraction(2, 7)), (Fraction(1, 6), Fraction(1, 3))); compensation and constant-quotient exits retained
+PASS J_incidence_source: all-L>=3 rank=|V|-1 theorem; regressions=((3, 26), (4, 63), (5, 124)); birth/debit totals 1/-1 and 3/-3
+PASS K_hostile_mutations: rejected=18/18 named hostile alterations
+PASS L_n5_resolution: five substantive resolution lines, with the absent physical-mode lane stated honestly
+EXACT: blank p=(Fraction(1, 6), Fraction(1, 6), Fraction(1, 6), Fraction(1, 6), Fraction(1, 6), Fraction(1, 6)); one-neighbor p=(Fraction(2, 7), Fraction(1, 7), Fraction(1, 7), Fraction(1, 7), Fraction(1, 7), Fraction(1, 7)); Harris tail bounds=(Fraction(5, 48), Fraction(1, 17920), Fraction(13, 2874009600)).
+INTERFACES: q rows=((Fraction(1, 6), Fraction(2, 7)), (Fraction(1, 6), Fraction(1, 3))); compound sole-direct coefficient=5/42, general direct-sum control=5/28.
+HARRIS_SCOPE: measurable finite clans at rational local queries, local cadlag extension, and shared-field convergence; global event rate is infinite and no global jump chain is claimed.
+SECTOR_SCOPE: the six rho_f are valid M2 possibilities, not an exhaustive M2 domain; the common full-domain extension remains live and unexecuted.
+N5 per_element: checked six exact rho_f density matrices and every one of 117649 ordered neighbor profiles under all 24 proper cubic rotations.
+N5 per_site: checked permanent append, positive-baseline eventual formation, both seven-row hazards, and the two-site local first-Record race.
+N5 per_mode: checked and not executed — this pure-Record process has no Fourier, spectral, or other physical mode decomposition in its frozen contract.
+N5 per_block: checked finite Q/history normalization, six-direction one-site versus compound arity, corrected L>=6 lumpability, and all small-torus controls.
+N5 lattice_wide: checked finite-clan Harris convergence on Z^3 and the all-L>=3 real-incidence/source theorem; no global jump chain or full-M2 law is claimed.
+COMPUTATIONAL_TERMINAL: PURE-RECORD-HARRIS-PROCESSES-EXIST-DIMENSIONLESS-GENERATOR-UNDERSELECTED
+SHIP_GATE: sector-scoped result; independent checker and landed N1-N8 packet remain separate prerequisites.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

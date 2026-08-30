@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_pure_record_occurrence_selection_lumpability_gate_2026_08_29.py
+runner_sha256: de91d8a726d44bd16536753d8fe7789eec1ac87915f4c3d3de40b926964e8d8f
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 23.02
+status: ok
+----- stdout -----
+PASS rho_f-density-orbit: six Hermitian trace-one marks; spectrum=(113/512,399/512), det=45087/262144; full-M2 not claimed
+PASS profile-orbit-covariance-census: profiles=117649, rotations=24, orbits=5075, orbit_sizes={1: 3, 3: 6, 4: 4, 6: 34, 8: 21, 12: 244, 24: 4763}, covariant_pairs=2823576, p_rows=923, uniform=721
+PASS finite-generator-and-exact-histories: Q rows exact/conservative/append-only; density=125/74088*exp(-961/42); invalid=5/5; cap=27; normalization=acyclic row-sum induction
+PASS dimensionless-local-Record-order-race: lambda1/alpha=(1,7/6,4/3,3/2,5/3,11/6,2); finite/local-history odds=(1/2,2/3); initial-U-rates/alpha=('8', '9'); common time scale and every-T survival factor cancel
+PASS Harris-local-measurable-coupling: 14alphaT tail m=(4, 8, 12) -> ('5/32', '3/35840', '13/1916006400'); clans(size,radius)=((38, 2), (170, 4)); finite marked points=148896; shared fixed/periodic time cylinders stabilize by even L=(10, 14); counts=(2, 3, 2, 3)
+PASS formation-and-covariance-scope: lambda>=alpha gives P(blank at t)<=exp(-alpha*t), hence each/all-countable sites eventually record a.s.; sample map equivariant, while asymmetric initial point mass is not invariant; no common finite completion time
+PASS seed-+x-arity-lumpability: L=6 orders(single,compound)=(3,1); q0=1/6!=2/7, q1=1/6!=1/3; future-preserving single-entry fibre only
+PASS seed--x-arity-lumpability: L=6 orders(single,compound)=(3,1); q0=1/6!=2/7, q1=1/6!=1/3; future-preserving single-entry fibre only
+PASS seed-+y-arity-lumpability: L=6 orders(single,compound)=(3,1); q0=1/6!=2/7, q1=1/6!=1/3; future-preserving single-entry fibre only
+PASS seed--y-arity-lumpability: L=6 orders(single,compound)=(3,1); q0=1/6!=2/7, q1=1/6!=1/3; future-preserving single-entry fibre only
+PASS seed-+z-arity-lumpability: L=6 orders(single,compound)=(3,1); q0=1/6!=2/7, q1=1/6!=1/3; future-preserving single-entry fibre only
+PASS seed--z-arity-lumpability: L=6 orders(single,compound)=(3,1); q0=1/6!=2/7, q1=1/6!=1/3; future-preserving single-entry fibre only
+PASS small-torus-hostile-controls: L3 distinct=2, S(q0,q1)=(2/7,1/3), C=(4/9,16/27); L4 y_occupied=True; L5 C=(4/9,16/27); all six directions
+PASS arity-and-quotient-scope-falsifiers: one-site O(t^3) versus sole direct compound O(t); extra direct rates sum into the linear coefficient, and a compensating target transition disables the single-entry lumpability test
+PASS analytic-all-L-incidence-theorem: (L-1)(L^2+L+1)=L^3-1 rooted edges, unimodular tree lower bound + zero-column-sum upper bound give rank(B_L)=L^3-1 for every L>=3; exact modular regressions L3:26,L4:63,L5:124
+PASS raw-occupancy-source-debit-scope: birth totals=(1, 3) reject source-free divergence; sigma repairs locally, scalar debits=(-1, -3) repair global balance only; conditional raw-occupancy join, not gravity no-go
+PASS hostile-mutation-rejection: detected=18/18; failures=none
+per_element: checked exact rho_f spectra and every six-mark kernel probability; no full-M2 occurrence-law claim.
+per_site: checked positive formation hazard, append-only permanence, and both nearest-neighbor activation rows.
+per_mode: checked and not executed — this pure-Record process sector has no physical mode decomposition.
+per_block: checked six L>=6 seed rows, exact L=3,4,5 wrap controls, arity, and scoped lumpability.
+lattice_wide: checked local Harris cylinders and all-L periodic incidence; no global jump chain or gravity no-go.
+TERMINAL: PURE-RECORD-HARRIS-PROCESSES-EXIST-DIMENSIONLESS-GENERATOR-UNDERSELECTED
+SCOPE: invariant seven-state Markov witness sector; full-M2 extension, physical selector, and absolute clock remain live.
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

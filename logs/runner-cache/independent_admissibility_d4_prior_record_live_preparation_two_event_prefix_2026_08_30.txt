@@ -1,0 +1,26 @@
+PASS provenance eight frozen packet hashes; independent stdlib source; primary imports=0
+PASS proper_cubic_group 24 determinant-one signed permutations, exact closure
+PASS successor_star_geometry R=9; 32+6x32=224 disjoint sites; radius=13; one six-block orbit
+PASS quadrupole_family Q_b=uu^T-I/3 has trace=0, tr(Q^2)=2/3, det=2/27 and cubic covariance
+PASS prepared_live_products six normalized Q_b n factors derived per b; antipodal and 24-frame covariance exact
+PASS block22_effects_rederived 14 positive effects sum to I_64; spectra bounded exactly; physical Pauli covariance
+PASS fourteen_state_kernel 196 entries derived from Q_b, six Bloch factors, and effect coefficients; no kernel table
+PASS antipodal_lumping 14 signed outcomes lump exactly to 3 axis plus 4 corner rays
+PASS stationary_reversible_laws signed pi=(1/12,1/16); quotient pi=(1/6,1/8); detailed balance exact
+PASS invariant_subspace_spectrum eigenvalues 1, sqrt(2)/16 x3, 1/12 x2, 0 from S3/S4 contrasts and class constants
+PASS mode_boundary 7-ray chain primitive/unique; 42-state (f,[b]) chain has six closed front sectors
+PASS record_code 6 Ready and 84 mutually orthogonal Locked radial words decode and rotate exactly
+PASS blank_and_targets six all-zero 32-site Blank blocks; one rho_b+Ready_f target; target perpendicular to BlankStar
+PASS separate_kraus_cptp sum A_(f,b)^dag A_(f,b)=P_valid; (I-P_valid)^2 completes I; repeat target is STOP
+PASS commuting_record_qnd_only all C_(f,b) fixed in Heisenberg picture; a cross-Record matrix unit is dephased
+PASS record_indexed_covariance C4_z gives +i/-i branch gauges; separate CP branches covary, coherent summed Kraus does not
+PASS two_event_composition p_f(b1,b2|rho)=Tr(rho E_b1)T(b2|b1); normalized, prefix-consistent, CP with references
+PASS two_event_wall at y=x+9f the backward star member is locked x, so all-six-Blank fails before event three
+PASS hostile_mutations rejected=57/57 independent geometry/algebra/kernel/scope attacks
+PASS scope atomic radius-13 supplied-Blank construction; exactly two events; all named walls retained
+per_element: Q_b, six pure Bloch factors, all 14 effects, and 196 transition entries were independently reconstructed exactly.
+per_site: the old 32-site block and six translated 32-site blocks are disjoint on 224 qubits with radius 13.
+per_mode: antipodal lumping gives seven rays with spectrum 1, sqrt(2)/16 x3, 1/12 x2, 0; six front sectors stay closed.
+per_block: 84 separate Record-indexed Kraus branches are CPTP, Record-projector QND, covariant, and one-shot on BlankStar.
+lattice_wide: not claimed; Blank supply, overlap arbitration, NN compilation, event three, histories, rates, source, gravity, audit, and TOE stay open.
+TOTAL: PASS=20 FAIL=0

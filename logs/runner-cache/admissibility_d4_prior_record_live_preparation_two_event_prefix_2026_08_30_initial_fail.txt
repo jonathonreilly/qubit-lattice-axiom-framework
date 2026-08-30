@@ -1,0 +1,19 @@
+PASS freeze: 8/8 preregistration hashes
+PASS fixed_star_geometry: old 32 + six disjoint 32-site successors; R=9, radius=13
+PASS frozen_q_state_family: 14 geometry-derived pure products; Q_-b=Q_b; positive sign load-bearing
+PASS common_action_states: 24 rotations act on every Blank and prepared physical Bloch state
+PASS record_controls: 84 orthogonal full (front,outcome) controls; Blank outside six Ready words
+PASS record_generated_target: full old (f,b) selects y_f, Ready_f, and rho_b with five Blank blocks unchanged
+PASS prep_cptp: sum A_(f,b)^dagger A_(f,b)=P_valid and projector STOP completes I; Kraus CP is reference-stable
+PASS classical_record_qnd: all commuting Locked projectors and classical-reference correlations survive; reapplication STOPs
+PASS kraus_map_covariance: separate branch CP maps covary up to phase; forbidden coherent sum has +i/-i C4 characters
+PASS imported_effect_completion: 14 Block22 effects rederive coefficientwise sum I_64
+PASS derived_signed_kernel: 196 entries derived from Q_b and effects; strict positive stochastic rows
+PASS kernel_covariance_lumping: 24-frame invariance and exact 14-to-7 antipodal strong lumping
+PASS seven_ray_quotient: 3 axis + 4 corner ray kernel exact and strictly positive
+PASS reversible_stationary_kernel: detailed balance: signed 1/12,1/16 and ray 1/6,1/8 weights
+PASS invariant_subspace_spectrum: spectrum 1,0,(1/12)^2,(sqrt2/16)^3 derived without eigensolver
+PASS direct_two_event_cylinders: direct Kraus effects equal Tr(rho E_b1)T(b2|b1), normalize, and retain first marginal
+PASS parallel_writer_prefix: one Ready successor writes and five Blank successors STOP; old/new packet anchors decode disjointly
+PASS scope_boundary: event-3 all-Blank guard hits Locked predecessor; seven-ray uniqueness does not lift to six front sectors
+PASS scope_ast: no target table, future outcome, selected-site oracle, imported runner, or dense eigensolve

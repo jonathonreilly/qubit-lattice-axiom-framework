@@ -987,6 +987,15 @@ def append_channel_certificate(branches=None, deep=True):
 
 
 @dataclass(frozen=True)
+class FactorizedCylinderEffect:
+    """Exact E_first times a factor-contracted conditional scalar."""
+
+    initial_label: tuple
+    initial_effect: tuple
+    conditional_scalar: object
+
+
+@dataclass(frozen=True)
 class ThreeEventBranch:
     front: tuple
     first: tuple
@@ -998,7 +1007,7 @@ class ThreeEventBranch:
     second_append: AppendBranch
     composite_factors: tuple
     input_domain: tuple
-    joint_effect: tuple
+    joint_effect: FactorizedCylinderEffect
 
 
 @lru_cache(maxsize=None)
@@ -1065,10 +1074,10 @@ def contract_three_event_composite(composite_factors):
     if data["outside_chain_identity"] != "I_outside":
         raise ValueError("composite omits the outside-chain identity")
     second_append_effect = contract_append_effect(data["second_append_factors"])
-    first_effect = contracted_physical_root(first)
-    return parent.scale_effect_data(
-        first_effect,
-        sp.simplify(
+    return FactorizedCylinderEffect(
+        initial_label=first,
+        initial_effect=contracted_physical_root(first),
+        conditional_scalar=sp.simplify(
             first_append_effect.scalar * second_append_effect.scalar
         ),
     )
@@ -1118,10 +1127,8 @@ def three_event_branch_is_physical(branch):
     return (
         len(branch.first_root[1]) == 6
         and len(branch.first_root[2]) == 64
-        and parent.effect_equal(
-            contracted_physical_root(branch.first),
-            parent.effect(branch.first),
-        )
+        and branch.joint_effect.initial_effect
+        == contracted_physical_root(branch.first)
         and len(branch.first_pointer_maps) == 26
         and tuple(entry[1] for entry in branch.first_pointer_maps)
         == parent.ready_word(branch.front)
@@ -1138,10 +1145,11 @@ def three_event_branch_is_physical(branch):
         == make_three_event_composite_factors(
             branch.front, branch.first, branch.second, branch.third
         )
-        and parent.effect_equal(
-            contract_three_event_composite(branch.composite_factors),
-            branch.joint_effect,
-        )
+        and contract_three_event_composite(branch.composite_factors)
+        == branch.joint_effect
+        and branch.joint_effect.initial_label == branch.first
+        and branch.joint_effect.initial_effect
+        == contracted_physical_root(branch.first)
         and branch.input_domain
         == (
             (x0, parent.ready_word(branch.front)),
@@ -1160,6 +1168,28 @@ def all_three_event_branches(front):
     )
 
 
+@lru_cache(maxsize=None)
+def three_event_scalar_certificate(first, second, third, actual_scalar):
+    expected = sp.simplify(
+        parent.transition(first, second) * parent.transition(second, third)
+    )
+    return sp.simplify(actual_scalar - expected) == 0
+
+
+@lru_cache(maxsize=None)
+def three_event_reference_scalar_certificate(
+    first, second, third, actual_scalar
+):
+    reference_row, reference_column = sp.symbols(
+        "r_three s_three", integer=True, nonnegative=True
+    )
+    delta = sp.KroneckerDelta(reference_row, reference_column)
+    expected = sp.simplify(
+        parent.transition(first, second) * parent.transition(second, third)
+    )
+    return sp.simplify(delta * (actual_scalar - expected)) == 0
+
+
 def three_event_certificate():
     valid = True
     branch_count = 0
@@ -1173,76 +1203,74 @@ def three_event_certificate():
         valid &= len(branches) == 14 ** 3
         valid &= all(three_event_branch_is_physical(branch) for branch in branches)
         valid &= all(
-            parent.effect_equal(
-                branch.joint_effect,
-                parent.effect_scaled(
-                    branch.first,
-                    sp.simplify(
-                        parent.transition(branch.first, branch.second)
-                        * parent.transition(branch.second, branch.third)
-                    ),
-                ),
+            branch.joint_effect.initial_label == branch.first
+            and branch.joint_effect.initial_effect
+            == contracted_physical_root(branch.first)
+            and three_event_scalar_certificate(
+                branch.first,
+                branch.second,
+                branch.third,
+                branch.joint_effect.conditional_scalar,
             )
             for branch in branches
         )
         valid &= all(
-            parent.effect_equal(
-                parent.scale_effect_data(branch.joint_effect, delta),
-                parent.scale_effect_data(
-                    parent.effect_scaled(
-                        branch.first,
-                        sp.simplify(
-                            parent.transition(branch.first, branch.second)
-                            * parent.transition(branch.second, branch.third)
-                        ),
-                    ),
-                    delta,
-                ),
+            three_event_reference_scalar_certificate(
+                branch.first,
+                branch.second,
+                branch.third,
+                branch.joint_effect.conditional_scalar,
             )
             for branch in branches
         )
         for first in OUTCOMES:
             for second in OUTCOMES:
-                third_sum = parent.summed_effects(
-                    [
-                        three_event_branch(front, first, second, third).joint_effect
+                third_sum = sp.simplify(
+                    sum(
+                        three_event_branch(
+                            front, first, second, third
+                        ).joint_effect.conditional_scalar
                         for third in OUTCOMES
-                    ]
+                    )
                 )
-                valid &= parent.effect_equal(
-                    third_sum,
-                    parent.effect_scaled(
-                        first, append_branch(ZERO, parent.locked_word(front, first), second).effect.scalar
-                    ),
-                )
-                valid &= parent.effect_equal(
-                    parent.scale_effect_data(third_sum, delta),
-                    parent.scale_effect_data(
-                        parent.effect_scaled(
-                            first,
-                            append_branch(
-                                ZERO,
-                                parent.locked_word(front, first),
-                                second,
-                            ).effect.scalar,
-                        ),
-                        delta,
-                    ),
-                )
-            suffix_sum = parent.summed_effects(
-                [
-                    three_event_branch(front, first, second, third).joint_effect
+                first_append_scalar = contract_append_effect(
+                    append_branch(
+                        ZERO, parent.locked_word(front, first), second
+                    ).factors
+                ).scalar
+                valid &= sp.simplify(
+                    third_sum - first_append_scalar
+                ) == 0
+                valid &= sp.simplify(
+                    delta * third_sum - delta * first_append_scalar
+                ) == 0
+            suffix_sum = sp.simplify(
+                sum(
+                    three_event_branch(
+                        front, first, second, third
+                    ).joint_effect.conditional_scalar
                     for second in OUTCOMES
                     for third in OUTCOMES
-                ]
+                )
             )
-            valid &= parent.effect_equal(suffix_sum, parent.effect(first))
-            valid &= parent.effect_equal(
-                parent.scale_effect_data(suffix_sum, delta),
-                parent.scale_effect_data(parent.effect(first), delta),
-            )
+            valid &= suffix_sum == 1
+            valid &= sp.simplify(delta * suffix_sum - delta) == 0
         total = parent.summed_effects(
-            [branch.joint_effect for branch in branches]
+            [
+                parent.effect_scaled(
+                    first,
+                    sp.simplify(
+                        sum(
+                            three_event_branch(
+                                front, first, second, third
+                            ).joint_effect.conditional_scalar
+                            for second in OUTCOMES
+                            for third in OUTCOMES
+                        )
+                    ),
+                )
+                for first in OUTCOMES
+            ]
         )
         valid &= parent.effect_equal(total, IDENTITY_EFFECT)
         reference_total = parent.scale_effect_data(total, delta)

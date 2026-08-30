@@ -41,3 +41,44 @@ artifacts exist.
   execution had occurred when those verdicts were issued; and
 - the accepted unexecuted source was then committed unchanged at
   `eb47d71ccc649c153982cb73018a868da2557af0`.
+
+## First pinned execution
+
+- source pin commit: `82136db6d3ccc1b8fbd73a962c27e4f85fa68bc5`;
+- exact source SHA-256: `7215b52c312dc14c3a2277f82c0f2145f5705c7bb8b6c2d685eb2a50bc4f34a5`;
+- first run status: timeout after `900.01` seconds, exit `-9`;
+- the freeze, geometry, POVM completion, positive roots, Record selection, all
+  1,176 factorized append branches, global CPTP completion, classical Record
+  QND, physical covariance, and self-delimiting tip checks all passed before
+  the timeout;
+- no three-event, arbitrary-history, mutation, guard, control, terminal, or
+  total line was reached; and
+- the timeout is classified as a harness-performance failure, with no negative
+  physics inference.
+
+The authorized repair changes only the representation and aggregation of an
+already literal-contracted three-event effect: from repeatedly materializing
+all nineteen symbolic Pauli coefficients to storing the exact initial effect
+and factor-derived conditional scalar. All 16,464 composite factor lists,
+handoffs, branch equalities, prefix sums, reference identities, and total
+effect remain individually or coefficientwise checked.
+
+## Compact-repair static challenge
+
+Two independent static challengers reviewed exact repaired source SHA-256
+`0a228689587f492fb3e922ee441e5bd23f7d827e6888f954c72c30c3a0b7cbb7`
+against source-pin commit `82136db6d3` without importing, compiling,
+executing, or editing it. Both returned `SAFE TO COMMIT/REPIN`:
+
+- the compact pair stores the exact contracted initial effect and the scalar
+  obtained only from the two literal append-factor contractions;
+- all 16,464 physical composites retain root, pointer, anchor, domain,
+  outside-identity, and both handoff checks;
+- branch equality, third marginal, suffix normalization, arbitrary-reference
+  extension, and total POVM completion are algebraically equivalent to the
+  expanded representation; and
+- caching the 2,744 label triples across six front fibers directly removes the
+  repeated expanded-effect work implicated by the first timeout.
+
+Neither read is a runner result, review-loop outcome, audit verdict, obligation
+retirement, or TOE-score move.

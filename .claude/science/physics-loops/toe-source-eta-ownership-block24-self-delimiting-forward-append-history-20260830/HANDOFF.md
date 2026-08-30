@@ -25,8 +25,21 @@ contractions, and a physical-prefix induction. Frozen hostile mutations are
 implemented as altered factor/channel models rather than count-only controls.
 No target runner import, compilation, or execution has occurred.
 
-The unexecuted source was committed at `eb47d71ccc`. The next gate is a
-committed source-pin file, followed by a single new non-overwriting first
-cache. Runtime remains unverified until that run.
+The unexecuted source was committed at `eb47d71ccc` and pinned at `82136db6d3`.
+Its first content-bound run preserved exact one-step passes but timed out at
+900 seconds while materializing the 16,464 three-event effects. This is a
+runtime failure, not a negative science result. The source is undergoing a
+runtime-only repair that retains every literal composite contraction but stores
+each effect compactly as exact `E_first` plus its contracted conditional scalar.
+That repair must be static-accepted, committed, and repinned to a new cache
+path before one optimized execution.
+
+Two independent hostile static reads accepted the compact repair at exact
+source SHA-256
+`0a228689587f492fb3e922ee441e5bd23f7d827e6888f954c72c30c3a0b7cbb7`.
+They found that all 16,464 literal composites, both append contractions and
+handoffs, exact initial effects, marginals, suffix sums, symbolic-reference
+identities, and the coefficientwise total remain bound without substituting
+the expected transition law. No repaired-source execution has occurred.
 
 No review-loop is authorized. Independent audit remains unset.

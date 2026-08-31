@@ -10,7 +10,7 @@
 5. Package the exact result, trace decision, bounded note, lane accounting,
    review history, and stacked PR only after a green content-bound run.
 6. If both `q` choices pass, stop Block29 immediately and create the
-   autonomous-reuse campaign from its exact head.
+   covariant physical successor/handoff campaign from its exact head.
 
 No helper-registry change, audit verdict, axiom edit, obligation edit, or TOE
 score change is planned.

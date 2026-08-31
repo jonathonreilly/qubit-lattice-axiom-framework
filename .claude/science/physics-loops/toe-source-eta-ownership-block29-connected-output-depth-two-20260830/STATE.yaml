@@ -2,7 +2,7 @@ loop_id: toe-source-eta-ownership-block29-connected-output-depth-two-20260830
 block: source_eta_29
 status: preregistered_unexecuted
 target_claim_type: bounded_theorem
-target_surface: representation_neutral_connected_depth_two_corollary
+target_surface: operator_valued_pair_prefix_connected_depth_two_corollary
 source_authority: origin_main_plus_exact_stacked_parent_imports
 parent_pr: 7813
 parent_head: 482978e4d1d3739653e0a605b331d907f4aecc52
@@ -22,6 +22,6 @@ audit_edit_allowed: false
 axiom_edit_allowed: false
 obligation_retirement: 0
 toe_percentage_movement: 0
-next_on_both_pass: autonomous_state_driven_reuse_and_resource_closure
+next_on_both_pass: covariant_physical_successor_handoff
 next_on_one_fail: independent_q_dependent_comb_obstruction_check_before_any_selector
 next_on_common_fail: named_map_or_marginal_definition_repair_without_coupling_inference

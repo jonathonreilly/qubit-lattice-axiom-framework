@@ -1,7 +1,7 @@
 # Block29 final independent static attack
 
-reviewed_source_commit: `05f1e24675d3857837411ca0a51cf7b622285ed3`
-reviewed_source_sha256: `5b032c62daedd05373ae2d2737986f06aaeef91f455e0d72ec1ad2142d42efc8`
+reviewed_source_commit: `c14e20df18f0719a52461178abb0388d9edd8a34`
+reviewed_source_sha256: `5d323a00cff49b2be9f87eaf7f7cc49195b55c1b81013d4e46f36b193a835db8`
 verdict: `SAFE_FOR_ONE_CONTENT_BOUND_EXECUTION`
 target_executed_by_reviewers: `no`
 
@@ -9,8 +9,19 @@ Three independent read-only reviewers rebound to the exact committed source
 bytes above and returned PASS.  The reviewers did not import, compile,
 execute, or call the target and made no edits, commits, or pushes.
 
-The authorization follows four earlier exact-byte failures, each resolved
-before the next review round and before any Block29 science execution:
+This authorization supersedes the earlier pin.  The first authorized wrapper
+attempt was rejected after creation of the wrapper's ignored live-log
+directory changed a parent stat token without changing any declared input
+bytes.  The exact reproduction then timed out at `900.02 s`; its partial
+terminal also exposed a malformed expected hash for the unchanged axioms
+file.  Neither attempt carries a science inference.  The committed repair
+memoizes only immutable, value-keyed constructions and contractions, reduces
+the future-axis cache to the exact three values that construct it, and fixes
+the expected axiom digest.  All downstream prefix binding and exhaustive
+branch enumeration remain present.
+
+The authorization follows five earlier exact-byte failures, each resolved
+before the next review round; none produced a complete Block29 terminal:
 
 - `c000946b4597ef23dfc8df089a3129dd10b1bbd8`, source
   `5ac076b27532791c613ea0e1c4cdb29eaebde70358584f617cb18ae0008983a7`,
@@ -25,7 +36,11 @@ before the next review round and before any Block29 science execution:
 - `3d6a6bd1726777652f1ce8c52eabf302e29a4507`, source
   `ec3b73dede8ecbce74792a6ffa311ec974ee08729c14c11abece3b9b1fceacd7`,
   still used a scalar-copy fixed-sector sum and had self-confirming or missing
-  altered-model checks.
+  altered-model checks; and
+- `072f73ccf605087ef0967316ea762e7791177d61`, source
+  `f5e8649366ced9d69350f2806e8c08b0308c4692d827965fca9d48fb35f000ab`,
+  preserved the optimization but still carried the malformed 62-character
+  expected axiom digest.
 
 For the final bytes, the independent attacks agree that:
 
@@ -46,7 +61,10 @@ For the final bytes, the independent attacks agree that:
 - all 55 designated altered models and scope promotions are rejected through
   their physical constructors or contractors, including changed imported
   `Pi`, nonidentity equal-exit spectator, nested untransported composite
-  factor, and nonidentity reference unitary.
+  factor, and nonidentity reference unitary; and
+- every optimization cache is keyed by the complete immutable physical input
+  (including mutation tags where behavior changes), while the reduced
+  112-member future-axis cache is rebound to every full prefix before use.
 
 The authorized terminal remains bounded: two externally supplied Block28
 `q` choices compose with one explicitly constructed, full-space,

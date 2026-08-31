@@ -2042,6 +2042,16 @@ class FixedSectorCylinderEffect:
     restricted_first: OperatorEffect
 
 
+@dataclass(frozen=True)
+class CylinderLease:
+    prefix: ConnectedPairPrefix
+    bits: tuple
+    first_gram: object
+    resource: FutureResourceSector
+    control: CylinderInputControl
+    family: FutureSectorFamily
+
+
 def connected_cylinder_branch(prefix, future_branch):
     return ConnectedCylinderBranch(
         prefix,
@@ -2063,13 +2073,15 @@ def first_pair_literal_block_sites():
     )
 
 
-def contract_connected_cylinder(descriptor):
-    prefix = descriptor.prefix
-    future_branch = descriptor.future
-    factors = dict(descriptor.factorization)
+@lru_cache(maxsize=16_384)
+def cylinder_lease(prefix, bits):
+    """Authenticate the K/output/resource context once per exact sector."""
+    family = future_sector_family(prefix.output_control, bits)
+    resource = future_resource_sector(prefix.output_control, bits)
+    control = cylinder_input_control(prefix, resource)
     resource_blocks = (
-        block28.block_sites(future_branch.sector.left.center),
-        block28.block_sites(future_branch.sector.right.center),
+        block28.block_sites(resource.left.center),
+        block28.block_sites(resource.right.center),
     )
     first_carrier_blocks = first_pair_literal_block_sites()
     try:
@@ -2082,7 +2094,42 @@ def contract_connected_cylinder(descriptor):
         and fresh_first_gram.control == prefix.first.control
         and reconstructed_pair_output_control(prefix, fresh_first_gram)
         == prefix.output_control.atoms
+        and family.prefix == prefix.output_control
+        and family.bits == bits
+        and family.control == sector_control(prefix.output_control, bits)
+        and family.row_effect.control == family.control
+        and future_sector_family_is_physical(family)
+        and future_resource_sector_is_physical(resource)
+        and resource == family.control.resource
+        and cylinder_input_control_is_physical(control)
+        and all(
+            resource_block.isdisjoint(first_block)
+            for resource_block in resource_blocks
+            for first_block in first_carrier_blocks
+        )
+    ):
+        raise ValueError("future channel is not conditioned on actual first output")
+    return CylinderLease(
+        prefix,
+        bits,
+        fresh_first_gram,
+        resource,
+        control,
+        family,
+    )
+
+
+def contract_connected_cylinder_under_lease(descriptor, lease):
+    """Contract one actual M=L K descriptor under its authenticated lease."""
+    prefix = descriptor.prefix
+    future_branch = descriptor.future
+    factors = dict(descriptor.factorization)
+    if not (
+        prefix == lease.prefix
         and future_branch.prefix == prefix.output_control
+        and future_branch.sector == lease.resource
+        and future_branch.control == lease.family.control
+        and future_branch.sector.bits == lease.bits
         and tuple(factors) == (
             "first_pair_factors",
             "intermediate_output_control",
@@ -2096,41 +2143,34 @@ def contract_connected_cylinder(descriptor):
         and factors["future_resource_sector"] == future_branch.sector
         and factors["future_factors"] == future_branch.factorization
         and factors["outside_identity"] == "I_outside"
-        and all(
-            resource.isdisjoint(first_block)
-            for resource in resource_blocks
-            for first_block in first_carrier_blocks
-        )
     ):
-        raise ValueError("future channel is not conditioned on actual first output")
+        raise ValueError("cylinder descriptor does not match its physical lease")
     future_gram = contract_connected_future_branch(future_branch)
-    if future_gram.control != future_branch.control:
+    if future_gram.control != future_branch.control or (
+        future_gram.control != lease.family.control
+    ):
         raise ValueError("future Gram discarded its operator-valued control")
-    control = cylinder_input_control(prefix, future_branch.sector)
-    if not cylinder_input_control_is_physical(control):
-        raise ValueError("composite input control is not physical")
     return ConnectedCylinderGram(
-        control,
-        fresh_first_gram.coefficient,
+        lease.control,
+        lease.first_gram.coefficient,
         future_gram.coefficient,
-        sp.simplify(fresh_first_gram.coefficient * future_gram.coefficient),
+        lease.first_gram.coefficient * future_gram.coefficient,
         future_gram.bits,
         prefix.output_control,
     )
 
 
+def contract_connected_cylinder(descriptor):
+    lease = cylinder_lease(
+        descriptor.prefix,
+        descriptor.future.sector.bits,
+    )
+    return contract_connected_cylinder_under_lease(descriptor, lease)
+
+
 def fixed_sector_cylinder_effect(prefix, family):
-    resource = future_resource_sector(prefix.output_control, family.bits)
-    control = cylinder_input_control(prefix, resource)
-    if not (
-        pair_prefix_output_is_bound(prefix)
-        and family.prefix == prefix.output_control
-        and future_resource_sector_is_physical(resource)
-        and family.control == sector_control(prefix.output_control, family.bits)
-        and family.row_effect.control == family.control
-        and future_sector_family_is_physical(family)
-        and cylinder_input_control_is_physical(control)
-    ):
+    lease = cylinder_lease(prefix, family.bits)
+    if family != lease.family:
         raise ValueError("fixed-sector cylinder is not physically bound")
     branch_grams = []
     for left_second, right_second in family.outcome_keys:
@@ -2140,26 +2180,27 @@ def fixed_sector_cylinder_effect(prefix, family):
             left_second,
             right_second,
         )
-        gram = contract_connected_cylinder(
-            connected_cylinder_branch(prefix, future)
+        gram = contract_connected_cylinder_under_lease(
+            connected_cylinder_branch(prefix, future),
+            lease,
         )
         if not (
-            gram.control == control
+            gram.control == lease.control
             and gram.bits == family.bits
             and gram.intermediate_output == prefix.output_control
         ):
             raise ValueError("one actual M=L K Gram left its fixed sector")
         branch_grams.append(gram)
     branch_grams = tuple(branch_grams)
-    first = contract_imported_pair_factors(prefix.first).coefficient
+    first = lease.first_gram.coefficient
     summed_coefficient = sp.simplify(
         sum(gram.composite_coefficient for gram in branch_grams)
     )
     return FixedSectorCylinderEffect(
-        control,
+        lease.control,
         branch_grams,
-        OperatorEffect(control, summed_coefficient),
-        OperatorEffect(control, first),
+        OperatorEffect(lease.control, summed_coefficient),
+        OperatorEffect(lease.control, first),
     )
 
 
@@ -2219,7 +2260,7 @@ def fixed_sector_cylinder_instance(prefix, bits) -> bool:
     family = future_sector_family(prefix.output_control, bits)
     sector_effect = fixed_sector_cylinder_effect(prefix, family)
     branch_grams = sector_effect.branch_grams
-    fresh_first = contract_imported_pair_factors(prefix.first)
+    fresh_first = cylinder_lease(prefix, bits).first_gram
     return (
         family.coefficient_sum == 1
         and family.row_effect == OperatorEffect(family.control, 1)
@@ -2231,9 +2272,7 @@ def fixed_sector_cylinder_instance(prefix, bits) -> bool:
             and gram.bits == bits
             and gram.intermediate_output == prefix.output_control
             and gram.composite_coefficient
-            == sp.simplify(
-                gram.first_coefficient * gram.future_coefficient
-            )
+            == gram.first_coefficient * gram.future_coefficient
             for gram in branch_grams
         )
         and sp.simplify(

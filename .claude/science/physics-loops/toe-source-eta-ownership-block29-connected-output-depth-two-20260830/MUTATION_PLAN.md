@@ -42,7 +42,9 @@ The target must reject altered models that independently break:
 36. a duplicate/shadowed factor in the outer cylinder descriptor;
 37. replacement of the resource sector after a cylinder lease is issued; and
 38. replacement of the future operator control after a cylinder lease is
-    issued.
+    issued; and
+39. erasure of a routed future outcome label while its append target and
+    physical factors remain unchanged.
 
 Every mutation must be reported individually.  Surviving mutations make the
 corresponding positive certificate fail closed.

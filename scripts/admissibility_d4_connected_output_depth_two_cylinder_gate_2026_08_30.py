@@ -82,7 +82,7 @@ FROZEN = {
     "ASSUMPTIONS_AND_IMPORTS.md": "ba01782882018cabdc0ce0dab807eea9df11b34d9c56474df97385b7778aff88",
     "AUTHORITY_GATE.md": "1cc2aa1ad7f5839af0905a6123a73c7fe84e507e7c234b0146339bfcaea62d97",
     "GOAL.md": "81c55379f532eb95c3b4503886a665fbc1fc3ff85fa105250e9dc90ae69db1f4",
-    "MUTATION_PLAN.md": "669980b06b1aed466f78a566cd576abbbd6853ae07b7e77be74cb8d760f8350e",
+    "MUTATION_PLAN.md": "6efaaf5bfdb6424cc127bd2783f287fe1ae5d9a96f1df25d5d148bc703676d52",
     "NO_GO_DISCIPLINE_CHECKLIST.md": "e8d1a9b40a8e27f3a3c617a3bc2e8422e47ec1c84c7ad15c754b69a4aa6db757",
     "OPPORTUNITY_QUEUE.md": "7d14cea2f6aed350d7d830a5ce4723fc25323f108ecf3981e67a163daf8bb29b",
     "PANEL_RETURN.md": "c19b2c688ef2ded0a2873eaabcef32d8155a5812a309dd303f02fbfeaa24a912",
@@ -1388,6 +1388,18 @@ def contract_connected_future_branch(descriptor):
         and factors["outside_identity"] == "I_outside"
         and (descriptor.left_append is not None) == bool(use_left)
         and (descriptor.right_append is not None) == bool(use_right)
+        and descriptor.left_second
+        == (
+            descriptor.left_append.target
+            if descriptor.left_append is not None
+            else None
+        )
+        and descriptor.right_second
+        == (
+            descriptor.right_append.target
+            if descriptor.right_append is not None
+            else None
+        )
         and factors["merged_append_product"] == descriptor.embedded_product
         and embedded_append_product_is_physical(descriptor.embedded_product)
     ):
@@ -4485,6 +4497,20 @@ def changed_leased_future_control_mutation_is_rejected(prefix) -> bool:
     return False
 
 
+def erased_future_outcome_label_mutation_is_rejected(prefix) -> bool:
+    future = connected_future_branch(prefix, (1, 0), OUTCOMES[0], None)
+    # Preserve the physical append, merged product, factors, resource, and
+    # control while erasing only the public outcome label.  A contractor that
+    # authenticates the routed map but not its advertised outcome accepts this
+    # internally false descriptor.
+    mutant_future = replace(future, left_second=None)
+    try:
+        contract_connected_future_branch(mutant_future)
+    except (KeyError, ValueError):
+        return True
+    return False
+
+
 def mutation_rejections():
     prefix = pair_output_control(
         block28.LEFT_EXITS[0],
@@ -4682,6 +4708,9 @@ def mutation_rejections():
         "changed_leased_future_control_breaks_cylinder_binding": (
             changed_leased_future_control_mutation_is_rejected(prefix)
         ),
+        "erased_future_outcome_label_breaks_append_target_binding": (
+            erased_future_outcome_label_mutation_is_rejected(prefix)
+        ),
         "fresh_copy_breaks_actual_output_provenance": not descriptor_binding_is_physical(
             fresh_copy_descriptor
         ),
@@ -4803,7 +4832,7 @@ def main() -> int:
         )
     checks.check(
         "designated_mutations",
-        all(mutations.values()) and len(mutations) == 60,
+        all(mutations.values()) and len(mutations) == 61,
         f"rejected={sum(mutations.values())}/{len(mutations)}",
     )
     checks.check(

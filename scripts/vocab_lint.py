@@ -321,6 +321,7 @@ def main() -> int:
                 "logs/",                  # generated logs
                 ".git/",
                 ".claude/",
+                "archive/",               # work-history store: quotes historical PR titles verbatim (see archive/README.md)
             )
         ):
             continue

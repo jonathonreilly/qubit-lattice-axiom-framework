@@ -78,20 +78,21 @@ DIRECT_HASHES = {
 
 FROZEN = {
     "APPROACH_REGISTRY.md": "9c19f26a22c72e017048ed3c514117509fbd9990d49948f3b91f3b8fb3013237",
-    "ARTIFACT_PLAN.md": "87cc6fe9c452164737fab5c8c621d29b9c8f8f60ae88d25ad4ac5f44e95240b1",
+    "ARTIFACT_PLAN.md": "36cb1934470a790812bab78efac5acdedfc497476534b9a8275d42591aa4a3b4",
     "ASSUMPTIONS_AND_IMPORTS.md": "ba01782882018cabdc0ce0dab807eea9df11b34d9c56474df97385b7778aff88",
     "AUTHORITY_GATE.md": "1cc2aa1ad7f5839af0905a6123a73c7fe84e507e7c234b0146339bfcaea62d97",
     "GOAL.md": "81c55379f532eb95c3b4503886a665fbc1fc3ff85fa105250e9dc90ae69db1f4",
     "MUTATION_PLAN.md": "ed0c0796b4601bb047076e403a109f71c654f0670246b84b83548b4c641ab3f2",
     "NO_GO_DISCIPLINE_CHECKLIST.md": "e8d1a9b40a8e27f3a3c617a3bc2e8422e47ec1c84c7ad15c754b69a4aa6db757",
-    "OPPORTUNITY_QUEUE.md": "fdb5ed0e44c7c9f3bc96a645b4cf797695e2c1cb8f19620bac9193531d9fef94",
+    "OPPORTUNITY_QUEUE.md": "7d14cea2f6aed350d7d830a5ce4723fc25323f108ecf3981e67a163daf8bb29b",
     "PANEL_RETURN.md": "c19b2c688ef2ded0a2873eaabcef32d8155a5812a309dd303f02fbfeaa24a912",
     "PREFLIGHT_WITNESSES.md": "6d1ecd6535814ffe9c51bb259aa5224739d35a2f1bd10b9db82901434d724047",
     "PREREG_AMENDMENT_PAIR_PREFIX_PHYSICAL.md": "41e9ddfaa8cf0be77e9637cb9915a91254ccb7df8ea9275f78728ba2ea05c3e9",
+    "PREREG_AMENDMENT_OPERATOR_COMPOSITION.md": "aed103ec4bb939c757fa0e1a1b7e734f52636f9117e016358d5409d7892c5bbd",
     "ROUTE_PORTFOLIO.md": "dd1af4cbe522d48ac243e832fc9ffa3ea18165f00f68aad0cc3d9b22f957f5c3",
-    "STATE.yaml": "931e075cf06885dd0c5e9708d854d24bcddef265e174535160dbd8c5f630eeca",
+    "STATE.yaml": "2fb752f29dc48cf24d80a1c5000bb8857568ba931fc89a6baba7d980dafdf7c7",
     "TOE_LANE_UPDATE.md": "5e4da994e4dc31c54479838f086134e78d25910928e870e3a9376dc40f082d03",
-    "TRACE_GATE.md": "bcddd8dd4998a65667f8312f4954b83855ad46ecba4a60b21bef36df82eea1e6",
+    "TRACE_GATE.md": "10f4882df9b701b287fd9b55c418b5551bf4f7cf50e8ead366820d4ecabdcc64",
 }
 
 # The content-bound cache wrapper parses this literal tuple.
@@ -114,6 +115,7 @@ AUDIT_INPUT_PATHS = (
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/PANEL_RETURN.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/PREFLIGHT_WITNESSES.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/PREREG_AMENDMENT_PAIR_PREFIX_PHYSICAL.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/PREREG_AMENDMENT_OPERATOR_COMPOSITION.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/ROUTE_PORTFOLIO.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/STATE.yaml",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/TOE_LANE_UPDATE.md",
@@ -132,6 +134,14 @@ LEFT = "left"
 RIGHT = "right"
 ARMS = (LEFT, RIGHT)
 LAMBDAS = (sp.S.Zero, sp.Rational(1, 2))
+
+
+def coordinate_sort_key(center):
+    return tuple(sp.srepr(sp.sympify(value)) for value in center)
+
+
+def sorted_centers(centers):
+    return tuple(sorted(tuple(centers), key=coordinate_sort_key))
 
 
 def file_sha256(path: Path) -> str:
@@ -201,14 +211,29 @@ def state_controlled_centers():
 
 
 @lru_cache(maxsize=1)
-def full_literal_centers():
+def first_pair_literal_centers():
+    centers = {block28.Y_LEFT, block28.Y_RIGHT}
+    centers.update(block24.candidate_centers(block28.Y_LEFT).values())
+    centers.update(block24.candidate_centers(block28.Y_RIGHT).values())
+    return sorted_centers(centers)
+
+
+@lru_cache(maxsize=1)
+def future_literal_centers():
     centers = set(block28.PAIR_CENTERS)
     for arm in ARMS:
         for exit_front in arm_exits(arm):
             centers.update(
                 block24.candidate_centers(first_center(arm, exit_front)).values()
             )
-    return tuple(sorted(centers))
+    return sorted_centers(centers)
+
+
+@lru_cache(maxsize=1)
+def full_literal_centers():
+    return sorted_centers(
+        set(first_pair_literal_centers()) | set(future_literal_centers())
+    )
 
 
 def all_blocks_disjoint(centers):
@@ -221,6 +246,8 @@ def all_blocks_disjoint(centers):
 
 def geometry_certificate(mutation=None) -> bool:
     controlled = list(state_controlled_centers())
+    first = list(first_pair_literal_centers())
+    future = list(future_literal_centers())
     full = list(full_literal_centers())
     selected = [
         selected_future_center(arm, exit_front)
@@ -234,7 +261,7 @@ def geometry_certificate(mutation=None) -> bool:
     if mutation == "shift_future_into_first":
         selected[0] = block28.PAIR_CENTERS[0]
     selected_blocks = tuple(block28.block_sites(center) for center in selected)
-    first_blocks = tuple(block28.block_sites(center) for center in block28.PAIR_CENTERS)
+    first_blocks = tuple(block28.block_sites(center) for center in first)
     spectator_only = (
         set(full_literal_centers())
         - set(block28.PAIR_CENTERS)
@@ -242,17 +269,22 @@ def geometry_certificate(mutation=None) -> bool:
     )
     return (
         len(controlled) == len(set(controlled)) == 18
-        and len(full) == len(set(full)) == 34
+        and len(first) == len(set(first)) == 12
+        and len(future) == len(set(future)) == 34
+        and len(full) == len(set(full)) == 36
         and len(selected) == len(set(selected)) == 8
-        and len(spectator_only) == 16
+        and len(spectator_only) == 18
         and all_blocks_disjoint(controlled)
+        and all_blocks_disjoint(first)
+        and all_blocks_disjoint(future)
         and all_blocks_disjoint(full)
         and all(
             selected_block.isdisjoint(first_block)
             for selected_block in selected_blocks
             for first_block in first_blocks
         )
-        and len(set().union(*(block28.block_sites(c) for c in full))) == 1088
+        and len(set().union(*(block28.block_sites(c) for c in future))) == 1088
+        and len(set().union(*(block28.block_sites(c) for c in full))) == 1152
     )
 
 
@@ -367,39 +399,6 @@ def transition_table_certificate(mutation=None) -> bool:
         len(entries) == 196
         and all(value.is_real is True and value.is_positive is True for value in entries)
         and all(value == 1 for value in rows.values())
-    )
-
-
-def reduce_projectors(expression, symbols):
-    result = sp.expand(expression)
-    for symbol in symbols:
-        result = block23.projector_reduce(result, symbol)
-    return sp.expand(result)
-
-
-def binary_sectors(left_symbol, right_symbol):
-    return {
-        (0, 0): (1 - left_symbol) * (1 - right_symbol),
-        (1, 0): left_symbol * (1 - right_symbol),
-        (0, 1): (1 - left_symbol) * right_symbol,
-        (1, 1): left_symbol * right_symbol,
-    }
-
-
-def sector_partition_certificate(sectors, symbols, mutation=None):
-    values = dict(sectors)
-    if mutation == "drop_sector":
-        values.pop((0, 0))
-    if mutation == "duplicate_sector":
-        values[(0, 1)] = values[(1, 0)]
-    return (
-        reduce_projectors(sum(values.values()), symbols) == 1
-        and all(
-            reduce_projectors(left * right, symbols) == 0
-            for left_key, left in values.items()
-            for right_key, right in values.items()
-            if left_key != right_key
-        )
     )
 
 
@@ -541,18 +540,131 @@ def output_control_at_center(control, center):
 
 
 @dataclass(frozen=True)
-class BlankProjector:
+class LocalProjector:
     center: tuple
+    algebra: str
     state: object
-    operator_form: str
+    sense: str
+
+
+@dataclass(frozen=True)
+class TensorProjector:
+    carrier_centers: tuple
+    atoms: tuple[LocalProjector, ...]
+
+
+@dataclass(frozen=True)
+class OrthogonalProjectorSum:
+    carrier_centers: tuple
+    terms: tuple[TensorProjector, ...]
+
+
+def local_projector_is_physical(atom) -> bool:
+    if atom.algebra == "pointer26":
+        return (
+            atom.sense == "ket"
+            and isinstance(atom.state, tuple)
+            and len(atom.state) == len(block23.POINTER_ORDER) == 26
+            and set(atom.state) <= {0, 1}
+        )
+    if atom.algebra == "block32":
+        return (
+            atom.sense in ("ket", "complement")
+            and atom.state == block23.BLANK_BLOCK
+        )
+    return False
+
+
+def local_projector_rank(atom):
+    if not local_projector_is_physical(atom):
+        raise ValueError("local projector is not physical")
+    if atom.algebra == "pointer26":
+        return 2 ** len(block23.DIRECTIONS)
+    return 1 if atom.sense == "ket" else 2 ** len(block23.SUPPORT) - 1
+
+
+def local_projectors_orthogonal(left, right) -> bool:
+    if left.center != right.center:
+        return False
+    if left.algebra != right.algebra:
+        raise ValueError("incompatible local projector algebras")
+    if left.algebra == "pointer26":
+        return block23.pointer_overlap(left.state, right.state) == 0
+    if left.state != right.state:
+        raise ValueError("Block29 only binds complements of the exact Blank block")
+    return left.sense != right.sense
+
+
+def make_tensor_projector(atoms):
+    atoms = tuple(
+        sorted(
+            tuple(atoms),
+            key=lambda atom: (coordinate_sort_key(atom.center), atom.algebra),
+        )
+    )
+    if len({(atom.center, atom.algebra) for atom in atoms}) != len(atoms):
+        raise ValueError("tensor projector has duplicate local algebras")
+    return TensorProjector(
+        sorted_centers({atom.center for atom in atoms}),
+        atoms,
+    )
+
+
+def tensor_projector_is_physical(projector) -> bool:
+    return (
+        projector == make_tensor_projector(projector.atoms)
+        and projector.carrier_centers
+        == sorted_centers({atom.center for atom in projector.atoms})
+        and all(local_projector_is_physical(atom) for atom in projector.atoms)
+    )
+
+
+def tensor_projector_rank(projector):
+    if not tensor_projector_is_physical(projector):
+        raise ValueError("tensor projector is not physical")
+    return sp.prod(local_projector_rank(atom) for atom in projector.atoms)
+
+
+def tensor_projectors_orthogonal(left, right) -> bool:
+    left_by_key = {(atom.center, atom.algebra): atom for atom in left.atoms}
+    right_by_key = {(atom.center, atom.algebra): atom for atom in right.atoms}
+    return any(
+        local_projectors_orthogonal(left_by_key[key], right_by_key[key])
+        for key in set(left_by_key) & set(right_by_key)
+    )
+
+
+def output_tensor_projector(control):
+    return make_tensor_projector(
+        LocalProjector(atom.center, "pointer26", atom.word, "ket")
+        for atom in control.atoms
+    )
+
+
+def output_projector_is_physical(control) -> bool:
+    projector = output_tensor_projector(control)
+    return (
+        output_control_is_physical(control)
+        and tensor_projector_is_physical(projector)
+        and len(projector.atoms) == 8
+        and tensor_projector_rank(projector) == 2 ** 48
+    )
 
 
 @dataclass(frozen=True)
 class FutureResourceSector:
     prefix: PairOutputControl
     bits: tuple
-    left_blank: BlankProjector
-    right_blank: BlankProjector
+    left: LocalProjector
+    right: LocalProjector
+    projector: TensorProjector
+
+
+@dataclass(frozen=True)
+class SectorControl:
+    prefix: PairOutputControl
+    resource: FutureResourceSector
+    projector: TensorProjector
 
 
 @lru_cache(maxsize=None)
@@ -561,62 +673,102 @@ def future_resource_sector(prefix, bits, mutation=None):
     right_center = selected_future_center(RIGHT, prefix.right_exit)
     if mutation == "shared_future_center":
         right_center = left_center
+    left_sense = "ket" if bits[0] else "complement"
+    right_sense = "ket" if bits[1] else "complement"
+    if mutation == "wrong_left_sense":
+        left_sense = "complement" if bits[0] else "ket"
+    left = LocalProjector(
+        left_center, "block32", block23.BLANK_BLOCK, left_sense
+    )
+    right = LocalProjector(
+        right_center, "block32", block23.BLANK_BLOCK, right_sense
+    )
     return FutureResourceSector(
         prefix,
         bits,
-        BlankProjector(left_center, block23.BLANK_BLOCK, "B_blank"),
-        BlankProjector(right_center, block23.BLANK_BLOCK, "B_blank"),
+        left,
+        right,
+        make_tensor_projector((left, right)),
     )
 
 
 @lru_cache(maxsize=None)
 def future_resource_sector_is_physical(sector) -> bool:
     first_blocks = tuple(
-        block28.block_sites(center) for center in block28.PAIR_CENTERS
+        block28.block_sites(center) for center in first_pair_literal_centers()
     )
-    left_block = block28.block_sites(sector.left_blank.center)
-    right_block = block28.block_sites(sector.right_blank.center)
+    left_block = block28.block_sites(sector.left.center)
+    right_block = block28.block_sites(sector.right.center)
     return (
         sector.bits in RESOURCE_BITS
-        and output_control_is_physical(sector.prefix)
-        and sector.left_blank.center
+        and output_projector_is_physical(sector.prefix)
+        and sector.left.center
         == selected_future_center(LEFT, sector.prefix.left_exit)
-        and sector.right_blank.center
+        and sector.right.center
         == selected_future_center(RIGHT, sector.prefix.right_exit)
-        and sector.left_blank.state
-        == sector.right_blank.state
+        and sector.left.state
+        == sector.right.state
         == block23.BLANK_BLOCK
-        and sector.left_blank.operator_form
-        == sector.right_blank.operator_form
-        == "B_blank"
-        and block23.block_overlap(block23.BLANK_BLOCK, block23.BLANK_BLOCK) == 1
+        and sector.left.sense == ("ket" if sector.bits[0] else "complement")
+        and sector.right.sense == ("ket" if sector.bits[1] else "complement")
+        and sector.projector == make_tensor_projector((sector.left, sector.right))
+        and tensor_projector_is_physical(sector.projector)
         and left_block.isdisjoint(right_block)
         and all(left_block.isdisjoint(block) for block in first_blocks)
         and all(right_block.isdisjoint(block) for block in first_blocks)
     )
 
 
-def resource_sector_polynomial(bits, left_blank, right_blank):
+def sector_control(prefix, bits, mutation=None):
+    resource = future_resource_sector(prefix, bits, mutation)
+    projector = make_tensor_projector(
+        output_tensor_projector(prefix).atoms + resource.projector.atoms
+    )
+    return SectorControl(prefix, resource, projector)
+
+
+def sector_control_is_physical(control) -> bool:
+    expected = make_tensor_projector(
+        output_tensor_projector(control.prefix).atoms
+        + control.resource.projector.atoms
+    )
     return (
-        (left_blank if bits[0] else 1 - left_blank)
-        * (right_blank if bits[1] else 1 - right_blank)
+        output_projector_is_physical(control.prefix)
+        and future_resource_sector_is_physical(control.resource)
+        and control.resource.prefix == control.prefix
+        and control.projector == expected
+        and tensor_projector_is_physical(control.projector)
+        and len(control.projector.atoms) == 10
     )
 
 
+@lru_cache(maxsize=None)
 def resource_partition_certificate(prefix, mutation=None) -> bool:
-    left_blank, right_blank = sp.symbols("B_L B_R", commutative=True)
-    sectors = {
-        bits: resource_sector_polynomial(bits, left_blank, right_blank)
-        for bits in RESOURCE_BITS
-    }
-    physical = tuple(future_resource_sector(prefix, bits) for bits in RESOURCE_BITS)
+    sectors = [future_resource_sector(prefix, bits) for bits in RESOURCE_BITS]
     if mutation == "duplicate_resource_sector":
-        sectors[(1, 1)] = sectors[(1, 0)]
+        sectors[-1] = sectors[1]
+    sectors = tuple(sectors)
+    expected_ranks = {
+        (0, 0): (2**32 - 1) ** 2,
+        (1, 0): 2**32 - 1,
+        (0, 1): 2**32 - 1,
+        (1, 1): 1,
+    }
     return (
-        all(future_resource_sector_is_physical(sector) for sector in physical)
-        and sector_partition_certificate(
-            sectors, (left_blank, right_blank)
+        len(sectors) == len(set(sectors)) == 4
+        and {sector.bits for sector in sectors} == set(RESOURCE_BITS)
+        and all(future_resource_sector_is_physical(sector) for sector in sectors)
+        and all(
+            tensor_projectors_orthogonal(left.projector, right.projector)
+            for index, left in enumerate(sectors)
+            for right in sectors[:index]
         )
+        and all(
+            tensor_projector_rank(sector.projector) == expected_ranks[sector.bits]
+            for sector in sectors
+        )
+        and sum(tensor_projector_rank(sector.projector) for sector in sectors)
+        == 2**64
     )
 
 
@@ -705,51 +857,187 @@ def append_product_compatibility_certificate() -> bool:
 
 
 @dataclass(frozen=True)
-class EmbeddedAppendProduct:
-    left: object
-    right: object
-    unique_carrier_centers: tuple
-    shared_resolutions: tuple
+class BlockAction:
+    center: tuple
+    role: str
+    factors: tuple
 
 
-def embedded_append_product(left, right):
-    if not append_product_compatibility(left, right):
-        raise ValueError("append factors do not admit an embedded product")
-    left_nonidentity = {left.anchor, left.forward_center}
-    right_nonidentity = {right.anchor, right.forward_center}
-    overlap = append_carrier_centers(left) & append_carrier_centers(right)
-    resolutions = []
-    for center in sorted(overlap):
-        if center in left_nonidentity:
-            resolutions.append((center, "left-physical", "right-I_2-collapsed"))
-        elif center in right_nonidentity:
-            resolutions.append((center, "left-I_2-collapsed", "right-physical"))
+@dataclass(frozen=True)
+class MergedBlockAction:
+    center: tuple
+    role: str
+    owner: str
+    factors: tuple
+    sources: tuple
+
+
+def append_block_actions(branch):
+    if not (
+        block24.append_factorization_is_physical(branch)
+        and block24.branch_effect_is_recontracted(branch)
+    ):
+        raise ValueError("append factors are not physical")
+    data = block24.factor_dictionary(branch.factors)
+    actions = [
+        BlockAction(
+            branch.anchor,
+            "current",
+            (
+                ("live", data["current_live_identities"]),
+                ("pointer", data["current_pointer_projectors"]),
+            ),
+        ),
+        BlockAction(
+            branch.forward_center,
+            "forward",
+            (
+                ("live_prep", data["forward_live_prep_maps"]),
+                ("pointer_prep", data["forward_pointer_prep_maps"]),
+                ("root", data["forward_live_root"]),
+                ("writer", data["forward_writer_pointer_maps"]),
+            ),
+        ),
+    ]
+    for center in data["spectator_identity_centers"]:
+        factors = tuple(
+            (site, operator)
+            for candidate, site, operator in data["spectator_identity_factors"]
+            if candidate == center
+        )
+        if (
+            len(factors) != len(block23.SUPPORT) == 32
+            or {site for site, _operator in factors} != set(block23.SUPPORT)
+            or any(operator != "I_2" for _site, operator in factors)
+        ):
+            raise ValueError("spectator is not one complete block identity")
+        actions.append(BlockAction(center, "identity", factors))
+    actions = tuple(sorted(actions, key=lambda action: coordinate_sort_key(action.center)))
+    if (
+        len(actions) != 7
+        or len({action.center for action in actions}) != 7
+        or {action.center for action in actions} != append_carrier_centers(branch)
+    ):
+        raise ValueError("append block-action expansion is not complete")
+    return actions
+
+
+def merge_append_actions(left, right, mutation=None):
+    arms = tuple(
+        (name, branch)
+        for name, branch in ((LEFT, left), (RIGHT, right))
+        if branch is not None
+    )
+    if not arms:
+        return ()
+    if len(arms) == 2 and not append_product_compatibility(left, right):
+        raise ValueError("append products are not compatible")
+    action_maps = {
+        name: {action.center: action for action in append_block_actions(branch)}
+        for name, branch in arms
+    }
+    centers = sorted_centers(
+        set().union(*(set(actions) for actions in action_maps.values()))
+    )
+    merged = []
+    for center in centers:
+        sources = tuple(
+            (name, action_maps[name][center])
+            for name, _branch in arms
+            if center in action_maps[name]
+        )
+        physical = tuple(entry for entry in sources if entry[1].role != "identity")
+        if len(physical) > 1:
+            raise ValueError("two physical append actions share one block")
+        if physical:
+            owner, selected = physical[0]
         else:
-            resolutions.append((center, "shared-I_2-collapsed"))
+            owner = "shared" if len(sources) == 2 else sources[0][0]
+            selected = sources[0][1]
+            if any(source.factors != selected.factors for _name, source in sources):
+                raise ValueError("shared identities are not identical")
+        merged.append(
+            MergedBlockAction(
+                center,
+                selected.role,
+                owner,
+                selected.factors,
+                sources,
+            )
+        )
+    if mutation == "same_count_wrong_center" and merged:
+        merged[-1] = replace(merged[-1], center=block23.add(merged[-1].center, E1))
+    if mutation == "swap_shared_owner":
+        index = next(
+            index
+            for index, action in enumerate(merged)
+            if len(action.sources) == 2 and action.owner in ARMS
+        )
+        action = merged[index]
+        merged[index] = replace(
+            action, owner=RIGHT if action.owner == LEFT else LEFT
+        )
+    return tuple(merged)
+
+
+@dataclass(frozen=True)
+class EmbeddedAppendProduct:
+    left: object | None
+    right: object | None
+    carrier_centers: tuple
+    actions: tuple[MergedBlockAction, ...]
+    outside_identity: str
+
+
+def embedded_append_product(left, right, mutation=None):
+    actions = merge_append_actions(left, right, mutation)
     return EmbeddedAppendProduct(
         left,
         right,
-        tuple(sorted(append_carrier_centers(left) | append_carrier_centers(right))),
-        tuple(resolutions),
+        tuple(action.center for action in actions),
+        actions,
+        "I_outside",
     )
 
 
 def embedded_append_product_is_physical(product) -> bool:
-    overlap = append_carrier_centers(product.left) & append_carrier_centers(
-        product.right
-    )
+    try:
+        expected = merge_append_actions(product.left, product.right)
+    except (KeyError, StopIteration, ValueError):
+        return False
+    branches = tuple(branch for branch in (product.left, product.right) if branch)
+    expected_centers = set().union(
+        *(append_carrier_centers(branch) for branch in branches)
+    ) if branches else set()
+    reconstructed = {
+        name: {
+            action.center: action
+            for merged in product.actions
+            for source_name, action in merged.sources
+            if source_name == name
+        }
+        for name, branch in ((LEFT, product.left), (RIGHT, product.right))
+        if branch is not None
+    }
     return (
-        append_product_compatibility(product.left, product.right)
-        and len(product.unique_carrier_centers)
-        == len(append_carrier_centers(product.left) | append_carrier_centers(product.right))
-        and len(product.shared_resolutions) == len(overlap)
-        and {entry[0] for entry in product.shared_resolutions} == overlap
+        product.actions == expected
+        and product.carrier_centers == sorted_centers(expected_centers)
+        and tuple(action.center for action in product.actions)
+        == product.carrier_centers
+        and len(product.carrier_centers) == len(set(product.carrier_centers))
         and all(
-            "collapsed" in role
-            for entry in product.shared_resolutions
-            for role in entry[1:]
-            if role != "left-physical" and role != "right-physical"
+            tuple(
+                sorted(
+                    actions.values(),
+                    key=lambda action: coordinate_sort_key(action.center),
+                )
+            )
+            == append_block_actions(branch)
+            for name, branch in ((LEFT, product.left), (RIGHT, product.right))
+            if branch is not None
+            for actions in (reconstructed[name],)
         )
+        and product.outside_identity == "I_outside"
     )
 
 
@@ -757,6 +1045,7 @@ def embedded_append_product_is_physical(product) -> bool:
 class ConnectedFutureBranch:
     prefix: PairOutputControl
     sector: FutureResourceSector
+    control: SectorControl
     left_second: tuple | None
     right_second: tuple | None
     left_append: object | None
@@ -767,11 +1056,18 @@ class ConnectedFutureBranch:
 
 @dataclass(frozen=True)
 class ConnectedFutureGram:
-    prefix: PairOutputControl
-    bits: tuple
+    control: SectorControl
     coefficient: object
     output_records: tuple
     debit: int
+
+    @property
+    def prefix(self):
+        return self.control.prefix
+
+    @property
+    def bits(self):
+        return self.control.resource.bits
 
 
 def connected_future_branch(
@@ -800,32 +1096,35 @@ def connected_future_branch(
         right_append = None
     if mutation == "swap_D10_arm" and bits == (1, 0):
         right_append, left_append = left_append, None
-    sector = future_resource_sector(prefix, bits)
-    embedded = (
-        embedded_append_product(left_append, right_append)
-        if left_append is not None and right_append is not None
-        else None
+    if mutation == "attach_extra_right" and bits == (1, 0):
+        right_append = connected_append_descriptor(
+            RIGHT,
+            prefix.right_exit,
+            prefix.right_first,
+            OUTCOMES[0],
+        ).append
+    sector = future_resource_sector(
+        prefix,
+        bits,
+        "wrong_left_sense" if mutation == "wrong_resource_sense" else None,
     )
+    control = SectorControl(
+        prefix,
+        sector,
+        make_tensor_projector(
+            output_tensor_projector(prefix).atoms + sector.projector.atoms
+        ),
+    )
+    embedded = embedded_append_product(left_append, right_append)
     factorization = (
-        ("output_control", prefix.atoms),
-        ("left_blank_projector", sector.left_blank),
-        ("left_resource", "B" if use_left else "I-B"),
-        ("right_blank_projector", sector.right_blank),
-        ("right_resource", "B" if use_right else "I-B"),
-        (
-            "left_append_factors",
-            None if left_append is None else left_append.factors,
-        ),
-        (
-            "right_append_factors",
-            None if right_append is None else right_append.factors,
-        ),
-        ("embedded_append_product", embedded),
+        ("sector_control", control),
+        ("merged_append_product", embedded),
         ("outside_identity", "I_outside"),
     )
     return ConnectedFutureBranch(
         prefix,
         sector,
+        control,
         left_second,
         right_second,
         left_append,
@@ -862,31 +1161,28 @@ def future_append_is_bound(prefix, arm, append) -> bool:
 def contract_connected_future_branch(descriptor):
     factors = dict(descriptor.factorization)
     if tuple(factors) != (
-        "output_control",
-        "left_blank_projector",
-        "left_resource",
-        "right_blank_projector",
-        "right_resource",
-        "left_append_factors",
-        "right_append_factors",
-        "embedded_append_product",
+        "sector_control",
+        "merged_append_product",
         "outside_identity",
     ):
         raise ValueError("future factorization is incomplete")
     use_left, use_right = descriptor.sector.bits
     if not (
-        output_control_is_physical(descriptor.prefix)
+        sector_control_is_physical(descriptor.control)
+        and descriptor.control.prefix == descriptor.prefix
+        and descriptor.control.resource == descriptor.sector
         and future_resource_sector_is_physical(descriptor.sector)
         and descriptor.sector.prefix == descriptor.prefix
-        and factors["output_control"] == descriptor.prefix.atoms
-        and factors["left_blank_projector"] == descriptor.sector.left_blank
-        and factors["left_resource"] == ("B" if use_left else "I-B")
-        and factors["right_blank_projector"] == descriptor.sector.right_blank
-        and factors["right_resource"] == ("B" if use_right else "I-B")
+        and factors["sector_control"] == descriptor.control
+        and descriptor.sector.left.sense
+        == ("ket" if use_left else "complement")
+        and descriptor.sector.right.sense
+        == ("ket" if use_right else "complement")
         and factors["outside_identity"] == "I_outside"
         and (descriptor.left_append is not None) == bool(use_left)
         and (descriptor.right_append is not None) == bool(use_right)
-        and factors["embedded_append_product"] == descriptor.embedded_product
+        and factors["merged_append_product"] == descriptor.embedded_product
+        and embedded_append_product_is_physical(descriptor.embedded_product)
     ):
         raise ValueError("future control is not bound to routed factors")
     appends = []
@@ -904,24 +1200,15 @@ def contract_connected_future_branch(descriptor):
         appends.append(descriptor.right_append)
     if len(appends) == 2 and not append_product_compatibility(*appends):
         raise ValueError("two-arm append product is incompatible")
-    if len(appends) == 2 and not embedded_append_product_is_physical(
-        descriptor.embedded_product
+    if descriptor.embedded_product.left != descriptor.left_append or (
+        descriptor.embedded_product.right != descriptor.right_append
     ):
-        raise ValueError("two-arm identities were not collapsed physically")
-    if len(appends) != 2 and descriptor.embedded_product is not None:
-        raise ValueError("singleton future branch has a fake product descriptor")
-    if factors["left_append_factors"] != (
-        None if descriptor.left_append is None else descriptor.left_append.factors
-    ) or factors["right_append_factors"] != (
-        None if descriptor.right_append is None else descriptor.right_append.factors
-    ):
-        raise ValueError("stored append factors do not match routed branches")
+        raise ValueError("merged append product is not the routed branch product")
     effects = tuple(
         block24.contract_append_effect(append.factors) for append in appends
     )
     return ConnectedFutureGram(
-        descriptor.prefix,
-        descriptor.sector.bits,
+        descriptor.control,
         sp.simplify(sp.prod(effect.scalar for effect in effects)),
         tuple(
             (
@@ -935,14 +1222,26 @@ def contract_connected_future_branch(descriptor):
 
 
 @dataclass(frozen=True)
+class OperatorEffect:
+    control: object
+    coefficient: object
+
+
+@dataclass(frozen=True)
 class FutureSectorFamily:
     prefix: PairOutputControl
     bits: tuple
+    control: SectorControl
     left_axis: tuple
     right_axis: tuple
+    outcome_keys: tuple
     branch_count: int
-    coefficient_sum: object
+    row_effect: OperatorEffect
     debit: int
+
+    @property
+    def coefficient_sum(self):
+        return self.row_effect.coefficient
 
 
 @lru_cache(maxsize=None)
@@ -966,6 +1265,7 @@ def future_sector_family(prefix, bits, mutation=None):
             left_axis = left_axis[:-1]
         elif right_axis:
             right_axis = right_axis[:-1]
+    control = sector_control(prefix, bits)
     left_sum = sp.simplify(sum(branch.effect.scalar for branch in left_axis))
     right_sum = sp.simplify(sum(branch.effect.scalar for branch in right_axis))
     coefficient_sum = (
@@ -975,13 +1275,18 @@ def future_sector_family(prefix, bits, mutation=None):
     branch_count = (len(left_axis) if bits[0] else 1) * (
         len(right_axis) if bits[1] else 1
     )
+    left_keys = tuple(branch.target for branch in left_axis) if bits[0] else (None,)
+    right_keys = tuple(branch.target for branch in right_axis) if bits[1] else (None,)
+    outcome_keys = tuple(itertools.product(left_keys, right_keys))
     return FutureSectorFamily(
         prefix,
         bits,
+        control,
         left_axis,
         right_axis,
+        outcome_keys,
         branch_count,
-        sp.simplify(coefficient_sum),
+        OperatorEffect(control, sp.simplify(coefficient_sum)),
         sum(bits),
     )
 
@@ -999,7 +1304,9 @@ def future_sector_family_is_physical(family) -> bool:
     except (KeyError, ValueError):
         return False
     return (
-        future_resource_sector_is_physical(representative.sector)
+        sector_control_is_physical(family.control)
+        and family.control == sector_control(family.prefix, family.bits)
+        and future_resource_sector_is_physical(representative.sector)
         and all(
             future_append_is_bound(family.prefix, LEFT, branch)
             for branch in family.left_axis
@@ -1009,33 +1316,161 @@ def future_sector_family_is_physical(family) -> bool:
             for branch in family.right_axis
         )
         and family.branch_count == expected_count[family.bits]
+        and len(family.outcome_keys) == len(set(family.outcome_keys))
+        == family.branch_count
+        and family.outcome_keys
+        == tuple(
+            itertools.product(
+                OUTCOMES if family.bits[0] else (None,),
+                OUTCOMES if family.bits[1] else (None,),
+            )
+        )
         and family.coefficient_sum == 1
+        and family.row_effect == OperatorEffect(family.control, 1)
         and family.debit == sum(family.bits)
-        and gram.bits == family.bits
+        and gram.control == family.control
         and gram.debit == family.debit
     )
 
 
 @dataclass(frozen=True)
+class FutureActiveSum:
+    output_active: PairOutputActiveSum
+    sector_rows: tuple[OperatorEffect, ...]
+    projector: OrthogonalProjectorSum
+
+
+@dataclass(frozen=True)
+class ProjectorComplement:
+    carrier_centers: tuple
+    subtrahend: OrthogonalProjectorSum
+
+
+@dataclass(frozen=True)
 class PairFutureStop:
-    active: PairOutputActiveSum
-    operator_form: str = "I-P_pair_output"
+    active: FutureActiveSum
+    kraus: ProjectorComplement
 
 
-def future_stop_completion_certificate(active, stop_present=True) -> bool:
-    stop = PairFutureStop(active) if stop_present else None
-    if not (
+@lru_cache(maxsize=1)
+def future_active_sum(active):
+    rows = tuple(
+        future_sector_family(prefix, bits).row_effect
+        for prefix in active.controls
+        for bits in RESOURCE_BITS
+    )
+    output_terms = tuple(output_tensor_projector(control) for control in active.controls)
+    projector = OrthogonalProjectorSum(
+        sorted_centers(FIRST_OUTPUT_CENTERS),
+        output_terms,
+    )
+    return FutureActiveSum(active, rows, projector)
+
+
+def future_active_sum_is_physical(active_sum) -> bool:
+    active = active_sum.output_active
+    expected_keys = tuple(
+        (prefix.key, bits)
+        for prefix in active.controls
+        for bits in RESOURCE_BITS
+    )
+    actual_keys = tuple(
+        (row.control.prefix.key, row.control.resource.bits)
+        for row in active_sum.sector_rows
+    )
+    expected_projector = OrthogonalProjectorSum(
+        sorted_centers(FIRST_OUTPUT_CENTERS),
+        tuple(output_tensor_projector(control) for control in active.controls),
+    )
+    return (
         active.idempotent
         and active.complement_nontrivial
-        and stop is not None
-        and stop.active == active
-        and stop.operator_form == "I-P_pair_output"
+        and len(active.controls) == 3136
+        and len(active_sum.sector_rows) == 12544
+        and actual_keys == expected_keys
+        and len(actual_keys) == len(set(actual_keys))
+        and all(row.coefficient == 1 for row in active_sum.sector_rows)
+        and all(sector_control_is_physical(row.control) for row in active_sum.sector_rows)
+        and all(resource_partition_certificate(prefix) for prefix in active.controls)
+        and all(
+            future_sector_family_is_physical(
+                future_sector_family(prefix, bits)
+            )
+            for prefix in active.controls
+            for bits in RESOURCE_BITS
+        )
+        and active_sum.projector == expected_projector
+        and len(active_sum.projector.terms) == 3136
+        and all(tensor_projector_is_physical(term) for term in active_sum.projector.terms)
+    )
+
+
+def make_future_stop(active_sum, mutation=None):
+    subtrahend = active_sum.projector
+    if mutation == "stale_active_projector":
+        subtrahend = replace(
+            subtrahend,
+            terms=subtrahend.terms[:-1],
+        )
+    return PairFutureStop(
+        active_sum,
+        ProjectorComplement(sorted_centers(FIRST_OUTPUT_CENTERS), subtrahend),
+    )
+
+
+def contract_future_stop(stop):
+    if not (
+        future_active_sum_is_physical(stop.active)
+        and stop.kraus.carrier_centers == sorted_centers(FIRST_OUTPUT_CENTERS)
+        and stop.kraus.subtrahend == stop.active.projector
     ):
+        raise ValueError("future STOP is not bound to the actual active sum")
+    return stop.kraus
+
+
+def future_completion_is_pointwise_identity(active_sum, complement) -> bool:
+    if complement.subtrahend != active_sum.projector:
         return False
-    p_out = sp.symbols("P_pair_output", commutative=True)
-    stop_gram = block23.projector_reduce((1 - p_out) ** 2, p_out)
-    total_gram = block23.projector_reduce(p_out + stop_gram, p_out)
-    return stop_gram == 1 - p_out and total_gram == 1
+    active_terms = set(active_sum.projector.terms)
+    active_witnesses = tuple(
+        output_tensor_projector(control)
+        for control in active_sum.output_active.controls
+    )
+    outside_control = make_tensor_projector(
+        LocalProjector(center, "pointer26", block23.BLANK_POINTER, "ket")
+        for center in FIRST_OUTPUT_CENTERS
+    )
+    return (
+        set(active_witnesses) == active_terms
+        and all(
+            int(witness in active_terms) + int(witness not in active_terms) == 1
+            for witness in active_witnesses
+        )
+        and outside_control not in active_terms
+        and 0 + 1 == 1
+    )
+
+
+def future_stop_completion_certificate(
+    active, stop_present=True, mutation=None
+) -> bool:
+    active_sum = future_active_sum(active)
+    stop = make_future_stop(active_sum, mutation) if stop_present else None
+    if stop is None:
+        return False
+    try:
+        contracted = contract_future_stop(stop)
+    except ValueError:
+        return False
+    # ProjectorComplement is an exact typed constructor: since its subtrahend
+    # is the same authenticated orthogonal sum, (I-P_out)^2 = I-P_out and the
+    # active plus complement partition is the full identity on this carrier.
+    return (
+        future_active_sum_is_physical(active_sum)
+        and contracted == stop.kraus
+        and contracted.subtrahend == active_sum.projector
+        and future_completion_is_pointwise_identity(active_sum, contracted)
+    )
 
 
 @lru_cache(maxsize=None)
@@ -1073,7 +1508,11 @@ def future_channel_certificate(mutation=None) -> bool:
             if not future_sector_family_is_physical(family):
                 return False
     return future_stop_completion_certificate(
-        active, stop_present=mutation != "omit_STOP"
+        active,
+        stop_present=mutation != "omit_STOP",
+        mutation="stale_active_projector"
+        if mutation == "stale_STOP_active"
+        else None,
     )
 
 
@@ -1084,6 +1523,7 @@ class ConnectedPairPrefix:
     output_control: PairOutputControl
 
 
+@lru_cache(maxsize=None)
 def connected_pair_prefix(
     lam,
     left_source,
@@ -1125,6 +1565,11 @@ def pair_prefix_output_is_bound(prefix) -> bool:
     first_factor = dict(prefix.first.factorization)
     return (
         output_control_is_physical(prefix.output_control)
+        and prefix.first_gram.control == prefix.first.control
+        and prefix.first_gram.control == block28.pair_control(
+            prefix.first.control.left_source,
+            prefix.first.control.right_source,
+        )
         and prefix.first_gram.output_records == expected_records
         and len(unused_centers) == 6
         and all(
@@ -1140,11 +1585,56 @@ def pair_prefix_output_is_bound(prefix) -> bool:
 
 
 @dataclass(frozen=True)
+class CylinderInputControl:
+    past: object
+    future_resource: TensorProjector
+    projector: TensorProjector
+
+
+def pair_input_tensor_projector(control):
+    atoms = []
+    for atom in control.atoms:
+        if atom.role == "current-pointer":
+            atoms.append(LocalProjector(atom.center, "pointer26", atom.state, "ket"))
+        elif atom.role == "Blank-block":
+            atoms.append(LocalProjector(atom.center, "block32", atom.state, "ket"))
+        else:
+            raise ValueError("unknown imported pair-control atom")
+    return make_tensor_projector(atoms)
+
+
+def cylinder_input_control(prefix, resource):
+    past_projector = pair_input_tensor_projector(prefix.first.control)
+    projector = make_tensor_projector(
+        past_projector.atoms + resource.projector.atoms
+    )
+    return CylinderInputControl(prefix.first.control, resource.projector, projector)
+
+
+def cylinder_input_control_is_physical(control) -> bool:
+    past_projector = pair_input_tensor_projector(control.past)
+    expected = make_tensor_projector(
+        past_projector.atoms + control.future_resource.atoms
+    )
+    return (
+        block28.control_is_rank_one_projector(control.past)
+        and tensor_projector_is_physical(control.future_resource)
+        and set(past_projector.carrier_centers).isdisjoint(
+            control.future_resource.carrier_centers
+        )
+        and control.projector == expected
+        and tensor_projector_is_physical(control.projector)
+    )
+
+
+@dataclass(frozen=True)
 class ConnectedCylinderGram:
+    control: CylinderInputControl
     first_coefficient: object
     future_coefficient: object
     composite_coefficient: object
     bits: tuple
+    intermediate_output: PairOutputControl
 
 
 @dataclass(frozen=True)
@@ -1156,10 +1646,9 @@ class ConnectedCylinderBranch:
 
 @dataclass(frozen=True)
 class FixedSectorCylinderEffect:
-    control: FutureResourceSector
-    first_coefficient: object
-    summed_future_coefficient: object
-    restricted_first_coefficient: object
+    control: CylinderInputControl
+    summed_future: OperatorEffect
+    restricted_first: OperatorEffect
 
 
 def connected_cylinder_branch(prefix, future_branch):
@@ -1181,14 +1670,15 @@ def contract_connected_cylinder(descriptor):
     future_branch = descriptor.future
     factors = dict(descriptor.factorization)
     resource_blocks = (
-        block28.block_sites(future_branch.sector.left_blank.center),
-        block28.block_sites(future_branch.sector.right_blank.center),
+        block28.block_sites(future_branch.sector.left.center),
+        block28.block_sites(future_branch.sector.right.center),
     )
     first_carrier_blocks = tuple(
-        block28.block_sites(center) for center in block28.PAIR_CENTERS
+        block28.block_sites(center) for center in first_pair_literal_centers()
     )
     if not (
         pair_prefix_output_is_bound(prefix)
+        and prefix.first_gram.control == prefix.first.control
         and future_branch.prefix == prefix.output_control
         and tuple(factors) == (
             "first_pair_factors",
@@ -1211,29 +1701,39 @@ def contract_connected_cylinder(descriptor):
     ):
         raise ValueError("future channel is not conditioned on actual first output")
     future_gram = contract_connected_future_branch(future_branch)
+    if future_gram.control != future_branch.control:
+        raise ValueError("future Gram discarded its operator-valued control")
+    control = cylinder_input_control(prefix, future_branch.sector)
+    if not cylinder_input_control_is_physical(control):
+        raise ValueError("composite input control is not physical")
     return ConnectedCylinderGram(
+        control,
         prefix.first_gram.coefficient,
         future_gram.coefficient,
         sp.simplify(prefix.first_gram.coefficient * future_gram.coefficient),
         future_gram.bits,
+        prefix.output_control,
     )
 
 
 def fixed_sector_cylinder_effect(prefix, family):
-    control = future_resource_sector(prefix.output_control, family.bits)
+    resource = future_resource_sector(prefix.output_control, family.bits)
+    control = cylinder_input_control(prefix, resource)
     if not (
         pair_prefix_output_is_bound(prefix)
         and family.prefix == prefix.output_control
-        and future_resource_sector_is_physical(control)
+        and future_resource_sector_is_physical(resource)
+        and family.control == sector_control(prefix.output_control, family.bits)
+        and family.row_effect.control == family.control
         and future_sector_family_is_physical(family)
+        and cylinder_input_control_is_physical(control)
     ):
         raise ValueError("fixed-sector cylinder is not physically bound")
     first = prefix.first_gram.coefficient
     return FixedSectorCylinderEffect(
         control,
-        first,
-        sp.simplify(first * family.coefficient_sum),
-        first,
+        OperatorEffect(control, sp.simplify(first * family.row_effect.coefficient)),
+        OperatorEffect(control, first),
     )
 
 
@@ -1287,6 +1787,40 @@ def first_pair_template_certificate() -> bool:
     return True
 
 
+@lru_cache(maxsize=None)
+def fixed_sector_cylinder_instance(prefix, bits) -> bool:
+    family = future_sector_family(prefix.output_control, bits)
+    sector_effect = fixed_sector_cylinder_effect(prefix, family)
+    representative = connected_future_branch(
+        prefix.output_control,
+        bits,
+        OUTCOMES[0] if bits[0] else None,
+        OUTCOMES[0] if bits[1] else None,
+    )
+    gram = contract_connected_cylinder(
+        connected_cylinder_branch(prefix, representative)
+    )
+    return (
+        family.coefficient_sum == 1
+        and family.row_effect == OperatorEffect(family.control, 1)
+        and sector_effect.control.future_resource
+        == family.control.resource.projector
+        and sector_effect.summed_future == sector_effect.restricted_first
+        and sector_effect.summed_future.control == gram.control
+        and gram.control == sector_effect.control
+        and gram.intermediate_output == prefix.output_control
+        and gram.composite_coefficient
+        == sp.simplify(gram.first_coefficient * gram.future_coefficient)
+        and OperatorEffect(gram.control, gram.composite_coefficient)
+        == OperatorEffect(
+            sector_effect.control,
+            sp.simplify(
+                prefix.first_gram.coefficient * gram.future_coefficient
+            ),
+        )
+    )
+
+
 @lru_cache(maxsize=1)
 def cylinder_certificate() -> bool:
     if not (
@@ -1314,38 +1848,38 @@ def cylinder_certificate() -> bool:
         and all(value > 0 for value in transition_values)
     ):
         return False
-    prefix = connected_pair_prefix(
-        LAMBDAS[0],
-        OUTCOMES[0],
-        OUTCOMES[1],
-        block28.LEFT_EXITS[0],
-        block28.RIGHT_EXITS[0],
-        OUTCOMES[2],
-        OUTCOMES[3],
-    )
-    for bits in RESOURCE_BITS:
-        family = future_sector_family(prefix.output_control, bits)
-        sector_effect = fixed_sector_cylinder_effect(prefix, family)
-        representative = connected_future_branch(
-            prefix.output_control,
-            bits,
-            OUTCOMES[0] if bits[0] else None,
-            OUTCOMES[0] if bits[1] else None,
+    # The alpha axis carries every distinct intermediate output/resource
+    # control at fixed (lambda, source pair); the source axis carries every
+    # imported Pi_s,t and both supplied q choices at one fixed alpha.  The
+    # continuation descriptor was proved independent of the latter axis, so
+    # these two exact template sweeps certify their Cartesian product without
+    # materializing 1,229,312 duplicate objects.
+    for control in pair_output_active_sum().controls:
+        prefix = connected_pair_prefix(
+            LAMBDAS[0],
+            OUTCOMES[0],
+            OUTCOMES[1],
+            *control.key,
         )
-        gram = contract_connected_cylinder(
-            connected_cylinder_branch(prefix, representative)
-        )
-        if not (
-            family.coefficient_sum == 1
-            and sector_effect.control.bits == bits
-            and sector_effect.summed_future_coefficient
-            == sector_effect.restricted_first_coefficient
-            and gram.composite_coefficient
-            == sp.simplify(
-                gram.first_coefficient * gram.future_coefficient
-            )
+        if not all(
+            fixed_sector_cylinder_instance(prefix, bits)
+            for bits in RESOURCE_BITS
         ):
             return False
+    fixed_control = pair_output_active_sum().controls[0]
+    for lam in LAMBDAS:
+        for left_source, right_source in itertools.product(OUTCOMES, repeat=2):
+            prefix = connected_pair_prefix(
+                lam,
+                left_source,
+                right_source,
+                *fixed_control.key,
+            )
+            if not all(
+                fixed_sector_cylinder_instance(prefix, bits)
+                for bits in RESOURCE_BITS
+            ):
+                return False
     return (
         len(LAMBDAS)
         * len(block28.LEFT_EXITS)
@@ -1356,10 +1890,18 @@ def cylinder_certificate() -> bool:
     )
 
 
-def continuation_descriptor(arm, exit_front, first_outcome, second_outcome):
+def continuation_descriptor(
+    arm,
+    exit_front,
+    first_outcome,
+    second_outcome,
+    factors_override=None,
+):
     descriptor = connected_append_descriptor(
         arm, exit_front, first_outcome, second_outcome
     )
+    factors = descriptor.append.factors if factors_override is None else factors_override
+    effect = block24.contract_append_effect(factors)
     return (
         arm,
         exit_front,
@@ -1368,28 +1910,79 @@ def continuation_descriptor(arm, exit_front, first_outcome, second_outcome):
         descriptor.first_site,
         descriptor.second_site,
         descriptor.current_word,
-        block23.transition(first_outcome, second_outcome),
+        factors,
+        effect.scalar,
+    )
+
+
+def lambda_continuation_family(lam, mutation=None):
+    descriptors = []
+    altered_row = (
+        LEFT,
+        block28.LEFT_EXITS[0],
+        OUTCOMES[0],
+    )
+    p0 = block23.transition(OUTCOMES[0], OUTCOMES[0])
+    p1 = block23.transition(OUTCOMES[0], OUTCOMES[1])
+    epsilon = sp.simplify(p0 * p1 / 4)
+    altered_targets = (p0 + epsilon, p1 - epsilon)
+    for arm in ARMS:
+        for exit_front, first_outcome, second_outcome in itertools.product(
+            arm_exits(arm), OUTCOMES, OUTCOMES
+        ):
+            factors = None
+            if (
+                mutation == "physical_lambda_kernel"
+                and lam == LAMBDAS[-1]
+                and (arm, exit_front, first_outcome) == altered_row
+                and second_outcome in OUTCOMES[:2]
+            ):
+                index = OUTCOMES[:2].index(second_outcome)
+                original = (p0, p1)[index]
+                scale = sp.sqrt(sp.simplify(altered_targets[index] / original))
+                append = connected_append_descriptor(
+                    arm, exit_front, first_outcome, second_outcome
+                ).append
+                factors = block24.make_append_factors(
+                    append.anchor,
+                    append.current_word,
+                    append.target,
+                    root_scale=scale,
+                )
+            descriptors.append(
+                continuation_descriptor(
+                    arm,
+                    exit_front,
+                    first_outcome,
+                    second_outcome,
+                    factors,
+                )
+            )
+    return tuple(descriptors)
+
+
+def continuation_family_rows_are_normalized(family) -> bool:
+    rows = {}
+    for descriptor in family:
+        key = descriptor[:3]
+        rows.setdefault(key, sp.S.Zero)
+        rows[key] += descriptor[-1]
+    return (
+        len(rows) == 2 * 4 * 14
+        and all(sp.simplify(value) == 1 for value in rows.values())
+        and all(descriptor[-1].is_positive is True for descriptor in family)
     )
 
 
 @lru_cache(maxsize=None)
 def q_independent_continuation_certificate(mutation=None) -> bool:
-    descriptors = tuple(
-        continuation_descriptor(arm, exit_front, first_outcome, second_outcome)
-        for arm in ARMS
-        for exit_front, first_outcome, second_outcome in itertools.product(
-            arm_exits(arm), OUTCOMES, OUTCOMES
-        )
+    families = tuple(
+        lambda_continuation_family(lam, mutation) for lam in LAMBDAS
     )
-    families = []
-    for lam in LAMBDAS:
-        observed = list(descriptors)
-        if mutation == "lambda_mark" and lam == LAMBDAS[-1]:
-            observed[0] = observed[0] + ("lambda-dependent-mark",)
-        families.append(tuple(observed))
     return (
-        len(descriptors) == 1568
-        and len(set(descriptors)) == 1568
+        all(len(family) == 1568 for family in families)
+        and all(len(set(family)) == 1568 for family in families)
+        and all(continuation_family_rows_are_normalized(family) for family in families)
         and families[0] == families[1]
     )
 
@@ -1515,11 +2108,15 @@ def debit_ledger_certificate(mutation=None) -> bool:
             bits,
             OUTCOMES[0] if bits[0] else None,
             OUTCOMES[1] if bits[1] else None,
+            mutation="attach_extra_right"
+            if mutation == "D10_extra_writer" and bits == (1, 0)
+            else None,
         )
-        gram = contract_connected_future_branch(descriptor)
+        try:
+            gram = contract_connected_future_branch(descriptor)
+        except (KeyError, ValueError):
+            return False
         actual[bits] = 2 + gram.debit
-    if mutation == "pair_total_three":
-        actual[(1, 1)] = 3
     first = connected_pair_prefix(
         LAMBDAS[0],
         OUTCOMES[0],
@@ -1546,57 +2143,688 @@ def debit_ledger_certificate(mutation=None) -> bool:
     )
 
 
-def transformed_connected_sites(arm, exit_front, rotation, translation=ZERO):
-    first = first_center(arm, exit_front)
-    second = selected_future_center(arm, exit_front)
-    return (
-        block28.affine(rotation, translation, first),
-        block28.affine(rotation, translation, second),
+@dataclass(frozen=True)
+class FramedPairOutputControl:
+    frame: object
+    left_exit: tuple
+    right_exit: tuple
+    left_first: tuple
+    right_first: tuple
+    atoms: tuple[OutputPointerAtom, ...]
+
+
+def framed_pair_output_control(
+    frame, left_exit, right_exit, left_first, right_first
+):
+    left_selected = block24.forward_center(frame.left_anchor, left_exit)
+    right_selected = block24.forward_center(frame.right_anchor, right_exit)
+    atoms = tuple(
+        sorted(
+            (
+                OutputPointerAtom(
+                    center,
+                    block23.locked_word(left_exit, left_first)
+                    if center == left_selected
+                    else block23.locked_word(right_exit, right_first)
+                    if center == right_selected
+                    else block23.BLANK_POINTER,
+                )
+                for center in frame.left_targets + frame.right_targets
+            ),
+            key=lambda atom: coordinate_sort_key(atom.center),
+        )
     )
+    return FramedPairOutputControl(
+        frame,
+        left_exit,
+        right_exit,
+        left_first,
+        right_first,
+        atoms,
+    )
+
+
+def framed_output_control_is_physical(control) -> bool:
+    expected = framed_pair_output_control(
+        control.frame,
+        control.left_exit,
+        control.right_exit,
+        control.left_first,
+        control.right_first,
+    )
+    words = tuple(atom.word for atom in control.atoms)
+    return (
+        control == expected
+        and control.left_exit in control.frame.left_exits
+        and control.right_exit in control.frame.right_exits
+        and len(control.atoms) == len({atom.center for atom in control.atoms}) == 8
+        and sum(word != block23.BLANK_POINTER for word in words) == 2
+    )
+
+
+def framed_output_tensor_projector(control):
+    return make_tensor_projector(
+        LocalProjector(atom.center, "pointer26", atom.word, "ket")
+        for atom in control.atoms
+    )
+
+
+def transport_pair_output_control(control, rotation, translation=ZERO):
+    frame = block28.transformed_frame(
+        block28.CANONICAL_FRAME, rotation, translation
+    )
+    return FramedPairOutputControl(
+        frame,
+        block23.mat_vec(rotation, control.left_exit),
+        block23.mat_vec(rotation, control.right_exit),
+        block23.mat_vec(rotation, control.left_first),
+        block23.mat_vec(rotation, control.right_first),
+        tuple(
+            sorted(
+                (
+                    OutputPointerAtom(
+                        block28.affine(rotation, translation, atom.center),
+                        block23.rotate_word(atom.word, rotation),
+                    )
+                    for atom in control.atoms
+                ),
+                key=lambda atom: coordinate_sort_key(atom.center),
+            )
+        ),
+    )
+
+
+def pair_output_control_transport_certificate(
+    control, rotation, translation=ZERO
+) -> bool:
+    moved = transport_pair_output_control(control, rotation, translation)
+    expected = framed_pair_output_control(
+        moved.frame,
+        moved.left_exit,
+        moved.right_exit,
+        moved.left_first,
+        moved.right_first,
+    )
+    return moved == expected and framed_output_control_is_physical(moved)
+
+
+@dataclass(frozen=True)
+class FramedResourceSector:
+    prefix: FramedPairOutputControl
+    bits: tuple
+    left: LocalProjector
+    right: LocalProjector
+    projector: TensorProjector
+
+
+def framed_selected_future_center(prefix, arm):
+    anchor = prefix.frame.left_anchor if arm == LEFT else prefix.frame.right_anchor
+    exit_front = prefix.left_exit if arm == LEFT else prefix.right_exit
+    first = block24.forward_center(anchor, exit_front)
+    return block24.forward_center(first, exit_front)
+
+
+def framed_resource_sector(prefix, bits):
+    left = LocalProjector(
+        framed_selected_future_center(prefix, LEFT),
+        "block32",
+        block23.BLANK_BLOCK,
+        "ket" if bits[0] else "complement",
+    )
+    right = LocalProjector(
+        framed_selected_future_center(prefix, RIGHT),
+        "block32",
+        block23.BLANK_BLOCK,
+        "ket" if bits[1] else "complement",
+    )
+    return FramedResourceSector(
+        prefix,
+        bits,
+        left,
+        right,
+        make_tensor_projector((left, right)),
+    )
+
+
+def framed_resource_sector_is_physical(sector) -> bool:
+    expected = framed_resource_sector(sector.prefix, sector.bits)
+    return (
+        sector == expected
+        and framed_output_control_is_physical(sector.prefix)
+        and sector.bits in RESOURCE_BITS
+        and tensor_projector_is_physical(sector.projector)
+        and block28.block_sites(sector.left.center).isdisjoint(
+            block28.block_sites(sector.right.center)
+        )
+    )
+
+
+def transport_resource_sector(sector, rotation, translation=ZERO):
+    prefix = transport_pair_output_control(sector.prefix, rotation, translation)
+    atoms = []
+    for atom in (sector.left, sector.right):
+        atoms.append(
+            LocalProjector(
+                block28.affine(rotation, translation, atom.center),
+                atom.algebra,
+                block23.rotate_block_product(atom.state, rotation),
+                atom.sense,
+            )
+        )
+    return FramedResourceSector(
+        prefix,
+        sector.bits,
+        atoms[0],
+        atoms[1],
+        make_tensor_projector(atoms),
+    )
+
+
+def resource_sector_transport_certificate(
+    sector, rotation, translation=ZERO
+) -> bool:
+    moved = transport_resource_sector(sector, rotation, translation)
+    expected = framed_resource_sector(moved.prefix, moved.bits)
+    return moved == expected and framed_resource_sector_is_physical(moved)
+
+
+def affine_append_branch(branch, rotation, translation=ZERO):
+    return block24.append_branch(
+        block28.affine(rotation, translation, branch.anchor),
+        block23.rotate_word(branch.current_word, rotation),
+        block23.mat_vec(rotation, branch.target),
+    )
+
+
+def translated_append_factors_match(rotated, moved, translation) -> bool:
+    source = block24.factor_dictionary(rotated.factors)
+    target = block24.factor_dictionary(moved.factors)
+    translated_keys = {
+        "anchor": block23.add(source["anchor"], translation),
+        "forward_center": block23.add(source["forward_center"], translation),
+        "spectator_identity_centers": tuple(
+            block23.add(center, translation)
+            for center in source["spectator_identity_centers"]
+        ),
+        "spectator_identity_factors": tuple(
+            (block23.add(center, translation), site, operator)
+            for center, site, operator in source["spectator_identity_factors"]
+        ),
+    }
+    invariant_keys = set(block24.APPEND_FACTOR_KEYS) - set(translated_keys)
+    return all(target[key] == value for key, value in translated_keys.items()) and all(
+        target[key] == source[key] for key in invariant_keys
+    )
+
+
+def append_affine_covariance_certificate(
+    branch, rotation, translation=ZERO, mutation=None
+) -> bool:
+    rotated = block24.append_branch(
+        block23.mat_vec(rotation, branch.anchor),
+        block23.rotate_word(branch.current_word, rotation),
+        block23.mat_vec(rotation, branch.target),
+    )
+    moved = affine_append_branch(branch, rotation, translation)
+    if mutation == "untransported_forward":
+        moved = replace(
+            moved,
+            forward_center=rotated.forward_center,
+        )
+    return (
+        block24.append_branch_covariance_certificate(branch, rotation)
+        and translated_append_factors_match(rotated, moved, translation)
+        and moved.anchor == block28.affine(rotation, translation, branch.anchor)
+        and moved.forward_center
+        == block28.affine(rotation, translation, branch.forward_center)
+        and block24.append_factorization_is_physical(moved)
+        and block24.branch_effect_is_recontracted(moved)
+    )
+
+
+def merged_product_signature(product):
+    return tuple(
+        (
+            action.center,
+            action.role,
+            action.owner,
+            tuple((name, source.role) for name, source in action.sources),
+        )
+        for action in product.actions
+    )
+
+
+def merged_product_affine_covariance_certificate(
+    product, rotation, translation=ZERO
+) -> bool:
+    moved_left = (
+        affine_append_branch(product.left, rotation, translation)
+        if product.left is not None
+        else None
+    )
+    moved_right = (
+        affine_append_branch(product.right, rotation, translation)
+        if product.right is not None
+        else None
+    )
+    moved = embedded_append_product(moved_left, moved_right)
+    expected_signature = tuple(
+        (
+            block28.affine(rotation, translation, center),
+            role,
+            owner,
+            sources,
+        )
+        for center, role, owner, sources in merged_product_signature(product)
+    )
+    return (
+        all(
+            append_affine_covariance_certificate(branch, rotation, translation)
+            for branch in (product.left, product.right)
+            if branch is not None
+        )
+        and embedded_append_product_is_physical(product)
+        and embedded_append_product_is_physical(moved)
+        and merged_product_signature(moved) == expected_signature
+    )
+
+
+@dataclass(frozen=True)
+class FramedFutureBranch:
+    prefix: FramedPairOutputControl
+    sector: FramedResourceSector
+    left_second: tuple | None
+    right_second: tuple | None
+    left_append: object | None
+    right_append: object | None
+    product: EmbeddedAppendProduct
+    control: TensorProjector
+
+
+def framed_future_branch(prefix, bits, left_second=None, right_second=None):
+    if bits[0] != (left_second is not None) or bits[1] != (right_second is not None):
+        raise ValueError("framed outcomes do not match resource bits")
+    left_append = (
+        block24.append_branch(
+            block24.forward_center(prefix.frame.left_anchor, prefix.left_exit),
+            block23.locked_word(prefix.left_exit, prefix.left_first),
+            left_second,
+        )
+        if bits[0]
+        else None
+    )
+    right_append = (
+        block24.append_branch(
+            block24.forward_center(prefix.frame.right_anchor, prefix.right_exit),
+            block23.locked_word(prefix.right_exit, prefix.right_first),
+            right_second,
+        )
+        if bits[1]
+        else None
+    )
+    sector = framed_resource_sector(prefix, bits)
+    product = embedded_append_product(left_append, right_append)
+    control = make_tensor_projector(
+        framed_output_tensor_projector(prefix).atoms + sector.projector.atoms
+    )
+    return FramedFutureBranch(
+        prefix,
+        sector,
+        left_second,
+        right_second,
+        left_append,
+        right_append,
+        product,
+        control,
+    )
+
+
+def framed_future_branch_is_physical(branch) -> bool:
+    appends = tuple(
+        append for append in (branch.left_append, branch.right_append) if append
+    )
+    expected = framed_future_branch(
+        branch.prefix,
+        branch.sector.bits,
+        branch.left_second,
+        branch.right_second,
+    )
+    return (
+        branch == expected
+        and framed_resource_sector_is_physical(branch.sector)
+        and embedded_append_product_is_physical(branch.product)
+        and all(
+            block24.append_factorization_is_physical(append)
+            and block24.branch_effect_is_recontracted(append)
+            for append in appends
+        )
+        and tensor_projector_is_physical(branch.control)
+    )
+
+
+def future_branch_affine_covariance_certificate(
+    branch, rotation, translation=ZERO
+) -> bool:
+    moved_prefix = transport_pair_output_control(
+        branch.prefix, rotation, translation
+    )
+    moved = framed_future_branch(
+        moved_prefix,
+        branch.sector.bits,
+        block23.mat_vec(rotation, branch.left_second)
+        if branch.left_second is not None
+        else None,
+        block23.mat_vec(rotation, branch.right_second)
+        if branch.right_second is not None
+        else None,
+    )
+    return (
+        pair_output_control_transport_certificate(
+            branch.prefix, rotation, translation
+        )
+        and resource_sector_transport_certificate(
+            branch.sector, rotation, translation
+        )
+        and merged_product_affine_covariance_certificate(
+            branch.embedded_product, rotation, translation
+        )
+        and moved.left_append
+        == (
+            affine_append_branch(branch.left_append, rotation, translation)
+            if branch.left_append is not None
+            else None
+        )
+        and moved.right_append
+        == (
+            affine_append_branch(branch.right_append, rotation, translation)
+            if branch.right_append is not None
+            else None
+        )
+        and framed_future_branch_is_physical(moved)
+    )
+
+
+def transport_tensor_projector(projector, rotation, translation=ZERO):
+    atoms = []
+    for atom in projector.atoms:
+        state = (
+            block23.rotate_word(atom.state, rotation)
+            if atom.algebra == "pointer26"
+            else block23.rotate_block_product(atom.state, rotation)
+        )
+        atoms.append(
+            LocalProjector(
+                block28.affine(rotation, translation, atom.center),
+                atom.algebra,
+                state,
+                atom.sense,
+            )
+        )
+    return make_tensor_projector(atoms)
+
+
+def active_sum_and_stop_transport_certificate(rotation, translation=ZERO) -> bool:
+    active = pair_output_active_sum()
+    moved_controls = tuple(
+        transport_pair_output_control(control, rotation, translation)
+        for control in active.controls
+    )
+    frame = block28.transformed_frame(
+        block28.CANONICAL_FRAME, rotation, translation
+    )
+    expected_controls = tuple(
+        framed_pair_output_control(
+            frame,
+            block23.mat_vec(rotation, control.left_exit),
+            block23.mat_vec(rotation, control.right_exit),
+            block23.mat_vec(rotation, control.left_first),
+            block23.mat_vec(rotation, control.right_first),
+        )
+        for control in active.controls
+    )
+    moved_terms = tuple(
+        transport_tensor_projector(term, rotation, translation)
+        for term in future_active_sum(active).projector.terms
+    )
+    expected_terms = tuple(
+        framed_output_tensor_projector(control) for control in expected_controls
+    )
+    moved_projector = OrthogonalProjectorSum(
+        sorted_centers(
+            {center for term in moved_terms for center in term.carrier_centers}
+        ),
+        moved_terms,
+    )
+    expected_projector = OrthogonalProjectorSum(
+        moved_projector.carrier_centers,
+        expected_terms,
+    )
+    moved_stop = ProjectorComplement(
+        moved_projector.carrier_centers,
+        moved_projector,
+    )
+    expected_stop = ProjectorComplement(
+        expected_projector.carrier_centers,
+        expected_projector,
+    )
+    return (
+        moved_controls == expected_controls
+        and moved_projector == expected_projector
+        and moved_stop == expected_stop
+    )
+
+
+def composite_cylinder_transport_certificate(
+    descriptor, rotation, translation=ZERO
+) -> bool:
+    prefix = descriptor.prefix
+    future = descriptor.future
+    moved_frame = block28.transformed_frame(
+        block28.CANONICAL_FRAME, rotation, translation
+    )
+    moved_past = block28.pair_control_for(
+        moved_frame,
+        block23.mat_vec(rotation, prefix.first.control.left_source),
+        block23.mat_vec(rotation, prefix.first.control.right_source),
+    )
+    moved_resource = transport_resource_sector(
+        future.sector, rotation, translation
+    )
+    moved_past_projector = pair_input_tensor_projector(moved_past)
+    moved_control = CylinderInputControl(
+        moved_past,
+        moved_resource.projector,
+        make_tensor_projector(
+            moved_past_projector.atoms + moved_resource.projector.atoms
+        ),
+    )
+    source_control = cylinder_input_control(prefix, future.sector)
+    transported_system_projector = transport_tensor_projector(
+        source_control.projector, rotation, translation
+    )
+    return (
+        contract_connected_cylinder(descriptor).control == source_control
+        and block28.control_transport_certificate(
+            block28.CANONICAL_FRAME,
+            prefix.first.control.left_source,
+            prefix.first.control.right_source,
+            rotation,
+            translation,
+        )
+        and future_branch_affine_covariance_certificate(
+            future, rotation, translation
+        )
+        and moved_control.projector == transported_system_projector
+        and tensor_projector_is_physical(moved_control.projector)
+    )
+
+
+def reverse_framed_output_control(control):
+    reversed_frame = block28.PairFrame(
+        control.frame.right_anchor, control.frame.right_front
+    )
+    return framed_pair_output_control(
+        reversed_frame,
+        control.right_exit,
+        control.left_exit,
+        control.right_first,
+        control.left_first,
+    )
+
+
+def side_exchange_certificate() -> bool:
+    sample = pair_output_control(
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[-1],
+        OUTCOMES[0],
+        OUTCOMES[-1],
+    )
+    for rotation in block28.pair_stabilizer():
+        swaps = block23.mat_vec(rotation, block28.F_LEFT) == block28.F_RIGHT
+        translation = block28.scale(27, E1) if swaps else ZERO
+        moved = transport_pair_output_control(sample, rotation, translation)
+        normalized = reverse_framed_output_control(moved) if swaps else moved
+        expected = framed_pair_output_control(
+            block28.CANONICAL_FRAME,
+            block23.mat_vec(
+                rotation, sample.right_exit if swaps else sample.left_exit
+            ),
+            block23.mat_vec(
+                rotation, sample.left_exit if swaps else sample.right_exit
+            ),
+            block23.mat_vec(
+                rotation, sample.right_first if swaps else sample.left_first
+            ),
+            block23.mat_vec(
+                rotation, sample.left_first if swaps else sample.right_first
+            ),
+        )
+        if normalized != expected:
+            return False
+        for bits in RESOURCE_BITS:
+            sector = future_resource_sector(sample, bits)
+            moved_sector = transport_resource_sector(sector, rotation, translation)
+            normalized_bits = (bits[1], bits[0]) if swaps else bits
+            normalized_prefix = normalized
+            normalized_sector = framed_resource_sector(
+                normalized_prefix, normalized_bits
+            )
+            moved_atoms = (
+                (moved_sector.right, moved_sector.left)
+                if swaps
+                else (moved_sector.left, moved_sector.right)
+            )
+            if not (
+                normalized_sector.bits == normalized_bits
+                and normalized_sector.left.center == moved_atoms[0].center
+                and normalized_sector.right.center == moved_atoms[1].center
+                and normalized_sector.left.sense == moved_atoms[0].sense
+                and normalized_sector.right.sense == moved_atoms[1].sense
+            ):
+                return False
+            source_future = connected_future_branch(
+                sample,
+                bits,
+                OUTCOMES[1] if bits[0] else None,
+                OUTCOMES[2] if bits[1] else None,
+            )
+            if not future_branch_affine_covariance_certificate(
+                source_future, rotation, translation
+            ):
+                return False
+            moved_future = framed_future_branch(
+                moved,
+                bits,
+                block23.mat_vec(rotation, OUTCOMES[1]) if bits[0] else None,
+                block23.mat_vec(rotation, OUTCOMES[2]) if bits[1] else None,
+            )
+            normalized_future = (
+                framed_future_branch(
+                    normalized,
+                    normalized_bits,
+                    moved_future.right_second,
+                    moved_future.left_second,
+                )
+                if swaps
+                else moved_future
+            )
+            if not framed_future_branch_is_physical(normalized_future):
+                return False
+            if swaps and not (
+                normalized_future.left_append == moved_future.right_append
+                and normalized_future.right_append == moved_future.left_append
+                and set(normalized_future.product.carrier_centers)
+                == set(moved_future.product.carrier_centers)
+            ):
+                return False
+    return True
 
 
 @lru_cache(maxsize=1)
 def covariance_certificate() -> bool:
     tau = sp.symbols("tau_0 tau_1 tau_2")
+    sample_control = pair_output_control(
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[-1],
+        OUTCOMES[0],
+        OUTCOMES[-1],
+    )
+    sample_prefix = connected_pair_prefix(
+        LAMBDAS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+        sample_control.left_exit,
+        sample_control.right_exit,
+        sample_control.left_first,
+        sample_control.right_first,
+    )
     for rotation in ROTATIONS:
         for arm in ARMS:
-            anchor = arm_anchor(arm)
             for exit_front, first_outcome, second_outcome in itertools.product(
                 arm_exits(arm), OUTCOMES, OUTCOMES
             ):
-                moved_exit = block23.mat_vec(rotation, exit_front)
-                moved_first_outcome = block23.mat_vec(rotation, first_outcome)
-                moved_second_outcome = block23.mat_vec(rotation, second_outcome)
-                moved_anchor = block28.affine(rotation, tau, anchor)
-                expected_first = block24.forward_center(moved_anchor, moved_exit)
-                expected_second = block24.forward_center(expected_first, moved_exit)
-                actual_first, actual_second = transformed_connected_sites(
-                    arm, exit_front, rotation, tau
-                )
-                if not (
-                    actual_first == expected_first
-                    and actual_second == expected_second
-                    and block23.rotate_word(
-                        block23.locked_word(exit_front, first_outcome), rotation
-                    )
-                    == block23.locked_word(moved_exit, moved_first_outcome)
-                    and block23.rotate_word(
-                        block23.locked_word(exit_front, second_outcome), rotation
-                    )
-                    == block23.locked_word(moved_exit, moved_second_outcome)
-                    and block23.transition(first_outcome, second_outcome)
-                    == block23.transition(moved_first_outcome, moved_second_outcome)
-                    and block24.append_branch_covariance_certificate(
-                        connected_append_descriptor(
-                            arm,
-                            exit_front,
-                            first_outcome,
-                            second_outcome,
-                        ).append,
-                        rotation,
-                    )
-                ):
+                branch = connected_append_descriptor(
+                    arm, exit_front, first_outcome, second_outcome
+                ).append
+                if not append_affine_covariance_certificate(branch, rotation, tau):
                     return False
+        if not (
+            pair_output_control_transport_certificate(
+                sample_control, rotation, tau
+            )
+            and resource_sector_transport_certificate(
+                future_resource_sector(sample_control, (1, 0)),
+                rotation,
+                tau,
+            )
+            and all(
+                future_branch_affine_covariance_certificate(
+                    connected_future_branch(
+                        sample_control,
+                        bits,
+                        OUTCOMES[1] if bits[0] else None,
+                        OUTCOMES[2] if bits[1] else None,
+                    ),
+                    rotation,
+                    tau,
+                )
+                for bits in RESOURCE_BITS
+            )
+            and composite_cylinder_transport_certificate(
+                connected_cylinder_branch(
+                    sample_prefix,
+                    connected_future_branch(
+                        sample_control,
+                        (1, 1),
+                        OUTCOMES[1],
+                        OUTCOMES[2],
+                    ),
+                ),
+                rotation,
+                tau,
+            )
+        ):
+            return False
     full = set(full_literal_centers())
     for rotation in block28.pair_stabilizer():
         swaps = block23.mat_vec(rotation, block28.F_LEFT) == block28.F_RIGHT
@@ -1605,14 +2833,10 @@ def covariance_certificate() -> bool:
             block28.affine(rotation, translation, center) for center in full
         } != full:
             return False
-        for lam in LAMBDAS:
-            for pair in itertools.product(block28.LEFT_EXITS, block28.RIGHT_EXITS):
-                if block28.q_weight(lam, *pair) != block28.q_weight(
-                    lam, *block28.pair_action(rotation, pair)
-                ):
-                    return False
+        if not active_sum_and_stop_transport_certificate(rotation, translation):
+            return False
     return (
-        set(RESOURCE_BITS) == {(right, left) for left, right in RESOURCE_BITS}
+        side_exchange_certificate()
         and block23.rotate_block_product(block23.BLANK_BLOCK, ROTATIONS[0])
         == block23.BLANK_BLOCK
         and block24.translation_covariance_certificate()
@@ -1621,9 +2845,77 @@ def covariance_certificate() -> bool:
     )
 
 
+@dataclass(frozen=True)
+class ReferenceIdentity:
+    dimension: object
+    row: object
+    column: object
+    operator: str = "I_R"
+
+
+@dataclass(frozen=True)
+class ReferenceLift:
+    system_descriptor: object
+    reference: ReferenceIdentity
+
+
+@dataclass(frozen=True)
+class ReferenceExtendedEffect:
+    system_effect: object
+    reference_delta: object
+
+
+def contract_reference_lift(lift):
+    reference = lift.reference
+    if reference.operator != "I_R":
+        raise ValueError("reference factor is not the identity")
+    delta = sp.KroneckerDelta(reference.row, reference.column)
+    descriptor = lift.system_descriptor
+    if isinstance(descriptor, ConnectedFutureBranch):
+        gram = contract_connected_future_branch(descriptor)
+        effect = OperatorEffect(gram.control, gram.coefficient)
+    elif isinstance(descriptor, PairFutureStop):
+        effect = contract_future_stop(descriptor)
+    elif isinstance(descriptor, ConnectedCylinderBranch):
+        gram = contract_connected_cylinder(descriptor)
+        effect = OperatorEffect(gram.control, gram.composite_coefficient)
+    else:
+        raise ValueError("unknown reference-lifted system descriptor")
+    return ReferenceExtendedEffect(effect, delta)
+
+
 @lru_cache(maxsize=None)
 def arbitrary_reference_certificate(mutation=None) -> bool:
     active = pair_output_active_sum()
+    prefix = connected_pair_prefix(
+        LAMBDAS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[0],
+        OUTCOMES[2],
+        OUTCOMES[3],
+    )
+    future = connected_future_branch(
+        prefix.output_control,
+        (1, 1),
+        OUTCOMES[0],
+        OUTCOMES[-1],
+    )
+    cylinder = connected_cylinder_branch(prefix, future)
+    stop = make_future_stop(future_active_sum(active))
+    dimension = sp.symbols("d_R", integer=True, positive=True)
+    row, column = sp.symbols("r_R s_R", integer=True, nonnegative=True)
+    reference = ReferenceIdentity(
+        dimension,
+        row,
+        column,
+        "A_R" if mutation == "nonidentity" else "I_R",
+    )
+    lifts = tuple(
+        ReferenceLift(descriptor, reference)
+        for descriptor in (future, stop, cylinder)
+    )
     if not (
         active.idempotent
         and active.complement_nontrivial
@@ -1631,19 +2923,25 @@ def arbitrary_reference_certificate(mutation=None) -> bool:
         and block28.arbitrary_reference_certificate()
     ):
         return False
-    row, column = sp.symbols("r_R s_R", integer=True, nonnegative=True)
+    try:
+        effects = tuple(contract_reference_lift(lift) for lift in lifts)
+    except ValueError:
+        return False
     delta = sp.KroneckerDelta(row, column)
-    p_out = sp.symbols("P_pair_output_R", commutative=True)
-    system_total = block23.projector_reduce(
-        p_out + (1 - p_out) ** 2, p_out
-    )
-    reference_factor = (
-        sp.Symbol("R_nonidentity") if mutation == "nonidentity" else sp.S.One
-    )
     return (
-        system_total == 1
-        and sp.simplify(reference_factor * delta * system_total - delta)
-        == 0
+        len(effects) == 3
+        and all(effect.reference_delta == delta for effect in effects)
+        and effects[0].system_effect
+        == OperatorEffect(
+            contract_connected_future_branch(future).control,
+            contract_connected_future_branch(future).coefficient,
+        )
+        and effects[1].system_effect == stop.kraus
+        and effects[2].system_effect
+        == OperatorEffect(
+            contract_connected_cylinder(cylinder).control,
+            contract_connected_cylinder(cylinder).composite_coefficient,
+        )
     )
 
 
@@ -1653,43 +2951,131 @@ TERMINAL_TEXT = (
 )
 
 SCOPE_TEXT = (
-    "two supplied q choices; imported complete pair channel followed by one "
-    "externally invoked physical output-Record-controlled future channel; "
-    "D00/D10/D01/D11 route zero/left/right/both literal Block24 appends on "
-    "supplied finite rails; no singleton first-layer law, second pair reuse, "
-    "cause selection, autonomous invocation, renewal, scheduler, compiler, "
-    "rate, gravity, axiom amendment, audit retention, obligation retirement, "
-    "or TOE movement"
+    "two supplied q choices, neither derived nor selected; imported complete "
+    "pair channel followed only by one externally invoked physical "
+    "output-Record-controlled future channel; D00/D10/D01/D11 route "
+    "zero/left/right/both literal Block24 appends on supplied finite rails; "
+    "no singleton first-layer law or empty/singleton/pair first-layer "
+    "completion; no second returned-pair use; no cause identification, "
+    "autonomous invocation, renewal, scheduler, cadence, rate, nearest-neighbor "
+    "compiler, gravity/source attachment, axiom amendment, audit verdict, "
+    "obligation retirement, or TOE-score movement"
 )
 
 FORBIDDEN_SCOPE_PHRASES = (
+    "singleton first-layer law established",
+    "empty/singleton/pair first-layer completion established",
+    "second returned-pair use established",
+    "q derivation established",
+    "q selection established",
+    "cause identification established",
     "autonomous invocation established",
+    "renewal established",
+    "scheduler established",
+    "cadence established",
+    "rate established",
     "nearest-neighbor compiler established",
-    "gravity source established",
+    "gravity/source attachment established",
     "axiom amendment required",
-    "audit retained",
+    "audit verdict set",
     "obligation retired",
     "TOE score increased",
 )
 
 
-def scope_guard_certificate(terminal=TERMINAL_TEXT, scope=SCOPE_TEXT) -> bool:
+@dataclass(frozen=True)
+class ScopeContract:
+    singleton_first_layer: bool = False
+    direct_sum_completion: bool = False
+    second_pair_use: bool = False
+    q_derivation: bool = False
+    q_selection: bool = False
+    cause_identification: bool = False
+    autonomous_invocation: bool = False
+    renewal: bool = False
+    scheduler: bool = False
+    cadence: bool = False
+    rate: bool = False
+    compiler: bool = False
+    gravity_attachment: bool = False
+    axiom_amendment: bool = False
+    audit_verdict: bool = False
+    obligation_retirement: bool = False
+    toe_movement: bool = False
+    next_on_both_pass: str = "covariant_physical_successor_handoff"
+
+
+SAFE_SCOPE_CONTRACT = ScopeContract()
+
+SCOPE_FIELD_BY_PHRASE = {
+    phrase: field
+    for phrase, field in zip(
+        FORBIDDEN_SCOPE_PHRASES,
+        (
+            "singleton_first_layer",
+            "direct_sum_completion",
+            "second_pair_use",
+            "q_derivation",
+            "q_selection",
+            "cause_identification",
+            "autonomous_invocation",
+            "renewal",
+            "scheduler",
+            "cadence",
+            "rate",
+            "compiler",
+            "gravity_attachment",
+            "axiom_amendment",
+            "audit_verdict",
+            "obligation_retirement",
+            "toe_movement",
+        ),
+    )
+}
+
+
+def scope_contract_is_safe(contract) -> bool:
+    forbidden = tuple(
+        value
+        for name, value in contract.__dict__.items()
+        if name != "next_on_both_pass"
+    )
+    return (
+        not any(forbidden)
+        and contract.next_on_both_pass == "covariant_physical_successor_handoff"
+    )
+
+
+def scope_guard_certificate(
+    terminal=TERMINAL_TEXT,
+    scope=SCOPE_TEXT,
+    contract=SAFE_SCOPE_CONTRACT,
+) -> bool:
     combined = f"{terminal}; {scope}"
     return (
         terminal == TERMINAL_TEXT
         and scope == SCOPE_TEXT
+        and scope_contract_is_safe(contract)
         and all(phrase not in combined for phrase in FORBIDDEN_SCOPE_PHRASES)
     )
 
 
 def scope_promotion_is_rejected(phrase) -> bool:
-    return (
-        phrase in FORBIDDEN_SCOPE_PHRASES
-        and phrase in f"{SCOPE_TEXT}; {phrase}"
-        and not scope_guard_certificate(
-            TERMINAL_TEXT, f"{SCOPE_TEXT}; {phrase}"
-        )
+    if phrase not in SCOPE_FIELD_BY_PHRASE:
+        return False
+    candidate = replace(
+        SAFE_SCOPE_CONTRACT,
+        **{SCOPE_FIELD_BY_PHRASE[phrase]: True},
     )
+    return not scope_contract_is_safe(candidate)
+
+
+def direct_autonomy_dispatch_is_rejected() -> bool:
+    candidate = replace(
+        SAFE_SCOPE_CONTRACT,
+        next_on_both_pass="autonomous_state_driven_reuse_and_resource_closure",
+    )
+    return not scope_contract_is_safe(candidate)
 
 
 def replace_named_factor(factors, key, replacement):
@@ -1738,20 +3124,39 @@ def turn_record_overwrite_mutation_is_rejected() -> bool:
 
 
 def fixed_coordinate_mark_mutation_is_rejected() -> bool:
-    mark = first_center(LEFT, block28.LEFT_EXITS[0])
-    return any(
-        block28.affine(rotation, ZERO, mark) != mark
-        for rotation in ROTATIONS
+    control = pair_output_control(
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
     )
+    rotation = next(
+        rotation
+        for rotation in ROTATIONS
+        if block23.mat_vec(rotation, control.left_exit) != control.left_exit
+    )
+    moved = transport_pair_output_control(control, rotation)
+    atoms = list(moved.atoms)
+    atoms[0] = replace(atoms[0], center=control.atoms[0].center)
+    mutant = replace(moved, atoms=tuple(atoms))
+    return not framed_output_control_is_physical(mutant)
 
 
 def untransported_future_mutation_is_rejected() -> bool:
     identity = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
     translation = (1, 2, 3)
-    future = selected_future_center(LEFT, block28.LEFT_EXITS[0])
-    transported = block28.affine(identity, translation, future)
-    untransported = block28.affine(identity, ZERO, future)
-    return transported != untransported
+    branch = connected_append_descriptor(
+        LEFT,
+        block28.LEFT_EXITS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+    ).append
+    return not append_affine_covariance_certificate(
+        branch,
+        identity,
+        translation,
+        mutation="untransported_forward",
+    )
 
 
 def connected_future_mutation_is_rejected(prefix, bits, mutation) -> bool:
@@ -1786,7 +3191,7 @@ def raw_pair_amplitude_mutation_is_rejected() -> bool:
     return False
 
 
-def equal_exit_nonidentity_overlap_mutation_is_rejected() -> bool:
+def merged_product_mutation_is_rejected(mutation) -> bool:
     exit_front = block28.LEFT_EXITS[0]
     left = connected_append_descriptor(
         LEFT, exit_front, OUTCOMES[0], OUTCOMES[1]
@@ -1794,24 +3199,73 @@ def equal_exit_nonidentity_overlap_mutation_is_rejected() -> bool:
     right = connected_append_descriptor(
         RIGHT, exit_front, OUTCOMES[0], OUTCOMES[1]
     ).append
-    factors = right.factors
-    spectators = list(
-        block24.factor_dictionary(factors)["spectator_identity_factors"]
-    )
-    index = next(
-        index
-        for index, (center, _site, _operator) in enumerate(spectators)
-        if center == left.anchor
-    )
-    center, site, _operator = spectators[index]
-    spectators[index] = (center, site, "X_2")
+    mutant = embedded_append_product(left, right, mutation)
+    return not embedded_append_product_is_physical(mutant)
+
+
+def patched_future_row_mutation_is_rejected(prefix) -> bool:
+    family = future_sector_family(prefix, (1, 0), "drop_future_outcome")
     mutant = replace(
-        right,
-        factors=replace_named_factor(
-            factors, "spectator_identity_factors", tuple(spectators)
+        family,
+        branch_count=14,
+        row_effect=OperatorEffect(family.control, sp.S.One),
+    )
+    return not future_sector_family_is_physical(mutant)
+
+
+def wrong_first_control_mutation_is_rejected() -> bool:
+    prefix = connected_pair_prefix(
+        LAMBDAS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[0],
+        OUTCOMES[2],
+        OUTCOMES[3],
+    )
+    mutant = replace(
+        prefix,
+        first_gram=replace(
+            prefix.first_gram,
+            control=block28.pair_control(OUTCOMES[-1], OUTCOMES[1]),
         ),
     )
-    return not append_product_compatibility(left, mutant)
+    future = connected_future_branch(
+        mutant.output_control,
+        (1, 0),
+        OUTCOMES[0],
+        None,
+    )
+    try:
+        contract_connected_cylinder(connected_cylinder_branch(mutant, future))
+    except (KeyError, ValueError):
+        return True
+    return False
+
+
+def wrong_current_word_same_scalar_mutation_is_rejected(prefix) -> bool:
+    branch = connected_future_branch(prefix, (1, 0), OUTCOMES[0], None)
+    append = branch.left_append
+    mutant_append = replace(
+        append,
+        current_word=block23.locked_word(append.front, OUTCOMES[-1]),
+    )
+    try:
+        mutant_product = embedded_append_product(mutant_append, None)
+        mutant = replace(
+            branch,
+            left_append=mutant_append,
+            embedded_product=mutant_product,
+            factorization=replace_named_factor(
+                branch.factorization,
+                "merged_append_product",
+                mutant_product,
+            ),
+        )
+        contract_connected_future_branch(mutant)
+    except (KeyError, ValueError):
+        return True
+    return False
 
 
 def mutation_rejections():
@@ -1871,15 +3325,8 @@ def mutation_rejections():
         mutation="alias_history",
     )
     scope_mutations = {
-        "scope_autonomous_invocation_promotion_is_rejected": "autonomous invocation established",
-        "scope_nearest_neighbor_compiler_promotion_is_rejected": (
-            "nearest-neighbor compiler established"
-        ),
-        "scope_gravity_source_promotion_is_rejected": "gravity source established",
-        "scope_axiom_amendment_promotion_is_rejected": "axiom amendment required",
-        "scope_audit_retention_promotion_is_rejected": "audit retained",
-        "scope_obligation_retirement_promotion_is_rejected": "obligation retired",
-        "scope_TOE_score_promotion_is_rejected": "TOE score increased",
+        f"scope_{field}_promotion_is_rejected": phrase
+        for phrase, field in SCOPE_FIELD_BY_PHRASE.items()
     }
     reports = {
         "shifted_future_breaks_connected_geometry": not geometry_certificate(
@@ -1902,11 +3349,19 @@ def mutation_rejections():
                 future_resource_sector(prefix, (1, 1), "shared_future_center")
             )
         ),
+        "wrong_resource_sense_breaks_typed_sector": (
+            not future_resource_sector_is_physical(
+                future_resource_sector(prefix, (1, 0), "wrong_left_sense")
+            )
+        ),
         "duplicated_resource_sector_breaks_physical_partition": not resource_partition_certificate(
             prefix, "duplicate_resource_sector"
         ),
-        "nonidentity_equal_exit_spectator_breaks_composite": (
-            equal_exit_nonidentity_overlap_mutation_is_rejected()
+        "same_count_wrong_center_breaks_merged_product": (
+            merged_product_mutation_is_rejected("same_count_wrong_center")
+        ),
+        "swapped_shared_owner_breaks_merged_product": (
+            merged_product_mutation_is_rejected("swap_shared_owner")
         ),
         "wrong_output_word_breaks_append_input_binding": (
             not output_control_is_physical(wrong_output_control)
@@ -1949,14 +3404,17 @@ def mutation_rejections():
             )
         ),
         "dropped_future_outcome_breaks_fixed_prefix_cylinder": (
-            future_sector_family(
-                prefix, (1, 0), "drop_future_outcome"
-            ).coefficient_sum
-            != 1
+            patched_future_row_mutation_is_rejected(prefix)
         ),
         "missing_common_STOP_breaks_full_space_TP": (
             not future_stop_completion_certificate(
                 pair_output_active_sum(), stop_present=False
+            )
+        ),
+        "stale_active_projector_breaks_common_STOP": (
+            not future_stop_completion_certificate(
+                pair_output_active_sum(),
+                mutation="stale_active_projector",
             )
         ),
         "missing_imported_pair_STOP_breaks_first_channel_TP": (
@@ -1981,8 +3439,14 @@ def mutation_rejections():
         "nonidentity_reference_factor_breaks_extension": not arbitrary_reference_certificate(
             "nonidentity"
         ),
-        "three_debit_pair_history_breaks_ledger": not debit_ledger_certificate(
-            "pair_total_three"
+        "extra_D10_writer_breaks_factor_derived_debit": not debit_ledger_certificate(
+            "D10_extra_writer"
+        ),
+        "changed_imported_control_breaks_M_equals_LK": (
+            wrong_first_control_mutation_is_rejected()
+        ),
+        "changed_current_word_with_same_scalar_breaks_control": (
+            wrong_current_word_same_scalar_mutation_is_rejected(prefix)
         ),
         "fresh_copy_breaks_actual_output_provenance": not descriptor_binding_is_physical(
             fresh_copy_descriptor
@@ -1991,7 +3455,10 @@ def mutation_rejections():
             old_source_descriptor
         ),
         "lambda_dependent_continuation_breaks_common_descriptor": (
-            not q_independent_continuation_certificate("lambda_mark")
+            not q_independent_continuation_certificate("physical_lambda_kernel")
+        ),
+        "direct_autonomy_dispatch_breaks_scope_contract": (
+            direct_autonomy_dispatch_is_rejected()
         ),
     }
     reports.update(
@@ -2027,7 +3494,8 @@ def main() -> int:
     checks.check(
         "connected_full_carrier_geometry",
         geometry_certificate(),
-        "18 state-controlled and 34 full literal 32-site blocks are disjoint; 1,088 sites",
+        "18 state-controlled blocks; the future carrier is 34 blocks/1,088 "
+        "sites and the sequential union is 36 blocks/1,152 sites",
     )
     checks.check(
         "literal_output_to_input_binding",
@@ -2068,8 +3536,8 @@ def main() -> int:
     checks.check(
         "Record_history_QND_and_injectivity",
         record_history_and_qnd_certificate(),
-        "784 conditional output histories per arm and 614,656 pair output "
-        "configurations decode; old and first Records are QND",
+        "784 conditional two-step histories per arm and 614,656 paired "
+        "two-step histories decode; old and first Records are QND",
     )
     checks.check(
         "finite_Blank_debit_ledger",
@@ -2089,11 +3557,19 @@ def main() -> int:
         "reference identity",
     )
     mutations = mutation_rejections()
-    for name, rejected in mutations.items():
-        print(f"MUTATION {'REJECTED' if rejected else 'SURVIVED'} {name}")
+    survived = tuple(name for name, rejected in mutations.items() if not rejected)
+    if survived:
+        for name in survived:
+            print(f"MUTATION SURVIVED {name}")
+    else:
+        mutation_names = "\n".join(mutations).encode("utf-8")
+        print(
+            f"MUTATIONS: REJECTED={len(mutations)}/{len(mutations)}; "
+            f"names_sha256={hashlib.sha256(mutation_names).hexdigest()}"
+        )
     checks.check(
         "designated_mutations",
-        all(mutations.values()) and len(mutations) == 38,
+        all(mutations.values()) and len(mutations) == 54,
         f"rejected={sum(mutations.values())}/{len(mutations)}",
     )
     checks.check(
@@ -2107,8 +3583,8 @@ def main() -> int:
         "output controls, and 12,544 output/resource projectors"
     )
     print(
-        "per_site: checked — 18 state-controlled blocks and every identity "
-        "factor on the 34-block, 1,088-site literal carrier"
+        "per_site: checked — 18 state-controlled blocks; every identity factor "
+        "on the 34-block future carrier and 36-block sequential union"
     )
     print(
         "per_mode: checked — both supplied pair channels followed by physical "

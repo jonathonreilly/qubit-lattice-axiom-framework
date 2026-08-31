@@ -41,11 +41,13 @@ reported), `source` (`{pr: <int>, branch: <head branch>}`), `carried_by`
 roll-up in this store, or this ledger line itself — a finding aid, never an
 authority), `review` (`{level: "light", process: ...}`),
 `status` ("archived").
+`science` must be a string of at least 40 characters; `source.pr` a strict
+integer (not a boolean).
 Optional: `forcing` (bool — a negative that forces direction),
-`verdict_pair` (probe-cell verdicts), `promotion_candidate` (bool),
-`disputed` (bool — the PR's published claim failed independent
-recomputation; details in the family roll-up), `promoted_pr` (set when
-promotion lands).
+`verdict_pair` (string; probe-cell verdicts), `promotion_candidate` (bool),
+`disputed` (bool — the PR's published claim or bookkeeping failed
+independent recomputation or reconciliation; details in the family
+roll-up), `promoted_pr` (strict integer; set when promotion lands).
 
 `scripts/check_archive_entry.py` validates all of this.
 
@@ -68,9 +70,11 @@ promotion lands).
 
 - The citation graph is built from markdown beneath `docs/` (excluding
   `docs/audit/`) — see `docs/audit/scripts/build_citation_graph.py` — so
-  `archive/` is outside it and outside every graph-derived audit surface;
-  the audit lane's data lives under `docs/audit/` and does not enumerate
-  `archive/`. Do not link from `docs/` authority surfaces into `archive/`
+  `archive/` is outside it and outside every graph-derived audit surface —
+  and the audit ledger is seeded FROM that graph
+  (`docs/audit/scripts/run_pipeline.sh` run order;
+  `seed_audit_ledger.py`), so `archive/` files cannot become audit rows.
+  Do not link from `docs/` authority surfaces into `archive/`
   except from explicitly historical/work-history notes.
 - `scripts/vocab_lint.py` skips `archive/` entirely (a code-level skip:
   quoted historical vocabulary must survive verbatim). The

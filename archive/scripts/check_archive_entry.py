@@ -7,9 +7,9 @@ performs no audit. Exit 0 = valid; 1 = violations (listed); 2 = usage error.
 Usage:
   python3 archive/scripts/check_archive_entry.py [entry.json ...]
 With no arguments: validates every JSON under archive/ledger/ (flagging any
-file that does not match ledger/<xx>/pr-<N>.json), plus the LEDGER.md 1:1
-index correspondence. With arguments: each path must be a ledger entry file
-under archive/ledger/ (the index check still runs).
+file that does not match ledger/<xx>/pr-<N>.json). With arguments: each path
+must be a ledger entry file under archive/ledger/. The LEDGER.md 1:1 index
+correspondence against the FULL discovered entry set runs in BOTH modes.
 """
 from __future__ import annotations
 
@@ -99,7 +99,7 @@ def check_entry(path: Path) -> list[str]:
     if not isinstance(src, dict) or set(src) != {"pr", "branch"}:
         errs.append(f"{path}: source must be exactly {{pr, branch}}")
     else:
-        if not isinstance(src["pr"], int) or (n is not None and src["pr"] != n):
+        if type(src["pr"]) is not int or (n is not None and src["pr"] != n):
             errs.append(f"{path}: source.pr must be the integer {n}")
         if not nonempty_str(src["branch"]):
             errs.append(f"{path}: source.branch must be a non-empty string")
@@ -116,7 +116,7 @@ def check_entry(path: Path) -> list[str]:
             errs.append(f"{path}: {k} must be boolean")
     if "verdict_pair" in e and not isinstance(e["verdict_pair"], str):
         errs.append(f"{path}: verdict_pair must be a string")
-    if "promoted_pr" in e and not isinstance(e["promoted_pr"], int):
+    if "promoted_pr" in e and type(e["promoted_pr"]) is not int:
         errs.append(f"{path}: promoted_pr must be an integer")
     return errs
 
@@ -148,14 +148,17 @@ def main(argv: list[str]) -> int:
     errs: list[str] = []
     for p in paths:
         errs.extend(check_entry(p))
-    if not argv:
-        if LEDGER_DIR.is_dir():
-            strays = sorted(set(LEDGER_DIR.rglob("*")) - set(paths))
-            errs.extend(f"{s}: stray non-entry file under ledger/" for s in strays
-                        if s.is_file())
-        errs.extend(check_index({p.stem for p in paths if ID_RE.fullmatch(p.stem)}))
-        if not paths and LEDGER_MD.is_file() and INDEX_LINE_RE.search(LEDGER_MD.read_text()):
-            errs.append("LEDGER.md: lists entries but ledger/ holds none")
+    all_entries = (sorted(LEDGER_DIR.rglob("*.json"))
+                   if LEDGER_DIR.is_dir() else [])
+    if not argv and LEDGER_DIR.is_dir():
+        strays = sorted(set(LEDGER_DIR.rglob("*")) - set(all_entries))
+        errs.extend(f"{s}: stray non-entry file under ledger/" for s in strays
+                    if s.is_file())
+    # Index 1:1 runs in BOTH modes, always against the full discovered set.
+    errs.extend(check_index({p.stem for p in all_entries
+                             if ID_RE.fullmatch(p.stem)}))
+    if not all_entries and LEDGER_MD.is_file() and INDEX_LINE_RE.search(LEDGER_MD.read_text()):
+        errs.append("LEDGER.md: lists entries but ledger/ holds none")
 
     for e in errs:
         print(f"FAIL: {e}")

@@ -1,15 +1,23 @@
-# archive/ — the work-history consolidation store
+# archive/ — the science record of the work-history
 
 Status: process documentation, not a science claim surface.
-Scope: work-history for pull requests consolidated out of the open backlog.
+Scope: the science done in work consolidated out of the open backlog.
 
 ## What this is
 
 The secondary store of the two-track repo structure. The primary track is
 `docs/` — full review-loop landing plus the independent audit lane. This
-track holds the recorded science of closed work-history pull requests:
-enough to find, cite, and if needed resurrect any of it, at light review
-cost and with NO claim authority.
+track is a record of SCIENCE, not of pull requests: what was computed,
+shown, refuted, and left open, organized by physics question — enough to
+find it, cite it, and if needed resurrect it, at light review cost and
+with NO claim authority.
+
+**Start at [`SCIENCE.md`](SCIENCE.md)** — the record organized by physics
+question. A PR number in this store is never an identity, only an evidence
+address: the closed PR's branch holds the raw diff, runner script, and
+cache behind a recorded result, which is what a later promotion audit
+needs. Results are the unit of the record; PR ids appear only as
+citations.
 
 Nothing under `archive/` is a claim surface, a carrier of live science, or
 an authority of any kind. Entries quote historical PR titles and note text
@@ -20,9 +28,8 @@ more. To rely on any of it, use the promotion lane below.
 
 ## Layout
 
-- `LEDGER.md` — human index, one line per archived PR.
-- `ledger/<xx>/pr-<N>.json` — one machine-readable entry per archived PR,
-  sharded by `N % 100` (zero-padded two digits).
+- `SCIENCE.md` — the record: the science by question, citing evidence
+  addresses. Read this first.
 - `families/` — roll-up notes for probe families and campaign bands: the
   assembled record of what the member PRs' runners reported (tables of
   cells, reported verdicts, caveats, disputed rows) — cross-member
@@ -31,6 +38,10 @@ more. To rely on any of it, use the promotion lane below.
   here confers no status.
 - `chains/` — chain summaries for the numbered block lineages
   (`CHAINS_INDEX.md`) and cross-cutting methodology notes.
+- `LEDGER.md` + `ledger/` — the provenance index: one entry per consolidated
+  source, keyed by its evidence address (`pr-<N>`). Plumbing, not the
+  record: it exists for integrity checking and for following an old
+  reference to what its source contained.
 
 ## Entry schema (`ledger/<xx>/pr-<N>.json`)
 

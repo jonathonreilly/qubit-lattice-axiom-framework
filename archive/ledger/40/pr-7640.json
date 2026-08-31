@@ -1,7 +1,7 @@
 {
  "id": "pr-7640",
  "title": "feat(nm2hol2xy): 2x1 xy rectangle cyclic-frame holonomy at t+1 on two-axis opposite seed: reverse fails, face fails",
- "science": "2x1 xy rectangle holonomy, global tau=1. At tau=1 exactly the four seeds have a defined frame (I enumerated this), so 10 of the 12 rectangle edges fail on definedness and no product is ever formed \u2014 the verdict is a pure support artifact. DEFECT: unlike its holonomy siblings this runner uses the LEFT action P F(src)=F(dst) but accumulates product = P1*P2*...*Pn, the reverse of the order its own de",
+ "science": "2x1 xy rectangle holonomy, global tau=1. At tau=1 exactly the four seeds have a defined frame (I enumerated this), so 10 of the 12 rectangle edges fail on definedness and no product is ever formed \u2014 the verdict is a pure support artifact. DEFECT: unlike its holonomy siblings this runner uses the LEFT action P F(src)=F(dst) but accumulates product = P1*P2*...*Pn, the reverse of the order its own definition requires; on the one loop where all frames exist (the seed square) that order gives diag(-1,-1,1) while the true holonomy is I. The bug is latent here only because the vertex gate fires first.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

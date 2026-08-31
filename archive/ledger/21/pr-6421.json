@@ -1,9 +1,9 @@
 {
  "id": "pr-6421",
  "title": "feat(cutmin2site): f_cutmin does not fill from the 2-site face-diagonal",
- "science": "f_cutmin (the support-36 F_cut sparsest, tuple (1,0,1,0,0)) does NOT fill from the face-diagonal 2-site seed: halts at 11 with history (2,7,9,10,11) T=4, stuck forever on the single site (0,1,1). The mechanism is the load-bearing part and it is a CAVEAT on this whole carrier: (0,1,1) keeps the word (1,0,0,1,0,1) - three on-patch locked neighbours plus three OFF-PATCH unread slots - which is perman",
+ "science": "f_cutmin (the support-36 F_cut sparsest, tuple (1,0,1,0,0)) does NOT fill from the face-diagonal 2-site seed: halts at 11 with history (2,7,9,10,11) T=4, stuck forever on the single site (0,1,1). The mechanism is the load-bearing part and it is a CAVEAT on this whole carrier: (0,1,1) keeps the word (1,0,0,1,0,1) - three on-patch locked neighbours plus three OFF-PATCH unread slots - which is permanently axis type vertex3, the orbit f_cutmin silences. So the discriminating neighbourhood is manufactured by the off-patch o=0 boundary convention at a patch corner, not by bulk lattice structure. The same applies to #6417/#6420's split stencil (1,1,1,0,0,1) at (1,0,1), two of whose six slots are off-patch zeros. The note's own N7 raises the 'patch-corner artifact' objection and answers only that the predicates do differ - it does not address whether any of these discriminations survive on a carrier without an artificial boundary. References siblings #6415 and #6418, which are outside this reading list.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6421,
   "branch": "physics-loop/toe-lphys-block-cutmin2site-20260815"

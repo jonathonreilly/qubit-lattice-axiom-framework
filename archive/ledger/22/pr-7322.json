@@ -1,7 +1,7 @@
 {
  "id": "pr-7322",
  "title": "physics: construct endogenous spatial Record trial ensemble",
- "science": "Block 36: the only Record-native law-of-large-numbers in this set. Keeping the block-35 rate law and replacing only the empty-neighbor content branch by a Haar-conjugacy orbit, the completed-trial and plus-outcome fields are a translation-equivariant measurable factor of a spatial iid Poisson/mark field, hence spatially stationary and ergodic; completion intensity is strictly positive; so the plus",
+ "science": "Block 36: the only Record-native law-of-large-numbers in this set. Keeping the block-35 rate law and replacing only the empty-neighbor content branch by a Haar-conjugacy orbit, the completed-trial and plus-outcome fields are a translation-equivariant measurable factor of a spatial iid Poisson/mark field, hence spatially stationary and ergodic; completion intensity is strictly positive; so the plus fraction among decoded completed trials converges almost surely to 13/14 by the pointwise ergodic theorem on cubic Folner sets. Also: the static component does NOT determine its historical seed, so the corpus is indexed by its readable terminal rather than an invented history label.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

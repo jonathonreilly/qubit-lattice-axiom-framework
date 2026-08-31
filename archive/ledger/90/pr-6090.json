@@ -1,7 +1,7 @@
 {
  "id": "pr-6090",
  "title": "[physics-loop] toe-axiom-closure block19 \u2014 bounded_theorem \u2014 bounded-support \u2014 affine nonlinear Regge KKT continuation",
- "science": "Block 19: interval-certified (Krawczyk) nonflat coordinate-symmetric constrained Regge root with interval-nonsingular five-normal Hessian, implicit-function sourced stationary branches for all three compact generators, and full KKT closure in which native Regge nonlinearity replaces the eleventh reaction the flat quadratic completion required \u2014 the constructive resolution of the Block-15 compact-c",
+ "science": "Block 19: interval-certified (Krawczyk) nonflat coordinate-symmetric constrained Regge root with interval-nonsingular five-normal Hessian, implicit-function sourced stationary branches for all three compact generators, and full KKT closure in which native Regge nonlinearity replaces the eleventh reaction the flat quadratic completion required \u2014 the constructive resolution of the Block-15 compact-cone wall, and the standing nonflat background for blocks 20-22.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

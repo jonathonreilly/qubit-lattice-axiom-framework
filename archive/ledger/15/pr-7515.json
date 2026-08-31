@@ -1,7 +1,7 @@
 {
  "id": "pr-7515",
  "title": "feat(nm2cycfrmholfx): cyclic-frame holonomy around the x-shifted unit square at t+1 on two-axis opposite seed: reverse fails, face fails",
- "science": "Holonomy around the X-SHIFTED unit square: every edge fails, both loops fail. Forcing negative \u2014 recompute shows the failure is entirely definedness: vertices R,R2 have EMPTY O (O(R,tau)={}) and 2-in/3-in M, so no frame exists there. Shifting the loop one step off the seed cluster destroys the readout while the transport and Orient readouts on the same seed still HOLD. Together with #7518 this sho",
+ "science": "Holonomy around the X-SHIFTED unit square: every edge fails, both loops fail. Forcing negative \u2014 recompute shows the failure is entirely definedness: vertices R,R2 have EMPTY O (O(R,tau)={}) and 2-in/3-in M, so no frame exists there. Shifting the loop one step off the seed cluster destroys the readout while the transport and Orient readouts on the same seed still HOLD. Together with #7518 this shows the holonomy readout measures where frames exist, not curvature.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

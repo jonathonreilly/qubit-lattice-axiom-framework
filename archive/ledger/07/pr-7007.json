@@ -3,7 +3,7 @@
  "title": "feat(s2face): c2d4-plus-soft-ridge face reverse fails k=7, holds 1-6 and 8",
  "science": "s2 face table on B_16(0): axis 6,12,18,22,24,26,29,35; face 4,8,10,12,15,18,21,23; holds k=1..6 and 8, FAILS k=7 (841 < 882). Sharp when read against #6969: the s2 face arrivals equal c2d4's at k=1..7 but the axis is CHEAPER (29 vs 31), and that alone kills the k=7 face bit. So the soft ridge loses on both comparators at once.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=holds k=1..6,8 / fails k=7 (face bits, n",
+ "verdict_pair": "reverse=absent face=holds k=1..6,8 / fails k=7 (face bits, not family verdicts)",
  "source": {
   "pr": 7007,
   "branch": "physics-loop/toe-lphys-block-s2face-20260815"

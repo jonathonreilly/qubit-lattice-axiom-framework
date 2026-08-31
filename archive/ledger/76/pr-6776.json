@@ -1,7 +1,7 @@
 {
  "id": "pr-6776",
  "title": "feat(011bk16): (0,1,1) body reverse on B16 is yes yes no no no",
- "science": "(0,1,1) body-diagonal k-sweep on B_16(0), k=1..5: yes, yes, no, no, no -- the same pattern nu gives (#6773), so the body cutoff at k=3 is rule-independent across both reversers. Carries a second exact identity to pair with #6774's face one: under (0,1,1) the body arrivals are exactly the l1 hop count, t(k,k,k)=3k for all k=1..5 (3,6,9,12,15), because a monotone support-nondecreasing walk uses only",
+ "science": "(0,1,1) body-diagonal k-sweep on B_16(0), k=1..5: yes, yes, no, no, no -- the same pattern nu gives (#6773), so the body cutoff at k=3 is rule-independent across both reversers. Carries a second exact identity to pair with #6774's face one: under (0,1,1) the body arrivals are exactly the l1 hop count, t(k,k,k)=3k for all k=1..5 (3,6,9,12,15), because a monotone support-nondecreasing walk uses only cost-1 hops.",
  "forcing": false,
  "verdict_pair": "body reverse by k: YES k=1,2; NO k=3,4,5",
  "source": {

@@ -1,9 +1,9 @@
 {
  "id": "pr-6422",
  "title": "feat(diff2count): 4 of 66 two-site seeds split f_min from f_L1",
- "science": "Exhaustive two-site census that generalizes and classifies #6417's single distinguishing seed. Over all C(12,2)=66 two-site seeds: N_split=4, N_fill_L1=62, N_fill_min=58, N_fill_both=58. The splits are EXACTLY the four displacement-(2,1,1) pairs (opposite corners of the two-cube), and every split has the same signature - f_L1 (2,8,12) fill, f_min (2,8,10) no fill. Three further exact facts: (i) N_",
+ "science": "Exhaustive two-site census that generalizes and classifies #6417's single distinguishing seed. Over all C(12,2)=66 two-site seeds: N_split=4, N_fill_L1=62, N_fill_min=58, N_fill_both=58. The splits are EXACTLY the four displacement-(2,1,1) pairs (opposite corners of the two-cube), and every split has the same signature - f_L1 (2,8,12) fill, f_min (2,8,10) no fill. Three further exact facts: (i) N_fill_min = N_fill_both, so f_min's filling seeds are a strict subset of f_L1's; (ii) there is NO history-only split - histories differ iff fill bits differ; (iii) the four long-axis displacement-(2,0,0) pairs fail to fill under both maps, halting at 8. Includes the complete displacement-class table with the common history per class. Supersedes #6417 for |S|=2.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6422,
   "branch": "physics-loop/toe-lphys-block-diff2count-20260815"

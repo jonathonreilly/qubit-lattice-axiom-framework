@@ -1,9 +1,9 @@
 {
  "id": "pr-6315",
  "title": "feat(kform): first-wave formations from the corner seed have k=1",
- "science": "Bounded_theorem note, no probe cell. Proves the general BOUND k in {1,2,3} for every forming site (each component of 3n lies in {-1,0,1}), and gives the wave-by-wave spectral-type table from the corner seed: first wave = the three axis neighbours, all k=1; second wave = the three face-diagonals, all k=2; the space diagonal (1,1,1) reaches k=3 only after that; and the B-front splits -- (2,0,0) has ",
+ "science": "Bounded_theorem note, no probe cell. Proves the general BOUND k in {1,2,3} for every forming site (each component of 3n lies in {-1,0,1}), and gives the wave-by-wave spectral-type table from the corner seed: first wave = the three axis neighbours, all k=1; second wave = the three face-diagonals, all k=2; the space diagonal (1,1,1) reaches k=3 only after that; and the B-front splits -- (2,0,0) has k=1 and forms while the other three B-front vertices have k=0 and STALL unread. That partial stall is a real structural fact (the two-cube does not fill uniformly) and ties back to the opposite-cancellation of #6301. Closes the blocker 'spectral type of the gravity step first records is unpinned'. 12/12 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=12 FAIL=0)",
  "source": {
   "pr": 6315,
   "branch": "physics-loop/toe-lphys-block-kform-20260814"

@@ -3,7 +3,7 @@
  "title": "feat(q1tot): among Q_* maps, cov1=12 iff vertex3=1",
  "science": "Second exact identity at |S|=1: inside Q_*={wt1=1 and adj2=1} (8 maps), cov1=12 iff vertex3=1 (N_v3=N_tot=N_both=4; the vertex3=0 half all sit at cov1=8). With #6516 this fully resolves cov1 into three levels {0, 8, 12} by two remaining bits.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut totality identity; no (reverse",
+ "verdict_pair": "reverse=none face=none (f_cut totality identity; no (reverse,face) pair stated)",
  "source": {
   "pr": 6522,
   "branch": "physics-loop/toe-lphys-block-q1tot-20260815"

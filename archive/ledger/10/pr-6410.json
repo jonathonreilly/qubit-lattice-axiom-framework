@@ -1,9 +1,9 @@
 {
  "id": "pr-6410",
  "title": "feat(rival8): display the eight F_cut 1-site filler remaining-bit tuples",
- "science": "The taxonomy that SUBSUMES #6402/#6403/#6404/#6405: it lists all eight F_cut 1-site fillers explicitly as (wt1,opp2,adj2,vertex3,mixed3) tuples, and the list is exactly wt1=1, adj2=1 with (opp2,vertex3,mixed3) running over all 2^3 combinations - i.e. the filler set is a 3-dimensional coordinate subcube, N_distinct=8, adj2=1 universally, exactly one row equals L1's (1,0,1,1,1). Every one-bit count ",
+ "science": "The taxonomy that SUBSUMES #6402/#6403/#6404/#6405: it lists all eight F_cut 1-site fillers explicitly as (wt1,opp2,adj2,vertex3,mixed3) tuples, and the list is exactly wt1=1, adj2=1 with (opp2,vertex3,mixed3) running over all 2^3 combinations - i.e. the filler set is a 3-dimensional coordinate subcube, N_distinct=8, adj2=1 universally, exactly one row equals L1's (1,0,1,1,1). Every one-bit count and AND in #6402-#6405 follows arithmetically from this one table, and this note's own N7 concedes the point ('among eight maps that already vary on (opp2,vertex3,mixed3) with wt1=adj2=1 forced by fill, writing the eight combinations is tautological'). If only one member of the #6402-#6405 sub-series is kept, this is the one.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6410,
   "branch": "physics-loop/toe-lphys-block-rival8-20260815"

@@ -1,7 +1,7 @@
 {
  "id": "pr-6378",
  "title": "feat: cycle 796 wall homogeneity and the fold as entry stabilizer",
- "science": "Cycle 796: wall homogeneity. Exactly the 96 of the 384 signed coordinate maps that fix the first axis carry the wall of the interface matrix to itself (all 288 others fail); that action is TRANSITIVE on the 48 wall entries; a counting identity then forces every entry stabilizer to have order 2 and identifies it with that entry own fold as computed by an independent per-fiber search; a conjugation ",
+ "science": "Cycle 796: wall homogeneity. Exactly the 96 of the 384 signed coordinate maps that fix the first axis carry the wall of the interface matrix to itself (all 288 others fail); that action is TRANSITIVE on the 48 wall entries; a counting identity then forces every entry stabilizer to have order 2 and identifies it with that entry own fold as computed by an independent per-fiber search; a conjugation law carries folds along the action at all 4608 map-entry pairs, giving a single conjugacy class of 6 folds each serving 8 fibers; and the 48 entries split 8 light / 32 middle / 8 heavy by the union sizes of their equal-union exchanges, a split stable across a second generic point frame yet not preserved by the action.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-7298",
  "title": "feat(nm12fail): 1-in 2-out split on #7188: reverse fails, face fails",
- "science": "z-symmetric 3-site seed, x-probes (the #7188 cover-FAIL cell): the only cell in the band where the readout family separates four ways at once - axis-cover FAILs at A,C,D (union misses e_3) while leftover-empty face, leftover-of-M face, leftover-of-O face and signed-O exist-opposite face all HOLD against split face FAIL. Forcing negative: axis-cover is not a law of the perp-step process; it fails w",
+ "science": "z-symmetric 3-site seed, x-probes (the #7188 cover-FAIL cell): the only cell in the band where the readout family separates four ways at once - axis-cover FAILs at A,C,D (union misses e_3) while leftover-empty face, leftover-of-M face, leftover-of-O face and signed-O exist-opposite face all HOLD against split face FAIL. Forcing negative: axis-cover is not a law of the perp-step process; it fails whenever O is thin.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

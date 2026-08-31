@@ -1,7 +1,7 @@
 {
  "id": "pr-6690",
  "title": "feat(bitall): leftover-frame f fires on all 12 realizing hosts",
- "science": "CONSTRUCTIVE CULMINATION of the band, not a probe cell: the leftover-frame-positive section f fires on ALL TWELVE perpendicular weight-4 masks - N_rebuild=12, N_fire=12, no lex-first failure. Full table given: for each of the 12 masks the lex-first realizing unequal-radius 3-ball host (centres, radii, v), the seed-radii lock ticks, the age bit b, the resulting f, N_new=1 and U persisting. Four mas",
+ "science": "CONSTRUCTIVE CULMINATION of the band, not a probe cell: the leftover-frame-positive section f fires on ALL TWELVE perpendicular weight-4 masks - N_rebuild=12, N_fire=12, no lex-first failure. Full table given: for each of the 12 masks the lex-first realizing unequal-radius 3-ball host (centres, radii, v), the seed-radii lock ticks, the age bit b, the resulting f, N_new=1 and U persisting. Four masks per full axis x/y/z; b=0 on eight hosts and b=1 on four. Notably the lex-first realizing host of the mask #6688 used is a DIFFERENT host with radii (2,1,2) and b=0, giving f=(-,0,+,0,-,+) - so the section is exercised on genuinely distinct data, not a restatement.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-5943",
  "title": "[physics-loop][review-loop] toe-time blockG9 (STACKED on #5941) \u2014 Cycle 884: bounded theorem (GB-S2 anatomy: p=1 and orientation forced; the",
- "science": "GB-S2 anatomy: the landed chart (13 = 2 forced + 1 gauge + 2 eliminated + 8 free) with p=1 and orientation forced, the honest chart discovering {mu, c4}, and the proof that the landed kernel is non-harmonic for every epsilon; names GBW1 as the next door. The chart is restated as step 1 of the G29 reconciliation arithmetic (and rebuilt by AST in 896 dictionary); the non-harmonicity is re-proven as ",
+ "science": "GB-S2 anatomy: the landed chart (13 = 2 forced + 1 gauge + 2 eliminated + 8 free) with p=1 and orientation forced, the honest chart discovering {mu, c4}, and the proof that the landed kernel is non-harmonic for every epsilon; names GBW1 as the next door. The chart is restated as step 1 of the G29 reconciliation arithmetic (and rebuilt by AST in 896 dictionary); the non-harmonicity is re-proven as the premise of 900 repair.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

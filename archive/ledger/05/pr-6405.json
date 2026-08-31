@@ -1,9 +1,9 @@
 {
  "id": "pr-6405",
  "title": "feat(adj1fill): all eight F_cut fillers fire adj2",
- "science": "Zero-information member of the chain, and the note admits it. N_adj1 = 8 of 8: EVERY F_cut 1-site filler fires adj2 (the 12-cell two-axis weight-2 orbit (2,0,1)), so the bit cuts nothing. Its own N7 steelman states the reason - 'adj2=1 is forced by the fill requirement itself, so counting N_adj1=8 is just restating that the eight maps fill' - because the three face-diagonal sites (1,1,0),(1,0,1),(",
+ "science": "Zero-information member of the chain, and the note admits it. N_adj1 = 8 of 8: EVERY F_cut 1-site filler fires adj2 (the 12-cell two-axis weight-2 orbit (2,0,1)), so the bit cuts nothing. Its own N7 steelman states the reason - 'adj2=1 is forced by the fill requirement itself, so counting N_adj1=8 is just restating that the eight maps fill' - because the three face-diagonal sites (1,1,0),(1,0,1),(0,1,1) see exactly an adj2 neighborhood after the first wave and must lock. Together with #6404's wt1=1 this pins the forced bits of the filler subcube: {wt1, adj2} forced, {opp2, mixed3, vertex3} free, 2^3=8. One genuinely useful side fact: Hamming parity is even on every weight-2 cell so it kills adj2, which is exactly why it cannot fill.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6405,
   "branch": "physics-loop/toe-lphys-block-adj1fill-20260815"

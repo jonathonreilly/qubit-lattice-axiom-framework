@@ -3,7 +3,7 @@
  "title": "feat(nmot2x2): O two-tick composition on #7214: reverse UNDEFINED, face UNDEFINED, composition fails",
  "science": "O at tau0=t vs tau1=t+1 on the #7214 x-probes; O(A,B,C at t) empty, filled at t+1, so composition=fail. Both halves are BFS artifacts: a site emits nothing at its own formation tick, and children form only at t+1. The note's own N7 raises 'composition fail is only tautological because children form at t+1' and does not rebut it.",
  "forcing": false,
- "verdict_pair": "reverse=UNDEFINED->hold face=UNDEFINED->hold composition=fai",
+ "verdict_pair": "reverse=UNDEFINED->hold face=UNDEFINED->hold composition=fail",
  "source": {
   "pr": 7254,
   "branch": "physics-loop/toe-lphys-block-nmot2x2-20260815"

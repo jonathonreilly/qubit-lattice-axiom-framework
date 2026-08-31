@@ -1,7 +1,7 @@
 {
  "id": "pr-7398",
  "title": "feat(nm2splt2slz): 1-in 2-out at t vs t+1 on two-axis same-lock z-probes: reverse fails, face fail then HOLD",
- "science": "Split t vs t+1 on SAME-LOCK z-probes - the member that exposes the band's seed-convention artifact. At A=(0,0,1), O(A,t)={+e_2} is already non-empty because the partner seed (0,1,1) is a seed whose seed-letter +e_2 is exactly the step from A; Axis(M) meets Axis(O), so cover and split fail at A permanently. This single fictitious outgoing letter is the ONLY thing that distinguishes the same-lock ce",
+ "science": "Split t vs t+1 on SAME-LOCK z-probes - the member that exposes the band's seed-convention artifact. At A=(0,0,1), O(A,t)={+e_2} is already non-empty because the partner seed (0,1,1) is a seed whose seed-letter +e_2 is exactly the step from A; Axis(M) meets Axis(O), so cover and split fail at A permanently. This single fictitious outgoing letter is the ONLY thing that distinguishes the same-lock cell from the opposite cell anywhere in the band.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail-then-HOLD (composition fail)",
  "source": {

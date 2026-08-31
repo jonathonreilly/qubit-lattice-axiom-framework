@@ -3,7 +3,7 @@
  "title": "feat(c5bit3): no 3-bit remaining-bit Q equals cov5>0",
  "science": "reverse=N/A face=N/A (3-bit selector search; all 20 candidates fail, matching_candidates=[], N_pos=21)",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (3-bit selector search; all 20 candidat",
+ "verdict_pair": "reverse=N/A face=N/A (3-bit selector search; all 20 candidates fail, matching_candidates=[], N_pos=21)",
  "source": {
   "pr": 6573,
   "branch": "physics-loop/toe-lphys-block-c5bit3-20260815"

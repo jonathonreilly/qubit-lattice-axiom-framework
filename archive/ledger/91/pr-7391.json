@@ -1,7 +1,7 @@
 {
  "id": "pr-7391",
  "title": "feat(nm2oreadx): neighbor-read of O at t+1 on two-axis opposite x-probes: reverse fails, face fails",
- "science": "The band's sharpest forcing negative and its only neighbor-read-of-O member: on opposite x-probes NO formed six-neighbor reproduces O as a signed set at ANY probe (matches = empty at all four), while neighbor-read of M HOLDs at all four on the same cell. Also records the vacuous-match artifact: at tau=t all O are empty, so neighbor-read 'HOLDs' at A,B,C by matching empty against empty. DEFECT: its",
+ "science": "The band's sharpest forcing negative and its only neighbor-read-of-O member: on opposite x-probes NO formed six-neighbor reproduces O as a signed set at ANY probe (matches = empty at all four), while neighbor-read of M HOLDs at all four on the same cell. Also records the vacuous-match artifact: at tau=t all O are empty, so neighbor-read 'HOLDs' at A,B,C by matching empty against empty. DEFECT: its local `simultaneous` returns UNDEFINED on empty sets, contradicting #7386's explicit 'empty M or empty O fails by declaration, and is not UNDEFINED'.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

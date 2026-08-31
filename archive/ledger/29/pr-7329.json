@@ -1,7 +1,7 @@
 {
  "id": "pr-7329",
  "title": "physics: construct bounded innovation dilation",
- "science": "Block 43: one finite full-rank positive LOCAL action supplies both outputs that previously needed the K_W (+) S product sector. With c=1/2 at m=1, S_a - cI is strictly diagonally dominant on all four pins, so the signed-edge/on-site Gram B_a with b_(a,e)=sqrt(|w|)(e_i + sign(w) e_j) and on-site remainder gives exactly B_a B_a^dagger = S_a - cI with every column on one site or one existing S-graph ",
+ "science": "Block 43: one finite full-rank positive LOCAL action supplies both outputs that previously needed the K_W (+) S product sector. With c=1/2 at m=1, S_a - cI is strictly diagonally dominant on all four pins, so the signed-edge/on-site Gram B_a with b_(a,e)=sqrt(|w|)(e_i + sign(w) e_j) and on-site remainder gives exactly B_a B_a^dagger = S_a - cI with every column on one site or one existing S-graph edge. The action A_a(phi,zeta)=c^-1||q_a phi - B_a zeta||^2 + ||zeta||^2 is a congruence of a positive diagonal by an invertible triangular map, so det = c^-N |det q_a|^2 giving p_det(a) BEFORE any outcome source, and its visible covariance is exactly Herm(q_a^-1) = K_W,a^-1 - the arc W9 kernel. The dense K_W precision and the alternative-dependent S spectator both leave the microscopic law.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

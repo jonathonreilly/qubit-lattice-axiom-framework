@@ -1,7 +1,7 @@
 {
  "id": "pr-7059",
  "title": "feat(nsfrm): formdraw PVM reverse/face hold on some (4 of 16)",
- "science": "Formdraw occupancy kernel n_mu = (o_{+mu} - o_{-mu})/3 computed from strictly-earlier six-neighbour occupancy: n(A)=(-1/3,1/3,0) k=2, n(B)=(-1/3,0,-1/3) k=2, n(C)=n(D)=(-1/3,0,0) k=1. Both rank-1 letters are legal whenever n != 0, so 16 combinations, reverse 4/16 and face 4/16 -> some/some. The `some` verdict is forced by the free-letter construction: it can only ever be `some` (all n != 0) or UND",
+ "science": "Formdraw occupancy kernel n_mu = (o_{+mu} - o_{-mu})/3 computed from strictly-earlier six-neighbour occupancy: n(A)=(-1/3,1/3,0) k=2, n(B)=(-1/3,0,-1/3) k=2, n(C)=n(D)=(-1/3,0,0) k=1. Both rank-1 letters are legal whenever n != 0, so 16 combinations, reverse 4/16 and face 4/16 -> some/some. The `some` verdict is forced by the free-letter construction: it can only ever be `some` (all n != 0) or UNDEFINED.",
  "forcing": false,
  "verdict_pair": "reverse=some face=some",
  "source": {

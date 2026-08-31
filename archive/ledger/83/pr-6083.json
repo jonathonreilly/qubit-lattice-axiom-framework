@@ -1,7 +1,7 @@
 {
  "id": "pr-6083",
  "title": "science(gravity): derive positive two-stream dilation boundary",
- "science": "Block 15: proves the tick-plus-diagonal superposition is a genuine two-stream mixture (positive determinant, subluminal mean speed beta=sqrt(2)-1, common tensor t x t + v x v/sqrt 2), and derives the exact compact separator ell=M(0)(2I), Q(0)ell=0: every nonzero nonnegative actual-edge source lies outside the bare compact flat quadratic range. This compact-cone obstruction is the wall the block 16",
+ "science": "Block 15: proves the tick-plus-diagonal superposition is a genuine two-stream mixture (positive determinant, subluminal mean speed beta=sqrt(2)-1, common tensor t x t + v x v/sqrt 2), and derives the exact compact separator ell=M(0)(2I), Q(0)ell=0: every nonzero nonnegative actual-edge source lies outside the bare compact flat quadratic range. This compact-cone obstruction is the wall the block 16-21 network/nonlinear-Regge sub-arc is built to break.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

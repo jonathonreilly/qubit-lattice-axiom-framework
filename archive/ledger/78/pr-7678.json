@@ -1,7 +1,7 @@
 {
  "id": "pr-7678",
  "title": "feat(nm2frm2szr): neighbor-read of directed 2-step cyclic-frame transport along -e3 at t+1 on two-axis opposite seed: reverse fails, face HO",
- "science": "Definitional root of the whole nm2frm* band: the only member carrying the full letter definition (F, Orient, directed edge, 2-step, neighbour-read), a 22-row N1 alternative-route table and an N1-N8 no-go gate. Its gate disposition marks 'the predicate equals nm2ax12z 1-in 2-out split HOLD' as FAIL/DO-NOT-SHIP, but the directed-edge predicate provably IS split-at-both-endpoints; the rebuttal only t",
+ "science": "Definitional root of the whole nm2frm* band: the only member carrying the full letter definition (F, Orient, directed edge, 2-step, neighbour-read), a 22-row N1 alternative-route table and an N1-N8 no-go gate. Its gate disposition marks 'the predicate equals nm2ax12z 1-in 2-out split HOLD' as FAIL/DO-NOT-SHIP, but the directed-edge predicate provably IS split-at-both-endpoints; the rebuttal only tests split at the probe, never split along the path.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=HOLD",
  "source": {

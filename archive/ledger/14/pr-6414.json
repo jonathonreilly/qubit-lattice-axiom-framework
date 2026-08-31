@@ -1,9 +1,9 @@
 {
  "id": "pr-6414",
  "title": "feat(cutsparse): F_cut support min is 36, not f_L1",
- "science": "Sparsity inside F_cut, plus the batch's most useful reference table and a NOTATION COLLISION worth flagging. Result: m_cut=36 attained by exactly one of the eight F_cut fillers, tuple (1,0,1,0,0) - again NOT f_L1 (supp 56). Gives the exact support formula supp = 12*wt1 + 6*opp2 + 24*adj2 + 8*vertex3 + 12*mixed3 (pair orbits counted with both members) and the full eight-row table of tuples, support",
+ "science": "Sparsity inside F_cut, plus the batch's most useful reference table and a NOTATION COLLISION worth flagging. Result: m_cut=36 attained by exactly one of the eight F_cut fillers, tuple (1,0,1,0,0) - again NOT f_L1 (supp 56). Gives the exact support formula supp = 12*wt1 + 6*opp2 + 24*adj2 + 8*vertex3 + 12*mixed3 (pair orbits counted with both members) and the full eight-row table of tuples, supports and histories, from which one sees the halt history is fixed by the vertex3 bit alone: vertex3=1 gives (1,4,8,11,12), vertex3=0 gives (1,4,8,10,11,12). COLLISION: the five-bit tuple (1,0,1,1,0) names TWO different maps across this batch - inside F_cut it is completed by complement-evenness to support 44 (a filler here and in #6413), while #6407/#6411 use the same tuple for f_min with support 26, which is outside F_cut. This runner prints both on adjacent lines ('(1,0,1,1,0):44' among the fillers and 'global_min_bits=(1,0,1,1,0) in_F_cut=False'). No arithmetic is wrong, but the five-bit name under-determines a map outside F_cut and is used unguarded in #6407 and #6411.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6414,
   "branch": "physics-loop/toe-lphys-block-cutsparse-20260815"

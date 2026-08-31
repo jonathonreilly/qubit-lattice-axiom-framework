@@ -1,9 +1,9 @@
 {
  "id": "pr-6912",
  "title": "feat(ofkface): out-face face reverse holds k=1..5,7,8 fails k=6",
- "science": "omega face table on B_16 (axis 6,12,18,24,26,28,32,38; face 4,8,12,16,18,20,22,24) plus the rho3 face table for contrast. Claims 'k=6 is the only fail'. DEFECT: I recomputed on B_60 \u2014 omega face reverse fails for EVERY k>=6; the reported k=7 and k=8 holds are ball-wall artifacts of t(14,0,0)=32 and t(16,0,0)=38 on B_16 (interior values 30 and 32). The out-face clause therefore makes face reverse s",
+ "science": "omega face table on B_16 (axis 6,12,18,24,26,28,32,38; face 4,8,12,16,18,20,22,24) plus the rho3 face table for contrast. Claims 'k=6 is the only fail'. DEFECT: I recomputed on B_60 \u2014 omega face reverse fails for EVERY k>=6; the reported k=7 and k=8 holds are ball-wall artifacts of t(14,0,0)=32 and t(16,0,0)=38 on B_16 (interior values 30 and 32). The out-face clause therefore makes face reverse strictly WORSE than kappa (dies at k=6 rather than k=8) while improving same-k reverse \u2014 a trade-off no member states.",
  "forcing": false,
- "verdict_pair": "reverse=not-scored face=fails k=6 only on B_16 (fails all k>",
+ "verdict_pair": "reverse=not-scored face=fails k=6 only on B_16 (fails all k>=6 off-host)",
  "source": {
   "pr": 6912,
   "branch": "physics-loop/toe-lphys-block-ofkface-20260815"

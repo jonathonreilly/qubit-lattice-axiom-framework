@@ -1,7 +1,7 @@
 {
  "id": "pr-7730",
  "title": "physics: isolate direct event-functional normalization failure",
- "science": "Derives the labeled action/event intertwiner diag(z_in I16, z_out I16) with U(1)^2 gauge and reconstructs all seven Schur restrictions on six carriers, then rejects the preregistered unrescaled typed determinant functional at the first exact D1 gate: all eight raw weights equal ~3.9383e13 instead of 1/8, sum ~3.15064e14 instead of 1; gluing, the 729-word census, and the selector are sealed by the ",
+ "science": "Derives the labeled action/event intertwiner diag(z_in I16, z_out I16) with U(1)^2 gauge and reconstructs all seven Schur restrictions on six carriers, then rejects the preregistered unrescaled typed determinant functional at the first exact D1 gate: all eight raw weights equal ~3.9383e13 instead of 1/8, sum ~3.15064e14 instead of 1; gluing, the 729-word census, and the selector are sealed by the preregistered stop.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

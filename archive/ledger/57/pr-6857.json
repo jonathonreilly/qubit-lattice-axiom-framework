@@ -1,7 +1,7 @@
 {
  "id": "pr-6857",
  "title": "physics: heal the atlas with the coboundary family and pin the mechanism (block 141)",
- "science": "The coboundary healing family Omega_ij=(x_j-x_i)Omega*: all 16 dressed edges exactly nilpotent with zero atlas curvature, healing the companion to rank 4 on 14/16 edges, proven optimal by the exact cocycle converse (Omega_ii=0 forced; the two cover-time-odd self-edges stay rank 3 -- the recurring forced-self-edge residue); also corrects 137s mechanism attribution to cover-time support. This is the",
+ "science": "The coboundary healing family Omega_ij=(x_j-x_i)Omega*: all 16 dressed edges exactly nilpotent with zero atlas curvature, healing the companion to rank 4 on 14/16 edges, proven optimal by the exact cocycle converse (Omega_ii=0 forced; the two cover-time-odd self-edges stay rank 3 -- the recurring forced-self-edge residue); also corrects 137s mechanism attribution to cover-time support. This is the dressed action underlying 143-149 (149 certifies the healing layer carrier-free) and one half of the b141/b142 re-pin disposition standing at the owners bar (LANDING_CORE section 5).",
  "forcing": false,
  "verdict_pair": "",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-7631",
  "title": "feat(nm2frm1spy): directed 1-step cyclic-frame transport along +e2 at t+1 on two-axis opposite seed: reverse fails, face fails",
- "science": "+e2 1-step, two-axis opposite, GLOBAL tau=1. DEFECT: the note states the cut as 'Let t(q) be the formation tick. The cut is tau=t+1' \u2014 a per-site rule \u2014 but the runner reads every site, including destinations with t>0, at tau=1. Under the note's own rule this cell is reverse=HOLD, not fail; I recomputed both. Reported bits are the same sequence ('hold','fail') for reverse and for face, a coinciden",
+ "science": "+e2 1-step, two-axis opposite, GLOBAL tau=1. DEFECT: the note states the cut as 'Let t(q) be the formation tick. The cut is tau=t+1' \u2014 a per-site rule \u2014 but the runner reads every site, including destinations with t>0, at tau=1. Under the note's own rule this cell is reverse=HOLD, not fail; I recomputed both. Reported bits are the same sequence ('hold','fail') for reverse and for face, a coincidence the note does not flag.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

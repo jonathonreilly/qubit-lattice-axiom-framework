@@ -1,7 +1,7 @@
 {
  "id": "pr-6860",
  "title": "physics: prove the massless seam verdict on shear-free carriers (block 144)",
- "science": "The shear-free wall: zero shear diagonalizes the quotiented Hodge (exact slice law), the seam Gram vanishes identically so the mass leaves every healed pairing entirely, and no healed lattice-theta pairing is PSD (census {(2,0,6)x6,(6,0,2)x6} with an exact negative-minor certificate); plus the carrier-driven 0/256 reflection blocker via the slice-fixing certificate. Block 145 N2 wall-independence ",
+ "science": "The shear-free wall: zero shear diagonalizes the quotiented Hodge (exact slice law), the seam Gram vanishes identically so the mass leaves every healed pairing entirely, and no healed lattice-theta pairing is PSD (census {(2,0,6)x6,(6,0,2)x6} with an exact negative-minor certificate); plus the carrier-driven 0/256 reflection blocker via the slice-fixing certificate. Block 145 N2 wall-independence audit certifies this wall is logically distinct from 145 (distinct object/mechanism/terminal), so it is not carried.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

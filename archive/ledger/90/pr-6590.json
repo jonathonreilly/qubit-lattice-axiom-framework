@@ -1,9 +1,9 @@
 {
  "id": "pr-6590",
  "title": "feat(c10zero): lex-first Q10-false map first-refuses adj2",
- "science": "Introduces a diagnostic object absent from the rest of the family: the 'first remaining-bit refuse' (tick, site, orbit type) - a mechanism for WHY the Q10-false maps have cov10=0, not just a count. Result: from the lex-first 10-site f1 fill S, f_z=(0,0,0,0,0) first refuses at tick 0, site (2,1,0), orbit type adj2, N_refuse=2 (sites (2,1,0),(2,1,1), both adj2). Runner check thm1-q10-false-are-the-c",
+ "science": "Introduces a diagnostic object absent from the rest of the family: the 'first remaining-bit refuse' (tick, site, orbit type) - a mechanism for WHY the Q10-false maps have cov10=0, not just a count. Result: from the lex-first 10-site f1 fill S, f_z=(0,0,0,0,0) first refuses at tick 0, site (2,1,0), orbit type adj2, N_refuse=2 (sites (2,1,0),(2,1,1), both adj2). Runner check thm1-q10-false-are-the-cov10-zeros independently re-verifies cov10>0 iff Q10 on all 32 maps.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (refuse diagnostic; first_refuse_tick=0",
+ "verdict_pair": "reverse=N/A face=N/A (refuse diagnostic; first_refuse_tick=0, site=(2,1,0), type=adj2, N_refuse=2, N_pos=28)",
  "source": {
   "pr": 6590,
   "branch": "physics-loop/toe-lphys-block-c10zero-20260815"

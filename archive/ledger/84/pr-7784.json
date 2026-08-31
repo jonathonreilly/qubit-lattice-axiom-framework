@@ -1,7 +1,7 @@
 {
  "id": "pr-7784",
  "title": "[physics-loop] Block232: J_r temporal-spatial coarse response",
- "science": "The lane keystone: exact positive temporal-spatial compression defect D=J*S^2J-(J*SJ)^2=[(I-Q)SJ]*[(I-Q)SJ]>=0, whose leading term is a GENERATED nonconstant coarse interaction (Gamma(+)=256/n^2, Gamma(-)=0 Z2 control), plus the arbitrary-r centered-convolution response, the generated non-scalar coarse-kinetic descendant K=2gamma*A_c+uI at eps^3 lambda^2, the complete determinant minimal response ",
+ "science": "The lane keystone: exact positive temporal-spatial compression defect D=J*S^2J-(J*SJ)^2=[(I-Q)SJ]*[(I-Q)SJ]>=0, whose leading term is a GENERATED nonconstant coarse interaction (Gamma(+)=256/n^2, Gamma(-)=0 Z2 control), plus the arbitrary-r centered-convolution response, the generated non-scalar coarse-kinetic descendant K=2gamma*A_c+uI at eps^3 lambda^2, the complete determinant minimal response resummed as a bond-dimension-4 automaton with a q-uniform Birkhoff connected-interval locality norm, and the first exact vector entries. Forcing negative embedded: the Block220/221 metric/source derivative is undefined on the pure-gauge carrier (no coframe/matter/source measures) - the pivot that redirected the lane from metric coupling to the joint space-time square. Defines BC_c+CB, J3/Q, [C,Q]=0 for every later block including the terminal.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

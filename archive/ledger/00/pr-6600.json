@@ -1,9 +1,9 @@
 {
  "id": "pr-6600",
  "title": "feat(mix1c10): Q10-true extra first-refuses adj2 on f1 ten-site fill",
- "science": "Mechanism result plus a cross-member redundancy: names the first remaining-bit refuse of the Q10-true extra f_m=(0,0,0,0,1) as tick 0, site (2,1,0), type adj2, N_refuse=2 - byte-identical to the refuse #6590 reports for the completely different map (0,0,0,0,0), because both unlocked sites of the seed S present orbit type adj2, so ANY map with adj2=0 yields the same triple. The refuse diagnostic th",
+ "science": "Mechanism result plus a cross-member redundancy: names the first remaining-bit refuse of the Q10-true extra f_m=(0,0,0,0,1) as tick 0, site (2,1,0), type adj2, N_refuse=2 - byte-identical to the refuse #6590 reports for the completely different map (0,0,0,0,0), because both unlocked sites of the seed S present orbit type adj2, so ANY map with adj2=0 yields the same triple. The refuse diagnostic therefore has no discriminating power on this seed, and #6590/#6591/#6600 are three members reporting one seed-forced fact. Also aggregates cov_k(f_m)=0 for k in {2,4,5,6,8} with cov10(f_m)=4 in one place.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (refuse diagnostic; first_refuse_tick=0",
+ "verdict_pair": "reverse=N/A face=N/A (refuse diagnostic; first_refuse_tick=0, site=(2,1,0), type=adj2, N_refuse=2, cov10_f_m=4)",
  "source": {
   "pr": 6600,
   "branch": "physics-loop/toe-lphys-block-mix1c10-20260815"

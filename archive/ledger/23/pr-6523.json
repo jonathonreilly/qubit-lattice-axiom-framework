@@ -3,7 +3,7 @@
  "title": "feat(mix1c2orb): N_orb=1 of mix1 eight two-site fills",
  "science": "reverse=none face=none (f_cut fill-set orbit census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut fill-set orbit census; no (rev",
+ "verdict_pair": "reverse=none face=none (f_cut fill-set orbit census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6523,
   "branch": "physics-loop/toe-lphys-block-mix1c2orb-20260815"

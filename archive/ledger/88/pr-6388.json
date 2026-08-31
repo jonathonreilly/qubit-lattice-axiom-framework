@@ -1,9 +1,9 @@
 {
  "id": "pr-6388",
  "title": "feat(ftwoseed): f_two first wave exists from a 2-site face-diagonal seed",
- "science": "Bounded_theorem note, no probe cell. COMPLETE SEED CLASSIFICATION for the rival member f_two, an if-and-only-if result: (1) EVERY one-site seed has an empty first wave, on all twelve vertices, since no site has two neighbours equal to a single lock so u<=1; (2) a two-site seed has a nonempty first wave IFF the two sites are opposite corners of an on-patch square (a face diagonal), and there are ex",
+ "science": "Bounded_theorem note, no probe cell. COMPLETE SEED CLASSIFICATION for the rival member f_two, an if-and-only-if result: (1) EVERY one-site seed has an empty first wave, on all twelve vertices, since no site has two neighbours equal to a single lock so u<=1; (2) a two-site seed has a nonempty first wave IFF the two sites are opposite corners of an on-patch square (a face diagonal), and there are exactly 22 such pairs out of C(12,2)=66 -- counted as 6 faces on A + 6 on B, two diagonals each, minus 2 for the shared face double-count -- with the other 44 empty; (3) an explicit 3-site seed also works. Hence the MINIMAL seed cardinality for a nonempty f_two first wave is 2, not 3. Sharp mechanism: a site adjacent to both locks along the SAME axis has that axis balanced (1=1) and so u=0, the anti-monotone cancellation of #6301 reappearing. The note also records 'every two-site seed has empty first wave' explicitly as a FAILED MUTATION rather than a theorem. 30/30 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=30 FAIL=0)",
  "source": {
   "pr": 6388,
   "branch": "physics-loop/toe-lphys-block-ftwoseed-20260815"

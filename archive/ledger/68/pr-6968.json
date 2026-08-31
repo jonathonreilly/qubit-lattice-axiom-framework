@@ -3,7 +3,7 @@
  "title": "feat(pskface): same-max face-slide face reverse fails k=2,3,6",
  "science": "Face table for psi on B_16(0): axis 6,12,18,24,26,28,32,38; face 4,10,14,16,18,20,22,26; holds k=1,4,5,7,8 and FAILS k=2,3,6. Carries a datum found nowhere else in the band: the omega face times are stated as 4,8,12,16,18,20,22,24 with reverse failing only at k=6, so the same-max slide addendum makes the face table strictly worse than its own parent -- a forcing negative against that route.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=holds k=1,4,5,7,8 / fails k=2,3,6; omega",
+ "verdict_pair": "reverse=absent face=holds k=1,4,5,7,8 / fails k=2,3,6; omega comparator fails only k=6 (face bits, not family verdicts)",
  "source": {
   "pr": 6968,
   "branch": "physics-loop/toe-lphys-block-pskface-20260815"

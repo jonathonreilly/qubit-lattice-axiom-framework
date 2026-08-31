@@ -1,9 +1,9 @@
 {
  "id": "pr-6631",
  "title": "feat(hopiso): cube-covariant NN hop costs force diamond light",
- "science": "FORCING NEGATIVE with a rigidity theorem, not a probe cell: because the six NN directions form a single orbit of the order-24 proper cube group, EVERY cube-covariant hop-cost is a constant w_0, so first arrival is forced to t(v)=w_0*|v|_1; the isotropic-c ratio then differs by a factor 2 between (1,0,0) and (1,1,0) for every w_0>=1, and the discrete l2 null cone is a proper subset (empty at w_0=2,",
+ "science": "FORCING NEGATIVE with a rigidity theorem, not a probe cell: because the six NN directions form a single orbit of the order-24 proper cube group, EVERY cube-covariant hop-cost is a constant w_0, so first arrival is forced to t(v)=w_0*|v|_1; the isotropic-c ratio then differs by a factor 2 between (1,0,0) and (1,1,0) for every w_0>=1, and the discrete l2 null cone is a proper subset (empty at w_0=2, the 24 axis points at w_0=1). This generalizes #6629's numeric mismatch to the whole covariant hop-cost class.",
  "forcing": false,
- "verdict_pair": "none stated (no reverse/face verdicts in the diff; 'face' oc",
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff; 'face' occurrences are the face-diagonal witness)",
  "source": {
   "pr": 6631,
   "branch": "physics-loop/toe-lphys-block-hopiso-20260815"

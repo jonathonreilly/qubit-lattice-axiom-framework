@@ -1,7 +1,7 @@
 {
  "id": "pr-7642",
  "title": "feat(nm2frmrdpl): x=0 plane support of neighbor-read of cyclic-frame transport at t+1 on two-axis opposite seed: reverse fails, face fails",
- "science": "Extends the neighbour-read of cyclic-frame transport from four probes to every formed site of the x=0 and x=1 planes at t+1 on the two-axis opposite seed: it HOLDs at 10 of 27 sites on x=0 and 10 of 25 on x=1, HOLDs at every site with t<=1, and fails at every later-tick site, with first fail-witnesses (0,-3,0) and (1,-2,-2), so both plane-forall bits fail. The frame-transport structure that HOLDs ",
+ "science": "Extends the neighbour-read of cyclic-frame transport from four probes to every formed site of the x=0 and x=1 planes at t+1 on the two-axis opposite seed: it HOLDs at 10 of 27 sites on x=0 and 10 of 25 on x=1, HOLDs at every site with t<=1, and fails at every later-tick site, with first fail-witnesses (0,-3,0) and (1,-2,-2), so both plane-forall bits fail. The frame-transport structure that HOLDs on the probe cells is an early-tick, near-seed phenomenon and does not extend to the formed region.",
  "forcing": true,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-6146",
  "title": "[physics-loop] block53 split-step causal update \u2014 bounded_theorem / bounded-support",
- "science": "Block 53: closes causal feasibility \u2014 the depth-two equal-substep symplectic kick/drift macro update for the two-TT family is full-zone stable with positive shadow energy, preserves trace and divergence constraints on every substep, has EXACT spatial radius two with a 14-layer disjoint local-gate schedule and analytic group speed at most one, and composes the conserved Record-frontier transition t",
+ "science": "Block 53: closes causal feasibility \u2014 the depth-two equal-substep symplectic kick/drift macro update for the two-TT family is full-zone stable with positive shadow energy, preserves trace and divergence constraints on every substep, has EXACT spatial radius two with a 14-layer disjoint local-gate schedule and analytic group speed at most one, and composes the conserved Record-frontier transition through equal half-source kicks; depth one is UV unstable, so depth two is the minimum of its class.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

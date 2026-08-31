@@ -1,9 +1,9 @@
 {
  "id": "pr-6324",
  "title": "feat(conjrep): faithful S4 images in this SO(3) frame are G-conjugate",
- "science": "Bounded_theorem note, no probe cell. This is an explicit CORRECTION/REPAIR note -- its stated blocker is 'conjugacy of faithful cube actions imported a false SO(3) subgroup sentence', i.e. it re-derives the #6276 conjugacy result WITHOUT the false order-24-subgroup census. New content beyond #6276/#6319: Theorem 4 proves every inner automorphism of the diagonal S_4 is conjugation by a UNIQUE eleme",
+ "science": "Bounded_theorem note, no probe cell. This is an explicit CORRECTION/REPAIR note -- its stated blocker is 'conjugacy of faithful cube actions imported a false SO(3) subgroup sentence', i.e. it re-derives the #6276 conjugacy result WITHOUT the false order-24-subgroup census. New content beyond #6276/#6319: Theorem 4 proves every inner automorphism of the diagonal S_4 is conjugation by a UNIQUE element of G (uniqueness checked by exhaustive search over all 24), and Theorem 5 shows two diagonal-label identifications of S_4 with G differ exactly by an inner automorphism, transporting onto G itself rather than a second image group. TWO RUNNER DEFECTS: check('thm1','every signed-perm det=+1 matrix is in G', True) is a hard-coded True (vacuous, still counted in PASS=29), and the source carries an unfinished editing artifact -- a dangling comment ending in 'wait' plus an unused binding iso1 = phi_inv.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=29 FAIL=0, one hard-coded True)",
  "source": {
   "pr": 6324,
   "branch": "physics-loop/toe-lphys-block-conjrep-20260814"

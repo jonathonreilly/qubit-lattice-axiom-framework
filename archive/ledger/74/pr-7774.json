@@ -1,7 +1,7 @@
 {
  "id": "pr-7774",
  "title": "[physics-loop] Block226 exterior-character common-clock obstruction (proposed_retained)",
- "science": "The time-refinement/common-clock obstruction: normalized determinant and vector multipliers vanish with equal logarithmic order but unequal leading ratio (n+2)/n at the Haar endpoint, so no continuous common convolution-semigroup clock exists for the exterior-character family - a forcing negative on naive time refinement. Its normalized multiplier family and strict finite-positive-coupling positiv",
+ "science": "The time-refinement/common-clock obstruction: normalized determinant and vector multipliers vanish with equal logarithmic order but unequal leading ratio (n+2)/n at the Haar endpoint, so no continuous common convolution-semigroup clock exists for the exterior-character family - a forcing negative on naive time refinement. Its normalized multiplier family and strict finite-positive-coupling positivity are imported by nearly every later block, including terminal 248 and no-go 247.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

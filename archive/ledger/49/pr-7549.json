@@ -1,7 +1,7 @@
 {
  "id": "pr-7549",
  "title": "feat(nm2frm3pth): three-path cyclic-frame transport at t+1 on two-axis opposite seed: reverse fails, face fails",
- "science": "Three-path letter: equality of the three length-3 path-ordered products from a start to its cube-opposite vertex. Its own printed data shows the two DEFINED products at the origin are identical ([1 0 0; 0 -1 0; 0 0 1] twice) and it still scores fail because the third path has an undefined edge; the runner PASSes 'theorem2-reverse-path-independence-fail'. Recompute: a path-ordered product equals F(",
+ "science": "Three-path letter: equality of the three length-3 path-ordered products from a start to its cube-opposite vertex. Its own printed data shows the two DEFINED products at the origin are identical ([1 0 0; 0 -1 0; 0 0 1] twice) and it still scores fail because the third path has an undefined edge; the runner PASSes 'theorem2-reverse-path-independence-fail'. Recompute: a path-ordered product equals F(v0)^T F(v3) over all 331,776 assignments, so path-independence is an identity and every 'fail' in this sub-thread is a definedness artifact.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

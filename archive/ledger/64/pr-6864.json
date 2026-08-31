@@ -1,7 +1,7 @@
 {
  "id": "pr-6864",
  "title": "physics: prove the general migration theorem and close the annealed program (block 148)",
- "science": "The general migration theorem: diag Herm([theta H_q]_{++}) = 0 is an identity in the moduli, so every theta-closed ensemble of any size has a Hermitian pairing and positivity forces the ensemble mass Gram to zero; the odd-centred escape is closed stronger (positive implies identically zero, det(M^T M) strictly positive at every real m), and X_0 is cone-blocked (4,0,4) at every ensemble. Complete e",
+ "science": "The general migration theorem: diag Herm([theta H_q]_{++}) = 0 is an identity in the moduli, so every theta-closed ensemble of any size has a Hermitian pairing and positivity forces the ensemble mass Gram to zero; the odd-centred escape is closed stronger (positive implies identically zero, det(M^T M) strictly positive at every real m), and X_0 is cone-blocked (4,0,4) at every ensemble. Complete ensemble no-go for both conventions -- the annealed route to carrier positivity is shut; 149 reuses its 64-move group but nothing restates the no-go.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

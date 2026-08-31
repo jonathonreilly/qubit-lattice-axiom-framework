@@ -1,9 +1,9 @@
 {
  "id": "pr-6591",
  "title": "feat(c10cls): all four Q10-false maps first-refuse adj2",
- "science": "Class-wide positive mechanism result: all four Q10-false maps first-refuse the same orbit type adj2, same site (2,1,0), same neighborhood (0,1,0,1,0,0), N_refuse=2 each, and the free bits wt1/opp2 provably cannot change it since those types never appear among the unlocked seed neighborhoods. Runner check thm1-q10-false-four-zeros also re-verifies cov10>0 iff Q10 on all 32 maps. ANOMALY: this PR in",
+ "science": "Class-wide positive mechanism result: all four Q10-false maps first-refuse the same orbit type adj2, same site (2,1,0), same neighborhood (0,1,0,1,0,0), N_refuse=2 each, and the free bits wt1/opp2 provably cannot change it since those types never appear among the unlocked seed neighborhoods. Runner check thm1-q10-false-four-zeros also re-verifies cov10>0 iff Q10 on all 32 maps. ANOMALY: this PR indexes the refuse tick as 1 while its own parent #6590 indexes the SAME refuse of the SAME map on the SAME seed as tick 0 - the two siblings use incompatible tick conventions for the identical event.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (class refuse census; same_first_refuse",
+ "verdict_pair": "reverse=N/A face=N/A (class refuse census; same_first_refuse_type=True, shared_type=adj2, tick=1, site=(2,1,0), N_refuse=2 for all four)",
  "source": {
   "pr": 6591,
   "branch": "physics-loop/toe-lphys-block-c10cls-20260815"

@@ -1,9 +1,9 @@
 {
  "id": "pr-6321",
  "title": "feat(menuuniq): unique stabilizer-covariant rank-1 PVM",
- "science": "Bounded_theorem note, no probe cell. MENU-SELECTION UNIQUENESS -- arguably the most load-bearing item in this batch for the Born-selector obligation. Fixing an axis n, the ONLY rank-1 PVM covariant under the order-4 stabilizer rotation R about n is the spectral pair {P_n, P_{-n}}: the plus eigen-condition R u = u is row-reduced exactly over Q to the line spanned by e_x and the minus condition R u ",
+ "science": "Bounded_theorem note, no probe cell. MENU-SELECTION UNIQUENESS -- arguably the most load-bearing item in this batch for the Born-selector obligation. Fixing an axis n, the ONLY rank-1 PVM covariant under the order-4 stabilizer rotation R about n is the spectral pair {P_n, P_{-n}}: the plus eigen-condition R u = u is row-reduced exactly over Q to the line spanned by e_x and the minus condition R u = -u has nullspace {0}, so the only unit survivors are u = +-e_x. Sharp companion observation: the 180-degree square R^2 is STRICTLY WEAKER -- it fixes e_y and e_z up to sign, so uniqueness genuinely requires the order-4 generator, not the involution. This forces the effect MENU that #6236 had left as an independent Born extra, i.e. it partially closes one of the two surviving extras (M,K). The note is careful that it does not show Admissibility selects this pair physically. 23/23 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=23 FAIL=0)",
  "source": {
   "pr": 6321,
   "branch": "physics-loop/toe-lphys-block-menuuniq-20260814"

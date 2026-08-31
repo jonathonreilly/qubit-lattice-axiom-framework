@@ -1,7 +1,7 @@
 {
  "id": "pr-7768",
  "title": "Physics: bound nonzero-spatial volume gap collapse",
- "science": "Strongest form of the spectral-gap collapse: with the actual nonconstant Block221 matter multiplier, nonzero nearest-neighbor hopping, dynamic source/coframe coordinates, and tau=m^12, the exact bound lambda_1/lambda_0 >= (1-64N/m^2)[v_m(1-3/m^6)]^N - (368/m^15)^N forces the normalized gauge-invariant gap to zero (delta_GI <= 463/(7m)+3/m^5+...) for every N(m)=o(m^2) family - the forcing negative ",
+ "science": "Strongest form of the spectral-gap collapse: with the actual nonconstant Block221 matter multiplier, nonzero nearest-neighbor hopping, dynamic source/coframe coordinates, and tau=m^12, the exact bound lambda_1/lambda_0 >= (1-64N/m^2)[v_m(1-3/m^6)]^N - (368/m^15)^N forces the normalized gauge-invariant gap to zero (delta_GI <= 463/(7m)+3/m^5+...) for every N(m)=o(m^2) family - the forcing negative that killed the uniform-spectral-gap discriminator on the disclosed families and pivoted the lane to the semigroup/response program of blocks 226+.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

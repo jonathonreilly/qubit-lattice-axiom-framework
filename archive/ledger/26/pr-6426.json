@@ -1,9 +1,9 @@
 {
  "id": "pr-6426",
  "title": "feat(cutminopp): run f_cutmin from the opposite-corner 2-site seed",
- "science": "Carries a sharp methodological finding the series needs. From the opposite-corner seed S*={(0,0,0),(2,1,1)}, f_cutmin halts at 10 with history (2,8,10) - the SAME cardinality history as f_min - but the two stop on COMPLEMENTARY stuck pairs: f_cutmin is stuck on {(0,1,1),(2,0,0)} (permanently vertex3, three on-patch locks plus three off-patch unread slots), while f_min is stuck on {(1,0,1),(1,1,0)}",
+ "science": "Carries a sharp methodological finding the series needs. From the opposite-corner seed S*={(0,0,0),(2,1,1)}, f_cutmin halts at 10 with history (2,8,10) - the SAME cardinality history as f_min - but the two stop on COMPLEMENTARY stuck pairs: f_cutmin is stuck on {(0,1,1),(2,0,0)} (permanently vertex3, three on-patch locks plus three off-patch unread slots), while f_min is stuck on {(1,0,1),(1,1,0)} (type (2,1,0)). So the lock-count history is NOT a complete invariant of a run: two different maps produce identical histories with disjoint halt sets. Every comparison in this batch that argues from 'equal lock histories' is therefore weaker than it looks (#6411 is safe - it also checked the site sets - but #6412 and the f_min/f_L1 agreement claims rest on histories). f_L1 fills (2,8,12).",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6426,
   "branch": "physics-loop/toe-lphys-block-cutminopp-20260815"

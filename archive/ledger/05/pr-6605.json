@@ -1,9 +1,9 @@
 {
  "id": "pr-6605",
  "title": "feat(qstartot1): among Q_star, Max(1) is not vertex3 and mixed3",
- "science": "Behind the failed iff sits an exact 1-bit characterization the note states in passing but never as a theorem: m1=12 is attained by exactly the four vertex3=1 maps, so Max(1) among Q_* IS vertex3, and since m1=12 equals the full one-site seed count those four maps fill from EVERY single site. The census (8,8,12,12,8,8,12,12) is the closed form cov1 = 8 + 4*vertex3 on Q_*, the k=1 analogue of #6582'",
+ "science": "Behind the failed iff sits an exact 1-bit characterization the note states in passing but never as a theorem: m1=12 is attained by exactly the four vertex3=1 maps, so Max(1) among Q_* IS vertex3, and since m1=12 equals the full one-site seed count those four maps fill from EVERY single site. The census (8,8,12,12,8,8,12,12) is the closed form cov1 = 8 + 4*vertex3 on Q_*, the k=1 analogue of #6582's cov11 = 4 + 8*vertex3 - neither closed form is named.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (maximizer test; max_iff_Q=False, N_max",
+ "verdict_pair": "reverse=N/A face=N/A (maximizer test; max_iff_Q=False, N_max=4, N_Q=2, N_both=2, misses=[(1,0,1,1,0),(1,1,1,1,0)])",
  "source": {
   "pr": 6605,
   "branch": "physics-loop/toe-lphys-block-qstartot1-20260815"

@@ -3,7 +3,7 @@
  "title": "feat(qstarc5): among Q_star, cov5=792 iff vertex3 and mixed3",
  "science": "Exact positive equivalence on the declared patch: among the 8 Q_* maps, cov5=792 iff (vertex3=1 and mixed3=1), N_tot5=N_k=N_both=2, no witness. Also carries the full eight-line cov5 census table (352,392,716,792,384,392,752,792) that the family roll-up does not record.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (cover census + iff selector test; tot5",
+ "verdict_pair": "reverse=N/A face=N/A (cover census + iff selector test; tot5_iff_k=True)",
  "source": {
   "pr": 6570,
   "branch": "physics-loop/toe-lphys-block-qstarc5-20260815"

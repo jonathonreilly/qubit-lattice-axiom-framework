@@ -1,7 +1,7 @@
 {
  "id": "pr-7436",
  "title": "feat(nm2sreadt2slz): neighbor-read of 1-in 2-out split freeze t+1 vs t+2 on two-axis same-lock z-probes: reverse fails, face HOLD, compositi",
- "science": "same-lock z-probes, unsigned neighbour-read, two cuts. Reverse fails only because A's cover is self-poisoned by the same-lock partner (see #7433 for the opposite-seed cell where it holds). Composition is forced: O(q,tau) is constant for all tau>=t(q)+1 (any step e in O(q) requires e in M(q+e), which forces t(q+e)=t(q)+1), so t+2 can never differ from t+1 and composition=HOLD carries zero informati",
+ "science": "same-lock z-probes, unsigned neighbour-read, two cuts. Reverse fails only because A's cover is self-poisoned by the same-lock partner (see #7433 for the opposite-seed cell where it holds). Composition is forced: O(q,tau) is constant for all tau>=t(q)+1 (any step e in O(q) requires e in M(q+e), which forces t(q+e)=t(q)+1), so t+2 can never differ from t+1 and composition=HOLD carries zero information.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=hold",
  "source": {

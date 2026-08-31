@@ -1,9 +1,9 @@
 {
  "id": "pr-6616",
  "title": "feat(q4f11): among Q4-false, cov11>0 iff vertex3",
- "science": "EXACT IFF plus an exact CONSTANT: among the 8 Q4-false maps, cov11>0 iff vertex3, and every vertex3=1 member has cov11 = 8 exactly while every vertex3=0 member has cov11 = 0 (runner check 'thm1-positive-coverages'). Set against #6582's cov11 = 4 + 8*vertex3 on Q_* (wt1=1, adj2=1), this slice gives cov11 = 8*vertex3 when adj2=0, and the two slices plus #6602's zero set, #6613's cov11(f_L1)=12 and l",
+ "science": "EXACT IFF plus an exact CONSTANT: among the 8 Q4-false maps, cov11>0 iff vertex3, and every vertex3=1 member has cov11 = 8 exactly while every vertex3=0 member has cov11 = 0 (runner check 'thm1-positive-coverages'). Set against #6582's cov11 = 4 + 8*vertex3 on Q_* (wt1=1, adj2=1), this slice gives cov11 = 8*vertex3 when adj2=0, and the two slices plus #6602's zero set, #6613's cov11(f_L1)=12 and lex_first_cov11=8 are all consistent with a single unstated global closed form cov11(f) = 4*adj2 + 8*vertex3 on all 32 F_cut maps - which would make cov11>0 iff (adj2 OR vertex3) a corollary rather than a census. Cleanest note in the batch: correct seed-size prose, 18 PASS / 0 FAIL, no contradictions.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (slice selector test; equiv=1, N_pos=4,",
+ "verdict_pair": "reverse=N/A face=N/A (slice selector test; equiv=1, N_pos=4, N_Q=4, N_both=4, N_mismatch=0)",
  "source": {
   "pr": 6616,
   "branch": "physics-loop/toe-lphys-block-q4f11-20260815"

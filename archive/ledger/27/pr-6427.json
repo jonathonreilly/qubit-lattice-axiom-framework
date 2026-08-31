@@ -1,9 +1,9 @@
 {
  "id": "pr-6427",
  "title": "feat(min3split): count 3-site seeds that split f_min from f_L1",
- "science": "Exhaustive three-site census with a real structural classification. Over all C(12,3)=220 triples: N_split3=60, N_fill_L1_3=220, N_fill_min_3=160. Two clean statements: f_L1 fills from EVERY three-site seed, and the 60 splits are exactly the 60 seeds on which f_min fails to fill (again no history-only split). Classification of the splits: every split seed meets both end faces (contains a site with ",
+ "science": "Exhaustive three-site census with a real structural classification. Over all C(12,3)=220 triples: N_split3=60, N_fill_L1_3=220, N_fill_min_3=160. Two clean statements: f_L1 fills from EVERY three-site seed, and the 60 splits are exactly the 60 seeds on which f_min fails to fill (again no history-only split). Classification of the splits: every split seed meets both end faces (contains a site with x=0 and one with x=2), the 108 seeds missing an end face never split, and every split contains a pair of displacement (2,0,0) or (2,1,1) - 28 long-axis only, 24 opposite-corner only, 8 both. Also tabulates the six observed split history-pair signatures with multiplicities (16/16/8/8/8/4). Extends #6422 from |S|=2 to |S|=3.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6427,
   "branch": "physics-loop/toe-lphys-block-min3split-20260815"

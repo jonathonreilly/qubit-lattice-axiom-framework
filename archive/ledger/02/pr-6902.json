@@ -1,7 +1,7 @@
 {
  "id": "pr-6902",
  "title": "feat(mlk14): mid-leave same-k fails at k=14: t=26 vs t=46",
- "science": "FORCING NEGATIVE / self-refuting member. The 'mid-leave' clause (1->2 with max|w|=1 and max|v|>=2) is PROVABLY EMPTY on the six-neighbour graph: a support-2 destination with max 1 is a signed permutation of (1,1,0), whose support-1 nearest neighbours are signed axis units with max 1, so the source threshold can never be met. The runner counts extra_nn = 0. mu-lambda is therefore identically rho3 a",
+ "science": "FORCING NEGATIVE / self-refuting member. The 'mid-leave' clause (1->2 with max|w|=1 and max|v|>=2) is PROVABLY EMPTY on the six-neighbour graph: a support-2 destination with max 1 is a signed permutation of (1,1,0), whose support-1 nearest neighbours are signed axis units with max 1, so the source threshold can never be met. The runner counts extra_nn = 0. mu-lambda is therefore identically rho3 as a hop-cost, yet the PR ships three theorems and a wall verdict for it and passes 21 checks.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=not-scored",
  "source": {

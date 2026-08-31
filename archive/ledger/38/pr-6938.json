@@ -1,9 +1,9 @@
 {
  "id": "pr-6938",
  "title": "feat(ufk14): unit-out-face same-k fails at k=14: t=26 vs t=46",
- "science": "The band's cleanest vacuity proof: uf = rho3 + cost 3 on a 2->2 grow with source max = 1, and the note proves that clause is ALREADY priced 3 by corridor-slide mu on every six-neighbour hop, so uf is identical to rho3 as a function. Consequence: the pair is the rho3 pair t(14,0,0)=26 vs t(14,14,14)=46, 2028 < 2116, and same-k reverse FAILS at k=14 -- fixing the lower boundary of the source-max flo",
+ "science": "The band's cleanest vacuity proof: uf = rho3 + cost 3 on a 2->2 grow with source max = 1, and the note proves that clause is ALREADY priced 3 by corridor-slide mu on every six-neighbour hop, so uf is identical to rho3 as a function. Consequence: the pair is the rho3 pair t(14,0,0)=26 vs t(14,14,14)=46, 2028 < 2116, and same-k reverse FAILS at k=14 -- fixing the lower boundary of the source-max floor family (floor 1 = no rule at all).",
  "forcing": false,
- "verdict_pair": "reverse=NO (2028<2116 at k=14; band anisotropy bit, not a fa",
+ "verdict_pair": "reverse=NO (2028<2116 at k=14; band anisotropy bit, not a family verdict) face=absent",
  "source": {
   "pr": 6938,
   "branch": "physics-loop/toe-lphys-block-ufk14-20260815"

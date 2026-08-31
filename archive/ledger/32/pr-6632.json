@@ -1,7 +1,7 @@
 {
  "id": "pr-6632",
  "title": "feat(wav2chi): tick-2 Record content can be P-odd",
- "science": "Theorem + ANOMALY, not a probe cell. Science: on the 3-letter Record-content star {0,+,-}^6 (729 colorings) the July-3 unique k=3 chiral pair (48 handed fully-mixed colorings = two disjoint G+ orbits of 24; Burnside 57 proper vs 56 full orbits) is a P-odd formation predicate with N_form=24, N_P_form=24, N_both=0, and Theorem 2 proves EVERY one of the 8 two-letter letter-map projections of that set",
+ "science": "Theorem + ANOMALY, not a probe cell. Science: on the 3-letter Record-content star {0,+,-}^6 (729 colorings) the July-3 unique k=3 chiral pair (48 handed fully-mixed colorings = two disjoint G+ orbits of 24; Burnside 57 proper vs 56 full orbits) is a P-odd formation predicate with N_form=24, N_P_form=24, N_both=0, and Theorem 2 proves EVERY one of the 8 two-letter letter-map projections of that set is P-invariant, so occupancy-only tick-1 can never carry the P-odd grade. ANOMALY: this note defines n = (c_1+...+c_6)/3 and its runner implements f_l1 = (sum(bits)!=0), giving 63 formers - i.e. exactly Hamming-nonzero, the predicate #6630 proved is NOT f_L1 (dipole n_mu = c_+ - c_-, 56 formers). The check named 'note-f-L1-is-n-nonzero-not-hamming' passes only by grepping the strings 'not Hamming'/'Hamming-grade' out of the prose while the implemented function contradicts them. The note prose also carries corrupted text substitutions ('20->new spatial patch', '10->L1's refusal').",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

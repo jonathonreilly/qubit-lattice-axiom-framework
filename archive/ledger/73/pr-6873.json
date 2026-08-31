@@ -1,9 +1,9 @@
 {
  "id": "pr-6873",
  "title": "feat(renkface): ridge-enter face reverse holds k=1..8 on B16",
- "science": "Full kappa face/axis table on B_16 (axis 6,12,18,20,22,24,26,32; face 4,8,10,12,14,16,18,20) and the claim that face reverse holds at every k=1..8. DEFECT: the k=8 bit (1024>800) is a ball-wall artifact. t(16,0,0)=32 only because (16,0,0) is the extreme point of B_16 and the height-2 corridor needs |m|+2<=R; on B_42/B_60 t(16,0,0)=28 and the bit flips to 784<800. The note itself observes that (15,",
+ "science": "Full kappa face/axis table on B_16 (axis 6,12,18,20,22,24,26,32; face 4,8,10,12,14,16,18,20) and the claim that face reverse holds at every k=1..8. DEFECT: the k=8 bit (1024>800) is a ball-wall artifact. t(16,0,0)=32 only because (16,0,0) is the extreme point of B_16 and the height-2 corridor needs |m|+2<=R; on B_42/B_60 t(16,0,0)=28 and the bit flips to 784<800. The note itself observes that (15,0,0) is the only in-ball neighbour and still counts the bit; the `all-available-reverse` gate passes on the artifact.",
  "forcing": false,
- "verdict_pair": "reverse=not-scored face=holds k=1..8 (k=8 is host-artifact; ",
+ "verdict_pair": "reverse=not-scored face=holds k=1..8 (k=8 is host-artifact; fails off B_16)",
  "source": {
   "pr": 6873,
   "branch": "physics-loop/toe-lphys-block-renkface-20260815"

@@ -1,9 +1,9 @@
 {
  "id": "pr-6709",
  "title": "feat(clkonly): hop-cost as clock fires on all 12 hosts; filter on 4",
- "science": "Not a probe cell: a 12-host census of whether leftover-frame-positive formation f still fires when the named hop-cost rho is (a) an unused edge label vs (b) a cost-1 readiness filter. N_label_fire=12, N_filt_fire=4. Beyond a table: it derives the exact characterization that the 4 filter-surviving hosts are precisely those with +z occupied and -z empty (all incoming inward weights unequal, so every",
+ "science": "Not a probe cell: a 12-host census of whether leftover-frame-positive formation f still fires when the named hop-cost rho is (a) an unused edge label vs (b) a cost-1 readiness filter. N_label_fire=12, N_filt_fire=4. Beyond a table: it derives the exact characterization that the 4 filter-surviving hosts are precisely those with +z occupied and -z empty (all incoming inward weights unequal, so every incoming rho=1), i.e. a clock/readiness dichotomy for hop-cost that bears on Admissibility firing.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports N_label_fire=12, N_filt_",
+ "verdict_pair": "reverse=absent face=absent (reports N_label_fire=12, N_filt_fire=4)",
  "source": {
   "pr": 6709,
   "branch": "physics-loop/toe-lphys-block-clkonly-20260815"

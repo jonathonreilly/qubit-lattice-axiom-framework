@@ -1,7 +1,7 @@
 {
  "id": "pr-7511",
  "title": "feat(nm2frmrdz): HOLDING neighbor-read of cyclic-frame transport at t+1 on two-axis opposite z-probes: reverse HOLD, face HOLD",
- "science": "Neighbour-read of the TRANSPORT bit (hold at q and at some formed 6-NN) -> hold/hold at all four z-probes. Doubly vacuous: it is an existential over an already-vacuous predicate. Also a naming collision: 'neighbor-read' here is a different predicate from the Orient-sign neighbour-read of #7477/#7485/#7519, and on overlapping seeds the two give opposite verdicts (hold/hold vs fail/fail). The same r",
+ "science": "Neighbour-read of the TRANSPORT bit (hold at q and at some formed 6-NN) -> hold/hold at all four z-probes. Doubly vacuous: it is an existential over an already-vacuous predicate. Also a naming collision: 'neighbor-read' here is a different predicate from the Orient-sign neighbour-read of #7477/#7485/#7519, and on overlapping seeds the two give opposite verdicts (hold/hold vs fail/fail). The same runner prints scalar neighbour-read = hold,fail,fail,fail.",
  "forcing": false,
  "verdict_pair": "reverse=hold face=hold",
  "source": {

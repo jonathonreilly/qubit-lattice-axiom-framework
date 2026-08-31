@@ -1,9 +1,9 @@
 {
  "id": "pr-6836",
  "title": "feat(hrk1): height-ridge same-k holds at k=1: t=3 vs t=5",
- "science": "Introduces height-ridge zeta = rho3 + cost 3 on a 3->3 hop whose destination has exactly two coordinates at the minimum m with m>=2. At k=1 on B_6: t=3 vs 5, 27>25. The note itself certifies the new clause is IDLE on this host ('no nearest-neighbor hop inside B_6(0) has |sigma_v|=|sigma_w|=3 and exactly two destination coordinates equal to a minimum of at least 2'), so the PR is a re-run of rho3's",
+ "science": "Introduces height-ridge zeta = rho3 + cost 3 on a 3->3 hop whose destination has exactly two coordinates at the minimum m with m>=2. At k=1 on B_6: t=3 vs 5, 27>25. The note itself certifies the new clause is IDLE on this host ('no nearest-neighbor hop inside B_6(0) has |sigma_v|=|sigma_w|=3 and exactly two destination coordinates equal to a minimum of at least 2'), so the PR is a re-run of rho3's k=1 numbers under a new name. Different note format from the rest of the band (Live Parent Quotes, Runner Contract sections).",
  "forcing": false,
- "verdict_pair": "reverse=YES (same-k k=1, 27 > 25; clause self-certified idle",
+ "verdict_pair": "reverse=YES (same-k k=1, 27 > 25; clause self-certified idle on host) face=n/a",
  "source": {
   "pr": 6836,
   "branch": "physics-loop/toe-lphys-block-hrk1-20260815"

@@ -1,9 +1,9 @@
 {
  "id": "pr-6607",
  "title": "feat(c3q4): cov3>0 is not Q4; positivity implies Q4",
- "science": "Exact positive containment established and verified (pos_implies_Q4=1, q4_false_pos=empty): cov3>0 implies Q4=(wt1 OR adj2) on all 32 maps, N_pos=N_both=20, with the four Q4-true/cov3=0 exceptions named. Together with sibling #6603 this pins the cov3>0 set of 20 maps strictly inside Q4 while NOT inside Q10 - the containment lattice across Q4/Q6/Q8/Q10 that the batch builds member by member and no ",
+ "science": "Exact positive containment established and verified (pos_implies_Q4=1, q4_false_pos=empty): cov3>0 implies Q4=(wt1 OR adj2) on all 32 maps, N_pos=N_both=20, with the four Q4-true/cov3=0 exceptions named. Together with sibling #6603 this pins the cov3>0 set of 20 maps strictly inside Q4 while NOT inside Q10 - the containment lattice across Q4/Q6/Q8/Q10 that the batch builds member by member and no member states.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4=1, N_pos=20, N_Q4=24, N_both=20, N_mismatch=4)",
  "source": {
   "pr": 6607,
   "branch": "physics-loop/toe-lphys-block-c3q4-20260815"

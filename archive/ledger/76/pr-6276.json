@@ -1,9 +1,9 @@
 {
  "id": "pr-6276",
  "title": "[physics-loop] toe-lphys cubeframe: bounded_theorem / bounded-support",
- "science": "Bounded_theorem note, no probe cell. RIGIDITY THEOREM bridging the Lattice and Qubit axioms: faithful unital *-actions of the concrete proper cubic group G (|G|=24) on one-site M_2(C) form exactly ONE conjugacy class. Proof chain: G is isomorphic to S_4 via its permutation of the four space diagonals (runner lists 24 distinct perms); G has eight order-3 elements so a faithful image cannot be C_24 ",
+ "science": "Bounded_theorem note, no probe cell. RIGIDITY THEOREM bridging the Lattice and Qubit axioms: faithful unital *-actions of the concrete proper cubic group G (|G|=24) on one-site M_2(C) form exactly ONE conjugacy class. Proof chain: G is isomorphic to S_4 via its permutation of the four space diagonals (runner lists 24 distinct perms); G has eight order-3 elements so a faithful image cannot be C_24 or D_12; Aut(M_2) = SO(3) so only the standard 3 of S_4 lands there (3 tensor sgn would send Rz, an odd diagonal permutation with det=+1, to determinant -1); every G-conjugate of alpha is faithful and conjugate, checked over all 24. Residual freedom is exactly a Bloch frame. Explicitly flags that live Lattice/Qubit do NOT require any faithful action -- that stays an extra. Also corrects a false census (octahedral not the only order-24 subgroup of SO(3)). 37/37 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=37 FAIL=0)",
  "source": {
   "pr": 6276,
   "branch": "physics-loop/toe-lphys-block-cubeframe-20260814"

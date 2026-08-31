@@ -1,9 +1,9 @@
 {
  "id": "pr-6407",
  "title": "feat(fminid): name the unique support-26 1-site filler as the n_both=0 map",
- "science": "Identifies the sparsest filler in closed form and surfaces a real tension between two selectors. f_min(c)=1 iff n_both=0 and some axis is unbalanced; it fires exactly on {wt1, adj2, vertex3} with 6+12+8=26 cells, orbit tuple (1,0,1,1,0), and fills with the same history (1,4,8,11,12) as f_L1 (supp 56 = 64 minus the 8 fully balanced cells). KEY: f_min is NOT in F_cut - it breaks complement-even, sin",
+ "science": "Identifies the sparsest filler in closed form and surfaces a real tension between two selectors. f_min(c)=1 iff n_both=0 and some axis is unbalanced; it fires exactly on {wt1, adj2, vertex3} with 6+12+8=26 cells, orbit tuple (1,0,1,1,0), and fills with the same history (1,4,8,11,12) as f_L1 (supp 56 = 64 minus the 8 fully balanced cells). KEY: f_min is NOT in F_cut - it breaks complement-even, since f_min(wt1)=1 but f_min(wt5)=0. So the two independently motivated selectors point at DISJOINT candidates: the three-cut symmetry class F_cut contains f_L1 but excludes the unique support minimizer, while sparsity picks f_min but only outside F_cut. That incompatibility is the most substantive thing in the whole 6391-6407 arc and no note in the batch draws the consequence.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6407,
   "branch": "physics-loop/toe-lphys-block-fminid-20260815"

@@ -1,7 +1,7 @@
 {
  "id": "pr-7352",
  "title": "[physics-loop][mixed-stage-positivity][bounded_theorem][bounded-support] classify compatible positive involutions",
- "science": "Proves the grading-odd wall (exact stage exchange plus grading-invariant support forces any PSD dressed history Gram to vanish), then exhibits two exact positive involutive dressings - one reflection-real stage-preserving, one genuinely mixed-stage with witness (5/3,4/3) - disproving the pure-stage dichotomy; scalar graph ports proven never positive. Reranks the lane to the d=4 common-action verti",
+ "science": "Proves the grading-odd wall (exact stage exchange plus grading-invariant support forces any PSD dressed history Gram to vanish), then exhibits two exact positive involutive dressings - one reflection-real stage-preserving, one genuinely mixed-stage with witness (5/3,4/3) - disproving the pure-stage dichotomy; scalar graph ports proven never positive. Reranks the lane to the d=4 common-action vertical slice.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

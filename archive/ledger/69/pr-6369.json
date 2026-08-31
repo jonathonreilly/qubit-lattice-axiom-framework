@@ -1,7 +1,7 @@
 {
  "id": "pr-6369",
  "title": "feat(cell-cutting): fiber linearization law, every wall fiber cover problem is a coset minimum-weight problem (cycle 792)",
- "science": "Cycle 792: the fiber linearization law - at EVERY wall fiber, the rank and kernel of the fiber point-row incidence over GF(2), the coset carrying its cover solutions, the weight census of that coset, and the identification of the fold-held cuttings with the coset minimum-weight members and with its exact covers; every wall fiber cover problem is therefore a coset minimum-weight problem. Includes t",
+ "science": "Cycle 792: the fiber linearization law - at EVERY wall fiber, the rank and kernel of the fiber point-row incidence over GF(2), the coset carrying its cover solutions, the weight census of that coset, and the identification of the fold-held cuttings with the coset minimum-weight members and with its exact covers; every wall fiber cover problem is therefore a coset minimum-weight problem. Includes the complete refutation of translation carriers at both the fiber and the native level.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

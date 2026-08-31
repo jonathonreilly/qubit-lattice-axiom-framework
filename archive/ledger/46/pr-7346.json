@@ -1,7 +1,7 @@
 {
  "id": "pr-7346",
  "title": "[physics-loop][gravity-metric-pullback][bounded_theorem][bounded-support] localize torus and constraint boundary",
- "science": "Exact ten-metric-coordinate variational pullback of the supplied line-average metric map with quadratic convergence to the linearized Einstein comparator and TT positivity on all 2394 interior samples, against which the line-map global lattice carrier and Ward-only full metric inverse are proved bounded-infeasible (off-axis quotient poles, negative conformal direction, rank-8/10 chart mismatch, co",
+ "science": "Exact ten-metric-coordinate variational pullback of the supplied line-average metric map with quadratic convergence to the linearized Einstein comparator and TT positivity on all 2394 interior samples, against which the line-map global lattice carrier and Ward-only full metric inverse are proved bounded-infeasible (off-axis quotient poles, negative conformal direction, rank-8/10 chart mismatch, corner gauge aliasing). Route-kill inside the supplied-action lane; the arc's Einstein-limit evidence is now the stronger induced-EH result in the opus-direct core.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

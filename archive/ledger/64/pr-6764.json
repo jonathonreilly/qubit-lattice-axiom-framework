@@ -1,7 +1,7 @@
 {
  "id": "pr-6764",
  "title": "feat(nu16): on B16, same-k k=4 still holds; doubled and k=5 face stay fail",
- "science": "Introduces two new comparators for the series on B_16(0) (6017 sites): same-k reverse t(k,0,0)^2/k^2 > t(k,k,k)^2/3k^2 and the k=5 face pair. Results: original diamond holds (1200>1024), doubled fails (2352<3136), same-k at k=4 HOLDS (300>196), k=5 face FAILS (12800<14400). Together with #6736 this sharpens the picture: the reversal is k-dependent, holding at small k and dying at larger k on both ",
+ "science": "Introduces two new comparators for the series on B_16(0) (6017 sites): same-k reverse t(k,0,0)^2/k^2 > t(k,k,k)^2/3k^2 and the k=5 face pair. Results: original diamond holds (1200>1024), doubled fails (2352<3136), same-k at k=4 HOLDS (300>196), k=5 face FAILS (12800<14400). Together with #6736 this sharpens the picture: the reversal is k-dependent, holding at small k and dying at larger k on both the body and face axes. New site t(16,0,0)=24, boundary-forced last hop.",
  "forcing": false,
  "verdict_pair": "diamond=YES doubled=NO same-k(k=4)=YES face(k=5)=NO",
  "source": {

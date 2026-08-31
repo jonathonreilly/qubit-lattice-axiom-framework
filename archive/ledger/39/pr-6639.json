@@ -1,7 +1,7 @@
 {
  "id": "pr-6639",
  "title": "feat(pairsupp): July-3 pair always has 4 occupied slots",
- "science": "Exact structural theorem that sharpens the whole chirality chain, not a probe cell: every one of the 48 tuples in the July-3 k=3 chiral pair has occupied-slot count EXACTLY 4 (histogram {4:48}, min=max=4), because 'handed fully-mixed' means each of the three letters twice and letter 0 is the empty/unread letter, so occ = 6-2 = 4. Combined with the seed-grown front bound occ<=3 this is a support-co",
+ "science": "Exact structural theorem that sharpens the whole chirality chain, not a probe cell: every one of the 48 tuples in the July-3 k=3 chiral pair has occupied-slot count EXACTLY 4 (histogram {4:48}, min=max=4), because 'handed fully-mixed' means each of the three letters twice and letter 0 is the empty/unread letter, so occ = 6-2 = 4. Combined with the seed-grown front bound occ<=3 this is a support-count obstruction covering every pair member, not just a representative; both lex-first hands are given, (0,1,0,2,1,2) and (0,1,0,2,2,1); 57 proper orbits with chiral ids 28,29. NOTE this corrects the imprecise 'the pair requires SIX occupied neighbors' framing used in #6636/#6637 - the true requirement is exactly four occupied plus two empty, and the obstruction survives.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

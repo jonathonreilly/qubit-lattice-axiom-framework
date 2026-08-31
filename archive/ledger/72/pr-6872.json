@@ -1,7 +1,7 @@
 {
  "id": "pr-6872",
  "title": "feat(renkvar): ridge-enter is rounder than rho3 on B12",
- "science": "Exact rational second moments on B_12: Q_kappa=8065845471432407489/37031456927424960000, Q_rho3=8080835149812247289/..., Q_mu=81461329283517896329/284940228576113510400; var_kappa 0.005030477616848010 < var_rho3 0.005047718614862020 < var_mu 0.005601692188543646. CHECKER DEFECT: the gate labelled `mutation-kappa-as-rho3` performs no mutation \u2014 its condition is `var_kappa < var_rho3 and var_rho3 < ",
+ "science": "Exact rational second moments on B_12: Q_kappa=8065845471432407489/37031456927424960000, Q_rho3=8080835149812247289/..., Q_mu=81461329283517896329/284940228576113510400; var_kappa 0.005030477616848010 < var_rho3 0.005047718614862020 < var_mu 0.005601692188543646. CHECKER DEFECT: the gate labelled `mutation-kappa-as-rho3` performs no mutation \u2014 its condition is `var_kappa < var_rho3 and var_rho3 < var_mu`, a verbatim restatement of the `variance-order` gate, so the advertised counterfactual is never computed.",
  "forcing": false,
  "verdict_pair": "none",
  "source": {

@@ -3,7 +3,7 @@
  "title": "feat(c9q10): cov9>0 is not Q10; positivity implies Q10",
  "science": "Positive containment stated as a theorem line: 'Every Q10-false map has cov9=0, so cov9>0 implies Q10' (N_pos=N_both=26, q10_false_pos=() verified). Also names the exact six-element cov9=0 set {(0,0,0,0,0),(0,0,0,0,1),(0,1,0,0,0),(1,0,0,0,0),(1,0,0,0,1),(1,1,0,0,0)} and the two Q10-true zeros, and cov9(f_L1)=220 (f_L1 fills every nine-site seed).",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; cov9>0_iff_Q10=0, N_pos",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; cov9>0_iff_Q10=0, N_pos=26, N_Q10=28, N_both=26, 2 misses)",
  "source": {
   "pr": 6598,
   "branch": "physics-loop/toe-lphys-block-c9q10-20260815"

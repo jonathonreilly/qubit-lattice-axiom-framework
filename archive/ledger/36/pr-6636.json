@@ -1,7 +1,7 @@
 {
  "id": "pr-6636",
  "title": "feat(need6): seed-grown front never has 6 occupied neighbors",
- "science": "GENERAL FORCING NEGATIVE (proved for all t, not just censused), not a probe cell: for a seed-grown l1 ball B_t, every next-shell site v in S_{t+1} has EXACTLY |{i : v_i != 0}| occupied six-neighbors, hence at most 3 and never 6 - because a six-neighbor step changes l1 radius by exactly one, so only the inward unit on each nonzero coordinate is occupied. The July-3 k=3 chiral pair needs all six slo",
+ "science": "GENERAL FORCING NEGATIVE (proved for all t, not just censused), not a probe cell: for a seed-grown l1 ball B_t, every next-shell site v in S_{t+1} has EXACTLY |{i : v_i != 0}| occupied six-neighbors, hence at most 3 and never 6 - because a six-neighbor step changes l1 radius by exactly one, so only the inward unit on each nonzero coordinate is occupied. The July-3 k=3 chiral pair needs all six slots occupied, so its support is identically empty on every seed-grown l1 front; census t=0..4 gives N_with_6=0 with max_occ_nn 1,2,3,3,3 and shell sizes 6,18,38,66,102 = 4r^2+2. Rules out ordinary seed-grown growth as a route to the chiral channel.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

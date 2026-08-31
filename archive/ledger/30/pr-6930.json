@@ -1,7 +1,7 @@
 {
  "id": "pr-6930",
  "title": "feat(dfk14): deep-out-face same-k restores k=14: t=30 vs t=46",
- "science": "The band's load-bearing positive: df on B_42 gives t(14,0,0)=30 vs t(14,14,14)=46, 2700>2116 \u2014 same-k reverse RESTORED at the wall that killed six other clause families. The mechanism is stated exactly: the body arrival is untouched (still 46) and only the axis moves, 26 -> 30. Runner proves df == omega on every six-neighbour hop (I confirmed: zero disagreeing hops on B_20), so this is also the mi",
+ "science": "The band's load-bearing positive: df on B_42 gives t(14,0,0)=30 vs t(14,14,14)=46, 2700>2116 \u2014 same-k reverse RESTORED at the wall that killed six other clause families. The mechanism is stated exactly: the body arrival is untouched (still 46) and only the axis moves, 26 -> 30. Runner proves df == omega on every six-neighbour hop (I confirmed: zero disagreeing hops on B_20), so this is also the missing proof of the omega restore that 6925/6926/6927 assert. t(42,0,0)=64, t(39,0,0)=55, t(3,2,0)=11.",
  "forcing": false,
  "verdict_pair": "reverse=holds face=not-scored",
  "source": {

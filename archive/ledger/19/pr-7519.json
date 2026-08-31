@@ -1,7 +1,7 @@
 {
  "id": "pr-7519",
  "title": "feat(nm2cycsfzrd): neighbor-read of cyclic lex-smallest Orient at t+1 on three-axis far-face opposite z-probes: reverse fails, face fails",
- "science": "Neighbour-read of the lex-smallest Orient sign on the far-face 3-axis z-probes: fail at ALL FOUR probes (no formed 6-NN anywhere recovers the probe's sign), while the underlying Orient reverse and face both HOLD (#7512) and while the transport-flavoured neighbour-read on a comparable cell gives hold/hold (#7511/#7524). The strictest negative in the band on whether the record frame is recoverable f",
+ "science": "Neighbour-read of the lex-smallest Orient sign on the far-face 3-axis z-probes: fail at ALL FOUR probes (no formed 6-NN anywhere recovers the probe's sign), while the underlying Orient reverse and face both HOLD (#7512) and while the transport-flavoured neighbour-read on a comparable cell gives hold/hold (#7511/#7524). The strictest negative in the band on whether the record frame is recoverable from a neighbour.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

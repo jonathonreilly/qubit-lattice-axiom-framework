@@ -1,7 +1,7 @@
 {
  "id": "pr-7739",
  "title": "[physics-loop] Block 204 Record descent \u2014 bounded theorem / bounded support",
- "science": "Record descent bottleneck localized: four exact commutant Majoranas prove C32 = C8_syndrome tensor C4_logical (defeating dimension mismatch as a Naimark obstruction); strict exterior-projector lifts fail while three inequivalent positive unital port-covariant full-Fock POVMs agree on N=1 - positive operator-system underdetermination; exact controls give 1/8 classically vs (1+/-epsilon)/8 coherentl",
+ "science": "Record descent bottleneck localized: four exact commutant Majoranas prove C32 = C8_syndrome tensor C4_logical (defeating dimension mismatch as a Naimark obstruction); strict exterior-projector lifts fail while three inequivalent positive unital port-covariant full-Fock POVMs agree on N=1 - positive operator-system underdetermination; exact controls give 1/8 classically vs (1+/-epsilon)/8 coherently, so coherence selection remains physical input.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

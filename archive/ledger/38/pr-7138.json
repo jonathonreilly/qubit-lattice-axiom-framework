@@ -1,7 +1,7 @@
 {
  "id": "pr-7138",
  "title": "feat(nsparex): parallel-opposite x-probe later-tick exist-opposite: reverse HOLD, face HOLD",
- "science": "Exist-opposite on the parallel-opposite seed, and the only member whose runner performs cross-PR verification: it recomputes the y-, z- and x-probe verdicts of the opposite-lock seed inside its own script and certifies all three are hold/hold with S_*(A)=S_*(B) on the y-probes, establishing cubic isotropy of the exist-opposite verdict. It also states the orbit invariant that classifies the two-sit",
+ "science": "Exist-opposite on the parallel-opposite seed, and the only member whose runner performs cross-PR verification: it recomputes the y-, z- and x-probe verdicts of the opposite-lock seed inside its own script and certifies all three are hold/hold with S_*(A)=S_*(B) on the y-probes, establishing cubic isotropy of the exist-opposite verdict. It also states the orbit invariant that classifies the two-site seeds: the inner product of the seed displacement with the lock axis (0 for perp-displacement, 1 for parallel) is preserved by proper cubic rotations.",
  "forcing": false,
  "verdict_pair": "reverse=hold face=hold",
  "source": {

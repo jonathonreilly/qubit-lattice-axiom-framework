@@ -1,9 +1,9 @@
 {
  "id": "pr-6706",
  "title": "feat(rule3): none of 27 named three-slot costs reverse diamond on B6",
- "science": "Not a (reverse,face) probe cell at all: an exact 27-Dijkstra census of named three-slot hop-costs (c_seed,c_eq,c_uneq) in {1,2,3}^3 on B_6(0), with a derived closed-form arrival identity t(4,0,0)=c_seed+3c_eq and t(2,2,2)=c_seed+3c_eq+2c_uneq that PROVES the whole family can never reverse the diamond cut 12t_axis^2>16t_body^2 (N_rev=0, N_beat=0). That identity is a structural no-go, not a table lo",
+ "science": "Not a (reverse,face) probe cell at all: an exact 27-Dijkstra census of named three-slot hop-costs (c_seed,c_eq,c_uneq) in {1,2,3}^3 on B_6(0), with a derived closed-form arrival identity t(4,0,0)=c_seed+3c_eq and t(2,2,2)=c_seed+3c_eq+2c_uneq that PROVES the whole family can never reverse the diamond cut 12t_axis^2>16t_body^2 (N_rev=0, N_beat=0). That identity is a structural no-go, not a table lookup.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (no HOLD/fails pair; reports N_re",
+ "verdict_pair": "reverse=absent face=absent (no HOLD/fails pair; reports N_rev=0, N_beat=0 diamond-reversal counts)",
  "source": {
   "pr": 6706,
   "branch": "physics-loop/toe-lphys-block-rule3-20260815"

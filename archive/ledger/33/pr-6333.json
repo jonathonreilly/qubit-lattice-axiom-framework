@@ -1,9 +1,9 @@
 {
  "id": "pr-6333",
  "title": "feat(l1k2): second-wave L1 formations have k in {1,2}",
- "science": "Bounded_theorem note, no probe cell. Exact tick-2 spectral table in Z: the four forming sites have 3n = (-1,-1,0), (-1,0,-1), (0,-1,-1), (-1,0,0) with k = 2,2,2,1, and the four remaining unread sites (1,1,1),(2,1,0),(2,0,1),(2,1,1) all have 3n = 0. NOTABLE TENSION WITH #6299/#6332: all four second-wave sites sit on the SAME l1 shell d=2, yet (2,0,0) has k=1 while the three face-diagonals have k=2 ",
+ "science": "Bounded_theorem note, no probe cell. Exact tick-2 spectral table in Z: the four forming sites have 3n = (-1,-1,0), (-1,0,-1), (0,-1,-1), (-1,0,0) with k = 2,2,2,1, and the four remaining unread sites (1,1,1),(2,1,0),(2,0,1),(2,1,1) all have 3n = 0. NOTABLE TENSION WITH #6299/#6332: all four second-wave sites sit on the SAME l1 shell d=2, yet (2,0,0) has k=1 while the three face-diagonals have k=2 -- so the spectral class k is NOT a function of l1 distance or of tick number, unlike the clean shell=tick=k coincidence on the interior 3x3x3 cube of #6299. The two-cube boundary breaks that correspondence. The note also deliberately keeps everything in Z and refuses to evaluate traces at k=2 (which would leave Q). 33/33 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=33 FAIL=0)",
  "source": {
   "pr": 6333,
   "branch": "physics-loop/toe-lphys-block-l1k2-20260814"

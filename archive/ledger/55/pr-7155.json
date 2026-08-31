@@ -1,7 +1,7 @@
 {
  "id": "pr-7155",
  "title": "feat(nsopplaqt): nsopp plaquette own-tick holonomy: reverse fails, face fails",
- "science": "Own-tick variant of the plaquette holonomy: each vertex's letter is read at its own formation tick instead of at a common deadline. H is again UNDEFINED for the same reason (two non-unique corners), and reverse moves UNDEFINED -> fails only because unrecorded (MISSING) becomes recorded-but-non-unique (NONUNIQUE). Confirms the holonomy obstruction is a property of the perp-step rule, not of the rea",
+ "science": "Own-tick variant of the plaquette holonomy: each vertex's letter is read at its own formation tick instead of at a common deadline. H is again UNDEFINED for the same reason (two non-unique corners), and reverse moves UNDEFINED -> fails only because unrecorded (MISSING) becomes recorded-but-non-unique (NONUNIQUE). Confirms the holonomy obstruction is a property of the perp-step rule, not of the read deadline.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

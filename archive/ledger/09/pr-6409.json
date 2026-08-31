@@ -1,9 +1,9 @@
 {
  "id": "pr-6409",
  "title": "feat(mix3fill): mixed3=1 holds for 48 of the 96 1-site fillers",
- "science": "N_mix3 = 48 = exactly half of the 96 one-site fillers fire mixed3 (the size-12 axis-type (1,1,1) orbit). The result that matters is the REASON given in Theorem 2: 'flipping the mixed3 bit of any filler yields another filler: the 1-site fill dynamics on this patch with off-patch occupancy 0 never uses a mixed3 neighborhood as a lock predicate.' So mixed3 is a dynamically IDLE orbit on this patch - ",
+ "science": "N_mix3 = 48 = exactly half of the 96 one-site fillers fire mixed3 (the size-12 axis-type (1,1,1) orbit). The result that matters is the REASON given in Theorem 2: 'flipping the mixed3 bit of any filler yields another filler: the 1-site fill dynamics on this patch with off-patch occupancy 0 never uses a mixed3 neighborhood as a lock predicate.' So mixed3 is a dynamically IDLE orbit on this patch - the two-cube trajectory can never discriminate on it, which bounds what any census on this carrier can decide and explains the exact halving. Second filler f_diamond has tuple (1,0,1,0,1) and fills with (1,4,8,10,11,12) T=5. Hamming also fires mixed3 (odd weight 3) and still is not a filler.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6409,
   "branch": "physics-loop/toe-lphys-block-mix3fill-20260815"

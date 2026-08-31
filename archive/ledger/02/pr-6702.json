@@ -1,9 +1,9 @@
 {
  "id": "pr-6702",
  "title": "feat(best6): named hop-cost does not reverse diamond on B6",
- "science": "Scale test of #6701's reversal plus a strong quantitative isotropy result, not a probe cell: on the larger B_6(0) (377 sites, 1752 directed edges, nine realized inward-weight pairs) the named rule rho does NOT reverse the diamond at the new axis/diagonal pair - t(4,0,0)=12, t(6,0,0)=18, t(2,2,2)=14, and both tests fail (3*144=432 vs 16*196=3136; and 12*144=1728 vs 3136). So #6701's reversal at ((3",
+ "science": "Scale test of #6701's reversal plus a strong quantitative isotropy result, not a probe cell: on the larger B_6(0) (377 sites, 1752 directed edges, nine realized inward-weight pairs) the named rule rho does NOT reverse the diamond at the new axis/diagonal pair - t(4,0,0)=12, t(6,0,0)=18, t(2,2,2)=14, and both tests fail (3*144=432 vs 16*196=3136; and 12*144=1728 vs 3136). So #6701's reversal at ((3,0,0),(1,1,1)) does not persist at larger radius. But quantitatively rho is far closer to Euclidean isotropy than l1: population variance of |v|_2/t(v) over the 376 nonzero sites is var_rho = 0.00067960829822 against var_l1 = 0.01350203761919, a roughly twentyfold reduction. Full G+ site-type arrival table given.",
  "forcing": false,
- "verdict_pair": "none stated (no reverse/face verdicts in the diff; all 19 'r",
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff; all 19 'reverse' occurrences mean reversing the diamond ordering)",
  "source": {
   "pr": 6702,
   "branch": "physics-loop/toe-lphys-block-best6-20260815"

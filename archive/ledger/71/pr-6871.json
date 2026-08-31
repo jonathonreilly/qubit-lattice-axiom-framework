@@ -1,7 +1,7 @@
 {
  "id": "pr-6871",
  "title": "feat(renk14): ridge-enter same-k fails at k=14: t=26 vs t=46",
- "science": "The runner's WALL_ROWS constant carries the exact k=10..14 table for kappa (22/34, 23/37, 24/40, 25/43, 26/46) that the prose only summarises. Those five rows are exactly t_axis=k+12 and t_body=3k+4, from which the k=14 wall follows in closed form (3(k+12)^2>(3k+4)^2 iff k<13.24). Also names comparator iota (interior 3->3, min|w|>=2, non-ridge), the only quoted rule that moves the body arrival: 46",
+ "science": "The runner's WALL_ROWS constant carries the exact k=10..14 table for kappa (22/34, 23/37, 24/40, 25/43, 26/46) that the prose only summarises. Those five rows are exactly t_axis=k+12 and t_body=3k+4, from which the k=14 wall follows in closed form (3(k+12)^2>(3k+4)^2 iff k<13.24). Also names comparator iota (interior 3->3, min|w|>=2, non-ridge), the only quoted rule that moves the body arrival: 46 -> 72.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=not-scored",
  "source": {

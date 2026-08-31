@@ -1,9 +1,9 @@
 {
  "id": "pr-6779",
  "title": "feat(why11): t(5,0,0)=11 via parallel detour last hop 3",
- "science": "Mechanism for the axis crossover flagged in #6775/#6777: exhibits the lex-first shortest nu-walk to (5,0,0) on B_16(0), cost 11 via the parallel corridor y=-1 (seed-exit 3, one support-raise, four cost-1 steps, one support-drop 3), against the on-axis-only walk which costs 3k=15. So t(k,0,0) stops equalling 3k at k=4/5 precisely because a one-off-axis corridor beats the 1-skeleton. Includes lex-or",
+ "science": "Mechanism for the axis crossover flagged in #6775/#6777: exhibits the lex-first shortest nu-walk to (5,0,0) on B_16(0), cost 11 via the parallel corridor y=-1 (seed-exit 3, one support-raise, four cost-1 steps, one support-drop 3), against the on-axis-only walk which costs 3k=15. So t(k,0,0) stops equalling 3k at k=4/5 precisely because a one-off-axis corridor beats the 1-skeleton. Includes lex-order controls both ways.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports t(5,0,0)=11 vs on-axis 1",
+ "verdict_pair": "reverse=absent face=absent (reports t(5,0,0)=11 vs on-axis 15)",
  "source": {
   "pr": 6779,
   "branch": "physics-loop/toe-lphys-block-why11-20260815"

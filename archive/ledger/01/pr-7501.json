@@ -1,7 +1,7 @@
 {
  "id": "pr-7501",
  "title": "feat(nm2cycfrmhol): cyclic-frame holonomy around the unit square at t+1 on two-axis opposite z: reverse HOLD, face fails",
- "science": "Head of the HOLONOMY family: four-edge product of P(q,r)=F(q)^{-1}F(r) around a unit square. DEFECT: that connection is a pure gauge (coboundary), so the product telescopes to the identity whenever all four edges are defined \u2014 verified over 200,000 random and 6,912 exhaustive 4-frame configurations, 0 non-identity. The note's own printout makes it visible: the reverse square A-D-B-E gives exactly ",
+ "science": "Head of the HOLONOMY family: four-edge product of P(q,r)=F(q)^{-1}F(r) around a unit square. DEFECT: that connection is a pure gauge (coboundary), so the product telescopes to the identity whenever all four edges are defined \u2014 verified over 200,000 random and 6,912 exhaustive 4-frame configurations, 0 non-identity. The note's own printout makes it visible: the reverse square A-D-B-E gives exactly I_3, and the face square 'fails' only because C1,C2 have 2-in M={+e_1,+e_3} so their frames are undefined. Holonomy here is a definedness test, not a curvature measurement.",
  "forcing": false,
  "verdict_pair": "reverse=hold face=fail",
  "source": {

@@ -1,9 +1,9 @@
 {
  "id": "pr-6331",
  "title": "feat(l1gaus2): tree gauge stays source-complete after two L1 ticks",
- "science": "Bounded_theorem note, no probe cell; carries a full N1-N8 no-go gate. Result: the two-site two-face incidence matrix M=[[1,0],[-1,1]] has det=1, so it is invertible over Z and the tree gauge phi = M^{-1} rho is the UNIQUE integer solution of g=rho; because invertibility does not depend on rho, source-completeness and uniqueness are PRESERVED BY ANY SOURCE UPDATE, verified at the L1 ticks (4,1) -> ",
+ "science": "Bounded_theorem note, no probe cell; carries a full N1-N8 no-go gate. Result: the two-site two-face incidence matrix M=[[1,0],[-1,1]] has det=1, so it is invertible over Z and the tree gauge phi = M^{-1} rho is the UNIQUE integer solution of g=rho; because invertibility does not depend on rho, source-completeness and uniqueness are PRESERVED BY ANY SOURCE UPDATE, verified at the L1 ticks (4,1) -> phi=(4,5) and (7,4) -> phi=(7,11). Guarded by mutations: dropping the minus sign, swapping the assignment, and freezing the tick-1 flux each fail. SHARPEST INSTANCE OF THE BATCH-WIDE CONTRADICTION: the note states 'This cycle writes no runner cache and no citation manifest', and the runner's no-cache-no-manifest check PASSES -- but it only verifies that the NOTE CONTAINS THAT STRING, while the PR diff adds both a runner-cache file and a citation_graph_manifest.json entry. The check tests the wrong proposition and the claim is false against the PR contents. 19/19 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=19 FAIL=0)",
  "source": {
   "pr": 6331,
   "branch": "physics-loop/toe-lphys-block-l1gaus2-20260814"

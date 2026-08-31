@@ -1,9 +1,9 @@
 {
  "id": "pr-6381",
  "title": "feat(formclass): count cube-covariant formation predicates",
- "science": "Bounded_theorem note, no probe cell. MAJOR FORCING NEGATIVE: cube covariance does NOT select the formation rule. Exact enumeration shows the 24 proper cube rotations partition the 64 occupancy 6-tuples into exactly N_orb=10 orbits, sizes [1,1,3,3,6,6,8,12,12,12] summing to 64 and independently confirmed by Burnside ((1/24) sum 2^cyc(R) = 10), so the class of cube-covariant boolean formation predic",
+ "science": "Bounded_theorem note, no probe cell. MAJOR FORCING NEGATIVE: cube covariance does NOT select the formation rule. Exact enumeration shows the 24 proper cube rotations partition the 64 occupancy 6-tuples into exactly N_orb=10 orbits, sizes [1,1,3,3,6,6,8,12,12,12] summing to 64 and independently confirmed by Burnside ((1/24) sum 2^cyc(R) = 10), so the class of cube-covariant boolean formation predicates has cardinality |F_G| = 2^10 = 1024. L1's n!=0 rule is ONE of those 1024, with explicit distinct co-members f_empty, f_any, f_full, f_two exhibited and pairwise separated. Theorem 3 pins the f_L1/f_two split at exactly the 24 cells with one unbalanced axis. Consequence: the Admissibility covariance clause cannot pin the formation law -- selecting one needs further structure. This is a direction-setting negative of exactly the kind the arc brief calls load-bearing. 40/40 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=4",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=40 FAIL=0)",
  "source": {
   "pr": 6381,
   "branch": "physics-loop/toe-lphys-block-formclass-20260815"

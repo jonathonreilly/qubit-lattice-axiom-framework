@@ -1,7 +1,7 @@
 {
  "id": "pr-6727",
  "title": "feat(nu8): support-drop still reverses diamond on B8",
- "science": "Confirms the nu diamond reversal on the larger host B_8(0) (t(4,0,0)=10 vs t(2,2,2)=8, 1200>1024) with var_nu=0.006350 < var_l1=0.011339, and records an ANOMALY worth keeping: t(6,0,0)=12 on B_8 but 14 on B_6, because the support-drop detour through (6,1,0) only exists once that site is interior. The nu arrival metric is therefore host-boundary dependent near the edge; explicit witnessing paths wi",
+ "science": "Confirms the nu diamond reversal on the larger host B_8(0) (t(4,0,0)=10 vs t(2,2,2)=8, 1200>1024) with var_nu=0.006350 < var_l1=0.011339, and records an ANOMALY worth keeping: t(6,0,0)=12 on B_8 but 14 on B_6, because the support-drop detour through (6,1,0) only exists once that site is interior. The nu arrival metric is therefore host-boundary dependent near the edge; explicit witnessing paths with per-hop costs are given.",
  "forcing": false,
  "verdict_pair": "reverse=YES (diamond_reverse True) face=absent",
  "source": {

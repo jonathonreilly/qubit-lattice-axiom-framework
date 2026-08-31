@@ -1,9 +1,9 @@
 {
  "id": "pr-6240",
  "title": "[physics-loop] toe-lphys c1addI: bounded_theorem / bounded-support",
- "science": "Bounded_theorem note, no probe cell. AXIOM-ECONOMY result: under the displayed site-indexed readout J, the Record axiom's two scalar sentences ('I is additive' and 'I(empty)=0') change type from PRIMITIVE to LEMMA -- both are ordinary counting facts about I_J(S)=|{z in S: J(z)!=0}|, verified by empty-set cardinality and modularity on all 16 subset pairs. Theorem 4 is the counterweight: the I-table",
+ "science": "Bounded_theorem note, no probe cell. AXIOM-ECONOMY result: under the displayed site-indexed readout J, the Record axiom's two scalar sentences ('I is additive' and 'I(empty)=0') change type from PRIMITIVE to LEMMA -- both are ordinary counting facts about I_J(S)=|{z in S: J(z)!=0}|, verified by empty-set cardinality and modularity on all 16 subset pairs. Theorem 4 is the counterweight: the I-table (0,1,1,2) != declared product table (0,0,0,1), so a pairing/product law stays an independent extra -- a one-argument modular count cannot fill a two-argument table. Bears on axiom minimality and the axiom-update criterion. 15/15 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=15 FAIL=0)",
  "source": {
   "pr": 6240,
   "branch": "physics-loop/toe-lphys-block-c1addI-20260813"

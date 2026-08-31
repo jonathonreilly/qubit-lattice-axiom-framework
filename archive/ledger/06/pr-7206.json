@@ -1,7 +1,7 @@
 {
  "id": "pr-7206",
  "title": "feat(nsplqcl): own-letter Cl(3,0) plaquette product on #7188: reverse UNDEFINED, face UNDEFINED",
- "science": "ESCALATE -- the band's most consequential defect. Cl(3,0) product of own incoming lock letters around the face 4-cycle Q and the reverse 4-cycle R on #7188's process; corners (1,0,0) and (1,0,1) have mixed earliest steps so both products are UNDEFINED. The note is honest about its own cycles, but the conclusion the four plaquette PRs jointly suggest is false: I enumerated the SAME process and foun",
+ "science": "ESCALATE -- the band's most consequential defect. Cl(3,0) product of own incoming lock letters around the face 4-cycle Q and the reverse 4-cycle R on #7188's process; corners (1,0,0) and (1,0,1) have mixed earliest steps so both products are UNDEFINED. The note is honest about its own cycles, but the conclusion the four plaquette PRs jointly suggest is false: I enumerated the SAME process and found 28 unit plaquettes whose four corners all carry unique locks, and on every one of them the letter word is a palindrome (a,b,b,a) and the Cl(3,0) product is exactly the scalar +1. So the holonomy is not undefined -- it is undefined only on the probe-anchored cycles (which are precisely the multiply-reachable sites) and TRIVIAL where it exists. Across the whole seed space only 7.4% of closed unit plaquettes are definable, and where defined the product is a scalar +-1 in 56% of cases and a bivector +-gamma_i gamma_j (for which the note's 'hold iff scalar' test is not even well posed) in 44%.",
  "forcing": false,
  "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
  "source": {

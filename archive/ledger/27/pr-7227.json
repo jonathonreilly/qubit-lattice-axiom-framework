@@ -1,7 +1,7 @@
 {
  "id": "pr-7227",
  "title": "feat(nmclall): forall-choice Cl(3,0) from M on #7167: reverse fails, face fails",
- "science": "On the same cells as #7224, forall-choice (every pick's Cl(3,0) cyclic product is the scalar +/-1) fails on both cycles because N_hold is strictly less than N_picks, so an exist-choice HOLD does not pin a determined Cl(3,0) plaquette member: the product is choice-dependent, not fixed by the record. It restates #7224's M-sets, its 9/5 and 3/2 counts and its exist-choice hold/hold verbatim as compar",
+ "science": "On the same cells as #7224, forall-choice (every pick's Cl(3,0) cyclic product is the scalar +/-1) fails on both cycles because N_hold is strictly less than N_picks, so an exist-choice HOLD does not pin a determined Cl(3,0) plaquette member: the product is choice-dependent, not fixed by the record. It restates #7224's M-sets, its 9/5 and 3/2 counts and its exist-choice hold/hold verbatim as comparison.",
  "forcing": true,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

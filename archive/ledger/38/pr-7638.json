@@ -1,7 +1,7 @@
 {
  "id": "pr-7638",
  "title": "feat(nm2frmpl): plane support of cyclic-frame transport on x=0 versus x=1 at t+1 on two-axis opposite seed: reverse fails, face fails",
- "science": "LOAD-BEARING. The only member that measures the quantity everything else in the band is secretly reporting: the SUPPORT of the frame field. Full census over the two planes \u2014 x=0: 27 formed sites, 10 with transport; x=1: 25 formed, 10 with transport. I reproduced both hold sets site-for-site. It also runs five rival scorings of the same recorded state (plane-support fail/fail, z-probe transport hol",
+ "science": "LOAD-BEARING. The only member that measures the quantity everything else in the band is secretly reporting: the SUPPORT of the frame field. Full census over the two planes \u2014 x=0: 27 formed sites, 10 with transport; x=1: 25 formed, 10 with transport. I reproduced both hold sets site-for-site. It also runs five rival scorings of the same recorded state (plane-support fail/fail, z-probe transport hold/hold, universal 6-NN fail/fail, existential 6-NN hold/hold, early-tick plane hold/hold), i.e. one state, three different verdict pairs depending on readout.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-7348",
  "title": "[physics-loop][common-action][bounded_theorem][bounded-support] correct stationarity and stage-orientation gate",
- "science": "Corrects the tournament gate (zero-matter saddle makes the vacuum mixed Hessian vanish by typing), forces the canonical DeWitt/Fierz-Pauli coefficient ray via 19 exact polynomial identities (only overall scale free), classifies all eight Nyquist strata (two positive TT directions off spatial-zero), and derives the unique (2,0) Block-78 cadence with the orientation-odd exchange candidate. Declared ",
+ "science": "Corrects the tournament gate (zero-matter saddle makes the vacuum mixed Hessian vanish by typing), forces the canonical DeWitt/Fierz-Pauli coefficient ray via 19 exact polynomial identities (only overall scale free), classifies all eight Nyquist strata (two positive TT directions off spatial-zero), and derives the unique (2,0) Block-78 cadence with the orientation-odd exchange candidate. Declared unresolved/partial-narrowing; the arc's Einstein-form derivation now rests on the induced-EH coefficient in #7814.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

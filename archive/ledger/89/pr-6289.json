@@ -1,9 +1,9 @@
 {
  "id": "pr-6289",
  "title": "feat(recstack): L0 Record formation, permanence, and source increment",
- "science": "Bounded_theorem note, no probe cell. Two-tick L0 dynamics: seed +x gives n=(1/3,0,0), f=1, menu (2/3,1/3); tick 1 locks the draw, tick 2 is the IDENTITY by permanence, and the source count goes 0 -> 1 -> 1 (increments exactly once, never again). Cube covariance of the Record update: Rz-rotated seed locks P_{y+}. This plus #6284 is the 'L0 Record formation/permanence' pair the roll-up names. ANOMAL",
+ "science": "Bounded_theorem note, no probe cell. Two-tick L0 dynamics: seed +x gives n=(1/3,0,0), f=1, menu (2/3,1/3); tick 1 locks the draw, tick 2 is the IDENTITY by permanence, and the source count goes 0 -> 1 -> 1 (increments exactly once, never again). Cube covariance of the Record update: Rz-rotated seed locks P_{y+}. This plus #6284 is the 'L0 Record formation/permanence' pair the roll-up names. ANOMALY: the runner ships a VACUOUS check -- check('thm1-tick0', ..., t0 is not None or True) is a tautology that always passes; the author noticed ('# Fix thm1: I had a tautology') and appended a replacement check thm1-before-tick, but left the dead check in, so the advertised TOTAL PASS=20 includes one assertion that certifies nothing.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=20 FAIL=0, one of which is vacuous)",
  "source": {
   "pr": 6289,
   "branch": "physics-loop/toe-lphys-block-recstack-20260814"

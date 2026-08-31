@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the readout-search phase (toe-lphys-20260812, #7092–#7141)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 One fixed process (perp-step record growth on B_3(0), Euclidean, 123 sites),
 swept over SIX READOUT DEFINITIONS × six seed orbits × three probe axes.
 Contains the campaign's discovery event (#7096) and first HOLD/HOLD (#7128).

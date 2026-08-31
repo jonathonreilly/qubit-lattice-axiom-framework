@@ -1,7 +1,7 @@
 {
  "id": "pr-7147",
  "title": "feat(nperppex): perpnn 1-seed later-tick exist-opposite: reverse fails, face HOLD",
- "science": "The band's one structural obstruction. On the perpnn 1-seed (origin, lock +e1) the x-probe cell has S_*(A)={+e1} and S_*(B)={+e1,+e2,+e3}, all positive, so reverse fails at the widest time window; I confirmed by independent recomputation that perpnn-x is the ONLY cell of the 30 seed x frame cells whose reverse still fails at the maximal readout (later-tick union own lock). It also exposes a name c",
+ "science": "The band's one structural obstruction. On the perpnn 1-seed (origin, lock +e1) the x-probe cell has S_*(A)={+e1} and S_*(B)={+e1,+e2,+e3}, all positive, so reverse fails at the widest time window; I confirmed by independent recomputation that perpnn-x is the ONLY cell of the 30 seed x frame cells whose reverse still fails at the maximal readout (later-tick union own lock). It also exposes a name collision: the runner computes a second, unrelated 'reverse/face' as integer inequalities on formation ticks (3*t(A)^2 > t(B)^2, t(C)^2 > 2*t(D)^2) which BOTH hold on the same four probes while the lock-vector reverse fails.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=HOLD",
  "source": {

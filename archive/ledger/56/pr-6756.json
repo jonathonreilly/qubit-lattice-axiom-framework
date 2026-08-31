@@ -1,9 +1,9 @@
 {
  "id": "pr-6756",
  "title": "feat(t14mix): t=14 holds both (8,0,0) and (4,4,4); 26 G+ types",
- "science": "Type list of the t=14 shell on B_12(0) with orbit sizes -- a strict subset of #6752, which already gives the same 26 representatives plus their radii. The one added point is explicit: (8,0,0) and (4,4,4) share the t=14 shell, which IS the mechanism behind the doubled-diamond failure in #6736 (equal arrivals reduce the test to 12*|axis| vs 16*|body|, so 2352 < 3136 is forced). Otherwise subsumed by",
+ "science": "Type list of the t=14 shell on B_12(0) with orbit sizes -- a strict subset of #6752, which already gives the same 26 representatives plus their radii. The one added point is explicit: (8,0,0) and (4,4,4) share the t=14 shell, which IS the mechanism behind the doubled-diamond failure in #6736 (equal arrivals reduce the test to 12*|axis| vs 16*|body|, so 2352 < 3136 is forced). Otherwise subsumed by #6752.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports 26 t=14 G+ types; same_s",
+ "verdict_pair": "reverse=absent face=absent (reports 26 t=14 G+ types; same_shell True)",
  "source": {
   "pr": 6756,
   "branch": "physics-loop/toe-lphys-block-t14mix-20260815"

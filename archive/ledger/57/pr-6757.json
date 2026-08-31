@@ -1,9 +1,9 @@
 {
  "id": "pr-6757",
  "title": "feat(k6why): k=6 face reverse returns: axis last hops 3+3, face last hops all 1",
- "science": "MECHANISM, not just a number: exhibits the lex-first shortest walks to (12,0,0) (cost 20) and (6,6,0) (cost 14) with per-hop costs, and shows the k=6 face reverse comes entirely from the axis walk's last two hops -- a forced support-drop (11,-1,0)->(11,0,0) at cost 3 then the both-weights-1 axis step (11,0,0)->(12,0,0) at cost 3 -- versus a cost-1 face last hop. CAVEAT visible in its own checks: (",
+ "science": "MECHANISM, not just a number: exhibits the lex-first shortest walks to (12,0,0) (cost 20) and (6,6,0) (cost 14) with per-hop costs, and shows the k=6 face reverse comes entirely from the axis walk's last two hops -- a forced support-drop (11,-1,0)->(11,0,0) at cost 3 then the both-weights-1 axis step (11,0,0)->(12,0,0) at cost 3 -- versus a cost-1 face last hop. CAVEAT visible in its own checks: (12,0,0)'s only in-ball neighbor is (11,0,0), so the expensive last hop is a ball-boundary artifact, and the reverse margin is thin (28800 vs 28224, ~2%).",
  "forcing": false,
- "verdict_pair": "reverse(face k=6)=YES (28800>28224) body reverse not scored ",
+ "verdict_pair": "reverse(face k=6)=YES (28800>28224) body reverse not scored here",
  "source": {
   "pr": 6757,
   "branch": "physics-loop/toe-lphys-block-k6why-20260815"

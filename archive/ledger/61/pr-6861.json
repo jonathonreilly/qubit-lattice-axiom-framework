@@ -1,7 +1,7 @@
 {
  "id": "pr-6861",
  "title": "physics: prove the seam dichotomy and close the carrier arc (block 145)",
- "science": "The seam dichotomy no-go, the carrier arc closing theorem: on the free 32-modulus carrier family, atlas-global Hermiticity forces shear-free (rank-18 linear certificate), shear-free forces the diagonal Hodge and a zero seam, so a live reflection seam and a Hermitian lattice-theta pairing are mutually exclusive and the mass never enters; the live-seam residue is exactly bounded (at most two edges),",
+ "science": "The seam dichotomy no-go, the carrier arc closing theorem: on the free 32-modulus carrier family, atlas-global Hermiticity forces shear-free (rank-18 linear certificate), shear-free forces the diagonal Hodge and a zero seam, so a live reflection seam and a Hermitian lattice-theta pairing are mutually exclusive and the mass never enters; the live-seam residue is exactly bounded (at most two edges), the mass Gram on the Hermiticity locus is hyperbolic and never PSD, and the X_0 pairing is Hermitian carrier-uniformly but cone-forced to inertia (4,0,4). Cited by 147/148/149 (migration, witness, linear envelope) without restatement.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

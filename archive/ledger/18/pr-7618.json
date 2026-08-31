@@ -1,7 +1,7 @@
 {
  "id": "pr-7618",
  "title": "feat(nm2holyz2sl): yz-plane cyclic-frame holonomy of the x=1 unit square at t+1 on two-axis same-lock seed: reverse fails, face fails",
- "science": "holonomy of the x=1 yz unit square (two-axis SAME-LOCK seed), plus the x=2 square. Defines the band's four-edge loop product with the column convention P(q,r)=F(q)^T F(r); I proved that product telescopes to I_3 identically, so 'holonomy HOLD' can only mean 'all four vertices have a defined frame'. Both loops fail at the vertex gate: A=(1,0,0) and D=(1,1,0) have M={-e_3},O={+e_1} (split fails), an",
+ "science": "holonomy of the x=1 yz unit square (two-axis SAME-LOCK seed), plus the x=2 square. Defines the band's four-edge loop product with the column convention P(q,r)=F(q)^T F(r); I proved that product telescopes to I_3 identically, so 'holonomy HOLD' can only mean 'all four vertices have a defined frame'. Both loops fail at the vertex gate: A=(1,0,0) and D=(1,1,0) have M={-e_3},O={+e_1} (split fails), and C2=(2,1,1),C3=(2,0,1) have O={} (empty outgoing). Its own gate theorem1-mixed-O-cyclic-not-unique concedes the frame is not unique when O holds both signs of an axis.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-6786",
  "title": "feat(samek7): nu same-k reverse fails at k=7: t(7,0,0)=13 vs t(7,7,7)=23",
- "science": "Terminal negative for the same-k comparator: on B_21(0) (13287 sites) nu's same-k reverse finally FAILS at k=7, t(7,0,0)=13 and t(7,7,7)=23 giving 507 < 529, after holding at k=1..6 (#6775, #6782). Combined with the body and face sweeps this closes the picture -- every comparator in the series has a finite k at which the reversal dies (body k>=3, face k>=4, same-k k>=7), so nothing survives to lar",
+ "science": "Terminal negative for the same-k comparator: on B_21(0) (13287 sites) nu's same-k reverse finally FAILS at k=7, t(7,0,0)=13 and t(7,7,7)=23 giving 507 < 529, after holding at k=1..6 (#6775, #6782). Combined with the body and face sweeps this closes the picture -- every comparator in the series has a finite k at which the reversal dies (body k>=3, face k>=4, same-k k>=7), so nothing survives to large scale. Also another wall shift: t(18,0,0)=24 here vs 26 on B_18.",
  "forcing": false,
  "verdict_pair": "same-k reverse k=7 = NO (507<529)",
  "source": {

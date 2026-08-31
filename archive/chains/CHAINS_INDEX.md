@@ -1,7 +1,11 @@
-# Chain summaries — what each archived lane established (densify pass-2, 2026-08-31)
+# Chain summaries — what each archived lane claimed and reported (densify pass-2, 2026-08-31)
 
 Written by the pass-2 deep readers (full-diff, stack-context reads); supervisor-reviewed.
-Per-PR detail: `../ledger/`. FRONT survivors stay as open PRs; everything here is archived.
+Record-only: every statement reports what the named PRs' notes and runners
+claimed or computed, as read in the 2026-08 full-read; reader recomputations
+are marked as such. Nothing here is promoted — 'proves'/'exactly'/'cannot'
+wording is the archived work's own claim language, quoted. Per-PR detail:
+`../ledger/`. FRONT survivors stay as open PRs; everything here is archived.
 
 ## toe-axiom-closure, blocks 9–66
 From the binary compatible law to the joint-law question the live tip still works: the

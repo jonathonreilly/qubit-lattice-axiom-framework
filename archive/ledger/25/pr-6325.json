@@ -1,7 +1,7 @@
 {
  "id": "pr-6325",
  "title": "science(toe): construct component-staggered link action",
- "science": "Block 83: first action whose geometry derivatives exactly reproduce the Block 78 lapse density, shift current, and front-loaded stress cadence (component-staggered +1/-1 link pair realizing all 13,056 sources), with two narrow hostile controls (same-event rank-one stress fails by determinant magnitude 3; time-adjoint symmetrization breaks 11,064 schedules); declared gravity frozen unless the bound",
+ "science": "Block 83: first action whose geometry derivatives exactly reproduce the Block 78 lapse density, shift current, and front-loaded stress cadence (component-staggered +1/-1 link pair realizing all 13,056 sources), with two narrow hostile controls (same-event rank-one stress fails by determinant magnitude 3; time-adjoint symmetrization breaks 11,064 schedules); declared gravity frozen unless the bounded-local pullback generator and raw graph current get built.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

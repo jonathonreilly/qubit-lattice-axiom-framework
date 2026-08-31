@@ -3,7 +3,7 @@
  "title": "feat(f10c3orb): orbit type of f10 four 3-site fills",
  "science": "reverse=none face=none (f_cut fill-set orbit census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut fill-set orbit census; no (rev",
+ "verdict_pair": "reverse=none face=none (f_cut fill-set orbit census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6512,
   "branch": "physics-loop/toe-lphys-block-f10c3orb-20260815"

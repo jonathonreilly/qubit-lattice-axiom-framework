@@ -1,7 +1,7 @@
 {
  "id": "pr-7798",
  "title": "[physics-loop] Block244 exact r3 q2 adjacent-product cubic response",
- "science": "First exact higher-r response: the r=3,q=2 adjacent-product cubic Y-to-Z coefficient on the 19-link two-cell ladder, closed form R=eps^3 c^3 a0a1a2 [M1L1+M2L2+9L0]/648 with lower orders vanishing by the exclusive-rail Haar gate and physical-Q annihilating all six proper histories; identity control exactly 2/3. Direct geometric+machinery import of terminal Block248 and substrate of the Gram/no-go a",
+ "science": "First exact higher-r response: the r=3,q=2 adjacent-product cubic Y-to-Z coefficient on the 19-link two-cell ladder, closed form R=eps^3 c^3 a0a1a2 [M1L1+M2L2+9L0]/648 with lower orders vanishing by the exclusive-rail Haar gate and physical-Q annihilating all six proper histories; identity control exactly 2/3. Direct geometric+machinery import of terminal Block248 and substrate of the Gram/no-go arc; no later member restates the response value.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

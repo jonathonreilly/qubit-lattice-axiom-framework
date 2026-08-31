@@ -3,7 +3,7 @@
  "title": "feat(d4k1): max\u22654 out-face same-k holds at k=1: t=3 vs t=5",
  "science": "k=1 for d4 on B_6(0). Self-admitted vacuity: the note states 'On every nearest-neighbor hop that remains inside B_6(0), d4 equals rho3' -- the first firing hop needs an l1-norm-7 destination, outside the host -- so the extra clause is identically idle and (3,5) is the rho3 pair. Second confirmed instance of a wholly inert named rule in the band.",
  "forcing": false,
- "verdict_pair": "reverse=YES at k=1 under a rule the note admits is idle on t",
+ "verdict_pair": "reverse=YES at k=1 under a rule the note admits is idle on the host (band bit) face=absent",
  "source": {
   "pr": 6960,
   "branch": "physics-loop/toe-lphys-block-d4k1-20260815"

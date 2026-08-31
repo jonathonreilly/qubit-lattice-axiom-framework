@@ -1,7 +1,7 @@
 {
  "id": "pr-7785",
  "title": "[physics-loop] Source eta 01: factor H1 locality and isolate decoder ownership",
- "science": "H1 native action factor-locality theorem: the Block-206 110-term forward and actual-reverse Laurent sources reconstruct exactly from native shifted factors at max depth 3 (stage census 8/8/8/60/60/110), each primitive having unit support per variable \u2014 so effective L1 radius 3 is NOT by itself a reason to enlarge the nearest-neighbor Admissibility context (that objection is retired). Also: T2-shea",
+ "science": "H1 native action factor-locality theorem: the Block-206 110-term forward and actual-reverse Laurent sources reconstruct exactly from native shifted factors at max depth 3 (stage census 8/8/8/60/60/110), each primitive having unit support per variable \u2014 so effective L1 radius 3 is NOT by itself a reason to enlarge the nearest-neighbor Admissibility context (that objection is retired). Also: T2-shear-to-source Laurent map has exact rank 3 (action propagates, does not select the eta decoder); proper-cubic Hom(six-Bloch-shell -> T2) is exactly 2-dimensional (54-var system, rank 52); and an overgenerous phase-as-six-Bloch comparator admits 8 of 24 internal cubic frames with 8 distinct law maps, all 28 pairs separated on a held-out one-site input \u2014 falsifying decoder-uniqueness from the visible phase pattern. Broad no-eta-decoder-can-exist claim explicitly FAILED and not shipped.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

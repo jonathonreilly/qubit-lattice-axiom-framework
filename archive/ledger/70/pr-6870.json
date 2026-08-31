@@ -1,7 +1,7 @@
 {
  "id": "pr-6870",
  "title": "physics: classify the shear gauge and close the campaign (block 149)",
- "science": "Terminal of the 136-149 carrier campaign: exact transport identity (matrix equality, 1024/1024 both conventions) plus five-tier invariant profile classify the carrier shear as recorded exactly up to Z4xZ4 lattice translation and no further (physical gauge group order 16, per-cell shear bookkeeping, global sign flip detected by 30/32 threshold pencils); answers the owner standing recorded-vs-bookke",
+ "science": "Terminal of the 136-149 carrier campaign: exact transport identity (matrix equality, 1024/1024 both conventions) plus five-tier invariant profile classify the carrier shear as recorded exactly up to Z4xZ4 lattice translation and no further (physical gauge group order 16, per-cell shear bookkeeping, global sign flip detected by 30/32 threshold pencils); answers the owner standing recorded-vs-bookkeeping question sharply. Blocks 150-152 pivot to the joint lane and nothing later restates the classification.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

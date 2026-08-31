@@ -1,9 +1,9 @@
 {
  "id": "pr-6604",
  "title": "feat(qstartot9): among Q_star, Max(9) iff vertex3 and mixed3",
- "science": "The iff HOLDS: among the 8 Q_* maps, maximal cov9 iff (vertex3=1 and mixed3=1), N_max=N_Q=N_both=2, no miss - and m9=220=C(12,9), so both Q maps are nine-site TOTAL. The note also draws an explicit cross-member parity contrast the roll-up does not carry: at odd k (3,5,7,9,10) the totality/maximum cut is the two-map set Q, while at even k (4,6,8) the maximum is the singleton {f1} - f_L1 attains the",
+ "science": "The iff HOLDS: among the 8 Q_* maps, maximal cov9 iff (vertex3=1 and mixed3=1), N_max=N_Q=N_both=2, no miss - and m9=220=C(12,9), so both Q maps are nine-site TOTAL. The note also draws an explicit cross-member parity contrast the roll-up does not carry: at odd k (3,5,7,9,10) the totality/maximum cut is the two-map set Q, while at even k (4,6,8) the maximum is the singleton {f1} - f_L1 attains the ceiling at odd k and misses it at even k. Full eight-line cov9 census (68,72,200,220,72,72,204,220).",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (maximizer test; max_cov9_iff_Q=1, N_ma",
+ "verdict_pair": "reverse=N/A face=N/A (maximizer test; max_cov9_iff_Q=1, N_max=N_Q=N_both=2, lex_first_miss=None)",
  "source": {
   "pr": 6604,
   "branch": "physics-loop/toe-lphys-block-qstartot9-20260815"

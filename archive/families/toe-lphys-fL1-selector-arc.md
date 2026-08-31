@@ -1,12 +1,19 @@
 # Sub-campaign roll-up: the f_L1 selector arc (toe-lphys-20260812, PRs ~#6391–#6474)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 44-PR research arc on the twelve-vertex two-cube {0,1,2}x{0,1}x{0,1}
 (off-patch occupancy 0), asking: does anything select the L1 formation
 predicate f_L1 (fire iff some axis is unbalanced)? Written from a full-diff
 read of every member (densify 2026-08-31); no single PR states the arc's
 conclusion.
 
-## The conclusion (a forcing negative, stated here for the first time)
+## What the members' runners jointly reported (a forcing negative no member states; assembled here)
 Three independent selectors were run; NONE picks f_L1:
 1. Sparsity picks f_min (support 26 vs f_L1's 56) — and f_min lies OUTSIDE
    F_cut (breaks complement-even). Inside F_cut the sparsest is (1,0,1,0,0)

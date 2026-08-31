@@ -1,7 +1,7 @@
 {
  "id": "pr-7474",
  "title": "feat(nm2occt2slz): cyclic lex-smallest Orient freeze t+1 vs t+2 on two-axis same-lock z-probes: reverse HOLD, face HOLD, composition HOLD",
- "science": "same-lock z-probes, cyclic lex-smallest orientation at two cuts; face=hold at both. Its runner also reports the opposite-seed z cell (reverse=hold face=hold) as an in-script cross-variant. Composition is forced: O(q,tau) is constant for all tau>=t(q)+1 (any step e in O(q) requires e in M(q+e), which forces t(q+e)=t(q)+1), so t+2 can never differ from t+1 and composition=HOLD carries zero informati",
+ "science": "same-lock z-probes, cyclic lex-smallest orientation at two cuts; face=hold at both. Its runner also reports the opposite-seed z cell (reverse=hold face=hold) as an in-script cross-variant. Composition is forced: O(q,tau) is constant for all tau>=t(q)+1 (any step e in O(q) requires e in M(q+e), which forces t(q+e)=t(q)+1), so t+2 can never differ from t+1 and composition=HOLD carries zero information.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=hold",
  "source": {

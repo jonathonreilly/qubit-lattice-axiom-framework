@@ -3,7 +3,7 @@
  "title": "feat(s10fillwhy): first refuse of (1,1,0,0,0) on the #6492 seed",
  "science": "reverse=none face=none (f_cut refusal census, N_refuse=0; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut refusal census, N_refuse=0; no",
+ "verdict_pair": "reverse=none face=none (f_cut refusal census, N_refuse=0; no (reverse,face) pair stated)",
  "source": {
   "pr": 6497,
   "branch": "physics-loop/toe-lphys-block-s10fillwhy-20260815"

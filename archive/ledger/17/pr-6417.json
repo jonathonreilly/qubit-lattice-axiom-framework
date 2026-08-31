@@ -1,9 +1,9 @@
 {
  "id": "pr-6417",
  "title": "feat(mindiff): first |S|<=3 seed where f_min and f_L1 disagree",
- "science": "One of the strongest in the batch, and it silently CORRECTS the series' own account of f_min vs f_L1. Exhaustive lex census of all 298 nonempty seeds with |S|<=3 on the two-cube: every 1-site seed and the long-axis 3-site seed agree, and the FIRST separating seed is the opposite-corner pair S={(0,0,0),(2,1,1)} - f_L1 fills with (2,8,12) T=2, f_min halts at 10 with (2,8,10) and does not fill. The e",
+ "science": "One of the strongest in the batch, and it silently CORRECTS the series' own account of f_min vs f_L1. Exhaustive lex census of all 298 nonempty seeds with |S|<=3 on the two-cube: every 1-site seed and the long-axis 3-site seed agree, and the FIRST separating seed is the opposite-corner pair S={(0,0,0),(2,1,1)} - f_L1 fills with (2,8,12) T=2, f_min halts at 10 with (2,8,10) and does not fill. The executed split is on axis type (2,1,0), NOT on mixed3. That matters because #6407/#6411/#6412/#6413 all describe the two maps as differing 'on mixed3'; in fact f_min = f_L1 AND n_both=0, so they differ on all three n_both>=1 orbits f_L1 fires - wt5(1,2,0), adj4(2,1,0), mixed3(1,1,1), sizes 6+12+12=30=56-26. The five-bit tuple hides wt5 and adj4 (see the #6414 collision), which is why the earlier notes name only mixed3. This PR is the one that actually exhibits a discriminating experiment.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6417,
   "branch": "physics-loop/toe-lphys-block-mindiff-20260815"

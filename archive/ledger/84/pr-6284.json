@@ -1,9 +1,9 @@
 {
  "id": "pr-6284",
  "title": "feat(memberexec): display one executable axiom-class member L0",
- "science": "Bounded_theorem note, no probe cell. THIS IS THE DEFINITIONAL ROOT OF THE CAMPAIGN: it displays L0, the first fully executable member of the axiom class, on the plus-shaped patch -- occupancy six-tuple c in {0,1}^6, directed Bloch kernel n_mu=(c_{+mu}-c_{-mu})/3, rho=(I+n.sigma)/2, formation-ready iff n!=0, and for every nonzero n the UNIQUE spectral PVM of rho with the exact closed form p_pm=(3 p",
+ "science": "Bounded_theorem note, no probe cell. THIS IS THE DEFINITIONAL ROOT OF THE CAMPAIGN: it displays L0, the first fully executable member of the axiom class, on the plus-shaped patch -- occupancy six-tuple c in {0,1}^6, directed Bloch kernel n_mu=(c_{+mu}-c_{-mu})/3, rho=(I+n.sigma)/2, formation-ready iff n!=0, and for every nonzero n the UNIQUE spectral PVM of rho with the exact closed form p_pm=(3 pm sqrt(k))/6 where k=|3n|^2 in {1,2,3}. Full cube covariance n(R.c)=R n(c) verified over all 24 rotations x 64 occupancies. Census: 64 occupancies = 8 with n=0 + 56 formation-ready -- this is where the campaign's '56 nonzero cells' comes from. Record update = draw + permanence, second update is identity. Clock a=1 and pairing B=xy explicitly flagged as DISCONNECTED extras. 37/37 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=37 FAIL=0)",
  "source": {
   "pr": 6284,
   "branch": "physics-loop/toe-lphys-block-memberexec-20260814"

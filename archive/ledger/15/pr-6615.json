@@ -1,9 +1,9 @@
 {
  "id": "pr-6615",
  "title": "feat(q4f7): among Q4-false, cov7>0 iff vertex3",
- "science": "EXACT IFF on a declared slice: among the 8 Q4-false maps (wt1=0, adj2=0), cov7>0 iff vertex3=1, N_pos=N_Q=N_both=4, N_mismatch=0, equiv=1, no miss. It also prints the full closed cov7 table on the slice - (0,0,0,1,0)=16, (0,1,0,1,0)=40, (0,0,0,1,1)=80, (0,1,0,1,1)=108, all four vertex3=0 maps exactly 0. Composed with #6614's containment (cov7>0 implies Q6, zeros exactly the wt1-only maps) this clo",
+ "science": "EXACT IFF on a declared slice: among the 8 Q4-false maps (wt1=0, adj2=0), cov7>0 iff vertex3=1, N_pos=N_Q=N_both=4, N_mismatch=0, equiv=1, no miss. It also prints the full closed cov7 table on the slice - (0,0,0,1,0)=16, (0,1,0,1,0)=40, (0,0,0,1,1)=80, (0,1,0,1,1)=108, all four vertex3=0 maps exactly 0. Composed with #6614's containment (cov7>0 implies Q6, zeros exactly the wt1-only maps) this closes the 32-map law the family never states: cov7>0 iff (adj2 OR vertex3). Clean note otherwise - correct seed-size prose, no stubbed checks, no internal contradiction.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (slice selector test; equiv=1, N_pos=4,",
+ "verdict_pair": "reverse=N/A face=N/A (slice selector test; equiv=1, N_pos=4, N_Q=4, N_both=4, N_mismatch=0)",
  "source": {
   "pr": 6615,
   "branch": "physics-loop/toe-lphys-block-q4f7-20260815"

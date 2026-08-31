@@ -1,9 +1,9 @@
 {
  "id": "pr-7693",
  "title": "feat(nm2frm1pzt): directed 1-step cyclic-frame transport along +e3 freeze t+1 vs t+2 on two-axis opposite seed: reverse HOLD, face fails at ",
- "science": "Freeze of the directed 1-step along +e3 - the only member of the band that reads both endpoints at a COMMON seed cut instead of each site's own t+1, though its title says 't+1' like the rest. Recomputed: the face bit's change from fail at tau1 to HOLD at tau2, and hence the sole 'composition fails' in the band, is entirely an artifact of that undeclared cut convention; under the band's own per-sit",
+ "science": "Freeze of the directed 1-step along +e3 - the only member of the band that reads both endpoints at a COMMON seed cut instead of each site's own t+1, though its title says 't+1' like the rest. Recomputed: the face bit's change from fail at tau1 to HOLD at tau2, and hence the sole 'composition fails' in the band, is entirely an artifact of that undeclared cut convention; under the band's own per-site cut the face bit HOLDs at both.",
  "forcing": false,
- "verdict_pair": "reverse=HOLD face=fails at t+1, HOLD at t+2 (composition fai",
+ "verdict_pair": "reverse=HOLD face=fails at t+1, HOLD at t+2 (composition fails)",
  "source": {
   "pr": 7693,
   "branch": "physics-loop/toe-lphys-block-nm2frm1pzt-20260815"

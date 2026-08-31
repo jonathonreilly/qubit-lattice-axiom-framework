@@ -1,7 +1,7 @@
 {
  "id": "pr-6659",
  "title": "feat(histlab): history unique-axis is not a full labeling; 2 of 8 completions fire",
- "science": "New labeling channel opened - formation history rather than final occupancy, not a probe cell: at v=(-1,1,1) each occupied neighbour is labelled from the occupancy dipole computed inside its NEAREST-SEED ball only (lex-first on l1 ties), giving history kernels (0,-1/3,-1/3), (1/3,0,0), (1/3,0,-1/3), (1/3,-1/3,0) and the history 6-tuple (tied,0,+,tied,0,tied) - only the +y neighbour is unique-axis,",
+ "science": "New labeling channel opened - formation history rather than final occupancy, not a probe cell: at v=(-1,1,1) each occupied neighbour is labelled from the occupancy dipole computed inside its NEAREST-SEED ball only (lex-first on l1 ties), giving history kernels (0,-1/3,-1/3), (1/3,0,0), (1/3,0,-1/3), (1/3,-1/3,0) and the history 6-tuple (tied,0,+,tied,0,tied) - only the +y neighbour is unique-axis, so history does NOT fully label the star. Of the 8 completions of the three tied slots, exactly N_hist_fire=2 are July-3 pair members: (+,0,+,-,0,-) and (-,0,+,-,0,+). Titled 'history unique-axis is not a full labeling; 2 of 8 completions fire'.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

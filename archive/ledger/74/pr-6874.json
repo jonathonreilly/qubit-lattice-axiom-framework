@@ -1,7 +1,7 @@
 {
  "id": "pr-6874",
  "title": "feat(renkclk): ridge-enter clock N_label=12 N_filt=6",
- "science": "Axioms-adjacent: kappa on the 12 lex-first perpendicular weight-4 masks gives N_label_fire=12, N_filt_fire=6 \u2014 the same split as rho3, so the extra clause does not move the count. The runner (not the prose) proves the exact dichotomy: for all 12 hosts fires_filt <=> unit_coord_count(v) != 2, and all four incoming costs are 3 iff unit_count(v)=2, else all four are 1 \u2014 the readiness filter is never ",
+ "science": "Axioms-adjacent: kappa on the 12 lex-first perpendicular weight-4 masks gives N_label_fire=12, N_filt_fire=6 \u2014 the same split as rho3, so the extra clause does not move the count. The runner (not the prose) proves the exact dichotomy: for all 12 hosts fires_filt <=> unit_coord_count(v) != 2, and all four incoming costs are 3 iff unit_count(v)=2, else all four are 1 \u2014 the readiness filter is never partial. This is the band's only member touching Admissibility firing rather than the metric.",
  "forcing": false,
  "verdict_pair": "none",
  "source": {

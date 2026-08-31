@@ -1,9 +1,9 @@
 {
  "id": "pr-6390",
  "title": "feat(blankclass): blank-slot covariant formation class is larger than F_G",
- "science": "Bounded_theorem note with full N1-N8 gate, no probe cell. AMPLIFIES the underdetermination by combining #6382 (blank is a distinct letter, not 0) with #6381 (predicate counting). On the three-letter alphabet {0,1,blank} the six slots give 729 cells, and the 24 proper rotations produce exactly N_orb = 57 orbits -- verified twice, by lexicographic-minimum enumeration and by Burnside (1.3^6 + 6.3^3 +",
+ "science": "Bounded_theorem note with full N1-N8 gate, no probe cell. AMPLIFIES the underdetermination by combining #6382 (blank is a distinct letter, not 0) with #6381 (predicate counting). On the three-letter alphabet {0,1,blank} the six slots give 729 cells, and the 24 proper rotations produce exactly N_orb = 57 orbits -- verified twice, by lexicographic-minimum enumeration and by Burnside (1.3^6 + 6.3^3 + 3.3^4 + 8.3^2 + 6.3^3)/24 = 1368/24 = 57 with the cycle types spelled out -- so the cube-covariant boolean ready-predicate class has size 2^57 = 144115188075855872. Restriction to {0,1}^6 is SURJECTIVE onto the 1024-member F_G via the zero-on-blank extension (checked on all 1024), and the split is 10 binary orbits + 47 blank-bearing orbits, so the enlargement is strict and blank is genuinely new orbit content, not a relabelling of 0 (the letter-count triple is a G-invariant; all-zero and all-blank lie in different orbits). Net effect: taking the boundary convention seriously blows the formation-predicate ambiguity up from 1024 to 2^57. 21/21 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=21 FAIL=0)",
  "source": {
   "pr": 6390,
   "branch": "physics-loop/toe-lphys-block-blankclass-20260815"

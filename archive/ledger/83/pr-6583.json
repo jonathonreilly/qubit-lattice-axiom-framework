@@ -1,9 +1,9 @@
 {
  "id": "pr-6583",
  "title": "feat(mix3eq): unique equal-cov8 Q8 pair is the two extras",
- "science": "Same hidden equivalence as #6574: runner check thm1-fifteen-q8-true-pairs verifies cov8=0 on both Q8-false maps and cov8>0 on all 30 Q8-true maps, i.e. cov8>0 iff Q8 on all 32 F_cut maps - never stated as a theorem in the note. Names the unique equal-cov8 mixed3 pair (0,1,0,0,0)/(0,1,0,0,1) both at cov8=1, an isolated singleton with no selector explanation (the note lists 'a dynamical reason the o",
+ "science": "Same hidden equivalence as #6574: runner check thm1-fifteen-q8-true-pairs verifies cov8=0 on both Q8-false maps and cov8>0 on all 30 Q8-true maps, i.e. cov8>0 iff Q8 on all 32 F_cut maps - never stated as a theorem in the note. Names the unique equal-cov8 mixed3 pair (0,1,0,0,0)/(0,1,0,0,1) both at cov8=1, an isolated singleton with no selector explanation (the note lists 'a dynamical reason the opp2-only pair is the unique equal pair' as an open route).",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (equality census; N_eq=1, N_diff=14, eq",
+ "verdict_pair": "reverse=N/A face=N/A (equality census; N_eq=1, N_diff=14, equal pair cov8=1/1)",
  "source": {
   "pr": 6583,
   "branch": "physics-loop/toe-lphys-block-mix3eq-20260815"

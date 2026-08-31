@@ -1,7 +1,7 @@
 {
  "id": "pr-7034",
  "title": "feat(perpvar): perpnn formation-tick var on B3 is 22481/54000",
- "science": "Perp-step incoming-lock process on Euclidean B_3(0): exactly two sites never form (the seed-axis radius-3 pair), formed-nonzero=120, tick histogram (1,4)(2,12)(3,26)(4,42)(5,36). Exact closed form for the arrival-speed variance var(|x|_2/t) = 347297/1080000 - (427/9000)sqrt2 - ... = 0.012492962195816963, second moment Q=22481/54000; ticks are provably not hop counts (t(1,0,0)=3 vs hop 1), and a re",
+ "science": "Perp-step incoming-lock process on Euclidean B_3(0): exactly two sites never form (the seed-axis radius-3 pair), formed-nonzero=120, tick histogram (1,4)(2,12)(3,26)(4,42)(5,36). Exact closed form for the arrival-speed variance var(|x|_2/t) = 347297/1080000 - (427/9000)sqrt2 - ... = 0.012492962195816963, second moment Q=22481/54000; ticks are provably not hop counts (t(1,0,0)=3 vs hop 1), and a real mutation check shows dropping the perpendicular rule fills all 123 sites.",
  "forcing": false,
  "verdict_pair": "none",
  "source": {

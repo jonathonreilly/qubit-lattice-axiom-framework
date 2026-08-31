@@ -1,9 +1,9 @@
 {
  "id": "pr-6327",
  "title": "feat(l1comp): two-tick composition of displayed L1",
- "science": "Bounded_theorem note, no probe cell. Introduces L1 -- the INTEGRATED member (occupancy kernel + formation-count clock F + rho/phi tree gauge in one step function) -- and proves it composes over two ticks: permanence (tick-1 locks are a subset after tick 2), clock ADDITIVITY F_2 = F_1 + |new_2| = 3+4 = 7, empty configuration a fixed point, and the tree-gauge identities phi(F*)=rho(A), phi(F_B)=rho(",
+ "science": "Bounded_theorem note, no probe cell. Introduces L1 -- the INTEGRATED member (occupancy kernel + formation-count clock F + rho/phi tree gauge in one step function) -- and proves it composes over two ticks: permanence (tick-1 locks are a subset after tick 2), clock ADDITIVITY F_2 = F_1 + |new_2| = 3+4 = 7, empty configuration a fixed point, and the tree-gauge identities phi(F*)=rho(A), phi(F_B)=rho(A)+rho(B) surviving both ticks (4,1,4,5 then 7,4,7,11). KEY STRUCTURAL FINDING via mutation check: after two ticks the tree-gauge fluxes are NOT the face occupancy sums -- phi(F*)=7 vs face sum 3, phi(F_B)=11 vs outer-face sum 1 -- so the flux is a genuinely volumetric/nonlocal quantity, not a face-local one. Also carefully declines to force the tick-2 k=2 traces into Q (they involve sqrt 2). 34/34 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=34 FAIL=0)",
  "source": {
   "pr": 6327,
   "branch": "physics-loop/toe-lphys-block-l1comp-20260814"

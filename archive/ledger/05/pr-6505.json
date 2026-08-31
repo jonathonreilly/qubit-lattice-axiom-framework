@@ -3,7 +3,7 @@
  "title": "feat(triple0why): first refuse of f00 vs f1 on lex-first 2-site f1 fill",
  "science": "reverse=none face=none (f_cut refusal-mechanism census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut refusal-mechanism census; no (",
+ "verdict_pair": "reverse=none face=none (f_cut refusal-mechanism census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6505,
   "branch": "physics-loop/toe-lphys-block-triple0why-20260815"

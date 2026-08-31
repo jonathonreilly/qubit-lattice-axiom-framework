@@ -1,9 +1,9 @@
 {
  "id": "pr-7234",
  "title": "feat(nmoutopp): own outgoing set on #7167: reverse HOLD, face HOLD",
- "science": "CONTRADICTION inside the band. First own-OUTGOING-set readout, on #7208's y-probes; reports O(A)={+e2,+e3,-e3}, O(B) identical, O(C)={+e1,-e1,+e3,-e3}, O(D)={+e1,-e1} and reverse/face HOLD, with unique_O_reverse and unique_O_face both UNDEFINED. But its note says 'face already holds at each probe's own formation tick', and I recomputed that at each probe's own t the outgoing set is EMPTY at A, B a",
+ "science": "CONTRADICTION inside the band. First own-OUTGOING-set readout, on #7208's y-probes; reports O(A)={+e2,+e3,-e3}, O(B) identical, O(C)={+e1,-e1,+e3,-e3}, O(D)={+e1,-e1} and reverse/face HOLD, with unique_O_reverse and unique_O_face both UNDEFINED. But its note says 'face already holds at each probe's own formation tick', and I recomputed that at each probe's own t the outgoing set is EMPTY at A, B and C, so the own-tick verdicts are UNDEFINED/UNDEFINED. The numbers printed are the t+1 sets. #7243, on this same cell, prints O(tau0)={} explicitly, so the band contains its own refutation.",
  "forcing": false,
- "verdict_pair": "reverse=HOLD face=HOLD (as published; own-tick recompute giv",
+ "verdict_pair": "reverse=HOLD face=HOLD (as published; own-tick recompute gives reverse=UNDEFINED face=UNDEFINED)",
  "source": {
   "pr": 7234,
   "branch": "physics-loop/toe-lphys-block-nmoutopp-20260815"

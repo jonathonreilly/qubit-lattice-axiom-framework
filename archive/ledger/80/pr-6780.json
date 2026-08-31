@@ -1,9 +1,9 @@
 {
  "id": "pr-6780",
  "title": "feat(iso16): B16 t=8 and t=14 type counts match B12: 7/5 and 26/15",
- "science": "Stability control on the isochrone structure: the t=8 and t=14 G+ type/radius counts on B_16(0) are IDENTICAL to the B_12(0) values (7 types/5 radii and 26 types/15 radii), with the same 33 representatives, so those two shells are fully interior and host-independent -- unlike the axis arrivals, which do move with the ball (t(12,0,0) 20->18, t(8,0,0) 16->14). Useful for separating genuine structure",
+ "science": "Stability control on the isochrone structure: the t=8 and t=14 G+ type/radius counts on B_16(0) are IDENTICAL to the B_12(0) values (7 types/5 radii and 26 types/15 radii), with the same 33 representatives, so those two shells are fully interior and host-independent -- unlike the axis arrivals, which do move with the ball (t(12,0,0) 20->18, t(8,0,0) 16->14). Useful for separating genuine structure from boundary artifacts, but the type lists themselves duplicate #6752.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports t8 7/5 and t14 26/15, ma",
+ "verdict_pair": "reverse=absent face=absent (reports t8 7/5 and t14 26/15, matching B_12)",
  "source": {
   "pr": 6780,
   "branch": "physics-loop/toe-lphys-block-iso16-20260815"

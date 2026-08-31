@@ -1,9 +1,9 @@
 {
  "id": "pr-6796",
  "title": "feat(hugvar): corridor-slide is rounder than nu on B12",
- "science": "Not a same-k cell: an exact three-Dijkstra arrival-speed variance comparison on B_12 over all 2624 nonzero sites, with rational second moments Q_mu=81461329283517896329/284940228576113510400, Q_nu=775884178398451/2344690585036800, Q_l1=337/656 and var_mu 0.005602 < var_nu 0.006661 < var_l1 0.009447. Load-bearing: it shows mu is simultaneously a reverser AND strictly rounder than nu, which cuts aga",
+ "science": "Not a same-k cell: an exact three-Dijkstra arrival-speed variance comparison on B_12 over all 2624 nonzero sites, with rational second moments Q_mu=81461329283517896329/284940228576113510400, Q_nu=775884178398451/2344690585036800, Q_l1=337/656 and var_mu 0.005602 < var_nu 0.006661 < var_l1 0.009447. Load-bearing: it shows mu is simultaneously a reverser AND strictly rounder than nu, which cuts against the prior band's 'roundness and reversal are decoupled' reading (#6765/#6770). Runner defect: the uniqueness-not-claimed gate is written 'A or B and C' (Python precedence), so its fallback disjunct is a near-tautological substring test.",
  "forcing": false,
- "verdict_pair": "reverse=n/a face=n/a (variance triple var_mu<var_nu<var_l1; ",
+ "verdict_pair": "reverse=n/a face=n/a (variance triple var_mu<var_nu<var_l1; lex-first minimizer mu)",
  "source": {
   "pr": 6796,
   "branch": "physics-loop/toe-lphys-block-hugvar-20260815"

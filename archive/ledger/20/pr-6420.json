@@ -1,9 +1,9 @@
 {
  "id": "pr-6420",
  "title": "feat(diffnbhd): first disagreeing neighborhood of f_min and f_L1 on S*",
- "science": "Drill-down of #6417 to the exact discriminating stencil: from S*={(0,0,0),(2,1,1)} the first neighborhood where f_min and f_L1 return different bits is tick t=2, site (1,0,1), six-tuple (1,1,1,0,0,1) in order (+x,-x,+y,-y,+z,-z), axis type (2,1,0), with f_L1=1 and f_min=0. Both runs still share the same locked set at that evaluation, so the (t,x,type) is the same on either run. This is the note th",
+ "science": "Drill-down of #6417 to the exact discriminating stencil: from S*={(0,0,0),(2,1,1)} the first neighborhood where f_min and f_L1 return different bits is tick t=2, site (1,0,1), six-tuple (1,1,1,0,0,1) in order (+x,-x,+y,-y,+z,-z), axis type (2,1,0), with f_L1=1 and f_min=0. Both runs still share the same locked set at that evaluation, so the (t,x,type) is the same on either run. This is the note that states the corrected characterization outright - 'the maps disagree exactly on mixed3 and on any n_both>=1 occupancy that is still unbalanced, including type (2,1,0)' - fixing the incomplete 'differ on mixed3' framing of #6407/#6411/#6412/#6413. Incremental over #6417, which already named the tick, site and orbit; the added content is the literal stencil.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6420,
   "branch": "physics-loop/toe-lphys-block-diffnbhd-20260815"

@@ -3,7 +3,7 @@
  "title": "feat(nmoutx2): own outgoing set on #7214: reverse HOLD, face HOLD",
  "science": "O-readout on #7214's x-probes; rotation image (e1<->e2) of #7234/#7235. Carries the same tick contradiction: own-tick O is empty at A, B and C (recomputed), so the own-tick pair is UNDEFINED/UNDEFINED while the PR reports HOLD/HOLD from the t+1 sets. #7250 refutes it on the rotated cell.",
  "forcing": false,
- "verdict_pair": "reverse=HOLD face=HOLD (as published; own-tick recompute giv",
+ "verdict_pair": "reverse=HOLD face=HOLD (as published; own-tick recompute gives reverse=UNDEFINED face=UNDEFINED)",
  "source": {
   "pr": 7237,
   "branch": "physics-loop/toe-lphys-block-nmoutx2-20260815"

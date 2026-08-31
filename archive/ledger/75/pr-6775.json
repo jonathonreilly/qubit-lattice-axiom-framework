@@ -1,7 +1,7 @@
 {
  "id": "pr-6775",
  "title": "feat(samek16): nu same-k reverse holds for every k=1..5 on B16",
- "science": "Key contrast with the doubled-pair sweeps: under the SAME-k comparator ((k,0,0) vs (k,k,k), equal coordinate rather than equal l1) nu reverses for EVERY k=1..5 on B_16(0) (27>25, 108>64, 243>121, 300>196, 363>289), whereas the doubled comparator dies at k>=3 (#6773). So the verdict is a function of which comparator is chosen, not of the rule alone. Also exposes a crossover: t(k,0,0)=3k exactly for",
+ "science": "Key contrast with the doubled-pair sweeps: under the SAME-k comparator ((k,0,0) vs (k,k,k), equal coordinate rather than equal l1) nu reverses for EVERY k=1..5 on B_16(0) (27>25, 108>64, 243>121, 300>196, 363>289), whereas the doubled comparator dies at k>=3 (#6773). So the verdict is a function of which comparator is chosen, not of the rule alone. Also exposes a crossover: t(k,0,0)=3k exactly for k=1,2,3 (3,6,9) and then breaks to 10 and 11, i.e. the pure-axis geodesic stops being optimal at k=4 once the support-raising detour is cheaper.",
  "forcing": false,
  "verdict_pair": "same-k reverse: YES for every k=1,2,3,4,5",
  "source": {

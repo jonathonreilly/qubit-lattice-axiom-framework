@@ -1,9 +1,9 @@
 {
  "id": "pr-7024",
  "title": "feat(perpnn): perp-step formation-tick reverse and face both hold at k=1",
- "science": "The band's one positive formation-side construction: perp-step incoming-lock formation (a step fires only perpendicular to the parent's lock axis) with seed lock +e1 gives tick-1 mask (0,0,1,1,1,1) and t(1,0,0)=3, t(1,1,1)=3, t(2,0,0)=4, t(1,1,0)=2, so reverse 27>9 and face 16>8 BOTH hold -- from a lock rule rather than an engineered hop-cost. DEFECT: the host is defined as {n : n.n <= 9}, the EUC",
+ "science": "The band's one positive formation-side construction: perp-step incoming-lock formation (a step fires only perpendicular to the parent's lock axis) with seed lock +e1 gives tick-1 mask (0,0,1,1,1,1) and t(1,0,0)=3, t(1,1,1)=3, t(2,0,0)=4, t(1,1,0)=2, so reverse 27>9 and face 16>8 BOTH hold -- from a lock rule rather than an engineered hop-cost. DEFECT: the host is defined as {n : n.n <= 9}, the EUCLIDEAN ball (123 sites), while #7017 and the rest of the family use the l1 ball B_3 (25 sites); both are written 'B_3(0)'.",
  "forcing": false,
- "verdict_pair": "reverse=YES (27>9) face=YES (16>8) -- formation-tick bits on",
+ "verdict_pair": "reverse=YES (27>9) face=YES (16>8) -- formation-tick bits on a Euclidean host, not family verdicts",
  "source": {
   "pr": 7024,
   "branch": "physics-loop/toe-lphys-block-perpnn-20260815"

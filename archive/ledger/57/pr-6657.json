@@ -1,7 +1,7 @@
 {
  "id": "pr-6657",
  "title": "feat(skeweq): firing local-in-n map commutes with 1 of 24 rotations",
- "science": "Closes the #6654 breach with an orbit argument, not a probe cell: at the off-axis breaker v=(-1,1,1) (mask (1,0,1,1,0,1)) the firing local-in-n table producing c=(-,0,+,-,0,+) commutes with only N_commute=1 of the 24 proper cube rotations - the identity. The structural reason is exhibited: the two two-support kernels (1/3,0,-1/3) and (1/3,-1/3,0) lie in the SAME G+ orbit while the table assigns th",
+ "science": "Closes the #6654 breach with an orbit argument, not a probe cell: at the off-axis breaker v=(-1,1,1) (mask (1,0,1,1,0,1)) the firing local-in-n table producing c=(-,0,+,-,0,+) commutes with only N_commute=1 of the 24 proper cube rotations - the identity. The structural reason is exhibited: the two two-support kernels (1/3,0,-1/3) and (1/3,-1/3,0) lie in the SAME G+ orbit while the table assigns them OPPOSITE letters, so no cube-covariant function of n alone can reproduce the firing labeling. So the off-axis geometry removes the stabilizer obstruction but the covariance obstruction reappears at the orbit level.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-6794",
  "title": "feat(leavek1): leave-axis kills k=1 reverse: t=3 vs t=7",
- "science": "The forcing negative that kills lambda: on B_6 the same rule gives t(1,0,0)=3, t(1,1,1)=7, so 27<49 and same-k reverse FAILS at k=1. Charging the 1->2 leave-axis hop is exactly what raises t(1,1,1) from 5 to 7, so lambda buys k=7 at the price of the k=1 bar. Wording defect: note and runner label this 'the small-k bar is not killed' and the runner emits PASS: small-k-bar-not-killed for a result tha",
+ "science": "The forcing negative that kills lambda: on B_6 the same rule gives t(1,0,0)=3, t(1,1,1)=7, so 27<49 and same-k reverse FAILS at k=1. Charging the 1->2 leave-axis hop is exactly what raises t(1,1,1) from 5 to 7, so lambda buys k=7 at the price of the k=1 bar. Wording defect: note and runner label this 'the small-k bar is not killed' and the runner emits PASS: small-k-bar-not-killed for a result that is a failure of the rule.",
  "forcing": false,
  "verdict_pair": "reverse=NO (same-k k=1, 27 < 49) face=n/a",
  "source": {

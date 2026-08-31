@@ -1,9 +1,9 @@
 {
  "id": "pr-6837",
  "title": "feat(hrk7): height-ridge same-k holds at k=7: t=19 vs t=25",
- "science": "zeta at k=7 on B_21: t=19 vs 25, 1083>625 -- byte-identical to rho3's #6816. Note argues independence via t(3,2,2)=13 under zeta (vs 11 under rho3), and correctly says 'a cheapest body witness never takes a height-m ridge hop'. Also re-derives the beta contrast (19 vs 37). I verified by recomputation that zeta == rho3 on EVERY same-k pair k=1..14, so the height-ridge clause never moves a single re",
+ "science": "zeta at k=7 on B_21: t=19 vs 25, 1083>625 -- byte-identical to rho3's #6816. Note argues independence via t(3,2,2)=13 under zeta (vs 11 under rho3), and correctly says 'a cheapest body witness never takes a height-m ridge hop'. Also re-derives the beta contrast (19 vs 37). I verified by recomputation that zeta == rho3 on EVERY same-k pair k=1..14, so the height-ridge clause never moves a single reported same-k arrival.",
  "forcing": false,
- "verdict_pair": "reverse=YES (same-k k=7, 1083 > 625; identical to rho3 #6816",
+ "verdict_pair": "reverse=YES (same-k k=7, 1083 > 625; identical to rho3 #6816) face=n/a",
  "source": {
   "pr": 6837,
   "branch": "physics-loop/toe-lphys-block-hrk7-20260815"

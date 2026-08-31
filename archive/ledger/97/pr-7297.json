@@ -1,7 +1,7 @@
 {
  "id": "pr-7297",
  "title": "feat(nm12x2): 1-in 2-out split on #7214: reverse HOLD, face fails",
- "science": "x-axis-opposite +/-e2 seed, x-probes: same 2-in-1-out discriminator (cover HOLD at all four, split fail at D). CHECKER DEFECT: the check 'not-y-or-z-probes-or-same-lock-or-nspar-or-opp-e3' is written as a 17-term conjunction ending '... and y_cover != cover1 or y_m != m1 and same_split=='hold' and opp_split=='hold'; Python precedence makes this (17-term AND) OR (3-term AND), and the right disjunct",
+ "science": "x-axis-opposite +/-e2 seed, x-probes: same 2-in-1-out discriminator (cover HOLD at all four, split fail at D). CHECKER DEFECT: the check 'not-y-or-z-probes-or-same-lock-or-nspar-or-opp-e3' is written as a 17-term conjunction ending '... and y_cover != cover1 or y_m != m1 and same_split=='hold' and opp_split=='hold'; Python precedence makes this (17-term AND) OR (3-term AND), and the right disjunct is TRUE, so the entire left branch - including its own headline reverse=='hold' and face=='fail' assertions and every nspar/seed control - is never evaluated. 64/64 PASS.",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=fails",
  "source": {

@@ -1,9 +1,9 @@
 {
  "id": "pr-6974",
  "title": "feat(c2d3clk): cost-2 max\u22653 out-face clock N_label=12 N_filt=6",
- "science": "Fourth comparator: leftover-frame formation fire on the 12 lex-first perp-mask three-ball hosts, with c2d3 as unused edge labels (N_label_fire=12) versus as a cost-1 readiness filter (N_filt_fire=6); the six deaths are exactly the hosts whose unread centre has exactly two unit coordinates. DEFECT: the runner's own check out-face-idle-on-incoming proves incoming c2d3 == incoming rho3 on all 12 host",
+ "science": "Fourth comparator: leftover-frame formation fire on the 12 lex-first perp-mask three-ball hosts, with c2d3 as unused edge labels (N_label_fire=12) versus as a cost-1 readiness filter (N_filt_fire=6); the six deaths are exactly the hosts whose unread centre has exactly two unit coordinates. DEFECT: the runner's own check out-face-idle-on-incoming proves incoming c2d3 == incoming rho3 on all 12 hosts, so the 12/6 result is bit-identical to the rho3 predecessor -- yet the note carries a 'not leftover of the 12/6 rho3 count' check that passes purely by grepping that phrase in its own prose.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports N_label_fire=12, N_filt_",
+ "verdict_pair": "reverse=absent face=absent (reports N_label_fire=12, N_filt_fire=6)",
  "source": {
   "pr": 6974,
   "branch": "physics-loop/toe-lphys-block-c2d3clk-20260815"

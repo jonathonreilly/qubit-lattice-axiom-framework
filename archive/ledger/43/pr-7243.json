@@ -1,7 +1,7 @@
 {
  "id": "pr-7243",
  "title": "feat(nmot2opp): O two-tick composition on #7167: reverse UNDEFINED, face UNDEFINED, composition fails",
- "science": "FORCING NEGATIVE, and stronger than stated. O two-tick composition on #7208's y-probes: O(tau0) is EMPTY at A, B and C, so reverse and face are UNDEFINED at the probes' own formation ticks and hold one tick later, hence composition fails. I swept all 648 two-site-seed x frame cells: O-composition fails in 648/648, with rev(tau0)=UNDEFINED every time. So a readout built on the outgoing set can neve",
+ "science": "FORCING NEGATIVE, and stronger than stated. O two-tick composition on #7208's y-probes: O(tau0) is EMPTY at A, B and C, so reverse and face are UNDEFINED at the probes' own formation ticks and hold one tick later, hence composition fails. I swept all 648 two-site-seed x frame cells: O-composition fails in 648/648, with rev(tau0)=UNDEFINED every time. So a readout built on the outgoing set can never be a formation-time Record readout -- at the instant a record forms it has no outgoing content.",
  "forcing": false,
  "verdict_pair": "reverse=UNDEFINED face=UNDEFINED (composition fails)",
  "source": {

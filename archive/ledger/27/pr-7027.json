@@ -1,7 +1,7 @@
 {
  "id": "pr-7027",
  "title": "[physics-loop] remote-context front-event congruence \u2014 bounded_theorem \u2014 bounded-support",
- "science": "Exact congruence read straight off the Admissibility axiom with no covariance assumption and no probability formula: two Record worlds differing only at context site c=(1,1,0) have literally identical six-neighbour conditions at the blank front target s0=(0,0,0), so the axiom assigns the same full conditional M_2(C) measure and equal mass to every fixed common Borel content event - even though c I",
+ "science": "Exact congruence read straight off the Admissibility axiom with no covariance assumption and no probability formula: two Record worlds differing only at context site c=(1,1,0) have literally identical six-neighbour conditions at the blank front target s0=(0,0,0), so the axiom assigns the same full conditional M_2(C) measure and equal mass to every fixed common Borel content event - even though c IS a nearest neighbour of the continuation target s1=(1,0,0), which it does gate. This is the frameworks own no-signalling/locality statement at the front.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

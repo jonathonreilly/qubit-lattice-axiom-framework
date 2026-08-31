@@ -1,7 +1,7 @@
 {
  "id": "pr-6641",
  "title": "feat(2bchi): two-ball witness mask hosts the chiral pair",
- "science": "Positive existence result continuing #6640, not a probe cell: the two-ball witness's occupancy mask m=(1,1,1,0,1,0) at v=(1,-1,-1) - occupied (+x,-x,+y,+z), empty (-y,-z) - DOES occur among the 48 July-3 chiral-pair 6-tuples (N_mask=4), and of the 16 {+,-} fillings of its four occupied slots exactly N_fire=4 are pair members, lex-first (+,-,+,0,-,0), the four being (+,-,+,0,-,0),(+,-,-,0,+,0),(-,+",
+ "science": "Positive existence result continuing #6640, not a probe cell: the two-ball witness's occupancy mask m=(1,1,1,0,1,0) at v=(1,-1,-1) - occupied (+x,-x,+y,+z), empty (-y,-z) - DOES occur among the 48 July-3 chiral-pair 6-tuples (N_mask=4), and of the 16 {+,-} fillings of its four occupied slots exactly N_fire=4 are pair members, lex-first (+,-,+,0,-,0), the four being (+,-,+,0,-,0),(+,-,-,0,+,0),(-,+,+,0,-,0),(-,+,-,0,+,0). The remaining 12 fail either axis bicolouring on +-x or the 2/2/2 counts. So a two-seed occupancy geometry CAN host the unique chiral channel.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

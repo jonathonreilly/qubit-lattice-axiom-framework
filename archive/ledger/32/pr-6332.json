@@ -1,9 +1,9 @@
 {
  "id": "pr-6332",
  "title": "feat(l1cone): L1 support at tick t is the ell^1 ball of radius t",
- "science": "Bounded_theorem note, no probe cell. LIGHTCONE/METRIC-SELECTION result proved with the genuine L1 kernel (n != 0), not the OR front of #6330: after t occupancy steps the locked set is EXACTLY the on-patch l1 ball of radius t, for t=1 and t=2, with the l1 spheres (1,3,4,3,1) shown to partition the 12-vertex patch, and every d=3 and d=4 site still unread after tick 2 (unread set = {d >= 3} exactly).",
+ "science": "Bounded_theorem note, no probe cell. LIGHTCONE/METRIC-SELECTION result proved with the genuine L1 kernel (n != 0), not the OR front of #6330: after t occupancy steps the locked set is EXACTLY the on-patch l1 ball of radius t, for t=1 and t=2, with the l1 spheres (1,3,4,3,1) shown to partition the 12-vertex patch, and every d=3 and d=4 site still unread after tick 2 (unread set = {d >= 3} exactly). The load-bearing extra is the mutation pair: the support is NOT the Chebyshev ball -- at t=1 the Chebyshev ball already contains (1,1,0) which is unread, and at t=2 the Chebyshev ball is the whole patch while only 8 sites are locked. So the emergent propagation metric is l1 (taxicab), not l-infinity: a concrete anisotropy statement bearing on 'Z^3 not relativistic'. 54/54 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=5",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=54 FAIL=0)",
  "source": {
   "pr": 6332,
   "branch": "physics-loop/toe-lphys-block-l1cone-20260814"

@@ -1,9 +1,9 @@
 {
  "id": "pr-6465",
  "title": "feat(cutkuniq): coverage is unique only at k=4,6,8 and the maximizer is f1",
- "science": "The strongest forcing negative against L1 in the entire batch, and the natural terminal of the coverage lane. Ranking all 32 F_cut maps by cov_k for k=1,5,6,7,8,9,10,11 (plus cited k=2,3,4) gives the uniqueness set K_unique={4,6,8} - the only seed sizes at which the coverage maximizer is unique - and at EVERY one of them the unique maximizer is f1=(1,1,1,1,1), never f_L1. The margins are explicit ",
+ "science": "The strongest forcing negative against L1 in the entire batch, and the natural terminal of the coverage lane. Ranking all 32 F_cut maps by cov_k for k=1,5,6,7,8,9,10,11 (plus cited k=2,3,4) gives the uniqueness set K_unique={4,6,8} - the only seed sizes at which the coverage maximizer is unique - and at EVERY one of them the unique maximizer is f1=(1,1,1,1,1), never f_L1. The margins are explicit and narrow: cov_6(L1)=920 vs cov_6(f1)=924, cov_8(L1)=494 vs cov_8(f1)=495. f1 inside F_cut is simply 'fire on every neighbourhood that is neither empty nor full'. So across the whole seed-size spectrum the coverage criterion, whenever it is decisive at all, selects the all-ones map and rejects the unbalanced-axis map. Read with #6407 (sparsity picks f_min, outside F_cut) and #6431/#6433 (coverage prefers opp2=1 against L1's opp2=0), three independent selectors have now been run and none picks f_L1.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6465,
   "branch": "physics-loop/toe-lphys-block-cutkuniq-20260815"

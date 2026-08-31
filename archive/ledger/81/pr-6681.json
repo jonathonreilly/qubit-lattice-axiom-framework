@@ -1,7 +1,7 @@
 {
  "id": "pr-6681",
  "title": "feat(uneqaxis): occupancy names the full axis; one bit kills Stab",
- "science": "Minimal-extra classification theorem, not a probe cell: the 15 weight-4 occupancy masks split exactly as N_perp=12 (two emptied slots perpendicular, so EXACTLY ONE axis has both ends occupied - occupancy NAMES that axis; |Stab|=2, N_pair_support=4 each) and N_axis=3 (a whole axis emptied, no unique full axis; |Stab|=8, N_pair_support=0). Full 15-row table naming the emptied slots and the full axis",
+ "science": "Minimal-extra classification theorem, not a probe cell: the 15 weight-4 occupancy masks split exactly as N_perp=12 (two emptied slots perpendicular, so EXACTLY ONE axis has both ends occupied - occupancy NAMES that axis; |Stab|=2, N_pair_support=4 each) and N_axis=3 (a whole axis emptied, no unique full axis; |Stab|=8, N_pair_support=0). Full 15-row table naming the emptied slots and the full axis per mask. Theorem 2: on each of the 12, a SINGLE bit b = [t(-mu) < t(+mu)] on the named axis - which end is older - is reversed by the end-swapping stabilizer element and therefore kills it, giving |Stab(sigma,b)|=1. Worked on the uneqrad mask (1,0,1,0,1,1) with axis z, ticks +x=1,+y=1,+z=3,-z=2, b=1, swapper s:(x,y,z)->(y,x,-z). So the whole covariance obstruction reduces to one bit of formation-age information.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

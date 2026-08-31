@@ -1,7 +1,7 @@
 {
  "id": "pr-6001",
  "title": "[physics-loop][review-loop] toe-time blockM12 (STACKED on #5999) \u2014 Cycle 932: bounded theorem \u2014 the persistence razor is a window-vs-grid fa",
- "science": "Closes the persistence razor as a window-vs-grid fact: one contiguous certifiable interval per cell, t_open content-set and degree-independent, t_close clip-switching, W monotone; d=3-4 fail by grid phase (2h<=W<3h band), and the d-conjunct derives from the two edges (48/48 + 29/29 sealed). 934 then derives every edge of this window exactly (t_open closed form, both t_close sides, clip switch 21/2",
+ "science": "Closes the persistence razor as a window-vs-grid fact: one contiguous certifiable interval per cell, t_open content-set and degree-independent, t_close clip-switching, W monotone; d=3-4 fail by grid phase (2h<=W<3h band), and the d-conjunct derives from the two edges (48/48 + 29/29 sealed). 934 then derives every edge of this window exactly (t_open closed form, both t_close sides, clip switch 21/21) and re-derives the phase qualifier unsoftened into the star theorem.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

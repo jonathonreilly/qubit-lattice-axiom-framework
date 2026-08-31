@@ -1,7 +1,7 @@
 {
  "id": "pr-7061",
  "title": "feat(nsiso): z-reverse FAIL, z-face HOLD; y-frame same pattern",
- "science": "Probe-frame test on one fixed two-record configuration: z-frame t(A_z,B,C_z,D_z)=(1,2,4,1) -> z-reverse FAILS, z-face HOLDS; y-frame (0,2,3,1) -> y-reverse FAILS, y-face HOLDS; the runner's own line records the x-frame as (2,2,3,1), which holds reverse. Same state, three orthogonal probe frames, three different reverse verdicts: the reverse readout is not covariant under the cubic rotations the ax",
+ "science": "Probe-frame test on one fixed two-record configuration: z-frame t(A_z,B,C_z,D_z)=(1,2,4,1) -> z-reverse FAILS, z-face HOLDS; y-frame (0,2,3,1) -> y-reverse FAILS, y-face HOLDS; the runner's own line records the x-frame as (2,2,3,1), which holds reverse. Same state, three orthogonal probe frames, three different reverse verdicts: the reverse readout is not covariant under the cubic rotations the axioms declare as a symmetry. The note reports the numbers and never names the anisotropy.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=holds",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-7632",
  "title": "[physics-loop][full-temporal-carrier][bounded_theorem] localize source-typing boundary",
- "science": "Constructs the minimal periodic L24 temporal carrier joining the pi/6 and pi/4 sectors with the pi/12 Weyl recoil; the ordinary-transpose reflected-even Schur Gram is exactly positive at all nine frozen radii, conditions to E_st/4, and reproduces the Block-191 external trace response; proves every diagonal event in the physically typed p+(p+q) sector has identically zero first-order trace response",
+ "science": "Constructs the minimal periodic L24 temporal carrier joining the pi/6 and pi/4 sectors with the pi/12 Weyl recoil; the ordinary-transpose reflected-even Schur Gram is exactly positive at all nine frozen radii, conditions to E_st/4, and reproduces the Block-191 external trace response; proves every diagonal event in the physically typed p+(p+q) sector has identically zero first-order trace response, forcing the coherent-event requirement. The lane's standard fixture from here on.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

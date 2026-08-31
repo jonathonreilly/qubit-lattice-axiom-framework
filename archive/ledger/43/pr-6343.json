@@ -1,9 +1,9 @@
 {
  "id": "pr-6343",
  "title": "feat(actfree): L1 formation does not use an M2 action",
- "science": "Bounded_theorem note, no probe cell. Claims a real structural TENSION with the rest of the batch: L1 formation reads occupancy only and therefore does NOT invoke Aut(M_2) or any faithful cube action -- i.e. the unique faithful action established over five PRs (#6276/#6317/#6319/#6321/#6324) is not used by the one working dynamical member. WORST RUNNER DEFECT IN THE BATCH: the note's central claim ",
+ "science": "Bounded_theorem note, no probe cell. Claims a real structural TENSION with the rest of the batch: L1 formation reads occupancy only and therefore does NOT invoke Aut(M_2) or any faithful cube action -- i.e. the unique faithful action established over five PRs (#6276/#6317/#6319/#6321/#6324) is not used by the one working dynamical member. WORST RUNNER DEFECT IN THE BATCH: the note's central claim is not actually tested. checks.check('occupancy-same', True) is a hard-coded True; checks.check('labels-do-not-enter-n', ...) compares k_of(n_vector(s, hist[1])) TO ITSELF, so it is trivially true; and the two content tables labels_plus / labels_pauli are built but NEVER passed to any formation function, so no label ever reaches the kernel. Only formed[2]==expected and a recomputation from the same lock set are actually checked, neither of which could detect label dependence. The claim itself is true and IS properly established in #6328 (which plumbs labels through occupancy_with_labels); this PR's runner does not establish it. 25/25 runner PASS, at least three of them vacuous.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=25 FAIL=0, >=3 vacuous)",
  "source": {
   "pr": 6343,
   "branch": "physics-loop/toe-lphys-block-actfree-20260814"

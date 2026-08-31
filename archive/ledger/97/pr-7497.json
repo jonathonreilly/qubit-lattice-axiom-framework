@@ -1,7 +1,7 @@
 {
  "id": "pr-7497",
  "title": "feat(nm2cyc3fzrd): neighbor-read of cyclic lex-largest Orient at t+1 on three-axis far-face opposite z-probes: reverse fails, face fails",
- "science": "On the three-axis far-face opposite seed no formed six-neighbour of any of the four z-probes carries a matching lex-largest Orient sign, so the neighbour-read of the scalar Orient fails at all four probes and reverse and face both fail, even though the Orient signs themselves (-1,-1,+1,+1) would make an equal-sign readout HOLD. Origin reports Orient fail because the far-face third pair locks +e_3 ",
+ "science": "On the three-axis far-face opposite seed no formed six-neighbour of any of the four z-probes carries a matching lex-largest Orient sign, so the neighbour-read of the scalar Orient fails at all four probes and reverse and face both fail, even though the Orient signs themselves (-1,-1,+1,+1) would make an equal-sign readout HOLD. Origin reports Orient fail because the far-face third pair locks +e_3 and keeps -e_3 out of the origin's O.",
  "forcing": true,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

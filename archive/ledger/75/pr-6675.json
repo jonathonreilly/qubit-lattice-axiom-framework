@@ -1,7 +1,7 @@
 {
  "id": "pr-6675",
  "title": "feat(uneqlaw): unequal-radius tick rule commutes with all 24",
- "science": "First fully cube-covariant configuration in the band - with an important caveat, not a probe cell: UNEQUAL radii break what #6671 proved equal radii cannot. On U = B_2((-2,-2,-2)) u B_1((-2,-2,-1)) u B_3((-2,-2,1)) at v=(-3,-3,-1), sigma=(1,0,1,0,1,1) with ticks (1,.,1,.,3,2) gives |Stab(sigma)|=2 but |Stab(sigma,t)|=1, N_tick_ok=4, and rotating seeds+radii+v+slots together gives N_commute = 24/24",
+ "science": "First fully cube-covariant configuration in the band - with an important caveat, not a probe cell: UNEQUAL radii break what #6671 proved equal radii cannot. On U = B_2((-2,-2,-2)) u B_1((-2,-2,-1)) u B_3((-2,-2,1)) at v=(-3,-3,-1), sigma=(1,0,1,0,1,1) with ticks (1,.,1,.,3,2) gives |Stab(sigma)|=2 but |Stab(sigma,t)|=1, N_tick_ok=4, and rotating seeds+radii+v+slots together gives N_commute = 24/24 - every proper rotation maps the host to a weight-4 unread breaker star whose tick-ok set contains g.c, with c=(1,0,2,0,1,2). CAVEAT the note itself makes: because |Stab|=1 the tick-ok set is ALL four support-sigma pair members, so 'g.c is in the image tick-ok set' is a set-membership tautology given that the July-3 pair is a union of G+ orbits - it is not a unique covariant selector, and four members still remain unselected.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

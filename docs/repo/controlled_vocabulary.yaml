@@ -369,6 +369,8 @@ rewrite_rules:
     excluded_paths:
       - "docs/work_history/**"
       - "archive_unlanded/**"
+      # archive/ is additionally skipped globally in scripts/vocab_lint.py
+      # (work-history store quotes historical titles verbatim).
       - "archive/**"
       # The vocab governance docs describe the pattern they forbid; they
       # must be allowed to quote example aliases without being rewritten.

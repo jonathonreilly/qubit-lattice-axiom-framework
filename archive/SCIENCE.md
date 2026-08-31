@@ -17,8 +17,10 @@ fixed-background law plus covariance cannot determine a metric derivative
 (this forces the π[g] bridge shape); the chart-invariant contractivity no-go
 [#6606]; the first positive contractive finite OS package via the reflection
 intertwiner completion [#6633]; the exact off-shell discrete Noether
-identity [#6651]; the scalar-quotient wall (the named G2 residue, gate still
-open at block 128, evidence #6844 — an open PR); the curved-positivity wall
+identity [#6651]; the scalar-quotient wall at block 129 (the named open G2 residue in the
+live mainline); the G2 gate itself remains open at block 128's
+curved-carrier dependency (evidence #6844 — an open PR); the
+curved-positivity wall
 sequence with a wall-independence audit; shear-gauge classification (gauge =
 exactly Z₄×Z₄ translations).
 
@@ -43,7 +45,7 @@ on G2.
 
 ## 2. Causal structure and the lightcone
 
-The one causal-geometry measurement in the probe family: a complete interval
+The one causal-geometry measurement in the readout-search band: a complete interval
 census s²=t²−|x|² over every formed nonzero site of B₃(0) under the
 opposite-lock seed — N_formed=119, split 8 space / 3 null / 108 time, with
 three sites permanently unreachable because the perp rule forbids the only
@@ -62,13 +64,17 @@ see §8.
 
 ## 3. The Born-selector obligation
 
-Three independent negatives close the content-alone Record-readout route to
-a Born selector: formation tick t is NOT a function of the unique lock
-letter (witnesses at t=1 and t=5 with the same letter, robust to dropping
-the seed) [#7048, #7058]; the readout-property theorem of the search band;
-and the M/R pincer [#7205 + #7244]. Consequence recorded across the family:
-Record readout is content-alone, so reverse HOLD cannot be Record
-content-alone — the selector must come from somewhere else.
+Three independent negatives, each scoped to the instruments it tried,
+stand against the content-alone Record-readout route to a Born selector:
+formation tick t is NOT a function of the unique lock letter (witnesses at
+t=1 and t=5 with the same letter, robust to dropping the seed) [#7048,
+#7058]; the readout-property theorem of the search band (six readout
+definitions tried); and the M/R pincer, scoped to the M and S⁺ instruments
+and four-probe neighbour recovery [#7205 + #7244]. #7048's note draws the
+recorded axiom-level consequence for its case: Record readout is
+content-alone, so reverse HOLD cannot be Record content-alone. Every
+content-alone readout the campaign tried failed to discriminate; no
+unrestricted no-go is recorded.
 
 Sharpening results: the Cl(3,0) plaquette product is quantifier-dependent on
 every cell tried (exist-choice HOLD, forall-choice fail on the same cell;
@@ -95,11 +101,15 @@ positivity non-monotone in k. Parity pattern: odd k → the two Q maps are
 total; even k → f1 is the unique maximizer. (Family roll-up:
 fcut-selector-census; evidence #6568–#6622.)
 
-The fL1 question resolved negative: three independent selectors (sparsity,
-two-site coverage, coverage-uniqueness) all fail to pick f_L1; the one
+On fL1 selection, three tested criteria fail to pick f_L1 (sparsity,
+two-site coverage, coverage-uniqueness); the one coverage-based
 positive-selection claim [#6404] is circular by its own steelman; under
-blank-block the o=0 vacuum default is REQUIRED and Record does not supply it
-[#6394, #6398].
+blank-block the o=0 vacuum default is REQUIRED and Record does not supply
+it [#6394, #6398]. Separately, the prehistory derivations record that
+linearity plus cube equivariance plus the standard-3 target uniquely
+select f_L1 — the roll-up records why the two results do not contradict
+(different selection questions). The overall selection question is not
+resolved by either.
 
 ## 5. The LOCK field and frame transport
 
@@ -134,20 +144,24 @@ not traced.
 
 ## 8. Refuted and disputed claims — do not build on these
 
+(The corrections below are the consolidation reader's recomputations
+against each source's own artifacts, except where a sibling PR is cited as
+the refuter.)
+
 - Four own-tick O-readout HOLD/HOLD verdicts whose own convention forces
   UNDEFINED/UNDEFINED (printed sets are t+1) [#7234, #7235, #7237, #7247].
-- A face-HOLD resting on post-cut witnesses; under the band's own cut
-  semantics the face bit fails [#7711].
+- A face-HOLD resting on post-cut witnesses (reader recomputation); under
+  the band's own cut semantics the face bit fails [#7711].
 - A title verdict contradicted by the PR's own note, cache, and an
   independent recomputation [#7586].
 - A HOLDING-marker omission that undercounts the family census (verdict
   itself reproduced) [#7637].
-- Ball-wall artifacts read as physics: k=6/k=8 face-return claims refuted on
-  larger hosts [#6757, #6822/#6840]; a "distance-4 locality scale" that is
+- Ball-wall artifacts read as physics: k=6/k=8 face-return claims reversed
+  on larger hosts (reader recomputation) [#6757, #6822/#6840]; a "distance-4 locality scale" that is
   shell exhaustion [#7701/#7702]; two celebrated arrival-band "restores"
   that were wall relocations.
 - The lone "composition fails" in the frame band is an undeclared
-  common-cut convention artifact [#7693].
+  common-cut convention artifact (reader recomputation) [#7693].
 
 ## 9. Methodology
 

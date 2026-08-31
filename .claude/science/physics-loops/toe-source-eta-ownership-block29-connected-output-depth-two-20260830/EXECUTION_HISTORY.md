@@ -39,3 +39,26 @@ declared ceiling because immutable append/product validation was redundantly
 recomputed across equivalent prefix axes.  Neither partial output is a
 scientific result.  The timeout cache is intentionally removed before the
 next exact-byte review; this history preserves the incident classification.
+
+## Attempt C — optimized content-bound timeout
+
+- runner SHA-256:
+  `5d323a00cff49b2be9f87eaf7f7cc49195b55c1b81013d4e46f36b193a835db8`
+- 25-input fingerprint:
+  `d1da30a68f761de015eedfdf9e83af001383d3000992dcd06bc806d852b77902`
+- elapsed: `900.07 s`
+- exit code: `-9`
+- status: `timeout`
+- classification: incomplete, no science inference
+
+The exact optimized source passed the frozen-input/source-pin check and then
+completed the geometry, literal output-to-input binding, physical pair-output
+active sum, full 12,544-control/705,600-term future channel plus STOP, and
+imported Block28 pair-Kraus template binding checks.  It timed out before the
+`fixed_prefix_depth_two_cylinders` check returned.  The complete prefix
+cylinder, continuation, history/QND, debit, covariance, reference, mutation,
+scope, and final summary checks therefore remain uncertified.  Relative to
+Attempt B this localizes the live runtime bottleneck downstream to the
+factorized prefix-cylinder sweep; the partial PASS lines are diagnostic only
+and carry no Block29 theorem, retention, obligation retirement, or TOE-score
+movement.

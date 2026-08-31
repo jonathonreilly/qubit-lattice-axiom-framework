@@ -2,8 +2,9 @@
 
 reviewed_source_commit: `c14e20df18f0719a52461178abb0388d9edd8a34`
 reviewed_source_sha256: `5d323a00cff49b2be9f87eaf7f7cc49195b55c1b81013d4e46f36b193a835db8`
-verdict: `SAFE_FOR_ONE_CONTENT_BOUND_EXECUTION`
+verdict: `EXECUTION_CONSUMED_TIMEOUT_NO_SCIENCE_INFERENCE`
 target_executed_by_reviewers: `no`
+authorized_execution_status: `timeout_at_900.07_s`
 
 Three independent read-only reviewers rebound to the exact committed source
 bytes above and returned PASS.  The reviewers did not import, compile,
@@ -78,3 +79,8 @@ obligation retirement, or TOE-score movement.
 A timeout, incomplete terminal, failed check, or surviving mutation carries
 no science inference.  A green terminal dispatches only to the frozen
 covariant physical successor/handoff campaign.
+
+The one execution authorized by this review has now been consumed.  It timed
+out after six complete PASS lines and before the fixed-prefix cylinder check
+returned.  No unchanged rerun is authorized.  Any subsequent attempt requires
+a new exact source, renewed static review, and a new content pin.

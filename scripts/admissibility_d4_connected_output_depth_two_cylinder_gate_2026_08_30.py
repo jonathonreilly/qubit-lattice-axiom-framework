@@ -82,7 +82,7 @@ FROZEN = {
     "ASSUMPTIONS_AND_IMPORTS.md": "ba01782882018cabdc0ce0dab807eea9df11b34d9c56474df97385b7778aff88",
     "AUTHORITY_GATE.md": "1cc2aa1ad7f5839af0905a6123a73c7fe84e507e7c234b0146339bfcaea62d97",
     "GOAL.md": "81c55379f532eb95c3b4503886a665fbc1fc3ff85fa105250e9dc90ae69db1f4",
-    "MUTATION_PLAN.md": "ed0c0796b4601bb047076e403a109f71c654f0670246b84b83548b4c641ab3f2",
+    "MUTATION_PLAN.md": "669980b06b1aed466f78a566cd576abbbd6853ae07b7e77be74cb8d760f8350e",
     "NO_GO_DISCIPLINE_CHECKLIST.md": "e8d1a9b40a8e27f3a3c617a3bc2e8422e47ec1c84c7ad15c754b69a4aa6db757",
     "OPPORTUNITY_QUEUE.md": "7d14cea2f6aed350d7d830a5ce4723fc25323f108ecf3981e67a163daf8bb29b",
     "PANEL_RETURN.md": "c19b2c688ef2ded0a2873eaabcef32d8155a5812a309dd303f02fbfeaa24a912",
@@ -1365,13 +1365,14 @@ def future_append_is_bound(prefix, arm, append) -> bool:
 
 @lru_cache(maxsize=16_384)
 def contract_connected_future_branch(descriptor):
-    factors = dict(descriptor.factorization)
-    if tuple(factors) != (
-        "sector_control",
-        "merged_append_product",
-        "outside_identity",
-    ):
+    expected_factorization = (
+        ("sector_control", descriptor.control),
+        ("merged_append_product", descriptor.embedded_product),
+        ("outside_identity", "I_outside"),
+    )
+    if descriptor.factorization != expected_factorization:
         raise ValueError("future factorization is incomplete")
+    factors = dict(descriptor.factorization)
     use_left, use_right = descriptor.sector.bits
     if not (
         sector_control_is_physical(descriptor.control)
@@ -1882,6 +1883,16 @@ def contract_imported_pair_factors(descriptor):
     return block28.contract_pair_kraus_descriptor(descriptor)
 
 
+@lru_cache(maxsize=16_384)
+def imported_pair_factorization_is_exact(descriptor) -> bool:
+    return descriptor.factorization == (
+        ("amplitude", descriptor.amplitude),
+        ("full_pair_control", descriptor.control.atoms),
+        ("left_turn_factors", descriptor.left.factors),
+        ("right_turn_factors", descriptor.right.factors),
+    )
+
+
 @lru_cache(maxsize=None)
 def connected_pair_prefix(
     lam,
@@ -1949,6 +1960,7 @@ def pair_prefix_output_is_bound(prefix) -> bool:
     first_factor = dict(prefix.first.factorization)
     return (
         output_control_is_physical(prefix.output_control)
+        and imported_pair_factorization_is_exact(prefix.first)
         and fresh_gram == prefix.first_gram
         and prefix.first_gram.control == prefix.first.control
         and prefix.first_gram.control == block28.pair_control(
@@ -2025,6 +2037,11 @@ class ConnectedCylinderGram:
     composite_coefficient: object
     bits: tuple
     intermediate_output: PairOutputControl
+
+
+@lru_cache(maxsize=65_536)
+def composite_cylinder_coefficient(first_coefficient, future_coefficient):
+    return sp.simplify(first_coefficient * future_coefficient)
 
 
 @dataclass(frozen=True)
@@ -2119,57 +2136,60 @@ def cylinder_lease(prefix, bits):
     )
 
 
-def contract_connected_cylinder_under_lease(descriptor, lease):
-    """Contract one actual M=L K descriptor under its authenticated lease."""
-    prefix = descriptor.prefix
-    future_branch = descriptor.future
-    factors = dict(descriptor.factorization)
-    if not (
-        prefix == lease.prefix
-        and future_branch.prefix == prefix.output_control
-        and future_branch.sector == lease.resource
-        and future_branch.control == lease.family.control
-        and future_branch.sector.bits == lease.bits
-        and tuple(factors) == (
-            "first_pair_factors",
-            "intermediate_output_control",
-            "future_resource_sector",
-            "future_factors",
-            "outside_identity",
+def make_connected_cylinder_contractor(prefix, bits):
+    """Capture the canonical lease; callers can supply only descriptors."""
+    lease = cylinder_lease(prefix, bits)
+
+    def contract(descriptor):
+        future_branch = descriptor.future
+        expected_factorization = (
+            ("first_pair_factors", prefix.first.factorization),
+            ("intermediate_output_control", prefix.output_control.atoms),
+            ("future_resource_sector", future_branch.sector),
+            ("future_factors", future_branch.factorization),
+            ("outside_identity", "I_outside"),
         )
-        and factors["first_pair_factors"] == prefix.first.factorization
-        and factors["intermediate_output_control"]
-        == prefix.output_control.atoms
-        and factors["future_resource_sector"] == future_branch.sector
-        and factors["future_factors"] == future_branch.factorization
-        and factors["outside_identity"] == "I_outside"
-    ):
-        raise ValueError("cylinder descriptor does not match its physical lease")
-    future_gram = contract_connected_future_branch(future_branch)
-    if future_gram.control != future_branch.control or (
-        future_gram.control != lease.family.control
-    ):
-        raise ValueError("future Gram discarded its operator-valued control")
-    return ConnectedCylinderGram(
-        lease.control,
-        lease.first_gram.coefficient,
-        future_gram.coefficient,
-        lease.first_gram.coefficient * future_gram.coefficient,
-        future_gram.bits,
-        prefix.output_control,
-    )
+        if not (
+            descriptor.prefix == prefix == lease.prefix
+            and future_branch.prefix == prefix.output_control
+            and future_branch.sector == lease.resource
+            and future_branch.control == lease.family.control
+            and future_branch.sector.bits == bits == lease.bits
+            and descriptor.factorization == expected_factorization
+        ):
+            raise ValueError(
+                "cylinder descriptor does not match its physical lease"
+            )
+        future_gram = contract_connected_future_branch(future_branch)
+        if future_gram.control != future_branch.control or (
+            future_gram.control != lease.family.control
+        ):
+            raise ValueError("future Gram discarded its operator-valued control")
+        return ConnectedCylinderGram(
+            lease.control,
+            lease.first_gram.coefficient,
+            future_gram.coefficient,
+            composite_cylinder_coefficient(
+                lease.first_gram.coefficient,
+                future_gram.coefficient,
+            ),
+            future_gram.bits,
+            prefix.output_control,
+        )
+
+    return lease, contract
 
 
 def contract_connected_cylinder(descriptor):
-    lease = cylinder_lease(
+    _lease, contract = make_connected_cylinder_contractor(
         descriptor.prefix,
         descriptor.future.sector.bits,
     )
-    return contract_connected_cylinder_under_lease(descriptor, lease)
+    return contract(descriptor)
 
 
 def fixed_sector_cylinder_effect(prefix, family):
-    lease = cylinder_lease(prefix, family.bits)
+    lease, contract = make_connected_cylinder_contractor(prefix, family.bits)
     if family != lease.family:
         raise ValueError("fixed-sector cylinder is not physically bound")
     branch_grams = []
@@ -2180,10 +2200,7 @@ def fixed_sector_cylinder_effect(prefix, family):
             left_second,
             right_second,
         )
-        gram = contract_connected_cylinder_under_lease(
-            connected_cylinder_branch(prefix, future),
-            lease,
-        )
+        gram = contract(connected_cylinder_branch(prefix, future))
         if not (
             gram.control == lease.control
             and gram.bits == family.bits
@@ -2272,7 +2289,10 @@ def fixed_sector_cylinder_instance(prefix, bits) -> bool:
             and gram.bits == bits
             and gram.intermediate_output == prefix.output_control
             and gram.composite_coefficient
-            == gram.first_coefficient * gram.future_coefficient
+            == composite_cylinder_coefficient(
+                gram.first_coefficient,
+                gram.future_coefficient,
+            )
             for gram in branch_grams
         )
         and sp.simplify(
@@ -3176,7 +3196,8 @@ def framed_pair_prefix_output_is_bound(prefix) -> bool:
     except (KeyError, ValueError):
         return False
     return (
-        fresh == prefix.first_gram
+        imported_pair_factorization_is_exact(prefix.first)
+        and fresh == prefix.first_gram
         and fresh.control == prefix.first.control
         and framed_output_control_is_physical(prefix.output_control)
         and reconstructed == prefix.output_control.atoms
@@ -3228,6 +3249,13 @@ def turn_carrier_centers(branch):
 def contract_framed_connected_cylinder(descriptor):
     prefix = descriptor.prefix
     future = descriptor.future
+    expected_factorization = (
+        ("first_pair_factors", prefix.first.factorization),
+        ("intermediate_output_control", prefix.output_control.atoms),
+        ("future_resource_sector", future.sector),
+        ("future_factors", future.factorization),
+        ("outside_identity", "I_outside"),
+    )
     factors = dict(descriptor.factorization)
     try:
         fresh_first = contract_imported_pair_factors(prefix.first)
@@ -3241,14 +3269,7 @@ def contract_framed_connected_cylinder(descriptor):
         framed_pair_prefix_output_is_bound(prefix)
         and fresh_first == prefix.first_gram
         and future.prefix == prefix.output_control
-        and tuple(factors)
-        == (
-            "first_pair_factors",
-            "intermediate_output_control",
-            "future_resource_sector",
-            "future_factors",
-            "outside_identity",
-        )
+        and descriptor.factorization == expected_factorization
         and factors["first_pair_factors"] == prefix.first.factorization
         and factors["intermediate_output_control"]
         == prefix.output_control.atoms
@@ -3279,7 +3300,10 @@ def contract_framed_connected_cylinder(descriptor):
         control,
         fresh_first.coefficient,
         future_gram.coefficient,
-        sp.simplify(fresh_first.coefficient * future_gram.coefficient),
+        composite_cylinder_coefficient(
+            fresh_first.coefficient,
+            future_gram.coefficient,
+        ),
         future_gram.bits,
         prefix.output_control,
     )
@@ -4317,6 +4341,150 @@ def wrong_current_word_same_scalar_mutation_is_rejected(prefix) -> bool:
     return False
 
 
+def duplicate_future_factor_mutation_is_rejected(prefix) -> bool:
+    branch = connected_future_branch(
+        prefix,
+        (1, 1),
+        OUTCOMES[0],
+        OUTCOMES[1],
+    )
+    mutant = replace(
+        branch,
+        factorization=(
+            ("sector_control", "shadowed-junk"),
+            *branch.factorization,
+        ),
+    )
+    try:
+        contract_connected_future_branch(mutant)
+    except (KeyError, ValueError):
+        return True
+    return False
+
+
+def duplicate_cylinder_factor_mutation_is_rejected() -> bool:
+    prefix = connected_pair_prefix(
+        LAMBDAS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[0],
+        OUTCOMES[2],
+        OUTCOMES[3],
+    )
+    future = connected_future_branch(
+        prefix.output_control,
+        (1, 1),
+        OUTCOMES[0],
+        OUTCOMES[1],
+    )
+    descriptor = connected_cylinder_branch(prefix, future)
+    mutant = replace(
+        descriptor,
+        factorization=(
+            ("first_pair_factors", "shadowed-junk"),
+            *descriptor.factorization,
+        ),
+    )
+    try:
+        contract_connected_cylinder(mutant)
+    except (KeyError, ValueError):
+        return True
+    return False
+
+
+def duplicate_imported_pair_factor_mutation_is_rejected() -> bool:
+    prefix = connected_pair_prefix(
+        LAMBDAS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[0],
+        OUTCOMES[2],
+        OUTCOMES[3],
+    )
+    mutant_first = replace(
+        prefix.first,
+        factorization=(
+            ("amplitude", "shadowed-junk"),
+            *prefix.first.factorization,
+        ),
+    )
+    mutant_prefix = replace(prefix, first=mutant_first)
+    future = connected_future_branch(
+        mutant_prefix.output_control,
+        (1, 0),
+        OUTCOMES[0],
+        None,
+    )
+    try:
+        contract_connected_cylinder(
+            connected_cylinder_branch(mutant_prefix, future)
+        )
+    except (KeyError, ValueError):
+        return True
+    return False
+
+
+def changed_leased_resource_mutation_is_rejected(prefix) -> bool:
+    future = connected_future_branch(prefix, (1, 0), OUTCOMES[0], None)
+    mutant_sector = replace(
+        future.sector,
+        left=replace(future.sector.left, sense="complement"),
+    )
+    mutant_control = replace(future.control, resource=mutant_sector)
+    mutant_future = replace(
+        future,
+        sector=mutant_sector,
+        control=mutant_control,
+        factorization=replace_named_factor(
+            future.factorization,
+            "sector_control",
+            mutant_control,
+        ),
+    )
+    pair_prefix = connected_pair_prefix(
+        LAMBDAS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+        *prefix.key,
+    )
+    try:
+        contract_connected_cylinder(
+            connected_cylinder_branch(pair_prefix, mutant_future)
+        )
+    except (KeyError, ValueError):
+        return True
+    return False
+
+
+def changed_leased_future_control_mutation_is_rejected(prefix) -> bool:
+    future = connected_future_branch(prefix, (1, 0), OUTCOMES[0], None)
+    mutant_control = sector_control(prefix, (0, 0))
+    mutant_future = replace(
+        future,
+        control=mutant_control,
+        factorization=replace_named_factor(
+            future.factorization,
+            "sector_control",
+            mutant_control,
+        ),
+    )
+    pair_prefix = connected_pair_prefix(
+        LAMBDAS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+        *prefix.key,
+    )
+    try:
+        contract_connected_cylinder(
+            connected_cylinder_branch(pair_prefix, mutant_future)
+        )
+    except (KeyError, ValueError):
+        return True
+    return False
+
+
 def mutation_rejections():
     prefix = pair_output_control(
         block28.LEFT_EXITS[0],
@@ -4499,6 +4667,21 @@ def mutation_rejections():
         "changed_current_word_with_same_scalar_breaks_control": (
             wrong_current_word_same_scalar_mutation_is_rejected(prefix)
         ),
+        "duplicate_imported_K_factor_breaks_exact_factorization": (
+            duplicate_imported_pair_factor_mutation_is_rejected()
+        ),
+        "duplicate_future_factor_breaks_exact_factorization": (
+            duplicate_future_factor_mutation_is_rejected(prefix)
+        ),
+        "duplicate_cylinder_factor_breaks_exact_factorization": (
+            duplicate_cylinder_factor_mutation_is_rejected()
+        ),
+        "changed_leased_resource_breaks_cylinder_binding": (
+            changed_leased_resource_mutation_is_rejected(prefix)
+        ),
+        "changed_leased_future_control_breaks_cylinder_binding": (
+            changed_leased_future_control_mutation_is_rejected(prefix)
+        ),
         "fresh_copy_breaks_actual_output_provenance": not descriptor_binding_is_physical(
             fresh_copy_descriptor
         ),
@@ -4620,7 +4803,7 @@ def main() -> int:
         )
     checks.check(
         "designated_mutations",
-        all(mutations.values()) and len(mutations) == 55,
+        all(mutations.values()) and len(mutations) == 60,
         f"rejected={sum(mutations.values())}/{len(mutations)}",
     )
     checks.check(

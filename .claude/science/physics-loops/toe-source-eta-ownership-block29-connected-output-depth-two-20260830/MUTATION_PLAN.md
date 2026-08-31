@@ -37,6 +37,12 @@ The target must reject altered models that independently break:
 32. use of `T(second | old_source)` instead of
     `T(second | first_outcome)`; and
 33. insertion of a `lambda`-dependent continuation kernel.
+34. a duplicate/shadowed factor in the imported pair `K` descriptor;
+35. a duplicate/shadowed factor in the future `L` descriptor;
+36. a duplicate/shadowed factor in the outer cylinder descriptor;
+37. replacement of the resource sector after a cylinder lease is issued; and
+38. replacement of the future operator control after a cylinder lease is
+    issued.
 
 Every mutation must be reported individually.  Surviving mutations make the
 corresponding positive certificate fail closed.

@@ -2,9 +2,9 @@
 
 reviewed_source_commit: `f0f3c51839b784bf5b4ee9d3961fd206e09faa9e`
 reviewed_source_sha256: `c74401a53994ee4c5e94afbbb44ff8df186a0251115e144e134f1a0e50adf2eb`
-verdict: `SAFE_FOR_ONE_CONTENT_BOUND_EXECUTION`
+verdict: `EXECUTION_CONSUMED_TIMEOUT_ROUTE_FROZEN_NO_SCIENCE_INFERENCE`
 target_executed_by_reviewers: `no`
-authorized_execution_status: `awaiting_one_final_lease_compressed_attempt`
+authorized_execution_status: `timeout_at_900.05_s_final_attempt_consumed`
 
 Three independent read-only reviewers rebound to the exact committed source
 bytes above and returned PASS.  The reviewers did not import, compile,
@@ -90,4 +90,8 @@ A timeout, incomplete terminal, failed check, or surviving mutation carries
 no science inference and freezes this Block29 route under its preregistered
 stop rule; no unchanged rerun is authorized.  A green terminal dispatches only
 to the frozen covariant physical successor/handoff campaign.  This review
-authorizes exactly one content-bound execution of the named source bytes.
+authorized exactly one content-bound execution of the named source bytes.
+That execution timed out after six complete PASS lines and before the
+fixed-prefix cylinder check returned.  The authorization is consumed and the
+Block29 route is frozen.  Any future attempt would require a materially new
+route, new exact source, renewed static review, and a new content pin.

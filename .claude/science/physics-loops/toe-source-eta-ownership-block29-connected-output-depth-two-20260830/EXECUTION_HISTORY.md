@@ -62,3 +62,26 @@ Attempt B this localizes the live runtime bottleneck downstream to the
 factorized prefix-cylinder sweep; the partial PASS lines are diagnostic only
 and carry no Block29 theorem, retention, obligation retirement, or TOE-score
 movement.
+
+## Attempt D — final lease-compressed content-bound timeout
+
+- runner SHA-256:
+  `c74401a53994ee4c5e94afbbb44ff8df186a0251115e144e134f1a0e50adf2eb`
+- 25-input fingerprint:
+  `aec75582e4e74a653b22eee2f1aad169397a2a1e44692e5a6dde55687a1b2475`
+- elapsed: `900.05 s`
+- exit code: `-9`
+- status: `timeout`
+- classification: incomplete, route frozen, no science inference
+
+Three independent static reviewers passed the exact source after its
+canonical lease, exact-factor, coefficient-canonicalization, and public
+outcome-label bindings were hardened.  The content-bound run again completed
+the same six front-half checks through imported Block28 pair-Kraus template
+binding, but the fixed-prefix depth-two cylinder check did not return before
+the ceiling.  No later check, mutation terminal, scope terminal, or final
+summary is certified.  Under the preregistered portfolio stop rule this final
+timeout consumes the authorization and freezes Block29: there is no unchanged
+rerun or further optimization cycle.  The cache is a runtime diagnostic only;
+it carries no Block29 theorem, retention, obligation retirement, axiom change,
+or TOE-score movement.

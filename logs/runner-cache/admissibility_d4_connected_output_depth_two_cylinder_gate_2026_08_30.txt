@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_connected_output_depth_two_cylinder_gate_2026_08_30.py
-runner_sha256: 5d323a00cff49b2be9f87eaf7f7cc49195b55c1b81013d4e46f36b193a835db8
-input_fingerprint_sha256: d1da30a68f761de015eedfdf9e83af001383d3000992dcd06bc806d852b77902
+runner_sha256: c74401a53994ee4c5e94afbbb44ff8df186a0251115e144e134f1a0e50adf2eb
+input_fingerprint_sha256: aec75582e4e74a653b22eee2f1aad169397a2a1e44692e5a6dde55687a1b2475
 timeout_sec: 900
 exit_code: -9
-elapsed_sec: 900.07
+elapsed_sec: 900.05
 status: timeout
 ----- stdout -----
-PASS frozen_inputs_and_source_pin: 25 declared inputs; fingerprint=d1da30a68f761de015eedfdf9e83af001383d3000992dcd06bc806d852b77902
+PASS frozen_inputs_and_source_pin: 25 declared inputs; fingerprint=aec75582e4e74a653b22eee2f1aad169397a2a1e44692e5a6dde55687a1b2475
 PASS connected_full_carrier_geometry: 18 state-controlled blocks; the future carrier is 34 blocks/1,088 sites and the sequential union is 36 blocks/1,152 sites
 PASS literal_output_to_input_binding: all 1,568 turn branches and 1,568 unique future append branches bind at the same site and complete Locked word
 PASS physical_pair_output_active_sum: 3,136 exact eight-pointer configurations are orthogonal and bind the physical P_pair_output projector

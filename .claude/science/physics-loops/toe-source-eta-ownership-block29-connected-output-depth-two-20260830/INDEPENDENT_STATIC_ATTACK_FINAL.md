@@ -1,25 +1,31 @@
 # Block29 final independent static attack
 
-reviewed_source_commit: `c14e20df18f0719a52461178abb0388d9edd8a34`
-reviewed_source_sha256: `5d323a00cff49b2be9f87eaf7f7cc49195b55c1b81013d4e46f36b193a835db8`
-verdict: `EXECUTION_CONSUMED_TIMEOUT_NO_SCIENCE_INFERENCE`
+reviewed_source_commit: `f0f3c51839b784bf5b4ee9d3961fd206e09faa9e`
+reviewed_source_sha256: `c74401a53994ee4c5e94afbbb44ff8df186a0251115e144e134f1a0e50adf2eb`
+verdict: `SAFE_FOR_ONE_CONTENT_BOUND_EXECUTION`
 target_executed_by_reviewers: `no`
-authorized_execution_status: `timeout_at_900.07_s`
+authorized_execution_status: `awaiting_one_final_lease_compressed_attempt`
 
 Three independent read-only reviewers rebound to the exact committed source
 bytes above and returned PASS.  The reviewers did not import, compile,
 execute, or call the target and made no edits, commits, or pushes.
 
-This authorization supersedes the earlier pin.  The first authorized wrapper
-attempt was rejected after creation of the wrapper's ignored live-log
-directory changed a parent stat token without changing any declared input
-bytes.  The exact reproduction then timed out at `900.02 s`; its partial
-terminal also exposed a malformed expected hash for the unchanged axioms
-file.  Neither attempt carries a science inference.  The committed repair
-memoizes only immutable, value-keyed constructions and contractions, reduces
-the future-axis cache to the exact three values that construct it, and fixes
-the expected axiom digest.  All downstream prefix binding and exhaustive
-branch enumeration remain present.
+This authorization succeeds three non-science attempts.  Attempt A was
+rejected when creation of the wrapper's ignored live-log directory changed a
+parent stat token without changing declared bytes.  Attempt B timed out at
+`900.02 s` and exposed a malformed expected digest.  The corrected Attempt C
+passed six checks but timed out at `900.07 s` inside the fixed-prefix cylinder
+sweep.  None carries a Block29 theorem or other science inference.
+
+The current bytes move repeated prefix, imported-`K`, resource, control, and
+carrier authentication into a canonical immutable lease keyed by the complete
+pair prefix and exact resource bits.  They still construct and contract all
+`793,575` actual `M=L K` descriptors and preserve exact factorized coverage of
+all `1,229,312` prefixes.  Exact ordered tuples protect imported `K`, future
+`L`, canonical outer `M`, and framed outer `M`; a bounded coefficient cache
+canonicalizes the shared algebra.  The public future-outcome labels are now
+also bound exactly to the routed append targets or to absence.  All caches are
+bounded above the exact live domains.
 
 The authorization follows five earlier exact-byte failures, each resolved
 before the next review round; none produced a complete Block29 terminal:
@@ -47,6 +53,9 @@ For the final bytes, the independent attacks agree that:
 
 - the canonical merged block-action map reconstructs both imported Block24
   factor lists and is the factor source consumed by contraction;
+- the cylinder contractor captures only its canonical immutable lease, accepts
+  a descriptor rather than a caller-supplied lease, and binds its prefix,
+  resource, control, outcome labels, append targets, and complete factors;
 - every fixed sector constructs and contracts all actual `1/14/14/196`
   `M=L K` descriptors, freshly recontracts the imported Block28 `K`, retains
   the independently derived `Pi D_ij` control, and sums the actual composite
@@ -59,13 +68,14 @@ For the final bytes, the independent attacks agree that:
   cubic rotations, with exact side exchange;
 - the reference lift carries the exact identity operator, its contracted
   Gram, and the corresponding matrix-unit delta; and
-- all 55 designated altered models and scope promotions are rejected through
+- all 61 designated altered models and scope promotions are rejected through
   their physical constructors or contractors, including changed imported
   `Pi`, nonidentity equal-exit spectator, nested untransported composite
-  factor, and nonidentity reference unitary; and
-- every optimization cache is keyed by the complete immutable physical input
-  (including mutation tags where behavior changes), while the reduced
-  112-member future-axis cache is rebound to every full prefix before use.
+  factor, nonidentity reference unitary, duplicate factors, changed leased
+  fields, and an erased routed outcome label; and
+- every optimization cache is bounded and keyed by its complete immutable
+  physical input, while every actual branch still reaches the authenticated
+  merged-map contraction.
 
 The authorized terminal remains bounded: two externally supplied Block28
 `q` choices compose with one explicitly constructed, full-space,
@@ -77,10 +87,7 @@ gravity/source attachment, an axiom amendment, an audit verdict or retention,
 obligation retirement, or TOE-score movement.
 
 A timeout, incomplete terminal, failed check, or surviving mutation carries
-no science inference.  A green terminal dispatches only to the frozen
-covariant physical successor/handoff campaign.
-
-The one execution authorized by this review has now been consumed.  It timed
-out after six complete PASS lines and before the fixed-prefix cylinder check
-returned.  No unchanged rerun is authorized.  Any subsequent attempt requires
-a new exact source, renewed static review, and a new content pin.
+no science inference and freezes this Block29 route under its preregistered
+stop rule; no unchanged rerun is authorized.  A green terminal dispatches only
+to the frozen covariant physical successor/handoff campaign.  This review
+authorizes exactly one content-bound execution of the named source bytes.

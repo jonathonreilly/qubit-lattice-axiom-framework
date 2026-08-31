@@ -1,7 +1,7 @@
 {
  "id": "pr-6688",
  "title": "feat(bitfire): leftover-frame section fires N_new=1",
- "science": "CANONICAL COVARIANT SECTION constructed and fired, not a probe cell: the 'leftover-frame-positive' section f(sigma,b) resolves the two-way ambiguity left by the age bit by taking the completion whose ordered direction triple (leftover +, leftover -, full-axis +) has determinant +1 - a genuinely orientation-based, non-arbitrary choice. On the uneqrad lex-first breaker (|U|=81, balls 25/7/63, all pa",
+ "science": "CANONICAL COVARIANT SECTION constructed and fired, not a probe cell: the 'leftover-frame-positive' section f(sigma,b) resolves the two-way ambiguity left by the age bit by taking the completion whose ordered direction triple (leftover +, leftover -, full-axis +) has determinant +1 - a genuinely orientation-based, non-arbitrary choice. On the uneqrad lex-first breaker (|U|=81, balls 25/7/63, all pairwise and triple overlaps 7) at v=(-3,-3,-1) with b=1, the two completions (+,0,-,0,+,-) and (-,0,+,0,+,-) have leftover-frame signs +1 and -1, so f=(+,0,-,0,+,-); it IS a July-3 pair member, it fires with N_new=1, and U persists. The note cites N_commute=576 for this section from its parent.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

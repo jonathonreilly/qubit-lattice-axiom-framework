@@ -1,7 +1,7 @@
 {
  "id": "pr-6643",
  "title": "feat(2bcons): unique-axis signs exclude every firing labeling",
- "science": "Sharper exclusion theorem with a structural proof, not a probe cell: the two UNAMBIGUOUS unique-axis signs alone (+y=+, +z=+, from kernels (0,0,1/3) and (0,1/3,0)) already exclude ALL FOUR firing 6-tuples on the witness mask - N_agree=0, no ambiguous +-x constraint needed. And it is forced, not numerical: if +y and +z were both +, both '+' letters are spent, both '0's already sit on -y and -z, so ",
+ "science": "Sharper exclusion theorem with a structural proof, not a probe cell: the two UNAMBIGUOUS unique-axis signs alone (+y=+, +z=+, from kernels (0,0,1/3) and (0,1/3,0)) already exclude ALL FOUR firing 6-tuples on the witness mask - N_agree=0, no ambiguous +-x constraint needed. And it is forced, not numerical: if +y and +z were both +, both '+' letters are spent, both '0's already sit on -y and -z, so both +-x slots must be '-', which breaks axis-bicolouring on x and puts the tuple outside the pair. The four firing tuples have (+y,+z) = (+,-),(-,+),(+,-),(-,+).",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

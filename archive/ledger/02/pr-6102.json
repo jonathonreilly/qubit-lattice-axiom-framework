@@ -1,7 +1,7 @@
 {
  "id": "pr-6102",
  "title": "science(gravity): route Record sources by compact null charge",
- "science": "Block 30: replaces the free compact phase tag with a Record-derived null-charge response classifier (one positive homothety channel plus ten residual channels), proves neutral closed histories and pure-scale sources solve on their branches, builds a rank-26 KKT reaction compiler, and gives the first positive rational Record kernel with exact causal-prefix marginals \u2014 the earliest Record-history wi",
+ "science": "Block 30: replaces the free compact phase tag with a Record-derived null-charge response classifier (one positive homothety channel plus ten residual channels), proves neutral closed histories and pure-scale sources solve on their branches, builds a rank-26 KKT reaction compiler, and gives the first positive rational Record kernel with exact causal-prefix marginals \u2014 the earliest Record-history witness in the chain.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

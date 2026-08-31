@@ -1,7 +1,7 @@
 {
  "id": "pr-6630",
  "title": "feat(l1chi): displayed L1 formation is automatically achiral",
- "science": "FORCING NEGATIVE, not a probe cell: displayed L1 formation f_L1(c)=[n!=0] on the six-neighbor occupancy star is P-even (n(Pc)=-n(c) so the formation set is P-invariant), hence automatically achiral by July-3 Thm 2, and the two-letter occupancy alphabet cannot host July-3 Thm 3's k=3 chiral channel; a P-even indicator cannot equal a P-odd V-A grade except at zero. Exact census N_form=N_P_form=N_bot",
+ "science": "FORCING NEGATIVE, not a probe cell: displayed L1 formation f_L1(c)=[n!=0] on the six-neighbor occupancy star is P-even (n(Pc)=-n(c) so the formation set is P-invariant), hence automatically achiral by July-3 Thm 2, and the two-letter occupancy alphabet cannot host July-3 Thm 3's k=3 chiral channel; a P-even indicator cannot equal a P-odd V-A grade except at zero. Exact census N_form=N_P_form=N_both=56 with exactly 8 balanced n=0 tuples; separates f_L1 from Hamming-nonzero at (1,1,0,0,0,0).",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

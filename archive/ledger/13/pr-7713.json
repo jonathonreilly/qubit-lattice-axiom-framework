@@ -1,7 +1,7 @@
 {
  "id": "pr-7713",
  "title": "feat(nm2frm2lx3rd2): distance-2 neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1 on three-axis opposite near-face seed: re",
- "science": "Distance-2 neighbour-read of the L-path (-e3 then -e1) on the three-axis near-face seed (third pair at (2,0,0)/(2,1,0)). Recomputed exact, but the wrapper is inert: at all four probes distance-2 equals the bare L-path, so the reported pair is the parent L-path's pair verbatim. Introduces the band's second, incompatible 'formed' rule -- its witness scan has no cut filter at all (any site ever forme",
+ "science": "Distance-2 neighbour-read of the L-path (-e3 then -e1) on the three-axis near-face seed (third pair at (2,0,0)/(2,1,0)). Recomputed exact, but the wrapper is inert: at all four probes distance-2 equals the bare L-path, so the reported pair is the parent L-path's pair verbatim. Introduces the band's second, incompatible 'formed' rule -- its witness scan has no cut filter at all (any site ever formed to tick 5 qualifies), where #7712/#7715/#7716 require formed at the probe's own tau; the notes list t=3,4,5 witnesses without remarking on it. Its not-leftover-of-bare-lpath gate passes on the off-probe site (2,-1,0), certifying a distinction that does not exist at any probe.",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=fails",
  "source": {

@@ -1,9 +1,9 @@
 {
  "id": "pr-6459",
  "title": "feat(mix0c3): f_mix0 three-site coverage is 188 of 220",
- "science": "Breaks a two-site tie at three sites: f_mix0=(1,0,1,1,0) and f_L1=(1,0,1,1,1) tie at cov2=62 inside the opp2=0 subclass (#6433) but separate sharply at three sites - cov3(f_L1)=220 (perfect) against cov3(f_mix0)=188, i.e. 32 stalling seeds, one of which is #6437's named splitter {(0,0,0),(0,0,1),(2,0,0)}. So mixed3 is worth 32 of the 220 three-site seeds for the opp2=0 pair, against 8 of 220 for t",
+ "science": "Breaks a two-site tie at three sites: f_mix0=(1,0,1,1,0) and f_L1=(1,0,1,1,1) tie at cov2=62 inside the opp2=0 subclass (#6433) but separate sharply at three sites - cov3(f_L1)=220 (perfect) against cov3(f_mix0)=188, i.e. 32 stalling seeds, one of which is #6437's named splitter {(0,0,0),(0,0,1),(2,0,0)}. So mixed3 is worth 32 of the 220 three-site seeds for the opp2=0 pair, against 8 of 220 for the opp2=1 pair in #6456 - the cost of silencing mixed3 depends on the opp2 bit.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6459,
   "branch": "physics-loop/toe-lphys-block-mix0c3-20260815"

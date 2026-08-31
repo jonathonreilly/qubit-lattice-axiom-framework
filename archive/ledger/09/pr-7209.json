@@ -1,7 +1,7 @@
 {
  "id": "pr-7209",
  "title": "feat(nst2sp): S+ two-tick composition on #7188: reverse HOLD, face HOLD, composition HOLD",
- "science": "On the four z-symmetric three-site x-probes of #7188, reverse and face are scored from S^+ at each probe's own t and again at t+1; the sets at B and D strictly grow between the cuts (new six-neighbours add -e_2, +e_3, -e_3) while the reverse and face bits stay hold, so composition HOLDs without the scored input being frozen. It is the only member of the two-tick quartet whose stability is not a co",
+ "science": "On the four z-symmetric three-site x-probes of #7188, reverse and face are scored from S^+ at each probe's own t and again at t+1; the sets at B and D strictly grow between the cuts (new six-neighbours add -e_2, +e_3, -e_3) while the reverse and face bits stay hold, so composition HOLDs without the scored input being frozen. It is the only member of the two-tick quartet whose stability is not a consequence of M being fixed at formation.",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=HOLD",
  "source": {

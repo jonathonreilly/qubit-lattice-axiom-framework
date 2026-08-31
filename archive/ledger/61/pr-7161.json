@@ -1,7 +1,7 @@
 {
  "id": "pr-7161",
  "title": "feat(nsqpz): nsopp z-probe PVM letter: reverse HOLD, face HOLD",
- "science": "PVM-letter readout: occupancy kernel n_mu = (o_{+mu} - o_{-mu})/3 from already-recorded neighbours, H = 3n . sigma with H^2 = kI, rank-1 projectors P_pm = (sqrt(k) I +/- H)/(2 sqrt(k)); the only member family touching the M_2(C) Qubit axiom. Reported HOLD/HOLD is vacuous: pvm_letters_from_n returns {+,-} whenever n != 0, so reverse_report's 'fail' branch is unreachable (I verified only {hold, UNDE",
+ "science": "PVM-letter readout: occupancy kernel n_mu = (o_{+mu} - o_{-mu})/3 from already-recorded neighbours, H = 3n . sigma with H^2 = kI, rank-1 projectors P_pm = (sqrt(k) I +/- H)/(2 sqrt(k)); the only member family touching the M_2(C) Qubit axiom. Reported HOLD/HOLD is vacuous: pvm_letters_from_n returns {+,-} whenever n != 0, so reverse_report's 'fail' branch is unreachable (I verified only {hold, UNDEFINED} are attainable) and HOLD means only 'n != 0 at both probes'.",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=HOLD (vacuous)",
  "source": {

@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the perp-step incoming-lock experiment (toe-lphys-20260812, #7034–#7091)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 One controlled experiment repeated 44 times: perp-step incoming-lock growth on
 B_3(0), varied ONLY in seed configuration, probe frame, and readout map;
 scored as (reverse, face). Full-diff read of every member (densify 2026-08-31).

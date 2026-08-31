@@ -1,7 +1,7 @@
 {
  "id": "pr-6766",
  "title": "feat(var16): on B16, var nu < (0,1,1) < l1",
- "science": "Three-way exact variance comparison on B_16(0) with a real methodological addition: the mean of |v|_2/t is evaluated symbolically via square-free decomposition of |v|_2^2, so the variances are exact rather than floating point. Exact second moments Q_(0,1,1)=1696786091619347777/3396055562124825600, Q_nu=98585558497628911/271684444969986048, Q_l1=191/376; order var_nu (0.0067803) < var_(0,1,1) (0.00",
+ "science": "Three-way exact variance comparison on B_16(0) with a real methodological addition: the mean of |v|_2/t is evaluated symbolically via square-free decomposition of |v|_2^2, so the variances are exact rather than floating point. Exact second moments Q_(0,1,1)=1696786091619347777/3396055562124825600, Q_nu=98585558497628911/271684444969986048, Q_l1=191/376; order var_nu (0.0067803) < var_(0,1,1) (0.0075974) < var_l1 (0.0086903). Establishes 'cheaper is not rounder' for the two reversers.",
  "forcing": false,
  "verdict_pair": "reverse=absent face=absent (reports variance ordering only)",
  "source": {

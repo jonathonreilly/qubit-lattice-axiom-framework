@@ -1,7 +1,7 @@
 {
  "id": "pr-7725",
  "title": "physics: isolate Regge-D4 placement corner boundary",
- "science": "Exact placement-grade Ward obstruction for the frozen raw-label Regge-D4 carrier: 28 of 60 direction-grade blocks inconsistent, and a support-independent corner contradiction (M_01 forced to both 1/2 and 0 at a shared corner) proves no entrywise regular Laurent map of any finite support solves the frozen placement equation. Dead-ends the raw-symbol Regge placement route; the lane pivots to OS/GNS/",
+ "science": "Exact placement-grade Ward obstruction for the frozen raw-label Regge-D4 carrier: 28 of 60 direction-grade blocks inconsistent, and a support-independent corner contradiction (M_01 forced to both 1/2 and 0 at a shared corner) proves no entrywise regular Laurent map of any finite support solves the frozen placement equation. Dead-ends the raw-symbol Regge placement route; the lane pivots to OS/GNS/CAR. Regge is on no spine obligation.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

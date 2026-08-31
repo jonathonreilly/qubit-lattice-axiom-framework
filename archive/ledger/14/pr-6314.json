@@ -1,9 +1,9 @@
 {
  "id": "pr-6314",
  "title": "feat(seedclass): classify one-site seeds on the two-cube",
- "science": "Bounded_theorem note, no probe cell. Complete CLASSIFICATION of all twelve single-site seeds on the two-cube under the L0 occupancy step: the census is 4+4+4 by seed x-coordinate, with A-only (x=0) and B-only (x=2) seeds each forming exactly 3 sites and shared-face (x=1) seeds each forming exactly 4. The derived rule is that the first-wave formation count equals the number of ON-PATCH nearest neig",
+ "science": "Bounded_theorem note, no probe cell. Complete CLASSIFICATION of all twelve single-site seeds on the two-cube under the L0 occupancy step: the census is 4+4+4 by seed x-coordinate, with A-only (x=0) and B-only (x=2) seeds each forming exactly 3 sites and shared-face (x=1) seeds each forming exactly 4. The derived rule is that the first-wave formation count equals the number of ON-PATCH nearest neighbors of the seed, so it is a boundary/coordination-number effect, not a property of the seed's cube membership. Modest but exhaustive. 12/12 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=12 FAIL=0)",
  "source": {
   "pr": 6314,
   "branch": "physics-loop/toe-lphys-block-seedclass-20260814"

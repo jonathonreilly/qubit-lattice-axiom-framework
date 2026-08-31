@@ -1,7 +1,7 @@
 {
  "id": "pr-7037",
  "title": "physics-loop: fixed-carrier presence-separated Record boundary \u2014 bounded theorem \u2014 bounded support",
- "science": "Block 8: the terminal path word 000 collides with the all-blank three-memory sector, so it cannot separate absence of a Record from the nonzero outcome-0 range (rank K_0 = 1, so 0 != R_0 subset B); repaired by promoting the F bit to an all-branch completion flag (blank 000, pending 100, terminals 010/110/111) with an exact 16x16 unitary on the connected four-site path F-M1-S-M2. Bounded negative: ",
+ "science": "Block 8: the terminal path word 000 collides with the all-blank three-memory sector, so it cannot separate absence of a Record from the nonzero outcome-0 range (rank K_0 = 1, so 0 != R_0 subset B); repaired by promoting the F bit to an all-branch completion flag (blank 000, pending 100, terminals 010/110/111) with an exact 16x16 unitary on the connected four-site path F-M1-S-M2. Bounded negative: in finite dimension no single reversible update can both carry a nonzero subspace orthogonal to the terminal sector into it and leave that sector forward invariant.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

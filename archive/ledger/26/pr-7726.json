@@ -1,7 +1,7 @@
 {
  "id": "pr-7726",
  "title": "physics: isolate L24 fermionic OS spin boundary",
- "science": "The literal periodic/uniform L24 fermionic Berezin reflected covariance is indefinite before any quotient: exact per-block inertia (2,20,2) with two-generator norm -7^14/77463616656739800, full fiber (16,160,16); and exact mode arithmetic proves the scalar antiperiodic repair is impossible on this carrier (pi/6 and pi/4 share a twist only at L=24n with periodic +1). Kills the literal periodic carr",
+ "science": "The literal periodic/uniform L24 fermionic Berezin reflected covariance is indefinite before any quotient: exact per-block inertia (2,20,2) with two-generator norm -7^14/77463616656739800, full fiber (16,160,16); and exact mode arithmetic proves the scalar antiperiodic repair is impossible on this carrier (pi/6 and pi/4 share a twist only at L=24n with periodic +1). Kills the literal periodic carrier as an OS/CAR seed.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

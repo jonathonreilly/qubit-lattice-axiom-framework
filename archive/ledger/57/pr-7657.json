@@ -1,7 +1,7 @@
 {
  "id": "pr-7657",
  "title": "feat(nm2frm3sz): directed 3-step cyclic-frame transport along -e3 at t+1 on two-axis opposite seed: reverse fails, face fails",
- "science": "3-step -e3, two-axis opposite, per-site tau. First of the eight 3-step members; all fail. I checked the underlying reason across the whole factorial: k=3 (a 4-site chain) is fail/fail in every seed family, every direction and both tau conventions, 24/24 cells, because the frame field's longest straight run is 4-5 sites under the per-site cut and only 2-3 under global tau=1, and none of those runs ",
+ "science": "3-step -e3, two-axis opposite, per-site tau. First of the eight 3-step members; all fail. I checked the underlying reason across the whole factorial: k=3 (a 4-site chain) is fail/fail in every seed family, every direction and both tau conventions, 24/24 cells, because the frame field's longest straight run is 4-5 sites under the per-site cut and only 2-3 under global tau=1, and none of those runs starts at both probes of a pair.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

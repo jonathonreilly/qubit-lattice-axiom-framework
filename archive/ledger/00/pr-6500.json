@@ -3,7 +3,7 @@
  "title": "feat(c00c3): 3-site coverage of the two #6490 exceptions",
  "science": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,f",
+ "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6500,
   "branch": "physics-loop/toe-lphys-block-c00c3-20260815"

@@ -1,7 +1,7 @@
 {
  "id": "pr-7093",
  "title": "feat(nsopp): opposite-lock unique vector: reverse fail, face UNDEFINED",
- "science": "Unique already-recorded 6-NN lock-VECTOR readout on the opposite-lock seed +e_1/-e_1; reverse=fail from L(A)=+e_1, L(B)=+e_3. Establishes the failure mechanism for the whole readout family: a probe whose recorded neighbourhood mixes lock vectors has no singleton, so L=UNDEFINED (C and D both mix). Runner enumerates the 24 proper cubic rotations and proves the opposite pair is not in the orbit of t",
+ "science": "Unique already-recorded 6-NN lock-VECTOR readout on the opposite-lock seed +e_1/-e_1; reverse=fail from L(A)=+e_1, L(B)=+e_3. Establishes the failure mechanism for the whole readout family: a probe whose recorded neighbourhood mixes lock vectors has no singleton, so L=UNDEFINED (C and D both mix). Runner enumerates the 24 proper cubic rotations and proves the opposite pair is not in the orbit of the perp pair.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=UNDEFINED",
  "source": {

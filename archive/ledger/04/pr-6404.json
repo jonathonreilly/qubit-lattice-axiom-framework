@@ -1,9 +1,9 @@
 {
  "id": "pr-6404",
  "title": "feat(l1and): L1 remaining bits select one of eight fillers",
- "science": "Terminal of the 32->8->4->1 selector chain and the one PR that CLAIMS a positive selection: N_and=1, i.e. the conjunction (wt1,opp2,adj2,vertex3,mixed3)=(1,0,1,1,1) picks f_L1 uniquely among the eight F_cut 1-site fillers. FLAG - the claim is circular, and the note's own N7 steelman states the objection verbatim ('among eight maps that already vary exactly on (opp2,mixed3,vertex3) with wt1=adj2=1 ",
+ "science": "Terminal of the 32->8->4->1 selector chain and the one PR that CLAIMS a positive selection: N_and=1, i.e. the conjunction (wt1,opp2,adj2,vertex3,mixed3)=(1,0,1,1,1) picks f_L1 uniquely among the eight F_cut 1-site fillers. FLAG - the claim is circular, and the note's own N7 steelman states the objection verbatim ('among eight maps that already vary exactly on (opp2,mixed3,vertex3) with wt1=adj2=1 forced by fill, picking L1's three remaining values is tautological'). Its rebuttal is only that the bits are 'independently motivated'; but the 8 fillers form a 3-bit subcube and the tuple fixes all three free coordinates, so N_and=2^0=1 by construction. Anyone reading the chain as evidence for L1 should read this PR's N7 first.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6404,
   "branch": "physics-loop/toe-lphys-block-l1and-20260815"

@@ -1,9 +1,9 @@
 {
  "id": "pr-7010",
  "title": "feat(rdcmp): ell1 reverse fails k=1; c2d4 holds; bits disagree",
- "science": "Two Dijkstras on B_6(0) comparing the AXIOM-NATIVE object -- unit l1 on the 6-NN graph, i.e. the Record lock-support cone -- against c2d4. Native l1: t(1,0,0)=1, t(1,1,1)=3, so 3 < 9 and same-k reverse FAILS. c2d4: (3,5), 27>25, holds. The bits disagree, and the note draws the conclusion in its own words: 'occupancy t is not the Record-side cone'. The strongest axiom-adjacent forcing negative in t",
+ "science": "Two Dijkstras on B_6(0) comparing the AXIOM-NATIVE object -- unit l1 on the 6-NN graph, i.e. the Record lock-support cone -- against c2d4. Native l1: t(1,0,0)=1, t(1,1,1)=3, so 3 < 9 and same-k reverse FAILS. c2d4: (3,5), 27>25, holds. The bits disagree, and the note draws the conclusion in its own words: 'occupancy t is not the Record-side cone'. The strongest axiom-adjacent forcing negative in the band.",
  "forcing": false,
- "verdict_pair": "reverse=l1 NO (3<9) vs c2d4 YES (27>25); the two bits disagr",
+ "verdict_pair": "reverse=l1 NO (3<9) vs c2d4 YES (27>25); the two bits disagree (band bits, not family verdicts) face=absent",
  "source": {
   "pr": 7010,
   "branch": "physics-loop/toe-lphys-block-rdcmp-20260815"

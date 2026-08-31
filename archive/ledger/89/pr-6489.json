@@ -3,7 +3,7 @@
  "title": "feat(wt0mix3split): mixed3 is free on fill for the wt1=0 3-site max pair",
  "science": "reverse=none face=none (f_cut fill-split census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut fill-split census; no (reverse",
+ "verdict_pair": "reverse=none face=none (f_cut fill-split census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6489,
   "branch": "physics-loop/toe-lphys-block-wt0mix3split-20260815"

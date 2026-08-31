@@ -1,7 +1,7 @@
 {
  "id": "pr-7041",
  "title": "feat(intcls): B3 interval census is 0 space, 4 null, 116 time",
- "science": "Interval census s^2 = t^2 - |x|_2^2 over all 120 formed nonzero sites of Euclidean B_3(0) under the 1-seed perp process: N_space=0, N_null=4, N_time=116. No formed site is spacelike; the null set is exactly the four tick-1 perpendicular neighbours; the on-axis site (1,0,0) has t=3, Q=1, s^2=8 (timelike) where a hop count would have made it null. This is the light-cone-respecting result for the sin",
+ "science": "Interval census s^2 = t^2 - |x|_2^2 over all 120 formed nonzero sites of Euclidean B_3(0) under the 1-seed perp process: N_space=0, N_null=4, N_time=116. No formed site is spacelike; the null set is exactly the four tick-1 perpendicular neighbours; the on-axis site (1,0,0) has t=3, Q=1, s^2=8 (timelike) where a hop count would have made it null. This is the light-cone-respecting result for the single-record seed.",
  "forcing": false,
  "verdict_pair": "none",
  "source": {

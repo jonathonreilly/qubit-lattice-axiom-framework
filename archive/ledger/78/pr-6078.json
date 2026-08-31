@@ -1,7 +1,7 @@
 {
  "id": "pr-6078",
  "title": "Physics loop: derive code-symmetric cut-area action",
- "science": "Block 10: exact regular-graph theorem that the code-symmetric compatible action equals (log B)/2 times the occupied/unoccupied cut area, with the local logit rule as its discrete first variation, a closed dual two-chain, the endpoint Laplacian-improvement family (theta=1/2 code-swap-even), and the forcing negative that a fixed-background law plus cubic covariance does not determine a local metric ",
+ "science": "Block 10: exact regular-graph theorem that the code-symmetric compatible action equals (log B)/2 times the occupied/unoccupied cut area, with the local logit rule as its discrete first variation, a closed dual two-chain, the endpoint Laplacian-improvement family (theta=1/2 code-swap-even), and the forcing negative that a fixed-background law plus cubic covariance does not determine a local metric derivative (two covariant extensions agree at background, differ in first variation) \u2014 this forces the geometry-family pi[g] bridge shape the later curved-carrier program is built around.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

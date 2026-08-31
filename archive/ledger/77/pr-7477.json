@@ -1,7 +1,7 @@
 {
  "id": "pr-7477",
  "title": "feat(nm2occtrdslz): neighbor-read of cyclic lex-smallest Orient at t+1 on two-axis same-lock z-probes: reverse fails, face fails",
- "science": "Only band member whose SEED site A fails split by axis overlap (same-lock seed puts +e_2 in both M(A) and O(A)), and the one that introduces neighbour-read of the Orient SIGN evaluated at the PROBE's cut tau=t(q)+1: hold only at B (partner seed (0,1,1) matches +1). Defect: the check 'mutation-lex-largest-neighbor-read-differs' asserts reads_large == reads at all four probes (fail,hold,fail,fail) u",
+ "science": "Only band member whose SEED site A fails split by axis overlap (same-lock seed puts +e_2 in both M(A) and O(A)), and the one that introduces neighbour-read of the Orient SIGN evaluated at the PROBE's cut tau=t(q)+1: hold only at B (partner seed (0,1,1) matches +1). Defect: the check 'mutation-lex-largest-neighbor-read-differs' asserts reads_large == reads at all four probes (fail,hold,fail,fail) under a '-differs' label \u2014 a phrase-inversion PASS.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

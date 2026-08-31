@@ -1,9 +1,9 @@
 {
  "id": "pr-6389",
  "title": "feat(linform): unique linear-threshold formation predicate is f_L1",
- "science": "Bounded_theorem note, no probe cell. THE STRONGEST POSITIVE RESULT IN THE BATCH and the exact counterweight to #6381's 1024-member non-uniqueness: it supplies the missing SELECTOR. Requiring the formation map to be (a) LINEAR on the six signed occupancy coordinates, (b) cube-EQUIVARIANT, and (c) valued in the STANDARD 3 forces the threshold predicate f = 1_{L != 0} to be exactly f_L1, uniquely up ",
+ "science": "Bounded_theorem note, no probe cell. THE STRONGEST POSITIVE RESULT IN THE BATCH and the exact counterweight to #6381's 1024-member non-uniqueness: it supplies the missing SELECTOR. Requiring the formation map to be (a) LINEAR on the six signed occupancy coordinates, (b) cube-EQUIVARIANT, and (c) valued in the STANDARD 3 forces the threshold predicate f = 1_{L != 0} to be exactly f_L1, uniquely up to scale. Proof chain, all exact: character inner products give <chi_even, chi_std> = 0 and <chi_odd, chi_std> = 1, so Hom_G(even, 3) = 0 and every equivariant L kills the three even generators e_{+mu}+e_{-mu}; exact row reduction of the full 18-coefficient system L.rho(R) = R.L over all 24 rotations has rank 17 with one-dimensional nullspace span{L1}; hence L = alpha L1, and every alpha != 0 gives L(c)=0 iff n(c)=0 so f_alpha = f_L1 (8 zeros, 56 units of the 64), while alpha = 0 gives the empty predicate. Read with #6276/#6319 (only the standard 3 lands in SO(3) = Aut(M_2)), this closes a real derivation chain: cubic Lattice symmetry + the M_2(C) one-site algebra + linearity force the L0/L1 kernel up to a conventional scale, and the note is careful NOT to adopt the 1/3 normalisation. 23/23 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=23 FAIL=0)",
  "source": {
   "pr": 6389,
   "branch": "physics-loop/toe-lphys-block-linform-20260815"

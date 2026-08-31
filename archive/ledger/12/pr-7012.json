@@ -3,7 +3,7 @@
  "title": "feat(facd): ell1 face reverse fails k=1; c2d4 holds; bits disagree",
  "science": "Same two-Dijkstra comparison for the face comparator on B_6(0): under native unit l1, t(2,0,0)=2 and t(1,1,0)=2 so 4 < 8 and the face bit FAILS; under c2d4, 6 and 4 so 36>32 and it holds. Second independent disagreement between the axiom-native cone and the engineered hop-cost.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=l1 NO (4<8) vs c2d4 YES (36>32); the two",
+ "verdict_pair": "reverse=absent face=l1 NO (4<8) vs c2d4 YES (36>32); the two bits disagree",
  "source": {
   "pr": 7012,
   "branch": "physics-loop/toe-lphys-block-facd-20260815"

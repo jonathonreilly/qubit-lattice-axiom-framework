@@ -1,7 +1,7 @@
 {
  "id": "pr-6375",
  "title": "feat(cell-geometry): the pinned pair - no map at any level can exchange the two exceptional cuttings",
- "science": "Cycle 795: the strongest negative of the wall assault. Full weight census of the fiber kernel, the overlap and difference structure of its weight-four and weight-six vectors and the span they generate, the profile of its nine weight-eight vectors, identification of the two exceptional cuttings by graph degree and of the two span-outside directions emanating from the isolated one - and then a deriv",
+ "science": "Cycle 795: the strongest negative of the wall assault. Full weight census of the fiber kernel, the overlap and difference structure of its weight-four and weight-six vectors and the span they generate, the profile of its nine weight-eight vectors, identification of the two exceptional cuttings by graph degree and of the two span-outside directions emanating from the isolated one - and then a derived degree lemma FORBIDDING any shared-row-preserving bijection from exchanging the two exceptional cuttings, with a complete backtracking search whose nontrivial member fixes each of them individually. So the instance own symmetry provably cannot carry the parity of fourteen: a carrier must come from structure that does not preserve the minimal exchange graph.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

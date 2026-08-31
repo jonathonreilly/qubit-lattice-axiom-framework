@@ -3,7 +3,7 @@
  "title": "feat(011meet12): (0,1,1) B6-union still meets at (1,0,0) t=1; worse var than l1",
  "science": "Host-size robustness repeat of #6742 on the larger union B_6(0) u B_6((2,0,0)) (523 sites): the two-seed negative holds -- var_l1 = 0.008180 < var_(0,1,1) = 0.009283 on their respective midplanes (61 vs 69 sites), first meeting still the singleton {(1,0,0)} at t=1. Confirms the two-seed isotropy loss is not a small-host artifact; no new mechanism.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports meet site/time, |M|=1, m",
+ "verdict_pair": "reverse=absent face=absent (reports meet site/time, |M|=1, midplane variances)",
  "source": {
   "pr": 6754,
   "branch": "physics-loop/toe-lphys-block-011meet12-20260815"

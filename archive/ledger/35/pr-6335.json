@@ -1,9 +1,9 @@
 {
  "id": "pr-6335",
  "title": "feat(l1t3): L1 tick 3 forms the three d=3 sites",
- "science": "Bounded_theorem note, no probe cell. Tick-3 continuation: exactly the three graph-distance-3 sites form, with 3n and k = (-1,-1,-1) k=3 at (1,1,1) and (-1,-1,0)/(-1,0,-1) k=2 at (2,1,0)/(2,0,1); the distance-4 site (2,1,1) has n=0 and stays unread, so |locks_3|=11. Reinforces the #6333 finding that k is NOT a function of l1 shell -- all three tick-3 formers sit at d=3 but split k=3 vs k=2. Minor: ",
+ "science": "Bounded_theorem note, no probe cell. Tick-3 continuation: exactly the three graph-distance-3 sites form, with 3n and k = (-1,-1,-1) k=3 at (1,1,1) and (-1,-1,0)/(-1,0,-1) k=2 at (2,1,0)/(2,0,1); the distance-4 site (2,1,1) has n=0 and stays unread, so |locks_3|=11. Reinforces the #6333 finding that k is NOT a function of l1 shell -- all three tick-3 formers sit at d=3 but split k=3 vs k=2. Minor: the runner defines a tree_phi helper that is never called (dead code). 27/27 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=27 FAIL=0)",
  "source": {
   "pr": 6335,
   "branch": "physics-loop/toe-lphys-block-l1t3-20260814"

@@ -1,7 +1,7 @@
 {
  "id": "pr-7244",
  "title": "feat(nmreadopp): neighbor-read of M on #7208: reverse UNDEFINED, face UNDEFINED",
- "science": "FORCING NEGATIVE on locality of readout. Neighbour-read R of the probe's incoming set on #7208's y-probes: read=fail at all four probes, R is empty at A and C (so both bits are UNDEFINED) and R != M everywhere, e.g. R(B) is a single letter against M(B)={+e1} and R(D) is a single letter against a three-element M(D). Recomputed and confirmed. Paired with #7205 this closes a pincer: the reverse relat",
+ "science": "FORCING NEGATIVE on locality of readout. Neighbour-read R of the probe's incoming set on #7208's y-probes: read=fail at all four probes, R is empty at A and C (so both bits are UNDEFINED) and R != M everywhere, e.g. R(B) is a single letter against M(B)={+e1} and R(D) is a single letter against a three-element M(D). Recomputed and confirmed. Paired with #7205 this closes a pincer: the reverse relation is not a function of the probe's own record (M fails where S^+ holds), and the probe's own record is not recoverable from its neighbours' records (R != M) -- so neither 'own record alone' nor 'neighbour records alone' reproduces the other.",
  "forcing": false,
  "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
  "source": {

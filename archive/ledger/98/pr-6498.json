@@ -3,7 +3,7 @@
  "title": "feat(c00facewhy): first refuse on f00 lex-first 4-face fill",
  "science": "reverse=none face=none (f_cut refusal census, N_refuse=0; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut refusal census, N_refuse=0; no",
+ "verdict_pair": "reverse=none face=none (f_cut refusal census, N_refuse=0; no (reverse,face) pair stated)",
  "source": {
   "pr": 6498,
   "branch": "physics-loop/toe-lphys-block-c00facewhy-20260815"

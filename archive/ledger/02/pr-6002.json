@@ -1,7 +1,7 @@
 {
  "id": "pr-6002",
  "title": "[physics-loop][review-loop] toe-time blockM13 (STACKED on #5999) \u2014 Cycle 933: bounded theorem \u2014 s(k) derived as a Hankel spectrum; the Galoi",
- "science": "s(k) derived structurally as the entropy of squared singular values of a binomially-weighted Hankel matrix on Sym^d (exact at pinned grade 1.2e-14; mechanism = the pointer own transverse term, ablated to exactly zero; leading order lambda^2 log(1/lambda) in closed form) plus the Galois no-go: the collective characteristic polynomial at d=4 has group S5, unsolvable by radicals - no elementary close",
+ "science": "s(k) derived structurally as the entropy of squared singular values of a binomially-weighted Hankel matrix on Sym^d (exact at pinned grade 1.2e-14; mechanism = the pointer own transverse term, ablated to exactly zero; leading order lambda^2 log(1/lambda) in closed form) plus the Galois no-go: the collective characteristic polynomial at d=4 has group S5, unsolvable by radicals - no elementary closed form for s(k) can exist beyond d=3, retiring the formula hunt permanently. Baseline table, multiplicity ladder, dilution law, lambda*(d) all become derived for stars.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

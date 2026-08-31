@@ -1,7 +1,7 @@
 {
  "id": "pr-7150",
  "title": "feat(nsopin): nsopp y-probe own-lock-in exist-opposite: reverse HOLD, face HOLD",
- "science": "First own-lock-in member: S^+(q) = strictly-earlier 6-NN locks union {L(q)}. On nsopp y-probes the seed letter L(A)=-e1 fills the empty S(A) of #7143 and flips reverse UNDEFINED -> hold against +e1 in S^+(B). Isolates the mechanism the whole own-lock sub-family turns on: the own letter is a second, independent monotone widening knob, orthogonal to the time window, and the runner's own gates ('own-",
+ "science": "First own-lock-in member: S^+(q) = strictly-earlier 6-NN locks union {L(q)}. On nsopp y-probes the seed letter L(A)=-e1 fills the empty S(A) of #7143 and flips reverse UNDEFINED -> hold against +e1 in S^+(B). Isolates the mechanism the whole own-lock sub-family turns on: the own letter is a second, independent monotone widening knob, orthogonal to the time window, and the runner's own gates ('own-lock-in-fills-empty-A') name it.",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=HOLD",
  "source": {

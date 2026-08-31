@@ -1,9 +1,9 @@
 {
  "id": "pr-6726",
  "title": "feat(nuclk): nu as clock and as filter fires on all 12 hosts",
- "science": "Repeats the 12-host clock-vs-readiness split with the support-drop cost nu instead of rho: N_label_fire=12 AND N_filt_fire=12. Cross-cell contrast with #6709 (rho gave 4/12) plus a derived reason: on all 12 hosts the unread center has coordinate support 3 and every occupied neighbor support 2 or 3, so none of nu's three clauses can fire inward and every incoming nu=1. Conclusion: nu is consistent ",
+ "science": "Repeats the 12-host clock-vs-readiness split with the support-drop cost nu instead of rho: N_label_fire=12 AND N_filt_fire=12. Cross-cell contrast with #6709 (rho gave 4/12) plus a derived reason: on all 12 hosts the unread center has coordinate support 3 and every occupied neighbor support 2 or 3, so none of nu's three clauses can fire inward and every incoming nu=1. Conclusion: nu is consistent as clock AND as readiness gate, rho is not.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports N_label_fire=12, N_filt_",
+ "verdict_pair": "reverse=absent face=absent (reports N_label_fire=12, N_filt_fire=12)",
  "source": {
   "pr": 6726,
   "branch": "physics-loop/toe-lphys-block-nuclk-20260815"

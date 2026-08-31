@@ -1,7 +1,7 @@
 {
  "id": "pr-7319",
  "title": "physics: construct self-hosting homogeneous Record carrier",
- "science": "Block 33: the one-site binary-projective Record carrier can be made output-closed under one fixed nearest-neighbor Law via a SHARED payload rather than six independent draws - decoder C(A)=H(A)^2/Tr(H(A)^2), P(A)=(I+K_0/r)/2, a full-support conjugation-invariant Gaussian empty-neighbor branch, a copy branch, and a six-equal-payload trace-read branch writing P(A),Q(A) with masses Tr(CP),Tr(CQ) on a",
+ "science": "Block 33: the one-site binary-projective Record carrier can be made output-closed under one fixed nearest-neighbor Law via a SHARED payload rather than six independent draws - decoder C(A)=H(A)^2/Tr(H(A)^2), P(A)=(I+K_0/r)/2, a full-support conjugation-invariant Gaussian empty-neighbor branch, a copy branch, and a six-equal-payload trace-read branch writing P(A),Q(A) with masses Tr(CP),Tr(CQ) on an eleven-Record seed-plus-ten-copy scaffold. Formation order is SUPPLIED.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

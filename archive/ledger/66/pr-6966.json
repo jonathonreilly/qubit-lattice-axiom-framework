@@ -1,9 +1,9 @@
 {
  "id": "pr-6966",
  "title": "feat(w2meet): cost-2 out-face two-seed meet |M|=1 vars 0",
- "science": "Two-seed meeting-set test on B_12(0) u B_12((2,0,0)) (3203 sites), two seed-relative Dijkstras. Honest forcing negative buried under a neutral title: the first-meeting set is the SINGLETON {(1,0,0)} under both w2 (t=3) and unit l1 (t=1), so both arrival-speed variances are trivially 0 and the note concedes 'the two displayed variances therefore tie. The score w2 does not beat l1 on M.' The one-see",
+ "science": "Two-seed meeting-set test on B_12(0) u B_12((2,0,0)) (3203 sites), two seed-relative Dijkstras. Honest forcing negative buried under a neutral title: the first-meeting set is the SINGLETON {(1,0,0)} under both w2 (t=3) and unit l1 (t=1), so both arrival-speed variances are trivially 0 and the note concedes 'the two displayed variances therefore tie. The score w2 does not beat l1 on M.' The one-seed roundness advantage does not survive to a two-seed statistic.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports |M|=1, var=0 under both ",
+ "verdict_pair": "reverse=absent face=absent (reports |M|=1, var=0 under both w2 and l1 -- a tie, not a win)",
  "source": {
   "pr": 6966,
   "branch": "physics-loop/toe-lphys-block-w2meet-20260815"

@@ -1,9 +1,9 @@
 {
  "id": "pr-6596",
  "title": "feat(c12q10): every F_cut map has cov12>0; not Q10, Q8, or Q4",
- "science": "Universal positive over the whole class - cov12>0 on all 32 F_cut maps, N_pos=32, zeros=() - but the note itself shows the test is degenerate by construction: the single twelve-site seed IS the whole patch, so L_0=T is already full and every map trivially fills. The three iff failures against Q10/Q8/Q4 are therefore forced a priori, and the member is a vacuous probe dressed as a bounded theorem. A",
+ "science": "Universal positive over the whole class - cov12>0 on all 32 F_cut maps, N_pos=32, zeros=() - but the note itself shows the test is degenerate by construction: the single twelve-site seed IS the whole patch, so L_0=T is already full and every map trivially fills. The three iff failures against Q10/Q8/Q4 are therefore forced a priori, and the member is a vacuous probe dressed as a bounded theorem. Also aggregates the three earlier selector laws in one place (Q10=cov10>0, Q8=cov8>0, Q4=cov4>0) with their exact counts 28/30/24.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; N_pos=32, Q10 equiv=0 N",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; N_pos=32, Q10 equiv=0 N_Q=28, Q8 equiv=0 N_Q=30, Q4 equiv=0 N_Q=24, all lex_first_miss=(0,0,0,0,0))",
  "source": {
   "pr": 6596,
   "branch": "physics-loop/toe-lphys-block-c12q10-20260815"

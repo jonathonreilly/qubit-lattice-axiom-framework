@@ -1,7 +1,7 @@
 {
  "id": "pr-6357",
  "title": "feat(cycle786): facet alphabet, heavy parity law, and the forty period-one cuttings",
- "science": "Cycle 786: opens the interface reading. Every used piece cuts exactly two facet faces on distinct axes; the facet alphabet is exactly 16 dissections and literally the SAME 16 on all 8 boundary slots, splitting intrinsically by diagonal profile into 12 light letters of slot multiplicity 862 and 4 heavy of 1364 (12*862 + 4*1364 = 15800); derives the two-valued slot multiplicity law from the boundary",
+ "science": "Cycle 786: opens the interface reading. Every used piece cuts exactly two facet faces on distinct axes; the facet alphabet is exactly 16 dissections and literally the SAME 16 on all 8 boundary slots, splitting intrinsically by diagonal profile into 12 light letters of slot multiplicity 862 and 4 heavy of 1364 (12*862 + 4*1364 = 15800); derives the two-valued slot multiplicity law from the boundary group action, the symmetry of the interface matrix from coordinate reflection, the even-heavy parity law with its charge located in a previously recorded blind space, gates the impossibility of a strictly per-piece certificate for that law, and identifies the forty period-one cuttings with their orbits.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the machinery pre-history (toe-lphys-20260812, ~#6236–#6390)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 The 2026-08-13→15 band that BUILT the campaign's machinery — bounded-theorem
 notes, not sweep cells. Full-diff read of every member (densify 2026-08-31).
 

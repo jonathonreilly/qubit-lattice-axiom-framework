@@ -1,7 +1,7 @@
 {
  "id": "pr-6353",
  "title": "feat(physical-cell): label sum is affine in one family trace, cycle 784",
- "science": "Cycle 784: the label sum of a cutting is an affine function of one family trace, where the family H is the 96 pieces whose minimal naming uses the last axis within the first two walk steps. Introduces the POSITION coordinate read straight off the piece-chamber incidence: exactly 12 positions, each a set of 8 axis orders and each the position of exactly 16 pieces, with each of the 24 axis orders in",
+ "science": "Cycle 784: the label sum of a cutting is an affine function of one family trace, where the family H is the 96 pieces whose minimal naming uses the last axis within the first two walk steps. Introduces the POSITION coordinate read straight off the piece-chamber incidence: exactly 12 positions, each a set of 8 axis orders and each the position of exactly 16 pieces, with each of the 24 axis orders in exactly 4 positions.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

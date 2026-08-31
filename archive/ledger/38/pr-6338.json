@@ -1,9 +1,9 @@
 {
  "id": "pr-6338",
  "title": "feat(l1fixed): after saturation L1 is the identity",
- "science": "Bounded_theorem note, no probe cell. HALT/FIXED-POINT structure of the displayed L1 kernel: the full lock set V and the empty set are BOTH fixed points, and growing five ticks from the seed gives locks_5 = locks_4 with F, rho(A), rho(B) and the tree-gauge phi all unchanged -- so the dynamics terminates at tick 4 and is thereafter the identity. Two absorbing states (all-locked and never-started) wi",
+ "science": "Bounded_theorem note, no probe cell. HALT/FIXED-POINT structure of the displayed L1 kernel: the full lock set V and the empty set are BOTH fixed points, and growing five ticks from the seed gives locks_5 = locks_4 with F, rho(A), rho(B) and the tree-gauge phi all unchanged -- so the dynamics terminates at tick 4 and is thereafter the identity. Two absorbing states (all-locked and never-started) with no cycling. Minor: the F-unchanged check is implied by t5-equals-t4-locks, so it restates rather than tests. 25/25 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=25 FAIL=0)",
  "source": {
   "pr": 6338,
   "branch": "physics-loop/toe-lphys-block-l1fixed-20260814"

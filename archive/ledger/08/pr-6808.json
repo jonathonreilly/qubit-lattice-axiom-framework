@@ -1,7 +1,7 @@
 {
  "id": "pr-6808",
  "title": "feat(entk1): enter-body kills k=1 reverse: t=3 vs t=7",
- "science": "Forcing negative against eps: at k=1 on B_6, t=3 vs 7, 27<49, reverse FAILS -- the early 2->3 hop (1,1,0)->(1,1,1) is exactly what eps prices, and that hop is the k=1 body geodesic. Also states cross-rule that 'phi matches mu at k=1, 7, 13', corroborating #6804. Same wording defect as #6794: the note says 'the small-k bar is not killed' and the runner prints PASS: small-k-bar-not-killed for what i",
+ "science": "Forcing negative against eps: at k=1 on B_6, t=3 vs 7, 27<49, reverse FAILS -- the early 2->3 hop (1,1,0)->(1,1,1) is exactly what eps prices, and that hop is the k=1 body geodesic. Also states cross-rule that 'phi matches mu at k=1, 7, 13', corroborating #6804. Same wording defect as #6794: the note says 'the small-k bar is not killed' and the runner prints PASS: small-k-bar-not-killed for what is a failure of the rule.",
  "forcing": false,
  "verdict_pair": "reverse=NO (same-k k=1, 27 < 49) face=n/a",
  "source": {

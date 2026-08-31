@@ -3,7 +3,7 @@
  "title": "feat(ex0c2): cov2 and cov4 of (0,0,1,1,0)",
  "science": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,f",
+ "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6521,
   "branch": "physics-loop/toe-lphys-block-ex0c2-20260815"

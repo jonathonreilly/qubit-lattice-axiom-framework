@@ -1,9 +1,9 @@
 {
  "id": "pr-6611",
  "title": "feat(c5q4): cov5>0 is not Q4; positivity implies Q4",
- "science": "DEFECTIVE MEMBER - a cluster of unchecked copy-paste errors from the cov3 sibling, plus a self-contradiction. (a) The note lists (1,1,0,0,0) among the three Q4-true maps with cov5=0 and then two paragraphs later says the same map 'has cov5 = 4'. (b) Its framing premise 'cov5>0 is not Q10 and positivity does not imply Q10, unique Q10-false positive (1,1,0,0,0)' is refuted by sibling #6589, which co",
+ "science": "DEFECTIVE MEMBER - a cluster of unchecked copy-paste errors from the cov3 sibling, plus a self-contradiction. (a) The note lists (1,1,0,0,0) among the three Q4-true maps with cov5=0 and then two paragraphs later says the same map 'has cov5 = 4'. (b) Its framing premise 'cov5>0 is not Q10 and positivity does not imply Q10, unique Q10-false positive (1,1,0,0,0)' is refuted by sibling #6589, which computes cov5>0 implies Q10 (fn=0, N_pos=N_both=21) - the premise is c3q10's k=3 result relabelled k=5. (c) N8 states the triple as (20,24,20) contradicting Theorem 2's (21,24,21) in the same note. (d) 'cov5(f)=|{S:|S|=3 ...}|' and 'C(12,5)=792 subsets of size 3'. (e) lex-first miss (1,0,0,0,0) glossed as 'Q4 is true (adj2=1)' when that map has adj2=0, wt1=1. (f) runner cache PASS line says 'four Q4-true maps have cov5=0' while the constant tuple has three and N_mismatch=3; per_mode says '220 5-site seeds' (220 is the 3-site count); claim-scope statement says '3-site'. The verified result itself (pos_implies_Q4=1, N_pos=N_both=21, N_Q4=24) is fine - the prose around it is not.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4=1, N_pos=21, N_Q4=24, N_both=21, N_mismatch=3)",
  "source": {
   "pr": 6611,
   "branch": "physics-loop/toe-lphys-block-c5q4-20260815"

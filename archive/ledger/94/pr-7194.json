@@ -1,7 +1,7 @@
 {
  "id": "pr-7194",
  "title": "feat(nszparzinc): z-axis opposite-lock z-probe same-tick union own-lock: reverse HOLD, face HOLD",
- "science": "z-axis opposite-lock seed read on z-probes, so probe A=(0,0,1) IS a seed (t(A)=0, L(A)=-e_1). One of only three cells in the band where the union with L(q) is NOT a no-op, and the only kind where reverse_hold_channel=uses_L_A: the HOLD is destroyed if the probe's own lock is dropped. This isolates the exact condition under which the '\u222a own lock' generation is more than a rename of the previous one",
+ "science": "z-axis opposite-lock seed read on z-probes, so probe A=(0,0,1) IS a seed (t(A)=0, L(A)=-e_1). One of only three cells in the band where the union with L(q) is NOT a no-op, and the only kind where reverse_hold_channel=uses_L_A: the HOLD is destroyed if the probe's own lock is dropped. This isolates the exact condition under which the '\u222a own lock' generation is more than a rename of the previous one -- the probe must be a seed.",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=HOLD",
  "source": {

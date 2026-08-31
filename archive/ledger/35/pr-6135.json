@@ -1,7 +1,7 @@
 {
  "id": "pr-6135",
  "title": "science: derive repaired-edge IR Einstein and conditional TT sector",
- "science": "Block 44: eliminates all five nonmetric complete-edge directions by their stationary equations and reconstructs minus one-half the Euclidean linearized Einstein tensor on all ten quadratic momentum monomials (max entry error 2.4e-14) with verified linear Bianchi identity and the inherited h_tt=2 residue; under the explicitly conditional Lorentzian continuation, exactly two TT light-cone modes with",
+ "science": "Block 44: eliminates all five nonmetric complete-edge directions by their stationary equations and reconstructs minus one-half the Euclidean linearized Einstein tensor on all ten quadratic momentum monomials (max entry error 2.4e-14) with verified linear Bianchi identity and the inherited h_tt=2 residue; under the explicitly conditional Lorentzian continuation, exactly two TT light-cone modes with quadratic form (omega^2-k^2)/4. The chain's first Einstein reconstruction, later reinterpreted (not superseded) by Block 59's emergent-IR reframing.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

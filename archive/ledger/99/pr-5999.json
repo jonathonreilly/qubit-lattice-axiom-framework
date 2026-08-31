@@ -1,7 +1,7 @@
 {
  "id": "pr-5999",
  "title": "[physics-loop][review-loop] toe-time blockM11 (STACKED on #5997) \u2014 Cycle 931: bounded theorem \u2014 the additivity identity is derived: the pair",
- "science": "The pair-complement theorem: with global purity, exhausting frozen partition, and Z-basis pointer conditioning, C_ab + C_Rb = 2 sum_z p_z S(rho_Fb^z) holds branch-by-branch exactly with no assumption on weights, field, or time; arm exchangeability collapses the per-pair law to one sequence C(ma,mb)=s(ma)+s(mb)-s(ma+mb) with reflection - deriving all of 929 measured laws. Holds without exchangeabil",
+ "science": "The pair-complement theorem: with global purity, exhausting frozen partition, and Z-basis pointer conditioning, C_ab + C_Rb = 2 sum_z p_z S(rho_Fb^z) holds branch-by-branch exactly with no assumption on weights, field, or time; arm exchangeability collapses the per-pair law to one sequence C(ma,mb)=s(ma)+s(mb)-s(ma+mb) with reflection - deriving all of 929 measured laws. Holds without exchangeability (H1-H3 only), so usable off symmetric geometries; the relations layer every later M block composes.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

@@ -1,9 +1,9 @@
 {
  "id": "pr-6319",
  "title": "feat(irrep3): only the standard 3 of S4 lands in SO(3)",
- "science": "Bounded_theorem note, no probe cell. Standalone fully-witnessed proof of the 3-vs-3(x)sgn step that #6276 asserted: with G the det=+1 signed permutation matrices and phi:G->S_4 the action on the four space-diagonal lines, the explicit witness R=90deg about the x-axis has phi(R) = the four-cycle (0 2 3 1), which is ODD, so the twist 3'(R)=sgn(phi(R))R = -R has det(-R)=(-1)^3 det R = -1 and leaves S",
+ "science": "Bounded_theorem note, no probe cell. Standalone fully-witnessed proof of the 3-vs-3(x)sgn step that #6276 asserted: with G the det=+1 signed permutation matrices and phi:G->S_4 the action on the four space-diagonal lines, the explicit witness R=90deg about the x-axis has phi(R) = the four-cycle (0 2 3 1), which is ODD, so the twist 3'(R)=sgn(phi(R))R = -R has det(-R)=(-1)^3 det R = -1 and leaves SO(3). Hence 3' is not a homomorphism G->SO(3) and only the standard 3 lands there. Includes an even companion S (120deg about l0, a 3-cycle, sign +1) confirming the obstruction is confined to odd elements. Carries a 'Promotion Value Gate (V1-V5)' section absent from every other member of this batch. 28/28 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=28 FAIL=0)",
  "source": {
   "pr": 6319,
   "branch": "physics-loop/toe-lphys-block-irrep3-20260814"

@@ -1,7 +1,7 @@
 {
  "id": "pr-5945",
  "title": "[physics-loop][review-loop] toe-time blockG12 (STACKED on #5944) \u2014 Cycle 887: bounded theorem \u2014 the window freedom sized; containment derive",
- "science": "Sizes the window freedom exactly (sufficiency theorem + injectivity lemma: 15/1023/2097151 rotation-invariant Minkowski windows at radius 1/2/3, with four further admissible classes and no closure), derives support containment from the readout-additivity clause, and proves the extent is gauge at linear order with minimality absent. The gauge claim is broken at quadratic order by 892; the counting ",
+ "science": "Sizes the window freedom exactly (sufficiency theorem + injectivity lemma: 15/1023/2097151 rotation-invariant Minkowski windows at radius 1/2/3, with four further admissible classes and no closure), derives support containment from the readout-additivity clause, and proves the extent is gauge at linear order with minimality absent. The gauge claim is broken at quadratic order by 892; the counting is transported to barriers by 893; the ablation is strengthened to exact 0 by 941; the window row lives in the G29 ledger.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

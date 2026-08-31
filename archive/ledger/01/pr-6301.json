@@ -1,9 +1,9 @@
 {
  "id": "pr-6301",
  "title": "feat(oppcan): n=0 cells never form",
- "science": "Bounded_theorem note, no probe cell. Forcing negative against the blocker 'any occupied neighbor forms': on a 3-site line with BOTH ends locked the center has n_x=0 and the step is the identity -- opposite occupied neighbors CANCEL. So formation under L0 is a signed DIFFERENCE, not an OR/monotone function of occupied neighbors, which means the update is not monotone in occupancy and a fully surrou",
+ "science": "Bounded_theorem note, no probe cell. Forcing negative against the blocker 'any occupied neighbor forms': on a 3-site line with BOTH ends locked the center has n_x=0 and the step is the identity -- opposite occupied neighbors CANCEL. So formation under L0 is a signed DIFFERENCE, not an OR/monotone function of occupied neighbors, which means the update is not monotone in occupancy and a fully surrounded site can be permanently frozen. Census: exactly 8 of the 64 six-bit cells have k=0. This is the structural reason the campaign's later 'opposite-lock (nsopp)' seeds behave as they do. 12/12 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=12 FAIL=0)",
  "source": {
   "pr": 6301,
   "branch": "physics-loop/toe-lphys-block-oppcan-20260814"

@@ -1,7 +1,7 @@
 {
  "id": "pr-7357",
  "title": "feat(nm2sl12z): 1-in 2-out split on two-axis same-lock z-probes: reverse fails, face HOLD",
- "science": "Two-axis SAME-LOCK seed, z-probes, 1-in 2-out split. PROVENANCE/CHECKER DEFECT: the note is a copy of the opposite-seed PR #7308 with only the data block swapped. target_claim_id names 'two_axis_opposite...' (claim_id says same_lock); the Seed paragraph declares 'two disjoint OPPOSITE pairs' with locks -e_1/-e_2 while the runner's actual seed is +e_1/+e_1 and +e_2/+e_2; the obligation table assert",
+ "science": "Two-axis SAME-LOCK seed, z-probes, 1-in 2-out split. PROVENANCE/CHECKER DEFECT: the note is a copy of the opposite-seed PR #7308 with only the data block swapped. target_claim_id names 'two_axis_opposite...' (claim_id says same_lock); the Seed paragraph declares 'two disjoint OPPOSITE pairs' with locks -e_1/-e_2 while the runner's actual seed is +e_1/+e_1 and +e_2/+e_2; the obligation table asserts 'cover HOLD at each probe', 'split HOLD at each probe', reverse hold, face hold; the N8 echo and the runner description repeat 'split HOLD at A,B,C,D, reverse hold'. All contradict its own Theorem 2 (reverse=fail, cover(A)=fail). No check tests the metadata, the seed statement, the obligation table or N8, so it reports 65/65 PASS.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=HOLD",
  "source": {

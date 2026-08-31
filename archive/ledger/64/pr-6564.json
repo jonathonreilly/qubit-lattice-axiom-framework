@@ -1,9 +1,9 @@
 {
  "id": "pr-6564",
  "title": "feat(mix3c8): mixed3 is not free for cov8 inside Q8",
- "science": "Exhaustive pairwise result over the whole Q8-true class: of the 15 mixed3-pairs among the 30 maps with Q8=(wt1 or opp2 or adj2 or vertex3), only 1 has equal cov8 (the opp2-only pair, both cov8=1) and 14 differ; lex-first split (0,0,0,1,0)=44 vs (0,0,0,1,1)=132. Bounds the earlier mixed3-freedom results: freedom of the k=8 positivity selector from mixed3 (#6539) does not extend to the coverage inte",
+ "science": "Exhaustive pairwise result over the whole Q8-true class: of the 15 mixed3-pairs among the 30 maps with Q8=(wt1 or opp2 or adj2 or vertex3), only 1 has equal cov8 (the opp2-only pair, both cov8=1) and 14 differ; lex-first split (0,0,0,1,0)=44 vs (0,0,0,1,1)=132. Bounds the earlier mixed3-freedom results: freedom of the k=8 positivity selector from mixed3 (#6539) does not extend to the coverage integer.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut Q8 mixed3-pair cov8 comparison",
+ "verdict_pair": "reverse=none face=none (f_cut Q8 mixed3-pair cov8 comparison; no (reverse,face) pair stated)",
  "source": {
   "pr": 6564,
   "branch": "physics-loop/toe-lphys-block-mix3c8-20260815"

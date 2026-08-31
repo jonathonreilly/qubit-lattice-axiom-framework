@@ -1,7 +1,7 @@
 {
  "id": "pr-7133",
  "title": "feat(nsexint): nsopp B3 interval census N_space=8 N_null=3 N_time=108",
- "science": "The only causal-geometry measurement in the band and the strongest single result: a complete interval census s^2=t^2-|x|^2 over every formed nonzero site of B_3(0) under the opposite-lock seed. N_formed=119 (exactly three sites, (+-3,0,0) and (0,3,0), are permanently unreachable because the perp rule forbids the only step that reaches them), split N_space=8, N_null=3, N_time=108. The 8 spacelike s",
+ "science": "The only causal-geometry measurement in the band and the strongest single result: a complete interval census s^2=t^2-|x|^2 over every formed nonzero site of B_3(0) under the opposite-lock seed. N_formed=119 (exactly three sites, (+-3,0,0) and (0,3,0), are permanently unreachable because the perp rule forbids the only step that reaches them), split N_space=8, N_null=3, N_time=108. The 8 spacelike sites are exactly the causal shadow of placing a second record at distance 1 at tick 0, and they close by tick 2. Theorem 3 gives an anisotropic cone: (1,0,0) sits at distance 1 but forms only at t=3 (s^2=8, timelike) because axial steps along the lock axis are forbidden, so the lock axis is a strictly slow direction. The perp two-site seed gives N_space=9 instead, so the causal signature separates seed classes.",
  "forcing": false,
  "verdict_pair": "none",
  "source": {

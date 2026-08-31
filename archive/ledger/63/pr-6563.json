@@ -3,7 +3,7 @@
  "title": "feat(q66c6): cov6 of Q66 is 904 versus 924",
  "science": "reverse=none face=none (f_cut two-map cov6 census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut two-map cov6 census; no (rever",
+ "verdict_pair": "reverse=none face=none (f_cut two-map cov6 census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6563,
   "branch": "physics-loop/toe-lphys-block-q66c6-20260815"

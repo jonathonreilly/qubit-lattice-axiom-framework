@@ -1,9 +1,9 @@
 {
  "id": "pr-6408",
  "title": "feat(andline): AND of L1 remaining bits among F_cut line-seed fillers is unique",
- "science": "#6404's AND repeated on a second seed: from the 3-site long-axis line {(0,0,0),(1,0,0),(2,0,0)}, N_fill_line=8 and N_and_line=1. The one new fact is seed-independence - the F_cut filler set is the SAME eight maps for the 1-site and the 3-site line seed, though the histories differ ((3,9,12) at T=2 here vs (1,4,8,11,12) at T=4 from the 1-site seed). The AND result is circular for the same reason as",
+ "science": "#6404's AND repeated on a second seed: from the 3-site long-axis line {(0,0,0),(1,0,0),(2,0,0)}, N_fill_line=8 and N_and_line=1. The one new fact is seed-independence - the F_cut filler set is the SAME eight maps for the 1-site and the 3-site line seed, though the histories differ ((3,9,12) at T=2 here vs (1,4,8,11,12) at T=4 from the 1-site seed). The AND result is circular for the same reason as #6404, and this note's own N7 concedes it: 'the eight line-seed fillers happen to be the same eight (wt1,adj2)=(1,1) maps that fill from 1-site, so repeating the AND on a second seed is the same count.'",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6408,
   "branch": "physics-loop/toe-lphys-block-andline-20260815"

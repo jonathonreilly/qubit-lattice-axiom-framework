@@ -1,7 +1,7 @@
 {
  "id": "pr-7711",
  "title": "feat(nm2frm1s3rd3): distance-3 neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1 on three-axis opposite near-face see",
- "science": "Distance-3 readout of the 1-step -e3 on the near-face seed, the third HOLD/HOLD member. It mixes both neighbourhood conventions in one script (tau-bounded 6-NN, unbounded distance shells); its own log prints d3_count=33 while only 21 sites are formed at the probe's cut tau=1, so the face HOLD rests on witnesses recorded AFTER the cut. Under the band's own cut semantics the face bit at (0,0,1) has ",
+ "science": "Distance-3 readout of the 1-step -e3 on the near-face seed, the third HOLD/HOLD member. It mixes both neighbourhood conventions in one script (tau-bounded 6-NN, unbounded distance shells); its own log prints d3_count=33 while only 21 sites are formed at the probe's cut tau=1, so the face HOLD rests on witnesses recorded AFTER the cut. Under the band's own cut semantics the face bit at (0,0,1) has zero witnesses and the headline becomes reverse HOLD / face fails.",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=HOLD",
  "source": {

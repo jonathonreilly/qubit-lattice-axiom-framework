@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the f_cut coverage/selector censuses (toe-lphys-20260812, ~#6476–#6567)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 The band that IS the true census family (44/44 template-content). Full-diff
 read of every member (densify 2026-08-31). No (reverse,face) verdicts — these
 are f_cut coverage/selector censuses on the 32 cube-covariant cut maps.
@@ -38,13 +45,14 @@ non-monotonicity pair (#6493 + the k=7 drop), #6524's completed refutation.
 
 ## Second census half (~#6568–#6622, fread_03) — the complete selector law
 
-Read together, the 44 "X is not Y" censuses CONTAIN a complete exact selector
-law for every seed size on the two-cube, stated by no member:
+Read together, the 44 "X is not Y" members' printed censuses assemble into a
+complete selector law for every seed size on the two-cube — assembled by the
+consolidation reader from the members' printed values, stated by no member:
 k=1 iff Q_* (wt1∧adj2) · k=2 iff wt1∧Q10 · k=3 ⟹Q4/Q6/Q8, ⇏Q10 (menu has no
 k=3 member) · k=4 iff Q4 · k=5 adj2∨(wt1∧v3)∨(wt1∧opp2∧m3) · k=7 iff adj2∨v3
 · k=8 iff Q8 · k=9 iff adj2∨v3∨(opp2∧m3) · k=10 iff Q10 · k=11 iff adj2∨v3 ·
 k=12 degenerate (the seed is the patch, #6596).
-Consequences no note draws: (1) k=7 and k=11 are EXACTLY the 2-bit OR the
+Consequences no note draws (reader-derived from the members' printed values): (1) k=7 and k=11 are EXACTLY the 2-bit OR the
 band's own summaries say was not found; (2) every datum fits the closed form
 **cov11(f) = 4·adj2 + 8·vertex3** on all 32 maps (from #6582/#6616/#6602/
 #6613) — making the k=11 census a corollary; (3) positivity is non-monotone

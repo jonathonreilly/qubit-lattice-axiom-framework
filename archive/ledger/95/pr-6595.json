@@ -3,7 +3,7 @@
  "title": "feat(qstartot8): among Q_star, Max(8) is unique f1, not vertex3 and mixed3",
  "science": "Positive uniqueness plus totality: m8=495 equals the full eight-site seed count, so f1=(1,1,1,1,1) fills EVERY eight-site seed and is the unique maximizer in Q_*; f_L1=(1,0,1,1,1) misses exactly one seed (cov8=494). Full eight-line cov8 census (158,182,446,494,175,183,471,495), whose (1,1,1,1,0)=471 and (1,1,1,1,1)=495 entries independently reproduce #6568's Q66 pair.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (maximizer test; max_iff_Q=False, N_max",
+ "verdict_pair": "reverse=N/A face=N/A (maximizer test; max_iff_Q=False, N_max=1, N_Q=2, N_both=1, misses=[(1,0,1,1,1)])",
  "source": {
   "pr": 6595,
   "branch": "physics-loop/toe-lphys-block-qstartot8-20260815"

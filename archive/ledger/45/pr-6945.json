@@ -1,7 +1,7 @@
 {
  "id": "pr-6945",
  "title": "feat(d3k14): max\u22653 out-face same-k restores k=14: t=30 vs t=46",
- "science": "d3 = rho3 + cost 3 on a 2->2 grow with source max >= 3; one Dijkstra on B_42(0) gives (30,46), reverse holds. Beyond template and important: the note itself records that this pair 'coincides with the df pair and with the omega pair' -- i.e. floors 2, 3 and no-floor all produce the identical k=14 arrivals -- and defends non-duplication only by exhibiting one differing hop-cost, not a differing comp",
+ "science": "d3 = rho3 + cost 3 on a 2->2 grow with source max >= 3; one Dijkstra on B_42(0) gives (30,46), reverse holds. Beyond template and important: the note itself records that this pair 'coincides with the df pair and with the omega pair' -- i.e. floors 2, 3 and no-floor all produce the identical k=14 arrivals -- and defends non-duplication only by exhibiting one differing hop-cost, not a differing computed value.",
  "forcing": false,
  "verdict_pair": "reverse=YES (2700>2116 at k=14; band bit) face=absent",
  "source": {

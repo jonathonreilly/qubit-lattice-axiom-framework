@@ -1,7 +1,7 @@
 {
  "id": "pr-6634",
  "title": "feat(wav2run): chiral tick-2 pair does not fire on the two-cube",
- "science": "Negative execution result, not a probe cell: running occupancy tick-1 (dipole n!=0, three axis sites lock '-') then the July-3 k=3 chiral pair as tick-2 on the twelve-vertex two-cube with off-patch o=0 gives N_new=0 - every unread site sees at least four '0' letters so no site is handed fully-mixed and the pair never fires; permanence L_1 subset L_2 verified. The note's own N7 steelman concedes th",
+ "science": "Negative execution result, not a probe cell: running occupancy tick-1 (dipole n!=0, three axis sites lock '-') then the July-3 k=3 chiral pair as tick-2 on the twelve-vertex two-cube with off-patch o=0 gives N_new=0 - every unread site sees at least four '0' letters so no site is handed fully-mixed and the pair never fires; permanence L_1 subset L_2 verified. The note's own N7 steelman concedes the reported 'P-odd lock set' comes from the seed plus off-patch o=0, not from the pair firing, so the P-odd headline is vacuous here. Uses the correct dipole f_L1 (contrast #6632).",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

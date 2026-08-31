@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the two-axis-seed frontier (toe-lphys-20260812, #7296–#7385)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 The nm2* two-axis grid (2 seeds × 3 frames × 6 readouts) + the five split-
 introduction PRs. Reader reimplemented the process; all 44 reproduced exactly.
 

@@ -1,9 +1,9 @@
 {
  "id": "pr-6582",
  "title": "feat(qstarc11): every Q_star map has cov11>0",
- "science": "Derives a CLOSED-FORM coverage identity, not just an enumeration: on Q_*, cov11 = 4 + 8*vertex3 (runner check closed_form_4_plus_8_vertex3=True), with a structural proof - an 11-site seed omits one vertex, the 8 end vertices (x in {0,2}) present orbit type (3,0,0)=vertex3 and the 4 mid vertices (x=1) present (2,1,0)=complement of adj2, so complement-evenness of F_cut makes mid-omitting fill exactl",
+ "science": "Derives a CLOSED-FORM coverage identity, not just an enumeration: on Q_*, cov11 = 4 + 8*vertex3 (runner check closed_form_4_plus_8_vertex3=True), with a structural proof - an 11-site seed omits one vertex, the 8 end vertices (x in {0,2}) present orbit type (3,0,0)=vertex3 and the 4 mid vertices (x=1) present (2,1,0)=complement of adj2, so complement-evenness of F_cut makes mid-omitting fill exactly adj2=1 and end-omitting fill exactly vertex3=1. Neither the title nor the body mentions this closed form.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (cover census; N_pos11=8, pos11_constan",
+ "verdict_pair": "reverse=N/A face=N/A (cover census; N_pos11=8, pos11_constant=True, cov11 values 4,4,12,12,4,4,12,12)",
  "source": {
   "pr": 6582,
   "branch": "physics-loop/toe-lphys-block-qstarc11-20260815"

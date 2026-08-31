@@ -1,7 +1,7 @@
 {
  "id": "pr-7224",
  "title": "feat(nmclopp): exist-choice Cl(3,0) from M on #7167: reverse HOLD, face HOLD",
- "science": "Exact enumeration on B_3(0) of the own incoming sets M at the four vertices of the face plaquette Q and the reverse 4-cycle R of #7167/#7208, with each picked lock mapped to a Cl(3,0) unit: N_picks(Q)=9 with N_hold(Q)=5 and N_picks(R)=3 with N_hold(R)=2, so exist-choice reverse and face both HOLD while the unique-L product is UNDEFINED at the mixed vertices. 530-line note, 64/64 runner checks pass",
+ "science": "Exact enumeration on B_3(0) of the own incoming sets M at the four vertices of the face plaquette Q and the reverse 4-cycle R of #7167/#7208, with each picked lock mapped to a Cl(3,0) unit: N_picks(Q)=9 with N_hold(Q)=5 and N_picks(R)=3 with N_hold(R)=2, so exist-choice reverse and face both HOLD while the unique-L product is UNDEFINED at the mixed vertices. 530-line note, 64/64 runner checks pass.",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=HOLD",
  "source": {

@@ -1,9 +1,9 @@
 {
  "id": "pr-6399",
  "title": "feat(fillcut): eight F_cut maps fill from one site",
- "science": "The strongest result of this batch and a genuine cross-cell synthesis: it intersects the STATIC three-cut class of #6391 with the DYNAMIC fill census of #6393. Of the 32 members of F_cut, exactly N=8 fill the two-cube from the 1-site seed - so imposing the three symmetry cuts AND the fill requirement together still leaves 8 candidates and does not select f_L1. Exact lock histories: f_L1 (1,4,8,11,",
+ "science": "The strongest result of this batch and a genuine cross-cell synthesis: it intersects the STATIC three-cut class of #6391 with the DYNAMIC fill census of #6393. Of the 32 members of F_cut, exactly N=8 fill the two-cube from the 1-site seed - so imposing the three symmetry cuts AND the fill requirement together still leaves 8 candidates and does not select f_L1. Exact lock histories: f_L1 (1,4,8,11,12) T=4; Hamming parity lies in F_cut and halts at 9 with (1,4,5,7,9) T=4; second filler f_diamond (1<=u<=2) fills with (1,4,8,10,11,12) T=5, differing from f_L1 only on the three-unbalanced-axis orbit. Also states the exact complement identity on axis types: complement sends (u,b,e) to (u,e,b).",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6399,
   "branch": "physics-loop/toe-lphys-block-fillcut-20260815"

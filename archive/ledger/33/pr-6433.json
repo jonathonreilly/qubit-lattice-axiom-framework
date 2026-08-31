@@ -1,9 +1,9 @@
 {
  "id": "pr-6433",
  "title": "feat(opp0cover): rank 2-site coverage among F_cut maps with opp2=0",
- "science": "Quantifies the selector trade-off that #6431 opened. Restricting F_cut to the opp2=0 subclass F0 (16 maps) and ranking by two-site coverage: max m0=62 attained by N0=2 maps, (1,0,1,1,1)=f_L1 and (1,0,1,1,0), tied and differing only on mixed3. So under opp2-silence f_L1 IS a coverage maximizer but not a unique one. The number that matters is cov(f_L1)=62 < 66: imposing 'a filled axis does not form'",
+ "science": "Quantifies the selector trade-off that #6431 opened. Restricting F_cut to the opp2=0 subclass F0 (16 maps) and ranking by two-site coverage: max m0=62 attained by N0=2 maps, (1,0,1,1,1)=f_L1 and (1,0,1,1,0), tied and differing only on mixed3. So under opp2-silence f_L1 IS a coverage maximizer but not a unique one. The number that matters is cov(f_L1)=62 < 66: imposing 'a filled axis does not form' costs exactly 4 of the 66 two-site seeds relative to the unrestricted maximizers of #6431, which have opp2=1. That is an explicit price tag on the opp2 motivation, and taken with #6431 it shows the coverage selector and the balanced-axis-silence motivation pull in opposite directions on the same bit.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6433,
   "branch": "physics-loop/toe-lphys-block-opp0cover-20260815"

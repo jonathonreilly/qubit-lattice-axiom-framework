@@ -1,7 +1,7 @@
 {
  "id": "pr-6137",
  "title": "science: localize Record and Lorentzian selection walls",
- "science": "Block 45: constructs the Record and Lorentzian selection walls \u2014 permanent-Record kernels at formation probabilities 1/3 and 2/3 with identical conditionals but different count laws, parallel vs sequential formation with identical marginals but correlations 0 vs 3/5, and a gauge-consistent Einstein clock family sharing the static operator but with TT kinetic coefficients 1/16, 1/4, 1 \u2014 proving for",
+ "science": "Block 45: constructs the Record and Lorentzian selection walls \u2014 permanent-Record kernels at formation probabilities 1/3 and 2/3 with identical conditionals but different count laws, parallel vs sequential formation with identical marginals but correlations 0 vs 3/5, and a gauge-consistent Einstein clock family sharing the static operator but with TT kinetic coefficients 1/16, 1/4, 1 \u2014 proving formation, clock, and constraint controls locally independent.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

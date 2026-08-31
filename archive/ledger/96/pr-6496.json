@@ -3,7 +3,7 @@
  "title": "feat(c10firstfill): lex-first seed that (1,1,0,0,0) fills",
  "science": "reverse=none face=none (f_cut first-fill census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut first-fill census; no (reverse",
+ "verdict_pair": "reverse=none face=none (f_cut first-fill census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6496,
   "branch": "physics-loop/toe-lphys-block-c10firstfill-20260815"

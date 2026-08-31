@@ -1,9 +1,9 @@
 {
  "id": "pr-6822",
  "title": "feat(ridface): ridge-slide face reverse holds k=1..8 on B16",
- "science": "FACE-DIAGONAL result and the band's one confirmed defect. Claims rho3 reverses the face pair ((2k,0,0),(k,k,0)) at EVERY available k=1..8 on B_16 (36>32, 144>128, 324>200, 400>288, 484>392, 576>512, 676>648, 1024>800), where mu fails at k=6,7 -- that would refute the prior band's 'face reverse dies at k>=5'. But the k=8 bit is a BALL-WALL ARTIFACT: (16,0,0) sits on the B_16 wall, its cheap corrido",
+ "science": "FACE-DIAGONAL result and the band's one confirmed defect. Claims rho3 reverses the face pair ((2k,0,0),(k,k,0)) at EVERY available k=1..8 on B_16 (36>32, 144>128, 324>200, 400>288, 484>392, 576>512, 676>648, 1024>800), where mu fails at k=6,7 -- that would refute the prior band's 'face reverse dies at k>=5'. But the k=8 bit is a BALL-WALL ARTIFACT: (16,0,0) sits on the B_16 wall, its cheap corridor route via (16,-2,0) is out of ball, so t(16,0,0) inflates from the true 28 to 32. I re-ran the rho3 Dijkstra: on R=18/20/24 t(16,0,0)=28 and the k=8 face comparison flips to 784 < 800 = FAILS. The note even discloses the wall mechanism ('the only in-ball neighbor of (16,0,0) is (15,0,0)') without drawing the consequence, and the runner machine-asserts PASS: all-k-hold on the artifact. The band's own #6832 reports t(16,0,0)=28 on B_18 -- an unreconciled contradiction one PR away.",
  "forcing": false,
- "verdict_pair": "reverse=YES claimed at k=1..8 (face pair); k=8 bit (1024>800",
+ "verdict_pair": "reverse=YES claimed at k=1..8 (face pair); k=8 bit (1024>800) is a B_16 ball-wall artifact, true value 784<800 = NO",
  "source": {
   "pr": 6822,
   "branch": "physics-loop/toe-lphys-block-ridface-20260815"

@@ -1,7 +1,7 @@
 {
  "id": "pr-7205",
  "title": "feat(nszmenu): own incoming set on #7188: reverse fails, face fails",
- "science": "LOAD-BEARING NEGATIVE. First cell to read the probe's OWN incoming set M instead of the neighbourhood S^+, on #7188's process. M(A)={+e2,-e2}, M(B)={+e1}: no opposite pair, so reverse AND face both fail -- while the same runner prints S+_reverse=hold, S+_face=hold on the identical process. This is the band's separation result: the reverse relation is not a function of the probe's own record conten",
+ "science": "LOAD-BEARING NEGATIVE. First cell to read the probe's OWN incoming set M instead of the neighbourhood S^+, on #7188's process. M(A)={+e2,-e2}, M(B)={+e1}: no opposite pair, so reverse AND face both fail -- while the same runner prints S+_reverse=hold, S+_face=hold on the identical process. This is the band's separation result: the reverse relation is not a function of the probe's own record content; it is carried entirely by neighbour records. It bears directly on the Record clause 'a readout value is determined by record content alone'.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

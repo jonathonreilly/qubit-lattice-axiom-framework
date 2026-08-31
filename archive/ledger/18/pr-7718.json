@@ -1,7 +1,7 @@
 {
  "id": "pr-7718",
  "title": "feat(nm2frm2mlx3): L-path cyclic-frame transport -e1 then -e3 at t+1 on three-axis opposite near-face seed: reverse fails, face fails",
- "science": "Bare L-path -e1 then -e3 on the three-axis near-face seed. Carries the band's sharpest single sentence: 'not leftover of the L-path -e3 then -e1 on this seed: that reverse HOLDs and that face fails, while this opposite order fails on both' -- i.e. the two hops do not commute in the verdict. That reads as curvature but is not: I proved the edge predicate is an identity given both endpoint frames, s",
+ "science": "Bare L-path -e1 then -e3 on the three-axis near-face seed. Carries the band's sharpest single sentence: 'not leftover of the L-path -e3 then -e1 on this seed: that reverse HOLDs and that face fails, while this opposite order fails on both' -- i.e. the two hops do not commute in the verdict. That reads as curvature but is not: I proved the edge predicate is an identity given both endpoint frames, so the whole order-dependence is the difference between the two corner sites' split status. Recomputed exact.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

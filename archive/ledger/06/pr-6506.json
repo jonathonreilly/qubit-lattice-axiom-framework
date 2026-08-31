@@ -3,7 +3,7 @@
  "title": "feat(f10c4n): 4-site coverage of (1,1,0,0,0)",
  "science": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,f",
+ "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6506,
   "branch": "physics-loop/toe-lphys-block-f10c4n-20260815"

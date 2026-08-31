@@ -1,7 +1,7 @@
 {
  "id": "pr-7724",
  "title": "physics: isolate L24 prefix channel boundary",
- "science": "Proves the Block-194 PVM is an exact normalized one-shot Lueders instrument with faithful M2 dilation, then bounds three response-blind inter-crossing constructions: direct Schur shift (graph residual rank 2, negative OS-contraction witness), Gram-projected translations (composition fails at order 3), raw adjacent predictor (strict contraction, exact Clifford lift but no derived CP typing); two in",
+ "science": "Proves the Block-194 PVM is an exact normalized one-shot Lueders instrument with faithful M2 dilation, then bounds three response-blind inter-crossing constructions: direct Schur shift (graph residual rank 2, negative OS-contraction witness), Gram-projected translations (composition fails at order 3), raw adjacent predictor (strict contraction, exact Clifford lift but no derived CP typing); two inequivalent covariant CPTP completions produce inequivalent two-event cylinders, so no tested construction selects the physical inter-crossing channel.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

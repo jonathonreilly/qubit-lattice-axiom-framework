@@ -1,7 +1,7 @@
 {
  "id": "pr-6149",
  "title": "science: isolate physical M2 grading decoder",
- "science": "Block 56: solves the vector-decoder equivariance system on the one-site Pauli algebra exactly, exhibits the trivial and Pauli-adjoint actions as two exact extensions of the same current-axiom-compatible central distribution (current-text nonselection witness, decoder ranks 8/1 vs 9/0), and encodes four roles times six directions as 24 central-tagged Pauli Record contents \u2014 clearing M2(C) storage c",
+ "science": "Block 56: solves the vector-decoder equivariance system on the one-site Pauli algebra exactly, exhibits the trivial and Pauli-adjoint actions as two exact extensions of the same current-axiom-compatible central distribution (current-text nonselection witness, decoder ranks 8/1 vs 9/0), and encodes four roles times six directions as 24 central-tagged Pauli Record contents \u2014 clearing M2(C) storage capacity as a Root-B obstruction.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

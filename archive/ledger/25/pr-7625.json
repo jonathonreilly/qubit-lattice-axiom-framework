@@ -1,7 +1,7 @@
 {
  "id": "pr-7625",
  "title": "feat(nm2frm1s3z): directed 1-step cyclic-frame transport along -e3 at t+1 on three-axis opposite near-face seed: reverse HOLD, face HOLD",
- "science": "Same cell as #7622 with a third seed pair added at (2,0,0)/(2,1,0) ('near-face'). I recomputed both histories: the extra pair changes 44 downstream sites but leaves ALL FOUR probe frames bit-identical to the two-axis opposite seed, and gives the identical verdict pair in 18/18 (direction x length) cells under both tau conventions. So this and its nine near-face siblings are the same experiment as ",
+ "science": "Same cell as #7622 with a third seed pair added at (2,0,0)/(2,1,0) ('near-face'). I recomputed both histories: the extra pair changes 44 downstream sites but leaves ALL FOUR probe frames bit-identical to the two-axis opposite seed, and gives the identical verdict pair in 18/18 (direction x length) cells under both tau conventions. So this and its nine near-face siblings are the same experiment as their two-axis counterparts at the probes. Its body claims the seed 'kills scalar Orient #7475' but this runner computes no scalar readout.",
  "forcing": false,
  "verdict_pair": "reverse=hold face=hold",
  "source": {

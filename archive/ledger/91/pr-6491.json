@@ -3,7 +3,7 @@
  "title": "feat(c00l1diff): first |S|<=3 split of L1 vs (1,0,0,0,0)",
  "science": "reverse=none face=none (f_cut fill-split census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut fill-split census; no (reverse",
+ "verdict_pair": "reverse=none face=none (f_cut fill-split census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6491,
   "branch": "physics-loop/toe-lphys-block-c00l1diff-20260815"

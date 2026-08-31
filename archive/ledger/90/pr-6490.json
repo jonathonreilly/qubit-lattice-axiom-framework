@@ -3,7 +3,7 @@
  "title": "feat(wt1iff2): wt1 is not equivalent to positive two-site coverage",
  "science": "Refutes a proposed equivalence and states the correct characterization in prose: cov2>0 is NOT equivalent to wt1=1 (N_wt1=16, N_pos=14, N_both=14; counterexamples (1,0,0,0,0) and (1,1,0,0,0) stall at halt 10). One-way implication wt1=0 => cov2=0 holds, and the note states positive coverage needs wt1=1 AND at least one of adj2/vertex3/mixed3 - the exact selector later formalized by #6494.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut equivalence census; no (revers",
+ "verdict_pair": "reverse=none face=none (f_cut equivalence census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6490,
   "branch": "physics-loop/toe-lphys-block-wt1iff2-20260815"

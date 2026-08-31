@@ -3,7 +3,7 @@
  "title": "feat(p3bit3): no 3-bit remaining-bit Q equals cov3>0",
  "science": "Completes the #6514 exhaustive negative: none of 23 further candidates (all ten 3-bit ANDs N_Q=4, all ten 3-bit ORs N_Q=28, P N_Q=14, Q4 N_Q=24, Q1 N_Q=8) equals cov3>0, which has N_pos=20; combined with the nine 1-bit/wt1-AND candidates that is 32 refuted candidates. cov3>0 is provably not expressible in the displayed AND/OR menu, in contrast to the exact iffs found at k=1,2,4.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut selector search; no (reverse,f",
+ "verdict_pair": "reverse=none face=none (f_cut selector search; no (reverse,face) pair stated)",
  "source": {
   "pr": 6524,
   "branch": "physics-loop/toe-lphys-block-p3bit3-20260815"

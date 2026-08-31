@@ -1,7 +1,7 @@
 {
  "id": "pr-7354",
  "title": "[physics-loop][d4-common-action][bounded_theorem][bounded-support] derive Ward/TT survivor and mark boundary",
- "science": "Executes the capped full-band Schur regression (unique normalized left/right Schur graphs, positive reflection-even ports, rank-8 intertwiner failure) and constructs the d=4 first-order Dirac-Kahler common action Q=mI+i(d+d^T) with ten explicit metric vertices satisfying the total first-order Ward identity identically, two positive TT directions, and mark contexts that see only the mass-Hodge term",
+ "science": "Executes the capped full-band Schur regression (unique normalized left/right Schur graphs, positive reflection-even ports, rank-8 intertwiner failure) and constructs the d=4 first-order Dirac-Kahler common action Q=mI+i(d+d^T) with ten explicit metric vertices satisfying the total first-order Ward identity identically, two positive TT directions, and mark contexts that see only the mass-Hodge term. A new candidate action, unjoined to the Block-128 carrier.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

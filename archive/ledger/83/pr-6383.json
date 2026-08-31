@@ -1,9 +1,9 @@
 {
  "id": "pr-6383",
  "title": "feat(actneed): action required for projectors not k-class",
- "science": "Bounded_theorem note, no probe cell. OBJECT-SPLIT THEOREM that resolves the tension #6343 raised. It shows the question 'is a cube action on M_2 required?' has no single answer: (i) FORMATION does not use one; (ii) the occupancy label (S,k) does not use one -- (S,k) is a function of the six occupancy bits alone, invariant under every later-lock two-label swap (which sends n_mu -> -n_mu) and under ",
+ "science": "Bounded_theorem note, no probe cell. OBJECT-SPLIT THEOREM that resolves the tension #6343 raised. It shows the question 'is a cube action on M_2 required?' has no single answer: (i) FORMATION does not use one; (ii) the occupancy label (S,k) does not use one -- (S,k) is a function of the six occupancy bits alone, invariant under every later-lock two-label swap (which sends n_mu -> -n_mu) and under all eight sign patterns, with k = |n|^2 = |S| = |3 n_L1|^2 and the exact k-class census 8/24/24/8 for k=0,1,2,3; (iii) the rank-1 spectral projectors P=(I+u.sigma)/2 DO use one, because writing u.sigma requires an axis-Pauli pairing phi that is extra data, and a Pauli transposition moves P for every |S|=1 occupancy -- so NO occupancy-only map c -> P exists. Sharp corollaries: the later-lock label swap sends P to I-P, not P; and the accidental invariance of the totally symmetric n=(1,1,1) under axis permutation does not rescue an occupancy-only construction. 22/22 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=22 FAIL=0)",
  "source": {
   "pr": 6383,
   "branch": "physics-loop/toe-lphys-block-actneed-20260815"

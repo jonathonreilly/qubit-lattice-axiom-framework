@@ -1,7 +1,7 @@
 {
  "id": "pr-6668",
  "title": "feat(maskstab): no weight-4 occupancy admits a fair pair member",
- "science": "THE GENERAL NO-GO that subsumes the whole chirality thread, not a probe cell: over ALL 15 weight-4 occupancy masks, N_stab_ok = 0 on every row, so N_ok_masks = 0 - therefore NO nearest-neighbour-determined, G+-equivariant July-3-pair labeling exists on ANY 4-occupied six-star, not just the two/three-ball ones. Mechanism proved: the 3 masks that empty a whole axis have |Stab|=8 and N_pair_support=0",
+ "science": "THE GENERAL NO-GO that subsumes the whole chirality thread, not a probe cell: over ALL 15 weight-4 occupancy masks, N_stab_ok = 0 on every row, so N_ok_masks = 0 - therefore NO nearest-neighbour-determined, G+-equivariant July-3-pair labeling exists on ANY 4-occupied six-star, not just the two/three-ball ones. Mechanism proved: the 3 masks that empty a whole axis have |Stab|=8 and N_pair_support=0 (a fully-mixed member cannot leave an axis monochrome-empty); the other 12 have |Stab|=2 whose non-identity element swaps the two slots of the remaining fully-occupied axis while every pair member bicolours that axis. Partition check 12 x 4 = 48. This generalizes #6652 from two specific kernels to every weight-4 occupancy.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

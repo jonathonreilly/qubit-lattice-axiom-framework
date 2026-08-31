@@ -1,9 +1,9 @@
 {
  "id": "pr-6305",
  "title": "feat(gaugefix): unique 2-face tree-gauge flux given g=\u03c1",
- "science": "Bounded_theorem note, no probe cell. DISCRETE GAUSS-LAW / TREE-GAUGE UNIQUENESS answering the blocker 'recgrav gauge is one of many fluxes': on two unit cubes sharing face F*, with source rho = occupancy count per cube, the equation g=rho has EXACTLY ONE solution when flux support is restricted to {F*,F_B} -- phi(F*)=rho(A), phi(F_B)=rho(A)+rho(B) -- verified by exhaustive search over a integer bo",
+ "science": "Bounded_theorem note, no probe cell. DISCRETE GAUSS-LAW / TREE-GAUGE UNIQUENESS answering the blocker 'recgrav gauge is one of many fluxes': on two unit cubes sharing face F*, with source rho = occupancy count per cube, the equation g=rho has EXACTLY ONE solution when flux support is restricted to {F*,F_B} -- phi(F*)=rho(A), phi(F_B)=rho(A)+rho(B) -- verified by exhaustive search over a integer box; admitting A's outer face F_A instead gives a genuine 1-parameter family phi=(rho(A)-t, t, rho(B)+rho(A)-t). Worked instances: corner seed gives flux (1,1); after one occupancy step (which forms the three in-patch neighbors) it is (4,5). Gauge-structure result for the gravity/source lane. 10/10 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=10 FAIL=0)",
  "source": {
   "pr": 6305,
   "branch": "physics-loop/toe-lphys-block-gaugefix-20260814"

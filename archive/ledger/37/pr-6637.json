@@ -1,7 +1,7 @@
 {
  "id": "pr-6637",
  "title": "feat(m2front): M2 Record seed-grown front cannot host July-3 chirality",
- "science": "STRONGEST FORCING NEGATIVE of this band, not a probe cell: derives the neighbour condition alphabet FROM the axioms - one M_2(C) record locks one of exactly two spectral contents, so with unread/empty the alphabet is July-3 k=3 and not k=4 - then independently re-earns July-3 Thm 2 (k=2 has zero chiral pairs, Burnside proper=full) and Thm 3 (k=3 has exactly one chiral pair; Burnside 57 vs 56; repr",
+ "science": "STRONGEST FORCING NEGATIVE of this band, not a probe cell: derives the neighbour condition alphabet FROM the axioms - one M_2(C) record locks one of exactly two spectral contents, so with unread/empty the alphabet is July-3 k=3 and not k=4 - then independently re-earns July-3 Thm 2 (k=2 has zero chiral pairs, Burnside proper=full) and Thm 3 (k=3 has exactly one chiral pair; Burnside 57 vs 56; representative (0,1,0,2,1,2) handed fully-mixed 2/2/2), and conjoins that with the front geometry to conclude the ONLY chiral channel the M_2 Record alphabet admits has empty support on every seed-grown front t=0..4 (N_with_6=0, max occupied NN = 3). It also closes the empty-as-a-letter escape: min_empty>=3 on the front so the 2/2/2 multiplicity fails too. Displays this as a mismatch with observed weak P-violation.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

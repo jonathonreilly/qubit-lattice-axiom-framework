@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the exist-opposite window sweep (toe-lphys-20260812, #7142–#7187)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 One predicate over a 2-knob readout family (time window × own-letter flag),
 10 seeds × 3 frames. Reader re-implemented everything: 38/38 verdict pairs
 reproduced; 180-cell grid computed; zero monotonicity violations.

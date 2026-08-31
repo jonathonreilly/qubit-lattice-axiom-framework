@@ -1,7 +1,7 @@
 {
  "id": "pr-7067",
  "title": "feat(nsfz): z-probe formdraw PVM reverse/face some; n(Cz) != n(Dz)",
- "science": "Formdraw kernel on the z-probes: n(A_z)=(0,0,-1/3), n(B)=(-1/3,0,-1/3), n(C_z)=(0,-1/3,-1/3), n(D_z)=(0,0,-1/3), so n(C_z) != n(D_z) where the x-probes have n(C)=n(D); both letters legal -> 16 combos -> some/some. Decisively, the runner evaluates two RIVAL selectors on the identical state in the same run: unique P_+ gives reverse 0 hits, and ndot along e_3 gives all letters `-` and reverse 0 hits.",
+ "science": "Formdraw kernel on the z-probes: n(A_z)=(0,0,-1/3), n(B)=(-1/3,0,-1/3), n(C_z)=(0,-1/3,-1/3), n(D_z)=(0,0,-1/3), so n(C_z) != n(D_z) where the x-probes have n(C)=n(D); both letters legal -> 16 combos -> some/some. Decisively, the runner evaluates two RIVAL selectors on the identical state in the same run: unique P_+ gives reverse 0 hits, and ndot along e_3 gives all letters `-` and reverse 0 hits. Three selectors, one state, verdicts {some, none, none}.",
  "forcing": false,
  "verdict_pair": "reverse=some face=some",
  "source": {

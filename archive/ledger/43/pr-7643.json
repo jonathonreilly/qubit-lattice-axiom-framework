@@ -1,7 +1,7 @@
 {
  "id": "pr-7643",
  "title": "feat(nm2holyzpl): forall yz unit-square cyclic-frame holonomy on the x=0 plane at t+1 on two-axis opposite seed: reverse fails, face fails",
- "science": "The band's census: holonomy of all 32 yz unit squares (16 at x=0, 16 at x=1). I reproduced it exactly \u2014 |S0|=16 hold=3 at corners (0,0,-1),(0,0,0),(0,0,1); |S1|=16 hold=1 at (1,0,-2) \u2014 using ONLY 'all four vertices have a defined frame' as the predicate, because the loop product P(1,2)P(2,3)P(3,4)P(4,1)=F1^T F1=I identically. Exhaustively: of the 216 unit squares in B_3(0), 9 have all four frames ",
+ "science": "The band's census: holonomy of all 32 yz unit squares (16 at x=0, 16 at x=1). I reproduced it exactly \u2014 |S0|=16 hold=3 at corners (0,0,-1),(0,0,0),(0,0,1); |S1|=16 hold=1 at (1,0,-2) \u2014 using ONLY 'all four vertices have a defined frame' as the predicate, because the loop product P(1,2)P(2,3)P(3,4)P(4,1)=F1^T F1=I identically. Exhaustively: of the 216 unit squares in B_3(0), 9 have all four frames defined and ALL 9 have identity holonomy, 0 non-identity. The connection is a coboundary; the band has no curvature to find. Its own log prints the seed-square product as I and does not draw the conclusion.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

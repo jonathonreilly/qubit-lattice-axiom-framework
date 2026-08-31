@@ -1,9 +1,9 @@
 {
  "id": "pr-6454",
  "title": "feat(cminmix): 1-site halt of unnamed F_cut filler (1,0,1,0,1)",
- "science": "Completes the eight-filler roster and confirms the subcube characterization outright: it states that the eight F_cut 1-site fillers are EXACTLY the maps with (wt1,adj2)=(1,1), and the runner prints the full list, which matches the (opp2,vertex3,mixed3)-free subcube. The new member run is (1,0,1,0,1), supp 48, which fills at T=5 with history (1,4,8,10,11,12) and the same lock SETS at every tick as ",
+ "science": "Completes the eight-filler roster and confirms the subcube characterization outright: it states that the eight F_cut 1-site fillers are EXACTLY the maps with (wt1,adj2)=(1,1), and the runner prints the full list, which matches the (opp2,vertex3,mixed3)-free subcube. The new member run is (1,0,1,0,1), supp 48, which fills at T=5 with history (1,4,8,10,11,12) and the same lock SETS at every tick as its sibling cutmin (1,0,1,0,0) - so mixed3 is again dynamically free on this trajectory. Gives the mechanism for the extra tick relative to L1: the space-diagonal site (1,1,1) first sees a vertex3 neighbourhood, which both vertex3=0 maps silence, and only locks at tick 5 once its neighbourhood has left vertex3.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6454,
   "branch": "physics-loop/toe-lphys-block-cminmix-20260815"

@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the (M,O) predicate lattice band (toe-lphys-20260812, #7251–#7295)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 Twelve predicates swept over one fixed process's (M,O) pair. Reader
 reimplemented the process and reproduced ALL 44 reported verdicts exactly.
 

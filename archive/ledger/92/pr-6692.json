@@ -1,9 +1,9 @@
 {
  "id": "pr-6692",
  "title": "feat(minkedge): two-end occupancy costs stay diamond",
- "science": "Strengthens the #6684 no-go to TWO-END costs, not a probe cell: on B_3(0) (63 sites, 228 directed NN edges) the endpoint inward-occupancy pairs fall into exactly EIGHT G+ orbits with inward-weight representatives (0,1),(1,0),(1,1),(1,2),(2,1),(2,2),(2,3),(3,2), and none of the 2^8 = 256 G+-equivariant fillings c(sigma_v,sigma_w) in {1,2} reverses t(3,0,0)^2/9 <= t(1,1,1)^2/3. Also gives an analyti",
+ "science": "Strengthens the #6684 no-go to TWO-END costs, not a probe cell: on B_3(0) (63 sites, 228 directed NN edges) the endpoint inward-occupancy pairs fall into exactly EIGHT G+ orbits with inward-weight representatives (0,1),(1,0),(1,1),(1,2),(2,1),(2,2),(2,3),(3,2), and none of the 2^8 = 256 G+-equivariant fillings c(sigma_v,sigma_w) in {1,2} reverses t(3,0,0)^2/9 <= t(1,1,1)^2/3. Also gives an analytic proof independent of the census, via the SHARED seed-exit orbit: all six seed exits share one orbit with common cost c0, so c0=1 forces t_axis<=5 and t_diag>=3 (3*25=75 < 9*9=81) and c0=2 forces t_axis<=6, t_diag>=4 (3*36=108 < 9*16=144). (3,0,0) has a unique in-ball neighbour so every axis path ends on a (1,1) hop.",
  "forcing": false,
- "verdict_pair": "none stated (no reverse/face verdicts in the diff; 'reverse'",
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff; 'reverse' occurrences all mean reversing the diamond ordering)",
  "source": {
   "pr": 6692,
   "branch": "physics-loop/toe-lphys-block-minkedge-20260815"

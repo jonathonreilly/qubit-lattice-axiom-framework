@@ -1,9 +1,9 @@
 {
  "id": "pr-6400",
  "title": "feat(l1sparse): sparsest 1-site filler is not f_L1",
- "science": "A sharp uniqueness theorem plus a forcing negative against L1, not a probe cell. Over the 96 cube-covariant 1-site fillers of the two-cube, the support minimum is m=26 attained by exactly N_min=1 map - and the unique minimizer is NOT f_L1 (supp 56 = 64 minus the 8 fully balanced cells) but f_min, the nonempty axis-transversal predicate (at most one occupied sign per axis), with the clean identity ",
+ "science": "A sharp uniqueness theorem plus a forcing negative against L1, not a probe cell. Over the 96 cube-covariant 1-site fillers of the two-cube, the support minimum is m=26 attained by exactly N_min=1 map - and the unique minimizer is NOT f_L1 (supp 56 = 64 minus the 8 fully balanced cells) but f_min, the nonempty axis-transversal predicate (at most one occupied sign per axis), with the clean identity supp(f_min)=3^3-1=26. f_min is a strict subset of f_L1 and fills with the IDENTICAL lock history (1,4,8,11,12). So sparsity is a selector that works - it picks a unique member - but it picks against L1. Also carries a template self-inconsistency: the runner check 'no-cache-write / this run did not emit a runner cache file' PASSES inside a diff that commits logs/runner-cache/sparsest_one_site_filler_2026_08_15.txt.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6400,
   "branch": "physics-loop/toe-lphys-block-l1sparse-20260815"

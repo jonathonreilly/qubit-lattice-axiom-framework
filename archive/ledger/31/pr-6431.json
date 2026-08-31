@@ -1,9 +1,9 @@
 {
  "id": "pr-6431",
  "title": "feat(cov3split): first 3-site seed where the two cov=66 maximizers disagree",
- "science": "Introduces a THIRD selector and it too fails to pick L1 - arguably the most consequential fact in the batch after #6407. Define cov(f) = number of the 66 two-site seeds from which f fills. Exactly two F_cut maps attain the maximum cov=66: (1,1,1,1,0) and (1,1,1,1,1). Neither is f_L1, whose tuple is (1,0,1,1,1) - and both maximizers have opp2=1, i.e. 'a filled axis DOES form', which is the exact ne",
+ "science": "Introduces a THIRD selector and it too fails to pick L1 - arguably the most consequential fact in the batch after #6407. Define cov(f) = number of the 66 two-site seeds from which f fills. Exactly two F_cut maps attain the maximum cov=66: (1,1,1,1,0) and (1,1,1,1,1). Neither is f_L1, whose tuple is (1,0,1,1,1) - and both maximizers have opp2=1, i.e. 'a filled axis DOES form', which is the exact negation of the opp2=0 'balanced-axis silence' motivation that #6402 and #6404 use to argue for L1. So symmetry+sparsity (#6414) points one way, two-site coverage points the opposite way on the opp2 bit, and neither lands on L1. Secondary result: the first 3-site seed splitting the two maximizers is {(0,0,0),(1,0,1),(2,0,0)} - f0 (mixed3=0) halts (3,8,10), f1 (mixed3=1) fills (3,9,12) - because (1,0,0) sees a mixed3 neighbourhood. That also shows mixed3 IS dynamically reachable at |S|=3, complementing #6409's finding that it is idle from the 1-site seed.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6431,
   "branch": "physics-loop/toe-lphys-block-cov3split-20260815"

@@ -1,7 +1,7 @@
 {
  "id": "pr-6126",
  "title": "science: close the periodic Record phase",
- "science": "Block 39: universal one-neighbor influence bound c_xy <= tanh(beta/2) for the ten-label Record conditional on every fixed nondegenerate background, giving 6 tanh(1/10) < 1 and hence ONE boundary-independent full-Z^3 Record Gibbs phase at the supplied beta \u2014 the chain's first and strongest infinite-volume theorem \u2014 plus all 27 translated cube-Bianchi identities and exact periodic flat-connection ta",
+ "science": "Block 39: universal one-neighbor influence bound c_xy <= tanh(beta/2) for the ten-label Record conditional on every fixed nondegenerate background, giving 6 tanh(1/10) < 1 and hence ONE boundary-independent full-Z^3 Record Gibbs phase at the supplied beta \u2014 the chain's first and strongest infinite-volume theorem \u2014 plus all 27 translated cube-Bianchi identities and exact periodic flat-connection tadpole cancellation.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

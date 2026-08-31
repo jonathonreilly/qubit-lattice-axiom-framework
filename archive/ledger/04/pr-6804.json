@@ -1,9 +1,9 @@
 {
  "id": "pr-6804",
  "title": "feat(fallk13): all-face-slide fails k=13 at the same 23 vs 41 as mu",
- "science": "FORCING NEGATIVE for the whole 2->2-clause direction: phi is strictly more expensive than mu on every non-corridor face slide, yet at k=13 on B_39 it returns the IDENTICAL pair 23 vs 41 (1587<1681). The optimal walk never uses a non-corridor 2->2 hop, so strengthening the corridor clause to all faces buys exactly zero -- the axis intercept stays +10 and the wall stays at k=13. The note records the",
+ "science": "FORCING NEGATIVE for the whole 2->2-clause direction: phi is strictly more expensive than mu on every non-corridor face slide, yet at k=13 on B_39 it returns the IDENTICAL pair 23 vs 41 (1587<1681). The optimal walk never uses a non-corridor 2->2 hop, so strengthening the corridor clause to all faces buys exactly zero -- the axis intercept stays +10 and the wall stays at k=13. The note records the coincidence but does not draw the structural conclusion.",
  "forcing": false,
- "verdict_pair": "reverse=NO (same-k k=13, 1587 < 1681; arrivals identical to ",
+ "verdict_pair": "reverse=NO (same-k k=13, 1587 < 1681; arrivals identical to mu) face=n/a",
  "source": {
   "pr": 6804,
   "branch": "physics-loop/toe-lphys-block-fallk13-20260815"

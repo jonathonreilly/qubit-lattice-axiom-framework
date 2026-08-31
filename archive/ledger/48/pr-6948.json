@@ -3,7 +3,7 @@
  "title": "feat(d3k1): max\u22653 out-face same-k holds at k=1: t=3 vs t=5",
  "science": "k=1 companion of d3 on B_6(0): t(1,0,0)=3, t(1,1,1)=5, 27>25. Adds nothing: the k=1 geodesic 0->(1,0,0)->(1,1,0)->(1,1,1) costs 3,1,1 under every rule of this family, so the k=1 pair is a fixed point of the whole clause family. Carried by any other k=1 member.",
  "forcing": false,
- "verdict_pair": "reverse=YES at k=1 (band bit; identical to every other k=1 m",
+ "verdict_pair": "reverse=YES at k=1 (band bit; identical to every other k=1 member) face=absent",
  "source": {
   "pr": 6948,
   "branch": "physics-loop/toe-lphys-block-d3k1-20260815"

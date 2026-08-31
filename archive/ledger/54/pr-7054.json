@@ -1,7 +1,7 @@
 {
  "id": "pr-7054",
  "title": "feat(nsint): nnseed B3 interval census is 9 space, 3 null, 108 time",
- "science": "Two-record interval census: N_space=9, N_null=3, N_time=108 on the same 120 formed nonzero sites. The nine spacelike sites all have s^2=-1 and are the second seed plus its perpendicular descendants. The runner's own control records the 1-seed split as {space:0, null:4, time:116}. Adding one record at tick 0 therefore CREATES spacelike events: the light cone of #7041 is an artefact of the single-re",
+ "science": "Two-record interval census: N_space=9, N_null=3, N_time=108 on the same 120 formed nonzero sites. The nine spacelike sites all have s^2=-1 and are the second seed plus its perpendicular descendants. The runner's own control records the 1-seed split as {space:0, null:4, time:116}. Adding one record at tick 0 therefore CREATES spacelike events: the light cone of #7041 is an artefact of the single-record initial condition, not a property of the process.",
  "forcing": false,
  "verdict_pair": "none",
  "source": {

@@ -1,9 +1,9 @@
 {
  "id": "pr-6567",
  "title": "feat(c7sel): cov7>0 is not Q4, not Q6, and not Q8",
- "science": "New exact selector at k=7: cov7>0 iff (adj2 or vertex3), N_Q=N_both=N_pos=24, the unique match among 18 displayed predicates; Q4, Q6, Q8 and all five single bits fail with named lex-first misses. The eight cov7=0 maps are exactly adj2=0 and vertex3=0. This makes the positivity selector non-monotone in seed size: wt1 alone suffices at k=4 and k=6 (Q4, Q6) and again at k=8 (Q8), but four Q6-true wt1",
+ "science": "New exact selector at k=7: cov7>0 iff (adj2 or vertex3), N_Q=N_both=N_pos=24, the unique match among 18 displayed predicates; Q4, Q6, Q8 and all five single bits fail with named lex-first misses. The eight cov7=0 maps are exactly adj2=0 and vertex3=0. This makes the positivity selector non-monotone in seed size: wt1 alone suffices at k=4 and k=6 (Q4, Q6) and again at k=8 (Q8), but four Q6-true wt1-only maps have cov7=0.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut cov7 selector search; no (reve",
+ "verdict_pair": "reverse=none face=none (f_cut cov7 selector search; no (reverse,face) pair stated)",
  "source": {
   "pr": 6567,
   "branch": "physics-loop/toe-lphys-block-c7sel-20260815"

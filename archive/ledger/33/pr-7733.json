@@ -1,7 +1,7 @@
 {
  "id": "pr-7733",
  "title": "physics: stop periodic D1 probability carrier at graded trace",
- "science": "Exhausts the D1 s=0 reflection-sign x full/even-CAR x ordinary/graded-trace tournament with exact gluing identities det(M_per)=2^-24 r^-1(1-r)^2, det(M_AP)=2^-24 r^-1(1+r)^2, r=((sqrt(53)-2)/7)^24: the periodic carrier selects a graded trace whose normalized weights (1,-r,-r,r^2) assign -2r/(1-r)^2<0 to a positive even-algebra projector; ZERO of eight cells are simultaneously reflection-positive, ",
+ "science": "Exhausts the D1 s=0 reflection-sign x full/even-CAR x ordinary/graded-trace tournament with exact gluing identities det(M_per)=2^-24 r^-1(1-r)^2, det(M_AP)=2^-24 r^-1(1+r)^2, r=((sqrt(53)-2)/7)^24: the periodic carrier selects a graded trace whose normalized weights (1,-r,-r,r^2) assign -2r/(1-r)^2<0 to a positive even-algebra projector; ZERO of eight cells are simultaneously reflection-positive, exact-gluing, normalized, and state-positive. The sharpest negative of the L24/L12 lane.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

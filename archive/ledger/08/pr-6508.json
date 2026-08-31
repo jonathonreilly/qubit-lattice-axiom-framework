@@ -3,7 +3,7 @@
  "title": "feat(c4shareex): whether f00 and f10 share the same 7 four-site fills",
  "science": "reverse=none face=none (f_cut fill-set share census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut fill-set share census; no (rev",
+ "verdict_pair": "reverse=none face=none (f_cut fill-set share census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6508,
   "branch": "physics-loop/toe-lphys-block-c4shareex-20260815"

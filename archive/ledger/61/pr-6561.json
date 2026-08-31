@@ -3,7 +3,7 @@
  "title": "feat(qstarc3): Q_* cov3 census; tot3 is not vertex3 and opp2 and mixed3",
  "science": "Full cov3 census of the 8 Q_* maps (80,96,188,220,96,96,212,220) and refutation of tot3 iff k=(vertex3 and opp2 and mixed3): N_tot3=2, N_k=1, N_both=1, witness f_L1=(1,0,1,1,1) with cov3=220 and opp2=0. Unremarked in the note: its own census shows an exact 2-bit iff inside Q_*, cov3=220 iff (vertex3=1 and mixed3=1), opp2 free -- the k-test failed only because opp2 was included.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut Q_* cov3 census; no (reverse,f",
+ "verdict_pair": "reverse=none face=none (f_cut Q_* cov3 census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6561,
   "branch": "physics-loop/toe-lphys-block-qstarc3-20260815"

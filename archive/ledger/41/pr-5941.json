@@ -1,7 +1,7 @@
 {
  "id": "pr-5941",
  "title": "[physics-loop][review-loop] toe-time blockG8 (STACKED on #5939) \u2014 Cycle 883: bounded theorem (SL1 derived \u2014 the record carries (1,2) as the ",
- "science": "SL1 derived: over one lattice-realized C3 orbit the record readout space carries the ordered weight pair (1,2) as the forced C3 isotype split (1 + 2), no free parameter, defeating 882-T6 (the v2=1 datum exists in the axioms as representation theory) while leaving T7 standing; residuals priced (SL1b binding blocked-equivalent; SL0 scope underived). Construction rebuilt twice by 888 (agreeing at C3,",
+ "science": "SL1 derived: over one lattice-realized C3 orbit the record readout space carries the ordered weight pair (1,2) as the forced C3 isotype split (1 + 2), no free parameter, defeating 882-T6 (the v2=1 datum exists in the axioms as representation theory) while leaving T7 standing; residuals priced (SL1b binding blocked-equivalent; SL0 scope underived). Construction rebuilt twice by 888 (agreeing at C3, T6 step reproduced), forcedness re-proven by 890, binding closed by 899/901.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

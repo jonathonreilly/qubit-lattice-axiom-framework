@@ -1,7 +1,7 @@
 {
  "id": "pr-5993",
  "title": "[physics-loop][review-loop] toe-time blockM8 (STACKED on #5986) \u2014 Cycle 926: bounded theorem \u2014 the ceiling is the fragment count; the 919 th",
- "science": "The gate sweep splits the lane verdicts: 917 chain-certifies and ceiling laws are gate-robust, the 919 threshold is gate-fragile (survives a 1.6e-3-bit band, 6/32 combos) and re-scopes to the unique conjunction d>=5 AND f>=3 (1 of 990 predicates at 100%), and the redundancy ceiling is the FRAGMENT COUNT exactly on all 29 geometries (pointer-degree reading refuted) - composing with the 921 pair-cyc",
+ "science": "The gate sweep splits the lane verdicts: 917 chain-certifies and ceiling laws are gate-robust, the 919 threshold is gate-fragile (survives a 1.6e-3-bit band, 6/32 combos) and re-scopes to the unique conjunction d>=5 AND f>=3 (1 of 990 predicates at 100%), and the redundancy ceiling is the FRAGMENT COUNT exactly on all 29 geometries (pointer-degree reading refuted) - composing with the 921 pair-cycle law as one law at two tiers. The corrected ceiling law and re-scoped threshold are the standing forms off-star.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

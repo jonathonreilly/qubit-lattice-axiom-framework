@@ -1,9 +1,9 @@
 {
  "id": "pr-6411",
  "title": "feat(mindyn): display f_min 1-site halt history (1,4,8,11,12)",
- "science": "A degeneracy result, not a probe cell: f_min (the unique support-26 filler, tuple (1,0,1,1,0), not in F_cut) fills from the 1-site seed with halt tick T=4 and lock history (1,4,8,11,12) - IDENTICAL to f_L1's - and the note states the stronger fact that the locked SITE SETS coincide at every tick, not just the counts. Reason given: mixed3 never appears as a first-locking neighborhood along that tra",
+ "science": "A degeneracy result, not a probe cell: f_min (the unique support-26 filler, tuple (1,0,1,1,0), not in F_cut) fills from the 1-site seed with halt tick T=4 and lock history (1,4,8,11,12) - IDENTICAL to f_L1's - and the note states the stronger fact that the locked SITE SETS coincide at every tick, not just the counts. Reason given: mixed3 never appears as a first-locking neighborhood along that trajectory, so silencing mixed3 cannot change the 1-site history. Consequence: the two-cube 1-site experiment cannot distinguish f_min from f_L1 at all - the whole carrier is blind to the one bit on which they differ. This is the sharpest limitation statement in the batch on what the two-cube can decide.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6411,
   "branch": "physics-loop/toe-lphys-block-mindyn-20260815"

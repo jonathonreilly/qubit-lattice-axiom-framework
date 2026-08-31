@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: cyclic-frame transport & holonomy (toe-lphys-20260812, #7525–#7571)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 A discrete-connection experiment: oriented frames F(q)=(m,o_next,o_prev),
 edge maps P(q,r), unit-square holonomy, three-path independence. Reader
 recomputed everything (576/576 frame pairs; 331,776/331,776 four-corner

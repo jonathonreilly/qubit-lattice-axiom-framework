@@ -1,7 +1,7 @@
 {
  "id": "pr-6355",
  "title": "feat(cell): cycle 785 parity constancy from sign characters, small-class equal split",
- "science": "Cycle 785: discharges two named debts of the census note. Parity constancy of the realized profiles becomes a THEOREM - the parity vector of a cutting lies in the mod-two reduction of an exact integer kernel for each of the seven nontrivial sign characters of the mask group, the intersection has dimension 7 (128 vectors), and every one of those 128 vectors is parity-constant across the twelve posi",
+ "science": "Cycle 785: discharges two named debts of the census note. Parity constancy of the realized profiles becomes a THEOREM - the parity vector of a cutting lies in the mod-two reduction of an exact integer kernel for each of the seven nontrivial sign characters of the mask group, the intersection has dimension 7 (128 vectors), and every one of those 128 vectors is parity-constant across the twelve positions. Also derives the per-profile counts 24, 20 and 16 of the three small classes from coset-block structure plus an equal-split argument, with a hand-sized closed form for one family (three four-element mask subgroups containing the all-axes flip, 12 six-class choices each admitting 2, giving 12x2=24).",
  "forcing": false,
  "verdict_pair": "",
  "source": {

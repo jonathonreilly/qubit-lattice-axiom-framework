@@ -1,9 +1,9 @@
 {
  "id": "pr-6437",
  "title": "feat(mix0diff): first mix0/L1 split is a 3-site long-axis seed",
- "science": "Pins the exact seed-size threshold at which the mixed3 orbit becomes dynamically live. f_mix0 and f_L1 differ ONLY on mixed3 (both have type210=1, unlike f_min); over the 298 seeds with |S|<=3 they agree on every 1-site and every 2-site seed, and the first separating seed is the 3-site {(0,0,0),(0,0,1),(2,0,0)} - f_L1 (3,8,11,12) fills, f_mix0 (3,8,10) does not. Combined with #6409 (mixed3 never f",
+ "science": "Pins the exact seed-size threshold at which the mixed3 orbit becomes dynamically live. f_mix0 and f_L1 differ ONLY on mixed3 (both have type210=1, unlike f_min); over the 298 seeds with |S|<=3 they agree on every 1-site and every 2-site seed, and the first separating seed is the 3-site {(0,0,0),(0,0,1),(2,0,0)} - f_L1 (3,8,11,12) fills, f_mix0 (3,8,10) does not. Combined with #6409 (mixed3 never fires from a 1-site seed) and #6431 (mixed3 splits the cov=66 pair at |S|=3), this fixes the threshold: on this carrier mixed3 is idle for all |S|<=2 and first becomes active at |S|=3. That is the clean statement of how much seed you need before the two-cube can see that orbit at all.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6437,
   "branch": "physics-loop/toe-lphys-block-mix0diff-20260815"

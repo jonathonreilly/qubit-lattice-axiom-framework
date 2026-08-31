@@ -1,9 +1,9 @@
 {
  "id": "pr-6619",
  "title": "feat(c5q6): cov5>0 is not Q6; positivity implies Q6",
- "science": "Exact one-way law over the full 32-map class (pos_implies_Q6=1, Q6_FALSE_POS empty, N_pos=N_both=21) plus an ANOMALY the note never remarks on: the seven Q6-true zeros are the four vertex3-only maps (0,*,0,1,*) and three of the four wt1-only maps, leaving (1,1,0,0,1) as the SOLE 5-site-positive map with adj2=0 and vertex3=0. So cov5>0 is not adj2 OR vertex3 (the k=7/k=11 law) - it is (adj2 OR (wt1",
+ "science": "Exact one-way law over the full 32-map class (pos_implies_Q6=1, Q6_FALSE_POS empty, N_pos=N_both=21) plus an ANOMALY the note never remarks on: the seven Q6-true zeros are the four vertex3-only maps (0,*,0,1,*) and three of the four wt1-only maps, leaving (1,1,0,0,1) as the SOLE 5-site-positive map with adj2=0 and vertex3=0. So cov5>0 is not adj2 OR vertex3 (the k=7/k=11 law) - it is (adj2 OR (wt1 AND vertex3)) plus that one exception, and the exception is exactly the map carrying wt1 AND opp2 AND mixed3. Note also that the four vertex3-only maps are 5-site ZERO here but 7-site and 11-site POSITIVE (#6615/#6616), so coverage positivity is non-monotone in k for those maps. Prose is internally consistent; seed-count arithmetic C(12,5)=792 correct.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q6",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q6=1, N_pos=21, N_Q6=28, N_both=21, N_mismatch=7)",
  "source": {
   "pr": 6619,
   "branch": "physics-loop/toe-lphys-block-c5q6-20260815"

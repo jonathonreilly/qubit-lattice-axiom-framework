@@ -1,7 +1,7 @@
 {
  "id": "pr-5938",
  "title": "[physics-loop][review-loop] toe-time blockT3 (STACKED on #5936) \u2014 Cycle 881: bounded theorem (P=11 derived as the relay-swap gap; the orbit ",
- "science": "Derives P=11 as the relay-swap gap with the general formula DELTA(B,e)=8B-13-8e on N=8B-5 stations, corrects the orbit law to horizon-contingency (non-orbit relay periods exist at every B; exhibition is an alignment accident), and empties both 879 exception lists at scope. The station arithmetic and separation structure are re-derived and generalized by 891 exhaustive three-shape census, and the h",
+ "science": "Derives P=11 as the relay-swap gap with the general formula DELTA(B,e)=8B-13-8e on N=8B-5 stations, corrects the orbit law to horizon-contingency (non-orbit relay periods exist at every B; exhibition is an alignment accident), and empties both 879 exception lists at scope. The station arithmetic and separation structure are re-derived and generalized by 891 exhaustive three-shape census, and the horizon-contingency is made exact by the k-run law finite form.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

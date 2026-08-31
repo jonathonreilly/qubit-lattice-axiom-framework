@@ -1,7 +1,7 @@
 {
  "id": "pr-7188",
  "title": "feat(nszopinx): z-symmetric three-site x-probe same-tick union own-lock: reverse HOLD, face HOLD",
- "science": "Template instance and the band's reference cell (z-symmetric three-site {0,+e1},{e3,-e1},{-e3,-e1}, x-probes). Its own runner proves the distinguishing feature is vacuous here: theorem1-union-is-noop-on-x-probes shows S^+ == S at all four probes, and the check labelled not-leftover-of-sametick-exclude-q PASSes while asserting star_sets==plus_sets and star_reverse==reverse_status=='hold' -- i.e. it",
+ "science": "Template instance and the band's reference cell (z-symmetric three-site {0,+e1},{e3,-e1},{-e3,-e1}, x-probes). Its own runner proves the distinguishing feature is vacuous here: theorem1-union-is-noop-on-x-probes shows S^+ == S at all four probes, and the check labelled not-leftover-of-sametick-exclude-q PASSes while asserting star_sets==plus_sets and star_reverse==reverse_status=='hold' -- i.e. it certifies numerical identity with the very leftover it names. I reproduced every field independently (t=3,2,4,2; S^+(A)={+e1,+e2,-e2,+e3,-e3}).",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=HOLD",
  "source": {

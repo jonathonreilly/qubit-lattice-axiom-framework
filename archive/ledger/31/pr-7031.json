@@ -1,7 +1,7 @@
 {
  "id": "pr-7031",
  "title": "[physics-loop] typed instrument-to-Record conditional completion \u2014 bounded_theorem \u2014 bounded-support",
- "science": "Repairs the two defects Block 5 left (code/rail mismatch C_B != R_B and the eager occupancy gate) with typed projections S(C)=(C+C^dagger)/2 and the apparatus-relative compiler d_M; builds a supplied total Borel NN formation/content law with three disjoint proper-cubic shell-orbit guards; in the trace-matched specialization the permanent Record-history weights equal the supplied flat ternary Kraus",
+ "science": "Repairs the two defects Block 5 left (code/rail mismatch C_B != R_B and the eager occupancy gate) with typed projections S(C)=(C+C^dagger)/2 and the apparatus-relative compiler d_M; builds a supplied total Borel NN formation/content law with three disjoint proper-cubic shell-orbit guards; in the trace-matched specialization the permanent Record-history weights equal the supplied flat ternary Kraus trace weights, unique under a SUPPLIED ensemble-consistency premise. Side lemma: an affine CPTP map whose normalized output is pointwise confined to one of two orthogonal Record sectors must pick one constant sector.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

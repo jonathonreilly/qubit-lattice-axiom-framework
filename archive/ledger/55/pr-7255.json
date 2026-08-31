@@ -3,7 +3,7 @@
  "title": "feat(nmot2zp): O two-tick composition on #7186: reverse UNDEFINED, face UNDEFINED, composition fails",
  "science": "Same two-tick construction as #7254 on the z-symmetric #7186 z-probes; identical structure and identical tautology. Adds the honest remark that 'the delay is not special to the y-symmetric or x-symmetric members' -- i.e. it concedes the pattern is seed-independent.",
  "forcing": false,
- "verdict_pair": "reverse=UNDEFINED->hold face=UNDEFINED->hold composition=fai",
+ "verdict_pair": "reverse=UNDEFINED->hold face=UNDEFINED->hold composition=fail",
  "source": {
   "pr": 7255,
   "branch": "physics-loop/toe-lphys-block-nmot2zp-20260815"

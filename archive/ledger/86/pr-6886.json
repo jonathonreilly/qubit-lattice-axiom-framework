@@ -1,7 +1,7 @@
 {
  "id": "pr-6886",
  "title": "feat(dek1): deep-enter same-k holds at k=1: t=3 vs t=5",
- "science": "Defines deep-enter delta-eps and, in the prose, explains why a naive definition is unusable: on a nearest-neighbour 2->3 hop the destination always carries a newly created unit coordinate, so min over ALL dest coordinates would always be 1 and the clause would be vacuous; the min must be taken over coordinates already nonzero at the source. That modelling lemma is the member's real content. B_6: 3",
+ "science": "Defines deep-enter delta-eps and, in the prose, explains why a naive definition is unusable: on a nearest-neighbour 2->3 hop the destination always carries a newly created unit coordinate, so min over ALL dest coordinates would always be 1 and the clause would be vacuous; the min must be taken over coordinates already nonzero at the source. That modelling lemma is the member's real content. B_6: 3 vs 5, holds.",
  "forcing": false,
  "verdict_pair": "reverse=holds face=not-scored",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-7445",
  "title": "feat(nm2oricht2y): opposite-pair 1-in 2-out frame orientation freeze t+1 vs t+2 on two-axis opposite y-probes: reverse fails, face fails, co",
- "science": "opposite y-probes, opposite-pair frame orientation det(m, e_pair, +leftover), two cuts. Notable beyond its own fail/fail verdict: recomputation shows this is the ONLY orientation letter in the band with strong nearest-neighbour alignment (73-82% of adjacent defined pairs agree, vs 27-39% for the cyclic letters) - the probe-pair metric gives it almost nothing while it is the only locally coherent l",
+ "science": "opposite y-probes, opposite-pair frame orientation det(m, e_pair, +leftover), two cuts. Notable beyond its own fail/fail verdict: recomputation shows this is the ONLY orientation letter in the band with strong nearest-neighbour alignment (73-82% of adjacent defined pairs agree, vs 27-39% for the cyclic letters) - the probe-pair metric gives it almost nothing while it is the only locally coherent letter.",
  "forcing": false,
  "verdict_pair": "reverse=fail face=fail",
  "source": {

@@ -1,9 +1,9 @@
 {
  "id": "pr-6397",
  "title": "feat(ftwo2fill): f_two face-diagonal seed halts at T=1 with 4 locks",
- "science": "Single-instance dynamics theorem, not a probe cell: f_two (u>=2 unbalanced axes) from the face-diagonal 2-site seed {(0,0,0),(1,1,0)} halts at T=1 with |locks|=4, the locked set being exactly the z=0 face square of cube A, and does not fill; the 3-site axis-seed contrast recomputes as T=2, 8 locks, no fill. Thin science - one instance, one seed. Also carries a small internal definitional slip: the",
+ "science": "Single-instance dynamics theorem, not a probe cell: f_two (u>=2 unbalanced axes) from the face-diagonal 2-site seed {(0,0,0),(1,1,0)} halts at T=1 with |locks|=4, the locked set being exactly the z=0 face square of cube A, and does not fill; the 3-site axis-seed contrast recomputes as T=2, 8 locks, no fill. Thin science - one instance, one seed. Also carries a small internal definitional slip: the note writes n_mu = (c_{+mu} - c_{-mu})/3, whereas #6391/#6393 define n_mu = c_{+mu} - c_{-mu} with no factor of 3; harmless to the computation (only the sign/nonzero test is used) but inconsistent across the series.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6397,
   "branch": "physics-loop/toe-lphys-block-ftwo2fill-20260815"

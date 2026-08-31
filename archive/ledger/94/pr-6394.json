@@ -1,9 +1,9 @@
 {
  "id": "pr-6394",
  "title": "feat(classblank): blank-block empties every 1-site first wave",
- "science": "Class-level structural theorem plus a selector-identification finding, not a probe cell. Thm 2: on the 3x2x2 two-cube no site has all six lattice neighbors on-patch (every site has y,z in {0,1} so misses one of +-e_y and one of +-e_z), so under the blank-block rule the 1-site first wave is empty for ALL 1024 cube-covariant f - f is never even evaluated. Thm 3: the off-patch o=0 vacuum default is t",
+ "science": "Class-level structural theorem plus a selector-identification finding, not a probe cell. Thm 2: on the 3x2x2 two-cube no site has all six lattice neighbors on-patch (every site has y,z in {0,1} so misses one of +-e_y and one of +-e_z), so under the blank-block rule the 1-site first wave is empty for ALL 1024 cube-covariant f - f is never even evaluated. Thm 3: the off-patch o=0 vacuum default is therefore class-level extra data required by the entire f(wt1)=1 subclass (512 maps), not a peculiarity of L1; the axioms supply neither the default nor blank-block. Verified by exhaustive enumeration over the full covariant class.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6394,
   "branch": "physics-loop/toe-lphys-block-classblank-20260815"

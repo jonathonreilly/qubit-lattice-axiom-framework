@@ -1,7 +1,7 @@
 {
  "id": "pr-6646",
  "title": "feat(ambpick): lex-first axis pick does not fire; two of four completions do",
- "science": "General local-in-n no-go, not a probe cell: of the four unique-axis-respecting completions of the two ambiguous slots at v=(1,-1,1), exactly N_fire=2 are July-3 pair members ((+,-,-,0,0,+) and (-,+,-,0,0,+)); the lex-first-nonzero-axis local pick gives (+,+,-,0,0,+) which does not fire. The general obstruction is proved, not just observed: BOTH ambiguous neighbours (2,-1,1) and (0,-1,1) carry the ",
+ "science": "General local-in-n no-go, not a probe cell: of the four unique-axis-respecting completions of the two ambiguous slots at v=(1,-1,1), exactly N_fire=2 are July-3 pair members ((+,-,-,0,0,+) and (-,+,-,0,0,+)); the lex-first-nonzero-axis local pick gives (+,+,-,0,0,+) which does not fire. The general obstruction is proved, not just observed: BOTH ambiguous neighbours (2,-1,1) and (0,-1,1) carry the identical kernel n=(0,1/3,-1/3), so ANY single-letter function of n alone must assign the SAME letter to both ambiguous slots, whereas both firing completions assign OPPOSITE letters - therefore no local-in-n tie-break can ever produce a firing completion at this site.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

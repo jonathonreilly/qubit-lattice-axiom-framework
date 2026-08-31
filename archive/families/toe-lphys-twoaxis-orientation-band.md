@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the two-axis orientation factorial (toe-lphys-20260812, #7430–#7474)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 The 2-seed × 3-axis × 8-letter factorial on B_3(0). The reader RE-IMPLEMENTED
 the process independently and reproduced every number in all 44 PRs exactly;
 re-ran all 48 cells on B4/B5/B6 (0/48 change — clean of the ball-wall class).

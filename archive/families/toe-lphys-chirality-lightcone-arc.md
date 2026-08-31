@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the chirality/light-cone arc (toe-lphys-20260812, ~#6623–#6704)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 One continuous 39-PR argument plus a 5-PR F_cut selector census; written from a
 full-diff read of every member (densify 2026-08-31). No (reverse,face) verdicts
 exist in this band — the earlier family roll-up must not count these members.

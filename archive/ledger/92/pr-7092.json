@@ -1,7 +1,7 @@
 {
  "id": "pr-7092",
  "title": "feat(nscos2): same-tick y sign(n_2): reverse none, face UNDEFINED",
- "science": "Defines the same-tick occupancy kernel n_mu=(o_{+mu}-o_{-mu})/3 on the perp two-site seed and letters it by sign(n_2) at the four y-probes; its runner independently verifies that on the x-probes n(C)=n(D), so ANY unique letter L=f(n) is forced equal at C and D and can never certify face. Also shows the verdict is created by the timing convention: under strictly-earlier occupancy n(A)=0 and reverse",
+ "science": "Defines the same-tick occupancy kernel n_mu=(o_{+mu}-o_{-mu})/3 on the perp two-site seed and letters it by sign(n_2) at the four y-probes; its runner independently verifies that on the x-probes n(C)=n(D), so ANY unique letter L=f(n) is forced equal at C and D and can never certify face. Also shows the verdict is created by the timing convention: under strictly-earlier occupancy n(A)=0 and reverse would be UNDEFINED, under same-tick it is `none`.",
  "forcing": false,
  "verdict_pair": "reverse=none face=UNDEFINED",
  "source": {

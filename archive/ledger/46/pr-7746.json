@@ -1,7 +1,7 @@
 {
  "id": "pr-7746",
  "title": "[physics-loop] admissibility H1 edge-corner \u2014 bounded_theorem / bounded-support",
- "science": "Proves the H1 source factors exactly through the parent action's oriented incoming/outgoing edge differences (grouped rank 18/18, all 136 Laurent atoms full column rank, one shared zero-residual weight vector) with a strictly positive corner-M2 witness, and localizes the ownership boundary: the same-time cube omits four temporal derivative groups (rank 14/15, 128 uncovered rows) and neighboring M2",
+ "science": "Proves the H1 source factors exactly through the parent action's oriented incoming/outgoing edge differences (grouped rank 18/18, all 136 Laurent atoms full column rank, one shared zero-residual weight vector) with a strictly positive corner-M2 witness, and localizes the ownership boundary: the same-time cube omits four temporal derivative groups (rank 14/15, 128 uncovered rows) and neighboring M2 Record contents are not action-derived. The eta-ownership fork left these 3 commits behind.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

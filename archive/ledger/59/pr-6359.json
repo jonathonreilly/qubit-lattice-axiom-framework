@@ -1,7 +1,7 @@
 {
  "id": "pr-6359",
  "title": "feat(cell-cutting): interface transfer spectrum, exact factorization, evenness law (cycle 787)",
- "science": "Cycle 787: the interface transfer operator. The 16x16 integer matrix T counting cuttings by their ordered letter pair across an axis is literally identical entry for entry on all four axes (an equality, not merely a conjugacy - the relabelling can be taken to be the identity, which is the certified content), is symmetric on all 256 entries, has row sums equal to the letter multiplicities (12 rows ",
+ "science": "Cycle 787: the interface transfer operator. The 16x16 integer matrix T counting cuttings by their ordered letter pair across an axis is literally identical entry for entry on all four axes (an equality, not merely a conjugacy - the relabelling can be taken to be the identity, which is the certified content), is symmetric on all 256 entries, has row sums equal to the letter multiplicities (12 rows of 862, 4 of 1364), trace 2000, least entry 18, and all 256 entries even; plus its exact spectrum, integer invariants and strip growth counts.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

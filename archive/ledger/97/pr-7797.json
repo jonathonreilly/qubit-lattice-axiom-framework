@@ -1,7 +1,7 @@
 {
  "id": "pr-7797",
  "title": "[physics-loop] Block243 exact q4 combined temporal response",
- "science": "Completes the q=4 push: all eight O01/O10 temporal histories exact on the 19-path carrier with coefficient (2K+1)/243, combined quadratic response (2K+1)/972, and physical (I-Q) acting as identity on the history span. Forcing element: the exact nonzero cup-complement bridge Delta4 proves an artificial intermediate static-cup compression loses content - the wall that fixed physical-conditional-Haar",
+ "science": "Completes the q=4 push: all eight O01/O10 temporal histories exact on the 19-path carrier with coefficient (2K+1)/243, combined quadratic response (2K+1)/972, and physical (I-Q) acting as identity on the history span. Forcing element: the exact nonzero cup-complement bridge Delta4 proves an artificial intermediate static-cup compression loses content - the wall that fixed physical-conditional-Haar-Q discipline for every later block. Two independent checkers (247/247 all-link, 82/82+62/62).",
  "forcing": true,
  "verdict_pair": "",
  "source": {

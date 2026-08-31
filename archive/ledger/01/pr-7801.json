@@ -1,7 +1,7 @@
 {
  "id": "pr-7801",
  "title": "physics: prove selected action-crossing tower no-go",
- "science": "Exact no-go: the ordered action/physical-Q/crossing operator K=C(I-Q)M_chi generates a new Peter-Weyl top spin at every layer (unique multiplicity-one parent, nonzero central multipliers), so no finite-dimensional linear invariant carrier containing the selected p0/C1 orbit closes - the direction-setting unbounded-memory obstruction of the lane. Separately proves crossing-only obeys a finite spect",
+ "science": "Exact no-go: the ordered action/physical-Q/crossing operator K=C(I-Q)M_chi generates a new Peter-Weyl top spin at every layer (unique multiplicity-one parent, nonzero central multipliers), so no finite-dimensional linear invariant carrier containing the selected p0/C1 orbit closes - the direction-setting unbounded-memory obstruction of the lane. Separately proves crossing-only obeys a finite spectral recurrence (annihilating polynomial), cleanly splitting the two Block246 mechanisms.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

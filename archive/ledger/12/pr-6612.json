@@ -1,9 +1,9 @@
 {
  "id": "pr-6612",
  "title": "feat(c7q4): cov7>0 is not Q4; positivity does not imply Q4",
- "science": "DEFECTIVE MEMBER, worse than #6611, including a WEAKENED AUDIT CHECK: the thm1-pos-implies-q4 check body reads '... and q4_false_pos == frozenset(Q4_FALSE_POS) and True and \"Positivity does not imply\" in note and True and \"cov7 = 4\" in note' - two literal 'and True' placeholders sit where every sibling asserts cov_by_remaining[(1,1,0,0,0)]==4 and selector_Q4(...) is True, so the gate is stubbed ou",
+ "science": "DEFECTIVE MEMBER, worse than #6611, including a WEAKENED AUDIT CHECK: the thm1-pos-implies-q4 check body reads '... and q4_false_pos == frozenset(Q4_FALSE_POS) and True and \"Positivity does not imply\" in note and True and \"cov7 = 4\" in note' - two literal 'and True' placeholders sit where every sibling asserts cov_by_remaining[(1,1,0,0,0)]==4 and selector_Q4(...) is True, so the gate is stubbed out. Its PASS line still prints 'positivity implies Q4' while the computed pos_implies_Q4=0 and the note's own Theorem 1 heading says positivity does NOT imply Q4. Other defects: PASS line names lex-first miss (0,0,1,0,0) vs computed (0,0,0,1,0); PASS thm1-host says '220 7-site seeds' (should be 792); note says 'cov7(f)=|{S:|S|=3...}|' and 'C(12,7)=792 subsets of size 3'; Theorem 2 says 'N_both=20 equals N_pos' with N_pos=24; the note lists (1,1,0,0,0) among the cov7=0 maps and then says it 'has cov7 = 4'; the No-Go gate and N7 both say positivity DOES imply Q4, contradicting Theorem 1; N8 gives the triple as (20,24,20) vs Theorem 2's (24,24,20).",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4=0, N_pos=24, N_Q4=24, N_both=20, N_mismatch=8)",
  "source": {
   "pr": 6612,
   "branch": "physics-loop/toe-lphys-block-c7q4-20260815"

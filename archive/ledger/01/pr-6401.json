@@ -1,9 +1,9 @@
 {
  "id": "pr-6401",
  "title": "feat(fill2site): 64 maps fill from a 2-site face-diagonal seed",
- "science": "Census plus an exact STRUCTURE theorem, not a probe cell. From the face-diagonal 2-site seed {(0,0,0),(1,1,0)}, N_fill_2=64 of the 512 vanish-on-empty cube-covariant maps fill - and the filler set is characterized exactly, not just counted: a map fills iff f=0 on empty and f=1 on the three orbits (1,0,2), (2,0,1), (3,0,0) (the axis-types with no doubly occupied axis), leaving the other six orbit b",
+ "science": "Census plus an exact STRUCTURE theorem, not a probe cell. From the face-diagonal 2-site seed {(0,0,0),(1,1,0)}, N_fill_2=64 of the 512 vanish-on-empty cube-covariant maps fill - and the filler set is characterized exactly, not just counted: a map fills iff f=0 on empty and f=1 on the three orbits (1,0,2), (2,0,1), (3,0,0) (the axis-types with no doubly occupied axis), leaving the other six orbit bits free, hence 2^6=64. The runner verifies set equality with that predicted class, not merely the cardinality. f_L1 fills at T=3 with history (2,7,11,12); f_two (u>=2) halts at 4 locks; f_any (any nonempty tuple) fills with the identical history. This subcube characterization is stronger than the bare N_fill=96 of the 1-site census #6393.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6401,
   "branch": "physics-loop/toe-lphys-block-fill2site-20260815"

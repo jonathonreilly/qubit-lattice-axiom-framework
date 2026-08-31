@@ -1,9 +1,9 @@
 {
  "id": "pr-6385",
  "title": "feat(ftwofill): f_two three-site seed halt census",
- "science": "Bounded_theorem note, no probe cell. Sharpens the #6384 member split from a first-wave difference to an ASYMPTOTIC one. Running the rival predicate f_two (u>=2) from the axis-triple seed {(1,0,0),(0,1,0),(0,0,1)}, the first wave is nonempty -- {(0,0,0) with u=3, plus (0,1,1),(1,0,1),(1,1,0) each with u=2} -- but the iteration reaches a FIXED POINT at T=2 with only 8 locks, and the halt set is exac",
+ "science": "Bounded_theorem note, no probe cell. Sharpens the #6384 member split from a first-wave difference to an ASYMPTOTIC one. Running the rival predicate f_two (u>=2) from the axis-triple seed {(1,0,0),(0,1,0),(0,0,1)}, the first wave is nonempty -- {(0,0,0) with u=3, plus (0,1,1),(1,0,1),(1,1,0) each with u=2} -- but the iteration reaches a FIXED POINT at T=2 with only 8 locks, and the halt set is exactly cube A; the four x=2 sites stay permanently unlocked with u=1. So f_two FREEZES with the patch unfilled, whereas L1 from a 1-site seed fills all 12 in 4 ticks. Two cube-covariant members therefore differ not just in their first wave but in whether the carrier ever saturates. 39/39 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=39 FAIL=0)",
  "source": {
   "pr": 6385,
   "branch": "physics-loop/toe-lphys-block-ftwofill-20260815"

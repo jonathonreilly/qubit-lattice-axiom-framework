@@ -3,7 +3,7 @@
  "title": "feat(nmoutzp): own outgoing set on #7186: reverse HOLD, face HOLD",
  "science": "O-readout on #7186's z-probes, with A a seed so it also records reverse_uses_L(A)=True and reverse_7186_uses_incoming_also_outgoing=False. Fourth member of the O orbit and fourth instance of the tick contradiction: recomputed own-tick O is empty at A, B and C, giving UNDEFINED/UNDEFINED against the reported HOLD/HOLD.",
  "forcing": false,
- "verdict_pair": "reverse=HOLD face=HOLD (as published; own-tick recompute giv",
+ "verdict_pair": "reverse=HOLD face=HOLD (as published; own-tick recompute gives reverse=UNDEFINED face=UNDEFINED)",
  "source": {
   "pr": 7247,
   "branch": "physics-loop/toe-lphys-block-nmoutzp-20260815"

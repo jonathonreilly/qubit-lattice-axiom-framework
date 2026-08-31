@@ -1,9 +1,9 @@
 {
  "id": "pr-6614",
  "title": "feat(c7q6): cov7>0 is not Q6; positivity implies Q6",
- "science": "Exact positive containment (pos_implies_Q6=1, Q6_FALSE_POS empty, N_pos=N_both=24) AND the complementary half of the hidden law: Q6_TRUE_ZEROS is exactly {wt1=1, adj2=0, vertex3=0}, so cov7>0 = Q6 minus the wt1-only maps = exactly (adj2 OR vertex3) - independently reproducing what #6612's mismatch sets give and matching #6602/#6613 at k=11. Prose defects (no stubbed checks here): the H1 title says",
+ "science": "Exact positive containment (pos_implies_Q6=1, Q6_FALSE_POS empty, N_pos=N_both=24) AND the complementary half of the hidden law: Q6_TRUE_ZEROS is exactly {wt1=1, adj2=0, vertex3=0}, so cov7>0 = Q6 minus the wt1-only maps = exactly (adj2 OR vertex3) - independently reproducing what #6612's mismatch sets give and matching #6602/#6613 at k=11. Prose defects (no stubbed checks here): the H1 title says 'Equals Displayed wt1 OR adj2' for a Q6 note; 'Q6 was already named at k=4' twice (k=6); 'cov7(f)=|{S:|S|=3...}|' and 'C(12,7)=792 subsets of size 3'; 'Opp2, vertex3, and mixed3 are free in Q6' when vertex3 is a Q6 disjunct; the lex-first miss (1,0,0,0,0) glossed 'Q6 is true (adj2 = 1)' when that map has adj2=0; N8 gives the triple as (20,24,20) vs Theorem 2's (24,28,24); N7 says 'all twenty positive maps'; PASS thm1-host says '220 7-site seeds'.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q6",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q6=1, N_pos=24, N_Q6=28, N_both=24, N_mismatch=4)",
  "source": {
   "pr": 6614,
   "branch": "physics-loop/toe-lphys-block-c7q6-20260815"

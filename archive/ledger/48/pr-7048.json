@@ -1,7 +1,7 @@
 {
  "id": "pr-7048",
  "title": "feat(trec): t is not a function of unique lock L",
- "science": "51 unique-lock sites on the 1-seed process; formation tick t is NOT a function of the unique lock letter L - witness (0,1,0) with L=+e_2 at t=1 and (0,3,0) with L=+e_2 at t=5, robust to dropping the seed. The note draws the axiom-level consequence: Record readout is content-alone, so reverse HOLD cannot be Record content-alone. This is a forcing negative against reading the causal/tick structure o",
+ "science": "51 unique-lock sites on the 1-seed process; formation tick t is NOT a function of the unique lock letter L - witness (0,1,0) with L=+e_2 at t=1 and (0,3,0) with L=+e_2 at t=5, robust to dropping the seed. The note draws the axiom-level consequence: Record readout is content-alone, so reverse HOLD cannot be Record content-alone. This is a forcing negative against reading the causal/tick structure off record content.",
  "forcing": false,
  "verdict_pair": "none",
  "source": {

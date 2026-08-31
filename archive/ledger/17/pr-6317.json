@@ -1,9 +1,9 @@
 {
  "id": "pr-6317",
  "title": "feat(octid): 24 cube rotations are not C24 or D12",
- "science": "Bounded_theorem note, no probe cell. INDEPENDENT REPROOF of a spine step already proved in #6276: G (24 signed 3x3 permutation matrices, det=+1) is neither C_24 nor D_12. The route is deliberately different -- a pure element-ORDER CENSUS over Z with multiplicities 1:1, 2:9, 3:8, 4:6, max order 4, so no element of order 12 or 24 exists. The note states explicitly that it does NOT use the four-space",
+ "science": "Bounded_theorem note, no probe cell. INDEPENDENT REPROOF of a spine step already proved in #6276: G (24 signed 3x3 permutation matrices, det=+1) is neither C_24 nor D_12. The route is deliberately different -- a pure element-ORDER CENSUS over Z with multiplicities 1:1, 2:9, 3:8, 4:6, max order 4, so no element of order 12 or 24 exists. The note states explicitly that it does NOT use the four-space-diagonal action and is independent of the S_4 isomorphism, so this is a second independent proof of the same rigidity step. Also carries an internal inconsistency: the runner docstring and the 'no-cache-write' check assert 'No cache write, no citation manifest', yet the PR diff adds both a runner-cache file and a citation_graph_manifest.json entry. 21/21 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=21 FAIL=0)",
  "source": {
   "pr": 6317,
   "branch": "physics-loop/toe-lphys-block-octid-20260814"

@@ -1,7 +1,7 @@
 {
  "id": "pr-6132",
  "title": "Block 42: localize physical flat connection instability",
- "science": "Block 42: proves the unchanged EC flat branch is UNSTABLE \u2014 K_action(B,B) <= -0.0304635 on every finite periodic L>=3 carrier for the physical connection mode B (local-frame tangent rank rises 162->163), using an exterior-uniform six-neighbor orbit floor p_S > 0.18 with no mean-field replacement. Together with the Block-41 spin-two gap this kills the unchanged EC route to gravity and forces the pi",
+ "science": "Block 42: proves the unchanged EC flat branch is UNSTABLE \u2014 K_action(B,B) <= -0.0304635 on every finite periodic L>=3 carrier for the physical connection mode B (local-frame tangent rank rises 162->163), using an exterior-uniform six-neighbor orbit floor p_S > 0.18 with no mean-field replacement. Together with the Block-41 spin-two gap this kills the unchanged EC route to gravity and forces the pivot back to the repaired Regge sector at Block 43.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

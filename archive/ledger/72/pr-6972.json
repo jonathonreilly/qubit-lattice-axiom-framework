@@ -3,7 +3,7 @@
  "title": "feat(c2d4k1): cost-2 max\u22654 out-face same-k holds at k=1: t=3 vs t=5",
  "science": "k=1 for c2d4 on B_6(0). Self-admitted vacuity, same as #6960: 'On every nearest-neighbor hop that remains inside B_6(0), c2d4 equals rho3' -- the floor-4 clause cannot fire inside the host. (3,5) is the rho3 pair.",
  "forcing": false,
- "verdict_pair": "reverse=YES at k=1 under a rule the note admits is idle on t",
+ "verdict_pair": "reverse=YES at k=1 under a rule the note admits is idle on the host (band bit) face=absent",
  "source": {
   "pr": 6972,
   "branch": "physics-loop/toe-lphys-block-c2d4k1-20260815"

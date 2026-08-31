@@ -1,9 +1,9 @@
 {
  "id": "pr-6238",
  "title": "[physics-loop] toe-lphys c1restr: bounded_theorem / bounded-support",
- "science": "Bounded_theorem note, no probe cell. Locality/restriction theorem on the Record axiom's readout: on W={x,y}, U={x}, the two unit-A histories h10=(A,0), h01=(0,A) give (I_W,I_U)=(1,1) and (1,0), so NO function f exists with f(I_W(h))=I_U(h) -- the axiom's scalar additive I is NOT restriction-stable, while site-indexed J restricts by evaluation. Concludes a scalar on W is not a local field, so the c",
+ "science": "Bounded_theorem note, no probe cell. Locality/restriction theorem on the Record axiom's readout: on W={x,y}, U={x}, the two unit-A histories h10=(A,0), h01=(0,A) give (I_W,I_U)=(1,1) and (1,0), so NO function f exists with f(I_W(h))=I_U(h) -- the axiom's scalar additive I is NOT restriction-stable, while site-indexed J restricts by evaluation. Concludes a scalar on W is not a local field, so the current Record readout cannot restrict; a C1 retype to J is the cheapest change making Record restriction-stable. Targets blocker 'a local TOE readout must be site-indexed'. 17/17 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=17 FAIL=0)",
  "source": {
   "pr": 6238,
   "branch": "physics-loop/toe-lphys-block-c1restr-20260813"

@@ -1,7 +1,7 @@
 {
  "id": "pr-7490",
  "title": "feat(nm2cycfrmz): HOLDING cyclic-frame transport of (m,o_next,o_prev) at t+1 on two-axis opposite z-probes: reverse HOLD, face HOLD",
- "science": "Head of the frame-TRANSPORT family: transport(q) HOLDs iff split HOLDs, Orient=+/-1, and some formed 6-NN r admits a sending P=F(q)^T F(r) that is a signed permutation with det P = Orient(q)Orient(r). DEFECT: both conditions are identities. F(q),F(r) are always signed-permutation matrices, so P always is and det P always equals Orient(q)Orient(r) \u2014 verified exhaustively over all 2304 ordered pairs",
+ "science": "Head of the frame-TRANSPORT family: transport(q) HOLDs iff split HOLDs, Orient=+/-1, and some formed 6-NN r admits a sending P=F(q)^T F(r) that is a signed permutation with det P = Orient(q)Orient(r). DEFECT: both conditions are identities. F(q),F(r) are always signed-permutation matrices, so P always is and det P always equals Orient(q)Orient(r) \u2014 verified exhaustively over all 2304 ordered pairs of the 48 valid frames, and empirically the full predicate equals 'exists a formed 6-NN with a defined frame' on all 44 setups x 2 tie-breaks x 4 probes (0 mismatches). So hold/hold here carries no information about transport. The one non-vacuous variant the same runner prints, scalar neighbour-read (neighbour read at ITS OWN t+1), gives hold at A and fail at B,C,D.",
  "forcing": false,
  "verdict_pair": "reverse=hold face=hold",
  "source": {

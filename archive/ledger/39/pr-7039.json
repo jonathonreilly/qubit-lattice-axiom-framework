@@ -1,7 +1,7 @@
 {
  "id": "pr-7039",
  "title": "feat(seedm): seed -e1: reverse and face hold",
- "science": "Seed lock -e_1 on Euclidean B_3(0): tick-1 6-mask (0,0,1,1,1,1), t(A)=3, t(B)=3, t(C)=4, t(D)=2, reverse HOLDS (27>9), face HOLDS (16>8); mutation controls give the axial mask (1,1,0,0,0,0) for parallel-only and the full mask for no rule. The ticks are identical to the +e_1 seed control inside #7050, so the advertised sign flip of the seed letter changes nothing: the perp rule depends only on the ",
+ "science": "Seed lock -e_1 on Euclidean B_3(0): tick-1 6-mask (0,0,1,1,1,1), t(A)=3, t(B)=3, t(C)=4, t(D)=2, reverse HOLDS (27>9), face HOLDS (16>8); mutation controls give the axial mask (1,1,0,0,0,0) for parallel-only and the full mask for no rule. The ticks are identical to the +e_1 seed control inside #7050, so the advertised sign flip of the seed letter changes nothing: the perp rule depends only on the lock AXIS.",
  "forcing": false,
  "verdict_pair": "reverse=holds face=holds",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-7576",
  "title": "feat(nm2holyz3z): yz-plane cyclic-frame holonomy at t+1 on three-axis opposite near-face seed: reverse HOLD, face fails",
- "science": "Own-square holonomy (no neighbor conjunct) on 3N yz squares. This is the band's canonical object and the cleanest instance of the reader's theorem: P(q,r)=F(q)^-1 F(r) is pure gauge, so the four-edge product telescopes to the identity and holonomy=hold reduces exactly to 'all four vertices 1-in/2-out split-HOLD'. Verified on 5,724 unit squares and 40,141 closed loops of length 4-12: never once non",
+ "science": "Own-square holonomy (no neighbor conjunct) on 3N yz squares. This is the band's canonical object and the cleanest instance of the reader's theorem: P(q,r)=F(q)^-1 F(r) is pure gauge, so the four-edge product telescopes to the identity and holonomy=hold reduces exactly to 'all four vertices 1-in/2-out split-HOLD'. Verified on 5,724 unit squares and 40,141 closed loops of length 4-12: never once non-identity.",
  "forcing": false,
  "verdict_pair": "reverse=hold face=fail",
  "source": {

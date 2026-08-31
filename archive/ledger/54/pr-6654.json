@@ -1,7 +1,7 @@
 {
  "id": "pr-6654",
  "title": "feat(skew3): off-axis third seed yields unequal-n 4-NN sites",
- "science": "Geometry that BREAKS the #6652 stabilizer obstruction, not a probe cell: moving the third radius-2 seed off the coordinate L to (1,2,1) (U = B_2(0) u B_2((2,0,0)) u B_2((1,2,1)), |U|=62, pairwise overlaps 7/4/4, triple overlap 2) yields N_4=7 unread 4-occupied-NN sites of which N_uneq=4 have ambiguous neighbours with UNEQUAL n and NO tied opposite pair at all, so there is no Stab slot-swap to forc",
+ "science": "Geometry that BREAKS the #6652 stabilizer obstruction, not a probe cell: moving the third radius-2 seed off the coordinate L to (1,2,1) (U = B_2(0) u B_2((2,0,0)) u B_2((1,2,1)), |U|=62, pairwise overlaps 7/4/4, triple overlap 2) yields N_4=7 unread 4-occupied-NN sites of which N_uneq=4 have ambiguous neighbours with UNEQUAL n and NO tied opposite pair at all, so there is no Stab slot-swap to force equal letters and opposite labels become equivariance-allowed; lex-first breaker v=(-1,1,1). Full seven-site table with every kernel is given. Controlled: replacing (1,2,1) by the axis-aligned (0,2,0) restores N_uneq = N_noswap = 0, so the off-axis placement is load-bearing. N_noswap=0 throughout.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

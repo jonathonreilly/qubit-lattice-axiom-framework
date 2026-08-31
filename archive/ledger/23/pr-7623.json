@@ -1,7 +1,7 @@
 {
  "id": "pr-7623",
  "title": "feat(nm2frm1szt): directed 1-step cyclic-frame transport along -e3 freeze t+1 vs t+2 on two-axis opposite seed: reverse HOLD, face HOLD, com",
- "science": "Freeze of #7622: same cell evaluated at per-site offsets t+1 and t+2, composition HOLD iff the four bits agree across cuts. This is the band's only genuine stability test and it is a real (if small) result: the HOLD/HOLD verdict survives reading one tick later. Note the irony \u2014 the band's own stability test uses the per-site cut, while 18 sibling PRs read every site at a fixed global tau=1 and nev",
+ "science": "Freeze of #7622: same cell evaluated at per-site offsets t+1 and t+2, composition HOLD iff the four bits agree across cuts. This is the band's only genuine stability test and it is a real (if small) result: the HOLD/HOLD verdict survives reading one tick later. Note the irony \u2014 the band's own stability test uses the per-site cut, while 18 sibling PRs read every site at a fixed global tau=1 and never compare.",
  "forcing": false,
  "verdict_pair": "reverse=hold face=hold composition=hold",
  "source": {

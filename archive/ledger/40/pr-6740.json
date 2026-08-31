@@ -1,9 +1,9 @@
 {
  "id": "pr-6740",
  "title": "feat(011rev8): (0,1,1) reverses body and both faces on B8",
- "science": "Introduces a NEW comparator axis for the series: the face-diagonal reverse test t(b)^2|a|^2 < t(a)^2|b|^2. Under (0,1,1) on B_8(0): t(4,0,0)=8, t(2,2,2)=6, t(3,3,0)=6, t(4,4,0)=8, t(6,0,0)=10, t(8,0,0)=14; body reverse holds (768>576) and BOTH face pairs reverse (576<1152; 4096<6272). Honest scope discipline: (4,4,4) has |v|_1=12 so the doubled body pair is declared not a B_8 comparison rather tha",
+ "science": "Introduces a NEW comparator axis for the series: the face-diagonal reverse test t(b)^2|a|^2 < t(a)^2|b|^2. Under (0,1,1) on B_8(0): t(4,0,0)=8, t(2,2,2)=6, t(3,3,0)=6, t(4,4,0)=8, t(6,0,0)=10, t(8,0,0)=14; body reverse holds (768>576) and BOTH face pairs reverse (576<1152; 4096<6272). Honest scope discipline: (4,4,4) has |v|_1=12 so the doubled body pair is declared not a B_8 comparison rather than faked. NOTE for the roll-up: 'face' here means a face-diagonal reverse bit, not the family template's face HOLD/fails verdict.",
  "forcing": false,
- "verdict_pair": "reverse(body)=YES face=YES both face pairs (different sense ",
+ "verdict_pair": "reverse(body)=YES face=YES both face pairs (different sense from the family HOLD/fails pair)",
  "source": {
   "pr": 6740,
   "branch": "physics-loop/toe-lphys-block-011rev8-20260815"

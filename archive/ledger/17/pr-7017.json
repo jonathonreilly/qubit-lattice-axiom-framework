@@ -1,9 +1,9 @@
 {
  "id": "pr-7017",
  "title": "feat(cnttab): occupancy first-wave 6-mask is all-six; seed-content mask is +e1 only",
- "science": "Register shift: synchronous FORMATION-TICK, not Dijkstra. On the origin-plus-six-NN star the axioms' own L1 occupancy rule (n=d/3, fire iff n!=0) forms all six neighbours at tick 1, mask (1,1,1,1,1,1); a named seed-content NN rule forms only +e1, mask (1,0,0,0,0,0). On B_3(0) the occupancy formation-tick gives t(1,0,0)=1, t(1,1,1)=3, t(2,0,0)=2, t(1,1,0)=2, so BOTH reverse and face bits are FALSE;",
+ "science": "Register shift: synchronous FORMATION-TICK, not Dijkstra. On the origin-plus-six-NN star the axioms' own L1 occupancy rule (n=d/3, fire iff n!=0) forms all six neighbours at tick 1, mask (1,1,1,1,1,1); a named seed-content NN rule forms only +e1, mask (1,0,0,0,0,0). On B_3(0) the occupancy formation-tick gives t(1,0,0)=1, t(1,1,1)=3, t(2,0,0)=2, t(1,1,0)=2, so BOTH reverse and face bits are FALSE; under content-NN both are UNDEFINED (the sites never form). Independent third confirmation that the axiom-native register carries neither bit.",
  "forcing": false,
- "verdict_pair": "reverse=occupancy FALSE / content UNDEFINED; face=occupancy ",
+ "verdict_pair": "reverse=occupancy FALSE / content UNDEFINED; face=occupancy FALSE / content UNDEFINED (formation-tick bits, not family verdicts)",
  "source": {
   "pr": 7017,
   "branch": "physics-loop/toe-lphys-block-cnttab-20260815"

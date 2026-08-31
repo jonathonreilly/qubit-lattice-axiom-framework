@@ -1,9 +1,9 @@
 {
  "id": "pr-6621",
  "title": "feat(c9q6): cov9>0 is not Q6; positivity does not imply Q6",
- "science": "This is the diff that closes the k=9 law, though it only reports a negative. Its two exact mismatch sets - Q6_TRUE_ZEROS = {(1,0,0,0,0),(1,0,0,0,1),(1,1,0,0,0)} and the unique Q6_FALSE_POS = {(0,1,0,0,1)} with cov9=4 - pin the positive set exactly: the six zeros are precisely the maps with adj2=0, vertex3=0 and NOT(opp2 AND mixed3), so cov9>0 iff (adj2 OR vertex3 OR (opp2 AND mixed3)). An exact fo",
+ "science": "This is the diff that closes the k=9 law, though it only reports a negative. Its two exact mismatch sets - Q6_TRUE_ZEROS = {(1,0,0,0,0),(1,0,0,0,1),(1,1,0,0,0)} and the unique Q6_FALSE_POS = {(0,1,0,0,1)} with cov9=4 - pin the positive set exactly: the six zeros are precisely the maps with adj2=0, vertex3=0 and NOT(opp2 AND mixed3), so cov9>0 iff (adj2 OR vertex3 OR (opp2 AND mixed3)). An exact four-bit characterization of 9-site positivity over all 32 maps, never stated in the note, which reports only 'not Q6, and positivity does not imply Q6'. Also makes k=9 the first k in the batch where the one-sided implication into Q6 fails. Internally consistent, no stubs.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q6",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q6=0, N_pos=26, N_Q6=28, N_both=25, N_mismatch=4)",
  "source": {
   "pr": 6621,
   "branch": "physics-loop/toe-lphys-block-c9q6-20260815"

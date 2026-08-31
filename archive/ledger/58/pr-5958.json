@@ -1,7 +1,7 @@
 {
  "id": "pr-5958",
  "title": "[physics-loop][review-loop] toe-time blockG20 (STACKED on #5952) \u2014 Cycle 897: bounded theorem \u2014 the 2/9 target fails at 445 sigma; T7 was mi",
- "science": "Empirical fork certification: under the retained parameterization and measured lepton masses the SL1b binding target 2/9 is excluded at 445 sigma while the tau row (Q=2/3) is compatible at 0.43 sigma - the mass fork picks a number and it is not 2/9; plus the landed 882 wall T7 is proven mis-stated (three reproduced defects, corrected scope, emitted for the audit lane). Forcing negative on the mass",
+ "science": "Empirical fork certification: under the retained parameterization and measured lepton masses the SL1b binding target 2/9 is excluded at 445 sigma while the tau row (Q=2/3) is compatible at 0.43 sigma - the mass fork picks a number and it is not 2/9; plus the landed 882 wall T7 is proven mis-stated (three reproduced defects, corrected scope, emitted for the audit lane). Forcing negative on the mass-anchored binding-target route; no later member restates it.",
  "forcing": true,
  "verdict_pair": "",
  "source": {

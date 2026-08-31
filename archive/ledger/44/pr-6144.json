@@ -1,7 +1,7 @@
 {
  "id": "pr-6144",
  "title": "science: positive two-TT transfer and Record continuity boundary",
- "science": "Block 51: constructs the local constrained symmetric-tensor family with exactly two TT modes, positive one-step Gaussian/OS transfer, and positive-energy symplectic Lorentzian update; exhibits the exact r=0/r=1 transfer fork (identical statics, inequivalent finite-lattice energies, axioms select neither); and proves an isolated Record Ricci-charge increment violates continuity while a balanced nea",
+ "science": "Block 51: constructs the local constrained symmetric-tensor family with exactly two TT modes, positive one-step Gaussian/OS transfer, and positive-energy symplectic Lorentzian update; exhibits the exact r=0/r=1 transfer fork (identical statics, inequivalent finite-lattice energies, axioms select neither); and proves an isolated Record Ricci-charge increment violates continuity while a balanced nearest-neighbor transition gives an exact continuity/Gauss intertwiner.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

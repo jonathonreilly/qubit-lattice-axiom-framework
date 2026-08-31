@@ -1,9 +1,9 @@
 {
  "id": "pr-6787",
  "title": "feat(whyk7): t(7,0,0)=13 via seed-exit to (0,-1,0) then support-drop",
- "science": "Structural explanation of the same-k death in #6786, and the clearest asymptotic statement in the slice: the lex-first walks show the axis arrival pays seed-exit 3 PLUS a final support-drop 3 on top of k-1 unit hops (t(7,0,0)=13 = 7+6), while the body-diagonal walk pays only the seed-exit and then 3k-1 unit hops with NO support drop (t(7,7,7)=23 = 21+2). So t_axis ~ k+6 and t_body ~ 3k+2, and the ",
+ "science": "Structural explanation of the same-k death in #6786, and the clearest asymptotic statement in the slice: the lex-first walks show the axis arrival pays seed-exit 3 PLUS a final support-drop 3 on top of k-1 unit hops (t(7,0,0)=13 = 7+6), while the body-diagonal walk pays only the seed-exit and then 3k-1 unit hops with NO support drop (t(7,7,7)=23 = 21+2). So t_axis ~ k+6 and t_body ~ 3k+2, and the ratio test 3(k+6)^2 vs (3k+2)^2 tends to 3k^2 vs 9k^2 -- the reversal must fail for all large k, which is exactly what the k-sweeps observe.",
  "forcing": false,
- "verdict_pair": "same-k reverse k=7 = NO (507<529), with the two lex-first wa",
+ "verdict_pair": "same-k reverse k=7 = NO (507<529), with the two lex-first walks exhibited",
  "source": {
   "pr": 6787,
   "branch": "physics-loop/toe-lphys-block-whyk7-20260815"

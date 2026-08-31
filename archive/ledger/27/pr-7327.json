@@ -1,7 +1,7 @@
 {
  "id": "pr-7327",
  "title": "physics: derive pincer marginal from Schur response",
- "science": "Block 41: on the Block 174/175 12x4 antiperiodic Dirac-Kahler fixture, the action itself produces the inverse precision the trace grade needs - W=Herm(q^-1)=q^-1 S q^-dagger > 0 with K_W=q^dagger S^-1 q, and Schur-integrating the exterior modes gives K_eff=(W_RR)^-1 exactly, so an additive local Gaussian source yields mu_R(E)=Tr(C_R E) reproducing the parent W9 marginal entry for entry. Separation",
+ "science": "Block 41: on the Block 174/175 12x4 antiperiodic Dirac-Kahler fixture, the action itself produces the inverse precision the trace grade needs - W=Herm(q^-1)=q^-1 S q^-dagger > 0 with K_W=q^dagger S^-1 q, and Schur-integrating the exterior modes gives K_eff=(W_RR)^-1 exactly, so an additive local Gaussian source yields mu_R(E)=Tr(C_R E) reproducing the parent W9 marginal entry for entry. Separation: the same q has two distinct positive completions K_mod=q^dagger q (weights |det q|^-2) and K_W (weights det(S)/|det q|^2), and the law of total probability FAILS on the current objects.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

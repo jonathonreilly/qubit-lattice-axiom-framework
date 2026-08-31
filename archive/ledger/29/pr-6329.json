@@ -1,9 +1,9 @@
 {
  "id": "pr-6329",
  "title": "feat(l1srcid): clock plus shared-face count equals cube-source sum",
- "science": "Bounded_theorem note, no probe cell. EXACT INCLUSION-EXCLUSION LAW linking the L1 clock to the cube source: on every tick, Delta rho(A) + Delta rho(B) = F_tick + S where S = |new locks intersect F*| is the shared-face new-lock count. Verified on both ticks (3+1 = 3+1 = 4; 3+3 = 4+2 = 6), with S shown UNIQUE among integers 0..|F*|=4. Corollaries proved: Delta rho(C) = |new locks in C| with shared v",
+ "science": "Bounded_theorem note, no probe cell. EXACT INCLUSION-EXCLUSION LAW linking the L1 clock to the cube source: on every tick, Delta rho(A) + Delta rho(B) = F_tick + S where S = |new locks intersect F*| is the shared-face new-lock count. Verified on both ticks (3+1 = 3+1 = 4; 3+3 = 4+2 = 6), with S shown UNIQUE among integers 0..|F*|=4. Corollaries proved: Delta rho(C) = |new locks in C| with shared vertices double-counted; F_tick equals the UNION occupancy increment; and the pair-sum of cube increments is therefore never the union increment. This is a source-additivity/double-counting law bearing on the bridge's additivity door. The runner prints cache_write: false and asserts the note contains no runner-cache path, while the PR itself ships one. 35/35 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=35 FAIL=0)",
  "source": {
   "pr": 6329,
   "branch": "physics-loop/toe-lphys-block-l1srcid-20260814"

@@ -1,7 +1,7 @@
 {
  "id": "pr-6644",
  "title": "feat(all4): two of four 4-NN sites have unique-axis agreement",
- "science": "REVERSAL of the #6642/#6643 negative, not a probe cell: the exhaustive census over ALL FOUR 4-NN unread sites of U (not just the lex-first one) shows N_pos=2 - at (1,-1,1) and (1,1,-1) the occupancy-kernel unique-axis labels DO agree with 2 July-3 pair members each (N_agree = [0,2,2,0]), lex-first positive (1,-1,1) with agreeing tuple (+,-,-,0,0,+). Mechanism: at the same-sign corners (1,-1,-1) an",
+ "science": "REVERSAL of the #6642/#6643 negative, not a probe cell: the exhaustive census over ALL FOUR 4-NN unread sites of U (not just the lex-first one) shows N_pos=2 - at (1,-1,1) and (1,1,-1) the occupancy-kernel unique-axis labels DO agree with 2 July-3 pair members each (N_agree = [0,2,2,0]), lex-first positive (1,-1,1) with agreeing tuple (+,-,-,0,0,+). Mechanism: at the same-sign corners (1,-1,-1) and (1,1,1) both unique-axis labels carry one sign, which forces both +-x slots to the other sign and breaks x-axis bicolouring; at the two mixed-sign corners the x axis stays free and two pair members survive. So 'unique-axis forbids firing' - the impression left by scoring only the lex-first witness in #6642/#6643 - is FALSE for this geometry. Every site has mask-count N_fire=4 and N_unique_axis=2.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

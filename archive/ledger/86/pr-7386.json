@@ -1,7 +1,7 @@
 {
  "id": "pr-7386",
  "title": "feat(nm2simsly): simultaneous M and O at t+1 on two-axis same-lock y-probes: reverse HOLD, face HOLD",
- "science": "Template reference for the whole band and the widest single cross-readout table in it: on the two-axis SAME-LOCK seed / y-probes at tau=t+1 the runner computes simultaneous (signed-letter disjointness of M and O), unsigned axis-cover, 1-in-2-out split, forall-perp, leftover-of-M, leftover-of-O and exist-opposite side by side, giving the exact separations sim HOLD vs cover FAIL at D (O={+e_1}, M={-",
+ "science": "Template reference for the whole band and the widest single cross-readout table in it: on the two-axis SAME-LOCK seed / y-probes at tau=t+1 the runner computes simultaneous (signed-letter disjointness of M and O), unsigned axis-cover, 1-in-2-out split, forall-perp, leftover-of-M, leftover-of-O and exist-opposite side by side, giving the exact separations sim HOLD vs cover FAIL at D (O={+e_1}, M={-e_3}, union misses e_2) and 74 passing checks. Independently reproduced exactly.",
  "forcing": false,
  "verdict_pair": "reverse=HOLD face=HOLD",
  "source": {

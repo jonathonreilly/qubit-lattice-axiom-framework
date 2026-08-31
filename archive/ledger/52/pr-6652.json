@@ -1,7 +1,7 @@
 {
  "id": "pr-6652",
  "title": "feat(nstab): tied-n stabilizer swaps slots and forbids equivariant fire",
- "science": "KEYSTONE NO-GO of the two-ball chirality thread - a clean group-theoretic forcing negative, not a probe cell: Stab_{G+}(n1) = Stab_{G+}(n2) = {identity, s} of order 2, where s: (x,y,z) -> (-x,-z,-y) SWAPS the tied slots +x and -x. Any G+-equivariant labeling lambda(slot,n) must be Stab(n)-invariant, hence lambda(+x,n) = lambda(-x,n); but firing requires OPPOSITE x-letters. Exhaustive count: 8 of t",
+ "science": "KEYSTONE NO-GO of the two-ball chirality thread - a clean group-theoretic forcing negative, not a probe cell: Stab_{G+}(n1) = Stab_{G+}(n2) = {identity, s} of order 2, where s: (x,y,z) -> (-x,-z,-y) SWAPS the tied slots +x and -x. Any G+-equivariant labeling lambda(slot,n) must be Stab(n)-invariant, hence lambda(+x,n) = lambda(-x,n); but firing requires OPPOSITE x-letters. Exhaustive count: 8 of the 64 six-slot labelings are Stab-invariant and all give +x and -x the same letter, while all 32 opposite-x labelings fail invariance. Therefore no cube-equivariant local rule fires at either positive site - which is exactly why slot-odd (#6650) had to be non-equivariant. This closes the two-ball route to chirality under the covariance the Admissibility axiom demands.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

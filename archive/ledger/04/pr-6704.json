@@ -1,7 +1,7 @@
 {
  "id": "pr-6704",
  "title": "feat(twomeet): two-seed midplane still closer to Euclidean than l1",
- "science": "Two-seed extension with an honest vacuity disclosure, not a probe cell: on U = B_4(0) u B_4((2,0,0)) (195 sites, 828 edges, one pair of Dijkstras) the first-meeting set M under the named rho is the singleton {(1,0,0)} at t=3, and the SAME singleton under l1 at t=1 - so the intended variance comparison on M is 0 vs 0 and vacuous, which the note states outright rather than reporting a win. It then m",
+ "science": "Two-seed extension with an honest vacuity disclosure, not a probe cell: on U = B_4(0) u B_4((2,0,0)) (195 sites, 828 edges, one pair of Dijkstras) the first-meeting set M under the named rho is the singleton {(1,0,0)} at t=3, and the SAME singleton under l1 at t=1 - so the intended variance comparison on M is 0 vs 0 and vacuous, which the note states outright rather than reporting a win. It then moves the comparison to the 25-site simultaneous-arrival midplane E (identical set under rho and under l1), where var(|v-s0|_2/t0) is 0.00033709642621 under rho against 0.00995038158264 under l1 - roughly thirtyfold closer to a common ratio. Corroborates #6702's isotropy improvement in a genuinely two-seed geometry.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

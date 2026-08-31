@@ -1,7 +1,7 @@
 {
  "id": "pr-6664",
  "title": "feat(deleq): claim-delta sign product commutes with 3 of 24",
- "science": "Third distinct tie-break tested and also found non-covariant, not a probe cell: the claim-delta sign-product rule (label = product of the signs of the nonzero coordinates of delta = w - s*(w) when the history kernel is tied) rebuilds the FIRING 6-tuple c=(+,0,+,-,0,-) at v=(-1,1,1), but commutes with only N_commute=3 of 24 proper rotations - the identity and the two sign-free 3-cycles of the axes,",
+ "science": "Third distinct tie-break tested and also found non-covariant, not a probe cell: the claim-delta sign-product rule (label = product of the signs of the nonzero coordinates of delta = w - s*(w) when the history kernel is tied) rebuilds the FIRING 6-tuple c=(+,0,+,-,0,-) at v=(-1,1,1), but commutes with only N_commute=3 of 24 proper rotations - the identity and the two sign-free 3-cycles of the axes, named explicitly. Every other rotation flips an odd number of support signs, moves the unique-axis letter, or changes the lex-first nearest seed on a tied neighbour. Together with #6650 (3/24) and #6657 (1/24), all three firing tie-breaks tried on this geometry fail cube covariance.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

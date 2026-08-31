@@ -1,7 +1,7 @@
 {
  "id": "pr-7320",
  "title": "physics: construct protected cavity Record birth process",
- "science": "Block 34: replaces Block 33 supplied append order with an explicit range-two formation-rate Law - recurring unit-rate proposal clocks, a coherent-payload cavity hold, and an anti-cluster clause - giving a translation/proper-cubic-equivariant Borel pure-birth process, locally nonexplosive by Harris construction, with every fixed site forming in finite abstract time a.s. Explicitly NOT a reliable co",
+ "science": "Block 34: replaces Block 33 supplied append order with an explicit range-two formation-rate Law - recurring unit-rate proposal clocks, a coherent-payload cavity hold, and an anti-cluster clause - giving a translation/proper-cubic-equivariant Borel pure-birth process, locally nonexplosive by Harris construction, with every fixed site forming in finite abstract time a.s. Explicitly NOT a reliable compiler: cavity-shadow and mixed-front collisions can release a target early.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

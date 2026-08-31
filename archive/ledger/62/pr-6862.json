@@ -1,7 +1,7 @@
 {
  "id": "pr-6862",
  "title": "physics: build the m-block measurement theory across the family (block 146)",
- "science": "The m-block measurement theory: on Sym_2(R)^m the state space is 3m-1 dimensional with exactly m disjoint RP^1 circles of pure states; every conjugate-pair vacuum block is I/2 by force with the self-conjugate block the only biased one; momentum commutant span{I_j,Z_j} proven for general m; the general-m table verified m=2..7 and the rate collision identified as a 4|N phenomenon. Strongest form of ",
+ "science": "The m-block measurement theory: on Sym_2(R)^m the state space is 3m-1 dimensional with exactly m disjoint RP^1 circles of pure states; every conjugate-pair vacuum block is I/2 by force with the self-conjugate block the only biased one; momentum commutant span{I_j,Z_j} proven for general m; the general-m table verified m=2..7 and the rate collision identified as a 4|N phenomenon. Strongest form of the observable/measurement program (generalizes block 133); no later member restates it -- 150+ pivot to the joint lane.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

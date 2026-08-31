@@ -1,9 +1,9 @@
 {
  "id": "pr-6772",
  "title": "feat(k6fail): k=6 face fail on B16: t(12,0,0)=18 vs t(6,6,0)=14",
- "science": "The direct correction counterpart to #6757: same residual (k=6 face reverse, lex-first walks) run on B_16(0) instead of B_12(0), and the answer flips from YES to NO -- 23328 < 28224. Shows why: on B_16 the axis walk reaches (12,-1,0) (|v|_1=13, now in-ball) and pays only ONE cost-3 hop instead of the two forced on B_12, so t(12,0,0)=18 not 20. Also records a clean local fact: all six in-ball neigh",
+ "science": "The direct correction counterpart to #6757: same residual (k=6 face reverse, lex-first walks) run on B_16(0) instead of B_12(0), and the answer flips from YES to NO -- 23328 < 28224. Shows why: on B_16 the axis walk reaches (12,-1,0) (|v|_1=13, now in-ball) and pays only ONE cost-3 hop instead of the two forced on B_12, so t(12,0,0)=18 not 20. Also records a clean local fact: all six in-ball neighbours of (12,0,0) have incoming nu-cost 3, while four of the six neighbours of (6,6,0) cost 1.",
  "forcing": false,
- "verdict_pair": "face reverse k=6 = NO on B_16 (23328<28224), contradicting t",
+ "verdict_pair": "face reverse k=6 = NO on B_16 (23328<28224), contradicting the YES on B_12 in #6757",
  "source": {
   "pr": 6772,
   "branch": "physics-loop/toe-lphys-block-k6fail-20260815"

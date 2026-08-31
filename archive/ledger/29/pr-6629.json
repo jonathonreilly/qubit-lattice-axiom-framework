@@ -1,9 +1,9 @@
 {
  "id": "pr-6629",
  "title": "feat(l1mink): displayed L1 ell1 arrival is not Minkowski light",
- "science": "FORCING NEGATIVE, not a probe cell: three theorems proving the displayed L1 (taxicab) arrival t=|v|_1 on Z^3 is not Minkowski light - (1) t^2/|v|_2^2 is non-constant (1 at (1,0,0) vs 2 at (1,1,0), scale-invariant so no rescaling repairs it), (2) the discrete l2 null set is exactly the 24 axis points inside the 128-point radius-4 ball, (3) all 24 proper cube rotations preserve every l1 sphere and n",
+ "science": "FORCING NEGATIVE, not a probe cell: three theorems proving the displayed L1 (taxicab) arrival t=|v|_1 on Z^3 is not Minkowski light - (1) t^2/|v|_2^2 is non-constant (1 at (1,0,0) vs 2 at (1,1,0), scale-invariant so no rescaling repairs it), (2) the discrete l2 null set is exactly the 24 axis points inside the 128-point radius-4 ball, (3) all 24 proper cube rotations preserve every l1 sphere and never mix t with x, unlike the gamma=5/4 boost. Also states the exact l1-sphere count 4r^2+2 (6,18,38,66). Directly supports the arc's 'Z^3 not relativistic' forcing negative.",
  "forcing": false,
- "verdict_pair": "none stated (no reverse/face verdicts in the diff; 'face' oc",
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff; 'face' occurrences are the face-diagonal witness)",
  "source": {
   "pr": 6629,
   "branch": "physics-loop/toe-lphys-block-l1mink-20260815"

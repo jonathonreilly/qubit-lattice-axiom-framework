@@ -1,7 +1,7 @@
 {
  "id": "pr-7036",
  "title": "[physics-loop] fresh-ancilla staged cq/Record intertwiner \u2014 bounded theorem \u2014 bounded support",
- "science": "Block 7: the two-stage append-only path channel is intertwined EXACTLY with each flat ternary instrument for every Hermitian input, with no scalar probability table as input (a channel identity, not a weight calibration); explicit append-aware writer on three memory qubits; capacity boundary that M2+M2 (dim 8) and the ternary cq algebra (dim 12) cannot be faithfully represented inside one M2 site ",
+ "science": "Block 7: the two-stage append-only path channel is intertwined EXACTLY with each flat ternary instrument for every Hermitian input, with no scalar probability table as input (a channel identity, not a weight calibration); explicit append-aware writer on three memory qubits; capacity boundary that M2+M2 (dim 8) and the ternary cq algebra (dim 12) cannot be faithfully represented inside one M2 site by a complex-linear/*-algebraic encoding, while an injective real-affine code shows arbitrary one-site codes are not excluded.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

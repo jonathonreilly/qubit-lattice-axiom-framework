@@ -3,7 +3,7 @@
  "title": "feat(filt4): cost-1 filter survives on four masks all empty in -z",
  "science": "Names WHICH 4 of the 12 perp-mask hosts survive the cost-1 hop-cost readiness filter and which 8 die, and machine-asserts the exact iff-classification: survivors are precisely the masks with +z occupied and -z empty (check 'plus-z-occupied-minus-z-empty'). Refinement/duplicate of #6709, which already states the same characterization.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports survivors_bitall 4-list,",
+ "verdict_pair": "reverse=absent face=absent (reports survivors_bitall 4-list, deaths_bitall 8-list)",
  "source": {
   "pr": 6713,
   "branch": "physics-loop/toe-lphys-block-filt4-20260815"

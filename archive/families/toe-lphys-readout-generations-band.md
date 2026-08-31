@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: six readout generations (toe-lphys-20260812, #7188–#7250)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 Six readout generations (S⁺ union-own-lock, own incoming M, own outgoing O,
 two-tick composition, Cl(3,0) plaquette, neighbour-read R) over the fixed
 perp-step process. Reader recomputed 31/44 cells number-for-number (all

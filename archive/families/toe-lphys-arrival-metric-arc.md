@@ -1,5 +1,12 @@
 # Sub-campaign roll-up: the arrival-metric / emergent-isotropy arc (toe-lphys-20260812, 2026-08-17 band, ~#6706–#6792)
 
+> Record-only roll-up: statements aggregate what the member PRs' notes and
+> runners reported and, where marked, what the consolidation reader's
+> recomputation observed. Nothing here is a repo claim or promotion;
+> theorem-grade wording is the archived work's own, quoted. See
+> `archive/README.md`.
+
+
 A single coherent search: a nearest-neighbour hop-cost on Z³ whose Dijkstra
 first-arrival metric is less anisotropic than l¹. Rules: ν (support-drop),
 ρ (equal-inward-weight), (0,1,1), μ (corridor-slide). Hosts B6–B24. Full-diff

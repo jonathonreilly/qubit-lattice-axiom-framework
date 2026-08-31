@@ -1,7 +1,7 @@
 {
  "id": "pr-7786",
  "title": "[physics-loop] derive arbitrary-width scalar-fused vector transfer",
- "science": "Arbitrary-r scalar-fused vector transfer: exact q=1 vacuum-to-vector response for every fixed r>=2, all lower derivatives vanish, normalized complement overlap 3^(1-r), resummed to a three-state transfer plus exact two-state endpoint subtraction, small-step coefficient (2^r-2)/3^(r-1). Direct authority of Block244 (convention, proper-subset carrier, conditional-Haar map, cubic normalization) - the",
+ "science": "Arbitrary-r scalar-fused vector transfer: exact q=1 vacuum-to-vector response for every fixed r>=2, all lower derivatives vanish, normalized complement overlap 3^(1-r), resummed to a three-state transfer plus exact two-state endpoint subtraction, small-step coefficient (2^r-2)/3^(r-1). Direct authority of Block244 (convention, proper-subset carrier, conditional-Haar map, cubic normalization) - the r-generalization backbone of the whole r=3 arc.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

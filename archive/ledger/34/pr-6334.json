@@ -1,9 +1,9 @@
 {
  "id": "pr-6334",
  "title": "feat(l1tick): two-tick L1 clock is lock-count minus seed",
- "science": "Bounded_theorem note with a full N1-N8 gate, no probe cell. FALSE-IDENTITY / NEAR-MISS WARNING, exactly the kind of finding a verdict roll-up would lose. It identifies the clock as the formation count F_t = |locks_t| - 1 (seed excluded) and then shows F is NOT cube-A occupancy: F_1=3 vs rho(A)_1=4, while the later agreement F_2 = rho(A)_2 = 7 is a COINCIDENCE produced by two cancelling errors -- r",
+ "science": "Bounded_theorem note with a full N1-N8 gate, no probe cell. FALSE-IDENTITY / NEAR-MISS WARNING, exactly the kind of finding a verdict roll-up would lose. It identifies the clock as the formation count F_t = |locks_t| - 1 (seed excluded) and then shows F is NOT cube-A occupancy: F_1=3 vs rho(A)_1=4, while the later agreement F_2 = rho(A)_2 = 7 is a COINCIDENCE produced by two cancelling errors -- rho(A) already counted the seed and missed the B-only lock (2,0,0). Exact decomposition given: F_2 = rho(A)_2 - 1 + |locks_2 \\ A|; dropping (2,0,0) breaks the meeting (6 vs 7). Plus two-tick additivity F_2 = F_1 + F_tick2 (7=3+4), and rho(A) shown NOT additive the same way (increment 3, not 4). RUNNER DEFECT: the check named 'source-no-time-metric-or-production-process' actually asserts that the strings 'time metric' and 'record-production process' ARE PRESENT in the axiom memo -- the condition tests the opposite of what the label claims. Also uses the OR-neighbourhood tick, not the n!=0 kernel (they coincide on this seed but differ in general). 30/30 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=30 FAIL=0)",
  "source": {
   "pr": 6334,
   "branch": "physics-loop/toe-lphys-block-l1tick-20260814"

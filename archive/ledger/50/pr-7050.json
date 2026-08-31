@@ -1,7 +1,7 @@
 {
  "id": "pr-7050",
  "title": "feat(nnseed): two-site seed: reverse and face hold",
- "science": "Two-record seed {0,(0,1,0)} with perp-consistent locks +e_1/+e_2: origin mask (0,0,0,1,1,1), t(A)=2, t(B)=2, t(C)=3, t(D)=1, reverse HOLDS, face HOLDS. Carries the decisive 1-site control on the same host - mask (0,0,1,1,1,1) and ticks (3,3,4,2) - proving that adding one extra record at tick 0 changes every probe tick and the whole verdict pair. Seed CARDINALITY, not geometry, drives the reverse/f",
+ "science": "Two-record seed {0,(0,1,0)} with perp-consistent locks +e_1/+e_2: origin mask (0,0,0,1,1,1), t(A)=2, t(B)=2, t(C)=3, t(D)=1, reverse HOLDS, face HOLDS. Carries the decisive 1-site control on the same host - mask (0,0,1,1,1,1) and ticks (3,3,4,2) - proving that adding one extra record at tick 0 changes every probe tick and the whole verdict pair. Seed CARDINALITY, not geometry, drives the reverse/face outcome.",
  "forcing": false,
  "verdict_pair": "reverse=holds face=holds",
  "source": {

@@ -1,7 +1,7 @@
 {
  "id": "pr-7765",
  "title": "physics: couple compact vector matter transfer",
- "science": "Couples compact O(3)-vector matter on the metric/source seam with the SAME group link acting on gauge and matter hopping: reflection-positive source-included joint tensor Gram, injective temporal-gauge transfer on the gauge-invariant space, reciprocal mixed variations, sign falsifiers, and the result that improper determinant sectors and topology survive matter coupling (no sector selection). The ",
+ "science": "Couples compact O(3)-vector matter on the metric/source seam with the SAME group link acting on gauge and matter hopping: reflection-positive source-included joint tensor Gram, injective temporal-gauge transfer on the gauge-invariant space, reciprocal mixed variations, sign falsifiers, and the result that improper determinant sectors and topology survive matter coupling (no sector selection). The most physics-complete carrier in the stack (gauge+matter+source+coframe) - exactly the variables Block232 shows the pure-gauge carrier lacks.",
  "forcing": false,
  "verdict_pair": "",
  "source": {

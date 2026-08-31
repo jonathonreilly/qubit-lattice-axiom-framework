@@ -3,7 +3,7 @@
  "title": "feat(c2d4meet): cost-2 max\u22654 out-face two-seed meet |M|=1 vars 0",
  "science": "Two-seed meet under c2d4: (1,0,0), t=3, |M|=1, var 0 -- identical to #6966/#6976 apart from |E|=385. Carried by #6966.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (|M|=1, var=0, identical to #6966",
+ "verdict_pair": "reverse=absent face=absent (|M|=1, var=0, identical to #6966/#6976)",
  "source": {
   "pr": 6984,
   "branch": "physics-loop/toe-lphys-block-c2d4meet-20260815"

@@ -1,9 +1,9 @@
 {
  "id": "pr-6602",
  "title": "feat(c11q10): cov11>0 is not Q10; positivity implies Q10",
- "science": "Contains an unstated exact selector law: the eight cov11=0 maps it names are precisely the eight tuples with adj2=0 AND vertex3=0 (wt1, opp2, mixed3 free), so cov11>0 iff (adj2 OR vertex3) - an exact 2-bit OR equivalence on all 32 maps, never stated, and in tension with the note's own summary that c11sel found no 1-3-bit selector for cov11>0. It also states the weaker cov11>0 implies Q10 (N_pos=N_",
+ "science": "Contains an unstated exact selector law: the eight cov11=0 maps it names are precisely the eight tuples with adj2=0 AND vertex3=0 (wt1, opp2, mixed3 free), so cov11>0 iff (adj2 OR vertex3) - an exact 2-bit OR equivalence on all 32 maps, never stated, and in tension with the note's own summary that c11sel found no 1-3-bit selector for cov11>0. It also states the weaker cov11>0 implies Q10 (N_pos=N_both=24, q10_false_pos=()). Consistent with #6582's closed form cov11=4+8*vertex3 on Q_*.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; cov11>0_iff_Q10=0, N_po",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; cov11>0_iff_Q10=0, N_pos=24, N_Q10=28, N_both=24, 4 misses)",
  "source": {
   "pr": 6602,
   "branch": "physics-loop/toe-lphys-block-c11q10-20260815"

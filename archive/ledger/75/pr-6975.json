@@ -3,7 +3,7 @@
  "title": "feat(c2d3dbl): cost-2 max\u22653 out-face doubled pairing holds k=1..4",
  "science": "Doubled pairing under c2d3 on B_12(0): the eight arrivals 6,12,18,24 / 5,10,13,16 and all four reverse bits are IDENTICAL to #6965 (w2) and #6983 (c2d4). Only t(3,2,0)/t(4,2,0) differ. Carried by #6965.",
  "forcing": false,
- "verdict_pair": "reverse=YES at k=1..4 (doubled-pairing bit, identical to #69",
+ "verdict_pair": "reverse=YES at k=1..4 (doubled-pairing bit, identical to #6965/#6983) face=absent",
  "source": {
   "pr": 6975,
   "branch": "physics-loop/toe-lphys-block-c2d3dbl-20260815"

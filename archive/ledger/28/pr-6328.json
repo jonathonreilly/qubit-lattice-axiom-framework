@@ -1,9 +1,9 @@
 {
  "id": "pr-6328",
  "title": "feat(l1draw): realized first-wave PVM labels do not feed n",
- "science": "Bounded_theorem note, no probe cell. DECOUPLING THEOREM and one of the most consequential results in this batch: the realized PVM outcome does NOT feed the occupancy kernel. After tick 1, labelling the three first-wave locks all-+ versus mixed (+,-,-) leaves occupancy 1 everywhere, so n at all 8 unread sites is identical in both branches (explicit table given) and the tick-2 formation set is {(1,1",
+ "science": "Bounded_theorem note, no probe cell. DECOUPLING THEOREM and one of the most consequential results in this batch: the realized PVM outcome does NOT feed the occupancy kernel. After tick 1, labelling the three first-wave locks all-+ versus mixed (+,-,-) leaves occupancy 1 everywhere, so n at all 8 unread sites is identical in both branches (explicit table given) and the tick-2 formation set is {(1,1,0),(1,0,1),(0,1,1),(2,0,0)} in both. Consequence: under L1 the Born-like draw is CAUSALLY INERT for subsequent formation -- the geometry/dynamics is deterministic in occupancy while record content alone is stochastic. Guarded by a mutation showing a minus label is NOT vacant occupancy (misreading it changes n at (1,1,0) and (0,1,1)). Bears on records-as-superselection and on whether the Born weight can ever be selected dynamically. 54/54 runner PASS, the largest check count in the batch.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=5",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=54 FAIL=0)",
  "source": {
   "pr": 6328,
   "branch": "physics-loop/toe-lphys-block-l1draw-20260814"

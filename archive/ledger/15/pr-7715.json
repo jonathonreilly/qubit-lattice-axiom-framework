@@ -1,7 +1,7 @@
 {
  "id": "pr-7715",
  "title": "feat(nm2frm2lprd3s): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then +e1 at t+1 on two-axis same-lock seed: reverse fails",
- "science": "Distance-3 of the L-path (-e3 then +e1) on the two-axis same-lock seed. One of only two band cells where the wrapper actually changes the reported pair: bare L-path is (HOLD,fail), the witness conjunct kills the (0,1,0) probe and the pair drops to (fail,fail). Recomputed exact. The kill is a shell-emptiness fact -- D-sweep gives (HOLD,fail) at D=1 then (fail,fail) for all D>=2 -- and the note's ow",
+ "science": "Distance-3 of the L-path (-e3 then +e1) on the two-axis same-lock seed. One of only two band cells where the wrapper actually changes the reported pair: bare L-path is (HOLD,fail), the witness conjunct kills the (0,1,0) probe and the pair drops to (fail,fail). Recomputed exact. The kill is a shell-emptiness fact -- D-sweep gives (HOLD,fail) at D=1 then (fail,fail) for all D>=2 -- and the note's own reason ('same-lock kills the would-be witness at (0,0,2) because its first hop lands on split-fail (0,0,1)') is a split-existence fact, not a transport fact.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

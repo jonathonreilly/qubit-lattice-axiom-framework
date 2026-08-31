@@ -1,9 +1,9 @@
 {
  "id": "pr-6450",
  "title": "feat(v30why1): first f00/f11 shared-face miss is vertex3 at t=3",
- "science": "Mechanism behind #6444's shared-face miss. Running f00=(1,1,1,0,0) and f11=(1,1,1,1,1) independently from each of the four shared-face singletons, the first neighbourhood where f00 refuses and f11 fires is t=3, site (0,1,1), occupancy (1,0,0,1,0,1), axis type vertex3=(3,0,0) - all three axes unbalanced - and the SAME first axis type occurs on all four shared-face seeds. Histories (1,5,10) for f00 ",
+ "science": "Mechanism behind #6444's shared-face miss. Running f00=(1,1,1,0,0) and f11=(1,1,1,1,1) independently from each of the four shared-face singletons, the first neighbourhood where f00 refuses and f11 fires is t=3, site (0,1,1), occupancy (1,0,0,1,0,1), axis type vertex3=(3,0,0) - all three axes unbalanced - and the SAME first axis type occurs on all four shared-face seeds. Histories (1,5,10) for f00 versus (1,5,10,12) for f11. So the shared-face miss is precisely a refusal to fire on a three-axis contrast, and the four misses have a single common cause rather than four separate ones.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6450,
   "branch": "physics-loop/toe-lphys-block-v30why1-20260815"

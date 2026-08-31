@@ -1,7 +1,7 @@
 {
  "id": "pr-7637",
  "title": "feat(nm2frm1spr): neighbor-read of directed 1-step cyclic-frame transport along +e3 at t+1 on two-axis opposite seed: reverse HOLD, face HOL",
- "science": "Neighbor-read of the +e3 1-step, PER-SITE tau: reverse HOLD and face HOLD. This is the direct convention-counterexample to #7633 \u2014 same seed, same direction, same step count, opposite face verdict, difference is only whether the destination is read at tau=1 or at its own t+1. Also a bookkeeping inconsistency: it is a HOLD/HOLD member but its body omits the HOLDING_MEMBER marker that #7622/#7624 ca",
+ "science": "Neighbor-read of the +e3 1-step, PER-SITE tau: reverse HOLD and face HOLD. This is the direct convention-counterexample to #7633 \u2014 same seed, same direction, same step count, opposite face verdict, difference is only whether the destination is read at tau=1 or at its own t+1. Also a bookkeeping inconsistency: it is a HOLD/HOLD member but its body omits the HOLDING_MEMBER marker that #7622/#7624 carry for the identical verdict pair. [Disputed (bookkeeping): the marker omission undercounts the family census; the HOLD/HOLD verdict itself was reproduced by the reader.]",
  "forcing": false,
  "verdict_pair": "reverse=hold face=hold",
  "source": {

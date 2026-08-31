@@ -1,9 +1,9 @@
 {
  "id": "pr-6613",
  "title": "feat(c11q4): cov11>0 is not Q4; positivity does not imply Q4",
- "science": "Same DEFECT CLUSTER as #6612 (two stubbed 'and True' clauses in thm1-pos-implies-q4, PASS line 'positivity implies Q4' against computed pos_implies_Q4=0, 'PASS thm1-host ... 220 11-site seeds' for a 12-seed run, 'C(12,11)=12 subsets of size 3', 'cov11(f)=|{S:|S|=3...}|', 'N_both=20 equals N_pos' with N_pos=24, No-Go gate and N7 asserting positivity DOES imply Q4 against Theorem 1, N7 calling the l",
+ "science": "Same DEFECT CLUSTER as #6612 (two stubbed 'and True' clauses in thm1-pos-implies-q4, PASS line 'positivity implies Q4' against computed pos_implies_Q4=0, 'PASS thm1-host ... 220 11-site seeds' for a 12-seed run, 'C(12,11)=12 subsets of size 3', 'cov11(f)=|{S:|S|=3...}|', 'N_both=20 equals N_pos' with N_pos=24, No-Go gate and N7 asserting positivity DOES imply Q4 against Theorem 1, N7 calling the lex-first miss 'Q4 true' when Theorem 1 says false, N8 triple (20,24,20) vs (24,24,20), and (1,1,0,0,0) both listed at cov11=0 and said to have cov11=4). BEYOND THAT, the exact mismatch sets it names are the missing law: Q4_TRUE_ZEROS is exactly {wt1=1, adj2=0, vertex3=0} and Q4_FALSE_POS is exactly {vertex3=1, wt1=adj2=0}, so cov11>0 iff (adj2 OR vertex3) - the same 2-bit OR #6602's zero set implies, and by the identical mismatch structure #6612 gives cov7>0 iff (adj2 OR vertex3) too. An exact 2-bit selector for both k=7 and k=11, never stated anywhere, and in tension with the batch's claim that no 1-2-bit OR selects cov7>0.",
  "forcing": false,
- "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4",
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4=0, N_pos=24, N_Q4=24, N_both=20, N_mismatch=8)",
  "source": {
   "pr": 6613,
   "branch": "physics-loop/toe-lphys-block-c11q4-20260815"

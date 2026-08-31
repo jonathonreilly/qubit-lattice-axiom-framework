@@ -1,9 +1,9 @@
 {
  "id": "pr-6752",
  "title": "feat(nuiso12): t=8 has 7 types/5 radii; t=14 has 26 types/15 radii",
- "science": "Extends #6732's isochrone work to B_12(0): complete G+ orbit decomposition of the two reverse-critical shells, t=8 (140 sites, 7 types, 5 radii {12,14,18,20,26}) and t=14 (578 sites, 26 types, 15 radii), with every representative, radius and orbit size listed, plus a machine-checked structural point that G+ chiral pairs at the same radius stay distinct orbits ((3,1,2) vs (3,2,1) at r^2=14; (5,3,4)",
+ "science": "Extends #6732's isochrone work to B_12(0): complete G+ orbit decomposition of the two reverse-critical shells, t=8 (140 sites, 7 types, 5 radii {12,14,18,20,26}) and t=14 (578 sites, 26 types, 15 radii), with every representative, radius and orbit size listed, plus a machine-checked structural point that G+ chiral pairs at the same radius stay distinct orbits ((3,1,2) vs (3,2,1) at r^2=14; (5,3,4) vs (5,4,3) at r^2=50). Confirms (2,2,2) in t=8 and (4,4,4) in t=14, which is the arithmetic behind the doubled-diamond failure in #6736.",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports shell type/radius counts",
+ "verdict_pair": "reverse=absent face=absent (reports shell type/radius counts)",
  "source": {
   "pr": 6752,
   "branch": "physics-loop/toe-lphys-block-nuiso12-20260815"

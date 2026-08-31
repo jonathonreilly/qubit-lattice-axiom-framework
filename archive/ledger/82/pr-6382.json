@@ -1,9 +1,9 @@
 {
  "id": "pr-6382",
  "title": "feat(vacalt): blank neighbor is not occupancy zero",
- "science": "Bounded_theorem note with full N1-N8 gate, no probe cell. FOUNDATIONAL CAVEAT that qualifies every other two-cube result in this batch: the off-patch 'o = 0' fill is LOAD-BEARING, not an axiom consequence. Neighbour input is a 6-tuple over {0,1,blank}; Record's 'a site with no record cannot be read' withholds a readout, it does NOT assign occupancy 0. Under blank-blocked readiness (n defined only ",
+ "science": "Bounded_theorem note with full N1-N8 gate, no probe cell. FOUNDATIONAL CAVEAT that qualifies every other two-cube result in this batch: the off-patch 'o = 0' fill is LOAD-BEARING, not an axiom consequence. Neighbour input is a 6-tuple over {0,1,blank}; Record's 'a site with no record cannot be read' withholds a readout, it does NOT assign occupancy 0. Under blank-blocked readiness (n defined only when the whole six-neighbour star is on-patch and in {0,1}) the first wave is EMPTY -- each axis site has off-patch neighbours, and the runner further certifies that NO unformed site of the two-cube has a closed star, so blank-blocked readiness is empty on the entire patch. So the entire two-cube dynamics of #6284 and #6327-#6343 rests on a boundary convention selected by the modeller, not derived. The note also states 'No runner cache is written' and 'no citation manifest ... is edited' while the PR adds both. 37/37 runner PASS.",
  "forcing": false,
- "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=37 FAIL=0)",
  "source": {
   "pr": 6382,
   "branch": "physics-loop/toe-lphys-block-vacalt-20260815"

@@ -1,7 +1,7 @@
 {
  "id": "pr-7073",
  "title": "feat(nsneighz): z-probe neighbor-lock unique letter all +; reverse and face none",
- "science": "Neighbour-lock named-sign selector on the z-probes: all four recorded-neighbour lock sets are sign-homogeneous `+` (A from the origin +e_1, C from four neighbours all +e_3, D from the seed +e_2), so L=+,+,+,+ and reverse=face=`none`. Contrast with the same selector on the x-probes (#7066), which gave +,+,-,+; the runner carries `not-x-probe-neighbor-lock-letters` as an explicit check that the prob",
+ "science": "Neighbour-lock named-sign selector on the z-probes: all four recorded-neighbour lock sets are sign-homogeneous `+` (A from the origin +e_1, C from four neighbours all +e_3, D from the seed +e_2), so L=+,+,+,+ and reverse=face=`none`. Contrast with the same selector on the x-probes (#7066), which gave +,+,-,+; the runner carries `not-x-probe-neighbor-lock-letters` as an explicit check that the probe frame changes the letters.",
  "forcing": false,
  "verdict_pair": "reverse=none face=none",
  "source": {

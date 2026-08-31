@@ -1,9 +1,9 @@
 {
  "id": "pr-6413",
  "title": "feat(cut2site): N_cut2=4 F_cut fillers from 2-site face-diagonal",
- "science": "A genuine seed-dependence result with an exact subcube characterization. From the face-diagonal 2-site seed {(0,0,0),(1,1,0)}, N_cut2=4 of the 32 F_cut maps fill, and the filler set is characterized exactly: fills iff wt1=adj2=vertex3=1, with (opp2, mixed3) free. Compare the 1-site seed (#6399/#6410) where the forced bits are only {wt1, adj2} and vertex3 is free, giving 8. So changing the seed cha",
+ "science": "A genuine seed-dependence result with an exact subcube characterization. From the face-diagonal 2-site seed {(0,0,0),(1,1,0)}, N_cut2=4 of the 32 F_cut maps fill, and the filler set is characterized exactly: fills iff wt1=adj2=vertex3=1, with (opp2, mixed3) free. Compare the 1-site seed (#6399/#6410) where the forced bits are only {wt1, adj2} and vertex3 is free, giving 8. So changing the seed changes WHICH orbits the dynamics actually probes, and the face-diagonal 2-site seed is strictly more discriminating inside F_cut (8 -> 4) because it forces vertex3 on. Read against #6411/#6412 this is the constructive half: the carrier's blind spots are seed-dependent, so a seed can be chosen to expose a chosen orbit. f_L1 fills at T=3 with (2,7,11,12); the second filler (1,0,1,1,0) has the identical history.",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-verdict campaign phase)",
  "source": {
   "pr": 6413,
   "branch": "physics-loop/toe-lphys-block-cut2site-20260815"

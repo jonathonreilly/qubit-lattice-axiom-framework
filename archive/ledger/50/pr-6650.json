@@ -1,7 +1,7 @@
 {
  "id": "pr-6650",
  "title": "feat(slotn): slot-odd tie-break fires at both sites but is not cube-equivariant",
- "science": "Escape found and immediately costed, not a probe cell: the slot-odd tie-break (label(+mu)=+, label(-mu)=-) is NON-local in n, so it evades the #6648/#6649 no-go, and it does fire at BOTH positive sites - c(v1)=(+,-,-,0,0,+) and c(v2)=(+,-,0,+,-,0), N_fire=1 each. But it is not cube-equivariant on the star: it commutes with only 3 of the 24 proper rotations (exactly the all-positive even axis permu",
+ "science": "Escape found and immediately costed, not a probe cell: the slot-odd tie-break (label(+mu)=+, label(-mu)=-) is NON-local in n, so it evades the #6648/#6649 no-go, and it does fire at BOTH positive sites - c(v1)=(+,-,-,0,0,+) and c(v2)=(+,-,0,+,-,0), N_fire=1 each. But it is not cube-equivariant on the star: it commutes with only 3 of the 24 proper rotations (exactly the all-positive even axis permutations), because a rotation sending +x to -x transports (+,-) while rebuilding writes (+,-) again on the named axis. Since Admissibility requires covariance under proper cubic rotations, this makes slot-odd inadmissible as the fixed rule.",
  "forcing": false,
  "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
  "source": {

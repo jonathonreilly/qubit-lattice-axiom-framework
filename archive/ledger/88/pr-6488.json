@@ -3,7 +3,7 @@
  "title": "feat(wt0oppwhy): first refused neighborhood on the #6484 opp2 split",
  "science": "reverse=none face=none (f_cut refusal-mechanism census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut refusal-mechanism census; no (",
+ "verdict_pair": "reverse=none face=none (f_cut refusal-mechanism census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6488,
   "branch": "physics-loop/toe-lphys-block-wt0oppwhy-20260815"

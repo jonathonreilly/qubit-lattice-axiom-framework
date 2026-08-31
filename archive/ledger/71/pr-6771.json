@@ -1,9 +1,9 @@
 {
  "id": "pr-6771",
  "title": "feat(why18): t(12,0,0)=18 via detour that leaves B12 at (12,-1,0)",
- "science": "Supplies the mechanism behind #6769's k=6 correction: exhibits the lex-first shortest nu-walk to (12,0,0) on B_16(0) and shows it LEAVES B_12 at (12,-1,0) (|v|_1=13) before the final support-drop hop, which is exactly why t(12,0,0) falls from 20 on B_12 to 18 on B_16. Direct evidence that the B_12 k=6 face-reverse 'return' was a ball-wall artifact. Includes a lex-order control (a lex-smaller walk ",
+ "science": "Supplies the mechanism behind #6769's k=6 correction: exhibits the lex-first shortest nu-walk to (12,0,0) on B_16(0) and shows it LEAVES B_12 at (12,-1,0) (|v|_1=13) before the final support-drop hop, which is exactly why t(12,0,0) falls from 20 on B_12 to 18 on B_16. Direct evidence that the B_12 k=6 face-reverse 'return' was a ball-wall artifact. Includes a lex-order control (a lex-smaller walk toward -x costs more than 18). Minor: this PR's manifest hunk has a different base (15745->15746) from the rest of the batch (15743->15744).",
  "forcing": false,
- "verdict_pair": "reverse=absent face=absent (reports t(12,0,0)=18 and the exi",
+ "verdict_pair": "reverse=absent face=absent (reports t(12,0,0)=18 and the exiting hop)",
  "source": {
   "pr": 6771,
   "branch": "physics-loop/toe-lphys-block-why18-20260815"

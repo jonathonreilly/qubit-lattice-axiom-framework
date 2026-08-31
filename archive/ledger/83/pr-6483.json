@@ -3,7 +3,7 @@
  "title": "feat(wt0c3max): unique 3-site maximizer among wt1=0 F_cut maps",
  "science": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,f",
+ "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6483,
   "branch": "physics-loop/toe-lphys-block-wt0c3max-20260815"

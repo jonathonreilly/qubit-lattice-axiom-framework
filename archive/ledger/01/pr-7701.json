@@ -1,7 +1,7 @@
 {
  "id": "pr-7701",
  "title": "feat(nm2frm2lxrd4): distance-4 neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1 on two-axis opposite seed: reverse fails, ",
- "science": "Terminal of the distance ladder: distance-4 readout of the L-path (-e3,-e1), reverse dies. Recomputed the real cause - the entire holder set has only 5 members and its maximum Manhattan distance from the origin is exactly 3, so the shell is exhausted, not a locality scale. #7701 correctly exhibits a distance-4 witness (1,-1,1) for (0,1,0), which directly refutes its sibling #7702's claim that the ",
+ "science": "Terminal of the distance ladder: distance-4 readout of the L-path (-e3,-e1), reverse dies. Recomputed the real cause - the entire holder set has only 5 members and its maximum Manhattan distance from the origin is exactly 3, so the shell is exhausted, not a locality scale. #7701 correctly exhibits a distance-4 witness (1,-1,1) for (0,1,0), which directly refutes its sibling #7702's claim that the distance-4 formed set is empty.",
  "forcing": false,
  "verdict_pair": "reverse=fails face=fails",
  "source": {

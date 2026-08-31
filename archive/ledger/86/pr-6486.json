@@ -3,7 +3,7 @@
  "title": "feat(wt0oppdiff): first seed that splits the wt1=0 pair on opp2",
  "science": "reverse=none face=none (f_cut fill-split census; no (reverse,face) pair stated)",
  "forcing": false,
- "verdict_pair": "reverse=none face=none (f_cut fill-split census; no (reverse",
+ "verdict_pair": "reverse=none face=none (f_cut fill-split census; no (reverse,face) pair stated)",
  "source": {
   "pr": 6486,
   "branch": "physics-loop/toe-lphys-block-wt0oppdiff-20260815"

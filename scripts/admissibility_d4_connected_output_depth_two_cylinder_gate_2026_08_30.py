@@ -335,6 +335,7 @@ def connected_append_descriptor(arm, exit_front, first_outcome, second_outcome):
     )
 
 
+@lru_cache(maxsize=65_536)
 def descriptor_binding_is_physical(descriptor) -> bool:
     append = descriptor.append
     return (
@@ -356,8 +357,7 @@ def descriptor_binding_is_physical(descriptor) -> bool:
         and append.effect.current_word == descriptor.current_word
         and append.effect.forward_center == descriptor.second_site
         and append.effect.forward_input == block23.BLANK_BLOCK
-        and block24.append_factorization_is_physical(append)
-        and block24.branch_effect_is_recontracted(append)
+        and append_branch_is_physical(append)
     )
 
 
@@ -575,6 +575,7 @@ class OrthogonalProjectorSum:
     terms: tuple[TensorProjector, ...]
 
 
+@lru_cache(maxsize=65_536)
 def local_projector_is_physical(atom) -> bool:
     if atom.algebra == "pointer26":
         return (
@@ -591,6 +592,7 @@ def local_projector_is_physical(atom) -> bool:
     return False
 
 
+@lru_cache(maxsize=65_536)
 def local_projector_rank(atom):
     if not local_projector_is_physical(atom):
         raise ValueError("local projector is not physical")
@@ -612,9 +614,14 @@ def local_projectors_orthogonal(left, right) -> bool:
 
 
 def make_tensor_projector(atoms):
+    return make_tensor_projector_from_tuple(tuple(atoms))
+
+
+@lru_cache(maxsize=65_536)
+def make_tensor_projector_from_tuple(atoms):
     atoms = tuple(
         sorted(
-            tuple(atoms),
+            atoms,
             key=lambda atom: (coordinate_sort_key(atom.center), atom.algebra),
         )
     )
@@ -626,6 +633,7 @@ def make_tensor_projector(atoms):
     )
 
 
+@lru_cache(maxsize=65_536)
 def tensor_projector_is_physical(projector) -> bool:
     return (
         projector == make_tensor_projector(projector.atoms)
@@ -635,12 +643,14 @@ def tensor_projector_is_physical(projector) -> bool:
     )
 
 
+@lru_cache(maxsize=65_536)
 def tensor_projector_rank(projector):
     if not tensor_projector_is_physical(projector):
         raise ValueError("tensor projector is not physical")
     return sp.prod(local_projector_rank(atom) for atom in projector.atoms)
 
 
+@lru_cache(maxsize=65_536)
 def tensor_projectors_orthogonal(left, right) -> bool:
     left_by_key = {(atom.center, atom.algebra): atom for atom in left.atoms}
     right_by_key = {(atom.center, atom.algebra): atom for atom in right.atoms}
@@ -650,6 +660,7 @@ def tensor_projectors_orthogonal(left, right) -> bool:
     )
 
 
+@lru_cache(maxsize=16_384)
 def output_tensor_projector(control):
     return make_tensor_projector(
         LocalProjector(atom.center, "pointer26", atom.word, "ket")
@@ -657,6 +668,7 @@ def output_tensor_projector(control):
     )
 
 
+@lru_cache(maxsize=16_384)
 def output_projector_is_physical(control) -> bool:
     projector = output_tensor_projector(control)
     return (
@@ -757,6 +769,7 @@ def future_resource_sector_is_physical(sector) -> bool:
     )
 
 
+@lru_cache(maxsize=16_384)
 def sector_control(prefix, bits, mutation=None):
     resource = future_resource_sector(prefix, bits, mutation)
     projector = make_tensor_projector(
@@ -765,6 +778,7 @@ def sector_control(prefix, bits, mutation=None):
     return SectorControl(prefix, resource, projector)
 
 
+@lru_cache(maxsize=16_384)
 def sector_control_is_physical(control) -> bool:
     expected = make_tensor_projector(
         output_tensor_projector(control.prefix).atoms
@@ -833,6 +847,15 @@ def append_writer_sites(branch):
     )
 
 
+@lru_cache(maxsize=65_536)
+def append_branch_is_physical(branch) -> bool:
+    return (
+        block24.append_factorization_is_physical(branch)
+        and block24.branch_effect_is_recontracted(branch)
+    )
+
+
+@lru_cache(maxsize=65_536)
 def identity_spectator_block(branch, center) -> bool:
     factors = block24.factor_dictionary(branch.factors)[
         "spectator_identity_factors"
@@ -849,15 +872,14 @@ def identity_spectator_block(branch, center) -> bool:
     )
 
 
+@lru_cache(maxsize=32_768)
 def append_product_compatibility(left, right) -> bool:
     left_nonidentity_centers = {left.anchor, left.forward_center}
     right_nonidentity_centers = {right.anchor, right.forward_center}
     overlap = append_carrier_centers(left) & append_carrier_centers(right)
     if not (
-        block24.append_factorization_is_physical(left)
-        and block24.branch_effect_is_recontracted(left)
-        and block24.append_factorization_is_physical(right)
-        and block24.branch_effect_is_recontracted(right)
+        append_branch_is_physical(left)
+        and append_branch_is_physical(right)
         and append_nonidentity_sites(left).isdisjoint(
             append_nonidentity_sites(right)
         )
@@ -912,10 +934,10 @@ class MergedBlockAction:
     sources: tuple
 
 
+@lru_cache(maxsize=65_536)
 def append_block_actions(branch):
     if not (
-        block24.append_factorization_is_physical(branch)
-        and block24.branch_effect_is_recontracted(branch)
+        append_branch_is_physical(branch)
     ):
         raise ValueError("append factors are not physical")
     data = block24.factor_dictionary(branch.factors)
@@ -962,6 +984,7 @@ def append_block_actions(branch):
     return actions
 
 
+@lru_cache(maxsize=16_384)
 def merge_append_actions(left, right, mutation=None):
     arms = tuple(
         (name, branch)
@@ -1054,6 +1077,7 @@ class EmbeddedAppendProduct:
     outside_identity: str
 
 
+@lru_cache(maxsize=16_384)
 def embedded_append_product(left, right, mutation=None):
     actions = merge_append_actions(left, right, mutation)
     return EmbeddedAppendProduct(
@@ -1065,6 +1089,7 @@ def embedded_append_product(left, right, mutation=None):
     )
 
 
+@lru_cache(maxsize=16_384)
 def embedded_append_product_is_physical(product) -> bool:
     try:
         expected = merge_append_actions(product.left, product.right)
@@ -1180,6 +1205,7 @@ class ContractedEmbeddedProduct:
     reconstructed_factors: tuple
 
 
+@lru_cache(maxsize=16_384)
 def contract_embedded_append_product(product):
     """Contract the merged action map, never the side-car branch factors."""
     if not embedded_append_product_is_physical(product):
@@ -1248,6 +1274,7 @@ class ConnectedFutureGram:
         return self.control.resource.bits
 
 
+@lru_cache(maxsize=16_384)
 def connected_future_branch(
     prefix, bits, left_second=None, right_second=None, mutation=None
 ):
@@ -1312,6 +1339,7 @@ def connected_future_branch(
     )
 
 
+@lru_cache(maxsize=65_536)
 def future_append_is_bound(prefix, arm, append) -> bool:
     exit_front = prefix.left_exit if arm == LEFT else prefix.right_exit
     first_outcome = prefix.left_first if arm == LEFT else prefix.right_first
@@ -1330,12 +1358,12 @@ def future_append_is_bound(prefix, arm, append) -> bool:
         and append.source == first_outcome
         and append.forward_center == selected_future_center(arm, exit_front)
         and append.effect.forward_input == block23.BLANK_BLOCK
-        and block24.append_factorization_is_physical(append)
-        and block24.branch_effect_is_recontracted(append)
+        and append_branch_is_physical(append)
         and respects_other_output_atoms
     )
 
 
+@lru_cache(maxsize=16_384)
 def contract_connected_future_branch(descriptor):
     factors = dict(descriptor.factorization)
     if tuple(factors) != (
@@ -1419,15 +1447,19 @@ class FutureSectorFamily:
 
 
 @lru_cache(maxsize=None)
-def future_append_axis(prefix, arm):
-    exit_front = prefix.left_exit if arm == LEFT else prefix.right_exit
-    first_outcome = prefix.left_first if arm == LEFT else prefix.right_first
+def future_append_axis_for(arm, exit_front, first_outcome):
     return tuple(
         connected_append_descriptor(
             arm, exit_front, first_outcome, second_outcome
         ).append
         for second_outcome in OUTCOMES
     )
+
+
+def future_append_axis(prefix, arm):
+    exit_front = prefix.left_exit if arm == LEFT else prefix.right_exit
+    first_outcome = prefix.left_first if arm == LEFT else prefix.right_first
+    return future_append_axis_for(arm, exit_front, first_outcome)
 
 
 @lru_cache(maxsize=None)
@@ -1485,6 +1517,7 @@ def future_sector_family(prefix, bits, mutation=None):
     )
 
 
+@lru_cache(maxsize=8_192)
 def append_axes_tensorize(left_axis, right_axis) -> bool:
     if not left_axis or not right_axis:
         return True
@@ -1524,6 +1557,7 @@ def append_axes_tensorize(left_axis, right_axis) -> bool:
     )
 
 
+@lru_cache(maxsize=16_384)
 def future_sector_family_is_physical(family) -> bool:
     expected_left_axis = (
         future_append_axis(family.prefix, LEFT) if family.bits[0] else ()
@@ -1842,6 +1876,12 @@ class ConnectedPairPrefix:
     output_control: PairOutputControl
 
 
+@lru_cache(maxsize=16_384)
+def contract_imported_pair_factors(descriptor):
+    """Content-addressed contraction of one immutable imported K."""
+    return block28.contract_pair_kraus_descriptor(descriptor)
+
+
 @lru_cache(maxsize=None)
 def connected_pair_prefix(
     lam,
@@ -1863,13 +1903,14 @@ def connected_pair_prefix(
         right_first,
         raw_amplitude=raw_amplitude,
     )
-    gram = block28.contract_pair_kraus_descriptor(first)
+    gram = contract_imported_pair_factors(first)
     control = pair_output_control(
         left_exit, right_exit, left_first, right_first
     )
     return ConnectedPairPrefix(first, gram, control)
 
 
+@lru_cache(maxsize=16_384)
 def reconstructed_pair_output_control(prefix, gram=None):
     gram = prefix.first_gram if gram is None else gram
     configuration = {
@@ -1889,9 +1930,10 @@ def reconstructed_pair_output_control(prefix, gram=None):
     )
 
 
+@lru_cache(maxsize=16_384)
 def pair_prefix_output_is_bound(prefix) -> bool:
     try:
-        fresh_gram = block28.contract_pair_kraus_descriptor(prefix.first)
+        fresh_gram = contract_imported_pair_factors(prefix.first)
     except (KeyError, ValueError):
         return False
     expected_records = tuple(
@@ -1936,6 +1978,7 @@ class CylinderInputControl:
     projector: TensorProjector
 
 
+@lru_cache(maxsize=16_384)
 def pair_input_tensor_projector(control):
     atoms = []
     for atom in control.atoms:
@@ -1948,6 +1991,7 @@ def pair_input_tensor_projector(control):
     return make_tensor_projector(atoms)
 
 
+@lru_cache(maxsize=16_384)
 def cylinder_input_control(prefix, resource):
     past_projector = pair_input_tensor_projector(prefix.first.control)
     projector = make_tensor_projector(
@@ -1956,6 +2000,7 @@ def cylinder_input_control(prefix, resource):
     return CylinderInputControl(prefix.first.control, resource.projector, projector)
 
 
+@lru_cache(maxsize=16_384)
 def cylinder_input_control_is_physical(control) -> bool:
     past_projector = pair_input_tensor_projector(control.past)
     expected = make_tensor_projector(
@@ -2011,6 +2056,13 @@ def connected_cylinder_branch(prefix, future_branch):
     )
 
 
+@lru_cache(maxsize=1)
+def first_pair_literal_block_sites():
+    return tuple(
+        block28.block_sites(center) for center in first_pair_literal_centers()
+    )
+
+
 def contract_connected_cylinder(descriptor):
     prefix = descriptor.prefix
     future_branch = descriptor.future
@@ -2019,11 +2071,9 @@ def contract_connected_cylinder(descriptor):
         block28.block_sites(future_branch.sector.left.center),
         block28.block_sites(future_branch.sector.right.center),
     )
-    first_carrier_blocks = tuple(
-        block28.block_sites(center) for center in first_pair_literal_centers()
-    )
+    first_carrier_blocks = first_pair_literal_block_sites()
     try:
-        fresh_first_gram = block28.contract_pair_kraus_descriptor(prefix.first)
+        fresh_first_gram = contract_imported_pair_factors(prefix.first)
     except (KeyError, ValueError) as exc:
         raise ValueError("first pair factors do not freshly contract") from exc
     if not (
@@ -2101,7 +2151,7 @@ def fixed_sector_cylinder_effect(prefix, family):
             raise ValueError("one actual M=L K Gram left its fixed sector")
         branch_grams.append(gram)
     branch_grams = tuple(branch_grams)
-    first = block28.contract_pair_kraus_descriptor(prefix.first).coefficient
+    first = contract_imported_pair_factors(prefix.first).coefficient
     summed_coefficient = sp.simplify(
         sum(gram.composite_coefficient for gram in branch_grams)
     )
@@ -2158,7 +2208,7 @@ def first_pair_template_certificate() -> bool:
                     * block23.transition(left_source, OUTCOMES[0])
                     * block23.transition(right_source, OUTCOMES[-1])
                 )
-                fresh = block28.contract_pair_kraus_descriptor(prefix.first)
+                fresh = contract_imported_pair_factors(prefix.first)
                 if fresh != prefix.first_gram or fresh.coefficient != expected:
                     return False
     return True
@@ -2169,7 +2219,7 @@ def fixed_sector_cylinder_instance(prefix, bits) -> bool:
     family = future_sector_family(prefix.output_control, bits)
     sector_effect = fixed_sector_cylinder_effect(prefix, family)
     branch_grams = sector_effect.branch_grams
-    fresh_first = block28.contract_pair_kraus_descriptor(prefix.first)
+    fresh_first = contract_imported_pair_factors(prefix.first)
     return (
         family.coefficient_sum == 1
         and family.row_effect == OperatorEffect(family.control, 1)
@@ -2760,8 +2810,7 @@ def append_affine_covariance_certificate(
         and moved.anchor == block28.affine(rotation, translation, branch.anchor)
         and moved.forward_center
         == block28.affine(rotation, translation, branch.forward_center)
-        and block24.append_factorization_is_physical(moved)
-        and block24.branch_effect_is_recontracted(moved)
+        and append_branch_is_physical(moved)
     )
 
 
@@ -2926,8 +2975,7 @@ def framed_future_branch_is_physical(branch) -> bool:
         and branch.control.resource == branch.sector
         and embedded_append_product_is_physical(branch.product)
         and all(
-            block24.append_factorization_is_physical(append)
-            and block24.branch_effect_is_recontracted(append)
+            append_branch_is_physical(append)
             for append in appends
         )
         and branch.factorization
@@ -3075,7 +3123,7 @@ def transport_connected_pair_prefix(prefix, rotation, translation=ZERO):
     first = transport_pair_kraus_descriptor(
         prefix.first, rotation, translation
     )
-    first_gram = block28.contract_pair_kraus_descriptor(first)
+    first_gram = contract_imported_pair_factors(first)
     output = transport_pair_output_control(
         prefix.output_control, rotation, translation
     )
@@ -3084,7 +3132,7 @@ def transport_connected_pair_prefix(prefix, rotation, translation=ZERO):
 
 def framed_pair_prefix_output_is_bound(prefix) -> bool:
     try:
-        fresh = block28.contract_pair_kraus_descriptor(prefix.first)
+        fresh = contract_imported_pair_factors(prefix.first)
         reconstructed = framed_reconstructed_pair_output(prefix, fresh)
     except (KeyError, ValueError):
         return False
@@ -3143,7 +3191,7 @@ def contract_framed_connected_cylinder(descriptor):
     future = descriptor.future
     factors = dict(descriptor.factorization)
     try:
-        fresh_first = block28.contract_pair_kraus_descriptor(prefix.first)
+        fresh_first = contract_imported_pair_factors(prefix.first)
     except (KeyError, ValueError) as exc:
         raise ValueError("transported K does not freshly contract") from exc
     first_centers = turn_carrier_centers(prefix.first.left) | turn_carrier_centers(
@@ -3373,11 +3421,11 @@ def pair_prefix_affine_covariance_certificate(
     prefix, rotation, translation=ZERO
 ) -> bool:
     try:
-        source_fresh = block28.contract_pair_kraus_descriptor(prefix.first)
+        source_fresh = contract_imported_pair_factors(prefix.first)
         moved = transport_connected_pair_prefix(
             prefix, rotation, translation
         )
-        moved_fresh = block28.contract_pair_kraus_descriptor(moved.first)
+        moved_fresh = contract_imported_pair_factors(moved.first)
     except (KeyError, ValueError):
         return False
     expected_records = tuple(

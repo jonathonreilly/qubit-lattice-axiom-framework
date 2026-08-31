@@ -976,6 +976,31 @@ def merge_append_actions(left, right, mutation=None):
         name: {action.center: action for action in append_block_actions(branch)}
         for name, branch in arms
     }
+    if mutation == "nonidentity_equal_exit_spectator":
+        candidate = next(
+            (
+                (identity_arm, center)
+                for center in sorted_centers(
+                    set(action_maps[LEFT]) & set(action_maps[RIGHT])
+                )
+                for identity_arm in ARMS
+                if action_maps[identity_arm][center].role == "identity"
+                and action_maps[
+                    RIGHT if identity_arm == LEFT else LEFT
+                ][center].role
+                != "identity"
+            ),
+            None,
+        )
+        if candidate is None:
+            raise ValueError("mutation requires an equal-exit spectator overlap")
+        identity_arm, center = candidate
+        action = action_maps[identity_arm][center]
+        factors = list(action.factors)
+        factors[0] = (factors[0][0], "X_2")
+        action_maps[identity_arm][center] = replace(
+            action, factors=tuple(factors)
+        )
     centers = sorted_centers(
         set().union(*(set(actions) for actions in action_maps.values()))
     )
@@ -1967,6 +1992,7 @@ class ConnectedCylinderBranch:
 @dataclass(frozen=True)
 class FixedSectorCylinderEffect:
     control: CylinderInputControl
+    branch_grams: tuple[ConnectedCylinderGram, ...]
     summed_future: OperatorEffect
     restricted_first: OperatorEffect
 
@@ -2056,10 +2082,33 @@ def fixed_sector_cylinder_effect(prefix, family):
         and cylinder_input_control_is_physical(control)
     ):
         raise ValueError("fixed-sector cylinder is not physically bound")
+    branch_grams = []
+    for left_second, right_second in family.outcome_keys:
+        future = connected_future_branch(
+            prefix.output_control,
+            family.bits,
+            left_second,
+            right_second,
+        )
+        gram = contract_connected_cylinder(
+            connected_cylinder_branch(prefix, future)
+        )
+        if not (
+            gram.control == control
+            and gram.bits == family.bits
+            and gram.intermediate_output == prefix.output_control
+        ):
+            raise ValueError("one actual M=L K Gram left its fixed sector")
+        branch_grams.append(gram)
+    branch_grams = tuple(branch_grams)
     first = block28.contract_pair_kraus_descriptor(prefix.first).coefficient
+    summed_coefficient = sp.simplify(
+        sum(gram.composite_coefficient for gram in branch_grams)
+    )
     return FixedSectorCylinderEffect(
         control,
-        OperatorEffect(control, sp.simplify(first * family.row_effect.coefficient)),
+        branch_grams,
+        OperatorEffect(control, summed_coefficient),
         OperatorEffect(control, first),
     )
 
@@ -2109,7 +2158,8 @@ def first_pair_template_certificate() -> bool:
                     * block23.transition(left_source, OUTCOMES[0])
                     * block23.transition(right_source, OUTCOMES[-1])
                 )
-                if prefix.first_gram.coefficient != expected:
+                fresh = block28.contract_pair_kraus_descriptor(prefix.first)
+                if fresh != prefix.first_gram or fresh.coefficient != expected:
                     return False
     return True
 
@@ -2118,33 +2168,37 @@ def first_pair_template_certificate() -> bool:
 def fixed_sector_cylinder_instance(prefix, bits) -> bool:
     family = future_sector_family(prefix.output_control, bits)
     sector_effect = fixed_sector_cylinder_effect(prefix, family)
-    representative = connected_future_branch(
-        prefix.output_control,
-        bits,
-        OUTCOMES[0] if bits[0] else None,
-        OUTCOMES[0] if bits[1] else None,
-    )
-    gram = contract_connected_cylinder(
-        connected_cylinder_branch(prefix, representative)
-    )
+    branch_grams = sector_effect.branch_grams
+    fresh_first = block28.contract_pair_kraus_descriptor(prefix.first)
     return (
         family.coefficient_sum == 1
         and family.row_effect == OperatorEffect(family.control, 1)
+        and len(branch_grams) == family.branch_count
+        and len(branch_grams) == len(family.outcome_keys)
+        and all(
+            gram.control == sector_effect.control
+            and gram.first_coefficient == fresh_first.coefficient
+            and gram.bits == bits
+            and gram.intermediate_output == prefix.output_control
+            and gram.composite_coefficient
+            == sp.simplify(
+                gram.first_coefficient * gram.future_coefficient
+            )
+            for gram in branch_grams
+        )
+        and sp.simplify(
+            sum(gram.future_coefficient for gram in branch_grams)
+        )
+        == family.row_effect.coefficient
+        and sp.simplify(
+            sum(gram.composite_coefficient for gram in branch_grams)
+        )
+        == sector_effect.summed_future.coefficient
         and sector_effect.control.future_resource
         == family.control.resource.projector
         and sector_effect.summed_future == sector_effect.restricted_first
-        and sector_effect.summed_future.control == gram.control
-        and gram.control == sector_effect.control
-        and gram.intermediate_output == prefix.output_control
-        and gram.composite_coefficient
-        == sp.simplify(gram.first_coefficient * gram.future_coefficient)
-        and OperatorEffect(gram.control, gram.composite_coefficient)
-        == OperatorEffect(
-            sector_effect.control,
-            sp.simplify(
-                prefix.first_gram.coefficient * gram.future_coefficient
-            ),
-        )
+        and sector_effect.restricted_first
+        == OperatorEffect(sector_effect.control, fresh_first.coefficient)
     )
 
 
@@ -2178,9 +2232,11 @@ def cylinder_certificate() -> bool:
     # The alpha axis carries every distinct intermediate output/resource
     # control at fixed (lambda, source pair); the source axis carries every
     # imported Pi_s,t and both supplied q choices at one fixed alpha.  The
-    # continuation descriptor was proved independent of the latter axis, so
-    # these two exact template sweeps certify their Cartesian product without
-    # materializing 1,229,312 duplicate objects.
+    # continuation descriptor was proved independent of the latter axis.  At
+    # every swept prefix, fixed_sector_cylinder_instance nevertheless builds,
+    # contracts, and sums all 1/14/14/196 actual M=L K descriptors.  The two
+    # exact prefix sweeps certify the remaining Cartesian duplication without
+    # pretending that a representative future branch is the complete sum.
     for control in pair_output_active_sum().controls:
         prefix = connected_pair_prefix(
             LAMBDAS[0],
@@ -3313,6 +3369,55 @@ def active_sum_and_stop_transport_certificate(rotation, translation=ZERO) -> boo
     )
 
 
+def pair_prefix_affine_covariance_certificate(
+    prefix, rotation, translation=ZERO
+) -> bool:
+    try:
+        source_fresh = block28.contract_pair_kraus_descriptor(prefix.first)
+        moved = transport_connected_pair_prefix(
+            prefix, rotation, translation
+        )
+        moved_fresh = block28.contract_pair_kraus_descriptor(moved.first)
+    except (KeyError, ValueError):
+        return False
+    expected_records = tuple(
+        (
+            block28.affine(rotation, translation, center),
+            block23.rotate_word(word, rotation),
+        )
+        for center, word in source_fresh.output_records
+    )
+    return (
+        pair_prefix_output_is_bound(prefix)
+        and source_fresh == prefix.first_gram
+        and moved_fresh == moved.first_gram
+        and framed_pair_prefix_output_is_bound(moved)
+        and moved.output_control
+        == transport_pair_output_control(
+            prefix.output_control, rotation, translation
+        )
+        and moved.first
+        == transport_pair_kraus_descriptor(
+            prefix.first, rotation, translation
+        )
+        and block28.control_transport_certificate(
+            block28.CANONICAL_FRAME,
+            prefix.first.control.left_source,
+            prefix.first.control.right_source,
+            rotation,
+            translation,
+        )
+        and block28.turn_branch_covariance_certificate(
+            prefix.first.left, rotation
+        )
+        and block28.turn_branch_covariance_certificate(
+            prefix.first.right, rotation
+        )
+        and moved_fresh.output_records == expected_records
+        and moved_fresh.coefficient == source_fresh.coefficient
+    )
+
+
 def composite_cylinder_transport_certificate(
     descriptor, rotation, translation=ZERO, mutation=None
 ) -> bool:
@@ -3385,23 +3490,12 @@ def composite_cylinder_transport_certificate(
         for center, word in prefix.first_gram.output_records
     )
     return (
-        mutation is None
-        and source_gram.control == source_control
-        and block28.control_transport_certificate(
-            block28.CANONICAL_FRAME,
-            prefix.first.control.left_source,
-            prefix.first.control.right_source,
-            rotation,
-            translation,
+        source_gram.control == source_control
+        and pair_prefix_affine_covariance_certificate(
+            prefix, rotation, translation
         )
         and future_branch_affine_covariance_certificate(
             future, rotation, translation
-        )
-        and block28.turn_branch_covariance_certificate(
-            prefix.first.left, rotation
-        )
-        and block28.turn_branch_covariance_certificate(
-            prefix.first.right, rotation
         )
         and framed_pair_prefix_output_is_bound(moved_prefix)
         and moved_prefix.first_gram.output_records == expected_first_records
@@ -3417,6 +3511,77 @@ def composite_cylinder_transport_certificate(
         == framed_connected_cylinder_branch(
             moved_prefix, moved_future
         ).factorization
+    )
+
+
+def composite_cylinder_covariance_template_certificate(
+    rotation, translation=ZERO
+) -> bool:
+    """Cover the full prefix Cartesian product by its independent axes."""
+    active = pair_output_active_sum()
+    output_resource_checks = 0
+    for control in active.controls:
+        prefix = connected_pair_prefix(
+            LAMBDAS[0],
+            OUTCOMES[0],
+            OUTCOMES[1],
+            *control.key,
+        )
+        for bits in RESOURCE_BITS:
+            future = connected_future_branch(
+                prefix.output_control,
+                bits,
+                OUTCOMES[2] if bits[0] else None,
+                OUTCOMES[3] if bits[1] else None,
+            )
+            if not composite_cylinder_transport_certificate(
+                connected_cylinder_branch(prefix, future),
+                rotation,
+                translation,
+            ):
+                return False
+            output_resource_checks += 1
+    q_exit_controls = tuple(
+        pair_output_control(
+            left_exit,
+            right_exit,
+            OUTCOMES[0],
+            OUTCOMES[1],
+        )
+        for left_exit, right_exit in itertools.product(
+            block28.LEFT_EXITS, block28.RIGHT_EXITS
+        )
+    )
+    input_q_checks = 0
+    for q_control in q_exit_controls:
+        for lam in LAMBDAS:
+            for left_source, right_source in itertools.product(
+                OUTCOMES, repeat=2
+            ):
+                prefix = connected_pair_prefix(
+                    lam,
+                    left_source,
+                    right_source,
+                    *q_control.key,
+                )
+                if not pair_prefix_affine_covariance_certificate(
+                    prefix, rotation, translation
+                ):
+                    return False
+                input_q_checks += 1
+    # All future-outcome append descriptors are covered independently in the
+    # same rotation loop.  Continuation independence makes these exact axes a
+    # Cartesian theorem rather than a sample extrapolation.
+    return (
+        output_resource_checks == 3136 * 4 == 12544
+        and input_q_checks
+        == len(block28.LEFT_EXITS)
+        * len(block28.RIGHT_EXITS)
+        * len(LAMBDAS)
+        * len(OUTCOMES) ** 2
+        == 6272
+        and block28.full_pair_covariance_certificate()
+        and q_independent_continuation_certificate()
     )
 
 
@@ -3541,15 +3706,6 @@ def covariance_certificate() -> bool:
         OUTCOMES[0],
         OUTCOMES[-1],
     )
-    sample_prefix = connected_pair_prefix(
-        LAMBDAS[0],
-        OUTCOMES[0],
-        OUTCOMES[1],
-        sample_control.left_exit,
-        sample_control.right_exit,
-        sample_control.left_first,
-        sample_control.right_first,
-    )
     for rotation in ROTATIONS:
         for arm in ARMS:
             for exit_front, first_outcome, second_outcome in itertools.product(
@@ -3582,18 +3738,8 @@ def covariance_certificate() -> bool:
                 )
                 for bits in RESOURCE_BITS
             )
-            and composite_cylinder_transport_certificate(
-                connected_cylinder_branch(
-                    sample_prefix,
-                    connected_future_branch(
-                        sample_control,
-                        (1, 1),
-                        OUTCOMES[1],
-                        OUTCOMES[2],
-                    ),
-                ),
-                rotation,
-                tau,
+            and composite_cylinder_covariance_template_certificate(
+                rotation, tau
             )
             and active_sum_and_stop_transport_certificate(rotation, tau)
         ):
@@ -3619,6 +3765,8 @@ def covariance_certificate() -> bool:
 @dataclass(frozen=True)
 class ReferenceFactor:
     dimension: object
+    row: object
+    column: object
     operator: object
 
 
@@ -3631,7 +3779,9 @@ class ReferenceLift:
 @dataclass(frozen=True)
 class ReferenceExtendedEffect:
     system_effect: object
+    reference_operator: object
     reference_gram: object
+    matrix_unit: object
 
 
 def contract_reference_lift(lift):
@@ -3643,6 +3793,7 @@ def contract_reference_lift(lift):
     ):
         raise ValueError("reference operator has the wrong carrier")
     reference_gram = operator.adjoint() * operator
+    matrix_unit = reference_gram[reference.row, reference.column]
     descriptor = lift.system_descriptor
     if isinstance(descriptor, ConnectedFutureBranch):
         gram = contract_connected_future_branch(descriptor)
@@ -3654,7 +3805,9 @@ def contract_reference_lift(lift):
         effect = OperatorEffect(gram.control, gram.composite_coefficient)
     else:
         raise ValueError("unknown reference-lifted system descriptor")
-    return ReferenceExtendedEffect(effect, reference_gram)
+    return ReferenceExtendedEffect(
+        effect, operator, reference_gram, matrix_unit
+    )
 
 
 @lru_cache(maxsize=None)
@@ -3678,9 +3831,12 @@ def arbitrary_reference_certificate(mutation=None) -> bool:
     cylinder = connected_cylinder_branch(prefix, future)
     stop = make_future_stop(future_active_sum(active))
     dimension = sp.symbols("d_R", integer=True, positive=True)
+    row, column = sp.symbols("r_R s_R", integer=True, nonnegative=True)
     reference = ReferenceFactor(
         dimension,
-        sp.ZeroMatrix(dimension, dimension)
+        row,
+        column,
+        -sp.Identity(dimension)
         if mutation == "nonidentity"
         else sp.Identity(dimension),
     )
@@ -3699,12 +3855,19 @@ def arbitrary_reference_certificate(mutation=None) -> bool:
         effects = tuple(contract_reference_lift(lift) for lift in lifts)
     except ValueError:
         return False
+    identity = sp.Identity(dimension)
+    matrix_unit = identity[row, column]
     return (
         len(effects) == 3
+        and reference.operator == identity
         and all(
-            effect.reference_gram == sp.Identity(dimension)
+            effect.reference_operator == identity for effect in effects
+        )
+        and all(
+            effect.reference_gram == identity
             for effect in effects
         )
+        and all(effect.matrix_unit == matrix_unit for effect in effects)
         and effects[0].system_effect
         == OperatorEffect(
             contract_connected_future_branch(future).control,
@@ -3986,7 +4149,11 @@ def merged_product_mutation_is_rejected(mutation) -> bool:
         RIGHT, exit_front, OUTCOMES[0], OUTCOMES[1]
     ).append
     mutant = embedded_append_product(left, right, mutation)
-    return not embedded_append_product_is_physical(mutant)
+    try:
+        contract_embedded_append_product(mutant)
+    except (KeyError, StopIteration, ValueError):
+        return True
+    return False
 
 
 def patched_future_row_mutation_is_rejected(prefix) -> bool:
@@ -4000,7 +4167,7 @@ def patched_future_row_mutation_is_rejected(prefix) -> bool:
     return not future_sector_family_is_physical(mutant)
 
 
-def wrong_first_control_mutation_is_rejected() -> bool:
+def changed_imported_control_mutation_is_rejected() -> bool:
     prefix = connected_pair_prefix(
         LAMBDAS[0],
         OUTCOMES[0],
@@ -4010,15 +4177,21 @@ def wrong_first_control_mutation_is_rejected() -> bool:
         OUTCOMES[2],
         OUTCOMES[3],
     )
-    mutant = replace(
-        prefix,
-        first_gram=replace(
-            prefix.first_gram,
-            coefficient=sp.simplify(
-                prefix.first_gram.coefficient + sp.Rational(1, 100)
-            ),
+    changed_control = block28.pair_control(
+        OUTCOMES[-1], prefix.first.control.right_source
+    )
+    changed_first = replace(
+        prefix.first,
+        control=changed_control,
+        factorization=replace_named_factor(
+            prefix.first.factorization,
+            "full_pair_control",
+            changed_control.atoms,
         ),
     )
+    # Keep the declared coefficient and output labels byte-for-byte fixed;
+    # only the imported physical Pi_s,t in K is changed.
+    mutant = replace(prefix, first=changed_first)
     future = connected_future_branch(
         mutant.output_control,
         (1, 0),
@@ -4149,8 +4322,10 @@ def mutation_rejections():
         "same_count_wrong_center_breaks_merged_product": (
             merged_product_mutation_is_rejected("same_count_wrong_center")
         ),
-        "swapped_shared_owner_breaks_merged_product": (
-            merged_product_mutation_is_rejected("swap_shared_owner")
+        "nonidentity_equal_exit_spectator_breaks_merged_product": (
+            merged_product_mutation_is_rejected(
+                "nonidentity_equal_exit_spectator"
+            )
         ),
         "wrong_output_word_breaks_append_input_binding": (
             not output_control_is_physical(wrong_output_control)
@@ -4231,8 +4406,8 @@ def mutation_rejections():
         "extra_D10_writer_breaks_factor_derived_debit": not debit_ledger_certificate(
             "D10_extra_writer"
         ),
-        "changed_imported_coefficient_breaks_M_equals_LK": (
-            wrong_first_control_mutation_is_rejected()
+        "changed_imported_Pi_with_fixed_coefficient_breaks_M_equals_LK": (
+            changed_imported_control_mutation_is_rejected()
         ),
         "changed_current_word_with_same_scalar_breaks_control": (
             wrong_current_word_same_scalar_mutation_is_rejected(prefix)

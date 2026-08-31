@@ -11,10 +11,12 @@ track holds the recorded science of closed work-history pull requests:
 enough to find, cite, and if needed resurrect any of it, at light review
 cost and with NO claim authority.
 
-Nothing under `archive/` is a claim surface. Entries quote historical PR
-titles and note text verbatim, including status vocabulary those PRs used;
-quotation here grants nothing. A result in this store is exactly as strong
-as its closed PR's own evidence, which was never independently audited.
+Nothing under `archive/` is a claim surface, a carrier of live science, or
+an authority of any kind. Entries quote historical PR titles and note text
+verbatim, including status vocabulary those PRs used; quotation here grants
+nothing. Every statement in this store is historical: it records what a
+closed, never-independently-audited PR claimed and reported, and nothing
+more. To rely on any of it, use the promotion lane below.
 
 ## Layout
 
@@ -22,19 +24,22 @@ as its closed PR's own evidence, which was never independently audited.
 - `ledger/<xx>/pr-<N>.json` — one machine-readable entry per archived PR,
   sharded by `N % 100` (zero-padded two digits).
 - `families/` — roll-up notes for probe families and campaign bands: the
-  synthesis their member PRs never carried (tables of cells, verdicts,
-  caveats, disputed rows). A family roll-up is the carrier for members whose
-  science is not restated by any open PR.
+  assembled record of what the member PRs' runners reported (tables of
+  cells, reported verdicts, caveats, disputed rows) — cross-member
+  bookkeeping no single member note carried. For a member not restated by
+  any open PR, the roll-up is where its record is FOUND; being findable
+  here confers no status.
 - `chains/` — chain summaries for the numbered block lineages
   (`CHAINS_INDEX.md`) and cross-cutting methodology notes.
 
 ## Entry schema (`ledger/<xx>/pr-<N>.json`)
 
 Required: `id` ("pr-<N>", equal to filename stem), `title`, `science`
-(non-empty; the full-read one-paragraph record of what the PR established),
-`source` (`{pr: <int>, branch: <head branch>}`), `carried_by` (where the
-science lives on a live surface: an open PR, a family roll-up, or this
-ledger line itself), `review` (`{level: "light", process: ...}`),
+(non-empty; the full-read one-paragraph record of what the PR claimed and
+reported), `source` (`{pr: <int>, branch: <head branch>}`), `carried_by`
+(a locator for the recorded science: an open PR that restates it, a family
+roll-up in this store, or this ledger line itself — a finding aid, never an
+authority), `review` (`{level: "light", process: ...}`),
 `status` ("archived").
 Optional: `forcing` (bool — a negative that forces direction),
 `verdict_pair` (probe-cell verdicts), `promotion_candidate` (bool),
@@ -61,12 +66,17 @@ promotion lands).
 
 ## Boundaries (by construction)
 
-- The audit pipeline and citation graph ingest `docs/**` only; `archive/`
-  is outside both. Do not link from `docs/` authority surfaces into
-  `archive/` except from explicitly historical/work-history notes.
-- `scripts/vocab_lint.py` skips `archive/` (quoted historical vocabulary
-  must survive verbatim); the exclusion is mirrored in
-  `docs/repo/controlled_vocabulary.yaml`.
+- The citation graph is built from markdown beneath `docs/` (excluding
+  `docs/audit/`) — see `docs/audit/scripts/build_citation_graph.py` — so
+  `archive/` is outside it and outside every graph-derived audit surface;
+  the audit lane's data lives under `docs/audit/` and does not enumerate
+  `archive/`. Do not link from `docs/` authority surfaces into `archive/`
+  except from explicitly historical/work-history notes.
+- `scripts/vocab_lint.py` skips `archive/` entirely (a code-level skip:
+  quoted historical vocabulary must survive verbatim). The
+  `excluded_paths` entry in `docs/repo/controlled_vocabulary.yaml` is
+  rule-specific documentation of the same intent, not the enforcing
+  mechanism.
 - `archive_unlanded/` is a DIFFERENT, pre-existing lane (the canonical
   recovery surface for failed-narrative source notes, per the controlled
   vocabulary) and is not part of this store.

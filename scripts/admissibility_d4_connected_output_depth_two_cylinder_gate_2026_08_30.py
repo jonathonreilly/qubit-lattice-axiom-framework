@@ -144,6 +144,22 @@ def sorted_centers(centers):
     return tuple(sorted(tuple(centers), key=coordinate_sort_key))
 
 
+def tensor_projector_sort_key(projector):
+    return tuple(
+        (
+            coordinate_sort_key(atom.center),
+            atom.algebra,
+            atom.sense,
+            repr(atom.state),
+        )
+        for atom in projector.atoms
+    )
+
+
+def sorted_projectors(projectors):
+    return tuple(sorted(tuple(projectors), key=tensor_projector_sort_key))
+
+
 def file_sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -651,6 +667,28 @@ def output_projector_is_physical(control) -> bool:
     )
 
 
+@lru_cache(maxsize=1)
+def output_projector_orthogonality_certificate() -> bool:
+    active = pair_output_active_sum()
+    codebook = output_pointer_codebook()
+    configurations = tuple(
+        tuple(atom.word for atom in control.atoms) for control in active.controls
+    )
+    # Every two distinct configurations differ in at least one local codeword;
+    # exact codebook orthogonality therefore supplies a zero local factor in
+    # their TensorProjector product.
+    return (
+        len(configurations) == len(set(configurations)) == 3136
+        and all(word in codebook for configuration in configurations for word in configuration)
+        and all(
+            block23.pointer_overlap(left, right) == int(i == j)
+            for i, left in enumerate(codebook)
+            for j, right in enumerate(codebook)
+        )
+        and all(output_projector_is_physical(control) for control in active.controls)
+    )
+
+
 @dataclass(frozen=True)
 class FutureResourceSector:
     prefix: PairOutputControl
@@ -739,6 +777,8 @@ def sector_control_is_physical(control) -> bool:
         and control.projector == expected
         and tensor_projector_is_physical(control.projector)
         and len(control.projector.atoms) == 10
+        and tensor_projector_rank(control.projector)
+        == 2**48 * tensor_projector_rank(control.resource.projector)
     )
 
 
@@ -1234,6 +1274,8 @@ class FutureSectorFamily:
     control: SectorControl
     left_axis: tuple
     right_axis: tuple
+    left_grams: tuple[OperatorEffect, ...]
+    right_grams: tuple[OperatorEffect, ...]
     outcome_keys: tuple
     branch_count: int
     row_effect: OperatorEffect
@@ -1266,8 +1308,22 @@ def future_sector_family(prefix, bits, mutation=None):
         elif right_axis:
             right_axis = right_axis[:-1]
     control = sector_control(prefix, bits)
-    left_sum = sp.simplify(sum(branch.effect.scalar for branch in left_axis))
-    right_sum = sp.simplify(sum(branch.effect.scalar for branch in right_axis))
+    left_grams = tuple(
+        OperatorEffect(
+            control,
+            block24.contract_append_effect(branch.factors).scalar,
+        )
+        for branch in left_axis
+    )
+    right_grams = tuple(
+        OperatorEffect(
+            control,
+            block24.contract_append_effect(branch.factors).scalar,
+        )
+        for branch in right_axis
+    )
+    left_sum = sp.simplify(sum(gram.coefficient for gram in left_grams))
+    right_sum = sp.simplify(sum(gram.coefficient for gram in right_grams))
     coefficient_sum = (
         (left_sum if bits[0] else sp.S.One)
         * (right_sum if bits[1] else sp.S.One)
@@ -1284,10 +1340,51 @@ def future_sector_family(prefix, bits, mutation=None):
         control,
         left_axis,
         right_axis,
+        left_grams,
+        right_grams,
         outcome_keys,
         branch_count,
         OperatorEffect(control, sp.simplify(coefficient_sum)),
         sum(bits),
+    )
+
+
+def append_axes_tensorize(left_axis, right_axis) -> bool:
+    if not left_axis or not right_axis:
+        return True
+    left_reference = left_axis[0]
+    right_reference = right_axis[0]
+    left_geometry = (
+        append_carrier_centers(left_reference),
+        append_nonidentity_sites(left_reference),
+        append_writer_sites(left_reference),
+    )
+    right_geometry = (
+        append_carrier_centers(right_reference),
+        append_nonidentity_sites(right_reference),
+        append_writer_sites(right_reference),
+    )
+    return (
+        all(
+            (
+                append_carrier_centers(branch),
+                append_nonidentity_sites(branch),
+                append_writer_sites(branch),
+            )
+            == left_geometry
+            and append_product_compatibility(branch, right_reference)
+            for branch in left_axis
+        )
+        and all(
+            (
+                append_carrier_centers(branch),
+                append_nonidentity_sites(branch),
+                append_writer_sites(branch),
+            )
+            == right_geometry
+            and append_product_compatibility(left_reference, branch)
+            for branch in right_axis
+        )
     )
 
 
@@ -1315,6 +1412,21 @@ def future_sector_family_is_physical(family) -> bool:
             future_append_is_bound(family.prefix, RIGHT, branch)
             for branch in family.right_axis
         )
+        and len(family.left_grams) == len(family.left_axis)
+        and len(family.right_grams) == len(family.right_axis)
+        and all(gram.control == family.control for gram in family.left_grams)
+        and all(gram.control == family.control for gram in family.right_grams)
+        and tuple(gram.coefficient for gram in family.left_grams)
+        == tuple(
+            block24.contract_append_effect(branch.factors).scalar
+            for branch in family.left_axis
+        )
+        and tuple(gram.coefficient for gram in family.right_grams)
+        == tuple(
+            block24.contract_append_effect(branch.factors).scalar
+            for branch in family.right_axis
+        )
+        and append_axes_tensorize(family.left_axis, family.right_axis)
         and family.branch_count == expected_count[family.bits]
         and len(family.outcome_keys) == len(set(family.outcome_keys))
         == family.branch_count
@@ -1344,12 +1456,30 @@ class FutureActiveSum:
 class ProjectorComplement:
     carrier_centers: tuple
     subtrahend: OrthogonalProjectorSum
+    rank: int
 
 
 @dataclass(frozen=True)
 class PairFutureStop:
     active: FutureActiveSum
     kraus: ProjectorComplement
+
+
+def orthogonal_projector_sum_rank(projector_sum):
+    return sum(tensor_projector_rank(term) for term in projector_sum.terms)
+
+
+def projector_complement_rank(projector_sum):
+    carrier_dimension = 2 ** (len(block23.SUPPORT) * len(projector_sum.carrier_centers))
+    return carrier_dimension - orthogonal_projector_sum_rank(projector_sum)
+
+
+def projector_complement_is_physical(complement) -> bool:
+    return (
+        complement.carrier_centers == complement.subtrahend.carrier_centers
+        and complement.rank == projector_complement_rank(complement.subtrahend)
+        and complement.rank > 0
+    )
 
 
 @lru_cache(maxsize=1)
@@ -1359,7 +1489,9 @@ def future_active_sum(active):
         for prefix in active.controls
         for bits in RESOURCE_BITS
     )
-    output_terms = tuple(output_tensor_projector(control) for control in active.controls)
+    output_terms = sorted_projectors(
+        output_tensor_projector(control) for control in active.controls
+    )
     projector = OrthogonalProjectorSum(
         sorted_centers(FIRST_OUTPUT_CENTERS),
         output_terms,
@@ -1380,11 +1512,14 @@ def future_active_sum_is_physical(active_sum) -> bool:
     )
     expected_projector = OrthogonalProjectorSum(
         sorted_centers(FIRST_OUTPUT_CENTERS),
-        tuple(output_tensor_projector(control) for control in active.controls),
+        sorted_projectors(
+            output_tensor_projector(control) for control in active.controls
+        ),
     )
     return (
         active.idempotent
         and active.complement_nontrivial
+        and output_projector_orthogonality_certificate()
         and len(active.controls) == 3136
         and len(active_sum.sector_rows) == 12544
         and actual_keys == expected_keys
@@ -1414,7 +1549,11 @@ def make_future_stop(active_sum, mutation=None):
         )
     return PairFutureStop(
         active_sum,
-        ProjectorComplement(sorted_centers(FIRST_OUTPUT_CENTERS), subtrahend),
+        ProjectorComplement(
+            sorted_centers(FIRST_OUTPUT_CENTERS),
+            subtrahend,
+            projector_complement_rank(subtrahend),
+        ),
     )
 
 
@@ -1423,6 +1562,7 @@ def contract_future_stop(stop):
         future_active_sum_is_physical(stop.active)
         and stop.kraus.carrier_centers == sorted_centers(FIRST_OUTPUT_CENTERS)
         and stop.kraus.subtrahend == stop.active.projector
+        and projector_complement_is_physical(stop.kraus)
     ):
         raise ValueError("future STOP is not bound to the actual active sum")
     return stop.kraus
@@ -1442,6 +1582,10 @@ def future_completion_is_pointwise_identity(active_sum, complement) -> bool:
     )
     return (
         set(active_witnesses) == active_terms
+        and projector_complement_is_physical(complement)
+        and orthogonal_projector_sum_rank(active_sum.projector)
+        + complement.rank
+        == 2 ** (len(block23.SUPPORT) * len(FIRST_OUTPUT_CENTERS))
         and all(
             int(witness in active_terms) + int(witness not in active_terms) == 1
             for witness in active_witnesses
@@ -1551,6 +1695,24 @@ def connected_pair_prefix(
     return ConnectedPairPrefix(first, gram, control)
 
 
+def reconstructed_pair_output_control(prefix):
+    configuration = {
+        atom.center: block23.BLANK_POINTER
+        for atom in prefix.first.control.atoms
+        if atom.role == "Blank-block" and atom.center in FIRST_OUTPUT_CENTERS
+    }
+    for center, word in prefix.first_gram.output_records:
+        if center not in configuration:
+            raise ValueError("first output lies outside the guarded target set")
+        configuration[center] = word
+    if set(configuration) != set(FIRST_OUTPUT_CENTERS):
+        raise ValueError("first channel does not guard all output pointers")
+    return tuple(
+        OutputPointerAtom(center, configuration[center])
+        for center in FIRST_OUTPUT_CENTERS
+    )
+
+
 def pair_prefix_output_is_bound(prefix) -> bool:
     expected_records = tuple(
         (atom.center, atom.word)
@@ -1571,6 +1733,8 @@ def pair_prefix_output_is_bound(prefix) -> bool:
             prefix.first.control.right_source,
         )
         and prefix.first_gram.output_records == expected_records
+        and reconstructed_pair_output_control(prefix)
+        == prefix.output_control.atoms
         and len(unused_centers) == 6
         and all(
             atom.role == "Blank-block"
@@ -2409,13 +2573,18 @@ def merged_product_affine_covariance_certificate(
     )
     moved = embedded_append_product(moved_left, moved_right)
     expected_signature = tuple(
-        (
-            block28.affine(rotation, translation, center),
-            role,
-            owner,
-            sources,
+        sorted(
+            (
+                (
+                    block28.affine(rotation, translation, center),
+                    role,
+                    owner,
+                    sources,
+                )
+                for center, role, owner, sources in merged_product_signature(product)
+            ),
+            key=lambda entry: coordinate_sort_key(entry[0]),
         )
-        for center, role, owner, sources in merged_product_signature(product)
     )
     return (
         all(
@@ -2575,18 +2744,21 @@ def active_sum_and_stop_transport_certificate(rotation, translation=ZERO) -> boo
     expected_controls = tuple(
         framed_pair_output_control(
             frame,
-            block23.mat_vec(rotation, control.left_exit),
-            block23.mat_vec(rotation, control.right_exit),
-            block23.mat_vec(rotation, control.left_first),
-            block23.mat_vec(rotation, control.right_first),
+            left_exit,
+            right_exit,
+            left_first,
+            right_first,
         )
-        for control in active.controls
+        for left_exit, right_exit in itertools.product(
+            frame.left_exits, frame.right_exits
+        )
+        for left_first, right_first in itertools.product(OUTCOMES, repeat=2)
     )
-    moved_terms = tuple(
+    moved_terms = sorted_projectors(
         transport_tensor_projector(term, rotation, translation)
         for term in future_active_sum(active).projector.terms
     )
-    expected_terms = tuple(
+    expected_terms = sorted_projectors(
         framed_output_tensor_projector(control) for control in expected_controls
     )
     moved_projector = OrthogonalProjectorSum(
@@ -2602,13 +2774,16 @@ def active_sum_and_stop_transport_certificate(rotation, translation=ZERO) -> boo
     moved_stop = ProjectorComplement(
         moved_projector.carrier_centers,
         moved_projector,
+        projector_complement_rank(moved_projector),
     )
     expected_stop = ProjectorComplement(
         expected_projector.carrier_centers,
         expected_projector,
+        projector_complement_rank(expected_projector),
     )
     return (
-        moved_controls == expected_controls
+        len(moved_controls) == len(set(moved_controls)) == 3136
+        and set(moved_controls) == set(expected_controls)
         and moved_projector == expected_projector
         and moved_stop == expected_stop
     )
@@ -2958,8 +3133,8 @@ SCOPE_TEXT = (
     "no singleton first-layer law or empty/singleton/pair first-layer "
     "completion; no second returned-pair use; no cause identification, "
     "autonomous invocation, renewal, scheduler, cadence, rate, nearest-neighbor "
-    "compiler, gravity/source attachment, axiom amendment, audit verdict, "
-    "obligation retirement, or TOE-score movement"
+    "compiler, gravity/source attachment, axiom amendment, audit verdict or "
+    "retention, obligation retirement, or TOE-score movement"
 )
 
 FORBIDDEN_SCOPE_PHRASES = (
@@ -2978,6 +3153,7 @@ FORBIDDEN_SCOPE_PHRASES = (
     "gravity/source attachment established",
     "axiom amendment required",
     "audit verdict set",
+    "audit retention established",
     "obligation retired",
     "TOE score increased",
 )
@@ -3000,6 +3176,7 @@ class ScopeContract:
     gravity_attachment: bool = False
     axiom_amendment: bool = False
     audit_verdict: bool = False
+    audit_retention: bool = False
     obligation_retirement: bool = False
     toe_movement: bool = False
     next_on_both_pass: str = "covariant_physical_successor_handoff"
@@ -3027,6 +3204,7 @@ SCOPE_FIELD_BY_PHRASE = {
             "gravity_attachment",
             "axiom_amendment",
             "audit_verdict",
+            "audit_retention",
             "obligation_retirement",
             "toe_movement",
         ),
@@ -3569,7 +3747,7 @@ def main() -> int:
         )
     checks.check(
         "designated_mutations",
-        all(mutations.values()) and len(mutations) == 54,
+        all(mutations.values()) and len(mutations) == 55,
         f"rejected={sum(mutations.values())}/{len(mutations)}",
     )
     checks.check(

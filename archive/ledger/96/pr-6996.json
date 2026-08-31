@@ -1,0 +1,19 @@
+{
+ "id": "pr-6996",
+ "title": "feat(j2k14): c2d4-plus-deep-interior same-k fails at k=14: t=30 vs t=58",
+ "science": "Same-k failure at k=14 for the non-adopted j2 variant showing interior cost kills the restore, a failed-route display.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6996,
+  "branch": "physics-loop/toe-lphys-block-j2k14-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

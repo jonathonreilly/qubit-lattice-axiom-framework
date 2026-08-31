@@ -1,0 +1,19 @@
+{
+ "id": "pr-6788",
+ "title": "feat(samek8): nu same-k reverse fails at k=8: t=14 vs t=26",
+ "science": "Confirms the same-k failure continues at k=8 on B_24(0) (19649 sites): t(8,0,0)=14, t(8,8,8)=26, so 588 < 676. The two arrivals match the linear forms t_axis = k+6 and t_body = 3k+2 predicted by the path structure in #6787 exactly (14=8+6, 26=24+2), so the k=7 death is systematic rather than a one-off. Another wall shift recorded: t(21,0,0)=27 here vs 29 on B_21.",
+ "forcing": false,
+ "verdict_pair": "same-k reverse k=8 = NO (588<676)",
+ "source": {
+  "pr": 6788,
+  "branch": "physics-loop/toe-lphys-block-samek8-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

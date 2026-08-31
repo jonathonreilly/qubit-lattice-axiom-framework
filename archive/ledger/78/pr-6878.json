@@ -1,0 +1,19 @@
+{
+ "id": "pr-6878",
+ "title": "feat(oek1): one-unit-enter same-k holds at k=1: t=3 vs t=5",
+ "science": "Defines one-unit-enter omicron = rho3 + cost 3 on a 2->3 hop whose dest has exactly ONE unit coordinate (complementary to kappa's exactly-two). B_6: 3 vs 5, holds. Runner counts 72 firing hops inside B_6.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6878,
+  "branch": "physics-loop/toe-lphys-block-oek1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

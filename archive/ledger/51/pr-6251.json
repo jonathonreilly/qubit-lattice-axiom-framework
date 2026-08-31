@@ -1,0 +1,19 @@
+{
+ "id": "pr-6251",
+ "title": "[physics-loop] toe-lphys c2m3corner: bounded_theorem / bounded-support",
+ "science": "Elementary fact that the corner pad M3-into-M4 is non-unital, applied to an unadopted C2 leftover; exploratory pack member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6251,
+  "branch": "physics-loop/toe-lphys-block-c2m3corner-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7145",
+ "title": "feat(nsopexft): nsopp x-probe formation-tick exist-opposite: reverse fails, face fails",
+ "science": "Formation-tick exist-opposite on nsopp x-probes with all four S non-empty and no opposite pair: S(A)={+e1}, S(B)={+e3}, S(C)={+e2,+e3,-e3}, S(D)={+e1,-e1}. A clean double negative not caused by emptiness; the note names the cause correctly ('holding reverse and face needs the later tick').",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7145,
+  "branch": "physics-loop/toe-lphys-block-nsopexft-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

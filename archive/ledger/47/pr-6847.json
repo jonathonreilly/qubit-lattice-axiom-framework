@@ -1,0 +1,19 @@
+{
+ "id": "pr-6847",
+ "title": "physics: open the conjugate-pair observable space",
+ "science": "Opens the programs first non-scalar observable space: the paired momenta are exact entrywise conjugates with quotient Gram pinned invariantly at diag(1,1), giving three-dimensional real symmetric observables and the first nonvacuous momentum-charge commutators.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6847,
+  "branch": "physics-loop/toe-axiom-closure-block131-conjugate-pair-observable-space-20260817"
+ },
+ "carried_by": "#6848 (block 132 restates the pinned conjugate-pair Gram as part of the completed two-block algebra and answers the named (0,2) live question), thence #6854/#6862 (general conditional theorem and gene",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

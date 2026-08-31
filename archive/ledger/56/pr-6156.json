@@ -1,0 +1,19 @@
+{
+ "id": "pr-6156",
+ "title": "science(toe): construct state-dependent Record/Born history law",
+ "science": "Block 63: constructs the first state-dependent Record/Born/history joint-law candidate \u2014 one fixed trace kernel across five exact states and two incompatible ternary menus, a shared effect/codeword with exact M2(C) head and outcome carriers, measure-and-prepare CP branches, exact normalized prefix-projective cylinders, contingent realized-history members, and arbitrary-N append with exact 22N+7 pe",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6156,
+  "branch": "physics-loop/toe-axiom-closure-block63-record-born-history-20260812"
+ },
+ "carried_by": "#6157 rebuilds the entire candidate on the strict-nearest-neighbor single front with exact 3N+1 support; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6430",
+ "title": "feat(coverival): name both F_cut 2-site coverage maximizers",
+ "science": "Displayed-not-adopted naming of the two coverage maximizers, an incremental re-display of the 6429 result.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6430,
+  "branch": "physics-loop/toe-lphys-block-coverival-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

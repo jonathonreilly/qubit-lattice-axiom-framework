@@ -1,0 +1,19 @@
+{
+ "id": "pr-7253",
+ "title": "feat(nmoread): neighbor-read of O on #7167: reverse HOLD, face HOLD",
+ "science": "R_O ('neighbor-read of own outgoing') on the #7208 y-probes. PROVABLE COLLAPSE: R_O(q) = -M(q) identically (verified at all 10,112 sites over 16 seeds x r^2 in {9,25}), so exist-opposite(R_O,R_O) == exist-opposite(M,M) at all 96 probe comparisons. Its hold/hold IS the #7208 M verdict it spends four sections refuting; the runner's 'discriminator' check compares sets, never verdicts.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7253,
+  "branch": "physics-loop/toe-lphys-block-nmoread-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

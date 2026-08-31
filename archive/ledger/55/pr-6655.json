@@ -1,0 +1,19 @@
+{
+ "id": "pr-6655",
+ "title": "feat(skewlab): one local-in-n labeling fires at the off-axis breaker",
+ "science": "Completion enumeration at the off-axis breaker site, exploratory displayed-not-adopted continuation of the same campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6655,
+  "branch": "physics-loop/toe-lphys-block-skewlab-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

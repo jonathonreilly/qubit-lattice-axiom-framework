@@ -1,0 +1,19 @@
+{
+ "id": "pr-6644",
+ "title": "feat(all4): two of four 4-NN sites have unique-axis agreement",
+ "science": "REVERSAL of the #6642/#6643 negative, not a probe cell: the exhaustive census over ALL FOUR 4-NN unread sites of U (not just the lex-first one) shows N_pos=2 - at (1,-1,1) and (1,1,-1) the occupancy-kernel unique-axis labels DO agree with 2 July-3 pair members each (N_agree = [0,2,2,0]), lex-first positive (1,-1,1) with agreeing tuple (+,-,-,0,0,+). Mechanism: at the same-sign corners (1,-1,-1) an",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6644,
+  "branch": "physics-loop/toe-lphys-block-all4-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

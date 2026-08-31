@@ -1,0 +1,19 @@
+{
+ "id": "pr-7809",
+ "title": "physics-loop: close exact two-Record prefix bridge",
+ "science": "BOUNDED-POSITIVE-TWO-EVENT-PREFIX \u2014 the first place in this lane where one permanent Record causally controls the formation of the next one. On a 224-site radius-13 geometry (seven pairwise-disjoint 32-site radial blocks at y_f = x + 9f, invariant under all 24 proper cubic rotations), the complete prior Locked word (f,b_1) acts as an orthogonal classical control in an explicit global CPTP preparat",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7809,
+  "branch": "physics-loop/toe-source-eta-ownership-block23-prior-record-live-preparation-two-event-prefix-20260830"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 39 behind). CITED WITHOUT RESTATEMENT by the terminal: #7813 depends_on this note with the role supplies conditionally the exact fourteen-",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6465",
+ "title": "feat(cutkuniq): coverage is unique only at k=4,6,8 and the maximizer is f1",
+ "science": "The strongest forcing negative against L1 in the entire batch, and the natural terminal of the coverage lane. Ranking all 32 F_cut maps by cov_k for k=1,5,6,7,8,9,10,11 (plus cited k=2,3,4) gives the uniqueness set K_unique={4,6,8} - the only seed sizes at which the coverage maximizer is unique - and at EVERY one of them the unique maximizer is f1=(1,1,1,1,1), never f_L1. The margins are explicit ",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6465,
+  "branch": "physics-loop/toe-lphys-block-cutkuniq-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

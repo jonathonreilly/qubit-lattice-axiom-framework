@@ -1,0 +1,19 @@
+{
+ "id": "pr-7342",
+ "title": "[physics-loop][gravity-gns][bounded_theorem][bounded-support] construct action-glued matrix unitary boundary",
+ "science": "Bernstein-certified global PSD of the odd-edge symbol at k=pi/2 yields a canonical minimal bilateral matrix GNS on the conserved rank-5 source module; the TT subchannel has a unique strictly positive scalar measure whose minimal cyclic unitary is infinite-dimensional (fixed finite-dimensional unitary bounded-infeasible).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7342,
+  "branch": "physics-loop/toe-axiom-closure-block184-unitary-dilation-20260824"
+ },
+ "carried_by": "#7344 (extends the family across axial momenta, proves k=pi/2 non-representative, localizes the PSD threshold k*=0.0890875879); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

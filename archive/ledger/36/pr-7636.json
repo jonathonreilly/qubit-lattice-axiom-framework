@@ -1,0 +1,19 @@
+{
+ "id": "pr-7636",
+ "title": "feat(nm2frm1sp3): directed 1-step cyclic-frame transport along +e3 at t+1 on three-axis opposite near-face seed: reverse HOLD, face fails",
+ "science": "Near-face variant of #7633. Verified the extra x=2 seed pair leaves all four probe frames unchanged, so this is #7633's computation; same global-tau/note mismatch, and under the note's own per-site cut the face pair HOLDs. No check label unique to this PR.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7636,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1sp3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

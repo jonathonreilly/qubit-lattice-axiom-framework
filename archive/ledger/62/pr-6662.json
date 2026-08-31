@@ -1,0 +1,19 @@
+{
+ "id": "pr-6662",
+ "title": "feat(delrun): delta-sign-product pair fires N_new=1",
+ "science": "Execution run of the delta-sign-product pair from 6661, an incremental displayed-not-adopted follow-on in the exploratory series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6662,
+  "branch": "physics-loop/toe-lphys-block-delrun-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6725",
+ "title": "feat(t8mix): t=8 shell mixes seven G+ types and five radii",
+ "science": "Displayed t=8 shell composition enumeration (seven G+ types, five radii), explicitly not adopted; exploratory campaign output with no theorem or decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6725,
+  "branch": "physics-loop/toe-lphys-block-t8mix-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

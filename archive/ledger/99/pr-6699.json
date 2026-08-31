@@ -1,0 +1,19 @@
+{
+ "id": "pr-6699",
+ "title": "feat(twox): age bit and hop cost are independent extras",
+ "science": "Independence note that age bit and hop cost are separate extras (displayed, not adopted), exploratory bookkeeping within the same campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6699,
+  "branch": "physics-loop/toe-lphys-block-twox-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

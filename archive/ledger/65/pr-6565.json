@@ -1,0 +1,19 @@
+{
+ "id": "pr-6565",
+ "title": "feat(c11sel): cov11>0 is not Q_star and not Q4",
+ "science": "Exploratory cov11 positive-selector non-equivalence search, displayed-not-adopted 20260815 lphys campaign block with no decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6565,
+  "branch": "physics-loop/toe-lphys-block-c11sel-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7216",
+ "title": "feat(nst2ssx): S+ two-tick composition on #7181: reverse HOLD, face HOLD, composition HOLD",
+ "science": "S^+ two-tick composition on #7181's x-probes: reverse and face hold at both tau0 and tau1 although S^+ genuinely grows at B and C, so composition=HOLD is a real stability statement, not a tautology. I swept all 648 two-site-seed x frame cells: S^+ composition HOLDs in only 243 (37.5%) and fails in 405. The band reports only holding cells.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7216,
+  "branch": "physics-loop/toe-lphys-block-nst2ssx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7121",
+ "title": "feat(nstriown): three-site own incoming: reverse UNDEFINED, face UNDEFINED",
+ "science": "Own-incoming readout on three-site x-probes; A is the tick-0 seed (1,0,0) keeping +e_2, B mixes two and D mixes four earliest incoming steps. Cross-references the neighbour-lock run on the same probes (which gave reverse=fail) and the opposite-lock y-probe run (reverse=hold).",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7121,
+  "branch": "physics-loop/toe-lphys-block-nstriown-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

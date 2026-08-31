@@ -1,0 +1,19 @@
+{
+ "id": "pr-7406",
+ "title": "feat(nm2t2sly): M two-tick composition on two-axis same-lock y-probes: reverse fails, face fails, composition HOLD",
+ "science": "M two-tick on same-lock y-probes: reverse fail because M(A)=M(B)={+e_1} (same-lock, no opposite pair) where #7390's opposite seed gives reverse HOLD. Its own N1 table concedes the surrounding readouts 'agree by accident'.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail (composition HOLD)",
+ "source": {
+  "pr": 7406,
+  "branch": "physics-loop/toe-lphys-block-nm2t2sly-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

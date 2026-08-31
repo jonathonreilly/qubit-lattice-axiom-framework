@@ -1,0 +1,19 @@
+{
+ "id": "pr-7049",
+ "title": "feat(qlet): PVM letters UNDEFINED; reverse and face UNDEFINED",
+ "science": "The `UNDEFINED/UNDEFINED` verdict is a type mismatch dressed as a theorem: PVM letters are the strings {+,-}, incoming locks are 3-tuples, and the selector filters `if lock in PVM_LETTERS` over a set of tuples, so the empty result is guaranteed by construction. 39 PASS checks on a tautology. The only real computation is a decorative exact check that Tr(rho P_pm) = (2/3, 1/3) at k=1, which plays no",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7049,
+  "branch": "physics-loop/toe-lphys-block-qlet-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

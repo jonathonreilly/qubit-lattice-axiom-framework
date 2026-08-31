@@ -1,0 +1,19 @@
+{
+ "id": "pr-7319",
+ "title": "physics: construct self-hosting homogeneous Record carrier",
+ "science": "Block 33: the one-site binary-projective Record carrier can be made output-closed under one fixed nearest-neighbor Law via a SHARED payload rather than six independent draws - decoder C(A)=H(A)^2/Tr(H(A)^2), P(A)=(I+K_0/r)/2, a full-support conjugation-invariant Gaussian empty-neighbor branch, a copy branch, and a six-equal-payload trace-read branch writing P(A),Q(A) with masses Tr(CP),Tr(CQ) on a",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7319,
+  "branch": "physics-loop/toe-record-self-hosting-writer-block33-20260822"
+ },
+ "carried_by": "#7320 (block 34) replaces the supplied append order with an endogenous pure-birth process, and #7321 (block 35) replaces that with the reliable self-addressing compiler; the block-33 content kernel is",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

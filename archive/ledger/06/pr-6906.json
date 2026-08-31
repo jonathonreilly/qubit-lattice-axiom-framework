@@ -1,0 +1,19 @@
+{
+ "id": "pr-6906",
+ "title": "feat(c2meet): cost-2 ridge-enter two-seed meet |M|=1 vars 0",
+ "science": "c2 two-seed meet: identical to 6898's kappa result (equal-arrival 313, |M|=1 at (1,0,0), t=3, variance 0, ties l1). Confirms the singleton-meeting collapse is insensitive to the ridge-enter price.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6906,
+  "branch": "physics-loop/toe-lphys-block-c2meet-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6806",
+ "title": "feat(hugwhy13): t(13,0,0)=23 vs t(13,13,13)=41 paths of the mu wall",
+ "science": "Path-naming diagnostic for the k=13 mu-wall fail (displayed not adopted), exploratory why-analysis within the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6806,
+  "branch": "physics-loop/toe-lphys-block-hugwhy13-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

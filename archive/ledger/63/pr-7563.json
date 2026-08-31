@@ -1,0 +1,19 @@
+{
+ "id": "pr-7563",
+ "title": "feat(nm2holyzrd): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on two-axis opposite seed: reverse HOLD, face fails",
+ "science": "Neighbour-read of yz-plane holonomy: enumerates the six lattice translates of each square and reports which translate holds (+e_3 and -e_3 hold for the reverse square, -e_1 alone for the face square). The band's only spatial census of where the split field supports a closed square.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7563,
+  "branch": "physics-loop/toe-lphys-block-nm2holyzrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

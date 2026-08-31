@@ -1,0 +1,19 @@
+{
+ "id": "pr-7289",
+ "title": "feat(nmcpar): axis-cover of M and O at t+1 on #7189: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the #7189 x-probes; cover holds at all four while #7189's own signed-M exist-opposite failed both. Same independence as #7288, second witness.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7289,
+  "branch": "physics-loop/toe-lphys-block-nmcpar-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

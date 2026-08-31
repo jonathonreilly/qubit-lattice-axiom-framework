@@ -1,0 +1,19 @@
+{
+ "id": "pr-7367",
+ "title": "feat(nm2t2slz): M two-tick composition on two-axis same-lock z-probes: reverse fails, face fails, composition HOLD",
+ "science": "Two-axis same-lock seed, z-probes, M two-tick composition: M(t)=M(t+1) at all four probes, composition HOLD, exist-opposite fail/fail at both cuts. Its own steelman concedes the composition HOLD is 'an accident of frozen singletons'. Also reports that on this cell timed-O gives reverse=hold face=fail while M gives reverse=fail face=hold - the two duals give opposite verdict pairs.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails composition=HOLD",
+ "source": {
+  "pr": 7367,
+  "branch": "physics-loop/toe-lphys-block-nm2t2slz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

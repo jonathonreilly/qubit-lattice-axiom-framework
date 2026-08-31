@@ -1,0 +1,19 @@
+{
+ "id": "pr-7312",
+ "title": "feat(nm2axpx): forall-orthogonal M vs O at t+1 on two-axis opposite x-probes: reverse HOLD, face HOLD",
+ "science": "153-table cell: two-axis opposite band, x-probe, instrument = forall-orthogonal M vs O at t+1; reverse HOLD, face HOLD; uncited by later notes.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7312,
+  "branch": "physics-loop/toe-lphys-block-nm2axpx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

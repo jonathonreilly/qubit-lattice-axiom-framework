@@ -1,0 +1,19 @@
+{
+ "id": "pr-6544",
+ "title": "feat(p3bit5): no 5-bit remaining-bit Q equals cov3>0",
+ "science": "Displayed-not-adopted exhaustion of the 5-bit selector menu for cov3>0; exploratory negative enumeration.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6544,
+  "branch": "physics-loop/toe-lphys-block-p3bit5-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6089",
+ "title": "[physics-loop] toe-axiom-closure block18 \u2014 bounded_theorem \u2014 bounded-support \u2014 nonlinear Regge branch lift",
+ "science": "Block 18: exact homogeneous 4D Kuhn/Coxeter Regge action expansion S_R(tg)=-4sqrt2 t^3+(4023/256)t^4+O(t^5), complete cubic on the eleven-dimensional null sector, all pure-metric cubic terms vanish, and the leading cubic metric-gradient image is one shear line missing all three compact source covectors.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6089,
+  "branch": "physics-loop/toe-axiom-closure-block18-nonlinear-regge-20260810"
+ },
+ "carried_by": "#6090 subsumes the leading-cubic analysis with certified full nonlinear roots and sourced continuations; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

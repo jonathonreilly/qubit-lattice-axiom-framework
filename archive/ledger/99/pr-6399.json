@@ -1,0 +1,19 @@
+{
+ "id": "pr-6399",
+ "title": "feat(fillcut): eight F_cut maps fill from one site",
+ "science": "The strongest result of this batch and a genuine cross-cell synthesis: it intersects the STATIC three-cut class of #6391 with the DYNAMIC fill census of #6393. Of the 32 members of F_cut, exactly N=8 fill the two-cube from the 1-site seed - so imposing the three symmetry cuts AND the fill requirement together still leaves 8 candidates and does not select f_L1. Exact lock histories: f_L1 (1,4,8,11,",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6399,
+  "branch": "physics-loop/toe-lphys-block-fillcut-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

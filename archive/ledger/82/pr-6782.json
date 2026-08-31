@@ -1,0 +1,19 @@
+{
+ "id": "pr-6782",
+ "title": "feat(samek6): nu same-k reverse holds at k=6 on B18; t(16,0,0) drops to 22",
+ "science": "Extends the same-k sweep (#6775, k=1..5) by one scale on the larger host B_18(0) (8473 sites): t(6,0,0)=12, t(6,6,6)=20, so 432>400 and same-k reverse still holds at k=6. Also records another host-boundary shift of the axis arrival -- t(16,0,0) is 22 on B_18 versus 24 on B_16 -- which is the same wall effect that produced the k=6 face-reverse correction in #6769/#6772.",
+ "forcing": false,
+ "verdict_pair": "same-k reverse k=6 = YES (432>400)",
+ "source": {
+  "pr": 6782,
+  "branch": "physics-loop/toe-lphys-block-samek6-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

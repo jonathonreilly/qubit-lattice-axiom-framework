@@ -1,0 +1,19 @@
+{
+ "id": "pr-7727",
+ "title": "physics: isolate L24 even-odd OS boundary",
+ "science": "Exact even/odd temporal Schur factorization A_s=Q_s tensor B_s at all nine radii with reflected factor determinant -1/(m^2+s)<0, giving a strictly negative two-generator witness at every frozen radius that survives the ordinary null quotient; PSD heredity excludes any joint parity Gram retaining either literal Schur form as a principal compression.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7727,
+  "branch": "physics-loop/toe-axiom-closure-block198-even-odd-two-step-os-20260825"
+ },
+ "carried_by": "#7733 (the 2x2x2 sign/algebra/trace tournament exhausts this family and restates the witnesses); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

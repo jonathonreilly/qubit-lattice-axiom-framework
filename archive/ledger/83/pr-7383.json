@@ -1,0 +1,19 @@
+{
+ "id": "pr-7383",
+ "title": "feat(nm2oreadslz): neighbor-read of O at t+1 on two-axis same-lock z-probes: reverse fails, face fails",
+ "science": "Two-axis same-lock seed, z-probes, neighbor-read of O: fail at all four. This is the PR that names the seed-adjacency artifact outright - 'At t, O(A,t)={+e_2} already, because the step from A to the partner is +e_2 and that step is the partner's seed letter.' That phantom outgoing step, backed by no formation event, is what drives every same-lock z-probe failure in the band (#7357, #7365, #7368).",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7383,
+  "branch": "physics-loop/toe-lphys-block-nm2oreadslz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

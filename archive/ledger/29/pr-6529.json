@@ -1,0 +1,19 @@
+{
+ "id": "pr-6529",
+ "title": "feat(q4false): Q4-false first refuse on f1 4-site fill is wt1",
+ "science": "Displayed-not-adopted Q4-false first-refuse enumeration on 4-site fills; exploratory 20260815 campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6529,
+  "branch": "physics-loop/toe-lphys-block-q4false-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

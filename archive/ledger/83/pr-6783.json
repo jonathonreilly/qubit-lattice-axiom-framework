@@ -1,0 +1,19 @@
+{
+ "id": "pr-6783",
+ "title": "feat(why22): t(16,0,0)=22 via detour that leaves B16 at (16,-1,0)",
+ "science": "Same wall-artifact mechanism as #6771, one radius up: exhibits the lex-first shortest nu-walk to (16,0,0) on B_18(0) (cost 22) and shows it leaves B_16 at (16,-1,0), |v|_1=17, before its single support-drop. Explicitly contrasts a displayed B_16-staying walk costing 24, so the 24 -> 22 drop is attributed to the extra corridor site rather than to any change of rule. Third instance of the pattern: n",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=absent (reports t(16,0,0)=22 on B_18 vs ",
+ "source": {
+  "pr": 6783,
+  "branch": "physics-loop/toe-lphys-block-why22-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6427",
+ "title": "feat(min3split): count 3-site seeds that split f_min from f_L1",
+ "science": "Exhaustive three-site census with a real structural classification. Over all C(12,3)=220 triples: N_split3=60, N_fill_L1_3=220, N_fill_min_3=160. Two clean statements: f_L1 fills from EVERY three-site seed, and the 60 splits are exactly the 60 seeds on which f_min fails to fill (again no history-only split). Classification of the splits: every split seed meets both end faces (contains a site with ",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6427,
+  "branch": "physics-loop/toe-lphys-block-min3split-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

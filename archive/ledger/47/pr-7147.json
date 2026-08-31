@@ -1,0 +1,19 @@
+{
+ "id": "pr-7147",
+ "title": "feat(nperppex): perpnn 1-seed later-tick exist-opposite: reverse fails, face HOLD",
+ "science": "The band's one structural obstruction. On the perpnn 1-seed (origin, lock +e1) the x-probe cell has S_*(A)={+e1} and S_*(B)={+e1,+e2,+e3}, all positive, so reverse fails at the widest time window; I confirmed by independent recomputation that perpnn-x is the ONLY cell of the 30 seed x frame cells whose reverse still fails at the maximal readout (later-tick union own lock). It also exposes a name c",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7147,
+  "branch": "physics-loop/toe-lphys-block-nperppex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6513",
+ "title": "feat(c4midwhy): first refuse of f00 on the midplane 4-site",
+ "science": "reverse=none face=none (f_cut refusal census, N_refuse=0; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut refusal census, N_refuse=0; no",
+ "source": {
+  "pr": 6513,
+  "branch": "physics-loop/toe-lphys-block-c4midwhy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

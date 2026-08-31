@@ -1,0 +1,19 @@
+{
+ "id": "pr-6534",
+ "title": "feat(tot2q): among Q_*, cov2=66 is not iff vertex3=1",
+ "science": "Displayed-not-adopted cov2/vertex3 non-equivalence check among 8 Q_* maps; exploratory 20260815 campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6534,
+  "branch": "physics-loop/toe-lphys-block-tot2q-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

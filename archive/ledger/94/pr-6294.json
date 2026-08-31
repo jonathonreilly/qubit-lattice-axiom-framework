@@ -1,0 +1,19 @@
+{
+ "id": "pr-6294",
+ "title": "feat(nuniq): unique cubic-equivariant linear occupancy kernel",
+ "science": "Small uniqueness lemma that the cubic-equivariant occupancy kernel is 1-dimensional, explicitly not axiom text; minor campaign lemma carried by later closure work.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6294,
+  "branch": "physics-loop/toe-lphys-block-nuniq-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

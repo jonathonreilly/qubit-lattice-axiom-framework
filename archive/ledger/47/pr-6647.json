@@ -1,0 +1,19 @@
+{
+ "id": "pr-6647",
+ "title": "physics: isolate the torus wrap defect and pin the half-space carrier",
+ "science": "Block 120 torus-wrap-defect theorem with exact keystone split, projector law, and 8/8-PASS runner plus cross-model checks, a decisive carrier-verdict artifact on the OS-closure chain. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6647,
+  "branch": "physics-loop/toe-axiom-closure-block120-torus-wrap-defect-20260816"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

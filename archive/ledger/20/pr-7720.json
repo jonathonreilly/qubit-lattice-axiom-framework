@@ -1,0 +1,19 @@
+{
+ "id": "pr-7720",
+ "title": "feat(nm2frm2plx3): L-path cyclic-frame transport +e1 then -e3 at t+1 on three-axis opposite near-face seed: reverse fails, face fails",
+ "science": "Bare L-path +e1 then -e3 on the three-axis near-face seed. Second cell hiding a HOLD inside a fail/fail pair: the L-path HOLDs at face probe (0,0,1) (both hops, via (1,0,1)) and the pair still reads (fail,fail). Also the only member whose Exact-objects text drops the uniqueness word -- 'the 3x3 integer matrix P' where all ten siblings say 'the unique 3x3 integer matrix P' -- an unremarked weakenin",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7720,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2plx3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

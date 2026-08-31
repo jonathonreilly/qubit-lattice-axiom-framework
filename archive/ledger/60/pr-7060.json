@@ -1,0 +1,19 @@
+{
+ "id": "pr-7060",
+ "title": "feat(nssame): same-lock +e1 two-site: reverse holds, face fails",
+ "science": "Displayed-not-adopted same-lock two-site variant showing face fails; exploratory lphys probe carried by campaign roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7060,
+  "branch": "physics-loop/toe-lphys-block-nssame-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

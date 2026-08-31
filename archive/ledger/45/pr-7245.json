@@ -1,0 +1,19 @@
+{
+ "id": "pr-7245",
+ "title": "feat(nmye3sz): own incoming set on #7198: reverse fails, face fails",
+ "science": "M-readout on #7198's z-probes. M(A)={+e1,-e1,+e2} contains a full opposite PAIR yet reverse still fails, because the pair must straddle A and B, not sit inside one probe. The sharpest single counterexample to reading the M bit as 'does the probe's record contain opposite letters'.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7245,
+  "branch": "physics-loop/toe-lphys-block-nmye3sz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

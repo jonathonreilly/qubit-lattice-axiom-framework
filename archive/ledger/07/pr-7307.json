@@ -1,0 +1,19 @@
+{
+ "id": "pr-7307",
+ "title": "feat(nm2axx): axis-cover of M and O at t+1 on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "Two-axis opposite seed, x-probes, axis-cover: the probe-direction discriminator. On one fixed seed the three probe frames give three different cover verdicts - z: hold/hold, y: hold/fail, x: fail/fail - establishing a genuine directional anisotropy of the readout on an isotropic cubic host. Also shows forall-perp HOLDs at A where cover FAILs.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7307,
+  "branch": "physics-loop/toe-lphys-block-nm2axx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

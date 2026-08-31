@@ -1,0 +1,19 @@
+{
+ "id": "pr-6721",
+ "title": "feat(nuface): nu reverses all three face-diagonal pairs",
+ "science": "Nu-cost face-diagonal reversal check (displayed, not adopted), incremental exploratory data point in the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6721,
+  "branch": "physics-loop/toe-lphys-block-nuface-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

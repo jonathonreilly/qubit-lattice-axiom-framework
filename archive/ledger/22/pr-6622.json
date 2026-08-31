@@ -1,0 +1,19 @@
+{
+ "id": "pr-6622",
+ "title": "feat(c9q4): cov9>0 is not Q4; positivity does not imply Q4",
+ "science": "Independent confirmation of the same hidden k=9 law from a different comparison: Q4_TRUE_ZEROS = the three wt1-only maps and Q4_FALSE_POS = {(0,0,0,1,0),(0,0,0,1,1),(0,1,0,1,0),(0,1,0,1,1),(0,1,0,0,1)} give the identical 26-map positive set as #6621, i.e. cov9>0 iff (adj2 OR vertex3 OR (opp2 AND mixed3)), and the counts cross-check exactly (N_both=21 = 16 adj2-true + 4 wt1-and-vertex3 + (1,1,0,0,1",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4",
+ "source": {
+  "pr": 6622,
+  "branch": "physics-loop/toe-lphys-block-c9q4-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

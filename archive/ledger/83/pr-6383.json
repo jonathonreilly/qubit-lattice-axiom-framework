@@ -1,0 +1,19 @@
+{
+ "id": "pr-6383",
+ "title": "feat(actneed): action required for projectors not k-class",
+ "science": "Bounded_theorem note, no probe cell. OBJECT-SPLIT THEOREM that resolves the tension #6343 raised. It shows the question 'is a cube action on M_2 required?' has no single answer: (i) FORMATION does not use one; (ii) the occupancy label (S,k) does not use one -- (S,k) is a function of the six occupancy bits alone, invariant under every later-lock two-label swap (which sends n_mu -> -n_mu) and under ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6383,
+  "branch": "physics-loop/toe-lphys-block-actneed-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

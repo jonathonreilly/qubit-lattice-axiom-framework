@@ -1,0 +1,19 @@
+{
+ "id": "pr-7649",
+ "title": "feat(nm2frm2sms): directed 2-step cyclic-frame transport along +e2 at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Same-lock +e2 2-step. Its not-leftover gate is a genuine cross-computation: it recomputes the same-lock -e3 one-step (HOLD) and the (0,0,0) two-step inside this runner and asserts they differ from the +e2 result, so the runner independently reproduces #7630's reverse HOLD.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7649,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2sms-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

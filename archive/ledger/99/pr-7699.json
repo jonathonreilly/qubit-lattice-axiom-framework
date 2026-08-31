@@ -1,0 +1,19 @@
+{
+ "id": "pr-7699",
+ "title": "feat(nm2frm2lxrd3n3): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1 on three-axis opposite near-face seed: r",
+ "science": "Distance-3 readout of the near-face L-path (-e3,-e1); seed replica of #7696.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7699,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lxrd3n3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

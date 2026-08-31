@@ -1,0 +1,19 @@
+{
+ "id": "pr-6930",
+ "title": "feat(dfk14): deep-out-face same-k restores k=14: t=30 vs t=46",
+ "science": "The band's load-bearing positive: df on B_42 gives t(14,0,0)=30 vs t(14,14,14)=46, 2700>2116 \u2014 same-k reverse RESTORED at the wall that killed six other clause families. The mechanism is stated exactly: the body arrival is untouched (still 46) and only the axis moves, 26 -> 30. Runner proves df == omega on every six-neighbour hop (I confirmed: zero disagreeing hops on B_20), so this is also the mi",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6930,
+  "branch": "physics-loop/toe-lphys-block-dfk14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

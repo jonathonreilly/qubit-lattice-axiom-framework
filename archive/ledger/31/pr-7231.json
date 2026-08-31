@@ -1,0 +1,19 @@
+{
+ "id": "pr-7231",
+ "title": "feat(nmt2sy): M two-tick composition on #7211: reverse HOLD, face HOLD, composition HOLD",
+ "science": "The same two-tick comparison on the four #7211 y-probes of the y-symmetric three-site process: M is unchanged from t to t+1, reverse and face HOLD at both cuts, composition HOLDs. Seed A keeps its singleton seed letter because the step from the new neighbour into A is parallel to the parent lock.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7231,
+  "branch": "physics-loop/toe-lphys-block-nmt2sy-20260815"
+ },
+ "carried_by": "archive/families/toe-lphys-20260812.md \u00a7Follow-on (the 19 citing notes)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

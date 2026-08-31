@@ -1,0 +1,19 @@
+{
+ "id": "pr-6621",
+ "title": "feat(c9q6): cov9>0 is not Q6; positivity does not imply Q6",
+ "science": "This is the diff that closes the k=9 law, though it only reports a negative. Its two exact mismatch sets - Q6_TRUE_ZEROS = {(1,0,0,0,0),(1,0,0,0,1),(1,1,0,0,0)} and the unique Q6_FALSE_POS = {(0,1,0,0,1)} with cov9=4 - pin the positive set exactly: the six zeros are precisely the maps with adj2=0, vertex3=0 and NOT(opp2 AND mixed3), so cov9>0 iff (adj2 OR vertex3 OR (opp2 AND mixed3)). An exact fo",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q6",
+ "source": {
+  "pr": 6621,
+  "branch": "physics-loop/toe-lphys-block-c9q6-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7075",
+ "title": "feat(nfvec): neighbor-lock vector: reverse UNDEFINED, face holds",
+ "science": "Changes the PREDICATE, not just the letter: the letter is the unique recorded-neighbour lock VECTOR in {+-e_i} and reverse/face ask for vector sum zero. L(A)=+e_1, L(B)=UNDEFINED (mixed vectors +e_3,+e_1), L(C)=-e_2, L(D)=+e_2 -> reverse UNDEFINED, face HOLD. The note and the runner check (`sign-lettering-loses-axis-and-fails-face`) that the named-sign coarsening of the very same lock lists gives ",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=hold",
+ "source": {
+  "pr": 7075,
+  "branch": "physics-loop/toe-lphys-block-nfvec-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

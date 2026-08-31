@@ -1,0 +1,19 @@
+{
+ "id": "pr-6846",
+ "title": "physics: build the facet-charge bridge to the cell-cutting lane",
+ "science": "The facet-charge bridge to the cell-cutting lane: three dissection charge points are noncollinear with no conserved affine total, generating the index-28 lattice 7x+y=0 mod 28; the momentum-like reading is a labeled conditional on cost-class reversibility, with the flip enumeration as the named deciding work order.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6846,
+  "branch": "physics-loop/toe-axiom-closure-block130-facet-charge-bridge-20260817"
+ },
+ "carried_by": "#6914 (kept block 150 executes the enumeration, re-derives the modulus, meets the reversibility premise and kills the reading on rank -- the conditional not activated on any reading -- and ships nine ",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

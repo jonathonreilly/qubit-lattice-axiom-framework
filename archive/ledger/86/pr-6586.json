@@ -1,0 +1,19 @@
+{
+ "id": "pr-6586",
+ "title": "feat(c6q10): cov6>0 is not Q10",
+ "science": "reverse=N/A face=N/A (selector test; equiv=0, N_pos=28, N_Q10=28, N_both=26, N_mismatch=4, lex_first_miss=(0,0,0,0,1))",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, N_pos=28, N_Q1",
+ "source": {
+  "pr": 6586,
+  "branch": "physics-loop/toe-lphys-block-c6q10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

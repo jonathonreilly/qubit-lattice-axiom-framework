@@ -1,0 +1,19 @@
+{
+ "id": "pr-6707",
+ "title": "feat(why14): shortest body-diagonal path costs 3+3+1+3+1+3=14",
+ "science": "Body-diagonal shortest-path cost accounting curiosity (displayed, not adopted), minor exploratory fragment of the mink series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6707,
+  "branch": "physics-loop/toe-lphys-block-why14-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

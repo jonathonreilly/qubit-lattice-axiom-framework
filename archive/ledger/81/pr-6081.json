@@ -1,0 +1,19 @@
+{
+ "id": "pr-6081",
+ "title": "science(gravity): derive exact static tick-edge Regge source",
+ "science": "Block 13: derives a flat-law-preserving signed range-one improvement that replaces the Block-12 bag by an actual axial tick-edge Regge source with exact zero gauge row and pure T_tt, all 1,281 static modes compatible and solvable, keeping the 2tau/|k|^2 lapse pole and 1/(4 pi r) Green tail.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6081,
+  "branch": "physics-loop/toe-axiom-closure-block13-20260810"
+ },
+ "carried_by": "#6083 (block 15) subsumes its static-mode compatibility inventory in the 2,369-mode joint solve; repaired-edge Regge chain #6134/#6135 supersedes the improvement technology; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

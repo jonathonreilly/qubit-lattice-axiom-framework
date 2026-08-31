@@ -1,0 +1,19 @@
+{
+ "id": "pr-7624",
+ "title": "feat(nm2frm1szr): neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1 on two-axis opposite seed: reverse HOLD, face HOL",
+ "science": "Neighbor-read of #7622: adds the predicate 'one_step HOLDs here AND at some formed 6-neighbour'. Strictly stronger than #7622 by construction, and it holds at all four probes with named witnesses. Content beyond #7622 is one existential-richness bit; the underlying frame/transport numbers are #7622's.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7624,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1szr-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

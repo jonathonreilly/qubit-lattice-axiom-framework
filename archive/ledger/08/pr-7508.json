@@ -1,0 +1,19 @@
+{
+ "id": "pr-7508",
+ "title": "feat(nm2cycfrmholfz): cyclic-frame holonomy around the unit square at t+1 on three-axis far-face opposite seed: reverse HOLD, face fails",
+ "science": "Far-face holonomy repeat of #7501 with identical bits, a displayed-not-adopted exploratory duplicate-pattern run.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7508,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmholfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

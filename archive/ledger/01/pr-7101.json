@@ -1,0 +1,19 @@
+{
+ "id": "pr-7101",
+ "title": "feat(nsopcfx): opposite-lock same-tick n(C)!=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Same process and probes as #7100 with same-tick instead of strictly-earlier occupancy. Every kernel changes and the UNDEFINED letters move from {B,C} to {A,D}, yet the verdict pair is unchanged. Controlled evidence that the occupancy timing convention reshuffles which probe is undefined but cannot rescue the verdict.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7101,
+  "branch": "physics-loop/toe-lphys-block-nsopcfx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7291",
+ "title": "feat(nmcopx): axis-cover of M and O at t+1 on #7168: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the #7168 x-probes. Its check named 'discriminator-vs-y-probe-cover-HOLDING' passes while asserting y_cover B, C, D all hold -- the only difference it can cite is in a different readout (exist-opposite), not in the scored cover.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7291,
+  "branch": "physics-loop/toe-lphys-block-nmcopx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

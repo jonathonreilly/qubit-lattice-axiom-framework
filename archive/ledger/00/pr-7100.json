@@ -1,0 +1,19 @@
+{
+ "id": "pr-7100",
+ "title": "feat(nsopn): opposite-lock formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Opposite-lock x-probes, strictly-earlier kernel. First member of the mu*-split sub-family: mu* is defined as the first axis where n(C)!=n(D), letter=sign(n_mu*). Here n(C)_2=0 vs n(D)_2=1/3, so the very component chosen to split C from D is zero at C and C is UNDEFINED. Face cannot be certified.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7100,
+  "branch": "physics-loop/toe-lphys-block-nsopn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

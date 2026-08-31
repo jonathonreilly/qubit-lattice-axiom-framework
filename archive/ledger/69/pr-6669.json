@@ -1,0 +1,19 @@
+{
+ "id": "pr-6669",
+ "title": "feat(ticklab): lock-ticks stay 2 and do not shrink Stab",
+ "science": "Lock-tick escape tried and failed at the off-axis star, not a probe cell: adding the lock-tick t(w) = min_i |w - s_i|_1 as local data alongside occupancy does NOT shrink the stabilizer at v=(-1,1,1) - all four occupied ticks equal 2, so |Stab(sigma,t)| = |Stab(sigma)| = 2 and the occupancy swapper survives; N_tick_ok=0 against N_pair_support=4 (support members listed as (+,0,+,-,0,-),(+,0,-,+,0,-)",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6669,
+  "branch": "physics-loop/toe-lphys-block-ticklab-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

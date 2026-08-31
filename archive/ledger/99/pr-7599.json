@@ -1,0 +1,19 @@
+{
+ "id": "pr-7599",
+ "title": "feat(nm2yzrdfzy): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis far-face opposite y-probes: reverse fails, face fails",
+ "science": "y-probe translates of the yz square on 3F; fail/fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7599,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrdfzy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

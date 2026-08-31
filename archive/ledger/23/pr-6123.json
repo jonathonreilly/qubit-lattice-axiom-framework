@@ -1,0 +1,19 @@
+{
+ "id": "pr-6123",
+ "title": "science: build the intrinsic spatial Einstein-Cartan Record cube",
+ "science": "Block 37: first complete finite proper-cubic spatial Einstein-Cartan/Record witness (8 vertices, 12 SO(4) links, 24 loops, exact 10^8 label contraction, full stationarity), including the executed rejection of the naive curvature contraction in favor of the complementary-triad bivector star[n wedge e(s1 x s2)].",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6123,
+  "branch": "physics-loop/toe-axiom-closure-block37-proper-cubic-plaquette-20260811"
+ },
+ "carried_by": "#6124 glues two cubes, corrects this block's sigma/3 extension semantics, and replaces its free-marginal target with the exact DLR conditional; #6126 extends to periodic carriers; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

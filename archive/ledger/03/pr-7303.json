@@ -1,0 +1,19 @@
+{
+ "id": "pr-7303",
+ "title": "feat(nm2ax): two-axis opposite seed axis-cover: reverse HOLD, face fails",
+ "science": "Two-axis opposite seed, y-probes, axis-cover. Load-bearing contrast: on the one-axis seed cover HOLDs at all four y-probes (reverse hold, face hold); adding the second seed pair moves t(D) from 3 to 2, collapses M(D) from a mixed 3-set to {-e_3}, and breaks cover at D (union misses e_2) - so face-cover dies purely from seeding density.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7303,
+  "branch": "physics-loop/toe-lphys-block-nm2ax-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

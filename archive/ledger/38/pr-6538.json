@@ -1,0 +1,19 @@
+{
+ "id": "pr-6538",
+ "title": "feat(q0all): every Q4-false map first refuses wt1 on f1 4-face",
+ "science": "Displayed-not-adopted uniform first-refuse check across all 8 Q4-false maps; exploratory campaign block carried by roll-up.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6538,
+  "branch": "physics-loop/toe-lphys-block-q0all-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

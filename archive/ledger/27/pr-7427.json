@@ -1,0 +1,19 @@
+{
+ "id": "pr-7427",
+ "title": "feat(nm2orionez): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis opposite z-probes: reverse fails, face HOLD",
+ "science": "Lex-one signed Orient on the opposite z-probe cell: -1,+1,-1,-1 -> reverse fail, face HOLD. Completes the triad: on ONE identical cell the opposite-pair convention gives (HOLD,fail), unique-signed gives (fail,fail), lex-one gives (fail,HOLD), and the unsigned lex variant gives -1,+1,+1,+1. Four conventions, three distinct verdict pairs, one dataset.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=HOLD",
+ "source": {
+  "pr": 7427,
+  "branch": "physics-loop/toe-lphys-block-nm2orionez-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

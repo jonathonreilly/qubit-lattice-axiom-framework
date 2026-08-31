@@ -1,0 +1,19 @@
+{
+ "id": "pr-7585",
+ "title": "feat(nm2holyz3t): yz-plane cyclic-frame holonomy freeze t+1 vs t+2 on three-axis opposite near-face seed: reverse HOLD, face fails, composit",
+ "science": "3N yz squares, own-square holonomy at both cuts + composition. Identical verdicts to 7576/7577/7579; the composition bit is structurally forced.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail composition=hold",
+ "source": {
+  "pr": 7585,
+  "branch": "physics-loop/toe-lphys-block-nm2holyz3t-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

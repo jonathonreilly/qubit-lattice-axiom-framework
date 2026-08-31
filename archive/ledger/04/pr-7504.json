@@ -1,0 +1,19 @@
+{
+ "id": "pr-7504",
+ "title": "feat(nm2cycfrmt2): HOLDING cyclic-frame transport freeze t+1 vs t+2 on two-axis opposite z-probes: reverse HOLD, face HOLD, composition HOLD",
+ "science": "153-table cell: two-axis opposite band, z-probe, instrument = cyclic-frame transport (m,o_next,o_prev), t+1 vs t+2 with composition; reverse HOLD, face HOLD, composition HOLD; uncited by later notes.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD composition=HOLD",
+ "source": {
+  "pr": 7504,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

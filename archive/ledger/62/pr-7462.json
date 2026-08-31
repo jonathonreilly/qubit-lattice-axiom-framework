@@ -1,0 +1,19 @@
+{
+ "id": "pr-7462",
+ "title": "feat(nm2oricyccrdz): neighbor-read of cyclic lex-smallest Orient at t+1 on two-axis opposite z-probes: reverse fails, face fails",
+ "science": "Same negative under the lex-smallest tie-break: neighbour-read holds only at A and fails at B, C, D, so both pairs still fail. With #7461 this shows the collapse of the headline HOLD under a nearest-neighbour requirement is itself tie-break robust.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7462,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyccrdz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

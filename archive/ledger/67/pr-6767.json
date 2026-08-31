@@ -1,0 +1,19 @@
+{
+ "id": "pr-6767",
+ "title": "feat(011b16): on B16, (0,1,1) same-k k=4 holds; doubled and k=5 face fail",
+ "science": "Parallel of #6764 with the cheaper reverser (0,1,1) on B_16(0): t(4,0,0)=8, t(8,0,0)=12, t(2,2,2)=6, t(4,4,4)=12, t(10,0,0)=14, t(5,5,0)=10; the four bits come out yes/no/yes/no, the SAME pattern as nu. Cross-cell content: the two reversers agree on which pairs reverse despite different arrival tables, so the yes/no pattern is a property of the comparator scale rather than of the particular rule.",
+ "forcing": false,
+ "verdict_pair": "small body=YES doubled=NO same-k(k=4)=YES face(k=5)=NO",
+ "source": {
+  "pr": 6767,
+  "branch": "physics-loop/toe-lphys-block-011b16-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

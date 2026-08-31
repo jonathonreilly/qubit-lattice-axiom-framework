@@ -1,0 +1,19 @@
+{
+ "id": "pr-6810",
+ "title": "feat(hugk16): corridor-slide same-k fails at k=16: t=26 vs t=50",
+ "science": "mu at k=16 on B_48: t=26 vs 50, 2028<2500. Ladder confirmation; restates the k+10 / 3k+2 law.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (same-k k=16, 2028 < 2500) face=n/a",
+ "source": {
+  "pr": 6810,
+  "branch": "physics-loop/toe-lphys-block-hugk16-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

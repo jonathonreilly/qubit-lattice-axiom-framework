@@ -1,0 +1,19 @@
+{
+ "id": "pr-6755",
+ "title": "feat(ratio011): (0,1,1) same-k reverse fails at k=1; holds at k=2,3,4",
+ "science": "Displayed (0,1,1) same-k reversal check on B12 failing at k=1, explicitly not adopted; exploratory clause-comparison detail in the toggle series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6755,
+  "branch": "physics-loop/toe-lphys-block-ratio011-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

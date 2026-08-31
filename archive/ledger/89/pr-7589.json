@@ -1,0 +1,19 @@
+{
+ "id": "pr-7589",
+ "title": "feat(nm2holyzsl): yz-plane cyclic-frame holonomy at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Same-lock seed, yz squares, own-square holonomy. DEFECT: the human-readable Scope paragraph says 'on the two-axis opposite seed' while the claim_scope YAML, title, trace fields and the actual seed constant all say same-lock. Numbers are correct for same-lock.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7589,
+  "branch": "physics-loop/toe-lphys-block-nm2holyzsl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

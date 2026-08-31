@@ -1,0 +1,19 @@
+{
+ "id": "pr-7505",
+ "title": "feat(nm2cycfrmfx): cyclic-frame transport of (m,o_next,o_prev) at t+1 on three-axis far-face opposite x-probes: reverse fails, face fails",
+ "science": "Transport on far-face 3-axis x-probes; identical bits to #7503 but with mixed M(A)={+e_3,-e_3} rather than the two-axis singleton. Same vacuity.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7505,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmfx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

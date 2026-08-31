@@ -1,0 +1,19 @@
+{
+ "id": "pr-6286",
+ "title": "science(toe): close sourced ADM constraint cadence",
+ "science": "Block 78: full linear constraint/source cadence on the Block 77 carrier - exact ADM polynomial identities (PS=0, MP=0, CS=0, MC^dagger=0, CG=-(1/2)D.M), kick-first (w1,w2)=(2,0) source weights derived uniquely (equal/late placements fail 11,064/13,056 modes), and the 13,056-mode signed-source census that becomes the downstream fixture.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6286,
+  "branch": "physics-loop/toe-axiom-closure-block78-constrained-cadence-20260814"
+ },
+ "carried_by": "PR #6325 (Block 83) link action reproduces exactly this lapse/shift/stress cadence and PR #6360 (Block 95) replaces the prescribed cadence with live scalar bilinears passing the same battery",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

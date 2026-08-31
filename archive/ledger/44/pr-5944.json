@@ -1,0 +1,19 @@
+{
+ "id": "pr-5944",
+ "title": "[physics-loop][review-loop] toe-time blockG10 (STACKED on #5943) \u2014 Cycle 885: bounded theorem \u2014 GBW1 split and re-priced; the disjoint windo",
+ "science": "Splits GBW1 into GBW1a/GBW1b and classifies the five window coordinates: barrier derived as B(R)=supp(R) (landed central barrier refuted 1152/1440), D gauge, a/b existence derived with the dilation-scale widening, centre exposed as a sixth coordinate, N supplied with the theta path-interference coupling, plus the disjoint-window impossibility theorem. Every row has a verified successor: 887 re-pri",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5944,
+  "branch": "physics-loop/toe-time-blockG10-20260802"
+ },
+ "carried_by": "PR #5964 (N-row = k=0 of the 903 incidence map), PR #5954 (barrier identification dissolved), PR #6009 (ledger rows)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

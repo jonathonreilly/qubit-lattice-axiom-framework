@@ -1,0 +1,19 @@
+{
+ "id": "pr-7429",
+ "title": "feat(nm2sreadslz): neighbor-read of 1-in 2-out split at t+1 on two-axis same-lock z-probes: reverse fails, face HOLD",
+ "science": "Neighbor-read of the unsigned split on same-lock z-probes: fail at A (the aligned-seed artifact kills split there), HOLD at B,C,D. Its own text records that the verdict pair is identical to #7422's split-without-neighbor-read on the same cell, and that neighbor-read of signed M HOLDs at every z-probe while neighbor-read of signed O fails at every z-probe.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=HOLD",
+ "source": {
+  "pr": 7429,
+  "branch": "physics-loop/toe-lphys-block-nm2sreadslz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

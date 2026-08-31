@@ -1,0 +1,19 @@
+{
+ "id": "pr-7185",
+ "title": "feat(nsxopinx): x-symmetric three-site x-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "Same-tick union own lock on the x-symmetric three-site seed {0,(1,0,0),(-1,0,0)} with locks +e2,-e2,-e2, x-probe frame: reverse HOLD uses the seed letter L(A)=-e2 against +e2 in S^+(B). The e2-axis image of #7167/#7175; I verified the cell independently.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7185,
+  "branch": "physics-loop/toe-lphys-block-nsxopinx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

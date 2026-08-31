@@ -1,0 +1,19 @@
+{
+ "id": "pr-6789",
+ "title": "feat(011why6): t(6,0,0)=10 under (0,1,1) via cheap seed-exit corridor",
+ "science": "Mechanism for the (0,1,1) same-k failure at k=6 (#6784): exhibits both lex-first walks on B_18(0) -- axis t(6,0,0)=10 by a seven-hop corridor plus one cost-3 support drop (vs 16 on-axis), body t(6,6,6)=18 all cost-1 -- so the body arrival equals its l1 length exactly while the axis pays a fixed +4. Adds something the other 'why' notes do not: a DAG path COUNT, exactly 8 distinct shortest paths to ",
+ "forcing": false,
+ "verdict_pair": "same-k reverse k=6 = NO under (0,1,1) (300<324)",
+ "source": {
+  "pr": 6789,
+  "branch": "physics-loop/toe-lphys-block-011why6-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

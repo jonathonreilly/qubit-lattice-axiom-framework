@@ -1,0 +1,19 @@
+{
+ "id": "pr-7577",
+ "title": "feat(nm2yzrd3z): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis opposite near-face seed: reverse HOLD, face fails",
+ "science": "3N yz squares, neighbor-read. Identical M/O/split/Orient data and identical verdicts to 7576's own-square read \u2014 the neighbor conjunct is inert here (reader: inert at all 86 scored squares in the band).",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7577,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrd3z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

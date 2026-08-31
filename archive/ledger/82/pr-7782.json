@@ -1,0 +1,19 @@
+{
+ "id": "pr-7782",
+ "title": "[physics-loop] Block229: bounded-degree O(3) ladder history-message flow",
+ "science": "Constructs the actual changing-carrier retain-every-r physical Haar isometry J_r and shared-frame compression on max-degree-three open O(3) ladders: sufficient two-history projector-frame message, typed direct/staged composition, positive/injective message evolution with operator/HS/Doob total-variation tails uniform in ladder length. The J_r/Q used by the keystone 232 and every response block ori",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7782,
+  "branch": "physics-loop/toe-connection-dynamics-block229-ladder-history-message-flow-reviewed-20260828"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

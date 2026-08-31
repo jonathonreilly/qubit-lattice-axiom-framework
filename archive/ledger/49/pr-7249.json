@@ -1,0 +1,19 @@
+{
+ "id": "pr-7249",
+ "title": "feat(nmot2sy): O two-tick composition on #7211: reverse UNDEFINED, face UNDEFINED, composition fails",
+ "science": "O two-tick composition on #7211's y-probes. Every printed O set, every new-site list and every bit is identical to #7243's; duplicate instance of the structural failure proved universal in the #7243 note above.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED (composition fails)",
+ "source": {
+  "pr": 7249,
+  "branch": "physics-loop/toe-lphys-block-nmot2sy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

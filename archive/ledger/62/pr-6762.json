@@ -1,0 +1,19 @@
+{
+ "id": "pr-6762",
+ "title": "feat(t14eq): t(8,0,0)=t(4,4,4)=14; axis last hop support-drop 3 equalizes",
+ "science": "Displayed explanation of the t(8,0,0)=t(4,4,4)=14 tie via the cost-3 axis last hop, explicitly not adopted; exploratory why-analysis restating 6736/6756 data.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6762,
+  "branch": "physics-loop/toe-lphys-block-t14eq-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6572",
+ "title": "feat(q3v3m3): among Q_star, cov3=220 iff vertex3 and mixed3",
+ "science": "Exact positive equivalence: among the 8 Q_* maps, cov3=220 iff (vertex3=1 and mixed3=1); N_tot3=N_Q=N_both=2, no lex-first miss, and the two tot3 maps differ only on opp2. Carries the full eight-line cov3 census (80,96,188,220,96,96,212,220) absent from the roll-up.",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (cover census + iff selector test; tot3",
+ "source": {
+  "pr": 6572,
+  "branch": "physics-loop/toe-lphys-block-q3v3m3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

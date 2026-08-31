@@ -1,0 +1,19 @@
+{
+ "id": "pr-7273",
+ "title": "feat(nmsimx2): simultaneous M and O at t+1 on #7214: reverse HOLD, face HOLD",
+ "science": "Simultaneous M and O at t+1 on the #7214 x-probes. My recomputation shows this cell's probe (t,M,O) signature is identical to #7213's, so it duplicates #7268 numerically on a different nominal seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold (M and O separately)",
+ "source": {
+  "pr": 7273,
+  "branch": "physics-loop/toe-lphys-block-nmsimx2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

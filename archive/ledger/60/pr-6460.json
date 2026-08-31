@@ -1,0 +1,19 @@
+{
+ "id": "pr-6460",
+ "title": "feat(cut4cover): unique 4-site F_cut maximizer is f1 not f_L1",
+ "science": "4-site coverage maximizer count showing f1 unique and f_L1 at 489, displayed-not-adopted scan continuation.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6460,
+  "branch": "physics-loop/toe-lphys-block-cut4cover-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

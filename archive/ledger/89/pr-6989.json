@@ -1,0 +1,19 @@
+{
+ "id": "pr-6989",
+ "title": "feat(i2k18): c2d4-plus-interior same-k fails at k=18: t=34 vs t=75",
+ "science": "Same-k failure at k=18 for the non-adopted i2 variant, an incremental failed-route display in an abandoned candidate series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6989,
+  "branch": "physics-loop/toe-lphys-block-i2k18-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

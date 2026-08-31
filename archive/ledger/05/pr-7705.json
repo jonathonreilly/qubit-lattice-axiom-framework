@@ -1,0 +1,19 @@
+{
+ "id": "pr-7705",
+ "title": "feat(nm2frm2ply): L-path cyclic-frame transport +e2 then -e3 at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "Order swap of #7673: L-path (+e2 then -e3). Flips the face bit from HOLD to fails; the two holder sets share 5 of 6 members and differ only at (0,1,1) vs (0,-1,0) - the finest-grained order effect measured in the band.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7705,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2ply-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6728",
+ "title": "feat(varrev): two of eight clause-toggles reverse; nu is the rounder",
+ "science": "Full 2^3 census of nu's three clauses (seed-exit, both-weights-1, support-drop) on B_6(0): exactly two toggles reverse the diamond, (0,1,1) at (8,6) and (1,1,1)=nu at (10,8), and nu is the variance minimizer among reversers (0.005906 vs 0.010623). Isolates the support-drop clause as what stops the cheap return-to-axis shortcut ((1,1,0) gives t_axis=t_diag=8). Notable tension in its own table: (1,1",
+ "forcing": false,
+ "verdict_pair": "reverse=2 of 8 toggles YES (N_rev=2) face=absent",
+ "source": {
+  "pr": 6728,
+  "branch": "physics-loop/toe-lphys-block-varrev-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

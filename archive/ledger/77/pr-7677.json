@@ -1,0 +1,19 @@
+{
+ "id": "pr-7677",
+ "title": "feat(nm2frm2s3r): neighbor-read of directed 2-step cyclic-frame transport along -e3 at t+1 on three-axis opposite near-face seed: reverse fa",
+ "science": "Existential 6-NN neighbour-read of the 2-step -e3 on the near-face seed. Recomputed: the third seed pair flips the ORIGIN's 2-step bit from fail (two-axis seed, #7678) to HOLD, while the pair verdict is unchanged because (0,1,0) still fails - a probe-level seed sensitivity invisible in the headline.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7677,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2s3r-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

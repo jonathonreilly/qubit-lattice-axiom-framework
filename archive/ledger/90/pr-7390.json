@@ -1,0 +1,19 @@
+{
+ "id": "pr-7390",
+ "title": "feat(nm2t2y): M two-tick composition on two-axis opposite y-probes: reverse HOLD, face fails, composition HOLD",
+ "science": "M two-tick exist-opposite on opposite y-probes: M(t)=M(t+1) at all four; reverse HOLD from M(A)={-e_1} vs M(B)={+e_1}. That HOLD is a direct read-back of the seed letters the member itself planted at tick 0 - the readout returns its own input.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fail (composition HOLD)",
+ "source": {
+  "pr": 7390,
+  "branch": "physics-loop/toe-lphys-block-nm2t2y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

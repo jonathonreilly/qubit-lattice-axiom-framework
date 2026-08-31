@@ -1,0 +1,19 @@
+{
+ "id": "pr-7115",
+ "title": "feat(nsopzncfx): opposite-lock z-probe same-tick n(C)!=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Opposite-lock z-probes, same-tick kernel. Letters identical to the strictly-earlier run #7110 despite every kernel changing; another timing-invariance data point.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7115,
+  "branch": "physics-loop/toe-lphys-block-nsopzncfx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

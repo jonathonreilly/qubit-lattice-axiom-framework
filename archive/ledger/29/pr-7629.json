@@ -1,0 +1,19 @@
+{
+ "id": "pr-7629",
+ "title": "feat(nm2frm1srt): neighbor-read of directed 1-step cyclic-frame transport along -e3 freeze t+1 vs t+2 on two-axis opposite seed: reverse HOL",
+ "science": "Neighbor-read AND freeze combined: the existential-neighbour predicate evaluated at per-site offsets 1 and 2, agreeing. The one member that composes the band's two independent strengthenings; still HOLD/HOLD, so it adds a second-order stability bit and nothing else.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold composition=hold",
+ "source": {
+  "pr": 7629,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1srt-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

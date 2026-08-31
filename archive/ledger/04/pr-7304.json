@@ -1,0 +1,19 @@
+{
+ "id": "pr-7304",
+ "title": "feat(nm2ax12): 1-in 2-out split on two-axis opposite: reverse HOLD, face fails",
+ "science": "Two-axis opposite seed, y-probes, 1-in 2-out split. Verdicts are identical to the axis-cover PR #7303 because |Axis(M)|=1 at every probe of this seed; the note does not say so (unlike #7306/#7372) and instead frames the D failure as 1-in-1-out cover fail rather than the split refinement doing any work.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7304,
+  "branch": "physics-loop/toe-lphys-block-nm2ax12-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6386",
+ "title": "feat(koname): occupancy lock labels are the pairs (S,k)",
+ "science": "Bounded_theorem note with full N1-N8 gate, no probe cell. INFORMATION-LOSS / COARSE-GRAINING census for the Record axiom's content-only readout: the occupancy-only label map lambda(c)=(S(c),k(c)) on the 64 six-tuples has image of size exactly 8 -- all subsets of {x,y,z}, split 1+3+3+1 by cardinality -- and EVERY FIBER has exactly 8 cells (each balanced axis is (0,0) or (1,1); each unbalanced axis ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6386,
+  "branch": "physics-loop/toe-lphys-block-koname-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6472",
+ "title": "feat(cut5who): name the two 5-site F_cut coverage maximizers",
+ "science": "Names the two 5-site coverage maximizers, displayed-not-adopted enumeration detail extending #6465 counts.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6472,
+  "branch": "physics-loop/toe-lphys-block-cut5who-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

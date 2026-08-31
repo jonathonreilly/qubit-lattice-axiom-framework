@@ -1,0 +1,19 @@
+{
+ "id": "pr-6479",
+ "title": "feat(wt0diff): first seed where L1 fills and its wt1=0 sibling does not",
+ "science": "Lex-first seed splitting f_L1 from its wt1=0 sibling, displayed-not-adopted splitter bookkeeping in the 0815 lphys pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6479,
+  "branch": "physics-loop/toe-lphys-block-wt0diff-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

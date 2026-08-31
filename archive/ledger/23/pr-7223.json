@@ -1,0 +1,19 @@
+{
+ "id": "pr-7223",
+ "title": "feat(nsplqxe2): own-letter Cl(3,0) plaquette product on #7195: reverse UNDEFINED, face UNDEFINED",
+ "science": "Cl(3,0) plaquette product on #7195's x-axis opposite +/-e_2 process; corners (1,1,0) and (0,1,0) mix. Fourth seed, same UNDEFINED. The four plaquette PRs jointly read as 'the Clifford holonomy is undefined', but that conclusion is wrong -- see the escalation on #7206.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7223,
+  "branch": "physics-loop/toe-lphys-block-nsplqxe2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

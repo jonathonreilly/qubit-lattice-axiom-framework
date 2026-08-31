@@ -1,0 +1,19 @@
+{
+ "id": "pr-7586",
+ "title": "feat(nm2sfzholy): neighbor-read of cyclic lex-smallest frame holonomy at t+1 on two-axis opposite y-probes: reverse HOLD, face fails",
+ "science": "y-probe translates of the lex-smallest unit square on 2A. DEFECT: title and PR body report 'Reverse HOLD, face fails', but the note's own Theorem 2/3, its runner cache line 'y-probe neighbor-read reverse=fail face=fail', and independent recomputation all give fail/fail. The HOLD is the value of the untranslated A-D-B-E square (#7571's object), left in the note as a second, conflicting definition o",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail (title/body wrongly claim reverse=HOL",
+ "source": {
+  "pr": 7586,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzholy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": true,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

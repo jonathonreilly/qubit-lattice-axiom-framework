@@ -1,0 +1,19 @@
+{
+ "id": "pr-7466",
+ "title": "feat(nm2oricyclrdy): neighbor-read of cyclic lex-largest Orient at t+1 on two-axis opposite y-probes: reverse fails, face fails",
+ "science": "opposite y-probes, neighbour-read of the cyclic lex-largest orientation. Holds at A and C but fails at B and D, so both pairs fail - the neighbour-read wrapper destroys the reverse HOLD that the bare orientation letter reports at this cell under the other tie-break (#7455).",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7466,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyclrdy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

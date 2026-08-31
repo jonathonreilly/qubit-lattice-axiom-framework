@@ -1,0 +1,19 @@
+{
+ "id": "pr-7262",
+ "title": "feat(nmot3sy): O freeze t+1 vs t+2 on #7211: reverse HOLD, face HOLD, composition HOLD",
+ "science": "O freeze t+1 vs t+2 on the y-symmetric #7211 y-probes. Its own runner asserts twosite_o1==o1, twosite_o2==o2 and twosite_composition==composition, i.e. the y-symmetric three-site and two-site opposite-lock seeds are numerically identical at these probes; the note concedes 'the freeze is not special to the two-site seed'.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold composition=HOLD",
+ "source": {
+  "pr": 7262,
+  "branch": "physics-loop/toe-lphys-block-nmot3sy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

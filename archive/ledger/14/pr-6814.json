@@ -1,0 +1,19 @@
+{
+ "id": "pr-6814",
+ "title": "feat(entk14): enter-body same-k fails at k=14: t=26 vs t=46",
+ "science": "The eps wall: k=14 on B_42, t=26 vs 46, 2028<2116, reverse fails. Reports the k=13 pair 25 vs 43 on the SAME Dijkstra, so the restore-then-die transition is exhibited inside one run. Together with #6807 this fixes eps's window as k=2..13 -- one scale past mu, at the cost of k=1.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (same-k k=14, 2028 < 2116) face=n/a",
+ "source": {
+  "pr": 6814,
+  "branch": "physics-loop/toe-lphys-block-entk14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6402",
+ "title": "feat(opp0fill): four of eight F_cut fillers silence opp2",
+ "science": "Next narrowing step of the same selector chain, not a probe cell: of the 8 F_cut 1-site fillers found in #6399, exactly N_opp0=4 also satisfy f(opp2)=0 (opp2 = the size-3 axis-type (0,1,2) orbit, one fully occupied axis and four empty slots; 'a filled axis does not form'). f_L1 is one of the 4 but still not unique - f_diamond is again the explicit second witness, with lock history (1,4,8,10,11,12)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6402,
+  "branch": "physics-loop/toe-lphys-block-opp0fill-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

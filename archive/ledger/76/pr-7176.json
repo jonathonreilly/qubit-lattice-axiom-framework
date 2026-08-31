@@ -1,0 +1,19 @@
+{
+ "id": "pr-7176",
+ "title": "feat(nsyopinx): y-symmetric three-site x-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "Same-tick union own lock on the y-symmetric three-site seed, x-probe frame: reverse holds through the neighbour channel (-e3 vs +e3) with L(A) UNDEFINED. Together with #7175 it shows the same seed holds through different channels in different probe frames.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7176,
+  "branch": "physics-loop/toe-lphys-block-nsyopinx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

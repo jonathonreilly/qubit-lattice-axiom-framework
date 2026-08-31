@@ -1,0 +1,19 @@
+{
+ "id": "pr-6925",
+ "title": "feat(ofkclk): out-face clock N_label=12 N_filt=6",
+ "science": "omega on the 12 perp-mask hosts: N_label_fire=12, N_filt_fire=6 \u2014 same counts as rho3 and kappa, but by a different mechanism: the out-face clause is a 2->2 rule and every unread centre has support 3, so incoming omega == incoming rho3 identically ('out-face-idle-on-incoming'). DANGLING PREMISE: the note asserts 'omega restores k=14 and is rounder than kappa' as its investment, and the runner stri",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6925,
+  "branch": "physics-loop/toe-lphys-block-ofkclk-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

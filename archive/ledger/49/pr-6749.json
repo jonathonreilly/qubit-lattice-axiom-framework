@@ -1,0 +1,19 @@
+{
+ "id": "pr-6749",
+ "title": "feat(011var12): on B12, var nu < (0,1,1) < l1",
+ "science": "Displayed B12 three-way variance comparison repeating the 6741 ordering at a larger radius, explicitly not adopted; exploratory series member carried by campaign consolidation.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6749,
+  "branch": "physics-loop/toe-lphys-block-011var12-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7369",
+ "title": "feat(nm2slx): axis-cover at t+1 on two-axis same-lock x-probes: reverse fails, face fails",
+ "science": "Two-axis same-lock seed, x-probes, axis-cover: cover FAILs at A and D (union misses e_2), reverse and face both fail. Identical verdicts to the opposite-seed x-probe cell #7307 - on the x frame the seed sign is irrelevant.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7369,
+  "branch": "physics-loop/toe-lphys-block-nm2slx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

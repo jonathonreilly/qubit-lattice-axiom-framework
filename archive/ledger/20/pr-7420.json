@@ -1,0 +1,19 @@
+{
+ "id": "pr-7420",
+ "title": "feat(nm2splt3y): 1-in 2-out freeze t+1 vs t+2 on two-axis opposite y-probes: reverse HOLD, face fails, composition HOLD",
+ "science": "Split freeze t+1 vs t+2 on opposite y-probes: HOLD at A,B,C, fail at D at both cuts, composition HOLD. Contrasts explicitly with #7396's composition FAIL on the t vs t+1 cut of the same cell.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fail (composition HOLD)",
+ "source": {
+  "pr": 7420,
+  "branch": "physics-loop/toe-lphys-block-nm2splt3y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

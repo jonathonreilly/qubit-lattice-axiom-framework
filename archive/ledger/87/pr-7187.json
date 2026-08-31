@@ -1,0 +1,19 @@
+{
+ "id": "pr-7187",
+ "title": "feat(nsxsaminc): x-axis same-lock same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "Same-tick union own lock on the x-axis same-lock seed {0,(1,0,0)} both locking +e2, y-probe frame: both bits HOLD with L(A) UNDEFINED, so the hold runs through the neighbour channel (-e3 vs +e3). Pairs with #7181 as the second same-letter-seed cell that nonetheless holds, and the note states the rule - 'opposite seed letters are not supplied here; reverse still holds from -e3 against +e3'.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7187,
+  "branch": "physics-loop/toe-lphys-block-nsxsaminc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

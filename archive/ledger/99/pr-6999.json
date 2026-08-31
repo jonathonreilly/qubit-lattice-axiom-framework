@@ -1,0 +1,19 @@
+{
+ "id": "pr-6999",
+ "title": "feat(j2k18): c2d4-plus-deep-interior same-k fails at k=18: t=34 vs t=74",
+ "science": "Same-k failure at k=18 for the non-adopted j2 variant, an incremental failed-route display in the abandoned deep-interior series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6999,
+  "branch": "physics-loop/toe-lphys-block-j2k18-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

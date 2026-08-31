@@ -1,0 +1,19 @@
+{
+ "id": "pr-7283",
+ "title": "feat(nmoaxis): outgoing-axis agreement at t+1 on #7167: reverse HOLD, face fails",
+ "science": "Outgoing-axis agreement: Axis(O)(A)=Axis(O)(B)={e_2,e_3} but Axis(O)(C)={e_1,e_3} != Axis(O)(D)={e_1}, so hold/fail. Its runner proves the useful bridge lemma lx_m == axis_o at all four probes, i.e. on this cell the leftover of Axis(M) IS Axis(O) -- another statement of the axis partition.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7283,
+  "branch": "physics-loop/toe-lphys-block-nmoaxis-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

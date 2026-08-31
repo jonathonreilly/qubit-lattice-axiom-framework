@@ -1,0 +1,19 @@
+{
+ "id": "pr-6079",
+ "title": "science(gravity): derive coframe cut Ward family",
+ "science": "Block 11: constructs the first explicit coframe-indexed cut Gibbs family (cofactor-column face areas) reducing to the Block-10 action at identity, with exact tangential response P=tau[(TrQ)I-Q], virtual-work identity, off-shell higher-form Ward dJ=0, and the seagull Hessian; sharpens the negative that a normalized law does not fix its geometry-dependent additive action zero.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6079,
+  "branch": "physics-loop/toe-axiom-closure-block11-20260810"
+ },
+ "carried_by": "#6080 extends the same family to the four-coframe worldvolume with exact static reduction; #6097 (block 25) matures the additive-zero/representative ambiguity into its own theorem; commits in ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

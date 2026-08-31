@@ -1,0 +1,19 @@
+{
+ "id": "pr-7235",
+ "title": "feat(nmoutsy): own outgoing set on #7211: reverse HOLD, face HOLD",
+ "science": "Same contradiction as #7234, and a duplicate of it: every O and M set printed is identical to #7234's (the only differing cache field anywhere is S^+(D), which the O readout never uses). Recomputed: own-tick O is empty at A, B and C so the honest verdict pair is UNDEFINED/UNDEFINED; the reported HOLD/HOLD is the t+1 reading, contradicted by #7249 on this identical cell.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (as published; own-tick recompute giv",
+ "source": {
+  "pr": 7235,
+  "branch": "physics-loop/toe-lphys-block-nmoutsy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": true,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

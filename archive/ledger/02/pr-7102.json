@@ -1,0 +1,19 @@
+{
+ "id": "pr-7102",
+ "title": "feat(nsparown): parallel-opposite own incoming: reverse UNDEFINED, face UNDEFINED",
+ "science": "Own-incoming readout on the parallel-opposite seed. A is a tick-0 seed keeping its seed letter -e_1; B mixes two and C mixes four earliest incoming steps. Confirms that on this seed the own-incoming readout is undefined at exactly the two probes that the neighbour-lock readout leaves defined.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7102,
+  "branch": "physics-loop/toe-lphys-block-nsparown-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

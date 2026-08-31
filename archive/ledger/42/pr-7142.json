@@ -1,0 +1,19 @@
+{
+ "id": "pr-7142",
+ "title": "feat(nsnnzex): nnseed z-probe later-tick exist-opposite: reverse HOLD, face HOLD",
+ "science": "Later-tick (global T=4) exist-opposite on nnseed z-probes: S_*(A)={+e1,-e1,+e2,-e2,+e3}, S_*(B)={+e1,+e2,+e3}, S_*(C)={+e1,-e1,-e2,+e3}, S_*(D)={+e1,-e2,+e3}. Its real content is the negative control: the runner recomputes the nslate x-probe cell (reverse fail at T=3) on the same process and shows the reverse verdict is frame-dependent, not a property of the seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7142,
+  "branch": "physics-loop/toe-lphys-block-nsnnzex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

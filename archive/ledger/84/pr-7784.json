@@ -1,0 +1,19 @@
+{
+ "id": "pr-7784",
+ "title": "[physics-loop] Block232: J_r temporal-spatial coarse response",
+ "science": "The lane keystone: exact positive temporal-spatial compression defect D=J*S^2J-(J*SJ)^2=[(I-Q)SJ]*[(I-Q)SJ]>=0, whose leading term is a GENERATED nonconstant coarse interaction (Gamma(+)=256/n^2, Gamma(-)=0 Z2 control), plus the arbitrary-r centered-convolution response, the generated non-scalar coarse-kinetic descendant K=2gamma*A_c+uI at eps^3 lambda^2, the complete determinant minimal response ",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7784,
+  "branch": "physics-loop/toe-connection-dynamics-block232-metric-source-coarse-response-20260828"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

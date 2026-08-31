@@ -1,0 +1,19 @@
+{
+ "id": "pr-6881",
+ "title": "feat(klk1): kappa-plus-late-leave same-k holds at k=1: t=3 vs t=5",
+ "science": "Stacks both extras: kappa-lambda = rho3 + ridge-enter + late-leave. B_6: 3 vs 5, holds; t(6,0,0)=18.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6881,
+  "branch": "physics-loop/toe-lphys-block-klk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6979",
+ "title": "feat(c2d4k16): cost-2 max\u22654 out-face same-k holds at k=16: t=32 vs t=52",
+ "science": "c2d4 same-k at k=16 on B_48(0): (32,52), 3072>2704. Beyond the row: the note states the rho3 comparator pair at k=16 is (28,52), which with rho3's k=14 pair (26,46) pins rho3's own affine form to t_axis=k+12, t_body=3k+4 -- the datum that shows the entire band moved the axis intercept from 12 to 16 exactly once and never again.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=16 (3072>2704; band bit) face=absent",
+ "source": {
+  "pr": 6979,
+  "branch": "physics-loop/toe-lphys-block-c2d4k16-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

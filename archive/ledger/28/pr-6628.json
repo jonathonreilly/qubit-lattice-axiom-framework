@@ -1,0 +1,19 @@
+{
+ "id": "pr-6628",
+ "title": "feat(c9q8): cov9>0 is not Q8; positivity implies Q8",
+ "science": "Bounded_theorem note, not a probe cell. 32 F_cut maps on 220 nine-site seeds: cov9>0 not equivalent to Q8 (four Q8-true zeros, lex-first (0,1,0,0,0)) but positivity DOES imply Q8 even though the weaker Q6 implication had failed; N_pos=26, N_Q8=30, N_both=26; the unique Q6-false positive (0,1,0,0,1) with cov9=4 is Q8-true, which is what repairs the implication.",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6628,
+  "branch": "physics-loop/toe-lphys-block-c9q8-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

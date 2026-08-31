@@ -1,0 +1,19 @@
+{
+ "id": "pr-7587",
+ "title": "feat(nm2yzrd3x): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis opposite near-face x-probes: reverse HOLD, face fails",
+ "science": "x-probe variant of the near-face yz neighbor-read holonomy probe, displayed-not-adopted loop output.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7587,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrd3x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

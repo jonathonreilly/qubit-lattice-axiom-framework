@@ -1,0 +1,19 @@
+{
+ "id": "pr-6557",
+ "title": "physics: refute the paired floor and construct the mixed circle",
+ "science": "Block 113: refutes the paired floor of two (displayed branch point with paired sum ONE assembling to (15,1,0)) and constructs the first exact mixed involutions - the Pythagorean circle tC+sA* from a circulant square root anticommuting with A*, interior points pinned at exact inertia (8,8,0) with certified endpoint degeneracy (6,6,4).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6557,
+  "branch": "physics-loop/toe-axiom-closure-block113-paired-floor-refutation-mixed-circle-20260815"
+ },
+ "carried_by": "PR #6584 (Block 114) lands the mixed-circle mechanism closures (pencil factorization, no chiral mixed symmetry, endpoint degeneracy) and the positive dressed reflection that closes the gate this block",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

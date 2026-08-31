@@ -1,0 +1,19 @@
+{
+ "id": "pr-6135",
+ "title": "science: derive repaired-edge IR Einstein and conditional TT sector",
+ "science": "Block 44: eliminates all five nonmetric complete-edge directions by their stationary equations and reconstructs minus one-half the Euclidean linearized Einstein tensor on all ten quadratic momentum monomials (max entry error 2.4e-14) with verified linear Bianchi identity and the inherited h_tt=2 residue; under the explicitly conditional Lorentzian continuation, exactly two TT light-cone modes with",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6135,
+  "branch": "physics-loop/toe-axiom-closure-block44-lorentzian-constraints-20260811"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

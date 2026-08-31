@@ -1,0 +1,19 @@
+{
+ "id": "pr-7759",
+ "title": "[physics-loop] toe-metric-dynamics-bridge-block217-plaquette-holonomy: bounded-support",
+ "science": "Block 217 proves the exact plaquette holonomy telescoping and the base-point-invariant curvature diagnostic Q_p, the loop-level closure of the metric-dynamics bridge chain toward gravity dynamics. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7759,
+  "branch": "physics-loop/toe-metric-dynamics-bridge-block217-plaquette-holonomy-20260827"
+ },
+ "carried_by": "#7803 (open metric-dynamics terminal; commit-ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

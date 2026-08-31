@@ -1,0 +1,19 @@
+{
+ "id": "pr-7551",
+ "title": "feat(nm2holyz): cyclic-frame holonomy around the yz-plane unit square at t+1 on two-axis opposite seed: reverse HOLD, face fails",
+ "science": "Holonomy on the yz-plane (x=0) square instead of xy; prints all four edge matrices and the identity product. First non-xy plane in the band; face square at x=1 fails from split fail at C,C1.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7551,
+  "branch": "physics-loop/toe-lphys-block-nm2holyz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

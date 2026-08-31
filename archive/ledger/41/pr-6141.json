@@ -1,0 +1,19 @@
+{
+ "id": "pr-6141",
+ "title": "science: isolate reflected Regge transfer boundary",
+ "science": "Block 48: rules out the direct single-orientation identification of the sampled poles as eigenvalues of a positive self-adjoint one-step transfer, constructs the minimal time-reflected 22-edge union (13-vs-10 constant-metric fiber, excess = three relative mixed-time shifts), and proposes the common-metric reflected candidate with exact reflection/Ward identities.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6141,
+  "branch": "physics-loop/toe-axiom-closure-block48-physical-transfer-20260811"
+ },
+ "carried_by": "#6142 builds the three-component intertwiner this block localized; #6143 rejects its common-metric candidate at the OS gate; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

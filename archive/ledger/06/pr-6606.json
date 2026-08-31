@@ -1,0 +1,19 @@
+{
+ "id": "pr-6606",
+ "title": "physics: prove the chart-invariant contractivity obstruction",
+ "science": "Block 116 proves the chart-invariant contractivity obstruction by mechanism with exact root isolation, full N1-N8 no-go packet, and cross-model exact checker \u2014 a sharp scoped no-go on the closure chain. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6606,
+  "branch": "physics-loop/toe-axiom-closure-block116-chart-invariant-contractivity-obstruction-20260815"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6784",
+ "title": "feat(011sk6): (0,1,1) same-k reverse fails at k=6: t=10 vs t=18",
+ "science": "Discriminator between the two reversers: at same-k k=6 on B_18(0), (0,1,1) FAILS (t(6,0,0)=10, t(6,6,6)=18, so 300 < 324) while nu on the same host and same comparator HOLDS (432>400, #6782). So the seed-exit clause is what keeps nu's same-k reverse alive at k=6, and the cheaper rule loses it -- the rules are separable at this scale, not interchangeable. Records the axis crossover again: t(6,0,0)=",
+ "forcing": false,
+ "verdict_pair": "same-k reverse k=6 = NO under (0,1,1) (300<324)",
+ "source": {
+  "pr": 6784,
+  "branch": "physics-loop/toe-lphys-block-011sk6-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

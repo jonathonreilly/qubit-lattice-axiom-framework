@@ -1,0 +1,19 @@
+{
+ "id": "pr-6671",
+ "title": "feat(tickhost): no tick-broken 3-ball star; N_fire=0",
+ "science": "LARGE EXHAUSTIVE NEGATIVE, not a probe cell: a full scan of all C(125,3)=317750 equal-radius three-ball unions with distinct centres in [-2,2]^3 against all 343 unread centres with ||v||_inf<=3 finds N_w4 = 763608 weight-4 unread stars, and on EVERY ONE of them all four occupied lock-ticks equal 2 (an l1 Lipschitz identity, N_bad_tick=0), so Stab(sigma,t) = Stab(sigma) universally: N_uneq=0, no le",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6671,
+  "branch": "physics-loop/toe-lphys-block-tickhost-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

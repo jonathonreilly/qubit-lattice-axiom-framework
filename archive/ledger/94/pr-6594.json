@@ -1,0 +1,19 @@
+{
+ "id": "pr-6594",
+ "title": "feat(qstartot6): among Q_star, Max(6) is unique f1, not vertex3 and mixed3",
+ "science": "Positive uniqueness plus totality: max_cov6 = 924 = m6, so f1=(1,1,1,1,1) fills EVERY six-site seed and is the unique such map in Q_*; the note states the max equals the seed-count ceiling. Full eight-line cov6 census (418,470,844,920,454,474,904,924); f_L1 misses totality by exactly 4 seeds (920 vs 924).",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (maximizer test; max_iff_Q=False, N_max",
+ "source": {
+  "pr": 6594,
+  "branch": "physics-loop/toe-lphys-block-qstartot6-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

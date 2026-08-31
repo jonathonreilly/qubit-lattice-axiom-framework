@@ -1,0 +1,19 @@
+{
+ "id": "pr-6482",
+ "title": "feat(wt0c2max): unique 2-site maximizer among wt1=0 F_cut maps",
+ "science": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,f",
+ "source": {
+  "pr": 6482,
+  "branch": "physics-loop/toe-lphys-block-wt0c2max-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

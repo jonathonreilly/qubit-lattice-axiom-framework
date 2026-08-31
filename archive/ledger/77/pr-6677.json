@@ -1,0 +1,19 @@
+{
+ "id": "pr-6677",
+ "title": "feat(uneqext): lock-tick field is an extra vs occupancy",
+ "science": "Occupancy-vs-tick-field distinction example, incremental displayed-not-adopted exploratory pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6677,
+  "branch": "physics-loop/toe-lphys-block-uneqext-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

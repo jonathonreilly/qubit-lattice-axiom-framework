@@ -1,0 +1,19 @@
+{
+ "id": "pr-6929",
+ "title": "feat(dfk1): deep-out-face same-k holds at k=1: t=3 vs t=5",
+ "science": "deep-out-face df = rho3 + out-face restricted to source max >= 2. The note gives the reason the restriction is free: the unit-out hop (1,1,0)->(2,1,0) that df skips is already priced 3 by mu, so df and omega differ as predicates but agree as costs. B_6: 3 vs 5, holds.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6929,
+  "branch": "physics-loop/toe-lphys-block-dfk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

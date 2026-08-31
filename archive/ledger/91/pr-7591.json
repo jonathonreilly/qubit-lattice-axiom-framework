@@ -1,0 +1,19 @@
+{
+ "id": "pr-7591",
+ "title": "feat(nm2yzrdx): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "x-probe translates of the yz square on 2A; fail/fail from split fail at probes A=(1,0,0) and D=(1,1,0). Runs a REDUCED checker regime: 52 checks vs the band's 62-68, dropping all five mutation gates, the det/pair-orient identity gates and the note-reports-* gates.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7591,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrdx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

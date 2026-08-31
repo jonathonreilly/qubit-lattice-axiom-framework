@@ -1,0 +1,19 @@
+{
+ "id": "pr-6549",
+ "title": "feat(tot2miss): f_g misses four long-axis pairs; N_orb=1",
+ "science": "reverse=none face=none (f_cut miss-set + orbit census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut miss-set + orbit census; no (r",
+ "source": {
+  "pr": 6549,
+  "branch": "physics-loop/toe-lphys-block-tot2miss-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

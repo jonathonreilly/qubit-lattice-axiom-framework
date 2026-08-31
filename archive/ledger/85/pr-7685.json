@@ -1,0 +1,19 @@
+{
+ "id": "pr-7685",
+ "title": "feat(nm2frm1s3all): universal neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1 on three-axis opposite near-face seed",
+ "science": "Universal 6-NN readout of the 1-step -e3 on the near-face seed; the seed replica of #7684, same mechanism and same empty result.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7685,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1s3all-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

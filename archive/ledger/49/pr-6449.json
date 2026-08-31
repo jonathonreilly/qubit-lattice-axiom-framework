@@ -1,0 +1,19 @@
+{
+ "id": "pr-6449",
+ "title": "feat(k4v31dyn): 1-site halt of k=4 map (1,1,1,0,1)",
+ "science": "Sibling run to #6445 with one genuinely new fact: the other vertex3=0 k=4 map, (1,1,1,0,1), has k=4, cov1=8, and fills from (0,0,0) at T=5 with history (1,4,8,10,11,12) - matching its sibling (1,1,1,0,0) not only in history but in the LOCK SETS at every tick. So mixed3 is dynamically free on the 1-site trajectory of the vertex3=0 pair: flipping that last bit changes nothing there. That is the vert",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6449,
+  "branch": "physics-loop/toe-lphys-block-k4v31dyn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

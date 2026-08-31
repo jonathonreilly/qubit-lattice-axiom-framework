@@ -1,0 +1,19 @@
+{
+ "id": "pr-7811",
+ "title": "physics-loop: prove sharp overlapping-sector wall",
+ "science": "Terminal EXACT-NONCOMMUTING-BLANK-OVERLAP-WALL-FOR-SHARP-BLOCK24-HARD-EXCLUSION-SECTORS \u2014 kills the collision-totalization shortcut that looked almost automatic after #7810 (form sharp eligibility projectors for every tip, jointly diagonalize, activate isolated tips, send colliding sectors to identity). That extension requires the overlapping eligibility projectors to commute, and they do not. Exa",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7811,
+  "branch": "physics-loop/toe-source-eta-ownership-block25-collision-hard-exclusion-totalization-20260830"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 17 behind); NOT restated \u2014 #7813 constructs a supplied-q pair instrument on a returned tip and cites Block23/24/26, not this overlap wall;",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

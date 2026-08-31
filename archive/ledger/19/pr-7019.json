@@ -1,0 +1,19 @@
+{
+ "id": "pr-7019",
+ "title": "feat(cntnchi): L1 occupancy formation is P-even; leftover-frame lock-content f is P-odd",
+ "science": "Parity comparison of occupancy vs lock-content formation, displayed-not-adopted exploratory note excluded from Admissibility by its own body.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7019,
+  "branch": "physics-loop/toe-lphys-block-cntnchi-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7266",
+ "title": "feat(nmsimopp): simultaneous M and O at t+1 on #7167: reverse HOLD, face HOLD",
+ "science": "Simultaneous M and O at t+1 on the #7208 y-probes, plus the intersection verdict (UNDEFINED, from empty M\u2229O). Concedes outright in Theorem 3 that 'these bits equal nmot2opp O at t+1 and nmoutopp eventual-O' -- a self-declared numerical duplicate distinguished only by which cuts it reports.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold; intersection reverse=UNDEFINED face=",
+ "source": {
+  "pr": 7266,
+  "branch": "physics-loop/toe-lphys-block-nmsimopp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

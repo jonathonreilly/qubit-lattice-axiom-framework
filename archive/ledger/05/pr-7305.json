@@ -1,0 +1,19 @@
+{
+ "id": "pr-7305",
+ "title": "feat(nm2sl): axis-cover of M and O at t+1 on two-axis same-lock: reverse HOLD, face fails",
+ "science": "Two-axis same-lock seed, y-probes, axis-cover. Same result as the opposite seed (#7303) and the same one-axis-vs-two-axis contrast: the sign structure of the seed pairs is irrelevant on the y-probes; only the earlier formation tick at D matters.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7305,
+  "branch": "physics-loop/toe-lphys-block-nm2sl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

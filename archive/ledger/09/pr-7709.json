@@ -1,0 +1,19 @@
+{
+ "id": "pr-7709",
+ "title": "feat(nm2frm1szrd2): distance-2 neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1 on two-axis opposite seed: reverse H",
+ "science": "Distance-2 readout of the 1-step -e3 on the two-axis opposite seed: one of only three HOLD/HOLD members in this band. Survives the convention test - every probe keeps at least two witnesses formed at or before its own cut.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7709,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1szrd2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6977",
+ "title": "feat(c2d4var): cost-2 max\u22654 out-face is rounder than c2d3 and omega on B12",
+ "science": "Variance comparison putting non-adopted c2d4 below c2d3 and omega, an exploratory candidate-ranking display, not core science.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6977,
+  "branch": "physics-loop/toe-lphys-block-c2d4var-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

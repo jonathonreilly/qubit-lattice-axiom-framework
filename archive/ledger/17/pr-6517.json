@@ -1,0 +1,19 @@
+{
+ "id": "pr-6517",
+ "title": "feat(ex0first): lex-first seed that (0,0,1,1,0) fills",
+ "science": "reverse=none face=none (f_cut first-fill census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut first-fill census; no (reverse",
+ "source": {
+  "pr": 6517,
+  "branch": "physics-loop/toe-lphys-block-ex0first-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

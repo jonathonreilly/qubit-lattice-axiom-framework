@@ -1,0 +1,19 @@
+{
+ "id": "pr-7000",
+ "title": "feat(j2var): c2d4-plus-deep-interior is worse-round than c2d4 on B12",
+ "science": "Variance comparison showing the non-adopted j2 variant is worse-round than c2d4, exploratory candidate-ranking numerics.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7000,
+  "branch": "physics-loop/toe-lphys-block-j2var-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

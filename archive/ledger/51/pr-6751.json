@@ -1,0 +1,19 @@
+{
+ "id": "pr-6751",
+ "title": "feat(011face12): (0,1,1) reverses all three B12 faces including k=4",
+ "science": "Displayed (0,1,1) face-pair check on B12 including the k=4 pair where nu fails, explicitly not adopted; exploratory clause-comparison probe in the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6751,
+  "branch": "physics-loop/toe-lphys-block-011face12-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

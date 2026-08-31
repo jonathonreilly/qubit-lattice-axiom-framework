@@ -1,0 +1,19 @@
+{
+ "id": "pr-6579",
+ "title": "feat(c7bit3): no 3-bit remaining-bit Q equals cov7>0",
+ "science": "reverse=N/A face=N/A (3-bit selector search; all 20 candidates fail, matching_candidates=[], N_pos=24)",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (3-bit selector search; all 20 candidat",
+ "source": {
+  "pr": 6579,
+  "branch": "physics-loop/toe-lphys-block-c7bit3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

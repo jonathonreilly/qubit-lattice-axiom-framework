@@ -1,0 +1,19 @@
+{
+ "id": "pr-6920",
+ "title": "feat(w2k14): cost-2 out-face same-k restores k=14: t=30 vs t=46",
+ "science": "Cost-2 out-face k=14 wall-restoring display (displayed, not adopted); exploratory finding carried by campaign roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6920,
+  "branch": "physics-loop/toe-lphys-block-w2k14-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

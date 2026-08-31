@@ -1,0 +1,19 @@
+{
+ "id": "pr-6599",
+ "title": "feat(c7q10): cov7>0 is not Q10; positivity implies Q10",
+ "science": "Exploratory cov7>0 vs Q10 selector test with one-way implication, displayed-not-adopted 20260815 lphys campaign fragment.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6599,
+  "branch": "physics-loop/toe-lphys-block-c7q10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6689",
+ "title": "feat(bitreal): all 12 perp masks are realized as 3-ball stars",
+ "science": "Perp-mask 3-ball realization enumeration (displayed, not adopted), an exploratory campaign block with no adopted claim.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6689,
+  "branch": "physics-loop/toe-lphys-block-bitreal-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

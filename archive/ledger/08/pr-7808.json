@@ -1,0 +1,19 @@
+{
+ "id": "pr-7808",
+ "title": "physics-loop: Block22 exact POVM and radial live-to-Record writer",
+ "science": "Three compatible terminals. (1) EXACT-BLOCK09-SIX-QUBIT-POVM-LIFT: the fourteen Block09 direction/corner product-state probabilities lift to a UNIQUE strictly positive complete POVM on the full 64-dimensional six-qubit space \u2014 E_{delta e_i} = I/12 + (tau/4) sum eps (delta_ij - 1/3) sigma, E_c = I/16 + (3tau/32) sum eps c_j c_k sigma with tau=1/24; sum_b E_b = I_64 exactly (6/12 + 8/16 = 1 with eve",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7808,
+  "branch": "physics-loop/toe-source-eta-ownership-block22-self-delimiting-distributed-record-causal-attachment-20260830"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 52 behind); NOT restated \u2014 #7813 depends on Block23/24/26 only, and the POVM lift, square-root certificate, radial code and identity-Choi ",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

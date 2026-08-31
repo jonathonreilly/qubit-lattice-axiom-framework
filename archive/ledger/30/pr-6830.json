@@ -1,0 +1,19 @@
+{
+ "id": "pr-6830",
+ "title": "feat(ridmeet): ridge-slide two-seed meet |M|=1 vars 0",
+ "science": "Two-seed meeting-set test under rho3 on B_12(0) u B_12((2,0,0)): the first-meeting set is the SINGLETON {(1,0,0)} at t=3, so both arrival-speed variances are exactly 0 and the comparison against l1 is degenerate. The reported 'lex-first minimizer l1' is an alphabetical tiebreak, not a result, and the runner machine-asserts it as a PASS. Equal-arrival set is 313 sites under rho3 vs 265 under l1.",
+ "forcing": false,
+ "verdict_pair": "reverse=n/a face=n/a (|M|=1, var_rho3=var_l1=0, tie)",
+ "source": {
+  "pr": 6830,
+  "branch": "physics-loop/toe-lphys-block-ridmeet-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6648",
+ "title": "feat(ambopp): equal n on ambiguous neighbors forbids every local-in-n pick",
+ "science": "The #6646 obstruction promoted to its own theorem with the quantifier mechanized, not a probe cell: the runner builds the kernel-indexed domain and enumerates EVERY map f: n -> {+,-}, showing the two local-in-n completions are exactly the same-label fillings (+,+,-,0,0,+) and (-,-,-,0,0,+), while both firing completions carry opposite letters on +-x; hence N_same_label_fire = 0. Both ambiguous nei",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6648,
+  "branch": "physics-loop/toe-lphys-block-ambopp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

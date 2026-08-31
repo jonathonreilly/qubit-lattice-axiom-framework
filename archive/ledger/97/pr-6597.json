@@ -1,0 +1,19 @@
+{
+ "id": "pr-6597",
+ "title": "feat(q10c1): cov1>0 is not Q10; positivity implies Q10",
+ "science": "Two positives beyond the failed iff: the note states every cov1>0 map is Q10-true (N_pos=N_both=8, so cov1>0 implies Q10), and runner check thm2-counts silently verifies the exact identity all((cov1>0)==(wt1==1 and adj2==1)) on all 32 maps, i.e. cov1>0 iff Q_* - the #6516 law re-proved here but never stated as this PR's theorem. Also cov1(f_L1)=12: f_L1 fills from every single-site seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, N_pos=8, N_Q10",
+ "source": {
+  "pr": 6597,
+  "branch": "physics-loop/toe-lphys-block-q10c1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7698",
+ "title": "physics: localize fixed-L24 detector-orientation boundary",
+ "science": "toe-axiom-closure Block 193 - a failed preregistered Record-law discovery gate on the fixed Block-192 L=24 carrier at mass 2/7, propagating the literal preregistered source pair M_q tensor V(p,q) / M_q^dagger tensor V(p+q,-q) with the actual Block-190 reverse (not V^dagger) through the ordinary-transpose two-sector Schur history. Two arms, both blind. DIAGONAL ARM (the one genuinely new theorem): ",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7698,
+  "branch": "physics-loop/toe-axiom-closure-block193-fixed-l24-record-law-discriminator-20260825"
+ },
+ "carried_by": "#7723 (Block 194, closed in this consolidation; ledger pr-7723) supersedes-by-strengthening: it is stacked directly on #7698, consumes the literal Block-193 forward/actual-reverse source, and replaces 193's two hand-picked orientations with",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

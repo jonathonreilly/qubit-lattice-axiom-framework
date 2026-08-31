@@ -1,0 +1,19 @@
+{
+ "id": "pr-7609",
+ "title": "feat(nm2yzrdn23): distance-2 read of yz-plane cyclic-frame holonomy at t+1 on three-axis opposite near-face seed: reverse fails, face fails",
+ "science": "3N yz squares, distance-2 read. Reverse flips to fail where the neighbor-read siblings (7577/7579/7585/7595/7603) read HOLD on the identical square \u2014 the second instance of the distance-2 discriminator.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7609,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrdn23-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

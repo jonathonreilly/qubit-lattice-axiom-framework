@@ -1,0 +1,19 @@
+{
+ "id": "pr-7222",
+ "title": "feat(nsplqsam): own-letter Cl(3,0) plaquette product on #7181: reverse UNDEFINED, face UNDEFINED",
+ "science": "Cl(3,0) plaquette product on #7181's same-lock x-probe process; corners (1,0,0) and (1,1,0) both mix, U_Q=U_R=UNDEFINED. Third independent seed giving the identical obstruction.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7222,
+  "branch": "physics-loop/toe-lphys-block-nsplqsam-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

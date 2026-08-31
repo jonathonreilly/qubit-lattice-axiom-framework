@@ -1,0 +1,19 @@
+{
+ "id": "pr-7246",
+ "title": "feat(nmxe3zn): own incoming set on #7191: reverse fails, face fails",
+ "science": "M-readout on #7191's z-probes; M(A)={+e1,+e2,-e2} vs M(B)={+e3}. Same failure as #7240 (whose upstream #7200 is #7191's sign-flip twin), so the two M cells inherit the near-duplication of their parents.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7246,
+  "branch": "physics-loop/toe-lphys-block-nmxe3zn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

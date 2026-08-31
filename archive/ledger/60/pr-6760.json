@@ -1,0 +1,19 @@
+{
+ "id": "pr-6760",
+ "title": "feat(011f5): (0,1,1) k=5 face fail is t(10,0,0)=14 vs t(5,5,0)=10",
+ "science": "Displayed arithmetic behind the (0,1,1) k=5 face failure already tabulated in 6758, explicitly not adopted; exploratory why-analysis with no decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6760,
+  "branch": "physics-loop/toe-lphys-block-011f5-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

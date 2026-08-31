@@ -1,0 +1,19 @@
+{
+ "id": "pr-7606",
+ "title": "feat(nm2sfzrdall): universal neighbor-read of cyclic lex-smallest frame holonomy at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "2A, xy z=1/z=2, lex-smallest, universal neighbor-read; fail/fail. Its note records that the exist-neighbor variant would HOLD the face via the \u2212e_3 translate \u2014 the universal quantifier is what kills it.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7606,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzrdall-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

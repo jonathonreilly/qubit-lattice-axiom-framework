@@ -1,0 +1,19 @@
+{
+ "id": "pr-6268",
+ "title": "[physics-loop] toe-lphys cubec3: bounded_theorem / bounded-support",
+ "science": "Cube 3-fold Pauli triad is not a PVM and hosts no unital M3; follow-on exploratory member of the color pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6268,
+  "branch": "physics-loop/toe-lphys-block-cubec3-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

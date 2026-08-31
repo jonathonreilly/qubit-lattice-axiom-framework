@@ -1,0 +1,19 @@
+{
+ "id": "pr-6434",
+ "title": "feat(opp0ival): name both F_cut opp2=0 coverage maximizers",
+ "science": "Displayed-not-adopted naming of the opp2-silent coverage maximizers, incremental re-display of the 6433 count.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6434,
+  "branch": "physics-loop/toe-lphys-block-opp0ival-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

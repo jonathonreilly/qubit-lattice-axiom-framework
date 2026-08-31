@@ -1,0 +1,19 @@
+{
+ "id": "pr-7096",
+ "title": "feat(nslate): later-tick exist-opposite: reverse fail, face holds",
+ "science": "The discovery event of the campaign's only successful readout: first use of later-tick existential opposite, S_*(q) = locks of 6-NN formed by T=max t(probe), scored by 'exists a in S_*(A), b in S_*(B) with a+b=0'. Face HOLDS here where unique-vector lettering gives UNDEFINED and sum/named-sign give fail, on identical lists. It is also the ONLY non-hold in the exist-opposite family and hence the so",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7096,
+  "branch": "physics-loop/toe-lphys-block-nslate-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

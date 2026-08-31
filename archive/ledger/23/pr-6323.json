@@ -1,0 +1,19 @@
+{
+ "id": "pr-6323",
+ "title": "feat(seed2orb): two-site seeds form mutually iff 6-NN",
+ "science": "Two-site seeds form mutually iff 6-NN; micro two-point evaluation inside the toy series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6323,
+  "branch": "physics-loop/toe-lphys-block-seed2orb-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

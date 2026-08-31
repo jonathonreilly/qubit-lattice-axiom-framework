@@ -1,0 +1,19 @@
+{
+ "id": "pr-7496",
+ "title": "feat(nm2cycc3slz): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on three-axis same-lock z-probes: reverse fails, face HOLD",
+ "science": "3-axis SAME-LOCK seed, z-probes, lex-smallest: split fails at A by axis overlap (+e_2 in both M(A) and O(A)) -> Orient fail,+1,-1,-1, reverse fail face hold. Tie-break sensitive cell (lex-largest gives fail/fail).",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7496,
+  "branch": "physics-loop/toe-lphys-block-nm2cycc3slz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

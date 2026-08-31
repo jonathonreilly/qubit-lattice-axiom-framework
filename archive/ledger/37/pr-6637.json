@@ -1,0 +1,19 @@
+{
+ "id": "pr-6637",
+ "title": "feat(m2front): M2 Record seed-grown front cannot host July-3 chirality",
+ "science": "STRONGEST FORCING NEGATIVE of this band, not a probe cell: derives the neighbour condition alphabet FROM the axioms - one M_2(C) record locks one of exactly two spectral contents, so with unread/empty the alphabet is July-3 k=3 and not k=4 - then independently re-earns July-3 Thm 2 (k=2 has zero chiral pairs, Burnside proper=full) and Thm 3 (k=3 has exactly one chiral pair; Burnside 57 vs 56; repr",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6637,
+  "branch": "physics-loop/toe-lphys-block-m2front-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

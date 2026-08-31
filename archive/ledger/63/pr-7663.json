@@ -1,0 +1,19 @@
+{
+ "id": "pr-7663",
+ "title": "feat(nm2frm3pf): directed 3-step cyclic-frame transport along +e3 at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "Far-face 3-step +e3, global tau. Null by construction.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7663,
+  "branch": "physics-loop/toe-lphys-block-nm2frm3pf-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

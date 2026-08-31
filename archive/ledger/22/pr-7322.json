@@ -1,0 +1,19 @@
+{
+ "id": "pr-7322",
+ "title": "physics: construct endogenous spatial Record trial ensemble",
+ "science": "Block 36: the only Record-native law-of-large-numbers in this set. Keeping the block-35 rate law and replacing only the empty-neighbor content branch by a Haar-conjugacy orbit, the completed-trial and plus-outcome fields are a translation-equivariant measurable factor of a spatial iid Poisson/mark field, hence spatially stationary and ergodic; completion intensity is strictly positive; so the plus",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7322,
+  "branch": "physics-loop/toe-record-spatial-trial-ensemble-block36-20260823"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6700",
+ "title": "physics: break the population wall with the momentum charge",
+ "science": "Block 123 momentum population break: definiteness theorem plus first closed-carrier Gauss population break on the certified package, with 8/8 runner, mutation sweep, and cross-model confirmation, stacked on kept Block 122 and opening the stress-tensor (gravity source) campaign. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6700,
+  "branch": "physics-loop/toe-axiom-closure-block123-momentum-population-definiteness-20260816"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

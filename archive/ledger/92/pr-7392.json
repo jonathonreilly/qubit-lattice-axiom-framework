@@ -1,0 +1,19 @@
+{
+ "id": "pr-7392",
+ "title": "feat(nm2t2x): M two-tick composition on two-axis opposite x-probes: reverse fails, face fails, composition HOLD",
+ "science": "M two-tick on opposite x-probes: exist-opposite fail/fail, composition HOLD, and the runner also prints simultaneous HOLD/HOLD, forall-perp HOLD/HOLD, cover fail/fail, split fail/fail on the same cell - four readouts, three different verdict pairs, one dataset. All independently reproduced.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail (composition HOLD)",
+ "source": {
+  "pr": 7392,
+  "branch": "physics-loop/toe-lphys-block-nm2t2x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

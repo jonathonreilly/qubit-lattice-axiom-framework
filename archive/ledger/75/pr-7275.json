@@ -1,0 +1,19 @@
+{
+ "id": "pr-7275",
+ "title": "feat(nmperpx2): forall-orthogonal M vs O at t+1 on #7214: reverse HOLD, face HOLD",
+ "science": "Forall-orthogonal on the #7214 x-probes; its useful content is the nspar counterexample it carries (exist-perp holds at B while forall-perp fails there), which is the only thing separating the two predicates anywhere in the band.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7275,
+  "branch": "physics-loop/toe-lphys-block-nmperpx2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

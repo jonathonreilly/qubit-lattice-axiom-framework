@@ -1,0 +1,19 @@
+{
+ "id": "pr-7567",
+ "title": "feat(nm2frm3pfy): three-path cyclic-frame transport at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "Three-path frame-transport fail/fail probe block, displayed-not-adopted exploratory loop output.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7567,
+  "branch": "physics-loop/toe-lphys-block-nm2frm3pfy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

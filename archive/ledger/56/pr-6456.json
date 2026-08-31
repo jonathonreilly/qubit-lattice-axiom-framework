@@ -1,0 +1,19 @@
+{
+ "id": "pr-6456",
+ "title": "feat(c3f0): report cov3(f0)=212 for mixed3-silent cov2-maximizer",
+ "science": "Three-site coverage of the mixed3-silent cov2=66 map f0=(1,1,1,1,0): cov3(f0)=212 of 220, with 8 unfilled. Contrast recorded in the same note: cov3(f_L1)=220 and cov3(f1)=(1,1,1,1,1)=220, both perfect. So the mixed3 bit that was free at |S|<=2 costs f0 exactly 8 three-site seeds - a quantified price for silencing mixed3, and a third confirmation that mixed3 first bites at |S|=3 (#6437). Single-map",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6456,
+  "branch": "physics-loop/toe-lphys-block-c3f0-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

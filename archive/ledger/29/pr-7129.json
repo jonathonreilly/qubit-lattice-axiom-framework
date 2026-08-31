@@ -1,0 +1,19 @@
+{
+ "id": "pr-7129",
+ "title": "feat(nstrizncfx): three-site z-probe same-tick formdraw n: reverse HOLD, face UNDEFINED",
+ "science": "Three-site z-probes, same-tick kernel. The only mu*-split member with reverse=hold (L(A)=+, L(B)=-), obtained purely by switching from strictly-earlier (#7127, reverse=UNDEFINED) to same-tick occupancy on the identical process and probes. Face is still UNDEFINED.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=UNDEFINED",
+ "source": {
+  "pr": 7129,
+  "branch": "physics-loop/toe-lphys-block-nstrizncfx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

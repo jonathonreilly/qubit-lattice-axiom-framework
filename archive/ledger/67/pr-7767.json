@@ -1,0 +1,19 @@
+{
+ "id": "pr-7767",
+ "title": "[physics-loop] toe-connection-dynamics Block222: finite gap and strict-coupling collapse",
+ "science": "Two-limb gap result for the gauge-vector transfer: fixed finite positive action gives a simple top eigenvalue with normalized gap >= exp[-osc(S_step)] (standard Perron-Frobenius limb), and with zero spatial half-action and tau=m^4 the projected normalized gap tends to zero along a certified dyadic subsequence.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7767,
+  "branch": "physics-loop/toe-connection-dynamics-block222-matter-spectral-gap-20260828"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

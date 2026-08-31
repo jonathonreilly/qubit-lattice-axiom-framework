@@ -1,0 +1,19 @@
+{
+ "id": "pr-7600",
+ "title": "feat(nm2yzrdall): universal neighbor-read of yz-plane cyclic-frame holonomy at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "2A yz squares, UNIVERSAL neighbor-read (every formed 6-NN translate must also hold). Reader result: universal neighbor-read HOLDs at 0 of all 1,431 unit squares across all four seed processes \u2014 its positive class on B_3(0) is empty, so the five universal members report a predicate that cannot hold.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7600,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrdall-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

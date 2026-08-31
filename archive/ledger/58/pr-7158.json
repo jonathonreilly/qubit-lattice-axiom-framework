@@ -1,0 +1,19 @@
+{
+ "id": "pr-7158",
+ "title": "feat(nperpin): perpnn y-probe own-lock-in exist-opposite: reverse fails, face fails",
+ "science": "Own-lock-in on perpnn 1-seed y-probes: every letter in all four S^+ sets is positive, so both bits fail and named-sign lettering is degenerate (the note observes {+,-} cannot even distinguish +e1 from +e2 here). Documents the all-positive orientation of the 1-seed cone that is the root cause of #7147's permanent reverse-fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7158,
+  "branch": "physics-loop/toe-lphys-block-nperpin-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

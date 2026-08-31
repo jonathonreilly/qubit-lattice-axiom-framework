@@ -1,0 +1,19 @@
+{
+ "id": "pr-7602",
+ "title": "feat(nm2sfzholfx): neighbor-read of lex-smallest cyclic-frame holonomy at t+1 on three-axis far-face opposite x-probes: reverse fails, face ",
+ "science": "x-probe translates of the lex-smallest unit square on 3F; fail/fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7602,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzholfx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

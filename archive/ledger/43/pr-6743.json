@@ -1,0 +1,19 @@
+{
+ "id": "pr-6743",
+ "title": "feat(mix12): ten mixed shells on B12; both reverse-critical diagonals mixed",
+ "science": "Displayed B12 mixed-arrival-shell tally extending 6735 to the larger ball, explicitly not adopted; exploratory enumeration with no theorem or decisive scope.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6743,
+  "branch": "physics-loop/toe-lphys-block-mix12-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

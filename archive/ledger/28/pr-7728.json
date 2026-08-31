@@ -1,0 +1,19 @@
+{
+ "id": "pr-7728",
+ "title": "physics: isolate L24 event-history interface boundary",
+ "science": "Separates action field moments from event-operation histories: registered operations span 9 Choi directions vs the 64 needed; the positive covariance Hankel and indefinite Berezin Hankel are proven distinct non-event moment families; and two inequivalent strongly-positive three-crossing fixed-PVM laws share ALL one- and two-crossing PVM tables yet disagree on a triple-port event (1/4 vs 0) - an ex",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7728,
+  "branch": "physics-loop/toe-axiom-closure-block199-event-process-memory-20260825"
+ },
+ "carried_by": "#7730 (drives the surviving direct-functional route to its exact D1 rejection); #7739 (the Record operator-system descent responds to exactly this underdetermination); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

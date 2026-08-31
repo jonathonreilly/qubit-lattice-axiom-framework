@@ -1,0 +1,19 @@
+{
+ "id": "pr-6679",
+ "title": "feat(uneqsrc): displayed L1 neighbor data is not lock-tick",
+ "science": "Shows lock-tick is not derivable from displayed L1 neighbor data, a campaign-internal displayed-not-adopted negative in the exploratory series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6679,
+  "branch": "physics-loop/toe-lphys-block-uneqsrc-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

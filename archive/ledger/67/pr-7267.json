@@ -1,0 +1,19 @@
+{
+ "id": "pr-7267",
+ "title": "feat(nmsimsy): simultaneous M and O at t+1 on #7211: reverse HOLD, face HOLD",
+ "science": "Simultaneous M and O at t+1 on the #7211 y-probes. Its runner is the band's most explicit saturation proof: it computes O at formation+32 and asserts O(t+1)==O(t+32) at all four probes. Also asserts the two-site seed gives identical M, O and intersection here.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold (M and O separately)",
+ "source": {
+  "pr": 7267,
+  "branch": "physics-loop/toe-lphys-block-nmsimsy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

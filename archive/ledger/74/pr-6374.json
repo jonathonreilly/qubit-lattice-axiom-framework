@@ -1,0 +1,19 @@
+{
+ "id": "pr-6374",
+ "title": "feat: cycle 794 clean-exchange symmetry and the parity descent to two cuttings",
+ "science": "Cycle 794: on the canonical wall instance, the graph of minimal exchanges on the 14 fold-held cuttings; its edge differences equal the weight-four vectors of the fiber own kernel; the held set is closed under the four toggles those vectors define; one clean toggle lifts to a coordinate-level self-equivalence (verified by explicit image on cuttings, kernel and coset) and a complete backtracking sea",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6374,
+  "branch": "cycle794-clean-exchange-symmetry"
+ },
+ "carried_by": "#6375 (cycle 795) takes exactly the two exceptional cuttings this note isolates and gives their full anatomy, and it strengthens the outcome into a rigidity result (a degree lemma forbidding ANY share",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7524",
+ "title": "feat(nm2frm3zrd): HOLDING neighbor-read of cyclic-frame transport at t+1 on three-axis opposite z-probes: reverse HOLD, face HOLD",
+ "science": "Neighbour-read of the transport bit on the near 3-axis-opposite z-probes: hold/hold at all four. Same doubly-vacuous predicate and same 'neighbor-read' naming collision as #7511; on this very seed the Orient-sign neighbour-read (#7485) gives fail/fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7524,
+  "branch": "physics-loop/toe-lphys-block-nm2frm3zrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

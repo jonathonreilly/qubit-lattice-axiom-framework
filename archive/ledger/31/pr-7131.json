@@ -1,0 +1,19 @@
+{
+ "id": "pr-7131",
+ "title": "feat(nsexgram): nsopp four-event Minkowski Gram signature equals (1,2,0)",
+ "science": "Minkowski Gram signature computation confirming (1,2,0) already given by nsgram/gram4, a displayed-not-adopted duplicate-confirmation inside the 0812 campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7131,
+  "branch": "physics-loop/toe-lphys-block-nsexgram-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6955",
+ "title": "feat(c2d3k19): cost-2 max\u22653 out-face same-k first-fails at k=19: t=35 vs t=61",
+ "science": "Cost-2 max>=3 out-face same-k first-fail at k=19, same wall as omega, displayed-not-adopted terminal carried by roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6955,
+  "branch": "physics-loop/toe-lphys-block-c2d3k19-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

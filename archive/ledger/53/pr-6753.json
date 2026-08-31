@@ -1,0 +1,19 @@
+{
+ "id": "pr-6753",
+ "title": "feat(why20): t(12,0,0)=20 via parallel detour leaving B8 at (8,-1,0)",
+ "science": "Displayed lex-first path explanation of t(12,0,0)=20 on B12, explicitly not adopted; third why-path pack in the same detour series (6731/6744) with no standalone science.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6753,
+  "branch": "physics-loop/toe-lphys-block-why20-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

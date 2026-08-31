@@ -1,0 +1,19 @@
+{
+ "id": "pr-6798",
+ "title": "feat(hugk10): corridor-slide same-k holds at k=10: t=20 vs t=32",
+ "science": "mu same-k at k=10 on B_30: t=20 vs 32, 1200>1024. Ladder point. Its witness [3,1,1,x9,3,3]=20 is the k-th instance of the axis law t_mu(k,0,0)=k+10.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=10, 1200 > 1024) face=n/a",
+ "source": {
+  "pr": 6798,
+  "branch": "physics-loop/toe-lphys-block-hugk10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

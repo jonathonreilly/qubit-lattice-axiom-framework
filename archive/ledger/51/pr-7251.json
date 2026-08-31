@@ -1,0 +1,19 @@
+{
+ "id": "pr-7251",
+ "title": "feat(nmreadsy): neighbor-read of M on #7211: reverse UNDEFINED, face UNDEFINED",
+ "science": "R (neighbor-read of own incoming) on the y-symmetric-3-site #7211 y-probes. R(q)={e : -e in M(q+e)} -- NOT 'the neighbor's step is from q' as the prose glosses it (that set is O). R={},{-e_3},{},{} so 3 of 4 probes are empty; both verdicts are UNDEFINED purely by the empty->UNDEFINED convention, not by any failed relation. Recomputed independently: exact.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7251,
+  "branch": "physics-loop/toe-lphys-block-nmreadsy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7175",
+ "title": "feat(nsyopinc): y-symmetric three-site same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "Same-tick union own lock on the y-symmetric three-site seed, y-probe frame: reverse HOLD uses L(A)=-e1, the identical mechanism as #7167 on a different seed. The note itself concedes 'same carrier as nsuoyinc #7167', making it a transfer check rather than a new cell.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7175,
+  "branch": "physics-loop/toe-lphys-block-nsyopinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

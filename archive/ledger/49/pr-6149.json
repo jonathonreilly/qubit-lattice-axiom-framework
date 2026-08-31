@@ -1,0 +1,19 @@
+{
+ "id": "pr-6149",
+ "title": "science: isolate physical M2 grading decoder",
+ "science": "Block 56: solves the vector-decoder equivariance system on the one-site Pauli algebra exactly, exhibits the trivial and Pauli-adjoint actions as two exact extensions of the same current-axiom-compatible central distribution (current-text nonselection witness, decoder ranks 8/1 vs 9/0), and encodes four roles times six directions as 24 central-tagged Pauli Record contents \u2014 clearing M2(C) storage c",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6149,
+  "branch": "physics-loop/toe-axiom-closure-block56-m2-grading-carrier-20260812"
+ },
+ "carried_by": "#6150 consumes the whole Root-B action/decoder/grading/sign interface in the cross-root contract; the content-capacity fact is matured by the block 63-66 attachment/intertwiner constructions; ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6817",
+ "title": "feat(ridk13): ridge-slide restores k=13 reverse: t=25 vs t=43",
+ "science": "rho3 clears the mu wall at k=13 on B_39: t=25 vs 43, 1875>1849. Combined with #6836 (rho3/zeta keeps k=1 at 3 vs 5) this makes rho3 the band's unique winner -- it matches eps's large-k reach WITHOUT eps's k=1 failure. Promotion candidate.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=13, 1875 > 1849) face=n/a",
+ "source": {
+  "pr": 6817,
+  "branch": "physics-loop/toe-lphys-block-ridk13-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6635",
+ "title": "feat(mixlab): no tick-1 labeling fires the chiral pair",
+ "science": "Exhaustive negative census, not a probe cell: over ALL eight {+,-} label assignments to the three tick-1 axis sites on the two-cube, the July-3 k=3 chiral pair fires nowhere - N_new=0 in every case, N_fire=0, no lex-first firing labeling. The mechanism is proved: every unread site after tick 1 has at most 2 locked neighbours (max_locked=2), so its six-tuple carries at least four '0' letters and ca",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6635,
+  "branch": "physics-loop/toe-lphys-block-mixlab-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

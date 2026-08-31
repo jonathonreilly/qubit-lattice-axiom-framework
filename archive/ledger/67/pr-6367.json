@@ -1,0 +1,19 @@
+{
+ "id": "pr-6367",
+ "title": "feat(cell-cutting): single-fiber cover rigidity, the induced symmetry group of the fourteen-solution system (cycle 791)",
+ "science": "Cycle 791: on ONE sample wall fiber, the complete group of row permutations preserving its cover instance, the group it induces on the 14 fold-held cuttings (order 2), the fact that no free involution exists among the induced elements, and that the only geometrically carried induced element is the identity - so no permutation symmetry of that instance carries the parity of fourteen.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6367,
+  "branch": "cycle791-single-fiber-cover-rigidity"
+ },
+ "carried_by": "#6369 (cycle 792) generalizes from the single sample fiber to EVERY wall fiber by linearizing it (rank/kernel/coset over GF(2)) and adds the complete refutation of translation carriers at both fiber a",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

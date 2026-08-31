@@ -1,0 +1,19 @@
+{
+ "id": "pr-7081",
+ "title": "feat(nfexist): existential opposite neighbor-lock: reverse fail, face holds",
+ "science": "Existential-opposite predicate (some a in S(A), b in S(B) with a+b=0) on lock SETS: S(A)={+e_1}, S(B)={+e_1,+e_3}, S(C)={-e_2}, S(D)={+e_2} -> reverse FAIL, face HOLD. Duplicates collapse and mixed lists stay defined, so this is a third way to handle B's mixture; the note tabulates that unique-vector gives reverse UNDEFINED and sum gives reverse fail `for a different reason`.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7081,
+  "branch": "physics-loop/toe-lphys-block-nfexist-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

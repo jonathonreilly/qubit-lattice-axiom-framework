@@ -1,0 +1,19 @@
+{
+ "id": "pr-7074",
+ "title": "feat(nsneighy): y-probe neighbor-lock reverse UNDEFINED, face none",
+ "science": "Displayed-not-adopted y-probe neighbor-lock letter check; exploratory lphys probe with no adopted claim.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7074,
+  "branch": "physics-loop/toe-lphys-block-nsneighy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

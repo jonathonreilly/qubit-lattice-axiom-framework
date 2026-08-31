@@ -1,0 +1,19 @@
+{
+ "id": "pr-7368",
+ "title": "feat(nm2slz): axis-cover at t+1 on two-axis same-lock z-probes: reverse fails, face HOLD",
+ "science": "Two-axis same-lock seed, z-probes, axis-cover: cover FAILs at A because Axis(O) occupies all three axes including e_2, overlapping Axis(M). The overlap is the seed-letter phantom; removing it makes this cell identical to the opposite-seed cell #7309 (I verified: all four probes then cover/split/sim/fperp HOLD).",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7368,
+  "branch": "physics-loop/toe-lphys-block-nm2slz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

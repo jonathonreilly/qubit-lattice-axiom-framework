@@ -1,0 +1,19 @@
+{
+ "id": "pr-6446",
+ "title": "feat(k4cov): k=4 2-site coverage is 66 iff vertex3=1",
+ "science": "The substantive member of the k=4 sub-series and a second exact iff on the vertex3 bit. Within the four F_cut maps with (wt1,opp2,adj2)=(1,1,1) - exactly the maps with k=4, filling all four long-axis 2-site seeds - two-site coverage is cov=66 iff vertex3=1: the vertex3=1 pair covers all 66 seeds, the vertex3=0 pair covers only 36, and mixed3 is free on both sides. So vertex3 is worth 30 of the 66 ",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6446,
+  "branch": "physics-loop/toe-lphys-block-k4cov-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

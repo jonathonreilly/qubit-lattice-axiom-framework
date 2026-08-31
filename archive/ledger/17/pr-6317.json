@@ -1,0 +1,19 @@
+{
+ "id": "pr-6317",
+ "title": "feat(octid): 24 cube rotations are not C24 or D12",
+ "science": "Bounded_theorem note, no probe cell. INDEPENDENT REPROOF of a spine step already proved in #6276: G (24 signed 3x3 permutation matrices, det=+1) is neither C_24 nor D_12. The route is deliberately different -- a pure element-ORDER CENSUS over Z with multiplicities 1:1, 2:9, 3:8, 4:6, max order 4, so no element of order 12 or 24 exists. The note states explicitly that it does NOT use the four-space",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6317,
+  "branch": "physics-loop/toe-lphys-block-octid-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

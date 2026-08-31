@@ -1,0 +1,19 @@
+{
+ "id": "pr-6270",
+ "title": "[physics-loop] toe-lphys pairlab: bounded_theorem / bounded-support",
+ "science": "Toy two-lock comparison of occupancy-product vs content-match pairing tables; extras-audit pack member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6270,
+  "branch": "physics-loop/toe-lphys-block-pairlab-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

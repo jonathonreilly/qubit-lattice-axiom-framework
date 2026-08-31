@@ -1,0 +1,19 @@
+{
+ "id": "pr-7306",
+ "title": "feat(nm2sl12): 1-in 2-out split on two-axis same-lock: reverse HOLD, face fails",
+ "science": "Two-axis same-lock seed, y-probes, 1-in 2-out split. One of only two PRs in the band that states the collapse explicitly: 'On this member |Axis(M)|=1 at each of the four y-probes, so split equals cover at each probe' - i.e. it concedes the split refinement is inactive on this seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7306,
+  "branch": "physics-loop/toe-lphys-block-nm2sl12-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6554",
+ "title": "feat(tot12): joint tot12 iff vertex3 and opp2 among Q_*",
+ "science": "Displayed-not-adopted joint tot12 characterization among 8 Q_* maps; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6554,
+  "branch": "physics-loop/toe-lphys-block-tot12-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

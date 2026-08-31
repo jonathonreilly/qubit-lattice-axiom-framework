@@ -1,0 +1,19 @@
+{
+ "id": "pr-7329",
+ "title": "physics: construct bounded innovation dilation",
+ "science": "Block 43: one finite full-rank positive LOCAL action supplies both outputs that previously needed the K_W (+) S product sector. With c=1/2 at m=1, S_a - cI is strictly diagonally dominant on all four pins, so the signed-edge/on-site Gram B_a with b_(a,e)=sqrt(|w|)(e_i + sign(w) e_j) and on-site remainder gives exactly B_a B_a^dagger = S_a - cI with every column on one site or one existing S-graph ",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7329,
+  "branch": "physics-loop/toe-pincer-local-constrained-record-dilation-block43-20260823"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

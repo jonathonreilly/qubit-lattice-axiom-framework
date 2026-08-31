@@ -1,0 +1,19 @@
+{
+ "id": "pr-7738",
+ "title": "physics: prove the hidden involutive isometry and complete the commutant story (block 197)",
+ "science": "Block 197 proves the hidden involutive isometry and the Klein four-group isometric commutant, explicitly closing the b188-b197 campaign arc as its terminal decisive member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7738,
+  "branch": "physics-loop/toe-axiom-closure-block197-hidden-involutive-isometry-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

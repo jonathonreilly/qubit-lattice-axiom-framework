@@ -1,0 +1,19 @@
+{
+ "id": "pr-7566",
+ "title": "feat(nm2holxy0rd): neighbor-read of z=0 xy cyclic-frame holonomy at t+1 on two-axis opposite seed: reverse fails, face HOLD",
+ "science": "Neighbour-read of the z=0/z=-1 xy holonomy; the second member with reverse fail and face HOLD, and it enumerates translates (P-Q-R-S holds at +e_3 and -e_3, P2-Q2-R2-S2 at -e_1).",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7566,
+  "branch": "physics-loop/toe-lphys-block-nm2holxy0rd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

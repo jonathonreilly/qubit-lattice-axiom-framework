@@ -1,0 +1,19 @@
+{
+ "id": "pr-6424",
+ "title": "feat(cutopp): count F_cut fillers from the opposite-corner 2-site seed",
+ "science": "Displayed-not-adopted count of fillers from the opposite-corner seed showing f_L1 non-unique, exploratory enumeration with no adoption.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6424,
+  "branch": "physics-loop/toe-lphys-block-cutopp-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

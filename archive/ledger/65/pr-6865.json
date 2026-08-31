@@ -1,0 +1,19 @@
+{
+ "id": "pr-6865",
+ "title": "feat(hrk14): height-ridge same-k fails at k=14: t=26 vs t=46",
+ "science": "zeta at k=14 on B_42: t=26 vs 46, 2028<2116 -- identical to rho3's #6833. The last PR of the band, and its result is that the sixth clause does not restore the wall. Together with #6836/#6837/#6838/#6840 it closes the height-ridge route as producing zero new arrival data.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (same-k k=14, 2028 < 2116; identical to rho3 #683",
+ "source": {
+  "pr": 6865,
+  "branch": "physics-loop/toe-lphys-block-hrk14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

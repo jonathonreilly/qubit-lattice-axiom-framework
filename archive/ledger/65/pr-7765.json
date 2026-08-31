@@ -1,0 +1,19 @@
+{
+ "id": "pr-7765",
+ "title": "physics: couple compact vector matter transfer",
+ "science": "Couples compact O(3)-vector matter on the metric/source seam with the SAME group link acting on gauge and matter hopping: reflection-positive source-included joint tensor Gram, injective temporal-gauge transfer on the gauge-invariant space, reciprocal mixed variations, sign falsifiers, and the result that improper determinant sectors and topology survive matter coupling (no sector selection). The ",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7765,
+  "branch": "physics-loop/toe-connection-dynamics-block221-gauge-vector-matter-os-20260828"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

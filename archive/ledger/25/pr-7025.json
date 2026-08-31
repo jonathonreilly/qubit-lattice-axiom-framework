@@ -1,0 +1,19 @@
+{
+ "id": "pr-7025",
+ "title": "feat(letbits): 16 letterings: N_Rev=4 N_Face=4 N_both=1",
+ "science": "Near-vacuous and terminologically corrosive. It redefines 'reverse' as the predicate L(A)=+ and L(B)=- and 'face' as L(C)=+ and L(D)=- on sign-letterings of four sites, then counts N_Rev=4, N_Face=4, N_both=1 over 2^4=16 maps. Each count is the triviality 2^(4-2)=4 with two constrained bits; the joint count is forced by independence of the two site pairs. No arrival, tick, or lattice computation o",
+ "forcing": false,
+ "verdict_pair": "reverse=N_Rev=4 of 16 letterings, face=N_Face=4, both=1 -- l",
+ "source": {
+  "pr": 7025,
+  "branch": "physics-loop/toe-lphys-block-letbits-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6509",
+ "title": "feat(p4closed): whether cov4>0 is equivalent to selector P",
+ "science": "Second refutation of the #6494 selector, failing in the OPPOSITE direction from #6503: at |S|=4, P is sufficient but not necessary (N_P=14, N_pos=24, N_both=14; ten P-false maps still fill, lex-first (0,0,1,0,0) with cov4=52). Taken with #6494 and #6503 this pins P as exactly cov>0 only at k=2, over-permissive at k=1 and over-restrictive at k=4.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut selector-equivalence census; n",
+ "source": {
+  "pr": 6509,
+  "branch": "physics-loop/toe-lphys-block-p4closed-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

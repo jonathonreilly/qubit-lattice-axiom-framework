@@ -1,0 +1,19 @@
+{
+ "id": "pr-6575",
+ "title": "feat(q66c7): cov7 of Q66 is 776 versus 792",
+ "science": "reverse=N/A face=N/A (cover census; cov7(f0)=776, cov7(f1)=792, diff 16, control cov7(f_L1)=792)",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (cover census; cov7(f0)=776, cov7(f1)=7",
+ "source": {
+  "pr": 6575,
+  "branch": "physics-loop/toe-lphys-block-q66c7-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

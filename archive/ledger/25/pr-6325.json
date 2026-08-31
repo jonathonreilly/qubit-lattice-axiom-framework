@@ -1,0 +1,19 @@
+{
+ "id": "pr-6325",
+ "title": "science(toe): construct component-staggered link action",
+ "science": "Block 83: first action whose geometry derivatives exactly reproduce the Block 78 lapse density, shift current, and front-loaded stress cadence (component-staggered +1/-1 link pair realizing all 13,056 sources), with two narrow hostile controls (same-event rank-one stress fails by determinant magnitude 3; time-adjoint symmetrization breaks 11,064 schedules); declared gravity frozen unless the bound",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6325,
+  "branch": "physics-loop/toe-axiom-closure-block83-dynamic-worldline-action-20260814"
+ },
+ "carried_by": "PR #6356 (Block 93) builds the demanded raw graph current and PR #6360 (Block 95) supplies the one-Hermitian-action generator with matter, superseding the prescribed-source link action",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

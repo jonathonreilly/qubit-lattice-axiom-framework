@@ -1,0 +1,19 @@
+{
+ "id": "pr-6800",
+ "title": "feat(hugk13): corridor-slide same-k fails at k=13: t=23 vs t=41",
+ "science": "The mu wall: k=13 on B_39 gives t=23 vs 41, 1587<1681, reverse FAILS. This is the first PR in the band to STATE the closed form -- 'Linear arrivals t(k,0,0)=k+10 and t(k,k,k)=3k+2 for k>=6' -- which turns the whole mu sub-series into one solvable inequality. Promotion candidate: the law plus this wall is the entire mu result.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (same-k k=13, 1587 < 1681) face=n/a",
+ "source": {
+  "pr": 6800,
+  "branch": "physics-loop/toe-lphys-block-hugk13-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

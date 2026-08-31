@@ -1,0 +1,19 @@
+{
+ "id": "pr-7108",
+ "title": "feat(nsopz): opposite-lock z-probe unique vector: reverse fail, face fails",
+ "science": "Neighbour-lock vector readout on opposite-lock z-probes; the only member of that readout family with both comparisons defined, giving fail/fail from L=(+e_1,+e_3,+e_3,-e_1). States explicitly that the coarser named-sign readout of the same locks would assign L(C)=+, L(D)=- and report face HOLD, i.e. coarsening the readout converts fail into hold on identical data.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7108,
+  "branch": "physics-loop/toe-lphys-block-nsopz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

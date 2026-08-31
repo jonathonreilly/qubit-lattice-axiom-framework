@@ -1,0 +1,19 @@
+{
+ "id": "pr-7752",
+ "title": "physics: prove Block 211 six-face positivity classification",
+ "science": "Block 211 (mainline) proves the complete six-face PD-solvability classification over the whole moduli variety and refutes the flat-only extension with an explicit witness, a decisive theorem the open block-212 PR stacks on.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7752,
+  "branch": "physics-loop/toe-axiom-closure-block211-six-face-positivity-classification-20260827"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

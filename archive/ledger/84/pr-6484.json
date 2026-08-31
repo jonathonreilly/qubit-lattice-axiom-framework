@@ -1,0 +1,19 @@
+{
+ "id": "pr-6484",
+ "title": "feat(max11split): first seed that splits the four extra Max(11) maps",
+ "science": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,f",
+ "source": {
+  "pr": 6484,
+  "branch": "physics-loop/toe-lphys-block-max11split-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

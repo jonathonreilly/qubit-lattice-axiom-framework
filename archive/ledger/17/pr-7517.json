@@ -1,0 +1,19 @@
+{
+ "id": "pr-7517",
+ "title": "feat(nm2holfzt2): cyclic-frame holonomy freeze t+1 vs t+2 on three-axis far-face unit square: reverse HOLD, face fails, composition HOLD",
+ "science": "Unit-square holonomy at two cuts on the far-face 3-axis seed. Prints byte-identical edge matrices and identity product to #7510 \u2014 the far-face third pair changes nothing on the square either.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7517,
+  "branch": "physics-loop/toe-lphys-block-nm2holfzt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

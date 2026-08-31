@@ -1,0 +1,19 @@
+{
+ "id": "pr-6094",
+ "title": "science(gravity): construct joint sourced Ward completion",
+ "science": "Block 23: constructs the per-branch six-mode pure-Schur minimum and one common fixed-signature eight-mode completion, proves the corrections must be source-responsive, and proves regular analytic source-decoupled mixing starts one order too late.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6094,
+  "branch": "physics-loop/toe-axiom-closure-block23-joint-ward-schur-20260810"
+ },
+ "carried_by": "#6097 shows the complete six-mode tensor these completions target is cancellable by a normalized-family gauge shift, so the surviving statement is the representative-registration requirement; ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

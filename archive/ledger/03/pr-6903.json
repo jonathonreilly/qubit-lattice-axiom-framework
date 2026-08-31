@@ -1,0 +1,19 @@
+{
+ "id": "pr-6903",
+ "title": "feat(mlkvar): mid-leave ties rho3 variance on B12",
+ "science": "The same empty clause propagated to the variance surface: mid_leave_live_hops = 0, Q_mu-lambda == Q_rho3, t sitewise equal. The reported 'var_kappa < var_mu-lambda = var_rho3' is a tautology given the vacuity proved in 6902.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6903,
+  "branch": "physics-loop/toe-lphys-block-mlkvar-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7356",
+ "title": "[physics-loop][grade3-response-history][bounded_theorem][bounded-support] localize temporal carrier boundary",
+ "science": "Separates three exact unjoined components (positive reflection-even AP history port with strictly positive scalar Gram for all m>0; a grade-three Clifford PVM with four positive rank-four effects and candidate Tr(rho E)=1/4 weights plus exact conditioned Ward/recoil cancellation; an unconditioned write isometry) and proves the common-action join dies at the temporal carrier: sin^2(k_t) mismatch (1",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7356,
+  "branch": "physics-loop/toe-axiom-closure-block191-grade3-source-instrument-history-20260824"
+ },
+ "carried_by": "#7632 (constructs the L24 carrier containing both pi/6 and pi/4 sectors, repairing exactly this mismatch, and reproduces the Block-191 trace response); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

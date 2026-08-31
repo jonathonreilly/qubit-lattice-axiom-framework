@@ -1,0 +1,19 @@
+{
+ "id": "pr-6236",
+ "title": "[physics-loop] toe-lphys c1bornJ: bounded_theorem / bounded-support",
+ "science": "Not a probe cell at all: a five-theorem bounded_theorem note with an exact one-site Born computation. Shows that under the hypothetical C1 site-indexed lock-label field J, occupancy o is a DEFINITIONAL RETRACT of J (dies as an independent extra), while effect menu M and trace kernel K survive: K(rho=diag(3/5,2/5),P_z)=3/5 != 1/2 = K(rho,P_x), and Record count I_J=1 != 3/5. Conclusion: the smallest",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner reports TOTAL",
+ "source": {
+  "pr": 6236,
+  "branch": "physics-loop/toe-lphys-block-c1bornJ-20260813"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

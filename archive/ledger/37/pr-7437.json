@@ -1,0 +1,19 @@
+{
+ "id": "pr-7437",
+ "title": "feat(nm2sreadt2x): neighbor-read of 1-in 2-out split freeze t+1 vs t+2 on two-axis opposite x-probes: reverse fails, face fails, composition",
+ "science": "opposite x-probes, unsigned neighbour-read, two cuts. A and D carry no split, so both pairs fail at either cut. Composition is forced: O(q,tau) is constant for all tau>=t(q)+1 (any step e in O(q) requires e in M(q+e), which forces t(q+e)=t(q)+1), so t+2 can never differ from t+1 and composition=HOLD carries zero information.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7437,
+  "branch": "physics-loop/toe-lphys-block-nm2sreadt2x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

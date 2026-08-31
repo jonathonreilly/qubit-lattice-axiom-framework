@@ -1,0 +1,19 @@
+{
+ "id": "pr-6792",
+ "title": "feat(hugk1): corridor-slide keeps k=1 reverse: t=3 vs t=5",
+ "science": "Regression check on the new mu rule from #6791: adding the corridor-slide clause does NOT break the small-scale bar -- on B_6(0), t(1,0,0)=3, t(1,1,1)=5, so 27 > 25 and same-k reverse still holds at k=1. Shows the clause is live on this ball anyway (t(6,0,0)=18 under mu vs 14 under nu) and separates mu from the rival lambda patch, which prices the body 1->2 hop and would spoil k=1. So mu is the fi",
+ "forcing": false,
+ "verdict_pair": "same-k reverse k=1 = YES under mu (27>25)",
+ "source": {
+  "pr": 6792,
+  "branch": "physics-loop/toe-lphys-block-hugk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

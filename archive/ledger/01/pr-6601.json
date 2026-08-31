@@ -1,0 +1,19 @@
+{
+ "id": "pr-6601",
+ "title": "physics: compute the transfer spectrum and expose the selection gap",
+ "science": "Block 115 exact transfer-spectrum computation with a certified uniformly-non-contractive OS obstruction (named scope) and a commutant-zero selection theorem, a decisive checker-verified artifact on the OS-closure chain that later closure blocks stack on. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6601,
+  "branch": "physics-loop/toe-axiom-closure-block115-transfer-spectrum-selection-gap-20260815"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

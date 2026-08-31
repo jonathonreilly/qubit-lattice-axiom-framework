@@ -1,0 +1,19 @@
+{
+ "id": "pr-6243",
+ "title": "[physics-loop] toe-lphys c1read: bounded_theorem / bounded-support",
+ "science": "Micro-enumeration that the only-records-readable clause is not repaired by the unadopted J retype; hypothetical wording note only.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6243,
+  "branch": "physics-loop/toe-lphys-block-c1read-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

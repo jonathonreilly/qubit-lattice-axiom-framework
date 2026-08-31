@@ -1,0 +1,19 @@
+{
+ "id": "pr-7269",
+ "title": "feat(nmperpzx): forall-orthogonal M vs O at t+1 on #7213: reverse HOLD, face HOLD",
+ "science": "Forall-orthogonal M vs O at t+1 on the #7213 x-probes: every one of the 3+3+4+6 integer dots is zero. The runner carries the band's only real predicate-separation identities: forall-perp({e_1},{-e_1})=fail while M\u2229O=\u2205, and exist-perp holds where forall-perp fails on the nstri seed. For unit steps forall-perp is exactly Axis(M)\u2229Axis(O)=\u2205.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7269,
+  "branch": "physics-loop/toe-lphys-block-nmperpzx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

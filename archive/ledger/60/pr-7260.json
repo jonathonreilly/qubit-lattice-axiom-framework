@@ -1,0 +1,19 @@
+{
+ "id": "pr-7260",
+ "title": "feat(nmye3zn): own incoming set on #7192: reverse fails, face fails",
+ "science": "M exist-opposite on the y-axis-opposite-e3 #7192 z-probes; M(A)={+e_1,-e_1,+e_2}, B/C/D={+e_3}. fail/fail. Frame-rotated twin of #7259; my recomputation shows its probe (t,M,O) signature is IDENTICAL to #7198's same-lock seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7260,
+  "branch": "physics-loop/toe-lphys-block-nmye3zn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

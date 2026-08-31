@@ -1,0 +1,19 @@
+{
+ "id": "pr-6703",
+ "title": "feat(samhost): same-host fire survives labels but not cost-1 filter",
+ "science": "Same-host fire test under labels vs cost-1 readiness filter (displayed, not adopted), exploratory campaign block with no adopted claim.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6703,
+  "branch": "physics-loop/toe-lphys-block-samhost-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

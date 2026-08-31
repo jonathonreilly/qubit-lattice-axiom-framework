@@ -1,0 +1,19 @@
+{
+ "id": "pr-6795",
+ "title": "feat(hugk8): corridor-slide same-k holds at k=8: t=18 vs t=26",
+ "science": "First same-k score of the corridor-slide rule mu = nu + cost 3 on a 2->2 hop whose destination has least nonzero |w_i|=1, at k=8 on B_24: t=18 vs 26, 972>676. The witness cost vector [3,1,1,1,1,1,1,1,1,1,3,3]=18 exhibits mu's axis geodesic: climb to support 3 immediately, run the body, then pay two support-drops -- the structural reason mu's axis intercept is +10.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=8, 972 > 676) face=n/a",
+ "source": {
+  "pr": 6795,
+  "branch": "physics-loop/toe-lphys-block-hugk8-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

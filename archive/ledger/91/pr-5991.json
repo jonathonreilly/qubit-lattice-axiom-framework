@@ -1,0 +1,19 @@
+{
+ "id": "pr-5991",
+ "title": "[physics-loop][review-loop] toe-time blockM7 (STACKED on #5986) \u2014 Cycle 921: bounded theorem \u2014 the loop cost is a pair-cycle law, and loop c",
+ "science": "The pair-cycle law: the redundancy tax is levied per fragment-pair, graded by the shortest pointer-through cycle length (3 kills content, 4 kills pair-independence above the low field, >=5 free; ceiling = independence number of survivors); loop COUNT refuted outright (ten loops can cost nothing). Still the strongest form for loopy geometries - 937 terminal leaves the loopy family underived (only L",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5991,
+  "branch": "physics-loop/toe-time-blockM7-20260802"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

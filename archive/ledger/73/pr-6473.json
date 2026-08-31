@@ -1,0 +1,19 @@
+{
+ "id": "pr-6473",
+ "title": "feat(cut1who): name the four 1-site F_cut coverage maximizers",
+ "science": "Names the four 1-site coverage maximizers, displayed-not-adopted enumeration detail in the 0815 scan pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6473,
+  "branch": "physics-loop/toe-lphys-block-cut1who-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

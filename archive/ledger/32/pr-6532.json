@@ -1,0 +1,19 @@
+{
+ "id": "pr-6532",
+ "title": "feat(p8sel): no displayed remaining-bit Q equals cov8>0",
+ "science": "Displayed-not-adopted negative selector search for cov8>0; failed-route style enumeration within the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6532,
+  "branch": "physics-loop/toe-lphys-block-p8sel-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

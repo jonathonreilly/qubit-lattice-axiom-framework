@@ -1,0 +1,19 @@
+{
+ "id": "pr-6550",
+ "title": "feat(nontotwhy): non-tot cov2 split first refuse is opp2",
+ "science": "Displayed-not-adopted single first-refuse detail for the non-total cov2 split; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6550,
+  "branch": "physics-loop/toe-lphys-block-nontotwhy-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6260",
+ "title": "[physics-loop] toe-lphys formtwo: bounded_theorem / bounded-support",
+ "science": "Toy 4-site check that live Record picks no formation rate; extras-audit pack member with conclusion carried by campaign roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6260,
+  "branch": "physics-loop/toe-lphys-block-formtwo-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

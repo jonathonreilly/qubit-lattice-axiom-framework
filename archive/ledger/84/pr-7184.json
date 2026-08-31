@@ -1,0 +1,19 @@
+{
+ "id": "pr-7184",
+ "title": "feat(nsnnzinc): nnseed z-probe same-tick union own-lock: reverse fails, face HOLD",
+ "science": "Same-tick union own lock on nnseed z-probes; union is a no-op at A (L(A)=+e3 already a neighbour lock). Face holds from -e1/+e1 at C/D; reverse fails on {+e1,+e3} vs {+e1,+e3}. The note correctly separates the two bits' timing needs: reverse needs the global later tick, face does not.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7184,
+  "branch": "physics-loop/toe-lphys-block-nsnnzinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

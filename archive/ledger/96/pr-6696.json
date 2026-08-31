@@ -1,0 +1,19 @@
+{
+ "id": "pr-6696",
+ "title": "feat(bestiso): best-reversal isochrones are Euclidean-ratio shells",
+ "science": "Isochrone shell display for the best-reversal cost (displayed, not adopted), exploratory follow-on to PR 6695 with no adopted claim.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6696,
+  "branch": "physics-loop/toe-lphys-block-bestiso-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

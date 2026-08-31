@@ -1,0 +1,19 @@
+{
+ "id": "pr-7702",
+ "title": "feat(nm2frm2lprd4): distance-4 neighbor-read of L-path cyclic-frame transport -e3 then +e1 at t+1 on two-axis opposite seed: reverse fails, ",
+ "science": "Distance-4 readout with the +e1 turn. States 'the formed set at coordinate sum four at tau=1 is empty at every seed' as the cause; that is true only under this PR's tau-bounded shell and is false under the unbounded shell used by its own twin #7701, which exhibits a distance-4 witness on the same seed. Same headline verdict, incompatible stated mechanism, same readout name.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7702,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lprd4-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

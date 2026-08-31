@@ -1,0 +1,19 @@
+{
+ "id": "pr-7632",
+ "title": "[physics-loop][full-temporal-carrier][bounded_theorem] localize source-typing boundary",
+ "science": "Constructs the minimal periodic L24 temporal carrier joining the pi/6 and pi/4 sectors with the pi/12 Weyl recoil; the ordinary-transpose reflected-even Schur Gram is exactly positive at all nine frozen radii, conditions to E_st/4, and reproduces the Block-191 external trace response; proves every diagonal event in the physically typed p+(p+q) sector has identically zero first-order trace response",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7632,
+  "branch": "physics-loop/toe-axiom-closure-block192-full-temporal-carrier-20260825"
+ },
+ "carried_by": "#7723-#7733 (the entire L24 lane runs on this frozen carrier and restates its properties); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

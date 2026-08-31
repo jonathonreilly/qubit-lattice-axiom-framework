@@ -1,0 +1,19 @@
+{
+ "id": "pr-6592",
+ "title": "feat(qstarc10): among Q_star, cov10=66 iff vertex3 and mixed3",
+ "science": "Exact positive equivalence plus a universal: among the 8 Q_* maps, cov10=66 iff (vertex3=1 and mixed3=1) (N_tot10=N_k=N_both=2, witness=[]), and separately N_pos=8 so cov10>0 is constant on Q_*. Carries the full eight-line cov10 census (18,22,62,66,18,22,62,66), which is manifestly independent of opp2 - the same opp2-independence #6582 shows for cov11 - a structural regularity no member in this ba",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (cover census + iff test; tot10_iff_k=T",
+ "source": {
+  "pr": 6592,
+  "branch": "physics-loop/toe-lphys-block-qstarc10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

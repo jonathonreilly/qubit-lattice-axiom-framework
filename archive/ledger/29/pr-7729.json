@@ -1,0 +1,19 @@
+{
+ "id": "pr-7729",
+ "title": "physics: isolate exterior E8 insertion obstruction",
+ "science": "Constructs the literal three-boundary Schur kernels by independent exact routes, gives O9 an exact injective unital exterior representation after vacuum subtraction, and proves the narrow obstruction: no number-preserving exterior-natural projective extension of the eight effects is both exhaustive and covariant under the actual fixed-point-free reflection (the label involution has four 2-cycles, ",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7729,
+  "branch": "physics-loop/toe-axiom-closure-block200-e8-three-event-cylinder-20260825"
+ },
+ "carried_by": "#7730 (executes the surviving direct Schur/Wick functional route); #7739 (positive operator-system POVM routes replace strict projective lifts); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

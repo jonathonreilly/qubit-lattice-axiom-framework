@@ -1,0 +1,19 @@
+{
+ "id": "pr-6632",
+ "title": "feat(wav2chi): tick-2 Record content can be P-odd",
+ "science": "Theorem + ANOMALY, not a probe cell. Science: on the 3-letter Record-content star {0,+,-}^6 (729 colorings) the July-3 unique k=3 chiral pair (48 handed fully-mixed colorings = two disjoint G+ orbits of 24; Burnside 57 proper vs 56 full orbits) is a P-odd formation predicate with N_form=24, N_P_form=24, N_both=0, and Theorem 2 proves EVERY one of the 8 two-letter letter-map projections of that set",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6632,
+  "branch": "physics-loop/toe-lphys-block-wav2chi-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

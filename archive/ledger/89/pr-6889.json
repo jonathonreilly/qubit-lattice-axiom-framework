@@ -1,0 +1,19 @@
+{
+ "id": "pr-6889",
+ "title": "feat(dek14): deep-enter same-k fails at k=14: t=26 vs t=46",
+ "science": "delta-eps on B_42: 26 vs 46, sixth clause family at the identical wall. t(42,0,0)=58, t(39,0,0)=51.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=not-scored",
+ "source": {
+  "pr": 6889,
+  "branch": "physics-loop/toe-lphys-block-dek14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

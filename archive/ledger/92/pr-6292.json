@@ -1,0 +1,19 @@
+{
+ "id": "pr-6292",
+ "title": "feat(formdraw): PVM draw for lock content on the 3-site line",
+ "science": "Puts a PVM draw into the 3-site line lock step, explicitly not Born and not adopted; incremental toy refinement of #6290 superseded within its own series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6292,
+  "branch": "physics-loop/toe-lphys-block-formdraw-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

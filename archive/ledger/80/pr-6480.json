@@ -1,0 +1,19 @@
+{
+ "id": "pr-6480",
+ "title": "feat(wt0f1diff): first seed where f1 fills and its wt1=0 sibling does not",
+ "science": "Lex-first seed splitting f1 from its wt1=0 sibling, displayed-not-adopted splitter bookkeeping in the same sub-series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6480,
+  "branch": "physics-loop/toe-lphys-block-wt0f1diff-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

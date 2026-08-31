@@ -1,0 +1,19 @@
+{
+ "id": "pr-6300",
+ "title": "feat(korb): k is not a single cubic-orbit label",
+ "science": "Notes that k is not a single cubic-orbit label across the 56 nonzero cells; tiny classification remark inside the exploratory campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6300,
+  "branch": "physics-loop/toe-lphys-block-korb-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

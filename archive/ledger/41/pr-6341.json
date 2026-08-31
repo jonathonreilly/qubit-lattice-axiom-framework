@@ -1,0 +1,19 @@
+{
+ "id": "pr-6341",
+ "title": "feat(l1gaus4): tree gauge holds through saturation",
+ "science": "Bounded_theorem note, no probe cell. Tree gauge through the halt: source rho=(8,7) after tick 3 (cube A full, B missing only (2,1,1)) and (8,8) after tick 4, with phi=(8,15) then (8,16) and g=rho in both. SUBSTANTIVE RUNNER DEFECT shared with #6337: tree_phi COMPUTES g from rho via the gauge (g_A := phi(F*) = rho(A); g_B := -phi(F*)+phi(F_B) = rho(B)), so the check 'g-equals-rho' is an algebraic t",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6341,
+  "branch": "physics-loop/toe-lphys-block-l1gaus4-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

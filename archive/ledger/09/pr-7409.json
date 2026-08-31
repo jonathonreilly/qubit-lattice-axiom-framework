@@ -1,0 +1,19 @@
+{
+ "id": "pr-7409",
+ "title": "feat(nm2simt3y): simultaneous M and O freeze t+2 vs t+3 on two-axis opposite y-probes: reverse HOLD, face HOLD, composition HOLD",
+ "science": "Simultaneous freeze t+2 vs t+3 on opposite y-probes; another tau-shifted instance of the same freeze law.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7409,
+  "branch": "physics-loop/toe-lphys-block-nm2simt3y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6625",
+ "title": "feat(q6f9): among Q6-false, cov9>0 iff opp2 and mixed3",
+ "science": "Bounded_theorem note, not a probe cell. Exhaustive scoring of the 4 Q6-false F_cut maps (wt1=adj2=vertex3=0) on all 220 nine-site seeds proves cov9>0 iff Q=(opp2 AND mixed3), unique positive (0,1,0,0,1) with cov9=4, N_pos=N_Q=N_both=1, no counterexample; 17-check runner.",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6625,
+  "branch": "physics-loop/toe-lphys-block-q6f9-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7555",
+ "title": "feat(nm2frm3pfz): three-path cyclic-frame transport at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "Three-path on the far-face three-axis seed; origin split fails, so path-independence fails there before any product exists. Same definedness artifact as 7549.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7555,
+  "branch": "physics-loop/toe-lphys-block-nm2frm3pfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

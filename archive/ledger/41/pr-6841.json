@@ -1,0 +1,19 @@
+{
+ "id": "pr-6841",
+ "title": "feat(plk1): plane-hug same-k holds at k=1: t=3 vs t=5",
+ "science": "Introduces plane-hug pi = mu + cost 3 on a 3->3 hop whose destination has min_i|w_i|=1 (strictly stronger than rho3's exactly-two-unit clause). Scored only at k=1 on B_6: t=3 vs 5, 27>25, small-k bar kept; t(2,1,1)=8. This is the band's last new rule and it is left as an open head with no large-k score. I computed the answer it never got: pi == rho3 on every same-k pair k=1..14, so pi also buys no",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=1, 27 > 25) face=n/a",
+ "source": {
+  "pr": 6841,
+  "branch": "physics-loop/toe-lphys-block-plk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7377",
+ "title": "feat(nm2ot3sly): O freeze t+1 vs t+2 on two-axis same-lock y-probes: reverse HOLD, face HOLD, composition HOLD",
+ "science": "Two-axis same-lock seed, y-probes, O freeze t+1 vs t+2: composition HOLD, reverse and face hold at both cuts. Its own N-gate concedes the result is 'only tautological because no children form at t+2' - the composition sub-band admitting its vacuity in one member.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD composition=HOLD",
+ "source": {
+  "pr": 7377,
+  "branch": "physics-loop/toe-lphys-block-nm2ot3sly-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7105",
+ "title": "feat(nsopy): opposite-lock y-probe unique vector: reverse UNDEFINED, face UNDEFINED",
+ "science": "Neighbour-lock vector readout on opposite-lock y-probes. A=(0,1,0) is a tick-0 seed and its already-recorded neighbour list is EMPTY, so L(A)=UNDEFINED. Direct counterpart to #7116/#7119/#7132, which run the same readout on a tick-0 seed probe but add a same-tick peer exception and therefore obtain a defined L(A) and a `fail` rather than `UNDEFINED` reverse.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7105,
+  "branch": "physics-loop/toe-lphys-block-nsopy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

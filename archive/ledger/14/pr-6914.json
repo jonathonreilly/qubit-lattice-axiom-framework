@@ -1,0 +1,19 @@
+{
+ "id": "pr-6914",
+ "title": "physics: enumerate the joint-lane flips and decide the bridge (block 150)",
+ "science": "Block 150 terminal joint-lane artifact: complete two-route 15800-cutting enumeration with verified 92256-flip involutive walk, exact delta set {(0,0)}, proven shell floor/ceiling, TC/MC conservation law, and a sharp scoped rank-kill closing the flip route to Block 123 \u2014 exactly proven, two-route-verified, publishable on its own. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6914,
+  "branch": "physics-loop/toe-axiom-closure-block150-joint-lane-flip-enumeration-20260820"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

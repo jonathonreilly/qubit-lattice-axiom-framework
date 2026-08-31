@@ -1,0 +1,19 @@
+{
+ "id": "pr-6801",
+ "title": "feat(hugk11): corridor-slide same-k holds at k=11: t=21 vs t=35",
+ "science": "Corridor-slide mu k=11 check on B33, displayed-not-adopted, 0815 lphys campaign; intermediate sweep member superseded by the k=13 terminal result.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6801,
+  "branch": "physics-loop/toe-lphys-block-hugk11-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

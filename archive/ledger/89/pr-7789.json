@@ -1,0 +1,19 @@
+{
+ "id": "pr-7789",
+ "title": "Physics: classify vector interval endpoint response",
+ "science": "Complete distinct-state offdiagonal classification for merged vector Wilson intervals at arbitrary finite q: states couple only by one endpoint cell, exact endpoint-extension laws with (t_V^8) dressing, and a q-independent six-state weighted automaton evaluating all q^2 candidate edges - the lane positive finite-memory law for the interval sector, counterpointing the later action-tower no-go.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7789,
+  "branch": "physics-loop/toe-connection-dynamics-block235-vector-word-transfer-20260829"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

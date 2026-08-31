@@ -1,0 +1,19 @@
+{
+ "id": "pr-7411",
+ "title": "feat(nm2simt2z): simultaneous M and O freeze t+1 vs t+2 on two-axis opposite z-probes: reverse HOLD, face HOLD, composition HOLD",
+ "science": "Simultaneous freeze t+1 vs t+2 on opposite z-probes. Its own steelman raises 'because unsigned axis-cover also HOLDs at each z-probe, simultaneous is axis-cover' - on this cell the two predicates are indeed extensionally identical and the rebuttal is only a definitional restatement.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7411,
+  "branch": "physics-loop/toe-lphys-block-nm2simt2z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

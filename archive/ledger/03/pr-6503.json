@@ -1,0 +1,19 @@
+{
+ "id": "pr-6503",
+ "title": "feat(p1closed): whether cov1>0 is equivalent to selector P",
+ "science": "Refutes the k-independence of the #6494 selector: cov1>0 is NOT equivalent to P=(wt1=1 and (adj2,vertex3,mixed3)!=(0,0,0)). P is necessary but not sufficient at |S|=1 (N_P=14, N_pos=8, N_both=8; six P-maps have cov1=0; lex-first counterexample (1,0,0,0,1)). So the coverage selector is seed-size dependent.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut selector-equivalence census; n",
+ "source": {
+  "pr": 6503,
+  "branch": "physics-loop/toe-lphys-block-p1closed-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

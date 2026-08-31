@@ -1,0 +1,19 @@
+{
+ "id": "pr-6987",
+ "title": "feat(i2k13): c2d4-plus-interior same-k fails at k=13: t=29 vs t=55",
+ "science": "Same-k failure at k=13 for the non-adopted i2 variant, another failed-route exploratory display in the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6987,
+  "branch": "physics-loop/toe-lphys-block-i2k13-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

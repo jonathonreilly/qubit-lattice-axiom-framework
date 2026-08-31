@@ -1,0 +1,19 @@
+{
+ "id": "pr-6404",
+ "title": "feat(l1and): L1 remaining bits select one of eight fillers",
+ "science": "Terminal of the 32->8->4->1 selector chain and the one PR that CLAIMS a positive selection: N_and=1, i.e. the conjunction (wt1,opp2,adj2,vertex3,mixed3)=(1,0,1,1,1) picks f_L1 uniquely among the eight F_cut 1-site fillers. FLAG - the claim is circular, and the note's own N7 steelman states the objection verbatim ('among eight maps that already vary exactly on (opp2,mixed3,vertex3) with wt1=adj2=1 ",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6404,
+  "branch": "physics-loop/toe-lphys-block-l1and-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

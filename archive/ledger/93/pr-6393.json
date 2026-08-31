@@ -1,0 +1,19 @@
+{
+ "id": "pr-6393",
+ "title": "feat(rawfill): 96 covariant maps fill the two-cube from one site",
+ "science": "Exact dynamical census, not a probe cell: all 512 cube-covariant occupancy predicates with f(empty)=0 run to a fixed point on the twelve-vertex two-cube from a 1-site seed. Theorem 2 gives N_fill=96 and N_empty=256 exactly (with N_empty=2^8 identified as exactly the f=0-on-one-unbalanced-axis subclass); Theorem 3 is a forcing negative - f_L1 fills with lock history (1,4,8,11,12) at halt tick 4 but",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6393,
+  "branch": "physics-loop/toe-lphys-block-rawfill-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

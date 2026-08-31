@@ -1,0 +1,19 @@
+{
+ "id": "pr-7022",
+ "title": "[physics-loop] delayed-axis input stabilizer \u2014 bounded_theorem \u2014 bounded-support",
+ "science": "Route-changing boundary plus a complete-input stabilizer classification: covariance of the local Admissibility row under every represented automorphism fixing the whole preparation/resource/guard packet forces equal conditional weights exactly in 5 of 7 rows (I/2 on X/Y/Z, P_z on X/Y); at P_z-on-Z there is no input-fixing sign swap and at oblique n_z=1/2 a continuous branch-ratio deformation survi",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7022,
+  "branch": "physics-loop/toe-delayed-setting-midpoint-symmetry-block2-20260820"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

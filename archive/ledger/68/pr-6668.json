@@ -1,0 +1,19 @@
+{
+ "id": "pr-6668",
+ "title": "feat(maskstab): no weight-4 occupancy admits a fair pair member",
+ "science": "THE GENERAL NO-GO that subsumes the whole chirality thread, not a probe cell: over ALL 15 weight-4 occupancy masks, N_stab_ok = 0 on every row, so N_ok_masks = 0 - therefore NO nearest-neighbour-determined, G+-equivariant July-3-pair labeling exists on ANY 4-occupied six-star, not just the two/three-ball ones. Mechanism proved: the 3 masks that empty a whole axis have |Stab|=8 and N_pair_support=0",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6668,
+  "branch": "physics-loop/toe-lphys-block-maskstab-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

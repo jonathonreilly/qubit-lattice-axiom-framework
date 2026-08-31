@@ -1,0 +1,19 @@
+{
+ "id": "pr-6540",
+ "title": "feat(q6class): every cov6=0 map first refuses adj2",
+ "science": "Displayed-not-adopted uniform first-refuse check for cov6=0 maps; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6540,
+  "branch": "physics-loop/toe-lphys-block-q6class-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

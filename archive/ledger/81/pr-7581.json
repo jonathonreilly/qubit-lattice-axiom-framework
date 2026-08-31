@@ -1,0 +1,19 @@
+{
+ "id": "pr-7581",
+ "title": "feat(nm2xyfzt2): neighbor-read of xy-plane cyclic-frame holonomy freeze t+1 vs t+2 on three-axis far-face opposite seed: reverse HOLD, face ",
+ "science": "3F, xy z=1 reverse / z=0 face squares, both cuts + composition. Only member scoring the z=0 xy square as 'face'; that square fails from split fail at the tick-0 seed row.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail composition=hold",
+ "source": {
+  "pr": 7581,
+  "branch": "physics-loop/toe-lphys-block-nm2xyfzt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

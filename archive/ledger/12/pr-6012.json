@@ -1,0 +1,19 @@
+{
+ "id": "pr-6012",
+ "title": "[physics-loop][review-loop] toe-time blockQ15 (STACKED on #6010) \u2014 Cycle 943: bounded theorem \u2014 the menu asymmetry is one wire wide; the own",
+ "science": "Localizes the menu asymmetry: bulk dynamics is menu-swap invariant, branch divergence confines to eight wires with six mirror-paired, the sole obstruction is the record cell orientation field (owner vindicated in structure, refuted in timing); proves 940 A2 gauge and that the axioms do not orient the menu; names the mirror-partner successor. 946 confirms the structure clause, refutes the one-repai",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6012,
+  "branch": "physics-loop/toe-time-blockQ15-20260802"
+ },
+ "carried_by": "PR #6014 (twelve-gate census subsumes the sketch; automorphism proof completes it)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6494",
+ "title": "feat(wt2closed): cov2>0 iff remaining-bit selector P",
+ "science": "Exact closed-form characterization, verified with zero mismatches on all 32 maps: cov2(f)>0 iff P(f) = (wt1=1 AND (adj2,vertex3,mixed3) != (0,0,0)); opp2 is free. N_pos=N_P=N_both=14. This is an iff selector, not a census count.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut closed-form selector; no (reve",
+ "source": {
+  "pr": 6494,
+  "branch": "physics-loop/toe-lphys-block-wt2closed-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

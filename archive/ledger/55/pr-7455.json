@@ -1,0 +1,19 @@
+{
+ "id": "pr-7455",
+ "title": "feat(nm2oricyccy): cyclic next/prev lex-smallest det orientation of 1-in 2-out at t+1 on two-axis opposite y-probes: reverse HOLD, face fail",
+ "science": "opposite y-probes, cyclic lex-SMALLEST orientation: reverse=HOLD. With #7456 (lex-largest, reverse=fail) this is the second, sign-reversed instance of the same tie-break artifact - here it is SMALLEST that manufactures the HOLD, showing neither convention is privileged.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7455,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyccy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7230",
+ "title": "feat(nmt2opp): M two-tick composition on #7208: reverse HOLD, face HOLD, composition HOLD",
+ "science": "On the four #7208 y-probes, M at the probe's own t equals M at t+1 because six-neighbour records arriving between the cuts are later arrivals and never enter the earliest incoming set, so reverse and face HOLD at both cuts and composition HOLDs. The note's own steelman states that the stability follows from M being frozen at formation.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7230,
+  "branch": "physics-loop/toe-lphys-block-nmt2opp-20260815"
+ },
+ "carried_by": "archive/families/toe-lphys-20260812.md \u00a7Follow-on (the 19 citing notes)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

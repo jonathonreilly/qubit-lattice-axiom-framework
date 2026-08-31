@@ -1,0 +1,19 @@
+{
+ "id": "pr-7713",
+ "title": "feat(nm2frm2lx3rd2): distance-2 neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1 on three-axis opposite near-face seed: re",
+ "science": "Distance-2 neighbour-read of the L-path (-e3 then -e1) on the three-axis near-face seed (third pair at (2,0,0)/(2,1,0)). Recomputed exact, but the wrapper is inert: at all four probes distance-2 equals the bare L-path, so the reported pair is the parent L-path's pair verbatim. Introduces the band's second, incompatible 'formed' rule -- its witness scan has no cut filter at all (any site ever forme",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7713,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lx3rd2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

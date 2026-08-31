@@ -1,0 +1,19 @@
+{
+ "id": "pr-6867",
+ "title": "feat(renk1): ridge-enter same-k holds at k=1: t=3 vs t=5",
+ "science": "First display of ridge-enter kappa = rho3 + cost 3 on a 2->3 hop whose dest has exactly two unit coordinates; B_6, t(1,0,0)=3 vs t(1,1,1)=5, 27>25. Also records the forcing negative on the comparator eps (tax every 2->3): eps kills k=1 because (1,1,0)->(1,1,1) has three unit coordinates.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6867,
+  "branch": "physics-loop/toe-lphys-block-renk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

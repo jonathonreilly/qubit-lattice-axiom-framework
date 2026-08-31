@@ -1,0 +1,19 @@
+{
+ "id": "pr-7119",
+ "title": "feat(nstriy): three-site y-probe unique vector: reverse UNDEFINED, face UNDEFINED",
+ "science": "Three-site opposite-lock seed, neighbour-lock readout on y-probes. Same reduced 18-check regime and same undisclosed-in-code tick-0 same-tick exception as #7116; the exception supplies L(A)=+e_1 and hence the `fail` verdict. Its one substantive cross-check (`not-x-list-leftover-not-two-site`) verifies L(C)=-e_1 here versus +e_2 on the x-probes.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=UNDEFINED",
+ "source": {
+  "pr": 7119,
+  "branch": "physics-loop/toe-lphys-block-nstriy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7500",
+ "title": "feat(nm2oricycl3fx): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis far-face opposite x-probes: reverse fails, face f",
+ "science": "Far-face 3-axis x-probes, lex-largest: A and D have mixed M={+e_3,-e_3} -> split fail. Defect: 'mutation-leftover-signed-and-unsigned-differ' asserts leftover[B]==orient[B] and leftover[C]==orient[C], and 'mutation-lex-one-and-unsigned-plane-differ' asserts lex[C]==orient[C] \u2014 agreements asserted under '-differ' labels.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7500,
+  "branch": "physics-loop/toe-lphys-block-nm2oricycl3fx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

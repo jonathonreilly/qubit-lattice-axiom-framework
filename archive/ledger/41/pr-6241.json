@@ -1,0 +1,19 @@
+{
+ "id": "pr-6241",
+ "title": "[physics-loop] toe-lphys c1alone: bounded_theorem / bounded-support",
+ "science": "Wording-constraint micro-theorem on a strict content-alone clause under the unadopted C1-strong hypothesis; exploratory wording analysis carried nowhere in the core chain.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6241,
+  "branch": "physics-loop/toe-lphys-block-c1alone-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

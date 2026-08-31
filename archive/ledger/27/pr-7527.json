@@ -1,0 +1,19 @@
+{
+ "id": "pr-7527",
+ "title": "feat(nm2frmrdt2): HOLDING neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on two-axis opposite z-probes: reverse HOLD, face HOLD, ",
+ "science": "Neighbor-read of transport on 2-axis-opposite z-probes at both cuts, all four HOLD. Introduces the one genuine mutation control of the band: 'equal transport bits including fail=fail' HOLDs at (0,-1,1) where neighbor-read fails.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7527,
+  "branch": "physics-loop/toe-lphys-block-nm2frmrdt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

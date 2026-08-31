@@ -1,0 +1,19 @@
+{
+ "id": "pr-6895",
+ "title": "feat(c2var): cost-2 ridge-enter sits between kappa and rho3 on B12",
+ "science": "Q_c2 = 8072805369611147489/37031456927424960000, var_c2 = 0.005033923680827433, strictly between kappa and rho3 \u2014 so cost 2 does move the variance even though it moves no scored arrival. CHECKER DEFECT: `mutation-c2-as-kappa-or-rho3` asserts only `var_kappa < var_c2 < var_rho3`, the same inequality as the order gate; no mutated rule is computed.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6895,
+  "branch": "physics-loop/toe-lphys-block-c2var-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6433",
+ "title": "feat(opp0cover): rank 2-site coverage among F_cut maps with opp2=0",
+ "science": "Quantifies the selector trade-off that #6431 opened. Restricting F_cut to the opp2=0 subclass F0 (16 maps) and ranking by two-site coverage: max m0=62 attained by N0=2 maps, (1,0,1,1,1)=f_L1 and (1,0,1,1,0), tied and differing only on mixed3. So under opp2-silence f_L1 IS a coverage maximizer but not a unique one. The number that matters is cov(f_L1)=62 < 66: imposing 'a filled axis does not form'",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6433,
+  "branch": "physics-loop/toe-lphys-block-opp0cover-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

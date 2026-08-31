@@ -1,0 +1,19 @@
+{
+ "id": "pr-6537",
+ "title": "feat(ntall): {(1,0,0)} is a class split of non-tot Q_*",
+ "science": "Displayed-not-adopted class-split observation for non-total Q_* maps; small exploratory enumeration.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6537,
+  "branch": "physics-loop/toe-lphys-block-ntall-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

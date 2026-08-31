@@ -1,0 +1,19 @@
+{
+ "id": "pr-6821",
+ "title": "feat(ridk12): ridge-slide same-k holds at k=12: t=24 vs t=40",
+ "science": "rho3 at k=12 on B_36: t=24 vs 40, 1728>1600. Names k=12 as 'the last mu-hold scale', so this is the PR that pins where rho3 overtakes mu with margin to spare (128 vs mu's 8).",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=12, 1728 > 1600) face=n/a",
+ "source": {
+  "pr": 6821,
+  "branch": "physics-loop/toe-lphys-block-ridk12-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

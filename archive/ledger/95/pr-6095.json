@@ -1,0 +1,19 @@
+{
+ "id": "pr-6095",
+ "title": "science(gravity): test direct hyperface seagull span",
+ "science": "Block 24 (hyperface seagull): tests the direct hyperface-contact route \u2014 four exact rank-nine hyperarea Hessians realize the target coupling order and all three inertia classes, but none of the three sourced mass matrices lies in the unconstrained four-orientation span (best Frobenius residual 0.896), a clean carrier-span negative.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6095,
+  "branch": "physics-loop/toe-axiom-closure-block24-hyperface-seagull-20260810"
+ },
+ "carried_by": "#6097 gauge theorem moots the exact-matrix matching question this negative addressed; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

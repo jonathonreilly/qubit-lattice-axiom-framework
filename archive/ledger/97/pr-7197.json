@@ -1,0 +1,19 @@
+{
+ "id": "pr-7197",
+ "title": "feat(nsze3zinc): z-axis opposite \u00b1e_3 z-probe same-tick union own-lock: reverse fails, face HOLD",
+ "science": "FORCING NEGATIVE: the band's first reverse failure. Both seeds lock along the axis that joins them ({0:+e3},{e3:-e3}), read on z-probes. Because the perp rule forbids stepping along the lock axis, the +/-e_3 content never leaves the seed pair: S^+(A)={+e3,-e3} but S^+(B)={+e1,+e2}, so no opposite pair exists and reverse fails while face still holds. Recomputed and confirmed.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7197,
+  "branch": "physics-loop/toe-lphys-block-nsze3zinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

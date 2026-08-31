@@ -1,0 +1,19 @@
+{
+ "id": "pr-6277",
+ "title": "[physics-loop] toe-lphys invstate: bounded_theorem / bounded-support",
+ "science": "Elementary fact that the unique cube-invariant state on M2 is I/2, conditional on a non-adopted displayed action; exploratory lemma.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6277,
+  "branch": "physics-loop/toe-lphys-block-invstate-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

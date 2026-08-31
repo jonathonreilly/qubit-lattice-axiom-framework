@@ -1,0 +1,19 @@
+{
+ "id": "pr-6967",
+ "title": "feat(psk1): same-max face-slide same-k holds at k=1: t=3 vs t=5",
+ "science": "k=1 for psi on B_6(0): (3,5), 27>25, and the note states the k=1 geodesic 'never takes a 2->2 same-max face-slide hop' -- the named clause is off the scored path. Fixed-point triviality.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=1 (band bit) face=absent",
+ "source": {
+  "pr": 6967,
+  "branch": "physics-loop/toe-lphys-block-psk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

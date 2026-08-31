@@ -1,0 +1,19 @@
+{
+ "id": "pr-7806",
+ "title": "physics: classify action-to-Record generator interface",
+ "science": "Terminal DIRECTED-ACTION/TRANSFER-TO-PERMANENT-RECORD-APPEND-INTENSITY-INTERFACE-UNSUPPLIED-ON-INSPECTED-STACK, with CONE_STATUS: UNDEFINED-NOT-EMPTY. Two pieces of real science. (1) An exact algebraic firewall \u2014 the detailed-balance zero-edge lemma: if a full-support stationary law on the same visible append-only state graph obeys ordinary detailed balance pi(R)q(R,R prime) = pi(R prime)q(R prime",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7806,
+  "branch": "physics-loop/toe-source-eta-ownership-block20-directed-action-transfer-record-generator-cone-20260830"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 80 behind); NOT restated \u2014 the detailed-balance zero-edge lemma and the bridge-matrix census appear in no later member diff, and #7813 add",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

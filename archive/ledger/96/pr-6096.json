@@ -1,0 +1,19 @@
+{
+ "id": "pr-6096",
+ "title": "science(gravity): bound proper-length source contact",
+ "science": "Block 24 (proper-length contact): derives the proper-length source contact on all fifteen edge classes, proves the retained 2/3/4-edge supports cannot cancel rank-six source coefficients, proves coordinate-only source seagulls cancel the geometry connection at full stationarity, and constructs a common six-edge algebraic escape.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6096,
+  "branch": "physics-loop/toe-axiom-closure-block24-regge-source-seagull-20260810"
+ },
+ "carried_by": "#6097 subsumes the escape/cancellation question under the additive-zero gauge freedom; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7128",
+ "title": "feat(nsopyex): opposite-lock y-probe later-tick exist-opposite: reverse HOLD, face HOLD",
+ "science": "First HOLD/HOLD in the campaign by PR number, and the verdict is degenerate: the runner's own output shows S_*(A)=S_*(B)={+e_1,+e_2,-e_2,+e_3,-e_3} and S_*(C)=S_*(D)={+e_1,-e_1,+e_2,+e_3,-e_3}. Each set already contains an axis in both orientations, so the existential-opposite predicate is satisfied by either set against itself and carries no information about the A-B or C-D relation.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7128,
+  "branch": "physics-loop/toe-lphys-block-nsopyex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

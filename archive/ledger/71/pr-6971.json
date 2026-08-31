@@ -1,0 +1,19 @@
+{
+ "id": "pr-6971",
+ "title": "feat(c2d4k19): cost-2 max\u22654 out-face same-k first-fails at k=19: t=35 vs t=61",
+ "science": "THE WALL: one Dijkstra on B_57(0) (253575 sites) gives t(19,0,0)=35, t(19,19,19)=61, so 3675 < 3721 and same-k reverse FIRST FAILS at k=19 under c2d4 -- the band's best same-k candidate. The note records this is the 'same wall as omega', i.e. the whole cost/floor search bought nothing at the wall. Supplies the k=19 row that #7009's affine theorem needs.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (3675<3721 at k=19; band bit) face=absent",
+ "source": {
+  "pr": 6971,
+  "branch": "physics-loop/toe-lphys-block-c2d4k19-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

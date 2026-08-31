@@ -1,0 +1,19 @@
+{
+ "id": "pr-7091",
+ "title": "feat(nsscvec): nssame same-tick unique vector: reverse UNDEFINED, face UNDEFINED",
+ "science": "Same-tick-inclusive lock vector on the nssame seed: A and D form together at tick 3 and are each other's neighbours, so each inherits the other's mixed incoming locks; all four letters become UNDEFINED and both comparisons are UNDEFINED. Against #7077 (strictly-earlier, same seed and probes, reverse=fail) this shows the simultaneity convention can annihilate an entire verdict pair.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7091,
+  "branch": "physics-loop/toe-lphys-block-nsscvec-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

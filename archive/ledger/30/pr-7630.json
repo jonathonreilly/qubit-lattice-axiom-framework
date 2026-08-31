@@ -1,0 +1,19 @@
+{
+ "id": "pr-7630",
+ "title": "feat(nm2frm1ssl): directed 1-step cyclic-frame transport along -e3 at t+1 on two-axis same-lock seed: reverse HOLD, face fails",
+ "science": "Same-lock seed (+e1,+e1,+e2,+e2) with the -e3 1-step. The seed change costs the face pair: (0,0,1) now has M={+e_2} with O covering all three axes, so its split fails. Recomputed: bits hold/hold on reverse, fail/hold on face. Its not-leftover gate genuinely recomputes the opposite-seed rival and asserts the difference.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7630,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1ssl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

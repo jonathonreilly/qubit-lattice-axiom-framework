@@ -1,0 +1,19 @@
+{
+ "id": "pr-6313",
+ "title": "feat(nrmdir): shared-face formation has n along the face normal",
+ "science": "Observes shared-face formation has n along the face normal on the two-cube toy; micro-lemma carried by the campaign roll-up.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6313,
+  "branch": "physics-loop/toe-lphys-block-nrmdir-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

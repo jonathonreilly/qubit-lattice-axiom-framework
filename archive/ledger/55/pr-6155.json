@@ -1,0 +1,19 @@
+{
+ "id": "pr-6155",
+ "title": "science(toe): close full source multimode Ward tensor",
+ "science": "Block 62: the multimode capstone of the nonlinear-Ward mechanism \u2014 complete six-dimensional conserved symmetric-source bases at k and 2k on the skew ray (1,2,3,0), covering all 21 equal-mode and 36 unequal-harmonic bilinear pairs, confirming force ~ k^2 and Ward projection ~ k^3 with the Block-61 completion exact to 9.6e-16; the strongest in-span form of the emergent-IR gravity mechanism.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6155,
+  "branch": "physics-loop/toe-axiom-closure-block62-full-source-multimode-20260812"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7270",
+ "title": "feat(nmot3zp): O freeze t+1 vs t+2 on #7186: reverse HOLD, face HOLD, composition HOLD",
+ "science": "O freeze t+1 vs t+2 on the #7186 z-probes; the fifth member of the freeze family, and the one that explicitly says 'the freeze is not special to those other members' after listing nmot3sy/nmot3zx/nmot3opp as reporting the same bits.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold composition=HOLD",
+ "source": {
+  "pr": 7270,
+  "branch": "physics-loop/toe-lphys-block-nmot3zp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

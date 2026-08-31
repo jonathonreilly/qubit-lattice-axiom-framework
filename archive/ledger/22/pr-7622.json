@@ -1,0 +1,19 @@
+{
+ "id": "pr-7622",
+ "title": "feat(nm2frm1sz): directed 1-step cyclic-frame transport along -e3 at t+1 on two-axis opposite seed: reverse HOLD, face HOLD",
+ "science": "The band's constructor. Defines the cyclic frame F=(m,o_next,o_prev) from the 1-in/2-out split, Orient=det F, and transport P=F(dst)F(src)^T, then reports HOLD/HOLD for the -e3 1-step at all four seeds. I reproduced every number (tick<=1 count 14, all four frames, all four P matrices). DEFECT: edge_status's two post-conditions \u2014 'P is a signed permutation' and 'det P = Orient(src)Orient(dst)' \u2014 ar",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7622,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1sz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7285",
+ "title": "feat(nmcfa): axis-cover of M and O at t+1 on #7198: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the y-axis SAME-lock +e_3 #7198 z-probes; A is not a seed here (t(A)=3, M(A) 3-mixed). Cover holds at all four. My recomputation puts this cell in the same probe signature class as #7192's opposite-lock seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7285,
+  "branch": "physics-loop/toe-lphys-block-nmcfa-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

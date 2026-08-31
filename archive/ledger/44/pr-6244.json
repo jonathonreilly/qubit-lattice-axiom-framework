@@ -1,0 +1,19 @@
+{
+ "id": "pr-6244",
+ "title": "[physics-loop] toe-lphys c1adm: bounded_theorem / bounded-support",
+ "science": "Toy admissibility counterexample for the unadopted C1 J-type; wording constraint on a hypothetical retype, no core movement.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6244,
+  "branch": "physics-loop/toe-lphys-block-c1adm-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

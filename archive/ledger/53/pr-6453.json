@@ -1,0 +1,19 @@
+{
+ "id": "pr-6453",
+ "title": "feat(cut3cover): f_L1 is not unique 3-site F_cut maximizer",
+ "science": "3-site coverage maximizer count showing f_L1 non-unique, displayed-not-adopted coverage-scan member of the 0815 pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6453,
+  "branch": "physics-loop/toe-lphys-block-cut3cover-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

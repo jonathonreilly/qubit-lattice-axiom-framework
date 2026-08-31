@@ -1,0 +1,19 @@
+{
+ "id": "pr-7611",
+ "title": "feat(nm2sfzrdalfz): universal neighbor-read of cyclic lex-smallest frame holonomy at t+1 on three-axis far-face opposite seed: reverse fails",
+ "science": "3F, xy z=1/z=2, lex-smallest, universal neighbor-read; fail/fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7611,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzrdalfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

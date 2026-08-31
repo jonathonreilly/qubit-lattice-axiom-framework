@@ -1,0 +1,19 @@
+{
+ "id": "pr-7299",
+ "title": "feat(nmpfail): forall-orthogonal M vs O at t+1 on #7188: reverse HOLD, face HOLD",
+ "science": "Same #7188 x-probe cell, forall-orthogonal readout: forall-perp HOLDs at all four probes while axis-cover FAILs at three of them - the sharpest predicate separation in the band. It also carries the nstri counterexample where exist-perp HOLDs at B and forall-perp FAILs (+e_1 sits in both M(B) and O(B), dot=1), establishing the three-way independence forall-perp / exist-perp / cover.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7299,
+  "branch": "physics-loop/toe-lphys-block-nmpfail-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

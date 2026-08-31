@@ -1,0 +1,19 @@
+{
+ "id": "pr-6310",
+ "title": "feat(rhogrow): cube source increment equals new locks in that cube",
+ "science": "Shows the cube source increment equals new locks per cube on the two-cube toy; trivial accounting lemma in the exploratory pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6310,
+  "branch": "physics-loop/toe-lphys-block-rhogrow-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7020",
+ "title": "[physics-loop] record-native-dyadic-preparation \u2014 bounded_theorem \u2014 bounded-support",
+ "science": "Block 1 of the Record/Born stack: a strict-NN append kernel generating n-stage dyadic preparation Records with exact endpoint mass 2^-n, unique active site on every lawful single-rail history, strong lumpability over spent controller Records; under a SUPPLIED Record-to-density bridge B the transcript p=2^-n excludes the normalized-square and normalized-cubic-power preparation maps for n>=2.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7020,
+  "branch": "physics-loop/toe-record-native-positive-state-born-history-20260820"
+ },
+ "carried_by": "#7022 (block 2) re-runs the same preparation-map comparison in its 3/4 vs 9/10 vs 9/16 table and CORRECTS its reach - it shows the midpoint protocol tests only preparation affinity and does not retire",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

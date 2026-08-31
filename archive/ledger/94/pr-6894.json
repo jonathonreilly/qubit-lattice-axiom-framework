@@ -1,0 +1,19 @@
+{
+ "id": "pr-6894",
+ "title": "feat(c2k14): cost-2 ridge-enter same-k fails at k=14: t=26 vs t=46",
+ "science": "c2 = rho3 with ridge-enter priced 2 instead of 3. On B_42 the whole k=10..14 table is unchanged from kappa (22/34 ... 26/46), so an intermediate price changes nothing on the axis/body geodesics. Repeats the iota datum (body 46 -> 72).",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=not-scored",
+ "source": {
+  "pr": 6894,
+  "branch": "physics-loop/toe-lphys-block-c2k14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

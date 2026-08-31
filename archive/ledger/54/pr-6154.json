@@ -1,0 +1,19 @@
+{
+ "id": "pr-6154",
+ "title": "science(toe): complete nonlinear metric Ward embedding",
+ "science": "Block 61: identifies and removes the rank-five nonlinear coordinate reaction in the fixed Regge candidate, proving the square-root metric-completion identity on all 55 symmetric constant-metric tangent pairs; the completed force scales quadratically and the Ward projection cubically on a less-symmetric winding.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6154,
+  "branch": "physics-loop/toe-axiom-closure-block61-metric-completion-20260812"
+ },
+ "carried_by": "#6155 carries the fixed completion (reaction Ward max 9.6e-16) into the complete six-dimensional multimode bases and restates the k^2/k^3 scalings there; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

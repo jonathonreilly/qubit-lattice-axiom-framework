@@ -1,0 +1,19 @@
+{
+ "id": "pr-7112",
+ "title": "feat(nsopzown): opposite-lock z-probe own incoming: reverse fail, face UNDEFINED",
+ "science": "Own-incoming readout on opposite-lock z-probes; L(A)=+e_3, L(B)=+e_1 both defined and non-opposite. Records that the same construction on the y-probes of the same seed reported reverse HOLD, so the hold at #7109 is probe-axis specific and does not survive rotation to z.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=UNDEFINED",
+ "source": {
+  "pr": 7112,
+  "branch": "physics-loop/toe-lphys-block-nsopzown-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

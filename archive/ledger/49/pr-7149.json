@@ -1,0 +1,19 @@
+{
+ "id": "pr-7149",
+ "title": "feat(nsopzft): nsopp z-probe formation-tick exist-opposite: reverse fails, face fails",
+ "science": "Formation-tick exist-opposite on nsopp z-probes where all four S are singletons ({+e1},{+e3},{+e3},{+e3}) and both bits fail. Useful as the extreme of the narrow end of the window chain: singleton sets cannot hold, so the fail is forced by set size, not by geometry.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7149,
+  "branch": "physics-loop/toe-lphys-block-nsopzft-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

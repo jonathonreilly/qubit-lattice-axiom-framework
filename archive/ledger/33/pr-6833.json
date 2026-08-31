@@ -1,0 +1,19 @@
+{
+ "id": "pr-6833",
+ "title": "feat(ridk14): ridge-slide same-k fails at k=14: t=26 vs t=46",
+ "science": "The rho3 wall: k=14 on B_42, t=26 vs 46, 2028<2116. Closes rho3's window at exactly k=13 -- one scale past mu's k=12, bought with a whole extra clause. Promotion candidate as the terminal negative of the band's best rule.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (same-k k=14, 2028 < 2116) face=n/a",
+ "source": {
+  "pr": 6833,
+  "branch": "physics-loop/toe-lphys-block-ridk14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

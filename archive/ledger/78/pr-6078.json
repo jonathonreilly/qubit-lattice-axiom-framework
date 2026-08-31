@@ -1,0 +1,19 @@
+{
+ "id": "pr-6078",
+ "title": "Physics loop: derive code-symmetric cut-area action",
+ "science": "Block 10: exact regular-graph theorem that the code-symmetric compatible action equals (log B)/2 times the occupied/unoccupied cut area, with the local logit rule as its discrete first variation, a closed dual two-chain, the endpoint Laplacian-improvement family (theta=1/2 code-swap-even), and the forcing negative that a fixed-background law plus cubic covariance does not determine a local metric ",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6078,
+  "branch": "physics-loop/toe-axiom-closure-block10-20260810"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

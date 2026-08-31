@@ -1,0 +1,19 @@
+{
+ "id": "pr-6315",
+ "title": "feat(kform): first-wave formations from the corner seed have k=1",
+ "science": "Bounded_theorem note, no probe cell. Proves the general BOUND k in {1,2,3} for every forming site (each component of 3n lies in {-1,0,1}), and gives the wave-by-wave spectral-type table from the corner seed: first wave = the three axis neighbours, all k=1; second wave = the three face-diagonals, all k=2; the space diagonal (1,1,1) reaches k=3 only after that; and the B-front splits -- (2,0,0) has ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "source": {
+  "pr": 6315,
+  "branch": "physics-loop/toe-lphys-block-kform-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

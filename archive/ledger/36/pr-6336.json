@@ -1,0 +1,19 @@
+{
+ "id": "pr-6336",
+ "title": "feat(l1t4): L1 tick 4 forms the last site",
+ "science": "Bounded_theorem note, no probe cell. Increment on #6335: the last unread vertex (2,1,1), at graph distance 4, is unread at t=0,1,2,3 and locks at t=4 as a SINGLETON formation event with 3n=(-1,-1,-1) and k=3, giving |locks_4|=12. Thin -- one more tick of the same computation -- but it completes the fill history and is the fact the saturation/horizon notes (#6337/#6340) build on. Same dead tree_phi",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6336,
+  "branch": "physics-loop/toe-lphys-block-l1t4-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6811",
+ "title": "feat(e2k1): late-enter-body keeps k=1 reverse: t=3 vs t=5",
+ "science": "Introduces late-enter-body eps2 = mu + cost 3 on a 2->3 hop only when max_i|w_i| >= 2, designed precisely to dodge #6808's k=1 kill. It works at k=1 on B_6: t=3 vs 5, 27>25, small-k bar kept. Runner exhibits eps2_small=1 vs eps_small=3 and eps2_late=3 vs mu_late=1, so the clause is live but not on the k=1 geodesic.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=1, 27 > 25) face=n/a",
+ "source": {
+  "pr": 6811,
+  "branch": "physics-loop/toe-lphys-block-e2k1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

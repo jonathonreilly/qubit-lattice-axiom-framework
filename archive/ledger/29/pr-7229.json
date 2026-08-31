@@ -1,0 +1,19 @@
+{
+ "id": "pr-7229",
+ "title": "feat(nmsyall): forall-choice Cl(3,0) from M on #7175: reverse fails, face fails",
+ "science": "Forall-choice counterpart of #7226 on the y-symmetric M cells: 4 of 6 face picks and 2 of 3 reverse picks are the scalar +/-1, so forall-choice reverse and face both fail. It restates #7226's M-sets and counts and reports the exist-choice HOLDs as comparison.",
+ "forcing": true,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7229,
+  "branch": "physics-loop/toe-lphys-block-nmsyall-20260815"
+ },
+ "carried_by": "archive/families/toe-lphys-20260812.md \u00a7Follow-on (the 19 citing notes)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

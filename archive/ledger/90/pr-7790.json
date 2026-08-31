@@ -1,0 +1,19 @@
+{
+ "id": "pr-7790",
+ "title": "[physics-loop][review-loop] Block236 product-vector channels: conditional-support",
+ "science": "First adjacent product-background response at q=2: both cross orientations reduce to the positive open kernel I(VxV)/27 and the shared rung resolves into the (0,+),(1,+),(2,+) channel alphabet with exact weights d_L/27 - the pair-channel alphabet and cell geometry that Blocks 237-239, 244, and 245 all import un-restated.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7790,
+  "branch": "physics-loop/toe-connection-dynamics-block236-product-vector-channels-20260829"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7218",
+ "title": "feat(nmsxop): own incoming set on #7182: reverse fails, face fails",
+ "science": "M-readout on #7182's y-probes: A formed, M(A)={+e3,-e3}, M(B)={+e2}; fails/fails against S^+ hold/hold. Fourth axis-permuted instance of the same separation.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7218,
+  "branch": "physics-loop/toe-lphys-block-nmsxop-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

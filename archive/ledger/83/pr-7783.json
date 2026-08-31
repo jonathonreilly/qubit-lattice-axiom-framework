@@ -1,0 +1,19 @@
+{
+ "id": "pr-7783",
+ "title": "[physics-loop] Block231: bound J_r Peter-Weyl transfer truncation",
+ "science": "Explicit finite positive Peter-Weyl packet for the supplied O(3) action through the Block229 J_r transfer: exact 3rq+1 temporal and 2rq half-action census, direct/staged contraction without retruncation, complete-kernel sandwich, and normalized operator/HS bounds with explicit rq-dependent cutoff - the truncation technology 232 uses for its defect approximation bounds (theta_K=(3rq+1)delta_kappa).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7783,
+  "branch": "physics-loop/toe-connection-dynamics-block231-jr-peter-weyl-operator-truncation-20260828"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

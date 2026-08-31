@@ -1,0 +1,19 @@
+{
+ "id": "pr-7152",
+ "title": "feat(nsopyinc): nsopp y-probe same-tick-inclusive exist-opposite: reverse fails, face HOLD",
+ "science": "Same-tick-inclusive (tick <= t(q), q excluded) exist-opposite on nsopp y-probes; the same-tick origin partner fills S(A)={+e1}, moving reverse from UNDEFINED (#7143) to fail, with face still hold. The middle rung of the window chain and a direct instance of the monotone law.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7152,
+  "branch": "physics-loop/toe-lphys-block-nsopyinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6085",
+ "title": "[physics-loop] toe-axiom-closure block16 \u2014 bounded_theorem \u2014 bounded-support \u2014 connected balanced edge networks",
+ "science": "Block 16: executes the connected-positive route with a tick-plus-face bouquet (coarse speed 1/2), 504 balanced binary histories with exact matched currents, rank-eight junction rigidity, and strengthens the compact homothety boundary: connected topology and unequal positive reweighting stay inside the cone separated from the flat k=0 Hessian image.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6085,
+  "branch": "physics-loop/toe-axiom-closure-block16-network-20260810"
+ },
+ "carried_by": "#6088 reaction-rank theorem gives the structural account of the same separation; #6090 resolves the wall natively; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

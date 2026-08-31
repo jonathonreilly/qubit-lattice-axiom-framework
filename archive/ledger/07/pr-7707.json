@@ -1,0 +1,19 @@
+{
+ "id": "pr-7707",
+ "title": "feat(nm2frm2lprd2s): distance-2 neighbor-read of L-path -e3 then +e1 at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Distance-2 readout of the same-lock L-path (-e3,+e1). Identifies the concrete cause - same-lock kills the would-be origin witness (0,0,2) because that L-path's first hop lands on the split-dead face source (0,0,1).",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7707,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lprd2s-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

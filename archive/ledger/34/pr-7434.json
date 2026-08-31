@@ -1,0 +1,19 @@
+{
+ "id": "pr-7434",
+ "title": "feat(nm2orilefz): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis opposite z-probes: reverse HOLD, face fails",
+ "science": "opposite z-probes, signed-leftover-axis det orientation. Orient=(-1,-1,-1,+1) at A,B,C,D: reverse holds, face fails because C and D swap the (m,pair) columns. The only reverse=HOLD this letter achieves anywhere in the band.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7434,
+  "branch": "physics-loop/toe-lphys-block-nm2orilefz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

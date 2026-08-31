@@ -1,0 +1,19 @@
+{
+ "id": "pr-6704",
+ "title": "feat(twomeet): two-seed midplane still closer to Euclidean than l1",
+ "science": "Two-seed extension with an honest vacuity disclosure, not a probe cell: on U = B_4(0) u B_4((2,0,0)) (195 sites, 828 edges, one pair of Dijkstras) the first-meeting set M under the named rho is the singleton {(1,0,0)} at t=3, and the SAME singleton under l1 at t=1 - so the intended variance comparison on M is 0 vs 0 and vacuous, which the note states outright rather than reporting a win. It then m",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6704,
+  "branch": "physics-loop/toe-lphys-block-twomeet-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

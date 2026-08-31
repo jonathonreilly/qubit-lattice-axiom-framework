@@ -1,0 +1,19 @@
+{
+ "id": "pr-5939",
+ "title": "[physics-loop][review-loop] toe-time blockG7 (STACKED on #5937) \u2014 Cycle 882: bounded theorem (the readout half: seven exact theorems, the cl",
+ "science": "The readout half attacked: seven exact theorems including T6 (2-adic obstruction: orbit multiplicity cannot reach 2/9) and T7 the closed-library wall (every multiplicatively closed anchor library contains 1, so no closed algebraic structure selects the target; 200 libraries, zero select), family declared blocked-equivalent, SL1 named as the weaker door. Direction-setting at its date, and every pie",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5939,
+  "branch": "physics-loop/toe-time-blockG7-20260802"
+ },
+ "carried_by": "PR #5966 (coverage map completes the wall), PR #5958 (T7 corrected), PR #5941 (T6 defeated), PR #5956 (pin flag resolved)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

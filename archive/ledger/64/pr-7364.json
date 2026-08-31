@@ -1,0 +1,19 @@
+{
+ "id": "pr-7364",
+ "title": "feat(nm2oreadz): neighbor-read of O at t+1 on two-axis opposite z-probes: reverse fails, face fails",
+ "science": "Two-axis opposite seed, z-probes, neighbor-read of O: hold only at A, fail at B,C,D - the exact complement of the M-read pattern in #7363 at every probe. The single A HOLD comes from the partner seed sharing O={+e_1,-e_1,+e_3}.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7364,
+  "branch": "physics-loop/toe-lphys-block-nm2oreadz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

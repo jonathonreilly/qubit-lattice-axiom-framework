@@ -1,0 +1,19 @@
+{
+ "id": "pr-7572",
+ "title": "feat(nm2yzrdfz): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "3F seed, yz x=0/x=1 squares, neighbor-read. Reverse fails from split fail at A ((0,0,\u22121) seeded +e_3 leaves O(A)={\u2212e_2}); face fails from 2-in mixed M={\u00b1e_3} at C,C1. Note records that the +e_3 translate of the reverse square DOES hold, so the neighbor conjunct is not what kills it.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7572,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrdfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

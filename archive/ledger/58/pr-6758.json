@@ -1,0 +1,19 @@
+{
+ "id": "pr-6758",
+ "title": "feat(011facek): (0,1,1) face reverse vs k is yes yes yes yes no yes",
+ "science": "Displayed (0,1,1) face-reversal-vs-k table on B12 (fails only at k=5), explicitly not adopted; exploratory clause-comparison companion to 6747/6751.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6758,
+  "branch": "physics-loop/toe-lphys-block-011facek-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

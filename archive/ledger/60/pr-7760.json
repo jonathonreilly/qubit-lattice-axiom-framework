@@ -1,0 +1,19 @@
+{
+ "id": "pr-7760",
+ "title": "Block 218: covariant Record carrier and mixed-slab boundary",
+ "science": "Record-lane Block 218 builds the seven-qubit carrier and 31-context writer as carrier progress that is explicitly not a formation law, a mid-lane pack already continued by Block 219 with all scores unchanged. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7760,
+  "branch": "physics-loop/toe-axiom-closure-block218-same-law-seed-instrument-20260827"
+ },
+ "carried_by": "#7803 (open metric-dynamics terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7043",
+ "title": "feat(gram4): Minkowski Gram signature is (1,2,0)",
+ "science": "Minkowski Gram signature computation for perpnn displacements, displayed-not-adopted one-off exploratory observation.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7043,
+  "branch": "physics-loop/toe-lphys-block-gram4-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

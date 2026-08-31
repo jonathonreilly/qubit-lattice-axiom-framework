@@ -1,0 +1,19 @@
+{
+ "id": "pr-6803",
+ "title": "feat(fallk1): all-face-slide keeps k=1 reverse: t=3 vs t=5",
+ "science": "Introduces the all-face-slide rule phi = nu + cost 3 on EVERY 2->2 hop (strictly stronger than mu). At k=1 on B_6: t=3 vs 5, 27>25, reverse holds. The note is honest that the k=1 geodesic uses no 2->2 hop at all, so phi and nu coincide here -- the clause is untested at this scale.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=1, 27 > 25) face=n/a",
+ "source": {
+  "pr": 6803,
+  "branch": "physics-loop/toe-lphys-block-fallk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7127",
+ "title": "feat(nstrizn): three-site z-probe formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Three-site z-probes, strictly-earlier kernel, mu*=e_1 with n(C)_1=-1/3 vs n(D)_1=0. Paired with #7129 (same-tick) it forms one of the five matched timing-convention pairs in the band.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7127,
+  "branch": "physics-loop/toe-lphys-block-nstrizn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

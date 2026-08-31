@@ -1,0 +1,19 @@
+{
+ "id": "pr-7735",
+ "title": "physics: prove the split generality theorem over the (m,c) space (block 194)",
+ "science": "Block 194 is the terminal split generality theorem over the (m,c) space with a 192-point census, a two-route-verified positivity predicate, and honestly stated citation boundaries, meeting the publishable-science bar.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7735,
+  "branch": "physics-loop/toe-axiom-closure-block194-transfer-package-mc-generality-20260825"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

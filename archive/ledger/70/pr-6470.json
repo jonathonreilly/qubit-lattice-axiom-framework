@@ -1,0 +1,19 @@
+{
+ "id": "pr-6470",
+ "title": "feat(c6l1geo): six-site f_L1 misses form one rotation orbit",
+ "science": "Orbit count of f_L1 6-site misses (one orbit), displayed-not-adopted geometric bookkeeping continuing #6463.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6470,
+  "branch": "physics-loop/toe-lphys-block-c6l1geo-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

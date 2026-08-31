@@ -1,0 +1,19 @@
+{
+ "id": "pr-7033",
+ "title": "feat(recperp): perpnn-tick axis is time; recint axis is null",
+ "science": "Causal-class comparison on the recorded set R={(0,0,0),(1,0,0),(1,1,0),(1,1,1)}: with the perpnn ticks (0,3,2,3) and Q=|x|_2^2, s^2=t^2-Q is (0,8,2,6), so the origin is null and axis, face and body are all TIMELIKE. The separately displayed recint clock classes the axis as NULL and the body as time. Two candidate clocks on the same four recorded events therefore give different causal classificatio",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=absent (reports s^2=(0,8,2,6): axis time",
+ "source": {
+  "pr": 7033,
+  "branch": "physics-loop/toe-lphys-block-recperp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7722",
+ "title": "feat(nm2frm2plxf): L-path cyclic-frame transport +e1 then -e3 at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "Terminal of the whole 1,019-PR family. Bare L-path +e1 then -e3 on the three-axis far-face seed -- the sixth and last cell of the opposite-order factorial, mechanically identical to #7721 with the first hop's sign flipped. It carries NO terminal content: no roll-up, no synthesis, no closing claim, zero citations in or out, and its own runner cache shows all 46 recorded edge failures in the band ar",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7722,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2plxf-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

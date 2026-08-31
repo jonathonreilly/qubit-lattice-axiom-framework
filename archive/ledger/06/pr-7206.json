@@ -1,0 +1,19 @@
+{
+ "id": "pr-7206",
+ "title": "feat(nsplqcl): own-letter Cl(3,0) plaquette product on #7188: reverse UNDEFINED, face UNDEFINED",
+ "science": "ESCALATE -- the band's most consequential defect. Cl(3,0) product of own incoming lock letters around the face 4-cycle Q and the reverse 4-cycle R on #7188's process; corners (1,0,0) and (1,0,1) have mixed earliest steps so both products are UNDEFINED. The note is honest about its own cycles, but the conclusion the four plaquette PRs jointly suggest is false: I enumerated the SAME process and foun",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7206,
+  "branch": "physics-loop/toe-lphys-block-nsplqcl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

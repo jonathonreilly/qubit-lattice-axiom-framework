@@ -1,0 +1,19 @@
+{
+ "id": "pr-7438",
+ "title": "feat(nm2orilefy): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis opposite y-probes: reverse fails, face fails",
+ "science": "opposite y-probes, signed-leftover det orientation. Orient is defined only at B: A, C, D all fail the |O_leftover|=1 requirement, so this letter is near-vacuous on the y-probes.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7438,
+  "branch": "physics-loop/toe-lphys-block-nm2orilefy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

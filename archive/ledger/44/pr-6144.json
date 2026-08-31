@@ -1,0 +1,19 @@
+{
+ "id": "pr-6144",
+ "title": "science: positive two-TT transfer and Record continuity boundary",
+ "science": "Block 51: constructs the local constrained symmetric-tensor family with exactly two TT modes, positive one-step Gaussian/OS transfer, and positive-energy symplectic Lorentzian update; exhibits the exact r=0/r=1 transfer fork (identical statics, inequivalent finite-lattice energies, axioms select neither); and proves an isolated Record Ricci-charge increment violates continuity while a balanced nea",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6144,
+  "branch": "physics-loop/toe-axiom-closure-block51-canonical-joint-law-20260811"
+ },
+ "carried_by": "#6145 proves the causal tradeoff on exactly this quadratic family; #6146 builds the depth-two macro update on it; the fork underdetermination folds into the #6138 five-control cut; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

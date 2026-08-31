@@ -1,0 +1,19 @@
+{
+ "id": "pr-7472",
+ "title": "feat(nm2ocycrdx): neighbor-read of cyclic lex-largest Orient at t+1 on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "opposite x-probes, neighbour-read of the cyclic lex-largest orientation. Fails at all four probes. Its runner is the band's most heavily gated (67 checks) and still reports a total null.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7472,
+  "branch": "physics-loop/toe-lphys-block-nm2ocycrdx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

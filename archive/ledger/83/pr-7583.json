@@ -1,0 +1,19 @@
+{
+ "id": "pr-7583",
+ "title": "feat(nm2sfz3zt2): neighbor-read of lex-smallest cyclic-frame holonomy freeze t+1 vs t+2 on three-axis opposite near-face seed: reverse HOLD,",
+ "science": "3N, xy z=1/z=2, LEX-SMALLEST, both cuts + composition. The exact convention twin of 7578. Its note justifies distinctness by 'F and P differ' \u2014 a gauge-only difference that provably cannot move any reported bit.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail composition=hold",
+ "source": {
+  "pr": 7583,
+  "branch": "physics-loop/toe-lphys-block-nm2sfz3zt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6569",
+ "title": "feat(q66c5): cov5 of Q66 is 752 versus 792",
+ "science": "reverse=N/A face=N/A (cover census; cov5(f0)=752, cov5(f1)=792, diff 40, control cov5(f_L1)=792)",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (cover census; cov5(f0)=752, cov5(f1)=7",
+ "source": {
+  "pr": 6569,
+  "branch": "physics-loop/toe-lphys-block-q66c5-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

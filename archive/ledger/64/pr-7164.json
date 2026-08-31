@@ -1,0 +1,19 @@
+{
+ "id": "pr-7164",
+ "title": "feat(nsuoy): nsopp y-probe later-tick S_* union own lock: reverse HOLD, face HOLD",
+ "science": "Later-tick lock set union own lock on nsopp y-probes: the union genuinely enlarges S_*(A) by the seed letter -e1 (which no six-neighbour of A carries by T=3), giving a full six-letter set. The verdict pair is unchanged from the union-free readout, so the enlargement is demonstrably verdict-irrelevant at this rung of the window chain.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7164,
+  "branch": "physics-loop/toe-lphys-block-nsuoy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6571",
+ "title": "feat(c9sel): cov9>0 is not Q_star, Q4, Q6, or Q8",
+ "science": "Exploratory cov9 positive-selector non-equivalence search, displayed-not-adopted 20260815 block with no decisive TOE-core artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6571,
+  "branch": "physics-loop/toe-lphys-block-c9sel-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

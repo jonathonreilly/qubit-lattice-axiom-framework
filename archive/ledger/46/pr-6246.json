@@ -1,0 +1,19 @@
+{
+ "id": "pr-6246",
+ "title": "[physics-loop] toe-lphys c1lockperm: bounded_theorem / bounded-support",
+ "science": "Toy split of legal stay vs illegal relock visible only in J/bag under the unadopted C1 hypothesis; exploratory pack member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6246,
+  "branch": "physics-loop/toe-lphys-block-c1lockperm-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

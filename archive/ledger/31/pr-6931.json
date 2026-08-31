@@ -1,0 +1,19 @@
+{
+ "id": "pr-6931",
+ "title": "feat(dfface): deep-out-face face reverse holds k=1..5,7,8 fails k=6",
+ "science": "Deep-out-face face-reverse k-scan display matching omega pattern, displayed-not-adopted exploratory pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6931,
+  "branch": "physics-loop/toe-lphys-block-dfface-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

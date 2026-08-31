@@ -1,0 +1,19 @@
+{
+ "id": "pr-6395",
+ "title": "feat(hamdyn): Hamming-parity formation halts at T=4 with 9 locks",
+ "science": "Single-member dynamics halt census, not a probe cell: Hamming parity f_H=|c|_1 mod 2 on the twelve-vertex two-cube from the 1-site seed halts at T=4 with |locks|=9 and does NOT fill, the three survivors being (0,1,1),(1,1,1),(2,1,1) (all even-weight tuples). Carries one genuinely discriminating observation: f_H and f_L1 have the SAME first wave (the three axis sites, weight-1 tuples being both odd",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6395,
+  "branch": "physics-loop/toe-lphys-block-hamdyn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

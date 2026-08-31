@@ -1,0 +1,19 @@
+{
+ "id": "pr-6508",
+ "title": "feat(c4shareex): whether f00 and f10 share the same 7 four-site fills",
+ "science": "reverse=none face=none (f_cut fill-set share census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut fill-set share census; no (rev",
+ "source": {
+  "pr": 6508,
+  "branch": "physics-loop/toe-lphys-block-c4shareex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

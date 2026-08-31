@@ -1,0 +1,19 @@
+{
+ "id": "pr-6455",
+ "title": "physics: reduce the seam involution and force global dressing support",
+ "science": "Block 108 seam-involution reduction plus a certificated no-go (seam-local dressing classes exactly empty, rank 60<61 dual certificates, N1-N8 packet, 21/21 mutations, cross-model checked) forcing globally supported dressings on the OS-closure Hermiticity chain. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6455,
+  "branch": "physics-loop/toe-axiom-closure-block108-involution-seam-dressing-20260815"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6954",
+ "title": "feat(c2d3k14): cost-2 max\u22653 out-face same-k restores k=14: t=30 vs t=46",
+ "science": "c2d3 same-k at k=14: (30,46), reverse holds. Value identical to d3, d4, c2df, c2d4, omega, df, w2 and psi. Its own note lists the coincidence with the d3, df and omega pairs. Carried by #6945.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (2700>2116; band bit) face=absent",
+ "source": {
+  "pr": 6954,
+  "branch": "physics-loop/toe-lphys-block-c2d3k14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

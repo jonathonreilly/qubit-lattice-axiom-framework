@@ -1,0 +1,19 @@
+{
+ "id": "pr-6729",
+ "title": "feat(nufilt): leftover-frame fire edge has nu-cost 1",
+ "science": "Displayed measurement that the leftover-frame fire edge has nu-cost 1 so a cost-1 filter passes it, explicitly not adopted; exploratory follow-on to 6726 with no decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6729,
+  "branch": "physics-loop/toe-lphys-block-nufilt-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

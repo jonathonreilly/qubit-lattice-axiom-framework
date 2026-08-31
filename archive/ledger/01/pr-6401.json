@@ -1,0 +1,19 @@
+{
+ "id": "pr-6401",
+ "title": "feat(fill2site): 64 maps fill from a 2-site face-diagonal seed",
+ "science": "Census plus an exact STRUCTURE theorem, not a probe cell. From the face-diagonal 2-site seed {(0,0,0),(1,1,0)}, N_fill_2=64 of the 512 vanish-on-empty cube-covariant maps fill - and the filler set is characterized exactly, not just counted: a map fills iff f=0 on empty and f=1 on the three orbits (1,0,2), (2,0,1), (3,0,0) (the axis-types with no doubly occupied axis), leaving the other six orbit b",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6401,
+  "branch": "physics-loop/toe-lphys-block-fill2site-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

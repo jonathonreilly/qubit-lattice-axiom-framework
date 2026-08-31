@@ -1,0 +1,19 @@
+{
+ "id": "pr-7651",
+ "title": "feat(nm2frm2sp3): directed 2-step cyclic-frame transport along +e3 at t+1 on three-axis opposite near-face seed: reverse fails, face fails",
+ "science": "Near-face +e3 2-step, global tau. Verified probe-inert seed. DEFECT: under the note's own per-site cut tau=t(q)+1 the reverse pair HOLDs; the reported fail/fail is the global-tau reading. No check label unique to this PR.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7651,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2sp3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

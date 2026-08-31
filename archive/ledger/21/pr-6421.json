@@ -1,0 +1,19 @@
+{
+ "id": "pr-6421",
+ "title": "feat(cutmin2site): f_cutmin does not fill from the 2-site face-diagonal",
+ "science": "f_cutmin (the support-36 F_cut sparsest, tuple (1,0,1,0,0)) does NOT fill from the face-diagonal 2-site seed: halts at 11 with history (2,7,9,10,11) T=4, stuck forever on the single site (0,1,1). The mechanism is the load-bearing part and it is a CAVEAT on this whole carrier: (0,1,1) keeps the word (1,0,0,1,0,1) - three on-patch locked neighbours plus three OFF-PATCH unread slots - which is perman",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6421,
+  "branch": "physics-loop/toe-lphys-block-cutmin2site-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

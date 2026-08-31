@@ -1,0 +1,19 @@
+{
+ "id": "pr-6773",
+ "title": "feat(bodyk16): on B16, nu body reverse is yes yes no no no",
+ "science": "Body-diagonal counterpart to #6769's face sweep: nu body reverse vs k on B_16(0) for k=1..5 comes out yes, yes, no, no, no (432>400; 1200>1024; 1728<1936; 2352<3136; 3072<4624), with arrivals t(k,k,k)=5,8,11,14,17 and witnessing walks. Together with #6769 this pins the whole picture: the nu anisotropy reversal survives only at small k (body k<=2, face k<=3) and fails monotonically beyond, so it is",
+ "forcing": false,
+ "verdict_pair": "body reverse by k: YES k=1,2; NO k=3,4,5",
+ "source": {
+  "pr": 6773,
+  "branch": "physics-loop/toe-lphys-block-bodyk16-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

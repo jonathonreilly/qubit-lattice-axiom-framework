@@ -1,0 +1,19 @@
+{
+ "id": "pr-6327",
+ "title": "feat(l1comp): two-tick composition of displayed L1",
+ "science": "Bounded_theorem note, no probe cell. Introduces L1 -- the INTEGRATED member (occupancy kernel + formation-count clock F + rho/phi tree gauge in one step function) -- and proves it composes over two ticks: permanence (tick-1 locks are a subset after tick 2), clock ADDITIVITY F_2 = F_1 + |new_2| = 3+4 = 7, empty configuration a fixed point, and the tree-gauge identities phi(F*)=rho(A), phi(F_B)=rho(",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "source": {
+  "pr": 6327,
+  "branch": "physics-loop/toe-lphys-block-l1comp-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

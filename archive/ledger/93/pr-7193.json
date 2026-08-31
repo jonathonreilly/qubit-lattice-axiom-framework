@@ -1,0 +1,19 @@
+{
+ "id": "pr-7193",
+ "title": "feat(nsze2inc): z-axis opposite \u00b1e_2 same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "z-axis opposite +/-e_2 seed {0:+e2},{e3:-e2}, y-probes. EXACT DUPLICATE of #7199: recomputed, identical ticks and identical S^+ at A,B,C,D; the sign-flipped seed (0,0,1) is not a 6-neighbour of any y-probe so it cannot reach a verdict.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7193,
+  "branch": "physics-loop/toe-lphys-block-nsze2inc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

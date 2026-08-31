@@ -1,0 +1,19 @@
+{
+ "id": "pr-6468",
+ "title": "feat(f0c4why): f0 four-site miss first refuses mixed3 not opp2",
+ "science": "First-refusal axis for f0 4-site miss (mixed3 not opp2), displayed-not-adopted mechanism follow-up in the same pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6468,
+  "branch": "physics-loop/toe-lphys-block-f0c4why-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

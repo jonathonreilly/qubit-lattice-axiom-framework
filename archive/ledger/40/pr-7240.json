@@ -1,0 +1,19 @@
+{
+ "id": "pr-7240",
+ "title": "feat(nmxe3sz): own incoming set on #7200: reverse fails, face fails",
+ "science": "M-readout on #7200's z-probes: A formed with M(A)={+e1,+e2,-e2}, M(B)={+e3}; both bits fail while S^+ holds both. Also records reverse_uses_singleton_M(A)=False, making the seed/non-seed dichotomy explicit in the cache.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7240,
+  "branch": "physics-loop/toe-lphys-block-nmxe3sz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

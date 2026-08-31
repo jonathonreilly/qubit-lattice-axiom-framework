@@ -1,0 +1,19 @@
+{
+ "id": "pr-7692",
+ "title": "feat(nm2frm2lpf): L-path cyclic-frame transport -e3 then +e1 at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "Bare L-path (-e3,+e1) on the far-face seed; fourth and last of the far-face block, all sharing the one cause. On this seed the +e1 turn destination (1,0,-1) is split-good (tick 1, single incoming), unlike the near-face seed - so the far-face pair does not reproduce the near-face +e1 collision.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7692,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lpf-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6710",
+ "title": "feat(axis3): axis-skeleton cost does not reverse; t(4,0,0)=t(2,2,2)=8",
+ "science": "Axis-skeleton cost fails to reverse on B6 (displayed, not adopted), negative scout result in the exploratory cost series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6710,
+  "branch": "physics-loop/toe-lphys-block-axis3-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

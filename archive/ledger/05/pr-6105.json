@@ -1,0 +1,19 @@
+{
+ "id": "pr-6105",
+ "title": "Block 32: expose interacting Record gluing and phase-response boundary",
+ "science": "Block 32: proves probability projectivity is not deletion-stable without a boundary message (nonproduct opposite-site cross-ratios on the four-site cycle), separates geometry sectors at TV 0.1247 while whole-sector multipliers change phase odds 1->7 without changing conditionals, and concludes locality+covariance+projectivity+compilation+solvability do not select the Record score, boundary fixed p",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6105,
+  "branch": "physics-loop/toe-axiom-closure-block32-interacting-record-gluing-20260810"
+ },
+ "carried_by": "#6107 closes the boundary-message question with the Perron fixed point; the non-selection finding matures at #6138 (block 46 joint-law cut) and #6150 (block 57 axiom extent); ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6876",
+ "title": "feat(llk7): late-leave same-k holds at k=7: t=19 vs t=25",
+ "science": "lambda2 on B_21: 19 vs 25, same pair as rho3 and kappa. The clause is live on (2,0,0)->(2,1,0) but no cheapest axis or body witness uses a late-leave hop; t(21,0,0)=37, t(18,0,0)=30.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6876,
+  "branch": "physics-loop/toe-lphys-block-llk7-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

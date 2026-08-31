@@ -1,0 +1,19 @@
+{
+ "id": "pr-6742",
+ "title": "feat(011meet): (0,1,1) two-seed meet (1,0,0) at t=1; worse var than l1",
+ "science": "Cross-configuration NEGATIVE: the single-seed 'rounder than l1' advantage flips on a two-seed geometry. On B_4(0) union B_4((2,0,0)) (195 sites) the (0,1,1) midplane variance is 0.011423 vs l1's 0.009950 -- l1 is strictly rounder there. Also the equal-arrival midplane is not a plane under (0,1,1): 33 sites vs 25 for l1, including off-plane sites (0,+-2,0),(0,0,+-2),(2,+-2,0),(2,0,+-2). First meeti",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=absent (reports meet site/time, |M|=1, m",
+ "source": {
+  "pr": 6742,
+  "branch": "physics-loop/toe-lphys-block-011meet-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

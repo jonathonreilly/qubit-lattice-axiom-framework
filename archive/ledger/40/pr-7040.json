@@ -1,0 +1,19 @@
+{
+ "id": "pr-7040",
+ "title": "feat(parnn): parallel-step reverse and face are undefined",
+ "science": "Parallel-step dual (allowed step must be PARALLEL to the parent lock) on taxicab B_3(0): the process fills only the seed axis {(n,0,0):|n|<=3} with t=|n|; B and D never form, so reverse and face are UNDEFINED, not false. Establishes that the perpendicular constraint is exactly what makes the lock process fill space at all - the parallel dual collapses to one dimension. Runner verifies undefined-vs",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7040,
+  "branch": "physics-loop/toe-lphys-block-parnn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

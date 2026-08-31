@@ -1,0 +1,19 @@
+{
+ "id": "pr-7062",
+ "title": "feat(nfplus): unique P_+ along n: reverse and face none",
+ "science": "Same configuration and same kernel as #7059 but the selector picks the single letter P_+ along n whenever n != 0, so there is exactly one combination and reverse=face=`none`. Demonstrates directly that switching from the two-letter to the one-letter selector flips the verdict pair from some/some to none/none with no change to the physical state.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none",
+ "source": {
+  "pr": 7062,
+  "branch": "physics-loop/toe-lphys-block-nfplus-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

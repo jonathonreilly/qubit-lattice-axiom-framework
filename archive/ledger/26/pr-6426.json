@@ -1,0 +1,19 @@
+{
+ "id": "pr-6426",
+ "title": "feat(cutminopp): run f_cutmin from the opposite-corner 2-site seed",
+ "science": "Carries a sharp methodological finding the series needs. From the opposite-corner seed S*={(0,0,0),(2,1,1)}, f_cutmin halts at 10 with history (2,8,10) - the SAME cardinality history as f_min - but the two stop on COMPLEMENTARY stuck pairs: f_cutmin is stuck on {(0,1,1),(2,0,0)} (permanently vertex3, three on-patch locks plus three off-patch unread slots), while f_min is stuck on {(1,0,1),(1,1,0)}",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6426,
+  "branch": "physics-loop/toe-lphys-block-cutminopp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

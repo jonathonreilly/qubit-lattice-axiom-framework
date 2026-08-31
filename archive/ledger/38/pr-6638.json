@@ -1,0 +1,19 @@
+{
+ "id": "pr-6638",
+ "title": "feat(pluschi): July-3 pair fires on mixed seed, not on M2 plus",
+ "science": "Closes the last escape of the chirality chain, not a probe cell: even when the six-occupied-neighbour 'plus' star is HANDED to the July-3 k=3 pair, the pair fires only for a genuinely three-letter fully-mixed labeling (N_new=1 at the lex-first representative (0,1,0,2,1,2); pair size 48 = two proper orbits of 24), while ALL 64 labelings drawn from M_2's two actual lock contents {+,-} give N_fire=0 ",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6638,
+  "branch": "physics-loop/toe-lphys-block-pluschi-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

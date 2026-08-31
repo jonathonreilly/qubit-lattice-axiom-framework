@@ -1,0 +1,19 @@
+{
+ "id": "pr-6464",
+ "title": "feat(cminmix3): cutmin mixed3 pair splits on the mix0/L1 seed",
+ "science": "Splitter seed for the cutmin mixed3 pair, displayed-not-adopted incremental scan fact repeating a known splitting seed.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6464,
+  "branch": "physics-loop/toe-lphys-block-cminmix3-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7665",
+ "title": "feat(nm2frm2lp): L-path cyclic-frame transport -e3 then +e1 at t+1 on two-axis opposite seed: reverse HOLD, face fails",
+ "science": "L-path (-e3 then +e1), the mirror of #7664, same verdict pair. Together the two L-paths bracket the -e3 hop with opposite turns and reach DIFFERENT endpoints ((-1,0,-1) vs (1,0,-1)), so the pair still does not test path-dependence. It could not have found any: I proved the transport is a coboundary, so two paths with common endpoints agree identically whenever all frames on both are defined.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7665,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

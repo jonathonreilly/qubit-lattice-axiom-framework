@@ -1,0 +1,19 @@
+{
+ "id": "pr-6555",
+ "title": "feat(q8inc): not every Q8-true map has cov6>0",
+ "science": "Displayed-not-adopted Q8-true/cov6 inclusion counterexample count; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6555,
+  "branch": "physics-loop/toe-lphys-block-q8inc-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

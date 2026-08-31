@@ -1,0 +1,19 @@
+{
+ "id": "pr-6562",
+ "title": "feat(c5sel): cov5>0 is not Q4, not Q6, and not a 1-bit or 2-bit OR",
+ "science": "Displayed-not-adopted cov5>0 selector non-equivalence search; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6562,
+  "branch": "physics-loop/toe-lphys-block-c5sel-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

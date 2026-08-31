@@ -1,0 +1,19 @@
+{
+ "id": "pr-6770",
+ "title": "feat(rho16): on B16, rho still fails reverse and stays much rounder than nu",
+ "science": "Host-size robustness repeat of #6765 on B_16(0) (6017 sites): the roundness/reversal decoupling holds -- var_rho=0.00096369 vs var_nu=0.00678027, rho seven times rounder yet still failing the diamond (1728 < 3136), and the exact axis identity t_rho = 3|v|_2 is restated (t_rho(16,0,0)=48). Also cross-checks that nu's doubled reverse already fails on this ball (2352 < 3136). No new mechanism beyond ",
+ "forcing": false,
+ "verdict_pair": "diamond reverse=NO under rho (1728<3136); nu doubled=NO (235",
+ "source": {
+  "pr": 6770,
+  "branch": "physics-loop/toe-lphys-block-rho16-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

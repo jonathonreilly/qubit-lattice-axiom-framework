@@ -1,0 +1,19 @@
+{
+ "id": "pr-6088",
+ "title": "[physics-loop] toe-axiom-closure block17 \u2014 bounded_theorem \u2014 bounded-support \u2014 compact homogeneous reaction rank",
+ "science": "Block 17: exact compact reaction-rank theorem r(S)=rank(P_ker(Q0)S) for source-family solvability, exact ranks 1/2/3 for the retained families, proof that pure homothety is not aligned with the declared generators (isolating the nonmetric flat-branch obligation), and 3/4/11-channel KKT completions.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6088,
+  "branch": "physics-loop/toe-axiom-closure-block17-reaction-20260810"
+ },
+ "carried_by": "#6089 executes the isolated nonmetric-branch obligation; #6090 closes the KKT system with native nonlinearity replacing the eleventh reaction; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

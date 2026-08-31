@@ -1,0 +1,19 @@
+{
+ "id": "pr-5975",
+ "title": "[physics-loop][review-loop] toe-time blockQ9 (STACKED on #5973) \u2014 Cycle 912: bounded theorem \u2014 the gap is one sentence: the A3 channel force",
+ "science": "Four decisive BL4 items: content-measurability passes only for the interface-excluded weighting (five-way convergence), the repo named closing channel runs for the first time (PARTIALLY-FORCED - missing premise exactly A3), the stranded envariance note is recovered as never-landed, and 909 negative is re-priced stronger (its 3 passes were all plants). Its one-sentence-gap finding is later proven a",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5975,
+  "branch": "physics-loop/toe-time-blockQ9-20260802"
+ },
+ "carried_by": "PR #5992 (one-sentence-wide classification theorem), envariance thread PR #6010/#6012",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

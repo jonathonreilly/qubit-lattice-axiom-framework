@@ -1,0 +1,19 @@
+{
+ "id": "pr-6640",
+ "title": "feat(twoball): two radius-2 balls can present 4 occupied NN",
+ "science": "TURNING POINT of the band - a positive that reopens what #6636/#6637/#6639 had closed, not a probe cell: an exhaustive 36-union census over U = B_r(0) union B_s(p), r,s in {0,1,2}, p in {(1,0,0),(1,1,0),(1,1,1),(2,0,0)}, finds EXACTLY ONE union - p=(2,0,0), r=s=2 - where an unread site sees 4 occupied six-neighbours, precisely the occupied-slot count #6639 proves every July-3 chiral-pair member ha",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff; the one '",
+ "source": {
+  "pr": 6640,
+  "branch": "physics-loop/toe-lphys-block-twoball-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

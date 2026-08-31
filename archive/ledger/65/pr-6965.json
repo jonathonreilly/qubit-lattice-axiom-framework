@@ -1,0 +1,19 @@
+{
+ "id": "pr-6965",
+ "title": "feat(w2dbl): cost-2 out-face doubled pairing holds k=1..4",
+ "science": "Third comparator of the band -- doubled pairing ((2k,0,0),(k,k,k)) with 3 t_axis^2 vs 4 t_body^2 -- under w2 on B_12(0): axis 6,12,18,24; body 5,10,13,16; reverse holds at every available k=1..4. These eight arrivals turn out to be identical under c2d3 (#6975) and c2d4 (#6983) as well, so the doubled comparator, like the same-k one, is blind to the source-max floor.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=1..4 (doubled-pairing bit; NOT a family ver",
+ "source": {
+  "pr": 6965,
+  "branch": "physics-loop/toe-lphys-block-w2dbl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

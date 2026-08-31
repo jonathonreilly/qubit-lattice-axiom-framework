@@ -1,0 +1,19 @@
+{
+ "id": "pr-7348",
+ "title": "[physics-loop][common-action][bounded_theorem][bounded-support] correct stationarity and stage-orientation gate",
+ "science": "Corrects the tournament gate (zero-matter saddle makes the vacuum mixed Hessian vanish by typing), forces the canonical DeWitt/Fierz-Pauli coefficient ray via 19 exact polynomial identities (only overall scale free), classifies all eight Nyquist strata (two positive TT directions off spatial-zero), and derives the unique (2,0) Block-78 cadence with the orientation-odd exchange candidate. Declared ",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7348,
+  "branch": "physics-loop/toe-axiom-closure-block187-common-action-tournament-20260824"
+ },
+ "carried_by": "#7349-#7356 side chain executes its reranked gates; Einstein-form evidence superseded by #7814; #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

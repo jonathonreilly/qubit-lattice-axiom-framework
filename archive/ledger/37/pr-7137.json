@@ -1,0 +1,19 @@
+{
+ "id": "pr-7137",
+ "title": "feat(nsexvar): nsopp formation-tick arrival-speed variance on B3",
+ "science": "Formation-tick arrival-speed variance count on B3 under nsopp, a displayed-not-adopted campaign statistic with no theorem or mainline role.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7137,
+  "branch": "physics-loop/toe-lphys-block-nsexvar-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

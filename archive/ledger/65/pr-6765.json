@@ -1,0 +1,19 @@
+{
+ "id": "pr-6765",
+ "title": "feat(rho12): rho still fails reverse on B12 and stays much rounder than nu",
+ "science": "One of the strongest results in this slice: a structural DECOUPLING of roundness from reversal. The equal-weight rule rho (cost 3 iff equal inward weight or seed-exit) has var(|v|_2/t)=0.000948 on B_12(0), seven times smaller than nu's 0.006661 -- far closer to Euclidean isotropy -- yet it FAILS the diamond reverse (1728 < 3136) and the doubled pair (6912 < 16384). Carries the exact identity t_rho",
+ "forcing": false,
+ "verdict_pair": "diamond reverse=NO under rho (1728<3136); doubled=NO (6912<1",
+ "source": {
+  "pr": 6765,
+  "branch": "physics-loop/toe-lphys-block-rho12-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

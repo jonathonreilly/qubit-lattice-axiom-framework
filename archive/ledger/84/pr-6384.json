@@ -1,0 +1,19 @@
+{
+ "id": "pr-6384",
+ "title": "feat(nonlin1): two-axis unbalanced formation member",
+ "science": "Bounded_theorem note, no probe cell. Upgrades #6381's COUNTING non-uniqueness to a DYNAMICAL one by exhibiting a concrete rival member. f_two(c)=1 iff u(c)>=2 (at least two unbalanced axes) is cube-covariant (u is a rotation invariant, checked on all 64 cells x 24 slot permutations), disagrees with L1's f_L1 (u>=1) on exactly the 24 one-unbalanced-axis cells, and is proved NOT LINEAR over GF(2) by",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "source": {
+  "pr": 6384,
+  "branch": "physics-loop/toe-lphys-block-nonlin1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

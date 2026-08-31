@@ -1,0 +1,19 @@
+{
+ "id": "pr-6077",
+ "title": "science(resource): separate Record readout from pair action",
+ "science": "Block 9: proves the binary content-only additive Record readout is one-body (unit cross-ratio) while the compatible A^N B^E action has edge cross-ratio B, so for B!=1 the action is not a calibration of the readout; unique Boolean site+edge decomposition fixes the pair coefficient -log B and an exact positive site/edge covariance response.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6077,
+  "branch": "physics-loop/toe-axiom-closure-block09-20260810"
+ },
+ "carried_by": "#6078 recasts the code-symmetric line v[E-3N] as the cut-area action; mature readout-vs-action seam is the bridge-seal chain #7011-#7204 + AXIOM_MEMO_20260822; commits in ancestry of live tip #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

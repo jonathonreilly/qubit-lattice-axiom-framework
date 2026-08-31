@@ -1,0 +1,19 @@
+{
+ "id": "pr-6556",
+ "title": "feat(extrafill): first fill of Q8 extra is opposite x-faces",
+ "science": "Displayed-not-adopted first-fill detail for the Q8 extra map; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6556,
+  "branch": "physics-loop/toe-lphys-block-extrafill-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

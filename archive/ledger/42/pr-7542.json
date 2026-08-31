@@ -1,0 +1,19 @@
+{
+ "id": "pr-7542",
+ "title": "feat(nm2sfzrdx): neighbor-read of cyclic lex-smallest frame transport at t+1 on three-axis far-face opposite x-probes: reverse fails, face f",
+ "science": "Lex-smallest twin of 7537; scalar neighbor-read HOLDs at A,B,D under this convention and fails under lex-largest, while the scored bits do not move.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7542,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzrdx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

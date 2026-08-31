@@ -1,0 +1,19 @@
+{
+ "id": "pr-6745",
+ "title": "feat(ratio12): same-k reverse holds for k=1..4 on B12",
+ "science": "Displayed same-k reversal check for k=1..4 on B12 extending 6737, explicitly not adopted; exploratory scaling measurement in the support-drop series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6745,
+  "branch": "physics-loop/toe-lphys-block-ratio12-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

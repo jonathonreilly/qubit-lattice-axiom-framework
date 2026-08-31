@@ -1,0 +1,19 @@
+{
+ "id": "pr-6589",
+ "title": "feat(c5q10): cov5>0 is not Q10; positivity implies Q10",
+ "science": "Positive containment stated as a result, not just a failed iff: fn=0 with N_pos=N_both=21, and the note says explicitly 'every map with cov5>0 has Q10 true' - i.e. cov5>0 implies (adj2 OR vertex3 OR mixed3) on all 32 maps, with the 7 Q10-true/cov5=0 maps as the only gap.",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; cov5_iff_Q10=False, N_p",
+ "source": {
+  "pr": 6589,
+  "branch": "physics-loop/toe-lphys-block-c5q10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

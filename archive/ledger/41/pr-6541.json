@@ -1,0 +1,19 @@
+{
+ "id": "pr-6541",
+ "title": "physics: factorize the positivity frontier and refute the parity obstruction",
+ "science": "Block 111: exact circulant momentum factorization (48+96+48 additive; blockwise involution/Gram decoupling), the direct-sum correction circulant(128) + x-parity(4) with C^2 independence, and refutation of the determinant/parity obstruction via the displayed k=0 witness flipping all eight assemblies to even positive indices (best (14,2,0)).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6541,
+  "branch": "physics-loop/toe-axiom-closure-block111-momentum-factorized-positivity-frontier-20260815"
+ },
+ "carried_by": "PR #6547 (Block 112) refutes the surviving germ-local paired-parity reading; PR #6584 (Block 114) positive witness subsumes all no-obstruction content",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

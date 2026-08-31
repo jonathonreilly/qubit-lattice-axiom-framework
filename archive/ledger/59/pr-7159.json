@@ -1,0 +1,19 @@
+{
+ "id": "pr-7159",
+ "title": "feat(nssamein): nssame y-probe own-lock-in exist-opposite: reverse fails, face fails",
+ "science": "Cleanest seed-letter negative in the band. On the nssame seed (both seed locks +e1) own-lock-in gives S^+(A)={+e1} against S^+(B)={+e1,+e3}: the own-own channel fails on same-letter and the note states the rule outright - 'opposite seed letters are not supplied here; reverse fails'. Read against #7150 (opposite seed letters, reverse holds) this is the controlled pair that isolates seed-letter oppo",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7159,
+  "branch": "physics-loop/toe-lphys-block-nssamein-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

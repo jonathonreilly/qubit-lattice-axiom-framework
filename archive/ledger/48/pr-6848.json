@@ -1,0 +1,19 @@
+{
+ "id": "pr-6848",
+ "title": "physics: complete the two-block observable algebra",
+ "science": "Completes the N=4 observable picture: the six-dimensional two-block symmetric algebra with two-dimensional center, the per-sector-real pairs gauge Gram with law (a_2/a_0)^2 and unit value only in a quadratic field extension, cross-pair blocks excluded by the even-odd rate split.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6848,
+  "branch": "physics-loop/toe-axiom-closure-block132-two-block-observable-algebra-20260817"
+ },
+ "carried_by": "#6854 (block 138 states the Jordan-disciplined Sym_2(R)^m algebra for general even N with the N=4 premises among its verified instances), #6856 (family-wide collapse), #6862 (m=2 column cross-checked ",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

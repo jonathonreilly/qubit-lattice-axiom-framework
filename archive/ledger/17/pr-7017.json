@@ -1,0 +1,19 @@
+{
+ "id": "pr-7017",
+ "title": "feat(cnttab): occupancy first-wave 6-mask is all-six; seed-content mask is +e1 only",
+ "science": "Register shift: synchronous FORMATION-TICK, not Dijkstra. On the origin-plus-six-NN star the axioms' own L1 occupancy rule (n=d/3, fire iff n!=0) forms all six neighbours at tick 1, mask (1,1,1,1,1,1); a named seed-content NN rule forms only +e1, mask (1,0,0,0,0,0). On B_3(0) the occupancy formation-tick gives t(1,0,0)=1, t(1,1,1)=3, t(2,0,0)=2, t(1,1,0)=2, so BOTH reverse and face bits are FALSE;",
+ "forcing": false,
+ "verdict_pair": "reverse=occupancy FALSE / content UNDEFINED; face=occupancy ",
+ "source": {
+  "pr": 7017,
+  "branch": "physics-loop/toe-lphys-block-cnttab-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

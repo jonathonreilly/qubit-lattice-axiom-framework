@@ -1,0 +1,19 @@
+{
+ "id": "pr-7271",
+ "title": "feat(nmperp): forall-orthogonal M vs O at t+1 on #7167: reverse HOLD, face HOLD",
+ "science": "Forall-orthogonal M vs O on the #7208 y-probes. Its N7 steelman states the correct reduction outright -- 'disjoint axis-aligned M and O already force m\u00b7o=0' -- and the Answer does not rebut it, only reasserts that forall-perp is 'the universal integer-dot report'.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7271,
+  "branch": "physics-loop/toe-lphys-block-nmperp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

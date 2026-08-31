@@ -1,0 +1,19 @@
+{
+ "id": "pr-7293",
+ "title": "feat(nm12opp): 1-in 2-out split on #7167: reverse HOLD, face fails",
+ "science": "1-in 2-out split on the #7208 y-probes; adds the two_in_one_out companion predicate and shows it is hold exactly at D where split fails, so the pair (split, two-in-one-out) is a complete 1-bit classification of the cover-holding probes.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7293,
+  "branch": "physics-loop/toe-lphys-block-nm12opp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

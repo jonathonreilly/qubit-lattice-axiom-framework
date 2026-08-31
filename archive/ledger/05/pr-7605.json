@@ -1,0 +1,19 @@
+{
+ "id": "pr-7605",
+ "title": "feat(nm2holyz2n): neighbor-read of x=1 yz-plane cyclic-frame holonomy at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "Same x=1/x=2 shifted cell as 7604 with the (inert) neighbor-read conjunct; identical verdicts.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7605,
+  "branch": "physics-loop/toe-lphys-block-nm2holyz2n-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

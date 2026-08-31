@@ -1,0 +1,19 @@
+{
+ "id": "pr-7627",
+ "title": "feat(nm2frm1s3t): directed 1-step cyclic-frame transport along -e3 freeze t+1 vs t+2 on three-axis opposite near-face seed: reverse HOLD, fa",
+ "science": "Freeze (t+1 vs t+2) of the near-face #7625, composition HOLD. Carries #7623's stability machinery applied to a seed I verified is probe-inert relative to two-axis opposite; its bits are #7623's bits.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold composition=hold",
+ "source": {
+  "pr": 7627,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1s3t-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

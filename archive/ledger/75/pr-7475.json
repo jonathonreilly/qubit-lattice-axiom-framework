@@ -1,0 +1,19 @@
+{
+ "id": "pr-7475",
+ "title": "feat(nm2oricycl3z): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis opposite z-probes: reverse fails, face fails",
+ "science": "Cyclic frame F=(m,o_next,o_prev) with LEX-LARGEST tie-break on the 3-axis-opposite NEAR seed (3rd pair at (2,0,0)/(2,1,0)), z-probes: Orient -1,+1,+1,-1 -> fail/fail while cover and split both HOLD reverse and face. Recomputed independently: exact. Its cell is the one the near third pair perturbs (that pair's front reaches (1,0,0),(1,1,0) at tick 1 and strips -e_3 from O(B),O(D)); the same cell un",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7475,
+  "branch": "physics-loop/toe-lphys-block-nm2oricycl3z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

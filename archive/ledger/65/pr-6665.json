@@ -1,0 +1,19 @@
+{
+ "id": "pr-6665",
+ "title": "feat(staborb): occupancy stab kills all pair members on this star",
+ "science": "Occupancy-stabilizer kill of pair members on one star, exploratory displayed-not-adopted continuation of the same campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6665,
+  "branch": "physics-loop/toe-lphys-block-staborb-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

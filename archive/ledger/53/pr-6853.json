@@ -1,0 +1,19 @@
+{
+ "id": "pr-6853",
+ "title": "physics: record the twisted scouting verdict and heal the edges (block 137)",
+ "science": "The twisted scouting record: the full transition defect with its exact Bianchi identity (composition identity caught as vacuous), 134s Omega reinterpreted as the selector projection, dressed edges nilpotent and acyclic, but 24/64 curved triples, a rank-8 skew tail, and a vanishing companion correction -- so the displayed transition-dressing class does not open the curved OS pipeline (W1).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6853,
+  "branch": "physics-loop/toe-axiom-closure-block137-twisted-scouting-record-20260819"
+ },
+ "carried_by": "#6857 (block 141 restates W1s boundary with the corrected cover-time mechanism and the corrected 14/16 companion census, then heals in the broader coboundary class) and #6858 (block 142 improves the r",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

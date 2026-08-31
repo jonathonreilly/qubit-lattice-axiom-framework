@@ -1,0 +1,19 @@
+{
+ "id": "pr-6093",
+ "title": "Block 22: localize sourced Regge Ward defect",
+ "science": "Block 22: the momentum-dependent inherited flat-gauge quotient retires the Block-21 obstruction (9-/2+ at both witnesses), derives the flat six-mode O(k^2) kinetic matrix (5-/1+) and the three O(c) source mass matrices, the unique Frobenius-nearest Hermitian gauge-annihilating completion, and a finite-volume aliasing boundary.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6093,
+  "branch": "physics-loop/toe-axiom-closure-block22-sourced-ward-quotient-20260810"
+ },
+ "carried_by": "#6094 reconstructs these six-mode coefficients as its input; #6097 then proves the whole six-mode contact tensor is additive-zero gauge, mooting the matrix-matching program; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

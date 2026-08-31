@@ -1,0 +1,19 @@
+{
+ "id": "pr-7173",
+ "title": "feat(nsparinc): nspar x-probe same-tick union own-lock: reverse fails, face HOLD",
+ "science": "Same-tick union own lock on nspar x-probes: S^+(A) grows to {+e1,-e1} but reverse still fails because S^+(B)={+e2,+e3} contains neither; face holds. A second witness that reverse needs -L(A) present in S^+(B), not merely a mixed S^+(A).",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7173,
+  "branch": "physics-loop/toe-lphys-block-nsparinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

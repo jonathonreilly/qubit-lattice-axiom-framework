@@ -1,0 +1,19 @@
+{
+ "id": "pr-6880",
+ "title": "feat(oek14): one-unit-enter same-k fails at k=14: t=26 vs t=46",
+ "science": "omicron on B_42: 26 vs 46. Fourth clause family, identical wall.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=not-scored",
+ "source": {
+  "pr": 6880,
+  "branch": "physics-loop/toe-lphys-block-oek14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

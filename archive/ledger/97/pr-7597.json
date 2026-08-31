@@ -1,0 +1,19 @@
+{
+ "id": "pr-7597",
+ "title": "feat(nm2yzrdn2): distance-2 read of yz-plane cyclic-frame holonomy at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "2A yz squares, DISTANCE-2 read (translate by 2 lattice units). The band's only readout knob that actually discriminates: on the identical reverse square where 7574/7588/7591/7600 read HOLD under neighbor-read, distance-2 reads FAIL. Verified independently.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7597,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrdn2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

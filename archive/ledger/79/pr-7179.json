@@ -1,0 +1,19 @@
+{
+ "id": "pr-7179",
+ "title": "feat(nsyopinz): y-symmetric three-site z-probe same-tick union own-lock: reverse fails, face HOLD",
+ "science": "Same-tick union own lock on the y-symmetric three-site seed, z-probe frame; the note records the union is a no-op on all four z-probes. Face holds from same-tick mixed neighbours at C; reverse fails on {+e1,+e3} vs {+e1,+e3}.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7179,
+  "branch": "physics-loop/toe-lphys-block-nsyopinz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

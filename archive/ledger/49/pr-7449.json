@@ -1,0 +1,19 @@
+{
+ "id": "pr-7449",
+ "title": "feat(nm2orionesly): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis same-lock y-probes: reverse fails, face fails",
+ "science": "same-lock y-probes, lex-one det orientation. Orient=(-1,+1,-1,fail); reverse fails on a sign mismatch rather than on undefinedness, which is the sharper kind of fail in this band.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7449,
+  "branch": "physics-loop/toe-lphys-block-nm2orionesly-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

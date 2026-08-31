@@ -1,0 +1,19 @@
+{
+ "id": "pr-6423",
+ "title": "feat(split4list): list the four two-site seeds that split f_min from f_L1",
+ "science": "Displayed-not-adopted recomputation listing the four split seeds of 6422, a duplicate-style re-display in the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6423,
+  "branch": "physics-loop/toe-lphys-block-split4list-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

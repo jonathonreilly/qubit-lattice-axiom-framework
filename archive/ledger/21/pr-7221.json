@@ -1,0 +1,19 @@
+{
+ "id": "pr-7221",
+ "title": "feat(nsplqny): own-letter Cl(3,0) plaquette product on #7167: reverse UNDEFINED, face UNDEFINED",
+ "science": "Cl(3,0) own-letter plaquette product on #7167's process. Two of the four corners of both 4-cycles have non-unique earliest incoming locks, so U_Q and U_R are UNDEFINED and both bits are UNDEFINED. Same failure mode as #7206/#7222/#7223 on a different seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7221,
+  "branch": "physics-loop/toe-lphys-block-nsplqny-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6467",
+ "title": "feat(f0c3why): f0 three-site misses first refuse mixed3",
+ "science": "First-refusal axis (mixed3) for f0 3-site misses, displayed-not-adopted mechanism note continuing the scan series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6467,
+  "branch": "physics-loop/toe-lphys-block-f0c3why-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

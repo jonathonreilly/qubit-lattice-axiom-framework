@@ -1,0 +1,19 @@
+{
+ "id": "pr-7443",
+ "title": "feat(nm2orioneslz): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis same-lock z-probes: reverse fails, face HOLD",
+ "science": "same-lock z-probes, lex-one det orientation. Face holds (C=D=-1) while reverse fails because A's split is broken by the same-lock self-poisoning. Its runner also reports the opposite-seed z cell (reverse=fail face=hold, A=-1) as an in-script cross-variant.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7443,
+  "branch": "physics-loop/toe-lphys-block-nm2orioneslz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

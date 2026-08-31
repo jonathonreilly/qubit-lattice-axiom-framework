@@ -1,0 +1,19 @@
+{
+ "id": "pr-7621",
+ "title": "feat(nm2frm2sz): directed 2-step cyclic-frame transport along -e3 at t+1 on two-axis opposite seed: reverse fails, face HOLD",
+ "science": "Directed 2-step -e3, per-site tau \u2014 the band's one 2-step face HOLD. C=(0,0,1) and D=(0,1,1) chain down to z=-1 with frames at every vertex; A,B lose the second hop because (0,0,-2)/(0,1,-2) form at tick 4 and their splits fail. Reproduced exactly. Independently re-derived a second time inside #7656, which computes this same cell as its 'opposite-seed' control and reports the same fail/hold.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7621,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2sz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

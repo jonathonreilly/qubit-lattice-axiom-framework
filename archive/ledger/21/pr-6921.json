@@ -1,0 +1,19 @@
+{
+ "id": "pr-6921",
+ "title": "feat(w2var): cost-2 out-face is rounder than omega and kappa on B12",
+ "science": "w2 = rho3 with out-face priced 2. Q_w2 = 85218880495672687723/444377483129099520000, var_w2 = 0.003908817383278747 \u2014 the roundest rule in the entire band, ordering var_w2 < var_omega < var_kappa. CHECKER DEFECT: `mutation-w2-as-omega` performs no mutation (asserts only var_w2 < var_omega < var_kappa).",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6921,
+  "branch": "physics-loop/toe-lphys-block-w2var-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

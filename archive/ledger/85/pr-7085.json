@@ -1,0 +1,19 @@
+{
+ "id": "pr-7085",
+ "title": "feat(nscovec): y-probe same-tick neighbor-lock vector: reverse UNDEFINED, face fail",
+ "science": "Same-tick-INCLUSIVE lock vector on the y-probes: counting the same-tick seed partner turns L(A_y) from UNDEFINED (#7082) into +e_1, while L(B) stays UNDEFINED and L(C_y)=L(D_y)=+e_2, so reverse is still UNDEFINED but now `for a different reason` and face still fails. Isolates the simultaneity convention as an independent verdict-moving knob; the runner's `not-strictly-earlier-leftover` check pins ",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=fail",
+ "source": {
+  "pr": 7085,
+  "branch": "physics-loop/toe-lphys-block-nscovec-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

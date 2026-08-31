@@ -1,0 +1,19 @@
+{
+ "id": "pr-6932",
+ "title": "feat(dfvar): deep-out-face ties omega variance on B12",
+ "science": "Arrival-speed variance comparison across df/omega/kappa costs, displayed-not-adopted comparison numerics.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6932,
+  "branch": "physics-loop/toe-lphys-block-dfvar-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

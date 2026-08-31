@@ -1,0 +1,19 @@
+{
+ "id": "pr-7557",
+ "title": "feat(nm2frmallfz): universal neighbor-read of cyclic-frame transport at t+1 on three-axis far-face opposite z-probes: reverse fails, face fa",
+ "science": "Universal (forall-neighbour) neighbour-read instead of existential: universal HOLDs nowhere on the four z-probes while existential HOLDs everywhere. The one scored predicate in the band that is neither a tautology nor extensionally equal to split -- it measures that the split field is never uniform over a six-neighbour star.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7557,
+  "branch": "physics-loop/toe-lphys-block-nm2frmallfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

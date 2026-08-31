@@ -1,0 +1,19 @@
+{
+ "id": "pr-6964",
+ "title": "feat(w2k15): cost-2 out-face same-k holds at k=15: t=31 vs t=49",
+ "science": "w2 (no source-max floor, cost 2) same-k at k=15 on B_45(0): (31,49), 2883>2401. The same single Dijkstra reproduces t(14,0,0)=30, t(14,14,14)=46 and t(1,0,0)=3, t(1,1,1)=5. Values identical to c2d4's k=15 (#6978), confirming the no-floor and floor-4 rules agree on the same-k pair. Carried by #6978/#6981.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=15 (2883>2401; band bit) face=absent",
+ "source": {
+  "pr": 6964,
+  "branch": "physics-loop/toe-lphys-block-w2k15-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

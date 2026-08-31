@@ -1,0 +1,19 @@
+{
+ "id": "pr-7397",
+ "title": "feat(nm2splt2x): 1-in 2-out at t vs t+1 on two-axis opposite x-probes: reverse fails, face fails, composition fail",
+ "science": "Split t vs t+1 on opposite x-probes: fail/fail at both cuts, composition fail because split at B and C flips fail->HOLD when O fills. Records that |Axis(M)|=1 at every probe at both cuts, so split coincides with cover on this cell.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail (composition fail)",
+ "source": {
+  "pr": 7397,
+  "branch": "physics-loop/toe-lphys-block-nm2splt2x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

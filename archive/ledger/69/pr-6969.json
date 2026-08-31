@@ -1,0 +1,19 @@
+{
+ "id": "pr-6969",
+ "title": "feat(c2d4face): cost-2 max\u22654 out-face face reverse holds k=1..8",
+ "science": "Face table for c2d4 (floor 4, cost 2) on B_16(0): axis identical to c2d3's 6,12,18,24,26,28,31,37 but face 4,8,10,12,15,18,21,24, and reverse HOLDS at every k=1..8. The unique clean face table in the band, and the discriminator that selects c2d4 over c2d3/psi/s2 -- all of which fail somewhere. Load-bearing for the band's own choice of terminal candidate.",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=holds k=1..8, no failure (face bits, not",
+ "source": {
+  "pr": 6969,
+  "branch": "physics-loop/toe-lphys-block-c2d4face-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

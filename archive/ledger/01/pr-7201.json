@@ -1,0 +1,19 @@
+{
+ "id": "pr-7201",
+ "title": "feat(nsze3sam): z-axis same-lock +e_3 same-tick union own-lock: reverse fails, face HOLD",
+ "science": "FORCING NEGATIVE and the second reverse failure: same-lock seeds both on the joining axis ({0:+e3},{e3:+e3}), y-probes. Confirms the #7197 mechanism is sign-independent: it is the axis alignment of the seed pair, not the relative sign, that starves the probes of opposite letters. Together #7197/#7201 fix the exact obstruction to the reverse relation in this generation.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7201,
+  "branch": "physics-loop/toe-lphys-block-nsze3sam-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7261",
+ "title": "feat(nmot3zx): O freeze t+1 vs t+2 on #7213: reverse HOLD, face HOLD, composition HOLD",
+ "science": "O at t+1 vs t+2 on the #7213 x-probes; O(tau2)=O(tau1) and the runner asserts new-6NN-at-t+2 = () at every probe. This is the band's clearest statement of the O-freeze -- but the freeze is a theorem of the BFS scheduler, not of the lattice: I verified 0 sites out of 32,768 (16 seeds x r^2 in {9,25,49}) can emit later than t(q)+1, so composition=HOLD is forced before any physics enters.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold composition=HOLD",
+ "source": {
+  "pr": 7261,
+  "branch": "physics-loop/toe-lphys-block-nmot3zx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

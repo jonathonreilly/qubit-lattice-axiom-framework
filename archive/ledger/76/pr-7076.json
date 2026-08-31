@@ -1,0 +1,19 @@
+{
+ "id": "pr-7076",
+ "title": "feat(nsvecz): z-probe neighbor-lock vector: reverse UNDEFINED, face fail",
+ "science": "Lock-vector predicate on the z-probes: L=+e_1, UNDEFINED, +e_3, +e_2; L(C)+L(D)=(0,1,1) != 0 so face FAILS and reverse is UNDEFINED. Pairs with #7073 on the identical configuration, where the sign coarsening made every letter `+` and both verdicts `none`; the runner's `not-named-sign-leftover-all-plus` check pins the divergence.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=fail",
+ "source": {
+  "pr": 7076,
+  "branch": "physics-loop/toe-lphys-block-nsvecz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

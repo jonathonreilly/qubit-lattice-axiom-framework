@@ -1,0 +1,19 @@
+{
+ "id": "pr-7256",
+ "title": "feat(nmreadzx): neighbor-read of M on #7213: reverse UNDEFINED, face UNDEFINED",
+ "science": "R on the x-symmetric-3-site #7213 x-probes: R={},{-e_3},{},{}; UNDEFINED/UNDEFINED from three empty R's. Same readout and same empty->UNDEFINED artifact as #7251 in a rotated frame. Recomputed: exact.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7256,
+  "branch": "physics-loop/toe-lphys-block-nmreadzx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

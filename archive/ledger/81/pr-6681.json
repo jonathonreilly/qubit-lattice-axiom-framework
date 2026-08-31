@@ -1,0 +1,19 @@
+{
+ "id": "pr-6681",
+ "title": "feat(uneqaxis): occupancy names the full axis; one bit kills Stab",
+ "science": "Minimal-extra classification theorem, not a probe cell: the 15 weight-4 occupancy masks split exactly as N_perp=12 (two emptied slots perpendicular, so EXACTLY ONE axis has both ends occupied - occupancy NAMES that axis; |Stab|=2, N_pair_support=4 each) and N_axis=3 (a whole axis emptied, no unique full axis; |Stab|=8, N_pair_support=0). Full 15-row table naming the emptied slots and the full axis",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6681,
+  "branch": "physics-loop/toe-lphys-block-uneqaxis-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

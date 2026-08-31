@@ -1,0 +1,19 @@
+{
+ "id": "pr-7005",
+ "title": "feat(s2k18): c2d4-plus-soft-ridge same-k fails at k=18: t=32 vs t=57",
+ "science": "s2 at k=18 on B_54(0): (32,57), 3072 < 3249 -- reverse FAILS. Forcing negative: c2d4 still held at k=18, so cheapening the ridge moves the wall EARLIER, from 19 to 18. The one clause that changed the intercepts made the target worse.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO at k=18 (3072<3249; band bit) face=absent",
+ "source": {
+  "pr": 7005,
+  "branch": "physics-loop/toe-lphys-block-s2k18-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

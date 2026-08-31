@@ -1,0 +1,19 @@
+{
+ "id": "pr-7764",
+ "title": "physics: construct a metric-source polarized seam",
+ "science": "Constructs the metric-source polarized seam: a fully supplied common-chart metric/source extension of the exterior-character plaquette action with exact joint metric-source-connection Gram expansion, reciprocal metric/source/connection variations, strict seam support on the metric quotient, and exact falsifiers (endpoint average, negative coupling, raw-coframe injectivity, improper-sector overclai",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7764,
+  "branch": "physics-loop/toe-connection-dynamics-block220-metric-source-reciprocal-os-20260828"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

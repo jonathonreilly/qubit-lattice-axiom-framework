@@ -1,0 +1,19 @@
+{
+ "id": "pr-7506",
+ "title": "feat(nm2cycfrmfy): cyclic-frame transport of (m,o_next,o_prev) at t+1 on three-axis far-face opposite y-probes: reverse HOLD, face fails",
+ "science": "Transport on far-face 3-axis y-probes; second implementation family (integer_inverse). Orient reverse fails (+1 vs -1) while transport reverse HOLDs \u2014 same contradiction as #7502.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7506,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmfy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

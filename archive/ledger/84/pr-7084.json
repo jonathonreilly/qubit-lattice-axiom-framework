@@ -1,0 +1,19 @@
+{
+ "id": "pr-7084",
+ "title": "feat(nssumy): y-probe neighbor-lock sum: reverse UNDEFINED, face fail",
+ "science": "Lock-sum on the y-probes: S(A_y) empty -> UNDEFINED, L(B)=(1,0,1), L(C_y)=(0,5,0), L(D_y)=(0,1,0) -> reverse UNDEFINED, face FAIL with sum (0,6,0). The runner carries `x-probe-nfsum-is-fail-hold-not-this-display`, recording that the very same sum rule on the x-probes gave fail/hold: probe frame alone moves face from hold to fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=fail",
+ "source": {
+  "pr": 7084,
+  "branch": "physics-loop/toe-lphys-block-nssumy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7219",
+ "title": "feat(nsmssx): own incoming set on #7181: reverse fails, face fails",
+ "science": "M-readout on #7181's same-lock x-probes. M sets at A and D are identical to #7217's; only S^+(D) differs, and the M readout does not use S^+. Effectively a duplicate of #7217 for the reported quantities.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7219,
+  "branch": "physics-loop/toe-lphys-block-nsmssx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7318",
+ "title": "physics: block 175 \u2014 the pincer identity (both lanes compute the same object)",
+ "science": "Block 175 pincer identity: two-route exact proof that the Born-trace read of the record slice equals the lane marginal (zero defect) plus the exact marginal-vs-conditional split, a decisive chain artifact the later blocks stack on. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7318,
+  "branch": "physics-loop/toe-axiom-closure-block175-pincer-identity-cross-lane-20260822"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

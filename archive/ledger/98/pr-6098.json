@@ -1,0 +1,19 @@
+{
+ "id": "pr-6098",
+ "title": "science(gravity): anchor null-record action representative",
+ "science": "Block 26: proves the null-record anchor A_x(g)=-log[pi_x(g)/pi_null(g)] is the unique dimensionless matter/source action representative with A_null(g)=0, removing every common geometry-dependent shift and composing additively over independent families \u2014 the minimal exact conditional repair of the Block-25 wall.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6098,
+  "branch": "physics-loop/toe-axiom-closure-block26-null-record-anchor-20260810"
+ },
+ "carried_by": "#6100 restates and strengthens the uniqueness (total null-relative action fixed; only the geometry/matter split is gauge); ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

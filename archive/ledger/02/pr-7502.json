@@ -1,0 +1,19 @@
+{
+ "id": "pr-7502",
+ "title": "feat(nm2cycfrmy): cyclic-frame transport of (m,o_next,o_prev) at t+1 on two-axis opposite y-probes: reverse HOLD, face fails",
+ "science": "Transport on the two-axis-opposite y-probes: hold,hold,hold,fail. Notable contrast the runner prints: the underlying Orient reverse FAILS (+1 vs -1) while the vacuous transport reverse HOLDs \u2014 the clearest single line showing transport is insensitive to the frame it claims to transport.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7502,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6304",
+ "title": "science(toe): construct matched tensor shadow exchange",
+ "science": "Block 81: abstract six-direction twelve-state full-tensor exchange commuting with all ten symmetric null-stress components and 24 frames, cancelling all four source Ward defects on 13,056 modes with opposite matter/shadow shares, plus the positive-future-null collinearity boundary and a one-M2 share/direction codec; explicitly no Z3/M2/NN realization.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6304,
+  "branch": "physics-loop/toe-axiom-closure-block81-tensor-recoil-reservoir-20260814"
+ },
+ "carried_by": "PR #6360 (Block 95) derives reciprocal matter recoil from one Hermitian action on the actual carrier, superseding the abstract exchange",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

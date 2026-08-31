@@ -1,0 +1,19 @@
+{
+ "id": "pr-6949",
+ "title": "feat(c2dfk14): cost-2 deep-out-face same-k restores k=14: t=30 vs t=46",
+ "science": "c2df = rho3 + cost 2 on a 2->2 grow with source max >= 2; (30,46) at k=14. Beyond template: the note states outright that 'on every six-neighbour hop the cost c2df equals the cost w2' because the only grow hop w2 names and c2df skips is already mu-priced 3 -- a second proven exact function-equality between two separately displayed 'first display' rules.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (2700>2116 at k=14; band bit) face=absent",
+ "source": {
+  "pr": 6949,
+  "branch": "physics-loop/toe-lphys-block-c2dfk14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

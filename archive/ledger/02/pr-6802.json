@@ -1,0 +1,19 @@
+{
+ "id": "pr-6802",
+ "title": "feat(hugk14): corridor-slide same-k fails at k=14: t=24 vs t=44",
+ "science": "mu at k=14 on B_42: t=24 vs 44, 1728<1936, fail continues. Explicitly says the linear formulas 'already predict that same-k reverse dies at k=13' -- i.e. the note itself concedes that every mu point past k=13 is a redundant confirmation of a closed form already in hand.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (same-k k=14, 1728 < 1936) face=n/a",
+ "source": {
+  "pr": 6802,
+  "branch": "physics-loop/toe-lphys-block-hugk14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

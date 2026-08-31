@@ -1,0 +1,19 @@
+{
+ "id": "pr-7402",
+ "title": "feat(nm2ot4sly): O freeze t+2 vs t+3 on two-axis same-lock y-probes: reverse HOLD, face HOLD, composition HOLD",
+ "science": "O-freeze t+2 vs t+3 on same-lock y-probes. One of only two members that actually PROVE the freeze rather than instantiate it under a vacuous 'no new neighbour': new 6-NN do form (A gains (1,1,0),(-1,1,0) at t+2; B gains (2,1,1) at t+3) and are shown not to enter O because their earliest incoming step is not the step from the probe.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7402,
+  "branch": "physics-loop/toe-lphys-block-nm2ot4sly-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

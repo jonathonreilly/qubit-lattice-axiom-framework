@@ -1,0 +1,19 @@
+{
+ "id": "pr-6254",
+ "title": "[physics-loop] toe-lphys c2m3class: bounded_theorem / bounded-support",
+ "science": "Terminal tensor-sum-class closure (3 never divides 2^k) of the C2 no-unital-M3 series, but the whole series is elementary algebra on an unadopted hypothetical reading carried by campaign roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6254,
+  "branch": "physics-loop/toe-lphys-block-c2m3class-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

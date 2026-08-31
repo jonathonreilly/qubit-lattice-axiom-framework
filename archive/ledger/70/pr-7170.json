@@ -1,0 +1,19 @@
+{
+ "id": "pr-7170",
+ "title": "feat(nsnnyinc): nnseed y-probe same-tick union own-lock: reverse fails, face fails",
+ "science": "Same-tick union own lock on nnseed y-probes: both bits fail, and the note correctly attributes it - including L(A)=+e2 creates no opposite in S^+(B), and holding requires waiting for the global later tick where -e1 enters at A.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7170,
+  "branch": "physics-loop/toe-lphys-block-nsnnyinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

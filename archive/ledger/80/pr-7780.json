@@ -1,0 +1,19 @@
+{
+ "id": "pr-7780",
+ "title": "[physics-loop] Block 229: cleanup-front translated locality boundary",
+ "science": "The C2: H-T-L-L -> P-H-T-L cell repairs fixture 21, but a reachable overlapping CF_T/CF_A pair has no common successor in any contiguous window of width 6-11 (first join needs width 12 at n=10; translations need width n+2) while branches join globally - a compositional locality-certificate failure, not nonconfluence.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7780,
+  "branch": "physics-loop/toe-axiom-closure-block229-cleanup-front-coalescence-20260828"
+ },
+ "carried_by": "#7781 (the ACI component-summary multiplication replaces the diameter-dependent cleanup join and restates this overlap in its Stage A0)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

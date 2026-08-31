@@ -1,0 +1,19 @@
+{
+ "id": "pr-6391",
+ "title": "feat(selcut): three cuts leave 32 covariant formation predicates",
+ "science": "Not a probe cell at all: an exact orbit-algebra theorem set on the 64 six-ray occupation cells under the 24 proper cube rotations. Theorem 1 partitions the 10 orbits as 1 empty + 1 full + 2 complement-fixed + 3 complement-pairs; Theorem 2 gives N_free=5 so |F_cut|=2^5=32 after the three cuts (vanish-on-empty, vanish-on-full, complement-even); Theorem 3 is a forcing negative - f_L1 (form iff some a",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6391,
+  "branch": "physics-loop/toe-lphys-block-selcut-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

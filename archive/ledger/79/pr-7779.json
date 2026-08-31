@@ -1,0 +1,19 @@
+{
+ "id": "pr-7779",
+ "title": "[physics-loop] Block228: bounded-support O(3) Haar coarse-compression generated crossing",
+ "science": "One-cell scout: exact projected Haar compression on a three-path theta cell generates an all-character coarse crossing with strict support and nonidentity coefficients (p=aH/Z) - the discovery that compression generates crossing.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7779,
+  "branch": "physics-loop/toe-connection-dynamics-block228-renormalized-haar-compression-20260828"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

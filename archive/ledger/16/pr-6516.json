@@ -1,0 +1,19 @@
+{
+ "id": "pr-6516",
+ "title": "feat(p1sel): remaining-bit search for a cov1>0 selector",
+ "science": "Exact closed form found: cov1(f)>0 iff (wt1=1 AND adj2=1), the unique match in the candidate menu, exact on all 32 maps (8 positive: four with cov1=12, four with cov1=8). Also pins that positivity strictly contains Max(1) (8 maps vs 4) and strictly refines P (six P-true maps have cov1=0).",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut selector search; no (reverse,f",
+ "source": {
+  "pr": 6516,
+  "branch": "physics-loop/toe-lphys-block-p1sel-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

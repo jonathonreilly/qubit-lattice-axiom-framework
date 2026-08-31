@@ -1,0 +1,19 @@
+{
+ "id": "pr-6685",
+ "title": "feat(bitenc): age-bit axis encoding commutes 288 of 576",
+ "science": "Age-bit axis encoding partial-commute enumeration (288/576) superseded by the full-commute section result in PR 6686 and later series members.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6685,
+  "branch": "physics-loop/toe-lphys-block-bitenc-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

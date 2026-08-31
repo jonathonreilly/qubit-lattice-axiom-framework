@@ -1,0 +1,19 @@
+{
+ "id": "pr-6694",
+ "title": "feat(minkiso): lex-first reversal isochrones are not closer to Euclidean than l1",
+ "science": "Lex-first reversal isochrone variance check superseded by the variance-minimizing fit in PR 6695 within the same exploratory series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6694,
+  "branch": "physics-loop/toe-lphys-block-minkiso-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

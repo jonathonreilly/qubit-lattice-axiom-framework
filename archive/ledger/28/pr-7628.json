@@ -1,0 +1,19 @@
+{
+ "id": "pr-7628",
+ "title": "feat(nm2frm1s3r): neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1 on three-axis opposite near-face seed: reverse HO",
+ "science": "Neighbor-read of the near-face #7625. Same existential wrapper as #7624 on a seed whose probe frames I verified are identical to the two-axis opposite seed's; produces #7624's bits.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7628,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1s3r-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

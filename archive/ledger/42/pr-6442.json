@@ -1,0 +1,19 @@
+{
+ "id": "pr-6442",
+ "title": "feat(opp0miss): every silent-opp2 F_cut map misses the four long-axis seeds",
+ "science": "Displayed-not-adopted check that every silent-opp2 map misses the long-axis seeds, exploratory count with no adopted conclusion.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6442,
+  "branch": "physics-loop/toe-lphys-block-opp0miss-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6693",
+ "title": "feat(mink3): 405 of 6561 ternary two-end costs reverse diamond",
+ "science": "Ternary two-end cost reversal count (405/6561, displayed not adopted), an exploratory scan superseded by later members of the mink series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6693,
+  "branch": "physics-loop/toe-lphys-block-mink3-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

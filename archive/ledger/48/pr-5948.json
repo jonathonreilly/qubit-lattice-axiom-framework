@@ -1,0 +1,19 @@
+{
+ "id": "pr-5948",
+ "title": "[physics-loop][review-loop] toe-time blockT4 (STACKED on #5938) \u2014 Cycle 889: bounded theorem \u2014 the DELTA-spectrum conjecture falsified; the ",
+ "science": "Falsifies the DELTA-spectrum conjecture and replaces it with the alignment law - a forcing correction at its date. Its law is exactly the k=2 sub-case of 891 k-run law (all 580 cells recovered exactly) and both its named opens (complement mechanism, non-two-run dirt) are closed by 891; its episode spectra are reproduced row-for-row there.",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5948,
+  "branch": "physics-loop/toe-time-blockT4-20260802"
+ },
+ "carried_by": "PR #5951 (k-run law subsumes the alignment law; both opens closed; spectra reproduced)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6389",
+ "title": "feat(linform): unique linear-threshold formation predicate is f_L1",
+ "science": "Bounded_theorem note, no probe cell. THE STRONGEST POSITIVE RESULT IN THE BATCH and the exact counterweight to #6381's 1024-member non-uniqueness: it supplies the missing SELECTOR. Requiring the formation map to be (a) LINEAR on the six signed occupancy coordinates, (b) cube-EQUIVARIANT, and (c) valued in the STANDARD 3 forces the threshold predicate f = 1_{L != 0} to be exactly f_L1, uniquely up ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6389,
+  "branch": "physics-loop/toe-lphys-block-linform-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

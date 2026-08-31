@@ -1,0 +1,19 @@
+{
+ "id": "pr-6717",
+ "title": "feat(noshp): support-drop diagonal is seed-exit then five cheap hops",
+ "science": "Support-drop diagonal path decomposition (displayed, not adopted), exploratory path accounting with no adopted claim.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6717,
+  "branch": "physics-loop/toe-lphys-block-noshp-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6868",
+ "title": "feat(renk7): ridge-enter same-k holds at k=7: t=19 vs t=25",
+ "science": "kappa on B_21: t(7,0,0)=19, t(7,7,7)=25, 1083>625. Adds off-geodesic witness t(19,1,1)=31 under kappa vs 29 under rho3 to show the new clause is live but never on a cheapest axis/body path; also t(21,0,0)=37, t(18,0,0)=30.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6868,
+  "branch": "physics-loop/toe-lphys-block-renk7-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

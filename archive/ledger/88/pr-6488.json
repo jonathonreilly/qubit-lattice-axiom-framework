@@ -1,0 +1,19 @@
+{
+ "id": "pr-6488",
+ "title": "feat(wt0oppwhy): first refused neighborhood on the #6484 opp2 split",
+ "science": "reverse=none face=none (f_cut refusal-mechanism census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut refusal-mechanism census; no (",
+ "source": {
+  "pr": 6488,
+  "branch": "physics-loop/toe-lphys-block-wt0oppwhy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7533",
+ "title": "feat(nm2frmrdx): neighbor-read of cyclic-frame transport at t+1 on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "Neighbor-read on x-probes; transport==split==cover at every probe, and equal-bit reverse/face HOLD while neighbor-read reverse/face fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7533,
+  "branch": "physics-loop/toe-lphys-block-nm2frmrdx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

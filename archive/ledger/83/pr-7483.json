@@ -1,0 +1,19 @@
+{
+ "id": "pr-7483",
+ "title": "feat(nm2oricycc3z): HOLDING cyclic lex-smallest det orientation of 1-in 2-out at t+1 on three-axis opposite z-probes: reverse HOLD, face HOL",
+ "science": "Same cell as #7475 with lex-smallest: Orient +1,+1,-1,-1 -> hold/hold. Together with #7475 this is the band's sharpest forcing negative: one probe cell, two arbitrary tie-break conventions, opposite (reverse,face) verdicts.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7483,
+  "branch": "physics-loop/toe-lphys-block-nm2oricycc3z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

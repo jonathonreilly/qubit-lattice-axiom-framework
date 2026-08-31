@@ -1,0 +1,19 @@
+{
+ "id": "pr-6130",
+ "title": "Block 41: localize flat spin-two gravity boundary",
+ "science": "Block 41: combines exact ten-ray derivative envelopes with a finite-volume Dobrushin-Poincare inequality to give uniform spin-two Gram stiffness gaps (E>=4.715, T2>=1.093) on every periodic carrier and every Block-40 Gram, with vanishing mixed block \u2014 so any regular connection Schur inverse keeps an O(k^0) spin-two intercept, retiring the unchanged regular flat-law route to a massless Einstein/Reg",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6130,
+  "branch": "physics-loop/toe-axiom-closure-block41-nonzero-hessian-20260811"
+ },
+ "carried_by": "#6132 finalizes the route's death by proving the flat branch itself unstable (explicitly framed against the merely-massless escape); ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

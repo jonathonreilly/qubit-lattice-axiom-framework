@@ -1,0 +1,19 @@
+{
+ "id": "pr-6495",
+ "title": "feat(c00c1): 1-site coverage of the two #6490 exceptions",
+ "science": "reverse=none face=none (f_cut coverage census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,f",
+ "source": {
+  "pr": 6495,
+  "branch": "physics-loop/toe-lphys-block-c00c1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6724",
+ "title": "feat(numem): displayed member fires pair and reverses diamond under nu",
+ "science": "Displayed leftover-frame member with N_new=1 on uneqrad host, explicitly not unique and not adopted; exploratory campaign output whose conclusions are carried by later blocks.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6724,
+  "branch": "physics-loop/toe-lphys-block-numem-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

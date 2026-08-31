@@ -1,0 +1,19 @@
+{
+ "id": "pr-7134",
+ "title": "feat(nsopex): opposite-lock x-probe later-tick exist-opposite: reverse HOLD, face HOLD",
+ "science": "Exist-opposite on opposite-lock x-probes: hold/hold on the same seed where the unique-vector readout (#7093) gave fail/UNDEFINED. A clean matched pair showing the verdict flips purely with the readout's quantifier. S_*(A) contains +e_3 and -e_3, so reverse holds on A's internal closure alone.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7134,
+  "branch": "physics-loop/toe-lphys-block-nsopex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

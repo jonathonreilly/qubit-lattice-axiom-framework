@@ -1,0 +1,19 @@
+{
+ "id": "pr-7486",
+ "title": "feat(nm2oricycl3x): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis opposite x-probes: reverse fails, face fails",
+ "science": "x-probes of the near 3-axis-opposite seed, lex-largest: Orient -1,+1,+1,fail; C=(2,0,0) is a tick-0 seed here so t(C)=0. Split fails at D by axis overlap.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7486,
+  "branch": "physics-loop/toe-lphys-block-nm2oricycl3x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7379",
+ "title": "feat(nm2simx): simultaneous M and O at t+1 on two-axis opposite x-probes: reverse HOLD, face HOLD",
+ "science": "Two-axis opposite seed, x-probes, simultaneous: hold/hold on the cell where axis-cover gives fail/fail (#7307). Together with #7378 and #7381 it shows sim is insensitive to the probe direction that cover resolves.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7379,
+  "branch": "physics-loop/toe-lphys-block-nm2simx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

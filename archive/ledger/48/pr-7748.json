@@ -1,0 +1,19 @@
+{
+ "id": "pr-7748",
+ "title": "[physics-loop] Block 208 two-time Clifford M2 compiler \u2014 bounded theorem",
+ "science": "Block 208 (Record/H1 lane) proves bounded typed compiler support that is self-labeled not complete H1 ownership with the axiom-update threshold unmet, a mid-series exploration whose conclusions flow to the lane landing core.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7748,
+  "branch": "physics-loop/toe-axiom-closure-block208-two-time-clifford-schur-m2-compiler-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

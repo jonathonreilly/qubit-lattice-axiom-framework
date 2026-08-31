@@ -1,0 +1,19 @@
+{
+ "id": "pr-7565",
+ "title": "feat(nm2holxyfz): xy-plane cyclic-frame holonomy at t+1 on three-axis far-face opposite seed: reverse HOLD, face fails",
+ "science": "xy-plane holonomy at z=0 on the far-face three-axis seed; C=(0,0,0) has O={-e_2} alone so split fails, and C1,C2 have mixed M.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7565,
+  "branch": "physics-loop/toe-lphys-block-nm2holxyfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7114",
+ "title": "feat(nsparyown): parallel-opposite y-probe own incoming: reverse UNDEFINED, face UNDEFINED",
+ "science": "Own-incoming readout on parallel-opposite y-probes; B and C both mix earliest incoming steps. Records the contrast that the same construction on the opposite-lock (perp-displacement) seed gave reverse hold, so the hold does not transfer across the two +e_1/-e_1 seed orbits.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7114,
+  "branch": "physics-loop/toe-lphys-block-nsparyown-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

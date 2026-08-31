@@ -1,0 +1,19 @@
+{
+ "id": "pr-6082",
+ "title": "science(gravity): derive closed helical Ward source",
+ "science": "Block 14: exact Fourier source and Ward telescope F_L(theta)(e^{i theta}-1)=0 for a closed helical repeated-edge Regge history; signed-pair intrinsic k=0 cancellation; principal moving source v x v/|v|; per-step transverse pole 2sqrt(2); shows the face diagonal is null under naive Lorentzian continuation, so no massive subluminal single worldline from repeated edges.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6082,
+  "branch": "physics-loop/toe-axiom-closure-block14-20260810"
+ },
+ "carried_by": "#6083 superposes this line with the tick line and carries its Ward/source machinery into the two-stream theorem; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

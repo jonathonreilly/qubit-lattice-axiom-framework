@@ -1,0 +1,19 @@
+{
+ "id": "pr-6866",
+ "title": "feat(plk14): plane-hug same-k fails at k=14: t=26 vs t=46",
+ "science": "Defines plane-hug pi = mu + cost 3 on any 3->3 hop whose dest has min|w_i|=1; on B_42 t(14,0,0)=26, t(14,14,14)=46, identical to the rho3 wall pair. Runner proves pi is not a rho3/mu leftover by pricing (2,2,1)->(3,2,1) at 3 where both parents price 1, yet the arrivals are unchanged: another live-but-idle clause.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=not-scored",
+ "source": {
+  "pr": 6866,
+  "branch": "physics-loop/toe-lphys-block-plk14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

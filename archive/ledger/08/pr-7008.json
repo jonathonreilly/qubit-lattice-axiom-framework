@@ -1,0 +1,19 @@
+{
+ "id": "pr-7008",
+ "title": "feat(s2var): c2d4-plus-soft-ridge is worse-round than c2d4 on B12",
+ "science": "Arrival-speed variance comparison showing s2 worse than c2d4; terminal-negative diagnostic in the rejected s2 series, conclusion carried in roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7008,
+  "branch": "physics-loop/toe-lphys-block-s2var-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

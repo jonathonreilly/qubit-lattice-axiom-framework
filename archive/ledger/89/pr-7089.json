@@ -1,0 +1,19 @@
+{
+ "id": "pr-7089",
+ "title": "feat(nscosx): same-tick x lock sum: reverse fail, face holds",
+ "science": "Same-tick-inclusive lock sum on the x-probes: L(A)=(5,0,0), L(B)=(2,0,1), L(C)=-e_2, L(D)=+e_2 -> reverse FAIL (sum (7,0,1)), face HOLD. The runner records the strictly-earlier sums (2,0,0) and (1,0,1) from #7078 alongside, so the pair isolates multiplicity-from-simultaneity as a further readout parameter that changes the letters but not, here, the verdict.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7089,
+  "branch": "physics-loop/toe-lphys-block-nscosx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

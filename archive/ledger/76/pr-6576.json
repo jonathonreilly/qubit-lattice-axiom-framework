@@ -1,0 +1,19 @@
+{
+ "id": "pr-6576",
+ "title": "feat(c10bit3): cov10>0 iff adj2 or vertex3 or mixed3",
+ "science": "Exact positive selector law on all 32 F_cut maps: cov10>0 iff (adj2 OR vertex3 OR mixed3), i.e. the Q10 predicate, with (N_Q,N_pos,N_both)=(28,28,28) and no miss; the four cov10=0 maps are exactly those with (adj2,vertex3,mixed3)=(0,0,0), named explicitly. This is the PR that establishes Q10 as an exact coverage selector, the reference the sibling cov1..cov12-vs-Q10 members in this batch all test ",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (3-bit selector search; matching_candid",
+ "source": {
+  "pr": 6576,
+  "branch": "physics-loop/toe-lphys-block-c10bit3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

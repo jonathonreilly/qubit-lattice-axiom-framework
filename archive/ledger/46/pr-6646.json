@@ -1,0 +1,19 @@
+{
+ "id": "pr-6646",
+ "title": "feat(ambpick): lex-first axis pick does not fire; two of four completions do",
+ "science": "General local-in-n no-go, not a probe cell: of the four unique-axis-respecting completions of the two ambiguous slots at v=(1,-1,1), exactly N_fire=2 are July-3 pair members ((+,-,-,0,0,+) and (-,+,-,0,0,+)); the lex-first-nonzero-axis local pick gives (+,+,-,0,0,+) which does not fire. The general obstruction is proved, not just observed: BOTH ambiguous neighbours (2,-1,1) and (0,-1,1) carry the ",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6646,
+  "branch": "physics-loop/toe-lphys-block-ambpick-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6256",
+ "title": "[physics-loop] toe-lphys phy8ten: bounded_theorem / bounded-support",
+ "science": "Toy trace computation that cubic anomaly cancellation stays an extra matching on C8; exploratory extras-audit pack member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6256,
+  "branch": "physics-loop/toe-lphys-block-phy8ten-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

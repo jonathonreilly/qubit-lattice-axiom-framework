@@ -1,0 +1,19 @@
+{
+ "id": "pr-7712",
+ "title": "feat(nm2frm1szrd3): distance-3 neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1 on two-axis opposite seed: reverse H",
+ "science": "Distance-3 existential neighbour-read of the directed 1-step -e3 frame-transport bit on the two-axis opposite seed. The bare 1-step pair is (HOLD,HOLD); the wrapper drops face to fail purely because no site formed by tau=1 at L1-distance exactly 3 from either face probe has a holding 1-step. Recomputed exact -- but the fail is definition-fragile: under the ever-formed witness rule that siblings #7",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7712,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1szrd3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

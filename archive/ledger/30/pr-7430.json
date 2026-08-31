@@ -1,0 +1,19 @@
+{
+ "id": "pr-7430",
+ "title": "feat(nm2sreadsly): neighbor-read of 1-in 2-out split at t+1 on two-axis same-lock y-probes: reverse HOLD, face fails",
+ "science": "same-lock seed, y-probes, unsigned neighbour-read of the 1-in-2-out split at t+1. Split HOLDs at A,B,C but only A,B find a 6-neighbour with matching Axis(M),Axis(O); C is the cut against split-without-neighbour-read. Recomputed exactly.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7430,
+  "branch": "physics-loop/toe-lphys-block-nm2sreadsly-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

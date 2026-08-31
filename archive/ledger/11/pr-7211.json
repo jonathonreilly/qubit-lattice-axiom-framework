@@ -1,0 +1,19 @@
+{
+ "id": "pr-7211",
+ "title": "feat(nmsyop): own incoming set on #7175: reverse HOLD, face HOLD",
+ "science": "M-readout on #7175's y-symmetric three-site y-probes. Numerically the same M sets, same singleton-M channel, and the same verdicts as #7208, #7213, #7214 and #7236 -- I recomputed all five and they are one cubic-symmetry orbit split across five PRs. Only S^+ at D distinguishes it from #7208, and the M readout never touches S^+.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7211,
+  "branch": "physics-loop/toe-lphys-block-nmsyop-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

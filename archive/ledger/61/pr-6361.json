@@ -1,0 +1,19 @@
+{
+ "id": "pr-6361",
+ "title": "feat(cell-cutting): refute five evenness mechanism routes at the interface",
+ "science": "Cycle 788: refutation certificates for FIVE candidate mechanisms for interface evenness, one exact incidence transport identity with a rank obstruction, one boundary-frame determinacy theorem, and the within-fiber exchange distance law. The wall stands but the region where a mechanism can live is narrowed to a named six-dimensional letter-functional quotient invisible to the tetra incidence. Also ",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6361,
+  "branch": "cycle788-interface-evenness-routes"
+ },
+ "carried_by": "The wall it defines is attacked with strictly stronger tools by #6363 (free fold reduction, full-group rigidity), #6367, #6369 and finally #6370, which collapses all 48 fiber instances to a single can",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

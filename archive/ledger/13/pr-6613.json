@@ -1,0 +1,19 @@
+{
+ "id": "pr-6613",
+ "title": "feat(c11q4): cov11>0 is not Q4; positivity does not imply Q4",
+ "science": "Same DEFECT CLUSTER as #6612 (two stubbed 'and True' clauses in thm1-pos-implies-q4, PASS line 'positivity implies Q4' against computed pos_implies_Q4=0, 'PASS thm1-host ... 220 11-site seeds' for a 12-seed run, 'C(12,11)=12 subsets of size 3', 'cov11(f)=|{S:|S|=3...}|', 'N_both=20 equals N_pos' with N_pos=24, No-Go gate and N7 asserting positivity DOES imply Q4 against Theorem 1, N7 calling the l",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4",
+ "source": {
+  "pr": 6613,
+  "branch": "physics-loop/toe-lphys-block-c11q4-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

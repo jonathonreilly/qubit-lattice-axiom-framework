@@ -1,0 +1,19 @@
+{
+ "id": "pr-7684",
+ "title": "feat(nm2frm1szall): universal neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1 on two-axis opposite seed: reverse fa",
+ "science": "Root of the four-member UNIVERSAL (for-all) readout block: every formed 6-neighbour must also HOLD. Recomputed far beyond the four probes - the universal readout HOLDs at ZERO sites across all four seeds, seven path shapes and both neighbourhood conventions, so the for-all branch of the readout search is empty on this host, not merely at the probes.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7684,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1szall-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

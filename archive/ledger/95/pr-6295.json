@@ -1,0 +1,19 @@
+{
+ "id": "pr-6295",
+ "title": "feat(linespd): speed-1 formation wave on a 5-site line",
+ "science": "Speed-1 formation wave on a 5-site line, explicitly not Newton and not a TOE; displayed toy demonstration superseded by later lattice blocks.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6295,
+  "branch": "physics-loop/toe-lphys-block-linespd-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7571",
+ "title": "feat(nm2sfzholrd): neighbor-read of cyclic lex-smallest frame holonomy at t+1 on two-axis opposite seed: reverse HOLD, face fails",
+ "science": "Lex-smallest neighbour-read holonomy on the two-axis seed; frames and Orient signs all differ from the lex-largest twin, holonomy product is the identity again and the bits are unchanged.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7571,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzholrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

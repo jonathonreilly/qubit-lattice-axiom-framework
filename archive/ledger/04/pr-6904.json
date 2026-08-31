@@ -1,0 +1,19 @@
+{
+ "id": "pr-6904",
+ "title": "feat(mlkface): mid-leave face reverse holds k=1..8 on B16",
+ "science": "Third PR on the empty clause (extra_clause_hops = 0). Its one load-bearing datum is the mu comparator table on B_16 \u2014 axis 6,12,16,18,20,22,24,30, face 4,8,10,12,14,16,18,20, mu FAILS at k=6 and k=7 \u2014 which attributes the face-reverse repair squarely to rho3's ridge 3->3 clause (t(6,0,0) 16 under mu vs 18 under rho3). Also t(2,2,2)=10 under mu-lambda vs 8 under mu.",
+ "forcing": false,
+ "verdict_pair": "reverse=not-scored face=holds k=1..8 (k=8 is host-artifact)",
+ "source": {
+  "pr": 6904,
+  "branch": "physics-loop/toe-lphys-block-mlkface-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

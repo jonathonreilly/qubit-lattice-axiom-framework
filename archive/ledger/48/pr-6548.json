@@ -1,0 +1,19 @@
+{
+ "id": "pr-6548",
+ "title": "feat(tot2sel): cov2=66 iff wt1 and adj2 and opp2 and vertex3",
+ "science": "Displayed-not-adopted cov2=66 four-bit AND characterization; exploratory 20260815 campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6548,
+  "branch": "physics-loop/toe-lphys-block-tot2sel-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

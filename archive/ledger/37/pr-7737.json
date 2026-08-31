@@ -1,0 +1,19 @@
+{
+ "id": "pr-7737",
+ "title": "physics: prove the window-Schur transport-defect theorem (block 196)",
+ "science": "Block 196 upgrades the exhaustively verified window law to the constructive window-Schur transport-defect theorem (384 exact zero-residual solves, adversarial check NOT REFUTED), a proven theorem with checker that open KEEP PR 7738 stacks on.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7737,
+  "branch": "physics-loop/toe-axiom-closure-block196-window-schur-transport-defect-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

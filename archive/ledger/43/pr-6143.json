@@ -1,0 +1,19 @@
+{
+ "id": "pr-6143",
+ "title": "[physics-loop] block50 common-metric OS transfer obstruction",
+ "science": "Block 50: rejects the Block-48 common-metric stationary-Schur candidate at the physical OS transfer gate \u2014 negative first one-step and even-slice two-step Hankel determinants for the gauge-invariant h_yz coordinate on every N=128..4096 carrier \u2014 identifying the exact Admissibility-law decision boundary. This OS-positivity obstruction redirected the arc into the constrained two-TT family and is the",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6143,
+  "branch": "physics-loop/toe-axiom-closure-block50-positive-transfer-20260811"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

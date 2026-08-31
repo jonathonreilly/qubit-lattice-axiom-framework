@@ -1,0 +1,19 @@
+{
+ "id": "pr-6382",
+ "title": "feat(vacalt): blank neighbor is not occupancy zero",
+ "science": "Bounded_theorem note with full N1-N8 gate, no probe cell. FOUNDATIONAL CAVEAT that qualifies every other two-cube result in this batch: the off-patch 'o = 0' fill is LOAD-BEARING, not an axiom consequence. Neighbour input is a 6-tuple over {0,1,blank}; Record's 'a site with no record cannot be read' withholds a readout, it does NOT assign occupancy 0. Under blank-blocked readiness (n defined only ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "source": {
+  "pr": 6382,
+  "branch": "physics-loop/toe-lphys-block-vacalt-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6518",
+ "title": "feat(p4sel): cov4>0 iff wt1=1 or adj2=1",
+ "science": "Exact closed form: cov4(f)>0 iff (wt1=1 OR adj2=1), unique match on all 32 maps (N_pos=24, tp=24 tn=8 fp=fn=0). The eight cov4=0 maps are exactly wt1=0 AND adj2=0. Together with #6516 (k=1: wt1 AND adj2) and #6494 (k=2: wt1 AND (adj2 or vertex3 or mixed3)) this gives a seed-size-dependent family of exact selectors.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut selector search; no (reverse,f",
+ "source": {
+  "pr": 6518,
+  "branch": "physics-loop/toe-lphys-block-p4sel-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

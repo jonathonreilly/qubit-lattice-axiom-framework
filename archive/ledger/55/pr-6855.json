@@ -1,0 +1,19 @@
+{
+ "id": "pr-6855",
+ "title": "physics: complete the ledger at the third size and find the isospectral mechanism (block 139)",
+ "science": "Completes the N=4,6,8 verification ledger at Z8 (rho_0=rho_4 by identical monodromy trace/determinant, Sym_2(R)^4), finds the k->k+4 trace classes, refutes the plain one-slice shift as the witnessing similarity, and records the exact k=0 cross-size trace law.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6855,
+  "branch": "physics-loop/toe-axiom-closure-block139-z8-ledger-completion-20260819"
+ },
+ "carried_by": "#6856 (block 140 exhibits the witnessing similarity U=T_AP^4, proves the degeneracy family-wide, and restates the refuted-shift/half-period consistency pair); the cross-size law is cited and its exten",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

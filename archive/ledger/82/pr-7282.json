@@ -1,0 +1,19 @@
+{
+ "id": "pr-7282",
+ "title": "feat(nmcoverp): axis-cover of M and O at t+1 on #7186: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the #7186 z-probes -- the one z-frame cover cell where cover holds at all four probes, unlike the x-frame of the same seed (#7290). Shares the permissive empty-M convention with #7279/#7286.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7282,
+  "branch": "physics-loop/toe-lphys-block-nmcoverp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7373",
+ "title": "feat(nm2axmz): incoming exist-opposite at t+1 on two-axis opposite z-probes: reverse fails, face fails",
+ "science": "Two-axis opposite seed, z-probes, exist-opposite of M: fail/fail (M values are {+e_2},{+e_1},{+e_3},{+e_1} - all distinct axes, no opposite pair). Contrasts with cover hold/hold on the identical cell (#7309): the signed and unsigned readouts are maximally opposed here.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7373,
+  "branch": "physics-loop/toe-lphys-block-nm2axmz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

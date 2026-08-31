@@ -1,0 +1,19 @@
+{
+ "id": "pr-7097",
+ "title": "feat(nscfx): same-tick x formdraw n(C)=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Proves the degenerate case the rest of the kernel family rests on: on nnseed x-probes with same-tick occupancy n(A)=n(C)=n(D)=(-1/3,0,0), so n(C)=n(D) exactly, no splitting axis mu* exists and all four letters are UNDEFINED. This is the computation #7092 cites as closing the x-probe unique-letter route.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7097,
+  "branch": "physics-loop/toe-lphys-block-nscfx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

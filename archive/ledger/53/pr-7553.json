@@ -1,0 +1,19 @@
+{
+ "id": "pr-7553",
+ "title": "feat(nm2sfzhol): cyclic lex-smallest frame holonomy around the unit square at t+1 on two-axis opposite seed: reverse HOLD, face fails",
+ "science": "Lex-smallest holonomy twin of the two-axis unit square; all frames and Orient signs differ, holonomy product is still the identity and the bits are unchanged.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7553,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzhol-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

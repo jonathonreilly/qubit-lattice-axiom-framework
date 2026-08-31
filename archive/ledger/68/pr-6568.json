@@ -1,0 +1,19 @@
+{
+ "id": "pr-6568",
+ "title": "feat(q66c8): cov8 of Q66 is 471 versus 495",
+ "science": "reverse=N/A face=N/A (cover census, no (reverse,face) pair; cov8(f0)=471, cov8(f1)=495, diff 24, control cov8(f_L1)=494)",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (cover census, no (reverse,face) pair; ",
+ "source": {
+  "pr": 6568,
+  "branch": "physics-loop/toe-lphys-block-q66c8-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

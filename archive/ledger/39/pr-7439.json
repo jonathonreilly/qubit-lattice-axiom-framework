@@ -1,0 +1,19 @@
+{
+ "id": "pr-7439",
+ "title": "feat(nm2orilefx): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "opposite x-probes, signed-leftover det orientation. Defined only at B and C; A and D have no split. Verdict is fixed by the formation geometry before the orientation letter is applied.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7439,
+  "branch": "physics-loop/toe-lphys-block-nm2orilefx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

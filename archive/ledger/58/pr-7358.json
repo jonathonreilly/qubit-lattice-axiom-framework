@@ -1,0 +1,19 @@
+{
+ "id": "pr-7358",
+ "title": "feat(nm2simz): simultaneous M and O at t+1 on two-axis opposite z-probes: reverse HOLD, face HOLD",
+ "science": "Two-axis opposite seed, z-probes, simultaneous (signed-letter disjointness of M and O). Establishes sim as strictly weaker than cover: it notes that on the same seed y-probe D has letter-disjoint nonempty M and O yet FAILs complementary axis cover.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7358,
+  "branch": "physics-loop/toe-lphys-block-nm2simz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

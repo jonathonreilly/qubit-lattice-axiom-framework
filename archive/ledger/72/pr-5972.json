@@ -1,0 +1,19 @@
+{
+ "id": "pr-5972",
+ "title": "[physics-loop][review-loop] toe-time blockQ7 (STACKED on #5971) \u2014 Cycle 910: bounded theorem \u2014 one object, two definitions: the escape orbit",
+ "science": "Discharges P-856-SHAPE positively: the escape orbit and the 856 absolute-record orbit are one object (ESCAPE implies ABSOLUTE as a theorem; same predicate at different horizons), and M6 receives its final scope - the computed horizon window [14744, 33195). The census-weighting selection role this scoping served was retired by the 911 re-typing; the discharge and window ride in the window-2 closure",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5972,
+  "branch": "physics-loop/toe-time-blockQ7-20260802"
+ },
+ "carried_by": "PR #5976 (re-typing retires the census-weighting question; discharge carried in closure bookkeeping)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

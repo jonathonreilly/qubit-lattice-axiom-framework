@@ -1,0 +1,19 @@
+{
+ "id": "pr-6915",
+ "title": "feat(renkiso): ridge-enter isochrones t(2,2,2)=10 t(4,4,4)=16",
+ "science": "Full G+ orbit census of the kappa t=10 and t=16 shells on B_12: 116 sites / 6 types / 5 squared radii, and 572 sites / 25 types / 13 squared radii, with every representative and orbit size listed. Both shells stay mixed (no isochrone approaches a sphere); (2,2,2) is the unique body-diagonal type in its shell; chiral pairs (3,1,2)/(3,2,1) stay distinct G+ orbits.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6915,
+  "branch": "physics-loop/toe-lphys-block-renkiso-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

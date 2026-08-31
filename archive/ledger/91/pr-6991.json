@@ -1,0 +1,19 @@
+{
+ "id": "pr-6991",
+ "title": "feat(i2k1): c2d4-plus-interior same-k holds at k=1: t=3 vs t=5",
+ "science": "Tiny k=1 same-k display for the non-adopted i2 variant, a fragment of the exploratory series with no standalone value.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6991,
+  "branch": "physics-loop/toe-lphys-block-i2k1-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

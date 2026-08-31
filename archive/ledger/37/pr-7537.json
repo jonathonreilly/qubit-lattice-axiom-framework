@@ -1,0 +1,19 @@
+{
+ "id": "pr-7537",
+ "title": "feat(nm2frmrdfx): neighbor-read of cyclic-frame transport at t+1 on three-axis far-face opposite x-probes: reverse fails, face fails",
+ "science": "Far-face three-axis x-probes: M(A)=M(D)={+e_3,-e_3}, a non-singleton incoming set, so unique signed m fails. Third distinct split-failure mechanism in the band (mixed M), alongside missing-axis cover fail and axis-overlap cover fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7537,
+  "branch": "physics-loop/toe-lphys-block-nm2frmrdfx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6842",
+ "title": "physics: find the descending member and isolate the adjointness wall",
+ "science": "Block 126 bounded theorem with 8/8 checker and 15/15 mutation sweep discovering the descending member O* and proving the joint descent-plus-adjointness emptiness (the adjointness wall) on the reflection/OS chain, a sharp scoped no-go that later stacked blocks build on. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6842,
+  "branch": "physics-loop/toe-axiom-closure-block126-time-dressing-adjointness-wall-20260817"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

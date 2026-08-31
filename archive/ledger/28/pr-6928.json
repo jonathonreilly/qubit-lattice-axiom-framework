@@ -1,0 +1,19 @@
+{
+ "id": "pr-6928",
+ "title": "feat(ofk19): out-face same-k first-fails at k=19: t=35 vs t=61",
+ "science": "Out-face same-k first-failure at k=19, terminal display in a non-adopted cost lane; conclusion carried by campaign roll-up, not core-chain.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6928,
+  "branch": "physics-loop/toe-lphys-block-ofk19-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

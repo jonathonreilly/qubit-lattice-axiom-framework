@@ -1,0 +1,19 @@
+{
+ "id": "pr-6099",
+ "title": "science(gravity): compose null anchor with RN sources",
+ "science": "Block 27: composes the anchor with finite positive Radon-Nikodym source interventions (exact cocycle, normalizer cancellation), separates Fisher scale from orientation and the action quantum, and constructs a tailored anchored interaction cancelling the Block-23 contact matrices while changing odds \u2014 proving there is no algebraic gravity no-go behind the Block-25 wall.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6099,
+  "branch": "physics-loop/toe-axiom-closure-block27-null-rn-cocycle-20260810"
+ },
+ "carried_by": "#6100 supersedes the tailored nonlocal cancellation with a shared covariant null-anchored source-linear RN contact; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

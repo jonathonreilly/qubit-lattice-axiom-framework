@@ -1,0 +1,19 @@
+{
+ "id": "pr-6623",
+ "title": "feat(c11q8): cov11>0 is not Q8; positivity implies Q8",
+ "science": "Not a probe cell at all: a bounded_theorem note on the 32 cube-covariant F_cut maps over the twelve-vertex two-cube. Proves cov11>0 is NOT equivalent to Q8 = wt1 v adj2 v opp2 v vertex3 (lex-first miss (0,1,0,0,0), six mismatches) but that positivity DOES imply Q8; exact census N_pos=24, N_Q8=30, N_both=24, cov11(f_L1)=12, with a 17-check runner.",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6623,
+  "branch": "physics-loop/toe-lphys-block-c11q8-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

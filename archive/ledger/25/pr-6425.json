@@ -1,0 +1,19 @@
+{
+ "id": "pr-6425",
+ "title": "feat(splitorbit): count cube-orbits of the four f_min/f_L1 split seeds",
+ "science": "Displayed-not-adopted orbit count collapsing the four split seeds to one rotation orbit, a small symmetry footnote to 6422 with no adoption.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6425,
+  "branch": "physics-loop/toe-lphys-block-splitorbit-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

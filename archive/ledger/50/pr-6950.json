@@ -1,0 +1,19 @@
+{
+ "id": "pr-6950",
+ "title": "feat(c2dfface): cost-2 deep-out-face face reverse fails k=6 and k=7",
+ "science": "Cost-2 deep-out-face face-reverse k-scan display, displayed-not-adopted exploratory numerics.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6950,
+  "branch": "physics-loop/toe-lphys-block-c2dfface-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

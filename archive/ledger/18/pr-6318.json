@@ -1,0 +1,19 @@
+{
+ "id": "pr-6318",
+ "title": "science(toe): derive local shadow energy action boundary",
+ "science": "Block 82: localizes the shadow Hamiltonian to a 19-shift raw staggered energy density with exact pointwise midpoint-work continuity, repairs full cubic covariance by the eight-coset Reynolds average, proves sourced-lapse operator identities on L=3..12, and rejects one declared centered field-charge/recoil identification in all 13,056 cases; two-stage prescribed-source type-I action verified at fir",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6318,
+  "branch": "physics-loop/toe-axiom-closure-block82-joint-action-energy-20260814"
+ },
+ "carried_by": "PR #6356 (Block 93) constructs the raw graph Ward current on exactly this 19-shift action; PR #6360 (Block 95) absorbs the energy column into the joint Hermitian action",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

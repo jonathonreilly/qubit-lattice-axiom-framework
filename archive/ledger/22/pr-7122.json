@@ -1,0 +1,19 @@
+{
+ "id": "pr-7122",
+ "title": "feat(nstriz): three-site z-probe unique vector: reverse fails, face fails",
+ "science": "Three-site seed z-probes, neighbour-lock readout, the only one of the reduced-checker quartet whose A-probe forms at tick 1 so the tick-0 exception does not bite; both comparisons are defined and both fail. Still runs the reduced 18-check regime with no mutation tests.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7122,
+  "branch": "physics-loop/toe-lphys-block-nstriz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

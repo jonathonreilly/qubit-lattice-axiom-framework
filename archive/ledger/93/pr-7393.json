@@ -1,0 +1,19 @@
+{
+ "id": "pr-7393",
+ "title": "feat(nm2orichz): opposite-pair 1-in 2-out frame orientation at t+1 on two-axis opposite z-probes: reverse HOLD, face fails",
+ "science": "Orientation convention #1 (opposite-pair frame): with M={m} singleton and O carrying some +e/-e, take e = positive unit of the smallest such axis, l = the remaining positive axis unit, Orient = sign det(m,e,+l). On opposite z-probes gives -1,-1,+1,-1 -> reverse HOLD, face fail. Recomputed exactly; and this sign FLIPS under proper cubic rotations of the same configuration.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fail",
+ "source": {
+  "pr": 7393,
+  "branch": "physics-loop/toe-lphys-block-nm2orichz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

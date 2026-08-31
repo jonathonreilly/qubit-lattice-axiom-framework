@@ -1,0 +1,19 @@
+{
+ "id": "pr-7719",
+ "title": "feat(nm2frm2plxs): L-path cyclic-frame transport +e1 then -e3 at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Bare L-path +e1 then -e3 on the two-axis same-lock seed; the +e1 mirror of #7717. Same corner-split cause. Only one discriminator gate remains (not-leftover-of-one-step-plus-e1), the thinnest in the band. Recomputed exact.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7719,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2plxs-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

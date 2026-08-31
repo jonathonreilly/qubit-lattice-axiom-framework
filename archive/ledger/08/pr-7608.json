@@ -1,0 +1,19 @@
+{
+ "id": "pr-7608",
+ "title": "feat(nm2yzrdalfz): universal neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis far-face opposite seed: reverse fails, fac",
+ "science": "3F yz squares, universal neighbor-read; fail/fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7608,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrdalfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

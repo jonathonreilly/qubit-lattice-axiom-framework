@@ -1,0 +1,19 @@
+{
+ "id": "pr-7195",
+ "title": "feat(nsxe2inc): x-axis opposite \u00b1e_2 same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "x-axis opposite +/-e_2 seed {0:+e2},{e1:-e2}, y-probes. Union with L is a no-op; hold_without_defined_L_A. Pairs with #7196 as the same seed read in two probe frames, giving the band's cleanest frame-dependence datum: identical process, t(A)=3 vs t(A)=0, and the HOLD arrives through a different channel in each.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7195,
+  "branch": "physics-loop/toe-lphys-block-nsxe2inc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

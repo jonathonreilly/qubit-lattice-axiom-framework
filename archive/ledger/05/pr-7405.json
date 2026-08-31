@@ -1,0 +1,19 @@
+{
+ "id": "pr-7405",
+ "title": "feat(nm2readsly): neighbor-read of M at t+1 on two-axis same-lock y-probes: reverse HOLD, face fails",
+ "science": "Neighbor-read of M on same-lock y-probes: HOLD at A,B,D, FAIL at C. C is the one probe whose M={+e_2} has no six-neighbour carrying exactly {+e_2}: the would-be match (0,3,0) never forms because A's lock forbids the perp step. This is the clearest ball-wall/formation-truncation effect on a verdict in the band.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fail",
+ "source": {
+  "pr": 7405,
+  "branch": "physics-loop/toe-lphys-block-nm2readsly-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6661",
+ "title": "feat(delsgn): claim-delta sign product fully labels and fires",
+ "science": "Delta-sign-product labeling construction, exploratory displayed-not-adopted candidate later undercut by its own locality failure in 6663.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6661,
+  "branch": "physics-loop/toe-lphys-block-delsgn-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6819",
+ "title": "feat(ridk8): ridge-slide same-k holds at k=8: t=20 vs t=28",
+ "science": "rho3 at k=8 on B_24: t=20 vs 28, 1200>784. Also machine-asserts hugk1-pair-kept (the k=1 pair stays 3 vs 5 under rho3) and ridge-not-all-body (rho3 does NOT tax a 3->3 hop with fewer than two unit coords), i.e. the two properties that separate rho3 from eps and from beta.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=8, 1200 > 784) face=n/a",
+ "source": {
+  "pr": 6819,
+  "branch": "physics-loop/toe-lphys-block-ridk8-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

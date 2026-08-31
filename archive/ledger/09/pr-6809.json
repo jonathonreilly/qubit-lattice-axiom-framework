@@ -1,0 +1,19 @@
+{
+ "id": "pr-6809",
+ "title": "feat(bodk7): body-slide kills k=7 reverse: t=19 vs t=37",
+ "science": "FORCING NEGATIVE that fixes the shape of the whole search: the body-slide rule beta = mu + cost 3 on EVERY 3->3 hop destroys reverse already at k=7 on B_21 (t=19 vs 37, 1083<1369). Because a body-diagonal geodesic must traverse ~3k support-3 hops, any blanket 3->3 tax multiplies t_body and swamps the axis gain. This is why every later winning clause (rho3, zeta, pi) must be a SELECTIVE 3->3 tax th",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (same-k k=7, 1083 < 1369) face=n/a",
+ "source": {
+  "pr": 6809,
+  "branch": "physics-loop/toe-lphys-block-bodk7-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

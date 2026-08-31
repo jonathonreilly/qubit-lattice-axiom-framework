@@ -1,0 +1,19 @@
+{
+ "id": "pr-6722",
+ "title": "feat(why10): remaining axis path is the parallel detour with last hop 3",
+ "science": "Axis-path cost accounting under nu (displayed, not adopted), minor exploratory path fragment of the campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6722,
+  "branch": "physics-loop/toe-lphys-block-why10-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

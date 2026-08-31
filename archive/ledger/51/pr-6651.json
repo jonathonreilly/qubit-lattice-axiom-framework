@@ -1,0 +1,19 @@
+{
+ "id": "pr-6651",
+ "title": "physics: couple the constraint quotient and prove the population wall",
+ "science": "Block 121 proves the exact off-shell discrete Noether identity, the d=2 constraint count, the Gauss intertwiner, and a sharply scoped closed-carrier population wall with 8/8-PASS runner and cross-model checks on the OS-closure/constraint chain. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6651,
+  "branch": "physics-loop/toe-axiom-closure-block121-constraint-quotient-coupling-20260816"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

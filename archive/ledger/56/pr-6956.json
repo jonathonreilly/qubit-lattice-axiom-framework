@@ -1,0 +1,19 @@
+{
+ "id": "pr-6956",
+ "title": "feat(c2d3k1): cost-2 max\u22653 out-face same-k holds at k=1: t=3 vs t=5",
+ "science": "k=1 companion of c2d3: (3,5), 27>25. Fixed-point triviality of the family.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=1 (band bit) face=absent",
+ "source": {
+  "pr": 6956,
+  "branch": "physics-loop/toe-lphys-block-c2d3k1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

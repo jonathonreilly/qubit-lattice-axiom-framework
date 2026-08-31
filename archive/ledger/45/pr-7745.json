@@ -1,0 +1,19 @@
+{
+ "id": "pr-7745",
+ "title": "physics: fence Block 201 finite covariant encodings from rule selection",
+ "science": "Block 201 (repaired) retains the exact covariant-kernel spin-diagonalization and the completed Cl(3,0) minimality proof with rule-selection claims fenced, and the active mainline stack through block 212 stacks on it.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7745,
+  "branch": "physics-loop/toe-axiom-closure-block201-covariant-rule-identification-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

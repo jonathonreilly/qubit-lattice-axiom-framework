@@ -1,0 +1,19 @@
+{
+ "id": "pr-7065",
+ "title": "feat(nssfrm): nssame formdraw n(C) != n(D); unique f(n) leftover does not transfer",
+ "science": "Introduces the nssame seed class - {0,(0,1,0)} both locking the SAME letter +e_1 - and reports its kernels n(A)=(-1/3,-1/3,0), n(B)=n(C)=(-1/3,0,0), n(D)=(-1/3,1/3,0), so n(C) != n(D) whereas the mixed-lock seed has n(C)=n(D). Carries a genuine group-theoretic control: it enumerates all 24 proper cubic rotations and verifies the same-lock seed is outside the orbit of the mixed-lock seed.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7065,
+  "branch": "physics-loop/toe-lphys-block-nssfrm-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

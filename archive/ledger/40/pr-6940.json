@@ -1,0 +1,19 @@
+{
+ "id": "pr-6940",
+ "title": "physics: prove the floor boundary theorem and open the comparison (block 151)",
+ "science": "Block 151 Floor Boundary Theorem: exact corner bounds proven via three independent routes with complete cost-145 census, 8.9M separating-plane certificates, and a checker (8/8 PASS, mutation sweep clean) \u2014 publishable on its own and the named enabler of Block 123 momentum comparison. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6940,
+  "branch": "physics-loop/toe-axiom-closure-block151-floor-boundary-theorem-20260820"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

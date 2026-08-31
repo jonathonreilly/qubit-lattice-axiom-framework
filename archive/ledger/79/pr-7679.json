@@ -1,0 +1,19 @@
+{
+ "id": "pr-7679",
+ "title": "feat(nm2frm2lx3): L-path cyclic-frame transport -e3 then -e1 at t+1 on three-axis opposite near-face seed: reverse HOLD, face fails",
+ "science": "Bare L-path (-e3,-e1) on the near-face seed. Together with #7672 this isolates the direction-selectivity of the third seed pair: -e1 survives it, +e1 does not.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7679,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lx3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

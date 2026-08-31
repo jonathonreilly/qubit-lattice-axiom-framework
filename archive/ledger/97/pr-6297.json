@@ -1,0 +1,19 @@
+{
+ "id": "pr-6297",
+ "title": "feat(stepcov): cube occupancy step commutes with a 90\u00b0 rotation",
+ "science": "Shows the 2x2x2 cube occupancy step commutes with one 90-degree rotation, explicitly not a TOE; tiny covariance check inside the exploratory pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6297,
+  "branch": "physics-loop/toe-lphys-block-stepcov-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

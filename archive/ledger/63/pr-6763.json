@@ -1,0 +1,19 @@
+{
+ "id": "pr-6763",
+ "title": "feat(011k1): k=1 same-k fail is cheap seed-exit: t(1,0,0)=1 vs t(1,1,1)=3",
+ "science": "Displayed cheap-seed-exit explanation of the (0,1,1) k=1 same-k failure already recorded in 6755, explicitly not adopted; exploratory why-analysis closing out the series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6763,
+  "branch": "physics-loop/toe-lphys-block-011k1-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

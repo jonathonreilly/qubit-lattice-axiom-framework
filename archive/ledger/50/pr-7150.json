@@ -1,0 +1,19 @@
+{
+ "id": "pr-7150",
+ "title": "feat(nsopin): nsopp y-probe own-lock-in exist-opposite: reverse HOLD, face HOLD",
+ "science": "First own-lock-in member: S^+(q) = strictly-earlier 6-NN locks union {L(q)}. On nsopp y-probes the seed letter L(A)=-e1 fills the empty S(A) of #7143 and flips reverse UNDEFINED -> hold against +e1 in S^+(B). Isolates the mechanism the whole own-lock sub-family turns on: the own letter is a second, independent monotone widening knob, orthogonal to the time window, and the runner's own gates ('own-",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7150,
+  "branch": "physics-loop/toe-lphys-block-nsopin-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

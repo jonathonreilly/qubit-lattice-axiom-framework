@@ -1,0 +1,19 @@
+{
+ "id": "pr-6610",
+ "title": "feat(c3p): cov3>0 is not P; positivity does not imply P",
+ "science": "toe-lphys cov3/P selector probe on the two-cube, displayed-not-adopted; exploratory series member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6610,
+  "branch": "physics-loop/toe-lphys-block-c3p-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

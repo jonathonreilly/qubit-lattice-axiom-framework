@@ -1,0 +1,19 @@
+{
+ "id": "pr-6656",
+ "title": "feat(skewrun): local-in-n pair fires at off-axis breaker",
+ "science": "Rival chiral execution at the off-axis breaker, displayed-not-adopted exploratory run with no core-chain artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6656,
+  "branch": "physics-loop/toe-lphys-block-skewrun-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

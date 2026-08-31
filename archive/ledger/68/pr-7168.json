@@ -1,0 +1,19 @@
+{
+ "id": "pr-7168",
+ "title": "feat(nsuoxinc): nsopp x-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "Same-tick union own lock on nsopp x-probes; union is a no-op (L(A), L(D) UNDEFINED). Reverse holds through the neighbour-neighbour channel: -e3 at the same-tick neighbour D against +e3 at B. Supplies the same-tick x-probe cell, which no exclude-q member in this band covers.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7168,
+  "branch": "physics-loop/toe-lphys-block-nsuoxinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

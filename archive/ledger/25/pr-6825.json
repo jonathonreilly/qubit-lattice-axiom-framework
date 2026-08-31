@@ -1,0 +1,19 @@
+{
+ "id": "pr-6825",
+ "title": "feat(ridk5): ridge-slide same-k holds at k=5: t=15 vs t=19",
+ "science": "rho3 at k=5 on B_16: t=15 vs 19, 675>361. Notes the k=5 AXIS arrival coincides with mu's (both 15) while the body does not (19 vs 17) -- i.e. below the crossover the ridge clause moves only the body, which is why the margin is largest in the middle of the range.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=5, 675 > 361) face=n/a",
+ "source": {
+  "pr": 6825,
+  "branch": "physics-loop/toe-lphys-block-ridk5-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

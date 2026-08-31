@@ -1,0 +1,19 @@
+{
+ "id": "pr-6978",
+ "title": "feat(c2d4k15): cost-2 max\u22654 out-face same-k holds at k=15: t=31 vs t=49",
+ "science": "c2d4 same-k at k=15 on B_45(0): (31,49), 2883>2401; also reproduces k=14 (30,46) and k=1 (3,5). Identical to w2's k=15 (#6964). Row is recomputed inside #6981's single Dijkstra. Carried by #6981.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=15 (band bit) face=absent",
+ "source": {
+  "pr": 6978,
+  "branch": "physics-loop/toe-lphys-block-c2d4k15-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

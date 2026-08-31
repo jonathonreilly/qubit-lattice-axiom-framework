@@ -1,0 +1,19 @@
+{
+ "id": "pr-7523",
+ "title": "feat(nm2sfzfrmt2): HOLDING cyclic lex-smallest frame transport freeze t+1 vs t+2 on three-axis far-face opposite z-probes: reverse HOLD, fac",
+ "science": "Lex-smallest frame transport at two cuts on the far-face 3-axis z-probes. Notable: scalar neighbour-read here is hold,hold,fail,hold \u2014 the only transport member where the non-vacuous scalar test nearly holds, and it still disagrees with transport at C.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7523,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzfrmt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

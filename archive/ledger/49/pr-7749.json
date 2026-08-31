@@ -1,0 +1,19 @@
+{
+ "id": "pr-7749",
+ "title": "physics: fence Block 209 three-direction gluing geometry",
+ "science": "Block 209 (repaired fence) carries the exact three-direction generator and gluing-geometry results the active gravity-toe mainline branch contains as commit d54985bb, with open blocks 210-212 stacked directly on it.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7749,
+  "branch": "physics-loop/toe-axiom-closure-block209-three-direction-rule-geometry-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

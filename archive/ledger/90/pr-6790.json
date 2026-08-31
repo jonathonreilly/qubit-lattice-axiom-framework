@@ -1,0 +1,19 @@
+{
+ "id": "pr-6790",
+ "title": "feat(facek21): on B21, nu face reverse still holds k=1..3 and fails k=4..8",
+ "science": "Third repeat of the face k-sweep (after #6769 on B_16 and #6785 on B_18), now on B_21(0): the sixteen arrival times and all eight bits (yes k=1,2,3; no k=4..8) are IDENTICAL to the B_18 table, so those pair times have converged and are no longer host-sensitive. Only genuinely new datum is another wall shift on a site not used by the comparison, t(18,0,0)=24 here vs 26 on B_18. Near-duplicate of #6",
+ "forcing": false,
+ "verdict_pair": "face reverse by k on B_21: YES k=1,2,3; NO k=4,5,6,7,8",
+ "source": {
+  "pr": 6790,
+  "branch": "physics-loop/toe-lphys-block-facek21-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-5947",
+ "title": "[physics-loop][review-loop] toe-time blockG13 (STACKED on #5946) \u2014 Cycle 888: bounded theorem \u2014 S3 priced, the scope menu dissolves, the que",
+ "science": "De-restriction over the full 30-subgroup lattice dissolves 886 six-clause scope menu (only circular clauses isolate C3; selector camps conflict; one 886 clause broken-as-coded), fully prices S3, and proves the SL1 transfer (at S3 the pair numerically transfers but the subspace is a P^1 family; the isotypic level is canonical). Census and S3 non-forcedness restated and extended by the ladder termin",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5947,
+  "branch": "physics-loop/toe-time-blockG13-20260802"
+ },
+ "carried_by": "PR #5950 (cycle-890 ladder terminal restates the census rows, S3 forcedness failure, and the C3-vs-S3 decision)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

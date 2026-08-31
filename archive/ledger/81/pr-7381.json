@@ -1,0 +1,19 @@
+{
+ "id": "pr-7381",
+ "title": "feat(nm2simslx): simultaneous M and O at t+1 on two-axis same-lock x-probes: reverse HOLD, face HOLD",
+ "science": "Two-axis same-lock seed, x-probes, simultaneous: hold/hold, matching the opposite seed. Its runner also reprints the nm2slx cover fail/fail and nm2slpx forall-perp hold/hold cross-checks, making it the densest single cross-reference block in the band.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7381,
+  "branch": "physics-loop/toe-lphys-block-nm2simslx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

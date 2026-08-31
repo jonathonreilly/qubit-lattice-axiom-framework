@@ -1,0 +1,19 @@
+{
+ "id": "pr-7488",
+ "title": "feat(nm2oricyclt23y): cyclic lex-largest Orient freeze t+1 vs t+2 on three-axis opposite y-probes: reverse HOLD, face fails, composition HOL",
+ "science": "#7476's cell with t+1 vs t+2 composition; Orient +1,+1,+1,fail at both cuts. Composition hold, forced by M/O freeze.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7488,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyclt23y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

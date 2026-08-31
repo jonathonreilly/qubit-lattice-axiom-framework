@@ -1,0 +1,19 @@
+{
+ "id": "pr-6686",
+ "title": "feat(bitsec): leftover-frame section commutes with all 576",
+ "science": "Leftover-frame section 576/576 commute enumeration, a non-terminal member of the bitenc/bitsec/bitname series continued by PR 6687.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6686,
+  "branch": "physics-loop/toe-lphys-block-bitsec-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

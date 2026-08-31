@@ -1,0 +1,19 @@
+{
+ "id": "pr-6147",
+ "title": "science: isolate nonlinear Regge constraint route",
+ "science": "toe-axiom-closure Block 54 - the gravity ROUTE GATE, a forcing negative that retired a whole class of gravity constructions. On the repository's Kuhn/Coxeter Regge-plus-deficit-square action S_alpha = sum_h A_h (eps_h + alpha eps_h^2) at alpha = 1/1024: at flatness the Hessian Q_0(k) annihilates the four exact vertex-displacement columns Gamma(k) - all 2254 nonzero periodic modes on L = 3,4,5,6 fo",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6147,
+  "branch": "physics-loop/toe-axiom-closure-block54-perfect-action-gate-20260812"
+ },
+ "carried_by": "this ledger science line (deviant; outside toe-lphys roll-up scope)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

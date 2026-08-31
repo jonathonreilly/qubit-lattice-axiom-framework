@@ -1,0 +1,19 @@
+{
+ "id": "pr-6718",
+ "title": "physics: prove the spatial-dressing invisibility at the quotient",
+ "science": "Block 125 spatial-dressing invisibility: scalar-phase lemma, wall extension to spatial dressings, exact admissible-observable dimensions, and a documented checker refutation, with 8/8 runner and mutation sweep, stacked on kept Block 124. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6718,
+  "branch": "physics-loop/toe-axiom-closure-block125-spatial-dressing-invisibility-20260817"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

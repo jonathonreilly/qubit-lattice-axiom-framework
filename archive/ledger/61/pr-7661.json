@@ -1,0 +1,19 @@
+{
+ "id": "pr-7661",
+ "title": "feat(nm2frm3pz): directed 3-step cyclic-frame transport along +e3 at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "3-step +e3, two-axis opposite, per-site tau. Null by construction.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7661,
+  "branch": "physics-loop/toe-lphys-block-nm2frm3pz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

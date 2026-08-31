@@ -1,0 +1,19 @@
+{
+ "id": "pr-6493",
+ "title": "feat(c00firstfill): lex-first seed that (1,0,0,0,0) fills",
+ "science": "Anomaly in the runner output the note does not call out: for f00=(1,0,0,0,0) the coverage profile by seed size is cov1..cov6 = 0,0,0,7,0,4 - fill is NOT monotone in seed size (every one of the 792 five-site seeds fails although seven four-site faces fill). Adding a lock can convert a firing wt1 cell into a refused opp2/adj2 cell, so supersets of a filling seed can stop filling.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut first-fill census; no (reverse",
+ "source": {
+  "pr": 6493,
+  "branch": "physics-loop/toe-lphys-block-c00firstfill-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6298",
+ "title": "feat(cubepvm): cube occupancy step with PVM lock-content traces",
+ "science": "Combines cube occupancy step with PVM lock-content traces, explicitly not Born and not a TOE; incremental toy composition superseded within its series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6298,
+  "branch": "physics-loop/toe-lphys-block-cubepvm-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

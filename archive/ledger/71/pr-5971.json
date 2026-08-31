@@ -1,0 +1,19 @@
+{
+ "id": "pr-5971",
+ "title": "[physics-loop][review-loop] toe-time blockQ5 (STACKED on #5969) \u2014 Cycle 908: bounded theorem \u2014 eleven censuses, one ledger; BL7 is reading-d",
+ "science": "toe-time Cycle 908 - discharges premise P-INTERTWINE-878 and, in doing so, DEMOTES COVARIANCE AS A BORN-WEIGHT SELECTOR. C908-T1 (transport theorem): for every one of the eleven monitor phases the phase-m event set is the sigma_m transport of phase 0's, event for event, and the occupation ledger, formation ledger, per-world counts and per-lane signatures all transport, with the dead-wire set and s",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5971,
+  "branch": "physics-loop/toe-time-blockQ5-20260802"
+ },
+ "carried_by": "this ledger science line (deviant; outside toe-lphys roll-up scope)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

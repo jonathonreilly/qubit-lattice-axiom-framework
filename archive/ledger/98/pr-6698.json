@@ -1,0 +1,19 @@
+{
+ "id": "pr-6698",
+ "title": "feat(ourmem): displayed member fires pair and reverses diamond",
+ "science": "Combined displayed-member demo (age-bit f plus best cost, explicitly displayed/not unique/not adopted), an exploratory synthesis block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6698,
+  "branch": "physics-loop/toe-lphys-block-ourmem-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

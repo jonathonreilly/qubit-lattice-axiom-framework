@@ -1,0 +1,19 @@
+{
+ "id": "pr-7668",
+ "title": "feat(nm2frm2lxt): L-path cyclic-frame transport -e3 then -e1 freeze t+1 vs t+2 on two-axis opposite seed: reverse HOLD, face fails, composit",
+ "science": "Freeze of the bare L-path (-e3,-e1) at each site's own t+1 vs t+2; all four probe bits are identical at the two cuts, so composition HOLDs. Recomputed: frames and bits are literally unchanged, because every path site is already at its terminal M/O by tick+1.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails (both cuts; composition HOLD)",
+ "source": {
+  "pr": 7668,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lxt-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

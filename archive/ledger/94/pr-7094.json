@@ -1,0 +1,19 @@
+{
+ "id": "pr-7094",
+ "title": "feat(nfplaq): plaquette holonomy: reverse fail, face fails",
+ "science": "Only gauge-flavoured readout in the band: plaquette opposite-vertex holonomy of the own-incoming lock field. On the elementary seed-square Q={0,e_1,e_1+e_2,e_2} the cycle sum is H=(2,0,0)!=0, i.e. the record-formation lock field carries nonzero Z^3 holonomy around the unit plaquette and is not exact. Also records the star-aggregation alternative value L(A)=(5,0,0).",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7094,
+  "branch": "physics-loop/toe-lphys-block-nfplaq-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6823",
+ "title": "feat(ridk3): ridge-slide same-k holds at k=3: t=9 vs t=13",
+ "science": "rho3 at k=3 on B_12: t=9 vs 13, 243>169. Reports on the same run t(1,0,0)=3, t(1,1,1)=5, t(2,0,0)=6, t(2,2,2)=10 -- so this single PR carries the low-k corner of the whole rho3 table and shows the axis law is 3k (not k+12) below the k=6 crossover.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=3, 243 > 169) face=n/a",
+ "source": {
+  "pr": 6823,
+  "branch": "physics-loop/toe-lphys-block-ridk3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

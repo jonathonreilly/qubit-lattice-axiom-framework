@@ -1,0 +1,19 @@
+{
+ "id": "pr-6712",
+ "title": "feat(axpath): axis-skeleton diagonal is seed-exit then five cheap hops",
+ "science": "Axis-skeleton diagonal path decomposition (displayed, not adopted), minor exploratory path accounting in the same campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6712,
+  "branch": "physics-loop/toe-lphys-block-axpath-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

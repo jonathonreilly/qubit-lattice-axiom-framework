@@ -1,0 +1,19 @@
+{
+ "id": "pr-6381",
+ "title": "feat(formclass): count cube-covariant formation predicates",
+ "science": "Bounded_theorem note, no probe cell. MAJOR FORCING NEGATIVE: cube covariance does NOT select the formation rule. Exact enumeration shows the 24 proper cube rotations partition the 64 occupancy 6-tuples into exactly N_orb=10 orbits, sizes [1,1,3,3,6,6,8,12,12,12] summing to 64 and independently confirmed by Burnside ((1/24) sum 2^cyc(R) = 10), so the class of cube-covariant boolean formation predic",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=4",
+ "source": {
+  "pr": 6381,
+  "branch": "physics-loop/toe-lphys-block-formclass-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

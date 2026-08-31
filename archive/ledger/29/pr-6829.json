@@ -1,0 +1,19 @@
+{
+ "id": "pr-6829",
+ "title": "feat(riddbl): ridge-slide doubled pairing holds k=1..4",
+ "science": "Doubled pairing under rho3 on B_12 at k=1..4: 108>100, 432>400, 972>676, 1200>1024, all reverse -- rho3 keeps everything mu had on this pairing (#6797). Carries eight full witness walks including the t(2,2,2)=10 and t(8,0,0)=20 routes that exhibit the corridor-then-ridge geodesic structure.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=1,2,3,4 (doubled pairing) face=n/a",
+ "source": {
+  "pr": 6829,
+  "branch": "physics-loop/toe-lphys-block-riddbl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

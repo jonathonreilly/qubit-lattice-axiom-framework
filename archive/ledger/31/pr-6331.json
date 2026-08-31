@@ -1,0 +1,19 @@
+{
+ "id": "pr-6331",
+ "title": "feat(l1gaus2): tree gauge stays source-complete after two L1 ticks",
+ "science": "Bounded_theorem note, no probe cell; carries a full N1-N8 no-go gate. Result: the two-site two-face incidence matrix M=[[1,0],[-1,1]] has det=1, so it is invertible over Z and the tree gauge phi = M^{-1} rho is the UNIQUE integer solution of g=rho; because invertibility does not depend on rho, source-completeness and uniqueness are PRESERVED BY ANY SOURCE UPDATE, verified at the L1 ticks (4,1) -> ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "source": {
+  "pr": 6331,
+  "branch": "physics-loop/toe-lphys-block-l1gaus2-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

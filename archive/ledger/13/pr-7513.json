@@ -1,0 +1,19 @@
+{
+ "id": "pr-7513",
+ "title": "feat(nm2cycfrm3z): HOLDING cyclic-frame transport of (m,o_next,o_prev) at t+1 on three-axis opposite z-probes: reverse HOLD, face HOLD",
+ "science": "Transport with the LEX-SMALLEST frame on the near 3-axis-opposite z-probes; frames F=(+e_2,+e_3,+e_1) etc. Transport hold at all four (vacuous), while the underlying lex-largest Orient on this same cell gives reverse fail and face fail (#7475). Scalar neighbour-read: hold,fail,fail,hold.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7513,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrm3z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

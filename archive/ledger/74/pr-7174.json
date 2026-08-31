@@ -1,0 +1,19 @@
+{
+ "id": "pr-7174",
+ "title": "feat(nstriinc): three-site x-probe same-tick union own-lock: reverse fails, face HOLD",
+ "science": "Same-tick union own lock on the three-site seed {0,(0,1,0),(1,0,0)} with locks +e1,-e1,+e2, x-probe frame. Face HOLD fires through the own-letter channel at C (L(C)=+e1 against -e1 in S^+(D)); reverse fails against the singleton S^+(B)={+e3}. I reproduced both verdicts independently.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7174,
+  "branch": "physics-loop/toe-lphys-block-nstriinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

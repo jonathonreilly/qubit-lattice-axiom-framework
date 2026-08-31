@@ -1,0 +1,19 @@
+{
+ "id": "pr-6278",
+ "title": "science(toe): bound same-carrier Record archive packet",
+ "science": "Block 71: resolves the fixed-output overwrite rank deficit with an exact rank-32 archive isometry (return port) moving the realized (P,M,B) possibilities into a connected three-site Record packet while preserving arbitrary targets and references; conditional finite feasibility, not a formation law.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6278,
+  "branch": "physics-loop/toe-axiom-closure-block71-e0-environment-current-main-20260813"
+ },
+ "carried_by": "PR #6345 (Block 86) composes these archive/lock components verbatim into the guarded live-M2 instrument; Block 72 (#6279) NN-compiles the word",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7120",
+ "title": "feat(nstrin): three-site formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Three-site seed x-probes, strictly-earlier kernel. Records the saturation mechanism: D=(1,1,0) has all six neighbours recorded, so n(D)=(0,0,0) identically and no sign letter exists. Shows the occupancy-kernel readout is self-extinguishing \u2014 it is defined only during a transient and vanishes at any probe deep inside the recorded region.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7120,
+  "branch": "physics-loop/toe-lphys-block-nstrin-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

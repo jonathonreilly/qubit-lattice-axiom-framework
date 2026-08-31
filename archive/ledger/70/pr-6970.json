@@ -1,0 +1,19 @@
+{
+ "id": "pr-6970",
+ "title": "feat(c2d4k14): cost-2 max\u22654 out-face same-k restores k=14: t=30 vs t=46",
+ "science": "c2d4 same-k at k=14 on B_42(0): (30,46). Fully subsumed -- #6978 (B_45) and #6981 (B_54) each recompute this exact pair inside their own single Dijkstra. Carried by #6981.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (2700>2116; band bit) face=absent",
+ "source": {
+  "pr": 6970,
+  "branch": "physics-loop/toe-lphys-block-c2d4k14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

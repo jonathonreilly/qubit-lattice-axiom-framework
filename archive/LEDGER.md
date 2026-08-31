@@ -1,0 +1,1586 @@
+# Archive ledger — human index
+
+Generated from the 2026-08-31 densify FULL-READ (every item read in complete diff).
+Machine entries in `ledger/`; band science in `families/` and `chains/`.
+
+- pr-5937: [physics-loop][review-loop] toe-time blockG6 (STACKED on #5931) — Cycle 880: bounded theor
+- pr-5938: [physics-loop][review-loop] toe-time blockT3 (STACKED on #5936) — Cycle 881: bounded theor
+- pr-5939: [physics-loop][review-loop] toe-time blockG7 (STACKED on #5937) — Cycle 882: bounded theor **[promotion candidate]**
+- pr-5941: [physics-loop][review-loop] toe-time blockG8 (STACKED on #5939) — Cycle 883: bounded theor
+- pr-5943: [physics-loop][review-loop] toe-time blockG9 (STACKED on #5941) — Cycle 884: bounded theor
+- pr-5944: [physics-loop][review-loop] toe-time blockG10 (STACKED on #5943) — Cycle 885: bounded theo
+- pr-5945: [physics-loop][review-loop] toe-time blockG12 (STACKED on #5944) — Cycle 887: bounded theo
+- pr-5946: [physics-loop][review-loop] toe-time blockG11 (STACKED on #5944) — Cycle 886: bounded theo
+- pr-5947: [physics-loop][review-loop] toe-time blockG13 (STACKED on #5946) — Cycle 888: bounded theo **[promotion candidate]**
+- pr-5948: [physics-loop][review-loop] toe-time blockT4 (STACKED on #5938) — Cycle 889: bounded theor **[promotion candidate]**
+- pr-5956: [physics-loop][review-loop] toe-time blockG19 (STACKED on #5952) — Cycle 896: bounded theo
+- pr-5958: [physics-loop][review-loop] toe-time blockG20 (STACKED on #5952) — Cycle 897: bounded theo **[promotion candidate]**
+- pr-5960: [physics-loop][review-loop] toe-time blockG22 (STACKED on #5952) — Cycle 899: bounded theo
+- pr-5970: [physics-loop][review-loop] toe-time blockQ4 (STACKED on #5969) — Cycle 907: bounded theor **[promotion candidate]**
+- pr-5971: [physics-loop][review-loop] toe-time blockQ5 (STACKED on #5969) — Cycle 908: bounded theor **[promotion candidate]**
+- pr-5972: [physics-loop][review-loop] toe-time blockQ7 (STACKED on #5971) — Cycle 910: bounded theor
+- pr-5973: [physics-loop][review-loop] toe-time blockQ6 (STACKED on #5970) — Cycle 909: bounded theor **[promotion candidate]**
+- pr-5975: [physics-loop][review-loop] toe-time blockQ9 (STACKED on #5973) — Cycle 912: bounded theor
+- pr-5976: [physics-loop][review-loop] toe-time blockQ8 (STACKED on #5973) — Cycle 911: bounded theor **[promotion candidate]**
+- pr-5977: [physics-loop][review-loop] toe-time blockQ10 (STACKED on #5976) — Cycle 913: bounded theo **[promotion candidate]**
+- pr-5984: [physics-loop][review-loop] toe-time blockM4 (STACKED on #5982) — Cycle 917: bounded theor **[promotion candidate]**
+- pr-5985: [physics-loop][review-loop] toe-time blockM6 (STACKED on #5984) — Cycle 920: bounded theor **[promotion candidate]**
+- pr-5986: [physics-loop][review-loop] toe-time blockM5 (STACKED on #5984) — Cycle 919: bounded theor
+- pr-5987: [physics-loop][review-loop] toe-time blockQ11 (STACKED on #5977) — Cycle 918: bounded theo
+- pr-5991: [physics-loop][review-loop] toe-time blockM7 (STACKED on #5986) — Cycle 921: bounded theor **[promotion candidate]**
+- pr-5992: [physics-loop][review-loop] toe-time blockQ12 (STACKED on #5987) — Cycle 925: bounded theo **[promotion candidate]**
+- pr-5993: [physics-loop][review-loop] toe-time blockM8 (STACKED on #5986) — Cycle 926: bounded theor **[promotion candidate]**
+- pr-5994: [physics-loop][review-loop] toe-time blockM9 (STACKED on #5991) — Cycle 927: bounded theor
+- pr-5996: [physics-loop][review-loop] toe-time blockT6 (STACKED on #5951) — Cycle 922: bounded theor **[promotion candidate]**
+- pr-5997: [physics-loop][review-loop] toe-time blockM10 (STACKED on #5994) — Cycle 929: bounded theo
+- pr-5999: [physics-loop][review-loop] toe-time blockM11 (STACKED on #5997) — Cycle 931: bounded theo **[promotion candidate]**
+- pr-6001: [physics-loop][review-loop] toe-time blockM12 (STACKED on #5999) — Cycle 932: bounded theo
+- pr-6002: [physics-loop][review-loop] toe-time blockM13 (STACKED on #5999) — Cycle 933: bounded theo **[promotion candidate]**
+- pr-6006: [physics-loop][review-loop] toe-time blockQ13 (STACKED on #5992) — Cycle 936: bounded theo **[promotion candidate]**
+- pr-6007: [physics-loop][review-loop] toe-time blockAC4 (STACKED on #6004) — Cycle 939: bounded theo **[promotion candidate]**
+- pr-6010: [physics-loop][review-loop] toe-time blockQ14 (STACKED on #6006) — Cycle 940: bounded theo **[promotion candidate]**
+- pr-6012: [physics-loop][review-loop] toe-time blockQ15 (STACKED on #6010) — Cycle 943: bounded theo
+- pr-6014: [physics-loop][review-loop] toe-time blockQ17 (STACKED on #6012) — Cycle 946: bounded theo **[promotion candidate]**
+- pr-6077: science(resource): separate Record readout from pair action
+- pr-6078: Physics loop: derive code-symmetric cut-area action **[promotion candidate]**
+- pr-6079: science(gravity): derive coframe cut Ward family
+- pr-6080: science(gravity): derive affine bag Regge monopole boundary
+- pr-6081: science(gravity): derive exact static tick-edge Regge source
+- pr-6082: science(gravity): derive closed helical Ward source
+- pr-6083: science(gravity): derive positive two-stream dilation boundary **[promotion candidate]**
+- pr-6085: [physics-loop] toe-axiom-closure block16 — bounded_theorem — bounded-support — connected b
+- pr-6088: [physics-loop] toe-axiom-closure block17 — bounded_theorem — bounded-support — compact hom
+- pr-6089: [physics-loop] toe-axiom-closure block18 — bounded_theorem — bounded-support — nonlinear R
+- pr-6090: [physics-loop] toe-axiom-closure block19 — bounded_theorem — bounded-support — affine nonl **[promotion candidate]**
+- pr-6091: [physics-loop] toe-axiom-closure block20 — bounded_theorem — bounded-support — local Regge
+- pr-6092: [physics-loop] toe-axiom-closure block21 — bounded_theorem — bounded-support — sourced Reg
+- pr-6093: Block 22: localize sourced Regge Ward defect
+- pr-6094: science(gravity): construct joint sourced Ward completion
+- pr-6095: science(gravity): test direct hyperface seagull span
+- pr-6096: science(gravity): bound proper-length source contact
+- pr-6097: science(gravity): prove additive-zero contact ambiguity **[promotion candidate]**
+- pr-6098: science(gravity): anchor null-record action representative
+- pr-6099: science(gravity): compose null anchor with RN sources
+- pr-6100: science(gravity): endogenize geometry and localize RN contact **[promotion candidate]**
+- pr-6101: science(gravity): select phase before homogeneous contact
+- pr-6102: science(gravity): route Record sources by compact null charge
+- pr-6103: science(gravity): compile Record stress into metric reactions
+- pr-6105: Block 32: expose interacting Record gluing and phase-response boundary
+- pr-6107: science: close finite-width Perron cylinder gluing
+- pr-6108: science: join geometry and Record Perron response
+- pr-6112: science(gravity): localize joint geometry and expose decoder connection
+- pr-6118: science: isolate the ten-ray local-frame Ward boundary
+- pr-6123: science: build the intrinsic spatial Einstein-Cartan Record cube
+- pr-6124: science: glue the Einstein-Cartan Record cube overlap
+- pr-6126: science: close the periodic Record phase **[promotion candidate]**
+- pr-6128: science: prove the periodic flat vacuum
+- pr-6130: Block 41: localize flat spin-two gravity boundary
+- pr-6132: Block 42: localize physical flat connection instability **[promotion candidate]**
+- pr-6134: Block 43: repaired Regge Ward and increasing-torus Green sector
+- pr-6135: science: derive repaired-edge IR Einstein and conditional TT sector **[promotion candidate]**
+- pr-6137: science: localize Record and Lorentzian selection walls
+- pr-6138: Physics: isolate the joint Record-gravity law cut **[promotion candidate]**
+- pr-6140: Science: full-edge finite-frequency gravity pole survival
+- pr-6141: science: isolate reflected Regge transfer boundary
+- pr-6142: science: derive reflected curvature-source intertwiner
+- pr-6143: [physics-loop] block50 common-metric OS transfer obstruction **[promotion candidate]**
+- pr-6144: science: positive two-TT transfer and Record continuity boundary
+- pr-6145: science: conserved Record frontier and causal update boundary
+- pr-6146: [physics-loop] block53 split-step causal update — bounded_theorem / bounded-support **[promotion candidate]**
+- pr-6147: science: isolate nonlinear Regge constraint route **[promotion candidate]**
+- pr-6148: science: classify full projective sector grading
+- pr-6149: science: isolate physical M2 grading decoder
+- pr-6150: science(toe): expose cross-root joint-law axiom extent **[promotion candidate]**
+- pr-6151: science(toe): expose nonuniform conserved-source Ward obstruction
+- pr-6152: TOE Block 59: resolve Regge infrared pseudo-constraint scaling **[promotion candidate]**
+- pr-6153: TOE Block 60: expose nonaxial Regge Ward cancellation order
+- pr-6154: science(toe): complete nonlinear metric Ward embedding
+- pr-6155: science(toe): close full source multimode Ward tensor **[promotion candidate]**
+- pr-6156: science(toe): construct state-dependent Record/Born history law
+- pr-6157: TOE Block 64: strict-NN Record/Born/history single front **[promotion candidate]**
+- pr-6158: TOE Block 65: physical-state to Record attachment selection cut **[promotion candidate]**
+- pr-6159: science(toe): intertwine Cycle713 endpoint with Record attachment
+- pr-6236: [physics-loop] toe-lphys c1bornJ: bounded_theorem / bounded-support
+- pr-6237: [physics-loop] toe-lphys c1hist: bounded_theorem / bounded-support
+- pr-6238: [physics-loop] toe-lphys c1restr: bounded_theorem / bounded-support
+- pr-6239: [physics-loop] toe-lphys c1perm: bounded_theorem / bounded-support
+- pr-6240: [physics-loop] toe-lphys c1addI: bounded_theorem / bounded-support
+- pr-6241: [physics-loop] toe-lphys c1alone: bounded_theorem / bounded-support
+- pr-6242: [physics-loop] toe-lphys c1zero: bounded_theorem / bounded-support
+- pr-6243: [physics-loop] toe-lphys c1read: bounded_theorem / bounded-support
+- pr-6244: [physics-loop] toe-lphys c1adm: bounded_theorem / bounded-support
+- pr-6245: [physics-loop] toe-lphys c1one: bounded_theorem / bounded-support
+- pr-6246: [physics-loop] toe-lphys c1lockperm: bounded_theorem / bounded-support
+- pr-6248: [physics-loop] toe-lphys rfreq: bounded_theorem / bounded-support
+- pr-6249: [physics-loop] toe-lphys blankocc: bounded_theorem / bounded-support
+- pr-6250: [physics-loop] toe-lphys c2m3unital: bounded_theorem / bounded-support
+- pr-6251: [physics-loop] toe-lphys c2m3corner: bounded_theorem / bounded-support
+- pr-6252: [physics-loop] toe-lphys c2declare: bounded_theorem / bounded-support
+- pr-6253: [physics-loop] toe-lphys c2m3sum: bounded_theorem / bounded-support
+- pr-6254: [physics-loop] toe-lphys c2m3class: bounded_theorem / bounded-support
+- pr-6255: [physics-loop] toe-lphys c2hilb: bounded_theorem / bounded-support
+- pr-6256: [physics-loop] toe-lphys phy8ten: bounded_theorem / bounded-support
+- pr-6257: [physics-loop] toe-lphys clockrec: bounded_theorem / bounded-support
+- pr-6258: [physics-loop] toe-lphys bornk2: bounded_theorem / bounded-support
+- pr-6259: [physics-loop] toe-lphys pair2arg: bounded_theorem / bounded-support
+- pr-6260: [physics-loop] toe-lphys formtwo: bounded_theorem / bounded-support
+- pr-6261: [physics-loop] toe-lphys color3sup: bounded_theorem / bounded-support
+- pr-6262: [physics-loop] toe-lphys coloradj: bounded_theorem / bounded-support
+- pr-6267: [physics-loop] toe-lphys c3perm: bounded_theorem / bounded-support
+- pr-6268: [physics-loop] toe-lphys cubec3: bounded_theorem / bounded-support
+- pr-6270: [physics-loop] toe-lphys pairlab: bounded_theorem / bounded-support
+- pr-6271: [physics-loop] toe-lphys pairblank: bounded_theorem / bounded-support
+- pr-6272: [physics-loop] toe-lphys adjfork: bounded_theorem / bounded-support
+- pr-6273: [physics-loop] toe-lphys corneraut: bounded_theorem / bounded-support
+- pr-6274: science(toe): compile Cycle713 five-M2 Record cut
+- pr-6276: [physics-loop] toe-lphys cubeframe: bounded_theorem / bounded-support
+- pr-6277: [physics-loop] toe-lphys invstate: bounded_theorem / bounded-support
+- pr-6278: science(toe): bound same-carrier Record archive packet
+- pr-6279: science(toe): localize formation selector interface
+- pr-6283: science(toe): rank gravity replacement route
+- pr-6284: feat(memberexec): display one executable axiom-class member L0
+- pr-6286: science(toe): close sourced ADM constraint cadence
+- pr-6288: science(toe): expose gravity debit Ward and state fork
+- pr-6289: feat(recstack): L0 Record formation, permanence, and source increment
+- pr-6290: feat(intstep): one occupancy-to-lock update on a 3-site line
+- pr-6291: feat(specpv): construct L0 k=2,3 spectral projectors over Q(sqrt k)
+- pr-6292: feat(formdraw): PVM draw for lock content on the 3-site line
+- pr-6293: feat(cube6nn): occupancy-to-lock step on a displayed 2x2x2 cube
+- pr-6294: feat(nuniq): unique cubic-equivariant linear occupancy kernel
+- pr-6295: feat(linespd): speed-1 formation wave on a 5-site line
+- pr-6296: feat(cov56): L0 spectral measure on all 56 nonzero cells
+- pr-6297: feat(stepcov): cube occupancy step commutes with a 90° rotation
+- pr-6298: feat(cubepvm): cube occupancy step with PVM lock-content traces
+- pr-6299: feat(cube333): occupancy step on a 3x3x3 cube with an interior
+- pr-6300: feat(korb): k is not a single cubic-orbit label
+- pr-6301: feat(oppcan): n=0 cells never form **[promotion candidate]**
+- pr-6303: feat(recgrav): two-cube occupancy step with displayed Gauss flux
+- pr-6304: science(toe): construct matched tensor shadow exchange
+- pr-6305: feat(gaugefix): unique 2-face tree-gauge flux given g=ρ
+- pr-6306: feat(treesup): +x ray uniquely selects {F*, F_B} support
+- pr-6308: feat(clockid): unique empty-vanishing monotone is formation count
+- pr-6309: feat(bornmenu): first-wave formation PVM traces are 2/3 and 1/3
+- pr-6310: feat(rhogrow): cube source increment equals new locks in that cube
+- pr-6311: feat(covdec): 180deg about x commutes with two-cube update
+- pr-6312: feat(extvac): off-patch occupancy 0 is load-bearing
+- pr-6313: feat(nrmdir): shared-face formation has n along the face normal
+- pr-6314: feat(seedclass): classify one-site seeds on the two-cube
+- pr-6315: feat(kform): first-wave formations from the corner seed have k=1
+- pr-6316: feat(s4id): cube rotations isomorphic to S4 via space diagonals
+- pr-6317: feat(octid): 24 cube rotations are not C24 or D12
+- pr-6318: science(toe): derive local shadow energy action boundary
+- pr-6319: feat(irrep3): only the standard 3 of S4 lands in SO(3)
+- pr-6320: feat(l1int): one integrated two-cube member L1
+- pr-6321: feat(menuuniq): unique stabilizer-covariant rank-1 PVM **[promotion candidate]**
+- pr-6322: feat(srcuniq): unique cube-symmetric additive source is sum o
+- pr-6323: feat(seed2orb): two-site seeds form mutually iff 6-NN
+- pr-6324: feat(conjrep): faithful S4 images in this SO(3) frame are G-conjugate
+- pr-6325: science(toe): construct component-staggered link action
+- pr-6326: science(toe): construct global Record cylinder law
+- pr-6327: feat(l1comp): two-tick composition of displayed L1
+- pr-6328: feat(l1draw): realized first-wave PVM labels do not feed n
+- pr-6329: feat(l1srcid): clock plus shared-face count equals cube-source sum
+- pr-6330: feat(l1a1): unique hop-to-tick scale on the L1 axis is 1
+- pr-6331: feat(l1gaus2): tree gauge stays source-complete after two L1 ticks
+- pr-6332: feat(l1cone): L1 support at tick t is the ell^1 ball of radius t
+- pr-6333: feat(l1k2): second-wave L1 formations have k in {1,2}
+- pr-6334: feat(l1tick): two-tick L1 clock is lock-count minus seed
+- pr-6335: feat(l1t3): L1 tick 3 forms the three d=3 sites
+- pr-6336: feat(l1t4): L1 tick 4 forms the last site
+- pr-6337: feat(l1fill): L1 saturates the two-cube at tick 4
+- pr-6338: feat(l1fixed): after saturation L1 is the identity
+- pr-6340: feat(l1horizon): L1 horizon equals the l1 diameter
+- pr-6341: feat(l1gaus4): tree gauge holds through saturation
+- pr-6342: feat(l1src3): shared-face clock-source identity at ticks 3 and 4
+- pr-6343: feat(actfree): L1 formation does not use an M2 action
+- pr-6349: science(toe): localize typed-event collision boundary **[promotion candidate]**
+- pr-6351: physics: guarded pair-aware swap-back collision repair
+- pr-6353: feat(physical-cell): label sum is affine in one family trace, cycle 784
+- pr-6355: feat(cell): cycle 785 parity constancy from sign characters, small-class equal split
+- pr-6357: feat(cycle786): facet alphabet, heavy parity law, and the forty period-one cuttings
+- pr-6359: feat(cell-cutting): interface transfer spectrum, exact factorization, evenness law (cycle
+- pr-6361: feat(cell-cutting): refute five evenness mechanism routes at the interface **[promotion candidate]**
+- pr-6362: physics: construct dressed stage and nonlinear density branch
+- pr-6363: feat(cycle789): free-fold parity reduction on the interface wall fibers
+- pr-6364: physics: cancel leading scalar-gravity exchange defect
+- pr-6367: feat(cell-cutting): single-fiber cover rigidity, the induced symmetry group of the fourtee
+- pr-6369: feat(cell-cutting): fiber linearization law, every wall fiber cover problem is a coset min
+- pr-6374: feat: cycle 794 clean-exchange symmetry and the parity descent to two cuttings
+- pr-6375: feat(cell-geometry): the pinned pair - no map at any level can exchange the two exceptiona **[promotion candidate]**
+- pr-6378: feat: cycle 796 wall homogeneity and the fold as entry stabilizer
+- pr-6381: feat(formclass): count cube-covariant formation predicates **[promotion candidate]**
+- pr-6382: feat(vacalt): blank neighbor is not occupancy zero **[promotion candidate]**
+- pr-6383: feat(actneed): action required for projectors not k-class
+- pr-6384: feat(nonlin1): two-axis unbalanced formation member
+- pr-6385: feat(ftwofill): f_two three-site seed halt census
+- pr-6386: feat(koname): occupancy lock labels are the pairs (S,k)
+- pr-6388: feat(ftwoseed): f_two first wave exists from a 2-site face-diagonal seed
+- pr-6389: feat(linform): unique linear-threshold formation predicate is f_L1 **[promotion candidate]**
+- pr-6390: feat(blankclass): blank-slot covariant formation class is larger than F_G
+- pr-6391: feat(selcut): three cuts leave 32 covariant formation predicates
+- pr-6393: feat(rawfill): 96 covariant maps fill the two-cube from one site
+- pr-6394: feat(classblank): blank-block empties every 1-site first wave **[promotion candidate]**
+- pr-6395: feat(hamdyn): Hamming-parity formation halts at T=4 with 9 locks
+- pr-6396: feat(v3dyn): vertex3 indicator has empty 1-site first wave
+- pr-6397: feat(ftwo2fill): f_two face-diagonal seed halts at T=1 with 4 locks
+- pr-6398: feat(blankfill): no covariant f fills from 1-site under blank-block **[promotion candidate]**
+- pr-6399: feat(fillcut): eight F_cut maps fill from one site
+- pr-6400: feat(l1sparse): sparsest 1-site filler is not f_L1
+- pr-6401: feat(fill2site): 64 maps fill from a 2-site face-diagonal seed
+- pr-6402: feat(opp0fill): four of eight F_cut fillers silence opp2
+- pr-6403: feat(v31fill): four of eight F_cut fillers fire vertex3
+- pr-6404: feat(l1and): L1 remaining bits select one of eight fillers
+- pr-6405: feat(adj1fill): all eight F_cut fillers fire adj2
+- pr-6406: physics: descend the Dirac-Kahler action onto the patch carrier **[promotion candidate]**
+- pr-6407: feat(fminid): name the unique support-26 1-site filler as the n_both=0 map **[promotion candidate]**
+- pr-6408: feat(andline): AND of L1 remaining bits among F_cut line-seed fillers is unique
+- pr-6409: feat(mix3fill): mixed3=1 holds for 48 of the 96 1-site fillers
+- pr-6410: feat(rival8): display the eight F_cut 1-site filler remaining-bit tuples **[promotion candidate]**
+- pr-6411: feat(mindyn): display f_min 1-site halt history (1,4,8,11,12)
+- pr-6412: feat(minline): f_min fills from 3-site line seed with history (3,9,12)
+- pr-6413: feat(cut2site): N_cut2=4 F_cut fillers from 2-site face-diagonal
+- pr-6414: feat(cutsparse): F_cut support min is 36, not f_L1
+- pr-6415: feat(cut2list): list four F_cut 2-site filler remaining-bit tuples
+- pr-6416: feat(min2site): f_min fills from the face-diagonal 2-site seed
+- pr-6417: feat(mindiff): first |S|<=3 seed where f_min and f_L1 disagree **[promotion candidate]**
+- pr-6418: feat(cutmindyn): halt history of unique support-36 F_cut 1-site filler
+- pr-6419: feat(cutminline): f_cutmin fills from the 3-site line seed with history (3,9,12)
+- pr-6420: feat(diffnbhd): first disagreeing neighborhood of f_min and f_L1 on S*
+- pr-6421: feat(cutmin2site): f_cutmin does not fill from the 2-site face-diagonal
+- pr-6422: feat(diff2count): 4 of 66 two-site seeds split f_min from f_L1
+- pr-6423: feat(split4list): list the four two-site seeds that split f_min from f_L1
+- pr-6424: feat(cutopp): count F_cut fillers from the opposite-corner 2-site seed
+- pr-6425: feat(splitorbit): count cube-orbits of the four f_min/f_L1 split seeds
+- pr-6426: feat(cutminopp): run f_cutmin from the opposite-corner 2-site seed **[promotion candidate]**
+- pr-6427: feat(min3split): count 3-site seeds that split f_min from f_L1
+- pr-6428: feat(mix0line): run f_mix0 from the 3-site long-axis seed
+- pr-6429: feat(cut2cover): rank 2-site fill coverage of the 32 F_cut maps
+- pr-6430: feat(coverival): name both F_cut 2-site coverage maximizers
+- pr-6431: feat(cov3split): first 3-site seed where the two cov=66 maximizers disagree
+- pr-6432: feat(sitecov): rank 1-site fill coverage of the 32 F_cut maps
+- pr-6433: feat(opp0cover): rank 2-site coverage among F_cut maps with opp2=0
+- pr-6434: feat(opp0ival): name both F_cut opp2=0 coverage maximizers
+- pr-6435: feat(siteival): name the four F_cut 1-site coverage maximizers
+- pr-6436: feat(mix0miss2): list the four two-site seeds f_mix0 misses
+- pr-6437: feat(mix0diff): first mix0/L1 split is a 3-site long-axis seed
+- pr-6438: feat(l1miss2): list the four two-site seeds f_L1 does not fill
+- pr-6439: feat(l1misswhy): L1 misses the long-axis 2-site seeds by refusing opp2
+- pr-6440: physics: derive the seam kernel and test the two-history Gram **[promotion candidate]**
+- pr-6441: feat(mix0diffwhy): first mix0/L1 disagreement is mixed3 at (1,0,0) tick 2
+- pr-6442: feat(opp0miss): every silent-opp2 F_cut map misses the four long-axis seeds
+- pr-6443: feat(opp2fill4): four long-axis fills are not equivalent to opp2=1
+- pr-6444: feat(k4site): k=4 1-site coverage is 12 iff vertex3=1
+- pr-6445: feat(k4v30dyn): k=4 map (1,1,1,0,0) 1-site history disagrees with L1
+- pr-6446: feat(k4cov): k=4 2-site coverage is 66 iff vertex3=1
+- pr-6447: feat(v30same2): vertex3=0 k=4 maps have equal 2-site miss sets
+- pr-6448: feat(v30miss1): list four 1-site misses of the vertex3=0 k=4 maps
+- pr-6449: feat(k4v31dyn): 1-site halt of k=4 map (1,1,1,0,1)
+- pr-6450: feat(v30why1): first f00/f11 shared-face miss is vertex3 at t=3
+- pr-6451: feat(v3face): fill-from-(1,0,0) is not equivalent to vertex3=1
+- pr-6452: feat(v30mix3): mix0/L1 splitter seed splits vertex3=0 k=4 pair
+- pr-6453: feat(cut3cover): f_L1 is not unique 3-site F_cut maximizer
+- pr-6454: feat(cminmix): 1-site halt of unnamed F_cut filler (1,0,1,0,1)
+- pr-6455: physics: reduce the seam involution and force global dressing support **[promotion candidate]**
+- pr-6456: feat(c3f0): report cov3(f0)=212 for mixed3-silent cov2-maximizer
+- pr-6457: feat(bothmax): unique F_cut joint 2-site and 3-site maximizer is (1,1,1,1,1)
+- pr-6458: feat(v30mix3why): first neighborhood where vertex3=0 k=4 pair disagrees
+- pr-6459: feat(mix0c3): f_mix0 three-site coverage is 188 of 220
+- pr-6460: feat(cut4cover): unique 4-site F_cut maximizer is f1 not f_L1
+- pr-6461: feat(c3f0geo): f0 three-site misses form one rotation orbit
+- pr-6462: feat(l1c4why): first f_L1 four-site miss refuses on opp2
+- pr-6463: feat(c4l1geo): four-site f_L1 misses form two rotation orbits
+- pr-6464: feat(cminmix3): cutmin mixed3 pair splits on the mix0/L1 seed
+- pr-6465: feat(cutkuniq): coverage is unique only at k=4,6,8 and the maximizer is f1 **[promotion candidate]**
+- pr-6466: feat(c4share): L1 and f0 do not miss the same 4-site seeds
+- pr-6467: feat(f0c3why): f0 three-site misses first refuse mixed3
+- pr-6468: feat(f0c4why): f0 four-site miss first refuses mixed3 not opp2
+- pr-6469: feat(mix0c3why): mix0 three-site miss first refuses opp2 not mixed3
+- pr-6470: feat(c6l1geo): six-site f_L1 misses form one rotation orbit
+- pr-6471: feat(l1c8why): first f_L1 eight-site miss refuses on opp2
+- pr-6472: feat(cut5who): name the two 5-site F_cut coverage maximizers
+- pr-6473: feat(cut1who): name the four 1-site F_cut coverage maximizers
+- pr-6474: feat(mix0c4why): mix0 four-site miss first refuses opp2 not mixed3
+- pr-6475: feat(l1c6why): first f_L1 six-site miss refuses on opp2
+- pr-6476: feat(kdual): F_cut maximizer sets at k and 12-k are not equal
+- pr-6477: feat(c6share): L1 and f0 do not miss the same 6-site seeds
+- pr-6478: feat(wt0mixdiff): first seed where mix0 fills and its wt1=0 sibling does not
+- pr-6479: feat(wt0diff): first seed where L1 fills and its wt1=0 sibling does not
+- pr-6480: feat(wt0f1diff): first seed where f1 fills and its wt1=0 sibling does not
+- pr-6481: feat(wt0f0diff): first seed where f0 fills and its wt1=0 sibling does not
+- pr-6482: feat(wt0c2max): unique 2-site maximizer among wt1=0 F_cut maps
+- pr-6483: feat(wt0c3max): unique 3-site maximizer among wt1=0 F_cut maps
+- pr-6484: feat(max11split): first seed that splits the four extra Max(11) maps
+- pr-6486: feat(wt0oppdiff): first seed that splits the wt1=0 pair on opp2
+- pr-6487: feat(wt0kuniq): report wt1=0 coverage uniqueness set K_unique={4..8}
+- pr-6488: feat(wt0oppwhy): first refused neighborhood on the #6484 opp2 split
+- pr-6489: feat(wt0mix3split): mixed3 is free on fill for the wt1=0 3-site max pair
+- pr-6490: feat(wt1iff2): wt1 is not equivalent to positive two-site coverage
+- pr-6491: feat(c00l1diff): first |S|<=3 split of L1 vs (1,0,0,0,0)
+- pr-6492: feat(c00c10diff): first |S|<=3 split of the two #6490 exceptions
+- pr-6493: feat(c00firstfill): lex-first seed that (1,0,0,0,0) fills **[promotion candidate]**
+- pr-6494: feat(wt2closed): cov2>0 iff remaining-bit selector P **[promotion candidate]**
+- pr-6495: feat(c00c1): 1-site coverage of the two #6490 exceptions
+- pr-6496: feat(c10firstfill): lex-first seed that (1,1,0,0,0) fills
+- pr-6497: feat(s10fillwhy): first refuse of (1,1,0,0,0) on the #6492 seed
+- pr-6498: feat(c00facewhy): first refuse on f00 lex-first 4-face fill
+- pr-6499: feat(s00oppwhy): first refuse of (1,0,0,0,0) on the #6492 seed
+- pr-6500: feat(c00c3): 3-site coverage of the two #6490 exceptions
+- pr-6501: feat(c10l1diff): first |S|<=3 split of L1 vs (1,1,0,0,0)
+- pr-6502: feat(p3closed): cov3>0 is not equivalent to selector P
+- pr-6503: feat(p1closed): whether cov1>0 is equivalent to selector P
+- pr-6504: feat(c00c4orb): orbit type of f00 seven 4-site fills
+- pr-6505: feat(triple0why): first refuse of f00 vs f1 on lex-first 2-site f1 fill
+- pr-6506: feat(f10c4n): 4-site coverage of (1,1,0,0,0)
+- pr-6507: feat(f10onface): whether f10 fills f00 lex-first 4-face
+- pr-6508: feat(c4shareex): whether f00 and f10 share the same 7 four-site fills
+- pr-6509: feat(p4closed): whether cov4>0 is equivalent to selector P
+- pr-6510: feat(p3miss1): first |S|<=3 split of L1 vs (1,0,0,0,1)
+- pr-6511: feat(p3ex0): first |S|<=3 split of L1 vs (0,0,1,1,0)
+- pr-6512: feat(f10c3orb): orbit type of f10 four 3-site fills
+- pr-6513: feat(c4midwhy): first refuse of f00 on the midplane 4-site
+- pr-6514: feat(p3sel): remaining-bit search for a cov3>0 selector
+- pr-6516: feat(p1sel): remaining-bit search for a cov1>0 selector **[promotion candidate]**
+- pr-6517: feat(ex0first): lex-first seed that (0,0,1,1,0) fills
+- pr-6518: feat(p4sel): cov4>0 iff wt1=1 or adj2=1 **[promotion candidate]**
+- pr-6519: feat(mix1first): lex-first seed that (1,0,0,0,1) fills
+- pr-6520: feat(qstarwhy): first refuse of (1,0,0,0,1) from the origin is adj2
+- pr-6521: feat(ex0c2): cov2 and cov4 of (0,0,1,1,0)
+- pr-6522: feat(q1tot): among Q_* maps, cov1=12 iff vertex3=1 **[promotion candidate]**
+- pr-6523: feat(mix1c2orb): N_orb=1 of mix1 eight two-site fills
+- pr-6524: feat(p3bit3): no 3-bit remaining-bit Q equals cov3>0 **[promotion candidate]**
+- pr-6525: feat(ex0c3orb): N_orb=4 of ex0 twenty-four 3-site fills
+- pr-6526: feat(q4c6): cov6>0 is not Q4; four extras are vertex3=1
+- pr-6527: feat(q4c8): cov8>0 is not Q4; N_pos=30
+- pr-6528: feat(q1split): first Q_* totality split is {(1,0,0)}
+- pr-6529: feat(q4false): Q4-false first refuse on f1 4-site fill is wt1
+- pr-6530: feat(q1ntwhy): f_nt first refuse from {(1,0,0)} is vertex3
+- pr-6531: feat(p6sel): cov6>0 iff wt1 or adj2 or vertex3
+- pr-6532: feat(p8sel): no displayed remaining-bit Q equals cov8>0
+- pr-6533: feat(p3bit4): no 4-bit remaining-bit Q equals cov3>0
+- pr-6534: feat(tot2q): among Q_*, cov2=66 is not iff vertex3=1
+- pr-6535: feat(q6zero): cov6-zero first refuse on f1 6-site fill is adj2
+- pr-6536: feat(q8zero): cov8=0 pair is (0,0,0,0,0) and (0,0,0,0,1)
+- pr-6537: feat(ntall): {(1,0,0)} is a class split of non-tot Q_*
+- pr-6538: feat(q0all): every Q4-false map first refuses wt1 on f1 4-face
+- pr-6539: feat(p8q8): cov8>0 iff wt1 or adj2 or opp2 or vertex3
+- pr-6540: feat(q6class): every cov6=0 map first refuses adj2
+- pr-6541: physics: factorize the positivity frontier and refute the parity obstruction
+- pr-6542: feat(tot2opp): among tot Q_*, cov2=66 iff opp2=1
+- pr-6543: feat(tot2why): cov2=62 gap first refuse is opp2
+- pr-6544: feat(p3bit5): no 5-bit remaining-bit Q equals cov3>0
+- pr-6545: feat(q8class): both cov8=0 maps first refuse wt1
+- pr-6546: feat(nontot2): first non-tot Q_* cov2 split is opposite ends
+- pr-6547: physics: refute the paired parity hypothesis with an even branch
+- pr-6548: feat(tot2sel): cov2=66 iff wt1 and adj2 and opp2 and vertex3
+- pr-6549: feat(tot2miss): f_g misses four long-axis pairs; N_orb=1
+- pr-6550: feat(nontotwhy): non-tot cov2 split first refuse is opp2
+- pr-6551: feat(q3bits): no remaining bit is constant on the 20 cov3>0 maps
+- pr-6552: feat(q6q8): Q6 implies Q8; two Q6-false maps still have cov8>0
+- pr-6553: feat(ntonopp): among non-tot Q_*, cov2=36 iff opp2=1
+- pr-6554: feat(tot12): joint tot12 iff vertex3 and opp2 among Q_*
+- pr-6555: feat(q8inc): not every Q8-true map has cov6>0
+- pr-6556: feat(extrafill): first fill of Q8 extra is opposite x-faces
+- pr-6557: physics: refute the paired floor and construct the mixed circle
+- pr-6558: feat(extra6why): Q8 extra first-refuses adj2 on f1 six-site fill
+- pr-6559: feat(extra6cls): both Q8 extras first-refuse adj2
+- pr-6560: feat(tot3sel): no displayed remaining-bit Q equals cov3=220
+- pr-6561: feat(qstarc3): Q_* cov3 census; tot3 is not vertex3 and opp2 and mixed3
+- pr-6562: feat(c5sel): cov5>0 is not Q4, not Q6, and not a 1-bit or 2-bit OR
+- pr-6563: feat(q66c6): cov6 of Q66 is 904 versus 924
+- pr-6564: feat(mix3c8): mixed3 is not free for cov8 inside Q8
+- pr-6565: feat(c11sel): cov11>0 is not Q_star and not Q4
+- pr-6566: feat(c10sel): no displayed remaining-bit Q equals cov10>0
+- pr-6567: feat(c7sel): cov7>0 is not Q4, not Q6, and not Q8 **[promotion candidate]**
+- pr-6568: feat(q66c8): cov8 of Q66 is 471 versus 495
+- pr-6569: feat(q66c5): cov5 of Q66 is 752 versus 792
+- pr-6570: feat(qstarc5): among Q_star, cov5=792 iff vertex3 and mixed3
+- pr-6571: feat(c9sel): cov9>0 is not Q_star, Q4, Q6, or Q8
+- pr-6572: feat(q3v3m3): among Q_star, cov3=220 iff vertex3 and mixed3
+- pr-6573: feat(c5bit3): no 3-bit remaining-bit Q equals cov5>0
+- pr-6574: feat(mix3sel): no 1-bit or 2-bit Q equals mixed3 cov8-equality
+- pr-6575: feat(q66c7): cov7 of Q66 is 776 versus 792
+- pr-6576: feat(c10bit3): cov10>0 iff adj2 or vertex3 or mixed3
+- pr-6577: feat(tot3bit3): no 3-bit remaining-bit Q equals cov3=220
+- pr-6578: feat(c11bit3): no 3-bit remaining-bit Q equals cov11>0
+- pr-6579: feat(c7bit3): no 3-bit remaining-bit Q equals cov7>0
+- pr-6580: feat(c9bit3): no 3-bit remaining-bit Q equals cov9>0
+- pr-6581: feat(qstarc7): among Q_star, cov7=792 iff vertex3 and mixed3
+- pr-6582: feat(qstarc11): every Q_star map has cov11>0
+- pr-6583: feat(mix3eq): unique equal-cov8 Q8 pair is the two extras
+- pr-6584: physics: certify the positive dressed reflection **[promotion candidate]**
+- pr-6585: feat(c8q10): cov8>0 is not Q10
+- pr-6586: feat(c6q10): cov6>0 is not Q10
+- pr-6587: feat(c4q10): cov4>0 is not Q10
+- pr-6588: feat(c2q10): cov2>0 is not Q10; positivity implies Q10
+- pr-6589: feat(c5q10): cov5>0 is not Q10; positivity implies Q10
+- pr-6590: feat(c10zero): lex-first Q10-false map first-refuses adj2
+- pr-6591: feat(c10cls): all four Q10-false maps first-refuse adj2
+- pr-6592: feat(qstarc10): among Q_star, cov10=66 iff vertex3 and mixed3
+- pr-6593: feat(qstartot4): among Q_star, Max(4) is unique f1, not vertex3 and mixed3
+- pr-6594: feat(qstartot6): among Q_star, Max(6) is unique f1, not vertex3 and mixed3
+- pr-6595: feat(qstartot8): among Q_star, Max(8) is unique f1, not vertex3 and mixed3
+- pr-6596: feat(c12q10): every F_cut map has cov12>0; not Q10, Q8, or Q4
+- pr-6597: feat(q10c1): cov1>0 is not Q10; positivity implies Q10
+- pr-6598: feat(c9q10): cov9>0 is not Q10; positivity implies Q10
+- pr-6599: feat(c7q10): cov7>0 is not Q10; positivity implies Q10
+- pr-6600: feat(mix1c10): Q10-true extra first-refuses adj2 on f1 ten-site fill
+- pr-6601: physics: compute the transfer spectrum and expose the selection gap **[promotion candidate]**
+- pr-6602: feat(c11q10): cov11>0 is not Q10; positivity implies Q10
+- pr-6603: feat(c3q10): cov3>0 is not Q10; positivity does not imply Q10
+- pr-6604: feat(qstartot9): among Q_star, Max(9) iff vertex3 and mixed3
+- pr-6605: feat(qstartot1): among Q_star, Max(1) is not vertex3 and mixed3
+- pr-6606: physics: prove the chart-invariant contractivity obstruction **[promotion candidate]**
+- pr-6607: feat(c3q4): cov3>0 is not Q4; positivity implies Q4
+- pr-6608: feat(c3q6): cov3>0 is not Q6; positivity implies Q6
+- pr-6609: feat(c3q8): cov3>0 is not Q8; positivity implies Q8
+- pr-6610: feat(c3p): cov3>0 is not P; positivity does not imply P
+- pr-6611: feat(c5q4): cov5>0 is not Q4; positivity implies Q4
+- pr-6612: feat(c7q4): cov7>0 is not Q4; positivity does not imply Q4
+- pr-6613: feat(c11q4): cov11>0 is not Q4; positivity does not imply Q4
+- pr-6614: feat(c7q6): cov7>0 is not Q6; positivity implies Q6
+- pr-6615: feat(q4f7): among Q4-false, cov7>0 iff vertex3
+- pr-6616: feat(q4f11): among Q4-false, cov11>0 iff vertex3
+- pr-6617: physics: prove self-chart emptiness and the stationarity diagnosis **[promotion candidate]**
+- pr-6618: feat(c11q6): cov11>0 is not Q6; positivity implies Q6
+- pr-6619: feat(c5q6): cov5>0 is not Q6; positivity implies Q6
+- pr-6620: feat(q4f9): among Q4-false, cov9>0 is not vertex3
+- pr-6621: feat(c9q6): cov9>0 is not Q6; positivity does not imply Q6
+- pr-6622: feat(c9q4): cov9>0 is not Q4; positivity does not imply Q4
+- pr-6623: feat(c11q8): cov11>0 is not Q8; positivity implies Q8
+- pr-6624: physics: prove the floquet monodromy and the gauge obstruction **[promotion candidate]**
+- pr-6625: feat(q6f9): among Q6-false, cov9>0 iff opp2 and mixed3
+- pr-6626: feat(c5q8): cov5>0 is not Q8; positivity implies Q8
+- pr-6627: feat(c7q8): cov7>0 is not Q8; positivity implies Q8
+- pr-6628: feat(c9q8): cov9>0 is not Q8; positivity implies Q8
+- pr-6629: feat(l1mink): displayed L1 ell1 arrival is not Minkowski light
+- pr-6630: feat(l1chi): displayed L1 formation is automatically achiral
+- pr-6631: feat(hopiso): cube-covariant NN hop costs force diamond light **[promotion candidate]**
+- pr-6632: feat(wav2chi): tick-2 Record content can be P-odd
+- pr-6633: physics: complete the half-space pairing with the reflection intertwiner **[promotion candidate]**
+- pr-6634: feat(wav2run): chiral tick-2 pair does not fire on the two-cube
+- pr-6635: feat(mixlab): no tick-1 labeling fires the chiral pair
+- pr-6636: feat(need6): seed-grown front never has 6 occupied neighbors
+- pr-6637: feat(m2front): M2 Record seed-grown front cannot host July-3 chirality **[promotion candidate]**
+- pr-6638: feat(pluschi): July-3 pair fires on mixed seed, not on M2 plus
+- pr-6639: feat(pairsupp): July-3 pair always has 4 occupied slots
+- pr-6640: feat(twoball): two radius-2 balls can present 4 occupied NN
+- pr-6641: feat(2bchi): two-ball witness mask hosts the chiral pair
+- pr-6642: feat(2bsign): natural occupancy-kernel labels do not fire the pair
+- pr-6643: feat(2bcons): unique-axis signs exclude every firing labeling
+- pr-6644: feat(all4): two of four 4-NN sites have unique-axis agreement
+- pr-6645: feat(posrun): pair fires at unique-axis-compatible two-ball site
+- pr-6646: feat(ambpick): lex-first axis pick does not fire; two of four completions do
+- pr-6647: physics: isolate the torus wrap defect and pin the half-space carrier **[promotion candidate]**
+- pr-6648: feat(ambopp): equal n on ambiguous neighbors forbids every local-in-n pick
+- pr-6649: feat(pos2n): second positive site also has equal n; local-in-n cannot fire
+- pr-6650: feat(slotn): slot-odd tie-break fires at both sites but is not cube-equivariant
+- pr-6651: physics: couple the constraint quotient and prove the population wall **[promotion candidate]**
+- pr-6652: feat(nstab): tied-n stabilizer swaps slots and forbids equivariant fire
+- pr-6653: feat(3ball): L-shaped third seed does not break tied-n swap
+- pr-6654: feat(skew3): off-axis third seed yields unequal-n 4-NN sites
+- pr-6655: feat(skewlab): one local-in-n labeling fires at the off-axis breaker
+- pr-6656: feat(skewrun): local-in-n pair fires at off-axis breaker
+- pr-6657: feat(skeweq): firing local-in-n map commutes with 1 of 24 rotations
+- pr-6658: feat(skeworb): all four unequal-n sites have orbit-tied kernels
+- pr-6659: feat(histlab): history unique-axis is not a full labeling; 2 of 8 completions fire
+- pr-6660: feat(seedax): claim-axis does not finish history labels; still N_fire=2
+- pr-6661: feat(delsgn): claim-delta sign product fully labels and fires
+- pr-6662: feat(delrun): delta-sign-product pair fires N_new=1
+- pr-6663: feat(delloc): claim-delta sign product is not NN-determined
+- pr-6664: feat(deleq): claim-delta sign product commutes with 3 of 24
+- pr-6665: feat(staborb): occupancy stab kills all pair members on this star
+- pr-6666: feat(orbfire): no Stab-ok pair member fires on this occupancy
+- pr-6667: feat(maskreal): no Stab-ok mask is realized; N_real=0
+- pr-6668: feat(maskstab): no weight-4 occupancy admits a fair pair member **[promotion candidate]**
+- pr-6669: feat(ticklab): lock-ticks stay 2 and do not shrink Stab
+- pr-6670: feat(tickfire): equal lock-ticks yield N_fire=0
+- pr-6671: feat(tickhost): no tick-broken 3-ball star; N_fire=0
+- pr-6672: feat(ticklip): equal-radius lock-ticks never shrink Stab
+- pr-6673: feat(uneqrad): unequal radii shrink Stab; N_tick_ok=4
+- pr-6674: feat(uneqrun): all four tick-ok pair members fire N_new=1
+- pr-6675: feat(uneqlaw): unequal-radius tick rule commutes with all 24
+- pr-6676: feat(uneqrec): M2 Records do not supply lock-ticks
+- pr-6677: feat(uneqext): lock-tick field is an extra vs occupancy
+- pr-6678: feat(uneqord): pairwise lock-time order shrinks Stab; N_ord_ok=4
+- pr-6679: feat(uneqsrc): displayed L1 neighbor data is not lock-tick
+- pr-6680: feat(uneqbit): one opposite-pair tick bit shrinks Stab; N_bit_ok=4
+- pr-6681: feat(uneqaxis): occupancy names the full axis; one bit kills Stab
+- pr-6682: feat(uneqk): k equals t on 27 of 2000 mixed-t stars **[promotion candidate]**
+- pr-6683: feat(bitlaw): lex-first one-bit labeling is not G+ equivariant
+- pr-6684: feat(minkocc): occupancy hop costs stay diamond
+- pr-6685: feat(bitenc): age-bit axis encoding commutes 288 of 576
+- pr-6686: feat(bitsec): leftover-frame section commutes with all 576
+- pr-6687: feat(bitname): leftover-frame section is named by occupancy+bit+orientation
+- pr-6688: feat(bitfire): leftover-frame section fires N_new=1
+- pr-6689: feat(bitreal): all 12 perp masks are realized as 3-ball stars
+- pr-6690: feat(bitall): leftover-frame f fires on all 12 realizing hosts
+- pr-6691: physics: prove the quotient-observable obstruction **[promotion candidate]**
+- pr-6692: feat(minkedge): two-end occupancy costs stay diamond
+- pr-6693: feat(mink3): 405 of 6561 ternary two-end costs reverse diamond
+- pr-6694: feat(minkiso): lex-first reversal isochrones are not closer to Euclidean than l1
+- pr-6695: feat(minkbest): variance-minimizing reversal is much closer to Euclidean than l1
+- pr-6696: feat(bestiso): best-reversal isochrones are Euclidean-ratio shells
+- pr-6697: feat(best4): B3 minimizer still beats l1 on B4
+- pr-6698: feat(ourmem): displayed member fires pair and reverses diamond
+- pr-6699: feat(twox): age bit and hop cost are independent extras
+- pr-6700: physics: break the population wall with the momentum charge **[promotion candidate]**
+- pr-6701: feat(costname): named equal-weight rule reproduces minkbest 8-tuple **[promotion candidate]**
+- pr-6702: feat(best6): named hop-cost does not reverse diamond on B6 **[promotion candidate]**
+- pr-6703: feat(samhost): same-host fire survives labels but not cost-1 filter
+- pr-6704: feat(twomeet): two-seed midplane still closer to Euclidean than l1
+- pr-6705: physics: execute the sourced quotient on the stable balanced sector **[promotion candidate]**
+- pr-6706: feat(rule3): none of 27 named three-slot costs reverse diamond on B6
+- pr-6707: feat(why14): shortest body-diagonal path costs 3+3+1+3+1+3=14
+- pr-6708: feat(face6): face diagonals also do not reverse under named rho
+- pr-6709: feat(clkonly): hop-cost as clock fires on all 12 hosts; filter on 4
+- pr-6710: feat(axis3): axis-skeleton cost does not reverse; t(4,0,0)=t(2,2,2)=8
+- pr-6711: feat(axis4): axis-skeleton fails small-ball reverse on B4
+- pr-6712: feat(axpath): axis-skeleton diagonal is seed-exit then five cheap hops
+- pr-6713: feat(filt4): cost-1 filter survives on four masks all empty in -z
+- pr-6714: feat(noshrt): support-drop hop-cost reverses diamond on B6 **[promotion candidate]**
+- pr-6715: feat(nosh4): support-drop also reverses the small-ball pair on B4
+- pr-6716: feat(detour): alpha undercut is a parallel-axis detour costing 8
+- pr-6717: feat(noshp): support-drop diagonal is seed-exit then five cheap hops
+- pr-6718: physics: prove the spatial-dressing invisibility at the quotient **[promotion candidate]**
+- pr-6719: feat(nuiso): nu isochrones mix radii; still rounder than l1
+- pr-6720: feat(nuvs): only nu reverses; rho is still the roundest
+- pr-6721: feat(nuface): nu reverses all three face-diagonal pairs
+- pr-6722: feat(why10): remaining axis path is the parallel detour with last hop 3
+- pr-6723: feat(numeet): two-seed nu meetings stay closer to Euclidean than l1
+- pr-6724: feat(numem): displayed member fires pair and reverses diamond under nu
+- pr-6725: feat(t8mix): t=8 shell mixes seven G+ types and five radii
+- pr-6726: feat(nuclk): nu as clock and as filter fires on all 12 hosts
+- pr-6727: feat(nu8): support-drop still reverses diamond on B8
+- pr-6728: feat(varrev): two of eight clause-toggles reverse; nu is the rounder
+- pr-6729: feat(nufilt): leftover-frame fire edge has nu-cost 1
+- pr-6730: feat(t8why): all seven t=8 types share the 3+1+1+1+1+1 path
+- pr-6731: feat(why12): B8 t(6,0,0)=12 uses a path that leaves B6
+- pr-6732: feat(nuiso8): B8 isochrones still mix radii; still rounder than l1
+- pr-6733: feat(nuface8): nu reverses all four face-diagonal pairs on B8
+- pr-6734: feat(011why): cheap-seed reverser paths: axis 8 via detour, diag 6 all-1s
+- pr-6735: feat(mix8): six of twelve B8 arrival shells mix radii; t=8 is mixed
+- pr-6736: feat(nu12): B12 still reverses (4,0,0) vs (2,2,2); doubled pair does not
+- pr-6737: feat(ratio): nu reverse holds at k=1 and k=2; k=3,4 diag off B8
+- pr-6738: feat(011clk): (0,1,1) label and cost-1 filter both fire 12/12
+- pr-6739: feat(nuface12): B12 face reverse yes/no/yes/yes; (8,0,0) vs (4,4,0) fails
+- pr-6740: feat(011rev8): (0,1,1) reverses body and both faces on B8
+- pr-6741: feat(011var8): on B8, var nu < (0,1,1) < l1
+- pr-6742: feat(011meet): (0,1,1) two-seed meet (1,0,0) at t=1; worse var than l1
+- pr-6743: feat(mix12): ten mixed shells on B12; both reverse-critical diagonals mixed
+- pr-6744: feat(why14x): t(8,0,0)=14 via parallel detour that leaves B8
+- pr-6745: feat(ratio12): same-k reverse holds for k=1..4 on B12
+- pr-6746: feat(011b12): (0,1,1) reverses small pair on B12; doubled pair fails
+- pr-6747: feat(facek): face reverse vs k on B12 is yes yes yes no no yes
+- pr-6748: feat(bodyk): body reverse vs k on B12 is yes yes no no
+- pr-6749: feat(011var12): on B12, var nu < (0,1,1) < l1
+- pr-6750: feat(fail8): k=4 face fail: axis last hop is support-drop 3, face last hop is 1
+- pr-6751: feat(011face12): (0,1,1) reverses all three B12 faces including k=4
+- pr-6752: feat(nuiso12): t=8 has 7 types/5 radii; t=14 has 26 types/15 radii
+- pr-6753: feat(why20): t(12,0,0)=20 via parallel detour leaving B8 at (8,-1,0)
+- pr-6754: feat(011meet12): (0,1,1) B6-union still meets at (1,0,0) t=1; worse var than l1
+- pr-6755: feat(ratio011): (0,1,1) same-k reverse fails at k=1; holds at k=2,3,4
+- pr-6756: feat(t14mix): t=14 holds both (8,0,0) and (4,4,4); 26 G+ types
+- pr-6757: feat(k6why): k=6 face reverse returns: axis last hops 3+3, face last hops all 1
+- pr-6758: feat(011facek): (0,1,1) face reverse vs k is yes yes yes yes no yes
+- pr-6759: feat(011bodyk): (0,1,1) body reverse vs k is yes yes no no
+- pr-6760: feat(011f5): (0,1,1) k=5 face fail is t(10,0,0)=14 vs t(5,5,0)=10
+- pr-6761: feat(nuf5): nu k=5 face fail: t(10,0,0)=16 via detour, t(5,5,0)=12
+- pr-6762: feat(t14eq): t(8,0,0)=t(4,4,4)=14; axis last hop support-drop 3 equalizes
+- pr-6763: feat(011k1): k=1 same-k fail is cheap seed-exit: t(1,0,0)=1 vs t(1,1,1)=3
+- pr-6764: feat(nu16): on B16, same-k k=4 still holds; doubled and k=5 face stay fail
+- pr-6765: feat(rho12): rho still fails reverse on B12 and stays much rounder than nu **[promotion candidate]**
+- pr-6766: feat(var16): on B16, var nu < (0,1,1) < l1
+- pr-6767: feat(011b16): on B16, (0,1,1) same-k k=4 holds; doubled and k=5 face fail
+- pr-6768: feat(mix16): fourteen mixed shells on B16; t=8 and t=14 stay mixed
+- pr-6769: feat(facek16): on B16, nu face reverse holds k=1..3 and fails k=4..8
+- pr-6770: feat(rho16): on B16, rho still fails reverse and stays much rounder than nu
+- pr-6771: feat(why18): t(12,0,0)=18 via detour that leaves B12 at (12,-1,0)
+- pr-6772: feat(k6fail): k=6 face fail on B16: t(12,0,0)=18 vs t(6,6,0)=14
+- pr-6773: feat(bodyk16): on B16, nu body reverse is yes yes no no no
+- pr-6774: feat(011fk16): (0,1,1) face reverse on B16 holds k=1..4 and fails k=5..8
+- pr-6775: feat(samek16): nu same-k reverse holds for every k=1..5 on B16
+- pr-6776: feat(011bk16): (0,1,1) body reverse on B16 is yes yes no no no
+- pr-6777: feat(011sk16): (0,1,1) same-k reverse fails at k=1 and holds k=2..5
+- pr-6778: feat(k4why16): k=4 face fail survives B16: t(8,0,0)=14 vs t(4,4,0)=10
+- pr-6779: feat(why11): t(5,0,0)=11 via parallel detour last hop 3
+- pr-6780: feat(iso16): B16 t=8 and t=14 type counts match B12: 7/5 and 26/15
+- pr-6781: feat(011why11): t(5,0,0)=9 under (0,1,1) via cheap seed-exit then return cost 3
+- pr-6782: feat(samek6): nu same-k reverse holds at k=6 on B18; t(16,0,0) drops to 22
+- pr-6783: feat(why22): t(16,0,0)=22 via detour that leaves B16 at (16,-1,0)
+- pr-6784: feat(011sk6): (0,1,1) same-k reverse fails at k=6: t=10 vs t=18
+- pr-6785: feat(facek18): on B18, nu face reverse still holds k=1..3 and fails k=4..8
+- pr-6786: feat(samek7): nu same-k reverse fails at k=7: t(7,0,0)=13 vs t(7,7,7)=23
+- pr-6787: feat(whyk7): t(7,0,0)=13 via seed-exit to (0,-1,0) then support-drop **[promotion candidate]**
+- pr-6788: feat(samek8): nu same-k reverse fails at k=8: t=14 vs t=26
+- pr-6789: feat(011why6): t(6,0,0)=10 under (0,1,1) via cheap seed-exit corridor
+- pr-6790: feat(facek21): on B21, nu face reverse still holds k=1..3 and fails k=4..8
+- pr-6791: feat(hugax): corridor-slide restores same-k at k=7: t=17 vs t=23
+- pr-6792: feat(hugk1): corridor-slide keeps k=1 reverse: t=3 vs t=5
+- pr-6793: feat(leaveax): leave-axis restores k=7 reverse: t=15 vs t=25
+- pr-6794: feat(leavek1): leave-axis kills k=1 reverse: t=3 vs t=7
+- pr-6795: feat(hugk8): corridor-slide same-k holds at k=8: t=18 vs t=26
+- pr-6796: feat(hugvar): corridor-slide is rounder than nu on B12 **[promotion candidate]**
+- pr-6797: feat(hugdbl): corridor-slide doubled pairing holds k=1..4
+- pr-6798: feat(hugk10): corridor-slide same-k holds at k=10: t=20 vs t=32
+- pr-6799: feat(hugk12): corridor-slide same-k holds at k=12: t=22 vs t=38
+- pr-6800: feat(hugk13): corridor-slide same-k fails at k=13: t=23 vs t=41 **[promotion candidate]**
+- pr-6801: feat(hugk11): corridor-slide same-k holds at k=11: t=21 vs t=35
+- pr-6802: feat(hugk14): corridor-slide same-k fails at k=14: t=24 vs t=44
+- pr-6803: feat(fallk1): all-face-slide keeps k=1 reverse: t=3 vs t=5
+- pr-6804: feat(fallk13): all-face-slide fails k=13 at the same 23 vs 41 as mu **[promotion candidate]**
+- pr-6805: feat(hugk15): corridor-slide same-k fails at k=15: t=25 vs t=47
+- pr-6806: feat(hugwhy13): t(13,0,0)=23 vs t(13,13,13)=41 paths of the mu wall
+- pr-6807: feat(entk13): enter-body restores k=13 reverse: t=25 vs t=43
+- pr-6808: feat(entk1): enter-body kills k=1 reverse: t=3 vs t=7
+- pr-6809: feat(bodk7): body-slide kills k=7 reverse: t=19 vs t=37 **[promotion candidate]**
+- pr-6810: feat(hugk16): corridor-slide same-k fails at k=16: t=26 vs t=50
+- pr-6811: feat(e2k1): late-enter-body keeps k=1 reverse: t=3 vs t=5
+- pr-6812: feat(e2k13): late-enter-body misses the k=13 wall: t=23 vs t=41
+- pr-6813: feat(entk2): enter-body recovers k=2 reverse: t=6 vs t=10
+- pr-6814: feat(entk14): enter-body same-k fails at k=14: t=26 vs t=46
+- pr-6815: feat(ridk1): ridge-slide keeps k=1 reverse: t=3 vs t=5
+- pr-6816: feat(ridk7): ridge-slide same-k holds at k=7: t=19 vs t=25 **[promotion candidate]**
+- pr-6817: feat(ridk13): ridge-slide restores k=13 reverse: t=25 vs t=43 **[promotion candidate]**
+- pr-6818: feat(ridvar): ridge-slide is rounder than mu on B12
+- pr-6819: feat(ridk8): ridge-slide same-k holds at k=8: t=20 vs t=28
+- pr-6820: feat(ridk10): ridge-slide same-k holds at k=10: t=22 vs t=34
+- pr-6821: feat(ridk12): ridge-slide same-k holds at k=12: t=24 vs t=40
+- pr-6822: feat(ridface): ridge-slide face reverse holds k=1..8 on B16
+- pr-6823: feat(ridk3): ridge-slide same-k holds at k=3: t=9 vs t=13
+- pr-6824: feat(ridk4): ridge-slide same-k holds at k=4: t=12 vs t=16
+- pr-6825: feat(ridk5): ridge-slide same-k holds at k=5: t=15 vs t=19
+- pr-6826: feat(ridk9): ridge-slide same-k holds at k=9: t=21 vs t=31
+- pr-6827: feat(ridk11): ridge-slide same-k holds at k=11: t=23 vs t=37
+- pr-6828: feat(ridclk): ridge-slide clock N_label=12 N_filt=6 **[promotion candidate]**
+- pr-6829: feat(riddbl): ridge-slide doubled pairing holds k=1..4
+- pr-6830: feat(ridmeet): ridge-slide two-seed meet |M|=1 vars 0
+- pr-6831: feat(ridk2): ridge-slide same-k holds at k=2: t=6 vs t=10
+- pr-6832: feat(ridk6): ridge-slide same-k holds at k=6: t=18 vs t=22
+- pr-6833: feat(ridk14): ridge-slide same-k fails at k=14: t=26 vs t=46 **[promotion candidate]**
+- pr-6834: feat(hugclk): corridor-slide clock N_label=12 N_filt=12
+- pr-6835: feat(hugmeet12): corridor-slide two-seed meet |M|=1 vars 0
+- pr-6836: feat(hrk1): height-ridge same-k holds at k=1: t=3 vs t=5
+- pr-6837: feat(hrk7): height-ridge same-k holds at k=7: t=19 vs t=25
+- pr-6838: feat(hrk13): height-ridge same-k holds at k=13: t=25 vs t=43
+- pr-6839: feat(hrvar): height-ridge is worse-round than rho3 on B12
+- pr-6840: feat(hrface): height-ridge face reverse holds k=1..8 on B16
+- pr-6841: feat(plk1): plane-hug same-k holds at k=1: t=3 vs t=5
+- pr-6842: physics: find the descending member and isolate the adjointness wall **[promotion candidate]**
+- pr-6843: physics: classify the naturality moduli of the completion **[promotion candidate]**
+- pr-6845: physics: prove the scalar-quotient theorem **[promotion candidate]**
+- pr-6846: physics: build the facet-charge bridge to the cell-cutting lane
+- pr-6847: physics: open the conjugate-pair observable space
+- pr-6848: physics: complete the two-block observable algebra
+- pr-6849: physics: complete the measurement theory on the two-block algebra
+- pr-6850: physics: derive the connection residual and close item one
+- pr-6851: physics: prove the residual invariance and unify the arc **[promotion candidate]**
+- pr-6852: physics: prove the observable scaling law at the second lattice size (block 136)
+- pr-6853: physics: record the twisted scouting verdict and heal the edges (block 137)
+- pr-6854: physics: prove the conditional general-Z_N theorem with its exact premises (block 138) **[promotion candidate]**
+- pr-6855: physics: complete the ledger at the third size and find the isospectral mechanism (block 1
+- pr-6856: physics: exhibit the similarity and collapse the count family-wide (block 140) **[promotion candidate]**
+- pr-6857: physics: heal the atlas with the coboundary family and pin the mechanism (block 141) **[promotion candidate]**
+- pr-6860: physics: prove the massless seam verdict on shear-free carriers (block 144) **[promotion candidate]**
+- pr-6861: physics: prove the seam dichotomy and close the carrier arc (block 145) **[promotion candidate]**
+- pr-6862: physics: build the m-block measurement theory across the family (block 146) **[promotion candidate]**
+- pr-6863: physics: break the quenched exclusion and prove the migration theorem (block 147)
+- pr-6864: physics: prove the general migration theorem and close the annealed program (block 148) **[promotion candidate]**
+- pr-6865: feat(hrk14): height-ridge same-k fails at k=14: t=26 vs t=46
+- pr-6866: feat(plk14): plane-hug same-k fails at k=14: t=26 vs t=46
+- pr-6867: feat(renk1): ridge-enter same-k holds at k=1: t=3 vs t=5
+- pr-6868: feat(renk7): ridge-enter same-k holds at k=7: t=19 vs t=25
+- pr-6869: feat(renk13): ridge-enter same-k holds at k=13: t=25 vs t=43
+- pr-6870: physics: classify the shear gauge and close the campaign (block 149) **[promotion candidate]**
+- pr-6871: feat(renk14): ridge-enter same-k fails at k=14: t=26 vs t=46 **[promotion candidate]**
+- pr-6872: feat(renkvar): ridge-enter is rounder than rho3 on B12
+- pr-6873: feat(renkface): ridge-enter face reverse holds k=1..8 on B16
+- pr-6874: feat(renkclk): ridge-enter clock N_label=12 N_filt=6 **[promotion candidate]**
+- pr-6875: feat(llk1): late-leave same-k holds at k=1: t=3 vs t=5
+- pr-6876: feat(llk7): late-leave same-k holds at k=7: t=19 vs t=25
+- pr-6877: feat(llk14): late-leave same-k fails at k=14: t=26 vs t=46
+- pr-6878: feat(oek1): one-unit-enter same-k holds at k=1: t=3 vs t=5
+- pr-6879: feat(oek7): one-unit-enter same-k holds at k=7: t=19 vs t=25
+- pr-6880: feat(oek14): one-unit-enter same-k fails at k=14: t=26 vs t=46
+- pr-6881: feat(klk1): kappa-plus-late-leave same-k holds at k=1: t=3 vs t=5
+- pr-6882: feat(klk7): kappa-plus-late-leave same-k holds at k=7: t=19 vs t=25
+- pr-6883: feat(klk13): kappa-plus-late-leave same-k holds at k=13: t=25 vs t=43
+- pr-6884: feat(klk14): kappa-plus-late-leave same-k fails at k=14: t=26 vs t=46
+- pr-6885: feat(klkvar): kappa-plus-late-leave ties kappa variance on B12
+- pr-6886: feat(dek1): deep-enter same-k holds at k=1: t=3 vs t=5
+- pr-6887: feat(dek7): deep-enter same-k holds at k=7: t=19 vs t=25
+- pr-6888: feat(dek13): deep-enter same-k holds at k=13: t=25 vs t=43
+- pr-6889: feat(dek14): deep-enter same-k fails at k=14: t=26 vs t=46
+- pr-6890: feat(dekvar): deep-enter ties rho3 variance on B12 **[promotion candidate]**
+- pr-6891: feat(c2k1): cost-2 ridge-enter same-k holds at k=1: t=3 vs t=5
+- pr-6892: feat(c2k7): cost-2 ridge-enter same-k holds at k=7: t=19 vs t=25
+- pr-6893: feat(c2k13): cost-2 ridge-enter same-k holds at k=13: t=25 vs t=43
+- pr-6894: feat(c2k14): cost-2 ridge-enter same-k fails at k=14: t=26 vs t=46
+- pr-6895: feat(c2var): cost-2 ridge-enter sits between kappa and rho3 on B12
+- pr-6896: feat(c2face): cost-2 ridge-enter face reverse holds k=1..8 on B16
+- pr-6897: feat(rendbl): ridge-enter doubled pairing holds k=1..4
+- pr-6898: feat(renmeet): ridge-enter two-seed meet |M|=1 vars 0
+- pr-6899: feat(mlk1): mid-leave same-k holds at k=1: t=3 vs t=5
+- pr-6900: feat(mlk7): mid-leave same-k holds at k=7: t=19 vs t=25
+- pr-6901: feat(mlk13): mid-leave same-k holds at k=13: t=25 vs t=43
+- pr-6902: feat(mlk14): mid-leave same-k fails at k=14: t=26 vs t=46
+- pr-6903: feat(mlkvar): mid-leave ties rho3 variance on B12
+- pr-6904: feat(mlkface): mid-leave face reverse holds k=1..8 on B16
+- pr-6905: feat(c2dbl): cost-2 ridge-enter doubled pairing holds k=1..4
+- pr-6906: feat(c2meet): cost-2 ridge-enter two-seed meet |M|=1 vars 0
+- pr-6907: feat(ofk1): out-face same-k holds at k=1: t=3 vs t=5
+- pr-6908: feat(ofk7): out-face same-k holds at k=7: t=21 vs t=25
+- pr-6909: feat(ofk13): out-face same-k holds at k=13: t=29 vs t=43
+- pr-6910: feat(ofk14): out-face same-k restores k=14: t=30 vs t=46
+- pr-6911: feat(ofkvar): out-face is rounder than kappa and rho3 on B12
+- pr-6912: feat(ofkface): out-face face reverse holds k=1..5,7,8 fails k=6
+- pr-6913: feat(ofkdbl): out-face doubled pairing holds k=1..4
+- pr-6914: physics: enumerate the joint-lane flips and decide the bridge (block 150) **[promotion candidate]**
+- pr-6915: feat(renkiso): ridge-enter isochrones t(2,2,2)=10 t(4,4,4)=16
+- pr-6916: feat(ofk15): out-face same-k holds at k=15: t=31 vs t=49
+- pr-6917: feat(ofk16): out-face same-k holds at k=16: t=32 vs t=52
+- pr-6918: feat(ofk17): out-face same-k holds at k=17: t=33 vs t=55
+- pr-6919: feat(ofk18): out-face same-k holds at k=18: t=34 vs t=58
+- pr-6920: feat(w2k14): cost-2 out-face same-k restores k=14: t=30 vs t=46
+- pr-6921: feat(w2var): cost-2 out-face is rounder than omega and kappa on B12
+- pr-6922: feat(w2face): cost-2 out-face face reverse fails k=6 and k=7
+- pr-6923: feat(w2k1): cost-2 out-face same-k holds at k=1: t=3 vs t=5
+- pr-6924: feat(ofk2): out-face same-k holds at k=2: t=6 vs t=10
+- pr-6925: feat(ofkclk): out-face clock N_label=12 N_filt=6
+- pr-6926: feat(ofkmeet): out-face two-seed meet |M|=1 vars 0
+- pr-6927: feat(ofkiso): out-face isochrones t(2,2,2)=10 t(4,4,4)=16
+- pr-6928: feat(ofk19): out-face same-k first-fails at k=19: t=35 vs t=61
+- pr-6929: feat(dfk1): deep-out-face same-k holds at k=1: t=3 vs t=5
+- pr-6930: feat(dfk14): deep-out-face same-k restores k=14: t=30 vs t=46 **[promotion candidate]**
+- pr-6931: feat(dfface): deep-out-face face reverse holds k=1..5,7,8 fails k=6
+- pr-6932: feat(dfvar): deep-out-face ties omega variance on B12
+- pr-6933: feat(w2k16): cost-2 out-face same-k holds at k=16: t=32 vs t=52 **[promotion candidate]**
+- pr-6934: feat(w2clk): cost-2 out-face clock N_label=12 N_filt=6
+- pr-6935: feat(psk14): same-max face-slide same-k restores k=14: t=30 vs t=46
+- pr-6936: feat(w2k19): cost-2 out-face same-k first-fails at k=19: t=35 vs t=61
+- pr-6937: feat(dfk19): deep-out-face same-k first-fails at k=19: t=35 vs t=61
+- pr-6938: feat(ufk14): unit-out-face same-k fails at k=14: t=26 vs t=46
+- pr-6939: feat(ufface): unit-out-face face reverse holds k=1..8 including k=6
+- pr-6940: physics: prove the floor boundary theorem and open the comparison (block 151) **[promotion candidate]**
+- pr-6941: feat(w2k17): cost-2 out-face same-k holds at k=17: t=33 vs t=55
+- pr-6942: feat(w2k18): cost-2 out-face same-k holds at k=18: t=34 vs t=58
+- pr-6943: feat(dfk15): deep-out-face same-k holds at k=15: t=31 vs t=49
+- pr-6944: feat(ufk1): unit-out-face same-k holds at k=1: t=3 vs t=5
+- pr-6945: feat(d3k14): max≥3 out-face same-k restores k=14: t=30 vs t=46
+- pr-6946: feat(d3face): max≥3 out-face face reverse holds k=1..5,7,8 fails k=6
+- pr-6947: feat(d3k19): max≥3 out-face same-k first-fails at k=19: t=35 vs t=61
+- pr-6948: feat(d3k1): max≥3 out-face same-k holds at k=1: t=3 vs t=5
+- pr-6949: feat(c2dfk14): cost-2 deep-out-face same-k restores k=14: t=30 vs t=46
+- pr-6950: feat(c2dfface): cost-2 deep-out-face face reverse fails k=6 and k=7
+- pr-6951: feat(c2dfk19): cost-2 deep-out-face same-k first-fails at k=19: t=35 vs t=61
+- pr-6952: feat(c2dfk1): cost-2 deep-out-face same-k holds at k=1: t=3 vs t=5
+- pr-6953: feat(c2d3face): cost-2 max≥3 out-face face reverse holds k=1..6,8 fails k=7
+- pr-6954: feat(c2d3k14): cost-2 max≥3 out-face same-k restores k=14: t=30 vs t=46
+- pr-6955: feat(c2d3k19): cost-2 max≥3 out-face same-k first-fails at k=19: t=35 vs t=61
+- pr-6956: feat(c2d3k1): cost-2 max≥3 out-face same-k holds at k=1: t=3 vs t=5
+- pr-6957: feat(d4k14): max≥4 out-face same-k restores k=14: t=30 vs t=46
+- pr-6958: feat(d4face): max≥4 out-face face reverse holds k=1..5,7,8 fails k=6
+- pr-6959: feat(d4k19): max≥4 out-face same-k first-fails at k=19: t=35 vs t=61
+- pr-6960: feat(d4k1): max≥4 out-face same-k holds at k=1: t=3 vs t=5
+- pr-6961: physics: execute the sign-layer comparison and complete the pickup (block 152) **[promotion candidate]**
+- pr-6962: feat(w2k7): cost-2 out-face same-k holds at k=7: t=21 vs t=25
+- pr-6963: feat(w2k13): cost-2 out-face same-k holds at k=13: t=29 vs t=43
+- pr-6964: feat(w2k15): cost-2 out-face same-k holds at k=15: t=31 vs t=49
+- pr-6965: feat(w2dbl): cost-2 out-face doubled pairing holds k=1..4
+- pr-6966: feat(w2meet): cost-2 out-face two-seed meet |M|=1 vars 0
+- pr-6967: feat(psk1): same-max face-slide same-k holds at k=1: t=3 vs t=5
+- pr-6968: feat(pskface): same-max face-slide face reverse fails k=2,3,6
+- pr-6969: feat(c2d4face): cost-2 max≥4 out-face face reverse holds k=1..8
+- pr-6970: feat(c2d4k14): cost-2 max≥4 out-face same-k restores k=14: t=30 vs t=46
+- pr-6971: feat(c2d4k19): cost-2 max≥4 out-face same-k first-fails at k=19: t=35 vs t=61
+- pr-6972: feat(c2d4k1): cost-2 max≥4 out-face same-k holds at k=1: t=3 vs t=5
+- pr-6973: feat(c2d3var): cost-2 max≥3 out-face is rounder than omega and kappa on B12
+- pr-6974: feat(c2d3clk): cost-2 max≥3 out-face clock N_label=12 N_filt=6
+- pr-6975: feat(c2d3dbl): cost-2 max≥3 out-face doubled pairing holds k=1..4
+- pr-6976: feat(c2d3meet): cost-2 max≥3 out-face two-seed meet |M|=1 vars 0
+- pr-6977: feat(c2d4var): cost-2 max≥4 out-face is rounder than c2d3 and omega on B12
+- pr-6978: feat(c2d4k15): cost-2 max≥4 out-face same-k holds at k=15: t=31 vs t=49
+- pr-6979: feat(c2d4k16): cost-2 max≥4 out-face same-k holds at k=16: t=32 vs t=52
+- pr-6980: feat(c2d4k17): cost-2 max≥4 out-face same-k holds at k=17: t=33 vs t=55
+- pr-6981: feat(c2d4k18): cost-2 max≥4 out-face same-k holds at k=18: t=34 vs t=58
+- pr-6982: feat(c2d4clk): cost-2 max≥4 out-face clock N_label=12 N_filt=6
+- pr-6983: feat(c2d4dbl): cost-2 max≥4 out-face doubled pairing holds k=1..4
+- pr-6984: feat(c2d4meet): cost-2 max≥4 out-face two-seed meet |M|=1 vars 0
+- pr-6985: feat(i2k14): c2d4-plus-interior same-k fails at k=14: t=30 vs t=59
+- pr-6986: feat(i2k19): c2d4-plus-interior same-k fails at k=19: t=35 vs t=79
+- pr-6987: feat(i2k13): c2d4-plus-interior same-k fails at k=13: t=29 vs t=55
+- pr-6988: feat(i2k7): c2d4-plus-interior same-k holds at k=7: t=21 vs t=31
+- pr-6989: feat(i2k18): c2d4-plus-interior same-k fails at k=18: t=34 vs t=75
+- pr-6990: feat(i2face): c2d4-plus-interior face reverse holds k=1..8
+- pr-6991: feat(i2k1): c2d4-plus-interior same-k holds at k=1: t=3 vs t=5
+- pr-6992: feat(i2var): c2d4-plus-interior is worse-round than c2d4 on B12
+- pr-6993: feat(j2k1): c2d4-plus-deep-interior same-k holds at k=1: t=3 vs t=5
+- pr-6994: feat(j2k7): c2d4-plus-deep-interior same-k holds at k=7: t=21 vs t=30
+- pr-6995: feat(j2face): c2d4-plus-deep-interior face reverse holds k=1..8
+- pr-6996: feat(j2k14): c2d4-plus-deep-interior same-k fails at k=14: t=30 vs t=58
+- pr-6997: feat(j2k19): c2d4-plus-deep-interior same-k fails at k=19: t=35 vs t=78
+- pr-6998: feat(j2k13): c2d4-plus-deep-interior same-k fails at k=13: t=29 vs t=54
+- pr-6999: feat(j2k18): c2d4-plus-deep-interior same-k fails at k=18: t=34 vs t=74
+- pr-7000: feat(j2var): c2d4-plus-deep-interior is worse-round than c2d4 on B12
+- pr-7001: feat(s2k1): c2d4-plus-soft-ridge same-k holds at k=1: t=3 vs t=5
+- pr-7002: feat(s2k7): c2d4-plus-soft-ridge same-k holds at k=7: t=21 vs t=24
+- pr-7003: feat(s2k13): c2d4-plus-soft-ridge same-k holds at k=13: t=27 vs t=42
+- pr-7004: feat(s2k14): c2d4-plus-soft-ridge same-k holds at k=14: t=28 vs t=45
+- pr-7005: feat(s2k18): c2d4-plus-soft-ridge same-k fails at k=18: t=32 vs t=57
+- pr-7006: feat(s2k19): c2d4-plus-soft-ridge same-k fails at k=19: t=33 vs t=60
+- pr-7007: feat(s2face): c2d4-plus-soft-ridge face reverse fails k=7, holds 1-6 and 8
+- pr-7008: feat(s2var): c2d4-plus-soft-ridge is worse-round than c2d4 on B12
+- pr-7009: feat(lin): c2d4 same-k table is affine t=k+16 vs 3k+4, crossing k~18.70 **[promotion candidate]**
+- pr-7010: feat(rdcmp): ell1 reverse fails k=1; c2d4 holds; bits disagree **[promotion candidate]**
+- pr-7012: feat(facd): ell1 face reverse fails k=1; c2d4 holds; bits disagree **[promotion candidate]**
+- pr-7013: feat(varl1): ell1 is worse-round than c2d4 on B12 **[promotion candidate]**
+- pr-7014: feat(s2lin): s2 same-k table is affine t=k+14 vs 3k+3, crossing k~16.76
+- pr-7017: feat(cnttab): occupancy first-wave 6-mask is all-six; seed-content mask is +e1 only **[promotion candidate]**
+- pr-7018: feat(rdunrd): deleting unread (2,0,0) does not move c2d4 reverse at k=1
+- pr-7019: feat(cntnchi): L1 occupancy formation is P-even; leftover-frame lock-content f is P-odd
+- pr-7020: [physics-loop] record-native-dyadic-preparation — bounded_theorem — bounded-support
+- pr-7022: [physics-loop] delayed-axis input stabilizer — bounded_theorem — bounded-support **[promotion candidate]**
+- pr-7023: [physics-loop] shared-effect congruence and causal reopen — bounded_theorem — bounded-supp
+- pr-7024: feat(perpnn): perp-step formation-tick reverse and face both hold at k=1 **[promotion candidate]**
+- pr-7025: feat(letbits): 16 letterings: N_Rev=4 N_Face=4 N_both=1
+- pr-7026: feat(recint): axis event is null; body event is time; classes disagree
+- pr-7027: [physics-loop] remote-context front-event congruence — bounded_theorem — bounded-support **[promotion candidate]**
+- pr-7030: [physics-loop] shared-event support and formation selection triangle — bounded_theorem — b **[promotion candidate]**
+- pr-7031: [physics-loop] typed instrument-to-Record conditional completion — bounded_theorem — bound
+- pr-7033: feat(recperp): perpnn-tick axis is time; recint axis is null **[promotion candidate]**
+- pr-7034: feat(perpvar): perpnn formation-tick var on B3 is 22481/54000
+- pr-7035: feat(nnlock): incoming-lock letters: reverse and face hold on none
+- pr-7036: [physics-loop] fresh-ancilla staged cq/Record intertwiner — bounded theorem — bounded supp
+- pr-7037: physics-loop: fixed-carrier presence-separated Record boundary — bounded theorem — bounded
+- pr-7038: feat(seedo): seed +e2: reverse fails, face holds
+- pr-7039: feat(seedm): seed -e1: reverse and face hold
+- pr-7040: feat(parnn): parallel-step reverse and face are undefined
+- pr-7041: feat(intcls): B3 interval census is 0 space, 4 null, 116 time
+- pr-7043: feat(gram4): Minkowski Gram signature is (1,2,0)
+- pr-7044: feat(lockp): unique-lock inversion sample is all-odd
+- pr-7045: feat(gseed): seedo Gram signature is (1,2,0), equals gram4
+- pr-7048: feat(trec): t is not a function of unique lock L **[promotion candidate]**
+- pr-7049: feat(qlet): PVM letters UNDEFINED; reverse and face UNDEFINED
+- pr-7050: feat(nnseed): two-site seed: reverse and face hold
+- pr-7053: feat(nsgram): nnseed Gram signature is (1,2,0), equals gram4
+- pr-7054: feat(nsint): nnseed B3 interval census is 9 space, 3 null, 108 time
+- pr-7055: feat(nsvar): nnseed arrival-speed var is 0.034735087770962977
+- pr-7057: feat(nslock): nnseed unique-lock inversion is mixed 23/1
+- pr-7058: feat(nstrec): nnseed t is not a function of unique L (Euclidean B3) **[promotion candidate]**
+- pr-7059: feat(nsfrm): formdraw PVM reverse/face hold on some (4 of 16)
+- pr-7060: feat(nssame): same-lock +e1 two-site: reverse holds, face fails
+- pr-7061: feat(nsiso): z-reverse FAIL, z-face HOLD; y-frame same pattern
+- pr-7062: feat(nfplus): unique P_+ along n: reverse and face none
+- pr-7063: feat(nfe1): sign(n_1) unique letter: reverse and face none
+- pr-7064: feat(nfmax): sign(n_mu*) unique letter: reverse and face none
+- pr-7065: feat(nssfrm): nssame formdraw n(C) != n(D); unique f(n) leftover does not transfer
+- pr-7066: feat(nfneigh): neighbor-lock unique letter A+/B+/C-/D+; reverse and face none
+- pr-7067: feat(nsfz): z-probe formdraw PVM reverse/face some; n(Cz) != n(Dz)
+- pr-7068: feat(nssn2): nssame sign(n_2) unique letter: reverse and face UNDEFINED
+- pr-7069: feat(nsfzn2): z-probe sign(n_2) unique letter: reverse and face UNDEFINED
+- pr-7070: feat(nsneigh): nssame neighbor-lock letter: reverse none, face UNDEFINED
+- pr-7072: feat(nsfy): y-probe formdraw reverse UNDEFINED, face some; n(Cy) != n(Dy)
+- pr-7073: feat(nsneighz): z-probe neighbor-lock unique letter all +; reverse and face none
+- pr-7074: feat(nsneighy): y-probe neighbor-lock reverse UNDEFINED, face none
+- pr-7075: feat(nfvec): neighbor-lock vector: reverse UNDEFINED, face holds
+- pr-7076: feat(nsvecz): z-probe neighbor-lock vector: reverse UNDEFINED, face fail
+- pr-7077: feat(nsvecs): nssame neighbor-lock vector: reverse fail, face UNDEFINED
+- pr-7078: feat(nfsum): neighbor-lock sum: reverse fail, face holds
+- pr-7079: feat(nssumz): z-probe neighbor-lock sum: reverse fail, face fail
+- pr-7080: feat(nssums): nssame neighbor-lock sum: reverse fail, face fail
+- pr-7081: feat(nfexist): existential opposite neighbor-lock: reverse fail, face holds
+- pr-7082: feat(nsvecy): y-probe neighbor-lock vector: reverse UNDEFINED, face fail
+- pr-7084: feat(nssumy): y-probe neighbor-lock sum: reverse UNDEFINED, face fail
+- pr-7085: feat(nscovec): y-probe same-tick neighbor-lock vector: reverse UNDEFINED, face fail
+- pr-7086: feat(nscosum): y-probe same-tick neighbor-lock sum: reverse fail, face fail
+- pr-7087: feat(nscofrm): y-probe same-tick formdraw PVM: reverse some, face some
+- pr-7088: feat(nscovx): same-tick x unique vector: reverse UNDEFINED, face holds
+- pr-7089: feat(nscosx): same-tick x lock sum: reverse fail, face holds
+- pr-7090: feat(nscoex): same-tick y existential opposite: reverse fail, face fail
+- pr-7091: feat(nsscvec): nssame same-tick unique vector: reverse UNDEFINED, face UNDEFINED
+- pr-7092: feat(nscos2): same-tick y sign(n_2): reverse none, face UNDEFINED
+- pr-7093: feat(nsopp): opposite-lock unique vector: reverse fail, face UNDEFINED
+- pr-7094: feat(nfplaq): plaquette holonomy: reverse fail, face fails **[promotion candidate]**
+- pr-7095: feat(ownvec): own incoming lock vector: reverse UNDEFINED, face fails
+- pr-7096: feat(nslate): later-tick exist-opposite: reverse fail, face holds **[promotion candidate]**
+- pr-7097: feat(nscfx): same-tick x formdraw n(C)=n(D): reverse UNDEFINED, face UNDEFINED
+- pr-7098: feat(nsopown): opposite-lock own incoming: reverse UNDEFINED, face UNDEFINED
+- pr-7099: feat(nspar): parallel-opposite unique vector: reverse UNDEFINED, face UNDEFINED
+- pr-7100: feat(nsopn): opposite-lock formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED
+- pr-7101: feat(nsopcfx): opposite-lock same-tick n(C)!=n(D): reverse UNDEFINED, face UNDEFINED
+- pr-7102: feat(nsparown): parallel-opposite own incoming: reverse UNDEFINED, face UNDEFINED
+- pr-7103: feat(nsparn): parallel-opposite formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED
+- pr-7105: feat(nsopy): opposite-lock y-probe unique vector: reverse UNDEFINED, face UNDEFINED
+- pr-7107: feat(nsopyn): opposite-lock y-probe formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED
+- pr-7108: feat(nsopz): opposite-lock z-probe unique vector: reverse fail, face fails
+- pr-7109: feat(nsopyown): opposite-lock y-probe own incoming: reverse holds, face UNDEFINED
+- pr-7110: feat(nsopzn): opposite-lock z-probe formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED
+- pr-7111: feat(nsopyncfx): opposite-lock y-probe same-tick n(C)!=n(D): reverse UNDEFINED, face UNDEF
+- pr-7112: feat(nsopzown): opposite-lock z-probe own incoming: reverse fail, face UNDEFINED
+- pr-7113: feat(nspary): parallel-opposite y-probe unique vector: reverse UNDEFINED, face fails
+- pr-7114: feat(nsparyown): parallel-opposite y-probe own incoming: reverse UNDEFINED, face UNDEFINED
+- pr-7115: feat(nsopzncfx): opposite-lock z-probe same-tick n(C)!=n(D): reverse UNDEFINED, face UNDEF
+- pr-7116: feat(nstri): three-site opposite-lock unique vector: reverse fails, face UNDEFINED
+- pr-7117: feat(nsparyn): parallel-opposite y-probe formdraw n(C)!=n(D): reverse UNDEFINED, face UNDE
+- pr-7118: feat(nsparz): parallel-opposite z-probe unique vector: reverse UNDEFINED, face fails
+- pr-7119: feat(nstriy): three-site y-probe unique vector: reverse UNDEFINED, face UNDEFINED
+- pr-7120: feat(nstrin): three-site formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED
+- pr-7121: feat(nstriown): three-site own incoming: reverse UNDEFINED, face UNDEFINED
+- pr-7122: feat(nstriz): three-site z-probe unique vector: reverse fails, face fails
+- pr-7123: feat(nsparzown): parallel-opposite z-probe own incoming: reverse UNDEFINED, face UNDEFINED
+- pr-7124: feat(nstriyown): three-site y-probe own incoming: reverse UNDEFINED, face UNDEFINED
+- pr-7125: feat(nstrizown): three-site z-probe own incoming: reverse UNDEFINED, face UNDEFINED
+- pr-7126: feat(nstriyn): three-site y-probe formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED
+- pr-7127: feat(nstrizn): three-site z-probe formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED
+- pr-7128: feat(nsopyex): opposite-lock y-probe later-tick exist-opposite: reverse HOLD, face HOLD
+- pr-7129: feat(nstrizncfx): three-site z-probe same-tick formdraw n: reverse HOLD, face UNDEFINED
+- pr-7130: feat(nstriyncfx): three-site y-probe same-tick formdraw n: reverse fails, face UNDEFINED
+- pr-7131: feat(nsexgram): nsopp four-event Minkowski Gram signature equals (1,2,0)
+- pr-7132: feat(nsyopp): y-symmetric three-site unique vector: reverse fails, face UNDEFINED
+- pr-7133: feat(nsexint): nsopp B3 interval census N_space=8 N_null=3 N_time=108 **[promotion candidate]**
+- pr-7134: feat(nsopex): opposite-lock x-probe later-tick exist-opposite: reverse HOLD, face HOLD
+- pr-7135: feat(nsopzex): opposite-lock z-probe later-tick exist-opposite: reverse HOLD, face HOLD
+- pr-7137: feat(nsexvar): nsopp formation-tick arrival-speed variance on B3
+- pr-7138: feat(nsparex): parallel-opposite x-probe later-tick exist-opposite: reverse HOLD, face HOL **[promotion candidate]**
+- pr-7139: feat(nssex): same-lock x-probe later-tick exist-opposite: reverse HOLD, face HOLD
+- pr-7140: feat(nstriex): three-site x-probe later-tick exist-opposite: reverse HOLD, face HOLD
+- pr-7141: feat(nsnnyex): nnseed y-probe later-tick exist-opposite: reverse HOLD, face HOLD
+- pr-7142: feat(nsnnzex): nnseed z-probe later-tick exist-opposite: reverse HOLD, face HOLD
+- pr-7143: feat(nsopyft): nsopp y-probe formation-tick exist-opposite: reverse UNDEFINED, face HOLD
+- pr-7144: feat(nsyopex): y-symmetric three-site later-tick exist-opposite: reverse HOLD, face HOLD
+- pr-7145: feat(nsopexft): nsopp x-probe formation-tick exist-opposite: reverse fails, face fails
+- pr-7147: feat(nperppex): perpnn 1-seed later-tick exist-opposite: reverse fails, face HOLD **[promotion candidate]**
+- pr-7148: feat(nsopytmin): nsopp y-probe later-tick exist-opposite: reverse HOLD, face HOLD first at **[promotion candidate]**
+- pr-7149: feat(nsopzft): nsopp z-probe formation-tick exist-opposite: reverse fails, face fails
+- pr-7150: feat(nsopin): nsopp y-probe own-lock-in exist-opposite: reverse HOLD, face HOLD
+- pr-7151: feat(nsopplaq): nsopp plaquette holonomy: reverse UNDEFINED, face fails **[promotion candidate]**
+- pr-7152: feat(nsopyinc): nsopp y-probe same-tick-inclusive exist-opposite: reverse fails, face HOLD
+- pr-7153: feat(nsopinx): nsopp x-probe own-lock-in exist-opposite: reverse fails, face HOLD
+- pr-7154: feat(nsopinz): nsopp z-probe own-lock-in exist-opposite: reverse fails, face fails
+- pr-7155: feat(nsopplaqt): nsopp plaquette own-tick holonomy: reverse fails, face fails **[promotion candidate]**
+- pr-7156: feat(nsnnyin): nnseed y-probe own-lock-in exist-opposite: reverse fails, face fails
+- pr-7157: feat(nsnnxin): nnseed x-probe own-lock-in exist-opposite: reverse fails, face HOLD
+- pr-7158: feat(nperpin): perpnn y-probe own-lock-in exist-opposite: reverse fails, face fails
+- pr-7159: feat(nssamein): nssame y-probe own-lock-in exist-opposite: reverse fails, face fails
+- pr-7160: feat(nsparin): nspar x-probe own-lock-in exist-opposite: reverse fails, face HOLD
+- pr-7161: feat(nsqpz): nsopp z-probe PVM letter: reverse HOLD, face HOLD
+- pr-7162: feat(nsqpx): nsopp x-probe PVM letter: reverse HOLD, face HOLD
+- pr-7163: feat(nsqpy): nsopp y-probe PVM letter: reverse UNDEFINED, face some **[promotion candidate]**
+- pr-7164: feat(nsuoy): nsopp y-probe later-tick S_* union own lock: reverse HOLD, face HOLD
+- pr-7165: feat(nsuox): nsopp x-probe later-tick S_* union own lock: reverse HOLD, face HOLD
+- pr-7166: feat(nsuoz): nsopp z-probe later-tick S_* union own lock: reverse HOLD, face HOLD
+- pr-7167: feat(nsuoyinc): nsopp y-probe same-tick union own-lock: reverse HOLD, face HOLD
+- pr-7168: feat(nsuoxinc): nsopp x-probe same-tick union own-lock: reverse HOLD, face HOLD
+- pr-7169: feat(nsuozinc): nsopp z-probe same-tick union own-lock: reverse fails, face HOLD
+- pr-7170: feat(nsnnyinc): nnseed y-probe same-tick union own-lock: reverse fails, face fails
+- pr-7171: feat(nssaminc): nssame y-probe same-tick union own-lock: reverse fails, face fails
+- pr-7172: feat(nperpinc): perpnn y-probe same-tick union own-lock: reverse fails, face fails
+- pr-7173: feat(nsparinc): nspar x-probe same-tick union own-lock: reverse fails, face HOLD
+- pr-7174: feat(nstriinc): three-site x-probe same-tick union own-lock: reverse fails, face HOLD
+- pr-7175: feat(nsyopinc): y-symmetric three-site same-tick union own-lock: reverse HOLD, face HOLD
+- pr-7176: feat(nsyopinx): y-symmetric three-site x-probe same-tick union own-lock: reverse HOLD, fac
+- pr-7177: feat(nstrizinc): three-site z-probe same-tick union own-lock: reverse fails, face HOLD
+- pr-7178: feat(nstriyinc): three-site y-probe same-tick union own-lock: reverse fails, face HOLD
+- pr-7179: feat(nsyopinz): y-symmetric three-site z-probe same-tick union own-lock: reverse fails, fa
+- pr-7180: feat(nsparyinc): nspar y-probe same-tick union own-lock: reverse fails, face fails
+- pr-7181: feat(nssamxinc): nssame x-probe same-tick union own-lock: reverse HOLD, face HOLD
+- pr-7182: feat(nsxopinc): x-symmetric three-site same-tick union own-lock: reverse HOLD, face HOLD
+- pr-7183: feat(nsnnxinc): nnseed x-probe same-tick union own-lock: reverse fails, face HOLD
+- pr-7184: feat(nsnnzinc): nnseed z-probe same-tick union own-lock: reverse fails, face HOLD
+- pr-7185: feat(nsxopinx): x-symmetric three-site x-probe same-tick union own-lock: reverse HOLD, fac
+- pr-7186: feat(nszopinz): z-symmetric three-site z-probe same-tick union own-lock: reverse HOLD, fac
+- pr-7187: feat(nsxsaminc): x-axis same-lock same-tick union own-lock: reverse HOLD, face HOLD
+- pr-7188: feat(nszopinx): z-symmetric three-site x-probe same-tick union own-lock: reverse HOLD, fac
+- pr-7189: feat(nszparxinc): z-axis opposite-lock x-probe same-tick union own-lock: reverse HOLD, fac **[promotion candidate]**
+- pr-7190: feat(nszsamxinc): z-axis same-lock x-probe same-tick union own-lock: reverse HOLD, face HO
+- pr-7191: feat(nsxe3zinc): x-axis opposite ±e_3 z-probe same-tick union own-lock: reverse HOLD, face
+- pr-7192: feat(nsye3zinc): y-axis opposite ±e_3 z-probe same-tick union own-lock: reverse HOLD, face
+- pr-7193: feat(nsze2inc): z-axis opposite ±e_2 same-tick union own-lock: reverse HOLD, face HOLD
+- pr-7194: feat(nszparzinc): z-axis opposite-lock z-probe same-tick union own-lock: reverse HOLD, fac
+- pr-7195: feat(nsxe2inc): x-axis opposite ±e_2 same-tick union own-lock: reverse HOLD, face HOLD
+- pr-7196: feat(nsxe2xinc): x-axis opposite ±e_2 x-probe same-tick union own-lock: reverse HOLD, face
+- pr-7197: feat(nsze3zinc): z-axis opposite ±e_3 z-probe same-tick union own-lock: reverse fails, fac **[promotion candidate]**
+- pr-7198: feat(nsye3sz): y-axis same-lock +e_3 z-probe same-tick union own-lock: reverse HOLD, face
+- pr-7199: feat(nsze2sam): z-axis same-lock +e_2 same-tick union own-lock: reverse HOLD, face HOLD
+- pr-7200: feat(nsxe3sz): x-axis same-lock +e_3 z-probe same-tick union own-lock: reverse HOLD, face
+- pr-7201: feat(nsze3sam): z-axis same-lock +e_3 same-tick union own-lock: reverse fails, face HOLD **[promotion candidate]**
+- pr-7205: feat(nszmenu): own incoming set on #7188: reverse fails, face fails **[promotion candidate]**
+- pr-7206: feat(nsplqcl): own-letter Cl(3,0) plaquette product on #7188: reverse UNDEFINED, face UNDE
+- pr-7207: feat(nst2cmp): two-tick own-set composition on #7188: reverse fails, face fails, compositi
+- pr-7208: feat(nsmopp): own incoming set on #7167: reverse HOLD, face HOLD
+- pr-7209: feat(nst2sp): S+ two-tick composition on #7188: reverse HOLD, face HOLD, composition HOLD **[promotion candidate]**
+- pr-7211: feat(nmsyop): own incoming set on #7175: reverse HOLD, face HOLD
+- pr-7212: feat(nst2spy): S+ two-tick composition on #7167: reverse HOLD, face HOLD, composition HOLD
+- pr-7213: feat(nmszopx): own incoming set on #7185: reverse HOLD, face HOLD
+- pr-7214: feat(nmxe2x): own incoming set on #7196: reverse HOLD, face HOLD
+- pr-7215: feat(nmsyopx): own incoming set on #7176: reverse fails, face fails
+- pr-7216: feat(nst2ssx): S+ two-tick composition on #7181: reverse HOLD, face HOLD, composition HOLD
+- pr-7217: feat(nsmopx): own incoming set on #7168: reverse fails, face fails
+- pr-7218: feat(nmsxop): own incoming set on #7182: reverse fails, face fails
+- pr-7219: feat(nsmssx): own incoming set on #7181: reverse fails, face fails
+- pr-7220: feat(nmxe2): own incoming set on #7195: reverse fails, face fails [forcing]
+- pr-7221: feat(nsplqny): own-letter Cl(3,0) plaquette product on #7167: reverse UNDEFINED, face UNDE
+- pr-7222: feat(nsplqsam): own-letter Cl(3,0) plaquette product on #7181: reverse UNDEFINED, face UND
+- pr-7223: feat(nsplqxe2): own-letter Cl(3,0) plaquette product on #7195: reverse UNDEFINED, face UND
+- pr-7224: feat(nmclopp): exist-choice Cl(3,0) from M on #7167: reverse HOLD, face HOLD
+- pr-7225: feat(nsclsp): exist-choice Cl(3,0) from S+ on #7188: reverse HOLD, face HOLD
+- pr-7226: feat(nmclsy): exist-choice Cl(3,0) from M on #7175: reverse HOLD, face HOLD
+- pr-7227: feat(nmclall): forall-choice Cl(3,0) from M on #7167: reverse fails, face fails **[promotion candidate]**
+- pr-7228: feat(nsclall): forall-choice Cl(3,0) from S+ on #7188: reverse fails, face fails [forcing]
+- pr-7229: feat(nmsyall): forall-choice Cl(3,0) from M on #7175: reverse fails, face fails [forcing]
+- pr-7230: feat(nmt2opp): M two-tick composition on #7208: reverse HOLD, face HOLD, composition HOLD
+- pr-7231: feat(nmt2sy): M two-tick composition on #7211: reverse HOLD, face HOLD, composition HOLD
+- pr-7232: feat(nmt2zx): M two-tick composition on #7213: reverse HOLD, face HOLD, composition HOLD
+- pr-7233: feat(nmt2x2): M two-tick composition on #7214: reverse HOLD, face HOLD, composition HOLD
+- pr-7234: feat(nmoutopp): own outgoing set on #7167: reverse HOLD, face HOLD [DISPUTED]
+- pr-7235: feat(nmoutsy): own outgoing set on #7211: reverse HOLD, face HOLD [DISPUTED]
+- pr-7236: feat(nmzpin): own incoming set on #7186: reverse HOLD, face HOLD
+- pr-7237: feat(nmoutx2): own outgoing set on #7214: reverse HOLD, face HOLD [DISPUTED]
+- pr-7238: feat(nmoutzx): own outgoing set on #7213: reverse HOLD, face HOLD
+- pr-7240: feat(nmxe3sz): own incoming set on #7200: reverse fails, face fails
+- pr-7241: feat(nmxsam): own incoming set on #7187: reverse fails, face fails [forcing]
+- pr-7242: feat(nmze2): own incoming set on #7199: reverse fails, face fails [forcing]
+- pr-7243: feat(nmot2opp): O two-tick composition on #7167: reverse UNDEFINED, face UNDEFINED, compos **[promotion candidate]**
+- pr-7244: feat(nmreadopp): neighbor-read of M on #7208: reverse UNDEFINED, face UNDEFINED **[promotion candidate]**
+- pr-7245: feat(nmye3sz): own incoming set on #7198: reverse fails, face fails
+- pr-7246: feat(nmxe3zn): own incoming set on #7191: reverse fails, face fails
+- pr-7247: feat(nmoutzp): own outgoing set on #7186: reverse HOLD, face HOLD [DISPUTED]
+- pr-7248: feat(nmt2zp): M two-tick composition on #7186: reverse HOLD, face HOLD, composition HOLD
+- pr-7249: feat(nmot2sy): O two-tick composition on #7211: reverse UNDEFINED, face UNDEFINED, composi
+- pr-7250: feat(nmot2zx): O two-tick composition on #7213: reverse UNDEFINED, face UNDEFINED, composi
+- pr-7251: feat(nmreadsy): neighbor-read of M on #7211: reverse UNDEFINED, face UNDEFINED
+- pr-7252: feat(nmparx): own incoming set on #7189: reverse fails, face fails
+- pr-7253: feat(nmoread): neighbor-read of O on #7167: reverse HOLD, face HOLD
+- pr-7254: feat(nmot2x2): O two-tick composition on #7214: reverse UNDEFINED, face UNDEFINED, composi
+- pr-7255: feat(nmot2zp): O two-tick composition on #7186: reverse UNDEFINED, face UNDEFINED, composi
+- pr-7256: feat(nmreadzx): neighbor-read of M on #7213: reverse UNDEFINED, face UNDEFINED
+- pr-7257: feat(nmreadzp): neighbor-read of M on #7186: reverse UNDEFINED, face UNDEFINED
+- pr-7258: feat(nmreadx2): neighbor-read of M on #7214: reverse UNDEFINED, face UNDEFINED
+- pr-7259: feat(nmze2in): own incoming set on #7193: reverse fails, face fails
+- pr-7260: feat(nmye3zn): own incoming set on #7192: reverse fails, face fails
+- pr-7261: feat(nmot3zx): O freeze t+1 vs t+2 on #7213: reverse HOLD, face HOLD, composition HOLD
+- pr-7262: feat(nmot3sy): O freeze t+1 vs t+2 on #7211: reverse HOLD, face HOLD, composition HOLD
+- pr-7263: feat(nmot3opp): O freeze t+1 vs t+2 on #7167: reverse HOLD, face HOLD, composition HOLD
+- pr-7264: feat(nmot3x2): O freeze t+1 vs t+2 on #7214: reverse HOLD, face HOLD, composition HOLD
+- pr-7265: feat(nmsimzp): simultaneous M and O at t+1 on #7186: reverse HOLD, face HOLD
+- pr-7266: feat(nmsimopp): simultaneous M and O at t+1 on #7167: reverse HOLD, face HOLD
+- pr-7267: feat(nmsimsy): simultaneous M and O at t+1 on #7211: reverse HOLD, face HOLD
+- pr-7268: feat(nmsimzx): simultaneous M and O at t+1 on #7213: reverse HOLD, face HOLD
+- pr-7269: feat(nmperpzx): forall-orthogonal M vs O at t+1 on #7213: reverse HOLD, face HOLD **[promotion candidate]**
+- pr-7270: feat(nmot3zp): O freeze t+1 vs t+2 on #7186: reverse HOLD, face HOLD, composition HOLD
+- pr-7271: feat(nmperp): forall-orthogonal M vs O at t+1 on #7167: reverse HOLD, face HOLD
+- pr-7272: feat(nmtriple): leftover axis of M and O at t+1 on #7167: reverse fails, face fails
+- pr-7273: feat(nmsimx2): simultaneous M and O at t+1 on #7214: reverse HOLD, face HOLD
+- pr-7274: feat(nmperpsy): forall-orthogonal M vs O at t+1 on #7211: reverse HOLD, face HOLD
+- pr-7275: feat(nmperpx2): forall-orthogonal M vs O at t+1 on #7214: reverse HOLD, face HOLD
+- pr-7276: feat(nmperpzp): forall-orthogonal M vs O at t+1 on #7186: reverse HOLD, face HOLD
+- pr-7278: feat(nmcover): axis-cover of M and O at t+1 on #7167: reverse HOLD, face HOLD **[promotion candidate]**
+- pr-7279: feat(nmcovers): axis-cover of M and O at t+1 on #7211: reverse HOLD, face HOLD
+- pr-7280: feat(nmcoverz): axis-cover of M and O at t+1 on #7213: reverse HOLD, face HOLD
+- pr-7281: feat(nmcoverx): axis-cover of M and O at t+1 on #7214: reverse HOLD, face HOLD
+- pr-7282: feat(nmcoverp): axis-cover of M and O at t+1 on #7186: reverse HOLD, face HOLD
+- pr-7283: feat(nmoaxis): outgoing-axis agreement at t+1 on #7167: reverse HOLD, face fails
+- pr-7284: feat(nmmaxisy): incoming-axis agreement at t+1 on #7211: reverse HOLD, face fails
+- pr-7285: feat(nmcfa): axis-cover of M and O at t+1 on #7198: reverse HOLD, face HOLD
+- pr-7286: feat(nmcze2): axis-cover of M and O at t+1 on #7199: reverse HOLD, face HOLD
+- pr-7287: feat(nmcxe3): axis-cover of M and O at t+1 on #7200: reverse HOLD, face HOLD
+- pr-7288: feat(nmcssx): axis-cover of M and O at t+1 on #7187: reverse HOLD, face HOLD
+- pr-7289: feat(nmcpar): axis-cover of M and O at t+1 on #7189: reverse HOLD, face HOLD
+- pr-7290: feat(nmcfail): axis-cover of M and O at t+1 on #7188: reverse fails, face fails **[promotion candidate]**
+- pr-7291: feat(nmcopx): axis-cover of M and O at t+1 on #7168: reverse HOLD, face HOLD
+- pr-7292: feat(nm12zx): 1-in 2-out split on #7213: reverse HOLD, face fails
+- pr-7293: feat(nm12opp): 1-in 2-out split on #7167: reverse HOLD, face fails
+- pr-7294: feat(nmmaxis): incoming-axis agreement at t+1 on #7167: reverse HOLD, face fails
+- pr-7295: feat(nm12sy): 1-in 2-out split on #7211: reverse HOLD, face fails
+- pr-7296: feat(nm12zp): 1-in 2-out split on #7186: reverse HOLD, face fails
+- pr-7297: feat(nm12x2): 1-in 2-out split on #7214: reverse HOLD, face fails
+- pr-7298: feat(nm12fail): 1-in 2-out split on #7188: reverse fails, face fails **[promotion candidate]**
+- pr-7299: feat(nmpfail): forall-orthogonal M vs O at t+1 on #7188: reverse HOLD, face HOLD **[promotion candidate]**
+- pr-7300: feat(nm12fa): 1-in 2-out split on #7198: reverse fails, face HOLD **[promotion candidate]**
+- pr-7301: feat(nm2axp): two-axis opposite seed forall-perp: reverse HOLD, face HOLD
+- pr-7302: feat(nm2slp): two-axis same-lock seed forall-perp: reverse HOLD, face HOLD
+- pr-7303: feat(nm2ax): two-axis opposite seed axis-cover: reverse HOLD, face fails
+- pr-7304: feat(nm2ax12): 1-in 2-out split on two-axis opposite: reverse HOLD, face fails
+- pr-7305: feat(nm2sl): axis-cover of M and O at t+1 on two-axis same-lock: reverse HOLD, face fails
+- pr-7306: feat(nm2sl12): 1-in 2-out split on two-axis same-lock: reverse HOLD, face fails
+- pr-7307: feat(nm2axx): axis-cover of M and O at t+1 on two-axis opposite x-probes: reverse fails, f **[promotion candidate]**
+- pr-7308: feat(nm2ax12z): 1-in 2-out split on two-axis opposite z-probes: reverse HOLD, face HOLD
+- pr-7309: feat(nm2axz): axis-cover of M and O at t+1 on two-axis opposite z-probes: reverse HOLD, fa
+- pr-7310: feat(nm2axo): outgoing exist-opposite at t+1 on two-axis opposite y-probes: reverse HOLD,
+- pr-7311: feat(nm2slo): outgoing exist-opposite at t+1 on two-axis same-lock y-probes: reverse HOLD,
+- pr-7312: feat(nm2axpx): forall-orthogonal M vs O at t+1 on two-axis opposite x-probes: reverse HOLD
+- pr-7313: feat(nm2slpx): forall-orthogonal M vs O at t+1 on two-axis same-lock x-probes: reverse HOL
+- pr-7316: physics: encode NN Record programs and expose self-hosting gap **[promotion candidate]**
+- pr-7317: physics: block 174 — the site-conditional law family (the readout principle isolated) **[promotion candidate]**
+- pr-7318: physics: block 175 — the pincer identity (both lanes compute the same object) **[promotion candidate]**
+- pr-7319: physics: construct self-hosting homogeneous Record carrier
+- pr-7320: physics: construct protected cavity Record birth process
+- pr-7321: physics: construct endogenous self-addressing Record compiler **[promotion candidate]**
+- pr-7322: physics: construct endogenous spatial Record trial ensemble **[promotion candidate]**
+- pr-7323: physics: construct relational Record menu compiler
+- pr-7324: physics: construct continuum low-arity Record menu compiler **[promotion candidate]**
+- pr-7325: physics: prove nearest-neighbor W1 nonselection **[promotion candidate]**
+- pr-7327: physics: derive pincer marginal from Schur response
+- pr-7328: physics: construct pin-faithful joint Record sector **[promotion candidate]**
+- pr-7329: physics: construct bounded innovation dilation **[promotion candidate]**
+- pr-7339: [physics-loop][gravity-halfspace][bounded_theorem][bounded-support] isolate fixed-response
+- pr-7341: [physics-loop][gravity-weyl][bounded_theorem][bounded-support] derive positive boundary ob
+- pr-7342: [physics-loop][gravity-gns][bounded_theorem][bounded-support] construct action-glued matri
+- pr-7344: [physics-loop][gravity-source-quotient][bounded_theorem][bounded-support] localize axial b
+- pr-7346: [physics-loop][gravity-metric-pullback][bounded_theorem][bounded-support] localize torus a
+- pr-7348: [physics-loop][common-action][bounded_theorem][bounded-support] correct stationarity and s
+- pr-7349: [physics-loop][dual-frame-stage][bounded_theorem][bounded-support] derive projective orien
+- pr-7352: [physics-loop][mixed-stage-positivity][bounded_theorem][bounded-support] classify compatib
+- pr-7354: [physics-loop][d4-common-action][bounded_theorem][bounded-support] derive Ward/TT survivor
+- pr-7356: [physics-loop][grade3-response-history][bounded_theorem][bounded-support] localize tempora
+- pr-7357: feat(nm2sl12z): 1-in 2-out split on two-axis same-lock z-probes: reverse fails, face HOLD
+- pr-7358: feat(nm2simz): simultaneous M and O at t+1 on two-axis opposite z-probes: reverse HOLD, fa
+- pr-7360: feat(nm2readslz): neighbor-read of M at t+1 on two-axis same-lock z-probes: reverse HOLD,
+- pr-7361: feat(nm2chiralz): oriented 1-in 2-out frame at t+1 on two-axis opposite z-probes: reverse  **[promotion candidate]**
+- pr-7362: feat(nm2ot3z): O freeze t+1 vs t+2 on two-axis opposite z-probes: reverse HOLD, face fails
+- pr-7363: feat(nm2readz): neighbor-read of M at t+1 on two-axis opposite z-probes: reverse fails, fa
+- pr-7364: feat(nm2oreadz): neighbor-read of O at t+1 on two-axis opposite z-probes: reverse fails, f
+- pr-7365: feat(nm2simslz): simultaneous M and O at t+1 on two-axis same-lock z-probes: reverse fails
+- pr-7366: feat(nm2ot3slz): O freeze t+1 vs t+2 on two-axis same-lock z-probes: reverse HOLD, face fa
+- pr-7367: feat(nm2t2slz): M two-tick composition on two-axis same-lock z-probes: reverse fails, face
+- pr-7368: feat(nm2slz): axis-cover at t+1 on two-axis same-lock z-probes: reverse fails, face HOLD
+- pr-7369: feat(nm2slx): axis-cover at t+1 on two-axis same-lock x-probes: reverse fails, face fails
+- pr-7370: feat(nm2axm): incoming exist-opposite at t+1 on two-axis opposite y-probes: reverse HOLD,
+- pr-7371: feat(nm2slm): incoming exist-opposite at t+1 on two-axis same-lock y-probes: reverse fails
+- pr-7372: feat(nm2ax12x): 1-in 2-out split on two-axis opposite x-probes: reverse fails, face fails
+- pr-7373: feat(nm2axmz): incoming exist-opposite at t+1 on two-axis opposite z-probes: reverse fails
+- pr-7374: feat(nm2axoz): outgoing exist-opposite at t+1 on two-axis opposite z-probes: reverse fails
+- pr-7375: feat(nm2axox): outgoing exist-opposite at t+1 on two-axis opposite x-probes: reverse fails
+- pr-7376: feat(nm2ot3y): O freeze t+1 vs t+2 on two-axis opposite y-probes: reverse HOLD, face HOLD,
+- pr-7377: feat(nm2ot3sly): O freeze t+1 vs t+2 on two-axis same-lock y-probes: reverse HOLD, face HO
+- pr-7378: feat(nm2simy): simultaneous M and O at t+1 on two-axis opposite y-probes: reverse HOLD, fa
+- pr-7379: feat(nm2simx): simultaneous M and O at t+1 on two-axis opposite x-probes: reverse HOLD, fa
+- pr-7380: feat(nm2readx): neighbor-read of M at t+1 on two-axis opposite x-probes: reverse HOLD, fac
+- pr-7381: feat(nm2simslx): simultaneous M and O at t+1 on two-axis same-lock x-probes: reverse HOLD,
+- pr-7382: feat(nm2oready): neighbor-read of O at t+1 on two-axis opposite y-probes: reverse fails, f
+- pr-7383: feat(nm2oreadslz): neighbor-read of O at t+1 on two-axis same-lock z-probes: reverse fails
+- pr-7384: physics: classify the site symmetries and certify the invariant-sector quotient (block 189
+- pr-7385: feat(nm2ready): neighbor-read of M at t+1 on two-axis opposite y-probes: reverse fails, fa
+- pr-7386: feat(nm2simsly): simultaneous M and O at t+1 on two-axis same-lock y-probes: reverse HOLD, **[promotion candidate]**
+- pr-7387: feat(nm2readslx): neighbor-read of M at t+1 on two-axis same-lock x-probes: reverse HOLD,
+- pr-7388: feat(nm2ot3x): O freeze t+1 vs t+2 on two-axis opposite x-probes: reverse fails, face fail
+- pr-7389: feat(nm2ot3slx): O freeze t+1 vs t+2 on two-axis same-lock x-probes: reverse fails, face f
+- pr-7390: feat(nm2t2y): M two-tick composition on two-axis opposite y-probes: reverse HOLD, face fai
+- pr-7391: feat(nm2oreadx): neighbor-read of O at t+1 on two-axis opposite x-probes: reverse fails, f
+- pr-7392: feat(nm2t2x): M two-tick composition on two-axis opposite x-probes: reverse fails, face fa
+- pr-7393: feat(nm2orichz): opposite-pair 1-in 2-out frame orientation at t+1 on two-axis opposite z- **[promotion candidate]**
+- pr-7394: feat(nm2orichy): opposite-pair 1-in 2-out frame orientation at t+1 on two-axis opposite y-
+- pr-7395: feat(nm2splt2z): 1-in 2-out at t vs t+1 on two-axis opposite z-probes: reverse fail then H
+- pr-7396: feat(nm2splt2y): 1-in 2-out at t vs t+1 on two-axis opposite y-probes: reverse fail then H
+- pr-7397: feat(nm2splt2x): 1-in 2-out at t vs t+1 on two-axis opposite x-probes: reverse fails, face
+- pr-7398: feat(nm2splt2slz): 1-in 2-out at t vs t+1 on two-axis same-lock z-probes: reverse fails, f
+- pr-7399: feat(nm2simt2y): simultaneous M and O freeze t+1 vs t+2 on two-axis opposite y-probes: rev
+- pr-7400: feat(nm2simt2x): simultaneous M and O freeze t+1 vs t+2 on two-axis opposite x-probes: rev
+- pr-7401: feat(nm2ot4y): O freeze t+2 vs t+3 on two-axis opposite y-probes: reverse HOLD, face HOLD,
+- pr-7402: feat(nm2ot4sly): O freeze t+2 vs t+3 on two-axis same-lock y-probes: reverse HOLD, face HO **[promotion candidate]**
+- pr-7403: feat(nm2simt2sly): simultaneous M and O freeze t+1 vs t+2 on two-axis same-lock y-probes:
+- pr-7404: feat(nm2simt2slx): simultaneous M and O freeze t+1 vs t+2 on two-axis same-lock x-probes:
+- pr-7405: feat(nm2readsly): neighbor-read of M at t+1 on two-axis same-lock y-probes: reverse HOLD,
+- pr-7406: feat(nm2t2sly): M two-tick composition on two-axis same-lock y-probes: reverse fails, face
+- pr-7407: feat(nm2ot5y): O freeze t+3 vs t+4 on two-axis opposite y-probes: reverse HOLD, face HOLD,
+- pr-7408: feat(nm2ot5sly): O freeze t+3 vs t+4 on two-axis same-lock y-probes: reverse HOLD, face HO **[promotion candidate]**
+- pr-7409: feat(nm2simt3y): simultaneous M and O freeze t+2 vs t+3 on two-axis opposite y-probes: rev
+- pr-7410: feat(nm2simt3x): simultaneous M and O freeze t+2 vs t+3 on two-axis opposite x-probes: rev
+- pr-7411: feat(nm2simt2z): simultaneous M and O freeze t+1 vs t+2 on two-axis opposite z-probes: rev
+- pr-7412: feat(nm2simt3sly): simultaneous M and O freeze t+2 vs t+3 on two-axis same-lock y-probes:
+- pr-7413: feat(nm2readt2x): neighbor-read of M at t+1 vs t+2 on two-axis opposite x-probes: reverse
+- pr-7414: feat(nm2t2slx): M two-tick composition on two-axis same-lock x-probes: reverse fails, face
+- pr-7415: feat(nm2simt3z): simultaneous M and O freeze t+2 vs t+3 on two-axis opposite z-probes: rev
+- pr-7416: feat(nm2readt2slx): neighbor-read of M at t+1 vs t+2 on two-axis same-lock x-probes: rever
+- pr-7417: feat(nm2simt3slx): simultaneous M and O freeze t+2 vs t+3 on two-axis same-lock x-probes:
+- pr-7418: feat(nm2splt3z): 1-in 2-out freeze t+1 vs t+2 on two-axis opposite z-probes: reverse HOLD,
+- pr-7419: feat(nm2sreadz): neighbor-read of 1-in 2-out split at t+1 on two-axis opposite z-probes: r **[promotion candidate]**
+- pr-7420: feat(nm2splt3y): 1-in 2-out freeze t+1 vs t+2 on two-axis opposite y-probes: reverse HOLD,
+- pr-7421: feat(nm2splt3x): 1-in 2-out freeze t+1 vs t+2 on two-axis opposite x-probes: reverse fails
+- pr-7422: feat(nm2splt3slz): 1-in 2-out freeze t+1 vs t+2 on two-axis same-lock z-probes: reverse fa
+- pr-7423: feat(nm2splt3sly): 1-in 2-out freeze t+1 vs t+2 on two-axis same-lock y-probes: reverse HO
+- pr-7424: feat(nm2oricht2z): opposite-pair 1-in 2-out frame orientation freeze t+1 vs t+2 on two-axi
+- pr-7425: feat(nm2oridetz): signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis opposit **[promotion candidate]**
+- pr-7426: feat(nm2orioney): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis
+- pr-7427: feat(nm2orionez): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis **[promotion candidate]**
+- pr-7428: feat(nm2sready): neighbor-read of 1-in 2-out split at t+1 on two-axis opposite y-probes: r
+- pr-7429: feat(nm2sreadslz): neighbor-read of 1-in 2-out split at t+1 on two-axis same-lock z-probes
+- pr-7430: feat(nm2sreadsly): neighbor-read of 1-in 2-out split at t+1 on two-axis same-lock y-probes
+- pr-7431: feat(nm2sreadx): neighbor-read of 1-in 2-out split at t+1 on two-axis opposite x-probes: r
+- pr-7432: feat(nm2splt3slx): 1-in 2-out freeze t+1 vs t+2 on two-axis same-lock x-probes: reverse fa
+- pr-7433: feat(nm2sreadt2z): neighbor-read of 1-in 2-out split freeze t+1 vs t+2 on two-axis opposit
+- pr-7434: feat(nm2orilefz): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis op
+- pr-7435: feat(nm2sreadt2y): neighbor-read of 1-in 2-out split freeze t+1 vs t+2 on two-axis opposit
+- pr-7436: feat(nm2sreadt2slz): neighbor-read of 1-in 2-out split freeze t+1 vs t+2 on two-axis same-
+- pr-7437: feat(nm2sreadt2x): neighbor-read of 1-in 2-out split freeze t+1 vs t+2 on two-axis opposit
+- pr-7438: feat(nm2orilefy): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis op
+- pr-7439: feat(nm2orilefx): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis op
+- pr-7440: feat(nm2orionex): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis
+- pr-7441: feat(nm2sreadslx): neighbor-read of 1-in 2-out split at t+1 on two-axis same-lock x-probes
+- pr-7442: feat(nm2orisumz): outgoing-sum leftover det orientation of 1-in 2-out at t+1 on two-axis o
+- pr-7443: feat(nm2orioneslz): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-ax
+- pr-7444: feat(nm2srt2sly): neighbor-read of 1-in 2-out split freeze t+1 vs t+2 on two-axis same-loc
+- pr-7445: feat(nm2oricht2y): opposite-pair 1-in 2-out frame orientation freeze t+1 vs t+2 on two-axi
+- pr-7446: feat(nm2orilefslz): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis
+- pr-7447: feat(nm2orilefsly): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis
+- pr-7448: feat(nm2orilefslx): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis
+- pr-7449: feat(nm2orionesly): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-ax
+- pr-7450: feat(nm2srt2slx): neighbor-read of 1-in 2-out split freeze t+1 vs t+2 on two-axis same-loc
+- pr-7451: feat(nm2oricyclz): cyclic next/prev lex-largest det orientation of 1-in 2-out at t+1 on tw
+- pr-7452: feat(nm2oricyccz): cyclic next/prev lex-smallest det orientation of 1-in 2-out at t+1 on t
+- pr-7453: feat(nm2oricyclslz): cyclic next/prev lex-largest det orientation of 1-in 2-out at t+1 on
+- pr-7454: feat(nm2oricyclsly): cyclic next/prev lex-largest det orientation of 1-in 2-out at t+1 on
+- pr-7455: feat(nm2oricyccy): cyclic next/prev lex-smallest det orientation of 1-in 2-out at t+1 on t
+- pr-7456: feat(nm2oricycy): cyclic next/prev lex-largest det orientation of 1-in 2-out at t+1 on two
+- pr-7457: feat(nm2oricycx): cyclic next/prev lex-largest det orientation of 1-in 2-out at t+1 on two
+- pr-7458: feat(nm2oricyclslx): cyclic next/prev lex-largest det orientation of 1-in 2-out at t+1 on
+- pr-7459: feat(nm2oricyclt2z): cyclic lex-largest Orient freeze t+1 vs t+2 on two-axis opposite z-pr
+- pr-7460: feat(nm2oricycc2z): cyclic lex-smallest Orient freeze t+1 vs t+2 on two-axis opposite z-pr
+- pr-7461: feat(nm2oricyclrdz): neighbor-read of cyclic lex-largest Orient at t+1 on two-axis opposit
+- pr-7462: feat(nm2oricyccrdz): neighbor-read of cyclic lex-smallest Orient at t+1 on two-axis opposi
+- pr-7463: feat(nm2oricyccslz): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on two-axis
+- pr-7464: feat(nm2oricyclt2y): cyclic lex-largest Orient freeze t+1 vs t+2 on two-axis opposite y-pr
+- pr-7465: feat(nm2oricyccx): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on two-axis op
+- pr-7466: feat(nm2oricyclrdy): neighbor-read of cyclic lex-largest Orient at t+1 on two-axis opposit
+- pr-7467: feat(nm2ocycct2y): cyclic lex-smallest Orient freeze t+1 vs t+2 on two-axis opposite y-pro
+- pr-7468: feat(nm2ocyt2slz): cyclic lex-largest Orient freeze t+1 vs t+2 on two-axis same-lock z-pro
+- pr-7469: feat(nm2ocyt2x): cyclic lex-largest Orient freeze t+1 vs t+2 on two-axis opposite x-probes
+- pr-7470: feat(nm2ocyccsly): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on two-axis sa
+- pr-7471: feat(nm2ocyccslx): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on two-axis sa
+- pr-7472: feat(nm2ocycrdx): neighbor-read of cyclic lex-largest Orient at t+1 on two-axis opposite x
+- pr-7473: feat(nm2ocyccrdy): neighbor-read of cyclic lex-smallest Orient at t+1 on two-axis opposite
+- pr-7474: feat(nm2occt2slz): cyclic lex-smallest Orient freeze t+1 vs t+2 on two-axis same-lock z-pr
+- pr-7475: feat(nm2oricycl3z): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis  **[promotion candidate]**
+- pr-7476: feat(nm2oricycl3y): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis
+- pr-7477: feat(nm2occtrdslz): neighbor-read of cyclic lex-smallest Orient at t+1 on two-axis same-lo
+- pr-7478: feat(nm2ocyt2sly): cyclic lex-largest Orient freeze t+1 vs t+2 on two-axis same-lock y-pro
+- pr-7479: feat(nm2ocyt2slx): cyclic lex-largest Orient freeze t+1 vs t+2 on two-axis same-lock x-pro
+- pr-7480: feat(nm2occt2sly): cyclic lex-smallest Orient freeze t+1 vs t+2 on two-axis same-lock y-pr
+- pr-7481: feat(nm2occt2slx): cyclic lex-smallest Orient freeze t+1 vs t+2 on two-axis same-lock x-pr
+- pr-7482: feat(nm2oricycl3fz): HOLDING cyclic lex-largest det orientation of 1-in 2-out at t+1 on th
+- pr-7483: feat(nm2oricycc3z): HOLDING cyclic lex-smallest det orientation of 1-in 2-out at t+1 on th **[promotion candidate]**
+- pr-7484: feat(nm2oricycc3y): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on three-axis
+- pr-7485: feat(nm2oricyccrd3z): neighbor-read of cyclic lex-smallest Orient at t+1 on three-axis opp
+- pr-7486: feat(nm2oricycl3x): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis
+- pr-7487: feat(nm2oricycc3x): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on three-axis
+- pr-7488: feat(nm2oricyclt23y): cyclic lex-largest Orient freeze t+1 vs t+2 on three-axis opposite y
+- pr-7489: feat(nm2oricyccct23z): HOLDING cyclic lex-smallest Orient freeze t+1 vs t+2 on three-axis
+- pr-7490: feat(nm2cycfrmz): HOLDING cyclic-frame transport of (m,o_next,o_prev) at t+1 on two-axis o
+- pr-7491: feat(nm2cyc3fzt2): HOLDING cyclic lex-largest Orient freeze t+1 vs t+2 on three-axis far-f
+- pr-7492: feat(nm2cycfrmfz): HOLDING cyclic-frame transport of (m,o_next,o_prev) at t+1 on three-axi
+- pr-7493: feat(nm2cycc3sfz): HOLDING cyclic lex-smallest det orientation of 1-in 2-out at t+1 on thr
+- pr-7494: feat(nm2cycfrmsl): cyclic-frame transport of (m,o_next,o_prev) at t+1 on two-axis same-loc
+- pr-7495: feat(nm2cycct23y): cyclic lex-smallest Orient freeze t+1 vs t+2 on three-axis opposite y-p
+- pr-7496: feat(nm2cycc3slz): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on three-axis
+- pr-7497: feat(nm2cyc3fzrd): neighbor-read of cyclic lex-largest Orient at t+1 on three-axis far-fac [forcing]
+- pr-7498: feat(nm2cyc3slt2): cyclic lex-smallest Orient freeze t+1 vs t+2 on three-axis same-lock z-
+- pr-7499: feat(nm2cyc3fzy): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis fa
+- pr-7500: feat(nm2oricycl3fx): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis
+- pr-7501: feat(nm2cycfrmhol): cyclic-frame holonomy around the unit square at t+1 on two-axis opposi **[promotion candidate]**
+- pr-7502: feat(nm2cycfrmy): cyclic-frame transport of (m,o_next,o_prev) at t+1 on two-axis opposite
+- pr-7503: feat(nm2cycfrmx): cyclic-frame transport of (m,o_next,o_prev) at t+1 on two-axis opposite
+- pr-7504: feat(nm2cycfrmt2): HOLDING cyclic-frame transport freeze t+1 vs t+2 on two-axis opposite z
+- pr-7505: feat(nm2cycfrmfx): cyclic-frame transport of (m,o_next,o_prev) at t+1 on three-axis far-fa
+- pr-7506: feat(nm2cycfrmfy): cyclic-frame transport of (m,o_next,o_prev) at t+1 on three-axis far-fa
+- pr-7507: feat(nm2cyc3fxt2): cyclic lex-largest Orient freeze t+1 vs t+2 on three-axis far-face oppo
+- pr-7508: feat(nm2cycfrmholfz): cyclic-frame holonomy around the unit square at t+1 on three-axis fa
+- pr-7509: feat(nm2frmfzt2): HOLDING cyclic-frame transport freeze t+1 vs t+2 on three-axis far-face
+- pr-7510: feat(nm2cycfrmholt2): cyclic-frame holonomy freeze t+1 vs t+2 on two-axis opposite unit sq
+- pr-7511: feat(nm2frmrdz): HOLDING neighbor-read of cyclic-frame transport at t+1 on two-axis opposi
+- pr-7512: feat(nm2cycsfzt2): HOLDING cyclic lex-smallest Orient freeze t+1 vs t+2 on three-axis far-
+- pr-7513: feat(nm2cycfrm3z): HOLDING cyclic-frame transport of (m,o_next,o_prev) at t+1 on three-axi
+- pr-7514: feat(nm2cycfrmfyt2): cyclic-frame transport freeze t+1 vs t+2 on three-axis far-face oppos
+- pr-7515: feat(nm2cycfrmholfx): cyclic-frame holonomy around the x-shifted unit square at t+1 on two **[promotion candidate]**
+- pr-7516: feat(nm2sfzfrm): HOLDING cyclic lex-smallest frame transport of 1-in 2-out at t+1 on three
+- pr-7517: feat(nm2holfzt2): cyclic-frame holonomy freeze t+1 vs t+2 on three-axis far-face unit squa
+- pr-7518: feat(nm2cycfrmholfy): cyclic-frame holonomy around the y-shifted unit square at t+1 on two **[promotion candidate]**
+- pr-7519: feat(nm2cycsfzrd): neighbor-read of cyclic lex-smallest Orient at t+1 on three-axis far-fa **[promotion candidate]**
+- pr-7520: feat(nm2frm3zt2): HOLDING cyclic-frame transport freeze t+1 vs t+2 on three-axis opposite
+- pr-7521: feat(nm2sfzfrmrd): HOLDING neighbor-read of cyclic lex-smallest frame transport at t+1 on  **[promotion candidate]**
+- pr-7522: feat(nm2frmrdslz): neighbor-read of cyclic-frame transport at t+1 on two-axis same-lock z-
+- pr-7523: feat(nm2sfzfrmt2): HOLDING cyclic lex-smallest frame transport freeze t+1 vs t+2 on three-
+- pr-7524: feat(nm2frm3zrd): HOLDING neighbor-read of cyclic-frame transport at t+1 on three-axis opp
+- pr-7525: feat(nm2cycfrmyt2): cyclic-frame transport freeze t+1 vs t+2 on two-axis opposite y-probes
+- pr-7526: feat(nm2cycfrmxt2): cyclic-frame transport freeze t+1 vs t+2 on two-axis opposite x-probes
+- pr-7527: feat(nm2frmrdt2): HOLDING neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on two
+- pr-7528: feat(nm2frmfzrd): HOLDING neighbor-read of cyclic-frame transport at t+1 on three-axis far
+- pr-7529: feat(nm2sfzfrmrdt2): HOLDING neighbor-read of lex-smallest frame transport freeze t+1 vs t
+- pr-7530: feat(nm2frm3zrdt2): HOLDING neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on t
+- pr-7531: feat(nm2frmfzrdt2): HOLDING neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on t
+- pr-7532: feat(nm2frmrdy): neighbor-read of cyclic-frame transport at t+1 on two-axis opposite y-pro
+- pr-7533: feat(nm2frmrdx): neighbor-read of cyclic-frame transport at t+1 on two-axis opposite x-pro
+- pr-7534: feat(nm2frmrdslt2): neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on two-axis
+- pr-7535: feat(nm2frmrdyt2): neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on two-axis o
+- pr-7536: feat(nm2frmrd3y): neighbor-read of cyclic-frame transport at t+1 on three-axis opposite y-
+- pr-7537: feat(nm2frmrdfx): neighbor-read of cyclic-frame transport at t+1 on three-axis far-face op
+- pr-7538: feat(nm2frmrd3x): neighbor-read of cyclic-frame transport at t+1 on three-axis opposite x-
+- pr-7539: feat(nm2frmrdfy): neighbor-read of cyclic-frame transport at t+1 on three-axis far-face op
+- pr-7540: feat(nm2frmrdxt2): neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on two-axis o
+- pr-7541: feat(nm2sfzrdy): neighbor-read of cyclic lex-smallest frame transport at t+1 on three-axis
+- pr-7542: feat(nm2sfzrdx): neighbor-read of cyclic lex-smallest frame transport at t+1 on three-axis
+- pr-7543: feat(nm2sfzrdyt2): neighbor-read of cyclic lex-smallest frame transport freeze t+1 vs t+2
+- pr-7544: feat(nm2rdholfz): neighbor-read of cyclic-frame holonomy at t+1 on three-axis far-face opp
+- pr-7545: feat(nm2sfzrdsl): neighbor-read of cyclic lex-smallest frame transport freeze t+1 vs t+2 o
+- pr-7546: feat(nm2frmrdfyt2): neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on three-axi
+- pr-7547: feat(nm2rdfxt2): neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on three-axis f
+- pr-7548: feat(nm2sfzrdxt2): neighbor-read of cyclic lex-smallest frame transport freeze t+1 vs t+2
+- pr-7549: feat(nm2frm3pth): three-path cyclic-frame transport at t+1 on two-axis opposite seed: reve **[promotion candidate]**
+- pr-7550: feat(nm2frmrd3yt2): neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on three-axi
+- pr-7551: feat(nm2holyz): cyclic-frame holonomy around the yz-plane unit square at t+1 on two-axis o
+- pr-7552: feat(nm2hol3z): cyclic-frame holonomy around the unit square at t+1 on three-axis opposite
+- pr-7553: feat(nm2sfzhol): cyclic lex-smallest frame holonomy around the unit square at t+1 on two-a
+- pr-7554: feat(nm2holxz): cyclic-frame holonomy around the xz-plane unit square at t+1 on two-axis o
+- pr-7555: feat(nm2frm3pfz): three-path cyclic-frame transport at t+1 on three-axis far-face opposite
+- pr-7556: feat(nm2frmallrd): universal neighbor-read of cyclic-frame transport at t+1 on two-axis op
+- pr-7557: feat(nm2frmallfz): universal neighbor-read of cyclic-frame transport at t+1 on three-axis  **[promotion candidate]**
+- pr-7558: feat(nm2sfzholfz): lex-smallest unit-square cyclic-frame holonomy at t+1 on three-axis far
+- pr-7559: feat(nm2frmrd3xt2): neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on three-axi
+- pr-7560: feat(nm2holxy0): z=0 xy unit-square cyclic-frame holonomy at t+1 on two-axis opposite seed
+- pr-7561: feat(nm2pthrdz): three-path neighbor-read of cyclic-frame transport at t+1 on two-axis opp
+- pr-7562: feat(nm2frm3p3z): three-path cyclic-frame transport at t+1 on three-axis opposite near-fac
+- pr-7563: feat(nm2holyzrd): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on two-axis oppos
+- pr-7564: feat(nm2hol3zrd): neighbor-read of cyclic-frame holonomy at t+1 on three-axis opposite nea
+- pr-7565: feat(nm2holxyfz): xy-plane cyclic-frame holonomy at t+1 on three-axis far-face opposite se
+- pr-7566: feat(nm2holxy0rd): neighbor-read of z=0 xy cyclic-frame holonomy at t+1 on two-axis opposi
+- pr-7567: feat(nm2frm3pfy): three-path cyclic-frame transport at t+1 on three-axis far-face opposite
+- pr-7568: feat(nm2holxzfz): xz-plane cyclic-frame holonomy at t+1 on three-axis far-face opposite se
+- pr-7569: feat(nm2holyzfz): yz-plane cyclic-frame holonomy at t+1 on three-axis far-face opposite se
+- pr-7570: feat(nm2xyfzrd): neighbor-read of xy-plane cyclic-frame holonomy at t+1 on three-axis far-
+- pr-7571: feat(nm2sfzholrd): neighbor-read of cyclic lex-smallest frame holonomy at t+1 on two-axis
+- pr-7572: feat(nm2yzrdfz): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis far-
+- pr-7573: feat(nm2holxzrd): neighbor-read of xz-plane cyclic-frame holonomy at t+1 on two-axis oppos **[promotion candidate]**
+- pr-7574: feat(nm2yzrdt2): neighbor-read of yz-plane cyclic-frame holonomy freeze t+1 vs t+2 on two-
+- pr-7575: feat(nm2sfz3zrd): neighbor-read of lex-smallest cyclic-frame holonomy at t+1 on three-axis
+- pr-7576: feat(nm2holyz3z): yz-plane cyclic-frame holonomy at t+1 on three-axis opposite near-face s **[promotion candidate]**
+- pr-7577: feat(nm2yzrd3z): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis oppo
+- pr-7578: feat(nm2h3zrdt2): neighbor-read of cyclic-frame holonomy freeze t+1 vs t+2 on three-axis o **[promotion candidate]**
+- pr-7579: feat(nm2yzrd3t2): neighbor-read of yz-plane cyclic-frame holonomy freeze t+1 vs t+2 on thr
+- pr-7580: physics: prove the width-family transfer refutation and the positive unit-cell monodromy (
+- pr-7581: feat(nm2xyfzt2): neighbor-read of xy-plane cyclic-frame holonomy freeze t+1 vs t+2 on thre
+- pr-7582: feat(nm2sfzrdt2): neighbor-read of lex-smallest cyclic-frame holonomy freeze t+1 vs t+2 on
+- pr-7583: feat(nm2sfz3zt2): neighbor-read of lex-smallest cyclic-frame holonomy freeze t+1 vs t+2 on **[promotion candidate]**
+- pr-7584: feat(nm2yzrdsl): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on two-axis same-l **[promotion candidate]**
+- pr-7585: feat(nm2holyz3t): yz-plane cyclic-frame holonomy freeze t+1 vs t+2 on three-axis opposite
+- pr-7586: feat(nm2sfzholy): neighbor-read of cyclic lex-smallest frame holonomy at t+1 on two-axis o [DISPUTED]
+- pr-7587: feat(nm2yzrd3x): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis oppo
+- pr-7588: feat(nm2yzrdy): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on two-axis opposit
+- pr-7589: feat(nm2holyzsl): yz-plane cyclic-frame holonomy at t+1 on two-axis same-lock seed: revers
+- pr-7590: feat(nm2sfzholx): neighbor-read of lex-smallest cyclic-frame holonomy at t+1 on two-axis o
+- pr-7591: feat(nm2yzrdx): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on two-axis opposit
+- pr-7592: feat(nm2sfzholsl): cyclic lex-smallest frame holonomy at t+1 on two-axis same-lock seed: r
+- pr-7593: feat(nm2sfz3zrdy): neighbor-read of lex-smallest cyclic-frame holonomy at t+1 on three-axi
+- pr-7594: feat(nm2sfz3zrdx): neighbor-read of lex-smallest cyclic-frame holonomy at t+1 on three-axi
+- pr-7595: feat(nm2yzrd3y): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis oppo
+- pr-7596: feat(nm2sfzslrd): neighbor-read of cyclic lex-smallest frame holonomy at t+1 on two-axis s
+- pr-7597: feat(nm2yzrdn2): distance-2 read of yz-plane cyclic-frame holonomy at t+1 on two-axis oppo **[promotion candidate]**
+- pr-7598: feat(nm2yzrdfzx): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis far
+- pr-7599: feat(nm2yzrdfzy): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis far
+- pr-7600: feat(nm2yzrdall): universal neighbor-read of yz-plane cyclic-frame holonomy at t+1 on two-
+- pr-7601: feat(nm2sfzholfy): neighbor-read of lex-smallest cyclic-frame holonomy at t+1 on three-axi
+- pr-7602: feat(nm2sfzholfx): neighbor-read of lex-smallest cyclic-frame holonomy at t+1 on three-axi
+- pr-7603: feat(nm2yzrdal3): universal neighbor-read of yz-plane cyclic-frame holonomy at t+1 on thre
+- pr-7604: feat(nm2holyz2x): yz-plane cyclic-frame holonomy of the x=1 unit square at t+1 on two-axis
+- pr-7605: feat(nm2holyz2n): neighbor-read of x=1 yz-plane cyclic-frame holonomy at t+1 on two-axis o
+- pr-7606: feat(nm2sfzrdall): universal neighbor-read of cyclic lex-smallest frame holonomy at t+1 on
+- pr-7607: feat(nm2holyz2xf): yz-plane cyclic-frame holonomy of the x=1 unit square at t+1 on three-a
+- pr-7608: feat(nm2yzrdalfz): universal neighbor-read of yz-plane cyclic-frame holonomy at t+1 on thr
+- pr-7609: feat(nm2yzrdn23): distance-2 read of yz-plane cyclic-frame holonomy at t+1 on three-axis o
+- pr-7610: feat(nm2yzrdn2fz): distance-2 read of yz-plane cyclic-frame holonomy at t+1 on three-axis
+- pr-7611: feat(nm2sfzrdalfz): universal neighbor-read of cyclic lex-smallest frame holonomy at t+1 o
+- pr-7612: feat(nm2frm2sx): directed 2-step cyclic-frame transport along +e1 at t+1 on two-axis oppos **[promotion candidate]**
+- pr-7613: feat(nm2holyz2x3): yz-plane cyclic-frame holonomy of the x=1 unit square at t+1 on three-a
+- pr-7614: feat(nm2holyz2n3): neighbor-read of x=1 yz-plane cyclic-frame holonomy at t+1 on three-axi
+- pr-7615: feat(nm2yzrdn2sl): distance-2 read of yz-plane cyclic-frame holonomy at t+1 on two-axis sa
+- pr-7616: feat(nm2holyz2nf): neighbor-read of x=1 yz-plane cyclic-frame holonomy at t+1 on three-axi
+- pr-7617: feat(nm2sfzrdn2): distance-2 read of cyclic lex-smallest frame holonomy at t+1 on two-axis
+- pr-7618: feat(nm2holyz2sl): yz-plane cyclic-frame holonomy of the x=1 unit square at t+1 on two-axi
+- pr-7619: feat(nm2holyz2nsl): neighbor-read of x=1 yz-plane cyclic-frame holonomy at t+1 on two-axis
+- pr-7620: feat(nm2frm2sy): directed 2-step cyclic-frame transport along -e2 at t+1 on two-axis oppos
+- pr-7621: feat(nm2frm2sz): directed 2-step cyclic-frame transport along -e3 at t+1 on two-axis oppos **[promotion candidate]**
+- pr-7622: feat(nm2frm1sz): directed 1-step cyclic-frame transport along -e3 at t+1 on two-axis oppos **[promotion candidate]**
+- pr-7623: feat(nm2frm1szt): directed 1-step cyclic-frame transport along -e3 freeze t+1 vs t+2 on tw
+- pr-7624: feat(nm2frm1szr): neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1
+- pr-7625: feat(nm2frm1s3z): directed 1-step cyclic-frame transport along -e3 at t+1 on three-axis op
+- pr-7626: feat(nm2frm1sfz): directed 1-step cyclic-frame transport along -e3 at t+1 on three-axis fa
+- pr-7627: feat(nm2frm1s3t): directed 1-step cyclic-frame transport along -e3 freeze t+1 vs t+2 on th
+- pr-7628: feat(nm2frm1s3r): neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1
+- pr-7629: feat(nm2frm1srt): neighbor-read of directed 1-step cyclic-frame transport along -e3 freeze
+- pr-7630: feat(nm2frm1ssl): directed 1-step cyclic-frame transport along -e3 at t+1 on two-axis same
+- pr-7631: feat(nm2frm1spy): directed 1-step cyclic-frame transport along +e2 at t+1 on two-axis oppo
+- pr-7632: [physics-loop][full-temporal-carrier][bounded_theorem] localize source-typing boundary
+- pr-7633: feat(nm2frm1spz): directed 1-step cyclic-frame transport along +e3 at t+1 on two-axis oppo
+- pr-7634: feat(nm2frm1sx): directed 1-step cyclic-frame transport along -e1 at t+1 on two-axis oppos
+- pr-7635: feat(nm2frm1sy): directed 1-step cyclic-frame transport along -e2 at t+1 on two-axis oppos
+- pr-7636: feat(nm2frm1sp3): directed 1-step cyclic-frame transport along +e3 at t+1 on three-axis op
+- pr-7637: feat(nm2frm1spr): neighbor-read of directed 1-step cyclic-frame transport along +e3 at t+1 [DISPUTED]
+- pr-7638: feat(nm2frmpl): plane support of cyclic-frame transport on x=0 versus x=1 at t+1 on two-ax **[promotion candidate]**
+- pr-7639: feat(nm2frm1spf): directed 1-step cyclic-frame transport along +e3 at t+1 on three-axis fa **[promotion candidate]**
+- pr-7640: feat(nm2hol2xy): 2x1 xy rectangle cyclic-frame holonomy at t+1 on two-axis opposite seed:
+- pr-7641: feat(nm2hol2yz): 2x1 yz rectangle cyclic-frame holonomy at t+1 on two-axis opposite seed:
+- pr-7642: feat(nm2frmrdpl): x=0 plane support of neighbor-read of cyclic-frame transport at t+1 on t **[promotion candidate]**
+- pr-7643: feat(nm2holyzpl): forall yz unit-square cyclic-frame holonomy on the x=0 plane at t+1 on t **[promotion candidate]**
+- pr-7644: feat(nm2frm2spf): directed 2-step cyclic-frame transport along +e3 at t+1 on three-axis fa
+- pr-7645: feat(nm2frm2smy): directed 2-step cyclic-frame transport along +e2 at t+1 on two-axis oppo
+- pr-7646: feat(nm2frm2sm3): directed 2-step cyclic-frame transport along +e2 at t+1 on three-axis op
+- pr-7647: feat(nm2frm2s3z): directed 2-step cyclic-frame transport along -e3 at t+1 on three-axis op
+- pr-7648: feat(nm2frm2s3f): directed 2-step cyclic-frame transport along -e3 at t+1 on three-axis fa
+- pr-7649: feat(nm2frm2sms): directed 2-step cyclic-frame transport along +e2 at t+1 on two-axis same
+- pr-7650: feat(nm2frm2smf): directed 2-step cyclic-frame transport along +e2 at t+1 on three-axis fa
+- pr-7651: feat(nm2frm2sp3): directed 2-step cyclic-frame transport along +e3 at t+1 on three-axis op
+- pr-7652: feat(nm2frm2n3x): directed 2-step cyclic-frame transport along +e1 at t+1 on three-axis op
+- pr-7653: feat(nm2frm2fzx): directed 2-step cyclic-frame transport along +e1 at t+1 on three-axis fa
+- pr-7654: feat(nm2frm2slx): directed 2-step cyclic-frame transport along +e1 at t+1 on two-axis same
+- pr-7655: feat(nm2frm2smx): directed 2-step cyclic-frame transport along -e1 at t+1 on two-axis oppo
+- pr-7656: feat(nm2frm2s3s): directed 2-step cyclic-frame transport along -e3 at t+1 on two-axis same
+- pr-7657: feat(nm2frm3sz): directed 3-step cyclic-frame transport along -e3 at t+1 on two-axis oppos
+- pr-7658: feat(nm2frm3s3): directed 3-step cyclic-frame transport along -e3 at t+1 on three-axis opp
+- pr-7659: feat(nm2frm3sf): directed 3-step cyclic-frame transport along -e3 at t+1 on three-axis far
+- pr-7660: feat(nm2frm3ss): directed 3-step cyclic-frame transport along -e3 at t+1 on two-axis same-
+- pr-7661: feat(nm2frm3pz): directed 3-step cyclic-frame transport along +e3 at t+1 on two-axis oppos
+- pr-7662: feat(nm2frm3p3): directed 3-step cyclic-frame transport along +e3 at t+1 on three-axis opp
+- pr-7663: feat(nm2frm3pf): directed 3-step cyclic-frame transport along +e3 at t+1 on three-axis far
+- pr-7664: feat(nm2frm2lx): L-path cyclic-frame transport -e3 then -e1 at t+1 on two-axis opposite se
+- pr-7665: feat(nm2frm2lp): L-path cyclic-frame transport -e3 then +e1 at t+1 on two-axis opposite se
+- pr-7666: feat(nm2frm2lxr): neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1 on tw
+- pr-7667: feat(nm2frm2lpr): neighbor-read of L-path cyclic-frame transport -e3 then +e1 at t+1 on tw
+- pr-7668: feat(nm2frm2lxt): L-path cyclic-frame transport -e3 then -e1 freeze t+1 vs t+2 on two-axis
+- pr-7669: physics: prove the boundary-monodromy table and the volume-sensitivity package (block 191)
+- pr-7670: feat(nm2frm2lxs): L-path cyclic-frame transport -e3 then -e1 at t+1 on two-axis same-lock
+- pr-7671: feat(nm2frm2lxf): L-path cyclic-frame transport -e3 then -e1 at t+1 on three-axis far-face
+- pr-7672: feat(nm2frm2lp3): L-path cyclic-frame transport -e3 then +e1 at t+1 on three-axis opposite
+- pr-7673: feat(nm2frm2lz): L-path cyclic-frame transport -e3 then +e2 at t+1 on two-axis opposite se
+- pr-7674: feat(nm2frm2ly): L-path cyclic-frame transport -e3 then -e2 at t+1 on two-axis opposite se
+- pr-7675: feat(nm2frm2l3): L-path cyclic-frame transport -e3 then +e2 at t+1 on three-axis opposite
+- pr-7676: feat(nm2frm2szt): directed 2-step cyclic-frame transport along -e3 freeze t+1 vs t+2 on tw
+- pr-7677: feat(nm2frm2s3r): neighbor-read of directed 2-step cyclic-frame transport along -e3 at t+1
+- pr-7678: feat(nm2frm2szr): neighbor-read of directed 2-step cyclic-frame transport along -e3 at t+1 **[promotion candidate]**
+- pr-7679: feat(nm2frm2lx3): L-path cyclic-frame transport -e3 then -e1 at t+1 on three-axis opposite
+- pr-7680: feat(nm2frm2lx3r): neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1 on t
+- pr-7681: feat(nm2frm2lps): L-path cyclic-frame transport -e3 then +e1 at t+1 on two-axis same-lock
+- pr-7682: feat(nm2frm2lxsr): neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1 on t
+- pr-7683: feat(nm2frm2lpsr): neighbor-read of L-path cyclic-frame transport -e3 then +e1 at t+1 on t
+- pr-7684: feat(nm2frm1szall): universal neighbor-read of directed 1-step cyclic-frame transport alon **[promotion candidate]**
+- pr-7685: feat(nm2frm1s3all): universal neighbor-read of directed 1-step cyclic-frame transport alon
+- pr-7686: feat(nm2frm2lxall): universal neighbor-read of L-path cyclic-frame transport -e3 then -e1
+- pr-7687: feat(nm2frm2lpall): universal neighbor-read of L-path cyclic-frame transport -e3 then +e1
+- pr-7688: feat(nm2frm2lys): L-path cyclic-frame transport -e3 then -e2 at t+1 on two-axis same-lock
+- pr-7689: feat(nm2frm2lyf): L-path cyclic-frame transport -e3 then -e2 at t+1 on three-axis far-face
+- pr-7690: feat(nm2frm2lzs): L-path cyclic-frame transport -e3 then +e2 at t+1 on two-axis same-lock
+- pr-7691: feat(nm2frm2lzf): L-path cyclic-frame transport -e3 then +e2 at t+1 on three-axis far-face
+- pr-7692: feat(nm2frm2lpf): L-path cyclic-frame transport -e3 then +e1 at t+1 on three-axis far-face
+- pr-7693: feat(nm2frm1pzt): directed 1-step cyclic-frame transport along +e3 freeze t+1 vs t+2 on tw
+- pr-7694: feat(nm2frm2lxrd2): distance-2 neighbor-read of L-path cyclic-frame transport -e3 then -e1
+- pr-7695: feat(nm2frm2lprd2): distance-2 neighbor-read of L-path cyclic-frame transport -e3 then +e1
+- pr-7696: feat(nm2frm2lxrd3): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then -e1
+- pr-7697: feat(nm2frm2lprd3): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then +e1
+- pr-7698: physics: localize fixed-L24 detector-orientation boundary
+- pr-7699: feat(nm2frm2lxrd3n3): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then -
+- pr-7700: feat(nm2frm2lxrd2n3): distance-2 neighbor-read of L-path cyclic-frame transport -e3 then -
+- pr-7701: feat(nm2frm2lxrd4): distance-4 neighbor-read of L-path cyclic-frame transport -e3 then -e1 **[promotion candidate]**
+- pr-7702: feat(nm2frm2lprd4): distance-4 neighbor-read of L-path cyclic-frame transport -e3 then +e1
+- pr-7703: feat(nm2frm2plx): L-path cyclic-frame transport +e1 then -e3 at t+1 on two-axis opposite s **[promotion candidate]**
+- pr-7704: feat(nm2frm2mlx): L-path cyclic-frame transport -e1 then -e3 at t+1 on two-axis opposite s **[promotion candidate]**
+- pr-7705: feat(nm2frm2ply): L-path cyclic-frame transport +e2 then -e3 at t+1 on two-axis opposite s **[promotion candidate]**
+- pr-7706: feat(nm2frm2lxrd2s): distance-2 neighbor-read of L-path -e3 then -e1 at t+1 on two-axis sa
+- pr-7707: feat(nm2frm2lprd2s): distance-2 neighbor-read of L-path -e3 then +e1 at t+1 on two-axis sa
+- pr-7708: feat(nm2frm2lxrd3s): distance-3 neighbor-read of L-path -e3 then -e1 at t+1 on two-axis sa
+- pr-7709: feat(nm2frm1szrd2): distance-2 neighbor-read of directed 1-step cyclic-frame transport alo
+- pr-7710: feat(nm2frm1s3rd2): distance-2 neighbor-read of directed 1-step cyclic-frame transport alo
+- pr-7711: feat(nm2frm1s3rd3): distance-3 neighbor-read of directed 1-step cyclic-frame transport alo [DISPUTED]
+- pr-7712: feat(nm2frm1szrd3): distance-3 neighbor-read of directed 1-step cyclic-frame transport alo
+- pr-7713: feat(nm2frm2lx3rd2): distance-2 neighbor-read of L-path cyclic-frame transport -e3 then -e
+- pr-7714: feat(nm2frm2lx3rd3): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then -e
+- pr-7715: feat(nm2frm2lprd3s): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then +e
+- pr-7716: feat(nm2frm2lprd3n3): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then +
+- pr-7717: feat(nm2frm2mlxs): L-path cyclic-frame transport -e1 then -e3 at t+1 on two-axis same-lock
+- pr-7718: feat(nm2frm2mlx3): L-path cyclic-frame transport -e1 then -e3 at t+1 on three-axis opposit
+- pr-7719: feat(nm2frm2plxs): L-path cyclic-frame transport +e1 then -e3 at t+1 on two-axis same-lock
+- pr-7720: feat(nm2frm2plx3): L-path cyclic-frame transport +e1 then -e3 at t+1 on three-axis opposit
+- pr-7721: feat(nm2frm2mlxf): L-path cyclic-frame transport -e1 then -e3 at t+1 on three-axis far-fac
+- pr-7722: feat(nm2frm2plxf): L-path cyclic-frame transport +e1 then -e3 at t+1 on three-axis far-fac
+- pr-7723: physics: classify detector and exact M2 response boundary
+- pr-7724: physics: isolate L24 prefix channel boundary
+- pr-7725: physics: isolate Regge-D4 placement corner boundary
+- pr-7726: physics: isolate L24 fermionic OS spin boundary
+- pr-7727: physics: isolate L24 even-odd OS boundary
+- pr-7728: physics: isolate L24 event-history interface boundary
+- pr-7729: physics: isolate exterior E8 insertion obstruction
+- pr-7730: physics: isolate direct event-functional normalization failure
+- pr-7731: physics: prove the volume-response mechanism numbers and the exact support cutoff (block 1
+- pr-7732: physics: stop open boundary at frozen reflection sign
+- pr-7733: physics: stop periodic D1 probability carrier at graded trace
+- pr-7734: physics: prove the parity-resolved window law and reduce the intertwining mechanism (block
+- pr-7735: physics: prove the split generality theorem over the (m,c) space (block 194)
+- pr-7736: physics: prove the sectored interior OS reconstruction (block 195)
+- pr-7737: physics: prove the window-Schur transport-defect theorem (block 196)
+- pr-7738: physics: prove the hidden involutive isometry and complete the commutant story (block 197)
+- pr-7739: [physics-loop] Block 204 Record descent — bounded theorem / bounded support
+- pr-7740: physics: prove the spatial embedding theorem and the momentum positivity boundary (block 1
+- pr-7741: [physics-loop] Block 205 H1 Schur Record probability germ — bounded theorem
+- pr-7742: physics: prove the finite heavy-sector positive-symmetrizer cone
+- pr-7743: [physics-loop] Block 206 port-free neighbor-phase M2 context boundary
+- pr-7744: physics: fence Block 200 transfer probes from continuum interpolation
+- pr-7745: physics: fence Block 201 finite covariant encodings from rule selection
+- pr-7746: [physics-loop] admissibility H1 edge-corner — bounded_theorem / bounded-support
+- pr-7747: physics: fence Block 202 finite substitution-profile diagnostics
+- pr-7748: [physics-loop] Block 208 two-time Clifford M2 compiler — bounded theorem
+- pr-7749: physics: fence Block 209 three-direction gluing geometry
+- pr-7750: physics: fence Block 210 finite alphabet and four-facet diagnostics
+- pr-7751: [physics-loop] Block 211 action-to-Record quotient bridge — bounded theorem
+- pr-7752: physics: prove Block 211 six-face positivity classification
+- pr-7754: [physics-loop] Block 212 shared Record globalization and local-formation boundary
+- pr-7755: [physics-loop] Block 213 full-shell mergeability and permanent-status front
+- pr-7756: physics: construct the metric-weighted exterior kernel **[promotion candidate]**
+- pr-7757: [physics-loop] toe-metric-dynamics-bridge-block215-variable-cell-edge-kernel: bounded-supp **[promotion candidate]**
+- pr-7758: [physics-loop] toe-metric-dynamics-bridge-block216-compatible-exterior-transport: bounded- **[promotion candidate]**
+- pr-7759: [physics-loop] toe-metric-dynamics-bridge-block217-plaquette-holonomy: bounded-support **[promotion candidate]**
+- pr-7760: Block 218: covariant Record carrier and mixed-slab boundary
+- pr-7761: [physics-loop] toe-connection-dynamics-block218-action-os-transfer: conditional-support **[promotion candidate]**
+- pr-7762: [physics-loop] toe-axiom-closure-block219: bounded_theorem / bounded-support
+- pr-7763: Physics: derive conditional-law response polar transport **[promotion candidate]**
+- pr-7764: physics: construct a metric-source polarized seam **[promotion candidate]**
+- pr-7765: physics: couple compact vector matter transfer **[promotion candidate]**
+- pr-7766: [physics-loop] toe-axiom-closure-block220: bounded_theorem / bounded-support **[promotion candidate]**
+- pr-7767: [physics-loop] toe-connection-dynamics Block222: finite gap and strict-coupling collapse
+- pr-7768: Physics: bound nonzero-spatial volume gap collapse **[promotion candidate]**
+- pr-7769: [physics-loop] Block 221: multiroot ancestry alias boundary
+- pr-7770: [physics-loop] Block 222: parent-dart forest ancestry gate
+- pr-7771: [physics-loop] Block 223: two-arm higher-block ancestry
+- pr-7772: [physics-loop] Block 224: backoff fairness quotient boundary
+- pr-7773: [physics-loop] Block 225: Record-QND echo capacity boundary
+- pr-7774: [physics-loop] Block226 exterior-character common-clock obstruction (proposed_retained) **[promotion candidate]**
+- pr-7775: [physics-loop] Block 226: tagged echo interior-seed orphan boundary
+- pr-7776: [physics-loop] Block227: bounded-support co-scaled exterior transfer limit **[promotion candidate]**
+- pr-7777: [physics-loop] Block 227: phase-contact product boundary
+- pr-7778: [physics-loop] Block 228: multi-certificate product boundary
+- pr-7779: [physics-loop] Block228: bounded-support O(3) Haar coarse-compression generated crossing
+- pr-7780: [physics-loop] Block 229: cleanup-front translated locality boundary
+- pr-7782: [physics-loop] Block229: bounded-degree O(3) ladder history-message flow **[promotion candidate]**
+- pr-7783: [physics-loop] Block231: bound J_r Peter-Weyl transfer truncation **[promotion candidate]**
+- pr-7784: [physics-loop] Block232: J_r temporal-spatial coarse response **[promotion candidate]**
+- pr-7785: [physics-loop] Source eta 01: factor H1 locality and isolate decoder ownership **[promotion candidate]**
+- pr-7786: [physics-loop] derive arbitrary-width scalar-fused vector transfer **[promotion candidate]**
+- pr-7787: [physics-loop] Source eta 02: affine H1 decoder and readable writer boundary **[promotion candidate]**
+- pr-7788: Physics: derive multicell vector interval response
+- pr-7789: Physics: classify vector interval endpoint response **[promotion candidate]**
+- pr-7790: [physics-loop][review-loop] Block236 product-vector channels: conditional-support **[promotion candidate]**
+- pr-7791: [physics-loop][review-loop] Block237 q3 product-vector gap fill: conditional-support
+- pr-7792: [physics-loop] Block238 vector-triple channel resolution — bounded_theorem / conditional-s **[promotion candidate]**
+- pr-7793: [physics-loop] Block239: resolve seven-channel temporal response **[promotion candidate]**
+- pr-7794: [physics-loop] Block240 q4 scalar junction exact-support
+- pr-7795: [physics-loop] Block241 all-spin q4 O01 permutation kernel
+- pr-7796: [physics-loop] Block242 q4 O10 cup factorization
+- pr-7797: [physics-loop] Block243 exact q4 combined temporal response **[promotion candidate]**
+- pr-7798: [physics-loop] Block244 exact r3 q2 adjacent-product cubic response **[promotion candidate]**
+- pr-7799: [physics-loop] Block245 exact r3 q2 six-history Gram
+- pr-7800: physics: prove selected r3 q2 carrier leakage
+- pr-7801: physics: prove selected action-crossing tower no-go **[promotion candidate]**
+- pr-7802: Physics loop: record Block17 compiler scout failure **[promotion candidate]**
+- pr-7804: physics: prove scoped pure-Record occurrence underselection **[promotion candidate]**
+- pr-7805: physics: construct and classify pair-factor QND Record writer **[promotion candidate]**
+- pr-7806: physics: classify action-to-Record generator interface **[promotion candidate]**
+- pr-7807: physics: classify finite reusable bath Record obstruction **[promotion candidate]**
+- pr-7808: physics-loop: Block22 exact POVM and radial live-to-Record writer **[promotion candidate]**
+- pr-7809: physics-loop: close exact two-Record prefix bridge **[promotion candidate]**
+- pr-7810: physics-loop: prove finite self-delimiting Record histories **[promotion candidate]**
+- pr-7811: physics-loop: prove sharp overlapping-sector wall **[promotion candidate]**
+- pr-7812: [physics-loop] Block26 finite lease tensor and convex collision channels — bounded_theorem **[promotion candidate]**

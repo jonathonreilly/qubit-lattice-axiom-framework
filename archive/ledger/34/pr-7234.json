@@ -1,0 +1,19 @@
+{
+ "id": "pr-7234",
+ "title": "feat(nmoutopp): own outgoing set on #7167: reverse HOLD, face HOLD",
+ "science": "CONTRADICTION inside the band. First own-OUTGOING-set readout, on #7208's y-probes; reports O(A)={+e2,+e3,-e3}, O(B) identical, O(C)={+e1,-e1,+e3,-e3}, O(D)={+e1,-e1} and reverse/face HOLD, with unique_O_reverse and unique_O_face both UNDEFINED. But its note says 'face already holds at each probe's own formation tick', and I recomputed that at each probe's own t the outgoing set is EMPTY at A, B a",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (as published; own-tick recompute giv",
+ "source": {
+  "pr": 7234,
+  "branch": "physics-loop/toe-lphys-block-nmoutopp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": true,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

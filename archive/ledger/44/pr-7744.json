@@ -1,0 +1,19 @@
+{
+ "id": "pr-7744",
+ "title": "physics: fence Block 200 transfer probes from continuum interpolation",
+ "science": "Block 200 (repaired) carries the four-width exact transfer probes with the interpolation model honestly retyped, and the active gravity-toe mainline stack (blocks 201-212, current 0824-campaign lane) stacks directly on it.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7744,
+  "branch": "physics-loop/toe-axiom-closure-block200-transfer-robustness-boundary-package-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

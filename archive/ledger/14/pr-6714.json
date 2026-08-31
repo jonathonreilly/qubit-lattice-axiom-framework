@@ -1,0 +1,19 @@
+{
+ "id": "pr-6714",
+ "title": "feat(noshrt): support-drop hop-cost reverses diamond on B6",
+ "science": "KEY POSITIVE of this series and the exhibit #6706 said does not exist in the 27-triple family: names the hop-cost nu (cost 3 iff seed-exit, or both supports =1, or support-drop; else 1) and shows one Dijkstra on B_6(0) gives t(4,0,0)=10 vs t(2,2,2)=8, so 12t_axis^2=1200 > 16t_body^2=1024 -- the axis/body-diagonal diamond anisotropy REVERSES -- and var(|v|_2/t)=0.005906 under nu vs 0.013502 under l",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (diamond_reverse True) face=absent",
+ "source": {
+  "pr": 6714,
+  "branch": "physics-loop/toe-lphys-block-noshrt-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

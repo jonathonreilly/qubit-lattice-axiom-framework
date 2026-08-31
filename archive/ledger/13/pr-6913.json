@@ -1,0 +1,19 @@
+{
+ "id": "pr-6913",
+ "title": "feat(ofkdbl): out-face doubled pairing holds k=1..4",
+ "science": "Doubled-pairing reverse display for out-face over k=1..4 (displayed, not adopted); exploratory series member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6913,
+  "branch": "physics-loop/toe-lphys-block-ofkdbl-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

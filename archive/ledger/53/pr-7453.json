@@ -1,0 +1,19 @@
+{
+ "id": "pr-7453",
+ "title": "feat(nm2oricyclslz): cyclic next/prev lex-largest det orientation of 1-in 2-out at t+1 on two-axis same-lock z-probes: reverse fails, face H",
+ "science": "same-lock z-probes, cyclic lex-largest orientation. Face holds, reverse fails at A only. Its runner reports the opposite-seed z cell (reverse=hold face=hold) as an in-script cross-variant, i.e. #7451's headline result is already visible inside this PR's own checker.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7453,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyclslz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6887",
+ "title": "feat(dek7): deep-enter same-k holds at k=7: t=19 vs t=25",
+ "science": "Single-point deep-enter same-k hold display at k=7 on B21 (displayed, not adopted); exploratory series member, not a decisive or terminal artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6887,
+  "branch": "physics-loop/toe-lphys-block-dek7-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

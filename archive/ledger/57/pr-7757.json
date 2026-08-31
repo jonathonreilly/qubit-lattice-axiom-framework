@@ -1,0 +1,19 @@
+{
+ "id": "pr-7757",
+ "title": "[physics-loop] toe-metric-dynamics-bridge-block215-variable-cell-edge-kernel: bounded-support",
+ "science": "Block 215 exactly classifies the variable-cell weighted skew edge kernel by one cross-form per edge, closing Block 214s named transport blocker as a bounded theorem that open block 216 stacks on. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7757,
+  "branch": "physics-loop/toe-metric-dynamics-bridge-block215-variable-cell-edge-kernel-20260827"
+ },
+ "carried_by": "#7803 (open metric-dynamics terminal; commit-ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

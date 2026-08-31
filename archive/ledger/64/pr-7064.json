@@ -1,0 +1,19 @@
+{
+ "id": "pr-7064",
+ "title": "feat(nfmax): sign(n_mu*) unique letter: reverse and face none",
+ "science": "Selector sign(n_{mu*}) with mu* the SMALLEST-index maximiser of |n_mu|: all four letters `-`, reverse=face=`none`. The runner's own mutation `mutation-largest-index-changes-letter-A` proves the tie-break is load-bearing - |n_1(A)|=|n_2(A)| and n_2(A)=+1/3, so a largest-index tie-break flips L(A) to + and reverse from `none` to `all`. The verdict pair is not invariant under an arbitrary indexing co",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none",
+ "source": {
+  "pr": 7064,
+  "branch": "physics-loop/toe-lphys-block-nfmax-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

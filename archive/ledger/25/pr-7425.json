@@ -1,0 +1,19 @@
+{
+ "id": "pr-7425",
+ "title": "feat(nm2oridetz): signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis opposite z-probes: reverse fails, face fails",
+ "science": "Orientation convention #2 (unique-signed): require |O \u2229 {+e_i,-e_i}| = 1 on each of the two O-axes, then Orient = sign det(m,o_j,o_k). On the SAME opposite z-probe cell as #7393 and #7427 this returns fail at all four probes, because every probe's O carries an opposite pair. Third distinct verdict pair from identical data.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7425,
+  "branch": "physics-loop/toe-lphys-block-nm2oridetz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

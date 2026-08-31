@@ -1,0 +1,19 @@
+{
+ "id": "pr-7069",
+ "title": "feat(nsfzn2): z-probe sign(n_2) unique letter: reverse and face UNDEFINED",
+ "science": "Selector sign(n_2) on the nnseed z-probes: n_2 = 0 at A_z, B and D_z, nonzero only at C_z, so three of four letters are UNDEFINED and both comparisons are UNDEFINED. Same configuration and same kernels as #7067, which reported some/some under the two-letter rule; the note names the contrast and the runner re-derives the P_+, sign(n_1) and ndot alternatives as controls.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7069,
+  "branch": "physics-loop/toe-lphys-block-nsfzn2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

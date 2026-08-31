@@ -1,0 +1,19 @@
+{
+ "id": "pr-7644",
+ "title": "feat(nm2frm2spf): directed 2-step cyclic-frame transport along +e3 at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "+e3 2-step on the far-face seed, global tau. Origin split already fails from the adjacent +e_3 seed lock, so nothing survives hop 1 at the reverse pair; the face pair dies at hop 2. Verdict unchanged under either tau convention (one of the 18/33 convention-stable cells).",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7644,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2spf-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

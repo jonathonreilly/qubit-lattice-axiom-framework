@@ -1,0 +1,19 @@
+{
+ "id": "pr-7509",
+ "title": "feat(nm2frmfzt2): HOLDING cyclic-frame transport freeze t+1 vs t+2 on three-axis far-face opposite z-probes: reverse HOLD, face HOLD, compos",
+ "science": "Transport at t+1 vs t+2 on the far-face 3-axis z-probes; hold at all four at both cuts, composition hold. Forced twice over: the predicate is vacuous and M/O are frozen.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7509,
+  "branch": "physics-loop/toe-lphys-block-nm2frmfzt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

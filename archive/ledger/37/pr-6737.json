@@ -1,0 +1,19 @@
+{
+ "id": "pr-6737",
+ "title": "feat(ratio): nu reverse holds at k=1 and k=2; k=3,4 diag off B8",
+ "science": "Displayed same-k reversal ratios on B8 (k=1,2 reverse, k=3,4 off-ball), explicitly not adopted; exploratory scaling detail in the nu support-drop series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6737,
+  "branch": "physics-loop/toe-lphys-block-ratio-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

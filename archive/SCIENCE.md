@@ -122,7 +122,8 @@ loops — zero non-identity holonomies. On the members' own data, the frame
 field is a non-constant gauge function with zero field strength: no
 curvature is extractable from the LOCK field by this route. Related:
 orientation is not a lattice observable (twoaxis-orientation band), and the
-scalar Orient sign is not recovered by any formed six-neighbour [#7497].
+scalar Orient sign is not recovered by any formed six-neighbour at any of
+the four far-face-seed probes tried [#7497].
 
 ## 6. Record and measurement
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Block29: connected Block28-output to Block24-input cylinder theorem.
+"""Block29: physical pair-output to Block24 future-channel composition.
 
-This runner does not place a second supplied pair channel on a fresh carrier.
-It binds each actual lateral-turn Locked output of Block28, at its actual
-written site, to the literal straight append instrument of Block24.  It then
-checks the empty/singleton/pair first layer, four future-resource sectors,
-per-prefix cylinder marginal, full-space completion, covariance, Record QND,
-and the finite Blank ledger for both frozen supplied q tables.
+This amended runner does not construct a singleton first-layer law or place a
+second supplied pair channel on a fresh carrier.  It imports each complete
+Block28 pair channel, binds every successful eight-pointer output
+configuration to four literal future-resource sectors, constructs the actual
+Block24 append products and their common complement STOP, and checks the
+fixed-prefix cylinder for both frozen supplied q tables.
 """
 
 from __future__ import annotations
@@ -31,7 +31,7 @@ import admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30
 import admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30 as block28  # noqa: E402
 
 
-AUDIT_TIMEOUT_SEC = 600
+AUDIT_TIMEOUT_SEC = 900
 
 PACKET_REL = (
     ".claude/science/physics-loops/"
@@ -87,6 +87,7 @@ FROZEN = {
     "OPPORTUNITY_QUEUE.md": "fdb5ed0e44c7c9f3bc96a645b4cf797695e2c1cb8f19620bac9193531d9fef94",
     "PANEL_RETURN.md": "c19b2c688ef2ded0a2873eaabcef32d8155a5812a309dd303f02fbfeaa24a912",
     "PREFLIGHT_WITNESSES.md": "6d1ecd6535814ffe9c51bb259aa5224739d35a2f1bd10b9db82901434d724047",
+    "PREREG_AMENDMENT_PAIR_PREFIX_PHYSICAL.md": "41e9ddfaa8cf0be77e9637cb9915a91254ccb7df8ea9275f78728ba2ea05c3e9",
     "ROUTE_PORTFOLIO.md": "dd1af4cbe522d48ac243e832fc9ffa3ea18165f00f68aad0cc3d9b22f957f5c3",
     "STATE.yaml": "931e075cf06885dd0c5e9708d854d24bcddef265e174535160dbd8c5f630eeca",
     "TOE_LANE_UPDATE.md": "5e4da994e4dc31c54479838f086134e78d25910928e870e3a9376dc40f082d03",
@@ -112,6 +113,7 @@ AUDIT_INPUT_PATHS = (
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/OPPORTUNITY_QUEUE.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/PANEL_RETURN.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/PREFLIGHT_WITNESSES.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/PREREG_AMENDMENT_PAIR_PREFIX_PHYSICAL.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/ROUTE_PORTFOLIO.md",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/STATE.yaml",
     ".claude/science/physics-loops/toe-source-eta-ownership-block29-connected-output-depth-two-20260830/TOE_LANE_UPDATE.md",
@@ -401,124 +403,899 @@ def sector_partition_certificate(sectors, symbols, mutation=None):
     )
 
 
-def singleton_turn_row_sum(source, raw_amplitude=False):
-    weights = tuple(
-        sp.Rational(1, 4) * block23.transition(source, target)
-        for _exit in block28.LEFT_EXITS
-        for target in OUTCOMES
-    )
-    if raw_amplitude:
-        return sp.simplify(sum(value**2 for value in weights))
-    return sp.simplify(sum(weights))
+@dataclass(frozen=True)
+class OutputPointerAtom:
+    center: tuple
+    word: tuple
 
 
-def pair_turn_row_sum(lam, left_source, right_source):
-    q_total = sum(
-        block28.q_weight(lam, left_exit, right_exit)
-        for left_exit, right_exit in itertools.product(
-            block28.LEFT_EXITS, block28.RIGHT_EXITS
+@dataclass(frozen=True)
+class PairOutputControl:
+    left_exit: tuple
+    right_exit: tuple
+    left_first: tuple
+    right_first: tuple
+    atoms: tuple[OutputPointerAtom, ...]
+
+    @property
+    def key(self):
+        return (
+            self.left_exit,
+            self.right_exit,
+            self.left_first,
+            self.right_first,
         )
+
+
+FIRST_OUTPUT_CENTERS = tuple(block28.LEFT_TARGETS + block28.RIGHT_TARGETS)
+RESOURCE_BITS = ((0, 0), (1, 0), (0, 1), (1, 1))
+
+
+@lru_cache(maxsize=None)
+def pair_output_control(left_exit, right_exit, left_first, right_first):
+    outcome = block28.pair_record_outcome(
+        left_exit, right_exit, left_first, right_first
     )
-    left_row = sum(
-        block23.transition(left_source, left_target)
-        for left_target in OUTCOMES
+    return PairOutputControl(
+        left_exit,
+        right_exit,
+        left_first,
+        right_first,
+        tuple(
+            OutputPointerAtom(center, word)
+            for center, word in outcome.pointer_configuration
+        ),
     )
-    right_row = sum(
-        block23.transition(right_source, right_target)
-        for right_target in OUTCOMES
-    )
-    return sp.simplify(q_total * left_row * right_row)
 
 
 @lru_cache(maxsize=1)
-def first_layer_direct_sum_certificate() -> bool:
-    p_left, p_right = sp.symbols("p_left p_right", commutative=True)
-    sectors = binary_sectors(p_left, p_right)
-    singleton_rows = tuple(singleton_turn_row_sum(source) for source in OUTCOMES)
-    pair_rows = tuple(
-        pair_turn_row_sum(lam, left_source, right_source)
-        for lam in LAMBDAS
-        for left_source, right_source in itertools.product(OUTCOMES, repeat=2)
+def output_pointer_codebook():
+    return (block23.BLANK_POINTER,) + tuple(
+        block23.locked_word(exit_front, first_outcome)
+        for exit_front in block28.LEFT_EXITS
+        for first_outcome in OUTCOMES
     )
-    q_reports = tuple(block28.q_certificate(lam) for lam in LAMBDAS)
-    routed_gram = reduce_projectors(
-        sum(sector**2 for sector in sectors.values()), (p_left, p_right)
+
+
+@lru_cache(maxsize=None)
+def output_control_is_physical(control) -> bool:
+    configuration = tuple((atom.center, atom.word) for atom in control.atoms)
+    expected = block28.pair_record_outcome(*control.key).pointer_configuration
+    locked = tuple(
+        (atom.center, block23.decode_locked_word(atom.word))
+        for atom in control.atoms
+        if block23.decode_locked_word(atom.word) is not None
     )
     return (
-        sector_partition_certificate(sectors, (p_left, p_right))
-        and all(value == 1 for value in singleton_rows)
-        and all(value == 1 for value in pair_rows)
-        and all(all(report.values()) for report in q_reports)
-        and routed_gram == 1
+        len(control.atoms) == 8
+        and tuple(atom.center for atom in control.atoms) == FIRST_OUTPUT_CENTERS
+        and configuration == expected
+        and len(locked) == 2
+        and (
+            first_center(LEFT, control.left_exit),
+            (control.left_exit, control.left_first),
+        )
+        in locked
+        and (
+            first_center(RIGHT, control.right_exit),
+            (control.right_exit, control.right_first),
+        )
+        in locked
+        and sum(atom.word == block23.BLANK_POINTER for atom in control.atoms) == 6
+        and all(atom.word in output_pointer_codebook() for atom in control.atoms)
     )
 
 
 @dataclass(frozen=True)
-class FutureSectorRow:
-    sector: tuple
-    outcomes: int
+class PairOutputActiveSum:
+    controls: tuple[PairOutputControl, ...]
+    codebook_orthonormal: bool
+    configurations_injective: bool
+    idempotent: bool
+    complement_nontrivial: bool
+
+
+@lru_cache(maxsize=None)
+def pair_output_active_sum(mutation=None):
+    controls = [
+        pair_output_control(left_exit, right_exit, left_first, right_first)
+        for left_exit, right_exit in itertools.product(
+            block28.LEFT_EXITS, block28.RIGHT_EXITS
+        )
+        for left_first, right_first in itertools.product(OUTCOMES, repeat=2)
+    ]
+    if mutation == "duplicate_output_control":
+        controls[-1] = controls[0]
+    if mutation == "drop_output_atom":
+        controls[-1] = replace(controls[-1], atoms=controls[-1].atoms[:-1])
+    controls = tuple(controls)
+    codebook = output_pointer_codebook()
+    code_ok = len(codebook) == len(set(codebook)) == 57 and all(
+        block23.pointer_overlap(left, right) == int(i == j)
+        for i, left in enumerate(codebook)
+        for j, right in enumerate(codebook)
+    )
+    configurations = tuple(
+        tuple((atom.center, atom.word) for atom in control.atoms)
+        for control in controls
+    )
+    injective = len(configurations) == len(set(configurations)) == 3136
+    all_blank = tuple(
+        (center, block23.BLANK_POINTER) for center in FIRST_OUTPUT_CENTERS
+    )
+    physical = all(output_control_is_physical(control) for control in controls)
+    return PairOutputActiveSum(
+        controls,
+        code_ok,
+        injective,
+        code_ok and injective and physical,
+        all_blank not in configurations,
+    )
+
+
+def output_control_at_center(control, center):
+    matches = tuple(atom.word for atom in control.atoms if atom.center == center)
+    if len(matches) != 1:
+        raise ValueError("output control does not have one atom at center")
+    return matches[0]
+
+
+@dataclass(frozen=True)
+class BlankProjector:
+    center: tuple
+    state: object
+    operator_form: str
+
+
+@dataclass(frozen=True)
+class FutureResourceSector:
+    prefix: PairOutputControl
+    bits: tuple
+    left_blank: BlankProjector
+    right_blank: BlankProjector
+
+
+@lru_cache(maxsize=None)
+def future_resource_sector(prefix, bits, mutation=None):
+    left_center = selected_future_center(LEFT, prefix.left_exit)
+    right_center = selected_future_center(RIGHT, prefix.right_exit)
+    if mutation == "shared_future_center":
+        right_center = left_center
+    return FutureResourceSector(
+        prefix,
+        bits,
+        BlankProjector(left_center, block23.BLANK_BLOCK, "B_blank"),
+        BlankProjector(right_center, block23.BLANK_BLOCK, "B_blank"),
+    )
+
+
+@lru_cache(maxsize=None)
+def future_resource_sector_is_physical(sector) -> bool:
+    first_blocks = tuple(
+        block28.block_sites(center) for center in block28.PAIR_CENTERS
+    )
+    left_block = block28.block_sites(sector.left_blank.center)
+    right_block = block28.block_sites(sector.right_blank.center)
+    return (
+        sector.bits in RESOURCE_BITS
+        and output_control_is_physical(sector.prefix)
+        and sector.left_blank.center
+        == selected_future_center(LEFT, sector.prefix.left_exit)
+        and sector.right_blank.center
+        == selected_future_center(RIGHT, sector.prefix.right_exit)
+        and sector.left_blank.state
+        == sector.right_blank.state
+        == block23.BLANK_BLOCK
+        and sector.left_blank.operator_form
+        == sector.right_blank.operator_form
+        == "B_blank"
+        and block23.block_overlap(block23.BLANK_BLOCK, block23.BLANK_BLOCK) == 1
+        and left_block.isdisjoint(right_block)
+        and all(left_block.isdisjoint(block) for block in first_blocks)
+        and all(right_block.isdisjoint(block) for block in first_blocks)
+    )
+
+
+def resource_sector_polynomial(bits, left_blank, right_blank):
+    return (
+        (left_blank if bits[0] else 1 - left_blank)
+        * (right_blank if bits[1] else 1 - right_blank)
+    )
+
+
+def resource_partition_certificate(prefix, mutation=None) -> bool:
+    left_blank, right_blank = sp.symbols("B_L B_R", commutative=True)
+    sectors = {
+        bits: resource_sector_polynomial(bits, left_blank, right_blank)
+        for bits in RESOURCE_BITS
+    }
+    physical = tuple(future_resource_sector(prefix, bits) for bits in RESOURCE_BITS)
+    if mutation == "duplicate_resource_sector":
+        sectors[(1, 1)] = sectors[(1, 0)]
+    return (
+        all(future_resource_sector_is_physical(sector) for sector in physical)
+        and sector_partition_certificate(
+            sectors, (left_blank, right_blank)
+        )
+    )
+
+
+def append_carrier_centers(branch):
+    return {
+        branch.anchor,
+        *block24.candidate_centers(branch.anchor).values(),
+    }
+
+
+def append_nonidentity_sites(branch):
+    return block28.block_sites(branch.anchor) | block28.block_sites(
+        branch.forward_center
+    )
+
+
+def append_writer_sites(branch):
+    data = block24.factor_dictionary(branch.factors)
+    return frozenset(
+        block23.add(branch.forward_center, site)
+        for site, _input, _output in data["forward_writer_pointer_maps"]
+    )
+
+
+def identity_spectator_block(branch, center) -> bool:
+    factors = block24.factor_dictionary(branch.factors)[
+        "spectator_identity_factors"
+    ]
+    selected = tuple(
+        (site, operator)
+        for candidate, site, operator in factors
+        if candidate == center
+    )
+    return (
+        len(selected) == 32
+        and {site for site, _operator in selected} == set(block23.SUPPORT)
+        and all(operator == "I_2" for _site, operator in selected)
+    )
+
+
+def append_product_compatibility(left, right) -> bool:
+    left_nonidentity_centers = {left.anchor, left.forward_center}
+    right_nonidentity_centers = {right.anchor, right.forward_center}
+    overlap = append_carrier_centers(left) & append_carrier_centers(right)
+    if not (
+        block24.append_factorization_is_physical(left)
+        and block24.branch_effect_is_recontracted(left)
+        and block24.append_factorization_is_physical(right)
+        and block24.branch_effect_is_recontracted(right)
+        and append_nonidentity_sites(left).isdisjoint(
+            append_nonidentity_sites(right)
+        )
+        and append_writer_sites(left).isdisjoint(append_writer_sites(right))
+    ):
+        return False
+    for center in overlap:
+        if center in left_nonidentity_centers:
+            if not identity_spectator_block(right, center):
+                return False
+        elif not identity_spectator_block(left, center):
+            return False
+        if center in right_nonidentity_centers:
+            if not identity_spectator_block(left, center):
+                return False
+        elif not identity_spectator_block(right, center):
+            return False
+    return True
+
+
+@lru_cache(maxsize=1)
+def append_product_compatibility_certificate() -> bool:
+    for left_exit, right_exit in itertools.product(
+        block28.LEFT_EXITS, block28.RIGHT_EXITS
+    ):
+        left = connected_append_descriptor(
+            LEFT, left_exit, OUTCOMES[0], OUTCOMES[1]
+        ).append
+        right = connected_append_descriptor(
+            RIGHT, right_exit, OUTCOMES[0], OUTCOMES[1]
+        ).append
+        overlap = append_carrier_centers(left) & append_carrier_centers(right)
+        expected = {left.anchor, right.anchor} if left_exit == right_exit else set()
+        if overlap != expected or not append_product_compatibility(left, right):
+            return False
+    return True
+
+
+@dataclass(frozen=True)
+class EmbeddedAppendProduct:
+    left: object
+    right: object
+    unique_carrier_centers: tuple
+    shared_resolutions: tuple
+
+
+def embedded_append_product(left, right):
+    if not append_product_compatibility(left, right):
+        raise ValueError("append factors do not admit an embedded product")
+    left_nonidentity = {left.anchor, left.forward_center}
+    right_nonidentity = {right.anchor, right.forward_center}
+    overlap = append_carrier_centers(left) & append_carrier_centers(right)
+    resolutions = []
+    for center in sorted(overlap):
+        if center in left_nonidentity:
+            resolutions.append((center, "left-physical", "right-I_2-collapsed"))
+        elif center in right_nonidentity:
+            resolutions.append((center, "left-I_2-collapsed", "right-physical"))
+        else:
+            resolutions.append((center, "shared-I_2-collapsed"))
+    return EmbeddedAppendProduct(
+        left,
+        right,
+        tuple(sorted(append_carrier_centers(left) | append_carrier_centers(right))),
+        tuple(resolutions),
+    )
+
+
+def embedded_append_product_is_physical(product) -> bool:
+    overlap = append_carrier_centers(product.left) & append_carrier_centers(
+        product.right
+    )
+    return (
+        append_product_compatibility(product.left, product.right)
+        and len(product.unique_carrier_centers)
+        == len(append_carrier_centers(product.left) | append_carrier_centers(product.right))
+        and len(product.shared_resolutions) == len(overlap)
+        and {entry[0] for entry in product.shared_resolutions} == overlap
+        and all(
+            "collapsed" in role
+            for entry in product.shared_resolutions
+            for role in entry[1:]
+            if role != "left-physical" and role != "right-physical"
+        )
+    )
+
+
+@dataclass(frozen=True)
+class ConnectedFutureBranch:
+    prefix: PairOutputControl
+    sector: FutureResourceSector
+    left_second: tuple | None
+    right_second: tuple | None
+    left_append: object | None
+    right_append: object | None
+    embedded_product: EmbeddedAppendProduct | None
+    factorization: tuple
+
+
+@dataclass(frozen=True)
+class ConnectedFutureGram:
+    prefix: PairOutputControl
+    bits: tuple
+    coefficient: object
+    output_records: tuple
+    debit: int
+
+
+def connected_future_branch(
+    prefix, bits, left_second=None, right_second=None, mutation=None
+):
+    use_left, use_right = bits
+    if use_left != (left_second is not None):
+        raise ValueError("left outcome does not match resource sector")
+    if use_right != (right_second is not None):
+        raise ValueError("right outcome does not match resource sector")
+    left_append = (
+        connected_append_descriptor(
+            LEFT, prefix.left_exit, prefix.left_first, left_second
+        ).append
+        if use_left
+        else None
+    )
+    right_append = (
+        connected_append_descriptor(
+            RIGHT, prefix.right_exit, prefix.right_first, right_second
+        ).append
+        if use_right
+        else None
+    )
+    if mutation == "drop_D11_right" and bits == (1, 1):
+        right_append = None
+    if mutation == "swap_D10_arm" and bits == (1, 0):
+        right_append, left_append = left_append, None
+    sector = future_resource_sector(prefix, bits)
+    embedded = (
+        embedded_append_product(left_append, right_append)
+        if left_append is not None and right_append is not None
+        else None
+    )
+    factorization = (
+        ("output_control", prefix.atoms),
+        ("left_blank_projector", sector.left_blank),
+        ("left_resource", "B" if use_left else "I-B"),
+        ("right_blank_projector", sector.right_blank),
+        ("right_resource", "B" if use_right else "I-B"),
+        (
+            "left_append_factors",
+            None if left_append is None else left_append.factors,
+        ),
+        (
+            "right_append_factors",
+            None if right_append is None else right_append.factors,
+        ),
+        ("embedded_append_product", embedded),
+        ("outside_identity", "I_outside"),
+    )
+    return ConnectedFutureBranch(
+        prefix,
+        sector,
+        left_second,
+        right_second,
+        left_append,
+        right_append,
+        embedded,
+        factorization,
+    )
+
+
+def future_append_is_bound(prefix, arm, append) -> bool:
+    exit_front = prefix.left_exit if arm == LEFT else prefix.right_exit
+    first_outcome = prefix.left_first if arm == LEFT else prefix.right_first
+    respects_other_output_atoms = all(
+        atom.center == append.anchor
+        or atom.center not in append_carrier_centers(append)
+        or identity_spectator_block(append, atom.center)
+        for atom in prefix.atoms
+    )
+    return (
+        append.anchor == first_center(arm, exit_front)
+        and append.current_word
+        == output_control_at_center(prefix, append.anchor)
+        == block23.locked_word(exit_front, first_outcome)
+        and append.front == exit_front
+        and append.source == first_outcome
+        and append.forward_center == selected_future_center(arm, exit_front)
+        and append.effect.forward_input == block23.BLANK_BLOCK
+        and block24.append_factorization_is_physical(append)
+        and block24.branch_effect_is_recontracted(append)
+        and respects_other_output_atoms
+    )
+
+
+def contract_connected_future_branch(descriptor):
+    factors = dict(descriptor.factorization)
+    if tuple(factors) != (
+        "output_control",
+        "left_blank_projector",
+        "left_resource",
+        "right_blank_projector",
+        "right_resource",
+        "left_append_factors",
+        "right_append_factors",
+        "embedded_append_product",
+        "outside_identity",
+    ):
+        raise ValueError("future factorization is incomplete")
+    use_left, use_right = descriptor.sector.bits
+    if not (
+        output_control_is_physical(descriptor.prefix)
+        and future_resource_sector_is_physical(descriptor.sector)
+        and descriptor.sector.prefix == descriptor.prefix
+        and factors["output_control"] == descriptor.prefix.atoms
+        and factors["left_blank_projector"] == descriptor.sector.left_blank
+        and factors["left_resource"] == ("B" if use_left else "I-B")
+        and factors["right_blank_projector"] == descriptor.sector.right_blank
+        and factors["right_resource"] == ("B" if use_right else "I-B")
+        and factors["outside_identity"] == "I_outside"
+        and (descriptor.left_append is not None) == bool(use_left)
+        and (descriptor.right_append is not None) == bool(use_right)
+        and factors["embedded_append_product"] == descriptor.embedded_product
+    ):
+        raise ValueError("future control is not bound to routed factors")
+    appends = []
+    if descriptor.left_append is not None:
+        if not future_append_is_bound(
+            descriptor.prefix, LEFT, descriptor.left_append
+        ):
+            raise ValueError("left append is not bound to first output")
+        appends.append(descriptor.left_append)
+    if descriptor.right_append is not None:
+        if not future_append_is_bound(
+            descriptor.prefix, RIGHT, descriptor.right_append
+        ):
+            raise ValueError("right append is not bound to first output")
+        appends.append(descriptor.right_append)
+    if len(appends) == 2 and not append_product_compatibility(*appends):
+        raise ValueError("two-arm append product is incompatible")
+    if len(appends) == 2 and not embedded_append_product_is_physical(
+        descriptor.embedded_product
+    ):
+        raise ValueError("two-arm identities were not collapsed physically")
+    if len(appends) != 2 and descriptor.embedded_product is not None:
+        raise ValueError("singleton future branch has a fake product descriptor")
+    if factors["left_append_factors"] != (
+        None if descriptor.left_append is None else descriptor.left_append.factors
+    ) or factors["right_append_factors"] != (
+        None if descriptor.right_append is None else descriptor.right_append.factors
+    ):
+        raise ValueError("stored append factors do not match routed branches")
+    effects = tuple(
+        block24.contract_append_effect(append.factors) for append in appends
+    )
+    return ConnectedFutureGram(
+        descriptor.prefix,
+        descriptor.sector.bits,
+        sp.simplify(sp.prod(effect.scalar for effect in effects)),
+        tuple(
+            (
+                append.forward_center,
+                block23.locked_word(append.front, append.target),
+            )
+            for append in appends
+        ),
+        len(appends),
+    )
+
+
+@dataclass(frozen=True)
+class FutureSectorFamily:
+    prefix: PairOutputControl
+    bits: tuple
+    left_axis: tuple
+    right_axis: tuple
+    branch_count: int
     coefficient_sum: object
     debit: int
 
 
-def future_sector_rows(left_first, right_first, mutation=None):
-    left_row = sp.simplify(
-        sum(block23.transition(left_first, target) for target in OUTCOMES)
+@lru_cache(maxsize=None)
+def future_append_axis(prefix, arm):
+    exit_front = prefix.left_exit if arm == LEFT else prefix.right_exit
+    first_outcome = prefix.left_first if arm == LEFT else prefix.right_first
+    return tuple(
+        connected_append_descriptor(
+            arm, exit_front, first_outcome, second_outcome
+        ).append
+        for second_outcome in OUTCOMES
     )
-    right_row = sp.simplify(
-        sum(block23.transition(right_first, target) for target in OUTCOMES)
-    )
-    rows = {
-        (0, 0): FutureSectorRow((0, 0), 1, sp.S.One, 0),
-        (1, 0): FutureSectorRow((1, 0), 14, left_row, 1),
-        (0, 1): FutureSectorRow((0, 1), 14, right_row, 1),
-        (1, 1): FutureSectorRow((1, 1), 196, left_row * right_row, 2),
-    }
+
+
+@lru_cache(maxsize=None)
+def future_sector_family(prefix, bits, mutation=None):
+    left_axis = future_append_axis(prefix, LEFT) if bits[0] else ()
+    right_axis = future_append_axis(prefix, RIGHT) if bits[1] else ()
     if mutation == "drop_future_outcome":
-        bad = rows[(1, 0)]
-        rows[(1, 0)] = FutureSectorRow(
-            bad.sector,
-            bad.outcomes - 1,
-            bad.coefficient_sum
-            - block23.transition(left_first, OUTCOMES[-1]),
-            bad.debit,
+        if left_axis:
+            left_axis = left_axis[:-1]
+        elif right_axis:
+            right_axis = right_axis[:-1]
+    left_sum = sp.simplify(sum(branch.effect.scalar for branch in left_axis))
+    right_sum = sp.simplify(sum(branch.effect.scalar for branch in right_axis))
+    coefficient_sum = (
+        (left_sum if bits[0] else sp.S.One)
+        * (right_sum if bits[1] else sp.S.One)
+    )
+    branch_count = (len(left_axis) if bits[0] else 1) * (
+        len(right_axis) if bits[1] else 1
+    )
+    return FutureSectorFamily(
+        prefix,
+        bits,
+        left_axis,
+        right_axis,
+        branch_count,
+        sp.simplify(coefficient_sum),
+        sum(bits),
+    )
+
+
+def future_sector_family_is_physical(family) -> bool:
+    expected_count = {(0, 0): 1, (1, 0): 14, (0, 1): 14, (1, 1): 196}
+    representative = connected_future_branch(
+        family.prefix,
+        family.bits,
+        OUTCOMES[0] if family.bits[0] else None,
+        OUTCOMES[0] if family.bits[1] else None,
+    )
+    try:
+        gram = contract_connected_future_branch(representative)
+    except (KeyError, ValueError):
+        return False
+    return (
+        future_resource_sector_is_physical(representative.sector)
+        and all(
+            future_append_is_bound(family.prefix, LEFT, branch)
+            for branch in family.left_axis
         )
-    return rows
+        and all(
+            future_append_is_bound(family.prefix, RIGHT, branch)
+            for branch in family.right_axis
+        )
+        and family.branch_count == expected_count[family.bits]
+        and family.coefficient_sum == 1
+        and family.debit == sum(family.bits)
+        and gram.bits == family.bits
+        and gram.debit == family.debit
+    )
+
+
+@dataclass(frozen=True)
+class PairFutureStop:
+    active: PairOutputActiveSum
+    operator_form: str = "I-P_pair_output"
+
+
+def future_stop_completion_certificate(active, stop_present=True) -> bool:
+    stop = PairFutureStop(active) if stop_present else None
+    if not (
+        active.idempotent
+        and active.complement_nontrivial
+        and stop is not None
+        and stop.active == active
+        and stop.operator_form == "I-P_pair_output"
+    ):
+        return False
+    p_out = sp.symbols("P_pair_output", commutative=True)
+    stop_gram = block23.projector_reduce((1 - p_out) ** 2, p_out)
+    total_gram = block23.projector_reduce(p_out + stop_gram, p_out)
+    return stop_gram == 1 - p_out and total_gram == 1
+
+
+@lru_cache(maxsize=None)
+def future_channel_certificate(mutation=None) -> bool:
+    active = pair_output_active_sum(
+        "duplicate_output_control"
+        if mutation == "duplicate_output_control"
+        else "drop_output_atom"
+        if mutation == "drop_output_atom"
+        else None
+    )
+    if not (
+        active.idempotent
+        and active.complement_nontrivial
+        and len(active.controls) == 3136
+        and append_product_compatibility_certificate()
+    ):
+        return False
+    for prefix in active.controls:
+        if not resource_partition_certificate(
+            prefix,
+            "duplicate_resource_sector"
+            if mutation == "duplicate_resource_sector"
+            else None,
+        ):
+            return False
+        for bits in RESOURCE_BITS:
+            family = future_sector_family(
+                prefix,
+                bits,
+                "drop_future_outcome"
+                if mutation == "drop_future_outcome"
+                else None,
+            )
+            if not future_sector_family_is_physical(family):
+                return False
+    return future_stop_completion_certificate(
+        active, stop_present=mutation != "omit_STOP"
+    )
+
+
+@dataclass(frozen=True)
+class ConnectedPairPrefix:
+    first: object
+    first_gram: object
+    output_control: PairOutputControl
+
+
+def connected_pair_prefix(
+    lam,
+    left_source,
+    right_source,
+    left_exit,
+    right_exit,
+    left_first,
+    right_first,
+    raw_amplitude=False,
+):
+    first = block28.pair_kraus_descriptor(
+        lam,
+        left_source,
+        right_source,
+        left_exit,
+        right_exit,
+        left_first,
+        right_first,
+        raw_amplitude=raw_amplitude,
+    )
+    gram = block28.contract_pair_kraus_descriptor(first)
+    control = pair_output_control(
+        left_exit, right_exit, left_first, right_first
+    )
+    return ConnectedPairPrefix(first, gram, control)
+
+
+def pair_prefix_output_is_bound(prefix) -> bool:
+    expected_records = tuple(
+        (atom.center, atom.word)
+        for atom in prefix.output_control.atoms
+        if atom.word != block23.BLANK_POINTER
+    )
+    unused_centers = {
+        atom.center
+        for atom in prefix.output_control.atoms
+        if atom.word == block23.BLANK_POINTER
+    }
+    first_factor = dict(prefix.first.factorization)
+    return (
+        output_control_is_physical(prefix.output_control)
+        and prefix.first_gram.output_records == expected_records
+        and len(unused_centers) == 6
+        and all(
+            atom.role == "Blank-block"
+            and atom.state == block23.BLANK_BLOCK
+            for atom in prefix.first.control.atoms
+            if atom.center in unused_centers
+        )
+        and first_factor["left_turn_factors"] == prefix.first.left.factors
+        and first_factor["right_turn_factors"] == prefix.first.right.factors
+        and block28.full_guard_is_bound(prefix.first)
+    )
+
+
+@dataclass(frozen=True)
+class ConnectedCylinderGram:
+    first_coefficient: object
+    future_coefficient: object
+    composite_coefficient: object
+    bits: tuple
+
+
+@dataclass(frozen=True)
+class ConnectedCylinderBranch:
+    prefix: ConnectedPairPrefix
+    future: ConnectedFutureBranch
+    factorization: tuple
+
+
+@dataclass(frozen=True)
+class FixedSectorCylinderEffect:
+    control: FutureResourceSector
+    first_coefficient: object
+    summed_future_coefficient: object
+    restricted_first_coefficient: object
+
+
+def connected_cylinder_branch(prefix, future_branch):
+    return ConnectedCylinderBranch(
+        prefix,
+        future_branch,
+        (
+            ("first_pair_factors", prefix.first.factorization),
+            ("intermediate_output_control", prefix.output_control.atoms),
+            ("future_resource_sector", future_branch.sector),
+            ("future_factors", future_branch.factorization),
+            ("outside_identity", "I_outside"),
+        ),
+    )
+
+
+def contract_connected_cylinder(descriptor):
+    prefix = descriptor.prefix
+    future_branch = descriptor.future
+    factors = dict(descriptor.factorization)
+    resource_blocks = (
+        block28.block_sites(future_branch.sector.left_blank.center),
+        block28.block_sites(future_branch.sector.right_blank.center),
+    )
+    first_carrier_blocks = tuple(
+        block28.block_sites(center) for center in block28.PAIR_CENTERS
+    )
+    if not (
+        pair_prefix_output_is_bound(prefix)
+        and future_branch.prefix == prefix.output_control
+        and tuple(factors) == (
+            "first_pair_factors",
+            "intermediate_output_control",
+            "future_resource_sector",
+            "future_factors",
+            "outside_identity",
+        )
+        and factors["first_pair_factors"] == prefix.first.factorization
+        and factors["intermediate_output_control"]
+        == prefix.output_control.atoms
+        and factors["future_resource_sector"] == future_branch.sector
+        and factors["future_factors"] == future_branch.factorization
+        and factors["outside_identity"] == "I_outside"
+        and all(
+            resource.isdisjoint(first_block)
+            for resource in resource_blocks
+            for first_block in first_carrier_blocks
+        )
+    ):
+        raise ValueError("future channel is not conditioned on actual first output")
+    future_gram = contract_connected_future_branch(future_branch)
+    return ConnectedCylinderGram(
+        prefix.first_gram.coefficient,
+        future_gram.coefficient,
+        sp.simplify(prefix.first_gram.coefficient * future_gram.coefficient),
+        future_gram.bits,
+    )
+
+
+def fixed_sector_cylinder_effect(prefix, family):
+    control = future_resource_sector(prefix.output_control, family.bits)
+    if not (
+        pair_prefix_output_is_bound(prefix)
+        and family.prefix == prefix.output_control
+        and future_resource_sector_is_physical(control)
+        and future_sector_family_is_physical(family)
+    ):
+        raise ValueError("fixed-sector cylinder is not physically bound")
+    first = prefix.first_gram.coefficient
+    return FixedSectorCylinderEffect(
+        control,
+        first,
+        sp.simplify(first * family.coefficient_sum),
+        first,
+    )
 
 
 @lru_cache(maxsize=1)
-def future_resource_and_stop_certificate() -> bool:
-    b_left, b_right = sp.symbols("b_left b_right", commutative=True)
-    sectors = binary_sectors(b_left, b_right)
-    expected_counts = {(0, 0): 1, (1, 0): 14, (0, 1): 14, (1, 1): 196}
-    row_ok = all(
-        row.coefficient_sum == 1
-        and row.outcomes == expected_counts[row.sector]
-        for left_first, right_first in itertools.product(OUTCOMES, repeat=2)
-        for row in future_sector_rows(left_first, right_first).values()
-    )
-    p_active = sp.symbols("P_connected_active", commutative=True)
-    stop_gram = block23.projector_reduce((1 - p_active) ** 2, p_active)
-    full_gram = block23.projector_reduce(p_active + stop_gram, p_active)
-    return (
-        sector_partition_certificate(sectors, (b_left, b_right))
-        and row_ok
-        and stop_gram == 1 - p_active
-        and full_gram == 1
-    )
+def first_pair_template_certificate() -> bool:
+    if not (
+        block28.pair_control_certificate()
+        and block28.tensor_support_certificate()
+        and block28.record_label_certificate()
+        and all(all(block28.q_certificate(lam).values()) for lam in LAMBDAS)
+        and all(
+            block28.full_space_completion_certificate(
+                block28.active_gram_terms(lam)
+            )
+            for lam in LAMBDAS
+        )
+    ):
+        return False
+    fixed_left, fixed_right = OUTCOMES[0], OUTCOMES[1]
+    for lam in LAMBDAS:
+        for control in pair_output_active_sum().controls:
+            prefix = connected_pair_prefix(
+                lam,
+                fixed_left,
+                fixed_right,
+                *control.key,
+            )
+            if not pair_prefix_output_is_bound(prefix):
+                return False
+    for lam in LAMBDAS:
+        for left_source, right_source in itertools.product(OUTCOMES, repeat=2):
+            for left_exit, right_exit in itertools.product(
+                block28.LEFT_EXITS, block28.RIGHT_EXITS
+            ):
+                prefix = connected_pair_prefix(
+                    lam,
+                    left_source,
+                    right_source,
+                    left_exit,
+                    right_exit,
+                    OUTCOMES[0],
+                    OUTCOMES[-1],
+                )
+                expected = sp.simplify(
+                    block28.q_weight(lam, left_exit, right_exit)
+                    * block23.transition(left_source, OUTCOMES[0])
+                    * block23.transition(right_source, OUTCOMES[-1])
+                )
+                if prefix.first_gram.coefficient != expected:
+                    return False
+    return True
 
 
 @lru_cache(maxsize=1)
 def cylinder_certificate() -> bool:
-    # Every primitive q cell and every transition entry is exact.  The future
-    # sums are proved at each first Record label and resource sector; the first
-    # coefficient is deliberately kept symbolic in the factor identity.
-    if not transition_table_certificate():
+    if not (
+        transition_table_certificate()
+        and literal_turn_and_append_binding_certificate()
+        and first_pair_template_certificate()
+        and future_channel_certificate()
+    ):
         return False
-    transition_values = tuple(
-        block23.transition(source, target)
-        for source, target in itertools.product(OUTCOMES, repeat=2)
-    )
     q_values = tuple(
         block28.q_weight(lam, left_exit, right_exit)
         for lam in LAMBDAS
@@ -526,44 +1303,56 @@ def cylinder_certificate() -> bool:
             block28.LEFT_EXITS, block28.RIGHT_EXITS
         )
     )
-    if not (
-        len(transition_values) == 196
-        and all(value > 0 for value in transition_values)
-        and len(q_values) == 32
-        and all(value > 0 for value in q_values)
-    ):
-        return False
-    q_symbol, left_transition, right_transition = sp.symbols(
-        "q_cell T_left T_right", positive=True
+    transition_values = tuple(
+        block23.transition(source, target)
+        for source, target in itertools.product(OUTCOMES, repeat=2)
     )
     if not (
-        (q_symbol * left_transition * right_transition).is_positive is True
-        and (sp.Rational(1, 4) * left_transition).is_positive is True
+        len(q_values) == 32
+        and all(value > 0 for value in q_values)
+        and len(transition_values) == 196
+        and all(value > 0 for value in transition_values)
     ):
         return False
-    first = sp.symbols("F_first", nonnegative=True)
-    for left_first, right_first in itertools.product(OUTCOMES, repeat=2):
-        rows = future_sector_rows(left_first, right_first)
-        if any(
-            sp.simplify(first * row.coefficient_sum - first) != 0
-            for row in rows.values()
+    prefix = connected_pair_prefix(
+        LAMBDAS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[0],
+        OUTCOMES[2],
+        OUTCOMES[3],
+    )
+    for bits in RESOURCE_BITS:
+        family = future_sector_family(prefix.output_control, bits)
+        sector_effect = fixed_sector_cylinder_effect(prefix, family)
+        representative = connected_future_branch(
+            prefix.output_control,
+            bits,
+            OUTCOMES[0] if bits[0] else None,
+            OUTCOMES[0] if bits[1] else None,
+        )
+        gram = contract_connected_cylinder(
+            connected_cylinder_branch(prefix, representative)
+        )
+        if not (
+            family.coefficient_sum == 1
+            and sector_effect.control.bits == bits
+            and sector_effect.summed_future_coefficient
+            == sector_effect.restricted_first_coefficient
+            and gram.composite_coefficient
+            == sp.simplify(
+                gram.first_coefficient * gram.future_coefficient
+            )
         ):
             return False
-    # The pair-prefix family is the exact Cartesian product q*T*T.  Checking
-    # every primitive q and T entry above, rather than sampling products,
-    # proves all products because multiplication preserves exact positivity.
-    pair_prefix_family_size = (
+    return (
         len(LAMBDAS)
         * len(block28.LEFT_EXITS)
         * len(block28.RIGHT_EXITS)
         * len(OUTCOMES) ** 4
-    )
-    singleton_prefix_family_size = (
-        len(ARMS) * len(block28.LEFT_EXITS) * len(OUTCOMES) ** 2
-    )
-    return (
-        pair_prefix_family_size == 1_229_312
-        and singleton_prefix_family_size == 1_568
+        == 1_229_312
+        and 3136 * (1 + 14 + 14 + 196) == 705_600
     )
 
 
@@ -695,20 +1484,58 @@ def record_history_and_qnd_certificate() -> bool:
         left_sites.isdisjoint(right_sites)
         and 784**2 == 614656
         and literal_turn_and_append_binding_certificate()
+        and all(
+            block24.append_preserves_arbitrary_prior_records(
+                connected_append_descriptor(
+                    arm, exit_front, first_outcome, second_outcome
+                ).append
+            )
+            for arm in ARMS
+            for exit_front, first_outcome, second_outcome in itertools.product(
+                arm_exits(arm), OUTCOMES, OUTCOMES
+            )
+        )
+        and append_product_compatibility_certificate()
     )
 
 
 @lru_cache(maxsize=None)
 def debit_ledger_certificate(mutation=None) -> bool:
     expected = {(0, 0): 2, (1, 0): 3, (0, 1): 3, (1, 1): 4}
-    rows = future_sector_rows(OUTCOMES[0], OUTCOMES[1])
-    actual = {sector: 2 + row.debit for sector, row in rows.items()}
+    prefix = pair_output_control(
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+    )
+    actual = {}
+    for bits in RESOURCE_BITS:
+        descriptor = connected_future_branch(
+            prefix,
+            bits,
+            OUTCOMES[0] if bits[0] else None,
+            OUTCOMES[1] if bits[1] else None,
+        )
+        gram = contract_connected_future_branch(descriptor)
+        actual[bits] = 2 + gram.debit
     if mutation == "pair_total_three":
         actual[(1, 1)] = 3
+    first = connected_pair_prefix(
+        LAMBDAS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
+    )
     selected = set(state_controlled_centers()[10:])
     first_targets = set(block28.LEFT_TARGETS + block28.RIGHT_TARGETS)
     return (
         actual == expected
+        and first.first.left.effect.forward_input == block23.BLANK_BLOCK
+        and first.first.right.effect.forward_input == block23.BLANK_BLOCK
+        and len(first.first_gram.output_records) == 2
         and selected.isdisjoint(first_targets)
         and len(selected) == 8
         and len(first_targets) == 8
@@ -759,6 +1586,15 @@ def covariance_certificate() -> bool:
                     == block23.locked_word(moved_exit, moved_second_outcome)
                     and block23.transition(first_outcome, second_outcome)
                     == block23.transition(moved_first_outcome, moved_second_outcome)
+                    and block24.append_branch_covariance_certificate(
+                        connected_append_descriptor(
+                            arm,
+                            exit_front,
+                            first_outcome,
+                            second_outcome,
+                        ).append,
+                        rotation,
+                    )
                 ):
                     return False
     full = set(full_literal_centers())
@@ -775,44 +1611,55 @@ def covariance_certificate() -> bool:
                     lam, *block28.pair_action(rotation, pair)
                 ):
                     return False
-    return True
+    return (
+        set(RESOURCE_BITS) == {(right, left) for left, right in RESOURCE_BITS}
+        and block23.rotate_block_product(block23.BLANK_BLOCK, ROTATIONS[0])
+        == block23.BLANK_BLOCK
+        and block24.translation_covariance_certificate()
+        and block28.full_pair_covariance_certificate()
+        and append_product_compatibility_certificate()
+    )
 
 
 @lru_cache(maxsize=None)
 def arbitrary_reference_certificate(mutation=None) -> bool:
+    active = pair_output_active_sum()
+    if not (
+        active.idempotent
+        and active.complement_nontrivial
+        and len(active.controls) == 3136
+        and block28.arbitrary_reference_certificate()
+    ):
+        return False
     row, column = sp.symbols("r_R s_R", integer=True, nonnegative=True)
     delta = sp.KroneckerDelta(row, column)
-    p_left, p_right = sp.symbols("p_left_R p_right_R", commutative=True)
-    first_sectors = binary_sectors(p_left, p_right)
-    b_left, b_right = sp.symbols("b_left_R b_right_R", commutative=True)
-    future_sectors = binary_sectors(b_left, b_right)
-    first_total = reduce_projectors(
-        sum(value**2 for value in first_sectors.values()), (p_left, p_right)
-    )
-    future_total = reduce_projectors(
-        sum(value**2 for value in future_sectors.values()), (b_left, b_right)
+    p_out = sp.symbols("P_pair_output_R", commutative=True)
+    system_total = block23.projector_reduce(
+        p_out + (1 - p_out) ** 2, p_out
     )
     reference_factor = (
         sp.Symbol("R_nonidentity") if mutation == "nonidentity" else sp.S.One
     )
     return (
-        sp.simplify(reference_factor * delta * first_total * future_total - delta)
+        system_total == 1
+        and sp.simplify(reference_factor * delta * system_total - delta)
         == 0
     )
 
 
 TERMINAL_TEXT = (
-    "BOTH-SUPPLIED-Q-PAIR-TURNS-ADMIT-COMMON-CONNECTED-BLOCK24-FUTURE-"
-    "CYLINDERS-ON-SUPPLIED-RAILS"
+    "BOTH-SUPPLIED-Q-PAIR-CHANNELS-COMPOSE-WITH-ONE-PHYSICAL-"
+    "OUTPUT-RECORD-CONTROLLED-FUTURE-CHANNEL"
 )
 
 SCOPE_TEXT = (
-    "two supplied q choices; one external pair-turn layer; actual output "
-    "Locked Records feed one literal connected Block24 straight append; "
-    "four future-resource sectors; supplied finite rails; no second pair "
-    "reuse, cause selection, autonomous invocation, renewal, microscopic "
-    "compiler, rate, gravity, axiom amendment, audit retention, obligation "
-    "retirement, or TOE movement"
+    "two supplied q choices; imported complete pair channel followed by one "
+    "externally invoked physical output-Record-controlled future channel; "
+    "D00/D10/D01/D11 route zero/left/right/both literal Block24 appends on "
+    "supplied finite rails; no singleton first-layer law, second pair reuse, "
+    "cause selection, autonomous invocation, renewal, scheduler, compiler, "
+    "rate, gravity, axiom amendment, audit retention, obligation retirement, "
+    "or TOE movement"
 )
 
 FORBIDDEN_SCOPE_PHRASES = (
@@ -832,6 +1679,16 @@ def scope_guard_certificate(terminal=TERMINAL_TEXT, scope=SCOPE_TEXT) -> bool:
         terminal == TERMINAL_TEXT
         and scope == SCOPE_TEXT
         and all(phrase not in combined for phrase in FORBIDDEN_SCOPE_PHRASES)
+    )
+
+
+def scope_promotion_is_rejected(phrase) -> bool:
+    return (
+        phrase in FORBIDDEN_SCOPE_PHRASES
+        and phrase in f"{SCOPE_TEXT}; {phrase}"
+        and not scope_guard_certificate(
+            TERMINAL_TEXT, f"{SCOPE_TEXT}; {phrase}"
+        )
     )
 
 
@@ -865,19 +1722,6 @@ def append_construction_mutation_is_rejected(descriptor, **overrides) -> bool:
     return append_factors_are_rejected(descriptor.append, factors)
 
 
-def nonidentity_spectator_mutation_is_rejected(descriptor) -> bool:
-    factors = descriptor.append.factors
-    spectators = list(
-        block24.factor_dictionary(factors)["spectator_identity_factors"]
-    )
-    center, site, _operator = spectators[0]
-    spectators[0] = (center, site, "X_2")
-    mutant_factors = replace_named_factor(
-        factors, "spectator_identity_factors", tuple(spectators)
-    )
-    return append_factors_are_rejected(descriptor.append, mutant_factors)
-
-
 def turn_record_overwrite_mutation_is_rejected() -> bool:
     try:
         mutant = block28.turn_branch(
@@ -891,22 +1735,6 @@ def turn_record_overwrite_mutation_is_rejected() -> bool:
     except (KeyError, ValueError):
         return True
     return not block28.turn_branch_is_physical(mutant)
-
-
-def shared_future_target_mutation_is_rejected() -> bool:
-    left = connected_append_descriptor(
-        LEFT, block28.LEFT_EXITS[0], OUTCOMES[0], OUTCOMES[1]
-    )
-    right = connected_append_descriptor(
-        RIGHT, block28.RIGHT_EXITS[0], OUTCOMES[0], OUTCOMES[1]
-    )
-    mutant = replace(right, second_site=left.second_site)
-    return (
-        not descriptor_binding_is_physical(mutant)
-        and not block28.block_sites(left.second_site).isdisjoint(
-            block28.block_sites(mutant.second_site)
-        )
-    )
 
 
 def fixed_coordinate_mark_mutation_is_rejected() -> bool:
@@ -926,25 +1754,99 @@ def untransported_future_mutation_is_rejected() -> bool:
     return transported != untransported
 
 
+def connected_future_mutation_is_rejected(prefix, bits, mutation) -> bool:
+    try:
+        descriptor = connected_future_branch(
+            prefix,
+            bits,
+            OUTCOMES[0] if bits[0] else None,
+            OUTCOMES[1] if bits[1] else None,
+            mutation=mutation,
+        )
+        contract_connected_future_branch(descriptor)
+    except (KeyError, ValueError):
+        return True
+    return False
+
+
+def raw_pair_amplitude_mutation_is_rejected() -> bool:
+    try:
+        connected_pair_prefix(
+            sp.Rational(1, 2),
+            OUTCOMES[0],
+            OUTCOMES[1],
+            block28.LEFT_EXITS[0],
+            block28.RIGHT_EXITS[0],
+            OUTCOMES[2],
+            OUTCOMES[3],
+            raw_amplitude=True,
+        )
+    except (KeyError, ValueError):
+        return True
+    return False
+
+
+def equal_exit_nonidentity_overlap_mutation_is_rejected() -> bool:
+    exit_front = block28.LEFT_EXITS[0]
+    left = connected_append_descriptor(
+        LEFT, exit_front, OUTCOMES[0], OUTCOMES[1]
+    ).append
+    right = connected_append_descriptor(
+        RIGHT, exit_front, OUTCOMES[0], OUTCOMES[1]
+    ).append
+    factors = right.factors
+    spectators = list(
+        block24.factor_dictionary(factors)["spectator_identity_factors"]
+    )
+    index = next(
+        index
+        for index, (center, _site, _operator) in enumerate(spectators)
+        if center == left.anchor
+    )
+    center, site, _operator = spectators[index]
+    spectators[index] = (center, site, "X_2")
+    mutant = replace(
+        right,
+        factors=replace_named_factor(
+            factors, "spectator_identity_factors", tuple(spectators)
+        ),
+    )
+    return not append_product_compatibility(left, mutant)
+
+
 def mutation_rejections():
-    p_left, p_right = sp.symbols("m_left m_right", commutative=True)
-    sectors = binary_sectors(p_left, p_right)
-    p_active = sp.symbols("P_mut", commutative=True)
-    no_stop_total = block23.projector_reduce(p_active, p_active)
-    bad_future = future_sector_rows(
-        OUTCOMES[0], OUTCOMES[1], mutation="drop_future_outcome"
+    prefix = pair_output_control(
+        block28.LEFT_EXITS[0],
+        block28.RIGHT_EXITS[0],
+        OUTCOMES[0],
+        OUTCOMES[1],
     )
     standard_descriptor = connected_append_descriptor(
         LEFT, block28.LEFT_EXITS[0], OUTCOMES[0], OUTCOMES[1]
     )
-    wrong_word_descriptor = replace(
-        standard_descriptor,
-        current_word=block23.locked_word(
-            standard_descriptor.exit_front, OUTCOMES[-1]
-        ),
+    wrong_output_atoms = list(prefix.atoms)
+    wrong_output_index = next(
+        index
+        for index, atom in enumerate(wrong_output_atoms)
+        if atom.center == first_center(LEFT, prefix.left_exit)
     )
+    wrong_output_atoms[wrong_output_index] = OutputPointerAtom(
+        wrong_output_atoms[wrong_output_index].center,
+        block23.locked_word(prefix.left_exit, OUTCOMES[-1]),
+    )
+    wrong_output_control = replace(
+        prefix, atoms=tuple(wrong_output_atoms)
+    )
+    fresh_site = block23.add(standard_descriptor.first_site, E1)
     fresh_copy_descriptor = replace(
-        standard_descriptor, origin="fresh_preparation"
+        standard_descriptor,
+        first_site=fresh_site,
+        origin="fresh_preparation",
+        append=block24.append_branch(
+            fresh_site,
+            standard_descriptor.current_word,
+            standard_descriptor.second_outcome,
+        ),
     )
     old_source_word = block23.locked_word(
         standard_descriptor.exit_front, OUTCOMES[-1]
@@ -989,11 +1891,25 @@ def mutation_rejections():
         "dropped_center_breaks_full_literal_carrier": not geometry_certificate(
             "drop_full_center"
         ),
-        "nonidentity_spectator_breaks_literal_append_scope": (
-            nonidentity_spectator_mutation_is_rejected(standard_descriptor)
+        "duplicate_output_control_breaks_bound_active_projector": not pair_output_active_sum(
+            "duplicate_output_control"
+        ).idempotent,
+        "dropped_output_atom_breaks_eight_pointer_control": not pair_output_active_sum(
+            "drop_output_atom"
+        ).idempotent,
+        "shared_future_center_breaks_physical_resource_sector": (
+            not future_resource_sector_is_physical(
+                future_resource_sector(prefix, (1, 1), "shared_future_center")
+            )
+        ),
+        "duplicated_resource_sector_breaks_physical_partition": not resource_partition_certificate(
+            prefix, "duplicate_resource_sector"
+        ),
+        "nonidentity_equal_exit_spectator_breaks_composite": (
+            equal_exit_nonidentity_overlap_mutation_is_rejected()
         ),
         "wrong_output_word_breaks_append_input_binding": (
-            not descriptor_binding_is_physical(wrong_word_descriptor)
+            not output_control_is_physical(wrong_output_control)
         ),
         "overwrite_old_Record_breaks_QND": turn_record_overwrite_mutation_is_rejected(),
         "overwrite_first_Record_breaks_QND": append_construction_mutation_is_rejected(
@@ -1007,38 +1923,46 @@ def mutation_rejections():
                 standard_descriptor, displacement=0
             )
         ),
-        "biased_first_transition_row_breaks_normalization": not transition_table_certificate(
+        "biased_transition_row_breaks_normalization": not transition_table_certificate(
             "first_row_bias"
         ),
         "dropped_future_transition_breaks_normalization": not transition_table_certificate(
             "future_row_drop"
         ),
-        "raw_probability_amplitude_breaks_singleton_Gram": singleton_turn_row_sum(
-            OUTCOMES[0], raw_amplitude=True
-        )
-        != 1,
+        "raw_q_probability_breaks_pair_Kraus_Gram": (
+            raw_pair_amplitude_mutation_is_rejected()
+        ),
         "bad_q_cell_breaks_pair_normalization": not block28.q_certificate(
             sp.Rational(1, 2), "bad_diagonal"
         )["normalized"],
         "biased_q_cell_breaks_uniform_singleton_marginal": not block28.q_certificate(
             sp.Rational(1, 2), "biased_cell"
         )["uniform_marginals"],
-        "deleted_empty_sector_breaks_direct_sum": not sector_partition_certificate(
-            sectors, (p_left, p_right), "drop_sector"
+        "D10_routed_through_wrong_arm_breaks_binding": (
+            connected_future_mutation_is_rejected(
+                prefix, (1, 0), "swap_D10_arm"
+            )
         ),
-        "attenuated_singleton_breaks_full_channel_route": sp.Rational(1, 2)
-        * singleton_turn_row_sum(OUTCOMES[0])
-        != 1,
-        "duplicated_presence_sector_breaks_orthogonality": not sector_partition_certificate(
-            sectors, (p_left, p_right), "duplicate_sector"
+        "dropped_D11_arm_breaks_composite_writer": (
+            connected_future_mutation_is_rejected(
+                prefix, (1, 1), "drop_D11_right"
+            )
         ),
-        "missing_common_STOP_breaks_full_space_TP": no_stop_total != 1,
-        "dropped_future_outcome_breaks_fixed_prefix_cylinder": bad_future[
-            (1, 0)
-        ].coefficient_sum
-        != 1,
-        "shared_selected_target_breaks_pair_tensor_support": (
-            shared_future_target_mutation_is_rejected()
+        "dropped_future_outcome_breaks_fixed_prefix_cylinder": (
+            future_sector_family(
+                prefix, (1, 0), "drop_future_outcome"
+            ).coefficient_sum
+            != 1
+        ),
+        "missing_common_STOP_breaks_full_space_TP": (
+            not future_stop_completion_certificate(
+                pair_output_active_sum(), stop_present=False
+            )
+        ),
+        "missing_imported_pair_STOP_breaks_first_channel_TP": (
+            not block28.full_space_completion_certificate(
+                block28.active_gram_terms(LAMBDAS[0]), stop_present=False
+            )
         ),
         "coordinate_mark_breaks_proper_cubic_covariance": (
             fixed_coordinate_mark_mutation_is_rejected()
@@ -1072,9 +1996,7 @@ def mutation_rejections():
     }
     reports.update(
         {
-            name: not scope_guard_certificate(
-                f"{TERMINAL_TEXT}; {phrase}", SCOPE_TEXT
-            )
+            name: scope_promotion_is_rejected(phrase)
             for name, phrase in scope_mutations.items()
         }
     )
@@ -1114,21 +2036,29 @@ def main() -> int:
         "bind at the same site and complete Locked word",
     )
     checks.check(
-        "first_layer_direct_sum",
-        first_layer_direct_sum_certificate(),
-        "empty, two uniform one-arm turns, and both supplied pair rows form "
-        "one complete current-presence direct sum",
+        "physical_pair_output_active_sum",
+        pair_output_active_sum().idempotent
+        and pair_output_active_sum().complement_nontrivial,
+        "3,136 exact eight-pointer configurations are orthogonal and bind "
+        "the physical P_pair_output projector",
     )
     checks.check(
-        "future_resource_sectors_and_STOP",
-        future_resource_and_stop_certificate(),
-        "D00/D10/D01/D11 are orthogonal and complete; all routed rows plus I-P_active are TP",
+        "physical_future_channel_and_STOP",
+        future_channel_certificate(),
+        "12,544 output/resource controls route 705,600 literal future terms; "
+        "their Gram is P_pair_output and I-P_pair_output completes the channel",
+    )
+    checks.check(
+        "imported_pair_Kraus_template_binding",
+        first_pair_template_certificate(),
+        "both supplied q families contract through literal Block28 controls "
+        "and bind every successful output configuration",
     )
     checks.check(
         "fixed_prefix_depth_two_cylinders",
         cylinder_certificate(),
-        "all 1,229,312 pair prefixes and 1,568 singleton prefixes factor "
-        "through exact future-resource cylinders",
+        "all 1,229,312 pair prefixes factor through physical "
+        "D00/D10/D01/D11 future-resource cylinders",
     )
     checks.check(
         "q_independent_continuation",
@@ -1138,8 +2068,8 @@ def main() -> int:
     checks.check(
         "Record_history_QND_and_injectivity",
         record_history_and_qnd_certificate(),
-        "784 histories per arm and 614,656 pair configurations decode; old "
-        "and first Records are QND",
+        "784 conditional output histories per arm and 614,656 pair output "
+        "configurations decode; old and first Records are QND",
     )
     checks.check(
         "finite_Blank_debit_ledger",
@@ -1155,14 +2085,15 @@ def main() -> int:
     checks.check(
         "arbitrary_reference_extension",
         arbitrary_reference_certificate(),
-        "first and future direct sums tensor with symbolic untouched identity",
+        "the bound future-system identity tensors with an arbitrary untouched "
+        "reference identity",
     )
     mutations = mutation_rejections()
     for name, rejected in mutations.items():
         print(f"MUTATION {'REJECTED' if rejected else 'SURVIVED'} {name}")
     checks.check(
         "designated_mutations",
-        all(mutations.values()) and len(mutations) == 35,
+        all(mutations.values()) and len(mutations) == 38,
         f"rejected={sum(mutations.values())}/{len(mutations)}",
     )
     checks.check(
@@ -1172,25 +2103,25 @@ def main() -> int:
     )
     print(
         "per_element: checked — all 32 supplied q cells, 196 transition "
-        "entries, 1,568 turn branches, and 1,568 append descriptors; exact "
-        "factorization covers every pair and singleton prefix"
+        "entries, 1,568 turn branches, 1,568 append descriptors, 3,136 "
+        "output controls, and 12,544 output/resource projectors"
     )
     print(
         "per_site: checked — 18 state-controlled blocks and every identity "
         "factor on the 34-block, 1,088-site literal carrier"
     )
     print(
-        "per_mode: checked — empty/left/right/pair first sectors and "
-        "D00/D10/D01/D11 future-resource sectors for both q choices"
+        "per_mode: checked — both supplied pair channels followed by physical "
+        "D00/D10/D01/D11 future-resource sectors"
     )
     print(
         "per_block: checked — actual first output Record is the future current "
         "input; selected future targets, STOP, QND, and debit ledger are bound"
     )
     print(
-        "lattice_wide: checked and not executed — no second returned-pair "
-        "handoff, autonomous invocation, arbitrary-depth renewal, or "
-        "nearest-neighbor compiled law is claimed"
+        "lattice_wide: checked and not executed — no singleton first-layer "
+        "law, second returned-pair handoff, autonomous invocation, renewal, "
+        "or nearest-neighbor compiled law is claimed"
     )
     if checks.failed == 0:
         print(f"TERMINAL: {TERMINAL_TEXT}")

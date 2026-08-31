@@ -1,0 +1,19 @@
+{
+ "id": "pr-7205",
+ "title": "feat(nszmenu): own incoming set on #7188: reverse fails, face fails",
+ "science": "LOAD-BEARING NEGATIVE. First cell to read the probe's OWN incoming set M instead of the neighbourhood S^+, on #7188's process. M(A)={+e2,-e2}, M(B)={+e1}: no opposite pair, so reverse AND face both fail -- while the same runner prints S+_reverse=hold, S+_face=hold on the identical process. This is the band's separation result: the reverse relation is not a function of the probe's own record conten",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7205,
+  "branch": "physics-loop/toe-lphys-block-nszmenu-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

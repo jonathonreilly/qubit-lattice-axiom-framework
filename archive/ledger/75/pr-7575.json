@@ -1,0 +1,19 @@
+{
+ "id": "pr-7575",
+ "title": "feat(nm2sfz3zrd): neighbor-read of lex-smallest cyclic-frame holonomy at t+1 on three-axis opposite near-face seed: reverse HOLD, face fails",
+ "science": "3N seed, xy z=1/z=2 squares, lex-SMALLEST frame, neighbor-read. Same cell as 7583's \u03c41 half and as 7578 under the opposite convention; reader-proved that the lex convention cannot change any holonomy verdict.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7575,
+  "branch": "physics-loop/toe-lphys-block-nm2sfz3zrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

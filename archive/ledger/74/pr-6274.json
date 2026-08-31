@@ -1,0 +1,19 @@
+{
+ "id": "pr-6274",
+ "title": "science(toe): compile Cycle713 five-M2 Record cut",
+ "science": "Block 69: explicit 29-gate one-/two-M2 Stinespring word on the five assigned Cycle713 factors realizing the selected menu-0 instrument exactly (16/16 matrix units, Choi/TP residuals ~1e-15, NN-routed with zero failures) - the only literally NN-compiled physical dilation in the series; stops before the Record lock.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6274,
+  "branch": "physics-loop/toe-axiom-closure-block69-cycle713-same-m2-record-cut-20260813"
+ },
+ "carried_by": "PR #6275 (Block 70) receipt-pins and consumes the dilation and supplies the missing Record-lock laws; the instrument program's live continuation is the Block 71-73 formation family composed in #6345 (",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

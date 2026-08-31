@@ -1,0 +1,19 @@
+{
+ "id": "pr-6101",
+ "title": "science(gravity): select phase before homogeneous contact",
+ "science": "Block 29: corrects the gravity dependency order by proving all six Block-23 homogeneous modes lie outside the supplied Block-19 compact tangent, so phase/ensemble selection must precede homogeneous contact; narrows the missing law to joint Record/history, Record-to-geometry, ensemble/phase, full Ward, and causal update selection.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6101,
+  "branch": "physics-loop/toe-axiom-closure-block29-phase-ward-reclassification-20260810"
+ },
+ "carried_by": "#6102/#6103 implement the corrected order (Record-derived phase classifier, then channel typing/repair); ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

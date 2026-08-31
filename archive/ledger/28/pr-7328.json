@@ -1,0 +1,19 @@
+{
+ "id": "pr-7328",
+ "title": "physics: construct pin-faithful joint Record sector",
+ "science": "Block 42: constructs the joint object AND prices it with two negatives the later blocks only carry as open items. Positive: J_a = K_W,a (+) S_a has det J_a = |det q_a|^2, so a disjoint sum over the four pins reproduces p_det(a) exactly, and Jacobi differentiation with the action-computed per-arm calibration 1/Tr((K_W,a^-1)_RR) gives one exact joint grade P(a,E)=p_det(a) Tr(C_a E), normalized on th",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7328,
+  "branch": "physics-loop/toe-pincer-joint-sector-action-block42-20260823"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

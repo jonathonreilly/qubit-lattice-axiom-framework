@@ -1,0 +1,19 @@
+{
+ "id": "pr-6875",
+ "title": "feat(llk1): late-leave same-k holds at k=1: t=3 vs t=5",
+ "science": "Defines late-leave lambda2 = rho3 + cost 3 on a 1->2 hop with max|w_i|>=2 (taxes leaving the axis after the unit cube, spares the unit cube). B_6: 3 vs 5, holds.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6875,
+  "branch": "physics-loop/toe-lphys-block-llk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

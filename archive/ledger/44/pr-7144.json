@@ -1,0 +1,19 @@
+{
+ "id": "pr-7144",
+ "title": "feat(nsyopex): y-symmetric three-site later-tick exist-opposite: reverse HOLD, face HOLD",
+ "science": "Later-tick exist-opposite on the y-symmetric three-site seed {0,(0,1,0),(0,-1,0)} with locks +e1,-e1,-e1; at T=3 every S_* is a 4-5 letter mixed set, so both bits hold. The runner internally recomputes four other seeds' cells (two-site, nstri, nnseed, nslate x) to prove non-identity, effectively carrying a five-cell cross-seed census the note never states.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7144,
+  "branch": "physics-loop/toe-lphys-block-nsyopex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

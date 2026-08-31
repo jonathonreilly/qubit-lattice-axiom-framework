@@ -1,0 +1,19 @@
+{
+ "id": "pr-6441",
+ "title": "feat(mix0diffwhy): first mix0/L1 disagreement is mixed3 at (1,0,0) tick 2",
+ "science": "The mixed3 analogue of #6420: drill-down of #6437 to the exact stencil. From S={(0,0,0),(0,0,1),(2,0,0)} the first neighbourhood where f_mix0 and f_L1 differ is tick t=2, site (1,0,0), six-tuple (1,1,0,0,1,0), axis type mixed3=(1,1,1), f_L1=1 and f_mix0=0 - the x axis both-occupied, z unbalanced, y empty. f_L1 fills (3,8,11,12); f_mix0 halts (3,8,10). Incremental over #6437 (which already named th",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6441,
+  "branch": "physics-loop/toe-lphys-block-mix0diffwhy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

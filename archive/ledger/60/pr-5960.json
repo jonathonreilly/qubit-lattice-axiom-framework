@@ -1,0 +1,19 @@
+{
+ "id": "pr-5960",
+ "title": "[physics-loop][review-loop] toe-time blockG22 (STACKED on #5952) \u2014 Cycle 899: bounded theorem \u2014 the five-fold ambiguity was a phantom; the c",
+ "science": "Proves 883 five-fold binding ambiguity is a phantom: on the free-orbit locus all five closed forms are the identical scope function (n-1)/n^2, reducing SL1b to one identification (which space the record reads). Full content verified-carried: #5961 independently rebuilt all five rows with zero disagreement and decided the residual identification (DECIDED-F_DIM).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5960,
+  "branch": "physics-loop/toe-time-blockG22-20260802"
+ },
+ "carried_by": "PR #5961 (cycle 901 note, docs/SPACE_IDENTIFICATION_DECIDED_FDIM_CYCLE901...)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

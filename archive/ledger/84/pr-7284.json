@@ -1,0 +1,19 @@
+{
+ "id": "pr-7284",
+ "title": "feat(nmmaxisy): incoming-axis agreement at t+1 on #7211: reverse HOLD, face fails",
+ "science": "Incoming-axis agreement on the #7211 y-probes: Axis(M)(A)=Axis(M)(B)={e_1}; Axis(M)(C)={e_2} vs Axis(M)(D)={e_2,e_3}. Face fails for one reason only -- D is the two-axis mixing site. Every band readout that requires a clean D fails on face and only on face.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7284,
+  "branch": "physics-loop/toe-lphys-block-nmmaxisy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

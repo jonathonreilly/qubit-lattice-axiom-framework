@@ -1,0 +1,19 @@
+{
+ "id": "pr-6957",
+ "title": "feat(d4k14): max\u22654 out-face same-k restores k=14: t=30 vs t=46",
+ "science": "d4 same-k at k=14: (30,46). Note records the pair 'coincides with the d3 pair, with the df pair, and with the omega pair'. Carried by #6945.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (2700>2116; band bit) face=absent",
+ "source": {
+  "pr": 6957,
+  "branch": "physics-loop/toe-lphys-block-d4k14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

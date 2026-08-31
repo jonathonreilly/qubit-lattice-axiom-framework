@@ -1,0 +1,19 @@
+{
+ "id": "pr-7645",
+ "title": "feat(nm2frm2smy): directed 2-step cyclic-frame transport along +e2 at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "+e2 2-step, two-axis opposite, global tau. Every second hop fails: (0,2,0) forms at tick 1 and has no split at tau=1. Convention-stable. Its named-edge gates do pin the first-hop P matrices, but those never enter the verdict.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7645,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2smy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

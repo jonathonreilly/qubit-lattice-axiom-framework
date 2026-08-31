@@ -1,0 +1,19 @@
+{
+ "id": "pr-6982",
+ "title": "feat(c2d4clk): cost-2 max\u22654 out-face clock N_label=12 N_filt=6",
+ "science": "Clock-versus-readiness on the same 12 perp-mask hosts with c2d4: N_label_fire=12, N_filt_fire=6. Row-for-row byte-identical output to #6974 (same masks, ticks, age bits, f sections, incoming cost tuples, sigma_ready), and its runner likewise proves out-face-idle-on-incoming. Second instance of the same false-green: two 'first display' PRs with a provably identical computation, each asserting non-d",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=absent (N_label_fire=12, N_filt_fire=6, ",
+ "source": {
+  "pr": 6982,
+  "branch": "physics-loop/toe-lphys-block-c2d4clk-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

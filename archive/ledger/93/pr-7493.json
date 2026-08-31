@@ -1,0 +1,19 @@
+{
+ "id": "pr-7493",
+ "title": "feat(nm2cycc3sfz): HOLDING cyclic lex-smallest det orientation of 1-in 2-out at t+1 on three-axis far-face opposite z-probes: reverse HOLD, ",
+ "science": "Far-face 3-axis z-probes, lex-smallest: +1,+1,-1,-1 -> hold/hold. Same verdict pair as its lex-largest twin #7482 because every probe in that cell has exactly one mixed slot, so the tie-break flips all four signs together (global flip leaves pairwise equality intact).",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7493,
+  "branch": "physics-loop/toe-lphys-block-nm2cycc3sfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

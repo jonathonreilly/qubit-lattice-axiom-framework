@@ -1,0 +1,19 @@
+{
+ "id": "pr-6843",
+ "title": "physics: classify the naturality moduli of the completion",
+ "science": "Block 127 exact classification of the completion naturality moduli with derived dimension law 8+2r(4-r), checker-certified and cross-model verified, the named premise for Block 129 scalar-quotient theorem in the stacked mainline. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6843,
+  "branch": "physics-loop/toe-axiom-closure-block127-naturality-moduli-20260817"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6255",
+ "title": "[physics-loop] toe-lphys c2hilb: bounded_theorem / bounded-support",
+ "science": "Dimension-count note that three-qubit C8 is not unital M3; elementary type-mismatch observation in the same unadopted pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6255,
+  "branch": "physics-loop/toe-lphys-block-c2hilb-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

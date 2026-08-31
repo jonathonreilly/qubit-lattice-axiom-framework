@@ -1,0 +1,19 @@
+{
+ "id": "pr-6505",
+ "title": "feat(triple0why): first refuse of f00 vs f1 on lex-first 2-site f1 fill",
+ "science": "reverse=none face=none (f_cut refusal-mechanism census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut refusal-mechanism census; no (",
+ "source": {
+  "pr": 6505,
+  "branch": "physics-loop/toe-lphys-block-triple0why-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

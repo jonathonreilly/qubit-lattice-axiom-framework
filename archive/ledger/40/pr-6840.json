@@ -1,0 +1,19 @@
+{
+ "id": "pr-6840",
+ "title": "feat(hrface): height-ridge face reverse holds k=1..8 on B16",
+ "science": "zeta face-reverse table on B_16 for k=1..8 -- numerically identical to #6822 row for row, and the note admits 'The pair arrivals match the rho3 face-versus-k table on the same ball'. It therefore inherits #6822's k=8 BALL-WALL ARTIFACT verbatim, including the same disclosure that (16,0,0)'s only in-ball neighbor is (15,0,0). On any host R>=18 the k=8 bit is 784<800 = fails.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES claimed at k=1..8 (face pair); k=8 bit inherits ",
+ "source": {
+  "pr": 6840,
+  "branch": "physics-loop/toe-lphys-block-hrface-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

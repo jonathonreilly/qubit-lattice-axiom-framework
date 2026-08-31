@@ -1,0 +1,19 @@
+{
+ "id": "pr-7785",
+ "title": "[physics-loop] Source eta 01: factor H1 locality and isolate decoder ownership",
+ "science": "H1 native action factor-locality theorem: the Block-206 110-term forward and actual-reverse Laurent sources reconstruct exactly from native shifted factors at max depth 3 (stage census 8/8/8/60/60/110), each primitive having unit support per variable \u2014 so effective L1 radius 3 is NOT by itself a reason to enlarge the nearest-neighbor Admissibility context (that objection is retired). Also: T2-shea",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7785,
+  "branch": "physics-loop/toe-source-eta-ownership-block01-action-factorized-six-record-decoder-20260828"
+ },
+ "carried_by": "ancestry-carried by #7813 (gh api compare 7813_head...7785_head = status behind, ahead_by 0, 146 behind); NOT restated \u2014 #7813 is a disjoint returned-tip supplied-q instrument result and its depends_o",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

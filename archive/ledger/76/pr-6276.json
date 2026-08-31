@@ -1,0 +1,19 @@
+{
+ "id": "pr-6276",
+ "title": "[physics-loop] toe-lphys cubeframe: bounded_theorem / bounded-support",
+ "science": "Bounded_theorem note, no probe cell. RIGIDITY THEOREM bridging the Lattice and Qubit axioms: faithful unital *-actions of the concrete proper cubic group G (|G|=24) on one-site M_2(C) form exactly ONE conjugacy class. Proof chain: G is isomorphic to S_4 via its permutation of the four space diagonals (runner lists 24 distinct perms); G has eight order-3 elements so a faithful image cannot be C_24 ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "source": {
+  "pr": 6276,
+  "branch": "physics-loop/toe-lphys-block-cubeframe-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

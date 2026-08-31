@@ -1,0 +1,19 @@
+{
+ "id": "pr-6428",
+ "title": "feat(mix0line): run f_mix0 from the 3-site long-axis seed",
+ "science": "Thin single-run confirmation: f_mix0, the F_cut member with remaining tuple (1,0,1,1,0) (i.e. L1 with mixed3 silenced), fills from the 3-site long-axis seed with T=2 and history (3,9,12), identical to f_L1's. Its only real contribution beyond the run is that it states the F_cut completion of that tuple explicitly - complements wt5=1, adj4=1, opp4=0, support 44 - which is exactly the disambiguation",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6428,
+  "branch": "physics-loop/toe-lphys-block-mix0line-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7116",
+ "title": "feat(nstri): three-site opposite-lock unique vector: reverse fails, face UNDEFINED",
+ "science": "Three-site opposite-lock seed {0,(0,1,0),(1,0,0)} with locks +e_1,-e_1,+e_2, neighbour-lock vector readout on x-probes. Two defects: it runs a REDUCED checker (16 checks, 6 of them prose greps, no mutation or cross-route tests, no cache_write declaration) versus 41-63 elsewhere; and its `already_recorded_neighbors` switches from strictly-earlier to same-tick-inclusive when the probe forms at tick ",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=UNDEFINED",
+ "source": {
+  "pr": 7116,
+  "branch": "physics-loop/toe-lphys-block-nstri-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

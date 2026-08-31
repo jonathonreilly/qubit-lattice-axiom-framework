@@ -1,0 +1,19 @@
+{
+ "id": "pr-7077",
+ "title": "feat(nsvecs): nssame neighbor-lock vector: reverse fail, face UNDEFINED",
+ "science": "Lock-vector predicate on the nssame same-lock seed: L(A)=+e_1, L(B)=+e_3, L(C)=UNDEFINED (A keeps three earliest incoming locks {+e_2,+e_3,-e_3} whose vectors mix), L(D)=+e_1; L(A)+L(B)=(1,0,1) != 0 so reverse FAILS and face is UNDEFINED. Same seed and probes as #7070, which gave none/UNDEFINED under the sign coarsening: reverse moves from `none` to `fail` purely by keeping the axis.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=UNDEFINED",
+ "source": {
+  "pr": 7077,
+  "branch": "physics-loop/toe-lphys-block-nsvecs-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

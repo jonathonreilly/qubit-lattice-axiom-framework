@@ -1,0 +1,19 @@
+{
+ "id": "pr-6750",
+ "title": "feat(fail8): k=4 face fail: axis last hop is support-drop 3, face last hop is 1",
+ "science": "Displayed last-hop cost explanation of the k=4 face-pair failure on B12, explicitly not adopted; exploratory why-analysis of a result already recorded in 6747.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6750,
+  "branch": "physics-loop/toe-lphys-block-fail8-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6976",
+ "title": "feat(c2d3meet): cost-2 max\u22653 out-face two-seed meet |M|=1 vars 0",
+ "science": "Two-seed meet under c2d3: meeting site (1,0,0), t=3, |M|=1, var 0 -- identical to #6966 and #6984; only the equal-arrival count |E| moves (369 vs 353 vs 385). Same vacuous statistic (variance of a singleton). Carried by #6966.",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=absent (|M|=1, var=0, identical to #6966",
+ "source": {
+  "pr": 6976,
+  "branch": "physics-loop/toe-lphys-block-c2d3meet-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

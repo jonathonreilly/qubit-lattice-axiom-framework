@@ -1,0 +1,19 @@
+{
+ "id": "pr-6816",
+ "title": "feat(ridk7): ridge-slide same-k holds at k=7: t=19 vs t=25",
+ "science": "Introduces the band's winning rule: ridge-slide rho3 = mu + cost 3 on a 3->3 hop whose destination has EXACTLY TWO unit coordinates. At k=7 on B_21: t=19 vs 25, 1083>625. The two witness walks are the load-bearing content -- the axis route stays at support 2 on a height-2 corridor (3+1+3+6+3+3=19, giving intercept +12) while the body route climbs inside a face plane and enters the body only at the",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=7, 1083 > 625) face=n/a",
+ "source": {
+  "pr": 6816,
+  "branch": "physics-loop/toe-lphys-block-ridk7-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6091",
+ "title": "[physics-loop] toe-axiom-closure block20 \u2014 bounded_theorem \u2014 bounded-support \u2014 local Regge curvature-square branch repair",
+ "science": "Block 20: flat local Regge-plus-deficit-square Hessian with exact extra-branch coefficient 768+384sqrt2, an action-native repair of the fifth branch and body-edge source, repaired kernel/inertia proved for all 0<alpha<=1/128, and proof the bounded Euclidean linear tests do not select alpha=1/1024 uniquely.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6091,
+  "branch": "physics-loop/toe-axiom-closure-block20-regge-r2-lift-20260810"
+ },
+ "carried_by": "#6092 finds the alpha saddle-node and the two-witness alpha exclusion on this family; #6093 retires the residual obstruction via the momentum-dependent quotient; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

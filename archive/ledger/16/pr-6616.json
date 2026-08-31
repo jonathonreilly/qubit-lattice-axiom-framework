@@ -1,0 +1,19 @@
+{
+ "id": "pr-6616",
+ "title": "feat(q4f11): among Q4-false, cov11>0 iff vertex3",
+ "science": "EXACT IFF plus an exact CONSTANT: among the 8 Q4-false maps, cov11>0 iff vertex3, and every vertex3=1 member has cov11 = 8 exactly while every vertex3=0 member has cov11 = 0 (runner check 'thm1-positive-coverages'). Set against #6582's cov11 = 4 + 8*vertex3 on Q_* (wt1=1, adj2=1), this slice gives cov11 = 8*vertex3 when adj2=0, and the two slices plus #6602's zero set, #6613's cov11(f_L1)=12 and l",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (slice selector test; equiv=1, N_pos=4,",
+ "source": {
+  "pr": 6616,
+  "branch": "physics-loop/toe-lphys-block-q4f11-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

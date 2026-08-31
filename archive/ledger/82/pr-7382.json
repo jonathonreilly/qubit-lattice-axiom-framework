@@ -1,0 +1,19 @@
+{
+ "id": "pr-7382",
+ "title": "feat(nm2oready): neighbor-read of O at t+1 on two-axis opposite y-probes: reverse fails, face fails",
+ "science": "Two-axis opposite seed, y-probes, neighbor-read of O: fail at all four probes. Also introduces 'R-style recovery' (recover e at q from -e in O(q+e)) as a further contrast readout, which recovers a different set at every probe.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7382,
+  "branch": "physics-loop/toe-lphys-block-nm2oready-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

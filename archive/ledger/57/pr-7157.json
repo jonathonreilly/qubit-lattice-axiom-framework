@@ -1,0 +1,19 @@
+{
+ "id": "pr-7157",
+ "title": "feat(nsnnxin): nnseed x-probe own-lock-in exist-opposite: reverse fails, face HOLD",
+ "science": "Own-lock-in on nnseed x-probes: L(A)=-e2 is the only negative letter in the whole configuration and it produces face hold via -e2/+e2 at C/D, while reverse still fails. The runner gate 'own-lock-in-does-not-recover-later-tick-reverse' records that the same cell fails reverse at the later tick too.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7157,
+  "branch": "physics-loop/toe-lphys-block-nsnnxin-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

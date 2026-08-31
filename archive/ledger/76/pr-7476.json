@@ -1,0 +1,19 @@
+{
+ "id": "pr-7476",
+ "title": "feat(nm2oricycl3y): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis opposite y-probes: reverse HOLD, face fails",
+ "science": "Same construction on the y-probes of the near 3-axis-opposite seed, lex-largest: Orient +1,+1,+1,fail (split fails at D from Axis(M)\u2229Axis(O)={e_1}). Numerically identical to #7484/#7488/#7495 \u2014 all four y-probes have 0 or 2 mixed cyclic slots, so the tie-break is inert here.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7476,
+  "branch": "physics-loop/toe-lphys-block-nm2oricycl3y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

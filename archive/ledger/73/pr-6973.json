@@ -1,0 +1,19 @@
+{
+ "id": "pr-6973",
+ "title": "feat(c2d3var): cost-2 max\u22653 out-face is rounder than omega and kappa on B12",
+ "science": "Arrival-speed variance comparison for the non-adopted c2d3 candidate versus omega/kappa, exploratory displayed-not-adopted numerics.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6973,
+  "branch": "physics-loop/toe-lphys-block-c2d3var-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

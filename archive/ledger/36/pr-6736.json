@@ -1,0 +1,19 @@
+{
+ "id": "pr-6736",
+ "title": "feat(nu12): B12 still reverses (4,0,0) vs (2,2,2); doubled pair does not",
+ "science": "Important scale-dependence negative: on B_12(0) nu still reverses the original diamond (1200>1024) but FAILS the doubled-scale pair, t(8,0,0)=14 vs t(4,4,4)=14 giving 2352 < 3136. So the nu anisotropy correction is not scale-invariant -- it is a short-distance effect that dies at twice the scale. Also repeats the host-boundary anomaly (t(8,0,0)=14 on B_12 vs 16 on B_8) with explicit witnessing pat",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at (4,0,0)/(2,2,2); reverse=NO at doubled (8,0,0",
+ "source": {
+  "pr": 6736,
+  "branch": "physics-loop/toe-lphys-block-nu12-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7132",
+ "title": "feat(nsyopp): y-symmetric three-site unique vector: reverse fails, face UNDEFINED",
+ "science": "Introduces the y-symmetric three-site seed {0,(0,1,0),(0,-1,0)} with locks +e_1,-e_1,-e_1. Reduced 18-check regime and the same tick-0 same-tick exception at seed probe A. Its one real cross-check shows B has one recorded neighbour here versus two under the (1,0,0) three-site seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=UNDEFINED",
+ "source": {
+  "pr": 7132,
+  "branch": "physics-loop/toe-lphys-block-nsyopp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

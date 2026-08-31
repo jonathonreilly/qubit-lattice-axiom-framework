@@ -1,0 +1,19 @@
+{
+ "id": "pr-7086",
+ "title": "feat(nscosum): y-probe same-tick neighbor-lock sum: reverse fail, face fail",
+ "science": "Same-tick-inclusive lock SUM on the y-probes: L(A_y)=(1,0,0), L(B)=(2,0,1), L(C_y)=(0,5,0), L(D_y)=(0,1,0) -> reverse FAIL (sum (3,0,1)), face FAIL. Against #7084 (strictly-earlier, same rule, same probes) reverse moves from UNDEFINED to fail on the simultaneity convention alone; the runner records the strictly-earlier values side by side (`strict_reverse=UNDEFINED strict_B=(1,0,1)`).",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7086,
+  "branch": "physics-loop/toe-lphys-block-nscosum-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

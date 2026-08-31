@@ -1,0 +1,19 @@
+{
+ "id": "pr-6439",
+ "title": "feat(l1misswhy): L1 misses the long-axis 2-site seeds by refusing opp2",
+ "science": "Displayed-not-adopted mechanism note for why f_L1 misses the long-axis seeds, display-only followup in the exploratory campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6439,
+  "branch": "physics-loop/toe-lphys-block-l1misswhy-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

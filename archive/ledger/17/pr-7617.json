@@ -1,0 +1,19 @@
+{
+ "id": "pr-7617",
+ "title": "feat(nm2sfzrdn2): distance-2 read of cyclic lex-smallest frame holonomy at t+1 on two-axis opposite seed: reverse HOLD, face fails",
+ "science": "2A, xy z=1/z=2, lex-smallest, distance-2 read. The only distance-2 member whose reverse HOLDs \u2014 the \u00b12e_1 translates of the z=1 square are formed and hold, so the wider read survives here while it kills the yz cell in 7597.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7617,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzrdn2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

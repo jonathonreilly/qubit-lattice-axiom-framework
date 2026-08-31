@@ -1,0 +1,19 @@
+{
+ "id": "pr-6952",
+ "title": "feat(c2dfk1): cost-2 deep-out-face same-k holds at k=1: t=3 vs t=5",
+ "science": "k=1 companion of c2df on B_6(0): (3,5), 27>25. Same fixed-point triviality as the other k=1 members.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=1 (band bit; identical to every other k=1 m",
+ "source": {
+  "pr": 6952,
+  "branch": "physics-loop/toe-lphys-block-c2dfk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

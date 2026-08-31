@@ -1,0 +1,19 @@
+{
+ "id": "pr-7658",
+ "title": "feat(nm2frm3s3): directed 3-step cyclic-frame transport along -e3 at t+1 on three-axis opposite near-face seed: reverse fails, face fails",
+ "science": "Near-face 3-step -e3. Probe-inert seed variant of #7657; same computation, same guaranteed-null outcome.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7658,
+  "branch": "physics-loop/toe-lphys-block-nm2frm3s3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

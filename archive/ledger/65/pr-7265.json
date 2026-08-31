@@ -1,0 +1,19 @@
+{
+ "id": "pr-7265",
+ "title": "feat(nmsimzp): simultaneous M and O at t+1 on #7186: reverse HOLD, face HOLD",
+ "science": "Simultaneous M and O at t+1 on the #7186 z-probes; M and O reverse/face all hold while M\u2229O is empty at every probe. The empty intersection is a probe-site artifact: I find Axis(M)\u2229Axis(O) nonempty at 13.5%-23% of host sites in every band cell.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold (M and O separately); M\u2229O empty",
+ "source": {
+  "pr": 7265,
+  "branch": "physics-loop/toe-lphys-block-nmsimzp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

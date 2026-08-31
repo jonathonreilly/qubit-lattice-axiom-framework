@@ -1,0 +1,19 @@
+{
+ "id": "pr-7743",
+ "title": "[physics-loop] Block 206 port-free neighbor-phase M2 context boundary",
+ "science": "Port-free phase law: after coarse-port summation the linear response vanishes exactly and the first surviving coefficient is cubic a_3=iC with C>0, with normalized neighbor contrasts kappa(sqrt3,-sqrt3,2,-2,0,0); plus the sharply localized context boundary - the proper-cubic Hom to T2 shear is zero without the conditionally assigned Pauli-adjoint Bloch action, no axiom-selected decoder.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7743,
+  "branch": "physics-loop/toe-axiom-closure-block206-neighbor-phase-m2-context-descent-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

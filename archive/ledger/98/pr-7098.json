@@ -1,0 +1,19 @@
+{
+ "id": "pr-7098",
+ "title": "feat(nsopown): opposite-lock own incoming: reverse UNDEFINED, face UNDEFINED",
+ "science": "Own-incoming readout on opposite-lock x-probes; both A and D carry three earliest incoming steps so both letters are UNDEFINED. Contributes a matched contrast: the neighbour-lock readout on the same seed gave L(A)=+e_1, L(B)=+e_3 and reverse=fail, whereas own-incoming gives UNDEFINED.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7098,
+  "branch": "physics-loop/toe-lphys-block-nsopown-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

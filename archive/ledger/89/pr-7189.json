@@ -1,0 +1,19 @@
+{
+ "id": "pr-7189",
+ "title": "feat(nszparxinc): z-axis opposite-lock x-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "z-axis opposite-lock {0:+e1},{e3:-e1}, x-probes. Introduces the band's one genuinely new field, reverse_hold_channel in {uses_L_A, hold_without_defined_L_A, only_neighbor_neighbor, does_not_hold}, which classifies the MECHANISM of a HOLD rather than just its bit; here hold_without_defined_L_A. EXACT DUPLICATE of #7190: I recomputed both and every tick and every S^+ set is identical.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7189,
+  "branch": "physics-loop/toe-lphys-block-nszparxinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

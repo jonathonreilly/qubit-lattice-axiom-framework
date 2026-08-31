@@ -1,0 +1,19 @@
+{
+ "id": "pr-6850",
+ "title": "physics: derive the connection residual and close item one",
+ "science": "The connection-residual theorem: no common differential exists on the certified curved carrier (chart-matching inconsistent even allowing d^2 != 0) and the exact residual Omega = 2i s_t T_t^-1 P_even P_x (rank 16, structurally forced, pure two-chart overlap, not a coboundary, frame-enlargement-proof) discharges block 105 section-12 item 1.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6850,
+  "branch": "physics-loop/toe-axiom-closure-block134-connection-residual-theorem-20260817"
+ },
+ "carried_by": "#6851 (block 135 strengthens the inconsistency to all 64+256 systems and proves the class invariant), #6853 (block 137 corrects Omegas interpretation to the selector projection), #6860 (block 144 rest",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

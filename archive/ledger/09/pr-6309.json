@@ -1,0 +1,19 @@
+{
+ "id": "pr-6309",
+ "title": "feat(bornmenu): first-wave formation PVM traces are 2/3 and 1/3",
+ "science": "Bounded_theorem note, no probe cell, but the thinnest of the batch: it connects the spectral measure to the two-cube step by showing the three first-wave formers (1,0,0),(0,1,0),(0,0,1) from seed (0,0,0) each have exactly one unbalanced axis, so k=1 and the PVM traces are (3 pm 1)/6 = 2/3 and 1/3. This is an INSTANCE of the general law already proved in #6284/#6296 rather than new law; its value i",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "source": {
+  "pr": 6309,
+  "branch": "physics-loop/toe-lphys-block-bornmenu-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

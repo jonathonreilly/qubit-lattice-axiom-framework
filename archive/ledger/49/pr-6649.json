@@ -1,0 +1,19 @@
+{
+ "id": "pr-6649",
+ "title": "feat(pos2n): second positive site also has equal n; local-in-n cannot fire",
+ "science": "Closes the #6644 opening at the SECOND positive site, not a probe cell: at v=(1,1,-1) (mask (1,1,0,1,1,0), fragment (*,*,0,+,-,0)) the two ambiguous neighbours (2,1,-1) and (0,1,-1) again share occupancy tuple (0,0,0,1,1,0) and kernel n=(0,-1/3,1/3); N_fire=2 with firing tuples (+,-,0,+,-,0) and (-,+,0,+,-,0), both opposite on +-x, so N_same_label_fire=0 and separate_n_can_fire=False. Local-in-n t",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6649,
+  "branch": "physics-loop/toe-lphys-block-pos2n-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7354",
+ "title": "[physics-loop][d4-common-action][bounded_theorem][bounded-support] derive Ward/TT survivor and mark boundary",
+ "science": "Executes the capped full-band Schur regression (unique normalized left/right Schur graphs, positive reflection-even ports, rank-8 intertwiner failure) and constructs the d=4 first-order Dirac-Kahler common action Q=mI+i(d+d^T) with ten explicit metric vertices satisfying the total first-order Ward identity identically, two positive TT directions, and mark contexts that see only the mass-Hodge term",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7354,
+  "branch": "physics-loop/toe-axiom-closure-block190-d4-common-action-vertical-slice-20260824"
+ },
+ "carried_by": "#7356 (attempts the join and localizes its failure to the temporal carrier); #7632 (builds the L24 carrier the lane then standardizes on); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

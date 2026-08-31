@@ -1,0 +1,19 @@
+{
+ "id": "pr-5984",
+ "title": "[physics-loop][review-loop] toe-time blockM4 (STACKED on #5982) \u2014 Cycle 917: bounded theorem \u2014 the chain certifies: branching was never nece",
+ "science": "Falsifies the recovered branching-required no-go geometric mechanism (the 9-site chain certifies at the low field; the no-go stands only in its own comparator) and measures what geometry buys: R_ind ceiling and a graded field ceiling bracketed (4,6]. The bracket is located by 919 then re-scoped by 926, which also certifies these laws gate-robust, corrects the ceiling variable to fragment count, an",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5984,
+  "branch": "physics-loop/toe-time-blockM4-20260802"
+ },
+ "carried_by": "PR #5993 (gate-robustness split verdict, corrected ceiling, dated edits), threshold chain PR #5986->#6001",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

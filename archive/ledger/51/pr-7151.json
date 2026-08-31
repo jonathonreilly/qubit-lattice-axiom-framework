@@ -1,0 +1,19 @@
+{
+ "id": "pr-7151",
+ "title": "feat(nsopplaq): nsopp plaquette holonomy: reverse UNDEFINED, face fails",
+ "science": "Different readout entirely: plaquette holonomy H = sum of own-incoming locks around the unit face square Q={0,e1,e1+e2,e2} and the 4-cycle R through A and B. Result: H is UNDEFINED because the perp-step rule gives (1,0,0) and (1,1,0) three earliest incoming steps each, so no single lock letter exists at two of the four corners. This is a real no-go against reading the lock field as a Z^3-valued la",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=fails",
+ "source": {
+  "pr": 7151,
+  "branch": "physics-loop/toe-lphys-block-nsopplaq-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

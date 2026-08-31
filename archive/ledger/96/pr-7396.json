@@ -1,0 +1,19 @@
+{
+ "id": "pr-7396",
+ "title": "feat(nm2splt2y): 1-in 2-out at t vs t+1 on two-axis opposite y-probes: reverse fail then HOLD, face fails, composition fail",
+ "science": "Split t vs t+1 on opposite y-probes: fail everywhere at t, HOLD at A,B,C and fail at D at t+1 (D is 1-in-1-out, union misses e_2). Composition fail. Notes that frozen-M composition HOLDs on the same cut while split composition fails - the one clean separation between M-freeze and split-freeze.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail-then-HOLD face=fail-then-fail (composition fail",
+ "source": {
+  "pr": 7396,
+  "branch": "physics-loop/toe-lphys-block-nm2splt2y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

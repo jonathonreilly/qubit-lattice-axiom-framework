@@ -1,0 +1,19 @@
+{
+ "id": "pr-7492",
+ "title": "feat(nm2cycfrmfz): HOLDING cyclic-frame transport of (m,o_next,o_prev) at t+1 on three-axis far-face opposite z-probes: reverse HOLD, face H",
+ "science": "Frame transport on the far-face 3-axis seed via a second implementation (adjugate inverse, matrix_mul) instead of the transpose. Same tautology as #7490: transport_match cannot fail when both frames are defined. Cell identical to #7490.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7492,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

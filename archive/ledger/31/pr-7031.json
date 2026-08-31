@@ -1,0 +1,19 @@
+{
+ "id": "pr-7031",
+ "title": "[physics-loop] typed instrument-to-Record conditional completion \u2014 bounded_theorem \u2014 bounded-support",
+ "science": "Repairs the two defects Block 5 left (code/rail mismatch C_B != R_B and the eager occupancy gate) with typed projections S(C)=(C+C^dagger)/2 and the apparatus-relative compiler d_M; builds a supplied total Borel NN formation/content law with three disjoint proper-cubic shell-orbit guards; in the trace-matched specialization the permanent Record-history weights equal the supplied flat ternary Kraus",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7031,
+  "branch": "physics-loop/toe-instrument-record-state-lift-block6-20260820"
+ },
+ "carried_by": "#7036 (block 7) supplies the explicit fresh-ancilla channel realization of exactly this cq/Record ensemble identity (its Result Up Front states Block 6 previously supplied identity now has an explicit",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

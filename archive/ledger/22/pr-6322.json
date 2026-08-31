@@ -1,0 +1,19 @@
+{
+ "id": "pr-6322",
+ "title": "feat(srcuniq): unique cube-symmetric additive source is sum o",
+ "science": "Shows cube-symmetric additive sources are 1-dimensional (rho = sum o); minor uniqueness lemma in the exploratory pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6322,
+  "branch": "physics-loop/toe-lphys-block-srcuniq-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

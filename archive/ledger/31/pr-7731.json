@@ -1,0 +1,19 @@
+{
+ "id": "pr-7731",
+ "title": "physics: prove the volume-response mechanism numbers and the exact support cutoff (block 192)",
+ "science": "Block 192 carries the exact volume-response method theorem, ten adversarially confirmed rationals, and the exact support cutoff, and open KEEP PR 7734 (block 193) explicitly stacks on it as its parent.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7731,
+  "branch": "physics-loop/toe-axiom-closure-block192-hybridization-mechanism-20260825"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

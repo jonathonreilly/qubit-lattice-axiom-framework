@@ -1,0 +1,19 @@
+{
+ "id": "pr-7708",
+ "title": "feat(nm2frm2lxrd3s): distance-3 neighbor-read of L-path -e3 then -e1 at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Distance-3 readout of the same-lock L-path (-e3,-e1): the two reverse probes disagree (origin HOLDs with two witnesses, (0,1,0) has none), so the same-lock ladder is non-monotone in d - it fails at d=2, and still fails at d=3 but for the opposite probe.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7708,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lxrd3s-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

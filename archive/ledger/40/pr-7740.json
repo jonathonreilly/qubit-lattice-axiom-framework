@@ -1,0 +1,19 @@
+{
+ "id": "pr-7740",
+ "title": "physics: prove the spatial embedding theorem and the momentum positivity boundary (block 198)",
+ "science": "Block 198 proves the spatial embedding operator theorem (QQ-similarity with exhibited rational intertwiner) plus an SOS-certified third momentum-positivity boundary type, exact and adversarially checked, and open PR 7742 stacks on its branch.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7740,
+  "branch": "physics-loop/toe-axiom-closure-block198-spatial-embedding-momentum-boundary-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

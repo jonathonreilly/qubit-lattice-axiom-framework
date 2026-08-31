@@ -1,0 +1,19 @@
+{
+ "id": "pr-7648",
+ "title": "feat(nm2frm2s3f): directed 2-step cyclic-frame transport along -e3 at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "Far-face -e3 2-step. The adjacent (0,0,-1)/(0,1,-1) seeds occupy the first hop's destination, so the reverse chain dies immediately; face survives one hop at D only. Convention-stable.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7648,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2s3f-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

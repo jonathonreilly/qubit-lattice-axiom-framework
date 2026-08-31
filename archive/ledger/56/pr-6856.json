@@ -1,0 +1,19 @@
+{
+ "id": "pr-6856",
+ "title": "physics: exhibit the similarity and collapse the count family-wide (block 140)",
+ "science": "The similarity theorem: U = T_AP^4 conjugates the two real-character blocks symbolically in the shear for every even N>=4 (c^2 != 1), so rho_0 = rho_{N/2} holds family-wide and block 138's count collapses to Sym_2(R)^{N/2} -- the family theorem that closed the scaling program (contract 2). Later blocks consume the resulting certified m-block algebra without re-proving the similarity.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6856,
+  "branch": "physics-loop/toe-axiom-closure-block140-isospectral-similarity-20260819"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

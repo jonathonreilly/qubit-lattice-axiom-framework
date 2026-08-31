@@ -1,0 +1,19 @@
+{
+ "id": "pr-7126",
+ "title": "feat(nstriyn): three-site y-probe formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Three-site y-probes, strictly-earlier kernel, mu*=e_2. n(D)=(0,0,0) from full six-neighbour saturation and n(A)=(0,0,0) from the tick-0 seed having no strictly-earlier neighbour, so both ends of the band are extinguished at once.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7126,
+  "branch": "physics-loop/toe-lphys-block-nstriyn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

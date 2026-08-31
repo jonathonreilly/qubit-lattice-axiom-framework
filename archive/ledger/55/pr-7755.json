@@ -1,0 +1,19 @@
+{
+ "id": "pr-7755",
+ "title": "[physics-loop] Block 213 full-shell mergeability and permanent-status front",
+ "science": "Record-lane Block 213 widens the previous block catalog to the 26-word shift with conditional cap-formation results, explicitly leaving the formation obligations open, a non-terminal lane member superseded by later blocks.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7755,
+  "branch": "physics-loop/toe-axiom-closure-block213-mergeable-full-shell-sft-20260827"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

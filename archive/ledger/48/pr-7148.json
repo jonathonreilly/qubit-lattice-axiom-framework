@@ -1,0 +1,19 @@
+{
+ "id": "pr-7148",
+ "title": "feat(nsopytmin): nsopp y-probe later-tick exist-opposite: reverse HOLD, face HOLD first at T=2",
+ "science": "The only member that scans T rather than reporting one cell: reverse_T/face_T at T=0,1,2,3 on nsopp y-probes give (UNDEFINED,fail), (hold,fail), (hold,hold), (hold,hold), with smallest holding T*=2. This exhibits the band's governing law directly - S_T(q) grows with T so the verdicts can only climb UNDEFINED -> fail -> hold - and it is the only place an onset tick is measured. It also proves the T",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (first at T=2)",
+ "source": {
+  "pr": 7148,
+  "branch": "physics-loop/toe-lphys-block-nsopytmin-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

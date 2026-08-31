@@ -1,0 +1,19 @@
+{
+ "id": "pr-7676",
+ "title": "feat(nm2frm2szt): directed 2-step cyclic-frame transport along -e3 freeze t+1 vs t+2 on two-axis opposite seed: reverse fails, face HOLD, co",
+ "science": "Freeze of the bare directed 2-step along -e3 at own t+1 vs t+2; all eight bits identical, composition HOLDs. Confirms the 2-step pair is the exact inverse of the L-path pair on the same seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD (both cuts; composition HOLD)",
+ "source": {
+  "pr": 7676,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2szt-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

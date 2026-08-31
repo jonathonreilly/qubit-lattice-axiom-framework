@@ -1,0 +1,19 @@
+{
+ "id": "pr-6584",
+ "title": "physics: certify the positive dressed reflection",
+ "science": "Block 114 capstone certifying an exact positive dressed reflection on the seam carrier via three independent exact routes with hostile-mutation checker and cross-model verification, a decisive terminal artifact on the OS-closure chain. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6584,
+  "branch": "physics-loop/toe-axiom-closure-block114-positive-dressed-reflection-20260815"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

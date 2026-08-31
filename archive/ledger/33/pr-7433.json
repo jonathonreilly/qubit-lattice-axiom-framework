@@ -1,0 +1,19 @@
+{
+ "id": "pr-7433",
+ "title": "feat(nm2sreadt2z): neighbor-read of 1-in 2-out split freeze t+1 vs t+2 on two-axis opposite z-probes: reverse HOLD, face HOLD, composition H",
+ "science": "opposite seed, z-probes: the ONLY cell in the band where the unsigned neighbour-read HOLDs at all four probes, giving reverse=hold face=hold. This is the positive contrast partner to #7461/#7462, which show the SIGNED handedness at these same four probes has no neighbour support at all - localising the failure to the sign, not to the axis structure.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7433,
+  "branch": "physics-loop/toe-lphys-block-nm2sreadt2z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

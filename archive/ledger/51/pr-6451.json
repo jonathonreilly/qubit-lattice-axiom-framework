@@ -1,0 +1,19 @@
+{
+ "id": "pr-6451",
+ "title": "feat(v3face): fill-from-(1,0,0) is not equivalent to vertex3=1",
+ "science": "A genuine correction of the naive reading of #6444/#6446, and a real class-level negative. Scoring all 32 F_cut maps on fill-from-(1,0,0): N_fill=4, N_v3=16, N_both=4, so 'fills from the shared-face seed' is NOT equivalent to vertex3=1. The implication runs one way only - fill implies vertex3=1, but 12 of the 16 vertex3=1 maps do not fill - with lex-first counterexample (0,0,0,1,0), which fires ve",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6451,
+  "branch": "physics-loop/toe-lphys-block-v3face-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

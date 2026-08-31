@@ -1,0 +1,19 @@
+{
+ "id": "pr-6102",
+ "title": "science(gravity): route Record sources by compact null charge",
+ "science": "Block 30: replaces the free compact phase tag with a Record-derived null-charge response classifier (one positive homothety channel plus ten residual channels), proves neutral closed histories and pure-scale sources solve on their branches, builds a rank-26 KKT reaction compiler, and gives the first positive rational Record kernel with exact causal-prefix marginals \u2014 the earliest Record-history wi",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6102,
+  "branch": "physics-loop/toe-axiom-closure-block30-record-phase-selector-20260810"
+ },
+ "carried_by": "#6103 types and repairs the ten exposed channels and compiles the full Record family; the causal-prefix witness matures into the block 52-53 causal-update constructions; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

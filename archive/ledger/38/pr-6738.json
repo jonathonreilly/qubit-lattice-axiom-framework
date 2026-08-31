@@ -1,0 +1,19 @@
+{
+ "id": "pr-6738",
+ "title": "feat(011clk): (0,1,1) label and cost-1 filter both fire 12/12",
+ "science": "Mechanical repeat of #6726 with the cheaper reverser (0,1,1) (nu minus the seed-exit clause) in place of nu: N_label_fire=12, N_filt_fire=12, same derived reason (center support 3, neighbors support 2 or 3, so no clause fires inward). Logically subsumed by #6726 -- (0,1,1)'s expensive set is a subset of nu's, so if no nu clause fires inward none of (0,1,1)'s can. Low marginal content.",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=absent (reports N_label_fire=12, N_filt_",
+ "source": {
+  "pr": 6738,
+  "branch": "physics-loop/toe-lphys-block-011clk-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

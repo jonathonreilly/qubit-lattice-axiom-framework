@@ -1,0 +1,19 @@
+{
+ "id": "pr-7697",
+ "title": "feat(nm2frm2lprd3): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then +e1 at t+1 on two-axis opposite seed: reverse HOLD, f",
+ "science": "Distance-3 readout with the +e1 turn; the tau-bounded twin of #7696.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7697,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lprd3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

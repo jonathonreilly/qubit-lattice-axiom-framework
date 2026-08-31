@@ -1,0 +1,19 @@
+{
+ "id": "pr-7787",
+ "title": "[physics-loop] Source eta 02: affine H1 decoder and readable writer boundary",
+ "science": "Complete affine bit-flip classification over the fixed six-neighbor cubic permutation action: dim Z^1=6, dim B^1=5, dim H^1=1, so exactly two action classes. The nontrivial class carries one regular 24-orbit and admits exact no-runtime-lookup Boolean decoders for the H1 contrast (ANF degree 4) and the H1 T2 shear (degree 5) \u2014 this constructively FALSIFIES the earlier broad claim that six scalar Re",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7787,
+  "branch": "physics-loop/toe-source-eta-ownership-block02-action-native-record-dilation-20260828"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 143 behind); NOT restated \u2014 #7813 constructs supplied-q returned-tip pair instruments and cites only the Block23/24/26 notes; the H^1=1 cl",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

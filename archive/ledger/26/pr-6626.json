@@ -1,0 +1,19 @@
+{
+ "id": "pr-6626",
+ "title": "feat(c5q8): cov5>0 is not Q8; positivity implies Q8",
+ "science": "Bounded_theorem note, not a probe cell. All 32 F_cut maps scored on the 792 five-site seeds: cov5>0 is NOT equivalent to Q8 (lex-first miss (0,0,0,1,0), nine mismatches, eleven cov5=0 maps) but positivity implies Q8; census N_pos=21, N_Q8=30, N_both=21, cov5(f_L1)=792.",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6626,
+  "branch": "physics-loop/toe-lphys-block-c5q8-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7238",
+ "title": "feat(nmoutzx): own outgoing set on #7213: reverse HOLD, face HOLD",
+ "science": "153-table cell: x-symmetric three-site band, x-probe, instrument = own outgoing set O, tick ?; reverse HOLD, face HOLD; cell reached via #7213; uncited by later notes.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7238,
+  "branch": "physics-loop/toe-lphys-block-nmoutzx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7516",
+ "title": "feat(nm2sfzfrm): HOLDING cyclic lex-smallest frame transport of 1-in 2-out at t+1 on three-axis far-face opposite z-probes: reverse HOLD, fa",
+ "science": "Lex-smallest frame transport on the far-face 3-axis z-probes; third transport implementation. Same vacuity; scalar contrast not printed here.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7516,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzfrm-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

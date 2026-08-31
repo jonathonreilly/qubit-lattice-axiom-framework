@@ -1,0 +1,19 @@
+{
+ "id": "pr-7207",
+ "title": "feat(nst2cmp): two-tick own-set composition on #7188: reverse fails, face fails, composition HOLD",
+ "science": "DEFECT: M two-tick composition on #7188's x-probes reports composition=HOLD, but M(tau0)==M(tau1) at every probe because M is by definition the set of EARLIEST incoming steps and is frozen at formation. I verified M(t)==M(t+1) at 26,064 site-instances across the whole seed space: zero exceptions. The composition bit is a tautology for any M readout, so this PR (and #7232, #7248) reports a definiti",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails (composition HOLD)",
+ "source": {
+  "pr": 7207,
+  "branch": "physics-loop/toe-lphys-block-nst2cmp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

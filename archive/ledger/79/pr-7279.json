@@ -1,0 +1,19 @@
+{
+ "id": "pr-7279",
+ "title": "feat(nmcovers): axis-cover of M and O at t+1 on #7211: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the #7211 y-probes. Its Axis(M)/Axis(O) table is character-for-character the same as #7278's, because the two seeds share a probe signature class. Defines axis_cover so that empty M with 3-axis O counts as HOLD -- inconsistent with #7278/#7280/#7281, which make empty fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7279,
+  "branch": "physics-loop/toe-lphys-block-nmcovers-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

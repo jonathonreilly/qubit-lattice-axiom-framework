@@ -1,0 +1,19 @@
+{
+ "id": "pr-6620",
+ "title": "feat(q4f9): among Q4-false, cov9>0 is not vertex3",
+ "science": "One-way law plus an exact table and an ANOMALY: on the 8 Q4-false maps vertex3=1 implies cov9>0 (the converse fails), with exact coverages (0,0,0,1,0)=48, (0,1,0,1,0)=48, (0,0,0,1,1)=80, (0,1,0,1,1)=84, and the three vertex3=0, non-opp2-mixed3 maps at 0. The single exception (0,1,0,0,1) has cov9=4 - it is the map with opp2=1 AND mixed3=1 and nothing else, the same opp2-AND-mixed3 signature that su",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (slice selector test; equiv=0, N_pos=5,",
+ "source": {
+  "pr": 6620,
+  "branch": "physics-loop/toe-lphys-block-q4f9-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

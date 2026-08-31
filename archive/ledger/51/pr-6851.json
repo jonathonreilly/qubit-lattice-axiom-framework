@@ -1,0 +1,19 @@
+{
+ "id": "pr-6851",
+ "title": "physics: prove the residual invariance and unify the arc",
+ "science": "The residual-invariance theorem, campaign-1 terminal: the connection-residual class is invariant physics of the admissible atlas class -- all 64 shifted-overlap and 256 full-atlas matching systems exhaustively inconsistent, the residual orbit on the unit-augmentation line against the augmentation-zero coboundary space, the obstruction a property of the time shear alone (removed by zero time shear)",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6851,
+  "branch": "physics-loop/toe-axiom-closure-block135-residual-invariance-theorem-20260817"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

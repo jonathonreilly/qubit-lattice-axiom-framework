@@ -1,0 +1,19 @@
+{
+ "id": "pr-6827",
+ "title": "feat(ridk11): ridge-slide same-k holds at k=11: t=23 vs t=37",
+ "science": "rho3 at k=11 on B_33: t=23 vs 37, 1587>1369. Ladder point completing the contiguous k=2..13 rho3 window.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=11, 1587 > 1369) face=n/a",
+ "source": {
+  "pr": 6827,
+  "branch": "physics-loop/toe-lphys-block-ridk11-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

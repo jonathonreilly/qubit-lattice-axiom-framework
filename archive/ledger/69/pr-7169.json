@@ -1,0 +1,19 @@
+{
+ "id": "pr-7169",
+ "title": "feat(nsuozinc): nsopp z-probe same-tick union own-lock: reverse fails, face HOLD",
+ "science": "Same-tick union own lock on nsopp z-probes; union is a no-op. Face flips fail -> hold purely from the same-tick mixed neighbour (0,1,2) entering S(C), while reverse still fails on {+e1,+e3} vs {+e1,+e3}. Supplies the same-tick z-probe cell.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7169,
+  "branch": "physics-loop/toe-lphys-block-nsuozinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

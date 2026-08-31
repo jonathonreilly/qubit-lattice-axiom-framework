@@ -1,0 +1,19 @@
+{
+ "id": "pr-7714",
+ "title": "feat(nm2frm2lx3rd3): distance-3 neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1 on three-axis opposite near-face seed: re",
+ "science": "D=3 twin of #7713, same seed and path. Recomputed exact; wrapper again inert at all four probes. Its own note admits this in one line -- 'On the four seed probes the distance-3 bits coincide with the L-path bits' -- the band's only explicit statement that the neighbour-read apparatus adds nothing to the claim. Shares #7713's uncut witness rule.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7714,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lx3rd3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

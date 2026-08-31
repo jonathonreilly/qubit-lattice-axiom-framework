@@ -1,0 +1,19 @@
+{
+ "id": "pr-7703",
+ "title": "feat(nm2frm2plx): L-path cyclic-frame transport +e1 then -e3 at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "Order swap: L-path (+e1 then -e3), the reverse leg order of #7667, same endpoint q+e1-e3. The verdict flips from reverse HOLD to reverse fails, and the holder set becomes disjoint from #7667's - the band's cleanest order-dependence datum.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7703,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2plx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

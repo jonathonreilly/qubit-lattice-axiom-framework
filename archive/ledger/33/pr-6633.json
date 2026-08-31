@@ -1,0 +1,19 @@
+{
+ "id": "pr-6633",
+ "title": "physics: complete the half-space pairing with the reflection intertwiner",
+ "science": "Block 119 constructs the reflection intertwiner completion yielding the campaign first positive and contractive finite OS package (exact inertia, pinned contraction intervals, semigroup law, cross-model checker) \u2014 decisive OS-closure chain result stacked on kept Block 118. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6633,
+  "branch": "physics-loop/toe-axiom-closure-block119-reflection-intertwiner-completion-20260816"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

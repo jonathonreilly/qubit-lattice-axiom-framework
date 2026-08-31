@@ -1,0 +1,19 @@
+{
+ "id": "pr-7431",
+ "title": "feat(nm2sreadx): neighbor-read of 1-in 2-out split at t+1 on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "opposite seed, x-probes, unsigned neighbour-read at t+1. A and D never form a 1-in-2-out split (M={-e_3}, O={+e_1}: cover misses e_2), so both pair-reads fail regardless of the letter. Recomputed exactly.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7431,
+  "branch": "physics-loop/toe-lphys-block-nm2sreadx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

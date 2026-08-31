@@ -1,0 +1,19 @@
+{
+ "id": "pr-6388",
+ "title": "feat(ftwoseed): f_two first wave exists from a 2-site face-diagonal seed",
+ "science": "Bounded_theorem note, no probe cell. COMPLETE SEED CLASSIFICATION for the rival member f_two, an if-and-only-if result: (1) EVERY one-site seed has an empty first wave, on all twelve vertices, since no site has two neighbours equal to a single lock so u<=1; (2) a two-site seed has a nonempty first wave IFF the two sites are opposite corners of an on-patch square (a face diagonal), and there are ex",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "source": {
+  "pr": 6388,
+  "branch": "physics-loop/toe-lphys-block-ftwoseed-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7244",
+ "title": "feat(nmreadopp): neighbor-read of M on #7208: reverse UNDEFINED, face UNDEFINED",
+ "science": "FORCING NEGATIVE on locality of readout. Neighbour-read R of the probe's incoming set on #7208's y-probes: read=fail at all four probes, R is empty at A and C (so both bits are UNDEFINED) and R != M everywhere, e.g. R(B) is a single letter against M(B)={+e1} and R(D) is a single letter against a three-element M(D). Recomputed and confirmed. Paired with #7205 this closes a pincer: the reverse relat",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7244,
+  "branch": "physics-loop/toe-lphys-block-nmreadopp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

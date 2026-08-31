@@ -1,0 +1,19 @@
+{
+ "id": "pr-6893",
+ "title": "feat(c2k13): cost-2 ridge-enter same-k holds at k=13: t=25 vs t=43",
+ "science": "Single-point cost-2 ridge-enter same-k hold display at k=13 (displayed, not adopted); exploratory series member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6893,
+  "branch": "physics-loop/toe-lphys-block-c2k13-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

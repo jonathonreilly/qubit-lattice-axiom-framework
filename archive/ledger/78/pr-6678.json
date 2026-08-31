@@ -1,0 +1,19 @@
+{
+ "id": "pr-6678",
+ "title": "feat(uneqord): pairwise lock-time order shrinks Stab; N_ord_ok=4",
+ "science": "Pairwise lock-time order stabilizer variant matching the tick result, exploratory displayed-not-adopted step in the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6678,
+  "branch": "physics-loop/toe-lphys-block-uneqord-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

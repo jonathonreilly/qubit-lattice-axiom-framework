@@ -1,0 +1,19 @@
+{
+ "id": "pr-7220",
+ "title": "feat(nmxe2): own incoming set on #7195: reverse fails, face fails",
+ "science": "On the four #7195 y-probes of the x-axis opposite +/-e_2 process, the probe's own earliest incoming set M gives reverse fail and face fail, against reverse HOLD and face HOLD for the same cell read through the same-tick six-neighbour star S^+. The runner reproduces the S^+ HOLD/HOLD and records that that HOLD does not use L(A) and does not use a singleton M(A).",
+ "forcing": true,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7220,
+  "branch": "physics-loop/toe-lphys-block-nmxe2-20260815"
+ },
+ "carried_by": "archive/families/toe-lphys-20260812.md \u00a7Follow-on (the 19 citing notes)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

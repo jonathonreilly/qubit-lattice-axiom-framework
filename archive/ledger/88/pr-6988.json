@@ -1,0 +1,19 @@
+{
+ "id": "pr-6988",
+ "title": "feat(i2k7): c2d4-plus-interior same-k holds at k=7: t=21 vs t=31",
+ "science": "Same-k hold at k=7 for the non-adopted i2 variant, an incremental exploratory data point in a series whose route was abandoned.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6988,
+  "branch": "physics-loop/toe-lphys-block-i2k7-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

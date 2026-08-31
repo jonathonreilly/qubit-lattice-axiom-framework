@@ -1,0 +1,19 @@
+{
+ "id": "pr-7196",
+ "title": "feat(nsxe2xinc): x-axis opposite \u00b1e_2 x-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "Same seed as #7195 read on x-probes instead of y-probes, so A=(1,0,0) is a seed (t=0, L=-e_2) and reverse_hold_channel=uses_L_A. Second of the three cells where the own-lock union carries the result; the pair (#7195,#7196) shows the channel is a property of the probe frame, not of the seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7196,
+  "branch": "physics-loop/toe-lphys-block-nsxe2xinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

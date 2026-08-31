@@ -1,0 +1,19 @@
+{
+ "id": "pr-7045",
+ "title": "feat(gseed): seedo Gram signature is (1,2,0), equals gram4",
+ "science": "Four-event Minkowski Gram of the seedo tick list t(O,A,D,B)=(0,1,2,3): G=[[0,1,2],[1,2,4],[2,4,6]], det G = 2, char poly lambda^3-8lambda^2-9lambda-2, signature (1,2,0) confirmed twice by exact rational pivoted LDL and by an exact Sturm chain; the axis displacement is Minkowski-null (G_AA=0). Mutations (Euclidean product -> (3,0,0); zero ticks -> different) show the ticks are load-bearing. The tic",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7045,
+  "branch": "physics-loop/toe-lphys-block-gseed-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

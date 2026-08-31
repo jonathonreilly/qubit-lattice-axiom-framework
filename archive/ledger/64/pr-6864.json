@@ -1,0 +1,19 @@
+{
+ "id": "pr-6864",
+ "title": "physics: prove the general migration theorem and close the annealed program (block 148)",
+ "science": "The general migration theorem: diag Herm([theta H_q]_{++}) = 0 is an identity in the moduli, so every theta-closed ensemble of any size has a Hermitian pairing and positivity forces the ensemble mass Gram to zero; the odd-centred escape is closed stronger (positive implies identically zero, det(M^T M) strictly positive at every real m), and X_0 is cone-blocked (4,0,4) at every ensemble. Complete e",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6864,
+  "branch": "physics-loop/toe-axiom-closure-block148-general-migration-theorem-20260820"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

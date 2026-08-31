@@ -1,0 +1,19 @@
+{
+ "id": "pr-6528",
+ "title": "feat(q1split): first Q_* totality split is {(1,0,0)}",
+ "science": "Displayed-not-adopted Q_* totality first-split enumeration; exploratory campaign block with no adopted conclusion.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6528,
+  "branch": "physics-loop/toe-lphys-block-q1split-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

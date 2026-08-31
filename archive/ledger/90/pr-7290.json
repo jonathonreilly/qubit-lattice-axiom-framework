@@ -1,0 +1,19 @@
+{
+ "id": "pr-7290",
+ "title": "feat(nmcfail): axis-cover of M and O at t+1 on #7188: reverse fails, face fails",
+ "science": "THE BAND'S ONLY COVER FAILURE. On the z-symmetric-3-site x-probes, Axis(M)(A)={e_2}, Axis(O)(A)={e_1}: disjoint but the union misses e_3, so cover fails at A, C and D. This is the forcing negative for the whole 12-member cover family -- axis-cover is not a law of the process, it is a property of most probe cells. I confirm cover fails at exactly 3 of the band's 56 probe-sites, all here.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7290,
+  "branch": "physics-loop/toe-lphys-block-nmcfail-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

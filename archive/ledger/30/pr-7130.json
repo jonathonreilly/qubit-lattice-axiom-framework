@@ -1,0 +1,19 @@
+{
+ "id": "pr-7130",
+ "title": "feat(nstriyncfx): three-site y-probe same-tick formdraw n: reverse fails, face UNDEFINED",
+ "science": "Three-site y-probes, same-tick kernel. Switching from strictly-earlier (#7126, reverse=UNDEFINED) to same-tick moves reverse to `fail`. With #7129 it shows the timing convention can produce hold, fail or UNDEFINED for reverse while face stays UNDEFINED throughout.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=UNDEFINED",
+ "source": {
+  "pr": 7130,
+  "branch": "physics-loop/toe-lphys-block-nstriyncfx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

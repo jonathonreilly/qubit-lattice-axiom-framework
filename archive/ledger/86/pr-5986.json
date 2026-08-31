@@ -1,0 +1,19 @@
+{
+ "id": "pr-5986",
+ "title": "[physics-loop][review-loop] toe-time blockM5 (STACKED on #5984) \u2014 Cycle 919: bounded theorem \u2014 degree 5 certifies at the frozen field; the t",
+ "science": "Locates the certification threshold at degree 5 (integer interior of the 917 bracket exhausted; margin ~8e-4 bits, honestly carried). Superseded in scope by 926 (gate-fragile; re-scoped to d>=5 AND f>=3, with dated edits to this note executed) and by the 932->934 phase-scoped derivation of the certification window.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5986,
+  "branch": "physics-loop/toe-time-blockM5-20260802"
+ },
+ "carried_by": "PR #5993 (re-scoped conjunction + dated edits), PR #6001/#6005 (window derivation with phase qualifier)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

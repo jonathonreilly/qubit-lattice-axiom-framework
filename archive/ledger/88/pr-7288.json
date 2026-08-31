@@ -1,0 +1,19 @@
+{
+ "id": "pr-7288",
+ "title": "feat(nmcssx): axis-cover of M and O at t+1 on #7187: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the x-axis same-lock #7187 y-probes; the informative half is the contrast it carries -- signed exist-opposite of M fails reverse AND face here while cover holds at all four probes, so cover and exist-opposite are genuinely independent on this cell.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7288,
+  "branch": "physics-loop/toe-lphys-block-nmcssx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6153",
+ "title": "TOE Block 60: expose nonaxial Regge Ward cancellation order",
+ "science": "Block 60: defeats the axial-artifact objection with exact face- and body-diagonal cyclic phase quotients (all four Ward tails cubic, fitted powers 2.97-3.00) and corrects the mechanism \u2014 the generated force stays bounded and nonzero while lower Ward orders cancel between the linear and quadratic displacement-generator terms.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6153,
+  "branch": "physics-loop/toe-axiom-closure-block60-generic-ward-20260812"
+ },
+ "carried_by": "#6154 refines the cancellation into the explicit removal of the rank-five coordinate reaction; #6155 re-verifies the cubic tails at multimode; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

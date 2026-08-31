@@ -1,0 +1,19 @@
+{
+ "id": "pr-6943",
+ "title": "feat(dfk15): deep-out-face same-k holds at k=15: t=31 vs t=49",
+ "science": "Deep-out-face same-k k=15 display, intermediate member superseded by the k=19 first-fail terminal (PR 6937), displayed-not-adopted.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6943,
+  "branch": "physics-loop/toe-lphys-block-dfk15-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

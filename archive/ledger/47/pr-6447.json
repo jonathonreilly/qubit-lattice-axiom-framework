@@ -1,0 +1,19 @@
+{
+ "id": "pr-6447",
+ "title": "feat(v30same2): vertex3=0 k=4 maps have equal 2-site miss sets",
+ "science": "Equality of 2-site miss sets for two vertex3=0 k=4 maps, small displayed-not-adopted scan fact carried by the series roll-up.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6447,
+  "branch": "physics-loop/toe-lphys-block-v30same2-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

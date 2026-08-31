@@ -1,0 +1,19 @@
+{
+ "id": "pr-7165",
+ "title": "feat(nsuox): nsopp x-probe later-tick S_* union own lock: reverse HOLD, face HOLD",
+ "science": "Later-tick union own lock on nsopp x-probes. The note itself records that the union is a NO-OP on all four probes (L(A), L(D) UNDEFINED; L(B), L(C) already in S_*), so this reproduces the union-free later-tick x-probe cell exactly.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7165,
+  "branch": "physics-loop/toe-lphys-block-nsuox-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6250",
+ "title": "[physics-loop] toe-lphys c2m3unital: bounded_theorem / bounded-support",
+ "science": "Trivial divisibility fact (3 never divides 2^n) applied to an unadopted C2-strong leftover reading; hypothetical pack member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6250,
+  "branch": "physics-loop/toe-lphys-block-c2m3unital-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

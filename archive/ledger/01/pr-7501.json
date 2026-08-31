@@ -1,0 +1,19 @@
+{
+ "id": "pr-7501",
+ "title": "feat(nm2cycfrmhol): cyclic-frame holonomy around the unit square at t+1 on two-axis opposite z: reverse HOLD, face fails",
+ "science": "Head of the HOLONOMY family: four-edge product of P(q,r)=F(q)^{-1}F(r) around a unit square. DEFECT: that connection is a pure gauge (coboundary), so the product telescopes to the identity whenever all four edges are defined \u2014 verified over 200,000 random and 6,912 exhaustive 4-frame configurations, 0 non-identity. The note's own printout makes it visible: the reverse square A-D-B-E gives exactly ",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7501,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmhol-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

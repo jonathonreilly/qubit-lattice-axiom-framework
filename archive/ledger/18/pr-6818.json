@@ -1,0 +1,19 @@
+{
+ "id": "pr-6818",
+ "title": "feat(ridvar): ridge-slide is rounder than mu on B12",
+ "science": "Roundness variance comparison of rho3 vs mu/nu on B_12 (displayed not adopted), exploratory diagnostic in the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6818,
+  "branch": "physics-loop/toe-lphys-block-ridvar-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

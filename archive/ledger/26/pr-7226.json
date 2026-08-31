@@ -1,0 +1,19 @@
+{
+ "id": "pr-7226",
+ "title": "feat(nmclsy): exist-choice Cl(3,0) from M on #7175: reverse HOLD, face HOLD",
+ "science": "The same exist-choice Cl(3,0) construction on the y-symmetric three-site process of #7175 reading M: N_picks/N_hold are 6/4 on Q and 3/2 on R, exist-choice reverse and face both HOLD, and the note lists the four holding Q picks and the two holding R picks with their products.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7226,
+  "branch": "physics-loop/toe-lphys-block-nmclsy-20260815"
+ },
+ "carried_by": "archive/families/toe-lphys-20260812.md \u00a7Follow-on (the 19 citing notes)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

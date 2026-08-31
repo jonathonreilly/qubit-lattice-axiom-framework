@@ -1,0 +1,19 @@
+{
+ "id": "pr-6918",
+ "title": "feat(ofk17): out-face same-k holds at k=17: t=33 vs t=55",
+ "science": "Single-point out-face same-k hold display at k=17 (displayed, not adopted); exploratory series member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6918,
+  "branch": "physics-loop/toe-lphys-block-ofk17-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

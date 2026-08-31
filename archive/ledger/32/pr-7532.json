@@ -1,0 +1,19 @@
+{
+ "id": "pr-7532",
+ "title": "feat(nm2frmrdy): neighbor-read of cyclic-frame transport at t+1 on two-axis opposite y-probes: reverse HOLD, face fails",
+ "science": "Neighbor-read at t+1 on 2-axis-opposite y-probes. Its own runner prints split reverse=hold face=fail and cover reverse=hold face=fail beside the transport and neighbor-read bits: four 'distinct letters' with identical verdicts in one output.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7532,
+  "branch": "physics-loop/toe-lphys-block-nm2frmrdy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

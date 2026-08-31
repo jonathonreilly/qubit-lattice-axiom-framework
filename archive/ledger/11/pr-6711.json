@@ -1,0 +1,19 @@
+{
+ "id": "pr-6711",
+ "title": "feat(axis4): axis-skeleton fails small-ball reverse on B4",
+ "science": "Axis-skeleton cost fails small-ball reverse on B4 (displayed, not adopted), companion negative check to PR 6710.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6711,
+  "branch": "physics-loop/toe-lphys-block-axis4-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

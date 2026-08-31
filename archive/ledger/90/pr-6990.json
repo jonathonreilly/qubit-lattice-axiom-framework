@@ -1,0 +1,19 @@
+{
+ "id": "pr-6990",
+ "title": "feat(i2face): c2d4-plus-interior face reverse holds k=1..8",
+ "science": "Face-reverse table for the non-adopted i2 variant, exploratory displayed-not-adopted numerics off the core chain.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6990,
+  "branch": "physics-loop/toe-lphys-block-i2face-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

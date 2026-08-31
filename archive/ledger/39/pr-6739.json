@@ -1,0 +1,19 @@
+{
+ "id": "pr-6739",
+ "title": "feat(nuface12): B12 face reverse yes/no/yes/yes; (8,0,0) vs (4,4,0) fails",
+ "science": "Displayed B12 face-diagonal reversal pattern including one failing pair, explicitly not adopted; incremental exploratory measurement in the same support-drop series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6739,
+  "branch": "physics-loop/toe-lphys-block-nuface12-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

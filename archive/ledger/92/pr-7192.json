@@ -1,0 +1,19 @@
+{
+ "id": "pr-7192",
+ "title": "feat(nsye3zinc): y-axis opposite \u00b1e_3 z-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "y-axis opposite +/-e_3 seed {0:+e3},{e2:-e3}, z-probes. reverse_hold_channel=only_neighbor_neighbor -- the HOLD comes purely from two neighbour records, with the probe's own lock playing no part. EXACT DUPLICATE of #7198 (recomputed: identical ticks 3/2/4/2 and identical S^+ at all four probes), because the flipped seed (0,1,0) is not a 6-neighbour of any z-probe.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7192,
+  "branch": "physics-loop/toe-lphys-block-nsye3zinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

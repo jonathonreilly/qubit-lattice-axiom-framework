@@ -1,0 +1,19 @@
+{
+ "id": "pr-7099",
+ "title": "feat(nspar): parallel-opposite unique vector: reverse UNDEFINED, face UNDEFINED",
+ "science": "Introduces the fourth two-site seed orbit, parallel-opposite {0,(1,0,0)} with locks +e_1/-e_1 (seed displacement parallel to the lock axis). Neighbour-lock vector readout: A is a tick-0 seed with a single recorded peer, C accumulates five neighbours mixing -e_1 with four +e_1, so both B and C are UNDEFINED.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7099,
+  "branch": "physics-loop/toe-lphys-block-nspar-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

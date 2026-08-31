@@ -1,0 +1,19 @@
+{
+ "id": "pr-6476",
+ "title": "feat(kdual): F_cut maximizer sets at k and 12-k are not equal",
+ "science": "Theorem 1/2 give the exact maximizer sets Max(k) as remaining-bit tuples and the equality 5-tuple E=(0,0,0,1,1): Max(k) != Max(12-k) for k=1,2,3 but equal at k=4,5, with m_k = C(12,k) palindromic. That is a structural asymmetry result, not a census count.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,f",
+ "source": {
+  "pr": 6476,
+  "branch": "physics-loop/toe-lphys-block-kdual-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

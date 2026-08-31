@@ -1,0 +1,19 @@
+{
+ "id": "pr-7236",
+ "title": "feat(nmzpin): own incoming set on #7186: reverse HOLD, face HOLD",
+ "science": "M-readout on #7186's z-probes: A t=0, M(A)={-e1}, M(B)={+e1}, holds on a singleton pair. Fifth member of the seed-probe orbit shared with #7208/#7211/#7213/#7214.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7236,
+  "branch": "physics-loop/toe-lphys-block-nmzpin-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

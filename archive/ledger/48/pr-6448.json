@@ -1,0 +1,19 @@
+{
+ "id": "pr-6448",
+ "title": "feat(v30miss1): list four 1-site misses of the vertex3=0 k=4 maps",
+ "science": "Lists four shared 1-site misses of the vertex3=0 k=4 maps, micro-observation in the 0815 exploratory pack, not core-chain science.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6448,
+  "branch": "physics-loop/toe-lphys-block-v30miss1-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

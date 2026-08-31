@@ -1,0 +1,19 @@
+{
+ "id": "pr-7036",
+ "title": "[physics-loop] fresh-ancilla staged cq/Record intertwiner \u2014 bounded theorem \u2014 bounded support",
+ "science": "Block 7: the two-stage append-only path channel is intertwined EXACTLY with each flat ternary instrument for every Hermitian input, with no scalar probability table as input (a channel identity, not a weight calibration); explicit append-aware writer on three memory qubits; capacity boundary that M2+M2 (dim 8) and the ternary cq algebra (dim 12) cannot be faithfully represented inside one M2 site ",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7036,
+  "branch": "physics-loop/toe-cq-record-writer-block7-20260820"
+ },
+ "carried_by": "#7047 (block 9) reproduces exactly the Block-7 label-retaining cq instrument from a smaller four-sector total idempotent CPTP channel (its eq. (2)), and restates the one-site capacity boundary in the ",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

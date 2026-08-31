@@ -1,0 +1,19 @@
+{
+ "id": "pr-7463",
+ "title": "feat(nm2oricyccslz): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on two-axis same-lock z-probes: reverse fails, face HOLD",
+ "science": "same-lock z-probes, cyclic lex-smallest orientation. face=hold, identical verdict to lex-largest (#7453): on the z-probes the tie-break flips all defined probes together, so the verdict is convention-invariant here (contrast the y-probes).",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7463,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyccslz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

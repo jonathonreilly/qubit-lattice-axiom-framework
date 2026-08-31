@@ -1,0 +1,19 @@
+{
+ "id": "pr-6237",
+ "title": "[physics-loop] toe-lphys c1hist: bounded_theorem / bounded-support",
+ "science": "Bounded_theorem note, no probe cell. Exact theorem that the Record axiom's additive scalar readout I is ADDITION-ORDER BLIND: two legal two-step histories H_xy=(0,0)->(A,0)->(A,A) and H_yx=(0,0)->(0,A)->(A,A) have identical I-stacks (0,1,2) AND identical site-blind content bags, but distinct J-stacks (mid-step (A,0) vs (0,A)). Theorem 3 reads the quoted Record wording and concludes 'Records form' ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6237,
+  "branch": "physics-loop/toe-lphys-block-c1hist-20260813"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

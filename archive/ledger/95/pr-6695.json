@@ -1,0 +1,19 @@
+{
+ "id": "pr-6695",
+ "title": "feat(minkbest): variance-minimizing reversal is much closer to Euclidean than l1",
+ "science": "Variance-minimizing reversal cost fit (displayed, not adopted), terminal exploratory scan with no adopted claim, carried by the campaign roll-up.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6695,
+  "branch": "physics-loop/toe-lphys-block-minkbest-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

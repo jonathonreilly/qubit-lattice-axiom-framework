@@ -1,0 +1,19 @@
+{
+ "id": "pr-6885",
+ "title": "feat(klkvar): kappa-plus-late-leave ties kappa variance on B12",
+ "science": "Exact identity: Q_kappa-lambda == Q_kappa and t_kappa-lambda(v) == t_kappa(v) at EVERY site of B_12 (I re-ran it: still exact on B_30). The late-leave clause is live on hops yet completely idle on the arrival field. Same fake-mutation pattern as 6872 is absent here, but the `late-leave-live-same-field` gate is a genuine sitewise check.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6885,
+  "branch": "physics-loop/toe-lphys-block-klkvar-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7426",
+ "title": "feat(nm2orioney): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis opposite y-probes: reverse HOLD, face fails",
+ "science": "Orientation convention #3 (lex-one signed: pick +e_i over -e_i on each O-axis) on opposite y-probes: +1,+1,-1,fail -> reverse HOLD, face fail, where the opposite-pair convention (#7394) gives fail/fail and the unique-signed convention gives +1,fail,fail,fail on the same cell. Its own text concedes 'unsigned Orient at A is -1 while this Orient is +1'.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fail",
+ "source": {
+  "pr": 7426,
+  "branch": "physics-loop/toe-lphys-block-nm2orioney-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

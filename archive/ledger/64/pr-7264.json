@@ -1,0 +1,19 @@
+{
+ "id": "pr-7264",
+ "title": "feat(nmot3x2): O freeze t+1 vs t+2 on #7214: reverse HOLD, face HOLD, composition HOLD",
+ "science": "O freeze t+1 vs t+2 on the #7214 x-probes; runner also asserts o_eventual == o1 == o2 at all four probes, i.e. the 'timed' O at t+1 already equals the untimed eventual O, collapsing the timed/untimed distinction the band's notes lean on.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold composition=HOLD",
+ "source": {
+  "pr": 7264,
+  "branch": "physics-loop/toe-lphys-block-nmot3x2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

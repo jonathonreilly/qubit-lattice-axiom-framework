@@ -1,0 +1,19 @@
+{
+ "id": "pr-7419",
+ "title": "feat(nm2sreadz): neighbor-read of 1-in 2-out split at t+1 on two-axis opposite z-probes: reverse HOLD, face HOLD",
+ "science": "Neighbor-read of the UNSIGNED 1-in-2-out axis assignment on opposite z-probes: HOLD at all four. Carries the band's strongest locality statement in its discriminator section - neighbor-read of signed M fails at A, of signed O fails at B,C,D, and signed (M,O) joint set equality fails at EVERY z-probe, while the unsigned axis shadow is recovered at all four. I recomputed this host-wide: joint signed",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7419,
+  "branch": "physics-loop/toe-lphys-block-nm2sreadz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

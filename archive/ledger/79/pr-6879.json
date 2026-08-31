@@ -1,0 +1,19 @@
+{
+ "id": "pr-6879",
+ "title": "feat(oek7): one-unit-enter same-k holds at k=7: t=19 vs t=25",
+ "science": "omicron on B_21: 19 vs 25. Carries a four-way comparator separation in one runner (rho3/beta/kappa/epsilon) and one number worth keeping: under beta (tax every 3->3) the same pair is 19 vs 37, so beta destroys reverse at k=7 \u2014 taxing the body diagonal is the wrong direction.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6879,
+  "branch": "physics-loop/toe-lphys-block-oek7-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

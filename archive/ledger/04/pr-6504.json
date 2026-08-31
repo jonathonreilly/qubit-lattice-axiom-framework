@@ -1,0 +1,19 @@
+{
+ "id": "pr-6504",
+ "title": "feat(c00c4orb): orbit type of f00 seven 4-site fills",
+ "science": "reverse=none face=none (f_cut fill-set orbit census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut fill-set orbit census; no (rev",
+ "source": {
+  "pr": 6504,
+  "branch": "physics-loop/toe-lphys-block-c00c4orb-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

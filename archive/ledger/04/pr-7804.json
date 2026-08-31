@@ -1,0 +1,19 @@
+{
+ "id": "pr-7804",
+ "title": "physics: prove scoped pure-Record occurrence underselection",
+ "science": "Terminal PURE-RECORD-HARRIS-PROCESSES-EXIST-DIMENSIONLESS-GENERATOR-UNDERSELECTED. Two complete bounded range-one one-site Markov pure-Record processes on the same invariant seven-state sector (blank + six rho_f = (I-(143/256) f.sigma)/2, spectrum {113/512,399/512}) share the identical supplied six-mark conditional kernel p_x(rho_f|R) proportional to 2^(m_x(f;R)) but have hazards lambda^0 = alpha ",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7804,
+  "branch": "physics-loop/toe-source-eta-ownership-block18-pure-record-occurrence-selection-lumpability-20260829"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 92 behind). The 1/2-vs-2/3 discriminator is later REDERIVED microscopically in #7805 (beta=1 vs beta=2), which strengthens rather than rep",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

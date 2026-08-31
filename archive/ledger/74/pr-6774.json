@@ -1,0 +1,19 @@
+{
+ "id": "pr-6774",
+ "title": "feat(011fk16): (0,1,1) face reverse on B16 holds k=1..4 and fails k=5..8",
+ "science": "(0,1,1) face k-sweep k=1..8 on B_16(0): reverse holds at k=1,2,3,4 and fails at k=5,6,7,8 -- one k further than nu (#6769, which held only to k=3). Carries an exact identity worth keeping: under (0,1,1) the face arrivals are exactly the l1 hop count, t(k,k,0)=2k, so the face density t^2/2k^2 is the CONSTANT 2 for every k and the whole test collapses to t(2k,0,0)^2 > 8k^2. Cheaper rule pushes the r",
+ "forcing": false,
+ "verdict_pair": "face reverse by k: YES k=1,2,3,4; NO k=5,6,7,8",
+ "source": {
+  "pr": 6774,
+  "branch": "physics-loop/toe-lphys-block-011fk16-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

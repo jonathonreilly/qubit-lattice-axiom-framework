@@ -1,0 +1,19 @@
+{
+ "id": "pr-7388",
+ "title": "feat(nm2ot3x): O freeze t+1 vs t+2 on two-axis opposite x-probes: reverse fails, face fails, composition HOLD",
+ "science": "O-freeze t+1 vs t+2 on OPPOSITE x-probes, exist-opposite reverse/face. Reports O identical at both cuts and composition HOLD. Notable pairing with #7389: identical ticks and identical O at A,B,C; only O(D) differs ({+e_1,-e_1} vs {+e_1}), and both report the same fail/fail/HOLD triple.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail (composition HOLD)",
+ "source": {
+  "pr": 7388,
+  "branch": "physics-loop/toe-lphys-block-nm2ot3x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6890",
+ "title": "feat(dekvar): deep-enter ties rho3 variance on B12",
+ "science": "The band's one genuine mutation test. Exact: Q_delta-eps == Q_rho3 and t_delta-eps == t_rho3 sitewise on B_12, while 864 directed deep-enter hops are priced 3 by delta-eps and 1 by rho3 \u2014 a clause that is live on a counted set of edges and provably absent from every geodesic. `mutation-idle-arrival` really runs the second Dijkstra. I verified the identity still holds on B_30.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6890,
+  "branch": "physics-loop/toe-lphys-block-dekvar-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6797",
+ "title": "feat(hugdbl): corridor-slide doubled pairing holds k=1..4",
+ "science": "Doubled pairing ((2k,0,0),(k,k,k)) under mu on B_12 at every available k=1..4: 3t_axis^2 vs 4t_body^2 = 108>100, 432>256, 768>484, 972>784, all reverse. Forcing content: nu's own doubled table 6,10,12,14 vs 5,8,11,14 already fails from k=3 (432<484), so the corridor clause is what carries k=3,4. Full per-k witness walks are given.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=1,2,3,4 (doubled pairing) face=n/a",
+ "source": {
+  "pr": 6797,
+  "branch": "physics-loop/toe-lphys-block-hugdbl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

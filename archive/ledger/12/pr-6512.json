@@ -1,0 +1,19 @@
+{
+ "id": "pr-6512",
+ "title": "feat(f10c3orb): orbit type of f10 four 3-site fills",
+ "science": "reverse=none face=none (f_cut fill-set orbit census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut fill-set orbit census; no (rev",
+ "source": {
+  "pr": 6512,
+  "branch": "physics-loop/toe-lphys-block-f10c3orb-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

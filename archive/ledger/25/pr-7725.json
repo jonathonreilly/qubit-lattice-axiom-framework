@@ -1,0 +1,19 @@
+{
+ "id": "pr-7725",
+ "title": "physics: isolate Regge-D4 placement corner boundary",
+ "science": "Exact placement-grade Ward obstruction for the frozen raw-label Regge-D4 carrier: 28 of 60 direction-grade blocks inconsistent, and a support-independent corner contradiction (M_01 forced to both 1/2 and 0 at a shared corner) proves no entrywise regular Laurent map of any finite support solves the frozen placement equation. Dead-ends the raw-symbol Regge placement route; the lane pivots to OS/GNS/",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7725,
+  "branch": "physics-loop/toe-axiom-closure-block196-regge-d4-placement-reflection-20260825"
+ },
+ "carried_by": "pivot recorded in #7726 and the lane's continuation; #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

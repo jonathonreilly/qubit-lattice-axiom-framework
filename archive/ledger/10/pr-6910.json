@@ -1,0 +1,19 @@
+{
+ "id": "pr-6910",
+ "title": "feat(ofk14): out-face same-k restores k=14: t=30 vs t=46",
+ "science": "Out-face k=14 display noting first extra to restore the rho3/kappa wall, still displayed-not-adopted; exploratory finding carried by campaign roll-ups, not an adopted artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6910,
+  "branch": "physics-loop/toe-lphys-block-ofk14-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

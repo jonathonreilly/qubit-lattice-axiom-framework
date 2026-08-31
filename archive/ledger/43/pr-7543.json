@@ -1,0 +1,19 @@
+{
+ "id": "pr-7543",
+ "title": "feat(nm2sfzrdyt2): neighbor-read of cyclic lex-smallest frame transport freeze t+1 vs t+2 on three-axis far-face opposite y-probes: reverse ",
+ "science": "t+2 freeze of 7541; bits unchanged. D fails from mixed M at both cuts.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7543,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzrdyt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

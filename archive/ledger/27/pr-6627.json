@@ -1,0 +1,19 @@
+{
+ "id": "pr-6627",
+ "title": "feat(c7q8): cov7>0 is not Q8; positivity implies Q8",
+ "science": "Bounded_theorem note, not a probe cell. All 32 F_cut maps scored on 792 seven-site seeds: cov7>0 not equivalent to Q8 (six mismatches, lex-first (0,1,0,0,0)) but positivity implies Q8; N_pos=24, N_Q8=30, N_both=24; cov7(f_L1)=792, cov7(adj2-only)=192; 20-check runner.",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6627,
+  "branch": "physics-loop/toe-lphys-block-c7q8-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7357",
+ "title": "feat(nm2sl12z): 1-in 2-out split on two-axis same-lock z-probes: reverse fails, face HOLD",
+ "science": "Two-axis SAME-LOCK seed, z-probes, 1-in 2-out split. PROVENANCE/CHECKER DEFECT: the note is a copy of the opposite-seed PR #7308 with only the data block swapped. target_claim_id names 'two_axis_opposite...' (claim_id says same_lock); the Seed paragraph declares 'two disjoint OPPOSITE pairs' with locks -e_1/-e_2 while the runner's actual seed is +e_1/+e_1 and +e_2/+e_2; the obligation table assert",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7357,
+  "branch": "physics-loop/toe-lphys-block-nm2sl12z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

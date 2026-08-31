@@ -1,0 +1,19 @@
+{
+ "id": "pr-6826",
+ "title": "feat(ridk9): ridge-slide same-k holds at k=9: t=21 vs t=31",
+ "science": "rho3 at k=9 on B_27: t=21 vs 31, 1323>961. Its axis witness takes a DIFFERENT geodesic from the rest of the series (via (2,2,0) and a height-2 corridor: 3+3+1+1+7+3+3=21) yet lands on the same k+12 intercept, evidence that +12 is a property of the rule rather than of one chosen route.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=9, 1323 > 961) face=n/a",
+ "source": {
+  "pr": 6826,
+  "branch": "physics-loop/toe-lphys-block-ridk9-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6761",
+ "title": "feat(nuf5): nu k=5 face fail: t(10,0,0)=16 via detour, t(5,5,0)=12",
+ "science": "Displayed nu k=5 face-failure arithmetic companion to 6760 for the pattern in 6747, explicitly not adopted; exploratory why-analysis in the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6761,
+  "branch": "physics-loop/toe-lphys-block-nuf5-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

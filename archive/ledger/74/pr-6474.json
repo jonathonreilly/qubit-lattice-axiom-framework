@@ -1,0 +1,19 @@
+{
+ "id": "pr-6474",
+ "title": "feat(mix0c4why): mix0 four-site miss first refuses opp2 not mixed3",
+ "science": "Four-site miss mechanism for f_mix0: cov4(f_mix0)=425 with |M_mix0|=70 misses against cov4(f1)=495 (perfect). On the lex-first miss S={(0,0,0),(0,0,1),(0,1,0),(2,0,1)} the first refused neighbourhood is tick t=1, site (1,0,1), configuration (1,1,0,0,0,0), axis type opp2=(0,1,2) - NOT mixed3. So at four sites the bit that costs f_mix0 its coverage is opp2, not the mixed3 bit that cost it at three s",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6474,
+  "branch": "physics-loop/toe-lphys-block-mix0c4why-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

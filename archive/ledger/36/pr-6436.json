@@ -1,0 +1,19 @@
+{
+ "id": "pr-6436",
+ "title": "feat(mix0miss2): list the four two-site seeds f_mix0 misses",
+ "science": "Displayed-not-adopted miss-seed listing for f_mix0 matching f_L1, display-only comparison in the same exploratory series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6436,
+  "branch": "physics-loop/toe-lphys-block-mix0miss2-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

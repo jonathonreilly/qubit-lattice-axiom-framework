@@ -1,0 +1,19 @@
+{
+ "id": "pr-6828",
+ "title": "feat(ridclk): ridge-slide clock N_label=12 N_filt=6",
+ "science": "The band's only axioms-adjacent result and its most substantive PR. On the 12 lex-first perp-mask hosts it scores leftover-frame-positive f with rho3 read two ways: as unused edge LABELS (a clock) it fires 12/12; as a cost-1 readiness FILTER it fires only 6/12. It then PROVES the exact iff: the six hosts that die are precisely those whose unread center has exactly two unit coordinates -- the same ",
+ "forcing": false,
+ "verdict_pair": "reverse=n/a face=n/a (N_label_fire=12, N_filt_fire=6)",
+ "source": {
+  "pr": 6828,
+  "branch": "physics-loop/toe-lphys-block-ridclk-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

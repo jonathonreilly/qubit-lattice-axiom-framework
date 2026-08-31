@@ -1,0 +1,19 @@
+{
+ "id": "pr-7125",
+ "title": "feat(nstrizown): three-site z-probe own incoming: reverse UNDEFINED, face UNDEFINED",
+ "science": "Own-incoming readout on three-site z-probes; B and C both mix {+e_2,+e_1}. Completes the 3x3 sweep of {two-site opposite, parallel-opposite, three-site} x {x,y,z} for the own-incoming readout, in which only the opposite-lock y-probe cell (#7109) ever produced a defined hold.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7125,
+  "branch": "physics-loop/toe-lphys-block-nstrizown-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

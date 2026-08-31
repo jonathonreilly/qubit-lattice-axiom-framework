@@ -1,0 +1,19 @@
+{
+ "id": "pr-6869",
+ "title": "feat(renk13): ridge-enter same-k holds at k=13: t=25 vs t=43",
+ "science": "kappa on B_39: t(13,0,0)=25, t(13,13,13)=43, 1875>1849 \u2014 the last k that holds, with a margin of only 26. Together with 6871 this pins the wall between k=13 and k=14.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6869,
+  "branch": "physics-loop/toe-lphys-block-renk13-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

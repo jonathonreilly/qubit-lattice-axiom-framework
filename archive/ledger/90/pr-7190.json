@@ -1,0 +1,19 @@
+{
+ "id": "pr-7190",
+ "title": "feat(nszsamxinc): z-axis same-lock x-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "z-axis same-lock {0:+e1},{e3:+e1}, x-probes. Differs from #7189 only in the sign of the second seed lock. I proved exhaustively (108/108 seed configurations) that a seed-lock sign flip leaves formation ticks and every non-flipped site's lock set invariant -- the perp rule sees only the lock AXIS -- so #7189 and #7190 are byte-identical computations (same ticks 3/2/4/2, same S^+ at A,B,C,D, same PA",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7190,
+  "branch": "physics-loop/toe-lphys-block-nszsamxinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

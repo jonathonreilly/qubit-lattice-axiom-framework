@@ -1,0 +1,19 @@
+{
+ "id": "pr-7182",
+ "title": "feat(nsxopinc): x-symmetric three-site same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "x-symmetric three-site same-tick union HOLD variant, displayed not adopted; exploratory pack, no decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7182,
+  "branch": "physics-loop/toe-lphys-block-nsxopinc-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

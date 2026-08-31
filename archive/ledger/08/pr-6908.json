@@ -1,0 +1,19 @@
+{
+ "id": "pr-6908",
+ "title": "feat(ofk7): out-face same-k holds at k=7: t=21 vs t=25",
+ "science": "Single-point out-face same-k hold display at k=7 (displayed, not adopted); exploratory series member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6908,
+  "branch": "physics-loop/toe-lphys-block-ofk7-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6883",
+ "title": "feat(klk13): kappa-plus-late-leave same-k holds at k=13: t=25 vs t=43",
+ "science": "kappa-lambda on B_39: 25 vs 43, 1875>1849. Same razor-thin last hold as kappa.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6883,
+  "branch": "physics-loop/toe-lphys-block-klk13-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

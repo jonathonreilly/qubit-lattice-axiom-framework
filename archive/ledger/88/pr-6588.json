@@ -1,0 +1,19 @@
+{
+ "id": "pr-6588",
+ "title": "feat(c2q10): cov2>0 is not Q10; positivity implies Q10",
+ "science": "Two positive containments beyond a bare negative: the note states every cov2>0 map is Q10-true (N_pos=N_both=14, so cov2>0 implies Q10), and runner check thm2-counts additionally verifies the exact iff all((cov2>0)==(wt1==1 and Q10)) on all 32 maps - i.e. cov2>0 iff (wt1 AND (adj2 OR vertex3 OR mixed3)), the #6494 predicate P, re-proved here but never stated as this PR's theorem.",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, N_pos=14, N_Q1",
+ "source": {
+  "pr": 6588,
+  "branch": "physics-loop/toe-lphys-block-c2q10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

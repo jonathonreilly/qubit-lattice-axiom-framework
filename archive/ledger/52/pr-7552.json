@@ -1,0 +1,19 @@
+{
+ "id": "pr-7552",
+ "title": "feat(nm2hol3z): cyclic-frame holonomy around the unit square at t+1 on three-axis opposite near-face seed: reverse HOLD, face fails",
+ "science": "Unit-square holonomy on the near-face three-axis seed; C1,C2 have mixed M={+e_1,+e_3} so the face square fails.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7552,
+  "branch": "physics-loop/toe-lphys-block-nm2hol3z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

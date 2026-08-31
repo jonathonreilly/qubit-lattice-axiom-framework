@@ -1,0 +1,19 @@
+{
+ "id": "pr-6911",
+ "title": "feat(ofkvar): out-face is rounder than kappa and rho3 on B12",
+ "science": "New clause family: out-face omega = rho3 + cost 3 on a 2->2 hop whose dest has strictly larger max|coord| than the source. Q_omega = 2697928722329275408991/14234892042902154624000, var_omega = 0.004242786759120176 \u2014 16 percent rounder than kappa and the first rule in the band to beat it. CHECKER DEFECT: `mutation-omega-as-rho3` again performs no mutation (condition is `var_omega < var_rho3 and var",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6911,
+  "branch": "physics-loop/toe-lphys-block-ofkvar-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

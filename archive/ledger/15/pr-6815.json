@@ -1,0 +1,19 @@
+{
+ "id": "pr-6815",
+ "title": "feat(ridk1): ridge-slide keeps k=1 reverse: t=3 vs t=5",
+ "science": "Ridge-slide rho3 k=1 probe on B_6 (displayed not adopted), another cost-variant in the same exploratory wall series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6815,
+  "branch": "physics-loop/toe-lphys-block-ridk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

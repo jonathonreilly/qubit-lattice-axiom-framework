@@ -1,0 +1,19 @@
+{
+ "id": "pr-6397",
+ "title": "feat(ftwo2fill): f_two face-diagonal seed halts at T=1 with 4 locks",
+ "science": "Single-instance dynamics theorem, not a probe cell: f_two (u>=2 unbalanced axes) from the face-diagonal 2-site seed {(0,0,0),(1,1,0)} halts at T=1 with |locks|=4, the locked set being exactly the z=0 face square of cube A, and does not fill; the 3-site axis-seed contrast recomputes as T=2, 8 locks, no fill. Thin science - one instance, one seed. Also carries a small internal definitional slip: the",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6397,
+  "branch": "physics-loop/toe-lphys-block-ftwo2fill-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

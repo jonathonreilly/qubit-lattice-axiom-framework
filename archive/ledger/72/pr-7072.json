@@ -1,0 +1,19 @@
+{
+ "id": "pr-7072",
+ "title": "feat(nsfy): y-probe formdraw reverse UNDEFINED, face some; n(Cy) != n(Dy)",
+ "science": "Formdraw kernel on the y-probes, where A_y IS the second seed: because `already recorded` means strictly earlier, the same-tick origin partner does NOT count, so n(A_y)=(0,0,0) and reverse is UNDEFINED; n(C_y)=(0,-1/3,0) != n(D_y)=(-1/3,0,0) gives 4 face combinations, 1 hit, face `some`. The runner proves the same-tick exclusion is load-bearing (`mutation-same-tick-partner-changes-n`): a purely bo",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=some",
+ "source": {
+  "pr": 7072,
+  "branch": "physics-loop/toe-lphys-block-nsfy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

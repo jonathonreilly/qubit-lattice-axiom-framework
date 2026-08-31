@@ -1,0 +1,19 @@
+{
+ "id": "pr-7214",
+ "title": "feat(nmxe2x): own incoming set on #7196: reverse HOLD, face HOLD",
+ "science": "M-readout on #7196's x-axis opposite +/-e_2 x-probes. Same orbit again: A t=0 with singleton M, reverse and face hold, unique_L_face=UNDEFINED. Adds no cell the orbit does not already contain.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7214,
+  "branch": "physics-loop/toe-lphys-block-nmxe2x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

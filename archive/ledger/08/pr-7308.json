@@ -1,0 +1,19 @@
+{
+ "id": "pr-7308",
+ "title": "feat(nm2ax12z): 1-in 2-out split on two-axis opposite z-probes: reverse HOLD, face HOLD",
+ "science": "Two-axis opposite seed, z-probes, 1-in 2-out split - the body's 'First 1-in 2-out HOLDING_MEMBER'. The HOLD/HOLD is inherited entirely from axis-cover (#7309): |Axis(M)|=1 at all four probes so split and cover are the same predicate here. The note explicitly denies the collapse ('That agreement ... does not collapse split to cover') though on this cell it is exact.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7308,
+  "branch": "physics-loop/toe-lphys-block-nm2ax12z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

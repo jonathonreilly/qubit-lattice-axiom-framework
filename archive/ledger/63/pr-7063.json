@@ -1,0 +1,19 @@
+{
+ "id": "pr-7063",
+ "title": "feat(nfe1): sign(n_1) unique letter: reverse and face none",
+ "science": "Selector sign(n_1) on the same kernel: n_1 = -1/3 at all four probes, so all four letters are `-` and reverse=face=`none`. The uniform sign is structural - every probe forms from a parent on its -e_1 side, so the occupancy kernel always points back along the causal parent and any sign-of-component readout is systematically biased against reverse (which needs L(A)=+).",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none",
+ "source": {
+  "pr": 7063,
+  "branch": "physics-loop/toe-lphys-block-nfe1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

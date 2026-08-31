@@ -1,0 +1,19 @@
+{
+ "id": "pr-7078",
+ "title": "feat(nfsum): neighbor-lock sum: reverse fail, face holds",
+ "science": "Sum-of-recorded-neighbour-locks letter (multiplicity kept): L(A)=(2,0,0), L(B)=(1,0,1), L(C)=-e_2, L(D)=+e_2 -> reverse FAILS, face HOLDS. On the identical lock lists the note records that unique-vector lettering gives L(B)=UNDEFINED hence reverse UNDEFINED (#7075), and named-sign lettering gives reverse fail for a different reason (#7066) with face `none`. Three readouts of one lock list, three d",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7078,
+  "branch": "physics-loop/toe-lphys-block-nfsum-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

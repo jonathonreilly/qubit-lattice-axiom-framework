@@ -1,0 +1,19 @@
+{
+ "id": "pr-6145",
+ "title": "science: conserved Record frontier and causal update boundary",
+ "science": "Block 52: conserved active Record frontier via the occupancy-minus-outgoing-degree decoder; symmetric rank-one Lorentz-null stress current with exact discrete continuity and contracted Gauss/Bianchi preservation; corrects the Euclidean/Lorentzian signature interface; and proves the exact causal tradeoff \u2014 the unit-tick Lorentz recurrence is UV-unstable for r<1/6 and every stable member has a dense",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6145,
+  "branch": "physics-loop/toe-axiom-closure-block52-record-worldline-20260811"
+ },
+ "carried_by": "#6146 answers this wall with the exact-radius-two split-step update and reuses the conserved frontier transition; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

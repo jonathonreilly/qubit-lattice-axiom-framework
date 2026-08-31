@@ -1,0 +1,19 @@
+{
+ "id": "pr-7447",
+ "title": "feat(nm2orilefsly): signed leftover-axis det orientation of 1-in 2-out at t+1 on two-axis same-lock y-probes: reverse fails, face fails",
+ "science": "same-lock y-probes, signed-leftover det orientation. Defined only at B; A and C fail the unique-signed-leftover requirement. Near-vacuous letter on this axis.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7447,
+  "branch": "physics-loop/toe-lphys-block-nm2orilefsly-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

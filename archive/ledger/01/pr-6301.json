@@ -1,0 +1,19 @@
+{
+ "id": "pr-6301",
+ "title": "feat(oppcan): n=0 cells never form",
+ "science": "Bounded_theorem note, no probe cell. Forcing negative against the blocker 'any occupied neighbor forms': on a 3-site line with BOTH ends locked the center has n_x=0 and the step is the identity -- opposite occupied neighbors CANCEL. So formation under L0 is a signed DIFFERENCE, not an OR/monotone function of occupied neighbors, which means the update is not monotone in occupancy and a fully surrou",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "source": {
+  "pr": 6301,
+  "branch": "physics-loop/toe-lphys-block-oppcan-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

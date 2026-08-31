@@ -1,0 +1,19 @@
+{
+ "id": "pr-6734",
+ "title": "feat(011why): cheap-seed reverser paths: axis 8 via detour, diag 6 all-1s",
+ "science": "Displayed path breakdown for the (0,1,1) clause reverser (axis-8 detour vs all-1s diagonal), explicitly not adopted; exploratory why-analysis in the same toggle series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6734,
+  "branch": "physics-loop/toe-lphys-block-011why-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

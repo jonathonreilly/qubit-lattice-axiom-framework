@@ -1,0 +1,19 @@
+{
+ "id": "pr-7766",
+ "title": "[physics-loop] toe-axiom-closure-block220: bounded_theorem / bounded-support",
+ "science": "The conditional Record-finality keystone: a machine-executable, symmetry-compatible compiler from one supplied local event to the first permanent Record on a finite Record-free parity component, with exact rep-theoretic ray allocation (40 rays embedded in the seven-qubit Block-218 carrier), success exactly on the 128 consensus branches of ALL 4,194,304 held L8 starts, rollback everywhere else, cle",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7766,
+  "branch": "physics-loop/toe-axiom-closure-block220-conflict-safe-record-finality-20260827"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

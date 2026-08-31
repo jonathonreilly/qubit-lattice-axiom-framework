@@ -1,0 +1,19 @@
+{
+ "id": "pr-7562",
+ "title": "feat(nm2frm3p3z): three-path cyclic-frame transport at t+1 on three-axis opposite near-face seed: reverse fails, face fails",
+ "science": "Three-path on the near-face three-axis seed; here origin split HOLDs, so the fail is purely a missing edge further along the walk.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7562,
+  "branch": "physics-loop/toe-lphys-block-nm2frm3p3z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

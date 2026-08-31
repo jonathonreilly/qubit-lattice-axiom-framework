@@ -1,0 +1,19 @@
+{
+ "id": "pr-7706",
+ "title": "feat(nm2frm2lxrd2s): distance-2 neighbor-read of L-path -e3 then -e1 at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Distance-2 readout of the same-lock L-path (-e3,-e1): the ladder dies one rung earlier on the same-lock seed than on the opposite seed, because the origin has no distance-2 holder there.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7706,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lxrd2s-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

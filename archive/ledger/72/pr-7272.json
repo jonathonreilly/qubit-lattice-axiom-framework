@@ -1,0 +1,19 @@
+{
+ "id": "pr-7272",
+ "title": "feat(nmtriple): leftover axis of M and O at t+1 on #7167: reverse fails, face fails",
+ "science": "Leftover lattice axis Lx = {e_1,e_2,e_3} \\ (Axis(M) \u222a Axis(O)) on the #7208 y-probes. Lx is empty at all four probes; because the predicate makes empty leftover FAIL, this reports fail/fail. Its runner proves exactly the axis PARTITION (disjoint AND union = all three axes) that #7278 reports on the identical cell as hold/hold -- the same computation with inverted verdict labels.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7272,
+  "branch": "physics-loop/toe-lphys-block-nmtriple-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

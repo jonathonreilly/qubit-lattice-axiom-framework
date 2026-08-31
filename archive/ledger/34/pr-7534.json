@@ -1,0 +1,19 @@
+{
+ "id": "pr-7534",
+ "title": "feat(nm2frmrdslt2): neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on two-axis same-lock z-probes: reverse fails, face HOLD, comp",
+ "science": "Same-lock seed (+e_1/+e_1 and +e_2/+e_2): the partner's lock enters O(A) at formation tick t itself, so Axis(M) meets Axis(O) and cover/split fail at A by a mechanism absent from every opposite seed. Highest check count (69); its own runner asserts orient_reverse==reverse and transport_reverse==reverse.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7534,
+  "branch": "physics-loop/toe-lphys-block-nm2frmrdslt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

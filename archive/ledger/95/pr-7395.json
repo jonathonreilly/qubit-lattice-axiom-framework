@@ -1,0 +1,19 @@
+{
+ "id": "pr-7395",
+ "title": "feat(nm2splt2z): 1-in 2-out at t vs t+1 on two-axis opposite z-probes: reverse fail then HOLD, face fail then HOLD, composition fail",
+ "science": "The one member that isolates the only informative tick: 1-in-2-out split at tau=t vs t+1 on opposite z-probes. O is empty at every probe at t (split fail everywhere), fills at t+1 (split HOLD everywhere), so composition FAILS. Every later tau-pair in the band composes HOLD; this is the sole cut in the whole band where any bit changes.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail-then-HOLD face=fail-then-HOLD (composition fail",
+ "source": {
+  "pr": 7395,
+  "branch": "physics-loop/toe-lphys-block-nm2splt2z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6768",
+ "title": "feat(mix16): fourteen mixed shells on B16; t=8 and t=14 stay mixed",
+ "science": "Extends the isochrone/mixed-shell classification (#6732 on B_8, #6752 on B_12) to B_16(0): fourteen mixed t-shells with full radius lists and site counts. The load-bearing trend, visible in its own table, is that mixing GROWS with t (2 radii at t=5 up to 29 radii at t=18) -- the nu isochrones get further from spheres at larger radius, not closer. That is a negative for any continuum-isotropy recov",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=absent (reports 14 mixed shells; t8_mixe",
+ "source": {
+  "pr": 6768,
+  "branch": "physics-loop/toe-lphys-block-mix16-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

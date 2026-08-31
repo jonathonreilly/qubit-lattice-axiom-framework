@@ -1,0 +1,19 @@
+{
+ "id": "pr-6507",
+ "title": "feat(f10onface): whether f10 fills f00 lex-first 4-face",
+ "science": "Displayed-not-adopted single-face fill check of f10 on the f00 face, an exploratory campaign micro-probe.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6507,
+  "branch": "physics-loop/toe-lphys-block-f10onface-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

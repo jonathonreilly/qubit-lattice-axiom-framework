@@ -1,0 +1,19 @@
+{
+ "id": "pr-7800",
+ "title": "physics: prove selected r3 q2 carrier leakage",
+ "science": "Two finite non-closure witnesses: the rank-29 selected history carrier is not invariant under a second supplied crossing (exact modular ranks 29/54/72 at disclosed samples), and one added defining-vector action character plus physical Q leaves new even-spin (1,+)+(2,+) content outside the carrier. Both witnesses are the layer-one seeds of Block247.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7800,
+  "branch": "physics-loop/toe-connection-dynamics-block246-rank29-action-leakage-20260829"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

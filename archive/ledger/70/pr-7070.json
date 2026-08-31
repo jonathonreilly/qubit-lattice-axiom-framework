@@ -1,0 +1,19 @@
+{
+ "id": "pr-7070",
+ "title": "feat(nsneigh): nssame neighbor-lock letter: reverse none, face UNDEFINED",
+ "science": "Neighbour-lock selector on the nssame same-lock seed: L(A)=+, L(B)=+, L(C)=UNDEFINED (A keeps three earliest incoming locks {+e_2,+e_3,-e_3} whose named signs mix), L(D)=+ -> reverse `none`, face UNDEFINED. A new verdict pair for the census, produced purely by lock-set mixing at one upstream site; re-verifies the 24-rotation orbit separation from the mixed-lock seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=UNDEFINED",
+ "source": {
+  "pr": 7070,
+  "branch": "physics-loop/toe-lphys-block-nsneigh-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

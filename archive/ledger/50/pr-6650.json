@@ -1,0 +1,19 @@
+{
+ "id": "pr-6650",
+ "title": "feat(slotn): slot-odd tie-break fires at both sites but is not cube-equivariant",
+ "science": "Escape found and immediately costed, not a probe cell: the slot-odd tie-break (label(+mu)=+, label(-mu)=-) is NON-local in n, so it evades the #6648/#6649 no-go, and it does fire at BOTH positive sites - c(v1)=(+,-,-,0,0,+) and c(v2)=(+,-,0,+,-,0), N_fire=1 each. But it is not cube-equivariant on the star: it commutes with only 3 of the 24 proper rotations (exactly the all-positive even axis permu",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6650,
+  "branch": "physics-loop/toe-lphys-block-slotn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

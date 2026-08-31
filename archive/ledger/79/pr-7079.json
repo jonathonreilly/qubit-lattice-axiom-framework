@@ -1,0 +1,19 @@
+{
+ "id": "pr-7079",
+ "title": "feat(nssumz): z-probe neighbor-lock sum: reverse fail, face fail",
+ "science": "Displayed-not-adopted z-probe neighbor-lock sum check (both fail); exploratory lphys probe.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7079,
+  "branch": "physics-loop/toe-lphys-block-nssumz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7389",
+ "title": "feat(nm2ot3slx): O freeze t+1 vs t+2 on two-axis same-lock x-probes: reverse fails, face fails, composition HOLD",
+ "science": "Same as #7388 on the SAME-LOCK seed. Its own text concedes the point: 'Reverse fail and face fail agree by accident of the shared letters at A,B,C. The set at D is not equal.' This is the band half-noticing that the opposite/same-lock contrast is invisible to the verdict on x-probes.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail (composition HOLD)",
+ "source": {
+  "pr": 7389,
+  "branch": "physics-loop/toe-lphys-block-nm2ot3slx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

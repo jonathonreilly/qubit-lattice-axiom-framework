@@ -1,0 +1,19 @@
+{
+ "id": "pr-6608",
+ "title": "feat(c3q6): cov3>0 is not Q6; positivity implies Q6",
+ "science": "Exact positive containment established and verified (pos_implies_Q6=1, q6_false_pos=empty): cov3>0 implies Q6=(wt1 OR adj2 OR vertex3) on all 32 maps, N_pos=N_both=20, with the eight Q6-true/cov3=0 exceptions named. The note also explains WHY the Q10 implication failed while this one holds - the c3q10 witness (1,1,0,0,0) has wt1=1, which Q6 contains and Q10 does not - a cross-member mechanism, not",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q6",
+ "source": {
+  "pr": 6608,
+  "branch": "physics-loop/toe-lphys-block-c3q6-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

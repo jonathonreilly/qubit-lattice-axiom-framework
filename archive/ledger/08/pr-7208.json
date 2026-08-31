@@ -1,0 +1,19 @@
+{
+ "id": "pr-7208",
+ "title": "feat(nsmopp): own incoming set on #7167: reverse HOLD, face HOLD",
+ "science": "M-readout on #7167's opposite-lock y-probes with A a seed: M(A)={-e1} against M(B)={+e1}, so reverse holds on a singleton pair (reverse_uses_singleton_M(A)=True). The positive half of the #7205 separation: M reproduces S^+'s verdict exactly when the probe is a seed, i.e. when its own record is a single letter.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7208,
+  "branch": "physics-loop/toe-lphys-block-nsmopp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

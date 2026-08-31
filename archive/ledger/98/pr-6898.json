@@ -1,0 +1,19 @@
+{
+ "id": "pr-6898",
+ "title": "feat(renmeet): ridge-enter two-seed meet |M|=1 vars 0",
+ "science": "Two-seed meeting set on B_12(0) u B_12((2,0,0)) (3203 sites): under kappa the equal-arrival set has 313 sites but the first-meeting set collapses to the singleton {(1,0,0)} at t=3, so the arrival-speed variance is 0 and TIES the unit-cost l1 comparator. Forcing negative: a one-seed roundness gain does not survive as a two-seed variance gap.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6898,
+  "branch": "physics-loop/toe-lphys-block-renmeet-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7035",
+ "title": "feat(nnlock): incoming-lock letters: reverse and face hold on none",
+ "science": "Named-sign readout of earliest incoming locks at the four x-probes: locks(A)={+-e2,+-e3}, locks(B)={+e1,+e2,+e3}, locks(C)=locks(D)={+e1}; 12 earliest combinations. Reverse and face are both `none` because B and D never carry a minus-signed lock, with genuine mutation controls showing that dropping the L(B)=- conjunct gives `some` (6/12) and dropping L(D)=- gives `hold-on-all`.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none",
+ "source": {
+  "pr": 7035,
+  "branch": "physics-loop/toe-lphys-block-nnlock-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

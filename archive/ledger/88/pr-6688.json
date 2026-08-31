@@ -1,0 +1,19 @@
+{
+ "id": "pr-6688",
+ "title": "feat(bitfire): leftover-frame section fires N_new=1",
+ "science": "CANONICAL COVARIANT SECTION constructed and fired, not a probe cell: the 'leftover-frame-positive' section f(sigma,b) resolves the two-way ambiguity left by the age bit by taking the completion whose ordered direction triple (leftover +, leftover -, full-axis +) has determinant +1 - a genuinely orientation-based, non-arbitrary choice. On the uneqrad lex-first breaker (|U|=81, balls 25/7/63, all pa",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6688,
+  "branch": "physics-loop/toe-lphys-block-bitfire-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

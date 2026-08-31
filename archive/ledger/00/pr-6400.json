@@ -1,0 +1,19 @@
+{
+ "id": "pr-6400",
+ "title": "feat(l1sparse): sparsest 1-site filler is not f_L1",
+ "science": "A sharp uniqueness theorem plus a forcing negative against L1, not a probe cell. Over the 96 cube-covariant 1-site fillers of the two-cube, the support minimum is m=26 attained by exactly N_min=1 map - and the unique minimizer is NOT f_L1 (supp 56 = 64 minus the 8 fully balanced cells) but f_min, the nonempty axis-transversal predicate (at most one occupied sign per axis), with the clean identity ",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6400,
+  "branch": "physics-loop/toe-lphys-block-l1sparse-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

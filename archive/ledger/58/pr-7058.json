@@ -1,0 +1,19 @@
+{
+ "id": "pr-7058",
+ "title": "feat(nstrec): nnseed t is not a function of unique L (Euclidean B3)",
+ "science": "Two-record version of the t-vs-L negative: 61 unique-lock sites, t is not a function of L, and the runner verifies the failure survives dropping BOTH seeds (+e_2 still occurs at ticks 2 and 4; a second non-seed witness is (0,-1,0) t=1 vs (0,-3,0) t=5). States the clean form: formation-tick cannot be recovered from Record content-alone. Together with #7048 this makes the negative seed-independent.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7058,
+  "branch": "physics-loop/toe-lphys-block-nstrec-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

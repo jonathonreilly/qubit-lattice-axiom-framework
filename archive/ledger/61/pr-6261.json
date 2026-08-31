@@ -1,0 +1,19 @@
+{
+ "id": "pr-6261",
+ "title": "[physics-loop] toe-lphys color3sup: bounded_theorem / bounded-support",
+ "science": "Route-2 exercise showing a 3-atom menu on M2 generates M2 not M3; elementary type mismatch in the color-unital-M3 exploratory pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6261,
+  "branch": "physics-loop/toe-lphys-block-color3sup-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

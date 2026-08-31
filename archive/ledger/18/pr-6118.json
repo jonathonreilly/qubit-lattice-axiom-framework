@@ -1,0 +1,19 @@
+{
+ "id": "pr-6118",
+ "title": "science: isolate the ten-ray local-frame Ward boundary",
+ "science": "Block 36: proves the ten Record rays form an exact basis of Sym(4) (metric-map determinant -24576), that no connected continuous frame group acts nontrivially by label permutations (stochastic-automorphism tangent dimension zero), and closes a supplied anisotropic two-vertex/one-link KKT witness with an exactly frame-covariant transported-ray bond defeating broad carrier no-gos.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6118,
+  "branch": "physics-loop/toe-axiom-closure-block36-local-frame-ward-20260811"
+ },
+ "carried_by": "#6123 subsumes the two-vertex witness in the full EC cube and carries the ten-ray basis as its per-vertex label structure; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

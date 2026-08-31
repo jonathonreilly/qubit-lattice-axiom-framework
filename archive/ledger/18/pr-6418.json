@@ -1,0 +1,19 @@
+{
+ "id": "pr-6418",
+ "title": "feat(cutmindyn): halt history of unique support-36 F_cut 1-site filler",
+ "science": "Displayed-not-adopted halt history of the support-36 filler, display-only continuation of the same exploratory campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6418,
+  "branch": "physics-loop/toe-lphys-block-cutmindyn-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

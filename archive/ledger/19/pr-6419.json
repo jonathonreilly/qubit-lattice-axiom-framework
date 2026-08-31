@@ -1,0 +1,19 @@
+{
+ "id": "pr-6419",
+ "title": "feat(cutminline): f_cutmin fills from the 3-site line seed with history (3,9,12)",
+ "science": "Displayed-not-adopted f_cutmin line-seed fill history, another display in the exploratory filler dynamics sub-series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6419,
+  "branch": "physics-loop/toe-lphys-block-cutminline-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

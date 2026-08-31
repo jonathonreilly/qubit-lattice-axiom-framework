@@ -1,0 +1,19 @@
+{
+ "id": "pr-6778",
+ "title": "feat(k4why16): k=4 face fail survives B16: t(8,0,0)=14 vs t(4,4,0)=10",
+ "science": "k=4 face-fail persistence check on B16, displayed-not-adopted, 0815 lphys campaign; diagnostic within the facek16 series, no standalone artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6778,
+  "branch": "physics-loop/toe-lphys-block-k4why16-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

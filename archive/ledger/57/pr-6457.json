@@ -1,0 +1,19 @@
+{
+ "id": "pr-6457",
+ "title": "feat(bothmax): unique F_cut joint 2-site and 3-site maximizer is (1,1,1,1,1)",
+ "science": "Uniqueness of the joint cov2/cov3 maximizer among 32 F_cut maps, displayed-not-adopted scan reconfirmation of #6430/#6453.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6457,
+  "branch": "physics-loop/toe-lphys-block-bothmax-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6299",
+ "title": "feat(cube333): occupancy step on a 3x3x3 cube with an interior",
+ "science": "Bounded_theorem note, no probe cell. SHELL-PROPAGATION LAW on a 3x3x3 patch with a genuine 6-NN interior (answering the blocker 'executable cube has no interior'): seeded at (1,1,1), L0 fills the cube in three exact cubic shells -- step 1 the 6 face-centers (k=1), step 2 the 12 edge-centers (k=2), step 3 the 8 corners (k=3), step 4 the identity. Source/tick sequence 0->6->18->26->26. The shell ind",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "source": {
+  "pr": 6299,
+  "branch": "physics-loop/toe-lphys-block-cube333-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

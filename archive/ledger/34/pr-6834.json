@@ -1,0 +1,19 @@
+{
+ "id": "pr-6834",
+ "title": "feat(hugclk): corridor-slide clock N_label=12 N_filt=12",
+ "science": "Corridor-slide mu clock fire count on 12 perp-mask hosts (displayed not adopted, mu barred from Admissibility), exploratory diagnostic in the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6834,
+  "branch": "physics-loop/toe-lphys-block-hugclk-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

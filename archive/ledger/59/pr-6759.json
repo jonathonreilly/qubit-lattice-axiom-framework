@@ -1,0 +1,19 @@
+{
+ "id": "pr-6759",
+ "title": "feat(011bodyk): (0,1,1) body reverse vs k is yes yes no no",
+ "science": "Displayed (0,1,1) body-reversal-vs-k table on B12 matching the nu pattern from 6748, explicitly not adopted; exploratory clause-comparison series member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6759,
+  "branch": "physics-loop/toe-lphys-block-011bodyk-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

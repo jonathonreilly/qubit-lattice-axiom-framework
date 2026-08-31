@@ -1,0 +1,19 @@
+{
+ "id": "pr-7633",
+ "title": "feat(nm2frm1spz): directed 1-step cyclic-frame transport along +e3 at t+1 on two-axis opposite seed: reverse HOLD, face fails",
+ "science": "+e3 1-step, global tau=1, reported face=fail. DEFECT: under the note's own stated per-site cut tau=t(q)+1 the face pair HOLDs \u2014 the destinations (0,0,2)/(0,1,2) form at tick 1 and their splits hold at tau=2 but not at tau=1. This is the same geometric cell as #7637, which uses the per-site cut and reports face=HOLD; neither PR mentions the other's convention. Zero check labels unique to this PR.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7633,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1spz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

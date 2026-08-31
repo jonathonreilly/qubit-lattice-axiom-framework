@@ -1,0 +1,19 @@
+{
+ "id": "pr-7281",
+ "title": "feat(nmcoverx): axis-cover of M and O at t+1 on #7214: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the #7214 x-probes; identical Axis table to #7280 (same probe signature class). Also reports cover0 = fail/fail/fail/hold at tau=t, the same formation-tick artifact.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7281,
+  "branch": "physics-loop/toe-lphys-block-nmcoverx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7756",
+ "title": "physics: construct the metric-weighted exterior kernel",
+ "science": "Block 214 constructs the metric-weighted exterior Clifford kernel with the exact V^2=det(g) volume selector, the first science block on the repaired mainline stack, held open for review-loop landing with block 215 stacked on it. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7756,
+  "branch": "physics-loop/toe-axiom-closure-block214-weighted-kernel-metric-symbol-20260827"
+ },
+ "carried_by": "#7803 (open metric-dynamics terminal; commit-ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6720",
+ "title": "feat(nuvs): only nu reverses; rho is still the roundest",
+ "science": "Four-law variance/reversal comparison table (displayed, not adopted), exploratory summary scan within the non-adopted cost series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6720,
+  "branch": "physics-loop/toe-lphys-block-nuvs-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

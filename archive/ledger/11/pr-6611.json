@@ -1,0 +1,19 @@
+{
+ "id": "pr-6611",
+ "title": "feat(c5q4): cov5>0 is not Q4; positivity implies Q4",
+ "science": "DEFECTIVE MEMBER - a cluster of unchecked copy-paste errors from the cov3 sibling, plus a self-contradiction. (a) The note lists (1,1,0,0,0) among the three Q4-true maps with cov5=0 and then two paragraphs later says the same map 'has cov5 = 4'. (b) Its framing premise 'cov5>0 is not Q10 and positivity does not imply Q10, unique Q10-false positive (1,1,0,0,0)' is refuted by sibling #6589, which co",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4",
+ "source": {
+  "pr": 6611,
+  "branch": "physics-loop/toe-lphys-block-c5q4-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7710",
+ "title": "feat(nm2frm1s3rd2): distance-2 neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1 on three-axis opposite near-face see",
+ "science": "Distance-2 readout of the 1-step -e3 on the near-face seed; the second HOLD/HOLD member, and also convention-robust (three witnesses per probe at tau<=1).",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7710,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1s3rd2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7321",
+ "title": "physics: construct endogenous self-addressing Record compiler",
+ "science": "Block 35: the first reliable endogenous Record compiler. One range-nine Borel single-site pure-birth Law on the globally blank cubic lattice admits hard-core Gaussian roots, grows every admitted root through equal-rate proper-cubic prefix frontiers (equal rate is what preserves cubic covariance), and completes one self-addressed six-neighbor trace read in finite abstract time ALMOST SURELY. Distin",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7321,
+  "branch": "physics-loop/toe-record-isolated-shape-compiler-block35-20260822"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

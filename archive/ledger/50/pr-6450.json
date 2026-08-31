@@ -1,0 +1,19 @@
+{
+ "id": "pr-6450",
+ "title": "feat(v30why1): first f00/f11 shared-face miss is vertex3 at t=3",
+ "science": "Mechanism behind #6444's shared-face miss. Running f00=(1,1,1,0,0) and f11=(1,1,1,1,1) independently from each of the four shared-face singletons, the first neighbourhood where f00 refuses and f11 fires is t=3, site (0,1,1), occupancy (1,0,0,1,0,1), axis type vertex3=(3,0,0) - all three axes unbalanced - and the SAME first axis type occurs on all four shared-face seeds. Histories (1,5,10) for f00 ",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6450,
+  "branch": "physics-loop/toe-lphys-block-v30why1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

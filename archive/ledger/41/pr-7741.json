@@ -1,0 +1,19 @@
+{
+ "id": "pr-7741",
+ "title": "[physics-loop] Block 205 H1 Schur Record probability germ \u2014 bounded theorem",
+ "science": "H1 Schur Record probability germ: strict zero-source Schur positivity plus analytic inversion plus an exact nonzero signed H1 derivative prove a finite interval of positive normalized NONUNIFORM eight-outcome laws with derivative pattern (l/8)(+,-,+,-,-,+,-,+), all coarse-port and pointer marginals stationary; the fixed M2 writer pulls the effects back exactly. The lane's Born-adjacent positive ke",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7741,
+  "branch": "physics-loop/toe-axiom-closure-block205-h1-schur-record-probability-germ-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

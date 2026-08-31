@@ -1,0 +1,19 @@
+{
+ "id": "pr-6896",
+ "title": "feat(c2face): cost-2 ridge-enter face reverse holds k=1..8 on B16",
+ "science": "c2 face table on B_16 is identical to kappa's (axis 6,12,18,20,22,24,26,32; face 4,8,10,12,14,16,18,20); adds t(14,1,1)=25. Inherits 6873's k=8 ball-wall artifact verbatim.",
+ "forcing": false,
+ "verdict_pair": "reverse=not-scored face=holds k=1..8 (k=8 is host-artifact)",
+ "source": {
+  "pr": 6896,
+  "branch": "physics-loop/toe-lphys-block-c2face-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

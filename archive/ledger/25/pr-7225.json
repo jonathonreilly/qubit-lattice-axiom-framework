@@ -1,0 +1,19 @@
+{
+ "id": "pr-7225",
+ "title": "feat(nsclsp): exist-choice Cl(3,0) from S+ on #7188: reverse HOLD, face HOLD",
+ "science": "The same exist-choice Cl(3,0) 4-cycle construction on the z-symmetric three-site process of #7188, reading the same-tick union-own set S^+ instead of M at the four vertices of Q and R: N_picks/N_hold are 40/12 on Q and 80/24 on R, so exist-choice reverse and face both HOLD while unique-L stays UNDEFINED from the mixed vertices.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7225,
+  "branch": "physics-loop/toe-lphys-block-nsclsp-20260815"
+ },
+ "carried_by": "archive/families/toe-lphys-20260812.md \u00a7Follow-on (the 19 citing notes)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

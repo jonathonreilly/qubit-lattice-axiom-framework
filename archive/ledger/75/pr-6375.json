@@ -1,0 +1,19 @@
+{
+ "id": "pr-6375",
+ "title": "feat(cell-geometry): the pinned pair - no map at any level can exchange the two exceptional cuttings",
+ "science": "Cycle 795: the strongest negative of the wall assault. Full weight census of the fiber kernel, the overlap and difference structure of its weight-four and weight-six vectors and the span they generate, the profile of its nine weight-eight vectors, identification of the two exceptional cuttings by graph degree and of the two span-outside directions emanating from the isolated one - and then a deriv",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6375,
+  "branch": "cycle795-pinned-pair-anatomy"
+ },
+ "carried_by": "Not restated later - the lane simply abandons the wall after #6378 (cycle 796) and pivots at cycle 798 to piece taxonomy. Archived because the whole cell-cutting lane is an exercise with no downstream",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6992",
+ "title": "feat(i2var): c2d4-plus-interior is worse-round than c2d4 on B12",
+ "science": "Variance comparison showing the non-adopted i2 interior tax is worse-round than c2d4, exploratory candidate-ranking numerics.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6992,
+  "branch": "physics-loop/toe-lphys-block-i2var-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

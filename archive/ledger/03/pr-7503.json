@@ -1,0 +1,19 @@
+{
+ "id": "pr-7503",
+ "title": "feat(nm2cycfrmx): cyclic-frame transport of (m,o_next,o_prev) at t+1 on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "Transport on the two-axis-opposite x-probes: fail,hold,hold,fail. Fails only where the frame itself is undefined (empty O_prev at A and D). Scalar neighbour-read fails at all four including where transport HOLDs.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7503,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

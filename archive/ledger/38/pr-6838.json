@@ -1,0 +1,19 @@
+{
+ "id": "pr-6838",
+ "title": "feat(hrk13): height-ridge same-k holds at k=13: t=25 vs t=43",
+ "science": "zeta at k=13 on B_39: t=25 vs 43, 1875>1849 -- identical to rho3's #6817. The note openly states 'The same-k pair under rho3 is also 25 versus 43' and defends independence only via the off-pair site t(3,2,2)=13. Redundant with #6817 on every reported number.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=13, 1875 > 1849; identical to rho3 #68",
+ "source": {
+  "pr": 6838,
+  "branch": "physics-loop/toe-lphys-block-hrk13-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

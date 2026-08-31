@@ -1,0 +1,19 @@
+{
+ "id": "pr-7109",
+ "title": "feat(nsopyown): opposite-lock y-probe own incoming: reverse holds, face UNDEFINED",
+ "science": "First reverse=hold anywhere in the campaign by PR number: own-incoming readout on opposite-lock y-probes gives L(A)=-e_1 (seed letter) and L(B)=+e_1, summing to zero. The hold comes entirely from the seed's own opposite lock pair being read back at A, not from any grown structure; the neighbour-lock readout on the same probes reports UNDEFINED.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=UNDEFINED",
+ "source": {
+  "pr": 7109,
+  "branch": "physics-loop/toe-lphys-block-nsopyown-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

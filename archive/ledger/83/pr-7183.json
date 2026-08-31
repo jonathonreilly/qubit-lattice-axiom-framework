@@ -1,0 +1,19 @@
+{
+ "id": "pr-7183",
+ "title": "feat(nsnnxinc): nnseed x-probe same-tick union own-lock: reverse fails, face HOLD",
+ "science": "Same-tick union own lock on nnseed x-probes: reverse fails, face holds from L(A)=-e2 having entered S^+(A) and pairing with +e2 at D. Same verdict as the formation-tick own-lock-in cell #7157, so the same-tick widening is verdict-neutral here.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7183,
+  "branch": "physics-loop/toe-lphys-block-nsnnxinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

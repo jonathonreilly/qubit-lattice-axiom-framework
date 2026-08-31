@@ -1,0 +1,19 @@
+{
+ "id": "pr-7421",
+ "title": "feat(nm2splt3x): 1-in 2-out freeze t+1 vs t+2 on two-axis opposite x-probes: reverse fails, face fails, composition HOLD",
+ "science": "Split freeze t+1 vs t+2 on opposite x-probes: fail/fail at both cuts, composition HOLD, where the t vs t+1 cut (#7397) composes fail. No new six-neighbour forms at t+2 here, so the freeze is vacuous at this cut.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail (composition HOLD)",
+ "source": {
+  "pr": 7421,
+  "branch": "physics-loop/toe-lphys-block-nm2splt3x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

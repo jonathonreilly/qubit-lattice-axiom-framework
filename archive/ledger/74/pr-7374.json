@@ -1,0 +1,19 @@
+{
+ "id": "pr-7374",
+ "title": "feat(nm2axoz): outgoing exist-opposite at t+1 on two-axis opposite z-probes: reverse fails, face fails",
+ "science": "Two-axis opposite seed, z-probes, exist-opposite of O: reverse HOLD, face fail - while cover on the same cell gives hold/hold (#7309) and M exist-opposite gives fail/fail (#7373). Three readouts, three different verdict pairs on one cell.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7374,
+  "branch": "physics-loop/toe-lphys-block-nm2axoz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

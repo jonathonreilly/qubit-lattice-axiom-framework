@@ -1,0 +1,19 @@
+{
+ "id": "pr-6672",
+ "title": "feat(ticklip): equal-radius lock-ticks never shrink Stab",
+ "science": "Lipschitz argument that equal-radius lock-ticks never shrink Stab, a campaign-internal displayed-not-adopted lemma carried by the series roll-up.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6672,
+  "branch": "physics-loop/toe-lphys-block-ticklip-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

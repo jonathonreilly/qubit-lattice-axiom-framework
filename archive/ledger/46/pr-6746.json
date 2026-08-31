@@ -1,0 +1,19 @@
+{
+ "id": "pr-6746",
+ "title": "feat(011b12): (0,1,1) reverses small pair on B12; doubled pair fails",
+ "science": "Displayed (0,1,1) B12 reversal check with the doubled pair failing, mirroring 6736 for the alternate clause, explicitly not adopted; exploratory series member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6746,
+  "branch": "physics-loop/toe-lphys-block-011b12-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

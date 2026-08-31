@@ -1,0 +1,19 @@
+{
+ "id": "pr-7327",
+ "title": "physics: derive pincer marginal from Schur response",
+ "science": "Block 41: on the Block 174/175 12x4 antiperiodic Dirac-Kahler fixture, the action itself produces the inverse precision the trace grade needs - W=Herm(q^-1)=q^-1 S q^-dagger > 0 with K_W=q^dagger S^-1 q, and Schur-integrating the exterior modes gives K_eff=(W_RR)^-1 exactly, so an additive local Gaussian source yields mu_R(E)=Tr(C_R E) reproducing the parent W9 marginal entry for entry. Separation",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7327,
+  "branch": "physics-loop/toe-pincer-schur-record-bridge-block41-20260823"
+ },
+ "carried_by": "#7328 (block 42) opens by restating both positive completions and their determinant weights as its own eq. (6)-(7) premise, reproduces the same total-probability failure with the same (+,-,-,+) residu",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

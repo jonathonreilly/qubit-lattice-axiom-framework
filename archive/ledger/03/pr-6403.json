@@ -1,0 +1,19 @@
+{
+ "id": "pr-6403",
+ "title": "feat(v31fill): four of eight F_cut fillers fire vertex3",
+ "science": "Same shape as #6402 on an orthogonal bit, not a probe cell: N_v31=4 of the 8 F_cut 1-site fillers have f(vertex3)=1, with f_sharp (f_L1 silent on the mixed-triple orbit (1,1,1)) as the second witness, filling with the identical history (1,4,8,11,12) T=4. IMPORTANT structural observation the notes do not state: reading the reported bit vectors, the 8 F_cut fillers are exactly the subcube {b_1unbala",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6403,
+  "branch": "physics-loop/toe-lphys-block-v31fill-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

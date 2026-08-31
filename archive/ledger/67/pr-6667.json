@@ -1,0 +1,19 @@
+{
+ "id": "pr-6667",
+ "title": "feat(maskreal): no Stab-ok mask is realized; N_real=0",
+ "science": "Bounded_theorem note, not a probe cell, but largely derivative: it re-runs the identical 15-row weight-4 census of #6668 (N_ok_masks=0) and then GATES a 3-ball realization search on that count, so the search never runs (search_ran=False) and N_real=0 is vacuous rather than established by a search. The substantive content is the census, which is #6668's; the added realization framing (3-ball unions",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6667,
+  "branch": "physics-loop/toe-lphys-block-maskreal-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

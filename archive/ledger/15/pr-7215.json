@@ -1,0 +1,19 @@
+{
+ "id": "pr-7215",
+ "title": "feat(nmsyopx): own incoming set on #7176: reverse fails, face fails",
+ "science": "M-readout on #7176's y-symmetric three-site x-probes. A is formed (t=3) with M(A)={+e3,-e3} against M(B)={+e1}: both bits fail while S+_reverse and S+_face both hold. Third independent instance of the #7205 separation, on a different seed and a different axis pair.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7215,
+  "branch": "physics-loop/toe-lphys-block-nmsyopx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7723",
+ "title": "physics: classify detector and exact M2 response boundary",
+ "science": "Classifies the real degree-two nondemolition detector family to a unique ray J=i Gamma_t Gamma_3^+ (rank-two commutator map), yielding a complete eight-projector proper-cubic-covariant coherent instrument with an exact nonidentity controlled M2 pointer dilation; but its phase-zero TT response is rank 0 at D1 / rank 1 at H1, failing the preregistered rank-two conjunction with No-Go Discipline FAIL,",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7723,
+  "branch": "physics-loop/toe-axiom-closure-block194-detector-m2-pointer-20260825"
+ },
+ "carried_by": "#7724 (proves the same PVM is an exact normalized one-shot Lueders instrument with faithful M2 dilation and carries the lane forward); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

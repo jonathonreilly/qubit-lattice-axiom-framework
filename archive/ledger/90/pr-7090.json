@@ -1,0 +1,19 @@
+{
+ "id": "pr-7090",
+ "title": "feat(nscoex): same-tick y existential opposite: reverse fail, face fail",
+ "science": "Existential-opposite on same-tick-inclusive y-probe lock sets: S(A)={+e_1}, S(B)={+e_1,+e_3}, S(C)=S(D)={+e_2} -> reverse FAIL, face FAIL. The runner's `x-probe-strictly-earlier-face-hold-is-not-this-display` records that the identical predicate on the x-probes gives face HOLD (#7081), so face swings hold/fail on probe frame alone under a fixed readout.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7090,
+  "branch": "physics-loop/toe-lphys-block-nscoex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

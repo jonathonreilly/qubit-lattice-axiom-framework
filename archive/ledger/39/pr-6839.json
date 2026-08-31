@@ -1,0 +1,19 @@
+{
+ "id": "pr-6839",
+ "title": "feat(hrvar): height-ridge is worse-round than rho3 on B12",
+ "science": "Height-ridge variance comparison vs rho3/mu on B_12 (displayed not adopted), exploratory diagnostic in the same series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6839,
+  "branch": "physics-loop/toe-lphys-block-hrvar-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

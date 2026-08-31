@@ -1,0 +1,19 @@
+{
+ "id": "pr-5946",
+ "title": "[physics-loop][review-loop] toe-time blockG11 (STACKED on #5944) \u2014 Cycle 886: bounded theorem \u2014 SL0 answered as pricing; the scope menu gain",
+ "science": "SL0 answered as pricing over the cyclic-restricted census: the C3 scope priced at one supplied clause from a six-clause menu, adding a fifth scope candidate. The census is reproduced exactly by 888 restriction gate (16/16 selectors, 4/4 reachability, 4/4 signatures) and the menu itself is proven a restriction artifact there (dissolved; two clauses circular, one broken-as-coded).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5946,
+  "branch": "physics-loop/toe-time-blockG11-20260802"
+ },
+ "carried_by": "PR #5947 (cycle-888 de-restriction reproduces the 886 receipt and dissolves the menu), terminally PR #5950",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

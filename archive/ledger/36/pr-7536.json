@@ -1,0 +1,19 @@
+{
+ "id": "pr-7536",
+ "title": "feat(nm2frmrd3y): neighbor-read of cyclic-frame transport at t+1 on three-axis opposite y-probes: reverse HOLD, face fails",
+ "science": "Three-axis near-face y-probes: D=(1,1,0) has -e_1 in both M and O, so cover fails by axis overlap rather than by a missing axis.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7536,
+  "branch": "physics-loop/toe-lphys-block-nm2frmrd3y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

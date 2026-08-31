@@ -1,0 +1,19 @@
+{
+ "id": "pr-6660",
+ "title": "feat(seedax): claim-axis does not finish history labels; still N_fire=2",
+ "science": "Claim-axis tie-persistence check, incremental displayed-not-adopted exploration in the same campaign series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6660,
+  "branch": "physics-loop/toe-lphys-block-seedax-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

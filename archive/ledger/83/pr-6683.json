@@ -1,0 +1,19 @@
+{
+ "id": "pr-6683",
+ "title": "feat(bitlaw): lex-first one-bit labeling is not G+ equivariant",
+ "science": "Equivariance failure of the lex-first one-bit labeling, terminal-looking but still a displayed-not-adopted exploratory pack whose route verdict later blocks and memos carry.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6683,
+  "branch": "physics-loop/toe-lphys-block-bitlaw-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

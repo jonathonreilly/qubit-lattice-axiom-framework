@@ -1,0 +1,19 @@
+{
+ "id": "pr-7612",
+ "title": "feat(nm2frm2sx): directed 2-step cyclic-frame transport along +e1 at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "The band's only NON-CYCLE member: a directed two-step transport along +e_1 from each of the four 2A seed sites, scored at a single GLOBAL cut \u03c4=1 rather than per-vertex \u03c4=t+1. All eight named edges fail (targets unformed at \u03c4=1 or split-fail), so reverse=face=fail; reproduced independently. Structural outlier: 201-line note with NO N1-N8 no-go gates and only 33 checks (53 of the band's standard ga",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7612,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2sx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

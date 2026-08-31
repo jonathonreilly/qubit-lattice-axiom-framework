@@ -1,0 +1,19 @@
+{
+ "id": "pr-6308",
+ "title": "feat(clockid): unique empty-vanishing monotone is formation count",
+ "science": "One-line lemma that formation count is the unique empty-vanishing monotone; trivial bookkeeping-scale item in the exploratory campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6308,
+  "branch": "physics-loop/toe-lphys-block-clockid-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

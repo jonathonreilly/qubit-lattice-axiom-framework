@@ -1,0 +1,19 @@
+{
+ "id": "pr-7414",
+ "title": "feat(nm2t2slx): M two-tick composition on two-axis same-lock x-probes: reverse fails, face fails, composition HOLD",
+ "science": "M two-tick on same-lock x-probes. Its runner prints six readouts on one cell: exist-opposite fail/fail, cover fail/fail, split fail/fail, forall-perp HOLD/HOLD, simultaneous HOLD/HOLD, neighbor-read HOLD/HOLD. Its own text: the four M letters 'agree by accident' with the opposite seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail (composition HOLD)",
+ "source": {
+  "pr": 7414,
+  "branch": "physics-loop/toe-lphys-block-nm2t2slx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

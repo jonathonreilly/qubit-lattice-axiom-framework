@@ -1,0 +1,19 @@
+{
+ "id": "pr-6593",
+ "title": "feat(qstartot4): among Q_star, Max(4) is unique f1, not vertex3 and mixed3",
+ "science": "Positive uniqueness characterization plus an unremarked totality fact: max_cov4 over Q_* equals 495, which is exactly m4 = C(12,4), so f1=(1,1,1,1,1) fills EVERY four-site seed and is the unique such map in Q_* - the note reports max_cov4 and m4 separately and never joins them. Carries the full eight-line cov4 census (173,189,425,489,191,195,459,495) and cov4(f_L1)=489.",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (maximizer test; max_iff_Q=False, N_max",
+ "source": {
+  "pr": 6593,
+  "branch": "physics-loop/toe-lphys-block-qstartot4-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7066",
+ "title": "feat(nfneigh): neighbor-lock unique letter A+/B+/C-/D+; reverse and face none",
+ "science": "Neighbour-lock selector (named sign of the locks of strictly-earlier six-neighbours): L(A)=+, L(B)=+, L(C)=-, L(D)=+ -> reverse=face=`none`. L(C)=- while C's own incoming lock is +e_1, so this readout is genuinely independent of the self-incoming letter. States the structural no-go explicitly: because n(C)=n(D) on this configuration, NO function f(n) of the occupancy kernel can ever make face hold",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none",
+ "source": {
+  "pr": 7066,
+  "branch": "physics-loop/toe-lphys-block-nfneigh-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

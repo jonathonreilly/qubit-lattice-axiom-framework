@@ -1,0 +1,19 @@
+{
+ "id": "pr-6905",
+ "title": "feat(c2dbl): cost-2 ridge-enter doubled pairing holds k=1..4",
+ "science": "Doubled-pairing reverse display for cost-2 ridge-enter over k=1..4 (displayed, not adopted); exploratory series member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6905,
+  "branch": "physics-loop/toe-lphys-block-c2dbl-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

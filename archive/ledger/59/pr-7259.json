@@ -1,0 +1,19 @@
+{
+ "id": "pr-7259",
+ "title": "feat(nmze2in): own incoming set on #7193: reverse fails, face fails",
+ "science": "M exist-opposite on the z-axis-opposite-e2 #7193 y-probes; M(A)={+e_1,-e_1,+e_3} mixed, B/C/D={+e_2}. fail/fail. Establishes that an internal opposite pair inside M(A) does not score reverse -- the predicate is strictly cross-probe. Recomputed: exact.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7259,
+  "branch": "physics-loop/toe-lphys-block-nmze2in-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7053",
+ "title": "feat(nsgram): nnseed Gram signature is (1,2,0), equals gram4",
+ "science": "Minkowski Gram on the nnseed tick list (2,1,2): G=((3,1,3),(1,-1,0),(3,0,1)), exact LDL pivots (3,-4/3,-5/4), leading minors (3,-4,5), signature (1,2,0). Crucially it also computes the 1-seed Gram on the same three sites with the real perp ticks (3,2,3): G_1=((8,5,8),(5,2,4),(8,4,6)), entrywise different but ALSO signature (1,2,0). Euclidean mutation gives (3,0,0).",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7053,
+  "branch": "physics-loop/toe-lphys-block-nsgram-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

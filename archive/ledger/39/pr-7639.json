@@ -1,0 +1,19 @@
+{
+ "id": "pr-7639",
+ "title": "feat(nm2frm1spf): directed 1-step cyclic-frame transport along +e3 at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "+e3 1-step on the 'far-face' three-axis seed (third pair at (0,0,-1)/(0,1,-1)). Real content: this is the only seed variant that changes a probe frame \u2014 the adjacent +e_3 lock destroys the origin's split, which the note states correctly. NAMING DEFECT: 'far-face' is the pair adjacent to the probes and 'near-face' is the pair two steps away at x=2; the nomenclature is inverted relative to the geome",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7639,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1spf-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

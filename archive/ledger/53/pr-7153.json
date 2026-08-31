@@ -1,0 +1,19 @@
+{
+ "id": "pr-7153",
+ "title": "feat(nsopinx): nsopp x-probe own-lock-in exist-opposite: reverse fails, face HOLD",
+ "science": "Own-lock-in on nsopp x-probes. Face flips fail -> hold purely because L(C)=+e1 enters S^+(C) and pairs with -e1 already in S^+(D); reverse stays fail because L(A) is UNDEFINED (three earliest incoming steps). Its runner emits an explicit channel attribution (own-own / own-neighbour / neighbour-neighbour) that the note text only paraphrases.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7153,
+  "branch": "physics-loop/toe-lphys-block-nsopinx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

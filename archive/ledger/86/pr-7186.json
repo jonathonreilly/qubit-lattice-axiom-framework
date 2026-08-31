@@ -1,0 +1,19 @@
+{
+ "id": "pr-7186",
+ "title": "feat(nszopinz): z-symmetric three-site z-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "Same-tick union own lock on the z-symmetric three-site seed, z-probe frame: reverse HOLD uses L(A)=-e1 (neighbour-only reverse fails), face holds from the earlier seed neighbour A locking -e1 against +e1 at D. Completes the cubic set of symmetric three-site seeds with #7175/#7185.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7186,
+  "branch": "physics-loop/toe-lphys-block-nszopinz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

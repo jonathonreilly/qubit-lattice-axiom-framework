@@ -1,0 +1,19 @@
+{
+ "id": "pr-7596",
+ "title": "feat(nm2sfzslrd): neighbor-read of cyclic lex-smallest frame holonomy at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Same-lock seed, xy z=1/z=2, lex-smallest, neighbor-read; fail/fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7596,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzslrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

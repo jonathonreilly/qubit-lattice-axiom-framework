@@ -1,0 +1,19 @@
+{
+ "id": "pr-6674",
+ "title": "feat(uneqrun): all four tick-ok pair members fire N_new=1",
+ "science": "Fire run of the four tick-ok pair members on the unequal-radius breaker, displayed-not-adopted exploratory continuation.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6674,
+  "branch": "physics-loop/toe-lphys-block-uneqrun-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

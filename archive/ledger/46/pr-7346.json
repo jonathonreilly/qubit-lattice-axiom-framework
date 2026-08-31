@@ -1,0 +1,19 @@
+{
+ "id": "pr-7346",
+ "title": "[physics-loop][gravity-metric-pullback][bounded_theorem][bounded-support] localize torus and constraint boundary",
+ "science": "Exact ten-metric-coordinate variational pullback of the supplied line-average metric map with quadratic convergence to the linearized Einstein comparator and TT positivity on all 2394 interior samples, against which the line-map global lattice carrier and Ward-only full metric inverse are proved bounded-infeasible (off-axis quotient poles, negative conformal direction, rank-8/10 chart mismatch, co",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7346,
+  "branch": "physics-loop/toe-axiom-closure-block186-metric-first-reduction-20260824"
+ },
+ "carried_by": "#7348 (regression-gates Block 186 exactly and executes the rerouted common-action tournament); Einstein-limit superseded by #7814; #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

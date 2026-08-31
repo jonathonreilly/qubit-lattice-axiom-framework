@@ -1,0 +1,19 @@
+{
+ "id": "pr-7442",
+ "title": "feat(nm2orisumz): outgoing-sum leftover det orientation of 1-in 2-out at t+1 on two-axis opposite z-probes: reverse HOLD, face fails",
+ "science": "Displayed-not-adopted member check (outgoing-sum leftover det orientation opposite z) in the toe-lphys-20260812 enumeration pack; exploratory variant, no decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7442,
+  "branch": "physics-loop/toe-lphys-block-nm2orisumz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

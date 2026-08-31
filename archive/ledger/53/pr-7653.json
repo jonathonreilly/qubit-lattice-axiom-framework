@@ -1,0 +1,19 @@
+{
+ "id": "pr-7653",
+ "title": "feat(nm2frm2fzx): directed 2-step cyclic-frame transport along +e1 at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "Far-face +e1 2-step, global tau. Its gates name the mechanism honestly (theorem1-mid-unformed-or-split-fail, theorem1-end-unformed-at-tau) \u2014 the chain dies on definedness, not on any transport property. Convention-stable.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7653,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2fzx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

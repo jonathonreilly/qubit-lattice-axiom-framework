@@ -1,0 +1,19 @@
+{
+ "id": "pr-6882",
+ "title": "feat(klk7): kappa-plus-late-leave same-k holds at k=7: t=19 vs t=25",
+ "science": "kappa-lambda on B_21: 19 vs 25. Establishes a genuine three-way clause separation (kappa cannot price late-leave, lambda2 cannot price ridge-enter, kappa-lambda prices both) while the arrivals stay exactly the rho3 pair.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6882,
+  "branch": "physics-loop/toe-lphys-block-klk7-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

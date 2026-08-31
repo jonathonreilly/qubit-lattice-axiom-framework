@@ -1,0 +1,19 @@
+{
+ "id": "pr-7372",
+ "title": "feat(nm2ax12x): 1-in 2-out split on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "Two-axis opposite seed, x-probes, 1-in 2-out split: fail/fail, matching axis-cover (#7307) exactly. One of only two PRs that states the collapse in its own claim_type_reason: '|Axis(M)|=1 at each probe so split equals cover'.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7372,
+  "branch": "physics-loop/toe-lphys-block-nm2ax12x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7518",
+ "title": "feat(nm2cycfrmholfy): cyclic-frame holonomy around the y-shifted unit square at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "Holonomy around the Y-SHIFTED unit square: reverse and face both fail. Second forcing negative on a different loop; here two of the four edges DO have valid P matrices (P(R\u2192S), P(S\u2192P)) but Q and Q2 have no frame, so the product is undefined. Confirms the holonomy bit is a definedness test.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7518,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmholfy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6134",
+ "title": "Block 43: repaired Regge Ward and increasing-torus Green sector",
+ "science": "Block 43: exact static displacement-Ward compatibility for one positive unit tick source in the complete repaired fifteen-edge Regge sector, exhausting 1,872,320 nonzero static modes on L=33..97, reconstructing the residue-forced 1/(2pi) Green coefficient, and exposing the metric-only Brillouin-edge pole as a restriction artifact.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6134,
+  "branch": "physics-loop/toe-axiom-closure-block43-regge-increasing-region-20260811"
+ },
+ "carried_by": "#6135 eliminates the nonmetric directions, reconstructs the linearized Einstein tensor, and preserves this block's unit-source h_tt=2 residue; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6687",
+ "title": "feat(bitname): leftover-frame section is named by occupancy+bit+orientation",
+ "science": "Leftover-frame section naming enumeration (displayed, not adopted) in the same exploratory campaign series, carried by later roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6687,
+  "branch": "physics-loop/toe-lphys-block-bitname-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

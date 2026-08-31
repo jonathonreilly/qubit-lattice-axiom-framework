@@ -1,0 +1,19 @@
+{
+ "id": "pr-7361",
+ "title": "feat(nm2chiralz): oriented 1-in 2-out frame at t+1 on two-axis opposite z-probes: reverse fails, face HOLD",
+ "science": "Two-axis opposite seed, z-probes, oriented 1-in 2-out frame: Orient(q) = sign det(m, o1, o2) with (o1,o2) the two Axis(O) unit vectors in canonical order e1<e2<e3. Because cover forces Axis(O) to be the complement of Axis(M), the outgoing plane is determined by m, and I verified Orient(q) = sgn(m)*eps(axis(m)) with eps(e1)=eps(e3)=+1, eps(e2)=-1 for all six letters - the determinant carries zero i",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7361,
+  "branch": "physics-loop/toe-lphys-block-nm2chiralz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

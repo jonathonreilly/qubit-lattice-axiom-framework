@@ -1,0 +1,19 @@
+{
+ "id": "pr-7690",
+ "title": "feat(nm2frm2lzs): L-path cyclic-frame transport -e3 then +e2 at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Bare L-path (-e3,+e2) on the same-lock seed. Recomputed: two independent failures (split-fail at the (0,0,1) source, two-in at (0,2,-1)) coincide, so the same-lock seed cannot reproduce the face HOLD that the opposite seed gives for +e2 (#7673).",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7690,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lzs-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

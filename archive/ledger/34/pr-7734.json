@@ -1,0 +1,19 @@
+{
+ "id": "pr-7734",
+ "title": "physics: prove the parity-resolved window law and reduce the intertwining mechanism (block 193)",
+ "science": "Block 193 proves the unified parity-resolved window law and mechanism reduction (65280-unit exhaustive verification, cross-model adversarial check, honest proof-status flags), publishable on its own and the parent of open KEEP PR 7735.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7734,
+  "branch": "physics-loop/toe-axiom-closure-block193-parity-window-intertwining-law-20260825"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

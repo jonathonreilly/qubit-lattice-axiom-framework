@@ -1,0 +1,19 @@
+{
+ "id": "pr-6553",
+ "title": "feat(ntonopp): among non-tot Q_*, cov2=36 iff opp2=1",
+ "science": "Displayed-not-adopted cov2=36 iff opp2 check among 4 non-total Q_* maps; tiny exploratory fact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6553,
+  "branch": "physics-loop/toe-lphys-block-ntonopp-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

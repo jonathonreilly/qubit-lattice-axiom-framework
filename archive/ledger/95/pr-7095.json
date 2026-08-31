@@ -1,0 +1,19 @@
+{
+ "id": "pr-7095",
+ "title": "feat(ownvec): own incoming lock vector: reverse UNDEFINED, face fails",
+ "science": "Own unique incoming lock readout on nnseed x-probes. Load-bearing as a controlled contrast: on the SAME process and SAME probes the already-recorded-neighbour readout gives L(C)=-e_2, L(D)=+e_2 and face HOLDS, while the own-incoming readout gives L(C)=L(D)=+e_1 and face FAILS. The verdict is a property of the readout, not of the lattice process.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=fail",
+ "source": {
+  "pr": 7095,
+  "branch": "physics-loop/toe-lphys-block-ownvec-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

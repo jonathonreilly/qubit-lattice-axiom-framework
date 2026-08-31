@@ -1,0 +1,19 @@
+{
+ "id": "pr-5985",
+ "title": "[physics-loop][review-loop] toe-time blockM6 (STACKED on #5984) \u2014 Cycle 920: bounded theorem \u2014 the measurement was right and the floor was a",
+ "science": "Re-audit: the deposition measurement reproduces exactly (22/22, three implementations) but the floor it supposedly supported is a GRID ARTIFACT - the true crossing is 0.1405, the namesake quantity cancels algebraically out of its own criterion, and the sparse window rests on one event; the 0.20 floor citation is dead from both sides and the 916 premise corrected. Standing correction with no succes",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5985,
+  "branch": "physics-loop/toe-time-blockM6-20260802"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

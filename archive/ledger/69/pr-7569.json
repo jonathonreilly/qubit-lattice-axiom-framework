@@ -1,0 +1,19 @@
+{
+ "id": "pr-7569",
+ "title": "feat(nm2holyzfz): yz-plane cyclic-frame holonomy at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "yz-plane holonomy on the far-face seed; A=origin has O={-e_2} so split fails and two edges of the reverse square are undefined.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7569,
+  "branch": "physics-loop/toe-lphys-block-nm2holyzfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

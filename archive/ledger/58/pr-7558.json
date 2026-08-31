@@ -1,0 +1,19 @@
+{
+ "id": "pr-7558",
+ "title": "feat(nm2sfzholfz): lex-smallest unit-square cyclic-frame holonomy at t+1 on three-axis far-face opposite seed: reverse HOLD, face fails",
+ "science": "Lex-smallest holonomy on the far-face three-axis seed; identity product again, bits identical to the lex-largest twin.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7558,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzholfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

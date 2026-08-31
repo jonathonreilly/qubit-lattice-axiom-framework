@@ -1,0 +1,19 @@
+{
+ "id": "pr-7544",
+ "title": "feat(nm2rdholfz): neighbor-read of cyclic-frame holonomy at t+1 on three-axis far-face opposite unit square: reverse fails, face fails",
+ "science": "Holonomy template: four unit squares, edge P(q,r)=F(q)^T F(r), holonomy = P12 P23 P34 P41. A-square product is printed as the identity; B/C/D fail only because a corner has split fail, and an entirely out-of-host square at z=4 returns fail too. Recompute: the four-edge product telescopes to F1^T F1 = I over all 331,776 corner-frame assignments, so 'product == I_3' is an algebraic identity, never a",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7544,
+  "branch": "physics-loop/toe-lphys-block-nm2rdholfz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

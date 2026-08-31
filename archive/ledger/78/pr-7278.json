@@ -1,0 +1,19 @@
+{
+ "id": "pr-7278",
+ "title": "feat(nmcover): axis-cover of M and O at t+1 on #7167: reverse HOLD, face HOLD",
+ "science": "Axis-cover: Axis(M) and Axis(O) are disjoint and their union is {e_1,e_2,e_3} at all four #7208 y-probes. This is the strongest predicate in the band's nested family (cover \u2283 forall-perp \u2283 M\u2229O=\u2205). Its own runner computes the #7272 leftover verdict (fail/fail) alongside its own (hold/hold) and cites the label difference as proof of distinctness.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7278,
+  "branch": "physics-loop/toe-lphys-block-nmcover-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6415",
+ "title": "feat(cut2list): list four F_cut 2-site filler remaining-bit tuples",
+ "science": "Displayed-not-adopted listing of four 2-site filler bit tuples, a display-only sibling of 6413 in the same exploratory series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6415,
+  "branch": "physics-loop/toe-lphys-block-cut2list-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

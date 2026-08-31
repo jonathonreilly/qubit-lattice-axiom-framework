@@ -1,0 +1,19 @@
+{
+ "id": "pr-7140",
+ "title": "feat(nstriex): three-site x-probe later-tick exist-opposite: reverse HOLD, face HOLD",
+ "science": "Exist-opposite on the three-site seed x-probes: hold/hold, with S_*(B) equal to the full six-element lock alphabet. Confirms that the exist-opposite verdict is invariant across all five seed orbits tested in the band while the formation-time unique-vector readout on the same probes reports fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7140,
+  "branch": "physics-loop/toe-lphys-block-nstriex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6617",
+ "title": "physics: prove self-chart emptiness and the stationarity diagnosis",
+ "science": "Block 117 proves the self-chart emptiness via a fully symbolic window identity f(1)=-|Y01-Y12|^2 with exact pinned constants, family closures, and an independent cross-model checker \u2014 a decisive closed-form theorem on the closure chain stacked on kept Block 116. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6617,
+  "branch": "physics-loop/toe-axiom-closure-block117-self-chart-emptiness-stationarity-20260816"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

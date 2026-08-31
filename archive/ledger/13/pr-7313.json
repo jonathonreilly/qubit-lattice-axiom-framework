@@ -1,0 +1,19 @@
+{
+ "id": "pr-7313",
+ "title": "feat(nm2slpx): forall-orthogonal M vs O at t+1 on two-axis same-lock x-probes: reverse HOLD, face HOLD",
+ "science": "Two-axis same-lock seed, x-probes, forall-orthogonal: forall-perp HOLDs at all four probes while axis-cover FAILs at A and D (union misses e_2) and every exist-opposite variant (M reverse, O reverse, M face, O face) also fails. Confirms on a second seed the #7299 finding that forall-perp survives where cover dies.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7313,
+  "branch": "physics-loop/toe-lphys-block-nm2slpx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

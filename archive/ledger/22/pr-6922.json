@@ -1,0 +1,19 @@
+{
+ "id": "pr-6922",
+ "title": "feat(w2face): cost-2 out-face face reverse fails k=6 and k=7",
+ "science": "w2 face table on B_16 (axis 6,12,18,24,26,28,31,37; face 4,8,11,14,17,20,22,24), pattern yes,yes,yes,yes,yes,no,no,yes. DEFECT: the k=8 'yes' is a ball-wall artifact \u2014 on B_60 t(16,0,0)=32 and the bit is 1024<1152, false. The true host-free pattern is holds k<=5, fails all k>=6, identical to omega.",
+ "forcing": false,
+ "verdict_pair": "reverse=not-scored face=fails k=6,7 on B_16 (k=8 hold is hos",
+ "source": {
+  "pr": 6922,
+  "branch": "physics-loop/toe-lphys-block-w2face-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

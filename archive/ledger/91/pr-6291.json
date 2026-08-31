@@ -1,0 +1,19 @@
+{
+ "id": "pr-6291",
+ "title": "feat(specpv): construct L0 k=2,3 spectral projectors over Q(sqrt k)",
+ "science": "Constructs L0 k=2,3 spectral projectors over Q(sqrt k) as a small comparator exercise, explicitly not Born and not axiom text; exploratory pack member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6291,
+  "branch": "physics-loop/toe-lphys-block-specpv-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

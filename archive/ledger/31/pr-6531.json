@@ -1,0 +1,19 @@
+{
+ "id": "pr-6531",
+ "title": "feat(p6sel): cov6>0 iff wt1 or adj2 or vertex3",
+ "science": "Displayed-not-adopted cov6>0 selector characterization (Q6 disjunction) among 32 maps; exploratory finite enumeration, not adopted anywhere.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6531,
+  "branch": "physics-loop/toe-lphys-block-p6sel-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

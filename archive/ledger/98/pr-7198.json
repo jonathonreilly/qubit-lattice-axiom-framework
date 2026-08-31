@@ -1,0 +1,19 @@
+{
+ "id": "pr-7198",
+ "title": "feat(nsye3sz): y-axis same-lock +e_3 z-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "y-axis same-lock +e_3 seed, z-probes. Exact duplicate of #7192 (recomputed: identical ticks and identical S^+ at all four probes); presented and titled as an independent result. Also carries only_neighbor_neighbor as its hold channel.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7198,
+  "branch": "physics-loop/toe-lphys-block-nsye3sz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

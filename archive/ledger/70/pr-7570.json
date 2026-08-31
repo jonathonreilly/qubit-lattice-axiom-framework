@@ -1,0 +1,19 @@
+{
+ "id": "pr-7570",
+ "title": "feat(nm2xyfzrd): neighbor-read of xy-plane cyclic-frame holonomy at t+1 on three-axis far-face opposite seed: reverse HOLD, face fails",
+ "science": "Neighbour-read of xy-plane holonomy on the far-face seed; reverse square holds, face square at z=0 fails from split fail at C,C1,C2.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7570,
+  "branch": "physics-loop/toe-lphys-block-nm2xyfzrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6924",
+ "title": "feat(ofk2): out-face same-k holds at k=2: t=6 vs t=10",
+ "science": "omega same-k at k=2 on B_8: t(2,0,0)=6, t(2,2,2)=10, 108>100; t(8,0,0)=24, t(3,2,0)=11 (9 under rho3). Independently re-derives the mid-leave vacuity of 6902 as a side lemma (mid_leave_hits = 0), which is the strongest form of that no-go in the band.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds face=not-scored",
+ "source": {
+  "pr": 6924,
+  "branch": "physics-loop/toe-lphys-block-ofk2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

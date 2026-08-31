@@ -1,0 +1,19 @@
+{
+ "id": "pr-7001",
+ "title": "feat(s2k1): c2d4-plus-soft-ridge same-k holds at k=1: t=3 vs t=5",
+ "science": "Tiny k=1 same-k display for the non-adopted s2 soft-ridge variant, a fragment of the exploratory candidate series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7001,
+  "branch": "physics-loop/toe-lphys-block-s2k1-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

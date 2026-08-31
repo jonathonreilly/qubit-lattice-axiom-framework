@@ -1,0 +1,19 @@
+{
+ "id": "pr-6785",
+ "title": "feat(facek18): on B18, nu face reverse still holds k=1..3 and fails k=4..8",
+ "science": "Host-independence check on the face k-sweep: repeating #6769 on B_18(0) gives the SAME bits (yes k=1,2,3; no k=4..8) even though the k=8 axis time is now the corrected t(16,0,0)=22 instead of the B_16 wall value 24 (the corridor site (16,1,0), |v|_1=17, is in-ball here). So the k=4 cutoff is real and not a wall artifact, unlike the earlier k=6 'return'. Full witnessing walks for all sixteen arriva",
+ "forcing": false,
+ "verdict_pair": "face reverse by k on B_18: YES k=1,2,3; NO k=4,5,6,7,8",
+ "source": {
+  "pr": 6785,
+  "branch": "physics-loop/toe-lphys-block-facek18-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

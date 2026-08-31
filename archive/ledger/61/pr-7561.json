@@ -1,0 +1,19 @@
+{
+ "id": "pr-7561",
+ "title": "feat(nm2pthrdz): three-path neighbor-read of cyclic-frame transport at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "Three-path applied to neighbour-read transport; all three paths fail at both face starts. Carried by 7549.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7561,
+  "branch": "physics-loop/toe-lphys-block-nm2pthrdz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

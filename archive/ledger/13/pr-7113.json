@@ -1,0 +1,19 @@
+{
+ "id": "pr-7113",
+ "title": "feat(nspary): parallel-opposite y-probe unique vector: reverse UNDEFINED, face fails",
+ "science": "Neighbour-lock vector readout on parallel-opposite y-probes; C=(0,2,0) has four recorded neighbours all locking +e_2 so L(C)=+e_2 is defined, and face fails against L(D)=-e_1. One of only three members in the band where face is `fail` rather than UNDEFINED.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=fail",
+ "source": {
+  "pr": 7113,
+  "branch": "physics-loop/toe-lphys-block-nspary-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

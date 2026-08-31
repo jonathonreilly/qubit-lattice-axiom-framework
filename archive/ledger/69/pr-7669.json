@@ -1,0 +1,19 @@
+{
+ "id": "pr-7669",
+ "title": "physics: prove the boundary-monodromy table and the volume-sensitivity package (block 191)",
+ "science": "Block 191 of the stacked toe-axiom-closure mainline (on #7580/b190): exact boundary-monodromy table, validity-rule cleanup, and volume-sensitivity package with cross-model adversarial check plus 59/59 checker and 49-mutation battery \u2014 decisive artifact and live dependency of later blocks. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7669,
+  "branch": "physics-loop/toe-axiom-closure-block191-boundary-mode-volume-sensitivity-20260825"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

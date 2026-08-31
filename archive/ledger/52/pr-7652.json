@@ -1,0 +1,19 @@
+{
+ "id": "pr-7652",
+ "title": "feat(nm2frm2n3x): directed 2-step cyclic-frame transport along +e1 at t+1 on three-axis opposite near-face seed: reverse fails, face fails",
+ "science": "Near-face +e1 2-step, per-site tau. Its body states the band's real mechanism more plainly than any other member: 'Third pair does not open the x=1 wall' \u2014 i.e. the verdict is set by where the frame field's support runs out, not by transport. I confirmed the claim: the x=2 seed pair leaves all four probe frames unchanged and the verdict pair unchanged in 18/18 cells.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7652,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2n3x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

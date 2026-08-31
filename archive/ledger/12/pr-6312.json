@@ -1,0 +1,19 @@
+{
+ "id": "pr-6312",
+ "title": "feat(extvac): off-patch occupancy 0 is load-bearing",
+ "science": "Notes the displayed vacuum exterior is load-bearing for the two-cube step; small boundary-condition remark in the exploratory series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6312,
+  "branch": "physics-loop/toe-lphys-block-extvac-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

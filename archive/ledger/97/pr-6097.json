@@ -1,0 +1,19 @@
+{
+ "id": "pr-6097",
+ "title": "science(gravity): prove additive-zero contact ambiguity",
+ "science": "Block 25: exact normalized-family gauge theorem \u2014 S_i(g)->S_i(g)+F(g) leaves every normalized probability unchanged while shifting log Z and its geometry Hessian by -F and -F'', so ANY symmetric local contact Hessian is realizable and an explicit shift D_s=-U M_s U^dagger cancels the complete six-mode tensor at machine precision. Normalized Record probabilities alone cannot authorize a geometry re",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6097,
+  "branch": "physics-loop/toe-axiom-closure-block25-additive-zero-20260810"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

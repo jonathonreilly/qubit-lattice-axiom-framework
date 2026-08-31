@@ -1,0 +1,19 @@
+{
+ "id": "pr-6461",
+ "title": "feat(c3f0geo): f0 three-site misses form one rotation orbit",
+ "science": "Orbit structure of f0 3-site misses (one rotation orbit), small displayed-not-adopted geometric note in the scan series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6461,
+  "branch": "physics-loop/toe-lphys-block-c3f0geo-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7200",
+ "title": "feat(nsxe3sz): x-axis same-lock +e_3 z-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "x-axis same-lock +e_3 seed, z-probes. Near-twin of #7191: the two differ only by the seed lock sign at (1,0,0), which is a 6-neighbour of the z-probe D, so exactly one letter (-e_3) separates the two cells and both still hold/hold. This is the band's only demonstration that a seed sign flip CAN reach a probe -- and that even then the verdict is unchanged.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7200,
+  "branch": "physics-loop/toe-lphys-block-nsxe3sz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

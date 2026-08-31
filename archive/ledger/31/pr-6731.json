@@ -1,0 +1,19 @@
+{
+ "id": "pr-6731",
+ "title": "feat(why12): B8 t(6,0,0)=12 uses a path that leaves B6",
+ "science": "Displayed single-path explanation of why B8 gives t(6,0,0)=12 via a route leaving B6, explicitly not adopted; incremental exploratory detail with no theorem or standalone science.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6731,
+  "branch": "physics-loop/toe-lphys-block-why12-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

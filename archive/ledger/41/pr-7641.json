@@ -1,0 +1,19 @@
+{
+ "id": "pr-7641",
+ "title": "feat(nm2hol2yz): 2x1 yz rectangle cyclic-frame holonomy at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "2x1 yz rectangle holonomy, column convention. Fails at the vertex gate on both loops: H=(0,2,1) has O={-e_2} and C,C1,C4 have degenerate splits. Also reports transport/Orient/split/cover = hold/hold while holonomy and scalar = fail/fail on the same state. DEFECT: its theorem1-M-O-split / theorem1-Orient / theorem1-transport gates use labels A,B,C,D for a DIFFERENT quadruple ((0,0,1),(1,1,1),(0,0,2",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7641,
+  "branch": "physics-loop/toe-lphys-block-nm2hol2yz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

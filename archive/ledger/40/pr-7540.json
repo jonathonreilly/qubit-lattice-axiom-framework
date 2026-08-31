@@ -1,0 +1,19 @@
+{
+ "id": "pr-7540",
+ "title": "feat(nm2frmrdxt2): neighbor-read of cyclic-frame transport freeze t+1 vs t+2 on two-axis opposite x-probes: reverse HOLD, face fails, compos",
+ "science": "t+2 freeze of 7533; equal transport bits HOLD at A and D while neighbor-read fails there, so equal-bit reverse/face HOLD against this reverse/face fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7540,
+  "branch": "physics-loop/toe-lphys-block-nm2frmrdxt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

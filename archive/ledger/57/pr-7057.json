@@ -1,0 +1,19 @@
+{
+ "id": "pr-7057",
+ "title": "feat(nslock): nnseed unique-lock inversion is mixed 23/1",
+ "science": "Two-record inversion parity: 60 pairs, 24 unique, N_odd=23, N_even=1, N_other=0 - the even pair is (1,0,0)/(-1,0,0), both locking -e_2. The runner recomputes the 1-seed sample in the same run and gets all-odd on 25. One extra off-origin record breaks the odd (polar-vector) inversion parity that #7044 established, so the lock field's parity is inherited from the initial data rather than from the st",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7057,
+  "branch": "physics-loop/toe-lphys-block-nslock-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

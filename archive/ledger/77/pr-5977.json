@@ -1,0 +1,19 @@
+{
+ "id": "pr-5977",
+ "title": "[physics-loop][review-loop] toe-time blockQ10 (STACKED on #5976) \u2014 Cycle 913: bounded theorem \u2014 the dynamics never chooses; O3 is terminal; ",
+ "science": "O2 computed completely on the landed substrate: the selection is transport of one setup coordinate (event parity) on two wires every gate reads and none writes - the dynamics never chooses; O2 supplied not derivable, O3 terminal with no non-forbidden realization, A3 arena located at the 328 site-possibility pairs, successor substrate named. The redirect that launched the substrate program; its det",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5977,
+  "branch": "physics-loop/toe-time-blockQ10-20260802"
+ },
+ "carried_by": "PR #5992 (classification against the same pinned compiler) and PR #6006 (the named successor built)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

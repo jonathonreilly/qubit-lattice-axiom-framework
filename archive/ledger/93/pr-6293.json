@@ -1,0 +1,19 @@
+{
+ "id": "pr-6293",
+ "title": "feat(cube6nn): occupancy-to-lock step on a displayed 2x2x2 cube",
+ "science": "Repeats the occupancy-to-lock step on a displayed 2x2x2 cube, explicitly not a TOE; small demonstration whose conclusion is carried by later full-lattice work.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6293,
+  "branch": "physics-loop/toe-lphys-block-cube6nn-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

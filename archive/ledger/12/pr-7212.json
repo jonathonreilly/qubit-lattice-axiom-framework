@@ -1,0 +1,19 @@
+{
+ "id": "pr-7212",
+ "title": "feat(nst2spy): S+ two-tick composition on #7167: reverse HOLD, face HOLD, composition HOLD",
+ "science": "S^+ two-tick composition on #7167's y-probes: sets grow at A, B and C between tau0 and tau1 yet both verdicts are unchanged. Together with #7216 these are the band's only non-trivial composition positives; my 648-cell sweep shows this outcome is a 37.5% minority and that the set grows in 648/648 cells, so the stability is real but the sampling is selective.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7212,
+  "branch": "physics-loop/toe-lphys-block-nst2spy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

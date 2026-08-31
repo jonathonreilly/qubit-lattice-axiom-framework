@@ -1,0 +1,19 @@
+{
+ "id": "pr-7320",
+ "title": "physics: construct protected cavity Record birth process",
+ "science": "Block 34: replaces Block 33 supplied append order with an explicit range-two formation-rate Law - recurring unit-rate proposal clocks, a coherent-payload cavity hold, and an anti-cluster clause - giving a translation/proper-cubic-equivariant Borel pure-birth process, locally nonexplosive by Harris construction, with every fixed site forming in finite abstract time a.s. Explicitly NOT a reliable co",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7320,
+  "branch": "physics-loop/toe-record-protected-cavity-birth-block34-20260822"
+ },
+ "carried_by": "#7321 (block 35) explicitly removes the cavity-shadow collision on the homogeneous blank initial state and supplies almost-sure correct completion for every admitted root - its Result Up Front states ",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

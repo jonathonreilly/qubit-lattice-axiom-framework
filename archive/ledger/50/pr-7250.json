@@ -1,0 +1,19 @@
+{
+ "id": "pr-7250",
+ "title": "feat(nmot2zx): O two-tick composition on #7213: reverse UNDEFINED, face UNDEFINED, composition fails",
+ "science": "O two-tick composition on #7213's x-probes. Rotation image of #7243/#7249, same universal mechanism (O empty at formation). The three O-composition PRs report an outcome that is forced in every cell of the space, and none of them says so.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED (composition fails)",
+ "source": {
+  "pr": 7250,
+  "branch": "physics-loop/toe-lphys-block-nmot2zx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

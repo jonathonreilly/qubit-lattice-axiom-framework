@@ -1,0 +1,19 @@
+{
+ "id": "pr-6543",
+ "title": "feat(tot2why): cov2=62 gap first refuse is opp2",
+ "science": "Displayed-not-adopted first-refuse explanation of the cov2=62 gap; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6543,
+  "branch": "physics-loop/toe-lphys-block-tot2why-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

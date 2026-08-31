@@ -1,0 +1,19 @@
+{
+ "id": "pr-7564",
+ "title": "feat(nm2hol3zrd): neighbor-read of cyclic-frame holonomy at t+1 on three-axis opposite near-face seed: reverse HOLD, face fails",
+ "science": "Neighbour-read of unit-square holonomy on the near-face three-axis seed; C1,C2 mixed M kills the face square.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7564,
+  "branch": "physics-loop/toe-lphys-block-nm2hol3zrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

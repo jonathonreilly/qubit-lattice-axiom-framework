@@ -1,0 +1,19 @@
+{
+ "id": "pr-7166",
+ "title": "feat(nsuoz): nsopp z-probe later-tick S_* union own lock: reverse HOLD, face HOLD",
+ "science": "Later-tick union own lock on nsopp z-probes; the note again records the union is a no-op on all four probes because each defined L(q) already appears as a neighbour lock. Completes the x/y/z cubic triple with #7164/#7165 at the widest readout.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7166,
+  "branch": "physics-loop/toe-lphys-block-nsuoz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

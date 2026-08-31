@@ -1,0 +1,19 @@
+{
+ "id": "pr-6807",
+ "title": "feat(entk13): enter-body restores k=13 reverse: t=25 vs t=43",
+ "science": "Enter-body rule eps = mu + cost 3 on every 2->3 hop RESTORES same-k reverse at k=13 on B_39: t=25 vs 43, 1875>1849. This is the band's first push past the mu wall. Mechanism: pricing the 2->3 hop lifts the axis intercept from +10 to +12 and the body from 3k+2 to 3k+4, and the axis gain dominates.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=13, 1875 > 1849) face=n/a",
+ "source": {
+  "pr": 6807,
+  "branch": "physics-loop/toe-lphys-block-entk13-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

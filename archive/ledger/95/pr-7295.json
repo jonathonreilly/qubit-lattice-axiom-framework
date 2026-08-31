@@ -1,0 +1,19 @@
+{
+ "id": "pr-7295",
+ "title": "feat(nm12sy): 1-in 2-out split on #7211: reverse HOLD, face fails",
+ "science": "1-in 2-out split on the #7211 y-probes; identical to #7293 by the same #7167/#7211 signature collision. Its cover_report treats empty M with 3-axis O as cover HOLD but split fail, exposing the definitional inconsistency in axis_cover across the band.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7295,
+  "branch": "physics-loop/toe-lphys-block-nm12sy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

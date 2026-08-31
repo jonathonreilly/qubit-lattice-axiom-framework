@@ -1,0 +1,19 @@
+{
+ "id": "pr-7758",
+ "title": "[physics-loop] toe-metric-dynamics-bridge-block216-compatible-exterior-transport: bounded-support",
+ "science": "Block 216 proves the metric-compatible exterior transport theorem (A=E^-1 R E with O(3) connection data exposed), closing Block 215s compatibility blocker on the curved-carrier bridge chain that block 217 stacks on. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7758,
+  "branch": "physics-loop/toe-metric-dynamics-bridge-block216-compatible-exterior-transport-20260827"
+ },
+ "carried_by": "#7803 (open metric-dynamics terminal; commit-ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

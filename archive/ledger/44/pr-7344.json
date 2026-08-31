@@ -1,0 +1,19 @@
+{
+ "id": "pr-7344",
+ "title": "[physics-loop][gravity-source-quotient][bounded_theorem][bounded-support] localize axial boundary and metric-first escape",
+ "science": "Rank-one update law O_mu=O_0-mu r(theta)r(theta)^dagger with certified full-circle PSD threshold k*=0.0890875879243 and one negative physical direction below it; raw covariance does not descend to common-metric source classes (equal common-metric stress, opposite-sign responses), and the mu=-1/1024 sign-flip repair develops a TT-visible even-sector unit-circle pole.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7344,
+  "branch": "physics-loop/toe-axiom-closure-block185-momentum-atlas-20260824"
+ },
+ "carried_by": "#7346 (executes the metric-first reduction this route decision demands and restates the non-descent verdict); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

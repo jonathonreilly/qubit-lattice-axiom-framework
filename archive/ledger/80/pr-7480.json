@@ -1,0 +1,19 @@
+{
+ "id": "pr-7480",
+ "title": "feat(nm2occt2sly): cyclic lex-smallest Orient freeze t+1 vs t+2 on two-axis same-lock y-probes: reverse fails, face fails, composition HOLD",
+ "science": "Same cell as #7478 with the LEX-SMALLEST tie-break: Orient -1,+1,+1,fail -> reverse flips from hold to fail. One of the band's four cells where the verdict pair is tie-break-sensitive; the note states it for this cell only.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7480,
+  "branch": "physics-loop/toe-lphys-block-nm2occt2sly-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

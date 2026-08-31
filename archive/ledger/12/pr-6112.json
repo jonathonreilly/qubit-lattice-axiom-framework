@@ -1,0 +1,19 @@
+{
+ "id": "pr-6112",
+ "title": "science(gravity): localize joint geometry and expose decoder connection",
+ "science": "Block 35: builds the local four-state geometry/Record code with one Gram bond on all six incidences, repairs the Record dictionary to a minimum ten-ray signed-cubic rank-ten metric compiler, constructs the matrix-free 4^9 SPD transfer with reversible Perron law, domain walls, and one-step reflection form, and executes the complete nonlinear decoder chain rule.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6112,
+  "branch": "physics-loop/toe-axiom-closure-block35-local-joint-ward-20260811"
+ },
+ "carried_by": "#6118 (block 36) isolates the Ward boundary of exactly this ten-ray object; the EC-cube chain #6123-#6128 supersedes the geometry code with the intrinsic construction; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

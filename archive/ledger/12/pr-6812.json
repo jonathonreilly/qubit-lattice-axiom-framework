@@ -1,0 +1,19 @@
+{
+ "id": "pr-6812",
+ "title": "feat(e2k13): late-enter-body misses the k=13 wall: t=23 vs t=41",
+ "science": "Forcing negative that closes the eps2 route: at k=13 on B_39 eps2 returns exactly mu's pair 23 vs 41, 1587<1681. The note is unusually honest -- it says 'The pair coincides with the already scored mu pair' and adds the explicit not-claim 'Any claim that the late-enter-body clause changes the k=13 pair'. So delaying the enter-body price recovers k=1 but buys nothing at the wall: eps2 is strictly do",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (same-k k=13, 1587 < 1681; arrivals identical to ",
+ "source": {
+  "pr": 6812,
+  "branch": "physics-loop/toe-lphys-block-e2k13-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6748",
+ "title": "feat(bodyk): body reverse vs k on B12 is yes yes no no",
+ "science": "Displayed body-pair reversal versus k on B12 (fails at k=3,4), explicitly not adopted; exploratory companion to 6747 with no theorem or standalone result.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6748,
+  "branch": "physics-loop/toe-lphys-block-bodyk-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

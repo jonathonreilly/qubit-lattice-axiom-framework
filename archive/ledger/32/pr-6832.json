@@ -1,0 +1,19 @@
+{
+ "id": "pr-6832",
+ "title": "feat(ridk6): ridge-slide same-k holds at k=6: t=18 vs t=22",
+ "science": "rho3 at k=6 on B_18: t=18 vs 22, 972>484 -- the crossover scale where the two axis routes 3k and k+12 tie at 18. Independently REFUTES #6822/#6840: it reports t(16,0,0)=28 on B_18, against their t(16,0,0)=32 on B_16, which is the number that flips their k=8 face bit from reverse-holds to reverse-fails.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=6, 972 > 484) face=n/a",
+ "source": {
+  "pr": 6832,
+  "branch": "physics-loop/toe-lphys-block-ridk6-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

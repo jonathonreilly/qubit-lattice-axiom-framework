@@ -1,0 +1,19 @@
+{
+ "id": "pr-6320",
+ "title": "feat(l1int): one integrated two-cube member L1",
+ "science": "One integrated two-cube member L1 combining prior toy pieces, explicitly displayed and not adopted; campaign integration superseded by later closure work.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6320,
+  "branch": "physics-loop/toe-lphys-block-l1int-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

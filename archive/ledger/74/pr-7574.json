@@ -1,0 +1,19 @@
+{
+ "id": "pr-7574",
+ "title": "feat(nm2yzrdt2): neighbor-read of yz-plane cyclic-frame holonomy freeze t+1 vs t+2 on two-axis opposite seed: reverse HOLD, face fails, comp",
+ "science": "2A yz squares at both cuts \u03c41=t+1 and \u03c42=t+2 plus composition. Reader lemma: M(q,t+1)=M(q,t+2) and O(q,t+1)=O(q,t+2) at ALL 477 formed sites of all four seed processes, so the composition=HOLD gate can never fail \u2014 a structural always-pass. Verified: 0/357 unit squares change verdict between the two cuts.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail composition=hold",
+ "source": {
+  "pr": 7574,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrdt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

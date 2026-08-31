@@ -1,0 +1,19 @@
+{
+ "id": "pr-6283",
+ "title": "science(toe): rank gravity replacement route",
+ "science": "Block 76: route-ranking screen after the 74/75 walls - proves the four-edge Ward row unique, shows the exact common-metric compatibility row is non-Laurent/infinite-range/singular, cuts the one-mode scalar repair and the three-section connection (axial TT rank one for every coefficient), and ranks the incidence-derivative ADM/Fierz-Pauli carrier as the next target.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6283,
+  "branch": "physics-loop/toe-axiom-closure-block76-dirac-signature-law-20260814"
+ },
+ "carried_by": "PR #6285 (Block 77) constructs the ranked carrier, mooting the same-support fitting routes this block stopped",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

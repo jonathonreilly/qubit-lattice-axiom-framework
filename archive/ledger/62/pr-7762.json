@@ -1,0 +1,19 @@
+{
+ "id": "pr-7762",
+ "title": "[physics-loop] toe-axiom-closure-block219: bounded_theorem / bounded-support",
+ "science": "Record-lane Block 219 proves the voter/coalescence martingale absorption law but leaves the conflict-safe conversion wall and every obligation open, a bounded mid-lane member with its negative demoted to partial-narrowing and the next tournament preregistered. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7762,
+  "branch": "physics-loop/toe-axiom-closure-block219-bounded-local-parity-factorization-20260827"
+ },
+ "carried_by": "#7803 (open metric-dynamics terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7423",
+ "title": "feat(nm2splt3sly): 1-in 2-out freeze t+1 vs t+2 on two-axis same-lock y-probes: reverse HOLD, face fails, composition HOLD",
+ "science": "Split freeze t+1 vs t+2 on same-lock y-probes; verdicts identical to #7420 on the opposite seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fail (composition HOLD)",
+ "source": {
+  "pr": 7423,
+  "branch": "physics-loop/toe-lphys-block-nm2splt3sly-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

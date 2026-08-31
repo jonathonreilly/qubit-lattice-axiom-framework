@@ -1,0 +1,19 @@
+{
+ "id": "pr-7499",
+ "title": "feat(nm2cyc3fzy): cyclic lex-largest det orientation of 1-in 2-out at t+1 on three-axis far-face opposite y-probes: reverse fails, face fail",
+ "science": "Far-face 3-axis y-probes, lex-largest: Orient +1,-1,-1,fail; D has 2-in M={+e_3,-e_3} so split fails. Tie-break sensitive: lex-smallest on this cell gives reverse hold.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7499,
+  "branch": "physics-loop/toe-lphys-block-nm2cyc3fzy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

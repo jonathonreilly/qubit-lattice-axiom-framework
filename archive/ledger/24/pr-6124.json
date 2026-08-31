@@ -1,0 +1,19 @@
+{
+ "id": "pr-6124",
+ "title": "science: glue the Einstein-Cartan Record cube overlap",
+ "science": "Block 38: exact two-cube overlap closure (gluing error 7e-15) with the exact positive exterior-message/DLR conditional, freely reduced nonabelian cube-Bianchi words verified on a generic noncommuting link field, and classification of the translation-compatible homogeneous connection (nonflat reduced extrema unstable).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6124,
+  "branch": "physics-loop/toe-axiom-closure-block38-two-cube-overlap-20260811"
+ },
+ "carried_by": "#6126 proves the periodic Bianchi identities and localizes this block's flat residual to the boundary; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

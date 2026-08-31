@@ -1,0 +1,19 @@
+{
+ "id": "pr-6355",
+ "title": "feat(cell): cycle 785 parity constancy from sign characters, small-class equal split",
+ "science": "Cycle 785: discharges two named debts of the census note. Parity constancy of the realized profiles becomes a THEOREM - the parity vector of a cutting lies in the mod-two reduction of an exact integer kernel for each of the seven nontrivial sign characters of the mask group, the intersection has dimension 7 (128 vectors), and every one of those 128 vectors is parity-constant across the twelve posi",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6355,
+  "branch": "cycle785-small-class-derivation"
+ },
+ "carried_by": "Not restated later - but the lane retargets at cycle 786 to the interface/boundary reading and never returns to the profile census, and the note itself records that the remaining large-class counts st",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6007",
+ "title": "[physics-loop][review-loop] toe-time blockAC4 (STACKED on #6004) \u2014 Cycle 939: bounded theorem \u2014 the carrier map is gauge; the wall was alrea",
+ "science": "The carrier-identification sweep: the MAP between carriers is gauge (all eleven consuming observables invariant, planted probe moving; prior art computed the vacuity twice), the STRUCTURE-GROUP restriction is cheap content carrying the O_h trap (full signed-permutation transport collapses the circulant dial to scalars - transport C3 only), and the VALUE/TYPE assertion is the wall, already minimall",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6007,
+  "branch": "physics-loop/toe-time-blockAC4-20260802"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

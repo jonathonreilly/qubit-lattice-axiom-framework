@@ -1,0 +1,19 @@
+{
+ "id": "pr-6396",
+ "title": "feat(v3dyn): vertex3 indicator has empty 1-site first wave",
+ "science": "Single-member dynamics census, not a probe cell: the vertex3-orbit indicator f_v3 (1 exactly on the size-8 complement-fixed one-ray-per-axis weight-3 orbit) has an EMPTY 1-site first wave, halts immediately at T=0 with |locks|=1, and does not fill. Cross-cell significance the note does not itself draw: f_v3 is precisely the explicit second survivor #6391 exhibits to refute uniqueness of f_L1 in F_",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6396,
+  "branch": "physics-loop/toe-lphys-block-v3dyn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

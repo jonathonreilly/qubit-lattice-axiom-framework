@@ -1,0 +1,19 @@
+{
+ "id": "pr-6420",
+ "title": "feat(diffnbhd): first disagreeing neighborhood of f_min and f_L1 on S*",
+ "science": "Drill-down of #6417 to the exact discriminating stencil: from S*={(0,0,0),(2,1,1)} the first neighborhood where f_min and f_L1 return different bits is tick t=2, site (1,0,1), six-tuple (1,1,1,0,0,1) in order (+x,-x,+y,-y,+z,-z), axis type (2,1,0), with f_L1=1 and f_min=0. Both runs still share the same locked set at that evaluation, so the (t,x,type) is the same on either run. This is the note th",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6420,
+  "branch": "physics-loop/toe-lphys-block-diffnbhd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

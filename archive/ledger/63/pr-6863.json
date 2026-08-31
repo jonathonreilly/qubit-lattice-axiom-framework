@@ -1,0 +1,19 @@
+{
+ "id": "pr-6863",
+ "title": "physics: break the quenched exclusion and prove the migration theorem (block 147)",
+ "science": "The annealed break: honest covariance transports carrier+connection+atlas (naive identity fails 0/192), giving a two-member reflection-ensemble Hermitian pairing that genuinely breaks the 145 Hermiticity/mass exclusion, and the migration theorem -- positive annealed pairing is massless, the wall reappearing one level up. Its named next (ensembles beyond two members) is exactly what 148 executed.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6863,
+  "branch": "physics-loop/toe-axiom-closure-block147-annealed-pairing-migration-20260819"
+ },
+ "carried_by": "#6864 (block 148 restates the honest covariance 1024/1024 over the full 64-move group and strengthens migration to identically-zero for every theta-closed ensemble)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6514",
+ "title": "feat(p3sel): remaining-bit search for a cov3>0 selector",
+ "science": "Exhaustive negative over a candidate family: none of ten displayed remaining-bit predicates (each single bit, wt1 AND each other bit, and (adj2,vertex3,mixed3)!=(0,0,0)) equals cov3>0 (N_pos=20 vs N_Q of 16/8/28). The full 32-map cov3 table is in the runner cache, so a closed form for cov3>0 stays open at this candidate depth.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut selector search; no (reverse,f",
+ "source": {
+  "pr": 6514,
+  "branch": "physics-loop/toe-lphys-block-p3sel-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

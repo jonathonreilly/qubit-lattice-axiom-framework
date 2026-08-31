@@ -1,0 +1,19 @@
+{
+ "id": "pr-7349",
+ "title": "[physics-loop][dual-frame-stage][bounded_theorem][bounded-support] derive projective orientation boundary",
+ "science": "On the reconstructed Block-128 8x4 carrier: exact projective reflection R=P_edge T_t with 8+8 antiperiodic split, exact Hodge covariance with co-transported differential, nullity-zero for the direct single-carrier stage intertwiner, and an honest primal/dual-adjoint doubling exchanging (2,0)/(0,2) with balanced (8,8,0) reflected Gram as the localized wall.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7349,
+  "branch": "physics-loop/toe-axiom-closure-block188-dual-frame-temporal-link-20260824"
+ },
+ "carried_by": "#7352 (executes the doubled-carrier port positivity question and breaks the dichotomy the wall posed); mainline #7347 covers the projective-cover/dual-frame territory in tip ancestry; #7781 branch anc",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

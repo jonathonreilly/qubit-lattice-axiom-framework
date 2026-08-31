@@ -1,0 +1,19 @@
+{
+ "id": "pr-6682",
+ "title": "feat(uneqk): k equals t on 27 of 2000 mixed-t stars",
+ "science": "Negative that costs the #6681/#6675 route its cheapness, not a probe cell: the occupied-NN count k is NOT the lock-tick t. Over a 2000-star prefix of mixed-t unequal-radius weight-4 unread stars, only N_eq=27 have k=t (~1.4%); lex-first disagreement at star 1 (radii (2,1,2), v=(-3,-3,-1)) has t=(1,1,2,2) vs k=(3,3,2,2), and the uneqrad breaker itself - star 21, the very host #6675/#6681 rely on - ",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6682,
+  "branch": "physics-loop/toe-lphys-block-uneqk-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

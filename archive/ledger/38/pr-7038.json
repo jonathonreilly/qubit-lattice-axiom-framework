@@ -1,0 +1,19 @@
+{
+ "id": "pr-7038",
+ "title": "feat(seedo): seed +e2: reverse fails, face holds",
+ "science": "Seed lock +e_2 with x-probes held fixed on a TAXICAB B_3(0) (63 sites): t(A)=1, t(B)=3, t(C)=4, t(D)=2; tick-1 6-mask (1,1,0,0,1,1); reverse FAILS, face HOLDS. Includes a real control that a proper cubic map sending e1->e2 moves the probes, so this is not a relabel of the axis seed. Host is the taxicab ball while sibling members call the Euclidean ball by the same name B_3(0).",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=holds",
+ "source": {
+  "pr": 7038,
+  "branch": "physics-loop/toe-lphys-block-seedo-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

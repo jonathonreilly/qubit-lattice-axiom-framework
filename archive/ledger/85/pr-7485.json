@@ -1,0 +1,19 @@
+{
+ "id": "pr-7485",
+ "title": "feat(nm2oricyccrd3z): neighbor-read of cyclic lex-smallest Orient at t+1 on three-axis opposite z-probes: reverse fails, face fails",
+ "science": "Neighbour-read of the lex-smallest Orient sign at the probe's cut, near 3-axis-opposite z-probes: hold at A (matches origin, +1) and at D (matches (1,0,0), -1), fail at B and C -> fail/fail, while the underlying Orient reverse/face both HOLD (#7483). Genuine non-vacuous neighbour test.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7485,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyccrd3z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

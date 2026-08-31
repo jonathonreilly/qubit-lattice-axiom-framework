@@ -1,0 +1,19 @@
+{
+ "id": "pr-7080",
+ "title": "feat(nssums): nssame neighbor-lock sum: reverse fail, face fail",
+ "science": "Sum letter on the nssame seed: L(A)=(4,0,0), L(B)=(0,0,1), L(C)=(0,1,0) (the mixed A-locks now sum to a defined vector instead of killing the letter), L(D)=(4,0,0) -> reverse FAIL, face FAIL. The note states the multiplicity rule explicitly: four neighbours locking +e_1 sum to (4,0,0), not to the singleton +e_1, so keeping versus collapsing multiplicity is itself verdict-changing.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7080,
+  "branch": "physics-loop/toe-lphys-block-nssums-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

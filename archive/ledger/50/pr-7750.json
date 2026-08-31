@@ -1,0 +1,19 @@
+{
+ "id": "pr-7750",
+ "title": "physics: fence Block 210 finite alphabet and four-facet diagnostics",
+ "science": "Block 210 (fence) lands the refined-alphabet rank ceiling and completed Leggett-Garg facet diagnostics that the active mainline lane carries as commit e3a6c02a, an ancestor of the open block-211/212 stack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7750,
+  "branch": "physics-loop/toe-axiom-closure-block210-refined-alphabet-macrorealist-landscape-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

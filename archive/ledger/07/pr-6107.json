@@ -1,0 +1,19 @@
+{
+ "id": "pr-6107",
+ "title": "science: close finite-width Perron cylinder gluing",
+ "science": "Block 33: reduces two positive occupancy-mediated sixteen-Record-state laws on C3 x C3 x Z to a 512-state slice transfer and proves unique positive left/right Perron boundary messages normalize and endpoint-project every finite longitudinal interval \u2014 closing the Block-32 boundary-iteration question conditional on a supplied transfer.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6107,
+  "branch": "physics-loop/toe-axiom-closure-block33-boundary-transfer-20260810"
+ },
+ "carried_by": "#6108 subsumes the single-sector gluing in the 1,024-state joint geometry/Record transfer; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

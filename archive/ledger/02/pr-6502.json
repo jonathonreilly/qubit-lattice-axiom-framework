@@ -1,0 +1,19 @@
+{
+ "id": "pr-6502",
+ "title": "feat(p3closed): cov3>0 is not equivalent to selector P",
+ "science": "Displayed-not-adopted negative equivalence report (cov3>0 vs selector P), an exploratory campaign micro-probe with no adopted content.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6502,
+  "branch": "physics-loop/toe-lphys-block-p3closed-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

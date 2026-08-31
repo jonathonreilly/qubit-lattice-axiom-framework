@@ -1,0 +1,19 @@
+{
+ "id": "pr-6897",
+ "title": "feat(rendbl): ridge-enter doubled pairing holds k=1..4",
+ "science": "The band's only body-diagonal arrival table: under kappa t(1,1,1)=5, t(2,2,2)=10, t(3,3,3)=13, t(4,4,4)=16 \u2014 i.e. t(k,k,k)=3k+4 for k>=2, the law that (with t_axis=k+12) fixes the wall. Scores the DOUBLED pairing ((2k,0,0),(k,k,k)), which holds k=1..4 (108>100, 432>400, 972>676, 1200>1024). Also t(12,0,0)=28 on B_12 \u2014 a boundary-inflated value, 24 in the interior.",
+ "forcing": false,
+ "verdict_pair": "reverse=holds k=1..4 (doubled pairing) face=not-scored",
+ "source": {
+  "pr": 6897,
+  "branch": "physics-loop/toe-lphys-block-rendbl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

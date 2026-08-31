@@ -1,0 +1,19 @@
+{
+ "id": "pr-7257",
+ "title": "feat(nmreadzp): neighbor-read of M on #7186: reverse UNDEFINED, face UNDEFINED",
+ "science": "R on the z-symmetric #7186 z-probes: R={},{-e_2},{},{}. Its one substantive contrast is real: the two-site seed gives R(D)={-e_3} while the z-mirror third seed empties R(D) -- the neighbor-read is seed-sensitive where M is not.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7257,
+  "branch": "physics-loop/toe-lphys-block-nmreadzp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

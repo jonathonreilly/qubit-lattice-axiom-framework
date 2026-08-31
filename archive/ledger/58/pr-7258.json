@@ -1,0 +1,19 @@
+{
+ "id": "pr-7258",
+ "title": "feat(nmreadx2): neighbor-read of M on #7214: reverse UNDEFINED, face UNDEFINED",
+ "science": "R on the x-axis-opposite-e2 #7214 x-probes: the only R-member with a nonempty R(D)={-e_1}; still UNDEFINED/UNDEFINED because R(A) and R(C) are empty. Also records a genuine host artifact: Nbr(C) has only five formed neighbours because (3,0,0) lies in B_3(0) and never forms.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7258,
+  "branch": "physics-loop/toe-lphys-block-nmreadx2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

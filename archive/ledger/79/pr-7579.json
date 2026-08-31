@@ -1,0 +1,19 @@
+{
+ "id": "pr-7579",
+ "title": "feat(nm2yzrd3t2): neighbor-read of yz-plane cyclic-frame holonomy freeze t+1 vs t+2 on three-axis opposite near-face seed: reverse HOLD, fac",
+ "science": "3N yz squares at both cuts + composition. Duplicate of 7577's cell with the (provably frozen) second cut appended.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail composition=hold",
+ "source": {
+  "pr": 7579,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrd3t2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

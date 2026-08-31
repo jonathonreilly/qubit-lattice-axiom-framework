@@ -1,0 +1,19 @@
+{
+ "id": "pr-6157",
+ "title": "TOE Block 64: strict-NN Record/Born/history single front",
+ "science": "Block 64: the strict-nearest-neighbor alternating-square Record front \u2014 preserves the Block-63 state-dependent CP kernel, shared effect, projective contingent histories, and arbitrary-length permanence on the correct NN attachment domain with exact 3N+1 permanent-Record support; an independent read-only challenge found no mathematical or locality blocker. Blocks 65-66 build on this front unchanged",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6157,
+  "branch": "physics-loop/toe-axiom-closure-block64-strict-nn-record-front-20260812"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

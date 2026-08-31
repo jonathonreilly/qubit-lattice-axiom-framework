@@ -1,0 +1,19 @@
+{
+ "id": "pr-7027",
+ "title": "[physics-loop] remote-context front-event congruence \u2014 bounded_theorem \u2014 bounded-support",
+ "science": "Exact congruence read straight off the Admissibility axiom with no covariance assumption and no probability formula: two Record worlds differing only at context site c=(1,1,0) have literally identical six-neighbour conditions at the blank front target s0=(0,0,0), so the axiom assigns the same full conditional M_2(C) measure and equal mass to every fixed common Borel content event - even though c I",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7027,
+  "branch": "physics-loop/toe-common-front-context-delay-block4-20260820"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

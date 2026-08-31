@@ -1,0 +1,19 @@
+{
+ "id": "pr-7082",
+ "title": "feat(nsvecy): y-probe neighbor-lock vector: reverse UNDEFINED, face fail",
+ "science": "Lock-vector on the y-probes: A_y is the second seed and its strictly-earlier neighbour list is EMPTY (same-tick origin excluded), so L(A_y)=UNDEFINED; L(B)=UNDEFINED (mixed), L(C_y)=L(D_y)=+e_2 so the sum is (0,2,0) and face FAILS. Reverse UNDEFINED for a different reason than #7075 (empty list vs mixed list).",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=fail",
+ "source": {
+  "pr": 7082,
+  "branch": "physics-loop/toe-lphys-block-nsvecy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6666",
+ "title": "feat(orbfire): no Stab-ok pair member fires on this occupancy",
+ "science": "Empty-set fire check on the same occupancy, a small displayed-not-adopted negative internal to the exploratory series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6666,
+  "branch": "physics-loop/toe-lphys-block-orbfire-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

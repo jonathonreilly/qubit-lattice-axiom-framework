@@ -1,0 +1,19 @@
+{
+ "id": "pr-7440",
+ "title": "feat(nm2orionex): lex-one signed-outgoing det orientation of 1-in 2-out at t+1 on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "opposite x-probes, lex-one signed-outgoing det orientation (pick +e over -e on each axis of O, in index order). Defined at B,C only; both pairs fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7440,
+  "branch": "physics-loop/toe-lphys-block-nm2orionex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

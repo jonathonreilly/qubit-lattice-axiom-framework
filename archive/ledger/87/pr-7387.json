@@ -1,0 +1,19 @@
+{
+ "id": "pr-7387",
+ "title": "feat(nm2readslx): neighbor-read of M at t+1 on two-axis same-lock x-probes: reverse HOLD, face HOLD",
+ "science": "Neighbor-read of M (some formed 6-NN carries the identical signed M-set) on same-lock x-probes: HOLD at all four, reverse/face HOLD. Also records the R-style contrast (recover the step as -e in M(q+e)) which differs at every probe. Recomputed: on the whole host neighbor-read of M holds at only ~50% of sites, so the 4/4 at the probes is probe selection, not a law.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7387,
+  "branch": "physics-loop/toe-lphys-block-nm2readslx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6673",
+ "title": "feat(uneqrad): unequal radii shrink Stab; N_tick_ok=4",
+ "science": "Unequal-radius stabilizer-shrinking example, exploratory displayed-not-adopted continuation of the tick line.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6673,
+  "branch": "physics-loop/toe-lphys-block-uneqrad-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

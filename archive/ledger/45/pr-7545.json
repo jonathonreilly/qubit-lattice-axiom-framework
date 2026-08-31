@@ -1,0 +1,19 @@
+{
+ "id": "pr-7545",
+ "title": "feat(nm2sfzrdsl): neighbor-read of cyclic lex-smallest frame transport freeze t+1 vs t+2 on two-axis same-lock z-probes: reverse fails, face",
+ "science": "Lex-smallest twin of 7534 on the same-lock seed; Orient signs flip, bits unchanged, 69 checks.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7545,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzrdsl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

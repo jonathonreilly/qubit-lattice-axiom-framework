@@ -1,0 +1,19 @@
+{
+ "id": "pr-6946",
+ "title": "feat(d3face): max\u22653 out-face face reverse holds k=1..5,7,8 fails k=6",
+ "science": "Max>=3 out-face face-reverse k-scan matching df/omega pattern, displayed-not-adopted exploratory pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6946,
+  "branch": "physics-loop/toe-lphys-block-d3face-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

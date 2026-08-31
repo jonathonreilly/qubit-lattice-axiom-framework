@@ -1,0 +1,19 @@
+{
+ "id": "pr-6477",
+ "title": "feat(c6share): L1 and f0 do not miss the same 6-site seeds",
+ "science": "L1 vs f0 6-site miss-set inequality without even listing seeds, displayed-not-adopted micro-fact in the 0815 pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6477,
+  "branch": "physics-loop/toe-lphys-block-c6share-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

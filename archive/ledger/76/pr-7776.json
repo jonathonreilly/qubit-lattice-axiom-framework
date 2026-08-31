@@ -1,0 +1,19 @@
+{
+ "id": "pr-7776",
+ "title": "[physics-loop] Block227: bounded-support co-scaled exterior transfer limit",
+ "science": "Co-scaled temporal Trotter theorem: with a corrected co-scaling cancelling scalar drift, the complete symmetric step converges strongly to component-preserving rotational heat plus the spatial potential; separately falsifies exact finite-step semigroup structure and bare same-action spatial subdivision (spin-two/determinant failures, exact quartic and finite-angle defects). Supplies the fine step ",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7776,
+  "branch": "physics-loop/toe-connection-dynamics-block227-exterior-character-trotter-refinement-20260828"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

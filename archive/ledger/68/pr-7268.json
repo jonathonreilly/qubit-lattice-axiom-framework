@@ -1,0 +1,19 @@
+{
+ "id": "pr-7268",
+ "title": "feat(nmsimzx): simultaneous M and O at t+1 on #7213: reverse HOLD, face HOLD",
+ "science": "Simultaneous M and O at t+1 on the #7213 x-probes; adds the useful separation that the M face-pair is +/-e_1 while the O face-pair is +/-e_2, so the two families hold on disjoint axes. Recomputed: exact.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold (M and O separately)",
+ "source": {
+  "pr": 7268,
+  "branch": "physics-loop/toe-lphys-block-nmsimzx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

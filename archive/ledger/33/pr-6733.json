@@ -1,0 +1,19 @@
+{
+ "id": "pr-6733",
+ "title": "feat(nuface8): nu reverses all four face-diagonal pairs on B8",
+ "science": "Displayed face-diagonal pair reversals on B8 under nu, explicitly not adopted; incremental exploratory measurement in the same support-drop series with no decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6733,
+  "branch": "physics-loop/toe-lphys-block-nuface8-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

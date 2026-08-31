@@ -1,0 +1,19 @@
+{
+ "id": "pr-7747",
+ "title": "physics: fence Block 202 finite substitution-profile diagnostics",
+ "science": "Block 202 (repaired) lands the record-pinning substitution-profile diagnostics whose bounded verdict the active mainline lane explicitly adopts in its block-203+ continuation, making it a live ancestor of the current gravity-toe stack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7747,
+  "branch": "physics-loop/toe-axiom-closure-block202-record-pinning-mixture-diagnostics-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

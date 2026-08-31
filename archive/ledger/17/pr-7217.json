@@ -1,0 +1,19 @@
+{
+ "id": "pr-7217",
+ "title": "feat(nsmopx): own incoming set on #7168: reverse fails, face fails",
+ "science": "M-readout on #7168's opposite-lock x-probes. A formed, M(A)={+e2,+e3,-e3} (three letters, still no -e_1) against M(B)={+e1}: fails/fails with S^+ holding. Shows the failure is not a cardinality effect -- a three-element own-record still misses the needed opposite.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7217,
+  "branch": "physics-loop/toe-lphys-block-nsmopx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

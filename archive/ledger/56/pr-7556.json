@@ -1,0 +1,19 @@
+{
+ "id": "pr-7556",
+ "title": "feat(nm2frmallrd): universal neighbor-read of cyclic-frame transport at t+1 on two-axis opposite z-probes: reverse fails, face fails",
+ "science": "Displayed-not-adopted universal-quantifier variant scan of #7511 (toe-lphys-20260812); exploratory fail probe, no decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7556,
+  "branch": "physics-loop/toe-lphys-block-nm2frmallrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

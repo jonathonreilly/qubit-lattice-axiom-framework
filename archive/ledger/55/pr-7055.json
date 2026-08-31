@@ -1,0 +1,19 @@
+{
+ "id": "pr-7055",
+ "title": "feat(nsvar): nnseed arrival-speed var is 0.034735087770962977",
+ "science": "Two-record arrival-speed variance: Q = 49223/85680, exact surd closed form, var = 0.034735087770962977 over the 119 positive-tick sites (the t=0 second seed is excluded). Against #7034's 1-seed value 0.012492962195816963 this is a near-tripling of the arrival-speed spread from adding a single extra initial record.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7055,
+  "branch": "physics-loop/toe-lphys-block-nsvar-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

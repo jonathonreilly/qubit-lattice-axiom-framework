@@ -1,0 +1,19 @@
+{
+ "id": "pr-7417",
+ "title": "feat(nm2simt3slx): simultaneous M and O freeze t+2 vs t+3 on two-axis same-lock x-probes: reverse HOLD, face HOLD, composition HOLD",
+ "science": "Simultaneous freeze t+2 vs t+3 on same-lock x-probes, 89 checks. Verdicts identical to #7410 on the opposite seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7417,
+  "branch": "physics-loop/toe-lphys-block-nm2simt3slx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

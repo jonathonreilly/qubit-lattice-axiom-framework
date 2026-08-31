@@ -1,0 +1,19 @@
+{
+ "id": "pr-7004",
+ "title": "feat(s2k14): c2d4-plus-soft-ridge same-k holds at k=14: t=28 vs t=45",
+ "science": "s2 = c2d4 with the rho3 3->3 ridge-stay CHEAPENED from 3 to 2. The only rule in the whole band that moves the same-k pair off (30,46): one Dijkstra on B_42(0) gives (28,45), 2352>2025, reverse still holds. Establishes that the ridge price, not the out-face floor or the out-face price, is the parameter the same-k pair actually depends on.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=14 (2352>2025; band bit) face=absent",
+ "source": {
+  "pr": 7004,
+  "branch": "physics-loop/toe-lphys-block-s2k14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

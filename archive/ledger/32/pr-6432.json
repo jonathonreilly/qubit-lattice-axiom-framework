@@ -1,0 +1,19 @@
+{
+ "id": "pr-6432",
+ "title": "feat(sitecov): rank 1-site fill coverage of the 32 F_cut maps",
+ "science": "Displayed-not-adopted 1-site coverage ranking with f_L1 tied not unique, another exploratory count in the series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6432,
+  "branch": "physics-loop/toe-lphys-block-sitecov-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

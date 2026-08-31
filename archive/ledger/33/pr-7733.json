@@ -1,0 +1,19 @@
+{
+ "id": "pr-7733",
+ "title": "physics: stop periodic D1 probability carrier at graded trace",
+ "science": "Exhausts the D1 s=0 reflection-sign x full/even-CAR x ordinary/graded-trace tournament with exact gluing identities det(M_per)=2^-24 r^-1(1-r)^2, det(M_AP)=2^-24 r^-1(1+r)^2, r=((sqrt(53)-2)/7)^24: the periodic carrier selects a graded trace whose normalized weights (1,-r,-r,r^2) assign -2r/(1-r)^2<0 to a positive even-algebra projector; ZERO of eight cells are simultaneously reflection-positive, ",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7733,
+  "branch": "physics-loop/toe-axiom-closure-block203-reflection-algebra-gluing-discriminator-20260826"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6900",
+ "title": "feat(mlk7): mid-leave same-k holds at k=7: t=19 vs t=25",
+ "science": "Single-point mid-leave same-k hold display at k=7 with empty 6-NN clause (displayed, not adopted); exploratory series member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6900,
+  "branch": "physics-loop/toe-lphys-block-mlk7-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

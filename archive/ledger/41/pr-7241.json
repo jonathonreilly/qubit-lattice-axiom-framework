@@ -1,0 +1,19 @@
+{
+ "id": "pr-7241",
+ "title": "feat(nmxsam): own incoming set on #7187: reverse fails, face fails",
+ "science": "On the four #7187 y-probes of the x-axis same-lock process, the own incoming set M gives reverse fail and face fail where the same cell read through S^+ gives HOLD/HOLD, with the runner reproducing that S^+ HOLD and recording that it does not use L(A).",
+ "forcing": true,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7241,
+  "branch": "physics-loop/toe-lphys-block-nmxsam-20260815"
+ },
+ "carried_by": "archive/families/toe-lphys-20260812.md \u00a7Follow-on (the 19 citing notes)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

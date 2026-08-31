@@ -1,0 +1,19 @@
+{
+ "id": "pr-6140",
+ "title": "Science: full-edge finite-frequency gravity pole survival",
+ "science": "Block 47: preserves the raw 99-term analytic Laurent symbol at complex temporal momentum, quotients all four displacement-Ward columns, and shows one complete-edge pole per transverse parity sector surviving at 36 wave numbers with a uniformly gapped nonmetric remainder \u2014 extending the Block-44 IR theorem to finite frequency and localizing the transfer/inner-product question.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6140,
+  "branch": "physics-loop/toe-axiom-closure-block47-full-frequency-20260811"
+ },
+ "carried_by": "#6141 consumes these sampled poles (ruling out their direct one-step transfer reading) and #6144 resolves the transfer question with the positive-OS two-TT family; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

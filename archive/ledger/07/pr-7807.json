@@ -1,0 +1,19 @@
+{
+ "id": "pr-7807",
+ "title": "physics: classify finite reusable bath Record obstruction",
+ "science": "Terminal FINITE-EXACT-INDEFINITE-REPEATABILITY-OBSTRUCTED-FOR-NONTRIVIAL-APPEND-IN-G_FIN_INFINITY \u2014 the autonomous-reusable-bath route proposed by #7806 as the way to fix beta is closed in its finite-memory branch. In-framework lemma: an append-only seven-state pointer channel has T(P_0) = h P_0 + sum_f p_f P_f and T(P_f) = P_f, so T(I) = h P_0 + sum_f (1+p_f) P_f, which equals I only for the triv",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7807,
+  "branch": "physics-loop/toe-source-eta-ownership-block21-autonomous-reusable-bath-complement-blind-selector-20260830"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 66 behind); NOT restated \u2014 the nonunitality lemma, entropy obstruction, orbit census and the three controls appear in no later member diff",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

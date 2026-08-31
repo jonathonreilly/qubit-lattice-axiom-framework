@@ -1,0 +1,19 @@
+{
+ "id": "pr-7375",
+ "title": "feat(nm2axox): outgoing exist-opposite at t+1 on two-axis opposite x-probes: reverse fails, face fails",
+ "science": "Two-axis opposite seed, x-probes, exist-opposite of O: fail/fail. Answers the question the note poses - does signed O still HOLD where cover fails? - in the negative, unlike the y-probe cell #7310 where it does.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7375,
+  "branch": "physics-loop/toe-lphys-block-nm2axox-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

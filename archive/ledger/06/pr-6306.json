@@ -1,0 +1,19 @@
+{
+ "id": "pr-6306",
+ "title": "feat(treesup): +x ray uniquely selects {F*, F_B} support",
+ "science": "Notes the +x ray uniquely selects a two-face support on the two-cube dual; tiny path-counting remark in the exploratory pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6306,
+  "branch": "physics-loop/toe-lphys-block-treesup-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

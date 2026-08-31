@@ -1,0 +1,19 @@
+{
+ "id": "pr-7178",
+ "title": "feat(nstriyinc): three-site y-probe same-tick union own-lock: reverse fails, face HOLD",
+ "science": "Same-tick union own lock on the three-site seed, y-probe frame: reverse fails because S^+(B)={+e3} is a singleton with no partner for +/-e1, and face already held before the union (own letter L(C)=+e2 is not the witness). A no-op-union member whose value is the negative attribution.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7178,
+  "branch": "physics-loop/toe-lphys-block-nstriyinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

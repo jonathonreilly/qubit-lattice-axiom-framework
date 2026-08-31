@@ -1,0 +1,19 @@
+{
+ "id": "pr-6242",
+ "title": "[physics-loop] toe-lphys c1zero: bounded_theorem / bounded-support",
+ "science": "Toy check that 0 must stay outside the menu M in a hypothetical C1 retype; unadopted wording guidance, not a decisive result.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6242,
+  "branch": "physics-loop/toe-lphys-block-c1zero-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

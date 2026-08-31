@@ -1,0 +1,19 @@
+{
+ "id": "pr-7484",
+ "title": "feat(nm2oricycc3y): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on three-axis opposite y-probes: reverse HOLD, face fails",
+ "science": "y-probes, near 3-axis-opposite, lex-smallest. Orient +1,+1,+1,fail \u2014 numerically IDENTICAL to lex-largest #7476 at every probe, because each y-probe carries an even number of mixed cyclic slots. An exact duplicate of #7476 presented as a distinct readout.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7484,
+  "branch": "physics-loop/toe-lphys-block-nm2oricycc3y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

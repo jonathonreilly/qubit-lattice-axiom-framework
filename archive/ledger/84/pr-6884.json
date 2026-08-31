@@ -1,0 +1,19 @@
+{
+ "id": "pr-6884",
+ "title": "feat(klk14): kappa-plus-late-leave same-k fails at k=14: t=26 vs t=46",
+ "science": "kappa-lambda on B_42: 26 vs 46. Stacking two independent extras still lands on the identical wall pair \u2014 the strongest single piece of evidence that the wall is insensitive to clause choice.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=not-scored",
+ "source": {
+  "pr": 6884,
+  "branch": "physics-loop/toe-lphys-block-klk14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

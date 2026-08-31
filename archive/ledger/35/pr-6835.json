@@ -1,0 +1,19 @@
+{
+ "id": "pr-6835",
+ "title": "feat(hugmeet12): corridor-slide two-seed meet |M|=1 vars 0",
+ "science": "Forcing negative on the two-seed discriminator itself: on the radius-12 union under mu the first-meeting set is still the singleton {(1,0,0)} at t=3, exactly as at radius 6, while the equal-arrival set grows 265 -> 713. So quadrupling the host does not enlarge M, both variances stay 0, and the meeting-set-variance route is structurally dead as a way to separate hop-costs -- the neighbor-strictly-e",
+ "forcing": false,
+ "verdict_pair": "reverse=n/a face=n/a (|M|=1 at R=6 and R=12; var_mu=var_l1=0",
+ "source": {
+  "pr": 6835,
+  "branch": "physics-loop/toe-lphys-block-hugmeet12-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

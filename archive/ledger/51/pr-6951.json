@@ -1,0 +1,19 @@
+{
+ "id": "pr-6951",
+ "title": "feat(c2dfk19): cost-2 deep-out-face same-k first-fails at k=19: t=35 vs t=61",
+ "science": "Cost-2 deep-out-face same-k first-fail at k=19, same wall as omega, displayed-not-adopted lane terminal carried by roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6951,
+  "branch": "physics-loop/toe-lphys-block-c2dfk19-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

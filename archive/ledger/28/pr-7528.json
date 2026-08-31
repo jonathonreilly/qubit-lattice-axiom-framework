@@ -1,0 +1,19 @@
+{
+ "id": "pr-7528",
+ "title": "feat(nm2frmfzrd): HOLDING neighbor-read of cyclic-frame transport at t+1 on three-axis far-face opposite z-probes: reverse HOLD, face HOLD",
+ "science": "Neighbor-read on the 3-axis far-face seed z-probes; all four split/transport/neighbor-read HOLD, scalar Orient-sign read HOLDs only at A. Prints the four edge matrices P with det = Orient(q)Orient(r).",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7528,
+  "branch": "physics-loop/toe-lphys-block-nm2frmfzrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

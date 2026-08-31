@@ -1,0 +1,19 @@
+{
+ "id": "pr-6849",
+ "title": "physics: complete the measurement theory on the two-block algebra",
+ "science": "The complete m=2 measurement theory: five-dimensional state space with one projective line of pure states per block, forced maximally-mixed conjugate block and biased per-sector-real block in the vacuum, rate-two counter-rotating quadrature dynamics, balanced-sector invariant reach exactly {I, z}.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6849,
+  "branch": "physics-loop/toe-axiom-closure-block133-two-block-states-dynamics-20260817"
+ },
+ "carried_by": "#6862 (block 146 generalizes every component to general m -- m disjoint RP^1 circles, forced I/2 conjugate blocks with the unique biased self block, span{I_j,Z_j} commutant, balanced reach 2(m-1) -- a",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

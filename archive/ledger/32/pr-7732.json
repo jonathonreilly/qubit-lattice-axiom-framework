@@ -1,0 +1,19 @@
+{
+ "id": "pr-7732",
+ "title": "physics: stop open boundary at frozen reflection sign",
+ "science": "First Stage-A gate stop on the open t=-12..11 D1 s=0 restriction: the frozen-sign degree-one Berezin form is exact rank two with inertia (0,22,2) and strictly negative diagonal, while the OPPOSITE global reflection sign obeys the same action covariance and is PSD rank two - so action covariance does not select the odd-field reflection sign; narrows the target to a sign/algebra/trace discriminator.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7732,
+  "branch": "physics-loop/toe-axiom-closure-block202-l12-open-cut-event-boundary-20260825"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

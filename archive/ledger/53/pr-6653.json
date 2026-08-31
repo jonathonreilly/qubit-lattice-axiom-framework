@@ -1,0 +1,19 @@
+{
+ "id": "pr-6653",
+ "title": "feat(3ball): L-shaped third seed does not break tied-n swap",
+ "science": "Three-seed variant showing the tied-n swap persists, an incremental exploratory extension in the same displayed-not-adopted campaign.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6653,
+  "branch": "physics-loop/toe-lphys-block-3ball-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

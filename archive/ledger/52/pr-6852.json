@@ -1,0 +1,19 @@
+{
+ "id": "pr-6852",
+ "title": "physics: prove the observable scaling law at the second lattice size (block 136)",
+ "science": "The Z6 instance of the charge-kinematic growth law: conjugation pairs momentum k with -k, forced unit grams on conjugate pairs, the 3n observable count verified at a second lattice size (explicitly not claimed general).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6852,
+  "branch": "physics-loop/toe-axiom-closure-block136-observable-scaling-law-20260818"
+ },
+ "carried_by": "#6854 (block 138 states the general conditional theorem), #6856 (block 140 proves the rider family-wide), with the Z6 ledger entry inside #6855's completed N=4,6,8 ledger and the certificates cross-ch",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6551",
+ "title": "feat(q3bits): no remaining bit is constant on the 20 cov3>0 maps",
+ "science": "Displayed-not-adopted bit-support non-constancy check on cov3>0 maps; exploratory negative enumeration.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6551,
+  "branch": "physics-loop/toe-lphys-block-q3bits-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

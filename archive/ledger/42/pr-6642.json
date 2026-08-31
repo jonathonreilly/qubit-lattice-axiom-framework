@@ -1,0 +1,19 @@
+{
+ "id": "pr-6642",
+ "title": "feat(2bsign): natural occupancy-kernel labels do not fire the pair",
+ "science": "Negative that shuts the #6641 opening, not a probe cell: the NATURAL occupancy-kernel unique-axis labeling of the two-ball witness's four occupied neighbours gives c = (*,*,+,0,+,0) - the +-x neighbours (2,-1,-1) and (0,-1,-1) both have kernel n=(0,1/3,1/3), a two-component support, so neither has a unique axis at all. c is therefore not even a letter 6-tuple and cannot be a July-3 pair member; Ha",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6642,
+  "branch": "physics-loop/toe-lphys-block-2bsign-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

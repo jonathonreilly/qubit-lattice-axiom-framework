@@ -1,0 +1,19 @@
+{
+ "id": "pr-7141",
+ "title": "feat(nsnnyex): nnseed y-probe later-tick exist-opposite: reverse HOLD, face HOLD",
+ "science": "Exist-opposite on the perp nnseed y-probes: hold/hold, on the same seed whose x-probes (#7096) gave reverse=fail. The difference is entirely that S_*(A) here contains both +e_1 and -e_1 whereas the x-probe A had the singleton {+e_1}; the seed and the process are identical.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7141,
+  "branch": "physics-loop/toe-lphys-block-nsnnyex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

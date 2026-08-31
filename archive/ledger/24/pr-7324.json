@@ -1,0 +1,19 @@
+{
+ "id": "pr-7324",
+ "title": "physics: construct continuum low-arity Record menu compiler",
+ "science": "Block 38: source-level closure of W2, the second physical input the August-9 frame-lift theorem needs. Exhaustive classification: every binary or ternary nonzero menu whose members lie in {cP(N)} union {dI} has exactly one of five type words (RRR, RR, RRI, III, II) up to permutation - proved, not catalogued - and one Haar-covariant root law gives every stratum positive mixture mass with full-suppo",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7324,
+  "branch": "physics-loop/toe-record-continuum-low-arity-menu-block38-20260823"
+ },
+ "carried_by": "#7333 (open W-lane terminal)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

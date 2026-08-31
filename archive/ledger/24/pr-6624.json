@@ -1,0 +1,19 @@
+{
+ "id": "pr-6624",
+ "title": "physics: prove the floquet monodromy and the gauge obstruction",
+ "science": "Block 118 derives the Floquet monodromy exactly and proves the reflection-covariant gauge obstruction theorem (no real one-step-stationary gauge), with exact interval pins, cross-model checker, and the first contractive transfer value \u2014 decisive closure-chain result stacked on kept Block 117 and premise for Block 119. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6624,
+  "branch": "physics-loop/toe-axiom-closure-block118-floquet-monodromy-action-pairing-20260816"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

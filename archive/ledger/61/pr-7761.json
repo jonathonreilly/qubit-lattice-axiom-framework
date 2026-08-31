@@ -1,0 +1,19 @@
+{
+ "id": "pr-7761",
+ "title": "[physics-loop] toe-connection-dynamics-block218-action-os-transfer: conditional-support",
+ "science": "Supplies the exact plaquette action family with O(3) character identities, Euler-Lagrange and flat Hessian, and finite reflected-Gram transfer positivity plus an honest non-selection falsifier on the metric-dynamics bridge, with open KEEP PR 7763 stacked on it. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7761,
+  "branch": "physics-loop/toe-connection-dynamics-block218-action-os-transfer-20260827"
+ },
+ "carried_by": "#7803 (open metric-dynamics terminal; commit-ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

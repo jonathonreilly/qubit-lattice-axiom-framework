@@ -1,0 +1,19 @@
+{
+ "id": "pr-6799",
+ "title": "feat(hugk12): corridor-slide same-k holds at k=12: t=22 vs t=38",
+ "science": "mu same-k at k=12 on B_36: t=22 vs 38, 1452>1444 -- the razor-thin last mu hold (margin 8). Gives both witness walks explicitly, so the two linear laws t=k+10 and t=3k+2 are fully exhibited here. Load-bearing as the exact edge of mu's window. This runner drops the numeric not-leftover-of-nu assertion the siblings carry and substitutes a bare 'cannot price' substring test.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=12, 1452 > 1444, margin 8) face=n/a",
+ "source": {
+  "pr": 6799,
+  "branch": "physics-loop/toe-lphys-block-hugk12-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

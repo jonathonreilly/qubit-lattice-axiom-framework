@@ -1,0 +1,19 @@
+{
+ "id": "pr-6735",
+ "title": "feat(mix8): six of twelve B8 arrival shells mix radii; t=8 is mixed",
+ "science": "Displayed B8 arrival-shell radius-mixing tally largely overlapping 6725/6732, explicitly not adopted and warning against writing nu into Admissibility; exploratory duplicate-leaning pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6735,
+  "branch": "physics-loop/toe-lphys-block-mix8-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

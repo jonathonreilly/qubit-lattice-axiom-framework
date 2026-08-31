@@ -1,0 +1,19 @@
+{
+ "id": "pr-6321",
+ "title": "feat(menuuniq): unique stabilizer-covariant rank-1 PVM",
+ "science": "Bounded_theorem note, no probe cell. MENU-SELECTION UNIQUENESS -- arguably the most load-bearing item in this batch for the Born-selector obligation. Fixing an axis n, the ONLY rank-1 PVM covariant under the order-4 stabilizer rotation R about n is the spectral pair {P_n, P_{-n}}: the plus eigen-condition R u = u is row-reduced exactly over Q to the line spanned by e_x and the minus condition R u ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6321,
+  "branch": "physics-loop/toe-lphys-block-menuuniq-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

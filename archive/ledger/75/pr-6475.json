@@ -1,0 +1,19 @@
+{
+ "id": "pr-6475",
+ "title": "feat(l1c6why): first f_L1 six-site miss refuses on opp2",
+ "science": "First-refusal axis (opp2) for the f_L1 6-site miss, displayed-not-adopted mechanism note repeating the series pattern.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6475,
+  "branch": "physics-loop/toe-lphys-block-l1c6why-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

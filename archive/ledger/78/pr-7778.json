@@ -1,0 +1,19 @@
+{
+ "id": "pr-7778",
+ "title": "[physics-loop] Block 228: multi-certificate product boundary",
+ "science": "Completes all four unequal same-source controller/contact cylinders into a 45-row reduced product table; canonical fixture 21 (n=4, contacts {1,4}) then exhibits exact finite nonconfluence with three normal forms (two stranded certificate residues, one restored abort); a one-cell coalescence diagnostic closes all 2,046 contact subsets through length ten.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7778,
+  "branch": "physics-loop/toe-axiom-closure-block228-phase-contact-product-20260828"
+ },
+ "carried_by": "#7780 (the sole frozen C2 cell repairs fixture 21 and all bounded density controls)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

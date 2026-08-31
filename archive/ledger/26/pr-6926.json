@@ -1,0 +1,19 @@
+{
+ "id": "pr-6926",
+ "title": "feat(ofkmeet): out-face two-seed meet |M|=1 vars 0",
+ "science": "omega two-seed meet: equal-arrival grows to 345 sites (313 under rho3) and t(3,2,0)=11 vs 9, so the clause is genuinely live on the union \u2014 yet |M| stays the singleton {(1,0,0)} and the variance still ties l1. Explicitly states 'this same omega restores the same-k reverse through k=14 ... that one-seed claim is not re-proved here' \u2014 the second dangling premise.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6926,
+  "branch": "physics-loop/toe-lphys-block-ofkmeet-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

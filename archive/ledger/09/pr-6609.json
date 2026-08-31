@@ -1,0 +1,19 @@
+{
+ "id": "pr-6609",
+ "title": "feat(c3q8): cov3>0 is not Q8; positivity implies Q8",
+ "science": "Exact positive containment established and verified (pos_implies_Q8=1, Q8_FALSE_POS empty): cov3>0 implies Q8=(wt1 OR opp2 OR adj2 OR vertex3) on all 32 maps, N_pos=N_both=20, ten Q8-true/cov3=0 exceptions named. The note again gives the mechanism for the Q10 asymmetry: the c3q10 witness (1,1,0,0,0) has wt1=1 and opp2=1, both inside Q8 and neither inside Q10.",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q8",
+ "source": {
+  "pr": 6609,
+  "branch": "physics-loop/toe-lphys-block-c3q8-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

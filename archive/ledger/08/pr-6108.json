@@ -1,0 +1,19 @@
+{
+ "id": "pr-6108",
+ "title": "science: join geometry and Record Perron response",
+ "science": "Block 34: couples the sector transfers through one positive symmetric geometry kernel into a 1,024-state joint transfer whose single positive Perron law fixes geometry odds, the fifteen-edge source gradient, rank-15 susceptibility, and rank-10 metric pullback; an alternate-kernel control quantifies that the structural axioms do not select the null-action relation, kernel, or coupling.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6108,
+  "branch": "physics-loop/toe-axiom-closure-block34-joint-geometry-transfer-20260810"
+ },
+ "carried_by": "#6112 replaces the slice-global geometry label with the local four-state code and rank-ten compiler; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

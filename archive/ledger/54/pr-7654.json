@@ -1,0 +1,19 @@
+{
+ "id": "pr-7654",
+ "title": "feat(nm2frm2slx): directed 2-step cyclic-frame transport along +e1 at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Same-lock variant of #7612 (+e1 transport, reverse/face fail), displayed-not-adopted seed variation with no decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7654,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2slx-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

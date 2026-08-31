@@ -1,0 +1,19 @@
+{
+ "id": "pr-5994",
+ "title": "[physics-loop][review-loop] toe-time blockM9 (STACKED on #5991) \u2014 Cycle 927: bounded theorem \u2014 the second channel is arity dilution, not siz",
+ "science": "Establishes the second channel as arity dilution rather than size and hardens the degree-5 threshold, with the saturation measured. The dilution law is derived for stars by 933 and the saturation is derived exactly by 937 L-ZERO lemma (which predicts 927 saturation-length column at every field).",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5994,
+  "branch": "physics-loop/toe-time-blockM9-20260802"
+ },
+ "carried_by": "PR #6002 (dilution law derived) and PR #6008 (saturation derived; column predicted)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

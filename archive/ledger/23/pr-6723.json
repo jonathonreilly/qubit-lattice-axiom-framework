@@ -1,0 +1,19 @@
+{
+ "id": "pr-6723",
+ "title": "feat(numeet): two-seed nu meetings stay closer to Euclidean than l1",
+ "science": "Two-seed nu meeting variance check (displayed, not adopted), exploratory scan whose upshot is carried by the campaign roll-up.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6723,
+  "branch": "physics-loop/toe-lphys-block-numeet-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

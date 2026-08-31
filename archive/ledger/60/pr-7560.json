@@ -1,0 +1,19 @@
+{
+ "id": "pr-7560",
+ "title": "feat(nm2holxy0): z=0 xy unit-square cyclic-frame holonomy at t+1 on two-axis opposite seed: reverse fails, face HOLD",
+ "science": "Holonomy on the z=0 xy square versus the z=-1 square. One of only two members in the band where reverse fails and face HOLDs: the z=0 plane has split fail at Q=(1,0,0) and R=(1,1,0), while every corner of the z=-1 plane (the plane carrying the far-face seed) has split HOLD.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7560,
+  "branch": "physics-loop/toe-lphys-block-nm2holxy0-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

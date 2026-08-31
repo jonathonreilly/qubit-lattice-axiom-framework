@@ -1,0 +1,19 @@
+{
+ "id": "pr-7163",
+ "title": "feat(nsqpy): nsopp y-probe PVM letter: reverse UNDEFINED, face some",
+ "science": "Same PVM construction on nsopp y-probes but scored on an honest four-valued scale (all/some/none/UNDEFINED) with the combination counts printed: face_combos=4, face_hits=1 -> 'some'. n(A)=0 at the seed so reverse is UNDEFINED. This is the member that shows #7161/#7162 mis-scale identical data as HOLD, and it is the band's only contact with the Born-weight obligation (occupancy kernel acts as a Blo",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=some (1 of 4)",
+ "source": {
+  "pr": 7163,
+  "branch": "physics-loop/toe-lphys-block-nsqpy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

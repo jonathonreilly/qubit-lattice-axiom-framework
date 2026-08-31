@@ -1,0 +1,19 @@
+{
+ "id": "pr-6429",
+ "title": "feat(cut2cover): rank 2-site fill coverage of the 32 F_cut maps",
+ "science": "Displayed-not-adopted 2-site coverage ranking showing f_L1 not the maximizer, exploratory enumeration with no adopted conclusion.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6429,
+  "branch": "physics-loop/toe-lphys-block-cut2cover-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

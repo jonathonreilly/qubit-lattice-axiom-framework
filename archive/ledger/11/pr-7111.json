@@ -1,0 +1,19 @@
+{
+ "id": "pr-7111",
+ "title": "feat(nsopyncfx): opposite-lock y-probe same-tick n(C)!=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Opposite-lock y-probes, same-tick kernel. Letters are identical to the strictly-earlier run #7107 (UNDEFINED,-,UNDEFINED,-), so on the y-probes the occupancy timing convention has no effect at all.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7111,
+  "branch": "physics-loop/toe-lphys-block-nsopyncfx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

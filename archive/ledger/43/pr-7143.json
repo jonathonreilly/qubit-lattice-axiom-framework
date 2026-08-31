@@ -1,0 +1,19 @@
+{
+ "id": "pr-7143",
+ "title": "feat(nsopyft): nsopp y-probe formation-tick exist-opposite: reverse UNDEFINED, face HOLD",
+ "science": "Formation-tick (strictly-earlier, q excluded) exist-opposite on nsopp y-probes: S(A) is empty because A is a seed and its origin partner is same-tick, so reverse is UNDEFINED while face holds from -e1/+e1 at C/D. States the band's timing asymmetry explicitly: 'holding reverse needs the later tick; holding face does not.'",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=HOLD",
+ "source": {
+  "pr": 7143,
+  "branch": "physics-loop/toe-lphys-block-nsopyft-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

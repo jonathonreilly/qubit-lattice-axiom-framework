@@ -1,0 +1,19 @@
+{
+ "id": "pr-6805",
+ "title": "feat(hugk15): corridor-slide same-k fails at k=15: t=25 vs t=47",
+ "science": "mu at k=15 on B_45: t=25 vs 47, 1875<2209. Pure ladder confirmation of the k+10 / 3k+2 law past the wall.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO (same-k k=15, 1875 < 2209) face=n/a",
+ "source": {
+  "pr": 6805,
+  "branch": "physics-loop/toe-lphys-block-hugk15-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

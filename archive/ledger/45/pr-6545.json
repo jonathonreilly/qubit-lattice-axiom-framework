@@ -1,0 +1,19 @@
+{
+ "id": "pr-6545",
+ "title": "feat(q8class): both cov8=0 maps first refuse wt1",
+ "science": "Displayed-not-adopted first-refuse check for both cov8=0 maps; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6545,
+  "branch": "physics-loop/toe-lphys-block-q8class-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

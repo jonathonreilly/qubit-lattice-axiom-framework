@@ -1,0 +1,19 @@
+{
+ "id": "pr-6526",
+ "title": "feat(q4c6): cov6>0 is not Q4; four extras are vertex3=1",
+ "science": "Displayed-not-adopted cov6>0 vs Q4 enumeration among 32 F_cut maps; exploratory campaign block, no TOE-core artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6526,
+  "branch": "physics-loop/toe-lphys-block-q4c6-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

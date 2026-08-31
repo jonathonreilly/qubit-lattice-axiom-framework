@@ -1,0 +1,19 @@
+{
+ "id": "pr-7018",
+ "title": "feat(rdunrd): deleting unread (2,0,0) does not move c2d4 reverse at k=1",
+ "science": "Unread-site deletion robustness check on c2d4 reverse, displayed-not-adopted single-point diagnostic with no adopted consequence.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7018,
+  "branch": "physics-loop/toe-lphys-block-rdunrd-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6469",
+ "title": "feat(mix0c3why): mix0 three-site miss first refuses opp2 not mixed3",
+ "science": "First-refusal axis (opp2) for the mix0 3-site miss, displayed-not-adopted mechanism note in the 0815 lphys scan pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6469,
+  "branch": "physics-loop/toe-lphys-block-mix0c3why-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

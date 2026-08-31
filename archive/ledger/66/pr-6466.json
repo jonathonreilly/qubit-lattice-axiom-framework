@@ -1,0 +1,19 @@
+{
+ "id": "pr-6466",
+ "title": "feat(c4share): L1 and f0 do not miss the same 4-site seeds",
+ "science": "Miss-set intersection showing L1 4-site misses not implied by mixed3=0, displayed-not-adopted micro-fact in the 0815 pack.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6466,
+  "branch": "physics-loop/toe-lphys-block-c4share-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

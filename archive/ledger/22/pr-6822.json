@@ -1,0 +1,19 @@
+{
+ "id": "pr-6822",
+ "title": "feat(ridface): ridge-slide face reverse holds k=1..8 on B16",
+ "science": "FACE-DIAGONAL result and the band's one confirmed defect. Claims rho3 reverses the face pair ((2k,0,0),(k,k,0)) at EVERY available k=1..8 on B_16 (36>32, 144>128, 324>200, 400>288, 484>392, 576>512, 676>648, 1024>800), where mu fails at k=6,7 -- that would refute the prior band's 'face reverse dies at k>=5'. But the k=8 bit is a BALL-WALL ARTIFACT: (16,0,0) sits on the B_16 wall, its cheap corrido",
+ "forcing": false,
+ "verdict_pair": "reverse=YES claimed at k=1..8 (face pair); k=8 bit (1024>800",
+ "source": {
+  "pr": 6822,
+  "branch": "physics-loop/toe-lphys-block-ridface-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

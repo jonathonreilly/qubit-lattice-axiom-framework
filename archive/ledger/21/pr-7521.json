@@ -1,0 +1,19 @@
+{
+ "id": "pr-7521",
+ "title": "feat(nm2sfzfrmrd): HOLDING neighbor-read of cyclic lex-smallest frame transport at t+1 on three-axis far-face opposite z-probes: reverse HOL",
+ "science": "On the three-axis far-face opposite seed all four z-probes have split HOLD, Orient (+1,+1,-1,-1), a frame transporting to a formed six-neighbour by a signed permutation of matching determinant, and a neighbour that itself transports, so reverse and face both HOLD; this is a HOLD/HOLD cell outside the roll-up's 153. The same table records that the scalar neighbour-read of Orient fails at C, where b",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7521,
+  "branch": "physics-loop/toe-lphys-block-nm2sfzfrmrd-20260815"
+ },
+ "carried_by": "archive/families/toe-lphys-20260812.md \u00a7Follow-on (the 19 citing notes)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

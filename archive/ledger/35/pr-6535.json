@@ -1,0 +1,19 @@
+{
+ "id": "pr-6535",
+ "title": "feat(q6zero): cov6-zero first refuse on f1 6-site fill is adj2",
+ "science": "Displayed-not-adopted first-refuse enumeration on the 6-site fill for the cov6-zero map; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6535,
+  "branch": "physics-loop/toe-lphys-block-q6zero-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

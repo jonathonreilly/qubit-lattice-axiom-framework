@@ -1,0 +1,19 @@
+{
+ "id": "pr-6409",
+ "title": "feat(mix3fill): mixed3=1 holds for 48 of the 96 1-site fillers",
+ "science": "N_mix3 = 48 = exactly half of the 96 one-site fillers fire mixed3 (the size-12 axis-type (1,1,1) orbit). The result that matters is the REASON given in Theorem 2: 'flipping the mixed3 bit of any filler yields another filler: the 1-site fill dynamics on this patch with off-patch occupancy 0 never uses a mixed3 neighborhood as a lock predicate.' So mixed3 is a dynamically IDLE orbit on this patch - ",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6409,
+  "branch": "physics-loop/toe-lphys-block-mix3fill-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

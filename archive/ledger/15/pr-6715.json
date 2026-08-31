@@ -1,0 +1,19 @@
+{
+ "id": "pr-6715",
+ "title": "feat(nosh4): support-drop also reverses the small-ball pair on B4",
+ "science": "Support-drop cost B4 companion check (displayed, not adopted), exploratory data point in the same non-adopted cost series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6715,
+  "branch": "physics-loop/toe-lphys-block-nosh4-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

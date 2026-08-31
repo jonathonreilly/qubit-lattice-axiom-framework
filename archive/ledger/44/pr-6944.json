@@ -1,0 +1,19 @@
+{
+ "id": "pr-6944",
+ "title": "feat(ufk1): unit-out-face same-k holds at k=1: t=3 vs t=5",
+ "science": "Same uf vacuity at k=1 on B_6(0), and here the runner proves it exhaustively: it enumerates every in-ball hop and asserts extra_new == 0, i.e. EVERY hop the extra clause names is already rho3-cost-3. So the whole 377-site table is the rho3 table and t(1,0,0)=3, t(1,1,1)=5, 27>25 is inherited, not produced.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=1 but under a rule proven identical to rho3",
+ "source": {
+  "pr": 6944,
+  "branch": "physics-loop/toe-lphys-block-ufk1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

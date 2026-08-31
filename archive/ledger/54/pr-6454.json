@@ -1,0 +1,19 @@
+{
+ "id": "pr-6454",
+ "title": "feat(cminmix): 1-site halt of unnamed F_cut filler (1,0,1,0,1)",
+ "science": "Completes the eight-filler roster and confirms the subcube characterization outright: it states that the eight F_cut 1-site fillers are EXACTLY the maps with (wt1,adj2)=(1,1), and the runner prints the full list, which matches the (opp2,vertex3,mixed3)-free subcube. The new member run is (1,0,1,0,1), supp 48, which fills at T=5 with history (1,4,8,10,11,12) and the same lock SETS at every tick as ",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6454,
+  "branch": "physics-loop/toe-lphys-block-cminmix-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6249",
+ "title": "[physics-loop] toe-lphys blankocc: bounded_theorem / bounded-support",
+ "science": "Bookkeeping-style toy check that blank-site occupancy is extra after the landed Record cut; conclusion carried by the landed cut itself.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6249,
+  "branch": "physics-loop/toe-lphys-block-blankocc-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

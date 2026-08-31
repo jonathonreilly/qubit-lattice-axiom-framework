@@ -1,0 +1,19 @@
+{
+ "id": "pr-7133",
+ "title": "feat(nsexint): nsopp B3 interval census N_space=8 N_null=3 N_time=108",
+ "science": "The only causal-geometry measurement in the band and the strongest single result: a complete interval census s^2=t^2-|x|^2 over every formed nonzero site of B_3(0) under the opposite-lock seed. N_formed=119 (exactly three sites, (+-3,0,0) and (0,3,0), are permanently unreachable because the perp rule forbids the only step that reaches them), split N_space=8, N_null=3, N_time=108. The 8 spacelike s",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7133,
+  "branch": "physics-loop/toe-lphys-block-nsexint-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

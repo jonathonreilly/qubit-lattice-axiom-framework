@@ -1,0 +1,19 @@
+{
+ "id": "pr-7799",
+ "title": "[physics-loop] Block245 exact r3 q2 six-history Gram",
+ "science": "Constructs the complete 36-path six-sector history Gram for the r=3,q=2 cubic response: exact sector orthogonality, Hermitian/PSD structure, generic raw rank 29 (seven exact t^4 relations), normalized-sum rank 12, endpoint ranks. This is the candidate memory carrier the next two blocks falsify and subsume.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7799,
+  "branch": "physics-loop/toe-connection-dynamics-block245-r3q2-six-history-gram-20260829"
+ },
+ "carried_by": "#7803 (open conndyn terminal; decided reconcile item 8; ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

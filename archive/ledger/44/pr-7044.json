@@ -1,0 +1,19 @@
+{
+ "id": "pr-7044",
+ "title": "feat(lockp): unique-lock inversion sample is all-odd",
+ "science": "Inversion parity of unique earliest incoming locks: 60 formed antipodal pairs {x,-x}, 25 with unique locks at both ends, and ALL 25 are odd, L(-x) = -L(x); N_even=N_other=0. The lock field transforms as a polar vector under spatial inversion on its unique-lock subsample. Note explicitly refuses to write P or V-A into Admissibility.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7044,
+  "branch": "physics-loop/toe-lphys-block-lockp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

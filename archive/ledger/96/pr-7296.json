@@ -1,0 +1,19 @@
+{
+ "id": "pr-7296",
+ "title": "feat(nm12zp): 1-in 2-out split on #7186: reverse HOLD, face fails",
+ "science": "z-symmetric 3-site seed, z-probes: first display of the 1-in 2-out axis split (cover + |Axis(M)|=1). Cover HOLDs at all four probes but split FAILs at D because M(D) is a 3-element mixed set with |Axis(M)|=2 (2-in-1-out); this is one of only three cells in the band where the split refinement has content beyond axis-cover.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7296,
+  "branch": "physics-loop/toe-lphys-block-nm12zp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

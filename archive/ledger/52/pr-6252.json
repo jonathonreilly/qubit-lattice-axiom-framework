@@ -1,0 +1,19 @@
+{
+ "id": "pr-6252",
+ "title": "[physics-loop] toe-lphys c2declare: bounded_theorem / bounded-support",
+ "science": "Prose-plus-toy-check that a declared M3 carrier is extra rather than composite under the unadopted C2 reading; no core movement.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6252,
+  "branch": "physics-loop/toe-lphys-block-c2declare-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

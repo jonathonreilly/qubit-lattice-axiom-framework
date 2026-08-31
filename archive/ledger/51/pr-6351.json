@@ -1,0 +1,19 @@
+{
+ "id": "pr-6351",
+ "title": "physics: guarded pair-aware swap-back collision repair",
+ "science": "Block 90: conditional compiler repair for the Block 89 symmetric collision - pair-aware 191-primitive swap-back words per event on a supplied Record-free reserved corridor restore all unrecorded route factors, implement the exact eight-site semantic unitaries on all 256 basis states, commute at 2.24e-16 (vs the compact compiler's 0.728 residual), and give 36/36 branch-ledger confluence with full 3",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6351,
+  "branch": "physics-loop/toe-axiom-closure-block90-pair-aware-swapback-20260814"
+ },
+ "carried_by": "PR #6352 (Block 91) compiles the same witness's joint transaction (both orders, 374 primitives, guarded 52-site corridor) with the complete two-event ledger, subsuming the corridor mechanics",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

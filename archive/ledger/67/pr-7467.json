@@ -1,0 +1,19 @@
+{
+ "id": "pr-7467",
+ "title": "feat(nm2ocycct2y): cyclic lex-smallest Orient freeze t+1 vs t+2 on two-axis opposite y-probes: reverse HOLD, face fails, composition HOLD",
+ "science": "opposite y-probes, cyclic lex-smallest orientation at two cuts; reverse=hold at both. Inherits the tie-break artifact documented at #7455/#7456. Composition is forced: O(q,tau) is constant for all tau>=t(q)+1 (any step e in O(q) requires e in M(q+e), which forces t(q+e)=t(q)+1), so t+2 can never differ from t+1 and composition=HOLD carries zero information.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7467,
+  "branch": "physics-loop/toe-lphys-block-nm2ocycct2y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

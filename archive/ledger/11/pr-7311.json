@@ -1,0 +1,19 @@
+{
+ "id": "pr-7311",
+ "title": "feat(nm2slo): outgoing exist-opposite at t+1 on two-axis same-lock y-probes: reverse HOLD, face HOLD",
+ "science": "Two-axis same-lock seed, y-probes, exist-opposite of O. Same hold/hold as the opposite seed while M exist-opposite reverse FAILs (both M sides are {+e_1}): the signed opposite-pair structure lives in O, not in M, on this seed.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7311,
+  "branch": "physics-loop/toe-lphys-block-nm2slo-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

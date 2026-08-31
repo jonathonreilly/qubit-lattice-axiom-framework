@@ -1,0 +1,19 @@
+{
+ "id": "pr-6558",
+ "title": "feat(extra6why): Q8 extra first-refuses adj2 on f1 six-site fill",
+ "science": "Displayed-not-adopted first-refuse detail for the Q8 extra on six-site fills; exploratory campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6558,
+  "branch": "physics-loop/toe-lphys-block-extra6why-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

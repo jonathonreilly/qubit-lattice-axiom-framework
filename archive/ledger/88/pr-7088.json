@@ -1,0 +1,19 @@
+{
+ "id": "pr-7088",
+ "title": "feat(nscovx): same-tick x unique vector: reverse UNDEFINED, face holds",
+ "science": "Same-tick-inclusive lock vector on the x-probes: A's three same-tick partners all lock +e_1 so L(A) stays the singleton +e_1; L(B) stays UNDEFINED; L(C)=-e_2, L(D)=+e_2 -> reverse UNDEFINED, face HOLD. A case where the simultaneity convention does NOT move the verdict, which is the useful control against #7086/#7087.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=hold",
+ "source": {
+  "pr": 7088,
+  "branch": "physics-loop/toe-lphys-block-nscovx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

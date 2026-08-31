@@ -1,0 +1,19 @@
+{
+ "id": "pr-7473",
+ "title": "feat(nm2ocyccrdy): neighbor-read of cyclic lex-smallest Orient at t+1 on two-axis opposite y-probes: reverse fails, face fails",
+ "science": "opposite y-probes, neighbour-read of the cyclic lex-smallest orientation. Holds at A and C, fails at B and D - identical bits to the lex-largest wrapper (#7466), so the neighbour-read collapse on the y-probes is tie-break invariant.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7473,
+  "branch": "physics-loop/toe-lphys-block-nm2ocyccrdy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

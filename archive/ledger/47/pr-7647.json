@@ -1,0 +1,19 @@
+{
+ "id": "pr-7647",
+ "title": "feat(nm2frm2s3z): directed 2-step cyclic-frame transport along -e3 at t+1 on three-axis opposite near-face seed: reverse fails, face HOLD",
+ "science": "Near-face variant of #7621 (-e3 2-step, per-site tau), face HOLD. Verified the extra x=2 pair leaves all four probe frames and the whole verdict pair unchanged from #7621; the two PRs are the same result.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=hold",
+ "source": {
+  "pr": 7647,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2s3z-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

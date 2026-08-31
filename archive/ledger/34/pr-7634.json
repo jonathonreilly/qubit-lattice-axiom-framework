@@ -1,0 +1,19 @@
+{
+ "id": "pr-7634",
+ "title": "feat(nm2frm1sx): directed 1-step cyclic-frame transport along -e1 at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "-e1 1-step, global tau=1: all four bits fail because every x-neighbour of the probes forms at tick 2 and has no split at tau=1 \u2014 a support/wall artifact, not a transport property. Under the per-site cut the face pair HOLDs. Recomputed both.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7634,
+  "branch": "physics-loop/toe-lphys-block-nm2frm1sx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

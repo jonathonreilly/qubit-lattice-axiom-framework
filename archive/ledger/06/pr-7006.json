@@ -1,0 +1,19 @@
+{
+ "id": "pr-7006",
+ "title": "feat(s2k19): c2d4-plus-soft-ridge same-k fails at k=19: t=33 vs t=60",
+ "science": "s2 at k=19 on B_57(0): (33,60), 3267 < 3600 -- fails again, and the note notes the pair moved off c2d4's (35,61) yet the bit did not recover. Confirms the s2 route is strictly dominated.",
+ "forcing": false,
+ "verdict_pair": "reverse=NO at k=19 (3267<3600; band bit) face=absent",
+ "source": {
+  "pr": 7006,
+  "branch": "physics-loop/toe-lphys-block-s2k19-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

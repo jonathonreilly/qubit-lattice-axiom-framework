@@ -1,0 +1,19 @@
+{
+ "id": "pr-6716",
+ "title": "feat(detour): alpha undercut is a parallel-axis detour costing 8",
+ "science": "Parallel-axis detour path display under alpha cost (displayed, not adopted), exploratory path fragment in the mink series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6716,
+  "branch": "physics-loop/toe-lphys-block-detour-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

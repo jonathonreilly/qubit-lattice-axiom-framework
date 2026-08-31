@@ -1,0 +1,19 @@
+{
+ "id": "pr-6417",
+ "title": "feat(mindiff): first |S|<=3 seed where f_min and f_L1 disagree",
+ "science": "One of the strongest in the batch, and it silently CORRECTS the series' own account of f_min vs f_L1. Exhaustive lex census of all 298 nonempty seeds with |S|<=3 on the two-cube: every 1-site seed and the long-axis 3-site seed agree, and the FIRST separating seed is the opposite-corner pair S={(0,0,0),(2,1,1)} - f_L1 fills with (2,8,12) T=2, f_min halts at 10 with (2,8,10) and does not fill. The e",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6417,
+  "branch": "physics-loop/toe-lphys-block-mindiff-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

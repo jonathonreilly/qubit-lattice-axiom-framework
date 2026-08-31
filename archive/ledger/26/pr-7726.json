@@ -1,0 +1,19 @@
+{
+ "id": "pr-7726",
+ "title": "physics: isolate L24 fermionic OS spin boundary",
+ "science": "The literal periodic/uniform L24 fermionic Berezin reflected covariance is indefinite before any quotient: exact per-block inertia (2,20,2) with two-generator norm -7^14/77463616656739800, full fiber (16,160,16); and exact mode arithmetic proves the scalar antiperiodic repair is impossible on this carrier (pi/6 and pi/4 share a twist only at L=24n with periodic +1). Kills the literal periodic carr",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7726,
+  "branch": "physics-loop/toe-axiom-closure-block197-os-gns-car-history-reconstruction-20260825"
+ },
+ "carried_by": "#7727 (even/odd Schur marginals inherit the indefiniteness with the closed-form -1/(m^2+s) law); #7733 (tournament exhaustion subsumes it); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

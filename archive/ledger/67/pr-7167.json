@@ -1,0 +1,19 @@
+{
+ "id": "pr-7167",
+ "title": "feat(nsuoyinc): nsopp y-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "Same-tick-inclusive union own lock on nsopp y-probes: reverse HOLD fires solely through the own-letter channel (L(A)=-e1 against +e1 in S^+(B)), moving fail (#7152) -> hold without any increase in the time window. The sharpest demonstration in the band that the own letter is an independent knob that substitutes for waiting until the global later tick.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7167,
+  "branch": "physics-loop/toe-lphys-block-nsuoyinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

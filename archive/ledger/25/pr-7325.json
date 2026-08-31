@@ -1,0 +1,19 @@
+{
+ "id": "pr-7325",
+ "title": "physics: prove nearest-neighbor W1 nonselection",
+ "science": "THE forcing negative of this set. At support-level local conditional-law resolution on the explicit Block-32 qubit preparation/program carrier, the four Minimal Axioms plus the fixed Record-content decoder do NOT select cross-program effect functionality W1. Two total STRICT nearest-neighbor probability kernels share the same six-neighbour conditions, preparation quotient, registered output conten",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7325,
+  "branch": "physics-loop/toe-record-w1-pincer-block39-20260823"
+ },
+ "carried_by": "#7326 (open W-lane terminal)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

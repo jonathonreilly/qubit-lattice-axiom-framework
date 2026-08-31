@@ -1,0 +1,19 @@
+{
+ "id": "pr-7471",
+ "title": "feat(nm2ocyccslx): cyclic lex-smallest det orientation of 1-in 2-out at t+1 on two-axis same-lock x-probes: reverse fails, face fails",
+ "science": "same-lock x-probes, cyclic lex-smallest orientation. Probe bits identical to the opposite seed (#7465); both pairs fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7471,
+  "branch": "physics-loop/toe-lphys-block-nm2ocyccslx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

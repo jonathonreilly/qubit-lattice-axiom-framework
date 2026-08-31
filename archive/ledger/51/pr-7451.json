@@ -1,0 +1,19 @@
+{
+ "id": "pr-7451",
+ "title": "feat(nm2oricyclz): cyclic next/prev lex-largest det orientation of 1-in 2-out at t+1 on two-axis opposite z-probes: reverse HOLD, face HOLD",
+ "science": "THE band's headline cell: opposite seed, z-probes, cyclic next/prev lex-largest det orientation, Orient=(-1,-1,+1,+1) giving reverse=HOLD and face=HOLD. This is the unique (seed,axis,selector) cell out of the 48 I recomputed that achieves both pair-reads HOLD, and it sits on the unique cell where all four probes carry a 1-in-2-out split.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7451,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyclz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6080",
+ "title": "science(gravity): derive affine bag Regge monopole boundary",
+ "science": "Block 12: extends the endpoint-shared cut action to a local four-coframe worldvolume, realizes it on the Kuhn-triangulated cubic-Coxeter Regge edge carrier, fixes the centered affine balance p/tau=4, and gets the first metric-transverse lapse pole 2tau/|k|^2 with open-boundary 1/(4 pi r) shape; honest boundary already flags the compact k=0 range obstruction.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6080,
+  "branch": "physics-loop/toe-axiom-closure-block12-20260810"
+ },
+ "carried_by": "#6081 converts the isolated affine bag into the actual axial tick-edge Regge source retaining the pole and Green shape; pole normalization matures into the induced-gravity landing core #7814; ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

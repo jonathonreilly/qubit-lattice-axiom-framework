@@ -1,0 +1,19 @@
+{
+ "id": "pr-7481",
+ "title": "feat(nm2occt2slx): cyclic lex-smallest Orient freeze t+1 vs t+2 on two-axis same-lock x-probes: reverse fails, face fails, composition HOLD",
+ "science": "Same cell as #7479, lex-smallest: Orient fail,+1,-1,fail. Verdict pair unchanged (tie-break inert here). Defect: 'mutation-exist-opposite-differs' asserts pair_bit(pair_present[A],pair_present[B]) == reverse and 'mutation-leftover-of-M-or-O-alone-differs' asserts reverse_m_alone == reverse \u2014 both assert AGREEMENT under '-differs' labels.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7481,
+  "branch": "physics-loop/toe-lphys-block-nm2occt2slx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

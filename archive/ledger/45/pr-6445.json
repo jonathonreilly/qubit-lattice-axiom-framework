@@ -1,0 +1,19 @@
+{
+ "id": "pr-6445",
+ "title": "feat(k4v30dyn): k=4 map (1,1,1,0,0) 1-site history disagrees with L1",
+ "science": "Single-map history run in the k=4 sub-series: the F_cut map (1,1,1,0,0) has k=4 (fills all four long-axis 2-site seeds) but cov=36, so it is a long-axis filler that is NOT a two-site coverage maximizer. From the 1-site seed it fills at T=5 with history (1,4,8,10,11,12), which does NOT match f_L1's (1,4,8,11,12) - the extra tick is the vertex3=0 delay. Modest: one map, one seed, and the k=4/cov fac",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6445,
+  "branch": "physics-loop/toe-lphys-block-k4v30dyn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6980",
+ "title": "feat(c2d4k17): cost-2 max\u22654 out-face same-k holds at k=17: t=33 vs t=55",
+ "science": "c2d4 same-k at k=17 on B_51(0): (33,55), 3267>3025. Row recomputed inside #6981. Carried by #6981.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=17 (band bit) face=absent",
+ "source": {
+  "pr": 6980,
+  "branch": "physics-loop/toe-lphys-block-c2d4k17-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

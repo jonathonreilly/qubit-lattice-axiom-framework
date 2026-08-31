@@ -1,0 +1,19 @@
+{
+ "id": "pr-6574",
+ "title": "feat(mix3sel): no 1-bit or 2-bit Q equals mixed3 cov8-equality",
+ "science": "Runner check thm1-fifteen-q8-true-pairs asserts and verifies an exact equivalence never stated as a theorem in the note: cov8=0 on both Q8-false maps and cov8>0 on all 30 Q8-true maps, i.e. cov8>0 iff Q8 on all 32 F_cut maps. Also reports the unique equal-cov8 pair (0,1,0,0,*) at cov8=1 and the f_L1 prefix split cov8=494 vs 446.",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (equality selector search; n_selector_e",
+ "source": {
+  "pr": 6574,
+  "branch": "physics-loop/toe-lphys-block-mix3sel-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

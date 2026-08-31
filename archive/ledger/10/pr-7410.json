@@ -1,0 +1,19 @@
+{
+ "id": "pr-7410",
+ "title": "feat(nm2simt3x): simultaneous M and O freeze t+2 vs t+3 on two-axis opposite x-probes: reverse HOLD, face HOLD, composition HOLD",
+ "science": "Simultaneous freeze t+2 vs t+3 on opposite x-probes; B gains a new six-neighbour at t+3 that does not grow O.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7410,
+  "branch": "physics-loop/toe-lphys-block-nm2simt3x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

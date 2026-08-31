@@ -1,0 +1,19 @@
+{
+ "id": "pr-6092",
+ "title": "[physics-loop] toe-axiom-closure block21 \u2014 bounded_theorem \u2014 bounded-support \u2014 sourced Regge constraint-localization boundary",
+ "science": "Block 21: off-flat Hessian of sum_h A_h(eps_h+alpha eps_h^2), nondegenerate saddle-node of the unsourced Block-19-connected branch at alpha=3.94e-4, interval-certified sourced continuations at alpha=1/1024, and an exact two-witness proof that no real alpha gives constant pointwise-normal inertia 4-/1+ at both witnesses \u2014 diagnosing the two supplied affine constraint localizations.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6092,
+  "branch": "physics-loop/toe-axiom-closure-block21-sourced-regge-20260810"
+ },
+ "carried_by": "#6093 genuinely retires this obstruction with the momentum-dependent inherited flat-gauge quotient (both witnesses become 9-/2+); ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

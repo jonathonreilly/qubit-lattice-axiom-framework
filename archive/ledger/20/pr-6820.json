@@ -1,0 +1,19 @@
+{
+ "id": "pr-6820",
+ "title": "feat(ridk10): ridge-slide same-k holds at k=10: t=22 vs t=34",
+ "science": "rho3 at k=10 on B_30: t=22 vs 34, 1452>1156. Ladder point; records t(2,2,2)=10 under rho3 vs 8 under mu as the liveness witness.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=10, 1452 > 1156) face=n/a",
+ "source": {
+  "pr": 6820,
+  "branch": "physics-loop/toe-lphys-block-ridk10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

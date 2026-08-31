@@ -1,0 +1,19 @@
+{
+ "id": "pr-6487",
+ "title": "feat(wt0kuniq): report wt1=0 coverage uniqueness set K_unique={4..8}",
+ "science": "Multi-k roll-up across cells: cites #6482 (N_max_2=16) and #6483 (N_max_3=2), computes k=4..11 itself, and forms K_unique={4,5,6,7,8} with the SAME unique maximizer (0,1,1,1,1) at all five sizes. Small structural regularity spanning several family cells rather than one census.",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut coverage census; no (reverse,f",
+ "source": {
+  "pr": 6487,
+  "branch": "physics-loop/toe-lphys-block-wt0kuniq-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

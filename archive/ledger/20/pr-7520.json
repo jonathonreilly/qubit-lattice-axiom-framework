@@ -1,0 +1,19 @@
+{
+ "id": "pr-7520",
+ "title": "feat(nm2frm3zt2): HOLDING cyclic-frame transport freeze t+1 vs t+2 on three-axis opposite z-probes: reverse HOLD, face HOLD, composition HOL",
+ "science": "Transport at two cuts on the near 3-axis-opposite z-probes with the lex-smallest frame; hold everywhere, composition hold.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7520,
+  "branch": "physics-loop/toe-lphys-block-nm2frm3zt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

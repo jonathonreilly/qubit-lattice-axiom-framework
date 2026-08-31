@@ -1,0 +1,19 @@
+{
+ "id": "pr-7154",
+ "title": "feat(nsopinz): nsopp z-probe own-lock-in exist-opposite: reverse fails, face fails",
+ "science": "Own-lock-in on nsopp z-probes: S^+ = {+e1,+e3} at A, B and D and {+e3} at C, so no opposite pair exists anywhere and both bits fail. The runner verifies in-line that the later-tick readout on the same probes would hold - a monotone-widening witness embedded in a member whose own verdict is negative.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7154,
+  "branch": "physics-loop/toe-lphys-block-nsopinz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

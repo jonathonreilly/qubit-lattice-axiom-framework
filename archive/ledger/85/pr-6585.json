@@ -1,0 +1,19 @@
+{
+ "id": "pr-6585",
+ "title": "feat(c8q10): cov8>0 is not Q10",
+ "science": "reverse=N/A face=N/A (selector test; cov8>0_iff_Q10=0, N_pos=30, N_Q10=28, N_both=27, lex_first_miss=(0,0,0,0,1))",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; cov8>0_iff_Q10=0, N_pos",
+ "source": {
+  "pr": 6585,
+  "branch": "physics-loop/toe-lphys-block-c8q10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7490",
+ "title": "feat(nm2cycfrmz): HOLDING cyclic-frame transport of (m,o_next,o_prev) at t+1 on two-axis opposite z-probes: reverse HOLD, face HOLD",
+ "science": "Head of the frame-TRANSPORT family: transport(q) HOLDs iff split HOLDs, Orient=+/-1, and some formed 6-NN r admits a sending P=F(q)^T F(r) that is a signed permutation with det P = Orient(q)Orient(r). DEFECT: both conditions are identities. F(q),F(r) are always signed-permutation matrices, so P always is and det P always equals Orient(q)Orient(r) \u2014 verified exhaustively over all 2304 ordered pairs",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7490,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

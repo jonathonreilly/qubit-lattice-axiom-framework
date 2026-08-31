@@ -1,0 +1,19 @@
+{
+ "id": "pr-6581",
+ "title": "feat(qstarc7): among Q_star, cov7=792 iff vertex3 and mixed3",
+ "science": "Exact positive equivalence: among the 8 Q_* maps, cov7=792 iff (vertex3=1 and mixed3=1); N_tot7=N_k=N_both=2, witness=[]. Carries the full eight-line cov7 census (312,348,720,792,348,348,776,792). Together with #6570 (cov5) and #6572 (cov3) it shows the same k=vertex3^mixed3 selects Q_* totality at k=3,5,7 - a cross-cell pattern no single member states.",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (cover census + iff selector test; tot7",
+ "source": {
+  "pr": 6581,
+  "branch": "physics-loop/toe-lphys-block-qstarc7-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

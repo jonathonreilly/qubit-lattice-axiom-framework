@@ -1,0 +1,19 @@
+{
+ "id": "pr-6262",
+ "title": "[physics-loop] toe-lphys coloradj: bounded_theorem / bounded-support",
+ "science": "Route-3 exercise that su(3)-adjoint in M8 is not unital M3 (3 does not divide 8); exploratory route report carried by roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6262,
+  "branch": "physics-loop/toe-lphys-block-coloradj-20260813"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

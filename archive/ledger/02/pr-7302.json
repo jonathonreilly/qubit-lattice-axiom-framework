@@ -1,0 +1,19 @@
+{
+ "id": "pr-7302",
+ "title": "feat(nm2slp): two-axis same-lock seed forall-perp: reverse HOLD, face HOLD",
+ "science": "Two-axis same-lock seed, y-probes, forall-orthogonal: identical verdicts to the opposite seed (#7301). Adds the contrast that M exist-opposite reverse FAILs here (both M(A) and M(B) are {+e_1}) while forall-perp reverse HOLDs - the sign structure of the seed is invisible to forall-perp on the y-probes.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7302,
+  "branch": "physics-loop/toe-lphys-block-nm2slp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

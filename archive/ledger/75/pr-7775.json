@@ -1,0 +1,19 @@
+{
+ "id": "pr-7775",
+ "title": "[physics-loop] Block 226: tagged echo interior-seed orphan boundary",
+ "science": "First legal complete interior contact fixture defeats the Amendment-2 T-T-T -> H-T-L seed grammar: the contact-first evolution enters reciprocal S-S leaving the original rootward H with no enabled frozen repair (restoration failure), after direct-root 36/36 and one-edge 100/100 pass; post-result panel 4-1-0 selects the full-state repair route.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7775,
+  "branch": "physics-loop/toe-axiom-closure-block226-tagged-relational-echo-20260828"
+ },
+ "carried_by": "#7777 (executes the panel-selected full-state contact repair row table)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

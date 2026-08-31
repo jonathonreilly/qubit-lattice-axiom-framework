@@ -1,0 +1,19 @@
+{
+ "id": "pr-6942",
+ "title": "feat(w2k18): cost-2 out-face same-k holds at k=18: t=34 vs t=58",
+ "science": "Cost-2 out-face same-k k=18 display, intermediate member superseded by the k=19 first-fail terminal (PR 6936), displayed-not-adopted.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6942,
+  "branch": "physics-loop/toe-lphys-block-w2k18-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

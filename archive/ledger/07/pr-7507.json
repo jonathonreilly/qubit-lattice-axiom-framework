@@ -1,0 +1,19 @@
+{
+ "id": "pr-7507",
+ "title": "feat(nm2cyc3fxt2): cyclic lex-largest Orient freeze t+1 vs t+2 on three-axis far-face opposite x-probes: reverse fails, face fails, composit",
+ "science": "#7500's cell with composition. Carries the same two phrase-inverted '-differ' mutation gates as #7500 (leftover[B]==orient[B], lex[C]==orient[C]).",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7507,
+  "branch": "physics-loop/toe-lphys-block-nm2cyc3fxt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

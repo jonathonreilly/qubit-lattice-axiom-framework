@@ -1,0 +1,19 @@
+{
+ "id": "pr-6452",
+ "title": "feat(v30mix3): mix0/L1 splitter seed splits vertex3=0 k=4 pair",
+ "science": "First 3-site seed splitting the vertex3=0 k=4 pair, incremental displayed-not-adopted scan observation continuing #6449.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6452,
+  "branch": "physics-loop/toe-lphys-block-v30mix3-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

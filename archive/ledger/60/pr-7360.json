@@ -1,0 +1,19 @@
+{
+ "id": "pr-7360",
+ "title": "feat(nm2readslz): neighbor-read of M at t+1 on two-axis same-lock z-probes: reverse HOLD, face HOLD",
+ "science": "Two-axis same-lock seed, z-probes, neighbor-read of M: HOLDs at all four probes. Names the mechanism explicitly - the match at A is the partner SEED (0,1,1) carrying the identical letter +e_2, whereas on the opposite seed the partner letter is -e_2 and the read fails. The verdict is therefore decided by the seed-letter convention at a pair of adjacent tick-0 seeds, not by any formation event.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7360,
+  "branch": "physics-loop/toe-lphys-block-nm2readslz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

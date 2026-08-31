@@ -1,0 +1,19 @@
+{
+ "id": "pr-7802",
+ "title": "Physics loop: record Block17 compiler scout failure",
+ "science": "Kill certificate for the one preregistered signed-ray/fan nearest-neighbor Record compiler candidate: terminal SCOUT-FAILED-TO-CONSTRUCT-FROZEN-SIGNED-RAY-FAN-GRAMMAR (the target terminal HYBRID-RECORD-SECTOR-NN-TRANSACTION-GRAMMAR is unawarded). Three concrete defects: 85 unsourced route request seeds (43 writer blank queries + 12 fresh direction predicates + 30 controller obstacle queries) so th",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7802,
+  "branch": "physics-loop/toe-source-eta-ownership-block17-nn-transactional-compiler-scout-20260829"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 96 behind); the scout-failure lesson is acted on by #7804 (which cites SCOUT-FAILED 4x) but the strict-M2 exact value 143/1536 appears in ",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

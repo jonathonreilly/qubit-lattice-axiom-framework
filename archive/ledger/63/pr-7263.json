@@ -1,0 +1,19 @@
+{
+ "id": "pr-7263",
+ "title": "feat(nmot3opp): O freeze t+1 vs t+2 on #7167: reverse HOLD, face HOLD, composition HOLD",
+ "science": "O freeze t+1 vs t+2 on the #7208 y-probes. Numerically identical to #7262 at every probe (same O sets, same verdicts) -- the two differ only in which seed they nominally run.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold composition=HOLD",
+ "source": {
+  "pr": 7263,
+  "branch": "physics-loop/toe-lphys-block-nmot3opp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6501",
+ "title": "feat(c10l1diff): first |S|<=3 split of L1 vs (1,1,0,0,0)",
+ "science": "reverse=none face=none (f_cut fill-split census; no (reverse,face) pair stated)",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (f_cut fill-split census; no (reverse",
+ "source": {
+  "pr": 6501,
+  "branch": "physics-loop/toe-lphys-block-c10l1diff-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

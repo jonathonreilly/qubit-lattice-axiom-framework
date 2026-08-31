@@ -1,0 +1,19 @@
+{
+ "id": "pr-6444",
+ "title": "feat(k4site): k=4 1-site coverage is 12 iff vertex3=1",
+ "science": "Clean structural iff inside a named four-map class. For the 'k=4' maps with (wt1,opp2,adj2)=(1,1,1) and vertex3 x mixed3 free, one-site coverage cov1 = 12 iff vertex3 = 1: the two vertex3=1 maps fill all twelve singletons, the two vertex3=0 maps have cov1=8 and miss EXACTLY the four shared-face sites (1,0,0),(1,0,1),(1,1,0),(1,1,1) - the x=1 face where the two unit cubes meet. So vertex3 is precis",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6444,
+  "branch": "physics-loop/toe-lphys-block-k4site-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

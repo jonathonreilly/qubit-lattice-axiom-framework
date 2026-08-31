@@ -1,0 +1,19 @@
+{
+ "id": "pr-6684",
+ "title": "feat(minkocc): occupancy hop costs stay diamond",
+ "science": "FORCING NEGATIVE extending #6631 from constant to occupancy-dependent hop costs, not a probe cell: on the one-seed front over B_3(0) (63 sites), EVERY one of the 1024 G+-equivariant occupancy-dependent hop costs c:{0,1}^6 -> {1,2} (G+ has 10 orbits on {0,1}^6) is scored, and the axis/body arrival pair takes only six values (3,3),(3,4),(3,5),(6,4),(6,5),(6,6) - all satisfying t_axis^2*3 <= t_body^2",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff; the two '",
+ "source": {
+  "pr": 6684,
+  "branch": "physics-loop/toe-lphys-block-minkocc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

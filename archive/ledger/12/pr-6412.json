@@ -1,0 +1,19 @@
+{
+ "id": "pr-6412",
+ "title": "feat(minline): f_min fills from 3-site line seed with history (3,9,12)",
+ "science": "Extends #6411's degeneracy to a second seed: from the 3-site long-axis line S, f_min fills with T=2 and history (3,9,12) - identical to f_L1's. The runner verifies the mechanism directly by collecting every axis type that ever appears as an unlocking configuration from S and checking that NEITHER mixed3 (1,1,1) NOR opp2 (0,1,2) is among them. So both displayed seeds probe only the wt1/adj2/vertex3",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6412,
+  "branch": "physics-loop/toe-lphys-block-minline-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

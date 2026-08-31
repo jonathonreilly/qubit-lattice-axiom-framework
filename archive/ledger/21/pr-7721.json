@@ -1,0 +1,19 @@
+{
+ "id": "pr-7721",
+ "title": "feat(nm2frm2mlxf): L-path cyclic-frame transport -e1 then -e3 at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "Bare L-path -e1 then -e3 on the three-axis far-face seed. Richest cross-reference set in the band (three not-leftover gates), and it states the far-face seed's one real structural effect: adding the (0,0,-1)/(0,1,-1) pair destroys the ORIGIN frame -- origin O collapses to {-e_2}, split fails -- which alone kills two of the four probes. Recomputed exact.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7721,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2mlxf-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

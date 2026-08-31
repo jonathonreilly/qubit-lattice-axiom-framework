@@ -1,0 +1,19 @@
+{
+ "id": "pr-6414",
+ "title": "feat(cutsparse): F_cut support min is 36, not f_L1",
+ "science": "Sparsity inside F_cut, plus the batch's most useful reference table and a NOTATION COLLISION worth flagging. Result: m_cut=36 attained by exactly one of the eight F_cut fillers, tuple (1,0,1,0,0) - again NOT f_L1 (supp 56). Gives the exact support formula supp = 12*wt1 + 6*opp2 + 24*adj2 + 8*vertex3 + 12*mixed3 (pair orbits counted with both members) and the full eight-row table of tuples, support",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6414,
+  "branch": "physics-loop/toe-lphys-block-cutsparse-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

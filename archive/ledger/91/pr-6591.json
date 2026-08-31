@@ -1,0 +1,19 @@
+{
+ "id": "pr-6591",
+ "title": "feat(c10cls): all four Q10-false maps first-refuse adj2",
+ "science": "Class-wide positive mechanism result: all four Q10-false maps first-refuse the same orbit type adj2, same site (2,1,0), same neighborhood (0,1,0,1,0,0), N_refuse=2 each, and the free bits wt1/opp2 provably cannot change it since those types never appear among the unlocked seed neighborhoods. Runner check thm1-q10-false-four-zeros also re-verifies cov10>0 iff Q10 on all 32 maps. ANOMALY: this PR in",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (class refuse census; same_first_refuse",
+ "source": {
+  "pr": 6591,
+  "branch": "physics-loop/toe-lphys-block-c10cls-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

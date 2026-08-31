@@ -1,0 +1,19 @@
+{
+ "id": "pr-6861",
+ "title": "physics: prove the seam dichotomy and close the carrier arc (block 145)",
+ "science": "The seam dichotomy no-go, the carrier arc closing theorem: on the free 32-modulus carrier family, atlas-global Hermiticity forces shear-free (rank-18 linear certificate), shear-free forces the diagonal Hodge and a zero seam, so a live reflection seam and a Hermitian lattice-theta pairing are mutually exclusive and the mass never enters; the live-seam residue is exactly bounded (at most two edges),",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6861,
+  "branch": "physics-loop/toe-axiom-closure-block145-seam-dichotomy-20260819"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

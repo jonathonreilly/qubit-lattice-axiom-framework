@@ -1,0 +1,19 @@
+{
+ "id": "pr-7287",
+ "title": "feat(nmcxe3): axis-cover of M and O at t+1 on #7200: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the x-axis same-lock +e_3 #7200 z-probes; the one cell where D is 2-axis on M and 1-axis on O yet cover still holds, so cover is insensitive to the in/out orientation that the split readout keys on.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7287,
+  "branch": "physics-loop/toe-lphys-block-nmcxe3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

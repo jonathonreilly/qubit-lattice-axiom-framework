@@ -1,0 +1,19 @@
+{
+ "id": "pr-7769",
+ "title": "[physics-loop] Block 221: multiroot ancestry alias boundary",
+ "science": "Depth-only five-colour one-site ancestry zipper fails its first training gate: on a width-two double-port edge the ancestry phase overwrites the load-bearing tangent P dart (deterministic four-vertex witness), yielding the constructive lesson that the replacement representation must store both dart and phase.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7769,
+  "branch": "physics-loop/toe-axiom-closure-block221-time-multiplexed-ancestry-finality-20260828"
+ },
+ "carried_by": "#7770 (replaces depth colour with exact parent/child darts per this block's preauthorized route and restates the alias)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

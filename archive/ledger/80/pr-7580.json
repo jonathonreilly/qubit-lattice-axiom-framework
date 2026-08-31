@@ -1,0 +1,19 @@
+{
+ "id": "pr-7580",
+ "title": "physics: prove the width-family transfer refutation and the positive unit-cell monodromy (block 190)",
+ "science": "Block 190 of the toe-axiom-closure series with exact transfer refutation witnesses, proven monodromy positivity, exhaustive commutant, and a confirmed adversarial check that later blocks stack on. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7580,
+  "branch": "physics-loop/toe-axiom-closure-block190-width-family-transfer-monodromy-20260825"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6691",
+ "title": "physics: prove the quotient-observable obstruction",
+ "science": "Block 122 quotient-observable obstruction: sharp structural no-go theorem (no local routed U(1) observable on the certified OS quotient) with 8/8 runner, mutation sweep, and cross-model verification on the OS-closure chain. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6691,
+  "branch": "physics-loop/toe-axiom-closure-block122-quotient-observable-obstruction-20260816"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

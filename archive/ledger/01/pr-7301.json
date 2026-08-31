@@ -1,0 +1,19 @@
+{
+ "id": "pr-7301",
+ "title": "feat(nm2axp): two-axis opposite seed forall-perp: reverse HOLD, face HOLD",
+ "science": "Two-axis opposite seed, y-probes, forall-orthogonal. Establishes the seed's tick structure (probes form at 0,1,1,2 vs the one-axis seed's 0,2,1,3 - the second seed pair accelerates formation and is a new seed, not a formed child) and separates forall-perp (hold/hold) from exist-opposite of M (hold/fail) on the same cell.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7301,
+  "branch": "physics-loop/toe-lphys-block-nm2axp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

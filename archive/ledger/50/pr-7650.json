@@ -1,0 +1,19 @@
+{
+ "id": "pr-7650",
+ "title": "feat(nm2frm2smf): directed 2-step cyclic-frame transport along +e2 at t+1 on three-axis far-face opposite seed: reverse fails, face fails",
+ "science": "Far-face +e2 2-step, global tau. All eight hops fail. Convention-stable, entirely template.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7650,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2smf-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

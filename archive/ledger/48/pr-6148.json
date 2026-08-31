@@ -1,0 +1,19 @@
+{
+ "id": "pr-6148",
+ "title": "science: classify full projective sector grading",
+ "science": "Block 55: complete real-projective classification of the stipulated Cycle-876 six-direction three-sector grading space \u2014 exact 96/768/432 rank census, six projective kernel lines, eleven isolated points; unrestricted lawfulness has three maxima at 216 while strict positivity plus lawful-support maximization uniquely selects [1:1:1] at 90 \u2014 packaged as an exact Root-B axiom-choice boundary.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6148,
+  "branch": "physics-loop/toe-axiom-closure-block55-grading-projective-20260812"
+ },
+ "carried_by": "#6149 reproduces all 1,296 Cycle-876 balances and this block's rank/special-count controls on the M2 Pauli Record carrier; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

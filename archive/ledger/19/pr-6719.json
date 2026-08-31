@@ -1,0 +1,19 @@
+{
+ "id": "pr-6719",
+ "title": "feat(nuiso): nu isochrones mix radii; still rounder than l1",
+ "science": "Nu-cost isochrone radius-mixing display on B6 (displayed, not adopted), exploratory scan carried by the campaign roll-up.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6719,
+  "branch": "physics-loop/toe-lphys-block-nuiso-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

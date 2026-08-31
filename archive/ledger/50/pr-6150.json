@@ -1,0 +1,19 @@
+{
+ "id": "pr-6150",
+ "title": "science(toe): expose cross-root joint-law axiom extent",
+ "science": "Block 57: combines the Root-A Record/gravity control surface with the Root-B M2 interface into a rank-six, determinant-3/5 continuous diagnostic surface with 384 distinct finite signatures, and states the exact attached-law acceptance contract any future Admissibility amendment must satisfy \u2014 the strongest in-span form of the joint-law axiom extent and the operational ancestor of the bridge-axiom ",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6150,
+  "branch": "physics-loop/toe-axiom-closure-block57-joint-law-axiom-decision-20260812"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

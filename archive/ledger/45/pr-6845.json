@@ -1,0 +1,19 @@
+{
+ "id": "pr-6845",
+ "title": "physics: prove the scalar-quotient theorem",
+ "science": "The scalar-quotient theorem, the observable programs wall: on the certified package the quotient carries exactly one positive direction per momentum, so every quotient observable is a scalar multiple of the identity (an exact rank-three gate forces mu=0, completion-independent) -- overturning the adjointness wall would deliver a number, not an observable. The forcing negative that launched the ric",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6845,
+  "branch": "physics-loop/toe-axiom-closure-block129-scalar-quotient-theorem-20260817"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

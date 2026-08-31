@@ -1,0 +1,19 @@
+{
+ "id": "pr-7135",
+ "title": "feat(nsopzex): opposite-lock z-probe later-tick exist-opposite: reverse HOLD, face HOLD",
+ "science": "Exist-opposite on opposite-lock z-probes: hold/hold where the unique-vector readout on the same probes (#7108) gave fail/fail. Completes the x/y/z triple for this seed, all three hold/hold.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7135,
+  "branch": "physics-loop/toe-lphys-block-nsopzex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

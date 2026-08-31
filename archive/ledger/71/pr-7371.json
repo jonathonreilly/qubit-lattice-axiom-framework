@@ -1,0 +1,19 @@
+{
+ "id": "pr-7371",
+ "title": "feat(nm2slm): incoming exist-opposite at t+1 on two-axis same-lock y-probes: reverse fails, face fails",
+ "science": "Two-axis same-lock seed, y-probes, exist-opposite of M: fail/fail, since M(A)=M(B)={+e_1}. The clean sign-sensitivity control against #7370 - exist-opposite of M is the one readout in the band that does distinguish the opposite seed from the same-lock seed on the y-probes.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7371,
+  "branch": "physics-loop/toe-lphys-block-nm2slm-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

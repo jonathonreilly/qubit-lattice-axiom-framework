@@ -1,0 +1,19 @@
+{
+ "id": "pr-6934",
+ "title": "feat(w2clk): cost-2 out-face clock N_label=12 N_filt=6",
+ "science": "w2 on the 12 perp-mask hosts: N_label_fire=12, N_filt_fire=6 again, by the same support-3 idleness argument as omega. The 12/6 split is now shown invariant across rho3, kappa, omega and w2 \u2014 four different clause families. Carries the same unproved 'w2 restores k=14 and is rounder than omega' investment sentence, string-matched by the runner.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6934,
+  "branch": "physics-loop/toe-lphys-block-w2clk-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

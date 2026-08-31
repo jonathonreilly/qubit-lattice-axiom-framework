@@ -1,0 +1,19 @@
+{
+ "id": "pr-7309",
+ "title": "feat(nm2axz): axis-cover of M and O at t+1 on two-axis opposite z-probes: reverse HOLD, face HOLD",
+ "science": "Two-axis opposite seed, z-probes, axis-cover: cover HOLDs at every probe. This is the actual source of the HOLD/HOLD verdict that #7308 reports as a split result, and it is the only two-axis cell where both bits HOLD.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7309,
+  "branch": "physics-loop/toe-lphys-block-nm2axz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

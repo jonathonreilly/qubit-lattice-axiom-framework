@@ -1,0 +1,19 @@
+{
+ "id": "pr-6935",
+ "title": "feat(psk14): same-max face-slide same-k restores k=14: t=30 vs t=46",
+ "science": "Not a (reverse,face) probe cell: a Dijkstra bounded theorem naming psi = omega + cost-3 on a same-max 2->2 face slide, one origin Dijkstra on B_42(0) (102425 sites), t(14,0,0)=30 vs t(14,14,14)=46, so 3*30^2=2700 > 46^2=2116 and same-k anisotropy reversal holds at k=14. Beyond the table: its own witness walks show neither the axis nor the body geodesic uses the new same-max hop, so the named claus",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k anisotropy bit at k=14; NOT a family HOL",
+ "source": {
+  "pr": 6935,
+  "branch": "physics-loop/toe-lphys-block-psk14-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

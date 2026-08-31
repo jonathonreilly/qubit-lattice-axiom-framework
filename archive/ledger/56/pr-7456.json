@@ -1,0 +1,19 @@
+{
+ "id": "pr-7456",
+ "title": "feat(nm2oricycy): cyclic next/prev lex-largest det orientation of 1-in 2-out at t+1 on two-axis opposite y-probes: reverse fails, face fails",
+ "science": "opposite y-probes, cyclic lex-LARGEST orientation: Orient=(+1,-1,+1,fail), reverse=fail. The partner of #7455; the pair shows the y-probe reverse verdict is decided by the tie-break, not by the record.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7456,
+  "branch": "physics-loop/toe-lphys-block-nm2oricycy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7252",
+ "title": "feat(nmparx): own incoming set on #7189: reverse fails, face fails",
+ "science": "M (own incoming exist-opposite) on the z-axis-opposite-lock #7189 x-probes; M(A) is 3-mixed {+e_2,-e_2,+e_3}, B/C/D singleton {+e_1}. fail/fail. The note's 'discriminator against S^+' rests on S^+ holding -- S^+ holds hold/hold on all 14 band cells, so it discriminates nothing. Recomputed: exact.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7252,
+  "branch": "physics-loop/toe-lphys-block-nmparx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

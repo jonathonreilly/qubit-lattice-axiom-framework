@@ -1,0 +1,19 @@
+{
+ "id": "pr-7538",
+ "title": "feat(nm2frmrd3x): neighbor-read of cyclic-frame transport at t+1 on three-axis opposite x-probes: reverse HOLD, face fails",
+ "science": "Three-axis near-face x-probes; C=(2,0,0) is the third-pair seed at tick 0, so C's frame is (+e_3,+e_1,-e_2) and the x-face fails only at D.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7538,
+  "branch": "physics-loop/toe-lphys-block-nm2frmrd3x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

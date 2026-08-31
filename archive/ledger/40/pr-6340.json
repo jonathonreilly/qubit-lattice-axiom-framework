@@ -1,0 +1,19 @@
+{
+ "id": "pr-6340",
+ "title": "feat(l1horizon): L1 horizon equals the l1 diameter",
+ "science": "Bounded_theorem note, no probe cell. HORIZON = DIAMETER: the farthest vertex (2,1,1) is at l1 distance 4, the patch is not full at tick 3 (11 of 12) and is full at tick 4, so the first saturating tick equals the diameter and the causal front travels at speed exactly 1 through the whole complex. TWO DEFECTS: (a) the quantity called 'diameter' is computed as max over v of d(v, seed), which is the EC",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6340,
+  "branch": "physics-loop/toe-lphys-block-l1horizon-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

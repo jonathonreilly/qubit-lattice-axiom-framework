@@ -1,0 +1,19 @@
+{
+ "id": "pr-7452",
+ "title": "feat(nm2oricyccz): cyclic next/prev lex-smallest det orientation of 1-in 2-out at t+1 on two-axis opposite z-probes: reverse HOLD, face HOLD",
+ "science": "Same headline cell under the OPPOSITE lex tie-break (prefer +e): Orient=(+1,+1,-1,-1), a clean global sign flip of #7451, so reverse=HOLD face=HOLD is preserved. Together with #7451 this proves the z-probe verdict is invariant under the arbitrary tie-break - each of the four probes has exactly one sign-ambiguous outgoing axis, so all four dets flip together.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7452,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyccz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

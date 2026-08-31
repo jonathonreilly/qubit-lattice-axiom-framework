@@ -1,0 +1,19 @@
+{
+ "id": "pr-6708",
+ "title": "feat(face6): face diagonals also do not reverse under named rho",
+ "science": "Face-diagonal non-reversal check under the named cost (displayed, not adopted), another negative exploratory data point in the mink series.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6708,
+  "branch": "physics-loop/toe-lphys-block-face6-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

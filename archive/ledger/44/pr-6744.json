@@ -1,0 +1,19 @@
+{
+ "id": "pr-6744",
+ "title": "feat(why14x): t(8,0,0)=14 via parallel detour that leaves B8",
+ "science": "Displayed single-path explanation of t(8,0,0)=14 on B12 via a parallel detour, explicitly not adopted; exploratory why-analysis analogous to 6731 with no standalone science.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6744,
+  "branch": "physics-loop/toe-lphys-block-why14x-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

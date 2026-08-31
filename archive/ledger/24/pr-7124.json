@@ -1,0 +1,19 @@
+{
+ "id": "pr-7124",
+ "title": "feat(nstriyown): three-site y-probe own incoming: reverse UNDEFINED, face UNDEFINED",
+ "science": "Own-incoming readout on three-site y-probes; A keeps the seed letter -e_1 but B mixes {+e_1,+e_2}, so the #7109 reverse hold fails to reproduce under the three-site seed even though L(A) is the same.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7124,
+  "branch": "physics-loop/toe-lphys-block-nstriyown-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

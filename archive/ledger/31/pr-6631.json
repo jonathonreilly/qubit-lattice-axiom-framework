@@ -1,0 +1,19 @@
+{
+ "id": "pr-6631",
+ "title": "feat(hopiso): cube-covariant NN hop costs force diamond light",
+ "science": "FORCING NEGATIVE with a rigidity theorem, not a probe cell: because the six NN directions form a single orbit of the order-24 proper cube group, EVERY cube-covariant hop-cost is a constant w_0, so first arrival is forced to t(v)=w_0*|v|_1; the isotropic-c ratio then differs by a factor 2 between (1,0,0) and (1,1,0) for every w_0>=1, and the discrete l2 null cone is a proper subset (empty at w_0=2,",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff; 'face' oc",
+ "source": {
+  "pr": 6631,
+  "branch": "physics-loop/toe-lphys-block-hopiso-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

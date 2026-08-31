@@ -1,0 +1,19 @@
+{
+ "id": "pr-7232",
+ "title": "feat(nmt2zx): M two-tick composition on #7213: reverse HOLD, face HOLD, composition HOLD",
+ "science": "M two-tick composition on #7213's x-probes; verdicts hold/hold at both cuts. Same tautology as #7207 -- M is frozen at formation, so composition=HOLD carries no information. Its only non-redundant content is the list of sites newly formed between the two ticks.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7232,
+  "branch": "physics-loop/toe-lphys-block-nmt2zx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

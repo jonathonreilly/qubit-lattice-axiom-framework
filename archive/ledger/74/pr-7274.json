@@ -1,0 +1,19 @@
+{
+ "id": "pr-7274",
+ "title": "feat(nmperpsy): forall-orthogonal M vs O at t+1 on #7211: reverse HOLD, face HOLD",
+ "science": "Forall-orthogonal M vs O on the #7211 y-probes; dots 0,0,0 / 0,0,0 / 0,0,0,0 / 0,0,0,0,0,0. Same predicate and same cell-class as #7271 (my recomputation puts #7167 and #7211 in one probe signature class).",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7274,
+  "branch": "physics-loop/toe-lphys-block-nmperpsy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

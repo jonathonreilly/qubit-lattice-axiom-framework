@@ -1,0 +1,19 @@
+{
+ "id": "pr-7724",
+ "title": "physics: isolate L24 prefix channel boundary",
+ "science": "Proves the Block-194 PVM is an exact normalized one-shot Lueders instrument with faithful M2 dilation, then bounds three response-blind inter-crossing constructions: direct Schur shift (graph residual rank 2, negative OS-contraction witness), Gram-projected translations (composition fails at order 3), raw adjacent predictor (strict contraction, exact Clifford lift but no derived CP typing); two in",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7724,
+  "branch": "physics-loop/toe-axiom-closure-block195-l24-prefix-observability-20260825"
+ },
+ "carried_by": "#7728 (reuses the Lueders/M2 package and the Block-195 even-lag covariance Hankel, strengthening the underdetermination); #7781 branch ancestry",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

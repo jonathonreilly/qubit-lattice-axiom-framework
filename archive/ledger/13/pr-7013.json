@@ -1,0 +1,19 @@
+{
+ "id": "pr-7013",
+ "title": "feat(varl1): ell1 is worse-round than c2d4 on B12",
+ "science": "Third leg of the same comparison, on roundness: exact rational second moments on the 2624 nonzero sites of B_12(0) give Q_l1=337/656 and Q_c2d4=12586016761121881939/63482497589871360000, and population variances var_l1=0.009447425719061308 > var_c2d4=0.003574941366936777. The axiom-native l1 cone is strictly LESS Euclidean-round than the engineered rule. Completes the three-way #7010/#7012/#7013 n",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=absent (reports var_l1 > var_c2d4 on B_1",
+ "source": {
+  "pr": 7013,
+  "branch": "physics-loop/toe-lphys-block-varl1-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

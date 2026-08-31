@@ -1,0 +1,19 @@
+{
+ "id": "pr-5996",
+ "title": "[physics-loop][review-loop] toe-time blockT6 (STACKED on #5951) \u2014 Cycle 922: bounded theorem \u2014 the P=32 miss derives from the short arc; two",
+ "science": "Closes 891 carrier miss with the full P=32 anatomy (bank 2 owns the value, no clock containing it ever reads it - all 276 episodes exhaustively re-attributed), exposes the value-based label theft correcting two 891 carrier labels and splitting one, derives RC-1 (three ordered pairs realize the entry gap), and seals RC-2 short-arc necessity (2P<N, fitted-then-sealed; blind B=9 necessity 0 violation",
+ "forcing": true,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5996,
+  "branch": "physics-loop/toe-time-blockT6-20260802"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

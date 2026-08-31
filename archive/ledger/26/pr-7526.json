@@ -1,0 +1,19 @@
+{
+ "id": "pr-7526",
+ "title": "feat(nm2cycfrmxt2): cyclic-frame transport freeze t+1 vs t+2 on two-axis opposite x-probes: reverse fails, face fails, composition HOLD",
+ "science": "Same letter on x-probes: cover fails at A and D (leftover axis {e_2} missing), so split/Orient/transport fail there; note itself concedes |Axis(M)|=1 at all four x-probes so split==cover on this member.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7526,
+  "branch": "physics-loop/toe-lphys-block-nm2cycfrmxt2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

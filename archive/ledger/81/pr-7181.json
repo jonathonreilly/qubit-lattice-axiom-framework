@@ -1,0 +1,19 @@
+{
+ "id": "pr-7181",
+ "title": "feat(nssamxinc): nssame x-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "Same-tick union own lock on nssame x-probes: both bits HOLD even though the seed letters are identical (+e1/+e1) and L(A) is UNDEFINED - the hold runs entirely through the neighbour channel (-e3 vs +e3). Directly bounds #7159: same-letter seeds do not forbid reverse, they only remove the own-letter channel.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7181,
+  "branch": "physics-loop/toe-lphys-block-nssamxinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

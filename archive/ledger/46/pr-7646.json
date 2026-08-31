@@ -1,0 +1,19 @@
+{
+ "id": "pr-7646",
+ "title": "feat(nm2frm2sm3): directed 2-step cyclic-frame transport along +e2 at t+1 on three-axis opposite near-face seed: reverse fails, face fails",
+ "science": "Near-face variant of #7645 \u2014 verified probe-frame-identical to the two-axis opposite seed and verdict-identical in 18/18 cells, so this is #7645's computation with two inert extra seeds.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7646,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2sm3-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

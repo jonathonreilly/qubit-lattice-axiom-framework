@@ -1,0 +1,19 @@
+{
+ "id": "pr-6525",
+ "title": "feat(ex0c3orb): N_orb=4 of ex0 twenty-four 3-site fills",
+ "science": "Displayed-not-adopted orbit count (N_orb=4) of ex0 three-site fills; exploratory campaign block, conclusion carried by roll-up.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6525,
+  "branch": "physics-loop/toe-lphys-block-ex0c3orb-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

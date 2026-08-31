@@ -1,0 +1,19 @@
+{
+ "id": "pr-5997",
+ "title": "[physics-loop][review-loop] toe-time blockM10 (STACKED on #5994) \u2014 Cycle 929: bounded theorem \u2014 the arity variable is degree; the second var",
+ "science": "Measures the two-variable structure (arity is degree; the second variable is anchor multiplicity) including the additivity identity at 8e-14 published unexplained. The identity and the full ladder are DERIVED by the 931 pair-complement theorem, and the multiplicity ladder / arity-dilution law become derived-for-stars in 933.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5997,
+  "branch": "physics-loop/toe-time-blockM10-20260802"
+ },
+ "carried_by": "PR #5999 (identity derived; ladder follows identically) and PR #6002 (ladder and dilution law derived)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

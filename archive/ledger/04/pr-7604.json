@@ -1,0 +1,19 @@
+{
+ "id": "pr-7604",
+ "title": "feat(nm2holyz2x): yz-plane cyclic-frame holonomy of the x=1 unit square at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "2A, squares shifted outward to x=1 (reverse) and x=2 (face), own-square holonomy. Both fail; at x=2 split fails at C2,C3 where M spans two axes and O is empty. Reader ball-wall test: verdict unchanged on B4/B5/B6, so this is not a host artifact.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7604,
+  "branch": "physics-loop/toe-lphys-block-nm2holyz2x-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

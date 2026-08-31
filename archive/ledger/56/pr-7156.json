@@ -1,0 +1,19 @@
+{
+ "id": "pr-7156",
+ "title": "feat(nsnnyin): nnseed y-probe own-lock-in exist-opposite: reverse fails, face fails",
+ "science": "Own-lock-in on nnseed (perp seed +e1/+e2) y-probes. The seed letter L(A)=+e2 fills the empty S(A) but flips reverse only UNDEFINED -> fail, never to hold, because S^+(B)={+e1,+e3} has no -e2. Together with #7150 and #7159 this pins down the exact condition for the own-letter channel to fire: -L(A) must already lie in S^+(B).",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7156,
+  "branch": "physics-loop/toe-lphys-block-nsnnyin-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

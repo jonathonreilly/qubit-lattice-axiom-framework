@@ -1,0 +1,19 @@
+{
+ "id": "pr-7286",
+ "title": "feat(nmcze2): axis-cover of M and O at t+1 on #7199: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the z-axis same-lock +e_2 #7199 y-probes. Its check named 'not-leftover-of-nsze2inc-pm-e2' PASSES by asserting all(nsze2_cover[name]==cover[name]) for A,B,C,D -- it certifies the verdicts are IDENTICAL to the member it claims not to be a leftover of, and cites only a seed-input difference (locks[E3]={+e_2} vs {-e_2}).",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7286,
+  "branch": "physics-loop/toe-lphys-block-nmcze2-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

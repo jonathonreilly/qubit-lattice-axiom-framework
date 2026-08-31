@@ -1,0 +1,19 @@
+{
+ "id": "pr-7736",
+ "title": "physics: prove the sectored interior OS reconstruction (block 195)",
+ "science": "Block 195 proves the sectored interior OS reconstruction giving the first complete OS-reconstructed evolution operator of the gravitational sector (two adversarial rounds, drops unsupplied-gravity 10 to 9), a decisive TOE-core artifact that open KEEP PR 7737 stacks on.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7736,
+  "branch": "physics-loop/toe-axiom-closure-block195-sectored-interior-os-reconstruction-20260825"
+ },
+ "carried_by": "#7781 (open L24-lane terminal; commit-ancestry verified)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

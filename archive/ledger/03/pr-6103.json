@@ -1,0 +1,19 @@
+{
+ "id": "pr-6103",
+ "title": "science(gravity): compile Record stress into metric reactions",
+ "science": "Block 31: compiles a positive null-anchored sixteen-state Record family into all fifteen actual edge-source rays with positive rank-one Euclidean metric stress (83,521 exact product probabilities checked), splits the residual into nine shape channels plus one nonmetric branch lifted by the curvature-square action, and solves all 3,876 four-site count sources with a rank-25 metric-only KKT system.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6103,
+  "branch": "physics-loop/toe-axiom-closure-block31-record-source-reaction-gluing-20260810"
+ },
+ "carried_by": "#6105 carries the source derivatives and positive stresses into the interacting laws; #6112 localizes the compiler to the ten-ray rank-ten form; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

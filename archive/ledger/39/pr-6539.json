@@ -1,0 +1,19 @@
+{
+ "id": "pr-6539",
+ "title": "feat(p8q8): cov8>0 iff wt1 or adj2 or opp2 or vertex3",
+ "science": "Displayed-not-adopted cov8>0 selector characterization (Q8 disjunction); exploratory 20260815 campaign block.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6539,
+  "branch": "physics-loop/toe-lphys-block-p8q8-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

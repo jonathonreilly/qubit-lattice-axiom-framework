@@ -1,0 +1,19 @@
+{
+ "id": "pr-7316",
+ "title": "physics: encode NN Record programs and expose self-hosting gap",
+ "science": "Record-born-composition block 32 with exact encoding results and a 22-pass checker, cited as the effect-level arm of the mainline pincer by chain block 175 (#7318) and the stack base of open block 33 (#7319). [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7316,
+  "branch": "physics-loop/toe-record-born-composition-block32-20260822"
+ },
+ "carried_by": "#7326 (open terminal; commit-ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6337",
+ "title": "feat(l1fill): L1 saturates the two-cube at tick 4",
+ "science": "Bounded_theorem note, no probe cell. Saturation census: after tick 4 locks = the whole 12-vertex patch, F=11, rho(A)=rho(B)=8 (shared-face vertices counted in both), tree gauge phi(F*)=8, phi(F_B)=16, and the Gauss identity g=rho still holds AT saturation -- so the #6305/#6331 gauge result survives to the fixed point. Minor runner defect: the phi-star-8 and phi-B-16 checks just re-assert ra==8 and",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6337,
+  "branch": "physics-loop/toe-lphys-block-l1fill-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

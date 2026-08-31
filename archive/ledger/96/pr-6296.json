@@ -1,0 +1,19 @@
+{
+ "id": "pr-6296",
+ "title": "feat(cov56): L0 spectral measure on all 56 nonzero cells",
+ "science": "Bounded_theorem note, no probe cell. Constructive completion of #6284 Thm 6: EXACT CENSUS of the 64 six-neighbor occupancy cells -- 8 have n=0 and the 56 nonzero ones split exactly 24+24+8 for k=|3n|^2 = 1,2,3. For every nonzero cell it verifies over the field Q(sqrt k) that P_pm=(sqrt(k) I pm H)/(2 sqrt k) are complementary (P+ + P- = I, P+P- = 0) and Tr(rho P+) + Tr(rho P-) = 1, with sample trac",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "source": {
+  "pr": 6296,
+  "branch": "physics-loop/toe-lphys-block-cov56-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

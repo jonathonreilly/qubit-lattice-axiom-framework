@@ -1,0 +1,19 @@
+{
+ "id": "pr-6636",
+ "title": "feat(need6): seed-grown front never has 6 occupied neighbors",
+ "science": "GENERAL FORCING NEGATIVE (proved for all t, not just censused), not a probe cell: for a seed-grown l1 ball B_t, every next-shell site v in S_{t+1} has EXACTLY |{i : v_i != 0}| occupied six-neighbors, hence at most 3 and never 6 - because a six-neighbor step changes l1 radius by exactly one, so only the inward unit on each nonzero coordinate is occupied. The July-3 k=3 chiral pair needs all six slo",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6636,
+  "branch": "physics-loop/toe-lphys-block-need6-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

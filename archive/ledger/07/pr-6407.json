@@ -1,0 +1,19 @@
+{
+ "id": "pr-6407",
+ "title": "feat(fminid): name the unique support-26 1-site filler as the n_both=0 map",
+ "science": "Identifies the sparsest filler in closed form and surfaces a real tension between two selectors. f_min(c)=1 iff n_both=0 and some axis is unbalanced; it fires exactly on {wt1, adj2, vertex3} with 6+12+8=26 cells, orbit tuple (1,0,1,1,0), and fills with the same history (1,4,8,11,12) as f_L1 (supp 56 = 64 minus the 8 fully balanced cells). KEY: f_min is NOT in F_cut - it breaks complement-even, sin",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6407,
+  "branch": "physics-loop/toe-lphys-block-fminid-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

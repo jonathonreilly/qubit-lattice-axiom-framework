@@ -1,0 +1,19 @@
+{
+ "id": "pr-7763",
+ "title": "Physics: derive conditional-law response polar transport",
+ "science": "Constructs the reciprocal two-Jacobian polar O(3) connection supplier with an exact rank/sign/stabilizer discriminator packet and a clean prior-art sweep, the proposed_retained tip of the gravity metric-dynamics bridge chain stacked on KEEP PR 7761. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7763,
+  "branch": "physics-loop/toe-connection-dynamics-block219-admissibility-polar-transport-20260828"
+ },
+ "carried_by": "#7803 (open metric-dynamics terminal; commit-ancestry verified)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

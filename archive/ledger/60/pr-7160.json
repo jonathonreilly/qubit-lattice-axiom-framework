@@ -1,0 +1,19 @@
+{
+ "id": "pr-7160",
+ "title": "feat(nsparin): nspar x-probe own-lock-in exist-opposite: reverse fails, face HOLD",
+ "science": "Own-lock-in on the parallel-opposite seed {0:+e1,(1,0,0):-e1} x-probes, where A is itself a seed site. Refutes the naive reading of #7150: opposite seed letters are NOT sufficient for reverse - L(A)=-e1 has no +e1 partner in S^+(B)={+e2,+e3}, so reverse fails while face holds. The necessary-and-sufficient condition is -L(A) in S^+(B), not opposite seed letters per se.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7160,
+  "branch": "physics-loop/toe-lphys-block-nsparin-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

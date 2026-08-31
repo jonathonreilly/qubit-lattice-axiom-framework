@@ -1,0 +1,19 @@
+{
+ "id": "pr-5956",
+ "title": "[physics-loop][review-loop] toe-time blockG19 (STACKED on #5952) \u2014 Cycle 896: bounded theorem \u2014 both audit flags closed; the current GB-S2 r",
+ "science": "Closes both standing audit flags (871 readout-dimension discrepancy = clause-label slip, proven with the counter-hypothesis tested; 8/10/27 chart counts reconciled via a full conversion dictionary with the sigma/D/barrier no-image discovery) and computes the then-current GB-S2 residual 6 free + 5 owed. The residual census is exactly what G29 restates step-by-step and supersedes (5 free + 1 owed); ",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 5956,
+  "branch": "physics-loop/toe-time-blockG19-20260802"
+ },
+ "carried_by": "PR #6009 (cycle-941 ledger reconciliation restates the 896 arithmetic and supersedes its census)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6981",
+ "title": "feat(c2d4k18): cost-2 max\u22654 out-face same-k holds at k=18: t=34 vs t=58",
+ "science": "c2d4 same-k at k=18 on B_54(0) (215929 sites): (34,58), 3468>3364 -- the last hold before the k=19 wall. Load-bearing for carriage: this ONE Dijkstra also reports k=17 (33,55), k=16 (32,52), k=15 (31,49), k=14 (30,46) and k=1 (3,5), so it alone carries five of the six rows that #7009's affine theorem consumes; #6970/#6978/#6979/#6980 add nothing over it.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=18 (3468>3364; band bit) face=absent",
+ "source": {
+  "pr": 6981,
+  "branch": "physics-loop/toe-lphys-block-c2d4k18-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

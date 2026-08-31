@@ -1,0 +1,19 @@
+{
+ "id": "pr-6440",
+ "title": "physics: derive the seam kernel and test the two-history Gram",
+ "science": "Block 107 exact reflection-torus OS framework with the reflection-channel theorem, seam kernel, and dressing-space structure theorem (adversarially re-verified), which the 0824 gravity mainline b183 work reads as primary and reproduces as its flat calibration control \u2014 a live mainline premise. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6440,
+  "branch": "physics-loop/toe-axiom-closure-block107-adm-seam-two-history-gram-20260815"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

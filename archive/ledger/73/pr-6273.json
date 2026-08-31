@@ -1,0 +1,19 @@
+{
+ "id": "pr-6273",
+ "title": "[physics-loop] toe-lphys corneraut: bounded_theorem / bounded-support",
+ "science": "SWAP-corner toy showing naming the carrier is not naming an Aut action; exploratory color-route extras audit.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6273,
+  "branch": "physics-loop/toe-lphys-block-corneraut-20260814"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

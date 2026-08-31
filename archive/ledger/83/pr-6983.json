@@ -1,0 +1,19 @@
+{
+ "id": "pr-6983",
+ "title": "feat(c2d4dbl): cost-2 max\u22654 out-face doubled pairing holds k=1..4",
+ "science": "Doubled pairing under c2d4: the eight arrivals and four bits are identical to #6965 and #6975. Carried by #6965.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES at k=1..4 (doubled-pairing bit, identical to #69",
+ "source": {
+  "pr": 6983,
+  "branch": "physics-loop/toe-lphys-block-c2d4dbl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7248",
+ "title": "feat(nmt2zp): M two-tick composition on #7186: reverse HOLD, face HOLD, composition HOLD",
+ "science": "M two-tick composition on #7186's z-probes. Third instance of the frozen-M tautology; hold/hold at both cuts by construction.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7248,
+  "branch": "physics-loop/toe-lphys-block-nmt2zp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

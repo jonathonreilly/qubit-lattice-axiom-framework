@@ -1,0 +1,19 @@
+{
+ "id": "pr-7461",
+ "title": "feat(nm2oricyclrdz): neighbor-read of cyclic lex-largest Orient at t+1 on two-axis opposite z-probes: reverse fails, face fails",
+ "science": "THE band's forcing negative: at the headline cell (opposite z-probes, cyclic lex-largest) the neighbour-read of the orientation fails at ALL FOUR probes. Recomputation shows why - every probe is ANTI-aligned with every 6-neighbour whose Orient is defined. The handedness that agrees across the L1-distance-2 probe pairs has zero support at distance 1.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7461,
+  "branch": "physics-loop/toe-lphys-block-nm2oricyclrdz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

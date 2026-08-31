@@ -1,0 +1,19 @@
+{
+ "id": "pr-7118",
+ "title": "feat(nsparz): parallel-opposite z-probe unique vector: reverse UNDEFINED, face fails",
+ "science": "Neighbour-lock vector readout on parallel-opposite z-probes; C=(0,0,2) has four recorded neighbours all locking +e_3, face fails against L(D)=-e_1. Cross-references four sibling readouts and correctly distinguishes each.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=fail",
+ "source": {
+  "pr": 7118,
+  "branch": "physics-loop/toe-lphys-block-nsparz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

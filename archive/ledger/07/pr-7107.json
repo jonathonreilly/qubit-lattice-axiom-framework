@@ -1,0 +1,19 @@
+{
+ "id": "pr-7107",
+ "title": "feat(nsopyn): opposite-lock y-probe formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Opposite-lock y-probes, strictly-earlier kernel. n(A)=(0,0,0) exactly, because a tick-0 seed has no strictly-earlier neighbour; letters (UNDEFINED,-,UNDEFINED,-). Together with #7111 (same-tick, identical letters) it shows the y-probe verdict is invariant under the timing convention.",
+ "forcing": false,
+ "verdict_pair": "reverse=UNDEFINED face=UNDEFINED",
+ "source": {
+  "pr": 7107,
+  "branch": "physics-loop/toe-lphys-block-nsopyn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

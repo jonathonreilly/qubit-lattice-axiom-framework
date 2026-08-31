@@ -1,0 +1,19 @@
+{
+ "id": "pr-7365",
+ "title": "feat(nm2simslz): simultaneous M and O at t+1 on two-axis same-lock z-probes: reverse fails, face HOLD",
+ "science": "Two-axis same-lock seed, z-probes, simultaneous: sim FAILs at A because M(A)={+e_2} intersects O(A). That intersection exists only because the adjacent tick-0 seed (0,1,1) carries seed letter +e_2, which the M(seed):={seed letter} convention injects into O(A) with no formation event behind it - the same artifact that drives #7357 and #7368.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7365,
+  "branch": "physics-loop/toe-lphys-block-nm2simslz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

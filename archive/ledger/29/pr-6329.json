@@ -1,0 +1,19 @@
+{
+ "id": "pr-6329",
+ "title": "feat(l1srcid): clock plus shared-face count equals cube-source sum",
+ "science": "Bounded_theorem note, no probe cell. EXACT INCLUSION-EXCLUSION LAW linking the L1 clock to the cube source: on every tick, Delta rho(A) + Delta rho(B) = F_tick + S where S = |new locks intersect F*| is the shared-face new-lock count. Verified on both ticks (3+1 = 3+1 = 4; 3+3 = 4+2 = 6), with S shown UNIQUE among integers 0..|F*|=4. Corollaries proved: Delta rho(C) = |new locks in C| with shared v",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=3",
+ "source": {
+  "pr": 6329,
+  "branch": "physics-loop/toe-lphys-block-l1srcid-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

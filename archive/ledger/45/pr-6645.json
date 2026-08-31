@@ -1,0 +1,19 @@
+{
+ "id": "pr-6645",
+ "title": "feat(posrun): pair fires at unique-axis-compatible two-ball site",
+ "science": "THE ACTUAL FIRING - culminating positive of the chirality thread, not a probe cell: on U = B_2(0) union B_2((2,0,0)) (|U|=43, each ball 25) at the unread site v=(1,-1,1) (l1 distance 3 from both centres), the occupancy-kernel unique-axis fragment is (*,*,-,0,0,+), the 6-tuple c=(+,-,-,0,0,+) agrees with every unambiguous label, c IS a member of the reconstructed 48-element July-3 k=3 chiral pair, ",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6645,
+  "branch": "physics-loop/toe-lphys-block-posrun-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

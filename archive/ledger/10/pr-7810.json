@@ -1,0 +1,19 @@
+{
+ "id": "pr-7810",
+ "title": "physics-loop: prove finite self-delimiting Record histories",
+ "science": "BOUNDED-POSITIVE-SELF-DELIMITING-ARBITRARY-FINITE-STRAIGHT-RAY-RECORD-HISTORY \u2014 the strongest history result in this lane, and it RETIRES the Block23 event-three wall by reducing the eligibility predicate from six queried Blank blocks to the one block actually changed. A complete current Record carrying front f and last outcome b selects an append instrument with branch effect L^dag L = T(c|b) C^x",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7810,
+  "branch": "physics-loop/toe-source-eta-ownership-block24-self-delimiting-forward-append-history-20260830"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 26 behind). CITED WITHOUT RESTATEMENT by the terminal: #7813 depends_on this note with the role supplies conditionally the complete anchor",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

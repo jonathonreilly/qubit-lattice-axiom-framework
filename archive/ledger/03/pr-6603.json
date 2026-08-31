@@ -1,0 +1,19 @@
+{
+ "id": "pr-6603",
+ "title": "feat(c3q10): cov3>0 is not Q10; positivity does not imply Q10",
+ "science": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q10=0, N_pos=20, N_Q10=28, N_both=19, N_mismatch=10, witness (1,1,0,0,0) cov3=4)",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q1",
+ "source": {
+  "pr": 6603,
+  "branch": "physics-loop/toe-lphys-block-c3q10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

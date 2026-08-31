@@ -1,0 +1,19 @@
+{
+ "id": "pr-6533",
+ "title": "feat(p3bit4): no 4-bit remaining-bit Q equals cov3>0",
+ "science": "Displayed-not-adopted negative 4-bit selector search for cov3>0; exploratory campaign block, no decisive artifact.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6533,
+  "branch": "physics-loop/toe-lphys-block-p3bit4-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

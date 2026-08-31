@@ -1,0 +1,19 @@
+{
+ "id": "pr-6128",
+ "title": "science: prove the periodic flat vacuum",
+ "science": "Block 40: proves the supplied EC/Record law has a nondegenerate proper-cubic homogeneous flat stationary background on every finite periodic carrier (Record-pressure bound 21/10 vs well cost 4, dilation root certified with no refit), derives the exact endpoint-local SO(4) Ward identity with off-shell generator-connection term, and demotes the broad no-flat-vacuum claim.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6128,
+  "branch": "physics-loop/toe-axiom-closure-block40-vacuum-ward-20260811"
+ },
+ "carried_by": "#6130/#6132 quantify over every Block-40 stationary Gram and settle this vacuum's fate (spin-two gap, then instability); ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

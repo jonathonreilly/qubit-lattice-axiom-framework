@@ -1,0 +1,19 @@
+{
+ "id": "pr-6364",
+ "title": "physics: cancel leading scalar-gravity exchange defect",
+ "science": "Block 97: exact off-shell site-energy/bond-current continuity matching Ttt/Tti on all 247 shell modes, the retained L=5 counterpropagating source embedded in the actual constraints, and cancellation of the complete order-A^3 frozen-source endpoint defect at fixed g leaving exactly -r^2/4 at order A^4 - the residual that became the second-order target.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6364,
+  "branch": "physics-loop/toe-axiom-closure-block97-coupled-ward-20260814"
+ },
+ "carried_by": "PR #6366 (Block 98) converts this residual's closure problem into the support-independent fixed-contract impossibility theorem",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

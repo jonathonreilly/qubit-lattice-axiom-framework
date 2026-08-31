@@ -1,0 +1,19 @@
+{
+ "id": "pr-6435",
+ "title": "feat(siteival): name the four F_cut 1-site coverage maximizers",
+ "science": "Displayed-not-adopted naming of the four 1-site coverage maximizers, incremental re-display of the 6432 count.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6435,
+  "branch": "physics-loop/toe-lphys-block-siteival-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

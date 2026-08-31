@@ -1,0 +1,19 @@
+{
+ "id": "pr-6499",
+ "title": "feat(s00oppwhy): first refuse of (1,0,0,0,0) on the #6492 seed",
+ "science": "Displayed-not-adopted first-refuse report of (1,0,0,0,0) on the #6492 seed, an exploratory campaign micro-probe.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6499,
+  "branch": "physics-loop/toe-lphys-block-s00oppwhy-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

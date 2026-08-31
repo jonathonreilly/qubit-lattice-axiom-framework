@@ -1,0 +1,19 @@
+{
+ "id": "pr-6398",
+ "title": "feat(blankfill): no covariant f fills from 1-site under blank-block",
+ "science": "Whole-class halt census, not a probe cell: under blank-block readiness every one of the 1024 cube-covariant occupancy predicates halts seed-only from the 1-site seed on the two-cube, so N_fill=0 (and 0 on the 512-map f(empty)=0 subclass). Theorem 3 is the load-bearing negative: the off-patch o=0 vacuum default is REQUIRED to fill, and Record unreadability does not supply it - 'a site with no recor",
+ "forcing": false,
+ "verdict_pair": "reverse=none face=none (no (reverse,face) pair stated; pre-v",
+ "source": {
+  "pr": 6398,
+  "branch": "physics-loop/toe-lphys-block-blankfill-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

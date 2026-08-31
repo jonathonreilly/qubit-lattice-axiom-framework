@@ -1,0 +1,19 @@
+{
+ "id": "pr-7772",
+ "title": "[physics-loop] Block 224: backoff fairness quotient boundary",
+ "science": "Exact six-row retry/contact/rollback quotient separating fairness classes: a nonanticipating synchronizer has zero absorption under weak finite-delay fairness (recurrent starvation witness), while exhaustive fair-component closure under action/support strong fairness leaves no nonterminal recurrent class, so the quotient absorbs almost surely; compiles the retry-projector Kraus identity only.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7772,
+  "branch": "physics-loop/toe-axiom-closure-block224-two-arm-dynamic-cp-backoff-20260828"
+ },
+ "carried_by": "#7773 (builds the seam controller on the Block-223/224 carrier and static anchors, inheriting the strong-fair scheduler assumption)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

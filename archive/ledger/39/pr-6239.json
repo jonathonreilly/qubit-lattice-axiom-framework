@@ -1,0 +1,19 @@
+{
+ "id": "pr-6239",
+ "title": "[physics-loop] toe-lphys c1perm: bounded_theorem / bounded-support",
+ "science": "Bounded_theorem note, no probe cell. Theorem that the Record permanence clause is INVISIBLE to the axiom's named scalar readout: a legal stay S=((A,0),(A,0)) and an illegal site-to-site move M=((A,0),(0,A)) have identical I-sequences (1,1) AND identical site-blind bags ({A},{A}); only the site-indexed J-sequence splits them. Conclusion: permanence is a constraint on histories, not a property of th",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6239,
+  "branch": "physics-loop/toe-lphys-block-c1perm-20260813"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

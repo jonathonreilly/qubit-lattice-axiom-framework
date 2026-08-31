@@ -1,0 +1,19 @@
+{
+ "id": "pr-6997",
+ "title": "feat(j2k19): c2d4-plus-deep-interior same-k fails at k=19: t=35 vs t=78",
+ "science": "Same-k failure at k=19 for the non-adopted j2 variant confirming the wall is not restored, the failed-route terminus of an abandoned candidate.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6997,
+  "branch": "physics-loop/toe-lphys-block-j2k19-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

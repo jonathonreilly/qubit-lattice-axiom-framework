@@ -1,0 +1,19 @@
+{
+ "id": "pr-7294",
+ "title": "feat(nmmaxis): incoming-axis agreement at t+1 on #7167: reverse HOLD, face fails",
+ "science": "Incoming-axis agreement on the #7208 y-probes. Numerically identical to #7284 (#7167 and #7211 share a probe signature class): same Axis(M) sets, same hold/fail.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=fail",
+ "source": {
+  "pr": 7294,
+  "branch": "physics-loop/toe-lphys-block-nmmaxis-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

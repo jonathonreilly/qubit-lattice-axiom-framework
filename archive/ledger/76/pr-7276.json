@@ -1,0 +1,19 @@
+{
+ "id": "pr-7276",
+ "title": "feat(nmperpzp): forall-orthogonal M vs O at t+1 on #7186: reverse HOLD, face HOLD",
+ "science": "Forall-orthogonal on the #7186 z-probes, with the full named dot table. Runner carries 'disjoint-is-not-forall-perp' ({e_1} vs {-e_1} disjoint yet forall-perp fails) -- the correct statement that set-disjointness is strictly weaker than axis-disjointness.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7276,
+  "branch": "physics-loop/toe-lphys-block-nmperpzp-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

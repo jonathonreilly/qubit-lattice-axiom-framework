@@ -1,0 +1,19 @@
+{
+ "id": "pr-7191",
+ "title": "feat(nsxe3zinc): x-axis opposite \u00b1e_3 z-probe same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "x-axis opposite +/-e_3 seed {0:+e3},{e1:-e3}, z-probes. Union with L is a no-op at all four probes. Its S^+ at D differs from #7200's by exactly the letter -e_3, which is the only trace the flipped seed lock leaves (site (1,0,0) is a 6-neighbour of the z-probe D=(1,0,1)); everything else in the two cells coincides.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7191,
+  "branch": "physics-loop/toe-lphys-block-nsxe3zinc-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

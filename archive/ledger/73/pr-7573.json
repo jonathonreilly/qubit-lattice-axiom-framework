@@ -1,0 +1,19 @@
+{
+ "id": "pr-7573",
+ "title": "feat(nm2holxzrd): neighbor-read of xz-plane cyclic-frame holonomy at t+1 on two-axis opposite seed: reverse fails, face fails",
+ "science": "The band's only xz-plane (normal e_2) member: squares P-Q-R-S at y=0 and y=1 on 2A. Both fail from split fail at Q,Q2 (m=\u2212e_3, empty cyclic prev). Reader census: the xz plane carries 0 holding squares in 2A/3F/SL and 1 in 3N, against 3-5 in yz and 2-4 in xy \u2014 the readout is strongly plane-anisotropic and this is the only member that probes the third plane.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7573,
+  "branch": "physics-loop/toe-lphys-block-nm2holxzrd-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

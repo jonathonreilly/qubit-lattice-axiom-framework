@@ -1,0 +1,19 @@
+{
+ "id": "pr-6791",
+ "title": "feat(hugax): corridor-slide restores same-k at k=7: t=17 vs t=23",
+ "science": "Introduces a NEW fourth-clause rule and gets a new positive: mu = nu plus cost 3 on any 2->2 hop whose destination has least nonzero |w_i| = 1 (an axis-hugging corridor slide). That closes the exact loophole the 'why' notes identified -- the cheap y=+-1 corridor that kept axis arrivals low -- and same-k reverse at k=7 is RESTORED on B_21(0): t(7,0,0)=17, t(7,7,7)=23, 867 > 529, where nu gave 507 <",
+ "forcing": false,
+ "verdict_pair": "same-k reverse k=7 = YES under mu (867>529), vs NO under nu ",
+ "source": {
+  "pr": 6791,
+  "branch": "physics-loop/toe-lphys-block-hugax-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

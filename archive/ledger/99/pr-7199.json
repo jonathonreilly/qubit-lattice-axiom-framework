@@ -1,0 +1,19 @@
+{
+ "id": "pr-7199",
+ "title": "feat(nsze2sam): z-axis same-lock +e_2 same-tick union own-lock: reverse HOLD, face HOLD",
+ "science": "z-axis same-lock +e_2 seed, y-probes. Exact duplicate of #7193 (recomputed field by field). Note that its cache prints the channel under a different key name (reverse_HOLD_uses_L(A)) than its siblings' reverse_hold_channel, so the band's own new field is not emitted uniformly.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7199,
+  "branch": "physics-loop/toe-lphys-block-nsze2sam-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

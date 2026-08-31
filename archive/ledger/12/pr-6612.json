@@ -1,0 +1,19 @@
+{
+ "id": "pr-6612",
+ "title": "feat(c7q4): cov7>0 is not Q4; positivity does not imply Q4",
+ "science": "DEFECTIVE MEMBER, worse than #6611, including a WEAKENED AUDIT CHECK: the thm1-pos-implies-q4 check body reads '... and q4_false_pos == frozenset(Q4_FALSE_POS) and True and \"Positivity does not imply\" in note and True and \"cov7 = 4\" in note' - two literal 'and True' placeholders sit where every sibling asserts cov_by_remaining[(1,1,0,0,0)]==4 and selector_Q4(...) is True, so the gate is stubbed ou",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; equiv=0, pos_implies_Q4",
+ "source": {
+  "pr": 6612,
+  "branch": "physics-loop/toe-lphys-block-c7q4-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

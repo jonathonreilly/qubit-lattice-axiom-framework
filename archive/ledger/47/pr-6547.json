@@ -1,0 +1,19 @@
+{
+ "id": "pr-6547",
+ "title": "physics: refute the paired parity hypothesis with an even branch",
+ "science": "Block 112: refutes the global-odd paired-parity hypothesis with an exact even chart witness (paired negative counts (1,1), assembling to (14,2,0) with positive determinant; (12,4,0) at the second fixture), kills the paired determinant-orientation invariant, and charts attained paired sums {1,2,3,4} including a definite first half - leaving the zero-sum decision as the named gate.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6547,
+  "branch": "physics-loop/toe-axiom-closure-block112-even-parity-paired-branch-20260815"
+ },
+ "carried_by": "PR #6584 (Block 114) answers the paired zero-sum affirmatively with the exact (16,0,0) witness, subsuming the parity refutations",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

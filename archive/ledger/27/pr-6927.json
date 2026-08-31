@@ -1,0 +1,19 @@
+{
+ "id": "pr-6927",
+ "title": "feat(ofkiso): out-face isochrones t(2,2,2)=10 t(4,4,4)=16",
+ "science": "omega isochrone census on B_12: t=10 shell 80 sites / 4 types / 3 radii, t=16 shell 524 sites / 23 types / 14 radii, against kappa's 6/5 and 25/13 \u2014 rounder on the small shell but MORE distinct radii on the large one, and both shells still mixed. Third assertion of the unproved investment, here escalated to 'omega holds through k=15'.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6927,
+  "branch": "physics-loop/toe-lphys-block-ofkiso-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

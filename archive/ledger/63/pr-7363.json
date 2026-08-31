@@ -1,0 +1,19 @@
+{
+ "id": "pr-7363",
+ "title": "feat(nm2readz): neighbor-read of M at t+1 on two-axis opposite z-probes: reverse fails, face HOLD",
+ "science": "Two-axis opposite seed, z-probes, neighbor-read of M: fail at A, hold at B,C,D. Uses a different note template (Theorem/Proof/QED) from the rest of the band. The A failure is again the seed-letter convention: the partner seed (0,1,1) carries -e_2 against M(A)={+e_2}.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=HOLD",
+ "source": {
+  "pr": 7363,
+  "branch": "physics-loop/toe-lphys-block-nm2readz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

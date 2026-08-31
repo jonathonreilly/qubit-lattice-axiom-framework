@@ -1,0 +1,19 @@
+{
+ "id": "pr-6854",
+ "title": "physics: prove the conditional general-Z_N theorem with its exact premises (block 138)",
+ "science": "The conditional general-Z_N charge-kinematic theorem with exact premises (ACTION-REALITY, CYCLIC-SHEAR, SHARED-PIVOT): entrywise conjugate carriers, forced relative Gram 1, and the exact count dichotomy -- Sym_2(R)^m (dim 3m, center m) under the transfer degeneracy rho_0=rho_m, dim 3m-1 with center m+1 without it. This is the theorem 140's similarity discharges a rider of and 146 builds on; its pr",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6854,
+  "branch": "physics-loop/toe-axiom-closure-block138-general-zn-theorem-20260819"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

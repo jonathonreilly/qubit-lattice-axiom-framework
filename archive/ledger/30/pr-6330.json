@@ -1,0 +1,19 @@
+{
+ "id": "pr-6330",
+ "title": "feat(l1a1): unique hop-to-tick scale on the L1 axis is 1",
+ "science": "Bounded_theorem note, no probe cell. CAUSAL-SPEED / LIGHTCONE result: first-lock time equals l1 distance from the seed, phi(p)=d(p), and a=1 is the UNIQUE hop-to-tick scale in {1,2,3} satisfying phi(p)=a.d(p) at both axis sites (a=2 is falsified by phi((1,0,0))=1). Also checks that NO site locks earlier than its l1 distance -- one hop per tick exactly. Bears on time-as-order-without-rate and the l",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=1",
+ "source": {
+  "pr": 6330,
+  "branch": "physics-loop/toe-lphys-block-l1a1-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

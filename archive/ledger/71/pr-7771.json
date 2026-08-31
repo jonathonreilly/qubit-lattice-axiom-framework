@@ -1,0 +1,19 @@
+{
+ "id": "pr-7771",
+ "title": "[physics-loop] Block 223: two-arm higher-block ancestry",
+ "science": "Static two-arm certificate: a nonvacuous classifier on all 7,113,688 labelled width-two/three forest seams with a single conflict action on all 34,804,719 contacting pairs; all 5,040 prior crosswires become contacts; isolates the deterministic abort-then-retry cycle as the remaining dynamic boundary.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7771,
+  "branch": "physics-loop/toe-axiom-closure-block223-two-arm-higher-block-ancestry-20260828"
+ },
+ "carried_by": "#7772 (corrects the scheduler classification and resolves the retry boundary via the fairness quotient); carrier reused verbatim by #7773",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

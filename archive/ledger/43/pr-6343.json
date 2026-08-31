@@ -1,0 +1,19 @@
+{
+ "id": "pr-6343",
+ "title": "feat(actfree): L1 formation does not use an M2 action",
+ "science": "Bounded_theorem note, no probe cell. Claims a real structural TENSION with the rest of the batch: L1 formation reads occupancy only and therefore does NOT invoke Aut(M_2) or any faithful cube action -- i.e. the unique faithful action established over five PRs (#6276/#6317/#6319/#6321/#6324) is not used by the one working dynamical member. WORST RUNNER DEFECT IN THE BATCH: the note's central claim ",
+ "forcing": false,
+ "verdict_pair": "none in diff (no reverse/face verdicts; runner TOTAL: PASS=2",
+ "source": {
+  "pr": 6343,
+  "branch": "physics-loop/toe-lphys-block-actfree-20260814"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6151",
+ "title": "science(toe): expose nonuniform conserved-source Ward obstruction",
+ "science": "Block 58: corrects the Block-19/21/54 affine nonmetric-surrogate interpretation, constructs two genuine period-three full-edge conserved-source branches with stable nonzero second-order Ward vectors and eight lifted pseudo-constraint directions, and narrowly rejects the scalar interval-power and fixed cubic-deficit repairs.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6151,
+  "branch": "physics-loop/toe-axiom-closure-block58-nonuniform-full-edge-20260812"
+ },
+ "carried_by": "#6152 removes this block's period-three quadratic-harmonic alias with all-edge odd-period branches and carries the corrected interpretation into the defect-scaling result; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6363",
+ "title": "feat(cycle789): free-fold parity reduction on the interface wall fibers",
+ "science": "Cycle 789: exact stabilizer rigidity in the whole 384-element cell group, a free involution on the object, the parity reduction of the stubborn interface fibers via a free fold, two more refutation certificates, and the letter-functional quotient that sees the heavy letters.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6363,
+  "branch": "cycle789-interface-free-fold-reduction"
+ },
+ "carried_by": "#6367 (cycle 791) takes the fold reduction one level down to a single fiber and determines the whole symmetry group of that cover instance; #6369 (cycle 792) puts every fiber into linear form; #6370 (",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

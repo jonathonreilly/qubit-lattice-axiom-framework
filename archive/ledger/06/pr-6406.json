@@ -1,0 +1,19 @@
+{
+ "id": "pr-6406",
+ "title": "physics: descend the Dirac-Kahler action onto the patch carrier",
+ "science": "Block 106 exact patch-carrier descent of the Dirac-Kahler action (isometry, nilpotent d_ext, shear-flip lifts, adversarially re-verified), and the 0824 gravity mainline b182 note maps the b106 identity package verbatim onto the b181 curved carrier \u2014 a live mainline premise. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal; promotion candidate.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6406,
+  "branch": "physics-loop/toe-axiom-closure-block106-local-dual-descent-20260815"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

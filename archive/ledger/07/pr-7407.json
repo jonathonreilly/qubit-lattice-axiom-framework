@@ -1,0 +1,19 @@
+{
+ "id": "pr-7407",
+ "title": "feat(nm2ot5y): O freeze t+3 vs t+4 on two-axis opposite y-probes: reverse HOLD, face HOLD, composition HOLD",
+ "science": "O-freeze t+3 vs t+4 on opposite y-probes. No six-neighbour of any probe forms at t+4, so the freeze is vacuous at this cut.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7407,
+  "branch": "physics-loop/toe-lphys-block-nm2ot5y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

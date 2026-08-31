@@ -1,0 +1,19 @@
+{
+ "id": "pr-6641",
+ "title": "feat(2bchi): two-ball witness mask hosts the chiral pair",
+ "science": "Positive existence result continuing #6640, not a probe cell: the two-ball witness's occupancy mask m=(1,1,1,0,1,0) at v=(1,-1,-1) - occupied (+x,-x,+y,+z), empty (-y,-z) - DOES occur among the 48 July-3 chiral-pair 6-tuples (N_mask=4), and of the 16 {+,-} fillings of its four occupied slots exactly N_fire=4 are pair members, lex-first (+,-,+,0,-,0), the four being (+,-,+,0,-,0),(+,-,-,0,+,0),(-,+",
+ "forcing": false,
+ "verdict_pair": "none stated (no reverse/face verdicts in the diff)",
+ "source": {
+  "pr": 6641,
+  "branch": "physics-loop/toe-lphys-block-2bchi-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

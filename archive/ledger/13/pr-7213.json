@@ -1,0 +1,19 @@
+{
+ "id": "pr-7213",
+ "title": "feat(nmszopx): own incoming set on #7185: reverse HOLD, face HOLD",
+ "science": "M-readout on #7185's x-symmetric three-site x-probes: A t=0, M(A)={-e2}, M(B)={+e2}. Rotation image (e1<->e2) of #7208/#7211; the M sets, the channel flags and both verdicts map across exactly.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD",
+ "source": {
+  "pr": 7213,
+  "branch": "physics-loop/toe-lphys-block-nmszopx-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6142",
+ "title": "science: derive reflected curvature-source intertwiner",
+ "science": "Block 49: constructs the exact three-component reflected plaquette curvature intertwiner (exact displacement Ward and time-reflection covariance), factors the finite-momentum metric pullback into a positive lattice form factor times linearized time-space sectional curvature, and falsifies the hard-zero gluing candidate because it deletes the inherited Newtonian curvature.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6142,
+  "branch": "physics-loop/toe-axiom-closure-block49-joint-transfer-20260811"
+ },
+ "carried_by": "#6144 consumes its Ricci-charge increments in the continuity cut; #6145 corrects its x+t signature interface; ancestry of #7753",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

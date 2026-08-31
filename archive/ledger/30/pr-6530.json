@@ -1,0 +1,19 @@
+{
+ "id": "pr-6530",
+ "title": "feat(q1ntwhy): f_nt first refuse from {(1,0,0)} is vertex3",
+ "science": "Displayed-not-adopted first-refuse mechanism note for Q_* non-totality; exploratory campaign block carried by roll-up.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6530,
+  "branch": "physics-loop/toe-lphys-block-q1ntwhy-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

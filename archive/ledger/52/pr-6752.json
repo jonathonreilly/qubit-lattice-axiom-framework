@@ -1,0 +1,19 @@
+{
+ "id": "pr-6752",
+ "title": "feat(nuiso12): t=8 has 7 types/5 radii; t=14 has 26 types/15 radii",
+ "science": "Extends #6732's isochrone work to B_12(0): complete G+ orbit decomposition of the two reverse-critical shells, t=8 (140 sites, 7 types, 5 radii {12,14,18,20,26}) and t=14 (578 sites, 26 types, 15 radii), with every representative, radius and orbit size listed, plus a machine-checked structural point that G+ chiral pairs at the same radius stay distinct orbits ((3,1,2) vs (3,2,1) at r^2=14; (5,3,4)",
+ "forcing": false,
+ "verdict_pair": "reverse=absent face=absent (reports shell type/radius counts",
+ "source": {
+  "pr": 6752,
+  "branch": "physics-loop/toe-lphys-block-nuiso12-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

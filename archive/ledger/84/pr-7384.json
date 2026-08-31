@@ -1,0 +1,19 @@
+{
+ "id": "pr-7384",
+ "title": "physics: classify the site symmetries and certify the invariant-sector quotient (block 189)",
+ "science": "Block 189 of the toe-axiom-closure 0824 mainline (stacked on #7359): exact symmetry/stabilizer/quotient theorems with checker and mutation battery, and later mainline blocks stack on it. [OPEN\u2192ARCHIVE demotion, reconcile item 19(a): rule-10 ancestry-carried into the named open terminal.]",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7384,
+  "branch": "physics-loop/toe-axiom-closure-block189-site-gauge-quotient-20260824"
+ },
+ "carried_by": "#7753 (open closure-lane tip; commit-ancestry verified behind/ahead=0)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

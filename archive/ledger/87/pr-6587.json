@@ -1,0 +1,19 @@
+{
+ "id": "pr-6587",
+ "title": "feat(c4q10): cov4>0 is not Q10",
+ "science": "The diff carries an exact positive identity the title/body never mention: runner check thm2-q4-control verifies all((cov4>0)==Q4) over all 32 maps, i.e. cov4>0 iff Q4=(wt1 OR adj2), with N_Q4=N_both_Q4=24. It also names the exact mismatch sets: the two Q10-false positives (1,0,0,0,0) and (1,1,0,0,0) both at cov4=7, and the six Q10-true cov4=0 maps.",
+ "forcing": false,
+ "verdict_pair": "reverse=N/A face=N/A (selector test; N_pos=24, N_Q10=28, N_b",
+ "source": {
+  "pr": 6587,
+  "branch": "physics-loop/toe-lphys-block-c4q10-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

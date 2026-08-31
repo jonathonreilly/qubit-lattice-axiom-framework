@@ -1,0 +1,19 @@
+{
+ "id": "pr-7584",
+ "title": "feat(nm2yzrdsl): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on two-axis same-lock seed: reverse fails, face fails",
+ "science": "Same-lock seed (+e_1/+e_1, +e_2/+e_2), yz squares, neighbor-read. Both fail: split fails at C,C1 from an empty cyclic-prev slot. Reader census: the same-lock seed is the only one of the four with NO holding scored square anywhere in the band, and it has the fewest holding unit squares in the whole ball (5 vs 8-9).",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7584,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrdsl-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

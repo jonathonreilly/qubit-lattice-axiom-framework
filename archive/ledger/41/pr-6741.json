@@ -1,0 +1,19 @@
+{
+ "id": "pr-6741",
+ "title": "feat(011var8): on B8, var nu < (0,1,1) < l1",
+ "science": "Displayed three-way roundness variance comparison on B8 confirming nu as minimizer, explicitly not adopted; exploratory comparison whose conclusion is carried by the campaign consolidation.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 6741,
+  "branch": "physics-loop/toe-lphys-block-011var8-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

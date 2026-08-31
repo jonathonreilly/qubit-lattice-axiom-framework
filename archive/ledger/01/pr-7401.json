@@ -1,0 +1,19 @@
+{
+ "id": "pr-7401",
+ "title": "feat(nm2ot4y): O freeze t+2 vs t+3 on two-axis opposite y-probes: reverse HOLD, face HOLD, composition HOLD",
+ "science": "O-freeze t+2 vs t+3 on opposite y-probes, exist-opposite HOLD/HOLD, composition HOLD. Pure tau-shift of #7388's object.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=HOLD (composition HOLD)",
+ "source": {
+  "pr": 7401,
+  "branch": "physics-loop/toe-lphys-block-nm2ot4y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-6100",
+ "title": "science(gravity): endogenize geometry and localize RN contact",
+ "science": "Block 28: proves a finite strictly positive geometry-bearing joint Record law uniquely fixes its total null-relative action, with only the geometry/matter decomposition remaining gauge \u2014 the strongest form of the representative-repair theorem in this span \u2014 and constructs one shared real covariant null-anchored source-linear RN contact (24-permutation exact covariance) cancelling all three retaine",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 6100,
+  "branch": "physics-loop/toe-axiom-closure-block28-local-covariant-rn-contact-20260810"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

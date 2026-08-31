@@ -1,0 +1,19 @@
+{
+ "id": "pr-7003",
+ "title": "feat(s2k13): c2d4-plus-soft-ridge same-k holds at k=13: t=27 vs t=42",
+ "science": "Same-k hold at k=13 for the non-adopted s2 variant, an incremental exploratory display whose series conclusion lives in campaign roll-ups.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7003,
+  "branch": "physics-loop/toe-lphys-block-s2k13-20260815"
+ },
+ "carried_by": "this ledger science line + closed-PR record",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "pr-7595",
+ "title": "feat(nm2yzrd3y): neighbor-read of yz-plane cyclic-frame holonomy at t+1 on three-axis opposite near-face y-probes: reverse fails, face fails",
+ "science": "y-probe translates of the yz square on 3N; fail/fail. S(C) is outside B_3(0) ((0,3,1)\u00b7(0,3,1)=10>9) so one of the two stated reasons is host-dependent, but the verdict is not: reader re-ran on B4/B5/B6 and it stays fail/fail because S(D) still fails.",
+ "forcing": false,
+ "verdict_pair": "reverse=fail face=fail",
+ "source": {
+  "pr": 7595,
+  "branch": "physics-loop/toe-lphys-block-nm2yzrd3y-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

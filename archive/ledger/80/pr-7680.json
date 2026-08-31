@@ -1,0 +1,19 @@
+{
+ "id": "pr-7680",
+ "title": "feat(nm2frm2lx3r): neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1 on three-axis opposite near-face seed: reverse HOLD, f",
+ "science": "Existential 6-NN neighbour-read of the near-face L-path (-e3,-e1). Adds nothing over its bare parent #7679 - recomputed, the readout HOLDs wherever the bare bit HOLDs at both reverse probes.",
+ "forcing": false,
+ "verdict_pair": "reverse=HOLD face=fails",
+ "source": {
+  "pr": 7680,
+  "branch": "physics-loop/toe-lphys-block-nm2frm2lx3r-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

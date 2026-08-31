@@ -1,0 +1,19 @@
+{
+ "id": "pr-7014",
+ "title": "feat(s2lin): s2 same-k table is affine t=k+14 vs 3k+3, crossing k~16.76",
+ "science": "Independent re-derivation of #7009's theorem on the s2 table: rows (7,21,24),(13,27,42),(14,28,45),(18,32,57),(19,33,60) fit t_axis=k+14, t_body=3k+3 with the SAME locked slopes (1,3), crossing k*=(11+13*sqrt(3))/2 ~ 16.7583 < 18.70, and the same leading -6 obstruction. Two independent rules, same slopes, same impossibility. Caveat: two of the five rows (k=7 and k=13) have no computing PR in this ",
+ "forcing": false,
+ "verdict_pair": "reverse=holds k<=14, fails k=18,19; crossing k*=(11+13*sqrt(",
+ "source": {
+  "pr": 7014,
+  "branch": "physics-loop/toe-lphys-block-s2lin-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

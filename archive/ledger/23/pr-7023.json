@@ -1,0 +1,19 @@
+{
+ "id": "pr-7023",
+ "title": "[physics-loop] shared-effect congruence and causal reopen \u2014 bounded_theorem \u2014 bounded-support",
+ "science": "Two exact ternary Cycle-317 programs share carrier, Kraus dilation, compressed effect E_0=P_z/2, selected Kraus operator and candidate content, yet shared-effect conditional-weight descent and randomized-preparation descent are algebraically independent inside the tested positive normalized covariant formula class.",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7023,
+  "branch": "physics-loop/toe-shared-effect-record-congruence-block3-20260820"
+ },
+ "carried_by": "#7325 (block 39) carries the effect-functionality half in strictly stronger form - a TOTAL, normalized, support-preserving, translation/proper-cubic and internally basis covariant strict-nearest-neigh",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

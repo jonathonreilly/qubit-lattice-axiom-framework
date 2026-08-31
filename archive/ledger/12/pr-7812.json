@@ -1,0 +1,19 @@
+{
+ "id": "pr-7812",
+ "title": "[physics-loop] Block26 finite lease tensor and convex collision channels \u2014 bounded_theorem / conditional-support",
+ "science": "CONDITIONAL-FINITE-LEASE-TENSOR-AND-PHYSICAL-CONVEX-COLLISION-CHANNELS-POSITIVE \u2014 defeats the #7811 wall by going stochastic instead of sharp, and does so with unusual self-discipline. (1) Finite disjoint-carrier tensorization: for any SUPPLIED finite family of pairwise-disjoint complete 224-site carriers, the tensor product of the complete translated Block24 channels (all 1,176 physical success b",
+ "forcing": false,
+ "verdict_pair": "",
+ "source": {
+  "pr": 7812,
+  "branch": "physics-loop/toe-source-eta-ownership-block26-existing-qubit-lease-autonomy-20260830"
+ },
+ "carried_by": "ancestry-carried by #7813 (compare status behind, ahead_by 0, 10 behind) and is its literal base branch. CITED WITHOUT RESTATEMENT: #7813 depends_on this note with the role supplies the returned-tip p",
+ "promotion_candidate": true,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

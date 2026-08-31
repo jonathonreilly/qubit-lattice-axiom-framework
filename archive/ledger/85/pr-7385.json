@@ -1,0 +1,19 @@
+{
+ "id": "pr-7385",
+ "title": "feat(nm2ready): neighbor-read of M at t+1 on two-axis opposite y-probes: reverse fails, face fails",
+ "science": "Two-axis opposite seed, y-probes, neighbor-read of M: fail at A and C, hold at B and D, so fail/fail. Uses the Theorem/Proof/QED template and states the probe-direction table for M-read itself (z: fail/hold, x: hold/hold), and records that R-style recovery is empty at all four y-probes.",
+ "forcing": false,
+ "verdict_pair": "reverse=fails face=fails",
+ "source": {
+  "pr": 7385,
+  "branch": "physics-loop/toe-lphys-block-nm2ready-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

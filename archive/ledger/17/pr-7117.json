@@ -1,0 +1,19 @@
+{
+ "id": "pr-7117",
+ "title": "feat(nsparyn): parallel-opposite y-probe formdraw n(C)!=n(D): reverse UNDEFINED, face UNDEFINED",
+ "science": "Parallel-opposite y-probe formdraw split probe (UNDEFINED both directions), displayed-not-adopted 0815 sweep member.",
+ "forcing": false,
+ "verdict_pair": "none",
+ "source": {
+  "pr": 7117,
+  "branch": "physics-loop/toe-lphys-block-nsparyn-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

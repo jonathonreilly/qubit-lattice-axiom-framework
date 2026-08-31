@@ -1,0 +1,19 @@
+{
+ "id": "pr-7139",
+ "title": "feat(nssex): same-lock x-probe later-tick exist-opposite: reverse HOLD, face HOLD",
+ "science": "Exist-opposite on the degenerate same-lock seed +e_1/+e_1: still hold/hold. Its Theorem 2 contains the band's own admission of the central problem, that against the opposite-lock run 'the holding readout transfers under this seed, the lists do not' \u2014 the verdict is seed-independent while the underlying data is not.",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7139,
+  "branch": "physics-loop/toe-lphys-block-nssex-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

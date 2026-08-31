@@ -1,0 +1,19 @@
+{
+ "id": "pr-7280",
+ "title": "feat(nmcoverz): axis-cover of M and O at t+1 on #7213: reverse HOLD, face HOLD",
+ "science": "Axis-cover on the #7213 x-probes; adds the cover-at-t contrast (fail at A,B,C because O is empty at formation, hold at D from the seed-partner dual).",
+ "forcing": false,
+ "verdict_pair": "reverse=hold face=hold",
+ "source": {
+  "pr": 7280,
+  "branch": "physics-loop/toe-lphys-block-nmcoverz-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

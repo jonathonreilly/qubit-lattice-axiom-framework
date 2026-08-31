@@ -1,0 +1,19 @@
+{
+ "id": "pr-6824",
+ "title": "feat(ridk4): ridge-slide same-k holds at k=4: t=12 vs t=16",
+ "science": "rho3 at k=4 on B_12: t=12 vs 16, 432>256. Ladder point. Explicitly contrasts t(4,4,4)=16 under rho3 vs 14 under mu.",
+ "forcing": false,
+ "verdict_pair": "reverse=YES (same-k k=4, 432 > 256) face=n/a",
+ "source": {
+  "pr": 6824,
+  "branch": "physics-loop/toe-lphys-block-ridk4-20260815"
+ },
+ "carried_by": "archive/families/ roll-ups (see chains index)",
+ "promotion_candidate": false,
+ "disputed": false,
+ "review": {
+  "level": "light",
+  "process": "densify full-read 2026-08-31"
+ },
+ "status": "archived"
+}

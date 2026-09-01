@@ -1,0 +1,15 @@
+campaign: toe-source-eta-ownership-block42-support-faithful-law-selection-decision-20260901
+status: preregistered
+branch: physics-loop/toe-source-eta-ownership-block42-support-faithful-law-selection-decision-20260901
+parent_head: 17357c3714c3b3196c6b8fdc9b1a3bb300044181
+origin_main_observed: 2cea9a595ee2f0a6c47096de6f821b905182f48c
+minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
+block38_runner_blob: afe2e079494eba64d3bd68026070b1cf611cb626
+target: W1 sharp binary Record writer selection and exact orientation axiom decision
+expected_best_outcome: AXIOM_DECISION_READY
+review_loop_used: false
+audit_status: unset
+obligation_retirement: 0
+toe_percentage_movement: 0
+lock_owner: codex-toe-law-selection-block42
+next_action: commit and push preregistration only, then implement the exact runner before any target execution

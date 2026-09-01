@@ -8,7 +8,8 @@
 | compact two-bit transverse coframe encoder | deferred | efficient, but imports a controller coframe that must be symmetrized |
 | geometric STATUS one-hot relay | selected | candidate position plus Locked/Blank status already encodes the exit covariantly |
 | three-class flag without ordered pair | rejected | perpendicular dispatch still needs the exact remote direction |
-| finite scheduled NN comparator and CP latch | selected | closes the shortest physical comparison/no-refire bridge |
+| finite scheduled NN ordered-pair comparator | selected | closes the shortest physical cross-arm comparison bridge |
+| abstract projector STOP/no-refire specification | retained as algebra only | not a compiled local validator, latch, or bypass |
 | immediate autonomous-QCA or gravity claim | deferred | state-carried clock, persistent token Record, renewal, and source normalization remain open |
 
 No negative or exhaustive obstruction claim is planned in this block.

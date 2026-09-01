@@ -18,8 +18,9 @@ nearest-neighbor two-site after Toffoli decomposition/routing.
 
 At the ports, the 16 ordered one-hot pairs partition into four equal, four
 opposite, and eight perpendicular cases.  The exact `(g,h)` selector must be
-retained through dispatch because a three-class flag alone does not identify
-which perpendicular Block30 route is required.
+retained for the future dispatch compiler because a three-class flag alone
+does not identify which perpendicular Block30 route is required.
 
 These are preflight witnesses only.  Gate counts, depth, covariance, cleanup,
-and latch identities are target-runner outputs, not preregistered facts.
+the abstract projector specification, and route correspondence are target-
+runner outputs, not preregistered facts.

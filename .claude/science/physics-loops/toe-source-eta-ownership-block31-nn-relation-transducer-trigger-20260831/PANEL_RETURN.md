@@ -17,6 +17,7 @@ reusable, but no existing PR implements the comparator or autonomous trigger.
 The panel preferred the geometric STATUS relay over a host decoder, a compact
 coframe-dependent binary encoder, and an immediate gravity join.
 
-The panel also fixed the claim boundary: Blank-state eligibility can prevent a
-second firing in a one-shot CP channel, but a supplied gate-layer schedule is
-not cadence or an autonomous cellular law.
+The panel also fixed the claim boundary: a joint Blank/readiness projector has
+a consistent abstract STOP/no-refire totalization, but Block31 does not compile
+that projector, bypass, or controlled successor.  A supplied gate-layer
+schedule is not cadence or an autonomous cellular law.

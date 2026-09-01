@@ -14,18 +14,21 @@ transport them through fresh nearest-neighbor rails, and reversibly compute:
 
 - the unique ordered-pair selector `(g,h)`;
 - the equal, opposite, or perpendicular orbit class; and
-- a state-derived one-shot route token guarded by a Blank class bank.
+- exactly one of sixteen ordered-pair token cells on the promised sector.
 
-The same selector must dispatch the corresponding frozen Block30 five-step
-route and preserve the common survival of both supplied Block28 `lambda`
-laws.  The runner must recompute rail freshness, local gate support, truth
-tables, proper-cubic and side-exchange covariance, QND preservation, scratch
-cleanup, STOP completion, and second-application no-refire.
+The runner must prove an exact correspondence from each token to the frozen
+Block30 five-step route and preserve the common survival of both supplied
+Block28 `lambda` laws.  It must recompute rail freshness, local gate support,
+truth tables, proper-cubic covariance, logical side exchange, QND preservation,
+and scratch cleanup.  It may also test an abstract full-space Ready/STOP
+projector specification, but it must not call that a compiled local validator,
+latch, bypass, or physical dispatch.
 
-This is a scheduled finite circuit theorem.  The Blank rails, class bank,
-fixed opposite-route chirality, irreversible history debit, gate layers, and
-invocation are supplied.  A green result may replace the nonlocal host
-comparison by an exact nearest-neighbor transducer and state-only eligibility
-latch.  It may not claim an autonomous time-homogeneous Admissibility law,
-physical cadence, a framework Record for the internal token, resource renewal,
-gravity, an axiom amendment, obligation retirement, or TOE-score movement.
+This is a scheduled finite circuit theorem.  The 28 computational-Blank M2s,
+76 borrowed M2s, internal basis frame, fixed opposite-route chirality, gate
+layers, and invocation are supplied.  A green result may replace the nonlocal host
+comparison by an exact nearest-neighbor ordered-pair transducer.  It may not
+claim a physical full-space STOP, no-refire latch, controlled successor
+dispatch, autonomous time-homogeneous Admissibility law, physical cadence, a
+framework Record for the internal token, resource renewal, gravity, an axiom
+amendment, obligation retirement, or TOE-score movement.

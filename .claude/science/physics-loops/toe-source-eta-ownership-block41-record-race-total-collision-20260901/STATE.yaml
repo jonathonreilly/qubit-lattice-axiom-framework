@@ -1,5 +1,5 @@
 campaign: toe-source-eta-ownership-block41-record-race-total-collision-20260901
-status: preregistered
+status: preregistered_with_preflight_support_correction
 branch: physics-loop/toe-source-eta-ownership-block41-record-race-total-collision-20260901
 parent_head: d1aea91676a955235d9c184278d6e14677d00864
 block38_head: 17357c3714c3b3196c6b8fdc9b1a3bb300044181
@@ -11,4 +11,4 @@ audit_status: unset
 obligation_retirement: 0
 toe_percentage_movement: 0
 lock_owner: codex-toe-record-race-block41
-next_action: commit and push preregistration only, then implement the exact Block41 runner
+next_action: freeze the legal/reachable-sector correction, then implement the exact Block41 runner before any target execution

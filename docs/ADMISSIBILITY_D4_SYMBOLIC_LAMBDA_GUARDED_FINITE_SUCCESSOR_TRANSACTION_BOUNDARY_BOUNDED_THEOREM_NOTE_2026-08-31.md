@@ -99,6 +99,14 @@ the domain-positive symbolic `sqrt(q_lambda)` factor.  A backward/forward
 dynamic program contracts the resulting six stages per arm without replacing
 them by a scalar row-sum assertion or enumerating `14^10` histories.
 
+The symbolic root is not inferred from a fixed-parameter sample.  Across all
+1,536 frame/route/exit geometries, an actual Block28 descriptor first contracts
+with a generic positive weight `p`, including its full control, Blank support,
+physical turn factors, translation, and output Records.  Only after proving
+the corresponding `q_lambda` cell positive on `[0,1)` does the runner
+substitute `p=q_lambda`.  A wrong-cell substitution is a designated rejecting
+mutation.
+
 ## Guard, STOP, and finite debit
 
 The 3,136 active input configurations are mutually orthogonal.  Their
@@ -173,9 +181,19 @@ selector/carrier, and local positive-root channel factors.  It does not:
 
 ## Evidence and next campaign
 
-The final source/input-bound execution record and cache hashes are carried in
-the Block32 execution-history packet.  It rejects all designated hostile
-mutations and emits
+The source/input-bound execution is recorded in
+[`EXECUTION_HISTORY.md`](../.claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/EXECUTION_HISTORY.md)
+and the
+[`canonical cache`](../logs/runner-cache/admissibility_d4_symbolic_lambda_guarded_state_carrier_successor_gate_2026_08_31.txt).
+The source SHA-256 is
+`0547f7b51d8e93f08d5dcd5e3493e724319b98c003a1810490a772b684965fb2`,
+the 26-input fingerprint is
+`1160b3f304367e08af9a3f9a40bd7a92e9660d8b07c4577b84007f19be331bcf`,
+and the cache SHA-256 is
+`9b11e11ada243168e99dbf3fefd5bb24dc774f5d20dc95ea3b17f28027d085af`.
+The 254.82-second run returned `PASS=14 FAIL=0`, rejected `68/68`
+designated mutations, emitted all five N5 resolution lines in 5,919 stdout
+bytes, and terminated with
 
 `FULL-SYMBOLIC-LAMBDA-INTERVAL-SURVIVES-GUARDED-TWO-USE-TRANSACTION;PAIR-SENSITIVE-SOURCE-OR-HISTORY-SELECTOR-OPEN`.
 

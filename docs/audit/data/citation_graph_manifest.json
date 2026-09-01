@@ -1,6 +1,6 @@
 {
- "edge_count": 16286,
- "node_count": 5663,
+ "edge_count": 16290,
+ "node_count": 5670,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -442,6 +442,10 @@
    "deps_hash": "0c0aa2b1ab6e",
    "out_degree": 2
   },
+  "admissibility_d4_classical_screening_cause_persistence_renewal_locus_boundary_bounded_theorem_note_2026-08-31": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "admissibility_d4_common_spin2_source_module_six_bit_capacity_boundary_bounded_theorem_note_2026-08-29": {
    "deps_hash": "ccdba709e112",
    "out_degree": 4
@@ -542,6 +546,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "admissibility_d4_normalized_record_pair_source_gravity_pincer_boundary_bounded_theorem_note_2026-08-31": {
+   "deps_hash": "601ead35af2e",
+   "out_degree": 2
+  },
   "admissibility_d4_ordered_h1_front_carrier_interface_boundary_bounded_theorem_note_2026-08-29": {
    "deps_hash": "7082817764be",
    "out_degree": 4
@@ -549,6 +557,14 @@
   "admissibility_d4_outcome_typed_generated_front_prefix_boundary_bounded_theorem_note_2026-08-29": {
    "deps_hash": "82b5054e15c1",
    "out_degree": 4
+  },
+  "admissibility_d4_output_conditioned_pair_successor_common_two_use_cylinder_boundary_bounded_theorem_note_2026-08-31": {
+   "deps_hash": "3af0744c721a",
+   "out_degree": 2
+  },
+  "admissibility_d4_output_status_nn_ordered_pair_transducer_boundary_bounded_theorem_note_2026-08-31": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_d4_pair_factor_qnd_occurrence_selector_boundary_bounded_theorem_note_2026-08-29": {
    "deps_hash": "8fb2332ad166",
@@ -597,6 +613,10 @@
   "admissibility_d4_self_delimiting_forward_record_append_finite_history_boundary_bounded_theorem_note_2026-08-30": {
    "deps_hash": "3735fdc65a24",
    "out_degree": 5
+  },
+  "admissibility_d4_symbolic_lambda_guarded_finite_successor_transaction_boundary_bounded_theorem_note_2026-08-31": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_adm_seam_two_history_gram_bounded_theorem_note_2026-08-15": {
    "deps_hash": "5d167fe1c690",
@@ -938,6 +958,10 @@
    "deps_hash": "bca0a967aa49",
    "out_degree": 4
   },
+  "admissibility_gaussian_fair_record_midpoint_affinity_haar_edge_factor_fresh_port_reset_bounded_theorem_note_2026-09-01": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_bounded_theorem_note_2026-08-10": {
    "deps_hash": "8338a3e0e019",
    "out_degree": 5
@@ -1029,6 +1053,10 @@
   "admissibility_null_record_rn_cocycle_source_unit_gravity_contact_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "4fd40c3fdb28",
    "out_degree": 5
+  },
+  "admissibility_opus_affine_born_public_evidence_boundary_bounded_theorem_note_2026-09-01": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_periodic_flat_ec_connection_negative_mode_axiom_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "4b6a612b7520",

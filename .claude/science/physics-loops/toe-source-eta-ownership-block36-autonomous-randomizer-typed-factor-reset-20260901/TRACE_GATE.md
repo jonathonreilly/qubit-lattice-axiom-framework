@@ -11,8 +11,9 @@ next_trace_action: "compile the candidate Record-first controller and formation 
 ```
 
 The candidate protocol closes that quoted construction checklist at its own
-supplied-law scope.  It does not prove that the four axioms select the
-protocol.
+supplied-law scope. Fine cylinders provide procedure averaging, while direct
+midpoint response requires supplied active-interface sufficiency M. It does
+not prove that the four axioms select the protocol.
 
 ```yaml
 trace_class: direct_blocker_closure
@@ -24,8 +25,10 @@ artifact_role: theorem
 next_trace_action: "prove finite-volume loopy lattice compatibility and physical edge-experiment ownership"
 ```
 
-The Haar theorem targets the mathematical type and normalization subproblem;
-tree gluing is not a loopy-lattice carrier theorem.
+The Haar theorem closes the mathematical type and normalization subproblem
+under the supplied fixed-reference identification. Tree gluing is not a
+loopy-lattice carrier theorem, and `lambda=+1` remains a supplied fixture rather
+than a selected physical value.
 
 ```yaml
 trace_class: direct_blocker_closure
@@ -39,3 +42,10 @@ next_trace_action: "derive rather than supply the translated fresh-port allocato
 
 No trace entry reaches gravity, an axiom edit, audit retention, obligation
 retirement, or a TOE percentage change in this block.
+
+The exact next trace action is now joint: construct the fixed NN
+formation/controller/allocator kernel, prove that its active response factors
+through the installed-program quotient M, and prove the all-future archive
+screening invariant S against an explicit remote-copy relay. Success derives
+the two live imports; failure may supply evidence for a later axiom or
+primitive decision but does not itself authorize one.

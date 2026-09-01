@@ -30,6 +30,26 @@ requirements are mutually compatible in one explicit downstream law and can
 separate the remaining physical-law selection problem from normalization
 algebra.  It does not count as an obligation retirement.
 
+## Postexecution rerank
+
+The integration succeeded conditionally and exposed the portfolio's decisive
+fork. M, active-interface response sufficiency, and S, all-future archive
+screening/freshness, are independent process properties. The same microscopic
+local compiler can attempt both: its installed-program quotient targets M,
+while its dependency cone and archive bisimulation target S. A remote
+`O -> C -> H -> R` copy path is the mandatory hostile mutation.
+
+The next order is therefore:
+
+1. explicit full NN process plus active quotient and causal-worldtube theorem;
+2. noncircular endpoint/sign instrument;
+3. loopy factor gluing only after physical edge ownership;
+4. gravity attachment only after source identity;
+5. axiom/primitive consideration only after the explicit process route is run
+   to a retained failure.
+
+This supersedes the preregistered fallback to immediate loopy arithmetic.
+
 ## Prior-art match classifications
 
 | source | matching content | classification for Block 36 novelty |

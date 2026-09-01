@@ -1,6 +1,19 @@
 # Block 36 no-go memory
 
-Block 36 targets a positive construction and preregisters no no-go claim.
+Block 36 targets a positive construction. Execution exposed two narrow
+non-entailment claims, so the theorem note contains a landing-visible N1--N8
+stress record before either boundary is packaged:
+
+- M is not implied by fine-cylinder addition or equality of reduced local
+  channels, because a permanent selector Record distinguishes the global
+  randomized and direct-midpoint procedures.
+- S is not implied by one-step radius-one separation, because a
+  nearest-neighbor archive-copy relay can later re-enter an active causal
+  worldtube.
+
+These are not universal no-go claims. An explicit local compiler, active
+quotient, and causal-worldtube invariant remain a live positive route and are
+the next campaign target.
 The following exact prior boundaries constrain wording and controls:
 
 | source | exact scope used | live route preserved |
@@ -14,3 +27,8 @@ The following exact prior boundaries constrain wording and controls:
 If execution produces a semantic negative, bounded-with-named-walls, or
 stretch-attempt-negative claim, the no-go-discipline skill and a committed
 N1--N8 landing artifact become mandatory before packaging.
+
+Execution did produce the two narrow boundaries above. The requirement is
+satisfied in the theorem note, including route enumeration, wall independence,
+hidden-wall scan, citation-residual matching, scale certificate, primitive
+scan, steelman, cross-cycle check, and an explicit narrow PASS/broad FAIL gate.

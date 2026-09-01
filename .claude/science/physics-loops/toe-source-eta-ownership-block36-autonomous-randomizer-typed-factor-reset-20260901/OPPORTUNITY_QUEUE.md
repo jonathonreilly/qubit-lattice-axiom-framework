@@ -2,17 +2,17 @@
 
 | rank | target | retained-positive probability | missing-import count | runner availability | landability | blast radius | independence | action |
 |---:|---|---:|---:|---:|---:|---:|---:|---|
-| 1 | fair Record/Jensen + Haar edge-factor + fresh-port joint bridge | 2/3 | 5 | 3/3 | 3/3 | 3/3 | 3/3 | active Block 36 |
-| 2 | finite-volume loopy factor compatibility and conditional-ratio extraction on `Z^3` | 2/3 | 3 | 2/3 | 2/3 | 3/3 | 2/3 | next if tree bridge is exact |
-| 3 | binary matching/repeatability endpoint selector without Born-weight input | 1/3 | 4 | 2/3 | 2/3 | 3/3 | 2/3 | follow typed affinity |
-| 4 | compile the Gaussian writer/controller/cursor into the Block32 NN carrier | 1/3 | 6 | 1/3 | 1/3 | 3/3 | 2/3 | deep stretch after abstract bridge |
-| 5 | attach the selected normalized edge source to the gravity Ward/source pincer | 1/3 | 5 | 2/3 | 1/3 | 3/3 | 3/3 | downstream of physical edge ownership |
+| 1 | full NN formation/controller/allocator compiler plus active quotient and remote-relay bisimulation | 2/3 | 4 | 2/3 | 2/3 | 3/3 | 3/3 | next Block 37; derives or falsifies M/S |
+| 2 | binary matching/repeatability endpoint selector without Born-weight input | 1/3 | 3 | 2/3 | 2/3 | 3/3 | 2/3 | follow M/S or pivot here if compiler wall is independent |
+| 3 | finite-volume loopy factor compatibility and conditional-ratio extraction on `Z3` | 2/3 | 3 | 2/3 | 2/3 | 3/3 | 2/3 | defer until a physical edge process owns the factor |
+| 4 | attach the selected normalized edge source to the gravity Ward/source pincer | 1/3 | 5 | 2/3 | 1/3 | 3/3 | 3/3 | coordinate with external gravity worker; downstream of source identity |
+| 5 | axiom or primitive update for M/S | 1/3 | 2 | 1/3 | 1/3 | 1/3 | 3/3 | only after explicit compiler attempts fail with retained evidence |
 
-The queue favors the joint bridge because it can retire uncertainty about
-mutual compatibility of `W_A`, the mathematical part of `W_E`, and candidate
-`W_D`.  If it remains only a definition-level assembly, the next block must
-move to loopy compatibility or the endpoint instrument rather than add more
-reset prose.
+The executed joint bridge retires uncertainty about mutual compatibility of
+`W_A`, the mathematical part of `W_E`, and candidate `W_D`, but does not retire
+their physical imports. The queue now favors the local compiler because M and
+S are both process-level and the same explicit transition table can decide
+them. More tree, posterior, or six-axis arithmetic is below that leverage.
 
 ## Pre-PR value gate (provisional)
 
@@ -34,5 +34,19 @@ reset prose.
   affinity constraint from the non-Born fair Record and executes the factor
   and archive falsifiers.
 
-This gate is rerun against the completed artifacts.  Failure forbids opening a
-PR, even if isolated arithmetic passes.
+## Completed-artifact value gate
+
+- **V1:** still exact: the result directly targets the randomizer/affinity,
+  typed-factor, and predictive-renewal blockers.
+- **V2:** pass with narrowed novelty: individual ingredients are prior; the
+  new content is their non-Born joined cylinder, explicit local/global midpoint
+  discriminator, shared gauge control, and relay-capable abstract schedule.
+- **V3:** pass: matched prior does not contain this exact joined construction
+  or the M/S separation.
+- **V4:** pass after repair: the runner now computes the stateful conditional
+  process, schedule induction, and hostile relay rather than printing a desired
+  product.
+- **V5:** pass: Cycle 41 imports trace/Born weights; this result does not.
+
+The completed-artifact value gate therefore permits a PR only at explicit
+`conditional-support`, subject to the separate cluster-cap evaluator.

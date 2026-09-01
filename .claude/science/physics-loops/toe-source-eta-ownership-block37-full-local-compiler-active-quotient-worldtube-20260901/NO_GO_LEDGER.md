@@ -19,5 +19,21 @@ Potential exact failure classifications are:
 - the single-front invariant fails under the displayed table;
 - the construction is already a simple substitution into matched prior art.
 
-If a negative or bounded-with-named-walls claim becomes the terminal result,
-the no-go-discipline N1--N8 skill must be run before packaging.
+Two executable surfaces hit these exact failure classes and were rejected
+rather than promoted. The first confused analytic laws with finite controls;
+the second left the analytic carrier map as metadata beside the autonomous
+control CTMC. The current surface replaces that string with typed measurable
+maps, puts an actual Record-valued successor measure in every generator term,
+binds the first-cut kernel from those transitions, stores the direct seven-real
+protocol payload in the protocol-bearing Records, and stops productive
+protocol/mode/branch splices in the table itself. Outcome Records remain
+support-extensional: a same-mode sphere direction needs no fictitious
+provenance tag because every direction is a lawful typed support value.
+
+Because the terminal theorem is still bounded by selected-law, genesis,
+totalization, actuality, matter/gravity, and audit/adoption conditions, the
+current no-go-discipline skill was applied. Its committed N1--N8 checklist is
+Section 9 of the theorem note, and the runner emits the required five-line N5
+resolution certificate. It passes only for the narrow statement that this
+artifact does not itself close those broader surfaces; it explicitly fails
+for any universal impossibility claim.

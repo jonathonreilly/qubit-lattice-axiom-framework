@@ -1,6 +1,6 @@
 {
  "edge_count": 16290,
- "node_count": 5670,
+ "node_count": 5671,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -349,6 +349,10 @@
   "admissibility_binary_full_conditional_compatibility_ising_action_axiom_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "d50bf901e85b",
    "out_degree": 6
+  },
+  "admissibility_block36_specific_nn_active_cut_record_front_bounded_theorem_note_2026-09-01": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_boundary_dressed_joint_stage_homogeneous_nonlinear_zero_mode_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "c3fdff95de7f",

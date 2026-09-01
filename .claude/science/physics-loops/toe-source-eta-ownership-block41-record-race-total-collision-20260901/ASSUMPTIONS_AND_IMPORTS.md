@@ -14,8 +14,14 @@ The following are explicit Block-41 downstream law choices:
 - ordinary `T` Records as permanent grants and first-grant-wins exclusion on
   intersecting footprints;
 - owner-filtered use of the imported Block-38 carrier measures; and
-- the finite well-typed Record-map state domain.
+- the least reachable clean-head, causally closed, grant-consistent finite
+  Record-map state domain for the positive theorem.
 
 No collision weight, claimant set, auxiliary lease, global order, physical
 time calibration, gravity result, retained audit status, or observed frequency
 is imported.
+
+Arbitrary preloaded maps are evaluated by the extensional generator but are
+not included in the positive provenance/productive-winner theorem. Matching
+`H/T` maps erase their write order, so that distinction cannot be recovered
+without additional Record state.

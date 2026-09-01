@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/matter_graded_composition_axiom_update_boundary_check_2026_09_01.py
+runner_sha256: e5e01f2abc8584b43a86dab99798d39cda302847c32ecd6d2e1308f511a5544b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.26
+status: ok
+----- stdout -----
+PASS A1 iota unital *-hom on the matrix units, adjoint-compatible, injective, 3 sites
+PASS A2 kappa unital *-hom on the matrix units, adjoint-compatible, injective, 3 sites
+PASS A3a the 64 Pauli strings built from iota images span M_8(C) (rank 64)
+PASS A3b the 64 normal-ordered monomials prod cd_x^a c_x^b span M_8(C) (rank 64)
+PASS A4 ungraded pair: [iota(0,E01),iota(1,E01)]=0 and the anticommutator is 2*product != 0
+PASS A5 graded pair relations hold for (0,1) and for the non-adjacent (0,2) alike
+PASS A6 the two compositions share the even one-site content; the odd content differs at site 1
+PASS B1 symbolic A,B: {A(x)1, 1(x)B} = 2*(A(x)B) identically on M_4(C)
+PASS B2 block identity (A(x)B)[2i:2i+2,2j:2j+2] = A[i,j]*B, so A(x)B=0 forces A=0 or B=0
+PASS B3 c_1 is outside the span of iota(1,.) (rank 5) and fails to commute with iota(0,s1)
+PASS C1 V^2 = (a^2+b.b)1 + 2a(b.s); V^2 proportional to 1 exactly when a=0 or b=0
+PASS C2 the grading axis is the ladder axis; different axes give different odd parts
+PASS C3 V=b.s: V V^dag = (b.conj b)1 + i(b x conj b).s; scalar for b = phase*real, not for (1,i,0)
+PASS D1 closure of Rz,Rx is the proper cubic rotation group: order 24, integer, det +1
+PASS D2 SU(2) lifts: U s_k U^dag = sum_j R_jk s_j exactly for both generators
+PASS D3 no invariant axis: Rz n = +-n and Rx n = +-n force n = 0 in all four sign cases
+PASS D4 the real commutant of {Rz,Rx} in M_3(R) is R*1: the vector rep is R-irreducible
+PASS D5 exactly two rotation-equivariant unital real automorphisms of M_2(C): id and alpha
+PASS D6a alpha is an involution, is antilinear, and equals M -> s2 conj(M) s2 on the basis
+PASS D6b alpha: odd part span_R{s1,s2,s3,i1}; even part span_R{1,is1,is2,is3} is quaternionic
+PASS E1 exact CAR for the family {c_x}: {c_x,c_y}=0 and {c_x,cd_y}=delta_xy on all 9 pairs
+PASS E2 P c_x P = -c_x and P n_x P = n_x; even one-site elements commute across sites
+PASS E3a the order [2,0,1] family also satisfies CAR; the intertwiner space is 1-dimensional
+PASS E3b the intertwiner is even ([W,P]=0), nonzero, and W W^dag is a multiple of 1
+PASS E4 the ladder fixes its axis: (n.s)E01(n.s) = -E01 with real unit n exactly at n = +-e3
+PASS E5 every parity-diagonal state annihilates every odd element (all 32 odd strings)
+PASS E6 kappa even part span{1,n_x} commutes, n_x^2=n_x, spectrum {0,1}; odd part {c_x,cd_x}
+PASS E7 commuting ladders break the graded relation; site-local {f_0,f_1}=0 forces f_0 f_1 = 0
+PASS F1 six Majoranas on C^8 are Hermitian with {g_a,g_b} = 2 delta_ab
+PASS F2 the 64 products g_S are R-independent: real dimension 64 against 32 for M_4(C)
+PASS F3 the Hermitian site generators anticommute across the two sites: {g_j, g_k} = 0
+PASS F4 one-site even Hermitian elements are scalars: the bivector coefficients vanish
+PASS F5 i g_j g_k across sites is Hermitian, nonzero, even for G = (-i)^3 g1..g6, G^2 = 1
+PASS G1 H_hop and H=0 are both even and distinct; expectations 0 and 1 on two parity states
+PASS H1 both local structures share the same 32-dim even and 32-dim odd subspaces of M_8(C)
+PASS H2 2x2x2 cube: 12 nearest-neighbour bonds, at most 7 order-adjacent under any total order
+PASS H3 three-Majorana bilinears: su(2) per site, Hermitian, S^2=3/4, even, commuting across sites
+SUMMARY: same one-site data, two compositions; the graded product is order-free, its parity axis is the ladder's own, the covariant grading is antilinear.
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

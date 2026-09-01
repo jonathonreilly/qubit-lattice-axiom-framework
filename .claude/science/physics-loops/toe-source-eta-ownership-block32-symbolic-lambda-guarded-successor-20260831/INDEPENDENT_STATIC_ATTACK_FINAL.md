@@ -5,7 +5,7 @@ and not an audit verdict.  Three independent workers attacked the algebra,
 factor tensorization, exact geometry, guard/STOP semantics, autonomy boundary,
 no-go discipline, primitive scope, and portfolio ranking.  The final reviewed
 logic snapshot is
-`b47d9ea69a6bf55e4cfcc9c878125fcc53275495099d0167106babdcd2916b60`.
+`56b670f0e112150398af9bbe53bd71f6a03859f6349659fffaf8e7809fbf0a97`.
 
 ## Attacks that changed the evidence
 
@@ -71,6 +71,11 @@ logic snapshot is
   exact rejected count and list any survivor.  The final designated gate still
   requires all 68 booleans.  This reporting-only change has a projected green
   stdout size of 5,908 bytes.
+- The 26 content-bound inputs are declared as a literal tuple in the same order
+  as the frozen direct/packet dictionaries, and `frozen_hashes_ok` checks that
+  equality.  This is semantically identical to the original computed tuple but
+  is statically discoverable by the repository cache and forensic-readiness
+  tooling.
 
 ## No-go and primitive boundary
 

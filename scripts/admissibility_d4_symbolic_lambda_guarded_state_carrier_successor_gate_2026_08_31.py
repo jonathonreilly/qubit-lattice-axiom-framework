@@ -60,7 +60,7 @@ FROZEN = {
     "ASSUMPTIONS_AND_IMPORTS.md": "a859a76ab6302a18309010aeda623ae1ce465dc5202d06703677e72faefde6d2",
     "AUTHORITY_GATE.md": "11f8a4aac8abf2f4fc20487ae32f31286aa8ea5cd639f8432c7ae423d34a07b3",
     "GOAL.md": "ced16d93416cbf5d796ede80ff596d528568da11e73490d27cec64a8ef099c0c",
-    "INDEPENDENT_STATIC_ATTACK_FINAL.md": "88ff1585ec2163f3791986365e1d41d2e39b172175d99b56478667ff218cd602",
+    "INDEPENDENT_STATIC_ATTACK_FINAL.md": "f733b82f3a95b1bf84feeec13013ba0e25818bc0f2b5ef140926809cb6ecd638",
     "MUTATION_PLAN.md": "fb97cb2d9666af285d7bf7c7ffa41a647e66a18204b2dc895a78308807eaa79f",
     "NO_GO_DISCIPLINE_CHECKLIST.md": "8346adb405261e1156443ba5446f1385a61f76cafbf7c09c383dea713140d1a8",
     "OPPORTUNITY_QUEUE.md": "62ec71b5d43af58f917ba7c27b0f3b01c490dd2bc3ca2ff3790c0fcc0ba012cf",
@@ -72,9 +72,36 @@ FROZEN = {
     "TRACE_GATE.md": "aab76badeba4fe723c0d7c72d5de5d541d659ee3d105a7cdda1f8e062289c3c1",
 }
 
-AUDIT_INPUT_PATHS = tuple(DIRECT_HASHES) + tuple(
-    f"{PACKET_REL}/{name}" for name in FROZEN
-) + (f"{PACKET_REL}/RUNNER_SOURCE_PIN.md",)
+# Keep this declaration literal: the repository cache/forensic tooling parses
+# runner source without importing or executing it.
+AUDIT_INPUT_PATHS = (
+    "scripts/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30.py",
+    "scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py",
+    "scripts/admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30.py",
+    "scripts/admissibility_d4_output_conditioned_pair_successor_handoff_gate_2026_08_31.py",
+    "scripts/admissibility_d4_nn_record_relation_transducer_dispatch_gate_2026_08_31.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/APPROACH_REGISTRY.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/ARTIFACT_PLAN.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/ASSUMPTIONS_AND_IMPORTS.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/AUTHORITY_GATE.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/GOAL.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/INDEPENDENT_STATIC_ATTACK_FINAL.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/MUTATION_PLAN.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/NO_GO_DISCIPLINE_CHECKLIST.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/OPPORTUNITY_QUEUE.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/PANEL_RETURN.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/PREFLIGHT_WITNESSES.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/PREREG_AMENDMENT_UNCOMPUTE_ORDER.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/ROUTE_PORTFOLIO.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/STATE.yaml",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/TRACE_GATE.md",
+    ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/RUNNER_SOURCE_PIN.md",
+)
 
 Coord = tuple[int, int, int]
 ZERO: Coord = (0, 0, 0)
@@ -146,8 +173,12 @@ def runner_source_pin_ok() -> bool:
 
 
 def frozen_hashes_ok() -> bool:
+    expected_inputs = tuple(DIRECT_HASHES) + tuple(
+        f"{PACKET_REL}/{name}" for name in FROZEN
+    ) + (f"{PACKET_REL}/RUNNER_SOURCE_PIN.md",)
     return (
         "PENDING" not in set(DIRECT_HASHES.values()) | set(FROZEN.values())
+        and AUDIT_INPUT_PATHS == expected_inputs
         and all(file_sha256(ROOT / name) == digest for name, digest in DIRECT_HASHES.items())
         and all(file_sha256(PACKET / name) == digest for name, digest in FROZEN.items())
         and runner_source_pin_ok()

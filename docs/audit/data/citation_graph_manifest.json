@@ -1,6 +1,6 @@
 {
- "edge_count": 16290,
- "node_count": 5671,
+ "edge_count": 16299,
+ "node_count": 5672,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1097,6 +1097,10 @@
   "admissibility_proper_cubic_spatial_plaquette_record_coframe_palatini_curvature_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "022d3c76d3f4",
    "out_degree": 3
+  },
+  "admissibility_random_axis_m2_matter_repeat_selector_local_compiler_bounded_theorem_note_2026-09-01": {
+   "deps_hash": "12c833bc5561",
+   "out_degree": 9
   },
   "admissibility_raw_graph_ward_compact_pullback_translation_generator_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "35e0d0d4cede",

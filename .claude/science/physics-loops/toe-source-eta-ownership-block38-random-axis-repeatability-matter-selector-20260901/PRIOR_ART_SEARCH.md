@@ -38,7 +38,8 @@ ledger shards, and the current stacked tree.
 
 Open after matched-hit review. Static repeatability and standalone attachment
 are already proven conditionally, so neither is novel. No matched source
-constructs the recorded-Haar-axis binary factorization, physical successor
-attachment, causally independent second same-axis use, and Block-37
+constructs the recorded-Haar-axis binary factorization, candidate successor
+under stipulated Record-faithful attachment, causally independent second
+same-axis use, and Block-37
 generator/M/S/finite-cylinder preservation in one source-bound local process.
 That conjunction is the only allowed novelty claim.

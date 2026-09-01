@@ -5,7 +5,7 @@ and not an audit verdict.  Three independent workers attacked the algebra,
 factor tensorization, exact geometry, guard/STOP semantics, autonomy boundary,
 no-go discipline, primitive scope, and portfolio ranking.  The final reviewed
 logic snapshot is
-`180e7f9142750b4b09d5ea177b5da700211a8552399bfeb01da44d073250e8b6`.
+`b47d9ea69a6bf55e4cfcc9c878125fcc53275495099d0167106babdcd2916b60`.
 
 ## Attacks that changed the evidence
 
@@ -66,6 +66,11 @@ logic snapshot is
   first marginal, and `Pr(D_1 and D_2)=((1+3 lambda)/4)^2`.
 - Mutation cardinality is exact: 49 construction/claim mutations plus 19 scope
   promotions equals 68.
+- To satisfy the 6,000-byte runner-stdout ceiling, the 49 construction
+  mutations remain individually named while the 19 scope mutations emit one
+  exact rejected count and list any survivor.  The final designated gate still
+  requires all 68 booleans.  This reporting-only change has a projected green
+  stdout size of 5,908 bytes.
 
 ## No-go and primitive boundary
 

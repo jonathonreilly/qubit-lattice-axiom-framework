@@ -60,7 +60,7 @@ FROZEN = {
     "ASSUMPTIONS_AND_IMPORTS.md": "a859a76ab6302a18309010aeda623ae1ce465dc5202d06703677e72faefde6d2",
     "AUTHORITY_GATE.md": "11f8a4aac8abf2f4fc20487ae32f31286aa8ea5cd639f8432c7ae423d34a07b3",
     "GOAL.md": "ced16d93416cbf5d796ede80ff596d528568da11e73490d27cec64a8ef099c0c",
-    "INDEPENDENT_STATIC_ATTACK_FINAL.md": "f16339ee7dcd16029d157e0efea719af197336939e3f5b0ea92544335e759c45",
+    "INDEPENDENT_STATIC_ATTACK_FINAL.md": "88ff1585ec2163f3791986365e1d41d2e39b172175d99b56478667ff218cd602",
     "MUTATION_PLAN.md": "fb97cb2d9666af285d7bf7c7ffa41a647e66a18204b2dc895a78308807eaa79f",
     "NO_GO_DISCIPLINE_CHECKLIST.md": "8346adb405261e1156443ba5446f1385a61f76cafbf7c09c383dea713140d1a8",
     "OPPORTUNITY_QUEUE.md": "62ec71b5d43af58f917ba7c27b0f3b01c490dd2bc3ca2ff3790c0fcc0ba012cf",
@@ -2792,8 +2792,31 @@ def main() -> int:
         "NN compilation/dilation, physical side hardware/equivalence, reversible autonomy, renewal, pair source, gravity, axioms, audit, obligations, and scores remain open",
     )
     mutations = mutation_rejections()
-    for name, rejected in mutations.items():
+    construction_mutations = {
+        name: rejected
+        for name, rejected in mutations.items()
+        if not name.startswith("scope_")
+    }
+    scope_mutations = {
+        name: rejected
+        for name, rejected in mutations.items()
+        if name.startswith("scope_")
+    }
+    for name, rejected in construction_mutations.items():
         print(f"MUTATION {'REJECTED' if rejected else 'SURVIVED'} {name}")
+    surviving_scope = tuple(
+        name for name, rejected in scope_mutations.items() if not rejected
+    )
+    print(
+        "MUTATION SCOPE "
+        + ("REJECTED" if not surviving_scope else "SURVIVED")
+        + f" rejected={sum(scope_mutations.values())}/{len(scope_mutations)}"
+        + (
+            " survived=none"
+            if not surviving_scope
+            else " survived=" + ",".join(surviving_scope)
+        )
+    )
     checks.check(
         "designated_mutations",
         len(mutations) == 68 and all(mutations.values()),

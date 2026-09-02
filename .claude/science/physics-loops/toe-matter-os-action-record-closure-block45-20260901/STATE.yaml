@@ -1,0 +1,17 @@
+campaign: toe-matter-os-action-record-closure-block45-20260901
+status: preregistered
+branch: physics-loop/toe-matter-os-action-record-closure-block45-20260901
+parent_head: 2cea9a595ee2f0a6c47096de6f821b905182f48c
+origin_main_observed: 2cea9a595ee2f0a6c47096de6f821b905182f48c
+minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
+block44_checkpoint: 73eccf9394
+target: exact_two_slice_Berezin_action_to_Fock_transfer_to_current_to_Record_decision_surface
+expected_best_outcome: NEW_CONDITIONAL_ACTION_TO_OPERATOR_CONNECTOR
+hard_impact_gate: pending
+shipping_decision: pending
+review_loop_used: false
+audit_status: unset
+obligation_retirement: 0
+toe_percentage_movement: 0
+lock_owner: codex-toe-matter-os-action-block45
+next_action: execute_source_bound_C4_action_to_GammaK_to_reconstructed_CAR_transfer

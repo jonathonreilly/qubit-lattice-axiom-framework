@@ -1,0 +1,26 @@
+loop_slug: toe-gauge-instrument-generator-closure-block54-20260902
+mode: campaign
+target_status: best-honest-status
+started_at: 2026-09-02T20:10:45Z
+runtime_budget: 24h
+stop_at: 2026-09-03T20:10:45Z
+cycle: 1
+science_block: 54
+branch: physics-loop/toe-gauge-instrument-generator-closure-block54-20260902
+base: origin/main@36fe57a7a784df31bc2178c4b94dfc7caaa5d094
+worktree: /private/tmp/toe-joint-carrier-block53.zr9KBH/worktree
+lock_mode: cooperative
+lock_owner: codex-root-toe-gauge-normalization-block54
+lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
+goal: derive the pure-gauge same-operator normalization bridge or the minimal physical-law cut
+active_route: exact electric/magnetic quadratic-form bridge on one native Hilbert carrier
+hard_residual: independently force the relative electric/magnetic coefficient rather than name g=1, beta=6, unit variance, or a same-slot convention
+target_contract_status: preregistered
+trace_gate_classification: registered_parent_obligation
+review_loop: explicitly_disabled_by_user
+obligation_retirement: 0
+toe_percentage_movement: 0
+files_touched:
+  - .claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/
+next_exact_action: construct the general two-coefficient canonical gauge Hamiltonian and test every authorized structural premise for coefficient selection
+stop_condition: runtime exhausted, a promotion-grade positive theorem is packaged, or the refreshed nonconflicting queue is globally exhausted

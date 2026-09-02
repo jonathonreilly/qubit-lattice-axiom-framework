@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/cubic_response_even_sector_hopping_relocation_check_2026_09_01.py
+runner_sha256: a738a4a493dac1039e783aa0722640471b9d7192af00a01208dc1eb109545066
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+PASS A1 the closure of Rz, Rx is 24 integer rotations of determinant +1; each permutes the six directed unit vectors, and R -> Pi_R is an injective homomorphism onto a 6x6 permutation group of order 24
+PASS A2a equivariant real-linear L(c) = alpha(c)1 + beta(c).Gamma with Gamma_mu = s_mu (24 real unknowns, {Gamma_mu,Gamma_nu} = 2 delta 1): the solution space has real dimension exactly 2 and is spanned by alpha = (1,...,1), beta = 0 and alpha = 0, beta = the direction matrix
+PASS A2b both displayed maps are equivariant for all 24 rotations: (1,...,1) Pi_R = (1,...,1) and D Pi_R = R D, where the columns of D are the six directions, so F(c) = a[sum_d c_d]1 + b sum_mu (c_{+mu} - c_{-mu}) Gamma_mu
+PASS A3a spectral projectors of F = m1 + t(n_hat.Gamma), t nonzero: P_pm = (1 pm n_hat.Gamma)/2 are polynomials in F and F is their combination, and [P_pm, s3] = pm i(n2 s1 - n1 s2) vanishes exactly when n1 = n2 = 0, i.e. the vector part is parallel to e_3
+PASS A3b witnesses: at c = e_{+1} the projectors of F are (1 pm s1)/2, rank one and NOT commuting with s3; at c = e_{+3} they are E00, E11, rank one and commuting with s3
+PASS B1 even faithfulness: requiring the nontrivial rank-one spectral projectors to be parity-even at c = e_{+1} and c = e_{+2} gives b(c_{+1}-c_{-1}) = 0 and b(c_{+2}-c_{-2}) = 0, whose unique solution is b = 0, leaving F(c) = a[sum_d c_d]1
+PASS B2 scalar point (a,b) = (-1,0) with c_d = u_d - u_0: F = -[sum_d c_d]1 = -(graph Laplacian at the center)1, commuting with s3 and with every even x(1-n)+yn; it has a single eigenvalue of multiplicity 2, so its spectral projector is 1 of rank 2 and carries no rank-one content
+PASS C1 Jordan-Wigner on {-e_1, 0, +e_1} (indices 0,1,2, center 1): the CAR hold on C^8, the hopping bilinears c_1^dag c_0 and c_1^dag c_2 commute with the total parity s3(x)s3(x)s3 and with the number operator, and on the one-particle subspace they are exactly the matrix units E_{1,0} and E_{1,2}
+PASS C2a equivariant real-linear M : R^6 -> Herm(7) valued in the 12-dimensional hopping span (72 real unknowns): the solution space has real dimension exactly 6, NOT 2; the real commutant of the directed-neighbor permutation rep is span{1, S, J} of dimension 3 (S the inversion d -> -d, J all-ones) and it acts in both the symmetric and the directed channel
+PASS C2b H_A(c) = sum_d c_d (E_{0,d} + E_{d,0}) and H_T(c) = i sum_d c_d (E_{0,d} - E_{d,0}) are Hermitian and equivariant for all 24 rotations, and both lie in the 6-dimensional solution space
+PASS C2c edge reversal E_{0,d} <-> E_{d,0} is transposition: H_A(c)^T = H_A(c) is even and H_T(c)^T = -H_T(c) is odd. Under the input inversion S alone, with the site labels held fixed, neither is even or odd on all of R^6; H_A is even on S-symmetric inputs and H_T odd on S-antisymmetric inputs
+PASS C3a directed input c = e_{+1} - e_{-1}: H_T(c) = i(E_{0,+1} - E_{+1,0} - E_{0,-1} + E_{-1,0}) and (H_T psi)_0 = i(psi_{+1} - psi_{-1}), the centered first-order difference along direction 1, with no internal Clifford factor
+PASS C3b ring symbols: on the L = 3 and L = 4 rings the directed hop i sum_j (E_{j,j+1} - E_{j+1,j}) has eigenvalue multiset {2 sin(2 pi m/L)} and the symmetric hop sum_j (E_{j,j+1} + E_{j+1,j}) has {2 cos(2 pi m/L)}; on L = 4 the plane wave i^{mj} has eigenvalues -2 sin(pi m/2) and 2 cos(pi m/2)
+PASS C4 3x3x3 block, 27-site single-particle sector, open boundary: the three first-difference operators D_mu = i sum_x (E_{x,x+e_mu} - E_{x+e_mu,x}) are Hermitian, commute pairwise, have nonvanishing anticommutators, and D_1^2 + D_2^2 + D_3^2 is not a multiple of 1, its diagonal being the four coordination numbers 3, 4, 5, 6 of the open block with trace 108, so no Clifford relation arises from the hopping channels alone
+SUMMARY: the two-parameter cubic classification is reconfirmed at one site; under the declared grading hypothesis even faithfulness forces b = 0 and leaves a graph-Laplacian-type scalar with no rank-one content; the first-order directed response reappears in the hopping channel, whose equivariant space has real dimension 6 rather than 2, carries sin k per direction with no internal Clifford factor, and yields commuting D_mu on the cube.
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

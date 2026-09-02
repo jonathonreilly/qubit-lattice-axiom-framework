@@ -1,10 +1,13 @@
 # PR backlog
 
-Default disposition: `BACKLOG_NO_PR`.
+Disposition: `BACKLOG_NO_PR`.
 
-A PR becomes eligible only if exact execution and all mutations pass, the
-coherent boundary map is genuinely derived from the action, and strict review
-finds V1-V6 all satisfied.  Correct algebra without a reduced open prerequisite
-is insufficient.  Any eligible PR remains a bounded conditional science
-proposal and authors no audit verdict, axiom adoption, obligation retirement,
-or TOE-score movement.
+Exact execution and all mutations pass, but V2, V3, and V5 do not.  The
+cross-boundary coefficients are genuinely derived; their correct OS type is
+Gram data, not a nontrivial time-translation operator.  A longer translated
+Gram construction is already repo-native prior art, and the physical-action,
+temporal-extension, I-4, and Record-formation imports do not shrink.
+
+The runner and packet are preserved as a regression against Gram/transfer
+index conflation.  No PR is opened, and no audit verdict, axiom adoption,
+obligation retirement, or TOE-score movement is authored.

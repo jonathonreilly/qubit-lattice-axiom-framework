@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/born_form_parity_even_readable_algebra_check_2026_09_01.py
+runner_sha256: 4343690f6342ca9f2c4be19888a7eabe7ddef77c25703dc07311aec6cf27d946
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.13
+status: ok
+----- stdout -----
+PASS A1a even part of M_2(C) = commutant of s3 = span{1,n}, complex dimension 2
+PASS A1b even Hermitian X = a(1-n)+bn has spec {a,b}, and 1-X has spec {1-a,1-b}: 0 <= X <= 1 exactly when a, b are in [0,1]
+PASS A2 P = P^2 = P^dagger with [P,s3] = 0 has exactly four solutions; the rank-one ones are exactly n and 1-n
+PASS A3a m(a(1-n)+bn) = a(1-p)+bp = Tr(diag(1-p,p) E): additive on every grid pair with E+F <= 1, normalized at m(1) = 1, nonnegative on the grid
+PASS A3b converse on the dyadic grid: additivity plus m(1) = 1 determines m at every grid point from m(n) alone, one free parameter
+PASS A4a one site: the trine (2/3)P(n_k) resolves 1 in M_2(C), each rank one and no projector, and exactly one of the three is parity-even
+PASS A4b no even trine: every rational triple of scaled even rank-one effects summing to 1 repeats a direction (30 solutions, none with three distinct directions)
+PASS A4c the rogue g = 1/2 + n_z^3/2 obeys g(n) + g(-n) = 1, equals Tr(diag(1,0)P(n)) at the even directions +-z (1 and 0), and differs off them (9/16 against 3/4)
+PASS B1a the commutant of P = s3(x)s3 has complex dimension 8, vanishes on all eight cross-block entries, and is spanned by the eight in-block matrix units
+PASS B1b the parity-basis block map M_2(C)(+)M_2(C) -> commutant(P) is a unital *-isomorphism onto the even subalgebra (multiplicative, additive, adjoint-compatible, symbolic blocks)
+PASS B2a parity-diagonal Hermitian sigma is exactly sigma_+ (+) sigma_-, 8 real parameters; E -> Tr(sigma E) is additive, gives Tr(sigma) at E = 1, splits as Tr(s_+ E_+) + Tr(s_- E_-), and Tr(AA^d BB^d) = sum |(B^d A)_ij|^2 >= 0
+PASS B2b every linear functional on the 8-dimensional even algebra is Tr(sigma .) for exactly one even sigma: the 8-by-8 trace-pairing system has a unique solution
+PASS B2c rank-one test on a block: Q = r + 2(x z1 - y z2) + s(z1^2 + z2^2) and s Q = (s z1 + x)^2 + (s z2 - y)^2 + (rs - x^2 - y^2), so Q >= 0 for every v is exactly r, s >= 0 with rs >= x^2 + y^2
+PASS B3 the even projector Q onto (|01>+|10>)/sqrt2 commutes with P, gives Born values 1, 1/2, 0 in the states Q, |01><01|, |00><00|, and fails to commute with |01><01|
+PASS B4a the trine relocates: (2/3)P(n_k) built inside the odd-parity block are even effects of spectrum {0,2/3}, pairwise non-proportional, resolving that block's 1
+PASS B4b none of the three even effects is a projector, and none lies in the span of the one-site images (rank 7 -> 8): the effect-projector gap is two-site content
+PASS C1 for every parity-diagonal trace-one sigma the marginal at each site is diag(1-p,p) with p = Tr(sigma n_x), and its odd part vanishes (s1, s2 zero)
+PASS C2 a record locking n_x = 1 (n_x sigma = sigma, Tr sigma = 1) gives Born value exactly 1 on n_x and exactly 0 on 1 - n_x: a Kronecker delta on the even readout
+PASS C3 every parity-diagonal sigma = P+ X P+ + P- Y P- annihilates all eight odd two-site Pauli strings (odd s1/s2 count) while even strings take nonzero values
+SUMMARY: at one site the parity-even readable algebra carries a one-parameter Bernoulli Born form with no trine and no rogue; the effect structure and the noncommutative trace form live at two sites.
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

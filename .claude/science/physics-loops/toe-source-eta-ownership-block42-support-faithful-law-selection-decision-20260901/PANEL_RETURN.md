@@ -35,3 +35,14 @@ Run Block 42. Its honest best outcome is `AXIOM_DECISION_READY`, which is more
 central than further W3 plumbing and more actionable than synthetic model
 selection. Do not edit the governing axiom memo until the theorem has passed
 and the owner can see exactly what the added sentence commits the framework to.
+
+## Post-prereg hostile correction
+
+The panel's statement that the two endpoints have “equal collision behavior”
+was too broad. It holds only on an untyped label quotient or under a separately
+proved global codec conjugacy. The literal Block-38 carrier fixes `n=b a` and
+the record-faithful successor `M=rho_n`; the anti-oriented endpoint instead
+produces `rho_-n`. Its full typed transcript is therefore separated before a
+collision test. Execution must score the original sign-twin hard-impact row as
+falsified, preserve only the outcome-forgotten/fixed-axis-label quotient, and
+must not promote the panel's pre-execution expectation.

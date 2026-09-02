@@ -1,6 +1,6 @@
 campaign: toe-ac-occupancy-grain-target-correctness-block51-20260902
 block: 51
-phase: preregistered_panel_pending
+phase: preexecution_amended_ready
 base_ref: origin/main
 base_commit: 36fe57a7a784df31bc2178c4b94dfc7caaa5d094
 branch: physics-loop/toe-ac-occupancy-grain-kill-or-close-block51-20260902

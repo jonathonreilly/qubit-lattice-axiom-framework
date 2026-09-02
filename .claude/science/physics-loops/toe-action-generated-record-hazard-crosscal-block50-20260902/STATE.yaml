@@ -1,0 +1,21 @@
+campaign: toe-action-generated-record-hazard-crosscal-block50-20260902
+block: 50
+phase: preregistration
+base_ref: origin/main
+base_commit: 2cea9a595ee2f0a6c47096de6f821b905182f48c
+branch: physics-loop/toe-action-generated-record-hazard-crosscal-block50-20260902
+target_claim_type: bounded_theorem
+actual_current_surface_status: unexecuted
+target_claim_id: action_transfer_record_race_content_crosscal
+trace_class: direct_blocker_closure
+target_blocker_text: derive one action/transfer-to-permanent-Record marked-intensity bridge
+source_of_blocker_text: Source/Eta Block20 handoff
+reachability_to_target: unknown
+proposal_allowed: false
+review_loop_allowed: false
+audit_status: unset
+obligation_retirement: 0
+toe_percentage_movement: 0
+gravity_paths_touched: 0
+pr_status: none
+next_action: commit preregistration before primary runner implementation

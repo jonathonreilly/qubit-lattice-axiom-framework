@@ -1,0 +1,20 @@
+campaign: toe-source-eta-ownership-block43-matter-record-grading-compatibility-decision-20260901
+status: preregistered
+branch: physics-loop/toe-source-eta-ownership-block43-matter-record-grading-compatibility-decision-20260901
+parent_head: 26209dd0d09a58dc5a4fb21358968d4acefb5885
+origin_main_observed: 2cea9a595ee2f0a6c47096de6f821b905182f48c
+minimal_axioms_blob: bc23300becfe4e4db57153c0e94cfcdf2338da71
+pr7827_head_observed: 17357c3714c3b3196c6b8fdc9b1a3bb300044181
+pr7829_head_observed: 551dfd9f317a36db050dffa0d717764f9af9f291
+pr7830_head_observed: f8581d80efdd0856aa1a64078a48931a763765e9
+target: same-carrier grading/Record compatibility, two-mode even repair, and typed owner decision
+expected_best_outcome: AXIOM_DECISION_READY
+hard_impact_gate: pending
+shipping_decision: pending
+governing_minimal_axioms_edited: false
+review_loop_used: false
+audit_status: unset
+obligation_retirement: 0
+toe_percentage_movement: 0
+lock_owner: codex-toe-matter-record-compatibility-block43
+next_action: commit_and_push_preregistration_then_execute_exact_runner

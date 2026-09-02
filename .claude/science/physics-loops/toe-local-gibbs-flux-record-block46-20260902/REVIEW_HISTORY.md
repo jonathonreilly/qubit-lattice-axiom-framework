@@ -19,4 +19,14 @@
 - The panel also required all `3^6` partial neighboring Record conditions,
   same-carrier permanence failure, a leaf-cycle sharpness mutation, and an
   explicit full-global-Gibbs countercheck.
+- Postexecution review found the frozen edge-factor temperature and blank
+  semantics false as written. The final theorem records both deviations and
+  replaces them with separate edge temperature, a complete binary law, and an
+  explicit ternary blank-state model.
+- The panel further forced an on-lattice plaquette, an actual signed-adjacency
+  `dGamma` lift, exact evolution-to-PVM branch weights, finite-cube boundary
+  isolation, unrecorded source typing, same-site post-write gating, and full
+  rotational gauge covariance.
+- Final independent algebra verdict: hard pass. Final portfolio verdict:
+  corrected bounded theorem / backlog, no standalone PR.
 - `review-loop` was not used and will not be used.

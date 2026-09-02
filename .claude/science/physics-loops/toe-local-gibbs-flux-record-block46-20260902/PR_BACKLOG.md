@@ -1,6 +1,10 @@
 # PR backlog
 
-No PR planned. Reconsider only if postexecution V1--V5 and N1--N8 both pass,
-the result has a direct nonduplicative consumer, all mutations are killed, and
-the user separately asks for landing work. `review-loop` remains prohibited.
+Disposition: `BACKLOG_NO_PR`.
 
+All mathematical and scope mutations are killed and PR `#7832` is a direct
+consumer, but V1 fails and V3/V5 are only partial. Reconsider packaging only as
+part of a later homogeneous-lattice positive bridge that removes boundary
+isolation or actually reduces the physical action/protocol premise.
+
+`review-loop` remains prohibited and was not used.

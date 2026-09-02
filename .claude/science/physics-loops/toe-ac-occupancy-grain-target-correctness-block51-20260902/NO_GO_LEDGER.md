@@ -62,3 +62,19 @@ Check the June power-not-count result, July realification/Pfaffian result, July
 spectral-pairing/Berezin neutrality results, July 24 2+2 exercise, and the
 August 13 premise reset.  Record whether the result is new science or promotion
 of an already-known but unpropagated correction.
+
+## Post-execution disposition
+
+The current-authority/global-common-power statement passes N1--N8 only after
+demotion to `partial-narrowing`.  A universal no-go fails because the
+sector-local physical action route is concrete and unclosed.
+
+- six normalized alternative families are recorded in the landing source;
+- five physical/operational/governance routes remain open;
+- the only retired stand-alone family is global determinant power as a
+  relative-support selector;
+- the primitive registry was checked directly;
+- the N5 five-resolution execution certificate is in cached primary stdout.
+
+The full committed N1--N8 record is in
+`docs/AC_OCCUPANCY_GRAIN_SUPPORT_TYPED_FORMAL_TARGET_REPAIR_BOUNDED_THEOREM_NOTE_2026-09-02.md`.

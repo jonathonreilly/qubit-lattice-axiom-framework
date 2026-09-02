@@ -1,18 +1,18 @@
 # Approach registry
 
-| ID | Route | Decisive test | Pre-execution disposition |
-|---|---|---|---|
-| A0 | derive the selector from the four axioms and three primitives | source-authority inventory | attempt; kill on conservative extensions |
-| A1 | physical complex CAR/Berezin action | derive one physical copy and its measure | live positive route |
-| A2 | physical conjugate-doubled action | derive an independent conjugate copy rather than rename coordinates | live positive route |
-| A3 | K-orbit quotient event measure | construct the physical channel set and induced Record event partition | highest-value corrected route |
-| A4 | full channel-atom event measure | same construction, opposite horn | equally acceptable positive answer |
-| A5 | Majorana/Pfaffian physical action | derive a true reality constraint and measure | live; must not be conflated with coordinates |
-| A6 | graded-composition route | test whether composition also fixes action, measure, and event grain | open PR prior art; likely insufficient alone |
-| A7 | operational writer discriminator | distinguish one orbit event from two channel events using Records | live empirical/constructive route |
-| A8 | determinant-power route | compare sector-degree ratios | exact falsifier for present target wording |
-| A9 | current Admissibility menu | resolve its alternatives into K isotypes and count support | live only if a physical rule instantiation exists |
-| A10 | owner-approved narrow primitive | explicit governance choice | escape route, not derivation |
+| ID | Object / mechanism / terminal obligation | Strength vs target | Post-execution status | Concrete evidence / reopen condition |
+|---|---|---|---|---|
+| A0 | foundation inventory / conservative extension / derive selector from current premises | weaker | **retired** | registry and all current source notes checked; no action, measure, K/CPT codec, or selector is declared |
+| A1 | complex CAR carrier / Berezin integration / derive one physical action and measure | unknown/comparable | **active; next campaign** | exact one-copy algebra passes; reopen condition is a star-preserving lattice-carrier inclusion and measure pushforward |
+| A2 | conjugate-doubled carrier / independent field copy / derive physical exponent two | unknown/comparable | **provisional** | exact doubled construction exists conditionally; reopen only with independent physical-field derivation |
+| A3 | K-orbit quotient / induced event pushforward / derive one doublet orbit cell | target-equivalent | **blocked-equivalent** | orbit census is exact; terminal physical event quotient remains the target |
+| A4 | full channel atoms / physical event measure / derive two doublet channel cells | target-equivalent | **blocked-equivalent** | opposite horn remains equally admissible until action/event theorem |
+| A5 | Majorana carrier / star-compatible reality and Pfaffian / derive physical polarization | unknown/comparable | **provisional** | coordinate rewriting preserves power one; reopen with a derived reality constraint |
+| A6 | graded composition / selected generator / derive action, measure, and event grain | weaker | **blocked-local** | open-PR composition surfaces select no dynamics; reopen only if a new selected generator lands |
+| A7 | repeated Records / odds exponent / discriminate one factor from two | weaker | **provisional** | conditional ratios `2` versus `4` exact; needs controlled writer and action-to-probability bridge |
+| A8 | determinant support ray / projective invariant / select grain from global power | weaker | **retired as stand-alone selector** | global `(1,2)->(2,4)` is exactly neutral; reusable only after sector-local physical typing |
+| A9 | concrete Admissibility menu / K-isotype resolution / count physical alternatives | unknown/comparable | **unexplored** | reopen when a current physical rule instantiation supplies the menu |
+| A10 | premise registry / owner governance / register narrow physical clause | target-equivalent | **provisional governance route** | no silent import; explicit owner wording and registry update required |
 
 No route is declared globally impossible.  The campaign may only prune routes
 at the stated authority and construction scope.

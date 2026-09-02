@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/lueders_one_site_record_cell_check_2026_09_01.py
+runner_sha256: b0a8ea28a07469582a751427be35db8068ba76581b782148d4e9a9b9b7b2645a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+PASS A1a rank-one locked output P = |1><1|: range(K) in P forces K = |1><v| with <v| = (K10, K11), four free real parameters, E = K^dag K = |v><v|, and K rho K^dag = Tr(E rho) P for every symbolic Hermitian rho
+PASS A1b evenness s3 K s3 = K on top of range(K) in P forces v0 = 0, i.e. K = c n with two free real parameters; for any family K_j = c_j n the effect is E_P = (sum_j |c_j|^2) n = lambda P with lambda a sum of squares, so lambda >= 0
+PASS A2 exhaustive even instrument on the one-site cell, outputs P_1 = n and P_0 = 1-n: the effects are lambda_1 n and lambda_0 (1-n) by A1b and A3a, and the completeness equation has the unique solution lambda_1 = lambda_0 = 1, so E_P = P at both outputs
+PASS A3a the even output P = 1-n by the same route: range(K) in P with s3 K s3 = K forces v1 = 0 and K = c (1-n), two free real parameters, E_P = |c|^2 (1-n) = lambda P
+PASS A3b the evenness is load-bearing: the odd instrument K_1 = |1><0| = c^dag, K_0 = |0><1| = c has ranges in P_1 = n and P_0 = 1-n and effects summing to 1, but s3 K s3 = -K and E_{P_1} = 1-n, E_{P_0} = n, i.e. E_P = 1-P at both outputs
+PASS A4a two-mode cell C^2 (x) K, K = C^2, output P = |1><1| (x) |1><1|: even Kraus operators with range in P are |11><v| with <v| in the +1 parity sector span{|00>,|11>} of dimension 2, so E_P is supported there and ranges over all of Herm of that sector, real dimension 4 -- exhibited by four such effects of real rank 4
+PASS A4b Lueders is not forced once the cell is larger than one site: two even instruments on C^2 (x) K, both with the outcome output P = |11><11| and both complete, carry the different effects E_P = P and E_P = |00><00| for that one output
+PASS B1a permanence for a recorded site, dim K = 2: the Hermitian solutions of [H, n (x) 1] = 0 are exactly (1-n) (x) B(K) (+) n (x) B(K), of real dimension 8 = 2 dim(K)^2, strictly containing 1 (x) B(K) of real dimension 4 = dim(K)^2 (n (x) 1 commutes and is outside)
+PASS B1b the same for dim K = 3: real dimension 18 = 2 dim(K)^2 against 9 = dim(K)^2 for 1 (x) B(K); the block-diagonal form and the strict containment are unchanged
+PASS B1c the parent's obstruction under the parent's own condition: if the recordable rank-one frames spanned M_2(C), permanence would read [H, X (x) 1] = 0 for all X, whose Hermitian solutions are exactly 1 (x) B(K), real dimension 4
+PASS B2a Jordan-Wigner two-mode cell, c_x = c (x) one, c_y = s3 (x) c: the pair anticommutes, n_x = c_x^dag c_x and n_y = c_y^dag c_y, and the hopping c_x^dag c_y + h.c. is Hermitian and parity-even yet fails to commute with n_x, while n_y and n_x n_y commute with n_x
+PASS B2b what an admissible H may still do: the phase term n_x, the density-density term n_x n_y and the record-conditioned action n (x) A for symbolic Hermitian A all commute with n_x, n_x being a projector, and n (x) s1 lies outside 1 (x) B(K), so the surviving freedom is strictly larger than an action on K alone
+PASS B3 the parent's spanning condition is false under the hypothesis: the recordable rank-one frames are n and 1-n, of rank 2, spanning the 2-dimensional even algebra span{1, n} and not M_2(C) of rank 4; adjoining the odd unit E01 raises the rank to 3, so the two-frame non-spanning case is the case the hypothesis delivers
+SUMMARY: on the one-site record cell parity-even outcome operations force the Lueders form E_P = P; on a two-mode cell they do not, a two-dimensional sector of effects remaining; and permanence for a recorded site is conservation of its occupation, a commutant of real dimension 2 dim(K)^2 rather than dim(K)^2.
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,26 @@
+loop_slug: toe-su3-a2-halfline-gap-block55-20260902
+mode: campaign
+target_status: best-honest-status
+started_at: 2026-09-02T20:35:43Z
+runtime_budget: 24h
+stop_at: 2026-09-03T20:35:43Z
+cycle: 1
+science_block: 55
+branch: physics-loop/toe-su3-a2-halfline-gap-block55-20260902
+base: origin/main@36fe57a7a784df31bc2178c4b94dfc7caaa5d094
+worktree: /private/tmp/toe-su3-halfline-block55.FMA9kX/worktree
+lock_mode: cooperative
+lock_owner: codex-root-toe-gauge-normalization-block54
+lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
+goal: close the native SU3 half-line transfer gap through an A2 reflection/local-CLT route or a valid compactness bypass
+active_route: exact killed-walk identification and finite-Weyl reflection formula
+hard_residual: uniform cancellation-aware local CLT and true outside-window control after the Weyl alternant
+target_contract_status: preregistered
+trace_gate_classification: registered_parent_obligation
+review_loop: explicitly_disabled_by_user
+obligation_retirement: 0
+toe_percentage_movement: 0
+files_touched:
+  - .claude/science/physics-loops/toe-su3-a2-halfline-gap-block55-20260902/
+next_exact_action: prove and independently validate the exact chamber-walk/reflection representation of every Wilson coefficient
+stop_condition: runtime exhausted, a promotion-grade half-line theorem is packaged, or every independent positive route is exhausted

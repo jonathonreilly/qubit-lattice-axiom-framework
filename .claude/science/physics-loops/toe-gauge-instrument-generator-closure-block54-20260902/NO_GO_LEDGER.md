@@ -1,6 +1,8 @@
 # No-Go Ledger
 
-No Block 54 no-go is currently asserted.
+Scoped Block 54 conclusion: the enumerated current pure-gauge structural premises do
+not select the Wilson same-slot point.  This is not a claim that no future physical
+law, calibration, or changed theory can select it.
 
 Existing scoped boundaries that must not be broadened:
 
@@ -12,3 +14,6 @@ Existing scoped boundaries that must not be broadened:
 
 If R1-R3 fail, N1-N8 will be run against the exact proposed negative wording before
 any source note is drafted.
+
+The completed gate is in `POSTEXECUTION_NO_GO_AUDIT.md`.  It authorizes only the
+scoped non-entailment sentence above.  No negative source payload is promoted.

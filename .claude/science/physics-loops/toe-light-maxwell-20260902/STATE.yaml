@@ -1,0 +1,47 @@
+campaign: toe-light-maxwell-20260902
+mode: campaign
+runtime_requested: 24h
+started_at_utc: 2026-09-02T19:39:06Z
+target_stop_at_utc: 2026-09-03T19:39:06Z
+checkpoint_interval: 30m
+current_origin_main: 36fe57a7a784df31bc2178c4b94dfc7caaa5d094
+current_branch: physics-loop/toe-light-maxwell-block53-20260902
+cycle: 1
+science_block: 53
+status: route_selected_and_preregistered
+target_status: best-honest-status
+active_route: compact_u1_wilson_to_source_free_maxwell
+approach_family_coverage:
+  - discrete_exterior_calculus
+  - compact_wilson_variation
+  - quadratic_fourier_kernel
+  - canonical_gauss_reduction
+strongest_unresolved_proof_obligation: >
+  Compose the exact compact-U(1) lattice identities, smooth zero-monopole
+  continuum bound, and physical two-mode reduction on one explicit carrier
+  without treating the Wilson source/action choice as axiom content.
+hard_residual: >
+  Separate what follows from any positive isotropic compact-U(1) plaquette
+  stiffness from the still-open framework selection of that stiffness and its
+  physical source/action identification.
+files_touched:
+  - .claude/science/physics-loops/toe-light-maxwell-20260902/
+open_imports:
+  - compact U(1) Wilson plaquette action as a supplied action surface
+  - physical identification of link phase/plaquette curvature as electromagnetism
+  - Record-readable field-strength bridge
+approved_primitives:
+  - kinetic_isotropy_primitive
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_loop: disabled_by_user
+review_disposition: direct_self_review_pending
+pr_status: preregistration_not_yet_pushed
+next_exact_action: >
+  Commit and push this preregistration, then implement the independent exact
+  runner for gauge invariance, compact Bianchi charge, Wilson variation,
+  continuum truncation, Hessian spectrum, Gauss reduction, and anisotropy.
+stop_condition: >
+  Continue through ranked non-fermion opportunities until the 24-hour budget
+  expires, unless a global ownership or tooling conflict prevents safe work.

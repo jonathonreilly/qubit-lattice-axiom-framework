@@ -1,7 +1,7 @@
 ---
 claim_id: composition_discriminator_record_statistics_bounded_theorem_note_2026-09-02
 claim_type: bounded_theorem
-claim_scope: "On four finite open clusters (chain6: 6 sites, 5 bonds; grid2x3: 6 sites, 7 bonds; cube 2x2x2: 8 sites, 12 bonds; grid3x3: 9 sites, 12 bonds) the covariant record-conserving nearest-neighbour law H(t,V) = -t sum_bonds (x_i^dag x_j + x_j^dag x_i) + V sum_bonds n_i n_j is written once and read on two compositions, x = b (ungraded ladders) and x = c (graded Jordan-Wigner ladders). On two qubits the Hermitian operators commuting with n_A + n_B and symmetric under exchanging the two tensor factors form exactly a 4-dimensional real span {1, n_A + n_B, n_A n_B, b_A^dag b_B + b_B^dag b_A}, the first two constant inside a record-number sector, and on a bipartite cluster the sign of t is a diagonal gauge U = (-1)^{N_A} verified exactly on grid2x3 for both compositions at N = 2 and N = 3; so the record statistics of the family depend on the single ratio g = V/t. In one dimension the two compositions give the identical sector matrix on chain6 at N = 2 (dimension 15) and N = 3 (dimension 20), entrywise, hopping and interaction alike, hence identical record statistics at every real g, with numerical L1 distance 0.00e+00 at g = 0 and g = 1. On grid2x3 N = 2 (15), grid2x3 N = 3 (20), cube N = 4 (70) and grid3x3 N = 3 (84) the ungraded off-diagonal at t = 1 is minus the 0/1 configuration adjacency, entries in {0, -1}, and the configuration graph is connected by exact BFS, so by Perron-Frobenius every ungraded member has a simple, strictly positive ground vector at every real g; numerically the smallest ground occupation probability over sixteen cluster-sector-g cases at g in {-2, 0, 1, 3} is 2.34e-04. The graded law instead has exact cancellation zeros: on grid2x3 N = 2 at g = 0 the ground energy is -(2 + sqrt2), simple, and the 15 pair probabilities are 0 on the 3 vertical pairs, 1/16 on 8 pairs and 1/8 on 4 pairs, summing to 1; on the cube N = 4 at g = 0 the ground energy is -6, simple, and the 70 pattern probabilities take {0, 1/64, 1/16} with counts 12, 56, 2, the 12 zeros being the 6 cube faces occupied and 6 patterns of two disjoint adjacent pairs; on grid3x3 N = 3 at g = 0 the ground energy is -4 sqrt2, simple, and the 84 pattern probabilities take {0, 1/256, 1/128, 1/64, 1/32, 9/256} with counts 8, 12, 32, 20, 8, 4, the 8 zeros being exactly the 3 rows, 3 columns and 2 diagonals of the cluster. A cubic-covariant classical bond-product Gibbs rule has a bond-hereditary zero set, and on grid2x3 N = 2 each of the 3 vertical and 4 horizontal adjacent pairs carries all three bond types, so any such rule zeroes all seven or none, while the graded law zeroes exactly the 3 vertical pairs and gives each horizontal pair 1/16. As a numerical witness, scanning g over 241 points of [-6, 6] with bounded refinement gives minimum L1 distances from the graded targets at g_target = 0 and 1 of 0.389 and 0.296 (grid2x3 N=2), 0.439 and 0.375 (grid2x3 N=3), 0.333 and 0.321 (cube N=4), 0.373 and 0.258 (grid3x3 N=3), all at or above 0.15, with the chain6 N=2 control returning 0.00e+00 at g = g_target. No axiom is amended, no status is set, and this note adopts no hypothesis: it compares two declared constructions."
+claim_scope: "On four finite open clusters (chain6: 6 sites, 5 bonds; grid2x3: 6 sites, 7 bonds; cube 2x2x2: 8 sites, 12 bonds; grid3x3: 9 sites, 12 bonds) the covariant record-conserving nearest-neighbour law H(t,V) = -t sum_bonds (x_i^dag x_j + x_j^dag x_i) + V sum_bonds n_i n_j is written once and read on two compositions, x = b (ungraded ladders) and x = c (graded Jordan-Wigner ladders). On two qubits the Hermitian operators commuting with n_A + n_B and symmetric under exchanging the two tensor factors form exactly a 4-dimensional real span {1, n_A + n_B, n_A n_B, b_A^dag b_B + b_B^dag b_A}, the first two constant inside a record-number sector, and on a bipartite cluster the sign of t is a diagonal gauge U = (-1)^{N_A} verified exactly on grid2x3 for both compositions at N = 2 and N = 3; so the record statistics of the family depend on the single ratio g = V/t. In one dimension the two compositions give the identical sector matrix on chain6 at N = 2 (dimension 15) and N = 3 (dimension 20), entrywise, hopping and interaction alike, hence identical record statistics at every real g, with numerical L1 distance 0.00e+00 at g = 0 and g = 1. On grid2x3 N = 2 (15), grid2x3 N = 3 (20), cube N = 4 (70) and grid3x3 N = 3 (84) the ungraded off-diagonal at t = 1 is minus the 0/1 configuration adjacency, entries in {0, -1}, and the configuration graph is connected by exact BFS, so by Perron-Frobenius every ungraded member has a simple, strictly positive ground vector at every real g; numerically the smallest ground occupation probability over sixteen cluster-sector-g cases at g in {-2, 0, 1, 3} is 2.34e-04. The graded law instead has exact cancellation zeros: on grid2x3 N = 2 at g = 0 the ground energy is -(2 + sqrt2), simple, and the 15 pair probabilities are 0 on the 3 vertical pairs, 1/16 on 8 pairs and 1/8 on 4 pairs, summing to 1; on the cube N = 4 at g = 0 the ground energy is -6, simple, and the 70 pattern probabilities take {0, 1/64, 1/16} with counts 12, 56, 2, the 12 zeros being the 6 cube faces occupied and 6 patterns of two disjoint adjacent pairs; on grid3x3 N = 3 at g = 0 the ground energy is -4 sqrt2, simple, and the 84 pattern probabilities take {0, 1/256, 1/128, 1/64, 1/32, 9/256} with counts 8, 12, 32, 20, 8, 4, the 8 zeros being exactly the 3 rows, 3 columns and 2 diagonals of the cluster. A cubic-covariant classical bond-product Gibbs rule has a bond-hereditary zero set, and on grid2x3 N = 2 each of the 3 vertical and 4 horizontal adjacent pairs carries all three bond types, so any such rule zeroes all seven or none, while the graded law zeroes exactly the 3 vertical pairs and gives each horizontal pair 1/16. As a numerical witness, scanning g over 241 points of [-6, 6] with bounded refinement gives minimum L1 distances from the graded targets at g_target = 0 and 1 of 0.389 and 0.296 (grid2x3 N=2), 0.439 and 0.375 (grid2x3 N=3), 0.333 and 0.321 (cube N=4), 0.373 and 0.258 (grid3x3 N=3), all at or above 0.15, with the chain6 N=2 control returning 0.00e+00 at g = g_target. Those graded zeros are a symmetry selection rule. Each cluster has a group of bond-preserving site permutations, of order 4 on grid2x3, 48 on the cube and 8 on grid3x3; such a sigma acts on the graded sector by U_sigma |S> = sgn_S(sigma) |sigma S>, the Jordan-Wigner reordering sign, and on the ungraded sector by |S> -> |sigma S> with no sign, both actions commuting with H(1,V) for symbolic V and giving a homomorphism of image order 4, 48 and 8. At g = 0 the exact graded ground vector is an eigenvector of every U_sigma with character chi(sigma) = +-1, so amp(S) = 0 whenever some sigma fixes S with chi(sigma) sgn_S(sigma) = -1; that predicted set lies inside the exact zero set with sizes 3 of 3 on grid2x3 (the 3 vertical pairs), 12 of 12 on the cube (the 6 occupied faces and 6 patterns of two disjoint adjacent pairs) and 4 of 8 on grid3x3 (the 4 lines through the centre); ungraded the signs are absent and the Perron-Frobenius ground vector forces chi = +1, so the rule forbids nothing. As a numerical witness, at g in {0, +-0.25, +-0.4, 0.5, 0.75, 1, 2} the graded ground state stays simple, smallest gap 0.534, its zero set below 1e-12 contains the predicted set, and the intersection over those nine couplings equals it exactly, 3, 12 and 4, the other four grid3x3 zeros at g = 0 not persisting. No axiom is amended, no status is set, and this note adopts no hypothesis: it compares two declared constructions."
 upstream_dependencies: []
 runner: scripts/composition_discriminator_record_statistics_check_2026_09_02.py
 ---
@@ -30,7 +30,7 @@ ungraded member gives positive probability, exactly.
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact finite-cluster theorem plus one numerical witness: identity of the two compositions in one dimension, strict positivity of every ungraded member, exact cancellation zeros of the graded member in two and three dimensions, and a scanned L1 separation."
+claim_type_reason: "Exact finite-cluster theorem plus one numerical witness: identity of the two compositions in one dimension, strict positivity of every ungraded member, exact cancellation zeros of the graded member in two and three dimensions, the symmetry selection rule those zeros obey, and a scanned L1 separation."
 trace_class: frontier_discovery
 target_claim_id: null
 target_blocker_text: null
@@ -48,8 +48,8 @@ admitted_observation_status: null
 ## Exact target
 
 The test runs inside record-number sectors of dimensions `15`, `20`, `70` and `84` on four finite open clusters. The target is the conjunction of
-the four statements below, exactly the runner's check groups `F`, `A`, `B`, `C`, `D`. `T1`, `T2` and `T3` are exact; `W4` is a floating-point
-witness, labelled as such wherever it appears.
+the five statements below, exactly the runner's check groups `F`, `A`, `B`, `C`, `D`, `E`. `T1`, `T2`, `T3` and the first three parts of `T5`
+are exact; `W4` and the persistence part of `T5` are floating-point witnesses, labelled as such wherever they appear.
 
 1. `T1` (`F`, `A`). The family is one-parameter in `g = V/t`, and in one dimension its graded and ungraded members are the same matrix in every
   record-number sector, hence carry the same record statistics at every real `g`.
@@ -59,6 +59,9 @@ witness, labelled as such wherever it appears.
   rational multisets, and no classical bond-product rule reproduces the `grid2x3` zero pattern.
 4. `W4` (`D`). Numerically, over `241` scan points of `g in [-6, 6]` with bounded refinement, the `L1` distance from each graded target to the
   scanned ungraded family stays at or above `0.15` on all eight pairs, while the one-dimensional control returns `0.00e+00`.
+5. `T5` (`E`). The graded zeros obey a symmetry selection rule: a cluster automorphism fixing a pattern with `chi(sigma) sgn_S(sigma) = -1`
+  forbids it, which at `g = 0` predicts `3` of `3`, `12` of `12` and `4` of `8` of the exact zeros and forbids nothing at all in the ungraded
+  composition; numerically the predicted set is exactly the zero set shared by `g in {0, +-0.25, +-0.4, 0.5, 0.75, 1, 2}`.
 
 ## Imports and authority
 
@@ -78,7 +81,7 @@ This note cites none of their grades and adopts no hypothesis: it compares two d
 ## Obligation graph
 
 The proof is acyclic; each node after `P0` is checked by the correspondingly lettered runner group, and the strongest supported scope is
-precisely `P0`--`P5`.
+precisely `P0`--`P6`.
 
 1. `P0` (declared here): the four clusters and their bonds, the two ladder sets, the sectors, the law `H(t, V)`, and record statistics.
 2. `P1` (`F`): the two-qubit covariant span is `4`-dimensional and the sign of `t` is a diagonal gauge, so the family reduces to `g = V/t`.
@@ -86,6 +89,7 @@ precisely `P0`--`P5`.
 4. `P3` (`B`): sign-uniformity and irreducibility of the ungraded sector matrices, and strict positivity of their ground vectors.
 5. `P4` (`C`): the exact spectra, ground energies and their simplicity, the rational multisets and zero sets, and the classical comparator.
 6. `P5` (`D`): the scanned `L1` distances and the one-dimensional control.
+7. `P6` (`E`): the symmetry action and its commutation, the character at `g = 0`, the predicted zero set, and its persistence in `g`.
 
 ## Definitions
 
@@ -109,7 +113,10 @@ simple ground vector they are its squared amplitudes. Since `n_i` is shared, `P_
 `c_i^dag c_j = a_i^dag (s3_{i+1} ... s3_{j-1}) a_j`, so the graded matrix element across `(i, j)` in a pattern `S` carries the extra factor
 `(-1)^{|S ∩ (i, j)|}`, the parity of the occupied sites strictly between `i` and `j`. The **classical comparator** is a cubic-covariant classical
 nearest-neighbour Gibbs rule: three weights `w_00, w_01, w_11` per bond, identical on every bond, a pattern receiving the product of its bond
-weights, so its probability vanishes exactly when some bond type it contains has zero weight. That zero set is **bond-hereditary**.
+weights, so its probability vanishes exactly when some bond type it contains has zero weight. That zero set is **bond-hereditary**. A **cluster
+automorphism** is a site permutation `sigma` preserving the bond set; it acts on a sector by `U_sigma |S> = sgn_S(sigma) |sigma S>` in the graded
+composition, `sgn_S(sigma)` being the sign of the permutation carrying `[sigma(i) : i in sorted(S)]` to `sorted(sigma S)`, and by `|S> -> |sigma
+S>` with no sign in the ungraded one; the **character** `chi(sigma) = +-1` is its eigenvalue on a simple ground vector.
 
 ## Theorem 1 — the family is one ratio, and in one dimension the two compositions coincide
 
@@ -214,6 +221,33 @@ exact match available: the same procedure returns `0.00e+00` at `g = 0.000` for 
 with `g_t = 1` the minimum sits at the scan endpoint `g = 6.000`, so `0.296` is an upper bound on the infimum over all real `g`, not a located
 interior minimum. Theorems 1 to 3 do not depend on these numbers.
 
+## Theorem 5 — the persistent zeros are a symmetry selection rule
+
+**Conclusion.** A cluster automorphism `sigma` acts on the graded sector by `U_sigma |S> = sgn_S(sigma) |sigma S>`, a signed permutation, and on
+the ungraded sector by `|S> -> |sigma S>`, unsigned; both commute with `H(1, V)` for symbolic `V`, and `sigma -> U_sigma` is a homomorphism of
+image order `4`, `48`, `8`, the group orders. A simple ground vector is then an eigenvector of each `U_sigma` with character `chi(sigma) = +-1`,
+so `amp(sigma S) = chi(sigma) sgn_S(sigma) amp(S)`; at `sigma S = S` this forces `amp(S) = 0` when `chi(sigma) sgn_S(sigma) = -1`. At `g = 0`:
+
+1. `grid2x3`, `N = 2`: the rule forbids the `3` vertical pairs, all `3` of the exact zeros. Each is fixed by the row reflection, which swaps its
+  two sites, an odd permutation, while the ground state is even under that reflection.
+2. `cube`, `N = 4`: it forbids `12` patterns, all `12` of the exact zeros, the `6` occupied faces and `6` two-disjoint-adjacent-pair patterns.
+3. `grid3x3`, `N = 3`: it forbids `4` patterns, `4` of the `8` exact zeros, the `4` lines through the centre, that is the middle row, the middle
+  column and the two diagonals. The other four zeros, the outer rows and columns, are free-particle collinearity accidents seen only at `g = 0`.
+
+Ungraded, `sgn_S(sigma) = 1` always and the strictly positive Perron-Frobenius ground vector of Theorem 2 forces `chi(sigma) = +1`, so
+`chi sgn_S = +1` and the rule forbids nothing on any of the three clusters. The rule is coupling-independent as long as the ground state stays
+simple: `chi` is a `+-1`-valued continuous function of `g` on any interval without a level crossing, hence constant. As a numerical witness, at
+`g in {0, +-0.25, +-0.4, 0.5, 0.75, 1, 2}` the graded ground state is simple, smallest gap `0.534`, its zero set at the `1e-12` threshold contains
+the predicted set, and the intersection of the nine zero sets is exactly the predicted set, `3`, `12` and `4`.
+
+**Proof.** Items 1 to 3 and the ungraded statement are exact. The automorphisms are enumerated by backtracking; `U_sigma` is built as an explicit
+signed permutation on the basis; commutation with the exact sector matrix, split into its integer `V^0` and `V^1` parts, is checked entrywise in
+both compositions; the homomorphism is checked on all pairs, giving the image orders. The character is read off the exact Slater ground vector of
+Theorem 3, verified on every basis pattern, so the eigenvector property is checked, not assumed. The last paragraph is the witness `E4`.
+
+**Reading, not theorem.** Some record patterns are their own mirror image in a way a fermionic state cannot be, so they never form; that is what
+the sign does to records.
+
 ## Corollary — what the test says
 
 Within the cubic-covariant, record-conserving, nearest-neighbour family declared above, and on the four clusters named:
@@ -229,6 +263,9 @@ Within the cubic-covariant, record-conserving, nearest-neighbour family declared
   while permitting a horizontal one.
 5. Hence, for this family, the composition rule is not representational: not a relabelling that record statistics cannot see. The readable shadow
   of the cross-site sign is exact cancellation zeros in record patterns, in two and three dimensions and not in one.
+6. The readable shadow of the cross-site sign is a coupling-independent selection rule: a record pattern fixed by a lattice symmetry is
+  forbidden whenever that symmetry permutes the pattern's sites with a sign opposite to the state's symmetry character. In the ungraded
+  composition no such rule exists.
 
 ## What does not move
 
@@ -270,7 +307,7 @@ These interfaces are named so that a later note can consume them; nothing here m
 
 ## Executable claim block
 
-The canonical machine-bound restatement of the three theorem conclusions and the bounded witness.
+The canonical machine-bound restatement of the four theorem conclusions and the bounded witness.
 
 ```text
 clusters_and_bonds: chain6 6/5, grid2x3 6/7, cube 8/12, grid3x3 9/12
@@ -290,8 +327,10 @@ scan_points_and_window: 241 on [-6, 6], bounded refinement
 l1_minima_grid2x3: N=2 0.389 at g = 1.850 and 0.296 at g = 6.000; N=3 0.439 at g = -0.898 and 0.375 at g = 1.567
 l1_minima_cube_N4_and_grid3x3_N3: 0.333 at g = -1.483 and 0.321 at g = 1.674; 0.373 at g = 1.571 and 0.258 at g = 2.971
 l1_minimum_over_all_eight_threshold_and_control: 0.258 and 0.15; chain6 0.00e+00 at g = 0.000 and 1.000, threshold 1e-09
+cluster_automorphisms_and_action: 4, 48, 8 on grid2x3 N=2, cube N=4, grid3x3 N=3; graded U_sigma |S> = sgn_S(sigma) |sigma S>, ungraded unsigned; commutes with H(1,V); image order 4, 48, 8
+character_predicted_zeros_and_persistence: chi = +-1 at g = 0; predicted inside exact, 3 of 3, 12 of 12, 4 of 8; ungraded chi = +1, predicted set empty; over g in {0, +-0.25, +-0.4, 0.5, 0.75, 1, 2} simple, gap 0.534, intersection = predicted, 3, 12, 4
 axioms_amended_status_values_set_registry_entries_created: 0, 0, 0
-runner_result: PASS=15 FAIL=0
+runner_result: PASS=19 FAIL=0
 ```
 
 ## Proof boundary
@@ -304,16 +343,17 @@ identical bond expression on every bond leave exactly four Hermitian operators p
 exact, ground energies, simplicity and rational multisets alike, the certificates being exact Sturm root counts on integer characteristic
 polynomials at rational bounds rather than numerical estimates. The graded targets at `g = 1` and every `L1` distance are numerical, floating
 point, so labelled in the runner and above: they carry a `1e-9` degeneracy tolerance and are minima over a scanned window of `241` points with
-bounded refinement rather than proved minima over the real line, one of the eight sitting at a scan endpoint. Perron-Frobenius is applied with
-its hypotheses verified exactly on each cluster and sector rather than assumed; the Slater-determinant identification of the ground state is
-standard methodology and is not relied on, since each ground energy is separately certified. No axiom is amended, no status is set, and no
-registry entry is created.
+bounded refinement rather than proved minima over the real line, one of the eight sitting at a scan endpoint. The selection rule of Theorem 5 is
+proved for simple ground states and stated for the coupling range without a level crossing; its persistence is exhibited numerically at the nine
+listed couplings and argued by continuity of a `+-1`-valued character. Perron-Frobenius is applied with its hypotheses verified exactly on each
+cluster and sector rather than assumed; the Slater-determinant identification of the ground state is standard methodology and is not relied on,
+since each ground energy is separately certified. No axiom is amended, no status is set, and no registry entry is created.
 
 ## Review record
 
 This note is self-contained: `upstream_dependencies` is empty, every object is declared in "Definitions", no hypothesis is adopted, and the three
 context notes in "Imports and authority" are plain-text pointers carrying no grade and no weight. Every exact claim is checked in `sympy` with
 `Rational`, `sqrt(2)` and integer matrices; every numerical claim is computed in `numpy` and `scipy` and carries a `[numerical]` tag and its
-tolerance in the runner label. Hard landing conditions are a fresh runner and cache pair closing at `PASS=15 FAIL=0` with runtime under `120`
+tolerance in the runner label. Hard landing conditions are a fresh runner and cache pair closing at `PASS=19 FAIL=0` with runtime under `120`
 seconds and stdout under `5500` characters, a current zero-dependency citation-manifest entry, and passing repository pipeline, strict-lint, and
 changed-evidence gates; independent audit remains a separate lane.

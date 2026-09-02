@@ -33,7 +33,11 @@ Check groups:
   C  the graded family has exact cancellation zeros on grid2x3, the cube and
      grid3x3, and no classical bond-product rule reproduces them;
   D  numerical witness: the L1 distance from each graded target to the whole
-     scanned ungraded family stays well above 0.15.
+     scanned ungraded family stays well above 0.15;
+  E  the graded zeros are a symmetry selection rule: a cluster automorphism acts
+     on the sector by a signed permutation commuting with the law, and a pattern
+     it fixes with the sign opposite to the ground state's character is
+     forbidden at every coupling where that state stays simple.
 
 Exact checks use sympy only (Rational, sqrt(2), integer matrices, Sturm root
 counts). Numerical witnesses use numpy and scipy and are labelled as such.
@@ -206,9 +210,9 @@ SEC1 = [1, 2]  # the one-particle sector of the two-qubit space
 f1_const = all(Matrix(2, 2, lambda p, q: M[SEC1[p], SEC1[q]]) == M[SEC1[0], SEC1[0]] * eye(2)
                for M in (eye(4), NTOT))
 check("F1 [exact] two-qubit covariant family: Hermitian H with [H, n_A+n_B] = 0 and "
-      "factor-exchange symmetry has exactly 4 real parameters and is exactly the real span "
-      "of {1, n_A+n_B, n_A n_B, b_A^dag b_B + b_B^dag b_A}; the first two are constants in "
-      "each record-number sector, so the family is one ratio g = V/t",
+      "factor-exchange symmetry has exactly 4 real parameters, the span of {1, n_A+n_B, "
+      "n_A n_B, b_A^dag b_B + b_B^dag b_A}, the first two sector constants, so the family is "
+      "one ratio g = V/t",
       len(f1_sol) == 1 and len(f1_free) == 4 and rows4.rank() == 4
       and len(f1_lin) == 1 and len(f1_lin[0]) == 4 and f1_const
       and sp.expand(HOP2 * NTOT - NTOT * HOP2) == zeros(4, 4)
@@ -226,10 +230,10 @@ for f2_graded in (False, True):
         U = sp.diag(*[(-1) ** len(S & SUBA) for S in cfg])
         f2 = (f2 and all(U[i, i] ** 2 == 1 for i in range(len(cfg)))
               and sp.expand(U * Hp * U - Hm) == zeros(len(cfg), len(cfg)))
-check("F2 [exact] the sign of t is a diagonal gauge: on grid2x3 the operator U = (-1)^{N_A} "
-      "for the sublattice {0,2,4} is diagonal with entries +-1 and satisfies U H(1,V) U = "
-      "H(-1,V) for symbolic V, in both compositions and for N = 2 and N = 3, so squared "
-      "amplitudes and the occupation diagonal do not see the sign",
+check("F2 [exact] the sign of t is a diagonal gauge: on grid2x3 the operator "
+      "U = (-1)^{N_A} for the sublattice {0,2,4} has entries +-1 and satisfies "
+      "U H(1,V) U = H(-1,V) for symbolic V, both compositions, N = 2 and 3, so the occupation "
+      "diagonal does not see the sign",
       f2)
 
 # ================================================== A: one dimension, identity
@@ -244,10 +248,10 @@ for a1_N in (2, 3):
     a1_dims.append(len(ca))
     a1 = a1 and Hg == Hu
     a1 = a1 and all(sp.expand(e.coeff(Vs, 0)) in (0, -1) for e in Hg)
-check("A1 [exact] chain6, N = 2 (dim %d) and N = 3 (dim %d): the graded and ungraded sector "
-      "matrices at t = 1 with symbolic V agree entrywise, hopping part and interaction part "
-      "alike, because every nearest-neighbour bond of a line carries an empty "
-      "Jordan-Wigner string; hence P_graded(g) = P_ungraded(g) at every real g"
+check("A1 [exact] chain6, N = 2 (dim %d) and N = 3 (dim %d): the graded and ungraded "
+      "sector matrices at t = 1 with symbolic V agree entrywise, hopping and interaction "
+      "alike, every bond of a line carrying an empty Jordan-Wigner string; hence "
+      "P_graded(g) = P_ungraded(g) at every real g"
       % (a1_dims[0], a1_dims[1]),
       a1)
 
@@ -303,7 +307,7 @@ Tc_u, Dc_u = np_parts(CHAIN6[0], CHAIN6[1], 2, False)
 Tc_g, Dc_g = np_parts(CHAIN6[0], CHAIN6[1], 2, True)
 a2_d = [float(np.abs(rstat(Tc_u, Dc_u, g) - rstat(Tc_g, Dc_g, g)).sum())
         for g in (0.0, 1.0)]
-check("A2 [numerical] chain6, N = 2: the L1 distance between the two record statistics is "
+check("A2 [numerical] chain6 N=2: the L1 distance between the two record statistics is "
       "%.2e at g = 0 and %.2e at g = 1, both below 1e-12 (float, scipy eigh)"
       % (a2_d[0], a2_d[1]),
       max(a2_d) < 1e-12)
@@ -330,10 +334,10 @@ for (nm, (L, B), N) in CASES:
                 seen.add(w_)
                 stack.append(w_)
     b1 = b1 and len(seen) == n
-check("B1 [exact] on grid2x3 N=2 (dim %d), grid2x3 N=3 (%d), cube N=4 (%d), grid3x3 N=3 (%d) "
-      "the ungraded off-diagonal at t = 1 is minus the 0/1 configuration adjacency, entries "
-      "in {0,-1}, symmetric, and the configuration graph is connected by exact BFS; so "
-      "Perron-Frobenius gives a simple, strictly positive ground vector at every real g"
+check("B1 [exact] on grid2x3 N=2/3 (dim %d, %d), cube N=4 (%d), grid3x3 N=3 (%d) the "
+      "ungraded off-diagonal at t = 1 is minus the 0/1 configuration adjacency, entries in "
+      "{0,-1}, symmetric, that graph connected by exact BFS; Perron-Frobenius then gives a "
+      "simple, strictly positive ground vector at every g"
       % tuple(b1_dims),
       b1)
 
@@ -344,9 +348,9 @@ for (nm, (L, B), N) in CASES:
     Tu, Du = np_parts(L, B, N, False)
     for g in (-2.0, 0.0, 1.0, 3.0):
         b2_min = min(b2_min, float(rstat(Tu, Du, g).min()))
-check("B2 [numerical] the smallest ungraded ground occupation probability over all sixteen "
-      "cluster-sector-g cases, g in {-2, 0, 1, 3}, is %.2e, above the 1e-06 threshold: no "
-      "ungraded member of the family gives any pattern the value zero (float)" % b2_min,
+check("B2 [numerical] the smallest ungraded ground occupation probability over the "
+      "sixteen cluster-sector-g cases, g in {-2, 0, 1, 3}, is %.2e, above the 1e-06 "
+      "threshold: no ungraded member gives any pattern zero (float)" % b2_min,
       b2_min > 1e-6)
 
 # ========================== C: the graded family has exact cancellation zeros
@@ -387,10 +391,10 @@ for S in c1_cfg:
     d = abs((i % 3) - (j % 3))
     c1_expect[(i, j)] = (0 if d == 0 else Rational(1, 16) if d == 1 else Rational(1, 8))
 c1_counts = [sum(1 for p in C1P.values() if p == q) for q in (0, Rational(1, 16), Rational(1, 8))]
-check("C1 [exact] grid2x3 N=2 g=0: single-particle spectrum {+-1} + {sqrt2, 0, -sqrt2}; the "
-      "two lowest orbitals of -A are (1,1)/sqrt2 (x) (1,sqrt2,1)/2 at -(1+sqrt2) and "
-      "(1,1)/sqrt2 (x) (1,0,-1)/sqrt2 at -1; graded ground energy -(2+sqrt2), simple; all 15 "
-      "pair values are 0 on the %d vertical pairs, 1/16 on %d pairs, 1/8 on %d, sum 1"
+check("C1 [exact] grid2x3 N=2 g=0: spectrum {+-1} + {sqrt2, 0, -sqrt2}; the two lowest "
+      "orbitals of -A are (1,1)/sqrt2 (x) (1,sqrt2,1)/2 at -(1+sqrt2) and (1,1)/sqrt2 (x) "
+      "(1,0,-1)/sqrt2 at -1; ground energy -(2+sqrt2), simple; the 15 pair values: 0 on %d "
+      "vertical pairs, 1/16 on %d, 1/8 on %d, sum 1"
       % tuple(c1_counts),
       c1_orb and c1_ok and C1P == c1_expect and sum(C1P.values()) == 1
       and c1_spec == {1 + sqrt(2): 1, 1: 1, 1 - sqrt(2): 1,
@@ -423,11 +427,10 @@ for k in c2_zero:
         c2_faces.append(k)
     elif len(ed) == 2 and len(set(ed[0]) | set(ed[1])) == 4:
         c2_edgepairs.append(k)
-check("C2 [exact] cube N=4 g=0: the four lowest orbitals of -A are the product orbitals at "
-      "-3 (one, (1,1)^(x)3/sqrt8) and -1 (three, one factor (1,-1)), the fifth level being "
-      "+1; graded ground energy -6, simple; the 70 patterns take values {0, 1/64, 1/16} with "
-      "counts %d, %d, %d summing to 1, and the %d zeros are the %d cube faces occupied and "
-      "%d patterns of two disjoint adjacent pairs"
+check("C2 [exact] cube N=4 g=0: the four lowest orbitals of -A are products at -3 "
+      "((1,1)^(x)3/sqrt8) and -1 (three, one factor (1,-1)), fifth level +1; ground energy "
+      "-6, simple; the 70 patterns take {0, 1/64, 1/16} with counts %d, %d, %d, sum 1, the %d "
+      "zeros being %d occupied faces and %d two-disjoint-adjacent-pair patterns"
       % (c2_counts[0], c2_counts[1], c2_counts[2], len(c2_zero),
          len(c2_faces), len(c2_edgepairs)),
       c2_orb and c2_ok and sum(C2P.values()) == 1
@@ -461,11 +464,11 @@ for r in range(3):
     c3_lines.add(tuple(3 * c + r for c in range(3)))
 c3_lines.add((0, 4, 8))
 c3_lines.add((2, 4, 6))
-check("C3 [exact] grid3x3 N=3 g=0: the orbitals of -A are w1(x)w1 at -2sqrt2 (one) and "
-      "w1(x)w2, w2(x)w1 at -sqrt2 (two), orthonormal, the next level being 0; graded ground "
-      "energy -4sqrt2, simple; the 84 patterns take {0, 1/256, 1/128, 1/64, 1/32, 9/256} with "
-      "counts %d, %d, %d, %d, %d, %d summing to 1, and the %d zeros are exactly the 3 rows, "
-      "3 columns and 2 diagonals of the cluster" % tuple(c3_counts + [len(c3_zero)]),
+check("C3 [exact] grid3x3 N=3 g=0: the orbitals of -A are w1(x)w1 at -2sqrt2 and "
+      "w1(x)w2, w2(x)w1 at -sqrt2, orthonormal, next level 0; ground energy -4sqrt2, simple; "
+      "the 84 patterns take {0, 1/256, 1/128, 1/64, 1/32, 9/256} with counts %d, %d, %d, %d, "
+      "%d, %d, sum 1, the %d zeros being the 3 rows, 3 columns and 2 diagonals"
+      % tuple(c3_counts + [len(c3_zero)]),
       c3_orb and c3_ok and c3_gram == eye(3) and sum(C3P.values()) == 1
       and c3_spec == {2 * sqrt(2): 1, sqrt(2): 2, 0: 3, -sqrt(2): 2, -2 * sqrt(2): 1}
       and set(C3P.values()) == set(c3_vals) and c3_counts == [8, 12, 32, 20, 8, 4]
@@ -490,11 +493,11 @@ def bond_types(S, B):
 c4_vert = [(c, c + 3) for c in range(3)]
 c4_horz = [(0, 1), (1, 2), (3, 4), (4, 5)]
 c4_support = [bond_types(frozenset(k), GRID23[1]) for k in c4_vert + c4_horz]
-check("C4 [exact] the classical comparator on grid2x3 N=2: a cubic-covariant bond-product "
-      "Gibbs rule gives a pattern w00^n00 w01^n01 w11^n11, so its zero set is bond-hereditary; "
-      "each of the %d vertical and %d horizontal adjacent pairs has all three bond types "
-      "present (n00, n01, n11 >= 1), so any such rule zeroes all seven or none, while the "
-      "graded law zeroes exactly the 3 vertical pairs and gives each horizontal pair 1/16"
+check("C4 [exact] classical comparator, grid2x3 N=2: a cubic-covariant bond-product "
+      "Gibbs rule weights a pattern w00^n00 w01^n01 w11^n11, a bond-hereditary zero set; all "
+      "%d vertical and %d horizontal adjacent pairs carry all three bond types (n00, n01, "
+      "n11 >= 1), so such a rule zeroes all seven or none, while the graded law zeroes the 3 "
+      "vertical only, horizontals 1/16"
       % (len(c4_vert), len(c4_horz)),
       all(min(t) >= 1 for t in c4_support)
       and all(C1P[k] == 0 for k in c4_vert)
@@ -509,23 +512,211 @@ for (nm, (L, B), N) in CASES:
     Tg, Dg = np_parts(L, B, N, True)
     res = [best_match(Tu, Du, rstat(Tg, Dg, gt)) for gt in (0.0, 1.0)]
     d1_all.extend(r[0] for r in res)
-    check("D1 [numerical] %s N=%d: min over the 241-point scan of g in [-6,6] with bounded "
-          "refinement of L1(P_ungraded(g), P_graded(g_t)) is %.3f at g = %.3f for g_t = 0 and "
-          "%.3f at g = %.3f for g_t = 1; both at or above the 0.15 threshold (float)"
+    check("D1 [numerical] %s N=%d: min L1(P_ungraded(g), P_graded(g_t)) over the "
+          "241-point [-6,6] scan, bounded refinement, is %.3f at g = %.3f (g_t = 0) and %.3f "
+          "at g = %.3f (g_t = 1), both at or above 0.15 (float)"
           % (nm, N, res[0][0], res[0][1], res[1][0], res[1][1]),
           min(res[0][0], res[1][0]) >= 0.15)
 
 d2 = [best_match(Tc_u, Dc_u, rstat(Tc_g, Dc_g, gt)) for gt in (0.0, 1.0)]
-check("D2 [numerical] chain6 N=2 control of the scan itself: the same procedure returns "
-      "%.2e at g = %.3f for g_t = 0 and %.2e at g = %.3f for g_t = 1, both below 1e-09 and "
-      "attained at g = g_t, so the scan finds an exact match when one exists"
+check("D2 [numerical] chain6 N=2 control: the same procedure returns %.2e at g = %.3f "
+      "(g_t = 0) and %.2e at g = %.3f (g_t = 1), both below 1e-09 and attained at g = g_t, so "
+      "the scan finds an exact match when one exists"
       % (d2[0][0], d2[0][1], d2[1][0], d2[1][1]),
       max(d2[0][0], d2[1][0]) < 1e-9 and abs(d2[0][1]) < 1e-6 and abs(d2[1][1] - 1) < 1e-6)
 
-print("SUMMARY: in one dimension the two compositions give the same sector matrix and the same "
+# ===================== E: the symmetry selection rule behind the graded zeros
+
+def automorphisms(L, B):
+    """Every site permutation preserving the bond set, by exact backtracking."""
+    adj = [set() for _ in range(L)]
+    for (u, v) in B:
+        adj[u].add(v)
+        adj[v].add(u)
+    out, perm, used = [], [-1] * L, [False] * L
+
+    def rec(i):
+        if i == L:
+            out.append(tuple(perm))
+            return
+        for j in range(L):
+            if used[j] or len(adj[j]) != len(adj[i]):
+                continue
+            if all((k in adj[i]) == (perm[k] in adj[j]) for k in range(i)):
+                perm[i], used[j] = j, True
+                rec(i + 1)
+                used[j] = False
+        perm[i] = -1
+
+    rec(0)
+    return out
+
+
+def perm_sign(seq):
+    """Sign of the permutation sorting seq, by exact inversion count."""
+    s = 1
+    for i in range(len(seq)):
+        for j in range(i + 1, len(seq)):
+            if seq[i] > seq[j]:
+                s = -s
+    return s
+
+
+def u_sigma(cfg, idx, sg, graded):
+    """U_sigma as (image, sign) per pattern: U |S> = sgn_S(sigma) |sigma S>."""
+    p, s = [0] * len(cfg), [0] * len(cfg)
+    for S in cfg:
+        img = [sg[k] for k in sorted(S)]
+        p[idx[S]] = idx[frozenset(img)]
+        s[idx[S]] = perm_sign(img) if graded else 1
+    return p, s
+
+
+def int_parts(M, n):
+    """Exact integer pair (coeff of V^0, of V^1) per entry, reconstruction checked."""
+    C = [[(int(sp.expand(M[i, j]).coeff(Vs, 0)), int(sp.expand(M[i, j]).coeff(Vs, 1)))
+          for j in range(n)] for i in range(n)]
+    ok = all(sp.expand(M[i, j] - C[i][j][0] - C[i][j][1] * Vs) == 0
+             for i in range(n) for j in range(n))
+    return C, ok
+
+
+def predicted_zeros(cfg, autos, chi, graded):
+    """{S : some sigma fixes S with chi(sigma) sgn_S(sigma) = -1}."""
+    out = set()
+    for S in cfg:
+        for sg in autos:
+            if frozenset(sg[k] for k in S) != S:
+                continue
+            sgn = perm_sign([sg[k] for k in sorted(S)]) if graded else 1
+            if chi[sg] * sgn == -1:
+                out.add(tuple(sorted(S)))
+                break
+    return out
+
+
+ECASES = [("grid2x3", GRID23, 2, c1_cfg, c1_idx, c1_v, C1P),
+          ("cube", CUBE, 4, c2_cfg, c2_idx, c2_v, C2P),
+          ("grid3x3", GRID33, 3, c3_cfg, c3_idx, c3_v, C3P)]
+EAUT = {nm: automorphisms(L, B) for (nm, (L, B), N, cfg, idx, cv, P) in ECASES}
+
+# --- E1: the action is a signed permutation representation commuting with H
+
+e1 = True
+e1_na, e1_img = [], []
+for (nm, (L, B), N, cfg, idx, cv, P) in ECASES:
+    autos = EAUT[nm]
+    n = len(cfg)
+    e1_na.append(len(autos))
+    for graded in (True, False):
+        _, _, Hsym = sector(L, B, N, graded, 1, Vs)
+        C, dec = int_parts(Hsym, n)
+        e1 = e1 and dec
+        reps = {}
+        for sg in autos:
+            p, s = u_sigma(cfg, idx, sg, graded)
+            reps[sg] = (p, s)
+            e1 = e1 and sorted(p) == list(range(n)) and all(x in (1, -1) for x in s)
+            e1 = e1 and all(C[p[i]][p[j]] == (s[i] * s[j] * C[i][j][0],
+                                              s[i] * s[j] * C[i][j][1])
+                            for i in range(n) for j in range(n))
+        for sa in autos:
+            pa, ssa = reps[sa]
+            for sb in autos:
+                pb, ssb = reps[sb]
+                pc, ssc = reps[tuple(sa[sb[k]] for k in range(L))]
+                e1 = e1 and all(pa[pb[i]] == pc[i] and ssb[i] * ssa[pb[i]] == ssc[i]
+                                for i in range(n))
+        if graded:
+            e1_img.append(len({(tuple(p), tuple(s)) for (p, s) in reps.values()}))
+check("E1 [exact] symmetry: the %d, %d, %d bond-preserving site permutations of grid2x3 "
+      "N=2, cube N=4, grid3x3 N=3 act by U_sigma|S> = sgn_S(sigma)|sigma S>, a signed "
+      "permutation commuting with H(1,V) for symbolic V in both compositions; "
+      "sigma -> U_sigma a homomorphism of image order %d, %d, %d" % tuple(e1_na + e1_img),
+      e1)
+
+# --- E2: the character at g = 0 and the zero set it predicts
+
+e2 = True
+e2_sz, ECHI, EPRED = [], {}, {}
+for (nm, (L, B), N, cfg, idx, cv, P) in ECASES:
+    autos, n, chi = EAUT[nm], len(cfg), {}
+    j0 = next(i for i in range(n) if cv[i] != 0)
+    for sg in autos:
+        p, s = u_sigma(cfg, idx, sg, True)
+        ch = 1 if sp.expand(s[j0] * cv[j0] - cv[p[j0]]) == 0 else -1
+        e2 = e2 and all(sp.expand(s[i] * cv[i] - ch * cv[p[i]]) == 0 for i in range(n))
+        chi[sg] = ch
+    ECHI[nm] = chi
+    pred = predicted_zeros(cfg, autos, chi, True)
+    EPRED[nm] = pred
+    exact = {k for k in P if P[k] == 0}
+    e2 = e2 and pred <= exact
+    e2_sz.extend([len(pred), len(exact)])
+e2 = (e2 and EPRED["grid2x3"] == set(c4_vert)
+      and EPRED["cube"] == set(c2_faces) | set(c2_edgepairs)
+      and EPRED["grid3x3"] == {ln for ln in c3_lines if 4 in ln})
+check("E2 [exact] character at g=0: each U_sigma acts on the exact group-C ground vector "
+      "as a scalar chi in {+1,-1}, verified on every pattern; the predicted set "
+      "{S : sigma S = S, chi sgn_S = -1} lies inside the exact zero set, %d of %d (vertical "
+      "pairs), %d of %d (faces, disjoint adjacent pairs), %d of %d (lines through the centre)"
+      % tuple(e2_sz),
+      e2)
+
+# --- E3: the ungraded composition has no such rule
+
+e3 = True
+e3_min = 1.0
+for (nm, (L, B), N, cfg, idx, cv, P) in ECASES:
+    autos, n = EAUT[nm], len(cfg)
+    Tu, Du = np_parts(L, B, N, False)
+    wu, Vu = eigh(Tu)
+    vu = Vu[:, 0] if Vu[0, 0] > 0 else -Vu[:, 0]
+    e3 = e3 and wu[1] - wu[0] > DEG_TOL
+    e3_min = min(e3_min, float(vu.min()))
+    chiu = {}
+    for sg in autos:
+        p, s = u_sigma(cfg, idx, sg, False)
+        e3 = e3 and all(x == 1 for x in s)
+        e3 = e3 and max(abs(vu[i] - vu[p[i]]) for i in range(n)) < 1e-9
+        chiu[sg] = 1
+    e3 = e3 and predicted_zeros(cfg, autos, chiu, False) == set()
+check("E3 [exact] ungraded contrast: U_sigma carries no sign there, so it maps the "
+      "strictly positive group-B ground vector (smallest entry %.2e, float) to a positive "
+      "vector, "
+      "forcing chi = +1 on all %d, %d, %d automorphisms; chi sgn_S = +1 always, so the "
+      "predicted set is empty" % tuple([e3_min] + e1_na),
+      e3)
+
+# --- E4: persistence of the predicted set away from g = 0
+
+E_GS = (0.25, -0.25, 0.4, -0.4, 0.5, 0.75, 1.0, 2.0)
+e4 = True
+e4_sz, e4_gap = [], 1e9
+for (nm, (L, B), N, cfg, idx, cv, P) in ECASES:
+    pi = {idx[frozenset(k)] for k in EPRED[nm]}
+    Tg, Dg = np_parts(L, B, N, True)
+    inter = None
+    for g in (0.0,) + E_GS:
+        wg, Vg = eigh(Tg + g * np.diag(Dg))
+        e4_gap = min(e4_gap, float(wg[1] - wg[0]))
+        e4 = e4 and wg[1] - wg[0] > DEG_TOL
+        z = {i for i in range(len(cfg)) if abs(Vg[i, 0]) < 1e-12}
+        e4 = e4 and pi <= z
+        inter = z if inter is None else inter & z
+    e4 = e4 and inter == pi
+    e4_sz.append(len(inter))
+check("E4 [numerical] persistence: at g in {0, +-0.25, +-0.4, 0.5, 0.75, 1, 2} the "
+      "graded ground state stays simple (smallest gap %.3f) and its zero set below 1e-12 "
+      "contains the predicted set, whose intersection over the nine couplings it equals: "
+      "%d, %d, %d (float)" % tuple([e4_gap] + e4_sz),
+      e4)
+
+print("SUMMARY: in one dimension the two compositions give the same sector matrix and "
       "record statistics at every g; in two and three dimensions every ungraded member is "
-      "strictly positive on every pattern while the graded law has exact cancellation zeros "
-      "(3 of 15, 12 of 70, 8 of 84), no classical bond-product rule reproduces them, and the "
-      "scanned L1 separation stays at least %.3f." % min(d1_all))
+      "strictly positive while the graded law has exact cancellation zeros (3 of 15, 12 of "
+      "70, 8 of 84), 3, 12 and 4 of them a symmetry selection rule persistent in g, no "
+      "bond-product rule reproduces them, and the L1 separation stays >= %.3f."
+      % min(d1_all))
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 sys.exit(0 if FAIL == 0 else 1)

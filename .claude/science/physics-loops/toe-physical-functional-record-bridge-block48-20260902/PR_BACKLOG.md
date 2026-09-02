@@ -1,6 +1,8 @@
 # PR backlog
 
-No PR is authorized at preregistration. Open one only if the final V1--V5 hard
-value gate passes, with real obligation reduction or a material axiom decision
-surface not already owned by current main/open PRs. Otherwise push the branch
-as a backlog checkpoint with `BACKLOG_NO_PR`.
+Final decision: `BACKLOG_NO_PR`.
+
+V2 and V5 fail because the component science is already present on current
+main and the joined action/model pair is an inert direct-product extension.
+Push the branch only as a recoverable checkpoint. Do not open a PR unless an
+owner later asks to land the exact decision packet after choosing wording.

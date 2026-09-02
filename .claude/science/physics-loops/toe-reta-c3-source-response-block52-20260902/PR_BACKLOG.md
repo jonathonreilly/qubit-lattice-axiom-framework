@@ -2,6 +2,11 @@
 
 Pre-execution disposition: `BACKLOG_UNLESS_PHYSICAL_CLOSURE`.
 
+Post-execution disposition: `BACKLOG_NO_PR`.  The packet gives exact finite
+projector/formal-response arithmetic and a narrow route repair but does not
+pass V1 or V3.  Push a named checkpoint branch only; do not advertise TOE
+movement.
+
 Open a PR only if all are true:
 
 - V1: the registered R--eta obligation is genuinely retired;

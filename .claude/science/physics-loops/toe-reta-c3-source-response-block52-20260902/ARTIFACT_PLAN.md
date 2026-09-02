@@ -3,8 +3,9 @@
 Predeclared outputs:
 
 1. one bounded theorem/repair note with an owner decision memo;
-2. one primary exact runner covering carrier classification, source/action
-   response, local/global cyclic formulas, premise checks, and graph impact;
+2. one primary exact runner covering carrier classification, formal
+   determinant response, true group averaging, determinant-statistics typing,
+   raw/reduced eta conventions, premise checks, and graph impact;
 3. one independent implementation using rational/trigonometric identities and
    finite character enumeration;
 4. one mutation runner for all preregistered mutations;

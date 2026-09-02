@@ -19,6 +19,7 @@
 - PR #7326 already supplies generic conditional Gaussian/event machinery;
   rebuilding that machinery has lower leverage than the physical R--eta map.
 
-Expected marginal: a self-contained source/action classification, a positive
-`p=3` local/global spectral identity, and an exact correction of the false
-flat-character carrier.  None alone counts as obligation retirement.
+Expected marginal: a self-contained formal source/action classification, a
+`p=3` raw-magnitude arithmetic crossing, and an exact correction of the false
+flat-character carrier.  None alone counts as obligation retirement or a
+physical bridge.

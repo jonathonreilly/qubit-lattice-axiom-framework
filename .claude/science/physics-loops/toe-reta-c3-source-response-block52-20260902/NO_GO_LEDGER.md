@@ -54,3 +54,12 @@ topological no-go.
 
 Compare the April eta/radian work, July h-class/h-unit split, August premise
 reset, Block51 target-correctness lesson, and PR #7833's exact matter zeros.
+
+## Post-execution discipline verdict
+
+`FAIL_for_broad_negative / DEMOTE_TO_PARTIAL_NARROWING`.
+
+The flat order-three-character step is exactly excluded.  The physical
+Grassmann carrier/action, non-flat differential-cohomology, correctly typed
+raw/reduced eta, Record instrument, occurrence/clock, and anomaly routes remain
+live.  No broader no-go may be inferred from this checkpoint.

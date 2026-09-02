@@ -9,7 +9,9 @@ reachability_to_target: direct
 formal_criticality: critical
 live_transitive_descendants_preexecution: 115
 positive_success: retained physical carrier_source_action_eta_identity theorem
-bounded_success: exact positive spectral support plus source/action and flat-character repair
+bounded_success: exact finite projector/formal-response arithmetic plus narrow flat-character repair
+actual_disposition: partial-narrowing
+no_go_discipline_gate: FAIL
 obligation_retirement_required_for_toe_movement: true
 review_loop_allowed: false
 gravity_paths_touched: false

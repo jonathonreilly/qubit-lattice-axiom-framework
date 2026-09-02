@@ -20,5 +20,10 @@ terminology and convention checks are Atiyah--Patodi--Singer,
 `10.1017/S0305004100051872`, and Cheeger--Simons, *Differential characters
 and geometric invariants*, DOI `10.1007/BFb0075216`.
 
+The lens comparison fixes the `(1,1)` quotient action, round quotient metric,
+boundary orientation, and APS odd-signature operator.  It compares only raw
+eta magnitude.  The kernel `h_B=1` and reduced eta are separate typed data.
+The determinant is formal until a statistics/measure/action theorem exists.
+
 Open PRs are comparators only.  #7833 is new matter prior art; #7823 and all
 other gravity work remain untouched.

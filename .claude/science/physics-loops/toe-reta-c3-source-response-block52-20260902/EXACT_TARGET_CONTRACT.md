@@ -28,11 +28,12 @@ For a positive `K`-even invariant quadratic action
 A = a_s P_s + a_d P_d,
 ```
 
-and invariant source `O`, define the canonically normalized finite response
+and invariant source `O`, define the formal determinant and the stipulated
+campaign-normalized finite response
 
 ```text
-Z_A(j) = det(A + j O),
-h_A(O) = (1/|C3|) tau(d/dj log Z_A(j)|_(j=0)),
+D_A(j) = det(A + j O),
+h_A(O) = (1/|C3|) tau(A^-1 O),
 tau(X) = Tr(X)/3.
 ```
 
@@ -48,6 +49,13 @@ symmetry, positivity, determinant normalization, trace normalization,
 projector idempotence, and current premise content force that member.  It must
 run the hostile controls `O -> c O` and `a_d -> lambda a_d`.
 
+The leading `1/|C3|` is a stipulated orbit-density factor, not a group
+conjugation average.  A true conjugation average of invariant `A^-1 O`
+returns the operator unchanged.  `D_A` is a formal finite determinant, not a
+physical partition function until the carrier, measure, statistics, action,
+and source units are constructed.  The runner must distinguish real-boson,
+complex-boson, and Grassmann determinant powers.
+
 ## Local/global `C_p` discriminator
 
 For integer `p>=2`, compute exactly
@@ -61,9 +69,10 @@ E_p = (1/p) sum_(k=1)^(p-1) cot(pi k/p)^2
     = (p-1)(p-2)/(3p),
 ```
 
-where `F_p` is the local cyclic fixed-point density and `E_p` is the
-orientation-signed magnitude of the odd-signature eta invariant of
-`L(p,1)` under the stated convention.  Verify
+where `F_p` is the local cyclic fixed-point density and `E_p` is the magnitude
+of the **raw** odd-signature eta invariant of `L(p,1)` under an explicitly
+stated quotient action, round metric, orientation, and APS operator
+convention.  Verify
 
 ```text
 F_3 = E_3 = 2/9,
@@ -72,6 +81,8 @@ E_p-F_p = (p-1)(p-3)/(4p),
 
 so `p=3` is the unique nontrivial integer equality.  Keep the two objects
 typed separately: numerical equality is not a physical carrier theorem.
+Also verify that weights `(1,1)` and `(1,-1)` reverse the cotangent-product
+sign, and that `h_B=1` gives reduced eta `11/18` or `7/18`, not `2/9`.
 
 ## Differential-character type repair
 
@@ -97,14 +108,15 @@ The registered obligation retires only if the campaign derives all of:
 2. physical selection of the invariant source/readout class;
 3. action normalization fixing `a_d=1` without inserting the target;
 4. a native eta/holonomy or genuinely inhomogeneous Record-facing theorem
-   identifying `delta=h` with no extra factor; and
+   identifying `delta=h` with no extra multiplicative factor or reduced-eta
+   kernel correction; and
 5. independent audit retention.
 
 Anything less is conditional support or exact route repair, not TOE movement.
 
 ## Hard kill gates
 
-- kill closure if the physical carrier/source-action map is supplied;
+- kill closure if the physical carrier/source-action map is not supplied;
 - kill h-unit forcing if `a_d` or source scale remains free;
 - kill flat-holonomy support if the torsion character law fails;
 - kill `eta equals phase` if a `2 pi`, `pi`, or other coefficient is hidden;

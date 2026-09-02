@@ -1,6 +1,6 @@
 campaign: toe-autonomous-action-record-kernel-block49-20260902
 block: 49
-status: preregistered
+status: complete_backlog_no_pr
 branch: physics-loop/toe-autonomous-action-record-kernel-block49-20260902
 base_commit: 2cea9a595ee2f0a6c47096de6f821b905182f48c
 started_utc: 2026-09-02T09:06:45Z
@@ -24,4 +24,12 @@ upstream_open_stack:
   block_38_pr: 7827
 obligation_retired: false
 toe_percentage_movement: 0
-next_action: commit_preregistration_then_execute_exact_runner
+baseline: PASS_10_FAIL_0
+mutations: KILLED_34_SURVIVED_0
+independent: PASS_7_FAIL_0
+value_gate: FAIL_V1_V2_V3_V4_V5
+component_prior_art:
+  pr_6368: a4a7140f0921e70e119b9d641452aa5017a413a6
+  pr_6371: b1912555b31c8fa89d3d0af7b11bcd0a01ec6181
+  pr_7827: 17357c3714c3b3196c6b8fdc9b1a3bb300044181
+next_action: preregister_action_generated_joint_mark_hazard_cross_prediction

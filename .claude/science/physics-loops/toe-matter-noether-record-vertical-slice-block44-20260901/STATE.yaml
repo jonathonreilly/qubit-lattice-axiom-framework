@@ -1,5 +1,5 @@
 campaign: toe-matter-noether-record-vertical-slice-block44-20260901
-status: preregistered
+status: known_component_composition_checkpoint
 branch: physics-loop/toe-matter-noether-record-vertical-slice-block44-20260901
 parent_head: 2cea9a595ee2f0a6c47096de6f821b905182f48c
 origin_main_observed: 2cea9a595ee2f0a6c47096de6f821b905182f48c
@@ -11,12 +11,15 @@ pr7831_head_observed: ff8573cf054125db0dd0fcf07dba131280b6b736
 pr7832_head_observed: 9301c509842ea4835def91ad50f41bfd4f80ab1c
 target: same-law matter-functional-to-Noether-current-to-permanent-Record discriminator
 expected_best_outcome: NEW_CONDITIONAL_CONNECTOR
-hard_impact_gate: pending
-shipping_decision: pending
+hard_impact_gate: failed_V3_novelty_and_V5_program_impact
+shipping_decision: BACKLOG_NO_PR
 runner: scripts/admissibility_same_law_plaquette_noether_record_statistics_discriminator_2026_09_01.py
 review_loop_used: false
 audit_status: unset
 obligation_retirement: 0
 toe_percentage_movement: 0
 lock_owner: codex-toe-matter-noether-record-block44
-next_action: execute_exact_four_site_CAR_HCB_action_current_Record_twins
+baseline_result: 15_pass_0_fail
+mutation_result: 17_killed_0_survived
+pr_refresh: origin_main_and_pr7828_through_pr7832_unchanged_at_disposition
+next_action: preregister_same_source_OS_action_to_CAR_transfer_current_Record_decision_surface

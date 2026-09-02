@@ -8,18 +8,19 @@ current_origin_main: 36fe57a7a784df31bc2178c4b94dfc7caaa5d094
 current_branch: physics-loop/toe-light-maxwell-block53-20260902
 cycle: 1
 science_block: 53
-status: route_selected_and_preregistered
+status: block53_value_gate_discarded_pivoting
 target_status: best-honest-status
-active_route: compact_u1_wilson_to_source_free_maxwell
+active_route: pure_gauge_action_normalization_selection
 approach_family_coverage:
   - discrete_exterior_calculus
   - compact_wilson_variation
   - quadratic_fourier_kernel
   - canonical_gauss_reduction
 strongest_unresolved_proof_obligation: >
-  Compose the exact compact-U(1) lattice identities, smooth zero-monopole
-  continuum bound, and physical two-mode reduction on one explicit carrier
-  without treating the Wilson source/action choice as axiom content.
+  Determine whether current framework authority distinguishes fully specified
+  same-carrier pure-gauge theories with the competing beta=6 and beta=24
+  normalizations, or whether the action/coupling choice remains an explicit
+  non-derived import.
 hard_residual: >
   Separate what follows from any positive isotropic compact-U(1) plaquette
   stiffness from the still-open framework selection of that stiffness and its
@@ -33,15 +34,14 @@ open_imports:
 approved_primitives:
   - kinetic_isotropy_primitive
 no_go_routes: []
-trace_gate_classification: direct_blocker_closure
-reachability_to_target: partially_closes
+trace_gate_classification: frontier_discovery
+reachability_to_target: none
 review_loop: disabled_by_user
-review_disposition: direct_self_review_pending
-pr_status: preregistration_not_yet_pushed
+review_disposition: direct_value_gate_failed_v1_v3
+pr_status: deliberately_no_pr
 next_exact_action: >
-  Commit and push this preregistration, then implement the independent exact
-  runner for gauge invariance, compact Bianchi charge, Wilson variation,
-  continuum truncation, Hessian spectrum, Gauss reduction, and anisotropy.
+  Start a fresh block from current origin/main and execute the pure-gauge
+  beta=6 versus beta=24 same-slot action/normalization discriminator.
 stop_condition: >
   Continue through ranked non-fermion opportunities until the 24-hour budget
   expires, unless a global ownership or tooling conflict prevents safe work.

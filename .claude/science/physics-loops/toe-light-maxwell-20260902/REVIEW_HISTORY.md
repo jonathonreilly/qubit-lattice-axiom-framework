@@ -9,3 +9,23 @@
   may have larger downstream blast radius; queued as the next block.
 - Review-loop: deliberately not invoked, per explicit user instruction.
 - Direct conformance review: pending implementation and fresh runner output.
+
+## Post-execution value review
+
+- Implemented the exact compact identities, nonlinear Wilson variation,
+  smooth refinement, Euclidean kernel, Gauss Schur reduction, transfer-pole
+  distinction, anisotropy, zero-mode, and authority guards.
+- Final candidate runner result before discard: `PASS=30 FAIL=0`.
+- Independent hostile review caught and corrected a material draft error: the
+  four-dimensional Euclidean Hessian has one gauge null plus three positive
+  directions. Two local transverse modes arise only after Gauss reduction at
+  nonzero spatial momentum; torus zero modes remain separate.
+- Independent novelty review found the decisive value issue: after supplying
+  the Wilson action, the bridge uses standard mathematical machinery and does
+  not require framework-retained primitives.
+- Fresh ownership/main check remained at
+  `36fe57a7a784df31bc2178c4b94dfc7caaa5d094`, open through PR #7833; no
+  Maxwell owner appeared. Ownership was clear, but V1 and V3 still failed.
+- Disposition: candidate source note, runner, and cache deleted; no PR. The
+  next block attacks gauge-action/normalization selection itself.
+- Review-loop remained disabled by user instruction.

@@ -1,15 +1,15 @@
 # Claim-status certificate
 
 ```yaml
-actual_current_surface_status: bounded-support
-target_claim_type: bounded_theorem
-trace_class: direct_blocker_closure
-reachability_to_target: partially_closes
-conditional_surface_status: "source-free Maxwell on the supplied positive isotropic compact-U(1) Wilson action and smooth zero-monopole branch"
+actual_current_surface_status: open
+target_claim_type: null
+trace_class: frontier_discovery
+reachability_to_target: none
+conditional_surface_status: "scratch runner verified source-free Maxwell on the supplied positive isotropic compact-U(1) Wilson action and smooth zero-monopole branch; payload discarded under V1/V3"
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "The lattice theorem can be exact on its stated carrier, but the physical Wilson source/action identification is a supplied input outside the four axioms."
-audit_required_before_effective_retained: true
+claim_type_reason: "No claim ships: the candidate theorem was exact on its supplied carrier but failed the promotion value gate and its payload was discarded."
+audit_required_before_effective_retained: false
 bare_retained_allowed: false
 ```
 
@@ -21,5 +21,5 @@ Dependency classes:
 - explicit sector condition: smooth zero-monopole continuum family;
 - open physical bridges: action selection and Record-readable field strength.
 
-Review-loop is disabled by explicit user instruction. Direct self-review and
-the repository conformance checklist remain required before any PR.
+Review-loop is disabled by explicit user instruction. Direct self-review
+rejected the candidate PR under V1/V3, so there is no claim for audit.

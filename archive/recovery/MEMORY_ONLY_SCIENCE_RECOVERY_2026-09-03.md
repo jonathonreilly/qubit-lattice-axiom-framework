@@ -118,6 +118,13 @@ claim remains open; the same report says a generic heat-inequality attempt had
 26 counterexamples in 120 unconstrained trials and therefore required more
 structure.
 
+**Recovery update:** that narrow reconstruction is now on remote review surface
+PR #7877. Its fresh runner derives the residual multiplier `3` symbolically,
+proves the state-by-state second-order cancellation over exact rational
+matrices, checks the independent similarity-transform reading, and reports
+`TOTAL: PASS=25 FAIL=0`. The missing historical bytes remain missing; the
+scientific identity is no longer memory-only.
+
 ## Additional memory-only reports queued for reconstruction
 
 These entries preserve contemporary reports whose original `/tmp` artifacts
@@ -220,7 +227,8 @@ onto a remote review path.
 
 ## Reconstruction priority
 
-1. Rebuild and independently verify W101's exact cancellation.
+1. **Completed:** W101's exact cancellation was independently rebuilt in PR
+   #7877.
 2. Turn R1 into a bounded, reproducible Record-dynamics note and runner.
 3. Turn R2 into an interaction-stability map with exact finite-volume scopes.
 4. Reconstruct the carrier/chirality and anchored-cell identities.

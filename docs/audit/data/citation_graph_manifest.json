@@ -1,6 +1,6 @@
 {
- "edge_count": 15799,
- "node_count": 5572,
+ "edge_count": 15804,
+ "node_count": 5573,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18733,6 +18733,10 @@
   "u1_minimal_physical_neighbor_conservative_gauge_dynamics_uniquely_maxwell_bounded_theorem_note_2026-09-03": {
    "deps_hash": "def91c1a636d",
    "out_degree": 4
+  },
+  "u1_quantum_link_exact_local_backreaction_and_colored_floquet_energy_fork_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "58f8078fbd1a",
+   "out_degree": 5
   },
   "u1_radius_one_onsite_unitary_minimal_maxwell_tick_bounded_no_go_note_2026-09-03": {
    "deps_hash": "1f68ba61b53b",

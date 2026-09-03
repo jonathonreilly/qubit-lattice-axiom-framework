@@ -54,9 +54,11 @@ Parse:
 - `--checkpoint-interval DURATION`: optional, default `30m`;
 - `--deep-block DURATION`: optional sustained hard-problem block, default
   `90m`;
-- `--no-pr`: do not open review PRs;
+- `--no-pr`: planning/preregistration only; it cannot suppress preservation
+  once a scientifically interesting result exists;
 - `--no-review-loop`: skip milestone `/review-loop` only if the user asked;
-- `--no-commit`: do not create commits.
+- `--no-commit`: planning/preregistration only; it cannot suppress
+  preservation once a scientifically interesting result exists.
 
 If `--runtime` is absent and the user wants execution, ask how long to run
 before launching unattended work. Do not assume a fixed default. If the user
@@ -72,8 +74,27 @@ queue exhaustion condition is reached.
 For science loops, execute on clean remote branches and open review PRs for
 each coherent block. Do not merge those PRs and do not push science work
 directly to `main`.
-No supervisor prompt may override this by telling the worker not to open PRs
-unless the user explicitly supplied `--no-pr`.
+
+**Science-preservation floor (owner decision 2026-09-02).** Every
+scientifically interesting result must be committed, pushed to a remote
+science branch, and exposed in a PR for review and classification. This
+includes positive theorems, bounded or conditional results, countermodels,
+no-go attempts after honest demotion, useful failed derivations with named
+walls, and exploratory computations that materially change the opportunity
+map. Audit status, an unaudited parent, dependency-chain state, V1-V5 outcome,
+cluster-cap outcome, or predicted TOE-score impact may classify the PR as
+draft, archival, backlog, superseded, or not promotion-ready; none may be used
+to delete the result, leave it only on local disk, or decline a PR entirely.
+A low-value route should be rejected before spending a cycle on it. Once
+interesting science has been produced, preservation is mandatory.
+
+`--no-pr` is therefore valid only for planning or preregistration that produces
+no scientific result. If execution produces interesting science despite that
+flag, preserve it in a draft classification PR and explain the override. No
+supervisor prompt, value gate, audit state, or parent-stack condition may
+weaken this floor. A cluster may use one clearly indexed draft classification
+PR rather than many standalone PRs, but every result and commit must be in the
+PR's diff or reachable stacked chain and listed in its body.
 
 - Start science execution from current `origin/main` after `git fetch origin`.
 - Use a dedicated branch namespace such as `physics-loop/<slug>-YYYYMMDD`.
@@ -99,16 +120,18 @@ unless the user explicitly supplied `--no-pr`.
   ([`docs/repo/vocab_extension_queue.json`](../../../repo/vocab_extension_queue.json))
   independent of audit rows; they do not block the physics block from
   landing. Vocabulary drift is never a stop condition for a physics loop.
-- At each science-block closure, unless `--no-pr` was supplied, open one review
-  PR for that block before pivoting to the next opportunity. Use
+- At each science-block closure, open one review or draft-classification PR
+  for that block before pivoting to the next opportunity. Use
   `gh pr create` when authenticated; otherwise write `PR_BACKLOG.md` with
-  exact commands and reasons PR creation failed.
+  exact commands and reasons PR creation failed, push the complete branch to
+  the remote, and retry PR creation at the next checkpoint.
 - After opening a PR, verify it with `gh pr view` or `gh pr list`. If the PR is
   dirty against its intended base, update the branch or explicitly mark it as
   stacked in the PR body and `HANDOFF.md`.
 - If PR creation or verification fails for network/auth reasons, write a
   complete `PR_BACKLOG.md` and continue the campaign if runtime remains.
-  Missing GitHub access is a delivery degradation, not a science stop.
+  Missing GitHub access is a delivery degradation, not a science stop. Do not
+  delete the local worktree until the remote branch and PR are both verified.
 - PR titles must include `[physics-loop]`, the lane/block slug, the block's
   claim type, AND its honest status — two separate slots, each drawn from its
   own canonical enum. A claim type is not a status. The claim type is one of
@@ -832,26 +855,31 @@ For publication-facing or quantitative work, also inspect
    insight. "Plug already-derived hypercharges into the photon-charge formula
    for hadron X" is the canonical churn shape; do not produce it.
 
-   **PROMOTION VALUE GATE (mandatory pre-PR self-review).** If the campaign goal
+   **PROMOTION VALUE GATE (mandatory pre-promotion self-review).** If the campaign goal
    includes "promote bounded → retained" or any retained-positive movement, the
    agent MUST answer the following questions IN WRITING in a value-gate section
-   of `OPPORTUNITY_QUEUE.md` or `REVIEW_HISTORY.md` before opening any PR. This
+   of `OPPORTUNITY_QUEUE.md` or `REVIEW_HISTORY.md` before marking a PR
+   promotion-ready. This
    value-gate record is not an audit certificate and must not state or predict
-   an audit verdict. Failing any single question forbids the PR — discard the
-   cycle and pivot, do NOT downgrade to a lower-value pattern just because work
-   has already been done.
+   an audit verdict. Failing any single question forbids a promotion-ready
+   classification, not preservation. Preserve work already performed in a
+   draft review/classification PR with the failed questions and honest status,
+   then pivot. Do not manufacture a lower-value promotion claim merely because
+   work has already been done, and never discard the scientific payload.
 
-   | # | Question | Required answer to allow PR |
+   | # | Question | Required answer to allow promotion-ready classification |
    |---|---|---|
    | V1 | What SPECIFIC verdict-identified obstruction does this PR close? | Quote the exact obstruction text from the parent row's `verdict_rationale`. "The upstream is unratified" does NOT qualify — that's a dependency-chain issue, not a derivation gap. |
    | V2 | What NEW derivation does this PR contain that the audit lane doesn't already have, and **what repo search did you run to establish that** (step 2)? | One paragraph describing genuinely new content. "Sympy-exact verification of the existing primary runner's identities" is NOT new derivation. "Pattern A narrow rescope of the algebraic core" is NOT new derivation if the audit lane already understands the algebra; it just creates a new audit-pending row with no closer derivation. Quote the step-2 prior-art search commit, commands, hits, and matched-hit classifications; an unevidenced novelty claim fails this question. |
-   | V3 | Could the audit lane already complete this derivation from existing retained primitives + standard math machinery (Schur complement, cube-root-of-unity arithmetic, Casimir formulas, Pauli matrix algebra, etc.)? | "No" — explain why the framework's retained primitives are necessary. If "yes", the cycle is performative and the PR must not be opened. |
+   | V3 | Could the audit lane already complete this derivation from existing retained primitives + standard math machinery (Schur complement, cube-root-of-unity arithmetic, Casimir formulas, Pauli matrix algebra, etc.)? | "No" — explain why the framework's retained primitives are necessary. If "yes", do not launch the cycle. If the answer is learned only after work is done, preserve the result in a draft classification PR and mark it non-promotion-ready. |
    | V4 | Is the marginal content non-trivial (not a textbook identity, not a definition restated)? | "Yes" with one-sentence justification. Examples that fail: "real shifts don't change imaginary parts", "(1/sqrt(N)) * I has matrix elements 1/sqrt(N)", "scaling by mu preserves slope". |
    | V5 | Is this a one-step variant of an already-landed cycle in this campaign, **or of anything already on `origin/main`**? | "No" — name the closest prior cycle and explain the structural distinction. "Same matrix structure, different physical interpretation" is NOT a structural distinction; it's relabeling. Refresh and check `origin/main`, not only the campaign's own cycles, and record the searched commit — a landed note you did not know about still counts, and a more general landed version outranks your special case. |
 
-   A `frontier_discovery` route satisfies this gate only if it introduces a
+   A `frontier_discovery` route satisfies promotion-ready classification only
+   if it introduces a
    genuinely new structure, falsifier, or hard-premise test; it must not be
-   sold as closure.
+   sold as closure. A real but lower-value frontier result is preserved in a
+   draft classification PR.
 
    Review-loop triage of the 2026-05-02 audit-backlog campaign found too many
    branches whose marginal repo value was review-prep rather than new science.
@@ -909,8 +937,9 @@ For publication-facing or quantitative work, also inspect
    audit lane wants done — but they are NOT bounded → retained promotion work.
    When invoked under `--mode source-note-hygiene`, these are allowed at a
    max of 5 per session and must NOT be conflated with retained-promotion
-   campaigns. When invoked under any other mode, treat Pattern-C-shaped output
-   the same as any other PR: it must pass the V1-V5 gate.
+   campaigns. When invoked under any other mode, Pattern-C-shaped output must
+   pass V1-V5 to be promotion-ready; otherwise preserve it in an honestly
+   classified draft PR.
 9. **Execute one major cycle.** Produce a theorem note, runner/log pair,
    import-retirement audit, literature bridge, no-go packet, or demotion
    packet. Keep edits scoped to the chosen route.
@@ -930,8 +959,10 @@ For publication-facing or quantitative work, also inspect
    `REVIEW_HISTORY.md` and `HANDOFF.md`; do not update the live active review
    queue or other repo-wide authority surfaces before the later review and
    integration process. The local disposition must be one of `pass`, `demote`,
-   or `block`; `self-review pending` is not enough to push a PR. Either fix
-   locally, demote locally, archive locally, or select a new route.
+   or `block`; `self-review pending` is not enough to mark a PR ready. It is
+   enough to push a draft classification PR so the work cannot be lost. Either
+   fix locally, demote locally, archive remotely in that draft PR, or select a
+   new route.
 14. **Close the cycle honestly.** Use the narrowest honest status inside the
     branch artifacts: candidate retained-grade only when the certificate names
     an audit-ready `claim_type`; otherwise exact support, bounded support,
@@ -942,9 +973,11 @@ For publication-facing or quantitative work, also inspect
 15. **Open review PRs.** At each block closure, run the conformance gate in
     Science Delivery And PR Policy against
     `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` and fix what it
-    catches, then open or prepare one PR for the coherent science block unless
-    `--no-pr` was supplied. In campaign mode, a missing PR must become
-    `PR_BACKLOG.md` and the campaign must continue if runtime remains.
+    catches, then open one ready review PR or honestly labeled draft
+    classification PR for the coherent science block. In campaign mode, a
+    transiently missing PR must become `PR_BACKLOG.md`, the complete branch
+    must be pushed remotely, PR creation must be retried at the next
+    checkpoint, and the campaign must continue if runtime remains.
 16. **Continue the campaign or stop.** After PR/backlog handling, if runtime
     remains and the current lane is blocked or closed, pick the next
     `OPPORTUNITY_QUEUE.md` item and continue. Stop the whole campaign only
@@ -1031,8 +1064,10 @@ campaign, the loop must run a cluster-cap evaluation BEFORE opening PR
 #N for any N >= 3 in that cluster. Use a separate evaluator agent only
 when the active tool policy and user authorization allow it; otherwise
 the loop agent applies the same evaluator brief locally and records the
-judgment in `HANDOFF.md` or `PR_BACKLOG.md`. The evaluator's verdict
-gates only the PR opening — science work continues regardless.
+judgment in `HANDOFF.md` or `PR_BACKLOG.md`. The evaluator's verdict gates
+whether the block merits a standalone promotion-ready PR. It never gates
+remote preservation: a `BACKLOG` block must be added to an indexed draft
+classification PR (existing cluster PR or a new one).
 
 ### Evaluator brief
 
@@ -1062,12 +1097,12 @@ the current loop agent running an isolated local pass with this brief:
 >    a single combined PR for the cluster would already cover?
 > 4. **Marginal review value.** Is the per-PR review effort justified
 >    by the per-PR content delta, or would the audit lane be better
->    served by a single combined PR (or commits-only into a future
->    campaign)?
+>    served by a single combined draft classification PR?
 >
 > Output a one-line verdict: `OPEN` (proposed PR is genuinely new and
-> should be opened) or `BACKLOG` (content is real but should go to
-> `PR_BACKLOG.md` for a future campaign or combined PR). Justify in
+> should be opened as a standalone promotion-ready review surface) or
+> `BACKLOG` (content is real and should go now to a draft classification PR,
+> either combined with its cluster or standalone). Justify in
 > ~200-400 words. Do NOT consider the audit verdict — only the PR
 > opening decision. The evaluator does NOT decide audit outcomes.
 
@@ -1075,9 +1110,9 @@ the current loop agent running an isolated local pass with this brief:
 
 If the deliverable note, paired runner output, or local review context is
 unavailable enough that the evaluator cannot make the judgment, default
-to `BACKLOG` for PRs N >= 3 — fail-closed on the cap rather than
-fail-open. The science work still continues; the commit lands on the
-loop branch and is recorded in `PR_BACKLOG.md`.
+to `BACKLOG` for PRs N >= 3 — fail-closed on promotion priority rather than
+fail-open. The science work still continues; the commit lands on the remote
+loop branch and is exposed in a draft classification PR.
 
 ### Anti-patterns (evaluator should reject)
 
@@ -1128,7 +1163,8 @@ In short:
 - stop cleanly only when runtime, max cycles, global queue exhaustion, or a
   global safety/tooling condition dictates;
 - push only dedicated science block branches;
-- open or prepare one review PR per science block at block closure;
+- open one ready review PR or draft classification PR per science block at
+  block closure;
 - never push science work to `main`.
 
 ## Stop Conditions
@@ -1149,12 +1185,14 @@ Stop and write a clear `HANDOFF.md` when:
   V1-V5 of the Promotion Value Gate (workflow step 8). If the only PRs the
   campaign can produce are textbook re-verifications, near-tautological
   rescopes, or one-step variants of landed cycles, the campaign must stop
-  rather than fill the cycle cap;
+  rather than start more low-value cycles. Preserve all cycles already run in
+  draft classification PRs before stopping;
 - **(no volume cap)**: there is NO fixed PR-count cap per campaign or per
   day (owner decision 2026-06-11; the former 5-PRs-per-24-hour volume cap
-  is removed). PR volume is gated by CONTENT, not by a counter: every PR
-  must pass the V1-V5 Promotion Value Gate, negative claims must pass
-  N1-N8, and the judgment-based cluster-cap evaluator applies from the
+  is removed). Promotion-ready PR volume is gated by CONTENT, not by a
+  counter: every promotion-ready PR must pass the V1-V5 Promotion Value Gate,
+  negative claims must pass N1-N8 at their asserted scope, and the
+  judgment-based cluster-cap evaluator applies from the
   3rd PR in a parent-row family. A campaign stops on quality-gate
   exhaustion (the two conditions above), never on a PR count;
 - **cluster cap evaluator triggered**: at the 3rd and every subsequent
@@ -1167,9 +1205,9 @@ Stop and write a clear `HANDOFF.md` when:
   Use a separate evaluator agent only when the active tool policy and
   user authorization allow it; otherwise run the same evaluator brief
   locally. The cap is JUDGMENT-BASED, not a hard 2-PR ceiling. The
-  evaluator's verdict gates only the PR opening — science work
-  continues either way (commits-only into the loop branch, recorded in
-  `PR_BACKLOG.md` if the evaluator says "backlog"). Past N=2 in a
+  evaluator's verdict gates only standalone promotion-ready disposition —
+  science work continues either way and is added to a draft classification
+  PR if the evaluator says `BACKLOG`. Past N=2 in a
   cluster the burden is on the proposed PR to demonstrate non-churn
   content, not on the cap to be lifted;
 - the worktree changes externally in a way that affects the route;

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/record_formation_on_the_emergent_vacuum_parity_forced_odds_check_2026_09_02.py
+runner_sha256: 1796124f6edbc4a4c8bec4a19d418baa93d9937aadc54fb418d8cbfaf7b9c425
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+PASS A1 [exact] cube V=8 E=12 edge sites: R0-R4 pair by pair, 6 face loops, 1 relation (the product of all six) = +I, k=5, no -I in the group 2^5, code dim 2^12/2^5 = 128 = 2^(V-1)
+PASS A2 [exact] grid3x3 V=9 E=12 edge sites: R0-R4 pair by pair, 4 face loops, 0 relations (none), k=4, no -I in the group 2^4, code dim 2^12/2^4 = 256 = 2^(V-1)
+PASS A3 [exact] grid3x3+pendant V=10 E=13 edge sites: R0-R4 pair by pair, 4 face loops, 0 relations (none), k=4, no -I in the group 2^4, code dim 2^13/2^4 = 512 = 2^(V-1)
+PASS A4 [exact] the emergent vacuum is on each cluster the UNIQUE code state with B_v = +1 at every vertex: one coset of 32, 16 and 16 records, registering no record number
+PASS B1 [exact] cube vacuum: allowed set uniform, 32 of 4096 at p = 1/32, a LINEAR subspace of F2^E, dim 5 = E - V + 1 = 12 - 8 + 1, exactly what the 8 single-vertex conditions cut out
+PASS B2 [exact] grid3x3 vacuum: allowed set uniform, 16 of 4096 at p = 1/16, a LINEAR subspace of F2^E, dim 4 = E - V + 1 = 12 - 9 + 1, exactly what the 9 single-vertex conditions cut out
+PASS B3 [exact] grid3x3+pendant vacuum: allowed set uniform, 16 of 8192 at p = 1/16, a LINEAR subspace of F2^E, dim 4 = E - V + 1 = 13 - 10 + 1, exactly what the 10 single-vertex conditions cut out
+PASS B4 [exact] the Z-type subgroup of <S_f, B_v> has rank V - 1 = 7, 8, 9, sign +1 throughout (phases [0]), and EQUALS <B_v>: no condition wider than a vertex star
+PASS C1 [exact] cube: odds at all 12 sites start at 1/2, and in each of the 24 (site, value) cases the allowed set stays uniform on 16 and the odds at the 11 other sites stay at 1/2
+PASS C2 [exact] cube, odds at (0,4) as records form: [none]1/2 [(0,1)=1]1/2 [(6,7)=1]1/2 [(0,1)=1,(5,7)=1]1/2 [(0,1)=1,(0,2)=0]1 [(0,1)=1,(0,2)=1]0 -- never between, leaving 1/2 only when the star of vertex 0 closes
+PASS C3 [exact] grid3x3: odds at all 12 sites start at 1/2; a record at one of the 8 sites at a degree-2 corner forces its partner to 0 or 1 (16 cases), nothing else; a record at the other 4 changes nothing
+PASS C4 [exact] grid3x3+pendant: the bridge site (0,9) has odds 0 with NO record present -- vertex 9 has degree 1, so its parity condition alone forces the site: a record of value 1 never forms. The other 12 start at 1/2
+PASS C5 [exact] cube, all 66 site pairs x 4 values: odds elsewhere change in exactly the 96 cases where the records close a vertex star, never in the other 168; the changed site is its third edge
+PASS D1 [exact] cube: the allowed set's cut space has dim 7, with 63 cocircuits of weights 3-6, every site forced by exactly 25 minimal record sets, the two smallest its endpoints' two-record vertex stars
+PASS D2 [exact] grid3x3: the allowed set's cut space has dim 8, with 53 cocircuits of weights 2-5, minimal forcing-set counts per site [13, 25]
+PASS D3 [exact] grid3x3+pendant: the allowed set's cut space has dim 9, with 54 cocircuits of weights 1-5, minimal forcing-set counts per site [1, 13, 25]
+PASS D4 [exact] on all three clusters every listed set is deterministic and inclusion-minimal, and an exhaustive sweep of all record sets of size <= 3 against the cocircuit prediction gives 0 mismatches
+PASS E1 [exact] cube and grid3x3: all 264 and 264 ordered (site,value) pairs give identical joint odds either way, 0 and 0 mismatches; 40 and 40 shuffled full orders over 12 sites close on the same 1/32, 1/16
+PASS E2 [exact] grid3x3+pendant: all 312 ordered pairs give identical joint odds, 0 mismatches, and 40 shuffled full orders over 13 sites close on 1/16 -- the bridge site's value is forced alike
+PASS E3 [exact] every Z_e, Z_f pair commutes exactly on all three clusters, so the stipulated Lueders conditionings commute; the same 264 pairs give 0 and 0 mismatches on group G's two NON-stabilizer states
+PASS F1 [exact] cube, a fermion pair at the adjacent corners 0 and 1 (B_v = -1 there): allowed set 32 of 4096, a genuine coset of the vacuum's subspace, uniform at p = 1/32, odds 1/2 at all 12 sites
+PASS F2 [exact] the same for the face-diagonal pair (0,3) and the antipodal (0,7): 32 and 32 allowed patterns, both cosets of the vacuum's subspace, uniform, odds 1/2 all round
+PASS F3 [exact] on every allowed pattern of all three pair states the parity on star(v) is 1 at both corners, so n_v = 1 EXACTLY; cut space and its 63 cocircuits of weights 3-6 are the vacuum's, only forced values differ: ((0,1),(0,2)) send (0,4) to 1,0,0,1 not 0,1,1,0
+PASS G1 [exact] cube N = 2 sector, 28 cosets: 2^5 H_enc is Gaussian-integer and an exact diagonal gauge in {1, i, -1, -i} carries it entrywise onto Jordan-Wigner, no residual
+PASS G2 [exact] ACROSS sectors, sqrt(a)|vacuum> + sqrt(b)|pair(0,1)> at (a,b) = (1/2,1/2) and (1/3,2/3): support exactly 64 and 64 = 2 cosets x 32, odds a/32 and b/32, 0 cancellation zeros: disjoint supports
+PASS G3 [exact] the Slater ground state of two particles at E = -4: support 512 = 16 cosets, uniform at 1/512, 384 CANCELLATION zeros = 12 cosets with a legal weight-2 pattern: exactly the 12 corner pairs on one x-face
+PASS G4 [exact; last clause numerical 1e-12] a coherent mix of two E = -4 states: support 640, 256 cancellation zeros = 8 cosets against 384 = 12 for the single state, while the 3-fold manifold's projector has 0 vanishing diagonal entries of 28: they are the state's
+SUMMARY: the odds at a site are 1/2 or forced, never between; a record elsewhere changes them only when a vertex parity closes; the finished set carries the same odds in any order.
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

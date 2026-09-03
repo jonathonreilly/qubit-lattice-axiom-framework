@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py
+runner_sha256: e7555a77393e22ce41e8dfa119befd0db6c3603dd950fc6c33b8abc8de31335d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.52
+status: ok
+----- stdout -----
+==============================================================
+A  THE OCCUPANCY TERM IS A PURE CHEMICAL POTENTIAL [exact]
+==============================================================
+  clusters: open 2x2x2, open 3x3x3, torus 3^3, torus 4^3
+PASS A1 B_i^2 = I and all B_i mutually commute on all four clusters
+PASS A2 A_ij anticommutes with exactly B_i, B_j: 0 wrong of 16029 (hop, site) pairs
+PASS A3 [sum_k B_k, T_ij] = -i (B_i^2 - B_j^2) A_ij = 0: 0 failures
+  dense 16-dim block: ||[sum B, T]|| = 0.00e+00, ||[B_i, T]|| = 2.00e+00
+PASS A4 sum_i B_i commutes with every hop; a single B_i does not (norm 2)
+PASS A5 (V I - sum_i B_i)/2 = N, integer spectrum in [0, V]: 0,2,4
+  so -J_B sum_i B_i = -J_B V + 2 J_B N: 2 J_B per fermion, nothing else
+
+==============================================================
+B  AT J_B = 0: THE HALF-FILLED STAGGERED SEA
+==============================================================
+PASS B1 [numerical, 4e-14] spectra symmetric about 0: max |eps + rev| = 3.4e-14
+PASS B2 min_N E_N = E_{V/2}, ties [#neg, #neg+#zero]; plain 4^3 20 zero modes, ties N in [22, 42]
+PASS B3 cube exhaustive: 32 sectors; min over (sector, N) at J_B = 0 is -6.928203 = -4 sqrt3, unique all-(-1) at N = 4, margin 0.456067
+  4^3, 16 twisted uniform + 5 structured + 1000 random: -78.383671769 = -32 sqrt6
+  6^3, 16 + 300 random (best random -230.81): -258.857540 ; 8^3: -611.811768
+PASS B4 4^3 minimum at J_B = 0 is -32 sqrt6, the Cauchy-Schwarz floor over ALL link-sign fields
+PASS B5 [search] 6^3 -258.857540, 8^3 -611.811768, open 3x3x3 -26.040600 stag vs -21.213203 plain
+
+==============================================================
+C  THE GROUND STATE AS A FUNCTION OF J_B (twist-minimised)
+==============================================================
+  4^3 (V=64), w = W/V per site, n = N/V:
+      J_B  |  w plain    n plain  twist |   w stag     n stag  twist | lower
+  0.000000 | -1.060660  0.50000  111 | -1.224745  0.50000  111 | stag
+  0.500000 | -0.593750  0.34375  000 | -0.724745  0.50000  111 | stag
+  0.823267 | -0.390788  0.31250  011 | -0.401477  0.50000  111 | stag
+  0.866025 | -0.364064  0.31250  011 | -0.364064  0.43750  000 | tie
+  1.224745 | -0.224144  0.12500  111 | -0.134464  0.25000  000 | plain
+  1.732051 | -0.097317  0.12500  111 |  0.000000  0.00000  000 | plain
+  3.000000 |  0.000000  0.00000  000 |  0.000000  0.00000  000 | tie
+PASS C1 [numerical, 1e-9] the optimal twist changes with J_B: 2 distinct staggered twists in the 4^3 table
+PASS C2 [exact] 4^3: stag KS W = -24 - 24 sqrt2 - 8 sqrt3 + 56 J vs plain (0,1,1) -24 - 24 sqrt2 + 40 J; difference 16*J - 8*sqrt(3)
+PASS C3 [numerical, 1e-9] J_B* = sqrt3/2 = 0.866025404 (4^3), 0.849332 (6^3), 0.867676 (8^3)
+  emptying thresholds J_B >= |eps_min|/2: plain 3, staggered sqrt3, all tori;
+  open 3x3x3 2.121320 = 3 sqrt2/2 and 1.224745 = sqrt6/2; cube 1.5000, all 32 tie at W = 0
+PASS C4 [exact where surds] plain empties at J_B = 3, staggered at sqrt3, all tori
+PASS C5 [exact] on the cube all-(-1) loses to the 2-flux class at sqrt3 - (1 + sqrt2)/2 = 0.524944
+
+==============================================================
+D  THE EXTENDED CERTIFICATE ON 4^3, J_B <= sqrt(3/8) [exact]
+==============================================================
+  tr M^2 = 6V, D M D = -M for any field, so sum_occ eps^2 <= 3V and W(J) >=
+  min_m [-sqrt(3 V m) + 2 J m] = -V sqrt(3/2) + J V for J <= sqrt(3/8) = 0.612372,
+  and -3V/(8J) above it
+PASS D1 [exact] bipartite degree-6 premises: tr M^2 = 384 and D M D = -M
+PASS D2 [exact] the 4^3 flat-twist staggered sea has W = 64*J - 32*sqrt(6) and attains the floor at every J_B <= sqrt(3/8): slack <= 0.0e+00
+PASS D3 [numerical, 1e-9] the floor holds for all 1021 fields at 16 values of J_B: 0 violations
+
+==============================================================
+E  HOW LONG EXACTLY HALF FILLING SURVIVES
+==============================================================
+PASS E1 [exact] 4^3 half filled for J_B < 4 sqrt6 - 3 - 3 sqrt2 - sqrt3 = 0.823267, and < sqrt6/2 = 1.224745 within its own twist
+PASS E2 [numerical, 1e-8] 6^3 half filled for J_B < 2 sqrt3 - 3 = 0.464102, 8^3 for J_B < 0.306846
+
+==============================================================
+F  THE THERMODYNAMIC LIMIT [Bloch quadrature, L = 224]
+==============================================================
+PASS F1 [numerical, 1e-9] Bloch 2 sum cos q_a and +-sqrt(6 + 2 sum cos q_a) match real space at L = 4, 6, 8 to 2.7e-14
+      J_B  |   w plain     n plain |    w stag      n stag | lower
+  0.000000 | -1.0024184  0.500028 | -1.1938011  0.500000 | stag
+  0.400000 | -0.6480922  0.385838 | -0.7946948  0.495420 | stag
+  0.865400 | -0.3510864  0.252133 | -0.3510874  0.441724 | stag
+  1.200000 | -0.2126531  0.167895 | -0.1051182  0.267308 | plain
+  1.732051 | -0.0810372  0.085917 |  0.0000000  0.000000 | plain
+  3.000000 |  0.0000000  0.000000 |  0.0000000  0.000000 | tie
+PASS F2 [numerical] J_B* = 0.8654029 +- 3e-6 in the limit, fillings 0.4417 staggered and 0.2521 plain there
+  (1/2 - n(J)) / ((2/(3 pi^2)) J^3) at J = 0.15, 0.2, 0.3: 0.9663, 1.0215, 1.0258
+  at J = 0.001 the emptied ball |k| < 2J is finer than the grid: n = 0.4999996
+PASS F3 [exact + numerical] gapless at (pi, pi, pi), so any J_B > 0 dopes the sea: 1/2 - n(J_B) -> (2/(3 pi^2)) J_B^3
+PASS F4 [exact] in the limit plain empties at J_B = 3 (bottom -6), staggered at sqrt3 (bottom -2 sqrt3)
+
+runtime 4.2 s (budget 120 s)
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

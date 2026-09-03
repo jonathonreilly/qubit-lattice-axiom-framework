@@ -1,6 +1,6 @@
 {
- "edge_count": 15816,
- "node_count": 5575,
+ "edge_count": 15821,
+ "node_count": 5576,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17401,6 +17401,10 @@
   "sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28": {
    "deps_hash": "7a3ee4490765",
    "out_degree": 2
+  },
+  "spin_half_cubic_ice_exact_rk_coulomb_correlations_and_finite_qubit_photon_phase_bridge_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "66cfd875c50b",
+   "out_degree": 5
   },
   "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",

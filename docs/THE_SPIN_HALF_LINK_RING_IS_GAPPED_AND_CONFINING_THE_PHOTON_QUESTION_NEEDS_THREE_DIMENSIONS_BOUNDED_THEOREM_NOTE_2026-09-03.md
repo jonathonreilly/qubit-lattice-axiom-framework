@@ -239,7 +239,7 @@ The scratch computation this note lands from is reproduced here, and four of its
 
 1. **The background labels.** PR #7893's `rho^{sea}` is admissible at odd `z_v` *with matter*; read at `n_v = 0` it is the uniform `rho = -1/2`, which fails graph
    neutrality and gives an empty sector. The parity condition survives; the label does not transfer, and the background used here is declared, not inherited.
-2. **No crystalline order.** The ground state is unique with no degeneracy at any `L <= 20` and no translational-symmetry breaking; the period-2 alternation in the
+2. **No ordered pattern.** The ground state is unique with no degeneracy at any `L <= 20` and no translational-symmetry breaking; the period-2 alternation in the
    flux profile is the explicit background, with every other Fourier component at `6.0e-16`.
 3. **The winding sectors are not degenerate.** Their splitting is `0.60356 lambda L`, linear in `L`, not exponentially small.
 4. **`xi_gap` is `1.68` columns, not `0.33`.** The source fit took `ln |Delta_1(L) - Delta_1(20)|` including `L = 20` itself, where the argument is identically zero
@@ -290,7 +290,7 @@ string: Phi = +-1 one-dimensional with H = 0 exactly, lying |E_0| = 0.60356 lamb
 three_d: 2x2xL tube (z_v = 4, rho = 0 admissible and neutral, 8L links, 5L faces): dim = 114,548,2970,16892,98466 and Delta_1 = 1.1260,1.1034,0.5834,0.9025,0.4623 at L = 2..6, oscillating with the parity of L -- NO FIT CLAIMED; 2x2x2 torus (z_v = 6, 24 links, 24 faces): dim 9600, E_0 = -9.026720914, Delta_1 = 1.627609934, and only k = 0, pi available so no dispersion resolvable; Pauling 2.5^N gives 1526 at N = 8 against the exact 9600 and 2.9e25 at N = 64 against a 2^18 budget
 sign_structure: every off-diagonal element of -lambda sum_f P_f is -lambda <= 0 and every diagonal element 0, on the ring at L = 4..20 and on every 3D block here, so exp(-beta H) has non-negative matrix elements: no sign problem
 not_shown: no gapless transverse mode in two or three dimensions is shown, computed, suggested, or excluded; the ring is one plaquette high and has no transverse direction
-declared_departures: PR #7893's rho^{sea} label does not transfer to the matter-free case (uniform rho = -1/2 gives an empty sector); no crystalline order is found; the winding splitting is linear, not exponential; xi_gap is 1.682 columns, the source's 0.33 being a fit artefact of including the identically-zero last residual
+declared_departures: PR #7893's rho^{sea} label does not transfer to the matter-free case (uniform rho = -1/2 gives an empty sector); no ordered order is found; the winding splitting is linear, not exponential; xi_gap is 1.682 columns, the source's 0.33 being a fit artefact of including the identically-zero last residual
 axioms_amended_status_values_set_registry_entries_created: 0, 0, 0
 runner_result: PASS=24 FAIL=0
 ```

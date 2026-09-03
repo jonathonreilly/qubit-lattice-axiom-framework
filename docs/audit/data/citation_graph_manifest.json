@@ -1,6 +1,6 @@
 {
- "edge_count": 15784,
- "node_count": 5569,
+ "edge_count": 15789,
+ "node_count": 5570,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18705,6 +18705,10 @@
   "u1_auxiliary_face_local_conditionals_unconditional_gauge_measure_bounded_theorem_note_2026-09-03": {
    "deps_hash": "fff5d03a38f8",
    "out_degree": 3
+  },
+  "u1_conserved_vertex_charge_edge_current_coulomb_photon_bridge_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "ea98d6401b17",
+   "out_degree": 5
   },
   "u1_det_sector_bi_orbit_quotient_step_law_baseline_decomposition_bounded_theorem_note_2026-06-10": {
    "deps_hash": "2c3aa3968ee1",

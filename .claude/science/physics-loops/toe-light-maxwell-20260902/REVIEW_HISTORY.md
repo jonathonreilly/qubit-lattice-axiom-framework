@@ -29,3 +29,17 @@
 - Disposition: candidate source note, runner, and cache deleted; no PR. The
   next block attacks gauge-action/normalization selection itself.
 - Review-loop remained disabled by user instruction.
+
+## Preservation recovery
+
+- The owner directed that every scientifically interesting result be placed on
+  remote for review/classification regardless of audit or parent ordering.
+- Draft PR #7840 was opened immediately with the surviving campaign packet.
+- Git objects, reflogs, session memory, and temporary paths were searched. The
+  deleted files had never entered a commit or staged object, so their exact
+  bytes were unavailable.
+- The source and runner were reconstructed from the exact target plus two
+  independent session derivations. The corrected rank-three Euclidean quotient
+  and rank-two Gauss-reduced local sector are explicit.
+- Fresh reconstructed result: `PASS=30 FAIL=0`; the old output is not reused as
+  evidence.

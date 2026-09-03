@@ -13,16 +13,17 @@ compact-sector control, and physical modes.
 
 | Route | Mathematical object | Decisive mechanism | Expected trace | Score / 3 | Status |
 |---|---|---|---|---:|---|
-| Wilson-to-Maxwell chain | compact link cochain and Wilson action | exact variation plus controlled weak-field limit | conditional Lane 8A verification | 3 | 30/30, V1/V3 fail, payload discarded |
+| Wilson-to-Maxwell chain | compact link cochain and Wilson action | exact variation plus controlled weak-field limit | conditional Lane 8A verification | 3 | recovered 30/30 in draft PR #7840; V1/V3 fail for promotion |
 | Plaquette-potential universality | analytic even class function `V(theta)` | nonzero positive Hessian controls the infrared | reduces Wilson-form specificity but not action import | 2 | deferred after value rerank |
-| Hamiltonian photon reduction | spatial cochains with Gauss constraint | symplectic reduction at every nonzero spatial momentum | physical two-mode bridge | 3 | verified in discarded scratch payload |
-| Discrete exterior calculus | cochain complex on the periodic cell complex | `d^2=0`, Hodge decomposition | compact Bianchi and harmonic-mode control | 3 | verified in discarded scratch payload |
+| Hamiltonian photon reduction | spatial cochains with Gauss constraint | symplectic reduction at every nonzero spatial momentum | local two-mode bridge | 3 | restored in theorem and runner |
+| Discrete exterior calculus | cochain complex on the periodic cell complex | `d^2=0`, Hodge decomposition | compact Bianchi and harmonic-mode control | 3 | restored in theorem and runner |
 | Pure-gauge normalization pair | full Wilson/transfer models at `beta=6,24` | exact physically inequivalent witnesses | settles high-blast-radius `g_bare` wall | 3 | **selected next block** |
 
 Classification: **open after matched-hit review**. The closest materials prove
 pieces or state the target; none proves the preregistered common-carrier chain.
 
-Post-execution rerank: novelty of the composition did not overcome the fact
-that its load-bearing physics was supplied in the Wilson action. The campaign
-therefore rejects it as a PR and promotes the action/normalization ambiguity,
-which sits upstream of Maxwell and a large gauge-dependency fan-out.
+Post-execution rerank: novelty of the composition does not overcome the fact
+that its load-bearing physics is supplied in the Wilson action. That lowers
+promotion priority but no longer suppresses preservation. Draft PR #7840 holds
+the recovered theorem while the action/normalization ambiguity remains the
+upstream physical target.

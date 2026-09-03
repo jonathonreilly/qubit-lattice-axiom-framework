@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/compact_u1_wilson_to_source_free_maxwell_2026_09_02.py
+runner_sha256: 146899ce198eb09f37fbcdd1f51465435b025f521c22a258abda0652ff5869c9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+[PASS] 01 canonical principal branch and reverse orientation
+[PASS] 02 plaquette gauge invariance
+[PASS] 03 Wilson action gauge invariance
+[PASS] 04 lifted curvature splits into principal angle plus integer winding
+[PASS] 05 oriented compact cube sum is an allowed integer multiple of 2pi
+[PASS] 06 cube charge equals minus the integer-cochain coboundary
+[PASS] 07 dual integer magnetic current is closed
+[PASS] 08 periodic total magnetic charge vanishes while local monopole cubes occur
+[PASS] 09 exact Wilson first variation matches independent finite differences
+[PASS] 10 Wilson gradient annihilates every tested gauge direction
+[PASS] 11 flat vacuum is stationary and the equation scales linearly with stiffness
+[PASS] 12 global sine and cosine Taylor inequalities
+[PASS] 13 Wilson action obeys the explicit quadratic truncation bound
+[PASS] 14 nonlinear Euler equation obeys the explicit cubic remainder bound
+[PASS] 15 smooth principal-branch refinement has exact zero monopole charge
+[PASS] 16 Wilson action converges to beta/4 times the ordered-index Maxwell integral
+[PASS] 17 scaled Wilson Euler operator converges to the continuum Maxwell operator
+[PASS] 18 smooth-mode Euler error satisfies an explicit analytic O(a^2) bound
+[PASS] 19 all L=3,4,5 Fourier kernels have the derived exact spectrum
+[PASS] 20 forward-coboundary momentum is the exact gauge-null vector
+[PASS] 21 positive temporal and spatial stiffness give a rank-three positive gauge quotient
+[PASS] 22 eliminating A0 yields the transverse spatial projector
+[PASS] 23 Gauss reduction leaves two local canonical mode pairs for P>0
+[PASS] 24 P=0 and nonzero temporal momentum has three spatial toron modes
+[PASS] 25 full zero momentum retains four holonomies and a rank-six torus flux lattice
+[PASS] 26 reflection-positive transfer pole gives the exact asinh dispersion
+[PASS] 27 infrared speed is one only for isotropic gauge stiffness and scales as sqrt(beta_s/beta_t)
+[PASS] 28 transfer, continuous-time, and naive discrete-Lorentzian dispersions remain distinct
+[PASS] 29 forward-coboundary symbol avoids the centered-difference Nyquist zero
+[PASS] 30 gauge-mass, wrong-sign, and zero-stiffness mutations are detected
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

@@ -1,15 +1,15 @@
 # Claim-status certificate
 
 ```yaml
-actual_current_surface_status: open
-target_claim_type: null
+actual_current_surface_status: audit_pending_bounded_source
+target_claim_type: bounded_theorem
 trace_class: frontier_discovery
 reachability_to_target: none
-conditional_surface_status: "scratch runner verified source-free Maxwell on the supplied positive isotropic compact-U(1) Wilson action and smooth zero-monopole branch; payload discarded under V1/V3"
+conditional_surface_status: "reconstructed runner verifies source-free Maxwell on the supplied positive isotropic compact-U(1) Wilson action and smooth zero-monopole branch"
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "No claim ships: the candidate theorem was exact on its supplied carrier but failed the promotion value gate and its payload was discarded."
-audit_required_before_effective_retained: false
+claim_type_reason: "A self-contained conditional theorem and fresh 30/30 runner ship for review; action selection and physical identification remain outside scope."
+audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
@@ -21,5 +21,6 @@ Dependency classes:
 - explicit sector condition: smooth zero-monopole continuum family;
 - open physical bridges: action selection and Record-readable field strength.
 
-Review-loop is disabled by explicit user instruction. Direct self-review
-rejected the candidate PR under V1/V3, so there is no claim for audit.
+Review-loop is disabled by explicit user instruction. V1/V3 remain failed for
+TOE promotion, but under the owner preservation rule they classify rather than
+veto the draft science PR.

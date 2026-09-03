@@ -12,14 +12,16 @@ one common surface:
 4. source-free continuum Maxwell equations on a quantified smooth
    zero-monopole family, with an explicit truncation bound;
 5. the quadratic gauge kernel, its gauge null direction, positive physical
-   spectrum, two propagating transverse modes after Gauss reduction, and the
-   exact lattice dispersion;
+   spectrum, two local transverse modes after Gauss reduction at nonzero
+   spatial momentum, and the conditional reflection-positive transfer
+   dispersion;
 6. the isotropic continuum light cone, together with an anisotropic mutation
    showing which premise fixes the speed ratio.
 
 **Quantifiers/domain.** All finite periodic side lengths at least three; all
 positive Wilson stiffnesses; all lattice gauge transformations; all nonzero
-Brillouin momenta for the mode count; smooth sampled continuum potentials
+spatial Brillouin momenta for the local mode count, with temporal-only and full
+zero momentum treated separately; smooth sampled continuum potentials
 whose plaquette angles stay on one principal branch for the continuum bound.
 
 **Allowed premises.** Lattice and Qubit axioms as background substrate;

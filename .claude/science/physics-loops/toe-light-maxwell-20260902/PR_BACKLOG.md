@@ -1,6 +1,10 @@
 # PR backlog
 
-No PR will be opened for Block 53. Its candidate theorem passed 30/30 local
-checks but failed the V1/V3 promotion-value gate because it starts from a
-supplied Wilson action and uses standard machinery. The payload was discarded;
-only the campaign decision checkpoint remains on the branch.
+The preservation backlog is closed:
+
+- Draft recovery PR:
+  [#7840](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7840)
+- Current payload: reconstructed note, fresh runner, and fresh cache with
+  `TOTAL: PASS=30 FAIL=0`.
+- Classification: conditional supplied-action theorem; V1/V3 still fail for
+  TOE promotion, and no retained status or percentage movement is claimed.

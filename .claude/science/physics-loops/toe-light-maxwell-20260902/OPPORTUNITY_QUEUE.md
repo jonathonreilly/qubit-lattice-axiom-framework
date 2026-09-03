@@ -2,7 +2,7 @@
 
 | Rank | Non-fermion opportunity | Positive probability | Missing imports | Runner availability | Landability | Blast radius | Decision |
 |---:|---|---:|---:|---:|---:|---:|---|
-| 1 | compact `U(1)` Wilson to source-free Maxwell | high | 2 | high | **fails V1/V3** | conditional Lane 8A verification only | executed 30/30, discard payload |
+| 1 | compact `U(1)` Wilson to source-free Maxwell | high | 2 | high | **fails V1/V3 for TOE promotion** | conditional Lane 8A verification only | recovered 30/30 in draft PR #7840 |
 | 2 | analytic positive plaquette-potential Maxwell universality | medium-high | 2 | high | low after Block 53 value check | reduces action-form dependence but remains supplied-action math | defer |
 | 3 | full pure-gauge `beta=6` versus `beta=24` same-slot decision | medium | 1 | medium | pending fresh gate | very high downstream dependency count | **promote to next block** |
 | 4 | local conservation to linear hydrodynamic sound | medium | dynamics law | medium | medium-low | broad bosonic lane | reserve |
@@ -31,7 +31,9 @@
   not a relabeling of those objects. This answer must be rechecked immediately
   before PR creation.
 
-Decision: the theorem/note/runner payload was deliberately discarded and no
-PR will be opened. This is a portfolio result, not a physics refutation:
-conditional Maxwell recovery is sound, but it cannot move a TOE lane until
-the framework supplies the action and physical-field bridge.
+Historical decision: the first theorem/note/runner payload was deliberately
+discarded. Current owner policy overrides that preservation decision. The
+source is reconstructed in draft PR #7840. This remains a portfolio result,
+not a physics refutation or TOE promotion: conditional Maxwell recovery is
+sound, but it cannot close the physical lane until the framework supplies the
+action and physical-field bridge.

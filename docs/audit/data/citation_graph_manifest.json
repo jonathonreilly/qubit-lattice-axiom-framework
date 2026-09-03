@@ -1,6 +1,6 @@
 {
  "edge_count": 15752,
- "node_count": 5558,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2523,6 +2523,10 @@
    "out_degree": 1
   },
   "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "compact_u1_wilson_to_source_free_maxwell_bounded_theorem_note_2026-09-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

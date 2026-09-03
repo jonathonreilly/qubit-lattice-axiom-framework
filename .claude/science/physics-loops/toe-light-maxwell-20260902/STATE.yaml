@@ -8,9 +8,9 @@ current_origin_main: 36fe57a7a784df31bc2178c4b94dfc7caaa5d094
 current_branch: physics-loop/toe-light-maxwell-block53-20260902
 cycle: 1
 science_block: 53
-status: block53_value_gate_discarded_pivoting
+status: block53_recovered_in_remote_classification_pr
 target_status: best-honest-status
-active_route: pure_gauge_action_normalization_selection
+active_route: recovered_wilson_to_maxwell_theorem_classification
 approach_family_coverage:
   - discrete_exterior_calculus
   - compact_wilson_variation
@@ -27,6 +27,9 @@ hard_residual: >
   physical source/action identification.
 files_touched:
   - .claude/science/physics-loops/toe-light-maxwell-20260902/
+  - docs/COMPACT_U1_WILSON_TO_SOURCE_FREE_MAXWELL_BOUNDED_THEOREM_NOTE_2026-09-02.md
+  - scripts/compact_u1_wilson_to_source_free_maxwell_2026_09_02.py
+  - logs/runner-cache/compact_u1_wilson_to_source_free_maxwell_2026_09_02.txt
 open_imports:
   - compact U(1) Wilson plaquette action as a supplied action surface
   - physical identification of link phase/plaquette curvature as electromagnetism
@@ -37,11 +40,11 @@ no_go_routes: []
 trace_gate_classification: frontier_discovery
 reachability_to_target: none
 review_loop: disabled_by_user
-review_disposition: direct_value_gate_failed_v1_v3
-pr_status: deliberately_no_pr
+review_disposition: direct_value_gate_failed_v1_v3_for_promotion_preserved_for_classification
+pr_status: draft_pr_7840_open
 next_exact_action: >
-  Start a fresh block from current origin/main and execute the pure-gauge
-  beta=6 versus beta=24 same-slot action/normalization discriminator.
+  Independently review and classify the recovered conditional theorem while
+  preserving the action-selection and physical-field bridge as the hard residual.
 stop_condition: >
   Continue through ranked non-fermion opportunities until the 24-hour budget
   expires, unless a global ownership or tooling conflict prevents safe work.

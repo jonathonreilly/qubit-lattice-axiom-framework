@@ -224,7 +224,7 @@ exactly `cos t` and `sin t`. The reason is structural: for a coplanar triple the
 vector spans the kernel of `[n_1 n_2 n_3]`, so `det[[cos t_k, sin t_k, f(t_k)]] = 0` for
 every positively spanning triple, and `t |-> (cos t, sin t, f(t))` lies in a plane.
 
-> **Proposition 3.** If the realised directions fill one great circle with its in-plane
+> **Proposition 3.** If the realised directions cover one great circle with its in-plane
 > ternary family, `f` on that circle is forced to `r dot u`: **the odds are Born odds on
 > the realised support**, with `rho` fixed up to the component normal to the plane. If
 > they meet two non-parallel great circles, agreement of the shared grading at the

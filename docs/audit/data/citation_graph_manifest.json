@@ -1,6 +1,6 @@
 {
- "edge_count": 15810,
- "node_count": 5574,
+ "edge_count": 15816,
+ "node_count": 5575,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18721,6 +18721,10 @@
   "u1_fermion_number_conservation_theorem_note_2026-05-02": {
    "deps_hash": "45b34f1904c9",
    "out_degree": 2
+  },
+  "u1_finite_clock_gauge_matter_and_controlled_tame_maxwell_bridge_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "09d91b66e355",
+   "out_degree": 6
   },
   "u1_finite_step_gauge_covariant_matter_current_operator_work_interface_bounded_theorem_note_2026-09-03": {
    "deps_hash": "0f6db339869e",

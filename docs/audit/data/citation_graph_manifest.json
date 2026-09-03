@@ -1,6 +1,6 @@
 {
- "edge_count": 15764,
- "node_count": 5564,
+ "edge_count": 15768,
+ "node_count": 5565,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18725,6 +18725,10 @@
   "u1_representation_positive_registration_kernel_to_maxwell_germ_bounded_theorem_note_2026-09-03": {
    "deps_hash": "f8af5b681979",
    "out_degree": 3
+  },
+  "u1_role_encoded_doubled_incidence_nearest_neighbor_gauge_law_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "e968524e868f",
+   "out_degree": 4
   },
   "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20": {
    "deps_hash": "0b48e244e1f7",

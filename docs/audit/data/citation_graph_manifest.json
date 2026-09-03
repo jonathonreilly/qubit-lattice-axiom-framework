@@ -1,6 +1,6 @@
 {
- "edge_count": 15804,
- "node_count": 5573,
+ "edge_count": 15810,
+ "node_count": 5574,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18737,6 +18737,10 @@
   "u1_quantum_link_exact_local_backreaction_and_colored_floquet_energy_fork_bounded_theorem_note_2026-09-03": {
    "deps_hash": "58f8078fbd1a",
    "out_degree": 5
+  },
+  "u1_quantum_link_matter_magnetic_plaquette_finite_step_join_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "4bc0d10975c7",
+   "out_degree": 6
   },
   "u1_radius_one_onsite_unitary_minimal_maxwell_tick_bounded_no_go_note_2026-09-03": {
    "deps_hash": "1f68ba61b53b",

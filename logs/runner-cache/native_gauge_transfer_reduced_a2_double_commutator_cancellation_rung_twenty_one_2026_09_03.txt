@@ -1,0 +1,31 @@
+PASS: note declares bounded theorem and independent status authority
+PASS: note states exact result and fences total sign / continuum claims
+PASS: one-hop parent package contains and checks the source P2 identity
+PASS: note uses durable repository paths
+PASS: note discloses reconstruction provenance
+[Part 1] exact reduced-A2 differential identities
+PASS: R H = (u^2+2xy)/2
+PASS: R Q = 3u
+PASS: R(H exp(-Q)) = P1 exp(-Q)
+PASS: P2 exp(-Q) = (1/2)R^2(H exp(-Q)) + 3H exp(-Q)
+PASS: the residual multiplier is derived as the state-independent constant 3
+PASS: [R,L] = 0 on a generic degree-eight bivariate polynomial
+[Part 2] exact finite-dimensional perturbation identity
+PASS: R is exactly skew-symmetric
+PASS: T1=[R,T0] is exactly symmetric
+PASS: T2 is exactly symmetric
+PASS: T2 - (1/2)[R,[R,T0]] = 3T0 exactly
+PASS: state 0: mixing cancels half the double commutator
+PASS: state 1: mixing cancels half the double commutator
+PASS: state 2: mixing cancels half the double commutator
+PASS: state 3: mixing cancels half the double commutator
+PASS: state 4: mixing cancels half the double commutator
+PASS: all five relative second-order corrections equal 3
+PASS: all pairwise log-ratio second-order contributions vanish
+[Part 3] similarity-expansion interpretation and falsifier
+PASS: orthogonal-similarity expansion has first coefficient [R,T0]
+PASS: orthogonal-similarity expansion has second coefficient half double commutator
+PASS: falsifier: a nonuniform second-order remainder breaks ratio cancellation
+relative corrections: [3, 3, 3, 3, 3]
+control relative corrections: [3, 3, 3, 3, 34/11]
+TOTAL: PASS=25 FAIL=0

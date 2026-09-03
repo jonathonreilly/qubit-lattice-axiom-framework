@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py
+runner_sha256: ffb71d51b3e5fbc83cdabaf017e74b651e6c079f2640a4ad016b24a4033cbe4a
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 25.70
+status: ok
+----- stdout -----
+PASS A1 [exact] cube, 8 corners and 12 edge sites of degree 3: over all 4096 record patterns x 12 sites (49152 cases) a hop along the shared site e is y -> y XOR e, complementing n_v and n_w alone: 0 violations
+PASS A2 [exact] at the PHYSICAL sites a shift is a VALUE change: the edge-record weight |y| moves by exactly +-1 in all 49152 cases (24576 up, 24576 down), never by 0: 0 violations
+PASS A3 [exact] at the CORNER level the support shifts, and only under exclusion: sum_v n_v is conserved exactly when one endpoint is occupied (24576 cases, 0 violations), else moves by +-2 (24576 cases, 0 violations)
+PASS B1 [numerical, 1e-12] M0 on the L = 32 pi-flux torus: sigma^2(t) = 0.0592, 0.3453, 1.0890, 2.1365, 5.8574, 12.0704, 32.2419, 125.5190 at t = .1, .25, .5, 1, 2, 3, 5, 10 and sigma/t falls 2.4332 -> 1.1204 -- ballistic, no diffusion constant
+PASS B2 [numerical, 1e-7] finite size: m_2(tau) on L = 16 and L = 32 agree to 1.4e-17, 4.1e-13, 1.7e-08 at tau = 0.1, 0.5, 1.0, so the one-particle rows are torus-independent for tau <= 1
+PASS B3 [numerical, 1e-15] M1, the frozen record of PR #7876: its H_R deletes the 6 bonds at the recorded corner, H_R e_v = 0 identically (max 0.0e+00), sigma^2 = 0.0e+00 and leakage 0.0e+00 at t = .5, 1, 5, 20, 100 -- pinned
+PASS C1 [numerical, 1e-20] M2's one-tick kernel p_tau(r) = |<v + r| e^{-i tau H} |v>|^2 at tau = 0.5 is translation covariant to 1.5e-31 and even to 3.3e-24 with |E[r]| <= 2.6e-13: an i.i.d. mean-zero registered walk
+PASS C2 [numerical, 1e-11] increments add: the n-fold FFT convolution of the tick kernel gives sigma^2(n tau) = n m_2(tau) to max 2.0e-12 over the 17 (tau, n) pairs with tau <= 2, n <= 50 and wrap mass below 1e-14
+PASS C3 [numerical, 1e-9] the diffusion law of a shifting record: D(tau) = m_2(tau)/(6 tau) = 0.0987, 0.2302, 0.3630, 0.3860, 0.3561, 0.3479, 0.4881, 0.6706, 1.0747 at tau = .1, .25, .5, .7, 1, 1.2, 2, 3, 5
+PASS C4 [exact + numerical] Zeno limit: m_2 = z tau^2 - a tau^4 + O(tau^6), z = sum_w |H_wv|^2 |w - v|^2 = 6 exactly (the coordination), a -> 7.99984 at tau = 0.005 (8, extrapolated), so D = tau - (4/3) tau^3 + ...: fast ticks pin
+PASS C5 [numerical, 1e-3] Drude limit: m_2/tau^2 -> c_2 = 1.2437 on tau in [3, 6], so D -> 0.2073 tau: slow ticks let it fly; between the limits D carries a shoulder, max 0.3860 at tau = 0.70, min 0.3474 at tau = 1.15
+PASS D1 [exact] renewal: ages carry P_n(a) = (1-p)^a p (a < n), (1-p)^n (a = n), summing to 1 exactly as Fractions at every n <= 12, and sigma^2(n tau) = E[V_n] + sum_a P_n(a) m_2(a tau) matches enumeration of all 2^n histories to 7.7e-13
+PASS D2 [numerical, 1e-6] M3: D_inf = (p/(6 tau)) sum_k p (1-p)^(k-1) m_2(k tau) = 0.3630, 0.9942, 4.0735, 3.9700, 16.1936 at (tau, p) = (.5, 1), (.5, .2), (.5, .05), (1, .1), (2, .05), against c_2 tau (2-p)/(6p) = 0.1036, 0.9328, 4.0421, 3.9385, 16.1685
+PASS D3 [numerical, 1e-6] the scale is the MEAN FREE TIME tau/p, not p tau: (0.5, 0.05), (1, 0.1) and (2, 0.2) share tau/p = 10 and give D_inf = 4.0735, 3.9700, 3.7625, within 8.3%, while their p tau = 0.025, 0.1, 0.4 spans 16x (D_M2(0.5) = 0.3630)
+PASS E1 [numerical, 1e-9] M4 on the 6^3 torus: 23220 two-particle configurations reduce by translation covariance to an EXACT 111-class relative chain, rows summing to 1 (max 3.6e-13); uniform gives P(adjacent) = 0.0279, mean 4.5209
+PASS E2 [numerical, 1e-6] at tau = 0.5 a pair held by an ENERGY cost comes apart at every g: P(adjacent) over ticks 1..40 runs 0.3092->0.0279 (0); 0.4588->0.0279 (4); 0.7368->0.0279 (8); 0.9285->0.0766 (16); 0.9783->0.4235 (32), toward the uniform 0.0279
+PASS E3 [numerical, 1e-6] cost-bound motion is not rigid: tick-40 mean distance 4.5209, 4.5209, 4.5208, 4.3187, 3.0338 at g = 0, 4, 8, 16, 32 against the uniform 4.5209 (g = 4 inside the continuum, half band 3.4641); D_CoM/D_1 = 0.4910 at g = 0, the independent 1/2
+PASS E4 [numerical, 1e-6] the cube's 896-dim sector agrees: records started ADJACENT under the same tick at tau = 0.5, g = 32 carry P(d = 1) = 0.9880, 0.9762, 0.9423, 0.8905, 0.6726 at ticks 1, 2, 5, 10, 40, toward 0.4286
+PASS F1 [numerical, 1e-15] M5's tick map rho -> mask(U(tau) rho U(tau)^dag), mask = Lueders on the 28 corner patterns, agrees with EXPLICIT record trees -- 312 branches after tick 1, 5824 after tick 2 -- to L1 = 2.6e-16 and 6.0e-16
+PASS F2 [numerical, 1e-9] the sharp pattern is not preserved: from the ground state the forbidden mass at ticks 1, 2, 5, 8 is 0.2655, 0.3430, 0.4161, 0.4267 (tau = 0.5); 0.3101, 0.3638, 0.4228, 0.4280 (1); 0.2148, 0.3065, 0.4016, 0.4223 (2)
+PASS F3 [numerical, 1e-15] I/896 is an EXACT fixed point: max |map(I/896) - I/896| = 5.6e-18, 6.3e-18, 4.8e-18 at tau = 0.5, 1, 2, odds uniform on the 28 corner pairs to 6.6e-16, forbidden mass exactly 12/28 = 0.428571429
+PASS F4 [numerical, 1e-3] convergence is geometric: the per-tick L1 ratio to uniform-on-28 settles at 0.5294, 0.4560, 0.6156 for tau = 0.5, 1, 2, so the resting state's selection-rule zeros are lost at a fixed rate
+PASS F5 [numerical, 1e-12] the whole loss is that mass: L1 from the record odds to the pre-record Born diagonal (1/16 on 16 pairs, 0 on 12) is exactly 2x the forbidden mass at all 24 ticks (max residual 1.9e-15)
+SUMMARY: a shifting record registers an i.i.d. mean-zero walk with an exact D(tau) -- Zeno-pinned at fast ticks, ballistic at slow, crossing at the mean free time tau/p; a cost-bound pair comes apart; the attractor is uniform.
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

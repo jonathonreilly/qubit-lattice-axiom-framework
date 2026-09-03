@@ -1,6 +1,6 @@
 {
- "edge_count": 16235,
- "node_count": 5642,
+ "edge_count": 16239,
+ "node_count": 5643,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -429,6 +429,10 @@
   "admissibility_d4_block208_affine_six_record_h1_decoder_center_corner_qnd_dilation_boundary_bounded_theorem_note_2026-08-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "admissibility_d4_common_spin2_source_module_six_bit_capacity_boundary_bounded_theorem_note_2026-08-29": {
+   "deps_hash": "ccdba709e112",
+   "out_degree": 4
   },
   "admissibility_d4_detector_conditioned_m2_pointer_discriminator_boundary_bounded_theorem_note_2026-08-25": {
    "deps_hash": "c8eee4235fc9",

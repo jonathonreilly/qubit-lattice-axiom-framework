@@ -1,6 +1,6 @@
 {
- "edge_count": 15759,
- "node_count": 5562,
+ "edge_count": 15761,
+ "node_count": 5563,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18713,6 +18713,10 @@
   "u1_record_distribution_overlap_positive_maxwell_germ_bounded_theorem_note_2026-09-03": {
    "deps_hash": "40c07614bc9a",
    "out_degree": 3
+  },
+  "u1_record_face_likelihood_spatial_gauge_and_photon_germ_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "a275d4cd88f8",
+   "out_degree": 2
   },
   "u1_representation_positive_registration_kernel_to_maxwell_germ_bounded_theorem_note_2026-09-03": {
    "deps_hash": "f8af5b681979",

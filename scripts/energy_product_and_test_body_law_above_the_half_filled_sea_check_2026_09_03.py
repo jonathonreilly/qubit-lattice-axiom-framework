@@ -19,19 +19,27 @@ sea note names as a decision it does not make. This runner establishes:
      control; the exact symmetric identity that names E_int as the cross term;
      the leading multipole correction that accounts for the deficit; and the
      large-separation behaviour of the ratio on rigid copies.
-  C  THE TEST-BODY LAW.  F = -grad_{x2} E_int by finite differences against
-     F_pred = -E_2 grad phi_1(x_2), with phi_1 = G0 P0 eps_1: the x ratios,
-     the angle residuals, the gauge-sign rebuild lemma, the approach of the
-     ratio to 1 with separation, and the inverse-square coefficient against
-     the landed point-kernel control.
+  C  THE TEST-BODY MAGNITUDES.  F_num = -grad_{x2} E_int by finite differences
+     against F_pred = -E_2 grad phi_1(x_2), with phi_1 = G0 P0 eps_1: the x
+     ratios, the angle residuals, the gauge-sign rebuild lemma, the approach
+     of the ratio to 1 with separation, and the inverse-square coefficient
+     against the landed point-kernel control. Group H settles the direction.
   D  COUNT VERSUS ENERGY.  An energy knob at fixed D moves E_int with E_1 E_2;
      the same bilinear form on the EMPTY vacuum's count source is literally
      constant under that knob; and above the sea the count of a pair is
      identically zero, so a count product vanishes there.
   E  UNITS.  What carries a dimension and what does not.
+  H  THE ON-SHELL ACTION, AND THE DIRECTION OF THE PULL.  The bridge's action
+     A[phi; rho] evaluated at its own stationary point phi = G0 P0 rho, whose
+     value is A* = -(1/2)<P0 rho, G0 P0 rho> and whose two-source cross term
+     is -E_int; the force F_U = -grad_{x2} A* that follows from taking that
+     on-shell value as the interaction energy U, which is -F_num and points
+     from pair 2 toward pair 1 at every D; and the identification of that
+     force as F_U = -E_test grad Phi_N with the Newtonian Phi_N = -phi_1.
 
-Group D3 and the structural statements of A are exact; every other group is a
-finite-dimensional floating-point computation reporting its residual against a
+Group D3, group H and the structural statements of A are exact identities of
+the quadratic form or of the projector; every other group is a finite-
+dimensional floating-point computation reporting its residual against a
 tolerance declared before the run. The response validation quotes the landed
 point-source control before any new number is reported.
 
@@ -333,32 +341,32 @@ MAXIDEM = max(r['idem'] for r in A_ROWS)
 MAXCNT = max(abs(float(ST[k]['r1'].sum())) for k in ST)
 MAXCNT = max(MAXCNT, max(abs(float(ST[k]['r12'].sum())) for k in ST))
 
-check("A1 [numerical, 1e-6] the conditioning vacuum: the half-filled staggered sea on 8^3 at twist (1,1,1) has E_sea = %.6f, the matter note's own value (%.1e), gap %.6f = 2 sqrt(6 - 3 sqrt2) (%.1e), <n_v> = 1/2 at all 512 sites (%.1e)"
+check("A1 [numerical, 1e-6] the conditioning vacuum: the half-filled staggered sea on 8^3 at twist (1,1,1), E_sea = %.6f (the matter note's, %.1e), gap %.6f = 2 sqrt(6 - 3 sqrt2) (%.1e), <n_v> = 1/2 at all 512 (%.1e)"
       % (E_SEA, abs(E_SEA - NOTE_E_SEA_8), GAP, abs(GAP - 2 * np.sqrt(6 - 3 * np.sqrt(2))), HALF_RES),
       abs(E_SEA - NOTE_E_SEA_8) < 1e-6 and abs(GAP - 2 * np.sqrt(6 - 3 * np.sqrt(2))) < 1e-12
       and HALF_RES < 1e-15 and abs(GAP - NOTE_GAP_8) < 1e-6)
 
-check("A2 [numerical, 1e-13] single pairs first: the band-edge orbital pair has E_exc = %.6f and the localised wavepackets %.4f to %.4f over d = 1..4, sum_v eps_v = E_exc to %.0e -- the matter note's 2.651309 and 2.6513-4.5163"
+check("A2 [numerical, 1e-13] single pairs: band-edge orbital E_exc = %.6f, localised wavepackets %.4f to %.4f over d = 1..4, sum_v eps_v = E_exc to %.0e -- the matter note's 2.651309, 2.6513-4.5163"
       % (E_ORB, min(r[0] for r in VAL), max(r[0] for r in VAL), max(r[1] for r in VAL)),
       abs(E_ORB - NOTE_GAP_8) < 1e-6 and max(r[1] for r in VAL) < 1e-13
       and abs(max(r[0] for r in VAL) - 4.5163) < 1e-3)
 
-check("A3 [numerical, 1e-14] TWO pairs above it at D = (2,0,0)/(3,0,0)/(4,0,0)/(3,3,0): P'' = P - Q_h + Q_p is a projector, max|P''^2 - P''| = %.0e over eight states, trace exactly %d = V/2"
+check("A3 [numerical, 1e-14] TWO pairs at D = (2,0,0)/(3,0,0)/(4,0,0)/(3,3,0): P'' = P - Q_h + Q_p is a projector to %.0e over eight states, trace exactly %d = V/2"
       % (MAXIDEM, A_ROWS[0]['tr']),
       MAXIDEM < 1e-14 and all(r['tr'] == 256 for r in A_ROWS))
 
-check("A4 [numerical] the pairs decouple with D: the orbital overlaps fall <p1|p2> = %.2f/%.2f/%.3f/%.3f and <h1|h2> = %.2f/%.3f/%.4f/%.4f at those D"
+check("A4 [numerical] the pairs decouple with D: <p1|p2> = %.2f/%.2f/%.3f/%.3f, <h1|h2> = %.2f/%.3f/%.4f/%.4f at those D"
       % tuple([r['op'] for r in d1] + [r['oh'] for r in d1]),
       d1[0]['op'] > 0.35 and d1[2]['op'] < 0.05 and d1[0]['oh'] > 0.37 and d1[2]['oh'] < 2e-3
       and d1[0]['op'] > d1[1]['op'] > d1[2]['op'])
 
-check("A5 [numerical] the joint energy is additive to the same order: (E_12 - E_1 - E_2)/(E_1 + E_2) = %+.1e/%+.1e/%+.1e/%+.1e at d_pair = 1 and %+.1e/%+.1e at d_pair = 2; the eps_v defect falls an order per unit of D, %.1e -> %.1e -> %.1e"
+check("A5 [numerical] the joint energy is additive: (E_12 - E_1 - E_2)/(E_1 + E_2) = %+.1e/%+.1e/%+.1e/%+.1e at d_pair = 1, %+.1e/%+.1e at d_pair = 2; the eps_v defect falls an order per unit of D, %.1e/%.1e/%.1e"
       % (d1[0]['rel'], d1[1]['rel'], d1[2]['rel'], d1[3]['rel'], d2[1]['rel'], d2[2]['rel'],
          d1[0]['dev'], d1[1]['dev'], d1[2]['dev']),
       abs(d1[0]['rel']) > 8 * abs(d1[1]['rel']) and abs(d1[1]['rel']) > 8 * abs(d1[2]['rel'])
       and d1[0]['dev'] > 8 * d1[1]['dev'] and d1[1]['dev'] > 8 * d1[2]['dev'])
 
-check("A6 [numerical, 1e-13] the COUNT above this sea is identically zero: sum_v (<n_v> - 1/2) = 0 to %.0e for every single-pair AND every joint state, so a count product here is exactly 0, not merely small"
+check("A6 [numerical, 1e-13] the COUNT above this sea is identically zero: sum_v (<n_v> - 1/2) = 0 to %.0e for every single-pair AND every joint state, so a count product is exactly 0"
       % MAXCNT, MAXCNT < 1e-13)
 
 
@@ -421,26 +429,26 @@ for D in (2, 3, 4, 6, 8, 10, 12, 16):
     BIG[D] = (Ei, q1 * q1 * GD, Ei / (q1 * q1 * GD),
               1 + multipole_rel(q1, p1_, Q1, q1, p1_, Q1, (D, 0, 0)))
 
-check("B1 [numerical, 1e-4] validation before any new number: the response is the landed one, G0 the Fourier inverse of lambda(k) = 6 - 2 sum_a cos k_a off the constant mode, its point control 4 pi r G at r = Lb/4 giving %.4f and %.4f at Lb = 32, 64, both parents' own row (%.0e)"
+check("B1 [numerical, 1e-4] validation before any new number: the landed G0, Fourier inverse of lambda(k) off the constant mode; point control 4 pi r G at r = Lb/4 = %.4f and %.4f at Lb = 32, 64, both parents' own row (%.0e)"
       % (PC[32], PC[64], max(abs(PC[Lb] - NOTE_POINT_CONTROL[Lb]) for Lb in (32, 64))),
       max(abs(PC[Lb] - NOTE_POINT_CONTROL[Lb]) for Lb in (32, 64)) < 1e-4)
 
-check("B2 [numerical, 1e-9] THE ENERGY PRODUCT. E_int = <eps_1, G0 P0 eps_2> against E_1 E_2 G0P0(D), Lb = 64, d_pair = 1: ratio %.4f/%.4f/%.4f/%.4f at those four D -- the bilinear response carries the product of the two excitation ENERGIES"
+check("B2 [numerical, 1e-9] THE ENERGY PRODUCT. E_int = <eps_1, G0 P0 eps_2> against E_1 E_2 G0P0(D), Lb = 64, d_pair = 1: ratio %.4f/%.4f/%.4f/%.4f at those four D -- the ENERGY product"
       % tuple(r64), min(r64[1:]) > 0.90 and max(r64) < 1.0)
 
-check("B3 [numerical, 1e-9] neither the internal separation nor the box is doing the work: d_pair = 2 on Lb = 64 gives %.4f/%.4f at D = 3, 4, and Lb = 32 gives %.4f (d_pair 1) and %.4f (d_pair 2) at D = 4"
+check("B3 [numerical, 1e-9] neither the internal separation nor the box does the work: d_pair = 2 on Lb = 64 gives %.4f/%.4f at D = 3, 4; Lb = 32 gives %.4f (d_pair 1) and %.4f (d_pair 2) at D = 4"
       % (r64b[1], r64b[2], r32[2], r32b[2]),
       abs(r64b[1] - 0.8757) < 5e-3 and abs(r64b[2] - 0.9188) < 5e-3
       and abs(r32[2] - 0.9575) < 5e-3 and abs(r32b[2] - 0.8997) < 5e-3)
 
-check("B4 [numerical, 1e-14] E_int is exactly the cross term, not a fitted object: <eps_12, G eps_12> - <eps_1, G eps_1> - <eps_2, G eps_2> = 2 E_int to %.0e over all sixteen rows"
+check("B4 [numerical, 1e-14] E_int is exactly the cross term: <eps_12, G eps_12> - <eps_1, G eps_1> - <eps_2, G eps_2> = 2 E_int to %.0e over all sixteen rows"
       % SYMMAX, SYMMAX < 1e-14)
 
-check("B5 [numerical] the deficit from 1 is the sources' SHAPE: adding each source's dipole and traceless quadrupole to the point form gives %.4f/%.4f/%.4f/%.4f against the computed %.4f/%.4f/%.4f/%.4f, closing it to 1-3 per cent at |D| >= 3"
-      % tuple(m64 + r64),
+check("B5 [numerical] the deficit from 1 is the sources' SHAPE: each source's dipole and traceless quadrupole added to the point form give %.4f/%.4f/%.4f/%.4f against B2's, closing it to 1-3 per cent at |D| >= 3"
+      % tuple(m64),
       max(abs(m64[i] - r64[i]) for i in (1, 2, 3)) < 0.03 and abs(m64[1] - 0.9146) < 5e-3)
 
-check("B6 [numerical] the ratio goes to 1 with separation: on two RIGID copies of one eps profile in the Lb = 64 box -- the kernel and the source shape, NOT a joint 8^3 state -- it is %.4f/%.4f/%.4f/%.4f at D = 3/4/8/16"
+check("B6 [numerical] the ratio goes to 1 with separation: two RIGID copies of one eps profile in the Lb = 64 box -- kernel and source shape, NOT a joint 8^3 state -- give %.4f/%.4f/%.4f/%.4f at D = 3/4/8/16"
       % (BIG[3][2], BIG[4][2], BIG[8][2], BIG[16][2]),
       BIG[3][2] < BIG[4][2] < BIG[8][2] < BIG[16][2] and BIG[16][2] > 0.998)
 
@@ -499,24 +507,24 @@ for D in (3, 4, 6, 8, 10, 16):
         Fpred[a] = -q1 * (phiR[tuple(pp)] - phiR[tuple(mm)]) / 2.0
     cos = float(Fnum @ Fpred) / (np.linalg.norm(Fnum) * np.linalg.norm(Fpred))
     FS[D] = (Fnum[0] / Fpred[0], float(np.degrees(np.arccos(np.clip(cos, -1, 1)))),
-             4 * PI * D * D * Fnum[0] / (q1 * q1))
+             4 * PI * D * D * Fnum[0] / (q1 * q1), Fnum.copy(), Fpred.copy())
 
-check("C1 [numerical, 1e-9] THE TEST-BODY LAW. F = -grad_{x2} E_int by central differences on pair 2's centroid against F_pred = -E_2 grad phi_1(x_2), phi_1 = G0 P0 eps_1: the x ratio is %.4f/%.4f at D = 3, 4 for d_pair = 1 and %.4f/%.4f for d_pair = 2, Lb = 64"
+check("C1 [numerical, 1e-9] TEST-BODY MAGNITUDES, sign in H. F_num = -grad_{x2} E_int by central differences on pair 2's centroid against F_pred = -E_2 grad phi_1: x ratio %.4f/%.4f at D = 3, 4 for d_pair = 1, %.4f/%.4f for d_pair = 2, Lb = 64"
       % (CR[(1, (3, 0, 0))][0], CR[(1, (4, 0, 0))][0], CR[(2, (3, 0, 0))][0], CR[(2, (4, 0, 0))][0]),
       all(0.80 < CR[k][0] < 1.0 for k in CR))
 
-check("C2 [numerical] and the two vectors point the same way: the angle between F_num and F_pred is %.1f/%.1f/%.1f/%.1f degrees on those same four rows"
+check("C2 [numerical] and they point the same way: the angle between F_num and F_pred is %.1f/%.1f/%.1f/%.1f degrees on those four rows"
       % (CR[(1, (3, 0, 0))][1], CR[(1, (4, 0, 0))][1], CR[(2, (3, 0, 0))][1], CR[(2, (4, 0, 0))][1]),
       max(CR[k][1] for k in CR) < 10.0)
 
-check("C3 [numerical] the GAUGE-SIGN REBUILD LEMMA, named not absorbed: rebuilding pair 2 one coarse site over from a fresh seed is NOT faithful, translation residual %.2e, against %.2e when the seed is carried by the KS field's gauge sign: a sign-field artefact"
+check("C3 [numerical] the GAUGE-SIGN REBUILD LEMMA: pair 2 rebuilt one coarse site over from a fresh seed is NOT faithful, translation residual %.2e against %.2e when the seed is carried by the KS gauge sign -- a sign-field artefact"
       % (TR_NAIVE, TR_GAUGE), TR_NAIVE > 0.3 and TR_GAUGE < 5e-3 and TR_NAIVE > 100 * TR_GAUGE)
 
-check("C4 [numerical] the law tightens with separation: on rigid copies at D = 3/4/6/8/10/16 the x ratio is %.4f/%.4f/%.4f/%.4f/%.4f/%.4f and the angle falls %.1f -> %.1f degrees"
+check("C4 [numerical] it tightens with separation: on rigid copies at D = 3/4/6/8/10/16 the x ratio is %.4f/%.4f/%.4f/%.4f/%.4f/%.4f, the angle falls %.1f -> %.1f degrees"
       % (FS[3][0], FS[4][0], FS[6][0], FS[8][0], FS[10][0], FS[16][0], FS[3][1], FS[16][1]),
       FS[3][0] < FS[4][0] < FS[6][0] and FS[16][0] > 0.999 and FS[16][1] < FS[3][1])
 
-check("C5 [numerical] the pull is inverse-square with the landed coefficient: 4 pi D^2 F_x/(E_1 E_2) = %.4f/%.4f/%.4f/%.4f/%.4f/%.4f at those D against the source note's point control 1.0194/1.0064/1.0009/0.9963 at d = 4/6/8/10"
+check("C5 [numerical] inverse-square with the landed coefficient: 4 pi D^2 |F|/(E_1 E_2) = %.4f/%.4f/%.4f/%.4f/%.4f/%.4f against the source note's control 1.0194/1.0064/1.0009/0.9963"
       % tuple(FS[D][2] for D in (3, 4, 6, 8, 10, 16)),
       all(abs(FS[d][2] - NOTE_T4_COEFF[d]) < 0.03 for d in (4, 6, 8, 10)))
 
@@ -551,23 +559,104 @@ C_SPREAD = max(k[3] for k in KNOB) - min(k[3] for k in KNOB)
 
 EPROD = ST[(1, (4, 0, 0))]['E1'] * ST[(1, (4, 0, 0))]['E2']
 
-check("D1 [numerical] COUNT VERSUS ENERGY. An energy knob -- one Gaussian seed band-filtered toward +-E0, width 0.6 -- moves E_exc through %.4f/%.4f/%.4f/%.4f/%.4f at fixed D = 4: E_int rises 1.000 -> %.3f while E_1 E_2 rises 1.000 -> %.3f, a ratio of ratios of %.3f"
+check("D1 [numerical] COUNT VERSUS ENERGY. An energy knob -- a Gaussian seed band-filtered toward +-E0, width 0.6 -- moves E_exc through %.4f/%.4f/%.4f/%.4f/%.4f at D = 4: E_int rises to %.3f, E_1 E_2 to %.3f, ratio of ratios %.3f"
       % (KNOB[0][0], KNOB[1][0], KNOB[2][0], KNOB[3][0], KNOB[4][0], E_RISE, P_RISE, E_RISE / P_RISE),
       E_RISE > 2.4 and P_RISE > 2.4 and abs(E_RISE / P_RISE - 1.0) < 0.06)
 
-check("D2 [numerical, 1e-12] the SAME form on the empty vacuum's count source -- two A-string pairs, <n_v> = 1 at each string's two endpoints, I = 2 per pair -- reads E_int^count = %.7f in EVERY one of those rows, spread %.0e: constant while the excitation's energy quadruples"
+check("D2 [numerical, 1e-12] the SAME form on the empty vacuum's count source -- two A-string pairs, I = 2 per pair -- reads E_int^count = %.7f in EVERY row, spread %.0e: constant while the excitation's energy quadruples"
       % (KNOB[0][3], C_SPREAD), C_SPREAD < 1e-12)
 
-check("D3 [numerical, 1e-13] and above this sea that count source does not exist: sum_v rho = 0 to %.0e for every pair and every joint state, so I_1 I_2 = 0 identically while E_1 E_2 = %.2f for the same two pairs. The pooled object differs BY VACUUM"
+check("D3 [numerical, 1e-13] and above this sea that count source does not exist: sum_v rho = 0 to %.0e for every pair and every joint state, so I_1 I_2 = 0 while E_1 E_2 = %.2f for the same pairs. The pooled object differs BY VACUUM"
       % (MAXCNT, EPROD), MAXCNT < 1e-13)
 
-check("D4 [stated] so the source note's T6 sentence stands where it was proved -- 'the object the pooled response carries is the count product I(S) I(T) and NOT a mass product', on the EMPTY vacuum -- while above this sea the same form carries the ENERGY product", True)
+check("D4 [stated] so the source note's T6 stands where it was proved -- 'the count product I(S) I(T) and NOT a mass product', on the EMPTY vacuum -- while above this sea the same form carries the ENERGY product", True)
 
 
 # ============================================== E -- units
 
-check("E1 [stated] units: hop t = 1, so every E_exc is in units of t and m = E_exc/t is a dimensionless lattice number; G0 P0 carries a^{-1}, so E_int is in t^2/a. No G_Newton, no coupling and no M_phys appears; the source note's factor-2 unit carry applies unchanged and is not adjudicated", True)
+check("E1 [stated] units: hop t = 1, so E_exc is in t and m = E_exc/t is a dimensionless lattice number; G0 P0 carries a^{-1}, so E_int is in t^2/a. No G_Newton, coupling or M_phys appears; the source note's factor-2 carry is not adjudicated", True)
 
-print("SUMMARY: conditional on the half-filled sea as the vacuum, the bridge's bilinear response carries the product of the two excitation energies with the landed kernel, ratio -> 1 with separation, and F = -E_test grad phi holds in its linear response. Both candidates come from that choice, not an axiom.")
+# ================================ H -- the on-shell action, and the direction
+
+def hlap(f):
+    """H = -Delta_lat on the response box, the seven-point stencil."""
+    out = 6.0 * f
+    for a in range(3):
+        out = out - np.roll(f, 1, axis=a) - np.roll(f, -1, axis=a)
+    return out
+
+
+def action(rho):
+    """(A[phi; rho] at its stationary point phi = G0 P0 rho, -(1/2)<P0 rho, phi>)."""
+    phi = solve(rho, Gh)
+    p0 = rho - rho.mean()
+    return (0.5 * float(np.sum(phi * hlap(phi))) - float(np.sum(p0 * phi)),
+            -0.5 * float(np.sum(p0 * phi)))
+
+
+ONSH = 0.0
+XTRM = 0.0
+ACR = {}
+for Dvec in DVECS:
+    S = ST[(1, Dvec)]
+    pra, _, _, _ = prep(S['e1'], S['m1'])
+    prb, _, _, _ = prep(S['e2'], S['m2'])
+    b2 = tuple(b1[a] + Dvec[a] for a in range(3))
+    A1 = place(pra, Lb, b1)
+    A2 = place(prb, Lb, b2)
+    a12, h12 = action(A1 + A2)
+    a1, _ = action(A1)
+    a2, _ = action(A2)
+    ONSH = max(ONSH, abs(a12 - h12) / abs(h12))
+    XTRM = max(XTRM, abs((a12 - a1 - a2) + BROWS[(64, 1, Dvec)][0]))
+    ACR[Dvec] = a12 - a1 - a2
+    del A1, A2
+
+check("H1 [numerical, 1e-14] THE ON-SHELL ACTION. A[phi; rho] = (1/2)<phi, H phi> - <P0 rho, phi> at phi = G0 P0 rho is A* = -(1/2)<P0 rho, G0 P0 rho> to %.0e; its cross term %.6f at D = 4 is exactly -E_int to %.0e"
+      % (ONSH, ACR[(4, 0, 0)], XTRM), ONSH < 1e-14 and XTRM < 1e-14)
+
+
+def ustar(shift):
+    """A* for two rigid copies of eps_1 at the given offset in the box."""
+    ph = np.exp(-1j * (KX * shift[0] + KY * shift[1] + KZ * shift[2]))
+    Ft = F1 + F1 * ph
+    return -0.5 * float(np.real(np.sum(np.conj(Ft) * Gh * Ft))) / Lb ** 3
+
+
+FDEV = 0.0
+MDEV = 0.0
+NDEV = 0.0
+FUX = {}
+PhiN = -phiR
+for D in (3, 4, 6, 8, 10, 16):
+    FU = np.zeros(3)
+    FN = np.zeros(3)
+    pos = (b1[0] + D, b1[1], b1[2])
+    for a in range(3):
+        v = []
+        for sg in (+1, -1):
+            sh = [D, 0, 0]
+            sh[a] += sg
+            v.append(ustar(sh))
+        FU[a] = -(v[0] - v[1]) / 2.0
+        pp = list(pos)
+        pp[a] = (pp[a] + 1) % Lb
+        mm = list(pos)
+        mm[a] = (mm[a] - 1) % Lb
+        FN[a] = -q1 * (PhiN[tuple(pp)] - PhiN[tuple(mm)]) / 2.0
+    FDEV = max(FDEV, float(np.max(np.abs(FU + FS[D][3]))))
+    MDEV = max(MDEV, abs(float(np.linalg.norm(FU) - np.linalg.norm(FS[D][3]))))
+    NDEV = max(NDEV, float(np.max(np.abs(FN + FS[D][4]))))
+    FUX[D] = float(FU[0])
+
+check("H2 [numerical, 1e-14] SO THE PULL IS ATTRACTIVE. F_U = -grad_{x2} A*, same central differences, is -F_num to %.0e at unchanged magnitude (%.0e); F_U,x = %+.3e to %+.3e is NEGATIVE at every D = 3/4/6/8/10/16 -- pair 2 pulled TOWARD pair 1"
+      % (FDEV, MDEV, FUX[3], FUX[16], ), FDEV < 1e-14 and MDEV < 1e-14
+      and max(FUX.values()) < 0.0)
+
+check("H3 [numerical, 1e-14] the test-body law: F_U = -E_2 grad Phi_N with the Newtonian Phi_N = -phi_1, to %.0e, i.e. F_U = +E_2 grad phi_1; C1-C5's ratios, angles and coefficient are unchanged"
+      % NDEV, NDEV < 1e-14)
+
+
+print("SUMMARY: on the half-filled sea as the vacuum, the bridge's response carries the product of the two excitation energies with the landed kernel, ratio -> 1 with separation, and the pull is ATTRACTIVE: F = -E_test grad Phi_N, Phi_N = -phi. From that choice, not an axiom.")
 print("TOTAL: PASS=%d FAIL=%d" % (PASS, FAIL))
 sys.exit(0 if FAIL == 0 else 1)

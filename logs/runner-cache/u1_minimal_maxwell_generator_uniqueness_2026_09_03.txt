@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/u1_minimal_maxwell_generator_uniqueness_2026_09_03.py
+runner_sha256: 67dfc61d06094c31d49e0646fe132fb1349ac700bd545c0ee21b560bbce5e376
+input_fingerprint_sha256: 146ac6e59b4bb24f2956ce181d4dfa8ab9ac32dbed6b17060baea8f87bf97ba4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+[PASS] 01 gauge invariance leaves exactly the oriented curl in one face star
+[PASS] 02 all 625 small integer face stencils are invariant exactly when proportional to curl
+[PASS] 03 a one-entry boundary-sign mutation is rejected by the gauge equations
+[PASS] 04 gauge invariance alone leaves one curl coefficient per face orientation
+[PASS] 05 proper-cubic orientation equality reduces the three coefficients to one scalar
+[PASS] 06 the proper cubic group is transitive on all six oriented face normals
+[PASS] 07 the role geometry permits no nearest-neighbor edge-edge or face-face linear coupling
+[PASS] 08 each dynamical site has exactly four opposite-role dynamical neighbors
+[PASS] 09 the unique local stencil assembles into the exact global incidence complex
+[PASS] 10 positive diagonal energy conservation kills every real scalar onsite term
+[PASS] 11 energy conservation fixes the reverse stencil as the weighted negative adjoint
+[PASS] 12 the complete positive coefficient family conserves its diagonal energy
+[PASS] 13 the complete coefficient family preserves both Gauss rows
+[PASS] 14 after field normalization the sole dynamical scalar is speed sqrt(alpha beta)
+[PASS] 15 field rescaling sends every allowed generator to one Yee generator with one speed
+[PASS] 16 the classified generator has exactly the two Maxwell branches on every tested mode
+[PASS] 17 orientation-dependent coefficients violate cubic degeneracy
+[PASS] 18 using the same adjoint sign violates conservative skewness
+[PASS] 19 a diffusive damping term lies outside the conservative class
+[PASS] 20 deleting one orientation exits the cubic class and loses one branch
+[PASS] 21 the explicit one-step Euler map is local but not exactly norm preserving
+[PASS] 22 the exact Cayley tick is norm preserving but spreads beyond one physical star
+[PASS] 23 the two-reflection sampler lift exits the minimal E-plus-B payload class
+[PASS] 24 equal lattice kinetic normalization fixes the remaining speed to one conditionally
+per_element: all 625 small face stencils and every exact gauge constraint row are classified
+per_site: the full L3 role geometry excludes same-role neighbors and leaves four edge-face couplings
+per_mode: every momentum on L=3,4,5,7 is checked for the unique two-branch spectrum
+per_block: gauge, cubic, energy-adjoint, field-rescaling, Euler, and Cayley blocks are contrasted
+lattice_wide: the global 81-by-81 curl and 162-variable generator are assembled from the unique stencil
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

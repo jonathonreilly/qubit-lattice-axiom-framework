@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py
+runner_sha256: 6dd961e2a4ace198d7fc6d882a688477c6f875c96c9d654f6a35a8853ef73012
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+PASS A1 [numerical, 1e-6] the half-filled staggered sea at its optimal twist on 4^3/6^3/8^3 has E_sea = -78.383672/-258.857540/-611.811768, the first two being the supplied filling datum's own values
+PASS A2 [exact] at L = 4 the optimal-twist field satisfies M^2 = 6 I as a 64x64 integer identity (residual 0), so every level is +-sqrt6 and E_sea/V is exactly -sqrt6/2 = -1.224744871 (residual 0e+00)
+PASS A3 [numerical, 1e-13] the gaps are 2 sqrt6 / 2 sqrt3 / 2 sqrt(6 - 3 sqrt2) = 4.898979/3.464102/2.651309, matching the reduced-zone Bloch form 2 sqrt(6 + 2 min_q sum_a cos q_a) (8e-15); the grid reaches q = (pi,pi,pi), the gap -> 0: a Dirac point
+PASS A4 [exact] V/2 = 32/108/256 is even at every L: the sea is a closed shell of pairs, the neutral sector the finite-torus P0 assumes
+PASS A5 [exact/numerical, 1e-12] <n_v> = 1/2 at EVERY site of all three tori (8e-16), and its exact reason: the bipartite grading eps_v = (-1)^{v1+v2+v3} gives eps M eps = -M as an integer identity (0), so P_vv + (eps P eps)_vv = 1 (2e-15) and P_vv = 1/2
+PASS B1 [numerical, 1e-12] the band-edge orbital pair on 8^3 has E_exc = 2.651309, the sea gap, and is DELOCALISED: IPR 171 and 176 of 512 sites, rms 3.64 and 3.63
+PASS B2 [numerical, 1e-13] localised wavepackets on 8^3 -- particle from the empty orbitals, hole from the occupied ones, d = 1/2/3/4 -- have sum_v rho = 0 to 1e-14 for rho = <n_v> - 1/2, with rms 1.60 to 1.77
+PASS B3 [numerical, 1e-14] the local energy density eps_v = sum_{j~v} M_vj (P' - P)_vj carries the whole excitation: sum_v eps_v = E_exc to 2e-15 over all five pairs, E_exc 2.6513 to 4.5163
+PASS B4 [numerical, 1e-15] eps_v is essentially non-negative: its negative part is exactly 0 for the orbital pair (0e+00) and on 4^3 (0e+00), and 0.2% to 0.3% of E_exc for the wavepackets
+PASS B5 [numerical] the clouds OVERLAP: sum_v |rho| runs 1.12 to 1.94, under the 2 a disjoint unit particle and hole would give
+PASS C1 [exact] conjugation P' -> eps (I - P') eps sends rho -> -rho (6e-17) and eps_v -> +eps_v (0e+00) over all five pairs: the number-density deviation is the ODD datum, the energy density the EVEN one
+PASS C2 [exact] eps is a diagonal +-1 gauge map: it flips all 1536 link signs, yet all 1536 faces of 8^3 keep their holonomy (0) and every even Wilson line is fixed (True) -- a state and its conjugate lie in the SAME flux sector
+PASS D1 [numerical, 1e-3] validation before any new number: 4 pi r G(r) at r = 10 rounds to 0.190/0.432/0.568 at N = 32/48/64, the window note's published row
+PASS D2 [numerical, 1e-4] the point control on the same boxes: 4 pi r G at r = Lb/4 is 0.4065/0.3468/0.3307/0.3275 at Lb = 8/16/32/64, the source note's own row (5e-05)
+PASS D3 [numerical] candidate (a) rho = <n_v> - 1/2 is a pure DIPOLE: total charge 1e-14, star monopole 4e-05 at r = 16, |p| = 3.206 at d = 4, log-log slope of its antisymmetric part -1.99, 4 pi r^2 antisym_x phi / p_x = 1.0003/1.0061/0.9940 at r = 5/8/10
+PASS D4 [numerical, band 0.02] candidate (b) rho = eps_v/E_exc reproduces the landed MONOPOLE form: 4 pi r phi at r = Lb/4 is 0.2534/0.3529/0.3335/0.3282 at Lb = 8/16/32/64, outside the window note's 0.02 band about 0.3266-0.3269 at Lb = 8, 16 and INSIDE it at Lb = 32, 64
+PASS D5 [numerical] Richardson f_inf = 2 f_64 - f_32 gives candidate (b) the monopole coefficient 1.0096/0.9941/0.9741/0.9427 at dd = 4/6/8/10 against the like-for-like point control 1.0166/0.9966/0.9766/0.9456, agreeing to 0.01
+PASS D6 [numerical, band 0.02] the two non-linear positive candidates do the same: (c) |rho| and (d) rho_+ = max(rho, 0) read 0.3283 and 0.3282 at Lb = 64, inside the band and beside the point control 0.3275
+PASS E1 [exact] candidate (a) is the NAMED operator rho_v = <n_v> - 1/2 = -B_v/2: diagonal (x-mask 0), local on exactly 6 coarse edge sites, phase invariant, covariant on the untwisted 6^3 (0, 6e-16); spectrum {-0.5, +0.5}, so NOT positive; total 1e-14
+PASS E2 [exact] candidate (b) eps_v is local, phase invariant and covariant off the twist cut, but NOT diagonal: it is built from the hop, and A_ij carries an X on 1 code qubit with 3 trailing Z's; nor is it positive. The twisted 8^3 cut leaves residual 4.4e-02 on v_x [0, 1, 7]
+PASS E3 [exact] candidates (c) |rho| and (d) rho_+ are the expectation of NO operator, being non-linear in the state: on the equal mixture of a pair and its conjugate |rho| reads 0 where a linear functional reads the average, 0.1208 apart
+PASS E4 [stated] so NEITHER linear-in-the-state candidate meets all five bridge clauses above this sea: (a) fails positivity, total zero; (b) fails diagonality; (c), (d) are positive with non-zero total but no operator expresses them
+PASS F1 [exact] rho and -rho enter both eta sectors with the SAME coefficient, so the source vector stays [+1, +1]; least squares against the orientation-odd [+1, -1] leaves residual 1.414214 = sqrt2, the source note's T7 and the signed note's own 1.414e+00
+PASS F2 [exact] the chirality grading maps particles to holes -- the lowest empty orbital's conjugate lies wholly in the occupied shell (1.000000000000), energy negated (4e-16) -- while fixing every holonomy and chi_eta: the particle/hole sign is NOT the sector orientation
+SUMMARY: above the half-filled sea matter comes in pairs; the number-density deviation is the named operator -B_v/2, ODD and zero-total, sourcing a dipole, and the energy density is EVEN and gives the landed monopole form. Which state is the vacuum is not decided here.
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

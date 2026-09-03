@@ -18,8 +18,8 @@ Three initial conclusions agree:
 The completed five-lens return is unanimous on the route decision:
 
 4. On the same finite Wilson carrier, the electric Casimir operator is unbounded
-   while the magnetic plaquette multiplier is bounded.  Exact unitary or antiunitary
-   exchange is impossible.  Peter-Weyl dualization changes to representation/spin-foam
+   while the magnetic plaquette multiplier is bounded. Exact unitary or antiunitary
+   exchange of those raw operators is impossible. Peter-Weyl dualization changes to representation/spin-foam
    data; the exact `Z_3` center fixed point is approximately `0.670035`, not `6`, and
    is not the full `SU(3)` theory.
 5. The smallest sufficient selector inside the fixed Wilson family is the

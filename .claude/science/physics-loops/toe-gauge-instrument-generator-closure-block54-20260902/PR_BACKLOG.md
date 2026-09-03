@@ -1,9 +1,11 @@
 # PR Backlog
 
-No PR is authorized at preregistration.
+Preservation PR opened:
 
-- Open only if V1-V5 all pass on a coherent positive theorem.
-- A decision memo or failed route remains branch-local/checkpoint-only unless it
-  contains material new science and passes the same value gate.
+- Draft PR #7841 contains the campaign packet.
+- The original runner, bounded source note, and fresh `81/81` cache are now on
+  the branch.
+- V1-V5 govern classification and TOE-promotion value, not remote preservation.
+
 - Do not stack on or modify #7277, #7314, the gravity stack, or active matter/Record
   heads.

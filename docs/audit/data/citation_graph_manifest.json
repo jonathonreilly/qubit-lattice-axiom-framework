@@ -1,6 +1,6 @@
 {
- "edge_count": 15780,
- "node_count": 5568,
+ "edge_count": 15784,
+ "node_count": 5569,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18720,6 +18720,10 @@
   },
   "u1_minimal_physical_neighbor_conservative_gauge_dynamics_uniquely_maxwell_bounded_theorem_note_2026-09-03": {
    "deps_hash": "def91c1a636d",
+   "out_degree": 4
+  },
+  "u1_radius_one_onsite_unitary_minimal_maxwell_tick_bounded_no_go_note_2026-09-03": {
+   "deps_hash": "1f68ba61b53b",
    "out_degree": 4
   },
   "u1_record_distribution_overlap_positive_maxwell_germ_bounded_theorem_note_2026-09-03": {

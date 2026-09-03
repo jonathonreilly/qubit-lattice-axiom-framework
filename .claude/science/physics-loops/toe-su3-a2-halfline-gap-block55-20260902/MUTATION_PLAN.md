@@ -11,3 +11,14 @@ The definitive test must reject at least:
 - a finite-packet Perron gap presented as the infinite-operator gap;
 - strong convergence presented as operator-norm/eigenvalue convergence without
   collective compactness or an equivalent theorem.
+
+## Result
+
+- missing `rho`, all-positive signs, a deleted image, square covariance, and a
+  fixed Taylor cutoff are directly rejected by the verifier;
+- the exact Bessel evaluator is retained as an independent support comparison,
+  not replaced by the saddle;
+- finite spectral rows are labeled support only;
+- common-space convergence is upgraded through Hilbert-Schmidt factor norm
+  convergence and then trace norm, rather than asserted from bare strong
+  semigroup convergence.

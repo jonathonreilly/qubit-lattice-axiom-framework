@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15756,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12745,6 +12745,10 @@
   "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": {
    "deps_hash": "5420992392c0",
    "out_degree": 2
+  },
+  "native_gauge_transfer_a2_reflection_uniform_half_line_gap_theorem_note_2026-09-02": {
+   "deps_hash": "058645da6820",
+   "out_degree": 4
   },
   "native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_note_2026-06-12": {
    "deps_hash": "c86dd99e2b00",

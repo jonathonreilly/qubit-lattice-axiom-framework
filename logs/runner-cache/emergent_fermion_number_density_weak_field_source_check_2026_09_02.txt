@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/emergent_fermion_number_density_weak_field_source_check_2026_09_02.py
+runner_sha256: db28e4b9a6d50337740b77870dd929cb1c871b4d1a7e4f2d76f77d8eb0d00818
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+PASS A1 [exact] open blocks 3x3x3 and 4x4x4 (V/n/k_faces 27/54/26, 64/144/63): n_v = (1 - B_v)/2 is diagonal, a projector, commuting, supported on exactly the six coarse edge sites at 2v, 2Z^3-covariant on the 4^3 torus
+PASS A2 [exact] I(S) = sum_{v in S} n_v has I(empty) = 0 and I(S disjoint-union T) = I(S) + I(T) as an operator identity on 30 random disjoint pairs: the finite-additive scalar the additivity note records as absent
+PASS A3 [exact] prod_v B_v = +I on both open blocks, so N = I(all) is even-valued and excitations exist only in pairs: the neutral sector P0 assumes
+PASS B1 [exact] open 3x3x3, 54 edges: each of the 108 components A_ij B_i, A_ij B_j anticommutes with exactly B_i and B_j (216 anticommuting, 2700 commuting pairs) and [N, T_ij] = 0 exactly for every edge, N over all 27 vertices
+PASS B2 [exact] open 4x4x4, 144 edges: each of the 288 components A_ij B_i, A_ij B_j anticommutes with exactly B_i and B_j (576 anticommuting, 17856 commuting pairs) and [N, T_ij] = 0 exactly for every edge, N over all 64 vertices
+PASS B3 [exact] control: the bare component A_ij B_i does NOT commute with N (commutator of 2 Pauli terms), so the (B_i - B_j) factor of T_ij is what conserves the count -- a property of the hop, not of A_ij
+PASS C1 [exact] open 5x5x5: an A-string from v to v' gives <n_w> = 1 exactly at v and v' and 0 at the other 123 vertices, N = 2, over axis separations d = 1, 2, 3 and two non-axis ones
+PASS C2 [exact] those five strings commute with all 240 face stabilizers of the block, 1200 of 1200 pairs: the two-point source is a code state carrying no gauge flux
+PASS D1 [numerical, 1e-14] open 2x2x2 cube (12 qubits, 4096-dim state vector): the vacuum is the unique joint +1 eigenvector of the 6 faces and 8 B_v -- reprojection 0e+00, reseeded overlap 1.000000000000, <n_v> = 0 to 1e-16
+PASS D2 [numerical, 1e-14] the 28 two-excitation A-string states are orthonormal (||Gram - I|| = 2e-16) and are exact occupation eigenstates, every <n_v> equal to its label to 1e-16
+PASS D3 [numerical, 1e-14] the encoded hop sum over all 12 edges leaves the 28-dim two-excitation span invariant (leakage 4e-16, block Hermitian to 0e+00): group B confirmed dynamically in the full 4096-dim space
+PASS D4 [numerical, 1e-14] the encoded two-excitation spectrum equals the free-fermion pair sums of the 8x8 coarse hop matrix (levels -3, -1 x3, +1 x3, +3) over all 28 levels to 2e-15
+PASS D5 [numerical, 1e-14] against a pinned partner <n_v> = |psi(v)|^2 at every vertex and <n_partner> = 1, for the ground state, the top state, a wavepacket and a generic complex amplitude: worst deviation 3e-16
+PASS E1 [numerical] validation before any new number: the recomputed 4 pi r G(r) at r = 10 rounds to 0.190/0.432/0.568/0.709/0.782 at N = 32/48/64/96/128, the window note's own quoted fixed-window row
+PASS E2 [numerical] outcome one of two: at the outer edge r = L/4 the coarse tori L = 8/12/16 give 4 pi r G = 0.4065/0.3658/0.3468, all OUTSIDE the note's own 0.02 band about its stable 0.3266-0.3269
+PASS E3 [numerical] outcome two: from L = 32 the readout enters that band, 0.3307/0.3275/0.3269/0.3267 at L = 32/64/96/128, matching the quoted 0.3269 and 0.3267 to four decimals at L = 96 and 128
+PASS E4 [numerical] Richardson G_inf = 2 G_128 - G_64: the monopole coefficient 4 pi d G_inf(d) = 1.0194/1.0064/1.0009/0.9963 at d = 4/6/8/10, inside the declared 0.02 band about the landed 1
+PASS E5 [numerical] the unit carry, declared in advance not fitted: G_coarse^(64)(d) / G_fine^(128)(2d) falls monotonically from 2.125 at d = 2 to 2.0047 at d = 16: the ratio is 2, the factor between the two readings
+PASS E6 [numerical, 1e-14] the pair source rho = delta_v + delta_v' has E(d) = <rho, G0 P0 rho> = 2 G(0) + 2 G(d) exactly (2e-16) at every separation on L = 8/12/16
+PASS F1 [numerical, 1e-14] reading (ii): -Delta_fine = 6(1 - S) for the six-site star average S, so phi_smeared = phi_point - (1/6)(delta_{r,0} - 1/N) exactly on the fine tori 16^3/24^3/32^3, to 6e-17; off the source site the two differ by 4e-05
+PASS F2 [exact] the star's moments in exact rationals: monopole 1, dipole 0, traceless quadrupole 0, every l = 3 moment 0, <x^4+y^4+z^4> = 1 -- by cubic symmetry no quadrupole, first correction l = 4
+PASS G1 [numerical, 1e-13] the two-particle encoded spectrum on the open 2x2x2 (dim 28) and 3x3x3 (dim 351) equals the free-fermion pair sums to 1e-14: the interaction term is identically absent
+PASS G2 [numerical, 1e-13] the response energy is exactly bilinear: |E(r1+r2) - E(r1) - E(r2) - 2<r1, G0 P0 r2>| <= 3e-16 over 15 random configurations on L = 8/12/16
+PASS H1 [exact] the orientation-odd objects fail the clauses: A_ji = -A_ij, yet A_ij carries an X (not diagonal), is a {+1,-1} involution (not positive), is an edge not a vertex object, and flips exactly B_i and B_j; the 4-edge A-string likewise, non-diagonal on 7 fine sites
+PASS H2 [exact] n_v is a projector, so <n_v> is in [0, 1] in every state and its source vector over the two eta sectors is [+1, +1]; least squares against the required [+1, -1] leaves residual 1.414 = sqrt(2), the signed note's own value
+SUMMARY: conditional on the two supplied surfaces, n_v = (1 - B_v)/2 meets every clause of the source-readout hypothesis as a named operator, supplies the finite-additive scalar I, is hop-conserved, is an exact point source with <n_v> = |psi(v)|^2, and answers G0 P0 with the landed monopole form under a declared factor-2 unit carry.
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

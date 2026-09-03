@@ -20,7 +20,8 @@ On a finite periodic four-dimensional hypercubic carrier, supply compact
 S_V[ell] = sum_(x,mu<nu) V(bar_theta_mu_nu(x)).
 ```
 
-Assume that `V` is an even `C^4` function on the circle, normalized by
+Assume that `V` is an even `2 pi`-periodic plaquette potential, finite and
+`C^4` on a neighborhood of the flat point, and normalized there by
 
 ```text
 V(0)=0,                 V''(0)=kappa>0.
@@ -47,6 +48,9 @@ source-free classical Maxwell limit. The load-bearing microscopic condition
 inside the stated one-plaquette class is a positive isotropic quadratic germ,
 not the full finite-angle shape of the potential.
 
+The potential may have additional minima or even hard (`+infinity`) barriers
+away from that neighborhood; neither affects the smooth-sector statement.
+
 This is a supplied-action theorem. It does not establish that the framework's
 Admissibility law realizes a compact connection, an action in this basin, or a
 physical electromagnetic dictionary. Charged sources, coupling normalization,
@@ -66,13 +70,14 @@ tilde_theta_mu_nu = Delta_mu^+ ell_nu - Delta_nu^+ ell_mu
 bar_theta_nu_mu = -bar_theta_mu_nu.
 ```
 
-The principal angle may jump by `2 pi` under a change of lift, but a circle
-function `V` is unchanged. Therefore every action in the class is exactly
-link-gauge invariant. Evenness makes the term independent of the arbitrary
-choice between the two plaquette orientations.
+The principal angle may jump by `2 pi` under a change of lift, but the periodic
+potential is unchanged wherever it is finite. Therefore every action in the
+class is link-gauge invariant. Evenness makes the term independent of the
+arbitrary choice between the two plaquette orientations.
 
-Because an even `C^4` function has `V'(0)=V'''(0)=0`, variation of one link
-gives the exact lattice equation
+Because the local germ is even and `C^4`, it has
+`V'(0)=V'''(0)=0`. On any configuration contained in that smooth
+neighborhood, variation of one link gives the exact lattice equation
 
 ```text
 G_rho(y)
@@ -123,8 +128,9 @@ link in the displayed equation, so the pointwise nonlinear remainder obeys
 ```
 
 No finite list of candidate potentials is used to prove these inequalities.
-They hold for every `V` satisfying the stated hypotheses. The explicit family
-in Section 5 challenges the theorem with different microscopic shapes.
+They hold locally for every `V` satisfying the stated germ hypotheses. The
+explicit globally smooth family in Section 5 challenges the theorem with
+different microscopic shapes.
 
 ## 3. Smooth continuum limit
 
@@ -335,7 +341,7 @@ microscopic action selection.
 
 | Route class | Mechanism and attempt | Outcome |
 |---|---|---|
-| `algebraic_rearrangement` | Apply Taylor's theorem to an arbitrary even periodic `C^4` potential with positive curvature. | Attempted analytically; the potential-dependent remainder vanishes and the common quadratic term survives. |
+| `algebraic_rearrangement` | Apply Taylor's theorem to an arbitrary even periodic potential with a `C^4` positive-curvature germ. | Attempted analytically; the potential-dependent remainder vanishes and the common quadratic term survives. |
 | `dynamical_or_effective_action` | Replace Wilson by the explicit `V_lambda` action family. | Attempted exactly and numerically; finite-angle dynamics differ while the source-free continuum limit agrees. |
 | `lattice_scale_or_limit` | Test fixed-volume action and Euler-operator refinements rather than only a pointwise expansion. | Attempted at six refinements with an explicit error bound; both converge. |
 | `topology_or_global_structure` | Let compact branch winding or monopole charge contaminate the limit. | Attempted through the exact cube identity; the theorem requires and verifies the smooth zero-monopole branch, while other sectors remain outside scope. |
@@ -358,7 +364,7 @@ Record readout, and quantum/strong-field control are separate obligations.
 
 The supplied objects are explicit: a four-dimensional periodic hypercubic
 refinement, compact `U(1)` links, one identical local plaquette potential, a
-smooth principal branch, `C^4` regularity, and positive isotropic curvature.
+smooth principal branch, local `C^4` regularity, and positive isotropic curvature.
 The Lorentzian dispersion additionally needs the parent's reflection-positive
 transfer interpretation. No action, dynamics, source, physical dictionary, or
 Record process is smuggled in as “canonical” or “standard.”

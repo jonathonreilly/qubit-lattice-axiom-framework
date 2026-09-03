@@ -1,6 +1,6 @@
 {
- "edge_count": 15761,
- "node_count": 5563,
+ "edge_count": 15764,
+ "node_count": 5564,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18701,6 +18701,10 @@
   "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17": {
    "deps_hash": "4514c6f97532",
    "out_degree": 1
+  },
+  "u1_auxiliary_face_local_conditionals_unconditional_gauge_measure_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "fff5d03a38f8",
+   "out_degree": 3
   },
   "u1_det_sector_bi_orbit_quotient_step_law_baseline_decomposition_bounded_theorem_note_2026-06-10": {
    "deps_hash": "2c3aa3968ee1",

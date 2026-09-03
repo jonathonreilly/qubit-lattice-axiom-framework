@@ -33,8 +33,12 @@ rho_v^{stag} = n_v - (1 - eps_v)/2.
      [P_f, G_v] = 0, [P_f, H^g] != 0.
   E  THE COUPLED SEA.  The 256-dimensional plaquette and the cube's sparse
      14400-state Gauss sector.
+  F  SITE-LEVEL FORCING.  G_v = 0 read as a linear relation among one corner's
+     2 z_v records: the last record forced in every formation order, no
+     occurring record set left without a move, and the joint restriction
+     recovered from the site-level zeros alone.
 
-Groups A-D are exact: Gaussian-rational coefficients on symplectic Pauli
+Groups A-D and F are exact: Gaussian-rational coefficients on symplectic Pauli
 monomials (F2 supports, Z4 phases) and integer record arithmetic, with no
 floating-point step anywhere.  Group E is numerical at the stated tolerance.
 
@@ -814,6 +818,122 @@ check("E6 [1e-12] the coupled sea is neutral with zero mean flux: <n_v> = 1/2 to
       max(resC[0.0][3], resC[1.0][3]) < 1e-12 and max(resC[0.0][4], resC[1.0][4]) < 1e-12
       and max(resC[0.0][5], resC[1.0][5]) < 1e-12)
 
+
+# ========== F -- Gauss's law as site-level forcing, in any formation order [exact]
+#
+# The Admissibility axiom supplies a SITE's odds given its neighbours, and a
+# normalised conditional cannot assign zero to its own conditioning event, so a
+# JOINT constraint on a neighbourhood's records is not by itself a support
+# condition at any one site.  G_v = 0 is instead a LINEAR RELATION among the
+# corner's 2 z_v records, and a linear relation is implemented by site-level
+# support conditions in ANY formation order.  This group checks that reading
+# exactly, by bit arithmetic over the 2^(2 z_v) assignments of one corner's
+# records: the cube in the sea convention and the plaquette in the staggered
+# one, the two pairings the coordination-parity condition of B5 admits.
+
+
+def corner_table(g, v, kind):
+    """Every assignment of the 2 z_v records at corner v with G_v = 0, plus the
+    odds table.  Bit r < z_v is the fermion edge record of the r-th incident
+    edge and bit z_v + r its link record; a bit b carries the Z value 1 - 2b, so
+    2 (div E)_v = sum_e s_{v,e} (1 - 2 b) and 2 rho_v = 2 n_v - c with n_v the
+    corner parity of the fermion edge records.  A[(mask, val, r)] is the set of
+    values of record r carrying nonzero odds given the records in `mask`."""
+    inc = sorted(g.incs[v])
+    z = len(inc)
+    n = 2 * z
+    c = 1 if kind == "sea" else 1 - g.eps[v]
+    pats = []
+    for p in range(1 << n):
+        nv = 0
+        d = 0
+        for r, (q, s, w) in enumerate(inc):
+            nv ^= (p >> r) & 1
+            d += s * (1 - 2 * ((p >> (z + r)) & 1))
+        if d == 2 * nv - c:
+            pats.append(p)
+    A = {}
+    for mask in range(1 << n):
+        groups = {}
+        for p in pats:
+            groups.setdefault(p & mask, []).append(p)
+        for val, gp in groups.items():
+            for r in range(n):
+                if not (mask >> r) & 1:
+                    A[(mask, val, r)] = frozenset((p >> r) & 1 for p in gp)
+    return pats, n, A
+
+
+def formed_set(A, n, order):
+    """The record patterns produced by forming the corner's records in `order`,
+    each step taking only values of nonzero odds given those already present."""
+    frontier = {(0, 0)}
+    for r in order:
+        nxt = set()
+        for (mask, val) in frontier:
+            av = A.get((mask, val, r), frozenset())
+            if not av:
+                return None
+            for b in av:
+                nxt.add((mask | (1 << r), val | (b << r)))
+        frontier = nxt
+    return {val for (_, val) in frontier}
+
+
+CORNERS = []
+for g, kind, tag in ((GC, "sea", "cube"), (GP, "stag", "plaquette")):
+    for v in g.L.V:
+        CORNERS.append((tag, v) + corner_table(g, v, kind))
+
+last_ok = True
+last_cases = 0
+open_cases = 0
+never_empty = True
+free_at_empty = True
+first_forcing = {}
+sizes = {}
+for (tag, v, pats, n, A) in CORNERS:
+    sizes.setdefault(tag, set()).add(len(pats))
+    full = (1 << n) - 1
+    for (mask, val, r), av in A.items():
+        k = pcnt(mask)
+        never_empty = never_empty and len(av) >= 1
+        open_cases += 1
+        if k == 0:
+            free_at_empty = free_at_empty and len(av) == 2
+        if len(av) == 1 and (tag not in first_forcing or k < first_forcing[tag]):
+            first_forcing[tag] = k
+        if mask == full ^ (1 << r):
+            last_cases += 1
+            last_ok = last_ok and len(av) == 1
+
+check("F1 [exact] site-level forcing: at every corner, for each of the 2 z_v choices of which record "
+      "forms last, every assignment of the other 2 z_v - 1 records THAT OCCURS leaves exactly one "
+      "admissible value -- %d such conditioning events on the cube (sea) and the plaquette (stag), "
+      "all forced" % last_cases, last_ok and last_cases > 0)
+check("F2 [exact] the conditional never forbids its own conditioning event: over all %d occurring "
+      "(record set, absent record) pairs the admissible value set is nonempty, and with no record of "
+      "the corner present both values are open; forcing first appears at %d of the cube's 6 records "
+      "and %d of the plaquette's 4, always as a zero of the odds at one site"
+      % (open_cases, first_forcing["cube"], first_forcing["plaquette"]),
+      never_empty and free_at_empty and first_forcing == {"cube": 2, "plaquette": 1})
+
+order_ok = True
+norders = {}
+for (tag, v, pats, n, A) in CORNERS:
+    target = set(pats)
+    cnt = 0
+    for order in itertools.permutations(range(n)):
+        cnt += 1
+        order_ok = order_ok and formed_set(A, n, order) == target
+    norders[tag] = cnt
+check("F3 [exact] order independence: for every corner and every one of the (2 z_v)! formation orders "
+      "-- %d per cube corner, %d per plaquette corner -- forming the records one at a time under F1 "
+      "and F2 reproduces the G_v = 0 set exactly (%s and %s patterns), so the JOINT restriction is a "
+      "consequence of the site-level zeros, not a further primitive"
+      % (norders["cube"], norders["plaquette"], sorted(sizes["cube"])[0], sorted(sizes["plaquette"])[0]),
+      order_ok and norders == {"cube": 720, "plaquette": 24}
+      and sizes == {"cube": {24}, "plaquette": {6}})
 print("SUMMARY: an exactly gauge-invariant minimal coupling of the fermion's U(1) to a designed "
       "spin-1/2 link role; Gauss's law is a record-diagonal corner relation whose solution set on "
       "the cube is exactly the half-filled sector; spin-1/2 links carry a coordination-parity "

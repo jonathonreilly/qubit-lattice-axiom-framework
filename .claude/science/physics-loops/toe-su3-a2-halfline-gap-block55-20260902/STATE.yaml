@@ -1,6 +1,6 @@
 loop_slug: toe-su3-a2-halfline-gap-block55-20260902
 mode: campaign
-target_status: mathematical-target-closed-audit-pending-pr
+target_status: mathematical-target-closed-audit-pending-pr-open
 started_at: 2026-09-02T20:35:43Z
 runtime_budget: 24h
 stop_at: 2026-09-03T20:35:43Z
@@ -30,5 +30,5 @@ files_touched:
   - scripts/native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_09_02.py
   - logs/runner-cache/native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_09_02.txt
   - docs/audit/data/citation_graph_manifest.json
-next_exact_action: commit, push, and open an honestly scoped audit-pending PR, then audit prior discarded work for the same audit-ordering suppression
+next_exact_action: audit prior discarded work for the same audit-ordering suppression and open remote classification PRs
 stop_condition: runtime exhausted, a promotion-grade half-line theorem is packaged, or every independent positive route is exhausted

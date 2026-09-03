@@ -172,3 +172,11 @@ prose-grep checks, tautologies, ball walls, cut-convention fractures), with
 the root-cause finding that forbidden-token hygiene gates prevented
 synthesis notes — the reason this archive's roll-ups had to be written from
 outside the corpus — and six discipline rules going forward.
+
+## 10. Memory-only recovery
+
+`recovery/MEMORY_ONLY_SCIENCE_RECOVERY_2026-09-03.md` records the forensic
+recovery of science that survived only in campaign memory or temporary scratch
+space, resolves stale “not landed” markers, identifies known missing executable
+artifacts, and queues narrow reconstructions. Like this file, it is a record and
+classification surface, not authority.

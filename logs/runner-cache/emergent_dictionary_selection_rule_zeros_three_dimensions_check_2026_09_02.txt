@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/emergent_dictionary_selection_rule_zeros_three_dimensions_check_2026_09_02.py
+runner_sha256: 242c91d77959606b4ba1fa66d87e0e540f7e07ed90cbf8fee176317f62e62cd8
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 4.40
+status: ok
+----- stdout -----
+PASS A1 [exact] cube edge-site code V=8 E=12: R0-R4 hold, 6 face loops, 1 relation (all six) = +I, k=5, group 2^5 free of -I, code dim 2^12/2^5 = 128 = 2^(V-1)
+PASS A2 [exact] grid3x3 edge-site code V=9 E=12: R0-R4 hold, 4 face loops, 0 relations (none), k=4, group 2^4 free of -I, code dim 2^12/2^4 = 256 = 2^(V-1)
+PASS A3 [exact] grid3x3+pendant edge-site code V=10 E=13: R0-R4 hold, 4 face loops, 0 relations (none), k=4, group 2^4 free of -I, code dim 2^13/2^4 = 512 = 2^(V-1)
+PASS A4 [exact] prod_i B_i = +I identically: n_i = (1-B_i)/2 registers an EVEN record number on all 4096/4096/8192 edge patterns, and is injective on the 128/256/512 code states, so an odd target needs the pendant mode
+PASS B1 [exact] cube N=4: dim 70, diagonals equal the fermionic bond counts, 2^5 H_enc a Gaussian-integer matrix of max modulus 32, and a unit gauge D (38 of 70 entries in {i,-i}) gives D H_enc D^dag = H_F
+PASS B2 [exact] grid3x3 N=6: dim 84, diagonals equal the fermionic bond counts, 2^4 H_enc a Gaussian-integer matrix of max modulus 16, and a unit gauge D (40 of 84 entries in {i,-i}) gives D H_enc D^dag = H_F
+PASS B3 [exact] grid3x3+pendant n_aux=1, N_grid=3: dim 84, diagonals equal the fermionic bond counts, 2^4 H_enc a Gaussian-integer matrix of max modulus 16, and a unit gauge D (44 of 84 entries in {i,-i}) gives D H_enc D^dag = H_F
+PASS C1 [exact] cube N=4 at g=0: orbitals are exact eigenvectors, the Slater ground state over Q(sqrt2) has H_F v = -6 v and <v|v> = 1, levels -1 | 1 across the cut so it is unique; statistics 0 x12, 1/64 x56, 1/16 x2
+PASS C2 [exact] the cube's 12 zeros of 70 are exactly the 6 occupied cube faces and the 6 patterns of two disjoint adjacent pairs, 0 other; every zero is an exact cancellation, not a small number
+PASS C3 [exact] grid3x3+pendant N_grid=3 at g=0: H_F v = -4 sqrt2 v, <v|v> = 1, levels -sqrt2 | 0; statistics 0 x8, 1/256 x12, 1/128 x32, 1/64 x20, 1/32 x8, 9/256 x4; the 8 zeros are exactly the 3 rows, 3 columns, 2 diagonals
+PASS C4 [exact] grid3x3 N=6 on the 12-qubit code at g=0: H_F v = -4 sqrt2 v, <v|v> = 1, levels 0 | sqrt2, the same value multiset; its 8 zeros are exactly the complements of the N_grid=3 zeros, the particle-hole image
+PASS D1 [numerical, 1e-12] cube N=4 at g in {0, 0.5, 1, 2}: encoded and fermionic statistics agree to L1 <= 2.0e-15, zero counts 12/12/12/12 identical, ground simple throughout, smallest gap 0.573988
+PASS D2 [numerical, 1e-12] grid3x3 N=6 at g in {0, 0.5, 1, 2}: encoded and fermionic statistics agree to L1 <= 3.4e-15, zero counts 8/4/4/4 identical, ground simple throughout, smallest gap 0.788251
+PASS D3 [numerical, 1e-12] grid3x3+pendant n_aux=1, N_grid=3 at g in {0, 0.5, 1, 2}: encoded and fermionic statistics agree to L1 <= 2.6e-15, zero counts 8/4/4/4 identical, ground simple throughout, smallest gap 1.293567
+PASS D4 [numerical, 1e-12] zeros surviving every g in {0.5, 1, 2}: cube 12 of 12, the whole g=0 set; grid3x3 4 of 8 at N_grid=3, exactly the four lines through the centre, and 4 of 8 at N=6, their complements
+PASS E1 [exact] cube: |phi(y)| = 1 on all 4096 edge records, every coset holds exactly 2^5 = 32, so the probability is P(pattern)/32 on the fibre; 70x32 = 2240 in the sector, 12x32 = 384 over a zero, all exactly 0
+PASS E2 [exact] grid3x3: |phi(y)| = 1 on all 4096 edge records, every coset holds exactly 2^4 = 16, so the probability is P(pattern)/16 on the fibre; 84x16 = 1344 in the sector, 8x16 = 128 over a zero, all exactly 0
+PASS E3 [exact] grid3x3+pendant: |phi(y)| = 1 on all 8192 edge records, every coset holds exactly 2^4 = 16, so the probability is P(pattern)/16 on the fibre; 84x16 = 1344 in the sector, 8x16 = 128 over a zero, all exactly 0
+PASS F1 [exact] cube: all 15360 off-diagonal edge-basis amplitudes are exactly +i or -i, split 7680/7680; Z(A_ij B_i) sits inside star(i) U star(j), and sign(y) = s_e (-1)^{|y & Z(A_ij B_i)|} on all 4096 records
+PASS F2 [exact] grid3x3: all 8064 off-diagonal edge-basis amplitudes are exactly +i or -i, split 4032/4032; Z(A_ij B_i) sits inside star(i) U star(j), and sign(y) = s_e (-1)^{|y & Z(A_ij B_i)|} on all 4096 records
+PASS F3 [exact] four-cycle flux: cube 144 of 444 carry -1, grid3x3 80 of 344, identical for H_F (144/444, 80/344); in a spanning-tree gauge 90 of 240 and 80 of 252 entries stay +1, so no gauge makes either law sign-uniform
+PASS G1 [exact] cube control: bare X_e in place of A_ij anticommutes with 16 of 60 (term, generator) pairs, leaving the code space; it conserves the record on a 2240-dim sector where a gauge makes all 7680 entries -1, 1 component
+PASS G2 [numerical, 1e-12] cube control on that sector at g in {0, 0.5, 1, 2}: ground simple, all 70 patterns strictly positive, smallest 1.4861e-03, 0 exact zeros -- the Perron-Frobenius consequence of that gauge
+PASS G3 [exact] grid3x3 control: bare X_e in place of A_ij anticommutes with 12 of 48 (term, generator) pairs, leaving the code space; it conserves the record on a 1344-dim sector where a gauge makes all 4032 entries -1, 1 component
+PASS G4 [numerical, 1e-12] grid3x3 control on that sector at g in {0, 0.5, 1, 2}: ground simple, all 84 patterns strictly positive, smallest 2.3740e-04, 0 exact zeros -- the Perron-Frobenius consequence of that gauge
+SUMMARY: ordinary composition plus a single-vertex parity dictionary reproduces the graded selection-rule zeros exactly; the bare edge-flip control has none.
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

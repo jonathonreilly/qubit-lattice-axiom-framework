@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/emergent_fermion_pi_flux_sector_staggered_kinetic_form_check_2026_09_02.py
+runner_sha256: ef9489416019d2e8accced5a2e7767cdec2bcddd406dc44959d1859ad3964cae
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.29
+status: ok
+----- stdout -----
+PASS A1 [exact, sympy] Gamma = (Y1, Z1Y2, Z1Z2Y3), Xi = (X1, Z1X2, Z1Z2X3) are a Cl(6) set, and the 2x2x2-cell Bloch block of KS hopping is sum_a (1+cos q_a) Xi_a + sin q_a Gamma_a in q
+PASS A2 [exact, sympy] H(q)^2 = (6 + 2 sum_a cos q_a) I and tr H(q) = 0, so the cell spectrum is E(q) = +- sqrt(6 + 2 sum_a cos q_a), each fourfold
+PASS A3 [exact, sympy] coarse torus L=4, 64 modes: the eight cell blocks give exactly the spectrum -2sqrt3 x4, -2sqrt2 x12, -2 x12, 0 x8 and its mirror
+PASS A4 [numerical, 1e-9] coarse tori L=6 (216 modes) and L=8 (512) reproduce the same Bloch prediction eigenvalue by eigenvalue, with 0 and 8 zero modes
+PASS B1 [exact] sigma_a (x) T, I (x) B_a (T = diag(1,1,-1,-1); B = XX, XY, XZ) is a Cl(6) set, and Clifford averaging gives U with Z[i] entries, U U^dag = 16 I, intertwining exactly on both branches
+PASS B2 [exact rank] the 384x64 intertwining system has rank 63 over F_p, p = 1 mod 4, and U is a nonzero exact solution, so each branch nullspace is 1-dimensional and U is unique up to a phase
+PASS B3 [numerical, 1e-12] U H(pi+p) U^dag = sum_a sin p_a (sigma_a (x) T) + (1 - cos p_a)(I (x) B_a) over 300 random p, max dev 9.4e-16; the taste-mixing term carries I on spin, a singlet
+PASS C1 [exact] every plaquette holonomy of the KS signs is -1: all 24 parity-class/plane holonomies, and all 192, 648 and 1536 plaquettes of the coarse tori L = 4, 6, 8
+PASS C2 [exact] no site gauge c_v -> s(v) c_v carries plain to KS: loop holonomy is gauge invariant, plain gives +1 and KS -1 on each plaquette, and all 2^8 patterns on the open 2x2x2 fail
+PASS C3 [exact] every coarse 2v is a corner and its cell's fine-mod-2 role pattern takes 1 value, so any function of it is constant while the KS sign varies; that sign is a function of 2v mod 4 on 8^3
+  2v mod 4 in (x, y) -> (eta_x, eta_y, eta_z), independent of z:
+    (0,0) -> (+,+,+)
+    (0,2) -> (+,+,-)
+    (2,0) -> (+,-,-)
+    (2,2) -> (+,-,+)
+PASS D1 [exact] all 24 proper cubic rotations lift to signed permutations of the L=4 torus with C_R H C_R^T = H, each orthogonal with entries in {0, +-1}, one nonzero per row and column
+PASS D2 [exact] the lift closes on the nose: all 576 products C_R C_R' = C_{RR'} at the 64x64 level and all 576 on the 8 zero modes, 0 carrying -1 -- a genuine representation of O, not projective
+PASS D3 [exact] characters on the eight zero modes (E, 8C3, 3C2, 6C4, 6C2') = (8, 2, 0, 4, 0) decompose, against a self-checked table of O, as 2 A1 + 2 T1, sharpening the landed 1 + 3 + 3 + 1 grading
+PASS D4 [numerical, svd ratio 9e-17] in the B basis every lift factorises as (2x2 spin) (x) (4x4 taste); det-normalised, both carry one cocycle, 208 of 576 pairs -1, no coboundary: each factor projective, the product genuine
+PASS E1 [exact] epsilon = Z1 Z2 Z3 anticommutes with all six generators, hence with H(q) at every q, and U epsilon U^dag = I (x) (+- T B1 B2 B3) on the two branches, never +- I (x) T
+PASS F1 [exact, symplectic] (B_j - B_i) = 2 on exactly the legal steps, so T_ji = (i/2) A_ji (B_j - B_i) acts there as i A_ji, and the ordered four-hop product round a face equals S_f exactly, Z4 phase included, on 6, 36, 81, 192 faces
+PASS F2 [exact] every F2 relation among the face stabilizers has ordered product exactly +I on all 12 blocks and tori, so S_f = -1 for all f is consistent iff every relation has even support
+PASS F3 [exact] the all-(-1) face sector exists on every open block, and on an L1xL2xL3 torus iff every pairwise product L_a L_b is even -- at most one odd period, the KS periodicity condition
+  V/faces/rank/rel, supports, all-(-1):
+   o222 8/6/5/1 6 YES | o333 27/36/28/8 6,10 YES | o444 64/108/81/27 6,10,14 YES
+   3x3x3 27/81/52/29 6,9,10,12,13,15,17,18,21 no | 3x3x4 36/108/70/38 6,9,10,12,16,18,20,24 no | 3x4x5 60/180/118/62 6,10,12,15,18,20,21,24,27,28,33 no
+   4x4x4 64/192/126/66 6,10,14,16,20,24,28,32,40 YES | 4x4x5 80/240/158/82 6,10,14,16,20,24,28,32,36,44 YES | 4x4x6 96/288/190/98 6,10,14,16,24,28,32,36,40,48 YES
+   4x5x6 120/360/238/122 6,10,14,16,20,24,30,32,34,38,40,42,48,56 YES | 5x5x5 125/375/248/127 6,10,14,18,20,25,29,30,33,35,37,40,41,45,50,55,65 no | 5x5x6 150/450/298/152 6,10,14,18,20,25,30,34,38,40,42,46,50,60,70 no
+PASS F4 [exact] an independent F2 test, solving 'four edge signs sum to 1' for a pi-flux sign field over all 2424 faces of the twelve, is solvable on exactly the blocks of F3
+PASS F5 [exact] eta', read off the all-(-1) sector by spanning-tree gauge fixing and cycle transport with no KS input, has holonomy -1 on every plaquette and a gauge witness s(v) to KS on the open 2x2x2, 3x3x3, 4x4x4 and the 4x4x4 torus (4, 7, 32, 24 minus sites)
+PASS F6 [numerical, 1e-9] the one-particle spectra of eta' and KS agree eigenvalue by eigenvalue on all four blocks: the flux-sector hopping is the staggered form up to a relabelling
+PASS G1 [exact] open 2x2x2 cube, 12 edge qubits, dimension 4096: prod_i B_i = +I, faces of F2 rank 5, and the joint S_f = -1 eigenspace is 1-dimensional on each of the 128 B-configurations -- 128 = 2^(V-1) states, the even-parity Fock space
+PASS G2 [numerical, 1e-13] the encoded hopping there is hermitian and its 128 levels equal the even-parity spectrum of sum_ij eta'_ij c_i^dag c_j, max deviation 4.9e-15
+SUMMARY: on the coarse lattice 2Z^3 the staggered kinetic form is a Cl(6) operator with an exact spin x taste split, its KS sign a pi-flux class, and it is the all-(-1) face sector of the fermion's Z2 gauge structure.
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -39,7 +39,7 @@ theorems and the remaining blocker is narrower than before.
 ## What is now closed
 
 1. **RN-cocycle route.**
-   [`SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md`](SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md)
+   `SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md`
    proves that a normalized sharp-record RN source family with primitive score
    forces
 
@@ -51,13 +51,13 @@ theorems and the remaining blocker is narrower than before.
    scalar-additivity assumption.
 
 2. **Cumulant/Mobius route.**
-   [`SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md`](SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md)
+   `SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md`
    proves that `log Z` is the finite partition-lattice generator of connected
    source responses.  Raw `Z^p` or `M^p` does not generate unit connected
    responses unless `p=1`.
 
 3. **Sharp-record tangent-space route.**
-   [`SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md`](SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md)
+   `SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md`
    proves that finite sharp-record probability space has a canonical RN score
    tangent and Fisher pairing.  The signed record has unit Fisher norm; scaling
    by `lambda` changes the norm to `lambda^2`.
@@ -151,3 +151,11 @@ Expected result for every runner:
 ```text
 SUMMARY: PASS=... FAIL=0
 ```
+
+## Link note (2026-09-03 densify repair M1)
+
+The three route notes named above (RN cocycle, cumulant-Mobius, sharp-record
+tangent space) are archive-bound under the densify pass (migration pending);
+their load-bearing results are restated in this synthesis, which is the
+lane's standing surface. References above are plain-text history, not
+authority links.

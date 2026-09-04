@@ -125,6 +125,17 @@ premise is admitted once the independent-subsystem scope is fixed; the
 additivity follows from (2) + (3) + (6) — all standard linear-algebra /
 operator-trace content on the qubit algebra.
 
+> **Downgrade annotation (2026-09-03 densify repair E1).** The two-stage
+> synthesis (`OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md`,
+> §6, runner check R.3) records that this standalone additivity step does not
+> by itself discharge the parent P1 admission: `Z = Z_A · Z_B` is the
+> multiplicative property of the entire `F_p` family for every `p` (verified
+> by R.3), so selecting `log` of the factorization is the parent
+> scalar-additivity premise, not a derivation of it. (The synthesis presents
+> this under its skeptical reading; both of its readings agree the residual is
+> the single P-cal premise.) Step 1 remains a correct support theorem at its
+> in-formulation scope; it does not close the parent P1 admission.
+
 The independent-subsystem premise (`H = H_1 ⊗ 𝟙 + 𝟙 ⊗ H_2`,
 `[J_1, J_2] = 0` across regions) is the **defining** content of
 "independent subsystems" on the qubit lattice. On that substrate, this

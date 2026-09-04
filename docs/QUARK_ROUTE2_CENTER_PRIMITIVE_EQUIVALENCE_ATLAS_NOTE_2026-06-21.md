@@ -148,3 +148,83 @@ Expected result:
 TOTAL: PASS=49, FAIL=0
 VERDICT: the Route-2 center primitive has equivalent exact faces, but no current surface derives it.
 ```
+
+## Sign Discharge (2026-09-03 densify absorb-repair K1)
+
+With the granted T-side values `q_T = 5/6` and `s_TE = -2`, the endpoint
+algebra gives `c_TE = s_TE q_T / q_E = (-5/3)/q_E`. Positivity of the E-center
+lift (`q_E > 0`, equivalently `rho_E > -6`) therefore **forces `c_TE < 0`**
+for the entire admissible family. Consequently a magnitude-only bridge
+
+```text
+|c_TE| = R_conn = 8/9
+```
+
+suffices for the full endpoint: the `c_TE = +8/9` branch gives `q_E = -15/8`
+and `rho_E = -69/4`, failing both `q_E > 0` and `rho_E > -6`. The open color
+import is thereby reduced to the typed magnitude bridge plus the already-forced
+sign. (Absorbed from
+`QUARK_ROUTE2_RCONN_MAGNITUDE_SIGN_SPLIT_EXACT_SUPPORT_NOTE_2026-06-21.md`,
+archive-bound under the densify pass; migration pending.)
+
+## Admissibility Gate For Any Future E-Center Primitive (2026-09-03 densify absorb-repair K3)
+
+Gates G1-G4 and G6 are necessary for any candidate primitive to close the
+endpoint; G5 additionally tests whether a candidate already exists on the
+current named source bank (a genuinely future primitive fails G5 by
+definition and remains admissible):
+
+| gate | requirement |
+|---|---|
+| G1 nonblind | distinguishes `E-center` from `E-shell`, not merely shell normalization or a time-factor property |
+| G2 selector | fixes one exact dimensionless value of `rho_E`, `q_E`, or `c_TE` — not only a sign, interval, norm, or scale |
+| G3 target-free | no endpoint fitting, nearest-rational matching, observed masses, measured calibration, or target value as input |
+| G4 typed Route-2 readout | maps into `gamma_E(center)/gamma_E(shell)` or `gamma_T(center)/gamma_E(center)` via a typed source/readout bridge |
+| G5 current-surface | present on the current named source bank, not supplied as the missing premise |
+| G6 target-compatible | under the granted T-side values gives `q_E=15/8` / `rho_E=21/4` / `c_TE=-8/9` |
+
+Classification of the eight current candidate families by failing gate:
+carrier/time factor-rigidity (G2); registration/positivity (G2); positive
+projective `ell_E` family (G2/G6 — supplies the sign, not the magnitude);
+step-free active-branch slopes (G2/G3/G4); measured E-center calibration
+(G2/G3/G4); `F_adj`/`R_conn` color fraction (G1/G4 absent the typed bridge);
+register-not-read color-trace shortcut (G1/G2/G4); explicit `q_E=15/8` premise
+(G3/G5 — it *is* the missing premise). No named current-bank candidate passes
+all six; future primitives outside the current bank remain open. (Absorbed from
+`QUARK_ROUTE2_NONBLIND_SOURCE_READOUT_PRIMITIVE_GATE_NO_GO_NOTE_2026-06-21.md`,
+archive-bound under the densify pass; migration pending.)
+
+## Single-Adjoint-Line Wall (2026-09-03 densify absorb-repair K3-extension)
+
+The color route's sharpest surviving structure, compactly:
+
+- **Sufficiency (conditional).** A *supplied physical color ray* selects one
+  adjoint line; granting additionally the typed reading of the complementary
+  adjoint fraction `7/8` as the Route-2 E-center excess, the full endpoint
+  closes through the equivalence web above
+  (`QUARK_ROUTE2_COLOR_RAY_ADJOINT_LINE_SELECTOR_BOUNDARY_NOTE_2026-06-21.md`).
+- **Obstruction.** The adjoint commutant is scalar: no invariant adjoint line
+  and no invariant rank-7 projector exists, so the selection cannot come from
+  color symmetry alone
+  (`QUARK_ROUTE2_COLOR_COMPLEMENT_SEVEN_EIGHTHS_BRIDGE_NO_GO_NOTE_2026-06-21.md`).
+- **Uniqueness.** The `k = 7` uniqueness statement and its falsifiers stay in
+  the standing conditional note
+  `QUARK_ROUTE2_E_CENTER_SINGLE_ADJOINT_LINE_SELECTOR_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md`.
+- **Source-count identity** (absorbed here so it survives on the atlas
+  surface): the counting identity is `N_pair^3 = N_color^2 - 1` at
+  `(N_pair, N_color) = (2, 3)`, so `-N_pair^3/N_color^2 = -8/9 = -F_adj`
+  numerically; the further identification with `c_TE` remains conditional on
+  the missing typed bridge
+  (from `QUARK_ROUTE2_SOURCE_COUNT_SELECTOR_BRIDGE_BOUNDARY_NOTE_2026-06-21.md`).
+- **Connected-trace selector.** The physical family
+  `R_phys(kappa_EW) = (8 + kappa_EW)/9` reaches the target only at the
+  connected value `kappa_EW = 0`; that selector is not supplied by any current
+  authority.
+- **T-side minimality boundary.** The granted T-row `(1, -2, 2)` is not
+  selected by the enumerated primitivity/minimality selectors tested there
+  (those pick `n = 1` or `beta_T in {0, 1}`); other future selectors remain
+  open, and the named missing T-side premise is a physical multiplicity-two
+  rule.
+
+None of these lines changes the atlas verdict: the center primitive remains
+underived, with one missing typed bridge carrying several equivalent faces.

@@ -99,3 +99,12 @@ audited claim scope.
 - [STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
 - [STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md](STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md)
 - [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
+
+## Scope caveat (2026-09-03 densify repair P1)
+
+`CUBIC_QUBIT_RELATIVISTIC_REDUCTION_CYCLE7_NOTE_2026-07-14.md` corrects an
+over-broad reading of this theorem: the forcing holds for **per-primitive-site
+carriers** (one qubit per fundamental site with strict per-site locality).
+Finite blocks of primitive sites evade it — that note exhibits explicit `M_4`
+Wilson and `2^3` staggered-block constructions. Both notes stand; read this
+theorem at its per-primitive-site scope.

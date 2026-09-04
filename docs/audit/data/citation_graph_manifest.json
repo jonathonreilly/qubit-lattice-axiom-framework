@@ -1,6 +1,6 @@
 {
- "edge_count": 15755,
- "node_count": 5568,
+ "edge_count": 15749,
+ "node_count": 5567,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15415,8 +15415,8 @@
    "out_degree": 0
   },
   "quark_route2_endpoint_step_free_active_branch_slopes_bounded_note_2026-06-12": {
-   "deps_hash": "8ea375d06d6b",
-   "out_degree": 2
+   "deps_hash": "3d17605417dc",
+   "out_degree": 1
   },
   "quark_route2_endpoint_t_balance_fd_provenance_and_step_stability_bounded_note_2026-06-11": {
    "deps_hash": "c75924e52f18",
@@ -16181,10 +16181,6 @@
   "record_production_residual_checklist_2026-06-05": {
    "deps_hash": "3190ce633dc5",
    "out_degree": 6
-  },
-  "record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21": {
-   "deps_hash": "7b707271a9a8",
-   "out_degree": 2
   },
   "record_reset_sink_entropy_ledger_2026-06-05": {
    "deps_hash": "630eac816cd1",
@@ -17223,8 +17219,8 @@
    "out_degree": 0
   },
   "source_measure_pcal_retirement_synthesis_note_2026-05-30": {
-   "deps_hash": "6f8c2223d0e1",
-   "out_degree": 3
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "source_measure_pcal_rn_cocycle_theorem_note_2026-05-30": {
    "deps_hash": "0bd8d5217597",

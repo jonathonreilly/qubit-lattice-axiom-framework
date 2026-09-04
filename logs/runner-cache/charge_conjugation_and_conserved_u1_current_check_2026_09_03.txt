@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/charge_conjugation_and_conserved_u1_current_check_2026_09_03.py
+runner_sha256: d5a1914bf9b5bb244526fd399fe232544764545c6e6f8dcc45631476fb86f719
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 2.07
+status: ok
+----- stdout -----
+H(t,m) = -t sum eta_ij T_ij - (m/2) sum eps_v B_v; n_i = (I - B_i)/2; J_ij = eta_ij (t/2) A_ij (I - B_i B_j)
+PASS A1 [exact] CONTINUITY i[H, n_i] + sum_{j~i} J_ij = 0, residual 0 at all 27 corners of the open 3x3x3 block and all 64 of the 4^3 torus
+PASS A2 [exact] the naive candidate (t/2) A_ij (B_i + B_j) fails structurally -- B_i + B_j annihilates the sector B_i = -B_j where hopping lives: 12 / 24 nonzero residual terms
+PASS A3 [exact] on every bond J_ij = i eta T_ij B_j = -i eta T_ij B_i = (eta/4) A_ij (B_i - B_j)^2
+PASS A4 [exact] every J_ij is Hermitian; J_ji = -J_ij while T_ji = +T_ij (A_ji = -A_ij); exactly [2] Pauli monomials, X-support [1] qubit -- its own edge site
+PASS A5 [exact] total support [11] in the bulk = star(i) u star(j), [6, 8, 10] at the open boundary; no monomial of J_ij is diagonal, so its record-diagonal part vanishes
+PASS A6 [exact] [J_ij, S_f] = 0 for every bond-face pair on both lattices: the current is a gauge-legal observable of the code
+PASS A7 [exact] [H, N] = [H, Q] = 0 -- the corner continuity equations summed, the bond currents cancelling in pairs -- and Q is pure Z, diagonal in the record basis
+PASS B1 [exact] x-dimers are a perfect matching on the 2x2x2 cube, the open 4x4x4 block and the 4^3 torus; C_0 = prod_M A_ij carries X on exactly the matched edges
+PASS B2 [exact] Z_E = prod_e Z_e = prod over the odd-sublattice corners of B_v = (-1)^{N_odd}: every bond of a bipartite lattice has one odd endpoint
+PASS B3 [exact] C B_v C^-1 = -B_v at every corner, so n_v -> I - n_v and rho_v = n_v - 1/2 -> -rho_v; C_0 flips B_v too, Z_E fixes it
+PASS B4 [exact] C A_ij C^-1 = -A_ij on every bond, C_0 A_ij C_0^-1 = +A_ij, Z_E A_ij Z_E = -A_ij
+PASS B5 [exact] C, C_0 and Z_E commute with every S_f: S_f -> +S_f, code space preserved with no sign
+PASS B6 [exact] C T_ij C^-1 = +T_ij (two sign flips), C H_hop C^-1 = +H_hop, C H_m C^-1 = -H_m: C H(t,m) C^-1 = H(t,-m), an exact symmetry at m = 0
+PASS B7 [exact] the C_0 column: T_ij, H_hop and H_m all flip (C_0 H C_0^-1 = -H) while A_ij and J_ij are fixed
+PASS B8 [exact] the Z_E column: the chiral/sublattice symmetry flips A_ij, T_ij and H_hop and fixes B_v, H_m and Q
+PASS B9 [exact] C J_ij C^-1 = -J_ij and C Q C^-1 = -Q: the current and the charge are both C-odd, as a C-even H requires
+PASS B10 [exact] C^2 = +I on all three lattices: C is unitary and an involution
+PASS B11 [exact] the y-dimer matching gives the same action on every B_v and A_ij: C is matching-independent up to phase
+PASS B12 [exact] the whole table is independent of the bond weights: it holds for the KS signs, for all-+1 weights and for generic rational weights
+  C: B_v -> -B_v, n_v -> I-n_v, A_ij -> -A_ij, S_f -> +S_f, T_ij -> +T_ij, H_hop -> +H_hop, H_m -> -H_m, J_ij -> -J_ij, Q -> -Q; eps_v is a supplied corner label, unchanged
+PASS C1 [exact] prod over all corners of B_v = I identically on every block and torus tested: each edge carries a Z from both endpoints
+PASS C2 [exact] so B_v -> -B_v everywhere forces I -> (-1)^{|V|} I: for |V| = 27 odd (the open 3x3x3 block) NO unitary C exists on the code space, not merely no Pauli one -- C maps N -> |V| - N and the code space is one parity sector
+PASS C3 [exact] the same obstruction in edge-flip form: flipping every B_v needs a T-join with T = V, i.e. odd degree at all 27 corners, while sum_v deg_S(v) = 2|S| is even. It exists iff |V| is even, minimally a perfect matching
+PASS D1 [exact] on all 4096 record patterns of the 2x2x2 cube: Q = #{corners whose six incident edge records hold an odd number of the value 1} - |V|/2, matching -(1/2) sum_v B_v with deviation 0.0e+00
+PASS D2 [exact] Q registers as an integer six-bit parity count per corner; its record spectrum on the cube is [-4, -2, 0, 2, 4], symmetric about 0 as a C-odd charge must be
+PASS D3 [exact] every J_ij has an identically zero diagonal over all 12 bonds x 4096 record patterns (max 0.0e+00): like the energy density, the current is invisible in one record pattern and registers only through record correlations
+PASS E1 [1e-12] one-particle 4^3 torus: {M, Eps} = 0 (0.0e+00) and eps (I - P(m)) eps = P(-m) at m = 0, 0.5, 1, 2 (1.1e-15); at m = 0 the sea projector is C-invariant
+PASS E2 [1e-12] <n_v>_{-m} = 1 - <n_v>_m site by site (1.0e-15), and at m = 0 the site density is <n_v> = 1/2 (4.4e-16) -- the C fixed point
+PASS E3 [1e-10] 2x2x2 cube: 12 qubits -> 4096-dim space, 6 faces, code space dim 128 = 2^(|V|-1), only even N; C unitary there (4.9e-15), C N C^-1 = |V| - N (6.2e-14)
+PASS E4 [1e-10] many-body C H(t,m) C^-1 = H(t,-m) on the code space at m = 0, 0.7, 1.5 (1.2e-14); at m = 0 that is [C, H] = 0 and the spectrum is exactly E -> -E (0.0e+00)
+PASS E5 [1e-8] the m = 0 ground state is the half-filled sea: E = -6.928203230 = -4 sqrt 3 (8.9e-16), <N> = 4.000000000 = |V|/2, |<g|C|g>| = 1.000000000 -- the sea is the C fixed point
+PASS E6 [1e-10] corollary: the sea carries no current, max |<J_ij>| = 3.7e-15 on every bond at m = 0 and m = 1 -- forced at m = 0, where J is C-odd and the sea is C-even
+PASS E7 [1e-10] the empty vacuum is not a C fixed point: |<N=0|C|N=0>| = 6.1e-16, C|N=0> sits entirely at N = 8.000000 = |V|, overlap 1.000000000. C is a symmetry of the half-filled sea only
+SUMMARY: a conserved U(1) whose charge is a six-record corner parity read off the records and whose current is gauge-legal, local and correlation-only; C = Z_E C_0 sends H(t,m) -> H(t,-m), needs an even corner count, and fixes the sea, not the empty state.
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,1058 @@
+[
+ {
+  "pr": 7818,
+  "verdict": "CLOSE",
+  "science": "Block29 attempted an operator-valued connected depth-two composition of the two supplied Block28 pair channels with Block24 future appends, but the final content-bound run timed out after six checks and before the fixed-prefix cylinder terminal; the packet states that no positive or negative scientific inference was obtained. The stored diff is truncated at 180000 bytes.",
+  "carrier": "Block30 successor route; no Block29 theorem was produced",
+  "stack": "physics-loop/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7822,
+  "verdict": "KEEP",
+  "science": "For q_lambda=(1-lambda)J_4/16+lambda I_4/4, the PR proves that compatibility between the Block32 product two-use history and one unchanged finite classical screening cause with identical conditionally independent product responses exists exactly at lambda=0. It also constructs supplied-iid and coherent realizations for the full strict interval and a positive three-use nonproduct history whose one- and two-use marginals are product.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-source-eta-ownership-block32-local-validator-controlled-successor-20260831",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7826,
+  "verdict": "KEEP",
+  "science": "Block37 constructs a translation- and proper-cubic-covariant radius-one rate-one Record-valued CTMC on a finite well-formed single-front sector, with typed Gaussian and Haar successor measures. On that candidate law it derives the installed-program barycentric M intertwiner and unequal-archive active-cut screening S for every finite active cylinder while retaining permanent branch-tagged carrier Records; law selection, full-lattice totalization, and physical attachment remain open. The stored diff is truncated at 180000 bytes.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7858,
+  "verdict": "KEEP",
+  "science": "On three named finite edge-qubit graphs with a stipulated Lueders update, the PR proves that vacuum record patterns form a uniform F2 subspace of dimension E-V+1 cut out by vertex parities, that conditional site odds are 1/2 or forced, and that minimal forcing sets are graph cocircuits. It also proves order independence, identifies fermion-pair patterns as cosets, and separates parity exclusions from coherent-state cancellation zeros.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7876,
+  "verdict": "KEEP",
+  "science": "For a stipulated record tick on the 2x2x2 cube, all-at-once formation reproduces the pre-record Born diagonal exactly, but any intervening post-record evolution makes the finished law schedule-dependent and leaks into the sea's cancellation-zero sector with leading forbidden mass t^2/8. Exact finite-sector algebra also gives a zero-dimensional joint kernel for all post-record Hamiltonian differences, so no nonzero pre-record state is invariant under every record-conditioned generator.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7880,
+  "verdict": "KEEP",
+  "science": "Two finite star-local role-marking classes fail on the named clusters: exhaustive value-reading rules always admit unintended periodic patterns, while frustration-free state-reading projector templates admit superposition junk outside the intended role span. Exact and matrix-free checks isolate period collapse and kernel superposition as distinct mechanisms and include a junk-free one-dimensional contrast; wider, energetic, and non-projector rules remain open.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7884,
+  "verdict": "KEEP",
+  "science": "For every even compact-U(1) one-plaquette potential with a positive isotropic quadratic germ, the PR derives common second-order convergence of the smooth source-free action and equations to Maxwell theory, the zero-monopole Bianchi sector, and exactly two transverse modes after Gauss elimination. Exact finite-lattice checks distinguish the nonlinear microscopic laws and show that zero, anisotropic, or wrong-sign curvature destroys the claimed infrared behavior.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-light-maxwell-block53-20260902",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7888,
+  "verdict": "KEEP",
+  "science": "The staggered three-dimensional hopping law has exactly two magnetic-cell Dirac nodes, equivalent after folding to two four-component Dirac tastes with equal unit infrared velocity and zero net chirality. The exact dispersion fixes the leading cubic anisotropy, while finite-grid checks recover the massless equal-time Dirac propagator, its selection rule, and the half-filled projector sum rule.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7892,
+  "verdict": "KEEP",
+  "science": "For the emergent staggered fermion, an oriented bond operator gives an exact local U(1) current satisfying the lattice continuity equation and coupling gauge-covariantly to compact link phases. The PR constructs charge conjugation and its action on current and density, finds an even-corner obstruction to a local cell-periodic representative, and shows the half-filled sea is charge-conjugation fixed.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7896,
+  "verdict": "KEEP",
+  "science": "A sharp staggered-mass stacking fault supports four exponentially localized modes at each wall node, resolving as vector-like 2+1-dimensional Dirac matter with zero net chirality; the supplied smooth zero-crossing profile has the matching exact zero-mode construction. Finite slabs verify the localization, gap and velocity fits, while orthogonal walls are massive and a uniform sign flip is gauge-equivalent rather than a wall.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7900,
+  "verdict": "KEEP",
+  "science": "For five stipulated joint record-formation units on the staggered cube, no-evolution conditioning is order-independent, while unitary and relaxation gaps generally retain schedule dependence. Under the unitary rule certain corner and closed-star schedules preserve all 256 cancellation zeros and two reproduce the sea exactly at every tested gap, with the mechanism traced to exact restricted-Hamiltonian eigenvectors; sitewise and face schedules do not.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7904,
+  "verdict": "KEEP",
+  "science": "For a free-fermion sea, an all-occupied record event has zero probability exactly when the restricted correlation matrix is singular, equivalently when an occupied one-particle state is supported inside the recorded set. Closed corner stars exhaust that criterion only on the flat-band cube; slab and torus checks preserve the downstream zero counts while showing that the earlier lattice-wide closed-star reading fails.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7908,
+  "verdict": "KEEP",
+  "science": "On a single plaquette with a designed fermion doublet and minimal U(2) quantum links, the local non-abelian gauge generators close and commute exactly with the coupled hop, and the plaquette holonomy has a non-scalar colour part. Nevertheless none of the 65,536 product record patterns satisfies all SU(2) Gauss constraints, whereas 1,312 satisfy the abelian control; the obstruction is the rank-two entangled corner singlet, leaving only Cartan charge, matter Casimir and centre parity record-diagonal.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7912,
+  "verdict": "KEEP",
+  "science": "Exact rational witnesses and rank certificates show that, once a grading depends only on the effect, rotated ternary menus eliminate the exhibited nonlinear binary-passing candidates and leave only the three linear Born modes. Menu-dependent uniform and amplitude-power rules normalize at every tested binary and ternary arity and fail only effect functionality or merging, while the earlier five counting laws contain no menu test; thus menu independence, not arity alone, is the missing premise.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7916,
+  "verdict": "KEEP",
+  "science": "For a stipulated record-density dressing, the weak-field metric coefficient reduces exactly to alpha=1+kappa nu, so the target weight requires kappa nu=1; the landed one-dimensional slowdown supplies |nu| at most 1/8. On the half-filled staggered sea, sublattice symmetry pins the scalar density response to kappa=0 and leaves only a staggered gradient, so this vacuum supplies no ruler factor, although a granted product reproduces the desired bending and free-fall response.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7920,
+  "verdict": "KEEP",
+  "science": "A three-shear Yee/leapfrog update on the role-compiled edge-face lattice is exactly reversible, preserves electric and magnetic Gauss constraints at every layer, conserves a positive local modified field energy for h<1/sqrt(3), and carries exactly two transverse photon-phase branches with full cubic covariance. Within the declared palindromic schedule, first-order Maxwell consistency uniquely selects the half-full-half coefficients; the composed radius is three and raw onsite qubit unitarity is not claimed.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-maxwell-generator-uniqueness-classification-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7924,
+  "verdict": "KEEP",
+  "science": "A finite charged-bond unitary yields an exact integrated edge current obeying endpoint continuity, gauge covariance, and second-order midpoint convergence, and six interleaved matchings extend the construction to every bond of the L=4 cubic torus while preserving Gauss residuals. For noncommuting field and current operators the exact field-work observable is the Hermitian anticommutator midpoint; aggregating currents into the initial frame spreads support, so matter and field layers must be interleaved.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-exact-source-work-radiation-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7928,
+  "verdict": "KEEP",
+  "science": "Partial record configurations on the 3^3 torus reduce the covariant support-table readout to a 48-bit demand mask; complete finite sweeps and 44 two-path witnesses determine 17 of 24 ternary digits exactly and three up to a binary choice, bounding each fibre by 648 rather than 3^20 for complete records. Reachability equals admissibility for five of six declared tables but fails for 1,350 configurations of the sixth, while the later injectivity result explicitly uses this readout and leaves these bounds standing.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7932,
+  "verdict": "KEEP",
+  "science": "Finite K-state Weyl links give an exact cyclic gauge-matter carrier with modular Gauss conservation, finite-step energy exchange, and no hard-cutoff dark states; for K=2^q the complete link is exactly q qubits. In the no-wrap window the modular law becomes additive, its electric and magnetic errors converge to the cubic Maxwell tangent with two transverse modes, and reduced-clock spectra approach the photon frequencies, without proving the full many-link Coulomb phase.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-matter-plaquette-finite-step-join-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7936,
+  "verdict": "KEEP",
+  "science": "One qubit per cubic link with an ice Gauss constraint and square-ring moves has an exact positive RK Hamiltonian on the finite connected sector, with larger-torus sampling showing transverse Coulomb correlations, positive ring-move density, and 1/L threaded-flux cost. Conditional on positive electric and magnetic stiffnesses the kernel carries two linearly dispersing polarizations; the executed RK/static results do not claim that the RK point itself has a linear photon or recompute the thermodynamic phase.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-finite-clock-tame-maxwell-matter-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7940,
+  "verdict": "KEEP",
+  "science": "On the supplied 4D cubic-Coxeter Regge complex, endpoint-mean rate-induced edge lengths reduce the static linearized Regge equations exactly to the six-neighbour lattice Poisson equation and select the exponent nu_r=1; a point-worldline solution equals the rate field after projecting zero modes. The rate direction has zero overlap with both propagating graviton polarizations and a time-dependent rate is not a vacuum solution, so the construction fixes one static metric direction rather than the graviton.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7945,
+  "verdict": "KEEP",
+  "science": "Forward-walking calculations for finite-detuning spin-half cubic ice resolve positive linear-in-momentum transverse spectral terms at V=0.95 and V=0.90, at 5.1 and 6.0 sigma, while the exact RK control retains quadratic dispersion and no mass term is resolved. Static-dynamic comparison gives positive inferred stiffness, but the result is finite-volume and leaves same-detuning magnetic normalization and a thermodynamic photon pole open.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/spin-half-cubic-ice-finite-delta-charge-potential-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7949,
+  "verdict": "KEEP",
+  "science": "Complete cell-algebra enumeration identifies the taste-singlet second Dirac mass as the T-odd, P-odd imaginary body-diagonal hop X1Y2X3 and rules out any nearest-neighbour or face-diagonal singlet substitute. A supplied winding of that mass carries 2n co-moving core modes per string, compensated by opposite modes on an anti-string or boundary; nearest-neighbour taste-triplet vortices are vector-like, and compact-link flux without a mass vortex produces no in-gap state.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7953,
+  "verdict": "KEEP",
+  "science": "Paired forward-length estimators preserve covariance and show that the earlier RK rank failure is the exact rank-one consequence of uniform weights; finite-sample calibration corrects the preserved asymptotic-test failures. An independent ten-population, 3,072-walker extension finds a stable F=12,14,16,20 transverse-gap plateau at fixed L=8, removing inadequate forward projection as a supported explanation of that volume's Maxwell mismatch but not extending the conclusion to lower momenta.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/spin-half-cubic-ice-late-time-maxwell-join-20260904",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7868,
+  "verdict": "CLOSE",
+  "science": "Changes the physics-loop workflow so completed scientifically interesting work is always committed, pushed, and exposed in a review or draft-classification PR, while promotion-value and cluster-cap gates classify rather than suppress preservation. It changes no scientific claim or audit-owned surface.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7954,
+  "verdict": "KEEP",
+  "science": "Exact finite enumeration shows that a two-seed dest=hop curl face plant and the four-seed HOLDING inherit+perp grow occupy the same geometric sandwich cubes for radii 4, 6, and 8, while their occupied vertex sets and most shared-vertex destination labels differ. The supplied face plant is load-bearing, and no formation-law or uniqueness claim is made.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7877,
+  "verdict": "KEEP",
+  "science": "For the reduced saddle correction, the exact identity T2_sad=(1/2)[R,[R,T0]]+3T0 makes Rayleigh-Schr\u00f6dinger mixing cancel the diagonal double commutator state by state, leaving the same relative second-order correction 3 for every simple positive eigenvalue and zero contribution to log-eigenvalue ratios. The result is scoped away from the remaining second-order terms, continuum control, and a physical Yang-Mills mass gap.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7937,
+  "verdict": "KEEP",
+  "science": "The spin-half cubic-ice calculation exhausts all 9,600 L=2 ice states, finds the zero-flux mobile component uniquely most flippable with exact sixfold unit-flux cost 44/29, and resolves positive first-order electric stiffness on L=6,8,10,12 with common U/|delta V|=3.183873\u00b10.154786. The finite-volume first-order result does not establish a finite-detuning thermodynamic photon phase.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/spin-half-cubic-ice-photon-phase-bridge-20260903",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7950,
+  "verdict": "KEEP",
+  "science": "Balanced non-collinear ternary qubit menus force the Born form for scale-homogeneous gradings without a frame-theorem import or regularity assumption, while an explicit counting grading is normalized and non-Born on all 5,271 menus realized by the continuum law. Exact rational rank certificates identify the extra collinear or mixed menus that kill the rogue and record that the sibling fibred conclusions silently assume homogeneity.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7941,
+  "verdict": "KEEP",
+  "science": "Finite-population projector calculations at V=0.95 and 0.90 find positive, volume-stable Phi^2/L electric stiffness for spin-half cubic ice on L=4,6,8,10, with normalized means 3.252761 and 3.211140 close to the independent first-order value. Exact L=2 diagonalization, doubled-population/nonlocal-start controls, and competing scaling fits bound the claim away from a thermodynamic or real-time photon theorem.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/spin-half-cubic-ice-electric-stiffness-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7819,
+  "verdict": "KEEP",
+  "science": "An exact content-bound run constructs 192 covariant five-step successor plans and one common 160-block carrier, proving that both supplied Block28 pair laws survive the same externally invoked two-use CPTP cylinder with old-Record preservation, two STOP completions, and prefix consistency. The pair comparator, route trigger, invocation, renewal, cadence, gravity join, and law selection remain supplied or open.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-source-eta-ownership-block29-connected-output-depth-two-20260830",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7921,
+  "verdict": "KEEP",
+  "science": "For the minimal role-compiled payload with one complex scalar per edge and face, exact raw-onsite unitarity of a complete radius-one gauge-compatible linear tick forces both curl transport coefficients to vanish, leaving only flat onsite phases. The bounded no-go explicitly exhibits finite-depth, local-metric, enlarged-carrier, longer-range, and Gauss-breaking escapes and does not extend to general local photon dynamics.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-local-reversible-maxwell-tick-20260903",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7917,
+  "verdict": "KEEP",
+  "science": "Within the declared real, linear, first-order, nearest-neighbor, proper-cubic, gauge-compatible and positive-diagonal-energy-conserving edge/face class, exact stencil and conservation constraints leave only the oriented Yee/Maxwell curl pair up to field normalization and one speed. The classification does not derive that dynamics class from the axioms, and exact finite local tick selection remains open.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-reversible-sampler-quantum-walk-photon-20260903",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7913,
+  "verdict": "KEEP",
+  "science": "A finite role-plus-payload alphabet and one coordinate-free nearest-neighbor conditional rule compile the abstract cyclic-gauge edge/face factor graph onto physical Z3 sites, with exactly eight translated parity-role sectors on even tori and exact translation, gauge, and proper-cubic covariance. The result closes role geometry and incidence but leaves law selection, orthogonal or algebraic label realization, Record formation, and dynamics open.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-auxiliary-face-unconditional-gauge-law-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7946,
+  "verdict": "KEEP",
+  "science": "Sign-free imaginary-twist continuation, calibrated against Hermitian L=2 diagonalization, resolves positive relaxed magnetic-twist stiffness for finite-detuning spin-half cubic ice on L=4,6,8,10: K=0.075561\u00b10.000915 at V=0.95 and 0.076589\u00b10.001155 at V=0.90. It distinguishes the relaxed curvature from the older 0.2598 variational upper cost and leaves a quantified static-dynamic Maxwell-normalization tension rather than a thermodynamic photon claim.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/spin-half-cubic-ice-finite-delta-transverse-pole-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7909,
+  "verdict": "KEEP",
+  "science": "On the declared free-field one-particle record-time models, opening the periodic circle relocates rather than removes the partner Weyl mode: the wall doublet is paired with an end or pin-edge doublet, with exact zero modes, opposite Callan\u2013Harvey flow, and net chirality zero. Complete enumeration of 2,592 piecewise-constant profiles matches species count to band-index transitions, while the result remains finite-family and depends on seven supplied record-time structures.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7823,
+  "verdict": "KEEP",
+  "science": "For the actual fixed-front four-exit pair law, exact algebra gives C_lambda=lambda(I-ff^T)/2: it is front-transverse but fails generic bare momentum transversality, while a conditional nonzero-frequency four-stress completion preserves the full amplitude ray. Homogeneous constraints, free linear coupling, count-once debit, and fixed-reference score normalization do not select a positive physical lambda; the apparent {0,2/3} recurrence is reference-dependent and the physical source identity, absolute unit, cadence, and zero mode remain supplied.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-source-eta-ownership-block33-classical-screening-cause-persistence-renewal-locus-20260831",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7827,
+  "verdict": "KEEP",
+  "science": "The declared random-axis measure-and-prepare family is exactly normalized, covariant, and completely positive on |lambda|,|kappa|<=1, pushes forward to the atomless Haar law (1+lambda n\u00b7s)mu(dn), and has same-label repeat mass (1+lambda kappa)/2. Record-faithful pure attachment fixes kappa=1 and exact operational repeatability then uniquely fixes lambda=1, but both the attachment typing and repeatability condition remain physical-law inputs; a radius-one single-front compiler preserves confluence, covariance, archive screening, and arbitrary finite induction.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7881,
+  "verdict": "KEEP",
+  "science": "Conditional on the designed fermion law, the landed weak-field response, and choosing the half-filled staggered sea as vacuum, finite-torus calculations find that the bilinear response approaches the excitation-energy product and that the on-shell action yields an attractive test-body law F=-E_test grad Phi_N with Phi_N=-phi. The count product vanishes above that sea and remains constant on the empty-vacuum control, while no vacuum choice, mass unit, Newton coupling, nonlinear back-reaction, or repair of the source-positivity/diagonality gaps is supplied.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7885,
+  "verdict": "KEEP",
+  "science": "For the declared free hopping law plus -J_B sum_i B_i, exact Pauli algebra makes the added term a pure chemical potential 2J_B per fermion. Certified finite-volume bounds put the half-filled staggered sea at J_B=0, give an exact 4^3 crossover at J_B=sqrt(3)/2 and emptying thresholds sqrt(3) and 3 for staggered and plain sectors, while the gapless infinite-volume staggered band loses exact half filling for every J_B>0; the coefficient itself is not derived or selected.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7889,
+  "verdict": "KEEP",
+  "science": "For six explicitly stipulated tick models, re-registering position each tick produces an i.i.d. mean-zero walk with sigma^2(n tau)=n m_2(tau), a computed diffusion law with Zeno and ballistic limits, and a renewal extension governed primarily by the mean free time tau/p. On the tested two-record models an energy cost delays but does not prevent separation, and the record-level map converges geometrically to the uniform sector state; the framework's tick, formation law, value-permanence interpretation, and support-conditioned group motion remain open.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7893,
+  "verdict": "KEEP",
+  "science": "A declared spin-half link role gives the encoded fermion an exact four-monomial gauge-invariant U(1) hop, with Gauss operators that commute with the coupled law and are implemented as order-independent site-level support forcing among corner records. Exact finite censuses recover the cube's half-filled sector and expose a coordination-parity obstruction between sea and staggered charge conventions; Ampere/continuity identities and a gauge-compatible ring exchange hold, but the role, coefficients, dynamics, continuum limit, and any photon interpretation remain supplied or open.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7897,
+  "verdict": "KEEP",
+  "science": "For the declared half-filled nearest-neighbor repulsion, Hartree decoupling generates exactly the staggered mass operator with gap equation 1=(zV/2)c(m*) and mean-field threshold V_c=0.732047t; finite cube/slab spectra show the associated C-odd quasi-degeneracy and bimodal staggered readout. Exact C symmetry leaves +m* and -m* degenerate, so the supplied V fixes only the Hartree magnitude while the sign is a record-readable bit relative to a supplied grading; no transition beyond mean field or continuum limit is established.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7901,
+  "verdict": "KEEP",
+  "science": "On four fully stipulated finite record-pattern chains, exact rational ranks and complete cycle censuses show that separable log-odds and detailed balance are independent requirements: rank one need not give a Gibbs law, detailed balance need not give rank one, and a Gibbs stationary law can still carry a driven current. The computation also proves two practical obstructions\u2014a dimer cannot expose the chosen nonseparability and translation lumping can erase the decisive cycle\u2014and relates the mover-crowding cycle defect 4 kappa to a van 't Hoff gap 2 kappa; none of the tables is derived from the framework's law.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7905,
+  "verdict": "KEEP",
+  "science": "Conditional on the designed fermion law, landed weak-field response, half-filled vacuum choice, and a declared two-weight coupling, exact lattice algebra gives transverse acceleration -4[beta+(alpha-beta)v_t^2], so slow-body free fall is set by the mass weight, light bending by the hop weight, and the bending factor is exactly alpha/beta. The supplied choice (alpha,beta)=(2,1) reproduces the first-order weak-field geodesic factors in finite-slab checks while leaving the T_00 source unchanged, but alpha=2 is not derived and introduces a quantified particle-antiparticle mixing systematic; the missing framework input is a ruler or hop-rate factor.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7925,
+  "verdict": "KEEP",
+  "science": "For a stipulated site formation rate and any symmetric bond dressing homogeneous of degree nu_r, exact expansion gives alpha=1+kappa_r nu_r and proves that sublattice-even rate response evades the bond cancellation suffered by record density. Combining the factor-two condition with invariance under the bridge's removed constant mode uniquely fixes (kappa_r,nu_r)=(1,1), while finite checks recover bending near two; however the formation dynamics and exponent remain supplied, and state-level closure carries a vacuum-mass-dependent exponent plus a Phi-linear vacuum-energy feedback that may screen gravity.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7929,
+  "verdict": "KEEP",
+  "science": "Under the declared weak-field sign and feedback conventions, the half-filling-referenced sea has negative energy density and positive response, producing a negative mass-squared term that anti-screens, destroys bridge positivity, and cannot be removed by any positive ruler exponent. Exact spectral-projector algebra instead makes the zero-momentum response of a sea-referenced source vanish, leaving at most a small coupling rescaling and preserving the two-body kernel; this escape is reference-dependent and costs the unmade law-level declaration that vacuum energy does not gravitate, in tension with the separate positive Lambda_vac identity.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7933,
+  "verdict": "KEEP",
+  "science": "On declared one-rishon SU(3) dimer, chain, and triangle carriers, exact component and character calculations give dim(R intersect I)=(N+1)^V 2^E, generated by abelian charges and link-end Casimirs and complete as rank-one projectors on the tested Gauss sectors. The Z_3 triality is record-readable and gauge-invariant while all tested colour octet, triplet, anti-triplet, and Cartan readouts vanish on the Gauss sector; colour rotations change raw record distributions maximally yet leave every readable gauge-invariant statistic unchanged. This is an uncarried kinematic confinement/readability theorem for designed roles, not dynamical confinement or a claim about QCD.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7820,
+  "verdict": "KEEP",
+  "science": "On the exact reached Block28 output sector, a fixed 56-layer, 288-macro nearest-neighbor circuit QND-relays two four-way STATUS messages and writes one of sixteen ordered-pair tokens while restoring transient and borrowed workspace. Exact checks cover the 200-layer, 864-primitive expansion, 256 sample rows, proper-cubic covariance, writer exchange, and 96 token-to-Block30 route correspondences for both supplied lambda laws; physical STOP/no-refire and dispatch control remain open.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-source-eta-ownership-block30-physical-successor-handoff-20260831",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7824,
+  "verdict": "KEEP",
+  "science": "Exact positive nonlinear dot-product kernels show that the covariance, nearest-neighbor Markov, triangle-free, Hammersley--Clifford, and current Record conditions publicly named in PR #7814 do not force an affine pure-qubit edge kernel. Separate preparation affinity plus simultaneous qubit covariance yields the affine family, endpoint conditions distinguish Born from anti-Born only within that family, and bipartite staggering exchanges the two signs; the displayed gravity arithmetic reproduces but its operator, source, and dynamics do not.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7843,
+  "verdict": "KEEP",
+  "science": "Conditional on the supplied emergent-fermion law and weak-field response, the projector density n_v=(1-B_v)/2 supplies a local positive finite-additive count, is conserved by the encoded hop, realizes exact pair point sources with expectation |psi(v)|^2, and produces the lattice monopole response on the tested finite volumes. The response remains a count product rather than a mass product, the coarse/fine unit choice leaves a factor-two ambiguity, and the construction's positive density is unsigned across the two eta sectors.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7869,
+  "verdict": "KEEP",
+  "science": "On the eight-dimensional coarse-lattice staggered corner kernel, the proper cubic representation decomposes exactly as 2 A1 + 2 T1, with the two T1 carriers equal to the Hamming-weight-one and Hamming-weight-two triplets and each restricting under C3 to a singlet plus doublet with one-third corner weights. Twelve stipulated bilinears restrict to exact circulants with either zero diagonal or zero off-diagonal part, while the restriction map is onto the circulant algebra, so the block weight r is freely set by stipulated coefficients and the two carriers are separated only by chirality sign or phase.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7878,
+  "verdict": "KEEP",
+  "science": "For the record-conserving nearest-neighbor density interaction at half filling, exhaustive flux-sector comparisons on the open 2x2x2 and 2x2x3 clusters keep the all-minus staggered sector as the unique minimizer at every tested repulsive coupling, with exact algebraic ordering for the cube at twelve integer couplings. Away from half filling and for sufficiently attractive coupling other sectors win, while at strong repulsion the sector difference first appears as a negative order-t^4/V^3 plaquette ring exchange.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7882,
+  "verdict": "KEEP",
+  "science": "Re-execution of the periodic L=4 KCPT construction finds three ambient-element classes that unlock the full five-dimensional center, with extension data (class size, algebra dimension, element order) equal to (4,28,4), (64,76,12), and (64,76,12). Both dimension-76 extensions resolve numerically as nineteen M_2(C) summands with the same represented shell profile, and their shell-two separator splits into three positive and three negative rank-four minimal central idempotents.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7886,
+  "verdict": "KEEP",
+  "science": "For every normalized nonconstant compact-U(1) convolution kernel with nonnegative character coefficients and finite fourth moment, the negative-log transfer potential has strictly positive identity curvature kappa=2 sum(n^2 a_n)/(1+2 sum a_n). Positive central Lueders registration supplies the required Fourier signs, with the sharp three-mode binary partitions giving kappa=2/5 or 8/5; only an additionally supplied orientation-complete plaquette action yields the source-free Maxwell germ, because the temporal kernel alone lacks magnetic restoring directions.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-maxwell-quadratic-basin-universality-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7890,
+  "verdict": "KEEP",
+  "science": "The staggered record-parity mass H_m=-(m/2) sum_v eps_v B_v is star-local, gauge-record compatible, invariant under proper rotations and even translations, and anticommutes with the kinetic operator so the exact spectrum is plus/minus sqrt(E_0^2+m^2) with a 2m Dirac gap. Its corner-cell image is chirality-odd and taste-singlet, the massive sea has the derived staggered condensate and correlation length 2/arccosh(1+m^2/2), and the tested staggered sector remains energetically selected; the magnitude m and sign convention remain supplied inputs.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7894,
+  "verdict": "KEEP",
+  "science": "For the declared encoded staggered-fermion Hamiltonian, time reversal T=Z_E K is an exact symmetry at every mass with T^2=+1, and the full finite-lattice C/P/T action and record readability are computed exactly. Conditional on admitting improper lattice elements, corner inversion is implemented by a necessary Clifford CZ correction, preserves the hopping and mass, equals the mass matrix on the eight-dimensional Dirac kernel, and gives scalar CPT there; half-cell-shifted inversions instead reverse the mass and can carry a Kramers sign only at zero mass.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7898,
+  "verdict": "KEEP",
+  "science": "For a stipulated weak potential coupled to the total one-particle energy density, the exact lattice acceleration law gives universal transverse free fall a/g=-4 independent of mass and momentum, supported by finite-slab wavepacket checks and a same-energy composition test. Massless deflection has factor about 1 rather than general relativity's 2, proving that the scalar g_00-only coupling lacks the spatial-metric contribution; a count coupling is chromatic and composition-dependent, while the parent hop-only energy density fails for massive matter at rest unless the mass density is added.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7902,
+  "verdict": "KEEP",
+  "science": "Joint conditioning on a corner's record set factors into an inert record layer and an exact one-particle criterion: the conditioned sea is an H_R eigenvector iff the corner site vector occupies exactly two hopping eigenmodes, one filled and one empty. Flat pi-flux bands make the property exact on the cube, but it fails at eight of twelve open-slab corners and all periodic-slab corners; the natural two-corner record marginal is provably blind while the full record law detects the failure, so the earlier corner rule is not a general lattice principle.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7906,
+  "verdict": "KEEP",
+  "science": "A doubled cubic incidence pattern makes every coarse plaquette the nearest-neighbor star of one face-role site, and a supplied overlap-success Record law gives exactly the compact plaquette likelihood and a gauge-invariant conditioned Z4 ensemble with an exact reversible sampler. Completing all face orientations and supplying a positive electric rotor term yields one gauge null plus two degenerate gapless transverse oscillator branches; marginalizing unread face outcomes erases the action, so this is a conditional Record-likelihood photon germ rather than unconditional dynamics.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-record-overlap-maxwell-germ-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7910,
+  "verdict": "KEEP",
+  "science": "On the supplied four-dimensional cubic-Coxeter Regge complex, the action Hessian has four metric gauge zeros plus one flat non-metric branch and exactly two doubly degenerate propagating modes with no detected doublers. Holomorphic continuation of the Euclidean tick gives the exact lattice dispersion 4 sinh^2(omega/2)=sum_i 4 sin^2(k_i/2), massless unit speed and quadratic-order isotropy, with TT polarisations only in the small-momentum limit; edge lengths, action choice, signature, nonlinear completion, and record-to-geometry map remain supplied.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7914,
+  "verdict": "KEEP",
+  "science": "On the designed SU(2) plaquette carrier, the intersection of record-diagonal and gauge-invariant operators is exactly a 1296-dimensional abelian algebra generated by corner charges and link-end Casimirs, and it restricts to 82 rank-one projectors on the Gauss sector. Raw record patterns distinguish colour-rotated states maximally, but every readable gauge-invariant statistic is colour-blind and the record projection does not preserve gauge invariance; the U(1) control makes the full record algebra readable, isolating non-abelian mixing as the obstruction.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7918,
+  "verdict": "KEEP",
+  "science": "The covariant label-equivariant support-table family has 3^24 members, but complete records can see only four of the 24 ternary digits; exhaustive enumeration on the 3^3 torus gives exactly 81 admissible-set classes, each with fibre 3^20. Sequential formation histories can query all 24 digits, and an explicit pair within one complete-record class has disjoint history supports, so whether the law is physically distinguishable depends on whether formation order is readable, a decision the current axioms do not make.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7922,
+  "verdict": "KEEP",
+  "science": "The finite-depth local Maxwell tick extends consistently to supplied vertex charge and edge current: discrete continuity preserves electric Gauss exactly, magnetic Gauss survives both half-steps, total charge is conserved, and a one-edge pulse transports one unit of charge. Minimum electric energy gives the lattice Poisson field with infrared 1/(4 pi r), while an exact Hodge split separates longitudinal Coulomb sources from the rank-two transverse photon sector; the matter-current derivation, compact joint unitary, coupling normalization, and Record readout remain open.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-radius-one-onsite-unitary-obstruction-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7926,
+  "verdict": "KEEP",
+  "science": "An explicit translation- and cubic-covariant nearest-neighbor law on a continuous effect alphabet realizes every binary, non-collinear rank-one ternary, and coin resolution, constructively lifting the finite-alphabet abundance obstruction; with a directed lattice-dipole fibre and fibred menu-independence it yields a Born form with a neighborhood-varying state. Exact counterexamples show the continuum does not force abundance, per-condition coarse-graining misses the Born tilt by a factor of two, and a rotation-invariant fibre label forces the maximally mixed state, leaving the law, fibred grading clause, and frame theorem supplied.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7930,
+  "verdict": "KEEP",
+  "science": "On a 162-state block of four spin-one quantum links and one charged edge, electric-matter and Wilson magnetic layers separately preserve all vertex Gauss generators, the matter layer retains exact charge-current and opposite-work identities, and the magnetic layer supplies divergence-free face circulation. The unsplit evolution exactly conserves the full Hamiltonian, while the reversible Strang tick has cubic one-step error and a quadratic Floquet correction containing correlated matter-plaquette transitions; this is a local compatibility theorem, not an extended-lattice photon or payload-convergence result.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-quantum-link-exact-backreaction-floquet-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7934,
+  "verdict": "KEEP",
+  "science": "For the 3^24 covariant label-equivariant binary support tables, partial-configuration records on the 3^3 torus separate every law: although three digits lack digit-confined witnesses, jointly supported masks close a proved 96-condition injectivity criterion and reduce every fibre to one; all 24 digits are individually readable on the 4^3 and 5^3 tori. The exact finite result selects no physical law and does not cover larger alphabets, distribution-valued readout, L at least 6, or non-cubic regions; the stored diff is truncated at 180000 bytes.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7938,
+  "verdict": "KEEP",
+  "science": "Under the stipulated site-occupation record decomposition, the record map exactly annihilates hopping energy and retains only the staggered mass term, so a record-content source is m^2/E, the trace of the stress tensor, rather than total energy. It gives universal rest acceleration but zero light bending and the wrong velocity dependence, while a massive sea retains a nonzero readable energy response; therefore vacuum weightlessness is a reference choice rather than a consequence of readability, and the physical source rule remains undecided.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7942,
+  "verdict": "KEEP",
+  "science": "For the declared spin-half pure-gauge link model, the 2x2x2 Gauss sector splits exactly into 937 plaquette-flip components, and its first full-sector excitation lies outside the ground-state component, making the full and component-internal gaps differ by 36.8 percent. The natural SSE pair update conserves a plaquette-parity map of rank zero on the ladder but rank ten on the torus, explaining its exact-reference failure and forcing a worm, directed-loop, or cluster update before any three-dimensional photon-phase conclusion.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7947,
+  "verdict": "KEEP",
+  "science": "For the stipulated Model-A record tick on the pi-flux cube and open 2x2x3 slab, every tested site-wise formation rule loses the sea's full registration under nonzero between-event evolution, even when formed-site marginals remain nearly blind to the failure. The sufficient preservation condition is instead per-step and set-wise: whole corner-star eigen-sets formed jointly remain exact, including a six-record union of two individually failing degree-three stars; rates, tick model, and finite clusters are supplied, and the tested dephasing condition is not a general impossibility proof.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7951,
+  "verdict": "KEEP",
+  "science": "Conditional on the supplied pi-flux sea, hop dressing, endpoint-mean edge rule, and pair-statistic reading, axis-bond occupation correlations read both TT polarisations with order-one conditioning exactly when all three momentum components are nonzero; on coordinate planes the cross response vanishes exactly. All shear components remain invisible to every tested record statistic because axis-length dressing has no T2 channel and the sea's face-diagonal correlators vanish; symmetry leaves a unique period-2 shear coupling, which with supplied coefficient restores full rank, while the curl alternative fails.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7955,
+  "verdict": "KEEP",
+  "science": "Complete cubic-orbit off-axis spectroscopy on L=8,10,12,14 finds no significant improvement from four family-specific leading coefficients over one common positive quadratic coefficient, with the two face-diagonal polarisations compatible. The full q-squared through q-sixth fit disagrees with the static U K target by 6.563 reported errors, but leave-one-volume analysis localizes that mismatch uniquely to the highest-momentum L=8 block; L=10,12,14 accepts U K only with a broad, underresolved coefficient. The result remains finite-volume early-time spectroscopy with a four-sweep forward suffix and establishes neither a thermodynamic photon pole nor c-squared=U K.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/spin-half-cubic-ice-forward-length-convergence-20260904",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7821,
+  "verdict": "KEEP",
+  "science": "On the exact finite Block28 output sector, 3,136 factor-level guarded successor families copy the Block31 route token, uncompute the comparator, dispatch ten route writers plus the reached pair instrument, and satisfy full-carrier guard, complement STOP, old-Record QND action, twelve-Blank debit, reduced-channel no-refire, and an exact two-use prefix. Every lambda in [0,1) survives, so the tested finite transaction does not select the supplied q_lambda family; the pair tensor remains lambda-sensitive. The stored diff is truncated at 180000 bytes.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7825,
+  "verdict": "KEEP",
+  "science": "Conditional on the supplied Gaussian formation law, Record-first controller, reduced active-interface midpoint equivalence, proper-cubic covariance, fixed Haar reference, tree geometry, and fresh conditional innovation, the construction gives a fair permanent Record bit, separate midpoint affinity with form c+b r\u00b7s, a normalized reversible Haar edge density, exact finite-tree gluing with a loopy-cycle correction, and all-finite-history predictive renewal. It localizes the remaining autonomy wall to active-interface factorization and exclusion of archive-value paths into later active worldtubes. The stored diff is truncated at 180000 bytes.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7844,
+  "verdict": "KEEP",
+  "science": "On the coarse lattice 2Z^3, the Kawamoto-Smit hopping is an exact Cl(6) operator with a spin-by-taste split, its sign is a pi-flux class, face transport equals the emergent fermion's face stabilizer, and the all-minus face sector exists on a torus exactly when every pairwise period product is even. The 2\u00d72\u00d72 encoded hopping in that sector matches the even-parity free-fermion spectrum, while the law supplies no sector-selection term.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7874,
+  "verdict": "KEEP",
+  "science": "For free nearest-neighbour hopping of the coarse-lattice emergent fermion, the all-minus staggered flux sector is the unique half-filling minimizer among all 32 sectors of the 2\u00d72\u00d72 cube and a global minimizer over every link-sign field on the 4^3 torus by the exact certificate M^2=6I and Cauchy-Schwarz. The preferred sector depends on filling: the plain sector wins below a limiting crossing near 0.339659 and above its mirror, while the staggered sector wins between them; larger-torus universality beyond the certified cases is reported as search/numerical evidence.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7879,
+  "verdict": "KEEP",
+  "science": "Conditional on the designed fermion law, the landed weak-field response, and a supplied half-filled vacuum, every site has occupation 1/2 by an exact bipartite-chirality identity and excitations occur as particle-hole pairs. The diagonal number-density deviation is particle-hole odd, zero-total, and sources a dipole, while the local excitation-energy density is particle-hole even and reproduces the supplied monopole response but fails the bridge's diagonality clause; no tested linear source meets all five bridge clauses, and the empty-versus-half-filled vacuum choice remains undecided.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ },
+ {
+  "pr": 7883,
+  "verdict": "KEEP",
+  "science": "Conditional on the designed free-fermion law, a supplied half-filled staggered sea, and stipulated L\u00fcders conditioning, finished-record probabilities are determinantal with the sea projector P as kernel and conditional odds are its Schur complements. Exact quadratic-field checks recover the finite-cluster zero sets and marginal identities; on finite tori a record shifts odds by 2P_vu^2, the kernel obeys a parity selection rule, and a value is forced only when the recorded set covers the full support of the relevant kernel row.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7887,
+  "verdict": "KEEP",
+  "science": "For every nonuniform normalized nonnegative H^2 density p on U(1), its distribution-overlap kernel is normalized, nonnegative, even, identity-maximal, and representation-positive, with exact negative-log curvature ||p'||\u00b2/||p||\u00b2>0. This removes raw Fourier-sign and positive-L\u00fcders premises from the local germ calculation; using the overlap as a physical transfer/action factor, completing it on spatial plaquettes, and identifying the field remain supplied or open.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-representation-positive-maxwell-germ-20260903",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7891,
+  "verdict": "KEEP",
+  "science": "For stipulated support conditions and tick models on finite cubic-lattice objects, a hard support zero confines record groups absolutely whereas an energy cost only delays separation. Exact polycube censuses through six records give a rational coboundary certificate and D_group=0 under one-record steps, while simultaneous permissive ticks give rigid translation; the cube vacuum admits only cycle-space changes, and a hard-adjacency pair remains mobile under the conditioned tau tick. PR #7899 restates parts of the glued hierarchy but not all of these results.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7895,
+  "verdict": "KEEP",
+  "science": "For the stipulated ordered relaxation tick on the 2x2x2 staggered cube, the restricted Hamiltonian is exactly the sum of hops on unrecorded sites and the resulting state is memoryless in the records. All 4,096 patterns become positive, erasing the sea's 2,112 support zeros, the identity-order law has total variation 1283/2880 from the sea, and reversing the order changes the law by total variation 1/3; an N=4-superselected variant restores charge zeros but not the 256 cancellation zeros.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7899,
+  "verdict": "KEEP",
+  "science": "Across stipulated finite torus, ring, and cube models, glued groups are frozen or caged under single-record ticks but move rigidly at the one-record rate under block ticks, while a breakable dimer has lifetime (6/5)e^g and transports only by breaking and rebinding. A uniform field drives rather than tears the pair, one-dimensional collisions merge at strong coupling, and the cube Gauss sector admits no single fermion or link record changes but 79,872 paired changes that carry charge with flux.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7903,
+  "verdict": "KEEP",
+  "science": "For the declared compact-U(1) integer-flux link role, the minimally coupled fermion hop is exact and gauge-invariant at coordinations two through six, while parity makes the neutral-sea Gauss convention empty and selects the staggered background convention. The electric term is dynamical, the Wilson plaquette term preserves Gauss's law and has a positive quadratic germ, static ring charges have exact linear potential (g^2/2)d, and dynamical matter breaks the finite-ring string; no quantum photon or continuum limit is established.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7907,
+  "verdict": "KEEP",
+  "science": "For any strictly positive even weight on a finite cyclic gauge group, a universal-plus-matching auxiliary face alphabet yields an unconditional link marginal proportional to the product of plaquette weights. Its face and link full conditionals are incidence-nearest-neighbor, the supported single-site graph is connected and determines a unique reversible finite-volume measure, and the construction is gauge and cubic covariant; the checked cyclic refinements approach the positive U(1) curvature but do not prove the interacting continuum theory.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-overlap-reversible-photon-germ-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7911,
+  "verdict": "KEEP",
+  "science": "For the declared pure spin-half link law on a height-one plaquette ring, the Gauss sector has dimension Lucas(L)+2 and its zero-winding block is entry-by-entry the periodic zero-detuning constrained chain. Finite-size data give a unique short-ranged ground state and a gap approaching 0.9681883 lambda, while winding sectors and inserted static charges exhibit linear confinement with tension about 0.60356 lambda; the geometry has no transverse direction and gives no result for a three-dimensional photon.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7915,
+  "verdict": "KEEP",
+  "science": "The doubled edge-face role incidence gives exact integer grad-curl-div identities and supports a physical-nearest-neighbor first-order Maxwell generator that conserves its quadratic energy, preserves electric and magnetic Gauss constraints, is proper-cubic covariant, and has exactly two gapless transverse branches without doublers. Reciprocal electric and magnetic coefficients give unit lattice speed, but explicit Gaussian-sampler and spectral-lift alternatives show that the same static spatial law does not select the physical time rule.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-role-encoded-nearest-neighbor-gauge-law-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7919,
+  "verdict": "KEEP",
+  "science": "An explicit cubic-covariant seven-symbol nearest-neighbor law supports both menu-independent and menu-dependent normalized odds, so menu independence is not fixed by the four stated axioms. Exact degree-five rank certificates show that binary and mixed-ternary supports leave non-Born gradings whereas an abundant family of non-collinear rank-one ternaries reduces the kernel to the three linear modes; because a finite neighbor alphabet realizes only finitely many menus, it cannot supply that abundance. The cube's conditional record odds also take five values on the same binary menu at three prior records.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7923,
+  "verdict": "KEEP",
+  "science": "The sourced finite-depth Maxwell tick obeys the exact finite-step midpoint work identity Delta H=h J\u00b7(E+E')/2. A one-edge pulse followed one tick later by its negative creates and then erases a unit dipole while leaving a nonzero curl/co-curl field with no charge, longitudinal component, or harmonic mode; at h=1/2 its modified energy is exactly 1/2, and sparse L=20 evolution preserves that energy while the support expands from radius 3 to 19.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-conserved-source-coulomb-maxwell-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7927,
+  "verdict": "KEEP",
+  "science": "A finite-cutoff quantum link and two endpoint matter states admit an exact local unitary that preserves both Gauss generators and total matter charge, with one integrated current equaling flux gain and both endpoint transfers and with electric work exactly canceled by hopping-energy loss. On adjacent bonds, palindromic colored composition remains unitary, reversible, and exactly Gauss-preserving but has cubic drift in the naive summed energy, while its principal Floquet generator is exactly conserved and differs by quadratic cross-bond terms.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/u1-finite-step-matter-current-operator-work-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7931,
+  "verdict": "KEEP",
+  "science": "An equivariant menu-blind fibred menu-independence clause is non-vacuous on the continuum law: exact same-fibre overlaps separate Born from adversarial and uniform gradings. On the cube it is an identity and strong non-vacuity is impossible because every menu lies in one frame, but it weakly discriminates the relaxation tick in 56 of 172 fibres; the odds map is cubic-equivariant while no bare site unitary makes the conditioned-state map equivariant, leaving the gauge-corrected hypothesis open.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7935,
+  "verdict": "KEEP",
+  "science": "For a supplied two-dimensional record-time square, the exact Cl(7) construction shows that any purely real mass has a same-site opposite-chirality partner and hence zero pointwise handed density. A complex vortex of winding n instead has 2|n| light states and interior chirality n on the declared finite family, with an opposite boundary partner and an exact Weyl dispersion; finite-lattice net chirality remains zero by the square off-diagonal-block identity. The route requires both a branching two-index record order and an unsupplied phase-valued mass, and includes no gauge coupling or inflow.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7939,
+  "verdict": "KEEP",
+  "science": "Exact finite-torus enumeration shows that the superlattice role pattern is not pinned by its nearest-neighbour role table: the corner pin field remains free, while adding the six axial distance-two offsets yields exactly the desired sectors on all named commensurate tori. The economy does not survive translation to binary records, because roles refine the one-bit record alphabet and are recoverable only at radius two; only the full 5x5x5 record window excludes all non-sector configurations. The realized arrangement exercises just 61 of 2,226 partial covariant table orbits, and readability of a support table does not reach the supplied sector choice or Hamiltonian terms.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7943,
+  "verdict": "KEEP",
+  "science": "Finite-projector calculations for spin-half cubic ice join the fixed-charge response to the independently measured topological-flux stiffness: at V=0.95 and 0.90 the periodic-Coulomb coefficients agree with U_flux within 1.2% and 6.1%, respectively. Exact L=2 charged-sector calibration, axial L=4,6,8 data, off-axis geometries, path-order checks, and population doubling support a Coulomb family with shared normalization while rejecting the tested string, quadratic, and constant responses. The periodic kernel remains unresolved against raw 1/R, and the result is component-scoped, finite-volume, and static rather than a thermodynamic or dynamical photon proof.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/spin-half-cubic-ice-finite-delta-projector-20260903",
+  "flags": {
+   "forcing": false,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7948,
+  "verdict": "KEEP",
+  "science": "The Wilson operator is exactly the affine K0 hopping, M_W=dI-H_K0/2, so the admitted staggered-Dirac/Wilson surface already combines the two unforced kinetic classes. On K1 the Brillouin corners are exact eigenvectors with Hamming-weight levels, and the lightest nonzero multiplet has irreducible algebra M_d(C) and size d; on K0 the Wilson term is constant on an extensive zero surface and the same corner labels are embedded in reducible, unseparated levels. Thus the three-generation count on this surface is a spatial-dimension consistency relation, not an independent explanation, and no corresponding count is defined on K0.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7952,
+  "verdict": "KEEP",
+  "science": "Exact coefficient-space algebra shows that proper cubic covariance alone leaves three symmetric quadratic kernels and gauge transversality alone leaves six, while their intersection uniquely gives K_ij=q^2 delta_ij-q_i q_j. Matched late-time spin-half cubic-ice correlators do not move the two-term dynamic coefficient toward the static UK value; allowing the first omitted q^6 correction makes fixed c^2=UK acceptable across all four time windows and removes evidence of a normalization inconsistency. The infrared equality is not independently measured because the four available momenta cannot resolve three floating gradient coefficients, so lower momentum and forward-length controls remain required.",
+  "carrier": "none - uncarried",
+  "stack": "physics-loop/spin-half-cubic-ice-finite-delta-magnetic-twist-20260904",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": true
+  }
+ },
+ {
+  "pr": 7956,
+  "verdict": "KEEP",
+  "science": "For curl first-arrival growth from one +e1 seed, the perpendicular +e2 neighbour is already occupied with destination +e3, so producing the geometric y=0 sandwich is a destination overwrite rather than an added vertex. Across radii 4, 6, and 8, only overwriting that site to destination +/-e2 fills exactly all sandwich cubes; destinations +/-e1 or +/-e3 fill none. The geometry therefore selects the hop axis but not its sign, while the overwrite itself remains supplied rather than forced by Record or Admissibility.",
+  "carrier": "none - uncarried",
+  "stack": "main",
+  "flags": {
+   "forcing": true,
+   "promotion_candidate": false
+  }
+ }
+]

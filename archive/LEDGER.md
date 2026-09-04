@@ -2447,3 +2447,5 @@ old path to its new one.
 
 ### publication package (deferred)
 - publication_ci3_z3_deferred_package: docs/publication/ci3_z3 -> archive/publication/ci3_z3 (owner deferral 2026-09-03)
+### post-freeze densify wave 2 (2026-09-05)
+- pr-7818: [physics-loop] Block29 connected output cylinder — frozen timeout / no inference

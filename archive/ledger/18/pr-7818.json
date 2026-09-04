@@ -1,0 +1,15 @@
+{
+ "id": "pr-7818",
+ "title": "[physics-loop] Block29 connected output cylinder \u2014 frozen timeout / no inference",
+ "science": "Block29 attempted an operator-valued connected depth-two composition of the two supplied Block28 pair channels with Block24 future appends, but the final content-bound run timed out after six checks and before the fixed-prefix cylinder terminal; the packet states that no positive or negative scientific inference was obtained. The stored diff is truncated at 180000 bytes.",
+ "source": {
+  "pr": 7818,
+  "branch": "physics-loop/toe-source-eta-ownership-block29-connected-output-depth-two-20260830"
+ },
+ "carried_by": "the Block30 successor route (PR #7819 stacked chain of the source-eta-ownership series); this ledger line",
+ "review": {
+  "level": "light",
+  "process": "post-freeze densify wave 2 (2026-09-05): 96 non-draft post-freeze PRs read in full by 4 independent seats against the frozen wave-1 rubric; supervisor adjudication of every CLOSE"
+ },
+ "status": "archived"
+}

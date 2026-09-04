@@ -1,33 +1,114 @@
 # Physical cell cutting: the identification survives the proper-rotation half
 
 Date: 2026-08-11
-Authority: none
+Authority: none; self-contained finite construction proposed for independent audit.
 Audit: unset.
+Status: proposed_retained
 Claim type: bounded_theorem
 Constitutional effect: none.
 
+Primary runner:
+
+- [proper-rotation-half runner](../scripts/physical_cell_cutting_proper_rotation_half_cycle778_2026_08_11.py)
+
+Cached output:
+
+- [proper-rotation-half runner cache](../logs/runner-cache/physical_cell_cutting_proper_rotation_half_cycle778_2026_08_11.txt)
+
+Direct scientific dependencies: none.
+
+## Trace and status fields
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "test whether this bounded finite identification has a canonical downstream consumer; none is claimed here"
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite geometry and group-action identities on one declared cell-cutting object"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Inputs, exact target, and proof obligations
+
+The finite definitions are the vertex set `{0,1}^4`, five-vertex simplices with absolute
+determinant one, minimisation of the stated adjacency cost, the declared rational sample, the
+cover condition, and the signed-coordinate action. These choices define the object; they are
+not imported physical primitives. The determinant, finite group-action identities,
+orbit-stabiliser counting, and binomial coefficients are standard finite mathematics and are
+also checked constructively where they bear on a reported number. Python's `itertools`,
+`sys`, and exact `fractions.Fraction` implementation are code dependencies, not scientific
+inputs.
+
+There are no load-bearing literature, empirical, fitted, external-data, ancestral-runner, or
+repository-derived scientific inputs. The motivating statement that a lattice premise permits
+proper rotations is context only: this note neither imports that premise nor identifies its
+group with the determinant-plus-one subgroup used here. The labels `c773`-`c777` below are
+provenance shorthand only. The primary runner reads no repository data and reconstructs every
+load-bearing finite object.
+
+**Exact target.** For the declared unit-four-cube simplex object and the determinant-plus-one
+subgroup of its signed-coordinate action, prove that the cover-incidence table belongs to a
+two-member intersection of the exhaustive row and column censuses, and separately count the
+incidence-intertwining equivariant-bijection pairs as two.
+
+The obligation graph has no external lemma node:
+
+1. **Finite-object obligation — proved here.** Enumerate the candidate simplices and
+   sample-selected solutions, prove the enumeration includes every genuine cutting in the
+   declared candidate class, and certify that every selected solution is a genuine cutting.
+2. **Action obligation — proved here.** Construct the signed-coordinate action, compute its
+   determinant by two independent formulas, establish the index-two subgroup, and determine
+   its piece, cover, and pair orbits and stabilisers.
+3. **Family obligation — proved here.** Derive the orbit-table degrees, the `96+96` split, the
+   binomial family size, and the exact table decomposition of the cover incidence.
+4. **Census obligation — proved here.** Enumerate the complete row and column censuses by
+   fixed-row and fixed-column reductions and compute their intersection.
+5. **Equivariant-map obligation — proved here.** Enumerate all equivariant bijections on both
+   sides and test every candidate pair for the incidence-intertwining identity.
+
+The gates cited below discharge these obligations for this one finite object. No obligation is
+claimed for a different cell, candidate class, cost function, acting subgroup, physical
+dynamics, or lattice-wide construction.
+
 ## What is shown
 
-The lattice input supplies proper rotations. This note shows that the cover identification carried by
-the finite cell-cutting object does not lean on the orientation-reversing half of the signed coordinate
-maps. Restricting the acting group of 384 signed coordinate maps to the determinant plus one half of
-order 192 kills the cover stabiliser, splits the pieces into two orbits of 96, and enlarges the ambient
-family of candidate labellings from 3321960 to 11035418241600 — and the two-sided conditions still cut
-that enlarged family down to exactly 2 members, with the cover incidence among them. A second route that
-never looks at the family, counting equivariant maps on each side and intertwining them, lands on the
-same 2. Everything below is a list of computational identities about one explicitly rebuilt finite
-object; the runner `scripts/physical_cell_cutting_proper_rotation_half_cycle778_2026_08_11.py` rebuilds
-that object from the corners of the four-cube upward and prints 17 gates, J0 through J16.
+This note tests the cover identification carried by the declared finite cell-cutting object after
+removing the orientation-reversing half of its signed-coordinate action. Restricting the 384 maps to
+the determinant-plus-one subgroup of order 192 kills the cover stabiliser, splits the pieces into two
+orbits of 96, and enlarges the ambient family of candidate labellings from 3321960 to 11035418241600.
+The two-sided conditions still cut that enlarged family down to exactly 2 members, with the cover
+incidence among them. A second calculation, which shares the reconstructed object, actions, and
+incidence but does not consult the family or either census, finds exactly 2 central
+incidence-intertwining pairs. It independently confirms the cardinality, not an equality between these
+two different result types. Everything below concerns the one explicitly rebuilt finite object; the
+primary runner rebuilds it from the corners of the four-cube upward and prints 17 gates, J0 through J16.
 
 ## The object
 
-The object is the one built in `c773`-`c777`: the unit four-cube; its 2672 five-corner pieces of unit
-determinant; the 400 of those that sit at the adjacency-cost floor 6; the 15800 cuttings of the cube into
-24 such pieces; the 192 pieces that occur in some cutting, each of them in 1975 cuttings; and the 192
-covers, a cover being 8 pieces that meet every cutting exactly once. The acting group is the 384 signed
-coordinate maps, 24 axis moves times 16 sign flips, acting on pieces and on covers at the same time. The
-cover incidence is the 192-by-192 zero-one matrix recording which pieces lie in which cover. Throughout,
-the holder of a point means the set of maps that leave that point alone, its stabiliser.
+The object, also studied under the provenance labels `c773`-`c777`, is the unit four-cube; its 2672
+five-corner simplices of absolute determinant one; the 400 of those at adjacency-cost floor 6; the 15800
+cuttings of the cube into 24 such simplices; the 192 pieces that occur in some cutting, each of them in
+1975 cuttings; and the 192 covers, a cover being 8 pieces that meet every cutting exactly once. The acting
+group is the 384 signed-coordinate maps, 24 axis moves times 16 sign flips, acting on pieces and covers.
+The cover incidence is the 192-by-192 zero-one matrix recording which pieces lie in which cover.
+Throughout, the holder of a point means its stabiliser, the maps that leave it fixed.
+
+The rational sample avoids every candidate-simplex facet, so every genuine cutting in the declared
+candidate class appears in the sample-cover enumeration. The converse is certified independently in
+gate J0. Across all enumerated solutions there are 15168 co-occurring simplex pairs; every pair is
+weakly separated on its vertices by at least one of the 80 nonzero normals in `{-1,0,1}^4`. Because the
+simplices are full-dimensional, their interiors lie on strict opposite sides. Each solution contains 24
+absolute-determinant-one four-simplices, whose volumes sum to the unit four-cube volume. Thus every
+sample-selected solution is a genuine cutting.
 
 ## The stabiliser determinant law
 
@@ -90,16 +171,18 @@ the same 16 on both sides.
 The row census and the column census cross in exactly 2 members, and the cover incidence is in the row
 census and in the crossing.
 
-## The independent equivariant-map route
+## The separately counted equivariant-map route
 
-This route consults neither the family, nor the censuses, nor the tables. Because the covers are one free
-orbit, an equivariant map on the cover side is pinned by the image of a single cover, giving 192 of them.
+This route shares the declared finite object, actions, and incidence, but consults neither the family,
+the censuses, nor the orbit tables. Because the covers are one free orbit, an equivariant map on the
+cover side is pinned by the image of a single cover, giving 192 of them.
 On the piece side an equivariant map is pinned by one image per orbit, and each image must be left alone
 by that orbit representative's holder: 256 well-defined maps, of which 128 are bijections, 64
 orbit-preserving and 64 orbit-swapping. Equivariance is gated explicitly on all 192 maps of the legal
 half rather than inherited from the way the maps are built. Of the 24576 pairs of a cover map with a
 piece map, exactly 2 satisfy the intertwining condition, and each of those 2 is the pair of actions of
-one of the 2 central maps of the full group. Two routes with no shared input land on the same 2.
+one of the 2 central maps of the full group. This calculation returns a different kind of object from
+the census intersection and independently reaches the same cardinality two.
 
 ## Normalizer arithmetic
 
@@ -113,25 +196,28 @@ and gains an orbit label, the cover side loses its holder and becomes free.
 ## Boundary
 
 - This is a statement about a finite object and the symmetry input that object is given. It does not
-  claim that the determinant plus one half IS the group the axiom supplies. What it shows is the weaker
-  and cleaner thing: the identification is insensitive to whether the orientation-reversing maps are
-  available. Take them away and the answer does not move.
-- The identification lands at 2, not 1. The residual factor of 2 is the pair of central maps of the full
-  group, that is, the pair of ways of naming covers that no map in the group can tell apart. Pushing 2
-  down to 1 would need an observable sensitive to how covers are named, and none of the instruments built
-  so far is sensitive to that.
+  claim that the determinant-plus-one subgroup is the group supplied by a lattice premise. It proves
+  only that the stated finite cardinality survives when the orientation-reversing maps are removed from
+  this declared action.
+- The census intersection contains 2 table subsets, not 1, and the runner makes no canonical selection
+  between them. The equivariant-map calculation separately returns the 2 action pairs induced by the
+  centre of the full signed-coordinate group. The two result sets have different types; no bijection
+  between them is claimed here.
 - The 96 and 96 piece split is real, but the two orbits are isomorphic as legal-half sets: there are 64
-  bijections between them, and any orientation-reversing map undoes the split. No geometric invariant
-  computing the orbit label is known. Four local candidates were tested — sorted determinant sign, count
-  of even-parity corners, corner index sum parity, and total coordinate sum parity — and all four fail:
-  none of them is even constant on an orbit, because none of them is invariant under the action to begin
-  with. What geometric invariant computes the orbit label is open.
+  bijections between them, and any orientation-reversing map exchanges the two-orbit decomposition.
+  Four local label candidates were tested — sorted determinant sign, count of even-parity corners,
+  corner index sum parity, and total coordinate sum parity — and none is invariant under the action or
+  constant on either orbit. This finite negative control is not an exhaustive invariant search and does
+  not establish a no-go or a named wall.
 
 ## Honest auditor read
 
 - The claim is bounded to this finite object. Nothing here asserts that the physical symmetry input is
   exactly the determinant plus one half. The load-bearing point is the insensitivity to the difference,
   and that is what the gates measure.
+- Gate J0 closes both directions of the cutting construction: the generic sample makes the search
+  exhaustive over genuine cuttings in the candidate class, while the exact separator and volume checks
+  establish that every selected solution tiles the cell.
 - Three of the gates are built as rejectors rather than confirmations. The determinant gate fails if the
   determinant is taken by any proxy that ignores the flip mask, since the parity-dropped comparison must
   disagree on a nonzero count and it disagrees on 192. The cross-swap gate fails if the two holder
@@ -142,5 +228,30 @@ and gains an orbit label, the cover side loses its holder and becomes free.
 - The candidate-invariant gate passes by correctly reporting a negative, and it is written so that a
   genuine separating invariant would make it fail rather than pass.
 - The runner rebuilds the object from the four-cube corners upward, reads no stored data, and prints what
-  it measures. Its object counts agree with the counts of the earlier cycles on every quantity it checks,
-  and the run is reproducible byte for byte.
+  it measures. Its proof does not import the earlier cycle labels, and the run is reproducible byte for
+  byte through the cache envelope.
+
+## Reproduction
+
+Run the [primary runner](../scripts/physical_cell_cutting_proper_rotation_half_cycle778_2026_08_11.py).
+The reviewed output is the [machine-generated cache](../logs/runner-cache/physical_cell_cutting_proper_rotation_half_cycle778_2026_08_11.txt).
+The runner declares `AUDIT_TIMEOUT_SEC = 300`, uses exact integer and rational arithmetic, and exits
+nonzero if any gate fails. The independent audit lane must rerun it live; this review cache is not an
+audit verdict.
+
+## Review record
+
+- Review iteration 1 (Codex review-loop, 2026-09-03) required the exact simplex-separation/volume
+  certificate, reconciled the lattice-context wording, supplied the import and proof contracts, and
+  narrowed the claimed relationship between the census and equivariant-map routes to their independently
+  established common cardinality.
+- The four failed label candidates remain a bounded mutation-style control; no exhaustive negative or
+  no-go conclusion is retained.
+- The exact immutable reviewed head and landing SHA are recorded in the PR review comment because a
+  commit cannot contain its own hash.
+- Independent audit of claim
+  `physical_cell_cutting_proper_rotation_half_cycle778_note_2026-08-11` remains required before any
+  effective retained status or downstream use.
+
+Within these boundaries, the review classification is **bounded support** for the declared exact finite
+object.

@@ -1,20 +1,24 @@
 """Physical cell cutting: the identification survives the proper-rotation half of the signed coordinate maps.
 
-Standalone exact runner. The preamble rebuilds the unit four-cube cell object from scratch: the five-corner unit-determinant
-pieces, the adjacency cost floor, the cuttings into twenty-four pieces, the pieces that occur, the eight-piece covers, and the
-384 signed coordinate maps. Everything after that is the work of this cycle. A signed coordinate map has a determinant, got by
-cofactor expansion of its own signed permutation matrix, and equal to the sign of its axis move times minus one to the number
-of flipped axes. The half with determinant plus one is what the lattice input actually supplies. A point holder of order two
-survives the restriction exactly when its second map has determinant plus one: the cover holder is a single-axis flip and dies,
-the piece holder is not a flip and lives. So covers become one free orbit and pieces become two orbits, the legal ambient
-family grows to the square of the full-group one, and the two-sided conditions still cut the family down to two members. An
-independent route that never mentions the family counts equivariant maps on each side and intertwines them, landing on the
-same two. Gates J0 through J16, one line each, then the total line. All work is exact integer and set arithmetic.
+Standalone exact runner. The preamble rebuilds the declared unit four-cube cell object from scratch: the five-corner
+unit-determinant simplices, the adjacency cost floor, the cuttings into twenty-four simplices, the pieces that occur, the
+eight-piece covers, and the 384 signed coordinate maps. An exact separating-hyperplane certificate confirms that every
+sample-selected cutting is a genuine simplex tiling. Everything after that is the work of this cycle. A signed coordinate map
+has a determinant, got by cofactor expansion of its own signed permutation matrix, and equal to the sign of its axis move times
+minus one to the number of flipped axes. This runner studies the declared determinant-plus-one subgroup; comparison with a
+lattice symmetry premise is contextual and is not an input to any gate. A point holder of order two survives the restriction
+exactly when its second map has determinant plus one: the cover holder is a single-axis flip and dies, the piece holder is not a
+flip and lives. So covers become one free orbit and pieces become two orbits, the legal ambient family grows to the square of
+the full-group one, and the two-sided conditions still cut the family down to two members. A second route that does not use the
+family or either census counts equivariant maps on each side and finds two central incidence intertwiners. Gates J0 through J16,
+one line each, then the total line. All work is exact integer and set arithmetic.
 """
 
 import itertools
 import sys
 from fractions import Fraction as FR
+
+AUDIT_TIMEOUT_SEC = 300
 
 LIM = 149
 OUT = [0]
@@ -215,6 +219,30 @@ USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
+
+# The generic sample makes the enumeration exhaustive over genuine cuttings:
+# any genuine cutting assigns each sample point to exactly one simplex.  The
+# converse needs a separate certificate.  For every pair of simplices that
+# co-occurs in a selected solution, find a nonzero normal in {-1,0,1}^4 whose
+# extrema weakly separate their vertex sets.  Their full-dimensional interiors
+# are then disjoint.  Each cutting has 24 determinant-one 4-simplices, whose
+# volumes sum to the unit four-cube volume, so every selected solution tiles it.
+CO_PAIRS = sorted(set(pair for cutting in CUT for pair in itertools.combinations(cutting, 2)))
+SEP_NORMALS = [a for a in itertools.product((-1, 0, 1), repeat=4) if any(a)]
+SEP_BOUNDS = []
+for i in range(NPI):
+    S = KEPT[USED[i]]
+    bounds = []
+    for a in SEP_NORMALS:
+        vals = [sum(a[r] * CORN[c][r] for r in range(4)) for c in S]
+        bounds.append((min(vals), max(vals)))
+    SEP_BOUNDS.append(bounds)
+PAIR_SEPARATED = all(
+    any(SEP_BOUNDS[i][k][1] <= SEP_BOUNDS[j][k][0]
+        or SEP_BOUNDS[j][k][1] <= SEP_BOUNDS[i][k][0]
+        for k in range(len(SEP_NORMALS)))
+    for i, j in CO_PAIRS
+)
 
 PC = [0] * NPI
 for k, s in enumerate(CUT):
@@ -785,9 +813,12 @@ for pos in range(len(ITAB)):
 # ------------------------------------------------------------------
 
 gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and NS == 15800 and SIZES == [24] and NPI == 192
+     and len(CO_PAIRS) == 15168 and len(SEP_NORMALS) == 80 and PAIR_SEPARATED
      and PCSET == [1975] and NCOV == 192 and NGRP == 384 and GENERIC and COVEXACT and KEEPS and HOMOK, "J0",
-     "rebuilt: {0} unimodular pieces, floor {1} with {2} there, {3} cuttings of {4}, {5} pieces in {6} each, {7} covers, group {8}".format(
-         nd(NCAND), nd(FLOOR), nd(NKEPT), nd(NS), nd(SIZES[0]), nd(NPI), nd(PCSET[0]), nd(NCOV), nd(NGRP)))
+     ("object: pieces {0}/floor {1}:{2}; cuttings {3}x{4}; separated pairs {5}; "
+      "used {6}/{7}; covers {8}; group {9}").format(
+         nd(NCAND), nd(FLOOR), nd(NKEPT), nd(NS), nd(SIZES[0]), nd(len(CO_PAIRS)),
+         nd(NPI), nd(PCSET[0]), nd(NCOV), nd(NGRP)))
 
 gate(MATOK and AGREE == NGRP and DISAG > 0 and DISAG == 192 and DETVAL == [-1, 1] and DETMUL, "J1",
      "cofactor determinant equals axis-move sign times minus one to the flip count on {0} of {1} maps; parity-dropped form misses {2}".format(

@@ -9,7 +9,7 @@ target_stop_time: "2026-09-05T09:04+00:00"
 checkpoint_interval: 30m
 deep_block: 90m
 target_status: best-honest-status
-lock: "shared with the gravity-weighted-kernel campaign (scripts/automation_lock.py owner=physics-loop ttl=13h)"
+lock: "shared with the gravity-weighted-kernel campaign (scripts/automation_lock.py owner=fable-supervisor, acquired 2026-09-04T22:24+00:00, ttl 12h, expires 2026-09-05T10:24+00:00)"
 cycle: 1
 active_route: block 01 = landing core + supplied-input ledger (meta); block 02 selected from the ledger ranking
 approach_family_coverage: [G1 class-restriction derivation unexplored, G2 time-selection fork unexplored, G3 3D photon dispersion exponent unexplored, G4 germ-from-Record-overlap partially covered by #7886/#7887]
@@ -19,9 +19,9 @@ files_touched: [pack files, inputs/]
 open_imports: [declared link roles; supplied Record overlap law; declared generator class; supplied detuning]
 no_go_routes: [see NO_GO_LEDGER.md]
 trace_class: upstream_support
-review_findings: none yet
-pr_status: not opened
-next_exact_action: "sol primary drafts LANDING_CORE.md + the meta note + the supplied-input ledger per specs/block01_primary.md; supervisor reviews; sol checker refutes quote-fidelity"
+review_findings: "checker CH-01..CH-14 applied (fix pass baf24571d5); blind-ledger findings F-B1..F-B3 carried; conformance gate sections 1-12 PASS/NA in REVIEW_HISTORY.md"
+pr_status: "OPENED — #7976 (2026-09-04T22:35+00:00), hand-off to the owner-operated review-loop; never merged by the campaign"
+next_exact_action: "block 02 (the #7917 dynamics class against the four axioms, per-item derived/conditional/supply with existence witnesses): Fable primary in flight on GOAL_block02.md in worktree loop-u1-block02, branch physics-loop/u1-maxwell-landing-core-block02-dynamics-class-20260905 stacked on this branch; on delivery: supervisor line-by-line review, Opus refuting checker (disjoint machinery, mutation probes on the runner), V1-V5 in writing, N1-N8 for any negative sentence, conformance gate, PR stacked on #7976"
 stop_condition: "runtime exhausted, or corollary/value-gate exhaustion documented in OPPORTUNITY_QUEUE.md"
 
 # DEGRADED WORKER MODE (2026-09-04T21:32+00:00): the gpt-5.6-sol seats died at the codex account usage limit (reset Sep 6 22:27); block continues on Fable worker seats (single-family) under the workhorse robustness conditions: refuting checker on disjoint machinery, mutation probes, supervisor hand-verification; independence class = cross-context; disclosed in the note/receipt/PR. Sol narration salvaged to specs/SALVAGE_sol_primary_narration.md as untrusted draft input.
@@ -30,3 +30,5 @@ stop_condition: "runtime exhausted, or corollary/value-gate exhaustion documente
 # 2026-09-04T21:45+00:00: blind Opus ledger checked 8/8; awaiting Fable primary (landing core + meta note) and lane-A seats.
 
 # 2026-09-04T22:17+00:00: block 01 CLOSING — checker FIX FIRST applied (baf24571d5), conformance gate recorded, certificate final; awaiting pipeline exit code, then manifest + PR. Block 02 selected (ledger row 1).
+
+# 2026-09-04T22:35+00:00: block 01 CLOSED — pipeline rerun on the final tree exit 0; manifest byte-identical on regeneration; PR #7976 opened (meta — open). Block 02 primary (Fable) launched 2026-09-04T22:20+00:00 on the stacked branch. Lane A (gravity b213) primary still running.

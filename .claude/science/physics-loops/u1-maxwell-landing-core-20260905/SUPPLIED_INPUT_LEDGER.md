@@ -105,7 +105,13 @@ item by item.
   the admissibility distribution) IS the sampler branch of #7915's fork, so
   the lever that buys locality and covariance pulls toward the diffusive
   branch, and item 6 is the item that separates Maxwell from it. This is the
-  load-bearing residual.
+  load-bearing residual. Cross-merge note: the blind Opus ledger (its R05)
+  names the nearest axiom structure as the one the 2026-08-13 revision
+  removed — the axioms memo: "The 2026-08-13 owner-approved revision removed
+  the named scalar functional `I`, finite additivity over disjoint record
+  collections, and `I(empty)=0` from Record." A positive additive conserved
+  energy is kin to that removed structure; re-supplying it would be an
+  owner-bar item, not a derivation. Adopted here.
 - Real, linear, first-order, continuous time (item 2): *genuine supply*.
   Linearity is a weak-field regime, not a law; "time metric" and "physical
   persistence dynamics" are on the axiom memo's list of open gates outside
@@ -162,6 +168,17 @@ is missing. A block that measured the electric stiffness of the
 ring-exchange-alone law at a same-detuning point, or extended #7959 below
 `k = pi/6`, would be a computation block on this row, not a derivation.
 
+Cross-merge note: the blind Opus ledger (its R04) gives the electric
+stiffness no axiom sentence in the germ branch, reading it at the Hamiltonian
+level (#7906's "positive electric rotor term"; #7915's `alpha`); this ledger's
+lever is at the Euclidean-action level (#7886's temporal curvature `kappa_t`,
+which #7886 calls the electric/temporal block). The two levels are joined only
+by the transfer/Legendre interpretation, which #7915 says the kinetic-isotropy
+primitive does not derive and which is supplied; both readings hold at their
+own level. The blind ledger's C02 adds that the two branches disagree on
+whether `U` is a representation question (#7959) or a coupling question
+(#7937, #7941, #7943); neither is executed against the other.
+
 ### 3. The link role — tier A, genuine supply
 
 **The input.** A period-two assignment of vertex, edge, face, and cube roles
@@ -186,7 +203,11 @@ derivation output. Of the labels, the spin-half role is the one closest to
 Qubit's "The full one-site possibility domain has algebraic presentation
 `M_2(C)`": one qubit per link site (#7959: "one further two-state site per
 edge"); the others need many qubits per link (#7932) and a compiler the
-members name as open. Not a block target; named.
+members name as open. Not a block target; named. Cross-merge note (blind
+C15): #7932's reduced-mode gaps approach the photon frequency only at
+`K = 128, 256, 512, 1024`, while the spin-half link is the smallest payload
+with `E_e^2 = I/4` a c-number; the finite-clock Maxwell tangent is a large-`K`
+statement and no member exhibits it at the minimal payload.
 
 ### 4. The Gauss constraint as support forcing — tier B, live lever
 
@@ -261,7 +282,11 @@ Possibilities are distinguished by the supplied algebraic structure alone." —
 if the link's possibility structure is the U(1) relative phase, a rule that
 privileges no possibility can depend only on differences. Representation
 positivity: derived by #7887 for overlap kernels, supplied by a Lueders
-channel in #7886. The path-product (#7886: "The factorized transfer
+channel in #7886 — so this row charges #7887's shorter premise list, not
+#7886's (blind C08): #7887 "removes raw Fourier-sign and positive-Lüders
+premises from the local germ calculation" while leaving the transfer-factor
+use, the spatial completion, and the field identification supplied or open.
+The path-product (#7886: "The factorized transfer
 interpretation is an explicit premise of this step"; "no global joint law is
 inferred merely from arbitrary local full conditionals"): *genuine supply*.
 Cross-lane pointer, not a finding: the sister lane's landing core records its
@@ -361,7 +386,11 @@ thermodynamic, and continuum sectors, which every member names as outside its
 claim.
 
 **Derivability.** Not derivation targets; each is the boundary of a member's
-theorem and is carried into `LANDING_CORE.md` as stated.
+theorem and is carried into `LANDING_CORE.md` as stated. Also carried here,
+as regime rather than as derivation targets: the declared estimator and
+analysis choices of #7945-#7963 — time windows, forward lengths, walker
+counts, seeds, and the imported static target `U K` — which the blind Opus
+ledger lists as a supply of method (its R25).
 
 ### 12. The four-dimensional carrier and reflection-positive transfer — tier C
 
@@ -379,6 +408,57 @@ lane's landing core records a reflection-positivity closure for its own
 committed action class at its measured fixtures; whether that result reaches
 the compact U(1) one-plaquette class is not examined by any member of this
 lane and is not examined here.
+
+## Cross-merge with the blind Opus ledger
+
+`BLIND_supplied_input_ledger_opus.md` (26 rows R01-R26, 16 narrowings
+C01-C16; supervisor-checked 8/8 quotes) was read after this ledger's rows
+were fixed; disagreements are findings. Granularity differs: its 26 rows map
+onto this ledger's 12 (R01, R05, R09, R10, R11, R13-R17 into row 1; R04, R06
+into row 2; R02, R08, R18 into row 3; R03 into row 5; R07 into row 6; R12, R26
+into row 7; R22 into row 8; R20, R23 into rows 9-10; R16, R19, R21, R24, R25
+into rows 11-12).
+
+Agreements. Both ledgers put the time rule and the conserved energy at the top
+as the deepest supplies (its R01, R05; this row 1 items 2 and 6), rate
+proper-cubic covariance as the most derivable member of the class (its R14:
+"highest derivability"; this row 1 item 4), find nearest-neighbor support
+partly derivable in form (its R13; this item 3), call the overlap-as-transfer
+law the best axiom contact in the chain (its R07; this row 6), and treat the
+link role, orientation-completion equality, tick schedule, reciprocal
+normalization, matter normalization, and regime choices as supplies. Its C04,
+C05, C09 are carried into `LANDING_CORE.md` as findings F-B3 and F-B1; its
+C03, C11, C15, C08, R05 are adopted above.
+
+Disagreements, recorded as findings:
+
+- D1 (row 2): the electric-stiffness lever. Blind R04 gives it no axiom
+  sentence at the Hamiltonian-rotor level; this ledger gives it #7886's
+  temporal-curvature lever at the Euclidean-action level. Joined only by the
+  supplied transfer/Legendre interpretation; both hold at their level.
+- D2 (row 4): Gauss's law as support forcing, derivable in shape from
+  Admissibility's support clause, has no counterpart in the blind ledger,
+  whose R19 treats the fixed Gauss/ice sector as registered data under the
+  realized-state slot. The two are compatible (the sector choice is data; the
+  rule's shape is Admissibility-shaped), but the derivability reading is this
+  ledger's own and awaits a refuting check.
+- D3 (row 2; `LANDING_CORE.md` 6.C): the blind ledger's C01 reads #7959's
+  "A Rokhsar-Kivelson potential term moves the coupling toward z = 2, not away
+  from it" as clashing with #7945; this ledger reads the two as consistent in
+  direction and locates the tension in the uncomputed interval `0 < V < 0.90`.
+  Both readings are finite-volume.
+- D4 (row 1): the blind ledger carries the time rule as its own top row R01,
+  separate from M5; this ledger folds it into the #7917 class as items 2 and
+  6. Same ranking outcome; different bookkeeping.
+- D5 (row 5): this ledger credits isotropy among the three spatial
+  orientations to Admissibility's covariance sentence (as #7886 itself allows
+  once a spatial surface exists); the blind R03 counts positivity and equality
+  as genuine supply and does not separate spatial isotropy. Refinement, not
+  conflict.
+- D6 (row 6): this ledger offers Qubit's "No possibility is privileged" as a
+  lever for the shifted-convolution ansatz; the blind R07 counts the ansatz as
+  genuine supply. This ledger's lever is a reading to be tested, not a
+  derivation.
 
 ## Block 02 selection
 

@@ -214,6 +214,20 @@ supply. Section 6 records that the finite-qubit branch has the opposite shape.
   term gaps the zero-momentum control. "'Unitary' is the exponential of the
   finite skew generator, not a claim that permanent Records update unitarily."
 
+Members narrowing each other, at scope: #7915 names its magnetic coefficient
+"the Record-overlap magnetic curvature" and, in its steelman, says "the
+Record-derived magnetic curvature supplies the positive spatial term"; #7886,
+at its own scope, derives only the temporal (electric) block from
+registration — "A temporal registration kernel by itself supplies only the
+electric/temporal quadratic block. It has no magnetic restoring block and is
+not Maxwell." — and "does not derive kappa_s>0 or kappa_s=kappa_t"; #7887
+says "completing it on spatial plaquettes ... remain supplied or open." So at
+#7886's and #7887's scope, the positive spatial (magnetic) curvature that
+#7915 and #7917 use is a supplied orientation completion, not a
+Record-derived quantity; what the Record chain conditionally derives is the
+temporal/electric sign. This note states the magnetic restoring block as a
+supplied input.
+
 **PR #7917** — branch `physics-loop/u1-maxwell-generator-uniqueness-classification-20260903` — open PR, unlanded. The terminal candidate; stated exactly in section 7.
 - Claims: "Within the declared real, linear, first-order, nearest-neighbor,
   proper-cubic, gauge-compatible and positive-diagonal-energy-conserving
@@ -590,6 +604,48 @@ different transverse dispersions depending on the supplied coupling:
   static-dynamic normalization compatible with `c^2 = U K` once a `q^6` term
   is admitted (#7952) and once `L = 16, 18` are added (#7963), but not
   determined, with #7963's own receipts on two execution boundaries.
+
+The `c^2 = U K` comparison, member by member, each at scope: #7945 —
+`K_dyn = c_V^2/U` within 36% of the RK magnetic coefficient at `V=0.95`,
+about 61% below it at `V=0.90`, which "prevents a quantitative static-dynamic
+closure claim at the stronger detuning"; #7946 — "a quantified static-dynamic
+Maxwell-normalization tension"; #7952 (late-time, axial `L=8-14`) — two-term
+fixed-`UK` penalty `Delta chi^2 = 18.42`, three-term with `q^6` acceptable,
+the equality not established; #7955 (off-axis, `L=8-14`) — the full
+`q^2`-`q^6` fit disagrees with `U K` by 6.563 reported errors, localized to
+the `L=8` block; #7963 (axial, `L=8-18`) — both target-window `q^6` fits
+compatible with `U K` (1.373 and 1.171 combined errors), compatibility not
+determination. The RK control is not one object across these members:
+#7945's five-volume RK ladder has an unresolved `q^2` intercept
+(`c_RK^2 = 0.000138 ± 0.000674`) and serves as the null; #7963's six-volume
+early-window RK direct-spectrum fit resolves a negative `q^2` coefficient
+(`-0.00192094 ± 0.00049902`, `-3.849` reported errors), absent in its three
+later windows and unresolved when `L=18` is removed, which #7963 classifies
+as an "early-time estimator boundary with some L=18 leverage". That estimator
+boundary is part of the open item.
+
+Three further narrowings the members impose on each other, each at scope.
+(1) #7945's `K_dyn` comparison is against `K_RK approximately 0.2598`, the RK
+magnetic-flux response; #7946 distinguishes its relaxed
+`K = 0.075561 ± 0.000915` at `V=0.95` from "the older 0.2598 variational
+upper cost", and the later members' static target `U K = 0.012289` is (by this
+note's arithmetic) the product of the static parents' `U(0.95) = 0.162638`,
+as quoted in #7945, with #7946's relaxed `K` — so #7945's 36% and 61% figures
+are measured against a magnetic number the lane's later members replaced.
+(2) #7952's kernel theorem holds for a symmetric, analytic, gapless branch
+with a quadratic Taylor term ("It assumes a quadratic Taylor term exists.");
+#7959's flat transverse structure factor and quadratic mode at `L <= 12` are
+the case where that premise is not reached at the momenta measured, so the
+kernel theorem's application to branch A is exactly what branch A leaves
+unsettled. (3) On #7959's sentence "A Rokhsar-Kivelson potential term moves
+the coupling toward z = 2, not away from it": an independent blind read of
+the same inputs, recorded in the working pack, reads it as clashing with
+#7945's linear term at `V < 1`; this note reads the two as consistent in
+direction — more potential term, closer to the RK point's `z = 2` — and
+locates the tension in the uncomputed interval `0 < V < 0.90`, where #7945's
+`c_V^2 = gamma |V-1|` would grow as `V` falls while #7959 at `V = 0` reports
+a quadratic mode at `L <= 12`. Both readings are finite-volume, and the
+interval is computed by no member.
 
 No member computes the ring-exchange-alone law below `k = pi/6`; no member
 computes the detuned law's approach to `V = 0`; no member computes a

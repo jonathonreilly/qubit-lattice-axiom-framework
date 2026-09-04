@@ -7,14 +7,12 @@ adjacency cost floor, the kept pieces at that floor, the exact 24-piece cuttings
 maps of the cell, the sixteen-letter facet alphabet on the two slots of axis zero, and the interface matrix with its wall entries. Nothing
 outside that finite object enters any gate.
 
-The previous cycle counted three things: every kept piece has a point count of five times a unit drawn from the spectrum 1, 3, 7, 14; every
-cutting carries the one unit profile 1, 11, 11, 1; and the smallest off-diagonal interface value is carried by two different action orbits of
-six unordered letter pairs each. This cycle asks why. Every kept piece is shown to be a tree on its five corners of one of exactly three
-degree types, each family is rebuilt by an independent construction and matched, the families are identified with the three orbits of the
-cell group, an inequality description read off the tree alone is checked against the barycentric membership at every grid point, and the
-point count of a chain or of a hub is shown to be a binomial coefficient of its ascent count or of its hub weight. The chain words are then
-paired by the fourth-axis flip, every cutting is shown to carry 24 distinct word classes, and the wall graph is split into its two
-components, which separates the two orbits sharing the smallest off-diagonal value.
+Every kept piece is shown to be a tree on its five corners of one of exactly three degree types, each family is rebuilt by an independent
+construction and matched, and the families are identified with the three orbits of the cell group. An inequality description read off the
+tree is checked against barycentric membership at every grid point, and the point count of a chain or hub is shown to be a binomial
+coefficient of its ascent count or hub weight. The runner records a positive equal-hub-weight witness in the three-arm family, pairs the
+chain words by the fourth-axis flip, checks that every cutting carries 24 distinct word classes, and computes the intrinsic two-component
+partition of the wall graph and the within/cross split of the smallest off-diagonal value.
 Gates G1 to G10, one line each with a few detail lines, then the total line. Any failure exits nonzero.
 """
 
@@ -391,7 +389,7 @@ gate(len(ORB) == 3 and OSZ == [16, 192, 192] and OMATCH == 3 and ALLU
      .format(len(G384), NK, len(ORB), OSZ))
 emit("G4 detail: unit census on the chain orbit {0}, on the hub orbit {1}".format(dshow(OCEN[0]), dshow(OCEN[2])))
 emit("G4 detail: unit census on the three-arm orbit {0}".format(dshow(OCEN[1])))
-emit("G4 detail: every orbit carries all four units, so the unit is constant on no orbit and is not an invariant of the cell group")
+emit("G4 detail: every orbit carries all four units; the orbit partition is strictly coarser than the unit partition")
 
 # ============================================== G5 the tree-derived inequality description, pointwise
 
@@ -475,7 +473,7 @@ emit("G5 detail: the oriented coordinate is the point value or {0} minus it; a c
      .format(DIV, 0))
 emit("G5 detail: a hub is a sum of four oriented coordinates below {0}; a three-arm is a sum of three below {0} with one ordered pair"
      .format(DIV))
-emit("G5 detail: the description route never reads the barycentric inverse matrices, so the two routes share no code")
+emit("G5 detail: after shared finite-object and grid setup, the description formula never reads or calls the barycentric inverse matrices")
 
 # ============================================== G6 the chain count law
 
@@ -526,7 +524,7 @@ gate(G7OK == len(HB) and len(HB) == 16 and dict(WCEN) == {0: 2, 1: 6, 2: 6, 3: 2
 emit("G7 detail: the hub-corner weight census is {0}, and the axis of offset {1} is invisible: its two directions share one offset"
      .format(dshow(WCEN), 8))
 
-# ============================================== G8 the three-arm family stays measured
+# ============================================== G8 the three-arm census and equal-weight witness
 
 AR = [t for t in range(NK) if CLS[t] == 1]
 ACEN8 = Counter(UNIT[t] for t in AR)
@@ -542,9 +540,9 @@ for w in sorted(BYW):
 
 gate(INSPEC == len(AR) and len(AR) == 192 and dict(ACEN8) == {1: 14, 3: 82, 7: 82, 14: 14}
      and WIT is not None and UNIT[WIT[1]] != UNIT[WIT[2]] and popc(armparts(WIT[1])[0] & 7) == popc(armparts(WIT[2])[0] & 7), "G8",
-     "all {0} three-arm pieces have point count {1} times a unit of the spectrum {2}, but the hub-corner weight does not fix the unit"
+     "all {0} three-arm pieces have point count {1} times a unit of {2}, and an equal-hub-weight pair realizes distinct units"
      .format(len(AR), RSTEP, [1, 3, 7, 14]))
-emit("G8 detail: the three-arm unit census is {0}, and no closed form for this family is given here".format(dshow(ACEN8)))
+emit("G8 detail: the three-arm unit census is {0}; a formula from the complete tree data remains an adjacent open question".format(dshow(ACEN8)))
 emit("G8 detail: witness at hub weight {0}: the piece {1} has unit {2} while the piece {3} has unit {4}"
      .format(WIT[0], KEPT[WIT[1]], UNIT[WIT[1]], KEPT[WIT[2]], UNIT[WIT[2]]))
 
@@ -583,14 +581,14 @@ gate(len(set(WORD.values())) == 192 and len(CLASSES) == 96 and CSZ == [2] and PA
      and sum(k * MCEN[k] for k in MCEN) == NS and len(CSETW) == 4116 and dict(WMCEN) == {1: NS} and len(WSETW) == NS, "G9",
      "the {0} chain words are pairwise distinct and fall into exactly {1} mirror classes of {2}, and every cutting carries {3} distinct ones"
      .format(len(CH), len(CLASSES), CSZ[0], CSIZE))
-emit("G9 detail: the fourth-axis flip pairs the two chains of every class, fixes {0} of the {1} chains, and permutes the {2} cuttings with {0} "
-     "fixed".format(FIXCH, len(CH), CUTOK))
+emit("G9 detail: the fourth-axis flip pairs each class; fixed-chain and fixed-cutting censuses are {0} among {1} and {2}"
+     .format(FIXCH, len(CH), CUTOK))
 emit("G9 detail: the ascent census inside a cutting is {0} at all {1} cuttings, so the count law re-derives the one unit profile"
      .format(dshow(dict(ONEPR)), NS))
-emit("G9 detail: the {0} cuttings carry only {1} distinct class sets, so the class set of a cutting is not the cutting"
+emit("G9 detail: the {0} cuttings project to {1} distinct class sets"
      .format(NS, len(CSETW)))
 emit("G9 detail: the class-set multiplicity census is {0}".format(dshow(MCEN)))
-emit("G9 detail: the {0} word sets are instead pairwise distinct, so the word set does determine the cutting and only the class set loses it"
+emit("G9 detail: the {0} word sets are pairwise distinct, one for each cutting"
      .format(NS))
 
 # ============================================== G10 the wall separator
@@ -626,14 +624,14 @@ WITHIN = sorted(p for p in A18 if COF.get(p[0]) == COF.get(p[1]))
 CROSS = sorted(p for p in A18 if p not in WITHIN)
 COMN = sorted(set(len(NB[a] & NB[b]) for a, b in WITHIN))
 CRCEN = Counter(TRM[a][b] for a in CO[0] for b in CO[1])
-# The two landed letter-pair lists of the previous cycle at the smallest off-diagonal value, pinned here only as comparison targets.
-# The split below is computed from the wall graph alone; these lists are never read by the code that forms it.
-LAND1 = [(0, 7), (2, 13), (3, 5), (4, 11), (9, 12), (10, 14)]
-LAND2 = [(0, 12), (2, 11), (3, 10), (4, 13), (5, 14), (7, 9)]
+# Explicit measured labels, checked only after the graph-derived partition is formed.
+EXPECTED_WITHIN = [(0, 7), (2, 13), (3, 5), (4, 11), (9, 12), (10, 14)]
+EXPECTED_CROSS = [(0, 12), (2, 11), (3, 10), (4, 13), (5, 14), (7, 9)]
 
 gate(len(UNW) == 24 and len(WLET) == 12 and len(CO) == 2 and [len(C) for C in CO] == [6, 6]
      and CO[0] == [0, 4, 7, 10, 11, 14] and CO[1] == [2, 3, 5, 9, 12, 13] and NNCEN == [1]
-     and len(NONADJ) == 6 and NONADJ == LAND1 and len(A18) == 12 and WITHIN == LAND1 and CROSS == LAND2
+     and len(NONADJ) == 6 and NONADJ == EXPECTED_WITHIN and len(A18) == 12
+     and WITHIN == EXPECTED_WITHIN and CROSS == EXPECTED_CROSS
      and COMN == [4] and sorted(x for p in CROSS for x in p) == WLET
      and dict(CRCEN) == {18: 6, 52: 24, 90: 6} and sum(CRCEN.values()) == 36, "G10",
      "the {0} unordered wall edges on the {1} wall letters fall into exactly {2} components of {3}, and that splits the {1} pairs at {4}"

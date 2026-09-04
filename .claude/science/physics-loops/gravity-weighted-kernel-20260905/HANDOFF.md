@@ -1,0 +1,2 @@
+# HANDOFF — gravity-weighted-kernel-20260905 (campaign start 2026-09-04T21:03+00:00)
+State: block 213 launched (sol primary drafting). Supervisor: this session (Fable), line-by-line review + landing; workers: gpt-5.6-sol xhigh seats, primary + independent checker (cross-context). Next exact action: review the primary's runner/note draft; run the checker (F2 route, refute); conformance gate; open PR stacked on #7753.

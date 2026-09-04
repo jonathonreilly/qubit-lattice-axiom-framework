@@ -1,0 +1,28 @@
+slug: gravity-weighted-kernel-20260905
+series: toe-axiom-closure
+block: 213
+branch: physics-loop/toe-axiom-closure-block213-weighted-kernel-dispersion-20260905
+base_branch: physics-loop/toe-axiom-closure-block212-joint-pin-order-extended-alphabet-20260827
+base_commit: 4e9931a970
+origin_main_at_start: e249016f75
+mode: campaign
+runtime: 12h
+start_time: "2026-09-04T21:03+00:00"
+target_stop_time: "2026-09-05T09:03+00:00"
+checkpoint_interval: 30m
+deep_block: 90m
+target_status: best-honest-status
+lock: "scripts/automation_lock.py owner=physics-loop ttl=13h (acquired at start)"
+cycle: 1
+active_route: F1+F3 (exact plane-wave symbol at witnesses + symbolic small-k expansion); F2 (Schur/metric route) reserved for the checker
+approach_family_coverage: [F1 active, F2 checker-reserved, F3 active, F4 counter-probe pending]
+strongest_unresolved_proof_obligation: "identify the principal quadratic part of sigma(k; moduli) with g^{mu nu} k_mu k_nu exactly, symbolically in (v0, g0, g1)"
+hard_residual: "the cone = the metric's cone hypothesis (R5's named successor)"
+files_touched: [pack files only]
+open_imports: [none beyond the chain's supplied cell-form objects; registry check pending at first wall statement]
+no_go_routes: [flat-only rigidity (refuted b211), see NO_GO_LEDGER.md]
+trace_class: upstream_support
+review_findings: none yet
+pr_status: not opened
+next_exact_action: "sol primary drafts the runner + note per specs/block213_primary.md; supervisor reviews line-by-line; sol checker refutes via F2"
+stop_condition: "runtime exhausted, or corollary/value-gate exhaustion documented in OPPORTUNITY_QUEUE.md"

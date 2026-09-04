@@ -3,8 +3,9 @@
 Standalone exact runner, standard library only. The preamble rebuilds the unit four-cube cell object from scratch, as in the sibling
 cycles: the five-corner unit-determinant pieces at the adjacency cost floor, the 15800 cuttings of 24, the 192 pieces that occur in them,
 the handedness label of a piece, and the 192 chambers of the twelve-wall cut of the open cell, each piece holding 8 of them and each
-chamber sitting in 8 pieces. The predecessor cycle showed that a cutting meets every chamber in exactly one piece; that partition property
-is re-verified here and is the only global input used below. Everything else is a local statement about one piece and its 8 chambers.
+chamber sitting in 8 pieces. Exact integer separating planes certify that every sample-selected cover is a geometric cutting, while an
+independent chamber-cover search reproduces the same 15800 cuttings. Everything else is a local statement about one piece and its 8
+chambers or an exhaustive statement about this declared finite cutting family.
 
 Put each piece in its minimal naming, start corner v0 below its opposite, so that L = sign(sigma) times chi(v0) with chi the corner weight
 parity sign. Let H be the pieces whose minimal naming steps axis 3 within its first two steps: 96 pieces, 48 of label plus one and 48 of
@@ -14,22 +15,23 @@ on a piece inside H, and total 0 over the 192 chambers; summing over a cutting g
 order carries axis 3 in the second slot with the last two slots ascending and whose second sign is plus one, has per-piece count 1 inside H
 and 0 outside; summing over a cutting gives h = 12.
 
-The size bound is then a finite obstruction. A complete enumeration, run twice with different search orders, finds exactly 24 families of
+The size bound is then a finite obstruction. A complete enumeration, cross-checked with a second search order, finds exactly 24 families of
 9 pairwise-disjoint pieces inside the positive half of H and exactly 24 inside the negative half. Each of the 48 leaves a chamber that no
 member holds but whose 8 holders all meet the family, so the partition property forbids any cutting from containing it. Hence p and m, the
 positive and negative half-set counts of a cutting, are each at most 8, and p + m = 12, giving S = 2 (p - m) = 4 (p - 6) with p between 4
 and 8. The label sum lies in -8, -4, 0, 4, 8 pointwise, its size is at most 8, and divisibility by four follows as a corollary.
 
-Gates: K1 object rebuild, K2 the partition property, K3 the minimal-naming label form, K4 the half set, K5 the halving certificate,
-K6 the halving identity, K7 the W certificate, K8 the constant twelve, K9 the family enumeration, K10 the sealing obstruction, K11 the
-theorem, K12 the two censuses, K13 and K14 two discriminating perturbations. All work is exact over the integers and the rationals; no
-floating point enters any gate. Output: one line per gate, a resource line, then the total line."""
+The descriptive gates cover object reconstruction, geometric tiling, chamber reconstruction, both local certificates, the five distinct
+finite attacks on a nine-piece counterexample, the theorem and censuses, and two built-in discriminating perturbations. All work is exact
+over the integers and rationals; no floating point enters any gate. Output ends with a resource line and the total line."""
 
 import itertools
 import sys
 import time
 import resource
 from fractions import Fraction as FR
+
+AUDIT_TIMEOUT_SEC = 120
 
 T0 = time.time()
 OUT = [0]
@@ -232,6 +234,36 @@ NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
 
+# The generic sample makes every genuine cutting in the declared candidate
+# class appear in SOLS.  The converse needs a separate certificate: every pair
+# of simplices co-occurring in a sample cover is weakly separated by an exact
+# nonzero normal in {-1,0,1}^4.  Full dimensionality makes the interiors
+# strictly disjoint.  Twenty-four determinant-one 4-simplex volumes then sum
+# to the unit four-cube volume, so every sample cover is a geometric cutting.
+CO_PAIRS = sorted(set(pair for cutting in CUT
+                      for pair in itertools.combinations(cutting, 2)))
+SEP_NORMALS = [normal for normal in itertools.product((-1, 0, 1), repeat=4)
+               if any(normal)]
+VERTEX_DOTS = [[sum(CORN[v][axis] * normal[axis] for axis in range(4))
+                for normal in SEP_NORMALS] for v in range(16)]
+PIECE_LO = []
+PIECE_HI = []
+for i in range(NPI):
+    vertices = KEPT[USED[i]]
+    PIECE_LO.append([min(VERTEX_DOTS[v][k] for v in vertices)
+                     for k in range(len(SEP_NORMALS))])
+    PIECE_HI.append([max(VERTEX_DOTS[v][k] for v in vertices)
+                     for k in range(len(SEP_NORMALS))])
+
+
+def separated(i, j):
+    return any(PIECE_HI[i][k] <= PIECE_LO[j][k]
+               or PIECE_HI[j][k] <= PIECE_LO[i][k]
+               for k in range(len(SEP_NORMALS)))
+
+
+PAIR_SEPARATED = all(separated(i, j) for i, j in CO_PAIRS)
+
 PC = [0] * NPI
 for k, s in enumerate(CUT):
     for i in s:
@@ -336,6 +368,43 @@ for i in range(NPI):
         m |= (1 << c)
     CHM[i] = m
 
+# Reconstruct the cutting family from chamber incidence alone, independently
+# of the shifted sample masks used above.  Minimum-remaining-value branching
+# is only a speed choice; every compatible holder of the selected uncovered
+# chamber is explored.
+CHCUT = []
+
+
+def chamber_cover_search(cov, chosen):
+    if cov == (1 << NCH) - 1:
+        CHCUT.append(tuple(sorted(chosen)))
+        return
+    free = ((1 << NCH) - 1) & (~cov)
+    options = None
+    while free:
+        low = free & (-free)
+        cid = low.bit_length() - 1
+        free ^= low
+        compatible = [i for i in HOLD[cid] if CHM[i] & cov == 0]
+        if not compatible:
+            return
+        if options is None or len(compatible) < len(options):
+            options = compatible
+            if len(options) == 1:
+                break
+    for i in options:
+        chosen.append(i)
+        chamber_cover_search(cov | CHM[i], chosen)
+        chosen.pop()
+
+
+chamber_cover_search(0, [])
+CHCUT_SET = set(CHCUT)
+CUT_SET = set(CUT)
+CHAMBER_RECONSTRUCTION_OK = (
+    len(CHCUT) == len(CHCUT_SET) == NS and CHCUT_SET == CUT_SET
+)
+
 # ------------------------------------------------------------------
 # 4. the partition property, re-verified on every cutting
 # ------------------------------------------------------------------
@@ -439,6 +508,13 @@ for s in CUT:
     bump(PCEN, p)
     bump(SCEN, sv)
 
+CHAMBER_BOUND_FAILURES = 0
+for s in CHCUT:
+    p = sum(1 for i in s if i in HPS)
+    m = sum(1 for i in s if i in HMS)
+    if p > 8 or m > 8:
+        CHAMBER_BOUND_FAILURES += 1
+
 # ------------------------------------------------------------------
 # 8. the nine-piece families inside each half, twice over
 # ------------------------------------------------------------------
@@ -502,6 +578,43 @@ AGREE = (FAMPA == FAMPB) and (FAMMA == FAMMB)
 FAMS = sorted(FAMPA) + sorted(FAMMA)
 NFAM = len(FAMS)
 
+CUT_BITS = [sum(1 << i for i in cutting) for cutting in CUT]
+FAMILY_BITS = [sum(1 << i for i in family) for family in FAMS]
+FAMILIES_CONTAINED = sum(
+    1 for family in FAMILY_BITS if any(cutting & family == family for cutting in CUT_BITS)
+)
+
+
+def seeded_completion_exists(family):
+    cov = 0
+    for i in family:
+        if cov & CHM[i]:
+            return False
+        cov |= CHM[i]
+
+    def go(used):
+        if used == FULL:
+            return True
+        free = FULL & (~used)
+        options = None
+        while free:
+            low = free & (-free)
+            cid = low.bit_length() - 1
+            free ^= low
+            compatible = [i for i in HOLD[cid] if CHM[i] & used == 0]
+            if not compatible:
+                return False
+            if options is None or len(compatible) < len(options):
+                options = compatible
+                if len(options) == 1:
+                    break
+        return any(go(used | CHM[i]) for i in options)
+
+    return go(cov)
+
+
+COMPLETABLE_FAMILIES = sum(1 for family in FAMS if seeded_completion_exists(family))
+
 
 def seal_witness(F):
     cov = 0
@@ -541,67 +654,91 @@ NTHRU = popc(PC[PDROP])
 # ------------------------------------------------------------------
 
 gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and NS == 15800 and SIZES == [24]
-     and NPI == 192 and PCSET == [1975] and len(NAMES) == 384 and NPER == [2] and GENERIC, "K1",
-     "cell: {0} unit pieces, cost floor {1}, {2} at floor, {3} cuttings of {4}, {5} used pieces each in {6}, {7} namings {8} per piece"
+     and NPI == 192 and PCSET == [1975] and len(NAMES) == 384 and NPER == [2] and GENERIC, "object_rebuild",
+     "{0} unit pieces, floor {1}, {2} kept, {3} cuttings of {4}, {5} used pieces in {6} each, {7} namings, {8} per piece"
      .format(nd(NCAND), nd(FLOOR), nd(NKEPT), nd(NS), nd(SIZES[0]), nd(NPI), nd(PCSET[0]), nd(len(NAMES)), nd(NPER[0])))
 
-gate(BADP == 0 and HOLDN == [8] and INCN == [8] and DEALOK == NPI and NCH == 192, "K2",
-     "partition: each of the {0} pieces of a cutting holds {1} of the {2} chambers, each chamber sits in {1} pieces, failures {3} of {4}"
+gate(len(CO_PAIRS) == 15168 and len(SEP_NORMALS) == 80 and PAIR_SEPARATED, "geometric_tiling",
+     "all {0} co-occurring simplex pairs have an exact separator among {1} ternary normals; {2} unit volumes fill the cell"
+     .format(nd(len(CO_PAIRS)), nd(len(SEP_NORMALS)), nd(24)))
+
+gate(BADP == 0 and HOLDN == [8] and INCN == [8] and DEALOK == NPI and NCH == 192, "chamber_partition",
+     "each of {0} cutting pieces holds {1} of {2} chambers, each chamber has {1} holders, failures {3} of {4}"
      .format(nd(SIZES[0]), nd(INCN[0]), nd(NCH), nd(BADP), nd(NS)))
 
-gate(BADL == 0 and DIAGSET == list(range(8)), "K3",
+gate(BADL == 0 and DIAGSET == list(range(8)), "minimal_naming",
      "minimal naming: L = sign of the axis order times the corner weight parity sign, over {0} start corners, mismatches {1} of {2}"
      .format(nd(len(DIAGSET)), nd(BADL), nd(NPI)))
 
-gate(len(HALF) == 96 and len(HP) == 48 and len(HM) == 48, "K4",
+gate(len(HALF) == 96 and len(HP) == 48 and len(HM) == 48, "half_set",
      "half set: the pieces whose minimal naming steps axis {0} within its first {1} steps number {2}, label split {3} and {3}"
      .format(nd(3), nd(2), nd(len(HALF)), nd(len(HP))))
 
-gate(BADG1 == 0 and G1TOT == 0 and cens(G1CEN) == "-1:24 0:144 1:24", "K5",
+gate(BADG1 == 0 and G1TOT == 0 and cens(G1CEN) == "-1:24 0:144 1:24", "halving_certificate",
      "halving certificate on chambers: value census {0}, per-piece identity failures {1} of {2}, chamber total {3}"
      .format(cens(G1CEN), nd(BADG1), nd(NPI), nd(G1TOT)))
 
-gate(BADHALV == 0, "K6",
+gate(BADHALV == 0, "halving_identity",
      "halving identity: the label sum S equals {0} times the half-set label sum S_H, failures {1} of {2}"
      .format(nd(2), nd(BADHALV), nd(NS)))
 
-gate(BADW == 0 and len(WSET) == 12 and WIN == len(HALF) and WOUT == NPI - len(HALF), "K7",
-     "W certificate: {0} chambers, exactly {1} inside each of the {2} half-set pieces and {3} inside each of the other {2},"
+gate(BADW == 0 and len(WSET) == 12 and WIN == len(HALF) and WOUT == NPI - len(HALF), "witness_set",
+     "W: {0} chambers, exactly {1} in each of {2} half-set pieces and {3} in each other piece,"
      " failures {4} of {5}"
      .format(nd(len(WSET)), nd(1), nd(len(HALF)), nd(0), nd(BADW), nd(NPI)))
 
-gate(BADH == 0, "K8",
+gate(BADH == 0, "constant_twelve",
      "the constant twelve: every cutting holds exactly {0} half-set pieces, failures {1} of {2}"
      .format(nd(12), nd(BADH), nd(NS)))
 
-gate(AGREE and len(FAMPA) == 24 and len(FAMMA) == 24, "K9",
-     "families of {0} pairwise-disjoint pieces: {1} inside the positive half, {2} inside the negative half, two search orders agree: {3}"
+gate(CHAMBER_RECONSTRUCTION_OK and CHAMBER_BOUND_FAILURES == 0, "chamber_reconstruction",
+     "chamber-only search returns the same {0} cuttings; same-sign half-set bound failures {1}"
+     .format(nd(len(CHCUT_SET)), nd(CHAMBER_BOUND_FAILURES)))
+
+gate(AGREE and len(FAMPA) == 24 and len(FAMMA) == 24, "nine_family_census",
+     "families of {0} disjoint pieces: {1} positive, {2} negative; graph and union searches agree: {3}"
      .format(nd(9), nd(len(FAMPA)), nd(len(FAMMA)), "yes" if AGREE else "no"))
 
-gate(UNSEALED == 0 and NFAM == 48, "K10",
+gate(FAMILIES_CONTAINED == 0 and NFAM == 48, "direct_noncontainment",
+     "direct set containment finds {0} of the {1} nine-piece families inside any enumerated cutting"
+     .format(nd(FAMILIES_CONTAINED), nd(NFAM)))
+
+gate(COMPLETABLE_FAMILIES == 0 and NFAM == 48, "seeded_completion",
+     "chamber exact-cover searches seeded by all {0} nine-piece families find {1} completions"
+     .format(nd(NFAM), nd(COMPLETABLE_FAMILIES)))
+
+gate(UNSEALED == 0 and NFAM == 48, "sealing_witnesses",
      "sealing: each of the {0} families leaves a chamber it does not hold whose {1} holders all meet it, failures {2} of {0}"
      .format(nd(NFAM), nd(8), nd(UNSEALED)))
 
-gate(BADTH == 0, "K11",
+gate(BADTH == 0, "size_bound_identity",
      "theorem: S = {0} (p - {1}) at the positive half-set count p, with p + m = {2} and p between {3} and {4}, failures {5} of {6}"
      .format(nd(4), nd(6), nd(12), nd(4), nd(8), nd(BADTH), nd(NS)))
 
 gate(cens(PCEN) == "4:120 5:2832 6:9896 7:2832 8:120" and cens(SCEN) == "-8:120 -4:2832 0:9896 4:2832 8:120"
-     and sum(PCEN.values()) == NS, "K12",
+     and sum(PCEN.values()) == NS, "endpoint_censuses",
      "p census {0} sum {1}; label sum census {2}"
      .format(cens(PCEN), nd(NS), cens(SCEN)))
 
-gate(PERTP == 8 and PERTP == NHOLD, "K13",
+gate(PERTP == 8 and PERTP == NHOLD, "halving_mutation",
      "control one: negating the halving certificate at one chamber breaks the per-piece identity at exactly {0} pieces, its holders"
      .format(nd(PERTP)))
 
-gate(PERTC == 1975 and PERTC == NTHRU, "K14",
+gate(PERTC == 1975 and PERTC == NTHRU, "half_set_mutation",
      "control two: dropping one piece from the half set breaks the constant {0} at exactly {1} cuttings, the cuttings through it"
      .format(nd(12), nd(PERTC)))
+
+emit("per_element: checked - all 192 piece incidences, labels, g1 sums, and W counts are executed exactly")
+emit("per_site: checked and not executed - the one-cell theorem has no framework site variable or sitewise extension")
+emit("per_mode: checked and not executed - the finite incidence theorem defines no mode decomposition or modal extension")
+emit("per_block: checked - all 15800 declared cell cuttings are scanned and each same-sign half-set count is at most 8")
+emit("lattice_wide: checked and not executed - no multi-cell or lattice-wide statement is made or tested by this runner")
 
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 PEAK = RSS // (1024 * 1024) if sys.platform == "darwin" else RSS // 1024
 SECS = int(time.time() - T0)
 emit("resource: under {0} s of the {1} s budget, under {2} MB of the {3} MB budget, {4} gate characters"
-     .format(nd(((SECS // 60) + 1) * 60), nd(900), nd(((PEAK // 250) + 1) * 250), nd(2500), nd(OUT[0])))
+     .format(nd(((SECS // 60) + 1) * 60), nd(AUDIT_TIMEOUT_SEC),
+             nd(((PEAK // 250) + 1) * 250), nd(2500), nd(OUT[0])))
 emit("TOTAL: PASS={0} FAIL={1}".format(nd(STAT[0]), nd(STAT[1])))
+raise SystemExit(1 if STAT[1] else 0)

@@ -1,27 +1,36 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_label_sum_size_bound_cycle781_2026_08_14.py
-runner_sha256: 2e60cd328458f0020e4ca4696d43dce1b83de8e308d744d9001d13acafb71cbf
+runner_sha256: 0cf0b6130f83b6a1b48b5137cf4387fd2045d4c49bb6a811168b325e20d0e1e2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.44
+elapsed_sec: 12.35
 status: ok
 ----- stdout -----
-PASS K1 cell: 2672 unit pieces, cost floor 6, 400 at floor, 15800 cuttings of 24, 192 used pieces each in 1975, 384 namings 2 per piece
-PASS K2 partition: each of the 24 pieces of a cutting holds 8 of the 192 chambers, each chamber sits in 8 pieces, failures 0 of 15800
-PASS K3 minimal naming: L = sign of the axis order times the corner weight parity sign, over 8 start corners, mismatches 0 of 192
-PASS K4 half set: the pieces whose minimal naming steps axis 3 within its first 2 steps number 96, label split 48 and 48
-PASS K5 halving certificate on chambers: value census -1:24 0:144 1:24, per-piece identity failures 0 of 192, chamber total 0
-PASS K6 halving identity: the label sum S equals 2 times the half-set label sum S_H, failures 0 of 15800
-PASS K7 W certificate: 12 chambers, exactly 1 inside each of the 96 half-set pieces and 0 inside each of the other 96, failures 0 of 192
-PASS K8 the constant twelve: every cutting holds exactly 12 half-set pieces, failures 0 of 15800
-PASS K9 families of 9 pairwise-disjoint pieces: 24 inside the positive half, 24 inside the negative half, two search orders agree: yes
-PASS K10 sealing: each of the 48 families leaves a chamber it does not hold whose 8 holders all meet it, failures 0 of 48
-PASS K11 theorem: S = 4 (p - 6) at the positive half-set count p, with p + m = 12 and p between 4 and 8, failures 0 of 15800
-PASS K12 p census 4:120 5:2832 6:9896 7:2832 8:120 sum 15800; label sum census -8:120 -4:2832 0:9896 4:2832 8:120
-PASS K13 control one: negating the halving certificate at one chamber breaks the per-piece identity at exactly 8 pieces, its holders
-PASS K14 control two: dropping one piece from the half set breaks the constant 12 at exactly 1975 cuttings, the cuttings through it
-resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 1747 gate characters
-TOTAL: PASS=14 FAIL=0
+PASS object_rebuild 2672 unit pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used pieces in 1975 each, 384 namings, 2 per piece
+PASS geometric_tiling all 15168 co-occurring simplex pairs have an exact separator among 80 ternary normals; 24 unit volumes fill the cell
+PASS chamber_partition each of 24 cutting pieces holds 8 of 192 chambers, each chamber has 8 holders, failures 0 of 15800
+PASS minimal_naming minimal naming: L = sign of the axis order times the corner weight parity sign, over 8 start corners, mismatches 0 of 192
+PASS half_set half set: the pieces whose minimal naming steps axis 3 within its first 2 steps number 96, label split 48 and 48
+PASS halving_certificate halving certificate on chambers: value census -1:24 0:144 1:24, per-piece identity failures 0 of 192, chamber total 0
+PASS halving_identity halving identity: the label sum S equals 2 times the half-set label sum S_H, failures 0 of 15800
+PASS witness_set W: 12 chambers, exactly 1 in each of 96 half-set pieces and 0 in each other piece, failures 0 of 192
+PASS constant_twelve the constant twelve: every cutting holds exactly 12 half-set pieces, failures 0 of 15800
+PASS chamber_reconstruction chamber-only search returns the same 15800 cuttings; same-sign half-set bound failures 0
+PASS nine_family_census families of 9 disjoint pieces: 24 positive, 24 negative; graph and union searches agree: yes
+PASS direct_noncontainment direct set containment finds 0 of the 48 nine-piece families inside any enumerated cutting
+PASS seeded_completion chamber exact-cover searches seeded by all 48 nine-piece families find 0 completions
+PASS sealing_witnesses sealing: each of the 48 families leaves a chamber it does not hold whose 8 holders all meet it, failures 0 of 48
+PASS size_bound_identity theorem: S = 4 (p - 6) at the positive half-set count p, with p + m = 12 and p between 4 and 8, failures 0 of 15800
+PASS endpoint_censuses p census 4:120 5:2832 6:9896 7:2832 8:120 sum 15800; label sum census -8:120 -4:2832 0:9896 4:2832 8:120
+PASS halving_mutation control one: negating the halving certificate at one chamber breaks the per-piece identity at exactly 8 pieces, its holders
+PASS half_set_mutation control two: dropping one piece from the half set breaks the constant 12 at exactly 1975 cuttings, the cuttings through it
+per_element: checked - all 192 piece incidences, labels, g1 sums, and W counts are executed exactly
+per_site: checked and not executed - the one-cell theorem has no framework site variable or sitewise extension
+per_mode: checked and not executed - the finite incidence theorem defines no mode decomposition or modal extension
+per_block: checked - all 15800 declared cell cuttings are scanned and each same-sign half-set count is at most 8
+lattice_wide: checked and not executed - no multi-cell or lattice-wide statement is made or tested by this runner
+resource: under 60 s of the 120 s budget, under 250 MB of the 2500 MB budget, 2864 gate characters
+TOTAL: PASS=18 FAIL=0
 
 ----- stderr -----
 

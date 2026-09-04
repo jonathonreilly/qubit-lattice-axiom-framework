@@ -1,10 +1,81 @@
+---
+claim_id: physical_cell_cutting_label_sum_size_bound_cycle781_note_2026-08-14
+claim_type: bounded_theorem
+claim_scope: "Exact label-sum identities and the sharp absolute bound eight for the 15,800 geometric cuttings rebuilt from the declared determinant-one, adjacency-cost-floor unit four-cube candidate class; no multi-cell, lattice-wide, dynamical, or framework interpretation."
+upstream_dependencies: []
+runner: scripts/physical_cell_cutting_label_sum_size_bound_cycle781_2026_08_14.py
+---
+
 # Physical cell cutting: the label sum of a cutting is fixed by its positive half-set count, and the size of the label sum is at most eight
 
 Date: 2026-08-14
 Authority: none
 Audit: unset.
+Status: proposed_retained
 Claim type: bounded_theorem
 Constitutional effect: none.
+
+Primary runner:
+[`scripts/physical_cell_cutting_label_sum_size_bound_cycle781_2026_08_14.py`](../scripts/physical_cell_cutting_label_sum_size_bound_cycle781_2026_08_14.py)
+
+Cached output:
+[`logs/runner-cache/physical_cell_cutting_label_sum_size_bound_cycle781_2026_08_14.txt`](../logs/runner-cache/physical_cell_cutting_label_sum_size_bound_cycle781_2026_08_14.txt)
+
+## Trace gate
+
+- `trace_class: frontier_discovery`
+- `target_claim_id: null`
+- `target_blocker_text: null`
+- `source_of_blocker_text: frontier_question`
+- `reachability_to_target: unknown_frontier`
+- `artifact_role: theorem`
+- `next_trace_action: identify a downstream consumer for this exact one-cell label bound; none is claimed here`
+
+## Status contract
+
+- `actual_current_surface_status: bounded-support`
+- `target_claim_type: bounded_theorem`
+- `trace_class: frontier_discovery`
+- `reachability_to_target: unknown_frontier`
+- `conditional_surface_status: null`
+- `hypothetical_axiom_status: null`
+- `admitted_observation_status: null`
+- `claim_type_reason: exact finite geometric-tiling, incidence, label, and obstruction identities for one declared unit four-cube candidate class; no broader physical, dynamical, or lattice-wide identification`
+- `audit_required_before_effective_retained: true`
+- `bare_retained_allowed: false`
+
+## Inputs, exact target, and proof obligations
+
+There are no load-bearing literature, empirical, fitted, observational,
+framework, or repository-derived scientific inputs. The runner is standalone,
+uses the Python standard library only, and performs no repository reads at
+runtime; it therefore has no `AUDIT_INPUT_PATHS` declaration. The current axiom
+surface and approved-primitive registry supply no premise used in this proof.
+
+| Item | Role | Provenance | Open-bridge status |
+|---|---|---|---|
+| 16 vertices of `{0,1}^4` | declared finite domain | definition in this note and runner | no framework identification claimed |
+| determinant-one five-corner subsets | candidate 4-simplices | rebuilt exactly from the declared vertices | no imported geometry table |
+| four-coordinate adjacency cost | candidate selector | explicit definition; its floor is derived | selector is not claimed physically preferred |
+| shifts `(1,2,4,8)/80` | generic exact-cover enumeration grid | declared rational construction | sampling alone is not used as a tiling proof |
+| axis 3 in the half-set definition | fixed coordinate convention | declared once; no fitted choice | no coordinate is claimed preferred |
+| chamber, label, `g1`, and `W` definitions | finite proof objects | defined and checked here | no external normalization or value |
+| sibling-cycle names | provenance-only narrative | not on the reviewed main line | no dependency or citation edge |
+
+The exact target is the theorem stated below for every geometric cutting in the
+declared candidate class. The proof obligations are to:
+
+1. enumerate that class exhaustively and certify every selected cover as an
+   actual geometric tiling without relying on the sampling grid alone;
+2. rebuild the same cutting family independently from chamber incidence;
+3. establish the per-piece label, halving, and constant-twelve identities;
+4. exhaust the possible same-sign nine-piece families and prove that none can
+   extend to a cutting; and
+5. derive and census the displayed label-sum formula exactly.
+
+The result is a proposed bounded theorem that still requires independent audit.
+It does not edit or reinterpret an axiom, approved primitive, retained claim, or
+audit verdict.
 
 ## What this cycle asks
 
@@ -16,6 +87,17 @@ cuttings; and the naming of a piece by a start corner together with an order of 
 axes gives 384 namings, 2 per piece. A piece carries a handedness label L equal to the sign
 of the axis order times the corner weight parity sign of the start corner, and S(T) denotes
 the label sum over the 24 pieces of a cutting T.
+
+The shifted grid is an enumeration device, not the geometric proof. It avoids
+every candidate facet, so every genuine cutting in the declared 400-piece
+candidate class must appear as a sample exact cover. Conversely, the
+`geometric_tiling` gate checks all 15168 simplex pairs that co-occur in a
+selected cover and finds an exact weak separator among the 80 nonzero normals
+in `{-1,0,1}^4` for each pair. The full-dimensional simplex interiors are
+therefore disjoint. Each determinant-one simplex has four-volume `1/24`, so the
+24 pieces have the cube's full volume; their closed union is the entire cube.
+Thus every selected cover is a genuine geometric cutting, and the enumeration
+is exhaustive within the declared candidate class.
 
 `cycle 780` identified the covers as the chambers of the twelve-wall cut of the open cell
 and derived the mod-four law: S(T) is divisible by 4 on every cutting. It left the size of
@@ -33,10 +115,11 @@ comes back out of it as a corollary. The statement proved is sharper than a boun
 > -8, -4, 0, 4, 8, and |S(T)| is at most 8.
 
 Three ingredients, each local to one piece and its 8 chambers, and each summed over a
-cutting by the partition property of `cycle 780`: a halving identity, a constant count, and
-a sealing obstruction. The partition property itself is re-verified here on the rebuilt
-object, every chamber meeting every cutting in exactly one piece, with 0 failures over the
-15800 cuttings (gate K2). It is the only global input used below.
+cutting by the partition property rebuilt here: a halving identity, a constant count, and
+a sealing obstruction. Every chamber meets every cutting in exactly one piece, with 0
+failures over the 15800 cuttings (`chamber_partition`). A second exact-cover search that
+uses only chamber incidence reproduces the same set of 15800 cuttings
+(`chamber_reconstruction`), independently of the shifted sample masks.
 
 ## The halving identity
 
@@ -48,13 +131,13 @@ smaller of the two opposite corners; write sigma for its axis order. On that min
 where sign(sigma) is the sign of the order as a permutation and chi(v0) is plus one on a
 start corner of even weight and minus one on one of odd weight. The 8 start corners of
 minimal namings realise both values, and the formula matches the label of the piece on all
-192 pieces with 0 mismatches (gate K3).
+192 pieces with 0 mismatches (`minimal_naming`).
 
 Now define the **half set**
 
 > H = the pieces whose minimal naming steps axis 3 within its first 2 steps.
 
-H has 96 members, splitting 48 with L = plus one and 48 with L = minus one (gate K4). The
+H has 96 members, splitting 48 with L = plus one and 48 with L = minus one (`half_set`). The
 choice of axis 3 is a choice of one coordinate, made once and kept; the derivation below
 never uses which coordinate was taken, and nothing is claimed here about the other three.
 
@@ -72,7 +155,7 @@ total over the 192 chambers is 0; and for every piece P,
 > when P is inside H.
 
 Both halves are verified on the rebuilt object with 0 failures over the 192 pieces
-(gate K5).
+(`halving_certificate`).
 
 The identity telescopes. A cutting holds each of the 192 chambers in exactly one of its 24
 pieces, so summing the per-piece sums over T sums g1 over every chamber exactly once:
@@ -82,7 +165,8 @@ pieces, so summing the per-piece sums over T sums g1 over every chamber exactly 
 
 where S_H(T) is the label sum over the pieces of T that lie in H. Hence
 
-> **S(T) = 2 S_H(T) on every cutting**, with 0 failures over the 15800 (gate K6).
+> **S(T) = 2 S_H(T) on every cutting**, with 0 failures over the 15800
+> (`halving_identity`).
 
 The whole label sum is carried by the half set. That is the first reduction: a sum over 24
 pieces becomes twice a sum over the pieces of T inside H, and the next section shows there
@@ -99,12 +183,13 @@ W has 12 members.
 
 **T2.** For every piece P, the number of members of W among the 8 chambers of P is 1 when P
 lies in H and 0 when it does not. Verified on all 192 pieces: 1 on each of the 96 pieces of
-H and 0 on each of the other 96, with 0 failures (gate K7).
+H and 0 on each of the other 96, with 0 failures (`witness_set`).
 
 Summing over a cutting with the partition property again, the left side counts each of the
 12 members of W exactly once and the right side counts the pieces of T inside H:
 
-> **every cutting holds exactly 12 pieces of H**, with 0 failures over the 15800 (gate K8).
+> **every cutting holds exactly 12 pieces of H**, with 0 failures over the 15800
+> (`constant_twelve`).
 
 So p + m = 12 with p and m the counts of half-set pieces of label plus one and minus one,
 and S_H = p - m = 2 p - 12. Combined with the halving identity,
@@ -123,13 +208,14 @@ the negative ones. If p were 9 or more, T would contain such a family of 9.
 
 Those families can be listed completely. Inside the 48 positive half-set pieces there are
 exactly 24 pairwise chamber-disjoint families of 9, and inside the 48 negative ones exactly
-24. The count is produced twice by two different searches, an extension walk in index order
+24. The count is cross-checked by two search orders, an extension walk in index order
 over the disjointness graph and a take-it-or-leave-it walk carrying the union of chambers
-already used, and the two agree as sets and not merely in count (gate K9).
+already used, and the two agree as sets and not merely in count (`nine_family_census`).
+These are a completeness cross-check for one route, not two independent no-go routes.
 
 **T3.** Each of those 48 families is sealed: it leaves a chamber that no member holds, all 8
 of whose holding pieces meet the family. Verified for every one of the 48, with 0 failures
-(gate K10).
+(`sealing_witnesses`).
 
 The obstruction follows at once. Suppose a cutting T contained a sealed family F. The
 witness chamber c is held by exactly one piece Q of T, and Q is one of the 8 pieces holding
@@ -151,21 +237,126 @@ S = 4 (p - 6). Therefore
 
 > S lies in -8, -4, 0, 4, 8 and |S| is at most 8, on every cutting,
 
-with 0 failures over the 15800 cuttings (gate K11). Divisibility by 4 is now a corollary
+with 0 failures over the 15800 cuttings (`size_bound_identity`). Divisibility by 4 is now a corollary
 rather than a separate law, and the size bound that `cycle 780` could only measure is
 derived pointwise, from the value of p on the single cutting in hand.
 
 The bound is attained at both ends: p takes the value 4 on 120 cuttings and 8 on 120, and
 the label sum census matches term for term, -8 on 120, -4 on 2832, 0 on 9896, 4 on 2832 and
-8 on 120 (gate K12). The correspondence between the two censuses is the theorem read
+8 on 120 (`endpoint_censuses`). The correspondence between the two censuses is the theorem read
 backwards, and it is exact, not approximate.
 
 Two controls check that the gates discriminate. Negating g1 at a single chamber breaks the
 per-piece identity at exactly 8 pieces, which are precisely the pieces holding that chamber
-(gate K13); and dropping a single piece from H breaks the constant twelve at exactly 1975
-cuttings, which are precisely the cuttings through that piece (gate K14). Neither number is
+(`halving_mutation`); and dropping a single piece from H breaks the constant twelve at exactly 1975
+cuttings, which are precisely the cuttings through that piece (`half_set_mutation`). Neither number is
 imposed: each is measured on the perturbed object and compared with the count the structure
 predicts.
+
+## No-Go Discipline Gate
+
+The derived negative boundary is deliberately narrow: among the 15800
+geometric cuttings in the declared 400-piece candidate class, no cutting
+contains nine half-set pieces of one label sign. It is not a claim about an
+arbitrary four-cube triangulation, another candidate selector, a multi-cell
+complex, or a lattice theory.
+
+### N1 — five materially distinct attacks
+
+The graph and take-or-leave-it orderings in `nine_family_census` are one
+completeness cross-check and are not counted as separate routes. The five
+routes below differ in their primary object, hypothesis presentation, or
+terminal obligation.
+
+| Attack route and normalization tuple | Attempt and result | Honesty marker |
+|---|---|---|
+| geometric-cover census `(simplex sample masks; declared 400-piece class; find p>=9 or m>=9)` | Search every exact sample cover after the independent separator-and-volume certificate makes it a geometric cutting. The primary runner's `size_bound_identity` gate scans all 15800 and finds zero bound failures. | **ATTEMPTED** |
+| chamber-only reconstruction `(192 chamber masks; exact one-holder equations; find a violating cover)` | Re-enumerate exact covers from chamber incidence without using the shifted sample masks. The `chamber_reconstruction` gate returns the same 15800 covers and zero same-sign bound failures. | **ATTEMPTED** |
+| explicit subset containment `(48 complete nine-piece candidates; enumerated cutting sets; find F subset T)` | Form every same-sign chamber-disjoint family of nine and test direct set containment against every cutting. The `direct_noncontainment` gate finds zero contained families. | **ATTEMPTED** |
+| seeded completion `(one nine-piece family fixed; remaining chamber exact-cover problem; find any completion)` | Seed an exact-cover search separately with each of the 48 candidates and explore all compatible holders of a minimum-option uncovered chamber. The `seeded_completion` gate finds zero completions. | **ATTEMPTED** |
+| local sealing `(one nine-piece family; chamber-holder neighborhoods; find an unfillable chamber)` | Search for a chamber outside the family whose eight holders all intersect it. The `sealing_witnesses` gate supplies such a witness for all 48 families with zero failures. | **ATTEMPTED** |
+
+### N2 — wall independence
+
+There is one claimed wall, not a count of independent walls: a same-sign
+nine-piece chamber-disjoint family would have to extend to an exact chamber
+partition. Direct containment, seeded completion, and local sealing are three
+ways of testing that one wall; their number is not presented as a wall count.
+The positive and negative label cases are symmetric instances and likewise are
+not called independent walls.
+
+### N3 — hidden-condition scan
+
+| Condition | Classification and disposition |
+|---|---|
+| determinant-one, adjacency-cost-floor candidate class | explicit finite hypothesis; no claim beyond it |
+| shifted 625-point grid | enumeration device; genericity checked exactly; not the geometric proof |
+| exact separating normals and volume sum | executed geometric certificate for every selected cover |
+| 192 used pieces and chamber incidence | derived from the complete geometric-cover census, then independently exact-covered |
+| minimal naming and coordinate axis 3 | explicit deterministic naming and fixed coordinate convention |
+| label, half set, `g1`, and `W` | definitions local to this theorem; no imported value |
+| arbitrary triangulations, other cells, multi-cell systems, dynamics | outside the quantified domain; no negative statement made |
+| axioms, approved primitives, observations, fits, standard-QFT assumptions | absent from the proof and not smuggled in |
+
+### N4 — source-residual matching
+
+| Candidate source | Exact residual | Match? | Witness treatment |
+|---|---|---|---|
+| this note's primary runner | whether any declared cutting contains at least nine `H` pieces of one sign | yes | sole load-bearing computational source |
+| `cycle 779` and `cycle 780` names | narrative lineage for the finite object and an earlier measured bound | no landed source at the frozen main coordinate | provenance only; zero witness weight |
+| current-main retained/audit corpus and no-go ledgers | an already retained proof or retirement entry for this exact half-set bound | no match found | no citation and zero witness weight |
+
+After the nonmatching references are dropped, the negative proof still has the
+complete local runner evidence listed in N1.
+
+### N5 — rhetoric and resolution scope
+
+| Resolution | Executed? | Narrow result |
+|---|---|---|
+| per-element | yes | all 192 piece incidences, labels, `g1` sums, and `W` counts |
+| per-site | no | the one-cell theorem has no framework site variable or sitewise extension |
+| per-mode | no | the finite incidence object defines no mode decomposition |
+| per-block | yes | all 15800 declared cell cuttings; the same-sign count is at most eight |
+| lattice-wide | no | no multi-cell or lattice-wide object is defined or tested |
+
+The primary runner emits these same five substantive lines verbatim in cached
+stdout, using `checked and not executed` for the three inapplicable classes.
+
+### N6 — premise, primitive, and convention discipline
+
+The current axiom authority, approved-primitive registry, premise-decision
+history, controlled vocabulary, and open convention-ratification surface were
+scanned. No framework premise or proposed primitive supplies or is needed for
+this finite obstruction. Axis 3 is an explicit coordinate convention inside
+the declared object; relabeling coordinates can transport the construction but
+is not used to inflate the evidence count. The theorem proposes no new axiom,
+primitive, physical selector, or interpretation stance. The topical open
+piece-taxonomy work has different claims and files and does not retire or
+support this bound.
+
+### N7 — strongest steelman
+
+The strongest counterargument is that a finite shifted grid might miss an
+overlap or gap, or might omit a genuine geometric cutting, so a bound over its
+exact covers would not be a theorem about the stated cuttings. The runner now
+answers both directions independently: genericity makes every genuine cutting
+an exact cover of the sample points, while exact separating planes for every
+co-occurring simplex pair plus the determinant-volume sum prove that every
+enumerated cover tiles the entire cube. The chamber-only reconstruction then
+reaches the same family without the sample masks. What remains outside scope is
+an arbitrary triangulation or another candidate selector, and the note makes no
+negative claim there.
+
+### N8 — prior-art and retirement scan
+
+At frozen `origin/main` SHA
+`a950a1aacfb33c10699dc88ac2f441d7024ad109`, searches of the science notes,
+audit ledger, and checked-in `NO_GO_LEDGER.md` files found no retained or
+conditional claim for this exact half-set size bound or sealed-family
+obstruction. The other open cell-cutting PR found by the topical scan concerns
+piece taxonomy, count laws, and a wall-letter split; it neither proves nor
+supersedes this theorem. There is therefore no earlier route to retire and no
+duplicate authority is claimed.
 
 ## What this does not establish
 
@@ -187,55 +378,65 @@ argument gives, and asked for a certificate taking values modulo 4. Nothing here
 one. The present derivation reaches the same divisibility by a different argument, through
 p, and so does not answer that question either.
 
-Two further limits, stated plainly. The partition property is verified on the rebuilt
-object over all 15800 cuttings rather than proved from the definition of a cutting; the
-geometric reading given in `cycle 780` says why it must hold, but this note claims only what
-the gates check. And the claim type is bounded_theorem, not a stronger one, because the
-object is the finite cell as rebuilt: the statements are theorems about it, and nothing here
-extends them to any other cell or to any larger family of cuttings.
+Two further limits are stated plainly. The geometric certificate proves tiling and
+exhaustivity only for the 400 determinant-one pieces selected by the declared
+adjacency-cost floor; it does not classify arbitrary triangulations of a four-cube.
+The claim type is `bounded_theorem`, not a stronger one, because the object is
+this finite cell and candidate class as rebuilt: nothing here extends the
+identities to another cell, a multi-cell complex, a lattice-wide system, or a
+physical dynamics.
 
 ## Relation to sibling cycles
 
-The object, the handedness label and the chamber picture are taken from `cycle 779` and
-`cycle 780`, and this note extends them rather than corrects them: nothing in either is
-withdrawn. The mod-four law of `cycle 780` is re-derived here as a corollary of a sharper
-statement, and the size bound its boundary section listed as a measurement is discharged.
-The halving identity and the constant twelve are new here, as is the sealing obstruction;
-the partition property is the one thing carried over and it is re-checked rather than
-assumed. All references above are to sibling cycles by name only, with no citation edges:
-the predecessor notes are not on the main line yet, so this note carries none.
+The object, handedness label, and chamber picture have narrative lineage in
+`cycle 779` and `cycle 780`, but their definitions and every load-bearing fact
+are rebuilt here. The mod-four law described for `cycle 780` is re-derived as a
+corollary of the sharper identity, and its measured size bound is proved for the
+declared class. Nothing in either sibling is withdrawn. All sibling references
+are provenance-only names with no citation edges or imported premise: at this
+review's frozen main coordinate, those predecessor notes are not on the main
+line.
 
 ## Gate list with the measured numbers
 
-All 14 gates are computational identities about the explicitly rebuilt finite object, exact
-over the integers and the rationals; no floating point enters any gate. The runner is
-`scripts/physical_cell_cutting_label_sum_size_bound_cycle781_2026_08_14.py` and it uses the
-standard library only.
+All 18 gates concern the explicitly rebuilt finite object and use exact integer
+or rational arithmetic; no floating point enters any gate. The linked primary
+runner uses the standard library only and declares a 120-second audit timeout.
 
-* **K1** object rebuild: 2672 unit pieces, cost floor 6, 400 at the floor, 15800 cuttings
-  of 24, 192 used pieces each in 1975, 384 namings, 2 per piece.
-* **K2** the partition property: each of the 24 pieces of a cutting holds 8 of the 192
-  chambers, each chamber sits in 8 pieces, 0 failures over the 15800 cuttings.
-* **K3** the minimal naming: L = sign of the axis order times the corner weight parity
-  sign, over 8 start corners, 0 mismatches on the 192 pieces.
-* **K4** the half set: the pieces whose minimal naming steps axis 3 within its first 2
-  steps number 96, splitting 48 and 48 by label.
-* **K5** the halving certificate on chambers: value census -1 on 24, 0 on 144, 1 on 24,
-  chamber total 0, and 0 per-piece failures on the 192 pieces.
-* **K6** the halving identity S = 2 S_H, 0 failures over the 15800 cuttings.
-* **K7** the W certificate: 12 chambers, exactly 1 inside each of the 96 half-set pieces
-  and 0 inside each of the other 96, 0 failures on the 192.
-* **K8** the constant twelve: every cutting holds exactly 12 half-set pieces, 0 failures
-  over the 15800.
-* **K9** families of 9 pairwise-disjoint pieces: 24 inside the positive half and 24 inside
-  the negative half, with two search orders agreeing.
-* **K10** the sealing: each of the 48 families leaves a chamber it does not hold whose 8
-  holders all meet it, 0 failures over the 48.
-* **K11** the theorem S = 4 (p - 6) with p + m = 12 and p between 4 and 8, 0 failures over
-  the 15800 cuttings.
-* **K12** the p census 120, 2832, 9896, 2832, 120 at p = 4, 5, 6, 7, 8, sum 15800, and the
-  label sum census -8 on 120, -4 on 2832, 0 on 9896, 4 on 2832, 8 on 120.
-* **K13** the first control: negating the halving certificate at one chamber breaks the
-  per-piece identity at exactly 8 pieces, its holders.
-* **K14** the second control: dropping one piece from the half set breaks the constant 12
-  at exactly 1975 cuttings, the cuttings through it.
+* **`object_rebuild`**: 2672 determinant-one pieces, cost floor 6, 400
+  candidates at the floor, 15800 cuttings of 24, 192 used pieces each in 1975,
+  and 384 namings, 2 per piece.
+* **`geometric_tiling`**: all 15168 co-occurring simplex pairs have an exact
+  separator among 80 nonzero ternary normals; 24 unit normalized volumes fill
+  the cell.
+* **`chamber_partition`**: each of a cutting's 24 pieces holds 8 of the 192
+  chambers, each chamber has 8 holders, and there are 0 failures over 15800.
+* **`minimal_naming`**: the label formula matches all 192 pieces over 8 start
+  corners, with 0 mismatches.
+* **`half_set`**: 96 pieces lie in the half set, split 48 and 48 by label.
+* **`halving_certificate`**: the chamber values have census 24 negative, 144
+  zero, 24 positive, total zero, and 0 per-piece failures.
+* **`halving_identity`**: `S = 2 S_H`, with 0 failures over 15800 cuttings.
+* **`witness_set`**: `W` has 12 chambers, one inside each half-set piece and
+  zero inside every other piece, with 0 failures.
+* **`constant_twelve`**: every cutting holds 12 half-set pieces, with 0
+  failures over 15800.
+* **`chamber_reconstruction`**: an independent chamber-only exact-cover search
+  returns exactly the same 15800 cuttings and 0 same-sign bound failures.
+* **`nine_family_census`**: there are 24 positive and 24 negative disjoint
+  nine-piece families; graph and union-mask searches agree as exact sets.
+* **`direct_noncontainment`**: 0 of those 48 families is a subset of an
+  enumerated cutting.
+* **`seeded_completion`**: exact-cover searches seeded by all 48 families find
+  0 completions.
+* **`sealing_witnesses`**: all 48 families have an uncovered chamber whose 8
+  holders meet the family, with 0 failures.
+* **`size_bound_identity`**: `S = 4(p-6)`, `p+m=12`, and `4<=p<=8`, with 0
+  failures over 15800.
+* **`endpoint_censuses`**: the `p` census is 120, 2832, 9896, 2832, 120 at
+  `p=4,5,6,7,8`; the matching `S` census is 120, 2832, 9896, 2832, 120 at
+  `S=-8,-4,0,4,8`.
+* **`halving_mutation`**: negating `g1` at one chamber breaks exactly its 8
+  holding pieces.
+* **`half_set_mutation`**: dropping one piece from `H` breaks exactly the 1975
+  cuttings through it.

@@ -130,7 +130,7 @@ For each matrix the runner constructs a diagonal `D` with entries in `{1,i,-1,-i
 D^dag H_enc(g) D = H_F(g)
 ```
 
-for every real `g`; `38`, `40`, and `44` diagonal entries are non-real. Hence the two supplied finite matrices have equal spectra and equal occupation-basis projector diagonals at every real coupling. The invariance claim is limited to the exhibited diagonal rephasing; vertex order, neighbour order, encoding choice, and the occupation basis stay fixed inputs.
+for every real `g`. Hence the two supplied finite matrices have equal spectra and equal occupation-basis projector diagonals at every real coupling. The invariance claim is limited to diagonal rephasing; vertex order, neighbour order, encoding choice, and the occupation basis stay fixed inputs. Counts of real versus imaginary entries in a particular representative `D` carry no claim weight because a global phase changes them while leaving the identity unchanged.
 
 ### C. Exact free-point occupation probabilities
 
@@ -162,7 +162,7 @@ sign(y) = s_e (-1)^(|y intersect Z(A_ij B_i)|)
 
 with one constant `s_e` per edge. The `Z` support lies in `star(i) union star(j)`. It fits one endpoint star on `10` of `12` tested cube edges and `10` of `12` tested grid edges; two edges in each graph require both endpoint stars. The executable census deliberately rejects the stronger one-star statement.
 
-For the fixed matrices, the product of amplitudes around a four-cycle of the configuration graph is negative on `144/444` cube cycles and `80/344` grid cycles, matching the Jordan-Wigner reference. A spanning-tree diagonal gauge leaves `90/240` and `80/252` undirected entries positive, respectively. These closed-cycle products are invariant under diagonal rephasing. No covariance or invariance under a changed neighbour ordering, vertex relabelling, cubic rotation, or encoding is tested.
+For the fixed matrices, the product of amplitudes around a four-cycle of the configuration graph is negative on `144/444` cube cycles and `80/344` grid cycles, matching the Jordan-Wigner reference. These closed-cycle products are invariant under diagonal rephasing. Counts tied to a chosen spanning tree or representative phase gauge carry no claim weight. No covariance or invariance under a changed neighbour ordering, vertex relabelling, cubic rotation, or encoding is tested.
 
 ### G. Separate positive control
 

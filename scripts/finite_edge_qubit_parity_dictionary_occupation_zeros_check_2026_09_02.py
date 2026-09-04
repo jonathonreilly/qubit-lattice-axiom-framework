@@ -727,12 +727,11 @@ def group_B():
         ok = (not (d is None) and res["exact"] and res["n"] == dim
               and np.array_equal(res["bond"], res["D"])
               and bool(np.all(np.abs(np.abs(d) - 1) == 0)))
-        nsu = -1 if d is None else int(np.sum(np.abs(d.imag) > 0.5))
         check("B%d [exact] %s %s: dim %d, diagonals equal the fermionic bond counts, "
-              "2^%d H_enc a Gaussian-integer matrix of max modulus %d, and a unit gauge "
-              "D (%d of %d entries in {i,-i}) gives D^dag H_enc D = H_F"
+              "2^%d H_enc a Gaussian-integer matrix of max modulus %d, and a diagonal "
+              "unit gauge D in {1,i,-1,-i} gives D^dag H_enc D = H_F"
               % (t + 1, res["E"].name, res["ndesc"], res["n"], res["R"]["k"],
-                 res["mx"], nsu, res["n"]), ok)
+                 res["mx"]), ok)
 
 
 # ==================================================================== group C
@@ -912,14 +911,12 @@ def group_F():
     tcf, fcf = flux4(CASES["cube"]["T"].astype(complex))
     tg, fg = flux4(CASES["grid"]["Hoff"])
     tgf, fgf = flux4(CASES["grid"]["T"].astype(complex))
-    ncc, mec, cc, _ = tree_gauge(CASES["cube"]["Hoff"])
-    ncg, meg, cg, _ = tree_gauge(CASES["grid"]["Hoff"])
     check("F3 [exact] four-cycle flux: cube %d of %d carry -1, grid3x3 %d of %d, "
-          "identical for H_F (%d/%d, %d/%d); in a spanning-tree gauge %d of %d and %d of "
-          "%d entries remain +1"
-          % (fc, tc, fg, tg, fcf, tcf, fgf, tgf, cc[0], mec, cg[0], meg),
+          "identical for H_F (%d/%d, %d/%d); these closed-cycle products are invariant "
+          "under diagonal rephasing"
+          % (fc, tc, fg, tg, fcf, tcf, fgf, tgf),
           (tc, fc) == (tcf, fcf) and (tg, fg) == (tgf, fgf) and fc > 0 and fg > 0
-          and cc[0] > 0 and cg[0] > 0 and cc[1] == cc[3] == cg[1] == cg[3] == 0)
+          and tc > fc and tg > fg)
 
 
 # ==================================================================== group G

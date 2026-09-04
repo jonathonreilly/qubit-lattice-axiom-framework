@@ -41,29 +41,69 @@ bare_retained_allowed: false
 
 ## What this cycle asks
 
-The unit four-cube cell object is rebuilt from scratch here as in the sibling cycles
-`cycle 779`, `cycle 780` and `cycle 781`: of the 2672 five-corner sets of unit determinant,
-the ones at the adjacency cost floor 6 number 400; exact cover of the cell by floor pieces
-has 15800 solutions, each of 24 pieces; the pieces that actually occur number 192; and the
-naming of a piece by a start corner together with an order of the four axes gives 384
-namings, 2 per piece. The two namings of a piece carry opposite start corners and reversed
-axis orders, and the minimal naming is the one whose start corner is the smaller of the
-two. Write (v0, sg) for that minimal naming.
+The unit four-cube cell object is rebuilt from scratch here. Of the 2672 five-corner sets
+of normalized volume 1, the ones at the adjacency cost floor 6 number 400. A shifted
+625-point rational grid enumerates 15800 candidate covers of 24 pieces. For every candidate,
+the runner separately checks that its 24 normalized volumes sum to the cube volume and that
+each of its simplex pairs has disjoint interior, witnessed by an integer separating
+hyperplane. Thus all 15800 candidates are continuous exact cuttings of the unit four-cube,
+not merely covers of the enumeration grid (gates K1 and K1G). The pieces that actually occur
+number 192. Naming a piece by a start corner together with an order of the four axes gives
+384 namings, 2 per piece. The two namings of a piece carry opposite start corners and
+reversed axis orders, and the minimal naming is the one whose start corner is the smaller
+of the two. Write (v0, sg) for that minimal naming.
 
 Every piece then carries a **diagonal label** diag(P) = v0, a value below 8, the lower of
 the two opposite corners the staircase path runs between. The quantity this cycle is about
-is the count
+is the **odd-diagonal count**
 
-> A2(T) = the number of pieces of the cutting T whose diagonal label has odd corner
+> N_odd_diag(T) = the number of pieces of the cutting T whose diagonal label has odd corner
 > weight, that is, whose label is one of 1, 2, 4, 7.
 
 `cycle 780` derived a divisibility by 4 for the handedness label sum, and `cycle 781`
 sharpened it to a pointwise identity and a size bound. Neither says anything about the
 diagonal label, which is a different per-piece attribute: it is a corner, not a sign, and
-it is blind to the axis order that the handedness label reads. The census of A2 over the
-15800 cuttings nonetheless lands on multiples of 4 only. This note derives that.
+it is blind to the axis order that the handedness label reads. The census of the
+odd-diagonal count over the 15800 cuttings nonetheless lands on multiples of 4 only. This
+note derives that.
 
-> **T.** A2(T) is divisible by 4 for every one of the 15800 cuttings.
+## Exact target
+
+> **T.** N_odd_diag(T) is divisible by 4 for every one of the 15800 continuously certified
+> cuttings T of the declared unit four-cube object.
+
+This is a theorem only on that exact finite family. It makes no claim that the selection
+rule is physically preferred and no claim about other cells or other cutting families.
+
+## Inputs, imports, and provenance
+
+| Item | Classification | Role in the claim |
+|---|---|---|
+| `{0,1}^4`, five-corner simplices, determinant, adjacency-cost floor, and exact-cover rule | zero-input structural | Declare the finite object and the family being exhaustively enumerated. |
+| Exact integer/rational arithmetic, normalized simplex volume, and separating-hyperplane criterion | zero-input structural | Certify candidate admissibility and continuous coverage; no floating-point or fitted threshold enters. |
+| The shifted 625-point rational grid | zero-input structural enumeration device | Enumerates candidate covers. It is not used as a surrogate for continuous coverage; K1G separately certifies every emitted candidate. |
+| Minimal complement-and-reversal naming and the choice of coordinate 3 for the half set | explicit normalization/boundary condition | Declare the finite labels and selected half set. K13 checks naming invariance; the coordinate choice remains explicit and the theorem is scoped to it. |
+| The two census distributions | support-only | Exhaustive descriptive outputs. Their multiplicities are not premises of the mod-four derivation. |
+| Sibling-cycle names | support-only provenance | Terminology comparison only. No sibling result or file is a scientific dependency, and the runner rebuilds every load-bearing object. |
+| Framework axioms/primitives, literature values, observations, fits, PDG/cosmological values, or continuum/physical identifications | none | No such input is used or claimed. |
+
+## Proof-obligation graph
+
+1. **O1 — object admissibility.** Enumerate all shifted-grid covers from the 400 floor
+   simplices, then independently certify unit normalized volumes, pairwise interior
+   separation, and total cube volume. This establishes the 15800 continuous cuttings.
+2. **O2 — chamber partition.** Rebuild the 192 chambers and show that every cutting meets
+   every chamber in exactly one piece.
+3. **O3 — local-to-global count.** Prove the five-valued chamber law piece by piece and
+   telescope it with O2 to obtain the congruence for each diagonal-label count.
+4. **O4 — transported-label coupling.** Identify the six-valued class with the selected
+   half set, prove parity transport, and sum over the four odd labels.
+5. **O5 — parity certificate.** Exhibit the 20-member certificate chamber set, check its
+   per-piece parity law, and telescope with O2 to make the selected odd count even.
+6. **O6 — target.** Combine O4 and O5 to conclude T.
+
+The runner closes O1-O6 by exact finite arithmetic. None of the obligations assumes T or
+an equivalent mod-four statement, and no observational or framework bridge is needed.
 
 The derivation is local everywhere except at one place. A chamber is named (b, s) as in
 `cycle 780`, with b the order of the four magnitudes of u = x - centre taken decreasingly
@@ -152,20 +192,21 @@ weight by an even amount, and passing to the opposite corner flips all 4 bits, w
 even again. So the parity survives both operations.
 
 Now sum over the four labels of odd corner weight. On the left the telescoping identity
-gives A2(T), the count of pieces of T with odd label, as the sum of n_w over those four
-labels. On the right the sum of q_w over those four labels counts the pieces of T lying in
+gives N_odd_diag(T), the odd-diagonal count, as the sum of n_w over those four labels. On
+the right the sum of q_w over those four labels counts the pieces of T lying in
 H whose phi is odd, which by T3 is the count of pieces of T lying in H whose diagonal label
 is odd, that is, the hodd-count of T. That coupling is checked on its own, with 0 failures
 over the 15800 cuttings (gate K14). Hence
 
-> A2(T) is congruent to 2 times the hodd-count of T, modulo 4.
+> N_odd_diag(T) is congruent to 2 times the hodd-count of T, modulo 4.
 
 Divisibility by 4 is now exactly the statement that the hodd-count is even.
 
 ## The parity certificate
 
-The evenness comes from a function of the chamber alone, gathered into a set G3 of chambers
-by five conditions. Two of them sit over the chambers whose order carries axis 3 in its
+The evenness comes from a function of the chamber alone, gathered into the **certificate
+chamber set** by five conditions. Two of them sit over the chambers whose order carries
+axis 3 in its
 second slot with second sign plus one: one takes the orders whose last two slots ascend,
 together with disagreeing first and third signs, and the other the orders whose last two
 slots descend, together with third sign plus one. Each of those two cells holds 6 chambers.
@@ -176,22 +217,23 @@ three axes contribute 4 chambers when the second sign is minus one, and the orde
 last three slots descend contribute 2 chambers when the third sign is plus one.
 
 > **T4 (the certificate).** The five cells are pairwise disjoint, of sizes 6, 6, 2, 4 and 2,
-> so G3 holds 20 chambers, an even number; and for every one of the 192 pieces, the number
-> of chambers of the piece lying in G3 has the same parity as hodd of the piece.
+> so the certificate chamber set holds 20 chambers, an even number; and for every one of the
+> 192 pieces, the number of its chambers lying in that set has the same parity as hodd of the
+> piece.
 
 The disjointness and the five sizes are measured on the rebuilt object, not read off the
 conditions, and the per-piece parity law holds with 0 mismatches over the 192 pieces, its
 support being the 48 pieces with hodd = 1 (gates K7 and K8).
 
 Sum the parity law over the 24 pieces of a cutting. By the partition property the left side
-counts each chamber of G3 exactly once, giving 20, which is even. The right side is the
+counts each certificate chamber exactly once, giving 20, which is even. The right side is the
 hodd-count of T. Therefore
 
 > **every cutting holds an even number of odd-diagonal half-set pieces**,
 
 with 0 failures over the 15800 cuttings (gate K9). Combined with the previous section,
-A2(T) is congruent to 2 times an even number modulo 4, hence to 0, which is theorem T, and
-it too is confirmed cutting by cutting with 0 failures over the 15800 (gate K10).
+N_odd_diag(T) is congruent to 2 times an even number modulo 4, hence to 0, which is theorem
+T, and it too is confirmed cutting by cutting with 0 failures over the 15800 (gate K10).
 
 That the certificate is load-bearing rather than decorative is checked by dropping a single
 chamber from it: the per-piece parity law then fails at exactly 8 pieces, and those 8 are
@@ -209,12 +251,12 @@ by looking the minimal naming up first, and the resulting 192 values agree every
 Both distributions are **measured, not derived**. Over the 15800 cuttings the hodd-count
 takes the value 0 on 472 cuttings, 2 on 1848, 4 on 3384, 6 on 4392, 8 on 3384, 10 on 1848
 and 12 on 472; the values are exactly the even numbers up to 12, and the shape is symmetric
-about 6 (gate K9). The count A2 takes the value 0 on 112 cuttings, 4 on 1176, 8 on 3936,
+about 6 (gate K9). The odd-diagonal count takes the value 0 on 112 cuttings, 4 on 1176, 8 on 3936,
 12 on 5352, 16 on 3936, 20 on 1176 and 24 on 112; the values are exactly the multiples of 4
 up to 24, and the shape is again symmetric, about 12 (gate K10).
 
 The derivation above forces the support of both censuses and nothing more. It says the
-hodd-count is even and that A2 is a multiple of 4; it does not say why the middle values
+hodd-count is even and that the odd-diagonal count is a multiple of 4; it does not say why the middle values
 are so much heavier, why the two are so nearly proportional, or why the ends carry 472 and
 112 respectively. The censuses are measured, not derived; the divisibility is derived.
 
@@ -223,10 +265,10 @@ are so much heavier, why the two are so nearly proportional, or why the ends car
 **The census shapes are not derived.** Only the support is. The symmetry of both
 distributions, the peak at the middle value, and every individual multiplicity above are
 measurements on the rebuilt object, and nothing in the chain predicts them. In particular
-the derivation constrains A2 to the multiples of 4 between 0 and 24 and does not exclude
+the derivation constrains the odd-diagonal count to the multiples of 4 between 0 and 24 and does not exclude
 any of them.
 
-**The certificate is exhibited, not derived.** The set G3 is given by five conditions on
+**The certificate is exhibited, not derived.** The certificate chamber set is given by five conditions on
 the chamber and its correctness is a finite check over the 192 pieces; nothing here derives
 those conditions from the geometry, and no claim is made that they are the only such set.
 The same applies to the closed form phi and to the local law: each is stated and checked,
@@ -237,32 +279,35 @@ steps of the minimal naming. The derivation never uses which coordinate was take
 neither does it show that the choice is immaterial, and nothing is claimed about the
 half sets the other three coordinates would give.
 
-**The partition property is verified, not proved from the definition.** It is checked over
-all 15800 cuttings on the rebuilt object; the geometric reading given in `cycle 780` says
-why it must hold, but this note claims only what the gates check.
+**The chamber partition property is verified by exhaustive incidence, not assumed from a
+predecessor.** It is checked over all 15800 cuttings on the rebuilt object. Separately, K1G
+uses normalized volumes and pairwise separating hyperplanes to certify that those objects
+are continuous geometric cuttings of the cube.
 
-**Nothing here leaves the finite object.** The claim type is bounded_theorem because the
-statements are theorems about the unit four-cube cell as rebuilt, with its 192 pieces, its
-192 chambers and its 15800 cuttings. No extension to another cell, to a larger family of
-cuttings, or to any continuum statement is claimed or implied.
+**Nothing here leaves the declared cutting family.** The claim type is bounded_theorem
+because the statements concern only the unit four-cube object as rebuilt, with its 192
+pieces, 192 chambers, and 15800 continuously certified cuttings. The continuous geometry
+certifies those finite objects; it is not an extension to another cell or a larger family,
+and no physical interpretation is claimed or implied.
 
 ## Relation to sibling cycles
 
-The object, the chamber picture and the partition property are taken from `cycle 779` and
-`cycle 780`, and the minimal naming and the half set are taken from `cycle 781`; this note
-extends them rather than corrects them, and nothing in any of the three is withdrawn. The
-attribute studied here is new: `cycle 780` and `cycle 781` both concern the handedness
-label, a sign, whereas A2 counts a property of the diagonal label, a corner. The local law,
-the transported label phi, the parity transport and the parity certificate are new here.
+The terminology parallels `cycle 779`, `cycle 780`, and `cycle 781`, but no predecessor
+construction or conclusion is imported: this note's runner rebuilds the object, continuous
+geometry, chamber picture, partition property, minimal naming, and half set. The note
+extends that line rather than correcting it, and nothing in any sibling cycle is withdrawn.
+The attribute studied here is new: `cycle 780` and `cycle 781` both concern the handedness
+label, a sign, whereas the odd-diagonal count concerns a property of the diagonal label, a
+corner. The local law, transported label phi, parity transport, and parity certificate are
+new here.
 The half set reappears in a different role, as the support of the class carrying the
 six-valued entry of the local law rather than as the carrier of a label sum, and the fact
 that the same 96 pieces serve both is a measurement, not something derived. All references
-above are to sibling cycles by name only, with no citation edges: the predecessor notes are
-not on the main line yet, so this note carries none.
+above are decorative names only, with no citation edges and no scientific dependency.
 
 ## Gate list with the measured numbers
 
-All 14 gates are computational identities about the explicitly rebuilt finite object, exact
+All 15 gates are computational identities about the explicitly rebuilt finite object, exact
 over the integers and the rationals; no floating point enters any gate. The runner is
 `scripts/physical_cell_cutting_diagonal_parity_cycle782_2026_08_14.py` and it uses the
 standard library only.
@@ -270,6 +315,10 @@ standard library only.
 * **K1** object rebuild: 2672 unit pieces, cost floor 6, 400 at the floor, 15800 cuttings
   of 24, 192 used pieces, 192 chambers, 8 chambers per piece, 8 holders per chamber, and
   the partition property with 0 failures over the 15800 cuttings.
+* **K1G** continuous geometry: two independent determinant formulas agree; every selected
+  simplex has normalized volume 1; and all 15168 co-occurring simplex pairs are separated
+  by at least one of the 80 nonzero integer normals in {-1,0,1}^4. Therefore every
+  24-piece candidate is a continuous exact cutting of the cube.
 * **K2** the sign classes: each of the 8 label classes holds 24 of the 192 chambers, 0 size
   failures over the 8.
 * **K3** the local law 1, 4, 4, 6, 0 by mismatch pattern, 0 failures over the 1536 pairs,
@@ -287,9 +336,9 @@ standard library only.
   failures over the 192 pieces, support 48.
 * **K9** evenness: every cutting holds an even number of odd-diagonal half-set pieces, 0
   failures over the 15800, with the census 472, 1848, 3384, 4392, 3384, 1848, 472.
-* **K10** the theorem: A2 is the sum of n_w over the odd labels 1, 2, 4, 7, congruent to 2
-  times the hodd-count and to 0 modulo 4, 0 failures over the 15800, with the census 112,
-  1176, 3936, 5352, 3936, 1176, 112.
+* **K10** the theorem: the odd-diagonal count is the sum of n_w over the odd labels 1, 2,
+  4, 7, congruent to 2 times the hodd-count and to 0 modulo 4, 0 failures over the 15800,
+  with the census 112, 1176, 3936, 5352, 3936, 1176, 112.
 * **K11** the first control: dropping 1 chamber from the certificate breaks the per-piece
   parity at exactly 8 pieces, its holders.
 * **K12** the second control: replacing the 6 of the local law by 4 breaks the rule at

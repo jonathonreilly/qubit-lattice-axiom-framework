@@ -1,12 +1,14 @@
 """Physical cell cutting: the odd-diagonal count of a cutting is divisible by four.
 
-Standalone exact runner, standard library only. The preamble rebuilds the unit four-cube cell object from scratch, as in the sibling
-cycles: the five-corner unit-determinant pieces at the adjacency cost floor, the 15800 cuttings of 24 pieces, the 192 pieces that occur
-in them, and the 192 chambers of the twelve-wall cut of the open cell, each piece holding 8 of them and each chamber sitting in 8 pieces.
-A cutting meets every chamber in exactly one piece; that partition property is re-verified here and is the only global input used below.
+Standalone exact runner, standard library only. The preamble rebuilds the unit four-cube cell object from scratch: the five-corner
+unit-determinant pieces at the adjacency cost floor, the 15800 continuous cuttings of 24 pieces, the 192 pieces that occur in them, and
+the 192 chambers of the twelve-wall cut of the open cell, each piece holding 8 of them and each chamber sitting in 8 pieces. Exact
+normalized volumes and integer separating hyperplanes certify the continuous cuttings. A cutting meets every chamber in exactly one
+piece; that chamber partition property is independently re-verified here and is the only global input used by the parity argument.
 
 Put each piece in its minimal naming, start corner v0 below its opposite, and call v0 the diagonal label of the piece. The quantity
-studied is A2(T), the number of pieces of a cutting whose diagonal label has odd weight. The chain has three local ingredients and one
+studied is the odd-diagonal count N_odd_diag(T), the number of pieces of a cutting whose diagonal label has odd weight. The chain has
+three local ingredients and one
 telescoping step. A sign class Y_w, one for each of the eight labels, holds 24 chambers; the count of Y_w inside a single piece is
 1, 4, 4, 6 or 0 according to the mismatch pattern between the piece label and w, which gives, after telescoping over a cutting, the
 identity n_w = 24 - 4 a_w - 4 c_w - 6 q_w and hence n_w congruent to 2 q_w modulo 4. The pieces carrying the six-valued entry at w are
@@ -15,10 +17,12 @@ over the four odd labels is twice the number of odd-diagonal half-set pieces of 
 alone, supported on 20 chambers, has per-piece count congruent to the odd-diagonal half-set indicator modulo 2; telescoping it gives an
 even count of such pieces on every cutting, and the divisibility by four follows.
 
-Gates: K1 object rebuild and the partition property, K2 the sign classes, K3 the local law, K4 the telescoping identity, K5 the q class
-in closed form, K6 the parity transport, K7 the certificate shape, K8 the certificate law, K9 the evenness, K10 the theorem, K11 and K12
-two discriminating perturbations, K13 naming invariance, K14 the coupling. All work is exact over the integers and the rationals; no
-floating point enters any gate. Output: one line per gate, two census lines, the total line, then a resource line."""
+Gates: K1 object rebuild and chamber partition, K1G continuous geometry, K2 the sign classes, K3 the local law, K4 the telescoping
+identity, K5 the q class in closed form, K6 the parity transport, K7 the certificate shape, K8 the certificate law, K9 the evenness,
+K10 the theorem, K11 and K12 two discriminating perturbations, K13 naming invariance, K14 the coupling. All work is exact over the
+integers and the rationals; no floating point enters any gate. Output: one line per gate, two census lines, a resource line, then the
+total line.
+"""
 
 import itertools
 import sys
@@ -91,6 +95,18 @@ def det4(M):
     return tot
 
 
+def det4_leibniz(M):
+    """Independent determinant formula used to cross-check candidate selection."""
+    tot = 0
+    for p in itertools.permutations(range(4)):
+        inv = sum(p[i] > p[j] for i in range(4) for j in range(i + 1, 4))
+        term = 1
+        for r in range(4):
+            term *= M[r][p[r]]
+        tot += (-1 if inv & 1 else 1) * term
+    return tot
+
+
 def inv4(C):
     n = 4
     M = [[FR(C[r][c]) for c in range(n)] + [FR(1 if r == c else 0) for c in range(n)]
@@ -132,10 +148,14 @@ def adjcost(S):
 
 
 CAND = []
+DET_AGREE = True
 for S in itertools.combinations(range(16), 5):
     v0 = CORN[S[0]]
     M = [[CORN[S[j + 1]][r] - v0[r] for j in range(4)] for r in range(4)]
-    if abs(det4(M)) == 1:
+    d4 = det4(M)
+    if d4 != det4_leibniz(M):
+        DET_AGREE = False
+    if abs(d4) == 1:
         CAND.append(S)
 
 NCAND = len(CAND)
@@ -224,10 +244,68 @@ cover_search(0, [])
 NS = len(SOLS)
 SIZES = sorted(set(len(s) for s in SOLS))
 
+
+def mask_search_certificate(masks, sols):
+    """Every emitted candidate is a unique, disjoint full shifted-grid cover."""
+    if len(masks) != NKEPT or any(bits == 0 for bits in masks):
+        return False
+    if len(set(sols)) != len(sols):
+        return False
+    for sol in sols:
+        if len(sol) != 24 or len(set(sol)) != 24:
+            return False
+        covered = 0
+        for t in sol:
+            if masks[t] & covered:
+                return False
+            covered |= masks[t]
+        if covered != UNIV:
+            return False
+    return True
+
+
+MASK_SEARCH_OK = mask_search_certificate(MASK, SOLS)
+
 USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
+
+# Every selected simplex has normalized volume one. Every simplex pair that
+# co-occurs in a candidate cutting is weakly separated by one of the 80 nonzero
+# normals in {-1,0,1}^4, so their interiors are disjoint. Since the 24 simplex
+# volumes sum to the normalized volume 24 of [0,1]^4 and every simplex lies in
+# the cube, each candidate is an exact continuous cutting, not only a grid cover.
+KEPT_DET = []
+for S in KEPT:
+    v0 = CORN[S[0]]
+    matrix = [[CORN[S[j + 1]][r] - v0[r] for j in range(4)] for r in range(4)]
+    KEPT_DET.append(abs(det4_leibniz(matrix)))
+
+CO_PAIRS = sorted(set(pair for cutting in CUT
+                      for pair in itertools.combinations(cutting, 2)))
+SEP_NORMALS = [a for a in itertools.product((-1, 0, 1), repeat=4) if any(a)]
+PIECE_VERTICES = [KEPT[USED[i]] for i in range(NPI)]
+
+
+def vertex_interval(piece, normal):
+    vals = [sum(CORN[v][r] * normal[r] for r in range(4)) for v in piece]
+    return min(vals), max(vals)
+
+
+SEP_INTERVALS = [[vertex_interval(piece, normal) for normal in SEP_NORMALS]
+                 for piece in PIECE_VERTICES]
+PAIR_SEPARATED = all(
+    any(SEP_INTERVALS[i][k][1] <= SEP_INTERVALS[j][k][0]
+        or SEP_INTERVALS[j][k][1] <= SEP_INTERVALS[i][k][0]
+        for k in range(len(SEP_NORMALS)))
+    for i, j in CO_PAIRS
+)
+VOLUME_OK = (all(detnum == 1 for detnum in KEPT_DET)
+             and all(sum(KEPT_DET[t] for t in sol) == 24 for sol in SOLS))
+CONTINUOUS_CUT_OK = (DET_AGREE and MASK_SEARCH_OK and VOLUME_OK
+                     and len(CO_PAIRS) == 15168 and len(SEP_NORMALS) == 80
+                     and PAIR_SEPARATED)
 
 # ------------------------------------------------------------------
 # 2. the paths and their two namings
@@ -477,13 +555,13 @@ for a in range(len(CELL)):
         if set(CELL[a]) & set(CELL[b]):
             DISJ = False
 
-G3 = sorted(set(c for cell in CELL for c in cell))
-G3M = 0
-for c in G3:
-    G3M |= (1 << c)
-NG3 = len(G3)
+CERT_CHAMBERS = sorted(set(c for cell in CELL for c in cell))
+CERT_MASK = 0
+for c in CERT_CHAMBERS:
+    CERT_MASK |= (1 << c)
+NCERT = len(CERT_CHAMBERS)
 
-BADCERT = sum(1 for i in range(NPI) if (popc(G3M & CHM[i]) & 1) != HODD[i])
+BADCERT = sum(1 for i in range(NPI) if (popc(CERT_MASK & CHM[i]) & 1) != HODD[i])
 
 # ------------------------------------------------------------------
 # 9. the per-cutting arithmetic, by a packed count over the eight labels
@@ -511,7 +589,7 @@ for i in range(NPI):
 ODDW = (1, 2, 4, 7)
 BADTEL = 0
 BADEVEN = 0
-BADA2 = 0
+BAD_ODD_DIAG = 0
 BADCOUP = 0
 HCEN = {}
 ACEN = {}
@@ -532,7 +610,7 @@ for s in CUT:
     if h & 1:
         BADEVEN += 1
     if not (a2s == a2d and (a2d - 2 * h) & 3 == 0 and a2d & 3 == 0):
-        BADA2 += 1
+        BAD_ODD_DIAG += 1
     if sum(q[w] for w in ODDW) != h:
         BADCOUP += 1
     bump(HCEN, h)
@@ -547,10 +625,10 @@ ATGT = "0:112 4:1176 8:3936 12:5352 16:3936 20:1176 24:112"
 # 10. the two discriminating perturbations
 # ------------------------------------------------------------------
 
-CDROP = CELL[0][0]
-G3X = G3M & ~(1 << CDROP)
-PBAD = [i for i in range(NPI) if (popc(G3X & CHM[i]) & 1) != HODD[i]]
-PMATCH = (sorted(PBAD) == sorted(HOLD[CDROP]))
+CERT_DROP = CELL[0][0]
+CERT_MUTATION_MASK = CERT_MASK & ~(1 << CERT_DROP)
+PBAD = [i for i in range(NPI) if (popc(CERT_MUTATION_MASK & CHM[i]) & 1) != HODD[i]]
+PMATCH = (sorted(PBAD) == sorted(HOLD[CERT_DROP]))
 
 # ------------------------------------------------------------------
 # 11. naming invariance from the second naming
@@ -582,6 +660,10 @@ gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and NS == 15800 and SIZES == 
      "object: {0} pieces, floor {1}, {2} kept, {3} cuttings of {4}, {5} used, {6} chambers, {7} per piece, {7} holders, {8} bad"
      .format(nd(NCAND), nd(FLOOR), nd(NKEPT), nd(NS), nd(SIZES[0]), nd(NPI), nd(NCH), nd(INCN[0]), nd(BADP)))
 
+gate(CONTINUOUS_CUT_OK, "K1G",
+     "geometry: {0} unit volumes and {1} co-pairs separated by {2} integer normals certify continuous cuttings"
+     .format(nd(NKEPT), nd(len(CO_PAIRS)), nd(len(SEP_NORMALS))))
+
 gate(BADYS == 0 and sorted(set(YSZ)) == [24], "K2",
      "sign classes: each of the {0} label classes Y_w holds {1} of the {2} chambers, size failures {3} of {0}"
      .format(nd(8), nd(YSZ[0]), nd(NCH), nd(BADYS)))
@@ -604,9 +686,9 @@ gate(BADTR == 0 and len(HALF) == 96, "K6",
      " failures {2} of {3}"
      .format(nd(3), nd(2), nd(BADTR), nd(len(HALF))))
 
-gate(DISJ and CSZ == [6, 6, 2, 4, 2] and NG3 == 20 and (NG3 & 1) == 0, "K7",
+gate(DISJ and CSZ == [6, 6, 2, 4, 2] and NCERT == 20 and (NCERT & 1) == 0, "K7",
      "certificate shape: the five clause cells are pairwise disjoint of sizes {0}, total {1} chambers, even parity {2}"
-     .format(", ".join(nd(x) for x in CSZ), nd(NG3), "yes" if (NG3 & 1) == 0 else "no"))
+     .format(", ".join(nd(x) for x in CSZ), nd(NCERT), "yes" if (NCERT & 1) == 0 else "no"))
 
 gate(BADCERT == 0 and NHODD == 48, "K8",
      "certificate law: the parity of the certificate count on a piece equals its odd-diagonal half-set value, failures {0} of {1},"
@@ -617,10 +699,10 @@ gate(BADEVEN == 0 and HCENS == HTGT and sum(HCEN.values()) == NS, "K9",
      "evenness: every cutting holds an even number of odd-diagonal half-set pieces, failures {0} of {1}"
      .format(nd(BADEVEN), nd(NS)))
 
-gate(BADA2 == 0 and ACENS == ATGT and sum(ACEN.values()) == NS, "K10",
-     "theorem: A2 sums n_w over the odd labels {0}, {1}, {2}, {3}, and modulo {4} it is {5} times the odd count and is {6}, failures"
+gate(BAD_ODD_DIAG == 0 and ACENS == ATGT and sum(ACEN.values()) == NS, "K10",
+     "theorem: the odd-diagonal count sums n_w over labels {0}, {1}, {2}, {3}; modulo {4} it is {5} times the odd count and is {6}, failures"
      " {7} of {8}"
-     .format(nd(1), nd(2), nd(4), nd(7), nd(4), nd(2), nd(0), nd(BADA2), nd(NS)))
+     .format(nd(1), nd(2), nd(4), nd(7), nd(4), nd(2), nd(0), nd(BAD_ODD_DIAG), nd(NS)))
 
 gate(len(PBAD) == 8 and PMATCH, "K11",
      "control one: dropping {0} chamber from the certificate breaks the piece parity at exactly {1} pieces, its holders, match {2}"
@@ -640,11 +722,11 @@ gate(BADCOUP == 0, "K14",
      .format(nd(BADCOUP), nd(NS)))
 
 emit("census: odd-diagonal half-set count over the {0} cuttings {1}, sum {0}".format(nd(NS), HCENS))
-emit("census: A2 over the {0} cuttings {1}, sum {0}".format(nd(NS), ACENS))
-emit("TOTAL: PASS={0} FAIL={1}".format(nd(STAT[0]), nd(STAT[1])))
+emit("census: odd-diagonal count over the {0} cuttings {1}, sum {0}".format(nd(NS), ACENS))
 
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 PEAK = RSS // (1024 * 1024) if sys.platform == "darwin" else RSS // 1024
 SECS = int(time.time() - T0)
 emit("resource: under {0} s of the {1} s budget, under {2} MB of the {3} MB budget, {4} characters"
      .format(nd(((SECS // 60) + 1) * 60), nd(AUDIT_TIMEOUT_SEC), nd(((PEAK // 250) + 1) * 250), nd(2500), nd(OUT[0])))
+emit("TOTAL: PASS={0} FAIL={1}".format(nd(STAT[0]), nd(STAT[1])))

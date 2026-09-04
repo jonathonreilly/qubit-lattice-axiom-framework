@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/joint_formation_corner_record_set_keeps_sea_zeros_check_2026_09_03.py
+runner_sha256: 4b611dc3c9807f55335cdc55c962d7d3e38cd88b7a3199fa5e8ea8ddbd0fa48a
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 66.72
+status: ok
+----- stdout -----
+PASS A1 [exact] cube 2x2x2, 8 corners / 12 edge sites / 6 faces: R0-R4 pair by pair, no -I in the face group, k = 5, code dim 2^12/2^5 = 128; each hop term has X-part exactly one edge qubit, so P_S H P_S is the sum of the hops on UNRECORDED sites -- H_R
+PASS A2 [exact] the Kawamoto-Smit signs put flux {-1} on all six faces -- the pi-flux sector -- and H = -sum_e eta_e T_e is Hermitian on the 4096-dimensional record space
+PASS A3 [numerical, 1e-11] the code space (six S_f = +1, dim 128 = the even-N space) is H-invariant to 2.8e-17; the sea has E = -6.928203230276 = -4 sqrt 3, deg 1, gap 3.464101615138 = 2 sqrt 3, sharp N = 4 (mass off: 2.0e-31)
+PASS A4 [exact, 1e-12 zero read] the target, the sea's registration: support 1984 = 62 x 32, 2112 zeros = 1856 charge (N != 4) + 256 cancellation, whose 8 corner patterns are EXACTLY the 8 closed corner stars {v} u N(v), 32 each (min nonzero sea probability 2.17e-04)
+PASS B1 [exact] the five stipulated units: U1 12 edge sites (size 1), U2 8 corner record sets star(v) (3), U3 6 faces (4), U4 8 closed corner stars (9), U5 the one 12-site unit; cstar(v) = E \ star(7 - v)
+PASS B2 [exact] the 16 declared orders for U1-U4 (four per type, written out; no seed) plus U5's cover all 12 sites; events U1 [12, 12, 12, 12], U2 [7, 7, 4, 6], U3 [4, 4, 5, 5], U4 [3, 3, 2, 3], U5 [1] -- means 12.00, 6.00, 4.50, 2.75, 1.00
+PASS B3 [numerical, 1e-12] what ONE unit's own joint Born marginal forbids: 0 charge and 0 cancellation at every U1, U2 and U3 unit -- an edge, a corner record set and a face each see none of the sea's zeros -- while every U4 closed star forbids 448 + 64, and U5 all 1856 + 256
+PASS C1 [numerical, 1e-15] THE CONTROL: with no between-event rule, all 17 declared schedules give support 1984 and ARE the sea's registration -- TV to the sea at most 7.4e-16
+PASS C2 [numerical, 1e-15] and order-independent for every unit type -- max pairwise TV 4e-16 (U1), 4e-16 (U2), 2e-16 (U3), 8e-17 (U4): joint Z-basis conditioning commutes, so what follows is the between-event rule, not the conditioning
+PASS D1 [numerical, 1e-12] site-wise formation (U1) under the unitary tick: support 2240, all 1856 charge zeros kept, 0 of the 256 cancellation zeros kept, TV to the sea 0.324925160534 at the identity order
+PASS D2 [numerical, 1e-12] joint formation on a corner's record set flips it: cancellation zeros kept over the four declared orders are U1 [0, 0, 0, 0], U2 [256, 256, 256, 0], U3 [0, 0, 0, 0], U4 [128, 128, 256, 128], U5 [256] -- all 256 at 3 of 4 corner orders, none at any face order; charge zeros kept everywhere
+PASS D3 [numerical, 1e-12] and two schedules reproduce the sea EXACTLY: U2 evenfirst, the four disjoint corner sets star(0), star(3), star(5), star(6), at TV 1.11e-15; U4 antipodal, cstar(0) then star(7), at TV 7.02e-16; both on support 1984
+PASS D4 [numerical, 1e-12] at every tau tested, (0.1, 0.5, 1.234567, 2.0): both stay at TV < 1e-14 with all 256 cancellation zeros, while U1 and U3 identity keep 0 of the 256 at every one of them
+PASS D5 [numerical, 1e-12] a declared lexicographic sweep, the first 40 permutations of each unit list (no seed): under the unitary tick 4 of 40 U2 orders keep all 256, U3 keeps 0 .. 0, U4 128 .. 128; under relaxation none over 64
+PASS E1 [numerical, 1e-9] THE MECHANISM. After a corner's record set forms jointly the Born-conditioned sea lies in the restricted ground space (G = 1.000000000, deg 1), an exact H_R eigenvector at 8 of 8 outcomes, TV(|psi|^2, Pi/deg) = 0.000000000: relaxation is the IDENTITY there, the unitary a global phase
+PASS E2 [numerical, 1e-9] the closed corner star too, G = 1.000000000 at 448/448, but its ground space is 2-fold degenerate, so Pi/deg gives a rank-2 mixture (F = 0.636894534, Fq = 0.500); an edge (0.962606706, 0/2) and a FACE (0.890431430, 0/16) are not eigenvectors, though the face is larger
+PASS E3 [numerical, 1e-9] along both exact-sea schedules the conditioned state is an H_R eigenvector at EVERY node a between-event step follows: eigen-weight 1.000/1.000/1.000 and 1.000, against 0.000/0.000/0.000/0.000/0.000/0.000/0.000 (U1 identity, first seven) and 0.000/0.079/0.142 (U3 identity)
+PASS E4 [numerical, 1e-11] OPEN, not claimed: the rule-(b) node-support union never leaves N = 4 ({0} outside) and, for the two exact-sea schedules, never leaves the sea's 1984 labels (unions 1984, 1984); yet U2 identity visits 192 cancellation-coset labels en route and still finishes with all 256 zeros -- observed, not explained
+PASS F1 [numerical, 1e-12] under RELAXATION nothing short of the whole cluster keeps more than 64 of the 256: over the 16 declared orders U1 [0, 0, 0, 0], U2 [0, 0, 64, 0], U3 [0, 0, 0, 0], U4 [64, 64, 64, 64], over the sweep at most 64; U5 keeps all 2112 zeros
+PASS F2 [numerical, 1e-12] the 64 that survive under U4 are exactly the FIRST-formed star's coset and its antipode's at all four declared orders ([(0, 7)]): cstar(v)'s nine edges fix the parities on {v} u N(v), and in the sharp-N = 4 sea both all-occupied and all-empty are forced to zero; later stars go to the relaxation
+PASS F3 [numerical, 1e-12] the 'formed first, therefore kept' reading does NOT transfer to the corner unit: under U2 evenfirst, whose first unit is corner0, the surviving cosets are [1, 6], not 0 -- as B3 requires
+PASS F4 [numerical, 1e-12] and the readable charge stays smeared: P(Q = 0) never reaches 1 below U5 -- best 0.841145833 at U3, the 4-site face, against U4's 0.666666667 .. 0.750000000; U5 gives exactly 1.000000000. Bigger units do not sharpen Q monotonically
+PASS G1 [numerical, 1e-12] order dependence shrinks with unit size and never vanishes short of U5: max pairwise TV over the four declared orders, rules (a)/(b), is U1 0.602777777778/0.619386368116, U2 0.461024273/0.286110110, U3 0.562500000/0.506673787, U4 0.250000000000/0.076616282355 -- a LOWER BOUND
+PASS G2 [numerical, 1e-12] and not monotone in the unit size: the 4-site face U3 is MORE order-dependent than the 3-site corner set U2 under both rules (0.562500000 > 0.461024273, 0.506673787 > 0.286110110) -- shape, not size, governs
+SUMMARY: under the unitary tick, records forming together on a corner's record set keep all 256 cancellation zeros that site-wise formation loses, and disjoint corner schedules reproduce the sea exactly at every tau, because the jointly conditioned sea is an exact eigenvector of what remains of the law; under relaxation nothing short of the whole cluster keeps more than 64.
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

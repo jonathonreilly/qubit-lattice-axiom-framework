@@ -398,7 +398,7 @@ with `V=1` the RK point and `V=0.95, 0.90` the tested detunings.
 - Its own limits: "the geometry has no transverse direction and gives no
   result for a three-dimensional photon."
 
-**PR #7959** — branch not recorded in the pack's inputs (extracted note only) — open PR, unlanded.
+**PR #7959** — branch `physics-loop/pure-spin-half-link-model-gapless-quadratic-mode-open-path-projector` (branch name looked up with `gh pr view` on 2026-09-04; not in `inputs/`) — open PR, unlanded.
 - Claims (title): "The pure spin-1/2 link model on the cubic torus is gapless,
   deconfined and unordered at `L <= 12`, with a quadratic transverse mode and a
   flat transverse structure factor."
@@ -516,7 +516,7 @@ with `V=1` the RK point and `V=0.95, 0.90` the tested detunings.
   localizes that mismatch uniquely to the highest-momentum L=8 block";
   "establishes neither a thermodynamic photon pole nor c-squared=U K."
 
-**PR #7963** — branch not recorded in the pack's inputs (extracted note only) — open PR, unlanded. THE INFRARED BOUNDARY.
+**PR #7963** — branch `physics-loop/spin-half-cubic-ice-infrared-maxwell-join-20260904` (branch name looked up with `gh pr view` on 2026-09-04; not in `inputs/`) — open PR, unlanded. THE INFRARED BOUNDARY.
 - Claims (title): "Lower Cubic-Ice Momenta Restore Maxwell Compatibility but
   Expose an Early-Time RK Control Boundary."
 - Numbers: with `L=16,18` joined to the `L=8,10,12,14` ladder, the two

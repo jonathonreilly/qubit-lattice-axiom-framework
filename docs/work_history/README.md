@@ -3,10 +3,10 @@
 This directory is the historical lane for the repo’s older programs, partial
 bridges, and exploratory branches.
 
-The repo now has a different public front door:
-
-- current flagship paper package:
-  [`docs/publication/ci3_z3/README.md`](../publication/ci3_z3/README.md)
+The repo's front door is the key-science index:
+[`docs/KEY_SCIENCE.md`](../KEY_SCIENCE.md). The former flagship paper
+package is deferred (owner decision 2026-09-03) and lives on the archive
+tier at `archive/publication/ci3_z3/` (record, not a claim surface).
 
 ## Purpose
 
@@ -20,13 +20,13 @@ Use work history for:
 ## Rule
 
 Old files remain part of the scientific record, but they are not the public
-claim surface unless they are explicitly pulled into the current publication
-package.
+claim surface unless they are explicitly promoted through the ordinary
+review-loop + audit lanes.
 
 ## Current split
 
-- `docs/publication/ci3_z3/`
-  - active flagship paper surface
+- `archive/publication/ci3_z3/`
+  - the deferred paper package (archive tier; snapshot at deferral)
 - `docs/work_history/`
   - explicit historical bucket
 - `docs/work_history/atomic/`

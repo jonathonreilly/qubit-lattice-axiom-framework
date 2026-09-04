@@ -17,7 +17,7 @@ method by which claims were produced and controlled.
 This lane is separate from the physics claim boundary.
 
 - For the current scientific package, use the publication surfaces in
-  [`docs/publication/ci3_z3/`](./publication/ci3_z3/README.md).
+  `archive/publication/ci3_z3/` (deferred to the archive tier, owner decision 2026-09-03).
 - For the AI/process methodology, use this note and the methodology index in
   [`docs/ai_methodology/README.md`](./ai_methodology/README.md).
 
@@ -129,7 +129,7 @@ upgrading a suggestive route into a theorem.
 
 The package-wide negative boundary is maintained explicitly in:
 
-- [`docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md`](./publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
+- `archive/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md` (deferred package, archive tier)
 
 ### 4.4 No-go production is first-class
 

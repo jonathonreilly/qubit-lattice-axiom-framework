@@ -11,6 +11,6 @@ For current authority use:
 
 - [`docs/work_history/repo/LANE_STATUS_BOARD.md`](../LANE_STATUS_BOARD.md)
 - [`docs/CANONICAL_HARNESS_INDEX.md`](../../../CANONICAL_HARNESS_INDEX.md)
-- [`docs/publication/ci3_z3/PUBLICATION_MATRIX.md`](../../../publication/ci3_z3/PUBLICATION_MATRIX.md)
-- [`docs/publication/ci3_z3/CLAIMS_TABLE.md`](../../../publication/ci3_z3/CLAIMS_TABLE.md)
-- [`docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md`](../../../publication/ci3_z3/DERIVATION_VALIDATION_MAP.md)
+- [`archive/publication/ci3_z3/PUBLICATION_MATRIX.md`](../../../publication/ci3_z3/PUBLICATION_MATRIX.md)
+- [`archive/publication/ci3_z3/CLAIMS_TABLE.md`](../../../publication/ci3_z3/CLAIMS_TABLE.md)
+- [`archive/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md`](../../../publication/ci3_z3/DERIVATION_VALIDATION_MAP.md)

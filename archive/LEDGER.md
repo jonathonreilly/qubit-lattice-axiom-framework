@@ -2444,3 +2444,6 @@ old path to its new one.
 - campaign-hygiene-20260821: hygiene-20260821
 - campaign-opus-direct-20260827: opus-direct-20260827
 - campaign-physics-loops-rollups-202608: physics-loops-rollups-202608
+
+### publication package (deferred)
+- publication_ci3_z3_deferred_package: docs/publication/ci3_z3 -> archive/publication/ci3_z3 (owner deferral 2026-09-03)

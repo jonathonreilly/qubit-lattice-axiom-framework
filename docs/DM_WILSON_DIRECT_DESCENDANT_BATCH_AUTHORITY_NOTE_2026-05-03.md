@@ -20,7 +20,7 @@ This note implements recommendation `2` of
 [`DM_LANE_WEAVE_TRIAGE_2026-05-03.md`](work_history/repo/DM_LANE_WEAVE_TRIAGE_2026-05-03.md)
 (merged via PR `#472`): instead of weaving sixteen closely related
 `DM_WILSON_DIRECT_DESCENDANT_*_THEOREM_NOTE_*.md` rows individually onto
-[`docs/publication/ci3_z3/DERIVATION_ATLAS.md`](publication/ci3_z3/DERIVATION_ATLAS.md)
+`archive/publication/ci3_z3/DERIVATION_ATLAS.md` (deferred package, archive tier)
 section `G. DM and cosmology tools` (which would inflate the DM section with
 closely related route-history rows), record a single bounded support batch pointer
 that catalogs the family as a coherent route-history sub-stack and weave that
@@ -104,7 +104,7 @@ flagship lane closure is re-attempted.
 - atlas authority pointer (already woven; this batch sits underneath it):
   [`DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md`](DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md)
   on
-  [`docs/publication/ci3_z3/DERIVATION_ATLAS.md`](publication/ci3_z3/DERIVATION_ATLAS.md)
+  `archive/publication/ci3_z3/DERIVATION_ATLAS.md` (deferred package, archive tier)
   section `G. DM and cosmology tools`;
 - upstream Wilson-frame anchor:
   [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](LEFT_HANDED_CHARGE_MATCHING_NOTE.md);

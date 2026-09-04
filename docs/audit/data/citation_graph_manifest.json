@@ -1,6 +1,6 @@
 {
  "edge_count": 15764,
- "node_count": 5577,
+ "node_count": 5578,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3095,6 +3095,10 @@
    "out_degree": 0
   },
   "depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "dest_hop_face_plant_occupies_holding_sandwich_cubes_bounded_theorem_note_2026-09-04": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

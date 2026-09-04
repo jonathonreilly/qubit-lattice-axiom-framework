@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent finite-matrix checks for a local occupation Record quench.
+"""Finite-matrix primary checks for a local occupation Record quench.
 
 The runner uses one-particle correlation projectors only.  It constructs the
 initial negative sea by diagonalising the full bipartite Hamiltonian, applies
@@ -467,9 +467,14 @@ def delta_quadrature(lambdas: np.ndarray, weights: np.ndarray) -> tuple[float, f
     weights = np.asarray(weights, dtype=float)
     if lambdas.ndim != 1 or weights.shape != lambdas.shape or len(lambdas) == 0:
         raise ValueError("quadrature requires matching nonempty one-dimensional arrays")
+    if not np.all(np.isfinite(lambdas)) or not np.all(np.isfinite(weights)):
+        raise ValueError("quadrature spectrum and weights must be finite")
     if float(np.min(lambdas)) <= 0.0 or float(np.min(weights)) < 0.0:
         raise ValueError("quadrature spectrum must be positive with nonnegative weights")
-    weights = weights / np.sum(weights)
+    total_weight = float(np.sum(weights))
+    if not np.isfinite(total_weight) or total_weight <= 0.0:
+        raise ValueError("quadrature weights must have positive finite total")
+    weights = weights / total_weight
 
     def integrand(x_value: float) -> float:
         resolvents = 1.0 / (x_value * x_value + lambdas)
@@ -486,9 +491,14 @@ def l_quadrature(lambdas: np.ndarray, weights: np.ndarray) -> tuple[float, float
     weights = np.asarray(weights, dtype=float)
     if lambdas.ndim != 1 or weights.shape != lambdas.shape or len(lambdas) == 0:
         raise ValueError("L quadrature requires matching nonempty one-dimensional arrays")
+    if not np.all(np.isfinite(lambdas)) or not np.all(np.isfinite(weights)):
+        raise ValueError("L quadrature spectrum and weights must be finite")
     if float(np.min(lambdas)) <= 0.0 or float(np.min(weights)) < 0.0:
         raise ValueError("L quadrature spectrum must be positive with nonnegative weights")
-    weights = weights / np.sum(weights)
+    total_weight = float(np.sum(weights))
+    if not np.isfinite(total_weight) or total_weight <= 0.0:
+        raise ValueError("L quadrature weights must have positive finite total")
+    weights = weights / total_weight
 
     def integrand(x_value: float) -> float:
         resolvents = 1.0 / (x_value * x_value + lambdas)
@@ -778,7 +788,6 @@ class Report:
 
 def domain_guard_checks() -> tuple[int, int]:
     accepted = 0
-    expected = 6
     bad_calls = (
         lambda: staggered_cubic_model(3),
         lambda: staggered_cubic_model(2),
@@ -786,13 +795,17 @@ def domain_guard_checks() -> tuple[int, int]:
         lambda: staggered_cubic_model(4, 0.0),
         lambda: validate_q(np.ones((2, 3))),
         lambda: condition_occupations(np.eye(2), (0,), (2,)),
+        lambda: delta_quadrature(np.array([1.0, 2.0]), np.array([0.0, 0.0])),
+        lambda: delta_quadrature(np.array([1.0, np.nan]), np.array([0.5, 0.5])),
+        lambda: l_quadrature(np.array([1.0, 2.0]), np.array([0.0, 0.0])),
+        lambda: l_quadrature(np.array([1.0, 2.0]), np.array([0.5, np.inf])),
     )
     for call in bad_calls:
         try:
             call()
         except ValueError:
             accepted += 1
-    return accepted, expected
+    return accepted, len(bad_calls)
 
 
 def main() -> int:

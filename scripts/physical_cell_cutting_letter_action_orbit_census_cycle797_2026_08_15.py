@@ -1,4 +1,4 @@
-"""Physical cell cutting: the letter action, the orbit census of the interface matrix, the piece-size quantum, and class as composition.
+"""Physical cell cutting: letter action, interface-matrix orbits, and piece-size unit spectrum.
 
 Standalone exact runner. Standard library only, no file input or output, no randomness, integer and exact rational arithmetic only.
 
@@ -6,15 +6,12 @@ The preamble rebuilds the declared finite object from the 16 corners of the unit
 adjacency cost floor, the kept pieces at that floor, the exact 24-piece cuttings, the used pieces, the order-384 group of signed coordinate
 maps of the cell, and the sixteen-letter facet alphabet on the two slots of axis zero. Nothing outside that finite object enters any gate.
 
-The previous cycle showed that exactly the 96 cell maps fixing the first axis carry the wall of 48 interface entries of value 36 to itself,
-transitively, with each entry stabilizer of order 2 equal to that fiber's fold. This cycle reads the letter level. Every cell map is tested
-for an induced letter map: a permutation of the 16 letters together with a slot-swap flag, with both flag values tried. The assignment is
-tested for uniqueness, for the flag law, for faithfulness, for its kernel, and for the homomorphism property at every ordered pair of acting
-maps. The induced action on the 256 ordered letter pairs is decomposed into orbits, the interface matrix is tested for constancy on each,
-the wall is identified with a single orbit and drawn as a graph, every kept piece is tested for a point count that is a multiple of five,
-every cutting for one and the same unit profile, and the light, middle and heavy classes of the previous cycle are matched against the
-piece-size composition of the distinguished exchange. A product-structure hypothesis for the union sizes is tested and refuted.
-Gates G1 to G10, one line each with a few detail lines, then the total line. Any failure exits nonzero.
+Every cell map is tested for an induced letter map: a permutation of the 16 letters together with a slot-swap flag, with both flag values
+tried. The assignment is tested for uniqueness, the flag law, faithfulness, its kernel, and the homomorphism property at every ordered pair
+of acting maps. The induced action on the 256 ordered letter pairs is decomposed into orbits, the interface matrix is tested for constancy
+on each, the 48 value-36 entries are identified with a single orbit and an unordered graph, every kept piece is tested for a point count
+that is a multiple of five, every cutting for the same unit profile, and every equal-union exchange for its union-size profile.
+Nine descriptive gates emit one line each with a few detail lines, then the total line. Any failure exits nonzero.
 """
 
 import itertools
@@ -23,6 +20,11 @@ from collections import Counter
 from fractions import Fraction as FRA
 
 AUDIT_TIMEOUT_SEC = 900
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_LETTER_ACTION_ORBIT_CENSUS_CYCLE797_NOTE_2026-08-15.md",
+    "docs/PHYSICAL_CELL_CUTTING_DIAGONAL_PARITY_CYCLE782_NOTE_2026-08-14.md",
+    "scripts/physical_cell_cutting_diagonal_parity_cycle782_2026_08_14.py",
+)
 
 OUT = [0]
 
@@ -255,7 +257,7 @@ def imgof(pmp, IMG, i):
     return j
 
 
-# ---------------------------------------------- the alphabet, the interface matrix and the wall
+# ---------------------------------------------- the alphabet, the interface matrix and the value-36 set
 
 PAIROF = [(KEY[i][(0, 0)], KEY[i][(0, 1)]) for i in range(NS)]
 JC = Counter(PAIROF)
@@ -272,7 +274,7 @@ FS = [set(F) for F in FL]
 EIDX = dict((e, i) for i, e in enumerate(E36))
 IDS = tuple(range(NL))
 
-# ============================================== G1 the induced letter map of every cell map, both flag values tried
+# ============================================== LETTER_MAP: induced maps, with both flag values tried
 
 FOLD = [None] * NF
 STCNT = [0] * NF
@@ -338,13 +340,13 @@ OTHBAD = sum(NSOLC[k] for k in NSOLC if (not k[0]) and k[1] != 0)
 
 gate(len(CAND) == 2672 and FLOOR == 6 and NK == 400 and NS == 15800 and PSIZE == 1 and CSIZE == 24 and NU == 192
      and len(G384) == 384 and NL == 16 and TRC == 2000 and N36 == 48 and NF == 48 and DEFECT == 0
-     and FIXONE == 96 and FIXBAD == 0 and OTHNIL == 288 and OTHBAD == 0, "G1",
+     and FIXONE == 96 and FIXBAD == 0 and OTHNIL == 288 and OTHBAD == 0, "LETTER_MAP",
      "of the {0} cell maps exactly {1} induce a letter map, each with one flag value, and the other {2} induce none for either flag"
      .format(len(G384), FIXONE, OTHNIL))
-emit("G1 detail: declared cell: {0} candidates, floor {1}, {2} kept, {3} cuttings of {4}, {5} used, {6} letters, trace {7}"
+emit("LETTER_MAP detail: cell has {0} candidates, floor {1}, {2} kept, {3} cuttings of {4}, {5} used, {6} letters, trace {7}"
      .format(len(CAND), FLOOR, NK, NS, CSIZE, NU, NL, TRC))
 
-# ============================================== G2 the flag law, faithfulness, the kernel of the letter permutation
+# ============================================== FAITHFUL_ACTION: flag law, faithfulness and kernel
 
 ACTG = [g for g in G384 if g[0][0] == 0]
 SWOK = sum(1 for g in ACTG if g in LMAP and LMAP[g][1] == (g[1] & 1))
@@ -353,13 +355,13 @@ KER = sorted(g for g in ACTG if g in LMAP and LMAP[g][0] == IDS)
 SIGIM = len(set(LMAP[g][0] for g in ACTG if g in LMAP))
 KEROK = KER == [GID, FLIP1] and LMAP[GID][1] == 0 and LMAP[FLIP1][1] == 1
 
-gate(len(ACTG) == 96 and SWOK == 96 and DISTP == 96 and len(KER) == 2 and KEROK and SIGIM == 48, "G2",
-     "the flag is bit zero of the flip mask at all {0} acting maps, the {0} letter maps are pairwise distinct, and the kernel has size {1}"
+gate(len(ACTG) == 96 and SWOK == 96 and DISTP == 96 and len(KER) == 2 and KEROK and SIGIM == 48, "FAITHFUL_ACTION",
+     "all {0} flags equal flip bit zero; all maps are distinct; permutation kernel size {1}"
      .format(len(ACTG), len(KER)))
-emit("G2 detail: the kernel is the identity with flag {0} and the pure first-axis flip with flag {1}, so the permutation image has order {2}"
+emit("FAITHFUL_ACTION detail: kernel flags are {0} and {1}; the permutation image has order {2}"
      .format(LMAP[GID][1], LMAP[FLIP1][1], SIGIM))
 
-# ============================================== G3 the assignment is a homomorphism at every ordered pair
+# ============================================== HOMOMORPHISM: every ordered pair
 
 HOM = 0
 for g in ACTG:
@@ -372,11 +374,11 @@ for g in ACTG:
         if e[0] == tuple(sg[sh[x]] for x in range(NL)) and e[1] == (wg ^ wh):
             HOM += 1
 
-gate(HOM == 9216 and len(ACTG) * len(ACTG) == 9216, "G3",
-     "at all {0} ordered pairs of acting maps the letter permutation composes in the order the maps are applied and the flags add"
+gate(HOM == 9216 and len(ACTG) * len(ACTG) == 9216, "HOMOMORPHISM",
+     "all {0} ordered pairs obey permutation composition and flag addition"
      .format(HOM))
 
-# ============================================== G4 the interface matrix is symmetric and equivariant
+# ============================================== MATRIX_EQUIVARIANCE: symmetry and equivariance
 
 SYM = sum(1 for a in range(NL) for b in range(NL) if TRM[a][b] == TRM[b][a])
 EQV = 0
@@ -391,11 +393,11 @@ for g in ACTG:
     if cc == NL * NL:
         EQV += 1
 
-gate(SYM == 256 and NL * NL == 256 and EQV == 96, "G4",
-     "the interface matrix is symmetric at all {0} entries and equivariant under all {1} acting maps, with slots swapped when the flag is set"
+gate(SYM == 256 and NL * NL == 256 and EQV == 96, "MATRIX_EQUIVARIANCE",
+     "all {0} entries are symmetric and all {1} acting maps are equivariant"
      .format(SYM, EQV))
 
-# ============================================== G5 the letters fall into two orbits
+# ============================================== LETTER_ORBITS: two letter orbits
 
 LPAR = list(range(NL))
 
@@ -429,15 +431,15 @@ DGS = sorted(set(TRM[a][a] for a in SML))
 
 gate(len(LOS) == 2 and len(BIG) == 12 and len(SML) == 4 and BIG == WLET and SML == NWLET
      and BIG == [0, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14] and SML == [1, 6, 8, 15]
-     and RSB == [862] and RSS == [1364] and DGB == [100] and DGS == [200] and TRC == 2000 and NL == 16, "G5",
-     "the {0} letters fall into exactly {1} orbits of sizes {2} and {3}, and the size {2} orbit is exactly the set of letters of the wall"
+     and RSB == [862] and RSS == [1364] and DGB == [100] and DGS == [200] and TRC == 2000 and NL == 16, "LETTER_ORBITS",
+     "the {0} letters have {1} orbits of sizes {2} and {3}; the larger is exactly the value-36 incident set"
      .format(NL, len(LOS), len(BIG), len(SML)))
-emit("G5 detail: row sums are {0} on the {1} wall letters {2} and {3} on the others {4}"
+emit("LETTER_ORBITS detail: row sums are {0} on the {1} incident letters {2} and {3} on the others {4}"
      .format(RSB[0], len(BIG), BIG, RSS[0], SML))
-emit("G5 detail: diagonal entries are {0} on the wall letters and {1} on the others, and the trace is {2}"
+emit("LETTER_ORBITS detail: diagonal entries are {0} and {1}; trace {2}"
      .format(DGB[0], DGS[0], TRC))
 
-# ============================================== G6 the orbit census of the 256 ordered letter pairs
+# ============================================== PAIR_ORBITS: census of the 256 ordered letter pairs
 
 NP2 = NL * NL
 PPAR = list(range(NP2))
@@ -485,17 +487,17 @@ E18OK = (len(O18) == 2 and TR18 and [len(e) for e in ED] == [6, 6] and not set(E
 
 gate(len(OV) == 10 and OV == ANCOV and CONST == 10 and len(VALS) == 9 and OPV[18] == 2
      and sorted(OPV[v] for v in VALS if v != 18) == [1] * 8 and dict(ECEN) == ANCEC and WSUM == 15800
-     and sum(ECEN[v] for v in ECEN) == 256 and E18OK, "G6",
+     and sum(ECEN[v] for v in ECEN) == 256 and E18OK, "PAIR_ORBITS",
      "the {0} ordered letter pairs fall into exactly {1} orbits, the matrix is constant on each, and its {0} entries sum to {2}"
      .format(NP2, len(OV), WSUM))
-emit("G6 detail: orbit sizes with their values {0}".format(OV))
-emit("G6 detail: the value {0} alone carries {1} orbits, each held by the transpose, giving {2} unordered pairs each"
+emit("PAIR_ORBITS detail: orbit sizes with values {0}".format(OV))
+emit("PAIR_ORBITS detail: value {0} has {1} transpose-held orbits with {2} unordered pairs each"
      .format(18, OPV[18], len(ED[0])))
-emit("G6 detail: the first orbit at that value is {0}".format(ED[0]))
-emit("G6 detail: the second orbit at that value is {0}".format(ED[1]))
-emit("G6 detail: the value census over the {0} entries is {1}".format(NP2, dshow(ECEN)))
+emit("PAIR_ORBITS detail: first value-18 orbit {0}".format(ED[0]))
+emit("PAIR_ORBITS detail: second value-18 orbit {0}".format(ED[1]))
+emit("PAIR_ORBITS detail: value census over {0} entries {1}".format(NP2, dshow(ECEN)))
 
-# ============================================== G7 the wall is the orbit at value 36, and a graph
+# ============================================== VALUE36_GRAPH: one orbit and an unordered graph
 
 W36 = set(a * NL + b for (a, b) in E36)
 O36 = [set(mem) for s, v, mem in ORBL if v == 36]
@@ -515,13 +517,13 @@ for (a, b) in UNW:
 DEGV = sorted(set(DEG.values()))
 
 gate(len(O36) == 1 and O36[0] == W36 and len(W36) == 48 and PF == 4608 and PF == len(ACTG) * NF
-     and len(UNW) == 24 and sorted(DEG) == WLET and DEGV == [4], "G7",
-     "the {0} wall entries at value {1} are exactly one orbit, and the letter pair formula gives the induced entry map at all {2} pairs"
+     and len(UNW) == 24 and sorted(DEG) == WLET and DEGV == [4], "VALUE36_GRAPH",
+     "the {0} value-{1} entries are one orbit and the letter formula gives all {2} induced entry maps"
      .format(len(W36), 36, PF))
-emit("G7 detail: unordered the wall is {0} edges on the {1} wall letters, and every one of those letters has degree exactly {2}"
+emit("VALUE36_GRAPH detail: unordered graph has {0} edges on {1} incident letters, each of degree {2}"
      .format(len(UNW), len(WLET), DEGV[0]))
 
-# ============================================== G8 the piece-size quantum and the constant profile
+# ============================================== PIECE_PROFILE: piece-size unit spectrum and cutting profile
 
 PSZ = [popc(MASK[t]) for t in range(NK)]
 UNIT = [0] * NK
@@ -541,14 +543,14 @@ TUNIT = sum(k * n for k, n in ONEP)
 gate(DIVOK == NK and NK == 400 and SPEC == [1, 3, 7, 14] and sum(SPEC) == 25
      and dict(CKEPT) == {1: 24, 3: 176, 7: 176, 14: 24} and dict(CUSED) == {1: 8, 3: 88, 7: 88, 14: 8}
      and len(PROF) == 1 and ONEP == ((1, 1), (3, 11), (7, 11), (14, 1)) and TUNIT == 125
-     and TUNIT * 5 == NPTS and NPTS == 625 and NS == 15800 and NU == 192, "G8",
+     and TUNIT * 5 == NPTS and NPTS == 625 and NS == 15800 and NU == 192, "PIECE_PROFILE",
      "every one of the {0} kept pieces has a point count of exactly {1} times its unit, and the unit spectrum {2} sums to {3}"
      .format(NK, 5, SPEC, sum(SPEC)))
-emit("G8 detail: the unit census over the kept pieces is {0} and over the {1} used pieces is {2}"
+emit("PIECE_PROFILE detail: kept unit census {0}; used {1}-piece census {2}"
      .format(dshow(CKEPT), NU, dshow(CUSED)))
-emit("G8 detail: all {0} cuttings carry one and the same profile, {1} piece of unit {2}, {3} of unit {4}, {3} of unit {5}, {1} of unit {6}"
+emit("PIECE_PROFILE detail: all {0} cuttings have counts {1} at unit {2}, {3} at {4}, {3} at {5}, {1} at {6}"
      .format(NS, 1, 1, 11, 3, 7, 14))
-emit("G8 detail: that profile totals {0} units, that is {1} points, the whole sample grid".format(TUNIT, TUNIT * 5))
+emit("PIECE_PROFILE detail: profile totals {0} units = {1} points, the whole grid".format(TUNIT, TUNIT * 5))
 
 # ============================================== the fold two-orbit tables and the fiber instances
 
@@ -626,7 +628,7 @@ def halfprof(d, m):
 
 D1 = [instance(f, MASK) for f in range(NF)]
 
-# ============================================== G9 the class of a fiber is the piece-size composition of its distinguished exchange
+# ============================================== EXCHANGE_PROFILE: unit profiles by union size
 
 NROW = sorted(set(d["nr"] for d in D1))
 NEXC = sorted(set(len(d["spl"]) for d in D1))
@@ -646,81 +648,17 @@ for f in range(NF):
     B2N[len(two)] += 1
     if len(two) == 1:
         B2[f] = d["spl"][two[0]][2]
-LANC = [(2, 12), (4, 14), (5, 13), (7, 11)]
-HANC = [(2, 3), (4, 7), (10, 11), (12, 13)]
-ANCU = {}
-for f in range(NF):
-    e = tuple(sorted(E36[f]))
-    ANCU[f] = 50 if e in LANC else (175 if e in HANC else 100)
-AGREE = sum(1 for f in range(NF) if f in B2 and B2[f] == ANCU[f])
 CEN = Counter(B2[f] for f in B2)
 
 gate(NROW == [40] and NEXC == [4] and BADP == 0 and NCHK == NF * 4 and dict(B2N) == {1: NF}
-     and AGREE == NF and NF == 48 and dict(CEN) == {50: 8, 100: 32, 175: 8}
-     and sorted(NORB) == [200] and sorted(set(len(d["held"]) for d in D1)) == [14], "G9",
-     "over the {0} rows of every one of the {1} fibers, the half unit profiles of all {2} equal-union exchanges follow the union size"
+     and NF == 48 and dict(CEN) == {50: 8, 100: 32, 175: 8}
+     and sorted(NORB) == [200] and sorted(set(len(d["held"]) for d in D1)) == [14], "EXCHANGE_PROFILE",
+     "all {2} equal-union exchanges across {1} fibers follow the union-size half-profile law"
      .format(NROW[0], NF, NCHK))
-emit("G9 detail: union {0} gives halves {1}, union {2} gives {3}, union {4} gives {5}, with {6} exceptions"
+emit("EXCHANGE_PROFILE detail: unions {0}, {2}, {4} give halves {1}, {3}, {5}; exceptions {6}"
      .format(50, EXPP[50][0], 100, EXPP[100][0], 175, EXPP[175][0], BADP))
-emit("G9 detail: each fiber has exactly {0} exchange of broken count {1}, and its union size census over the {2} fibers is {3}"
+emit("EXCHANGE_PROFILE detail: one broken-count-{1} exchange per fiber; {2}-fiber union census {3}"
      .format(1, 2, NF, dshow(CEN)))
-emit("G9 detail: that census matches the light, middle and heavy letter pair lists of the previous cycle at {0} of {0} fibers".format(NF))
-
-# ============================================== G10 the product-structure hypothesis, tested and refuted
-
-AXP = sorted(itertools.combinations(range(4), 2))
-CP = []
-for (i, j) in AXP:
-    tab = [0] * NPTS
-    for p in range(NPTS):
-        q, c3 = divmod(p, RSTEP)
-        q, c2 = divmod(q, RSTEP)
-        c0, c1 = divmod(q, RSTEP)
-        cs = (c0, c1, c2, c3)
-        tab[p] = cs[i] * RSTEP + cs[j]
-    CP.append(tab)
-
-
-def factorizes(supm, ap):
-    """True when the point set factorizes as a base on the given axis pair times the full five by five square on the other two axes."""
-    cnt = {}
-    m = supm
-    while m:
-        low = m & (-m)
-        k = CP[ap][low.bit_length() - 1]
-        cnt[k] = cnt.get(k, 0) + 1
-        m ^= low
-    return len(cnt) > 0 and all(v == RSTEP * RSTEP for v in cnt.values())
-
-
-FACU = 0
-FACR = 0
-NUT = 0
-NRT = 0
-for f in range(NF):
-    d = D1[f]
-    for dv in d["spl"]:
-        uu = d["spl"][dv][3]
-        for ap in range(len(AXP)):
-            NUT += 1
-            if factorizes(uu, ap):
-                FACU += 1
-    for i in range(d["nr"]):
-        for ap in range(len(AXP)):
-            NRT += 1
-            if factorizes(d["sup"][i], ap):
-                FACR += 1
-
-CTRL = sum(1 for ap in range(len(AXP)) if factorizes(UNIV, ap))
-
-gate(len(AXP) == 6 and RSTEP * RSTEP == 25 and FACU == 0 and FACR == 0 and NUT == NF * 4 * 6 and NRT == NF * 40 * 6
-     and CTRL == len(AXP), "G10",
-     "over all {0} axis pairs no exchange union factorizes as a base times the full {1} point square: {2} of {3} unions factorize"
-     .format(len(AXP), RSTEP * RSTEP, FACU, NUT))
-emit("G10 detail: and no single row support factorizes either, {0} of {1} tested, so the union sizes are piece-size accounting"
-     .format(FACR, NRT))
-emit("G10 detail: the same test on the whole sample grid returns a factorization on all {0} of {0} axis pairs, so the test can succeed"
-     .format(CTRL))
 
 emit("TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1]))
 if STAT[1]:

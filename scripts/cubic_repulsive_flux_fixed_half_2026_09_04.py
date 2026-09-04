@@ -230,6 +230,7 @@ def link(coord: tuple[int, int, int], axis: int, lengths: tuple[int, int, int],
 
 
 def ks_hopping(lengths: tuple[int, int, int], twists: tuple[int, int, int]) -> np.ndarray:
+    validate_domain(lengths, 0.0)
     volume = int(np.prod(lengths))
     h = np.zeros((volume, volume), dtype=float)
     for coord in itertools.product(*(range(n) for n in lengths)):
@@ -293,6 +294,7 @@ def undirected_edge(i: int, j: int) -> tuple[int, int]:
 
 
 def geometry_certificate(lengths: tuple[int, int, int]) -> tuple[bool, int, int]:
+    validate_domain(lengths, 0.0)
     coords = list(itertools.product(*(range(n) for n in lengths)))
     edges = {undirected_edge(site_index(c, lengths), site_index(step(c, a, lengths), lengths))
              for c in coords for a in range(3)}
@@ -348,8 +350,9 @@ def check_tori(gates: Gates) -> None:
         plaquettes += pc; wilsons += wc
         spectrum_residual = max(spectrum_residual, np.max(np.abs(
             np.linalg.eigvalsh(ks_hopping(lengths, twists)) - bloch_spectrum(lengths, twists))))
-    gates.check("KS plaquettes and Wilson loops", max(flux_residual, wilson_residual) < TOL,
-                f"fields={len(fields)} plaquettes={plaquettes} loops={wilsons} residual=0")
+    flux_wilson = max(flux_residual, wilson_residual)
+    gates.check("KS plaquettes and Wilson loops", flux_wilson < TOL,
+                f"fields={len(fields)} plaquettes={plaquettes} loops={wilsons} residual={flux_wilson:.3e}")
     gates.check("KS direct/Bloch spectra", spectrum_residual < TOL,
                 f"all8twists=4^3,6^3 max_residual={spectrum_residual:.3e}")
     gap_residual, canonical_min = 0.0, np.inf
@@ -386,13 +389,18 @@ def check_boundaries(gates: Gates) -> None:
     gates.check("fixed-N versus full-Fock centering", max(residuals) < TOL and shifts[0] != shifts[1],
                 f"cube shifts N=2:{shifts[0]:g}, N=4:{shifts[1]:g} max_res={max(residuals):.2e}")
     rejected = 0
-    for lengths, interaction in (((3, 4, 4), 1.0), ((2, 4, 4), 1.0), ((4, 4, 4), -0.1)):
+    constructors = (lambda lengths: ks_hopping(lengths, (1, 1, 1)), geometry_certificate)
+    for constructor, lengths in itertools.product(constructors, ((3, 4, 4), (2, 4, 4))):
         try:
-            validate_domain(lengths, interaction)
+            constructor(lengths)
         except ValueError:
             rejected += 1
-    gates.check("domain guards", rejected == 3,
-                f"rejected={rejected}/3 (odd,length2,V<0)")
+    try:
+        validate_domain((4, 4, 4), -0.1)
+    except ValueError:
+        rejected += 1
+    gates.check("domain guards", rejected == 5,
+                f"rejected={rejected}/5 (KS/geometry odd,length2; V<0)")
 
 
 def main() -> int:

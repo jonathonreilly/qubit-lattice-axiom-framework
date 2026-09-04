@@ -47,6 +47,13 @@ with `archive/PATHMAP.tsv` mapping every moved path. The freeze evidence
 `archive/campaigns/densify-freeze-20260904/`. Consolidated-PR history:
 closed PRs labeled `work-history`, indexed in `archive/LEDGER.md`.
 
+## Deferred decisions
+
+Owner decisions stored away until needed live in
+[`repo/DEFERRED_DECISIONS.md`](repo/DEFERRED_DECISIONS.md) with their
+standing defaults and wake conditions. A parked decision is off the active
+bar: do not re-raise it absent a fired wake condition.
+
 ## Live work
 
 Live campaign records and AI planning surfaces live on the standing

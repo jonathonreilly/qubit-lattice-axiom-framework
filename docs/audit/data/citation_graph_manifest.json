@@ -1,6 +1,6 @@
 {
- "edge_count": 11858,
- "node_count": 4755,
+ "edge_count": 11859,
+ "node_count": 4756,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -9931,8 +9931,8 @@
    "out_degree": 5
   },
   "key_science": {
-   "deps_hash": "2b73f7f79249",
-   "out_degree": 9
+   "deps_hash": "10280328eef4",
+   "out_degree": 10
   },
   "key_terminology": {
    "deps_hash": "1c5d14fd0659",
@@ -14937,6 +14937,10 @@
   "repo.controlled_vocabulary": {
    "deps_hash": "14354d83e2fa",
    "out_degree": 2
+  },
+  "repo.deferred_decisions": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "repo.four_axiom_narrative_scrub_plan_2026-07-04": {
    "deps_hash": "e3b0c44298fc",

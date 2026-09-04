@@ -1,0 +1,24 @@
+runner: scripts/finite_edge_qubit_cycle_space_conditioning_and_cocircuit_forcing_check_2026_09_02.py
+runner_sha256: 652785831aa0c277e29bf656a96afd3535d0d2d58e3de41a121a39da679a5fb1
+evidence_class: exact finite enumeration over F2 and rational probabilities
+
+PASS A/cube [exact] connected cycle space has dimension E-V+1=5 and support 32
+PASS B/cube [exact] face boundaries have rank 5 and span the full cycle space
+PASS C/cube [exact] cut space has dimension V-1 and 63 inclusion-minimal nonzero cuts
+PASS D/cube [exact] the complete coordinate-marginal profile is [Fraction(1, 2)]
+PASS A/grid3x3 [exact] connected cycle space has dimension E-V+1=4 and support 16
+PASS B/grid3x3 [exact] face boundaries have rank 4 and span the full cycle space
+PASS C/grid3x3 [exact] cut space has dimension V-1 and 53 inclusion-minimal nonzero cuts
+PASS D/grid3x3 [exact] the complete coordinate-marginal profile is [Fraction(1, 2)]
+PASS A/grid3x3+pendant [exact] connected cycle space has dimension E-V+1=4 and support 16
+PASS B/grid3x3+pendant [exact] face boundaries have rank 4 and span the full cycle space
+PASS C/grid3x3+pendant [exact] cut space has dimension V-1 and 54 inclusion-minimal nonzero cuts
+PASS D/grid3x3+pendant [exact] the complete coordinate-marginal profile is [Fraction(0, 1), Fraction(1, 2)]
+PASS E/cube [exact] one observed edge leaves every other edge marginal at 1/2
+PASS F/cube [exact] full two-observation census is 96 adjacent cases forcing one edge and 168 disjoint cases forcing none
+PASS G/all [exact] all 102400 target/observed-set masks satisfy forcing iff a cocircuit through the target is contained
+PASS H/cube [exact] the three disjoint observed edges (1,5),(2,6),(3,7) force (0,4) in all eight value assignments
+PASS I/all [exact] coordinate-projector conditioning is order-independent for every ordered value pair
+PASS J/pendant [exact] the bridge edge is fixed to zero while all other edge marginals are 1/2
+PASS K/mutations [exact] rank, support, marginal value/profile, cocircuit, order, and local-only forcing mutants are all rejected
+TOTAL: PASS=19 FAIL=0

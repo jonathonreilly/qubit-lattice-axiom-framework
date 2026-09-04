@@ -30,6 +30,7 @@ import time
 from dataclasses import dataclass
 
 import numpy as np
+from scipy.linalg import expm
 from scipy.stats import beta as beta_distribution
 from scipy.stats import chi2
 
@@ -181,6 +182,23 @@ def two_slice_log_weight(two_slice_links: np.ndarray, beta: float) -> float:
     return float((beta / 6.0) * spatial + (beta / 3.0) * mixed)
 
 
+def two_slice_local_log_weight(
+    two_slice_links: np.ndarray,
+    tau: int,
+    link_id: int,
+    beta: float,
+) -> float:
+    """All action terms changed by one spatial-link proposal."""
+    spatial = sum(
+        spatial_real_trace(two_slice_links[tau], face_id)
+        for face_id in LINK_TO_FACES[link_id]
+    )
+    return float(
+        (beta / 6.0) * spatial
+        + (beta / 3.0) * mixed_real_trace(two_slice_links, link_id)
+    )
+
+
 def two_slice_sweep(
     links: np.ndarray,
     rng: np.random.Generator,
@@ -193,18 +211,10 @@ def two_slice_sweep(
     for flat in rng.permutation(2 * nlinks):
         tau, link_id = divmod(int(flat), nlinks)
         old = links[tau, link_id].copy()
-        old_local = (beta / 6.0) * sum(
-            spatial_real_trace(links[tau], face_id)
-            for face_id in LINK_TO_FACES[link_id]
-        )
-        old_local += (beta / 3.0) * mixed_real_trace(links, link_id)
+        old_local = two_slice_local_log_weight(links, tau, link_id, beta)
 
         links[tau, link_id] = random_su2_subgroup_step(rng, epsilon) @ old
-        new_local = (beta / 6.0) * sum(
-            spatial_real_trace(links[tau], face_id)
-            for face_id in LINK_TO_FACES[link_id]
-        )
-        new_local += (beta / 3.0) * mixed_real_trace(links, link_id)
+        new_local = two_slice_local_log_weight(links, tau, link_id, beta)
         delta = float(new_local - old_local)
         if delta >= 0.0 or rng.random() < math.exp(delta):
             accepted += 1
@@ -223,12 +233,21 @@ def character_table(traces: np.ndarray, weights: tuple[Weight, ...]) -> np.ndarr
     )
 
 
+def character_cross_moment(
+    incoming: np.ndarray, outgoing: np.ndarray
+) -> np.ndarray:
+    """Outgoing-conjugate cross moment used by the production sampler."""
+    if incoming.shape != outgoing.shape or len(incoming) == 0:
+        raise ValueError("incoming and outgoing character tables must align")
+    return outgoing.conj().T @ incoming / len(incoming)
+
+
 def two_slice_character_matrix(
     links: np.ndarray, weights: tuple[Weight, ...]
 ) -> np.ndarray:
     incoming = character_table(all_face_traces(links[0]), weights)
     outgoing = character_table(all_face_traces(links[1]), weights)
-    return outgoing.conj().T @ incoming / len(FACES)
+    return character_cross_moment(incoming, outgoing)
 
 
 def static_marked_deletion_observable(
@@ -290,7 +309,7 @@ def run_two_slice_chain(
             traces1 = all_face_traces(links[1])
             incoming = character_table(traces0, weights)
             outgoing = character_table(traces1, weights)
-            samples.append(outgoing.conj().T @ incoming / len(FACES))
+            samples.append(character_cross_moment(incoming, outgoing))
             spatial_plaquettes.append(
                 float(np.mean(np.concatenate((traces0.real, traces1.real))) / 3.0)
             )
@@ -704,6 +723,103 @@ def maximum_ratio_autocorrelation(
     return maximum
 
 
+def stratified_block_resample(
+    blocks: np.ndarray,
+    blocks_per_chain: int,
+    rng: np.random.Generator,
+) -> np.ndarray:
+    """Resample within each chain without mixing chain strata."""
+    by_chain = blocks.reshape(CHAINS, blocks_per_chain, *blocks.shape[1:])
+    indices = rng.integers(
+        0, blocks_per_chain, size=(CHAINS, blocks_per_chain)
+    )
+    chain_index = np.arange(CHAINS)[:, None]
+    return by_chain[chain_index, indices].reshape(-1, *blocks.shape[1:])
+
+
+def null_centered_residual(
+    resampled_residual: np.ndarray, observed_residual: np.ndarray
+) -> np.ndarray:
+    return resampled_residual - observed_residual
+
+
+def bootstrap_tail_summary(
+    exceeded: int, replicates: int
+) -> tuple[float, float]:
+    p_value = (exceeded + 1.0) / (replicates + 1.0)
+    upper_95 = (
+        float(beta_distribution.ppf(0.95, exceeded + 1, replicates - exceeded))
+        if exceeded < replicates
+        else 1.0
+    )
+    return p_value, upper_95
+
+
+def rejection_certificate(
+    certifying_protocol: bool,
+    chain_health: bool,
+    covariance_health: bool,
+    auxiliary_shift_z: float,
+    bootstrap_exceeded: int,
+    bootstrap_rank_failures: int,
+    bootstrap_upper_95: float,
+) -> bool:
+    return bool(
+        certifying_protocol
+        and chain_health
+        and covariance_health
+        and auxiliary_shift_z < 2.0
+        and bootstrap_exceeded == 0
+        and bootstrap_rank_failures == 0
+        and bootstrap_upper_95 < PRIMARY_P_FLOOR
+    )
+
+
+def blocked_sampling_health(
+    finite_samples: bool,
+    full_block_count: int,
+    static_block_count: int,
+    full_acceptance: np.ndarray,
+    static_acceptance: np.ndarray,
+    full_block_size: int,
+    static_block_size: int,
+    full_tau: float,
+    static_tau: float,
+    config: Config,
+) -> bool:
+    return bool(
+        finite_samples
+        and full_block_count == CHAINS * config.blocks_per_chain
+        and static_block_count == CHAINS * config.blocks_per_chain
+        and np.all((full_acceptance > 0.25) & (full_acceptance < 0.80))
+        and np.all((static_acceptance > 0.25) & (static_acceptance < 0.80))
+        and (
+            config.pilot
+            or (
+                full_block_size > 10.0 * full_tau
+                and static_block_size > 10.0 * static_tau
+            )
+        )
+    )
+
+
+def chain_agreement_health(full_chain_z: float, static_chain_z: float) -> bool:
+    return bool(full_chain_z < 5.0 and static_chain_z < 5.0)
+
+
+def cutoff_stabilized(auxiliary_shift_z: float) -> bool:
+    return bool(auxiliary_shift_z < 2.0)
+
+
+def covariance_resolved(metric: CovarianceMetric, expected_dimension: int) -> bool:
+    return bool(
+        metric.psd
+        and metric.dimension == expected_dimension
+        and metric.rank == expected_dimension
+        and metric.null_residual < 1.0e-8
+    )
+
+
 def null_centered_block_bootstrap(
     full_blocks: np.ndarray,
     full_weights: tuple[Weight, ...],
@@ -718,28 +834,15 @@ def null_centered_block_bootstrap(
     """Null-centered, replicate-studentized stratified two-ensemble bootstrap."""
     observed = symmetry_vector(analysis.residual, target_weights)
     observed_statistic = analysis.metric.chi_square
-    full_by_chain = full_blocks.reshape(
-        CHAINS, blocks_per_chain, *full_blocks.shape[1:]
-    )
-    static_by_chain = static_blocks.reshape(
-        CHAINS, blocks_per_chain, *static_blocks.shape[1:]
-    )
     rng = np.random.default_rng(BOOTSTRAP_SEED)
     exceeded = 0
     rank_failures = 0
-    chain_index = np.arange(CHAINS)[:, None]
     for _ in range(replicates):
-        full_indices = rng.integers(
-            0, blocks_per_chain, size=(CHAINS, blocks_per_chain)
+        full_resample = stratified_block_resample(
+            full_blocks, blocks_per_chain, rng
         )
-        static_indices = rng.integers(
-            0, blocks_per_chain, size=(CHAINS, blocks_per_chain)
-        )
-        full_resample = full_by_chain[chain_index, full_indices].reshape(
-            -1, *full_blocks.shape[1:]
-        )
-        static_resample = static_by_chain[chain_index, static_indices].reshape(
-            -1, *static_blocks.shape[1:]
+        static_resample = stratified_block_resample(
+            static_blocks, blocks_per_chain, rng
         )
         replicate = forward_analysis(
             full_resample,
@@ -750,7 +853,7 @@ def null_centered_block_bootstrap(
             measurement_weights=target_weights,
         )
         resampled = symmetry_vector(replicate.residual, target_weights)
-        null_residual = resampled - observed
+        null_residual = null_centered_residual(resampled, observed)
         null_metric = covariance_metric(null_residual, replicate.covariance)
         if (
             not null_metric.psd
@@ -761,12 +864,7 @@ def null_centered_block_bootstrap(
             exceeded += 1
         else:
             exceeded += int(null_metric.chi_square >= observed_statistic)
-    p_value = (exceeded + 1.0) / (replicates + 1.0)
-    upper_95 = (
-        float(beta_distribution.ppf(0.95, exceeded + 1, replicates - exceeded))
-        if exceeded < replicates
-        else 1.0
-    )
+    p_value, upper_95 = bootstrap_tail_summary(exceeded, replicates)
     return exceeded, rank_failures, p_value, upper_95
 
 
@@ -776,6 +874,7 @@ def local_delta_control() -> tuple[float, float]:
     before = two_slice_log_weight(links, BETA)
     tau, link_id = 1, 17
     old = links[tau, link_id].copy()
+    old_local = two_slice_local_log_weight(links, tau, link_id, BETA)
     old_spatial = sum(
         spatial_real_trace(links[tau], face_id)
         for face_id in LINK_TO_FACES[link_id]
@@ -788,13 +887,18 @@ def local_delta_control() -> tuple[float, float]:
     )
     new_mixed = mixed_real_trace(links, link_id)
     after = two_slice_log_weight(links, BETA)
+    new_local = two_slice_local_log_weight(links, tau, link_id, BETA)
     correct = (BETA / 6.0) * (new_spatial - old_spatial) + (BETA / 3.0) * (
         new_mixed - old_mixed
     )
     mutated = (BETA / 3.0) * (new_spatial - old_spatial) + (BETA / 3.0) * (
         new_mixed - old_mixed
     )
-    return abs((after - before) - correct), abs((after - before) - mutated)
+    implementation_error = max(
+        abs((after - before) - correct),
+        abs((new_local - old_local) - correct),
+    )
+    return implementation_error, abs(correct - mutated)
 
 
 def orientation_control(weights: tuple[Weight, ...]) -> tuple[float, float]:
@@ -804,11 +908,325 @@ def orientation_control(weights: tuple[Weight, ...]) -> tuple[float, float]:
     vector = np.array(
         [su3_character_from_trace(trace, p, q) for p, q in weights], dtype=complex
     )
-    correct = np.outer(np.conjugate(vector), vector)
+    actual = character_cross_moment(vector[None, :], vector[None, :])
+    expected = np.outer(np.conjugate(vector), vector)
     mutated = np.outer(vector, vector)
     return (
-        float(np.max(np.abs(correct - correct.conj().T))),
-        float(np.max(np.abs(mutated - mutated.conj().T))),
+        float(np.max(np.abs(actual - expected))),
+        float(np.max(np.abs(mutated - expected))),
+    )
+
+
+def operator_formula_controls(
+    operators: dict[int, SectorOperators],
+    coefficient_lookup: dict[Weight, float],
+) -> tuple[float, float, float, float, float]:
+    """Cross-check the declared multiplier and local-factor formulas."""
+    multiplier_error = 0.0
+    inverse_error = 0.0
+    diagonal_error = 0.0
+    wrong_tau_gap = math.inf
+    wrong_power_gap = math.inf
+    c00 = coefficient_lookup[(0, 0)]
+    for nmax, sector in operators.items():
+        recurrence, weights_list, _ = build_numeric_recurrence(nmax)
+        weights = tuple(weights_list)
+        if weights != sector.weights:
+            return math.inf, math.inf, math.inf, 0.0, 0.0
+        expected_multiplier = expm((BETA / 2.0) * recurrence)
+        expected_inverse = expm((-BETA / 2.0) * recurrence)
+        multiplier_scale = max(float(np.linalg.norm(expected_multiplier)), 1.0)
+        inverse_scale = max(float(np.linalg.norm(expected_inverse)), 1.0)
+        multiplier_error = max(
+            multiplier_error,
+            float(np.linalg.norm(sector.multiplier - expected_multiplier))
+            / multiplier_scale,
+        )
+        inverse_error = max(
+            inverse_error,
+            float(np.linalg.norm(sector.inverse_multiplier - expected_inverse))
+            / inverse_scale,
+        )
+        link_eigenvalues = np.array(
+            [
+                coefficient_lookup[weight] / (dim_su3(*weight) * c00)
+                for weight in weights
+            ],
+            dtype=float,
+        )
+        expected_diagonal = np.diag(link_eigenvalues**4)
+        diagonal_error = max(
+            diagonal_error,
+            float(np.max(np.abs(sector.diagonal - expected_diagonal))),
+        )
+        wrong_tau = expm((BETA / 3.0) * recurrence)
+        wrong_tau_gap = min(
+            wrong_tau_gap,
+            float(np.linalg.norm(expected_multiplier - wrong_tau))
+            / multiplier_scale,
+        )
+        wrong_power_gap = min(
+            wrong_power_gap,
+            float(
+                np.max(
+                    np.abs(expected_diagonal - np.diag(link_eigenvalues**3))
+                )
+            ),
+        )
+    return (
+        multiplier_error,
+        inverse_error,
+        diagonal_error,
+        wrong_tau_gap,
+        wrong_power_gap,
+    )
+
+
+def static_deletion_control(weights: tuple[Weight, ...]) -> tuple[float, float]:
+    """Compare the production deletion observable with a scalar-loop formula."""
+    rng = np.random.default_rng(91931)
+    links = initial_links(rng, "hot", slices=1)
+    traces = all_face_traces(links)[:5]
+    actual = static_marked_deletion_observable(traces, weights, BETA)
+    expected = np.array(
+        [
+            sum(
+                math.exp(-(BETA / 3.0) * float(trace.real))
+                * np.conjugate(su3_character_from_trace(trace, *weight))
+                for trace in traces
+            )
+            / (len(traces) * dim_su3(*weight))
+            for weight in weights
+        ],
+        dtype=complex,
+    )
+    characters = character_table(traces, weights)
+    dimensions = np.array([dim_su3(*weight) for weight in weights], dtype=float)
+    mutated = (
+        np.mean(
+            np.exp(-(BETA / 2.0) * traces.real)[:, None] * characters.conj(),
+            axis=0,
+        )
+        / dimensions
+    )
+    return (
+        float(np.max(np.abs(actual - expected))),
+        float(np.max(np.abs(actual - mutated))),
+    )
+
+
+def algebraic_coordinate_controls(
+    weights: tuple[Weight, ...],
+) -> tuple[float, float]:
+    """Pin normalization, charge projection, and B_1 coordinate ordering."""
+    matrix = (
+        np.arange(1.0, 17.0).reshape(4, 4)
+        + 1j * np.arange(21.0, 37.0).reshape(4, 4)
+    )
+    matrix[0, 0] = 2.0 + 0.0j
+    vector = np.array([2.0 + 0.0j, 3.0 + 1.0j, 5.0 - 2.0j, 7.0 + 3.0j])
+    normalization_error = max(
+        float(np.max(np.abs(normalize_matrix(matrix) - matrix / matrix[0, 0]))),
+        float(np.max(np.abs(normalize_rho(vector) - vector / vector[0]))),
+    )
+    wrong_normalization_gap = max(
+        float(np.max(np.abs(matrix / matrix[1, 1] - matrix / matrix[0, 0]))),
+        float(np.max(np.abs(vector / vector[1] - vector / vector[0]))),
+    )
+
+    projected = charge_conjugation_project_rho(vector, weights)
+    expected_projection = np.array([2.0, 4.0, 4.0, 7.0], dtype=complex)
+    projection_error = float(np.max(np.abs(projected - expected_projection)))
+
+    expected_coordinates = np.array(
+        [
+            matrix[0, 1].real,
+            matrix[0, 1].imag,
+            matrix[0, 3].real,
+            matrix[1, 0].real,
+            matrix[1, 0].imag,
+            matrix[1, 1].real,
+            matrix[1, 1].imag,
+            matrix[1, 2].real,
+            matrix[1, 2].imag,
+            matrix[1, 3].real,
+            matrix[1, 3].imag,
+            matrix[3, 0].real,
+            matrix[3, 1].real,
+            matrix[3, 1].imag,
+            matrix[3, 3].real,
+        ]
+    )
+    coordinate_error = float(
+        np.max(np.abs(symmetry_vector(matrix, weights) - expected_coordinates))
+    )
+    return (
+        max(normalization_error, projection_error, coordinate_error),
+        wrong_normalization_gap,
+    )
+
+
+def statistical_controls() -> tuple[float, float, float, float, float, float, bool]:
+    """Independent small-array controls for every statistical gate family."""
+    vectors = np.array(
+        [[1.0, -2.0, 0.5], [2.0, 1.0, -0.5], [-1.0, 0.0, 1.5], [0.5, 2.5, 0.0]]
+    )
+    center = np.mean(vectors, axis=0)
+    deviations = vectors - center
+    expected_covariance = (len(vectors) - 1.0) / len(vectors) * sum(
+        np.outer(deviation, deviation) for deviation in deviations
+    )
+    covariance_error = float(
+        np.max(np.abs(jackknife_covariance(vectors) - expected_covariance))
+    )
+
+    sample_arrays = [
+        np.arange(12.0).reshape(6, 2),
+        np.arange(12.0, 24.0).reshape(6, 2),
+    ]
+    expected_blocks = np.array(
+        [
+            [1.0, 2.0],
+            [5.0, 6.0],
+            [9.0, 10.0],
+            [13.0, 14.0],
+            [17.0, 18.0],
+            [21.0, 22.0],
+        ]
+    )
+    actual_blocks = block_means(sample_arrays, 3)
+    expected_leave = np.array(
+        [
+            (np.sum(expected_blocks, axis=0) - block)
+            / (len(expected_blocks) - 1)
+            for block in expected_blocks
+        ]
+    )
+    blocking_error = max(
+        float(np.max(np.abs(actual_blocks - expected_blocks))),
+        float(
+            np.max(
+                np.abs(leave_one_means(actual_blocks) - expected_leave)
+            )
+        ),
+    )
+    covariance_error = max(covariance_error, blocking_error)
+
+    metric = covariance_metric(
+        np.array([1.0, 2.0]), np.diag(np.array([4.0, 9.0]))
+    )
+    metric_error = abs(metric.chi_square - (1.0 / 4.0 + 4.0 / 9.0))
+
+    blocks_per_chain = 3
+    blocks = np.arange(CHAINS * blocks_per_chain * 2, dtype=float).reshape(-1, 2)
+    actual_rng = np.random.default_rng(91943)
+    actual_resample = stratified_block_resample(
+        blocks, blocks_per_chain, actual_rng
+    )
+    reference_rng = np.random.default_rng(91943)
+    indices = reference_rng.integers(
+        0, blocks_per_chain, size=(CHAINS, blocks_per_chain)
+    )
+    by_chain = blocks.reshape(CHAINS, blocks_per_chain, 2)
+    expected_resample = np.array(
+        [
+            by_chain[chain, index]
+            for chain, row in enumerate(indices)
+            for index in row
+        ]
+    )
+    resample_error = float(np.max(np.abs(actual_resample - expected_resample)))
+
+    observed = np.array([0.3, -0.4, 0.2])
+    resampled = np.array([0.5, -0.1, -0.2])
+    centered = null_centered_residual(resampled, observed)
+    center_error = float(np.max(np.abs(centered - (resampled - observed))))
+    uncentered_gap = float(np.max(np.abs(resampled - centered)))
+
+    p_value, upper_95 = bootstrap_tail_summary(0, BOOTSTRAP_REPLICATES)
+    expected_upper = 1.0 - 0.05 ** (1.0 / BOOTSTRAP_REPLICATES)
+    tail_error = max(
+        abs(p_value - 1.0 / (BOOTSTRAP_REPLICATES + 1.0)),
+        abs(upper_95 - expected_upper),
+    )
+    production_config = Config(False, 2, 900, 2400, 2400, 4, 12)
+    acceptances = np.full(CHAINS, 0.5)
+    boundary_acceptances = acceptances.copy()
+    boundary_acceptances[0] = 0.25
+    health_boundaries = (
+        blocked_sampling_health(
+            True,
+            48,
+            48,
+            acceptances,
+            acceptances,
+            50,
+            50,
+            4.9,
+            4.9,
+            production_config,
+        )
+        and not blocked_sampling_health(
+            True,
+            48,
+            48,
+            acceptances,
+            acceptances,
+            50,
+            50,
+            5.0,
+            4.9,
+            production_config,
+        )
+        and not blocked_sampling_health(
+            True,
+            48,
+            48,
+            boundary_acceptances,
+            acceptances,
+            50,
+            50,
+            4.9,
+            4.9,
+            production_config,
+        )
+        and not blocked_sampling_health(
+            False,
+            48,
+            48,
+            acceptances,
+            acceptances,
+            50,
+            50,
+            4.9,
+            4.9,
+            production_config,
+        )
+        and chain_agreement_health(4.9, 4.9)
+        and not chain_agreement_health(5.0, 4.9)
+        and cutoff_stabilized(1.9)
+        and not cutoff_stabilized(2.0)
+        and covariance_resolved(metric, 2)
+        and not covariance_resolved(metric, 3)
+    )
+    gate_control = health_boundaries and (
+        rejection_certificate(True, True, True, 0.5, 0, 0, PRIMARY_P_FLOOR / 2.0)
+        and not rejection_certificate(True, True, True, 0.5, 1, 0, PRIMARY_P_FLOOR / 2.0)
+        and not rejection_certificate(True, True, True, 0.5, 0, 1, PRIMARY_P_FLOOR / 2.0)
+        and not rejection_certificate(True, True, True, 2.0, 0, 0, PRIMARY_P_FLOOR / 2.0)
+        and not rejection_certificate(True, True, True, 0.5, 0, 0, PRIMARY_P_FLOOR)
+        and not rejection_certificate(False, True, True, 0.5, 0, 0, PRIMARY_P_FLOOR / 2.0)
+        and not rejection_certificate(True, False, True, 0.5, 0, 0, PRIMARY_P_FLOOR / 2.0)
+        and not rejection_certificate(True, True, False, 0.5, 0, 0, PRIMARY_P_FLOOR / 2.0)
+    )
+    return (
+        covariance_error,
+        metric_error,
+        resample_error,
+        center_error,
+        uncentered_gap,
+        tail_error,
+        gate_control,
     )
 
 
@@ -1005,7 +1423,39 @@ def main() -> int:
     reporter.check(
         "outgoing-conjugate cross-moment orientation",
         orientation_error < 1.0e-12 and mutated_orientation_error > 1.0e-6,
-        f"correct/mutated Hermiticity={orientation_error:.1e}/{mutated_orientation_error:.1e}",
+        f"implementation error/mutated gap={orientation_error:.1e}/{mutated_orientation_error:.1e}",
+    )
+    (
+        multiplier_error,
+        inverse_error,
+        diagonal_error,
+        wrong_tau_gap,
+        wrong_power_gap,
+    ) = operator_formula_controls(operators, coefficient_lookup)
+    reporter.check(
+        "independent exp[(beta/2)J] and fourth-power local-factor formulas",
+        max(multiplier_error, inverse_error) < 1.0e-12
+        and diagonal_error < 1.0e-14
+        and wrong_tau_gap > 1.0e-2
+        and wrong_power_gap > 1.0e-3,
+        f"M/Minv/D errors={multiplier_error:.1e}/{inverse_error:.1e}/{diagonal_error:.1e}; "
+        f"mutation gaps={wrong_tau_gap:.2e}/{wrong_power_gap:.2e}",
+    )
+    deletion_error, mutated_deletion_gap = static_deletion_control(
+        operators[SHARED_NMAX].weights
+    )
+    reporter.check(
+        "independent marked-factor-deletion observable formula",
+        deletion_error < 1.0e-12 and mutated_deletion_gap > 1.0e-3,
+        f"implementation error/mutated gap={deletion_error:.1e}/{mutated_deletion_gap:.2e}",
+    )
+    algebraic_error, wrong_normalization_gap = algebraic_coordinate_controls(
+        operators[SHARED_NMAX].weights
+    )
+    reporter.check(
+        "trivial normalization, conjugation projection and 15-coordinate map",
+        algebraic_error < 1.0e-12 and wrong_normalization_gap > 1.0e-3,
+        f"implementation error/wrong-normalizer gap={algebraic_error:.1e}/{wrong_normalization_gap:.2e}",
     )
     synthetic_residual, strip_error, hostile_gap = synthetic_controls(
         operators[PRODUCTION_NMAX]
@@ -1020,6 +1470,30 @@ def main() -> int:
         hostile_gap > 1.0e-5,
         f"detected gap={hostile_gap:.2e}",
     )
+    (
+        covariance_error,
+        metric_error,
+        resample_error,
+        center_error,
+        uncentered_gap,
+        tail_error,
+        gate_control,
+    ) = statistical_controls()
+    reporter.check(
+        "independent covariance, stratification, null-centering, tail and gate controls",
+        max(
+            covariance_error,
+            metric_error,
+            resample_error,
+            center_error,
+            tail_error,
+        )
+        < 1.0e-12
+        and uncentered_gap > 1.0e-2
+        and gate_control,
+        f"max error={max(covariance_error, metric_error, resample_error, center_error, tail_error):.1e}; "
+        f"uncentered gap={uncentered_gap:.1e}",
+    )
     reporter.check(
         "independent ensembles have four disjoint deterministic seeds",
         len(FULL_SEEDS) == CHAINS
@@ -1028,7 +1502,10 @@ def main() -> int:
     )
     reporter.check(
         "audit certificate uses the frozen production configuration",
-        config.pilot or certifying_protocol,
+        (config.pilot or certifying_protocol)
+        and PRIMARY_P_FLOOR == 1.0e-3
+        and BOOTSTRAP_REPLICATES == 4096
+        and BOOTSTRAP_SEED == 92507,
         "overridden non-pilot configurations are non-certifying",
     )
 
@@ -1099,17 +1576,17 @@ def main() -> int:
     )
     reporter.check(
         "four-chain blocked samples are finite with nondegenerate acceptance",
-        finite_samples
-        and len(full_blocks) == CHAINS * config.blocks_per_chain
-        and len(static_blocks) == CHAINS * config.blocks_per_chain
-        and np.all((full_acceptance > 0.25) & (full_acceptance < 0.80))
-        and np.all((static_acceptance > 0.25) & (static_acceptance < 0.80))
-        and (
-            config.pilot
-            or (
-                full_block_size > 10.0 * full_tau
-                and static_block_size > 10.0 * static_tau
-            )
+        blocked_sampling_health(
+            finite_samples,
+            len(full_blocks),
+            len(static_blocks),
+            full_acceptance,
+            static_acceptance,
+            full_block_size,
+            static_block_size,
+            full_tau,
+            static_tau,
+            config,
         ),
         f"blocks={len(full_blocks)}/{len(static_blocks)}; "
         f"block/tau={full_block_size}/{full_tau:.2f},{static_block_size}/{static_tau:.2f}",
@@ -1169,7 +1646,7 @@ def main() -> int:
             np.array([matrix_vector(value) for value in shared.static_leave])
         ),
     )
-    chain_health = full_chain_z < 5.0 and static_chain_z < 5.0
+    chain_health = chain_agreement_health(full_chain_z, static_chain_z)
     reporter.check(
         "independent hot/cold chain observables agree within five grand-mean SE",
         config.pilot or chain_health,
@@ -1195,7 +1672,7 @@ def main() -> int:
     reporter.check(
         f"shared forward model stabilizes from auxiliary B_{AUXILIARY_NMAX-1} "
         f"to B_{AUXILIARY_NMAX}",
-        auxiliary_shift_z < 2.0,
+        cutoff_stabilized(auxiliary_shift_z),
         f"max shift={auxiliary_shift_z:.2f} primary-residual SE",
     )
 
@@ -1210,11 +1687,8 @@ def main() -> int:
         f"max|coordinate|/SE={metric.max_studentized:.2f}; null={metric.null_residual:.1e}"
     )
     print(f"  largest discrepancy: {largest_coordinate_discrepancy(shared, shared_weights)}")
-    covariance_health = (
-        metric.psd
-        and metric.dimension == len(operators[SHARED_NMAX].weights) ** 2 - 1
-        and metric.rank == metric.dimension
-        and metric.null_residual < 1.0e-8
+    covariance_health = covariance_resolved(
+        metric, len(operators[SHARED_NMAX].weights) ** 2 - 1
     )
     reporter.check(
         "shared forward covariance resolves its symmetry-supported sector",
@@ -1251,13 +1725,15 @@ def main() -> int:
         )
         reporter.check(
             "predeclared static-rho forward identification is rejected",
-            certifying_protocol
-            and chain_health
-            and covariance_health
-            and auxiliary_shift_z < 2.0
-            and bootstrap_exceeded == 0
-            and bootstrap_rank_failures == 0
-            and bootstrap_upper_95 < PRIMARY_P_FLOOR,
+            rejection_certificate(
+                certifying_protocol,
+                chain_health,
+                covariance_health,
+                auxiliary_shift_z,
+                bootstrap_exceeded,
+                bootstrap_rank_failures,
+                bootstrap_upper_95,
+            ),
             f"predeclared p floor={PRIMARY_P_FLOOR:g}",
         )
 

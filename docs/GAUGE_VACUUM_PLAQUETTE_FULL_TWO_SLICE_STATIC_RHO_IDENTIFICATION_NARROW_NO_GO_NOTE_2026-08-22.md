@@ -2,6 +2,19 @@
 claim_id: gauge_vacuum_plaquette_full_two_slice_static_rho_identification_narrow_no_go_note_2026-08-22
 claim_type: bounded_theorem
 claim_scope: "At beta=6 on the finite periodic L_s=3 SU(3) Wilson lattice, the zero-fit forward identification C=s M D_loc diag(rho_static) M is rejected on the shared B_1 character sector by independent full-two-slice and static marked-factor-deletion ensembles. The frozen production packet has healthy acceptance, blocks longer than ten measured autocorrelation times, hot/cold agreement, full rank in the exact 15-dimensional symmetry basis, B_3-to-B_4 model drift of 0.01 primary-residual standard errors, a 17.73-standard-error largest coordinate discrepancy, zero rank failures and zero exceedances in 4096 null-centered replicate-studentized stratified two-ensemble block-bootstrap replicates, finite-resolution p=1/4097, and an exact one-sided 95% binomial upper bound 0.000731113 below the predeclared 0.001 gate. The chi-square tail is diagnostic only because the covariance is estimated. This rejects only the B_4-truncated static-rho plus fourth-power-local-factor identification on that finite surface; it does not reject Wilson gauge theory, prove that the physical residual is non-diagonal, establish an infinite-character or thermodynamic-limit result, or retire a TOE obligation."
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "The fixed finite computation exactly certifies a statistical rejection under its declared protocol; population equality, an exact finite-volume integral, cutoff/volume limits, and the physical middle-operator law remain open."
+trace_class: negative_route_pruning
+target_claim_id: gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note
+target_blocker_text: "the runner confirms algebraic consistency once a rho_env sequence is supplied, but it does not compute rho_(p,q)(6) from the unmarked spatial Wilson integral or independently verify that the residual operator spectrum equals those coefficients"
+source_of_blocker_text: audit_ledger
+reachability_to_target: prunes
+artifact_role: runner_certificate
+next_trace_action: "construct a common-Wilson-integral estimator for the general compressed middle operator and test held-out entries, then control character cutoff and finite-volume dependence"
+conditional_surface_status: "statistical rejection only for the frozen L_s=3, beta=6, shared-B_1, auxiliary-B_4 protocol and the jointly supplied static-rho plus fourth-power-local-factor model"
+hypothetical_axiom_status: null
+admitted_observation_status: null
 depends_on:
   - minimal_axioms
   - gauge_vacuum_plaquette_transfer_operator_character_recurrence_note
@@ -20,7 +33,10 @@ bare_retained_allowed: false
 **Role:** finite-volume discriminator for the open gauge-vacuum
 operator-compression bridge
 
-**Claim type:** bounded theorem with a narrow negative conclusion
+**Claim type:** `bounded_theorem`
+
+The conclusion is a narrow negative-route-pruning result inside that bounded
+computational class, not a theorem-grade physical no-go.
 
 **Primary runner:**
 [`scripts/frontier_gauge_vacuum_plaquette_full_two_slice_compression_actual_l3_2026_08_22.py`](../scripts/frontier_gauge_vacuum_plaquette_full_two_slice_compression_actual_l3_2026_08_22.py)
@@ -71,14 +87,19 @@ C_model[(0,1),(0,1)] = 0.373961
 combined SE           = 0.00437
 ```
 
-Thus the static-environment diagonal vector, combined with the supplied
-fourth-power local packet in this `B_4`-truncated forward formula, does not
-equal the physical two-slice character matrix on the tested surface.
+Thus, under the frozen sampling, covariance, and bootstrap protocol, the
+static-environment diagonal vector combined with the supplied fourth-power
+local packet is statistically inconsistent with equality to the full
+two-slice character matrix on this `B_4`-truncated tested surface.
 
 This is not a failure of the Wilson transfer construction. It does not show
-that the actual residual is non-diagonal. It shows that the static
-three-dimensional deletion coefficients cannot simply be renamed as that
-residual while retaining the tested local factor.
+that the actual residual is non-diagonal, and finite Monte Carlo evidence is
+not a deductive proof that the population matrices are unequal. It shows that
+this fixed protocol does not license simply renaming the static
+three-dimensional deletion coefficients as that residual while retaining the
+tested local factor. An independent longer run, a valid alternative covariance
+calibration, or an exact finite-volume evaluation could falsify the statistical
+conclusion.
 
 ## 1. Exact physical surface tested
 
@@ -133,6 +154,17 @@ The fourth-power local diagonal is the finite packet constructed in
 That source explicitly does not prove that its consumer-side packet is the
 physical mixed-kernel compression. The present test consequently constrains
 only the product of that local packet with the static residual ansatz.
+
+The import inventory is explicit. The finite periodic `L_s=3` geometry,
+Wilson action, and `beta=6` coupling define the supplied simulation surface;
+they are not derived from the minimal axioms. The recurrence source supplies
+the marked multiplier grammar, the local-factor source supplies only its
+consumer-defined fourth-power packet, and the static-environment source
+supplies its finite marked-deletion estimator. All numerical matrix entries in
+this note are computed from those declared inputs. No observed plaquette
+target, fitted physics parameter, external empirical value, or audit verdict
+is imported. Independent audit alone controls the claim's audit and effective
+status.
 
 ## 3. Forward test and cutoff control
 
@@ -295,7 +327,7 @@ narrow rejection alone does not.
 - proof that the actual physical residual is non-diagonal;
 - a separate falsification of `D_beta^loc` or `rho_static` individually;
 - an infinite-character, continuum, or thermodynamic-limit result;
-- a canonical plaquette value or a repinning of any observable;
+- a reference plaquette value or a repinning of any observable;
 - a retained result before independent audit;
 - an axiom or primitive update.
 
@@ -309,25 +341,28 @@ is not shipped.
 
 The following materially distinct challenges to the exact bounded rejection
 were executed. Each is dispositioned as `ATTEMPTED`; no unexecuted route is
-used to support the negative claim.
+used to support the negative claim. The runner and SHA-bound cache are the
+current-cycle evidence for these attempts; none is marked `RULED OUT BY PRIOR`,
+and this unaudited packet attributes no retained grade to itself or its source
+notes.
 
 | Challenge to the narrow rejection | Exact execution/disposition |
 |---|---|
-| Wrong full-slice action or factor census | **ATTEMPTED.** A local update is checked against full recomputation of all `81+81+81` factors; the doubled-spatial-strength mutation fails. |
-| Wrong character orientation or conjugation reduction | **ATTEMPTED.** The outgoing-conjugate construction passes and the unconjugated mutation fails; the exact conjugation-orbit basis has dimension and rank `15/15`. |
-| Autocorrelation, blocking, or hot/cold non-equilibration | **ATTEMPTED.** Four chains per ensemble pass acceptance, `block>10 tau_int`, and the declared grand-mean chain-deviation gate. |
-| Estimated covariance or coordinate-selection artifact | **ATTEMPTED.** The omnibus statistic uses all 15 exact symmetry coordinates; every null-centered bootstrap replicate recomputes and full-rank checks its own two-ensemble jackknife covariance before comparison. |
-| Character-box projection artifact on shared `B_1` | **ATTEMPTED.** Successive projected model drifts fall from `1.885e-1` to `4.449e-3` to `4.236e-5` through `B_4`; the last is `0.01` primary-residual SE. |
+| Wrong full-slice action or factor census | **ATTEMPTED.** The production sweep and `local_delta_control` share `two_slice_local_log_weight`; that implementation is checked against an independent full recomputation of all `81+81+81` factors, and the doubled-spatial-strength mutation fails. See the [primary runner](../scripts/frontier_gauge_vacuum_plaquette_full_two_slice_compression_actual_l3_2026_08_22.py) and its SHA-bound [cache](../logs/runner-cache/frontier_gauge_vacuum_plaquette_full_two_slice_compression_actual_l3_2026_08_22.txt). |
+| Wrong character orientation or conjugation reduction | **ATTEMPTED.** The production sampler and hostile control share `character_cross_moment`; the independent outer-product expectation passes and the unconjugated mutation fails. The exact conjugation-orbit basis then has dimension and rank `15/15`. See the primary runner and cache above. |
+| Failure of the declared acceptance, blocking, autocorrelation, or hot/cold diagnostics | **ATTEMPTED.** Four disjoint-seed chains per ensemble pass acceptance, `block>10 tau_int`, and the declared grand-mean chain-deviation gate in the primary runner and cache. This does not rule out every slow mode; N7 keeps that population-level attack open. |
+| Misimplementation of the declared covariance, normalization, resampling, or coordinate protocol | **ATTEMPTED.** Independent small-array controls check trivial-channel normalization, charge projection, the 15-coordinate ordering, jackknife covariance, within-chain resampling, null centering, binomial-tail arithmetic, and strict gate boundaries. Every bootstrap replicate recomputes and full-rank checks its own two-ensemble covariance before comparison. Alternative valid calibrations remain an N7 falsifier. |
+| Resolved `B_3`-to-`B_4` projection drift exceeds the declared shared-`B_1` budget | **ATTEMPTED.** Successive projected model drifts fall from `1.885e-1` to `4.449e-3` to `4.236e-5` through `B_4`; the last is `0.01` primary-residual SE. Independent `expm` and coefficient-power controls pin the multiplier and local-factor formulas. No `B_5` or infinite-sector tail is claimed. |
 | Ill-conditioned algebraic inverse | **ATTEMPTED.** The conclusion is computed entirely forward; the `1.092e10` inverse amplification is printed only as a non-gating diagnostic. |
 
-Broader positive gauge routes survive, but they do not negate the exact
-finite formula rejected here:
+Broader positive gauge routes survive, but they do not negate the fixed
+protocol's statistical rejection:
 
 | Broader route | Evidence/disposition |
 |---|---|
-| General middle operator `Q` | **ATTEMPTED as a scope escape.** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md`](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md) gives an explicit positive swap-symmetric off-diagonal operator, proving that positivity and symmetry do not force the rejected diagonal class. A physical common-integral estimator remains the next campaign. |
-| Two-slice-derived corrected diagonal | **ATTEMPTED as a scope escape.** The literal doubled-slice deletion runner estimates a different diagonal candidate while explicitly proving that deletion is not algebraic stripping. |
-| Rank-aware analytic/recoupled contraction | **ATTEMPTED as a reopening route.** [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md) executes the existing closure synthesis and preserves a rank-aware contractor or new analytic compression. |
+| General middle operator `Q` | **OPEN nearby positive construction.** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md`](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md) gives an explicit positive swap-symmetric off-diagonal operator, showing that positivity and symmetry do not force the tested diagonal class. A physical common-integral estimator remains unexecuted. |
+| Two-slice-derived corrected diagonal | **OPEN nearby positive construction.** The literal doubled-slice deletion runner estimates a different diagonal candidate while explicitly separating deletion from algebraic stripping; a compression-aware diagonal law remains unexecuted. |
+| Rank-aware analytic/recoupled contraction | **OPEN reopening route.** [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md) records a rank-aware contractor or new analytic compression; neither is executed by this packet. |
 
 The literal-factor-deletion matrix in
 [`scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py`](../scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py)
@@ -336,13 +371,15 @@ says so.
 
 ### N2 — wall-independence audit
 
-Define three remaining walls:
+Define three remaining positive-program walls:
 
 - `W_Q`: identify the physical combined middle operator and its structure;
 - `W_N`: control the character cutoff beyond the observed `B_4` stability;
 - `W_L`: control finite-volume dependence.
 
-`W_N` does not identify `Q`, and `W_Q` on one box does not prove cutoff
+These walls do not support the fixed-protocol statistical rejection; they
+bound any stronger physical or limiting conclusion. `W_N` does not identify
+`Q`, and `W_Q` on one box does not prove cutoff
 control. Neither supplies `W_L`; a volume sequence does not determine the
 operator structure. Within `W_Q`, “wrong local factor” and “wrong residual
 values” are not independently resolved by this measurement because only
@@ -356,7 +393,7 @@ The required pairwise closure test is therefore:
 | `W_Q` / `W_L` | No | No | Yes | An operator at one volume gives no volume law; a volume sequence does not determine its internal structure. |
 | `W_N` / `W_L` | No | No | Yes | Character-tail control at one volume gives no finite-size law; finite-size control does not bound omitted characters. |
 
-Sampling is not retained as a free explanatory wall for the narrow result:
+Sampling is not kept as a free explanatory wall for the narrow result:
 acceptance, autocorrelation, hot/cold agreement, covariance support, and
 independent seeds all pass their declared gates.
 
@@ -370,9 +407,16 @@ independent seeds all pass their declared gates.
 | `B_4` stability | finite error-budget check, not an infinite-sector theorem |
 | `L_s=3` | finite periodic lattice, not a thermodynamic proxy by declaration |
 | `p` value | supported-covariance hypothesis test under the fixed production protocol |
+| `ansatz` | explicit load-bearing null model, fully typed in Sections 1--3 rather than a hidden premise |
+| `normalization` | explicit load-bearing transformation fixed by the trivial channel and independently controlled in the runner |
+| `sector` | explicit load-bearing finite domain: shared `B_1`, sampled `B_2`, auxiliary models through `B_4` |
+| `boundary` | either the defined static coefficients or cited source-scope context; no extra condition is hidden by the word |
+| `axiom` / `primitive` | cited governance context only; neither supplies the Wilson action, model, or numerical conclusion, as N6 records |
+| `wall` | the three stronger-positive-program limits are explicit in N2 and are not premises of the fixed-protocol rejection |
 
-No fitted plaquette target, observed canonical value, inverse reconstruction,
-or axiom-selected gauge law enters the result.
+The literal trigger scan has no remaining unclassified hit. No fitted
+plaquette target, observed reference value, inverse reconstruction, or
+axiom-selected gauge law enters the result.
 
 ### N4 — residual matching
 
@@ -390,14 +434,16 @@ between those two ingredients.
 
 | Cited source and exact locator | Residual in that source | Current claimed residual | Exact match? |
 |---|---|---|---:|
-| [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md), `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md:12-14,183-190` | Identify the measured static boundary coefficients with the algebraically stripped two-slice source residual, with the marked-class compression and stripping made explicit. | The forward form of that identification with the separately supplied `D_loc`, truncated through `B_4` and read on shared `B_1`. | **Yes**, for the bounded conjunction only. |
+| [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md), `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md:12-14,183-190` | Identify the measured static boundary coefficients with the algebraically stripped full two-slice source residual after an exact compression and stripping construction. | A finite `B_4` forward conjunction with the separately supplied `D_loc`, read on shared `B_1` and rejected statistically. | **No**: the finite truncation, supplied local factor, and statistical decision surface differ from the exact residual left open there. |
 | [`GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md`](GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md), `docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md:23-30,117-134` | Readout completeness after a diagonal residual is supplied; physical diagonality and static-to-stripped identification are excluded. | A Wilson-derived forward equality for one proposed diagonal residual. | **No**. |
 | [`scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py`](../scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py), `scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py:10-15,305-307` | Literal deletion before compression; explicitly not the algebraically stripped operator. | Compression-aware full-forward equality. | **No**. |
 | [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md), `docs/BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md:96-112,392-406` | Broader analytic/thermodynamic `P(6)` closure, including environment data, operator compression, and analytic-class control. | One finite-volume, finite-character operator-identification conjunction. | **No**. |
 
-Only the first row is a matching prior witness, and only at the explicitly
-bounded conjunction. The other rows are boundary context, not evidence that
-the present residual was previously tested.
+After dropping non-matches, the prior-witness count is zero. That does not
+weaken the bounded certificate because it relies on the new direct runner and
+cache, not on a prior no-go or wall as proof. All four citations above are
+boundary context only; none is counted as evidence that the current composed
+residual was previously tested.
 
 ### N5 — rhetoric and resolution audit
 
@@ -432,25 +478,37 @@ wall, and no axiom update closes `W_Q`, `W_N`, or `W_L`.
 
 ### N7 — strongest steelman
 
-The strongest positive critic notes that unmarked spatial plaquettes couple
-the nonmarked mixed-link integrations, violating the independence premise
-behind the simplest diagonal interface, exactly as the prior
-[operator-compression analysis](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md)
-shows at `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md:142-156`.
-The true compressed middle object may therefore be a positive
-conjugation-symmetric matrix `Q`; an explicit finite-box
-[positive off-diagonal witness](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md)
-at `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md:111-123`
-proves that the declared positivity and symmetry do not exclude that route.
-Alternatively, it may remain diagonal with coefficients belonging to a
-two-slice half-weight conditional measure rather than the static full-strength
-measure. In addition, the fourth-power local packet is a constructed finite
-packet, not a derived physical compression, as its source states at
-[`docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md:24-29,47-52`](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md).
+**Hostile argument against the negative claim.** Forty-eight blocks per
+ensemble, a measured autocorrelation margin, hot/cold agreement, and 4096
+null-centered bootstrap replicates do not constitute a proof of the exact
+finite-volume population matrix. A longer independent simulation could expose
+slow modes missed by the measured `tau_int`; a different valid dependent-data
+calibration could change the tail; or an exact finite-volume contraction could
+land inside the equality class. The strongest supporting authority is the
+[static-environment source](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md),
+which at lines 23--27 labels its `beta=6` values computed inputs rather than
+exact arithmetic and at lines 183--191 leaves the compression-aware comparison
+open. The terminal falsifier is concrete: reproduce the same normalized
+shared-`B_1` residual with independently seeded longer chains and conservative
+blocking/calibration, or compute it by an independent exact/controlled
+contraction.
 
-Any of those mechanisms can preserve a predictive Wilson gauge law without
-contradicting the rejection here. This steelman is executable through the
-general-`Q` held-out program, so the gauge seam remains live.
+That steelman defeats a categorical physical no-go, so this packet demotes to
+the fixed-protocol `bounded_theorem` certificate stated in the frontmatter. It
+does not defeat the deterministic statement that the frozen computation and
+its declared decision rule return a statistical rejection. The population
+equality and any stronger no-go remain open.
+
+Nearby positive constructions also remain live. Unmarked spatial plaquettes
+couple the nonmarked mixed-link integrations, so the true middle object may be
+a positive conjugation-symmetric matrix `Q`; an explicit finite-box
+[positive off-diagonal witness](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md)
+shows that positivity and symmetry do not force a diagonal class. A corrected
+diagonal from a two-slice conditional measure also remains possible, and the
+[local-factor source](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md)
+states that its fourth-power packet is constructed rather than a derived
+physical compression. These routes preserve a predictive Wilson gauge law and
+define the general-`Q` held-out continuation.
 
 ### N8 — cross-cycle echo
 
@@ -459,19 +517,24 @@ reusing their walls:
 
 | Similar prior wall | Retired? | Mechanism since that cycle | Could that mechanism apply here? |
 |---|---|---|---|
-| Static density equals the stripped residual by literal deletion ([campaign ledger](../.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md), `.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md:3-12`) | Literal deletion as a proof route **retired**; the physical equality **not retired positively**. | The ledger required construction and stripping of the full compressed two-slice operator; this packet executes its bounded forward discriminator but still tests `D_loc` and `rho_static` jointly. | **Yes.** Carry the ledger reopening condition into the common-integral general-`Q` construction and held-out test. |
-| Supplied-diagonal completeness versus physical membership ([scope correction](GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md), `docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md:17-30`) | Conditional interface retained; physical membership **not retired**. | This packet falsifies one supplied static-diagonal instance in forward form; it does not construct the physical operator. | **Yes.** Preserve the conditional algebra while replacing the supplied diagonal by a common-integral general `Q`. |
-| Actual mixed-kernel compression bridge ([local-factor boundary](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md), `docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md:110-122,134-141`) | **No.** | No independent derivation has isolated the physical `D_loc`; the present conjunction cannot allocate its mismatch. | **Yes.** The general-`Q` estimator can absorb the combined operator first, after which a local-factor split can be tested separately. |
-| Static coefficient evaluation versus static-to-stripped identification ([environment gate](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md), `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md:8-14,142-190`) | Low-rank static coefficients **retired computationally**; identification **not retired positively**. | Exact marked-factor deletion plus independent Monte Carlo supplied the static vector; this packet now rejects its direct use in the bounded conjunction. | **Yes.** Reuse independent estimation and a common Wilson integral for `Q`, not the rejected renaming. |
-| Broad beta-six environment/compression/analytic wall ([closure synthesis](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md), `docs/BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md:96-112,382-406`) | **No.** Only some coefficient-data subwalls were retired. | Rank-aware contraction or a new analytic compression remains the recorded reopening route. | **Yes.** A stable low-complexity `Q` would be such a compression; failure across cutoff and volume would instead sharpen the wall. |
+| Static density equals the stripped residual by literal deletion ([campaign ledger](../.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md), `.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md:3-12`) | **No audit-grade retirement asserted.** The campaign ledger records literal deletion as a falsified proof route while leaving physical equality open. | The ledger required construction and stripping of the full compressed two-slice operator; this packet executes a bounded forward discriminator but still tests `D_loc` and `rho_static` jointly. | **Yes.** Carry the ledger reopening condition into the common-integral general-`Q` construction and held-out test. |
+| Supplied-diagonal completeness versus physical membership ([scope correction](GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md), `docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md:17-30`) | **No audit-grade retirement asserted.** The current audit row is unaudited; the source supplies conditional algebra and excludes physical membership. | This packet statistically rejects one supplied static-diagonal instance in forward form; it does not construct the physical operator. | **Yes.** Preserve the conditional algebra while replacing the supplied diagonal by a common-integral general `Q`. |
+| Actual mixed-kernel compression bridge ([local-factor boundary](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md), `docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md:110-122,134-141`) | **No.** Its current audit row is unaudited. | No independent derivation has isolated the physical `D_loc`; the present conjunction cannot allocate its mismatch. | **Yes.** The general-`Q` estimator can absorb the combined operator first, after which a local-factor split can be tested separately. |
+| Static coefficient evaluation versus static-to-stripped identification ([environment gate](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md), `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md:8-14,142-190`) | **No audit-grade retirement asserted.** Its current audit row is unaudited; the source computes low-rank static coefficients and leaves identification open. | Exact marked-factor deletion plus independent Monte Carlo supplies the static vector; this packet statistically rejects its direct use in the bounded conjunction. | **Yes.** Reuse independent estimation and a common Wilson integral for `Q`, not the rejected renaming. |
+| Broad beta-six environment/compression/analytic wall ([closure synthesis](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md), `docs/BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md:96-112,382-406`) | **No.** No audit-grade retirement is attributed here. | Rank-aware contraction or a new analytic compression remains the recorded reopening route. | **Yes.** A stable low-complexity `Q` would be such a compression; failure across cutoff and volume would instead sharpen the wall. |
 
 The present packet executes the previously named discriminator and gives its
 narrow negative answer. It does not turn those earlier conditional
 constructions into broad no-go authorities.
 
-**Gate result:** PASS for rejecting the exact finite static-rho forward
-identification. FAIL for a universal gauge no-go, a proof of nondiagonality,
-an infinite/thermodynamic conclusion, or an axiom update; none is shipped.
+**Strongest honest disposition:** `bounded-with-corrected-wall-count`: the
+frozen finite protocol returns a statistical rejection of the declared
+static-rho forward identification. This is not a `no_go` disposition.
+
+**Gate result:** PASS for that bounded fixed-protocol certificate after the N7
+demotion. FAIL for a categorical finite-volume equality no-go, a universal
+gauge no-go, a proof of nondiagonality, an infinite/thermodynamic conclusion,
+or an axiom update; none is shipped.
 
 ## Verification
 
@@ -484,7 +547,7 @@ python3 scripts/frontier_gauge_vacuum_plaquette_full_two_slice_compression_actua
 Expected final line:
 
 ```text
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=16 FAIL=0
 ```
 
 The production runner exits successfully only when implementation controls,

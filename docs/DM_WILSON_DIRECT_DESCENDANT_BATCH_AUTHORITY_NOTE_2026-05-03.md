@@ -101,7 +101,7 @@ flagship lane closure is re-attempted.
 
 ## Cross-references
 
-- atlas authority pointer (already woven; this batch sits underneath it):
+- atlas pointer (woven before the 2026-09-03 package deferral; this batch sits underneath it):
   [`DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md`](DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md)
   on
   `archive/publication/ci3_z3/DERIVATION_ATLAS.md` (deferred package, archive tier)

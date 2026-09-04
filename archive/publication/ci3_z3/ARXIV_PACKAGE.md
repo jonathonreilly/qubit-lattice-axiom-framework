@@ -6,7 +6,7 @@ effective-status views.
 
 ## Include
 
-- [generated front-door status](../../repo/FRONT_DOOR_STATUS.md)
+- [generated front-door status](../../../docs/repo/FRONT_DOOR_STATUS.md)
 - [claims table with audit badges](./CLAIMS_TABLE_EFFECTIVE_STATUS.md)
 - [publication matrix with audit badges](./PUBLICATION_MATRIX_EFFECTIVE_STATUS.md)
 - [quantitative summary with audit badges](./QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md)

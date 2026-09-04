@@ -8,10 +8,10 @@ stated; its per-row status words and source-note standings are as of
 2026-06-08 and are **not** current `effective_status` — the live authority is
 the tracked audit ledger
 (`docs/audit/data/ledger/`), summarized in
-[`docs/repo/RETAINED_BACKBONE.md`](../../repo/RETAINED_BACKBONE.md). Where this
+[`docs/repo/RETAINED_BACKBONE.md`](../../../docs/repo/RETAINED_BACKBONE.md). Where this
 catalog quotes three-axiom-era framing, read it as historical; the current
 baseline is the four named axioms in
-[`MINIMAL_AXIOMS_2026-06-29.md`](../../MINIMAL_AXIOMS_2026-06-29.md).
+[`MINIMAL_AXIOMS_2026-06-29.md`](../../../docs/MINIMAL_AXIOMS_2026-06-29.md).
 **Claim type:** meta (publication-surface catalog; backward-looking)
 **Status authority:** independent audit lane only. This note sets no audit
 verdict, promotes nothing, and introduces no new derivation, axiom, or fitted
@@ -114,7 +114,7 @@ forward falsifier identified" status is **unchanged**.
    `y_t(M_Pl)/g_s=1/√6` Ward identity. The defensible content is a
    ~0.75σ beyond-SM `y_t` signature (framework `y_t` < SM `y_t≈0.94`), pending a tighter,
    audited `y_t` — see
-   [`P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08`](../../P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08.md).
+   [`P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08`](../../../docs/P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08.md).
 4. **Provenance discipline.** No NuFit / ACT / global-fit observable is consumed
    as a derived value; all are comparison windows. Status authority is the independent
    audit lane; the source notes are unaudited and these forecasts inherit that status.
@@ -140,17 +140,17 @@ publication surface identifies **no clean unconditional forward falsifier**.
 
 ## Cited sources (markdown links)
 
-- [`PMNS_THETA12_THETA13_DCP_PREDICTIONS_NARROW_THEOREM_NOTE_2026-05-17.md`](../../PMNS_THETA12_THETA13_DCP_PREDICTIONS_NARROW_THEOREM_NOTE_2026-05-17.md)
+- [`PMNS_THETA12_THETA13_DCP_PREDICTIONS_NARROW_THEOREM_NOTE_2026-05-17.md`](../../../docs/PMNS_THETA12_THETA13_DCP_PREDICTIONS_NARROW_THEOREM_NOTE_2026-05-17.md)
   — P1 (δ_CP third-quadrant bracket; θ_12/θ_13 no-prediction).
-- [`PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- [`PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../../docs/PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md)
   — P2 (θ_23 upper octant over the full NuFit rectangle).
-- [`HIGGS_VACUUM_STABILITY_NEW_PHYSICS_DISCRIMINATION_NOTE_2026-05-03.md`](../../HIGGS_VACUUM_STABILITY_NEW_PHYSICS_DISCRIMINATION_NOTE_2026-05-03.md)
+- [`HIGGS_VACUUM_STABILITY_NEW_PHYSICS_DISCRIMINATION_NOTE_2026-05-03.md`](../../../docs/HIGGS_VACUUM_STABILITY_NEW_PHYSICS_DISCRIMINATION_NOTE_2026-05-03.md)
   — P3 (vacuum-stability discrimination test; framework `y_t(v)=0.918`).
-- [`P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08.md`](../../P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08.md)
+- [`P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08.md`](../../../docs/P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08.md)
   — P3 robustness: the ±3% `y_t` band straddles the stability boundary (knife-edge); reframing to a conditional beyond-SM `y_t` signature.
-- [`PRIMORDIAL_SPECTRUM_NOTE.md`](../../PRIMORDIAL_SPECTRUM_NOTE.md)
+- [`PRIMORDIAL_SPECTRUM_NOTE.md`](../../../docs/PRIMORDIAL_SPECTRUM_NOTE.md)
   — T1 (n_s; the growth-noise correction flagged `missing_bridge_theorem`).
-- [`CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`](../../CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
+- [`CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`](../../../docs/CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
   — T2 (J NLO closed form).
 - `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — the historical `AC_φλ` and `θ` decisions, now non-authoritative provenance.

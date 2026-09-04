@@ -502,14 +502,24 @@ def main() -> None:
             for criticality, status, count in divergence_rows[:12]:
                 lines.append(f"| {criticality} | `{status}` | {count} |")
     else:
-        lines.append("- Divergence report unavailable.")
+        lines.append(
+            "- Publication package deferred to the archive tier (owner "
+            "decision 2026-09-03): `archive/publication/ci3_z3/`. No "
+            "divergence report is rendered for a deferred package."
+        )
     # Dispatch shadow report (dispatch-retarget design note, 2026-07-16).
     # Reporting only: nothing here affects any dispatch decision.
     lines.extend(shadow_report_lines())
+    src_line = (
+        "Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`]"
+        "(../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md)."
+        if DIVERGENCE_PATH.exists()
+        else "Source: deferred package (`archive/publication/ci3_z3/`)."
+    )
     lines.extend(
         [
             "",
-            "Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).",
+            src_line,
             "",
             "## Load-Bearing Topology",
             "",

@@ -27,7 +27,7 @@ cross-reference only — not a one-hop dep of this note).
 ### Figure 2. Graph-first `SU(3)` closure
 
 - purpose: show selector, weak axis, residual swap, and `3 ⊕ 1` split
-- source note: [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](../../GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
+- source note: [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](../../../docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
 - source runner: [frontier_graph_first_su3_integration.py](../../../scripts/frontier_graph_first_su3_integration.py)
 - manuscript asset: [figure2_graph_first_su3.svg](./figures/figure2_graph_first_su3.svg)
 - status: landed in arXiv draft
@@ -35,7 +35,7 @@ cross-reference only — not a one-hop dep of this note).
 ### Figure 3. Anomaly-forced `3+1`
 
 - purpose: show the closure chain from left-handed anomaly to single-clock `3+1`
-- source note: [ANOMALY_FORCES_TIME_THEOREM.md](../../ANOMALY_FORCES_TIME_THEOREM.md)
+- source note: [ANOMALY_FORCES_TIME_THEOREM.md](../../../docs/ANOMALY_FORCES_TIME_THEOREM.md)
 - source runner: [frontier_anomaly_forces_time.py](../../../scripts/frontier_anomaly_forces_time.py)
 - manuscript asset: [figure3_anomaly_forced_3plus1.svg](./figures/figure3_anomaly_forced_3plus1.svg)
 - status: landed in arXiv draft
@@ -43,7 +43,7 @@ cross-reference only — not a one-hop dep of this note).
 ### Figure 4. Three-generation matter structure
 
 - purpose: display exact orbit structure `8 = 1 + 1 + 3 + 3`, the retained `hw=1` no-proper-quotient closure, and the physical-lattice interpretation
-- source note: [THREE_GENERATION_STRUCTURE_NOTE.md](../../THREE_GENERATION_STRUCTURE_NOTE.md), [THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md](../../THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md), [PHYSICAL_LATTICE_NECESSITY_NOTE.md](../../PHYSICAL_LATTICE_NECESSITY_NOTE.md)
+- source note: [THREE_GENERATION_STRUCTURE_NOTE.md](../../../docs/THREE_GENERATION_STRUCTURE_NOTE.md), [THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md](../../../docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md), [PHYSICAL_LATTICE_NECESSITY_NOTE.md](../../../docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md)
 - source runners:
   - [frontier_generation_fermi_point.py](../../../scripts/frontier_generation_fermi_point.py)
   - [frontier_generation_rooting_undefined.py](../../../scripts/frontier_generation_rooting_undefined.py)
@@ -58,9 +58,9 @@ cross-reference only — not a one-hop dep of this note).
 - purpose: carry compact gravity corollaries and exact supporting theorems
   without stealing main-text space
 - source notes:
-  - [BROAD_GRAVITY_DERIVATION_NOTE.md](../../BROAD_GRAVITY_DERIVATION_NOTE.md)
-  - [I3_ZERO_EXACT_THEOREM_NOTE.md](../../I3_ZERO_EXACT_THEOREM_NOTE.md)
-  - [CPT_EXACT_NOTE.md](../../CPT_EXACT_NOTE.md)
+  - [BROAD_GRAVITY_DERIVATION_NOTE.md](../../../docs/BROAD_GRAVITY_DERIVATION_NOTE.md)
+  - [I3_ZERO_EXACT_THEOREM_NOTE.md](../../../docs/I3_ZERO_EXACT_THEOREM_NOTE.md)
+  - [CPT_EXACT_NOTE.md](../../../docs/CPT_EXACT_NOTE.md)
 - source runners:
   - [frontier_broad_gravity.py](../../../scripts/frontier_broad_gravity.py)
   - [frontier_born_rule_derived.py](../../../scripts/frontier_born_rule_derived.py)
@@ -73,8 +73,8 @@ cross-reference only — not a one-hop dep of this note).
 - purpose: show the cone-cap family, boundary-link structure, and the retained
   topology closure without bloating the main text
 - source notes:
-  - [S3_GENERAL_R_DERIVATION_NOTE.md](../../S3_GENERAL_R_DERIVATION_NOTE.md)
-  - [S3_CAP_UNIQUENESS_NOTE.md](../../S3_CAP_UNIQUENESS_NOTE.md)
+  - [S3_GENERAL_R_DERIVATION_NOTE.md](../../../docs/S3_GENERAL_R_DERIVATION_NOTE.md)
+  - [S3_CAP_UNIQUENESS_NOTE.md](../../../docs/S3_CAP_UNIQUENESS_NOTE.md)
 - source runners:
   - [frontier_s3_boundary_link_theorem.py](../../../scripts/frontier_s3_boundary_link_theorem.py)
   - [frontier_s3_cap_uniqueness.py](../../../scripts/frontier_s3_cap_uniqueness.py)
@@ -88,18 +88,18 @@ cross-reference only — not a one-hop dep of this note).
 
 - purpose: show what is exact, derived, and bounded in the DM relic chain
 - source notes:
-  - [DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md](../../DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md)
-  - [OMEGA_LAMBDA_DERIVATION_NOTE.md](../../OMEGA_LAMBDA_DERIVATION_NOTE.md)
+  - [DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md](../../../docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md)
+  - [OMEGA_LAMBDA_DERIVATION_NOTE.md](../../../docs/OMEGA_LAMBDA_DERIVATION_NOTE.md)
 - status: wait until DM language stabilizes
 
 ### Figure A2. Retained YT transport lane and Higgs follow-on route
 
 - purpose: show the support-tier UV Ward identification, the low-energy YT transport lane, and the identification-conditioned Higgs follow-on route
 - source notes:
-  - [YT_WARD_IDENTITY_DERIVATION_THEOREM.md](../../YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
-  - [YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md](../../YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md)
-  - [YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md](../../YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md)
-  - [HIGGS_MASS_RETENTION_ANALYSIS_NOTE_2026-04-18.md](../../HIGGS_MASS_RETENTION_ANALYSIS_NOTE_2026-04-18.md)
+  - [YT_WARD_IDENTITY_DERIVATION_THEOREM.md](../../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+  - [YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md](../../../docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md)
+  - [YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md](../../../docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md)
+  - [HIGGS_MASS_RETENTION_ANALYSIS_NOTE_2026-04-18.md](../../../docs/HIGGS_MASS_RETENTION_ANALYSIS_NOTE_2026-04-18.md)
 - manuscript asset: [figureA2_bounded_yt_lane.svg](./figures/figureA2_bounded_yt_lane.svg)
 - status: landed in arXiv appendix
 
@@ -107,8 +107,8 @@ cross-reference only — not a one-hop dep of this note).
 
 - purpose: preserve route history without confusing it for the promoted CKM package
 - source notes:
-  - [CABIBBO_BOUND_NOTE.md](../../work_history/ckm/CABIBBO_BOUND_NOTE.md)
-  - [CKM_MASS_BASIS_NNI_NOTE.md](../../work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md)
-  - [JARLSKOG_PHASE_BOUND_NOTE.md](../../work_history/ckm/JARLSKOG_PHASE_BOUND_NOTE.md)
+  - [CABIBBO_BOUND_NOTE.md](../../../docs/work_history/ckm/CABIBBO_BOUND_NOTE.md)
+  - [CKM_MASS_BASIS_NNI_NOTE.md](../../../docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md)
+  - [JARLSKOG_PHASE_BOUND_NOTE.md](../../../docs/work_history/ckm/JARLSKOG_PHASE_BOUND_NOTE.md)
 - manuscript asset: [figureA3_ckm_route_history.svg](./figures/figureA3_ckm_route_history.svg)
 - status: landed in arXiv appendix as explicit route history only

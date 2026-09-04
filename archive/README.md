@@ -79,7 +79,8 @@ Entries whose filename stem is not `pr-<N>` are semantic: note demotions
 `docs/` stripped) and campaign packets (`campaign-<slug>`), sharded by the
 first two characters of the id. Required keys are the same, with `source`
 exactly `{kind, path, consolidation}` plus `moved_to` when `kind` is
-`docs-note` (`kind` is `docs-note`, `campaign-packet`, or `publication-package`). Optional extras:
+`docs-note` or `publication-package` (`kind` is `docs-note`,
+`campaign-packet`, or `publication-package`). Optional extras:
 `lane` (the densify lane whose `chains/` memo carries the entry) and
 `follows_parent` (a FOLLOW-PARENT companion's archived parent id).
 `carried_by` names the era memo and the decided carrier. The same

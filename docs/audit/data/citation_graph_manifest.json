@@ -1,6 +1,6 @@
 {
- "edge_count": 15832,
- "node_count": 5579,
+ "edge_count": 15836,
+ "node_count": 5580,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17412,6 +17412,10 @@
   },
   "spin_half_cubic_ice_finite_detuning_projector_maxwell_stiffness_bounded_theorem_note_2026-09-03": {
    "deps_hash": "864f3fd41e7e",
+   "out_degree": 4
+  },
+  "spin_half_cubic_ice_finite_detuning_transverse_linear_spectral_crossover_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "bb385510a57c",
    "out_degree": 4
   },
   "spin_half_cubic_ice_positive_topological_electric_stiffness_bounded_theorem_note_2026-09-03": {

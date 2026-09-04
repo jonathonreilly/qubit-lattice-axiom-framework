@@ -17,6 +17,7 @@ import tempfile
 import unittest
 from contextlib import redirect_stdout
 from pathlib import Path
+from unittest import mock
 
 SCRIPT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(SCRIPT_DIR))
@@ -512,6 +513,98 @@ class RoundFourProbes(unittest.TestCase):
                 self.assertFalse(out["tracked"])
             finally:
                 ric.REPO_ROOT = old
+
+    def test_missing_tracked_shard_fails_closed_without_attestation(self):
+        missing = ric.LEDGER_PREFIX + "go/gone.json"
+        result = ric.collect_ledger([missing])
+        self.assertEqual(1, result["shard_count"])
+        self.assertIn("not a regular file", result["shard_parse_errors"][0])
+
+    def test_seed_pruned_shard_requires_matching_captured_build(self):
+        missing = ric.LEDGER_PREFIX + "go/gone.json"
+        nonce = "a" * 32
+        with tempfile.TemporaryDirectory() as tmp:
+            checkpoint = Path(tmp) / "checkpoint.json"
+            checkpoint.write_text(json.dumps({
+                "schema": ric._static_checkpoint.CAPTURED_SCHEMA,
+                "build_nonce": nonce,
+                "static_input_sha256": "bound-fingerprint",
+            }))
+            with (
+                mock.patch.dict(
+                    os.environ,
+                    {ric._static_checkpoint.BUILD_NONCE_ENV: nonce},
+                    clear=False,
+                ),
+                mock.patch.object(ric._static_checkpoint, "CHECKPOINT", checkpoint),
+                mock.patch.object(
+                    ric._static_checkpoint,
+                    "static_input_fingerprint",
+                    return_value=("bound-fingerprint", "ok"),
+                ),
+            ):
+                allowed, detail = ric._attested_pipeline_pruned_shards([missing])
+        self.assertEqual({missing}, allowed, detail)
+        result = ric.collect_ledger([missing], allowed_missing_shards=allowed)
+        self.assertEqual(0, result["shard_count"])
+        self.assertEqual([], result["shard_parse_errors"])
+
+    def test_seed_pruned_shard_rejected_when_fingerprint_moves(self):
+        missing = ric.LEDGER_PREFIX + "go/gone.json"
+        nonce = "b" * 32
+        with tempfile.TemporaryDirectory() as tmp:
+            checkpoint = Path(tmp) / "checkpoint.json"
+            checkpoint.write_text(json.dumps({
+                "schema": ric._static_checkpoint.CAPTURED_SCHEMA,
+                "build_nonce": nonce,
+                "static_input_sha256": "captured",
+            }))
+            with (
+                mock.patch.dict(
+                    os.environ,
+                    {ric._static_checkpoint.BUILD_NONCE_ENV: nonce},
+                    clear=False,
+                ),
+                mock.patch.object(ric._static_checkpoint, "CHECKPOINT", checkpoint),
+                mock.patch.object(
+                    ric._static_checkpoint,
+                    "static_input_fingerprint",
+                    return_value=("mutated", "ok"),
+                ),
+            ):
+                allowed, detail = ric._attested_pipeline_pruned_shards([missing])
+        self.assertIsNone(allowed)
+        self.assertIn("differs", detail)
+
+    def test_seed_pruned_shard_accepts_matching_finalized_fast_checkpoint(self):
+        missing = ric.LEDGER_PREFIX + "go/gone.json"
+        nonce = "c" * 32
+        with tempfile.TemporaryDirectory() as tmp:
+            checkpoint = Path(tmp) / "checkpoint.json"
+            checkpoint.write_text(json.dumps({
+                "schema": ric._static_checkpoint.FINAL_SCHEMA,
+                "build_nonce": nonce,
+                "static_input_sha256": "fast-fingerprint",
+            }))
+            with (
+                mock.patch.dict(
+                    os.environ,
+                    {
+                        ric._static_checkpoint.EXPECTED_NONCE_ENV: nonce,
+                        ric._static_checkpoint.BUILD_NONCE_ENV: "",
+                    },
+                    clear=False,
+                ),
+                mock.patch.object(ric._static_checkpoint, "CHECKPOINT", checkpoint),
+                mock.patch.object(
+                    ric._static_checkpoint,
+                    "static_input_fingerprint",
+                    return_value=("fast-fingerprint", "ok"),
+                ),
+            ):
+                allowed, detail = ric._attested_pipeline_pruned_shards([missing])
+        self.assertEqual({missing}, allowed, detail)
+        self.assertIn("finalized verdict-only", detail)
 
     def test_single_reason_is_ignore_rule_independent(self):
         with tempfile.TemporaryDirectory() as tmp:

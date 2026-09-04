@@ -98,6 +98,7 @@ RETAINED_GRADE_EXACT = {"retained", "retained_bounded", "retained_no_go"}
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from audit_lint import ALLOWED_EFFECTIVE_STATUSES  # noqa: E402
 from ledger_io import shard_path as _canonical_shard_path  # noqa: E402
+import static_pipeline_checkpoint as _static_checkpoint  # noqa: E402
 
 _MISSING = object()
 
@@ -339,8 +340,17 @@ def _git_tracked_files() -> list:
 
 
 
-def collect_ledger(tracked: list) -> dict:
-    shard_paths = [p for p in tracked if p.startswith(LEDGER_PREFIX) and p.endswith(".json")]
+def collect_ledger(
+    tracked: list, *, allowed_missing_shards: set[str] | None = None
+) -> dict:
+    allowed_missing_shards = allowed_missing_shards or set()
+    shard_paths = [
+        p
+        for p in tracked
+        if p.startswith(LEDGER_PREFIX)
+        and p.endswith(".json")
+        and p not in allowed_missing_shards
+    ]
     tracked_set = set(tracked)
     claim_ids = []
     histogram: Counter = Counter()
@@ -567,11 +577,67 @@ def collect_authority_links(tracked: list) -> dict:
     }
 
 
-def build_snapshot() -> dict:
+def _attested_pipeline_pruned_shards(tracked: list) -> tuple[set[str] | None, str]:
+    """Return tracked shards absent from the captured full-build filesystem.
+
+    The seeder can legitimately remove tracked shards before the pipeline
+    stages its generated refresh.  Omission is allowed only while the active
+    nonce names either the captured checkpoint in a full build or the finalized
+    checkpoint reused by verdict-only mode, and whose exact static-input
+    fingerprint still matches the current proposed filesystem. Standalone
+    checks therefore remain fail-closed for every tracked-but-missing shard.
+    """
+    build_nonce = os.environ.get(_static_checkpoint.BUILD_NONCE_ENV)
+    expected_nonce = os.environ.get(_static_checkpoint.EXPECTED_NONCE_ENV)
+    if isinstance(build_nonce, str) and re.fullmatch(r"[0-9a-f]{32}", build_nonce):
+        nonce = build_nonce
+        expected_schema = _static_checkpoint.CAPTURED_SCHEMA
+        proof_mode = "captured full-build"
+    elif (
+        isinstance(expected_nonce, str)
+        and re.fullmatch(r"[0-9a-f]{32}", expected_nonce)
+    ):
+        nonce = expected_nonce
+        expected_schema = _static_checkpoint.FINAL_SCHEMA
+        proof_mode = "finalized verdict-only"
+    else:
+        return None, "active pipeline nonce is absent or malformed"
+    try:
+        with open(_static_checkpoint.CHECKPOINT, "r", encoding="utf-8") as fh:
+            checkpoint = json.load(fh)
+    except (OSError, json.JSONDecodeError) as exc:
+        return None, f"captured full-build checkpoint is unreadable: {exc}"
+    if (
+        not isinstance(checkpoint, dict)
+        or checkpoint.get("schema") != expected_schema
+        or checkpoint.get("build_nonce") != nonce
+    ):
+        return None, f"{proof_mode} checkpoint does not match the active nonce"
+    fingerprint, detail = _static_checkpoint.static_input_fingerprint()
+    if fingerprint is None:
+        return None, detail
+    if fingerprint != checkpoint.get("static_input_sha256"):
+        return None, "proposed ledger differs from the captured full-build inputs"
+    missing = {
+        p
+        for p in tracked
+        if p.startswith(LEDGER_PREFIX)
+        and p.endswith(".json")
+        and not os.path.lexists(os.path.join(REPO_ROOT, p))
+    }
+    return missing, (
+        f"attested {len(missing)} seed-pruned tracked ledger shards "
+        f"from the {proof_mode} checkpoint"
+    )
+
+
+def build_snapshot(*, allowed_missing_shards: set[str] | None = None) -> dict:
     tracked = _git_tracked_files()
     return {
         "invariants_version": 2,
-        "ledger": collect_ledger(tracked),
+        "ledger": collect_ledger(
+            tracked, allowed_missing_shards=allowed_missing_shards
+        ),
         "premises": _load_ids(PREMISE_NODES, ("nodes",), set(tracked)),
         "obligations": _load_ids(OBLIGATIONS, ("nodes", "obligations"), set(tracked)),
         "docs": collect_docs(tracked),
@@ -755,8 +821,16 @@ def _format_graph_delta(delta: dict) -> str:
     return "; ".join(parts) or "content drift"
 
 
-def run_check(enforce_links: bool) -> int:
-    snapshot = build_snapshot()
+def run_check(enforce_links: bool, pipeline_proposed_ledger: bool = False) -> int:
+    allowed_missing_shards = None
+    if pipeline_proposed_ledger:
+        tracked = _git_tracked_files()
+        allowed_missing_shards, detail = _attested_pipeline_pruned_shards(tracked)
+        if allowed_missing_shards is None:
+            print(f"FAIL: cannot attest pipeline-proposed ledger: {detail}")
+            return 1
+        print(f"INFO: {detail}")
+    snapshot = build_snapshot(allowed_missing_shards=allowed_missing_shards)
     failures = []
     warnings = []
 
@@ -850,7 +924,15 @@ def main() -> int:
     mode.add_argument("--check", action="store_true")
     parser.add_argument("--allow", default="", help="comma-separated invariant keys allowed to differ in --diff")
     parser.add_argument("--enforce-links", action="store_true")
+    parser.add_argument(
+        "--pipeline-proposed-ledger",
+        action="store_true",
+        help="allow only seed-pruned tracked shards bound to the active captured full build",
+    )
     args = parser.parse_args()
+
+    if args.pipeline_proposed_ledger and not args.check:
+        parser.error("--pipeline-proposed-ledger requires --check")
 
     if args.snapshot is not None:
         if args.snapshot != "-":
@@ -900,7 +982,7 @@ def main() -> int:
     if args.diff:
         allow = {item.strip() for item in args.allow.split(",") if item.strip()}
         return run_diff(args.diff[0], args.diff[1], allow)
-    return run_check(args.enforce_links)
+    return run_check(args.enforce_links, args.pipeline_proposed_ledger)
 
 
 if __name__ == "__main__":

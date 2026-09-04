@@ -137,11 +137,28 @@ def canonicalize_decoration_parent_ids(ledger: dict) -> None:
                 break
 
 
+def sanitize_ledger(ledger: dict) -> dict:
+    """Sanitize audit-owned fields without rewriting source-owned titles."""
+    sanitized = sanitize_obj(ledger)
+    original_rows = ledger.get("rows", {})
+    sanitized_rows = sanitized.get("rows", {})
+    if isinstance(original_rows, dict) and isinstance(sanitized_rows, dict):
+        for claim_id, original in original_rows.items():
+            target = sanitized_rows.get(claim_id)
+            if (
+                isinstance(original, dict)
+                and isinstance(target, dict)
+                and "title" in original
+            ):
+                target["title"] = original["title"]
+    canonicalize_decoration_parent_ids(sanitized)
+    return sanitized
+
+
 def main() -> int:
     ledger_io.ensure_cache()
     ledger = ledger_io.load_ledger()
-    sanitized = sanitize_obj(ledger)
-    canonicalize_decoration_parent_ids(sanitized)
+    sanitized = sanitize_ledger(ledger)
     ledger_io.save_ledger(sanitized)
     print(f"Sanitized {LEDGER_PATH.relative_to(REPO_ROOT)}")
     return 0

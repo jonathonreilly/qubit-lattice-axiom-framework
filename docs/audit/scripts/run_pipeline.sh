@@ -219,7 +219,8 @@ echo "==> 17/18 render_front_door_status.py"
 python3 docs/audit/scripts/render_front_door_status.py
 
 echo "==> 18/18 repo_invariants_check.py (authority-link guard)"
-python3 docs/audit/scripts/repo_invariants_check.py --check --enforce-links
+python3 docs/audit/scripts/repo_invariants_check.py \
+  --check --enforce-links --pipeline-proposed-ledger
 
 echo "==> 18a/18 generate_skill_axiom_baselines.py --check (skill axiom-baseline guard)"
 # Check-only on purpose: the pipeline must never rewrite skill docs. On drift

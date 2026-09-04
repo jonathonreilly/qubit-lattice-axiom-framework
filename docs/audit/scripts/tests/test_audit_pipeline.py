@@ -16605,6 +16605,25 @@ class SanitizeLegacyAuditArtifactsTest(unittest.TestCase):
         )
         self.assertEqual(out["audit_status"], "unaudited")
 
+    def test_source_title_is_stable_while_audit_prose_is_sanitized(self):
+        m = _import("sanitize_legacy_audit_artifacts")
+        title = "Historic intake (proposed_retained)"
+        ledger = {
+            "rows": {
+                "historic": {
+                    "claim_id": "historic",
+                    "title": title,
+                    "verdict_rationale": "proposed_retained source",
+                }
+            }
+        }
+        out = m.sanitize_ledger(ledger)
+        self.assertEqual(title, out["rows"]["historic"]["title"])
+        self.assertEqual(
+            "candidate retained-grade source",
+            out["rows"]["historic"]["verdict_rationale"],
+        )
+
 
 class JudicialPanelOrchestratorTest(unittest.TestCase):
     """Contract pins for the five-judge panel drainer."""

@@ -391,9 +391,19 @@ def static_input_fingerprint(
     ledger_inputs, detail = _ledger_filesystem_inputs()
     if ledger_inputs is None:
         return None, detail
+    # ``git ls-files -c`` still lists tracked ledger shards that the seeder has
+    # removed from the working tree during this full build.  The checkpoint
+    # fingerprints the proposed filesystem state, so replace the index-derived
+    # ledger population with the just-enumerated on-disk population before any
+    # shard is opened.  This also keeps ignored sidecars inside the boundary.
+    inputs = {
+        relative
+        for relative in inputs
+        if not relative.startswith(VERDICT_GENERATED_PREFIXES)
+    }
     inputs.update(ledger_inputs)
     ledger_paths = {
-        relative for relative in inputs
+        relative for relative in ledger_inputs
         if relative.startswith(VERDICT_GENERATED_PREFIXES)
         and relative.endswith(".json")
     }

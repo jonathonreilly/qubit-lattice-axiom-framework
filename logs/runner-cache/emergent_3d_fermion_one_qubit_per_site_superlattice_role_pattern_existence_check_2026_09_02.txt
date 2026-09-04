@@ -1,36 +1,36 @@
 ===== runner cache v1 =====
 runner: scripts/emergent_3d_fermion_one_qubit_per_site_superlattice_role_pattern_existence_check_2026_09_02.py
-runner_sha256: 41ace4851923a13f26daf37b771fa232832a74fc4acf78305b6a80082f2f2c44
+runner_sha256: 0bbff04a9da3eca721cfbfc2ba293234f196896fce9dbd1a45eaff431e318b54
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 71.96
+elapsed_sec: 51.00
 status: ok
 ----- stdout -----
 PASS A1 [exact] BK superfast on the coarse lattice 2Z^3 in Z^3, qubits on coarse edge sites, vertex order -x<-y<-z<+x<+y<+z: R0-R4 and prod_i B_i = +I hold on open 3x3x3 54A/36F, periodic 3x3x3 81A/81F
-PASS A2 [exact] open coarse blocks, faces only: k = V - 1, one fermionic mode per coarse vertex less the global parity, at 3x3x3 V/n/k 27/54/26, 4x4x4 V/n/k 64/144/63
+PASS A2 [exact] open coarse blocks, faces only: the finite stabilizer-rank count is k = V - 1 at 3x3x3 V/n/k 27/54/26, 4x4x4 V/n/k 64/144/63
 PASS A3 [exact] coarse tori 3^3, 4^3, 3x3x4 (L = 2 excluded, multigraphs): faces only give k = V - 1 + 3 and the three non-contractible Wilson loops leave k = V - 1; k_faces/k_faces+W = 29/26, 66/63, 38/35
-PASS A4 [exact] faces together with every B_i, on those three tori: k = [3] throughout, independent of L -- a genuine 3D Z2 gauge structure, not a foliated one whose k grows with L
-PASS B1 [exact] the hop T_ij = (i/2) A_ij (B_i - B_j) is supported on exactly 11 fine sites, every one a coarse edge site, of L-infinity radius 2 about the edge midpoint, identically along x, y and z
+PASS A4 [exact] faces together with every B_i on the three tested tori leave k = [3] in each finite calculation
+PASS B1 [exact] both Pauli components of T_ij = (i/2) A_ij (B_i - B_j) have a union supported on exactly 11 fine sites, all coarse-edge sites, with L-infinity radius 2 about the edge midpoint along each axis: x:11 sites Linf 2, y:11 sites Linf 2, z:11 sites Linf 2
 PASS B2 [exact] open 5x5x5 coarse block, 125 modes, 300 qubits, 240 faces: all 144000 (hop component, face) pairs commute, 0 anticommuting, and every A_ij flips exactly B_i and B_j, 0 wrong syndromes
-PASS B3 [exact] closed 3D circuits of hops return to the code with phase +1, so the excitation is 3D-mobile, not a planon or lineon; weight/generators: x,y,z,-x,-y,-z 16/11; box circuit 34/20; non-planar hexagon 43/27
-PASS C1 [exact] Levin-Wen T-junction on the open 7x7x7 block (756 faces): theta = -1 over 10 leg geometries, two non-coplanar and one rerouted triple among them, every leg with endpoint-only syndromes and commuting with every face
-PASS C2 [exact] direct exchange E = t13 t21 t32 against S = t13 t32 t21, the same operators reordered so hop phases cancel: theta = -1 over 4 triangles, one with all legs detoured out of the plane
-PASS C3 [exact] controls in the same code path: a bound pair of two adjacent excitations +1; the 3D toric code point charge +1; the 2D toric code epsilon = e x m -1 against 313 detectors; the bare X string anticommutes with 18 superfast faces
+PASS B3 [exact] three closed 3D circuits of A_ij string representatives are face-stabilizer products with residual phase +1; weight/generators: x,y,z,-x,-y,-z 16/11; box circuit 34/20; non-planar hexagon 43/27
+PASS C1 [exact] finite Levin-Wen T-junction sign diagnostic on the open 7x7x7 block (756 faces): theta = -1 over 10 leg geometries, two non-coplanar and one rerouted triple among them, every leg with endpoint-only syndromes and commuting with every face
+PASS C2 [exact] reordered-string exchange diagnostic E = t13 t21 t32 against S = t13 t32 t21, the same operators reordered so hop phases cancel: theta = -1 over 4 triangles, one with all legs detoured out of the plane
+PASS C3 [exact] finite controls: a bound pair of adjacent endpoint types +1; a 3D commuting-X-string construction +1; the 2D toric-code epsilon construction -1 against 313 detectors; the bare X string anticommutes with 18 superfast faces
 PASS D1 [exact] the symmetrised marker rule, 48 templates = 16 translates x 3 orientations of the period-(4,2,2) role pattern, 5x5x5 window: 48 sectors on the 4x4x4 torus, each of penalty 0 for all 2^24 free-bit fillings
 PASS D2 [exact] exhaustive branch-on-role propagation on the 4x4x4 torus, 48 search nodes, no SAT solver: exactly 48 zero-penalty cylinders, the 48 sectors, pairwise inconsistent, so the zero set is 48 x 2^24, no junk
 PASS D3 [exact] the same complete search on the commensurate 8x4x4 torus, 128 sites, 48 nodes: again exactly the 48 sectors, zero set 48 x 2^48
 PASS D4 [exact] incommensurate tori, whose sides hold the period (4,2,2) in no orientation, carry no zero-penalty configuration; every branch closes: 5x4x4 0, 4x5x4 0, 7x4x4 0
-PASS D5 [exact] window minimality: the 3x3x3 window leaves 2 unseparated pin-pairs and the 7-site star 29, every period-2 role assignment fails at every window 3 to 9, and the 5x5x5 window leaves 0 across all 48 templates
-PASS D6 [exact] locality census of the assembled law on the fine lattice: 16 quantum and 49 marker term types, 4 star-local (A_x, T comp A.B_i x, T comp A.B_i z, B_i), 61 through on an explicit 6-connected hub chain, 0 across
-PASS D7 [exact] seven-site-star proposition: a corner's six neighbours are free edge sites and its own value takes both, so corner-centred stars realise 128 of 128 value patterns and adjacent pairs 4 of 4 -- a value-reading star rule pins no role
+PASS D5 [exact] window minimality: the 3x3x3 window leaves 2 unseparated pin-pairs and the 7-site star 29, every period-2 role assignment fails at each tested odd cubic window 3, 5, 7, 9, and the 5x5x5 window leaves 0 across all 48 templates
+PASS D6 [exact] support-footprint census, not a locality theorem: 16 declared BKSF/hop objects and 31 actual marker-penalty contributions (30 pinned-centre templates plus the no-template contribution); 4 fit one seven-site star (A_x, T comp A.B_i x, T comp A.B_i z, B_i), the other 43 receive explicit 6-connected hulls, largest 125 hubs
+PASS D7 [exact] finite bit-pattern census over the 48 declared sectors and all free-bit fillings: corner-centred seven-site stars realise 128 of 128 patterns and adjacent pairs realise 4 of 4
 PASS E1 [exact] the connected one-qubit-per-site rule IXZZXIIII on Z^2, support {(-1,0), (-1,1), (0,-1), (0,0)}: all translates commute, k(6) = 2 and k(8) = 2 with 0 non-commuting generator pairs, 3 nontrivial charge classes
-PASS E2 [exact] T-junction on those classes, thin step-wise legs with clearance checked: [(0,0)] +1 x12, [(0,1)] +1 x12, [(0,0),(0,1)] -1 x18 -- 1 point fermion and 2 point bosons
-PASS E3 [exact] the mutual braid table over those charges, each loop grown out of reach of any hop window, every exit route checked: +1-1-1; -1+1-1; -1-1+1 -- the toric-code S-matrix
-PASS F1 [exact] census of unit-cube-support translation-invariant one-qubit Pauli rules on Z^3: of 4^8 patterns 1011 commute with all translates, 735 of support >= 4; modulo cubic maps and Cliffords, 21 one-pattern (28 at support >= 1) and 423 two-pattern rules
-PASS F2 [exact] for one pattern M = R/(f_X, f_Z), R the Laurent ring F2[x,y,z] of dimension 3, syndrome image 2-generated: all 21 ideals are proper, a common unit-coordinate zero shown over GF(2^1), so M is nonzero and Krull's height theorem gives height <= 2 < 3
-PASS F3 [exact] finite-window test independent of that algebra, 2x2x2 cell block, margin 3, cluster shape solved for with the operator: over the 21 rules axes with some mobile cluster distribute 0:10 1:5 2:2 3:4, yet 0 have one cluster mobile along all three
-PASS F4 [exact] the same test on all 423 two-pattern rules, margin 3: 0 with a cluster mobile along all three axes. The syndrome image R^2 -> R^t stays 2-generated for every t, so depth M >= 1 > 0 and M carries no nonzero finite-length submodule
-SUMMARY: one qubit per site of Z^3 and one covariant law give a three-axis-mobile point excitation of exchange -1 on a superlattice role pattern the law forms by itself; one site per repeating unit gives none.
+PASS E2 [exact] finite T-junction sign diagnostic on those classes, thin step-wise legs with exact clearance checked: [(0,0)] +1 x12, [(0,1)] +1 x12, [(0,0),(0,1)] -1 x18 -- 1 negative-sign and 2 positive-sign classes
+PASS E3 [exact] the finite mutual-sign table over those classes, each loop grown out of reach of any hop window and every exit route checked: +1-1-1; -1+1-1; -1-1+1 -- equals the declared diagonal +1/off-diagonal -1 target
+PASS F1 [exact] census of nonidentity unit-cube-support translation-invariant one-qubit Pauli patterns on Z^3: of 4^8 - 1 patterns, 1011 commute with all translates, 735 have support >= 4; modulo the 48 cubic vertex maps, the six common onsite Clifford relabellings, and pattern exchange, 21 one-pattern (28 at support >= 1) and 423 two-pattern representatives
+PASS F2 [exact] for the 21 one-pattern representatives, each pair (f_X,f_Z) has an explicitly evaluated common zero with three nonzero coordinates over GF(2^k), k <= 2; hence each displayed Laurent ideal is proper
+PASS F3 [exact] declared finite-window calculation, 2x2x2 cell block, margin 3, cluster shape solved for with the operator: over the 21 rules axes with some mobile cluster distribute 0:10 1:5 2:2 3:4, yet 0 have one cluster returned mobile along all three within this window
+PASS F4 [exact] the same declared 2x2x2/margin-3 calculation on all 423 two-pattern representatives returns 0 with a cluster mobile along all three axes within that finite window
+SUMMARY: exact finite BKSF operator/sign checks, a separate finite marker zero-set census, a finite 2D sign table, and a bounded 3D unit-cube-rule census; no framework-law, formation, or infinite-volume conclusion.
 TOTAL: PASS=24 FAIL=0
 
 ----- stderr -----

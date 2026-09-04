@@ -1,0 +1,18 @@
+{
+ "id": "companion_bank_liveness_schedule_endpoint_interval_packet_projection_bounded_theorem_note_2026-07-28",
+ "title": "COMPANION_BANK_LIVENESS_SCHEDULE_ENDPOINT_INTERVAL_PACKET_PROJECTION_BOUNDED_THEOREM_NOTE_2026-07-28",
+ "science": "Finite compatibility certificate: the companion-bank liveness schedule admits a collision-free Stage-E extension (24 packet registers, 120 handoffs, zero collisions) whose declared packet table replays the unchanged EventChain harness exactly (four interval decodes, fault controls all detected) - software schedule data only, explicitly not physical time, occurrence, or Record. Late-July Born/POVM/truncated-Fock support-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/COMPANION_BANK_LIVENESS_SCHEDULE_ENDPOINT_INTERVAL_PACKET_PROJECTION_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "moved_to": "archive/notes/docs/COMPANION_BANK_LIVENESS_SCHEDULE_ENDPOINT_INTERVAL_PACKET_PROJECTION_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-born-povm-support-era.md (late-July Born/POVM/truncated-Fock support era (D-born) \u2014 lane memo); carrier: archive/chains/july-born-povm-support-era.md (drafted: phase3/memos/D-born.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-born"
+}

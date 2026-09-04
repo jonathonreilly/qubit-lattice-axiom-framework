@@ -1,0 +1,18 @@
+{
+ "id": "c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02",
+ "title": "C2_W_SUPPLIER_READING_FORK_FIXED_POINT_UNIDENTIFIABILITY_BOUNDED_NOTE_2026-07-02",
+ "science": "The w-supplier retired into a binary reading fork: Record text discharges content-determination on the class; under READING-X (exchange-closed relabelings) w = 1 is forced, under READING-P (presentation-preserving) w stays free - an owner adjudication, not a missing number; plus fixed-point unidentifiability (all scale-invariant readouts are w-independent at equipartition-selected states) and the conditional kappa_EW correspondence behind CTX-match. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. EPOCH (2026-08-13 Record revision): the class discharge read content-determination and finite additivity directly off the then-Record text; the additive-I sentence has since been REMOVED from Record, so the discharge's additivity leg goes through fresh review on any live use (the reading-fork structure itself is unaffected as conditional algebra).",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/C2_W_SUPPLIER_READING_FORK_FIXED_POINT_UNIDENTIFIABILITY_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/C2_W_SUPPLIER_READING_FORK_FIXED_POINT_UNIDENTIFIABILITY_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-frame-weighting-era.md (July frame/weighting/readout era (D-frame) \u2014 lane memo); carrier: archive/chains/july-frame-weighting-era.md (drafted: phase3/memos/D-frame.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-frame"
+}

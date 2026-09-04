@@ -1,0 +1,19 @@
+d=2 fibre dim=4:  {'clifford': '0.00e+00', 'G_anticomm': '0.00e+00', 'G2': '0.00e+00', 'Gam_herm': '0.00e+00', 'Gam_real': '0.00e+00', 'Gbar_anti_Gam': '0.00e+00'}
+d=4 fibre dim=16:  {'clifford': '0.00e+00', 'G_anticomm': '0.00e+00', 'G2': '0.00e+00', 'Gam_herm': '0.00e+00', 'Gam_real': '0.00e+00', 'Gbar_anti_Gam': '0.00e+00'}
+
+d=2 taste generator T = Gbar_1 Gbar_2
+  T^2 + I  : 0.0
+  [T,Gam_a]: 0.0
+  [T,G]    : 0.0
+  eig(T)   : [0.+1.j 0.-1.j 0.+1.j 0.-1.j]
+  Gam_1 =
+ [[0 1 0 0]
+ [1 0 0 0]
+ [0 0 0 1]
+ [0 0 1 0]]
+  Gam_2 =
+ [[ 0  0  1  0]
+ [ 0  0  0 -1]
+ [ 1  0  0  0]
+ [ 0 -1  0  0]]
+  G     = [ 1 -1 -1  1]

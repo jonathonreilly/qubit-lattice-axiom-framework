@@ -1,0 +1,18 @@
+{
+ "id": "theta_retirement_basis_rematch_2026-07-04",
+ "title": "THETA_RETIREMENT_BASIS_REMATCH_2026-07-04",
+ "science": "The gate-4 owner-decision artifact (historical, zero premise weight): maps the PR #3511 retirement basis onto the refined minimum statement - mass side and local gauge side discharged at retained grade, the winding account's theta-value gap closed by the native positive-class adjudication row, Q-structure residuals re-scoped as non-gating physics - recording the basis for the 2026-07-05 theta retirement (count 2 -> 1) and the 2026-07-11 correction keeping the mass-side K-real leg conditional on the open obligations. July theta defect/phase/determinant-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md",
+  "moved_to": "archive/notes/docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-theta-era.md (July theta defect/phase/determinant era (D-theta) \u2014 lane memo); carrier: archive/chains/july-theta-era.md (drafted: phase3/memos/D-theta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-theta"
+}

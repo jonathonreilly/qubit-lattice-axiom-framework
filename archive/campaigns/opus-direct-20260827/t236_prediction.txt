@@ -1,0 +1,17 @@
+PRE-REGISTERED before running (T236).
+
+The Berry U(1) of R155 is COMPACT (its flux is quantised, R154/R155).  For a
+compact U(1) the confining behaviour is dimension-dependent:
+  - in 3 dimensions monopoles are instantons and disorder the vacuum at ALL
+    couplings -> AREA law, confined, NO propagating photon;
+  - in 4 dimensions monopoles are worldlines and there is a weak-coupling
+    DECONFINED phase -> perimeter law, a photon can exist.
+
+So I expect:
+  Z^3 + M2(C)  (axioms as written)  -> area law, sigma > 0, no photon
+  Z^4 + M4(C)  (the proposal)       -> smaller//vanishing sigma, closer to
+                                       perimeter law
+
+If that holds, ELECTROMAGNETISM is a third thing the fourth direction buys,
+alongside relativity and chirality.  If both are confined, the framework's U(1)
+has no photon either way and that is the honest answer.

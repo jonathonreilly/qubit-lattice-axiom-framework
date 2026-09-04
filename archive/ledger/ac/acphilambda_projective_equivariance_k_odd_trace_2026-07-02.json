@@ -1,0 +1,18 @@
+{
+ "id": "acphilambda_projective_equivariance_k_odd_trace_2026-07-02",
+ "title": "ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02",
+ "science": "The projective seed realized: R2 = U(x)R commutes with the two-component Dirac carrier with R2^3 = -I, giving the K-odd equivariant trace with Z_6 torsion branch weights (+-pi/3); doubler cancellation annihilates the naive K-odd trace on even diagonal grids, evaded by odd rings (N=3, the generation ring, largest response) or Wilson-type pairing breaking - the observable exists; what value it registers remains the wall. July AC_phi_lambda/R-eta campaign docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and the campaign's residue lives on the two FRONT open-gate obligation files. SCOPE (carried): 'largest at N=3' is the largest TESTED instance - a three-instance finite comparison |A_naive(3)|>|A_naive(5)|>|A_naive(7)| at fixed (phi,t)=(0.7,0.7); the note expressly makes no asymptotic claim.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-acphilambda-reta-era.md (July AC_phi_lambda / R-eta era (D-acl) \u2014 lane memo); carrier: archive/chains/july-acphilambda-reta-era.md (drafted: phase3/memos/D-acl.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the campaign's live residue is the two standing open-gate obligation files (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-acl"
+}

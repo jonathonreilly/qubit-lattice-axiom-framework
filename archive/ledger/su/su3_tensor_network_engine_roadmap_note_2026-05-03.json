@@ -1,0 +1,17 @@
+{
+ "id": "su3_tensor_network_engine_roadmap_note_2026-05-03",
+ "title": "SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03",
+ "science": "5-PR engine build plan; PR1 delivered and carried by SU3_FUSION_ENGINE_PR1 note, PRs2-5 unbuilt; the open analytic-P(6)/cube-Perron gate is carried by the staging-gate + gauge-vacuum campaign notes. Plan doc, not science of its own.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md",
+  "moved_to": "archive/notes/docs/SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

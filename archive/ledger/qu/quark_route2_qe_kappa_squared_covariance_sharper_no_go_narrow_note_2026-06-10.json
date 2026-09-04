@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_qe_kappa_squared_covariance_sharper_no_go_narrow_note_2026-06-10",
+ "title": "QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10",
+ "science": "N2 CONFIRM ARCHIVE on full read: the relocation note: kappa=3/2 derived same-domain, 9/4=kappa^2 exactly, and the missing datum relocated from the cross-domain color coincidence to the same-domain covariance bridge lambda=kappa^2 which equivariance provably does not supply; K1-K7 reproven in the FRO",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.full_two_particle_fixed_seam_synthesis_cycle305_note_2026-07-17",
+ "title": "FULL_TWO_PARTICLE_FIXED_SEAM_SYNTHESIS_CYCLE305_NOTE_2026-07-17",
+ "science": "Cycle 305: exact 30-column full two-particle fixed-seam encoder containing all fifteen unordered direction wedges (three antipodal columns load-bearing, leakage 0.9428 without them) with the K_seam unitary comparator; narrow negative retained - this fixed seam is not the recurrent separated-cell volume law (Cycle-304 leakage 0.99295). July source/contact/event era note (Cycles 281-334), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/FULL_TWO_PARTICLE_FIXED_SEAM_SYNTHESIS_CYCLE305_NOTE_2026-07-17.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/FULL_TWO_PARTICLE_FIXED_SEAM_SYNTHESIS_CYCLE305_NOTE_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-source-era.md (July source/contact/event era, Cycles 281\u2013334 (WH-src) \u2014 lane memo); carrier: archive/chains/july-source-era.md (drafted: phase3/memos/WH-src.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-src"
+}

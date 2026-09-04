@@ -1,0 +1,17 @@
+{
+ "id": "quark_c3_oriented_ward_splitter_support_note_hash_drift_hygiene_companion_note_2026-06-04",
+ "title": "QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_HASH_DRIFT_HYGIENE_COMPANION_NOTE_2026-06-04",
+ "science": "Companion-only hygiene evidence ('does not claim a new theorem... does not set audit status'): a point-in-time reproducibility check that the parent note/runner/dependency graph rebuild cleanly. Process artifact; the parent and its runner carry all science content.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_HASH_DRIFT_HYGIENE_COMPANION_NOTE_2026-06-04.md",
+  "moved_to": "archive/notes/docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_HASH_DRIFT_HYGIENE_COMPANION_NOTE_2026-06-04.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

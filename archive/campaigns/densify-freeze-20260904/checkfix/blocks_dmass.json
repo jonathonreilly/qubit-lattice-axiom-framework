@@ -1,0 +1,32 @@
+[
+ {
+  "claim": "docs/GRAVITY_EMERGENT_FORCE_TRANSVERSE_NONCENTRALITY_STRUCTURE_THEOREM_NOTE_2026-07-09.md",
+  "kind": "appended",
+  "text": " SIGN+SCOPE (carried): the transverse force term in -grad G is -(5/(8pi))(nhat^3 - S4 nhat)/r^4 - the MINUS sign is load-bearing - and the full expansion with O(1/r^6) remainder is conditional on the differentiable-remainder premise grad R_G = O(r^-6)."
+ },
+ {
+  "claim": "docs/COMPOSITE_MASS_ADDITIVITY_BINDING_DEFECT_TWO_STEP_SURFACE_BOUNDED_NOTE_2026-07-08.md",
+  "kind": "appended",
+  "text": " HYPOTHESES (carried): the free-pair result M_I,free pair = 2M_I holds for EQUAL masses at an EVEN total-momentum index (the discrete grid contains q = P/2) - the note's own conditions, not a general additivity statement."
+ },
+ {
+  "claim": "docs/FORMATION_RATE_LAW_CLASS_REDUCTION_BOUNDED_NOTE_2026-07-08.md",
+  "kind": "appended",
+  "text": " PAYLOAD (carried): the exact relative-rate identity (d/dr F(A(r))/F(A(r)))|r0 = [F'(A0)A0/F(A0)]*[A'(r0)/A0] with the five closed forms 1, 1/2, 2, 1/(1+A0), A0/(exp(A0)-1)."
+ },
+ {
+  "claim": "docs/SOURCE_FIELD_STATIC_LAW_CLASSIFICATION_BOUNDED_NOTE_2026-07-08.md",
+  "kind": "appended",
+  "text": " PAYLOAD (carried): the periodic-Laplacian zero-mode/mean-subtracted-solvability classification; the exact 1D mean-zero Green profile; the screened length xi = 1/(2 asinh(mu/2)) from 2(cosh(1/xi)-1) = mu^2."
+ },
+ {
+  "claim": "docs/COLLAPSE_MERGER_TOY_ENGINE_VALIDATION_NOTE_2026-07-08.md",
+  "kind": "appended",
+  "text": " PAYLOAD (carried): the sole validation surface for the comparator engine - parcel conservation, monotone record bits, bias/deposition/blocking behavior, and byte-for-byte deterministic final state/probe field/RNG state on same-seed reruns."
+ },
+ {
+  "claim": "docs/LATTICE_GREENS_NEXT_ORDER_R5_ANISOTROPY_THEOREM_NOTE_2026-07-09.md",
+  "kind": "appended",
+  "text": " PAYLOAD (carried): the exact raw degree-eight form f = [-181/512 + (315/256)S4 - (189/64)S6 + (1155/512)S4^2]/pi, its harmonic decomposition, and the seven-row sign-changing direction table on the primary."
+ }
+]

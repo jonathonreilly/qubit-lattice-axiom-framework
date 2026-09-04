@@ -1,0 +1,17 @@
+{
+ "id": "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01",
+ "title": "AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01",
+ "science": "Executed audit-hygiene cleanup-action record (Block Two): documents the stale read() removals/redirects in 8 named runners, landed in commit f00767de1 / PR #247, scope-narrowed to the action record with PASS accounting split out. No physics claim added or removed; the cleaned runners, their caches,",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md",
+  "moved_to": "archive/notes/docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: the 8 cleaned runners + their SHA-pinned caches + commits f00767de1/36b4a7134 (the executed cleanup itself)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

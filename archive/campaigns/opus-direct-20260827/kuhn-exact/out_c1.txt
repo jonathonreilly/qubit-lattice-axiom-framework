@@ -1,0 +1,20 @@
+=== C1  flat Kuhn stencil / mass / volume  (L=16) ===
+  self coupling  K[x,x]      : min 7.999999999999996  max 7.999999999999997  (want 8)
+  axis couplings (8 dirs)    : min -1.000000000000000  max -1.000000000000000  (want -1)
+  n distinct axis offsets    : 8  (want 8)
+  max |non-axis coupling|    : 0.000e+00   at None   (want < 1e-12)
+  lumped mass                : min 0.999999999999999  max 0.999999999999999  (want 1)
+  volume / L^4               : 0.999999999999994  (want 1)
+  max |mass-1|               : 1.110e-15
+  max |K[x,x]-8|             : 4.441e-15
+  max |axis+1|               : 4.441e-16
+
+=== C1b  offset inventory at eps != 0 (does the stencil stay axis-only?) ===
+  CONFORMAL     eps=0.05: axis offsets  8, non-axis offsets with |K|>1e-14:  22, max |K| 9.515e-04
+                 mass  min 0.91125795 max 1.09280716   vol/L^4 1.0010157382
+  CONFORMAL     eps=0.10: axis offsets  8, non-axis offsets with |K|>1e-14:  22, max |K| 1.903e-03
+                 mass  min 0.82658132 max 1.18967914   vol/L^4 1.0040628707
+  TRACELESS-TT  eps=0.05: axis offsets  8, non-axis offsets with |K|>1e-14:  22, max |K| 1.194e-03
+                 mass  min 0.99895448 max 0.99976074   vol/L^4 0.9993576358
+  TRACELESS-TT  eps=0.10: axis offsets  8, non-axis offsets with |K|>1e-14:  22, max |K| 2.431e-03
+                 mass  min 0.99581083 max 0.99904215   vol/L^4 0.9974269451

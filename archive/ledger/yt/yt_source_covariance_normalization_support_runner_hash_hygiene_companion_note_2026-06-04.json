@@ -1,0 +1,18 @@
+{
+ "id": "yt_source_covariance_normalization_support_runner_hash_hygiene_companion_note_2026-06-04",
+ "title": "YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_RUNNER_HASH_HYGIENE_COMPANION_NOTE_2026-06-04",
+ "science": "Hygiene companion note of yt_source_covariance_normalization_support_note_2026-05-24 (dependency-resolution / runner-hash companion, 2026-06-04 wave); carries no independent claim - it records the companion-side bookkeeping for its parent and joins the parent at migration per the FOLLOW-PARENT rule of the densify freeze.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_RUNNER_HASH_HYGIENE_COMPANION_NOTE_2026-06-04.md",
+  "moved_to": "archive/notes/docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_RUNNER_HASH_HYGIENE_COMPANION_NOTE_2026-06-04.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "its parent note entry yt_source_covariance_normalization_support_note_2026-05-24 (mechanical join)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "follows_parent": "yt_source_covariance_normalization_support_note_2026-05-24"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_bounded_theorem_note_2026-07-18",
+ "title": "THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18",
+ "science": "Post-erasure structure on the modulus coordinate: block multiplicativity iff log-additivity, with the power law F = x^s following only under the explicit boundedness premise (via the rebuilt support theorem); the scalar product-to-sum equation has only the zero solution on the full positive group (explicitly NOT Record additivity); and a continuous K-even unit-modulus pair proves log-modulus non-reconstruction on the stated class. July theta defect/phase/determinant-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. CODOMAIN (carried): the zero-solution degeneracy of the product-to-sum equation holds for NONNEGATIVE readouts F:(0,inf)->[0,inf) on the full positive group only - the note's own essential premise; F(x)=log x is a nonzero signed solution once nonnegativity is dropped.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+  "moved_to": "archive/notes/docs/THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-theta-era.md (July theta defect/phase/determinant era (D-theta) \u2014 lane memo); carrier: archive/chains/july-theta-era.md (drafted: phase3/memos/D-theta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-theta"
+}

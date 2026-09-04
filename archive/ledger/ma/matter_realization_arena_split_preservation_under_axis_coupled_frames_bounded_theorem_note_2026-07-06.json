@@ -1,0 +1,18 @@
+{
+ "id": "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06",
+ "title": "MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06",
+ "science": "R1 addressed for the EDGE-DIAG class: every diagonal lift g tensor g commutes with SWAP (exact, all 16 matrix-unit identities), the Kawamoto-Smit relative frame g_mu = eta_mu sigma_mu is in class for all three directions (joint sector dimensions 2,1,1,0), one-sided couplings are exactly out - with KS-HOP-BRIDGE named as the open step (whether the actual hopping-induced operator is in class). July meta/process-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+  "moved_to": "archive/notes/docs/MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-meta-process-era.md (July meta/process era + small singletons (D-meta) \u2014 lane memo); carrier: archive/chains/july-meta-process-era.md (drafted: phase3/memos/D-meta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-meta"
+}

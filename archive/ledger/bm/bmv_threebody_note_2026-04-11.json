@@ -1,0 +1,17 @@
+{
+ "id": "bmv_threebody_note_2026-04-11",
+ "title": "BMV_THREEBODY_NOTE_2026-04-11",
+ "science": "Superseded companion by its own declaration: the canonical 3-body surface is the robustness harness (whose note carries the same 25/25 W-type, tau_3=0 statistics and retires the GHZ reading), and the standalone runner is historical only. Protocol details remain in the archived note; carriers = BRANC",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/BMV_THREEBODY_NOTE_2026-04-11.md",
+  "moved_to": "archive/notes/docs/BMV_THREEBODY_NOTE_2026-04-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

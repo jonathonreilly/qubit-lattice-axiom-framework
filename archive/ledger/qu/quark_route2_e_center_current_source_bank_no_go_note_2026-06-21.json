@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_e_center_current_source_bank_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_E_CENTER_CURRENT_SOURCE_BANK_NO_GO_NOTE_2026-06-21",
+ "science": "B01 c1: bounded no-go over the NAMED current bank only; scope-honest (does not rule out future source-domain/nonlinear primitives). Runner expectation PASS=21 FAIL=0.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_E_CENTER_CURRENT_SOURCE_BANK_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_E_CENTER_CURRENT_SOURCE_BANK_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas (FRONT) carries the counter-witness structure (P(0) vs P(21/4) share all bank invariants) and the sharp bridge target; primitive-chain FRONT n",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

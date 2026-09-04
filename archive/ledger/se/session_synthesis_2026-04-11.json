@@ -1,0 +1,17 @@
+{
+ "id": "session_synthesis_2026-04-11",
+ "title": "SESSION_SYNTHESIS_2026-04-11",
+ "science": "Self-relabeled historical frontier snapshot ('do not use this file alone'); the parity-coupling correction and the ten probes are carried by the named per-claim surfaces, verified on disk.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SESSION_SYNTHESIS_2026-04-11.md",
+  "moved_to": "archive/notes/docs/SESSION_SYNTHESIS_2026-04-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/GRAVITY_SIGN_AUDIT_2026-04-10.md + docs/STAGGERED_FERMION_CARD_2026-04-11.md + docs/FIELD_EQUATION_DERIVATION_NOTE.md + per-probe notes",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "per_site_k_equals_1_ratification_reaudit_manifest_note_2026-05-22",
+ "title": "PER_SITE_K_EQUALS_1_RATIFICATION_REAUDIT_MANIFEST_NOTE_2026-05-22",
+ "science": "B06: same class - k=1 ratification (commit f471b5b) audit-request manifest; authority lives in QUBIT_AXIOM_HARDENING + MINIMAL_AXIOMS; the 10 listed rows are ledger-addressed.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/PER_SITE_K_EQUALS_1_RATIFICATION_REAUDIT_MANIFEST_NOTE_2026-05-22.md",
+  "moved_to": "archive/notes/docs/PER_SITE_K_EQUALS_1_RATIFICATION_REAUDIT_MANIFEST_NOTE_2026-05-22.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

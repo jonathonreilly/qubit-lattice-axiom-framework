@@ -1,0 +1,17 @@
+{
+ "id": "s3_time_bilinear_tensor_primitive_rank1_factorization_note_2026-05-17",
+ "title": "S3_TIME_BILINEAR_TENSOR_PRIMITIVE_RANK1_FACTORIZATION_NOTE_2026-05-17",
+ "science": "THREAD-READ (T9): K_R = w v^T rank-1 outer product with R1-R5 (determinant vanishing, column proportionality scale-invariant in delta_A1, channel-separated partials, singular-value collapse sigma_1=||w|| ||v||); class-A, gaps 1-3 explicitly untouched",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_RANK1_FACTORIZATION_NOTE_2026-05-17.md",
+  "moved_to": "archive/notes/docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_RANK1_FACTORIZATION_NOTE_2026-05-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: kept bilinear parent holds the definition; the factorization is restated inside the archived KR-Gram no-go (same group); atlas FRONT pointer",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

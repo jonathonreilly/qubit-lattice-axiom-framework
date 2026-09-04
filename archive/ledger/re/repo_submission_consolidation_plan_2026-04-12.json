@@ -1,0 +1,17 @@
+{
+ "id": "repo_submission_consolidation_plan_2026-04-12",
+ "title": "REPO_SUBMISSION_CONSOLIDATION_PLAN_2026-04-12",
+ "science": "04-12 paper-submission repo-shaping plan (branch consolidation, PAPER1_* doc list); publication is deferred until TOE completion per owner directive 2026-09-03, and the live consolidation surface is the densify program itself.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/REPO_SUBMISSION_CONSOLIDATION_PLAN_2026-04-12.md",
+  "moved_to": "archive/notes/docs/REPO_SUBMISSION_CONSOLIDATION_PLAN_2026-04-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: .claude/science/ARCHIVE_DESIGN_20260831.md + the densify freeze-gate package (successor consolidation design)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "work_history.cabibbo_jarlskog_route_note_2026-04-12",
+ "title": "CABIBBO_JARLSKOG_ROUTE_NOTE_2026-04-12",
+ "science": "Superseded historical route note, honestly self-labeled: the delta = 2pi/3 Jarlskog partial prediction (derived from Z_3, 2.1%) vs the Cabibbo 0.3% match exposed as a FIT (epsilon = 1/3 chosen to match). Its status header names the current split authority surface, and the honest derived-vs-input dec",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/CABIBBO_JARLSKOG_ROUTE_NOTE_2026-04-12.md",
+  "moved_to": "archive/notes/docs/work_history/CABIBBO_JARLSKOG_ROUTE_NOTE_2026-04-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/work_history/ckm/CABIBBO_BOUND_NOTE.md + docs/work_history/ckm/JARLSKOG_PHASE_BOUND_NOTE.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.uncontrolled_contact_collision_current_syndrome_cycle289_note_2026-07-17",
+ "title": "UNCONTROLLED_CONTACT_COLLISION_CURRENT_SYNDROME_CYCLE289_NOTE_2026-07-17",
+ "science": "Cycle 289: first uncontrolled-action syndrome - fixed-total-N=4 equal-Q collision branches (2,1,1) vs (4,0,0) give flag weight sin^2(5g/2)=0.637795 and signed Y current +/-0.961275 under the ordinary marker-independent W_g, with deletion/threshold/global-phase controls exactly zero and the adjoint reversing the sign. July source/contact/event era note (Cycles 281-334), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/UNCONTROLLED_CONTACT_COLLISION_CURRENT_SYNDROME_CYCLE289_NOTE_2026-07-17.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/UNCONTROLLED_CONTACT_COLLISION_CURRENT_SYNDROME_CYCLE289_NOTE_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-source-era.md (July source/contact/event era, Cycles 281\u2013334 (WH-src) \u2014 lane memo); carrier: archive/chains/july-source-era.md (drafted: phase3/memos/WH-src.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-src"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
+ "title": "ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02",
+ "science": "Fluxed-ring spectral no-go: flux enters the characteristic polynomial only through the constant term (2 cos Phi - a single-cycle topology fact, broken by a chord), so every spectral functional factors through cos Phi - stationary sets land on the real-holonomy locus {0,pi} unless the outer function is tuned to the target; canonical members are monotone; e_{N-1} = N^2 flux-blind. July AC_phi_lambda/R-eta campaign docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and the campaign's residue lives on the two FRONT open-gate obligation files.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md",
+  "moved_to": "archive/notes/docs/ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-acphilambda-reta-era.md (July AC_phi_lambda / R-eta era (D-acl) \u2014 lane memo); carrier: archive/chains/july-acphilambda-reta-era.md (drafted: phase3/memos/D-acl.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the campaign's live residue is the two standing open-gate obligation files (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-acl"
+}

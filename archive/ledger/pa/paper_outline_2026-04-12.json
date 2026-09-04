@@ -1,0 +1,17 @@
+{
+ "id": "paper_outline_2026-04-12",
+ "title": "PAPER_OUTLINE_2026-04-12",
+ "science": "04-12 Nature-letter planning outline; the publication program was executed as the full docs/publication/ci3_z3/ package (draft, claims table, matrix, atlas), which supersedes the outline per the executed-blueprint precedent.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/PAPER_OUTLINE_2026-04-12.md",
+  "moved_to": "archive/notes/docs/PAPER_OUTLINE_2026-04-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/publication/ci3_z3/ARXIV_DRAFT.md + docs/publication/ci3_z3/CLAIMS_TABLE.md + docs/publication/ci3_z3/PUBLICATION_MATRIX.md + docs/publication/ci3_z3/DERIV",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

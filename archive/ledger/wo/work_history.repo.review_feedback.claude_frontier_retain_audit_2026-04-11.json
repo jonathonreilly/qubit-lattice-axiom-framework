@@ -1,0 +1,17 @@
+{
+ "id": "work_history.repo.review_feedback.claude_frontier_retain_audit_2026-04-11",
+ "title": "CLAUDE_FRONTIER_RETAIN_AUDIT_2026-04-11",
+ "science": "Executed retention-decision packet for the April 11 Claude frontier wave: its keep/frontier-only/fix decisions became main's shape, and each retention boundary it states is restated in the retained note it kept. Historical process record of decisions since executed.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/CLAUDE_FRONTIER_RETAIN_AUDIT_2026-04-11.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/CLAUDE_FRONTIER_RETAIN_AUDIT_2026-04-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: the retained note/runner pairs it promoted (Wilson mu^2/test-mass, staggered open-cubic companions, corrected periodic-2D, Ollivier proxy, two-body hardening) +",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

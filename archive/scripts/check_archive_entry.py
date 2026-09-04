@@ -23,13 +23,16 @@ LEDGER_DIR = ARCHIVE_ROOT / "ledger"
 LEDGER_MD = ARCHIVE_ROOT / "LEDGER.md"
 
 REQUIRED = ("id", "title", "science", "source", "carried_by", "review", "status")
-OPTIONAL = ("forcing", "verdict_pair", "promotion_candidate", "disputed", "promoted_pr")
+OPTIONAL = ("forcing", "verdict_pair", "promotion_candidate", "disputed", "promoted_pr",
+            "lane", "follows_parent")
 # Keys that would smuggle audit authority into the light lane, at ANY depth.
 FORBIDDEN = ("audit_status", "effective_status", "claim_type", "verdict",
              "retained", "audited_clean", "claim_scope", "claim_id")
 MIN_SCIENCE = 40
 ID_RE = re.compile(r"pr-(\d+)\Z")
-INDEX_LINE_RE = re.compile(r"^- (pr-\d+):", re.MULTILINE)
+NOTE_ID_RE = re.compile(r"[a-z0-9][a-z0-9_.-]*\Z")
+SEMANTIC_KINDS = ("docs-note", "campaign-packet")
+INDEX_LINE_RE = re.compile(r"^- ((?:pr-\d+|[a-z0-9][a-z0-9_.-]{3,})):", re.MULTILINE)
 
 
 def forbidden_keys(obj, trail="") -> list[str]:
@@ -52,18 +55,24 @@ def nonempty_str(v) -> bool:
 
 
 def check_path(path: Path) -> tuple[int | None, list[str]]:
-    """Enforce ledger/<xx>/pr-<N>.json under the archive root."""
+    """Enforce ledger/<xx>/pr-<N>.json OR ledger/<id[:2]>/<semantic-id>.json."""
     try:
         rel = path.resolve().relative_to(LEDGER_DIR.resolve())
     except ValueError:
         return None, [f"{path}: not under {LEDGER_DIR}"]
+    if len(rel.parts) != 2 or path.suffix != ".json":
+        return None, [f"{path}: path is not ledger/<xx>/<id>.json"]
     m = ID_RE.fullmatch(path.stem)
-    if len(rel.parts) != 2 or path.suffix != ".json" or not m:
-        return None, [f"{path}: path is not ledger/<xx>/pr-<N>.json"]
-    n = int(m.group(1))
-    if rel.parts[0] != f"{n % 100:02d}":
-        return n, [f"{path}: shard dir '{rel.parts[0]}' != {n % 100:02d}"]
-    return n, []
+    if m:
+        n = int(m.group(1))
+        if rel.parts[0] != f"{n % 100:02d}":
+            return n, [f"{path}: shard dir '{rel.parts[0]}' != {n % 100:02d}"]
+        return n, []
+    if not NOTE_ID_RE.fullmatch(path.stem):
+        return None, [f"{path}: id is neither pr-<N> nor a semantic slug"]
+    if rel.parts[0] != path.stem[:2]:
+        return None, [f"{path}: shard dir '{rel.parts[0]}' != '{path.stem[:2]}'"]
+    return None, []
 
 
 def check_entry(path: Path) -> list[str]:
@@ -86,8 +95,9 @@ def check_entry(path: Path) -> list[str]:
     if any("missing required" in x for x in errs):
         return errs
 
-    if not nonempty_str(e["id"]) or (n is not None and e["id"] != f"pr-{n}"):
-        errs.append(f"{path}: id must equal filename stem 'pr-{n}'")
+    expect = f"pr-{n}" if n is not None else path.stem
+    if not nonempty_str(e["id"]) or e["id"] != expect:
+        errs.append(f"{path}: id must equal filename stem '{expect}'")
     if not nonempty_str(e["title"]):
         errs.append(f"{path}: title must be a non-empty string")
     if not isinstance(e["science"], str) or len(e["science"].strip()) < MIN_SCIENCE:
@@ -96,13 +106,27 @@ def check_entry(path: Path) -> list[str]:
         errs.append(f"{path}: carried_by must be a non-empty string")
 
     src = e["source"]
-    if not isinstance(src, dict) or set(src) != {"pr", "branch"}:
-        errs.append(f"{path}: source must be exactly {{pr, branch}}")
+    if n is not None:
+        if not isinstance(src, dict) or set(src) != {"pr", "branch"}:
+            errs.append(f"{path}: source must be exactly {{pr, branch}}")
+        else:
+            if type(src["pr"]) is not int or src["pr"] != n:
+                errs.append(f"{path}: source.pr must be the integer {n}")
+            if not nonempty_str(src["branch"]):
+                errs.append(f"{path}: source.branch must be a non-empty string")
     else:
-        if type(src["pr"]) is not int or (n is not None and src["pr"] != n):
-            errs.append(f"{path}: source.pr must be the integer {n}")
-        if not nonempty_str(src["branch"]):
-            errs.append(f"{path}: source.branch must be a non-empty string")
+        want = {"kind", "path", "consolidation"}
+        if not isinstance(src, dict) or src.get("kind") not in SEMANTIC_KINDS:
+            errs.append(f"{path}: source.kind must be one of {SEMANTIC_KINDS}")
+        else:
+            keys = set(src)
+            if src["kind"] == "docs-note":
+                want = want | {"moved_to"}
+            if keys != want:
+                errs.append(f"{path}: source keys must be exactly {sorted(want)}")
+            for k in keys & {"path", "moved_to", "consolidation"}:
+                if not nonempty_str(src[k]):
+                    errs.append(f"{path}: source.{k} must be a non-empty string")
 
     rev = e["review"]
     if (not isinstance(rev, dict) or set(rev) != {"level", "process"}
@@ -118,6 +142,9 @@ def check_entry(path: Path) -> list[str]:
         errs.append(f"{path}: verdict_pair must be a string")
     if "promoted_pr" in e and type(e["promoted_pr"]) is not int:
         errs.append(f"{path}: promoted_pr must be an integer")
+    for k in ("lane", "follows_parent"):
+        if k in e and not nonempty_str(e[k]):
+            errs.append(f"{path}: {k} must be a non-empty string")
     return errs
 
 
@@ -131,7 +158,12 @@ def check_index(entry_ids: set[str]) -> list[str]:
     errs = [f"LEDGER.md: duplicate index line for {i}"
             for i in sorted({i for i in listed if listed.count(i) > 1})]
     errs += [f"LEDGER.md: entry {i} not listed" for i in sorted(entry_ids - set(listed))]
-    errs += [f"LEDGER.md: lists {i} with no ledger file" for i in sorted(set(listed) - entry_ids)]
+    # Phantom check: a listed token with no entry file is flagged when it is
+    # unambiguously an entry id (pr-N / dated note id / campaign slug);
+    # ordinary prose bullets are not entry ids and are ignored.
+    idish = re.compile(r"pr-\d+\Z|.*_20\d\d-\d\d-\d\d\Z|campaign-.*\Z")
+    errs += [f"LEDGER.md: lists {i} with no ledger file"
+             for i in sorted(set(listed) - entry_ids) if idish.fullmatch(i)]
     return errs
 
 
@@ -155,8 +187,7 @@ def main(argv: list[str]) -> int:
         errs.extend(f"{s}: stray non-entry file under ledger/" for s in strays
                     if s.is_file())
     # Index 1:1 runs in BOTH modes, always against the full discovered set.
-    errs.extend(check_index({p.stem for p in all_entries
-                             if ID_RE.fullmatch(p.stem)}))
+    errs.extend(check_index({p.stem for p in all_entries}))
     if not all_entries and LEDGER_MD.is_file() and INDEX_LINE_RE.search(LEDGER_MD.read_text()):
         errs.append("LEDGER.md: lists entries but ledger/ holds none")
 

@@ -1,0 +1,18 @@
+{
+ "id": "eident_decomposition_definitional_proportionality_ctx_match_bounded_note_2026-07-02",
+ "title": "EIDENT_DECOMPOSITION_DEFINITIONAL_PROPORTIONALITY_CTX_MATCH_BOUNDED_NOTE_2026-07-02",
+ "science": "E-ident decomposed: the component-dictionary weight reading is exact proportionality ((E_I,E_B) = 3(p_s,p_d), definitional), the dictionary choice is the R* residual, and what remains is CTX-match alone - the assertion that the equipartition cells and the carrier-measure channels are the same supplied C3 context; ladder updates from {R*, D-totality, C2, E-ident} to {R*, D-totality, C2, CTX-match}. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/EIDENT_DECOMPOSITION_DEFINITIONAL_PROPORTIONALITY_CTX_MATCH_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/EIDENT_DECOMPOSITION_DEFINITIONAL_PROPORTIONALITY_CTX_MATCH_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-frame-weighting-era.md (July frame/weighting/readout era (D-frame) \u2014 lane memo); carrier: archive/chains/july-frame-weighting-era.md (drafted: phase3/memos/D-frame.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-frame"
+}

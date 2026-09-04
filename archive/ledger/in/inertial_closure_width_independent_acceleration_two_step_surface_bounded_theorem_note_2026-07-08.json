@@ -1,0 +1,18 @@
+{
+ "id": "inertial_closure_width_independent_acceleration_two_step_surface_bounded_theorem_note_2026-07-08",
+ "title": "INERTIAL_CLOSURE_WIDTH_INDEPENDENT_ACCELERATION_TWO_STEP_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-08",
+ "science": "Exact uniform-force transport on the unwrapped quasimomentum lift: d^2<X_3>/dt^2 = -(g/M_I)[1+r(t)] with |r(t)| <= C_4(m)(sigma_p^2 + g^2 t^2) before any Brillouin seam - the pre-wrap inertial-response law with the rest-point quartic coefficient (3+10m^2+4m^4)/(2m^2(1+m^2)). July mass/source/Poisson-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/INERTIAL_CLOSURE_WIDTH_INDEPENDENT_ACCELERATION_TWO_STEP_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-08.md",
+  "moved_to": "archive/notes/docs/INERTIAL_CLOSURE_WIDTH_INDEPENDENT_ACCELERATION_TWO_STEP_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-08.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-source-poisson-era.md (July mass/source/Poisson era (D-mass) \u2014 lane memo); carrier: archive/chains/july-mass-source-poisson-era.md (drafted: phase3/memos/D-mass.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-mass"
+}

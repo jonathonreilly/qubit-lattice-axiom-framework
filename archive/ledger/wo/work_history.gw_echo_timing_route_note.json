@@ -1,0 +1,17 @@
+{
+ "id": "work_history.gw_echo_timing_route_note",
+ "title": "GW_ECHO_TIMING_ROUTE_NOTE",
+ "science": "Self-declared historical route note in work_history: superseded on the current authority surface by GW_ECHO_NULL_RESULT_NOTE (no detectable echoes). The 67.66 ms timing chain is preserved route history, not current science.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/GW_ECHO_TIMING_ROUTE_NOTE.md",
+  "moved_to": "archive/notes/docs/work_history/GW_ECHO_TIMING_ROUTE_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: GW_ECHO_NULL_RESULT_NOTE.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

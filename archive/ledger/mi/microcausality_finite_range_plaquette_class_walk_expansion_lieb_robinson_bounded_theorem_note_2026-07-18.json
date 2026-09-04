@@ -1,0 +1,18 @@
+{
+ "id": "microcausality_finite_range_plaquette_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18",
+ "title": "MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18",
+ "science": "Lieb-Robinson walk-expansion chain extended to declared bond-or-unit-face carriers on Z^3: exact carrier-adjacency geometry (degree D=52, reach exactly 2k), all-time volume-uniform bound with velocity readout 208eJ (not sharp), dimension-blind on mixed site dimensions; the Z_2 gauge-shaped example checks carrier containment only - no physical model identification. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. PRECISION (corrected): the kth carrier lies within distance AT MOST 2k (k >= ceil(d/2)); exact attainment is exhibited only at k = 1, 2, 3 - not an equality for general k.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+  "moved_to": "archive/notes/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "wave_direct_dm_h025_fam2_seed1_followup_note",
+ "title": "WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE",
+ "science": "Fam2/seed1 bounded target replay with the 2026-06-06 source-packet exposure repair (PASS=86 manifest); its datapoint and the late-gain-retention read are carried by the Fam2 pair synthesis and the transfer diagnostic. Heavily-repaired evidence row of a closed lane.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
+  "moved_to": "archive/notes/docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

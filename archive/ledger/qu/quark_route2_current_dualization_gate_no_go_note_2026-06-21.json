@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_current_dualization_gate_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_CURRENT_DUALIZATION_GATE_NO_GO_NOTE_2026-06-21",
+ "science": "B01 c5: endpoint needs TWO inverse Schur-weight factors (one-sided dualization gives p=1, rho_E=3/2); current bank lacks canonical-dual/Moore-Penrose/Riesz semantics. PASS=62 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_CURRENT_DUALIZATION_GATE_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_CURRENT_DUALIZATION_GATE_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: atlas carries the p=2 inverse-square face (q_X w_X^2 = 5/24); group record notes the dual-factor table (p=0,1,2) and the absent canonical-dual semantics sweep",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

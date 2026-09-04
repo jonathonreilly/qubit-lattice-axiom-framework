@@ -1,0 +1,18 @@
+{
+ "id": "collapse_merger_toy_engine_validation_note_2026-07-08",
+ "title": "COLLAPSE_MERGER_TOY_ENGINE_VALIDATION_NOTE_2026-07-08",
+ "science": "Meta engine validation for later collapse/merger comparator experiments: parcel conservation, monotone record bits, bias response, deposition crowding, blocking, and byte-deterministic reruns - imposed couplings, no physics conclusion. July mass/source/Poisson-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. PAYLOAD (carried): the validation surface for the comparator engine (the note claims no exclusivity) - parcel conservation, monotone record bits, bias/deposition/blocking behavior, and byte-for-byte deterministic final state/probe field/RNG state on same-seed reruns.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/COLLAPSE_MERGER_TOY_ENGINE_VALIDATION_NOTE_2026-07-08.md",
+  "moved_to": "archive/notes/docs/COLLAPSE_MERGER_TOY_ENGINE_VALIDATION_NOTE_2026-07-08.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-source-poisson-era.md (July mass/source/Poisson era (D-mass) \u2014 lane memo); carrier: archive/chains/july-mass-source-poisson-era.md (drafted: phase3/memos/D-mass.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-mass"
+}

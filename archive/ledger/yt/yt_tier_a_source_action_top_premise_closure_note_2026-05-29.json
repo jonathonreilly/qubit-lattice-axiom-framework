@@ -1,0 +1,17 @@
+{
+ "id": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+ "title": "YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29",
+ "science": "B02 c5: self-demoted by its own 2026-07-11 authority header (conditional only; supplies no premise). Finite RN proof clean (scaled family has Fisher norm lambda^2, not primitive unless lambda=1). The no-go (qubit/LSP support alone does not force lambda=1) is undisputed. P-cal owner question already",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md",
+  "moved_to": "archive/notes/docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: P1P2 two-stage synthesis (RESCUE-FRONT) anchors the P-cal wall; P-cal group record must carry the CONDITIONAL RESULT prominently: under the open source-measure ",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

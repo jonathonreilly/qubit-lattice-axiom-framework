@@ -1,0 +1,17 @@
+{
+ "id": "universal_gr_block_normalization_note",
+ "title": "UNIVERSAL_GR_BLOCK_NORMALIZATION_NOTE",
+ "science": "B03 g6: early (04-14) support note fully absorbed by the later chain; A1 core canonical, E+T1 complement remains SO(3) orbit bundle.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/UNIVERSAL_GR_BLOCK_NORMALIZATION_NOTE.md",
+  "moved_to": "archive/notes/docs/UNIVERSAL_GR_BLOCK_NORMALIZATION_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: polarization blocker (KEEP) + PICURV exhaustion gate ROUTE-1 restate the orbit-canonical/not-section-canonical result",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

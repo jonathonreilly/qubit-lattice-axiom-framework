@@ -1,0 +1,12 @@
+[
+ {
+  "claim": "docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "kind": "edited-full-note",
+  "text": "Fixed-background invariance: under the SUPPLIED legal tensor-factor premise that gauge links act on the lattice/color factor (operator-Schmidt analysis verifies the constructed hop blocks factorize as declared; it does not derive the premise), the qubit-factor selector is unchanged - K0 stays [1,1,1]/zero-gap, K1 stays [2,2,2]/sqrt(2)-gap with anticommuting representatives - on deterministic U(1) and SU(2) backgrounds plus the zero-background regression; the honest boundary exhibit shows plaquette data becoming background-dependent, and backgrounds acting on the qubit factor break the protection (contrast leg). July realized-kinetic-branch docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. FIREWALL (carried per the note's own boundary): tested deterministic U(1)/SU(2) fixed backgrounds only - 'No all-configuration gauge-field theorem'; and the parent residual 'the flux(-1) selector is not forced because K0 also satisfies the constraints' stands."
+ },
+ {
+  "claim": "docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "kind": "appended",
+  "text": " FIREWALL (carried per the note's own scope): the selection uses the current Admissibility variation premise plus the licensed-surface assumptions; the parent sentence 'the flux(-1) selector is not forced because K0 also satisfies the constraints' remains true for the parent's original constraint set; gauge-link backgrounds are the separate companion surface."
+ }
+]

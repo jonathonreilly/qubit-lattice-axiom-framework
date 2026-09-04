@@ -1,0 +1,18 @@
+{
+ "id": "record_composition_bridge_semigroup_positivity_selection_bounded_note_2026-07-02",
+ "title": "RECORD_COMPOSITION_BRIDGE_SEMIGROUP_POSITIVITY_SELECTION_BOUNDED_NOTE_2026-07-02",
+ "science": "The action-wall decomposition into three named unadopted premises (C-add convolution composition, POS nonnegative weights, LOC single-step locality) with the exact Z_N candidate separation: the spectral exact-Q-gen semigroup is in-class but its kernel goes negative at q = 9/10 (exact), the spatial wrap is positive but not convolution-closed, and nearest-neighbor heat (circulant(-2,1,0,0,1), Metzler) is the finite-N witness satisfying all three - the wrapped Gaussian only its un-taken limit; C-add's three governance homes mapped, owner decision. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. CARRIAGE (carried): the exact C-add independence witness - the Z_3 independent and correlated weight matrices have identical one-step row/column sums and both satisfy readout additivity, yet the correlated class-weight vector differs from p*p (unnormalized included) - the computed proof that additivity plus one-step sums do not force kernel convolution.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/RECORD_COMPOSITION_BRIDGE_SEMIGROUP_POSITIVITY_SELECTION_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/RECORD_COMPOSITION_BRIDGE_SEMIGROUP_POSITIVITY_SELECTION_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-frame-weighting-era.md (July frame/weighting/readout era (D-frame) \u2014 lane memo); carrier: archive/chains/july-frame-weighting-era.md (drafted: phase3/memos/D-frame.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-frame"
+}

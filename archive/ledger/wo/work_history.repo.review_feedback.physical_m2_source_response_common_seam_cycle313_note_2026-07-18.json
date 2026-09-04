@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.physical_m2_source_response_common_seam_cycle313_note_2026-07-18",
+ "title": "PHYSICAL_M2_SOURCE_RESPONSE_COMMON_SEAM_CYCLE313_NOTE_2026-07-18",
+ "science": "Cycle 313: first factor-certified common code carrying the accepted fixed-seam matter update, a conserved internal source, mediator emission/transport, and an endogenous occupation response (E = E_306 tensor J_Q1); exact one-update law F_total(1)=sin^2(kappa m n) distinguishing the matter-number sectors, operator-level continuity/current ledger, 51-M2 union. July source/contact/event era note (Cycles 281-334), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/PHYSICAL_M2_SOURCE_RESPONSE_COMMON_SEAM_CYCLE313_NOTE_2026-07-18.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/PHYSICAL_M2_SOURCE_RESPONSE_COMMON_SEAM_CYCLE313_NOTE_2026-07-18.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-source-era.md (July source/contact/event era, Cycles 281\u2013334 (WH-src) \u2014 lane memo); carrier: archive/chains/july-source-era.md (drafted: phase3/memos/WH-src.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-src"
+}

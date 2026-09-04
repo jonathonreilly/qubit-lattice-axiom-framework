@@ -1,0 +1,17 @@
+{
+ "id": "audit_dm_runner_stale_path_cleanup_note_2026-05-01",
+ "title": "AUDIT_DM_RUNNER_STALE_PATH_CLEANUP_NOTE_2026-05-01",
+ "science": "Executed audit-hygiene cleanup record (Block One): surgical removal of stale read() calls in 8 DM-cluster runners after the deliberate 2026-04-16 trim, 69 PASS / 0 FAIL across the cluster. Process artifact of a completed repair; carried by the runners and their per-runner caches.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/AUDIT_DM_RUNNER_STALE_PATH_CLEANUP_NOTE_2026-05-01.md",
+  "moved_to": "archive/notes/docs/AUDIT_DM_RUNNER_STALE_PATH_CLEANUP_NOTE_2026-05-01.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: the 8 cleaned DM runners + their logs/runner-cache entries + trim commit d2e754fdc provenance",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

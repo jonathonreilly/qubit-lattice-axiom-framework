@@ -1,0 +1,15 @@
+d=4, ORDINARY 4-component Wilson-Dirac (gamma_2 = i*sigma_1(x)sigma_2 -> COMPLEX gammas)
+  max|Im gamma_mu| = 1.000   (NOT real)
+  L=4, m_rho=1.0.  index_cont = n12*n34
+   (n12,n34)     gap         GW     index
+      (0, 0)   1.000   2.80e-14  -0.00000
+      (1, 1)   0.619   1.78e-14  +1.00000
+    (-1, -1)   0.619   1.60e-14  +1.00000
+     (1, -1)   0.619   1.69e-14  -1.00000
+     (-1, 1)   0.619   1.69e-14  -1.00000
+      (2, 1)   0.446   2.31e-14  +2.00000
+    (-2, -1)   0.446   2.26e-14  +2.00000
+      (1, 2)   0.446   2.22e-14  +2.00000
+  => index(n12,n34) == index(-n12,-n34) for the COMPLEX Dirac operator too.
+     In d=4 the index is quadratic in F, so evenness under total flux reversal is
+     automatic (charge conjugation) and carries NO information about reality.

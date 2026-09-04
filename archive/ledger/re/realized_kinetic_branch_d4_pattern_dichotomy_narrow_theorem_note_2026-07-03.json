@@ -1,0 +1,18 @@
+{
+ "id": "realized_kinetic_branch_d4_pattern_dichotomy_narrow_theorem_note_2026-07-03",
+ "title": "REALIZED_KINETIC_BRANCH_D4_PATTERN_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-03",
+ "science": "The D4 upgrade to a class invariant: for covariant one-coefficient-per-direction Hermitian symbols on C^2, the per-direction algebra dimension is constant across directions (unitary conjugation + axis transitivity), realizing exactly [1,1,1] (K0) and [2,2,2] (K1) - with both hypotheses proved load-bearing (off-surface pairs reach dimension 4; non-covariant symbols give [2,1,1]) and the alg_dim routine gated against a scalarness shortcut. July realized-kinetic-branch docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/REALIZED_KINETIC_BRANCH_D4_PATTERN_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-03.md",
+  "moved_to": "archive/notes/docs/REALIZED_KINETIC_BRANCH_D4_PATTERN_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-03.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-realized-kinetic-era.md (July realized-kinetic branch cluster (D-rk) \u2014 lane memo); carrier: archive/chains/july-realized-kinetic-era.md (drafted: phase3/memos/D-rk.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-rk"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "wave_static_matrixfree_shared_geometry_compare_note",
+ "title": "WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE",
+ "science": "Coverage-gap read. Bounded engine-equivalence probe: direct vs matrix-free static solvers agree to 1.2e-8/2.3e-8 max field difference with identical propagated dS at both H values; drop-in-replacement language honestly narrowed (review repair applied) to close-but-not-proven-identical finite-table a",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md",
+  "moved_to": "archive/notes/docs/WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

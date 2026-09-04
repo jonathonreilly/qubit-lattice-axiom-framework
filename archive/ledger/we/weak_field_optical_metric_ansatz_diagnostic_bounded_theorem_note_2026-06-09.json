@@ -1,0 +1,17 @@
+{
+ "id": "weak_field_optical_metric_ansatz_diagnostic_bounded_theorem_note_2026-06-09",
+ "title": "WEAK_FIELD_OPTICAL_METRIC_ANSATZ_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-09",
+ "science": "B04 c6: bounded ansatz diagnostic (supplied ansatz => R_00 = Laplacian Phi, geodesics follow -grad Phi, 1/r compatible); audit-salvage note with overclaims removed. PASS=5.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WEAK_FIELD_OPTICAL_METRIC_ANSATZ_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+  "moved_to": "archive/notes/docs/WEAK_FIELD_OPTICAL_METRIC_ANSATZ_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: FRONT record-density optical toy (the constructive version of the same step) + weak-field keep chain; group record carries the M1-M5 target checklist",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

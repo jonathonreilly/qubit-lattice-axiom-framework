@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.toe_framework_campaign_handoff_2026-07-17",
+ "title": "TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-17",
+ "science": "Interim 12h handoff (cycles 201-230 arc: mass/record separation, bound-state benchmark, proper-cubic matter rebuild, Thirring provenance audit, M64->M2 tournament spec). Carried: 07-18 handoff holds the Thirring and tournament dispositions and the six-wall state; 201-230 primaries are WH-mass holds. Memo carries the arc narrative + Cycle-230 exact result/limit as deltas. Full personal read.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-17.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-campaign-handoffs.md (July campaign handoffs (WH-camp) \u2014 lane memo); carrier: TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md + archive/chains/july-campaign-handoffs.md (memo drafted: phase3/memos/WH-camp.md)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-camp"
+}

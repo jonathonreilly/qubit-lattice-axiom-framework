@@ -1,0 +1,17 @@
+{
+ "id": "work_history.repo.review_feedback.main_revisit_sweep_2026-04-11",
+ "title": "MAIN_REVISIT_SWEEP_2026-04-11",
+ "science": "April repo-wide revisit-before-reuse map: two rows already marked Resolved, and every per-lane caution restates the retained notes' own boundary sections; lane status now lives on the lane board and the overread-prevention function is superseded by the densify front/archive structure itself.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/MAIN_REVISIT_SWEEP_2026-04-11.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/MAIN_REVISIT_SWEEP_2026-04-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/work_history/repo/LANE_STATUS_BOARD.md + the retained per-lane notes' own boundary/claim-scope sections",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

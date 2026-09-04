@@ -1,0 +1,17 @@
+{
+ "id": "moonshot_frontier_brainstorm_note",
+ "title": "MOONSHOT_FRONTIER_BRAINSTORM_NOTE",
+ "science": "2026-04-05 moonshot brainstorm (5 candidates + ranking), cleanly superseded the same week by the V2 portfolio which re-ranks the identical program with the reopened-bridge context. Superseded-version archive per the ROOTING 05-26->05-27 precedent.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MOONSHOT_FRONTIER_BRAINSTORM_NOTE.md",
+  "moved_to": "archive/notes/docs/MOONSHOT_FRONTIER_BRAINSTORM_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/MOONSHOT_FRONTIER_BRAINSTORM_V2_NOTE.md (updated portfolio carrying all five candidates re-ranked)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

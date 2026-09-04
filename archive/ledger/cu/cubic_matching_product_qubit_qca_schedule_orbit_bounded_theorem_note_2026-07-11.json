@@ -1,0 +1,18 @@
+{
+ "id": "cubic_matching_product_qubit_qca_schedule_orbit_bounded_theorem_note_2026-07-11",
+ "title": "CUBIC_MATCHING_PRODUCT_QUBIT_QCA_SCHEDULE_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-11",
+ "science": "The 720-schedule classification of six-matching macro-ticks: CZ gives one translation/cubic-invariant radius-one automorphism (schedule seam closes); iSWAP gives exactly eight radius-six macro-ticks (90 schedules each) in one proper-cubic/cyclic orbit with NO member invariant under every unit translation - isolating gate commutation and clock graining as load-bearing process content, with the exact reversal-inverse identity and the L=4 collapse control. July QCA/cubic-classification-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/CUBIC_MATCHING_PRODUCT_QUBIT_QCA_SCHEDULE_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "moved_to": "archive/notes/docs/CUBIC_MATCHING_PRODUCT_QUBIT_QCA_SCHEDULE_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-qca-cubic-era.md (July QCA/cubic classification era (D-qca) \u2014 lane memo); carrier: archive/chains/july-qca-cubic-era.md (drafted: phase3/memos/D-qca.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-qca"
+}

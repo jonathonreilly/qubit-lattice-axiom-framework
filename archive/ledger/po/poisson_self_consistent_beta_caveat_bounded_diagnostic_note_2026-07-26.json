@@ -1,0 +1,18 @@
+{
+ "id": "poisson_self_consistent_beta_caveat_bounded_diagnostic_note_2026-07-26",
+ "title": "POISSON_SELF_CONSISTENT_BETA_CAVEAT_BOUNDED_DIAGNOSTIC_NOTE_2026-07-26",
+ "science": "Bounded diagnosis of the self-consistent-Poisson caveat: the parent propagator's per-layer normalization forces exactly uniform x-layer mass 1/N (RMS_x = sqrt((N^2+2)/12) - the source spans the box, never a point source); the beta fit includes source-interior radii; the cited distance-law script computes a different observable; the withdrawn continuum-convergence sentence stays withdrawn and the susceptibility-bridge repair target stays open. July mass/source/Poisson-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/POISSON_SELF_CONSISTENT_BETA_CAVEAT_BOUNDED_DIAGNOSTIC_NOTE_2026-07-26.md",
+  "moved_to": "archive/notes/docs/POISSON_SELF_CONSISTENT_BETA_CAVEAT_BOUNDED_DIAGNOSTIC_NOTE_2026-07-26.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-source-poisson-era.md (July mass/source/Poisson era (D-mass) \u2014 lane memo); carrier: archive/chains/july-mass-source-poisson-era.md (drafted: phase3/memos/D-mass.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-mass"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "gauge_sd_loop_equation_beta_coupled_plaquette_bracket_note_2026-07-10",
+ "title": "GAUGE_SD_LOOP_EQUATION_BETA_COUPLED_PLAQUETTE_BRACKET_NOTE_2026-07-10",
+ "science": "The repo-owned beta-coupled SDP door opened: derived SU(3) Wilson Schwinger-Dyson identity (four-way validated, spec bug <chi^2 chibar>=0 corrected), exact-rational model, the all-ones refutation with uniform margin +4/3 = C2 on all 12 equations, and the certified D=2 bracket [-0.50000005, 0.903482039] with exact LDLT certificates; D=4 stays floating disclosure only - the beta=6 gate is machinery-open, not closed. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. CORRECTION (carried to block downstream reinheritance): the build-lane target <chi^2 chibar> = 1 is WRONG; N-ality and 3x3x3bar = 3+3+6bar+15 give the exact Haar mean <chi^2 chibar> = 0.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/GAUGE_SD_LOOP_EQUATION_BETA_COUPLED_PLAQUETTE_BRACKET_NOTE_2026-07-10.md",
+  "moved_to": "archive/notes/docs/GAUGE_SD_LOOP_EQUATION_BETA_COUPLED_PLAQUETTE_BRACKET_NOTE_2026-07-10.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

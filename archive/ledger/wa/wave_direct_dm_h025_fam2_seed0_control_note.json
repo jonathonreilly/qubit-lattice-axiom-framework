@@ -1,0 +1,17 @@
+{
+ "id": "wave_direct_dm_h025_fam2_seed0_control_note",
+ "title": "WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE",
+ "science": "Fam2/seed0 H=0.25 control ladder (R~-23%, spread 6.67%); data row fully reproduced in the three-family transfer freeze + transfer diagnostic; per-row runner/SHA artifact chain stays re-findable in the archive.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
+  "moved_to": "archive/notes/docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

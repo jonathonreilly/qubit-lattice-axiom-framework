@@ -1,0 +1,18 @@
+{
+ "id": "acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02",
+ "title": "ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02",
+ "science": "Pointer-labeled refinement upgrades the registrable content from cos(3 delta) to |delta| (the singlet removes the relabel quotient), and the finer character record identifies the doublet clock: phase advance exactly 2 sqrt(3)|b| sin(delta) per native step, with the K-real locus exactly the zero-clock set - delta typed as an R-valued angle-native rate; the |b| unit stays free (rescale wall verbatim). July AC_phi_lambda/R-eta campaign docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and the campaign's residue lives on the two FRONT open-gate obligation files. BOUNDARY (attack-pass D dispute, verified): the doublet clock omega = 2 sqrt(3)|b| sin(delta) vanishes exactly at delta = k pi, a PROPER SUBSET of the modulus-stationary set delta = k pi/3 (at delta = pi/3, omega = 3|b| != 0); the note's 'degenerate stationary points stop the clock' full-set identification is false as stated.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md",
+  "moved_to": "archive/notes/docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-acphilambda-reta-era.md (July AC_phi_lambda / R-eta era (D-acl) \u2014 lane memo); carrier: archive/chains/july-acphilambda-reta-era.md (drafted: phase3/memos/D-acl.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the campaign's live residue is the two standing open-gate obligation files (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-acl"
+}

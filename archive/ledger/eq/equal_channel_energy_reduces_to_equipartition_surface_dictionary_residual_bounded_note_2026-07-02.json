@@ -1,0 +1,18 @@
+{
+ "id": "equal_channel_energy_reduces_to_equipartition_surface_dictionary_residual_bounded_note_2026-07-02",
+ "title": "EQUAL_CHANNEL_ENERGY_REDUCES_TO_EQUIPARTITION_SURFACE_DICTIONARY_RESIDUAL_BOUNDED_NOTE_2026-07-02",
+ "science": "Conditional ladder collapse: equal registered weight on the equipartition cells + E-ident + R* selecting the component dictionary => equal Hilbert-Schmidt channel energy => r=1/2, Q=2/3 - the equal-channel-energy clause reduces to the named unadjudicated premises E-ident and R*, with the S3 value 17/2-6sqrt(2) standing outside the two-dictionary pair. July mass/source/Poisson-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/EQUAL_CHANNEL_ENERGY_REDUCES_TO_EQUIPARTITION_SURFACE_DICTIONARY_RESIDUAL_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/EQUAL_CHANNEL_ENERGY_REDUCES_TO_EQUIPARTITION_SURFACE_DICTIONARY_RESIDUAL_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-source-poisson-era.md (July mass/source/Poisson era (D-mass) \u2014 lane memo); carrier: archive/chains/july-mass-source-poisson-era.md (drafted: phase3/memos/D-mass.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-mass"
+}

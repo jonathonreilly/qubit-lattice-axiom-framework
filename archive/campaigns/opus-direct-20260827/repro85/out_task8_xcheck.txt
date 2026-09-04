@@ -1,0 +1,7 @@
+d=2 cross-check: SVD-polar index vs hermitian-sign index (must agree)
+  n=1 grade G     : SVD=-0.00000  herm-sign=-0.00000  gap=0.951 GW=4.44e-15
+  n=1 Clifford CL : SVD=+2.00000  herm-sign=+2.00000  gap=0.951 GW=4.44e-15
+  n=2 grade G     : SVD=-0.00000  herm-sign=-0.00000  gap=0.900 GW=8.44e-15
+  n=2 Clifford CL : SVD=+4.00000  herm-sign=+4.00000  gap=0.900 GW=6.66e-15
+  n=3 grade G     : SVD=+0.00000  herm-sign=-0.00000  gap=0.849 GW=4.88e-15
+  n=3 Clifford CL : SVD=+6.00000  herm-sign=+6.00000  gap=0.849 GW=5.33e-15

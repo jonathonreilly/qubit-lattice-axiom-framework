@@ -1,0 +1,17 @@
+{
+ "id": "wave_direct_dm_h025_high_band_boundary_note",
+ "title": "WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE",
+ "science": "First fine-H boundary diagnosis (Fam1/seed0 falls -42%->-20.12%, late-gain compression not sign loss); the coarse-to-fine mechanism is carried by the transfer diagnostic and the (audit-narrowed) syntheses.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md",
+  "moved_to": "archive/notes/docs/WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,14 @@
+PRE-REGISTERED PREDICTION for T220, written before the run finished.
+
+Ordered phase (lam = 1 > lam_c):  the broken continuous symmetry gives transverse
+Goldstone modes whose free-energy cost is rho_s k^2.  Single-site Metropolis does
+NOT conserve the order parameter, so this is model-A relaxation:
+      Gamma(k) = Gamma_0 * rho_s * k^2        =>  z = 2   (DIFFUSIVE)
+
+Disordered phase (lam = 0.5 < lam_c):  finite correlation length xi, so
+      Gamma(k) = Gamma_0 (xi^-2 + k^2)  ->  Gamma_0 xi^-2  as k -> 0
+i.e. Gamma(k_min) SATURATES and is L-independent  =>  z ~ 0   (CONTROL)
+
+If lam=1 returns z ~ 2 and lam=0.5 returns z ~ 0, the measurement is sound and
+the RK dynamics is Schrodinger-like, NOT relativistic (which needs z = 1).
+If lam=0.5 again returns a nonzero z, the measurement is still broken.

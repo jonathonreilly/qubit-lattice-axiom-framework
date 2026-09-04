@@ -1,0 +1,18 @@
+{
+ "id": "heat_kernel_gauge_action_native_rp_plane_character_positivity_all_compact_groups_narrow_theorem_note_2026-07-09",
+ "title": "HEAT_KERNEL_GAUGE_ACTION_NATIVE_RP_PLANE_CHARACTER_POSITIVITY_ALL_COMPACT_GROUPS_NARROW_THEOREM_NOTE_2026-07-09",
+ "science": "Heat-kernel gauge weight: coefficient positivity is manifest from the spectral definition for every compact group, the plane factor is a norm-square kernel, and the two-slice RP Gram runs natively (Z_N exact, U(1) quadrature, SU(2)/SU(3) seeded MC); also retracts the earlier Wilson group-dependent obstruction framing - the representation-ring route gives Wilson positivity too. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. SCOPE (corrected): H1 is scoped to every compact LIE group carrying the specified positive bi-invariant Laplacian (finite/abelian testbeds use separately specified nonnegative central generators) - not bare 'every compact group'.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/HEAT_KERNEL_GAUGE_ACTION_NATIVE_RP_PLANE_CHARACTER_POSITIVITY_ALL_COMPACT_GROUPS_NARROW_THEOREM_NOTE_2026-07-09.md",
+  "moved_to": "archive/notes/docs/HEAT_KERNEL_GAUGE_ACTION_NATIVE_RP_PLANE_CHARACTER_POSITIVITY_ALL_COMPACT_GROUPS_NARROW_THEOREM_NOTE_2026-07-09.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

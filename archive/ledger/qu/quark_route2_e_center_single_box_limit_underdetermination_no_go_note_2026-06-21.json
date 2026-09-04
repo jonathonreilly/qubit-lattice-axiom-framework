@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_e_center_single_box_limit_underdetermination_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_E_CENTER_SINGLE_BOX_LIMIT_UNDERDETERMINATION_NO_GO_NOTE_2026-06-21",
+ "science": "B02 c4: single-box exactification pruned; scoped honestly (does not reject the measured-calibration program). PASS=45 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_E_CENTER_SINGLE_BOX_LIMIT_UNDERDETERMINATION_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_E_CENTER_SINGLE_BOX_LIMIT_UNDERDETERMINATION_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: finite-size arm of the group record (executable witness: L_alt=469/250 law matches q_15 exactly, converges elsewhere)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

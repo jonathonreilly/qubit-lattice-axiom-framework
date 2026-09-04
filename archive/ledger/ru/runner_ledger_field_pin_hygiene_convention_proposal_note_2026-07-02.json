@@ -1,0 +1,18 @@
+{
+ "id": "runner_ledger_field_pin_hygiene_convention_proposal_note_2026-07-02",
+ "title": "RUNNER_LEDGER_FIELD_PIN_HYGIENE_CONVENTION_PROPOSAL_NOTE_2026-07-02",
+ "science": "Workflow convention proposal from the 182-stale-green sweep: no equality pins on audit-authored field content (H1), status freshness via retained-grade membership sets not exact tiers (H2), report-only reads unrestricted (H3), census pins need a maintenance pattern (H4) - with the nine live pinning runners named and compliant exemplars shown; adoption is audit-decided. July meta/process-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. TEMPORAL BOUNDARY (carried): the nine named runners are a dated 2026-07-24 re-measurement, not a claim of current live/unrepaired status - 'a name appearing here is not a claim that the instance is still unrepaired'; the live runner recomputes the census.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/RUNNER_LEDGER_FIELD_PIN_HYGIENE_CONVENTION_PROPOSAL_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/RUNNER_LEDGER_FIELD_PIN_HYGIENE_CONVENTION_PROPOSAL_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-meta-process-era.md (July meta/process era + small singletons (D-meta) \u2014 lane memo); carrier: archive/chains/july-meta-process-era.md (drafted: phase3/memos/D-meta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-meta"
+}

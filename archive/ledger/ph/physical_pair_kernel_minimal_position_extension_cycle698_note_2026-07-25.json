@@ -1,0 +1,18 @@
+{
+ "id": "physical_pair_kernel_minimal_position_extension_cycle698_note_2026-07-25",
+ "title": "PHYSICAL_PAIR_KERNEL_MINIMAL_POSITION_EXTENSION_CYCLE698_NOTE_2026-07-25",
+ "science": "Cycle 698: read strictly, Record additivity kills every irreducible multi-record readout term (every pair coefficient exactly zero on the exact solve); the minimal relational position-carrying extension is a two-body kernel, one constant at range 1 under covariance; the pair readout is additive at separation and fails exactly on contact (defect = cross bonds); the field is the marginal readout cost of a test record, and the induced operator is exactly 6I + Delta - the reading of 'pairwise-disjoint' flagged as load-bearing and unruled. July meta/process-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. EPOCH (carried): the multi-record-coefficient-zero derivation holds under the note's STRICT reading of pairwise-disjoint (disjoint means distinct); under its separated reading a nearest-neighbor pair term is compatible with the clause. It quoted the former Record sentence 'scalar readout I is additive, with I(empty)=0', REMOVED 2026-08-13 - fresh review required on any live use. SCOPE (carried): the one-constant range-1 pair kernel is classified WITHIN the note's four supplied hypotheses (rational scalar/module; linear unordered-pair sum; finite support; translation/proper-cubic covariance), none supplied by the axioms for a downstream law. LIVE DISCRIMINATOR (carried): pairs(A u B) - pairs(A) - pairs(B) = cross_bonds(A,B) - directly relevant to the standing C-add record-composition fork.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/PHYSICAL_PAIR_KERNEL_MINIMAL_POSITION_EXTENSION_CYCLE698_NOTE_2026-07-25.md",
+  "moved_to": "archive/notes/docs/PHYSICAL_PAIR_KERNEL_MINIMAL_POSITION_EXTENSION_CYCLE698_NOTE_2026-07-25.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-meta-process-era.md (July meta/process era + small singletons (D-meta) \u2014 lane memo); carrier: archive/chains/july-meta-process-era.md (drafted: phase3/memos/D-meta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the source-action budget thread's successor is the gravity/source mainline (blocks 153-173, FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-meta"
+}

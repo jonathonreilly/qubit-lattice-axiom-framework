@@ -1,0 +1,18 @@
+{
+ "id": "factorization_object_api_support_note_2026-07-28",
+ "title": "FACTORIZATION_OBJECT_API_SUPPORT_NOTE_2026-07-28",
+ "science": "Exact finite-box support contract: reconstructs the Cycle-720 mixed-gauge factorization through the landed runner's public helpers into one frozen FactorizationObject (signed W/V rows, logical/gauge/center counts, decoded coordinates), bound to the landed tableau digest with seven-fixture oracles - no new physics, no landed-source edit. Late-July Born/POVM/truncated-Fock support-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/FACTORIZATION_OBJECT_API_SUPPORT_NOTE_2026-07-28.md",
+  "moved_to": "archive/notes/docs/FACTORIZATION_OBJECT_API_SUPPORT_NOTE_2026-07-28.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-born-povm-support-era.md (late-July Born/POVM/truncated-Fock support era (D-born) \u2014 lane memo); carrier: archive/chains/july-born-povm-support-era.md (drafted: phase3/memos/D-born.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-born"
+}

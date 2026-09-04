@@ -1,0 +1,17 @@
+{
+ "id": "source_measure_planck_action_rn_source_unit_bridge_note_2026-05-30",
+ "title": "SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30",
+ "science": "B02 c7: bounded bridge, honest hinge; routes through scale-reference primitive (2026-07-11 rerouting header present).",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30.md",
+  "moved_to": "archive/notes/docs/SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: PCAL retirement synthesis (FRONT) + group record (action coordinate S/kappa_Pl = RN coordinate; hinge narrowed to 'is the physical top source the one-Planck-act",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

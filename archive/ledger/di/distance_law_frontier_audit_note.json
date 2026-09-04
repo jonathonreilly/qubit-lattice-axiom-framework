@@ -1,0 +1,17 @@
+{
+ "id": "distance_law_frontier_audit_note",
+ "title": "DISTANCE_LAW_FRONTIER_AUDIT_NOTE",
+ "science": "Self-declared metadata/support index over the retained distance-law inputs \u2014 audit re-tiered it to support, and the revision itself states its summary rows are non-load-bearing pointers with authoritative status living in each cited input's own row. Pure pointer surface with no runner.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/DISTANCE_LAW_FRONTIER_AUDIT_NOTE.md",
+  "moved_to": "archive/notes/docs/DISTANCE_LAW_FRONTIER_AUDIT_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md + docs/GATE_B_H025_DISTANCE_LAW_NOTE.md + docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md (the cited inputs whose own rows car",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

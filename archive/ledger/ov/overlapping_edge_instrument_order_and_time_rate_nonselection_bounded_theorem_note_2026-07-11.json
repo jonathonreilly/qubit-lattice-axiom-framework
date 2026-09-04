@@ -1,0 +1,18 @@
+{
+ "id": "overlapping_edge_instrument_order_and_time_rate_nonselection_bounded_theorem_note_2026-07-11",
+ "title": "OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11",
+ "science": "The schedule fork: identical normalized five-outcome edge instruments on overlapping supports give different CPTP channels per order (exact diagonals at q = 1/3; the rank-4 SWAP commutator as cause), first-nonempty stopping is a separate priority layer, and the symmetrized rule is a third distinct channel - with the DAG interchange theorem as the positive branch, the six-matching proper-cubic family exhibited as symmetry-stable but unordered on finite cubic tori of even side L >= 4 only (L = 2 excluded; a combinatorial schedule family, not a simultaneous cubic QCA), and the exact clock-rescaling freedom (only lambda Delta-t = -log q fixed) proving event order supplies no time or rate. July record-formation/occurrence/instrument-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "moved_to": "archive/notes/docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-record-formation-era.md (July record formation/occurrence/instrument era (D-rec) \u2014 lane memo); carrier: archive/chains/july-record-formation-era.md (drafted: phase3/memos/D-rec.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the record-formation/time thread's live successor is the causal-time lane record (Cycles 610-679, FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-rec"
+}

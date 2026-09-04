@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_theta_slice_channel_density_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_THETA_SLICE_CHANNEL_DENSITY_NO_GO_NOTE_2026-06-21",
+ "science": "N2 CONFIRM ARCHIVE on full read: the theta-to-slice law is ratio-preserving (common V_R(t) factor): it transports whatever source ratio was supplied and cannot create the channel-dependent factor - transport is not generation. Honest scoped route-pruning of the single rho_E residual; fully indexed b",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_THETA_SLICE_CHANNEL_DENSITY_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_THETA_SLICE_CHANNEL_DENSITY_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

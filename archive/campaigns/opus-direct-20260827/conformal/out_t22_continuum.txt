@@ -1,0 +1,9 @@
+T22  < sqrt(g) R >  to O(A^2)  = A**2*k**2*(a1*a2 + a1*a3 + a2*a3)/4
+
+Traceback (most recent call last):
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-gravity-toe-lane-work-427b0b/25068357-42e8-431c-96c9-c149512f0305/scratchpad/t22_continuum.py", line 33, in <module>
+    cont=float(avg.subs({A:AMP,k:kv,al[0]:a[0],al[1]:a[1],al[2]:a[2],al[3]:a[3]}))*Vol
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/expr.py", line 375, in __float__
+    raise TypeError("Cannot convert expression to float")
+TypeError: Cannot convert expression to float

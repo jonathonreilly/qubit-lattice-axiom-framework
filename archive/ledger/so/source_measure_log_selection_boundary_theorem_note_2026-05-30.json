@@ -1,0 +1,17 @@
+{
+ "id": "source_measure_log_selection_boundary_theorem_note_2026-05-30",
+ "title": "SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30",
+ "science": "THREAD-READ (T9): the lambda-scale no-go \u2014 scaled RN family valid for every lambda>0 (score lambda*O, Fisher lambda^2 I_1); product composition gives c log Z with c free; physical-lattice and Planck-anchor routes checked and orthogonal; three closure paths named; feeds the P-cal owner question",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md",
+  "moved_to": "archive/notes/docs/SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: the P1P2 two-stage synthesis (RESCUE-FRONT) anchors the wall; this is its RN-coordinates form",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

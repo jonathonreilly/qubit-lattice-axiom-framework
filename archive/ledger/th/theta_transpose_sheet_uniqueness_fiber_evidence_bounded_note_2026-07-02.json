@@ -1,0 +1,18 @@
+{
+ "id": "theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02",
+ "title": "THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02",
+ "science": "The sheet sliver (i-b''-a') strengthened on three angles short of proof: two-family fiber search (38 converged solutions, wired refutation path, no second branch), matching deterministic rigidity certificates on both sheets (transpose isometry signature), and computed low-multidegree singlet counts pair-generated - honestly scoped as evidence, never citable as a uniqueness proof. July theta defect/phase/determinant-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. PAYLOAD (carried): 38 converged fiber solutions across two families with a wired counterexample path; both-sheet singular-value certificates; low-multidegree singlet dimensions 1/2/2 with ONLY the two even quartic spaces pair-generated - the 3x3x3 epsilon channel is not an even pair-generated channel.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-theta-era.md (July theta defect/phase/determinant era (D-theta) \u2014 lane memo); carrier: archive/chains/july-theta-era.md (drafted: phase3/memos/D-theta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-theta"
+}

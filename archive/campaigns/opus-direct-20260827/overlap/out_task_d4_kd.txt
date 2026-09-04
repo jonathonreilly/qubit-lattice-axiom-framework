@@ -1,0 +1,10 @@
+d=4 Clifford chirality CL = G1G2G3G4: herm=0.0e+00 CL^2-I=0.0e+00 {CL,Gam}=0.0e+00 TrCL=0.00 conj(CL)-CL=0.0e+00
+grade chirality G: conj(G)-G=0.0e+00  TrG=0.00
+  (n12,n34)=(0,0)  Wilson f=4 : chirherm=0.0e+00 GW=2.80e-14 gap=1.000 index=-0.000000   [1s]
+                        KD f=16   : GW=3.95e-14 gap=1.000 index(grade G)=-0.000000  index(Clifford CL)=-0.000000   [134s]
+  (n12,n34)=(1,1)  Wilson f=4 : chirherm=0.0e+00 GW=1.78e-14 gap=0.619 index=+1.000000   [1s]
+                        KD f=16   : GW=4.04e-14 gap=0.619 index(grade G)=-0.000000  index(Clifford CL)=-4.000000   [129s]
+  (n12,n34)=(1,2)  Wilson f=4 : chirherm=0.0e+00 GW=2.22e-14 gap=0.446 index=+2.000000   [1s]
+                        KD f=16   : GW=3.69e-14 gap=0.446 index(grade G)=-0.000000  index(Clifford CL)=-8.000000   [120s]
+  (n12,n34)=(2,1)  Wilson f=4 : chirherm=0.0e+00 GW=2.31e-14 gap=0.446 index=+2.000000   [1s]
+                        KD f=16   : GW=4.80e-14 gap=0.446 index(grade G)=-0.000000  index(Clifford CL)=-8.000000   [115s]

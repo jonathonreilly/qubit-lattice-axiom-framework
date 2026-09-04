@@ -1,0 +1,17 @@
+{
+ "id": "grown_wavefield_companion_note",
+ "title": "GROWN_WAVEFIELD_COMPANION_NOTE",
+ "science": "Coverage-gap read. Small April-era bounded no-go control: the fixed-field grown-row replay (drift 0.2, restore 0.7) preserves exact zero-source reduction but the promoted phase-ramp observable is too weak (R^2 ~ 0.29-0.30) to count as a review-safe grown-row transfer of the exact-lattice wavefield m",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/GROWN_WAVEFIELD_COMPANION_NOTE.md",
+  "moved_to": "archive/notes/docs/GROWN_WAVEFIELD_COMPANION_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.autonomous_homogeneous_binary_nucleation_note_2026-07-14",
+ "title": "AUTONOMOUS_HOMOGENEOUS_BINARY_NUCLEATION_NOTE_2026-07-14",
+ "science": "Nucleation control: an exactly symmetric blank neighborhood cannot self-activate under a deterministic equivariant local rule; a seed or prior record is load-bearing. July foundations-era note, personally read in full 2026-09-04; released behind the lane memo per the ratified July method. FULL RESULT (corrected + carried - live input to the A0 bootstrap dichotomy): a seed is load-bearing only for the deterministic equivariant-map subcase; the note's main positive result is a SEEDLESS translation-stationary proper-cubic-covariant positive-density nucleation law from the all-open condition via IID continuous local marks with strict local-minimum acceptance (densest tested activity: one event per 15,225 sites; 10 initial/14 completed records per packet; 24 frames x 16 words; 16-site E/I-E binary packet carrier repair) - 'homogeneity can be preserved without a first spatial seed, but not without an occurrence law and an actual history'; nearest-neighbour/ephemeral-mark/reference-transport obligations remain.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/AUTONOMOUS_HOMOGENEOUS_BINARY_NUCLEATION_NOTE_2026-07-14.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/AUTONOMOUS_HOMOGENEOUS_BINARY_NUCLEATION_NOTE_2026-07-14.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-foundations-era.md (July foundations / exact-law era (WH-found) \u2014 lane memo); carrier: archive/chains/july-foundations-era.md (drafted: phase3/memos/WH-found.md) + TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-found"
+}

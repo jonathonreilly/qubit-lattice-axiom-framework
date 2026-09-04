@@ -1,0 +1,17 @@
+{
+ "id": "architecture_options",
+ "title": "ARCHITECTURE_OPTIONS",
+ "science": "Early undated planning menu of gravity/decoherence fix candidates (G1-G3, D1-D4) with pros/cons and priority order, no results \u2014 a design scout whose options were subsequently executed or superseded by the April architecture lanes. Pure planning surface.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ARCHITECTURE_OPTIONS.md",
+  "moved_to": "archive/notes/docs/ARCHITECTURE_OPTIONS.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: the April 2026 decoherence/gravity architecture probe notes that executed these candidates (multi-local environment, coarse-graining, and spatial-trace lanes)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "flagship_paper_contribution_statement_note",
+ "title": "FLAGSHIP_PAPER_CONTRIBUTION_STATEMENT_NOTE",
+ "science": "Owner directive 2026-09-03: no publishing until the TOE is complete \u2014 publication-facing surfaces are archive class. This is explicitly a framing-only note ('does NOT claim a new physics result'); the audit-safe-claim framing is carried by the executed publication package. Supersedes the batch-36 FR",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/FLAGSHIP_PAPER_CONTRIBUTION_STATEMENT_NOTE.md",
+  "moved_to": "archive/notes/docs/FLAGSHIP_PAPER_CONTRIBUTION_STATEMENT_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/publication/ci3_z3/CLAIMS_TABLE.md + docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02",
+ "title": "REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02",
+ "science": "The conditional registration theorem: K0 has exact record-availability vacuity (C*I supplies no nontrivial projector - only the constant map is realizable), K1's direction-tagged maximal abelian algebras supply the explicit Gamma_mu eigen-projector availability map, so pointwise at any supplied realized state whose record stack contains a neighbor-conditioned qubit record, the realized kinetic class is K1 - registered by the record stack, not forced by the axioms; the parent one-bit selector residual preserved. July realized-kinetic-branch docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-realized-kinetic-era.md (July realized-kinetic branch cluster (D-rk) \u2014 lane memo); carrier: archive/chains/july-realized-kinetic-era.md (drafted: phase3/memos/D-rk.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-rk"
+}

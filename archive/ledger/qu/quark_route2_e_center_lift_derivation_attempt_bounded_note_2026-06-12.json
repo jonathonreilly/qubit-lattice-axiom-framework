@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_e_center_lift_derivation_attempt_bounded_note_2026-06-12",
+ "title": "QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12",
+ "science": "THREAD-READ (T2): the June-12 consolidation \u2014 definitional chain proving denominator 6 = support center-excess step (not color), wrong-structure falsifier table (Nc=2 => 22/3 etc.), route inventory, W1 (exact E-row) / W2 (typed signed bridge) / W3 (kappa_EW) walls with closure relations",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas (FRONT); W1/W2/W3 wall decomposition restated by the 06-21 sweep",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

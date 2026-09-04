@@ -1,0 +1,18 @@
+{
+ "id": "single_step_locality_excludes_quadratic_generator_bounded_note_2026-07-02",
+ "title": "SINGLE_STEP_LOCALITY_EXCLUDES_QUADRATIC_GENERATOR_BOUNDED_NOTE_2026-07-02",
+ "science": "The locality/Q-gen tension theorem: finite step sets on U(1) have bounded psi and cannot be quadratic; on every finite Z_N the nearest-step ratio is psi(2)/psi(1) = 4 cos^2(pi/N), with exact deficit 4 sin^2(pi/N) > 0; full-basis Z_N matching exists but with signed weights in every tested case (N = 5,7,8,9,12) - sharpening the action question to the trichotomy (extended signed steps / continuum-flavored limit / reject the bridge), no horn selected. July kernel/semigroup/admissibility-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SINGLE_STEP_LOCALITY_EXCLUDES_QUADRATIC_GENERATOR_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/SINGLE_STEP_LOCALITY_EXCLUDES_QUADRATIC_GENERATOR_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-kernel-rule-era.md (July kernel/semigroup/admissibility era (D-ker) \u2014 lane memo); carrier: archive/chains/july-kernel-rule-era.md (drafted: phase3/memos/D-ker.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-ker"
+}

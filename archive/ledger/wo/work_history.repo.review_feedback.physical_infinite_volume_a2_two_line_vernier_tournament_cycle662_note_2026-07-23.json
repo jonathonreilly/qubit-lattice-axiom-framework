@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_note_2026-07-23",
+ "title": "PHYSICAL_INFINITE_VOLUME_A2_TWO_LINE_VERNIER_TOURNAMENT_CYCLE662_NOTE_2026-07-23",
+ "science": "Cycle 662: theta_b^inf = -2.97557598922 with controlled error 8.5e-9 (finite-L decay e^{-0.58L}); the second A2 line exists cross-L at theta_2^inf = +0.31368 +- 2e-5 via the branch-tracked worker grid, superseding Cycle 629's +0.29998 (artifact near-zero) and condemning global-min estimation inside continuum windows; two-line lawful-domain certificate (DFT peaks 455/60); vernier gold row alpha=-0.7439 -> R_rec=1.24996 -> 5:4 under the Cycle-612 association caveat; sorted-pair reconstruction failure repaired by Cycle 675. Late-July note (Cycles 572-675), personally read in full 2026-09-04; released behind the lane memo - its conclusions are carried at full strength on the FRONT successor lane records. FIREWALL (carried per the note's own N-discipline): the L=infinity values are quadrature/extrapolation-controlled numerical statements, not the open rigorous infinite-volume spectral theorem; a spectral line is not energy.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/PHYSICAL_INFINITE_VOLUME_A2_TWO_LINE_VERNIER_TOURNAMENT_CYCLE662_NOTE_2026-07-23.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/PHYSICAL_INFINITE_VOLUME_A2_TWO_LINE_VERNIER_TOURNAMENT_CYCLE662_NOTE_2026-07-23.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-late-cycles.md (late-July cycles 572\u2013675 (WH-late) \u2014 lane memo); carrier: archive/chains/july-late-cycles.md (drafted: phase3/memos/WH-late.md) + the causal-time lane record (Cycles 610-679, FRONT; the two-line keystone these notes established)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-late"
+}

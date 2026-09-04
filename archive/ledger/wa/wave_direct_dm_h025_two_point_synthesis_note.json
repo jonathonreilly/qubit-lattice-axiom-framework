@@ -1,0 +1,17 @@
+{
+ "id": "wave_direct_dm_h025_two_point_synthesis_note",
+ "title": "WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE",
+ "science": "Fam1 fine-pair synthesis, audit-narrowed 2026-05-27 to the two controlled rows (coarse-to-fine mechanism claims removed for provenance); those rows are reproduced in the three-family freeze. Evidence row.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
+  "moved_to": "archive/notes/docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

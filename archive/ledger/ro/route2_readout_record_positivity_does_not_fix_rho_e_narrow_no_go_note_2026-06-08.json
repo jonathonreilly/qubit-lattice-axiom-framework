@@ -1,0 +1,17 @@
+{
+ "id": "route2_readout_record_positivity_does_not_fix_rho_e_narrow_no_go_note_2026-06-08",
+ "title": "ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08",
+ "science": "THREAD-READ (T2): registration/idempotency/positivity are norm/sign conditions; O(2) rotation preserves norm while sweeping rho_E over the line; additive I-scalar column-sum convention forces the arbitrary rho_E=1; distinguishing-input residual named. Status quotes in its tier table are June-era sna",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md",
+  "moved_to": "archive/notes/docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas (FRONT); the O(2) norm-vs-direction structural reason is restated in the later sweep",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

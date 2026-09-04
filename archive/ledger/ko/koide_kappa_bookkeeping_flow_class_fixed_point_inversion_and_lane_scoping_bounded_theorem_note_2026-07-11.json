@@ -1,0 +1,18 @@
+{
+ "id": "koide_kappa_bookkeeping_flow_class_fixed_point_inversion_and_lane_scoping_bounded_theorem_note_2026-07-11",
+ "title": "KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11",
+ "science": "The kappa flow class (repaired 07-12): agreement-conditioned squaring induces f_kappa(r) = kappa r^2 with fixed set {0, 1/kappa, infinity}, every member linearly conjugate to the square map with multiplier 2; the submitted partition-binary identification and lane-scoping corollary are withdrawn - kappa = 1, 2 are bare evaluations, the quark comparator table is report-only, and no physical kappa is selected. July flavor/CKM/color/species-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "moved_to": "archive/notes/docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-flavor-species-era.md (July flavor/CKM/color/species era (D-flav) \u2014 lane memo); carrier: archive/chains/july-flavor-species-era.md (drafted: phase3/memos/D-flav.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-flav"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_non_color_e_center_source_primitive_firewall_note_2026-06-21",
+ "title": "QUARK_ROUTE2_NON_COLOR_E_CENTER_SOURCE_PRIMITIVE_FIREWALL_NOTE_2026-06-21",
+ "science": "N2 CONFIRM ARCHIVE on full read: the non-color bank audit (eight surfaces tabulated): E-center-blind constraints have identical signatures for every rho_E; the missing fourth direction is exactly E-center minus E-shell = (0,0,1/6,0); PASS=76. Honest scoped route-pruning of the single rho_E residual;",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_NON_COLOR_E_CENTER_SOURCE_PRIMITIVE_FIREWALL_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_NON_COLOR_E_CENTER_SOURCE_PRIMITIVE_FIREWALL_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "two_band_bdg_strict_time_flat_spectrum_and_cubic_scalar_boundary_bounded_theorem_note_2026-07-12",
+ "title": "TWO_BAND_BDG_STRICT_TIME_FLAT_SPECTRUM_AND_CUBIC_SCALAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12",
+ "science": "For any 2x2 torus-Hermitian finite-Laurent generator: strict at one nonzero time iff flat spectrum iff strict at all times (no isolated strict time - determinant winding plus essential-singularity argument); scalar one-mode proper-cubic nearest-neighbor BdG kills pairing and forces onsite flow; Kitaev and doubled 16-mode spinorial-cubic escapes prevent overreach - continuum consequence: this class must permit quasilocal tails or shrinking steps. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. CONDITION (carried): the consequence is conditional and disjunctive - IF the controlled continuum campaign keeps this two-band common-generator class, it must permit quasilocal tails OR use a shrinking step with a stated convergence topology; multiband and partitioned-tick routes remain open.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/TWO_BAND_BDG_STRICT_TIME_FLAT_SPECTRUM_AND_CUBIC_SCALAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+  "moved_to": "archive/notes/docs/TWO_BAND_BDG_STRICT_TIME_FLAT_SPECTRUM_AND_CUBIC_SCALAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

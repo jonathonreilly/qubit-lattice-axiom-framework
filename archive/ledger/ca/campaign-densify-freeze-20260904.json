@@ -1,0 +1,16 @@
+{
+ "id": "campaign-densify-freeze-20260904",
+ "title": "densify-freeze-20260904",
+ "science": "The densify-freeze evidence packet behind this migration: FREEZE_PACKAGE.md (partition, ten gates, deltas D1-D8b), the four final lists (2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT over 3,262 candidates), fable_confirm.jsonl (4,074-row confirmation ledger), the artifact hash manifest, the 21-seat adversarial attack pass, and the fix-layer checker pass. The 21 lane memos land beside it as archive/chains/*.md.",
+ "source": {
+  "kind": "campaign-packet",
+  "path": "archive/campaigns/densify-freeze-20260904",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/campaigns/densify-freeze-20260904/ (whole packet); this ledger line",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04 (see archive/campaigns/densify-freeze-20260904/)"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "mirror_mutual_information_note",
+ "title": "MIRROR_MUTUAL_INFORMATION_NOTE",
+ "science": "Self-declared superseded pointer/routing alias only: 'may not be cited as the mirror-MI theorem'; routes readers to the canonical chokepoint artifact. Textbook archive case.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MIRROR_MUTUAL_INFORMATION_NOTE.md",
+  "moved_to": "archive/notes/docs/MIRROR_MUTUAL_INFORMATION_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

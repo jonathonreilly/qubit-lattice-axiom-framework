@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.followup_m64_physical_m2_compiler_tournament_synthesis_cycle257_note_2026-07-17",
+ "title": "FOLLOWUP_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE257_NOTE_2026-07-17",
+ "science": "C257 synthesis: the campaign can do bounded full-Fock E (C248) or bounded even-algebra G (C251) but not both in one encoding; anti-feature-splicing table; K_E/K_G independence. July CAR-compiler-era note (Cycles 231-280), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/FOLLOWUP_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE257_NOTE_2026-07-17.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/FOLLOWUP_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE257_NOTE_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-car-compiler-era.md (July CAR-compiler era, Cycles 231\u2013280 (WH-car) \u2014 lane memo); carrier: archive/chains/july-car-compiler-era.md (drafted: phase3/memos/WH-car.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-car"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "autonomous_intermittent_record_instrument_calibration_nonselection_bounded_theorem_note_2026-07-11",
+ "title": "AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11",
+ "science": "The full intermittent-instrument classification: conditional repeat/exclusivity (not normalization alone) forces E_i = e_i P_i and F = sum(1-e_i)P_i exactly (positivity row-column argument) - fixing directions but not event efficiencies, with permutation-neutral event gating (q_i = q) the separate premise that removes detection bias and gives F = qI; the no-record CP operation is an explicit free parameter (one-Kraus case = sqrt(q)U under that neutrality); the auxiliary-register countermodel proves absorbing sectors + same-map reuse + menu equivariance do NOT imply blank-sector cross-label exclusion - calibration of formation to stabilization is the exact missing condition. July record-formation/occurrence/instrument-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "moved_to": "archive/notes/docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-record-formation-era.md (July record formation/occurrence/instrument era (D-rec) \u2014 lane memo); carrier: archive/chains/july-record-formation-era.md (drafted: phase3/memos/D-rec.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the record-formation/time thread's live successor is the causal-time lane record (Cycles 610-679, FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-rec"
+}

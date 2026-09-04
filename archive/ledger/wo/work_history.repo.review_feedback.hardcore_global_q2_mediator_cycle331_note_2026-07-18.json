@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.hardcore_global_q2_mediator_cycle331_note_2026-07-18",
+ "title": "HARDCORE_GLOBAL_Q2_MEDIATOR_CYCLE331_NOTE_2026-07-18",
+ "science": "Cycle 331: exclusion-preserving hard-core global-Q2 mediator - the directly projected bosonic coin fails (unitarity residual 1.9876), the collision-conditioned completion (C_214 on single occupancy, identity on onsite Q2) closes exactly; third statistics law distinguished by the full response vector, not the joint survival alone. July source/contact/event era note (Cycles 281-334), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/HARDCORE_GLOBAL_Q2_MEDIATOR_CYCLE331_NOTE_2026-07-18.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/HARDCORE_GLOBAL_Q2_MEDIATOR_CYCLE331_NOTE_2026-07-18.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-source-era.md (July source/contact/event era, Cycles 281\u2013334 (WH-src) \u2014 lane memo); carrier: archive/chains/july-source-era.md (drafted: phase3/memos/WH-src.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-src"
+}

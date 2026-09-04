@@ -1,0 +1,18 @@
+{
+ "id": "c2_weighting_normal_form_one_parameter_uniqueness_bounded_note_2026-07-02",
+ "title": "C2_WEIGHTING_NORMAL_FORM_ONE_PARAMETER_UNIQUENESS_BOUNDED_NOTE_2026-07-02",
+ "science": "The C2 normal form: on the finite rational two-cell content-determined class, every additive readout is exactly I = u x_A + v x_B (finite Cauchy argument over Q, no continuity import), so the weighting freedom is exactly one parameter w = v/u plus degenerate boundaries - the kappa_EW missing rule restricted to this class is exactly the missing w. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. EPOCH (2026-08-13 Record revision): the Record-additivity licensing quoted by this note was removed from Record after it landed; the normal-form theorem stands as conditional algebra on its named class, with any live Record-derived use going through fresh review.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/C2_WEIGHTING_NORMAL_FORM_ONE_PARAMETER_UNIQUENESS_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/C2_WEIGHTING_NORMAL_FORM_ONE_PARAMETER_UNIQUENESS_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-frame-weighting-era.md (July frame/weighting/readout era (D-frame) \u2014 lane memo); carrier: archive/chains/july-frame-weighting-era.md (drafted: phase3/memos/D-frame.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-frame"
+}

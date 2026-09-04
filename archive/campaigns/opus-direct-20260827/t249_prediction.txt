@@ -1,0 +1,18 @@
+PRE-REGISTERED before running (T249).
+
+R168 established the ALGEBRA of a rank-k record field but simulated nothing.
+Test: rank-2 records in M4(C) -- i.e. Gr(2,4) -- on Z^4 at the Born point
+phi = Tr(P P'), the same setup R149 ran at rank 1.
+
+PREDICTION:
+  (a) ordered phase, as at rank 1;
+  (b) the 3D slice shows eta = 1 (S*khat flat) -- relativistic, as R149 found;
+  (c) the broken symmetry is U(4) -> U(2)xU(2), so 16 - 4 - 4 = 8 Goldstone
+      modes = dim Gr(2,4) = 8.
+
+COINCIDENCE WARNING, WRITTEN DOWN BEFORE SEEING THE RESULT: 8 Goldstones would
+give 1/G = 8/(12 pi tau0), i.e. G = 1.5 pi tau0 -- numerically identical to
+R72's value.  But R72's 8 is FERMIONIC (4 Kahler-Dirac tastes x 2, with a
+statistics flip) and these 8 are BOSONIC Goldstones.  Same number, unrelated
+physics.  This is to be recorded as the EIGHTH coincidence and dissolved, not
+celebrated.

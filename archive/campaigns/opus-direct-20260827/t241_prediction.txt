@@ -1,0 +1,17 @@
+PRE-REGISTERED before running (T241).
+
+R156 measured, at the Born point (t=1): string tension sigma = 0 +- 2e-4 out to
+8x8 loops, monopole density rho = 7.9e-4 per cube.  Open: are those consistent?
+R159 made it load-bearing -- it changes G by a factor of 3.
+
+Design: scan t in phi = (1-t) + t|<psi|psi'>|^2 .  Small t decouples the sites,
+which should DISORDER the field and PROLIFERATE monopoles.
+
+Expected:
+  - rho rises steeply as t falls;
+  - sigma (from Creutz ratios) becomes clearly non-zero at small t;
+  - sigma falls with rho, and is smallest at t = 1.
+If sigma tracks rho, the Polyakov mechanism is operating and the Born point is
+simply at very dilute monopole density -- confinement present in principle but
+numerically tiny.  If sigma stays ~0 even at large rho, something else is going
+on and my whole reading of R156 is wrong.

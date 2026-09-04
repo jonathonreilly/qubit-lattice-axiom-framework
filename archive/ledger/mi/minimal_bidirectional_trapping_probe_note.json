@@ -1,0 +1,17 @@
+{
+ "id": "minimal_bidirectional_trapping_probe_note",
+ "title": "MINIMAL_BIDIRECTIONAL_TRAPPING_PROBE_NOTE",
+ "science": "Duplicate framing of the identical runner harness as MINIMAL_ABSORBING_HORIZON_PROBE - both notes' own 2026-05-10 cluster sections declare one bounded numerical observation with two framings and identical output tables. Carrier = the absorbing-horizon probe (the one downstream notes cite).",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MINIMAL_BIDIRECTIONAL_TRAPPING_PROBE_NOTE.md",
+  "moved_to": "archive/notes/docs/MINIMAL_BIDIRECTIONAL_TRAPPING_PROBE_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

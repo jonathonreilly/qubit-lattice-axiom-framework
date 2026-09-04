@@ -1,0 +1,17 @@
+{
+ "id": "hard_geometry_head_to_head_note",
+ "title": "HARD_GEOMETRY_HEAD_TO_HEAD_NOTE",
+ "science": "Meta/support ranking layer over three lanes, audit-narrowed to runner-actual outputs; the rows are owned by the cited lane authorities (central-band high-N card, mirror chokepoint notes, asymmetry joint card) and the ranking is program navigation, not a retained claim. Comparison index; archive keep",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/HARD_GEOMETRY_HEAD_TO_HEAD_NOTE.md",
+  "moved_to": "archive/notes/docs/HARD_GEOMETRY_HEAD_TO_HEAD_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md + MIRROR_CHOKEPOINT(_BOUNDARY_FIT)_NOTE.md + ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

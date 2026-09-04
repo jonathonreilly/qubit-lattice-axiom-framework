@@ -1,0 +1,17 @@
+{
+ "id": "charged_lepton_lane6_theorem_plan_note_2026-04-28",
+ "title": "CHARGED_LEPTON_LANE6_THEOREM_PLAN_NOTE_2026-04-28",
+ "science": "Self-relabeled Lane 6 planning roadmap ('historical planning memory only' per the audit relabel): the 6A/6B/6C decomposition, anchor-candidate inventory, and the closed-route list. The retained-status surface is the ledger plus the per-claim notes it indexes; the plan's structure was consumed by the",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/CHARGED_LEPTON_LANE6_THEOREM_PLAN_NOTE_2026-04-28.md",
+  "moved_to": "archive/notes/docs/CHARGED_LEPTON_LANE6_THEOREM_PLAN_NOTE_2026-04-28.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/lanes/open_science/06_CHARGED_LEPTON_MASS_RETENTION_OPEN_LANE_2026-04-26.md + the per-claim Lane 6 notes and closed-route no-gos it indexes",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

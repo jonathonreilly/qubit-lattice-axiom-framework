@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_rconn_w1_expanded_authority_sweep_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_RCONN_W1_EXPANDED_AUTHORITY_SWEEP_NO_GO_NOTE_2026-06-21",
+ "science": "B01 c3: meta-level text-sweep no-go certifying no hidden one-hop W1 authority in the 9-file expanded bank. W1/W2 gate split restated. Header formatting defect (Claim-scope line split by status-authority insertion, continuation orphaned). PASS=37 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_RCONN_W1_EXPANDED_AUTHORITY_SWEEP_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_RCONN_W1_EXPANDED_AUTHORITY_SWEEP_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: KEEP source-domain bridge no-go carries the missing-W1-edge boundary; group record notes the expanded-bank paragraph sweep (31 mixed paragraphs, none a positive",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

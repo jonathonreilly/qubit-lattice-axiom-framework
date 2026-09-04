@@ -1,0 +1,25 @@
+=== C4  Bloch spectrum vs dense L^4 assembly ===
+  L=4 CONFORMAL     eps=0.00 IMPR   max|dlambda| 4.619e-14  rel 1.732e-15  max|dM| 0.000e+00
+  L=4 CONFORMAL     eps=0.00 plain  max|dlambda| 2.665e-14  rel 1.665e-15  max|dM| 0.000e+00
+  L=4 CONFORMAL     eps=0.10 IMPR   max|dlambda| 5.329e-14  rel 1.961e-15  max|dM| 4.441e-16
+  L=4 CONFORMAL     eps=0.10 plain  max|dlambda| 2.487e-14  rel 1.514e-15  max|dM| 4.441e-16
+  L=4 TRACELESS-TT  eps=0.00 IMPR   max|dlambda| 4.619e-14  rel 1.732e-15  max|dM| 0.000e+00
+  L=4 TRACELESS-TT  eps=0.00 plain  max|dlambda| 2.665e-14  rel 1.665e-15  max|dM| 0.000e+00
+  L=4 TRACELESS-TT  eps=0.10 IMPR   max|dlambda| 4.974e-14  rel 1.847e-15  max|dM| 2.220e-16
+  L=4 TRACELESS-TT  eps=0.10 plain  max|dlambda| 1.954e-14  rel 1.213e-15  max|dM| 2.220e-16
+  L=6 CONFORMAL     eps=0.00 IMPR   max|dlambda| 1.279e-13  rel 4.796e-15  max|dM| 0.000e+00
+  L=6 CONFORMAL     eps=0.00 plain  max|dlambda| 7.638e-14  rel 4.774e-15  max|dM| 0.000e+00
+  L=6 CONFORMAL     eps=0.10 IMPR   max|dlambda| 8.171e-14  rel 3.034e-15  max|dM| 1.554e-15
+  L=6 CONFORMAL     eps=0.10 plain  max|dlambda| 5.329e-14  rel 3.285e-15  max|dM| 1.554e-15
+  L=6 TRACELESS-TT  eps=0.00 IMPR   max|dlambda| 1.279e-13  rel 4.796e-15  max|dM| 0.000e+00
+  L=6 TRACELESS-TT  eps=0.00 plain  max|dlambda| 7.638e-14  rel 4.774e-15  max|dM| 0.000e+00
+  L=6 TRACELESS-TT  eps=0.10 IMPR   max|dlambda| 1.101e-13  rel 4.110e-15  max|dM| 3.331e-16
+  L=6 TRACELESS-TT  eps=0.10 plain  max|dlambda| 5.507e-14  rel 3.430e-15  max|dM| 3.331e-16
+  L=8 CONFORMAL     eps=0.00 IMPR   max|dlambda| 2.380e-13  rel 8.926e-15  max|dM| 0.000e+00
+  L=8 CONFORMAL     eps=0.00 plain  max|dlambda| 1.599e-13  rel 9.992e-15  max|dM| 0.000e+00
+  L=8 CONFORMAL     eps=0.10 IMPR   max|dlambda| 3.766e-13  rel 1.386e-14  max|dM| 8.882e-16
+  L=8 CONFORMAL     eps=0.10 plain  max|dlambda| 1.030e-13  rel 6.262e-15  max|dM| 8.882e-16
+  L=8 TRACELESS-TT  eps=0.00 IMPR   max|dlambda| 2.380e-13  rel 8.926e-15  max|dM| 0.000e+00
+  L=8 TRACELESS-TT  eps=0.00 plain  max|dlambda| 1.599e-13  rel 9.992e-15  max|dM| 0.000e+00
+  L=8 TRACELESS-TT  eps=0.10 IMPR   max|dlambda| 2.736e-13  rel 1.022e-14  max|dM| 6.661e-16
+  L=8 TRACELESS-TT  eps=0.10 plain  max|dlambda| 2.580e-13  rel 1.608e-14  max|dM| 6.661e-16

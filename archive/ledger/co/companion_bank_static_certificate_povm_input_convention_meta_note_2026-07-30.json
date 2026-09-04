@@ -1,0 +1,18 @@
+{
+ "id": "companion_bank_static_certificate_povm_input_convention_meta_note_2026-07-30",
+ "title": "COMPANION_BANK_STATIC_CERTIFICATE_POVM_INPUT_CONVENTION_META_NOTE_2026-07-30",
+ "science": "The supplied-convention metadata for the POVM lemma: field selection, coordinate association, signs, pooling, split fractions, stage order, merge directions, and contact are all recorded as stipulations - all five pooled source fields equal 48, so the data cannot identify the chosen mapping; keeps supplied inputs from being conflated with theorem content. Late-July Born/POVM/truncated-Fock support-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/COMPANION_BANK_STATIC_CERTIFICATE_POVM_INPUT_CONVENTION_META_NOTE_2026-07-30.md",
+  "moved_to": "archive/notes/docs/COMPANION_BANK_STATIC_CERTIFICATE_POVM_INPUT_CONVENTION_META_NOTE_2026-07-30.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-born-povm-support-era.md (late-July Born/POVM/truncated-Fock support era (D-born) \u2014 lane memo); carrier: archive/chains/july-born-povm-support-era.md (drafted: phase3/memos/D-born.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-born"
+}

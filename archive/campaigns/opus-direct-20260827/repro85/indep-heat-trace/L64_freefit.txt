@@ -1,0 +1,10 @@
+traceless   dVol_simplicial= -10494.897  dVol_continuum= -10490.680  (differ by -4.018e-04 rel)
+            free-intercept fit A+Bs+Cs^2 on s in [8,50]:
+              A =  -10495.035   -> A/dVol_simp = 1.00001   A/dVol_cont = 1.00042
+              3B/dS_Regge = 0.99607      C/Int_a2 = 0.8885
+            ratio using CONTINUUM dVol: 6:1.0431  8:1.0299  10:1.0230  13:1.0171  16:1.0138  20:1.0111  25:1.0092  32:1.0077  40:1.0069  50:1.0067  64:1.0071
+conformal   dVol_simplicial=  20908.382  dVol_continuum=  20971.520  (differ by 3.020e-03 rel)
+            free-intercept fit A+Bs+Cs^2 on s in [8,50]:
+              A =   20962.872   -> A/dVol_simp = 1.00261   A/dVol_cont = 0.99959
+              3B/dS_Regge = 1.02526      C/Int_a2 = 0.8017
+            ratio using CONTINUUM dVol: 6:0.9975  8:0.9988  10:0.9991  13:0.9989  16:0.9981  20:0.9966  25:0.9941  32:0.9897  40:0.9833  50:0.9735  64:0.9563

@@ -1,0 +1,17 @@
+{
+ "id": "wave_direct_dm_next_widening_recommendation",
+ "title": "WAVE_DIRECT_DM_NEXT_WIDENING_RECOMMENDATION",
+ "science": "Process recommendation (pause widening, compress the two controlled pairs) that was executed by the subsequent synthesis notes; cost-model numbers preserved in archive. Process record.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WAVE_DIRECT_DM_NEXT_WIDENING_RECOMMENDATION.md",
+  "moved_to": "archive/notes/docs/WAVE_DIRECT_DM_NEXT_WIDENING_RECOMMENDATION.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

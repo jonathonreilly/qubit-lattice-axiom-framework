@@ -1,0 +1,18 @@
+{
+ "id": "theta_mass_side_composition_close_on_shared_occupancy_bridge_bounded_note_2026-07-03",
+ "title": "THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03",
+ "science": "The conditional mass-side composition: on the occupancy-grain bridge AND the independent cross-sector determinant-readout bridge, arg det(M_q) = 0 - Leg 2's pairing formula det(M_KS + mI) >= 0 removes the sign branch positive-mass-convention-free, Leg 3's character erasure removes continuous phases; both bridges remain separate open obligations (the two standing FRONT obligation files). July theta defect/phase/determinant-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. BOUNDARY (attack-pass D dispute, verified): the sign-branch removal rests on det(M_KS+mI)=(prod(m^2+lambda^2))*m^(2z)>=0; at m=0 with a zero mode (z>=1) the determinant is 0 and arg det is UNDEFINED - nonnegativity alone fixes the branch only away from zero-determinant points; an explicit no-zero-mode boundary or convention is needed for the all-real-m statement.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md",
+  "moved_to": "archive/notes/docs/THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-theta-era.md (July theta defect/phase/determinant era (D-theta) \u2014 lane memo); carrier: archive/chains/july-theta-era.md (drafted: phase3/memos/D-theta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-theta"
+}

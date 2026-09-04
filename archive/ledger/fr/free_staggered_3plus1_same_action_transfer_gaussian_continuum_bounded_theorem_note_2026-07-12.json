@@ -1,0 +1,18 @@
+{
+ "id": "free_staggered_3plus1_same_action_transfer_gaussian_continuum_bounded_theorem_note_2026-07-12",
+ "title": "FREE_STAGGERED_3PLUS1_SAME_ACTION_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12",
+ "science": "The same-action scalar spectral spine: the 3+1 two-step stable transfer eigenvalue and the 4D Euclidean covariance pole are exactly the same z=e^{-2E} on one action family A_a, with the J_z solution-space intertwiner; M(a)=am is the unique power law giving finite nonzero rest mass; controlled O(a^2) continuum energy convergence - the residue/CAR bridge left open was closed by the sibling representation note. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. SCOPE (corrected): M = am is the unique POWER LAW within the assumed class M(a) = m a^alpha under the fixed 2a transfer-time normalization. Of the open residue/CAR bridge, the sibling representation note DOES derive the exact pole residue and the c_block = 2 normalization; what it does NOT close is the equality with the reflected/equal-time CAR projector, the coherent-state proof, and the original fields' side - it closes the positive-time unbarred OS algebra only and expressly does not derive the original fields' equal-time CAR anticommutator or the reciprocal barred/contact all-field functional.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/FREE_STAGGERED_3PLUS1_SAME_ACTION_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+  "moved_to": "archive/notes/docs/FREE_STAGGERED_3PLUS1_SAME_ACTION_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

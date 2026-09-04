@@ -1,0 +1,18 @@
+{
+ "id": "ckm_mass_operator_projector_overlap_typing_theorem_note_2026-07-12",
+ "title": "CKM_MASS_OPERATOR_PROJECTOR_OVERLAP_TYPING_THEOREM_NOTE_2026-07-12",
+ "science": "Exact typing theorem: |V_ij|^2 = Tr(P_i^u P_j^d) is a phase-free basis-covariant readout from a supplied mass-operator pair, making the five-sixths bridge exactly the invariant alignment law Tr(P_c^u P_b^d) = (m_s/m_b)^(5/3); plus the exact down-only no-go (no unitarily equivariant construction with conjugacy-invariant readout can produce |V_cb| from H_d alone) and the carrier-type audit separating generation flavor from the abstract six-state determinant. July flavor/CKM/color/species-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/CKM_MASS_OPERATOR_PROJECTOR_OVERLAP_TYPING_THEOREM_NOTE_2026-07-12.md",
+  "moved_to": "archive/notes/docs/CKM_MASS_OPERATOR_PROJECTOR_OVERLAP_TYPING_THEOREM_NOTE_2026-07-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-flavor-species-era.md (July flavor/CKM/color/species era (D-flav) \u2014 lane memo); carrier: archive/chains/july-flavor-species-era.md (drafted: phase3/memos/D-flav.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-flav"
+}

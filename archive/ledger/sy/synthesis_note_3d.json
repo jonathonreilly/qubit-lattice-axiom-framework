@@ -1,0 +1,17 @@
+{
+ "id": "synthesis_note_3d",
+ "title": "SYNTHESIS_NOTE_3D",
+ "science": "Relabeled 3D synthesis/overview that makes no retained-claim assertions \u2014 its coexistence rollup, sqrt(M) scaling, CLT-ceiling table, chokepoint subtlety, and causal-field retraction are declared historical 3D synthesis memory, with statuses owned by the per-claim 3D notes and audit ledger. Archive",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SYNTHESIS_NOTE_3D.md",
+  "moved_to": "archive/notes/docs/SYNTHESIS_NOTE_3D.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: per-claim 3D causal-DAG notes + audit ledger",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

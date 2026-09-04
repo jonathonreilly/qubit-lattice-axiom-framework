@@ -1,0 +1,17 @@
+{
+ "id": "persistent_record_sidebit_note",
+ "title": "PERSISTENT_RECORD_SIDEBIT_NOTE",
+ "science": "B10: April record-model pilot refinement (side bit helps soft-overlap, does not beat node-label; N=18 trace worsens); the records program's live surface superseded this architecture. Carrier: archive index (record-model pilots) with the overlap-kernel sibling.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md",
+  "moved_to": "archive/notes/docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

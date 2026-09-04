@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_t_row_primitive_minimality_selector_boundary_note_2026-06-22",
+ "title": "QUARK_ROUTE2_T_ROW_PRIMITIVE_MINIMALITY_SELECTOR_BOUNDARY_NOTE_2026-06-22",
+ "science": "B02 c4: sharpest T-side wall statement; conditional families (1,-n,n) and (1,-2,beta_T) both leave the target unselected. PASS=74 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_T_ROW_PRIMITIVE_MINIMALITY_SELECTOR_BOUNDARY_NOTE_2026-06-22.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_T_ROW_PRIMITIVE_MINIMALITY_SELECTOR_BOUNDARY_NOTE_2026-06-22.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: atlas + primitive-chain FRONT note (triple held open); K3 adds one line: the granted T-side values need their own selector - enumerated primitivity/minimality r",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

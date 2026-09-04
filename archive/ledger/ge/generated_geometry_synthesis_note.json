@@ -1,0 +1,17 @@
+{
+ "id": "generated_geometry_synthesis_note",
+ "title": "GENERATED_GEOMETRY_SYNTHESIS_NOTE",
+ "science": "Audit-relabeled overview/program synthesis that makes no retained-claim assertions of its own \u2014 its rollups are declared historical program memory, with live status owned by the per-claim runner notes (farfield harness, distance law, joint package, no-restore, connectivity). Archive keeps the 2D-con",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/GENERATED_GEOMETRY_SYNTHESIS_NOTE.md",
+  "moved_to": "archive/notes/docs/GENERATED_GEOMETRY_SYNTHESIS_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: per-claim Gate-B runner notes + audit ledger",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

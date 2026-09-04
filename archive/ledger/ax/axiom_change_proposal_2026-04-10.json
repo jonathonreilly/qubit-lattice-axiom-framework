@@ -1,0 +1,17 @@
+{
+ "id": "axiom_change_proposal_2026-04-10",
+ "title": "AXIOM_CHANGE_PROPOSAL_2026-04-10",
+ "science": "The 2026-04-10 axiom update for the OLD event-network architecture: rewrites of Axioms 6/8/10, the missing pre-record transport constraint, and the bottleneck-attack experiments \u2014 written one day before MINIMAL_AXIOMS_2026-04-11 replaced that axiom system entirely with the Cl(3)/Z^3 baseline. Era-bo",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/AXIOM_CHANGE_PROPOSAL_2026-04-10.md",
+  "moved_to": "archive/notes/docs/AXIOM_CHANGE_PROPOSAL_2026-04-10.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: the April event-network architecture notes it summarizes + the superseding MINIMAL_AXIOMS lineage from 2026-04-11 onward",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

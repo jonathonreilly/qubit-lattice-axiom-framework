@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_ell_e_structural_narrowing_bounded_note_2026-06-12",
+ "title": "QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12",
+ "science": "THREAD-READ (T3): exemplary restated-vs-new attribution; NET-NEW: (1) the consolidated residual object E_pos = {lambda(1,rho_E): lambda>0, rho_E>-6}; (2) sign universality \u2014 c_TE = -5/(3 q_E) < 0 for the ENTIRE positive family, so the future bridge's minus sign is forced and only the magnitude 8/9 i",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas (FRONT); archive group record must carry the SIGN-UNIVERSALITY theorem prominently",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

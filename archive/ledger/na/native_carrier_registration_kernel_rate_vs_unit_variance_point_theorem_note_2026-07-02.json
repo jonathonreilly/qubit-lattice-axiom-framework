@@ -1,0 +1,18 @@
+{
+ "id": "native_carrier_registration_kernel_rate_vs_unit_variance_point_theorem_note_2026-07-02",
+ "title": "NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02",
+ "science": "The parameter-free native registration kernel: full central resolution on V = C^8 (sectors 36/12/12/4) gives T_V = 1 + chi_8/2 exactly (strictly positive, multiplicity-robust), the identity floor T_id has the extra 3/3bar coherence (w_3 = 1/6 -> 0 under registration, the Schur contrast making the gl(1) block load-bearing), and the recomputed numbers m^2(T_V) = 2.440631, m^2(T_id) = 1.835061, increment 0.605570 refute the single named route native-full-registration => unit variance (tau_native = 1.22, not 1/2; beta-map 2.458, not 6) - with the 2026-07-02 readout-discipline reconciliation carried. July singleton docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-misc-singletons-era.md (July miscellaneous singletons (D-misc) \u2014 lane memo); carrier: archive/chains/july-misc-singletons-era.md (drafted: phase3/memos/D-misc.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-misc"
+}

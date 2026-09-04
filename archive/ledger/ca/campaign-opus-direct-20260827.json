@@ -1,0 +1,16 @@
+{
+ "id": "campaign-opus-direct-20260827",
+ "title": "opus-direct-20260827",
+ "science": "The parked 24h Opus-direct positive-path campaign packet (POSITIVE_PATH.md + scripts, self-contained): standing VERIFIED results as the packet left them - R1 uniform-weight/volume theorem with an analytic general-d degree-by-degree proof (T33); R3 endpoint-symmetric hop with uniqueness (alpha=beta within the two-endpoint transported family, T34c); R16 the master identity det Q(q) = (m^2 + s.g^-1.s)^(2^(d-1)) with dispersion, arcsinh energy, two-branch and 3+1D light-cone corollaries; R23 the cell-complex construction passing the refinement gate at O(1/L^2), free and with matter, three routes. WITHDRAWN gravitational readings recorded with their gates (R19/R20 effective action not diffeomorphism-invariant; R21 polar-coframe edge factor I + O(h^2); R22 five repairs all fail). Open items (a)-(d) named in the packet.",
+ "source": {
+  "kind": "campaign-packet",
+  "path": "archive/campaigns/opus-direct-20260827",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/campaigns/opus-direct-20260827/ (whole packet); this ledger line",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04 (see archive/campaigns/densify-freeze-20260904/)"
+ },
+ "status": "archived"
+}

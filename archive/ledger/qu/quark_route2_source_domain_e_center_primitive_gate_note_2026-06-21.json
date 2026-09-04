@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_source_domain_e_center_primitive_gate_note_2026-06-21",
+ "title": "QUARK_ROUTE2_SOURCE_DOMAIN_E_CENTER_PRIMITIVE_GATE_NOTE_2026-06-21",
+ "science": "B02 c2: common source scalar multiplies both channels, so channel-independent law cannot give (5/6, 15/8); simple-scaling table all miss. PASS=42 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_SOURCE_DOMAIN_E_CENTER_PRIMITIVE_GATE_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_SOURCE_DOMAIN_E_CENTER_PRIMITIVE_GATE_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: atlas + blindness FRONT (delta_A1 necessary-not-sufficient; sigma_E free channel coefficient)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

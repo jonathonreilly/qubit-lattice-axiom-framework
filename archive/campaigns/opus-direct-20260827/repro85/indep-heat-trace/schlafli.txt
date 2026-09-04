@@ -1,0 +1,3 @@
+sum theta over 10 hinges (regular-ish simplex check, must be >0): 13.028512566759142
+max |sum_h A_h dtheta_h/dl2_e| over 10 edges : 2.17230333721119e-09
+typical scale |dA/dl2| : 1.0001989161345648

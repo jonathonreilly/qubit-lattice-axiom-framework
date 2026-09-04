@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_e_center_fingerprint_exact_support_note_2026-06-21",
+ "title": "QUARK_ROUTE2_E_CENTER_FINGERPRINT_EXACT_SUPPORT_NOTE_2026-06-21",
+ "science": "B02 c4: compact acceptance test for any future nonblind primitive. PASS=60 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_E_CENTER_FINGERPRINT_EXACT_SUPPORT_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_E_CENTER_FINGERPRINT_EXACT_SUPPORT_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: atlas (carries the 7/8 contrast face); group record notes the acceptance-test framing incl. slice-level rank-1 fingerprint (7/8,0) tensor V_R(t)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

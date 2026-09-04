@@ -1,0 +1,17 @@
+{
+ "id": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
+ "title": "DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08",
+ "science": "B06: meta dependency-edge certificate; wiring table restated verbatim in the wrapper's 06-08 section (carrier). Twice scope-corrected to meta - honest.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md",
+  "moved_to": "archive/notes/docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "lattice_greens_next_order_r5_anisotropy_theorem_note_2026-07-09",
+ "title": "LATTICE_GREENS_NEXT_ORDER_R5_ANISOTROPY_THEOREM_NOTE_2026-07-09",
+ "science": "Positive theorem, zero free parameters: the next-order lattice correction to the emergent Newtonian potential is the exact purely anisotropic f(nhat)/r^5 term with l=4,6,8 content and exactly zero spherical average (f = (315/2288)K4/pi - (35/64)K6/pi + (1155/512)K8/pi), confirmed by 24-digit Bessel-resolvent numerics on five orbits - the O(1/r^5) boundary of the leading-correction theorem closed. July mass/source/Poisson-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. PAYLOAD (carried): the exact raw degree-eight form f = [-181/512 + (315/256)S4 - (189/64)S6 + (1155/512)S4^2]/pi, its harmonic decomposition, and the seven-row sign-changing direction table on the primary.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/LATTICE_GREENS_NEXT_ORDER_R5_ANISOTROPY_THEOREM_NOTE_2026-07-09.md",
+  "moved_to": "archive/notes/docs/LATTICE_GREENS_NEXT_ORDER_R5_ANISOTROPY_THEOREM_NOTE_2026-07-09.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-source-poisson-era.md (July mass/source/Poisson era (D-mass) \u2014 lane memo); carrier: archive/chains/july-mass-source-poisson-era.md (drafted: phase3/memos/D-mass.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the gravity Green-function thread's successor is the gravity/source mainline (blocks 153-173, FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-mass"
+}

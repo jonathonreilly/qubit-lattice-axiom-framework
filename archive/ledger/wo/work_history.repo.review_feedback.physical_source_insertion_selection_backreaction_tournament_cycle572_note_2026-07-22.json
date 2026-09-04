@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.physical_source_insertion_selection_backreaction_tournament_cycle572_note_2026-07-22",
+ "title": "PHYSICAL_SOURCE_INSERTION_SELECTION_BACKREACTION_TOURNAMENT_CYCLE572_NOTE_2026-07-22",
+ "science": "Cycle 572: the Cycle-569 joint insertion is uniquely recovered inside the declared five-dimensional variational ansatz (selection residual 8.5e-16) with exact source-Ward/contact-telescope/resource-Noether checks; Route B plaquette-curvature phase has exactly reciprocal mixed Hessian with nonzero matter/carrier quadrature impulses surviving held L4/N=3 without refit; Route C eight-rail body-diagonal carrier defeats face-orbit rail-count minimality (8<12 rails, 9<13 M2/cell) at radius cost 3 vs 2. Late-July note (Cycles 572-675), personally read in full 2026-09-04; released behind the lane memo - its conclusions are carried at full strength on the FRONT successor lane records.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_INSERTION_SELECTION_BACKREACTION_TOURNAMENT_CYCLE572_NOTE_2026-07-22.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_INSERTION_SELECTION_BACKREACTION_TOURNAMENT_CYCLE572_NOTE_2026-07-22.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-late-cycles.md (late-July cycles 572\u2013675 (WH-late) \u2014 lane memo); carrier: archive/chains/july-late-cycles.md (drafted: phase3/memos/WH-late.md) + the gravity/source mainline campaign record (blocks 153-173, FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-late"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "informative_fraction_covariant_rule_quantization_occupancy_residual_theorem_note_2026-07-02",
+ "title": "INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02",
+ "science": "The informative-fraction quantization: the 64 recorded-neighbor patterns split into exactly 10 proper-rotation orbits (Burnside-checked), so covariant support maps quantize p = k/64 UNDER the named iid-uniform occupancy baseline (each pattern mass 1/64; covariance supplies orbit-constancy, not equal masses); the unit-variance point p* = 0.409731 is off-lattice (26.22/64, distance > 0.2 from integer); the mismatch is located as an occupancy residual (exhibited q* roots) - with the 2026-08-05 scope note narrowing everything to support-level maps under the revised distribution-valued axiom. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. VALUE-FLIP BRANCH (carried; the finite discriminator for the standing structuralist/flip-reading owner surface): under the value-flip-covariant reading the combined orbit sizes are [2,6,8,12,12,24], attainable k are even only - 26 and 28 attainable, 27 not.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-frame-weighting-era.md (July frame/weighting/readout era (D-frame) \u2014 lane memo); carrier: archive/chains/july-frame-weighting-era.md (drafted: phase3/memos/D-frame.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-frame"
+}

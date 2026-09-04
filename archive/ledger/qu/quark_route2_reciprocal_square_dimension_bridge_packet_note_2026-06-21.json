@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_reciprocal_square_dimension_bridge_packet_note_2026-06-21",
+ "title": "QUARK_ROUTE2_RECIPROCAL_SQUARE_DIMENSION_BRIDGE_PACKET_NOTE_2026-06-21",
+ "science": "CKM (1/Npair^2)/(1/Ncolor^2)=9/4 conditional bridge; note itself documents the paired CKM runner PASS=21 FAIL=7 (retained-tier authority checks vs ledger; exact arithmetic passes) \u2014 precision for the keep-side defect item",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_RECIPROCAL_SQUARE_DIMENSION_BRIDGE_PACKET_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_RECIPROCAL_SQUARE_DIMENSION_BRIDGE_PACKET_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

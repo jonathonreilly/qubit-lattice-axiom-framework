@@ -1,0 +1,18 @@
+{
+ "id": "action_family_character_semigroup_discriminator_bounded_note_2026-07-02",
+ "title": "ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02",
+ "science": "The U(1) action discriminator: the heat-kernel n^2 character law c_n = c_1^(n^2) is the exact semigroup fingerprint; Wilson violates it at certified finite beta (disjoint rational intervals at beta = 1, 2) and is not convolution-closed; principal-angle Manton violates it at beta = 1 - leaving heat-kernel as the qualifying semigroup family among the three candidates, with the record-composition bridge explicitly a named premise only and the hostile low-mode-coincidence witness displayed. July kernel/semigroup/admissibility-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-kernel-rule-era.md (July kernel/semigroup/admissibility era (D-ker) \u2014 lane memo); carrier: archive/chains/july-kernel-rule-era.md (drafted: phase3/memos/D-ker.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-ker"
+}

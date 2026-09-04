@@ -221,3 +221,16 @@ python3 scripts/frontier_quark_up_amplitude_tensor_endpoint_resolution.py
 Current expected result on this branch:
 
 - `frontier_quark_up_amplitude_tensor_endpoint_resolution.py`: `PASS=16 FAIL=0`
+
+## Numeric-provenance changelog (2026-09-03 densify repair J1)
+
+The 12-digit endpoint ratios quoted above (e.g. `|a_T / a_E| = 2.005382749600`,
+`|b_T / a_T| = 1.000030814262`) are **finite-difference values at step
+`EPS = 0.005`**, not exact spectral quantities. The step-free active-branch
+recomputation
+(`QUARK_ROUTE2_ENDPOINT_STEP_FREE_ACTIVE_BRANCH_SLOPES_BOUNDED_NOTE_2026-06-12.md`)
+gives the corrected exact-derivative values, e.g. `t_balance = 1.000030809474`,
+inside the finite-difference stable band `[1.0000260, 1.0000319]`. The
+standing no-coincidences question — whether the step-stable `~3e-5` departure
+of `t_balance` from exactly `1` is structural — remains open and is tracked
+in that step-free note and its exact-algebraic-value successor.

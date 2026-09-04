@@ -175,3 +175,15 @@ The current direct universal route is:
 
 This is a structural-inventory blocker statement on the current atlas, not a
 theorem about the missing primitive itself.
+
+## Sharpened obstruction (2026-09-03 densify repair G)
+
+The inventory-level blocker above now has a theorem-grade sharpening on one
+named class:
+`UNIVERSAL_GR_TENSOR_ACTION_CASIMIR_EQUIVARIANT_CLASS_NOGO_NOTE_2026-05-17.md`
+proves the class-(A) no-go that the five-parameter Casimir-equivariant
+bilinear class `Class CB(V)` is exhausted by Schur and cannot canonically
+section the SO(3) gauge on the `E ⊕ T1` complement (orbit-flat Euler-Lagrange
+system). The blocker remains open outside that class (nonlinear,
+derivative-dependent, non-Casimir-projector actions); this line records the
+citation only and changes no status.

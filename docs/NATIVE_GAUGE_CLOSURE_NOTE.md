@@ -158,3 +158,11 @@ Excluded:
 The exclusion of the abelian surface is load-bearing. If a later note wants
 to recover that surface as positive-theorem content, it must be audited as a
 separate claim.
+
+## Live-runner changelog (2026-09-03 densify repair H2)
+
+A 2026-09-01 live re-run of the shared runner `scripts/frontier_non_abelian_gauge.py`
+reports `FAIL=4`. All four failures are `audit_status`/`effective_status`
+tier pins against the epoch-reset (unaudited) ledger; every science-algebra
+check passes. Recorded so tier pins are not mistaken for science failures;
+re-pinning to live tiers is audit-lane work.

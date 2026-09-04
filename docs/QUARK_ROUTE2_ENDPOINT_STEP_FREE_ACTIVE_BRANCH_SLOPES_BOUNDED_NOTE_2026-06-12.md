@@ -67,7 +67,8 @@ The durable boundary note
 [`QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md`](QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md)
 showed that the live object is a max-abs trace-free Einstein tensor envelope,
 not a spectral floor. The finite-difference provenance note
-[`QUARK_ROUTE2_ENDPOINT_T_BALANCE_FD_PROVENANCE_AND_STEP_STABILITY_BOUNDED_NOTE_2026-06-11.md`](QUARK_ROUTE2_ENDPOINT_T_BALANCE_FD_PROVENANCE_AND_STEP_STABILITY_BOUNDED_NOTE_2026-06-11.md)
+`QUARK_ROUTE2_ENDPOINT_T_BALANCE_FD_PROVENANCE_AND_STEP_STABILITY_BOUNDED_NOTE_2026-06-11.md`
+(work-history record; see the archive ledger)
 established that the published endpoint values were central finite-difference
 values at `EPS = 0.005`, with the `t_balance` stable band
 `[1.0000260, 1.0000319]`.

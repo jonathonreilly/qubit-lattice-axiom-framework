@@ -215,3 +215,13 @@ The runner:
 - cross-checks Bernoulli compatibility,
 - audits that `W2` is a generic factorization on the count surface rather than
   an SM-uniqueness statement.
+
+## Live-runner changelog (2026-09-03 densify repair H1)
+
+A 2026-09-01 live re-run of the primary runner reports `FAIL=7`. All seven
+failures are **retained-tier status pins** checked against the epoch-reset
+(wholly unaudited) ledger; every exact-arithmetic science check passes. This
+note asserts no expected PASS/FAIL scorecard, so nothing here is stale; this
+line records the live result and its diagnosis so a future reader does not
+mistake tier pins for science failures. Re-pinning the tier checks to the live
+ledger is audit-lane work.

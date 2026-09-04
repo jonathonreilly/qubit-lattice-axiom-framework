@@ -159,3 +159,11 @@ Two things should still be stated carefully:
    is written cleanly, and
 2. this is the graph-first closure route; it supersedes the need to force the
    result entirely through the old native-bivector bridge.
+
+## Live-runner changelog (2026-09-03 densify repair H2)
+
+A 2026-09-01 live re-run of the shared runner `scripts/frontier_non_abelian_gauge.py`
+reports `FAIL=4`. All four failures are `audit_status`/`effective_status`
+tier pins against the epoch-reset (unaudited) ledger; every science-algebra
+check passes. Recorded so tier pins are not mistaken for science failures;
+re-pinning to live tiers is audit-lane work.

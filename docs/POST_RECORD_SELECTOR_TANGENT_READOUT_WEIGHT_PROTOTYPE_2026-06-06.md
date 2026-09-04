@@ -122,3 +122,12 @@ python3 scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [post_record_measure_weight_normalization_subdivision_2026-06-06](POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
+
+## Live-runner changelog (2026-09-03 densify repair H3)
+
+A 2026-09-01 live re-run reports `FAIL=2`: (a) the premise-registry non-supply
+sentence it quote-pins was reworded by the probability-distribution rewrite of
+`docs/audit/data/axiom_premise_nodes.json`; (b) a ledger row-count snapshot
+(26) drifted. Both are text/snapshot pins; every science check passes. The
+quoted-sentence pin should be refreshed against the live registry wording in
+the next audit-lane pass.

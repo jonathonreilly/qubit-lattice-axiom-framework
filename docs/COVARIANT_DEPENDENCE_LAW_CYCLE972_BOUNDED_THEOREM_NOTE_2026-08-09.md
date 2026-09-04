@@ -330,3 +330,12 @@ all six nearest-neighbour directions. The spatial law has one orbit; fixed
 inputs `x=0` and `x=1` give two state-resolved row orbits. Uniform averaging
 over `x` erases the dependence exactly. This closes the bounded covariant-law
 question and leaves the full continuous-domain Admissibility law open.
+
+## Successor pointer (2026-09-03 densify repair E2)
+
+`WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+enlarges the declared family to the 155-word one-step semantic quotient
+(including `TOF`) and finds 21 witnesses in three covariant classes. This is
+an **enlargement, not a supersession**: the six-witness census above remains
+exactly correct on its declared 20-word family (the `TOF` exclusion was a
+declared material scope choice, as Cycle 977's own N4/N8 record).

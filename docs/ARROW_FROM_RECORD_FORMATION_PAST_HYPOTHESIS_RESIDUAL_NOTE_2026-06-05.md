@@ -134,6 +134,14 @@ low-record boundary, not by `T`.
   closes a *different* route (thermalizing-arrow stabilizer cannot force the
   Koide value); this note is about the arrow's direction and its boundary
   residual, not a flavor value.
+- `PAST_HYPOTHESIS_EXISTENCE_REDUCTION_APPEND_ONLY_WELL_FOUNDEDNESS_BOUNDED_THEOREM_NOTE_2026-06-11.md`
+  — sharpens this note's residual: the **existence sub-clause** of the
+  record-arrow boundary reduces to history non-emptiness in the append-only
+  single-chain sector (durability is exactly the load-bearing property; the
+  boundary is not manufacturable by closed reversible dynamics). The
+  thermodynamic past hypothesis (low entropy, the quantitative room) remains
+  the open input exactly as stated above; only the framework's own existence
+  sub-clause is reduced. (2026-09-03 densify repair D: citation restored.)
 
 ## Runner Self-Check
 

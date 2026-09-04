@@ -250,6 +250,22 @@ NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
 
+FACET_OK = True
+for t in USED:
+    kinds = []
+    for a, b in BARY[t][2]:
+        nz = [i for i, x in enumerate(a) if x]
+        cube = (len(nz) == 1 and (a[nz[0]], b) in ((1, 0), (-1, 1)))
+        wall = False
+        if len(nz) == 2 and all(abs(a[i]) == 1 for i in nz):
+            x, y = (a[i] for i in nz)
+            wall = ((x == -y and b == 0)
+                    or (x == y == 1 and b == -1)
+                    or (x == y == -1 and b == 1))
+        kinds.append("cube" if cube else ("wall" if wall else "other"))
+    if kinds.count("cube") != 2 or kinds.count("wall") != 3:
+        FACET_OK = False
+
 # ------------------------------------------------------------------
 # 1d. exact interior disjointness for every co-occurring pair
 # ------------------------------------------------------------------
@@ -393,6 +409,9 @@ for p in PATHS:
         NMOF[i] = PBY[p]
 
 NPER = sorted(set(len(v) for v in PBY.values()))
+NAMEPAIR = all(nms is not None and len(nms) == 2
+               and (nms[0][0] ^ 15, tuple(reversed(nms[0][1]))) in nms
+               for nms in NMOF)
 
 # ------------------------------------------------------------------
 # 3. the chambers of the twelve-wall cut, and the incidence
@@ -427,12 +446,16 @@ def deal(v0, sg):
 INC = [[] for _ in range(NPI)]
 HOLD = [[] for _ in range(NCH)]
 DEALOK = 0
+DEALCONS = 0
 for i in range(NPI):
     v0, sg = NMOF[i][0]
     seen = sorted(set(CIDX[(b, s)] for (b, s) in deal(v0, sg)))
     if len(seen) == 8:
         DEALOK += 1
     INC[i] = seen
+    encodings = {frozenset(deal(a, b)) for a, b in NMOF[i]}
+    if len(encodings) == 1:
+        DEALCONS += 1
     for cid in seen:
         HOLD[cid].append(i)
 
@@ -559,8 +582,6 @@ for g in range(NG):
         direct = POS.get(KDX.get(tuple(sorted(image)), -1), -1)
         if pc[i] != direct:
             BADDIRECT += 1
-NPAIRC = NG * NPI
-
 # ------------------------------------------------------------------
 # 6. the even-mask subgroup, its free transitive relabelling, the abstract model
 # ------------------------------------------------------------------
@@ -594,6 +615,24 @@ def acttok(e, x):
 
 
 TOK = (0, 1, 2, 3)
+
+
+def eps_of(e):
+    return sgnp(e[0]) * (1 - 2 * (popc(e[1]) & 1))
+
+
+FULL_ELEMS = [(p, m) for p in PERMS for m in range(16)]
+BADFULL = 0
+BADCHAR = 0
+for g in FULL_ELEMS:
+    for h in FULL_ELEMS:
+        q = prod(g, h)
+        if acttok(q, TOK) != acttok(g, acttok(h, TOK)):
+            BADFULL += 1
+        if eps_of(q) != eps_of(g) * eps_of(h):
+            BADCHAR += 1
+
+
 IMGS = set(acttok(e, TOK) for e in ELEMS)
 BADPR = 0
 for g in ELEMS:
@@ -915,6 +954,8 @@ for g in range(NG):
             pp[a] = b
         elif pp[a] != b:
             BADPA += 1
+    if any(x is None for x in pp) or len(set(pp)) != NPOS:
+        BADPA += 1
     PPERM.append(tuple(pp))
 
 
@@ -1078,18 +1119,20 @@ gate(BARY_OK and NCO_PAIR == 15168 and NFAC == 13632 and NDIM == {0: 864, 1: 672
      "geometry: {0} co-occurring pairs; {1} facet-separated, residual dimensions zero {2} and one {3}; interiors disjoint"
      .format(nd(NCO_PAIR), nd(NFAC), nd(NDIM.get(0, 0)), nd(NDIM.get(1, 0))))
 
-gate(BADDEAL == 0 and sorted(set(len(x) for x in DIRECT_INC)) == [8], "K1C",
-     "chamber dictionary: direct rational representative membership agrees for all {0} pieces, failures {1}"
-     .format(nd(NPI), nd(BADDEAL)))
+gate(FACET_OK and NAMEPAIR and DEALCONS == NPI and BADDEAL == 0
+     and sorted(set(len(x) for x in DIRECT_INC)) == [8], "K1C",
+     "chamber dictionary: direct membership on {0} pieces, failures {1}; facet/name/deal checks {2}/{3}/{4}"
+     .format(nd(NPI), nd(BADDEAL), "yes" if FACET_OK else "no", "yes" if NAMEPAIR else "no", nd(DEALCONS)))
 
 emit("namings: {0} walk namings, {1} per piece, and the minimal one starts at the lower binary-index corner"
      .format(nd(len(NAMES)), nd(NPER[0])))
 
-gate(ACTOK and NG == 384 and FAITH == 384 and BADCOV == 0 and BADDIRECT == 0 and NEG == 192 and SCENS ==
+gate(ACTOK and NG == 384 and FAITH == 384 and BADFULL == 0 and BADCHAR == 0
+     and BADCOV == 0 and BADDIRECT == 0 and NEG == 192 and SCENS ==
      "-8:120 -4:2832 0:9896 4:2832 8:120", "K2",
      "symmetry group: {0} elements act directly on {1} pieces, distinct maps {2}, sign minus on {3},"
-     " action/covariance failures {4} of {5}"
-     .format(nd(NG), nd(NPI), nd(FAITH), nd(NEG), nd(BADCOV + BADDIRECT), nd(NPAIRC)))
+     " action/character/covariance failures {4}"
+     .format(nd(NG), nd(NPI), nd(FAITH), nd(NEG), nd(BADCOV + BADDIRECT + BADFULL + BADCHAR)))
 
 gate(FREE and len(IMGS) == 192 and BADPR == 0 and BADDICT == 0 and NEL == 192 and len(EV) == 8, "K3",
      "relabelling: the even-mask subgroup of {0} elements, from {1} masks, hits each of {2} chambers once;"

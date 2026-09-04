@@ -137,12 +137,13 @@ naming is the one whose start corner has the lower binary index of the opposite-
 and the namings line of stdout]
 
 The twelve cut walls of the cell carve its interior into 192 chambers, each recorded as an axis
-order together with three signs. Every used piece is a walk simplex, whose interior facet equations
-belong to this wall arrangement, so membership is constant on each chamber. The sign-pattern deal
-assigns 8 chambers to every piece; dually every chamber lies in 8 of the 192 pieces. Direct exact
-membership of a rational representative of each chamber agrees with the deal for all 192 pieces.
-Every cutting meets every chamber in exactly one piece: over all 15800 cuttings the count of
-partition failures is 0. [K1, K1C]
+order together with three signs. Every used piece is a walk simplex; the runner verifies that its
+five facets comprise two cube-boundary facets and three facets in this wall arrangement, so
+membership is constant on each chamber. The two reverse walk namings give the same sign-pattern
+deal. It assigns 8 chambers to every piece; dually every chamber lies in 8 of the 192 pieces.
+Direct exact membership of a rational representative of each chamber agrees with the deal for all
+192 pieces. Every cutting meets every chamber in exactly one piece: over all 15800 cuttings the
+count of partition failures is 0. [K1, K1C]
 
 The label of a piece is taken on its minimal naming: the sign of the axis order, times minus one
 to the parity of the start corner. The label sum of a cutting adds that label over its 24 pieces.
@@ -159,7 +160,8 @@ The induced map agrees on all 73728 element-piece pairs with direct transformati
 simplex vertices; the 384 piece maps are pairwise distinct, so the action is faithful. [K2]
 
 The sign character of an element is eps = sgn(p) times minus one to the parity of the reflection
-mask. It takes the value minus one on exactly 192 of the 384 elements. [K2]
+mask. It takes the value minus one on exactly 192 of the 384 elements, and its multiplicative law is
+checked against all 147456 ordered group-element pairs. [K2]
 
 Covariance of the label: for every element g and every piece P, the label of gP equals eps(g)
 times the label of P. This is checked on all 73728 element-piece pairs, with 0 failures. [K2]
@@ -283,10 +285,10 @@ constraints lies outside this note's target. [K9]
 ## Orbits, equivariance, and the halving
 
 The symmetry group acts on positions, hence on profiles: each of the 384 elements induces a
-well-defined permutation of the 12 positions, with 0 consistency failures across the pieces. The
-25 realized profiles fall into 6 orbits, of sizes 1, 6, 3, 3, 6, 6. Profiles in a common orbit
-carry equal tiling counts and equal censuses, as they must by equivariance, and the weighted total
-over the orbits returns 15800. [K10]
+well-defined permutation of the 12 positions, with 0 consistency or permutation failures across
+the pieces. The 25 realized profiles fall into 6 orbits, of sizes 1, 6, 3, 3, 6, 6. Profiles in a
+common orbit carry equal tiling counts and equal censuses, as they must by equivariance, and the
+weighted total over the orbits returns 15800. [K10]
 
 Labelling the orbits by decreasing tiling count, the per-profile data is:
 

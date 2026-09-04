@@ -1,4 +1,4 @@
-# Physical cell cutting: the cuttings are exact tilings by two tiles, and the label-sum census is symmetry-forced
+# Physical cell cutting: two-tile group form, forced sign symmetry, and an exact finite label-sum census
 
 Date: 2026-08-14
 
@@ -30,11 +30,12 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-Scope: the cuttings of the open unit four-cube cell are exactly the partitions of an
-order-192 group into left translates of two eight-element tiles; on that picture the label sum
-becomes a signed permutation sum, and the census of the label sum over the 15800 cuttings
-assembles from the sign character of the order-384 symmetry group of the cell together with the
-orbit data of the tiling profiles.
+Scope: after exact rational certification that the enumerated simplex collections are geometric
+cuttings of the open unit four-cube cell, the cuttings are identified with partitions of an
+order-192 group into left translates of two eight-element tiles. In that model the label sum
+becomes a signed permutation sum. The sign symmetry and per-profile halving are forced by the
+order-384 symmetry group; the numeric census over the 15800 cuttings is an exact finite
+enumeration assembled from measured orbit-profile data.
 
 This note adds no citation edges. Sibling artifacts are named in backticks for context only, never
 as dependencies:
@@ -62,6 +63,52 @@ premises to the theorem.
 - Package-local reads: the canonical cache records a run; the runner input set
   is empty. All mathematical gates use Python integers and exact `Fraction`
   arithmetic. Wall time and peak memory occur only in the support-budget gate.
+- Implementation provenance: the exact rational pair-intersection routine was
+  adapted from the current-main runner
+  `scripts/physical_cell_cutting_sign_pattern_blocks_cycle773_2026_08_11.py`,
+  then included and gated self-contained here. No result is read from it.
+
+## Exact target and obligation graph
+
+Let `P` be the 192 used determinant-one simplices, `D` the 15800 geometric
+24-simplex cuttings, `C` the 192 chamber labels, `E` the order-192 even-mask
+group, and `G` the order-384 signed-coordinate symmetry group constructed
+below. The exact finite target is to certify `D` geometrically, identify `P`
+with the left translates of two eight-element subsets of `E`, and establish
+the stated label covariance, tiling census, profile orbits, and sign-halving
+identities.
+
+The acyclic proof obligations are:
+
+- `P0` [proved here]: enumerate the determinant-one candidates, the declared
+  adjacency-cost floor, and all exact covers of the generic rational sample
+  (`K1`).
+- `P1` [proved here; depends on `P0`]: certify every co-occurring simplex pair
+  by exact rational facet separation or intersection dimension. Interior
+  disjointness plus 24 simplex volumes `1/24` makes every sample cover a
+  geometric cutting (`K1G`).
+- `P2` [proved here; depends on `P0`, `P1`]: construct the chamber incidence,
+  compare it with direct rational representative membership, and verify that
+  every cutting partitions the chambers (`K1`, `K1C`).
+- `P3` [proved here; depends on `P2`]: construct `G`, compare its induced
+  chamber action with direct action on simplex vertices, and prove label
+  covariance (`K2`).
+- `P4` [proved here; depends on `P2`, `P3`]: establish the free transitive
+  `E`-relabelling, group law, two tiles, stabilizers, and translate-to-piece
+  bijection (`K3`-`K5`).
+- `P5` [proved here; depends on `P4`]: recount the group tilings and prove their
+  objectwise, label-preserving bijection with `D` (`K6`, `K7`).
+- `P6` [proved here; depends on `P4`, `P5`]: enumerate positions, all coarse
+  profiles, realized profiles, and the modulo-two rank (`K8`, `K9`).
+- `P7` [proved here; depends on `P3`, `P5`, `P6`]: establish profile orbits,
+  sign-character stabilizers, every per-profile sign symmetry, census
+  assembly, and the independent extreme-orbit cross-check (`K10`-`K13`).
+- `P8` [proved here]: exercise three wrong-construction controls and enforce
+  the declared runtime, memory, and output budget (`K14`-`K17`).
+
+Every obligation in this finite target is closed. Physical interpretation,
+multi-cell extension, classification of arbitrary tile pairs, and a closed
+formula for the enumerated per-profile counts lie outside the target.
 
 Everything quoted below is recomputed from scratch inside that runner, from the corner coordinates
 of the cell upward; no value is read in from a sibling artifact, and the note quotes no number
@@ -72,20 +119,30 @@ carries the measurement.
 
 The cell is the open unit four-cube with its sixteen corners. A piece is a five-corner simplex
 whose edge matrix at its first corner has determinant of size one; there are 2672 such candidates,
-the adjacency cost over them has floor 6, and the pieces at that floor number 400. A cutting is an
-exact cover of the cell by pieces; testing membership on a generic integer sample lattice of 625
-points, the depth-first exact cover finds 15800 cuttings, every one of them by 24 pieces, and the
-pieces that occur in at least one cutting number 192. [K1]
+the adjacency cost over them has floor 6, and the pieces at that floor number 400. Testing
+membership on a generic rational sample lattice of 625 points, the depth-first exact cover finds
+15800 sample covers, every one of them by 24 pieces, and the pieces that occur in at least one
+cover number 192. [K1]
+
+The geometric upgrade is separate from the sample search. Of the 15168 pairs of pieces that
+co-occur in a cover, 13632 are separated by a simplex facet. Exact rational vertex enumeration of
+the remaining pair intersections gives affine dimension zero for 864 pairs and one for 672 pairs.
+Thus the simplex interiors in every cover are disjoint. Each determinant-one simplex has volume
+`1/24`, so 24 such simplices inside the unit four-cube have total volume one; their closed union
+fills the cube. These 15800 certified geometric covers are the cuttings used below. [K1G]
 
 Naming a piece means walking its corners: a start corner together with an order of the four axes.
 Raw enumeration gives 384 walk namings, each piece carries exactly two of them, and the minimal
-naming is the one whose start corner lies below its opposite corner. [K1, and the namings line of
-stdout]
+naming is the one whose start corner has the lower binary index of the opposite-corner pair. [K1,
+and the namings line of stdout]
 
 The twelve cut walls of the cell carve its interior into 192 chambers, each recorded as an axis
-order together with three signs. The sign-pattern deal assigns 8 chambers to every piece; dually
-every chamber lies in 8 of the 192 pieces. Every cutting meets every chamber in exactly one piece:
-over all 15800 cuttings the count of partition failures is 0. [K1]
+order together with three signs. Every used piece is a walk simplex, whose interior facet equations
+belong to this wall arrangement, so membership is constant on each chamber. The sign-pattern deal
+assigns 8 chambers to every piece; dually every chamber lies in 8 of the 192 pieces. Direct exact
+membership of a rational representative of each chamber agrees with the deal for all 192 pieces.
+Every cutting meets every chamber in exactly one piece: over all 15800 cuttings the count of
+partition failures is 0. [K1, K1C]
 
 The label of a piece is taken on its minimal naming: the sign of the axis order, times minus one
 to the parity of the start corner. The label sum of a cutting adds that label over its 24 pieces.
@@ -97,8 +154,9 @@ or minus 8, with counts 9896, 2832 on each side, and 120 on each side. [census l
 The symmetry group of the cell has order 384: an element is a pair, an axis permutation p composed
 with a per-axis reflection mask m acting by x -> 1 - x on each masked axis. Acting on exact
 rational interior points and reading the image chamber back off the size order and the signs of
-its offsets, each of the 384 elements permutes the 192 chambers, hence permutes the 192 pieces;
-the 384 induced piece maps are pairwise distinct, so the action is faithful. [K2]
+its offsets, each of the 384 elements permutes the 192 chambers, hence permutes the 192 pieces.
+The induced map agrees on all 73728 element-piece pairs with direct transformation of the five
+simplex vertices; the 384 piece maps are pairwise distinct, so the action is faithful. [K2]
 
 The sign character of an element is eps = sgn(p) times minus one to the parity of the reflection
 mask. It takes the value minus one on exactly 192 of the 384 elements. [K2]
@@ -108,11 +166,11 @@ times the label of P. This is checked on all 73728 element-piece pairs, with 0 f
 
 Two consequences are then derivations, not measurements. First, the label sum is covariant: the
 label sum of the image cutting equals eps(g) times the label sum of the cutting, because the image
-of a cutting is a cutting and the label of each piece picks up the same factor. Second, since eps
-takes the value minus one somewhere, composing with such an element is an involution on the
-collection of cuttings that negates the label sum, so the census is symmetric under a change of
-the sign of the label sum. The measured census respects that symmetry exactly: 2832 on each side
-at size 4, and 120 on each side at size 8.
+of a cutting is a cutting and the label of each piece picks up the same factor. Second, any fixed
+element with eps equal to minus one gives a bijection from cuttings with label sum `s` to cuttings
+with label sum `-s`; its inverse has the same negative character. Therefore the census is symmetric
+under a change of sign. The measured census respects that symmetry exactly: 2832 on each side at
+size 4, and 120 on each side at size 8.
 
 ## The free transitive relabelling
 
@@ -185,7 +243,7 @@ part over the 24 translating elements of the tiling, one per tile of the partiti
 geometric survives in that formula, which is why the census can be recovered from the abstract
 data alone.
 
-## The independent recount
+## The abstract recount
 
 The recount is run over the abstract model only: 192 group elements, 192 tiles given as an
 eight-element mask together with an integer label, and a depth-first exact cover that never
@@ -216,10 +274,11 @@ integers that system has 125 solutions: 8 with all entries odd, 27 with all entr
 with entries of mixed parity. [K9]
 
 Of the 125, exactly 25 are realized by tilings: 6 of the all-odd solutions and 19 of the all-even
-ones. No parity-mixed solution is realized, though 90 of them satisfy the linear system. That
-parity constancy is measured, not derived. The obstruction to deriving it at this level is
-explicit: reducing the 24 defining rows modulo two leaves the kernel of the level-one linear
-conditions at dimension 6 out of 12, far too large to force a parity class. [K9]
+ones. No parity-mixed solution is realized, though 90 of them satisfy the coarse linear system.
+Separately, reducing its 24 defining rows modulo two gives rank 6 and hence a kernel of dimension 6
+in the 12 profile coordinates. These are exhaustive finite measurements of the coarse system and
+the realized tilings. Whether a different argument derives parity constancy from the full tiling
+constraints lies outside this note's target. [K9]
 
 ## Orbits, equivariance, and the halving
 
@@ -268,23 +327,23 @@ Every one of those stabilizers consists of elements of sign character plus one, 
 what allows an orbit to sit entirely at size 8, and each orbit splits evenly between the two
 signs. [K13]
 
-## Boundary
+## Claim boundary and exhaustive data
 
-What is derived here: the covariance of the label under the symmetry group and hence the sign
+The derived statements are the covariance of the label under the symmetry group and hence the sign
 symmetry of the census; the free transitive relabelling of chambers by the even-mask subgroup; the
 well-definedness of the translate label and the identity that makes the label sum a signed
 permutation sum; the upgrade of the translate dictionary from injective to bijective by the
 equal-count argument; and the halving of every per-profile census from a sign-character
 stabilizer.
 
-What is not derived, and is reported as measured:
+The following exact enumerations are inputs consumed by those derivations:
 
-- The six per-profile tiling counts, 9368, 944, 160, 24, 20 and 16, are measured, not derived.
+- The six per-profile tiling counts, 9368, 944, 160, 24, 20 and 16, are direct
+  enumeration outputs consumed by the orbit assembly.
 - The per-profile extreme counts, 48, 16, 24 and 12 on the classes that carry them, are
   measured; the assembly identities consume them rather than producing them.
-- Parity constancy of the realized profiles is measured. The kernel of dimension 6 out of 12
-  modulo two shows that the level-one linear conditions cannot force it, so a derivation
-  would have to come from a strictly finer argument.
+- Parity constancy of the realized profiles and the dimension-6 kernel of the coarse system are
+  separately measured.
 - The purity of the odd class at size 4, and the fact that the small class B is entirely
   extreme, are measured.
 - The recount equality at 15800 is measured; the bijection between tilings and cuttings is

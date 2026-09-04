@@ -1,9 +1,10 @@
-"""Physical cell cutting: the cuttings are exact tilings by two eight-element tiles, and the label-sum census is symmetry-forced.
+"""Physical cell cutting: group tilings, forced sign symmetry, and an exact finite label-sum census.
 
 Standalone exact runner, standard library only. The preamble rebuilds the unit four-cube cell object from scratch, as in the sibling
 cycles: the five-corner unit-determinant pieces at the adjacency cost floor, the 15800 cuttings by 24 pieces, the 192 pieces that occur
 in them, and the 192 chambers of the twelve-wall cut of the open cell, each piece holding 8 of them and each chamber sitting in 8 pieces.
-A cutting meets every chamber in exactly one piece; that partition property is re-verified here and is the geometric input used below.
+A cutting meets every chamber in exactly one piece. Exact rational pair-intersection tests certify disjoint simplex interiors for every
+co-occurring pair; together with the 24 unit-determinant simplex volumes, this upgrades the sample exact covers to geometric dissections.
 
 Put each piece in its minimal naming, start corner v0 below its opposite, and let L(P) = sgn(sg) times minus one to the weight of v0.
 The label sum S(T) adds L over the 24 pieces of a cutting. The order-384 symmetry group of the cell, axis permutations composed with
@@ -13,11 +14,12 @@ reflection mask satisfies L(gP) = eps(g) L(P), so S(gT) = eps(g) S(T) and the ce
 The even-mask subgroup, order 192, relabels the chambers freely and transitively, so pieces transport to eight-element subsets of the
 subgroup. Two base pieces give two tiles X0 and X1, the 192 pieces are exactly the 192 distinct left translates of the two tiles, each
 piece arising from exactly two translating elements, and L(w X) = sgn of the permutation part of w. A cutting is then a partition of the
-subgroup into 24 translates. An independent search over the abstract model alone recovers 15800 tilings and the same census, and the two
+subgroup into 24 translates. A separate abstract recount recovers 15800 tilings and the same census, and the two
 collections agree cutting by cutting. Tile shadows give 12 positions; profiles give an abstract count of 125 with 25 realized, six orbits
 under the symmetry group, per-orbit censuses, and the extreme cross-check at absolute value 8.
 
-Gates: K1 object rebuild, K2 the group action and the sign character, K3 the free relabelling and the abstract product law, K4 the tiles
+Gates: K1 object rebuild, K1G geometric certificate, K1C chamber cross-check, K2 the group action and the sign character,
+K3 the free relabelling and the abstract product law, K4 the tiles
 and the translate dictionary, K5 the label theorem, K6 the model-only recount, K7 the bijection, K8 the positions, K9 the profile system,
 K10 the profile orbits, K11 the halving and the per-profile censuses, K12 the assembly identities, K13 the extreme orbits, K14 to K16
 three wrong-value rejectors. All work is exact over the integers and the rationals; no floating point enters any gate."""
@@ -28,7 +30,7 @@ import time
 import resource
 from fractions import Fraction as FR
 
-AUDIT_TIMEOUT_SEC = 120
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.time()
 OUT = [0]
@@ -150,7 +152,25 @@ BARY = []
 for S in KEPT:
     v0 = CORN[S[0]]
     C = [[CORN[S[j + 1]][r] - v0[r] for j in range(4)] for r in range(4)]
-    BARY.append((v0, inv4(C)))
+    Ci = inv4(C)
+    rows = []
+    for i in range(4):
+        a = tuple(Ci[i][r] for r in range(4))
+        b = -sum(Ci[i][r] * v0[r] for r in range(4))
+        rows.append((a, b))
+    a0 = tuple(-sum(Ci[i][r] for i in range(4)) for r in range(4))
+    b0 = 1 + sum(sum(Ci[i][r] * v0[r] for r in range(4)) for i in range(4))
+    rows.append((a0, b0))
+    BARY.append((v0, Ci, rows))
+
+BARY_OK = True
+for t, S in enumerate(KEPT):
+    vals = [[sum(a[r] * CORN[v][r] for r in range(4)) + b
+             for v in S] for a, b in BARY[t][2]]
+    want = [[1 if j == i + 1 else 0 for j in range(5)] for i in range(4)]
+    want.append([1, 0, 0, 0, 0])
+    if vals != want:
+        BARY_OK = False
 
 # ------------------------------------------------------------------
 # 1b. a sample lattice that avoids every facet plane of every piece
@@ -165,7 +185,7 @@ NPTS = RSTEP ** 4
 
 GENERIC = True
 MASK = []
-for (v0, Ci) in BARY:
+for (v0, Ci, _rows) in BARY:
     off = [sum(Ci[i][c] * DIV * v0[c] for c in range(4)) for i in range(4)]
     col = [[[Ci[i][ax] * u for i in range(4)] for u in AXVAL[ax]] for ax in range(4)]
     bits = 0
@@ -229,6 +249,108 @@ USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
+
+# ------------------------------------------------------------------
+# 1d. exact interior disjointness for every co-occurring pair
+# ------------------------------------------------------------------
+
+
+def solve4(rows):
+    n = 4
+    M = [[FR(x) for x in r] for r in rows]
+    for c in range(n):
+        p = -1
+        for r in range(c, n):
+            if M[r][c] != 0:
+                p = r
+                break
+        if p < 0:
+            return None
+        M[c], M[p] = M[p], M[c]
+        pv = M[c][c]
+        M[c] = [x / pv for x in M[c]]
+        for r in range(n):
+            if r != c and M[r][c] != 0:
+                f = M[r][c]
+                M[r] = [M[r][k] - f * M[c][k] for k in range(n + 1)]
+    return [M[r][n] for r in range(n)]
+
+
+def afrank(pts):
+    if not pts:
+        return -1
+    base = pts[0]
+    rows = [[FR(p[r]) - FR(base[r]) for r in range(4)] for p in pts[1:]]
+    rk = 0
+    for c in range(4):
+        p = -1
+        for i in range(rk, len(rows)):
+            if rows[i][c] != 0:
+                p = i
+                break
+        if p < 0:
+            continue
+        rows[rk], rows[p] = rows[p], rows[rk]
+        pv = rows[rk][c]
+        for i in range(rk + 1, len(rows)):
+            if rows[i][c] != 0:
+                f = rows[i][c] / pv
+                rows[i] = [rows[i][k] - f * rows[rk][k] for k in range(4)]
+        rk += 1
+    return rk
+
+
+def side(a, b, x):
+    return sum(a[r] * x[r] for r in range(4)) + b
+
+
+def sep_facet(r1, p1, r2, p2):
+    for a, b in r1:
+        if max(side(a, b, x) for x in p2) <= 0:
+            return True
+    for a, b in r2:
+        if max(side(a, b, x) for x in p1) <= 0:
+            return True
+    return False
+
+
+def inter_dim(r1, r2):
+    con = list(r1) + list(r2)
+    pts = []
+    for idx in itertools.combinations(range(10), 4):
+        rows = [list(con[i][0]) + [-con[i][1]] for i in idx]
+        x = solve4(rows)
+        if x is None:
+            continue
+        if all(side(a, b, x) >= 0 for a, b in con):
+            tx = tuple(x)
+            if tx not in pts:
+                pts.append(tx)
+    return afrank(pts)
+
+
+PC = [0] * NPI
+for k, s in enumerate(CUT):
+    for i in s:
+        PC[i] |= 1 << k
+
+CO_PAIRS = [(i, j) for i in range(NPI) for j in range(i + 1, NPI)
+            if PC[i] & PC[j]]
+NCO_PAIR = len(CO_PAIRS)
+NFAC = 0
+NDIM = {}
+DISJ_OK = True
+SIMPLEX_VERTICES = [tuple(CORN[c] for c in KEPT[USED[i]]) for i in range(NPI)]
+for i, j in CO_PAIRS:
+    r1 = BARY[USED[i]][2]
+    r2 = BARY[USED[j]][2]
+    if sep_facet(r1, SIMPLEX_VERTICES[i], r2, SIMPLEX_VERTICES[j]):
+        NFAC += 1
+        continue
+    dim = inter_dim(r1, r2)
+    NDIM[dim] = NDIM.get(dim, 0) + 1
+    if dim >= 4:
+        DISJ_OK = False
 
 # ------------------------------------------------------------------
 # 2. the paths and their two namings
@@ -375,6 +497,13 @@ def spt(ch):
 
 PTS = [spt(c) for c in CHAM]
 
+DIRECT_INC = []
+for i in range(NPI):
+    rows = BARY[USED[i]][2]
+    DIRECT_INC.append(tuple(c for c, x in enumerate(PTS)
+                            if all(side(a, b, x) > 0 for a, b in rows)))
+BADDEAL = sum(1 for i in range(NPI) if DIRECT_INC[i] != tuple(INC[i]))
+
 
 def ckey(x):
     """the chamber that holds the point x: the size order of the offsets and the first three signs"""
@@ -416,12 +545,20 @@ NG = len(GPI)
 FAITH = len(set(GPC))
 NEG = sum(1 for g in range(NG) if GEP[g] == -1)
 BADCOV = 0
+BADDIRECT = 0
 for g in range(NG):
     ep = GEP[g]
     pc = GPC[g]
     for i in range(NPI):
         if LAB[pc[i]] != ep * LAB[i]:
             BADCOV += 1
+        image = []
+        for v in KEPT[USED[i]]:
+            y = cellmap(GPI[g], GMK[g], CORN[v])
+            image.append(sum(int(y[a]) << a for a in range(4)))
+        direct = POS.get(KDX.get(tuple(sorted(image)), -1), -1)
+        if pc[i] != direct:
+            BADDIRECT += 1
 NPAIRC = NG * NPI
 
 # ------------------------------------------------------------------
@@ -835,7 +972,8 @@ STABEPS = 0
 for pr in P25:
     if any(GEP[g] == -1 and actprof(PPERM[g], pr) == pr for g in range(NG)):
         STABEPS += 1
-HALV = all(OCS[k].get(8, 0) == OCS[k].get(-8, 0) for k in range(len(RANK)))
+HALV = all(all(d.get(v, 0) == d.get(-v, 0) for v in d)
+           for d in CENOF.values())
 PUREO = all(abs(SVAL[S2C[k]]) == 4 for pr in ORBS[RANK[1]] for k in BYP[pr])
 PUREB = all(abs(SVAL[S2C[k]]) == 8 for pr in ORBS[RANK[3]] for k in BYP[pr])
 
@@ -932,18 +1070,26 @@ MIXN = len(BYP.get(MIXW, []))
 gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and NS == 15800 and SIZES == [24] and NPI == 192
      and NCH == 192 and INCN == [8] and HOLDN == [8] and DEALOK == NPI and BADP == 0 and GENERIC
      and NPER == [2] and len(NAMES) == 384 and NPTS == 625, "K1",
-     "object: {0} candidates, floor {1}, {2} kept, {3} points, {4} cuttings of {5}, {6} pieces, {7} chambers, incidence {8} and {8},"
+     "object: {0} candidates, floor {1}, {2} kept, {3} points, {4} sample covers of {5}, {6} pieces, {7} chambers, incidence {8} and {8},"
      " bad {9}"
      .format(nd(NCAND), nd(FLOOR), nd(NKEPT), nd(NPTS), nd(NS), nd(SIZES[0]), nd(NPI), nd(NCH), nd(INCN[0]), nd(BADP)))
 
-emit("namings: {0} walk namings, {1} per piece, and the minimal one starts at the corner below its opposite"
+gate(BARY_OK and NCO_PAIR == 15168 and NFAC == 13632 and NDIM == {0: 864, 1: 672} and DISJ_OK, "K1G",
+     "geometry: {0} co-occurring pairs; {1} facet-separated, residual dimensions zero {2} and one {3}; interiors disjoint"
+     .format(nd(NCO_PAIR), nd(NFAC), nd(NDIM.get(0, 0)), nd(NDIM.get(1, 0))))
+
+gate(BADDEAL == 0 and sorted(set(len(x) for x in DIRECT_INC)) == [8], "K1C",
+     "chamber dictionary: direct rational representative membership agrees for all {0} pieces, failures {1}"
+     .format(nd(NPI), nd(BADDEAL)))
+
+emit("namings: {0} walk namings, {1} per piece, and the minimal one starts at the lower binary-index corner"
      .format(nd(len(NAMES)), nd(NPER[0])))
 
-gate(ACTOK and NG == 384 and FAITH == 384 and BADCOV == 0 and NEG == 192 and SCENS ==
+gate(ACTOK and NG == 384 and FAITH == 384 and BADCOV == 0 and BADDIRECT == 0 and NEG == 192 and SCENS ==
      "-8:120 -4:2832 0:9896 4:2832 8:120", "K2",
-     "symmetry group: {0} elements permute {1} chambers and {1} pieces, distinct maps {2}, sign minus on {3},"
-     " covariance failures {4} of {5}"
-     .format(nd(NG), nd(NPI), nd(FAITH), nd(NEG), nd(BADCOV), nd(NPAIRC)))
+     "symmetry group: {0} elements act directly on {1} pieces, distinct maps {2}, sign minus on {3},"
+     " action/covariance failures {4} of {5}"
+     .format(nd(NG), nd(NPI), nd(FAITH), nd(NEG), nd(BADCOV + BADDIRECT), nd(NPAIRC)))
 
 gate(FREE and len(IMGS) == 192 and BADPR == 0 and BADDICT == 0 and NEL == 192 and len(EV) == 8, "K3",
      "relabelling: the even-mask subgroup of {0} elements, from {1} masks, hits each of {2} chambers once;"

@@ -1,14 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_group_tiling_census_cycle783_2026_08_14.py
-runner_sha256: 143f939456467ec866815449350dec6f2e8a8ce484da1bd5fb189b1770b61776
-timeout_sec: 120
+runner_sha256: f84680af6ba0d82ada8440799f1b53c58329af14d62d201dfb72c0dd79981a2e
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 11.94
+elapsed_sec: 33.23
 status: ok
 ----- stdout -----
-PASS K1 object: 2672 candidates, floor 6, 400 kept, 625 points, 15800 cuttings of 24, 192 pieces, 192 chambers, incidence 8 and 8, bad 0
-namings: 384 walk namings, 2 per piece, and the minimal one starts at the corner below its opposite
-PASS K2 symmetry group: 384 elements permute 192 chambers and 192 pieces, distinct maps 384, sign minus on 192, covariance failures 0 of 73728
+PASS K1 object: 2672 candidates, floor 6, 400 kept, 625 points, 15800 sample covers of 24, 192 pieces, 192 chambers, incidence 8 and 8, bad 0
+PASS K1G geometry: 15168 co-occurring pairs; 13632 facet-separated, residual dimensions zero 864 and one 672; interiors disjoint
+PASS K1C chamber dictionary: direct rational representative membership agrees for all 192 pieces, failures 0
+namings: 384 walk namings, 2 per piece, and the minimal one starts at the lower binary-index corner
+PASS K2 symmetry group: 384 elements act directly on 192 pieces, distinct maps 384, sign minus on 192, action/covariance failures 0 of 73728
 PASS K3 relabelling: the even-mask subgroup of 192 elements, from 8 masks, hits each of 192 chambers once; product failures 0, dictionary 0 of 36864
 tile zero: 0123:0 0132:12 0231:12 0321:12 1230:12 1320:12 2310:12 3210:15
 tile one: 0123:0 0132:12 0231:12 0321:12 1023:0 1032:12 2013:0 3012:0
@@ -29,10 +31,10 @@ PASS K13 extremes: the 240 cuttings at size 8 fall into 7 orbits, 4 of size 24 b
 PASS K14 rejector one: moving one tile element to another even mask gives 288 distinct translates of which 96 are pieces, short of 192
 PASS K15 rejector two: negating the labels of one tile type changes the census at 3 values, the count at minus 8 moving from 120 to 108
 PASS K16 rejector three: the parity-mixed abstract solution 4 0 4 0 3 1 0 0 1 4 3 4 is realized by 0 of the 15800 tilings
-PASS K17 support budget: 11 seconds under 120, peak 109 MB under 2500, output 2811 bytes under 6000
+PASS K17 support budget: 33 seconds under 300, peak 114 MB under 2500, output 3052 bytes under 6000
 census: label sum over the 15800 cuttings -8:120 -4:2832 0:9896 4:2832 8:120
-resource: 11 s, 109 MB peak
-TOTAL: PASS=17 FAIL=0
+resource: 33 s, 114 MB peak
+TOTAL: PASS=19 FAIL=0
 
 ----- stderr -----
 

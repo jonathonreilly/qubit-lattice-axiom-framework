@@ -100,10 +100,11 @@ For the graph edges included in the Hamiltonian,
 
 ```text
 T_ij = (i/2) A_ij (B_i-B_j),
-H_enc(g) = -sum_(i,j) T_ij + g sum_(i,j) n_i n_j.
+H_enc(g) = +sum_(i,j) T_ij + g sum_(i,j) n_i n_j,
+H_F(g)   = -sum_(i,j) (c_i^dag c_j + c_j^dag c_i) + g sum_(i,j) n_i n_j.
 ```
 
-The reference matrix `H_F(g)` is the spinless-fermion hopping-plus-neighbour-interaction matrix constructed with Jordan-Wigner ladders in numerical vertex order. The sectors are cube `N=4`, grid `N=6`, and pendant `n_9=1` with three occupied grid vertices. The pendant edge carries no Hamiltonian term. These choices intentionally encode the reference fermionic model; agreement with that model is a checked consequence of the supplied encoding, not evidence that the dictionary or statistics emerged independently.
+The reference matrix `H_F(g)` is the displayed spinless-fermion hopping-plus-neighbour-interaction matrix constructed with Jordan-Wigner ladders in numerical vertex order. The sectors are cube `N=4`, grid `N=6`, and pendant `n_9=1` with three occupied grid vertices. The pendant edge carries no Hamiltonian term. These choices intentionally encode the reference fermionic model; agreement with that model is a checked consequence of the supplied encoding, not evidence that the dictionary or statistics emerged independently.
 
 ## Finite results
 

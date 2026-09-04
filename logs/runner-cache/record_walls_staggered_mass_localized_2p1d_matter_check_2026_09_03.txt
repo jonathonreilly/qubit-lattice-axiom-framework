@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py
+runner_sha256: 19e0368581226ad2fdafbd392874b9d0e6a86cf363f12641a2b88c884e6df8f4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.35
+status: ok
+----- stdout -----
+PASS A1 [exact] eps_{v+e_x} = -eps_v (0.0e+00), so a half-space sign flip IS a one-site translation of the mass pattern (0.0e+00): the wall is a STACKING FAULT, and min|m(x)| = 1.000 -- no plane's mass vanishes
+PASS A2 [exact] cell algebra: {G_a, G_b} = 0.0e+00, {G_a, Eps} = 0.0e+00, X = i G1G2G3 = -(YxXxY) (0.0e+00), [X, G_a] = 0.0e+00, {X, Eps} = 0.0e+00
+PASS A3 [exact] W = i G1 Eps = -(XxZxZ) (0.0e+00), hermitian (0.0e+00), W^2 = I (0.0e+00); {W,G1} = {W,Eps} = 0.0e+00, [W,G2] = [W,G3] = 0.0e+00, {W, X} = 0.0e+00: W ANTICOMMUTES WITH X
+PASS A4 [1e-13] the 1x2x2 transverse Bloch cell reproduces the DIRECT real-space coarse torus, L = 4, 6, m = 0, 0.5, 1 (1.6e-14)
+PASS A5 [exact/1e-13] {M, Eps} = 0.0e+00; bulk E(q)^2 = 6 + 2 sum_a cos q_a + m^2, each +-E fourfold, L = 4, 6, 8, m = 0, 0.5, 2 (2.8e-14); the 8^3 Dirac point gaps to 2m (9.4e-15)
+PASS A6 [exact] the commutant of {G_1, G_2, G_3, Eps} is 4-dimensional -- I and traceless taste generators F_b = IYX, YXI, YZX -- each commuting with W at 0.0e+00: taste is not split by a wall
+PASS B1 [numerical] 8x8 transverse-BZ scan, L_x = 32, m = 1: the wall slab's min|E| is lowest at (pi, pi), the projection of the (pi,pi,pi) Dirac point (0.414214 against 0.870264)
+PASS B2 [1e-10] FOUR MODES PER WALL PER NODE: 8 states inside the bulk gap at (pi,pi), splitting 4 + 4 by the wall indicator (worst 0.0208 / 0.9792), L_x = 32, 64, m = 0.5, 1, 2
+PASS B3 [1e-9] the SINGLE wall of the open slab carries four states too, 2 at +E_w and 2 at -E_w, ends separate at |E| ~ m; L_x = 32, 64, m = 0.5, 1, 2 (L=64, m=1: E_w = +0.414214 (x2), ends at 1.004258)
+   decay length [fits]:  m | sharp | w=4 | xi = 2/arccosh(1+m^2/2)
+     m=0.5  4.1562  4.1632  4.0410  (+3.03 per cent)
+     m=1.0  2.2692  2.1353  2.0781  (+2.75 per cent)
+     m=2.0  1.3854  1.1602  1.1346  (+2.26 per cent)
+PASS B4 [fits] the mode is bound on the SEA'S OWN length: the resolved wall's fitted length matches xi(m) to 3.1 per cent at m = 0.5, 1, 2
+PASS B5 [numerical] within 4.5 coarse sites lie 99.1 / 96.9 per cent of the density (sharp / resolved) at m = 1, 100.0 / 99.8 at m = 2, 91.9 / 85.2 at m = 0.5; and at m = 1 the sharp profile is PAIR-FLAT about the seam, n(30)/n(29) = 1.0000 with a step n(31)/n(30) = 5.828 per pair, against 1.629 and 1.304 resolved
+PASS B6 [fits] a 2+1D CONE at (pi,pi) of the wall's own zone: fitted velocity 0.9997 to 0.9997 along q_y, q_z and the diagonal, m = 0.5, 1, 2, both profiles -- isotropic, m-independent, the bulk velocity 1 (the shortfall is the fit's O(p^2) truncation)
+   m | E_w(L=32) | E_w(L=64) | sqrt(1+m^2)-1 | w=4 | w=8 | bulk
+     0.25  0.030776 0.030776 0.030776  2.7e-08 4.2e-10  0.25
+     0.50  0.118034 0.118034 0.118034  5.2e-07 6.5e-12  0.50
+     1.00  0.414214 0.414214 0.414214  2.1e-05 5.0e-10  1.00
+     2.00  1.236068 1.236068 1.236068  1.2e-03 1.0e-06  2.00
+PASS C1 [fit, 1e-6] E_w = sqrt(1 + m^2) - 1 to six decimals at m = 0.25, 0.5, 1, 2, IDENTICAL at L_x = 32 and 64: the sharp band is gapped by 2(sqrt(1+m^2) - 1), inside the bulk gap 2m but not zero, not a hybridisation
+PASS C2 [numerical] a supplied mass PASSING THROUGH ZERO restores zero modes: at w = 4 the gap falls three to five orders (under 1e-6 for m <= 0.5), at w = 8 to 1.0e-6 or less at every m: the gap is the fault's
+   L=64:  m | <W> sharp A / B | <W> w=4 A / B | 1/sqrt(1+m^2)
+     0.5  +0.894427 / -0.894427  +0.989451 / -0.989451  0.894427
+     1.0  +0.707107 / -0.707107  +0.974387 / -0.974387  0.707107
+     2.0  +0.447214 / -0.447214  +0.939317 / -0.939317  0.447214
+PASS D1 [1e-12] NO CHIRALITY ON THE WALL: <X> = 0 on all four modes of every wall, m = 0.5, 1, 2, both profiles, worst 1.4e-15 -- forced by {W, X} = 0
+PASS D2 [fit, 1e-7] <W> = +-1 IN SIGN, opposite on the two walls, constant across each wall's four modes -- the index count; magnitude 1/sqrt(1 + m^2) sharp (a fit, to 1e-6)
+   H|wall = (G_1 X)(x)(n.F):  m | singlet | |n| | E_w | residual
+     0.5  1.1e-24  0.118034  0.118034  1.7e-16
+     1.0  5.8e-24  0.414214  0.414214  1.6e-15
+     2.0  5.1e-20  1.236068  1.236068  3.1e-15
+PASS D3 [1e-12] the induced 2+1D mass is H|wall = (G_1 X) (x) (n . F) exactly, its TASTE-SINGLET coefficient exactly zero on every wall at every m, |n| = E_w, n reversed between the walls: NET PARITY ANOMALY ZERO
+PASS D4 [1e-9] the tastes LOCALIZE IDENTICALLY -- each F_b is traceless on each wall subspace -- while the 2+1D mass splits them oppositely in parity
+PASS E1 [1e-6] L = 24 and 32, m = 1, k_z = pi: the line binds an eightfold band at |E| = 0.317837, IDENTICAL at both sizes (2.2e-16), under the single-wall gap 0.414214: intrinsic
+   k_z dispersion:  dk | |E|(pi-dk) | |E|(pi+dk)
+     0.08  0.327745  0.327745
+     0.16  0.355761  0.355761
+PASS E2 [1e-9] the band is EVEN in k_z about the node, rising from 0.317837: dE/dk_z = 0 there, so NO LEFT OR RIGHT MOVERS on the line -- two orthogonal walls bind a massive band, not a chiral wire
+PASS E3 [numerical] with the mass RESOLVED (w = 3) the crossing carries only the massless wall-plane cones -- |E| = 6.5e-05 at the node, 0.099958 at k_z - pi = 0.1
+PASS E4 [numerical] the line does bind: the band density is enhanced 11.2-fold within 1.5 coarse sites of the four intersection lines (L = 32), 17.5 per cent on 16 of 1024 cells
+SUMMARY: four localized 2+1D Dirac modes per wall per node, on xi(m) at velocity 1; a sharp wall is a stacking fault, gapping them by 2(sqrt(1+m^2)-1); none of it is chiral; two walls bind a massive band.
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

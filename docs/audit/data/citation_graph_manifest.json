@@ -1,6 +1,6 @@
 {
- "edge_count": 15852,
- "node_count": 5585,
+ "edge_count": 15854,
+ "node_count": 5586,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17428,6 +17428,10 @@
   },
   "spin_half_cubic_ice_forward_length_convergence_bounded_theorem_note_2026-09-04": {
    "deps_hash": "46a12242e507",
+   "out_degree": 2
+  },
+  "spin_half_cubic_ice_infrared_maxwell_join_health_boundary_bounded_theorem_note_2026-09-04": {
+   "deps_hash": "1525e714d0d9",
    "out_degree": 2
   },
   "spin_half_cubic_ice_late_time_higher_gradient_maxwell_join_localization_bounded_theorem_note_2026-09-04": {

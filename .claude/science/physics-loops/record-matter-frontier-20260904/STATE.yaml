@@ -1,0 +1,24 @@
+loop: record-matter-frontier-20260904
+mode: campaign
+start_utc: '2026-09-04T19:41:09Z'
+deadline_utc: '2026-09-05T19:41:09Z'
+runtime_hours: 24
+checkpoint_interval_minutes: 15
+automation_id: advance-toe-record-matter-frontier
+base_main: a1a64d36bc856c3ae330786972d3f2a02b678c52
+branch: physics-loop/record-matter-block01-20260904
+block: 1
+phase: author review and PR preflight
+active_route: partial parity-class formation and live matter propagation
+hard_residual: construct a local record process with continuing observable matter dynamics
+current_result: polar conditional sea and zero-mode formula proved on supplied domain; primary 17 PASS and independent 13 PASS; finite physical edge-Z bridge under investigation
+prior_artifact_directory: /Users/jonreilly/Documents/Codex/toe-assessment-2026-09-04
+active_workers:
+  - record_full_law_pilot: next finite BKSF edge-Z ground-space probe
+  - record_dynamics_evidence: final primary-code review after independent checker
+  - matter_gravity_evidence: proof and prior-art review complete; idle
+photon_lane: excluded; owned by another worker
+lock_owner: physics-loop-record-matter
+next_action: review primary and independent results, construct the self-contained finite record model, then package the coherent block as a PR
+pr: null
+stop_condition: fixed deadline; otherwise checkpoint and pivot through local failures

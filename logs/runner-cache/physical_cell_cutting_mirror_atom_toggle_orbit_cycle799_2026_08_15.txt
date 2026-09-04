@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_mirror_atom_toggle_orbit_cycle799_2026_08_15.py
-runner_sha256: 8103790d079da5c198f2a8890718958d7679021b32dcf2c8cf3fa3f9c7bea0fa
+runner_sha256: 590ba1642ae2014c936607a649950d5ac8a2744ab5b667f2be2ef16583383148
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 9.45
+elapsed_sec: 9.65
 status: ok
 ----- stdout -----
 PASS cell-rebuild 2672 absolute-det-one candidates; floor 6; 400 kept; 15800 cuttings of 24; 192 used pieces; 384 maps

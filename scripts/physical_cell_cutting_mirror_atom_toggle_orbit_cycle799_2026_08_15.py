@@ -522,7 +522,7 @@ gate(MIRIN == NS and MIRFIX == 0 and FULLOK == NFIB and NFIB == 4116, "global-mi
 emit("global-mirror-action detail: mirrors are cuttings at {0} of {0}, with {1} fixed; the involution acts freely"
      .format(NS, MIRFIX))
 
-# ============================================== the measured censuses
+# ============================================== the complete finite censuses
 
 SHAPE = Counter()
 for s in SOLS:

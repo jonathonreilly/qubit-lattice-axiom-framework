@@ -1,12 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_09_02.py
-runner_sha256: 6f7688c1ee02151e7daee62012ddb87d0b96d64617b929c4808840c8dce7202a
+runner_sha256: d69efa7010196d76e79665e5ffd80dd8bbea6e46b28c3694c8c1fc6f039eb7e5
+input_fingerprint_sha256: c1bb2a47d0711357d8650f2e22d4a68c30af1f83eb74a652c411622a3cc90bfa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.96
+elapsed_sec: 1.38
 status: ok
 ----- stdout -----
-NATIVE SU(3) A2 REFLECTION UNIFORM HALF-LINE GAP VERIFIER
+NATIVE SU(3) LIE-TYPE A_2 REFLECTION UNIFORM HALF-LINE GAP VERIFIER
 Finite rows are support only; theorem checks are exact algebra/typing gates.
 
 A. exact reflection principle
@@ -26,17 +27,17 @@ B. Weyl/Fourier algebra and proof-side bounds
          A(z,w)=-(-w + z**2)*(-w**2 + z)*(w*z - 1)/(w**2*z**2)
   [PASS] [THEOREM] signed moments cancel through degree two but not degree three
          cubic moments={(0, 3): -12, (1, 2): 6, (2, 1): 6, (3, 0): -12}
-  [PASS] [THEOREM] walk covariance fixes the A2 quadratic form
+  [PASS] [THEOREM] walk covariance fixes the Lie-type A_2 quadratic form
          Sigma=[[2/3, -1/3], [-1/3, 2/3]], inverse=[[2, 1], [1, 2]]
   [PASS] [THEOREM] full-lattice Fourier symbol is exact
          phi=(cos(k1)+cos(k2)+cos(k1-k2))/3
-  [PASS] [THEOREM] numerator and denominator share C_A2=27 sqrt(3)/pi
-         integral P3^2=648*sqrt(3)*pi; C_A2=27*sqrt(3)/pi
+  [PASS] [THEOREM] numerator and denominator share the Lie-type A_2 normalization
+         integral P3^2=648*sqrt(3)*pi; common normalization=27*sqrt(3)/pi
   [PASS] [THEOREM] cubic Gaussian transform is the H exp(-Q) profile
          P3(partial)e^-Q=27*x*y*(x+y)e^-Q
   [PASS] [THEOREM] denominator error moment gives C_D=38912 sqrt(3)/(27 pi)
          C_D=38912*sqrt(3)/(27*pi)
-  [PASS] [THEOREM] beta=128 denominator lower bound exceeds half its A2 limit
+  [PASS] [THEOREM] beta=128 denominator lower bound exceeds half its Lie-type A_2 limit
          D_lower=8.678183274472, D_inf/2=7.442940088194
   [PASS] [THEOREM] derived global Wilson-to-saddle constant is below 19
          gamma=0.234844190117, C_N=70.634359447473, C_D=794.567036246399, K_grid=17.912000550207, K_shift=0.239460490079, K_W=18.151461040286
@@ -66,7 +67,8 @@ D. common-space and scope typing
   [PASS] [THEOREM] normalization firewall separates the native packet from physical convolution
          for lambda=(1,0), c_lambda/c_0 is three times c_lambda/(d_lambda c_0)
 
-TOTAL: THEOREM_PASS=21, SUPPORT_PASS=4, FAIL=0
+BREAKDOWN: THEOREM_PASS=21 SUPPORT_PASS=4
+TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----
 

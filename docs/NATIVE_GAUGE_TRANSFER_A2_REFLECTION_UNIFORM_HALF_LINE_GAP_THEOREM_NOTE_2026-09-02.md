@@ -1,4 +1,16 @@
-# Native Gauge Transfer A2 Reflection Uniform Half-Line Gap Theorem Note
+---
+claim_id: native_gauge_transfer_a2_reflection_uniform_half_line_gap_theorem_note_2026-09-02
+claim_type: bounded_theorem
+claim_scope: "For the exact SU(3) dominant-weight packet operator T_beta = exp((beta/2)J) diag(c_lambda(beta)/c_0(beta)) exp((beta/2)J), there is a delta > 0 such that lambda_1(T_beta)/lambda_0(T_beta) <= 1-delta for every beta >= 0; moreover, the displayed global Wilson-to-saddle multiplier error is < 19/beta for beta >= 128. This is conditional on the cited recurrence/coefficient identity and is not a physical Wilson-environment, continuum, confinement, or Clay mass-gap theorem."
+upstream_dependencies:
+  - gauge_vacuum_plaquette_transfer_operator_character_recurrence_note
+  - native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12
+  - native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12
+  - native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_note_2026-06-12
+runner: scripts/native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_09_02.py
+---
+
+# Native Gauge Transfer Lie-Type A_2 Reflection Uniform Half-Line Gap Theorem Note
 
 **Date:** 2026-09-02
 **Claim type:** bounded_theorem
@@ -30,7 +42,7 @@ sup_(p,q >= 0)
 
 for every `beta >= 128`.  This is global in the representation label, rather
 than restricted to `p,q <= A sqrt(beta)`, and is stronger than the registered
-W85 `O_A(beta^(-1/2))` target.
+Wilson-to-saddle `O_A(beta^(-1/2))` target (historical obligation alias `W85`).
 
 This is a theorem about the native discrete packet operator named above.  It is
 not a theorem about the physical three-dimensional Wilson environment, a
@@ -43,6 +55,26 @@ operators are not silently identified here.
 Status authority remains the independent audit lane.  This source note does
 not assign its own retained status or edit an audit ledger.
 
+## Machine Status And Trace
+
+```yaml
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: bounded_theorem
+claim_type_reason: "The shifted-chamber reflection identity, endpoint-uniform Fourier estimates with explicit constants, common-space trace-norm limit, and compactness/Perron completion prove the declared native-packet theorem, conditional on the cited recurrence/coefficient identity."
+trace_class: direct_blocker_closure
+target_claim_id: native_gauge_transfer_w85_finite_witness_open_gate_note_2026-06-12
+target_blocker_text: "Replace the sampled table with a proof or domain-exhaustive certificate for the intended active window and tail."
+source_of_blocker_text: frontier_question
+reachability_to_target: closes
+artifact_role: theorem
+next_trace_action: "Run independent scientific audit of this claim and re-establish the current dependency chain before any effective retained use."
+conditional_surface_status: "Exact only for the declared native SU(3) dominant-weight packet and conditional on the cited recurrence/coefficient identity; physical convolution, the three-dimensional Wilson environment, action selection, continuum Yang-Mills, confinement, and the Clay mass gap remain outside scope."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
 Primary verifier:
 [native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_09_02.py](../scripts/native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_09_02.py)
 
@@ -51,6 +83,22 @@ Runner cache:
 
 No new axiom, literature constant, external comparator, fitted constant,
 rounded target anchor, or finite-packet substitution enters the proof.
+
+## Import And Support Inventory
+
+| Input | Role | Provenance | Open bridge/status boundary |
+|---|---|---|---|
+| Exact `SU(3)` character recurrence and `c_lambda(beta)=<lambda|exp(beta J)|0>` identity | load-bearing scientific premise | linked recurrence note below | its current audit-ledger row is unaudited; independent audit and dependency-chain re-establishment remain open before retained use |
+| Registered Wilson-to-saddle and operator-remainder targets | target/context only; they state the prior residuals but supply no step of the new proof | linked Wilson-to-saddle and operator-remainder notes below | both current rows are unaudited; this theorem proposes source-side closure without assigning their audit disposition |
+| Earlier `c_(0,0)` scale | context and cross-check only; the normalization used here is re-derived from the squared Weyl alternant | linked lower-bound note below | its current row is unaudited and is not used as a retained premise |
+| [`frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py`](../scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py) | support-only Bessel-determinant comparison and finite-matrix utilities imported by the verifier | repository runner named in `AUDIT_INPUT_PATHS`; its exact read is cache-fingerprinted | no analytic proof step depends on its finite rows or physical-environment ansatz |
+| Finite Weyl-group algebra, Fourier inversion on the two-torus, elementary trigonometric/Gaussian bounds, incomplete-gamma identities, Hilbert-Schmidt ideal estimates, compact self-adjoint spectral perturbation, and the displayed absolute-value Perron argument | mathematical machinery | textbook-level mathematics; every normalization and load-bearing constant used here is displayed or derived in Sections 1-5, with no external numerical value | no physical bridge is supplied by this machinery; correctness remains subject to independent audit |
+| Python, NumPy, SymPy, mpmath, and SciPy | implementation support only | local runtime packages | no package output is promoted to a scientific premise |
+| Axioms, observations, fitted values, literature measurements, external datasets, and sibling-branch results | empty input inventory | none | none imported |
+
+The status statements in this inventory are a review-time snapshot against
+`origin/main` at `a0eab00344ea6dca3c2e3adeb12bac6d2560e725`. Historical audit records
+are provenance only and are not treated as current retained authority.
 
 ## One-Hop Authorities And Exact Target
 
@@ -62,7 +110,8 @@ rounded target anchor, or finite-packet substitution enters the proof.
   ```
 
 - [NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md](NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md)
-  registers the missing W85 coefficient estimate.
+  registers the missing Wilson-to-saddle coefficient estimate (historical
+  obligation alias `W85`).
 
 - [NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md](NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md)
   registers the scaled operator remainder and the limit
@@ -405,7 +454,8 @@ multiplied by `beta`, is below `0.24` for `beta >= 128`.  Combining (12) and
 decimal digits and obtains `18.151462 < 19`; that evaluation reproduces the
 proof arithmetic but does not choose or certify the constant.
 
-This proves the estimate requested by the W85 coefficient wall.  It also
+This proves the estimate requested by the Wilson-to-saddle coefficient wall
+(historical obligation alias `W85`).  It also
 supplies the true multiplier tail: outside any scaled `Q`-ball the exact
 multiplier is bounded by the Gaussian-polynomial tail of `V` plus `18/beta`.
 
@@ -624,7 +674,7 @@ Two additional typing failures are fenced in the proof itself:
 |---|---|---|
 | V1 current verdict-identified obstruction | FAIL | the matching live parent rows currently have no top-level `verdict_rationale`; historical audits name this residual, but do not satisfy the current gate |
 | V2 materially new | PASS | prior rungs stopped at determinant cancellation, true tail, and common-space convergence |
-| V3 current retained framework primitive essential | FAIL | the theorem is conditional on the native recurrence, whose live authority is currently unaudited; after that operator is supplied, the remaining derivation is standard reflection/Fourier/operator mathematics |
+| V3 current retained framework primitive essential | FAIL | the theorem is conditional on the native recurrence, whose live authority is currently unaudited; after that operator is supplied, the remaining steps are the displayed finite-reflection, Fourier, and operator-theory derivation |
 | V4 substantial theorem/leverage | PASS | replaces finite extrapolation by an all-`beta`, infinite-operator theorem |
 | V5 distinct mechanism | PASS | finite Weyl reflection plus endpoint-uniform Fourier `L^1` control replaces Bessel mode-by-mode assembly |
 
@@ -647,5 +697,6 @@ python3 scripts/native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_0
 Expected final line:
 
 ```text
-TOTAL: THEOREM_PASS=21, SUPPORT_PASS=4, FAIL=0
+BREAKDOWN: THEOREM_PASS=21 SUPPORT_PASS=4
+TOTAL: PASS=25 FAIL=0
 ```

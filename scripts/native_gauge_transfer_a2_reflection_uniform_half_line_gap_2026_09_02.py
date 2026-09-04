@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact verifier for the native SU(3) A2 reflection half-line theorem.
+"""Exact verifier for the native SU(3) Lie-type A_2 half-line theorem.
 
 The theorem proof is analytic and lives in the paired note.  This runner
 independently checks its exact combinatorics, Weyl/Fourier algebra, proof-side
@@ -11,19 +11,17 @@ from __future__ import annotations
 
 from collections import defaultdict
 from fractions import Fraction
-import importlib.util
 import math
-import os
-import sys
 
 import mpmath as mp
 import numpy as np
 import sympy as sp
+import frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve as coefficient_support
 
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-COEFFICIENT_SOURCE = os.path.join(
-    HERE, "frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
 )
 
 STEPS = (
@@ -128,15 +126,6 @@ def poissonized_reflection(
             weight *= beta / (6.0 * n)
         total += weight * reflected_count(level, (0, 0), (p, q))
     return total
-
-
-def load_coefficient_module():
-    spec = importlib.util.spec_from_file_location("a2_halfline_coefficients", COEFFICIENT_SOURCE)
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[spec.name] = module
-    assert spec.loader is not None
-    spec.loader.exec_module(module)
-    return module
 
 
 def exact_combinatorics() -> None:
@@ -250,7 +239,7 @@ def fourier_algebra() -> dict[str, float]:
          [sp.Rational(-1, 3), sp.Rational(2, 3)]]
     )
     check(
-        "walk covariance fixes the A2 quadratic form",
+        "walk covariance fixes the Lie-type A_2 quadratic form",
         sigma == sigma_expected and sigma.inv() == sp.Matrix([[2, 1], [1, 2]]),
         f"Sigma={sigma.tolist()}, inverse={sigma.inv().tolist()}",
     )
@@ -278,10 +267,10 @@ def fourier_algebra() -> dict[str, float]:
     p3_square = sp.simplify(p3_diff(p3_diff(mgf)).subs({t1: 0, t2: 0}))
     common = sp.simplify(p3_square / (6 * (2 * sp.pi) ** 2))
     check(
-        "numerator and denominator share C_A2=27 sqrt(3)/pi",
+        "numerator and denominator share the Lie-type A_2 normalization",
         p3_square == 648 * sp.sqrt(3) * sp.pi
         and common == 27 * sp.sqrt(3) / sp.pi,
-        f"integral P3^2={p3_square}; C_A2={common}",
+        f"integral P3^2={p3_square}; common normalization={common}",
     )
 
     x, y = sp.symbols("x y", real=True)
@@ -350,7 +339,7 @@ def fourier_algebra() -> dict[str, float]:
         f"C_D={den_moment_constant}",
     )
     check(
-        "beta=128 denominator lower bound exceeds half its A2 limit",
+        "beta=128 denominator lower bound exceeds half its Lie-type A_2 limit",
         c_a2 - float(epsilon_den) > c_a2 / 2,
         (
             f"D_lower={c_a2-float(epsilon_den):.12f}, "
@@ -404,7 +393,6 @@ def fourier_algebra() -> dict[str, float]:
 
 def independent_coefficient_checks() -> None:
     print("C. independent Wilson-coefficient comparison")
-    se = load_coefficient_module()
     levels = full_counts(90)
     samples = (
         (0.2, 0, 0),
@@ -421,7 +409,7 @@ def independent_coefficient_checks() -> None:
     errors = []
     for beta, p, q in samples:
         reflected = poissonized_reflection(levels, p, q, beta)
-        bessel = se.wilson_character_coefficient(p, q, 50, beta / 3.0)
+        bessel = coefficient_support.wilson_character_coefficient(p, q, 50, beta / 3.0)
         errors.append(abs(reflected - bessel) / max(1.0, abs(bessel)))
     check(
         "reflection coefficients match independent Bessel determinants",
@@ -431,7 +419,7 @@ def independent_coefficient_checks() -> None:
     )
 
     truncated = poissonized_reflection(levels[:13], 0, 0, 12.0)
-    exact = se.wilson_character_coefficient(0, 0, 50, 4.0)
+    exact = coefficient_support.wilson_character_coefficient(0, 0, 50, 4.0)
     rel = abs(truncated - exact) / abs(exact)
     check(
         "mutation: fixed Taylor cutoff fails as beta grows",
@@ -440,11 +428,16 @@ def independent_coefficient_checks() -> None:
         "SUPPORT",
     )
 
-    j, weights, index = se.build_J(6)
+    j, weights, index = coefficient_support.build_J(6)
     for beta in (2.0, 6.0):
-        ehalf = se.matrix_exp_symmetric(j, beta / 2.0)
+        ehalf = coefficient_support.matrix_exp_symmetric(j, beta / 2.0)
         coeffs = np.array(
-            [se.wilson_character_coefficient(p, q, 50, beta / 3.0) for p, q in weights]
+            [
+                coefficient_support.wilson_character_coefficient(
+                    p, q, 50, beta / 3.0
+                )
+                for p, q in weights
+            ]
         )
         ratios = coeffs / coeffs[index[(0, 0)]]
         transfer = ehalf @ np.diag(ratios) @ ehalf
@@ -506,7 +499,7 @@ def operator_typing_checks(constants: dict[str, float]) -> None:
 
 
 def main() -> int:
-    print("NATIVE SU(3) A2 REFLECTION UNIFORM HALF-LINE GAP VERIFIER")
+    print("NATIVE SU(3) LIE-TYPE A_2 REFLECTION UNIFORM HALF-LINE GAP VERIFIER")
     print("Finite rows are support only; theorem checks are exact algebra/typing gates.")
     print()
     exact_combinatorics()
@@ -517,7 +510,8 @@ def main() -> int:
     print()
     operator_typing_checks(constants)
     print()
-    print(f"TOTAL: THEOREM_PASS={THEOREM_PASS}, SUPPORT_PASS={SUPPORT_PASS}, FAIL={FAIL}")
+    print(f"BREAKDOWN: THEOREM_PASS={THEOREM_PASS} SUPPORT_PASS={SUPPORT_PASS}")
+    print(f"TOTAL: PASS={THEOREM_PASS + SUPPORT_PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 
 

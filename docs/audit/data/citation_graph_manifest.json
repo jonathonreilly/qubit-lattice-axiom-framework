@@ -1,6 +1,6 @@
 {
- "edge_count": 15848,
- "node_count": 5584,
+ "edge_count": 15852,
+ "node_count": 5585,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17432,6 +17432,10 @@
   },
   "spin_half_cubic_ice_late_time_higher_gradient_maxwell_join_localization_bounded_theorem_note_2026-09-04": {
    "deps_hash": "2a75482b1090",
+   "out_degree": 4
+  },
+  "spin_half_cubic_ice_off_axis_maxwell_high_momentum_localization_bounded_theorem_note_2026-09-04": {
+   "deps_hash": "9ecd26a46d95",
    "out_degree": 4
   },
   "spin_half_cubic_ice_positive_topological_electric_stiffness_bounded_theorem_note_2026-09-03": {

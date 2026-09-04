@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 37.216,
+  "load_bearing_score": 37.213,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "116893c0a7fc5fd6e4351a1aa1f61d7befc488a9cef9847d775df122033705b8",
+  "note_hash": "a85eee88a38835c1f69470327ec9e479d098b95c86b7dde6e54b0165e0d8c7a0",
   "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -517,7 +517,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -527,6 +527,6 @@
   },
   "runner_path": "scripts/frontier_non_abelian_gauge.py",
   "title": "Native Gauge Closure Note: Nonabelian Graph-First Gauge Closure on Z^3",
-  "transitive_descendants": 1681,
+  "transitive_descendants": 1677,
   "verdict_rationale": null
 }

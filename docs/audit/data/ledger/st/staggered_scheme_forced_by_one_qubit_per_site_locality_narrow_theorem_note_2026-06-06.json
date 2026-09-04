@@ -39,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7e8b0348dde159edd56d91936dd1f96db67b61be7acd413cdf14e5ba61f69155",
+  "note_hash": "ccdd6ce7873f57e4ec869dae61695bf31b0a8b8e8274f22f3312d98ed58de0de",
   "note_path": "docs/STAGGERED_SCHEME_FORCED_BY_ONE_QUBIT_PER_SITE_LOCALITY_NARROW_THEOREM_NOTE_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

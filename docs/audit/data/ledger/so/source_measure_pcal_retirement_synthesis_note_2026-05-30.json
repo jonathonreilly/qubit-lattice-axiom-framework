@@ -22,11 +22,7 @@
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "source_measure_pcal_rn_cocycle_theorem_note_2026-05-30",
-    "source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30",
-    "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30"
-  ],
+  "deps": [],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -38,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ca0636a43bdad79ea1cd8a6f2da73442af23bcf346e0feff1f8fc0f636970cbd",
+  "note_hash": "3e9420fad07561db844d5a970e4d4c8b19491616f46f99ed32ce2227fc39491e",
   "note_path": "docs/SOURCE_MEASURE_PCAL_RETIREMENT_SYNTHESIS_NOTE_2026-05-30.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

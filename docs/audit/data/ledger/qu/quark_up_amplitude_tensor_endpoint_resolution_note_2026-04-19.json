@@ -58,12 +58,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.267,
+  "load_bearing_score": 9.109,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8e602f28abae5b84ab71a5819b4dcf4f1971022e91601a02a8696188a8b58d86",
+  "note_hash": "54a5f49b0f74bf8d153f30f9748083f1a899af5e0861d5c0069930925a418d88",
   "note_path": "docs/QUARK_UP_AMPLITUDE_TENSOR_ENDPOINT_RESOLUTION_NOTE_2026-04-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -79,6 +79,6 @@
   },
   "runner_path": "scripts/frontier_quark_up_amplitude_tensor_endpoint_resolution.py",
   "title": "Quark Up-Amplitude Tensor-Endpoint Resolution",
-  "transitive_descendants": 76,
+  "transitive_descendants": 68,
   "verdict_rationale": null
 }

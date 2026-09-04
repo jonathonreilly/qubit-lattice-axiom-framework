@@ -33,12 +33,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.564,
+  "load_bearing_score": 10.56,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "1b984955aa9b0edd3c265ac430a26b6670abbbcceeb16c16c0c9fa1c167513cd",
+  "note_hash": "cbc005f966b60838062591390b1cb12e577c8f2638bb74efcb1b8a59bc47dddc",
   "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -165,7 +165,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -175,7 +175,7 @@
   },
   "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
   "title": "Observable-Principle P1 + P2 from Qubit-Trace Generating Functional",
-  "transitive_descendants": 756,
+  "transitive_descendants": 754,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

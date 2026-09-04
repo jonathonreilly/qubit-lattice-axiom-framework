@@ -736,6 +736,12 @@ def max_rss_mib() -> float:
     return usage / (1024.0**2) if sys.platform == "darwin" else usage / 1024.0
 
 
+def display_value(value: float) -> float:
+    """Suppress signed-zero display without changing any computed gate."""
+
+    return 0.0 if abs(value) < 5.0e-13 else value
+
+
 class Report:
     def __init__(self) -> None:
         self.lines: list[str] = []
@@ -922,11 +928,11 @@ def main() -> int:
                 "DATA G5 {:d} {:d} {:.9f} {:.9f} {:.9f} {:.9f} {:.9f}".format(
                     row.side,
                     outcome,
-                    row.positive_particles[outcome],
-                    row.negative_holes[outcome],
-                    row.zero_occupancies[outcome],
-                    row.overlaps[outcome],
-                    row.leakages[outcome],
+                    display_value(row.positive_particles[outcome]),
+                    display_value(row.negative_holes[outcome]),
+                    display_value(row.zero_occupancies[outcome]),
+                    display_value(row.overlaps[outcome]),
+                    display_value(row.leakages[outcome]),
                 )
             )
 

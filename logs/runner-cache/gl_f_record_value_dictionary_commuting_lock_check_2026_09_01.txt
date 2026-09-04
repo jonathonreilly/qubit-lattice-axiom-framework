@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gl_f_record_value_dictionary_commuting_lock_check_2026_09_01.py
-runner_sha256: 6937b4800f7cdb7d0c393862417869d53357fe2c9cafdf97f5ad84d2a60de371
+runner_sha256: a241233525fab1d345b48f35005d522096f527d4bd6310f3496eec429db4f1a5
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 3.04
+elapsed_sec: 2.57
 status: ok
 ----- stdout -----
 PASS A1 moment <1> = 1
@@ -14,6 +14,8 @@ PASS A5 odd moment vanishes
 PASS A6 Z(P2) = 1
 PASS A7 Z(P3) = 1
 PASS A8 Z(C4)|lam=0 = 1
+PASS A9 Z(C4) = 1 + lam^4/27 exactly
+PASS A10 lam^4 + 27 has exact minimum 27 on -1 <= lam <= 1
   Z(C4) = lam**4/27 + 1
 PASS B lock u=w=1: W(u{psi0,psi1^dag}w) = 2 W(u psi0 psi1^dag w)
 PASS B lock u=n_2: W(u{psi0,psi1^dag}w) = 2 W(u psi0 psi1^dag w)
@@ -25,13 +27,14 @@ PASS C1 edge two-point = lam/18
 PASS C2 edge mixed anticommutator = lam/9 != 0 at lam=1/2
 PASS C3 same-type anticommutator W({psi0,psi1}) = 0 (U(1) base symmetry)
 PASS C4 distance-2 two-point = lam^2/54
-PASS C5 square-diagonal lam^2 coefficient = 1/27 (two paths add)
-PASS C6 square-diagonal two-point != 0 at lam=1/2
+PASS C5 square-diagonal two-point = lam^2/(lam^4 + 27) exactly
+PASS C6 square-diagonal lam^2 coefficient = 1/27 (two paths add)
+PASS C7 square-diagonal two-point != 0 at lam=1/2
   square-diagonal two-point = lam**2/(lam**4 + 27)
-PASS C7 lam=0: edge two-point = 0
-PASS C8 lam=0: distance-2 two-point = 0
-PASS C9 sandwiched anticommutator = 2|F|^2x|F|^2 = 1/18, ALL lam (P2)
-PASS C10 sandwiched witness nonzero at lam=0
+PASS C8 lam=0: edge two-point = 0
+PASS C9 lam=0: distance-2 two-point = 0
+PASS C10 sandwiched anticommutator = 2|F|^2x|F|^2 = 1/18, ALL lam (P2)
+PASS C11 sandwiched witness nonzero at lam=0
 PASS D P2: induced state has exact unit trace
 PASS D P2: tr(rho_lam sp^0 sm^1) = classical two-point
 PASS D P3: induced state has exact unit trace
@@ -40,8 +43,13 @@ PASS E1 JW family: exact CAR (cross-site anticommutators are the ZERO operator =
 PASS E2 vacuum: c_x |0> = 0 for all x
 PASS E3 graded cross-site two-point <c0^dag c1> = 1/2 != 0 in state chi
 PASS E4 same state, anticommutator insertion = 0 (operator identity)
-SUMMARY commuting frame: exchange functional == 2 x propagator (locked); graded frame: exchange == 0 with propagator 1/2 (free).
-TOTAL: PASS=32 FAIL=0
+per_element: checked and executed -- pointwise scalar commutation and the exact polynomial sandwich identity were evaluated
+per_site: checked and executed -- declared cross-site pairs and every pair of the N=3 Jordan-Wigner comparator were checked
+per_mode: checked and not executed -- no momentum, spectral, continuum, propagator, or dynamical mode claim is made
+per_block: checked and executed -- P2, P3, C4, and the N=3 tensor carrier were evaluated with exact arithmetic
+lattice_wide: checked and not executed -- the universal result is algebraic; no infinite-volume or physical-lattice lift is claimed
+SUMMARY pointwise scalar frame: anticommutator moment == 2 x product moment; graded comparator: anticommutator == 0 with static two-point 1/2.
+TOTAL: PASS=35 FAIL=0
 
 ----- stderr -----
 

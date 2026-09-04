@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""GL(F) record-value dictionary commuting lock — exact finite check.
+"""Record-value dictionary commuting lock — exact finite check.
 
 Class-A finite-dimensional runner. Everything is exact (sympy Rational /
 Gaussian rationals / symbolic lam); no floats anywhere.
@@ -7,14 +7,15 @@ Gaussian rationals / symbolic lam); no floats anywhere.
 Objects (all declared here; no external authority consumed):
 
   * Record-configuration measures: on a finite graph Lambda with edge set E,
-    the probability measure on (S^2)^Lambda with density
+    the nonnegative pair weight on (S^2)^Lambda
     D = prod_{(x,y) in E} (1 + lam * v_x . v_y) against the product uniform
-    measure (a probability density for -1 <= lam <= 1).
+    measure, normalized by its exact partition function Z (each factor is
+    nonnegative for -1 <= lam <= 1).
   * Record-value dictionary: psi_x |-> F_x = (v_x^1 + i v_x^2)/2, a
     complex-valued FUNCTION of the site-x record value (the sigma_+ Bloch
     coordinate: F_x = tr(sigma_+ rho(v_x)) for rho(v) = (I + v.sigma)/2).
-  * Functional-level GL(F) (annihilation criterion): the induced functional
-    W on words in {psi_x, psi_x^dag} passes iff it annihilates EVERY
+  * Algebraic annihilation criterion A(W): the induced functional W on words
+    in {psi_x, psi_x^dag} passes iff it annihilates EVERY
     word-sandwiched cross-site anticommutator insertion
     W(u {psi_x, psi_y^#} w) = 0, x != y.
   * Graded comparator: Jordan-Wigner family c_x on (C^2)^{otimes N}
@@ -22,14 +23,15 @@ Objects (all declared here; no external authority consumed):
 
 Checks:
   [A] exact uniform-S^2 monomial moments (self-test against closed forms);
-  [B] the commuting lock: for record-value dictionaries the sandwiched
-      anticommutator functional equals exactly 2x the sandwiched product
-      functional (verified on exact integrals AND as an operator identity
-      for the cross-site qubit ladders), so GL(F)-annihilation forces every
-      cross-site two-point to vanish;
+  [B] the commuting lock instantiated on the declared dictionary and
+      sandwiches: the anticommutator functional equals exactly 2x the
+      sandwiched product functional (verified on exact integrals AND as an
+      operator identity for the cross-site qubit ladders), so the declared
+      all-word annihilation criterion A(W) forces every cross-site two-point
+      to vanish;
   [C] nonvanishing witnesses: exact cross-site two-points lam/18 (edge),
-      lam^2/54 (distance-2), lam^2-coefficient 1/27 (square diagonal, two
-      paths), all nonzero for lam != 0; the lam=0 product point kills every
+      lam^2/54 (distance-2), lam^2/(lam^4+27) (square diagonal, two paths),
+      all nonzero for lam != 0; the lam=0 product point kills every
       two-point AND still fails the sandwiched criterion at exact value 1/18
       unless the dictionary is a.e. trivial;
   [D] cross-route consistency: the classical moment functional equals the
@@ -41,8 +43,11 @@ Checks:
 Prints one line per check; ends with TOTAL: PASS=N FAIL=0.
 """
 
-from sympy import (Rational, Symbol, I, Matrix, eye, zeros, expand, cancel,
-                   factorial2, conjugate, series, simplify)
+from sympy import (Rational, Symbol, I, Matrix, Interval, eye, zeros, expand,
+                   cancel, factorial2, conjugate, series, simplify)
+from sympy.calculus.util import minimum
+
+AUDIT_TIMEOUT_SEC = 300
 
 PASS = 0
 FAIL = 0
@@ -58,7 +63,7 @@ def check(label, ok):
         print(f"FAIL {label}")
 
 
-lam = Symbol('lam')
+lam = Symbol('lam', real=True)
 
 # ---------------------------------------------------------------- sites ----
 MAXN = 4
@@ -133,6 +138,10 @@ check("A6 Z(P2) = 1", integrate_uniform(density(P2)) == 1)
 check("A7 Z(P3) = 1", integrate_uniform(density(P3)) == 1)
 ZC4 = integrate_uniform(density(C4))
 check("A8 Z(C4)|lam=0 = 1", ZC4.subs(lam, 0) == 1)
+check("A9 Z(C4) = 1 + lam^4/27 exactly",
+      simplify(ZC4 - (1 + lam**4 / 27)) == 0)
+check("A10 lam^4 + 27 has exact minimum 27 on -1 <= lam <= 1",
+      minimum(lam**4 + 27, lam, Interval(-1, 1)) == 27)
 print(f"  Z(C4) = {ZC4}")
 
 # ------------------------------------------- [B] the commuting lock (2x) ---
@@ -183,21 +192,23 @@ tp_far = W(F(0) * Fb(2), P3)
 check("C4 distance-2 two-point = lam^2/54", simplify(tp_far - lam**2 / 54) == 0)
 tp_diag = W(F(0) * Fb(2), C4)
 c2 = tp_diag.series(lam, 0, 3).removeO().coeff(lam, 2)
-check("C5 square-diagonal lam^2 coefficient = 1/27 (two paths add)",
+check("C5 square-diagonal two-point = lam^2/(lam^4 + 27) exactly",
+      simplify(tp_diag - lam**2 / (lam**4 + 27)) == 0)
+check("C6 square-diagonal lam^2 coefficient = 1/27 (two paths add)",
       c2 == Rational(1, 27))
-check("C6 square-diagonal two-point != 0 at lam=1/2",
+check("C7 square-diagonal two-point != 0 at lam=1/2",
       tp_diag.subs(lam, Rational(1, 2)) != 0)
 print(f"  square-diagonal two-point = {simplify(tp_diag)}")
 
 # lam=0 product point: every cross-site two-point dies...
-check("C7 lam=0: edge two-point = 0", tp_edge.subs(lam, 0) == 0)
-check("C8 lam=0: distance-2 two-point = 0", tp_far.subs(lam, 0) == 0)
+check("C8 lam=0: edge two-point = 0", tp_edge.subs(lam, 0) == 0)
+check("C9 lam=0: distance-2 two-point = 0", tp_far.subs(lam, 0) == 0)
 # ...but the sandwiched annihilation criterion still fails unless the
 # dictionary is a.e. trivial: the witness value is 2*Int(|F0|^2 |F1|^2) > 0.
 sand = W(Fb(0) * F(1) * (F(0) * Fb(1) + Fb(1) * F(0)), P2)
-check("C9 sandwiched anticommutator = 2|F|^2x|F|^2 = 1/18, ALL lam (P2)",
+check("C10 sandwiched anticommutator = 2|F|^2x|F|^2 = 1/18, ALL lam (P2)",
       simplify(sand - Rational(1, 18)) == 0)
-check("C10 sandwiched witness nonzero at lam=0",
+check("C11 sandwiched witness nonzero at lam=0",
       sand.subs(lam, 0) == Rational(1, 18))
 
 # --------------------------- [D] qubit-state cross-route (independent) -----
@@ -253,6 +264,12 @@ check("E3 graded cross-site two-point <c0^dag c1> = 1/2 != 0 in state chi",
 check("E4 same state, anticommutator insertion = 0 (operator identity)",
       (chi.conjugate().T * (c[0] * cd[1] + cd[1] * c[0]) * chi)[0, 0] == 0)
 
-print("SUMMARY commuting frame: exchange functional == 2 x propagator "
-      "(locked); graded frame: exchange == 0 with propagator 1/2 (free).")
+print("per_element: checked and executed -- pointwise scalar commutation and the exact polynomial sandwich identity were evaluated")
+print("per_site: checked and executed -- declared cross-site pairs and every pair of the N=3 Jordan-Wigner comparator were checked")
+print("per_mode: checked and not executed -- no momentum, spectral, continuum, propagator, or dynamical mode claim is made")
+print("per_block: checked and executed -- P2, P3, C4, and the N=3 tensor carrier were evaluated with exact arithmetic")
+print("lattice_wide: checked and not executed -- the universal result is algebraic; no infinite-volume or physical-lattice lift is claimed")
+print("SUMMARY pointwise scalar frame: anticommutator moment == 2 x product "
+      "moment; graded comparator: anticommutator == 0 with static two-point 1/2.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+raise SystemExit(1 if FAIL else 0)

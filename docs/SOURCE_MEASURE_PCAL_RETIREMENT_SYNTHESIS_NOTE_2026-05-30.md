@@ -155,6 +155,7 @@ SUMMARY: PASS=... FAIL=0
 ## Link note (2026-09-03 densify repair M1)
 
 The three route notes named above (RN cocycle, cumulant-Mobius, sharp-record
-tangent space) are work-history records; their load-bearing results are
-restated in this synthesis, which is the lane's standing surface. References
-above are plain-text history, not authority links.
+tangent space) are archive-bound under the densify pass (migration pending);
+their load-bearing results are restated in this synthesis, which is the
+lane's standing surface. References above are plain-text history, not
+authority links.

@@ -165,11 +165,14 @@ and `rho_E = -69/4`, failing both `q_E > 0` and `rho_E > -6`. The open color
 import is thereby reduced to the typed magnitude bridge plus the already-forced
 sign. (Absorbed from
 `QUARK_ROUTE2_RCONN_MAGNITUDE_SIGN_SPLIT_EXACT_SUPPORT_NOTE_2026-06-21.md`,
-now a work-history record.)
+archive-bound under the densify pass; migration pending.)
 
 ## Admissibility Gate For Any Future E-Center Primitive (2026-09-03 densify absorb-repair K3)
 
-A candidate primitive closes the endpoint only if it passes all six gates:
+Gates G1-G4 and G6 are necessary for any candidate primitive to close the
+endpoint; G5 additionally tests whether a candidate already exists on the
+current named source bank (a genuinely future primitive fails G5 by
+definition and remains admissible):
 
 | gate | requirement |
 |---|---|
@@ -187,17 +190,18 @@ step-free active-branch slopes (G2/G3/G4); measured E-center calibration
 (G2/G3/G4); `F_adj`/`R_conn` color fraction (G1/G4 absent the typed bridge);
 register-not-read color-trace shortcut (G1/G2/G4); explicit `q_E=15/8` premise
 (G3/G5 — it *is* the missing premise). No named current-bank candidate passes
-all six. (Absorbed from
+all six; future primitives outside the current bank remain open. (Absorbed from
 `QUARK_ROUTE2_NONBLIND_SOURCE_READOUT_PRIMITIVE_GATE_NO_GO_NOTE_2026-06-21.md`,
-now a work-history record.)
+archive-bound under the densify pass; migration pending.)
 
 ## Single-Adjoint-Line Wall (2026-09-03 densify absorb-repair K3-extension)
 
 The color route's sharpest surviving structure, compactly:
 
-- **Sufficiency.** A *supplied physical color ray* selects one adjoint line;
-  the complementary fraction `7/8` of the adjoint then closes the full
-  endpoint through the equivalence web above
+- **Sufficiency (conditional).** A *supplied physical color ray* selects one
+  adjoint line; granting additionally the typed reading of the complementary
+  adjoint fraction `7/8` as the Route-2 E-center excess, the full endpoint
+  closes through the equivalence web above
   (`QUARK_ROUTE2_COLOR_RAY_ADJOINT_LINE_SELECTOR_BOUNDARY_NOTE_2026-06-21.md`).
 - **Obstruction.** The adjoint commutant is scalar: no invariant adjoint line
   and no invariant rank-7 projector exists, so the selection cannot come from
@@ -206,18 +210,21 @@ The color route's sharpest surviving structure, compactly:
 - **Uniqueness.** The `k = 7` uniqueness statement and its falsifiers stay in
   the standing conditional note
   `QUARK_ROUTE2_E_CENTER_SINGLE_ADJOINT_LINE_SELECTOR_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md`.
-- **Source-count identity** (stated nowhere else on the primary surface):
-  `c_TE = -N_pair^3 / N_color^2` with `N_pair^3 = N_color^2 - 1` at
-  `(N_pair, N_color) = (2, 3)`, i.e. `-8/9 = -F_adj` as a counting identity
+- **Source-count identity** (absorbed here so it survives on the atlas
+  surface): the counting identity is `N_pair^3 = N_color^2 - 1` at
+  `(N_pair, N_color) = (2, 3)`, so `-N_pair^3/N_color^2 = -8/9 = -F_adj`
+  numerically; the further identification with `c_TE` remains conditional on
+  the missing typed bridge
   (from `QUARK_ROUTE2_SOURCE_COUNT_SELECTOR_BRIDGE_BOUNDARY_NOTE_2026-06-21.md`).
 - **Connected-trace selector.** The physical family
   `R_phys(kappa_EW) = (8 + kappa_EW)/9` reaches the target only at the
   connected value `kappa_EW = 0`; that selector is not supplied by any current
   authority.
-- **T-side minimality boundary.** The granted T-row `(1, -2, 2)` is *not*
-  selected by primitivity/minimality rules (those pick `n = 1` or
-  `beta_T in {0, 1}`); the named missing T-side premise is a physical
-  multiplicity-two rule.
+- **T-side minimality boundary.** The granted T-row `(1, -2, 2)` is not
+  selected by the enumerated primitivity/minimality selectors tested there
+  (those pick `n = 1` or `beta_T in {0, 1}`); other future selectors remain
+  open, and the named missing T-side premise is a physical multiplicity-two
+  rule.
 
 None of these lines changes the atlas verdict: the center primitive remains
 underived, with one missing typed bridge carrying several equivalent faces.

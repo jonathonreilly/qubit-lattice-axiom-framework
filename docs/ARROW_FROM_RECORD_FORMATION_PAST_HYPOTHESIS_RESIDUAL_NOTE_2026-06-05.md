@@ -137,7 +137,8 @@ low-record boundary, not by `T`.
 - `PAST_HYPOTHESIS_EXISTENCE_REDUCTION_APPEND_ONLY_WELL_FOUNDEDNESS_BOUNDED_THEOREM_NOTE_2026-06-11.md`
   — sharpens this note's residual: the **existence sub-clause** of the
   record-arrow boundary reduces to history non-emptiness in the append-only
-  single-chain sector (durability is exactly the load-bearing property; the
+  single-chain, finite-history sector (both sector scopes are that note's own
+  disclosed restrictions) (durability is exactly the load-bearing property; the
   boundary is not manufacturable by closed reversible dynamics). The
   thermodynamic past hypothesis (low entropy, the quantitative room) remains
   the open input exactly as stated above; only the framework's own existence

@@ -117,3 +117,77 @@ those legs with a fresh supplier.
 3. The banked Dynamics-axiom proposal is revived for adoption (home 2).
 4. A lane produces a result it cannot state conditionally under
    "if C-add".
+
+## 4. The M₄(ℂ) Qubit-domain enlargement (opus R133) — PARKED 2026-09-05
+
+**The question:** enlarge the Qubit axiom's possibility domain from M₂(ℂ)
+to M₄(ℂ) (the fourth Clifford direction as the one with no lattice
+partner — time; chirality exists only for even Clifford dimension and is
+then unique up to scale).
+
+**Standing default:** not adopted; M₂(ℂ) stands as postulated. The
+proposal is recorded in the archived opus packet (R122/R123/R133, survived
+its strongest refutation route R134) with its own caveat standing: the
+supporting computations live on that campaign's cell-complex carrier, and
+whether they correspond to the repo's committed carrier is an audit-lane
+call never made.
+
+**Decision packet:** `archive/campaigns/opus-direct-20260827/`
+(POSITIVE_PATH.md R122/R123/R133/R134; the ledger entry's 2026-09-05
+correction note disambiguates the packet's axiom banners).
+
+**Wake conditions (any one):**
+1. A live lane hits the M₂(ℂ) wall the proposal addresses — the
+   chirality/generation program resumes, or a C222-class site-algebra
+   extension becomes load-bearing for a landing.
+2. An adoption attempt is drafted (then it goes through the practiced
+   adoption bar, starting with the carrier-correspondence audit).
+3. Either parked entry 1 or 2 is otherwise woken — this item gates their
+   carrier stability and must be decided first.
+
+## 5. The σ-reality condition (DK orientation-bit terminal) — PARKED 2026-09-05
+
+**The question:** adopt, or not, the one-line Majorana-type field-content
+commitment — restrict the record-slice generation carrier to
+Fix(−Θ∘X₀) — which is the single named input separating Q = 2/3 (adopt)
+from Q = 1 (decline; the committed measure's own premise-free value).
+
+**Standing default:** not adopted. n = 2, r = 1, Q = 1 stands as what the
+committed structure says premise-free; the Koide tail is stopped per the
+owner's direction and the lane has repointed to the gravity mainline;
+nothing consumes the choice.
+
+**Decision packet:**
+`docs/ADMISSIBILITY_DIRAC_KAHLER_ORIENTATION_BIT_TERMINAL_BOUNDED_THEOREM_NOTE_2026-08-24.md`
+(unlanded lane note, branch
+`physics-loop/toe-axiom-closure-block212-...`; lands with its lane's
+review train) — the terminal's four computed legs plus the proposal.
+
+**Wake conditions (any one, the note's own reopeners):**
+1. The flavor lane's writer mechanism lands (slot semantics fixed
+   dynamically rather than by convention).
+2. Any landed result fixes sector reality conditions — exactly the input
+   the σ bit names.
+3. An odd-extent-compatible grading variant is constructed (the
+   orientation bit becomes registrable, voiding the no-registration
+   theorem's scope).
+4. The flavor/Koide program resumes on the owner's direction.
+
+## 6. The OS-closure owner-bar residue (b141/b142/b143, e_x = −1) — PARKED 2026-09-05
+
+**The question:** disposition of the three reserved OS-closure-era PRs —
+#6379 (origin-covariant shifted Hodge), #6858 (block-142 carrier
+reflection blocker certification), #6859 (block-143 staggered pairing and
+skew-obstruction localization) — including the e_x = −1 class item the
+owner reserved.
+
+**Standing default:** the PRs stay open in the FRONT keep set; nothing
+lands or closes them without the owner; no live lane is blocked on them
+(the landed OS spine, blocks 153–173, did not consume them).
+
+**Wake conditions (any one):**
+1. The gravity mainline / source-action program cites or needs one of
+   them for a landing.
+2. A promotion-lane or review-loop pass takes them up in the normal
+   backlog drain.
+3. The owner picks them up directly.

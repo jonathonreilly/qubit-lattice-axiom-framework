@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""The composition discriminator: record statistics of covariant nearest-neighbour laws.
+"""Finite-cluster occupation distributions for two ladder constructions.
 
-Class-A finite-cluster runner for the composition question. Three independent
-reviews converged on one finite test: can any ungraded, cubic-covariant,
-nearest-neighbour law reproduce the record statistics of the graded
-nearest-neighbour law on finite clusters? This runner executes that test.
+This runner checks a declared hopping-plus-density matrix subfamily on four
+finite open graphs.  Its probability object is the occupation-basis diagonal
+of a normalized ground-space projector.  A physical record reading additionally
+requires state-selection/Born and occupation-to-record bridges outside this
+mathematical runner's input set.
 
 Declared objects:
 
@@ -14,30 +15,25 @@ Declared objects:
   * site operators: ungraded ladders b_i = a at site i and the identity
     elsewhere; graded ladders c_i = Jordan-Wigner, the s3 string on the sites
     before i; n_i = b_i^dag b_i = c_i^dag c_i is the same operator;
-  * the covariant record-conserving nearest-neighbour family, one expression on
-    both compositions,
+  * one declared homogeneous hopping-plus-density expression on both
+    constructions,
         H(t, V) = -t sum_bonds (x_i^dag x_j + x_j^dag x_i) + V sum_bonds n_i n_j,
-    with x = b (ungraded) or x = c (graded), and g = V/t at t = 1;
-  * record statistics P_law(g): the occupation-basis diagonal of the law's
-    lowest-energy state in a fixed record-number sector, the normalized
+    with x = b (ungraded) or x = c (graded); nonzero hopping is normalized to
+    t = 1 and g = V/abs(t), while t = 0 is outside this slice;
+  * occupation distribution P(g): the occupation-basis diagonal of the matrix's
+    lowest-energy state in a fixed occupation-number sector, the normalized
     ground-space projector diagonal if degenerate.
 
-Check groups:
+Check families:
 
-  F  the family: the two-qubit covariant span is 4-dimensional, and the sign of
-     t is a diagonal gauge on a bipartite cluster;
-  A  one dimension: the two compositions give the same sector matrix on chain6,
-     hence identical record statistics at every g;
-  B  the ungraded family is sign-uniform and irreducible, so every member has
-     strictly positive record statistics (Perron-Frobenius, hypotheses checked);
-  C  the graded family has exact cancellation zeros on grid2x3, the cube and
-     grid3x3, and no classical bond-product rule reproduces them;
-  D  numerical witness: the L1 distance from each graded target to the whole
-     scanned ungraded family stays well above 0.15;
-  E  the graded zeros are a symmetry selection rule: a cluster automorphism acts
-     on the sector by a signed permutation commuting with the law, and a pattern
-     it fixes with the sign opposite to the ground state's character is
-     forbidden at every coupling where that state stays simple.
+  * local operator span, global boundary-degree term, zero-hopping boundary,
+    and the nonzero-hopping sign gauge;
+  * exact one-dimensional matrix identity and a numerical control;
+  * exact ungraded sign/connectivity hypotheses and numerical positivity sample;
+  * exact graded free-point spectra, probabilities, and comparator support;
+  * bounded finite-window distance scans;
+  * exact symmetry representations and free-point forced-zero sets, plus a
+    numerical nine-coupling persistence sample.
 
 Exact checks use sympy only (Rational, sqrt(2), integer matrices, Sturm root
 counts). Numerical witnesses use numpy and scipy and are labelled as such.
@@ -124,7 +120,7 @@ def jw_sign(S, src, dst):
 
 
 def sector(L, B, N, graded, t, V):
-    """Exact sector matrix of H(t, V) in the occupation basis; g = V/t."""
+    """Exact sector matrix of H(t, V) in the occupation basis."""
     cfg = configs_of(L, N)
     idx = {c: i for i, c in enumerate(cfg)}
     M = zeros(len(cfg), len(cfg))
@@ -169,9 +165,9 @@ def ground_certificate(M, v, E, lo, hi):
             and count_below(M, hi) == 1)
 
 
-# ======================================== F: the covariant family and its gauge
+# ======================= local operator span, boundaries, and hopping sign gauge
 
-# --- F1: the two-qubit covariant span is exactly 4-dimensional
+# The two-qubit covariant span is exactly 4-dimensional.
 
 def kron(A, B):
     return Matrix(sp.kronecker_product(A, B))
@@ -209,16 +205,55 @@ f1_lin = sp.solve(list(sp.expand(cc[0] * BASIS4[0] + cc[1] * BASIS4[1]
 SEC1 = [1, 2]  # the one-particle sector of the two-qubit space
 f1_const = all(Matrix(2, 2, lambda p, q: M[SEC1[p], SEC1[q]]) == M[SEC1[0], SEC1[0]] * eye(2)
                for M in (eye(4), NTOT))
-check("F1 [exact] two-qubit covariant family: Hermitian H with [H, n_A+n_B] = 0 and "
-      "factor-exchange symmetry has exactly 4 real parameters, the span of {1, n_A+n_B, "
-      "n_A n_B, b_A^dag b_B + b_B^dag b_A}, the first two sector constants, so the family is "
-      "one ratio g = V/t",
+check("local-operator-span [exact]: number conservation and factor exchange give the "
+      "4-dimensional span {1,n_A+n_B,n_A n_B,exchange hopping}; the first two are local "
+      "one-particle-block constants",
       len(f1_sol) == 1 and len(f1_free) == 4 and rows4.rank() == 4
       and len(f1_lin) == 1 and len(f1_lin[0]) == 4 and f1_const
       and sp.expand(HOP2 * NTOT - NTOT * HOP2) == zeros(4, 4)
       and sp.expand(EXCH * HOP2 * EXCH - HOP2) == zeros(4, 4))
 
-# --- F2: the sign of t is a diagonal gauge on a bipartite cluster
+# The summed local linear term is degree-weighted and generally nonconstant.
+
+def summed_linear_values(L, B):
+    degrees = [sum(i in edge for edge in B) for i in range(L)]
+    return degrees, [sum(degrees[i] for i in S) for S in configs_of(L, 1)]
+
+
+boundary_expected = {
+    "chain6": [1, 2, 2, 2, 2, 1],
+    "grid2x3": [2, 3, 2, 2, 3, 2],
+    "cube": [3, 3, 3, 3, 3, 3, 3, 3],
+    "grid3x3": [2, 3, 2, 3, 4, 3, 2, 3, 2],
+}
+boundary_actual = {}
+for boundary_name, boundary_cluster in (
+        ("chain6", CHAIN6), ("grid2x3", GRID23),
+        ("cube", CUBE), ("grid3x3", GRID33)):
+    degrees, values = summed_linear_values(*boundary_cluster)
+    boundary_actual[boundary_name] = values
+    assert degrees == values
+check("boundary-degree-term [exact]: summed one-particle diagonals are "
+      "[1,2,2,2,2,1], [2,3,2,2,3,2], 3 x 8, and [2,3,2,3,4,3,2,3,2]; three open graphs "
+      "are nonconstant",
+      boundary_actual == boundary_expected
+      and all(len(set(boundary_actual[name])) > 1
+              for name in ("chain6", "grid2x3", "grid3x3"))
+      and len(set(boundary_actual["cube"])) == 1)
+
+# The diagonal t=0 limit has sparse ground-projector support.
+
+zero_hopping_zero_counts = []
+for _, (zero_L, zero_B), zero_N in CASES:
+    zero_cfg, _, zero_H = sector(zero_L, zero_B, zero_N, False, 0, 1)
+    zero_diagonal = [zero_H[i, i] for i in range(len(zero_cfg))]
+    zero_ground = min(zero_diagonal)
+    zero_hopping_zero_counts.append(sum(value != zero_ground for value in zero_diagonal))
+check("zero-hopping-boundary [exact]: at t=0,V=1 the four normalized ground-projector "
+      "distributions have 7,18,68,62 zero entries; positivity is scoped to t!=0",
+      zero_hopping_zero_counts == [7, 18, 68, 62])
+
+# The sign of nonzero t is a diagonal gauge on a bipartite cluster.
 
 Vs = sp.Symbol("Vs", real=True)
 SUBA = frozenset(s for s in range(6) if ((s // 3) + (s % 3)) % 2 == 0)
@@ -230,15 +265,15 @@ for f2_graded in (False, True):
         U = sp.diag(*[(-1) ** len(S & SUBA) for S in cfg])
         f2 = (f2 and all(U[i, i] ** 2 == 1 for i in range(len(cfg)))
               and sp.expand(U * Hp * U - Hm) == zeros(len(cfg), len(cfg)))
-check("F2 [exact] the sign of t is a diagonal gauge: on grid2x3 the operator "
+check("hopping-sign-gauge [exact]: on grid2x3 the operator "
       "U = (-1)^{N_A} for the sublattice {0,2,4} has entries +-1 and satisfies "
-      "U H(1,V) U = H(-1,V) for symbolic V, both compositions, N = 2 and 3, so the occupation "
-      "diagonal does not see the sign",
+      "U H(1,V) U = H(-1,V) for symbolic V, both constructions, N=2 and 3; with positive "
+      "rescaling the nonzero-hopping parameter is g=V/abs(t)",
       f2)
 
-# ================================================== A: one dimension, identity
+# =============================================== exact one-dimensional identity
 
-# --- A1: the two compositions give the same chain6 sector matrix
+# The two constructions give the same chain6 sector matrix.
 
 a1 = True
 a1_dims = []
@@ -248,10 +283,10 @@ for a1_N in (2, 3):
     a1_dims.append(len(ca))
     a1 = a1 and Hg == Hu
     a1 = a1 and all(sp.expand(e.coeff(Vs, 0)) in (0, -1) for e in Hg)
-check("A1 [exact] chain6, N = 2 (dim %d) and N = 3 (dim %d): the graded and ungraded "
+check("chain-matrix-identity [exact]: chain6 N=2 (dim %d) and N=3 (dim %d) graded and ungraded "
       "sector matrices at t = 1 with symbolic V agree entrywise, hopping and interaction "
       "alike, every bond of a line carrying an empty Jordan-Wigner string; hence "
-      "P_graded(g) = P_ungraded(g) at every real g"
+      "their occupation distributions agree at every real g"
       % (a1_dims[0], a1_dims[1]),
       a1)
 
@@ -301,20 +336,21 @@ def best_match(Tu, Du, Ptarget):
     return ds[k], float(GRID_G[k])
 
 
-# --- A2: numerical witness for the one-dimensional identity
+# Numerical witness for the one-dimensional identity.
 
 Tc_u, Dc_u = np_parts(CHAIN6[0], CHAIN6[1], 2, False)
 Tc_g, Dc_g = np_parts(CHAIN6[0], CHAIN6[1], 2, True)
 a2_d = [float(np.abs(rstat(Tc_u, Dc_u, g) - rstat(Tc_g, Dc_g, g)).sum())
         for g in (0.0, 1.0)]
-check("A2 [numerical] chain6 N=2: the L1 distance between the two record statistics is "
+check("chain-distance-control [numerical]: chain6 N=2 L1 distance between occupation "
+      "distributions is "
       "%.2e at g = 0 and %.2e at g = 1, both below 1e-12 (float, scipy eigh)"
       % (a2_d[0], a2_d[1]),
       max(a2_d) < 1e-12)
 
-# ============================== B: the ungraded family is strictly positive
+# ========================================= ungraded normalized-slice positivity
 
-# --- B1: nonpositive off-diagonal and an irreducible configuration graph
+# Nonpositive off-diagonal and an irreducible configuration graph.
 
 b1 = True
 b1_dims = []
@@ -334,26 +370,28 @@ for (nm, (L, B), N) in CASES:
                 seen.add(w_)
                 stack.append(w_)
     b1 = b1 and len(seen) == n
-check("B1 [exact] on grid2x3 N=2/3 (dim %d, %d), cube N=4 (%d), grid3x3 N=3 (%d) the "
+check("ungraded-connectivity [exact]: on grid2x3 N=2/3 (dim %d,%d), cube N=4 (%d), "
+      "grid3x3 N=3 (%d), the "
       "ungraded off-diagonal at t = 1 is minus the 0/1 configuration adjacency, entries in "
       "{0,-1}, symmetric, that graph connected by exact BFS; Perron-Frobenius then gives a "
-      "simple, strictly positive ground vector at every g"
+      "simple strictly positive ground vector at every real g on this normalized slice"
       % tuple(b1_dims),
       b1)
 
-# --- B2: numerical witness of strict positivity
+# Numerical witness of strict positivity.
 
 b2_min = 1.0
 for (nm, (L, B), N) in CASES:
     Tu, Du = np_parts(L, B, N, False)
     for g in (-2.0, 0.0, 1.0, 3.0):
         b2_min = min(b2_min, float(rstat(Tu, Du, g).min()))
-check("B2 [numerical] the smallest ungraded ground occupation probability over the "
+check("ungraded-positivity-sample [numerical]: the smallest ungraded ground occupation "
+      "probability over the "
       "sixteen cluster-sector-g cases, g in {-2, 0, 1, 3}, is %.2e, above the 1e-06 "
-      "threshold: no ungraded member gives any pattern zero (float)" % b2_min,
+      "threshold (float)" % b2_min,
       b2_min > 1e-6)
 
-# ========================== C: the graded family has exact cancellation zeros
+# ========================================== graded free-point exact distributions
 
 W1 = Matrix([1, sqrt(2), 1]) / 2          # path-of-3 orbital, eigenvalue  sqrt2
 W2 = Matrix([1, 0, -1]) / sqrt(2)         # path-of-3 orbital, eigenvalue  0
@@ -371,7 +409,7 @@ def product_orbital(fs, dims):
     return Matrix(out)
 
 
-# --- C1: grid2x3, N = 2, g = 0
+# Exact grid2x3 free-point distribution.
 
 A23 = adjacency(*GRID23)
 c1_spec = A23.eigenvals()
@@ -391,7 +429,7 @@ for S in c1_cfg:
     d = abs((i % 3) - (j % 3))
     c1_expect[(i, j)] = (0 if d == 0 else Rational(1, 16) if d == 1 else Rational(1, 8))
 c1_counts = [sum(1 for p in C1P.values() if p == q) for q in (0, Rational(1, 16), Rational(1, 8))]
-check("C1 [exact] grid2x3 N=2 g=0: spectrum {+-1} + {sqrt2, 0, -sqrt2}; the two lowest "
+check("grid2x3-free-point [exact]: N=2,g=0 spectrum {+-1}+{sqrt2,0,-sqrt2}; the two lowest "
       "orbitals of -A are (1,1)/sqrt2 (x) (1,sqrt2,1)/2 at -(1+sqrt2) and (1,1)/sqrt2 (x) "
       "(1,0,-1)/sqrt2 at -1; ground energy -(2+sqrt2), simple; the 15 pair values: 0 on %d "
       "vertical pairs, 1/16 on %d, 1/8 on %d, sum 1"
@@ -401,7 +439,7 @@ check("C1 [exact] grid2x3 N=2 g=0: spectrum {+-1} + {sqrt2, 0, -sqrt2}; the two 
                       -1 + sqrt(2): 1, -1: 1, -1 - sqrt(2): 1}
       and c1_counts == [3, 8, 4])
 
-# --- C2: cube, N = 4, g = 0
+# Exact cube free-point distribution.
 
 A8 = adjacency(*CUBE)
 c2_spec = A8.eigenvals()
@@ -427,7 +465,7 @@ for k in c2_zero:
         c2_faces.append(k)
     elif len(ed) == 2 and len(set(ed[0]) | set(ed[1])) == 4:
         c2_edgepairs.append(k)
-check("C2 [exact] cube N=4 g=0: the four lowest orbitals of -A are products at -3 "
+check("cube-free-point [exact]: N=4,g=0 four lowest orbitals of -A are products at -3 "
       "((1,1)^(x)3/sqrt8) and -1 (three, one factor (1,-1)), fifth level +1; ground energy "
       "-6, simple; the 70 patterns take {0, 1/64, 1/16} with counts %d, %d, %d, sum 1, the %d "
       "zeros being %d occupied faces and %d two-disjoint-adjacent-pair patterns"
@@ -438,7 +476,7 @@ check("C2 [exact] cube N=4 g=0: the four lowest orbitals of -A are products at -
       and set(C2P.values()) == {0, Rational(1, 64), Rational(1, 16)}
       and c2_counts == [12, 56, 2] and len(c2_faces) == 6 and len(c2_edgepairs) == 6)
 
-# --- C3: grid3x3, N = 3, g = 0
+# Exact grid3x3 free-point distribution.
 
 A9 = adjacency(*GRID33)
 c3_spec = A9.eigenvals()
@@ -464,7 +502,7 @@ for r in range(3):
     c3_lines.add(tuple(3 * c + r for c in range(3)))
 c3_lines.add((0, 4, 8))
 c3_lines.add((2, 4, 6))
-check("C3 [exact] grid3x3 N=3 g=0: the orbitals of -A are w1(x)w1 at -2sqrt2 and "
+check("grid3x3-free-point [exact]: N=3,g=0 orbitals of -A are w1(x)w1 at -2sqrt2 and "
       "w1(x)w2, w2(x)w1 at -sqrt2, orthonormal, next level 0; ground energy -4sqrt2, simple; "
       "the 84 patterns take {0, 1/256, 1/128, 1/64, 1/32, 9/256} with counts %d, %d, %d, %d, "
       "%d, %d, sum 1, the %d zeros being the 3 rows, 3 columns and 2 diagonals"
@@ -474,7 +512,7 @@ check("C3 [exact] grid3x3 N=3 g=0: the orbitals of -A are w1(x)w1 at -2sqrt2 and
       and set(C3P.values()) == set(c3_vals) and c3_counts == [8, 12, 32, 20, 8, 4]
       and set(c3_zero) == c3_lines)
 
-# --- C4: the classical bond-product comparator
+# Exact support property of the declared bond-product comparator.
 
 def bond_types(S, B):
     """Counts (n00, n01, n11) of bond types of a pattern."""
@@ -493,18 +531,17 @@ def bond_types(S, B):
 c4_vert = [(c, c + 3) for c in range(3)]
 c4_horz = [(0, 1), (1, 2), (3, 4), (4, 5)]
 c4_support = [bond_types(frozenset(k), GRID23[1]) for k in c4_vert + c4_horz]
-check("C4 [exact] classical comparator, grid2x3 N=2: a cubic-covariant bond-product "
-      "Gibbs rule weights a pattern w00^n00 w01^n01 w11^n11, a bond-hereditary zero set; all "
-      "%d vertical and %d horizontal adjacent pairs carry all three bond types (n00, n01, "
-      "n11 >= 1), so such a rule zeroes all seven or none, while the graded law zeroes the 3 "
-      "vertical only, horizontals 1/16"
+check("bond-product-support [exact]: grid2x3 N=2 declared weights give each pattern "
+      "w00^n00 w01^n01 w11^n11; all %d vertical and %d horizontal adjacent pairs carry all "
+      "three bond types (n00,n01,n11 >= 1), hence share support status, while the graded "
+      "distribution has vertical probability 0 and horizontal probability 1/16"
       % (len(c4_vert), len(c4_horz)),
       all(min(t) >= 1 for t in c4_support)
       and all(C1P[k] == 0 for k in c4_vert)
       and all(C1P[k] == Rational(1, 16) for k in c4_horz)
       and sorted(k for k in C1P if C1P[k] == 0) == sorted(c4_vert))
 
-# ================================ D: the distance between the two families
+# ========================================== bounded finite-window distance scan
 
 d1_all = []
 for (nm, (L, B), N) in CASES:
@@ -512,20 +549,21 @@ for (nm, (L, B), N) in CASES:
     Tg, Dg = np_parts(L, B, N, True)
     res = [best_match(Tu, Du, rstat(Tg, Dg, gt)) for gt in (0.0, 1.0)]
     d1_all.extend(r[0] for r in res)
-    check("D1 [numerical] %s N=%d: min L1(P_ungraded(g), P_graded(g_t)) over the "
+    check("finite-window-distance [numerical]: %s N=%d min L1(P_ungraded(g),P_graded(g_t)) "
+          "over the "
           "241-point [-6,6] scan, bounded refinement, is %.3f at g = %.3f (g_t = 0) and %.3f "
           "at g = %.3f (g_t = 1), both at or above 0.15 (float)"
           % (nm, N, res[0][0], res[0][1], res[1][0], res[1][1]),
           min(res[0][0], res[1][0]) >= 0.15)
 
 d2 = [best_match(Tc_u, Dc_u, rstat(Tc_g, Dc_g, gt)) for gt in (0.0, 1.0)]
-check("D2 [numerical] chain6 N=2 control: the same procedure returns %.2e at g = %.3f "
+check("finite-window-chain-control [numerical]: chain6 N=2 returns %.2e at g=%.3f "
       "(g_t = 0) and %.2e at g = %.3f (g_t = 1), both below 1e-09 and attained at g = g_t, so "
       "the scan finds an exact match when one exists"
       % (d2[0][0], d2[0][1], d2[1][0], d2[1][1]),
       max(d2[0][0], d2[1][0]) < 1e-9 and abs(d2[0][1]) < 1e-6 and abs(d2[1][1] - 1) < 1e-6)
 
-# ===================== E: the symmetry selection rule behind the graded zeros
+# ====================================== symmetry identity and sampled persistence
 
 def automorphisms(L, B):
     """Every site permutation preserving the bond set, by exact backtracking."""
@@ -600,7 +638,7 @@ ECASES = [("grid2x3", GRID23, 2, c1_cfg, c1_idx, c1_v, C1P),
           ("grid3x3", GRID33, 3, c3_cfg, c3_idx, c3_v, C3P)]
 EAUT = {nm: automorphisms(L, B) for (nm, (L, B), N, cfg, idx, cv, P) in ECASES}
 
-# --- E1: the action is a signed permutation representation commuting with H
+# Signed permutation representations commute with the matrix.
 
 e1 = True
 e1_na, e1_img = [], []
@@ -629,13 +667,14 @@ for (nm, (L, B), N, cfg, idx, cv, P) in ECASES:
                                 for i in range(n))
         if graded:
             e1_img.append(len({(tuple(p), tuple(s)) for (p, s) in reps.values()}))
-check("E1 [exact] symmetry: the %d, %d, %d bond-preserving site permutations of grid2x3 "
+check("symmetry-representation [exact]: the %d,%d,%d bond-preserving site permutations of "
+      "grid2x3 "
       "N=2, cube N=4, grid3x3 N=3 act by U_sigma|S> = sgn_S(sigma)|sigma S>, a signed "
       "permutation commuting with H(1,V) for symbolic V in both compositions; "
       "sigma -> U_sigma a homomorphism of image order %d, %d, %d" % tuple(e1_na + e1_img),
       e1)
 
-# --- E2: the character at g = 0 and the zero set it predicts
+# Exact character and forced-zero sets at the free point.
 
 e2 = True
 e2_sz, ECHI, EPRED = [], {}, {}
@@ -656,14 +695,14 @@ for (nm, (L, B), N, cfg, idx, cv, P) in ECASES:
 e2 = (e2 and EPRED["grid2x3"] == set(c4_vert)
       and EPRED["cube"] == set(c2_faces) | set(c2_edgepairs)
       and EPRED["grid3x3"] == {ln for ln in c3_lines if 4 in ln})
-check("E2 [exact] character at g=0: each U_sigma acts on the exact group-C ground vector "
+check("free-point-symmetry-zeros [exact]: each U_sigma acts on the exact graded ground vector "
       "as a scalar chi in {+1,-1}, verified on every pattern; the predicted set "
       "{S : sigma S = S, chi sgn_S = -1} lies inside the exact zero set, %d of %d (vertical "
       "pairs), %d of %d (faces, disjoint adjacent pairs), %d of %d (lines through the centre)"
       % tuple(e2_sz),
       e2)
 
-# --- E3: the ungraded composition has no such rule
+# Ungraded free-point contrast; structural sign plus numerical eigenvector checks.
 
 e3 = True
 e3_min = 1.0
@@ -681,14 +720,13 @@ for (nm, (L, B), N, cfg, idx, cv, P) in ECASES:
         e3 = e3 and max(abs(vu[i] - vu[p[i]]) for i in range(n)) < 1e-9
         chiu[sg] = 1
     e3 = e3 and predicted_zeros(cfg, autos, chiu, False) == set()
-check("E3 [exact] ungraded contrast: U_sigma carries no sign there, so it maps the "
-      "strictly positive group-B ground vector (smallest entry %.2e, float) to a positive "
-      "vector, "
-      "forcing chi = +1 on all %d, %d, %d automorphisms; chi sgn_S = +1 always, so the "
-      "predicted set is empty" % tuple([e3_min] + e1_na),
+check("ungraded-symmetry-contrast [exact/numerical]: U_sigma is unsigned; the computed "
+      "strictly positive ground vector (smallest entry %.2e, float) is invariant under all "
+      "%d,%d,%d automorphisms, giving chi=+1 and an empty forced-zero set"
+      % tuple([e3_min] + e1_na),
       e3)
 
-# --- E4: persistence of the predicted set away from g = 0
+# Numerical persistence sample away from the free point.
 
 E_GS = (0.25, -0.25, 0.4, -0.4, 0.5, 0.75, 1.0, 2.0)
 e4 = True
@@ -706,17 +744,17 @@ for (nm, (L, B), N, cfg, idx, cv, P) in ECASES:
         inter = z if inter is None else inter & z
     e4 = e4 and inter == pi
     e4_sz.append(len(inter))
-check("E4 [numerical] persistence: at g in {0, +-0.25, +-0.4, 0.5, 0.75, 1, 2} the "
+check("sampled-symmetry-persistence [numerical]: at g in {0,+-0.25,+-0.4,0.5,0.75,1,2} the "
       "graded ground state stays simple (smallest gap %.3f) and its zero set below 1e-12 "
       "contains the predicted set, whose intersection over the nine couplings it equals: "
       "%d, %d, %d (float)" % tuple([e4_gap] + e4_sz),
       e4)
 
-print("SUMMARY: in one dimension the two compositions give the same sector matrix and "
-      "record statistics at every g; in two and three dimensions every ungraded member is "
-      "strictly positive while the graded law has exact cancellation zeros (3 of 15, 12 of "
-      "70, 8 of 84), 3, 12 and 4 of them a symmetry selection rule persistent in g, no "
-      "bond-product rule reproduces them, and the L1 separation stays >= %.3f."
+print("SUMMARY: the declared nonzero-hopping subfamily has identical chain matrices; on the "
+      "named two- and three-dimensional cases its ungraded ground vectors are strictly "
+      "positive, while exact graded g=0 distributions contain 3, 12, and 8 zeros, of which "
+      "3, 12, and 4 are symmetry-forced at g=0; nine-coupling persistence and finite-window "
+      "L1 separation >= %.3f are numerical observations."
       % min(d1_all))
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 sys.exit(0 if FAIL == 0 else 1)

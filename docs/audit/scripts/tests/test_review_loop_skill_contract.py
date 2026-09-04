@@ -16,20 +16,37 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
     def setUpClass(cls) -> None:
         root = contract.REPO_ROOT
         cls.skill = (root / contract.SKILL_REL).read_text(encoding="utf-8")
+        cls.command = (root / contract.COMMAND_REL).read_text(encoding="utf-8")
         cls.generator = (root / contract.GENERATOR_REL).read_text(encoding="utf-8")
         cls.pipeline = (root / contract.PIPELINE_REL).read_text(encoding="utf-8")
 
-    def missing(self, *, skill=None, generator=None, pipeline=None) -> list[str]:
+    def missing(
+        self, *, skill=None, command=None, generator=None, pipeline=None
+    ) -> list[str]:
         return contract.validate_texts(
             self.skill if skill is None else skill,
             self.generator if generator is None else generator,
             self.pipeline if pipeline is None else pipeline,
+            self.command if command is None else command,
         )
 
     def assert_skill_mutation_fails(self, needle: str, family: str) -> None:
         mutated = self.skill.replace(needle, "REMOVED_BY_MUTATION")
         self.assertNotEqual(mutated, self.skill, f"mutation needle absent: {needle}")
         self.assertIn(family, self.missing(skill=mutated))
+
+    def assert_command_mutation_fails(self, needle: str, family: str) -> None:
+        mutated = self.command.replace(needle, "REMOVED_BY_MUTATION")
+        self.assertNotEqual(mutated, self.command, f"mutation needle absent: {needle}")
+        self.assertIn(family, self.missing(command=mutated))
+
+    def mutate_skill_fence(self, marker: str, needle: str, replacement: str) -> str:
+        start = self.skill.index(marker)
+        end = self.skill.index("\n   ```", start)
+        block = self.skill[start:end]
+        mutated_block = block.replace(needle, replacement, 1)
+        self.assertNotEqual(mutated_block, block, f"mutation needle absent: {needle}")
+        return self.skill[:start] + mutated_block + self.skill[end:]
 
     def test_committed_contract_passes(self):
         self.assertEqual(self.missing(), [])
@@ -334,6 +351,161 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assert_skill_mutation_fails(
             "same reviewer thread/session", "same_session_confirmation"
         )
+
+    def test_train_scheduler_is_fail_closed(self):
+        for needle in (
+            "trains of at most eight",
+            "normal departure boundary is 60 minutes",
+            "absolute 75-minute boundary",
+            "open the next empty",
+            "one-component trains",
+        ):
+            with self.subTest(needle=needle):
+                self.assert_skill_mutation_fails(needle, "landing_train_scheduler")
+
+    def test_train_combined_gate_is_fail_closed(self):
+        for needle in (
+            "combined gate is mechanical",
+            (
+                "python3 docs/audit/scripts/check_changed_audit_evidence.py "
+                "--base origin/main"
+            ),
+            'git diff --check "$review_base"..HEAD',
+            "git diff --cached --check",
+            'if [ "$(git rev-parse origin/main)" != "$VALIDATED_BASE" ]; then',
+            'if [ "$(git rev-parse \'HEAD^{tree}\')" != "$VALIDATED_TREE" ]; then',
+        ):
+            with self.subTest(needle=needle):
+                self.assert_skill_mutation_fails(
+                    needle, "landing_train_combined_gate"
+                )
+
+    def test_train_combined_commands_are_bound_to_their_active_blocks(self):
+        cases = (
+            (
+                "TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate",
+                "bash docs/audit/scripts/run_pipeline.sh",
+                "true # removed",
+            ),
+            (
+                "TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate",
+                "python3 docs/audit/scripts/audit_lint.py --strict",
+                "true # removed",
+            ),
+            (
+                "TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate",
+                "python3 docs/audit/scripts/check_changed_audit_evidence.py "
+                "--base origin/main",
+                "true # removed",
+            ),
+            (
+                "TRAIN_COMBINED_CLEAN_SCOPE=integrated-candidate",
+                'git diff --check "$review_base"..HEAD',
+                "true # removed",
+            ),
+            (
+                "TRAIN_COMBINED_CLEAN_SCOPE=integrated-candidate",
+                "git diff --check\n",
+                "true # removed\n",
+            ),
+            (
+                "TRAIN_COMBINED_CLEAN_SCOPE=integrated-candidate",
+                "git diff --cached --check",
+                "true # removed",
+            ),
+        )
+        for marker, command, replacement in cases:
+            mutated = self.mutate_skill_fence(marker, command, replacement)
+            with self.subTest(command=command):
+                self.assertIn(
+                    "landing_train_combined_gate", self.missing(skill=mutated)
+                )
+
+    def test_train_validated_guards_must_stay_active_at_push_depth(self):
+        for line in (
+            '     if [ "$(git rev-parse origin/main)" != "$VALIDATED_BASE" ]; then',
+            '     if [ "$(git rev-parse \'HEAD^{tree}\')" != "$VALIDATED_TREE" ]; then',
+        ):
+            mutated = self.skill.replace(
+                line,
+                "     if false; then\n" + line + "\n     fi",
+                1,
+            )
+            self.assertNotEqual(mutated, self.skill)
+            with self.subTest(line=line):
+                self.assertIn(
+                    "landing_train_combined_gate", self.missing(skill=mutated)
+                )
+
+    def test_train_head_guard_is_fail_closed(self):
+        for needle in (
+            "PR_NUMBERS=(<pr-a-number> <pr-b-number> ...)",
+            "PR_HEADS=(<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> ...)",
+            "verify_frozen_pr_heads()",
+            "PR head moved; dissolve the train without pushing",
+            "post-push head check",
+            "force-with-lease=refs/heads/<head>:<frozen-head-sha>",
+        ):
+            with self.subTest(needle=needle):
+                self.assert_skill_mutation_fails(needle, "landing_train_head_guard")
+
+    def test_train_head_checks_must_bracket_push_and_close(self):
+        for line in (
+            "     if ! verify_frozen_pr_heads; then",
+            '     if verify_frozen_pr_head "$pr" "$expected"; then',
+        ):
+            mutated = self.skill.replace(
+                line,
+                "     if false; then\n" + line + "\n     fi",
+                1,
+            )
+            self.assertNotEqual(mutated, self.skill)
+            with self.subTest(line=line):
+                self.assertIn("landing_train_head_guard", self.missing(skill=mutated))
+
+    def test_train_head_fetch_compare_and_failure_are_structurally_bound(self):
+        marker = "VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>"
+        mutations = (
+            (
+                'if ! git fetch -q origin "+pull/$pr/head:$live_ref"; then',
+                "if ! true; then",
+            ),
+            ('[ "$actual" = "$expected" ]', '[ "$actual" != "$expected" ]'),
+            (
+                contract.TRAIN_PRE_PUSH_HEAD_CONTEXT,
+                contract.TRAIN_PRE_PUSH_HEAD_CONTEXT.replace(
+                    "       exit 1", "       true # nonfatal", 1
+                ),
+            ),
+            (
+                'if verify_frozen_pr_head "$pr" "$expected"; then',
+                "if true; then",
+            ),
+        )
+        for needle, replacement in mutations:
+            mutated = self.mutate_skill_fence(marker, needle, replacement)
+            with self.subTest(needle=needle):
+                self.assertIn("landing_train_head_guard", self.missing(skill=mutated))
+
+    def test_command_train_contract_is_fail_closed(self):
+        for needle in (
+            "continuously collected trains of at most eight",
+            "double-buffered landing train",
+            "next empty train",
+            "immediately before push",
+            "immediately before its own close",
+            "--force-with-lease=<ref>:<frozen-head-sha>",
+        ):
+            with self.subTest(needle=needle):
+                self.assert_command_mutation_fails(needle, "command_landing_train")
+
+    def test_live_surface_routing_is_fail_closed(self):
+        self.assert_skill_mutation_fails(
+            "relevant sharded rows under `docs/audit/data/ledger/`",
+            "live_surface_routing",
+        )
+        mutated = self.skill + "\nUse docs/publication/ci3_z3 as a live surface.\n"
+        self.assertIn("live_surface_routing", self.missing(skill=mutated))
 
     def test_pipeline_evidence_is_fail_closed(self):
         self.assert_skill_mutation_fails(

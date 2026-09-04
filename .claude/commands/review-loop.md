@@ -11,7 +11,8 @@ Run the repo-native physics review loop from:
 Mode selection:
 - **Zero arguments** (`/review-loop`): the parallel open-PR backlog drain
   per the skill's Default Entry — enumerate open non-draft PRs, one
-  reviewer slot per PR, each worker landing its own PR end to end.
+  reviewer slot per PR, and land independently confirmed PRs through the
+  skill's continuously collected trains of at most eight.
 - **Named `[target]`** (a branch or PR): focused mode — review only that
   target's changes against `origin/main` or `main`.
 - **Free-text `[focus]` without a target** (e.g. `/review-loop imports`):
@@ -75,12 +76,16 @@ Mode selection:
 12. End with a concise report covering imports/support status, retained/bounded
     disposition, salvage disposition, audit-readiness, commits, checks, and
     remaining manual science.
-13. After final PASS, the same worker lands the frozen reviewed commits from
-    its existing worktree. Do not create a landing branch, a second landing
-    worktree, or a separate lander cycle. Refetch `origin/main`, cherry-pick
-    the exact reviewed commit list there, push atomically, verify containment,
-    and use a disposable integration tree only if moved-main/conflict state
-    makes safe reuse of the worker tree impossible.
+13. After final PASS, freeze the component provenance in its worker and enroll
+    it in the skill's double-buffered landing train. A train holds at most eight
+    independently passed components, reruns the enumerated combined mechanical
+    gate in one clean integration worktree, verifies every frozen PR head
+    immediately before push, pushes atomically, verifies containment, and
+    rechecks each head immediately before its own close. The next empty train
+    opens as soon as the old membership freezes. Source conflicts and moved
+    heads return only the affected component to its original worker and
+    reviewer session. A named focused target flushes as a one-component train
+    once confirmed unless it was explicitly added to an ongoing backlog drain.
 
 ## Non-Negotiables
 
@@ -189,11 +194,13 @@ Mode selection:
   source/tooling/pipeline repair when it strengthens auditability, but never
   treat hand-authored generated status as the authority.
 - Delete a closed PR's head branch **only if durable content actually landed**
-  (salvaged to `main`, or merged): then `gh pr close <N> --delete-branch`, so
-  stale heads don't accumulate (review-loop closes rather than merges, so
-  auto-delete-on-merge never fires). **Do not delete the branch when a PR is
-  closed without landing its content** (rejected / nothing salvaged / salvage
-  deferred) -- keep it as the handle on the un-landed work. Never delete a head
-  that still backs another open PR, nor `main`.
+  (salvaged to `main`, or merged) and a just-fetched head still equals the
+  frozen reviewed SHA. For a same-repository branch, require an exact
+  `--force-with-lease=<ref>:<frozen-head-sha>` deletion and close only after it
+  succeeds; leave fork heads intact. If the head moved, leave both PR and branch
+  open for fresh review. **Do not delete the branch when a PR is closed without
+  landing its content** (rejected / nothing salvaged / salvage deferred) --
+  keep it as the handle on the un-landed work. Never delete a head that still
+  backs another open PR, nor `main`.
 - Live unresolved review findings belong in `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
 - Long historical packets belong in `docs/work_history/repo/review_feedback/`.

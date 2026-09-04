@@ -49,16 +49,19 @@ when requested, or rejects/closes it with a clear reason. Salvage, dependency
 chain repair, audit queue regeneration, and parent re-audit gates are part of
 that same landing path, not follow-up PRs.
 Delete a closed PR's head branch **only when durable content actually landed** --
-its reviewed content was salvaged to `main`, or it was merged. In that case run
-`gh pr close <N> --delete-branch` (or `git push origin --delete <head>` after a
-manual close) so stale heads do not accumulate on `origin` (review-loop closes
-rather than merges, so GitHub's auto-delete-on-merge never fires). **Do NOT
-delete the head branch when a PR is closed without landing its content** --
-rejected as non-landable with nothing salvaged, or with salvage deferred to a
-later pass: keep that branch as the working handle on the un-landed work. Never
-delete a head that still backs another open PR, nor `main` or a protected
-branch. (Closed PRs retain their commits either way; the live branch matters as
-the recovery handle precisely when the content did not land.)
+its reviewed content was salvaged to `main`, or it was merged. Immediately
+before closing, refetch the PR head and require the frozen head SHA. If it moved,
+leave the PR open and the branch intact for a fresh review of the new head. For
+an unchanged same-repository head, delete only with an exact lease, for example
+`git push --force-with-lease=refs/heads/<head>:<frozen-head-sha> origin
+:refs/heads/<head>`, and close the PR only after that deletion succeeds. A fork
+head that cannot be lease-deleted from `origin` may be closed but must be left
+intact. **Do NOT delete the head branch when a PR is closed without landing its
+content** -- rejected as non-landable with nothing salvaged, or with salvage
+deferred to a later pass: keep that branch as the working handle on the
+un-landed work. Never delete a head that still backs another open PR, nor `main`
+or a protected branch. (Closed PRs retain their commits either way; the live
+branch matters as the recovery handle precisely when the content did not land.)
 It auto-corrects status vocabulary and terminology so a PR follows repo
 conventions by running `scripts/vocab_lint.py --fix` on all
 branch-modified files before any landing gate. Vocabulary is canonical
@@ -162,8 +165,9 @@ and must not apply audit verdicts.
 
 An UNSPECIFIED invocation — no named branch or PR — IS the parallel
 backlog drain, as is invoking against a SET of open PRs ("review the open
-PRs", "drain the PR backlog"): enumerate the backlog, review in parallel,
-land serially — no topology decisions required from the invoker. Free-text
+PRs", "drain the PR backlog"): enumerate the backlog, review in parallel, and
+land confirmed components through the double-buffered trains below — no
+topology decisions required from the invoker. Free-text
 focus without a named target (e.g. "imports") is the drain with that
 emphasis applied in every slot. Reviewing one branch or one PR is the
 special case that requires naming the target, and ANY flag without a named
@@ -272,27 +276,113 @@ review-only flags contradict the drain's land-end-to-end contract).
    throughput from 6-11 landed verdicts/hour to ~1 every 3 hours). When the
    audit drain is running at 4+ seats, run at most 2-3 concurrent PR
    reviewers; scale up only in a quiet pool.
-5. **Each worker lands its own PR, end to end.** Fix Policy fixes, the
-   focused confirmation round, the landing, and the close-with-provenance
-   are all the final steps of that PR's own worker — never a separate
-   lander and never turn-taking. After final PASS, do not create a fresh
-   landing branch or a second landing worktree. Freeze the exact reviewed
-   commit list and confirmation-base SHA. Focused confirmation MUST resume
-   the same reviewer thread/session that issued the findings; do not launch a
-   new reviewer process to confirm fixes. Give that reviewer only the changed
-   files plus the prior findings and interacting files already in the frozen
-   review scope, and require an explicit `FINAL VERDICT: PASS` on the final
-   commit/tree. If the same reviewer session cannot be recovered, or it does
-   not explicitly pass the final state, fail closed and do not land.
-   Then fetch and cherry-pick the exact reviewed
-   commits onto the freshly fetched `origin/main` in the same worker
-   worktree. A disposable integration worktree is an exception only when
-   `main` moved and the worker tree cannot safely perform the integration;
-   it is not a new review or lander cycle, and any source conflict still
-   returns to the same worker for focused re-review. Workers land the moment
-   their confirmation passes: `origin/main`'s push atomicity is the only
-   serializer, and a lost push race costs seconds (re-fetch, re-cherry-pick
-   through the fail-closed loop, re-push, generated outputs restored). A
+5. **Land confirmed PRs in continuously collected trains of at most eight.**
+   Review, fixes, and focused confirmation remain per PR and stay in that PR's
+   worker. Batching starts only after a component is independently ready to
+   land; it never combines science review, shares reviewer context between
+   PRs, or turns one PR's PASS into authority for another.
+
+   A component may enter the collecting train only when all of the following
+   are frozen together: PR number, original PR-head SHA, exact reviewed commit
+   list, resulting tree SHA, confirmation-base SHA, changed-file set, head
+   repository and branch, findings file SHA-256, reviewer thread/session
+   identity, and that same session's explicit `FINAL VERDICT: PASS`. Focused
+   confirmation MUST resume the reviewer thread/session that issued the
+   findings. That same reviewer thread/session must confirm fixes;
+   do not launch a new reviewer process to confirm fixes.
+   Give that reviewer only the fixed files, prior findings, and interacting
+   files already inside the frozen review scope. If the session cannot be
+   recovered, the PR head moved, any frozen value no longer matches, or the
+   reviewer did not explicitly pass the final state, fail closed and do not land
+   that component; do not enroll it.
+
+   The train scheduler is a double buffer:
+
+   - the first eligible component entering an empty collecting train starts
+     its collection clock;
+   - eight eligible components close it immediately;
+   - otherwise the normal departure boundary is 60 minutes after the first
+     component. With a nonempty backlog, the operating target is a full
+     eight-component train, not an intentionally small timed batch;
+   - at that 60-minute boundary, extend collection only when at least one
+     additional PR had already started focused confirmation on a recorded
+     head SHA in a recorded reviewer session before the boundary. Only that
+     same head/session may use the extension. Close at eight components or at
+     the absolute 75-minute boundary, whichever comes first;
+   - atomically freeze the departing membership and open the next empty
+     collecting train immediately, before the frozen train is integrated. Its
+     clock starts when its first eligible component enters. Reviews and
+     confirmations that finish during integration therefore feed the next
+     train instead of waiting for the landing to finish;
+   - stacked PRs never share a train, and independent PRs with overlapping
+     non-generated paths do not share a train. Keep the lower stack member or
+     earlier-ready component in the current train and route the other to the
+     next one after current-main re-review. The citation-graph manifest is the
+     sole generated-path overlap handled inside integration.
+
+   In this skill, a **flush** means only “stop collecting and freeze the
+   current membership.” It never skips review, confirmation, integration, or
+   validation. Automatic flushes are the full-train and time-boundary
+   departures above. An operator-requested early flush is useful for an urgent
+   ready change or orderly shutdown, but normally hurts throughput by sending
+   an underfilled train; do not use it as a routine polling action.
+   A named focused-mode target is a requested completion boundary: once it is
+   confirmed, flush its one-component train unless the operator explicitly put
+   it into an ongoing backlog drain.
+
+   One coordinator owns one clean, disposable integration worktree for the
+   frozen train. This is an integration function, not a second reviewer or a
+   new source-editing lane. Fetch the latest `origin/main`, verify every frozen
+   component again, and cherry-pick the components in deterministic ready-time
+   order. Run the Stale PR Integration Guard before each component. A source
+   conflict, PR-head change, missing confirmation, or provenance mismatch
+   ejects only that component to its original worker for same-session focused
+   re-review against current main; rebuild and validate the candidate without
+   it. The coordinator may resolve only the generated manifest case below.
+
+   Every component still passes the existing per-PR full pipeline, strict lint,
+   changed-evidence gate, all three `diff --check` scopes below, and every
+   applicable reviewer lens before enrollment. The combined gate is mechanical;
+   it does not replace or routinely repeat the component-scoped semantic
+   reviewers. Before running it, compare the components' interacting-file sets
+   and dependency edges. If integration changes any reviewed source bytes or
+   exposes a cross-component semantic interaction, eject the affected
+   components for confirmation by their original reviewer sessions on the
+   integrated files. Otherwise their frozen per-component verdicts remain the
+   semantic authority.
+
+   On the frozen integrated candidate, run this combined validation pass:
+
+   ```bash
+   TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate
+   bash docs/audit/scripts/run_pipeline.sh
+   python3 docs/audit/scripts/audit_lint.py --strict
+   python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main
+   ```
+
+   Restore generated audit outputs under the Audit-System Compatibility Gate,
+   regenerate the citation-graph manifest when required, and then run the final
+   clean-state checks:
+
+   ```bash
+   TRAIN_COMBINED_CLEAN_SCOPE=integrated-candidate
+   review_base=$(git merge-base origin/main HEAD)
+   git diff --check "$review_base"..HEAD
+   git diff --check
+   git diff --cached --check
+   ```
+
+   The efficiency gain is only at the redundant landing tail: one current-main
+   integration, one combined revalidation, one manifest regeneration, one push,
+   and one close pass instead of up to eight separate current-main races. No
+   per-PR review or gate is removed, and no component is considered landed until
+   the combined gate passes.
+
+   After the combined gate passes, push the exact candidate once to `main`.
+   `origin/main`'s fast-forward atomicity remains the serializer. If main moved
+   after the train base was fetched, do not replay a stale PASS or force-push:
+   fetch, rebuild the entire candidate on the new base, rerun the combined
+   gate, and try the ordinary fast-forward push again. A
    conflict touching only `docs/audit/data/citation_graph_manifest.json`
    is resolved by regenerating it from the landed tree
    (`build_citation_graph.py` then `write_citation_graph_manifest.py`),
@@ -322,12 +412,44 @@ review-only flags contradict the drain's land-end-to-end contract).
    The landing loop refuses any tracked staged or unstaged residue at entry.
    Between retries it may restore only the generated manifest to the current
    `HEAD`, clearing a failed regeneration without discarding reviewed source.
-   Generated-output restoration is a
-   COMMIT-time rule (see the audit-compatibility gate), not a landing-time
-   step: the commits being landed are already clean. The fail-closed
-   landing loop is, exactly:
+   Generated-output restoration is a COMMIT-time rule (see the
+   audit-compatibility gate), not a landing-time step: the component commits
+   are already clean. The train's fail-closed landing loop is, exactly:
    ```bash
-   COMMITS=(<oldest-sha> ... <newest-sha>)  # the PR's commits, oldest first
+   # Record these immediately after the combined gate and generated-output
+   # cleanup, before entering the push loop.
+   VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>
+   VALIDATED_TREE=<combined-candidate-tree-sha>
+   # Exact reviewed commits from each frozen component, components in
+   # ready-time order and each component's commits oldest first.
+   COMMITS=(<pr-a-oldest> ... <pr-a-newest> <pr-b-oldest> ...)
+   PR_NUMBERS=(<pr-a-number> <pr-b-number> ...)
+   PR_HEADS=(<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> ...)
+   if [ "${#PR_NUMBERS[@]}" -ne "${#PR_HEADS[@]}" ]; then
+     echo "FAILED: PR number/head inventory mismatch" >&2
+     exit 1
+   fi
+   verify_frozen_pr_head() {
+     local pr="$1" expected="$2" live_ref actual
+     case "$pr" in
+       ''|*[!0-9]*) return 1 ;;
+     esac
+     live_ref="refs/tmp/review-loop-train-pr-$pr"
+     if ! git fetch -q origin "+pull/$pr/head:$live_ref"; then
+       return 1
+     fi
+     actual="$(git rev-parse --verify "$live_ref")" || return 1
+     [ "$actual" = "$expected" ]
+   }
+   verify_frozen_pr_heads() {
+     local index
+     for index in "${!PR_NUMBERS[@]}"; do
+       if ! verify_frozen_pr_head \
+            "${PR_NUMBERS[$index]}" "${PR_HEADS[$index]}"; then
+         return 1
+       fi
+     done
+   }
    refresh_manifest=""
    for commit in "${COMMITS[@]}"; do
      if git diff-tree --no-commit-id --name-only -r "$commit" -- \
@@ -361,6 +483,10 @@ review-only flags contradict the drain's land-end-to-end contract).
             && git switch -q --detach origin/main; }; then
        sleep 3; continue
      fi
+     if [ "$(git rev-parse origin/main)" != "$VALIDATED_BASE" ]; then
+       echo "FAILED: main moved; rebuild and rerun the combined gate" >&2
+       exit 1
+     fi
      if ! git cherry-pick "${COMMITS[@]}" >/dev/null 2>&1; then
        conflicts="$(git diff --name-only --diff-filter=U)"
        if [ "$conflicts" != "docs/audit/data/citation_graph_manifest.json" ]; then
@@ -390,6 +516,14 @@ review-only flags contradict the drain's land-end-to-end contract).
          fi
        fi
      fi
+     if [ "$(git rev-parse 'HEAD^{tree}')" != "$VALIDATED_TREE" ]; then
+       echo "FAILED: integrated tree differs from the validated candidate" >&2
+       exit 1
+     fi
+     if ! verify_frozen_pr_heads; then
+       echo "FAILED: PR head moved; dissolve the train without pushing" >&2
+       exit 1
+     fi
      if git push -q origin HEAD:main; then
        landed="$(git rev-parse HEAD)"
        break
@@ -410,10 +544,36 @@ review-only flags contradict the drain's land-end-to-end contract).
      exit 1
    fi
    echo "LANDED $landed"
+   # Build the close-ready set one PR at a time from a post-push head check.
+   for index in "${!PR_NUMBERS[@]}"; do
+     pr="${PR_NUMBERS[$index]}"
+     expected="${PR_HEADS[$index]}"
+     if verify_frozen_pr_head "$pr" "$expected"; then
+       printf 'CLOSE_READY %s %s\n' "$pr" "$expected"
+     else
+       echo "LEAVE_OPEN $pr: PR head moved after landing" >&2
+     fi
+   done
    ```
    Every step is conditioned; push success captures the landed sha; retry
    exhaustion and non-containment both exit nonzero — the loop can never
    report success without the landed sha verified inside `origin/main`.
+   A `CLOSE_READY` line is not permission that survives another command. Refetch
+   that PR head again immediately before its own close. If it differs from the
+   frozen SHA, leave that PR open and its branch intact, and record that only the
+   older reviewed head landed. For an unchanged same-repository head, use the
+   lease-protected branch-deletion rule above; close only after its exact lease
+   succeeds. Never let one moved head prevent unaffected train members from
+   being checked and closed individually.
+
+   If combined validation fails, preserve the failing command and log, do not
+   push any part of the candidate, and dissolve the train. Rebuild its
+   components as one-component trains in deterministic order on fresh current
+   main, using the same landing loop and the same per-PR review and same-session
+   confirmation requirements. Do not guess a culprit, auto-bisect scientific
+   content, or quarantine a PR from a shared failure. This fallback spends more
+   validation only on the exceptional failing train and keeps the common clean
+   path fast.
 6. **Who may kick it off: any orchestrator** — any Claude tier, a codex
    session, or a human. The orchestration is process: every finding and
    every PASS/FAIL verdict comes from the configured reviewer model's seats,
@@ -434,8 +594,10 @@ review-only flags contradict the drain's land-end-to-end contract).
    A session that stops early still emits a final block with the same
    fields; the Final Report section below remains the full closing artifact.
 
-The single-PR procedure in the rest of this skill is the inner loop of each
-parallel slot; nothing below is weakened by running slots concurrently.
+The per-PR procedure in the rest of this skill, through final confirmation, is
+the inner loop of each parallel slot; nothing below is weakened by running
+slots concurrently. The train coordinator above is only the shared landing
+tail after those independent inner loops pass.
 
 ## Author Pre-Flight (input hygiene)
 
@@ -506,9 +668,10 @@ focus-text-only forms select the backlog drain.
    - `docs/audit/data/axiom_premise_nodes.json` and the source notes named by
      relevant primitive nodes
    - `docs/audit/data/premise_decision_history.json`
-   - `docs/publication/ci3_z3/` when publication-facing files changed
-   - `docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` when
-     quantitative or imported-value claims changed
+   - `docs/KEY_SCIENCE.md` as the current front-of-house router when
+     front-facing science changed; it is an index and grants no status
+   - the relevant sharded rows under `docs/audit/data/ledger/` when
+     quantitative, imported-value, or status-bearing claims changed
 2. Determine the base ref:
    - prefer `origin/main` if present;
    - otherwise use `main`;
@@ -718,12 +881,15 @@ each applicable lens must be explicitly covered and named in the findings.
 - `RepoGovernanceReviewer`
   Check placement and authority surfaces. Ensure live findings route through
   `docs/repo/ACTIVE_REVIEW_QUEUE.md`, long packets go under
-  `docs/work_history/repo/review_feedback/`, publication edits update the
-  relevant `docs/publication/ci3_z3/` surfaces, status wording follows
-  `docs/repo/CONTROLLED_VOCABULARY.md`, and changed claim notes are compatible
-  with the audit lane's propose/ratify split. Also verify that load-bearing
-  dependencies are real markdown links that seed the citation graph, not just
-  code-formatted file names in prose. Block ambiguous new science names such
+  `docs/work_history/repo/review_feedback/`, front-of-house edits update
+  `docs/KEY_SCIENCE.md` without treating that index as status authority, status
+  wording follows `docs/repo/CONTROLLED_VOCABULARY.md`, and changed claim notes
+  are compatible with the audit lane's propose/ratify split. The deferred paper
+  package under `archive/publication/ci3_z3/` is record-only; reject any stale PR
+  that recreates its former live tree unless the owner explicitly authorizes an
+  archive-promotion lane. Also verify that load-bearing dependencies are real
+  markdown links that seed the citation graph, not just code-formatted file
+  names in prose. Block ambiguous new science names such
   as bare `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` when they appear as
   titles, primary table labels, claim scopes, runner headlines, or review
   findings without an explicit scientific noun phrase. Block repo-wide axiom
@@ -1005,9 +1171,11 @@ resolved by a separately reviewed, row-specific provenance migration.
 
 ```bash
 git diff --name-only <pr-base>..refs/tmp/pr-<N> -- \
-  docs/audit/AUDIT_LEDGER.md docs/audit/AUDIT_QUEUE.md docs/audit/data \
-  'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md'
-git diff <pr-base>..refs/tmp/pr-<N> -- docs/audit docs/publication/ci3_z3 \
+  docs/audit docs/KEY_SCIENCE.md \
+  docs/repo/FRONT_DOOR_STATUS.md docs/repo/RETAINED_BACKBONE.md
+git diff <pr-base>..refs/tmp/pr-<N> -- \
+  docs/audit docs/KEY_SCIENCE.md \
+  docs/repo/FRONT_DOOR_STATUS.md docs/repo/RETAINED_BACKBONE.md \
   | grep -E 'audit_status|effective_status|audited_clean|audited_conditional|audited_failed|audited_renaming|audited_decoration|audited_numerical_match|previous_audits|audit_result|verdict'
 ```
 
@@ -1019,12 +1187,12 @@ machine-readable audit/re-audit targeting metadata, such as dispatcher
 sidecars, that do not assert a verdict. After applying the source repair, run
 the local pipeline to verify the row is queued or re-queued as intended, then
 restore generated audit outputs from `origin/main` before committing. Pipeline
-regeneration of `docs/audit/data/`, `docs/audit/AUDIT_LEDGER.md`,
-`docs/audit/AUDIT_QUEUE.md`, `docs/audit/MISSING_DERIVATION_PROMPTS.md`, and
-`docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md` is a VALIDATION step only;
-framework PRs must never ship these files because the merge would overwrite
-the audit lane's ratified state. The audit-loop run on `main` (nightly cron
-plus `audit:` commits) is the sole channel for landing those outputs.
+regeneration of `docs/audit/data/`, the generated audit queue/dispatch Markdown,
+and `docs/repo/FRONT_DOOR_STATUS.md` / `docs/repo/RETAINED_BACKBONE.md` is a
+VALIDATION step only; framework PRs must never ship these files because the
+merge would overwrite the audit lane's ratified state. The audit-loop run on
+`main` (nightly cron plus `audit:` commits) is the sole channel for landing
+those outputs.
 
 1. Source-note `Status:` prose is not an audit authority. New or touched claim
    notes should use `Type:` / `Claim type:` metadata for intended audit
@@ -1050,7 +1218,10 @@ plus `audit:` commits) is the sole channel for landing those outputs.
 ```bash
 bash docs/audit/scripts/run_pipeline.sh
 python3 docs/audit/scripts/audit_lint.py --strict
+review_base=$(git merge-base origin/main HEAD)
+git diff --check "$review_base"..HEAD
 git diff --check
+git diff --cached --check
 ```
 
 The known graph-cycle warning is acceptable. Any strict-lint error blocks a
@@ -1137,18 +1308,12 @@ title/body names the row or quotes its audit repair target):
 # rule). Any other change here means the working tree has
 # pipeline-regenerated audit-lane outputs left over from validation;
 # drop them (see below) before recommitting.
-git status --porcelain docs/audit/AUDIT_LEDGER.md \
+git status --porcelain docs/audit/AUDIT_DISPATCH_QUEUE.md \
                        docs/audit/AUDIT_QUEUE.md \
+                       docs/audit/MISSING_DERIVATION_PROMPTS.md \
                        docs/audit/data \
-                       docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md \
-                       docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md \
-                       docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md \
-                       docs/publication/ci3_z3/PUBLICATION_MATRIX_EFFECTIVE_STATUS.md \
-                       docs/publication/ci3_z3/FULL_CLAIM_LEDGER_EFFECTIVE_STATUS.md \
-                       docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md \
-                       docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md \
-                       docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md \
-                       docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md
+                       docs/repo/FRONT_DOOR_STATUS.md \
+                       docs/repo/RETAINED_BACKBONE.md
 ```
 
 If this command prints any line OTHER than the single allowed staged
@@ -1165,10 +1330,11 @@ relative to the branch head.
 ```bash
 git restore --source=HEAD --staged --worktree -- \
     docs/audit/data/ \
+    docs/audit/AUDIT_DISPATCH_QUEUE.md \
     docs/audit/AUDIT_QUEUE.md \
     docs/audit/MISSING_DERIVATION_PROMPTS.md \
-    'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
-    docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+    docs/repo/FRONT_DOOR_STATUS.md \
+    docs/repo/RETAINED_BACKBONE.md
 git clean -fd -- docs/audit/data/
 # Only when the landed commits add/remove a graph node or rewire an edge:
 python3 docs/audit/scripts/run_citation_graph_build.py
@@ -1411,6 +1577,8 @@ Report:
 - final claim-strength disposition;
 - audit-compatibility status and proposed claim IDs needing independent audit;
 - commits created;
+- train membership, departure reason, combined-gate result, landed main SHA,
+  and any components returned to single-PR fallback;
 - checks run and checks skipped;
 - remaining issues with disposition;
 - recommendation: `PASS`, `PASS WITH BOUNDED CLAIMS`, or `NEEDS MANUAL SCIENCE`.

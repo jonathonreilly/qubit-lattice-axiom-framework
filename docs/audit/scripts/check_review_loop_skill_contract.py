@@ -10,6 +10,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 SKILL_REL = "docs/ai_methodology/skills/review-loop/SKILL.md"
+COMMAND_REL = ".claude/commands/review-loop.md"
 GENERATOR_REL = "docs/audit/scripts/generate_skill_axiom_baselines.py"
 PIPELINE_REL = "docs/audit/scripts/run_pipeline.sh"
 FENCE_OPEN_RE = re.compile(r"^ {0,3}(?P<fence>`{3,}|~{3,})(?P<info>.*)$")
@@ -27,6 +28,37 @@ PIPELINE_CONTRACT_CONTEXT = """echo "==> 18b/18 check_review_loop_skill_contract
 python3 docs/audit/scripts/check_review_loop_skill_contract.py
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then"""
+TRAIN_VALIDATION_CONTEXT = """   TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate
+   bash docs/audit/scripts/run_pipeline.sh
+   python3 docs/audit/scripts/audit_lint.py --strict
+   python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main"""
+TRAIN_CLEAN_CONTEXT = """   TRAIN_COMBINED_CLEAN_SCOPE=integrated-candidate
+   review_base=$(git merge-base origin/main HEAD)
+   git diff --check "$review_base"..HEAD
+   git diff --check
+   git diff --cached --check"""
+TRAIN_HEAD_FUNCTION_CONTEXT = """   verify_frozen_pr_head() {
+     local pr="$1" expected="$2" live_ref actual
+     case "$pr" in
+       ''|*[!0-9]*) return 1 ;;
+     esac
+     live_ref="refs/tmp/review-loop-train-pr-$pr"
+     if ! git fetch -q origin "+pull/$pr/head:$live_ref"; then
+       return 1
+     fi
+     actual="$(git rev-parse --verify "$live_ref")" || return 1
+     [ "$actual" = "$expected" ]
+   }"""
+TRAIN_PRE_PUSH_HEAD_CONTEXT = """     if ! verify_frozen_pr_heads; then
+       echo "FAILED: PR head moved; dissolve the train without pushing" >&2
+       exit 1
+     fi
+     if git push -q origin HEAD:main; then"""
+TRAIN_POST_PUSH_HEAD_CONTEXT = """     if verify_frozen_pr_head "$pr" "$expected"; then
+       printf 'CLOSE_READY %s %s\\n' "$pr" "$expected"
+     else
+       echo "LEAVE_OPEN $pr: PR head moved after landing" >&2
+     fi"""
 
 REVIEWER_BODY_RULES: dict[str, str] = {
     "CodeRunnerReviewer": r"^\s+Review changed Python/scripts/log-producing code\.",
@@ -144,6 +176,37 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"FINAL VERDICT: PASS",
         r"fail closed and do not land",
     ),
+    "landing_train_scheduler": (
+        r"Land confirmed PRs in continuously collected trains of at most eight",
+        r"normal departure boundary is 60 minutes",
+        r"absolute 75-minute boundary",
+        r"open the next empty\s+collecting train immediately",
+        r"one-component trains",
+    ),
+    "landing_train_combined_gate": (
+        r"combined gate is mechanical",
+        r"check_changed_audit_evidence\.py --base origin/main",
+        r'git diff --check "\$review_base"\.\.HEAD',
+        r"git diff --cached --check",
+        r'if \[ "\$\(git rev-parse origin/main\)" != "\$VALIDATED_BASE" \]; then',
+        r'if \[ "\$\(git rev-parse \'HEAD\^\{tree\}\'\)" '
+        r'!= "\$VALIDATED_TREE" \]; then',
+    ),
+    "landing_train_head_guard": (
+        r"PR_NUMBERS=\(",
+        r"PR_HEADS=\(",
+        r"verify_frozen_pr_heads\(\)",
+        r"PR head moved; dissolve the train without pushing",
+        r"post-push head check",
+        r"force-with-lease=refs/heads/<head>:<frozen-head-sha>",
+    ),
+    "live_surface_routing": (
+        r"docs/KEY_SCIENCE\.md",
+        r"relevant sharded rows under `docs/audit/data/ledger/`",
+        r"archive/publication/ci3_z3/` is record-only",
+        r"docs/repo/FRONT_DOOR_STATUS\.md",
+        r"docs/repo/RETAINED_BACKBONE\.md",
+    ),
     "pipeline_strict_and_evidence": (
         r"run_pipeline\.sh",
         r"audit_lint\.py --strict",
@@ -182,6 +245,17 @@ GENERATOR_RULES: dict[str, tuple[str, ...]] = {
 PIPELINE_RULES: dict[str, tuple[str, ...]] = {
     "pipeline_contract_registration": (
         rf"^{re.escape(PIPELINE_CONTRACT_LINE)}$",
+    ),
+}
+
+COMMAND_RULES: dict[str, tuple[str, ...]] = {
+    "command_landing_train": (
+        r"continuously collected trains of at most eight",
+        r"double-buffered landing train",
+        r"next empty train\s+opens as soon as the old membership freezes",
+        r"verifies every frozen PR head\s+immediately before push",
+        r"rechecks each head immediately before its own close",
+        r"force-with-lease=<ref>:<frozen-head-sha>",
     ),
 }
 
@@ -652,6 +726,130 @@ def _landing_context_is_top_level(scan: MarkdownScan) -> bool:
     )
 
 
+def _train_shell(scan: MarkdownScan) -> tuple[str, list[int]] | None:
+    """Return the one active train-landing shell block and its command depths."""
+    candidates = [
+        body
+        for info, body in scan.fenced_blocks
+        if info.split(maxsplit=1)[0] in {"bash", "sh", "shell", "zsh"}
+        and "VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>" in body
+        and "PR_NUMBERS=(<pr-a-number> <pr-b-number> ...)" in body
+    ]
+    if len(candidates) != 1:
+        return None
+    shell_scan = _active_shell(candidates[0])
+    depths, balanced = _shell_depths(shell_scan.active)
+    if shell_scan.errors or not balanced:
+        return None
+    return shell_scan.active, depths
+
+
+def _ordered_lines_at_depth(
+    active: str, depths: list[int], expected: tuple[tuple[str, int], ...]
+) -> bool:
+    """Require unique active shell lines in the stated order and command depth."""
+    lines = active.splitlines()
+    positions: list[int] = []
+    for wanted, depth in expected:
+        matches = [
+            index
+            for index, line in enumerate(lines)
+            if line.strip() == wanted and depths[index] == depth
+        ]
+        if len(matches) != 1:
+            return False
+        positions.append(matches[0])
+    return positions == sorted(positions)
+
+
+def _active_context_is_at_depth(
+    active: str, context: str, expected_depth: int
+) -> bool:
+    """Require one exact active-shell context beginning at the requested depth."""
+    lines = active.splitlines()
+    wanted = context.splitlines()
+    starts = [
+        index
+        for index in range(0, len(lines) - len(wanted) + 1)
+        if lines[index : index + len(wanted)] == wanted
+    ]
+    depths, balanced = _shell_depths(active)
+    return balanced and len(starts) == 1 and depths[starts[0]] == expected_depth
+
+
+def _marked_train_shell(scan: MarkdownScan, marker: str) -> str | None:
+    """Return one balanced active shell block carrying an executable marker."""
+    candidates = [
+        body
+        for info, body in scan.fenced_blocks
+        if info.split(maxsplit=1)[0] in {"bash", "sh", "shell", "zsh"}
+        and marker in body
+    ]
+    if len(candidates) != 1:
+        return None
+    shell_scan = _active_shell(candidates[0])
+    _, balanced = _shell_depths(shell_scan.active)
+    if shell_scan.errors or not balanced:
+        return None
+    return shell_scan.active
+
+
+def _train_combined_gate_structure_ok(scan: MarkdownScan) -> bool:
+    validation = _marked_train_shell(scan, "TRAIN_COMBINED_VALIDATION_SCOPE=")
+    clean = _marked_train_shell(scan, "TRAIN_COMBINED_CLEAN_SCOPE=")
+    if validation is None or clean is None:
+        return False
+    if not _active_context_is_at_depth(validation, TRAIN_VALIDATION_CONTEXT, 0):
+        return False
+    if not _active_context_is_at_depth(clean, TRAIN_CLEAN_CONTEXT, 0):
+        return False
+    shell = _train_shell(scan)
+    if shell is None:
+        return False
+    active, depths = shell
+    return _ordered_lines_at_depth(
+        active,
+        depths,
+        (
+            ("VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>", 0),
+            ("VALIDATED_TREE=<combined-candidate-tree-sha>", 0),
+            ('if [ "$(git rev-parse origin/main)" != "$VALIDATED_BASE" ]; then', 1),
+            (
+                'if [ "$(git rev-parse \'HEAD^{tree}\')" '
+                '!= "$VALIDATED_TREE" ]; then',
+                1,
+            ),
+            ("if git push -q origin HEAD:main; then", 1),
+        ),
+    )
+
+
+def _train_head_guard_structure_ok(scan: MarkdownScan) -> bool:
+    shell = _train_shell(scan)
+    if shell is None:
+        return False
+    active, depths = shell
+    if not _active_context_is_at_depth(active, TRAIN_HEAD_FUNCTION_CONTEXT, 0):
+        return False
+    if not _active_context_is_at_depth(active, TRAIN_PRE_PUSH_HEAD_CONTEXT, 1):
+        return False
+    if not _active_context_is_at_depth(active, TRAIN_POST_PUSH_HEAD_CONTEXT, 1):
+        return False
+    return _ordered_lines_at_depth(
+        active,
+        depths,
+        (
+            ("verify_frozen_pr_head() {", 0),
+            ("verify_frozen_pr_heads() {", 0),
+            ("if ! verify_frozen_pr_heads; then", 1),
+            ("if git push -q origin HEAD:main; then", 1),
+            ('if ! git merge-base --is-ancestor "$landed" origin/main; then', 0),
+            ('if verify_frozen_pr_head "$pr" "$expected"; then', 1),
+            ("printf 'CLOSE_READY %s %s\\n' \"$pr\" \"$expected\"", 2),
+        ),
+    )
+
+
 def _missing(text: str, rules: dict[str, tuple[str, ...]]) -> list[str]:
     return [
         name
@@ -668,25 +866,41 @@ def _append_once(items: list[str], name: str) -> None:
         items.append(name)
 
 
-def validate_texts(skill: str, generator: str, pipeline: str) -> list[str]:
+def validate_texts(
+    skill: str,
+    generator: str,
+    pipeline: str,
+    command: str | None = None,
+) -> list[str]:
     """Return invariant-family names that are absent from the supplied texts."""
     scan = _markdown_scan(skill)
     active_skill = scan.visible
+    command_scan = _markdown_scan(command) if command is not None else None
+    active_command = command_scan.visible if command_scan is not None else ""
     pipeline_scan = _active_shell(pipeline)
     active_pipeline = pipeline_scan.active
     missing = (
         _missing(active_skill, SKILL_RULES)
         + _missing(generator, GENERATOR_RULES)
         + _missing(active_pipeline, PIPELINE_RULES)
+        + (_missing(active_command, COMMAND_RULES) if command_scan is not None else [])
     )
     if scan.errors:
         _append_once(missing, "markdown_structure")
+    if "docs/publication/ci3_z3" in active_skill:
+        _append_once(missing, "live_surface_routing")
+    if command_scan is not None and command_scan.errors:
+        _append_once(missing, "command_landing_train")
     if pipeline_scan.errors:
         _append_once(missing, "pipeline_contract_registration")
     if not _reviewer_structure_ok(scan.prose):
         _append_once(missing, "reviewer_lenses")
     if not _landing_context_is_top_level(scan):
         _append_once(missing, "fail_closed_landing")
+    if not _train_combined_gate_structure_ok(scan):
+        _append_once(missing, "landing_train_combined_gate")
+    if not _train_head_guard_structure_ok(scan):
+        _append_once(missing, "landing_train_head_guard")
     if not _context_is_top_level(pipeline, PIPELINE_CONTRACT_CONTEXT):
         _append_once(missing, "pipeline_contract_registration")
     return missing
@@ -697,6 +911,7 @@ def validate_repo(repo_root: Path) -> list[str]:
         (repo_root / SKILL_REL).read_text(encoding="utf-8"),
         (repo_root / GENERATOR_REL).read_text(encoding="utf-8"),
         (repo_root / PIPELINE_REL).read_text(encoding="utf-8"),
+        (repo_root / COMMAND_REL).read_text(encoding="utf-8"),
     )
 
 
@@ -711,9 +926,15 @@ def main(argv: list[str] | None = None) -> int:
         for name in missing:
             print(f"  missing invariant family: {name}")
         return 1
+    family_count = (
+        len(SKILL_RULES)
+        + len(GENERATOR_RULES)
+        + len(PIPELINE_RULES)
+        + len(COMMAND_RULES)
+    )
     print(
         "check_review_loop_skill_contract: OK "
-        f"({len(SKILL_RULES) + len(GENERATOR_RULES) + len(PIPELINE_RULES)} families)"
+        f"({family_count} families)"
     )
     return 0
 

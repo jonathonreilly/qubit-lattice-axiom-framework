@@ -10,8 +10,7 @@
 
 README.md
 docs/START_HERE.md
-docs/publication/ci3_z3/README.md
-docs/publication/ci3_z3/SCIENCE_MAP.md
+docs/KEY_SCIENCE.md
 docs/lanes/open_science/README.md
 docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
 docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md

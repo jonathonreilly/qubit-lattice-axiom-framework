@@ -35,20 +35,20 @@ closes.
   - `v = 246.282818290129 GeV`
   - current comparator: `246.22 GeV`
   - authority:
-    [OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](../../OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+    [OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](../../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
 - strong coupling:
   - `alpha_s(M_Z) = 0.1181`
   - current comparator: `0.1179`
   - authority:
-    [ALPHA_S_DERIVED_NOTE.md](../../ALPHA_S_DERIVED_NOTE.md)
+    [ALPHA_S_DERIVED_NOTE.md](../../../docs/ALPHA_S_DERIVED_NOTE.md)
 - EW normalization package:
   - `sin^2(theta_W)(M_Z) = 0.2306`
   - `1/alpha_EM(M_Z) = 127.67`
   - `g_1(v) = 0.4644`
   - `g_2(v) = 0.6480`
   - authority:
-    [YT_EW_COLOR_PROJECTION_THEOREM.md](../../YT_EW_COLOR_PROJECTION_THEOREM.md),
-    [RCONN_DERIVED_NOTE.md](../../RCONN_DERIVED_NOTE.md)
+    [YT_EW_COLOR_PROJECTION_THEOREM.md](../../../docs/YT_EW_COLOR_PROJECTION_THEOREM.md),
+    [RCONN_DERIVED_NOTE.md](../../../docs/RCONN_DERIVED_NOTE.md)
 - CKM atlas/axiom package on the canonical tensor/projector surface:
   - `lambda^2 = alpha_s(v)/2`
   - `A^2 = 2/3`
@@ -84,21 +84,21 @@ closes.
     retained `alpha_s(v)` surface), with the parent exact standard-matrix
     readout `J = 3.331 x 10^-5`
   - authority:
-    [CKM_ATLAS_AXIOM_CLOSURE_NOTE.md](../../CKM_ATLAS_AXIOM_CLOSURE_NOTE.md),
-    [WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md](../../WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md),
-    [CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md](../../CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md),
-    [CKM_FIRST_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md](../../CKM_FIRST_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md),
-    [CKM_SECOND_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-25.md](../../CKM_SECOND_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-25.md),
-    [CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md](../../CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md),
-    [CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md](../../CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md),
-    [CKM_THALES_CROSS_SYSTEM_CP_RATIO_THEOREM_NOTE_2026-04-25.md](../../CKM_THALES_CROSS_SYSTEM_CP_RATIO_THEOREM_NOTE_2026-04-25.md),
-    [CKM_CP_PRODUCT_ALPHA_S_CROSS_SECTOR_EXTRACTION_THEOREM_NOTE_2026-04-25.md](../../CKM_CP_PRODUCT_ALPHA_S_CROSS_SECTOR_EXTRACTION_THEOREM_NOTE_2026-04-25.md),
-    [CKM_KAON_EPSILON_K_JARLSKOG_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md](../../CKM_KAON_EPSILON_K_JARLSKOG_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md),
-    [CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md](../../CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md)
+    [CKM_ATLAS_AXIOM_CLOSURE_NOTE.md](../../../docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md),
+    [WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md](../../../docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md),
+    [CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md](../../../docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md),
+    [CKM_FIRST_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md](../../../docs/CKM_FIRST_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md),
+    [CKM_SECOND_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-25.md](../../../docs/CKM_SECOND_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-25.md),
+    [CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md](../../../docs/CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md),
+    [CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md](../../../docs/CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md),
+    [CKM_THALES_CROSS_SYSTEM_CP_RATIO_THEOREM_NOTE_2026-04-25.md](../../../docs/CKM_THALES_CROSS_SYSTEM_CP_RATIO_THEOREM_NOTE_2026-04-25.md),
+    [CKM_CP_PRODUCT_ALPHA_S_CROSS_SECTOR_EXTRACTION_THEOREM_NOTE_2026-04-25.md](../../../docs/CKM_CP_PRODUCT_ALPHA_S_CROSS_SECTOR_EXTRACTION_THEOREM_NOTE_2026-04-25.md),
+    [CKM_KAON_EPSILON_K_JARLSKOG_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md](../../../docs/CKM_KAON_EPSILON_K_JARLSKOG_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md),
+    [CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md](../../../docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md)
 - confinement readout on top of the exact graph-first confinement theorem:
   - `sqrt(sigma) ≈ 465 MeV`
   - authority:
-    [CONFINEMENT_STRING_TENSION_NOTE.md](../../CONFINEMENT_STRING_TENSION_NOTE.md)
+    [CONFINEMENT_STRING_TENSION_NOTE.md](../../../docs/CONFINEMENT_STRING_TENSION_NOTE.md)
   - status boundary: bounded; the hadron-lane support audit isolates
     `(B2)` quenched-to-dynamical screening and `(B5)` framework-to-standard-YM
     validation as the remaining promotion gates.
@@ -116,19 +116,19 @@ carried by the current package.
   - on the current EFT bridge, observation of proton decay at any accessible
     lifetime scale would strongly disfavor the framework route
   - authority:
-    [PROTON_LIFETIME_DERIVED_NOTE.md](../../PROTON_LIFETIME_DERIVED_NOTE.md)
+    [PROTON_LIFETIME_DERIVED_NOTE.md](../../../docs/PROTON_LIFETIME_DERIVED_NOTE.md)
 - CKM-only neutron-EDM corollary on the retained `theta_eff = 0` surface:
   - exactly, `d_n(QCD) = 0` and the surviving neutron EDM is CKM-only
   - bounded continuation: `d_n(CKM) ~ 8 x 10^-33 e cm`
   - authority:
-    [CKM_NEUTRON_EDM_BOUND_NOTE.md](../../CKM_NEUTRON_EDM_BOUND_NOTE.md)
+    [CKM_NEUTRON_EDM_BOUND_NOTE.md](../../../docs/CKM_NEUTRON_EDM_BOUND_NOTE.md)
 - universal theta-induced EDM response:
   - exactly, every EDM component sourced by QCD `theta_eff` vanishes on the
     retained action surface
   - CKM weak EDMs and independent BSM CP-odd EFT sources are separate source
     directions and are not set to zero by this corollary
   - authority:
-    [UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md](../../UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md)
+    [UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md](../../../docs/UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md)
 - down-type flavor-mass CKM-dual lane:
   - `m_d/m_s = 0.05165`
   - `m_s/m_b = 0.02239`
@@ -138,7 +138,7 @@ carried by the current package.
     threshold-local self-scale comparison is supported, but theorem-grade
     scale closure of the `5/6` bridge remains open
   - authority:
-    [DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md](../../DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md)
+    [DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md](../../../docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md)
 - neutrino absolute-mass observable bounds:
   - `Σm_ν > 50.58 meV` as a strict retained-package floor
   - `m_β ≤ 50.58 meV` and `m_ββ ≤ 50.58 meV` as PMNS/phase-free ceilings
@@ -147,28 +147,28 @@ carried by the current package.
     ordering, not point predictions for the solar gap, PMNS angles, or
     Majorana phases
   - authority:
-    [NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md](../../NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md)
+    [NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md](../../../docs/NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md)
 - vacuum critical stability:
   - the current `lambda(M_Pl) = 0` route lands on the critical /
     non-metastable side of the usual Standard Model comparison surface
   - authority:
-    [VACUUM_CRITICAL_STABILITY_NOTE.md](../../VACUUM_CRITICAL_STABILITY_NOTE.md)
+    [VACUUM_CRITICAL_STABILITY_NOTE.md](../../../docs/VACUUM_CRITICAL_STABILITY_NOTE.md)
 - taste-scalar near-degeneracy companion:
   - exact taste-block fermion-CW isotropy plus bounded gauge-only split gives
     `m_taste = 124.91 GeV`
   - scalar-only thermal-cubic estimate gives `v_c/T_c = 0.3079`
   - authority:
-    [TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md](../../TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md)
+    [TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md](../../../docs/TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md)
 - benchmark gravitational decoherence:
   - at the original BMV geometry:
     - `gamma_grav = 0.253 Hz`
     - `Phi_ent = 12.4 rad`
   - authority:
-    [GRAV_DECOHERENCE_DERIVED_NOTE.md](../../GRAV_DECOHERENCE_DERIVED_NOTE.md)
+    [GRAV_DECOHERENCE_DERIVED_NOTE.md](../../../docs/GRAV_DECOHERENCE_DERIVED_NOTE.md)
 - magnetic monopole mass:
   - `M_mono ~ 0.80 M_Pl`
   - authority:
-    [MONOPOLE_DERIVED_NOTE.md](../../MONOPOLE_DERIVED_NOTE.md)
+    [MONOPOLE_DERIVED_NOTE.md](../../../docs/MONOPOLE_DERIVED_NOTE.md)
 
 These rows belong in a dedicated bounded-prediction section or appendix, not
 in route history.
@@ -217,8 +217,8 @@ conceptual pressure.
     retained-style set this reduces to denominator `N_c`, and retained
     graph-first `N_c=3` gives the observed third-integer pattern
   - authority:
-    [STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md](../../STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
-    and [FRACTIONAL_CHARGE_DENOMINATOR_FROM_N_C_THEOREM_NOTE_2026-04-24.md](../../FRACTIONAL_CHARGE_DENOMINATOR_FROM_N_C_THEOREM_NOTE_2026-04-24.md)
+    [STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md](../../../docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
+    and [FRACTIONAL_CHARGE_DENOMINATOR_FROM_N_C_THEOREM_NOTE_2026-04-24.md](../../../docs/FRACTIONAL_CHARGE_DENOMINATOR_FROM_N_C_THEOREM_NOTE_2026-04-24.md)
 - B-L anomaly freedom / gaugeable option:
   - on the retained 16-state one-generation content including `nu_R`, all six
     anomaly traces needed to gauge `U(1)_{B-L}` alongside the retained SM gauge
@@ -226,14 +226,14 @@ conceptual pressure.
   - this proves the gaugeable option only; it does not predict that `B-L` is
     gauged, a `Z'` mass/coupling, or a Majorana structure
   - authority:
-    [BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md](../../BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md)
+    [BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md](../../../docs/BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md)
 - `SU(2)` Witten `Z_2` global anomaly cancellation:
   - on retained weak-doublet matter, `N_D = 4` per generation and `12` over
     three generations, so the nonperturbative `SU(2)` Witten anomaly cancels
   - this is a fundamental Weyl-doublet count; it does not constrain bosonic
     Higgs doublets or classify higher-isospin `SU(2)` representations
   - authority:
-    [SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md](../../SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md)
+    [SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md](../../../docs/SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md)
 - `SU(3)^3` cubic gauge anomaly cancellation:
   - on retained color-charged matter, the pure cubic color anomaly index is
     `+2 - 1 - 1 = 0`
@@ -241,7 +241,7 @@ conceptual pressure.
     the color-singlet lepton completion, or uniqueness among all
     `SU(3)^3`-free extensions
   - authority:
-    [SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md](../../SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md)
+    [SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md](../../../docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md)
 - emergent Lorentz invariance:
   - leading anisotropic correction first appears at dimension 6
   - unique cubic-harmonic `ell = 4` fingerprint
@@ -250,15 +250,15 @@ conceptual pressure.
     `U(a)=exp(-i a H_lat)` by Stone's theorem; the gravity-card
     directional-measure kernel remains separate/open
   - authority:
-    [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](../../EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
-    [LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md](../../LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)
+    [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](../../../docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
+    [LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md](../../../docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)
 - strong CP:
   - retained action-surface `theta_eff = 0` on the retained
     axiom-determined Wilson-plus-staggered action surface
   - source-scoped vanishing of all theta-induced EDM response components
   - authority:
-    [STRONG_CP_THETA_ZERO_NOTE.md](../../STRONG_CP_THETA_ZERO_NOTE.md),
-    [UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md](../../UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md)
+    [STRONG_CP_THETA_ZERO_NOTE.md](../../../docs/STRONG_CP_THETA_ZERO_NOTE.md),
+    [UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md](../../../docs/UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md)
 
 These are part of the framework's falsification surface; some are already
 observed structural signatures, while others are delayed by present
@@ -320,18 +320,18 @@ open:
 
 Authority:
 
-- [COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md](../../COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
-- [DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md](../../DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md)
-- [COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md](../../COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md)
-- [COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md](../../COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md)
-- [MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md](../../MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md)
-- [N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md](../../N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md)
-- [R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md](../../R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md)
-- [GRAVITON_SPECTRAL_TOWER_THEOREM_NOTE_2026-04-24.md](../../GRAVITON_SPECTRAL_TOWER_THEOREM_NOTE_2026-04-24.md)
-- [VECTOR_GAUGE_FIELD_KK_TOWER_THEOREM_NOTE_2026-04-24.md](../../VECTOR_GAUGE_FIELD_KK_TOWER_THEOREM_NOTE_2026-04-24.md)
-- [COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md](../../COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md)
-- [DARK_ENERGY_EOS_NOTE.md](../../DARK_ENERGY_EOS_NOTE.md)
-- [GRAVITON_MASS_DERIVED_NOTE.md](../../GRAVITON_MASS_DERIVED_NOTE.md)
+- [COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md](../../../docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
+- [DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md](../../../docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md)
+- [COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md](../../../docs/COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md)
+- [COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md](../../../docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md)
+- [MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md](../../../docs/MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md)
+- [N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md](../../../docs/N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md)
+- [R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md](../../../docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md)
+- [GRAVITON_SPECTRAL_TOWER_THEOREM_NOTE_2026-04-24.md](../../../docs/GRAVITON_SPECTRAL_TOWER_THEOREM_NOTE_2026-04-24.md)
+- [VECTOR_GAUGE_FIELD_KK_TOWER_THEOREM_NOTE_2026-04-24.md](../../../docs/VECTOR_GAUGE_FIELD_KK_TOWER_THEOREM_NOTE_2026-04-24.md)
+- [COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md](../../../docs/COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md)
+- [DARK_ENERGY_EOS_NOTE.md](../../../docs/DARK_ENERGY_EOS_NOTE.md)
+- [GRAVITON_MASS_DERIVED_NOTE.md](../../../docs/GRAVITON_MASS_DERIVED_NOTE.md)
 
 ## Open predictive bridges
 

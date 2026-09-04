@@ -16,8 +16,10 @@ method by which claims were produced and controlled.
 
 This lane is separate from the physics claim boundary.
 
-- For the current scientific package, use the publication surfaces in
-  [`docs/publication/ci3_z3/`](./publication/ci3_z3/README.md).
+- For the current science, use the primary track (`docs/KEY_SCIENCE.md`
+  and the audit ledger). The former scientific package is deferred (owner
+  decision 2026-09-03) and archived, as the snapshot at deferral, under
+  `archive/publication/ci3_z3/` — record, not a current claim surface.
 - For the AI/process methodology, use this note and the methodology index in
   [`docs/ai_methodology/README.md`](./ai_methodology/README.md).
 
@@ -127,9 +129,12 @@ The repo uses explicit status distinctions instead of a single bucket called
 This is one of the main mechanisms used to stop AI systems from silently
 upgrading a suggestive route into a theorem.
 
-The package-wide negative boundary is maintained explicitly in:
+The package-wide negative boundary WAS maintained explicitly (through the
+2026-09-03 deferral) in:
 
-- [`docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md`](./publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
+- `archive/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md` (archived
+  snapshot at deferral; the live non-claim boundary is now each note's own
+  scope plus the axiom text)
 
 ### 4.4 No-go production is first-class
 

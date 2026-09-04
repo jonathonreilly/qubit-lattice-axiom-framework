@@ -13,7 +13,7 @@ This note is the shortest package-level answer to:
 ## 1. Framework statement
 
 The current package uses the four named axioms in
-[MINIMAL_AXIOMS_2026-06-29.md](../../MINIMAL_AXIOMS_2026-06-29.md): Lattice,
+[MINIMAL_AXIOMS_2026-06-29.md](../../../docs/MINIMAL_AXIOMS_2026-06-29.md): Lattice,
 Qubit, Admissibility, and Record. The equivalent `Cl(3,0)` reading is the
 local-algebra language for the Qubit axiom, not a separate premise.
 
@@ -29,8 +29,8 @@ weight, not a third premise class. The sole machine premise authority is
 
 The optional compression notes
 
-- [SINGLE_AXIOM_INFORMATION_NOTE.md](../../SINGLE_AXIOM_INFORMATION_NOTE.md)
-- [SINGLE_AXIOM_HILBERT_NOTE.md](../../SINGLE_AXIOM_HILBERT_NOTE.md)
+- [SINGLE_AXIOM_INFORMATION_NOTE.md](../../../docs/SINGLE_AXIOM_INFORMATION_NOTE.md)
+- [SINGLE_AXIOM_HILBERT_NOTE.md](../../../docs/SINGLE_AXIOM_HILBERT_NOTE.md)
 
 are optional reduction/support context for framework compression and
 physical-lattice scoping. They are not the load-bearing input ledger for the
@@ -154,27 +154,27 @@ Current absolute-scale package rule:
   with effective conditional status until fresh audit accepts both the local
   theorem and its upstream action/time/CPT authority rows
 - authority:
-  [PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md](../../PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md),
-  [PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md](../../PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md),
-  [PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md](../../PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md),
-  [PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md](../../PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md),
-  [PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md](../../PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md),
-  [PLANCK_FINITE_RESPONSE_NO_GO_NOTE_2026-04-24.md](../../PLANCK_FINITE_RESPONSE_NO_GO_NOTE_2026-04-24.md),
-  [PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md](../../PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md),
-  [AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md](../../AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md),
-  [AREA_LAW_PRIMITIVE_EDGE_ENTROPY_SELECTOR_NO_GO_NOTE_2026-04-25.md](../../AREA_LAW_PRIMITIVE_EDGE_ENTROPY_SELECTOR_NO_GO_NOTE_2026-04-25.md),
-  [AREA_LAW_ALGEBRAIC_SPECTRUM_ENTROPY_NO_GO_NOTE_2026-04-25.md](../../AREA_LAW_ALGEBRAIC_SPECTRUM_ENTROPY_NO_GO_NOTE_2026-04-25.md),
-  [PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md](../../PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md),
-  [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](../../PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md),
-  [PLANCK_BOUNDARY_ORIENTATION_INCIDENCE_NO_GO_NOTE_2026-04-30.md](../../PLANCK_BOUNDARY_ORIENTATION_INCIDENCE_NO_GO_NOTE_2026-04-30.md),
-  [PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md](../../PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
+  [PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md](../../../docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md),
+  [PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md](../../../docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md),
+  [PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md](../../../docs/PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md),
+  [PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md](../../../docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md),
+  [PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md](../../../docs/PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md),
+  [PLANCK_FINITE_RESPONSE_NO_GO_NOTE_2026-04-24.md](../../../docs/PLANCK_FINITE_RESPONSE_NO_GO_NOTE_2026-04-24.md),
+  [PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md](../../../docs/PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md),
+  [AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md](../../../docs/AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md),
+  [AREA_LAW_PRIMITIVE_EDGE_ENTROPY_SELECTOR_NO_GO_NOTE_2026-04-25.md](../../../docs/AREA_LAW_PRIMITIVE_EDGE_ENTROPY_SELECTOR_NO_GO_NOTE_2026-04-25.md),
+  [AREA_LAW_ALGEBRAIC_SPECTRUM_ENTROPY_NO_GO_NOTE_2026-04-25.md](../../../docs/AREA_LAW_ALGEBRAIC_SPECTRUM_ENTROPY_NO_GO_NOTE_2026-04-25.md),
+  [PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md](../../../docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md),
+  [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](../../../docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md),
+  [PLANCK_BOUNDARY_ORIENTATION_INCIDENCE_NO_GO_NOTE_2026-04-30.md](../../../docs/PLANCK_BOUNDARY_ORIENTATION_INCIDENCE_NO_GO_NOTE_2026-04-30.md),
+  [PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md](../../../docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
 
 - plaquette surface:
   - `<P> = 0.5934` is a computed lattice input on the selected finite
     `SU(3)` Wilson-lattice/`beta` surface, not a value derived from the four
     axioms and not an infinite-volume certificate
   - authority:
-    [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](../../PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+    [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](../../../docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
 - mean link:
   - `u_0 = <P>^(1/4)` is an exact algebraic identity conditional on the
     selected plaquette input
@@ -184,21 +184,21 @@ Current absolute-scale package rule:
   - these are unaudited derived claims on the current ledger and must not be
     reused as retained constants until independent audit closes their chains
   - authority:
-    [ALPHA_S_DERIVED_NOTE.md](../../ALPHA_S_DERIVED_NOTE.md)
+    [ALPHA_S_DERIVED_NOTE.md](../../../docs/ALPHA_S_DERIVED_NOTE.md)
 - electroweak hierarchy:
   - `v = 246.282818290129 GeV`
   - this is an unaudited derived claim, not an axiom/primitive value or a
     same-surface retained constant
   - authority:
-    [OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](../../OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+    [OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](../../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
 - color normalization support:
   - exact Fierz channel fraction `F_adj = 8/9`
   - EW readout coefficient `K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9)`;
     `K_EW(0)=9/8` is the connected-trace specialization, not an
     unconditional retained theorem
   - authority:
-    [EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md](../../EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md),
-    [EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md](../../EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
+    [EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md](../../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md),
+    [EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md](../../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
 - bare EW/color dimension-ratio support:
   - exact support identity `alpha_3(bare)/alpha_em(bare) = 2d + 3 = 9`
     at `d = 3`
@@ -220,7 +220,7 @@ The gravity/QG chain is exact on:
 It is not currently claimed as a theorem about every possible continuum
 packaging. Use:
 
-- [CONTINUUM_IDENTIFICATION_NOTE.md](../../CONTINUUM_IDENTIFICATION_NOTE.md)
+- [CONTINUUM_IDENTIFICATION_NOTE.md](../../../docs/CONTINUUM_IDENTIFICATION_NOTE.md)
 
 ## 5. Bridge-conditioned rows
 
@@ -228,7 +228,7 @@ These rows are still on the paper surface, but their interpretation uses a
 bridge layer beyond the exact structural core.
 
 The Planck-pin row remains bridge-conditioned. The 2026-04-30 source
-[PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](../../PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
+[PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](../../../docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
 gives an exact obstruction for the supplied exterior one-form action; it does
 not derive a physical carrier, exclude other substrate actions, or remove the
 channel/Widom bridge. Audit status remains pipeline-owned.

@@ -11,6 +11,9 @@ For current authority use:
 
 - [`docs/work_history/repo/LANE_STATUS_BOARD.md`](../LANE_STATUS_BOARD.md)
 - [`docs/CANONICAL_HARNESS_INDEX.md`](../../../CANONICAL_HARNESS_INDEX.md)
-- [`docs/publication/ci3_z3/PUBLICATION_MATRIX.md`](../../../publication/ci3_z3/PUBLICATION_MATRIX.md)
-- [`docs/publication/ci3_z3/CLAIMS_TABLE.md`](../../../publication/ci3_z3/CLAIMS_TABLE.md)
-- [`docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md`](../../../publication/ci3_z3/DERIVATION_VALIDATION_MAP.md)
+- [`docs/KEY_SCIENCE.md`](../../../KEY_SCIENCE.md) and the audit ledger
+
+The former publication evaluation surfaces (publication matrix, claims
+table, derivation/validation map) are deferred with the whole package
+(owner decision 2026-09-03) and archived as the snapshot at deferral under
+`archive/publication/ci3_z3/` — record, not authority.

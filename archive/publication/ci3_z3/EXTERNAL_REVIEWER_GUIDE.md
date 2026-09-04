@@ -6,9 +6,9 @@ re-audit backlog; author-side manuscript and table labels do not override it.
 
 ## Review in this order
 
-1. [Generated front-door status](../../repo/FRONT_DOOR_STATUS.md)
-2. [Current four-axiom memo](../../MINIMAL_AXIOMS_2026-06-29.md)
-3. [Generated front-door status](../../repo/FRONT_DOOR_STATUS.md)
+1. [Generated front-door status](../../../docs/repo/FRONT_DOOR_STATUS.md)
+2. [Current four-axiom memo](../../../docs/MINIMAL_AXIOMS_2026-06-29.md)
+3. [Generated front-door status](../../../docs/repo/FRONT_DOOR_STATUS.md)
 4. [Claims table with audit badges](./CLAIMS_TABLE_EFFECTIVE_STATUS.md)
 5. [Publication matrix with audit badges](./PUBLICATION_MATRIX_EFFECTIVE_STATUS.md)
 6. [Derivation/validation map with audit badges](./DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md)

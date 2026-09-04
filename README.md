@@ -63,17 +63,17 @@ Use these entrypoints in order:
 2. [Generated front-door status snapshot](docs/repo/FRONT_DOOR_STATUS.md)
 3. [Minimal axiom memo](docs/MINIMAL_AXIOMS_2026-06-29.md)
 4. [Retained backbone — every audit-ratified row](docs/repo/RETAINED_BACKBONE.md)
-5. [Publication package README](docs/publication/ci3_z3/README.md)
-6. [Current falsifiable predictions catalog](docs/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md)
-7. [Manuscript claims with audit badges](docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md)
-8. [Quantitative table with audit badges](docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md)
-9. [Publication/audit divergence report](docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md)
-10. [External reviewer guide](docs/publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md)
-    and [reproduce guide](docs/publication/ci3_z3/REPRODUCE.md)
-11. [Science map by domain](docs/publication/ci3_z3/SCIENCE_MAP.md)
-12. [Open science lanes](docs/lanes/open_science/README.md)
-13. Full audit ledger: tracked shards under `docs/audit/data/ledger/`, summarized in
+5. [Key science — the front-of-house index](docs/KEY_SCIENCE.md)
+6. [Open science lanes](docs/lanes/open_science/README.md)
+7. Full audit ledger: tracked shards under `docs/audit/data/ledger/`, summarized in
     [`effective_status_summary.json`](docs/audit/data/effective_status_summary.json)
+
+The former flagship paper package (package README, falsifiable-predictions
+catalog, manuscript claims and quantitative tables with audit badges,
+divergence report, external-reviewer and reproduce guides, science map) was
+deferred end-to-end by owner decision 2026-09-03 and lives whole, as the
+snapshot at deferral, at `archive/publication/ci3_z3/` on the archive tier
+(record, not a claim surface — see `archive/README.md`).
 
 ## Current Status
 
@@ -111,9 +111,10 @@ until that completes, read pre-2026-06-29 axiom descriptions as historical.
 
 ## Falsifiable Forecasts
 
-The current sharp forecast catalog is
-[`docs/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md`](docs/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md).
-It highlights three near-term tests:
+The sharp forecast catalog at deferral is
+`archive/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md` (archive
+tier; snapshot of the deferred package). It highlights three near-term
+tests:
 
 - PMNS `delta_CP` in the third quadrant near maximal,
   `delta_CP in [251.86 deg, 270.00 deg]`;
@@ -130,10 +131,13 @@ with its stated conditionality rather than copying a number bare.
 
 ## Reusable Numbers
 
-For numeric reuse, start from the audit-badged generated views:
-
-- [Usable derived values](docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md)
-- [Quantitative summary table](docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md)
+For numeric reuse, start from the audit ledger itself (tracked shards under
+`docs/audit/data/ledger/`); the last audit-badged generated views of the
+deferred package are archived at
+`archive/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md`
+and `archive/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md`
+(snapshot at deferral; statuses there are frozen, the live statuses are the
+ledger's).
 
 Important current values include the electroweak scale `v`, the canonical
 plaquette/coupling package, CKM atlas quantities, the YT/top and Higgs
@@ -143,9 +147,10 @@ and qualifier shown in those generated tables.
 
 ## Lane State
 
-The active science is organized by domain in
-[`docs/publication/ci3_z3/SCIENCE_MAP.md`](docs/publication/ci3_z3/SCIENCE_MAP.md)
-and by work lane in [`docs/lanes`](docs/lanes/README.md).
+The active science is organized in
+[`docs/KEY_SCIENCE.md`](docs/KEY_SCIENCE.md) and by work lane in
+[`docs/lanes`](docs/lanes/README.md); the deferred package's domain map is
+archived at `archive/publication/ci3_z3/SCIENCE_MAP.md`.
 
 High-level state:
 
@@ -183,11 +188,10 @@ High-level state:
 
 ## Validation
 
-Use the publication package's validation path:
-
-1. [REPRODUCE.md](docs/publication/ci3_z3/REPRODUCE.md)
-2. [DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md](docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md)
-3. [RESULTS_INDEX_EFFECTIVE_STATUS.md](docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md)
+For per-claim validation, use the audit ledger and each note's paired
+runner; the deferred package's validation path (REPRODUCE guide,
+derivation/validation map, results index) is archived whole under
+`archive/publication/ci3_z3/` (snapshot at deferral).
 
 For audit status, run:
 
@@ -195,8 +199,9 @@ For audit status, run:
 bash docs/audit/scripts/run_pipeline.sh
 ```
 
-That refreshes the ledger, queue, generated publication effective-status views,
-divergence report, and front-door status snapshot.
+That refreshes the ledger, queue, and front-door status snapshot (the
+publication effective-status views and divergence report are skipped while
+the package is deferred).
 
 ## Boundaries
 
@@ -206,6 +211,6 @@ probability, measurement, arrow of time, selector weights, kinetic branch
 selection, or physical observable identification. The explicit non-claims and
 qualifiers live in:
 
-- [Inputs and qualifiers](docs/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md)
-- [What this paper does not claim](docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
-- [Publication/audit divergence report](docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md)
+- `archive/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md` (archived snapshot)
+- `archive/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md` (archived snapshot)
+- `archive/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md` (archived snapshot)

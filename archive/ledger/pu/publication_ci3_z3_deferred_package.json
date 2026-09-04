@@ -1,0 +1,17 @@
+{
+ "id": "publication_ci3_z3_deferred_package",
+ "title": "docs/publication/ci3_z3 \u2014 the deferred flagship paper package",
+ "science": "The April-2026 flagship publication package (arxiv draft, claims tables, derivation atlas/validation map, full claim ledger, prediction surface, reproducibility freeze 2026-04-14, external-reviewer guide, and the pipeline-rendered effective-status views), moved to the archive tier whole as the snapshot at deferral. Publication was deferred end-to-end by owner decision 2026-09-03 (densify freeze delta D5); the underlying science remains on the primary track in its docs notes and audit rows - this package is tables and drafts OVER those notes, not an independent claim surface.",
+ "source": {
+  "kind": "publication-package",
+  "path": "docs/publication/ci3_z3",
+  "moved_to": "archive/publication/ci3_z3",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/publication/ci3_z3/ (whole package, snapshot at deferral); this ledger line",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04 delta D5 (owner deferral 2026-09-03); follow-up PR at migration"
+ },
+ "status": "archived"
+}

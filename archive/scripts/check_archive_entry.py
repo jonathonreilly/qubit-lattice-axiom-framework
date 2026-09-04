@@ -31,7 +31,7 @@ FORBIDDEN = ("audit_status", "effective_status", "claim_type", "verdict",
 MIN_SCIENCE = 40
 ID_RE = re.compile(r"pr-(\d+)\Z")
 NOTE_ID_RE = re.compile(r"[a-z0-9][a-z0-9_.-]*\Z")
-SEMANTIC_KINDS = ("docs-note", "campaign-packet")
+SEMANTIC_KINDS = ("docs-note", "campaign-packet", "publication-package")
 INDEX_LINE_RE = re.compile(r"^- ((?:pr-\d+|[a-z0-9][a-z0-9_.-]{3,})):", re.MULTILINE)
 
 
@@ -120,7 +120,7 @@ def check_entry(path: Path) -> list[str]:
             errs.append(f"{path}: source.kind must be one of {SEMANTIC_KINDS}")
         else:
             keys = set(src)
-            if src["kind"] == "docs-note":
+            if src["kind"] in ("docs-note", "publication-package"):
                 want = want | {"moved_to"}
             if keys != want:
                 errs.append(f"{path}: source keys must be exactly {sorted(want)}")

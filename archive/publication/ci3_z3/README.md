@@ -6,8 +6,8 @@ front door and row-badged effective-status views are public claim authority.
 
 ## Read In This Order
 
-1. [Generated front-door status](../../repo/FRONT_DOOR_STATUS.md)
-2. [Current four-axiom memo](../../MINIMAL_AXIOMS_2026-06-29.md)
+1. [Generated front-door status](../../../docs/repo/FRONT_DOOR_STATUS.md)
+2. [Current four-axiom memo](../../../docs/MINIMAL_AXIOMS_2026-06-29.md)
 3. [Author manuscript archive](./ARXIV_DRAFT.md)
 4. [Claims table with audit badges](./CLAIMS_TABLE_EFFECTIVE_STATUS.md)
 5. [Publication matrix with audit badges](./PUBLICATION_MATRIX_EFFECTIVE_STATUS.md)

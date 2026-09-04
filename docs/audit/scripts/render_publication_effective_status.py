@@ -518,6 +518,20 @@ def render_divergence(all_lookups: dict[str, list[dict]],
 
 def main() -> int:
     ledger_io.ensure_cache()
+    if not PUB_DIR.is_dir():
+        # Publication package deferred to the archive tier (owner decision
+        # 2026-09-03; moved at the 2026-09 densify migration). Emit an empty
+        # gap file so downstream shadow consumers read a same-pass artifact,
+        # and skip rendering entirely.
+        (DATA_DIR / "publication_gap.json").write_text(
+            json.dumps({"schema_version": 1, "entries": [],
+                        "deferred": "archive/publication/ci3_z3"},
+                       indent=1, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        print("publication package deferred (archive/publication/ci3_z3); "
+              "nothing to render")
+        return 0
     missing_sources = [src for src, _, _ in TABLES if not (PUB_DIR / src).exists()]
     if missing_sources:
         print(

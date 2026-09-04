@@ -20,7 +20,7 @@ row's shard before citing any grade word from this package.
 
 ## Why this package exists
 
-The project's [CLAIMS_TABLE.md](../../publication/ci3_z3/CLAIMS_TABLE.md) currently
+The project's `archive/publication/ci3_z3/CLAIMS_TABLE.md` (deferred package, archive tier) currently
 lists "Open Flagship Lane" entries that reflect the project's own audit
 priorities:
 
@@ -327,14 +327,14 @@ prioritized.
 
 ## Possible Manuscript-Surface Follow-Up
 
-- Add a new section to [CLAIMS_TABLE.md](../../publication/ci3_z3/CLAIMS_TABLE.md)
+- Add a new section to `archive/publication/ci3_z3/CLAIMS_TABLE.md` (deferred package, archive tier)
   titled "Critical Open Science Lanes" listing these six lanes with status
   pointers to the per-lane open-lane documents.
-- Update [WHAT_THIS_PAPER_DOES_NOT_CLAIM.md](../../publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
+- Update `archive/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md` (deferred package)
   to explicitly call out each of these six lanes as "currently bounded /
   open / scaffold-only" rather than implying they're already addressed by
   the bounded-companion category.
-- Update [INPUTS_AND_QUALIFIERS_NOTE.md](../../publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md)
+- Update `archive/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md` (deferred package)
   to be explicit about which observables in each lane are framework-derived
   vs. external-input vs. scaffold-only.
 

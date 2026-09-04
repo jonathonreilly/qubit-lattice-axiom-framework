@@ -15,7 +15,7 @@ Package appearance, a passing runner, and source-note words such as
 ## Framework Baseline
 
 The current ontology is the four named axioms in
-[MINIMAL_AXIOMS_2026-06-29.md](../../MINIMAL_AXIOMS_2026-06-29.md):
+[MINIMAL_AXIOMS_2026-06-29.md](../../../docs/MINIMAL_AXIOMS_2026-06-29.md):
 
 - **Lattice:** the cubic `Z^3` site set with its stated adjacency and motions;
 - **Qubit:** the local possibility domain with full one-site presentation
@@ -36,10 +36,10 @@ The strongest exact content is local algebra, finite-lattice structure, and
 bounded calculations on named supplied action/kernel/readout surfaces.
 Important boundaries:
 
-- [NEWTON_LAW_DERIVED_NOTE.md](../../NEWTON_LAW_DERIVED_NOTE.md) differentiates
+- [NEWTON_LAW_DERIVED_NOTE.md](../../../docs/NEWTON_LAW_DERIVED_NOTE.md) differentiates
   a supplied `1/r` kernel; that scope is not a derivation of the physical
   force law from the four axioms.
-- [BROAD_GRAVITY_DERIVATION_NOTE.md](../../BROAD_GRAVITY_DERIVATION_NOTE.md)
+- [BROAD_GRAVITY_DERIVATION_NOTE.md](../../../docs/BROAD_GRAVITY_DERIVATION_NOTE.md)
   packages algebra on supplied action/readout inputs; it does not by itself
   establish WEP, time dilation, or a physical source bridge.
 - Restricted strong-field, Lorentz, discrete-GR, and continuum/QG rows must be
@@ -61,10 +61,10 @@ their own retained-grade scope before a downstream row can inherit them.
 
 Useful entry points:
 
-- [NATIVE_GAUGE_CLOSURE_NOTE.md](../../NATIVE_GAUGE_CLOSURE_NOTE.md)
-- [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](../../GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
-- [ONE_GENERATION_MATTER_CLOSURE_NOTE.md](../../ONE_GENERATION_MATTER_CLOSURE_NOTE.md)
-- [STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md](../../STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
+- [NATIVE_GAUGE_CLOSURE_NOTE.md](../../../docs/NATIVE_GAUGE_CLOSURE_NOTE.md)
+- [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](../../../docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
+- [ONE_GENERATION_MATTER_CLOSURE_NOTE.md](../../../docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md)
+- [STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md](../../../docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
 
 Consult their effective-status annotations rather than treating this list as a
 single retained package.
@@ -85,7 +85,7 @@ own audited scopes say more.
 
 The strongest strong-CP result is scoped to the selected Wilson/staggered
 action, positivity/reality, and mass/readout surfaces named by
-[STRONG_CP_THETA_ZERO_NOTE.md](../../STRONG_CP_THETA_ZERO_NOTE.md) and its
+[STRONG_CP_THETA_ZERO_NOTE.md](../../../docs/STRONG_CP_THETA_ZERO_NOTE.md) and its
 dependencies. It must not be generalized to every admissible action or to an
 unrestricted solution of the Standard Model strong-CP problem.
 
@@ -125,9 +125,9 @@ premise authority. Its two exact open derivation obligations supply no `r`,
 
 Start with:
 
-- [CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md](../../CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)
-- [KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md](../../KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md)
-- [CKM_ATLAS_AXIOM_CLOSURE_NOTE.md](../../CKM_ATLAS_AXIOM_CLOSURE_NOTE.md)
+- [CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md](../../../docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)
+- [KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md](../../../docs/KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md)
+- [CKM_ATLAS_AXIOM_CLOSURE_NOTE.md](../../../docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md)
 
 ## Neutrino and Dark-Matter Work
 
@@ -138,7 +138,7 @@ matter abundance prediction. PMNS and dark-matter headline statements must
 retain their source-surface, selector, and comparator qualifications.
 
 Use the neutrino and dark-matter rows in the effective-status atlas and the
-[open-science index](../../lanes/open_science/README.md).
+[open-science index](../../../docs/lanes/open_science/README.md).
 
 ## Cosmology and Compactness Spectra
 
@@ -153,7 +153,7 @@ their ledger rows say so.
 ## Open Science Lanes
 
 The main unresolved physical programs are indexed in
-[docs/lanes/open_science/README.md](../../lanes/open_science/README.md),
+[docs/lanes/open_science/README.md](../../../docs/lanes/open_science/README.md),
 including:
 
 - charged-lepton masses and Koide physical closure;

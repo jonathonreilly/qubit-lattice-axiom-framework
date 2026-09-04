@@ -162,14 +162,14 @@ What the framework, on its own record, does **not** claim:
 - **The publication surface identifies no clean unconditional forward
   falsifier.** Its catalog says this in its own headline ("Bucket A is empty
   in this catalog"):
-  [`FALSIFIABLE_PREDICTIONS_2026-06-08.md`](../publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md).
+  `archive/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md` (deferred package, archive tier).
   The sharpest conditional forecasts (PMNS `delta_CP`, `theta_23` octant) are
   currently leaning *against* the framework under NuFit-6.1 — stated there
   plainly.
 - **The publication surface is ahead of the audit.** At the quoted ledger
   state, 569 rows cited by publication tables are not retained-grade; the
   generated divergence report
-  ([`PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md))
+  (`archive/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`, archived snapshot)
   tracks this gap instead of hiding it.
 
 ## The map
@@ -220,7 +220,7 @@ authority-link guard. Then:
 1. [`RETAINED_BACKBONE.md`](RETAINED_BACKBONE.md) — every ratified row, one
    link each.
 2. [`FRONT_DOOR_STATUS.md`](FRONT_DOOR_STATUS.md) — live counts, queue, gap.
-3. [`EXTERNAL_REVIEWER_GUIDE.md`](../publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md)
+3. `archive/publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md` (deferred package, archive tier)
    — the referee's path through the package.
 4. Any claim: open its ledger shard under
    `docs/audit/data/ledger/` and read

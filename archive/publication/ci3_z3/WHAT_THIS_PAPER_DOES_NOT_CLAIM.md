@@ -87,27 +87,27 @@ The paper does **not** claim:
   the protected-`gamma_bar` NLO surface to physical NNLO or all-orders CKM
   control.
 - that the CKM barred-triangle Pedoe similarity-deficit metric in
-  [CKM_BARRED_PEDOE_SIMILARITY_DEFICIT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md](../../CKM_BARRED_PEDOE_SIMILARITY_DEFICIT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
+  [CKM_BARRED_PEDOE_SIMILARITY_DEFICIT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md](../../../docs/CKM_BARRED_PEDOE_SIMILARITY_DEFICIT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
   is a direct metric on measured CKM observables or extends beyond the
   retained NLO protected-`gamma_bar` surface.
 - that the CKM barred-triangle Napoleon-triangle exact closed forms in
-  [CKM_BARRED_NAPOLEON_TRIANGLES_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md](../../CKM_BARRED_NAPOLEON_TRIANGLES_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
+  [CKM_BARRED_NAPOLEON_TRIANGLES_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md](../../../docs/CKM_BARRED_NAPOLEON_TRIANGLES_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
   are direct measured-CKM observables or extend beyond the retained NLO
   protected-`gamma_bar` surface.
 - that the CKM barred-triangle Weitzenbock/Brocard polynomial unification in
-  [CKM_BARRED_WEITZENBOCK_BROCARD_POLYNOMIAL_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md](../../CKM_BARRED_WEITZENBOCK_BROCARD_POLYNOMIAL_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
+  [CKM_BARRED_WEITZENBOCK_BROCARD_POLYNOMIAL_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md](../../../docs/CKM_BARRED_WEITZENBOCK_BROCARD_POLYNOMIAL_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
   is a direct measured-CKM observable, a new physical CKM inequality beyond
   standard Euclidean triangle geometry, or a claim beyond the retained NLO
   protected-`gamma_bar` surface.
 - that the CKM Brocard-polynomial Vieta structural-integer skeleton in
-  [CKM_BROCARD_POLYNOMIAL_VIETA_STRUCTURAL_INTEGERS_THEOREM_NOTE_2026-04-25.md](../../CKM_BROCARD_POLYNOMIAL_VIETA_STRUCTURAL_INTEGERS_THEOREM_NOTE_2026-04-25.md)
+  [CKM_BROCARD_POLYNOMIAL_VIETA_STRUCTURAL_INTEGERS_THEOREM_NOTE_2026-04-25.md](../../../docs/CKM_BROCARD_POLYNOMIAL_VIETA_STRUCTURAL_INTEGERS_THEOREM_NOTE_2026-04-25.md)
   is a direct measured-CKM observable, an all-orders CKM theorem, or a new
   independent selector for the retained structural counts.
 - that the CKM Jarlskog exact NLO closed form eliminates higher-order
   Wolfenstein corrections to the physical CKM Jarlskog beyond the retained
   protected-`gamma_bar` NLO surface.
 - that the CKM moduli-only unitarity / Jarlskog area certificate in
-  [CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md](../../CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md)
+  [CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md](../../../docs/CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md)
   supplies a new CKM numerical prediction, modifies the retained atlas, or
   extends to a 4x4/higher-generation analogue.
 - that the atlas/Wolfenstein area factor
@@ -210,10 +210,10 @@ The paper does **not** claim:
   from the `R_base` identity alone;
 - point predictions for `Omega_Lambda`, `Omega_m`, `q_0`, `z_*`, or
   `z_{mLambda}` without closing the `H_inf/H_0` matter bridge;
-- that the [FRW single-ratio inverse reconstruction certificate](../../COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md)
+- that the [FRW single-ratio inverse reconstruction certificate](../../../docs/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md)
   closes the numerical value of `H_inf/H_0`, `Omega_Lambda`, `Omega_m`,
   `q_0`, `z_*`, or `z_{mLambda}`;
-- that the [Hubble structural lock](../../HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md)
+- that the [Hubble structural lock](../../../docs/HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md)
   derives a numerical `H_0`; it only states that late-time reductions share
   one scalar `H_0` on the retained/admitted `w=-1` flat-FRW surface;
 - a late-time-only resolution of the Hubble tension inside the current
@@ -237,7 +237,7 @@ The paper does **not** claim:
 - evaluation of the DM microscopic charged block `D_-`, selection of the
   charged support split, derivation of the right-sensitive selector law on
   `L_e`, or independent final DM closure from the
-  [DM Wilson direct-descendant Schur-Feshbach boundary theorem](../../DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md)
+  [DM Wilson direct-descendant Schur-Feshbach boundary theorem](../../../docs/DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md)
   alone;
 - full DM relic closure.
 

@@ -27,7 +27,7 @@ Runner: [physical_cell_cutting_wall_instance_uniqueness_cycle793_2026_08_15.py](
 - `conditional_surface_status: null`
 - `hypothetical_axiom_status: null`
 - `admitted_observation_status: null`
-- `claim_type_reason: an exact determination, at every wall fiber of the declared finite cell, that the weight censuses of the fiber's kernel and coset, the column profiles of its kernel and of its coset, and the cover and pairwise-intersection invariants of its fold-held cuttings are single-valued over the fibers; together with a complete backtracking search that exhibits an explicit relabelling of the rows carrying the sample fiber's instance onto every other fiber's instance, verified by explicit image on kernel, blocks and coset; a count of exactly two induced block bijections and 42,467,328 coordinate relabellings per fiber; and an honest rejection of a specific perturbed control by the same search; no physical or lattice-wide identification`
+- `claim_type_reason: an exact determination, at every wall fiber of the declared finite cell, that the weight censuses of the fiber's kernel and coset, the column profiles of its kernel and of its coset, and the cover and pairwise-intersection invariants of its fold-held cuttings are single-valued over the fibers; together with a complete backtracking search that exhibits an explicit relabelling of the rows carrying the sample fiber's instance onto every other fiber's instance, verified by explicit image on kernel, blocks and coset; a count of exactly two induced block bijections and 42,467,328 coordinate relabellings per fiber; and a same-entry-point perturbation control that validates the search's negative path without making a negative family claim; no physical or lattice-wide identification`
 - `audit_required_before_effective_retained: true`
 - `bare_retained_allowed: false`
 
@@ -83,9 +83,8 @@ empirical, fitted, literature, framework-axiom, physical, or continuous-geometri
 ## Exact target and obligation graph
 
 **Exact target.** For the declared finite sample-cover object, prove that all 48 fiber systems
-are coordinate-isomorphic to the sample; that the sample-to-fiber equivalences have exactly two
-induced block-bijection classes and 42,467,328 coordinate lifts; and that the one specifically
-declared perturbed block system is not equivalent to the sample.
+are coordinate-isomorphic to the sample and that the sample-to-fiber equivalences have exactly
+two induced block-bijection classes and 42,467,328 coordinate lifts.
 
 The proof obligations are acyclic and every closed node is recomputed here:
 
@@ -103,8 +102,6 @@ The proof obligations are acyclic and every closed node is recomputed here:
    coordinate lift for every target.
 6. `P5` (proved by G9 from `P3` and `P4`): enumerate both quotient classes, count all
    within-pattern lifts, and verify the nontrivial induced block action on those two classes.
-7. `P6` (proved by G10 using the same search as `P4`): reject only the specifically declared
-   perturbed control.
 
 No proof node cites an external authority. The strongest open next lemma is an intrinsic reason
 for the even minimum-weight count 14; neither that parity explanation nor a wider family result
@@ -139,11 +136,12 @@ is claimed here.
   quotient classes at all 47 targets; it is this two-element quotient action, not the full
   coordinate-equivalence set, on which that symmetry acts freely and transitively.
 
-- **The control is honestly rejected.** A target built from the sample by moving one coordinate
-  out of one block and another coordinate into it — the block staying at weight 12, so the object
-  is still 14 blocks of weight 12 on 40 coordinates — is rejected NOT FOUND by the same search
-  entry point, with the feasibility screening living inside that function so the control
-  exercises the real path.
+- **The negative search path is exercised as runner validation, not as a theorem claim.** A target
+  built from the sample by moving one coordinate out of one block and another coordinate into it
+  — the block staying at weight 12 — is rejected NOT FOUND by the same search entry point, with
+  the feasibility screening living inside that function so the control exercises the real path.
+  G10 certifies this test fixture only; it makes no claim about a perturbation family, closes no
+  alternative route, and is not a no-go boundary.
 
 The search runs at the level of bijections of the 14 blocks, and that is licensed by a lemma
 rather than by convenience. Any bijection of the coordinates carrying kernel onto kernel and
@@ -187,9 +185,10 @@ equality; that the sample instance is carried onto every one of the other 47 by 
 relabelling of the 40 coordinates, checked by explicit image on all 256 kernel vectors, the 14
 blocks and all 256 coset members; that the number of induced block bijections is exactly 2 at
 each target, each with 21,233,664 within-pattern coordinate lifts, for 42,467,328 coordinate
-relabellings; that composition by the nontrivial induced sample block symmetry exchanges the two
-quotient classes; and that the specific declared one-block perturbation is not equivalent to the
-sample. No assertion is made about other perturbations or a family of controls.
+relabellings; and that composition by the nontrivial induced sample block symmetry exchanges the
+two quotient classes. G10's specifically declared perturbation is adversarial runner validation,
+not part of this derived claim; no assertion is made about other perturbations, a family of
+controls, or the closure of any route.
 
 The equivalence classes say nothing yet about why the census has an even minimum-weight count.
 Nothing here derives the count 14, its parity, or either census; what is established is that

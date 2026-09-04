@@ -1,8 +1,34 @@
 # Physical cell cutting: the cuttings are exact tilings by two tiles, and the label-sum census is symmetry-forced
 
 Date: 2026-08-14
+
 Authority: none.
+
 Audit: unset.
+
+Status: proposed_retained
+
+Claim type: bounded_theorem
+
+Machine status:
+
+```yaml
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "Send the self-contained finite theorem and runner to independent audit; no downstream consumer is yet known."
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Exact finite enumeration, group action, tiling, orbit, and label-sum statements on one declared unit-four-cube construction."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
 Scope: the cuttings of the open unit four-cube cell are exactly the partitions of an
 order-192 group into left translates of two eight-element tiles; on that picture the label sum
@@ -15,7 +41,28 @@ as dependencies:
 `PHYSICAL_CELL_CUTTING_LABEL_SUM_SIZE_BOUND_CYCLE781_NOTE_2026-08-14`,
 `PHYSICAL_CELL_CUTTING_DIAGONAL_PARITY_CYCLE782_NOTE_2026-08-14`.
 
-Paired runner: `scripts/physical_cell_cutting_group_tiling_census_cycle783_2026_08_14.py`.
+Paired runner:
+
+- [physical_cell_cutting_group_tiling_census_cycle783_2026_08_14.py](../scripts/physical_cell_cutting_group_tiling_census_cycle783_2026_08_14.py)
+
+Framework premise edges: 0.
+
+This finite construction imports zero framework premises. The current Minimal
+Axioms file, `MINIMAL_AXIOMS_2026-06-29.md`, is a scope marker and supplies zero
+premises to the theorem.
+
+## Imports and provenance
+
+- Scientific file, literature, observational, fitted, predecessor, sibling,
+  and framework inputs: none.
+- Declared construction choices: the sixteen binary corners, determinant-one
+  simplex rule, non-edge adjacency cost and its minimum, the shifted five-value
+  sample on each axis, signed coordinate action, minimal naming rule, table
+  ordering, and the two tiles selected by the stated peak-shadow rule.
+- Package-local reads: the canonical cache records a run; the runner input set
+  is empty. All mathematical gates use Python integers and exact `Fraction`
+  arithmetic. Wall time and peak memory occur only in the support-budget gate.
+
 Everything quoted below is recomputed from scratch inside that runner, from the corner coordinates
 of the cell upward; no value is read in from a sibling artifact, and the note quotes no number
 that the runner's stdout does not print. Gate tags in square brackets name the line of stdout that

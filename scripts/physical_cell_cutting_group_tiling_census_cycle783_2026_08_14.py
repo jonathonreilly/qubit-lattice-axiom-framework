@@ -28,6 +28,8 @@ import time
 import resource
 from fractions import Fraction as FR
 
+AUDIT_TIMEOUT_SEC = 120
+
 T0 = time.time()
 OUT = [0]
 
@@ -1023,11 +1025,13 @@ gate(MIXW is not None and MIXN == 0, "K16",
      "rejector three: the parity-mixed abstract solution {0} is realized by {1} of the {2} tilings"
      .format(" ".join(nd(v) for v in MIXW), nd(MIXN), nd(NS)))
 
-emit("census: label sum over the {0} cuttings {1}".format(nd(NS), SCENS))
-emit("TOTAL: PASS={0} FAIL={1}".format(nd(STAT[0]), nd(STAT[1])))
-
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-PEAK = RSS // (1024 * 1024) if sys.platform == "darwin" else RSS // 1024
+PEAK = RSS / (1024.0 * 1024.0) if sys.platform == "darwin" else RSS / 1024.0
 SECS = int(time.time() - T0)
-emit("resource: under {0} s of the {1} s budget, under {2} MB of the {3} MB budget, {4} characters"
-     .format(nd(((SECS // 60) + 1) * 60), nd(900), nd(((PEAK // 250) + 1) * 250), nd(2500), nd(OUT[0])))
+gate(SECS < AUDIT_TIMEOUT_SEC and PEAK < 2500 and OUT[0] < 6000, "K17",
+     "support budget: {0} seconds under {1}, peak {2} MB under {3}, output {4} bytes under {5}"
+     .format(nd(SECS), nd(AUDIT_TIMEOUT_SEC), nd(int(PEAK)), nd(2500), nd(OUT[0]), nd(6000)))
+emit("census: label sum over the {0} cuttings {1}".format(nd(NS), SCENS))
+emit("resource: {0} s, {1} MB peak".format(nd(SECS), nd(int(PEAK))))
+emit("TOTAL: PASS={0} FAIL={1}".format(nd(STAT[0]), nd(STAT[1])))
+sys.exit(0 if STAT[1] == 0 else 1)

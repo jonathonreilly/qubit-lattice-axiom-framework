@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_group_tiling_census_cycle783_2026_08_14.py
-runner_sha256: 9e2daea208fb27568d2fc9839e254c72bd2ea94559f772d0d7f8673ecbfe6e4c
+runner_sha256: 143f939456467ec866815449350dec6f2e8a8ce484da1bd5fb189b1770b61776
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 21.84
+elapsed_sec: 11.94
 status: ok
 ----- stdout -----
 PASS K1 object: 2672 candidates, floor 6, 400 kept, 625 points, 15800 cuttings of 24, 192 pieces, 192 chambers, incidence 8 and 8, bad 0
@@ -29,9 +29,10 @@ PASS K13 extremes: the 240 cuttings at size 8 fall into 7 orbits, 4 of size 24 b
 PASS K14 rejector one: moving one tile element to another even mask gives 288 distinct translates of which 96 are pieces, short of 192
 PASS K15 rejector two: negating the labels of one tile type changes the census at 3 values, the count at minus 8 moving from 120 to 108
 PASS K16 rejector three: the parity-mixed abstract solution 4 0 4 0 3 1 0 0 1 4 3 4 is realized by 0 of the 15800 tilings
+PASS K17 support budget: 11 seconds under 120, peak 109 MB under 2500, output 2811 bytes under 6000
 census: label sum over the 15800 cuttings -8:120 -4:2832 0:9896 4:2832 8:120
-TOTAL: PASS=16 FAIL=0
-resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2910 characters
+resource: 11 s, 109 MB peak
+TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----
 

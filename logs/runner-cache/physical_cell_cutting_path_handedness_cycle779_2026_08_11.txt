@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_path_handedness_cycle779_2026_08_11.py
-runner_sha256: 4137dd13771f64fcb45b2f44e7c7763396d1b134a81ad883b54b003fb47f5b4e
+runner_sha256: 6b1776379950323a7a0c30bb92198e2c0cd0cdc4f43466ee220b0c2c89cf3192
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 20.98
+elapsed_sec: 10.65
 status: ok
 ----- stdout -----
-PASS L0 cell: 2672 unit pieces, cost floor 6, 400 at floor, 15800 cuttings of 24, 192 pieces each in 1975, 379200 slots, 192 covers of 8, 384 maps
+PASS L0 cell: 2672 unit; floor 6=400; sample hits all; 15800 certified 24-cuts; 192 pieces x1975; 192 covers x8; 384 maps; 15168 pairs separated
 PASS L1 floor profiles: (1,1,1,1,4) 16, (1,1,1,2,3) 192, (1,1,2,2,2) 192, sum 400 of 400; all 2672 pieces show 9 profiles, so the floor restricts
 PASS L2 the 192 used pieces are exactly the 192 staircase paths, both differences empty; the other 208 floor pieces occur in 0 cuttings
 PASS L3 namings: 16 start corners times 24 axis orders = 384, every path named exactly 2 times, 384 // 2 = 192 paths, matching the 192 used pieces
@@ -21,11 +21,11 @@ PASS L11 of the 192 proper maps, those keeping the axis order sign alone: 96; th
 PASS L12 every one of the 192 covers splits 4 and 4 by label, and each piece sits in 8 covers, so 192 times 4 = 768 = 96 times 8 forces the 4
 PASS L13 left count census 8:120 10:2832 12:9896 14:2832 16:120, sum 15800, left slots 189600 = 96 times 1975, mean 12, odd 0, range 8 to 16
 PASS L14 cutting orbits 74 under 384 and 119 under proper 192, generators closed; sizes 8:1 24:4 32:1 48:7 64:1 96:11 192:24 384:25; unbalanced 25
-PASS L15 the 240 extremal cuttings form 14 proper orbits of sizes 12:8 24:6, all far below order 192, so one sided cuttings are the most symmetric
-PASS L16 swap lowest piece for lowest missing: odd left count in 200 of 200 sampled and 7900 of 15800 overall, so the even law belongs to cuttings
+PASS L15 the 240 extremal cuttings form 14 proper orbits of sizes 12:8 24:6, all far below order 192, so one sided cuttings are highly symmetric
+PASS L16 lowest-piece swap: odd in 200/200 sampled and 7900/15800 overall; explicit odd 24-path controls
 PASS L17 closure orders 4,24,192,1920 at n = 2,3,4,5, dets all +1; paths 4,24,192,1920; orbits 4:1 12:2 96:2 1920:1; label exists at n = 3 and 4
 PASS L18 at chance against the label: corner weight parity 96, corner index sum parity 96, sorted corner determinant sign 96, each of 192
-resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2682 gate characters
+resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2636 gate characters
 TOTAL: PASS=19 FAIL=0
 
 ----- stderr -----

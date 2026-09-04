@@ -3,8 +3,89 @@
 Date: 2026-08-11
 Authority: none
 Audit: unset.
+Status: proposed_retained
 Claim type: bounded_theorem
 Constitutional effect: none.
+Runner: `scripts/physical_cell_cutting_path_handedness_cycle779_2026_08_11.py`
+
+Scope: exact finite combinatorics of the supplied determinant-one,
+adjacency-cost-floor unit four-cube cutting system. The selection rule is part
+of the supplied object; no physical dynamics, continuum limit, framework
+primitive, or constitutional consequence is claimed.
+
+## Trace gate
+
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "derive, or sharply delimit, the parity constraint behind the even cutting-level label count"
+```
+
+## Status fields
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite combinatorics on the rebuilt unit four-cube object; cutting-level parity and range are exhaustive measurements, and no physical or framework bridge is claimed"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Exact target and proof obligations
+
+**Exact target.** For the explicitly reconstructed determinant-one,
+adjacency-cost-floor unit-four-cube cutting system, prove that the 192 used
+pieces are precisely the staircase paths, derive the determinant-covariant
+path label and the 4-and-4 cover split, and retain the cutting left-count
+parity and range only as exhaustive measurements.
+
+The obligation graph is:
+
+1. **O1 — finite object and genuine cuttings (proved here).** Enumerate every
+   sample-selected cover, verify that the off-facet sample hits every candidate
+   interior to make the enumeration complete for genuine cuttings, and certify
+   the converse by separating every co-occurring simplex pair. The 24
+   determinant-one simplex volumes then sum to the unit four-cube volume. Gate
+   L0 is load-bearing for this obligation.
+2. **O2 — path identification and count (proved here at finite scope).** Gates
+   L1-L3 certify equality of the enumerated used-piece set and the staircase
+   path set. Independently, a path has `16*24` namings and exactly two endpoint
+   namings, hence `16*24/2 = 192` paths. The set equality remains an exhaustive
+   finite certificate; only its cardinality has the closed-form count.
+3. **O3 — action and holders (proved here).** Gates L4-L8 establish simple
+   transitivity on namings, the order-two path holders, and the proper-group
+   orbit decompositions.
+4. **O4 — swap determinant (proved algebraically here, checked independently
+   by finite sweep).** The bit-vector calculation below gives
+   `det(swap)=(-1)^(n(n+1)/2)`; L6 reconstructs the holders for `n=1,...,6`.
+5. **O5 — label descent and covariance (proved algebraically here, checked
+   exhaustively).** The naming calculation below proves the transformation
+   law; L9-L11 check all 73,728 map-path pairs and both namings of every path.
+6. **O6 — cover split (proved here).** Proper-group transitivity makes the
+   label split constant across covers; L12 supplies the incidence counts whose
+   double count forces that constant to be four.
+7. **O7 — cutting parity and range (open as derivations).** L13-L16 measure
+   evenness and the range `8,...,16` on all 15,800 cuttings and test a negative
+   control. Those gates do not turn either measurement into a derived law.
+
+The strongest missing lemma is a structural parity constraint forcing every
+cutting to meet the positive-label paths an even number of times. A stronger
+lemma would also derive the bounds 8 and 16; neither lemma is supplied here.
+
+Boundary and degenerate cases: O1-O3 and O6-O7 concern only this finite
+four-dimensional supplied cutting system. O4 holds algebraically for every
+integer `n>=1`; the holder sweep is only `n=1,...,6`. O5 descends from namings
+to unoriented paths exactly when `(-1)^(n(n+1)/2)=+1`; the group-orbit sweep is
+only `n=2,...,5`. Dimension zero, repeated-axis walks, non-staircase pieces,
+non-unit simplices, pieces above the adjacency-cost floor, arbitrary cell
+cutting systems, and lattice-wide or physical interpretations are excluded.
 
 ## 1. What this cycle asks
 
@@ -18,8 +99,9 @@ and 384 signed coordinate maps act on the whole picture.
 
 Every one of those numbers has so far been an output of a search. This cycle asks a
 different question: **what are the 192 pieces?** If they have a closed-form description,
-then 192 stops being a search result, and any structure carried by that description is
-available to the object without further computation.
+then their cardinality has a closed form, and any structure carried by that description is
+available to the object. The equality between occurring pieces and paths remains an exact
+finite enumeration result.
 
 The answer is that they are exactly the staircase paths, and that a path carries a sign.
 
@@ -35,15 +117,20 @@ corners; the other two are not.
 **T2 (the count is a closed form).** Call a naming of a path a choice of start corner
 together with an order of the four axes. Walking from the start corner and flipping the
 named axes one at a time produces a path with the profile (1,1,2,2,2), and every such
-path arises this way. There are 16 start corners and 24 axis orders, so 384 namings.
+path arises this way. A full-dimensional four-step cube-edge path must use four independent
+axes and therefore uses each axis once. In step-order coordinates its cumulative edge matrix
+is triangular with determinant plus or minus one, while exactly its six nonconsecutive corner
+pairs have distance greater than one, so it lies at adjacency cost 6. There are 16 start
+corners and 24 axis orders, so 384 namings.
 Each path is named exactly twice: once from each end. Hence there are 384 // 2 = 192
 paths, and
 
 > the 192 pieces that occur in cuttings are exactly the 192 staircase paths.
 
 Both set differences are empty. The other 208 floor pieces — the 16 of profile
-(1,1,1,1,4) and the 192 of profile (1,1,1,2,3) — occur in 0 cuttings. So 192 is not a
-search output at all: it is 16 times 24 divided by 2.
+(1,1,1,1,4) and the 192 of profile (1,1,1,2,3) — occur in 0 cuttings. Thus, once the
+exhaustive set identity is certified, its cardinality is independently 16 times 24 divided
+by 2 rather than only a raw census.
 
 ## 3. Simple transitivity and the naming swap
 
@@ -72,13 +159,14 @@ minus one to the weight of its flip. For the swap:
 
 * the permutation part is the order reversal of n letters, whose sign is minus one to the
   number of out-of-order pairs, that is minus one to n(n-1)/2;
-* the flip weight is **congruent to n modulo 2**, and this is the load-bearing step. The
-  flip must carry the start corner of the path to its end corner. Along each cycle of the
-  reversal permutation, a 0/1 vector changes value an even number of times, so the number
-  of coordinates in that cycle at which start and end disagree has the same parity as the
-  cycle length. Summing over cycles, the flip weight has the same parity as n. It is
-  **not** equal to n. On the four-cube object the 192 path holders have flip weights
-  0 on 48 of them, 2 on 96 and 4 on 48 — all even, as n = 4 requires, and not all 4.
+* the flip weight is **congruent to n modulo 2**, and this is the load-bearing step. In
+  bit-vector notation, if `v` is the old start and `P` reverses the axis order, then the
+  affine flip is `f = 1 xor v xor P(v)`: this is exactly the condition that the swap send
+  the old start to the old end `v xor 1`. Permutations preserve bit parity, so
+  `popcount(v xor P(v))` is even and `popcount(f) = n (mod 2)`. The flip weight is
+  **not** necessarily equal to n. On the four-cube object the 192 path holders have
+  flip weights 0 on 48 of them, 2 on 96 and 4 on 48 — all even, as n = 4 requires,
+  and not all 4.
 
 Multiplying, the determinant of the naming swap is minus one to n(n-1)/2 + n, that is
 
@@ -97,6 +185,13 @@ blind to the swap descends to a function of the *path*.
 **T5.** For a naming with start corner v0 and axis order sigma, set
 
 > label(v0, sigma) = sign(sigma) times (-1)^popcount(v0).
+
+This transformation law is algebraic, not inferred from its exhaustive check. A signed
+coordinate map `(P,f)` sends the naming `(v0,sigma)` to `(P(v0) xor f,P(sigma))`.
+Permutation signs multiply and `popcount(P(v0) xor f) = popcount(v0)+popcount(f) (mod 2)`,
+so the ratio of the two labels is `sign(P)*(-1)^popcount(f)`, exactly the determinant of
+the signed coordinate map. Reversing a naming multiplies the same expression by
+`(-1)^(n(n+1)/2)`, so at `n=4` the two endpoint namings give the same path label.
 
 Measured on the object: this is single valued on 192 of 192 paths — the two namings of a
 path always give the same value — and it takes the value +1 on 96 of the 192 paths. It is
@@ -141,20 +236,21 @@ into 74 orbits, and under the proper 192 into 119; both generated sets are verif
 closure. The full orbit sizes are 8 on 1 orbit, 24 on 4, 32 on 1, 48 on 7, 64 on 1, 96 on
 11, 192 on 24 and 384 on 25, and 25 of the 74 contain a cutting whose left count is not
 12. The 240 cuttings of extremal left count 8 or 16 form 14 proper orbits, of sizes 12 on
-8 orbits and 24 on 6 — all far below the group order 192. So the most one-sided cuttings
-are also the most symmetric ones.
+8 orbits and 24 on 6 — all far below the group order 192. Thus the most one-sided cuttings
+are highly symmetric, although they are not the globally smallest proper-group orbit.
 
 Across dimensions, closure gives group orders 4, 24, 192 and 1920 at n = 2, 3, 4 and 5,
 every element of determinant +1; the path counts are 4, 24, 192 and 1920; and the orbit
 sizes are 4:1, 12:2, 96:2 and 1920:1. The label exists — that is, the paths split into 2
 orbits under the proper half — exactly at n = 3 and n = 4 within the swept range, which is
 exactly where the swap determinant is +1. At n = 2 and n = 5 the proper half is already
-transitive on paths, and there is nothing to label.
+transitive on paths, so it has a single path orbit.
 
 ## 7. Boundary and honest auditor read
 
-What is derived here: the identification of the 192 pieces with the staircase paths, the
-closed form 16 times 24 divided by 2 for their count, the order-2 holder from simple
+What is established here: the exhaustive finite identification of the 192 used pieces with
+the staircase paths, the independent closed form 16 times 24 divided by 2 for the path count,
+the order-2 holder from simple
 transitivity, the determinant (-1)^(n(n+1)/2) of the naming swap from the flip-weight
 parity argument, the cocycle law over all 73728 pairs, and the 4-and-4 split of every
 cover from 192 times 4 = 768 = 96 times 8.
@@ -169,17 +265,17 @@ What is **measured, not derived**, stated plainly:
 
 That both are measured rather than derived is shown by a control, gate L16: replace the
 lowest-indexed piece of a cutting by the lowest-indexed piece it omits, and the left count
-comes out odd in 200 of 200 sampled cases and in 7900 of 15800 overall. So evenness is a
-property of being a cutting, not of being a 24-piece set of paths. The control is
+comes out odd in 200 of 200 sampled cases and in 7900 of 15800 overall. These are explicit
+24-path sets with odd left count; the control does not identify the structural reason that
+genuine cuttings obey evenness. The control is
 deliberately degenerate — all 200 sampled cases share the same replaced piece and the same
 replacement — and it is reported as a control, not as a statistic.
 
-The three corner statistics in gate L18 are **honest negatives at chance**: the parity of
+The three corner statistics in gate L18 are **control statistics at chance**: the parity of
 the total corner weight agrees with the label on 96 of 192 paths, the parity of the corner
 index sum on 96 of 192, and the sign of the determinant of the sorted corner matrix on 96
-of 192. Each is exactly chance. None of them is the label, and none is offered as
-evidence for it; they are recorded so that the label is not mistaken for a repackaging of
-a simpler corner statistic.
+of 192. Each agrees on 96 paths and disagrees on the other 96; they are controls, not
+evidence for the label, and distinguish it from each tested corner statistic on this finite set.
 
 The claim type is bounded_theorem because the derived part is a theorem about the cell
 object as rebuilt, while the two cutting-level facts above remain measurements. The
@@ -193,7 +289,8 @@ exact over the integers; no floating point enters any gate. The runner is
 `scripts/physical_cell_cutting_path_handedness_cycle779_2026_08_11.py`.
 
 * **L0** object anchor: 2672 unit pieces, cost floor 6, 400 at the floor, 15800 cuttings
-  of 24, 192 pieces each in 1975, 379200 slots, 192 covers of 8, 384 maps.
+  of 24, 192 pieces each in 1975, 379200 slots, 192 covers of 8, 384 maps; every
+  co-occurring simplex pair has an exact separating normal.
 * **L1** degree profiles at the floor: (1,1,1,1,4) 16, (1,1,1,2,3) 192, (1,1,2,2,2) 192,
   sum 400 of 400; all 2672 pieces show 9 profiles.
 * **L2** the identification: the 192 used pieces are exactly the 192 staircase paths, both
@@ -227,5 +324,5 @@ exact over the integers; no floating point enters any gate. The runner is
 * **L16** the control: odd left count in 200 of 200 sampled and 7900 of 15800 overall.
 * **L17** closure orders 4, 24, 192, 1920 at n = 2, 3, 4, 5, all of determinant +1; path
   counts 4, 24, 192, 1920; orbit sizes 4:1, 12:2, 96:2, 1920:1.
-* **L18** honest negatives at chance: corner weight parity 96, corner index sum parity 96,
+* **L18** control statistics at chance: corner weight parity 96, corner index sum parity 96,
   sorted corner determinant sign 96, each of 192.

@@ -5,7 +5,7 @@ cost floor, the 15800 cuttings of 24, the 192 pieces that occur in them, the 192
 the cover incidence. This cycle identifies those 192 pieces. Join two corners of a piece when they differ in exactly one coordinate: the
 400 floor pieces then carry three degree profiles, and the ones that occur in cuttings are exactly the 192 five-corner paths, each of which
 steps along every axis once. Naming a path by a start corner and an order of the four axes gives 16 times 24 = 384 namings, two per path,
-so 192 is a closed form and not the output of a search. The 384 maps act simply transitively on the namings, so every path is held by a
+so the path count has a closed form once the exhaustively checked used-piece/path-set identity is established. The 384 maps act simply transitively on the namings, so every path is held by a
 group of order 2 whose second element is the naming swap. In dimension n that swap is an order reversal together with a flip whose weight
 is congruent to n modulo 2, because along every cycle of the reversal a 0/1 vector changes value an even number of times; its determinant
 is therefore (-1)^(n(n+1)/2), plus at n = 3 and n = 4 and minus at n = 1, 2, 5 and 6. So at n = 4 the handedness label, the product of the
@@ -15,7 +15,7 @@ gives every cutting an even left count with mean 12.
 
 Gates: L0 object anchor, L1 degree profiles, L2 the identification, L3 to L5 namings and holders, L6 measured swap determinants in
 dimensions 1 to 6, L7 to L12 the label and its action on covers, L13 to L16 the cuttings, L17 the cross-dimension picture, L18 three
-honest negatives at chance. All work is exact over the integers, no floating point enters any gate. Output: one line per gate, a resource
+control statistics at chance. All work is exact over the integers, no floating point enters any gate. Output: one line per gate, a resource
 line, then the total line."""
 
 import itertools
@@ -24,6 +24,8 @@ import time
 import resource
 from fractions import Fraction as FR
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.time()
 OUT = [0]
@@ -193,6 +195,7 @@ for (v0, Ci, rows) in BARY:
     MASK.append(bits)
 
 UNIV = (1 << NPTS) - 1
+SAMPLE_HITS_ALL = all(m != 0 for m in MASK)
 
 # ------------------------------------------------------------------
 # 1c. the cuttings
@@ -233,6 +236,26 @@ USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
+
+# The off-facet sample makes the search complete for genuine cuttings. Certify
+# the converse independently: every pair that co-occurs in a selected cover is
+# weakly separated by a nonzero normal in {-1,0,1}^4. Full dimensionality makes
+# the interior separation strict, and 24 determinant-one simplex volumes sum to
+# the unit four-cube volume.
+CO_PAIRS = sorted(set(pair for cutting in CUT
+                      for pair in itertools.combinations(cutting, 2)))
+SEP_NORMALS = np.array(
+    [a for a in itertools.product((-1, 0, 1), repeat=4) if any(a)],
+    dtype=np.int64,
+)
+SEP_DOTS = np.dot(np.array(CORN, dtype=np.int64), SEP_NORMALS.T)
+PIECE_VERTICES = np.array([KEPT[USED[i]] for i in range(NPI)], dtype=np.int64)
+SEP_LO = SEP_DOTS[PIECE_VERTICES].min(axis=1)
+SEP_HI = SEP_DOTS[PIECE_VERTICES].max(axis=1)
+PAIR_SEPARATED = all(
+    bool(np.any((SEP_HI[i] <= SEP_LO[j]) | (SEP_HI[j] <= SEP_LO[i])))
+    for i, j in CO_PAIRS
+)
 
 # cuttings through each piece, as a bit set over cuttings
 PC = [0] * NPI
@@ -524,12 +547,14 @@ def anam(e, nm):
 SLOT = NS * 24
 gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and NS == 15800 and SIZES == [24]
      and NPI == 192 and PCSET == [1975] and SLOT == 379200 and NCOV == 192 and BRS == [8]
-     and NGRP == 384 and GENERIC and COVEXACT and KEEPS and COVKEEP and PBIJ and PDIST
-     and PIDOK and CBIJ and CDIST and len(ORBP) == 192 and len(ORBC) == 192, "L0",
-     "cell: {0} unit pieces, cost floor {1}, {2} at floor, {3} cuttings of {4}, {5} pieces"
-     " each in {6}, {7} slots, {8} covers of {9}, {10} maps"
+     and NGRP == 384 and GENERIC and SAMPLE_HITS_ALL and COVEXACT
+     and KEEPS and COVKEEP and PBIJ and PDIST
+     and PIDOK and CBIJ and CDIST and len(ORBP) == 192 and len(ORBC) == 192
+     and len(CO_PAIRS) == 15168 and PAIR_SEPARATED, "L0",
+     "cell: {0} unit; floor {1}={2}; sample hits all; {3} certified {4}-cuts; {5} pieces"
+     " x{6}; {8} covers x{9}; {10} maps; {11} pairs separated"
      .format(nd(NCAND), nd(FLOOR), nd(NKEPT), nd(NS), nd(SIZES[0]), nd(NPI), nd(PCSET[0]),
-             nd(SLOT), nd(NCOV), nd(BRS[0]), nd(NGRP)))
+             nd(SLOT), nd(NCOV), nd(BRS[0]), nd(NGRP), nd(len(CO_PAIRS))))
 
 
 def prof(S):
@@ -807,7 +832,7 @@ ECL = all(all(LC[k] in (8, 16) for k in range(NS) if PLBC[k] == o) for o in EOR)
 gate(len(EXT) == 240 and ECL and cens(EPR) == "12:8 24:6" and len(EOR) == 14
      and sum(PSZC[o] for o in EOR) == 240, "L15",
      "the {0} extremal cuttings form {1} proper orbits of sizes {2}, all far below order {3},"
-     " so one sided cuttings are the most symmetric"
+     " so one sided cuttings are highly symmetric"
      .format(nd(len(EXT)), nd(len(EOR)), cens(EPR), nd(CLP)))
 
 K16O = 0
@@ -829,9 +854,8 @@ for k in range(NS):
     if sum(1 for i in [m] + c[1:] if LABP[i] == 1) & 1:
         K16A += 1
 gate(K16O == 200 and K16A == 7900 and len(K16L) == 1 and len(K16R) == 1, "L16",
-     "swap lowest piece for lowest missing: odd left count in {0} of {1} sampled and {2} of {3}"
-     " overall, so the even law belongs to cuttings"
-     .format(nd(K16O), nd(200), nd(K16A), nd(NS)))
+     "lowest-piece swap: odd in {0}/{1} sampled and {2}/{3} overall; explicit odd {4}-path controls"
+     .format(nd(K16O), nd(200), nd(K16A), nd(NS), nd(24)))
 
 
 def dsc(m, n):
@@ -913,3 +937,5 @@ SECS = int(time.time() - T0)
 emit("resource: under {0} s of the {1} s budget, under {2} MB of the {3} MB budget, {4} gate characters"
      .format(nd(((SECS // 60) + 1) * 60), nd(900), nd(((PEAK // 250) + 1) * 250), nd(2500), nd(OUT[0])))
 emit("TOTAL: PASS={0} FAIL={1}".format(nd(STAT[0]), nd(STAT[1])))
+if STAT[1]:
+    raise SystemExit(1)

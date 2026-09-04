@@ -1,6 +1,7 @@
 """Physical cell cutting: the fold census, the fold-invariant global held set, its derived evenness, and the quotient enumeration.
 
-Standalone exact runner. Standard library only, no file input or output, no randomness, integer and exact rational arithmetic only.
+Standalone exact runner. Standard library only, no file input or output, no randomness, integer and exact rational arithmetic only. The
+shifted grid enumerates candidates; exact normalized volumes and exact integer separating hyperplanes certify the continuous cuttings.
 
 The preamble rebuilds the declared finite object from the 16 corners of the unit four-cube: the five-corner unit-determinant pieces, the
 adjacency cost floor, the kept pieces at that floor, the exact 24-piece cuttings, the used pieces, the order-384 group of signed coordinate
@@ -132,6 +133,7 @@ NSHIFT, OFFS, RSTEP = 16, (1, 2, 4, 8), 5
 DIV = NSHIFT * RSTEP
 AXVAL = [[NSHIFT * k + OFFS[i] for k in range(RSTEP)] for i in range(4)]
 NPTS = RSTEP ** 4
+GENERIC = True
 MASK = []
 for (v0, Ci) in BARY:
     off = [sum(Ci[i][c] * DIV * v0[c] for c in range(4)) for i in range(4)]
@@ -147,11 +149,14 @@ for (v0, Ci) in BARY:
                 for d in col[3]:
                     w = [s3[i] + d[i] for i in range(4)]
                     sw = sum(w)
+                    if any(x == 0 for x in w) or sw == DIV:
+                        GENERIC = False
                     if all(x > 0 for x in w) and sw < DIV:
                         bits |= (1 << idx)
                     idx += 1
     MASK.append(bits)
 UNIV = (1 << NPTS) - 1
+MASK_VISIBLE = len(MASK) == len(KEPT) and all(bits != 0 for bits in MASK)
 
 BYPT = [[] for _ in range(NPTS)]
 for t in range(len(KEPT)):
@@ -182,6 +187,29 @@ def cover_search(cov, chosen):
 
 cover_search(0, [])
 NS = len(SOLS)
+SOLS_UNIQUE = len(set(SOLS)) == NS
+
+
+def mask_search_certificate(masks, sols):
+    """Every emitted candidate is a unique, disjoint full shifted-mask cover."""
+    if len(masks) != len(KEPT) or any(bits == 0 for bits in masks):
+        return False
+    if len(sols) != 15800 or len(set(sols)) != len(sols):
+        return False
+    for sol in sols:
+        if len(sol) != 24 or len(set(sol)) != 24:
+            return False
+        cov = 0
+        for t in sol:
+            if t < 0 or t >= len(masks) or cov & masks[t]:
+                return False
+            cov |= masks[t]
+        if cov != UNIV:
+            return False
+    return True
+
+
+MASK_SEARCH_OK = mask_search_certificate(MASK, SOLS)
 USED = sorted(set(t for s in SOLS for t in s))
 NU = len(USED)
 SIDX = {frozenset(s): i for i, s in enumerate(SOLS)}
@@ -190,6 +218,42 @@ CSET = [frozenset(s) for s in SOLS]
 PSIZE = len(set(len(s) for s in SOLS))
 CSIZE = sorted(set(len(s) for s in SOLS))[0]
 NK = len(KEPT)
+
+
+def piece_det_num(S):
+    v0 = CORN[S[0]]
+    return abs(det4([[CORN[S[j + 1]][r] - v0[r] for j in range(4)]
+                     for r in range(4)]))
+
+
+KEPT_DET = [piece_det_num(S) for S in KEPT]
+CO_PAIRS = sorted(set(pair for sol in SOLS
+                      for pair in itertools.combinations(sol, 2)))
+SEP_NORMALS = [a for a in itertools.product((-1, 0, 1), repeat=4) if any(a)]
+SEP_DOTS = [[sum(CORN[v][r] * a[r] for r in range(4)) for v in range(16)]
+            for a in SEP_NORMALS]
+
+
+def pair_is_separated(i, j):
+    A, B = KEPT[i], KEPT[j]
+    for dots in SEP_DOTS:
+        if (max(dots[v] for v in A) <= min(dots[v] for v in B)
+                or max(dots[v] for v in B) <= min(dots[v] for v in A)):
+            return True
+    return False
+
+
+PAIR_SEPARATED = all(pair_is_separated(i, j) for i, j in CO_PAIRS)
+
+
+def continuous_cut_certificate(detnums, separated):
+    """Certify pairwise-disjoint interiors and full normalized volume."""
+    return (len(detnums) == NK and all(x == 1 for x in detnums)
+            and all(sum(detnums[t] for t in sol) == 24 for sol in SOLS)
+            and len(CO_PAIRS) == 15168 and len(SEP_NORMALS) == 80 and separated)
+
+
+CONTINUOUS_CUT_OK = continuous_cut_certificate(KEPT_DET, PAIR_SEPARATED)
 
 P4 = list(itertools.permutations(range(4)))
 G384 = [(p, m) for p in P4 for m in range(16)]
@@ -280,20 +344,23 @@ def cycen(img, pos, dom):
 
 # ================================================================ G1 the declared object and the composition rule
 
-IDXA = (0, 5, 17, 33, 64, 97, 128, 150, 191, 200, 233, 255, 260, 288, 300, 319, 340, 355, 370, 383)
-IDXB = (383, 370, 355, 340, 319, 300, 288, 260, 255, 233, 200, 191, 150, 128, 97, 64, 33, 17, 5, 0)
 CBAD = 0
-for i in range(len(IDXA)):
-    ca, cb = G384[IDXA[i]], G384[IDXB[i]]
-    cc = compose(ca, cb)
-    for v in range(len(CORN)):
-        if actcorner(cc, v) != actcorner(ca, actcorner(cb, v)):
+for ca in G384:
+    for cb in G384:
+        cc = compose(ca, cb)
+        if any(actcorner(cc, v) != actcorner(ca, actcorner(cb, v))
+               for v in range(len(CORN))):
             CBAD += 1
 
-gate(len(CAND) == 2672 and FLOOR == 6 and NK == 400 and NS == 15800 and PSIZE == 1 and CSIZE == 24 and NU == 192
-     and len(G384) == 384 and len(STAB) == 96 and PBAD == 0 and CBAD == 0 and len(IDXA) == 20, "G1",
+gate(len(CAND) == 2672 and FLOOR == 6 and NK == 400 and NS == 15800 and SOLS_UNIQUE
+     and MASK_SEARCH_OK and PSIZE == 1 and CSIZE == 24 and NU == 192
+     and len(G384) == 384 and len(STAB) == 96 and PBAD == 0 and CBAD == 0, "G1",
      "{0} pieces, floor {1}, {2} kept, {3} cuttings of {4}, {5} used, cell group {6}, slot subgroup {7}, {8} composition pairs clean"
-     .format(len(CAND), FLOOR, NK, NS, CSIZE, NU, len(G384), len(STAB), len(IDXA)))
+     .format(len(CAND), FLOOR, NK, NS, CSIZE, NU, len(G384), len(STAB), len(G384) ** 2))
+
+gate(GENERIC and MASK_VISIBLE and CONTINUOUS_CUT_OK, "G1C",
+     "generic visible grid; continuous cuts: {0} unit determinants, {1} total-volume covers, {2} co-pairs separated by {3} integer normals"
+     .format(NK, NS, len(CO_PAIRS), len(SEP_NORMALS)))
 
 # ================================================================ G2 the alphabet and the wall
 

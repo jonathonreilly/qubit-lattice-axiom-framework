@@ -235,9 +235,8 @@ single `z=3+4i` fixture has branch probability `5/9`, completion probability
 The trace-to-probability interpretation in that fixture comes from the
 separately supplied instrument semantics. The general algebraic identity
 supplies only branch blocks and their traces. Current Record supplies neither
-a trace/Born law nor finite additivity. A separate provisional Record-law
-source proposal is not a dependency and is not yet effective retained
-science.
+a trace/Born law nor finite additivity. No Record source is used here as a
+dependency for either law.
 
 Finally, `|z|^2 sigma_1` is only a squared-modulus branch factor. Showing that
 the actual charged-lepton determinant is this amplitude, and showing that its
@@ -292,8 +291,9 @@ probability/normalization, and event-partition/calibration inputs.
 | probability and normalization | determinant-dependent calibration such as `1/|z|` away from zero | derive the dependence, its domain at zero, and its physical meaning |
 
 These are constructive targets, not a complete classification. The runner
-checks only the positive-ray, square-root, amplitude, and two displayed
-calibration mechanisms.
+checks the positive-ray, square-root, scalar-amplitude, variable-modulus,
+determinant-dependent-calibration, and two coarse-calibration mechanisms; the
+other routes remain explicit analytic or physical boundary cases.
 
 ## 6. AC occupancy consequence
 

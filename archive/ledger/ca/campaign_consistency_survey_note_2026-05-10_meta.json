@@ -1,0 +1,17 @@
+{
+ "id": "campaign_consistency_survey_note_2026-05-10_meta",
+ "title": "CAMPAIGN_CONSISTENCY_SURVEY_NOTE_2026-05-10_meta",
+ "science": "B11: meta cross-PR consistency survey of the 05-08..05-10 rounds (~50 proposals); found no contradictions; its content is a point-in-time survey carried by the per-note trails and the ledger.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/CAMPAIGN_CONSISTENCY_SURVEY_NOTE_2026-05-10_meta.md",
+  "moved_to": "archive/notes/docs/CAMPAIGN_CONSISTENCY_SURVEY_NOTE_2026-05-10_meta.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

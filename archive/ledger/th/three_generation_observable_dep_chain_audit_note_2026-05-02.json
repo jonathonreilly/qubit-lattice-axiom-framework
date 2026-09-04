@@ -1,0 +1,17 @@
+{
+ "id": "three_generation_observable_dep_chain_audit_note_2026-05-02",
+ "title": "THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02",
+ "science": "Self-retired dep-chain snapshot (retirement notice 05-27): the blocker it documented was resolved two independent ways; the note itself names the current resolution surfaces.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md",
+  "moved_to": "archive/notes/docs/THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md + docs/GENERATION_AXIOM_BOUNDARY_NOTE.md + the audit ledger rows the retirement table lists",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

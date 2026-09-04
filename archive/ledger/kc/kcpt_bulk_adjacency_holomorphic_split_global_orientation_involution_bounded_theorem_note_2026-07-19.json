@@ -1,0 +1,18 @@
+{
+ "id": "kcpt_bulk_adjacency_holomorphic_split_global_orientation_involution_bounded_theorem_note_2026-07-19",
+ "title": "KCPT_BULK_ADJACENCY_HOLOMORPHIC_SPLIT_GLOBAL_ORIENTATION_INVOLUTION_BOUNDED_THEOREM_NOTE_2026-07-19",
+ "science": "Holomorphic split of the bulk adjacency on the L=4 staggered surface: W=64 splits 28+28+8 under J_full with the massless kernel 8-dimensional, the global orientation involution K exchanges the two 28s, and the D2 spectrum on the paired blocks is +-2i sqrt(m) - the geometric stage every later census note builds on. July K-CPT Dirac commutant/census-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/KCPT_BULK_ADJACENCY_HOLOMORPHIC_SPLIT_GLOBAL_ORIENTATION_INVOLUTION_BOUNDED_THEOREM_NOTE_2026-07-19.md",
+  "moved_to": "archive/notes/docs/KCPT_BULK_ADJACENCY_HOLOMORPHIC_SPLIT_GLOBAL_ORIENTATION_INVOLUTION_BOUNDED_THEOREM_NOTE_2026-07-19.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-kcpt-dirac-era.md (July K-CPT Dirac commutant/census era (D-kcpt) \u2014 lane memo); carrier: archive/chains/july-kcpt-dirac-era.md (drafted: phase3/memos/D-kcpt.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-kcpt"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_w1_sign_magnitude_split_support_note_2026-06-21",
+ "title": "QUARK_ROUTE2_W1_SIGN_MAGNITUDE_SPLIT_SUPPORT_NOTE_2026-06-21",
+ "science": "B02 c2: sign of c_TE follows from granted T-side orientation on the positive branch; W1 magnitude |c_TE|=8/9 is the open content. PASS=39 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_W1_SIGN_MAGNITUDE_SPLIT_SUPPORT_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_W1_SIGN_MAGNITUDE_SPLIT_SUPPORT_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: K1 atlas sign-discharge paragraph (this is the SAME content as RCONN_MAGNITUDE_SIGN_SPLIT from b01 - in-corpus duplicate)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

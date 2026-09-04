@@ -1,0 +1,14 @@
+=== Wilson-Dirac overlap  L=8 m_rho=1.0 a=1.0 r=1.0 ===
+  gauge check n=1: plaq-angle spread=3.33e-16  total flux/2pi=1.000000
+  n     g5herm      GWviol  |aD|max   minSV(A)    index_tr  nzero  n+  n-
+  0   0.00e+00   2.667e-15    1.491  1.000e+00    0.000000      2   1   1
+  1   0.00e+00   4.895e-15    1.507  9.505e-01   -1.000000      1   0   1
+  2   0.00e+00   4.457e-15    1.523  9.004e-01   -2.000000      2   0   2
+  3   0.00e+00   3.112e-15    1.538  8.487e-01   -3.000000      3   0   3
+=== Wilson-Dirac overlap  L=10 m_rho=1.0 a=1.0 r=1.0 ===
+  gauge check n=1: plaq-angle spread=2.91e-16  total flux/2pi=1.000000
+  n     g5herm      GWviol  |aD|max   minSV(A)    index_tr  nzero  n+  n-
+  0   0.00e+00   2.235e-15    1.491  1.000e+00    0.000000      2   1   1
+  1   0.00e+00   4.444e-15    1.501  9.684e-01   -1.000000      1   0   1
+  2   0.00e+00   5.329e-15    1.511  9.365e-01   -2.000000      2   0   2
+  3   0.00e+00   5.775e-15    1.521  9.041e-01   -3.000000      3   0   3

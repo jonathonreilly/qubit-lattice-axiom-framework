@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_endpoint_t_balance_fd_provenance_and_step_stability_bounded_note_2026-06-11",
+ "title": "QUARK_ROUTE2_ENDPOINT_T_BALANCE_FD_PROVENANCE_AND_STEP_STABILITY_BOUNDED_NOTE_2026-06-11",
+ "science": "B01 c2: P1 the live 12-digit endpoint constants are step-0.005 central-FD values (worst residual 3.6e-13); P2 t_balance-1 ~ 3e-5 near-miss is STEP-STABLE (band [1.0000260,1.0000319], Richardson included; excludes the O(eps^2) truncation explanation by >6x window spread); P3 noise floor ~1e-4 below e",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_ENDPOINT_T_BALANCE_FD_PROVENANCE_AND_STEP_STABILITY_BOUNDED_NOTE_2026-06-11.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_ENDPOINT_T_BALANCE_FD_PROVENANCE_AND_STEP_STABILITY_BOUNDED_NOTE_2026-06-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: QUARK_ROUTE2_ENDPOINT_STEP_FREE_ACTIVE_BRANCH_SLOPES_BOUNDED_NOTE_2026-06-12 (RESCUE-FRONT, see row below) + archive group record carries P1/P2/P3",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

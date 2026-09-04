@@ -1,0 +1,64 @@
+==============================================================================
+TASK 2 (control): 2-component Wilson-Dirac fibre, gammas = (s1,s2), chir = s3
+--- WilsonDirac f=2  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   0.00e+00   2.667e-15  1.000e+00    0.000000      2   1   1
+  1   0.00e+00   4.895e-15  9.505e-01   -1.000000      1   0   1
+  2   0.00e+00   4.457e-15  9.004e-01   -2.000000      2   0   2
+  3   0.00e+00   3.112e-15  8.487e-01   -3.000000      3   0   3
+    dim=128  Tr(chirality)=0.000e+00
+
+==============================================================================
+TASK 3: Kahler-Dirac fibre d=2, f=4, real Gammas, G=diag((-1)^k)
+  max|Im Gamma| = 0.0e+00  (Gammas are REAL)
+--- KahlerDirac f=4 REAL  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   0.00e+00   5.773e-15  1.000e+00   -0.000000      4   2   2
+  1   0.00e+00   4.441e-15  9.505e-01   -0.000000      2   1   1
+  2   0.00e+00   7.553e-15  9.004e-01   -0.000000      4   2   2
+  3   0.00e+00   4.006e-15  8.487e-01    0.000000      6   3   3
+    dim=256  Tr(chirality)=0.000e+00
+
+==============================================================================
+TASK 4a: similarity transform S in U(2)xU(2) (commutes with G): Gam->S Gam S^-1, G->S G S^-1
+  S unitary err = 4.4e-16   [S,G] = 0.0e+00
+  Clifford preserved: 5.0e-16
+  {G,Gam'} = 4.7e-16   G unchanged: 4.4e-16
+  max|Im Gamma'| = 0.7139  (NO LONGER REAL)
+  max|Re Gamma'| = 0.7635
+--- KahlerDirac f=4 COMPLEXIFIED (unitary conj)  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   1.78e-15   5.329e-15  1.000e+00    0.000000      4   2   2
+  1   1.78e-15   5.332e-15  9.505e-01    0.000000      2   1   1
+  2   1.78e-15   6.662e-15  9.004e-01    0.000000      4   2   2
+  3   1.78e-15   6.219e-15  8.487e-01    0.000000      6   3   3
+    dim=256  Tr(chirality)=2.842e-14
+
+==============================================================================
+TASK 4a-neg (control that CAN fail): S generic in U(4), does NOT commute with G
+  Clifford still ok: 7.9e-16
+  but {G, Gam'} with UNTRANSFORMED G = 1.5772  -> no chirality, no index theorem
+  forcing it anyway at n=1: chir-herm viol=7.886e-01  GW viol=5.139e-01  index=0.156126  <- MEANINGLESS
+
+==============================================================================
+TASK 4b (the test that CAN fail): project onto ONE taste. T = Gbar_1 Gbar_2, T^2=-1
+
+  [T=+i] fibre dim 2  Clifford err=8.9e-16  {C,Gam}=0.0e+00  C^2-I=4.4e-16  Tr C=0.0e+00
+       max|Im Gamma_taste| = 1.0000   (must be nonzero: no real 2d option)
+--- KD single taste T=+i  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   8.88e-16   3.110e-15  1.000e+00    0.000000      2   1   1
+  1   8.88e-16   3.121e-15  9.505e-01   -1.000000      1   0   1
+  2   8.88e-16   3.564e-15  9.004e-01   -2.000000      2   0   2
+  3   8.88e-16   4.000e-15  8.487e-01   -3.000000      3   0   3
+    dim=128  Tr(chirality)=0.000e+00
+
+  [T=-i] fibre dim 2  Clifford err=8.9e-16  {C,Gam}=0.0e+00  C^2-I=4.4e-16  Tr C=0.0e+00
+       max|Im Gamma_taste| = 1.0000   (must be nonzero: no real 2d option)
+--- KD single taste T=-i  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   8.88e-16   2.225e-15  1.000e+00   -0.000000      2   1   1
+  1   8.88e-16   4.005e-15  9.505e-01    1.000000      1   1   0
+  2   8.88e-16   4.445e-15  9.004e-01    2.000000      2   2   0
+  3   8.88e-16   4.441e-15  8.487e-01    3.000000      3   3   0
+    dim=128  Tr(chirality)=0.000e+00

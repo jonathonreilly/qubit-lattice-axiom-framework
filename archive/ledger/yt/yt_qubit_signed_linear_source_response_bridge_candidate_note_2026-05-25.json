@@ -1,0 +1,17 @@
+{
+ "id": "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25",
+ "title": "YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25",
+ "science": "B03: split-path repair honored; axiom-first fork stated honestly (bare locality selects nothing). Full read.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md",
+  "moved_to": "archive/notes/docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: P-cal/YT group record (the 1/6 projective weight vs 1/sqrt(6) signed-linear tangent distinction - the fork the tangent-space chain resolved)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

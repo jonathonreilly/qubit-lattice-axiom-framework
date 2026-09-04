@@ -1,0 +1,17 @@
+{
+ "id": "dm_wilson_direct_descendant_constructive_transport_plateau_schur_spectral_isotropy_selector_note_2026-04-19",
+ "title": "DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_SCHUR_SPECTRAL_ISOTROPY_SELECTOR_NOTE_2026-04-19",
+ "science": "Intermediate positive candidate subsumed by the J_iso derivation note, which restates its witness-set majorization theorem (W1 majorized by W0/W2/W3, all Schur-concave laws agree) and then proves the whole family loses W1 beyond the certified witnesses. The plateau-breaker hope this note carried is",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_SCHUR_SPECTRAL_ISOTROPY_SELECTOR_NOTE_2026-04-19.md",
+  "moved_to": "archive/notes/docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_SCHUR_SPECTRAL_ISOTROPY_SELECTOR_NOTE_2026-04-19.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

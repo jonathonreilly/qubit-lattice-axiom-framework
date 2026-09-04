@@ -1,0 +1,18 @@
+{
+ "id": "c1b_degeneracy_locus_partition_totality_bounded_note_2026-07-02",
+ "title": "C1B_DEGENERACY_LOCUS_PARTITION_TOTALITY_BOUNDED_NOTE_2026-07-02",
+ "science": "The C1b attack: at law-admissible degeneracy loci (delta = m pi/3 exactly), the fine S3 spectral partition is not recoverable from Y alone (the rotated split also diagonalizes; per-cell contents (1,0) vs (1/2,1/2)); the three-horn provenance collapse; conditional on the named premise D-totality (rule well-defined at every law-admissible state), C1b holds ON THE FINITE hw=1 CIRCULANT SURFACE ONLY (the note's own no-all-models firewall; nonzero b assumed) - with the pointwise escape honestly standing without it. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/C1B_DEGENERACY_LOCUS_PARTITION_TOTALITY_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/C1B_DEGENERACY_LOCUS_PARTITION_TOTALITY_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-frame-weighting-era.md (July frame/weighting/readout era (D-frame) \u2014 lane memo); carrier: archive/chains/july-frame-weighting-era.md (drafted: phase3/memos/D-frame.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-frame"
+}

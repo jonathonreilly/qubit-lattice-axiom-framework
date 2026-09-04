@@ -1,0 +1,17 @@
+{
+ "id": "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
+ "title": "GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19",
+ "science": "Decoration row whose 2026-05-24 narrowing reduced its load-bearing claim to the alpha0 = m1, beta1^2 = m2 - m1^2 equivalence \u2014 an identity the kept parent packet theorem also states and verifies on the same realized packet. The historical earliest-feeding-DM-boundary framing is explicitly non-load-b",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md",
+  "moved_to": "archive/notes/docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PACKET_THEOREM_NOTE_2026-04-19.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

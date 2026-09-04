@@ -1,0 +1,17 @@
+{
+ "id": "work_history.repo.dm_lane_weave_triage_2026-05-03",
+ "title": "DM_LANE_WEAVE_TRIAGE_2026-05-03",
+ "science": "Executed governance triage of the 63 unwoven DM_* notes: its per-subfamily status inventory transcribes note headers (reproducible from the notes), and its load-bearing recommendation (single batch-authority pointer instead of 16 atlas rows) was executed by the batch authority note via PR #472. Deci",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/DM_LANE_WEAVE_TRIAGE_2026-05-03.md",
+  "moved_to": "archive/notes/docs/work_history/repo/DM_LANE_WEAVE_TRIAGE_2026-05-03.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/DM_WILSON_DIRECT_DESCENDANT_BATCH_AUTHORITY_NOTE_2026-05-03.md (recommendation 2 executed; atlas row structure carries the decision)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "session_summary_2026-04-01_dimensional",
+ "title": "SESSION_SUMMARY_2026-04-01_DIMENSIONAL",
+ "science": "Historic session narrative (3D/4D/5D extension + distance-scaling closure); the science is carried by the named per-avenue analyses/derivations and scripts, all verified on disk.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SESSION_SUMMARY_2026-04-01_DIMENSIONAL.md",
+  "moved_to": "archive/notes/docs/SESSION_SUMMARY_2026-04-01_DIMENSIONAL.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: .claude/science/analyses/three-d-gravity-2026-04-01.md + .claude/science/analyses/dimensional-progression-2026-04-01.md + .claude/science/derivations/b-independ",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

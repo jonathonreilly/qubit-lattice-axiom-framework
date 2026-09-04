@@ -1,0 +1,37 @@
+[
+ {
+  "claim": "docs/KCPT_COUPLING_TRIPLE_BEREZIN_COUNT_BINARY_MEASURE_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+  "kind": "appended",
+  "text": " FRONT LINK (carried): this note names the standing FRONT AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN obligation, quotes its live closure criterion (derive the physical matter action and measure, then distinguish det_C from |det_C|^2), and constrains it: the quadratic Berezin integral under the pinned measure is exactly det M ((-1)^n det M reversed); horn m uses 6m generators; constant homogeneous held-measure substitutions act only by det S; the coupling-dependent A(W)=W route converts det3 to det3^2; nonlinear/Berezinian routes remain open."
+ },
+ {
+  "claim": "docs/KCPT_CORNER_CARRIER_TWO_PRESENTATION_SWAP_PROPER_ROTATION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+  "kind": "appended",
+  "text": " DEPENDENCIES (carried): this note's own Dependencies list names two non-KCPT load-bearing inputs - MINIMAL_AXIOMS_2026-06-29.md (proper cubic rotation group; admissibility covariance) and STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md (the operator surface); the lane-wide 'no non-KCPT dependency' reading is false for this note."
+ },
+ {
+  "claim": "docs/KCPT_D2_COMMUTANT_CLOSED_FORM_LIFTS_AND_LATTICE_SIZE_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "kind": "appended",
+  "text": " SCOPE (carried): |Comm| = 96N equality is proven for the exhaustive L in {4,6,8,10} ONLY; at L=12 the note proves |Comm(D2)| >= 96N = 165888 and states equality is NOT established; the general even-L results cover the translation lifts, commutator, and q formulas."
+ },
+ {
+  "claim": "docs/KCPT_D2_COMMUTANT_EXTENSION_TRANSLATION_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "kind": "appended",
+  "text": " SCOPE (carried): the splits/non-split dichotomy is for the tested family {B3, O, A4, D3, T, T_even, T_even:A4} only - the cyclic translation subgroup <e_x> SPLITS (order-L lift, -I-free section); non-splitness does not propagate to every translation subgroup. beta is the unique nontrivial B3-invariant alternating bimultiplicative COMMUTATOR FORM on T/2T among 512 bilinear forms - not a full H^2(T:B3,Z2) extension-class or mixed-data classification."
+ },
+ {
+  "claim": "docs/KCPT_D2_GRADED_SIGNED_PERMUTATION_COMMUTANT_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "kind": "appended",
+  "text": " STATUS (carried): the finite-surface characterization is DELIVERED exhaustively at L=4 and L=6 (|Comm| = 6144/20736; the Z2-graded GC of order 2|Comm|; H and <H,g_r4> located) - the open items are the general-L scaling law and the full reach census over Comm minus H, not the finite-surface group itself."
+ },
+ {
+  "claim": "docs/KCPT_DIRAC_EVEN_ALGEBRA_REACH_CHARACTER_CP_CHARGE_BOUNDED_THEOREM_NOTE_2026-07-21.md",
+  "kind": "appended",
+  "text": " PRECISION (carried): the two missing directions are of different kinds - one character projector separates the CP-split pair {12+,12-} on shell -4 (a CP charge), the other separates the two induced-12 constituents on shell -8 (not a CP charge); 'the two missing CP charges' erases this two-degeneracy classification."
+ },
+ {
+  "claim": "docs/KCPT_L6_IND8_SEPARATOR_REACH_CENSUS_SURFACE_COMPARISON_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "kind": "appended",
+  "text": " SURFACE CHANGE (carried): the L=4 set equality {Delta-chi != 0} = {omega=1/3} FAILS at L=6, becoming proper containment (witness: a size-12 orbit with omega=1/3 and Delta-chi=0); the maximal-reach unlock retains sep = e_a - e_b while its closure grows from dimension/center 28/7 to 68/17 with rank-8 minimal idempotents. The row's 'character equality forces proper containment' reversed this; corrected here."
+ }
+]

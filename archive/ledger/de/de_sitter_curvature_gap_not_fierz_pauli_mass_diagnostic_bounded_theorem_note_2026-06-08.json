@@ -1,0 +1,17 @@
+{
+ "id": "de_sitter_curvature_gap_not_fierz_pauli_mass_diagnostic_bounded_theorem_note_2026-06-08",
+ "title": "DE_SITTER_CURVATURE_GAP_NOT_FIERZ_PAULI_MASS_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08",
+ "science": "B05 c3: clean diagnostic distinction - a 1/R curvature gap vanishes in the flat limit, so it is not a scale-independent FP mass; sub-Hubble Yukawa indistinguishable from 1/r. Carrier: gravity-lane group record + the spectral-gap identity note holds the identity. PASS=4.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/DE_SITTER_CURVATURE_GAP_NOT_FIERZ_PAULI_MASS_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "moved_to": "archive/notes/docs/DE_SITTER_CURVATURE_GAP_NOT_FIERZ_PAULI_MASS_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

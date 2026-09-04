@@ -1,0 +1,17 @@
+PRE-REGISTERED before running (T243).
+
+R161: rho = |psi><psi| is gauge invariant, so it cannot see the photon.  The
+field strength can.  For a gauge field of mass m_A,
+      <F F>(k) ~ k^2/(k^2 + m_A^2)
+so  S_F(k) -> 0  as k -> 0  (Meissner: long-wavelength field strength expelled)
+and S_F/khat^2 -> 1/m_A^2, a CONSTANT.
+For a MASSLESS gauge field S_F -> const, so S_F/khat^2 DIVERGES as k -> 0.
+
+PREDICTION, at the Born point in the ORDERED phase:
+  the condensate Higgses the local U(1), so
+      S_F(k) falls toward 0 as k -> 0, and S_F/khat^2 is FLAT,
+  giving a finite photon mass m_A^2 > 0.  That would confirm the Higgs reading
+  of R160/R161, fix N = 6, and settle R152/R159 at G = 2 pi tau0.
+
+CONTROL: at small t there is no condensate, hence no Higgs mechanism, so the
+behaviour must differ.  If both look the same the observable has no power.

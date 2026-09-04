@@ -1,0 +1,17 @@
+{
+ "id": "yt_source_measure_tier_a_source_unit_boundary_note_2026-05-30",
+ "title": "YT_SOURCE_MEASURE_TIER_A_SOURCE_UNIT_BOUNDARY_NOTE_2026-05-30",
+ "science": "B03: honest conditional assembly; explicitly not the old Ward/H_unit trap. Full read.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/YT_SOURCE_MEASURE_TIER_A_SOURCE_UNIT_BOUNDARY_NOTE_2026-05-30.md",
+  "moved_to": "archive/notes/docs/YT_SOURCE_MEASURE_TIER_A_SOURCE_UNIT_BOUNDARY_NOTE_2026-05-30.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: P-cal/YT group record (the shortest-honest-chain assembly: democratic S6 lemma + RN/Fisher coordinate under open P-cal => lambda=1, y_33=1/sqrt(6); lists the 7 ",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

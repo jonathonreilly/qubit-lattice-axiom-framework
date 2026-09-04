@@ -1,0 +1,18 @@
+{
+ "id": "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02",
+ "title": "READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02",
+ "science": "The final reading-note shards derived: 'answer' typing (one verdict object per in-domain state; set/distribution-valued verdicts are one answer absent registered individuation), 'condition' as a state predicate including record absence, MOTION CLOSURE of lawful domains from the two distinction clauses (equivariance prong + anchored-selection contrapositive, with the surface-relative escape named), and extensional domain judgment as an interface ceiling - the semantic floor of the law-discipline sentence. July meta/process-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. GRADE (carried): the primary's own classification is 'theorem, bounded theorem, or procedure-classification content' - extensional domain judgment is expressly 'one step softer' (interface/parsimony ceiling) and residual audit practice is procedure; not a uniform axiom-text-theorem set. T2 boundary (carried): record ABSENCE is allowed in the condition predicate; domain-condition evaluation is not a readout.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-meta-process-era.md (July meta/process era + small singletons (D-meta) \u2014 lane memo); carrier: archive/chains/july-meta-process-era.md (drafted: phase3/memos/D-meta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-meta"
+}

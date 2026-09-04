@@ -1,0 +1,51 @@
+3B/dS_Regge under fit-model / range variation (L=64, eps=0.05, n=1):
+  traceless
+    raw  s=[ 6,32] deg2 A pinned  3B/dS =  0.99749
+    raw  s=[ 6,32] deg2 A free    3B/dS =  1.00269
+    raw  s=[ 6,32] deg3 A free    3B/dS =  1.02530
+    raw  s=[ 8,50] deg2 A pinned  3B/dS =  0.99776
+    raw  s=[ 8,50] deg2 A free    3B/dS =  0.99607
+    raw  s=[ 8,50] deg3 A free    3B/dS =  0.99598
+    raw  s=[10,64] deg2 A pinned  3B/dS =  0.99828
+    raw  s=[10,64] deg2 A free    3B/dS =  0.99856
+    raw  s=[10,64] deg3 A free    3B/dS =  0.99074
+    raw  s=[13,64] deg2 A pinned  3B/dS =  0.99822
+    raw  s=[13,64] deg2 A free    3B/dS =  0.99928
+    raw  s=[13,64] deg3 A free    3B/dS =  0.98960
+    LDA  s=[ 6,32] deg2 A pinned  3B/dS =  0.99725
+    LDA  s=[ 6,32] deg2 A free    3B/dS =  0.99278
+    LDA  s=[ 6,32] deg3 A free    3B/dS =  0.98439
+    LDA  s=[ 8,50] deg2 A pinned  3B/dS =  0.99673
+    LDA  s=[ 8,50] deg2 A free    3B/dS =  0.99607
+    LDA  s=[ 8,50] deg3 A free    3B/dS =  0.99346
+    LDA  s=[10,64] deg2 A pinned  3B/dS =  0.99653
+    LDA  s=[10,64] deg2 A free    3B/dS =  0.99631
+    LDA  s=[10,64] deg3 A free    3B/dS =  0.99677
+    LDA  s=[13,64] deg2 A pinned  3B/dS =  0.99650
+    LDA  s=[13,64] deg2 A free    3B/dS =  0.99646
+    LDA  s=[13,64] deg3 A free    3B/dS =  0.99801
+  conformal
+    raw  s=[ 6,32] deg2 A pinned  3B/dS =  1.40901
+    raw  s=[ 6,32] deg2 A free    3B/dS =  0.40350
+    raw  s=[ 6,32] deg3 A free    3B/dS = -0.59402
+    raw  s=[ 8,50] deg2 A pinned  3B/dS =  1.19980
+    raw  s=[ 8,50] deg2 A free    3B/dS =  0.81589
+    raw  s=[ 8,50] deg3 A free    3B/dS =  0.47166
+    raw  s=[10,64] deg2 A pinned  3B/dS =  1.13932
+    raw  s=[10,64] deg2 A free    3B/dS =  0.93555
+    raw  s=[10,64] deg3 A free    3B/dS =  0.73819
+    raw  s=[13,64] deg2 A pinned  3B/dS =  1.12373
+    raw  s=[13,64] deg2 A free    3B/dS =  0.97345
+    raw  s=[13,64] deg3 A free    3B/dS =  0.83171
+    LDA  s=[ 6,32] deg2 A pinned  3B/dS =  1.15324
+    LDA  s=[ 6,32] deg2 A free    3B/dS =  1.01429
+    LDA  s=[ 6,32] deg3 A free    3B/dS =  1.00663
+    LDA  s=[ 8,50] deg2 A pinned  3B/dS =  1.11220
+    LDA  s=[ 8,50] deg2 A free    3B/dS =  1.02526
+    LDA  s=[ 8,50] deg3 A free    3B/dS =  1.00501
+    LDA  s=[10,64] deg2 A pinned  3B/dS =  1.09715
+    LDA  s=[10,64] deg2 A free    3B/dS =  1.03861
+    LDA  s=[10,64] deg3 A free    3B/dS =  1.00418
+    LDA  s=[13,64] deg2 A pinned  3B/dS =  1.09336
+    LDA  s=[13,64] deg2 A free    3B/dS =  1.04257
+    LDA  s=[13,64] deg3 A free    3B/dS =  1.00390

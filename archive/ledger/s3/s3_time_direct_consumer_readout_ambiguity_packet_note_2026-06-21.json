@@ -1,0 +1,17 @@
+{
+ "id": "s3_time_direct_consumer_readout_ambiguity_packet_note_2026-06-21",
+ "title": "S3_TIME_DIRECT_CONSUMER_READOUT_AMBIGUITY_PACKET_NOTE_2026-06-21",
+ "science": "B01 c3: same delta_E split restated consumer-by-consumer (theta parent e_center_sensitive_open_gate; factor-rigidity rho-independent; bridge-assessment membership-not-selector; chain p2_readout_map_open). PASS=35 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/S3_TIME_DIRECT_CONSUMER_READOUT_AMBIGUITY_PACKET_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/S3_TIME_DIRECT_CONSUMER_READOUT_AMBIGUITY_PACKET_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: same trio group entry (rank-1 ambiguity along time trajectory; consumer split table)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

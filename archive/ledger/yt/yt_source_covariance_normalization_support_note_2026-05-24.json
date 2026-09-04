@@ -1,0 +1,17 @@
+{
+ "id": "yt_source_covariance_normalization_support_note_2026-05-24",
+ "title": "YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24",
+ "science": "B03: exact finite-support Schwinger-Dyson/Feynman-Hellmann covariance identity; scope-honest. PASS=33 FAIL=0 (confirmed stable by its hygiene companion).",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
+  "moved_to": "archive/notes/docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: P-cal/YT group record (chain member: C_ss(x,y;h) = Cov_h(epsilon_x,epsilon_y) fixed by the RN source coordinate; scalar/Higgs leg stays open per the pole-row no",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

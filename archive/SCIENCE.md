@@ -172,3 +172,28 @@ prose-grep checks, tautologies, ball walls, cut-convention fractures), with
 the root-cause finding that forbidden-token hygiene gates prevented
 synthesis notes — the reason this archive's roll-ups had to be written from
 outside the corpus — and six discipline rules going forward.
+
+## The note strata (densify freeze 2026-09-04)
+
+The second consolidation wave covered the note stratum itself: 3,262
+candidates (docs/ + work-history claim notes) read in full and partitioned
+2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT. The 797 archived
+notes moved to `notes/` (original paths preserved; `PATHMAP.tsv`), each with
+a note-keyed ledger entry, released behind 21 era memos in `chains/` — the
+July strata organized by physics question:
+
+- **Gravity/mass/source:** `chains/july-mass-source-poisson-era.md`; `chains/july-misc-singletons-era.md`; `chains/july-realized-kinetic-era.md`
+- **Theta / strong CP:** `chains/july-theta-era.md`
+- **Flavor, Koide and species:** `chains/july-flavor-species-era.md`; `chains/july-acphilambda-reta-era.md`
+- **Born/POVM and record formation:** `chains/july-born-povm-support-era.md`; `chains/july-record-formation-era.md`
+- **Kernel, frame and readout walls:** `chains/july-kernel-rule-era.md`; `chains/july-frame-weighting-era.md`
+- **QCA/cubic classification and K-CPT:** `chains/july-qca-cubic-era.md`; `chains/july-kcpt-dirac-era.md`
+- **Gauge/OS era:** `chains/july-gauge-os-era.md`
+- **Foundations, meta and process:** `chains/july-meta-process-era.md`; `chains/july-foundations-era.md`
+- **The July campaign cycles (work-history):** `chains/july-campaign-handoffs.md`; `chains/july-compiler-era.md`; `chains/july-car-compiler-era.md`; `chains/july-source-era.md`; `chains/july-mass-era.md`; `chains/july-late-cycles.md`
+
+Freeze evidence (partition, gates, attack + checker passes, confirmation
+ledger): `campaigns/densify-freeze-20260904/`. Campaign working packets
+(opus-direct positive-path, generator program, exercises, roll-ups):
+`campaigns/`. Everything here is record, not authority; promotion goes
+through the ordinary review-loop + audit lanes.

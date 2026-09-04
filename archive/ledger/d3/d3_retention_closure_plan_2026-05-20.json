@@ -1,0 +1,17 @@
+{
+ "id": "d3_retention_closure_plan_2026-05-20",
+ "title": "D3_RETENTION_CLOSURE_PLAN_2026-05-20",
+ "science": "B06: meta review-loop disposition record (PR #1603 salvage); dispositions since executed; group record carries. Carrier: the dimension-family FRONT graph.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md",
+  "moved_to": "archive/notes/docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

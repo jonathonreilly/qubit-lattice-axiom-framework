@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.virtual_exchange_green_kernel_cycle216_note_2026-07-16",
+ "title": "VIRTUAL_EXCHANGE_GREEN_KERNEL_CYCLE216_NOTE_2026-07-16",
+ "science": "Cycle 216: exact static virtual exchange - the scalar block of (2I-U-U*)^+ is exactly 3L^+; -QQ'/r pair potential with fitted b within 1% of 3/(4pi); species-independent response when Q=m_inertial. July mass-era note (Cycles 200-227), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/VIRTUAL_EXCHANGE_GREEN_KERNEL_CYCLE216_NOTE_2026-07-16.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/VIRTUAL_EXCHANGE_GREEN_KERNEL_CYCLE216_NOTE_2026-07-16.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-era.md (July mass era, Cycles 200\u2013227 (WH-mass) \u2014 lane memo); carrier: archive/chains/july-mass-era.md (drafted: phase3/memos/WH-mass.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-mass"
+}

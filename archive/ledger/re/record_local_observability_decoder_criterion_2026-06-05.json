@@ -1,0 +1,17 @@
+{
+ "id": "record_local_observability_decoder_criterion_2026-06-05",
+ "title": "RECORD_LOCAL_OBSERVABILITY_DECODER_CRITERION_2026-06-05",
+ "science": "RE-DO RESOLVED the borderline (rule 7d): the keep-side gate note is NOT words-only \u2014 PASS=19 runner with the additivity!=redundancy counterexample and parity anti-redundancy witness; the candidate operationalizes the premise into a finite audit criterion (compatible local-decoder family + pruning ta",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/RECORD_LOCAL_OBSERVABILITY_DECODER_CRITERION_2026-06-05.md",
+  "moved_to": "archive/notes/docs/RECORD_LOCAL_OBSERVABILITY_DECODER_CRITERION_2026-06-05.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: kept Darwinism gate note (states the premise, runner-backed) + archive group record (holds the decoder-family criterion)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

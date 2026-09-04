@@ -1,0 +1,18 @@
+{
+ "id": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
+ "title": "ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01",
+ "science": "The holonomy normal form: the unordered Brannen spectrum determines exactly (a, |b|, cos(3 delta)), so the registrable phase content is the cycle-holonomy conjugacy class Phi = 3 delta = arg det(bC); the wall recoordinated gauge-invariantly as W_cycle_holonomy_value: Phi = 2/3 (c=1 iff Phi = S_sum), with the density's 1/3 identified as the per-edge distribution of the same C3 cycle. July AC_phi_lambda/R-eta campaign docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and the campaign's residue lives on the two FRONT open-gate obligation files. BOUNDARY (attack-pass D dispute, verified): the spectrum-determines-cos(3delta) theorem requires |b| > 0, not |b| >= 0 - at |b|=0 every delta gives the identical multiset {a,a,a} while cos(3delta) varies; the later value-face note's B>0 convention is the correct domain.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md",
+  "moved_to": "archive/notes/docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-acphilambda-reta-era.md (July AC_phi_lambda / R-eta era (D-acl) \u2014 lane memo); carrier: archive/chains/july-acphilambda-reta-era.md (drafted: phase3/memos/D-acl.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the campaign's live residue is the two standing open-gate obligation files (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-acl"
+}

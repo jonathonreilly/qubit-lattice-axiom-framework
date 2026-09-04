@@ -1,0 +1,17 @@
+{
+ "id": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
+ "title": "SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30",
+ "science": "B03: bounded interface packet post-split; 06-08 boundary repair explicit (load-bearing = finite Fisher tangent + supplied C6 diagonal basis => lambda=1, 1/sqrt(6); physical Y_T reading conditional corollary only). Full read.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md",
+  "moved_to": "archive/notes/docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: its own 06-07 authority split moved the finite geometry to SHARP_RECORD_FISHER_TANGENT (KEEP, audited retained) and the basis to ORTHONORMAL_RESPONSE_BASIS (res",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

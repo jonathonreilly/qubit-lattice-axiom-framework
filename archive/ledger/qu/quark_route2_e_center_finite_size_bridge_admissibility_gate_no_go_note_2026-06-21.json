@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_e_center_finite_size_bridge_admissibility_gate_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_E_CENTER_FINITE_SIZE_BRIDGE_ADMISSIBILITY_GATE_NO_GO_NOTE_2026-06-21",
+ "science": "B01 c1: admissibility gate table for finite-size rescues (N=15 exactification, fixed-radius, box-proportional, sampled radius windows N=17/19 all no-go; selector/schedule routes open-with-new-import). FORMATTING DEFECT: Claim-scope header line split mid-sentence by the status-authority insertion (co",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_E_CENTER_FINITE_SIZE_BRIDGE_ADMISSIBILITY_GATE_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_E_CENTER_FINITE_SIZE_BRIDGE_ADMISSIBILITY_GATE_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: route2-e-center group record's finite-size arm (atlas records honest live value geometry-pinned to N=15; box-scan endpoint failures restated here as gate table)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

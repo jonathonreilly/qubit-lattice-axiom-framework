@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_e_center_excess_seven_eighths_import_boundary_note_2026-06-21",
+ "title": "QUARK_ROUTE2_E_CENTER_EXCESS_SEVEN_EIGHTHS_IMPORT_BOUNDARY_NOTE_2026-06-21",
+ "science": "N2 CONFIRM ARCHIVE on full read: rewrites the target as e_E = rho_E/6 = 7/8 and proves the four visible 7/8 anchors (Riemann-Dirichlet, Stefan-Boltzmann, APBC, color complement (N_c^2-2)/(N_c^2-1)) all lack a typed edge to the E-center excess role. Honest scoped route-pruning of the single rho_E res",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_E_CENTER_EXCESS_SEVEN_EIGHTHS_IMPORT_BOUNDARY_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_E_CENTER_EXCESS_SEVEN_EIGHTHS_IMPORT_BOUNDARY_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

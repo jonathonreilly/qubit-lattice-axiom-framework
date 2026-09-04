@@ -1,0 +1,17 @@
+{
+ "id": "synthesis_note",
+ "title": "SYNTHESIS_NOTE",
+ "science": "Coverage-gap read. The April-era program synthesis, already self-relabeled as overview/index with an exemplary audit-scope disclaimer: every quantitative rollup (5.1 SE gravity, 1/N decoherence ceiling, layer-norm regulator, d=3 selection principle, seven-publishable enumeration) explicitly marked h",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SYNTHESIS_NOTE.md",
+  "moved_to": "archive/notes/docs/SYNTHESIS_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs per-claim index targets named in its own Audit scope block (GRAVITY_LAW_CLEANUP, DECOHERENCE_DECISION, MIRROR_CHOKEPOINT family, ASYMMETRY_PERSISTENCE fami",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "kcpt_l6_ind8_separator_reach_census_surface_comparison_bounded_theorem_note_2026-07-25",
+ "title": "KCPT_L6_IND8_SEPARATOR_REACH_CENSUS_SURFACE_COMPARISON_BOUNDED_THEOREM_NOTE_2026-07-25",
+ "science": "The L=6 reach census: omega value set {0, 1/4, 4/15, 1/3, 1/2, 1} with 1/9 absent; character equality forces proper containment, and the translation dial sweeps omega - the first surface-comparison evidence that the reach labels are surface-dependent. July K-CPT Dirac commutant/census-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. SURFACE CHANGE (carried): the L=4 set equality {Delta-chi != 0} = {omega=1/3} FAILS at L=6, becoming proper containment (witness: a size-12 orbit with omega=1/3 and Delta-chi=0); the maximal-reach unlock retains sep = e_a - e_b while its closure grows from dimension/center 28/7 to 68/17 with rank-8 minimal idempotents. The row's 'character equality forces proper containment' reversed this; corrected here.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/KCPT_L6_IND8_SEPARATOR_REACH_CENSUS_SURFACE_COMPARISON_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "moved_to": "archive/notes/docs/KCPT_L6_IND8_SEPARATOR_REACH_CENSUS_SURFACE_COMPARISON_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-kcpt-dirac-era.md (July K-CPT Dirac commutant/census era (D-kcpt) \u2014 lane memo); carrier: archive/chains/july-kcpt-dirac-era.md (drafted: phase3/memos/D-kcpt.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-kcpt"
+}

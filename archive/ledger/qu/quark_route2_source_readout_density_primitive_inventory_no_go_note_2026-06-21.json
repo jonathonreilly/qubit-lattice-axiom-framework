@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_source_readout_density_primitive_inventory_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_SOURCE_READOUT_DENSITY_PRIMITIVE_INVENTORY_NO_GO_NOTE_2026-06-21",
+ "science": "N2 CONFIRM ARCHIVE on full read: the typed-graph inventory: the bank has kappa^2=9/4 as value arithmetic and endpoint algebra, but no edge O_h weights -> density primitive and no edge primitive -> covariance; eight surfaces quote-checked. Honest scoped route-pruning of the single rho_E residual; ful",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_SOURCE_READOUT_DENSITY_PRIMITIVE_INVENTORY_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_SOURCE_READOUT_DENSITY_PRIMITIVE_INVENTORY_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

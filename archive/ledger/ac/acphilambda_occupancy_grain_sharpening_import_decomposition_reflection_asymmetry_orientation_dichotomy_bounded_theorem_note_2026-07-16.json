@@ -1,0 +1,18 @@
+{
+ "id": "acphilambda_occupancy_grain_sharpening_import_decomposition_reflection_asymmetry_orientation_dichotomy_bounded_theorem_note_2026-07-16",
+ "title": "ACPHILAMBDA_OCCUPANCY_GRAIN_SHARPENING_IMPORT_DECOMPOSITION_REFLECTION_ASYMMETRY_ORIENTATION_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-16",
+ "science": "The strict-sharpening import decomposed into two separate contents: reflection asymmetry (exactly the condition for interior durable weight = {1/2}, via the exact identity numerator q(1-q)h(q)) and orientation (a disjoint A+/A- binary fixing only the selection mode); witness B outside A carries the extra reflected fixed pair {5/22, 17/22} - the axioms supply neither content. July AC_phi_lambda/R-eta campaign docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and the campaign's residue lives on the two FRONT open-gate obligation files.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ACPHILAMBDA_OCCUPANCY_GRAIN_SHARPENING_IMPORT_DECOMPOSITION_REFLECTION_ASYMMETRY_ORIENTATION_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-16.md",
+  "moved_to": "archive/notes/docs/ACPHILAMBDA_OCCUPANCY_GRAIN_SHARPENING_IMPORT_DECOMPOSITION_REFLECTION_ASYMMETRY_ORIENTATION_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-16.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-acphilambda-reta-era.md (July AC_phi_lambda / R-eta era (D-acl) \u2014 lane memo); carrier: archive/chains/july-acphilambda-reta-era.md (drafted: phase3/memos/D-acl.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the campaign's live residue is the two standing open-gate obligation files (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-acl"
+}

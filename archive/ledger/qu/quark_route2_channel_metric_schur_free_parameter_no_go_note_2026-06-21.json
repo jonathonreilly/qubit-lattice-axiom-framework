@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_channel_metric_schur_free_parameter_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_CHANNEL_METRIC_SCHUR_FREE_PARAMETER_NO_GO_NOTE_2026-06-21",
+ "science": "N2 CONFIRM ARCHIVE on full read: invariant channel metrics on E+T1 form a two-parameter cone with free c_E/c_T (Schur); a metric is a family, not a selector; endpoint table for lambda in {1,3/2,9/4}. Honest scoped route-pruning of the single rho_E residual; fully indexed by the FRONT atlas/gap-note/",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_CHANNEL_METRIC_SCHUR_FREE_PARAMETER_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_CHANNEL_METRIC_SCHUR_FREE_PARAMETER_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "audit_landscape_snapshot_2026-05-17",
+ "title": "AUDIT_LANDSCAPE_SNAPSHOT_2026-05-17",
+ "science": "Read-only diagnostic snapshot of the 2026-05-17 audit landscape (2135 claims, 1205 pending, 247 cycles, leverage top-10, three authorization options) \u2014 self-declared as not part of the citation graph, and long since superseded by the sharded ledger and later pipeline state. The re-runnable diagnosti",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/AUDIT_LANDSCAPE_SNAPSHOT_2026-05-17.md",
+  "moved_to": "archive/notes/docs/AUDIT_LANDSCAPE_SNAPSHOT_2026-05-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: scripts/audit_landscape_snapshot.py (re-runnable) + docs/audit/AUDIT_QUEUE.md + docs/audit/AUDIT_LEDGER.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

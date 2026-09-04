@@ -1,0 +1,16 @@
+{
+ "id": "campaign-generator-program-20260821",
+ "title": "generator-program-20260821",
+ "science": "The generator-kernel program packet (2026-08-21 era, W9 = herm(Q^-1) kernel): B1 landing record, B2/B3 specs, the G1 #7334 review, panel-6 lens set (constraints/construction/foundations/falsification/strategy) and the panel-7 Fable thread, the program synthesis, and the b171-b187 per-block checker findings with profile-table scripts - the working evidence trail behind the landed generator-program blocks of the gravity/source mainline.",
+ "source": {
+  "kind": "campaign-packet",
+  "path": "archive/campaigns/generator-program-20260821",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/campaigns/generator-program-20260821/ (whole packet); this ledger line",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04 (see archive/campaigns/densify-freeze-20260904/)"
+ },
+ "status": "archived"
+}

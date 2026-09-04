@@ -1,0 +1,17 @@
+{
+ "id": "audit_structural_issues_snapshot_2026-05-17",
+ "title": "AUDIT_STRUCTURAL_ISSUES_SNAPSHOT_2026-05-17",
+ "science": "Dated read-only diagnostic snapshot (ISS-1 orchestrator gap, ISS-2 sixteen stale-numerics cases, ISS-3 clean, ISS-4 three missing runners) whose counts describe the 2026-05-17 pipeline state; the verifier is re-runnable and the orchestrator gap was subsequently closed.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/AUDIT_STRUCTURAL_ISSUES_SNAPSHOT_2026-05-17.md",
+  "moved_to": "archive/notes/docs/AUDIT_STRUCTURAL_ISSUES_SNAPSHOT_2026-05-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: scripts/audit_structural_issues_verifier.py (re-runnable) + the pipeline fixes it triggered",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

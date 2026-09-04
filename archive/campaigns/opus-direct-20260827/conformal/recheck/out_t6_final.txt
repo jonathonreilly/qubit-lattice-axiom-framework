@@ -1,0 +1,51 @@
+  done L=32 TT  [2s]
+  done L=32 CF  [2s]
+  done L=64 TT  [125s]
+  done L=64 CF  [125s]
+
+  L=32 TT raw    : 3B/dS over 42 model x window variants: median  0.8617  range [-8.3487,11.4271]  IQR [ 0.4654, 1.8084]
+  L=32 TT LDA-sub: 3B/dS over 42 model x window variants: median  0.9415  range [ 0.5529, 1.3573]  IQR [ 0.9108, 1.0238]
+  L=32 CF raw    : 3B/dS over 42 model x window variants: median  2.2283  range [-50.3939,28.9411]  IQR [-3.9920, 4.6063]
+  L=32 CF LDA-sub: 3B/dS over 42 model x window variants: median  1.2264  range [ 1.0141, 2.0722]  IQR [ 1.0515, 1.3669]
+
+  L=64 TT raw    : 3B/dS over 42 model x window variants: median  0.9952  range [ 0.9146, 1.1525]  IQR [ 0.9521, 0.9987]
+  L=64 TT LDA-sub: 3B/dS over 42 model x window variants: median  0.9953  range [ 0.9168, 1.0040]  IQR [ 0.9598, 0.9974]
+  L=64 CF raw    : 3B/dS over 42 model x window variants: median  1.1988  range [-2.0617, 2.7545]  IQR [ 0.8165, 1.3720]
+  L=64 CF LDA-sub: 3B/dS over 42 model x window variants: median  1.1117  range [ 1.0051, 1.3728]  IQR [ 1.0261, 1.2213]
+
+=== matched physics (s_64 = 4 s_32, equal s*kappa^2): raw ratio and a2+LDA-corrected ===
+   s*kappa^2    TT L32    TT L64  |    CF L32    CF L64      (raw)
+                                  |                          (a2+LDA corrected)
+     0.0386    9.3151    0.8708  |   48.2012    4.1642   raw
+               1.4974    1.0131  |    2.1204    1.3021   corrected
+     0.0482   -1.3313    0.9628  |   29.9972    2.7074   raw
+               1.3477    1.0051  |    1.9327    1.2436   corrected
+     0.0578   -2.1535    0.9847  |   18.6592    2.0630   raw
+               1.2416    1.0014  |    1.7853    1.2041   corrected
+     0.0771   -0.3068    0.9913  |    8.3023    1.5423   raw
+               1.1185    0.9986  |    1.5937    1.1541   corrected
+     0.0964    0.5768    0.9898  |    4.6891    1.3510   raw
+               1.0634    0.9979  |    1.4791    1.1235   corrected
+     0.1253    0.9055    0.9864  |    2.7912    1.2392   raw
+               1.0298    0.9978  |    1.3725    1.0946   corrected
+     0.1542    0.9659    0.9833  |    2.0933    1.1973   raw
+               1.0163    0.9981  |    1.3045    1.0760   corrected
+     0.1928    0.9795    0.9795  |    1.7012    1.1782   raw
+               1.0085    0.9986  |    1.2440    1.0589   corrected
+     0.2410    0.9780    0.9750  |    1.4985    1.1766   raw
+               1.0045    0.9992  |    1.1937    1.0440   corrected
+     0.3084    0.9714    0.9687  |    1.3894    1.1891   raw
+               1.0027    0.9999  |    1.1467    1.0287   corrected
+     0.3855    0.9636    0.9616  |    1.3484    1.2109   raw
+               1.0025    1.0007  |    1.1095    1.0145   corrected
+     0.4819    0.9543    0.9527  |    1.3402    1.2419   raw
+               1.0031    1.0017  |    1.0746    0.9985   corrected
+     0.6169    0.9404    0.9393  |    1.3573    1.2869   raw
+               1.0047    1.0032  |    1.0350    0.9758   corrected
+
+=== plateau fits in RATIO space on the fully-subtracted ratio
+    r(s) = [F - dVol_simp - LDA(s) - s^2 Int a2] / (s dS/3) = r0 + p/s + q s  ===
+  L=32 TT: raw r over s-grid 1.0025..1.4974 ; r0 over 20 fits: median 0.9752 range [0.7618,1.2072]
+  L=32 CF: raw r over s-grid 1.0350..2.1204 ; r0 over 20 fits: median 1.0464 range [0.9827,1.7757]
+  L=64 TT: raw r over s-grid 0.9978..1.0131 ; r0 over 20 fits: median 0.9985 range [0.9894,1.0016]
+  L=64 CF: raw r over s-grid 0.9758..1.3021 ; r0 over 20 fits: median 1.0249 range [0.9740,1.2047]

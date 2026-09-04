@@ -1,0 +1,38 @@
+PRE-REGISTRATION for T277 (written before the p=0.85 / p=0.70 collapse numbers).
+
+QUESTION: does the induced Einstein-Hilbert (a1/curvature) term survive dilution?
+TEST: D^{3/2} * Rtil_inf(x) / R_cont(D x) == 1, D calibrated (T276, 5e-5 at p=1).
+
+TWO ARGUMENTS IN CONFLICT
+(a) R184's reading -- "p=0.85 tracks to ~1%, p=0.70 does not" -- plus R181's
+    "two thresholds in order" (arena before physics) predicts a curvature
+    threshold between 0.70 and 0.85: p=0.85 collapses, p=0.70 fails.
+(b) Homogenisation: both p are far above site-percolation p_c ~ 0.3116, and
+    T276 measured 6-fold degenerate, EXTENDED low modes (PR 0.43 at p=0.85,
+    0.54 at p=0.70) -- i.e. the diluted medium really is an isotropic effective
+    continuum with a well-defined D. Then the effective operator is exactly
+    D*Delta_g and the a1 coefficient must follow.
+
+MY PREDICTION: (b). BOTH p=0.85 AND p=0.70 COLLAPSE TO ~1.
+
+REASON I EXPECT R184 TO BE WRONG AGAIN: its D at p=0.70 was 0.3186/0.3298
+against the calibrated 0.5188 -- 39% low. Since D enters as D^{3/2}, that is a
+factor (0.5188/0.3186)^1.5 = 2.07 error. A factor of two fully accounts for
+"p=0.70 does not track" without any physics. R184's p=0.85 D (0.6405/0.6681 vs
+0.7581) is 12-16% low -> factor 1.19-1.28, which is why that row looked closer.
+
+WHAT WOULD MAKE ME WRONG, stated in advance:
+ - If p=0.85 collapses and p=0.70 does not, there IS a genuine curvature
+   threshold and R181's ordering gets a third rung. I would then need to rule
+   out that the p=0.70 failure is a finite-s artifact: at p=0.70 D=0.52, so
+   x_eff = D x is half as large and the 1/s artifact is ~2x bigger at the same
+   lattice size. That confound must be checked before claiming a threshold.
+ - A random medium contributes its OWN a1-like term from coefficient
+   fluctuations, which simple homogenisation misses at finite s. If both rows
+   collapse but to a value systematically off 1 by the same amount, suspect
+   that, not the machinery.
+
+STATED IN ADVANCE: L=40 is too small for the collapse (T274 shows the EXACT
+computation needs L >~ 96 for the intercept; the 1/s extrapolation over
+L=40/56/72 is the mitigation). If all three p rows fail together at every x,
+the instrument is under-resolved, not the physics.

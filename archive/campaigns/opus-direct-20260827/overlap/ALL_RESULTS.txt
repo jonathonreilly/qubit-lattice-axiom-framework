@@ -1,0 +1,270 @@
+OVERLAP / GINSPARG-WILSON PROBE OF THE CHIRALITY NO-GO  (2026-08-29)
+all indices verified two ways (SVD polar factor + hermitian sign function); GW residual quoted per row
+
+################ out_ov1_wilson.txt ################
+=== Wilson-Dirac overlap  L=8 m_rho=1.0 a=1.0 r=1.0 ===
+  gauge check n=1: plaq-angle spread=3.33e-16  total flux/2pi=1.000000
+  n     g5herm      GWviol  |aD|max   minSV(A)    index_tr  nzero  n+  n-
+  0   0.00e+00   2.667e-15    1.491  1.000e+00    0.000000      2   1   1
+  1   0.00e+00   4.895e-15    1.507  9.505e-01   -1.000000      1   0   1
+  2   0.00e+00   4.457e-15    1.523  9.004e-01   -2.000000      2   0   2
+  3   0.00e+00   3.112e-15    1.538  8.487e-01   -3.000000      3   0   3
+=== Wilson-Dirac overlap  L=10 m_rho=1.0 a=1.0 r=1.0 ===
+  gauge check n=1: plaq-angle spread=2.91e-16  total flux/2pi=1.000000
+  n     g5herm      GWviol  |aD|max   minSV(A)    index_tr  nzero  n+  n-
+  0   0.00e+00   2.235e-15    1.491  1.000e+00    0.000000      2   1   1
+  1   0.00e+00   4.444e-15    1.501  9.684e-01   -1.000000      1   0   1
+  2   0.00e+00   5.329e-15    1.511  9.365e-01   -2.000000      2   0   2
+  3   0.00e+00   5.775e-15    1.521  9.041e-01   -3.000000      3   0   3
+
+################ out_kd_fibre.txt ################
+d=2 fibre dim=4:  {'clifford': '0.00e+00', 'G_anticomm': '0.00e+00', 'G2': '0.00e+00', 'Gam_herm': '0.00e+00', 'Gam_real': '0.00e+00', 'Gbar_anti_Gam': '0.00e+00'}
+d=4 fibre dim=16:  {'clifford': '0.00e+00', 'G_anticomm': '0.00e+00', 'G2': '0.00e+00', 'Gam_herm': '0.00e+00', 'Gam_real': '0.00e+00', 'Gbar_anti_Gam': '0.00e+00'}
+
+d=2 taste generator T = Gbar_1 Gbar_2
+  T^2 + I  : 0.0
+  [T,Gam_a]: 0.0
+  [T,G]    : 0.0
+  eig(T)   : [0.+1.j 0.-1.j 0.+1.j 0.-1.j]
+  Gam_1 =
+ [[0 1 0 0]
+ [1 0 0 0]
+ [0 0 0 1]
+ [0 0 1 0]]
+  Gam_2 =
+ [[ 0  0  1  0]
+ [ 0  0  0 -1]
+ [ 1  0  0  0]
+ [ 0 -1  0  0]]
+  G     = [ 1 -1 -1  1]
+
+################ out_task34.txt ################
+==============================================================================
+TASK 2 (control): 2-component Wilson-Dirac fibre, gammas = (s1,s2), chir = s3
+--- WilsonDirac f=2  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   0.00e+00   2.667e-15  1.000e+00    0.000000      2   1   1
+  1   0.00e+00   4.895e-15  9.505e-01   -1.000000      1   0   1
+  2   0.00e+00   4.457e-15  9.004e-01   -2.000000      2   0   2
+  3   0.00e+00   3.112e-15  8.487e-01   -3.000000      3   0   3
+    dim=128  Tr(chirality)=0.000e+00
+
+==============================================================================
+TASK 3: Kahler-Dirac fibre d=2, f=4, real Gammas, G=diag((-1)^k)
+  max|Im Gamma| = 0.0e+00  (Gammas are REAL)
+--- KahlerDirac f=4 REAL  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   0.00e+00   5.773e-15  1.000e+00   -0.000000      4   2   2
+  1   0.00e+00   4.441e-15  9.505e-01   -0.000000      2   1   1
+  2   0.00e+00   7.553e-15  9.004e-01   -0.000000      4   2   2
+  3   0.00e+00   4.006e-15  8.487e-01    0.000000      6   3   3
+    dim=256  Tr(chirality)=0.000e+00
+
+==============================================================================
+TASK 4a: similarity transform S in U(2)xU(2) (commutes with G): Gam->S Gam S^-1, G->S G S^-1
+  S unitary err = 4.4e-16   [S,G] = 0.0e+00
+  Clifford preserved: 5.0e-16
+  {G,Gam'} = 4.7e-16   G unchanged: 4.4e-16
+  max|Im Gamma'| = 0.7139  (NO LONGER REAL)
+  max|Re Gamma'| = 0.7635
+--- KahlerDirac f=4 COMPLEXIFIED (unitary conj)  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   1.78e-15   5.329e-15  1.000e+00    0.000000      4   2   2
+  1   1.78e-15   5.332e-15  9.505e-01    0.000000      2   1   1
+  2   1.78e-15   6.662e-15  9.004e-01    0.000000      4   2   2
+  3   1.78e-15   6.219e-15  8.487e-01    0.000000      6   3   3
+    dim=256  Tr(chirality)=2.842e-14
+
+==============================================================================
+TASK 4a-neg (control that CAN fail): S generic in U(4), does NOT commute with G
+  Clifford still ok: 7.9e-16
+  but {G, Gam'} with UNTRANSFORMED G = 1.5772  -> no chirality, no index theorem
+  forcing it anyway at n=1: chir-herm viol=7.886e-01  GW viol=5.139e-01  index=0.156126  <- MEANINGLESS
+
+==============================================================================
+TASK 4b (the test that CAN fail): project onto ONE taste. T = Gbar_1 Gbar_2, T^2=-1
+
+  [T=+i] fibre dim 2  Clifford err=8.9e-16  {C,Gam}=0.0e+00  C^2-I=4.4e-16  Tr C=0.0e+00
+       max|Im Gamma_taste| = 1.0000   (must be nonzero: no real 2d option)
+--- KD single taste T=+i  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   8.88e-16   3.110e-15  1.000e+00    0.000000      2   1   1
+  1   8.88e-16   3.121e-15  9.505e-01   -1.000000      1   0   1
+  2   8.88e-16   3.564e-15  9.004e-01   -2.000000      2   0   2
+  3   8.88e-16   4.000e-15  8.487e-01   -3.000000      3   0   3
+    dim=128  Tr(chirality)=0.000e+00
+
+  [T=-i] fibre dim 2  Clifford err=8.9e-16  {C,Gam}=0.0e+00  C^2-I=4.4e-16  Tr C=0.0e+00
+       max|Im Gamma_taste| = 1.0000   (must be nonzero: no real 2d option)
+--- KD single taste T=-i  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  0   8.88e-16   2.225e-15  1.000e+00   -0.000000      2   1   1
+  1   8.88e-16   4.005e-15  9.505e-01    1.000000      1   1   0
+  2   8.88e-16   4.445e-15  9.004e-01    2.000000      2   2   0
+  3   8.88e-16   4.441e-15  8.487e-01    3.000000      3   3   0
+    dim=128  Tr(chirality)=0.000e+00
+
+################ out_task5_mechanism.txt ################
+Clifford chirality CL = i*Gam1*Gam2 on the SAME real Gammas:
+  herm=0.0e+00  CL^2-I=0.0e+00  {CL,Gam}=0.0e+00  TrCL=0.0e+00
+  conj(G)  - G  = 0.0e+00    (grade chirality is REAL)
+  conj(CL) + CL = 0.0e+00   (Clifford chirality is IMAGINARY)
+
+== antiunitary test: A = K (complex conjugation). Does A D_n A^-1 = D_{-n}? ==
+  real KD Gammas: ||conj(D_1) - D_(-1)|| = 0.00e+00
+  real KD Gammas: ||conj(D_2) - D_(-2)|| = 0.00e+00
+  real KD Gammas: ||conj(D_3) - D_(-3)|| = 0.00e+00
+  => A=K maps flux n -> -n exactly.  [A,G]=0 (G real) but {A,CL}=0 (CL imaginary).
+  R59 criterion: index even in n  <=>  antiunitary exists AND commutes with the chirality.
+
+==============================================================================
+A) real Gammas + REAL grade chirality G      (framework's stated setup)
+--- KD f=4, chirality G  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+ -3   0.00e+00   4.006e-15  8.487e-01    0.000000      6   3   3
+ -2   0.00e+00   7.553e-15  9.004e-01   -0.000000      4   2   2
+ -1   0.00e+00   4.441e-15  9.505e-01   -0.000000      2   1   1
+  0   0.00e+00   5.773e-15  1.000e+00   -0.000000      4   2   2
+  1   0.00e+00   4.441e-15  9.505e-01   -0.000000      2   1   1
+  2   0.00e+00   7.553e-15  9.004e-01   -0.000000      4   2   2
+  3   0.00e+00   4.006e-15  8.487e-01    0.000000      6   3   3
+    dim=256  Tr(chirality)=0.000e+00
+
+B) SAME real Gammas + IMAGINARY Clifford chirality i*Gam1*Gam2
+--- KD f=4, chirality i*G1*G2  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+ -3   0.00e+00   3.595e-15  8.487e-01   -6.000000      6   0   6
+ -2   0.00e+00   7.994e-15  9.004e-01   -4.000000      4   0   4
+ -1   0.00e+00   4.004e-15  9.505e-01   -2.000000      2   0   2
+  0   0.00e+00   6.217e-15  1.000e+00    0.000000      4   2   2
+  1   0.00e+00   4.004e-15  9.505e-01    2.000000      2   2   0
+  2   0.00e+00   7.994e-15  9.004e-01    4.000000      4   4   0
+  3   0.00e+00   3.595e-15  8.487e-01    6.000000      6   6   0
+    dim=256  Tr(chirality)=0.000e+00
+
+==============================================================================
+C) does the complexified (unitary-conjugated) fibre change either answer?
+  max|Im Gamma'| = 0.9501  (Gammas complexified)
+  ||conj(D'_1) - D'_(-1)|| = 0.950  <- naive reality diagnostic now FAILS
+  ||conj(D'_2) - D'_(-2)|| = 0.950  <- naive reality diagnostic now FAILS
+  ||conj(D'_3) - D'_(-3)|| = 0.950  <- naive reality diagnostic now FAILS
+--- complexified fibre, chirality G'  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  1   8.88e-16   4.892e-15  9.505e-01   -0.000000      2   1   1
+  2   8.88e-16   6.661e-15  9.004e-01   -0.000000      4   2   2
+  3   8.88e-16   7.550e-15  8.487e-01   -0.000000      6   3   3
+    dim=256  Tr(chirality)=-7.105e-15
+--- complexified fibre, chirality CL'  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  1   1.33e-15   6.220e-15  9.505e-01    2.000000      2   2   0
+  2   1.33e-15   4.001e-15  9.004e-01    4.000000      4   4   0
+  3   1.33e-15   7.557e-15  8.487e-01    6.000000      6   6   0
+    dim=256  Tr(chirality)=-5.684e-14
+
+==============================================================================
+D) can a 2-dim (single-taste) Clifford rep in d=2 have REAL Gammas AND a real chirality?
+  Gam1=s1, Gam2=s3 (the only real symmetric anticommuting pair up to O(2)).
+  best real symmetric CH with {CH,Gam}=0 and CH^2=I over 2e5 random tries: residual = 1.0248
+  (algebraically: CH must be prop. to sigma_2, which is imaginary. NO real 2d option.)
+
+################ out_task6_robust.txt ################
+== 1. Is D_KD literally 2^(d/2) copies of Wilson-Dirac? (d=2, so 2 copies) ==
+  n=0: ||spec(D_KD) - 2x spec(D_Wilson)||_inf = 2.45e+00
+  n=1: ||spec(D_KD) - 2x spec(D_Wilson)||_inf = 2.29e+00
+  n=2: ||spec(D_KD) - 2x spec(D_Wilson)||_inf = 2.30e+00
+  n=3: ||spec(D_KD) - 2x spec(D_Wilson)||_inf = 2.35e+00
+
+== 2. Taste algebra = commutant of the Gammas in the 2^d fibre ==
+  d=2: fibre 4,  dim(commutant)=4  -> tastes = sqrt = 2 (2^(d/2)=2)
+  d=4: fibre 16,  dim(commutant)=16  -> tastes = sqrt = 4 (2^(d/2)=4)
+
+== 3. Robustness: does the 0-vs-2n split survive L, mass, Wilson r? ==
+  L  m_rho     r |         idx(G) n=1,2,3 |        idx(CL) n=1,2,3 |     maxGW
+  6    1.0   1.0 | [np.float64(0.0), np.float64(0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   4.5e-15
+  6    0.5   1.0 | [np.float64(0.0), np.float64(-0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   5.3e-15
+  6    1.5   1.0 | [np.float64(-0.0), np.float64(0.0), np.float64(-0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   4.4e-15
+  6    1.0   0.5 | [np.float64(-0.089414), np.float64(-0.0), np.float64(-0.085918)] | [np.float64(0.081043), np.float64(0.0), np.float64(-0.013068)] |   1.3e-01
+  8    1.0   1.0 | [np.float64(-0.0), np.float64(-0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   8.0e-15
+  8    0.5   1.0 | [np.float64(0.0), np.float64(0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   7.5e-15
+  8    1.5   1.0 | [np.float64(-0.0), np.float64(-0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   6.2e-15
+  8    1.0   0.5 | [np.float64(-0.013799), np.float64(-0.29922), np.float64(0.251756)] | [np.float64(0.218449), np.float64(-0.461099), np.float64(-0.553353)] |   6.8e-02
+ 10    1.0   1.0 | [np.float64(-0.0), np.float64(-0.0), np.float64(-0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   1.0e-14
+ 10    0.5   1.0 | [np.float64(0.0), np.float64(-0.0), np.float64(-0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   8.4e-15
+ 10    1.5   1.0 | [np.float64(-0.0), np.float64(0.0), np.float64(-0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   8.4e-15
+ 10    1.0   0.5 | [np.float64(0.126044), np.float64(0.481593), np.float64(-0.225504)] | [np.float64(-0.101022), np.float64(0.004492), np.float64(-0.243863)] |   4.5e-02
+
+################ out_task7_diag.txt ################
+== A. Spectral identity: is D_KD(n) = D_W(+n) (+) D_W(-n) ? ==
+  n=0:  vs 2x D_W(+n): 2.45e+00   vs D_W(+n)+D_W(-n): 2.45e+00
+  n=1:  vs 2x D_W(+n): 2.29e+00   vs D_W(+n)+D_W(-n): 2.29e+00
+  n=2:  vs 2x D_W(+n): 2.30e+00   vs D_W(+n)+D_W(-n): 2.30e+00
+  n=3:  vs 2x D_W(+n): 2.35e+00   vs D_W(+n)+D_W(-n): 2.35e+00
+
+== B. r=0.5 rows: why did GW fail? (m_rho must lie strictly inside a Wilson window) ==
+    r  m_rho   minSV(A)     GWviol    idx(G)   idx(CL)
+  0.5    1.0   7.45e-17   5.62e-02  -0.29922  -0.46110
+  0.5    0.5   4.52e-01   6.66e-15  -0.00000   4.00000
+  0.5   0.25   2.02e-01   4.00e-15  -0.00000   4.00000
+  0.5   0.75   2.46e-01   7.56e-15   0.00000   4.00000
+  1.0    1.0   9.00e-01   7.99e-15  -0.00000   4.00000
+  1.0    2.0   1.29e-16   5.38e-02  -0.17257   0.01390
+  1.0    3.0   9.00e-01   2.01e-15  -0.00000  -4.00000
+  (2d Wilson doubler masses sit at m = 0, 2r, 4r; overlap valid only strictly between them.)
+
+################ out_task8_xcheck.txt ################
+d=2 cross-check: SVD-polar index vs hermitian-sign index (must agree)
+  n=1 grade G     : SVD=-0.00000  herm-sign=-0.00000  gap=0.951 GW=4.44e-15
+  n=1 Clifford CL : SVD=+2.00000  herm-sign=+2.00000  gap=0.951 GW=4.44e-15
+  n=2 grade G     : SVD=-0.00000  herm-sign=-0.00000  gap=0.900 GW=8.44e-15
+  n=2 Clifford CL : SVD=+4.00000  herm-sign=+4.00000  gap=0.900 GW=6.66e-15
+  n=3 grade G     : SVD=+0.00000  herm-sign=-0.00000  gap=0.849 GW=4.88e-15
+  n=3 Clifford CL : SVD=+6.00000  herm-sign=+6.00000  gap=0.849 GW=5.33e-15
+
+################ out_dbg_spectra.txt ################
+ n=0  KD vs 2xW(+n): 1.56e-14   KD vs W(+n)+W(-n): 1.56e-14   W(+n) vs W(-n): 0.00e+00
+ n=1  KD vs 2xW(+n): 1.48e-14   KD vs W(+n)+W(-n): 1.75e-14   W(+n) vs W(-n): 1.42e-14
+ n=2  KD vs 2xW(+n): 1.62e-14   KD vs W(+n)+W(-n): 1.74e-14   W(+n) vs W(-n): 1.66e-14
+
+ taste +i: i*g1*g2 =
+[[-1.+0.j  0.+0.j]
+ [ 0.+0.j  1.+0.j]]
+   G|taste =
+[[ 1.+0.j  0.+0.j]
+ [ 0.+0.j -1.+0.j]]
+
+ taste -i: i*g1*g2 =
+[[ 1.+0.j  0.+0.j]
+ [ 0.+0.j -1.+0.j]]
+   G|taste =
+[[ 1.+0.j  0.+0.j]
+ [ 0.+0.j -1.+0.j]]
+
+################ out_task9_d4_wilson.txt ################
+d=4, ORDINARY 4-component Wilson-Dirac (gamma_2 = i*sigma_1(x)sigma_2 -> COMPLEX gammas)
+  max|Im gamma_mu| = 1.000   (NOT real)
+  L=4, m_rho=1.0.  index_cont = n12*n34
+   (n12,n34)     gap         GW     index
+      (0, 0)   1.000   2.80e-14  -0.00000
+      (1, 1)   0.619   1.78e-14  +1.00000
+    (-1, -1)   0.619   1.60e-14  +1.00000
+     (1, -1)   0.619   1.69e-14  -1.00000
+     (-1, 1)   0.619   1.69e-14  -1.00000
+      (2, 1)   0.446   2.31e-14  +2.00000
+    (-2, -1)   0.446   2.26e-14  +2.00000
+      (1, 2)   0.446   2.22e-14  +2.00000
+  => index(n12,n34) == index(-n12,-n34) for the COMPLEX Dirac operator too.
+     In d=4 the index is quadratic in F, so evenness under total flux reversal is
+     automatic (charge conjugation) and carries NO information about reality.
+
+################ out_task_d4_kd.txt ################
+d=4 Clifford chirality CL = G1G2G3G4: herm=0.0e+00 CL^2-I=0.0e+00 {CL,Gam}=0.0e+00 TrCL=0.00 conj(CL)-CL=0.0e+00
+grade chirality G: conj(G)-G=0.0e+00  TrG=0.00
+  (n12,n34)=(0,0)  Wilson f=4 : chirherm=0.0e+00 GW=2.80e-14 gap=1.000 index=-0.000000   [1s]
+                        KD f=16   : GW=3.95e-14 gap=1.000 index(grade G)=-0.000000  index(Clifford CL)=-0.000000   [134s]
+  (n12,n34)=(1,1)  Wilson f=4 : chirherm=0.0e+00 GW=1.78e-14 gap=0.619 index=+1.000000   [1s]
+                        KD f=16   : GW=4.04e-14 gap=0.619 index(grade G)=-0.000000  index(Clifford CL)=-4.000000   [129s]
+  (n12,n34)=(1,2)  Wilson f=4 : chirherm=0.0e+00 GW=2.22e-14 gap=0.446 index=+2.000000   [1s]
+                        KD f=16   : GW=3.69e-14 gap=0.446 index(grade G)=-0.000000  index(Clifford CL)=-8.000000   [120s]
+  (n12,n34)=(2,1)  Wilson f=4 : chirherm=0.0e+00 GW=2.31e-14 gap=0.446 index=+2.000000   [1s]
+                        KD f=16   : GW=4.80e-14 gap=0.446 index(grade G)=-0.000000  index(Clifford CL)=-8.000000   [115s]
+

@@ -1,0 +1,17 @@
+{
+ "id": "wave_direct_dm_h025_family_pair_synthesis_note",
+ "title": "WAVE_DIRECT_DM_H025_FAMILY_PAIR_SYNTHESIS_NOTE",
+ "science": "Two-family seed-vs-family-vs-trace verdict; superseded by the sharper transfer diagnostic (T(F,s) late-gain retention) and the three-family freeze that carry the same conclusion with Fam3 included.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WAVE_DIRECT_DM_H025_FAMILY_PAIR_SYNTHESIS_NOTE.md",
+  "moved_to": "archive/notes/docs/WAVE_DIRECT_DM_H025_FAMILY_PAIR_SYNTHESIS_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

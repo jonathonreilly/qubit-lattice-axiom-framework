@@ -1,0 +1,18 @@
+{
+ "id": "kcpt_coupling_triple_berezin_count_binary_measure_collapse_bounded_theorem_note_2026-07-17",
+ "title": "KCPT_COUPLING_TRIPLE_BEREZIN_COUNT_BINARY_MEASURE_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-17",
+ "science": "Berezin-determinant realization of the coupling triple: the count binary is the 6m-generator binary, the T4 held-measure collapses under constant substitution, and the coupling-dependent A(W)=W case converts - a measure-collapse bookkeeping theorem, no dynamics or measure selected. July K-CPT Dirac commutant/census-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. FRONT LINK (carried): this note names the standing FRONT AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN obligation, quotes its live closure criterion (derive the physical matter action and measure, then distinguish det_C from |det_C|^2) - while itself making NO discharge, narrowing, or reframing of that obligation (the note's own item 5; the collapse statement concerns the probe surface's constant-substitution parameter freedom): the quadratic Berezin integral under the pinned measure is exactly det M ((-1)^n det M reversed); horn m uses 6m generators; constant homogeneous held-measure substitutions act only by det S; the coupling-dependent A(W)=W route converts det3 to det3^2; nonlinear/Berezinian routes remain open. SCOPE (round-2 correction): the det M / (-1)^n det M identities are runner-verified at n = 1, 2, 3 (not unrestricted n); the substitution class is active constant homogeneous LINEAR odd-generator substitutions with ordinary central Grassmann-even scalar coefficients at fixed generator count and held integration order/normalization (nonlinear/Berezinian expressly open); 'horn m uses 6m generators' is a declared bookkeeping reading, not a framework identification.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/KCPT_COUPLING_TRIPLE_BEREZIN_COUNT_BINARY_MEASURE_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+  "moved_to": "archive/notes/docs/KCPT_COUPLING_TRIPLE_BEREZIN_COUNT_BINARY_MEASURE_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-kcpt-dirac-era.md (July K-CPT Dirac commutant/census era (D-kcpt) \u2014 lane memo); carrier: archive/chains/july-kcpt-dirac-era.md (drafted: phase3/memos/D-kcpt.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-kcpt"
+}

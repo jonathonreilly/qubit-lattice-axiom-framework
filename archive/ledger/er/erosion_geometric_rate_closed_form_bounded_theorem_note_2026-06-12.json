@@ -1,0 +1,17 @@
+{
+ "id": "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12",
+ "title": "EROSION_GEOMETRIC_RATE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12",
+ "science": "Uniform-sign closed rate r(eps)=(1-eps)/(1+eps) with fixed-point stability and the alternating two-step cancellation boundary - fully subsumed as the |D|=T special case of the complete rapidity-abelianization law (which re-verifies it as a gate); the alternating protection is likewise the D=0 case.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/EROSION_GEOMETRIC_RATE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "moved_to": "archive/notes/docs/EROSION_GEOMETRIC_RATE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

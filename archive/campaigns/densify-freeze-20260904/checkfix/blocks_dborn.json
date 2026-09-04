@@ -1,0 +1,22 @@
+[
+ {
+  "claim": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+  "kind": "appended",
+  "text": " SCOPE (carried): the finite-effect forcing theorem is dimension-generic - arbitrary finite region Lambda, every finite dimension d >= 2 - not one-site-only. UNCARRIED COROLLARY (now carried): the Pauli-conjugation symmetry corollary - the conditional premise w(UEU+)=w(E) for U in {X,Y,Z} forces sigma=I/2 via trace-representative uniqueness; an explicit conditional input."
+ },
+ {
+  "claim": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+  "kind": "appended",
+  "text": " SCOPE (carried): the unpaired-menu necessity holds ON THE ONE-SITE SCALED-PROJECTOR SURFACE only (the note's own scope - no classification of intermediate families, no physical-family selection)."
+ },
+ {
+  "claim": "docs/PER_ROW_BIJECTION_S3_CUBED_CONDITIONAL_CENSUS_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "kind": "appended",
+  "text": " PRECISION (carried): the supplied map occupies ranks 123-128 of 216 - a SIX-WAY TIE (122 strictly smaller, 6 tied including the supplied map); a single rank 123 loses the tie."
+ },
+ {
+  "claim": "docs/COMPANION_BANK_STATIC_CERTIFICATE_POVM_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-30.md",
+  "kind": "appended",
+  "text": " COVERAGE (carried): this 2026-07-30 note added NARROW candidate-input coverage for the split and merge constructors; the still-absent Cycle-317 coverage is dilation, trace-functional, release, and end-to-end physical-program - the blanket 'coverage absent' reading is stale as of the era close."
+ }
+]

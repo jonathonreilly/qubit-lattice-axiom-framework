@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_rconn_signed_center_bridge_selector_firewall_note_2026-06-21",
+ "title": "QUARK_ROUTE2_RCONN_SIGNED_CENTER_BRIDGE_SELECTOR_FIREWALL_NOTE_2026-06-21",
+ "science": "N2 CONFIRM ARCHIVE on full read: decomposes the collapsed color bridge into the three independent selectors (domain functor, sign/orientation - positive placement gives rho_E=-69/4, center-slot placement) plus kappa_EW=0 for physical R_conn; PASS=78. Honest scoped route-pruning of the single rho_E r",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_RCONN_SIGNED_CENTER_BRIDGE_SELECTOR_FIREWALL_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_RCONN_SIGNED_CENTER_BRIDGE_SELECTOR_FIREWALL_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

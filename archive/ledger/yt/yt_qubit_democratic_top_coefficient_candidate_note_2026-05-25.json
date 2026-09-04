@@ -1,0 +1,17 @@
+{
+ "id": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+ "title": "YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25",
+ "science": "B03: S6-invariant unit vector unique, amplitude 1/sqrt(6); 05-28 audit split honored (bridge admitted, not derived). Full read.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+  "moved_to": "archive/notes/docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: rescued orthonormal-basis note (D4 = the same democratic unit, audited-bounded) + P-cal/YT group record",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

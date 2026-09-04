@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.connected_edge_code_odd_sector_join_cycle265_note_2026-07-17",
+ "title": "CONNECTED_EDGE_CODE_ODD_SECTOR_JOIN_CYCLE265_NOTE_2026-07-17",
+ "science": "C265: connected edge code + cell-center field gives exact exponent 6L^3, but the unmarked join is a multiplicity qubit (P_m=I) and the one-port join has P_m=b^N; all 64 port subsets exhausted - no invariant odd subset exists. July CAR-compiler-era note (Cycles 231-280), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/CONNECTED_EDGE_CODE_ODD_SECTOR_JOIN_CYCLE265_NOTE_2026-07-17.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/CONNECTED_EDGE_CODE_ODD_SECTOR_JOIN_CYCLE265_NOTE_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-car-compiler-era.md (July CAR-compiler era, Cycles 231\u2013280 (WH-car) \u2014 lane memo); carrier: archive/chains/july-car-compiler-era.md (drafted: phase3/memos/WH-car.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-car"
+}

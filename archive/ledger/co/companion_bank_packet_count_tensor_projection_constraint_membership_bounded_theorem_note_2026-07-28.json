@@ -1,0 +1,18 @@
+{
+ "id": "companion_bank_packet_count_tensor_projection_constraint_membership_bounded_theorem_note_2026-07-28",
+ "title": "COMPANION_BANK_PACKET_COUNT_TENSOR_PROJECTION_CONSTRAINT_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-28",
+ "science": "Bounded support: two supplied count-to-coordinate conventions map packet schedule counts onto the S1 tensor fixture - the fixture-scaled arm is a homogeneous replay (all counts 24), the stage-slot arm a constructed nonmember - with the note itself flagging that the S1 'Ward-like' matrix is a generic seeded random matrix; BOUNDED_SUPPORT retention, no physical source or Ward claim. Late-July Born/POVM/truncated-Fock support-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/COMPANION_BANK_PACKET_COUNT_TENSOR_PROJECTION_CONSTRAINT_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "moved_to": "archive/notes/docs/COMPANION_BANK_PACKET_COUNT_TENSOR_PROJECTION_CONSTRAINT_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-born-povm-support-era.md (late-July Born/POVM/truncated-Fock support era (D-born) \u2014 lane memo); carrier: archive/chains/july-born-povm-support-era.md (drafted: phase3/memos/D-born.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-born"
+}

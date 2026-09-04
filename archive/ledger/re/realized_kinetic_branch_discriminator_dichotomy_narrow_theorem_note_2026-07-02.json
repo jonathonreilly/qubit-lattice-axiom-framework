@@ -1,0 +1,18 @@
+{
+ "id": "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
+ "title": "REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02",
+ "science": "The four-discriminator package separating K0/K1 on the parent two-flux-class surface: D1 Clifford capacity (three mutually anticommuting self-adjoint unitaries, no fourth - nullspace computed), D2 Dirac-square vs scalar perfect-square dispersion (positive shift-minimization floor), D3 eight isolated zeros vs an extensive zero surface (428 -> 1388 vs exactly 8), D4 per-direction algebra dimensions [1,1,1] vs [2,2,2] - with flux-flip and illegal-frame guard legs; the selector bit explicitly not decided. July realized-kinetic-branch docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-realized-kinetic-era.md (July realized-kinetic branch cluster (D-rk) \u2014 lane memo); carrier: archive/chains/july-realized-kinetic-era.md (drafted: phase3/memos/D-rk.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-rk"
+}

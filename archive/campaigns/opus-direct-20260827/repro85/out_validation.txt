@@ -1,0 +1,37 @@
+T01 flat:  V per simplex = [0.04166667]  (exact 1/24 = 0.041666666666666664 )
+T01 flat:  lumped mass per vertex = [1.]
+T01 flat stencil (nonzero offsets):
+      (np.int64(0), np.int64(0), np.int64(0), np.int64(0)) : +8.000000000000
+      (np.int64(-1), np.int64(0), np.int64(0), np.int64(0)) : -1.000000000000
+      (np.int64(0), np.int64(-1), np.int64(0), np.int64(0)) : -1.000000000000
+      (np.int64(0), np.int64(0), np.int64(-1), np.int64(0)) : -1.000000000000
+      (np.int64(0), np.int64(0), np.int64(0), np.int64(-1)) : -1.000000000000
+      (np.int64(0), np.int64(0), np.int64(0), np.int64(1)) : -1.000000000000
+      (np.int64(0), np.int64(0), np.int64(1), np.int64(0)) : -1.000000000000
+      (np.int64(0), np.int64(1), np.int64(0), np.int64(0)) : -1.000000000000
+      (np.int64(1), np.int64(0), np.int64(0), np.int64(0)) : -1.000000000000
+T01 complex-step check:  max rel err dV = 2.829e-13,  dloc = 1.050e-15
+T01 row sums of dloc (must vanish): 4.163e-17
+
+T04 L=8 amp=0.05:  rms dVol=2.5828e-01  rms dReg=1.8955e-03
+    h=0.0001:  max |ana-fd|/rms   dVol 7.784e-09   dS_Regge 2.417e-06
+    h=1e-05:  max |ana-fd|/rms   dVol 1.588e-10   dS_Regge 1.494e-07
+
+   m2=0.25 imp=True (c=2,x0=0):  Bloch +9.18443786177641e-10  dense +9.18443786219692e-10  d/rms 5.34e-15
+   m2=0.25 imp=True (c=11,x0=2):  Bloch +2.70889243939532e-08  dense +2.70889243937648e-08  d/rms 2.39e-14
+   m2=0.25 imp=True (c=8,x0=3):  Bloch +2.29676315398178e-10  dense +2.29676315356645e-10  d/rms 5.28e-15
+   m2=0.25 imp=True (c=10,x0=0):  Bloch -1.20237848288674e-08  dense -1.20237848289653e-08  d/rms 1.24e-14
+T06 L=6 m2=0.25 improved=True:  MAX |Bloch-dense|/rms = 2.395e-14
+
+   m2=0.0 imp=True (c=2,x0=0):  Bloch +2.09202926416120e-09  dense +2.09202926451729e-09  d/rms 1.75e-14
+   m2=0.0 imp=True (c=11,x0=2):  Bloch +7.01698336553656e-08  dense +7.01698336551886e-08  d/rms 8.67e-15
+   m2=0.0 imp=True (c=8,x0=3):  Bloch +1.86562558844336e-10  dense +1.86562558929254e-10  d/rms 4.16e-15
+   m2=0.0 imp=True (c=10,x0=0):  Bloch -3.14499982338576e-08  dense -3.14499982340244e-08  d/rms 8.17e-15
+T06 L=6 m2=0.0 improved=True:  MAX |Bloch-dense|/rms = 1.745e-14
+
+   m2=0.0 imp=False (c=2,x0=0):  Bloch +5.94347713821273e-09  dense +5.94347713810130e-09  d/rms 4.77e-15
+   m2=0.0 imp=False (c=11,x0=2):  Bloch +8.33372380361069e-08  dense +8.33372380359804e-08  d/rms 5.42e-15
+   m2=0.0 imp=False (c=8,x0=3):  Bloch +4.11942003355742e-09  dense +4.11942003358914e-09  d/rms 1.36e-15
+   m2=0.0 imp=False (c=10,x0=0):  Bloch -3.14306069425473e-08  dense -3.14306069426653e-08  d/rms 5.05e-15
+T06 L=6 m2=0.0 improved=False:  MAX |Bloch-dense|/rms = 5.415e-15
+

@@ -1,0 +1,18 @@
+{
+ "id": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+ "title": "PRIMITIVE_RETIREMENT_REVIEW_AFTER_FOUR_AXIOM_RESET_NOTE_2026-07-05",
+ "science": "The primitive-retirement gate map after the four-axiom reset: none of the three approved primitives (scale-reference, kinetic-isotropy, realized-state) is retireable from the updated axiom text - eight attempted derivation routes each fail - with kinetic isotropy marked the only serious future retirement lane and its required bridge stack named (realized one-tick carrier, transfer normalization, B-W/OS0 readout, single-tick placement). July meta/process-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. ROUTE TABLE (carried): the eight failed retirement routes are an explicit N1 table on the primary - dimensional analysis, spatial symmetry, reflection/transfer, B4/S4 transitivity, unit-tick-to-OS0 normalization, law/state qualification, Records form, registry withdrawal - each with a source-specific failure witness.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/PRIMITIVE_RETIREMENT_REVIEW_AFTER_FOUR_AXIOM_RESET_NOTE_2026-07-05.md",
+  "moved_to": "archive/notes/docs/PRIMITIVE_RETIREMENT_REVIEW_AFTER_FOUR_AXIOM_RESET_NOTE_2026-07-05.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-meta-process-era.md (July meta/process era + small singletons (D-meta) \u2014 lane memo); carrier: archive/chains/july-meta-process-era.md (drafted: phase3/memos/D-meta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-meta"
+}

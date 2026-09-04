@@ -1,0 +1,22 @@
+[
+ {
+  "claim": "docs/THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+  "kind": "appended",
+  "text": " CODOMAIN (carried): the zero-solution degeneracy of the product-to-sum equation holds for NONNEGATIVE readouts F:(0,inf)->[0,inf) on the full positive group only - the note's own essential premise; F(x)=log x is a nonzero signed solution once nonnegativity is dropped."
+ },
+ {
+  "claim": "docs/THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md",
+  "kind": "appended",
+  "text": " BOUNDARY (attack-pass D dispute, verified): the sign-branch removal rests on det(M_KS+mI)=(prod(m^2+lambda^2))*m^(2z)>=0; at m=0 with a zero mode (z>=1) the determinant is 0 and arg det is UNDEFINED - nonnegativity alone fixes the branch only away from zero-determinant points; an explicit no-zero-mode boundary or convention is needed for the all-real-m statement."
+ },
+ {
+  "claim": "docs/THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02.md",
+  "kind": "appended",
+  "text": " PAYLOAD (carried): 38 converged fiber solutions across two families with a wired counterexample path; both-sheet singular-value certificates; low-multidegree singlet dimensions 1/2/2 with ONLY the two even quartic spaces pair-generated - the 3x3x3 epsilon channel is not an even pair-generated channel."
+ },
+ {
+  "claim": "docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
+  "kind": "appended",
+  "text": " LIVE ROUTES (carried): the note's 'Remaining Live Routes' names, beyond the two FRONT obligation files, a scalar-mass action-surface theorem and a joint gauge/mass theorem preserving theta-bar - still-live mass-side work under the open strong-CP gate, not archived ancestry."
+ }
+]

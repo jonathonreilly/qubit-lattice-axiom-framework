@@ -1,0 +1,19 @@
+T08(a) flat-torus heat trace, relative error |K_lat - K_exact|/K_exact
+         s     L=32 plain     L=32 impr    L=64 plain     L=64 impr
+      2.00      1.598e-01     1.892e-02     1.598e-01     1.892e-02
+      2.70      1.093e-01     1.003e-02     1.093e-01     1.003e-02
+      3.00      9.638e-02     8.074e-03     9.638e-02     8.074e-03
+      4.00      6.935e-02     4.506e-03     6.935e-02     4.506e-03
+      6.00      4.454e-02     2.000e-03     4.454e-02     2.000e-03
+      8.00      3.282e-02     1.126e-03     3.282e-02     1.126e-03
+
+T08(b) a_1 on a CURVED configuration (exact spectrum, Bloch).
+    measured a1_int := [ K(s) - (4 pi s)^-2 Vol ] * (4 pi s)^2 / s   vs   (1/6) int sqrt(g) R = S_Regge/3
+    L=12 amp=0.25 conformal-type: Vol=20941.349757  S_Regge=131.092255  (1/6)int R = 43.697418
+         s     plain a1_int  improved a1_int      predicted
+      0.60      26974.12540       7132.33247       43.69742
+      1.00       9518.07785       2206.32273       43.69742
+      1.50       3621.76374        721.71622       43.69742
+      2.00       1848.32105        342.73762       43.69742
+      3.00        782.37697        156.90520       43.69742
+      4.00        467.34048        122.53703       43.69742

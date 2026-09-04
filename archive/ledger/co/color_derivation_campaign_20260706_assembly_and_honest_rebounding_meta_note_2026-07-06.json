@@ -1,0 +1,18 @@
+{
+ "id": "color_derivation_campaign_20260706_assembly_and_honest_rebounding_meta_note_2026-07-06",
+ "title": "COLOR_DERIVATION_CAMPAIGN_20260706_ASSEMBLY_AND_HONEST_REBOUNDING_META_NOTE_2026-07-06",
+ "science": "The color campaign closing brief (blocks 01-07): color is NOT derived; MR_color's single residual is re-bounded into eight named open premises (SUPPLIED-C3, MARGINAL-READ, WEIGHT-UNIFORMITY, FERMI-FILL, REGISTERED-FACTOR, SUPPLIED-BILINEAR, ARROW, SUCCESSION-ORIENT) with per-block runner tallies and convergence pointers; Tier-A count stays 0 - citable only as the campaign pointer. July flavor/CKM/color/species-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. BLOCK-03 PAYLOAD (carried): site-locality alone FAILS via the |00>/|11> marginal exhibit; LOCK-LOCAL + MARGINAL-READ + PHASE-FREE + WEIGHT-UNIFORMITY implies record-level color indistinguishability - strictly weaker than singletness - with exact closed-shell Fock marginal I_3/3; the proof connecting the eight-premise ledger to what it buys.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/COLOR_DERIVATION_CAMPAIGN_20260706_ASSEMBLY_AND_HONEST_REBOUNDING_META_NOTE_2026-07-06.md",
+  "moved_to": "archive/notes/docs/COLOR_DERIVATION_CAMPAIGN_20260706_ASSEMBLY_AND_HONEST_REBOUNDING_META_NOTE_2026-07-06.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-flavor-species-era.md (July flavor/CKM/color/species era (D-flav) \u2014 lane memo); carrier: archive/chains/july-flavor-species-era.md (drafted: phase3/memos/D-flav.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-flav"
+}

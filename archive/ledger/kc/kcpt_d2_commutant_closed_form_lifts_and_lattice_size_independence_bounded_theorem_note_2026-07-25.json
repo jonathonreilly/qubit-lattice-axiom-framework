@@ -1,0 +1,18 @@
+{
+ "id": "kcpt_d2_commutant_closed_form_lifts_and_lattice_size_independence_bounded_theorem_note_2026-07-25",
+ "title": "KCPT_D2_COMMUTANT_CLOSED_FORM_LIFTS_AND_LATTICE_SIZE_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-07-25",
+ "science": "Closed-form translation lifts zeta_nu for the D2 commutant with |Comm| = 96N verified at L in {4,6,8,10} and lower-bounded at L=12 - lattice-size independence of the commutant order, with the liftability obstruction the named open path. July K-CPT Dirac commutant/census-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. SCOPE (carried): |Comm| = 96N equality is proven for the exhaustive L in {4,6,8,10} ONLY; at L=12 the note proves |Comm(D2)| >= 96N = 165888 and states equality is NOT established; the general even-L results cover the translation lifts, commutator, and q formulas.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/KCPT_D2_COMMUTANT_CLOSED_FORM_LIFTS_AND_LATTICE_SIZE_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "moved_to": "archive/notes/docs/KCPT_D2_COMMUTANT_CLOSED_FORM_LIFTS_AND_LATTICE_SIZE_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-kcpt-dirac-era.md (July K-CPT Dirac commutant/census era (D-kcpt) \u2014 lane memo); carrier: archive/chains/july-kcpt-dirac-era.md (drafted: phase3/memos/D-kcpt.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-kcpt"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "theta_native_record_time_spatial_split_orientation_import_localization_conjugation_parity_bridge_bounded_theorem_note_2026-07-03",
+ "title": "THETA_NATIVE_RECORD_TIME_SPATIAL_SPLIT_ORIENTATION_IMPORT_LOCALIZATION_CONJUGATION_PARITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-07-03",
+ "science": "The native-footing localization: Q = e.b exactly (electric x magnetic split), invariant under the 24 supplied proper rotations and odd under each unsupplied orientation flip (P, T; even under PT) - the sign of Q is one product-orientation bit the axioms provably do not supply; orientation swap = complex conjugation on the one-site Cl(3,0) algebra (omega = e1e2e3 = i); a theta-like gauge seed requires an orientation import, whose natural home is the mass side's arg det M. July theta defect/phase/determinant-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THETA_NATIVE_RECORD_TIME_SPATIAL_SPLIT_ORIENTATION_IMPORT_LOCALIZATION_CONJUGATION_PARITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-07-03.md",
+  "moved_to": "archive/notes/docs/THETA_NATIVE_RECORD_TIME_SPATIAL_SPLIT_ORIENTATION_IMPORT_LOCALIZATION_CONJUGATION_PARITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-07-03.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-theta-era.md (July theta defect/phase/determinant era (D-theta) \u2014 lane memo); carrier: archive/chains/july-theta-era.md (drafted: phase3/memos/D-theta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-theta"
+}

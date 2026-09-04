@@ -1,0 +1,27 @@
+=== C2b (corrected orbits)  orbit-reduced vs full L^3 momentum sum ===
+  L=10 CONFORMAL     eps=0.00 IMPR  rel:  4.441e-16  0.000e+00  2.220e-16  nq 116/1000 wt 1000
+  L=10 CONFORMAL     eps=0.00 plain rel:  0.000e+00  0.000e+00  0.000e+00  nq 116/1000 wt 1000
+  L=10 CONFORMAL     eps=0.10 IMPR  rel: -6.661e-16 -4.441e-16  0.000e+00  nq 116/1000 wt 1000
+  L=10 CONFORMAL     eps=0.10 plain rel: -3.331e-16  0.000e+00  0.000e+00  nq 116/1000 wt 1000
+  L=10 TRACELESS-TT  eps=0.00 IMPR  rel:  6.661e-16  2.220e-16  2.220e-16  nq 282/1000 wt 1000
+  L=10 TRACELESS-TT  eps=0.00 plain rel:  6.661e-16  2.220e-16  0.000e+00  nq 282/1000 wt 1000
+  L=10 TRACELESS-TT  eps=0.10 IMPR  rel:  2.102e-09 -5.417e-10 -2.220e-16  nq 282/1000 wt 1000
+  L=10 TRACELESS-TT  eps=0.10 plain rel:  2.592e-09 -5.904e-10 -4.441e-16  nq 282/1000 wt 1000
+  L=12 CONFORMAL     eps=0.00 IMPR  rel:  4.441e-16  2.220e-16 -2.220e-16  nq 189/1728 wt 1728
+  L=12 CONFORMAL     eps=0.00 plain rel:  2.442e-15  1.110e-15  2.220e-16  nq 189/1728 wt 1728
+  L=12 CONFORMAL     eps=0.10 IMPR  rel:  0.000e+00 -2.220e-16  0.000e+00  nq 189/1728 wt 1728
+  L=12 CONFORMAL     eps=0.10 plain rel:  2.220e-15  2.220e-16  0.000e+00  nq 189/1728 wt 1728
+  L=12 TRACELESS-TT  eps=0.00 IMPR  rel:  4.441e-16  4.441e-16 -2.220e-16  nq 476/1728 wt 1728
+  L=12 TRACELESS-TT  eps=0.00 plain rel:  8.882e-16  6.661e-16  4.441e-16  nq 476/1728 wt 1728
+  L=12 TRACELESS-TT  eps=0.10 IMPR  rel:  6.661e-16  0.000e+00 -4.441e-16  nq 476/1728 wt 1728
+  L=12 TRACELESS-TT  eps=0.10 plain rel:  2.665e-15  2.220e-16 -2.220e-16  nq 476/1728 wt 1728
+
+=== orbit counts / speedup at production L ===
+  L= 32 full_perm=True: nq=    3009  L^3=   32768  factor 10.89  sum(mult)=32768
+  L= 32 full_perm=False: nq=    8466  L^3=   32768  factor  3.87  sum(mult)=32768
+  L= 48 full_perm=True: nq=    9825  L^3=  110592  factor 11.26  sum(mult)=110592
+  L= 48 full_perm=False: nq=   28250  L^3=  110592  factor  3.91  sum(mult)=110592
+  L= 64 full_perm=True: nq=   22913  L^3=  262144  factor 11.44  sum(mult)=262144
+  L= 64 full_perm=False: nq=   66594  L^3=  262144  factor  3.94  sum(mult)=262144
+  L= 96 full_perm=True: nq=   76097  L^3=  884736  factor 11.63  sum(mult)=884736
+  L= 96 full_perm=False: nq=  223538  L^3=  884736  factor  3.96  sum(mult)=884736

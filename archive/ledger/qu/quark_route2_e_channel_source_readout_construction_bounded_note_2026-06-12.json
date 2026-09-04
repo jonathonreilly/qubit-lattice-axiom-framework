@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_e_channel_source_readout_construction_bounded_note_2026-06-12",
+ "title": "QUARK_ROUTE2_E_CHANNEL_SOURCE_READOUT_CONSTRUCTION_BOUNDED_NOTE_2026-06-12",
+ "science": "B01 c5: W73 construction pass through the T-template; full N1-N8 gate; wrong-structure falsifier table; W1/W2/W3 wall decomposition (E-row covector / typed signed bridge / kappa_EW selector). Scope-honest. PASS=37 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_E_CHANNEL_SOURCE_READOUT_CONSTRUCTION_BOUNDED_NOTE_2026-06-12.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_E_CHANNEL_SOURCE_READOUT_CONSTRUCTION_BOUNDED_NOTE_2026-06-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: atlas carries the equivalent q_E=15/8 missing-entry form; group record notes the covector localization (ell_E=(1,21/4) on scaling channel w=(1,delta_A1), V_R(t)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

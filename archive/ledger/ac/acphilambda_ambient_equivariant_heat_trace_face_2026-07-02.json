@@ -1,0 +1,18 @@
+{
+ "id": "acphilambda_ambient_equivariant_heat_trace_face_2026-07-02",
+ "title": "ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02",
+ "science": "The 2/9 fixed-locus density acquires its ambient face: exact Z^3 equivariant heat-trace reduction to the [111] diagonal momenta with unit weights, continuum Lefschetz recovery (1/3 per unit Euclidean [111] length, 1/sqrt(3) per site) - the sqrt(3) unit junction persists verbatim in ambient coordinates. July AC_phi_lambda/R-eta campaign docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and the campaign's residue lives on the two FRONT open-gate obligation files.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-acphilambda-reta-era.md (July AC_phi_lambda / R-eta era (D-acl) \u2014 lane memo); carrier: archive/chains/july-acphilambda-reta-era.md (drafted: phase3/memos/D-acl.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the campaign's live residue is the two standing open-gate obligation files (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-acl"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_rconn_magnitude_sign_split_exact_support_note_2026-06-21",
+ "title": "QUARK_ROUTE2_RCONN_MAGNITUDE_SIGN_SPLIT_EXACT_SUPPORT_NOTE_2026-06-21",
+ "science": "B01 c4: sign-discharge theorem - positivity q_E>0 (= rho_E>-6) forces c_TE=(-5/3)/q_E<0, so a MAGNITUDE-only bridge |c_TE|=R_conn suffices for the full endpoint (branch table: +8/9 fails positivity). Narrows open import W1 from signed to unsigned. Atlas does NOT carry this (only 'not the typed signe",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_RCONN_MAGNITUDE_SIGN_SPLIT_EXACT_SUPPORT_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_RCONN_MAGNITUDE_SIGN_SPLIT_EXACT_SUPPORT_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: atlas + K1 repair paragraph",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "gauge_link_central_registration_induced_bi_invariant_step_kernel_theorem_note_2026-07-02",
+ "title": "GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02",
+ "science": "Positive-Lueders central registration on a link derives the gauge lane's step-measure premise: the induced kernel is automatically normalized, convolutional, Ad-invariant, inversion-symmetric, and representation-positive; the pointer partition {P_R} is derived by commutant computation; exact S3/Q8 witnesses plus exact negative-coefficient central counterexamples (-1/9, -23/507) prove the positive-Lueders restriction is load-bearing. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. CONDITION (carried): the induced-kernel classification holds FOR POSITION-CLASSICAL LINK STATES - the note's load-bearing condition; it does not derive position-classicality between steps, so the lane's step-measure premise is classified conditional on that supplied premise, not derived outright.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

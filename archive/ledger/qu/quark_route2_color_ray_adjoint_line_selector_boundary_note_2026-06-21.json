@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_color_ray_adjoint_line_selector_boundary_note_2026-06-21",
+ "title": "QUARK_ROUTE2_COLOR_RAY_ADJOINT_LINE_SELECTOR_BOUNDARY_NOTE_2026-06-21",
+ "science": "B02 c1: sufficiency half - a supplied physical color ray psi gives H_psi = |psi><psi| - I/3, one adjoint line, complement 7/8, whole endpoint; current bank withholds the ray (color orientation vacuous; depolarization forces I/3). PASS=15 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_COLOR_RAY_ADJOINT_LINE_SELECTOR_BOUNDARY_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_COLOR_RAY_ADJOINT_LINE_SELECTOR_BOUNDARY_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: atlas wall subsection + FRONT single-adjoint-line conditional note (J3)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "record_count_bounds_composition_words_finite_dial_bounded_note_2026-07-02",
+ "title": "RECORD_COUNT_BOUNDS_COMPOSITION_WORDS_FINITE_DIAL_BOUNDED_NOTE_2026-07-02",
+ "science": "The word-length bound: under record permanence (now axiom text) plus the named pure-letter, record-production, and finite-collection premises, a pure single-chart word has k <= N_rec; pure single-chart iteration never densifies (component chart stays {1/2}, slot chart {1} for all lengths); the mixed roots 2^(-1/3), 2^(-2/3) need the separate chart-mix premise - localizing densification's cost exactly. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/RECORD_COUNT_BOUNDS_COMPOSITION_WORDS_FINITE_DIAL_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/RECORD_COUNT_BOUNDS_COMPOSITION_WORDS_FINITE_DIAL_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-frame-weighting-era.md (July frame/weighting/readout era (D-frame) \u2014 lane memo); carrier: archive/chains/july-frame-weighting-era.md (drafted: phase3/memos/D-frame.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-frame"
+}

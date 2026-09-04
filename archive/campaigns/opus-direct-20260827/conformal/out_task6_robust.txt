@@ -1,0 +1,24 @@
+== 1. Is D_KD literally 2^(d/2) copies of Wilson-Dirac? (d=2, so 2 copies) ==
+  n=0: ||spec(D_KD) - 2x spec(D_Wilson)||_inf = 2.45e+00
+  n=1: ||spec(D_KD) - 2x spec(D_Wilson)||_inf = 2.29e+00
+  n=2: ||spec(D_KD) - 2x spec(D_Wilson)||_inf = 2.30e+00
+  n=3: ||spec(D_KD) - 2x spec(D_Wilson)||_inf = 2.35e+00
+
+== 2. Taste algebra = commutant of the Gammas in the 2^d fibre ==
+  d=2: fibre 4,  dim(commutant)=4  -> tastes = sqrt = 2 (2^(d/2)=2)
+  d=4: fibre 16,  dim(commutant)=16  -> tastes = sqrt = 4 (2^(d/2)=4)
+
+== 3. Robustness: does the 0-vs-2n split survive L, mass, Wilson r? ==
+  L  m_rho     r |         idx(G) n=1,2,3 |        idx(CL) n=1,2,3 |     maxGW
+  6    1.0   1.0 | [np.float64(0.0), np.float64(0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   4.5e-15
+  6    0.5   1.0 | [np.float64(0.0), np.float64(-0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   5.3e-15
+  6    1.5   1.0 | [np.float64(-0.0), np.float64(0.0), np.float64(-0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   4.4e-15
+  6    1.0   0.5 | [np.float64(-0.089414), np.float64(-0.0), np.float64(-0.085918)] | [np.float64(0.081043), np.float64(0.0), np.float64(-0.013068)] |   1.3e-01
+  8    1.0   1.0 | [np.float64(-0.0), np.float64(-0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   8.0e-15
+  8    0.5   1.0 | [np.float64(0.0), np.float64(0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   7.5e-15
+  8    1.5   1.0 | [np.float64(-0.0), np.float64(-0.0), np.float64(0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   6.2e-15
+  8    1.0   0.5 | [np.float64(-0.013799), np.float64(-0.29922), np.float64(0.251756)] | [np.float64(0.218449), np.float64(-0.461099), np.float64(-0.553353)] |   6.8e-02
+ 10    1.0   1.0 | [np.float64(-0.0), np.float64(-0.0), np.float64(-0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   1.0e-14
+ 10    0.5   1.0 | [np.float64(0.0), np.float64(-0.0), np.float64(-0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   8.4e-15
+ 10    1.5   1.0 | [np.float64(-0.0), np.float64(0.0), np.float64(-0.0)] | [np.float64(2.0), np.float64(4.0), np.float64(6.0)] |   8.4e-15
+ 10    1.0   0.5 | [np.float64(0.126044), np.float64(0.481593), np.float64(-0.225504)] | [np.float64(-0.101022), np.float64(0.004492), np.float64(-0.243863)] |   4.5e-02

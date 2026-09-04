@@ -1,0 +1,18 @@
+{
+ "id": "matter_realization_qubit_level_cross_site_bilinear_from_k1_structure_bounded_theorem_note_2026-07-06",
+ "title": "MATTER_REALIZATION_QUBIT_LEVEL_CROSS_SITE_BILINEAR_FROM_K1_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06",
+ "science": "K1-branch-conditional algebra: the licensed nearest-neighbor edge coefficients are exactly C_mu(x) = sigma_mu - self-adjoint, unitary, direction-tagged, pairwise anticommuting ([2,2,2] vs K0's scalar [1,1,1]); the relation to SUPPLIED-BILINEAR is structural analogy ONLY, with the carrier lift and the structure-to-state bridge the two named missing links. July meta/process-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MATTER_REALIZATION_QUBIT_LEVEL_CROSS_SITE_BILINEAR_FROM_K1_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+  "moved_to": "archive/notes/docs/MATTER_REALIZATION_QUBIT_LEVEL_CROSS_SITE_BILINEAR_FROM_K1_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-meta-process-era.md (July meta/process era + small singletons (D-meta) \u2014 lane memo); carrier: archive/chains/july-meta-process-era.md (drafted: phase3/memos/D-meta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-meta"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "finite_retained_counter_coregistration_identities_note_2026-07-24",
+ "title": "FINITE_RETAINED_COUNTER_COREGISTRATION_IDENTITIES_NOTE_2026-07-24",
+ "science": "Self-contained finite arithmetic lemma for the retained-counter decoder P(S) = K*carry + rotor: positions equal tick crossings, intervals telescope, reversal negates intervals, one bank reset with persistent carry changes nothing (carry-erasure mutation caught), deleted labels return None, and the cross-order predicate accepts the ordinary fixture and refuses the injected inversion - complete supplied fixture SHA-pinned; explicitly not physical time, clock, or Record. July singleton docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/FINITE_RETAINED_COUNTER_COREGISTRATION_IDENTITIES_NOTE_2026-07-24.md",
+  "moved_to": "archive/notes/docs/FINITE_RETAINED_COUNTER_COREGISTRATION_IDENTITIES_NOTE_2026-07-24.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-misc-singletons-era.md (July miscellaneous singletons (D-misc) \u2014 lane memo); carrier: archive/chains/july-misc-singletons-era.md (drafted: phase3/memos/D-misc.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-misc"
+}

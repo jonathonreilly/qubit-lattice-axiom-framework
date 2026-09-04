@@ -1,0 +1,18 @@
+{
+ "id": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
+ "title": "RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05",
+ "science": "The imposed record-time mass wall replaced by a monotone record-occupancy front under the stated occupancy-to-mass bridge m(s)=M(2 theta(s)-1): the chiral edge localizes at the occupancy midpoint, handedness follows the formation-gradient sign, uniform occupancy is gapped - the formation-direction parameter models the wall sign; the bridge is a model, not derived from Record dynamics. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. CONDITION (carried): the wall-replacement holds UNDER the stated occupancy-to-mass map m(s) = M(2 theta(s) - 1) - the note's own grade: a motivated model/bridge, not a derivation from full record-production dynamics; record-production dynamics and a time metric remain downstream.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
+  "moved_to": "archive/notes/docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

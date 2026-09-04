@@ -1,0 +1,17 @@
+{
+ "id": "lattice_3d_dense_spent_delay_z2_z5_support_note_2026-04-30",
+ "title": "LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z5_SUPPORT_NOTE_2026-04-30",
+ "science": "Self-relabeled salvage note ('observation-cluster salvage record ... historical observation memory only'): its surviving z=2..5 observation is exactly the live claim of the repaired spent-delay card, and the z=6 gap it flagged is closed by the dedicated 2026-05-29 endpoint packet. Same class as the",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z5_SUPPORT_NOTE_2026-04-30.md",
+  "moved_to": "archive/notes/docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z5_SUPPORT_NOTE_2026-04-30.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md (repaired live z=2..5 card) + docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md (dedicated z=2..6 en",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

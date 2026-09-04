@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_metric_selector_ratio_boundary_note_2026-06-21",
+ "title": "QUARK_ROUTE2_METRIC_SELECTOR_RATIO_BOUNDARY_NOTE_2026-06-21",
+ "science": "B03: companion of the fixed-carrier selector boundary (b02). PASS=45 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_METRIC_SELECTOR_RATIO_BOUNDARY_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_METRIC_SELECTOR_RATIO_BOUNDARY_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: atlas + group record (metric route needs b/a=1449/704 or 161a/64 - 9c/4 - 11b/9 = 0; current Fisher/tangent/Hessian surfaces supply the unit/isotropic shape, no",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

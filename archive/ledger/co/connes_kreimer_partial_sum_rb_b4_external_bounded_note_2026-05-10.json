@@ -1,0 +1,17 @@
+{
+ "id": "connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10",
+ "title": "CONNES_KREIMER_PARTIAL_SUM_RB_B4_EXTERNAL_BOUNDED_NOTE_2026-05-10",
+ "science": "Round-2 wrong-substrate intermediate (B_4 binary tree instead of the Boolean lattice; P_strict RB-but-non-idempotent; tautological first-slot readout). Its salvageable content - the partial-sum RB verification and admissions R2-A1..A4 - is restated and sharpened inside Round 3's G2 proof and N8 cros",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/CONNES_KREIMER_PARTIAL_SUM_RB_B4_EXTERNAL_BOUNDED_NOTE_2026-05-10.md",
+  "moved_to": "archive/notes/docs/CONNES_KREIMER_PARTIAL_SUM_RB_B4_EXTERNAL_BOUNDED_NOTE_2026-05-10.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

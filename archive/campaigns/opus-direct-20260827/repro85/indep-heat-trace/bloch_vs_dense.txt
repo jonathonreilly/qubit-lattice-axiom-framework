@@ -1,0 +1,6 @@
+L=4 eps=0.00 P=(0, 0, 0, 0)  max|d lambda|=5.329e-14  (spec range 0.0000..26.6667)  herm=0.0e+00  massdiff=0.0e+00
+L=4 eps=0.13 P=(0, 1, -1, 0)  max|d lambda|=6.395e-14  (spec range -0.0000..26.8582)  herm=6.7e-16  massdiff=2.2e-16
+L=4 eps=0.13 P=(1, 1, 1, 1)  max|d lambda|=5.507e-14  (spec range 0.0000..28.4547)  herm=1.3e-15  massdiff=4.4e-16
+L=6 eps=0.00 P=(0, 0, 0, 0)  max|d lambda|=1.528e-13  (spec range -0.0000..26.6667)  herm=0.0e+00  massdiff=0.0e+00
+L=6 eps=0.13 P=(0, 1, -1, 0)  max|d lambda|=1.883e-13  (spec range -0.0000..26.8396)  herm=1.1e-15  massdiff=4.4e-16
+L=6 eps=0.13 P=(1, 1, 1, 1)  max|d lambda|=1.350e-13  (spec range 0.0000..29.3747)  herm=1.4e-15  massdiff=1.1e-15

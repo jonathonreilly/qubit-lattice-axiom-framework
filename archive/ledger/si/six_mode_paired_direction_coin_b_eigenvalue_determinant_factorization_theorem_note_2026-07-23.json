@@ -1,0 +1,18 @@
+{
+ "id": "six_mode_paired_direction_coin_b_eigenvalue_determinant_factorization_theorem_note_2026-07-23",
+ "title": "SIX_MODE_PAIRED_DIRECTION_COIN_B_EIGENVALUE_DETERMINANT_FACTORIZATION_THEOREM_NOTE_2026-07-23",
+ "science": "Exact Laurent-ring determinant factorization for the streamed six-mode paired-direction coin: det(DQ(b) - bI) = -b^3(b-1)^2(b+1)(x-1)^2(y-1)^2(z-1)^2/(8xyz), proved by 2x2 blocks plus the rank-one determinant lemma and independently by full symbolic expansion, with the zero-momentum spectrum (1, -1, -1, b, b, b). July QCA/cubic-classification-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. FIREWALL (carried per the note's own boundary): b is not identified with a physical energy, mass, rate, probability, or observable; no flat-band absence, localization, interacting, infinite-volume, clock, or continuum claim follows.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SIX_MODE_PAIRED_DIRECTION_COIN_B_EIGENVALUE_DETERMINANT_FACTORIZATION_THEOREM_NOTE_2026-07-23.md",
+  "moved_to": "archive/notes/docs/SIX_MODE_PAIRED_DIRECTION_COIN_B_EIGENVALUE_DETERMINANT_FACTORIZATION_THEOREM_NOTE_2026-07-23.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-qca-cubic-era.md (July QCA/cubic classification era (D-qca) \u2014 lane memo); carrier: archive/chains/july-qca-cubic-era.md (drafted: phase3/memos/D-qca.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-qca"
+}

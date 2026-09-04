@@ -1,0 +1,17 @@
+{
+ "id": "source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30",
+ "title": "SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30",
+ "science": "B03: log = unique finite-record generator of connected responses via partition-lattice Mobius inversion; scale test K_p''(0)=p selects p=1 under unit Fisher normalization; residual = audit acceptance of 'physical scalar response means connected response'. Full read.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md",
+  "moved_to": "archive/notes/docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: PCAL retirement synthesis (FRONT; restates route 2) + M1 link-softening",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

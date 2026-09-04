@@ -1,0 +1,23 @@
+=== C2b-extra: orbit reduction at L divisible by 4 (n=2) ===
+  L=16 CONFORMAL     eps=0.05 rel:  1.554e-15  3.553e-15  0.000e+00
+  L=16 CONFORMAL     eps=0.10 rel:  8.882e-16  3.331e-15  4.441e-16
+  L=16 TRACELESS-TT  eps=0.05 rel: -2.220e-16 -2.998e-15  0.000e+00
+  L=16 TRACELESS-TT  eps=0.10 rel:  2.220e-15  1.554e-15 -2.220e-16
+  L=20 CONFORMAL     eps=0.05 rel: -1.554e-15 -1.121e-14 -8.882e-16
+  L=20 CONFORMAL     eps=0.10 rel: -5.551e-16 -6.217e-15 -1.110e-15
+  L=20 TRACELESS-TT  eps=0.05 rel:  4.441e-16  2.220e-15  8.882e-16
+  L=20 TRACELESS-TT  eps=0.10 rel:  2.220e-16  2.442e-15  4.441e-16
+
+=== eps->-eps parity, L=20 (=4k) and L=18 (not 4k) ===
+  L=18 CONFORMAL     K(+e)/K(-e)-1:  1.211e-12  3.139e-12  2.318e-13
+  L=18 TRACELESS-TT  K(+e)/K(-e)-1: -5.329e-15 -3.753e-14 -1.545e-13
+  L=20 CONFORMAL     K(+e)/K(-e)-1:  2.220e-15 -3.220e-15 -2.276e-14
+  L=20 TRACELESS-TT  K(+e)/K(-e)-1:  1.332e-15  4.530e-14  3.035e-13
+
+=== timing benchmark ===
+  L= 32 CONFORMAL     nq=   3009      0.3s  herm 2.29e-15
+  L= 32 TRACELESS-TT  nq=   8466      0.5s  herm 1.03e-15
+  L= 48 CONFORMAL     nq=   9825      1.8s  herm 2.90e-15
+  L= 48 TRACELESS-TT  nq=  28250      4.7s  herm 1.23e-15
+  L= 64 CONFORMAL     nq=  22913      6.1s  herm 4.69e-15
+  L= 64 TRACELESS-TT  nq=  66594     17.2s  herm 1.59e-15

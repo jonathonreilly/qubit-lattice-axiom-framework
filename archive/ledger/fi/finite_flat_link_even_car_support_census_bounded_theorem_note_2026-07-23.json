@@ -1,0 +1,18 @@
+{
+ "id": "finite_flat_link_even_car_support_census_bounded_theorem_note_2026-07-23",
+ "title": "FINITE_FLAT_LINK_EVEN_CAR_SUPPORT_CENSUS_BOUNDED_THEOREM_NOTE_2026-07-23",
+ "science": "Finite flat-link even-CAR support census at L=3,6,7: verified rank formulas (combined 18N-2, code exponent 7N+2, matter quotient 12N-1), complete 6B/15H onsite incidence with the repaired two-edge reverse-pair bilinear, 32N-factor support coloring (<=7 colors, 58 layers, Pauli weight 14), canonical M64 word and shrinking-seam fixtures; explicitly NOT an E G_coarse = G_physical E compiler, and fixed-section combined-code covariance fails (648) - the honest boundary. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. LIVE LINK (carried - actively needed by the Cycle-746 carrier-parity packet at the audit-queue head): the repaired carrier-parity statement is H_lr = -HermitianNormalize(A_lh A_hr) - the two-edge product already contains the helper-mode fermionic parity, and multiplying by an additional B_h cancels it; the wrong form produces operator residuals 1.4142135623730947 to 2.0.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/FINITE_FLAT_LINK_EVEN_CAR_SUPPORT_CENSUS_BOUNDED_THEOREM_NOTE_2026-07-23.md",
+  "moved_to": "archive/notes/docs/FINITE_FLAT_LINK_EVEN_CAR_SUPPORT_CENSUS_BOUNDED_THEOREM_NOTE_2026-07-23.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

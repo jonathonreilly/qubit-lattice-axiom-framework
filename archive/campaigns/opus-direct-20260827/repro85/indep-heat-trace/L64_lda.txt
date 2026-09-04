@@ -1,0 +1,26 @@
+=== L=64 traceless   dVol=-10494.90 dS=-50.5076  Int a2=0.01649
+    s=  6.0  LDA artifact=     1.089   ratio (LDA + a2 corrected) =  1.00139
+    s=  8.0  LDA artifact=    -0.066   ratio (LDA + a2 corrected) =  0.99863
+    s= 10.0  LDA artifact=    -0.279   ratio (LDA + a2 corrected) =  0.99790
+    s= 13.0  LDA artifact=    -0.287   ratio (LDA + a2 corrected) =  0.99785
+    s= 16.0  LDA artifact=    -0.238   ratio (LDA + a2 corrected) =  0.99813
+    s= 20.0  LDA artifact=    -0.178   ratio (LDA + a2 corrected) =  0.99860
+    s= 25.0  LDA artifact=    -0.127   ratio (LDA + a2 corrected) =  0.99917
+    s= 32.0  LDA artifact=    -0.084   ratio (LDA + a2 corrected) =  0.99990
+    s= 40.0  LDA artifact=    -0.057   ratio (LDA + a2 corrected) =  1.00069
+    s= 50.0  LDA artifact=    -0.009   ratio (LDA + a2 corrected) =  1.00166
+    s= 64.0  LDA artifact=     1.342   ratio (LDA + a2 corrected) =  1.00322
+    fit on s in [8,50]:  3B/dS = 0.99673    C/Int_a2 = 0.8994
+=== L=64 conformal   dVol=20908.38 dS=151.5703  Int a2=0.24455
+    s=  6.0  LDA artifact=   251.561   ratio (LDA + a2 corrected) =  1.20574
+    s=  8.0  LDA artifact=   141.267   ratio (LDA + a2 corrected) =  1.15499
+    s= 10.0  LDA artifact=    90.466   ratio (LDA + a2 corrected) =  1.12410
+    s= 13.0  LDA artifact=    53.615   ratio (LDA + a2 corrected) =  1.09500
+    s= 16.0  LDA artifact=    35.447   ratio (LDA + a2 corrected) =  1.07622
+    s= 20.0  LDA artifact=    22.722   ratio (LDA + a2 corrected) =  1.05910
+    s= 25.0  LDA artifact=    14.563   ratio (LDA + a2 corrected) =  1.04411
+    s= 32.0  LDA artifact=     8.902   ratio (LDA + a2 corrected) =  1.02872
+    s= 40.0  LDA artifact=     5.704   ratio (LDA + a2 corrected) =  1.01453
+    s= 50.0  LDA artifact=     3.701   ratio (LDA + a2 corrected) =  0.99848
+    s= 64.0  LDA artifact=     4.303   ratio (LDA + a2 corrected) =  0.97583
+    fit on s in [8,50]:  3B/dS = 1.11220    C/Int_a2 = 0.5120

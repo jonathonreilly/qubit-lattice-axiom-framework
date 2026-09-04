@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_e_center_lift_measured_calibration_narrow_theorem_note_2026-06-10",
+ "title": "QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10",
+ "science": "THREAD-READ (T3): the N=15 relocation note \u2014 measured chain matches the target within finite-box tolerances with the 108x deviation hierarchy honestly flagged as the it-could-fail warning; named the box-size scan as the decisive discriminator (which then negatively resolved it, vindicating the flag)",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas (FRONT); superseded empirically by the box-size scan + honest characterization",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

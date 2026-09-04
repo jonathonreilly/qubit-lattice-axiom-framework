@@ -1,0 +1,17 @@
+{
+ "id": "diamond_nv_phase_ramp_signal_budget_note",
+ "title": "DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE",
+ "science": "Third framing of the same discriminator card: observables, quasi-static null, qualitative ordering, control stack, hit/miss criteria and citations are all carried verbatim by the sibling DIAMOND_SENSOR_PROTOCOL (adds the scan-class table) and DIAMOND_SENSOR_PREDICTION (adds the toy scaling law) note",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md",
+  "moved_to": "archive/notes/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

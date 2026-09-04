@@ -1,0 +1,16 @@
+{
+ "id": "campaign-physics-loops-rollups-202608",
+ "title": "physics-loops-rollups-202608",
+ "science": "Five completed physics-loop campaign roll-ups (2026-08-15 24H, 08-16 self-block, 08-18 48H, 08-20 48H, 08-23 complex-structure) plus the 2026-08-21 decision memo - the per-campaign narrative records whose landed science lives in the docs notes and PR trail; the live mainline and causal-time records stay as working surfaces.",
+ "source": {
+  "kind": "campaign-packet",
+  "path": "archive/campaigns/physics-loops-rollups-202608",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/campaigns/physics-loops-rollups-202608/ (whole packet); this ledger line",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04 (see archive/campaigns/densify-freeze-20260904/)"
+ },
+ "status": "archived"
+}

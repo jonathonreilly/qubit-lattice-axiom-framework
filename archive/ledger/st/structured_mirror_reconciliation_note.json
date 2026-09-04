@@ -1,0 +1,17 @@
+{
+ "id": "structured_mirror_reconciliation_note",
+ "title": "STRUCTURED_MIRROR_RECONCILIATION_NOTE",
+ "science": "Self-labeled historical pre-correction comparison using the defective seven-term statistic; it names its own corrected successor as the current authority.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/STRUCTURED_MIRROR_RECONCILIATION_NOTE.md",
+  "moved_to": "archive/notes/docs/STRUCTURED_MIRROR_RECONCILIATION_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.common_acoustic_cone_mass_cycle218_note_2026-07-16",
+ "title": "COMMON_ACOUSTIC_CONE_MASS_CYCLE218_NOTE_2026-07-16",
+ "science": "Cycle 218: unit-covariant common-cone correction - E_rest = m c^2 with c^2=1/3 on the Cycle-215 cone; exchange charge is E_rest/c^2; alpha = 3[tan(beta/2)-beta/2] fixed by det C=1. July mass-era note (Cycles 200-227), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/COMMON_ACOUSTIC_CONE_MASS_CYCLE218_NOTE_2026-07-16.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/COMMON_ACOUSTIC_CONE_MASS_CYCLE218_NOTE_2026-07-16.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-era.md (July mass era, Cycles 200\u2013227 (WH-mass) \u2014 lane memo); carrier: archive/chains/july-mass-era.md (drafted: phase3/memos/WH-mass.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-mass"
+}

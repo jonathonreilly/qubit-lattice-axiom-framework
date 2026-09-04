@@ -1,0 +1,18 @@
+{
+ "id": "theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17",
+ "title": "THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17",
+ "science": "Two minimal phase-erasure forcing pairs on the determinant channel: conjugate-pair cancellation + K/CPT orbit constancy forces h = 0, and the continuous character law + orbit constancy forces k = 0 - with exact witnesses (I_sin, I_cos, f_1, cos) showing neither member removable; cancellation is an explicit supplied condition, NOT Record additivity, and the physical cross-sector obligation stays open. July theta defect/phase/determinant-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+  "moved_to": "archive/notes/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-theta-era.md (July theta defect/phase/determinant era (D-theta) \u2014 lane memo); carrier: archive/chains/july-theta-era.md (drafted: phase3/memos/D-theta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-theta"
+}

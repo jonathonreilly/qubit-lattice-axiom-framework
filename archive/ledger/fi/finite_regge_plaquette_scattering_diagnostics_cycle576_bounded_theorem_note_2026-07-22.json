@@ -1,0 +1,18 @@
+{
+ "id": "finite_regge_plaquette_scattering_diagnostics_cycle576_bounded_theorem_note_2026-07-22",
+ "title": "FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22",
+ "science": "Cycle 576's three-route metric/source-law bridge tournament on fully supplied fixtures: Route A's 361-coordinate 24-sector Regge model (Bianchi and Ward identities, all 24 covariance cases, 576 products, train L=3 fixture plus two held L=4 fixtures (amplitudes 0.37 and -0.81) without refit, per the note's own inventory (its summary line \"held L=3,4\" is loose)), Route B's 31-coordinate plaquette/conjugate model (reciprocal mixed response; nonzero R3 residual as a route diagnostic), and Route C's 12-direction Grover face-scattering model - exact algebraic identities plus comparator residuals, explicitly no Einstein equation, stress tensor, or gravity claim. July singleton docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22.md",
+  "moved_to": "archive/notes/docs/FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-misc-singletons-era.md (July miscellaneous singletons (D-misc) \u2014 lane memo); carrier: archive/chains/july-misc-singletons-era.md (drafted: phase3/memos/D-misc.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the source-bridge diagnostics' live successor is the gravity/source mainline (blocks 153-173, FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-misc"
+}

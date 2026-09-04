@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_source_domain_sign_support_typecast_remainder_note_2026-06-21",
+ "title": "QUARK_ROUTE2_SOURCE_DOMAIN_SIGN_SUPPORT_TYPECAST_REMAINDER_NOTE_2026-06-21",
+ "science": "B02 c3: sign is support (negative throughout positive-lift family), typecast is the remainder. PASS=45 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_SOURCE_DOMAIN_SIGN_SUPPORT_TYPECAST_REMAINDER_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_SOURCE_DOMAIN_SIGN_SUPPORT_TYPECAST_REMAINDER_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: K1 atlas sign-discharge paragraph (THIRD in-corpus statement of the sign/magnitude split family)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

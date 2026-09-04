@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.coarse_outcome_uncompute_mass_cycle226_note_2026-07-17",
+ "title": "COARSE_OUTCOME_UNCOMPUTE_MASS_CYCLE226_NOTE_2026-07-17",
+ "science": "Cycle 226: coarse-outcome vs fine-site-archive channel fork (rho_coarse vs rho_site) - same coarse statistics, different matter states; compute/copy-coarse/uncompute preserves within-fibre coherence, archive-before-uncompute does not. July mass-era note (Cycles 200-227), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/COARSE_OUTCOME_UNCOMPUTE_MASS_CYCLE226_NOTE_2026-07-17.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/COARSE_OUTCOME_UNCOMPUTE_MASS_CYCLE226_NOTE_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-era.md (July mass era, Cycles 200\u2013227 (WH-mass) \u2014 lane memo); carrier: archive/chains/july-mass-era.md (drafted: phase3/memos/WH-mass.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-mass"
+}

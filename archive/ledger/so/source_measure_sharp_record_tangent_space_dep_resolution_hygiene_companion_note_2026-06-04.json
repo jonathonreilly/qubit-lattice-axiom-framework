@@ -1,0 +1,18 @@
+{
+ "id": "source_measure_sharp_record_tangent_space_dep_resolution_hygiene_companion_note_2026-06-04",
+ "title": "SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04",
+ "science": "Hygiene companion note of source_measure_sharp_record_tangent_space_theorem_note_2026-05-30 (dependency-resolution / runner-hash companion, 2026-06-04 wave); carries no independent claim - it records the companion-side bookkeeping for its parent and joins the parent at migration per the FOLLOW-PARENT rule of the densify freeze.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md",
+  "moved_to": "archive/notes/docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "its parent note entry source_measure_sharp_record_tangent_space_theorem_note_2026-05-30 (mechanical join)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "follows_parent": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30"
+}

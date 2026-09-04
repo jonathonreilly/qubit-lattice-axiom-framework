@@ -1,0 +1,20 @@
+PRE-REGISTERED before running (T245).
+
+R163 proposes the record field's topological defects as the route to fermions.
+Prerequisite, never checked: are they PHYSICAL excitations or plaquette noise?
+
+Tests and expectations:
+ (a) COST.  A real defect costs action.  The local action (-log of the product of
+     edge weights on the cube) should be measurably HIGHER on monopole cubes than
+     on empty ones.  If equal, they are not excitations.
+ (b) LOCALISATION.  The field disturbance should decay with distance from the
+     defect and reach the bulk value within a few lattice spacings.  If flat,
+     the "monopole" is a single-plaquette artefact with no structure around it.
+ (c) NOT GAUSSIAN NOISE.  Treating plaquette phases as Gaussian with the measured
+     rms (~0.32 rad), the chance that a six-face sum exceeds 2 pi is astronomically
+     small (~1e-15), while the measured density is ~1e-3.  If the observed density
+     is many orders above the Gaussian estimate, the defects are topological, not
+     tail events.
+
+If (a) and (b) fail, the fermion route of R163 is dead on arrival and should be
+recorded as such.

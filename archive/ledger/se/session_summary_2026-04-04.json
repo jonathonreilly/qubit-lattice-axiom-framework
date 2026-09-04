@@ -1,0 +1,17 @@
+{
+ "id": "session_summary_2026-04-04",
+ "title": "SESSION_SUMMARY_2026-04-04",
+ "science": "Historic 208-commit session narrative (dimensional kernel, valley-linear action, F~M=p class, Newton chain); carried by the landed per-claim notes and canonical card scripts.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SESSION_SUMMARY_2026-04-04.md",
+  "moved_to": "archive/notes/docs/SESSION_SUMMARY_2026-04-04.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/NEWTON_DERIVATION_NOTE.md + scripts/dimensional_gravity_card.py + scripts/lattice_3d_valley_linear_card.py + per-claim WAVE/LATTICE notes",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

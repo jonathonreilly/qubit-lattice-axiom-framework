@@ -1,0 +1,12 @@
+[
+ {
+  "claim": "docs/FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22.md",
+  "kind": "edited-full-note",
+  "text": "Cycle 576's three-route metric/source-law bridge tournament on fully supplied fixtures: Route A's 361-coordinate 24-sector Regge model (Bianchi and Ward identities, all 24 covariance cases, 576 products, train L=3 fixture plus two held L=4 fixtures (amplitudes 0.37 and -0.81) without refit, per the note's own inventory (its summary line \"held L=3,4\" is loose)), Route B's 31-coordinate plaquette/conjugate model (reciprocal mixed response; nonzero R3 residual as a route diagnostic), and Route C's 12-direction Grover face-scattering model - exact algebraic identities plus comparator residuals, explicitly no Einstein equation, stress tensor, or gravity claim. July singleton docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result."
+ },
+ {
+  "claim": "docs/PER_PLAQUETTE_LICENSE_COVARIANT_SUBDOMAIN_CLASSIFICATION_NOTE_2026-07-12.md",
+  "kind": "edited-full-note",
+  "text": "The completeness classification behind the per-plaquette license: the order-8 undirected-link stabilizer has exactly two non-endpoint orbits (A size 2, T size 8), so the covariant ENDPOINT-CONTAINING one-step domains (E subset of D, stabilizer-invariant - the theorem's stated family; without the endpoint condition the three orbits give 2^3 = 8 invariant unions) are exactly the four-element lattice {E, EuA, EuT, C_1}; the computed length-4/6/8 table shows every T-containing domain selects exactly the 24 plaquettes and nothing longer (0/264, 0/3312), the T-omitting domains select nothing, and radius-2 (38 sites, computed) admits 264/264 and 96/3312 - the enumeration cannot separate EuT from C_1; the one-tick derivation pins C_1. July singleton docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result."
+ }
+]

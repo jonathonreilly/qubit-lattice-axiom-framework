@@ -1,0 +1,18 @@
+{
+ "id": "realized_kinetic_branch_selection_frame_class_transport_narrow_theorem_note_2026-07-02",
+ "title": "REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02",
+ "science": "Class transport across local U(1) frames: the discriminator tuple (flux, algebra dimensions, availability gaps, anticommutation, |symbol| spectrum) is a class function on local-U(1) orbits, framed flux-(-1) members gauge back to eta0 through the recovered absorbing family, so the Admissibility-variation selection transports across the whole orbit on the licensed surface - raw link phases shown to be non-class-functions and the illegal SU(2) sub-region frame as the contrast. July realized-kinetic-branch docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. FIREWALL (carried per the note's own scope): the selection uses the current Admissibility variation premise plus the licensed-surface assumptions; the parent sentence 'the flux(-1) selector is not forced because K0 also satisfies the constraints' remains true for the parent's original constraint set; gauge-link backgrounds are the separate companion surface.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-realized-kinetic-era.md (July realized-kinetic branch cluster (D-rk) \u2014 lane memo); carrier: archive/chains/july-realized-kinetic-era.md (drafted: phase3/memos/D-rk.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-rk"
+}

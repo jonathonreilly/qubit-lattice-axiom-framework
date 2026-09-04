@@ -1,0 +1,17 @@
+{
+ "id": "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
+ "title": "THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26",
+ "science": "The pre-repair version of the no-rooting packet: coordinate subsets 2..7 with one-corner cases dismissed as degenerate, plus spectrum and random-subspace diagnostics later deliberately demoted. Superseded one day later by the repair that includes all 254 nonempty proper subsets (singletons tested, n",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md",
+  "moved_to": "archive/notes/docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-27.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "g_bare_same_slot_beta6_convention_note_2026-07-11",
+ "title": "G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11",
+ "science": "Convention record separating bookkeeping from theorem content: the same-slot definition (SD) A^a := C^a sets gamma* = 1 on the proved family gamma*^2 = 2N_c/beta, displaying beta = 2N_c = 6 and g_bare = 1 as definition-level choices - never citable as a framework derivation of the Wilson surface or the coupling. July meta/process-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md",
+  "moved_to": "archive/notes/docs/G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-meta-process-era.md (July meta/process era + small singletons (D-meta) \u2014 lane memo); carrier: archive/chains/july-meta-process-era.md (drafted: phase3/memos/D-meta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-meta"
+}

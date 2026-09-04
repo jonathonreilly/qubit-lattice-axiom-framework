@@ -1,0 +1,17 @@
+{
+ "id": "koide_lane_audit_batch_note_2026-05-02",
+ "title": "KOIDE_LANE_AUDIT_BATCH_NOTE_2026-05-02",
+ "science": "Meta audit-batch packet: status assessments and recommendations for three Koide-lane rows (no change / no change / runner-path repair) plus a cluster observation carried by the cited lattice-physical-matching cluster obstruction note. Audit bookkeeping, not primary science; statuses live in the audi",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/KOIDE_LANE_AUDIT_BATCH_NOTE_2026-05-02.md",
+  "moved_to": "archive/notes/docs/KOIDE_LANE_AUDIT_BATCH_NOTE_2026-05-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: audit ledger + LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

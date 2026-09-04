@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.intrinsic_simulation_observer_equivalence_record_cost_note_2026-07-14",
+ "title": "INTRINSIC_SIMULATION_OBSERVER_EQUIVALENCE_RECORD_COST_NOTE_2026-07-14",
+ "science": "Intrinsic simulation and observer equivalence priced in record cost; logical reachability is below record equivalence. July foundations-era note, personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/INTRINSIC_SIMULATION_OBSERVER_EQUIVALENCE_RECORD_COST_NOTE_2026-07-14.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/INTRINSIC_SIMULATION_OBSERVER_EQUIVALENCE_RECORD_COST_NOTE_2026-07-14.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-foundations-era.md (July foundations / exact-law era (WH-found) \u2014 lane memo); carrier: archive/chains/july-foundations-era.md (drafted: phase3/memos/WH-found.md) + TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-found"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "gauge_link_binary_registration_capacity_step_kernel_pin_theorem_note_2026-07-02",
+ "title": "GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02",
+ "science": "Binary per-step registration capacity on C^2 pins the native gauge-link step kernel to T_V (the 3+1 split saturates the two-cell capacity); exact composed family m^2(k) = m^2_Haar + (2/27)16^{1-k}, every member >1 by factor 2.36; the rate dial relocates to the informative-step fraction with unit-variance point p* = 0.409731 - located, not selected. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. CLASSIFICATION (corrected): this note is NOT a beta=6 route - it never maps its kernel or informative fraction to beta=6; it proves m^2(k) = m^2_Haar + (2/27)16^(1-k) > 1 and locates the dial p* = 0.409731, expressly 'located on the dial, not forced'.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

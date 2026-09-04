@@ -1,0 +1,17 @@
+{
+ "id": "mesoscopic_surrogate_alternate_family_scout_note",
+ "title": "MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE",
+ "science": "Planning scout whose own audit-repair split admits the recommendation (move localization attempts to the h=0.25 family) is a non-load-bearing editorial judgment; the load-bearing residue is only marker-verification of the cited upstream rows. Executed planning index.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
+  "moved_to": "archive/notes/docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md + docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md + docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md ",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

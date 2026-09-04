@@ -1,0 +1,61 @@
+Clifford chirality CL = i*Gam1*Gam2 on the SAME real Gammas:
+  herm=0.0e+00  CL^2-I=0.0e+00  {CL,Gam}=0.0e+00  TrCL=0.0e+00
+  conj(G)  - G  = 0.0e+00    (grade chirality is REAL)
+  conj(CL) + CL = 0.0e+00   (Clifford chirality is IMAGINARY)
+
+== antiunitary test: A = K (complex conjugation). Does A D_n A^-1 = D_{-n}? ==
+  real KD Gammas: ||conj(D_1) - D_(-1)|| = 0.00e+00
+  real KD Gammas: ||conj(D_2) - D_(-2)|| = 0.00e+00
+  real KD Gammas: ||conj(D_3) - D_(-3)|| = 0.00e+00
+  => A=K maps flux n -> -n exactly.  [A,G]=0 (G real) but {A,CL}=0 (CL imaginary).
+  R59 criterion: index even in n  <=>  antiunitary exists AND commutes with the chirality.
+
+==============================================================================
+A) real Gammas + REAL grade chirality G      (framework's stated setup)
+--- KD f=4, chirality G  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+ -3   0.00e+00   4.006e-15  8.487e-01    0.000000      6   3   3
+ -2   0.00e+00   7.553e-15  9.004e-01   -0.000000      4   2   2
+ -1   0.00e+00   4.441e-15  9.505e-01   -0.000000      2   1   1
+  0   0.00e+00   5.773e-15  1.000e+00   -0.000000      4   2   2
+  1   0.00e+00   4.441e-15  9.505e-01   -0.000000      2   1   1
+  2   0.00e+00   7.553e-15  9.004e-01   -0.000000      4   2   2
+  3   0.00e+00   4.006e-15  8.487e-01    0.000000      6   3   3
+    dim=256  Tr(chirality)=0.000e+00
+
+B) SAME real Gammas + IMAGINARY Clifford chirality i*Gam1*Gam2
+--- KD f=4, chirality i*G1*G2  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+ -3   0.00e+00   3.595e-15  8.487e-01   -6.000000      6   0   6
+ -2   0.00e+00   7.994e-15  9.004e-01   -4.000000      4   0   4
+ -1   0.00e+00   4.004e-15  9.505e-01   -2.000000      2   0   2
+  0   0.00e+00   6.217e-15  1.000e+00    0.000000      4   2   2
+  1   0.00e+00   4.004e-15  9.505e-01    2.000000      2   2   0
+  2   0.00e+00   7.994e-15  9.004e-01    4.000000      4   4   0
+  3   0.00e+00   3.595e-15  8.487e-01    6.000000      6   6   0
+    dim=256  Tr(chirality)=0.000e+00
+
+==============================================================================
+C) does the complexified (unitary-conjugated) fibre change either answer?
+  max|Im Gamma'| = 0.9501  (Gammas complexified)
+  ||conj(D'_1) - D'_(-1)|| = 0.950  <- naive reality diagnostic now FAILS
+  ||conj(D'_2) - D'_(-2)|| = 0.950  <- naive reality diagnostic now FAILS
+  ||conj(D'_3) - D'_(-3)|| = 0.950  <- naive reality diagnostic now FAILS
+--- complexified fibre, chirality G'  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  1   8.88e-16   4.892e-15  9.505e-01   -0.000000      2   1   1
+  2   8.88e-16   6.661e-15  9.004e-01   -0.000000      4   2   2
+  3   8.88e-16   7.550e-15  8.487e-01   -0.000000      6   3   3
+    dim=256  Tr(chirality)=-7.105e-15
+--- complexified fibre, chirality CL'  (L=8, m_rho=1.0, r=1.0) ---
+  n   chirherm      GWviol      minSV       index  nzero  n+  n-
+  1   1.33e-15   6.220e-15  9.505e-01    2.000000      2   2   0
+  2   1.33e-15   4.001e-15  9.004e-01    4.000000      4   4   0
+  3   1.33e-15   7.557e-15  8.487e-01    6.000000      6   6   0
+    dim=256  Tr(chirality)=-5.684e-14
+
+==============================================================================
+D) can a 2-dim (single-taste) Clifford rep in d=2 have REAL Gammas AND a real chirality?
+  Gam1=s1, Gam2=s3 (the only real symmetric anticommuting pair up to O(2)).
+  best real symmetric CH with {CH,Gam}=0 and CH^2=I over 2e5 random tries: residual = 1.0248
+  (algebraically: CH must be prop. to sigma_2, which is imaginary. NO real 2d option.)

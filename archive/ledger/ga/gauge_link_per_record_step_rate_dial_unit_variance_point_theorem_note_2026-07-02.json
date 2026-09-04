@@ -1,0 +1,18 @@
+{
+ "id": "gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02",
+ "title": "GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02",
+ "science": "The rate half of the record-step dynamics program: composition adds heat-kernel rates exactly, every structural premise of the bi-invariant diffusive class is rate-blind, the scale-reference primitive by its own text does not cover the dimensionless rate, and tau = 1/2 is located exactly as the unit-variance-per-step setting (beta = 2N_c = 6 under the leading map) - a registered-dial-shaped residual, not derived. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. INCONSISTENCY (attack-pass D dispute, verified): the note states per-direction second moment 2 tau AND <sum theta_j^2> -> 8 tau_eff over dim su(3)=8 directions ('8 directions at 2 tau each') - internally off by a factor of two (8 x 2tau = 16tau); the unit-point identification through this display needs re-derivation with a consistent normalization on any live use. Also: tau_eff(beta) = (N_c/beta)(1+O(1/beta)) is asymptotic; the exact arithmetic concerns the separately defined leading map tau_lead := N_c/beta, not a finite-beta equality.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

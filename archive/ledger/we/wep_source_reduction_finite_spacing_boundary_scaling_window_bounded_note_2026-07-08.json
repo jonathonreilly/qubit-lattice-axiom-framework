@@ -1,0 +1,18 @@
+{
+ "id": "wep_source_reduction_finite_spacing_boundary_scaling_window_bounded_note_2026-07-08",
+ "title": "WEP_SOURCE_REDUCTION_FINITE_SPACING_BOUNDARY_SCALING_WINDOW_BOUNDED_NOTE_2026-07-08",
+ "science": "Exact free source-function formulas: species-blind G(x) proportional to M_I forces G = cF with F = (1/2) sinh(2x); the equal-mass free-composite discriminator F(2x)/2F(x) = cosh(2x) = 1 + 2x^2 + ... separates the two prescriptions at finite spacing; one finite same-rest-energy contact comparator recorded. July mass/source/Poisson-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WEP_SOURCE_REDUCTION_FINITE_SPACING_BOUNDARY_SCALING_WINDOW_BOUNDED_NOTE_2026-07-08.md",
+  "moved_to": "archive/notes/docs/WEP_SOURCE_REDUCTION_FINITE_SPACING_BOUNDARY_SCALING_WINDOW_BOUNDED_NOTE_2026-07-08.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-source-poisson-era.md (July mass/source/Poisson era (D-mass) \u2014 lane memo); carrier: archive/chains/july-mass-source-poisson-era.md (drafted: phase3/memos/D-mass.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-mass"
+}

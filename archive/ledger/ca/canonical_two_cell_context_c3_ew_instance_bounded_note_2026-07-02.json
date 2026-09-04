@@ -1,0 +1,18 @@
+{
+ "id": "canonical_two_cell_context_c3_ew_instance_bounded_note_2026-07-02",
+ "title": "CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02",
+ "science": "The canonical two-cell frame (unit direction + HS orthocomplement) instantiated twice: the landed C3 context (I, B = J-I; common-factor identity (3a^2,6|b|^2) = 3(a^2,2|b|^2)) and the M_3 unit/traceless EW instance (8/9 cardinality; kappa-sensitive off-diagonal witness) - supporting the named EW instance premise without adopting it. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-frame-weighting-era.md (July frame/weighting/readout era (D-frame) \u2014 lane memo); carrier: archive/chains/july-frame-weighting-era.md (drafted: phase3/memos/D-frame.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-frame"
+}

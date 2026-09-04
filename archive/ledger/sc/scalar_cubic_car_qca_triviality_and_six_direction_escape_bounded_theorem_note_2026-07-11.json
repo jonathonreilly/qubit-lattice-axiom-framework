@@ -1,0 +1,18 @@
+{
+ "id": "scalar_cubic_car_qca_triviality_and_six_direction_escape_bounded_theorem_note_2026-07-11",
+ "title": "SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11",
+ "science": "The Gaussian/CAR category bridge plus the scalar triviality theorem: every finite Laurent unitary lifts to a local CAR automorphism with equally local inverse; on one mode per site, unimodularity makes the symbol a monomial and full proper-cubic covariance kills its winding (no invariant vector) - an onsite phase only; the six-direction internal permutation is the minimal transitive escape (radius one, fully cubic, zero determinant winding), and determinant winding is shown to be only a coarse invariant. July QCA/cubic-classification-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "moved_to": "archive/notes/docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-qca-cubic-era.md (July QCA/cubic classification era (D-qca) \u2014 lane memo); carrier: archive/chains/july-qca-cubic-era.md (drafted: phase3/memos/D-qca.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-qca"
+}

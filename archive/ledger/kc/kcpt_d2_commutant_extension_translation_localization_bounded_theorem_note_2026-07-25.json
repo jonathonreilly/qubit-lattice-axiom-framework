@@ -1,0 +1,18 @@
+{
+ "id": "kcpt_d2_commutant_extension_translation_localization_bounded_theorem_note_2026-07-25",
+ "title": "KCPT_D2_COMMUTANT_EXTENSION_TRANSLATION_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-25",
+ "science": "Extension analysis localizing the non-splitness: the point-group side of the commutant extension splits while the translation side is non-split, with the unique cocycle form beta(s,t) = (-1)^((sum s)(sum t) - s.t) and the q invariant toggling with the parity of (L/2)^2. July K-CPT Dirac commutant/census-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. SCOPE (carried): the splits/non-split dichotomy is for the tested family {B3, O, A4, D3, T, T_even, T_even:A4} only - the cyclic translation subgroup <e_x> SPLITS (order-L lift, -I-free section); non-splitness does not propagate to every translation subgroup. beta is the unique nontrivial B3-invariant alternating bimultiplicative COMMUTATOR FORM on T/2T among 512 bilinear forms - not a full H^2(T:B3,Z2) extension-class or mixed-data classification.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/KCPT_D2_COMMUTANT_EXTENSION_TRANSLATION_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "moved_to": "archive/notes/docs/KCPT_D2_COMMUTANT_EXTENSION_TRANSLATION_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-25.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-kcpt-dirac-era.md (July K-CPT Dirac commutant/census era (D-kcpt) \u2014 lane memo); carrier: archive/chains/july-kcpt-dirac-era.md (drafted: phase3/memos/D-kcpt.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-kcpt"
+}

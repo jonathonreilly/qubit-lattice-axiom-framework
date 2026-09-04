@@ -1,0 +1,18 @@
+{
+ "id": "record_content_readout_license_split_registration_unreachability_theorem_note_2026-07-02",
+ "title": "RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02",
+ "science": "The license split under the readout clause: the identity-channel floor writes no record (reconstruction-side), the record-determined component is exactly T_V - T_id = -Re chi_3 with per-step variance 0.605570 < 1 - so the unit-variance point is unreachable as record-determined content at any informative fraction FOR THE NAMED one-step family (1-p)delta + pT_V on the named holonomy carrier/reading and single-step calibration (needed fraction 1.65 > 1; composed steps, alternative readout families, and the physical normalization naming stay open); at p* the shares are 0.248 record-determined vs 0.752 reconstruction; which one the physical normalization names is left to the audit lane. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-frame-weighting-era.md (July frame/weighting/readout era (D-frame) \u2014 lane memo); carrier: archive/chains/july-frame-weighting-era.md (drafted: phase3/memos/D-frame.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-frame"
+}

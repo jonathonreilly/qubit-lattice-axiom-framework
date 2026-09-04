@@ -1,0 +1,17 @@
+{
+ "id": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+ "title": "OBSERVABLE_PRINCIPLE_P1_BRIDGE_GLEASON_BUSCH_ROUTE_NARROW_NOTE_2026-05-21",
+ "science": "B03: Gleason-Busch scaffold no-go. G1 additivity-as-hypothesis across the whole Gleason family (2026 lit anchor); G2 NARROWED by its own 0.1 review to a per-site Wallach dim-2 sharpening (per-REGION bipartition satisfies Wallach trivially - honest self-correction preserved verbatim); G3 Cauchy log =",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_GLEASON_BUSCH_ROUTE_NARROW_NOTE_2026-05-21.md",
+  "moved_to": "archive/notes/docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_GLEASON_BUSCH_ROUTE_NARROW_NOTE_2026-05-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: KEEP Route D consolidated no-go (the wall authority this note extends) + P1P2 synthesis (FRONT) + group record carrying G1/G2-narrowed/G3",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

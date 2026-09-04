@@ -1,0 +1,17 @@
+{
+ "id": "gravity_design_blueprint",
+ "title": "GRAVITY_DESIGN_BLUEPRINT",
+ "science": "2026-04-02 design blueprint for the post-review-hardening frontier (Program A gravity completion, Program B 1/N ceiling breaker, Program C hard geometry, priority order, worker tasks). All three programs were subsequently executed and their results live in the kept records; the blueprint itself is A",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/GRAVITY_DESIGN_BLUEPRINT.md",
+  "moved_to": "archive/notes/docs/GRAVITY_DESIGN_BLUEPRINT.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: the executed program records: docs/GAP_PHYSICS_NOTE.md (Programs B/C outcomes incl. Pareto frontier + hard-geometry findings), docs/GUARD_RECONCILIATION_NOTE.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

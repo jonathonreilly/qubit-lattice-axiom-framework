@@ -1,0 +1,18 @@
+{
+ "id": "periodic_staggered_os_circle_failure_twisted_antiperiodic_free_repair_bounded_theorem_note_2026-07-12",
+ "title": "PERIODIC_STAGGERED_OS_CIRCLE_FAILURE_TWISTED_ANTIPERIODIC_FREE_REPAIR_BOUNDED_THEOREM_NOTE_2026-07-12",
+ "science": "The naive periodic/uniform staggered OS circle fails exactly (far-seam reflected norms -2/7, strict-half -1/49, exact rationals); the twisted-antiperiodic repair (AP wrap AND transported seam phase, each load-bearing alone-insufficient) restores PSD on both adjacent plane classes; free circle spectra converge to {1,z,z,z^2}; the coupled extension is scoped to the two-seam forest route. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/PERIODIC_STAGGERED_OS_CIRCLE_FAILURE_TWISTED_ANTIPERIODIC_FREE_REPAIR_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+  "moved_to": "archive/notes/docs/PERIODIC_STAGGERED_OS_CIRCLE_FAILURE_TWISTED_ANTIPERIODIC_FREE_REPAIR_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

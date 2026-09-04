@@ -39,9 +39,17 @@ more. To rely on any of it, use the promotion lane below.
 - `chains/` — chain summaries for the numbered block lineages
   (`CHAINS_INDEX.md`) and cross-cutting methodology notes.
 - `LEDGER.md` + `ledger/` — the provenance index: one entry per consolidated
-  source, keyed by its evidence address (`pr-<N>`). Plumbing, not the
-  record: it exists for integrity checking and for following an old
-  reference to what its source contained.
+  source, keyed by its evidence address (`pr-<N>` for the PR consolidation;
+  the semantic note id for note demotions; `campaign-<slug>` for campaign
+  packets). Plumbing, not the record: it exists for integrity checking and
+  for following an old reference to what its source contained.
+- `notes/` — demoted claim notes from the note-stratum densify (2026-09
+  freeze), each at its full original path (`notes/docs/...`). A moved note
+  remains the primary claim surface of its own result; the era memo in
+  `chains/` is its carrier, never its replacement. `PATHMAP.tsv` maps every
+  old path to its new one.
+- `campaigns/` — whole working packets (campaign roll-ups, exercise packets,
+  the opus-direct positive-path pack, the densify freeze evidence packet).
 
 ## Entry schema (`ledger/<xx>/pr-<N>.json`)
 
@@ -62,6 +70,19 @@ roll-up), `promoted_pr` (strict integer; set when promotion lands).
 
 `scripts/check_archive_entry.py` validates all of this.
 
+## Note-keyed and campaign entries (densify freeze 2026-09-04)
+
+Entries whose filename stem is not `pr-<N>` are semantic: note demotions
+(id = the note's claim id — its repo path lowercased with `/` as `.`,
+`docs/` stripped) and campaign packets (`campaign-<slug>`), sharded by the
+first two characters of the id. Required keys are the same, with `source`
+exactly `{kind, path, consolidation}` plus `moved_to` when `kind` is
+`docs-note` (`kind` is `docs-note` or `campaign-packet`). Optional extras:
+`lane` (the densify lane whose `chains/` memo carries the entry) and
+`follows_parent` (a FOLLOW-PARENT companion's archived parent id).
+`carried_by` names the era memo and the decided carrier. The same
+no-authority rule applies verbatim.
+
 ## Lanes
 
 - **Entry (light review).** A PR that only adds/edits files under
@@ -74,8 +95,15 @@ roll-up), `promoted_pr` (strict integer; set when promotion lands).
   review-loop + audit lanes (external-idea policy applies: re-prove
   in-framework). Then set `promoted_pr` on the archive entry. The archive
   entry itself never becomes an authority.
-- **Demotion.** Superseded `docs/` prose goes to `docs/work_history/`
-  (existing lane), not here. This store is for unlanded PR work-history.
+- **Demotion.** Superseded primary notes demote here under `notes/` with
+  note-keyed ledger entries and a `PATHMAP.tsv` row (the 2026-09 densify
+  freeze is the first such wave: 797 ARCHIVE-verdict notes + 2 follow-parent
+  companions, released behind the 21 era memos in `chains/`). Their audit
+  ledger rows retire natively: the citation graph is built from `docs/`, so
+  a moved note leaves the graph and `seed_audit_ledger.py` drops its row at
+  the next pipeline run ("dropped (note removed)"). `docs/work_history/`
+  remains the in-docs lane for historical prose that stays on the primary
+  surface.
 
 ## Boundaries (by construction)
 
@@ -95,6 +123,15 @@ roll-up), `promoted_pr` (strict integer; set when promotion lands).
 - `archive_unlanded/` is a DIFFERENT, pre-existing lane (the canonical
   recovery surface for failed-narrative source notes, per the controlled
   vocabulary) and is not part of this store.
+
+## Provenance of the note stratum (second population, 2026-09)
+
+The 2026-09 densify freeze over the note stratum: 3,262 candidates read in
+full; partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT; 21
+lane memos, each attacked by an independent full-read adversarial seat and
+the repair layer re-checked by a second pass (deltas D8/D8b). The complete
+evidence packet is `campaigns/densify-freeze-20260904/`. Executed on the
+owner's GO of 2026-09-05.
 
 ## Provenance of the initial population
 

@@ -1,0 +1,17 @@
+{
+ "id": "ckm_down_type_scale_convention_audited_scope_narrow_bounded_note_2026-05-10",
+ "title": "CKM_DOWN_TYPE_SCALE_CONVENTION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10",
+ "science": "Historical scope-narrowing companion of a parent that was REWRITTEN on 2026-07-12: it self-declares past-tense audit bookkeeping, has no current runner (runner_path null), and its interpretation ('numerical match at a selected comparator scale') is explicitly superseded by the parent's shared-transp",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md",
+  "moved_to": "archive/notes/docs/CKM_DOWN_TYPE_SCALE_CONVENTION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

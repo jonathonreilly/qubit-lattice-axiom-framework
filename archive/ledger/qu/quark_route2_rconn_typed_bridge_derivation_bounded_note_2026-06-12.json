@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_rconn_typed_bridge_derivation_bounded_note_2026-06-12",
+ "title": "QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12",
+ "science": "THREAD-READ (T5): the W67 bridge test \u2014 exact counter-witness (rho_E=0 and 21/4 coexist with the same F_adj), reachability re-run on the repaired W9 inventory, kappa_EW route separated; endpoint algebra after the bridge is not the bridge",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

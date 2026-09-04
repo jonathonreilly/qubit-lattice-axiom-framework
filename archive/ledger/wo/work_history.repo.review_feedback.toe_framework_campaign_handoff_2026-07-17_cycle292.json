@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.toe_framework_campaign_handoff_2026-07-17_cycle292",
+ "title": "TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-17_CYCLE292",
+ "science": "Interim Cycle-292 handoff: compiler route dispositions and action cycles 289-291. Directly superseded one day later by the 07-18 handoff, which restates the route disposition section and covers through Cycle 335. Delta (289-291 action dispositions) noted in the WH-camp memo. Full personal read.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-17_CYCLE292.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-17_CYCLE292.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-campaign-handoffs.md (July campaign handoffs (WH-camp) \u2014 lane memo); carrier: TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-camp"
+}

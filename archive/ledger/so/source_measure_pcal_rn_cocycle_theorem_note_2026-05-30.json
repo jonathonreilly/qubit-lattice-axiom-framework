@@ -1,0 +1,17 @@
+{
+ "id": "source_measure_pcal_rn_cocycle_theorem_note_2026-05-30",
+ "title": "SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30",
+ "science": "B02 c6: the strongest positive P-cal artifact - log FORCED as the unique normalizer of a normalized sharp-record RN cocycle with primitive score (no additivity postulate); Fisher-norm lambda=1; y_33=1/sqrt(6). Honest residual: whether 'source intervention = RN cocycle over sharp records' is native o",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md",
+  "moved_to": "archive/notes/docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: PCAL retirement synthesis (RESCUE-FRONT, restates W(h)=log E_0 exp(hO) as route 1) + group record",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

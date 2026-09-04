@@ -1,0 +1,17 @@
+{
+ "id": "cte_rconn_spatial_tensor_color_bridge_is_a_cross_domain_coincidence_narrow_no_go_note_2026-06-08",
+ "title": "CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08",
+ "science": "N2 CONFIRM ARCHIVE on full read: the category no-go: c_TE is a cubic E+T2 splitting of the continuum l=2 irrep (no isotropic counterpart) while -R_conn is a fiber color fraction; genuine c_TE=-0.890684 sits 0.2% off -8/9; only q_T=5/6 is clean; the one escape (typed N_c=3-from-d=3 link) named. Hones",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md",
+  "moved_to": "archive/notes/docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

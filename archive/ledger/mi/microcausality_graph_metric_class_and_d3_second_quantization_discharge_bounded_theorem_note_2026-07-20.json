@@ -1,0 +1,18 @@
+{
+ "id": "microcausality_graph_metric_class_and_d3_second_quantization_discharge_bounded_theorem_note_2026-07-20",
+ "title": "MICROCAUSALITY_GRAPH_METRIC_CLASS_AND_D3_SECOND_QUANTIZATION_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-07-20",
+ "science": "Three supplies to the corner-note's blocked locality feed: the weighted LR chain holds over any finite metric space (the boundary convention - the periodic seam is an ordinary bond in the quotient metric); the review-forced alias lemma with explicit constant A_3 = 1+2sqrt(u)(13+10u+u^2)/(1-u)^3 (same-constant torus transfer is FALSE); and the d=3 LR envelope for the CONSTRUCTED dGamma(h_{3,L}) - the operator identification is explicitly not discharged. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. DEFINITIONS (carried): the alias constant A_3(beta) = 1 + 2 sqrt(u)(13+10u+u^2)/(1-u)^3 uses u = e^(-beta), beta = (eta - eta')L for any 0 < eta' < eta; the transferred torus bound holds at the DEGRADED rate eta'; A_3 decreases to 1 as L -> infinity AT FIXED rates eta, eta' (the primary's own qualification - the split is what buys summability) and diverges as beta -> 0+.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MICROCAUSALITY_GRAPH_METRIC_CLASS_AND_D3_SECOND_QUANTIZATION_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-07-20.md",
+  "moved_to": "archive/notes/docs/MICROCAUSALITY_GRAPH_METRIC_CLASS_AND_D3_SECOND_QUANTIZATION_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-07-20.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

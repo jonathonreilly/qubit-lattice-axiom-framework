@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.full_law_inventory_adversarial_reduction_note_2026-07-14",
+ "title": "FULL_LAW_INVENTORY_ADVERSARIAL_REDUCTION_NOTE_2026-07-14",
+ "science": "Adversarial reduction of the full law-field inventory; collapses double-counted walls. July foundations-era note, personally read in full 2026-09-04; released behind the lane memo per the ratified July method. PAYLOAD (carried): the corrected dependency DAG - the thirteen-item list is a job checklist only; derived counts are 10 core, 11 with independent eligibility, 12 with trial semantics, 13 with both, plus a 14th external boundary-selection input.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/FULL_LAW_INVENTORY_ADVERSARIAL_REDUCTION_NOTE_2026-07-14.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/FULL_LAW_INVENTORY_ADVERSARIAL_REDUCTION_NOTE_2026-07-14.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-foundations-era.md (July foundations / exact-law era (WH-found) \u2014 lane memo); carrier: archive/chains/july-foundations-era.md (drafted: phase3/memos/WH-found.md) + TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-found"
+}

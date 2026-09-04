@@ -1,0 +1,17 @@
+{
+ "id": "audit_lhf_leverage_map_for_retained_promotion_note_2026-05-01",
+ "title": "AUDIT_LHF_LEVERAGE_MAP_FOR_RETAINED_PROMOTION_NOTE_2026-05-01",
+ "science": "Self-relabeled audit-strategy overview, by its own text 'historical audit-strategy memory only': the 2026-05-01 Cohort A/B split (16 stale-path runners fixed; top-8 root blockers ranked by transitive descendants). Cohort A was executed in PRs #246/#247 and the leverage landscape has been superseded",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/AUDIT_LHF_LEVERAGE_MAP_FOR_RETAINED_PROMOTION_NOTE_2026-05-01.md",
+  "moved_to": "archive/notes/docs/AUDIT_LHF_LEVERAGE_MAP_FOR_RETAINED_PROMOTION_NOTE_2026-05-01.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/audit/AUDIT_LEDGER.md + PRs #246/#247 (executed Cohort A) + the subsequent root-blocker campaigns (G_bare family, cycle-break waves)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

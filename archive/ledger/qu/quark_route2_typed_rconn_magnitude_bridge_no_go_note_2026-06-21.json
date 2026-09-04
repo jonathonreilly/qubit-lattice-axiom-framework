@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_typed_rconn_magnitude_bridge_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_TYPED_RCONN_MAGNITUDE_BRIDGE_NO_GO_NOTE_2026-06-21",
+ "science": "B01 c3: dropping the sign does not help - same color scalar F_adj=8/9 across rho_E family with different center magnitudes; typed graph lacks the magnitude edge. PASS=53 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_TYPED_RCONN_MAGNITUDE_BRIDGE_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_TYPED_RCONN_MAGNITUDE_BRIDGE_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: E-center blindness no-go (RESCUE-FRONT via link-repair) + atlas carry the counter-witness mechanism; group record carries the magnitude-variant table |c_TE|=5/(",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

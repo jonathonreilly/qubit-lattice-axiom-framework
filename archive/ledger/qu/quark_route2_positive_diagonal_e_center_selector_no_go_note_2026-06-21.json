@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_positive_diagonal_e_center_selector_no_go_note_2026-06-21",
+ "title": "QUARK_ROUTE2_POSITIVE_DIAGONAL_E_CENTER_SELECTOR_NO_GO_NOTE_2026-06-21",
+ "science": "B01 c2: positive-diagonal/Record-additive classifier applied to (1,q_E) sees the E-center but supplies no selector equation; prunes Record-additivity+classifier => q_E=15/8. Cites MINIMAL_AXIOMS_2026-06-05 Record additivity on the SUPPLY side, but only as premise of the PRUNED route - staleness dire",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_POSITIVE_DIAGONAL_E_CENTER_SELECTOR_NO_GO_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_POSITIVE_DIAGONAL_E_CENTER_SELECTOR_NO_GO_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: route2-e-center group record (classifier-sees-but-does-not-select arm); T1D classifier notes are KEEP",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

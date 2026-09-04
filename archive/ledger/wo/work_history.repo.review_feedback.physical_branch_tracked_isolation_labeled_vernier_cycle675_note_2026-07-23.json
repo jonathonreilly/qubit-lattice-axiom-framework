@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.physical_branch_tracked_isolation_labeled_vernier_cycle675_note_2026-07-23",
+ "title": "PHYSICAL_BRANCH_TRACKED_ISOLATION_LABELED_VERNIER_CYCLE675_NOTE_2026-07-23",
+ "science": "Cycle 675: keystone completion - theta_2 = +0.3136861 is an isolated transversal zero of the infinite-volume A2 equation on the branch-informed narrow window (|b_A2|=1.35e-12, order-stable through 40), completing the two-line numerical statement (theta_b=-2.97557599, theta_2=+0.3136861); vernier repaired by amplitude-labeled pairing plus sidelobe exclusion - all six frozen alpha rows within two bins, gold row R_rec=1.24999 -> 5:4. Late-July note (Cycles 572-675), personally read in full 2026-09-04; released behind the lane memo - its conclusions are carried at full strength on the FRONT successor lane records. FIREWALL (carried per the note's own N-discipline): quadrature-controlled two-line numerical statement (order-stable < 1e-3 through order 40), not the open rigorous lemma; reaching 5:4 is algebraic reachability under the Cycle-612 association caveat; no physical vernier clock is built.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/PHYSICAL_BRANCH_TRACKED_ISOLATION_LABELED_VERNIER_CYCLE675_NOTE_2026-07-23.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/PHYSICAL_BRANCH_TRACKED_ISOLATION_LABELED_VERNIER_CYCLE675_NOTE_2026-07-23.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-late-cycles.md (late-July cycles 572\u2013675 (WH-late) \u2014 lane memo); carrier: archive/chains/july-late-cycles.md (drafted: phase3/memos/WH-late.md) + the causal-time lane record (Cycles 610-679, FRONT; the two-line keystone these notes established)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-late"
+}

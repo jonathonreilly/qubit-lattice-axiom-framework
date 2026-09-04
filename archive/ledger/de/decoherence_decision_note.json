@@ -1,0 +1,17 @@
+{
+ "id": "decoherence_decision_note",
+ "title": "DECOHERENCE_DECISION_NOTE",
+ "science": "Pre-topology-pivot architecture decision record, self-declared superseded ('historical context for the failed uniform-random-DAG lane'): failure taxonomy, Option A/B/C tree, and the 11-approach brainstorm whose recommended Option B was subsequently executed. Executed planning artifact; the failure l",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/DECOHERENCE_DECISION_NOTE.md",
+  "moved_to": "archive/notes/docs/DECOHERENCE_DECISION_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: later decoherence per-claim notes (modular-gap family, mirror program) + audit ledger",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

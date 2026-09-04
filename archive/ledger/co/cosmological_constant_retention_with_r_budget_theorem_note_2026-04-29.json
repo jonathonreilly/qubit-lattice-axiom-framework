@@ -1,0 +1,17 @@
+{
+ "id": "cosmological_constant_retention_with_r_budget_theorem_note_2026-04-29",
+ "title": "COSMOLOGICAL_CONSTANT_RETENTION_WITH_R_BUDGET_THEOREM_NOTE_2026-04-29",
+ "science": "B06: support/R-budget wrapper relabeled 05-10 after audit; science (Lambda=3/R^2 retained identity) lives in the upstream spectral-gap note; R numerical open = C1/Axiom* surface. Carrier: upstream notes + ledger row.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/COSMOLOGICAL_CONSTANT_RETENTION_WITH_R_BUDGET_THEOREM_NOTE_2026-04-29.md",
+  "moved_to": "archive/notes/docs/COSMOLOGICAL_CONSTANT_RETENTION_WITH_R_BUDGET_THEOREM_NOTE_2026-04-29.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

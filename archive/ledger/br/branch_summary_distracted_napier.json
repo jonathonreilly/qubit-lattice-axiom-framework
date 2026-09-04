@@ -1,0 +1,17 @@
+{
+ "id": "branch_summary_distracted_napier",
+ "title": "BRANCH_SUMMARY_DISTRACTED_NAPIER",
+ "science": "Self-declared historical import memo for the dimension-dependent-kernel branch ('use as a historical import record only'), pointing readers to the three canonical notes for the current review-safe read. The useful imports (negative 3D 1/L replay, 1/L^(d-1) persistence pattern, Born checks, negative",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/BRANCH_SUMMARY_DISTRACTED_NAPIER.md",
+  "moved_to": "archive/notes/docs/BRANCH_SUMMARY_DISTRACTED_NAPIER.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/CONTINUUM_CONVERGENCE_NOTE.md + docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md + docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md (named by the note as the canonical surfa",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

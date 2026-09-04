@@ -1,0 +1,17 @@
+{
+ "id": "work_history.repo.review_feedback.main_control_plane_audit_2026-04-11",
+ "title": "MAIN_CONTROL_PLANE_AUDIT_2026-04-11",
+ "science": "Executed coherence audit of main after the staggered promotion: both findings were resolved in-pass (D30 ledger fix, portability link normalization) and the packet's alignment claims describe the surfaces themselves. Done process record.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/MAIN_CONTROL_PLANE_AUDIT_2026-04-11.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/MAIN_CONTROL_PLANE_AUDIT_2026-04-11.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/work_history/repo/LANE_STATUS_BOARD.md + docs/CANONICAL_HARNESS_INDEX.md + the corrected publication-discoveries log (the surfaces the audit fixed and poin",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

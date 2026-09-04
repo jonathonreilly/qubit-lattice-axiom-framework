@@ -1,0 +1,18 @@
+{
+ "id": "wilson_staggered_deep_fiber_coarse_gauge_gibbsianness_bounded_theorem_note_2026-07-12",
+ "title": "WILSON_STAGGERED_DEEP_FIBER_COARSE_GAUGE_GIBBSIANNESS_BOUNDED_THEOREM_NOTE_2026-07-12",
+ "science": "First infinite-volume absolutely summable coarse-action representation for the factor-two Wilson-staggered block map: in the wedge alpha(beta,m)<1/2 the coarse gauge specification is uniformly non-null and exponentially quasilocal, so Kozlov-Sullivan supplies a summable interaction - coarse-gauge Gibbsianness closed; the joint gauge-Grassmann polymer norm and autonomous RG map remain open. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. BOUNDARY (carried): Kozlov-Sullivan yields ONE sitewise absolutely summable coarse-gauge interaction, not necessarily translation-covariant or termwise gauge invariant; the connected exponentially weighted gauge-Grassmann polymer norm and an autonomous projected/rescaled RG map are NOT provided; the immediate repair target is a uniform complex/source neighborhood with factorial/tree connected-cumulant bounds - a gauge-body Gibbs representation, not the joint constructive RG theorem.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WILSON_STAGGERED_DEEP_FIBER_COARSE_GAUGE_GIBBSIANNESS_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+  "moved_to": "archive/notes/docs/WILSON_STAGGERED_DEEP_FIBER_COARSE_GAUGE_GIBBSIANNESS_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

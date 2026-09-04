@@ -1,0 +1,9 @@
+Independent reproduction of the heat-trace / Regge bridge (matter-gravity lane cross-check).
+Every line in these 11 .py files was written from the written spec only.  No file from
+.../opus-direct-20260827/bridge32/ (or any other lane) was opened, imported, or consulted.
+Dependencies: numpy + Python stdlib only; the modules import nothing but each other.
+NOTE: during this session another process bulk-copied ~300 unrelated files into the session
+scratchpad and into this directory.  This directory was rebuilt from an isolated copy afterwards
+and every result below was re-verified bit-for-bit in that isolated copy.
+Entry points: densecheck.py (Bloch vs dense), flatval.py (Symanzik vs winding sum),
+schlafli.py (Regge identity), final.py <L> <tt|cf|all> (main measurement).

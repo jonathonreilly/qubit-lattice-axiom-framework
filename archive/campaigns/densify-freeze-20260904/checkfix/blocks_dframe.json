@@ -1,0 +1,37 @@
+[
+ {
+  "claim": "docs/MODULI_COMPOSITION_WORD_DIAL_SETS_DENSIFY_WORD_SUPPLIER_RESIDUAL_BOUNDED_NOTE_2026-07-02.md",
+  "kind": "edited-full-note",
+  "text": "The word-dial closure: every finite composition word of f = 2r^2 and g = r^2 acts as 2^e r^(2^k) with e the binary numeral of the word, so the dial sets D_k = {0} union {2^(-e/(2^k-1)) : e = 0..2^k-1} densify in exactly [1/2, 1] with no POSITIVE dial point below 1/2 (zero is a member and a fixed point of every word) - deflating the mixed points 2^(-1/3), 2^(-2/3) and sharpening the residual to the word-supplier question. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result."
+ },
+ {
+  "claim": "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+  "kind": "edited-full-note",
+  "text": "The informative-fraction quantization: the 64 recorded-neighbor patterns split into exactly 10 proper-rotation orbits (Burnside-checked), so covariant support maps quantize p = k/64 UNDER the named iid-uniform occupancy baseline (each pattern mass 1/64; covariance supplies orbit-constancy, not equal masses); the unit-variance point p* = 0.409731 is off-lattice (26.22/64, distance > 0.2 from integer); the mismatch is located as an occupancy residual (exhibited q* roots) - with the 2026-08-05 scope note narrowing everything to support-level maps under the revised distribution-valued axiom. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. VALUE-FLIP BRANCH (carried; the finite discriminator for the standing structuralist/flip-reading owner surface): under the value-flip-covariant reading the combined orbit sizes are [2,6,8,12,12,24], attainable k are even only - 26 and 28 attainable, 27 not."
+ },
+ {
+  "claim": "docs/RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02.md",
+  "kind": "edited-full-note",
+  "text": "The license split under the readout clause: the identity-channel floor writes no record (reconstruction-side), the record-determined component is exactly T_V - T_id = -Re chi_3 with per-step variance 0.605570 < 1 - so the unit-variance point is unreachable as record-determined content at any informative fraction FOR THE NAMED one-step family (1-p)delta + pT_V on the named holonomy carrier/reading and single-step calibration (needed fraction 1.65 > 1; composed steps, alternative readout families, and the physical normalization naming stay open); at p* the shares are 0.248 record-determined vs 0.752 reconstruction; which one the physical normalization names is left to the audit lane. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result."
+ },
+ {
+  "claim": "docs/C1B_DEGENERACY_LOCUS_PARTITION_TOTALITY_BOUNDED_NOTE_2026-07-02.md",
+  "kind": "edited-full-note",
+  "text": "The C1b attack: at law-admissible degeneracy loci (delta = m pi/3 exactly), the fine S3 spectral partition is not recoverable from Y alone (the rotated split also diagonalizes; per-cell contents (1,0) vs (1/2,1/2)); the three-horn provenance collapse; conditional on the named premise D-totality (rule well-defined at every law-admissible state), C1b holds ON THE FINITE hw=1 CIRCULANT SURFACE ONLY (the note's own no-all-models firewall; nonzero b assumed) - with the pointwise escape honestly standing without it. July frame/weighting/readout-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result."
+ },
+ {
+  "claim": "docs/C2_W_SUPPLIER_READING_FORK_FIXED_POINT_UNIDENTIFIABILITY_BOUNDED_NOTE_2026-07-02.md",
+  "kind": "appended",
+  "text": " EPOCH (2026-08-13 Record revision): the class discharge read content-determination and finite additivity directly off the then-Record text; the additive-I sentence has since been REMOVED from Record, so the discharge's additivity leg goes through fresh review on any live use (the reading-fork structure itself is unaffected as conditional algebra)."
+ },
+ {
+  "claim": "docs/C2_WEIGHTING_NORMAL_FORM_ONE_PARAMETER_UNIQUENESS_BOUNDED_NOTE_2026-07-02.md",
+  "kind": "appended",
+  "text": " EPOCH (2026-08-13 Record revision): the Record-additivity licensing quoted by this note was removed from Record after it landed; the normal-form theorem stands as conditional algebra on its named class, with any live Record-derived use going through fresh review."
+ },
+ {
+  "claim": "docs/RECORD_COMPOSITION_BRIDGE_SEMIGROUP_POSITIVITY_SELECTION_BOUNDED_NOTE_2026-07-02.md",
+  "kind": "appended",
+  "text": " CARRIAGE (carried): the exact C-add independence witness - the Z_3 independent and correlated weight matrices have identical one-step row/column sums and both satisfy readout additivity, yet the correlated class-weight vector differs from p*p (unnormalized included) - the computed proof that additivity plus one-step sums do not force kernel convolution."
+ }
+]

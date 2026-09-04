@@ -1,0 +1,18 @@
+{
+ "id": "record_saturation_availability_census_bounded_note_2026-07-08",
+ "title": "RECORD_SATURATION_AVAILABILITY_CENSUS_BOUNDED_NOTE_2026-07-08",
+ "science": "The saturation and availability census: T1 re-derives regional finality from one-record-per-site plus permanence (27,012-configuration bookkeeping); T2 counts the covariant rule spaces exactly (1,024 rules over 10 orbits at k = 2; 4^57 over 57 at k = 3, with crowding-monotone profiles a minority); T3's conditional factorized-set lemma makes intersection-monotonicity elementary under five named model premises - supplied models throughout, no physical rule determined. July record-formation/occurrence/instrument-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. CENSUS VALUES (carried): 1,024 covariant rules over 10 orbits at k = 2; 4^57 over 57 orbits at k = 3; crowding-monotone mean-availability profiles a minority in both spaces after excluding set-constant rules.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/RECORD_SATURATION_AVAILABILITY_CENSUS_BOUNDED_NOTE_2026-07-08.md",
+  "moved_to": "archive/notes/docs/RECORD_SATURATION_AVAILABILITY_CENSUS_BOUNDED_NOTE_2026-07-08.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-record-formation-era.md (July record formation/occurrence/instrument era (D-rec) \u2014 lane memo); carrier: archive/chains/july-record-formation-era.md (drafted: phase3/memos/D-rec.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-rec"
+}

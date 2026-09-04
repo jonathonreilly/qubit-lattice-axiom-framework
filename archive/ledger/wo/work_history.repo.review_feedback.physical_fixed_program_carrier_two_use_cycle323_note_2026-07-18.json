@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.physical_fixed_program_carrier_two_use_cycle323_note_2026-07-18",
+ "title": "PHYSICAL_FIXED_PROGRAM_CARRIER_TWO_USE_CYCLE323_NOTE_2026-07-18",
+ "science": "Cycle 323: one fixed block-diagonal isometry on a three-program-M2 register applies all six Cycle-321 apparatus programs coherently with no host dispatch; the coarse-CP refinement quotient is stable under exact two-use composition while the equal-effect axis pair stays process-distinguishable (Choi 0.2203). July source/contact/event era note (Cycles 281-334), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_PROGRAM_CARRIER_TWO_USE_CYCLE323_NOTE_2026-07-18.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/PHYSICAL_FIXED_PROGRAM_CARRIER_TWO_USE_CYCLE323_NOTE_2026-07-18.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-source-era.md (July source/contact/event era, Cycles 281\u2013334 (WH-src) \u2014 lane memo); carrier: archive/chains/july-source-era.md (drafted: phase3/memos/WH-src.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-src"
+}

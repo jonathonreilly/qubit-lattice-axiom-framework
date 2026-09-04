@@ -1,0 +1,16 @@
+PRE-REGISTERED before running (T242).
+
+R151 (group theory): the ordered CP^3 record field breaks SU(4) -> U(3), giving
+15 - 9 = 6 broken generators = dim CP^3 = 6 Goldstone modes.
+R159: whether an induced photon adds to the massless content changes G by 3x.
+
+Reading to test: in the ORDERED phase the condensate Higgses the local U(1)
+(Anderson-Higgs), so the induced gauge mode is MASSIVE and adds nothing.  Then
+the massless content is exactly the 6 Goldstones, N = 6, G = 2 pi tau0 (R152).
+
+PREDICTION: diagonalising the 15x15 correlation matrix of rho = |psi><psi| at
+small k, exactly SIX eigenvalues diverge as 1/k^2 (massless) and NINE stay
+finite (massive).  Not 7, not 5.
+
+If a seventh massless mode appears, the photon is NOT Higgsed and R159's N=2
+branch is live.  If fewer than 6, R151's group-theory count is wrong.

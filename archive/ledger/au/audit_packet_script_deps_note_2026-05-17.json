@@ -1,0 +1,17 @@
+{
+ "id": "audit_packet_script_deps_note_2026-05-17",
+ "title": "AUDIT_PACKET_SCRIPT_DEPS_NOTE_2026-05-17",
+ "science": "Completed infrastructure-repair record: diagnosed the packet-completeness bug (helper imports triggering spurious class-C verdicts, 83/1100 pending affected) and shipped the transitive-deps tool whose JSON the orchestrator now consumes \u2014 the helper_runner_paths integration landed in the pipeline. Th",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/AUDIT_PACKET_SCRIPT_DEPS_NOTE_2026-05-17.md",
+  "moved_to": "archive/notes/docs/AUDIT_PACKET_SCRIPT_DEPS_NOTE_2026-05-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: scripts/audit_packet_script_deps.py + docs/audit/data/audit_packet_script_deps.json + the helper_runner_paths pipeline integration (PR #1405)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

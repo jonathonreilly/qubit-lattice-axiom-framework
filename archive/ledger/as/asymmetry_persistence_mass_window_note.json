@@ -1,0 +1,17 @@
+{
+ "id": "asymmetry_persistence_mass_window_note",
+ "title": "ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE",
+ "science": "Class-B citation row whose load-bearing content is exactly the threshold-0.10/0.20 LN fits reproducible from the sibling mass-scaling note's registered runner cache; it registers no primary runner of its own and self-describes as a summary pending native registration. Duplicate summary carried by th",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md",
+  "moved_to": "archive/notes/docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

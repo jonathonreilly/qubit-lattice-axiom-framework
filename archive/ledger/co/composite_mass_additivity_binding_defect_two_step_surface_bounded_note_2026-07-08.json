@@ -1,0 +1,18 @@
+{
+ "id": "composite_mass_additivity_binding_defect_two_step_surface_bounded_note_2026-07-08",
+ "title": "COMPOSITE_MASS_ADDITIVITY_BINDING_DEFECT_TWO_STEP_SURFACE_BOUNDED_NOTE_2026-07-08",
+ "science": "Exact fixed-total-momentum block reduction of the two-particle arsinh-band Hamiltonian and exact free additivity (rest energy arsinh(m_a)+arsinh(m_b); free-pair inertial mass 2M_I); the attractive contact binding below the continuum edge is recorded as a finite measured comparator only. July mass/source/Poisson-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. HYPOTHESES (carried): the free-pair result M_I,free pair = 2M_I holds for EQUAL masses at an EVEN total-momentum index (the discrete grid contains q = P/2) - the note's own conditions, not a general additivity statement.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/COMPOSITE_MASS_ADDITIVITY_BINDING_DEFECT_TWO_STEP_SURFACE_BOUNDED_NOTE_2026-07-08.md",
+  "moved_to": "archive/notes/docs/COMPOSITE_MASS_ADDITIVITY_BINDING_DEFECT_TWO_STEP_SURFACE_BOUNDED_NOTE_2026-07-08.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-mass-source-poisson-era.md (July mass/source/Poisson era (D-mass) \u2014 lane memo); carrier: archive/chains/july-mass-source-poisson-era.md (drafted: phase3/memos/D-mass.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-mass"
+}

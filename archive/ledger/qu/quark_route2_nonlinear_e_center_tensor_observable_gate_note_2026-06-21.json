@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_nonlinear_e_center_tensor_observable_gate_note_2026-06-21",
+ "title": "QUARK_ROUTE2_NONLINEAR_E_CENTER_TENSOR_OBSERVABLE_GATE_NOTE_2026-06-21",
+ "science": "N2 CONFIRM ARCHIVE on full read: nonlinearity alone is not the missing ingredient: pure rank-1 carrier invariants have zero bright-linear response (v=0 at A1 background) and common scalar dressings force q_E=q_T - E-center sensitivity is. Honest scoped route-pruning of the single rho_E residual; ful",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_NONLINEAR_E_CENTER_TENSOR_OBSERVABLE_GATE_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_NONLINEAR_E_CENTER_TENSOR_OBSERVABLE_GATE_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

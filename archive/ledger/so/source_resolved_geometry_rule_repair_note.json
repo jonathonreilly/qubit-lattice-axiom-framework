@@ -1,0 +1,17 @@
+{
+ "id": "source_resolved_geometry_rule_repair_note",
+ "title": "SOURCE_RESOLVED_GEOMETRY_RULE_REPAIR_NOTE",
+ "science": "Evidence row: the additive sector-fan repair (topology-gated, all input edges preserved) worsens sign count, support, and exponent on its finite card. One-rule bounded negative carried by the failure-audit synthesis; the executable topology-gate methodology survives in the archived runner.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SOURCE_RESOLVED_GEOMETRY_RULE_REPAIR_NOTE.md",
+  "moved_to": "archive/notes/docs/SOURCE_RESOLVED_GEOMETRY_RULE_REPAIR_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

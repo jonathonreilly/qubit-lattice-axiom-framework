@@ -1,0 +1,17 @@
+{
+ "id": "wave_direct_dm_h025_seed0_crossfamily_note",
+ "title": "WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE",
+ "science": "SHA-pinned two-row cross-family proposition (revised 2026-07-26): Fam2 deeper than Fam1 at seed0/H=0.25 with both ladders checked. The ordering fact is carried by the three-family freeze; the note's remaining distinct content is audit-methodological (SHA-pin protocol), not additional science.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
+  "moved_to": "archive/notes/docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

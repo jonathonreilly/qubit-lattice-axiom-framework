@@ -1,0 +1,17 @@
+{
+ "id": "moving_source_cross_family_replay_note",
+ "title": "MOVING_SOURCE_CROSS_FAMILY_REPLAY_NOTE",
+ "science": "Superseded gap-diagnosis: it records 'no second-family replay is retained yet', and the same-day MOVING_SOURCE_CROSS_FAMILY_NOTE then supplied exactly that replay with its own runner, controls and frozen log. The gap it names was closed; keeping it front would misstate the lane's state.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MOVING_SOURCE_CROSS_FAMILY_REPLAY_NOTE.md",
+  "moved_to": "archive/notes/docs/MOVING_SOURCE_CROSS_FAMILY_REPLAY_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

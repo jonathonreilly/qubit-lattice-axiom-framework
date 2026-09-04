@@ -1,0 +1,14 @@
+PRE-REGISTERED, written before running the control.
+
+Weight  phi = (1-t) + t |<psi|psi'>|^2 .   t=1 is the Born point (R149).
+As t -> 0 the edge weight becomes constant and the sites decouple, so the field
+must be DISORDERED with a finite correlation length.  Then:
+
+  3D slice     : massive => S ~ 1/(khat^2 + m^2), so S*khat^2 should be the
+                 FLAT-ish one and S*khat should be steep -- the MIRROR of the
+                 Born-point result (which had S*khat flat at 1.10x).
+  dispersion   : E(k) -> nonzero constant as k -> 0, so E/khat must GROW at
+                 small k rather than being flat.
+
+If a small-t run instead reproduces eta=1 and z=1, the diagnostics are not
+measuring what they claim and R149 is worthless.

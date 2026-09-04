@@ -1,0 +1,18 @@
+PRE-REGISTERED before running (T246).
+
+R164: the framework's defect costs S ~ 4.35 -- an O(1) LATTICE number, i.e. a
+cutoff-scale (Planck-scale) object.  That cannot be Standard Model matter.
+
+The only place a topological defect gets light is near a critical point, where
+the correlation length diverges.  R137: lambda_c ~ 0.68 for CP^1 on Z^3.  With
+phi = (1-t) + t|<psi|psi'>|^2 and |<psi|psi'>|^2 = (1+v.v')/2, one gets
+phi ∝ 1 + lambda (v.v') with lambda = t/(2-t), so
+      t = 1     -> lambda = 1      (Born point, deep in the ordered phase)
+      t = 0.81  -> lambda = 0.68   (lambda_c)
+
+PREDICTION: S_core falls as t -> 0.81+ from the ordered side.  If it drops
+substantially (toward 0) the framework has LIGHT defects near criticality; if it
+stays O(1) all the way down, its particle is cutoff-scale everywhere in the
+phase that admits a continuum limit, and cannot be ordinary matter.
+
+Either answer is decisive for R163's fermion route.

@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_hessian_e_center_bridge_gate_note_2026-06-21",
+ "title": "QUARK_ROUTE2_HESSIAN_E_CENTER_BRIDGE_GATE_NOTE_2026-06-21",
+ "science": "N2 CONFIRM ARCHIVE on full read: Hessian-to-lift gate: the same C_X and T-calibration admit four simple readout maps of which only q_X = (q_T/C_T)C_X hits the target - the proportional-lift law itself is the missing theorem. Honest scoped route-pruning of the single rho_E residual; fully indexed by",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_HESSIAN_E_CENTER_BRIDGE_GATE_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_HESSIAN_E_CENTER_BRIDGE_GATE_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

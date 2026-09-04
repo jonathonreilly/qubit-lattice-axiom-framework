@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_qe_box_size_scan_closes_bulk_limit_hatch_narrow_theorem_note_2026-06-10",
+ "title": "QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10",
+ "science": "N2 CONFIRM ARCHIVE on full read: the decisive scan: q_E=15/8 at N=15 is an isolated one-box numerator excursion (beta_E(shell) positive at every other box; interpolant positive), fixed-radius limit runs to ~-11, box-proportional converges to (1,1) - both limits miss; the bulk-limit hatch is closed a",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: equivalence atlas + Schur quadratic gap note + endpoint-triple residual map (all FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

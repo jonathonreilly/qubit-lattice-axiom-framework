@@ -1,0 +1,17 @@
+{
+ "id": "planck_mass_conventional_anchor_meta_note_2026-05-27",
+ "title": "PLANCK_MASS_CONVENTIONAL_ANCHOR_META_NOTE_2026-05-27",
+ "science": "Wording proposal (Buckingham-Pi: one dimensional anchor needed for SI values) that was subsequently absorbed into the registered scale_reference_primitive in axiom_premise_nodes.json - the registry entry now carries the grant; no residual science of its own.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/PLANCK_MASS_CONVENTIONAL_ANCHOR_META_NOTE_2026-05-27.md",
+  "moved_to": "archive/notes/docs/PLANCK_MASS_CONVENTIONAL_ANCHOR_META_NOTE_2026-05-27.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

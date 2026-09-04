@@ -1,0 +1,18 @@
+{
+ "id": "theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02",
+ "title": "THETA_SEED_SPECTRAL_REALITY_CONJUGATION_SYMMETRIC_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-02",
+ "science": "The seed kernel dissected: spectral data (C2, d) are exactly conjugation-invariant so every spectrally-constructed weight is automatically flip-even (covering all current framework routes); the pure-gauge supplied structure cannot distinguish conjugate pairs; a phased seed's odd direction is the REAL Im-trace reweighting (design claim refuted); conjugation-odd data of the theta type live in determinant phases = the mass side; residual = the named outer-evenness bridge candidate (audit semantics, unadjudicated). July theta defect/phase/determinant-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THETA_SEED_SPECTRAL_REALITY_CONJUGATION_SYMMETRIC_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/THETA_SEED_SPECTRAL_REALITY_CONJUGATION_SYMMETRIC_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-theta-era.md (July theta defect/phase/determinant era (D-theta) \u2014 lane memo); carrier: archive/chains/july-theta-era.md (drafted: phase3/memos/D-theta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-theta"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "wave_direct_dm_h025_seed1_crossfamily_note",
+ "title": "WAVE_DIRECT_DM_H025_SEED1_CROSSFAMILY_NOTE",
+ "science": "Same-seed cross-family compression (seed1 stronger branch in both families, Fam2 deeper); carried by the three-family transfer freeze.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/WAVE_DIRECT_DM_H025_SEED1_CROSSFAMILY_NOTE.md",
+  "moved_to": "archive/notes/docs/WAVE_DIRECT_DM_H025_SEED1_CROSSFAMILY_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

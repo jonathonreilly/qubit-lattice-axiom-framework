@@ -1,0 +1,17 @@
+{
+ "id": "science_3plus1_line_law_known_limits_note_2026-04-20",
+ "title": "SCIENCE_3PLUS1_LINE_LAW_KNOWN_LIMITS_NOTE_2026-04-20",
+ "science": "Audit-relabeled known-limits/scope overview that makes no retained-claim assertions \u2014 its closure-chain narrative and caveats are declared historical memory, with the authority chain living in the five per-step theorem notes it lists (endpoint, exact-solve doublet, rho1 selectors, Givens selector, f",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/SCIENCE_3PLUS1_LINE_LAW_KNOWN_LIMITS_NOTE_2026-04-20.md",
+  "moved_to": "archive/notes/docs/SCIENCE_3PLUS1_LINE_LAW_KNOWN_LIMITS_NOTE_2026-04-20.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: 3PLUS1 per-step theorem notes incl. the kept line-closure endpoint",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

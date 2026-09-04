@@ -1,0 +1,17 @@
+{
+ "id": "quark_route2_normalized_quotient_selector_trichotomy_note_2026-06-21",
+ "title": "QUARK_ROUTE2_NORMALIZED_QUOTIENT_SELECTOR_TRICHOTOMY_NOTE_2026-06-21",
+ "science": "B02 c2: quotient coordinate exposes but does not select the free parameter. PASS=34 FAIL=0 expected.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/QUARK_ROUTE2_NORMALIZED_QUOTIENT_SELECTOR_TRICHOTOMY_NOTE_2026-06-21.md",
+  "moved_to": "archive/notes/docs/QUARK_ROUTE2_NORMALIZED_QUOTIENT_SELECTOR_TRICHOTOMY_NOTE_2026-06-21.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: atlas + group record; the TRICHOTOMY (blind cannot / target-equivalent rewrites / low-rational needs live comparator) is the group record's framing device",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

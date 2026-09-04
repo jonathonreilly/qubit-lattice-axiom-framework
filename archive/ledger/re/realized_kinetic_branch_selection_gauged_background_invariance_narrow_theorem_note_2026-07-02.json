@@ -1,0 +1,18 @@
+{
+ "id": "realized_kinetic_branch_selection_gauged_background_invariance_narrow_theorem_note_2026-07-02",
+ "title": "REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02",
+ "science": "Fixed-background invariance: under the SUPPLIED legal tensor-factor premise that gauge links act on the lattice/color factor (operator-Schmidt analysis verifies the constructed hop blocks factorize as declared; it does not derive the premise), the qubit-factor selector is unchanged - K0 stays [1,1,1]/zero-gap, K1 stays [2,2,2]/sqrt(2)-gap with anticommuting representatives - on deterministic U(1) and SU(2) backgrounds plus the zero-background regression; the honest boundary exhibit shows plaquette data becoming background-dependent, and backgrounds acting on the qubit factor break the protection (contrast leg). July realized-kinetic-branch docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. FIREWALL (carried per the note's own boundary): tested deterministic U(1)/SU(2) fixed backgrounds only - 'No all-configuration gauge-field theorem'; and the parent residual 'the flux(-1) selector is not forced because K0 also satisfies the constraints' stands. ATTRIBUTION (round-2 correction): the cluster's shared no-forcing residual is the PARENT surface's boundary; this note's own boundary section instead limits the theorem to the tested deterministic U(1)/SU(2) fixed backgrounds plus the legal tensor-factor premise (no all-configuration gauge-field theorem) - the residual is carried at cluster level, not 'per this note's own boundary'.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-realized-kinetic-era.md (July realized-kinetic branch cluster (D-rk) \u2014 lane memo); carrier: archive/chains/july-realized-kinetic-era.md (drafted: phase3/memos/D-rk.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-rk"
+}

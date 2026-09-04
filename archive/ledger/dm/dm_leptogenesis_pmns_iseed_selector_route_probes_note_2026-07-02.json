@@ -1,0 +1,18 @@
+{
+ "id": "dm_leptogenesis_pmns_iseed_selector_route_probes_note_2026-07-02",
+ "title": "DM_LEPTOGENESIS_PMNS_ISEED_SELECTOR_ROUTE_PROBES_NOTE_2026-07-02",
+ "science": "Three refutation-shaped probes locating the adopted I_seed selector's non-baseline content: the favored column is contingent on the supplied finite point (P1), the equal-modality weighting inside I_seed is an unstated selection principle (P2, argmin flips under legitimate reweighting), and the anchoring equality eta/eta_obs = 1 is an independent imposed premise (P3, explicit ratio-not-1 witness). July flavor/CKM/color/species-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. GRADE (carried): the three probes are separately named DIAGNOSTICS, not a proved pairwise-independent wall decomposition and not established selector choices - P1 is a finite-fixture contingency; P2 evaluates the UNCONSTRAINED argmin, not the constrained selector's output under reweighting.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/DM_LEPTOGENESIS_PMNS_ISEED_SELECTOR_ROUTE_PROBES_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/DM_LEPTOGENESIS_PMNS_ISEED_SELECTOR_ROUTE_PROBES_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-flavor-species-era.md (July flavor/CKM/color/species era (D-flav) \u2014 lane memo); carrier: archive/chains/july-flavor-species-era.md (drafted: phase3/memos/D-flav.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-flav"
+}

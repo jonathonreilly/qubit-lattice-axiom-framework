@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.incident_car_auxiliary_dressing_cycle256_note_2026-07-17",
+ "title": "INCIDENT_CAR_AUXILIARY_DRESSING_CYCLE256_NOTE_2026-07-17",
+ "science": "C256: complete endpoint-star radius-1 Pauli grammar (1024 raw pairs -> 4 classes) - no family closes incident CAR; best leaves 972 exact failures; radius-2 affine spaces (24,12) computed. July CAR-compiler-era note (Cycles 231-280), personally read in full 2026-09-04; released behind the lane memo per the ratified July method.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/INCIDENT_CAR_AUXILIARY_DRESSING_CYCLE256_NOTE_2026-07-17.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/INCIDENT_CAR_AUXILIARY_DRESSING_CYCLE256_NOTE_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-car-compiler-era.md (July CAR-compiler era, Cycles 231\u2013280 (WH-car) \u2014 lane memo); carrier: archive/chains/july-car-compiler-era.md (drafted: phase3/memos/WH-car.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-car"
+}

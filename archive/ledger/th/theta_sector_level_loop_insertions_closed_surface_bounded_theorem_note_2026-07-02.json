@@ -1,0 +1,18 @@
+{
+ "id": "theta_sector_level_loop_insertions_closed_surface_bounded_theorem_note_2026-07-02",
+ "title": "THETA_SECTOR_LEVEL_LOOP_INSERTIONS_CLOSED_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-02",
+ "science": "The sector-level closed-surface statement (i-b''-b) settled in 2D: abelian loop insertions are finite-window label shifts, per-sector diagonal by term-by-term enumeration (~1e-17); nonabelian insertions open exactly the fusion channels at class-trace level (discriminating zero at the non-fusion pair); and the spec's generic-argument gluing sketch is REJECTED by measurement (intertwiner-valued) - locating the recoupling boundary the 4D assembly must route through. July theta defect/phase/determinant-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/THETA_SECTOR_LEVEL_LOOP_INSERTIONS_CLOSED_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/THETA_SECTOR_LEVEL_LOOP_INSERTIONS_CLOSED_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-theta-era.md (July theta defect/phase/determinant era (D-theta) \u2014 lane memo); carrier: archive/chains/july-theta-era.md (drafted: phase3/memos/D-theta.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-theta"
+}

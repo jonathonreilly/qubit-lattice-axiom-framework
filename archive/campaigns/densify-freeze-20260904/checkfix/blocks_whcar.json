@@ -1,0 +1,27 @@
+[
+ {
+  "claim": "docs/work_history/repo/review_feedback/CONTRACTIBLE_LIGHTCONE_WILSON_QUOTIENT_CYCLE271_NOTE_2026-07-17.md",
+  "kind": "appended",
+  "text": " SCOPE (carried): the ceil(L/2) wrap threshold is for the tested ONSITE full-cell cones; the note's own patch tournament gives different first obstructions for the x-bond and xy-plaquette cones (e.g. L=3 at t=1, L=5 at t=2)."
+ },
+ {
+  "claim": "docs/work_history/repo/review_feedback/LOCALLY_MATCHED_WILSON_SECTOR_STATES_CYCLE275_NOTE_2026-07-17.md",
+  "kind": "appended",
+  "text": " PRECISION (corrected): Tr(P_w) = 2^(6N-1) is the trace of the UNNORMALIZED projector; the density operator rho_w = P_w/Tr(P_w) has Tr(rho_w) = 1 - the row's trace attribution to rho_w was wrong."
+ },
+ {
+  "claim": "docs/work_history/repo/review_feedback/TRANSLATION_CUBIC_LOCAL_SYNDROME_DECODER_CYCLE244_NOTE_2026-07-17.md",
+  "kind": "appended",
+  "text": " SCOPE (corrected): exact translation-linear sections are proven only for the separately solved tested tori L = 3, 5, 7 (radii 2, 4, 6); the note expressly grades the sequence as held-size evidence for growing support, not an asymptotic odd-L minimum-radius theorem."
+ },
+ {
+  "claim": "docs/work_history/repo/review_feedback/NONDIAGONAL_REFERENCE_CAT_PARITY_JOIN_CYCLE267_NOTE_2026-07-17.md",
+  "kind": "appended",
+  "text": " PRECISION (corrected): the 2, 3, 3, 5 values are nearest-neighbor product-input unitary prep-depth LOWER BOUNDS (d >= ceil(3 floor(L/2)/2)); a bounded arbitrary-input preparation is expressly not constructed."
+ },
+ {
+  "claim": "docs/work_history/repo/review_feedback/DRESSED_SPOKE_PARITY_GAUGE_CYCLE273_NOTE_2026-07-17.md",
+  "kind": "appended",
+  "text": " SCOPE (corrected): the one-spoke dressing uniqueness holds in the reference-plus-one-matter-block restriction of the 19-dimensional phase-free PAULI centralizer, and the no-scalar-flip result holds within that one-star Pauli quotient only; non-Pauli and nonfactorized two-star or wider multicell operators remain live."
+ }
+]

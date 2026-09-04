@@ -1,0 +1,17 @@
+{
+ "id": "erosion_mobius_derivative_chain_rule_law_bounded_theorem_note_2026-06-12",
+ "title": "EROSION_MOBIUS_DERIVATIVE_CHAIN_RULE_LAW_BOUNDED_THEOREM_NOTE_2026-06-12",
+ "science": "Chain-rule identification (c-factor = derivative of the Mobius step map; periodic-word rate det(M_w)/lambda_max^2) - subsumed by the rapidity abelianization, which reproduces the matrix expression exactly as rho = r^|D| and re-gates the uniform and alternating cases. Mechanism note carried by the te",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/EROSION_MOBIUS_DERIVATIVE_CHAIN_RULE_LAW_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "moved_to": "archive/notes/docs/EROSION_MOBIUS_DERIVATIVE_CHAIN_RULE_LAW_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

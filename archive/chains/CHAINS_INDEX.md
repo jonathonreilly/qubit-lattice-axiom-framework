@@ -126,3 +126,32 @@ derived interface evenness + non-descent obstruction; faithful letter representa
 See `../families/toe-lphys-20260812.md` — the roll-up: template, all 153 HOLD/HOLD cells
 tabulated, the three firsts, the 855-member fail/UNDEFINED class (letter/vector readouts
 uniformly fail; sets and the (m,o_next,o_prev) triad survive), citation status.
+
+## Era memos — the 2026-09 note-stratum densify (21 lanes)
+Lane consolidation memos from the densify freeze (each memo names its scope,
+era question/answer, arc, carried deltas, and safety basis; all 21 passed a
+21-seat adversarial attack pass plus a fix-layer checker pass — evidence in
+`../campaigns/densify-freeze-20260904/`). The archived notes themselves live
+under `../notes/` with note-keyed ledger entries.
+
+- `july-acphilambda-reta-era.md` — D-acl: July AC_phi_lambda / R-eta era (D-acl)
+- `july-born-povm-support-era.md` — D-born: late-July Born/POVM/truncated-Fock support era (D-born)
+- `july-flavor-species-era.md` — D-flav: July flavor/CKM/color/species era (D-flav)
+- `july-frame-weighting-era.md` — D-frame: July frame/weighting/readout era (D-frame)
+- `july-gauge-os-era.md` — D-gauge: July gauge/OS era, docs claim notes (D-gauge)
+- `july-kcpt-dirac-era.md` — D-kcpt: July K-CPT Dirac commutant/census era (D-kcpt)
+- `july-kernel-rule-era.md` — D-ker: July kernel/semigroup/admissibility era (D-ker)
+- `july-mass-source-poisson-era.md` — D-mass: July mass/source/Poisson era (D-mass)
+- `july-meta-process-era.md` — D-meta: July meta/process era + small singletons (D-meta)
+- `july-misc-singletons-era.md` — D-misc: July miscellaneous singletons (D-misc)
+- `july-qca-cubic-era.md` — D-qca: July QCA/cubic classification era (D-qca)
+- `july-record-formation-era.md` — D-rec: July record formation/occurrence/instrument era (D-rec)
+- `july-realized-kinetic-era.md` — D-rk: July realized-kinetic branch cluster (D-rk)
+- `july-theta-era.md` — D-theta: July theta defect/phase/determinant era (D-theta)
+- `july-campaign-handoffs.md` — WH-camp: July campaign handoffs (WH-camp)
+- `july-car-compiler-era.md` — WH-car: July CAR-compiler era, Cycles 231–280 (WH-car)
+- `july-compiler-era.md` — WH-comp: July compiler era (WH-comp)
+- `july-foundations-era.md` — WH-found: July foundations / exact-law era (WH-found)
+- `july-late-cycles.md` — WH-late: late-July cycles 572–675 (WH-late)
+- `july-mass-era.md` — WH-mass: July mass era, Cycles 200–227 (WH-mass)
+- `july-source-era.md` — WH-src: July source/contact/event era, Cycles 281–334 (WH-src)

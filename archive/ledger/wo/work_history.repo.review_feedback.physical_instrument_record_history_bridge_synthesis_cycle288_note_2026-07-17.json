@@ -1,0 +1,18 @@
+{
+ "id": "work_history.repo.review_feedback.physical_instrument_record_history_bridge_synthesis_cycle288_note_2026-07-17",
+ "title": "PHYSICAL_INSTRUMENT_RECORD_HISTORY_BRIDGE_SYNTHESIS_CYCLE288_NOTE_2026-07-17",
+ "science": "Cycle 288: whole-campaign synthesis - final disposition of the three compiler routes (C248 state encoder/2sqrt2, C251 sectorwise operator compiler, C260 shuttle, C271/275 quotient), the five typed spans C281-287, the Cycle-285 phase-sensitive actual-W_g syndrome, the seven-wall (P,A,O,K,T,B,S) 21-pair independence census, and the five-lane percentage rebuild. July source/contact/event era note (Cycles 281-334), personally read in full 2026-09-04; released behind the lane memo per the ratified July method. CLASSIFICATION (corrected): the compiler routes are THREE (C248, C251, C260); the C271/275 quotient is expressly 'not a fourth full compiler' but the strongest local quotient endpoint - it must not be listed as a compiler route.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/repo/review_feedback/PHYSICAL_INSTRUMENT_RECORD_HISTORY_BRIDGE_SYNTHESIS_CYCLE288_NOTE_2026-07-17.md",
+  "moved_to": "archive/notes/docs/work_history/repo/review_feedback/PHYSICAL_INSTRUMENT_RECORD_HISTORY_BRIDGE_SYNTHESIS_CYCLE288_NOTE_2026-07-17.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-source-era.md (July source/contact/event era, Cycles 281\u2013334 (WH-src) \u2014 lane memo); carrier: archive/chains/july-source-era.md (drafted: phase3/memos/WH-src.md) + TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18.md (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "WH-src"
+}

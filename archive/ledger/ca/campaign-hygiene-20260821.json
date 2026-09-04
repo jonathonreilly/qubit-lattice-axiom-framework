@@ -1,0 +1,16 @@
+{
+ "id": "campaign-hygiene-20260821",
+ "title": "hygiene-20260821",
+ "science": "The 2026-08-21 hygiene wave packet: generator-program pins, the hygiene convention map, nsimplify site inventory, repin plan, and wrap-exposure survey - the bookkeeping wave that fed the codex nsimplify-repair queue. Process record only.",
+ "source": {
+  "kind": "campaign-packet",
+  "path": "archive/campaigns/hygiene-20260821",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/campaigns/hygiene-20260821/ (whole packet); this ledger line",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04 (see archive/campaigns/densify-freeze-20260904/)"
+ },
+ "status": "archived"
+}

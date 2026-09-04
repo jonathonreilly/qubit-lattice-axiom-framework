@@ -1,0 +1,17 @@
+{
+ "id": "mirror_mutual_information_canonical_families_note",
+ "title": "MIRROR_MUTUAL_INFORMATION_CANONICAL_FAMILIES_NOTE",
+ "science": "Bounded multi-family extension of the mirror MI measurement; its S4 mirror rows are quoted in the kept AUDITED_SYMMETRY_SYNTHESIS_NOTE and the canonical authority remains the chokepoint MI chain the note itself defers to ('broader, not more canonical'). Evidence companion of the closed April campaig",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/MIRROR_MUTUAL_INFORMATION_CANONICAL_FAMILIES_NOTE.md",
+  "moved_to": "archive/notes/docs/MIRROR_MUTUAL_INFORMATION_CANONICAL_FAMILIES_NOTE.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: AUDITED_SYMMETRY_SYNTHESIS_NOTE.md + MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

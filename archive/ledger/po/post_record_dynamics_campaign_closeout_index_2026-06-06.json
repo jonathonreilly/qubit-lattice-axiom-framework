@@ -1,0 +1,17 @@
+{
+ "id": "post_record_dynamics_campaign_closeout_index_2026-06-06",
+ "title": "POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06",
+ "science": "Six-PR bookkeeping index whose entire content (PR ids, statuses, cached summary strings) is contained in the ten-PR family-lift closeout index and the authority stack map; self-declared 'campaign bookkeeping... may not be cited as a retained theorem'. Per the records-organize-by-science rule, the PR",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md",
+  "moved_to": "archive/notes/docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: itself",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

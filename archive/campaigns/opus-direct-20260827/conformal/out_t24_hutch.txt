@@ -1,0 +1,17 @@
+T24  L=32, N=1048576, improved operator, m=0 (zero mode deflated)
+  tau0  sig/|phi(0)|  probes for 1%  sig/|phi(nn)|  probes for 1%
+  2.70          44.0      1.940e+07           46.3      2.146e+07
+  4.00          60.1      3.609e+07           62.2      3.868e+07
+  6.00          81.5      6.635e+07           83.4      6.961e+07
+  8.00         100.1      1.002e+08          102.0      1.040e+08
+
+HONEST QUALIFICATION.  dW/ds_e is identical for all L^3 spatial translates of an
+edge, so a single probe already delivers L^3 = 32768 independent samples of it;
+that cuts the probe count by L^3 and the subsequent 15L-point fit by another
+~n_fit/(1-corr^2).  With common random numbers across the background subtraction
+(needed: the signal is only ~3%% of dW) B could be reached to ~1%% with O(10) probes.
+So Hutchinson was not hopeless -- but the translation symmetry that rescues it is
+exactly the symmetry that makes the problem EXACTLY solvable:
+  32768 eigendecompositions of tridiagonal 32x32 blocks = 1.07e+09 flops,
+  seconds of wall time, validated against a dense N x N reference to 2e-13 (T06).
+  Stochastic estimation would have bought nothing and cost accuracy.

@@ -1,0 +1,18 @@
+{
+ "id": "staggered_dirac_coupling_sign_channel_registration_narrow_theorem_note_2026-07-03",
+ "title": "STAGGERED_DIRAC_COUPLING_SIGN_CHANNEL_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-03",
+ "science": "The kinetic-class B-BIT registered: flux class and coupling sign are jointly frame data with invariant beta_P = beta.Phi_P(t); sign-blindness holds iff a flux-(-1) Z2 1-cochain exists (GF(2) criterion, 2D converse: blind iff #P even); the frozen-background zero-set dichotomy - extensive surface at flux +1 vs eight isolated conical points at flux -1 - makes B-BIT registration-equivalent to the zero-set type the spectral selector shape targets. July gauge/OS-era docs claim note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result and its audit-graph citations stay resolvable per the archive design. PRECISION (corrected): the iff is for realizing beta -> -beta by a link relabeling; pure-gauge coupling-sign blindness is proved WHENEVER the flux-(-1) Z2 1-cochain exists, with the converse proved only on 2D tori via Z(beta) = sum I_n(beta)^#P - not an iff on the whole finite-patch/2D/3D surface.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/STAGGERED_DIRAC_COUPLING_SIGN_CHANNEL_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-03.md",
+  "moved_to": "archive/notes/docs/STAGGERED_DIRAC_COUPLING_SIGN_CHANNEL_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-03.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-gauge-os-era.md (July gauge/OS era, docs claim notes (D-gauge) \u2014 lane memo); carrier: archive/chains/july-gauge-os-era.md (drafted: phase3/memos/D-gauge.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-gauge"
+}

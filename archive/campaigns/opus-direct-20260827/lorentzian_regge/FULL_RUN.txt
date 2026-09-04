@@ -1,0 +1,97 @@
+hinge kind: L  detGperp = -1.000
+4 axis rays          : ((6.283185307179586+0j), 4, np.float64(6.123233995736766e-17))
+random 11 rays        : sum=(6.28318530717959+0j)  crossings=4  branch_err=1.33e-15
+random 12 rays        : sum=(6.28318530717959+0j)  crossings=4  branch_err=4.78e-16
+random 12 rays        : sum=(6.28318530717959-0j)  crossings=4  branch_err=9.99e-16
+random 12 rays        : sum=(6.28318530717959+0j)  crossings=4  branch_err=1.34e-15
+random 12 rays        : sum=(6.28318530717959-0j)  crossings=4  branch_err=8.88e-16
+timelike hinge kind: E
+Euclidean-orthogonal sum: (6.283185307179586+0j)  (2pi = 6.283185307179586)
+==========================================================================
+STAGE 2  A: literal eta=diag(-1,1,1,1), unit cubic lattice
+  hinges in fundamental domain : 4050   (incomplete stars 0, bookkeeping failures 0)
+  null-PLANE hinges (angle genuinely undefined) : 1458
+  EUCLIDEAN-orthogonal hinges (timelike hinge)  : 1134
+      max|deficit|        = 0.000e+00
+  LORENTZIAN-orthogonal hinges (spacelike hinge): 1458   (of which 972 have lightlike bounding rays)
+      max|deficit|        = 4.930e-32
+      max|sum of boosts|  = 4.930e-32
+      light-cone crossings per hinge: {4: 1458}
+  cos+sin self-check max|cos,sin identities| = 3.331e-16
+==========================================================================
+STAGE 2  B: generic time spacing a_t=0.6 (still exactly flat)
+  hinges in fundamental domain : 4050   (incomplete stars 0, bookkeeping failures 0)
+  null-PLANE hinges (angle genuinely undefined) : 0
+  EUCLIDEAN-orthogonal hinges (timelike hinge)  : 1134
+      max|deficit|        = 8.882e-16
+  LORENTZIAN-orthogonal hinges (spacelike hinge): 2916   (of which 0 have lightlike bounding rays)
+      max|deficit|        = 2.220e-16
+      max|sum of boosts|  = 2.220e-16
+      light-cone crossings per hinge: {4: 2916}
+  cos+sin self-check max|cos,sin identities| = 8.882e-16
+==========================================================================
+STAGE 2  C: generic sheared/boosted flat lattice
+  hinges in fundamental domain : 4050   (incomplete stars 0, bookkeeping failures 0)
+  null-PLANE hinges (angle genuinely undefined) : 0
+  EUCLIDEAN-orthogonal hinges (timelike hinge)  : 2106
+      max|deficit|        = 1.776e-15
+  LORENTZIAN-orthogonal hinges (spacelike hinge): 1944   (of which 0 have lightlike bounding rays)
+      max|deficit|        = 6.661e-16
+      max|sum of boosts|  = 6.661e-16
+      light-cone crossings per hinge: {4: 1944}
+  cos+sin self-check max|cos,sin identities| = 7.283e-14
+==========================================================================
+STAGE 3  Schlaefli identity, random Lorentzian 4-simplices
+  #    V^2         spacelike timelike  max|sum|    term scale  ratio
+  0    -2.039e-02  2         8         1.192e-09   4.676e+00   2.55e-10
+  1    -8.510e-01  6         4         2.944e-09   5.717e+00   5.15e-10
+  2    -1.732e+01  3         7         5.433e-10   6.667e-01   8.15e-10
+  3    -2.981e+01  2         8         4.944e-09   1.844e+00   2.68e-09
+  4    -5.079e+02  4         6         4.567e-09   1.079e+00   4.23e-09
+  5    -7.463e+01  8         2         3.025e-09   2.776e+00   1.09e-09
+  6    -9.857e+02  4         6         1.606e-09   4.061e+00   3.96e-10
+  7    -9.418e+02  7         3         1.305e-08   2.517e+00   5.19e-09
+  8    -8.162e+02  8         2         1.029e-08   5.067e+00   2.03e-09
+  9    -9.250e+01  3         7         4.523e-08   1.301e+01   3.48e-09
+  10   -3.009e+03  5         5         1.127e-08   1.722e+00   6.55e-09
+  11   -5.005e+03  3         7         3.165e-09   2.358e+00   1.34e-09
+  worst relative residual over 12 simplices: 6.549e-09
+  (finite-difference step 1e-6 -> central-difference floor ~1e-10)
+
+  CONTROL (test has teeth): same simplices, |Re| angles, no i*pi/2
+    simplex 0 : max|sum A dtheta| with unsigned angles = 3.670e+00
+    simplex 1 : max|sum A dtheta| with unsigned angles = 9.306e+00
+    simplex 2 : max|sum A dtheta| with unsigned angles = 1.261e+00
+==========================================================================
+STAGE 4  stationarity of S = sum_h A_h delta_h  (lattice case B)
+  simplices 57624, hinges with complete stars 4050
+
+  INTRINSIC CHECK (per-simplex reconstruction, no global embedding)
+    Euclidean-orthogonal  1134 hinges : max|deficit| = 7.994e-15
+    Lorentzian-orthogonal 2916 hinges : max|deficit| = 6.800e-15
+
+  CURVED CONTROL: perturb one squared edge length by eps
+    edge (1, 2, 1, 1) -> (1, 2, 1, 2)   (in 24 simplices, 110 affected hinges, 0 incomplete)
+      eps=0e+00    max|deficit| over affected hinges = 4.496e-15
+      eps=1e-03    max|deficit| over affected hinges = 1.178e-03
+      eps=1e-02    max|deficit| over affected hinges = 1.173e-02
+      eps=1e-01    max|deficit| over affected hinges = 1.123e-01
+
+  STATIONARITY  S = sum_h A_h delta_h   (S(0) = 2.7e-14j)
+    eps       |dS/deps|      |d2S/deps2|    ratio
+    1e-02     4.458e-05      1.367e+00      3.26e-05
+    1e-03     4.458e-07      1.367e+00      3.26e-07
+    1e-04     4.486e-09      1.367e+00      3.28e-09
+    1e-05     7.905e-11      1.367e+00      5.78e-11
+
+  dS/deps for 12 independent edge directions (eps=1e-3)
+    max |dS/deps|    = 1.632e-06   <- must vanish
+    max |d2S/deps^2| = 2.500e+00   <- must NOT vanish
+==========================================================================
+Null-plane hinges of the unit lattice: behaviour as a_t -> 1
+  a_t        n       max|delta|    max|A|        max|A*delta|  crossings
+  0.9        1458    9.8608e-32    3.0822e-01    3.0393e-32    [4]
+  0.99       1458    2.7117e-31    9.9750e-02    2.7049e-32    [4]
+  0.999      1458    1.5777e-30    3.1615e-02    4.9879e-32    [4]
+  0.9999     1458    6.3109e-30    9.9997e-03    6.3107e-32    [4]
+  0.99999    1458    6.3109e-30    3.1623e-03    1.9957e-32    [4]

@@ -1,0 +1,18 @@
+{
+ "id": "admissibility_rule_covariance_extension_classification_openness_achiral_oriented_frame_minimal_chiral_channel_bounded_theorem_note_2026-07-03",
+ "title": "ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03",
+ "science": "The rule-space covariance-extension classification: openness-level patterns are automatically achiral (all 64 two-letter colorings proper-equivalent to their P-images); chirality first appears at three condition values (exactly one chiral pair at k = 3, Burnside 57 - 56); at k = 4 there are exactly TWENTY chiral pairs (Burnside 240 - 220) with the oriented frame the canonical carrier; the antilinear value twist pairs odd with odd (Re R0 = 0 identically); and a chiral fixed rule costs exactly the one orientation bit shared with the theta seed. July kernel/semigroup/admissibility-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result. LIVE RESIDUALS (carried; this note is the primary threshold/carrier statement for the FRONT alphabet-exclusion campaign): physical alphabet identification - how many neighbor contents the fixed rule distinguishes - and the chirality route accounting (any chiral-rule proposal pays the oriented-frame channel + one orientation-odd bit). EPOCH: the note predates the 2026-08-05 Admissibility revision and quotes the pre-revision availability wording; read availability as distribution support.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md",
+  "moved_to": "archive/notes/docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-kernel-rule-era.md (July kernel/semigroup/admissibility era (D-ker) \u2014 lane memo); carrier: archive/chains/july-kernel-rule-era.md (drafted: phase3/memos/D-ker.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8); the rule-chirality thread's live successor is the toe-axiom-closure alphabet-exclusion lane (FRONT)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-ker"
+}

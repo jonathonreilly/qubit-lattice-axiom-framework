@@ -1,0 +1,17 @@
+{
+ "id": "work_history.pf.readme",
+ "title": "README",
+ "science": "PF bucket README whose authority rules (do not cite for branch-wide closure, negative current-bank theorems, or frontier certificates) are carried in full detail by the salvage note itself.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/work_history/pf/README.md",
+  "moved_to": "archive/notes/docs/work_history/pf/README.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "carrier: docs/work_history/pf/PERRON_FROBENIUS_ROUTE_SALVAGE_NOTE_2026-04-18.md",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived"
+}

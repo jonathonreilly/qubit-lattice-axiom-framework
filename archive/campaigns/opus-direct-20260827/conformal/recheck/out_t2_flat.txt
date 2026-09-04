@@ -1,0 +1,52 @@
+=== T2a  unit flat torus: lattice trace vs winding sum ===
+  L = 32
+      s     plain rel.err   improved rel.err
+      1.0     +4.305e-01      +8.506e-02
+      2.0     +1.598e-01      +1.892e-02
+      3.0     +9.638e-02      +8.074e-03
+      4.0     +6.935e-02      +4.506e-03
+      6.0     +4.454e-02      +2.000e-03
+      8.0     +3.282e-02      +1.126e-03
+     10.0     +2.599e-02      +7.219e-04
+     16.0     +1.601e-02      +2.835e-04
+     25.0     +1.023e-02      +1.674e-04
+     40.0     +6.909e-03      +6.081e-04
+     64.0     +4.666e-03      +1.336e-03
+  L = 64
+      s     plain rel.err   improved rel.err
+      1.0     +4.305e-01      +8.506e-02
+      2.0     +1.598e-01      +1.892e-02
+      3.0     +9.638e-02      +8.074e-03
+      4.0     +6.935e-02      +4.506e-03
+      6.0     +4.454e-02      +2.000e-03
+      8.0     +3.282e-02      +1.126e-03
+     10.0     +2.599e-02      +7.219e-04
+     16.0     +1.600e-02      +2.828e-04
+     25.0     +1.015e-02      +1.161e-04
+     40.0     +6.309e-03      +4.543e-05
+     64.0     +3.930e-03      +1.792e-05
+
+=== T2b  CONSTANT diagonal metrics (exactly flat, tr g != 4): c=1/24 vs c=tr g/96 ===
+    metric                tr g      s      err(c=1/24)   err(c=trg/96)
+    [np.float64(1.4), np.float64(1.4), np.float64(1.4), np.float64(1.4)]  5.60    4.0    +3.296e-02     +8.924e-03
+    [np.float64(1.4), np.float64(1.4), np.float64(1.4), np.float64(1.4)]  5.60    8.0    +1.435e-02     +2.204e-03
+    [np.float64(1.4), np.float64(1.4), np.float64(1.4), np.float64(1.4)]  5.60   16.0    +6.701e-03     +5.532e-04
+    [np.float64(1.4), np.float64(1.4), np.float64(1.4), np.float64(1.4)]  5.60   25.0    +4.186e-03     +2.297e-04
+    [np.float64(0.6), np.float64(0.6), np.float64(0.6), np.float64(0.6)]  2.40    4.0    -2.147e-02     +1.620e-03
+    [np.float64(0.6), np.float64(0.6), np.float64(0.6), np.float64(0.6)]  2.40    8.0    -1.157e-02     +4.068e-04
+    [np.float64(0.6), np.float64(0.6), np.float64(0.6), np.float64(0.6)]  2.40   16.0    -5.952e-03     +1.818e-04
+    [np.float64(0.6), np.float64(0.6), np.float64(0.6), np.float64(0.6)]  2.40   25.0    -3.275e-03     +6.821e-04
+    [np.float64(1.5), np.float64(0.8), np.float64(1.2), np.float64(0.9)]  4.40    4.0    +1.181e-02     +5.900e-03
+    [np.float64(1.5), np.float64(0.8), np.float64(1.2), np.float64(0.9)]  4.40    8.0    +4.468e-03     +1.448e-03
+    [np.float64(1.5), np.float64(0.8), np.float64(1.2), np.float64(0.9)]  4.40   16.0    +1.898e-03     +3.638e-04
+    [np.float64(1.5), np.float64(0.8), np.float64(1.2), np.float64(0.9)]  4.40   25.0    +1.211e-03     +2.208e-04
+
+=== T2c  pipeline check: constant conformal metric through build()+bloch ===
+  L=8 eps=0.00: Vol=4096.000000 (exact 4096.000000)  S_Regge=3.78e-11  C=1.0000 (tr g/4 = 1.0000)
+        max rel |pipeline - uniform-symbol| over s: 9.53e-14    rel err vs exact torus at s=8/16/25: +7.84e-03 +1.27e-04 +8.36e-07
+  L=8 eps=0.10: Vol=4956.160000 (exact 4956.160000)  S_Regge=-6.64e-11  C=1.1000 (tr g/4 = 1.1000)
+        max rel |pipeline - uniform-symbol| over s: 2.11e-13    rel err vs exact torus at s=8/16/25: +1.08e-02 +2.80e-04 +3.03e-06
+  L=16 eps=0.00: Vol=65536.000000 (exact 65536.000000)  S_Regge=6.05e-10  C=1.0000 (tr g/4 = 1.0000)
+        max rel |pipeline - uniform-symbol| over s: 1.16e-13    rel err vs exact torus at s=8/16/25: +2.06e-03 +5.58e-03 +3.65e-03
+  L=16 eps=0.10: Vol=79298.560000 (exact 79298.560000)  S_Regge=-1.07e-09  C=1.1000 (tr g/4 = 1.1000)
+        max rel |pipeline - uniform-symbol| over s: 1.92e-13    rel err vs exact torus at s=8/16/25: +1.93e-03 +5.32e-03 +4.39e-03

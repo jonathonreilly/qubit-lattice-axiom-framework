@@ -1,0 +1,18 @@
+{
+ "id": "frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03",
+ "title": "FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03",
+ "science": "The frozen-region theorems on landed permanence: a saturated region is locally final (dom-monotonicity, reading-free) with its record set constant under M1 (4^8 enumeration); local record-time halts while events continue outside; boundary influence is MONOTONE CONTAINMENT (vs exact singleton pinning only for cavity sites) - both proved for the note's EXHIBITED covariant availability rule, with the any-covariant-rule generalization a named rule-dependence residue, not claimed (a boundary singleton relaxes under a different-neighbor record); global saturation is unreachable at finite stage in the finitary sector, so infinite Z^3 is load-bearing for unbounded record-time - the frozen-star label an owner reading, no GR content. July record-formation/occurrence/instrument-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md",
+  "moved_to": "archive/notes/docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-record-formation-era.md (July record formation/occurrence/instrument era (D-rec) \u2014 lane memo); carrier: archive/chains/july-record-formation-era.md (drafted: phase3/memos/D-rec.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-rec"
+}

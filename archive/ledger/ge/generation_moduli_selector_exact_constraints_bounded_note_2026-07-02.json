@@ -1,0 +1,18 @@
+{
+ "id": "generation_moduli_selector_exact_constraints_bounded_note_2026-07-02",
+ "title": "GENERATION_MODULI_SELECTOR_EXACT_CONSTRAINTS_BOUNDED_NOTE_2026-07-02",
+ "science": "Exact constraint map for any future generation-moduli selector: ratio-directness (scale/phase dressings leave r = |b|^2/a^2 invariant, so scale-only factorizations cannot select), the dial-point structure of the two dictionary flows (single-step fixed sets {0,1/2} and {0,1} exact; mixed compositions add 2^(-1/3), 2^(-2/3)), and the sector-label requirement (color data alone cannot assign distinct moduli to equal-color sectors). July flavor/CKM/color/species-era docs note, personally read in full 2026-09-04; released to the archive tier behind the lane memo - the note stays the primary surface of its own result.",
+ "source": {
+  "kind": "docs-note",
+  "path": "docs/GENERATION_MODULI_SELECTOR_EXACT_CONSTRAINTS_BOUNDED_NOTE_2026-07-02.md",
+  "moved_to": "archive/notes/docs/GENERATION_MODULI_SELECTOR_EXACT_CONSTRAINTS_BOUNDED_NOTE_2026-07-02.md",
+  "consolidation": "densify-freeze-20260904"
+ },
+ "carried_by": "archive/chains/july-flavor-species-era.md (July flavor/CKM/color/species era (D-flav) \u2014 lane memo); carrier: archive/chains/july-flavor-species-era.md (drafted: phase3/memos/D-flav.md); the note remains its own primary claim surface in the archive tier (runner, cache, and ledger shard never move - G8)",
+ "review": {
+  "level": "light",
+  "process": "densify freeze 2026-09-04: 3,262-candidate full personal read; 21-lane consolidation memos; 21-seat adversarial attack pass (D8) + fix-layer checker pass (D8b); partition 2,418 FRONT / 797 ARCHIVE / 0 HOLD / 47 FOLLOW-PARENT"
+ },
+ "status": "archived",
+ "lane": "D-flav"
+}

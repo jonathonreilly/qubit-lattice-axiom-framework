@@ -13,8 +13,8 @@ hard_residual: match fixed particle number and all torus Wilson loops to reflect
 proof_review: separate_context_same_family_review_supports_core_proof
 runner_status: primary_15_PASS_checker_6_PASS_fresh_caches_12_failing_mutations
 pr_status: not_opened
-open_pr_intake_count: 224
-open_pr_intake_as_of_utc: 2026-09-04T21:22:21Z
+open_pr_intake_count: 225
+open_pr_intake_as_of_utc: 2026-09-04T22:04:25Z
 photons: reserved_for_other_worker
 next_action: review every runner line and proof, run required gates, publish PR
 next_science: shared Record-matter-gauge quantum history process

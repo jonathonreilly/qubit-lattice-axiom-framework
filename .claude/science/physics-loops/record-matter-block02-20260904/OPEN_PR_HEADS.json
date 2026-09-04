@@ -1346,6 +1346,14 @@
       "headRefOid": "be17159a6bc95c1451763dbf89bd6eaa6d747257",
       "baseRefName": "physics-loop/toe-time-blockG13-20260802",
       "baseRefOid": "c00b3de3d42bce2233a62f640667f80f0013ac27"
+    },
+    {
+      "number": 7973,
+      "headRefOid": "5b080fca1ebaee23ea4d4e1eccfd08a8b001e60b",
+      "baseRefName": "main",
+      "baseRefOid": "e249016f759f224d9b429932cd0d1db4d452dc1a"
     }
-  ]
+  ],
+  "addendum_review_utc": "2026-09-04T22:04:25Z",
+  "addendum_note": "Initial224snapshot preserved; added7973 after complete note/evidence/discussion intake and unchanged-head terminal check."
 }

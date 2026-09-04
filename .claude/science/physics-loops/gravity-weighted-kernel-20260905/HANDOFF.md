@@ -1,2 +1,5 @@
 # HANDOFF — gravity-weighted-kernel-20260905 (campaign start 2026-09-04T21:03+00:00)
 State: block 213 launched (sol primary drafting). Supervisor: this session (Fable), line-by-line review + landing; workers: gpt-5.6-sol xhigh seats, primary + independent checker (cross-context). Next exact action: review the primary's runner/note draft; run the checker (F2 route, refute); conformance gate; open PR stacked on #7753.
+
+# DEGRADED WORKER MODE (2026-09-04T21:32+00:00): the gpt-5.6-sol seats died at the codex account usage limit (reset Sep 6 22:27); block continues on Fable worker seats (single-family) under the workhorse robustness conditions: refuting checker on disjoint machinery, mutation probes, supervisor hand-verification; independence class = cross-context; disclosed in the note/receipt/PR. Sol narration salvaged to specs/SALVAGE_sol_primary_narration.md as untrusted draft input.
+# WORKER PROFILE UPDATE (owner 2026-09-05): Opus 5 seats permitted for physics work conditional on supervisor checking; profile = Fable primary + Opus blind/refuting seats (cross-model within family) + supervisor line-by-line.

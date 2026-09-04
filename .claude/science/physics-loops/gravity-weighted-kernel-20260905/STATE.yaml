@@ -26,3 +26,8 @@ review_findings: none yet
 pr_status: not opened
 next_exact_action: "sol primary drafts the runner + note per specs/block213_primary.md; supervisor reviews line-by-line; sol checker refutes via F2"
 stop_condition: "runtime exhausted, or corollary/value-gate exhaustion documented in OPPORTUNITY_QUEUE.md"
+
+# DEGRADED WORKER MODE (2026-09-04T21:32+00:00): the gpt-5.6-sol seats died at the codex account usage limit (reset Sep 6 22:27); block continues on Fable worker seats (single-family) under the workhorse robustness conditions: refuting checker on disjoint machinery, mutation probes, supervisor hand-verification; independence class = cross-context; disclosed in the note/receipt/PR. Sol narration salvaged to specs/SALVAGE_sol_primary_narration.md as untrusted draft input.
+# WORKER PROFILE UPDATE (owner 2026-09-05): Opus 5 seats permitted for physics work conditional on supervisor checking; profile = Fable primary + Opus blind/refuting seats (cross-model within family) + supervisor line-by-line.
+
+# 2026-09-04T22:03+00:00: blind F2 checked (PASS=59/0 rerun; spectrum hand-verified); F-A1..F-A3 recorded; target reframed to the falsifiable proportionality form; awaiting the Fable primary to compare.

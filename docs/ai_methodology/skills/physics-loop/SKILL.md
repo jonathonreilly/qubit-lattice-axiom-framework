@@ -678,6 +678,32 @@ For publication-facing or quantitative work, also inspect
 2. **Ground, then sweep for prior art.** Build the current lane map from repo
    authority surfaces rather than memory.
 
+   **Include the open PR science, not only main.** Main owns adopted premises
+   and status; open PRs can already contain the newest results, counterexamples,
+   or stronger versions of a proposed target. At campaign intake, read the open
+   proposals' bodies, changed primary science notes, evidence and substantive
+   review findings. Keep a per-PR receipt binding its captured identity and what was actually
+   read; a title inventory is not scientific coverage. Reuse matching receipts
+   and refresh new or changed proposals before choosing later blocks. Treat
+   proposed results as prior art to inspect, never as audited authority.
+
+   `scripts/open_pr_science_coverage.py capture --repo OWNER/REPO --output current.json`
+   checks the total open count, records head/base commits, recovers paginated
+   changed-file lists (the `gh pr list` file field can stop at 100), and rejects
+   observed capture drift. After reading a proposal in the saved snapshot, use
+   `receipt --reviewed current.json --number N --read-coverage 'Describe the surfaces read and any limits'`
+   to emit its JSONL receipt. Preserve that snapshot with the receipt. Its
+   offline `check --current current.json --reviewed reviewed.json --receipts reads.jsonl`
+   compares a saved reviewed inventory with JSONL receipts containing `number`,
+   `head`, `inventory_identity`, and a nonempty `read_coverage` description.
+   The identity binds the proposal text and metadata as well as the commits;
+   replacing the reviewed snapshot cannot refresh an old receipt. Exit 0 means matching
+   declared coverage, 1 means missing/stale receipts, and 2 means invalid inputs.
+   The description is self-reported; the tool checks only its presence, cannot
+   verify that a person or model read or understood a note, and assigns no
+   scientific grade. `updatedAt` is a conservative metadata-change signal, not
+   a stored review-discussion transcript; inspect the discussion when refreshing.
+
    **Then search the repo for the result you are about to produce, before you
    produce it.** This is a hard prerequisite, not a courtesy. The failure mode
    was observed on 2026-07-25: a cycle derived that a finite-dimensional

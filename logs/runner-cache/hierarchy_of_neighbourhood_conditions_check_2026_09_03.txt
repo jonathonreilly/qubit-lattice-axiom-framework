@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py
+runner_sha256: 0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 2.55
+status: ok
+----- stdout -----
+PASS A1 [exact] GLUED, single ticks on the L = 8 torus: the glued DIMER is FROZEN -- C_comp and C_rig each admit 0 shifts from 1 class, 0 Fraction-certificate inconsistencies, cage width 0, so D_group = 0 EXACTLY
+PASS A2 [exact] the glued BENT TRIMER is CAGED, not frozen: C_comp gives 4 classes, 8 shifts, 0 coboundary inconsistencies and CoM spread (1/3, 1/3, 0) -- three corners of one FIXED unit square forever, D_group = 0; C_rig gives 0
+PASS A3 [exact] NEIGHBOURHOOD tick KB(r): over 3072 block shifts per group per reach the internal pattern survives EXACTLY, 0 violations in all four censuses, E|dCoM|^2 = 1 and 4, so D_block = D_1 EXACTLY at reach 1 and 4 D_1 at reach 2
+PASS A4 [exact argument, numerical 1e-12] MIXED tick KM(q): a block shift leaves the shape fixed and the K1 increment is the exact coboundary Phi, so it telescopes -- D(q) = q D_1 EXACTLY, the Var|CoM| slope matching q to 0.00e+00 in all ten cells
+PASS A5 [exact] REACH decides mobility, not condition strength: the same glue at reach 2 leaves the dimer 2 shifts and 2 coboundary inconsistencies -- a self-loop of nonzero CoM increment, so the cage FAILS; both are LEAPFROGS with D = D_1 on the pair's axis, and the trimer stays caged at 2/3
+PASS B1 [exact] BREAKABLE, on the exact 511-state relative chain (6 intact, 505 broken): pi(S) ~ e^{-g B(S)} is EXACTLY stationary, |pi P - pi| <= 2.8e-17, and the intact fraction 6/(6 + 505 e^{-g}) runs 0.0117, 0.3935, 1.0000 at g = 0, 4, 16 (closed form to 7.8e-16)
+PASS B2 [exact] the TRIMER census by translation class: A = 2, 1, 0 give 15, 1500, 41920 classes, 43435 = C(512,3)/512 in all, so the intact fraction 15/(15 + 1500 e^{-g} + 41920 e^{-2g}) runs 0.000345 at g = 0 to 0.999989 at g = 16
+PASS B3 [exact] closed-form LIFETIMES, against absorbing solves to 1.7e-11: 10 of the dimer's 12 proposals are unblocked and every registered one breaks it, so its lifetime is (6/5) e^{g}; the trimer's 18 split 4 null, 2 caged, 8 at dB = 1 and 4 at dB = 2, giving 18/(8 e^{-g} + 4 e^{-2g})
+PASS B4 [exact] D_intact = 0 EXACTLY at EVERY g, both groups, g = 0 included: while intact the dimer has NO admissible single shift at all (0) and the trimer's 8 are exactly the A2 cage (spread 1/3), so the CoM stays bounded -- a bound pair transports ONLY by breaking
+PASS B5 [numerical, 1e-9] the unconditional D_group(g), Markov-additive on the exact chain: 6 D_group = 0.2495, 0.2446, 0.2321, 0.1531, 0.006933, 2.391e-06 at g = 0, 1, 2, 4, 8, 16 -- from 0.998043 to 9.6e-06 of D_free(2) = D_1/4, falling as e^{-g}, exactly as fast as the lifetime grows
+PASS B6 [exact reason, numerical 1e-12] RE-BINDING is certain and the cost does not touch it: the chain is finite and irreducible, so P(re-bind) = 1 at every finite g; once broken every proposal has dB <= 0 and registers with odds 1, so the mean recurrence is exactly 101 = 505/5 ticks at every g (101.000000000, max 204.706)
+PASS B7 [exact] THE TWO LIMITS: as g -> infinity the admissible set contracts to exactly the A1-A2 support-condition set, so GLUED is the g -> infinity limit of BREAKABLE; at g = 0 (FREE) the pair is intact 1.17 % of ticks and the trimer 0.035 %, with D_group = 0.998043 D_free(2), the rest exclusion
+PASS C1 [exact] a UNIFORM FIELD DRIVES a bound pair, it does not tear it: the lifetime is exactly 2 e^{g}(5+e^{h})/(9+e^{h}) aligned and e^{g}(5+e^{h})/(4+e^{h}) transverse (chain agrees to 2.3e-16 over 30 cells), so it stays inside [0.8336, 1.6644] of its zero-field value -- limits 5/6 and 5/3 -- and RISES with h when aligned
+PASS C2 [exact] the TEARING THRESHOLD runs BACKWARDS: under single ticks the intact group cannot move, so h*(g) = 0 identically; under KM(q) it is e^{h*} = [4(1-q) + q e^{g}]/[q e^{g} - (1-q)] (bisection to 4.4e-16), falling from 1.363508 at g = 1 to 0.000001 at g = 16 (q = 0.5) -- h > h* is where the group SURVIVES
+PASS C3 [exact] a COLLISION on the 16-site ring, 1820 configurations: the cyclic order of the four records survives all 11648 admissible shifts, 0 violations, so P(pass) = 0 EXACTLY at every g; the competition is STICK versus BREAK, P(break first) = 0.919, 0.778, 0.54, 0.0977, 0.00161, 5.38e-07 at g = 0, 1, 2, 4, 8, 16 -- above g ~ 2.5 a collision MERGES
+PASS C4 [exact] REACH leaves the BREAK RATE alone: a reach-2 single tick breaks a breakable dimer at exactly the reach-1 rate (5/6) e^{-g}, agreeing to 0.0e+00 at all six g, since 10 of 12 proposals still carry dB = +1 -- what a longer reach changes is the cage (A5), not the break
+PASS D1 [exact] the EMERGENT instance, the 2x2x2 cube of PR #7893 with a fermion and a link record per edge: G_v = (div E)_v - rho_v = 0 at all 8 corners (sea convention) admits 14400 of 2^24 joint record patterns, on 2240 fermion patterns, ALL at N = 4
+PASS D2 [exact] NO SINGLE RECORD CHANGE IS ADMISSIBLE: over 14400 patterns x 12 edges a fermion record alone is admissible in 0 of 172800 cases and a link record alone in 0 of 172800 -- odds exactly 0, since flipping y_e complements n_v at BOTH endpoints and flipping l_e reverses E_e at both
+PASS D3 [exact] the PAIRED change IS admissible -- fermion record and link record on the SAME edge, together: 79872 of 172800, census 768 x 4, 6144 x 5, 6912 x 6, 576 x 8 -- and ALL carry the charge WITH its flux (occupations swap, E_e reverses), 0 violations; 79872 is exactly PR #7893's H^g nonzero count
+PASS D4 [exact] the three levels on ONE object: the FREE fermion sector admits all 49152 single edge-record changes, PR #7891's PARITY sector 4608 over 896 patterns (census {4: 384, 6: 512}, recomputed not quoted), the GLUED Gauss sector 0
+PASS D5 [exact] a needed CLARIFICATION: there is no one-charge configuration on the cube -- the Gauss sector is exactly half filled, so all 14400 patterns carry 4 corners at rho_v = +1/2 and 4 at -1/2, total charge 0; 'one charge' is read as one corner at +1/2
+PASS E1 [exact] THE HIERARCHY in one table: GLUED gives D = 0 under single ticks, D = D_1 under a neighbourhood tick, an infinite lifetime and nothing that breaks it at any coupling -- only reach changes it; BREAKABLE gives D_intact = 0, lifetime (6/5) e^{g}, transport only by breaking; FREE gives D_free(2) = D_1/4 (0.998)
+SUMMARY: a glued group travels only as one, and then at exactly D_1; a breakable one holds for (6/5) e^{g} ticks and transports only by breaking; in the Gauss sector no single record change is admissible at all.
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

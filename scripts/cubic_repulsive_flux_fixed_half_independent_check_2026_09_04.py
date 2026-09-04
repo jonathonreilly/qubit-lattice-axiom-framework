@@ -8,6 +8,7 @@ import sympy as sp
 
 
 TOL = 3e-9
+AUDIT_TIMEOUT_SEC = 180
 START = time.perf_counter()
 I2 = np.eye(2, dtype=complex)
 Z2 = np.diag([1.0, -1.0]).astype(complex)

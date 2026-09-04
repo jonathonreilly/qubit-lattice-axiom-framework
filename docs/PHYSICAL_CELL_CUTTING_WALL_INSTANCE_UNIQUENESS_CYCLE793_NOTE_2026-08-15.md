@@ -6,6 +6,7 @@ Audit: unset
 Status: proposed_retained
 Claim type: bounded_theorem
 Constitutional effect: none.
+Runner: [physical_cell_cutting_wall_instance_uniqueness_cycle793_2026_08_15.py](../scripts/physical_cell_cutting_wall_instance_uniqueness_cycle793_2026_08_15.py)
 
 ## Trace gate
 

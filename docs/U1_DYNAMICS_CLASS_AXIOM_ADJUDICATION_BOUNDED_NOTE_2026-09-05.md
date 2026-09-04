@@ -210,10 +210,10 @@ transforming under the sector-preserving lattice symmetries by a signed
 permutation. Every such transformation law is induced from a character of
 the site stabilizer (a `D_4` of proper rotations about the site, all named by
 the Lattice axiom); the characters are realized by tensor transport, so the
-edge payload transforms as a scalar or as the axial vector component, each
-optionally twisted by the rotation group's global sign character (the parity
-of the axis permutation), and likewise the face payload with the normal
-component. This gives sixteen laws. For each, the space of translation- and
+edge payload transforms as a scalar or as the vector component along its
+axis, each optionally twisted by the rotation group's global sign character
+(the parity of the axis permutation), and likewise the face payload as a
+scalar or as the vector component along its normal. This gives sixteen laws. For each, the space of translation- and
 proper-cubic-covariant real linear nearest-neighbor generators on the payload
 is computed exactly as the nullspace of the covariance constraints on the 30
 translation-covariant nearest-neighbor patterns:

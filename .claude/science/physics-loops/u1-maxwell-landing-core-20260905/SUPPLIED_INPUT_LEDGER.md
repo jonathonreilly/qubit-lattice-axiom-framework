@@ -37,7 +37,7 @@ Every estimate is this synthesis's reading, not a member claim.
 | 1 | A | the dynamics class of #7917 (real, linear, first-order, continuous time; NN; translation + proper-cubic covariant; gauge/chain compatible; positive-diagonal energy conserved; minimal edge/face payload) | #7917 (class); #7915 (the generator, supplied); #7920-#7923 (the tick); #7932 (the tangent) | the terminal becomes *unique given the residual supply* instead of *unique inside a declared class*; the residual becomes the exact object of #7917's program choice 2 | mixed: locality and covariance are a live lever (Admissibility's covariance sentence, under an identification premise); gauge compatibility partial (role construction); conservation, first-order linear continuous time, and minimal payload are genuine supply |
 | 2 | A | the detuning `V` of the finite-qubit carrier, and the electric stiffness `U > 0` it produces | #7937, #7941, #7943, #7945, #7946, #7952, #7953, #7955, #7963; #7959 (its absence: `V = 0`, `E_e^2 = 1/4`) | decides the two-branch photon split: whether the linear transverse term is a supplied detuning or a derived object | the value of `V`: genuine supply; the sign of an electric stiffness: a live lever exists in the compact branch (#7886's registration curvature from Admissibility's "varies with") whose transplant to the spin-half carrier no member attempts; `U > 0` from matter coupling is a computation on #7959's named candidates |
 | 3 | A | the link role: which sites are vertices, edges, faces, cubes, and the U(1) / `Z_K` / integer-flux / spin-half label realized on edge sites | every member | the root of the chain: a derived carrier | genuine supply at law level (Lattice: "No site is privileged"); at most a feature of a realized state (registered data); the spin-half label is the one closest to Qubit's `M_2(C)` |
-| 4 | B | the Gauss constraint (ice rule; `div E = rho`) read as support forcing among records | #7893, #7903, #7911, #7936-#7963; #7917 item 5; #7952 (transversality) | the constraint sector of every link, and part of the terminal's gauge-compatibility item, become Admissibility-shaped consequences | partial, high: the shape is a live lever (Admissibility's support clause on the role-compiled NN geometry); the specific rule and background charge are supplied |
+| 4 | B | the Gauss constraint (ice rule; `div E = rho`) read as support forcing among corner records | #7893, #7903, #7911, #7936-#7963; #7917 item 5; #7952 (transversality) | the constraint sector of every link, and part of the terminal's gauge-compatibility item, become Admissibility-shaped consequences | partial, SHAPE ONLY: the support-forcing shape matches Admissibility's support clause, but only on the supplied role compilation (blind R13), and the vertex carries no payload in any member (#7959, #7917 item 7); the specific rule and background charge are supplied |
 | 5 | B | orientation completion: a spatial plaquette factor with `kappa_s = kappa_t` | #7884, #7886, #7887, #7906, #7915 | the magnetic block of the compact branch — without it the kernel has rank one and there is no light | partial: spatial isotropy among the three spatial orientations is a live lever (Admissibility's covariance sentence) once a spatial factor exists; the factor's existence is Admissibility-shaped via #7907 but its alphabet is supplied; `kappa_s = kappa_t` (space against Record time) is genuine supply — the members decline to read the kinetic-isotropy primitive as covering it |
 | 6 | B | the Record registration / overlap law used as a multiplicative transfer or action factor | #7886, #7887, #7906; #7915, #7917 (through `kappa`) | `kappa > 0` unconditionally from Record + Admissibility, closing link ii without supply | partial: nonconstancy is derived by #7886 from Admissibility's "varies with" on the shifted-convolution ansatz; the ansatz has a lever in Qubit's "No possibility is privileged"; the path-product (factorized transfer) is genuine supply |
 | 7 | B | the finite tick: palindromic three-shear schedule, composed radius three, `h < 1/sqrt(3)` | #7920, #7922, #7923; #7921 (the strict class it refutes) | the exact local tick, "the sharpest dynamics compiler residual" (#7917) | genuine supply; the live question is the reading of the approved kinetic-isotropy primitive's "one tick is one edge in form", which #7921 names as an interpretation boundary for the owner, not a derivation |
@@ -197,8 +197,9 @@ consequence rather than a design.
 privileged. Sites are distinguished by the supplied lattice structure alone."
 A law-level role assignment privileges sites. The Qualification says "A state
 is a configuration of records" and "A law privileges no states", so a role
-pattern can at most be a feature of a realized state — registered data under
-the realized-state slot, invariant over no law-admissible family, hence not a
+pattern is not a record configuration and the realized-state slot does not
+host it; it is registered data of the construction, invariant over no
+law-admissible family, hence not a
 derivation output. Of the labels, the spin-half role is the one closest to
 Qubit's "The full one-site possibility domain has algebraic presentation
 `M_2(C)`": one qubit per link site (#7959: "one further two-state site per
@@ -209,7 +210,7 @@ C15): #7932's reduced-mode gaps approach the photon frequency only at
 with `E_e^2 = I/4` a c-number; the finite-clock Maxwell tangent is a large-`K`
 statement and no member exhibits it at the minimal payload.
 
-### 4. The Gauss constraint as support forcing — tier B, live lever
+### 4. The Gauss constraint as support forcing — tier B, partial (shape only)
 
 **The input.** The ice rule (three-of-six) and the charge rule `div E = rho`,
 with a supplied background (`rho_v = 0` on tori; the staggered convention on
@@ -225,16 +226,19 @@ construction").
 terminal's gauge-compatibility item, become consequences of Admissibility
 rather than a supplied constraint.
 
-**Derivability.** *Partial, high.* Admissibility's reading note:
-"'available'/'admissible' denotes its support -- on finite menus, exactly the
-possibilities of nonzero probability." On the role-compiled lattice a
-vertex-role site's six physical nearest neighbors are its six edge-role sites,
-so *the admissible vertex possibilities are those compatible with the six
-neighboring link records* is exactly the shape of the Admissibility sentence: the
-distribution's support at a site determined by nearest-neighbor conditions.
-#7893 already words Gauss's law that way. What is supplied is the content of
-the rule (which combination of neighboring link values is admissible, and the
-background charge). A natural block-03 candidate.
+**Derivability.** *Partial, shape only* (downgraded on the refuting check).
+Admissibility's reading note: "'available'/'admissible' denotes its support --
+on finite menus, exactly the possibilities of nonzero probability." #7893's
+Gauss operators are "order-independent site-level support forcing among
+corner records" — a restriction on the corner (edge-role) records around a
+vertex, NOT on a vertex's own menu: the vertex-role site carries no payload in
+any member (#7959; #7917 item 7), so there is no vertex distribution for the
+Admissibility sentence to constrain. The shape match is real (support
+determined by nearest-neighbor conditions) but it inherits the supplied role
+compilation (blind R13) and adds no Gauss content of its own. What is supplied
+is the content of the rule (which combination of neighboring link values is
+admissible), the background charge, and the compilation itself. A block-03
+candidate only in this narrowed form.
 
 ### 5. Orientation completion — tier B, partial
 
@@ -414,10 +418,10 @@ lane and is not examined here.
 `BLIND_supplied_input_ledger_opus.md` (26 rows R01-R26, 16 narrowings
 C01-C16; supervisor-checked 8/8 quotes) was read after this ledger's rows
 were fixed; disagreements are findings. Granularity differs: its 26 rows map
-onto this ledger's 12 (R01, R05, R09, R10, R11, R13-R17 into row 1; R04, R06
-into row 2; R02, R08, R18 into row 3; R03 into row 5; R07 into row 6; R12, R26
-into row 7; R22 into row 8; R20, R23 into rows 9-10; R16, R19, R21, R24, R25
-into rows 11-12).
+onto this ledger's 12 (R01, R05, R09, R10, R11, R13, R14, R15, R17 into row 1;
+R04, R06 into row 2; R02, R08, R18 into row 3; R19 into row 4 (adjudicated in
+D2); R03 into row 5; R07 into row 6; R12, R26 into row 7; R22 into row 8; R20,
+R23 into rows 9-10; R16, R21, R24, R25 into rows 11-12).
 
 Agreements. Both ledgers put the time rule and the conserved energy at the top
 as the deepest supplies (its R01, R05; this row 1 items 2 and 6), rate
@@ -471,5 +475,6 @@ supply — with the synthesis warning that the identification premise's most
 direct realization is the diffusive sampler branch of #7915's fork, so the
 block's honest product may be a sharpened residual rather than a derivation.
 Row 4 (Gauss as support forcing) is the natural block 03. Row 2 is a
-computation block, not a derivation block, and is the shortest path to the
-lane's open item.
+computation block, not a derivation block — it sits in the tier-A list for
+its value to the open item, outside the derivation ranking proper — and is
+the shortest path to the lane's open item.

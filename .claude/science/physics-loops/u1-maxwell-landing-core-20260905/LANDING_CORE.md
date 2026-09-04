@@ -195,7 +195,7 @@ as a supplied input.
   proper-cubic, gauge-compatible and positive-diagonal-energy-conserving
   edge/face class, exact stencil and conservation constraints leave only the
   oriented Yee/Maxwell curl pair up to field normalization and one speed."
-- Supplied: the class `M_min` (M1-M6 plus continuous time; section 7 quotes
+- Supplied: the class `M_min` (M1-M6; continuous time is inside M2, and #7917's N3 states "Continuous time is supplied"; section 7 quotes
   the seven declared items). Four proof steps: gauge invariance on one face
   star leaves the stencil `(1,1,-1,-1)`; proper cubic covariance equates the
   three orientation coefficients; the period-two role geometry has no
@@ -369,10 +369,13 @@ as a supplied input.
 ## 6. The 3D photon — TWO BRANCHES; the lane's OPEN item (link vi)
 
 The carrier (both branches): one qubit per cubic link, an ice Gauss constraint
-(three-of-six), square-ring flips as the only move. Both #7959 and #7945 report
-9,600 Gauss/ice states at `L = 2` and an 864-state zero-flux mobile component;
-by their displayed formulas they are the same carrier at different values of
-the supplied coupling (synthesis reading): #7959's law is the ring-exchange
+(three-of-six), square-ring flips as the only move. #7959 reports
+`dim(Gauss) = 9600` at `L = 2` (the 9,600 ice states #7937 also exhausts) and
+an 864-state zero-flux mobile component; #7945 reports only the
+864-configuration zero-flux mobile orbit and no Gauss-sector count. That the
+two are the same carrier at different values of the supplied coupling is THIS
+NOTE'S SYNTHESIS READING — stated by no member — resting on #7945's displayed
+law against #7959's: #7959's law is the ring-exchange
 term alone ("a Hamiltonian that carries no Rokhsar-Kivelson potential term");
 #7945's law is `H(V) = -sum_p (|clockwise><counterclockwise| + h.c.) + V N_f`,
 with `V=1` the RK point and `V=0.95, 0.90` the tested detunings.
@@ -412,7 +415,7 @@ with `V=1` the RK point and `V=0.95, 0.90` the tested detunings.
 - Its own limits: "the geometry has no transverse direction and gives no
   result for a three-dimensional photon."
 
-**PR #7959** — branch `physics-loop/pure-spin-half-link-model-gapless-quadratic-mode-open-path-projector` (branch name looked up with `gh pr view` on 2026-09-04; not in `inputs/`) — open PR, unlanded.
+**PR #7959** — branch `physics-loop/pure-spin-half-link-model-gapless-quadratic-mode-open-path-projector` (branch name from `gh pr view`, 2026-09-04; the note text is in `inputs/`, the branch name is not) — open PR, unlanded.
 - Claims (title): "The pure spin-1/2 link model on the cubic torus is gapless,
   deconfined and unordered at `L <= 12`, with a quadratic transverse mode and a
   flat transverse structure factor."
@@ -530,7 +533,7 @@ with `V=1` the RK point and `V=0.95, 0.90` the tested detunings.
   localizes that mismatch uniquely to the highest-momentum L=8 block";
   "establishes neither a thermodynamic photon pole nor c-squared=U K."
 
-**PR #7963** — branch `physics-loop/spin-half-cubic-ice-infrared-maxwell-join-20260904` (branch name looked up with `gh pr view` on 2026-09-04; not in `inputs/`) — open PR, unlanded. THE INFRARED BOUNDARY.
+**PR #7963** — branch `physics-loop/spin-half-cubic-ice-infrared-maxwell-join-20260904` (branch name from `gh pr view`, 2026-09-04; the note text is in `inputs/`, the branch name is not) — open PR, unlanded. THE INFRARED BOUNDARY.
 - Claims (title): "Lower Cubic-Ice Momenta Restore Maxwell Compatibility but
   Expose an Early-Time RK Control Boundary."
 - Numbers: with `L=16,18` joined to the `L=8,10,12,14` ladder, the two

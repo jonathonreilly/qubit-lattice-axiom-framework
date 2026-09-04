@@ -11,8 +11,9 @@ claims no obligation retirement.
 results as they land through the owner's review trains — and the TOE light
 sector, which currently has no end-to-end statement of the emergent-Maxwell
 chain to consume.
-**Runner:** none. Nothing is computed here; every number below is quoted from
-a member note or record.
+**Runner:** none. Nothing is derived here; every number below is quoted from
+a member note or record, with one exception: the product `U(0.95) x K` in
+section 6.C is this note's own arithmetic and is marked there as such.
 
 This note states the U(1)/Maxwell light lane's theorem chain end to end as the
 lane's own open PRs claim it: each link's theorem at that member's scope, the
@@ -56,7 +57,9 @@ bare_retained_allowed: false
 A supplied link role compiled onto `Z^3` sites carries a cyclic/compact gauge
 factor graph with exact translation, gauge, and proper-cubic covariance (link
 i). A supplied Record registration or overlap law forces the local plaquette
-potential's quadratic germ to be strictly positive, and every even compact-U(1)
+potential's temporal (electric) quadratic germ to be strictly positive — the
+spatial/magnetic block is a supplied orientation completion at #7886's own
+scope — and every even compact-U(1)
 potential with a positive isotropic germ has the same source-free Maxwell limit
 at second order (link ii). On the role-compiled edge/face incidence a supplied
 first-order generator carries exactly two gapless transverse branches, and
@@ -126,7 +129,7 @@ Synthesis reading: #7906's likelihood is conditional on face records; #7907's
 construction is the unconditional counterpart, bought with a supplied face
 alphabet; #7913 places both on physical `Z^3` sites.
 
-## 2. The Maxwell germ forced (link ii)
+## 2. The Maxwell germ, forced under supplied registration/overlap laws (link ii)
 
 **PR #7886** — branch `physics-loop/u1-representation-positive-maxwell-germ-20260903` — open PR, unlanded.
 - Claims: "For every normalized nonconstant compact-U(1) convolution kernel
@@ -225,8 +228,9 @@ says "completing it on spatial plaquettes ... remain supplied or open." So at
 #7886's and #7887's scope, the positive spatial (magnetic) curvature that
 #7915 and #7917 use is a supplied orientation completion, not a
 Record-derived quantity; what the Record chain conditionally derives is the
-temporal/electric sign. This note states the magnetic restoring block as a
-supplied input.
+temporal/electric sign. This is this note's synthesis reading of the two
+scopes side by side; on it, this note states the magnetic restoring block as
+a supplied input.
 
 **PR #7917** — branch `physics-loop/u1-maxwell-generator-uniqueness-classification-20260903` — open PR, unlanded. The terminal candidate; stated exactly in section 7.
 - Claims: "Within the declared real, linear, first-order, nearest-neighbor,
@@ -391,9 +395,9 @@ supplied input.
   hard-cutoff dark states; for K=2^q the complete link is exactly q qubits."
 - Supplied (the note's own list): "The clock order, link role, Hamiltonian,
   couplings, tame restriction, matter representation, and register layout are
-  supplied." In the no-wrap window (`|div E| < K/2`, exhaustive at `K=32`,
-  `|m|<=2`) modular Gauss is exactly additive; electric errors fall as
-  `K^-2`; the quadratic tangent on the cubic torus has "exactly two degenerate
+  supplied." In the no-wrap window (`|div E| < K/2`) modular Gauss is exactly
+  additive — checked exhaustively at `K=32` with `|div E| <= 12 < K/2`; the
+  electric-cosine error table (`K=16..128`, `|m|<=2`) falls as `K^-2`; the quadratic tangent on the cubic torus has "exactly two degenerate
   transverse branches, omega(k)^2=4 sum_i sin^2(k_i/2)" with unit-speed
   infrared dispersion, no corner doubler, and covariance under all 48 signed
   cubic permutations; exact reduced-clock gaps converge to the photon
@@ -407,10 +411,13 @@ supplied input.
 ## 6. The three-dimensional photon — two branches; the lane's open item (link vi)
 
 The carrier (both branches): one qubit per cubic link, an ice Gauss constraint
-(three-of-six), square-ring flips as the only move. Both #7959 and #7945 report
-9,600 Gauss/ice states at `L = 2` and an 864-state zero-flux mobile component;
-by their displayed formulas they are the same carrier at different values of
-the supplied coupling (synthesis reading): #7959's law is the ring-exchange
+(three-of-six), square-ring flips as the only move. #7959 reports
+`dim(Gauss) = 9600` at `L = 2` (the 9,600 ice states #7937 also exhausts) and
+an 864-state zero-flux mobile component; #7945 reports only the
+864-configuration zero-flux mobile orbit and no Gauss-sector count. That the
+two are the same carrier at different values of the supplied coupling is THIS
+NOTE'S SYNTHESIS READING — stated by no member — resting on #7945's displayed
+law against #7959's: #7959's law is the ring-exchange
 term alone ("a Hamiltonian that carries no Rokhsar-Kivelson potential term");
 #7945's law is `H(V) = -sum_p (|clockwise><counterclockwise| + h.c.) + V N_f`,
 with `V=1` the RK point and `V=0.95, 0.90` the tested detunings.
@@ -450,7 +457,7 @@ with `V=1` the RK point and `V=0.95, 0.90` the tested detunings.
 - Its own limits: "the geometry has no transverse direction and gives no
   result for a three-dimensional photon."
 
-**PR #7959** — branch `physics-loop/pure-spin-half-link-model-gapless-quadratic-mode-open-path-projector` — open PR, unlanded.
+**PR #7959** — branch `physics-loop/pure-spin-half-link-model-gapless-quadratic-mode-open-path-projector` (branch name from `gh pr view`, 2026-09-04; the note text is in the pack's inputs, the branch name is not) — open PR, unlanded.
 - Claims (title): "The pure spin-1/2 link model on the cubic torus is gapless,
   deconfined and unordered at `L <= 12`, with a quadratic transverse mode and a
   flat transverse structure factor."
@@ -566,9 +573,11 @@ with `V=1` the RK point and `V=0.95, 0.90` the tested detunings.
 - Its own limits: "The full q-squared through q-sixth fit disagrees with the
   static U K target by 6.563 reported errors, but leave-one-volume analysis
   localizes that mismatch uniquely to the highest-momentum L=8 block";
-  "establishes neither a thermodynamic photon pole nor c-squared=U K."
+  "establishes neither a thermodynamic photon pole nor c-squared=U K";
+  "L=10,12,14 accepts U K only with a broad, underresolved coefficient"; the
+  result "remains finite-volume" at its own scope.
 
-**PR #7963** — branch `physics-loop/spin-half-cubic-ice-infrared-maxwell-join-20260904` — open PR, unlanded. The infrared boundary.
+**PR #7963** — branch `physics-loop/spin-half-cubic-ice-infrared-maxwell-join-20260904` (branch name from `gh pr view`, 2026-09-04; the note text is in the pack's inputs, the branch name is not) — open PR, unlanded. The infrared boundary.
 - Claims (title): "Lower Cubic-Ice Momenta Restore Maxwell Compatibility but
   Expose an Early-Time RK Control Boundary."
 - Numbers: with `L=16,18` joined to the `L=8,10,12,14` ladder, the two
@@ -624,14 +633,15 @@ later windows and unresolved when `L=18` is removed, which #7963 classifies
 as an "early-time estimator boundary with some L=18 leverage". That estimator
 boundary is part of the open item.
 
-Three further narrowings the members impose on each other, each at scope.
+Three further readings — this note's synthesis readings, stated by no member — of how the members narrow each other, each member quoted at scope.
 (1) #7945's `K_dyn` comparison is against `K_RK approximately 0.2598`, the RK
 magnetic-flux response; #7946 distinguishes its relaxed
 `K = 0.075561 ± 0.000915` at `V=0.95` from "the older 0.2598 variational
 upper cost", and the later members' static target `U K = 0.012289` is (by this
 note's arithmetic) the product of the static parents' `U(0.95) = 0.162638`,
-as quoted in #7945, with #7946's relaxed `K` — so #7945's 36% and 61% figures
-are measured against a magnetic number the lane's later members replaced.
+as quoted in #7945, with #7946's relaxed `K` — so, on this note's reading,
+#7945's 36% and 61% figures are measured against a magnetic number the lane's
+later members replaced.
 (2) #7952's kernel theorem holds for a symmetric, analytic, gapless branch
 with a quadratic Taylor term ("It assumes a quadratic Taylor term exists.");
 #7959's flat transverse structure factor and quadratic mode at `L <= 12` are
@@ -689,12 +699,18 @@ already selected class, `c=1` in lattice units." "That is a conditional
 selection theorem, not an axiom derivation."
 
 What feeds the terminal, by member: the curl `C` and the edge/face role sites
-from #7913 and #7915; the positive magnetic curvature `kappa` from #7886 and
-#7887 (conditional on their supplied registration or overlap law and on
-orientation completion); the two-branch spectrum from #7915 (which #7917
-inherits rather than re-derives); the quadratic kernel's uniqueness under
-cubic covariance plus transversality from #7952 (a statement about the kernel
-class, independent of the dynamics class).
+from #7913 and #7915; the two-branch spectrum from #7915, which #7917
+recomputes rather than inherits (its runner rechecks every momentum on
+`L=3,4,5`). The curvature `kappa` is NOT a classification input at #7917's
+scope: #7917 treats the direct parent's Record-overlap curvature as a
+post-selection speed normalization ("can be assigned", its own words), applied
+after the class is selected. Item 6 (the positive, diagonal, conserved field
+energy) is what excludes the dissipative sampler of #7915's time-selection
+fork — "energy conservation excludes the dissipative sampler" — so removing
+that supplied item reopens the fork. Adjacent and independent, feeding nothing
+here: #7952's quadratic-kernel uniqueness under cubic covariance plus
+transversality (a statement about the kernel class; it postdates #7917 and
+neither cites the other).
 
 ## Imports
 

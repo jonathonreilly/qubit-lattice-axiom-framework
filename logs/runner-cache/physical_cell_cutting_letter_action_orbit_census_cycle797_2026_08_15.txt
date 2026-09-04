@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_letter_action_orbit_census_cycle797_2026_08_15.py
 runner_sha256: c635606626d4ba19e36dba77e0882b2eb52fe7e407237be94f36ce4399920834
-input_fingerprint_sha256: 403682cc5496c9fd2556382c579bb9470e609157b9a94b5dc006795b9a6c916d
+input_fingerprint_sha256: 8cffa6e91863af2b74a93e09250f77ee85f3f904eddb003d77e78691f92f21e1
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 13.22
+elapsed_sec: 13.12
 status: ok
 ----- stdout -----
 PASS LETTER_MAP of the 384 cell maps exactly 96 induce a letter map, each with one flag value, and the other 288 induce none for either flag

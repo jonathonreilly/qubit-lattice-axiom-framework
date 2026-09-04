@@ -260,7 +260,7 @@ the letter level.
 Within those boundaries the results above stand as exact finite computational identities on the
 declared object, and as nothing wider.
 
-## Reproduction
+## Runner
 
 Run the [runner](../scripts/physical_cell_cutting_letter_action_orbit_census_cycle797_2026_08_15.py).
 The reviewed

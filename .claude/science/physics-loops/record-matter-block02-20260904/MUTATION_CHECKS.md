@@ -1,7 +1,7 @@
 # Block-02 primary runner mutation checks
 
-Date: 2026-09-04  
-Committed source: `scripts/cubic_repulsive_flux_fixed_half_2026_09_04.py` at `6f3bb0c331cbe3a637939913662b3f3f92deea4b`  
+Date: 2026-09-04
+Committed source: `scripts/cubic_repulsive_flux_fixed_half_2026_09_04.py` at `6f3bb0c331cbe3a637939913662b3f3f92deea4b`
 Source SHA-256: `46de4dbe218d9e847c5697b866707237741e4155c3b02d408aafe85446ee1dd3`
 
 ## Method

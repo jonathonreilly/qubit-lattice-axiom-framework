@@ -7,4 +7,4 @@
 - This branch-local pack, intake manifest and proof-review record.
 - Citation-graph manifest only if regenerated topology acknowledges this new note; no other generated audit/status surfaces may ship.
 
-Before publication: every worker line reviewed; actual committed-script caches checked; meaningful mutations verified; conformance sections assessed; required pipeline, strict-lint, changed-evidence, vocabulary and whitespace checks passed. These execution gates are currently pending, not recorded as passes.
+Before publication: every worker line reviewed; actual committed-script caches checked; meaningful mutations verified; conformance sections assessed; required pipeline, strict-lint, changed-evidence, vocabulary and whitespace checks passed. These gates passed; actual commands, validation state and conformance disposition are recorded in REVIEW_HISTORY.md.

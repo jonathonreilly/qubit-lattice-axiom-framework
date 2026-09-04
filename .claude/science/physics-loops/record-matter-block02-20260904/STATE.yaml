@@ -5,17 +5,17 @@ base: e249016f759f224d9b429932cd0d1db4d452dc1a
 campaign_start_utc: 2026-09-04T19:41:09Z
 campaign_deadline_utc: 2026-09-05T19:41:09Z
 checkpoint_minutes: 15
-phase: root_preflight_and_publication
+phase: ready_for_review_PR
 claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
 current_goal: fixed-half-filled global repulsive cubic flux minimum
 hard_residual: match fixed particle number and all torus Wilson loops to reflection positivity
 proof_review: separate_context_same_family_review_supports_core_proof
 runner_status: primary_15_PASS_checker_6_PASS_fresh_caches_12_failing_mutations
-pr_status: not_opened
+pr_status: ready_to_open
 open_pr_intake_count: 225
 open_pr_intake_as_of_utc: 2026-09-04T22:04:25Z
 photons: reserved_for_other_worker
-next_action: review every runner line and proof, run required gates, publish PR
+next_action: publish verified branch as PR to main; do not merge
 next_science: shared Record-matter-gauge quantum history process
 stop_condition: fixed campaign deadline; preserve outputs, report, release owned lock and pause heartbeat

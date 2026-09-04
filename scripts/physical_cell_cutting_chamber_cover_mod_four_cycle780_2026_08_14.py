@@ -10,15 +10,17 @@ each chamber sits in exactly 8 used pieces, and the 192 piece-sets so obtained a
 so it meets each chamber in exactly one piece: the covers are the point-evaluation classes of the cell, not a search output.
 
 Two consequences are derived and re-verified here. Locally, the label of a piece is read off any chamber it holds:
-L = sign(b) * s1 * s3 * eta_b2 * eta_b4, where eta_j = 1 - 2 * v0_j at the start corner. Globally, with q1 = 1 when the axis order sign is
-minus one and q2 the parity of the start corner weight, L = (1 - 2 q1)(1 - 2 q2) and S(T) = 24 - 2 A1 - 2 A2 + 4 A12 for every cutting T.
-Certificate functions g1 and g4 on chambers reproduce q2 and q1 modulo two piecewise, their totals over the 192 chambers are even, and
-summing the piecewise statement over a cutting counts each chamber once. Hence A1 and A2 are even for every cutting and S(T) is divisible
-by four, which upgrades the census fact of the predecessor cycle from measured to derived.
+L = sign(b) * s1 * s3 * eta_b2 * eta_b4, where eta_j = 1 - 2 * v0_j at the start corner. Globally, with q_order = 1 when the axis order sign is
+minus one and q_corner the parity of the start corner weight, L = (1 - 2 q_order)(1 - 2 q_corner) and
+S(T) = 24 - 2 N_order - 2 N_corner + 4 N_joint for every cutting T. Certificate functions g_corner and g_order,j on chambers reproduce
+q_corner and q_order modulo two piecewise, their totals over the 192 chambers are even, and
+summing the piecewise statement over a cutting counts each chamber once. Hence N_order and N_corner are even for every cutting and S(T) is divisible
+by four, which upgrades the finite census fact from measured to derived.
 
 Gates: K1 object rebuild, K2 the product form of the label, K3 the chambers, K4 the local formula, K5 exact rational containment,
 K6 one piece per cutting per chamber, K7 covers equal chambers, K8 and K9 the two certificate claims, K10 the even totals, K11 the per
-cutting identity, K12 the divisibility and the census, K13 a discriminating perturbation with two arms, K14 the measured boundary.
+cutting identity, K12 the divisibility and the census, K13 a discriminating perturbation with two arms, K14 the measured boundary,
+K15 the exact simplex-separation/volume tiling certificate.
 All work is exact over the integers and the rationals; no floating point enters any gate. Output: one line per gate, a resource line,
 then the total line."""
 
@@ -27,6 +29,8 @@ import sys
 import time
 import resource
 from fractions import Fraction as FR
+
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.time()
 OUT = [0]
@@ -239,6 +243,30 @@ NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
 
+# The generic sample makes the search exhaustive for genuine cuttings.  Check
+# the converse independently: every simplex pair that occurs together is
+# weakly separated by an exact integer hyperplane.  Full dimensionality then
+# puts the two interiors on strict opposite sides.  Since a cutting has 24
+# determinant-one 4-simplices, its simplex volumes sum to the unit-cube volume.
+CO_PAIRS = sorted(set(pair for cutting in CUT
+                      for pair in itertools.combinations(cutting, 2)))
+SEP_NORMALS = [a for a in itertools.product((-1, 0, 1), repeat=4) if any(a)]
+SEP_EXTENTS = []
+for i in range(NPI):
+    verts = KEPT[USED[i]]
+    row = []
+    for normal in SEP_NORMALS:
+        dots = [sum(CORN[v][k] * normal[k] for k in range(4)) for v in verts]
+        row.append((min(dots), max(dots)))
+    SEP_EXTENTS.append(row)
+
+PAIR_SEPARATED = all(
+    any(SEP_EXTENTS[i][k][1] <= SEP_EXTENTS[j][k][0]
+        or SEP_EXTENTS[j][k][1] <= SEP_EXTENTS[i][k][0]
+        for k in range(len(SEP_NORMALS)))
+    for i, j in CO_PAIRS
+)
+
 # cuttings through each piece, as a bit set over cuttings
 PC = [0] * NPI
 for k, s in enumerate(CUT):
@@ -333,22 +361,22 @@ for p in PATHS:
 
 NPER = sorted(set(len(v) for v in PBY.values()))
 
-# the two path statistics: axis order sign and start corner weight parity
-Q1 = [0] * NPI
-Q2 = [0] * NPI
+# the two path statistics: axis-order sign and start-corner weight parity
+Q_ORDER = [0] * NPI
+Q_CORNER = [0] * NPI
 for i in range(NPI):
     v0, sg = NMOF[i][0]
-    Q1[i] = 1 if sgnp(sg) == -1 else 0
-    Q2[i] = popc(v0) & 1
+    Q_ORDER[i] = 1 if sgnp(sg) == -1 else 0
+    Q_CORNER[i] = popc(v0) & 1
 
-Q1ONE = sum(Q1)
-Q2ONE = sum(Q2)
+Q_ORDER_ONE = sum(Q_ORDER)
+Q_CORNER_ONE = sum(Q_CORNER)
 
 K2P = 0
 K2N = 0
 K2Q = 0
 for i in range(NPI):
-    if LABP[i] == (1 - 2 * Q1[i]) * (1 - 2 * Q2[i]):
+    if LABP[i] == (1 - 2 * Q_ORDER[i]) * (1 - 2 * Q_CORNER[i]):
         K2P += 1
     va = []
     qa = []
@@ -491,32 +519,32 @@ DISTINCT = len(set(CHSET))
 # ------------------------------------------------------------------
 
 
-def g1(cid):
+def g_corner(cid):
     b, s = CHAM[cid]
     return 1 if SGNB[b] * s[0] * s[1] * s[2] == 1 else 0
 
 
-def g4(cid, j):
+def g_order(cid, j):
     b, s = CHAM[cid]
     return 1 if (SGNB[b] == -1 and b[3] == j) else 0
 
 
-G1V = [g1(c) for c in range(NCH)]
-G4V = [[g4(c, j) for c in range(NCH)] for j in range(4)]
-G1TOT = sum(G1V)
-G4TOT = [sum(col) for col in G4V]
+G_CORNER_VALUES = [g_corner(c) for c in range(NCH)]
+G_ORDER_VALUES = [[g_order(c, j) for c in range(NCH)] for j in range(4)]
+G_CORNER_TOTAL = sum(G_CORNER_VALUES)
+G_ORDER_TOTALS = [sum(col) for col in G_ORDER_VALUES]
 
-BAD1 = 0
+CORNER_CERT_BAD = 0
 for i in range(NPI):
-    if (sum(G1V[c] for c in INC[i]) & 1) != Q2[i]:
-        BAD1 += 1
+    if (sum(G_CORNER_VALUES[c] for c in INC[i]) & 1) != Q_CORNER[i]:
+        CORNER_CERT_BAD += 1
 
-BAD2 = [0, 0, 0, 0]
+ORDER_CERT_BAD = [0, 0, 0, 0]
 for j in range(4):
     for i in range(NPI):
-        if (sum(G4V[j][c] for c in INC[i]) & 1) != Q1[i]:
-            BAD2[j] += 1
-BAD2T = sum(BAD2)
+        if (sum(G_ORDER_VALUES[j][c] for c in INC[i]) & 1) != Q_ORDER[i]:
+            ORDER_CERT_BAD[j] += 1
+ORDER_CERT_BAD_TOTAL = sum(ORDER_CERT_BAD)
 K9N = 4 * NPI
 
 # ------------------------------------------------------------------
@@ -525,27 +553,27 @@ K9N = 4 * NPI
 
 SVAL = []
 IDBAD = 0
-A1ODD = 0
-A2ODD = 0
-A2Q = 0
+N_ORDER_ODD = 0
+N_CORNER_ODD = 0
+N_CORNER_MOD4 = 0
 SCEN = {}
 SBAD4 = 0
 for s in CUT:
-    a1 = 0
-    a2 = 0
-    a12 = 0
+    n_order = 0
+    n_corner = 0
+    n_joint = 0
     sv = 0
     for i in s:
-        a1 += Q1[i]
-        a2 += Q2[i]
-        a12 += Q1[i] * Q2[i]
+        n_order += Q_ORDER[i]
+        n_corner += Q_CORNER[i]
+        n_joint += Q_ORDER[i] * Q_CORNER[i]
         sv += LABP[i]
-    if sv != 24 - 2 * a1 - 2 * a2 + 4 * a12:
+    if sv != 24 - 2 * n_order - 2 * n_corner + 4 * n_joint:
         IDBAD += 1
-    A1ODD += a1 & 1
-    A2ODD += a2 & 1
-    if (a2 & 3) == 0:
-        A2Q += 1
+    N_ORDER_ODD += n_order & 1
+    N_CORNER_ODD += n_corner & 1
+    if (n_corner & 3) == 0:
+        N_CORNER_MOD4 += 1
     if sv & 3:
         SBAD4 += 1
     SVAL.append(sv)
@@ -556,11 +584,11 @@ for s in CUT:
 # ------------------------------------------------------------------
 
 CFLIP = 0
-G1X = list(G1V)
-G1X[CFLIP] ^= 1
+G_CORNER_MUTATION = list(G_CORNER_VALUES)
+G_CORNER_MUTATION[CFLIP] ^= 1
 PERTP = 0
 for i in range(NPI):
-    if (sum(G1X[c] for c in INC[i]) & 1) != Q2[i]:
+    if (sum(G_CORNER_MUTATION[c] for c in INC[i]) & 1) != Q_CORNER[i]:
         PERTP += 1
 NHOLD = len(HOLD[CFLIP])
 
@@ -569,16 +597,16 @@ LABX = list(LABP)
 LABX[PNEG] = -LABX[PNEG]
 PERTC = 0
 for s in CUT:
-    a1 = 0
-    a2 = 0
-    a12 = 0
+    n_order = 0
+    n_corner = 0
+    n_joint = 0
     sv = 0
     for i in s:
-        a1 += Q1[i]
-        a2 += Q2[i]
-        a12 += Q1[i] * Q2[i]
+        n_order += Q_ORDER[i]
+        n_corner += Q_CORNER[i]
+        n_joint += Q_ORDER[i] * Q_CORNER[i]
         sv += LABX[i]
-    if sv != 24 - 2 * a1 - 2 * a2 + 4 * a12:
+    if sv != 24 - 2 * n_order - 2 * n_corner + 4 * n_joint:
         PERTC += 1
 NTHRU = popc(PC[PNEG])
 
@@ -620,10 +648,9 @@ gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and NS == 15800 and SIZES == 
      .format(nd(NCAND), nd(FLOOR), nd(NKEPT), nd(NS), nd(SIZES[0]), nd(NPI), nd(PCSET[0]), nd(SLOT), nd(len(NAMES)),
              nd(NPER[0])))
 
-gate(K2P == NPI and K2N == NPI and K2Q == NPI and Q1ONE == 96 and Q2ONE == 96, "K2",
-     "label: product form L = (1 - 2 q1)(1 - 2 q2) on {0} of {0} pieces; both namings agree on L and on (q1, q2) for {0};"
-     " q1 ones {1}, q2 ones {2}"
-     .format(nd(NPI), nd(Q1ONE), nd(Q2ONE)))
+gate(K2P == NPI and K2N == NPI and K2Q == NPI and Q_ORDER_ONE == 96 and Q_CORNER_ONE == 96, "K2",
+     "label product and two-naming agreement on {0} pieces; q_order ones {1}, q_corner ones {2}"
+     .format(nd(NPI), nd(Q_ORDER_ONE), nd(Q_CORNER_ONE)))
 
 gate(NWALL == 12 and len(PERMS) == 24 and len(TRIP) == 8 and NCH == 192 and DEALOK == NPI
      and SAMEDEAL == NPI and HOLDN == [8] and INCN == [8] and len(SIGV) == 192 and WALLZERO == 0, "K3",
@@ -650,42 +677,45 @@ gate(NCOV == 192 and BRS == [8] and COVEQ and DISTINCT == 192, "K7",
      " piece-sets: {3}"
      .format(nd(NCOV), nd(BRS[0]), nd(DISTINCT), "yes" if COVEQ else "no"))
 
-gate(BAD1 == 0, "K8",
-     "claim one: for each of the {0} pieces the sum of g1 over its {1} chambers equals q2 modulo {2}, failures {3}"
-     .format(nd(NPI), nd(8), nd(2), nd(BAD1)))
+gate(CORNER_CERT_BAD == 0, "K8",
+     "corner-parity certificate on {0} pieces and {1} chambers each modulo {2}, failures {3}"
+     .format(nd(NPI), nd(8), nd(2), nd(CORNER_CERT_BAD)))
 
-gate(BAD2T == 0 and K9N == 768, "K9",
-     "claim two: for each of the {0} pieces the sum of g4 over its {1} chambers equals q1 modulo {2}, for each of the {3} axes,"
-     " {4} checks, failures {5}"
-     .format(nd(NPI), nd(8), nd(2), nd(4), nd(K9N), nd(BAD2T)))
+gate(ORDER_CERT_BAD_TOTAL == 0 and K9N == 768, "K9",
+     "order-parity certificate on {0} pieces and {1} chambers each modulo {2}, for {3} axes: {4} checks, failures {5}"
+     .format(nd(NPI), nd(8), nd(2), nd(4), nd(K9N), nd(ORDER_CERT_BAD_TOTAL)))
 
-gate(G1TOT == 96 and G4TOT == [24, 24, 24, 24] and (G1TOT & 1) == 0
-     and all((v & 1) == 0 for v in G4TOT), "K10",
-     "totals over the {0} chambers: g1 weight {1}, g4 weight {2} {3} {4} {5} by axis, all even, so each telescoped sum is even"
-     .format(nd(NCH), nd(G1TOT), nd(G4TOT[0]), nd(G4TOT[1]), nd(G4TOT[2]), nd(G4TOT[3])))
+gate(G_CORNER_TOTAL == 96 and G_ORDER_TOTALS == [24, 24, 24, 24] and (G_CORNER_TOTAL & 1) == 0
+     and all((v & 1) == 0 for v in G_ORDER_TOTALS), "K10",
+     "even chamber totals over {0}: g_corner {1}; g_order,j by axis {2} {3} {4} {5}"
+     .format(nd(NCH), nd(G_CORNER_TOTAL), nd(G_ORDER_TOTALS[0]), nd(G_ORDER_TOTALS[1]), nd(G_ORDER_TOTALS[2]),
+             nd(G_ORDER_TOTALS[3])))
 
-gate(A1ODD == 0 and A2ODD == 0 and IDBAD == 0, "K11",
-     "per cutting on all {0}: identity S = {1} - {2} A1 - {2} A2 + {3} A12 holds with {4} failures, cuttings of odd A1 {5},"
-     " of odd A2 {6}"
-     .format(nd(NS), nd(24), nd(2), nd(4), nd(IDBAD), nd(A1ODD), nd(A2ODD)))
+gate(N_ORDER_ODD == 0 and N_CORNER_ODD == 0 and IDBAD == 0, "K11",
+     "on {0}: S={1}-{2}N_order-{2}N_corner+{3}N_joint; failures {4}, odd N_order {5}, odd N_corner {6}"
+     .format(nd(NS), nd(24), nd(2), nd(4), nd(IDBAD), nd(N_ORDER_ODD), nd(N_CORNER_ODD)))
 
 gate(SBAD4 == 0 and cens(SCEN) == "-8:120 -4:2832 0:9896 4:2832 8:120" and sum(SCEN.values()) == NS, "K12",
      "S divisible by {0} on {1} of {1} cuttings, exceptions {2}; census {3}, sum {1}"
      .format(nd(4), nd(NS), nd(SBAD4), cens(SCEN)))
 
 gate(PERTP == 8 and PERTP == NHOLD and PERTC == 1975 and PERTC == NTHRU, "K13",
-     "flipping g1 at one chamber breaks claim one at exactly {0} pieces, its holders; negating one piece label breaks the"
-     " identity at {1} cuttings"
+     "flipping one g_corner value breaks {0} holder pieces; negating one piece label breaks {1} cuttings"
      .format(nd(PERTP), nd(PERTC)))
 
-gate(len(DSET) == 8 and DMAX == 4 and DABSMAX == 8 and A2Q == NS and SABSMAX == 8, "K14",
-     "boundary: {0} diagonals, largest |D_w| {1}, census of the sum of |D_w| {2}, largest {3} = largest |S|,"
-     " A2 divisible by {4} on {5}"
-     .format(nd(len(DSET)), nd(DMAX), cens(DABS), nd(DABSMAX), nd(4), nd(A2Q)))
+gate(len(DSET) == 8 and DMAX == 4 and DABSMAX == 8 and N_CORNER_MOD4 == NS and SABSMAX == 8, "K14",
+     "boundary: {0} diagonals, max |D_w| {1}, sum-|D_w| census {2}, max {3}; N_corner mod {4} zero on {5}"
+     .format(nd(len(DSET)), nd(DMAX), cens(DABS), nd(DABSMAX), nd(4), nd(N_CORNER_MOD4)))
+
+gate(len(CO_PAIRS) == 15168 and len(SEP_NORMALS) == 80 and PAIR_SEPARATED and SIZES == [24], "K15",
+     "exact geometry: {0} simplex pairs separated by {1} ternary normals; {2} unimodular-simplex volumes sum to cube volume"
+     .format(nd(len(CO_PAIRS)), nd(len(SEP_NORMALS)), nd(SIZES[0])))
 
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 PEAK = RSS // (1024 * 1024) if sys.platform == "darwin" else RSS // 1024
 SECS = int(time.time() - T0)
 emit("resource: under {0} s of the {1} s budget, under {2} MB of the {3} MB budget, {4} gate characters"
-     .format(nd(((SECS // 60) + 1) * 60), nd(900), nd(((PEAK // 250) + 1) * 250), nd(2500), nd(OUT[0])))
+     .format(nd(((SECS // 60) + 1) * 60), nd(AUDIT_TIMEOUT_SEC), nd(((PEAK // 250) + 1) * 250), nd(2500), nd(OUT[0])))
 emit("TOTAL: PASS={0} FAIL={1}".format(nd(STAT[0]), nd(STAT[1])))
+if STAT[1]:
+    sys.exit(1)

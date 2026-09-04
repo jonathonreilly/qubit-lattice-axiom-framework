@@ -66,3 +66,47 @@ without adjudicating it). Closest member: #7917 (declares the class and uses gau
 forces the curl or that its covariance step is implied by its magnetic-Gauss clause); #7921 (uses gauge for the curl too).
 Structural distinction: this block removes a hypothesis from the declared class and names the exact residual with witnesses.
 Gate: PASS on V2-V5; V1 answered honestly as upstream support, not closure (the PR is a bounded_theorem, not a promotion).
+
+## 2026-09-05 — block 02 conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12), recorded before any PR
+1 self-containment — PASS: one markdown link in the note (the landed axiom memo); no unlanded note linked; the runner declares one
+  input (`docs/MINIMAL_AXIOMS_2026-06-29.md`, landed); PR numbers are evidence addresses in backticks; the compilation is rebuilt
+  from the parity rule inside the runner, not imported from any member.
+2 cache/execution — PASS: cache written through `runner_cache.execute_and_write_cache` (status ok, exit 0, `timeout_sec: 900`
+  equal to the declared `AUDIT_TIMEOUT_SEC = 900`, no timestamps, input fingerprint bound); read inventory stated in the runner
+  docstring and the note (one external input; no package-local integrity read); re-pinned after the last runner edit (the literal
+  `AUDIT_INPUT_PATHS` declaration) — the note was edited after the cache but is not a pinned input.
+3 claim-scope honesty — PASS: finite domain and parameters stated on every surface (note prose, title, runner docstring and
+  banner, certificate lines, machine-status block); status fields from their enums (`bounded-support` / `bounded_theorem`); no
+  "certified/closed/complete/global/the law" claims; no bare letter-number names in title or headings (the premise labels LR,
+  IP-A, IP-B, OL, SI are defined in section 1 and used as parenthetical aliases of their spelled-out names); no coined tier word
+  ("named premise", "supply", "witness" are plain prose).
+4 negative claims / N-gate — TRIGGERED and PASSED at scope: N1-N8 landed as section 12 of the note (seven attempted/excluded
+  routes, one live; pairwise wall table with collapse to five; hidden-wall scan; citation table with drops; five-resolution
+  rhetoric audit; partial-closure and primitive scan; steelman naming the live route; cross-cycle echo); the N5 certificate
+  lines are in the cached stdout (five lines, each > 40 chars, all "executed").
+5 proof obligations — PASS: target claim stated in one sentence before the proof; every lemma marked proved-here (runner
+  section named) or a named premise; hypotheses carried (each conditional verdict lists its premises); boundary cases stated
+  (sizes 4/6/8 executed, two size-free arguments named); strongest missing lemma named per row (section 9); no circular
+  reduction (the class is never a premise; items are used only as named hypotheses of conditional statements).
+6 runner validity — PASS: twelve load-bearing mutations on scratch copies, one per check family, all detected (table in
+  RESULTS_block02.md); independent-math checks: hand-derived one-face stencil, blockwise symbolic conservation equations,
+  cube-connectivity argument, kick-drift-kick invariant derivation, momentum-census multiplicity predictions — all agree with the
+  exhaustive runner.
+7 packet completeness — PASS: single primary runner; no helper runner; no registry edit.
+8 links/graph — PASS: manifest regenerated on the final tree (`run_citation_graph_build.py` then
+  `write_citation_graph_manifest.py`): delta = +1 node (this note), +1 edge (its link to the axiom memo), 4761->4762 nodes,
+  11860->11861 edges, no rewired edge; staged alone (commit 77dc5ace14); no other generated surface dirty after the build.
+9 note structure — PASS: frontmatter (claim_id, claim_type, claim_scope, upstream_dependencies, runner); machine-status block
+  with every mandated field and trace fields; Imports section with role/provenance/open-bridge separated; Review record (worker
+  provenance, independence class, mutations, no hard landing conditions).
+10 propose/ratify — PASS: no audit field written; the manifest is the only generated artifact staged; generated audit surfaces
+  restored before each commit.
+11 sourced facts/counts — PASS: every count in the note is recomputed by the runner at HEAD (censuses, multiplicities,
+  dimensions) or quoted from the memo; PR quotes are from the extracted texts of 2026-09-05 (as-of stamp in the note).
+12 pre-review gates — vocab_lint --fix then --report-only: 0; audit_lint --strict: OK, no errors; py_compile: ok;
+  `git diff --check e249016f75..HEAD`: clean; check_changed_audit_evidence --base origin/main: checked=0 failures=0 (no ledger row
+  exists yet for the new note; the pipeline seeds it); stacked delta be4fa51f32..HEAD = 13 files (independently recounted);
+  explicit-path staging throughout; cold read of the complete note done (one wording fix, commit 2f53ea6751); run_pipeline.sh:
+  launched after these commits — exit code recorded below when it completes.
+Independence class disclosed: single family (Fable primary), cross-context (hand derivations against the exhaustive runner);
+refuting checker seat not yet run — disposition `pending` in CLAIM_STATUS_CERTIFICATE.md.

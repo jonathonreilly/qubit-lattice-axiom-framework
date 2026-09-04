@@ -28,3 +28,5 @@ stop_condition: "runtime exhausted, or corollary/value-gate exhaustion documente
 # WORKER PROFILE UPDATE (owner 2026-09-05): Opus 5 seats permitted for physics work conditional on supervisor checking; profile = Fable primary + Opus blind/refuting seats (cross-model within family) + supervisor line-by-line.
 
 # 2026-09-04T21:45+00:00: blind Opus ledger checked 8/8; awaiting Fable primary (landing core + meta note) and lane-A seats.
+
+# 2026-09-04T22:17+00:00: block 01 CLOSING — checker FIX FIRST applied (baf24571d5), conformance gate recorded, certificate final; awaiting pipeline exit code, then manifest + PR. Block 02 selected (ledger row 1).

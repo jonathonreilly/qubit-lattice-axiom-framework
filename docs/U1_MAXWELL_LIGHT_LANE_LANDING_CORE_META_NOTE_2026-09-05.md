@@ -52,6 +52,13 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
+**As-of stamp.** Every member status below ("open PR, unlanded") and every
+quoted number is as of the open-PR state on 2026-09-05; the members land or
+change through the owner's review-loop trains and this note does not track
+them after that date. "Landing core" is plain descriptive prose for "the
+lane's synthesis statement" (the phrase the gravity lane's pack file uses);
+it names no controlled-vocabulary tier or status.
+
 ## 0. The chain in one paragraph
 
 A supplied link role compiled onto `Z^3` sites carries a cyclic/compact gauge
@@ -711,6 +718,22 @@ that supplied item reopens the fork. Adjacent and independent, feeding nothing
 here: #7952's quadratic-kernel uniqueness under cubic covariance plus
 transversality (a statement about the kernel class; it postdates #7917 and
 neither cites the other).
+
+## Review record
+
+Independent refuting check (Opus seat, cross-model within the Claude family;
+the primary was a Fable seat; the sol seats were unavailable at the account
+limit): 203 quoted spans checked against the pack inputs, verdict FIX FIRST
+with one blocker and four material findings, all applied in the fix pass of
+2026-09-05: the #7959/#7945 same-carrier identification is now attributed
+honestly as this note's synthesis reading (#7945 reports no Gauss-sector
+count); the single arithmetic product in section 6.C is declared; every
+cross-member reading is marked as this note's; the Gauss-as-support ledger
+row is downgraded to shape-only; section 7 no longer lists #7952 as feeding
+the terminal and states the curvature at #7917's own scope. Nothing is
+replaced or narrowed from a landed surface (this is a new note); no hard
+landing conditions are outstanding. Supervisor line-by-line review of the
+photon split (6.C), the terminal (7), and the machine-status block.
 
 ## Imports
 

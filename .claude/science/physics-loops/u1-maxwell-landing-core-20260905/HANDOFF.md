@@ -3,3 +3,6 @@ State: block 01 launched (sol primary drafting the landing core + meta note + le
 
 # DEGRADED WORKER MODE (2026-09-04T21:32+00:00): the gpt-5.6-sol seats died at the codex account usage limit (reset Sep 6 22:27); block continues on Fable worker seats (single-family) under the workhorse robustness conditions: refuting checker on disjoint machinery, mutation probes, supervisor hand-verification; independence class = cross-context; disclosed in the note/receipt/PR. Sol narration salvaged to specs/SALVAGE_sol_primary_narration.md as untrusted draft input.
 # WORKER PROFILE UPDATE (owner 2026-09-05): Opus 5 seats permitted for physics work conditional on supervisor checking; profile = Fable primary + Opus blind/refuting seats (cross-model within family) + supervisor line-by-line.
+
+## 2026-09-04T22:17+00:00 block 01 close
+Deliverables: LANDING_CORE.md, docs/U1_MAXWELL_LIGHT_LANE_LANDING_CORE_META_NOTE_2026-09-05.md, SUPPLIED_INPUT_LEDGER.md (+ blind ledger, checker findings). Checker FIX FIRST -> fix pass applied -> disposition pass. PR opens after the pipeline gate and manifest; then block 02 (ledger row 1). Worker profile: Fable primary / Opus checker + blind seat (cross-model, single family).

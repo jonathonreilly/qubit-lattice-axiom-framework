@@ -104,7 +104,7 @@ H_enc(g) = +sum_(i,j) T_ij + g sum_(i,j) n_i n_j,
 H_F(g)   = -sum_(i,j) (c_i^dag c_j + c_j^dag c_i) + g sum_(i,j) n_i n_j.
 ```
 
-The reference matrix `H_F(g)` is the displayed spinless-fermion hopping-plus-neighbour-interaction matrix constructed with Jordan-Wigner ladders in numerical vertex order. The sectors are cube `N=4`, grid `N=6`, and pendant `n_9=1` with three occupied grid vertices. The pendant edge carries no Hamiltonian term. These choices intentionally encode the reference fermionic model; agreement with that model is a checked consequence of the supplied encoding, not evidence that the dictionary or statistics emerged independently.
+Each displayed sum runs once over every listed undirected Hamiltonian edge in its `i<j` orientation. The reference matrix `H_F(g)` is the displayed spinless-fermion hopping-plus-neighbour-interaction matrix constructed with Jordan-Wigner ladders in numerical vertex order. The sectors are cube `N=4`, grid `N=6`, and pendant `n_9=1` with three occupied grid vertices. The pendant edge carries no Hamiltonian term. These choices intentionally encode the reference fermionic model; agreement with that model is a checked consequence of the supplied encoding, not evidence that the dictionary or statistics emerged independently.
 
 ## Finite results
 
@@ -144,7 +144,7 @@ These are exact occupation-basis cancellations for these selected free-fermion s
 
 ### D. Four-coupling numerical witness
 
-At `g in {0,0.5,1,2}`, the encoded and reference occupation statistics agree with `L1 < 1e-12`; their threshold-zero sets at `1e-12` coincide; and the ground eigenvalue is numerically simple. The zero-count sequences are `12/12/12/12` for the cube and `8/4/4/4` for each grid sector. The smallest sampled gaps are `0.573988`, `0.788251`, and `1.293567`.
+At `g in {0,0.5,1,2}`, the encoded and reference occupation statistics agree with `L1 < 1e-12`; their threshold-zero sets at `1e-12` coincide; and the ground eigenvalue is numerically simple. The zero-count sequences are `12/12/12/12` for the cube and `8/4/4/4` for each grid sector.
 
 Across the three nonzero sampled couplings, all twelve cube threshold-zeros persist. Four of the eight grid threshold-zeros persist: `(3,4,5)`, `(1,4,7)`, `(0,4,8)`, and `(2,4,6)` in the three-particle grid sector, and their complements in the six-particle sector. This is a floating-point scan at four parameter values, not an exact all-coupling or larger-system statement.
 
@@ -166,7 +166,7 @@ For the fixed matrices, the product of amplitudes around a four-cycle of the con
 
 ### G. Separate positive control
 
-Replacing `A_ij` by the bare edge flip `X_e` anticommutes with `16/60` and `12/48` tested `(term, face-generator)` pairs, thereby mapping some code states outside the face-code space. On the separately selected full edge-string sectors of dimensions `2240` and `1344`, a diagonal phase gauge makes every off-diagonal matrix element `-1`, and each configuration graph has one connected component.
+Replacing `A_ij` by the bare edge flip `X_e` anticommutes with `16/60` and `12/48` tested `(term, face-generator)` pairs, thereby mapping some code states outside the face-code space. On the separately selected full edge-string sectors of dimensions `2240` and `1344`, a diagonal phase gauge makes every nonzero off-diagonal matrix element `-1`; equivalently, all `7680` and `4032` undirected configuration-graph edges have weight `-1`. Each configuration graph has one connected component.
 
 The standard finite Perron-Frobenius argument therefore gives a simple ground eigenvector with strictly positive components for every real `g` in each of these two declared control matrices. Its pushforward under `q_G` is consequently strictly positive. Numerical checks at the four sampled couplings confirm every occupation probability exceeds `1e-4`. Its evidentiary scope is solely those two fixed matrices; mechanism comparison and other encodings, controls, graphs, sectors, and Hamiltonians remain open.
 

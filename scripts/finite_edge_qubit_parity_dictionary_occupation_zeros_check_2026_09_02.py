@@ -689,7 +689,10 @@ def group_A():
               S2(0, -4), "N=6")
     Pd = build("pend", ENC_GP, lambda r: r[AUX] == 1 and sum(r[:9]) == 3, EG,
                ORB_GP, EV_G3 + [S0], S2(0, -4), "n_aux=1, N_grid=3")
-    for tag, res, nrel in (("cube", C, 1), ("grid", G, 0), ("pend", Pd, 0)):
+    for tag, res, expected_rel in (
+            ("cube", C, [(tuple(range(6)), "+I")]),
+            ("grid", G, []),
+            ("pend", Pd, [])):
         R = res["R"]
         E = res["E"]
         rel = R["relations"]
@@ -701,7 +704,7 @@ def group_A():
                  "(all six) = %s" % rel[0][1] if rel else "(none)",
                  R["k"], R["k"], E.NQ, R["k"], R["code_dim"]),
               R["R0"] and R["R1"] and R["R2"] and R["R3"] and R["R4"]
-              and R["grp_ok"] and len(rel) == nrel
+              and R["grp_ok"] and rel == expected_rel
               and R["code_dim"] == (1 << (E.V - 1)))
     par = all(sum(CASES[t]["E"].occupation(y)) % 2 == 0
               for t in ("cube", "grid", "pend")
@@ -721,10 +724,12 @@ def group_A():
 # ==================================================================== group B
 
 def group_B():
-    for t, (tag, dim) in enumerate((("cube", 70), ("grid", 84), ("pend", 84))):
+    for t, (tag, dim, expected_mx) in enumerate(
+            (("cube", 70, 32), ("grid", 84, 16), ("pend", 84, 16))):
         res = CASES[tag]
         d = res["d"]
         ok = (not (d is None) and res["exact"] and res["n"] == dim
+              and res["mx"] == expected_mx
               and np.array_equal(res["bond"], res["D"])
               and bool(np.all(np.abs(np.abs(d) - 1) == 0)))
         check("B%d [exact] %s %s: dim %d, diagonals equal the fermionic bond counts, "
@@ -813,29 +818,36 @@ def scan(res):
 
 def group_D():
     keep = {}
+    expected_counts = {"cube": [12, 12, 12, 12],
+                       "grid": [8, 4, 4, 4],
+                       "pend": [8, 4, 4, 4]}
     for t, tag in enumerate(("cube", "grid", "pend")):
         res = CASES[tag]
         rows, persist = scan(res)
         keep[tag] = (rows, persist)
-        ok = all(r[1] < 1e-12 and r[5] == r[6] and r[3] == 1 and r[4] == 1
-                 for r in rows)
+        zero_counts = [len(r[5]) for r in rows]
+        ok = (all(r[1] < 1e-12 and r[5] == r[6] and r[3] == 1 and r[4] == 1
+                  for r in rows)
+              and zero_counts == expected_counts[tag])
         check("D%d [numerical, 1e-12] %s %s at g in {0, 0.5, 1, 2}: encoded and reference "
               "occupation statistics agree to L1 < 1e-12, threshold-zero counts %s "
-              "identical, ground simple throughout, smallest sampled gap %.6f"
+              "identical, ground simple throughout"
               % (t + 1, res["E"].name, res["ndesc"],
-                 "/".join(str(len(r[5])) for r in rows),
-                 min(r[2] for r in rows)), ok)
+                 "/".join(str(q) for q in zero_counts)), ok)
     pc_, pg_, pp_ = (keep["cube"][1], keep["grid"][1], keep["pend"][1])
     cl6 = {tuple(sorted(set(range(9)) - set(l))) for l in CENTRE_LINES}
     gg = {tuple(i for i, b in enumerate(CASES["grid"]["pats"][a]) if b) for a in pg_}
     pp = {tuple(i for i, b in enumerate(CASES["pend"]["pats"][a]) if b and i < 9)
           for a in pp_}
+    cube_g0_patterns = set(CASES["cube"]["zeros"])
+    cube_g0 = frozenset(a for a, p in enumerate(CASES["cube"]["pats"])
+                        if p in cube_g0_patterns)
     check("D4 [numerical, 1e-12] threshold-zeros present at every sampled nonzero g: "
           "cube %d of %d from g=0; grid3x3 %d of %d at N_grid=3, exactly the four "
           "lines through the centre, and %d of %d at N=6, their complements"
           % (len(pc_), len(CASES["cube"]["zeros"]), len(pp_),
              len(CASES["pend"]["zeros"]), len(pg_), len(CASES["grid"]["zeros"])),
-          len(pc_) == 12 and pp == CENTRE_LINES and gg == cl6)
+          pc_ == cube_g0 and pp == CENTRE_LINES and gg == cl6)
 
 
 # ==================================================================== group E
@@ -846,10 +858,18 @@ def group_E():
         E, R = res["E"], res["R"]
         fib = 1 << R["k"]
         sizes = np.bincount(res["cid"])
-        nz = sum(1 for q in res["prob"] if not q.zero())
+        edge_prob = []
+        inv_fib = S2(Fraction(1, fib))
+        for y in range(E.DIM):
+            c = int(res["cid"][y])
+            if c in res["pos"]:
+                edge_prob.append(res["prob"][res["pos"][c]] * inv_fib)
+        edge_norm = reduce(lambda a, b: a + b, edge_prob, S0)
+        edge_zeros = sum(q.zero() for q in edge_prob)
         ok = (bool(np.all(sizes == fib))
               and bool(np.all(np.abs(np.abs(res["phi"]) - 1) == 0))
-              and nz + len(res["zeros"]) == res["n"])
+              and len(edge_prob) == res["n"] * fib and edge_norm == S1
+              and edge_zeros == len(res["zeros"]) * fib)
         check("E%d [exact] %s: |phi(y)| = 1 on all %d edge strings, every coset holds "
               "exactly 2^%d = %d, so the probability is P(occupation)/%d on the fibre; "
               "%dx%d = %d in the sector, %dx%d = %d over an exact g=0 zero"
@@ -897,6 +917,7 @@ def group_F():
         res = CASES[tag]
         E = res["E"]
         st = res["stats"]
+        expected_split = 7680 if tag == "cube" else 4032
         tot = st["pos"] + st["neg"]
         inside, okform, one, both, nz = sign_form(E, res["HE"])
         check("F%d [exact] %s: all %d selected-sector elementary-hop contributions are "
@@ -905,7 +926,7 @@ def group_F():
               "endpoint stars, with %d/12 edges fitting one star and %d/12 requiring both"
               % (t + 1, E.name, tot, st["pos"], st["neg"], len(res["HE"]),
                  E.DIM, nz, one, both),
-              inside and okform and st["pos"] == st["neg"] and st["pos"] > 0
+              inside and okform and st["pos"] == st["neg"] == expected_split
               and one == 10 and both == 2 and nz == len(res["HE"]) * E.DIM // 2)
     tc, fc = flux4(CASES["cube"]["Hoff"])
     tcf, fcf = flux4(CASES["cube"]["T"].astype(complex))
@@ -915,8 +936,8 @@ def group_F():
           "identical for H_F (%d/%d, %d/%d); these closed-cycle products are invariant "
           "under diagonal rephasing"
           % (fc, tc, fg, tg, fcf, tcf, fgf, tgf),
-          (tc, fc) == (tcf, fcf) and (tg, fg) == (tgf, fgf) and fc > 0 and fg > 0
-          and tc > fc and tg > fg)
+          (tc, fc) == (tcf, fcf) == (444, 144)
+          and (tg, fg) == (tgf, fgf) == (344, 80))
 
 
 # ==================================================================== group G
@@ -956,7 +977,9 @@ BARE = {}
 
 
 def group_G():
-    for t, tag in enumerate(("cube", "grid")):
+    for t, (tag, expected_bad, expected_pairs, expected_dim, expected_edges) in enumerate(
+            (("cube", 16, 60, 2240, 7680),
+             ("grid", 12, 48, 1344, 4032))):
         res = CASES[tag]
         E, R = res["E"], res["R"]
         bad, npair, keepz, zpos, H, D = bare_sector(E, R, res["keep"], res["HE"])
@@ -966,9 +989,12 @@ def group_G():
         check("G%d [exact] %s control: bare X_e in place of A_ij anticommutes with %d "
               "of %d (term, generator) pairs, mapping some code states outside the "
               "face-code space; on the separately selected %d-dimensional edge-string sector, "
-              "a gauge makes all %d entries -1 on %d connected component"
+              "a gauge makes all %d undirected nonzero configuration edges -1 on %d "
+              "connected component"
               % (2 * t + 1, E.name, bad, npair, len(keepz), ment, ncomp),
-              bad > 0 and ncomp == 1 and cnt[2] == ment and cnt[0] == 0
+              bad == expected_bad and npair == expected_pairs
+              and len(keepz) == expected_dim and ment == expected_edges
+              and ncomp == 1 and cnt[2] == ment and cnt[0] == 0
               and cnt[1] == 0 and cnt[3] == 0)
         rows = []
         for g in (0.0,) + GVALS:

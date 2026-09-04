@@ -3,8 +3,32 @@
 Date: 2026-08-14
 Authority: none
 Audit: unset.
+Status: proposed_retained
 Claim type: bounded_theorem
 Constitutional effect: none.
+
+## Trace gate
+
+- `trace_class: frontier_discovery`
+- `target_claim_id: null`
+- `target_blocker_text: null`
+- `source_of_blocker_text: frontier_question`
+- `reachability_to_target: unknown_frontier`
+- `artifact_role: theorem`
+- `next_trace_action: test whether the finite chamber-cover and label-sum mechanism has a canonical downstream consumer; none is claimed here`
+
+## Status contract
+
+- `actual_current_surface_status: bounded-support`
+- `target_claim_type: bounded_theorem`
+- `trace_class: frontier_discovery`
+- `reachability_to_target: unknown_frontier`
+- `conditional_surface_status: null`
+- `hypothetical_axiom_status: null`
+- `admitted_observation_status: null`
+- `claim_type_reason: exact finite chamber-incidence and parity identities for the declared unit four-cube object; no broader physical or lattice-wide identification`
+- `audit_required_before_effective_retained: true`
+- `bare_retained_allowed: false`
 
 ## What this cycle asks
 

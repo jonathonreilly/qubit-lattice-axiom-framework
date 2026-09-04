@@ -25,6 +25,7 @@ import sympy as sp
 AUDIT_INPUT_PATHS = (
     "docs/ACPHILAMBDA_RECORD_POSITIVITY_DETERMINANT_POWER_SELECTOR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-22.md",
 )
+AUDIT_TIMEOUT_SEC = 120
 
 
 MUTATIONS = (
@@ -34,6 +35,8 @@ MUTATIONS = (
     "direct_weight",
     "kraus_power",
     "phase_invariance",
+    "variable_modulus",
+    "calibration_dependence",
     "normalization",
     "positive_ray",
     "sqrt_escape",
@@ -181,6 +184,8 @@ single_completion_probability = sp.simplify(sp.trace(rho * single_completion_eff
 check(
     "Kraus amplitude gives a squared-modulus branch-trace factor",
     matrix_equal(sigma_z, sp.simplify(expected_power * sigma_1))
+    and psd_2x2(rho)
+    and scalar_equal(weight(rho), 1)
     and scalar_equal(weight(sigma_z), 25 * weight(sigma_1))
     and psd_2x2(single_completion_effect)
     and scalar_equal(single_branch_probability, sp.Rational(5, 9))
@@ -203,14 +208,64 @@ check(
 )
 
 
-# G. Competing amplitude branches inherit |z_j|^2 trace ratios.  The exact
+# G. Power one and power two coincide at zero and on the unit circle.  A
+# variable-modulus comparison needs at least one point with magnitude outside
+# {0,1}.  The mutation silently replaces that discriminator by phase-only
+# points.
+power_comparison_points = (sp.I, -sp.Integer(1), sp.Integer(2))
+if mutation == "variable_modulus":
+    power_comparison_points = (sp.I, -sp.Integer(1), -sp.I)
+distinguishing_points = tuple(
+    value
+    for value in power_comparison_points
+    if sp.Abs(value) not in (0, 1)
+    and not scalar_equal(sp.Abs(value), sp.Abs(value) ** 2)
+)
+check(
+    "power-one versus power-two comparison includes a variable-modulus point",
+    distinguishing_points == (sp.Integer(2),),
+    f"domain={power_comparison_points} distinguishing={distinguishing_points}",
+)
+
+
+# H. A z-independent constant calibration preserves the squared-modulus ratio.
+# A determinant-dependent factor 1/|z| changes |z|^2 to |z| away from zero and
+# is therefore an additional input, not a consequence of label cardinality.
+calibration_points = (sp.Integer(2), sp.Integer(5))
+raw_square_weights = tuple(sp.Abs(value) ** 2 for value in calibration_points)
+constant_scale = sp.Rational(3, 7)
+constant_calibrated = tuple(
+    sp.simplify(constant_scale * value) for value in raw_square_weights
+)
+dependent_calibrated = tuple(
+    sp.simplify(square / sp.Abs(value))
+    for square, value in zip(raw_square_weights, calibration_points)
+)
+if mutation == "calibration_dependence":
+    dependent_calibrated = raw_square_weights
+check(
+    "constant calibration preserves exponent while determinant-dependent calibration can change it",
+    scalar_equal(
+        constant_calibrated[1] / constant_calibrated[0],
+        raw_square_weights[1] / raw_square_weights[0],
+    )
+    and dependent_calibrated == tuple(sp.Abs(value) for value in calibration_points),
+    f"constant={constant_calibrated} dependent={dependent_calibrated}",
+)
+
+
+# I. Competing amplitude branches inherit |z_j|^2 trace ratios.  The exact
 # instrument includes a completion outcome, so 1/5 and 4/5 are conditional on
 # landing in the displayed determinant branches rather than unconditional.
 menu = (sp.Integer(1), 2 * sp.I)
 menu_weights = [sp.simplify(v * sp.conjugate(v)) for v in menu]
 denominator = sum(menu_weights)
 conditional_probabilities = [sp.simplify(v / denominator) for v in menu_weights]
-expected_conditionals = [sp.Rational(1, 2), sp.Rational(1, 2)] if mutation == "normalization" else [sp.Rational(1, 5), sp.Rational(4, 5)]
+expected_conditionals = (
+    [sp.Rational(1, 2), sp.Rational(1, 2)]
+    if mutation == "normalization"
+    else [sp.Rational(1, 5), sp.Rational(4, 5)]
+)
 menu_effect = sp.zeros(2)
 menu_branch_probabilities = []
 for menu_value in menu:
@@ -232,7 +287,7 @@ check(
 )
 
 
-# H. A determinant may instead scale a positive block directly on an
+# J. A determinant may instead scale a positive block directly on an
 # independently supplied positive ray.  Extending that typing to a negative
 # point immediately violates positivity; the mutation falsely omits it.
 positive_ray_points = (sp.Integer(0), sp.Integer(2), sp.Integer(5))
@@ -248,9 +303,10 @@ check(
 )
 
 
-# I. A first-power modulus weight can be realized by a square-root Kraus
-# amplitude sqrt(|z|) A_0.  It is positive and has exponent one, but is not
-# complex-linear in z.  Mutation uses |z| and loses the first-power receipt.
+# K. A first-power modulus weight can be realized by a square-root Kraus
+# amplitude using the unique nonnegative real sqrt(|z|).  It is positive and
+# has exponent one, but is not complex-linear in z.  Mutation uses |z| and
+# loses the first-power receipt.
 sqrt_scale = instrument_scale * (
     sp.Abs(z) if mutation == "sqrt_escape" else sp.sqrt(sp.Abs(z))
 )
@@ -267,9 +323,11 @@ check(
 )
 
 
-# J. Coarse positive blocks inherit the sum of their supplied fine positive
+# L. Coarse positive blocks inherit the sum of their supplied fine positive
 # blocks.  Two equal-weight-w blocks sum to 2w, while a calibrated split into
-# two weight-w/2 blocks sums back to w.  Cardinality alone fixes no factor.
+# two weight-w/2 blocks sums back to w.  The explicit refinement uses two
+# orthogonal-output isometries and preserves the coarse effect.  Cardinality
+# alone fixes no factor.
 p0 = sp.diag(1, 0)
 p1 = sp.diag(0, 1)
 w = sp.Rational(3, 7)
@@ -279,17 +337,36 @@ coarse = (fine_0 + fine_1) / 2 if mutation == "coarse_additivity" else fine_0 + 
 split_0 = (w / 2) * p0
 split_1 = (w / 2) * p1
 split_coarse = split_0 + split_1
+v0 = sp.Matrix([[1], [0]])
+v1 = sp.Matrix([[0], [1]])
+if mutation == "coarse_additivity":
+    v1 = v0
+coarse_amplitude = sp.Matrix([[sp.sqrt(w)]])
+refined_amplitude_0 = sp.simplify(v0 * coarse_amplitude / sp.sqrt(2))
+refined_amplitude_1 = sp.simplify(v1 * coarse_amplitude / sp.sqrt(2))
+refined_effect = sp.simplify(
+    refined_amplitude_0.H * refined_amplitude_0
+    + refined_amplitude_1.H * refined_amplitude_1
+)
 check(
     "coarse addition preserves supplied fine-block calibration",
     scalar_equal(weight(coarse), 2 * w)
     and scalar_equal(weight(fine_0), w)
     and scalar_equal(weight(fine_1), w)
-    and scalar_equal(weight(split_coarse), w),
-    f"equal_fine=({weight(fine_0)},{weight(fine_1)}) equal_coarse={weight(coarse)} calibrated_split={weight(split_coarse)}",
+    and scalar_equal(weight(split_coarse), w)
+    and scalar_equal((v0.H * v0)[0], 1)
+    and scalar_equal((v1.H * v1)[0], 1)
+    and scalar_equal((v0.H * v1)[0], 0)
+    and matrix_equal(refined_effect, coarse_amplitude.H * coarse_amplitude)
+    and scalar_equal(weight(branch(refined_amplitude_0, sp.eye(1))), w / 2)
+    and scalar_equal(weight(branch(refined_amplitude_1, sp.eye(1))), w / 2),
+    f"equal_fine=({weight(fine_0)},{weight(fine_1)}) "
+    f"equal_coarse={weight(coarse)} calibrated_split={weight(split_coarse)} "
+    f"orthogonal={(v0.H * v1)[0]} refined_effect={refined_effect}",
 )
 
 
-# K. Independent amplitude composition preserves the second-power law.
+# M. Composed scalar amplitudes preserve the second-power law.
 z1 = 2 + sp.I
 z2 = 1 - 2 * sp.I
 composite_weight = sp.simplify((z1 * z2) * sp.conjugate(z1 * z2))
@@ -305,7 +382,7 @@ check(
 )
 
 
-# L. Source guards keep the theorem at the physical-selector boundary.
+# N. Source guards keep the theorem at the physical-selector boundary.
 root = Path(__file__).resolve().parents[1]
 note = root / "docs" / "ACPHILAMBDA_RECORD_POSITIVITY_DETERMINANT_POWER_SELECTOR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-22.md"
 note_text = note.read_text(encoding="utf-8") if note.exists() else ""
@@ -316,7 +393,9 @@ needles = (
     "routes that remain live",
     "physical event map",
     "standard amplitude typing",
-    "W_P",
+    "probability and normalization",
+    "variable-modulus",
+    "determinant-dependent calibration",
 )
 if mutation == "source_scope":
     needles += ("THIS_MARKER_MUST_NOT_EXIST",)
@@ -333,7 +412,7 @@ for result in checks:
 
 print("per_element: checked — phase-complete scalar determinant fixtures and their positive-weight typings are exercised exactly")
 print("per_site: checked and not executed — no site-local matter action, site calibration, or site-to-event lift is claimed")
-print("per_mode: checked and not executed — no fermion-mode carrier or K/CPT mode independence is selected by this theorem")
+print("per_mode: checked and not executed — no fermion-mode carrier or K/CPT mode relation is selected by this theorem")
 print("per_block: checked — Hermitian positivity, Kraus branch blocks, and a two-fine-event coarse sum are exercised exactly")
 print("lattice_wide: checked and not executed — no lattice dynamics, continuum lift, or full charged-lepton action is claimed")
 

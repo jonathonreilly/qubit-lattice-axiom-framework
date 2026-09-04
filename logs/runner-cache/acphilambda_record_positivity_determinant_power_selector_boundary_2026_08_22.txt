@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.py
-runner_sha256: 6f1ad13fd87aa2bb2e8fffa9efdee6b5ab2e8e6aba95123412001c2766a9b2b9
-input_fingerprint_sha256: 13f4268386196efdee004cc27131207e0bb9c82e8df247b2c3d12eeb7db39f14
+runner_sha256: efcc02c3377159af178446f6766541003bfb390dfd4c77ddac7b4a82fd5965b4
+input_fingerprint_sha256: 1e1cda4f7ee0a040947b0b0965eaf4007a8454faaa33ce0aa517fcc352fa3949
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 [PASS] phase-complete determinant witness: det([z]) values=(1, -1, I, -I)
@@ -13,18 +13,20 @@ status: ok
 [PASS] raw holomorphic determinant is not a positive branch block: z=I hermitian=False trace=I
 [PASS] Kraus amplitude gives a squared-modulus branch-trace factor: trace ratio=25 branch_probability=5/9 completion_probability=4/9
 [PASS] scalar amplitude phase leaves its positive branch block invariant: phase=I invariant=True
+[PASS] power-one versus power-two comparison includes a variable-modulus point: domain=(I, -1, 2) distinguishing=(2,)
+[PASS] constant calibration preserves exponent while determinant-dependent calibration can change it: constant=(12/7, 75/7) dependent=(2, 5)
 [PASS] conditional determinant-branch menu uses squared-modulus ratios: branch_probabilities=[1/45, 4/45] conditional=[1/5, 4/5] completion=8/9
 [PASS] first-power direct weight needs a supplied positive domain: domain=(0, 2, 5, -1) traces=(0, 2, 5, -1)
 [PASS] modulus-power-one square-root writer is a separate nonlinear bridge: trace ratio=5 complex_linear=False
-[PASS] coarse addition preserves supplied fine-block calibration: equal_fine=(3/7,3/7) equal_coarse=6/7 calibrated_split=3/7
+[PASS] coarse addition preserves supplied fine-block calibration: equal_fine=(3/7,3/7) equal_coarse=6/7 calibrated_split=3/7 orthogonal=0 refined_effect=Matrix([[3/7]])
 [PASS] squared-modulus amplitude factors compose multiplicatively: composite=25 factors=25
-[PASS] source preserves action, event-map, escape, and axiom boundaries: needles=7 present=7
+[PASS] source preserves action, event-map, escape, and axiom boundaries: needles=9 present=9
 per_element: checked — phase-complete scalar determinant fixtures and their positive-weight typings are exercised exactly
 per_site: checked and not executed — no site-local matter action, site calibration, or site-to-event lift is claimed
-per_mode: checked and not executed — no fermion-mode carrier or K/CPT mode independence is selected by this theorem
+per_mode: checked and not executed — no fermion-mode carrier or K/CPT mode relation is selected by this theorem
 per_block: checked — Hermitian positivity, Kraus branch blocks, and a two-fine-event coarse sum are exercised exactly
 lattice_wide: checked and not executed — no lattice dynamics, continuum lift, or full charged-lepton action is claimed
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=14 FAIL=0
 
 ----- stderr -----
 

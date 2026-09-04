@@ -1,7 +1,7 @@
 ---
 claim_id: acphilambda_record_positivity_determinant_power_selector_boundary_bounded_theorem_note_2026-08-22
 claim_type: bounded_theorem
-claim_scope: "On the declared phase-complete scalar-determinant surface, a real-linear map from C into positive Hermitian blocks is zero. An entrywise-holomorphic F:Omega->M_d(C) on a connected open complex domain whose image is Hermitian is constant, and is zero if 0 is in Omega and F(0)=0. For fixed rho>=0 and nonzero A_0 with Tr(A_0 rho A_0^dagger)>0, the branch-operator typing A_z=zA_0 gives sigma_z=|z|^2 sigma_1 and squared-modulus trace ratios. A nonzero positive modulus-power-one construction must leave at least one of those direct-map or scalar-amplitude hypotheses; named examples are explicitly non-exhaustive. For separately supplied additive positive blocks, coarse addition preserves the supplied fine-block calibration, while event-label cardinality alone fixes no factor. These finite facts expose independent physical typing, trace/probability, and event-calibration bridges; they do not select the charged-lepton action, measure, event carrier, determinant horn, r value, or a universal no-go."
+claim_scope: "On the declared phase-complete scalar-determinant surface, a real-linear map from C into positive Hermitian blocks is zero. An entrywise-holomorphic F:Omega->M_d(C) on a connected open complex domain whose image is Hermitian is constant, and is zero if 0 is in Omega and F(0)=0. For fixed rho>=0 and nonzero A_0 with Tr(A_0 rho A_0^dagger)>0, the branch-operator typing A_z=zA_0 gives sigma_z=|z|^2 sigma_1 and squared-modulus trace ratios. Distinguishing this factor from |z| requires a comparison domain containing a point with |z| outside {0,1}; on such a domain a nonzero positive modulus-power-one construction must leave at least one of those direct-map or scalar-amplitude hypotheses. Named examples are explicitly non-exhaustive. For separately supplied additive positive blocks, coarse addition preserves the supplied fine-block calibration, while event-label cardinality alone fixes no factor. A nonzero z-independent constant calibration preserves determinant exponent; a determinant-dependent calibration is an additional input and can change it. These finite facts separately expose unresolved determinant-carrier typing, trace/probability normalization, and event-partition/calibration questions without proving those questions logically independent; they do not select the charged-lepton action, measure, event carrier, determinant horn, r value, or a universal no-go."
 depends_on:
   - minimal_axioms
 runner: scripts/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.py
@@ -14,16 +14,40 @@ bare_retained_allowed: false
 
 **Date:** 2026-08-22
 
-**Role:** bounded action/measure typing probe after the provisional finite
-Record-law candidate
+**Role:** bounded finite operator-algebra probe of determinant typing and event
+calibration
 
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
+**Status:** proposed_retained
+**Audit-status authority:** independent audit lane only. This source proposal
+authors no audit verdict and predicts none.
 
 **Primary runner:**
 [`scripts/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.py`](../scripts/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.py)
 
 **Cached receipt:**
 [`logs/runner-cache/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.txt`](../logs/runner-cache/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.txt)
+
+## Machine Status And Trace
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "The real-linear, holomorphic-Hermitian, scalar-amplitude, variable-modulus, and supplied finite-refinement statements are exact on their declared finite domains; the physical matter carrier, probability law, and event calibration remain open."
+trace_class: upstream_support
+target_claim_id: ac_orbit_occupancy_statistical_grain_derivation_obligation
+target_blocker_text: "Derive from the retained framework chain whether the physical charged-lepton matter action counts the K/CPT orbit or holomorphic pair once rather than counting each sector or channel."
+source_of_blocker_text: frontier_question
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "Derive the physical charged-lepton action and measure, identify the determinant carrier, supply the probability/normalization law, and derive the physical event partition and calibration before selecting a count-once or count-twice realization."
+conditional_surface_status: "exact for the declared finite maps, operators, variable-modulus comparison, and supplied calibration; all physical carrier, probability, and event identifications remain open"
+hypothetical_axiom_status: "no edit"
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
 ## Result up front
 
@@ -52,28 +76,42 @@ Three determinant typings must be kept distinct.
 
    This establishes a squared-modulus branch-block and trace factor. It does
    not by itself identify that factor with physical probability or with the
-   realified/conjugate-paired AC action horn.
+   realified/conjugate-paired AC action horn. Distinguishing this dependence
+   from modulus power one requires at least one comparison point with
+   `|z| not in {0,1}`; phase-only unit-modulus fixtures cannot distinguish the
+   two powers.
 3. **Positive modulus-power-one construction.** A supplied positive
    determinant ray, a direct modulus weight, or a square-root writer
-   `A_z=sqrt(|z|)A_0` can produce modulus power one. These routes leave the
-   real-linear/holomorphic direct-map or standard scalar-amplitude hypotheses.
-   They are examples, not an exhaustive list of physical constructions.
+   `A_z=sqrt(|z|)A_0`, with the unique nonnegative real square root, can
+   produce modulus power one. These routes leave the real-linear/holomorphic
+   direct-map or standard scalar-amplitude hypotheses. They are examples, not
+   an exhaustive list of physical constructions.
 
 Supplied event calibration is a separate axis. If two fine positive blocks
 are assigned traces `w,w`, their sum has trace `2w`. If a coarse block of
 trace `w` is instead refined into calibrated blocks with traces `w/2,w/2`,
 their sum remains `w`. Thus coarse addition preserves the calibration already
 supplied; the number of event labels does not create a factor. In particular,
-an event quotient or rescaling can change a multiplicity factor but cannot by
-itself turn the determinant exponent `|z|^2` into `|z|`.
+A label-cardinality quotient or other nonzero `z`-independent constant
+calibration can change a multiplicity factor but preserves the determinant
+exponent over a variable-modulus comparison domain. A determinant-dependent
+calibration can change the exponent: for `z != 0`, multiplying `|z|^2` by
+`1/|z|` gives `|z|`. Such dependence is an additional calibration input, not
+a consequence of event-label cardinality.
 
-The AC residual therefore has three independent physical interfaces:
+The AC residual therefore presents three separately named unresolved physical
+questions:
 
-- `W_T`: which action/measure or amplitude **typing** the determinant has;
-- `W_P`: which downstream law, if any, turns a branch trace or statistical
-  measure into physical probability;
-- `W_E`: which K/CPT alternatives are physical events and how their fine
-  blocks are calibrated.
+- **determinant-carrier typing:** which action/measure object or amplitude
+  contains the determinant;
+- **probability and normalization:** which downstream law, if any, turns a
+  branch trace or statistical measure into physical probability;
+- **event partition and calibration:** which K/CPT alternatives are physical
+  events and how their fine blocks are calibrated.
+
+This packet does not prove these questions logically independent or establish
+a minimal count of physical interfaces. A future construction may answer or
+couple more than one of them at once.
 
 The current Minimal Axioms supply none of these choices. This packet makes no
 minimal-axiom edit and retires no TOE obligation.
@@ -83,6 +121,8 @@ minimal-axiom edit and retires no TOE obligation.
 The theorem uses only the following finite objects and assumptions.
 
 - `K` is a finite complex matrix and `z=det_C(K)`.
+- `H` is finite dimensional; `Herm(H)` denotes its finite Hermitian matrices.
+  The direct-map statement takes a real-linear `B:C->Herm(H)` on all of `C`.
 - The exact real-linear test surface contains the rank-one kernels `[1]`,
   `[-1]`, `[i]`, and `[-i]`; `det([z])=z`.
 - A supplied branch block is a positive semidefinite finite matrix `sigma`.
@@ -90,12 +130,21 @@ The theorem uses only the following finite objects and assumptions.
   probability.
 - For the amplitude identity, `rho>=0`, `A_0` is nonzero, and
   `A_z=zA_0`. Ratios require `Tr(sigma_1)>0`.
+- Any claim that modulus power one and modulus power two are observationally
+  or mathematically distinguished additionally requires a comparison domain
+  containing at least one point with `|z| not in {0,1}`. A unit-modulus-only
+  domain is explicitly excluded from that discriminator.
+- `sqrt(|z|)` always denotes the unique nonnegative real square root. No
+  complex square-root branch is selected.
 - For the holomorphic identity, `Omega` is connected and open and
   `F:Omega->M_d(C)` is entrywise holomorphic with Hermitian image. The zero
   conclusion additionally requires `0 in Omega` and `F(0)=0`.
 - For the coarse-block identity, positive fine blocks and their additive
   coarse block are supplied theorem-domain data. Their physical event meaning
   and normalization are not inferred from label cardinality.
+- Exponent preservation under calibration is asserted only for a nonzero
+  `z`-independent constant factor over a variable-modulus domain.
+  Determinant-dependent calibration remains a separate supplied possibility.
 
 The branch identity itself does not assert that an arbitrary `A_z` family is
 a complete or trace-nonincreasing instrument. The runner also supplies one
@@ -192,7 +241,8 @@ science.
 
 Finally, `|z|^2 sigma_1` is only a squared-modulus branch factor. Showing that
 the actual charged-lepton determinant is this amplitude, and showing that its
-carrier is the physical realified/conjugate-paired horn, remain `W_T`.
+carrier is the physical realified/conjugate-paired horn, remain part of the
+open determinant-carrier-typing question.
 
 ## 4. Coarse addition preserves supplied calibration
 
@@ -215,28 +265,31 @@ A_0^dagger A_0 + A_1^dagger A_1 = A^dagger A.
 ```
 
 The fine traces are then `w/2,w/2` and the coarse trace stays `w`. The runner
-checks the corresponding exact positive-block fixtures. Therefore addition
-preserves a supplied calibration, while one versus two labels selects no
-normalization. Coherent combination before positive blocks form, an affine
-reference-arm instrument, and an indivisible K/CPT event are also outside the
-equal-`w` fixture.
+checks an exact finite pair of orthogonal-output isometries, the displayed
+effect identity, and the corresponding positive-block traces. Therefore
+addition preserves a supplied calibration, while one versus two labels
+selects no normalization. Coherent combination before positive blocks form,
+an affine reference-arm instrument, and an indivisible K/CPT event are also
+outside the equal-`w` fixture.
 
 This finite sum is a theorem-domain assumption. It is not derived from Record
 or the Minimal Axioms. It constrains neither determinant exponent nor the
-physical event map without `W_T`, `W_P`, and `W_E`.
+physical event map without the unresolved carrier-typing,
+probability/normalization, and event-partition/calibration inputs.
 
 ## 5. Non-exhaustive routes that remain live
 
-| Axis | Example mechanism | Missing physical supplier |
+| Unresolved question | Example mechanism | Missing physical supplier |
 |---|---|---|
-| `W_T` | positive determinant ray, `sigma_z=z sigma_1` for `z>=0` | prove the actual action stays positive and enters as a direct weight |
-| `W_T` | nonholomorphic modulus, `sigma_z=|z| sigma_1` | derive phase erasure and its carrier |
-| `W_T` | square-root writer, `A_z=sqrt(|z|)A_0` | derive this nonlinear amplitude map |
-| `W_T` | Euclidean positive determinant as path-measure weight | connect the finite positive determinant sector to the actual AC generation carrier |
-| `W_T/W_E` | phase-sensitive positive homogeneous or coherent/affine instrument | derive the map and its physical event interpretation |
-| `W_E` | one indivisible K/CPT event | prove the conjugate labels are not independent events |
-| `W_E` | normalized two-event refinement with fine weights `w/2,w/2` | derive the event instrument and calibration |
-| `W_P` | downstream trace/Born or normalized path-measure law | derive probabilities from the chosen physical carrier |
+| determinant-carrier typing | positive determinant ray, `sigma_z=z sigma_1` for `z>=0` | prove the actual action stays positive and enters as a direct weight |
+| determinant-carrier typing | nonholomorphic modulus, `sigma_z=|z| sigma_1` | derive phase erasure and its carrier |
+| determinant-carrier typing | square-root writer, `A_z=sqrt(|z|)A_0` | derive this nonlinear amplitude map and the nonnegative-root prescription |
+| determinant-carrier typing | Euclidean positive determinant as path-measure weight | connect the finite positive determinant sector to the actual AC generation carrier |
+| carrier typing plus event calibration | nonnegative-real-homogeneous or coherent/affine instrument | derive the map and its physical event interpretation |
+| event partition and calibration | one indivisible K/CPT event | prove the conjugate labels are not distinct physical events |
+| event partition and calibration | normalized two-event refinement with fine weights `w/2,w/2` | derive the event instrument and calibration |
+| probability and normalization | downstream trace/Born or normalized path-measure law | derive probabilities from the chosen physical carrier |
+| probability and normalization | determinant-dependent calibration such as `1/|z|` away from zero | derive the dependence, its domain at zero, and its physical meaning |
 
 These are constructive targets, not a complete classification. The runner
 checks only the positive-ray, square-root, amplitude, and two displayed
@@ -247,40 +300,63 @@ calibration mechanisms.
 The standing AC obligation asks for a physical matter action and measure that
 distinguish the count-once `det_C` realization from a count-twice
 `|det_C|^2`/conjugate-paired realization without inserting the desired value.
-This packet turns that residual into three explicit questions:
+This packet lists three explicit questions without asserting that their future
+answers must be independent:
 
-1. **`W_T`, carrier typing:** Is the determinant an amplitude, a direct
+1. **Determinant-carrier typing:** Is the determinant an amplitude, a direct
    statistical weight, or input to another derived map?
-2. **`W_P`, probability bridge:** What physical law maps that carrier to
+2. **Probability and normalization:** What physical law maps that carrier to
    outcome probabilities and normalization?
-3. **`W_E`, event calibration:** Which K/CPT alternatives are registrable
-   events, and what fine-block normalization does the instrument supply?
+3. **Event partition and calibration:** Which K/CPT alternatives are
+   registrable events, and what fine-block normalization does the instrument
+   supply?
 
 Standard scalar-amplitude typing answers only the algebraic exponent question:
 it gives a squared-modulus branch factor. With a separately established
 trace-as-probability law, conditional outcome ratios inherit that factor. A
 separate physical-carrier theorem is still needed to identify this with the
 AC count-twice horn. Conversely, a positive first-power path remains
-mathematically open, and event calibration can change a multiplicity without
-changing the determinant exponent.
+mathematically open. A determinant-independent event calibration can change a
+multiplicity without changing the determinant exponent; a
+determinant-dependent calibration can change the exponent but is an additional
+physical input.
 
 This is useful route reduction, but no formal obligation is retired. The
 physical charged-lepton action, probability bridge, and event carrier are
 still missing. The observed charged-lepton `r` value is not used in any proof.
 
-## 7. Axiom decision
+## 7. Imports and support inventory
+
+| Item | Role | Status |
+|---|---|---|
+| real linearity, Hermitian polarization, Cauchy--Riemann equations, finite determinant/trace/adjoint algebra | proof machinery | elementary exact mathematics; no literature constant or framework-specific normalization |
+| connected open `Omega`, Hermitian image, `0 in Omega`, and `F(0)=0` | holomorphic zero-map theorem | explicit domain conditions; the latter two are used only for the zero conclusion |
+| `rho`, `A_0`, instrument scale `1/9`, `z=3+4i`, menu `{1,2i}`, and `w=3/7` | finite witnesses | supplied exact fixtures; not observed, fitted, or inferred physical values |
+| comparison point with `|z| not in {0,1}` | exponent discriminator | explicit condition; unit-modulus-only domains are excluded from power discrimination |
+| nonnegative real `sqrt(|z|)` | first-power escape | explicit branch convention; no complex square-root branch |
+| `z`-independent calibration versus determinant-dependent calibration | calibration boundary | constant calibration preserves the exponent; determinant dependence is an additional supplied input |
+| [current Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md) | framework boundary | load-bearing only for what the axiom surface does not supply; it contributes no numerical value or physical selector |
+| determinant-split, Pfaffian, Record non-supply, and staggered-positivity notes named in sections 1 and N7--N8 | comparison context | support-only and currently unaudited; code-formatted names intentionally create no dependency edge |
+| physical matter action, measure, trace/probability law, event partition, calibration, and charged-lepton `r` | downstream physics | unresolved and unused by the finite proofs |
+
+There is no observational comparator, fitted parameter, imported charged-lepton
+value, literature-derived normalization, or hidden branch choice in the
+load-bearing argument.
+
+## 8. Axiom decision
 
 There is no minimal-axiom edit in this packet. The memo already puts
 source/action, measurement, probability values, and observable identification
-downstream. The three open interfaces sit exactly there.
+downstream. The three separately named open questions sit there and may still
+be coupled by a future physical construction.
 
 An axiom update would become scientifically warranted only if independent
-work showed that one of these interfaces is genuinely foundational and cannot
+work showed that one of these questions is genuinely foundational and cannot
 be derived from retained physics. The present finite lemmas establish neither
 necessity nor uniqueness. Editing the axioms now would choose the AC answer
 rather than derive it.
 
-## 8. Scope and non-claims
+## 9. Scope and non-claims
 
 - This is not a universal no-go against count-once physics.
 - It is not a classification of all positive nonlinear determinant maps.
@@ -294,7 +370,7 @@ rather than derive it.
   TOE percentage.
 - It does not claim that the routes in section 5 are exhaustive.
 
-## 9. No-Go Discipline Gate
+## 10. No-Go Discipline Gate
 
 The packet contains negative-flavored subclaims, so the current N1--N8
 protocol is applied to the exact bounded statements. The broad claim “no
@@ -306,42 +382,53 @@ count-once theory can work” fails this gate and is not shipped.
 |---|---|---|
 | Restricted positive determinant ray | Direct positive weight on `z>=0`; runner also tests failure at `z=-1`. | **ATTEMPTED; live outside scope.** It changes the phase-complete hypothesis. |
 | Direct modulus weight | `z->|z|sigma` is positive and first-power. | **ATTEMPTED algebraically; live.** It is nonholomorphic and nonlinear. |
-| Square-root writer | `A_z=sqrt(|z|)A_0`; exact runner fixture. | **ATTEMPTED; live.** It changes scalar-amplitude typing. |
-| Euclidean determinant measure | [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) gives a finite positive staggered-determinant source candidate used as path-weight context. | **ATTEMPTED as boundary context; live and currently unaudited.** The cited source is not retained authority here and requires an actual AC carrier bridge. |
-| Phase-sensitive positive homogeneous map | For `sigma>=0`, `B(z)=(|z|+Re z)sigma>=0`. | **ATTEMPTED analytically; live.** It is neither real-linear nor holomorphic. |
+| Square-root writer | `A_z=sqrt(|z|)A_0` with the nonnegative real root; exact runner fixture. | **ATTEMPTED; live.** It changes scalar-amplitude typing. |
+| Euclidean determinant measure | `STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md` gives a finite positive staggered-determinant source candidate used as support-only path-weight context. | **ATTEMPTED as boundary context; live and currently unaudited.** The named source is not retained authority or a dependency here and requires an actual AC carrier bridge. |
+| Nonnegative-real-homogeneous map | For `sigma>=0`, `B(z)=(|z|+Re z)sigma>=0` and `B(tz)=tB(z)` only for real `t>=0`. | **ATTEMPTED analytically; live.** It is neither real-linear nor holomorphic. |
 | Coherent/affine pre-block construction | Combine K/CPT paths coherently or with a reference arm before positive fine blocks form. | **ATTEMPTED as a premise-boundary construction; unresolved.** It lies outside the supplied fine-block premise, so it does not falsify the additive identity and is not physically ruled out. |
-| One-event quotient | Form one indivisible event before refinement. | **ATTEMPTED as a premise-boundary construction; live.** The two-block sum is then undefined, so it changes `W_E` rather than the determinant exponent. |
+| One-event quotient | Form one indivisible event before refinement. | **ATTEMPTED as a premise-boundary construction; live.** The two-block sum is then undefined, so it changes the event-partition premise rather than the determinant exponent. |
 | Calibrated normalized split | `A_j=V_jA/sqrt(2)` gives fine weights `w/2,w/2`. | **ATTEMPTED exactly; live.** It disproves any cardinality-only factor rule. |
+| Determinant-dependent calibration | For `z!=0`, multiply a squared-modulus weight by `1/|z|`. | **ATTEMPTED exactly; live.** It produces power one but adds a singular-at-zero, determinant-dependent normalization that must be derived physically. |
+| Unit-modulus-only domain | Restrict every nonzero comparison point to `|z|=1`. | **ATTEMPTED exactly; live but non-discriminating.** Powers one and two coincide there, so that domain cannot select an exponent. |
 
 The named families are non-exhaustive. They leave intact only the exact
 real-linear, holomorphic, scalar-amplitude, and supplied-addition statements.
 
-### N2 — wall-independence audit
+### N2 — unresolved-question relation audit
 
-| Pair | Why the first does not close the second | Why the second does not close the first | Verdict |
+The following table records only that none of the displayed inputs entails the
+other under this packet's premises. It is not a proof of logical independence,
+and a future physical construction may couple or jointly answer the questions.
+
+| Pair | Why the first does not close the second here | Why the second does not close the first here | Disposition |
 |---|---|---|---|
-| `W_T` / `W_P` | Choosing an amplitude or path weight does not derive its probability law. | A trace/Born law does not identify which AC object enters it. | independent absent a linking theorem |
-| `W_T` / `W_E` | Determinant exponent does not decide whether K/CPT labels are physical events. | Event identity does not decide amplitude versus direct-weight typing. | independent absent a linking theorem |
-| `W_P` / `W_E` | A probability functional does not calibrate the event partition it acts on. | An event partition and instrument do not derive a universal trace/Born rule. | independent absent a linking theorem |
+| determinant-carrier typing / probability and normalization | Choosing an amplitude or path weight does not by itself derive its probability law. | A trace/Born law does not by itself identify which AC object enters it. | separately unresolved here; dependence not classified |
+| determinant-carrier typing / event partition and calibration | Determinant exponent does not by itself decide whether K/CPT labels are physical events. | Event identity does not by itself decide amplitude versus direct-weight typing. | separately unresolved here; dependence not classified |
+| probability and normalization / event partition and calibration | A probability functional alone does not specify the event partition it acts on. | A supplied event partition alone does not derive a universal trace/Born rule. | separately unresolved here; dependence not classified |
 
 Positive ray, modulus, square-root, and Euclidean-measure routes are candidate
-closures of `W_T`, not extra walls. One-event and calibrated-split routes are
-candidate closures of `W_E`.
+inputs to determinant-carrier typing, not extra proved walls. One-event and
+calibrated-split routes are candidate event-partition inputs. No minimal wall
+count is inferred.
 
 ### N3 — hidden-condition scan
 
 | Phrase/class | Classification |
 |---|---|
 | positive branch block | supplied finite operator data; not called Record content |
-| trace weight | candidate mathematical quantity; physical probability requires `W_P` |
-| standard amplitude typing | exact conditional equation `A_z=zA_0`; load-bearing `W_T` premise |
+| trace weight | candidate mathematical quantity; physical probability requires an additional probability/normalization law |
+| standard amplitude typing | exact conditional equation `A_z=zA_0`; load-bearing determinant-carrier premise |
 | coarse addition | supplied finite block-sum convention; not a Minimal-Axiom or Record theorem |
 | current Minimal Axioms | authority only for the explicit non-supply boundary |
-| physical event map/calibration | open `W_E`, never inferred from labels |
+| physical event map/calibration | open physical input, never inferred from labels |
+| exponent comparison domain | explicitly requires some `|z| not in {0,1}`; a unit-modulus-only domain is non-discriminating |
+| calibration dependence | exponent preservation is limited to a `z`-independent constant; determinant-dependent calibration remains open |
 
-The scan found no unnamed bridge beyond `W_T`, `W_P`, and `W_E`. In
-particular, “standard instrument” is not used to smuggle completeness or a
-universal probability law into the general branch identity.
+The scan found no additional load-bearing bridge in the finite proofs beyond
+the assumptions listed in section 1; it does not claim that the physical
+question list is exhaustive or independent. In particular, “standard
+instrument” is not used to smuggle completeness or a universal probability
+law into the general branch identity.
 
 ### N4 — residual matching
 
@@ -350,7 +437,8 @@ physical matter carrier. A squared-modulus trace factor is not itself the
 realified/conjugate-paired AC horn, and an additive factor of two is not a
 determinant-power result. No prior no-go, contextual determinant note, or
 desired mass ratio is used as a witness. The result therefore ships as bounded
-route reduction with the three mismatched physical residuals explicit.
+route reduction with three separately named physical residual questions
+explicit and without a claim that they are logically independent.
 
 ### N5 — rhetoric audit and execution certificate
 
@@ -378,35 +466,42 @@ The approved primitive registry and relevant source memos were checked.
   Records while leaving the values, source/action, and calibration downstream.
 
 No primitive is relabeled as a wall. Positive partial closures remain
-available without an axiom edit: derive a positive AC action (`W_T`), derive a
-trace or normalized-measure law (`W_P`), or derive the physical instrument and
-its normalized refinement (`W_E`). The exact `w/2,w/2` split is a concrete
-partial-closure construction, not a rhetorical escape.
+available without an axiom edit: derive a positive AC action, derive a trace or
+normalized-measure law, or derive the physical instrument and its normalized
+refinement. The exact `w/2,w/2` split is a concrete mathematical construction,
+not a rhetorical escape. These possible advances may overlap in a future
+physical theorem.
 
 ### N7 — strongest steelman
 
-The strongest positive critic combines all three missing interfaces.
-[`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
+The strongest positive critic jointly addresses all three missing questions.
+`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`
 is the exact repository source candidate for a configuration-wise positive
 first-power staggered determinant that may enter the path measure directly
-(`W_T`); a derived normalized-measure-to-outcome rule may connect that measure
-to observable records (`W_P`); and an independently calibrated one-event or
-normalized two-event instrument may avoid artificial K/CPT double counting
-(`W_E`). The cited source is currently unaudited, is non-load-bearing here,
-and does not establish the AC carrier.
+as a determinant-carrier input; a derived normalized-measure-to-outcome rule
+may connect that measure to observable records; and a calibrated one-event or
+normalized two-event instrument may avoid artificial K/CPT double counting.
+The named source is currently unaudited, is support-only context rather than a
+dependency, and does not establish the AC carrier.
 Executing these three links could positively close count-once without
 contradicting any lemma here. This is why no broad no-go or axiom selection is
 allowed.
 
 ### N8 — cross-cycle echo
 
-Repository ledgers and the relevant August 13 correction were checked.
+Exact repository sources and the relevant August 13 correction were checked.
 
-- The block-28 determinant-power ledger says determinant algebra does not
-  select the physical horn. The later Pfaffian note reinforces that a
-  coordinate rewrite is not a new physical carrier.
-- The block-29 Record-orbit ledger says outcome labels do not select
-  determinant power. The calibrated split here strengthens that boundary.
+- `ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md`
+  separates the algebraic first- and second-power realizations without
+  selecting a physical horn. The later
+  `ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md`
+  reinforces that a coordinate rewrite is not a new physical carrier. Both
+  are currently unaudited and are support-only context here.
+- `ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`
+  constructs two readout extensions to show that the axiom surface does not
+  select raw determinant power. It is currently unaudited and is not a proof
+  dependency here. The calibrated split in this packet is a separate finite
+  example of why label count alone supplies no normalization.
 - `MINIMAL_AXIOMS_2026-06-29.md` records the August 13 removal of scalar
   intensity and finite additivity from Record.
 - `FINITE_DYADIC_PRODUCT_REGISTRATION_TRUNCATED_BARYCENTER_BOUNDED_THEOREM_NOTE_2026-08-13.md`
@@ -415,10 +510,12 @@ Repository ledgers and the relevant August 13 correction were checked.
 
 This packet follows that retirement mechanism by saying “supplied positive
 block/trace convention,” never “Record trace law” or “Record additivity.” No
-convention-only repair closes `W_T`, `W_P`, and `W_E` together.
+convention-only repair jointly supplies the physical carrier,
+probability/normalization law, and event-partition calibration.
 
 **Gate result:** PASS for the exact bounded finite lemmas and corrected
-three-interface residual. FAIL for a universal count-once no-go, a physical AC
+separately named residual questions. FAIL for a universal count-once no-go, a
+proof that the residual questions are logically independent, a physical AC
 horn selection, or a framework-wide probability theorem; none is shipped.
 
 ## Verification
@@ -432,7 +529,7 @@ python3 scripts/acphilambda_record_positivity_determinant_power_selector_boundar
 Expected result:
 
 ```text
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=14 FAIL=0
 ```
 
 Every named hostile mutation must produce exactly one failed check.

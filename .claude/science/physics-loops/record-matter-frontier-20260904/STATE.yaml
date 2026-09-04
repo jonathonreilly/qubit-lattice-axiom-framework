@@ -5,7 +5,7 @@ deadline_utc: '2026-09-05T19:41:09Z'
 runtime_hours: 24
 checkpoint_interval_minutes: 15
 automation_id: advance-toe-record-matter-frontier
-base_main: a1a64d36bc856c3ae330786972d3f2a02b678c52
+base_main: e249016f759f224d9b429932cd0d1db4d452dc1a
 branch: physics-loop/record-matter-block01-20260904
 block: 1
 phase: author review and PR preflight
@@ -19,6 +19,6 @@ active_workers:
   - matter_gravity_evidence: proof and prior-art review complete; idle
 photon_lane: excluded; owned by another worker
 lock_owner: physics-loop-record-matter
-next_action: review primary and independent results, construct the self-contained finite record model, then package the coherent block as a PR
+next_action: publish the reviewed partial-class block after stable preflight; complete all-open-PR intake before selecting the next science block
 pr: null
 stop_condition: fixed deadline; otherwise checkpoint and pivot through local failures

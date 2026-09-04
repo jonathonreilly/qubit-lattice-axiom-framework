@@ -7,7 +7,7 @@ Current foundation: Lattice, Qubit, Admissibility, Record; approved scale-refere
 | Real NN staggered pi-flux hopping, unit strength | Explicit mathematical model shared with recent formation notes | Physical kinetic selection remains outside this block | Different flux/interactions can change row orthogonality |
 | Complete period-two even-class deletion | Geometric model for partial star formation | Instrument and scheduling identification must be stated separately | Sparse asynchronous records need separate dynamics |
 | Fixed quantum unitary clock | Evolution convention | No emergent cadence derived | A relational or stochastic clock changes the process question |
-| Half-filled finite BKSF sea | Supplied state for the finite history pilot | Encoding and preparation redeclared if included | Other states need not have time-reversal-even record laws |
+| Half-filled finite canonical free-fermion sea | Supplied state for this conditional-state theorem | Edge-qubit encoding correspondence and physical preparation remain separate | Other states need not obey the pairing formula |
 | Born/Lueders projective events | Supplied instrument for the finite pilot | No new Born derivation claimed | Other instruments can affect disturbance and locality |
 | Positive-band Gaussian wave packet | Supplied propagation probe | No preparation claim | Other polarizations can overlap the zero sector |
 

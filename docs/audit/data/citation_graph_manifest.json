@@ -1,6 +1,6 @@
 {
  "edge_count": 11859,
- "node_count": 4757,
+ "node_count": 4758,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1397,6 +1397,10 @@
   "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31": {
    "deps_hash": "3956211a1680",
    "out_degree": 7
+  },
+  "bravyi_kitaev_superfast_pi_flux_sign_class_finite_cubic_graph_bounded_theorem_note_2026-09-02": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06": {
    "deps_hash": "565bcb1b1148",

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/bravyi_kitaev_superfast_pi_flux_sign_class_finite_cubic_graph_check_2026_09_02.py
+runner_sha256: f982e3249ef7056816fe215d5d9459eaedbd858a94842fcee2a8bb6c1ea5af1d
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.37
+status: ok
+----- stdout -----
+PASS A [exact] A_ji=-A_ij; B_i and S_f are Hermitian involutions; all retained faces commute pairwise and with every B_i
+PASS B [exact] ordered four-hop transport equals S_f with the Z4 phase on every face of the four retained fixtures
+PASS C [exact] every face relation has product +I and even support, and each all-minus face-incidence system is solvable
+PASS D [exact] the B_j-B_i factor equals 2 on every enumerated legal cube hop
+PASS E [exact] explicit (+,+,+) torus Wilson data and all-minus faces yield an edge-by-edge gauge witness to the declared staggered sign pattern on all fixtures
+PASS F [numerical, rtol=0, atol=1e-9] sorted unrounded one-particle spectra agree; max absolute error 6.217e-15
+PASS G [exact] open cube face rank=5 gives all-minus sector dimension 2^(12-5)=128; star rank=7 gives 128 even-parity B syndromes
+PASS H [numerical, basis norm threshold=1e-12, rtol=0, atol=1e-11] deterministic projected all-minus cube basis is complete, encoded hopping is Hermitian, and its spectrum matches the 128-level even-parity free spectrum; max error 1.510e-14
+PASS I [mutations] transport phase, face incidence, three Wilson signs, one edge sign, one omitted stabilizer, and both spectral targets are rejected
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----

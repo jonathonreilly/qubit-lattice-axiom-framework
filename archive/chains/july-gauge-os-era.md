@@ -174,3 +174,20 @@ ARCHIVE_DESIGN_20260831.md; every row carries a one-line science summary (attack
 the standing owner decision surface is flagged here and in its row; and
 the six programs' open walls are recorded above so any future reopening
 starts from the era map, not from scratch.
+
+
+## Live-continuation correction (2026-09-05, supervisor verification)
+
+This memo (following LIVE_SURFACES at the freeze) named the TOE
+axiom-closure lane's "alphabet-exclusion blocks" as the live continuation
+of the realized-alphabet chirality question. Verified against the lane's
+actual August notes: that is a NAME COLLISION. The August lane's
+"alphabets" are record OUTCOME alphabets (the 4/12/20-outcome
+inconsistency-rank diagnostics of the Dirac-Kahler arc), and its
+"orientation bit terminated" note (2026-08-24) is the DK frame/generation
+bit ((s_x, s_t) flips, X_0 grading) - zero contact with Psi9, A0, or the
+axis-sign presentation gauge. As of 2026-09-05 NO live lane works the A0
+unpaired-orbit residual; the structuralist owner surface stands open with
+nothing currently consuming it, and the M4(C) Qubit-domain proposal (opus
+packet R133, at the owner's bar) sits upstream of any ruling - enlarging
+the domain would redo the Cl(3,0) flip/invariant-theory analysis.

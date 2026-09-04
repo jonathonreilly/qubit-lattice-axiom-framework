@@ -1,2 +1,5 @@
 # HANDOFF — u1-maxwell-landing-core-20260905 (campaign start 2026-09-04T21:04+00:00)
 State: block 01 launched (sol primary drafting the landing core + meta note + ledger). Supervisor: this session; independent sol checker for quote fidelity against inputs/. Next: review, checker, conformance gate, PR off main; then block 02 from the ledger ranking.
+
+# DEGRADED WORKER MODE (2026-09-04T21:32+00:00): the gpt-5.6-sol seats died at the codex account usage limit (reset Sep 6 22:27); block continues on Fable worker seats (single-family) under the workhorse robustness conditions: refuting checker on disjoint machinery, mutation probes, supervisor hand-verification; independence class = cross-context; disclosed in the note/receipt/PR. Sol narration salvaged to specs/SALVAGE_sol_primary_narration.md as untrusted draft input.
+# WORKER PROFILE UPDATE (owner 2026-09-05): Opus 5 seats permitted for physics work conditional on supervisor checking; profile = Fable primary + Opus blind/refuting seats (cross-model within family) + supervisor line-by-line.

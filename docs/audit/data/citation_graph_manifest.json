@@ -4402,10 +4402,6 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
-  "emergent_3d_fermion_one_qubit_per_site_superlattice_role_pattern_existence_bounded_theorem_note_2026-09-02": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
-  },
   "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08": {
    "deps_hash": "e2d87f54ff22",
    "out_degree": 8
@@ -4751,6 +4747,10 @@
    "out_degree": 0
   },
   "fine_h_family_universality_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "finite_bksf_sign_and_superlattice_marker_census_bounded_theorem_note_2026-09-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

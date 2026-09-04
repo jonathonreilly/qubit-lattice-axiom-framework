@@ -1,9 +1,9 @@
 ---
-claim_id: emergent_3d_fermion_one_qubit_superlattice_existence
+claim_id: finite_bksf_sign_and_superlattice_marker_census_bounded_theorem_note_2026-09-02
 claim_type: bounded_theorem
 claim_scope: "Finite declared-model result: exact Pauli calculations verify Bravyi-Kitaev superfast-encoding relations, stabilizer ranks, bounded string-operator syndromes, and fermionic-sign diagnostics on the named open cubic blocks and tori; a separate 5x5x5 diagonal marker constraint has the enumerated finite-torus zero sets; a separate 2D Pauli rule has the reported finite charge-class sign table; and a bounded unit-cube census has the reported representative counts, common-zero witnesses, and finite-window mobility counts. These results do not construct one framework Admissibility law, couple the marker sectors to the fixed BKSF embedding, supply state preparation or dynamics, or establish an infinite-volume particle or phase."
 upstream_dependencies: []
-runner: scripts/emergent_3d_fermion_one_qubit_per_site_superlattice_role_pattern_existence_check_2026_09_02.py
+runner: scripts/finite_bksf_sign_and_superlattice_marker_census_check_2026_09_02.py
 ---
 
 # Finite BKSF fermionic-sign checks and a separate superlattice marker census
@@ -14,9 +14,9 @@ runner: scripts/emergent_3d_fermion_one_qubit_per_site_superlattice_role_pattern
 **Status:** proposed_retained
 **Status authority:** effective status is pipeline-derived after independent audit ratification and dependency closure. This source sets no audit verdict.
 **Primary runner:**
-[`scripts/emergent_3d_fermion_one_qubit_per_site_superlattice_role_pattern_existence_check_2026_09_02.py`](../scripts/emergent_3d_fermion_one_qubit_per_site_superlattice_role_pattern_existence_check_2026_09_02.py)
+[`scripts/finite_bksf_sign_and_superlattice_marker_census_check_2026_09_02.py`](../scripts/finite_bksf_sign_and_superlattice_marker_census_check_2026_09_02.py)
 **Runner cache:**
-[`logs/runner-cache/emergent_3d_fermion_one_qubit_per_site_superlattice_role_pattern_existence_check_2026_09_02.txt`](../logs/runner-cache/emergent_3d_fermion_one_qubit_per_site_superlattice_role_pattern_existence_check_2026_09_02.txt)
+[`logs/runner-cache/finite_bksf_sign_and_superlattice_marker_census_check_2026_09_02.txt`](../logs/runner-cache/finite_bksf_sign_and_superlattice_marker_census_check_2026_09_02.txt)
 
 This note retains exact finite computations and separates them from their physical interpretation. It studies four declared objects: a fixed-coordinate BKSF encoding, a diagonal marker constraint, a two-dimensional Pauli rule, and a bounded three-dimensional unit-cube census. The runner does not assemble those objects into one framework law.
 
@@ -149,7 +149,7 @@ In the declared `2x2x2` generator-cell block with margin 3, the 21 representativ
 ## Operational meaning and claim boundary
 
 - **Fermion.** Here the word refers only to the `-1` value of the imported Levin-Wen/reordered-string operational diagnostic for the displayed endpoint operators. It does not assert a continuum fermion, relativistic field, spin representation, canonical anticommutation relations for physical site operators, or a thermodynamic quasiparticle.
-- **Emergent.** The computation does not derive the BKSF structure dynamically. BKSF is chosen as an encoded even-fermion algebra. “Emergent” is therefore not part of the retained theorem.
+- **Emergent.** BKSF is a declared imported encoding rather than a dynamical output. The retained theorem is limited to that encoded finite model.
 - **One qubit per site.** The ambient construction places at most one qubit on each fine site; BKSF actively uses the fixed coarse-edge subset. Eight fine sites per coarse-cell volume is geometric bookkeeping, not an active-qubit cost, density theorem, or minimum.
 - **Locality and covariance.** BKSF operators are finite-support operators in a coordinate-fixed embedding. The marker constraint directly reads a `5x5x5` window. Marker symmetrisation includes three orientations, but the runner does not test covariance of the ordered BKSF operators under proper cubic rotations or select/couple one of the 48 marker sectors. No nearest-neighbour framework rule is supplied.
 - **Gauge/stabilizer assumptions.** Face stabilizers, Wilson loops, the fixed global parity sector, and the imported encoding are declared inputs. Their finite ranks are computed; their physical realization and preparation are not.

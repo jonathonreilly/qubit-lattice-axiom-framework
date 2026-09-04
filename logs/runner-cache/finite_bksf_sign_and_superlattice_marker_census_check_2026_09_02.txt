@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
-runner: scripts/emergent_3d_fermion_one_qubit_per_site_superlattice_role_pattern_existence_check_2026_09_02.py
-runner_sha256: 0bbff04a9da3eca721cfbfc2ba293234f196896fce9dbd1a45eaff431e318b54
+runner: scripts/finite_bksf_sign_and_superlattice_marker_census_check_2026_09_02.py
+runner_sha256: 1bf303351daa46d4952da16c1f052d1ec3ac02a89631172814d526fef85a5e47
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 51.00
+elapsed_sec: 50.56
 status: ok
 ----- stdout -----
 PASS A1 [exact] BK superfast on the coarse lattice 2Z^3 in Z^3, qubits on coarse edge sites, vertex order -x<-y<-z<+x<+y<+z: R0-R4 and prod_i B_i = +I hold on open 3x3x3 54A/36F, periodic 3x3x3 81A/81F

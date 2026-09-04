@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finite BKSF sign witness and separate superlattice marker census.
+"""Finite BKSF sign checks and separate superlattice marker census.
 
 Class-A finite computation.  The runner studies declared finite Pauli models
 in an ambient fine cubic lattice with one qubit at each available site.  It

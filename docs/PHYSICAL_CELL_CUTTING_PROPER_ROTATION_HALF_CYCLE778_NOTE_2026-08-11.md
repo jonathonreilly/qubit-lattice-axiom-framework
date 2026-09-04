@@ -207,8 +207,8 @@ and gains an orbit label, the cover side loses its holder and becomes free.
   bijections between them, and any orientation-reversing map exchanges the two-orbit decomposition.
   Four local label candidates were tested — sorted determinant sign, count of even-parity corners,
   corner index sum parity, and total coordinate sum parity — and none is invariant under the action or
-  constant on either orbit. This finite negative control is not an exhaustive invariant search and does
-  not establish a no-go or a named wall.
+  constant on either orbit. This finite rejection control is limited to those four functions; broader
+  invariant classifications are outside the target.
 
 ## Honest auditor read
 
@@ -245,8 +245,8 @@ audit verdict.
   certificate, reconciled the lattice-context wording, supplied the import and proof contracts, and
   narrowed the claimed relationship between the census and equivariant-map routes to their independently
   established common cardinality.
-- The four failed label candidates remain a bounded mutation-style control; no exhaustive negative or
-  no-go conclusion is retained.
+- The four tested label functions remain bounded rejection controls; the retained conclusion is only
+  their computed non-invariance.
 - The exact immutable reviewed head and landing SHA are recorded in the PR review comment because a
   commit cannot contain its own hash.
 - Independent audit of claim

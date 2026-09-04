@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/record_projective_history_local_append_downstream_law_candidate_2026_08_21.py
-runner_sha256: 19575350176e358ca5cec746e83975b425ea19cbcbabab343ef1376944ceb2a2
+runner_sha256: dc2763e15c6b1f3b94d3bdba6fda92e6b47810662cff22c86e096d1ed5729144
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.23
+elapsed_sec: 3.52
 status: ok
 ----- stdout -----
 N5_RESOLUTION per_element: exact 2x2 endpoint branch P_1 P_0 P_1=0 and both 4x2 typed-writer block identities are tested; no general event-weight selection is claimed.

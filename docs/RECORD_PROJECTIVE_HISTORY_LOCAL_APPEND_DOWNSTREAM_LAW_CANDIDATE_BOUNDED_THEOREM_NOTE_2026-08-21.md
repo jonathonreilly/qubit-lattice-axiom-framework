@@ -43,6 +43,26 @@ Cached primary and independent receipts:
 [`logs/runner-cache/record_projective_history_local_append_downstream_law_candidate_2026_08_21.txt`](../logs/runner-cache/record_projective_history_local_append_downstream_law_candidate_2026_08_21.txt),
 [`logs/runner-cache/record_projective_history_local_append_downstream_law_candidate_independent_check_2026_08_21.txt`](../logs/runner-cache/record_projective_history_local_append_downstream_law_candidate_independent_check_2026_08_21.txt)
 
+## Machine Status And Trace
+
+~~~yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+claim_type_reason: "The note proves exact finite-dimensional consequences only after the four sector-Law fields and each invoked benchmark datum are supplied; it does not derive their physical selection or calibration."
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "Submit the finite conditional theorem to independent audit, then seek a physical selection, calibration, and nearest-neighbour carrier theorem for the four supplied kernel fields."
+conditional_surface_status: "exact finite algebraic consequences conditional on four owner-selected sector-Law fields and the explicitly invoked benchmark data"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+~~~
+
 ## Result Up Front
 
 The shortest honest positive quantum/Record package is now small enough to
@@ -121,6 +141,58 @@ contents count as the registered event. The history-functional row then says
 what mass that event receives. Keeping those rows separate prevents a pointer
 from silently becoming an outcome and prevents the trace rule from being
 called a theorem of the axioms.
+
+## Imported Inputs And Provenance
+
+The word *input* below means a premise or fixture used by this conditional
+result, not a result derived by the note. Role, provenance, and the remaining
+bridge are kept separate.
+
+| Input | Role in this packet | Provenance | Open bridge or limitation |
+|---|---|---|---|
+| Minimal Axioms and realized-state primitive | framework meaning of sites, local possibilities, Record permanence/readout, and pointwise reference to a supplied realized member | landed framework authorities named under Direct authority dependencies | neither authority selects the finite event map, weights, composite rule, or actual member |
+| finite-dimensional complex matrix algebra, tensor products, trace cyclicity, and rank-one projector identities | textbook proof machinery for equations (1)--(12) | standard finite-dimensional linear algebra; no specific external source or numerical table is imported | no physical calibration or probability-selection principle follows from this machinery |
+| supported binary one-qubit projective domain | selected domain of the conditional theorem | provisional owner selection documented by this note; no in-repo derivation is asserted | physical domain selection and extension beyond this finite category remain open |
+| candidate Record-event map | associates a typed program/outcome with matching projector content | provisional owner selection documented by this note | independent physical calibration remains open |
+| trace/Lüders history functional | supplies conditional cylinder weights | provisional owner selection documented by this note; not derived from the framework axioms | a physical selector or representation theorem remains open |
+| local tensor-product composite-cylinder rule | supplies the joint two-wing measure whose one-site values are marginals | provisional owner selection documented by this note | derivation from a complete nearest-neighbour Record condition and extension to other composite events remain open |
+| preparation operators and the four-block packet | exact one- and two-qubit benchmark data and one finite serialization | supplied exact runner fixtures; no empirical fit or physical-preparation provenance is used | packet registration, genesis, renewal, and a physical preparation mechanism remain open |
+| positive cadence parameter `gamma` and memoryless competing-hazard form | finite process-consistency benchmark | supplied symbolic fixture; no measured rate or clock calibration is used | formation site, physical rate law, and clock meaning remain open |
+| common causal layer, fresh targets, and append resources | finite confluence benchmark | supplied fixture geometry and resource availability | physical causal construction, allocation, collision handling, and scaling remain open |
+| contingent history coordinate | names two example realized members while holding the Law table fixed | supplied test datum; the realized-state primitive supplies no coordinate or selector | origin and physical selection of the realized member remain open |
+
+The observational-comparator, fitted-value, measured-value, and
+literature-derived numerical inventories are empty. In particular,
+`sqrt(2)`, the cylinder weights, the Bell table, and the resource counts are
+derived exactly from the displayed fixtures rather than imported as values.
+
+## Exact Target, Proof Obligations, And Boundary
+
+**Exact target.** Conditional on the four sector-Law fields in section 1A and
+on only the benchmark data invoked by a given check, prove the stated finite
+writer, cylinder, product, marginal, singlet, packet, append, cadence, and
+actual-member properties without promoting any supplied field to a framework
+derivation.
+
+| Obligation | Disposition | Evidence and preserved hypotheses |
+|---|---|---|
+| select the event domain, candidate event map, trace/Lüders functional, and composite-cylinder rule | **supplied, not proved** | section 1A and the import inventory; these four fields are the conditional premise |
+| typed writer and endpoint exclusion | **proved here** | for orthogonal complete rank-one projectors, `W^dagger W=P_0+P_1=I`, `Q_jW=WP_j`, and `P_1P_0P_1=0`; both runners reconstruct the identities |
+| positive, normalized, prefix-consistent finite cylinders | **proved here** | if `sigma_h` is positive semidefinite, then `P_a sigma_h P_a` is positive semidefinite; trace cyclicity and `sum_a P_a=I` make child traces sum to the parent trace, and finite induction preserves the result on supported prefixes |
+| identity sensitivity, product reduction, and one-site marginals | **proved here** | the identity channel preserves off-diagonal coherence while the displayed dephasing channel removes it; tensor-product traces factor; summing a remote complete projector menu inserts the remote identity |
+| singlet no-signalling and CHSH value | **proved here on the displayed four-setting fixture** | direct reduction gives `mu(a,b;x,y)=(1-a*b*(n_x·n_y))/4`, hence each one-site marginal is `1/2`, the four correlations are `-1/sqrt(2),-1/sqrt(2),-1/sqrt(2),+1/sqrt(2)`, and `S=-2*sqrt(2)` |
+| packet reconstruction, disjoint append confluence, hazards, and two example members | **executed finite benchmarks** | block reassembly is an entrywise identity; disjoint site-map updates commute; `sum_a lambda_ha=gamma` follows from normalized weights; the runners check the declared fixtures and their hostile mutations |
+| derive a physical probability/Record Law from the framework | **open and outside the theorem** | the strongest missing result is a physical selection-and-carrier theorem deriving the selected event map, extensional weights, and composite rule from calibrated complete nearest-neighbour Record conditions |
+
+The proved boundary includes positive normalized one- and two-qubit
+preparations, finite supported prefixes, binary rank-one one-qubit menus,
+commuting local tensor-product two-wing cylinders, zero-weight children that
+are never used as conditioning denominators, the displayed singlet packet,
+and `gamma>0`. It excludes conditioning on a zero-trace prefix, arbitrary
+entangled two-qubit events, POVMs, noncommuting composite events, infinite or
+continuum histories, a derived nearest-neighbour Admissibility carrier,
+physical event calibration, packet genesis, formation dynamics, and selection
+of the actual member. Those exclusions are boundaries, not no-go results.
 
 ## 2. Probability-Free Writer Module
 
@@ -440,7 +512,7 @@ Its search status is `partial-attempt-with-named-untested-routes`.
 | realized-state selector | the approved realized-state reference | pointwise evaluation at the member supplied by history | derive a member-selection or probability rule | `ATTEMPTED` | The route attempts to use the realized-state primitive as the selector or weighting rule. It does not close: [Realized-State Primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) expressly supplies no state, selector, measure, weighting, probability rule, normalization, or contingent value. |
 | controlled-writer algebra | the typed candidate writer `W`, output blocks `Q_j`, and projectors `P_j` | isometry and typed-sector intertwining | derive registered event masses from endpoint algebra | `ATTEMPTED` | The route attempts to promote `W†W=I`, `Q_jW=WP_j`, and the zero opposite branch into a probability-selection theorem. It does not close: section 2 proves only probability-free endpoint algebra, while the Minimal Axioms memo leaves numerical probability rules downstream. |
 | local-append composition | site-keyed ledgers and two commuting one-site append maps | locality, permanence, and order confluence | derive the nonfactorizing global trace cylinder from local Admissibility | `ATTEMPTED` | The route attempts to infer the global Bell coupling from the two local physical appends. It does not close: section 5 supplies the joint cylinder separately, and the Minimal Axioms memo says Admissibility is not a dynamics axiom and does not supply transition-weight values. |
-| finite executable promotion | the twelve exact finite checks in the primary runner | exhaustive evaluation of the declared fixtures and mutation sensitivity | turn finite consistency checks into a premise derivation | `ATTEMPTED` | The route attempts to promote the runner's finite certificates into a derivation of their inputs. It does not close: the runner declares that it checks consistency and does not derive its inputs, and [Proof Search Governance](ai_methodology/skills/physics-loop/references/proof-search-governance.md) forbids promoting computation beyond the theorem or exhaustive domain that makes it decisive. |
+| finite executable promotion | the twelve exact finite checks in the primary runner | exhaustive evaluation of the declared fixtures and mutation sensitivity | turn finite consistency checks into a premise derivation | `ATTEMPTED` | The route attempts to promote the runner's finite certificates into a derivation of their inputs. It does not close: the runner declares that it checks consistency and does not derive its inputs, and the proof-search rule in `docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md` forbids promoting computation beyond the theorem or exhaustive domain that makes it decisive. |
 
 The operational-corpus, W9 refinement, action/current/equilibrium,
 collapse/SUV, and hidden-seed possibilities remain untested counterroutes.
@@ -482,7 +554,8 @@ advertised as a separately independent wall.
 | Front matter, Result Up Front, section 1A, the section-1 narrative, and section 2: event `registration`, `event-registration`, `registered event`, or `registers` | Explicit load-bearing selected condition already included in `W_K`; it is not represented as retained-derived authority. | No new wall; pairwise table unchanged. |
 | Front matter, section 1B, and section 4: packet `registration` | Explicit benchmark condition already included in `W_B`. | No new wall; pairwise table unchanged. |
 | Section 8: `registered Record-event` | Explicit candidate map and open physical calibration already included in `W_K` and `W_B`, respectively. | No new wall; pairwise table unchanged. |
-| Front matter and sections 8--9: approved-primitive `registration`, `explicitly registered`, `registry`, and `canonical axiom memo` | Cited foundation/governance context: [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md), [Realized-State Primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md), and [Primitive Registry Check](ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md). These phrases do not supply any additional scientific premise. | Non-load-bearing context; no new wall. |
+| Front matter and sections 8--9: approved-primitive `registration`, `explicitly registered`, `registry`, and `canonical axiom memo` | Cited foundation context: [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md) and [Realized-State Primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md); methodology provenance: `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. These phrases do not supply any additional scientific premise. | Non-load-bearing context; no new wall. |
+| Both runners and both cached receipts: `event registration`, `registered outcome`, `registered program`, `registered finite Record prefixes`, and related emitted labels | Executable names and output descriptions test the explicitly supplied candidate map. They neither import a new scientific premise nor represent that map as retained-derived authority. | No new wall; pairwise table unchanged. |
 | Occurrences inside this N3 inventory | Self-referential scan vocabulary only. | Non-load-bearing context. |
 
 No hits were found for `we assume`, `by construction`, `as is standard`,
@@ -584,6 +657,32 @@ route-exhaustive negative. No such negative ships. The source retains only:
 
 The negative-search classification is
 `partial-attempt-with-named-untested-routes`.
+
+## Review Record
+
+The pre-review formulation was narrowed before landing. The surviving source
+drops physical-calibration language for the candidate event map, arbitrary
+two-qubit event scope, unconditional Admissibility compatibility,
+implementation-search closure, and every universal or route-exhaustive no-go.
+It retains only the four-field conditional finite kernel, its exact
+consequences, the explicitly supplied benchmark fixtures, and the
+packet-local documentary statement reviewed through N1--N8.
+
+The surviving scope ends at the finite domains and exclusions in the proof
+boundary above. In particular, the review does not supply the physical
+selection, calibration, nearest-neighbour carrier, genesis, formation,
+resource, time, or actual-member bridges.
+
+Outstanding at landing as hard landing conditions:
+
+1. both runner sources and their fresh content-pinned caches land together,
+   and the independent runner remains attached to the restricted audit packet
+   without being imported or executed at runtime by the primary runner;
+2. the generated citation-graph manifest is rebuilt on the integrated tree
+   and records exactly the two intended foundation dependencies; and
+3. the validation pipeline discovers this claim ID as `bounded_theorem`,
+   keeps its audit status `unaudited`, attaches both runners, and leaves no
+   generated ledger, queue, or effective-status output in the source commit.
 
 ## Verification
 

@@ -28,6 +28,9 @@ from typing import Iterable
 import sympy as sp
 
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 I2 = sp.eye(2)
 O2 = sp.zeros(2)
 X = sp.Matrix([[0, 1], [1, 0]])

@@ -19,3 +19,5 @@ ROUTE_PORTFOLIO.md sweep, REVIEW_HISTORY.md V1-V5 + conformance record. Findings
 redundant (5 from 1,3,4,7+OL; 4 from 1,3,5,6,7); the sampling identification of the dynamics with Admissibility is dissipative;
 the residual is payload+OL, time rule, locality (IP-B), conservation. Not pushed; PR to be opened by the supervisor stacked on
 block 01 after the checker seat. Proposed weaving (later review): none.
+
+Pipeline gate: pipeline exit=0 (2026-09-05, HEAD cb7e75702b); generated outputs restored. Block 02 complete on the worker side; not pushed.

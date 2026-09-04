@@ -110,3 +110,6 @@ Gate: PASS on V2-V5; V1 answered honestly as upstream support, not closure (the 
   launched after these commits — exit code recorded below when it completes.
 Independence class disclosed: single family (Fable primary), cross-context (hand derivations against the exhaustive runner);
 refuting checker seat not yet run — disposition `pending` in CLAIM_STATUS_CERTIFICATE.md.
+
+## 2026-09-05 — block 02 pipeline gate
+`bash docs/audit/scripts/run_pipeline.sh` on the committed tree (HEAD cb7e75702b): pipeline exit=0; the new row `u1_dynamics_class_axiom_adjudication_bounded_note_2026-09-05` is seeded by the pipeline; generated audit surfaces restored to HEAD before this commit (tree clean).

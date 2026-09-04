@@ -1,0 +1,25 @@
+slug: u1-maxwell-landing-core-20260905
+block: 1
+branch: physics-loop/u1-maxwell-landing-core-block01-20260905
+base_commit: e249016f75 (origin/main)
+mode: campaign
+runtime: 12h
+start_time: "2026-09-04T21:04+00:00"
+target_stop_time: "2026-09-05T09:04+00:00"
+checkpoint_interval: 30m
+deep_block: 90m
+target_status: best-honest-status
+lock: "shared with the gravity-weighted-kernel campaign (scripts/automation_lock.py owner=physics-loop ttl=13h)"
+cycle: 1
+active_route: block 01 = landing core + supplied-input ledger (meta); block 02 selected from the ledger ranking
+approach_family_coverage: [G1 class-restriction derivation unexplored, G2 time-selection fork unexplored, G3 3D photon dispersion exponent unexplored, G4 germ-from-Record-overlap partially covered by #7886/#7887]
+strongest_unresolved_proof_obligation: "which supplied input of the #7917 class restriction is derivable from the tick/Record structure"
+hard_residual: "the 3D photon: quadratic (pure spin-half) vs linear (finite detuning) — is the Maxwell photon a supplied detuning or a derived object?"
+files_touched: [pack files, inputs/]
+open_imports: [declared link roles; supplied Record overlap law; declared generator class; supplied detuning]
+no_go_routes: [see NO_GO_LEDGER.md]
+trace_class: upstream_support
+review_findings: none yet
+pr_status: not opened
+next_exact_action: "sol primary drafts LANDING_CORE.md + the meta note + the supplied-input ledger per specs/block01_primary.md; supervisor reviews; sol checker refutes quote-fidelity"
+stop_condition: "runtime exhausted, or corollary/value-gate exhaustion documented in OPPORTUNITY_QUEUE.md"

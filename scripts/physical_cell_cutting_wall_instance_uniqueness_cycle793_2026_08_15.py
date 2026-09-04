@@ -3,8 +3,9 @@
 Standalone exact runner. Standard library only, no file input or output, no randomness, integer and exact rational arithmetic only.
 
 The preamble rebuilds the declared finite object from the 16 corners of the unit four-cube: the five-corner unit-determinant pieces, the
-adjacency cost floor, the kept pieces at that floor, the exact 24-piece cuttings, the used pieces, the order-384 group of signed coordinate
-maps of the cell, and the sixteen-letter facet alphabet on the two slots of axis zero. Nothing outside that finite object enters any gate.
+adjacency cost floor, the kept pieces at that floor, the exact 24-piece covers of the declared shifted finite sample, the used pieces, the
+order-384 group of signed coordinate maps of the cell, and the sixteen-letter facet alphabet on the two slots of axis zero. These sampled
+covers are called cuttings only as finite-object labels; no continuous-geometric tiling statement enters any gate.
 
 The previous cycle linearized every fiber: rows are the two-orbits of the 400 kept pieces under that fiber's fold, the fold-held cuttings
 are weight-twelve vectors on the rows that occur, and the exact cover condition is an all-ones linear system whose solution set is one coset

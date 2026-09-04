@@ -35,8 +35,21 @@ Runner: [physical_cell_cutting_wall_instance_uniqueness_cycle793_2026_08_15.py](
 
 The declared finite object is the one this lane has carried throughout: the 16 corners of the
 unit four-cube, the 2672 five-corner unit-determinant pieces built on them, the 400 that survive
-at the adjacency-cost floor 6, the 15800 cuttings of 24 pieces each that those 400 assemble into,
-the 192 pieces occurring in at least one cutting, and the 384 signed coordinate maps of the cell.
+at the adjacency-cost floor 6, the 15800 exact 24-piece covers of the declared shifted finite
+sample, the 192 pieces occurring in at least one cover, and the 384 signed coordinate maps of the
+cell. In this note, *cutting* is only the established finite-object label for one of those sample
+covers. Continuous-geometric tiling is not imported, claimed, or needed by the theorem.
+
+| item | classification | role |
+| --- | --- | --- |
+| labelled corners `{0,1}^4` | supplied finite-model data | Define the unit four-cube vertex set. |
+| determinant-one five-corner subsets | supplied selection rule | Define the candidate pieces. |
+| adjacency cost and its minimum | supplied selection rule | Select all 400 minimizing pieces. |
+| axis-shifted `5^4` rational sample and simplex masks | supplied enumeration convention | Define the finite coverage universe and each piece's sampled interior. |
+| size-24 exact sample covers | supplied definition | Define the 15,800 objects called cuttings in this packet. |
+| signed coordinate maps and facet-letter pairs | supplied finite actions and labels | Define the cell action, interface matrix, 48 fibers, and folds. |
+| finite sets, Hamming weight, exact cover, and linear algebra over `GF(2)` | standard mathematics | Define and verify the fiber systems, invariants, and equivalences. |
+
 The pair of tetrahedral letters on the two slots of axis zero, drawn from a 16-letter alphabet,
 gives the interface matrix of trace 2000 with exactly 48 entries equal to 36. Each of those 48
 fibers holds 36 cuttings and is held setwise by exactly 2 of the 384 maps. Its nontrivial holder
@@ -61,10 +74,41 @@ labellings and gated here to carry one coset weight census, are one instance car
 different labellings of its 40 rows. If they are, the parity question the lane is chasing stops
 being a question about 48 systems and becomes a question about one.
 
-These are finite-scope object choices, not imported physical primitives. Every integer below is
-recomputed by the linked runner from that object alone: it rebuilds the object from the corner
-list before any gate runs, uses the standard library only, performs no file input or output and no
-randomness, and gates each recomputed value against the value stated here.
+These are supplied finite-scope definitions, not imported physical primitives. Every integer
+below is recomputed by the linked runner from that object alone: it rebuilds the object from the
+corner list before any gate runs, uses the standard library only, performs no file input or output
+and no randomness, and gates each recomputed value against the value stated here. There are no
+empirical, fitted, literature, framework-axiom, physical, or continuous-geometric inputs.
+
+## Exact target and obligation graph
+
+**Exact target.** For the declared finite sample-cover object, prove that all 48 fiber systems
+are coordinate-isomorphic to the sample; that the sample-to-fiber equivalences have exactly two
+induced block-bijection classes and 42,467,328 coordinate lifts; and that the one specifically
+declared perturbed block system is not equivalent to the sample.
+
+The proof obligations are acyclic and every closed node is recomputed here:
+
+1. `P0` (supplied leaves): bind the finite vertex set, selection rules, shifted sample, exact-cover
+   definition, signed cell action, and facet labels listed above.
+2. `P1` (proved by G1-G3 from `P0`): enumerate the finite population, fibers, folds, held blocks,
+   point-row systems, ranks, kernels, and cosets.
+3. `P2` (proved by G4-G7 from `P1`): establish the common censuses and profiles, the exact
+   difference spans and affine hulls, and that the 14 blocks are exactly the minimum-weight coset
+   members at every fiber.
+4. `P3` (proved in the equivalence lemma from `P2`): show that a coordinate equivalence induces a
+   block bijection and that every accepted block bijection lifts to coordinate equivalences
+   carrying the kernel, blocks, and coset.
+5. `P4` (proved by G8 from `P3`): exhaust the block-bijection search and explicitly verify one
+   coordinate lift for every target.
+6. `P5` (proved by G9 from `P3` and `P4`): enumerate both quotient classes, count all
+   within-pattern lifts, and verify the nontrivial induced block action on those two classes.
+7. `P6` (proved by G10 using the same search as `P4`): reject only the specifically declared
+   perturbed control.
+
+No proof node cites an external authority. The strongest open next lemma is an intrinsic reason
+for the even minimum-weight count 14; neither that parity explanation nor a wider family result
+is claimed here.
 
 ## The law
 
@@ -150,9 +194,10 @@ sample. No assertion is made about other perturbations or a family of controls.
 The equivalence classes say nothing yet about why the census has an even minimum-weight count.
 Nothing here derives the count 14, its parity, or either census; what is established is that
 there is a single object to ask the question of. All of the above are computational identities of
-the declared unit four-cube object, its 15800 cuttings, and the order-384 symmetry group of the
-cell. No physical, dynamical, or lattice-wide identification is claimed, no continuum limit is
-taken, and nothing here is asserted about cell-cutting systems outside the declared object.
+the declared finite sample-cover object and its order-384 signed-coordinate action. No claim that
+the sample covers are continuous-geometric tilings is made; no physical, dynamical, continuum, or
+lattice-wide identification is claimed; and nothing is asserted about systems outside the
+declared object.
 
 ## Next entrance
 
@@ -169,12 +214,15 @@ involution on one set of 14.
 - Rows are the two-orbits of the 400 kept pieces under each fiber's own fold, and blocks are that
   fiber's fold-held cuttings written as row sets. Both conventions are fixed before any
   computation runs, and every invariant statement is made for all 48 fibers, not for a chosen one.
+- Cutting is a finite-object label for a size-24 exact cover of the declared shifted sample; no
+  continuous-geometric tiling property is used by this packet.
 - The search is a real backtracking search over block bijections that returns NOT FOUND when no
   equivalence exists, and the control at G10 calls the same entry point and does return NOT FOUND.
   No witness is derived from its target: each witness is constructed from a found block bijection
   and then verified by explicit image on kernel, blocks and coset.
-- The completeness of the block-level search rests on the lemma stated above, whose span input is
-  regated at G7 as a set equality of 256 with 256 at all 48 fibers rather than carried over.
+- The completeness of the block-level search rests on the lemma stated above. G7 regates both its
+  inputs at all 48 fibers: the exact minimum-weight-member set and the span equality of 256 with
+  256, rather than carrying either over.
 - The runner prints censuses, counts and profiles; the incidence matrices, the row lists, the
   kernel vectors and the coordinate bijections are not printed, so the note quotes censuses and
   identities instead.

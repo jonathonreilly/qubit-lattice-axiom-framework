@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_wall_instance_uniqueness_cycle793_2026_08_15.py
-runner_sha256: 7f1d63043ac642b97209ec1965e503d22ffe8a75cc9f05e753443d86a02d0098
+runner_sha256: dadb6929c3a895877c3d26fb1ada8394277f4dc3277d1f0e678335bbd2540ad1
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 11.37
+elapsed_sec: 15.95
 status: ok
 ----- stdout -----
 PASS G1 2672 pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, cell group 384, 16 letters, trace 2000, 48 entries at 36

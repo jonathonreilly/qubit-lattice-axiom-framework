@@ -19,6 +19,9 @@ from typing import TYPE_CHECKING, Iterable
 import sympy as sp
 
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 # Static audit-packet binding only.  The independent reconstruction must not be
 # imported or executed by this primary runner, but its source must accompany
 # the primary in a restricted audit packet.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/record_projective_history_local_append_downstream_law_candidate_independent_check_2026_08_21.py
-runner_sha256: a86b9138ce721a47c3237dcf414ea129cae1be4201de61fbd87044d8a2390b08
+runner_sha256: 6b488c2214dcdfb317e8b169869cf935ca372a9bab71425224075beeee85bcfc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.17
+elapsed_sec: 2.14
 status: ok
 ----- stdout -----
 [PASS] typed writer and both endpoint exclusions: W*W=I and Q_j W=W P_j for j=+,-

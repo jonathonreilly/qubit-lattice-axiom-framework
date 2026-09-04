@@ -1,50 +1,30 @@
 #!/usr/bin/env python3
-"""The emergent dictionary reproduces the three-dimensional selection-rule zeros.
+"""Finite edge-qubit parity dictionary and occupation-probability zeros.
 
-Class-A finite-cluster runner. Qubits sit on the EDGE sites of three finite
-graphs; the sites compose ordinarily (tensor product, operators on disjoint
-regions commute, no graded clause anywhere). A parity dictionary reads vertex
-occupancy off the edge records,
+This class-A runner checks one supplied, fixed-order superfast encoding on
+three named open graphs.  Its mathematical dictionary is the incidence map
 
-    n_i = (1 - B_i) / 2,      B_i = product of the Z's on the edges at vertex i,
+    q(y)_i = (1-B_i)/2 = sum_(e in star(i)) y_e mod 2.
 
-so the readout at a vertex is a condition on the records of that one vertex's
-incident edges. The runner establishes, on the 2x2x2 cube graph (8 vertices,
-12 edges), the 3x3 grid graph (9 vertices, 12 edges) and the 3x3 grid with one
-pendant auxiliary mode at vertex 0 (10 vertices, 13 edges):
+The edge-qubit basis, encoding, dictionary, Hamiltonian, vertex order, sectors,
+and boundary conditions are inputs.  The runner checks their finite algebraic
+consequences. Framework Record semantics, physical lattice embedding, emergent
+matter, cubic-symmetry representations, and selection rules are outside scope.
 
-  A  ENCODING.  The Bravyi-Kitaev superfast relations R0-R4 for
-         A_ij = X(edge ij) * prod Z(edges ordered before it at i and at j),
-         A_ji = -A_ij,   B_i = the product of the Z's incident to i,
-         S_f  = the ordered product of the A's around a face,
-     the face relations, the stabilizer group, and the code dimension
-     2^(V-1); prod_i B_i = +I identically, so the dictionary registers an even
-     record number only, which is why an odd target needs a pendant mode.
-  B  UNIT GAUGE.  An exact diagonal gauge D with entries in {1, i, -1, -i}
-     with D H_enc D^dag = H_F entrywise, H_F the Jordan-Wigner matrix of the
-     same nearest-neighbour law on the same occupation patterns. Spectra and
-     record statistics therefore agree at every coupling, exactly.
-  C  ZEROS AT g = 0.  The record statistics recomputed independently from
-     exact Slater determinants over Q(sqrt2), and the exact zero sets.
-  D  PERSISTENCE.  A numerical witness at g != 0: agreement to 1e-12, equal
-     zero sets, ground-state simplicity, and the zeros that survive.
-  E  FIBRES.  Each vertex pattern carries a constant fibre of 2^k edge
-     patterns, and every edge pattern over a zero is exactly zero.
-  F  SIGN STRUCTURE.  Every off-diagonal amplitude in the edge-record basis is
-     exactly +i or -i, split evenly, with the closed form
-         sign(y) = s_e * (-1)^{|y & Z(A_ij B_i)|},
-     the Z-support lying inside star(i) U star(j); and the gauge-invariant
-     four-cycle flux of the configuration graph.
-  G  CONTROL.  The bare edge-flip law with X_e in place of A_ij leaves the
-     code space, and on what it does preserve it is gaugeable to a uniform -1
-     on a connected configuration graph, so Perron-Frobenius makes its record
-     statistics strictly positive with no zero at any coupling.
+  A  Pauli relations, face-stabilizer ranks, code dimensions, and incidence
+     parity on the cube, 3x3 grid, and grid-plus-pendant graphs.
+  B  Exact D^dag H_enc D = H_F for a diagonal fourth-root phase D.
+  C  Exact free-point Slater probabilities and classified zero sets, after a
+     complete exact one-particle eigenbasis/spectrum check.
+  D  Tolerance-qualified numerical scans at g in {0, 0.5, 1, 2}.
+  E  Constant fibres of the incidence map.
+  F  Fixed-basis hop phases, two-endpoint-star support, and four-cycle flux.
+  G  A separate finite bare-edge-flip control and its positive ground vector.
 
-Groups A, B, C, E, F, G are exact: Pauli algebra in the symplectic
-representation with phases mod 4, Gaussian-integer amplitudes, rational and
-Q(sqrt2) arithmetic over Fraction. Group D and the confirming line of group G
-are floating-point witnesses and are labelled [numerical]. Every line is
-tagged [exact] or [numerical].
+Groups A, B, C, E, F, and the structural part of G use finite integer,
+F2/Z4, Gaussian-integer, rational, or Q(sqrt2) arithmetic. Group D and the
+final control line are floating-point witnesses. Every line is tagged
+[exact] or [numerical].
 
 Output: one PASS/FAIL line per check and a final `TOTAL: PASS=N FAIL=M`.
 Exit code 0 iff FAIL = 0.
@@ -199,6 +179,14 @@ def s2_det(M):
     return det if sgn > 0 else det.neg()
 
 
+def s2_inner(u, v):
+    """Exact real inner product in Q(sqrt2)."""
+    out = S0
+    for a, b in zip(u, v):
+        out = out + a * b
+    return out
+
+
 # ==================================================================== clusters
 
 def grid_cluster(nr, nc):
@@ -284,8 +272,8 @@ class Enc:
             out = out * self.A(cyc[a], cyc[(a + 1) % n])
         return out
 
-    def record(self, z):
-        """The parity dictionary: n_i = (1 - B_i)/2 read off the edge record."""
+    def occupation(self, z):
+        """Incidence parity q(y)_i = (1-B_i)/2 for an edge-basis string."""
         return tuple(pcnt(z & self.STARMASK[i]) % 2 for i in range(self.V))
 
     def hop_pauli(self, i, j):
@@ -377,17 +365,17 @@ def code_space(E, R):
             cid[b] = c
             phi[b] = a
     assert (cid >= 0).all()
-    recs = [E.record(reps[c]) for c in range(len(reps))]
+    occs = [E.occupation(reps[c]) for c in range(len(reps))]
     for y in range(E.DIM):
-        assert E.record(y) == recs[cid[y]]
-    return cid, phi, reps, recs
+        assert E.occupation(y) == occs[cid[y]]
+    return cid, phi, reps, occs
 
 
-def sector_matrix(E, R, cid, phi, reps, recs, keep, HE):
+def sector_matrix(E, R, cid, phi, reps, occs, keep, HE):
     """Exact H_enc on the code space, rows and columns the kept cosets."""
     k = R["k"]
     grp = R["grp"]
-    sel = [c for c in range(len(reps)) if keep(recs[c])]
+    sel = [c for c in range(len(reps)) if keep(occs[c])]
     pos = {c: a for a, c in enumerate(sel)}
     n = len(sel)
     Hoff = np.zeros((n, n), dtype=complex)
@@ -396,8 +384,8 @@ def sector_matrix(E, R, cid, phi, reps, recs, keep, HE):
     stats = {"pos": 0, "neg": 0}
     for c in sel:
         a = pos[c]
-        rec = recs[c]
-        bond[a] = sum(1 for (u, v) in HE if rec[u] and rec[v])
+        occ = occs[c]
+        bond[a] = sum(1 for (u, v) in HE if occ[u] and occ[v])
         for g in grp:
             y, ay = pact(g, reps[c])
             assert abs(phi[y] - ay) < 1e-12
@@ -462,7 +450,7 @@ def gauge_match(Hs, Hf):
         return None
     e = [None] * n
     for root in range(n):
-        if e[root] is not None:
+        if isinstance(e[root], int):
             continue
         e[root] = 0
         st = [root]
@@ -490,14 +478,14 @@ def tree_gauge(H):
     n = H.shape[0]
     val = {(a, b): unit_index(H[a, b]) for a in range(n) for b in range(n)
            if a != b and abs(H[a, b]) > 1e-9}
-    assert all(v is not None for v in val.values())
+    assert all(isinstance(v, int) for v in val.values())
     adj = {a: [] for a in range(n)}
     for (a, b) in val:
         adj[a].append(b)
     e = [None] * n
     ncomp = 0
     for root in range(n):
-        if e[root] is not None:
+        if isinstance(e[root], int):
             continue
         ncomp += 1
         e[root] = 0
@@ -575,6 +563,20 @@ def s2_adj_check(V, EDGES, orb, ev):
     return True
 
 
+def full_spectrum_check(V, EDGES, orbs, evs, expected):
+    """Certify a complete orthonormal adjacency eigenbasis and multiplicities."""
+    if len(orbs) != V or len(evs) != V:
+        return False
+    if not all(s2_adj_check(V, EDGES, orb, ev) for orb, ev in zip(orbs, evs)):
+        return False
+    for i in range(V):
+        for j in range(V):
+            if s2_inner(orbs[i], orbs[j]) != (S1 if i == j else S0):
+                return False
+    got = {ev: sum(1 for q in evs if q == ev) for ev in set(evs)}
+    return got == expected
+
+
 def slater(patterns, orbs):
     """Exact Slater amplitudes: det of the occupied rows of the orbital matrix."""
     N = len(orbs)
@@ -605,6 +607,25 @@ ORB_G3 = [prod_orb([W1, W1]), prod_orb([W1, W2]), prod_orb([W2, W1])]
 EV_G3 = [S2(0, 2), S2(0, 1), S2(0, 1)]
 ORB_GP = [o + [S0] for o in ORB_G3] + [[S0] * 9 + [S1]]
 
+CUBE_FULL = []
+CUBE_FULL_EV = []
+for modes in itertools.product(((O2, S1), (M2, S2(-1))), repeat=3):
+    CUBE_FULL.append(prod_orb([mode[0] for mode in modes]))
+    CUBE_FULL_EV.append(reduce(lambda a, b: a + b, [mode[1] for mode in modes], S0))
+
+GRID_FULL = []
+GRID_FULL_EV = []
+for modes in itertools.product(((W1, S2(0, 1)), (W2, S0), (W3, S2(0, -1))), repeat=2):
+    GRID_FULL.append(prod_orb([mode[0] for mode in modes]))
+    GRID_FULL_EV.append(reduce(lambda a, b: a + b, [mode[1] for mode in modes], S0))
+
+CUBE_SPECTRUM_OK = full_spectrum_check(
+    VC, EC, CUBE_FULL, CUBE_FULL_EV,
+    {S2(3): 1, S2(1): 3, S2(-1): 3, S2(-3): 1})
+GRID_SPECTRUM_OK = full_spectrum_check(
+    VG, EG, GRID_FULL, GRID_FULL_EV,
+    {S2(0, 2): 1, S2(0, 1): 2, S0: 3, S2(0, -1): 2, S2(0, -2): 1})
+
 LINES = set()
 for r in range(3):
     LINES.add(tuple(3 * r + c for c in range(3)))
@@ -619,10 +640,10 @@ CASES = {}
 def build(tag, E, keep, HE, orbs, evs, E0, ndesc):
     """Encoding audit, code space, sector matrix, gauge, exact ground state."""
     R = audit(E)
-    cid, phi, reps, recs = code_space(E, R)
+    cid, phi, reps, occs = code_space(E, R)
     sel, pos, Hoff, bond, stats, exact, mx = sector_matrix(
-        E, R, cid, phi, reps, recs, keep, HE)
-    pats = [recs[c] for c in sel]
+        E, R, cid, phi, reps, occs, keep, HE)
+    pats = [occs[c] for c in sel]
     n = len(sel)
     fidx, T, D = fermi_sector(HE, pats)
     order = [fidx[p] for p in pats]
@@ -651,7 +672,7 @@ def build(tag, E, keep, HE, orbs, evs, E0, ndesc):
               for t in range(len(vals))]
     ctxt = ", ".join("%s x%d" % kv for kv in counts)
     orth = all(s2_adj_check(E.V, HE, orbs[t], evs[t]) for t in range(len(orbs)))
-    CASES[tag] = dict(E=E, R=R, cid=cid, phi=phi, reps=reps, recs=recs, sel=sel,
+    CASES[tag] = dict(E=E, R=R, cid=cid, phi=phi, reps=reps, occs=occs, sel=sel,
                       pos=pos, Hoff=Hoff, bond=bond, stats=stats, exact=exact,
                       mx=mx, T=T, D=D, d=d, pats=pats, n=n, prob=prob,
                       zeros=zeros, counts=counts, nrm=nrm, eig=eig,
@@ -682,14 +703,15 @@ def group_A():
               R["R0"] and R["R1"] and R["R2"] and R["R3"] and R["R4"]
               and R["grp_ok"] and len(rel) == nrel
               and R["code_dim"] == (1 << (E.V - 1)))
-    par = all(sum(CASES[t]["E"].record(y)) % 2 == 0
+    par = all(sum(CASES[t]["E"].occupation(y)) % 2 == 0
               for t in ("cube", "grid", "pend")
               for y in range(CASES[t]["E"].DIM))
-    inj = all(len(set(CASES[t]["recs"])) == len(CASES[t]["recs"])
+    inj = all(len(set(CASES[t]["occs"])) == len(CASES[t]["occs"])
               for t in ("cube", "grid", "pend"))
-    check("A4 [exact] prod_i B_i = +I identically: n_i = (1-B_i)/2 registers an EVEN "
-          "record number on all %d/%d/%d edge patterns, and is injective on the %d/%d/%d "
-          "code states, so an odd target needs the pendant mode"
+    check("A4 [exact] prod_i B_i = +I: q(y)_i=(1-B_i)/2 maps all %d/%d/%d edge "
+          "strings to even occupations and maps the %d/%d/%d face-stabilizer cosets "
+          "bijectively onto all even occupation strings; the declared odd-grid sector "
+          "uses a fixed occupied pendant"
           % (ENC_C.DIM, ENC_G.DIM, ENC_GP.DIM, C["R"]["code_dim"],
              G["R"]["code_dim"], Pd["R"]["code_dim"]),
           all(CASES[t]["R"]["prodB"].is_id() for t in ("cube", "grid", "pend"))
@@ -702,13 +724,13 @@ def group_B():
     for t, (tag, dim) in enumerate((("cube", 70), ("grid", 84), ("pend", 84))):
         res = CASES[tag]
         d = res["d"]
-        ok = (d is not None and res["exact"] and res["n"] == dim
+        ok = (not (d is None) and res["exact"] and res["n"] == dim
               and np.array_equal(res["bond"], res["D"])
               and bool(np.all(np.abs(np.abs(d) - 1) == 0)))
-        nsu = int(np.sum(np.abs(d.imag) > 0.5)) if d is not None else -1
+        nsu = -1 if d is None else int(np.sum(np.abs(d.imag) > 0.5))
         check("B%d [exact] %s %s: dim %d, diagonals equal the fermionic bond counts, "
               "2^%d H_enc a Gaussian-integer matrix of max modulus %d, and a unit gauge "
-              "D (%d of %d entries in {i,-i}) gives D H_enc D^dag = H_F"
+              "D (%d of %d entries in {i,-i}) gives D^dag H_enc D = H_F"
               % (t + 1, res["E"].name, res["ndesc"], res["n"], res["R"]["k"],
                  res["mx"], nsu, res["n"]), ok)
 
@@ -717,11 +739,13 @@ def group_B():
 
 def group_C():
     C, G, Pd = CASES["cube"], CASES["grid"], CASES["pend"]
-    check("C1 [exact] cube N=4 at g=0: orbitals are exact eigenvectors, the Slater "
-          "ground state over Q(sqrt2) has H_F v = -6 v and <v|v> = %s, levels -1 | 1 "
-          "across the cut so it is unique; statistics %s"
+    check("C1 [exact] cube N=4 at g=0: complete orthonormal one-particle spectrum "
+          "3^1, 1^3, (-1)^3, (-3)^1; the Slater ground state over Q(sqrt2) has "
+          "H_F v = -6 v and <v|v> = %s, one-particle-energy gap -1 | 1, hence unique; "
+          "statistics %s"
           % (C["nrm"].txt(), C["ctxt"]),
-          C["orth"] and C["eig"] and C["nrm"] == S1 and C["rational"]
+          CUBE_SPECTRUM_OK and C["orth"] and C["eig"]
+          and C["nrm"] == S1 and C["rational"]
           and C["counts"] == [("0", 12), ("1/64", 56), ("1/16", 2)])
     faces, pairs, other = [], [], []
     for p in C["zeros"]:
@@ -740,21 +764,26 @@ def group_C():
           % (len(C["zeros"]), C["n"], len(faces), len(pairs), len(other)),
           len(C["zeros"]) == 12 and len(faces) == 6 and len(pairs) == 6 and not other)
     got3 = {tuple(i for i, b in enumerate(p) if b and i < 9) for p in Pd["zeros"]}
-    check("C3 [exact] grid3x3+pendant N_grid=3 at g=0: H_F v = -4 sqrt2 v, <v|v> = %s, "
-          "levels -sqrt2 | 0; statistics %s; the %d zeros are exactly the 3 rows, "
-          "3 columns, 2 diagonals"
+    check("C3 [exact] grid3x3+pendant at fixed n_aux=1, N_grid=3, g=0: complete grid "
+          "spectrum (2sqrt2)^1, (sqrt2)^2, 0^3, (-sqrt2)^2, (-2sqrt2)^1; "
+          "H_F v = -4 sqrt2 v, <v|v> = %s, occupied/empty gap -sqrt2 | 0, hence "
+          "unique in the fixed-auxiliary sector; statistics %s; the %d zeros are "
+          "exactly the 3 rows, 3 columns, 2 diagonals"
           % (Pd["nrm"].txt(), Pd["ctxt"], len(Pd["zeros"])),
-          Pd["orth"] and Pd["eig"] and Pd["nrm"] == S1 and Pd["rational"]
+          GRID_SPECTRUM_OK and Pd["orth"] and Pd["eig"]
+          and Pd["nrm"] == S1 and Pd["rational"]
           and got3 == LINES
           and Pd["counts"] == [("0", 8), ("1/256", 12), ("1/128", 32),
                                ("1/64", 20), ("1/32", 8), ("9/256", 4)])
     got6 = {tuple(i for i, b in enumerate(p) if b) for p in G["zeros"]}
     comp = {tuple(sorted(set(range(9)) - set(l))) for l in got3}
-    check("C4 [exact] grid3x3 N=6 on the 12-qubit code at g=0: H_F v = -4 sqrt2 v, "
-          "<v|v> = %s, levels 0 | sqrt2, the same value multiset; its %d zeros are "
-          "exactly the complements of the N_grid=3 zeros, the particle-hole image"
+    check("C4 [exact] grid3x3 N=6 on the 12-qubit code at g=0: complete spectrum as "
+          "in C3; H_F v = -4 sqrt2 v, <v|v> = %s, occupied/empty gap 0 | sqrt2, "
+          "hence unique; the same value multiset; its %d zeros are exactly the "
+          "complements of the N_grid=3 zeros, the particle-hole image"
           % (G["nrm"].txt(), len(G["zeros"])),
-          G["orth"] and G["eig"] and G["nrm"] == S1 and G["rational"]
+          GRID_SPECTRUM_OK and G["orth"] and G["eig"]
+          and G["nrm"] == S1 and G["rational"]
           and got6 == comp and G["counts"] == Pd["counts"])
 
 
@@ -791,10 +820,10 @@ def group_D():
         keep[tag] = (rows, persist)
         ok = all(r[1] < 1e-12 and r[5] == r[6] and r[3] == 1 and r[4] == 1
                  for r in rows)
-        check("D%d [numerical, 1e-12] %s %s at g in {0, 0.5, 1, 2}: encoded and fermionic "
-              "statistics agree to L1 <= %.1e, zero counts %s identical, ground simple "
-              "throughout, smallest gap %.6f"
-              % (t + 1, res["E"].name, res["ndesc"], max(r[1] for r in rows),
+        check("D%d [numerical, 1e-12] %s %s at g in {0, 0.5, 1, 2}: encoded and reference "
+              "occupation statistics agree to L1 < 1e-12, threshold-zero counts %s "
+              "identical, ground simple throughout, smallest sampled gap %.6f"
+              % (t + 1, res["E"].name, res["ndesc"],
                  "/".join(str(len(r[5])) for r in rows),
                  min(r[2] for r in rows)), ok)
     pc_, pg_, pp_ = (keep["cube"][1], keep["grid"][1], keep["pend"][1])
@@ -802,9 +831,9 @@ def group_D():
     gg = {tuple(i for i, b in enumerate(CASES["grid"]["pats"][a]) if b) for a in pg_}
     pp = {tuple(i for i, b in enumerate(CASES["pend"]["pats"][a]) if b and i < 9)
           for a in pp_}
-    check("D4 [numerical, 1e-12] zeros surviving every g in {0.5, 1, 2}: cube %d of %d, "
-          "the whole g=0 set; grid3x3 %d of %d at N_grid=3, exactly the four lines "
-          "through the centre, and %d of %d at N=6, their complements"
+    check("D4 [numerical, 1e-12] threshold-zeros present at every sampled nonzero g: "
+          "cube %d of %d from g=0; grid3x3 %d of %d at N_grid=3, exactly the four "
+          "lines through the centre, and %d of %d at N=6, their complements"
           % (len(pc_), len(CASES["cube"]["zeros"]), len(pp_),
              len(CASES["pend"]["zeros"]), len(pg_), len(CASES["grid"]["zeros"])),
           len(pc_) == 12 and pp == CENTRE_LINES and gg == cl6)
@@ -822,9 +851,9 @@ def group_E():
         ok = (bool(np.all(sizes == fib))
               and bool(np.all(np.abs(np.abs(res["phi"]) - 1) == 0))
               and nz + len(res["zeros"]) == res["n"])
-        check("E%d [exact] %s: |phi(y)| = 1 on all %d edge records, every coset holds "
-              "exactly 2^%d = %d, so the probability is P(pattern)/%d on the fibre; "
-              "%dx%d = %d in the sector, %dx%d = %d over a zero, all exactly 0"
+        check("E%d [exact] %s: |phi(y)| = 1 on all %d edge strings, every coset holds "
+              "exactly 2^%d = %d, so the probability is P(occupation)/%d on the fibre; "
+              "%dx%d = %d in the sector, %dx%d = %d over an exact g=0 zero"
               % (t + 1, E.name, E.DIM, R["k"], fib, fib, res["n"], fib,
                  res["n"] * fib, len(res["zeros"]), fib, len(res["zeros"]) * fib), ok)
 
@@ -832,14 +861,22 @@ def group_E():
 # ==================================================================== group F
 
 def sign_form(E, HE):
-    """sign(y) = s_e * (-1)^{|y & Z(A_ij B_i)|}, Z-support in star(i) U star(j)."""
+    """Check the nonzero-hop sign formula and its exact endpoint-star support."""
     inside = True
     okform = True
+    one_star = 0
+    two_star_required = 0
+    nonzero_cases = 0
     for (i, j) in HE:
         A = E.A(i, j)
         P1 = A * E.B(i)
         P2 = A * E.B(j)
-        inside = inside and (P1.z & ~(E.STARMASK[i] | E.STARMASK[j])) == 0
+        this_inside = (P1.z & ~(E.STARMASK[i] | E.STARMASK[j])) == 0
+        this_one = ((P1.z & ~E.STARMASK[i]) == 0
+                    or (P1.z & ~E.STARMASK[j]) == 0)
+        inside = inside and this_inside
+        one_star += int(this_one)
+        two_star_required += int(this_inside and not this_one)
         s_e = None
         for y in range(E.DIM):
             b1, a1 = pact(P1, y)
@@ -847,12 +884,13 @@ def sign_form(E, HE):
             amp = 0.5j * (a1 - a2)
             if amp == 0:
                 continue
+            nonzero_cases += 1
             s = int(round(amp.imag))
             pred = (-1) ** (pcnt(y & P1.z) % 2)
             if s_e is None:
                 s_e = s * pred
             okform = okform and (s == s_e * pred)
-    return inside, okform
+    return inside, okform, one_star, two_star_required, nonzero_cases
 
 
 def group_F():
@@ -861,12 +899,15 @@ def group_F():
         E = res["E"]
         st = res["stats"]
         tot = st["pos"] + st["neg"]
-        inside, okform = sign_form(E, res["HE"])
-        check("F%d [exact] %s: all %d off-diagonal edge-basis amplitudes are exactly "
-              "+i or -i, split %d/%d; Z(A_ij B_i) sits inside star(i) U star(j), and "
-              "sign(y) = s_e (-1)^{|y & Z(A_ij B_i)|} on all %d records"
-              % (t + 1, E.name, tot, st["pos"], st["neg"], E.DIM),
-              inside and okform and st["pos"] == st["neg"] and st["pos"] > 0)
+        inside, okform, one, both, nz = sign_form(E, res["HE"])
+        check("F%d [exact] %s: all %d selected-sector elementary-hop contributions are "
+              "+i or -i, split %d/%d; over all %dx%d edge/string cases, the sign "
+              "formula holds on the %d nonzero cases; Z(A_ij B_i) is inside the two "
+              "endpoint stars, with %d/12 edges fitting one star and %d/12 requiring both"
+              % (t + 1, E.name, tot, st["pos"], st["neg"], len(res["HE"]),
+                 E.DIM, nz, one, both),
+              inside and okform and st["pos"] == st["neg"] and st["pos"] > 0
+              and one == 10 and both == 2 and nz == len(res["HE"]) * E.DIM // 2)
     tc, fc = flux4(CASES["cube"]["Hoff"])
     tcf, fcf = flux4(CASES["cube"]["T"].astype(complex))
     tg, fg = flux4(CASES["grid"]["Hoff"])
@@ -875,7 +916,7 @@ def group_F():
     ncg, meg, cg, _ = tree_gauge(CASES["grid"]["Hoff"])
     check("F3 [exact] four-cycle flux: cube %d of %d carry -1, grid3x3 %d of %d, "
           "identical for H_F (%d/%d, %d/%d); in a spanning-tree gauge %d of %d and %d of "
-          "%d entries stay +1, so no gauge makes either law sign-uniform"
+          "%d entries remain +1"
           % (fc, tc, fg, tg, fcf, tcf, fgf, tgf, cc[0], mec, cg[0], meg),
           (tc, fc) == (tcf, fcf) and (tg, fg) == (tgf, fgf) and fc > 0 and fg > 0
           and cc[0] > 0 and cg[0] > 0 and cc[1] == cc[3] == cg[1] == cg[3] == 0)
@@ -892,15 +933,15 @@ def bare_sector(E, R, keep, HE):
         for s in R["gens"]:
             if not (comm(p1, s) and comm(p2, s)):
                 bad += 1
-    keepz = [y for y in range(E.DIM) if keep(E.record(y))]
+    keepz = [y for y in range(E.DIM) if keep(E.occupation(y))]
     zpos = {y: a for a, y in enumerate(keepz)}
     m = len(keepz)
     H = np.zeros((m, m), dtype=complex)
     D = np.zeros(m)
     for y in keepz:
         a = zpos[y]
-        rec = E.record(y)
-        D[a] = sum(1 for (u, v) in HE if rec[u] and rec[v])
+        occ = E.occupation(y)
+        D[a] = sum(1 for (u, v) in HE if occ[u] and occ[v])
         for (i, j) in HE:
             Xe = P(0, 1 << E.EIDX[(i, j)], 0)
             b1, a1 = pact(Xe * E.B(i), y)
@@ -926,9 +967,9 @@ def group_G():
         Hr = np.real(np.conj(gv)[:, None] * H * gv[None, :])
         BARE[tag] = (keepz, zpos, Hr, D, len(res["pats"]))
         check("G%d [exact] %s control: bare X_e in place of A_ij anticommutes with %d "
-              "of %d (term, generator) pairs, leaving the code space; it conserves the "
-              "record on a %d-dim sector where a gauge makes all %d entries -1, "
-              "%d component"
+              "of %d (term, generator) pairs, mapping some code states outside the "
+              "face-code space; on the separately selected %d-dimensional edge-string sector, "
+              "a gauge makes all %d entries -1 on %d connected component"
               % (2 * t + 1, E.name, bad, npair, len(keepz), ment, ncomp),
               bad > 0 and ncomp == 1 and cnt[2] == ment and cnt[0] == 0
               and cnt[1] == 0 and cnt[3] == 0)
@@ -939,25 +980,24 @@ def group_G():
             pz = (np.abs(V[:, :mm]) ** 2).sum(axis=1) / mm
             pv = {}
             for y in keepz:
-                r = E.record(y)
+                r = E.occupation(y)
                 pv[r] = pv.get(r, 0.0) + pz[zpos[y]]
             rows.append((mm, len(pv), min(pv.values()),
                          sum(1 for q in pv.values() if q < 1e-12)))
-        check("G%d [numerical, 1e-12] %s control on that sector at g in {0, 0.5, 1, 2}: "
-              "ground simple, all %d patterns strictly positive, smallest %.4e, %d exact "
-              "zeros -- the Perron-Frobenius consequence of that gauge"
-              % (2 * t + 2, E.name, rows[0][1], min(r[2] for r in rows),
-                 max(r[3] for r in rows)),
-              all(r[0] == 1 and r[1] == len(res["pats"]) and r[2] > 1e-9 and r[3] == 0
+        check("G%d [numerical, 1e-12] %s control at g in {0, 0.5, 1, 2}: ground "
+              "simple and all %d pushed-forward occupation probabilities exceed 1e-4, "
+              "consistent with the finite Perron-Frobenius positivity lemma"
+              % (2 * t + 2, E.name, rows[0][1]),
+              all(r[0] == 1 and r[1] == len(res["pats"]) and r[2] > 1e-4 and r[3] == 0
                   for r in rows))
 
 
 def main():
     for g in (group_A, group_B, group_C, group_D, group_E, group_F, group_G):
         g()
-    print("SUMMARY: ordinary composition plus a single-vertex parity dictionary "
-          "reproduces the graded selection-rule zeros exactly; the bare edge-flip "
-          "control has none.")
+    print("SUMMARY: the supplied finite edge-qubit encoding and incidence-parity map "
+          "have the checked exact and tolerance-qualified occupation statistics; "
+          "the dictionary, encoding, basis, and finite models are declared inputs.")
     print("TOTAL: PASS=%d FAIL=%d" % (PASS, FAIL))
     return 1 if FAIL else 0
 

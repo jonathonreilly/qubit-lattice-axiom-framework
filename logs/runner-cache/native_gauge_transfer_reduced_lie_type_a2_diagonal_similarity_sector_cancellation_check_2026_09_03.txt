@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_reduced_lie_type_a2_diagonal_similarity_sector_cancellation_check_2026_09_03.py
+runner_sha256: 4dfe3eb9b81b6f69399df256a561fd1d0d50dc0c4573396658d9a4e88ea6f92c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+[Part 1] exact reduced Lie-type A2 polynomial identities
+PASS: R h = (u^2+2xy)/2
+PASS: R q = 3u
+PASS: R(h exp(-q)) = p1 exp(-q)
+PASS: p2 exp(-q) = (1/2)R^2(h exp(-q)) + 3h exp(-q)
+PASS: the residual multiplier is the constant 3
+PASS: [R,L]=0 on a generic bivariate polynomial of total degree at most 8
+PASS: mutation: changing the one-half polynomial coefficient is detected
+PASS: mutation: changing the common residual scalar is detected
+[Part 2] exact finite-dimensional perturbation lemma
+PASS: R is exactly skew-symmetric
+PASS: T1=[R,T0] is exactly symmetric
+PASS: D2=(1/2)[R,[R,T0]] is exactly symmetric
+PASS: T2_diag-D2=3T0 exactly
+PASS: state 0: mixing cancels the diagonal double-commutator term
+PASS: state 1: mixing cancels the diagonal double-commutator term
+PASS: state 2: mixing cancels the diagonal double-commutator term
+PASS: state 3: mixing cancels the diagonal double-commutator term
+PASS: state 4: mixing cancels the diagonal double-commutator term
+PASS: all five unnormalized corrections equal 3 mu_i
+PASS: all five relative corrections equal 3
+PASS: all ten pairwise relative corrections cancel
+PASS: similarity expansion has first coefficient [R,T0]
+PASS: similarity expansion has second coefficient D2
+PASS: mutation: reversing the double-commutator order is detected
+PASS: mutation: reversing the perturbative denominator sign is detected
+PASS: falsifier: a nonuniform diagonal remainder breaks ratio cancellation
+relative corrections: [3, 3, 3, 3, 3]
+control relative corrections: [3, 3, 3, 3, 34/11]
+SUMMARY: exact cancellation for the declared diagonal P2/similarity-sector coefficient; no claim about omitted heat terms or a full second-order saddle coefficient.
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

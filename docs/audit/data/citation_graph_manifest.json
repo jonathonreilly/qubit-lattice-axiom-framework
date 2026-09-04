@@ -1,6 +1,6 @@
 {
  "edge_count": 11859,
- "node_count": 4759,
+ "node_count": 4760,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12109,6 +12109,10 @@
   "native_gauge_transfer_reduced_a2_virial_leading_equality_rung_eighteen_bounded_note_2026-06-12": {
    "deps_hash": "8cbdc7a8b37a",
    "out_degree": 3
+  },
+  "native_gauge_transfer_reduced_lie_type_a2_diagonal_similarity_sector_cancellation_bounded_theorem_note_2026-09-03": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12": {
    "deps_hash": "677a46499c34",

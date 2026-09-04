@@ -1,4 +1,4 @@
-# Physical cell cutting: the mirror atoms of a cutting and the free toggle group behind its class set
+# Physical cell cutting: mirror atoms and the Boolean toggle group of a finite class-set fiber
 
 Date: 2026-08-15
 Authority: none
@@ -6,6 +6,7 @@ Audit: unset
 Status: proposed_retained
 Claim type: bounded_theorem
 Constitutional effect: none.
+Primary runner: [physical_cell_cutting_mirror_atom_toggle_orbit_cycle799_2026_08_15.py](../scripts/physical_cell_cutting_mirror_atom_toggle_orbit_cycle799_2026_08_15.py)
 
 ## Trace gate
 
@@ -26,26 +27,70 @@ Constitutional effect: none.
 - `conditional_surface_status: null`
 - `hypothetical_axiom_status: null`
 - `admitted_observation_status: null`
-- `claim_type_reason: an exact determination, on the declared finite cell, that every one of the 192 used pieces is a five-corner chain whose four steps carry the four axes once each and whose four-letter word is fixed by its start corner and its axis order alone, 192 of 192; that the piece map of the pure fourth-axis flip agrees with the point flip of the sample grid at 192 of 192 used pieces, is an involution with 0 fixed pieces, and sends each chain word to its reversed complement, so that the 96 word classes are blind to it; that the 15800 cuttings fall into 4116 class-set fibers in which every member is the fiber head with a subset of its pieces replaced by their mirrors, 15800 of 15800; that inside every fiber the difference supports are closed under symmetric difference, 4116 of 4116, that every support is a union of least moving parts (atoms) and that the fiber size is two to the atom count, 4116 of 4116, which derives the multiplicity ladder 2, 4, 8, 16 and 64 with counts 2636, 936, 336, 192 and 16 rather than observing it; that the atoms admit a second and independent description as the flip-overlap components of the point masks of one cutting, agreeing with the first at 4116 of 4116 fibers and, over the first 500 fibers and all 2368 of their members, transporting correctly along the toggle, so the atom split is a property of each cutting alone; that the atom-size profiles are exactly six, every atom size divisible by 4, every profile summing to 24, with the induced recount of 15800 cuttings; and that toggling every atom of a fiber head returns its mirror, which is again a cutting at 15800 of 15800 with none fixed; the axis-order census over the 48 walk representations and the single per-cutting ascent census 1, 11, 11 and 1 across the fiber heads are anchored as measured, and no physical or lattice-wide identification is made`
+- `claim_type_reason: an exhaustive exact computation on the declared finite four-cube sample-grid object of the chain-word mirror involution, all 4116 class-set fibers and all 15800 member transports, their Boolean atom decompositions and six measured atom-size profiles, the free mirror action, and the stated measured axis-order and ascent censuses; no physical, continuum, multicell, offset-independent, or frame-independent claim is made`
+- `audit_required_before_effective_retained: true`
+- `bare_retained_allowed: false`
 
-## Inputs and scope
+## Imports, provenance, and scope
 
-The declared finite object is the one this lane has carried throughout: the 16 corners of the unit
-four-cube, the 2672 five-corner unit-determinant pieces built on them, the 400 that survive at the
-adjacency-cost floor 6, the 15800 cuttings of 24 pieces each that those 400 assemble into, the 192
-pieces occurring in at least one cutting, and the 384 signed coordinate maps of the cell. Points are
-counted on the generic sample grid with per-axis offsets 1, 2, 4 and 8, that is 5 values on each of
-the four axes and 625 points in all, written here on the integer scale in which the cell has width
-80. Every count below is recomputed from that rebuild; nothing outside it enters.
+The primary runner is self-contained and imports no ancestral scientific result or repository data
+file. It rebuilds every count below from finite definitions supplied here. Those underivable choices
+are explicit:
 
-The note `PHYSICAL_CELL_CUTTING_PIECE_TAXONOMY_COUNT_LAW_CYCLE798_NOTE_2026-08-15.md` left
-one question sharp. Each of the 192 used pieces is a chain carrying a four-letter word; the class of
-a word is the smaller of the word and its reversed complement; the 192 words are pairwise distinct
-and pair into 96 classes of two; every cutting carries 24 distinct classes; and yet the 15800
-cuttings carry only 4116 distinct class sets, with multiplicities 2, 4, 8, 16 and 64. This note
-derives that ladder. The fibers of the class-set map are the orbits of a free action by toggles, and
-the toggleable units are pinned down twice over, once inside the fiber and once in the point
-geometry of a single cutting, with the two descriptions agreeing everywhere.
+- **Cell and candidate rule.** The 16 binary corners of the unit four-cube, five-corner subsets of
+  absolute determinant one, and the adjacency cost that counts non-edge corner pairs define the
+  candidate object. Their role is definitional; their provenance is this supplied finite model. The
+  minimum cost 6, the 2672 candidates, the 400 minimizers, the 15800 exact 24-piece covers, the 192
+  used pieces, and the 384 signed coordinate maps are recomputed results, not imported values. No
+  open bridge is needed inside this bounded target; correspondence to another cell model is outside
+  it.
+- **Point sample.** The per-axis offsets 1, 2, 4 and 8, five values per axis, and integer width 80
+  define the declared 625-point sample. Their role is to make the point masks and overlap graph
+  finite; their provenance is a supplied sampling convention. No claim of genericity or invariance
+  under other offsets is made, and extension to another sample is open outside this target.
+- **Distinguished mirror.** The pure fourth-axis flip is the supplied involution used in every
+  mirror and overlap statement. Its role and coordinate-frame provenance are explicit. Other axes or
+  frames are not imported as equivalent and remain outside the target.
+- **Bookkeeping conventions.** The smaller-labelled degree-one endpoint orients a chain, the smaller
+  of a word and its reversed complement names its class, and the first enumerated member names a
+  fiber head. These choices fix representatives only. Their provenance is this note, and the
+  all-member transport and full-mirror checks ensure the atom result is not restricted to the chosen
+  head.
+
+No measured, fitted, literature, observational, normalization, boundary-condition, framework-
+primitive, or external physics input enters. In this declared object each of the 192 used pieces is
+a chain carrying a four-letter word; the 192 words pair into 96 mirror classes, every cutting carries
+24 distinct classes, and the 15800 cuttings form 4116 distinct class-set fibers. This note derives
+the Boolean toggle structure behind their measured multiplicities 2, 4, 8, 16 and 64.
+
+## Exact target and proof-obligation graph
+
+**Exact target.** For the declared finite object, prove that every one of the 4116 class-set fibers is
+the free orbit of an elementary abelian two-group whose GF(2) basis is its atom partition; prove that
+the membership-profile atoms of a head equal its flip-overlap components and transport to all 15800
+members; and prove that the full toggle is the fixed fourth-axis mirror, while reporting the exact
+bounded atom-profile, axis-order, and ascent censuses without promoting those measurements to
+general structural laws.
+
+| obligation | status in this note | evidence and preserved hypotheses |
+| --- | --- | --- |
+| Rebuild the finite domain | proved here | The primary runner starts from the 16 supplied corners and fixed sample and gates every object count before using it. |
+| Establish the chain coordinates and word law | proved here | All 192 used pieces are tested; the smaller-endpoint orientation and fixed offsets remain explicit. |
+| Identify the piece mirror with the point flip and reversed-complement word | proved here | All 192 used pieces are checked under the supplied fourth-axis involution, including involution, fixed-point, word, and class conditions. |
+| Identify every class-set fiber member with one support toggle | proved here | All 15800 members are compared with the selected head, with distinct supports and all 24 classes preserved. |
+| Make the supports a Boolean group | proved here | Symmetric-difference closure is checked in all 4116 fibers; the support-to-member map is injective, so the action is free. |
+| Make the membership blocks a GF(2) basis | proved here | Every support is a union of membership-profile blocks and the support count equals the number of all block subsets in all 4116 fibers, so every subset occurs. |
+| Match the independent atom constructions and remove head dependence | proved here | Point-flip overlap and fiber membership share the declared object and head but not a derived partition; equality is checked at every head and transported to all 15800 members. |
+| Establish the full mirror action | proved here | Toggling every atom is checked to be the fixed mirror in every fiber, and all 15800 mirrored cuttings are present with no fixed cutting. |
+| State the profile, axis-order, and ascent values | measured here | Complete finite censuses are decisively gated, but no non-enumerative law selecting their values is claimed. |
+
+The target has no cited-authority leaf and no open proof leaf. Its degenerate cases are exercised:
+one-atom fibers are present, six-atom fibers are present, and fixed pieces or fixed cuttings under the
+mirror are counted as zero rather than assumed away. The strongest missing lemma beyond the target
+is a non-enumerative derivation selecting the six atom-size profiles (including divisibility by 4)
+and the common ascent census across fiber heads. Relative to the target, that is a strictly stronger
+explanatory obligation, not a target-equivalent terminal premise; no completed step relies on it, and
+it remains explicitly open.
 
 ## Chain coordinates and the word law
 
@@ -76,7 +121,7 @@ the untouched pieces still cover the complement of `U` exactly once each, so the
 must cover exactly `U`; but they cover exactly the flip of `U`, forcing the flip of `U` to be `U`.
 Since the mirror keeps every class, such a toggle never moves the class set of a cutting.
 
-## The toggle group of a fiber
+## The Boolean toggle group of a fiber
 
 Grouping the 15800 cuttings by their set of 24 classes gives 4116 fibers. Taking the first member of
 a fiber as its head `A`, every member `B` of that fiber is exactly `A` with the pieces of the
@@ -91,8 +136,9 @@ action is free because a support determines its member.
 
 Partitioning the 24 pieces of the head by their membership profile across all the supports of the
 fiber gives the atoms of that fiber. Every support is then a union of atoms, and the fiber size is
-two to the number of atoms, at 4116 of 4116 fibers: the supports are exactly the unions of atoms and
-nothing else, so the toggle group is free on the atoms. The atom-count census is 1 at 2636 fibers, 2
+two to the number of atoms, at 4116 of 4116 fibers: the supports are exactly the subsets of atoms and
+nothing else, so the toggle group is an elementary abelian two-group with the atoms as a GF(2) basis.
+Its action on the fiber is free. The atom-count census is 1 at 2636 fibers, 2
 at 936, 3 at 336, 4 at 192 and 6 at 16, and raising two to those counts returns 2, 4, 8, 16 and 64
 with exactly the multiplicities of the recomputed ladder. The ladder is therefore derived, not observed: the powers of
 two are the subsets of a basis of independent toggles, and the value 64 is six atoms rather than a
@@ -100,19 +146,20 @@ coincidence.
 
 ## The two routes to the atoms
 
-The atoms have a second description that reads no fiber at all. Take one cutting, join two of its
+The atoms have a second description that reads no fiber data. Take one cutting, join two of its
 pieces whenever the point mask of one meets the flip of the point mask of the other, and take the
 components. This is a statement about the 625 points and the flip alone; it never looks at any other
 cutting, any class, or any support. The components of the head agree with the atoms of its fiber at
-4116 of 4116 fibers. The two routes share no input: one reads only point masks of a single cutting,
-the other only membership profiles across the members of a fiber, and a single mismatch anywhere
-would fail the check.
+4116 of 4116 fibers. Beyond the shared declared finite object and selected head, the constructions
+use independent derived data: one reads point masks and the fixed flip, while the other reads
+membership profiles across the members of a fiber; neither consumes the other's atom partition, and
+a single mismatch anywhere fails the check.
 
-The description also survives transport. Over the first 500 fibers and all 2368 of their members,
+The description also survives transport. Over all 4116 fibers and all 15800 of their members,
 carrying each atom of the head along the toggle, that is replacing its pieces that lie in the
-support by their mirrors, gives exactly the flip-overlap components of the member, 2368 of 2368. So
-the atom split is a property of each cutting on its own, not a privilege of the head, and the fiber
-inherits it rather than defining it.
+support by their mirrors, gives exactly the flip-overlap components of the member, 15800 of 15800.
+Thus each cutting recovers the transported atom split from its own point masks and the fixed flip;
+the result is not restricted to the chosen head.
 
 ## The atom-size profiles
 
@@ -133,7 +180,7 @@ With the mirror lemma this makes the per-cutting ascent census invariant under e
 constant on each of the 4116 fibers. The measured census is the single shape 1, 11, 11 and 1 at all
 15800 cuttings, and only its constancy inside a fiber is derived here.
 
-Two censuses are printed as measurements and gated as nothing. The axis-order census over the 48
+Two censuses are complete measurements and are decisively gated. The axis-order census over the 48
 walk representations of a cutting, each chain read in both directions, takes exactly five shapes,
 with 9368 cuttings at the shape whose 24 axis orders each occur twice, 5664 at the shape of 12
 orders once and 12 orders three times, 552 at 8 orders twice and 8 orders four times, 120 at 12
@@ -149,7 +196,7 @@ every fiber member is checked at all 15800 members, the closure of the supports 
 difference at all 4116 fibers, and the atom law and the size law at all 4116, so the multiplicity
 ladder 2, 4, 8, 16 and 64 is derived from the atom counts. The agreement of the geometric and the
 fiber routes is derived by complete enumeration over all 4116 fibers, and its transport over all
-2368 members of the first 500 fibers. The divisibility of every atom size by 4 and the sum 24 are
+15800 members. The divisibility of every atom size by 4 and the sum 24 are
 verified atom by atom. That the reversed complement preserves the ascent count, and hence that the
 ascent census is constant on a fiber, is derived in prose above and rests only on the mirror lemma.
 
@@ -196,14 +243,14 @@ mirror at all.
 - The mirror lemma is a two-route identity: the piece map is formed from the corner action of the
   flip, the point flip is formed as a permutation of the 625 grid points, and the gate requires the
   masks to agree exactly.
-- The two atom descriptions are computed by disjoint code paths. The geometric path reads only the
-  point masks of one cutting and the point flip; the fiber path reads only membership profiles across
-  the difference supports. Neither is derived from the other, and the gate requires equality of the
-  sorted decompositions, so a single fiber out of place fails it.
+- The two atom descriptions are computed by independent derived-data paths beyond the shared finite
+  object and selected head. The geometric path reads point masks and the point flip; the fiber path
+  reads membership profiles across the difference supports. Neither consumes the other's derived
+  partition, and the gate requires equality of the sorted decompositions, so one mismatch fails it.
 - The multiplicity ladder is never pinned as an input: it is recomputed from the fibers and then
   reproduced a second time by raising two to the measured atom counts, and the two must match.
-- The transport check over every member of the first 500 fibers is what rules out the reading that
-  the atom split is an artifact of the choice of head.
+- The transport check over every member of all 4116 fibers is what rules out restricting the atom
+  split to the chosen head.
 - The exact immutable reviewed head and landing SHA belong in the PR review comment because a commit
   cannot contain its own hash.
 - The new citation-graph node must be regenerated and co-landed with this note.
@@ -219,4 +266,4 @@ The reviewed
 [cache](../logs/runner-cache/physical_cell_cutting_mirror_atom_toggle_orbit_cycle799_2026_08_15.txt)
 belongs beside it and is regenerated by the reviewer. The runner declares an `AUDIT_TIMEOUT_SEC`
 budget, finishes in well under a minute on the reference machine, and stays far below one gigabyte.
-Its final line is `TOTAL: PASS=10 FAIL=0`.
+Its final line is `TOTAL: PASS=12 FAIL=0`.

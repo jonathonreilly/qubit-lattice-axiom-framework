@@ -1,20 +1,18 @@
-"""Cycle 799: the class-set fiber of a cell cutting is the free toggle group on its mirror atoms (finite checks).
+"""Mirror atoms and the Boolean toggle group of a finite cell-cutting class-set fiber.
 
 Standalone exact runner. Standard library only, no file input or output, no randomness, integer and exact rational arithmetic only.
 
-The preamble rebuilds the declared finite object from the 16 corners of the unit four-cube: the five-corner unit-determinant pieces, the
+The preamble rebuilds the declared finite object from the 16 corners of the unit four-cube: the five-corner absolute-determinant-one pieces, the
 adjacency cost floor, the kept pieces at that floor, the exact 24-piece cuttings, the used pieces, and the order-384 group of signed
 coordinate maps of the cell. Nothing outside that finite object enters any gate.
 
-The previous cycle counted the class sets: every used piece is a chain carrying a four-letter word, the class of a word is the smaller of
-the word and its reversed complement, every cutting carries 24 distinct classes, and the 15800 cuttings carry only 4116 distinct class sets
-with multiplicities 2, 4, 8, 16 and 64. This cycle derives that ladder. The mirror map is the pure fourth-axis flip; it sends each chain to
-the chain of the reversed complement word, hence keeps the class, so replacing some pieces of a cutting by their mirrors can leave the class
-set alone. The edits available inside one fiber are shown to form a group under symmetric difference; its least moving parts, the atoms, are
-characterized twice, once by membership profiles across the edits of the fiber and once by flip overlap in the point geometry of a single
-cutting; the two characterizations agree at every fiber and at every member, so the fiber is the free toggle group on the atoms and its size
-is two to the atom count.
-Gates G1 to G10, one line each with a few detail lines, then the measured censuses and the total line. Any failure exits nonzero.
+Every used piece is checked to be a chain carrying a four-letter word; the word class is the smaller of the word and its reversed complement.
+The mirror map is the pure fourth-axis flip. It sends each chain to the reversed-complement word, hence keeps its class. The edits available
+inside a class-set fiber are checked to form an elementary abelian two-group under symmetric difference. Its least moving parts, the atoms,
+are characterized both by membership profiles across the fiber and by flip overlap in the point geometry of one cutting. The constructions
+share the declared finite object and selected cutting but neither consumes the other's atom partition. Agreement is checked at every fiber
+and transported through every member, making the fiber size two to the atom count and the atoms a GF(2) basis of its Boolean toggle group.
+Twelve descriptively named gates are followed by census detail and a total line. Any failed gate exits nonzero.
 """
 
 import itertools
@@ -198,7 +196,7 @@ CSIZE = sorted(set(len(s) for s in SOLS))[0]
 PSIZE = len(set(len(s) for s in SOLS))
 
 P4 = list(itertools.permutations(range(4)))
-G384 = [(p, m) for p in P4 for m in range(16)]
+SIGNED_MAPS = [(p, m) for p in P4 for m in range(16)]
 FLIPD = ((0, 1, 2, 3), 8)
 
 
@@ -236,16 +234,16 @@ def flipbits(m):
 
 FM = dict((t, flipbits(MASK[t])) for t in USED)
 
-# ============================================== G1 the declared cell preamble
+# ============================================== declared finite cell rebuild
 
 gate(len(CAND) == 2672 and FLOOR == 6 and NK == 400 and NS == 15800 and PSIZE == 1 and CSIZE == 24 and NU == 192
-     and len(G384) == 384 and NPTS == 625 and DIV == 80, "G1",
-     "the declared cell rebuilds from the corner list alone: {0} candidates, floor {1}, {2} kept, {3} cuttings of {4}, {5} used, {6} maps"
-     .format(len(CAND), FLOOR, NK, NS, CSIZE, NU, len(G384)))
-emit("G1 detail: the generic grid carries {0} values per axis, {1} points in all, on the integer scale of width {2}, offsets {3}"
+     and len(SIGNED_MAPS) == 384 and NPTS == 625 and DIV == 80, "cell-rebuild",
+     "{0} absolute-det-one candidates; floor {1}; {2} kept; {3} cuttings of {4}; {5} used pieces; {6} maps"
+     .format(len(CAND), FLOOR, NK, NS, CSIZE, NU, len(SIGNED_MAPS)))
+emit("cell-rebuild detail: the declared grid has {0} values per axis, {1} points, integer width {2}, offsets {3}"
      .format(RSTEP, NPTS, DIV, ", ".join("{0}".format(o) for o in OFFS)))
 
-# ============================================== G2 chain coordinates and the word law
+# ============================================== chain coordinates and the word law
 
 
 def edges_of(t):
@@ -319,12 +317,12 @@ for t in USED:
     if WORD[t] == tuple(OFFS[ax] if ((c >> ax) & 1) == 0 else NSHIFT - OFFS[ax] for ax in AXO[t]):
         LAWOK += 1
 
-gate(CHAINOK == NU and AXONE == NU and LAWOK == NU and NU == 192, "G2",
+gate(CHAINOK == NU and AXONE == NU and LAWOK == NU and NU == 192, "chain-word-law",
      "every one of the {0} used pieces is a five-corner chain whose four steps carry the four axes once each, {0} of {0}".format(NU))
-emit("G2 detail: the word law reads each letter off the start corner and the step axis alone, offset {0} up and {1} minus it down, {2} of {2}"
+emit("chain-word-law detail: start corner and step axis give offset {0} up and {1} minus it down, {2} of {2}"
      .format(tshow(OFFS), NSHIFT, LAWOK))
 
-# ============================================== G3 the mirror lemma
+# ============================================== the mirror lemma
 
 MOK = sum(1 for t in USED if MASK[MP8[t]] == FM[t])
 INV = sum(1 for t in USED if MP8[MP8[t]] == t)
@@ -334,13 +332,13 @@ CWOK = sum(1 for t in USED if CW[MP8[t]] == CW[t])
 NCLS = len(set(CW.values()))
 NWRD = len(set(WORD.values()))
 
-gate(MOK == NU and INV == NU and FIX == 0 and RCOK == NU and CWOK == NU and NWRD == NU and NCLS == 96, "G3",
+gate(MOK == NU and INV == NU and FIX == 0 and RCOK == NU and CWOK == NU and NWRD == NU and NCLS == 96, "mirror-lemma",
      "the mirror map on the {0} used pieces is exactly the point flip, {0} of {0}, an involution with {1} fixed pieces".format(NU, FIX))
-emit("G3 detail: the mirror word is the reversed complement at {0} of {0}, so the mirror keeps the class of every chain, {1} classes in all"
+emit("mirror-lemma detail: reversed-complement words agree at {0} of {0}, preserving all {1} classes"
      .format(NU, NCLS))
-emit("G3 detail: the {0} chain words are pairwise distinct, so a class has exactly the two chains of one mirror pair".format(NWRD))
+emit("mirror-lemma detail: {0} distinct chain words give exactly two chains in each mirror-pair class".format(NWRD))
 
-# ============================================== G4 the fibers and the toggle form
+# ============================================== the fibers and the toggle form
 
 FIB = {}
 for i in range(NS):
@@ -366,12 +364,12 @@ LAD = Counter(len(FIB[k]) for k in FKEYS)
 
 gate(NFIB == 4116 and TOGOK == NS and NMEM == NS and sum(k * LAD[k] for k in LAD) == NS
      and all(len(set(SUPS[k])) == len(FIB[k]) for k in FKEYS)
-     and all(len(k) == CSIZE for k in FKEYS), "G4",
-     "the {0} cuttings fall into {1} class-set fibers, and every member is the fiber head with a subset of its pieces replaced by mirrors"
+     and all(len(k) == CSIZE for k in FKEYS), "class-set-fibers",
+     "{0} cuttings form {1} class-set fibers; every member is a unique support toggle of its head"
      .format(NS, NFIB))
-emit("G4 detail: the toggle form holds at {0} of {0} members, and the class-set multiplicity ladder is {1}".format(NS, dshow(LAD)))
+emit("class-set-fibers detail: toggle form holds at {0} of {0}; multiplicities {1}".format(NS, dshow(LAD)))
 
-# ============================================== G5 the supports form a subspace
+# ============================================== the supports form a subspace
 
 SUBOK = 0
 for k in FKEYS:
@@ -387,10 +385,10 @@ for k in FKEYS:
     if ok:
         SUBOK += 1
 
-gate(SUBOK == NFIB and NFIB == 4116, "G5",
+gate(SUBOK == NFIB and NFIB == 4116, "support-closure",
      "inside every fiber the difference supports are closed under symmetric difference, hence a group of toggles, {0} of {0}".format(NFIB))
 
-# ============================================== G6 the atoms and the derived ladder
+# ============================================== the atoms and the derived ladder
 
 
 def atoms_sorted(parts):
@@ -428,11 +426,11 @@ for k in FKEYS:
 ACOUNT = Counter(len(FATOM[k]) for k in FKEYS)
 
 gate(UNIONOK == NFIB and SIZEOK == NFIB and NFIB == 4116
-     and dict(Counter(2 ** a for a in ACOUNT.elements())) == dict(LAD), "G6",
+     and dict(Counter(2 ** a for a in ACOUNT.elements())) == dict(LAD), "boolean-atom-basis",
      "every difference support is a union of fiber atoms and every fiber has size two to its atom count, {0} of {0}".format(NFIB))
-emit("G6 detail: the atom-count census is {0}, and two to those counts is the ladder above".format(dshow(ACOUNT)))
+emit("boolean-atom-basis detail: atom counts {0}; their powers of two reproduce the multiplicities".format(dshow(ACOUNT)))
 
-# ============================================== G7 the two-route atom theorem
+# ============================================== the two-route atom theorem
 
 
 def geo_atoms(s):
@@ -463,16 +461,15 @@ for k in FKEYS:
     if geo_atoms(sorted(SSET[FIB[k][0]])) == FATOM[k]:
         TWOOK += 1
 
-gate(TWOOK == NFIB and NFIB == 4116, "G7",
-     "the geometric atoms of the fiber head equal its fiber atoms at {0} of {0} fibers, two routes that share no input".format(NFIB))
-emit("G7 detail: the geometric route reads only the point masks of that one cutting; the fiber route reads only membership across supports")
+gate(TWOOK == NFIB and NFIB == 4116, "atom-route-agreement",
+     "head geometry and fiber-membership atoms agree at {0} of {0} fibers".format(NFIB))
+emit("atom-route-agreement detail: beyond the shared object and head, neither construction consumes the other's atom partition")
 
-# ============================================== G8 member independence
+# ============================================== all-member transport
 
-NPRE = 500
 MIOK = 0
 MITOT = 0
-for k in FKEYS[:NPRE]:
+for k in FKEYS:
     A = SSET[FIB[k][0]]
     aset = FATOM[k]
     for j in FIB[k]:
@@ -483,11 +480,11 @@ for k in FKEYS[:NPRE]:
         if tr == geo_atoms(sorted(B)):
             MIOK += 1
 
-gate(MIOK == MITOT and MITOT == 2368 and NPRE == 500, "G8",
-     "over the first {0} fibers the transported atoms equal the geometric atoms of every member, {1} of {1}".format(NPRE, MITOT))
-emit("G8 detail: so the atom split is a property of each cutting on its own, carried along by the toggle rather than fixed by the fiber head")
+gate(MIOK == MITOT and MITOT == NS and MIOK == 15800, "all-member-transport",
+     "transported atoms equal the geometric atoms at all {0} members of all {1} fibers".format(MITOT, NFIB))
+emit("all-member-transport detail: each cutting recovers its transported partition from its own point masks and the fixed flip")
 
-# ============================================== G9 the atom-size profiles
+# ============================================== the atom-size profiles
 
 PROF = Counter(tuple(len(a) for a in FATOM[k]) for k in FKEYS)
 DIV4 = all((len(a) & 3) == 0 for k in FKEYS for a in FATOM[k])
@@ -495,13 +492,13 @@ SUM24 = all(sum(len(a) for a in FATOM[k]) == CSIZE for k in FKEYS)
 RECOUNT = sum((2 ** len(p)) * PROF[p] for p in PROF)
 PTARGET = {(24,): 2636, (4, 20): 552, (12, 12): 384, (4, 4, 16): 336, (4, 4, 4, 12): 192, (4, 4, 4, 4, 4, 4): 16}
 
-gate(dict(PROF) == PTARGET and DIV4 and SUM24 and RECOUNT == NS and len(PROF) == 6, "G9",
+gate(dict(PROF) == PTARGET and DIV4 and SUM24 and RECOUNT == NS and len(PROF) == 6, "atom-size-profiles",
      "the atom-size profiles are exactly {0}, every size divisible by {1}, every profile summing to {2}, and the recount is {3}"
      .format(len(PROF), 4, CSIZE, RECOUNT))
 for p in sorted(PROF, key=lambda q: (len(q), q)):
-    emit("G9 detail: profile {0} at {1} fibers, each carrying {2} cuttings".format(tshow(p), PROF[p], 2 ** len(p)))
+    emit("atom-size-profiles detail: {0} at {1} fibers, each with {2} cuttings".format(tshow(p), PROF[p], 2 ** len(p)))
 
-# ============================================== G10 the global mirror
+# ============================================== the global mirror
 
 MIRIN = 0
 MIRFIX = 0
@@ -519,10 +516,10 @@ for k in FKEYS:
     if allat == A and tog in SIDX and tog in set(SSET[j] for j in FIB[k]) and A in set(SSET[j] for j in FIB[k]):
         FULLOK += 1
 
-gate(MIRIN == NS and MIRFIX == 0 and FULLOK == NFIB and NFIB == 4116, "G10",
-     "toggling every atom of a fiber head gives its mirror, a cutting of the same fiber, at {0} of {0}, and no cutting is its own mirror"
-     .format(NFIB))
-emit("G10 detail: the mirror of a cutting is again a cutting at {0} of {0}, with {1} fixed, so the mirror is a free involution on cuttings"
+gate(MIRIN == NS and MIRFIX == 0 and FULLOK == NFIB and NFIB == 4116, "global-mirror-action",
+     "full atom toggle is the same-fiber mirror at {0} of {0} heads; mirror-fixed cuttings: {1}"
+     .format(NFIB, MIRFIX))
+emit("global-mirror-action detail: mirrors are cuttings at {0} of {0}, with {1} fixed; the involution acts freely"
      .format(NS, MIRFIX))
 
 # ============================================== the measured censuses
@@ -535,16 +532,26 @@ for s in SOLS:
         c[tuple(reversed(AXO[t]))] += 1
     SHAPE[tuple(sorted(c.values()))] += 1
 NWALKS = 2 * CSIZE
+SHAPE_TARGET = {
+    (2,) * 24: 9368,
+    (1,) * 12 + (3,) * 12: 5664,
+    (2,) * 8 + (4,) * 8: 552,
+    (4,) * 12: 120,
+    (2,) * 16 + (4,) * 4: 96,
+}
+gate(dict(SHAPE) == SHAPE_TARGET and sum(SHAPE.values()) == NS and NWALKS == 48, "axis-order-census",
+     "the complete {0}-walk axis-order census has the five claimed shapes across all {1} cuttings".format(NWALKS, NS))
 emit("census: over the {0} walk representations of a cutting the axis-order census takes {1} shapes, written as multiplicity: orders"
      .format(NWALKS, len(SHAPE)))
 emit("census: " + ", ".join("{0} at {1}".format(dshow(Counter(sh)), SHAPE[sh])
                            for sh in sorted(SHAPE, key=lambda x: -SHAPE[x])))
 ACEN = Counter(tuple(sorted(Counter(ASC[t] for t in s).items())) for s in SOLS)
-if len(ACEN) != 1:
-    raise ValueError("the ascent census is not a single shape")
-ONE = sorted(ACEN)[0]
+ASCENT_SHAPE = ((0, 1), (1, 11), (2, 11), (3, 1))
+gate(dict(ACEN) == {ASCENT_SHAPE: 15800}, "ascent-census",
+     "the claimed ascent shape occurs at all {0} cuttings and is the only shape".format(NS))
+ONE = ASCENT_SHAPE
 emit("census: the ascent census inside a cutting is {0} at all {1} cuttings, one shape, kept by every toggle"
-     .format(dshow(dict(ONE)), ACEN[ONE]))
+     .format(dshow(dict(ONE)), ACEN.get(ONE, 0)))
 
 emit("TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1]))
 if STAT[1]:

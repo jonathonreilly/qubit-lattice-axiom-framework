@@ -15,7 +15,7 @@ Constitutional effect: none.
 - `source_of_blocker_text: frontier_question`
 - `reachability_to_target: unknown_frontier`
 - `artifact_role: theorem`
-- `next_trace_action: name the action of the canonical instance's single nontrivial symmetry on its 14 held cuttings and read off its cycle structure on the fourteen, since a fixed-point count for an involution on the fourteen has the same parity as the fourteen itself; none is claimed here`
+- `next_trace_action: name the action of the canonical instance's single nontrivial induced block symmetry on its 14 held cuttings and read off its cycle structure on the fourteen, since a fixed-point count for an involution on the fourteen has the same parity as the fourteen itself; none is claimed here`
 
 ## Status contract
 
@@ -26,7 +26,7 @@ Constitutional effect: none.
 - `conditional_surface_status: null`
 - `hypothetical_axiom_status: null`
 - `admitted_observation_status: null`
-- `claim_type_reason: an exact determination, at every wall fiber of the declared finite cell, that the weight census of the fiber's kernel, the column profiles of its kernel and of its coset, and the cover and pairwise-intersection invariants of its fold-held cuttings are single-valued over the fibers; together with a complete backtracking search that exhibits an explicit relabelling of the rows carrying the sample fiber's instance onto every other fiber's instance, verified by explicit image on kernel, blocks and coset; a count of exactly two such relabellings per fiber matching the two symmetries of the sample instance; and an honest rejection of a perturbed control by the same search; no physical or lattice-wide identification`
+- `claim_type_reason: an exact determination, at every wall fiber of the declared finite cell, that the weight censuses of the fiber's kernel and coset, the column profiles of its kernel and of its coset, and the cover and pairwise-intersection invariants of its fold-held cuttings are single-valued over the fibers; together with a complete backtracking search that exhibits an explicit relabelling of the rows carrying the sample fiber's instance onto every other fiber's instance, verified by explicit image on kernel, blocks and coset; a count of exactly two induced block bijections and 42,467,328 coordinate relabellings per fiber; and an honest rejection of a specific perturbed control by the same search; no physical or lattice-wide identification`
 - `audit_required_before_effective_retained: true`
 - `bare_retained_allowed: false`
 
@@ -50,14 +50,15 @@ field with two elements has rank 32 and kernel dimension 8 with all 256 kernel v
 weight, and the 13 differences of the held vectors from the first lie in that kernel and span it,
 so the affine hull of the 14 is the whole 256-element coset of the all-ones system. Everything in
 that list is recomputed here rather than assumed, and regated as G3, with the span statement
-regated in a sharper set-level form as G7. The previous cycle also found the weight census of the
-coset to be the same at all 48 fibers, with its 14 minimum-weight members exactly the 14 held
-cuttings; that census is carried by name here and is not recomputed by this runner.
+regated in a sharper set-level form as G7. The previous cycle also reported the weight census of
+the coset. This runner does not import that result: it recomputes that the coset census is
+single-valued over all 48 fibers and, for the load-bearing completeness lemma below, gates that
+the 14 held cuttings are exactly the coset's weight-12 minimum-weight members at every fiber.
 
-The question this note asks is whether the 48 per-fiber systems, already known to carry one
-coset weight census while being 48 pairwise-distinct labelled objects, are one instance carried
-in 48 different labellings of its 40 rows. If they are, the parity question the lane is chasing
-stops being a question about 48 systems and becomes a question about one.
+The question this note asks is whether the 48 per-fiber systems, presented in 48 fiber-specific
+labellings and gated here to carry one coset weight census, are one instance carried in 48
+different labellings of its 40 rows. If they are, the parity question the lane is chasing stops
+being a question about 48 systems and becomes a question about one.
 
 These are finite-scope object choices, not imported physical primitives. Every integer below is
 recomputed by the linked runner from that object alone: it rebuilds the object from the corner
@@ -83,12 +84,15 @@ randomness, and gates each recomputed value against the value stated here.
   vectors as a set, the 14 held cuttings map onto the target's 14, and all 256 coset members map
   onto the target's 256. All three set equalities hold at 47 of 47.
 
-- **The count is 2.** Enumerating every equivalence rather than the first gives exactly 2 for
-  each of the 47 targets, and the sample instance has exactly 2 symmetries of its own, the
-  identity and one nontrivial involution. The two match for the expected reason and the reason is
-  checked rather than asserted: composing the nontrivial symmetry with either of a target's two
-  equivalences yields the other, at all 47 targets, so composition acts freely and transitively
-  on the equivalence set.
+- **There are 2 induced block bijections and 42,467,328 coordinate relabellings.** Enumerating
+  every induced bijection of the 14 blocks gives exactly 2 for each of the 47 targets and for the
+  sample itself: the identity and one nontrivial involution in the sample case. The sample has 20
+  coordinate-membership classes with multiplicity census `{1: 6, 2: 10, 3: 2, 4: 2}`. For each
+  block bijection, arbitrary bijections inside corresponding equal-pattern classes give
+  `(1!)^6 (2!)^10 (3!)^2 (4!)^2 = 21,233,664` coordinate lifts, hence `42,467,328` coordinate
+  relabellings in total. Composing with the nontrivial induced block symmetry exchanges the two
+  quotient classes at all 47 targets; it is this two-element quotient action, not the full
+  coordinate-equivalence set, on which that symmetry acts freely and transitively.
 
 - **The control is honestly rejected.** A target built from the sample by moving one coordinate
   out of one block and another coordinate into it — the block staying at weight 12, so the object
@@ -106,10 +110,11 @@ span is the kernel, so it carries kernel onto kernel and coset onto coset. Insta
 is therefore exactly equivalence of the 14-block systems, and a search over bijections of the 14
 blocks — with the 40 coordinates classed by their exact membership pattern across the 14 blocks,
 same-pattern coordinates interchangeable, and same-pattern classes required to meet classes of
-equal size — is a complete search, whose images of kernel and of coset depend only on the block
-bijection. The span fact is the previous cycle's; it is gated again here as G7 at all 48 fibers
-in the sharper set-level form, 256 vectors equal to 256 vectors, not an equality of dimension 8
-alone.
+equal size — is a complete search. Each accepted block bijection has the product of the
+factorials of those class sizes as its number of coordinate lifts, while the images of kernel
+and coset depend only on the induced block bijection. Both inputs to the lemma are gated here as
+G7 at all 48 fibers: the 14 blocks are exactly the minimum-weight coset members, and the span is
+a set equality of 256 with 256 rather than an equality of dimension 8 alone.
 
 ## What the wall now asks
 
@@ -118,24 +123,28 @@ on 40 coordinates, whose difference span is the kernel of dimension 8 in which e
 even weight, and whose affine hull is the distinguished coset. Every one of the 48 fibers carries
 that same instance, differing only in the labelling that gives its own 40 occurring two-orbits,
 drawn from the 200 its fold produces, to the 40 coordinates.
-"Why is 14 even" is now a question about one instance carrying one nontrivial symmetry, not a
-question about 48 systems that happen to agree; and the object in which an answer must be found
-has shrunk from 48 cover problems on 400 pieces to one coset problem on 40 coordinates.
+"Why is 14 even" is now a question about one instance carrying one nontrivial induced block
+symmetry, not a question about 48 systems that happen to agree; and the object in which an answer
+must be found has shrunk from 48 cover problems on 400 pieces to one coset problem on 40
+coordinates.
 
 ## Boundary and honest reading
 
 Measured, not derived, at the declared finite scope: the weight census of the kernel; both of
 the column profiles at 128 of 256; the cover profile and the
-pairwise support-intersection census of the 14; the count 2 of equivalences and of symmetries;
-and, above all, the count 14 itself, whose evenness remains measured, not derived.
+pairwise support-intersection census of the 14; the count 2 of induced block bijections; the
+membership-class multiplicities and resulting count 42,467,328 of coordinate relabellings; and,
+above all, the count 14 itself, whose evenness remains measured, not derived.
 
 Derived at the declared finite scope: that instance equivalence is exactly equivalence of the
 14-block systems, by the lemma above, whose span input is regated here at all 48 fibers as a set
 equality; that the sample instance is carried onto every one of the other 47 by an explicit
 relabelling of the 40 coordinates, checked by explicit image on all 256 kernel vectors, the 14
-blocks and all 256 coset members; that the number of such relabellings is exactly 2 at each
-target and equals the number of symmetries of the sample, composition acting freely and
-transitively; and that a one-block perturbation is not equivalent to the sample.
+blocks and all 256 coset members; that the number of induced block bijections is exactly 2 at
+each target, each with 21,233,664 within-pattern coordinate lifts, for 42,467,328 coordinate
+relabellings; that composition by the nontrivial induced sample block symmetry exchanges the two
+quotient classes; and that the specific declared one-block perturbation is not equivalent to the
+sample. No assertion is made about other perturbations or a family of controls.
 
 The equivalence classes say nothing yet about why the census has an even minimum-weight count.
 Nothing here derives the count 14, its parity, or either census; what is established is that
@@ -146,12 +155,13 @@ taken, and nothing here is asserted about cell-cutting systems outside the decla
 
 ## Next entrance
 
-Name the action of the canonical instance's single nontrivial symmetry on its 14 held cuttings.
-That symmetry is now a distinguished finite object rather than one of 48 accidents, and its cycle
-structure on the fourteen is the next thing to read off: a fixed-point count for an involution on
-the fourteen has the same parity as the fourteen itself, so a cycle structure with a named reason
-for its fixed points would carry the parity of 14 directly. Whether the reason exists is not
-claimed here; what is claimed is that the target is now one involution on one set of 14.
+Name the action of the canonical instance's single nontrivial induced block symmetry on its 14
+held cuttings. That block symmetry is now a distinguished finite object rather than one of 48
+accidents, and its cycle structure on the fourteen is the next thing to read off: a fixed-point
+count for an involution on the fourteen has the same parity as the fourteen itself, so a cycle
+structure with a named reason for its fixed points would carry the parity of 14 directly. Whether
+the reason exists is not claimed here; what is claimed is that the target is now one induced
+involution on one set of 14.
 
 ## Review record and boundary
 

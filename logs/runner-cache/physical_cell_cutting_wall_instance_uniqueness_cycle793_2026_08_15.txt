@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_wall_instance_uniqueness_cycle793_2026_08_15.py
-runner_sha256: e4c31755f1c42801940f1dc9515fe195e7424b6c5aed870fee69af912e2a36c8
-timeout_sec: 300
+runner_sha256: 7f1d63043ac642b97209ec1965e503d22ffe8a75cc9f05e753443d86a02d0098
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 19.46
+elapsed_sec: 11.37
 status: ok
 ----- stdout -----
 PASS G1 2672 pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, cell group 384, 16 letters, trace 2000, 48 entries at 36
@@ -21,10 +21,12 @@ PASS G6 the block invariants of the 14 held cuttings take 1 distinct value over 
 G6 detail: the per-coordinate cover profile is {1: 6, 2: 10, 3: 2, 4: 7, 6: 9, 8: 3, 10: 3}, and 168 is 14 times 12
 G6 detail: the pairwise support-intersection census over the 91 pairs is {0: 12, 1: 6, 2: 10, 3: 14, 4: 4, 5: 14, 6: 4, 7: 5, 8: 10, 9: 1, 10: 11}
 PASS G7 at 48 of 48 fibers the span of the 13 differences equals the kernel as a set of 256, and the affine hull of the 14 is the coset
+G7 detail: the coset census takes 1 value, and its weight-12 members are exactly the 14 blocks at all 48 fibers
 PASS G8 a relabelling of the 40 coordinates is found at 47 of the 47 other fibers, each verified on kernel, blocks and coset
 G8 detail: explicit images verify 47 kernel sets of 256, 47 block sets of 14, and 47 coset sets of 256
-PASS G9 exactly 2 relabellings at each of the 47 targets, matching the 2 symmetries of the sample instance, the identity and one involution
-G9 detail: composing the nontrivial symmetry with either relabelling gives the other at 47 of 47 targets, freely and transitively
+PASS G9 exactly 2 block-bijection classes and 42467328 coordinate relabellings at the sample and each of 47 targets
+G9 detail: each block bijection has 21233664 coordinate lifts; pattern-class multiplicities are {1: 6, 2: 10, 3: 2, 4: 2}
+G9 detail: the nontrivial block symmetry exchanges the two quotient classes at 47 of 47 targets
 PASS G10 the control target moves one coordinate out of one block and another in; the same search entry point returns NOT FOUND, 0 found
 G10 detail: coordinate 3 leaves the first block and coordinate 0 enters it, the block staying at weight 12
 TOTAL: PASS=10 FAIL=0

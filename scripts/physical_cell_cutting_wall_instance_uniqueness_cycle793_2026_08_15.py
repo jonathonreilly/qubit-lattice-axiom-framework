@@ -10,15 +10,17 @@ The previous cycle linearized every fiber: rows are the two-orbits of the 400 ke
 are weight-twelve vectors on the rows that occur, and the exact cover condition is an all-ones linear system whose solution set is one coset
 of the kernel. This cycle asks whether the 48 systems are one object. It regates that linear form, gates the further invariants that are
 single-valued over the fibers, runs a complete backtracking search for a relabelling of the rows carrying the sample fiber's instance onto
-each of the others, counts every such relabelling, and checks that a one-block perturbation is honestly rejected. The search is complete at
-the block level because the span of the differences is the kernel as a set, so a bijection of the blocks fixes the images of kernel and
-coset. Gates G1 to G10, one line each with a few detail lines, then the total line. Any failure exits nonzero.
+each of the others, counts every induced block bijection and its coordinate lifts, and checks that a one-block perturbation is honestly
+rejected. The search is complete at the block level because the held blocks are exactly the minimum-weight coset members and the span of
+their differences is the kernel as a set. Gates G1 to G10, one line each with a few detail lines, then the total line. Any failure exits
+nonzero.
 """
 
 import itertools
 import sys
 from collections import Counter
 from fractions import Fraction as FRA
+from math import factorial
 
 AUDIT_TIMEOUT_SEC = 900
 
@@ -363,12 +365,14 @@ KEVEN = 0
 SPAN = 0
 COSET1 = 0
 KCENS = set()
+COSCENS = set()
 KCOLS = set()
 CCOLS = set()
 COVPS = set()
 PAIRS = set()
 SETK = 0
 SETC = 0
+MINBLOCKS = 0
 INST = []
 REPCEN = {}
 
@@ -446,6 +450,10 @@ for f in range(NF):
     if set(x1 ^ s for s in spanset) == set(coset):
         SETC += 1
     KCENS.add(tuple(sorted(Counter(popc(x) for x in kern).items())))
+    coscen = Counter(popc(x) for x in coset)
+    COSCENS.add(tuple(sorted(coscen.items())))
+    if min(coscen) == 12 and set(x for x in coset if popc(x) == 12) == set(vecs):
+        MINBLOCKS += 1
     kc = Counter()
     cc = Counter()
     cov = Counter()
@@ -517,9 +525,11 @@ emit("G6 detail: the pairwise support-intersection census over the {0} pairs is 
 
 # ================================================================ G7 the set-level licence for a block-level search
 
-gate(SETK == NF and SETC == NF, "G7",
+gate(SETK == NF and SETC == NF and len(COSCENS) == 1 and MINBLOCKS == NF, "G7",
      "at {0} of {1} fibers the span of the {2} differences equals the kernel as a set of {3}, and the affine hull of the {4} is the coset"
      .format(SETK, NF, NH[0] - 1, NKV, NH[0]))
+emit("G7 detail: the coset census takes {0} value, and its weight-12 members are exactly the {1} blocks at all {2} fibers"
+     .format(len(COSCENS), NH[0], MINBLOCKS))
 
 # ================================================================ the complete search over block bijections
 
@@ -662,13 +672,22 @@ gate(FOUND == 47 and VK == 47 and VB == 47 and VC == 47, "G8",
 emit("G8 detail: explicit images verify {0} kernel sets of {1}, {2} block sets of {3}, and {4} coset sets of {1}"
      .format(VK, NKV, VB, NH[0], VC))
 
-# ================================================================ G9 the count of relabellings and the free action
+# ================================================================ G9 block-bijection classes and their coordinate lifts
 
 AUT = eqsearch(SAMP[0], SAMP[0], NR, True)
 IDT = tuple(range(NH[0]))
 NTRIV = [s for s in AUT if s != IDT]
 ALPHA = NTRIV[0] if len(NTRIV) == 1 else IDT
-AUTOK = len(AUT) == 2 and IDT in AUT and len(NTRIV) == 1 and all(ALPHA[ALPHA[i]] == i for i in range(NH[0]))
+PATCOUNT = Counter(patterns(SAMP[0], NR))
+PATMULT = dict(sorted(Counter(PATCOUNT.values()).items()))
+LIFTS_PER_BLOCK_MAP = 1
+for n in PATCOUNT.values():
+    LIFTS_PER_BLOCK_MAP *= factorial(n)
+COORD_AUT = len(AUT) * LIFTS_PER_BLOCK_MAP
+AUTOK = (len(AUT) == 2 and IDT in AUT and len(NTRIV) == 1
+         and all(ALPHA[ALPHA[i]] == i for i in range(NH[0]))
+         and PATMULT == {1: 6, 2: 10, 3: 2, 4: 2}
+         and LIFTS_PER_BLOCK_MAP == 21233664 and COORD_AUT == 42467328)
 CNT2 = 0
 COMPOK = 0
 for f in OTHERS:
@@ -682,9 +701,11 @@ for f in OTHERS:
         COMPOK += 1
 
 gate(AUTOK and CNT2 == 47 and COMPOK == 47, "G9",
-     "exactly {0} relabellings at each of the {1} targets, matching the {0} symmetries of the sample instance, the identity and one involution"
-     .format(len(AUT), CNT2))
-emit("G9 detail: composing the nontrivial symmetry with either relabelling gives the other at {0} of {1} targets, freely and transitively"
+     "exactly {0} block-bijection classes and {1} coordinate relabellings at the sample and each of {2} targets"
+     .format(len(AUT), COORD_AUT, CNT2))
+emit("G9 detail: each block bijection has {0} coordinate lifts; pattern-class multiplicities are {1}"
+     .format(LIFTS_PER_BLOCK_MAP, dshow(PATMULT)))
+emit("G9 detail: the nontrivial block symmetry exchanges the two quotient classes at {0} of {1} targets"
      .format(COMPOK, len(OTHERS)))
 
 # ================================================================ G10 the control target, honestly rejected

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_diagonal_parity_cycle782_2026_08_14.py
-runner_sha256: 7896d8b357593d6741786a603958384fac34d4bd20e47442e7485cddb74a2421
+runner_sha256: f081abbba4c9766fd1443d78ef223bf9b3596c2b9d42e4e83b03b2dfa5f28bcf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.53
+elapsed_sec: 13.49
 status: ok
 ----- stdout -----
 PASS K1 object: 2672 pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, 192 chambers, 8 per piece, 8 holders, 0 bad
@@ -23,7 +23,7 @@ PASS K14 coupling: the sum of q_w over the four odd labels equals the odd-diagon
 census: odd-diagonal half-set count over the 15800 cuttings 0:472 2:1848 4:3384 6:4392 8:3384 10:1848 12:472, sum 15800
 census: A2 over the 15800 cuttings 0:112 4:1176 8:3936 12:5352 16:3936 20:1176 24:112, sum 15800
 TOTAL: PASS=14 FAIL=0
-resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2038 characters
+resource: under 60 s of the 120 s budget, under 250 MB of the 2500 MB budget, 2038 characters
 
 ----- stderr -----
 

@@ -1,10 +1,43 @@
 # Physical cell cutting: the odd-diagonal count of every cutting is divisible by four
 
 Date: 2026-08-14
-Authority: none.
+
+Authority: none; self-contained finite construction proposed for independent audit.
+
 Audit: unset.
+
+Status: proposed_retained
+
 Claim type: bounded_theorem
-Constitutional effect: none.
+
+Primary runner:
+
+- [diagonal-label parity runner](../scripts/physical_cell_cutting_diagonal_parity_cycle782_2026_08_14.py)
+
+Direct scientific dependencies: none.
+
+Constitutional effect: none. This note changes zero axioms, primitives,
+registries, policy rules, audit verdicts, effective statuses, or framework claims.
+
+## Trace and status fields
+
+```yaml
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "independent audit of the landed note and invocation-bound runner evidence"
+conditional_surface_status: "the target domain is the declared finite unit-four-cube object and its exhaustively enumerated cutting family"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite geometry and combinatorics on the declared unit-four-cube object"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
 ## What this cycle asks
 

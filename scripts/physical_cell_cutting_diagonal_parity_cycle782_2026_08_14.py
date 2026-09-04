@@ -26,6 +26,8 @@ import time
 import resource
 from fractions import Fraction as FR
 
+AUDIT_TIMEOUT_SEC = 120
+
 T0 = time.time()
 OUT = [0]
 
@@ -645,4 +647,4 @@ RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 PEAK = RSS // (1024 * 1024) if sys.platform == "darwin" else RSS // 1024
 SECS = int(time.time() - T0)
 emit("resource: under {0} s of the {1} s budget, under {2} MB of the {3} MB budget, {4} characters"
-     .format(nd(((SECS // 60) + 1) * 60), nd(900), nd(((PEAK // 250) + 1) * 250), nd(2500), nd(OUT[0])))
+     .format(nd(((SECS // 60) + 1) * 60), nd(AUDIT_TIMEOUT_SEC), nd(((PEAK // 250) + 1) * 250), nd(2500), nd(OUT[0])))

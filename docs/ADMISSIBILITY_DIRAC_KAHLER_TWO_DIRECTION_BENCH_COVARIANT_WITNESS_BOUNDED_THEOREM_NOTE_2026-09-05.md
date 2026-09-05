@@ -215,9 +215,8 @@ at z_mu = i:  (i - (-i))/2 = i;   at z_mu = 1:  0;   so d_B(z) = i D(kappa_z),  
 D(e_t)^2 = D(e_x)^2 = D(e_y)^2 = 0,  D(e_mu) D(e_nu) + D(e_nu) D(e_mu) = 0,  D(e_t + e_x)^2 = 0      (d^2 = 0 in Block 201's grading).
 ```
 
-So the two fine momenta enter **additively** — the raising Bloch block is
-linear in the "sines" `(z_μ − 1/z_μ)/2` direction by direction, because every
-graded link is a single-direction step. Mutation `break_raising_block_additivity`.
+So the two fine momenta enter **additively** — the raising block is linear in the "sines" `(z_μ − 1/z_μ)/2`
+direction by direction, because every graded link is a single-direction step. Mutation `break_raising_block_additivity`.
 
 ### The onsite Hodge block is a similarity (`E-2`)
 
@@ -361,10 +360,9 @@ parity block; at a pure point that is `i + (−i) = 0`, at the mixed point it is
 `2 i^{δ_t + δ_x} = −2` when `δ_t = δ_x` (pairs `(0,7)`, `(1,6)`) and `+2` when
 `δ_t = −δ_x` (pairs `(2,5)`, `(3,4)`). On the star line
 `(0, λ, −λ, λ)` the signed sum is `−λ` where Block 217's `s` is `λ`.
-Consequently the overlap bench charpolys at the line point **equal** the
-zero-parameter ones at both pure points and **differ** at the mixed point —
-form and pencil, witness and control — and the identity with the principal
-part fails at every nonzero point. Mutation `break_overlap_fold_dependence`.
+Consequently the overlap bench charpolys at the line point **equal** the zero-parameter ones at both pure
+points and **differ** at the mixed point — form and pencil, witness and control — and the identity with the
+principal part fails at every nonzero point. Mutation `break_overlap_fold_dependence`.
 
 ### The second direction sees the `x`-axis distinction (`G-3`)
 
@@ -391,18 +389,12 @@ are the same, as the `S3`-invariant quadric requires on this plane. Mutation
 
 ### The words, and what each of them actually names here
 
-- **COVARIANCE** names `(E_R R) H0 (E_R R)^T = H0` on the fold. Not an invariance of a law.
-- **CONE** names the zero set of `det M(κ)`; **one metric's cone** names Block
-  213's polynomial statement; **SHAPE** names the proportionality of every
-  pencil branch to one quadric, on the `(t, x)` plane here.
-- **CELL** names a face-sign cell of Block 211's family; none is selected.
-- **ASSEMBLY** names one of Block 105's two rules; neither is decided; **READING**
-  names Block 213's form or pencil; neither is selected.
-- **BENCH** names thirty-two exact eigenvalues of one finite matrix at four Bloch
-  points; not a dispersion law, not Lorentzian, not a light cone, not a limit.
-- **FINE MOMENTUM** names the Bloch phase `i` (`π/2`) of Block 213's
-  `bench_momenta`; not a small parameter, not a wavevector of anything physical.
-
+**COVARIANCE** names `(E_R R) H0 (E_R R)^T = H0` on the fold, not an invariance of a law; **CONE** the zero set of
+`det M(κ)`, **one metric's cone** Block 213's polynomial statement, **SHAPE** the proportionality of every pencil branch
+to one quadric, on the `(t, x)` plane here; **CELL** a face-sign cell of Block 211's family, none selected; **ASSEMBLY**
+one of Block 105's two rules and **READING** Block 213's form or pencil, none decided or selected; **BENCH** thirty-two
+exact eigenvalues of one finite matrix at four Bloch points — not a dispersion law, not Lorentzian, not a light cone,
+not a limit; **FINE MOMENTUM** the Bloch phase `i` (`π/2`) of Block 213's `bench_momenta`, not a small parameter.
 ### The six scope qualifications, carried as content — each a gated constant, a fence and a mutation
 
 1. **ALL OF IT IS SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT
@@ -566,8 +558,7 @@ N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, CONE
 
 ### STOPPED, and why each is stopped
 
-1. **Selecting an assembly, a reading, a cell or a parameter value.** Stopped: a selector is a principle, not a
-   measurement; that one construction sees the shape is recorded as a difference.
+1. **Selecting an assembly, a reading, a cell or a parameter value.** Stopped: a selector is a principle, not a measurement.
 2. **Asserting that the cell form inherits the axiom's covariance.** Stopped: `R1` is a reading.
 3. **The `y` direction, the other seven rule-A cells, symbolic parameters on the bench.** Stopped: budget; could-nots.
 4. **A dispersion-law, Lorentzian, light-cone or continuum reading of the bench.** Stopped: `R4`, `R5`.

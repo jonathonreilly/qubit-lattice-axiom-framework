@@ -434,3 +434,166 @@ def measure_census() -> dict:
         (c["mask"], min(sum(1 for a, b in zip(v, w) if a != b) for w in rule_a_cells))
         for v, c in cells.items() if c["star"]))
     return facts
+
+
+# ---------------------------------------------------------------------------
+# the witnesses: one rational positive-definite point (Block 214's W1 moduli,
+# positive definite in every sign cell) and Block 213's two curve points
+# ---------------------------------------------------------------------------
+W1_MODULI = b211.W1_MODULI                                   # (v0, g0, v1, g1) = (15/16, 1/4, 1, 1/4)
+FLAT_MODULI = (sp.Integer(1), sp.Integer(0), sp.Integer(1), sp.Integer(0))
+ALL_PLUS_CELL = (1,) * 6
+
+
+def curve_moduli(pi0: int) -> tuple:
+    """Block 213's rule-A curve point g0 = g1/(1 + pi0 g1) with the family's
+    ties, over QQ(sqrt 6): L+-'s moduli for pi0 = +1, L-+'s for pi0 = -1."""
+    name = "L+-" if pi0 == 1 else "L-+"
+    return b213.locus_witness_table()[name][0]
+
+
+def moduli_as_g(moduli: tuple) -> tuple:
+    v0, g0, v1, g1 = moduli
+    return (g0, g1, v0, v1)
+
+
+def star_cells(census: dict) -> tuple:
+    return tuple(sorted((v for v, c in census["cells"].items() if c["star"]), key=lambda v: census["cells"][v]["mask"]))
+
+
+def class_representatives(census: dict) -> dict:
+    out = {}
+    for values in star_cells(census):
+        out.setdefault(census["cells"][values]["class"], values)
+    return out
+
+
+# ---------------------------------------------------------------------------
+# C. THE COVARIANCE AT THE 16 CELLS, re-measured on Block 215's machinery
+# ---------------------------------------------------------------------------
+def measure_covariance(group: dict, census: dict) -> dict:
+    """At every star-pattern cell (and the all-plus control) at symbolic
+    moduli: the shear-alive twisted-O line under two generators, and the
+    strict (E = 1) locus under every S3_body -- Block 215's G-3/G-4/G-5."""
+    lifts, table, orders = group["lifts"], group["table"], group["orders"]
+    g3 = orders.index(3)
+    g4 = next(i for i in range(24) if orders[i] == 4
+              and len(b215.closure(table, frozenset((g3, i)), group["identity_index"])) == 24)
+    star_line = b215.canonical_subspace([[0, 1, 0, -1], [0, 0, 1, 1]], PARAMETER_SYMBOLS)
+    facts: dict = {"generators_generate_o": len(b215.closure(table, frozenset((g3, g4)), group["identity_index"])) == 24}
+    twisted, strict = {}, {}
+    for values in star_cells(census) + (ALL_PLUS_CELL,):
+        cell = formal(values, MODULI, PARAMETER_SYMBOLS)
+        per = tuple(b215.irredundant([b215.constraints(cell, lifts[g], e, PARAMETER_SYMBOLS) for e in b215.sign_vectors()])
+                    for g in (g3, g4))
+        locus = b215.intersect(per[0], per[1], PARAMETER_SYMBOLS)
+        alive = tuple(v for f, v in locus if not f)
+        twisted[values] = (len(alive), alive == (star_line,), b215.describe(tuple((frozenset(), v) for v in alive), PARAMETER_SYMBOLS))
+        strict_per = tuple(b215.irredundant([b215.constraints(cell, lifts[g], (1,) * 8, PARAMETER_SYMBOLS)]) for g in range(24))
+        members = []
+        for member in group["classes"]["S3_body"]:
+            alive_s3 = tuple(v for f, v in b215.subgroup_locus(strict_per, member, PARAMETER_SYMBOLS) if not f)
+            members.append((tuple(sorted(member)), alive_s3 == (star_line,), len(alive_s3)))
+        strict[values] = tuple(members)
+    facts["twisted"] = twisted
+    facts["strict_s3"] = strict
+    star = star_cells(census)
+    facts["twisted_line_is_star_line_at_every_star_cell"] = all(twisted[v][0] == 1 and twisted[v][1] for v in star)
+    facts["all_plus_twisted_line"] = twisted[ALL_PLUS_CELL][2]
+    facts["strict_s3_alive_count_per_star_cell"] = tuple(sorted(set(sum(1 for _, ok, _ in strict[v] if ok) for v in star)))
+    facts["strict_s3_star_line_at_every_star_cell"] = all(any(ok for _, ok, _ in strict[v]) for v in star)
+    facts["strict_s3_alive_at_all_plus"] = any(n > 0 for _, _, n in strict[ALL_PLUS_CELL])
+    facts["strict_s3_member_per_star_cell"] = {census["cells"][v]["mask"]: next(m for m, ok, _ in strict[v] if ok) for v in star}
+    facts["star_line"] = star_line
+    facts["generator_indices"] = (g3, g4)
+    return facts
+
+
+# ---------------------------------------------------------------------------
+# D. THE UNION LOCUS AT THE CELLS: the M_oo lemma, the block identity, the
+# necessity half by the coefficient ideal at every witness
+# ---------------------------------------------------------------------------
+def union_locus(cell: sp.Matrix, gaussian: bool) -> tuple:
+    """(radical generators of the coefficient ideal of det M - det B^2 in
+    (D16, D25, D34); det M is D07-free; det M on the plane equals det B^2 with
+    the plane multiple symbolic) -- Block 214's F-4 machinery at one cell."""
+    params = (B16, C25, D34)
+    even, odd = b213.even_odd(3)
+    h0, m, _ = b214.principal_part(cell, "onsite")
+    det_m = sp.expand(b214.ff_det(m, params + KAPPA, algebraic=gaussian))
+    det_b = sp.expand(sp.radsimp(m.extract(even, odd).det(method="berkowitz")))
+    difference = sp.expand(sp.radsimp(det_m - det_b ** 2))
+    if gaussian:
+        r = sp.Symbol("r")
+        coefficients = sp.Poly(difference.subs(sp.sqrt(6), r), *KAPPA).coeffs() + [r ** 2 - 6]
+        basis = sp.groebner(coefficients, *params, r, order="lex")
+        generators = b214.reduced_generators(basis.exprs, params, r)
+    else:
+        generators = b214.radical_generators(b214.coefficient_ideal(difference, KAPPA, params), params)
+    on_plane = {B16: LAM_LINE, C25: -LAM_LINE, D34: LAM_LINE}
+    det_m_plane = sp.expand(b214.ff_det(m.subs(on_plane), (LAM_LINE,) + KAPPA, algebraic=gaussian))
+    det_b_plane = sp.expand(sp.radsimp(det_b.subs(on_plane)))
+    sufficiency = is_zero_alg(det_m_plane - det_b_plane ** 2)
+    return generators, sufficiency, det_m_plane
+
+
+def measure_union(census: dict) -> dict:
+    facts: dict = {}
+    even, odd = b213.even_odd(3)
+    # THE M_oo LEMMA AT SYMBOLIC FACE SIGNS: the odd-odd block of the onsite
+    # principal part carries no shear, no volume and no sign -- only the three
+    # parameter combinations of Block 214 -- so its vanishing locus is the
+    # star line at EVERY cell.
+    sign_symbols = sp.symbols("s_tx0 s_ty0 s_xy0 s_tx1 s_ty1 s_xy1")
+    generic = b214.formal_cell(dict(zip(FACE_ORDER, sign_symbols)), G0, G1, V0, V1, PARAMETER_SYMBOLS)
+    h0, m, _ = b214.principal_part(generic, "onsite")
+    facts["onsite_h0_is_the_cell"] = residual_count((h0 - generic).applyfunc(sp.cancel)) == 0
+    m_oo = m.extract(odd, odd)
+    facts["m_oo_free_symbols"] = tuple(sorted(str(s) for s in m_oo.free_symbols))
+    facts["m_oo_entries"] = (str(sp.factor(m_oo[0, 1])), str(sp.factor(m_oo[0, 2])), str(sp.factor(m_oo[1, 2])))
+    facts["m_oo_row7_zero"] = residual_count(m_oo[3, :]) == 0 and residual_count(m_oo[:, 3]) == 0
+    facts["m_oo_zero_on_star_line"] = residual_count(m_oo.subs({C25: -B16, D34: B16})) == 0
+    facts["m_oo_ideal_is_star_line"] = tuple(sorted(str(g) for g in b214.radical_generators(
+        b214.coefficient_ideal(sum((m_oo[i, j] * sp.Symbol(f"w{i}{j}") for i in range(4) for j in range(4)), 0),
+                               KAPPA + tuple(sp.Symbol(f"w{i}{j}") for i in range(4) for j in range(4)),
+                               (B16, C25, D34)), (B16, C25, D34)))) == tuple(sorted(b214.PLANE))
+    # THE BLOCK IDENTITY det [[A, B], [B^T, 0]] = det(B)^2 at generic symbolic blocks
+    a = sp.Matrix(4, 4, lambda i, j: sp.Symbol(f"a{min(i, j)}{max(i, j)}"))
+    b = sp.Matrix(4, 4, lambda i, j: sp.Symbol(f"b{i}{j}"))
+    block = sp.BlockMatrix([[a, b], [b.T, sp.zeros(4, 4)]]).as_explicit()
+    facts["block_identity_generic"] = sp.expand(
+        b214.ff_det(block, tuple(sorted(block.free_symbols, key=str))) - b.det(method="berkowitz") ** 2) == 0
+    # THE NECESSITY HALF at every witness: W1's moduli at the 16 star cells,
+    # the all-plus control and the flat cell (rational); the curve moduli at
+    # the 8 rule-A cells (QQ(sqrt 6)).
+    table: dict = {}
+    for values in star_cells(census) + (ALL_PLUS_CELL,):
+        mask = census["cells"][values]["mask"]
+        cell = formal(values, moduli_as_g(W1_MODULI), (sp.Integer(0), B16, C25, D34))
+        minors = b211.leading_minors(cell.subs({p: 0 for p in PARAMETER_SYMBOLS}))
+        print(f"[union] W1 moduli at cell {mask}", file=sys.stderr)
+        generators, sufficiency, _ = union_locus(cell, False)
+        table[("W1", mask)] = (tuple(sorted(str(g) for g in generators)), sufficiency, all(x > 0 for x in minors))
+    flat = formal(ALL_PLUS_CELL, moduli_as_g(FLAT_MODULI), (sp.Integer(0), B16, C25, D34))
+    generators, sufficiency, _ = union_locus(flat, False)
+    table[("flat", 0)] = (tuple(sorted(str(g) for g in generators)), sufficiency, True)
+    for values in star_cells(census):
+        c = census["cells"][values]
+        if not c["rule_a"]:
+            continue
+        print(f"[union] curve moduli at cell {c['mask']}", file=sys.stderr)
+        cell = formal(values, moduli_as_g(curve_moduli(c["class"][0])), (sp.Integer(0), B16, C25, D34))
+        minors = b211.leading_minors(cell.subs({p: 0 for p in PARAMETER_SYMBOLS}))
+        generators, sufficiency, _ = union_locus(cell, True)
+        table[("curve", c["mask"])] = (tuple(sorted(str(g) for g in generators)), sufficiency, all(sp.radsimp(x) > 0 for x in minors))
+    facts["table"] = table
+    facts["necessity_is_plane_everywhere"] = all(entry[0] == tuple(sorted(b214.PLANE)) for entry in table.values())
+    facts["sufficiency_everywhere"] = all(entry[1] for entry in table.values())
+    facts["witnesses_positive_definite"] = all(entry[2] for entry in table.values())
+    facts["witness_count"] = len(table)
+    facts["rational_witness_count"] = sum(1 for key in table if key[0] in ("W1", "flat"))
+    facts["curve_witness_count"] = sum(1 for key in table if key[0] == "curve")
+    reps = class_representatives(census)
+    facts["class_representative_masks"] = {key: census["cells"][v]["mask"] for key, v in reps.items()}
+    facts["one_witness_per_class"] = all(("W1", census["cells"][v]["mask"]) in table for v in reps.values())
+    return facts

@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_dirac_kahler_overlap_assembly_covariant_cells_2026_09_05.py
 runner_sha256: 60bb268ae73c068df7f9b723f5f9ebb244ebb96e174b4adeb18596c3597281da
-input_fingerprint_sha256: 644e1595561de3e07e9d8c3254662ec136a6861579fe70a5eb1897ed9e7af4f0
+input_fingerprint_sha256: 5636802122f2aea35d37313900cedec0f38c06f860c81a7724dc2f6a0ee1efe8
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 180.74
+elapsed_sec: 90.40
 status: ok
 ----- stdout -----
-[phase] authority: 629 ms
-[phase] group: 89745 ms
-[phase] census: 11070 ms
-[phase] fold: 489 ms
+[phase] authority: 500 ms
+[phase] group: 11913 ms
+[phase] census: 2300 ms
+[phase] fold: 52 ms
 [loci] witness 2
 [loci] witness 11
 [loci] witness 16
@@ -21,7 +21,7 @@ status: ok
 [loci] witness 61
 [loci] witness W1
 [loci] witness flat
-[phase] loci: 39448 ms
+[phase] loci: 36570 ms
 [cone] witness 2
 [cone] witness 11
 [cone] witness 16
@@ -32,7 +32,7 @@ status: ok
 [cone] witness 61
 [cone] witness W1
 [cone] witness flat
-[phase] cone: 30248 ms
+[phase] cone: 30265 ms
 [bench] witness line onsite form
 [bench] witness line onsite pencil
 [bench] witness line overlap form
@@ -49,8 +49,8 @@ status: ok
 [bench] witness zero overlap pencil
 [bench] W1 zero overlap form
 [bench] W1 zero overlap pencil
-[phase] bench: 4143 ms
-[phase] smallk: 1116 ms
+[phase] bench: 4119 ms
+[phase] smallk: 1133 ms
 == BLOCK 217: the other assembly at the covariant cells, and the bench -- measured facts ==
 authority: AuthorityCertificate(fixed_authority=True, parent_pin_is_commit=True, parent_is_ancestor=True, parent_artifact_blobs=True, stale_is_real_ancestor=True, stale_carries_neither_artifact=True, machinery_import_landed=True, inputs_readable=9)
 fold bloch_fold_at_i_parameter_free: True
@@ -169,38 +169,38 @@ bench shapes ('witness line', 'overlap', 'form'): ((1, 4, (55296, -89401)), (1, 
 bench shapes ('witness line', 'overlap', 'pencil'): ((1, 8, (1, -1)), (1, 8, (1, 0)))
 bench shapes ('witness zero', 'overlap', 'form'): ((1, 4, (55296, -89401)), (1, 4, (55296, -36481)), (1, 8, (1, 0)))
 bench shapes ('witness zero', 'overlap', 'pencil'): ((1, 8, (1, -1)), (1, 8, (1, 0)))
-bench table ('W1 line', 'onsite', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (4, 2, (129600, -647676, 1086353, -711440, 147456))), 'degree': 16, 'direct_ms': 64, 'union_ms': 145}
+bench table ('W1 line', 'onsite', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (4, 2, (129600, -647676, 1086353, -711440, 147456))), 'degree': 16, 'direct_ms': 64, 'union_ms': 146}
 bench table ('W1 line', 'onsite', 'pencil'): {'agree': True, 'multiset': None, 'shape': ((1, 2, (15, -16)), (1, 8, (1, 0)), (3, 2, (4801335, -18293776, 22913024, -9437184))), 'degree': 16, 'direct_ms': 18, 'union_ms': 145}
 bench table ('W1 line', 'overlap', 'form'): {'agree': True, 'multiset': ((0, 8), (116281/147456, 4), (4844401/3686400, 4)), 'shape': ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 7, 'union_ms': 51}
-bench table ('W1 line', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 26, 'union_ms': 53}
-bench table ('W1 zero', 'overlap', 'form'): {'agree': True, 'multiset': ((0, 8), (116281/147456, 4), (4844401/3686400, 4)), 'shape': ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 6, 'union_ms': 51}
-bench table ('W1 zero', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 12, 'union_ms': 50}
+bench table ('W1 line', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 25, 'union_ms': 62}
+bench table ('W1 zero', 'overlap', 'form'): {'agree': True, 'multiset': ((0, 8), (116281/147456, 4), (4844401/3686400, 4)), 'shape': ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 6, 'union_ms': 50}
+bench table ('W1 zero', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 13, 'union_ms': 50}
 bench table ('flat line', 'onsite', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (2, 2, (4, -9, 4)), (2, 2, (16, -33, 16))), 'degree': 16, 'direct_ms': 4, 'union_ms': 87}
 bench table ('flat line', 'onsite', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 2), (16/15, 6)), 'shape': ((1, 2, (1, -1)), (1, 6, (15, -16)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 5, 'union_ms': 87}
 bench table ('flat line', 'overlap', 'form'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 3, 'union_ms': 48}
-bench table ('flat line', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 7, 'union_ms': 49}
-bench table ('witness line', 'onsite', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (4, 2, (55296, -388672, 698656, -422145, 69984))), 'degree': 16, 'direct_ms': 154, 'union_ms': 334}
-bench table ('witness line', 'onsite', 'pencil'): {'agree': True, 'multiset': ((0, 8), (9/8, 2), (16/11, 2), (18/11, 4)), 'shape': ((1, 2, (8, -9)), (1, 2, (11, -16)), (1, 4, (11, -18)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 97, 'union_ms': 334}
-bench table ('witness line', 'overlap', 'form'): {'agree': True, 'multiset': ((0, 8), (36481/55296, 4), (89401/55296, 4)), 'shape': ((1, 4, (55296, -89401)), (1, 4, (55296, -36481)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 182, 'union_ms': 331}
-bench table ('witness line', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 220, 'union_ms': 338}
-bench table ('witness zero', 'overlap', 'form'): {'agree': True, 'multiset': ((0, 8), (36481/55296, 4), (89401/55296, 4)), 'shape': ((1, 4, (55296, -89401)), (1, 4, (55296, -36481)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 180, 'union_ms': 333}
-bench table ('witness zero', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 204, 'union_ms': 335}
-bench timings_ms ('W1 line', 'onsite', 'form'): (64, 145)
+bench table ('flat line', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 6, 'union_ms': 49}
+bench table ('witness line', 'onsite', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (4, 2, (55296, -388672, 698656, -422145, 69984))), 'degree': 16, 'direct_ms': 146, 'union_ms': 331}
+bench table ('witness line', 'onsite', 'pencil'): {'agree': True, 'multiset': ((0, 8), (9/8, 2), (16/11, 2), (18/11, 4)), 'shape': ((1, 2, (8, -9)), (1, 2, (11, -16)), (1, 4, (11, -18)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 81, 'union_ms': 328}
+bench table ('witness line', 'overlap', 'form'): {'agree': True, 'multiset': ((0, 8), (36481/55296, 4), (89401/55296, 4)), 'shape': ((1, 4, (55296, -89401)), (1, 4, (55296, -36481)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 181, 'union_ms': 332}
+bench table ('witness line', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 222, 'union_ms': 343}
+bench table ('witness zero', 'overlap', 'form'): {'agree': True, 'multiset': ((0, 8), (36481/55296, 4), (89401/55296, 4)), 'shape': ((1, 4, (55296, -89401)), (1, 4, (55296, -36481)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 196, 'union_ms': 329}
+bench table ('witness zero', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 8)), 'shape': ((1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 16, 'direct_ms': 188, 'union_ms': 333}
+bench timings_ms ('W1 line', 'onsite', 'form'): (64, 146)
 bench timings_ms ('W1 line', 'onsite', 'pencil'): (18, 145)
 bench timings_ms ('W1 line', 'overlap', 'form'): (7, 51)
-bench timings_ms ('W1 line', 'overlap', 'pencil'): (26, 53)
-bench timings_ms ('W1 zero', 'overlap', 'form'): (6, 51)
-bench timings_ms ('W1 zero', 'overlap', 'pencil'): (12, 50)
+bench timings_ms ('W1 line', 'overlap', 'pencil'): (25, 62)
+bench timings_ms ('W1 zero', 'overlap', 'form'): (6, 50)
+bench timings_ms ('W1 zero', 'overlap', 'pencil'): (13, 50)
 bench timings_ms ('flat line', 'onsite', 'form'): (4, 87)
 bench timings_ms ('flat line', 'onsite', 'pencil'): (5, 87)
 bench timings_ms ('flat line', 'overlap', 'form'): (3, 48)
-bench timings_ms ('flat line', 'overlap', 'pencil'): (7, 49)
-bench timings_ms ('witness line', 'onsite', 'form'): (154, 334)
-bench timings_ms ('witness line', 'onsite', 'pencil'): (97, 334)
-bench timings_ms ('witness line', 'overlap', 'form'): (182, 331)
-bench timings_ms ('witness line', 'overlap', 'pencil'): (220, 338)
-bench timings_ms ('witness zero', 'overlap', 'form'): (180, 333)
-bench timings_ms ('witness zero', 'overlap', 'pencil'): (204, 335)
+bench timings_ms ('flat line', 'overlap', 'pencil'): (6, 49)
+bench timings_ms ('witness line', 'onsite', 'form'): (146, 331)
+bench timings_ms ('witness line', 'onsite', 'pencil'): (81, 328)
+bench timings_ms ('witness line', 'overlap', 'form'): (181, 332)
+bench timings_ms ('witness line', 'overlap', 'pencil'): (222, 343)
+bench timings_ms ('witness zero', 'overlap', 'form'): (196, 329)
+bench timings_ms ('witness zero', 'overlap', 'pencil'): (188, 333)
 smallk bloch_fold_differs_from_h0_entries: 16
 smallk bloch_fold_parameter_free_at_witness: True
 smallk g1_tt_witness: 9/8
@@ -221,7 +221,7 @@ smallk onsite_cone_at_et: 64/81
 smallk onsite_pencil_identity_everywhere: True
 smallk predicted_nonzero: ((9/8, 2), (16/11, 2), (18/11, 4))
 smallk witness_multiset_is_g1tt_times_constants: True
-timings_ms: {'authority': 629, 'group': 89745, 'census': 11070, 'fold': 489, 'loci': 39448, 'cone': 30248, 'bench': 4143, 'smallk': 1116}  elapsed_ms: 176893
+timings_ms: {'authority': 500, 'group': 11913, 'census': 2300, 'fold': 52, 'loci': 36570, 'cone': 30265, 'bench': 4119, 'smallk': 1133}  elapsed_ms: 86856
 [PASS] A-1: FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree
 [PASS] A-2: PARENT PIN IS THE BLOCK 216 TIP, an ancestor of HEAD, with its note and runner content-bound by blob
 [PASS] A-3: STALE PARENT (the Block 215 tip) is a real ancestor carrying NEITHER Block 216 artifact; machinery imported; inputs readable

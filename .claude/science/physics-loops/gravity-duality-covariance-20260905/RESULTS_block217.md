@@ -170,3 +170,14 @@ Disclosed: a first census driver launched all 29 at once (zsh `jobs -r` does not
 | `break_float_absence` | I | I-2 | TOTAL: PASS=28 FAIL=1 | 1 |
 
 Summary: 29/29 mutations each fail exactly their own gate family (A 2 B 6 C 4 D 5 E 3 F 3 G 2 H 2 I 2); no mutation changed any other family; no `AssertionError` ("mutation did not fail exactly its own gate") anywhere.
+
+## Recertification after the note's timing correction (2026-09-05, after the census)
+
+The note's bench-timing sentence was corrected to the receipt (`0.25 s` / `0.35 s`, the flat form shape recorded as
+measured) at `1366a5b1ec`; no check, literal or mutation changed and the runner blob `25b0714ef9` (sha `60bb268a...`)
+is unchanged, so the 29-mutation census above stands. Because the note is the first fingerprinted input of the
+receipt, the baseline was recertified alone after the census: `exit 0`, `status ok`, `90.40 s` wall
+(`elapsed_ms: 86856`; phases authority 0.5 s, group 11.9 s, census 2.3 s, fold 0.05 s, loci 36.6 s, cone 30.3 s,
+bench 4.1 s, smallk 1.1 s), `TOTAL: PASS=29 FAIL=0`, `GATES A..I = PASS`, the same 29 check lines as above; the cache
+is re-pinned to input fingerprint `5636802122f2aea3...`. The certified baseline is under the 600 s budget by a factor
+of six with the bench included.

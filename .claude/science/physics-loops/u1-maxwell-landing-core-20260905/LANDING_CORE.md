@@ -202,8 +202,8 @@ as a supplied input.
   edge-edge or face-face nearest-neighbor pairs; positive diagonal energy
   conservation kills onsite scalars and fixes the reverse block to the weighted
   negative adjoint.
-- Its own limits: "The classification does not derive that dynamics class
-  from the axioms, and exact finite local tick selection remains open." "The
+- Its own limits: "This is a bounded conditional classification, not an axiom
+  derivation or TOE-status change." "The
   four axioms do not currently select that class. In particular, they do not
   state real linear first-order evolution, energy conservation, minimal
   `(E,B)` payload, or continuous time." The kinetic-isotropy primitive "can

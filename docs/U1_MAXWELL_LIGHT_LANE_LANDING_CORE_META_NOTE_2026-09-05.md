@@ -250,8 +250,8 @@ a supplied input.
   period-two role geometry has no edge-edge or face-face nearest-neighbor
   pairs; positive diagonal energy conservation kills onsite scalars and fixes
   the reverse block to the weighted negative adjoint.
-- Its own limits: "The classification does not derive that dynamics class
-  from the axioms, and exact finite local tick selection remains open." "The
+- Its own limits: "This is a bounded conditional classification, not an axiom
+  derivation or TOE-status change." "The
   four axioms do not currently select that class. In particular, they do not
   state real linear first-order evolution, energy conservation, minimal
   `(E,B)` payload, or continuous time." The kinetic-isotropy primitive "can
@@ -734,6 +734,16 @@ the terminal and states the curvature at #7917's own scope. Nothing is
 replaced or narrowed from a landed surface (this is a new note); no hard
 landing conditions are outstanding. Supervisor line-by-line review of the
 photon split (6.C), the terminal (7), and the machine-status block.
+
+Post-open correction (2026-09-05, from the block-02 refuting checker's finding
+CK-01): the sentence this note quoted as PR #7917's own boundary ("The
+classification does not derive that dynamics class from the axioms, and exact
+finite local tick selection remains open.") is the campaign's science-record
+précis of that PR, not the PR's text. It is replaced, in section 3 here and in
+the pack's LANDING_CORE.md, by the PR body's own sentence ("This is a bounded
+conditional classification, not an axiom derivation or TOE-status change.");
+the second quotation in that bullet ("The four axioms do not currently select
+that class ...") was verbatim and stands. No other change.
 
 ## Imports
 

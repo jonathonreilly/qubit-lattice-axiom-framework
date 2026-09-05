@@ -1,11 +1,11 @@
-# Trace gate — block 217 (close)
+# Trace gate — block 218 (close)
 
 ```yaml
 trace_class: upstream_support
 target_claim_id: null
-target_blocker_text: "The overlap assembly is run at the 16 cells: whether its s = 0 locus meets covariance there the way the onsite plane does."
+target_blocker_text: "A bench with a small nonzero fine momentum in more than one direction is affordable at a covariant witness: the cone's shape (the proportionality of every branch to one quadric) would then become visible to a bench."
 source_of_blocker_text: handoff
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "ANSWERED at the 8 rule-A cells, as a conditional and in the negative for the overlap assembly: its s = 0 locus is the union locus there but covariance does not meet it (strict stabiliser trivial at every s; twisted stabiliser a D4_face for every s; the curve violates every shear-relation variant); the overlap cone there is Block 213's non-Hodge pair, not the onsite cone; the two assemblies differ in covariance and in the cone at the covariant cells — a measured difference, not a selector. The bench at a covariant witness reads the onsite pencil constants at one direction exactly. Downstream consumer: block 218 — a two-direction bench at the covariant witness (does the cone's shape become visible); then the assembly question as a supplied principle, and the constraint quotient, unreached."
+next_trace_action: "ANSWERED at one covariant witness, as a conditional and in the affirmative on the sampled plane: on the (4,4,2) bench the mixed-point identity with the principal part holds exactly (the fine momenta enter additively; d^2 = 0), and every nonzero eigenvalue at the three nonzero points is a branch constant times one quadric with the cross term G1_tx = -3/8 isolated — the cone's shape on the (t, x) plane is visible to a bench; the control reads no shape; the overlap fold sees the parameters only at the mixed point through a signed sum and the second direction sees its x-axis distinction. Downstream consumer: block 219 — the three-direction bench (extent (4,4,4)) at the covariant witness: all six entries of G1 from seven nonzero Bloch points, and the rescalings of Block 216 seen on the bench; then the constraint quotient, unreached."
 ```

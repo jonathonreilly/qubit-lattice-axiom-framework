@@ -22,7 +22,6 @@ for _thread_variable in (
 
 import ast
 import hashlib
-import itertools
 import math
 import pathlib
 import sys
@@ -36,6 +35,17 @@ AUDIT_TIMEOUT_SEC = 180
 DENSE_MATRIX_AXIS_LIMIT = 600
 ATOL = 3.0e-10
 RANK_TOL = 2.0e-9
+EXPECTED_CHECK_NAMES = (
+    "direct_dictionary",
+    "nonbridge_instrument",
+    "bridge_and_history",
+    "uniform_history_moments",
+    "bipartite_energy_bound",
+    "placement_and_support",
+    "shared_battery_native_history",
+    "fibre_moment_identity",
+    "source_contract",
+)
 
 I2 = np.eye(2, dtype=complex)
 X2 = np.array([[0.0, 1.0], [1.0, 0.0]], dtype=complex)
@@ -905,6 +915,20 @@ def compare_probability_maps(
     require(left.keys() == right.keys(), f"{label} probability support")
     for key in left:
         require(abs(left[key] - right[key]) <= 4.0e-9, f"{label} probability {key}")
+    require(abs(sum(left.values()) - 1.0) <= 4.0e-9, f"{label} left normalization")
+    require(abs(sum(right.values()) - 1.0) <= 4.0e-9, f"{label} right normalization")
+    histories = sorted({history for history, _ in left})
+    for history in histories:
+        left_weight = sum(value for (candidate, _), value in left.items() if candidate == history)
+        right_weight = sum(value for (candidate, _), value in right.items() if candidate == history)
+        require(abs(left_weight - right_weight) <= 4.0e-9, f"{label} history weight {history}")
+        if left_weight > 1.0e-10:
+            for key in left:
+                if key[0] == history:
+                    require(
+                        abs(left[key] / left_weight - right[key] / right_weight) <= 5.0e-9,
+                        f"{label} conditional energy {key}",
+                    )
 
 
 def shifted_packet(packet: np.ndarray, shift: int) -> np.ndarray:
@@ -963,6 +987,18 @@ def shared_battery_native_history_check() -> str:
     second_output_hamiltonian = np.kron(np.eye(4), after_second)
     close(first_instrument.conj().T @ first_instrument, np.eye(16), "first native isometry")
     close(second_instrument.conj().T @ second_instrument, np.eye(32), "second native isometry")
+    for old_sign in (-1, 1):
+        old_projector = projector_from_involution(square.edge_z(first_edge), old_sign)
+        close(
+            (
+                square.edge_z(second_edge)
+                - old_sign * square.vertex_parity(1) @ square.vertex_parity(2)
+            )
+            @ old_projector
+            @ code_isom,
+            np.zeros((16, 8), dtype=complex),
+            f"battery fixture bridge boundary sign {old_sign}",
+        )
     close(
         first_output_hamiltonian @ first_instrument - first_instrument @ input_hamiltonian,
         -first_instrument @ first_term,
@@ -1196,6 +1232,163 @@ def shared_battery_native_history_check() -> str:
     )
 
 
+def fibre_moment_identity_check() -> str:
+    square = SmallGraph(4, ((0, 1), (1, 2), (2, 3), (0, 3)))
+    coefficients = {
+        (0, 1): 0.83,
+        (1, 2): -0.61,
+        (2, 3): 1.0,
+        (0, 3): -0.74,
+    }
+    terms = {
+        edge: coefficients[edge] * square.hopping_generator(edge)
+        for edge in square.edges
+    }
+    histories = (
+        (square.edges, (), 0.137),
+        (((0, 1), (1, 2), (2, 3)), (((0, 3), -1),), -0.211),
+        (((0, 1), (2, 3)), (((0, 3), 1), ((1, 2), -1)), 0.319),
+    )
+    largest_coefficient = max(abs(value) for value in coefficients.values())
+    for live_edges, records, tau in histories:
+        q = len(live_edges)
+        hamiltonian = history_hamiltonian(live_edges, terms)
+        input_phase = scipy.linalg.expm(1j * tau * hamiltonian)
+        mean_pullback = np.zeros_like(hamiltonian)
+        second_pullback = np.zeros_like(hamiltonian)
+        correction = np.zeros_like(hamiltonian)
+        for edge in live_edges:
+            output_hamiltonian = hamiltonian - terms[edge]
+            instrument = native_record_isometry(square.edge_z(edge))
+            history_hamiltonian_out = np.kron(np.eye(2), output_hamiltonian)
+            output_phase = scipy.linalg.expm(-1j * tau * history_hamiltonian_out)
+            fibre = output_phase @ instrument @ input_phase
+            close(fibre.conj().T @ fibre, np.eye(16), f"fibre isometry q={q} edge={edge}")
+            mean_pullback = mean_pullback + (
+                fibre.conj().T @ history_hamiltonian_out @ fibre
+            ) / q
+            second_pullback = second_pullback + (
+                fibre.conj().T @ history_hamiltonian_out @ history_hamiltonian_out @ fibre
+            ) / q
+            correction = correction + (
+                scipy.linalg.expm(-1j * tau * hamiltonian)
+                @ terms[edge]
+                @ terms[edge]
+                @ scipy.linalg.expm(1j * tau * hamiltonian)
+            ) / q
+        close(
+            mean_pullback,
+            (1.0 - 1.0 / q) * hamiltonian,
+            f"fibre first moment q={q} records={records}",
+            4.0e-9,
+        )
+        close(
+            second_pullback,
+            (1.0 - 2.0 / q) * hamiltonian @ hamiltonian + correction,
+            f"fibre second moment q={q} records={records}",
+            5.0e-9,
+        )
+        require(
+            float(np.max(np.linalg.eigvalsh(correction)))
+            <= largest_coefficient**2 + 3.0e-9,
+            f"fibre correction bound q={q}",
+        )
+
+    rng = np.random.default_rng(20260905)
+    correlated = normalized(
+        rng.normal(size=32) + 1j * rng.normal(size=32)
+    )
+    live_edges = square.edges
+    hamiltonian = history_hamiltonian(live_edges, terms)
+    q = len(live_edges)
+    averaged = np.zeros_like(hamiltonian)
+    tau = 0.173
+    for edge in live_edges:
+        output_hamiltonian = hamiltonian - terms[edge]
+        instrument = native_record_isometry(square.edge_z(edge))
+        fibre = (
+            scipy.linalg.expm(-1j * tau * np.kron(np.eye(2), output_hamiltonian))
+            @ instrument
+            @ scipy.linalg.expm(1j * tau * hamiltonian)
+        )
+        averaged = averaged + fibre.conj().T @ np.kron(
+            np.eye(2), output_hamiltonian
+        ) @ fibre / q
+    left_expectation = float(
+        np.vdot(correlated, np.kron(averaged, np.eye(2)) @ correlated).real
+    )
+    right_expectation = float(
+        np.vdot(
+            correlated,
+            np.kron((1.0 - 1.0 / q) * hamiltonian, np.eye(2)) @ correlated,
+        ).real
+    )
+    require(abs(left_expectation - right_expectation) <= 4.0e-9, "correlated ancillary witness")
+    return "first/second fibre identities hold at q=4,3,2 and on a correlated input"
+
+
+def source_contract_check() -> str:
+    source_path = pathlib.Path(__file__).resolve()
+    require(
+        source_path.name == "native_edge_record_matter_instrument_independent_check_2026_09_05.py",
+        "checker filename changed",
+    )
+    source = pathlib.Path(__file__).read_text(encoding="utf-8")
+    tree = ast.parse(source)
+    allowed_import_roots = {
+        "__future__",
+        "ast",
+        "dataclasses",
+        "hashlib",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy",
+        "sys",
+    }
+    observed_import_roots = set()
+    read_method_counts = {"read_text": 0, "read_bytes": 0}
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            observed_import_roots.update(alias.name.split(".")[0] for alias in node.names)
+        elif isinstance(node, ast.ImportFrom):
+            require(node.module is not None, "relative import is forbidden")
+            observed_import_roots.add(node.module.split(".")[0])
+        elif isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
+            require(
+                node.func.id not in {"eval", "exec", "compile", "open", "__import__"},
+                f"dynamic or external read call {node.func.id}",
+            )
+        elif isinstance(node, ast.Attribute):
+            require(node.attr not in {"write_text", "write_bytes", "unlink", "rename"}, "source can mutate files")
+            require(
+                not (isinstance(node.value, ast.Name) and node.value.id == "sys" and node.attr == "path"),
+                "checker changes import search path",
+            )
+            if node.attr in read_method_counts:
+                read_method_counts[node.attr] += 1
+    require(observed_import_roots <= allowed_import_roots, "import firewall rejected a module")
+    require(AUDIT_TIMEOUT_SEC == 180, "timeout declaration")
+    require(DENSE_MATRIX_AXIS_LIMIT == 600, "dense-axis declaration")
+    require(ATOL <= 3.0e-10 and RANK_TOL <= 2.0e-9, "tolerance was weakened")
+    for variable in (
+        "OPENBLAS_NUM_THREADS",
+        "OMP_NUM_THREADS",
+        "MKL_NUM_THREADS",
+        "VECLIB_MAXIMUM_THREADS",
+        "NUMEXPR_NUM_THREADS",
+    ):
+        require(os.environ.get(variable) == "1", f"thread limit {variable}")
+    function_names = {
+        node.name for node in tree.body if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+    }
+    for name in EXPECTED_CHECK_NAMES:
+        require(f"{name}_check" in function_names or name == "source_contract", f"missing check {name}")
+    require(read_method_counts == {"read_text": 1, "read_bytes": 1}, "unexpected file read")
+    return f"AST import/write firewall and execution envelope verified; bytes={len(source.encode())}"
+
+
 def run_checks() -> int:
     checks = [
         ("direct_dictionary", direct_dictionary_check),
@@ -1205,7 +1398,10 @@ def run_checks() -> int:
         ("bipartite_energy_bound", bipartite_energy_bound_check),
         ("placement_and_support", placement_and_support_check),
         ("shared_battery_native_history", shared_battery_native_history_check),
+        ("fibre_moment_identity", fibre_moment_identity_check),
+        ("source_contract", source_contract_check),
     ]
+    require(tuple(name for name, _ in checks) == EXPECTED_CHECK_NAMES, "check registry changed")
     passed = 0
     failed = 0
     for name, function in checks:

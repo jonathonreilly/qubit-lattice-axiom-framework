@@ -179,3 +179,66 @@ parameters, and its loci are: strict `O`/`T`/`S3`/`C3` = the star line alone; tw
 everything. Identical to the runner's `flat_strict` / `flat_twisted`.
 
 **CONFIRMS.**
+
+## CK-11 — THE 64-CELL SCAN AND `G-4`
+
+Note line 343-345, verbatim: "the four sign lines `D16 = ±D34, D25 = ±D34`; it is the **star line at
+exactly / 16 of the 64 cells** and the diagonal at the all-plus cell."
+Note line 349-356, verbatim: "**And the 16 cells have a name** (`G-4`, ...): they are exactly the
+cells at which a **curved** cell is **strictly** covariant (`E = 1`) under some `S3_body` — the
+largest subgroup that keeps both shears alive without any gauge anywhere — and the shear-alive
+strict-`S3` locus there is the star line; strict `T` keeps the shears alive at no cell."
+
+Scanned all 64 sign cells (`b211.flipped` over `GAUGE_FACE_ORDER`) on the checker's own engine, with
+two generators of `O` (an order-3 and an order-4 element, closure verified to be all 24) after
+checking that the generator locus equals the full 24-element locus at the all-plus representative.
+Results: exactly **one** shear-alive component at every one of the 64 cells; the four distinct
+shear-alive ideals over the scan are `('D16 ± D34', 'D25 ± D34')` — the four sign lines; the star
+line `('D16 - D34', 'D25 + D34')` occurs at exactly **16** cells; some `S3_body` keeps both shears
+alive under strict covariance at exactly **16** cells, its shear-alive locus there is the star line,
+and that cell set is **identical** to the twisted-`O` star-line cell set; strict `T` keeps the shears
+alive at **0** cells.
+
+The 16 cells, by face-sign pattern: masks
+`{2, 5, 11, 12, 16, 23, 25, 30, 33, 38, 40, 47, 51, 52, 58, 61}` over
+`GAUGE_FACE_ORDER = (tx0, ty0, xy0, tx1, ty1, xy1)`. Their characterisation (checker's own, offered
+as an addition to the note's `S3` characterisation, not a correction): writing
+`P_f = f_offset0 * f_offset1` for each face type, a cell is a star-line cell **iff**
+`(P_tx, P_ty, P_xy)` is `(+1, -1, +1)` or `(-1, +1, -1)` — i.e. iff the two-offset product of the
+face signs follows the star's own pair-sign pattern `(+, -, +)` on `(tx, ty, xy)` up to a global
+sign. Verified exhaustively: that rule selects exactly those 16 masks and no others (8 cells for
+each of the two admissible `P` triples). The all-plus cell has `(P) = (+, +, +)` and is therefore not
+among them, consistent with its diagonal line.
+
+**CONFIRMS.**
+
+## CK-12 — PLANTED DEFECTS
+
+Spec item 7 (two in-process monkeypatched defects driven through the runner's own `main()`).
+**COULD NOT TEST (time)** — the runner's certified baseline takes ~118 s per run and the 70-minute
+budget was spent on items 1-6, all of which are independent recomputations rather than re-runs of the
+runner. Not a finding against the block: the mutation census is the supervisor's, and every measured
+fact the gates assert was recomputed here from scratch.
+
+---
+
+## Summary of dispositions
+
+| item | subject | disposition |
+| --- | --- | --- |
+| CK-01 | the lift as a representation, intertwining `D(kappa)` | CONFIRMS |
+| CK-02 | `±L(R)` the only monomial intertwiners (256-scan, three axis types) | CONFIRMS |
+| CK-03 | star signs, `** = 1`, `eps = (+1, -1, +1)`, equivariance, `P111` 8 of 24 | CONFIRMS |
+| CK-04 | the star line = Block 214's `PLANE`; `M_oo` coefficient ideal | CONFIRMS |
+| CK-05 | the shears: twisted all 24 alive, strict identity + one edge half-turn | CONFIRMS |
+| CK-06 | the twisted census at the four representatives (`E-2`, `E-4` counts) | CONFIRMS |
+| CK-07 | the strict census (`E-3`), `C3` minimal, `T`/`O` star line + flat | CONFIRMS |
+| CK-08 | `D07` free everywhere | CONFIRMS |
+| CK-09 | the overlap sum: sum-only, `(s/4) P111`, `s` never forced twisted | CONFIRMS |
+| CK-10 | positivity minors, onsite parity, the flat cell | CONFIRMS |
+| CK-11 | the 64-cell scan, `G-4`, and the face-sign characterisation of the 16 | CONFIRMS |
+| CK-12 | planted defects through the runner's `main()` | COULD NOT TEST (time) |
+
+No REFUTES and no CORRECTS. The one thing the note could add, entirely optional and not a blocker:
+the 16 star-line cells have a closed-form face-sign characterisation (CK-11) independent of the
+`S3` one already recorded at `G-4`.

@@ -1,8 +1,24 @@
 {
   "repository": "jonathonreilly/qubit-lattice-axiom-framework",
-  "count": 232,
+  "count": 234,
   "reading_coverage_only": true,
   "rows": [
+    {
+      "number": 7982,
+      "title": "feat(law): a readable matter law exists on the 5x5x5 window; the parity completion keeps the fermion and every menu nonempty",
+      "headRefOid": "8bcd3756c9091e47dcffea3acdc493190abfec06",
+      "baseRefOid": "e249016f759f224d9b429932cd0d1db4d452dc1a",
+      "updatedAt": "2026-09-05T03:54:41Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7982"
+    },
+    {
+      "number": 7981,
+      "title": "[physics-loop] toe-axiom-closure block213 \u2014 bounded_theorem \u2014 conditional-support: the weighted-kernel dispersion (graded cone = union of the two Hodge readings' cones at the degree-diagonal representative, coinciding exactly on a codimension-one locus in eight sign cells; overlap cone a non-Hodge pair; kernel registers shear not diagonal metric)",
+      "headRefOid": "851aff9b3f950e5f08b0bd0878df2e1992bbe15b",
+      "baseRefOid": "4e9931a970ded94f769553da9e6d77770d612f64",
+      "updatedAt": "2026-09-05T03:52:41Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7981"
+    },
     {
       "number": 7980,
       "title": "[physics-loop] u1-maxwell-landing-core block02 \u2014 bounded_theorem \u2014 bounded-support: the #7917 dynamics class against the four axioms (items 4/5 mutually redundant; payload, time rule, locality, conservation are the supplied residual, each with an exact witness)",
@@ -38,9 +54,9 @@
     {
       "number": 7976,
       "title": "[physics-loop] u1-maxwell-landing-core block01 \u2014 meta \u2014 open: the light-lane landing core (31 members at their own scope, the #7917 terminal, the two-branch photon split stated open)",
-      "headRefOid": "c404bf236bb88012684743014beab94728fe1045",
+      "headRefOid": "d2dd83da37f6ebe03c7075a218f9cbdff8a3efe9",
       "baseRefOid": "e249016f759f224d9b429932cd0d1db4d452dc1a",
-      "updatedAt": "2026-09-05T03:18:45Z",
+      "updatedAt": "2026-09-05T04:04:18Z",
       "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7976"
     },
     {

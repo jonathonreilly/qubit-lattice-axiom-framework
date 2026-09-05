@@ -275,3 +275,48 @@ outputs). Every claim in the priority list was instead attacked with independent
   controls (stabilisers, cone, bench); the census/star-pattern classification; the authority gate;
   the float/nsimplify gates; the mutation battery.
 - Every value above was recomputed from scratch; none was read out of the receipt before computing.
+
+## CK-08 — the two controls (all-plus `W1`, flat), loci and bench — CONFIRMS
+
+Note lines 231-232, verbatim:
+
+> `all-plus W1 control                strict: identity only; twisted: the full O for every s   (Block 215's F-2, at the fold)`
+> `flat control                       strict: the D4_face for every s, the other 16 rotations at s = 0 only; twisted: O for every s`
+
+Note lines 321-322, verbatim (the bench control rows):
+
+> `| all-plus `W1` | `λ⁸ (129600λ⁴ − 647676λ³ + 1086353λ² − 711440λ + 147456)²` | `λ⁸ (15λ − 16)² · (4801335λ³ − 18293776λ² + 22913024λ − 9437184)²` | `{0×8, 116281/147456×4, 4844401/3686400×4}` = Block 214's | `{0×8, 1×8}` |`
+> `| flat | `λ⁸ (4λ² − 9λ + 4)² (16λ² − 33λ + 16)²` (measured, not declared) | `{0×8, 1×2, 16/15×6}` | `{0×8, 1×8}` | `{0×8, 1×8}` |`
+
+**What I computed** (same independent machinery, at the all-plus signs; `W1` moduli
+`(v0, g0, v1, g1) = (15/16, 1/4, 1, 1/4)` read from `b211.W1_MODULI`, flat `(1, 0, 1, 0)`; the three
+`s` values with the parameters distributed):
+
+| | `s = 0` | `s = 1/4` | `s = −1/3` |
+| --- | --- | --- | --- |
+| `W1` strict | `{identity}` | `{identity}` | `{identity}` |
+| `W1` twisted | 24 (the full `O`, 4-fold axes `(1,0,0),(0,1,0),(0,0,1)`) | 24 | 24 |
+| flat strict | **24 (all)** | **8 = `{0,1,2,3,20,21,22,23}`** (the `D4_face`) | **8** (the same `D4_face`) |
+| flat twisted | 24 (`O`) | 24 | 24 |
+
+so exactly "the other 16 rotations at `s = 0` only" at the flat cell; and at zero parameters the flat
+onsite cell **is** `I` and the flat overlap fold **is** `I` (both checked as 8×8 identities).
+
+Bench at the line point `(0, 1/4, −1/4, 1/4)`, my own `(4,2,2)`:
+
+- `W1` onsite form `λ⁸ (129600λ⁴ − 647676λ³ + 1086353λ² − 711440λ + 147456)²` — **matches**;
+- `W1` onsite pencil `λ⁸ (15λ − 16)² (4801335λ³ − 18293776λ² + 22913024λ − 9437184)²` — **matches**
+  (irrational roots, so no multiset — the note's "not four rational constants" holds);
+- `W1` overlap form `{0×8, 116281/147456×4, 4844401/3686400×4}`, overlap pencil `{0×8, 1×8}` — **match**;
+- flat onsite form `λ⁸ (4λ² − 9λ + 4)² (16λ² − 33λ + 16)²`, onsite pencil `{0×8, 1×2, 16/15×6}`,
+  overlap form and pencil `{0×8, 1×8}` — **all match**;
+- the `κ = e_t` identity `λ⁸ · charpoly((H0⁻¹M(e_t))²) =` onsite pencil bench charpoly also holds at
+  the `W1` control — **True**.
+
+Also checked by inspection of the CK-01 literal at mask 2's signs `(1,1,1,1,−1,1)`: the face products
+are `(P_tx, P_ty, P_xy) = (+, −, +)`, so the `tx` and `xy` couplings are both
+`−(g0 v0 v1 + g1)/(4 v0)` and the `ty` coupling is `−(g0 v0 v1 − g1)/(4 v0)` — the note's
+lines 235-238, and the reason the 4-fold that exchanges `tx` and `xy` and fixes `ty` is the one about
+the `x` axis.
+
+DISPOSITION: **CONFIRMS.**

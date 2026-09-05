@@ -133,3 +133,38 @@ timings_ms: {'authority': 497, 'group': 17417, 'census': 2062, 'covariance': 942
 GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
 TOTAL: PASS=27 FAIL=0
 ```
+
+## Mutation census (28 declared mutations at the certified sha `472c5dd5...` / blob `b8568c8dab`; one helper script per mutation, 4-way parallel, concurrent with the certification run; every run exits 1 through `main()`'s own-gate assertion path, i.e. each mutation fails EXACTLY its declared family and no other)
+
+| mutation | declared gate | failing check(s) | TOTAL | exit |
+| --- | :---: | --- | --- | :---: |
+| `stale_main_authority` | A | A-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `stale_parent_authority` | A | A-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `claim_objects_registered` | B | B-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `claim_gravity_supplied` | B | B-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `claim_covariance_inherited` | B | B-3  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `claim_assembly_decided` | B | B-4  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `claim_cell_selected` | B | B-4  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `claim_metric_supplied` | B | B-4  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_indexing_agreement` | C | C-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_star_pattern_masks` | C | C-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_coincidence_census` | C | C-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_witness_solves` | C | C-4  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_m_oo_lemma` | D | D-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_union_necessity` | D | D-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `claim_union_from_identity_alone` | D | D-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_intersection` | E | E-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_positive_subset` | E | E-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_covariant_witness` | F | F-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `claim_covariant_cell_empty` | F | F-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_one_metric_cone` | F | F-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_branch_table` | G | G-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_d07_rescale` | G | G-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_d07_congruence` | G | G-3  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_symbol_invariance` | G | G-4  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_scout_grade_fence` | H | H-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_instance_scope` | H | H-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `drop_n5_fence` | I | I-1  | TOTAL: PASS=26 FAIL=1 | 1 |
+| `break_float_absence` | I | I-2  | TOTAL: PASS=26 FAIL=1 | 1 |
+
+Summary: 28/28 mutations each fail exactly their own gate family (A 2, B 6, C 4, D 3, E 2, F 3, G 4, H 2, I 2); no mutation changed any other family; no `AssertionError` ("mutation did not fail exactly its own gate") anywhere.

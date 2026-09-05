@@ -768,6 +768,7 @@ def measure_group() -> dict:
     facts["subgroups_complete"] = complete
     facts["class_table"] = tuple((name, order, size) for name, order, size, _ in labelled)
     facts["representatives"] = {name: rep for name, _, _, rep in labelled}
+    facts["classes"] = {SIGNATURE_NAMES.get(class_signature(cls[0], orders, axes), "UNNAMED"): cls for cls in classes}
     facts["lifts"] = lifts
     facts["rotations"] = rots
     facts["table"] = table
@@ -827,6 +828,15 @@ def measure_census(group: dict) -> dict:
         for name, rep in group["representatives"].items():
             facts["twisted"][(key, name)] = describe(subgroup_locus(twisted, rep, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS)
             facts["strict"][(key, name)] = describe(subgroup_locus(strict, rep, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS)
+        # EVERY member of every class (30 subgroups): the loci at a FIXED cell are
+        # not conjugation-invariant, so the number of distinct loci per class is
+        # measured (1 for the normal subgroups; sign images otherwise).
+        for kind, per in (("twisted", twisted), ("strict", strict)):
+            for name, cls in group["classes"].items():
+                distinct = {describe(subgroup_locus(per, member, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS) for member in cls}
+                facts.setdefault(f"{kind}_distinct_per_class", {})[(key, name)] = len(distinct)
+                if name == "O" or name == "T" or name == "V4_faces":
+                    facts.setdefault(f"{kind}_normal_single", {})[(key, name)] = len(distinct) == 1
     return facts
 
 
@@ -880,11 +890,39 @@ def measure_controls(group: dict) -> dict:
                              for name, rep in group["representatives"].items()}
     facts["flat_strict"] = {name: describe(subgroup_locus(strict, rep, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS)
                             for name, rep in group["representatives"].items()}
-    zero = {p: 0 for p in PARAMETER_SYMBOLS}
-    base = family((1, 1), PARAMETER_SYMBOLS).subs(zero)
-    facts["gauge_congruence_in_field"] = all(
-        any(residual_count((sp.diag(*e) * base * sp.diag(*e) - family(key, PARAMETER_SYMBOLS).subs(zero)).applyfunc(sp.expand)) == 0
-            for e in sign_vectors()) for key in GAUGE_CLASSES)
+    # THE GAUGE CONGRUENCE IN THE FIELD: a two-face flip at one offset (same
+    # class) IS E D E for one of the 64 sign vectors at symbolic moduli; a
+    # one-face flip (the other class) is NOT -- the per-offset product is the
+    # invariant.
+    base = family((1, 1), PARAMETER_SYMBOLS)
+
+    def reachable(signs: dict) -> bool:
+        target = b214.formal_cell(signs, G0, G1, V0, V1, PARAMETER_SYMBOLS)
+        return any(residual_count((sp.diag(*e) * base * sp.diag(*e) - target).applyfunc(sp.expand)) == 0
+                   for e in sign_vectors())
+    facts["gauge_congruence_in_field"] = (
+        reachable(b211.flipped(("tx", 0), ("ty", 0))) and reachable(b211.flipped(("tx", 1), ("xy", 1)))
+        and not reachable(b211.flipped(("xy", 0))) and not reachable(b211.flipped(("xy", 1))))
+    # THE 64 SIGN CELLS UNDER THE FULL GROUP (two generators suffice: the signed
+    # lifts fixing H form a group): at which cells is the shear-alive twisted
+    # locus the star line?
+    table, orders = group["table"], group["orders"]
+    g3 = orders.index(3)
+    g4 = next(i for i in range(24) if orders[i] == 4 and len(closure(table, frozenset((g3, i)), group["identity_index"])) == 24)
+    facts["generators_generate_o"] = len(closure(table, frozenset((g3, g4)), group["identity_index"])) == 24
+    star_line = canonical_subspace([[0, 1, 0, -1], [0, 0, 1, 1]], PARAMETER_SYMBOLS)
+    scan = {}
+    for values in itertools.product((1, -1), repeat=6):
+        signs = dict(zip(b211.GAUGE_FACE_ORDER, (sp.Integer(v) for v in values)))
+        cell = b214.formal_cell(signs, G0, G1, V0, V1, PARAMETER_SYMBOLS)
+        per = tuple(irredundant([constraints(cell, lifts[g], e, PARAMETER_SYMBOLS) for e in sign_vectors()]) for g in (g3, g4))
+        locus = intersect(per[0], per[1], PARAMETER_SYMBOLS)
+        alive = tuple(v for f, v in locus if not f)
+        scan[values] = (len(alive), alive == (star_line,), describe(tuple((frozenset(), v) for v in alive), PARAMETER_SYMBOLS))
+    facts["cell_scan_alive_component_counts"] = tuple(sorted(set(v[0] for v in scan.values())))
+    facts["cell_scan_star_line_cells"] = sum(1 for v in scan.values() if v[1])
+    facts["cell_scan_distinct_alive_loci"] = tuple(sorted(set(v[2] for v in scan.values())))
+    facts["cell_scan_all_plus"] = scan[(1,) * 6][2]
     cell, free, _ = b214.cell_with_parameters("W1")
     renamed = cell.subs({s: dict(zip(PARAMETER_NAMES, PARAMETER_SYMBOLS))[str(s)] for s in cell.free_symbols
                          if str(s) in PARAMETER_NAMES})

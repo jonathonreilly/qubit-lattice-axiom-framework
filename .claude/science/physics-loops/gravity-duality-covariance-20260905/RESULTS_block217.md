@@ -132,3 +132,41 @@ timings_ms: {'authority': 629, 'group': 89745, 'census': 11070, 'fold': 489, 'lo
 GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
 TOTAL: PASS=29 FAIL=0
 ```
+
+## Mutation census (29 declared mutations at the certified runner sha `60bb268a...` / blob `25b0714ef9`; one helper invocation per mutation (`run_mutation.sh <name>`), batches of four (at most 4 concurrent), launched after the certification run; every run exits 1 through `main()`'s own-gate assertion path, i.e. each mutation fails EXACTLY its declared family and no other)
+
+Disclosed: a first census driver launched all 29 at once (zsh `jobs -r` does not track background jobs in a non-interactive script); it was stopped after ~80 s, its outputs discarded, and the census re-run with the batch-of-four driver; the certification run that overlapped its first 80 s finished `exit 0` in 180.7 s (the group phase absorbed the contention) and is superseded by the recertification below.
+
+| mutation | declared gate | failing check(s) | TOTAL | exit |
+| --- | :---: | --- | --- | :---: |
+| `stale_main_authority` | A | A-1 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `stale_parent_authority` | A | A-2 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `claim_objects_registered` | B | B-1 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `claim_gravity_supplied` | B | B-2 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `claim_covariance_inherited` | B | B-3 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `claim_assembly_decided` | B | B-4 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `claim_cell_selected` | B | B-4 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `claim_metric_supplied` | B | B-4 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_cell_census` | C | C-1 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_witness_reproduction` | C | C-2 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_fold_sees_sum` | C | C-3 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_flat_control` | C | C-4 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_union_locus_s` | D | D-1 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_strict_stabiliser` | D | D-2 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_twisted_stabiliser` | D | D-3 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_shear_relation` | D | D-4 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `claim_curve_satisfies_shear_relation` | D | D-5 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_overlap_cone_pair` | E | E-1 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `claim_overlap_cone_is_onsite_cone` | E | E-2 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_overlap_cone_symbolic_s` | E | E-3 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_bench_multisets` | F | F-1 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_bloch_equals_direct` | F | F-2 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_bench_control` | F | F-3 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_bench_reads_principal_part` | G | G-1 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_bloch_fold_sees_parameters` | G | G-2 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_scout_grade_fence` | H | H-1 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_instance_scope` | H | H-2 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `drop_n5_fence` | I | I-1 | TOTAL: PASS=28 FAIL=1 | 1 |
+| `break_float_absence` | I | I-2 | TOTAL: PASS=28 FAIL=1 | 1 |
+
+Summary: 29/29 mutations each fail exactly their own gate family (A 2 B 6 C 4 D 5 E 3 F 3 G 2 H 2 I 2); no mutation changed any other family; no `AssertionError` ("mutation did not fail exactly its own gate") anywhere.

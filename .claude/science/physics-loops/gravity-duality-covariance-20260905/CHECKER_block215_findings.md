@@ -72,3 +72,110 @@ Block 214's `PLANE` read from the landed module. Independently, the coefficient 
 `(D16 + D25) kt`, `(D34 - D16) kx`, `-(D25 + D34) ky`, matching the note's line 252-253.
 
 **CONFIRMS.**
+
+## CK-05 — THE SHEARS (`E-1`)
+
+Note line 283-286, verbatim: "- **Strict**: only the identity and **one** edge half-turn per class
+preserve / both blocks with `E = 1`; every other rotation forces `g0 = 0` or `g1 = 0` or / both. So
+strict covariance under any subgroup beyond `C2_edge` kills a / shear, and `T`, `O` kill both."
+
+Recomputed per rotation, per gauge class, on the checker's own option engine (a rotation keeps both
+shears iff some admissible sign vector forces no moduli condition). Twisted: `True` for all 24
+rotations in all four classes. Strict: exactly `2` rotations per class, at Block 201's indices
+`(0, 23)` for `(1, 1)`, `(0, 11)` for `(1, -1)`, `(0, 8)` for `(-1, 1)`, `(0, 21)` for `(-1, -1)` —
+index `0` is the identity and the other is an order-2 **edge**-axis element in every class (axis read
+from the `+1` eigenvector). These are index-for-index the runner's
+`per_rotation_strict_shears_survive` and `per_rotation_twisted_shears_survive`.
+
+**CONFIRMS.**
+
+## CK-06 — THE TWISTED CENSUS AT THE FOUR REPRESENTATIVES (`E-2`)
+
+Note line 296-299, verbatim: "> **TWISTED `O`-COVARIANCE OF THE CURVED FAMILY FORCES ONE LINE AND IT
+IS NOT / > THE STAR LINE AT ANY REPRESENTATIVE.** At the all-plus representative it is the / >
+diagonal `D16 = D25 = D34`; the shear-alive line meets the star line only at / > the origin
+`D16 = D25 = D34 = 0` (measured per class)."
+
+Computed for `1`, `C2_face`, `C2_edge`, `C3_body`, `S3_body`, `T`, `O` at all four representatives,
+over **every** member of each class, by direct per-`(rotation, sign vector)` solution sets combined
+into a pruned union (a different representation from the runner's: options first, `rref` ideals,
+Groebner containment on the moduli conditions). Every component of every locus matches the runner's
+declared `TWISTED_LOCI` line for line, e.g. at `(1, 1)` for `C3_body`/`S3_body`/`T`/`O`:
+`((), ('D16 - D34', 'D25 - D34'))` plus the six shear-killed components with `('g0',)` or `('g1',)`
+and the three other sign lines; at `(1, -1)` and `(-1, 1)` the alive component is
+`((), ('D16 + D34', 'D25 + D34'))` = `D16 = D25 = -D34`; at `(-1, -1)` it is the diagonal again.
+`C2_edge`-type classes give `((), ('D16 - D25',))`, `((), ('D16 + D25', 'D34'))` and the two
+shear-killed `('D16 + D25',)` components. The trivial group, `C2_face` (and `V4_faces`, contained in
+the `O` computation) force nothing. The diagonal meets the star line only at the origin (`D25 = D34`
+and `D25 = -D34` force `D16 = D25 = D34 = 0`). Distinct-locus counts per class reproduce `E-4`:
+`1` for `C3_body`, `S3_body`, `T`, `O`; `3` for `C2_edge`.
+
+**CONFIRMS.**
+
+## CK-07 — THE STRICT CENSUS (`E-3`)
+
+Note line 324-327, verbatim: "> **STRICT `O`-COVARIANCE FORCES THE STAR LINE AND THE FLAT CELL
+TOGETHER.** The / > minimal strict class forcing the star line is `C3_body`, and it kills one shear /
+> (`g1 = 0` at the all-plus representative, ...)"
+
+At `(1, 1)`: `T` and `O` give `(('g0', 'g1'), ('D16 - D34', 'D25 + D34'))` — the star line with the
+flat-shear conditions; `C3_body` gives three distinct loci over its four members, `(('g1',), star)`,
+`(('g0',), star)`, `(('g0','g1'), star)` — the runner's declared representative is the `g1` one and
+the count `3` is the runner's `strict_distinct_per_class`; `S3_body` likewise `3` with the declared
+representative `(('g0',), star)`; `C2_edge` `6` distinct with the declared representative
+`(('g0',), ('D16 + D25',))` and one member with **no** forced condition, `((), ('D16 - D34',))`,
+which is the shear-alive edge half-turn of CK-05; `C2_face` gives `(('g0','g1'), ())`. No `C3`, `S3`,
+`T` or `O` member keeps a shear alive strictly at any representative. The class-representative
+caveat is exactly the note's scope qualification 5 (line 457-459) and gate `E-4`; nothing in the
+tables is representative-dependent in a way the note does not declare.
+
+**CONFIRMS.**
+
+## CK-08 — `D07` IS FREE (`E-5`)
+
+Note line 273, verbatim: "nonzero denominators). `D07` appears in **no** generator anywhere (`E-5`)."
+
+No generator of any component of any locus computed here — twisted or strict, onsite, any subgroup,
+any class, any of the 64 cells — contains `D07`. Mechanism reproduced independently: every lift is
+`+1` on corners 0 and 7 (CK-01), so the `(0, 7)` entry maps to `e0 e7 D07` and Block 211's sign
+vectors fix `e0 = e7 = +1`.
+
+**CONFIRMS.**
+
+## CK-09 — THE OVERLAP SUM (`F-1`, `F-2`)
+
+Note line 390-392, verbatim: "> **NO SUBGROUP's TWISTED COVARIANCE FORCES `s = 0`.** `s = 0` is
+exactly the / > parity-preserving fold, and strict covariance reaches it only through a shear /
+> relation."
+
+Verified independently that the overlap `H0` depends on the four parameters only through their sum
+(the four entrywise derivatives `dH0/dD07`, `dH0/dD16`, `dH0/dD25`, `dH0/dD34` are equal), and that
+with `(D07, D16, D25, D34) = (s, 0, 0, 0)` its even-odd block is exactly `(s/4) P111`. `P111` is the
+unsigned star, commutes with the unsigned corner permutation of every rotation and with exactly `8`
+of the 24 signed lifts, while the star commutes with all 24 (CK-03). Loci in `s` for `1`, `C2_face`,
+`C2_edge`, `C3_body`, `T`, `O` at the four representatives reproduce the runner's declared table
+entry for entry: twisted, `s` free in every case (`(((), ()),)`, or `((('g0',), ()), (('g1',), ()))`
+for the `C3`-containing subgroups in the two mixed classes — a shear forced on every component,
+never `s`); strict, `s = 0` together with `('g0*v0*v1 + g1',)` at `(1, 1)` and `(-1, -1)`, and with
+`('g0', 'g0*v0*v1 + g1', 'g0*v0*v1 - g1', 'g1')` for `T`/`O` at the two mixed classes; `1`,
+`C2_face` (and `V4_faces`) never force `s`. The all-plus strict relation is `g0 v0 v1 + g1 = 0`
+exactly as the note states at line 386-388.
+
+**CONFIRMS.**
+
+## CK-10 — THE CONTROLS (`G-1`, `G-2`, `G-3`)
+
+Note line 399-400, verbatim: "positive definite by exact leading minors / `(15/16, 15/16, 225/256,
+15/16, 25/32, 25/32, 1465/2304, 1465/2304)`."
+
+Own exact leading principal minors of `cell_with_parameters("W1")` with `D16 = 1/4` and the other
+three zero: `(15/16, 15/16, 225/256, 15/16, 25/32, 25/32, 1465/2304, 1465/2304)`, all positive, at
+`D16 - D34 = 1/4 != 0` (off the plane). The folded onsite `H0` **is** the cell, and its even-odd
+block entries are exactly `D07, D16, D25, D34` — parity is preserved iff all four vanish, i.e. the
+origin, not the plane. The flat cell (`g0 = g1 = 0`, `v0 = v1 = 1`) is the identity at zero
+parameters, and its loci are: strict `O`/`T`/`S3`/`C3` = the star line alone; twisted
+`O`/`T`/`S3`/`C3` = the four sign lines `D16 = ±D34`, `D25 = ±D34`; `C2_edge`-type = `D16 = ±D25`
+(strict, per representative; three distinct sign images over the six members); `1`, `C2_face` =
+everything. Identical to the runner's `flat_strict` / `flat_twisted`.
+
+**CONFIRMS.**

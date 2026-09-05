@@ -287,3 +287,181 @@ are one rule read twice.
 > TWO MIXED GAUGE CLASSES. THE INTERSECTION IS NOT EMPTY; IT IS EVERYTHING.**
 
 ---
+
+## N4 — THE COVARIANT WITNESS, THE BRANCHES ON ITS LINE, THE SYMBOL, AND THE CONTROLS
+
+### The covariant witness with one metric's cone — at every one of the 8 positive cells (`F-1`, `F-2`)
+
+Block 213's curve point is transported to each rule-A cell by its class of
+`π0`: L+−'s moduli `(√6/3, 1/3, 3√6/8, 1/2)` where `π0 = +1`, L−+'s
+`(√6/3, 1/2, 4√6/9, 1/3)` where `π0 = −1` — on the curve `g0 = g1/(1 + π0 g1)`,
+on both ties, both shears nonzero. At each of the 8 cells, measured:
+
+```text
+positive definite (exact leading minors)                       yes, all 8;  Block 211's own solve with the four parameters free   yes, all 8
+strict stabiliser of the zero-parameter cell                  an S3_body: orders (1, 2, 2, 2, 3, 3) -- both shears alive with E = 1
+its parameter locus (Block 215's constraints, E = 1)           (D16 - D34, D25 + D34) with NO forced condition: the star line, shears alive
+the cell with (lam, -lam, lam) on the line                     preserved by the whole S3 (the covariant cell stays covariant on its line)
+the two readings                                               G2 = mu G1 with mu = 32/27 (class (+1, -1)) or 27/32 (class (-1, +1))
+the graded cone (zero parameters)                              det B = c (k^T G1 k)^2
+the cone ON THE STAR LINE, multiple symbolic                   det M = c (k^T G1 k)^4,  c = 64/81 (pi0 = +1), 9/16 (pi0 = -1): NO lam-dependence
+```
+
+So the witness asked for in (c) exists at **every** common positive cell, and
+it is not a coincidence point but a curve: for every line multiple `λ`, and
+(by the `D07` congruence below) for every `D07`, the cone is **one metric's
+cone** — Block 213's exact statement, now with the covariant parameters on.
+Mutations `break_covariant_witness`, `claim_covariant_cell_empty`,
+`break_one_metric_cone`.
+
+### The branches on the covariant line (`G-1`, `G-2`)
+
+At the two named witnesses (their own cells, masks 2 and 16) with
+`(D16, D25, D34) = (λ, −λ, λ)` and `λ` **symbolic**, the H-pencil charpoly of
+`(H0⁻¹ M)²` over `QQ(√6)(λ)[κ]` factors into linear factors only — every
+branch is a `k`-free constant times `kᵀ G1 k`:
+
+| witness | branch constants on the line, `λ` symbolic | at `λ = 1/4` | at `λ = 1/4`, `D07 = 1/4` |
+| :---: | --- | --- | --- |
+| `L+−` (`v0 v1 = 3/4`, `v1/v0 = 9/8`) | `1` (×2), `(32/27)/(1 − 4λ²/3)` (×2), `(4/3)/(1 − 4λ²/3)` (×4) | `1, 128/99, 16/11, 16/11` | `128/119, 128/99, 16/11, 16/11` |
+| `L−+` (`v0 v1 = 8/9`, `v1/v0 = 4/3`) | `1` (×2), `(27/32)/(1 − 9λ²/8)` (×2), `(9/8)/(1 − 9λ²/8)` (×4) | `1, 108/119, 144/119, 144/119` | `108/119, 12/11, 144/119, 144/119` |
+
+Block 213's zero-parameter constants `{1, μ, 1/(1 − g1²) ×2}` reappear with
+**two independent rescalings, on complementary branches**: the line multiple
+rescales the top-form constant `μ` and the transverse pair by the same factor
+`1/(1 − λ²/(v0 v1))` (measured at both witnesses: `12/11` and `128/119` at
+`λ = 1/4`) and leaves the 0-form constant `1`; `D07` rescales the 0-form
+constant alone by `1/(1 − D07² v1/v0)` — Block 214's `128/119` at L+−, and
+`12/11` at L−+, re-measured on the covariant line — and leaves the others.
+The transverse pair stays a degenerate pair (multiplicity 4) on the line. The
+denominators are the line's positivity bounds: `λ² < v0 v1` and `D07² < v0/v1`.
+So on the covariant line the cone is one quadric's fourth power **and the
+symbol is still not scalar**: four distinct branch constants.
+
+### The `D07` congruence at symbolic face signs (`G-3`)
+
+`U = I − (D07/D3) E_70` gives `Uᵀ M U = M|_{D07 = 0}` with the six face signs,
+the four moduli and the three other parameters all symbolic, and
+`Uᵀ H0 U − H0|_{D07=0}` is `−D07² v1` on the `(0, 0)` entry and zero
+elsewhere — Block 214's `N2` now at every cell at once. `det U = 1`, so
+`det M` is `D07`-free at every cell: the cone statements above hold for every
+`D07`.
+
+### The symbol under strict `S3` and under a twisted rotation (`G-4`)
+
+Block 213's identity `det B = D3 (kᵀ D1 k)(kᵀ E adj(D2) E k)` holds at every
+witness. Under `κ → Rκ` the two quadrics and `det B` are each invariant for
+**exactly** the six rotations of the strict stabiliser — the `S3_body` — and
+for no other of the 24; the `S3`'s 3-fold axis is one of the four body
+diagonals (all four occur across the 8 cells), and each quadric lies in the
+**two-dimensional** space of `S3`-invariant quadratic forms
+`span(|k|², (n·k)²)` (e.g. at L+−, `n = (1, 1, 1)`:
+`kᵀ D1 k = (√6/2)|k|² − (√6/8)(n·k)²`, `kᵀ E adj(D2) E k = (3/2)|k|² − (3/8)(n·k)²`,
+proportional — the coincidence). The `O`-invariant space is
+**one-dimensional**: only the flat cell's `|k|²`. That is exactly what
+survives: strict `S3` covariance makes each cone factor an `S3`-invariant
+quadric (two parameters each) and the symbol an `S3`-invariant octic; only
+the full group would force the flat cone (the blind seat's corollary, `O`
+being strictly covariant only at the flat cell). Under a **twisted**
+rotation `T = E L` (four admissible twists for the order-4 generator at L+−)
+the symbol is not invariant: `Tᵀ M(κ) T = M_{E'}(R⁻¹κ)` with `E' = Lᵀ E L`,
+so `det M(Rκ) = det M_{E'}(κ)` is the symbol of the **gauged** raising part
+`E' D E'` (which differs from `D`), `det B` matching up to the twisted lift's
+sign `det T_e det T_o`, and `det M(Rκ) ≠ det M(κ)`. Twisted covariance imposes
+an identity between two kernels' symbols, not an invariance of one.
+
+### The controls
+
+- **All-plus** (Block 214's `W1`): the union locus is the star line and the
+  twisted-`O` line is the diagonal, no `S3` keeps the shears alive — covariance
+  and the cone disagree there (`C-3`, `D-2`).
+- **The flat cell**: the union locus is the star line; the quadrics are
+  `|k|²`; strict `O` selects the star line there (Block 215) — the trivial
+  common point.
+- **The rule-B star cells**: covariant (the star line, the shears alive) with
+  the union locus the star line, but Block 213's rule-B curve has no positive
+  point — covariant curved cells whose coincidence curve is empty on the
+  positive domain; 3 face flips from the nearest rule-A cell (`E-2`).
+
+---
+
+## N4g — THE INTERPRETATIONS FENCE (required section)
+
+### The words, and what each of them actually names here
+
+- **COVARIANCE** names `(E_R R) H (E_R R)^T = H`. Not an invariance of a law.
+- **CONE** names the zero set of `det M(κ)`; **one metric's cone** names
+  `det M = c (kᵀ G1 k)⁴` with `G1 ∝ G2`, Block 213's statement.
+- **CELL** names a face-sign cell of Block 211's family; none is selected.
+- **LOCUS** names a union of linear subspaces or a radical ideal.
+- **METRIC** names Block 213's `G1`, `G2`. Not geometry.
+- **SHEAR**, **VOLUME**, **STAR**, **PLANE**, **GAUGE**: Block 211's moduli,
+  Block 215's star, Block 214's plane, Block 211's congruence — as inherited.
+
+### The six scope qualifications, carried as content — each a gated constant, a fence and a mutation
+
+1. **ALL OF IT IS SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT
+   A SPACETIME AND NOT A DYNAMICS** — Block 211's fence, inherited verbatim.
+   Gate `H-1`, mutation `break_scout_grade_fence`.
+2. **THE THEOREM IS A CONDITIONAL.** The antecedent is reading `R1`. Gate
+   `B-3`, mutation `claim_covariance_inherited`.
+3. **NO CELL, SUBGROUP, ASSEMBLY, METRIC OR PARAMETER VALUE IS SELECTED.** Gate
+   `B-4`, mutations `claim_cell_selected`, `claim_assembly_decided`,
+   `claim_metric_supplied`.
+4. **THE INSTANCE SCOPE, ENUMERATED.** The 16 cells with two controls; the
+   onsite assembly; the declared witnesses; the pencil factored at two; Block
+   215's covariance notion; no bench, no continuum. Gate `H-2`, mutation
+   `break_instance_scope`.
+5. **THE NECESSITY HALF IS AT WITNESSES**, 26 exact points, not symbolic in
+   the moduli; the lemma half is symbolic in everything. Gate `D-2`.
+6. **THE READINGS ARE READINGS**, six of them, none licensed. Gate `B-5`.
+
+### The narrowest true statement, written out so it cannot be paraphrased upward
+
+> On Block 211's family at the 16 face-sign cells whose two-offset products are
+> `(+, −, +)` or `(−, +, −)`: the odd–odd block of the onsite principal part is
+> `(D16 + D25) kt, (D34 − D16) kx, −(D25 + D34) ky` at symbolic face signs and
+> moduli, so `det M = det B²` on the star line at every cell; the radical of the
+> coefficient ideal of `det M − det B²` is `(D16 − D34, D25 + D34)` at W1's
+> moduli in all 16 cells, at the all-plus cell, at the flat cell, and at Block
+> 213's curve moduli in the 8 rule-A cells; the 16 cells are Block 213's 16
+> curve cells, rule A being `P = (+, −, +)` and rule B `P = (−, +, −)`; at each
+> rule-A cell the transported curve point is positive definite, Block 211's
+> solve, has an `S3_body` as strict stabiliser, the star line as parameter
+> locus, is preserved on the line, has `G2 = μ G1`, `det B = c (kᵀ G1 k)²` and
+> `det M = c' (kᵀ G1 k)⁴` on the line for symbolic `λ`; at L+− and L−+ the
+> pencil branches on the line are the declared constants; the `D07` congruence
+> holds at symbolic signs; the quadrics and `det B` are invariant under exactly
+> the stabiliser, each quadric in the two-dimensional invariant space, and a
+> twisted rotation gives `det M(Rκ) = det M_{E'}(κ)`.
+
+### What IS established, stated positively so the fence is not mistaken for a retreat
+
+**Block 215's `REOPEN` item 2 is answered in the affirmative at every one of
+the 16 cells**: covariance and the cone agree there with the shears alive.
+**The two censuses are one census.** **The covariant witness exists at every
+positive cell and carries one metric's cone along a whole line.**
+
+---
+
+## CLAIM REGISTER — formulas, and the family that gates each
+
+| # | claim | value | gate |
+| :---: | --- | --- | :---: |
+| 1 | the two indexings | `FACES = GAUGE_FACE_ORDER = (tx0, ty0, xy0, tx1, ty1, xy1)` | `C-1` |
+| 2 | the 16 star cells, Block 213's census | the declared masks, 4 per class; `48 + 4 × 4` | `C-2` |
+| 3 | covariance at the 16 | twisted-`O` = star line; one strict `S3` alive; all-plus diagonal | `C-3` |
+| 4 | the witnesses | Block 211's solves; PD; on the curve and ties | `C-4` |
+| 5 | the `M_oo` lemma | the three entries; free symbols; block identity; sufficiency | `D-1` |
+| 6 | necessity | radical = the star line at all 26 witnesses | `D-2` |
+| 7 | one witness per class | representatives `5, 2, 11, 12` | `D-3` |
+| 8 | the intersection | all 16; rule A iff `(+,−,+)`, rule B iff `(−,+,−)`; `P_f = ±E_k` | `E-1` |
+| 9 | the positive subset | all 8 rule-A; classes; distances `0 ×8, 3 ×8` | `E-2` |
+| 10 | the covariant witness | 8 cells; `S3_body` stabiliser; star line alive; preserved | `F-1` |
+| 11 | one metric's cone | `μ = 32/27, 27/32`; `det M = c (kᵀG1k)⁴`, `c = 64/81, 9/16` | `F-2` |
+| 12 | the branches on the line | the declared table (symbolic `λ`, `1/4`, with `D07`) | `G-1` |
+| 13 | the two rescalings | `1/(1 − λ²/(v0v1))`, `1/(1 − D07² v1/v0)`; `128/119` | `G-2` |
+| 14 | the `D07` congruence | symbolic signs; shift `−D07² v1` | `G-3` |
+| 15 | the symbol | identity; invariance = `S3`; dims `(2, 1)`; twisted = gauged | `G-4` |
+
+---

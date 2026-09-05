@@ -218,3 +218,132 @@ they are conjugation-invariant only for the three normal subgroups, and for the
 others the members' loci are sign images of one another (the distinct-locus
 counts per class are declared and gated, `E-4`). The tables quote the class
 representative (the first subgroup of each class in the runner's order).
+
+---
+
+## N2 — THE STAR LEMMA: the plane is the star line, and the signs are derived
+
+### The star from the wedge (`D-1`)
+
+`* e_c = σ_c e_{c̄}` with `σ_c` the coefficient of `e_{txy}` in `e_c ∧ e_{c̄}`,
+the wedge being the product of the lane's own `D(e_μ)` — no sign assumed. In
+Block 209's corner order `0..7 = ∅, y, x, xy, t, ty, tx, txy`:
+
+```text
+star signs   (+1, +1, -1, +1, +1, -1, +1, +1):   * 1 = txy,  * t = +xy,  * x = -ty,  * y = +tx,  * xy = +t, ...
+* * = +1 on every degree (measured, scalar on each degree);
+* D(kappa) = eps_k D(kappa)^T *  on k-forms with eps = (+1, -1, +1) for k = 0, 1, 2   (the adjoint identity, sign measured);
+* commutes with every one of the 24 lifts  L(R) * = * L(R)                             (equivariance, measured).
+```
+
+### The star line (`D-2`)
+
+On the duality pairs `(0,7), (1,6), (2,5), (4,3)` the star's signs are
+`(+, +, −, +)`: `y → +tx`, `x → −ty`, `t → +xy`. The `1 ↔ 2` cross block of the
+family is `X = [[0,0,D16],[0,D25,0],[D34,0,0]]` on `(y, x, t) × (xy, ty, tx)`, so
+`X = λ ·(*|_{1→2})` **exactly** when `(D16, D25, D34) = λ (+1, −1, +1)`:
+
+> **THE STAR LINE IS `D16 = D34 = −D25` — BLOCK 214's PLANE, LITERAL FOR LITERAL
+> (`PLANE = ("D16 - D34", "D25 + D34")`) — WITH `D07` THE FREE `0 ↔ 3` STAR
+> MULTIPLE (`* 1 = +txy`).**
+
+And this is *why* Block 214's odd–odd block vanishes there: at symbolic moduli
+and parameters the onsite `M_oo` (Block 214's `[(D16 + D25) kt, (D34 − D16) kx,
+−(D25 + D34) ky]`) has, as the ideal of its `κ`-coefficients in the parameters,
+**exactly the star line** — it vanishes on the line and at no point off it
+(measured at `(D16, D25, D34) = (λ, λ, λ)`). The mechanism is the adjoint
+identity with `ε₁ = −1`: on the line the cross contribution to `M` is
+`λ (* D + Dᵀ *)` restricted to the 1-forms, and `* D = −Dᵀ *` there. Gate `D-2`,
+mutations `break_star_signs`, `break_star_line`. **The identity of loci** {union
+of the two Hodge cones, Block 214 `F-4`} = {`1 ↔ 2` cross block star-proportional}
+therefore holds at Block 214's witnesses by Block 214's Gröbner bases on one side
+and the star lemma on the other; the cone is not recomputed here.
+
+---
+
+## N3 — THE CENSUS: first the shears, then the loci
+
+### Reading the tables
+
+A locus is a union of components `(forced moduli conditions; linear ideal in
+the parameters)`. `()` as the ideal means everything; `g0`, `g1` as forced
+conditions mean that component exists only with that shear zero. Every
+component is at symbolic `(v0, g0, v1, g1)`; the volumes never appear (they are
+nonzero denominators). `D07` appears in **no** generator anywhere (`E-5`).
+
+### The shears first (`E-1`)
+
+- **Twisted**: in all four gauge classes, **every one of the 24 rotations** admits a
+  sign vector that restores both degree blocks — the shears survive twisted
+  covariance under every rotation and hence under every subgroup. (The reason
+  is Block 211's own invariant: a signed permutation multiplies the triangle's
+  three edge signs by `σ_μσ_ν` over the three edges, whose product is `+1`, so
+  the per-offset sign class is preserved and a gauge restores the cell.)
+- **Strict**: only the identity and **one** edge half-turn per class preserve
+  both blocks with `E = 1`; every other rotation forces `g0 = 0` or `g1 = 0` or
+  both. So strict covariance under any subgroup beyond `C2_edge` kills a
+  shear, and `T`, `O` kill both.
+
+### The twisted census at the four representatives (`E-2`), shear-alive components in bold
+
+| subgroup | `(1, 1)` all-plus | `(1, −1)` | `(−1, 1)` | `(−1, −1)` |
+| --- | --- | --- | --- | --- |
+| `1`, `C2_face`, `V4_faces` | **everything** | **everything** | **everything** | **everything** |
+| `C2_edge`, `C4_face`, `V4_face_edges`, `D4_face` | **`D16 = D25`** ∪ **`{D16 = −D25, D34 = 0}`**; `D16 = −D25` with `g0 = 0` or `g1 = 0` | same | same | same |
+| `C3_body`, `S3_body`, `T`, `O` | **`D16 = D25 = D34`** (the diagonal); the three other sign lines only with `g0 = 0` or `g1 = 0` | **`D16 = D25 = −D34`**; the other three with `g1 = 0` (star line among them) or `g0 = 0` | **`D16 = D25 = −D34`**; the others with `g0 = 0` or `g1 = 0` | **`D16 = D25 = D34`**; the others with `g0 = 0` or `g1 = 0` |
+
+> **TWISTED `O`-COVARIANCE OF THE CURVED FAMILY FORCES ONE LINE AND IT IS NOT
+> THE STAR LINE AT ANY REPRESENTATIVE.** At the all-plus representative it is the
+> diagonal `D16 = D25 = D34`; the shear-alive line meets the star line only at
+> the origin `D16 = D25 = D34 = 0` (measured per class). The star line
+> `D16 = D34 = −D25` occurs in the twisted tables **only on components with a
+> shear killed** (`E-2`, gated literally). `C3_body` already forces the line;
+> `S3`, `T`, `O` add nothing — the minimal twisted class forcing a line is `C3`.
+
+The reason is exact and simple: at a representative cell the degree blocks have
+uniform off-diagonals, so the sign vector restoring them must be uniform on
+each grade; every lift sign is absorbed into the gauge and the cross block sees
+only the **permutation** of directions with one global sign `ζ = ±1` per
+rotation. For the 3-cycle, `P_x = ζP_t, P_y = ζP_x, P_t = ζP_y` forces `ζ = 1`
+and `P_t = P_x = P_y` — the diagonal (in the mixed classes, the one-face flip of
+the representative changes which uniform gauge restores the flipped block, and
+the line becomes `D16 = D25 = −D34`). The star's signs are invisible to twisted
+covariance at a representative cell.
+
+### The strict census at the four representatives (`E-3`)
+
+| subgroup | `(1, 1)` all-plus | `(1, −1)` | `(−1, 1)` | `(−1, −1)` |
+| --- | --- | --- | --- | --- |
+| `1` | everything | everything | everything | everything |
+| `C2_edge` | `D16 = −D25` with `g0 = 0` | same | same | same |
+| `C2_face` | everything with `g0 = g1 = 0` | same | same | same |
+| `C3_body` | **star line** with `g1 = 0` | star line with `g1 = 0` | star line with `g0 = g1 = 0` | star line with `g0 = g1 = 0` |
+| `C4_face`, `V4_face_edges`, `D4_face` | `D16 = −D25` with `g0 = g1 = 0` | same | same | same |
+| `V4_faces` | everything with `g0 = g1 = 0` | same | same | same |
+| `S3_body` | star line with `g0 = 0` | star line with `g0 = g1 = 0` | star line with `g0 = 0` | star line with `g0 = g1 = 0` |
+| `T`, `O` | **star line with `g0 = g1 = 0`** | same | same | same |
+
+> **STRICT `O`-COVARIANCE FORCES THE STAR LINE AND THE FLAT CELL TOGETHER.** The
+> minimal strict class forcing the star line is `C3_body`, and it kills one shear
+> (`g1 = 0` at the all-plus representative, where the `C3` preserves `M1` but
+> its lifted signs `(−, −, +)` on `(xy, ty, tx)` do not preserve `M2`); `T` and
+> `O` kill both. Strict covariance *sees* the lane's signs — the star — and pays
+> for it with the shears.
+
+Both tables are declared literals compared table-for-table (`E-2`, `E-3`,
+mutations `break_twisted_census`, `break_strict_census`,
+`claim_shears_killed_by_twisted_covariance`), and the counts of distinct loci
+over every member of every class are declared (`E-4`): `1` for the normal
+subgroups `V4_faces`, `T`, `O` in every class and kind; `3` or `6` for the
+others (sign images).
+
+### The 64 sign cells under the full group (`G-3`)
+
+Two generators of `O` (a 3-cycle and a quarter-turn, checked to generate all
+24; the signed lifts fixing `H` form a group, so generators suffice): at
+**every** cell the shear-alive twisted-`O` locus is exactly **one** line, one of
+the four sign lines `D16 = ±D34, D25 = ±D34`; it is the **star line at exactly
+16 of the 64 cells** and the diagonal at the all-plus cell. So whether twisted
+covariance names Block 214's plane or a sign image of it is a property of the
+sign cell, not of the class; the census above is at Block 211's representatives,
+and Block 214's union-locus statements are at all-plus cells (`W1`, `L±`).

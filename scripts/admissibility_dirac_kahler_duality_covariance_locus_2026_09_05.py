@@ -668,9 +668,10 @@ def constraints(h: sp.Matrix, lift: sp.Matrix, e: tuple, unknowns: tuple) -> tup
             if not (entry.free_symbols & set(unknowns)):
                 # a moduli-only entry forces its numerator's non-numeric
                 # factors to vanish (the denominators are volumes, nonzero)
+                # and the volumes are nonzero on Block 211's domain, so they drop
                 numerator, _ = sp.fraction(sp.factor(entry))
                 _, factors = sp.factor_list(numerator)
-                forced.add("*".join(sorted(str(base) for base, _ in factors)))
+                forced.add("*".join(sorted(str(base) for base, _ in factors if base not in (V0, V1))))
                 continue
             poly = sp.Poly(entry, *unknowns)
             if poly.total_degree() != 1 or (poly.free_symbols - set(unknowns)):
@@ -1150,9 +1151,8 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
                  and all(ce["twisted_o_line_meets_star_line_at_origin"].values()))
     checks.check("E-3", "THE STRICT CENSUS is the declared table: O and T force the star line WITH g0 = g1 = 0 (the flat cell); C3 (S3) force the star line with one shear killed; the minimal strict class forcing the star line is C3",
                  ce["strict"] == claims["strict_loci"]
-                 and all(claims["strict_loci"][(key, "O")][0][1] == STAR_LINE and len(claims["strict_loci"][(key, "O")][0][0]) >= 2
-                         for key in GAUGE_CLASSES)
-                 and claims["strict_loci"][((1, 1), "C3_body")] == ((("2*g1/v0",), STAR_LINE),))
+                 and all(claims["strict_loci"][(key, "O")] == ((("g0", "g1"), STAR_LINE),) for key in GAUGE_CLASSES)
+                 and claims["strict_loci"][((1, 1), "C3_body")] == ((("g1",), STAR_LINE),))
     checks.check("E-4", "EVERY MEMBER OF EVERY CLASS (30 subgroups): the loci at a fixed cell are not conjugation-invariant except for the normal subgroups; the distinct-locus counts per class are the declared literals",
                  ce["twisted_distinct_per_class"] == TWISTED_DISTINCT_PER_CLASS and ce["strict_distinct_per_class"] == STRICT_DISTINCT_PER_CLASS
                  and all(ce["twisted_normal_single"].values()) and all(ce["strict_normal_single"].values()))

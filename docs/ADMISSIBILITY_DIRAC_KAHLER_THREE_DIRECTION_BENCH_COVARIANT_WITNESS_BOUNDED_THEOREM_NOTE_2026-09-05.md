@@ -413,8 +413,7 @@ not a small parameter; **RESCALING** Block 216's two exact rational factors, not
 4. **THE INSTANCE SCOPE, ENUMERATED.** One witness with two controls; two assemblies and two readings at the witness;
    one bench sampling all three directions at one fine momentum; three numeric points and zero; nine of fourteen
    direct charpolys certified; Block 215's covariance notion; no continuum. Gate `H-2`, mutation `break_instance_scope`.
-5. **THE SHAPE IS AT ONE FINE MOMENTUM AND ONE WITNESS**: seven points fix the six entries of one quadric with one
-   check; nothing is said about any other cell, momentum or extent. Gates `F-1`–`F-3`.
+5. **THE SHAPE IS AT ONE FINE MOMENTUM AND ONE WITNESS**: seven points fix six entries with one check. Gates `F-1`–`F-3`.
 6. **THE READINGS ARE READINGS**, six of them, none licensed. Gate `B-5`, mutation `claim_continuum_read`.
 
 ### The narrowest true statement, written out so it cannot be paraphrased upward
@@ -585,8 +584,7 @@ false at three control points; no mathematics touched) were fixed before certifi
 `RESULTS_block219.md`, with the `D07` read-off finding that changed a declared literal.
 
 ```text
-python3 scripts/admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05.py
-python3 ... --mutation break_triply_mixed_consistency
+python3 scripts/admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05.py [--mutation break_triply_mixed_consistency]
 ```
 
 ### Review record

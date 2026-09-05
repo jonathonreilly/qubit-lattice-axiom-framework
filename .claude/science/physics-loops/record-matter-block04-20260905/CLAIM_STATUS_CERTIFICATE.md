@@ -15,4 +15,6 @@ The target is exactly the supplied finite-history construction and moment/count/
 
 The result retires fresh-sea and fresh-battery resets and the omitted switch ledger. It also separates exact implemented bulk statistics from approximation of a detailed ideal history. It does not derive the supplied Hamiltonian, event/compiler, scheduler, battery preparation, local apparatus or renewable background.
 
-Both executable implementations and all 26 substantive mutations were reviewed. Analytic statements are proved independently of numerical probes. Independent audit remains required; no audit verdict, rationale or effective grade is authored.
+Both executable implementations and all 27 substantive mutations were reviewed. Analytic statements are proved independently of numerical probes. Independent audit remains required; no audit verdict, rationale or effective grade is authored.
+
+For initially independent matter and battery with [rho,H0]=0, the final output phase-average formula also gives exact history and energy statistics. This includes the pilot’s sea and removes detailed ideal-history accuracy from its energy/ground-excess interpretation. The full conditional matter state is not asserted equal.

@@ -1,6 +1,6 @@
 # Actual final-source mutation checks
 
-The following reports record 26 isolated corrupted scratch runs. These are sensitivity evidence, not theorem proofs or effective audits.
+The following reports record 27 isolated corrupted scratch runs. These are sensitivity evidence, not theorem proofs or effective audits.
 
 # Block 04 primary scratch mutations
 
@@ -305,10 +305,10 @@ These are sensitivity checks on the finite primary runner. They do not establish
 
 Date: 2026-09-05
 
-Final source-only commit tested: `7d2c0b189ac26654e225cec6f1ccdd994a513a84`
+Final source-only commit tested: `cc3a11925e5e794a7532e48215ab489e2318fb15`
 
 All mutations were made one at a time in separate directories under
-`/tmp/block04-independent-mutations-v3`. The committed checker in the worktree
+`/tmp/block04-independent-mutations-v4`. The committed checker in the worktree
 was never changed. Each replacement matched the stated source occurrence,
 every mutated run exited with status 1, and every run retained a final `TOTAL`
 line.
@@ -322,7 +322,7 @@ predicted_jump = star_mean + covariance / probability
 
 ```text
 FAIL fixed_number_process: CheckFailure: signed branch jump failed n=0
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 ## Uniform live-site weighting
@@ -334,7 +334,7 @@ contribution = pinching(evolved, projectors[site]) / 4
 
 ```text
 FAIL uniform_clock_laws: CheckFailure: uniform event blocks lost probability
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 ## Independent-clock exponent
@@ -346,7 +346,7 @@ expected_energy = initial_energy * math.exp(-1.0 * gamma * final_time)
 
 ```text
 FAIL uniform_clock_laws: CheckFailure: constant-clock exponential energy law failed
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 ## Hypergeometric live count
@@ -358,7 +358,7 @@ TOTAL: PASS=6 FAIL=1
 
 ```text
 FAIL uniform_clock_laws: CheckFailure: live-number hypergeometric law failed k=0 r=1
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 ## Complex adjoint
@@ -372,7 +372,7 @@ star[other, site] = one_particle[site, other]
 FAIL fixed_number_process: CheckFailure: Hermitian expectation acquired an imaginary part
 FAIL uniform_fibre_identities: CheckFailure: live incident stars do not sum to twice H_R; residual=6.9282
 FAIL local_defects: CheckFailure: local defect sign D=-WV failed; residual=4
-TOTAL: PASS=4 FAIL=3
+TOTAL: PASS=5 FAIL=3
 ```
 
 ## Omitted live vertex in fibre average
@@ -386,7 +386,7 @@ for selected_site in live_sites[:-1]:
 
 ```text
 FAIL uniform_fibre_identities: CheckFailure: uniform fibre energy identity failed R=0000 tau=0.137
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 ## Second-moment correction sign
@@ -398,7 +398,7 @@ TOTAL: PASS=6 FAIL=1
 
 ```text
 FAIL uniform_fibre_identities: CheckFailure: uniform fibre second-moment identity failed R=0000 tau=0.137
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 This distinguishes the `V_i^2` correction from the first-moment identity.
@@ -412,7 +412,7 @@ require_small(defect - W @ V, "local defect sign D=-WV failed")
 
 ```text
 FAIL local_defects: CheckFailure: local defect sign D=-WV failed; residual=9.79796
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 ## Battery translation direction
@@ -424,7 +424,7 @@ shift_amount = -frequency
 
 ```text
 FAIL shared_battery_two_events: CheckFailure: swap extension does not conserve energy; residual=27.7128
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 ## Shared-battery correlation retention
@@ -436,11 +436,8 @@ second_input = np.kron(np.ones(12, dtype=complex) / math.sqrt(12.0), packet)
 
 ```text
 FAIL shared_battery_two_events: CheckFailure: shared correlated battery composition failed; residual=1.22228
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
-
-This replaces the correlated matter--battery output of event 1 by a fresh
-product state before event 2.
 
 ## Direct battery-energy sign
 
@@ -451,11 +448,8 @@ battery_hamiltonian = -data["spacing"] * np.diag(np.arange(length, dtype=float))
 
 ```text
 FAIL shared_battery_two_events: CheckFailure: direct matter plus battery ledger does not equal total energy
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
-
-This probe is caught by explicit `I_system tensor H_B` expectations rather than
-by defining battery energy as total minus matter energy.
 
 ## Old Record retention
 
@@ -466,8 +460,24 @@ W2 = np.kron(np.array([[0, 1], [1, 0]], dtype=complex), W_site2)
 
 ```text
 FAIL shared_battery_two_events: CheckFailure: second lift changes the old Record; residual=12.1655
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
+
+## Stationary-history battery reset
+
+```text
+actual_final_joint = S2 @ actual_first_joint
+actual_final_joint = S2 @ np.kron(ideal_first_state, packet)
+```
+
+```text
+FAIL stationary_input_statistics: CheckFailure: ground stationary history did not reuse the correlated battery; residual=0.765367
+TOTAL: PASS=7 FAIL=1
+```
+
+This discards the correlated first-event output and supplies a fresh product
+battery before the second event. It is caught by the sequential-versus-direct
+shared-history comparison.
 
 ## Status dephasing
 
@@ -478,7 +488,7 @@ dephased_physical = physical_reduced
 
 ```text
 FAIL status_readout_correction: CheckFailure: status-readout cap distance is not p
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 ## Dense-resource cap
@@ -490,7 +500,7 @@ DENSE_MATRIX_LIMIT = 200
 
 ```text
 FAIL shared_battery_two_events: CheckFailure: dense matrix exceeds 200: (312, 312)
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
 ## Import firewall
@@ -503,9 +513,9 @@ import json
 
 ```text
 FAIL source_contract: CheckFailure: forbidden import roots: ['json']
-TOTAL: PASS=6 FAIL=1
+TOTAL: PASS=7 FAIL=1
 ```
 
-These are finite checker sensitivity probes. They do not prove the continuum
-battery bound, the general variance recursion, or a physical implementation
-theorem.
+These finite sensitivity probes do not prove the continuous battery bound, the
+general variance recursion, or the stationary-input corollary beyond the tested
+fixture.

@@ -1,7 +1,7 @@
 ---
 claim_id: repeated_record_matter_and_energy_conserving_apparatus_bounded_theorem_note_2026-09-05
 claim_type: bounded_theorem
-claim_scope: "For a supplied finite one-species hopping carrier of M sites and degree at most six, uniform live-site selection and history-preserving dwell, repeated energy-conserving occupation-Record events with one shared positive continuous battery have exact ensemble energy survival and hypergeometric live-particle count laws, independently of packet coherence width. Energy variance after K events is at most its initial value plus 6t^2 K. From a half-filled regular bipartite degree-six negative sea, live filling and negative energy density concentrate at fixed deletion fraction below one. A symmetric compact packet of width t can be prepared with mean battery energy 6tM+t/2. Alternatively a broader sine packet of mean Mt(6+3pi/sqrt(epsilon)) approximates the complete ideal history instrument within half-diamond epsilon. Old Records and total number are preserved exactly, and cap refusal is zero on reachable states. The carrier, scheduler, spectral gates, resource preparation and readout are supplied."
+claim_scope: "For a supplied finite one-species hopping carrier of M sites and degree at most six with sharp total particle number N0, uniform live-site selection and history-preserving dwell, repeated energy-conserving occupation-Record events with one shared positive continuous battery have exact ensemble energy survival and hypergeometric live-particle count laws, independently of packet coherence width. Energy variance after K events is at most its initial value plus 6t^2 K. From a half-filled regular bipartite degree-six negative sea, live filling and negative energy density concentrate at fixed deletion fraction below one. A symmetric compact packet of width t can be prepared with mean battery energy 6tM+t/2. Alternatively a broader sine packet of mean Mt(6+3pi/sqrt(epsilon)) approximates the complete ideal history instrument within half-diamond epsilon. For energy-stationary initial matter, all complete Record-history probabilities and conditional final energy distributions agree exactly with the ideal instrument. Old Records and total number are preserved exactly, and cap refusal is zero on reachable states. The carrier, scheduler, spectral gates, resource preparation and readout are supplied."
 upstream_dependencies: []
 runner: scripts/repeated_record_matter_energy_apparatus_2026_09_05.py
 ---
@@ -26,7 +26,9 @@ audit remains required to assign effective status.
 We prove that the specified implemented occupation-Record process preserves
 exact bulk particle and energy laws, with fluctuations controlled over a finite
 deletion fraction, while one supplied battery accounts exactly for energy.
-A separately stated broader packet approximates the entire ideal history.
+For stationary initial matter, its complete Record-history and energy
+statistics coincide exactly with the ideal process. A separately stated
+broader packet approximates the entire ideal history state for general inputs.
 
 The construction connects three objects on the same carrier: the state after
 earlier Records, its subsequent matter evolution, and the apparatus that pays
@@ -95,8 +97,11 @@ matter renewal, using resources represented on the framework carrier.
 
 Let $M\ge2$ sites carry one species of fermions, with CAR generators $c_i$.
 Let $h$ be a Hermitian one-particle hopping matrix with zero diagonal, maximum
-graph degree six and $|h_{ij}|\le t$, where $t>0$. The full fermion carrier may be
-restricted to any invariant fixed total number $N_0$.
+graph degree six and $|h_{ij}|\le t$, where $t>0$. The energy/operator
+identities hold on full Fock space. The scalar $N_0$
+in (8), the single hypergeometric law (30), and its count-concentration
+statements assume a sharp fixed total number $N_0$. A mixture of number
+sectors instead gives the corresponding mixture of count laws.
 
 A history records occupations $n_r\in\{0,1\}$ on a set $R$. Keep the original
 $M$ modes, isolate every recorded site, and define
@@ -675,6 +680,67 @@ exactness only for its stated averaged operators. Ground-excess values
 in the finite ideal pilot are computed directly.
 
 
+## Exact history and energy comparison for stationary initial matter
+
+A stronger comparison applies to an initial nonbattery state $\rho$ with
+$[\rho,H_0]=0$, initially independent of the battery. With no earlier
+Records this is the matter state, including any degenerate ready controls.
+If earlier Records are included, stationarity refers to the full history-plus-
+matter input under its block Hamiltonian, or to one sharp history block;
+stationarity of a reduced matter marginal alone is insufficient. This includes
+the sharp filled sea used above and stationary mixtures within fixed number.
+Write $\sigma_{\rm ideal}=W_{\rm hist}\rho W_{\rm hist}^\dagger$ for the
+complete coherent ideal history. From the fibers (14), the composition
+identity (23), and the zero-refusal support (24),
+
+\[
+\boxed{\sigma_{\rm actual}
+=\int |\widehat\beta(\tau)|^2
+ e^{-i\tau H_K}\sigma_{\rm ideal}e^{i\tau H_K}\,d\tau.}
+\tag{38}
+\]
+
+Indeed $e^{i\tau H_0}\rho e^{-i\tau H_0}=\rho$, so only the output
+conjugation remains in the battery partial trace. The compact packet needs
+no broad-width or Fourier-moment condition. Equation (38) is an energy
+phase-averaging channel; it need not remove every off-diagonal matrix element.
+
+For every bounded observable $A$ commuting with the final direct-sum
+Hamiltonian $H_K$, cyclicity of the trace and normalization of the packet give
+
+\[
+\operatorname{Tr}(A\sigma_{\rm actual})
+=\operatorname{Tr}(A\sigma_{\rm ideal}).
+\tag{39}
+\]
+
+Take $A$ to be a complete Record-history projector multiplied by a spectral
+projector of that history's final energy. These operators commute with $H_K$.
+Their joint probabilities agree exactly, hence every complete history
+probability and every conditional final energy distribution agree, omitting
+zero-probability histories. The history-dependent ground-excess observable
+also commutes with $H_K$, including its fixed live-number sector. Earlier
+readouts may be deferred as above or applied to both sides: their commuting
+projectors preserve (38) and (39).
+
+This comparison allows an arbitrary supplied history-controlled schedule;
+uniform selection is needed for the closed-form bulk laws, not for (38).
+The statement concerns the full nonbattery input just specified. A retained external
+reference admits the same joint formula when its joint input commutes with
+$H_0\otimes I$. No initial matter-battery correlation is assumed here.
+Final observables that fail to commute with $H_K$, including generic live-site
+occupations and conditional state tomography, are outside (39).
+
+Equations (38)-(39) apply separately to every prefix $W_{1:k}$ with
+its final Hamiltonian $H_k$, using the same stationary initial state.
+Every initial segment of the ideal 216-mode sea pilot therefore has the same
+Record-history and energy statistics as the implemented model, by this
+analytic bridge. Its ground-excess comparisons have zero actual-versus-ideal
+discrepancy in this stationary-input case. The pilot remains an ideal Gaussian
+computation, not a 216-mode apparatus simulation; its finite Monte Carlo
+uncertainties are unchanged. Local matter coherence, transport and renewal
+still require separate tests.
+
 ## Relation to earlier science
 
 Energy-translation batteries, coherent overlap factors and repeated operation
@@ -691,7 +757,8 @@ through composed gates, particularly its Eq. (19).
 
 The present contribution connects changing Record-history Hamiltonians to
 the implemented process's exact uniform-site moment identities,
-hypergeometric count law and finite-density concentration, alongside a
+hypergeometric count law, finite-density concentration and stationary-input
+history/energy comparison, alongside a
 state-uniform continuous-battery estimate for the complete ideal history.
 The local defect in (9) is an application of the established asymmetry
 machinery. No priority or new general battery principle is claimed.
@@ -717,7 +784,7 @@ lifts agree to 1.421e-14, with intermediate Schmidt rank 3. Matter energies
 -1.583929, -0.791965 and 0 are paired with directly computed battery energies
 28, 27.208035 and 26.416071.
 
-The independent checker has seven PASS and zero FAIL. It uses direct signed
+The independent checker has eight PASS and zero FAIL. It uses direct signed
 fixed-number Fock matrices and a separate pi-flux square with polynomial
 spectral projectors, rather than Gaussian covariance conditioning and the
 primary's spectral eigendecomposition. Nine prior-Record/phase cases test
@@ -734,6 +801,15 @@ completion and an energy-commuting status copy are checked. Dense matrices
 have dimension at most 312. The finite coherent-status example at p=0.04
 gives distance 0.216977156 before readout and 0.04 after it.
 
+A width-three packet also checks (38)-(39) for a ground state and a pure
+zero-energy eigenstate in the initial degenerate subspace. First-event joint
+Record-energy probabilities agree to 5.55e-17 and conditional ground excess
+to 1.50e-16; complete two-event histories agree to 1.11e-16. The zero-energy
+input has a first-stage state trace distance 0.375 despite these exact
+commuting statistics. Its energy-commutator residual is 1.5. The ground
+control happens to have no first-stage energy coherence, and the zero final
+Hamiltonian makes final-state equality specific to this fixture.
+
 These finite-dimensional commensurate realizations are separate from the
 continuous battery proof. Numerical sine quadrature is a probe, and normalized
 Choi trace distances are witnesses; neither is a diamond-bound proof.
@@ -742,7 +818,7 @@ The analytic proofs establish the general history and concentration claims.
 The implementations were developed in separate contexts of the same model
 family. The checker did not read or import the primary source, cache or pilot.
 Root reviewed every source line, final repair diff, complete cache and all
-26 actual failing scratch mutations (11 primary, 15 checker), as well as the
+27 actual failing scratch mutations (11 primary, 16 checker), as well as the
 load-bearing mathematics. Separate-context algebraic refutations and a cold
 note review were read in full. The latter's four bounded text findings were
 repaired: sufficiency wording, the covariance definition, the obligation

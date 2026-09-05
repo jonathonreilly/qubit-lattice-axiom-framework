@@ -17,3 +17,5 @@ The means and variance inequality allow arbitrary current matter-battery correla
 No empirical fit, numerical cutoff, unmerged theorem, new axiom, or undeclared primitive closes an open bridge. The framework's qubit carrier and Record primitive motivate the consumer; the supplied CAR carrier is not silently identified with them. Current axioms are treated as a revisable research program, not proof of these inputs.
 
 Assumptions retired within this model are fresh-ground-state reset, independent fresh batteries, omitted switch energy, and full ideal-instrument accuracy for the bulk laws. The process consumes live sites; it supplies no renewal mechanism.
+
+The exact complete-history/energy comparison additionally assumes an initial matter-battery product and [rho,H0]=0. It does not need a uniform scheduler; uniform selection enters the closed-form count and moment laws. Its final queried observables commute with the history Hamiltonian. The initial sea already satisfies stationarity, so this connects existing inputs rather than adding a preparation requirement to that pilot.

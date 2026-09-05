@@ -9,3 +9,5 @@ Root checked the primary papers and the actual relevant derivations.
 | Chiribella, Yang and Renner, Fundamental energy requirement of reversible quantum operations, https://arxiv.org/abs/1908.10884 | Bounded sine batteries and shared-battery reuse, explicitly Eq. (19) | Credit telescoping composition and depth-independent resource construction |
 
 The general battery principle is not claimed as new. The contribution is the changing Record-history Hamiltonian connection, exact implemented uniform-site moment identities, hypergeometric count law and finite-density concentration. Required mathematical statements are proved in the note; external papers are not executable inputs.
+
+The stationary-input phase-average identity is an immediate specialization of the established lift. The repository value is its explicit connection of the existing energy-eigenstate sea pilot to exact implemented history and energy statistics; no independent generic priority claim is made.

@@ -8,6 +8,8 @@ R3: root replaced fresh batteries by one shared battery. A common system norm bo
 
 R4: root proved that uniform-site fiber pullbacks preserve the exact means even on correlated matter-battery inputs. This removes the broad-packet approximation from the bulk theorem.
 
-R5: sharp archived occupations give exact without-replacement counts. The energy-square identity gives variance at most initial variance plus 6t^2 K, leading to finite-density concentration.
+R5: sharp archived occupations give exact without-replacement counts. The energy-square identity gives variance at most initial variance plus 6t^2 K. This yields finite-density concentration from the declared sharp half-filled regular bipartite degree-six sea; general initial states require subquadratic initial energy variance.
 
 R6: independent Fock and Gaussian executable probes were completed, reviewed line by line and repaired before freeze. No additional theorem extension is included in this block.
+
+R7: during final scope review root observed that input stationarity cancels the remaining input Fourier phase of the composed lift. The actual output is an energy phase average of the ideal history; complete history and conditional energy observables are preserved. This corollary is folded into the same block because it directly connects the existing sea pilot and apparatus, not submitted as an isolated result.

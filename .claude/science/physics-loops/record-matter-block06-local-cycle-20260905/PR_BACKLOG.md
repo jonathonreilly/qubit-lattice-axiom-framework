@@ -14,4 +14,3 @@ head branch of PR #7983:
 
 Do not merge from this block. The audit lane owns any verdict or retained
 status.
-

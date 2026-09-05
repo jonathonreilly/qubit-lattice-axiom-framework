@@ -19,4 +19,3 @@ No probability law for event occurrence, physical clock, renewal kernel,
 controller, environment, quantum battery, continuum limit, or TOE closure is
 imported or claimed. No new axiom, primitive, physical constant, fitted
 coefficient, or audit status is added.
-

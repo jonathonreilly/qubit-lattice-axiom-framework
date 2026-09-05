@@ -173,4 +173,3 @@ The finite witness does not establish any of the following:
 The next unlock is therefore an autonomous formation/renewal mechanism and a
 physical energy apparatus tested on this same carrier. Those are explicit
 follow-on obligations, not hidden assumptions promoted by this result.
-

@@ -10,4 +10,3 @@
 The two selected implementations use different construction paths. The
 checker intentionally does not import the primary runner, its output, its
 cache, or the native BKSF implementation.
-

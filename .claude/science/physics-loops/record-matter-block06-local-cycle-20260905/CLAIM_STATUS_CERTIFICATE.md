@@ -27,4 +27,3 @@ system-plus-ledger accounting.
 This is conditional support, not a retained grade. The event path and
 formation are supplied. The scalar reserve is not a physical battery. No
 renewal, continuum, gravitational, photon, or TOE closure is certified.
-

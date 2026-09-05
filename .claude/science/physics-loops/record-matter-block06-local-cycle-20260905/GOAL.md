@@ -21,4 +21,3 @@ This is a bounded support probe. It deliberately leaves formation occurrence,
 the scheduler, renewal, apparatus realization, and continuum behavior as
 named obligations. It changes no axiom or primitive, and photon work belongs
 to another worker.
-

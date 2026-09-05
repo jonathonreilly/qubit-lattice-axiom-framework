@@ -45,4 +45,3 @@ renaming of the parent theorem and does not promote its conditional status.
 2. Build a physical finite or continuous battery/controller with the same
    event history and check its locality and preparation.
 3. Only then test larger-volume and continuum limits.
-

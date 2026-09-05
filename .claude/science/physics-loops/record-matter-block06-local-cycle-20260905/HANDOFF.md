@@ -13,4 +13,3 @@ establish a physical quantum battery.
 Next exact action: derive a local formation/renewal mechanism on this carrier,
 then implement and test a physical finite or continuous energy apparatus.
 Do not promote this block to a retained status without independent audit.
-

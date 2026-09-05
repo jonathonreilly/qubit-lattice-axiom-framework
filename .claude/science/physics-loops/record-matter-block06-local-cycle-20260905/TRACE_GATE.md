@@ -19,4 +19,3 @@ consumer is the next formation/renewal and physical-apparatus block.
 The trace is intentionally marked upstream_support with partially_closes:
 success is useful evidence against an immediate finite transport/ledger
 failure, while the user's full blocker remains open.
-

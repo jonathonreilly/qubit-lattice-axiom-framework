@@ -28,4 +28,3 @@ The selected path is supplied rather than derived. The block therefore cannot
 turn a finite existence witness into an autonomous matter background. The next
 route must make formation and renewal dynamical on the same carrier and replace
 the scalar ledger by a physical apparatus.
-

@@ -1,6 +1,6 @@
 {
- "edge_count": 15854,
- "node_count": 5586,
+ "edge_count": 15855,
+ "node_count": 5588,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13230,6 +13230,10 @@
    "deps_hash": "d8ee1c26b8bd",
    "out_degree": 2
   },
+  "no_go_discipline_checklist_spin_half_infrared_forward_replay_2026-09-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "no_per_site_bosonic_ccr_theorem_note_2026-05-02": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -17429,6 +17433,10 @@
   "spin_half_cubic_ice_forward_length_convergence_bounded_theorem_note_2026-09-04": {
    "deps_hash": "46a12242e507",
    "out_degree": 2
+  },
+  "spin_half_cubic_ice_infrared_forward_replay_recovery_boundary_note_2026-09-05": {
+   "deps_hash": "644c05108dd2",
+   "out_degree": 1
   },
   "spin_half_cubic_ice_infrared_maxwell_join_health_boundary_bounded_theorem_note_2026-09-04": {
    "deps_hash": "1525e714d0d9",

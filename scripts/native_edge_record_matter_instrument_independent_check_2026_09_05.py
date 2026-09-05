@@ -261,6 +261,36 @@ def projector_from_involution(involution: np.ndarray, sign: int) -> np.ndarray:
     return 0.5 * (np.eye(involution.shape[0], dtype=complex) + sign * involution)
 
 
+def range_basis(projector: np.ndarray) -> np.ndarray:
+    eigenvalues, eigenvectors = np.linalg.eigh(projector)
+    basis = eigenvectors[:, eigenvalues > 0.5]
+    close(basis.conj().T @ basis, np.eye(basis.shape[1]), "range basis")
+    return basis
+
+
+def physical_number(graph: SmallGraph) -> np.ndarray:
+    identity = np.eye(graph.dimension, dtype=complex)
+    return sum(
+        (identity - graph.vertex_parity(vertex)) / 2.0
+        for vertex in range(graph.vertex_count)
+    )
+
+
+def basis_vector(fock: FockCarrier, mask: int) -> np.ndarray:
+    vector = np.zeros(len(fock.masks), dtype=complex)
+    vector[fock.masks.index(mask)] = 1.0
+    return vector
+
+
+def restricted_generators(
+    fock: FockCarrier,
+    edges: tuple[tuple[int, int], ...],
+    subspace: np.ndarray,
+) -> list[np.ndarray]:
+    generators = list(fock.vertex_parities) + [fock.edge_generators[edge] for edge in edges]
+    return [subspace.conj().T @ generator @ subspace for generator in generators]
+
+
 def direct_dictionary_check() -> str:
     square = SmallGraph(4, ((0, 1), (1, 2), (2, 3), (0, 3)))
     path = SmallGraph(4, ((0, 1), (1, 2), (2, 3)))
@@ -314,8 +344,178 @@ def direct_dictionary_check() -> str:
     return "square/path dictionaries, full tree algebra, and length-6 phase verified"
 
 
+def nonbridge_instrument_check() -> str:
+    square = SmallGraph(4, ((0, 1), (1, 2), (2, 3), (0, 3)))
+    fock = direct_even_fock(4)
+    cycle = (0, 1, 2, 3, 0)
+    stabilizer = square.cycle_stabilizer(cycle)
+    code_projector = projector_from_involution(stabilizer, 1)
+    isometry = code_isometry(square, fock, (cycle,))
+    recorded_edge = (0, 3)
+    record_z = square.edge_z(recorded_edge)
+    close(stabilizer @ record_z, -record_z @ stabilizer, "nonbridge cycle anticommutation")
+    close(
+        code_projector @ record_z @ code_projector,
+        np.zeros_like(code_projector),
+        "compressed nonbridge Z vanishes",
+    )
+    state = fixed_number_vector(fock, 2)
+    physical_state = isometry @ state
+    surviving_edges = tuple(edge for edge in square.edges if edge != recorded_edge)
+    fock_generators = list(fock.vertex_parities) + [
+        fock.edge_generators[edge] for edge in surviving_edges
+    ]
+    require(commutant_nullity(fock_generators) == 1, "nonbridge surviving algebra commutant")
+    branch_states = []
+    for sign in (-1, 1):
+        projector = projector_from_involution(record_z, sign)
+        branch_map = math.sqrt(2.0) * projector @ isometry
+        close(branch_map.conj().T @ branch_map, np.eye(8), f"nonbridge J_{sign} isometry")
+        require(matrix_rank(projector) == 8, f"updated nonbridge code rank sign={sign}")
+        probability = float(np.vdot(physical_state, projector @ physical_state).real)
+        require(abs(probability - 0.5) <= ATOL, f"nonbridge probability sign={sign}")
+        for vertex in range(4):
+            close(
+                square.vertex_parity(vertex) @ branch_map,
+                branch_map @ fock.vertex_parities[vertex],
+                f"nonbridge surviving B vertex={vertex} sign={sign}",
+            )
+        for edge in surviving_edges:
+            close(
+                square.edge_generator(*edge) @ branch_map,
+                branch_map @ fock.edge_generators[edge],
+                f"nonbridge surviving A edge={edge} sign={sign}",
+            )
+        branch_state = branch_map @ state
+        close(record_z @ branch_state, sign * branch_state, f"sharp nonbridge Record {sign}")
+        branch_states.append(branch_state)
+    require(abs(np.vdot(branch_states[0], branch_states[1])) <= ATOL, "raw branches not orthogonal")
+    return "fair physical Z branches and faithful full surviving CAR algebra verified"
+
+
+def bridge_and_history_check() -> str:
+    fock = direct_even_fock(4)
+    path = SmallGraph(4, ((0, 1), (1, 2), (2, 3)))
+    path_isometry = code_isometry(path, fock, ())
+    number = physical_number(path)
+    close(number @ path_isometry, path_isometry @ fock.number, "path original number dictionary")
+    for edge in path.edges:
+        close(
+            number @ path.hopping_generator(edge),
+            path.hopping_generator(edge) @ number,
+            f"full physical number conservation edge={edge}",
+        )
+
+    central_z = path.edge_z((1, 2))
+    central_parity = fock.vertex_parities[0] @ fock.vertex_parities[1]
+    leaf_z = path.edge_z((0, 1))
+    leaf_parity = fock.vertex_parities[0]
+    close(central_z @ path_isometry, path_isometry @ central_parity, "bridge 2+2 identity")
+    close(leaf_z @ path_isometry, path_isometry @ leaf_parity, "bridge 1+3 identity")
+    number_two = np.diag([float(mask.bit_count() == 2) for mask in fock.masks]).astype(complex)
+    expected_central_dimensions = {-1: 4, 1: 2}
+    for record_z, parity, label, expected_dimensions in (
+        (central_z, central_parity, "2+2", expected_central_dimensions),
+        (leaf_z, leaf_parity, "1+3", {-1: 3, 1: 3}),
+    ):
+        for sign in (-1, 1):
+            physical_projector = projector_from_involution(record_z, sign)
+            parity_projector = projector_from_involution(parity, sign)
+            close(
+                physical_projector @ path_isometry,
+                path_isometry @ parity_projector,
+                f"bridge conditional map {label} sign={sign}",
+            )
+            require(matrix_rank(physical_projector) == 4, f"bridge code rank {label} sign={sign}")
+            fixed_dimension = matrix_rank(number_two @ parity_projector)
+            require(
+                fixed_dimension == expected_dimensions[sign],
+                f"fixed-N bridge dimension {label} sign={sign}: {fixed_dimension}",
+            )
+
+    even_left = basis_vector(fock, 0b0011)
+    odd_left = basis_vector(fock, 0b0101)
+    for state, certain_sign in ((even_left, 1), (odd_left, -1)):
+        physical_state = path_isometry @ state
+        certain = float(
+            np.vdot(physical_state, projector_from_involution(central_z, certain_sign) @ physical_state).real
+        )
+        impossible = float(
+            np.vdot(physical_state, projector_from_involution(central_z, -certain_sign) @ physical_state).real
+        )
+        require(abs(certain - 1.0) <= ATOL and abs(impossible) <= ATOL, "deterministic/zero bridge outcome")
+
+    square = SmallGraph(4, ((0, 1), (1, 2), (2, 3), (0, 3)))
+    cycle = (0, 1, 2, 3, 0)
+    square_isometry = code_isometry(square, fock, (cycle,))
+    old_edge = (0, 3)
+    new_edge = (1, 2)
+    old_z_operator = square.edge_z(old_edge)
+    new_z_operator = square.edge_z(new_edge)
+    component_parity = fock.vertex_parities[0] @ fock.vertex_parities[1]
+    state = fixed_number_vector(fock, 2)
+    nonzero_joint_probabilities = []
+    for old_sign in (-1, 1):
+        old_projector = projector_from_involution(old_z_operator, old_sign)
+        require(matrix_rank(old_projector) == 8, "first nonbridge history rank")
+        close(
+            (new_z_operator - old_sign * square.vertex_parity(0) @ square.vertex_parity(1))
+            @ old_projector
+            @ square_isometry,
+            np.zeros((16, 8), dtype=complex),
+            f"old-boundary bridge sign old={old_sign}",
+        )
+        for new_sign in (-1, 1):
+            new_projector = projector_from_involution(new_z_operator, new_sign)
+            parity_sign = new_sign * old_sign
+            parity_projector = projector_from_involution(component_parity, parity_sign)
+            history_map = new_projector @ old_projector @ square_isometry
+            close(
+                history_map,
+                old_projector @ square_isometry @ parity_projector,
+                f"two-event signed parity old={old_sign} new={new_sign}",
+            )
+            require(matrix_rank(history_map) == 4, "bridge history code rank")
+            close(
+                old_z_operator @ history_map,
+                old_sign * history_map,
+                "old Record permanence",
+            )
+            probability = float(np.linalg.norm(history_map @ state) ** 2)
+            require(probability > 1.0e-4, "generic history unexpectedly has zero probability")
+            nonzero_joint_probabilities.append(probability)
+            parity_basis = range_basis(parity_projector)
+            faithful_map = math.sqrt(2.0) * history_map @ parity_basis
+            close(
+                faithful_map.conj().T @ faithful_map,
+                np.eye(4),
+                "history faithful isometry",
+            )
+            surviving = ((0, 1), (2, 3))
+            restricted = restricted_generators(fock, surviving, parity_basis)
+            require(commutant_nullity(restricted) == 1, "split surviving algebra not full on branch")
+            physical_generators = [square.vertex_parity(v) for v in range(4)] + [
+                square.edge_generator(*edge) for edge in surviving
+            ]
+            fock_generators = list(fock.vertex_parities) + [
+                fock.edge_generators[edge] for edge in surviving
+            ]
+            for physical_generator, fock_generator in zip(physical_generators, fock_generators):
+                close(
+                    physical_generator @ faithful_map,
+                    faithful_map @ (parity_basis.conj().T @ fock_generator @ parity_basis),
+                    "two-event full surviving generator",
+                )
+    require(abs(sum(nonzero_joint_probabilities) - 1.0) <= ATOL, "joint history normalization")
+    return "2+2, 1+3, deterministic, zero, and signed old-boundary branches verified"
+
+
 def run_checks() -> int:
-    checks = [("direct_dictionary", direct_dictionary_check)]
+    checks = [
+        ("direct_dictionary", direct_dictionary_check),
+        ("nonbridge_instrument", nonbridge_instrument_check),
+        ("bridge_and_history", bridge_and_history_check),
+    ]
     passed = 0
     failed = 0
     for name, function in checks:

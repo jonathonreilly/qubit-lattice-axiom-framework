@@ -392,3 +392,171 @@ are the same, as the `S3`-invariant quadric requires on this plane. Mutation
 `break_direction_distinction`.
 
 ---
+
+## N4g — THE INTERPRETATIONS FENCE (required section)
+
+### The words, and what each of them actually names here
+
+- **COVARIANCE** names `(E_R R) H0 (E_R R)^T = H0` on the fold. Not an invariance of a law.
+- **CONE** names the zero set of `det M(κ)`; **one metric's cone** names Block
+  213's polynomial statement; **SHAPE** names the proportionality of every
+  pencil branch to one quadric, on the `(t, x)` plane here.
+- **CELL** names a face-sign cell of Block 211's family; none is selected.
+- **ASSEMBLY** names one of Block 105's two rules; neither is decided; **READING**
+  names Block 213's form or pencil; neither is selected.
+- **BENCH** names thirty-two exact eigenvalues of one finite matrix at four Bloch
+  points; not a dispersion law, not Lorentzian, not a light cone, not a limit.
+- **FINE MOMENTUM** names the Bloch phase `i` (`π/2`) of Block 213's
+  `bench_momenta`; not a small parameter, not a wavevector of anything physical.
+
+### The six scope qualifications, carried as content — each a gated constant, a fence and a mutation
+
+1. **ALL OF IT IS SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT
+   A SPACETIME AND NOT A DYNAMICS** — Block 211's fence, inherited verbatim.
+   Gate `H-1`, mutation `break_scout_grade_fence`.
+2. **THE THEOREM IS A CONDITIONAL.** The antecedent is reading `R1`. Gate
+   `B-3`, mutation `claim_covariance_inherited`.
+3. **NO CELL, SUBGROUP, ASSEMBLY, READING, METRIC OR PARAMETER VALUE IS
+   SELECTED.** Gate `B-4`, mutations `claim_cell_selected`,
+   `claim_assembly_decided`, `claim_reading_selected`.
+4. **THE INSTANCE SCOPE, ENUMERATED.** One witness with two controls; two
+   assemblies and two readings; one bench sampling one plane at one fine
+   momentum; one numeric point and zero; Block 215's covariance notion; no
+   continuum. Gate `H-2`, mutation `break_instance_scope`.
+5. **THE SHAPE IS ON THE PLANE THE BENCH SAMPLES**: three points fix
+   `(G1_tt, G1_tx, G1_xx)`; the `y` entries of `G1` are not read. Gates `C-1`,
+   `F-2`.
+6. **THE READINGS ARE READINGS**, six of them, none licensed. Gate `B-5`,
+   mutation `claim_continuum_read`.
+
+### The narrowest true statement, written out so it cannot be paraphrased upward
+
+> On Block 213's `bench_matrix` at extent `(4,4,2)` (32 sites, Bloch momenta
+> `(z_t, z_x, 1)` with `z_t, z_x ∈ {1, i}`), the raising Bloch block equals
+> `Σ_μ (z_μ − 1/z_μ)/2 · D(e_μ)` at symbolic `z`, hence `i D(κ_z)` at the four
+> points; `D(e_μ)² = 0`, the `D(e_μ)` anticommute; the onsite Hodge Bloch block
+> is `Z⁻¹ H0 Z`; the onsite pencil block charpoly equals the charpoly of
+> `(H0⁻¹ M(κ_z))²` at all four points at L+−'s cell with the parameters
+> `(0, 1/4, −1/4, 1/4)`, at the all-plus `W1` cell with the same parameters and
+> at the flat cell, and the form and overlap block charpolys differ from their
+> principal parts at every nonzero point at the first two; the twenty declared
+> degree-32 charpolys hold with Bloch union = direct; at the witness the onsite
+> pencil block multisets are `{9/8 ×2, 16/11 ×2, 18/11 ×4}` at both pure points
+> and `{3/2 ×2, 64/33 ×2, 24/11 ×4}` at the mixed point, each equal to Block
+> 216's constants `{1 ×2, 128/99 ×2, 16/11 ×4}` times `κ_zᵀ G1 κ_z` with
+> `G1 = D1/D0`, so `(Q_mixed − Q_t − Q_x)/2 = −3/8 = G1_tx`; `det M` on the line
+> is one quadric to the fourth over `QQ(√6)` at the witness and two distinct
+> quadrics each squared at `W1`; at `W1` the pencil blocks carry the rational
+> root `κ_zᵀ G1 κ_z` with multiplicity 2 and otherwise an irreducible cubic
+> (pure `t`, mixed) or `256/385` and an irreducible quadratic (pure `x`); the
+> overlap Bloch fold at symbolic signs, moduli and parameters is parameter-free
+> at the pure points and has parity block `(−D07 − D16 + D25 + D34)/4 · P111`
+> at the mixed point; the overlap block charpolys at the line point equal the
+> zero-parameter ones at the pure points and differ at the mixed point; at the
+> witness the two pure points give equal onsite blocks and unequal overlap
+> blocks with the declared multisets.
+
+### What IS established, stated positively so the fence is not mistaken for a retreat
+
+**Block 217's `REOPEN` item 3 is answered at one covariant witness, in the
+affirmative on the sampled plane**: the mixed-point identity holds exactly and
+the cone's shape on the `(t, x)` plane is read off three Bloch points. **Item 4
+is answered**: the second direction sees the overlap assembly's `x`-axis
+distinction and the onsite assembly's absence of one. **Measured differences,
+not selectors.**
+
+---
+
+## CLAIM REGISTER — formulas, and the family that gates each
+
+| # | claim | value | gate |
+| :---: | --- | --- | :---: |
+| 1 | the bench | extent `(4,4,2)`, 32 sites, `0` `y`-links, 64 raising entries, the four momenta, the mixed point present | `C-1` |
+| 2 | the witness and control | mask 2 = L+−'s signs `(+,+,+,+,−,+)`; the line point; Block 217's `(4,2,2)` multiset with Bloch = direct; `G1_tt = 9/8`; `W1` = Block 211's | `C-2` |
+| 3 | the flat control | R5's `{0 ×8, 1 ×16, 2 ×8}` under all four constructions at zero parameters | `C-3` |
+| 4 | Bloch = direct | 20 of 20, degree 32; eight zeros at the zero point | `D-1` |
+| 5 | the witness blocks | the pencil multisets at three points; the form quartics; the overlap multisets and shapes | `D-2` |
+| 6 | the control blocks | the three `W1` pencil shapes; `OVERLAP_FORM_W1` at both pure points; the overlap pencil pair | `D-3` |
+| 7 | the raising block | `i D(κ_z)` at four points; the symbolic sine identity; `d² = 0`, anticommutation | `E-1` |
+| 8 | the onsite similarity | `Z⁻¹ H0 Z` at four points, three cells | `E-2` |
+| 9 | the identity | onsite pencil at every point incl. the mixed one, three cells; fails for form and overlap | `E-3` |
+| 10 | the shape | ratios = Block 216's constants at three points; `Q = 9/8, 9/8, 3/2`; `G1` plane `(9/8, −3/8, 9/8)` | `F-1` |
+| 11 | the cross term | `−3/8` from the bench = `G1_tx`; pure points coincide; `det M` one quadric⁴, `81/64, 81/64, 4` | `F-2` |
+| 12 | the control's failure | rational branch = `Q` (`16/15, 16/15, 8/5`, `G1_tx = −4/15`); irreducible degrees `(3), (2), (3)`; two quadrics squared | `G-1` |
+| 13 | the overlap fold | parameter-free at pure points; the signed sum at the mixed point; line = zero at pure, ≠ at mixed | `G-2` |
+| 14 | the second direction | onsite pure points coincide; overlap pure points differ with the literals; `W1` form / pencil | `G-3` |
+
+---
+
+## Imports
+
+- **Block 217** (`scripts/admissibility_dirac_kahler_overlap_assembly_covariant_cells_2026_09_05.py`, read-only,
+  content-bound by blob at `163b48814f`): `bench_cells`, `formal`, `curve_moduli`, `moduli_as_g`, `bench_charpolys`
+  (the `(4,2,2)` gate), `alg_charpoly`, `symbol_matrix`, `charpoly_shape`, `WITNESS_ONSITE_PENCIL`, `G1_TT_WITNESS`,
+  `R5_MULTISET`, `BENCH_MOMENTA`, `LINE_POINT`, `PARAMETER_SYMBOLS`, `MODULI`, `KAPPA`, `SCOUT_GRADE_FENCE`; through it
+  **Block 216** (`measure_census`, the rule-A cells, `BRANCH_TABLE`, `ALL_PLUS_CELL`, `W1_MODULI`, `FLAT_MODULI`),
+  **Block 214** (`principal_part`, `raising_matrix`, `formal_cell`, `OVERLAP_FORM_W1`), **Block 213** (`onsite_rules`,
+  `overlap_rules`, `lane_rules`, `raising_rules`, `transpose_rules`, `bloch_matrix`, `folded_matrix`, `bench_matrix`,
+  `bench_sites`, `site_index`, `bench_momenta`, `multiset_of`, `expected_flat_multiset`, `even_odd`, `metric_candidates`,
+  `quadratic_form`, `locus_witness_table`, `FACES`, `LAM`), **Block 211** (`GAUGE_FACE_ORDER`, `W1_MODULI`) and
+  **Block 209** (`CORNERS`).
+- **Axioms and registry**: read in full; the covariance clause quoted verbatim and gated against the file; no axiom
+  or primitive used as content.
+- **This block's own machinery**: the `(4,4,2)` bench over the algebraic fields with its four Bloch blocks, the
+  raising-block identity at symbolic `z`, the phase matrix `Z`, the principal-part squares at `e_t`, `e_x`,
+  `e_t + e_x`, the ratio test against Block 216's constants, the cross-term isolation, the per-point overlap fold.
+
+---
+
+## No-Go Discipline Gate (N1–N8, at family level)
+
+Every negative here — "the identity fails for the form reading and the overlap assembly", "the control reads no
+shape", "the overlap bench does not see the parameters at the pure points", "the `y` entries of `G1` are not read" —
+is non-supply within this formalism, never necessity.
+
+- **N1 — Alternative routes.** The mixed-point identity could fail because the fine momenta interfere: refuted,
+  `d_B(z)` is linear in the sines at symbolic `z` (`E-1`). The shape could be an artefact of one direction: refuted,
+  three points with the cross term (`F-1`, `F-2`). The control could show the same pattern: refuted, its non-`G1`
+  branches are irreducible cubics and quadratics (`G-1`). The overlap bench could see the parameters at a pure point:
+  refuted at symbolic everything (`G-2`). The form reading could carry the identity: refuted at every nonzero point.
+- **N2 — Wall independence.** The wall is Block 217's `REOPEN` items 3 and 4, quoted; the answer uses Block 213's
+  bench machinery at a new extent and Block 214's principal part; Block 217's `e_t` identity is re-measured as a
+  consistency gate, not used as a premise.
+- **N3 — Hidden-wall scan.** A float would let a multiset pass: gate `I-2`. A wrong bench would sample the wrong
+  plane: gate `C-1` (the `y`-links vanish, the momenta are Block 213's). Asserting `i D(e_t + e_x)` before measuring
+  would beg the question: gate `E-1` measures it at symbolic `z` first. A bench multiset without Bloch = direct
+  would not count: gate `D-1`.
+- **N4 — Residual matching.** `C-1` ↔ `break_bench_momenta`; `C-2` ↔ `break_witness_reproduction`; `C-3` ↔
+  `break_flat_control`; `D-1` ↔ `break_bloch_equals_direct`; `D-2` ↔ `break_witness_multisets`; `D-3` ↔
+  `break_control_multisets`; `E-1` ↔ `break_raising_block_additivity`; `E-2` ↔ `break_onsite_similarity`; `E-3` ↔
+  `break_mixed_point_identity`; `F-1` ↔ `break_cone_shape_visible`; `F-2` ↔ `break_cross_term`; `G-1` ↔
+  `break_control_failure`; `G-2` ↔ `break_overlap_fold_dependence`; `G-3` ↔ `break_direction_distinction`.
+- **N5 — Rhetoric audit.** The fence below is byte-gated (`I-1`, `drop_n5_fence`).
+- **N6 — Partial-closure paths and the primitive scan.** No primitive supplies an assembly, a reading, a parameter
+  value, a bench or a direction; registry check performed before the wall sentence.
+- **N7 — Steelman.** *"The bench now sees the cone's shape, so the cell's `G1` is the metric and the branches its
+  dispersion."* Nothing here establishes the antecedent (`R1`); a shape seen on one plane by one assembly under one
+  reading is a measured fact and not a selector (`R2`, `B-4`); the identity is exact at the fine momentum `π/2`, not
+  a small-`k` limit (`R5`), and no dispersion law, Lorentzian structure or light cone is read (`R4`).
+- **N8 — Cross-cycle echo.** The signed sum `−D07 − D16 + D25 + D34` groups the corner pairs by the sign of `δ_t δ_x`
+  — the same `E = diag(1, −1, 1)` pattern that makes the star line `(λ, −λ, λ)`; the overlap `x`-axis distinction
+  seen here is Block 217's `D4_face` axis. Echoes, noted, not interpreted.
+
+---
+
+## READINGS — six of them, and each is a reading
+
+`READINGS_LICENSED_CLAIMED = False` is a declared constant with a gate (`B-5`).
+
+- **R1** — the cell form inherits the Admissibility axiom's proper-cubic-rotation covariance (the antecedent).
+  Not established, not asserted (`B-3`, mutation `claim_covariance_inherited`).
+- **R2** — that the onsite pencil sees the shape and the other constructions do not decides the assembly or the
+  reading. Not established: all four are measured, none is selected (`B-4`).
+- **R3** — 'one metric's cone' or 'the cone's shape' is a metric, a cone or a shape of anything physical. Not
+  established: a polynomial statement restricted to the `(t, x)` plane.
+- **R4** — the bench multisets are a dispersion law, a Lorentzian light cone or a continuum limit. Not established:
+  thirty-two eigenvalues at four Bloch points, the `y` direction unsampled (mutation `claim_continuum_read`).
+- **R5** — the Bloch = principal identity is a small-`k` limit. Not established: an exact finite identity at `π/2`.
+- **R6** — the covariant witness is a vacuum, a background or a spacetime. Not established.
+
+---

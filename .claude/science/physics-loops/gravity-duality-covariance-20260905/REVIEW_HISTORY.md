@@ -69,3 +69,45 @@ Runner: gate G-5 added (facts cell_scan_star_pattern_cells = 16 and cell_scan_st
 11 sourced facts/counts — PASS: every number in the note is measured by the runner (incl. G-4 and G-5, added after delivery and measured) or quoted from Blocks 211/214 and the axiom memo at scope; the blind seat's and the checker's extra statements not gated by the runner are attributed to those seats in the Review record and claimed nowhere else.
 12 pre-review gates — vocab_lint --report-only 0; audit_lint --strict OK; git diff --check clean; py_compile ok; post-fold baseline TOTAL PASS=31 FAIL=0 (re-pinned); explicit-path staging; cold read of the complete note and runner by the supervisor.
 Independence class disclosed: single family (Claude), cross-model — Fable primary seat (delivered, then died at an OAuth 401), Opus 5 sealed blind seat, Opus 5 refuting checker, supervisor hand-verification and the full 27-mutation census.
+
+## block 216 — V1-V5 (primary)
+
+Recorded by the Fable primary seat at block delivery; not an audit certificate.
+Runs: see RESULTS_block216.md (certified baseline summary line and the mutation table).
+
+- **V1 — specific verdict-identified obstruction.** Block 215's `N6` `REOPEN` item 2, quoted verbatim in
+  the note's front matter: the union locus computed at a cell where the twisted line is the star line, and
+  found to be that line, so that covariance and the cone agree with the shears alive. Behind it Block 214's
+  `REOPEN` item 1 and Block 213's `N6`. Computed exactly at all 16 star-pattern cells, both halves, at
+  26 positive-definite witnesses, with the intersection with Block 213's coincidence cells taken by masks
+  after gating the two runners' 64-cell indexings against each other.
+- **V2 — genuinely new content.** (i) The `M_oo` lemma at SYMBOLIC face signs: the odd-odd block of the
+  onsite principal part carries no shear, no volume, no face sign and no `D07`, so the union plane is the
+  same plane at all 64 cells and sufficiency is a lemma everywhere; necessity measured at the 16 cells
+  (Block 214 had it at all-plus witnesses only). (ii) The identity of the two censuses: Block 215's 16
+  star-pattern cells ARE Block 213's 16 coincidence-curve cells, rule A being `P = (+, -, +)` and rule B
+  `P = (-, +, -)`, by the sign identity `P_f = -+ E_i E_j = +-E_k` with Block 213's `E` the star's pair
+  signs — the intersection is everything, the positive subset all 8 rule-A cells. (iii) The covariant
+  witness: at each of the 8 rule-A cells Block 213's curve point over `QQ(sqrt 6)` transported to the cell
+  is positive definite, Block 211's own solve, strictly `S3`-covariant with both shears alive (its strict
+  stabiliser IS an `S3_body`, the star line its parameter locus, preserved on the line), the readings
+  proportional, the graded cone one quadric squared and `det M = c (k^T G1 k)^4` on the star line with the
+  multiple symbolic. (iv) The pencil branches on the covariant line with the line multiple symbolic at
+  both named witnesses: four `k`-free constants times `k^T G1 k`, the line multiple rescaling the top-form
+  and transverse constants and `D07` the 0-form constant (Block 214's `128/119` re-measured on the line).
+  (v) The `D07` congruence at symbolic face signs. (vi) The symbol under `S3`: the two quadrics of Block
+  213's identity and `det B` are invariant under exactly the strict stabiliser, each quadric lies in the
+  two-dimensional `S3`-invariant space `span(|k|^2, (n.k)^2)`, the `O`-invariant space is one-dimensional
+  (the flat cone), and a twisted rotation maps the symbol to the gauged raising part's symbol, not to
+  itself. None of this exists in Blocks 105-215.
+- **V3 — audit lane could NOT already complete this.** It needs Block 215's lift and locus machinery,
+  Block 214's principal part and fraction-free cone machinery, Block 213's census, metric candidates and
+  curve witnesses, and Block 211's family and solve; the audit lane carries none of these.
+- **V4 — no observed target, fit, literature constant or continuum equation is load-bearing.** Every
+  number is an integer, a rational, a symbol or an element of `QQ(sqrt 6)`; gate `I-2` measures zero
+  `nsimplify`, zero float literals and zero float calls.
+- **V5 — materially changes rather than relabels.** Block 215 counted 16 cells and stopped at
+  transporting the cone ("no cone is computed here"); Block 214 stopped at all-plus witnesses; Block 213's
+  coincidence cells were never connected to any symmetry. This block computes the cone at the covariant
+  cells and finds the two 16-cell sets identical, with a witness at every positive one. Nothing is
+  relabelled: Blocks 211, 213, 214 and 215 reproduce unchanged (`C-1`..`C-4`).

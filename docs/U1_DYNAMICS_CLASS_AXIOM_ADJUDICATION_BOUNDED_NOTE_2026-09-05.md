@@ -1,7 +1,7 @@
 ---
 claim_id: u1_dynamics_class_axiom_adjudication_bounded_note_2026-09-05
 claim_type: bounded_theorem
-claim_scope: "On the supplied period-two role compilation of the cubic gauge complex onto Z^3 sites, for the seven items of the weak-field edge/face dynamics class declared by the open PR #7917 (an evidence address, not a premise): the gauge-and-chain-compatibility item and the translation-and-proper-cubic-covariance item are each theorems conditional on the remaining items (compatibility from payload, locality, covariance and the vector-type transformation law of the payload; covariance from payload, locality, compatibility and conservation with no orientation premise), proved by the exact classification of every covariant nearest-neighbor real linear generator on the one-component payload under all sixteen signed-permutation representations and by the exact nullspace of the gauge-plus-chain constraints; covariance additionally has a named axiom lever (the Lattice no-privileged-site sentence under a law-level reading). The payload, time-rule, locality and conservation items are recorded as supplies (locality conditional on an identification premise), each with an explicit alternative law that satisfies every axiom sentence relied on and violates that item, exact on the side-4, side-6 and side-8 compiled tori. The sampling identification of the dynamics with the Admissibility rule is shown to decrease the field energy. No item is derived from the four axioms alone, no dynamics class is selected, and no continuum, infinite-volume, Record-readout or electromagnetic statement is made."
+claim_scope: "On the supplied period-two role compilation of the cubic gauge complex onto Z^3 sites, for the seven items of the weak-field edge/face dynamics class declared by the open PR #7917 (an evidence address, not a premise): the gauge-and-chain-compatibility item and the translation-and-proper-cubic-covariance item are each theorems conditional on the remaining items (compatibility from payload, locality, covariance and the vector-type transformation law of the payload; covariance from payload, locality, compatibility and conservation with no orientation premise), proved by the exact classification of every covariant nearest-neighbor real linear generator on the one-component payload under all sixteen signed-permutation representations in the compilation's sign basis and by the exact, representation-free nullspace of the gauge-plus-chain constraints (one-dimensional on sides 4 and 6 in full generality); covariance additionally has a named axiom lever (the Lattice no-privileged-site sentence under a law-level reading). The payload, time-rule, locality and conservation items are recorded as supplies (locality conditional on an identification premise), each with an explicit alternative law that satisfies every axiom sentence relied on and violates that item, exact on the side-4, side-6 and side-8 compiled tori. The sampling identification of the dynamics with the Admissibility rule is shown to decrease the field energy. No item is derived from the four axioms alone, no dynamics class is selected, and no continuum, infinite-volume, Record-readout or electromagnetic statement is made."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py
@@ -19,7 +19,7 @@ verdict, TOE score, axiom, or approved primitive, and it proposes none.
 [`scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py`](../scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py)
 **Cached receipt:**
 [`logs/runner-cache/u1_dynamics_class_axiom_adjudication_2026_09_05.txt`](../logs/runner-cache/u1_dynamics_class_axiom_adjudication_2026_09_05.txt)
-(`TOTAL: PASS=95 FAIL=0`; exact integer, rational and symbolic arithmetic only)
+(`TOTAL: PASS=100 FAIL=0`; exact integer, rational and symbolic arithmetic only)
 
 **Target claim, in one sentence.** For each of the seven items of the
 declared dynamics class quoted in section 1, decide — from the four axiom
@@ -45,7 +45,7 @@ pack for this block is `.claude/science/physics-loops/u1-maxwell-landing-core-20
 | 1. one real `E` per edge-role site, one real `B` per face-role site | GENUINE SUPPLY (with one derived bound: at most eight real linear coordinates per site, from Qubit's `M_2(C)`) | no axiom sentence names which coordinate of the possibility domain evolves, nor that one does | a complex (two-real-component) law with an onsite phase: conservative, nearest-neighbor, covariant, gauge-compatible |
 | 2. real, linear, first-order, continuous-time evolution | GENUINE SUPPLY; the memoryless (first-order) clause alone is DERIVED-CONDITIONAL-ON(SI) | the axioms name no time parameter (the memo lists "time metric" and "physical persistence dynamics" among the open gates); the Qualification's one-answer sentence gives memorylessness once the field configuration is taken as the law's state (SI) | a reversible finite tick (exact modified-energy conservation, no continuous parameter); a nonlinear constitutive law conserving a positive quartic energy; the complex law (not one real component); the sampling law (stochastic, section 5) |
 | 3. a site derivative reads itself and its six physical nearest neighbors only | DERIVED-CONDITIONAL-ON(IP-B); the premise is target-equivalent for this item | "six physical nearest neighbors" is a Lattice fact; what they are (two vertices and four faces for an edge; four edges and two cubes for a face; never a same-role site; opposite-role couplings only at odd distance) is a compilation fact; that a dynamics reads only them is inherited only if the dynamics reads what the Admissibility rule reads (IP-B) | the improved-curl law `L = C(1 + eps C^T C)`: conservative, covariant, gauge- and chain-compatible, minimal payload, support radius three |
-| 4. translation and proper-cubic covariance | DERIVED-CONDITIONAL-ON(items 1, 3, 5, 6, 7) with no orientation premise; also DERIVED-CONDITIONAL-ON(LR) from the axioms | nearest-neighbor face rows with `L d_0 = 0` and `d_2 L = 0` are exactly the multiples of the oriented curl by one lattice-wide scalar (exact nullspace); conservation then fixes the reverse block and kills onsite terms, and the result is covariant. From the axioms: Lattice's "No site is privileged. Sites are distinguished by the supplied lattice structure alone." read as binding the dynamical law (LR) | an anisotropic law (orientation coefficients 1, 2, 3): conservative, nearest-neighbor, gauge-invariant, not covariant — and, as a consequence, not magnetic-Gauss preserving; a site-privileging law (one face row doubled) |
+| 4. translation and proper-cubic covariance | DERIVED-CONDITIONAL-ON(items 1, 3, 5, 6, 7) with no orientation premise beyond the oriented `d_0`/`d_2` that item 5 itself names (the covariance is exhibited for the oriented representation); also DERIVED-CONDITIONAL-ON(LR) from the axioms | nearest-neighbor face rows with `L d_0 = 0` and `d_2 L = 0` are exactly the multiples of the oriented curl by one lattice-wide scalar (exact nullspace); conservation then fixes the reverse block and kills onsite terms, and the result is covariant. From the axioms: Lattice's "No site is privileged. Sites are distinguished by the supplied lattice structure alone." read as binding the dynamical law (LR) | an anisotropic law (orientation coefficients 1, 2, 3): conservative, nearest-neighbor, gauge-invariant, not covariant — and, as a consequence, not magnetic-Gauss preserving; a site-privileging law (one face row doubled) |
 | 5. the edge-to-face map is invariant under `A -> A + d_0 lambda` and preserves the magnetic Gauss row | DERIVED-CONDITIONAL-ON(items 1, 3, 4, 7 and OL, the vector-type transformation law of the payload) | the sector-preserving stabilizer of a face-role site (a `D_4` of proper rotations named by the Lattice axiom) fixes exactly the oriented-curl stencil on the four boundary edges; all sixteen signed-permutation payload representations are classified: eight admit a coupling, four distinct couplings result, and only the curl is gauge- and chain-compatible | the unoriented law on the unsigned incidence `S`: conservative, covariant (scalar representation), nearest-neighbor, minimal payload, `S d_0 != 0`, `d_2 S != 0`, no soft mode at zero momentum |
 | 6. a positive, diagonal, proper-cubic field energy is conserved | GENUINE SUPPLY | inside the covariant family `[[u, r C^T],[q C, v]]` conservation is the two-condition cut `u = v = 0`, `w_E r + w_B q = 0`; no axiom sentence names a conserved quantity, a reversible flow, or a stationary measure for a field evolution; the sampling identification of the dynamics with the Admissibility rule decreases the energy (section 5) | damped (`u = v < 0`), overdamped (`u = 0, v < 0`: slow root `-s^2 - s^4/gamma - ...`, the diffusive branch), same-sign (`r = +q`: real eigenvalues) — each nearest-neighbor, covariant, gauge- and chain-compatible, minimal payload |
 | 7. no vertex, cube, extra coin or hidden time payload | GENUINE SUPPLY | no axiom sentence restricts which role sites carry an evolving coordinate | a scalar vertex payload `phi`: conservative, nearest-neighbor (a vertex reads its six edges), covariant, gauge-compatible edge-to-face map; a third branch per nonzero momentum (the edge operator becomes the Hodge Laplacian) and a two-speed conservative family |
@@ -54,7 +54,9 @@ Two consequences for the declared class, at its own scope.
 
 - Items 4 and 5 are mutually redundant inside the class: 5 follows from
   1, 3, 4, 7 once the payload transforms as an oriented edge and face
-  quantity; 4 follows from 1, 3, 5, 6, 7 with no orientation premise at all.
+  quantity; 4 follows from 1, 3, 5, 6, 7 with no orientation premise beyond the
+  oriented `d_0`/`d_2` inside item 5 (the covariance is exhibited for the
+  oriented representation).
   The declared class's independent content is the payload (items 1 and 7,
   with the vector-type transformation law), the time rule (item 2), the
   locality (item 3), the conservation (item 6), and one of the two symmetry
@@ -73,8 +75,8 @@ target_claim_type: bounded_theorem
 claim_type_reason: "Every derived statement is an exact finite computation on the side-4, side-6 and side-8 compiled tori (integer, rational and symbolic arithmetic) plus a one-face stabilizer argument valid at every size; every conditional premise is named; every supply carries an explicit exact witness. No item is derived from the four axioms alone, no class is selected, and no infinite-volume, continuum, Record-readout or electromagnetic statement is made."
 trace_class: upstream_support
 target_claim_id: null
-target_blocker_text: "The classification does not derive that dynamics class from the axioms, and exact finite local tick selection remains open."
-source_of_blocker_text: frontier_question
+target_blocker_text: "The four axioms do not currently select that class. In particular, they do not state real linear first-order evolution, energy conservation, minimal (E,B) payload, or continuous time."
+source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the light lane's terminal (the uniqueness classification of open PR #7917) is the consumer: its declared class can be restated with either the covariance item or the compatibility item dropped, and its residual supply is now item-exact — payload and transformation law, time rule, locality, conservation; the next derivation target is conservation, whose only live in-framework route (reflection positivity of a supplied transfer interpretation, section 12 N7) needs two supplied structures"
@@ -97,8 +99,9 @@ neighbors, but no farther site; 4. the law is translation- and
 proper-cubic-covariant; 5. the edge-to-face map is invariant under
 `A -> A+d_0 lambda` and preserves the magnetic Gauss row; 6. a positive,
 diagonal, proper-cubic field energy is conserved; and 7. no vertex, cube,
-extra coin, or hidden time payload participates." Its own boundary: "The
-classification does not derive that dynamics class from the axioms" and "The
+extra coin, or hidden time payload participates." Its own boundary (the PR body, and the note on its head branch): "This is a
+bounded conditional classification, not an axiom derivation or TOE-status
+change." and "The
 four axioms do not currently select that class. In particular, they do not
 state real linear first-order evolution, energy conservation, minimal
 `(E,B)` payload, or continuous time." This note adjudicates that boundary
@@ -114,7 +117,8 @@ oriented along `e_i`; a face with normal `e_k` has the ordered plane pair
 gradient `d_0`, the edge-to-face curl `C` (a face reads `E_i(f - e_j)`,
 `-E_i(f + e_j)`, `E_j(f + e_i)`, `-E_j(f - e_i)`), and the face-to-cube
 divergence `d_2`. This is the doubled incidence declared in the open PR
-`#7913` ("exactly eight translated parity-role sectors on even tori"); the
+`#7913` ("Valid even-torus role fields are exactly eight translated
+sectors."); the
 runner rebuilds it from the parity rule alone and re-proves its facts. Sector
 zero is used throughout; the law-level statements hold in every sector by
 translation.
@@ -207,13 +211,20 @@ it is a property of a supplied dynamics, inherited only under IP-B.
 **Theorem (exact, side 4; stabilizer argument at every even size).** Let the
 payload be one real component at every edge-role and face-role site,
 transforming under the sector-preserving lattice symmetries by a signed
-permutation. Every such transformation law is induced from a character of
+permutation. Up to a diagonal sign relabelling of the payload — the
+compilation's own sign basis is part of the supply, and OL names it — every
+such transformation law is induced from a character of
 the site stabilizer (a `D_4` of proper rotations about the site, all named by
 the Lattice axiom); the characters are realized by tensor transport, so the
 edge payload transforms as a scalar or as the vector component along its
 axis, each optionally twisted by the rotation group's global sign character
 (the parity of the axis permutation), and likewise the face payload as a
-scalar or as the vector component along its normal. This gives sixteen laws. For each, the space of translation- and
+scalar or as the vector component along its normal. This gives sixteen laws
+in the compilation's sign basis. (A sign relabelling gives a further
+signed-permutation law with the same site action — the runner's witness
+negates the payload at every `z`-normal face; its covariant coupling `D C`
+satisfies `D C d_0 = 0` but `d_2 D C != 0` — which is why OL's convention
+clause is load-bearing rather than decorative.) For each, the space of translation- and
 proper-cubic-covariant real linear nearest-neighbor generators on the payload
 is computed exactly as the nullspace of the covariance constraints on the 30
 translation-covariant nearest-neighbor patterns:
@@ -252,28 +263,36 @@ unsigned incidence maps the three constant edge fields to three independent
 face fields while the curl annihilates them). Relative to the four axioms
 alone, item 5 inherits the status of its premises: OL is a supply (the
 axioms fix no transformation law for a payload they do not name), and items
-1, 3, 4, 7 are adjudicated in their own rows.
+1, 3, 4, 7 are adjudicated in their own rows. The conclusion does not rest
+on the enumeration: section 4's nullspace theorem is representation-free —
+any nearest-neighbor face row with `L d_0 = 0` and `d_2 L = 0` is a
+lattice-wide multiple of the curl — so only the curl is gauge- and
+chain-compatible whatever transformation law is supplied.
 
 ## 4. Compatibility forces covariance: the redundancy behind item 4
 
-**Theorem (exact, side 4 in full generality; side 6 after the per-face
-reduction).** Let each face row read only its four boundary edges with free
+**Theorem (exact, sides 4 and 6 in full generality).** Let each face row read only its four boundary edges with free
 coefficients (96 unknowns on side 4). The constraints `L d_0 = 0` and
 `d_2 L = 0` alone — no covariance assumed — leave exactly a one-dimensional
 space, spanned by the oriented curl. The mechanism: gauge invariance on one
 face star forces each row to be a multiple `q_f` of its own curl; the
 magnetic Gauss identity around every cube then forces `q_f` equal on all six
 faces of the cube (each cube edge lies in exactly two of them with opposite
-signs), and cube connectivity makes `q_f` one lattice-wide scalar (on side
-6, the reduced nullspace over the 81 face coefficients is the all-ones
-vector). With item 6, the diagonal blocks vanish and the reverse block is the
+signs), and cube connectivity makes `q_f` one lattice-wide scalar (on side 6 the
+full 324-coefficient nullspace is again one-dimensional and spanned by the
+curl, and the reduced nullspace over the 81 face coefficients is the
+all-ones vector). With item 6, the diagonal blocks vanish and the reverse block is the
 weighted negative adjoint `-(w_B / w_E) q C^T`, so the generator is
 `c [[0, -C^T],[C, 0]]` after normalization — covariant under all 24 proper
 rotations and all even translations.
 
 **Verdict on item 4.** DERIVED-CONDITIONAL-ON(1, 3, 5, 6, 7), with no
-orientation premise: the oriented structure enters through `d_0` and `d_2`
-inside item 5 itself. The anisotropic law with orientation coefficients
+orientation premise beyond item 5's own: the oriented structure enters
+through `d_0` and `d_2` inside item 5 itself, and the covariance is
+exhibited for the oriented (vector/vector) representation and its global
+sign twist — the same matrix is not covariant under any of the other
+fourteen laws, so "covariant" here means covariant under the law the
+compilation's oriented incidence selects. The anisotropic law with orientation coefficients
 `(1, 2, 3)` is the witness in both directions: it is nearest-neighbor,
 conservative, minimal-payload and gauge-invariant (`L d_0 = 0`), it is not
 covariant, and — this is the same fact seen from the other side — it fails
@@ -481,7 +500,7 @@ smallest possible beyond one, by the parity theorem.
 | 1 | GENUINE SUPPLY | missing: a sentence selecting one evolving real coordinate of `M_2(C)` at edge and face roles; the axioms give only the capacity bound eight | comparable: it is the item |
 | 2 | GENUINE SUPPLY (memoryless clause DERIVED-CONDITIONAL-ON(SI)) | missing: a time parameter and its continuity, linearity, determinism; the Qualification gives memorylessness given SI | continuous time: target-equivalent (a time-parameter supply); linearity and determinism: comparable |
 | 3 | DERIVED-CONDITIONAL-ON(IP-B) | IP-B restates the item for the dynamics | target-equivalent (`blocked-equivalent` in the registry sense) |
-| 4 | DERIVED-CONDITIONAL-ON(1, 3, 5, 6, 7); DERIVED-CONDITIONAL-ON(LR) | section 4 (exact nullspace, no orientation premise); LR from Lattice's no-privileged-site sentence | LR is weaker than the item (a scope reading); the items 1, 3, 5, 6, 7 are adjudicated in their rows |
+| 4 | DERIVED-CONDITIONAL-ON(1, 3, 5, 6, 7); DERIVED-CONDITIONAL-ON(LR) | section 4 (exact nullspace; orientation only through item 5's `d_0`/`d_2`); LR from Lattice's no-privileged-site sentence | LR is weaker than the item (a scope reading); the items 1, 3, 5, 6, 7 are adjudicated in their rows |
 | 5 | DERIVED-CONDITIONAL-ON(1, 3, 4, 7, OL) | section 3 (exact classification; one-face stabilizer at every size) | OL is weaker than the item (a one-bit transformation-law choice among sixteen) |
 | 6 | GENUINE SUPPLY | missing: a conservation, reversibility or self-adjointness principle for an evolution of unrecorded possibilities; the nearest kin was removed from Record on 2026-08-13 and never contained a dynamics | target-equivalent |
 | 7 | GENUINE SUPPLY | missing: a sentence restricting the evolving coordinates to the edge and face roles | comparable: it is the item |
@@ -527,7 +546,7 @@ executed in this block's runner or excluded by an approved premise node.
 
 | route | what it would attempt | why it fails here | marker |
 |---|---|---|---|
-| R1 permanence-to-reversibility | read "records are permanent" as reversibility of the field law and reversibility as conservation | permanence concerns records, one per site, never re-recorded; an evolving field at a site is not a record sequence; and reversibility is not conservation: the harmonic sampler is reversible with respect to its measure while its conditional-mean map strictly decreases the energy (runner section G). Context, unaudited: the post-record algebra carries no reversible Hamiltonian-like flow (`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06`) | ATTEMPTED |
+| R1 permanence-to-reversibility | read "records are permanent" as reversibility of the field law and reversibility as conservation | permanence concerns records, one per site, never re-recorded; an evolving field at a site is not a record sequence; and reversibility is not conservation: each single-site conditional update is reversible with respect to the static law (the detailed balance of a heat-bath update — stated, not executed), while the sweep of conditional means strictly decreases the energy (runner section G). Context, unaudited: the post-record algebra carries no reversible Hamiltonian-like flow (`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06`) | ATTEMPTED |
 | R2 no-privileged-state | read "A law privileges no states" as excluding attractors, hence forcing measure preservation | the damped law applies one rule at every state; and excluding attractors leaves the same-sign law (no attractor, conserves no positive form) and the unoriented law (conserves, but is not the class); the sentence concerns the law's domain, not invariants (runner sections F, H) | ATTEMPTED |
 | R3 sampling identification | take the dynamics to be the per-site Admissibility sampler (IP-A) | the induced mean map is the Gauss-Seidel iteration of the static quadratic form and strictly decreases the energy; the induced law is the diffusive branch (runner section G) | ATTEMPTED |
 | R4 kinetic-isotropy primitive | read "the emergent evolution tick" or the OS0 normalization as a self-adjoint transfer structure | the registered primitive's own note: "not a new dynamics", supplies only `c_t = c_s`; registry check performed; the primitive is an approved premise, not a wall, and it supplies no item | RULED OUT BY PRIOR (approved primitive source note, registry node `kinetic_isotropy_primitive`) |
@@ -685,7 +704,8 @@ The bounded theorem fails if any of the following is found:
 - a covariant nearest-neighbor edge-to-face coupling on the minimal payload,
   under one of the sixteen signed-permutation laws, that is not one of the
   four listed, or a fifth transformation law of a real one-component payload
-  by site permutation;
+  by site permutation in the compilation's sign basis (sign relabellings are
+  equivalent laws, excluded by OL, and the runner exhibits one);
 - a nearest-neighbor face row with `L d_0 = 0` and `d_2 L = 0` that is not a
   lattice-wide multiple of the oriented curl;
 - a proper rotation about a vertex or cube site that changes the sector, or
@@ -732,10 +752,19 @@ open-bridge status stated separately.
 Worker provenance: drafted by a Fable primary seat under the block-02
 contract of the campaign pack (`GOAL_block02.md`), with the value gate V1-V5
 answered in the pack's `REVIEW_HISTORY.md` before any PR. Independence
-class: single family, cross-context (the runner's exhaustive finite
-computations against the hand-derived one-face stencil, the blockwise
-conservation equations and the cube-connectivity argument, which were
-written before the runner and agree with it). Independent-math checks per
+class: single family (Claude), cross-model — a Fable primary; an Opus 5
+refuting checker on disjoint machinery (its own `d_0` sign convention,
+Levi-Civita curl signs, exact Fourier block-diagonalization for the
+multiplicities, brute-force enumeration of the signed-permutation laws with
+no character theory assumed, the gauge-plus-chain nullspace in full
+generality on sides 4 and 6, all ten witnesses re-verified: eighty
+independent checks, verdict FIX FIRST with no verdict refuted, findings
+CK-01..CK-08 all applied in the fix pass recorded in the pack's
+`REVIEW_HISTORY.md`); and the supervisor's line-by-line review with hand
+verification of the one-face stencil map, the blockwise conservation
+equations, the leapfrog invariant and its positivity bound, the side-6
+multiplicities from the coarse momentum census, and the cube-connectivity
+argument. Independent-math checks per
 conformance section 6: the one-face stencil (hand computation, section 3),
 the blockwise metric-skew equations (symbolic, section 5), the
 cube-connectivity argument (hand, section 4), the finite-tick modified
@@ -746,7 +775,11 @@ the checks they target: axiom sentence altered; one curl sign flipped;
 face-character factor dropped; metric-skew defect zeroed; Gauss-Seidel sign
 flipped; modified-energy coefficient altered; quartic energy term dropped;
 chain constraint disabled; a multiplicity altered; the stabilizer face sign
-fixed; the support-radius test disabled; the covariance test disabled.
+fixed; the support-radius test disabled; the covariance test disabled. The
+checker's three planted defects were caught as well: a `z`-only face-stencil
+sign flip (thirty failures, first at the chain identities); translation
+covariance made vacuous (caught by the site-privileging witness alone); the
+modified-energy coefficient changed to `h^2/6` (caught by the tick check).
 Nothing landed is replaced or narrowed (this is a new note). Hard landing
 conditions: none; no helper runner; the citation-graph manifest co-lands
 for the one added node.
@@ -762,7 +795,7 @@ python3 scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py
 Expected final line:
 
 ```text
-TOTAL: PASS=95 FAIL=0
+TOTAL: PASS=100 FAIL=0
 ```
 
 The runner declares `AUDIT_TIMEOUT_SEC = 900` and reads one external input,

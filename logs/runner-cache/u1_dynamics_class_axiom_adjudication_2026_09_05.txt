@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py
-runner_sha256: 493ea9d9583c2fd1cb99e70c63ff22d285fd68494ce79ccf8560cb59172d9fd5
+runner_sha256: 17bc2810ca0bc4bb59d4d760390e73e8d0e2990a39e756572b5d87ba81d39fd0
 input_fingerprint_sha256: 0508bab90e8d90e7f18431b9290c97639b302bb3816dd774ce2ca11266eb0c7e
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 16.07
+elapsed_sec: 23.28
 status: ok
 ----- stdout -----
 U(1) dynamics class against the four axioms: per-item adjudication (exact)
@@ -109,11 +109,13 @@ H. Item 5 witness: the unoriented covariant law (side 6)
   [PASS] unoriented law: nearest-neighbor, covariant (unoriented representation), conserves (1/2)(|E|^2+|B|^2), minimal payload
   [PASS] unoriented law violates item 5: S d0 != 0 and d2 S != 0 over the integers
   [PASS] unoriented law has no soft mode at zero momentum: S maps the three constant edge fields to independent faces (rank 3), while the curl kills them
+  [PASS] sign-relabelled oriented law (payload negated at every z-normal face): a signed-permutation representation with the same site action, distinct from all sixteen tensor-transport laws; the generator it makes covariant has edge-to-face block D C with D C d0 = 0 but d2 D C != 0 — OL's convention clause (the compilation's own sign basis) is load-bearing
 
 I. Item 4 witnesses (side 6)
 ----------------------------
   [PASS] anisotropic law (orientation coefficients 1,2,3): nearest-neighbor, conservative, gauge-invariant (L d0 = 0), NOT covariant, and NOT magnetic-Gauss preserving (d2 L != 0)
   [PASS] side 4: nearest-neighbor face rows with L d0 = 0 and d2 L = 0 form exactly the one-dimensional space spanned by the oriented curl (no covariance assumed)
+  [PASS] side 6 in full generality (324 free boundary-edge coefficients, no per-face reduction): the gauge-plus-chain nullspace is one-dimensional and spanned by the oriented curl
   [PASS] side 6: with each face row a multiple q_f of its curl, d2 L = 0 forces q_f constant over all 81 faces (nullspace dimension 1, the all-ones vector)
   [PASS] consequence: items 1,3,5,6,7 force the generator to c[[0,-C^T],[C,0]] after normalization, which is covariant; item 4 is implied by the other items
   [PASS] site-privileging law (one face row doubled): conservative, nearest-neighbor, gauge-compatible, but NOT translation covariant
@@ -136,13 +138,16 @@ L. Item 2 witnesses: finite tick, nonlinear constitutive law; item 1 witness: co
   [PASS] finite tick: each shear preserves its Gauss row exactly (d2 B after the half shears; d0^T E after the full shear)
   [PASS] finite tick: conserves the modified energy H_h = |B|^2/2 + |E|^2/2 - (h^2/8)|C E|^2 exactly; H_h > 0 since spec(C^T C) <= 9 < 4/h^2 = 16
   [PASS] finite tick: not a continuous-time law (the one-tick map differs from exp(h G) at order h^3: E-block of U(h) has a nonzero h^2 C^T C term)
+  [PASS] finite tick: covariant under all 24 proper rotations (oriented representation); each shear reads one site and its four opposite-role nearest neighbors only (one edge moves exactly its four faces, one face exactly its four edges, all at physical distance 1)
   [PASS] nonlinear constitutive law dE/dt = -C^T(B + eps B^3), dB/dt = C E: conserves the positive energy |E|^2/2 + |B|^2/2 + (eps/4)|B|^4 exactly
-  [PASS] nonlinear constitutive law: nearest-neighbor and gauge-compatible (edge-to-face map C) but violates linearity (rate not homogeneous of degree one)
-  [PASS] complex two-component law with onsite phase theta: conserves sum |E|^2 + |B|^2 exactly; real-linear, nearest-neighbor, gauge-compatible; two real components per site (violates item 1)
+  [PASS] nonlinear constitutive law: violates linearity (rate not homogeneous of degree one)
+  [PASS] nonlinear constitutive law: nearest-neighbor (one face moves exactly its four boundary edges' rates, one edge exactly its four faces', all at distance 1), gauge-compatible (dB/dt invariant under E -> E + d0 lambda), covariant under all 24 proper rotations
+  [PASS] complex two-component law with onsite phase theta: conserves sum |E|^2 + |B|^2 exactly; the onsite phase couples the two real components of every site (violates item 1: two real components per site)
+  [PASS] complex law: real generator exactly antisymmetric, support radius 1, covariant under the doubled oriented representation, and its edge-to-face blocks are exactly C (gauge- and chain-compatible)
 
 M. Qubit capacity bound on linear one-site coordinates
 ------------------------------------------------------
-  [PASS] dim_R M_2(C) = 8: every witness payload (1, 1, 2, 1 real components per site) fits; a nine-component linear payload cannot
+  [PASS] dim_R M_2(C) = 8 (rank of the real coordinate basis): every witness payload fits, with components per site read off the constructed generators (1, 1, 2, 1); a nine-component linear payload cannot  ({'Maxwell member': 1, 'vertex-scalar law': 1, 'complex law': 2, 'finite tick / nonlinear law': 1})
 
 N. Resolution certificate
 -------------------------
@@ -152,7 +157,7 @@ per_mode: executed — exact eigenvalue multiplicities of the edge, face and Hod
 per_block: executed — the edge, face and vertex blocks of every witness generator are checked separately for skewness, Gauss rows, chain identities and orientation covariance
 lattice_wide: executed — every witness law is assembled as a full generator on the side-6 or side-8 torus where its conservation, covariance, support radius and gauge compatibility are decided exactly; no infinite-volume or continuum statement is executed
 
-TOTAL: PASS=95 FAIL=0
+TOTAL: PASS=100 FAIL=0
 
 ----- stderr -----
 

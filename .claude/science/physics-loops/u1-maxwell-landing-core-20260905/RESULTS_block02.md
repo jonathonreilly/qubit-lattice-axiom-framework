@@ -2,7 +2,7 @@
 
 **Runner:** `scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py` (exact integer, rational and symbolic arithmetic; no
 float is evidence). **Cache:** `logs/runner-cache/u1_dynamics_class_axiom_adjudication_2026_09_05.txt` (status ok, exit 0,
-`TOTAL: PASS=95 FAIL=0`; timeout 900 s declared; one declared input, the axiom memo). **Note:**
+`TOTAL: PASS=100 FAIL=0`; timeout 900 s declared; one declared input, the axiom memo). **Note:**
 `docs/U1_DYNAMICS_CLASS_AXIOM_ADJUDICATION_BOUNDED_NOTE_2026-09-05.md`.
 
 ## Verdict table (from the note's section 9)
@@ -12,12 +12,31 @@ float is evidence). **Cache:** `logs/runner-cache/u1_dynamics_class_axiom_adjudi
 | 1 payload (one real E per edge, one real B per face) | GENUINE SUPPLY (Qubit bounds a linear one-site payload to eight real components) |
 | 2 real linear first-order continuous time | GENUINE SUPPLY; memoryless clause DERIVED-CONDITIONAL-ON(SI) |
 | 3 nearest-neighbor locality | DERIVED-CONDITIONAL-ON(IP-B), a target-equivalent premise |
-| 4 translation + proper-cubic covariance | DERIVED-CONDITIONAL-ON(items 1,3,5,6,7) with no orientation premise; also DERIVED-CONDITIONAL-ON(LR) |
-| 5 gauge + magnetic-Gauss compatibility | DERIVED-CONDITIONAL-ON(items 1,3,4,7 and OL) |
+| 4 translation + proper-cubic covariance | DERIVED-CONDITIONAL-ON(items 1,3,5,6,7) with orientation only through item 5's own d0/d2 (covariance exhibited for the oriented representation); also DERIVED-CONDITIONAL-ON(LR) |
+| 5 gauge + magnetic-Gauss compatibility | DERIVED-CONDITIONAL-ON(items 1,3,4,7 and OL, the vector-type law in the compilation's sign basis); the conclusion is also representation-free through the nullspace theorem |
 | 6 positive diagonal energy conserved | GENUINE SUPPLY |
 | 7 no vertex/cube/coin/hidden-time payload | GENUINE SUPPLY |
 
-## Mutation checks (scratch copies inside scripts/, removed afterwards; each detected by the targeted check family)
+## Review and fix pass (2026-09-05)
+
+Supervisor line-by-line review (hand verification of the stabilizer stencil map, the blockwise conservation equations, the
+leapfrog invariant, the momentum-census multiplicities, the cube-connectivity argument): no defects beyond the checker's.
+Opus 5 refuting checker (`CHECKER_block02_findings.md`; disjoint machinery: own d0 sign, Levi-Civita curl signs, Fourier
+block-diagonalization, brute-force representation enumeration; eighty independent checks; three planted mutations all caught):
+verdict FIX FIRST, no verdict in the seven-row table refuted. Findings CK-01..CK-08 were each verified by the supervisor
+against the primary surfaces and applied: two PR quotations replaced by the PRs' own sentences (CK-01, CK-02); the sixteen-law
+classification scoped to the compilation's sign basis, the sign-relabelled law exhibited as an executed check, and the item-5
+conclusion stated as representation-free through the nullspace theorem (CK-03); five executed witness checks added — tick
+covariance and per-shear locality, the nonlinear law's locality/gauge/covariance, the complex law's assembled real generator
+(CK-04); "no orientation premise" qualified wherever it occurs (CK-05); R1's reversibility sentence narrowed to the
+single-site statement, marked not executed (CK-06); the capacity check computed from a real basis and the constructed
+generators rather than declared (CK-07); the side-6 gauge-plus-chain nullspace solved in full generality, 324 unknowns
+(CK-08). Runner: 95 -> 100 checks (five added, the section-M check rewritten); cache re-pinned on the final runner.
+
+## Mutation checks
+
+Primary's twelve (scratch copies of the 95-check runner inside scripts/, removed afterwards; each detected by the targeted
+check family):
 
 | mutation | result |
 |---|---|
@@ -34,6 +53,17 @@ float is evidence). **Cache:** `logs/runner-cache/u1_dynamics_class_axiom_adjudi
 | support-radius test disabled | PASS=94 FAIL=1: improved-curl radius |
 | covariance test disabled | PASS=93 FAIL=2: anisotropic and site-privileging witnesses |
 
+Checker's three (scratch copies with ROOT repointed at the worktree; the repo copy untouched):
+
+| mutation | result |
+|---|---|
+| face_stencil sign flipped for the z-normal orientation only | PASS=65 FAIL=30: chain identities first, then the classification, Gauss rows and spectrum |
+| is_covariant returning True for every translation | PASS=94 FAIL=1: the site-privileging witness (the only check that notices; fail-closed but thin) |
+| modified-energy coefficient h^2/8 -> h^2/6 | PASS=94 FAIL=1: tick conservation |
+
+All fifteen mutation counts are at the pre-fix-pass 95-check runner; the fix pass added five checks and rewrote one, and the
+three properties the checker found unexecuted (CK-04) are now executed checks.
+
 ## What could not be established (honest list)
 
 - No item was derived from the four axioms alone. Every DERIVED-CONDITIONAL verdict rests on a named premise (LR, IP-B, OL,
@@ -41,21 +71,22 @@ float is evidence). **Cache:** `logs/runner-cache/u1_dynamics_class_axiom_adjudi
 - Item 3's premise IP-B is target-equivalent (it restates the item for the dynamics); the block sharpens the residual, it does
   not derive locality.
 - Item 4's axiom lever LR is a reading of scope ("No site is privileged" binding the dynamical law); it is not forced by the
-  Qualification, which permits supplied further structure.
+  Qualification, which permits supplied further structure. Its covariance conclusion is relative to the oriented representation
+  that item 5's d0/d2 select.
 - Item 6 was not derived and no derivation route was closed as impossible: the reflection-positivity route (N7) is live and
   needs two supplied structures (a path-product transfer interpretation; an evolution axis). The block did not attempt it.
 - The finite-size statements are exact on the compiled tori of sides 4, 6, 8; the size-free content is the one-face
   stabilizer argument and the cube-connectivity argument. No infinite-volume, continuum, thermodynamic or Lorentz statement.
 - The sampling identification IP-A was executed on the collapsed harmonic edge law (Gauss-Seidel mean map); the exact finite
   auxiliary heat-bath chain of the compiled alphabet (with face auxiliaries) was not executed — the collapsed law is radius two,
-  the compiled one is nearest-neighbor by the compilation's own construction.
+  the compiled one is nearest-neighbor by the compilation's own construction. The single-site detailed-balance statement in
+  route R1 is stated, not executed.
 - No Record readout of E or B, no identification with electromagnetism, no selection among the time-selection fork's branches
   beyond stating which identification premise selects which branch.
-- The "up to a global sign character" bookkeeping of the sixteen payload laws is a classification of signed-permutation
-  representations; representations that do not act by site permutation (mixing sites) were not classified and are outside
-  item 1's "one component per site".
-- Independence class is single-family cross-context (Fable primary; hand derivations against the exhaustive runner); the
-  refuting checker seat has not yet run.
+- The sixteen-law classification is of signed-permutation representations in the compilation's sign basis; sign relabellings
+  are equivalent laws (one is exhibited) and representations that do not act by site permutation were not classified.
+- Independence class: single family (Claude), cross-model — Fable primary, Opus 5 refuting checker, supervisor line-by-line
+  review with hand verification. Independent audit is still required.
 
 ## Full runner output (from the cache, stdout section)
 
@@ -162,11 +193,13 @@ H. Item 5 witness: the unoriented covariant law (side 6)
   [PASS] unoriented law: nearest-neighbor, covariant (unoriented representation), conserves (1/2)(|E|^2+|B|^2), minimal payload
   [PASS] unoriented law violates item 5: S d0 != 0 and d2 S != 0 over the integers
   [PASS] unoriented law has no soft mode at zero momentum: S maps the three constant edge fields to independent faces (rank 3), while the curl kills them
+  [PASS] sign-relabelled oriented law (payload negated at every z-normal face): a signed-permutation representation with the same site action, distinct from all sixteen tensor-transport laws; the generator it makes covariant has edge-to-face block D C with D C d0 = 0 but d2 D C != 0 — OL's convention clause (the compilation's own sign basis) is load-bearing
 
 I. Item 4 witnesses (side 6)
 ----------------------------
   [PASS] anisotropic law (orientation coefficients 1,2,3): nearest-neighbor, conservative, gauge-invariant (L d0 = 0), NOT covariant, and NOT magnetic-Gauss preserving (d2 L != 0)
   [PASS] side 4: nearest-neighbor face rows with L d0 = 0 and d2 L = 0 form exactly the one-dimensional space spanned by the oriented curl (no covariance assumed)
+  [PASS] side 6 in full generality (324 free boundary-edge coefficients, no per-face reduction): the gauge-plus-chain nullspace is one-dimensional and spanned by the oriented curl
   [PASS] side 6: with each face row a multiple q_f of its curl, d2 L = 0 forces q_f constant over all 81 faces (nullspace dimension 1, the all-ones vector)
   [PASS] consequence: items 1,3,5,6,7 force the generator to c[[0,-C^T],[C,0]] after normalization, which is covariant; item 4 is implied by the other items
   [PASS] site-privileging law (one face row doubled): conservative, nearest-neighbor, gauge-compatible, but NOT translation covariant
@@ -189,13 +222,16 @@ L. Item 2 witnesses: finite tick, nonlinear constitutive law; item 1 witness: co
   [PASS] finite tick: each shear preserves its Gauss row exactly (d2 B after the half shears; d0^T E after the full shear)
   [PASS] finite tick: conserves the modified energy H_h = |B|^2/2 + |E|^2/2 - (h^2/8)|C E|^2 exactly; H_h > 0 since spec(C^T C) <= 9 < 4/h^2 = 16
   [PASS] finite tick: not a continuous-time law (the one-tick map differs from exp(h G) at order h^3: E-block of U(h) has a nonzero h^2 C^T C term)
+  [PASS] finite tick: covariant under all 24 proper rotations (oriented representation); each shear reads one site and its four opposite-role nearest neighbors only (one edge moves exactly its four faces, one face exactly its four edges, all at physical distance 1)
   [PASS] nonlinear constitutive law dE/dt = -C^T(B + eps B^3), dB/dt = C E: conserves the positive energy |E|^2/2 + |B|^2/2 + (eps/4)|B|^4 exactly
-  [PASS] nonlinear constitutive law: nearest-neighbor and gauge-compatible (edge-to-face map C) but violates linearity (rate not homogeneous of degree one)
-  [PASS] complex two-component law with onsite phase theta: conserves sum |E|^2 + |B|^2 exactly; real-linear, nearest-neighbor, gauge-compatible; two real components per site (violates item 1)
+  [PASS] nonlinear constitutive law: violates linearity (rate not homogeneous of degree one)
+  [PASS] nonlinear constitutive law: nearest-neighbor (one face moves exactly its four boundary edges' rates, one edge exactly its four faces', all at distance 1), gauge-compatible (dB/dt invariant under E -> E + d0 lambda), covariant under all 24 proper rotations
+  [PASS] complex two-component law with onsite phase theta: conserves sum |E|^2 + |B|^2 exactly; the onsite phase couples the two real components of every site (violates item 1: two real components per site)
+  [PASS] complex law: real generator exactly antisymmetric, support radius 1, covariant under the doubled oriented representation, and its edge-to-face blocks are exactly C (gauge- and chain-compatible)
 
 M. Qubit capacity bound on linear one-site coordinates
 ------------------------------------------------------
-  [PASS] dim_R M_2(C) = 8: every witness payload (1, 1, 2, 1 real components per site) fits; a nine-component linear payload cannot
+  [PASS] dim_R M_2(C) = 8 (rank of the real coordinate basis): every witness payload fits, with components per site read off the constructed generators (1, 1, 2, 1); a nine-component linear payload cannot  ({'Maxwell member': 1, 'vertex-scalar law': 1, 'complex law': 2, 'finite tick / nonlinear law': 1})
 
 N. Resolution certificate
 -------------------------
@@ -205,5 +241,5 @@ per_mode: executed — exact eigenvalue multiplicities of the edge, face and Hod
 per_block: executed — the edge, face and vertex blocks of every witness generator are checked separately for skewness, Gauss rows, chain identities and orientation covariance
 lattice_wide: executed — every witness law is assembled as a full generator on the side-6 or side-8 torus where its conservation, covariance, support radius and gauge compatibility are decided exactly; no infinite-volume or continuum statement is executed
 
-TOTAL: PASS=95 FAIL=0
+TOTAL: PASS=100 FAIL=0
 ```

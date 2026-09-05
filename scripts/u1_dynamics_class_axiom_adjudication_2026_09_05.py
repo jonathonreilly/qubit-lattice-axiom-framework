@@ -28,7 +28,15 @@ float is evidence):
   item and violate one: damped, overdamped (diffusive infrared root),
   same-sign, unoriented, anisotropic, site-privileging, improved-curl radius
   three, vertex-scalar (third branch, two speeds), complex two-component,
-  nonlinear constitutive, and a reversible finite tick;
+  nonlinear constitutive, and a reversible finite tick — every property a
+  witness is claimed to keep is executed (support radius, covariance, gauge
+  and chain compatibility, conservation);
+* that the gauge-plus-chain nullspace on nearest-neighbor face rows is
+  one-dimensional and spanned by the curl in full generality on sides 4 and
+  6 (96 and 324 free coefficients), and that a diagonal sign relabelling of
+  the oriented payload law is a further signed-permutation representation
+  whose covariant coupling is gauge-invariant but not chain-compatible (the
+  compilation's own sign basis is part of the orientation supply);
 * that the admissibility-sampling identification of the dynamics (the
   Gauss-Seidel mean map of the harmonic static law) strictly decreases the
   field energy, i.e. lands on the dissipative branch;
@@ -950,6 +958,27 @@ def main() -> int:
     curl_images = [matvec_q(comp6.curl, c) for c in consts]
     check("unoriented law has no soft mode at zero momentum: S maps the three constant edge fields to independent faces (rank 3), while the curl kills them",
           rank_q(images) == 3 and all(all(val == 0 for val in img) for img in curl_images))
+    # OL's convention clause is load-bearing (checker finding CK-03): a diagonal sign relabelling of the oriented law —
+    # the payload negated at every z-normal face — is a signed-permutation representation with the same site action
+    # that is none of the sixteen tensor-transport matrices; its covariant coupling D C is gauge-invariant but not
+    # chain-compatible, so "vector-type" must mean the compilation's own sign basis.
+    D_signs = np.array([1] * ne6 + [(-1 if comp6.face_normal(x) == 2 else 1) for x in comp6.faces], dtype=np.int64)
+    D_mat = np.diag(D_signs)
+    rho_prime = [D_mat @ p @ D_mat for p in perm6]
+    laws6 = {(e_c, b_c): [field_rotation(comp6, rot, e_c, b_c) for rot in rots6] for e_c in CHARACTERS for b_c in CHARACTERS}
+    distinct_from_all = all(any(not np.array_equal(rho_prime[i], law[i]) for i in range(len(rots6))) for law in laws6.values())
+    signed_perm_ok = all(np.array_equal(np.abs(m).sum(axis=0), np.ones(ne6 + nf6, dtype=np.int64))
+                         and np.array_equal(np.abs(m).sum(axis=1), np.ones(ne6 + nf6, dtype=np.int64)) for m in rho_prime)
+    index_of = {tuple(map(tuple, r)): i for i, r in enumerate(rots6)}
+    rep_ok = all(np.array_equal(rho_prime[index_of[tuple(map(tuple, r1 @ r2))]], rho_prime[i] @ rho_prime[j])
+                 for i, r1 in enumerate(rots6) for j, r2 in enumerate(rots6))
+    same_action = all(np.array_equal(np.abs(rho_prime[i]), np.abs(perm6[i])) for i in range(len(rots6)))
+    g_relabelled = D_mat @ int_matrix(maxwell) @ D_mat
+    DC = g_relabelled[ne6:, :ne6]
+    check("sign-relabelled oriented law (payload negated at every z-normal face): a signed-permutation representation with the same site action, distinct from all sixteen tensor-transport laws; the generator it makes covariant has edge-to-face block D C with D C d0 = 0 but d2 D C != 0 — OL's convention clause (the compilation's own sign basis) is load-bearing",
+          signed_perm_ok and rep_ok and same_action and distinct_from_all
+          and all(np.array_equal(m @ g_relabelled @ m.T, g_relabelled) for m in rho_prime)
+          and not same_up_to_sign(DC, comp6.curl) and not np.any(DC @ comp6.d0) and np.any(comp6.d2 @ DC))
 
     # ---------------------------------------------------------------- I
     section("I. Item 4 witnesses (side 6)")
@@ -985,6 +1014,30 @@ def main() -> int:
     curl_vec = [Fraction(int(comp4.curl[f, e])) for (f, e) in unknowns]
     check("side 4: nearest-neighbor face rows with L d0 = 0 and d2 L = 0 form exactly the one-dimensional space spanned by the oriented curl (no covariance assumed)",
           len(unknowns) == 96 and len(chain_basis) == 1 and rank_q([chain_basis[0], curl_vec]) == 1)
+    # side 6 in full generality: all 324 boundary-edge coefficients free, no per-face reduction (checker finding CK-08)
+    unknowns6 = [(f, comp6.eidx[site]) for f, x in enumerate(comp6.faces) for site, _ in comp6.face_stencil(x, signed=True)]
+    col6 = {pair: i for i, pair in enumerate(unknowns6)}
+    system6_full = []
+    for f in range(nf6):
+        for v_ in range(len(comp6.vertices)):
+            row = [Fraction(0)] * len(unknowns6)
+            for (ff, e) in unknowns6:
+                if ff == f and comp6.d0[e, v_]:
+                    row[col6[(ff, e)]] += int(comp6.d0[e, v_])
+            if any(row):
+                system6_full.append(row)
+    for c_ in range(len(comp6.cubes)):
+        for e in range(ne6):
+            row = [Fraction(0)] * len(unknowns6)
+            for (ff, ee) in unknowns6:
+                if ee == e and comp6.d2[c_, ff]:
+                    row[col6[(ff, ee)]] += int(comp6.d2[c_, ff])
+            if any(row):
+                system6_full.append(row)
+    chain_basis6 = nullspace_q(system6_full)
+    curl_vec6 = [Fraction(int(comp6.curl[f, e])) for (f, e) in unknowns6]
+    check("side 6 in full generality (324 free boundary-edge coefficients, no per-face reduction): the gauge-plus-chain nullspace is one-dimensional and spanned by the oriented curl",
+          len(unknowns6) == 324 and len(chain_basis6) == 1 and rank_q([chain_basis6[0], curl_vec6]) == 1)
     # side 6: after the per-face gauge reduction (row f = q_f * curl_f) the magnetic Gauss identity forces all q_f equal
     system6 = []
     for c_ in range(len(comp6.cubes)):
@@ -1101,6 +1154,33 @@ def main() -> int:
           h_energy(E1, B1, h) == h_energy(E0, B0, h) and 1 - h * h * 9 / 4 > 0)
     check("finite tick: not a continuous-time law (the one-tick map differs from exp(h G) at order h^3: E-block of U(h) has a nonzero h^2 C^T C term)",
           E1 != [e - h * c for e, c in zip(E0, matvec_q(comp6.curl.T, B0))])
+
+    # the tick's covariance and per-shear locality, executed (checker finding CK-04)
+    def signed_permute(perm_matrix: np.ndarray, vec: list[Fraction]) -> list[Fraction]:
+        out = [Fraction(0)] * len(vec)
+        for c in range(len(vec)):
+            rows = np.nonzero(perm_matrix[:, c])[0]
+            out[int(rows[0])] += int(perm_matrix[rows[0], c]) * vec[c]
+        return out
+
+    tick_cov = True
+    for p in perm6:
+        pE_, pB_ = p[:ne6, :ne6], p[ne6:, ne6:]
+        E1r, B1r, _ = tick(signed_permute(pE_, E0), signed_permute(pB_, B0), h)
+        tick_cov = tick_cov and E1r == signed_permute(pE_, E1) and B1r == signed_permute(pB_, B1)
+    e0_, f0_ = 0, 0
+    E_pert = E0[:]
+    E_pert[e0_] += 1
+    Bh_pert = [b + h / 2 * c for b, c in zip(B0, matvec_q(comp6.curl, E_pert))]
+    changed_faces = [f for f in range(nf6) if Bh_pert[f] != Bhalf[f]]
+    B_pert = B0[:]
+    B_pert[f0_] += 1
+    E_after = [e - h * c for e, c in zip(E0, matvec_q(comp6.curl.T, B_pert))]
+    E_base = [e - h * c for e, c in zip(E0, matvec_q(comp6.curl.T, B0))]
+    changed_edges = [e for e in range(ne6) if E_after[e] != E_base[e]]
+    check("finite tick: covariant under all 24 proper rotations (oriented representation); each shear reads one site and its four opposite-role nearest neighbors only (one edge moves exactly its four faces, one face exactly its four edges, all at physical distance 1)",
+          tick_cov and len(changed_faces) == 4 and all(comp6.distance(comp6.faces[f], comp6.edges[e0_]) == 1 for f in changed_faces)
+          and len(changed_edges) == 4 and all(comp6.distance(comp6.edges[e], comp6.faces[f0_]) == 1 for e in changed_edges))
     epsn = Fraction(1, 5)
 
     def nonlinear_rate(Ev, Bv):
@@ -1112,8 +1192,28 @@ def main() -> int:
     dE2, dB2 = nonlinear_rate([2 * e for e in E0], [2 * b for b in B0])
     check("nonlinear constitutive law dE/dt = -C^T(B + eps B^3), dB/dt = C E: conserves the positive energy |E|^2/2 + |B|^2/2 + (eps/4)|B|^4 exactly",
           d_energy_nl == 0)
-    check("nonlinear constitutive law: nearest-neighbor and gauge-compatible (edge-to-face map C) but violates linearity (rate not homogeneous of degree one)",
+    check("nonlinear constitutive law: violates linearity (rate not homogeneous of degree one)",
           dE2 != [2 * x for x in dE])
+    # its locality, gauge compatibility and covariance, executed (checker finding CK-04)
+    Bq = B0[:]
+    Bq[f0_] += 1
+    dE_q, _ = nonlinear_rate(E0, Bq)
+    moved_edges = [e for e in range(ne6) if dE_q[e] != dE[e]]
+    Eq = E0[:]
+    Eq[e0_] += 1
+    _, dB_q = nonlinear_rate(Eq, B0)
+    moved_faces = [f for f in range(nf6) if dB_q[f] != dB[f]]
+    lam_v = rational_vector(len(comp6.vertices), rng)
+    _, dB_gauge = nonlinear_rate([e + g for e, g in zip(E0, matvec_q(comp6.d0, lam_v))], B0)
+    nl_cov = True
+    for p in perm6:
+        pE_, pB_ = p[:ne6, :ne6], p[ne6:, ne6:]
+        dEr_, dBr_ = nonlinear_rate(signed_permute(pE_, E0), signed_permute(pB_, B0))
+        nl_cov = nl_cov and dEr_ == signed_permute(pE_, dE) and dBr_ == signed_permute(pB_, dB)
+    check("nonlinear constitutive law: nearest-neighbor (one face moves exactly its four boundary edges' rates, one edge exactly its four faces', all at distance 1), gauge-compatible (dB/dt invariant under E -> E + d0 lambda), covariant under all 24 proper rotations",
+          len(moved_edges) == 4 and all(comp6.distance(comp6.edges[e], comp6.faces[f0_]) == 1 for e in moved_edges)
+          and len(moved_faces) == 4 and all(comp6.distance(comp6.faces[f], comp6.edges[e0_]) == 1 for f in moved_faces)
+          and dB_gauge == dB and nl_cov)
     theta = Fraction(3, 7)
 
     def complex_rate(Er, Ei, Br, Bi):
@@ -1124,14 +1224,59 @@ def main() -> int:
 
     Er, Ei, Br, Bi = rational_vector(ne6, rng), rational_vector(ne6, rng), rational_vector(nf6, rng), rational_vector(nf6, rng)
     dEr, dEi, dBr, dBi = complex_rate(Er, Ei, Br, Bi)
-    check("complex two-component law with onsite phase theta: conserves sum |E|^2 + |B|^2 exactly; real-linear, nearest-neighbor, gauge-compatible; two real components per site (violates item 1)",
-          dot_q(Er, dEr) + dot_q(Ei, dEi) + dot_q(Br, dBr) + dot_q(Bi, dBi) == 0 and theta != 0)
+    unit_e0 = [Fraction(1)] + [Fraction(0)] * (ne6 - 1)
+    zeros_e, zeros_f = [Fraction(0)] * ne6, [Fraction(0)] * nf6
+    check("complex two-component law with onsite phase theta: conserves sum |E|^2 + |B|^2 exactly; the onsite phase couples the two real components of every site (violates item 1: two real components per site)",
+          dot_q(Er, dEr) + dot_q(Ei, dEi) + dot_q(Br, dBr) + dot_q(Bi, dBi) == 0
+          and complex_rate(unit_e0, zeros_e, zeros_f, zeros_f)[1][0] == theta != 0)
+    # the complex law's real generator, assembled column by column: antisymmetric, radius 1, covariant, edge-to-face blocks C (checker finding CK-04)
+    n_c = 2 * ne6 + 2 * nf6
+    gen_c = [[Fraction(0)] * n_c for _ in range(n_c)]
+    for col in range(n_c):
+        unit = [Fraction(0)] * n_c
+        unit[col] = Fraction(1)
+        parts = complex_rate(unit[:ne6], unit[ne6:2 * ne6], unit[2 * ne6:2 * ne6 + nf6], unit[2 * ne6 + nf6:])
+        column = parts[0] + parts[1] + parts[2] + parts[3]
+        for row in range(n_c):
+            gen_c[row][col] = column[row]
+    order_c = comp6.edges + comp6.edges + comp6.faces + comp6.faces
+    radius_c = max(comp6.distance(order_c[r], order_c[c]) for r in range(n_c) for c in range(n_c) if gen_c[r][c] != 0)
+    antisym_c = all(gen_c[r][c] == -gen_c[c][r] for r in range(n_c) for c in range(n_c))
+
+    def doubled(p: np.ndarray) -> np.ndarray:
+        pE_, pB_ = p[:ne6, :ne6], p[ne6:, ne6:]
+        m = np.zeros((n_c, n_c), dtype=np.int64)
+        m[:ne6, :ne6] = pE_
+        m[ne6:2 * ne6, ne6:2 * ne6] = pE_
+        m[2 * ne6:2 * ne6 + nf6, 2 * ne6:2 * ne6 + nf6] = pB_
+        m[2 * ne6 + nf6:, 2 * ne6 + nf6:] = pB_
+        return m
+
+    cov_c = all(is_covariant(gen_c, doubled(p)) for p in perm6)
+    block_rr = int_matrix([row[:ne6] for row in gen_c[2 * ne6:2 * ne6 + nf6]])
+    block_ii = int_matrix([row[ne6:2 * ne6] for row in gen_c[2 * ne6 + nf6:]])
+    block_ri = [row[ne6:2 * ne6] for row in gen_c[2 * ne6:2 * ne6 + nf6]]
+    check("complex law: real generator exactly antisymmetric, support radius 1, covariant under the doubled oriented representation, and its edge-to-face blocks are exactly C (gauge- and chain-compatible)",
+          antisym_c and radius_c == 1 and cov_c and np.array_equal(block_rr, comp6.curl) and np.array_equal(block_ii, comp6.curl)
+          and all(v == 0 for row in block_ri for v in row))
 
     # ---------------------------------------------------------------- M
     section("M. Qubit capacity bound on linear one-site coordinates")
-    real_dim_m2c = 2 * 2 * 2
-    check("dim_R M_2(C) = 8: every witness payload (1, 1, 2, 1 real components per site) fits; a nine-component linear payload cannot",
-          real_dim_m2c == 8 and max(1, 1, 2, 1) <= 8 and 9 > real_dim_m2c)
+    # dim_R M_2(C) from an explicit real coordinate basis (real and imaginary parts of the four matrix units);
+    # the witness component counts are read off the constructed generators, not declared (checker finding CK-07)
+    real_coords = []
+    for i in range(2):
+        for j in range(2):
+            for part in (0, 1):
+                vec = [Fraction(0)] * 8
+                vec[2 * (2 * i + j) + part] = Fraction(1)
+                real_coords.append(vec)
+    real_dim_m2c = rank_q(real_coords)
+    components_per_site = {"Maxwell member": len(maxwell) // (ne6 + nf6), "vertex-scalar law": n_all // (nv6 + ne6 + nf6),
+                           "complex law": n_c // (ne6 + nf6), "finite tick / nonlinear law": len(E0 + B0) // (ne6 + nf6)}
+    check("dim_R M_2(C) = 8 (rank of the real coordinate basis): every witness payload fits, with components per site read off the constructed generators (1, 1, 2, 1); a nine-component linear payload cannot",
+          real_dim_m2c == 8 and components_per_site == {"Maxwell member": 1, "vertex-scalar law": 1, "complex law": 2, "finite tick / nonlinear law": 1}
+          and max(components_per_site.values()) <= real_dim_m2c and 9 > real_dim_m2c, components_per_site)
 
     # ---------------------------------------------------------------- N
     section("N. Resolution certificate")

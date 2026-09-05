@@ -11,3 +11,5 @@ Hard landing condition: map repeated_record_matter_and_energy_conserving_apparat
 Publish via PR for independent review, with no merge or effective-grade change. Campaign deadline remains 2026-09-05 19:41:09 UTC, with 15-minute updates. Photon execution belongs to the other worker.
 
 For the declared stationary sea, the actual process has exactly the ideal pilot’s history probabilities and conditional energy/ground-excess distributions. This is an analytic application of equations (38)-(39), not a large apparatus simulation. The output state can retain a different pattern of energy coherence, so this comparison does not certify noncommuting local matter observables.
+
+Final science e1334229a1 passed full pipeline (checkpoint2c3d3aef43c6), subsequent strict lint, changed-evidence readiness, disposable exact helper mapping, links, vocabulary, compilation and whitespace. Only the generated citation manifest ships; generated audit residue was restored. This is ready for independent review, not an effective retained result.

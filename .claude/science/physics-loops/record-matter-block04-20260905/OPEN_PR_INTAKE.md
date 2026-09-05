@@ -10,3 +10,5 @@ Reading provenance is not an audit grade. The latest science is considered at op
 No claim from an unmerged PR is required in the note's proof. The separate Claude planning artifact was treated as a navigational aid and checked against actual scientific sources.
 
 Prepublication integration refresh at 2026-09-05 01:30:56 UTC is byte-identical across all 230 rows and both terminal captures: no new, changed or closed PR. All seven receipt files still match; zero missing/stale. Root read the complete comparison attestation and coverage output. Current main remains e249016f759f224d9b429932cd0d1db4d452dc1a.
+
+Final publication capture at 2026-09-05 02:10 UTC remains byte-identical to the 230-row selection snapshot; all complete file lists and pinned identities match. The complete receipt check again reports 230 matched, zero missing/stale/closed. Main was fetched again and remains e249016f759f224d9b429932cd0d1db4d452dc1a.

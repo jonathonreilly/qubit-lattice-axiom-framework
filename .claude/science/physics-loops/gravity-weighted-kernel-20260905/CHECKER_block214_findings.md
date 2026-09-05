@@ -1,6 +1,6 @@
 # Refuting checker — Block 214 (third seat, independent machinery)
 
-CHECKER VERDICT: IN PROGRESS — INCOMPLETE (budget), see the last line of this file.
+CHECKER VERDICT: FIX FIRST — every load-bearing claim I tested reproduces exactly on my own machinery, but the deformed-flat-cell quartic is printed with the wrong sign in three restatements (`Q = |k|⁴ + Q2_flat` should be `Q = |k|⁴ − Q2_flat`), one of them inside the byte-gated `N5` fence.
 
 Checker seat: Opus 5, launched 2026-09-05T07:09Z, hard budget 55 min. All
 computations below are my own sympy build of `D(kappa)`, `H0`, `M`, the parity
@@ -281,6 +281,96 @@ fence (so the runner's `N5_FENCE` literal has to move with it). No load-bearing
 result changes: `det M_flat`, the `D07` absence and the plane restoration are
 all exactly as measured.
 
+## CK-11 — the single-quadric system is inconsistent, exactly (CONFIRMS)
+
+Note, `N4`, lines 296–298 and the fence line 583:
+
+> ``det M = (kᵀ G k)⁴` for some symmetric `G` — one metric's cone — is a`
+> `polynomial system in the six entries of `G` and the parameters. Its lex`
+> `Gröbner basis is `(1)` — **inconsistent over the algebraic closure** — at `W1``
+> `under both assemblies (`F-6`, ...)`
+
+Computed by back-substitution, not by the primary's system in the six `G`
+entries: `det M = c Q²`, so `det M = (kᵀGk)⁴` forces `Q = ±√c⁻¹ (kᵀGk)²`; write
+`Q = A(kt² + g01 kt kx + g02 kt ky + g11 kx² + g12 kx ky + g22 ky²)²` with
+`A = ` the `kt⁴` coefficient (checked `= −6 ≠ 0` at `W1`), read the five `g`'s
+off the `kt³`/`kt²` coefficients, and keep the **nine remaining** coefficients
+as conditions in `(D16, D25, D34)`.
+
+Values:
+- `W1`, onsite, symbolic parameters: the lex Gröbner basis of the nine
+  residuals in `(D16,D25,D34)` is `[1]` — inconsistent at **every** parameter
+  point (and `Q` carries no `D07`, so all `D07` are covered).
+- `W1`, **overlap**, symbolic parameters: `det M = c Q²` with one irreducible
+  quartic, and `gcd(∂Q/∂kt, ∂Q/∂kx, ∂Q/∂ky) = 4`, a nonzero constant — `Q` is
+  squarefree, so `det M` is never `(kᵀGk)⁴` under overlap either.
+- `L+−`, `D16 = 1/4` (off the plane): the residuals include the nonzero
+  constants `{2, −4, −4, 53}` — inconsistent.
+- `L+−`, along the plane `(s, −s, s)` with symbolic `s`:
+  `det M = (1/64)(3kt² − 2kt kx − 2kt ky + 3kx² − 2kx ky + 3ky²)⁴`, i.e. one
+  quadric to the fourth for **every** `s`, and `det M / (kᵀ G1 k)⁴ = 64/81`
+  exactly. Block 213's single-quadric cone persists on the whole plane and dies
+  at the declared point off it. **CONFIRMS `F-6` and `F-7`.**
+
+## CK-12 — the overlap union locus (CONFIRMS)
+
+Note, `N3`, line 259: `` Overlap: the same ideal in `s` has radical `(s)`. ``
+
+Computed at `W1`, overlap fold, symbolic parameters: `det B` is parameter-free;
+`det M − det B²` vanishes identically at `s = 0`; substituting
+`D07 = s − D16 − D25 − D34`, every `κ`-coefficient has `s`-degree support in
+`{2, 4}`, so the coefficient ideal is exactly `(s²)` and its radical is `(s)`.
+**CONFIRMS.**
+
+## CK-13 — not tested (COULD NOT TEST, time)
+
+- The `(4,2,2)` bench pencil multiset `{0 ×8, 1 ×6, 16/15 ×2}` at
+  `D16 = 1/4` / `D07 = 1/4` on the deformed flat cell (note line 342), and the
+  Bloch-union = direct-bench identity (`D-3`, `E`).
+- The pencil branch tables of `N4` lines 314–321 other than the `128/119` and
+  `5/36` constants (CK-09) — in particular "no algebraic branch" at
+  `W1, D16 = 1/4` and the merged irreducible cubic on the plane point.
+- The registration statements of `N4c` (lines 356–363), `G-1`/`G-2`.
+- The two-quadric eliminant `s²` on the four declared slices (`F-8`, line 280).
+  My CK-06/CK-11 results are consistent with it — the quartic is a product of
+  two quadrics exactly on the plane, where `s`'s own vanishing is not the
+  condition onsite — but I did not compute the eliminant itself.
+- The two planted-defect monkeypatches (spec item 8): not attempted, no budget.
+
+Nothing in the untested set is contradicted by anything I did compute.
+
 ---
 
-INCOMPLETE — budget. (This line is replaced when the run finishes.)
+## Summary
+
+| item | what | disposition |
+| --- | --- | --- |
+| CK-01 | `D(κ)`'s twelve entries, zero row 0, zero column 7 | CONFIRMS |
+| CK-02 | the four free names sit on `(0,7),(1,6),(2,5),(3,4)`, coefficient `+1` | CONFIRMS |
+| CK-03 | `M_eo` parameter-free; `M_ee = [[0,uᵀ],[u,0]]`; `M_oo = [[N,0],[0,0]]`, all signs | CONFIRMS |
+| CK-04 | `UᵀMU = M|₀`, `UᵀH0U = H0|₀` with `D0 → v0 − D07² v1`; bound `D07² < v0/v1` | CONFIRMS |
+| CK-05 | overlap `H0 = H0(0) + (s/4)P₁₁₁`; `M` a function of `s` alone | CONFIRMS |
+| CK-06 | union locus onsite = the plane, ideal exactly `(a², ab, b²)`, rank 3 | CONFIRMS |
+| CK-07 | `det M = (64/2025)Q²`, `Q` irreducible, `Q2` even quadratic; `D16` literal | CONFIRMS |
+| CK-08 | `Q` squarefree ⇒ no single metric's cone; plane at `L+−` persists | CONFIRMS |
+| CK-09 | `v1/v0 = 9/8`, `μ = 32/27`, `128/119`, `D07² = 5/36 < 8/9` | CONFIRMS |
+| CK-10 | flat: `Q = −\|k\|⁴ + Q2_flat` is right; `+Q2_flat` in 3 restatements is wrong | **CORRECTS** |
+| CK-11 | single-quadric system inconsistent at `W1` under both assemblies | CONFIRMS |
+| CK-12 | overlap union-locus ideal `(s²)`, radical `(s)` | CONFIRMS |
+| CK-13 | bench multisets, branch tables, registration, `F-8` eliminant, planted defects | COULD NOT TEST (time) |
+
+No claim I tested is refuted. The one required change before the PR is the
+sign in CK-10, at note lines 382, 456 and 583 (the last is byte-gated, so the
+runner's `N5_FENCE` literal moves with it).
+
+**Housekeeping for the supervisor:** through my own path error I created a
+stray untracked copy of an earlier draft of this file at
+`/Users/jonBridger/Projects/Physics-baremetal-probes/.claude/science/physics-loops/gravity-weighted-kernel-20260905/CHECKER_block214_findings.md`
+(the MAIN checkout, not this worktree). My operating rules forbid me to run
+`rm`, so it is still there; it is untracked and safe to delete, along with the
+two directories it created.
+
+Machinery: sympy 8×8 exact linear algebra, `DomainMatrix` fraction-free Bareiss
+determinants over `QQ[κ, parameters]` and `QQ(√6)[…]`, `factor_list`, `gcd` of
+partials, one `lex` Gröbner basis on my own nine residuals. No float, no
+`nsimplify`, no numerical sampling anywhere.

@@ -1,0 +1,39 @@
+slug: gravity-weighted-kernel-20260905
+series: toe-axiom-closure
+block: 213
+branch: physics-loop/toe-axiom-closure-block213-weighted-kernel-dispersion-20260905
+base_branch: physics-loop/toe-axiom-closure-block212-joint-pin-order-extended-alphabet-20260827
+base_commit: 4e9931a970
+origin_main_at_start: e249016f75
+mode: campaign
+runtime: 12h
+start_time: "2026-09-04T21:03+00:00"
+target_stop_time: "2026-09-05T09:03+00:00"
+checkpoint_interval: 30m
+deep_block: 90m
+target_status: best-honest-status
+lock: "scripts/automation_lock.py owner=physics-loop ttl=13h (acquired at start)"
+cycle: 1
+active_route: F1+F3 (exact plane-wave symbol at witnesses + symbolic small-k expansion); F2 (Schur/metric route) reserved for the checker
+approach_family_coverage: [F1 active, F2 checker-reserved, F3 active, F4 counter-probe pending]
+strongest_unresolved_proof_obligation: "identify the principal quadratic part of sigma(k; moduli) with g^{mu nu} k_mu k_nu exactly, symbolically in (v0, g0, g1)"
+hard_residual: "the cone = the metric's cone hypothesis (R5's named successor)"
+files_touched: [pack files only]
+open_imports: [none beyond the chain's supplied cell-form objects; registry check pending at first wall statement]
+no_go_routes: [flat-only rigidity (refuted b211), see NO_GO_LEDGER.md]
+trace_class: upstream_support
+review_findings: none yet
+pr_status: not opened
+next_exact_action: "sol primary drafts the runner + note per specs/block213_primary.md; supervisor reviews line-by-line; sol checker refutes via F2"
+stop_condition: "runtime exhausted, or corollary/value-gate exhaustion documented in OPPORTUNITY_QUEUE.md"
+
+# DEGRADED WORKER MODE (2026-09-04T21:32+00:00): the gpt-5.6-sol seats died at the codex account usage limit (reset Sep 6 22:27); block continues on Fable worker seats (single-family) under the workhorse robustness conditions: refuting checker on disjoint machinery, mutation probes, supervisor hand-verification; independence class = cross-context; disclosed in the note/receipt/PR. Sol narration salvaged to specs/SALVAGE_sol_primary_narration.md as untrusted draft input.
+# WORKER PROFILE UPDATE (owner 2026-09-05): Opus 5 seats permitted for physics work conditional on supervisor checking; profile = Fable primary + Opus blind/refuting seats (cross-model within family) + supervisor line-by-line.
+
+# 2026-09-04T22:03+00:00: blind F2 checked (PASS=59/0 rerun; spectrum hand-verified); F-A1..F-A3 recorded; target reframed to the falsifiable proportionality form; awaiting the Fable primary to compare.
+
+# 2026-09-05 (Fable primary, RESUMED seat) checkpoint 1: dead seat's runner committed as found (e91bd87342); audited line by line; two defects fixed and committed (06004253df: first-order expansion measured, overlap-cone sign pinned); AUDIT FINDING: the draft's coincidence test used only the four class representatives while the weighted kernel is NOT corner-sign-gauge invariant -- the sixty-four-cell census finds 16 coincidence-curve cells, 8 positive (rule A: S1 = -E S0 E, g0 = g1/(1 + pi0 g1)); runner rewritten (F-7 fail-closed Groebner + census + closed form, new F-8 locus witnesses over QQ(sqrt 6), 36 checks / 36 mutations); the draft's baseline overran the 600 s cache timeout (symbolic pencil with generic inverses) -- lemma made fraction-free; certified run pending.
+
+# 2026-09-05 (Fable primary, RESUMED seat) checkpoint 2 -- DELIVERED: runner rewritten and certified (9aa266d5f0; baseline TOTAL: PASS=36 FAIL=0, 75 s; 36 mutations each flipping exactly one family, census A 2, B 6, C 5, D 2, E 3, F 8, G 3, H 4, I 3); note written (1a52a1994f, N5 fence byte-identical, vocab_lint clean); receipt cached (7fdbbae629); RESULTS_block213.md + V1-V5 in REVIEW_HISTORY.md. Corrected theorem: graded cone = union of the two Hodge readings' cones, coinciding EXACTLY on S1 = -E S0 E, g0 = g1/(1 + pi0 g1) (8 of 64 sign cells, PD-solvable) and nowhere else off flat; on the locus one metric's cone with a NON-scalar symbol (mu - 1 != 0); overlap cone a non-Hodge pair everywhere measured; shear registers, diagonal does not (#7970 tension recorded). Eight predecessor defects fixed (see RESULTS). files_touched: scripts/<runner>, docs/<note>, logs/runner-cache/<receipt>, pack RESULTS/REVIEW_HISTORY/STATE/HANDOFF. review_findings: correction 113 against this block's own draft. pr_status: not opened (supervisor lands). next_exact_action: supervisor compares the sealed F2 comparator against note N4b; refuting checker on disjoint machinery; conformance gate; PR stacked on #7753.
+
+# 2026-09-05T04:20+00:00: block 213 FOLDED — supervisor line-by-line review (no defects beyond the checker's); sealed F2 comparator opened: agreement sector by sector (0-form = covariance-slot reading incl. normalisation; top-form = Hodge-slot rival; F2's coincidence curve G0+G1=G0G1 in the mixed classes IS the rule-A locus; boundary line/plane per sector; rival A refuted); Opus refuting checker FIX FIRST no blocker, CK-01..CK-10 verified and applied (degree-diagonal qualifier on the three leading surfaces + N5 fence; 5/13 coefficient; sign-order clause; S0 order; gauge paragraph; rule-B domain; transverse exception; seam glue; F-8 fail-closed by family; certificate). Baseline recertified TOTAL PASS=36 FAIL=0, cache re-pinned (runner sha b2c6d968...); mutation subset rerun recorded in RESULTS. PR next, stacked on the b212 PR #7753. Next block candidate: the duality parameters' effect on the principal part (checker witness W1 + D16 = 1/4).

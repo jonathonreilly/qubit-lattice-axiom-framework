@@ -17,6 +17,15 @@ read. The only sources are the four listed inputs:
 - `scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py`
   lines 802-870 and 1161-1200 (imported, not re-read elsewhere).
 
+**Disclosure (leak, incidental and post-hoc).** The worktree is shared with the primary
+seat. After every result below was already written and committed (commits
+`1b19d418a7`, `b57f07fb8e`, `43e7985cb1`), a `git log --oneline` run to collect my own
+commit shas showed one interleaved commit *subject line* of the primary seat's, which
+mentions a subgroup census and a 64-cell scan. I read no file of theirs — in particular
+not `scripts/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.py`, whose
+name contains `duality_covariance` — and nothing below was written or changed after
+seeing it. Recording it so the comparison can discount it.
+
 Scripts backing every COMPUTED claim are in `S = <scratch>/b215blind/`:
 `q1_star.py` (star and cross block), `q23_rotations.py` (representation, subgroups,
 untwisted commutants), `q34_twisted.py` and `q3_refine.py` (twisted covariance, parameter

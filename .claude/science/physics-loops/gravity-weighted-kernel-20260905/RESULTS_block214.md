@@ -120,3 +120,15 @@ timings_ms: {'authority': 616, 'construction': 647, 'control': 370, 'bench': 133
 GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
 TOTAL: PASS=33 FAIL=0
 ```
+
+## Mutation results (26 declared; each must fail exactly its own family and exit nonzero)
+
+The 9-way parallel batch driver failed at launch (xargs: command line too long) and was only discovered at the 87-minute mark; three mutations were then run directly in parallel. **23 of the 26 declared mutations were NOT run within the budget** (each is a 154 s run; the supervisor's next step is `for m in $(python3 <runner> --list-mutations); do python3 <runner> --mutation $m; done`).
+
+| mutation | target family | result | exit |
+| --- | :---: | --- | :---: |
+| `break_union_locus` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 |
+| `break_d07_congruence` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 |
+| `drop_n5_fence` | `I` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F G H I=FAIL` | 1 |
+
+All other 23 declared mutations: NOT RUN (budget).

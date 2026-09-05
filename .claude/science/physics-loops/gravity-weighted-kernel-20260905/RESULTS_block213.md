@@ -446,3 +446,22 @@ python3   77.80s user 0.32s system 99% cpu 1:18.40 total
 
 Per-family mutation census: `A 2, B 6, C 5, D 2, E 3, F 8, G 3, H 4, I 3` (matches the check census). Every mutation exits nonzero and fails exactly its own family, with no assertion error (`every one exits nonzero, fails exactly one family, no assertion: True`). Two mutations fail two checks inside one family (`claim_cone_is_metric_cone`: F-5 and F-7; `claim_objects_registered`: B-1 and B-6), which is the intended single-family flip.
 
+
+## Fix pass after the refuting check (2026-09-05, supervisor)
+
+The 36-check baseline and the 36-mutation table above were certified at the pre-fold runner sha `07ee1235…`. The fold applied CK-01..CK-10 (see `REVIEW_HISTORY.md`); the runner changes were string constants (`CHECK_VERDICT`; the `N5_FENCE` `per_mode`, `RESULT` and `DECISION_CUT` clauses; the `LOCUS_RULE_B` domain) and the `F-8` fail-closed path (k-freeness tested before sorting; sort by `default_sort_key` on both sides). Post-fold baseline: `TOTAL: PASS=36 FAIL=0`, `GATES A..I = PASS`, 66 s; cache re-pinned at runner sha `b2c6d968…`.
+
+| mutation re-run at the post-fold sha | failing family | TOTAL |
+| --- | :---: | --- |
+| `drop_n5_fence` | `I` | `PASS=35 FAIL=1` |
+| `break_coincidence_locus` | `F` | `PASS=35 FAIL=1` |
+| `claim_cone_is_metric_cone` | `F` | `PASS=34 FAIL=2` |
+| `break_onsite_cone_lemma` | `F` | `PASS=35 FAIL=1` |
+| `break_float_absence` | `I` | `PASS=35 FAIL=1` |
+| `claim_principal_part_scalar` | `F` | `PASS=35 FAIL=1` |
+
+Each fails exactly its own family, as in the pre-fold table; the other thirty mutations were not re-run after the fold (string-constant and `F-8`-path changes only; the table above stands at the pre-fold sha).
+
+Checker's planted defects (scratch copies of the pre-fold runner, `ROOT` repointed; `CHECKER_block213_findings.md`): M1 `η_y` sign flipped in the y direction only — caught via the fail-closed exception path (`PASS=0 FAIL=1`, exit 1); M2 the det-B lemma comparison put back to `−D3` — caught cleanly by family `F` (`PASS=35 FAIL=1`); M3 `L+−` moved off the curve but kept on the family and PD — caught via the exception path. After CK-09 an off-locus witness fails `F-8` by family (a `K-DEPENDENT-RATIO` marker) instead of crashing.
+
+Checker's duality-parameter witness (recorded as an extension, not claimed here): at `W1` with one of `D07, D16, D25, D34` set to `1/4` — on Block 211's six-face variety, positive definite, inside its own duality bound — `D07` leaves the union of the two Hodge cones intact, while `D16`, `D25`, `D34` each break grade parity and replace the cone by an irreducible quartic squared. The graded-cone theorem is therefore stated at the degree-diagonal representative (CK-01); the four-parameter box is the next block's question.

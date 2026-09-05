@@ -1,9 +1,9 @@
 ---
-title: "Admissibility — Dirac-Kähler Weighted-Kernel Dispersion: The Lane Kernel Completed by the Curved Cell Form Reproduces R5's Flat Symbol Exactly, Its Characteristic Cone Under the Graded Assembly Is the Union of the Two Hodge Readings' Cones, Which Coincide Exactly on a Codimension-One Locus in Eight of the Sixty-Four Sign Cells and Nowhere Else Off Flat, the Symbol Is a Quadratic Form Times the Identity Only in Two Directions on v² = 1 − c², the Overlap Assembly Gives a Non-Hodge Pair of Cones Everywhere Measured, and the Kernel Registers the Shear and Not the Diagonal Metric — Scout-Grade Finite Exact Linear Algebra on One Cell Form, Not a Spacetime and Not a Dynamics"
+title: "Admissibility — Dirac-Kähler Weighted-Kernel Dispersion: The Lane Kernel Completed by the Curved Cell Form Reproduces R5's Flat Symbol Exactly, Its Characteristic Cone Under the Graded Assembly (at the Degree-Diagonal Representative) Is the Union of the Two Hodge Readings' Cones, Which Coincide Exactly on a Codimension-One Locus in Eight of the Sixty-Four Sign Cells and Nowhere Else Off Flat, the Symbol Is a Quadratic Form Times the Identity Only in Two Directions on v² = 1 − c², the Overlap Assembly Gives a Non-Hodge Pair of Cones Everywhere Measured, and the Kernel Registers the Shear and Not the Diagonal Metric — Scout-Grade Finite Exact Linear Algebra on One Cell Form, Not a Spacetime and Not a Dynamics"
 claim_id: admissibility_dirac_kahler_weighted_kernel_dispersion_bounded_theorem_note_2026-09-05
 final_path: docs/ADMISSIBILITY_DIRAC_KAHLER_WEIGHTED_KERNEL_DISPERSION_BOUNDED_THEOREM_NOTE_2026-09-05.md
 claim_type: bounded_theorem
-claim_scope: "Exact finite linear algebra on the weighted kernel K_H = H d - d^T H built from Block 201's eta-staggered lane kernel (and Block 209's three-direction shadow) completed by Block 211's per-offset-isotropic cell form under Block 105's two landed assemblies, on the periodic benches (4,4) and (4,2,2) at ten witnesses (eight rational, two over QQ(sqrt 6)); the period-2 Bloch principal part at symbolic block-diagonal cell forms; the coincidence of the two declared Hodge readings G1 = D1/D0 and G2 = D3 E D2^-1 E on all sixty-four sign cells of the family at symbolic moduli; and the exact shear/volume registration of the cone. No other extent, family, assembly, reading, rule or closure is covered."
+claim_scope: "Exact finite linear algebra on the weighted kernel K_H = H d - d^T H built from Block 201's eta-staggered lane kernel (and Block 209's three-direction shadow) completed by Block 211's per-offset-isotropic cell form at its degree-diagonal representative (D07 = D16 = D25 = D34 = 0) under Block 105's two landed assemblies, on the periodic benches (4,4) and (4,2,2) at ten witnesses (eight rational, two over QQ(sqrt 6)); the period-2 Bloch principal part at symbolic block-diagonal cell forms; the coincidence of the two declared Hodge readings G1 = D1/D0 and G2 = D3 E D2^-1 E on all sixty-four sign cells of the family at symbolic moduli; and the exact shear/volume registration of the cone. No other extent, family, assembly, reading, rule or closure is covered."
 upstream_dependencies: "docs/MINIMAL_AXIOMS_2026-06-29.md (four axioms, no new axiom); docs/audit/data/axiom_premise_nodes.json (three approved primitives, none used as content); Block 201 (covariant rule, lane kernel, graded raising part, completion pattern Q = m H + H d - d^T H, fork Hodge); Block 105 (shear_hodge, onsite and overlap assemblies); Block 209 (three-direction shadow, corners, degree indices, wedge signature); Block 211 (six-face family, witnesses, chart, gauge classes); Block 212 (stack parent); R5's flat symbol (re-proved here); PR #7970 (matter-side no-shear-response, quoted at its own conditional scope)"
 runner: scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py
 date: 2026-09-05
@@ -19,7 +19,7 @@ source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "Supply and gate a selector for the assembly (onsite vs overlap) and for the Hodge reading (G1 vs G2), and decide whether any framework principle prefers the coincidence locus S1 = -E S0 E, g0 = g1/(1 + pi0 g1); then run the P3 dispersion on the honest weighted kernel in 2+1D against the exact branch constants recorded here."
-conditional_surface_status: "audited_conditional expected (dependency_not_retained; chain b201-b212 unlanded); stacked on unmerged ancestor artifacts; scientific content is proposed for retention and remains audit-required"
+conditional_surface_status: "conditional on the unlanded stack: Blocks 201-212 are landed in this branch history and not on origin/main; the content is exact at the stated instance (the degree-diagonal representative) and remains audit-required; no audit verdict is anticipated here"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 claim_type_reason: "exact finite-dimensional linear algebra and exact polynomial identities over QQ and QQ(sqrt 6), with an explicit sixty-four-cell census and explicit witnesses on both sides of the coincidence question"
@@ -37,7 +37,8 @@ axiom_movement: none
 
 **One sentence.** The lane kernel completed by the curved cell form,
 `K_H = H d − dᵀ H`, reproduces R5's flat symbol `Σ_d sin² k_d` **exactly** at
-the flat cell in all four constructions; under the graded assembly its
+the flat cell in all four constructions; under the graded assembly, at the
+degree-diagonal representative (`D07 = D16 = D25 = D34 = 0`), its
 characteristic cone is **exactly** the union of the two Hodge readings' cones
 `kᵀ (D1/D0) k = 0` and `kᵀ (D3 E D2⁻¹ E) k = 0`, which coincide — so that the
 cone **is** one metric's cone — exactly on the codimension-one locus
@@ -247,9 +248,11 @@ The pencil principal symbol is block-diagonal by form degree, with the exact
 branches `kᵀ (D1/D0) k` on 0-forms and `D3 kᵀ E D2⁻¹ E k` on top forms
 (eigenvector `adj(D2) E k`); the transverse 2-form pair are the roots of a
 quadratic whose product is `det(D2)/det(D1) · (kᵀ D1 k)(kᵀ E D2⁻¹ E k)`, the
-product taken on the symbolic Block 211 family. **The sign is `+D3`**: the first
-draft declared `−D3`, and its gate would have failed had its baseline ever
-finished (it did not — see `N4h`).
+product taken on the symbolic Block 211 family. **The sign is `+D3`** in the
+even/odd corner order `[(0,0,0),(0,1,1),(1,0,1),(1,1,0)] | [(0,0,1),(0,1,0),(1,0,0),(1,1,1)]`
+— an odd permutation of either basis flips it; the cone, not the sign, is
+order-independent — and the first draft declared `−D3` in that same order: its
+gate would have failed had its baseline ever finished (it did not — see `N4h`).
 
 ### The overlap cone — at symbolic couplings
 
@@ -279,7 +282,8 @@ graded H-pencil branches:   (kt^2 - 2 c kt kx + kx^2)/(1 - c^2)   =  k^T g^-1 k,
                             g = [[1, c], [c, 1]] = (D1/D0)^-1.
 ```
 
-So in two directions the cone **is** the cell metric's cone, and the symbol is
+So in two directions the cone **is** the cell metric's cone (`G1 = D1/D0`, the
+one reading there), and the symbol is
 a quadratic form times the identity **exactly on the honest-volume locus**
 `v² = 1 − c²` — not generically, and the form readings are scalar nowhere. The
 exact symbols beyond the principal part:
@@ -331,7 +335,8 @@ reading, is the principal symbol scalar. The transverse 2-form pair is an
 irreducible quadratic over `QQ` at five of the six curved rational witnesses
 and **splits** at exactly one — `honest_face`, where the offset-1 shear is
 zero and `D2` is isotropic — into `5 (kt² + kx² + ky²)` and
-`(25/13)(5kt² − 8kt kx − 8kt ky + 5kx² + 8kx ky + 5ky²)`. At the PD boundary the
+`(5/13)(5kt² − 8kt kx − 8kt ky + 5kx² + 8kx ky + 5ky²)` — that is,
+`(25/13) kᵀ M1 k` at `g0 = 4/5`. At the PD boundary the
 graded cone degenerates to a line (Hessian rank 2) and a doubled plane (rank 0),
 and the onsite `H` is singular on `(4,2,2)` — the triangle determinant
 `(1 + g)²(1 − 2g)` vanishes — but **regular** on `(4,4)`, whose origin `tx` face
@@ -384,11 +389,15 @@ substituted, and a positive-dimensional real component would come back as a
 marker and fail the gate (the first draft's `sp.solve` filter would have
 dropped it).
 
-### But the kernel is not gauge invariant, and the census says sixteen
+### But the gauge does not preserve the coincidence question, and the census says sixteen
 
 Block 211's corner-sign gauge `D → E D E` is a symmetry of the cell form's
-positivity. It is **not** a symmetry of the weighted kernel: `E d E ≠ d`. So
-four representatives are four points. Running all **sixty-four** sign cells of
+positivity. It is **not** a symmetry of the proportionality question: it
+conjugates the degree-1 block by the signs on the unit corners and the degree-2
+block by the signs on the complementary corners, so `G1 ∝ G2` is preserved only
+when those two sign patterns agree up to a global sign. (It is not a symmetry
+of the weighted kernel either, `E d E ≠ d`, which is why the cone itself
+moves.) So four representatives are four points. Running all **sixty-four** sign cells of
 the degree-block formulas at symbolic `(v0, g0, v1, g1)`:
 
 | lex Gröbner basis in `(g0, g1)` | cells | classes |
@@ -401,19 +410,23 @@ the degree-block formulas at symbolic `(v0, g0, v1, g1)`:
 
 ### The closed form
 
-With `M1 = I − g0 S0`, `M2 = I − g1 S1` the signed triangles, `S² = 2I + π S`,
-and `E = diag(1, −1, 1)`: `G1 ∝ G2` iff `P := M1 E M2 E ∝ I`, and
+With `M1 = I − g0 S0`, `M2 = I − g1 S1` the signed triangles read in the
+`(t, x, y)` direction order — `S0 = [[0, s_tx0, s_ty0], [s_tx0, 0, s_xy0],
+[s_ty0, s_xy0, 0]]`, so that `S1 = −E S0 E` reads `s_tx1 = s_tx0`,
+`s_ty1 = −s_ty0`, `s_xy1 = s_xy0` (the rule-A/rule-B labels are relative to
+this order; the locus set is not) — `S² = 2I + π S`, and `E = diag(1, −1, 1)`: `G1 ∝ G2` iff `P := M1 E M2 E ∝ I`, and
 
 ```text
 S1 = -E S0 E  (rule A, pi1 = -pi0):   P = (1 - 2 g0 g1) I + (g1 - g0 - pi0 g0 g1) S0,
                                        curve  g0 = g1/(1 + pi0 g1),
 S1 = +E S0 E  (rule B, pi1 = pi0):    P = (1 + 2 g0 g1) I - (g0 + g1 - pi0 g0 g1) S0,
-                                       curve  g0 = -g1/(1 - pi0 g1)  < 0.
+                                       curve  g0 = -g1/(1 - pi0 g1)  < 0  on the magnitude domain |g1| < 1.
 ```
 
 The sixteen curve cells are **exactly** the eight rule-A and eight rule-B cells,
 the closed form is verified in each, and both curves are solved exactly (degree
-one in `g0`, root verified by substitution). Rule B has no positive point. Rule
+one in `g0`, root verified by substitution). Rule B has no positive point on the
+family's magnitude domain `|g1| < 1` (the tie `g1² = 1 − v0 v1` forces it). Rule
 A's curve is positive on the magnitude domain — `g0 = g1/(1 + g1) ∈ (0, 1/2)`
 for `π0 = +1`, `g0 = g1/(1 − g1) ∈ (0, 1)` for `π0 = −1, g1 < 1/2` — and, by
 Block 211's classification, **positive-definite-solvable along its whole
@@ -554,8 +567,9 @@ constructions register complementary halves of one cell form.
 ### What IS established, stated positively so the fence is not mistaken for a retreat
 
 Three of these are strong. **The principal-part lemma is symbolic in seventeen
-variables and fraction-free** — every identity is a polynomial identity, so
-there is nothing left to sample. **The coincidence theorem is closed, not
+variables and fraction-free**, the transverse product excepted (taken on the
+symbolic four-parameter family) — every other identity is a polynomial
+identity, so there is nothing left to sample there. **The coincidence theorem is closed, not
 bounded** — a census over every sign cell plus a closed form, with the locus
 witnessed on the family by explicit rational cones and proved along the curve.
 **The control is R5's, re-proved rather than cited** — the flat symbol is an
@@ -574,7 +588,8 @@ In plain language, this block takes as supplied and does not derive:
   is introduced; the registry check was run before every wall statement.
 - **Block 201's** covariant rule `A = sx, B = −sz`, its lane kernel, its graded
   raising part `d = Σ_g P_{g+1} K P_g`, its completion pattern
-  `Q = m H + H d − dᵀ H` (Block 107's, used unchanged), and its fork Hodge.
+  `Q = m H + H X − Xᵀ H` (Block 107's, with `X = d` here in place of Block 201's
+  seam glue `D_s`, and periodic closure in place of the seam), and its fork Hodge.
 - **Block 105's** `shear_hodge(c, v)` and its two landed assemblies, onsite
   (even anchors, weight 1) and overlap (every anchor, weight `2^−d`, Block 191's
   rule).
@@ -826,7 +841,7 @@ them, so that the locus theorem is a theorem and the witnesses are witnesses.
 ## N5 — the fence
 
 ```text
-N5: per_element: THE IMPOSED-OBJECT BANNER, FIRST AND WITH TEETH, AND THE WORDS SYMBOL, CONE, METRIC AND DISPERSION ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- THE WEIGHTED KERNEL K_H = H d - d^T H (Block 107's / Block 201's completion at m = 0 and periodic closure, with d Block 201's graded raising part of the eta-staggered lane kernel and Block 209's three-direction shadow), THE TWO LANDED ASSEMBLIES (Block 105's onsite_hodge at even anchors and its overlap_hodge at every anchor with weight 2^-d, Block 191's rule as used by Block 201's fork_hodge), THE TWO SQUARED-SYMBOL READINGS (the Euclidean form -K_H^2 and the H-pencil -(H^-1 K_H)^2), THE PERIOD-2 BLOCH REDUCTION with its bipartite block B(kappa), THE TWO CANDIDATE CELL METRICS G1 = D1/D0 and G2 = D3 E D2^-1 E read off the degree blocks by Block 209's honest-lift pattern, and BLOCK 211's FAMILY, ITS SIXTY-FOUR SIGN CELLS AND ITS WITNESSES with BLOCK 105's shear_hodge READ THROUGH THEIR OWN RUNNERS, are IMPOSED MEASURED OBJECTS OF THIS BLOCK, built from the landed primary bodies and from NOTHING in any scratchpad. NO GRAVITY IS SUPPLIED: this block supplies NO lapse variable in an ADM phase space, NO shift vector, NO Hamiltonian constraint, NO momentum constraint, NO first-class constraint algebra, NO Dirac closure, NO Dirac observable, NO gauge orbit and NO diffeomorphism quotient. 'SYMBOL' NAMES THE EXACT 2^d x 2^d BLOCH MATRIX OF A FINITE ANTISYMMETRIC KERNEL ON A PERIODIC BENCH AND NAMES NO DYNAMICS AND NO PROPAGATOR. 'CONE' NAMES THE ZERO SET OF det B(kappa), A HOMOGENEOUS POLYNOMIAL, READ AS A POLYNOMIAL IDENTITY (proportionality of quadratic forms) BECAUSE OVER THE REALS A POSITIVE DEFINITE FORM'S NULL CONE IS THE ORIGIN, AND NAMES NO LIGHT CONE, NO CAUSAL STRUCTURE AND NO SPACETIME. 'METRIC' NAMES ONE OF TWO DECLARED RATIONAL READINGS OF THE CELL FORM'S DEGREE BLOCKS. 'DISPERSION' NAMES THE EIGENVALUE BRANCHES OF AN EXACT 4 x 4 OR 8 x 8 MATRIX. THE WORDS SPACETIME, LIGHT CONE, PROPAGATOR AND EINSTEIN NAME NOTHING ESTABLISHED HERE. NOTHING IS REGISTERED, NOTHING IS ADOPTED, AND NO AXIOM AMENDMENT IS JUSTIFIED.\nper_site: THE CONSTRUCTION IS THE CHAIN'S AND THE CONTROL IS R5's. The 2D lane kernel equals Block 201's lane_kernel exactly and is site-sign-equivalent to its spin-diagonalised covariant kernel with zero non-scalar blocks; the 3D lane kernel is Block 209's shadow link by link (48 links, 0 bad, every scalar eta_d / 2), and on (4,2,2) the extent-2 directions carry NO antisymmetric link; K = d - d^T with d^2 = 0 in Block 201's grading in both dimensions; the assemblers reproduce Block 201's fork_hodge and Block 105's onsite_hodge and overlap_hodge digit for digit; the ten cell forms -- eight rational witnesses and two QQ(sqrt 6) locus witnesses -- are Block 211's solved D at ranks (32, 32) with its degree-block formulas and its origin tx face equal to Block 105's shear_hodge; at the flat cell both assemblies give H = I and K_H = K on both benches; and -K_B(z)^2 = sum_d -(z_d - 1/z_d)^2 / 4 times the identity is an exact polynomial identity in two and three directions, whose bench multisets are {0 x4, 1 x8, 2 x4} on (4,4) and {0 x8, 1 x8} on (4,2,2), exactly R5's.\nper_mode: THE EXACT SPECTRA AND THE PRINCIPAL PART. Every (witness, bench, assembly, reading) charpoly of degree 16 at the eight rational witnesses agrees exactly between the Bloch union over exact roots of unity and the direct bench matrix; at W1 on (4,4) the overlap H-pencil multiset is {0 x4, 1 x8, 1922/1081 x4} against R5's {0 x4, 1 x8, 2 x4}; at the PD boundary g0 = g1 = 1/2 the onsite H is singular on (4,2,2), where the triangle determinant (1 + g)^2 (1 - 2g) vanishes and the H-pencil reading is undefined while the form reading remains defined, and REGULAR on (4,4), whose origin tx face is Block 105's shear_hodge at c = 1/2 with two-direction PD condition |c| < 1; the overlap assembly remains regular on both. The expansion K_H,B(exp(i eps kappa)) = i eps M(kappa) + O(eps^2) with M = H0 D(kappa) + D(kappa)^T H0 symmetric is MEASURED from the composed rules at the fully symbolic cell form under both assemblies; both assemblies preserve grade parity, M = [[0, B], [B^T, 0]] with B = H_e D_eo + D_oe^T H_o, the characteristic cone {det B = 0} is reading-independent, and the principal symbols are B B^T (form) and H_e^-1 B H_o^-1 B^T (pencil) on the even sector with the same spectra on the odd sector.\nper_block: THE TWO LEMMAS, AT SYMBOLIC ARGUMENTS. Graded assembly, any block-diagonal cell form, as fraction-free polynomial identities in seventeen symbols: B = [[k^T D1, 0], [D2 W, D3 E k]] with W k = 0 and (E k)^T W = 0 from d^2 = 0; det B = +D3 (k^T D1 k)(k^T E adj(D2) E k) in three directions and -D2 (k^T D1 k) in two; D0 is absent; the pencil principal symbol is block-diagonal by form degree with the EXACT branches k^T (D1/D0) k on 0-forms and D3 k^T E D2^-1 E k on top forms (eigenvector adj(D2) E k), the transverse 2-form pair being the roots of a quadratic whose product is det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k), the product taken on the symbolic Block 211 family. Overlap assembly: the folded H0 is h0 I + two-flip couplings 2 h_f with h0 = (v0 + 3 v1 + 3/v0 + 1/v1)/8 and h_f = -(s_f0 v1 g0 + s_f1 g1 / v0)/8, and det B = Q+ Q- exactly, sign pinned, with the two displayed quadratic cones differing by the sign of the t-y plane terms; in two directions the single cone h0 (kt^2 + kx^2) + 4 h_tx kt kx.\nlattice_wide: THE HYPOTHESIS, ANSWERED EXACTLY, AND THE FIRST DRAFT's ANSWER CORRECTED. In two directions at symbolic (c, v) the graded H-pencil branches are k^T g^-1 k and (det g / v^2) k^T g^-1 k with g = [[1, c], [c, 1]] = (D1/D0)^-1, so the cone IS the cell metric's cone and the symbol is a quadratic form times the identity exactly on the honest-volume locus v^2 = 1 - c^2; the overlap cone has the effective shear c_K = 2 c v^2 / (3 v^2 + 1 - c^2 (v^2 + 1)) with the exact discrepancy c_K - c = -c (1 - c^2)(v^2 + 1) / (3 v^2 + 1 - c^2 (v^2 + 1)). In three directions the graded cone is EXACTLY the union of the two Hodge readings' cones k^T (D1/D0) k = 0 and k^T (D3 E D2^-1 E) k = 0, both exact H-pencil branches. THE COINCIDENCE THEOREM: on the four class representatives' (t, u) chart the proportionality ideal has lex Groebner basis {t (u^2 + 1), u (u^2 + 1)} with the flat point its only real zero, taken fail-closed; BUT the weighted kernel is not invariant under Block 211's corner-sign gauge, and the census over all sixty-four sign cells at symbolic moduli finds forty-eight cells coinciding only at flat and sixteen carrying a coincidence CURVE, in closed form: with M1 = I - g0 S0, M2 = I - g1 S1, G1 ~ G2 iff P = M1 E M2 E ~ I, and P = (1 - 2 g0 g1) I + (g1 - g0 - pi0 g0 g1) S0 when S1 = -E S0 E (rule A, curve g0 = g1/(1 + pi0 g1), positive and PD-solvable in all eight rule-A cells: four of class (+1, -1), four of class (-1, +1)), P = (1 + 2 g0 g1) I - (g0 + g1 - pi0 g0 g1) S0 when S1 = +E S0 E (rule B, no positive point). ON THE LOCUS THE GRADED CONE IS ONE METRIC'S CONE, (k^T G1 k)^2, every H-pencil branch is a constant multiple of k^T G1 k with constants {1, mu, 1/(1 - g1^2), 1/(1 - g1^2)}, mu = (1 + 2 pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3), and mu - 1 = pi0 g1^3 (2 + pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3) is nonzero off flat, so the symbol is STILL NOT SCALAR there; the two QQ(sqrt 6) witnesses L+- (g1 = 1/2, g0 = 1/3, mu = 32/27, constants 1, 32/27, 4/3, 4/3) and L-+ (g1 = 1/3, g0 = 1/2, mu = 27/32, constants 1, 27/32, 9/8, 9/8) realise it on the family with every cone, reading and constant rational, and the transverse pair SPLITS there. OFF THE LOCUS the graded cone is the union of two DISTINCT quadrics, the overlap cones are proportional to neither reading at every curved witness including the locus, no curved three-direction principal symbol is scalar under either assembly or reading, and the transverse pair splits into two quadratic-form branches at exactly one curved rational witness, honest_face (offset-1 shear zero, D2 isotropic), staying an irreducible quadratic at the other five. THE CONE IS ONE METRIC'S CONE EXACTLY ON THE LOCUS AND NOWHERE ELSE OFF FLAT, AND THE EXACT DISCREPANCY IS THE CLOSED FORM ABOVE.\nper_scope: SHEAR REGISTRATION, SEPARATELY. The shears g0 and g1 move the cone under both assemblies (exact nonzero derivatives, exact non-proportionality to the zero-shear cone, and the sign class moves the overlap cone at fixed magnitudes); the diagonal moduli do not move the graded cone (det B is proportional to its unit-volume value, a statement on the formal four-parameter block family in which volumes and shears are independent) and enter only the branch scales v1/v0 and v0/v1; under the overlap assembly the Bloch H at zero shear is h0 times the identity, the zero-shear H-pencil symbol is R5's for EVERY volume pair and the zero-shear form symbol is h0^2 times R5's. THIS IS A NAMED TENSION WITH THE MATTER-SIDE NO-SHEAR-RESPONSE RESULT OF PR #7970 (itself conditional): kernel side registers the shear and not the diagonal, matter side the diagonal and not the shear -- RECORDED, NOT RESOLVED HERE. WHAT REMAINS OPEN: which assembly, if either, the framework selects; which Hodge reading, if either, is 'the' metric; whether anything in the framework prefers the coincidence locus; the transverse branches' meaning; every extent, witness and convention not run; and no energy, no mass, no measurement postulate, no Born rule, no dynamics, no continuum and no gravity is supplied by any line of this block.\nRESULT: THE WEIGHTED KERNEL K_H = H d - d^T H REPRODUCES R5's FLAT SYMBOL EXACTLY AT THE FLAT CELL IN ALL FOUR CONSTRUCTIONS; ITS CHARACTERISTIC CONE IS, UNDER THE GRADED ASSEMBLY, THE UNION OF THE TWO HODGE READINGS' CONES k^T (D1/D0) k = 0 AND k^T (D3 E D2^-1 E) k = 0, WHICH COINCIDE EXACTLY ON THE CODIMENSION-ONE LOCUS g0 = g1/(1 + pi0 g1) OF THE EIGHT SIGN CELLS WITH S1 = -E S0 E -- ONE METRIC'S CONE THERE, WITH A NON-SCALAR SYMBOL -- AND NOWHERE ELSE OFF FLAT; UNDER THE OVERLAP ASSEMBLY IT IS A NON-HODGE PAIR OF CONES AT EVERY POINT MEASURED; THE PRINCIPAL SYMBOL IS A QUADRATIC FORM TIMES THE IDENTITY ONLY IN TWO DIRECTIONS ON v^2 = 1 - c^2; AND THE SHEAR, NOT THE DIAGONAL METRIC, IS WHAT THE KERNEL REGISTERS. THESE ARE SCOUT-GRADE FINITE EXACT LINEAR-ALGEBRA FACTS ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY -- the CYCLE913 CAUTION, CARRIED VERBATIM -- and EVERY POSITIVE HERE IS CANDIDACY WITHIN THIS FORMALISM AND NEVER A CLAIM ABOUT NATURE.\nDECISION_CUT: NOTHING IS REGISTERED AND NOTHING IS ADOPTED. No premise-class change is registered; no landed note is EDITED; no landed number is touched; Blocks 105, 107, 128, 171, 190, 191, 201, 209, 210, 211 and 212 STAND EXACTLY AS LANDED. BLOCK 201 IS NOT CORRECTED: its fork_hodge is reproduced digit for digit and its overlap assembly is one of the two landed assemblies run here. BLOCK 211 IS NOT CORRECTED: its witnesses, ranks, block formulas and minors are reproduced through its own runner; its corner-sign gauge is a symmetry of the cell form's positivity and NOT of the weighted kernel, which is why its four class representatives do not speak for its sixty-four sign cells here. THIS BLOCK's OWN FIRST DRAFT IS CORRECTED, AS CORRECTION 113: the dead seat's headline 'never one metric's cone off flat' was true on the four representatives it tested and false on the family, refuted by the census and by two explicit witnesses; nothing landed is touched by that correction. THIS BLOCK's OWN DEFECTS ARE DISCLOSED: two benches, one cell family, ten witnesses, two assemblies and two readings, one rule, the principal part at one degenerate zero -- not a parameter space and not a limit; the assembly fork is supplied and not decided; the two Hodge readings are declared candidates and neither is selected; the coincidence locus is exhibited and not preferred; the transverse 2-form branches are exhibited and not interpreted; m = 0 and the periodic closure are this block's choices, not the chain's. DEGRADED WORKER MODE IS DISCLOSED: drafted on Fable worker seats after the gpt-5.6-sol seats died at the account limit, resumed by a second Fable seat after the first died mid-block, with the refuting checker pending. PROVENANCE: the R5 weighted-kernel design task of this lane, at TOTAL PASS=36 FAIL=0 across nine families.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero.
+N5: per_element: THE IMPOSED-OBJECT BANNER, FIRST AND WITH TEETH, AND THE WORDS SYMBOL, CONE, METRIC AND DISPERSION ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- THE WEIGHTED KERNEL K_H = H d - d^T H (Block 107's / Block 201's completion at m = 0 and periodic closure, with d Block 201's graded raising part of the eta-staggered lane kernel and Block 209's three-direction shadow), THE TWO LANDED ASSEMBLIES (Block 105's onsite_hodge at even anchors and its overlap_hodge at every anchor with weight 2^-d, Block 191's rule as used by Block 201's fork_hodge), THE TWO SQUARED-SYMBOL READINGS (the Euclidean form -K_H^2 and the H-pencil -(H^-1 K_H)^2), THE PERIOD-2 BLOCH REDUCTION with its bipartite block B(kappa), THE TWO CANDIDATE CELL METRICS G1 = D1/D0 and G2 = D3 E D2^-1 E read off the degree blocks by Block 209's honest-lift pattern, and BLOCK 211's FAMILY, ITS SIXTY-FOUR SIGN CELLS AND ITS WITNESSES with BLOCK 105's shear_hodge READ THROUGH THEIR OWN RUNNERS, are IMPOSED MEASURED OBJECTS OF THIS BLOCK, built from the landed primary bodies and from NOTHING in any scratchpad. NO GRAVITY IS SUPPLIED: this block supplies NO lapse variable in an ADM phase space, NO shift vector, NO Hamiltonian constraint, NO momentum constraint, NO first-class constraint algebra, NO Dirac closure, NO Dirac observable, NO gauge orbit and NO diffeomorphism quotient. 'SYMBOL' NAMES THE EXACT 2^d x 2^d BLOCH MATRIX OF A FINITE ANTISYMMETRIC KERNEL ON A PERIODIC BENCH AND NAMES NO DYNAMICS AND NO PROPAGATOR. 'CONE' NAMES THE ZERO SET OF det B(kappa), A HOMOGENEOUS POLYNOMIAL, READ AS A POLYNOMIAL IDENTITY (proportionality of quadratic forms) BECAUSE OVER THE REALS A POSITIVE DEFINITE FORM'S NULL CONE IS THE ORIGIN, AND NAMES NO LIGHT CONE, NO CAUSAL STRUCTURE AND NO SPACETIME. 'METRIC' NAMES ONE OF TWO DECLARED RATIONAL READINGS OF THE CELL FORM'S DEGREE BLOCKS. 'DISPERSION' NAMES THE EIGENVALUE BRANCHES OF AN EXACT 4 x 4 OR 8 x 8 MATRIX. THE WORDS SPACETIME, LIGHT CONE, PROPAGATOR AND EINSTEIN NAME NOTHING ESTABLISHED HERE. NOTHING IS REGISTERED, NOTHING IS ADOPTED, AND NO AXIOM AMENDMENT IS JUSTIFIED.\nper_site: THE CONSTRUCTION IS THE CHAIN'S AND THE CONTROL IS R5's. The 2D lane kernel equals Block 201's lane_kernel exactly and is site-sign-equivalent to its spin-diagonalised covariant kernel with zero non-scalar blocks; the 3D lane kernel is Block 209's shadow link by link (48 links, 0 bad, every scalar eta_d / 2), and on (4,2,2) the extent-2 directions carry NO antisymmetric link; K = d - d^T with d^2 = 0 in Block 201's grading in both dimensions; the assemblers reproduce Block 201's fork_hodge and Block 105's onsite_hodge and overlap_hodge digit for digit; the ten cell forms -- eight rational witnesses and two QQ(sqrt 6) locus witnesses -- are Block 211's solved D at ranks (32, 32) with its degree-block formulas and its origin tx face equal to Block 105's shear_hodge; at the flat cell both assemblies give H = I and K_H = K on both benches; and -K_B(z)^2 = sum_d -(z_d - 1/z_d)^2 / 4 times the identity is an exact polynomial identity in two and three directions, whose bench multisets are {0 x4, 1 x8, 2 x4} on (4,4) and {0 x8, 1 x8} on (4,2,2), exactly R5's.\nper_mode: THE EXACT SPECTRA AND THE PRINCIPAL PART. Every (witness, bench, assembly, reading) charpoly of degree 16 at the eight rational witnesses agrees exactly between the Bloch union over exact roots of unity and the direct bench matrix; at W1 on (4,4) the overlap H-pencil multiset is {0 x4, 1 x8, 1922/1081 x4} against R5's {0 x4, 1 x8, 2 x4}; at the PD boundary g0 = g1 = 1/2 the onsite H is singular on (4,2,2), where the triangle determinant (1 + g)^2 (1 - 2g) vanishes and the H-pencil reading is undefined while the form reading remains defined, and REGULAR on (4,4), whose origin tx face is Block 105's shear_hodge at c = 1/2 with two-direction PD condition |c| < 1; the overlap assembly remains regular on both. The expansion K_H,B(exp(i eps kappa)) = i eps M(kappa) + O(eps^2) with M = H0 D(kappa) + D(kappa)^T H0 symmetric is MEASURED from the composed rules at the fully symbolic cell form under both assemblies; at the degree-diagonal representative (D07 = D16 = D25 = D34 = 0) both assemblies preserve grade parity, M = [[0, B], [B^T, 0]] with B = H_e D_eo + D_oe^T H_o, the characteristic cone {det B = 0} is reading-independent, and the principal symbols are B B^T (form) and H_e^-1 B H_o^-1 B^T (pencil) on the even sector with the same spectra on the odd sector.\nper_block: THE TWO LEMMAS, AT SYMBOLIC ARGUMENTS. Graded assembly, any block-diagonal cell form, as fraction-free polynomial identities in seventeen symbols: B = [[k^T D1, 0], [D2 W, D3 E k]] with W k = 0 and (E k)^T W = 0 from d^2 = 0; det B = +D3 (k^T D1 k)(k^T E adj(D2) E k) in three directions and -D2 (k^T D1 k) in two; D0 is absent; the pencil principal symbol is block-diagonal by form degree with the EXACT branches k^T (D1/D0) k on 0-forms and D3 k^T E D2^-1 E k on top forms (eigenvector adj(D2) E k), the transverse 2-form pair being the roots of a quadratic whose product is det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k), the product taken on the symbolic Block 211 family. Overlap assembly: the folded H0 is h0 I + two-flip couplings 2 h_f with h0 = (v0 + 3 v1 + 3/v0 + 1/v1)/8 and h_f = -(s_f0 v1 g0 + s_f1 g1 / v0)/8, and det B = Q+ Q- exactly, sign pinned, with the two displayed quadratic cones differing by the sign of the t-y plane terms; in two directions the single cone h0 (kt^2 + kx^2) + 4 h_tx kt kx.\nlattice_wide: THE HYPOTHESIS, ANSWERED EXACTLY, AND THE FIRST DRAFT's ANSWER CORRECTED. In two directions at symbolic (c, v) the graded H-pencil branches are k^T g^-1 k and (det g / v^2) k^T g^-1 k with g = [[1, c], [c, 1]] = (D1/D0)^-1, so the cone IS the cell metric's cone and the symbol is a quadratic form times the identity exactly on the honest-volume locus v^2 = 1 - c^2; the overlap cone has the effective shear c_K = 2 c v^2 / (3 v^2 + 1 - c^2 (v^2 + 1)) with the exact discrepancy c_K - c = -c (1 - c^2)(v^2 + 1) / (3 v^2 + 1 - c^2 (v^2 + 1)). In three directions the graded cone is EXACTLY the union of the two Hodge readings' cones k^T (D1/D0) k = 0 and k^T (D3 E D2^-1 E) k = 0, both exact H-pencil branches. THE COINCIDENCE THEOREM: on the four class representatives' (t, u) chart the proportionality ideal has lex Groebner basis {t (u^2 + 1), u (u^2 + 1)} with the flat point its only real zero, taken fail-closed; BUT the weighted kernel is not invariant under Block 211's corner-sign gauge, and the census over all sixty-four sign cells at symbolic moduli finds forty-eight cells coinciding only at flat and sixteen carrying a coincidence CURVE, in closed form: with M1 = I - g0 S0, M2 = I - g1 S1, G1 ~ G2 iff P = M1 E M2 E ~ I, and P = (1 - 2 g0 g1) I + (g1 - g0 - pi0 g0 g1) S0 when S1 = -E S0 E (rule A, curve g0 = g1/(1 + pi0 g1), positive and PD-solvable in all eight rule-A cells: four of class (+1, -1), four of class (-1, +1)), P = (1 + 2 g0 g1) I - (g0 + g1 - pi0 g0 g1) S0 when S1 = +E S0 E (rule B, no positive point). ON THE LOCUS THE GRADED CONE IS ONE METRIC'S CONE, (k^T G1 k)^2, every H-pencil branch is a constant multiple of k^T G1 k with constants {1, mu, 1/(1 - g1^2), 1/(1 - g1^2)}, mu = (1 + 2 pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3), and mu - 1 = pi0 g1^3 (2 + pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3) is nonzero off flat, so the symbol is STILL NOT SCALAR there; the two QQ(sqrt 6) witnesses L+- (g1 = 1/2, g0 = 1/3, mu = 32/27, constants 1, 32/27, 4/3, 4/3) and L-+ (g1 = 1/3, g0 = 1/2, mu = 27/32, constants 1, 27/32, 9/8, 9/8) realise it on the family with every cone, reading and constant rational, and the transverse pair SPLITS there. OFF THE LOCUS the graded cone is the union of two DISTINCT quadrics, the overlap cones are proportional to neither reading at every curved witness including the locus, no curved three-direction principal symbol is scalar under either assembly or reading, and the transverse pair splits into two quadratic-form branches at exactly one curved rational witness, honest_face (offset-1 shear zero, D2 isotropic), staying an irreducible quadratic at the other five. THE CONE IS ONE METRIC'S CONE EXACTLY ON THE LOCUS AND NOWHERE ELSE OFF FLAT, AND THE EXACT DISCREPANCY IS THE CLOSED FORM ABOVE.\nper_scope: SHEAR REGISTRATION, SEPARATELY. The shears g0 and g1 move the cone under both assemblies (exact nonzero derivatives, exact non-proportionality to the zero-shear cone, and the sign class moves the overlap cone at fixed magnitudes); the diagonal moduli do not move the graded cone (det B is proportional to its unit-volume value, a statement on the formal four-parameter block family in which volumes and shears are independent) and enter only the branch scales v1/v0 and v0/v1; under the overlap assembly the Bloch H at zero shear is h0 times the identity, the zero-shear H-pencil symbol is R5's for EVERY volume pair and the zero-shear form symbol is h0^2 times R5's. THIS IS A NAMED TENSION WITH THE MATTER-SIDE NO-SHEAR-RESPONSE RESULT OF PR #7970 (itself conditional): kernel side registers the shear and not the diagonal, matter side the diagonal and not the shear -- RECORDED, NOT RESOLVED HERE. WHAT REMAINS OPEN: which assembly, if either, the framework selects; which Hodge reading, if either, is 'the' metric; whether anything in the framework prefers the coincidence locus; the transverse branches' meaning; every extent, witness and convention not run; and no energy, no mass, no measurement postulate, no Born rule, no dynamics, no continuum and no gravity is supplied by any line of this block.\nRESULT: THE WEIGHTED KERNEL K_H = H d - d^T H REPRODUCES R5's FLAT SYMBOL EXACTLY AT THE FLAT CELL IN ALL FOUR CONSTRUCTIONS; ITS CHARACTERISTIC CONE IS, UNDER THE GRADED ASSEMBLY AT THE DEGREE-DIAGONAL REPRESENTATIVE (D07 = D16 = D25 = D34 = 0), THE UNION OF THE TWO HODGE READINGS' CONES k^T (D1/D0) k = 0 AND k^T (D3 E D2^-1 E) k = 0, WHICH COINCIDE EXACTLY ON THE CODIMENSION-ONE LOCUS g0 = g1/(1 + pi0 g1) OF THE EIGHT SIGN CELLS WITH S1 = -E S0 E -- ONE METRIC'S CONE THERE, WITH A NON-SCALAR SYMBOL -- AND NOWHERE ELSE OFF FLAT; UNDER THE OVERLAP ASSEMBLY IT IS A NON-HODGE PAIR OF CONES AT EVERY POINT MEASURED; THE PRINCIPAL SYMBOL IS A QUADRATIC FORM TIMES THE IDENTITY ONLY IN TWO DIRECTIONS ON v^2 = 1 - c^2; AND THE SHEAR, NOT THE DIAGONAL METRIC, IS WHAT THE KERNEL REGISTERS. THESE ARE SCOUT-GRADE FINITE EXACT LINEAR-ALGEBRA FACTS ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY -- the CYCLE913 CAUTION, CARRIED VERBATIM -- and EVERY POSITIVE HERE IS CANDIDACY WITHIN THIS FORMALISM AND NEVER A CLAIM ABOUT NATURE.\nDECISION_CUT: NOTHING IS REGISTERED AND NOTHING IS ADOPTED. No premise-class change is registered; no landed note is EDITED; no landed number is touched; Blocks 105, 107, 128, 171, 190, 191, 201, 209, 210, 211 and 212 STAND EXACTLY AS LANDED. BLOCK 201 IS NOT CORRECTED: its fork_hodge is reproduced digit for digit and its overlap assembly is one of the two landed assemblies run here. BLOCK 211 IS NOT CORRECTED: its witnesses, ranks, block formulas and minors are reproduced through its own runner; its corner-sign gauge is a symmetry of the cell form's positivity and NOT of the weighted kernel, which is why its four class representatives do not speak for its sixty-four sign cells here. THIS BLOCK's OWN FIRST DRAFT IS CORRECTED, AS CORRECTION 113: the dead seat's headline 'never one metric's cone off flat' was true on the four representatives it tested and false on the family, refuted by the census and by two explicit witnesses; nothing landed is touched by that correction. THIS BLOCK's OWN DEFECTS ARE DISCLOSED: two benches, one cell family, ten witnesses, two assemblies and two readings, one rule, the principal part at one degenerate zero -- not a parameter space and not a limit; the assembly fork is supplied and not decided; the two Hodge readings are declared candidates and neither is selected; the coincidence locus is exhibited and not preferred; the transverse 2-form branches are exhibited and not interpreted; m = 0 and the periodic closure are this block's choices, not the chain's. DEGRADED WORKER MODE IS DISCLOSED: drafted on Fable worker seats after the gpt-5.6-sol seats died at the account limit, resumed by a second Fable seat after the first died mid-block; the Opus 5 refuting checker returned FIX FIRST with no blocker (CK-01..CK-10, all applied; the locus theorem and the det-B lemma's sign at the declared corner order survived disjoint machinery; its witness W1 with D16 = 1/4 shows the graded-cone theorem is a statement at the degree-diagonal representative), and the sealed Opus blind comparator F2 agrees with the exact symbol sector by sector. PROVENANCE: the R5 weighted-kernel design task of this lane, at TOTAL PASS=36 FAIL=0 across nine families.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero.
 ```
 
 ---
@@ -870,6 +885,13 @@ N5: per_element: THE IMPOSED-OBJECT BANNER, FIRST AND WITH TEETH, AND THE WORDS 
    Every result above sits on that control.
 6. A bridge is supplied between the kernel-side shear registration and the
    matter-side no-shear response. The tension would become a result either way.
+7. The duality parameters are switched on. The graded-cone theorem is stated at
+   the degree-diagonal representative; the refuting checker's witness `W1` with
+   `D16 = 1/4` — on Block 211's variety and positive definite, inside its own
+   duality bound — breaks grade parity and replaces the cone by an irreducible
+   quartic squared (likewise `D25`, `D34`; `D07` leaves the union intact). What
+   the four parameters do to the principal part is the next block's question,
+   not this block's claim.
 
 ---
 
@@ -915,12 +937,39 @@ One defect in this seat's own rewrite — `sp.solve` dropping a rule-B root unde
 positivity assumptions — was found in testing and replaced by an
 assumption-free degree-one check before certification.
 
-**THE REFUTING CHECKER IS PENDING.** A blind comparator (route F2, Schur/metric
-identification of the principal part) was produced by a separate seat and
-sealed before this seat began; this seat never opened it. One line of it
-surfaced through a repository-wide text search for the #7970 constraint; that
-line restated the GOAL's own planning constraint and carried no prediction. The
-supervisor compares the comparator against `N4b` after delivery.
+**THE REFUTING CHECKER HAS RUN.** An Opus 5 seat on disjoint machinery
+(hand-built bench kernels, its own supercell Fourier reduction of the direct
+`64 × 64` bench matrix, its own operator dictionary, Gröbner census and
+`ε`-series expansion) returned FIX FIRST with no blocker: two material findings
+— the degree-diagonal qualifier missing from `claim_scope`, the headline and
+the `N5` `per_mode` clause, with the positive-definite witness `W1 + D16 = 1/4`
+on Block 211's variety where grade parity fails and the cone is an irreducible
+quartic squared; and the `honest_face` split misprinted by a factor five — and
+eight minor ones (the sign's dependence on the corner order; the `S0` index
+order; the operative reason representatives do not decide coincidence; rule
+B's domain; the transverse-product exception; the seam-glue substitution; a
+fail-closed path that crashed instead of failing its family; a stale pack
+certificate), all applied in the fix pass recorded in the pack's
+`REVIEW_HISTORY.md`. The locus theorem, the det-B lemma's sign at the declared
+corner order, the sixty-four-cell census, the witnesses, the overlap cone and
+every quotation survived; two attacks strengthened the block beyond its claim
+(no overlap cone is a Hodge cone in any of the sixty-four cells at symbolic
+moduli; no rational-volume locus point exists below height 200).
+
+**THE BLIND COMPARATOR HAS BEEN OPENED BY THE SUPERVISOR.** Route F2
+(Schur/metric identification of the principal part) was produced by a separate
+Opus seat and sealed before either primary seat began; neither opened it (one
+line surfaced through a repository-wide text search for the #7970 constraint;
+it restated the GOAL's planning constraint and carried no prediction). Compared
+against `N4b` after delivery: its covariance-slot reading is the exact 0-form
+sector, including its normalisation; its Hodge-slot rival is the exact
+top-form sector; its predicted coincidence curve `G0 + G1 = G0 G1` in the mixed
+classes is, in unsigned moduli, exactly the rule-A locus `g0 = g1/(1 + π0 g1)`;
+its predicted boundary degenerations — a line for one reading, a plane for the
+other — are the two factors at the `boundary` witness; its route-internal rival
+(the offset-1 covariance reading) is realised by no branch; and its one
+unexecuted test, on the duality parameters, is answered by the checker's
+witness above. The full record is in `REVIEW_HISTORY.md`.
 
 **THE PROVENANCE CAVEAT IS ACKNOWLEDGED AND HANDLED.** The Block 105, 201, 209,
 211 and 212 artifacts are not present on canonical `origin/main`; they are
@@ -976,9 +1025,21 @@ curve computations.
   that died at the account usage limit. The inherited runner (2,549 lines, nine
   gate families, never run to completion) was committed as found and then
   audited line by line as a refutation.
-- **Refuting checker:** pending. A blind F2 comparator exists, sealed and
-  unread by this seat.
-- **Independence class:** to be filled by the supervisor.
+- **Refuting checker:** Opus 5, disjoint machinery, FIX FIRST with no blocker;
+  CK-01..CK-10 verified by the supervisor against the note and runner and
+  applied (`REVIEW_HISTORY.md`); its three planted mutations were all caught —
+  one cleanly by family `F`, two by the fail-closed exception path, since
+  repaired so that the locus gate fails by family.
+- **Blind comparator:** the sealed Opus F2 route, opened by the supervisor
+  after delivery; agreement with the exact symbol sector by sector (`N7`).
+- **Independence class:** single family (Claude), cross-model — two Fable
+  primary seats (the first dead mid-block, its runner audited as a refutation
+  by the second), an Opus 5 blind comparator and an Opus 5 refuting checker,
+  and the supervisor's line-by-line review with hand verification of the
+  pencil block `T = W D1⁻¹ Wᵀ D2 + D3 D2⁻¹ (Ek)(Ek)ᵀ`, the eigenvector
+  `adj(D2) E k`, the locus ties `v0² = (1 − g0²)(1 − g1²)`,
+  `v1² = (1 − g1²)/(1 − g0²)`, and positive-definite solvability along the
+  curve from Block 211's classification.
 - **Runs recorded:** pre-note baseline `TOTAL: PASS=34 FAIL=2` (E-3 before the
   boundary correction, I-1 by design), then the certified baseline and all
   thirty-six mutations, recorded in `RESULTS_block213.md` of the block pack.
@@ -989,4 +1050,5 @@ R5's weighted-kernel design task of this lane, run exactly: the control
 reproduced, the principal part measured, the hypothesis answered on the family
 with a census and a closed form, the first draft's headline corrected, and the
 shear question answered separately — at `TOTAL PASS=36 FAIL=0` across nine
-families, with the refuting checker pending.
+families, with the refuting checker run (FIX FIRST, no blocker, every finding
+applied) and the blind comparator opened.

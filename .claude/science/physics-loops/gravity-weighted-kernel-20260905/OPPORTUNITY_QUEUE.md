@@ -14,3 +14,6 @@
    item after the symbol identity), then 3+1D.
 5. The gravity constraint quotient (Block 106 step 4) — downstream of all of
    the above; not before the symbol identity stands.
+
+## Refresh 2026-09-05T04:20+00:00 (block 213 closing)
+Block 213 DONE (bounded_theorem / conditional-support): the weighted-kernel dispersion — R5's hypothesis answered on the family with a census and a closed form; the locus exhibited; the blind comparator agrees sector by sector. New queue head, from the checker's witness: the duality parameters' effect on the principal part (W1 + D16 = 1/4 breaks grade parity; the cone becomes an irreducible quartic squared) — an exact block on the four-parameter PD box of Block 211's variety. Then the shear-registration tension (#7970) and the Schur carrier map, as queued.

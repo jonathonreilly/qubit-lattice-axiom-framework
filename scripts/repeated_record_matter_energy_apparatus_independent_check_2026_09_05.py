@@ -2,7 +2,9 @@
 """Independent checker for repeated Record matter and a finite battery gate.
 
 The checker uses direct fixed-number Fock matrices and a commensurate finite
-spectral lift. It reads no science artifact or runner output.
+spectral lift. It reads no science artifact or runner output. Its finite ladder
+and Fourier-register fixtures are not a proof of a continuous battery bound,
+and its normalized Choi trace distances are not diamond-norm bounds.
 """
 
 import os
@@ -263,6 +265,7 @@ def check_uniform_and_clock_laws():
     blocks = {0: density}
     event_energies = []
     live_particle_means = []
+    maximum_hypergeometric_error = 0.0
     for event_count in range(5):
         energy = sum(trace_real(block, hamiltonians[recorded]) for recorded, block in blocks.items())
         live_particles = sum(
@@ -287,6 +290,39 @@ def check_uniform_and_clock_laws():
             abs(live_particles - 2.0 * (4 - event_count) / 4.0) < 5.0e-9,
             f"uniform-site live-particle recursion failed k={event_count}",
         )
+        live_size = 4 - event_count
+        denominator = math.comb(4, live_size)
+        for remaining_particles in range(3):
+            actual_probability = 0.0
+            for recorded, block in blocks.items():
+                live_sites = tuple(site for site in range(4) if not ((recorded >> site) & 1))
+                count_projector = np.diag(
+                    [
+                        float(
+                            sum((mask >> site) & 1 for site in live_sites)
+                            == remaining_particles
+                        )
+                        for mask in basis
+                    ]
+                ).astype(complex)
+                actual_probability += trace_real(block, count_projector)
+            particle_choices = (
+                math.comb(2, remaining_particles)
+                if 0 <= remaining_particles <= 2
+                else 0
+            )
+            hole_count = live_size - remaining_particles
+            hole_choices = math.comb(2, hole_count) if 0 <= hole_count <= 2 else 0
+            expected_probability = particle_choices * hole_choices / denominator
+            distribution_error = abs(actual_probability - expected_probability)
+            require(
+                distribution_error < 5.0e-9,
+                f"live-number hypergeometric law failed k={event_count} r={remaining_particles}",
+            )
+            maximum_hypergeometric_error = max(
+                maximum_hypergeometric_error,
+                distribution_error,
+            )
         event_energies.append(energy)
         live_particle_means.append(live_particles)
         if event_count == 4:
@@ -355,7 +391,234 @@ def check_uniform_and_clock_laws():
     return (
         f"Ek={','.join(f'{value:.6f}' for value in event_energies)} "
         f"Nlive={','.join(f'{value:.6f}' for value in live_particle_means)} "
+        f"NhypErr={maximum_hypergeometric_error:.2e} "
         f"gamma={gamma} t={final_time} Et={actual_energy:.9f} target={expected_energy:.9f}"
+    )
+
+
+def fibre_event_operators(one_particle, basis, live_sites, selected_site, dwell_time):
+    H_in = second_quantize(one_particle, basis)
+    retained_one = delete_sites(one_particle, {selected_site})
+    H_retained = second_quantize(retained_one, basis)
+    projectors = tuple(occupation_projector(basis, selected_site, outcome) for outcome in (0, 1))
+    W = local_record_isometry(projectors)
+    H_out = np.kron(np.eye(2), H_retained)
+    N_out_matter = sum(
+        (
+            occupation_projector(basis, site, 1)
+            for site in live_sites
+            if site != selected_site
+        ),
+        np.zeros_like(H_in),
+    )
+    N_out = np.kron(np.eye(2), N_out_matter)
+    occupied_record = np.kron(np.diag([0.0, 1.0]), np.eye(len(basis)))
+    fibre = expm(-1j * dwell_time * H_out) @ W @ expm(1j * dwell_time * H_in)
+    require_small(fibre.conj().T @ fibre - np.eye(len(basis)), "event fibre is not isometric")
+    require_small(H_out - H_out.conj().T, "fibre output energy is not Hermitian")
+    require_small(N_out - N_out.conj().T, "fibre live number is not Hermitian")
+    require_small(occupied_record @ H_out - H_out @ occupied_record,
+                  "new Record outcome does not commute with output energy")
+    return fibre, H_out, N_out, occupied_record
+
+
+def check_uniform_fibre_operator_identities():
+    original_one, _state = complex_hopping_fixture()
+    basis = fixed_basis(4, 2)
+    history_masks = (0b0000, 0b0001, 0b0101)
+    dwell_times = (0.137, 0.491, 1.031)
+    maximum_energy_residual = 0.0
+    maximum_second_residual = 0.0
+    maximum_number_residual = 0.0
+    maximum_outcome_residual = 0.0
+    cases = 0
+    for recorded in history_masks:
+        live_sites = tuple(site for site in range(4) if not ((recorded >> site) & 1))
+        live_count = len(live_sites)
+        current_one = delete_sites(
+            original_one,
+            {site for site in range(4) if (recorded >> site) & 1},
+        )
+        H_current = second_quantize(current_one, basis)
+        N_current = sum(
+            (occupation_projector(basis, site, 1) for site in live_sites),
+            np.zeros_like(H_current),
+        )
+        star_sum = sum(
+            (second_quantize(incident_star(current_one, site), basis) for site in live_sites),
+            np.zeros_like(H_current),
+        )
+        require_small(star_sum - 2.0 * H_current, "live incident stars do not sum to twice H_R")
+        require_small(H_current @ N_current - N_current @ H_current,
+                      "current hopping does not preserve live particle number")
+        for dwell_time in dwell_times:
+            energy_average = np.zeros_like(H_current)
+            second_average = np.zeros_like(H_current)
+            second_correction = np.zeros_like(H_current)
+            number_average = np.zeros_like(N_current)
+            occupied_average = np.zeros_like(N_current)
+            for selected_site in live_sites:
+                fibre, H_out, N_out, occupied_record = fibre_event_operators(
+                    current_one,
+                    basis,
+                    live_sites,
+                    selected_site,
+                    dwell_time,
+                )
+                energy_average += fibre.conj().T @ H_out @ fibre / live_count
+                second_average += fibre.conj().T @ H_out @ H_out @ fibre / live_count
+                number_average += fibre.conj().T @ N_out @ fibre / live_count
+                occupied_average += fibre.conj().T @ occupied_record @ fibre / live_count
+                V_selected = second_quantize(incident_star(current_one, selected_site), basis)
+                kappa_squared = float(np.sum(np.abs(current_one[selected_site, :]) ** 2))
+                require(
+                    float(np.max(np.linalg.eigvalsh(V_selected @ V_selected)))
+                    <= kappa_squared + 2.0e-8,
+                    "star square exceeds its one-particle row-norm bound",
+                )
+                input_phase = expm(-1j * dwell_time * H_current)
+                second_correction += (
+                    input_phase @ V_selected @ V_selected @ input_phase.conj().T / live_count
+                )
+            energy_target = (1.0 - 2.0 / live_count) * H_current
+            second_target = (
+                (1.0 - 4.0 / live_count) * (H_current @ H_current)
+                + second_correction
+            )
+            number_target = (1.0 - 1.0 / live_count) * N_current
+            occupied_target = N_current / live_count
+            energy_residual = frobenius(energy_average - energy_target)
+            second_residual = frobenius(second_average - second_target)
+            number_residual = frobenius(number_average - number_target)
+            outcome_residual = frobenius(occupied_average - occupied_target)
+            require(energy_residual < 2.0e-8,
+                    f"uniform fibre energy identity failed R={recorded:04b} tau={dwell_time}")
+            require(second_residual < 2.0e-8,
+                    f"uniform fibre second-moment identity failed R={recorded:04b} tau={dwell_time}")
+            require(number_residual < 2.0e-8,
+                    f"uniform fibre live-number identity failed R={recorded:04b} tau={dwell_time}")
+            require(outcome_residual < 2.0e-8,
+                    f"uniform occupied-outcome effect failed R={recorded:04b} tau={dwell_time}")
+            maximum_energy_residual = max(maximum_energy_residual, energy_residual)
+            maximum_second_residual = max(maximum_second_residual, second_residual)
+            maximum_number_residual = max(maximum_number_residual, number_residual)
+            maximum_outcome_residual = max(maximum_outcome_residual, outcome_residual)
+            cases += 1
+
+    recorded = 0b0001
+    live_sites = tuple(site for site in range(4) if not ((recorded >> site) & 1))
+    live_count = len(live_sites)
+    current_one = delete_sites(original_one, {0})
+    H_current = second_quantize(current_one, basis)
+    N_current = sum(
+        (occupation_projector(basis, site, 1) for site in live_sites),
+        np.zeros_like(H_current),
+    )
+    phase_points = (0.113, 0.379, 0.941)
+    base_dwell = 0.227
+    lifted_energy_average = np.zeros((len(phase_points) * len(basis),) * 2, dtype=complex)
+    lifted_second_average = np.zeros_like(lifted_energy_average)
+    lifted_second_correction = np.zeros_like(lifted_energy_average)
+    lifted_number_average = np.zeros_like(lifted_energy_average)
+    lifted_occupied_average = np.zeros_like(lifted_energy_average)
+    for selected_site in live_sites:
+        fibres = []
+        output_energies = []
+        output_numbers = []
+        occupied_records = []
+        second_corrections = []
+        V_selected = second_quantize(incident_star(current_one, selected_site), basis)
+        for phase in phase_points:
+            fibre, H_out, N_out, occupied_record = fibre_event_operators(
+                current_one,
+                basis,
+                live_sites,
+                selected_site,
+                base_dwell + phase,
+            )
+            fibres.append(fibre)
+            output_energies.append(H_out)
+            output_numbers.append(N_out)
+            occupied_records.append(occupied_record)
+            input_phase = expm(-1j * (base_dwell + phase) * H_current)
+            second_corrections.append(
+                input_phase @ V_selected @ V_selected @ input_phase.conj().T
+            )
+        lifted_fibre = sparse.block_diag(fibres, format="csr").toarray()
+        lifted_H_out = sparse.block_diag(output_energies, format="csr").toarray()
+        lifted_N_out = sparse.block_diag(output_numbers, format="csr").toarray()
+        lifted_occupied = sparse.block_diag(occupied_records, format="csr").toarray()
+        lifted_correction = sparse.block_diag(second_corrections, format="csr").toarray()
+        certify_dense(lifted_fibre, lifted_H_out, lifted_N_out, lifted_occupied, lifted_correction)
+        lifted_energy_average += lifted_fibre.conj().T @ lifted_H_out @ lifted_fibre / live_count
+        lifted_second_average += (
+            lifted_fibre.conj().T @ lifted_H_out @ lifted_H_out @ lifted_fibre / live_count
+        )
+        lifted_second_correction += lifted_correction / live_count
+        lifted_number_average += lifted_fibre.conj().T @ lifted_N_out @ lifted_fibre / live_count
+        lifted_occupied_average += (
+            lifted_fibre.conj().T @ lifted_occupied @ lifted_fibre / live_count
+        )
+    lifted_energy_target = np.kron(
+        np.eye(len(phase_points)),
+        (1.0 - 2.0 / live_count) * H_current,
+    )
+    lifted_number_target = np.kron(
+        np.eye(len(phase_points)),
+        (1.0 - 1.0 / live_count) * N_current,
+    )
+    lifted_second_target = (
+        np.kron(
+            np.eye(len(phase_points)),
+            (1.0 - 4.0 / live_count) * (H_current @ H_current),
+        )
+        + lifted_second_correction
+    )
+    lifted_occupied_target = np.kron(
+        np.eye(len(phase_points)),
+        N_current / live_count,
+    )
+    require_small(lifted_energy_average - lifted_energy_target,
+                  "finite Fourier-register energy identity failed", 2.0e-8)
+    require_small(lifted_second_average - lifted_second_target,
+                  "finite Fourier-register second-moment identity failed", 2.0e-8)
+    require_small(lifted_number_average - lifted_number_target,
+                  "finite Fourier-register live-number identity failed", 2.0e-8)
+    require_small(lifted_occupied_average - lifted_occupied_target,
+                  "finite Fourier-register occupied-outcome identity failed", 2.0e-8)
+
+    correlated_amplitudes = np.array(
+        [
+            [1, 1j, 0, 2, 0, -1],
+            [0, 1 + 1j, 2j, 0, -2, 1],
+            [1 - 1j, 0, 1, -1j, 2, 0],
+        ],
+        dtype=complex,
+    )
+    correlated_amplitudes /= np.linalg.norm(correlated_amplitudes)
+    phase_reduced = correlated_amplitudes @ correlated_amplitudes.conj().T
+    phase_purity = float(np.trace(phase_reduced @ phase_reduced).real)
+    require(phase_purity < 0.8, "finite Fourier-register witness is not correlated")
+    correlated_state = correlated_amplitudes.reshape(-1)
+    actual_energy = float(np.vdot(correlated_state, lifted_energy_average @ correlated_state).real)
+    target_energy = float(np.vdot(correlated_state, lifted_energy_target @ correlated_state).real)
+    actual_number = float(np.vdot(correlated_state, lifted_number_average @ correlated_state).real)
+    target_number = float(np.vdot(correlated_state, lifted_number_target @ correlated_state).real)
+    actual_second = float(np.vdot(correlated_state, lifted_second_average @ correlated_state).real)
+    target_second = float(np.vdot(correlated_state, lifted_second_target @ correlated_state).real)
+    require(abs(actual_energy - target_energy) < TOL,
+            "correlated Fourier-register energy expectation failed")
+    require(abs(actual_number - target_number) < TOL,
+            "correlated Fourier-register live-number expectation failed")
+    require(abs(actual_second - target_second) < TOL,
+            "correlated Fourier-register second-moment expectation failed")
+    return (
+        f"histories={','.join(f'{mask:04b}' for mask in history_masks)} "
+        f"taus={','.join(f'{value:.3f}' for value in dwell_times)} cases={cases} "
+        f"maxResidual(E={maximum_energy_residual:.2e},H2={maximum_second_residual:.2e},"
+        f"N={maximum_number_residual:.2e},n1={maximum_outcome_residual:.2e}) "
+        f"FourierPurity={phase_purity:.9f} "
+        f"correlated(E={actual_energy:.9f},H2={actual_second:.9f},N={actual_number:.9f})"
     )
 
 
@@ -862,6 +1125,7 @@ CHECKS = (
     ("source_contract", check_source_contract),
     ("fixed_number_process", check_fixed_number_process),
     ("uniform_clock_laws", check_uniform_and_clock_laws),
+    ("uniform_fibre_identities", check_uniform_fibre_operator_identities),
     ("local_defects", check_local_defects),
     ("shared_battery_two_events", check_shared_battery_two_events),
     ("status_readout_correction", check_status_readout_correction),

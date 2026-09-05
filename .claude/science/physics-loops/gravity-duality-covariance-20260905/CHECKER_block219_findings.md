@@ -252,3 +252,143 @@ the explicit matrix, not `DomainMatrix.charpoly` over `QQ(√6)`), against the p
   what I see; the direct check plainly fits, and no substitute gate is needed.
 
 Disposition: **CONFIRMS**.
+
+---
+
+## CK-08 — the all-plus W1 control: every factor shape at all eight points
+
+Note lines 352-357, verbatim:
+
+> W1's G1 = D1/D0 = (16/15) [[1, -1/4, -1/4], [-1/4, 1, -1/4], [-1/4, -1/4, 1]];  Q = 16/15 (pure), 8/5 (doubly-mixed), 8/5 (triply-mixed);
+> the rational branch (Q, x2) is present at every nonzero point, and the six entries read from these Q values are W1's G1, the seventh consistent;
+> the rest:  (i,1,1), (1,1,i), (i,i,1), (1,i,i):  an IRREDUCIBLE CUBIC squared (Block 218's cubics at t and at t + x);
+>            (1,i,1):  (385 lam - 256)^2 times an irreducible quadratic squared;   (i,1,i):  (1155 lam - 2048)^2 times an irreducible quadratic squared;
+>            (i,i,i):  (5 lam - 8)^2 (165 lam - 256)^2 (4157 lam^2 - 26952 lam + 43008)^2 -- 256/165 is no branch constant times 8/5 (the ratio is 32/33);
+> det M on the line at W1:  TWO DISTINCT QUADRICS, each squared: 256/225 at the pure points, 1024/225 at t + x and x + y, 4096/225 at t + y, 3136/225 at t + x + y
+
+Computed on the W1 cell built in this seat (all-plus signs, Block 216's `W1_MODULI`
+`(15/16, 1/4, 1, 1/4)`, the line parameters), the eight onsite pencil blocks, each charpoly
+factored over `QQ` with `sp.factor_list`:
+
+- `W1's G1 = [[16/15, −4/15, −4/15], [−4/15, 16/15, −4/15], [−4/15, −4/15, 16/15]]`
+  = `(16/15)[[1,−1/4,−1/4],[−1/4,1,−1/4],[−1/4,−1/4,1]]`. `Q = 16/15` at the three pure points,
+  `8/5` at the three doubly-mixed **and** at the triply-mixed point.
+- The `Q` root appears with multiplicity exactly 2 at every one of the seven nonzero points
+  (`15λ−16` squared at the pure points, `5λ−8` squared at the four mixed points): True at all seven.
+- Factor shapes, measured (all factors squared, degrees summing to 8):
+  - `(i,1,1)`, `(1,1,i)`: `(15λ−16)² (4801335λ³ − 18293776λ² + 22913024λ − 9437184)²` — the two
+    pure-`t` / pure-`y` blocks are **identical**, and the cubic is irreducible over `QQ`.
+  - `(i,i,1)`, `(1,i,i)`: `(5λ−8)² (4801335λ³ − 27171928λ² + 46940160λ − 25165824)²` — irreducible
+    cubic squared, and the `tx` and `xy` blocks are identical.
+  - `(1,i,1)`: `(15λ−16)² (385λ−256)² (12471λ² − 45584λ + 36864)²`.
+  - `(i,1,i)`: `(5λ−8)² (1155λ−2048)² (4157λ² − 28616λ + 49152)²`.
+  - `(i,i,i)`: `(5λ−8)² (165λ−256)² (4157λ² − 26952λ + 43008)²`.
+  - `(1,1,1)`: `λ⁸`.
+  - Irreducible-factor degree pattern over the seven nonzero points in the note's `t, x, y, tx, ty,
+    xy, txy` order: `(3, 2, 3, 3, 2, 3, 2)` — the claim-register literal at note line 469.
+- `(256/165) / (8/5) = 32/33`, which is none of `{1, 128/99, 16/11}`: the note's "no branch
+  constant" is right.
+- `det M` at W1: `256/225` at all three pure points, `1024/225` at `t+x` and `x+y`, `4096/225` at
+  `t+y`, `3136/225` at `t+x+y`. Symbolically `det M` is a product of exactly **two distinct**
+  quadrics, each squared (`((2,2),(2,2))`, two distinct factors).
+- The note's own qualification is right: the six entries read from W1's rational branch **do**
+  reproduce W1's `G1` (`G1_tx` read off `= −4/15 = G1_tx`) and the seventh point is consistent
+  (predicted `8/5`, measured `8/5`). So the read-off is not what separates the witness from the
+  control; the shape is. Confirmed, exactly as the note states.
+
+Disposition: **CONFIRMS** (every literal, including the two linear factors and the two quadratics
+the note names, plus the `(385λ−256)` / `(1155λ−2048)` assignment to `x` / `ty` respectively).
+
+---
+
+## CK-09 — the overlap fold at symbolic signs, moduli and parameters
+
+Note lines 374-375, verbatim:
+
+> (i,1,i):  (-D07 + D16 - D25 + D34)/4 . P111                       -- NEW;  on the star line +3/16
+> (1,i,i):  (-D07 + D16 + D25 - D34)/4 . P111                       -- NEW;  on the star line -1/16
+
+Computed on Block 214's `formal_cell` at **symbolic** face signs `(s_tx0 … s_xy1)`, symbolic moduli
+`(g0, g1, v0, v1)` and symbolic parameters `(D07, D16, D25, D34)` — Block 213's `overlap_rules`,
+then `bloch_matrix` at each sympified momentum, then the even↔odd block (Block 213's `even_odd`).
+`P111` was taken as `4 · ∂E(1,1,1)/∂D07` and checked to be parameter-free, so the comparison is a
+genuine matrix identity and not a fit.
+
+- parity block `= c(z) · P111` **exactly**, entrywise, at all four parameter-carrying points, with
+  `c = (D07+D16+D25+D34)/4` at `(1,1,1)`, `(−D07−D16+D25+D34)/4` at `(i,i,1)`,
+  `(−D07+D16−D25+D34)/4` at `(i,1,i)`, `(−D07+D16+D25−D34)/4` at `(1,i,i)`.
+- on the star line `(0, 1/4, −1/4, 1/4)`: `−1/16` at `(i,i,1)`, `+3/16` at `(i,1,i)`, `−1/16` at
+  `(1,i,i)` — the three declared values.
+- the parity block is the **zero matrix** at `(i,1,1)`, `(1,i,1)`, `(1,1,i)` and `(i,i,i)`, and no
+  parameter symbol survives anywhere in the Bloch matrix at those four points.
+- overlap pencil block multisets at the witness line point: `{25774/13445 ×4, 22246/9917 ×4}` at
+  `(i,1,i)` and `{825/371 ×4, 537/227 ×4}` at `(i,i,i)` — the note's two literals, exact.
+  (Also measured, not claimed: `{1 ×8}` at `(i,1,1)` and `(1,1,i)`, `{227/263 ×4, 263/227 ×4}` at
+  `(1,i,1)`, and irrational pairs over `QQ(√6)` at `(i,i,1)` and `(1,i,i)`.)
+- the overlap bench identifies `t` with `y` (charpolys at `(i,1,1)` and `(1,1,i)` identical) and
+  distinguishes `x`; the onsite bench identifies all three pure points, and its triply-mixed
+  charpoly equals the pure one.
+
+Disposition: **CONFIRMS**.
+
+---
+
+## CK-10 — CORRECTION: "the five parameter-free points" is four; the fifth agreement is the zero point
+
+Note lines 383-386, verbatim:
+
+> parameter-free at odd weight, three signed sums at weight two. Consequently the
+> overlap bench charpolys at the line point **equal** the zero-parameter ones at
+> the five parameter-free points and **differ** at the three doubly-mixed points
+> (form and pencil).
+
+The same phrase recurs at note line 438 ("the overlap block charpolys at the line point equal the
+zero-parameter ones exactly at the five parameter-free points") and inside the byte-gated `N5`
+fence at note line 551 ("so the overlap bench at the line point equals the zero-parameter one
+exactly at the five parameter-free points").
+
+Measured: the overlap Bloch fold carries all four parameters at **`(1,1,1)`** as well as at the
+three doubly-mixed points — `parameters_present` at `(1,1,1)` is `('D07','D16','D25','D34')`, and
+the note's own fold table at line 371 states `(1,1,1)`'s parity block as
+`(D07 + D16 + D25 + D34)/4 · P111`, which on the star line is `1/16`, not zero. So the
+parameter-free points number **four**, not five: `(i,1,1)`, `(1,i,1)`, `(1,1,i)`, `(i,i,i)`.
+
+The line-vs-zero charpoly comparison does agree at **five** points — the four parameter-free ones
+**plus `(1,1,1)`** — but at `(1,1,1)` it agrees for an unrelated reason: `κ_z = 0` there, so the
+raising Bloch block is the zero matrix and both readings give the zero 8 × 8 symbol
+(`λ⁸`) at every parameter value. The agreement at `(1,1,1)` is not evidence of a parameter-free
+fold; it is the zero point being blind to the fold entirely. Measured line-vs-zero, both readings:
+True at `(1,1,1)`, `(1,1,i)`, `(1,i,1)`, `(i,1,1)`, `(i,i,i)`; False at `(1,i,i)`, `(i,1,i)`,
+`(i,i,1)`.
+
+The note's own CLAIM REGISTER row 17 (line 470) states this correctly — "parameter-free at four
+points; three signed sums; line = zero at five points" — so the register and the prose disagree,
+and the register is the one that matches the machine. Three sentences carry the wrong label,
+including one inside the byte-gated fence.
+
+No number moves: the count of charpoly agreements (five) and the count of parameter-free folds
+(four) are both correct in the note somewhere; only the phrase "the five parameter-free points"
+merges them into a false description. Suggested repair: "at the four parameter-free points and at
+the zero point, where the block vanishes identically".
+
+Disposition: **CORRECTS** (wording defect in three places, one of them byte-gated; no mathematics
+affected, no landed number touched).
+
+---
+
+## CK-11 — the flat control and the smaller-extent reproduction
+
+Note lines 202-204, verbatim:
+
+> the flat cell at zero parameters gives R5's `{0 ×8, 1 ×24, 2 ×24, 3 ×8}` =
+> Block 213's `expected_flat_multiset((4,4,4))` under both assemblies and both
+> readings, direct (`C-3`, mutation `break_flat_control`);
+
+Computed: the direct 64 × 64 charpoly at the flat cell `(1, 0, 1, 0)` at zero parameters, built
+and factored in this seat under all four constructions (onsite/overlap × form/pencil), sympy
+`charpoly` then `sp.roots`:
+
+- all four give degree 64 with multiset `{0 ×8, 1 ×24, 2 ×24, 3 ×8}`, multiplicities summing to 64.
+- `b213.expected_flat_multiset((4,4,4))` = `((0,8),(1,24),(2,24),(3,8))` — identical.
+
+Disposition: **CONFIRMS**.

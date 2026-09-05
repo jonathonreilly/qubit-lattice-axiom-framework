@@ -1002,6 +1002,7 @@ def full_algebra_and_placement(graph: Graph, bksf: BKSF) -> AlgebraMetrics:
         for xmask, zmask in bksf.h[edge_index]:
             support_mask |= xmask | zmask
         support = [number for number in range(edge_count) if (support_mask >> number) & 1]
+        endpoint_stars = graph.incident_mask(u) | graph.incident_mask(v)
         max_support = max(max_support, len(support))
         center = edge_sites[edge_index]
         radii = [
@@ -1016,6 +1017,7 @@ def full_algebra_and_placement(graph: Graph, bksf: BKSF) -> AlgebraMetrics:
             max_diameter = max(max_diameter, distance)
         residual = max(
             residual,
+            float(bool(support_mask & ~endpoint_stars)),
             float(len(support) > degrees[u] + degrees[v] - 1),
             float(any(radius > 2 for radius in radii)),
         )

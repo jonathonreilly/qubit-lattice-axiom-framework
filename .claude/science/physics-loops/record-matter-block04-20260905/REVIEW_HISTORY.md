@@ -48,3 +48,5 @@ The disposable current-main-plus-complete-delta tree, with exactly the declared 
 The manifest delta is exactly one new zero-dependency note: 4760 to 4761 nodes, with 11859 edges unchanged. It was generated and staged before full validation; later summary-hypothesis repairs changed no graph topology. Both sources compile, match their canonical cache hashes, and both local note links resolve to tracked files. Vocabulary has zero findings and the committed delta has no whitespace errors.
 
 Root restored exactly 2257 generated tracked paths to this branch's own HEAD and removed exactly seven new generated ledger shards after the checks. The manifest is the sole generated audit-data output retained. This completed validation record changes only pack bookkeeping and receives final vocabulary and committed-delta checks. No further scientific note, source or cache byte changes after the validated science tree.
+
+Published as PR #7979 against main and verified OPEN/MERGEABLE with the intended 23-file delta. This publication record changes only pack metadata; validated scientific bytes remain unchanged. No merge or audit verdict was applied.

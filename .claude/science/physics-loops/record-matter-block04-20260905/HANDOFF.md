@@ -13,3 +13,5 @@ Publish via PR for independent review, with no merge or effective-grade change. 
 For the declared stationary sea, the actual process has exactly the ideal pilot’s history probabilities and conditional energy/ground-excess distributions. This is an analytic application of equations (38)-(39), not a large apparatus simulation. The output state can retain a different pattern of energy coherence, so this comparison does not certify noncommuting local matter observables.
 
 Final science e1334229a1 passed full pipeline (checkpoint2c3d3aef43c6), subsequent strict lint, changed-evidence readiness, disposable exact helper mapping, links, vocabulary, compilation and whitespace. Only the generated citation manifest ships; generated audit residue was restored. This is ready for independent review, not an effective retained result.
+
+Published as PR #7979 against main and verified OPEN/MERGEABLE with the intended 23-file delta. This publication record changes only pack metadata; validated scientific bytes remain unchanged. No merge or audit verdict was applied.

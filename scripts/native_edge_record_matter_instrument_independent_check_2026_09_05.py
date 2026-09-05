@@ -35,6 +35,7 @@ AUDIT_TIMEOUT_SEC = 180
 DENSE_MATRIX_AXIS_LIMIT = 600
 ATOL = 3.0e-10
 RANK_TOL = 2.0e-9
+SOURCE_INTEGRITY_SHA256 = "15dd499a7af8517a75d356aac880ee1da1b74e58f77fcd1839888e27f7f057b1"
 EXPECTED_CHECK_NAMES = (
     "direct_dictionary",
     "nonbridge_instrument",
@@ -1344,6 +1345,13 @@ def source_contract_check() -> str:
         "checker filename changed",
     )
     source = pathlib.Path(__file__).read_text(encoding="utf-8")
+    digest_marker = 'SOURCE_INTEGRITY_SHA256 = "'
+    digest_start = source.index(digest_marker) + len(digest_marker)
+    digest_end = source.index('"', digest_start)
+    require(digest_end - digest_start == 64, "source-integrity field width")
+    normalized_source = source[:digest_start] + "0" * 64 + source[digest_end:]
+    normalized_digest = hashlib.sha256(normalized_source.encode("utf-8")).hexdigest()
+    require(normalized_digest == SOURCE_INTEGRITY_SHA256, "source-integrity digest")
     tree = ast.parse(source)
     allowed_import_roots = {
         "__future__",

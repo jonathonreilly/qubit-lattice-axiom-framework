@@ -6,6 +6,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 import re
+import sys
 
 import numpy as np
 
@@ -134,18 +135,37 @@ def parse_rows(text: str) -> dict[tuple[float, int, tuple[int, int]], PairedEsti
     return rows
 
 
-def parse_replay() -> dict[tuple[float, int, tuple[int, int]], PairedEstimate]:
+def parse_replay(
+    *, allow_nonzero: bool = False
+) -> dict[tuple[float, int, tuple[int, int]], PairedEstimate]:
     text = DATA_CACHE.read_text(encoding="utf-8")
-    required = (
+    identity_required = (
         "runner: scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py",
+        "primary_window=8-14",
+    )
+    if any(token not in text for token in identity_required):
+        raise RuntimeError("high-genealogy replay receipt is incomplete")
+    green_required = (
         "status: ok",
         "exit_code: 0",
-        "primary_window=8-14",
         "TOTAL: PASS=4 FAIL=0",
     )
-    if any(token not in text for token in required):
+    if not allow_nonzero and any(token not in text for token in green_required):
         raise RuntimeError("high-genealogy replay receipt is not green")
     return parse_rows(text)
+
+
+def replay_receipt_is_green() -> bool:
+    """Return the upstream replay status without changing strict parsing."""
+    text = DATA_CACHE.read_text(encoding="utf-8")
+    return all(
+        token in text
+        for token in (
+            "status: ok",
+            "exit_code: 0",
+            "TOTAL: PASS=4 FAIL=0",
+        )
+    )
 
 
 def parse_old_rows() -> dict[tuple[float, int, tuple[int, int]], WindowEstimate]:
@@ -245,7 +265,13 @@ def compatible(
 
 def main() -> int:
     checks = Checks()
-    replay = parse_replay()
+    diagnostic = "--diagnostic" in sys.argv[1:]
+    replay = parse_replay(allow_nonzero=diagnostic)
+    if diagnostic:
+        checks.check(
+            replay_receipt_is_green(),
+            "the upstream replay receipt is green (diagnostic mode keeps this gate visible)",
+        )
     old = parse_old_rows()
     parent_detuned, parent_rk = parse_ladder_cache(
         "spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.txt",

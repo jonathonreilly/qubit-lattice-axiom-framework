@@ -696,6 +696,506 @@ def bipartite_energy_bound_check() -> str:
     return "square/path verify E0<=-L t/d from pairing, trace square, and row-sum norm"
 
 
+def lattice_distance(left: tuple[int, int, int], right: tuple[int, int, int]) -> int:
+    return sum(abs(a - b) for a, b in zip(left, right))
+
+
+def canonical_lattice_edge(
+    left: tuple[int, int, int], right: tuple[int, int, int]
+) -> tuple[tuple[int, int, int], tuple[int, int, int]]:
+    return tuple(sorted((left, right)))  # type: ignore[return-value]
+
+
+def cubic_star(vertex: tuple[int, int, int]) -> set[tuple[tuple[int, int, int], tuple[int, int, int]]]:
+    result = set()
+    for axis in range(3):
+        for direction in (-1, 1):
+            neighbor = list(vertex)
+            neighbor[axis] += direction
+            result.add(canonical_lattice_edge(vertex, tuple(neighbor)))
+    return result
+
+
+def edge_midpoint_site(
+    edge: tuple[tuple[int, int, int], tuple[int, int, int]]
+) -> tuple[int, int, int]:
+    return tuple(left + right for left, right in zip(edge[0], edge[1]))  # type: ignore[return-value]
+
+
+def multiply_pauli_labels(left: str, right: str) -> str:
+    if left == "I":
+        return right
+    if right == "I":
+        return left
+    if left == right:
+        return "I"
+    return "Y" if {left, right} == {"X", "Z"} else "X" if {left, right} == {"Y", "Z"} else "Z"
+
+
+def multiply_symbolic_words(
+    left: dict[object, str], right: dict[object, str]
+) -> dict[object, str]:
+    result = dict(left)
+    for site, label in right.items():
+        product = multiply_pauli_labels(result.get(site, "I"), label)
+        if product == "I":
+            result.pop(site, None)
+        else:
+            result[site] = product
+    return result
+
+
+def placement_and_support_check() -> str:
+    left = (0, 0, 0)
+    right = (1, 0, 0)
+    central_edge = canonical_lattice_edge(left, right)
+    left_star = cubic_star(left)
+    right_star = cubic_star(right)
+    endpoint_union = left_star | right_star
+    require(len(left_star) == 6 and len(right_star) == 6, "cubic endpoint degree")
+    require(left_star & right_star == {central_edge}, "endpoint stars share wrong edges")
+    require(len(endpoint_union) == 11, "degree-six endpoint union bound")
+    center_site = edge_midpoint_site(central_edge)
+    sites = {edge_midpoint_site(edge) for edge in endpoint_union}
+    require(len(sites) == 11, "edge roles do not occupy distinct original sites")
+    require(max(lattice_distance(site, center_site) for site in sites) == 2, "radius-two support")
+    diameter = max(lattice_distance(a, b) for a in sites for b in sites)
+    require(diameter == 4, "diameter-four support")
+
+    left_neighbors = sorted(edge[1] if edge[0] == left else edge[0] for edge in left_star)
+    right_neighbors = sorted(edge[1] if edge[0] == right else edge[0] for edge in right_star)
+    a_word: dict[object, str] = {central_edge: "X"}
+    for neighbor in left_neighbors:
+        if neighbor < right:
+            a_word[canonical_lattice_edge(left, neighbor)] = "Z"
+    for neighbor in right_neighbors:
+        if neighbor < left:
+            a_word[canonical_lattice_edge(right, neighbor)] = "Z"
+    left_b = {edge: "Z" for edge in left_star}
+    right_b = {edge: "Z" for edge in right_star}
+    hopping_words = (
+        multiply_symbolic_words(a_word, left_b),
+        multiply_symbolic_words(a_word, right_b),
+    )
+    for word in hopping_words:
+        require(set(word) <= endpoint_union, "hopping word escapes endpoint stars")
+        require(len(word) <= 11, "hopping word exceeds support bound")
+        require(central_edge in word, "hopping word lost its physical edge site")
+    require(len({central_edge}) == 1, "native Record projector is not one-site")
+    return "cubic placement has 11-site union, radius 2, diameter 4, and one-site Record"
+
+
+def native_record_isometry(record_z: np.ndarray) -> np.ndarray:
+    return np.vstack(
+        (
+            projector_from_involution(record_z, -1),
+            projector_from_involution(record_z, 1),
+        )
+    )
+
+
+def next_native_record_isometry(record_z: np.ndarray, old_history_count: int) -> np.ndarray:
+    dimension = record_z.shape[0]
+    result = np.zeros(
+        (2 * old_history_count * dimension, old_history_count * dimension),
+        dtype=complex,
+    )
+    projectors = (
+        projector_from_involution(record_z, -1),
+        projector_from_involution(record_z, 1),
+    )
+    for old_history in range(old_history_count):
+        input_slice = slice(old_history * dimension, (old_history + 1) * dimension)
+        for new_history, projector in enumerate(projectors):
+            output_history = 2 * old_history + new_history
+            output_slice = slice(output_history * dimension, (output_history + 1) * dimension)
+            result[output_slice, input_slice] = projector
+    return result
+
+
+def integer_spectral_projectors(hamiltonian: np.ndarray) -> dict[int, np.ndarray]:
+    eigenvalues, eigenvectors = np.linalg.eigh(hamiltonian)
+    integers = np.rint(eigenvalues).astype(int)
+    require(max_abs(eigenvalues - integers) <= 2.0e-9, "fixture spectrum is not exactly commensurate")
+    projectors = {}
+    for energy in sorted(set(integers.tolist())):
+        vectors = eigenvectors[:, integers == energy]
+        projectors[energy] = vectors @ vectors.conj().T
+    close(sum(projectors.values()), np.eye(hamiltonian.shape[0]), "spectral resolution")
+    return projectors
+
+
+def capped_integer_shift(battery_dimension: int, shift: int) -> np.ndarray:
+    result = np.zeros((battery_dimension, battery_dimension), dtype=complex)
+    for source in range(battery_dimension):
+        target = source + shift
+        if 0 <= target < battery_dimension:
+            result[target, source] = 1.0
+    return result
+
+
+def translation_lift(
+    input_hamiltonian: np.ndarray,
+    output_hamiltonian: np.ndarray,
+    instrument: np.ndarray,
+    battery_dimension: int,
+) -> tuple[np.ndarray, tuple[int, ...]]:
+    input_projectors = integer_spectral_projectors(input_hamiltonian)
+    output_projectors = integer_spectral_projectors(output_hamiltonian)
+    output_dimension, input_dimension = instrument.shape
+    require(output_hamiltonian.shape == (output_dimension, output_dimension), "output Hamiltonian shape")
+    require(input_hamiltonian.shape == (input_dimension, input_dimension), "input Hamiltonian shape")
+    require(
+        max(output_dimension * battery_dimension, input_dimension * battery_dimension)
+        <= DENSE_MATRIX_AXIS_LIMIT,
+        "battery lift exceeds dense-axis contract",
+    )
+    lifted = np.zeros(
+        (output_dimension * battery_dimension, input_dimension * battery_dimension),
+        dtype=complex,
+    )
+    used_shifts = set()
+    for output_energy, output_projector in output_projectors.items():
+        for input_energy, input_projector in input_projectors.items():
+            component = output_projector @ instrument @ input_projector
+            if np.linalg.norm(component) <= 2.0e-10:
+                continue
+            shift = input_energy - output_energy
+            used_shifts.add(shift)
+            lifted = lifted + np.kron(component, capped_integer_shift(battery_dimension, shift))
+    return lifted, tuple(sorted(used_shifts))
+
+
+def reduced_system_from_vector(
+    state: np.ndarray, system_dimension: int, battery_dimension: int
+) -> np.ndarray:
+    coefficients = state.reshape((system_dimension, battery_dimension))
+    return coefficients @ coefficients.conj().T
+
+
+def reduced_battery_from_vector(
+    state: np.ndarray, system_dimension: int, battery_dimension: int
+) -> np.ndarray:
+    coefficients = state.reshape((system_dimension, battery_dimension))
+    return coefficients.T @ coefficients.conj()
+
+
+def joint_history_energy_probabilities(
+    density: np.ndarray,
+    history_count: int,
+    physical_hamiltonian: np.ndarray,
+) -> dict[tuple[int, int], float]:
+    dimension = physical_hamiltonian.shape[0]
+    energy_projectors = integer_spectral_projectors(physical_hamiltonian)
+    probabilities = {}
+    for history in range(history_count):
+        history_projector = np.zeros((history_count, history_count), dtype=complex)
+        history_projector[history, history] = 1.0
+        for energy, projector in energy_projectors.items():
+            observable = np.kron(history_projector, projector)
+            probabilities[(history, energy)] = float(np.trace(density @ observable).real)
+    return probabilities
+
+
+def compare_probability_maps(
+    left: dict[tuple[int, int], float],
+    right: dict[tuple[int, int], float],
+    label: str,
+) -> None:
+    require(left.keys() == right.keys(), f"{label} probability support")
+    for key in left:
+        require(abs(left[key] - right[key]) <= 4.0e-9, f"{label} probability {key}")
+
+
+def shifted_packet(packet: np.ndarray, shift: int) -> np.ndarray:
+    return capped_integer_shift(len(packet), shift) @ packet
+
+
+def phase_averaged_eigenstate_output(
+    ideal_density: np.ndarray,
+    output_hamiltonian: np.ndarray,
+    input_energy: int,
+    packet: np.ndarray,
+) -> np.ndarray:
+    result = np.zeros_like(ideal_density)
+    projectors = integer_spectral_projectors(output_hamiltonian)
+    shifted = {
+        energy: shifted_packet(packet, input_energy - energy)
+        for energy in projectors
+    }
+    for left_energy, left_projector in projectors.items():
+        for right_energy, right_projector in projectors.items():
+            overlap = np.vdot(shifted[right_energy], shifted[left_energy])
+            result = result + overlap * left_projector @ ideal_density @ right_projector
+    return result
+
+
+def fixed_number_eigenvectors(
+    fock: FockCarrier,
+    hamiltonian: np.ndarray,
+    particle_number: int,
+) -> tuple[np.ndarray, np.ndarray]:
+    positions = [
+        position for position, mask in enumerate(fock.masks) if mask.bit_count() == particle_number
+    ]
+    embedding = np.eye(len(fock.masks), dtype=complex)[:, positions]
+    eigenvalues, vectors = np.linalg.eigh(embedding.conj().T @ hamiltonian @ embedding)
+    return eigenvalues, embedding @ vectors
+
+
+def shared_battery_native_history_check() -> str:
+    square = SmallGraph(4, ((0, 1), (1, 2), (2, 3), (0, 3)))
+    fock = direct_even_fock(4)
+    cycle = (0, 1, 2, 3, 0)
+    code_isom = code_isometry(square, fock, (cycle,))
+    first_edge = (0, 1)
+    second_edge = (2, 3)
+    first_term = square.hopping_generator(first_edge)
+    second_term = square.hopping_generator(second_edge)
+    input_hamiltonian = first_term + second_term
+    after_first = second_term
+    after_second = np.zeros_like(input_hamiltonian)
+    first_instrument = native_record_isometry(square.edge_z(first_edge))
+    second_instrument = next_native_record_isometry(square.edge_z(second_edge), 2)
+    composite_instrument = second_instrument @ first_instrument
+    first_output_hamiltonian = np.kron(np.eye(2), after_first)
+    second_input_hamiltonian = first_output_hamiltonian
+    second_output_hamiltonian = np.kron(np.eye(4), after_second)
+    close(first_instrument.conj().T @ first_instrument, np.eye(16), "first native isometry")
+    close(second_instrument.conj().T @ second_instrument, np.eye(32), "second native isometry")
+    close(
+        first_output_hamiltonian @ first_instrument - first_instrument @ input_hamiltonian,
+        -first_instrument @ first_term,
+        "first native energy defect",
+    )
+    removed_second = np.kron(np.eye(2), second_term)
+    close(
+        second_output_hamiltonian @ second_instrument
+        - second_instrument @ second_input_hamiltonian,
+        -second_instrument @ removed_second,
+        "second native energy defect",
+    )
+
+    battery_dimension = 8
+    battery_hamiltonian = np.diag(np.arange(battery_dimension, dtype=float)).astype(complex)
+    first_lift, first_shifts = translation_lift(
+        input_hamiltonian,
+        first_output_hamiltonian,
+        first_instrument,
+        battery_dimension,
+    )
+    second_lift, second_shifts = translation_lift(
+        second_input_hamiltonian,
+        second_output_hamiltonian,
+        second_instrument,
+        battery_dimension,
+    )
+    direct_lift, direct_shifts = translation_lift(
+        input_hamiltonian,
+        second_output_hamiltonian,
+        composite_instrument,
+        battery_dimension,
+    )
+    require(first_shifts == (-1, 0, 1), f"first transfer spectrum {first_shifts}")
+    require(second_shifts == (-1, 0, 1), f"second transfer spectrum {second_shifts}")
+    require(direct_shifts == (-2, 0, 2), f"composite transfer spectrum {direct_shifts}")
+
+    input_total_hamiltonian = np.kron(input_hamiltonian, np.eye(battery_dimension)) + np.kron(
+        np.eye(16), battery_hamiltonian
+    )
+    first_total_hamiltonian = np.kron(first_output_hamiltonian, np.eye(battery_dimension)) + np.kron(
+        np.eye(32), battery_hamiltonian
+    )
+    second_total_hamiltonian = np.kron(second_output_hamiltonian, np.eye(battery_dimension)) + np.kron(
+        np.eye(64), battery_hamiltonian
+    )
+    close(
+        first_total_hamiltonian @ first_lift,
+        first_lift @ input_total_hamiltonian,
+        "first lifted total-energy intertwining",
+        2.0e-9,
+    )
+    close(
+        second_total_hamiltonian @ second_lift,
+        second_lift @ first_total_hamiltonian,
+        "second lifted total-energy intertwining",
+        3.0e-9,
+    )
+    close(
+        second_total_hamiltonian @ direct_lift,
+        direct_lift @ input_total_hamiltonian,
+        "direct composite total-energy intertwining",
+        3.0e-9,
+    )
+
+    packet = np.zeros(battery_dimension, dtype=complex)
+    packet_support = (2, 3, 4, 5)
+    for packet_position, battery_level in enumerate(packet_support):
+        packet[battery_level] = math.sin(math.pi * (packet_position + 1) / 5.0) * np.exp(
+            0.37j * battery_level
+        )
+    packet = normalized(packet)
+    packet_embedding = np.eye(battery_dimension, dtype=complex)[:, packet_support]
+    safe_domain = np.kron(code_isom, packet_embedding)
+    first_refusal = np.eye(first_lift.shape[1]) - first_lift.conj().T @ first_lift
+    second_refusal = np.eye(second_lift.shape[1]) - second_lift.conj().T @ second_lift
+    require(float(np.min(np.linalg.eigvalsh(first_refusal))) >= -3.0e-9, "first cap contraction")
+    require(float(np.min(np.linalg.eigvalsh(second_refusal))) >= -3.0e-9, "second cap contraction")
+    close(safe_domain.conj().T @ first_refusal @ safe_domain, np.zeros((32, 32)), "zero first refusal")
+    reachable_domain = first_lift @ safe_domain
+    close(
+        reachable_domain.conj().T @ second_refusal @ reachable_domain,
+        np.zeros((32, 32)),
+        "zero second refusal on correlated reachable domain",
+    )
+    close(
+        (second_lift @ first_lift - direct_lift) @ safe_domain,
+        np.zeros((64 * battery_dimension, 32)),
+        "same-battery telescoping on cap-safe domain",
+        5.0e-9,
+    )
+
+    fock_input_hamiltonian = fock.hoppings[first_edge] + fock.hoppings[second_edge]
+    fock_after_first = fock.hoppings[second_edge]
+    eigenvalues, eigenvectors = fixed_number_eigenvectors(fock, fock_input_hamiltonian, 2)
+    ground_fock = eigenvectors[:, 0]
+    require(abs(eigenvalues[0] + 2.0) <= ATOL, "commensurate fixture ground energy")
+    zero_positions = np.flatnonzero(np.abs(eigenvalues) <= 2.0e-9)
+    zero_basis = eigenvectors[:, zero_positions]
+    split_values, split_vectors = np.linalg.eigh(
+        zero_basis.conj().T @ fock_after_first @ zero_basis
+    )
+    require(abs(split_values[0] + 1.0) <= ATOL and abs(split_values[-1] - 1.0) <= ATOL, "zero-energy dimer split")
+    coherent_fock = normalized(
+        zero_basis @ split_vectors[:, 0] + 1j * zero_basis @ split_vectors[:, -1]
+    )
+    close(fock_input_hamiltonian @ coherent_fock, np.zeros(8), "stationary degenerate input")
+    ground_physical = code_isom @ ground_fock
+    coherent_physical = code_isom @ coherent_fock
+
+    for label, physical_state, input_energy in (
+        ("ground", ground_physical, -2),
+        ("degenerate", coherent_physical, 0),
+    ):
+        initial_state = np.kron(physical_state, packet)
+        actual_first_state = first_lift @ initial_state
+        actual_final_state = second_lift @ actual_first_state
+        direct_final_state = direct_lift @ initial_state
+        require(abs(float(np.vdot(actual_first_state, actual_first_state).real) - 1.0) <= 3.0e-9, f"first success {label}")
+        require(abs(float(np.vdot(actual_final_state, actual_final_state).real) - 1.0) <= 4.0e-9, f"final success {label}")
+        close(actual_final_state, direct_final_state, f"retained-battery state telescope {label}", 5.0e-9)
+        ideal_first_state = first_instrument @ physical_state
+        ideal_final_state = composite_instrument @ physical_state
+        ideal_first_density = np.outer(ideal_first_state, ideal_first_state.conj())
+        ideal_final_density = np.outer(ideal_final_state, ideal_final_state.conj())
+        actual_first_density = reduced_system_from_vector(actual_first_state, 32, battery_dimension)
+        actual_final_density = reduced_system_from_vector(actual_final_state, 64, battery_dimension)
+        phase_average = phase_averaged_eigenstate_output(
+            ideal_first_density, first_output_hamiltonian, input_energy, packet
+        )
+        close(actual_first_density, phase_average, f"stationary phase average {label}", 5.0e-9)
+        compare_probability_maps(
+            joint_history_energy_probabilities(actual_first_density, 2, after_first),
+            joint_history_energy_probabilities(ideal_first_density, 2, after_first),
+            f"first history-energy {label}",
+        )
+        compare_probability_maps(
+            joint_history_energy_probabilities(actual_final_density, 4, after_second),
+            joint_history_energy_probabilities(ideal_final_density, 4, after_second),
+            f"complete history-energy {label}",
+        )
+        history_probabilities = []
+        for history in range(2):
+            history_probabilities.append(
+                sum(
+                    probability
+                    for (candidate, _), probability in joint_history_energy_probabilities(
+                        actual_first_density, 2, after_first
+                    ).items()
+                    if candidate == history
+                )
+            )
+        require(all(probability > 1.0e-5 for probability in history_probabilities), f"nonzero histories {label}")
+
+    coherent_initial = np.kron(coherent_physical, packet)
+    coherent_first = first_lift @ coherent_initial
+    coherent_reduced = reduced_system_from_vector(coherent_first, 32, battery_dimension)
+    coherent_ideal_state = first_instrument @ coherent_physical
+    coherent_ideal = np.outer(coherent_ideal_state, coherent_ideal_state.conj())
+    coherence_distance = float(np.linalg.norm(coherent_reduced - coherent_ideal))
+    require(coherence_distance > 1.0e-3, "fixture does not witness conditional coherence change")
+    battery_density = reduced_battery_from_vector(coherent_first, 32, battery_dimension)
+    battery_purity = float(np.trace(battery_density @ battery_density).real)
+    require(battery_purity < 1.0 - 1.0e-4, "first event did not retain system-battery correlation")
+
+    test_physical = code_isom @ fixed_number_vector(fock, 2)
+    test_initial = np.kron(test_physical, packet)
+    test_first = first_lift @ test_initial
+    test_final = second_lift @ test_first
+    matter_energy_initial = float(
+        np.vdot(test_initial, np.kron(input_hamiltonian, np.eye(battery_dimension)) @ test_initial).real
+    )
+    battery_energy_initial = float(
+        np.vdot(test_initial, np.kron(np.eye(16), battery_hamiltonian) @ test_initial).real
+    )
+    matter_energy_first = float(
+        np.vdot(test_first, np.kron(first_output_hamiltonian, np.eye(battery_dimension)) @ test_first).real
+    )
+    battery_energy_first = float(
+        np.vdot(test_first, np.kron(np.eye(32), battery_hamiltonian) @ test_first).real
+    )
+    matter_energy_final = float(
+        np.vdot(test_final, np.kron(second_output_hamiltonian, np.eye(battery_dimension)) @ test_final).real
+    )
+    battery_energy_final = float(
+        np.vdot(test_final, np.kron(np.eye(64), battery_hamiltonian) @ test_final).real
+    )
+    require(
+        abs(matter_energy_initial + battery_energy_initial - matter_energy_first - battery_energy_first)
+        <= 5.0e-9,
+        "explicit first matter-battery energy ledger",
+    )
+    require(
+        abs(matter_energy_initial + battery_energy_initial - matter_energy_final - battery_energy_final)
+        <= 5.0e-9,
+        "explicit final matter-battery energy ledger",
+    )
+
+    old_flag_first = np.kron(np.diag([-1.0, 1.0]), np.eye(16))
+    old_physical_first = np.kron(np.eye(2), square.edge_z(first_edge))
+    close(
+        np.kron(old_flag_first - old_physical_first, np.eye(battery_dimension)) @ test_first,
+        np.zeros_like(test_first),
+        "first history label equals existing physical Record",
+    )
+    old_flag_final = np.kron(np.diag([-1.0, -1.0, 1.0, 1.0]), np.eye(16))
+    new_flag_final = np.kron(np.diag([-1.0, 1.0, -1.0, 1.0]), np.eye(16))
+    old_physical_final = np.kron(np.eye(4), square.edge_z(first_edge))
+    new_physical_final = np.kron(np.eye(4), square.edge_z(second_edge))
+    for difference, label in (
+        (old_flag_final - old_physical_final, "old"),
+        (new_flag_final - new_physical_final, "new"),
+    ):
+        close(
+            np.kron(difference, np.eye(battery_dimension)) @ test_final,
+            np.zeros_like(test_final),
+            f"{label} history label equals physical Record",
+        )
+    number = physical_number(square)
+    for state, histories in ((test_first, 2), (test_final, 4)):
+        output_number = np.kron(np.eye(histories), number)
+        close(
+            np.kron(output_number - 2.0 * np.eye(output_number.shape[0]), np.eye(battery_dimension))
+            @ state,
+            np.zeros_like(state),
+            "shared lift preserves sharp original N",
+        )
+    return (
+        "integer native square lift reuses one correlated battery for two events; "
+        f"stationary coherence_distance={coherence_distance:.3e}, purity={battery_purity:.6f}"
+    )
+
+
 def run_checks() -> int:
     checks = [
         ("direct_dictionary", direct_dictionary_check),
@@ -703,6 +1203,8 @@ def run_checks() -> int:
         ("bridge_and_history", bridge_and_history_check),
         ("uniform_history_moments", uniform_history_moments_check),
         ("bipartite_energy_bound", bipartite_energy_bound_check),
+        ("placement_and_support", placement_and_support_check),
+        ("shared_battery_native_history", shared_battery_native_history_check),
     ]
     passed = 0
     failed = 0

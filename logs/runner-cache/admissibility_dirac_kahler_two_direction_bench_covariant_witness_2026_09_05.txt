@@ -1,0 +1,325 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05.py
+runner_sha256: 765d7389d8e69d4cad1cff62736140b6c9f38216ec8349ddecb80771de4291fa
+input_fingerprint_sha256: 58d8c71da4c51a3c76f94aae65ddcd6818a534fce50a57f5bce59e37691de087
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 36.65
+status: ok
+----- stdout -----
+[phase] authority: 793 ms
+[phase] census: 1348 ms
+[phase] construction: 442 ms
+[bench] witness line onsite form
+[bench] witness line onsite pencil
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] W1 line onsite form
+[bench] W1 line onsite pencil
+[bench] W1 line overlap form
+[bench] W1 line overlap pencil
+[bench] flat line onsite form
+[bench] flat line onsite pencil
+[bench] flat line overlap form
+[bench] flat line overlap pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] W1 zero overlap form
+[bench] W1 zero overlap pencil
+[bench] flat zero onsite form
+[bench] flat zero onsite pencil
+[bench] flat zero overlap form
+[bench] flat zero overlap pencil
+[phase] bench: 17668 ms
+[phase] identities: 2184 ms
+[phase] shape: 5724 ms
+[phase] control: 5804 ms
+== BLOCK 218: the cone's shape on a two-direction bench at the covariant witness -- measured facts ==
+authority: AuthorityCertificate(fixed_authority=True, parent_pin_is_commit=True, parent_is_ancestor=True, parent_artifact_blobs=True, stale_is_real_ancestor=True, stale_carries_neither_artifact=True, machinery_import_landed=True, inputs_readable=10)
+construction face_orders_agree: True
+construction g1_tt_witness: 9/8
+construction kappas: ((0, 0, 0), (0, 1, 0), (1, 0, 0), (1, 1, 0))
+construction l_plus_minus_signs: (1, 1, 1, 1, -1, 1)
+construction line_point_entries: (0, 1/4, -1/4, 1/4)
+construction mixed_point_present: True
+construction momenta: (('1', '1', '1'), ('1', 'I', '1'), ('I', '1', '1'), ('I', 'I', '1'))
+construction parent_bench_agrees: True
+construction parent_bench_ms: 436
+construction parent_bench_multiset: ((0, 8), (9/8, 2), (16/11, 2), (18/11, 4))
+construction parent_momenta: (('1', '1', '1'), ('I', '1', '1'))
+construction raising_bench_nnz: 64
+construction site_count: 32
+construction w1_moduli_is_block211: True
+construction witness_is_rule_a: True
+construction witness_moduli: (sqrt(6)/3, 1/3, 3*sqrt(6)/8, 1/2)
+construction witness_values: ((1, 1, 1, 1, -1, 1),)
+construction y_link_entries: 0
+bench all_agree: True
+bench all_degree_32: True
+bench block_multisets ('W1 line', 'onsite', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): None, ('I', '1', '1'): None, ('I', 'I', '1'): None}
+bench block_multisets ('W1 line', 'onsite', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): None, ('I', '1', '1'): None, ('I', 'I', '1'): None}
+bench block_multisets ('W1 line', 'overlap', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', '1', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', 'I', '1'): None}
+bench block_multisets ('W1 line', 'overlap', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((55/71, 4), (71/55, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((3906/2321, 4), (3906/2081, 4))}
+bench block_multisets ('W1 zero', 'overlap', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', '1', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', 'I', '1'): None}
+bench block_multisets ('W1 zero', 'overlap', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((55/71, 4), (71/55, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((126/71, 8),)}
+bench block_multisets ('flat line', 'onsite', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): None, ('I', '1', '1'): None, ('I', 'I', '1'): None}
+bench block_multisets ('flat line', 'onsite', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 2), (16/15, 6)), ('I', '1', '1'): ((1, 2), (16/15, 6)), ('I', 'I', '1'): ((2, 2), (32/15, 6))}
+bench block_multisets ('flat line', 'overlap', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): None}
+bench block_multisets ('flat line', 'overlap', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((32/17, 4), (32/15, 4))}
+bench block_multisets ('flat zero', 'onsite', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}
+bench block_multisets ('flat zero', 'onsite', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}
+bench block_multisets ('flat zero', 'overlap', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}
+bench block_multisets ('flat zero', 'overlap', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}
+bench block_multisets ('witness line', 'onsite', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): None, ('I', '1', '1'): None, ('I', 'I', '1'): None}
+bench block_multisets ('witness line', 'onsite', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((9/8, 2), (16/11, 2), (18/11, 4)), ('I', '1', '1'): ((9/8, 2), (16/11, 2), (18/11, 4)), ('I', 'I', '1'): ((3/2, 2), (64/33, 2), (24/11, 4))}
+bench block_multisets ('witness line', 'overlap', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((51529/55296, 4), (69169/55296, 4)), ('I', '1', '1'): ((36481/55296, 4), (89401/55296, 4)), ('I', 'I', '1'): None}
+bench block_multisets ('witness line', 'overlap', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((227/263, 4), (263/227, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): None}
+bench block_multisets ('witness zero', 'overlap', 'form'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((51529/55296, 4), (69169/55296, 4)), ('I', '1', '1'): ((36481/55296, 4), (89401/55296, 4)), ('I', 'I', '1'): None}
+bench block_multisets ('witness zero', 'overlap', 'pencil'): {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((227/263, 4), (263/227, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((490/299, 8),)}
+bench block_shapes ('W1 line', 'onsite', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((4, 2, (129600, -647676, 1074545, -693008, 147456)),), ('I', '1', '1'): ((4, 2, (129600, -647676, 1086353, -711440, 147456)),), ('I', 'I', '1'): ((4, 2, (16200, -131616, 331163, -295793, 73728)),)}
+bench block_shapes ('W1 line', 'onsite', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 2, (15, -16)), (1, 2, (385, -256)), (2, 2, (12471, -45584, 36864))), ('I', '1', '1'): ((1, 2, (15, -16)), (3, 2, (4801335, -18293776, 22913024, -9437184))), ('I', 'I', '1'): ((1, 2, (5, -8)), (3, 2, (4801335, -27171928, 46940160, -25165824)))}
+bench block_shapes ('W1 line', 'overlap', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401))), ('I', '1', '1'): ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401))), ('I', 'I', '1'): ((2, 2, (15099494400, -58664697856, 56460888225)), (2, 2, (15099494400, -52935540736, 42587338689)))}
+bench block_shapes ('W1 line', 'overlap', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (55, -71)), (1, 4, (71, -55))), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 4, (2081, -3906)), (1, 4, (2321, -3906)))}
+bench block_shapes ('W1 zero', 'overlap', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401))), ('I', '1', '1'): ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401))), ('I', 'I', '1'): ((2, 4, (15099494400, -55564189696, 49280004081)),)}
+bench block_shapes ('W1 zero', 'overlap', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (55, -71)), (1, 4, (71, -55))), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (71, -126)),)}
+bench block_shapes ('flat line', 'onsite', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((2, 2, (4, -9, 4)), (2, 2, (16, -33, 16))), ('I', '1', '1'): ((2, 2, (4, -9, 4)), (2, 2, (16, -33, 16))), ('I', 'I', '1'): ((2, 2, (2, -9, 8)), (2, 2, (8, -33, 32)))}
+bench block_shapes ('flat line', 'onsite', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 2, (1, -1)), (1, 6, (15, -16))), ('I', '1', '1'): ((1, 2, (1, -1)), (1, 6, (15, -16))), ('I', 'I', '1'): ((1, 2, (1, -2)), (1, 6, (15, -32)))}
+bench block_shapes ('flat line', 'overlap', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((2, 2, (64, -273, 289)), (2, 2, (64, -241, 225)))}
+bench block_shapes ('flat line', 'overlap', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 4, (15, -32)), (1, 4, (17, -32)))}
+bench block_shapes ('flat zero', 'onsite', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (1, -2)),)}
+bench block_shapes ('flat zero', 'onsite', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (1, -2)),)}
+bench block_shapes ('flat zero', 'overlap', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (1, -2)),)}
+bench block_shapes ('flat zero', 'overlap', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (1, -2)),)}
+bench block_shapes ('witness line', 'onsite', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((4, 2, (55296, -388672, 698656, -422145, 69984)),), ('I', '1', '1'): ((4, 2, (55296, -388672, 698656, -422145, 69984)),), ('I', 'I', '1'): ((4, 2, (864, -8096, 19891, -15870, 3456)),)}
+bench block_shapes ('witness line', 'onsite', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 2, (8, -9)), (1, 2, (11, -16)), (1, 4, (11, -18))), ('I', '1', '1'): ((1, 2, (8, -9)), (1, 2, (11, -16)), (1, 4, (11, -18))), ('I', 'I', '1'): ((1, 2, (2, -3)), (1, 2, (33, -64)), (1, 4, (11, -24)))}
+bench block_shapes ('witness line', 'overlap', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (55296, -69169)), (1, 4, (55296, -51529))), ('I', '1', '1'): ((1, 4, (55296, -89401)), (1, 4, (55296, -36481))), ('I', 'I', '1'): ((4, 2, (584325558976905216, -4220720801944436736, 10977015903289344000, -12087433562964480000, 4738487082643890625)),)}
+bench block_shapes ('witness line', 'overlap', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (227, -263)), (1, 4, (263, -227))), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((2, 4, (17837, -58604, 48020)),)}
+bench block_shapes ('witness zero', 'overlap', 'form'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (55296, -69169)), (1, 4, (55296, -51529))), ('I', '1', '1'): ((1, 4, (55296, -89401)), (1, 4, (55296, -36481))), ('I', 'I', '1'): ((2, 4, (764411904, -2748819456, 2189772025)),)}
+bench block_shapes ('witness zero', 'overlap', 'pencil'): {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (227, -263)), (1, 4, (263, -227))), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (299, -490)),)}
+bench charpoly_count: 20
+bench flat_expected: ((0, 8), (1, 16), (2, 8))
+bench flat_zero_is_r5: True
+bench max_direct_ms: 1614
+bench multisets ('W1 line', 'onsite', 'form'): None
+bench multisets ('W1 line', 'onsite', 'pencil'): None
+bench multisets ('W1 line', 'overlap', 'form'): None
+bench multisets ('W1 line', 'overlap', 'pencil'): ((0, 8), (55/71, 4), (1, 8), (71/55, 4), (3906/2321, 4), (3906/2081, 4))
+bench multisets ('W1 zero', 'overlap', 'form'): None
+bench multisets ('W1 zero', 'overlap', 'pencil'): ((0, 8), (55/71, 4), (1, 8), (71/55, 4), (126/71, 8))
+bench multisets ('flat line', 'onsite', 'form'): None
+bench multisets ('flat line', 'onsite', 'pencil'): ((0, 8), (1, 4), (16/15, 12), (2, 2), (32/15, 6))
+bench multisets ('flat line', 'overlap', 'form'): None
+bench multisets ('flat line', 'overlap', 'pencil'): ((0, 8), (1, 16), (32/17, 4), (32/15, 4))
+bench multisets ('flat zero', 'onsite', 'form'): ((0, 8), (1, 16), (2, 8))
+bench multisets ('flat zero', 'onsite', 'pencil'): ((0, 8), (1, 16), (2, 8))
+bench multisets ('flat zero', 'overlap', 'form'): ((0, 8), (1, 16), (2, 8))
+bench multisets ('flat zero', 'overlap', 'pencil'): ((0, 8), (1, 16), (2, 8))
+bench multisets ('witness line', 'onsite', 'form'): None
+bench multisets ('witness line', 'onsite', 'pencil'): ((0, 8), (9/8, 4), (16/11, 4), (3/2, 2), (18/11, 8), (64/33, 2), (24/11, 4))
+bench multisets ('witness line', 'overlap', 'form'): None
+bench multisets ('witness line', 'overlap', 'pencil'): None
+bench multisets ('witness zero', 'overlap', 'form'): None
+bench multisets ('witness zero', 'overlap', 'pencil'): ((0, 8), (227/263, 4), (1, 8), (263/227, 4), (490/299, 8))
+bench shapes ('W1 line', 'onsite', 'form'): ((1, 8, (1, 0)), (4, 2, (16200, -131616, 331163, -295793, 73728)), (4, 2, (129600, -647676, 1074545, -693008, 147456)), (4, 2, (129600, -647676, 1086353, -711440, 147456)))
+bench shapes ('W1 line', 'onsite', 'pencil'): ((1, 2, (5, -8)), (1, 2, (385, -256)), (1, 4, (15, -16)), (1, 8, (1, 0)), (2, 2, (12471, -45584, 36864)), (3, 2, (4801335, -27171928, 46940160, -25165824)), (3, 2, (4801335, -18293776, 22913024, -9437184)))
+bench shapes ('W1 line', 'overlap', 'form'): ((1, 8, (1, 0)), (1, 8, (147456, -116281)), (1, 8, (3686400, -4844401)), (2, 2, (15099494400, -58664697856, 56460888225)), (2, 2, (15099494400, -52935540736, 42587338689)))
+bench shapes ('W1 line', 'overlap', 'pencil'): ((1, 4, (55, -71)), (1, 4, (71, -55)), (1, 4, (2081, -3906)), (1, 4, (2321, -3906)), (1, 8, (1, -1)), (1, 8, (1, 0)))
+bench shapes ('W1 zero', 'overlap', 'form'): ((1, 8, (1, 0)), (1, 8, (147456, -116281)), (1, 8, (3686400, -4844401)), (2, 4, (15099494400, -55564189696, 49280004081)))
+bench shapes ('W1 zero', 'overlap', 'pencil'): ((1, 4, (55, -71)), (1, 4, (71, -55)), (1, 8, (1, -1)), (1, 8, (1, 0)), (1, 8, (71, -126)))
+bench shapes ('flat line', 'onsite', 'form'): ((1, 8, (1, 0)), (2, 2, (2, -9, 8)), (2, 2, (8, -33, 32)), (2, 4, (4, -9, 4)), (2, 4, (16, -33, 16)))
+bench shapes ('flat line', 'onsite', 'pencil'): ((1, 2, (1, -2)), (1, 4, (1, -1)), (1, 6, (15, -32)), (1, 8, (1, 0)), (1, 12, (15, -16)))
+bench shapes ('flat line', 'overlap', 'form'): ((1, 8, (1, 0)), (1, 16, (1, -1)), (2, 2, (64, -273, 289)), (2, 2, (64, -241, 225)))
+bench shapes ('flat line', 'overlap', 'pencil'): ((1, 4, (15, -32)), (1, 4, (17, -32)), (1, 8, (1, 0)), (1, 16, (1, -1)))
+bench shapes ('flat zero', 'onsite', 'form'): ((1, 8, (1, -2)), (1, 8, (1, 0)), (1, 16, (1, -1)))
+bench shapes ('flat zero', 'onsite', 'pencil'): ((1, 8, (1, -2)), (1, 8, (1, 0)), (1, 16, (1, -1)))
+bench shapes ('flat zero', 'overlap', 'form'): ((1, 8, (1, -2)), (1, 8, (1, 0)), (1, 16, (1, -1)))
+bench shapes ('flat zero', 'overlap', 'pencil'): ((1, 8, (1, -2)), (1, 8, (1, 0)), (1, 16, (1, -1)))
+bench shapes ('witness line', 'onsite', 'form'): ((1, 8, (1, 0)), (4, 2, (864, -8096, 19891, -15870, 3456)), (4, 4, (55296, -388672, 698656, -422145, 69984)))
+bench shapes ('witness line', 'onsite', 'pencil'): ((1, 2, (2, -3)), (1, 2, (33, -64)), (1, 4, (8, -9)), (1, 4, (11, -24)), (1, 4, (11, -16)), (1, 8, (1, 0)), (1, 8, (11, -18)))
+bench shapes ('witness line', 'overlap', 'form'): ((1, 4, (55296, -89401)), (1, 4, (55296, -69169)), (1, 4, (55296, -51529)), (1, 4, (55296, -36481)), (1, 8, (1, 0)), (4, 2, (584325558976905216, -4220720801944436736, 10977015903289344000, -12087433562964480000, 4738487082643890625)))
+bench shapes ('witness line', 'overlap', 'pencil'): ((1, 4, (227, -263)), (1, 4, (263, -227)), (1, 8, (1, -1)), (1, 8, (1, 0)), (2, 4, (17837, -58604, 48020)))
+bench shapes ('witness zero', 'overlap', 'form'): ((1, 4, (55296, -89401)), (1, 4, (55296, -69169)), (1, 4, (55296, -51529)), (1, 4, (55296, -36481)), (1, 8, (1, 0)), (2, 4, (764411904, -2748819456, 2189772025)))
+bench shapes ('witness zero', 'overlap', 'pencil'): ((1, 4, (227, -263)), (1, 4, (263, -227)), (1, 8, (1, -1)), (1, 8, (1, 0)), (1, 8, (299, -490)))
+bench table ('W1 line', 'onsite', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (4, 2, (16200, -131616, 331163, -295793, 73728)), (4, 2, (129600, -647676, 1074545, -693008, 147456)), (4, 2, (129600, -647676, 1086353, -711440, 147456))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): None, ('I', '1', '1'): None, ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((4, 2, (129600, -647676, 1074545, -693008, 147456)),), ('I', '1', '1'): ((4, 2, (129600, -647676, 1086353, -711440, 147456)),), ('I', 'I', '1'): ((4, 2, (16200, -131616, 331163, -295793, 73728)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): (), ('I', '1', '1'): (), ('I', 'I', '1'): ()}, 'direct_ms': 1113, 'union_ms': 441}
+bench table ('W1 line', 'onsite', 'pencil'): {'agree': True, 'multiset': None, 'shape': ((1, 2, (5, -8)), (1, 2, (385, -256)), (1, 4, (15, -16)), (1, 8, (1, 0)), (2, 2, (12471, -45584, 36864)), (3, 2, (4801335, -27171928, 46940160, -25165824)), (3, 2, (4801335, -18293776, 22913024, -9437184))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): None, ('I', '1', '1'): None, ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 2, (15, -16)), (1, 2, (385, -256)), (2, 2, (12471, -45584, 36864))), ('I', '1', '1'): ((1, 2, (15, -16)), (3, 2, (4801335, -18293776, 22913024, -9437184))), ('I', 'I', '1'): ((1, 2, (5, -8)), (3, 2, (4801335, -27171928, 46940160, -25165824)))}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((256/385, 2), (16/15, 2)), ('I', '1', '1'): ((16/15, 2),), ('I', 'I', '1'): ((8/5, 2),)}, 'direct_ms': 793, 'union_ms': 439}
+bench table ('W1 line', 'overlap', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (1, 8, (147456, -116281)), (1, 8, (3686400, -4844401)), (2, 2, (15099494400, -58664697856, 56460888225)), (2, 2, (15099494400, -52935540736, 42587338689))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', '1', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401))), ('I', '1', '1'): ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401))), ('I', 'I', '1'): ((2, 2, (15099494400, -58664697856, 56460888225)), (2, 2, (15099494400, -52935540736, 42587338689)))}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', '1', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', 'I', '1'): ()}, 'direct_ms': 1060, 'union_ms': 205}
+bench table ('W1 line', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (55/71, 4), (1, 8), (71/55, 4), (3906/2321, 4), (3906/2081, 4)), 'shape': ((1, 4, (55, -71)), (1, 4, (71, -55)), (1, 4, (2081, -3906)), (1, 4, (2321, -3906)), (1, 8, (1, -1)), (1, 8, (1, 0))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((55/71, 4), (71/55, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((3906/2321, 4), (3906/2081, 4))}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (55, -71)), (1, 4, (71, -55))), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 4, (2081, -3906)), (1, 4, (2321, -3906)))}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((55/71, 4), (71/55, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((3906/2321, 4), (3906/2081, 4))}, 'direct_ms': 357, 'union_ms': 214}
+bench table ('W1 zero', 'overlap', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (1, 8, (147456, -116281)), (1, 8, (3686400, -4844401)), (2, 4, (15099494400, -55564189696, 49280004081))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', '1', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401))), ('I', '1', '1'): ((1, 4, (147456, -116281)), (1, 4, (3686400, -4844401))), ('I', 'I', '1'): ((2, 4, (15099494400, -55564189696, 49280004081)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', '1', '1'): ((116281/147456, 4), (4844401/3686400, 4)), ('I', 'I', '1'): ()}, 'direct_ms': 168, 'union_ms': 198}
+bench table ('W1 zero', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (55/71, 4), (1, 8), (71/55, 4), (126/71, 8)), 'shape': ((1, 4, (55, -71)), (1, 4, (71, -55)), (1, 8, (1, -1)), (1, 8, (1, 0)), (1, 8, (71, -126))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((55/71, 4), (71/55, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((126/71, 8),)}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (55, -71)), (1, 4, (71, -55))), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (71, -126)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((55/71, 4), (71/55, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((126/71, 8),)}, 'direct_ms': 123, 'union_ms': 201}
+bench table ('flat line', 'onsite', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (2, 2, (2, -9, 8)), (2, 2, (8, -33, 32)), (2, 4, (4, -9, 4)), (2, 4, (16, -33, 16))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): None, ('I', '1', '1'): None, ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((2, 2, (4, -9, 4)), (2, 2, (16, -33, 16))), ('I', '1', '1'): ((2, 2, (4, -9, 4)), (2, 2, (16, -33, 16))), ('I', 'I', '1'): ((2, 2, (2, -9, 8)), (2, 2, (8, -33, 32)))}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): (), ('I', '1', '1'): (), ('I', 'I', '1'): ()}, 'direct_ms': 80, 'union_ms': 308}
+bench table ('flat line', 'onsite', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 4), (16/15, 12), (2, 2), (32/15, 6)), 'shape': ((1, 2, (1, -2)), (1, 4, (1, -1)), (1, 6, (15, -32)), (1, 8, (1, 0)), (1, 12, (15, -16))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 2), (16/15, 6)), ('I', '1', '1'): ((1, 2), (16/15, 6)), ('I', 'I', '1'): ((2, 2), (32/15, 6))}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 2, (1, -1)), (1, 6, (15, -16))), ('I', '1', '1'): ((1, 2, (1, -1)), (1, 6, (15, -16))), ('I', 'I', '1'): ((1, 2, (1, -2)), (1, 6, (15, -32)))}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 2), (16/15, 6)), ('I', '1', '1'): ((1, 2), (16/15, 6)), ('I', 'I', '1'): ((2, 2), (32/15, 6))}, 'direct_ms': 29, 'union_ms': 270}
+bench table ('flat line', 'overlap', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (1, 16, (1, -1)), (2, 2, (64, -273, 289)), (2, 2, (64, -241, 225))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((2, 2, (64, -273, 289)), (2, 2, (64, -241, 225)))}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ()}, 'direct_ms': 114, 'union_ms': 229}
+bench table ('flat line', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 16), (32/17, 4), (32/15, 4)), 'shape': ((1, 4, (15, -32)), (1, 4, (17, -32)), (1, 8, (1, 0)), (1, 16, (1, -1))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((32/17, 4), (32/15, 4))}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 4, (15, -32)), (1, 4, (17, -32)))}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((32/17, 4), (32/15, 4))}, 'direct_ms': 73, 'union_ms': 203}
+bench table ('flat zero', 'onsite', 'form'): {'agree': True, 'multiset': ((0, 8), (1, 16), (2, 8)), 'shape': ((1, 8, (1, -2)), (1, 8, (1, 0)), (1, 16, (1, -1))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (1, -2)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}, 'direct_ms': 11, 'union_ms': 194}
+bench table ('flat zero', 'onsite', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 16), (2, 8)), 'shape': ((1, 8, (1, -2)), (1, 8, (1, 0)), (1, 16, (1, -1))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (1, -2)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}, 'direct_ms': 13, 'union_ms': 182}
+bench table ('flat zero', 'overlap', 'form'): {'agree': True, 'multiset': ((0, 8), (1, 16), (2, 8)), 'shape': ((1, 8, (1, -2)), (1, 8, (1, 0)), (1, 16, (1, -1))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (1, -2)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}, 'direct_ms': 9, 'union_ms': 181}
+bench table ('flat zero', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (1, 16), (2, 8)), 'shape': ((1, 8, (1, -2)), (1, 8, (1, 0)), (1, 16, (1, -1))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 8, (1, -1)),), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (1, -2)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((1, 8),), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((2, 8),)}, 'direct_ms': 12, 'union_ms': 183}
+bench table ('witness line', 'onsite', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 8, (1, 0)), (4, 2, (864, -8096, 19891, -15870, 3456)), (4, 4, (55296, -388672, 698656, -422145, 69984))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): None, ('I', '1', '1'): None, ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((4, 2, (55296, -388672, 698656, -422145, 69984)),), ('I', '1', '1'): ((4, 2, (55296, -388672, 698656, -422145, 69984)),), ('I', 'I', '1'): ((4, 2, (864, -8096, 19891, -15870, 3456)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): (), ('I', '1', '1'): (), ('I', 'I', '1'): ()}, 'direct_ms': 1464, 'union_ms': 777}
+bench table ('witness line', 'onsite', 'pencil'): {'agree': True, 'multiset': ((0, 8), (9/8, 4), (16/11, 4), (3/2, 2), (18/11, 8), (64/33, 2), (24/11, 4)), 'shape': ((1, 2, (2, -3)), (1, 2, (33, -64)), (1, 4, (8, -9)), (1, 4, (11, -24)), (1, 4, (11, -16)), (1, 8, (1, 0)), (1, 8, (11, -18))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((9/8, 2), (16/11, 2), (18/11, 4)), ('I', '1', '1'): ((9/8, 2), (16/11, 2), (18/11, 4)), ('I', 'I', '1'): ((3/2, 2), (64/33, 2), (24/11, 4))}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 2, (8, -9)), (1, 2, (11, -16)), (1, 4, (11, -18))), ('I', '1', '1'): ((1, 2, (8, -9)), (1, 2, (11, -16)), (1, 4, (11, -18))), ('I', 'I', '1'): ((1, 2, (2, -3)), (1, 2, (33, -64)), (1, 4, (11, -24)))}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((9/8, 2), (16/11, 2), (18/11, 4)), ('I', '1', '1'): ((9/8, 2), (16/11, 2), (18/11, 4)), ('I', 'I', '1'): ((3/2, 2), (64/33, 2), (24/11, 4))}, 'direct_ms': 195, 'union_ms': 756}
+bench table ('witness line', 'overlap', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 4, (55296, -89401)), (1, 4, (55296, -69169)), (1, 4, (55296, -51529)), (1, 4, (55296, -36481)), (1, 8, (1, 0)), (4, 2, (584325558976905216, -4220720801944436736, 10977015903289344000, -12087433562964480000, 4738487082643890625))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((51529/55296, 4), (69169/55296, 4)), ('I', '1', '1'): ((36481/55296, 4), (89401/55296, 4)), ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (55296, -69169)), (1, 4, (55296, -51529))), ('I', '1', '1'): ((1, 4, (55296, -89401)), (1, 4, (55296, -36481))), ('I', 'I', '1'): ((4, 2, (584325558976905216, -4220720801944436736, 10977015903289344000, -12087433562964480000, 4738487082643890625)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((51529/55296, 4), (69169/55296, 4)), ('I', '1', '1'): ((36481/55296, 4), (89401/55296, 4)), ('I', 'I', '1'): ()}, 'direct_ms': 1614, 'union_ms': 661}
+bench table ('witness line', 'overlap', 'pencil'): {'agree': True, 'multiset': None, 'shape': ((1, 4, (227, -263)), (1, 4, (263, -227)), (1, 8, (1, -1)), (1, 8, (1, 0)), (2, 4, (17837, -58604, 48020))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((227/263, 4), (263/227, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (227, -263)), (1, 4, (263, -227))), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((2, 4, (17837, -58604, 48020)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((227/263, 4), (263/227, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ()}, 'direct_ms': 873, 'union_ms': 725}
+bench table ('witness zero', 'overlap', 'form'): {'agree': True, 'multiset': None, 'shape': ((1, 4, (55296, -89401)), (1, 4, (55296, -69169)), (1, 4, (55296, -51529)), (1, 4, (55296, -36481)), (1, 8, (1, 0)), (2, 4, (764411904, -2748819456, 2189772025))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((51529/55296, 4), (69169/55296, 4)), ('I', '1', '1'): ((36481/55296, 4), (89401/55296, 4)), ('I', 'I', '1'): None}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (55296, -69169)), (1, 4, (55296, -51529))), ('I', '1', '1'): ((1, 4, (55296, -89401)), (1, 4, (55296, -36481))), ('I', 'I', '1'): ((2, 4, (764411904, -2748819456, 2189772025)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((51529/55296, 4), (69169/55296, 4)), ('I', '1', '1'): ((36481/55296, 4), (89401/55296, 4)), ('I', 'I', '1'): ()}, 'direct_ms': 586, 'union_ms': 658}
+bench table ('witness zero', 'overlap', 'pencil'): {'agree': True, 'multiset': ((0, 8), (227/263, 4), (1, 8), (263/227, 4), (490/299, 8)), 'shape': ((1, 4, (227, -263)), (1, 4, (263, -227)), (1, 8, (1, -1)), (1, 8, (1, 0)), (1, 8, (299, -490))), 'degree': 32, 'block_multisets': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((227/263, 4), (263/227, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((490/299, 8),)}, 'block_shapes': {('1', '1', '1'): ((1, 8, (1, 0)),), ('1', 'I', '1'): ((1, 4, (227, -263)), (1, 4, (263, -227))), ('I', '1', '1'): ((1, 8, (1, -1)),), ('I', 'I', '1'): ((1, 8, (299, -490)),)}, 'block_rational_roots': {('1', '1', '1'): ((0, 8),), ('1', 'I', '1'): ((227/263, 4), (263/227, 4)), ('I', '1', '1'): ((1, 8),), ('I', 'I', '1'): ((490/299, 8),)}, 'direct_ms': 547, 'union_ms': 669}
+bench timings_ms ('W1 line', 'onsite', 'form'): (1113, 441)
+bench timings_ms ('W1 line', 'onsite', 'pencil'): (793, 439)
+bench timings_ms ('W1 line', 'overlap', 'form'): (1060, 205)
+bench timings_ms ('W1 line', 'overlap', 'pencil'): (357, 214)
+bench timings_ms ('W1 zero', 'overlap', 'form'): (168, 198)
+bench timings_ms ('W1 zero', 'overlap', 'pencil'): (123, 201)
+bench timings_ms ('flat line', 'onsite', 'form'): (80, 308)
+bench timings_ms ('flat line', 'onsite', 'pencil'): (29, 270)
+bench timings_ms ('flat line', 'overlap', 'form'): (114, 229)
+bench timings_ms ('flat line', 'overlap', 'pencil'): (73, 203)
+bench timings_ms ('flat zero', 'onsite', 'form'): (11, 194)
+bench timings_ms ('flat zero', 'onsite', 'pencil'): (13, 182)
+bench timings_ms ('flat zero', 'overlap', 'form'): (9, 181)
+bench timings_ms ('flat zero', 'overlap', 'pencil'): (12, 183)
+bench timings_ms ('witness line', 'onsite', 'form'): (1464, 777)
+bench timings_ms ('witness line', 'onsite', 'pencil'): (195, 756)
+bench timings_ms ('witness line', 'overlap', 'form'): (1614, 661)
+bench timings_ms ('witness line', 'overlap', 'pencil'): (873, 725)
+bench timings_ms ('witness zero', 'overlap', 'form'): (586, 658)
+bench timings_ms ('witness zero', 'overlap', 'pencil'): (547, 669)
+bench zero_point_is_eight_zeros: True
+identities d_mixed_squared_zero: True
+identities d_mu_anticommute: True
+identities d_mu_squared_zero: True
+identities flat_overlap_table form: {('1', '1', '1'): True, ('1', 'I', '1'): True, ('I', '1', '1'): False, ('I', 'I', '1'): True}
+identities flat_overlap_table pencil: {('1', '1', '1'): True, ('1', 'I', '1'): False, ('I', '1', '1'): False, ('I', 'I', '1'): True}
+identities form_fails_at_every_nonzero_point: True
+identities identity_table ('W1 line', 'onsite', 'form'): {('1', '1', '1'): True, ('1', 'I', '1'): False, ('I', '1', '1'): False, ('I', 'I', '1'): False}
+identities identity_table ('W1 line', 'onsite', 'pencil'): {('1', '1', '1'): True, ('1', 'I', '1'): True, ('I', '1', '1'): True, ('I', 'I', '1'): True}
+identities identity_table ('W1 line', 'overlap', 'form'): {('1', '1', '1'): True, ('1', 'I', '1'): False, ('I', '1', '1'): False, ('I', 'I', '1'): False}
+identities identity_table ('W1 line', 'overlap', 'pencil'): {('1', '1', '1'): True, ('1', 'I', '1'): False, ('I', '1', '1'): False, ('I', 'I', '1'): False}
+identities identity_table ('flat line', 'onsite', 'form'): {('1', '1', '1'): True, ('1', 'I', '1'): False, ('I', '1', '1'): False, ('I', 'I', '1'): False}
+identities identity_table ('flat line', 'onsite', 'pencil'): {('1', '1', '1'): True, ('1', 'I', '1'): True, ('I', '1', '1'): True, ('I', 'I', '1'): True}
+identities identity_table ('flat line', 'overlap', 'form'): {('1', '1', '1'): True, ('1', 'I', '1'): True, ('I', '1', '1'): False, ('I', 'I', '1'): True}
+identities identity_table ('flat line', 'overlap', 'pencil'): {('1', '1', '1'): True, ('1', 'I', '1'): False, ('I', '1', '1'): False, ('I', 'I', '1'): True}
+identities identity_table ('witness line', 'onsite', 'form'): {('1', '1', '1'): True, ('1', 'I', '1'): False, ('I', '1', '1'): False, ('I', 'I', '1'): False}
+identities identity_table ('witness line', 'onsite', 'pencil'): {('1', '1', '1'): True, ('1', 'I', '1'): True, ('I', '1', '1'): True, ('I', 'I', '1'): True}
+identities identity_table ('witness line', 'overlap', 'form'): {('1', '1', '1'): True, ('1', 'I', '1'): False, ('I', '1', '1'): False, ('I', 'I', '1'): False}
+identities identity_table ('witness line', 'overlap', 'pencil'): {('1', '1', '1'): True, ('1', 'I', '1'): False, ('I', '1', '1'): False, ('I', 'I', '1'): False}
+identities mixed_point_identity W1 line: True
+identities mixed_point_identity flat line: True
+identities mixed_point_identity witness line: True
+identities nonzero_points: (('1', 'I', '1'), ('I', '1', '1'), ('I', 'I', '1'))
+identities onsite_pencil_identity_everywhere: True
+identities onsite_similarity W1 line: True
+identities onsite_similarity flat line: True
+identities onsite_similarity witness line: True
+identities onsite_similarity_everywhere: True
+identities overlap_fails_at_every_nonzero_point: True
+identities raising_block_additive_symbolic: True
+identities raising_block_is_i_d ('1', '1', '1'): True
+identities raising_block_is_i_d ('1', 'I', '1'): True
+identities raising_block_is_i_d ('I', '1', '1'): True
+identities raising_block_is_i_d ('I', 'I', '1'): True
+shape constants: ((1, 2), (128/99, 2), (16/11, 4))
+shape cross_term_bench: -3/8
+shape cross_term_equals_g1: True
+shape det_m_ratio_is_quadric_ratio_fourth: True
+shape det_m_shape: ((2, 4),)
+shape det_m_values: (81/64, 81/64, 4)
+shape g1_full: ((9/8, -3/8, -3/8), (-3/8, 9/8, -3/8), (-3/8, -3/8, 9/8))
+shape g1_plane: (9/8, -3/8, 9/8)
+shape multisets ('1', 'I', '1'): ((9/8, 2), (16/11, 2), (18/11, 4))
+shape multisets ('I', '1', '1'): ((9/8, 2), (16/11, 2), (18/11, 4))
+shape multisets ('I', 'I', '1'): ((3/2, 2), (64/33, 2), (24/11, 4))
+shape points: (('I', '1', '1'), ('1', 'I', '1'), ('I', 'I', '1'))
+shape predicted_equal_measured: True
+shape predicted_multisets ('1', 'I', '1'): ((9/8, 2), (16/11, 2), (18/11, 4))
+shape predicted_multisets ('I', '1', '1'): ((9/8, 2), (16/11, 2), (18/11, 4))
+shape predicted_multisets ('I', 'I', '1'): ((3/2, 2), (64/33, 2), (24/11, 4))
+shape pure_points_coincide: True
+shape quadric_values ('1', 'I', '1'): 9/8
+shape quadric_values ('I', '1', '1'): 9/8
+shape quadric_values ('I', 'I', '1'): 3/2
+shape ratios ('1', 'I', '1'): ((1, 2), (128/99, 2), (16/11, 4))
+shape ratios ('I', '1', '1'): ((1, 2), (128/99, 2), (16/11, 4))
+shape ratios ('I', 'I', '1'): ((1, 2), (128/99, 2), (16/11, 4))
+shape shape_visible: True
+shape smallest_eigenvalues ('1', 'I', '1'): 9/8
+shape smallest_eigenvalues ('I', '1', '1'): 9/8
+shape smallest_eigenvalues ('I', 'I', '1'): 3/2
+control onsite_witness_pure_points_coincide: True
+control overlap_fold ('1', '1', '1'): {'parameters_present': ('D07', 'D16', 'D25', 'D34'), 'parity_block': ('D07/4 + D16/4 + D25/4 + D34/4',)}
+control overlap_fold ('1', 'I', '1'): {'parameters_present': (), 'parity_block': ()}
+control overlap_fold ('I', '1', '1'): {'parameters_present': (), 'parity_block': ()}
+control overlap_fold ('I', 'I', '1'): {'parameters_present': ('D07', 'D16', 'D25', 'D34'), 'parity_block': ('-D07/4 - D16/4 + D25/4 + D34/4',)}
+control overlap_fold_mixed_parameters: ('D07', 'D16', 'D25', 'D34')
+control overlap_fold_mixed_parity_block: ('-D07/4 - D16/4 + D25/4 + D34/4',)
+control overlap_fold_parameter_free_at_pure_points: True
+control overlap_fold_zero_parity_block: ('D07/4 + D16/4 + D25/4 + D34/4',)
+control overlap_line_differs_at_mixed_point: True
+control overlap_line_equals_zero_at_pure_points: True
+control overlap_line_vs_zero ('W1', 'form'): {('1', '1', '1'): True, ('1', 'I', '1'): True, ('I', '1', '1'): True, ('I', 'I', '1'): False}
+control overlap_line_vs_zero ('W1', 'pencil'): {('1', '1', '1'): True, ('1', 'I', '1'): True, ('I', '1', '1'): True, ('I', 'I', '1'): False}
+control overlap_line_vs_zero ('witness', 'form'): {('1', '1', '1'): True, ('1', 'I', '1'): True, ('I', '1', '1'): True, ('I', 'I', '1'): False}
+control overlap_line_vs_zero ('witness', 'pencil'): {('1', '1', '1'): True, ('1', 'I', '1'): True, ('I', '1', '1'): True, ('I', 'I', '1'): False}
+control overlap_w1_form_pure_points_coincide: True
+control overlap_w1_pencil_pure_multisets ('1', 'I', '1'): ((55/71, 4), (71/55, 4))
+control overlap_w1_pencil_pure_multisets ('I', '1', '1'): ((1, 8),)
+control overlap_w1_pencil_pure_points_differ: True
+control overlap_witness_mixed_shapes ('form', 'line'): ((4, 2, (584325558976905216, -4220720801944436736, 10977015903289344000, -12087433562964480000, 4738487082643890625)),)
+control overlap_witness_mixed_shapes ('form', 'zero'): ((2, 4, (764411904, -2748819456, 2189772025)),)
+control overlap_witness_mixed_shapes ('pencil', 'line'): ((2, 4, (17837, -58604, 48020)),)
+control overlap_witness_mixed_shapes ('pencil', 'zero'): ((1, 8, (299, -490)),)
+control overlap_witness_mixed_zero_pencil: ((490/299, 8),)
+control overlap_witness_pure_multisets ('form', ('1', 'I', '1')): ((51529/55296, 4), (69169/55296, 4))
+control overlap_witness_pure_multisets ('form', ('I', '1', '1')): ((36481/55296, 4), (89401/55296, 4))
+control overlap_witness_pure_multisets ('pencil', ('1', 'I', '1')): ((227/263, 4), (263/227, 4))
+control overlap_witness_pure_multisets ('pencil', ('I', '1', '1')): ((1, 8),)
+control overlap_witness_pure_points_differ: True
+control w1_cross_term_from_rational_branch: -4/15
+control w1_det_m_shape: ((2, 2), (2, 2))
+control w1_det_m_values: (256/225, 1024/225)
+control w1_g1_plane: (16/15, -4/15, 16/15)
+control w1_irreducible_degrees ('1', 'I', '1'): (2,)
+control w1_irreducible_degrees ('I', '1', '1'): (3,)
+control w1_irreducible_degrees ('I', 'I', '1'): (3,)
+control w1_multisets_none: True
+control w1_pure_points_differ: True
+control w1_quadric_values ('1', 'I', '1'): 16/15
+control w1_quadric_values ('I', '1', '1'): 16/15
+control w1_quadric_values ('I', 'I', '1'): 8/5
+control w1_rational_branch_is_quadric: True
+control w1_rational_branch_reads_g1_tx: True
+control w1_rational_roots ('1', 'I', '1'): ((256/385, 2), (16/15, 2))
+control w1_rational_roots ('I', '1', '1'): ((16/15, 2),)
+control w1_rational_roots ('I', 'I', '1'): ((8/5, 2),)
+control w1_shapes ('1', 'I', '1'): ((1, 2, (15, -16)), (1, 2, (385, -256)), (2, 2, (12471, -45584, 36864)))
+control w1_shapes ('I', '1', '1'): ((1, 2, (15, -16)), (3, 2, (4801335, -18293776, 22913024, -9437184)))
+control w1_shapes ('I', 'I', '1'): ((1, 2, (5, -8)), (3, 2, (4801335, -27171928, 46940160, -25165824)))
+timings_ms: {'authority': 793, 'census': 1348, 'construction': 442, 'bench': 17668, 'identities': 2184, 'shape': 5724, 'control': 5804}  elapsed_ms: 33968
+[PASS] A-1: FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree
+[PASS] A-2: PARENT PIN IS THE BLOCK 217 TIP, an ancestor of HEAD, with its note and runner content-bound by blob
+[PASS] A-3: STALE PARENT (the Block 216 tip) is a real ancestor carrying NEITHER Block 217 artifact; machinery imported; inputs readable
+[PASS] B-1: NOTHING REGISTERED, NOTHING ADOPTED: seven imposed objects, zero registered, zero adopted
+[PASS] B-2: NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied
+[PASS] B-3: THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)
+[PASS] B-4: NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED, AND NO METRIC IS SUPPLIED: that one assembly and one reading see the shape is measured, not a selector
+[PASS] B-5: THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY, BENCH AND SHAPE ARE SCOPED; six readings enumerated, none licensed; no dispersion law, no Lorentzian or light-cone reading, no continuum, no spacetime cone
+[PASS] C-1: THE BENCH IS BLOCK 213's bench_matrix AT EXTENT (4,4,2): 32 sites, the y direction carrying no link (0 y-link entries, 64 raising entries), Bloch momenta (1,1,1), (1,i,1), (i,1,1), (i,i,1) -- the MIXED fine point exists; Block 217's (4,2,2) momenta are (1,1,1), (i,1,1)
+[PASS] C-2: THE WITNESS AND THE CONTROL ARE BLOCKS 216/217's: Block 216's mask-2 rule-A cell carries Block 213's L+- signs (+,+,+,+,-,+), the parameters sit at (0, 1/4, -1/4, 1/4), Block 217's (4,2,2) onsite pencil multiset reproduces with Bloch = direct (the smaller-extent consistency gate), G1_tt = 9/8, W1's moduli are Block 211's
+[PASS] C-3: THE FLAT CONTROL AT ZERO PARAMETERS GIVES R5's MULTISET {0 x8, 1 x16, 2 x8} = Block 213's expected_flat_multiset((4,4,2)) under both assemblies and both readings
+[PASS] D-1: BLOCH UNION = DIRECT BENCH at every one of the 20 degree-32 charpolys over QQ(sqrt 6) and QQ(sqrt 6, i); the zero Bloch point contributes eight zeros everywhere
+[PASS] D-2: THE WITNESS BLOCKS: onsite pencil {9/8 x2, 16/11 x2, 18/11 x4} at both pure points and {3/2 x2, 64/33 x2, 24/11 x4} at the mixed point; onsite form Block 217's irreducible quartic squared at the pure points and another at the mixed point; the overlap form and pencil at the pure points as declared; the overlap mixed-point shapes as declared
+[PASS] D-3: THE CONTROL BLOCKS at the all-plus W1: onsite pencil (15 lam - 16)^2 times Block 217's irreducible cubic squared at (i,1,1), (15 lam - 16)^2 (385 lam - 256)^2 times an irreducible quadratic squared at (1,i,1), (5 lam - 8)^2 times an irreducible cubic squared at (i,i,1); overlap form Block 214's OVERLAP_FORM_W1 at both pure points; overlap pencil R5's at (i,1,1) and {55/71 x4, 71/55 x4} at (1,i,1)
+[PASS] E-1: THE RAISING BLOCH BLOCK IS i D(kappa_z) AT EVERY POINT, MEASURED FIRST: d_B(z) = sum_mu (z_mu - 1/z_mu)/2 D(e_mu) at symbolic z (the fine momenta enter additively; at the mixed point i D(e_t + e_x)); D(e_mu)^2 = 0, the D(e_mu) anticommute, D(e_t + e_x)^2 = 0
+[PASS] E-2: THE ONSITE HODGE BLOCH BLOCK IS Z^-1 H0 Z with Z = diag(z^c) at every point, at the witness, the control and the flat cell
+[PASS] E-3: THE IDENTITY WITH THE PRINCIPAL PART: the onsite pencil block charpoly equals the charpoly of (H0^-1 M(kappa_z))^2 at EVERY point -- the MIXED point with kappa = e_t + e_x included -- at the witness, the control and the flat cell; it fails for the form reading and for the overlap assembly at every nonzero point of the witness and the control
+[PASS] F-1: THE CONE'S SHAPE IS VISIBLE at the witness: at each of the three nonzero points every nonzero eigenvalue is a Block 216 branch constant {1, 128/99, 16/11 x2} times k^T G1 k at kappa_z, the quadric values 9/8, 9/8, 3/2; G1's (t, x)-plane restriction is (9/8, -3/8, 9/8)
+[PASS] F-2: THE CROSS TERM IS ISOLATED FROM THE THREE POINTS: (Q_mixed - Q_t - Q_x)/2 = -3/8 = G1_tx read from the bench alone; the pure points coincide; det M on the line is one quadric to the fourth power with 81/64, 81/64, 4 at e_t, e_x, e_t + e_x, the ratio (Q_mixed/Q_t)^4
+[PASS] G-1: THE CONTROL FAILS EXACTLY THUS: at the all-plus W1 the Bloch = principal identity holds at the mixed point too, but at every nonzero point only the rational branch k^T G1 k (16/15, 16/15, 8/5; G1_tx = -4/15 read from it) is a constant times the quadric -- the other three eigenvalues are the roots of an irreducible cubic at the pure t and mixed points and of a linear times an irreducible quadratic at the pure x point, the pure points differ, and det M on the line is two distinct quadrics each squared (256/225, 1024/225)
+[PASS] G-2: THE OVERLAP FOLD'S PARAMETER DEPENDENCE, POINT BY POINT, at symbolic signs, moduli and parameters: parameter-free at both pure points; at the mixed point all four parameters through the signed sum (-D07 - D16 + D25 + D34)/4 on the parity block (Block 217's (D07 + D16 + D25 + D34)/4 at the zero point); the overlap bench at the line point equals the zero-parameter one at the pure points and differs at the mixed point, form and pencil, witness and control
+[PASS] G-3: THE SECOND DIRECTION SEES THE x-AXIS DISTINCTION: at the witness the onsite blocks at (i,1,1) and (1,i,1) coincide while the overlap blocks differ (form {36481/55296, 89401/55296} against {51529/55296, 69169/55296}; pencil R5's against {227/263, 263/227}); at W1 the overlap form coincides and the overlap pencil differs
+[PASS] H-1: SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213, 214, 215, 216 and 217
+[PASS] H-2: THE INSTANCE SCOPE IS ENUMERATED: six restrictions
+[PASS] I-1: THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY
+[PASS] I-2: NO nsimplify, NO float literal, NO float call in this runner's source
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
+N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY, BENCH AND SHAPE ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its 64 face-sign cells and its four free parameters, Block 213's curve witnesses, bench_matrix and Bloch reduction, Block 214's principal part under both assemblies, Block 216's 8 covariant witnesses and their branch constants, Block 217's algebraic-field bench and its e_t identity, and Block 105's assemblies are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H ON THE FOLDED H0 AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; 'ONE METRIC'S CONE' NAMES BLOCK 213'S EXACT STATEMENT det B = c (k^T G1 k)^2 AND 'THE CONE'S SHAPE' NAMES THE PROPORTIONALITY OF EVERY PENCIL BRANCH TO ONE QUADRIC, RESTRICTED HERE TO THE (t, x) PLANE, AND NOTHING PHYSICAL; 'BENCH' NAMES THIRTY-TWO EXACT EIGENVALUES OF ONE FINITE MATRIX AT FOUR BLOCH POINTS; NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED.\nper_site: THE BENCH is Block 213's bench_matrix at extent (4,4,2) -- the two-direction bench of the three-direction chain, 32 sites, the y direction at extent 2 carrying no link (0 y-link entries, 64 nonzero raising entries), its Bloch momenta (1,1,1), (1,i,1), (i,1,1) and the MIXED fine point (i,i,1) -- at L+-'s own cell (Block 216's mask 2, Block 213's face signs (+,+,+,+,-,+), the curve moduli (sqrt6/3, 1/3, 3 sqrt6/8, 1/2)) with the parameters at the star-line point (0, 1/4, -1/4, 1/4), at the all-plus W1 control (15/16, 1/4, 1, 1/4) with the same parameters, and at the flat cell; Block 217's (4,2,2) onsite pencil multiset {0 x8, 9/8 x2, 16/11 x2, 18/11 x4} reproduces at the witness as the consistency gate, G1_tt = 9/8; the flat cell at zero parameters gives R5's {0 x8, 1 x16, 2 x8} under both assemblies and both readings.\nper_mode: THE BLOCH-POINT DECOMPOSITION, MEASURED BEFORE ANY IDENTITY: the raising Bloch block at every point is i D(kappa_z) with kappa_z = e_t [z_t = i] + e_x [z_x = i], because d_B(z) = sum_mu (z_mu - 1/z_mu)/2 D(e_mu) at symbolic z -- the two fine momenta enter ADDITIVELY, and at the mixed point the block is i D(e_t + e_x) exactly; D(e_mu)^2 = 0, the D(e_mu) anticommute, D(e_t + e_x)^2 = 0; the onsite Hodge Bloch block is Z^-1 H0 Z with Z = diag(z^c) at every point; hence the onsite pencil block charpoly at EVERY point equals the charpoly of (H0^-1 M(kappa_z))^2 -- at the pure points with (H0^-1 M(e_t))^2 and (H0^-1 M(e_x))^2, at the MIXED point with (H0^-1 M(e_t + e_x))^2, at the witness, the control and the flat cell, an exact finite identity resting on d^2 = 0 and not a limit; the identity FAILS for the form reading and for the overlap assembly at every nonzero point of the witness and the control.\nper_block: THE CONE'S SHAPE IS VISIBLE TO THIS BENCH at the covariant witness: under the onsite pencil the nonzero eigenvalues are {9/8 x2, 16/11 x2, 18/11 x4} at (i,1,1) and at (1,i,1) and {3/2 x2, 64/33 x2, 24/11 x4} at (i,i,1) -- at each of the three points EVERY nonzero eigenvalue is a Block 216 branch constant {1, 128/99, 16/11 x2} times k^T G1 k at kappa_z, the quadric values 9/8, 9/8 and 3/2; the cross term G1_tx = (3/2 - 9/8 - 9/8)/2 = -3/8 is isolated from the three points and equals the entry of G1 = D1/D0, so the three points read the (t, x)-plane restriction (9/8, -3/8, 9/8) of one quadric, the ky direction unsampled; det M on the line is one quadric to the fourth power, 81/64 at e_t and 4 at e_t + e_x, the ratio (Q_mixed/Q_t)^4; the twenty degree-32 charpolys (twelve at the line point, eight at zero parameters) all have Bloch union = direct.\nlattice_wide: THE CONTROL AND THE OTHER ASSEMBLY: at the all-plus W1 with the same parameters the Bloch = principal identity still holds under the onsite pencil at every point (it is structural), but the shape statement fails exactly thus -- at every nonzero point one rational branch k^T G1 k (16/15, 16/15, 8/5, reading W1's G1_tx = -4/15) and the other three eigenvalues the roots of an irreducible cubic at (i,1,1) and (i,i,1) and of 256/385 times an irreducible quadratic at (1,i,1), the two pure points differing; det M on the line is two distinct quadrics each squared. Under the OVERLAP assembly the Bloch fold at symbolic face signs, moduli and parameters is parameter-free at both pure points and at the MIXED point sees the parameters through the signed sum (-D07 - D16 + D25 + D34)/4 on the parity block -- not Block 217's s -- so the overlap bench charpolys at the line point EQUAL the zero-parameter ones at the pure points and DIFFER at the mixed point (form and pencil, witness and control); the overlap bench distinguishes the t and x directions at the witness (form {36481/55296 x4, 89401/55296 x4} at (i,1,1) against {51529/55296 x4, 69169/55296 x4} at (1,i,1); pencil R5's {1 x8} against {227/263 x4, 263/227 x4}) where the onsite bench does not -- Block 217's x-axis D4 seen by a bench.\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under the group THEN at the covariant witness the two-direction bench reads the cone's shape restricted to the (t, x) plane exactly under the onsite pencil and reads it under no other assembly or reading; the antecedent is a reading. OPEN: the ky direction and any extent sampling it, the other seven rule-A cells, symbolic parameters on the bench, the transverse branches' meaning; no dispersion law, no Lorentzian or light-cone reading, no continuum, no dynamics and no gravity is supplied.\nRESULT: ON THE TWO-DIRECTION (4,4,2) BENCH AT THE COVARIANT WITNESS THE MIXED-POINT IDENTITY HOLDS EXACTLY -- THE BLOCH RAISING BLOCK IS i D(e_t + e_x) AND THE ONSITE PENCIL BLOCK IS (H0^-1 M(e_t + e_x))^2 UP TO SIMILARITY -- AND EVERY NONZERO EIGENVALUE AT THE THREE NONZERO POINTS IS A BRANCH CONSTANT TIMES ONE QUADRIC, THE CROSS TERM -3/8 ISOLATED: THE CONE'S SHAPE ON THE (t, x) PLANE IS VISIBLE TO A BENCH; AT THE ALL-PLUS CONTROL IT IS NOT, AND THE OVERLAP ASSEMBLY SEES THE PARAMETERS ONLY AT THE MIXED POINT AND ONLY THROUGH A SIGNED SUM. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-217 STAND; Block 217's REOPEN items 3 and 4 are ANSWERED at one covariant witness as a conditional: the cone's shape becomes visible to a two-direction bench on the plane it samples, and the second direction sees the overlap assembly's x-axis distinction. Fable primary seat; refuting checker PENDING.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero.
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

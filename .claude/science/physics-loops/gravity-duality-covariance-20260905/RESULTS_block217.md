@@ -181,3 +181,7 @@ receipt, the baseline was recertified alone after the census: `exit 0`, `status 
 bench 4.1 s, smallk 1.1 s), `TOTAL: PASS=29 FAIL=0`, `GATES A..I = PASS`, the same 29 check lines as above; the cache
 is re-pinned to input fingerprint `5636802122f2aea3...`. The certified baseline is under the 600 s budget by a factor
 of six with the bench included.
+
+## Fix pass (supervisor fold, 2026-09-05, after the refuting checker's PASS-NO-BLOCKER)
+
+The Opus refuting checker (`CHECKER_block217_findings.md`) reproduced every priority claim on its own machinery (the fold lemma, the stabilisers at three values of `s`, the parity-block separation behind the `s`-classifier, the shear relation, the union locus and the cone, the bench with Bloch = direct and the `e_t` identity, the Bloch fold, the controls) and corrected one wording: the quadric pair is not related by `ky → −ky` (`CK-04b`, the supervisor's F-A217-1 and the primary's own draft defect 2) — the one-sentence summary now says "differing in the sign of the `kt ky` term alone". Applied with the Review record, `CHECK_VERDICT` and the fence's DECISION_CUT sentence; the fence synced byte-identically. No check, literal or mutation changed, so the 29-mutation census above (certified sha `60bb268a...`) stands; the baseline was recertified after the fold (`TOTAL: PASS=29 FAIL=0`, 90 s) and the cache re-pinned to runner sha `6b9b996a...` because the note is the first fingerprinted input of the receipt.

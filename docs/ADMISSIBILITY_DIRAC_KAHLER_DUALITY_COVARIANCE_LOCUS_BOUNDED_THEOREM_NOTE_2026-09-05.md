@@ -300,15 +300,12 @@ nonzero denominators). `D07` appears in **no** generator anywhere (`E-5`).
 > shear killed** (`E-2`, gated literally). `C3_body` already forces the line;
 > `S3`, `T`, `O` add nothing — the minimal twisted class forcing a line is `C3`.
 
-The reason is exact and simple: at a representative cell the degree blocks have
-uniform off-diagonals, so the sign vector restoring them must be uniform on
-each grade; every lift sign is absorbed into the gauge and the cross block sees
-only the **permutation** of directions with one global sign `ζ = ±1` per
-rotation. For the 3-cycle, `P_x = ζP_t, P_y = ζP_x, P_t = ζP_y` forces `ζ = 1`
-and `P_t = P_x = P_y` — the diagonal (in the mixed classes, the one-face flip of
-the representative changes which uniform gauge restores the flipped block, and
-the line becomes `D16 = D25 = −D34`). The star's signs are invisible to twisted
-covariance at a representative cell.
+The reason is exact: at the all-plus cell the degree blocks have uniform
+off-diagonals, so the restoring sign vector is uniform on each grade; every lift
+sign is absorbed into the gauge and the cross block sees only the **permutation**
+of directions with one global sign `ζ` per rotation — for the 3-cycle
+`P_x = ζP_t, P_y = ζP_x, P_t = ζP_y` forces `ζ = 1` and `P_t = P_x = P_y`, the
+diagonal. The star's signs are invisible to twisted covariance there.
 
 ### The strict census at the four representatives (`E-3`)
 
@@ -441,13 +438,11 @@ and twisted covariance selects a different line.
 3. **NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.** Gate `B-4`,
    mutations `claim_subgroup_selected`, `claim_assembly_decided`.
 4. **THE INSTANCE SCOPE, ENUMERATED.** One family at symbolic moduli on its
-   ties; the four class representatives (all 64 cells for `O` only); one
-   covariance notion in two strengths with Block 211's 64 sign vectors as the
-   only twist; the 24 proper rotations and no improper element, translation or
-   continuum rotation; the loci linear at symbolic moduli with no cone, dispersion
-   or bench computed here; the union locus on the twisted lines at cells other
-   than Block 214's witnesses NOT computed. Gate `H-2`, mutation
-   `break_instance_scope`.
+   ties; the four representatives (all 64 cells for `O` only); one covariance
+   notion in two strengths with Block 211's 64 sign vectors as the only twist;
+   the 24 proper rotations only; no cone, dispersion or bench computed; the
+   union locus on the twisted lines off Block 214's witnesses NOT computed. Gate
+   `H-2`, mutation `break_instance_scope`.
 5. **THE LOCI AT A FIXED CELL ARE NOT CONJUGATION-INVARIANT** except for the
    normal subgroups; the tables quote representatives and the distinct-locus
    counts over every member are gated (`E-4`).
@@ -479,13 +474,11 @@ and twisted covariance selects a different line.
 
 ### What IS established, stated positively so the fence is not mistaken for a retreat
 
-**The star lemma is symbolic in everything** — the plane has a name, and the
-name explains Block 214's `F-1`/`F-4` mechanism. **The census is exact and
-complete at the representatives** — every subgroup, both strengths, every class,
-the shears' fate first. **The conditional is closed**: whoever imposes twisted
-`O`-covariance on the curved family gets a sign line that is not the plane at
-any representative; whoever imposes strict `O`-covariance gets the plane and the
-flat cell together.
+**The star lemma is symbolic in everything** — the plane has a name that
+explains Block 214's mechanism. **The census is exact and complete at the
+representatives.** **The conditional is closed**: twisted `O`-covariance on the
+curved family gives a sign line that is not the plane at any representative;
+strict `O`-covariance gives the plane and the flat cell together.
 
 ---
 
@@ -516,20 +509,13 @@ flat cell together.
 ## Imports
 
 - **Block 214** (`scripts/admissibility_dirac_kahler_duality_parameters_principal_part_2026_09_05.py`,
-  imported read-only, content-bound by blob at `1dc2ae2557`): `raising_matrix`,
-  `cell_with_parameters`, `principal_part`, `hodge_complement_permutation`,
-  `formal_cell`, `PLANE`.
-- **Block 213** through Block 214: `eta`/`lane_rules`/`raising_rules`/
-  `first_order_matrix` (through `raising_matrix`), `formal_family`, `even_odd`,
-  `residual_count`, `KT, KX, KY`.
-- **Block 211** through Block 214: `REPRESENTATIVES`, `flipped`,
-  `GAUGE_FACE_ORDER`, `face_system`/`solve_pinned`/`branch_moduli` (through
-  `cell_with_parameters`); **Block 209**: `CORNERS`, `DEGREE_INDICES`,
-  `CORNER_DEGREE`.
-- **Block 201** (`scripts/admissibility_dirac_kahler_covariant_rule_identification_2026_08_26.py`):
-  `signed_permutations()` only.
-- **Axioms and registry**: read in full; the covariance clause quoted verbatim
-  and gated against the file; no axiom or primitive used as content.
+  read-only, content-bound by blob at `1dc2ae2557`): `raising_matrix`, `cell_with_parameters`,
+  `principal_part`, `hodge_complement_permutation`, `formal_cell`, `PLANE`; through it
+  **Block 213** (`eta`/`lane_rules`/`raising_rules`/`first_order_matrix`, `formal_family`, `even_odd`,
+  `residual_count`, `KT, KX, KY`), **Block 211** (`REPRESENTATIVES`, `flipped`, `GAUGE_FACE_ORDER`,
+  `face_system`/`solve_pinned`/`branch_moduli`) and **Block 209** (`CORNERS`, `DEGREE_INDICES`, `CORNER_DEGREE`).
+- **Block 201** (`scripts/admissibility_dirac_kahler_covariant_rule_identification_2026_08_26.py`): `signed_permutations()` only.
+- **Axioms and registry**: read in full; the covariance clause quoted verbatim and gated against the file; no axiom or primitive used as content.
 
 ---
 
@@ -637,11 +623,9 @@ N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, LOCU
 
 **THE LEDGER CONTINUES FROM BLOCK 214. NO CORRECTION IS LANDED BY THIS BLOCK
 AGAINST ANY LANDED NUMBER.** Block 214's plane, `F-1`, `F-3`, `F-4` and its
-witness `W1 + D16 = 1/4` reproduce here (the plane as the star line, the parity
-block, the sum, the minors); they are **named and explained**, not corrected.
-Every Block 104–214 number stands as landed. This block's own draft defects
-were corrected before any run was certified and are disclosed in
-`RESULTS_block215.md`.
+witness `W1 + D16 = 1/4` reproduce here and are **named and explained**, not
+corrected; every Block 104–214 number stands. This block's own draft defects
+were corrected before certification and are disclosed in `RESULTS_block215.md`.
 
 ```text
 python3 scripts/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.py

@@ -40,3 +40,51 @@ reading, gated and not licensed.
 | probe 3 (scratch, 11:38Z) | `probe3.py` (literal generator) | the compact tables generated; forced conditions carried signs and numeric factors (defect 3) | 0 |
 | probe 3b/3c (scratch, 11:41Z) | `probe3.py` regenerated | forced conditions normalised (`g0`, `g1`, `g0*v0*v1 + g1`); `gauge_congruence_in_field = True` | 0 |
 | measurement run 1 (11:45Z) | baseline | see below | see below |
+| measurement run 1 (a391e88512^, 11:45Z) | baseline | `NameError: TWISTED_LOCI` — the declared census tables had been appended AFTER the `__main__` block (defect 4); `TOTAL: PASS=0 FAIL=1` | 1 |
+| measurement run 2 (a391e88512, 11:48Z) | baseline | `TOTAL: PASS=29 FAIL=0`, 132 s (`GATES A..I = PASS`); every declared literal matched on the first complete run | 0 |
+| certified baseline | `runner_cache.execute_and_write_cache(..., 600)` | see "Certified baseline" below | see below |
+| mutations | `--mutation <name>` x 25, one helper script per mutation, 4-way parallel | see the table below | see below |
+
+## Defects found in this seat's own drafts (before certification) and fixed
+
+1. The in-field gauge-congruence check compared the all-plus family to Block 211's class REPRESENTATIVES
+   (which are one-face flips, i.e. OTHER classes) — always False. Corrected to same-class two-face flips
+   (reachable) and one-face flips (not reachable), at zero parameters because the gauge also flips
+   `D16, D25, D34`.
+2. The same check at symbolic parameters still failed for the reason just stated (the parameter entries
+   flip under `E`); the zero-parameter comparison is the right statement of "the degree blocks are congruent".
+3. Forced moduli conditions were recorded as signed, scaled expressions (`-2*g0*v1`, `2*g0*v1` as two
+   conditions); normalised to the non-numeric, non-volume factors of the numerator (`g0`, `g1`,
+   `g0*v0*v1 + g1`), which is what the condition means on Block 211's domain.
+4. The declared census tables were appended after the `__main__` block, so `main()` ran before they
+   existed (`NameError` at run 1); the block was moved to the end of the file.
+5. The first probe reported the loci per CLASS REPRESENTATIVE only; the loci at a fixed cell are not
+   conjugation-invariant (a conjugate subgroup sees a sign-image cell), so the census was extended to every
+   member of every class (distinct-locus counts gated at `E-4`) and to the 64 sign cells under `O` (`G-3`).
+
+## What could NOT be established (honest list)
+
+- Whether Block 214's union locus (`det M = det B^2` iff the plane) at a sign cell other than its all-plus
+  witnesses coincides with that cell's twisted-`O` line — no cone is computed here; the 16 cells where the
+  twisted line is the star line are counted, not connected to the cone.
+- The twisted census with a twist beyond Block 211's 64 sign vectors (`e0 e7 = -1`, or non-diagonal
+  intertwiners): argued in `N1` (it can only add `D07 = 0`), not run.
+- Improper cubic elements (`O_h`), translations, and any projective/staggered lift other than the
+  wedge-multiplicative one: not run (the lift's uniqueness among MONOMIAL intertwiners is measured; other lifts
+  are not searched).
+- The strict overlap relation `g0 v0 v1 + g1 = 0` is reported as measured; whether it meets Block 211's ties
+  at a positive-definite point is not examined.
+- The note is 650-670 lines against the spec's 600 (Block 214's format needs its sections); the runner is
+  1308 lines against 1300 after the compact tables — recorded, not hidden.
+
+## Modelling choices not forced by the landed chain
+
+- The lift: the multiplicative extension of the `3 x 3` action through the lane's wedge (then measured to be
+  the only monomial intertwiner up to sign, with the empty corner fixed at `+1`).
+- The twist: Block 211's 64 sign vectors (`e0 = e7 = +1`); the loci are reported at Block 211's four class
+  representatives and, for `O`, at all 64 cells.
+- The canonical form of a locus: the row-reduced linear ideal plus the forced moduli conditions, unions made
+  irredundant by containment; the moduli symbolic on the ties with the volumes nonzero.
+- The overlap census uses the fold with `(D07, D16, D25, D34) = (s, 0, 0, 0)`, licensed by the measured
+  sum-only dependence.
+- Two generators for the 64-cell scan (the signed lifts fixing `H` form a group; measured to generate `O`).

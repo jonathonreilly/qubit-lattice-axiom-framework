@@ -488,3 +488,183 @@ def measure_bench(cells: dict) -> dict:
     facts["timings_ms"] = {key: (e["direct_ms"], e["union_ms"]) for key, e in table.items()}
     facts["max_direct_ms"] = max(e["direct_ms"] for e in table.values() if e["direct_planned"])
     return facts
+
+
+# ---------------------------------------------------------------------------
+# C. CONSTRUCTION FIDELITY: the bench is Block 213's at extent (4,4,4) with its
+# eight momenta, the witness and the control are Blocks 216-218's, Block 218's
+# (4,4,2) and Block 217's (4,2,2) identities reproduce, the second line
+# multiple is positive definite by leading minors BEFORE it is used
+# ---------------------------------------------------------------------------
+def measure_construction(census: dict, cells: dict) -> dict:
+    facts: dict = {}
+    momenta = b213.bench_momenta(BENCH_EXTENT)
+    facts["momenta"] = tuple(momentum_literal(z) for z in momenta)
+    facts["kappas"] = tuple(kappa_of(z) for z in momenta)
+    facts["triply_mixed_point_present"] = ("I", "I", "I") in facts["momenta"]
+    facts["site_count"] = len(b213.bench_sites(BENCH_EXTENT))
+    lifted = b213.bench_matrix(raising_rules(), BENCH_EXTENT)
+    sites = b213.bench_sites(BENCH_EXTENT)
+    facts["y_link_entries"] = sum(
+        1 for a in sites for b in sites
+        if a[:2] == b[:2] and a != b and lifted[b213.site_index(a, BENCH_EXTENT), b213.site_index(b, BENCH_EXTENT)] != 0)
+    facts["raising_bench_nnz"] = residual_count(lifted)
+    facts["parent_momenta"] = tuple(momentum_literal(z) for z in b213.bench_momenta(PARENT_EXTENT))
+    facts["grandparent_momenta"] = tuple(momentum_literal(z) for z in b213.bench_momenta(GRANDPARENT_EXTENT))
+    witness_values = tuple(v for v in census["cells"] if census["cells"][v]["mask"] == 2)
+    facts["witness_values"] = witness_values
+    facts["witness_is_rule_a"] = all(census["cells"][v]["rule_a"] for v in witness_values)
+    facts["l_plus_minus_signs"] = tuple(b213.locus_witness_table()["L+-"][1][f] for f in b213.FACES)
+    facts["face_orders_agree"] = tuple(FACE_ORDER) == tuple(b213.FACES)
+    pairs = ((0, 7), (1, 6), (2, 5), (3, 4))
+    facts["line_point_entries"] = tuple(cells["witness line"][i, j] for i, j in pairs)
+    facts["half_point_entries"] = tuple(cells["witness half"][i, j] for i, j in pairs)
+    facts["d07_point_entries"] = tuple(cells["witness d07"][i, j] for i, j in pairs)
+    facts["witness_moduli"] = b217.curve_moduli(1)
+    facts["w1_moduli_is_block211"] = tuple(W1_MODULI) == tuple(b211.W1_MODULI)
+    # the two smaller extents as consistency gates: Block 218's (4,4,2), Block 217's (4,2,2)
+    started = time.monotonic_ns()
+    direct, union, blocks, _, _ = b218.bench_charpolys(cells["witness line"], "onsite", "pencil")
+    facts["parent_bench_agrees"] = sp.expand(direct - union) == 0
+    facts["parent_block_multisets"] = {z: b213.multiset_of(cp) for z, cp in blocks.items()}
+    facts["parent_bench_ms"] = (time.monotonic_ns() - started) // 1_000_000
+    started = time.monotonic_ns()
+    direct, union, _, _ = b217.bench_charpolys(cells["witness line"], "onsite", "pencil")
+    facts["grandparent_bench_multiset"] = b213.multiset_of(direct)
+    facts["grandparent_bench_agrees"] = sp.expand(direct - union) == 0
+    facts["grandparent_bench_ms"] = (time.monotonic_ns() - started) // 1_000_000
+    g1 = b213.metric_candidates(cells["witness zero"])[0].applyfunc(sp.radsimp)
+    facts["g1_tt_witness"] = g1[0, 0]
+    # positivity of the second line multiple and of the D07 point, by leading minors, before use
+    for label in ("witness half", "witness d07", "witness line"):
+        minors = tuple(sp.radsimp(m) for m in b211.leading_minors(cells[label]))
+        facts[f"leading_minors {label}"] = minors
+        facts[f"positive_definite {label}"] = all(m.is_positive for m in minors)
+    facts["half_multiple_below_volume_product"] = bool(HALF ** 2 < b216.VOLUME_PRODUCTS["L+-"])
+    facts["volume_product"] = b216.VOLUME_PRODUCTS["L+-"]
+    return facts
+
+
+# ---------------------------------------------------------------------------
+# E. THE BLOCH-POINT LEMMA IN THREE DIRECTIONS: the raising block is
+# i D(kappa_z) at all eight points (measured first, at symbolic z with z_y
+# live), the onsite Hodge block is Z^-1 H0 Z, d^2 = 0 for every kappa_z, and
+# hence the onsite pencil block charpoly is the principal part's at every
+# point -- the triply-mixed point included
+# ---------------------------------------------------------------------------
+IDENTITY_CELLS = ("witness line", "W1 line", "flat line", "witness half", "witness d07")
+
+
+def measure_identities(cells: dict, bench: dict) -> dict:
+    facts: dict = {}
+    raising = raising_rules()
+    momenta = b213.bench_momenta(BENCH_EXTENT)
+    facts["raising_block_is_i_d"] = {
+        momentum_literal(z): is_zero_matrix(b213.bloch_matrix(raising, z, 3) - sp.I * raising_operator(kappa_of(z)))
+        for z in momenta}
+    symbolic = b213.bloch_matrix(raising, Z_SYMBOLS, 3)
+    predicted = sum((((zz - 1 / zz) / 2) * raising_operator(UNIT_KAPPAS[mu]) for mu, zz in enumerate(Z_SYMBOLS)),
+                    sp.zeros(8, 8))
+    facts["raising_block_additive_symbolic"] = residual_count((symbolic - predicted).applyfunc(sp.simplify)) == 0
+    facts["z_y_live_in_symbolic_block"] = Z_SYMBOLS[2] in symbolic.free_symbols
+    units = tuple(raising_operator(k) for k in UNIT_KAPPAS)
+    facts["d_mu_squared_zero"] = all(is_zero_matrix(d * d) for d in units)
+    facts["d_mu_anticommute"] = all(is_zero_matrix(units[a] * units[b] + units[b] * units[a])
+                                    for a in range(3) for b in range(a + 1, 3))
+    facts["d_kappa_squared_zero"] = {
+        momentum_literal(z): is_zero_matrix(raising_operator(kappa_of(z)) * raising_operator(kappa_of(z))) for z in momenta}
+    facts["onsite_similarity"] = {}
+    for label in IDENTITY_CELLS:
+        rules = b213.onsite_rules(cells[label], b209.CORNERS, 3)
+        h0 = b213.folded_matrix(rules, 3)
+        facts["onsite_similarity"][label] = all(
+            is_zero_matrix(b213.bloch_matrix(rules, z, 3) - phase_matrix(z).inv() * h0 * phase_matrix(z)) for z in momenta)
+    facts["onsite_similarity_everywhere"] = all(facts["onsite_similarity"].values())
+    table: dict = {}
+    for (label, assembly, reading), entry in bench["table"].items():
+        if not label.endswith("line") and label not in ("witness half", "witness d07"):
+            continue
+        square = principal_square(cells[label], assembly, reading)
+        table[(label, assembly, reading)] = {
+            momentum_literal(z): sp.expand(entry["blocks"][momentum_literal(z)] - principal_charpoly(square, kappa_of(z))) == 0
+            for z in momenta}
+    facts["identity_table"] = table
+    nonzero = tuple(momentum_literal(z) for z in momenta if kappa_of(z) != (0, 0, 0))
+    facts["nonzero_points"] = nonzero
+    facts["onsite_pencil_identity_everywhere"] = all(all(table[(label, "onsite", "pencil")].values()) for label in IDENTITY_CELLS)
+    facts["triply_mixed_identity"] = {label: table[(label, "onsite", "pencil")][("I", "I", "I")] for label in IDENTITY_CELLS}
+    facts["form_fails_at_every_nonzero_point"] = not any(table[("witness line", "onsite", "form")][z] for z in nonzero)
+    facts["overlap_fails_at_every_nonzero_point"] = not any(
+        table[("witness line", "overlap", reading)][z] for reading in ("form", "pencil") for z in nonzero)
+    return facts
+
+
+# ---------------------------------------------------------------------------
+# F. THE SHAPE IN THREE DIRECTIONS and G1 READ OFF THE BENCH: at every one of
+# the seven nonzero points every nonzero eigenvalue is a branch constant times
+# Q(kappa_z); the six entries of G1 from the pure and doubly-mixed points; the
+# triply-mixed point as the over-determined consistency check
+# ---------------------------------------------------------------------------
+PURE_T, PURE_X, PURE_Y = ("I", "1", "1"), ("1", "I", "1"), ("1", "1", "I")
+MIXED_TX, MIXED_TY, MIXED_XY = ("I", "I", "1"), ("I", "1", "I"), ("1", "I", "I")
+TRIPLY = ("I", "I", "I")
+PURE_POINTS = (PURE_T, PURE_X, PURE_Y)
+DOUBLY_MIXED_POINTS = (MIXED_TX, MIXED_TY, MIXED_XY)
+NONZERO_POINTS = PURE_POINTS + DOUBLY_MIXED_POINTS + (TRIPLY,)
+PAIR_OF = {MIXED_TX: (PURE_T, PURE_X), MIXED_TY: (PURE_T, PURE_Y), MIXED_XY: (PURE_X, PURE_Y)}
+ENTRY_INDEX = {"tt": (0, 0), "xx": (1, 1), "yy": (2, 2), "tx": (0, 1), "ty": (0, 2), "xy": (1, 2)}
+
+
+def smallest_nonzero(multisets: dict, points: tuple) -> dict:
+    """The constant-1 branch at each point, read from the bench alone."""
+    return {z: min(root for root, _ in multisets[z] if root != 0) for z in points}
+
+
+def g1_from_bench(multisets: dict) -> dict:
+    """The six entries of G1 from seven Bloch points: the diagonal from the pure
+    points, the off-diagonal from (Q(e_mu + e_nu) - Q(e_mu) - Q(e_nu))/2."""
+    small = smallest_nonzero(multisets, NONZERO_POINTS)
+    return {"tt": small[PURE_T], "xx": small[PURE_X], "yy": small[PURE_Y],
+            "tx": sp.radsimp((small[MIXED_TX] - small[PURE_T] - small[PURE_X]) / 2),
+            "ty": sp.radsimp((small[MIXED_TY] - small[PURE_T] - small[PURE_Y]) / 2),
+            "xy": sp.radsimp((small[MIXED_XY] - small[PURE_X] - small[PURE_Y]) / 2)}
+
+
+def ratio_multisets(multisets: dict, quadrics: dict, points: tuple) -> dict:
+    return {z: None if multisets[z] is None else tuple(sorted(
+        ((sp.radsimp(root / quadrics[z]), mult) for root, mult in multisets[z] if root != 0), key=lambda t: t[0]))
+        for z in points}
+
+
+def measure_shape(cells: dict, bench: dict) -> dict:
+    facts: dict = {}
+    g1 = b213.metric_candidates(cells["witness zero"])[0].applyfunc(sp.radsimp)
+    facts["g1_full"] = tuple(tuple(g1[i, j] for j in range(3)) for i in range(3))
+    facts["g1_parameter_free"] = all(
+        b213.metric_candidates(cells[label])[0].applyfunc(sp.radsimp) == g1 for label in ("witness line", "witness half", "witness d07"))
+    facts["constants"] = branch_constants()
+    facts["quadric_values"] = quadric_values(g1, NONZERO_POINTS)
+    multisets = bench["block_multisets"][("witness line", "onsite", "pencil")]
+    facts["multisets"] = {z: multisets[z] for z in NONZERO_POINTS}
+    facts["ratios"] = ratio_multisets(multisets, facts["quadric_values"], NONZERO_POINTS)
+    facts["shape_visible"] = all(facts["ratios"][z] == facts["constants"] for z in NONZERO_POINTS)
+    facts["predicted_multisets"] = {z: tuple(sorted(((sp.radsimp(c * facts["quadric_values"][z]), m)
+                                                     for c, m in facts["constants"]), key=lambda t: t[0])) for z in NONZERO_POINTS}
+    facts["predicted_equal_measured"] = all(facts["predicted_multisets"][z] == multisets[z] for z in NONZERO_POINTS)
+    facts["g1_bench"] = g1_from_bench(multisets)
+    facts["g1_bench_equals_g1"] = all(facts["g1_bench"][k] == g1[i, j] for k, (i, j) in ENTRY_INDEX.items())
+    gb = facts["g1_bench"]
+    facts["triply_predicted"] = sp.radsimp(gb["tt"] + gb["xx"] + gb["yy"] + 2 * (gb["tx"] + gb["ty"] + gb["xy"]))
+    facts["triply_measured"] = smallest_nonzero(multisets, (TRIPLY,))[TRIPLY]
+    facts["triply_consistent"] = facts["triply_predicted"] == facts["triply_measured"]
+    facts["pure_points_coincide"] = len({multisets[z] for z in PURE_POINTS}) == 1
+    facts["doubly_mixed_points_coincide"] = len({multisets[z] for z in DOUBLY_MIXED_POINTS}) == 1
+    facts["triply_equals_pure"] = multisets[TRIPLY] == multisets[PURE_T]
+    h0, m, _ = b214.principal_part(cells["witness line"], "onsite")
+    det = sp.radsimp(m.det(method="berkowitz"))
+    constant, factors = sp.factor_list(det, *KAPPA, extension=sp.sqrt(6))
+    facts["det_m_shape"] = tuple(sorted((sp.Poly(f, *KAPPA).total_degree(), p) for f, p in factors))
+    facts["det_m_values"] = {z: det.subs(dict(zip(KAPPA, kappa_of(tuple(sp.sympify(e) for e in z))))) for z in NONZERO_POINTS}
+    facts["det_m_is_quadric_fourth"] = all(
+        sp.radsimp(facts["det_m_values"][z] - R(64, 81) * facts["quadric_values"][z] ** 4) == 0 for z in NONZERO_POINTS)
+    return facts

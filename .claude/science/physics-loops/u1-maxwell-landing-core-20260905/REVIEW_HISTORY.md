@@ -128,3 +128,81 @@ Checker deliverable: CHECKER_block02_findings.md (disjoint machinery: own d0 sig
 - CK-07 (minor) VERIFIED: the capacity check was a tautology on literals. Fix: dim_R M_2(C) computed as the rank of the real coordinate basis; component counts read off the constructed generators.
 - CK-08 (minor) VERIFIED and adopted: the side-6 gauge-plus-chain nullspace is now solved in full generality (324 unknowns) in the runner; section 4 states sides 4 and 6 in full generality.
 Fix-pass runner: TOTAL: PASS=100 FAIL=0 (95 + 5 executed checks; the section-M check rewritten, not added); cache re-pinned on the final runner. The note's Review record now discloses the independence class as cross-model (Fable primary / Opus 5 refuting checker / supervisor hand verification) and records the checker's mutations. Disposition: pass after the fix pass.
+
+# Review history — block 03 (the Gauss rows as support forcing on the extended payload class)
+
+## block 03 — V1-V5 (primary)
+V1 (obstruction closed). No verdict-identified obstruction is closed: the members are unlanded open PRs with no audit row, so there
+is no `verdict_rationale` to quote; the obstruction attacked is block 02's residual wall W_P (the payload, item 7 of the declared
+class), quoted verbatim from block 02's note: "The exact residual supply of the terminal relative to the four axioms is therefore:
+payload and its transformation law, deterministic real linear continuous time, nearest-neighbor locality (unless the
+identification premise IP-B is granted), and positive diagonal energy conservation." This block tests whether the class's own
+supplied Gauss rows (item 5) buy the vertex/cube half of item 7 — they do, DERIVED-CONDITIONAL-ON(SF-all, EC, CONS): frozen and
+decoupled payloads, in every charge sector — and whether they buy the coin/hidden-time half — they do not (six-parameter
+conservative coin family cut to four, never to zero; two exact witnesses each). Trace class upstream_support, consumer = the
+light lane's terminal via block 02's residual; the payload wall is split, not closed.
+V2 (new content + the search). New: (i) the exact ten-dimensional covariant nearest-neighbor class on the four-role payload with
+the cube payload (56 patterns; sides 4 and 6) and its three-speed conservative cut; (ii) the Gauss rates as exact linear
+functionals coefficient by coefficient (the coupling blocks d0^T C^T and d2 C vanish identically); (iii) the collapse theorem
+with its exact iff (a2 = 0 and u_E rho_V = 0; b = 0 and u_B rho_C = 0) and the frozen-payload corollary under conservation;
+(iv) the exact maximal invariant subspace of a non-preserving member (connectedness lever: phi, psi constant) and the sector
+branch count (52 = 2 x 26 transverse; longitudinal 26 = 6 + 12 + 8 absent); (v) the emptiness of every invariant subset of a
+charged surface under a vertex-coupled conservative member; (vi) the odd-shift self-duality (d0, C, d2) -> (-d2^T, C^T, -d0^T);
+(vii) the sixteen-dimensional coin class, its six-parameter cut and the rows' cut to four; (viii) the kernel-dimension
+certificate (0 against 116) that the complex law is not decoupled by any real change of basis, and the finding that it preserves
+the rows at zero charge only; (ix) the second-order hidden-time identity. Search: origin/main
+e249016f759f224d9b429932cd0d1db4d452dc1a; the commands, the twenty-six statement patterns, the title sweep, all hits and their
+classification are in ROUTE_PORTFOLIO.md under "Block 03 prior-art sweep"; every matched hit is context or a method precedent
+on a different object; target state OPEN.
+V3 (framework sentences needed). Yes: Admissibility's support reading note ("'available'/'admissible' denotes its support")
+is what makes a Gauss row a constraint on the admissible set rather than a dynamics, and the memo's "Admissibility is not a
+dynamics axiom" is why "preserves" has to be defined as invariance of that set under a separately supplied flow; Lattice's
+nearest-neighbor adjacency and standard translations give the connectedness lever (ker of the Laplacians = constants) and the
+odd-shift duality (a standard translation that changes the sector); Lattice's rotations define the class; the Qualification's
+"Further physical structure requires a retained derivation or bridge" is why the rows' content and charges stay supplied;
+Record's "locks exactly one admissible local possibility" with Qubit's M_2(C) decide the coin steelman (one record is one point
+of an eight-real-dimensional domain, not one real number). Linear algebra alone would produce the class and the multiplicities
+but not the two readings of support forcing, the adjudication, or the coin disposition.
+V4 (non-trivial). Yes: an exact class with the cube payload; a constraint-dynamics computation (rate functionals, invariant
+subspaces, affine consistency) that no member performs; the charged-surface emptiness and the coin cut are structural facts about
+the terminal's payload item that no member states; witnesses are explicit laws checked exactly.
+V5 (not a one-step variant). No. Closest landed: TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE (Record-side operator invariance
+under Gauss generators — different object); SIGNED_GRAVITY_CONTINUUM_GRADED_EINSTEIN_LOCALIZATION (a constraint surface preserved
+under formal jet transport — same notion, different object and mechanism); AXIOM_FIRST_REEH_SCHLIEDER (a maximal invariant
+subspace of a commutant — same tool, different object). Closest campaign cycle: block 02 (the vertex witness with its Hodge
+multiplicities and two speeds; no constraint analysis, no cube payload, no coin class, the complex law's row preservation asserted
+in the contract but not executed). Closest member: #7917 (item 5 and item 7 declared side by side; never composed); #7893
+(the row as a support condition among records on a different carrier; no field dynamics). Structural distinction: this block
+composes the class with its own constraint, splits item 7 into a conditional half and a supplied half, and finds that a
+background charge makes a vertex coupling inconsistent with the row rather than merely invisible.
+Gate: PASS on V2-V5; V1 answered honestly as upstream support (the PR is a bounded_theorem, not a promotion).
+
+## 2026-09-05 — supervisor line-by-line review of block 03 (Fable supervisor)
+Read in full: GOAL_block03.md, the note (806 lines), the runner (1,301 lines, sections A-M), RESULTS_block03.md, the receipt (sha 119500b2..., 89/0). Hand-verified: the rate identity d/dt(d0^T E) = d0^T(a2 d0 phi + u_E E + r C^T B) = a2 (d0^T d0) phi + u_E (d0^T E) + r (C d0)^T B, the last term zero by the chain identity; the unobservable-subspace chain P G x = a2 L phi, P G^2 x = a a2 L (d0^T E), P G^3 x = a a2^2 L^2 phi (u = 0), whose common kernel inside the zero-charge surface is {phi constant, d0^T E = 0} because ker L = constants on a connected torus; the sector dimensions from the counts: side 6, ker d0^T has dimension 81 - 26 = 55, so the electric-only invariant subspace is 55 + 1 + 81 + 27 = 164 and the two-row sector 55 + 1 + 55 + 1 = 112 (side 4: 17 + 1 + 24 + 8 = 50 and 36); the charged-surface impossibility (a zero-sum nonzero charge is not constant, so L rho_V != 0 and the charge moves); the coin cut from the blockwise skew equations (diagonal onsite entries vanish, one skew mixing per role, K free: 6) and the rows' action on it ((Theta_E (x) d0^T) E, cutting theta_E only: 6 -> 4); the hidden-time identity from z = z1 + i z2, z' = G z + i theta z: z2 = (G z1 - z1')/theta and z1'' = 2 G z1' - (G^2 + theta^2) z1; the -G^2 blocks of the three-speed member (E-block 4 d0 d0^T + C^T C with longitudinal eigenvalues 4 x {3, 6, 9} at counts 6/12/8, sum 81) and the sector multiplicities {0:3, 3:12, 6:24, 9:16} summing to 55. Quote fidelity re-verified against the live PR bodies: #7893's "record-diagonal relation at each corner" and "G_v = (div E)_v - rho_v is pure Z ..." sentences, #7917's "Split-step and enlarged-state exact ticks remain live." and its head-branch item-7 line — all verbatim. Supervisor findings: (F-B3-1, upstream) the primary's quote-fidelity flag is confirmed — block 01's ledger row 4 presented a précis as #7893's words; corrected on the block-01 branch and pushed to #7976 (post-open correction 2 in the meta note's Review record); the block-03 contract carried the same phrase and now carries a correction header. (F-B3-2, minor) the runner's section-I check that "the sector spectrum does not depend on the vertex and cube speeds" tests 4 d0 d0^T C^T = 0, i.e. vanishing on im C^T only, while the statement is about ker d0^T (on which d0 d0^T vanishes by definition); the statement is immediate, the executed test is narrower than its label — to be tightened in the fold if the checker concurs. No defect in the collapse theorem, the coin residual or the witnesses.
+
+## 2026-09-05 — block 03 refuting checker (Opus 5) verdict and the fix pass
+CHECKER_block03_findings.md (commit 6d64a13872): FIX FIRST, no verdict refuted; disjoint machinery (lexicographic layout, flipped signs, Levi-Civita curl, signed orbit counting, rate functionals solved, two-prime ranks); 74 independent checks; the collapse theorem and the coin residual reproduced; 15 axiom quotations and 5 PR quotations verbatim; 7/7 N4 ledger statuses; receipt pin re-verified. Every finding verified by the supervisor before applying:
+- CK-01 (medium) VERIFIED against #7917's item 5 as quoted in block 02 ("the edge-to-face map is invariant under A -> A+d_0 lambda and preserves the magnetic Gauss row"): only the magnetic row is a class item. Fix: section 1, the consequence bullet, next_trace_action and the Imports row attribute the electric row to the lane's supply (#7893/#7903; used by #7917's section-6 mode count, not declared among its seven items); the verdict rows were already stated on the electric row explicitly.
+- CK-02 (medium) VERIFIED by the runner's own construction (even translations via translation4's assertion; rotations about the origin vertex). Fix: claim_scope, the EC premise, the section-3 theorem and the first falsifier state the group as the even (sector-preserving) translations and the 24 proper rotations about a vertex-role site; the checker's five-dimensional self-dual class under the odd shift is recorded.
+- CK-03 (medium) VERIFIED by grep (no capacity computation in the 89 checks). Fix: dim_R M_2(C) = 8 executed in runner section J; R7 marked ATTEMPTED (executed here); section 11 and N7 reworded.
+- CK-04 (low-medium) VERIFIED (the doubled law is a stipulation). Fix: OL-coin named in the EC premise with the checker's twelve-dimensional alternative recorded; section 7 says stipulation, not finding; a falsifier bullet added.
+- CK-05 (low) VERIFIED algebraically (K = U Sigma V^T decouples K (x) C into Sigma (x) C copies). Fix: executed as an exact SVD over QQ(sqrt 5) for the witness (runner section J); section 7 and the result table say the SF-all residue is decoupled copies and a coupled coin survives only the zero-charge reading.
+- CK-06 (low) VERIFIED (invariance of the zero-charge surface alone cuts a2 but not u_E). Fix: SF-zero named in section 1; section 7 reworded.
+- CK-07 (low) VERIFIED. Fix: the branch sentence and the runner label reworded ("a further branch").
+- F-B3-2 (supervisor, minor): the sector-independence test now runs on a basis of ker d0^T and ker d2.
+Fix-pass runner: TOTAL: PASS=91 FAIL=0 (89 + 2 executed checks, one tightened); cache re-pinned (sha aeabf99a...). The note's Review record carries the checker's verdict, its mutations and the independence class (cross-model). Disposition: pass after the fix pass.
+
+## 2026-09-05 — block 03 conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12), recorded before the PR
+1 self-containment — PASS: one markdown link (the landed axiom memo); the runner declares one input (the memo); PR numbers are evidence addresses; block 02 is quoted at scope as an evidence address, and the one fact previously leaned on from it (the capacity bound) is now executed here.
+2 cache/execution — PASS: receipt pinned to runner sha aeabf99a... (timeout 900 declared and pinned; status ok, exit 0, 53 s); read inventory stated; re-pinned after the last runner edit.
+3 claim-scope honesty — PASS after CK-01/CK-02: the symmetry group is stated exactly (even translations, rotations about a vertex); the electric row is attributed to the lane's supply, not to item 5; the three readings of support forcing are named; status fields from their enums (bounded-support / bounded_theorem); no coined tier word.
+4 N-gate — TRIGGERED and PASSED at scope: N1-N8 in section 12; route R7 executed here (CK-03); the negatives scoped to the supplied rows under the named readings; the N5 certificate lines in the cached stdout.
+5 proof obligations — PASS: the collapse theorem carries its hypotheses (the rate identity, d0^T d0 != 0, connectedness, conservation); the coin residual is a supply with two executed witnesses and the decoupling statement (CK-05) executed; no circular reduction (block 02's verdicts and #7917's class are never premises; EC and CONS are restated).
+6 runner validity — PASS: fourteen primary mutations at the pre-fold sha, the checker's three plus one fidelity probe, all caught; supervisor independent-math checks (rate identity, unobservable-subspace chain and dimensions, coin cut, hidden-time identity, sector multiplicities from the momentum census).
+7 packet completeness — PASS: single primary runner; no helper runner; no registry edit.
+8 links/graph — PASS: manifest regenerated on the final tree and staged: +1 node (this note), +1 edge (to the axiom memo), 4762 -> 4763 nodes, 11861 -> 11862 edges, stable on a second regeneration; repo_invariants_check --check --enforce-links PASS with the manifest staged.
+9 note structure — PASS: frontmatter, machine-status block with every mandated field, Imports, N1-N8, falsifiers, Review record with the independence class and the checker's mutations.
+10 propose/ratify — PASS: no audit field written; the manifest is the only generated artifact staged; generated audit outputs not touched (no pipeline run in this block: the note seeds through the manifest and the nightly).
+11 sourced facts/counts — PASS: every count measured by the runner at HEAD; the PR quotations re-verified against the live bodies by the primary, the checker and the supervisor; the pack's own précis (ledger row 4, contract) corrected upstream and annotated.
+12 pre-review gates — vocab_lint --fix then --report-only: 0; audit_lint --strict: OK; git diff --check: clean; py_compile: ok; explicit-path staging; cold read of the complete note and runner by the supervisor.
+Independence class disclosed: single family (Claude), cross-model — Fable primary, Opus 5 refuting checker on disjoint machinery, supervisor hand-verification.

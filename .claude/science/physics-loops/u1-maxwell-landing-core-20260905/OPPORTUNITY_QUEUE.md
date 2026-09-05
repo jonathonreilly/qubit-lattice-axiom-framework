@@ -19,3 +19,9 @@ payload + transformation law, time rule, locality, conservation. Next candidates
 2. Block 03' — the Gauss-as-support shape (ledger row 4, shape only) on the compiled vertex payload: the vertex-scalar witness
    of block 02 shows a vertex payload changes the class (two speeds), so the Gauss constraint's role is now sharper.
 3. The 3D photon origin (G3) — computation block on ledger row 2 (electric stiffness of the ring-exchange-alone law).
+
+## Refresh 2026-09-05T03:25+00:00 (block 03 start)
+Candidate 2 SELECTED as block 03 (GOAL_block03.md): the Gauss rows as support forcing on the extended payload class — does item 5's supplied constraint buy the vertex/cube half of item 7. Candidate 1 (conservation via reflection positivity) deferred: its two supplied structures make the conclusion target-equivalent unless the reconstruction is carried to the payload level, which the remaining budget cannot cover honestly. Candidate 3 (photon stiffness of the ring-exchange-alone law) deferred: a sampler computation; the exact-arithmetic block format cannot settle a finite-size numerical question. Both stay queued.
+
+## Refresh 2026-09-05T04:50+00:00 (block 03 closing; lane campaign stop)
+Block 03 DONE (bounded_theorem / bounded-support; PR #7984). Queue after block 03, ranked, none launched tonight (budget-bounded stop): 1. conservation via reflection positivity carried to the payload level (two named supplies; V1-V5 must be re-answered; risk target-equivalent); 2. the one-component clause via the readout bridge (an open bridge, SI/W4; contract first); 3. the 3D photon origin (a sampler computation; not this format); 4. the time-selection fork at the linear level (which finite-tick schedules preserve the Gauss rows and a positive modified energy exactly, and whether the palindromic leapfrog is unique among them — a bounded exact candidate for the next campaign).

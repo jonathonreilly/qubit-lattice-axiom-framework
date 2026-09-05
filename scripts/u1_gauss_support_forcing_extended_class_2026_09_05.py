@@ -997,7 +997,7 @@ def main() -> int:
     check("full space, E-block: multiplicities {0:3, 3:12, 6:24, 9:16, 12:6, 24:12, 36:8} (sum 81 = all eigenvalues of a symmetric matrix): two transverse branches at speed 1 (52 = 2 x 26) and one longitudinal branch at speed 2 (26 = 6+12+8, one per nonzero momentum)",
           full_E == {0: 3, 3: 12, 6: 24, 9: 16, 12: 6, 24: 12, 36: 8} and sum(full_E.values()) == comp6.ne
           and full_E[3] + full_E[6] + full_E[9] == 2 * nmom and full_E[12] + full_E[24] + full_E[36] == nmom, full_E)
-    check("full space, B-block: multiplicities {0:3, 3:12, 6:24, 9:16, 27:6, 54:12, 81:8}: the cube coupling adds a third branch at speed 3 on the face side",
+    check("full space, B-block: multiplicities {0:3, 3:12, 6:24, 9:16, 27:6, 54:12, 81:8}: on the face side the cube coupling supplies a further branch at speed 3 in place of the longitudinal one",
           full_F == {0: 3, 3: 12, 6: 24, 9: 16, 27: 6, 54: 12, 81: 8} and sum(full_F.values()) == comp6.nf, full_F)
     sector_E = {lam: restricted_multiplicity(Q6, comp6.d0.T, Fraction(lam), comp6.ne) for lam in (0, 3, 6, 9)}
     sector_F = {lam: restricted_multiplicity(QF6, comp6.d2, Fraction(lam), comp6.nf) for lam in (0, 3, 6, 9)}
@@ -1005,8 +1005,12 @@ def main() -> int:
           sector_E == {0: 3, 3: 12, 6: 24, 9: 16} and sum(sector_E.values()) == comp6.ne - comp6.nv + 1 and sector_E[3] + sector_E[6] + sector_E[9] == 2 * nmom, sector_E)
     check("Gauss sector (d2 B = 0), B-part: C C^T has the same multiplicities {0:3, 3:12, 6:24, 9:16} on it (sum 55)",
           sector_F == {0: 3, 3: 12, 6: 24, 9: 16} and sum(sector_F.values()) == comp6.nf - comp6.nc + 1, sector_F)
-    check("the sector spectrum does not depend on the vertex and cube speeds: the E-block of -G^2 restricted to ker d0^T equals C^T C there (4 d0 d0^T vanishes on ker d0^T), i.e. the three-speed and one-speed members share it exactly",
-          not np.any((4 * comp6.d0 @ comp6.d0.T) @ np.array(np.eye(comp6.ne, dtype=np.int64)) @ comp6.curl.T))
+    # executed on a basis of ker d0^T itself (55 vectors), not only on im C^T (supervisor finding F-B3-2)
+    ker_d0T = nullspace_q(comp6.d0.T)
+    ker_d2 = nullspace_q(comp6.d2)
+    check("the sector spectrum does not depend on the vertex and cube speeds: 4 d0 d0^T annihilates every vector of a basis of ker d0^T (dimension 55) and 9 d2^T d2 every vector of a basis of ker d2, so the E- and B-blocks of -G^2 restricted to the sector equal C^T C and C C^T there, i.e. the three-speed and one-speed members share the sector spectrum exactly",
+          len(ker_d0T) == comp6.ne - comp6.nv + 1 and all(is_zero(matvec_q(4 * comp6.d0 @ comp6.d0.T, v)) for v in ker_d0T)
+          and len(ker_d2) == comp6.nf - comp6.nc + 1 and all(is_zero(matvec_q(9 * comp6.d2.T @ comp6.d2, v)) for v in ker_d2))
     check("side 6 momentum census: 26 nonzero coarse momenta; on the sector each carries exactly two propagating modes (52 E-modes paired with 52 B-modes), and the zero modes of the restricted flow are 3 + 3 harmonic fields plus the two frozen constants",
           nmom == 26 and sector_E[0] + sector_F[0] + 2 == 8)
 
@@ -1258,6 +1262,34 @@ def main() -> int:
     charged_rate = matvec_q(comp6.d0.T, dE1_g) + matvec_q(comp6.d0.T, dE2_g)
     check("side 6: for a generic conservative coin member (theta_E = 2/3, theta_B = -1/5, K = [[1,2],[3,-1]]) the electric rate functional is exactly (Theta_E (x) d0^T) E -- the coupling block contributes R (x) d0^T C^T = 0 -- so a charged surface is preserved iff theta_E = 0 (executed: on a dipole charge in component 1 the rate is theta_E (0, rho) != 0) while every zero-charge surface is preserved: the all-charge reading cuts exactly theta_E and theta_B (6 -> 4 parameters), never the second component",
           antisym_g and rateE_g == expected_rate and charged_rate[:comp6.nv] == [Fraction(0)] * comp6.nv and charged_rate[comp6.nv:] == [thE * v for v in dip6])
+    # the SF-all residue K (x) C is orthogonally two decoupled one-speed copies: exact singular value decomposition of K
+    # over QQ(sqrt 5) for the witness (checker finding CK-05); with E' = (V^T (x) I) E and B' = (U^T (x) I) B the law reads
+    # dB'/dt = Sigma (x) C E', dE'/dt = -Sigma (x) C^T B' -- two copies at the singular values, no coin coupling
+    Ks = sp.Matrix(K)
+    KtK_s = Ks.T * Ks
+    sv_sq = sorted(KtK_s.eigenvals().keys(), key=sp.default_sort_key)
+    right_vecs = []
+    for lam_sq in sv_sq:
+        vec = (KtK_s - lam_sq * sp.eye(2)).nullspace()[0]
+        right_vecs.append(vec / sp.sqrt((vec.T * vec)[0, 0]))
+    V_s = sp.Matrix.hstack(*right_vecs)
+    Sigma_s = sp.diag(*[sp.sqrt(lam_sq) for lam_sq in sv_sq])
+    U_s = Ks * V_s * Sigma_s.inv()
+    orth = lambda M: all(sp.simplify(x) == 0 for x in (M.T * M - sp.eye(2)))
+    check("the SF-all coin residue K (x) C is orthogonally equivalent to two decoupled one-speed copies: for the witness K = [[1,1],[0,1]] an exact singular value decomposition U^T K V = diag(sigma1, sigma2) over QQ(sqrt 5) with orthogonal U, V and sigma1 != sigma2 (two speeds (3 -+ sqrt 5)/2 squared), so a coupled coin survives only the zero-charge reading",
+          orth(U_s) and orth(V_s) and all(sp.simplify(x) == 0 for x in (U_s.T * Ks * V_s - Sigma_s)) and len(sv_sq) == 2 and sp.simplify(sv_sq[0] - sv_sq[1]) != 0
+          and sp.simplify(sv_sq[0] * sv_sq[1] - 1) == 0 and sp.simplify(sv_sq[0] + sv_sq[1] - 3) == 0)
+    # the Qubit capacity bound, executed here (checker finding CK-03): dim_R M_2(C) = 8 as the rank of the real coordinate basis
+    real_coords = []
+    for i in range(2):
+        for j in range(2):
+            for part in (0, 1):
+                vec = [Fraction(0)] * 8
+                vec[2 * (2 * i + j) + part] = Fraction(1)
+                real_coords.append(vec)
+    real_dim_m2c = rank_q(real_coords)
+    check("dim_R M_2(C) = 8 (rank of the real coordinate basis: real and imaginary parts of the four matrix units): a two-component coin payload fits the one-site domain's capacity, a nine-component linear payload cannot (route R7 of the gate, executed here)",
+          real_dim_m2c == 8 and 2 <= real_dim_m2c and 9 > real_dim_m2c)
 
     # ---------------------------------------------------------------- K
     section("K. Hidden time: the complex law is second order on its physical pair (side 6)")

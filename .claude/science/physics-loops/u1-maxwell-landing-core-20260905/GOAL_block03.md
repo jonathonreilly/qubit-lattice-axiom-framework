@@ -1,5 +1,13 @@
 # GOAL — block 03: the Gauss rows as support forcing on the extended payload class (light lane)
 
+Correction (2026-09-05, after delivery, supervisor): the contract below attributes the phrase
+"order-independent site-level support forcing among corner records" to open PRs #7893/#7903 in
+quotation marks. The primary's quote-fidelity check found it in neither #7893's body nor its
+head-branch note; it is a science-record précis carried from block 01's ledger (corrected there).
+#7893's own sentence is "Gauss's law is then a record-diagonal relation at each corner, i.e. a
+support condition of the law in the axioms' own vocabulary." The note quotes only that. The
+contract text is left as written below, as the record of what was asked.
+
 Selected from OPPORTUNITY_QUEUE.md (block-02 refresh, candidate 2 = SUPPLIED_INPUT_LEDGER.md row 4
 in its narrowed "shape only" form) after block 02 exhibited that a vertex payload changes the
 declared class (a third, longitudinal branch; two conservative speeds). Branch

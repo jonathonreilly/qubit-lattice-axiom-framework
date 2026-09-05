@@ -1,7 +1,7 @@
 ---
 claim_id: u1_gauss_support_forcing_extended_payload_class_bounded_note_2026-09-05
 claim_type: bounded_theorem
-claim_scope: "On the supplied period-two role compilation of the cubic gauge complex onto Z^3 sites (parity roles, oriented d0, C, d2, sector zero, rebuilt from the parity rule), carrying one real component at every vertex-, edge-, face- and cube-role site: the translation- and proper-cubic-covariant real linear nearest-neighbor generator class under the oriented four-role transformation law in the compilation's sign basis is exactly the ten-dimensional span of the four onsite terms and d0, d0^T, C, C^T, d2, d2^T (exact on the side-4 and side-6 tori), and positive diagonal conservation cuts it to a three-speed family. Reading the two supplied Gauss rows d0^T E = rho_V and d2 B = rho_C as support forcing (an admissible set the flow must leave invariant): the electric surface is invariant under a member iff its edge-from-vertex coefficient vanishes and its edge onsite coefficient annihilates the background charge, the magnetic surface iff its face-from-cube coefficient vanishes and its face onsite coefficient annihilates the magnetic charge; with conservation the invariant members are exactly the one-speed edge/face law with the vertex and cube payloads frozen at every state, in every charge sector. A member that does not preserve the surface has as Gauss sector exactly the states with constant vertex and cube payload (by connectedness), coincides with the one-speed law there, carries two transverse branches per nonzero momentum there (the longitudinal and cube branches are absent), and has no invariant subset of any charged surface. The Gauss rows do not remove a second real component per site (the coin) nor a hidden time payload: the exact sixteen-dimensional coin class has a six-parameter conservative cut which the rows reduce to four parameters (the onsite mixings) and never to zero, with the complex two-component law preserving both zero-charge rows and the K (x) C family preserving every charged surface. Every statement is an exact finite computation (integer, rational, symbolic) on sides 4 and 6 plus size-free algebraic arguments named as such; the Gauss rows are supplied content whose shape is Admissibility's support clause; nothing is derived from the four axioms alone, and no continuum, infinite-volume, Record-readout or electromagnetic statement is made."
+claim_scope: "On the supplied period-two role compilation of the cubic gauge complex onto Z^3 sites (parity roles, oriented d0, C, d2, sector zero, rebuilt from the parity rule), carrying one real component at every vertex-, edge-, face- and cube-role site: the real linear nearest-neighbor generator class covariant under the even (sector-preserving) lattice translations and the 24 proper cubic rotations about a vertex-role site, under the oriented four-role transformation law in the compilation's sign basis, is exactly the ten-dimensional span of the four onsite terms and d0, d0^T, C, C^T, d2, d2^T (exact on the side-4 and side-6 tori), and positive diagonal conservation cuts it to a three-speed family. Reading the two supplied Gauss rows d0^T E = rho_V and d2 B = rho_C as support forcing (an admissible set the flow must leave invariant): the electric surface is invariant under a member iff its edge-from-vertex coefficient vanishes and its edge onsite coefficient annihilates the background charge, the magnetic surface iff its face-from-cube coefficient vanishes and its face onsite coefficient annihilates the magnetic charge; with conservation the invariant members are exactly the one-speed edge/face law with the vertex and cube payloads frozen at every state, in every charge sector. A member that does not preserve the surface has as Gauss sector exactly the states with constant vertex and cube payload (by connectedness), coincides with the one-speed law there, carries two transverse branches per nonzero momentum there (the longitudinal and cube branches are absent), and has no invariant subset of any charged surface. The Gauss rows do not remove a second real component per site (the coin) nor a hidden time payload: under the declared doubled law (the coin index inert under rotations) the exact sixteen-dimensional coin class has a six-parameter conservative cut which the rows reduce to four parameters (the onsite mixings) and never to zero, with the complex two-component law preserving both zero-charge rows and the K (x) C family — orthogonally two decoupled one-speed copies at two speeds — preserving every charged surface. Every statement is an exact finite computation (integer, rational, symbolic) on sides 4 and 6 plus size-free algebraic arguments named as such; the Gauss rows are supplied content whose shape is Admissibility's support clause; nothing is derived from the four axioms alone, and no continuum, infinite-volume, Record-readout or electromagnetic statement is made."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/u1_gauss_support_forcing_extended_class_2026_09_05.py
@@ -17,7 +17,7 @@ verdict, TOE score, axiom, or approved primitive, and it proposes none.
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 **Primary runner:** `scripts/u1_gauss_support_forcing_extended_class_2026_09_05.py`
 **Cached receipt:** `logs/runner-cache/u1_gauss_support_forcing_extended_class_2026_09_05.txt`
-(`TOTAL: PASS=89 FAIL=0`; exact integer, rational and symbolic arithmetic only)
+(`TOTAL: PASS=91 FAIL=0`; exact integer, rational and symbolic arithmetic only)
 
 **Target claim, in one sentence.** For the four obligations of the payload
 item of the declared edge/face dynamics class — no vertex payload, no cube
@@ -47,17 +47,20 @@ pointer only).
 |---|---|---|---|
 | no vertex payload participates | DERIVED-CONDITIONAL-ON(SF-all on the electric row, EC, CONS): the vertex payload is frozen (`d phi/dt = 0` at every state) and decoupled (it enters no other rate), in every charge sector. With SF-all and EC alone: decoupled (`a2 = 0`), while its own rate is `a rho_V + u_V phi`. Under the sector reading SF-0: on the Gauss sector the payload is a frozen constant that acts on nothing; a charged surface has no invariant subset at all | `d/dt(d0^T E) = a2 d0^T d0 phi + u_E d0^T E` exactly (the face block `d0^T C^T` vanishes); `d0^T d0 != 0`; invariance for every `phi` forces `a2 = 0`; conservation ties `a` to `a2` | the three-speed member (`a = -2, a2 = 2, q = 1, r = -1, b = -3, b2 = 3`): covariant, nearest-neighbor, conservative, chain-compatible, and a zero-charge state with `phi = delta` leaves the electric surface immediately |
 | no cube payload participates | the same, DERIVED-CONDITIONAL-ON(SF-all on the magnetic row, EC, CONS), by the odd-shift self-duality of the compilation and by independent execution | `d/dt(d2 B) = b d2 d2^T psi + u_B d2 B` exactly (the edge block `d2 C` vanishes) | the same member with `psi = delta` leaves the magnetic surface |
-| no extra coin participates | GENUINE SUPPLY (not bought by the Gauss rows under either reading) | the exact coin class is sixteen-dimensional (the coin index is inert under rotations); conservation leaves six parameters; the rows cut only the two onsite mixings (six to four) and cannot cut the coupling `K (x) C` | the complex law with onsite phase `theta = 3/7`: preserves both zero-charge rows, nearest-neighbor, covariant, conservative, edge-to-face blocks exactly `C`, two real components per site, kernel dimension 0 against 116 for two decoupled copies; the `K (x) C` law with `K = [[1,1],[0,1]]`: preserves every charged surface, mixes the components in the site basis |
+| no extra coin participates | GENUINE SUPPLY (not bought by the Gauss rows under either reading) | under the declared doubled law (the coin index inert under rotations, a supply like OL) the exact coin class is sixteen-dimensional; conservation leaves six parameters; the rows cut only the two onsite mixings (six to four) and cannot cut the coupling `K (x) C`, whose members are orthogonally two decoupled one-speed copies at two speeds — a coupled coin survives only the zero-charge reading | the complex law with onsite phase `theta = 3/7`: preserves both zero-charge rows, nearest-neighbor, covariant, conservative, edge-to-face blocks exactly `C`, two real components per site, kernel dimension 0 against 116 for two decoupled copies; the `K (x) C` law with `K = [[1,1],[0,1]]`: preserves every charged surface, mixes the components in the site basis |
 | no hidden time payload participates | GENUINE SUPPLY; at the linear level identical to the coin obligation | `z1'' = 2 G z1' - (G^2 + theta^2) z1` exactly: the complex law's physical pair obeys a closed second-order law whose auxiliary pair is its time derivative; the second-order law has radius two | the same complex law, read as a first-order law on an enlarged payload |
 
 Two consequences at the scope of the declared class.
 
-- Item 7 splits. Its vertex/cube half is not an independent supply once item
-  5's Gauss rows are read as support forcing (all-charge reading) inside the
-  class's own other items: the surfaces are invariant only for members with
-  no vertex or cube coupling, and conservation then freezes the payloads. Its
-  coin/hidden-time half is untouched by the rows: the coin is cut from six
-  parameters to four, never to zero.
+- Item 7 splits. Its cube half is not an independent supply once item 5's
+  magnetic row is read as support forcing (all-charge reading) inside the
+  class's own other items; its vertex half folds the same way into the
+  electric row — supplied by the lane through `#7893`/`#7903` and used by
+  `#7917`'s section-6 mode count without being declared among its seven items
+  — together with the class's items: the surfaces are invariant only for
+  members with no vertex or cube coupling, and conservation then freezes the
+  payloads. Its coin/hidden-time half is untouched by the rows: the coin is
+  cut from six parameters to four, never to zero.
 - The residual supply of the terminal recorded by block 02 (payload and its
   transformation law, time rule, locality, conservation) therefore sharpens
   on the payload wall: what remains supplied there is the one-component
@@ -74,7 +77,7 @@ target_blocker_text: "The exact residual supply of the terminal relative to the 
 source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "the light lane's terminal (the uniqueness classification of open PR #7917) is the consumer via block 02's residual: the payload wall is now split — the vertex/cube clause of item 7 is DERIVED-CONDITIONAL-ON(item 5's Gauss rows read as support forcing, the class's other items, conservation), while the coin/hidden-time clause is the exact remaining payload supply (a six-parameter conservative coin family cut to four by the rows); the next derivation target on this wall is the one-component clause itself, whose only axiom contact is Qubit's capacity bound (eight real components per site), and the next target on the lane is still conservation"
+next_trace_action: "the light lane's terminal (the uniqueness classification of open PR #7917) is the consumer via block 02's residual: the payload wall is now split — the vertex/cube clause of item 7 is DERIVED-CONDITIONAL-ON(item 5's magnetic row and the supplied electric row read as support forcing, the class's other items, conservation), while the coin/hidden-time clause is the exact remaining payload supply (a six-parameter conservative coin family cut to four by the rows); the next derivation target on this wall is the one-component clause itself, whose only axiom contact is Qubit's capacity bound (eight real components per site), and the next target on the lane is still conservation"
 conditional_surface_status: "exact on the finite compiled tori of sides 4 and 6; the size-free content is the chain identities, the odd-shift self-duality and connectedness; conditional on the named premises SF-all or SF-0, EC, CONS and OL where stated; the Gauss rows and their background charges are supplied content; no derivation of any Gauss row or of the class from the axioms"
 hypothetical_axiom_status: null
 admitted_observation_status: null
@@ -94,8 +97,10 @@ TOE-status change." and keeps "Split-step and enlarged-state exact ticks
 remain live." The note on its head branch lists the class's seventh item as
 "7. no vertex, cube, extra coin, or hidden time payload participates." Block
 02 (the open PR `#7980`) recorded that item as a genuine supply with a vertex
-witness (a third branch, two speeds). This note asks whether the class's own
-fifth item — the Gauss rows — buys any of it.
+witness (a third branch, two speeds). This note asks whether the Gauss rows —
+item 5's magnetic row, and the electric row that the lane supplies through
+`#7893`/`#7903` and that `#7917` uses in its section-6 mode count without
+declaring it among the seven items — buy any of it.
 
 **The Gauss rows as supplied content (a named supply, never derived here).**
 The electric row `d0^T E = rho_V` and the magnetic row `d2 B = rho_C`, with
@@ -183,16 +188,31 @@ clause, or a constraint-preservation principle.
 axiom; each is shown load-bearing by a witness.
 
 - SF-all, SF-0: the two readings of support forcing above, applied to the
-  supplied rows.
+  supplied rows. A third reading sits between them and is named where used:
+  SF-zero, the invariance of the zero-charge surfaces alone — a coefficient
+  statement weaker than SF-all (on the four-role class it cuts `a2` but not
+  `u_E`, leaving nine of the ten coefficients; with conservation it coincides
+  with SF-all).
 - EC (the extended covariant class): the law is real, linear, first order and
   continuous in time; a site derivative reads itself and its six physical
-  nearest neighbors only; the law is covariant under lattice translations and
-  the 24 proper cubic rotations acting on the four-role payload by the
-  oriented law in the compilation's sign basis (OL of block 02 extended by
-  scalar vertex and cube payloads: `phi` and `psi` transform as scalars, `E`
-  as the vector component along the edge axis, `B` as the vector component
-  along the face normal). EC bundles items 2, 3 and 4 of the declared class
-  together with OL; it is a supply exactly as those items are.
+  nearest neighbors only; the law is covariant under the even lattice
+  translations that preserve the sector and the 24 proper cubic rotations
+  about a vertex-role site, acting on the four-role payload by the oriented
+  law in the compilation's sign basis (OL of block 02 extended by scalar
+  vertex and cube payloads: `phi` and `psi` transform as scalars, `E` as the
+  vector component along the edge axis, `B` as the vector component along the
+  face normal). Rotations about an edge- or face-role site do not preserve the
+  roles, and the odd shift `(1, 1, 1)` exchanges them; requiring covariance
+  under that shift as well would cut the class to its five self-dual members
+  (the refuting checker's execution), which is not the class of the declared
+  items. For the coin class, EC includes the doubled law in which the coin
+  index carries the trivial representation of the rotation group (OL-coin) —
+  a supply of the same kind as OL: with the sign character on the second
+  component instead, the coin class is twelve-dimensional and the mixing
+  witness below is not covariant (the checker's execution; the verdict
+  survives, the numbers are relative to OL-coin). EC bundles items 2, 3 and 4
+  of the declared class together with OL; it is a supply exactly as those
+  items are.
 - CONS (item 6 on the four-role payload): a positive, diagonal, proper-cubic
   field energy `sum_roles w_role |field|^2 / 2` with positive weights is
   conserved.
@@ -236,9 +256,10 @@ independently.
 
 ## 3. The extended class and its conservative cut
 
-**Theorem (exact, sides 4 and 6).** The translation- and proper-cubic-
-covariant real linear nearest-neighbor generators on `(phi, E, B, psi)` under
-the oriented four-role law form exactly the ten-dimensional space
+**Theorem (exact, sides 4 and 6).** The real linear nearest-neighbor
+generators on `(phi, E, B, psi)` covariant under the even translations and
+the 24 proper rotations about a vertex, under the oriented four-role law,
+form exactly the ten-dimensional space
 
 ```text
 d phi/dt = u_V phi + a d0^T E
@@ -360,9 +381,9 @@ identities `-G^2` of the three-speed member is block diagonal: E-block
 `4 d0 d0^T + C^T C` with multiplicities `{0:3, 3:12, 6:24, 9:16, 12:6, 24:12,
 36:8}` (sum 81), B-block `C C^T + 9 d2^T d2` with `{0:3, 3:12, 6:24, 9:16,
 27:6, 54:12, 81:8}`, vertex block `4 d0^T d0`, cube block `9 d2 d2^T`. Off the
-sector there are three branches at each of the 26 nonzero coarse momenta:
+sector there are, on the edge side, three branches at each of the 26 nonzero coarse momenta:
 two transverse at speed one (52 modes) and one longitudinal at speed two
-(`26 = 6 + 12 + 8`); the cube coupling adds a third branch at speed three on
+(`26 = 6 + 12 + 8`); on the face side three as well, the cube coupling supplying a further branch at speed three in place of the longitudinal one, on
 the face side. On the sector, `C^T C` restricted to `ker d0^T` has
 multiplicities `{0:3, 3:12, 6:24, 9:16}` (sum 55) and `C C^T` restricted to
 `ker d2` the same: exactly two propagating modes per nonzero momentum, the
@@ -408,7 +429,9 @@ By the odd-shift duality the same holds for a magnetic background charge.
 patterns (the 30 edge/face patterns times four coin pairs) have covariance
 nullspace of dimension sixteen under the rotation group (generated exactly by
 the two 90-degree rotations, closure checked): `span{onsite E, onsite B, C,
-C^T} (x) M_2(R)` — the coin index is inert under rotations.
+C^T} (x) M_2(R)` — under the declared doubled law OL-coin, in which the coin
+index is inert under rotations (a stipulation of the same kind as OL, not a
+finding; section 1).
 
 **Conservation (executed for two weight choices).** With positive diagonal
 weights in the coin basis, the cut leaves exactly six parameters: a free
@@ -424,9 +447,16 @@ coupling contributes `R (x) d0^T C^T = 0`. So: under SF-all a charged surface
 is preserved iff `theta_E = 0` (on a dipole charge in component one the rate
 is `theta_E (0, rho)`), the magnetic row likewise cuts `theta_B`, and the
 two rows together cut the conservative coin family from six parameters to
-four — the whole of `K (x) C`. Under SF-0 every zero-charge surface is
-preserved by every member and nothing is cut. In neither reading does the
-second component disappear.
+four — the whole of `K (x) C`. Under SF-zero the rate vanishes identically on
+every zero-charge surface, so nothing is cut, and under SF-0 (the sector
+reading) nothing is cut either. In no reading does the second component
+disappear. Under SF-all the residue is exactly `K (x) C` with
+`R = -W_E^{-1} K^T W_B`, and every member of it is orthogonally equivalent to
+two decoupled one-speed copies at the singular values of
+`W_B^{1/2} K W_E^{-1/2}` (executed for the witness below: an exact singular
+value decomposition over `QQ(sqrt 5)`): two components per site and two
+speeds remain, a coupled coin does not — a genuinely coupled coin (kernel
+dimension zero) survives only the zero-charge reading.
 
 **Witness one (zero-charge reading): block 02's complex law**,
 `dE/dt = -C^T B + i theta E`, `dB/dt = C E + i theta B`, `theta = 3/7`. On a
@@ -459,9 +489,10 @@ distinct positive irrational eigenvalues). It violates item 7 as declared
 (an extra coin participates) and the terminal's "one speed".
 
 **Verdict on the coin clause.** GENUINE SUPPLY: not reached by the rows in
-either reading, not reached by any axiom sentence (section 12). The Qubit
-sentence bounds a linear one-site payload to eight real components (block
-02, section 7); two fit.
+any reading, not reached by any axiom sentence (section 12). The Qubit
+sentence bounds a linear one-site payload to eight real components (executed
+here, runner section J, as the real dimension of `M_2(C)`; also block 02,
+section 7); two fit.
 
 ## 8. Hidden time
 
@@ -515,8 +546,9 @@ infinite-volume, continuum, thermodynamic or Lorentz statement; any Record
 readout of `E`, `B`, `phi` or `psi`; any identification with
 electromagnetism; any change to an axiom or primitive; any audit verdict.
 The open PRs are quoted at scope as evidence addresses and are not presented
-as landed or audited. The eight-component capacity bound is block 02's and is
-cited as context, not used as a premise.
+as landed or audited. The eight-component capacity bound is executed here
+(runner section J) and is also block 02's; it is used only to close route R7
+of the gate.
 
 ## 12. No-Go Discipline Gate
 
@@ -540,7 +572,7 @@ excluded by an approved premise node.
 | R4 one record, one coordinate | read "a record locks exactly one admissible local possibility" as one real evolving coordinate per site | one possibility of `M_2(C)` carries eight real coordinates; one record is one point of the domain, not one real number; and the components here are unrecorded possibilities (the open bridge of block 02's SI) | ATTEMPTED |
 | R5 spectral route | use the coin law's nonzero zero-momentum frequency `theta` against a supplied gaplessness | the rows do not see frequencies (their functionals are static), and `theta = 0` (the `K (x) C` family) is gapless and still a coin | ATTEMPTED |
 | R6 kinetic-isotropy primitive | read `c_t = c_s` as fixing one component per site | the registered primitive's own note: "not a new dynamics", supplies only the graining ratio; registry check performed; it supplies no payload clause | RULED OUT BY PRIOR (approved primitive source note, registry node `kinetic_isotropy_primitive`) |
-| R7 capacity bound | tighten Qubit's eight-component bound to one | the bound is eight, executed in block 02 from the real dimension of `M_2(C)`; two components fit | RULED OUT BY PRIOR (block 02's executed bound; the open PR `#7980` at its scope, an evidence address) |
+| R7 capacity bound | tighten Qubit's eight-component bound to one | the bound is eight, executed here (runner section J) as the real dimension of `M_2(C)`, as block 02 also executed it; two components fit and the sentence names no smaller number | ATTEMPTED (executed here) |
 
 ### N2 — Wall-independence audit
 
@@ -652,7 +684,8 @@ obligation. Its gap: a record locks one possibility of the one-site domain,
 whose algebraic presentation `M_2(C)` has eight real dimensions; one record
 is one point of that domain, and a point carries as many real coordinates as
 the domain does. "One record" bounds the payload to one point, not to one
-real number; the executed bound is eight components (block 02), and two fit.
+real number; the executed bound is eight components (here and in block 02),
+and two fit.
 Moreover the components of every law in this note are unrecorded
 possibilities evolving between formations — the open bridge block 02 names as
 SI — so the Record sentence does not yet bind them at all. What would close
@@ -685,9 +718,14 @@ derived from the axioms.
 
 The bounded theorem fails if any of the following is found:
 
-- a translation- and proper-cubic-covariant nearest-neighbor real linear
-  generator on the four-role payload, under the oriented law in the
-  compilation's sign basis, outside the ten-dimensional span (sides 4 or 6);
+- a nearest-neighbor real linear generator on the four-role payload,
+  covariant under the even translations and the 24 proper rotations about a
+  vertex under the oriented law in the compilation's sign basis, outside the
+  ten-dimensional span (sides 4 or 6);
+- a real representation of the rotation group on the coin index other than
+  the declared trivial one that leaves the sixteen-dimensional count intact
+  (with the sign character the checker finds twelve; the sixteen is relative
+  to the declared doubled law);
 - a member of the class with `a2 != 0` under which the zero-charge electric
   surface is invariant, or a member with `b != 0` under which the magnetic
   surface is; or a nonzero vector in `ker(d0^T d0)` or `ker(d2 d2^T)` that is
@@ -721,9 +759,10 @@ open-bridge status stated separately.
   homogeneous physical-site law is named open by that PR at its scope; not
   examined here.
 - The two Gauss rows and their background charges. Role: the supplied
-  constraint content whose preservation is tested. Provenance: the light
-  lane's members (the open PRs `#7893`, `#7903`, `#7917` item 5), read here
-  as support forcing. Open bridge: the shape is Admissibility's support
+  constraint content whose preservation is tested. Provenance: the magnetic
+  row is `#7917`'s item 5; the electric row is supplied by `#7893`/`#7903`
+  and used by `#7917`'s section-6 mode count without being declared among its
+  seven items; both are read here as support forcing. Open bridge: the shape is Admissibility's support
   clause; the content (the linear row, the charge) and the identification of
   the row's records with the compiled payload are supplied; the reading of
   "support forcing" as SF-all or SF-0 is a choice, both executed.
@@ -750,8 +789,22 @@ open-bridge status stated separately.
 Worker provenance: drafted by a Fable primary seat under the block-03
 contract of the campaign pack (`GOAL_block03.md`), with the value gate V1-V5
 answered in the pack's `REVIEW_HISTORY.md` before any PR. Refuting checker:
-pending (an independent seat on disjoint machinery is required before the
-PR). Independence class: to be filled by the supervisor at close.
+an Opus 5 seat on disjoint machinery (lexicographic state layout, flipped
+sign conventions, Levi-Civita curl, the class by signed orbit counting with
+no pattern basis, the rate functionals solved rather than checked, ranks
+over two primes with exact rational confirmation; 74 independent checks;
+CHECKER_block03_findings.md) returned FIX FIRST with no verdict refuted:
+findings CK-01..CK-07 (the electric row is not a declared item of the class;
+the symmetry group stated in the scope was the wrong one; route R7 leaned on
+an unexecuted bound; the doubled law is a premise; the SF-all coin residue is
+decoupled copies; SF-0 was used in two senses; a branch miscount), each
+verified by the supervisor and applied in the fix pass recorded in the pack's
+`REVIEW_HISTORY.md`; its three planted mutations and one fidelity spot-check
+were all caught. Independence class: single family (Claude), cross-model —
+Fable primary, Opus 5 refuting checker, supervisor line-by-line review with
+hand verification of the rate identity, the unobservable-subspace chain and
+its dimensions, the coin cut, the hidden-time identity and the sector
+multiplicities.
 Independent-math checks per conformance section 6, performed by hand
 against the runner: the blockwise skew equations of section 3; the rate
 identity `d0^T (a2 d0 phi + u_E E + r C^T B) = a2 d0^T d0 phi + u_E d0^T E`
@@ -776,7 +829,11 @@ subspaces); the restricted-multiplicity sign (2, the sector count); the coin
 phase set to zero (the kernel-dimension check, after which the mutant aborts
 at the hidden-time reconstruction, which divides by the phase); the
 second-order coefficient changed (1); the magnetic rate read off the edge
-rows (6). Nothing landed is replaced or narrowed (this is a new note). Hard landing
+rows (6). The checker's three planted defects were caught as well (the
+magnetic rate sign, 3 failures; an invariance test accepting `a2 != 0`, 1;
+the coin cut's coupling equations dropped, 2), and its fidelity spot-check
+reproduced the primary's second-order-coefficient row exactly. Nothing landed
+is replaced or narrowed (this is a new note). Hard landing
 conditions: none; no helper runner; the citation-graph manifest co-lands for
 the one added node at close.
 
@@ -798,7 +855,7 @@ python3 scripts/u1_gauss_support_forcing_extended_class_2026_09_05.py
 Expected final line:
 
 ```text
-TOTAL: PASS=89 FAIL=0
+TOTAL: PASS=91 FAIL=0
 ```
 
 The runner declares `AUDIT_TIMEOUT_SEC = 900` and reads one external input,

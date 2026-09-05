@@ -223,3 +223,11 @@ lattice_wide: executed — every invariant-subspace, sector-restriction and back
 TOTAL: PASS=89 FAIL=0
 
 ```
+
+## Fix pass after the refuting check (2026-09-05, supervisor)
+
+The 89-check baseline and the fourteen-probe mutation table above were certified at runner sha `119500b2…`. The fold applied CK-01..CK-07 (see `REVIEW_HISTORY.md`) and the supervisor's F-B3-2: the runner gained the exact singular value decomposition of the `K (x) C` witness over `QQ(sqrt 5)` (CK-05: the SF-all coin residue is two decoupled one-speed copies), the executed capacity bound `dim_R M_2(C) = 8` (CK-03: route R7 closed here, not by an unlanded PR), and a tightened sector-independence test (F-B3-2: `4 d0 d0^T` annihilates a basis of `ker d0^T`, and `9 d2^T d2` a basis of `ker d2`, rather than only `im C^T`); the face-side branch label was reworded (CK-07). Post-fold baseline `TOTAL: PASS=91 FAIL=0`, 53 s, cache re-pinned at runner sha `aeabf99a…`. The fourteen primary mutations were run at the pre-fold sha; the runner changes since are two added checks and one tightened predicate.
+
+Checker's planted defects (scratch copies of the pre-fold runner, `ROOT` repointed; `CHECKER_block03_findings.md`): CKM-1 magnetic rate sign flipped — `PASS=86 FAIL=3` (section F both rate identities, section L); CKM-2 the invariance test made to accept `a2 != 0` — `PASS=88 FAIL=1` (section G); CKM-3 the coin cut's coupling equations dropped — `PASS=87 FAIL=2` (section J, both weight choices); CKM-4 fidelity spot-check reproducing the primary's M13 row — `PASS=88 FAIL=1` exactly as tabled.
+
+Checker's executed extensions (recorded, not claimed by the note beyond the qualifiers it now carries): requiring covariance under the odd shift `(1,1,1)` as well cuts the four-role class to its five self-dual members; with the sign character on the coin's second component the coin class is twelve-dimensional and the `K (x) C` witness is not covariant; the three readings of support forcing cut the four-role class to 8 (SF-all), 9 (SF-zero) and 10 (SF-0, the sector reading), coinciding under conservation.

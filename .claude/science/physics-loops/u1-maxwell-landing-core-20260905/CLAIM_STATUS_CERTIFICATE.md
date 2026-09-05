@@ -29,3 +29,19 @@ review_loop_disposition: pending (self-review complete; checker seat next)
 independence_class: "single family cross-context: Fable primary; hand derivations against the exhaustive runner; twelve mutation checks detected"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+
+# Claim status certificate — block 03 (close)
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: "exact on the compiled tori of sides 4 and 6 with the size-free arguments named; conditional on SF-all / SF-zero / SF-0 as stated, EC (with OL and OL-coin), CONS; the Gauss rows and their charges are supplied content; audit-required"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite computations (integer, rational, symbolic; the coin SVD over QQ(sqrt 5)) plus size-free algebra (chain identities, odd-shift duality, connectedness); the vertex/cube half of item 7 is conditional on the supplied rows read as support forcing plus the class's items and conservation; the coin and hidden-time half is a supply with exact witnesses; nothing derived from the four axioms alone"
+dependency_classes: "no load-bearing dependency on any unlanded note; one markdown link to the landed axiom memo; block 02 (PR #7980) and the members are evidence addresses; the capacity bound is executed here"
+open_imports: "the compilation; the two Gauss rows and background charges (the electric row external to the declared class); EC with OL and OL-coin; CONS; the reading of support forcing (three named, all executed)"
+review_loop_disposition: pass (after the FIX FIRST fold; see REVIEW_HISTORY.md)
+independence_class: "single family (Claude), cross-model: Fable primary, Opus 5 refuting checker on disjoint machinery, supervisor hand-verification"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

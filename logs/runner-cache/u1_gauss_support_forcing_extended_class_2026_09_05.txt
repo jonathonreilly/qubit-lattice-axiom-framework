@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/u1_gauss_support_forcing_extended_class_2026_09_05.py
-runner_sha256: 119500b23fbe32ba50501594463254580d7f3943fb812d520dd770f2ce697080
+runner_sha256: aeabf99aa12936e1214989640caa7589b26146753dc7aabb41b93ca2d51c7c23
 input_fingerprint_sha256: 0508bab90e8d90e7f18431b9290c97639b302bb3816dd774ce2ca11266eb0c7e
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 49.71
+elapsed_sec: 53.33
 status: ok
 ----- stdout -----
 U(1) light lane: the Gauss rows as support forcing on the extended (phi, E, B, psi) payload class (exact)
@@ -107,10 +107,10 @@ I. Branch count on the Gauss sector, side 6 (exact multiplicities)
 ------------------------------------------------------------------
   [PASS] -G^2 of the three-speed member is block diagonal by the chain identities: E-block 4 d0 d0^T + C^T C, B-block C C^T + 9 d2^T d2, phi-block 4 d0^T d0, psi-block 9 d2 d2^T
   [PASS] full space, E-block: multiplicities {0:3, 3:12, 6:24, 9:16, 12:6, 24:12, 36:8} (sum 81 = all eigenvalues of a symmetric matrix): two transverse branches at speed 1 (52 = 2 x 26) and one longitudinal branch at speed 2 (26 = 6+12+8, one per nonzero momentum)  ({0: 3, 3: 12, 6: 24, 9: 16, 12: 6, 24: 12, 36: 8})
-  [PASS] full space, B-block: multiplicities {0:3, 3:12, 6:24, 9:16, 27:6, 54:12, 81:8}: the cube coupling adds a third branch at speed 3 on the face side  ({0: 3, 3: 12, 6: 24, 9: 16, 27: 6, 54: 12, 81: 8})
+  [PASS] full space, B-block: multiplicities {0:3, 3:12, 6:24, 9:16, 27:6, 54:12, 81:8}: on the face side the cube coupling supplies a further branch at speed 3 in place of the longitudinal one  ({0: 3, 3: 12, 6: 24, 9: 16, 27: 6, 54: 12, 81: 8})
   [PASS] Gauss sector (d0^T E = 0), E-part: C^T C has multiplicities {0:3, 3:12, 6:24, 9:16} on it (sum 55 = dim ker d0^T): exactly two transverse branches per nonzero momentum, the longitudinal branch absent, three harmonic zero modes  ({0: 3, 3: 12, 6: 24, 9: 16})
   [PASS] Gauss sector (d2 B = 0), B-part: C C^T has the same multiplicities {0:3, 3:12, 6:24, 9:16} on it (sum 55)  ({0: 3, 3: 12, 6: 24, 9: 16})
-  [PASS] the sector spectrum does not depend on the vertex and cube speeds: the E-block of -G^2 restricted to ker d0^T equals C^T C there (4 d0 d0^T vanishes on ker d0^T), i.e. the three-speed and one-speed members share it exactly
+  [PASS] the sector spectrum does not depend on the vertex and cube speeds: 4 d0 d0^T annihilates every vector of a basis of ker d0^T (dimension 55) and 9 d2^T d2 every vector of a basis of ker d2, so the E- and B-blocks of -G^2 restricted to the sector equal C^T C and C C^T there, i.e. the three-speed and one-speed members share the sector spectrum exactly
   [PASS] side 6 momentum census: 26 nonzero coarse momenta; on the sector each carries exactly two propagating modes (52 E-modes paired with 52 B-modes), and the zero modes of the restricted flow are 3 + 3 harmonic fields plus the two frozen constants
 
 J. The coin: exact covariant class on the two-component edge/face payload and its conservative cut (side 4)
@@ -125,6 +125,8 @@ J. The coin: exact covariant class on the two-component edge/face payload and it
   [PASS] side 6: on a charged electric surface (dipole) the complex law does NOT preserve the surface: d/dt(d0^T E) = theta J (d0^T E) != 0 rotates the two-component charge, and the per-vertex modulus |rho_v|^2 has zero rate (the charge rotates, it does not decay)
   [PASS] side 6: the K (x) C law (theta = 0, K = [[1,1],[0,1]]) is antisymmetric, radius 1, covariant, and BOTH rate functionals vanish identically for both components (every charged surface preserved); its B1-from-E2 block is C (the components mix in the site basis); K^T K has characteristic polynomial lambda^2 - 3 lambda + 1 with discriminant 5, so over R it is two decoupled copies at distinct irrational speeds
   [PASS] side 6: for a generic conservative coin member (theta_E = 2/3, theta_B = -1/5, K = [[1,2],[3,-1]]) the electric rate functional is exactly (Theta_E (x) d0^T) E -- the coupling block contributes R (x) d0^T C^T = 0 -- so a charged surface is preserved iff theta_E = 0 (executed: on a dipole charge in component 1 the rate is theta_E (0, rho) != 0) while every zero-charge surface is preserved: the all-charge reading cuts exactly theta_E and theta_B (6 -> 4 parameters), never the second component
+  [PASS] the SF-all coin residue K (x) C is orthogonally equivalent to two decoupled one-speed copies: for the witness K = [[1,1],[0,1]] an exact singular value decomposition U^T K V = diag(sigma1, sigma2) over QQ(sqrt 5) with orthogonal U, V and sigma1 != sigma2 (two speeds (3 -+ sqrt 5)/2 squared), so a coupled coin survives only the zero-charge reading
+  [PASS] dim_R M_2(C) = 8 (rank of the real coordinate basis: real and imaginary parts of the four matrix units): a two-component coin payload fits the one-site domain's capacity, a nine-component linear payload cannot (route R7 of the gate, executed here)
 
 K. Hidden time: the complex law is second order on its physical pair (side 6)
 -----------------------------------------------------------------------------
@@ -143,7 +145,7 @@ per_mode: executed — exact eigenvalue multiplicities on the side-6 torus certi
 per_block: executed — the vertex, edge, face and cube blocks of the rate functionals, of -G^2 and of every witness generator are checked separately (chain identities, skewness, covariance, support radius)
 lattice_wide: executed — every invariant-subspace, sector-restriction and background-charge statement is decided exactly on the whole side-4 and side-6 tori; no infinite-volume or continuum statement is executed
 
-TOTAL: PASS=89 FAIL=0
+TOTAL: PASS=91 FAIL=0
 
 ----- stderr -----
 

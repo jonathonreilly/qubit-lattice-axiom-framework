@@ -668,3 +668,169 @@ def measure_shape(cells: dict, bench: dict) -> dict:
     facts["det_m_is_quadric_fourth"] = all(
         sp.radsimp(facts["det_m_values"][z] - R(64, 81) * facts["quadric_values"][z] ** 4) == 0 for z in NONZERO_POINTS)
     return facts
+
+
+# ---------------------------------------------------------------------------
+# G (part 1). BLOCK 216's TWO RESCALINGS SEEN ON THE BENCH: at the second line
+# multiple lambda = 1/2 and at D07 = 1/4 on the line, the block multisets
+# against Block 216's rescaled constants times Q(kappa_z)
+# ---------------------------------------------------------------------------
+def symbolic_line_constants(value) -> tuple:
+    """Block 216's BRANCH_TABLE[("L+-", "line symbolic")] evaluated exactly at lam_line = value."""
+    table = b216.BRANCH_TABLE[("L+-", "line symbolic")][0]
+    return tuple(sorted(((sp.sympify(expr).subs(LAM_LINE, value), power) for expr, power, _ in table), key=lambda t: t[0]))
+
+
+def rescaled_constants(rescale) -> tuple:
+    """{1 x2, (32/27) r x2, (4/3) r x4}: the top-form and transverse constants rescaled by r."""
+    return tuple(sorted(((sp.Integer(1), 2), (R(32, 27) * rescale, 2), (R(4, 3) * rescale, 4)), key=lambda t: t[0]))
+
+
+def measure_rescalings(cells: dict, bench: dict) -> dict:
+    facts: dict = {}
+    v0v1 = b216.VOLUME_PRODUCTS["L+-"]
+    v1v0 = b216.VOLUME_RATIOS["L+-"]
+    facts["line_rescale_quarter"] = 1 / (1 - QUARTER ** 2 / v0v1)
+    facts["line_rescale_half"] = 1 / (1 - HALF ** 2 / v0v1)
+    facts["line_rescale_quarter_is_block216"] = facts["line_rescale_quarter"] == b216.LINE_RESCALE["L+-"]
+    facts["d07_rescale_quarter"] = 1 / (1 - QUARTER ** 2 * v1v0)
+    facts["d07_rescale_quarter_is_block216"] = facts["d07_rescale_quarter"] == b216.D07_RESCALE["L+-"]
+    facts["constants_quarter_symbolic"] = symbolic_line_constants(QUARTER)
+    facts["constants_half_symbolic"] = symbolic_line_constants(HALF)
+    facts["constants_quarter_is_table"] = facts["constants_quarter_symbolic"] == branch_constants()
+    facts["constants_half_is_rescaled"] = facts["constants_half_symbolic"] == rescaled_constants(facts["line_rescale_half"])
+    facts["constants_quarter_is_rescaled"] = facts["constants_quarter_symbolic"] == rescaled_constants(facts["line_rescale_quarter"])
+    facts["constants_d07_table"] = tuple((sp.Rational(ratio), power) for ratio, power, _ in b216.BRANCH_TABLE[("L+-", "line 1/4 + D07 1/4")][0])
+    facts["constants_d07_is_rescaled"] = facts["constants_d07_table"] == tuple(sorted(
+        ((facts["d07_rescale_quarter"], 2), (R(128, 99), 2), (R(16, 11), 4)), key=lambda t: t[0]))
+    g1 = b213.metric_candidates(cells["witness zero"])[0].applyfunc(sp.radsimp)
+    quadrics = quadric_values(g1, NONZERO_POINTS)
+    for label, constants in (("witness half", facts["constants_half_symbolic"]), ("witness d07", facts["constants_d07_table"])):
+        multisets = bench["block_multisets"][(label, "onsite", "pencil")]
+        facts[f"multisets {label}"] = {z: multisets[z] for z in NONZERO_POINTS}
+        ratios = ratio_multisets(multisets, quadrics, NONZERO_POINTS)
+        facts[f"ratios {label}"] = ratios
+        facts[f"shape_visible {label}"] = all(ratios[z] == constants for z in NONZERO_POINTS)
+        facts[f"pure_t_multiset {label}"] = multisets[PURE_T]
+        facts[f"pure_t_predicted {label}"] = tuple(sorted(((sp.radsimp(c * quadrics[PURE_T]), m) for c, m in constants), key=lambda t: t[0]))
+        facts[f"direct_agrees {label}"] = bench["table"][(label, "onsite", "pencil")]["agree"]
+        facts[f"g1_bench {label}"] = g1_from_bench(multisets)
+        facts[f"g1_bench_equals_g1 {label}"] = all(facts[f"g1_bench {label}"][k] == g1[i, j] for k, (i, j) in ENTRY_INDEX.items())
+    return facts
+
+
+# ---------------------------------------------------------------------------
+# G (part 2). THE CONTROL AND THE OVERLAP FOLD: the all-plus W1 at the eight
+# points (the triply-mixed point in particular); the overlap Bloch fold's
+# parameter dependence at the new points at symbolic signs, moduli and
+# parameters; the overlap bench at the line point against zero parameters
+# ---------------------------------------------------------------------------
+def measure_control_overlap(cells: dict, bench: dict) -> dict:
+    facts: dict = {}
+    g1 = b213.metric_candidates(cells["W1 zero"])[0].applyfunc(sp.radsimp)
+    facts["w1_g1_full"] = tuple(tuple(g1[i, j] for j in range(3)) for i in range(3))
+    facts["w1_quadric_values"] = quadric_values(g1, NONZERO_POINTS)
+    entry = bench["table"][("W1 line", "onsite", "pencil")]
+    facts["w1_shapes"] = {z: entry["block_shapes"][z] for z in NONZERO_POINTS}
+    facts["w1_rational_roots"] = {z: entry["block_rational_roots"][z] for z in NONZERO_POINTS}
+    facts["w1_multisets_none"] = all(entry["block_multisets"][z] is None for z in NONZERO_POINTS)
+    facts["w1_rational_branch_is_quadric"] = all((facts["w1_quadric_values"][z], 2) in facts["w1_rational_roots"][z] for z in NONZERO_POINTS)
+    facts["w1_irreducible_degrees"] = {z: tuple(sorted(d for d, _, _ in entry["block_shapes"][z] if d > 1)) for z in NONZERO_POINTS}
+    facts["w1_triply_shape"] = entry["block_shapes"][TRIPLY]
+    facts["w1_triply_rational_roots"] = entry["block_rational_roots"][TRIPLY]
+    facts["w1_direct_agrees"] = entry["agree"]
+    smallest = {z: min(root for root, _ in facts["w1_rational_roots"][z]) for z in NONZERO_POINTS}
+    facts["w1_smallest_rational_is_quadric"] = all(smallest[z] == facts["w1_quadric_values"][z] for z in NONZERO_POINTS)
+    small = facts["w1_quadric_values"]
+    facts["w1_g1_bench"] = {"tt": small[PURE_T], "xx": small[PURE_X], "yy": small[PURE_Y],
+                            "tx": (small[MIXED_TX] - small[PURE_T] - small[PURE_X]) / 2,
+                            "ty": (small[MIXED_TY] - small[PURE_T] - small[PURE_Y]) / 2,
+                            "xy": (small[MIXED_XY] - small[PURE_X] - small[PURE_Y]) / 2}
+    facts["w1_g1_bench_equals_g1"] = all(facts["w1_g1_bench"][k] == g1[i, j] for k, (i, j) in ENTRY_INDEX.items())
+    facts["w1_triply_ratio_not_constant"] = not any(
+        sp.radsimp(root / small[TRIPLY]) in {c for c, _ in branch_constants()} for root, _ in facts["w1_triply_rational_roots"][1:])
+    h0, m, _ = b214.principal_part(cells["W1 line"], "onsite")
+    det = sp.radsimp(m.det(method="berkowitz"))
+    _, factors = sp.factor_list(det, *KAPPA, extension=sp.sqrt(6))
+    facts["w1_det_m_shape"] = tuple(sorted((sp.Poly(f, *KAPPA).total_degree(), p) for f, p in factors))
+    facts["w1_det_m_values"] = {z: det.subs(dict(zip(KAPPA, kappa_of(tuple(sp.sympify(e) for e in z))))) for z in NONZERO_POINTS}
+    # the overlap Bloch fold at symbolic face signs, moduli and parameters, at every point
+    rules = b213.overlap_rules(generic_cell(PARAMETER_SYMBOLS), b209.CORNERS, 3)
+    fold: dict = {}
+    for z in b213.bench_momenta(BENCH_EXTENT):
+        matrix = b213.bloch_matrix(rules, z, 3)
+        fold[momentum_literal(z)] = {
+            "parameters_present": tuple(str(p) for p in PARAMETER_SYMBOLS if p in matrix.free_symbols),
+            "parity_block": parity_block_literals(matrix),
+        }
+    facts["overlap_fold"] = fold
+    facts["overlap_fold_parameter_free_points"] = tuple(z for z in fold if fold[z]["parameters_present"] == ())
+    facts["overlap_fold_parity_blocks"] = {z: fold[z]["parity_block"] for z in fold if fold[z]["parity_block"] != ()}
+    facts["overlap_fold_star_line_values"] = {
+        z: tuple(sp.sympify(e).subs(dict(zip(PARAMETER_SYMBOLS, LINE_POINT))) for e in fold[z]["parity_block"])
+        for z in DOUBLY_MIXED_POINTS}
+    comparison: dict = {}
+    for reading in ("form", "pencil"):
+        line = bench["table"][("witness line", "overlap", reading)]["blocks"]
+        zero = bench["table"][("witness zero", "overlap", reading)]["blocks"]
+        comparison[reading] = {z: sp.expand(line[z] - zero[z]) == 0 for z in line}
+    facts["overlap_line_vs_zero"] = comparison
+    facts["overlap_line_equals_zero_points"] = tuple(z for z in comparison["form"] if comparison["form"][z] and comparison["pencil"][z])
+    facts["overlap_line_differs_points"] = tuple(z for z in comparison["form"] if not comparison["form"][z] and not comparison["pencil"][z])
+    ms = bench["block_multisets"]
+    facts["overlap_witness_pure_multisets"] = {(r, z): ms[("witness line", "overlap", r)][z] for r in ("form", "pencil") for z in PURE_POINTS}
+    facts["overlap_t_equals_y_not_x"] = all(
+        ms[("witness line", "overlap", r)][PURE_T] == ms[("witness line", "overlap", r)][PURE_Y] != ms[("witness line", "overlap", r)][PURE_X]
+        for r in ("form", "pencil"))
+    facts["overlap_triply_pencil"] = ms[("witness line", "overlap", "pencil")][TRIPLY]
+    facts["overlap_ty_pencil"] = ms[("witness line", "overlap", "pencil")][MIXED_TY]
+    facts["onsite_pure_points_coincide"] = len({ms[("witness line", "onsite", "pencil")][z] for z in PURE_POINTS}) == 1
+    return facts
+
+
+@dataclass(frozen=True)
+class Facts:
+    authority: AuthorityCertificate
+    construction: dict
+    bench: dict
+    identities: dict
+    shape: dict
+    rescalings: dict
+    control: dict
+    axiom_text: str
+    note_text: str
+    timings: dict
+
+
+def measure() -> Facts:
+    timings: dict = {}
+    started = time.monotonic_ns()
+
+    def lap(label: str) -> None:
+        nonlocal started
+        now = time.monotonic_ns()
+        timings[label] = (now - started) // 1_000_000
+        started = now
+        print(f"[phase] {label}: {timings[label]} ms", file=sys.stderr)
+
+    git_maybe("fetch", "origin", "main", "--quiet")
+    authority = authority_certificate(git_maybe("rev-parse", "origin/main"))
+    lap("authority")
+    census = b216.measure_census()
+    cells = bench_cells(census)
+    lap("census")
+    construction = measure_construction(census, cells)
+    lap("construction")
+    bench = measure_bench(cells)
+    lap("bench")
+    identities = measure_identities(cells, bench)
+    lap("identities")
+    shape = measure_shape(cells, bench)
+    lap("shape")
+    rescalings = measure_rescalings(cells, bench)
+    lap("rescalings")
+    control = measure_control_overlap(cells, bench)
+    lap("control")
+    axiom_text = (ROOT / AXIOM_PATH).read_text(encoding="utf-8") if (ROOT / AXIOM_PATH).is_file() else ""
+    note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
+    return Facts(authority, construction, bench, identities, shape, rescalings, control, axiom_text, note_text, timings)

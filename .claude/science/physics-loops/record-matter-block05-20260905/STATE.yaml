@@ -5,7 +5,7 @@ base: e249016f759f224d9b429932cd0d1db4d452dc1a
 campaign_start_utc: 2026-09-04T19:41:09Z
 campaign_deadline_utc: 2026-09-05T19:41:09Z
 checkpoint_minutes: 15
-phase: proof_and_execution_in_progress
+phase: frozen_science_publication_gates
 claim_type: bounded_theorem
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
@@ -18,9 +18,9 @@ artifact_role: theorem
 target_claim_id: null
 target_blocker_text: Repeated local Record formation sustaining a viable matter background with consistent energy accounting.
 source_of_blocker_text: user_goal
-runner_status: pending_root_review
-pr_status: not_ready
-open_pr_intake_count: 231
+runner_status: primary_9_pass_checker_9_pass
+pr_status: awaiting_publication_gates
+open_pr_intake_count: 232
 photons: reserved_for_other_worker
-next_action: review independent proof and executable implementations, then full gates and PR
+next_action: frozen full gates, then PR
 stop_condition: fixed campaign deadline; preserve outputs, report, release owned lock and pause heartbeat

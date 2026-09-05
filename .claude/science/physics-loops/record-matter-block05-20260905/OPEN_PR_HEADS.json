@@ -1,8 +1,16 @@
 {
   "repository": "jonathonreilly/qubit-lattice-axiom-framework",
-  "count": 231,
+  "count": 232,
   "reading_coverage_only": true,
   "rows": [
+    {
+      "number": 7980,
+      "title": "[physics-loop] u1-maxwell-landing-core block02 \u2014 bounded_theorem \u2014 bounded-support: the #7917 dynamics class against the four axioms (items 4/5 mutually redundant; payload, time rule, locality, conservation are the supplied residual, each with an exact witness)",
+      "headRefOid": "11fdd471a5dbe4ae9bce07bc56b9385fdd9c74c7",
+      "baseRefOid": "c404bf236bb88012684743014beab94728fe1045",
+      "updatedAt": "2026-09-05T03:20:05Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7980"
+    },
     {
       "number": 7979,
       "title": "[physics-loop] record-matter block04 \u2014 bounded_theorem \u2014 conditional-support \u2014 repeated matter with a shared energy ledger",
@@ -30,9 +38,9 @@
     {
       "number": 7976,
       "title": "[physics-loop] u1-maxwell-landing-core block01 \u2014 meta \u2014 open: the light-lane landing core (31 members at their own scope, the #7917 terminal, the two-branch photon split stated open)",
-      "headRefOid": "6427a989e07441b9289b32dfa0643fb8a246ab97",
+      "headRefOid": "c404bf236bb88012684743014beab94728fe1045",
       "baseRefOid": "e249016f759f224d9b429932cd0d1db4d452dc1a",
-      "updatedAt": "2026-09-04T22:29:22Z",
+      "updatedAt": "2026-09-05T03:18:45Z",
       "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7976"
     },
     {

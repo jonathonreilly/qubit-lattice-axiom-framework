@@ -1,7 +1,7 @@
 ---
 claim_id: native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
 claim_type: bounded_theorem
-claim_scope: "Conditional on the explicitly supplied finite ordinary-composition physical edge-qubit carrier, BKSF code, real hopping Hamiltonians, initial state, Born/Lueders event model and schedule: native single-site edge-Z events act as fair isometries preserving the surviving CAR state on nonbridges, and as signed component-parity projections on bridges. The updated code and original total number dictionary remain compatible through every history. Uniform live-edge selection gives the exact energy mean and variance bound stated below. A separately supplied positive-energy shared apparatus implements the history with exact total-energy accounting and the same moment bounds; with full initial nonbattery stationarity and independent cap-safe battery preparation it also has the ideal complete-history and conditional energy distributions. This is an alternative to occupation-site deletion, not its implementation or a derivation of formation, covariant carrier selection, nearest-neighbor admissibility, transport, renewal, or autonomous apparatus dynamics. Executable evidence is pending in this working draft."
+claim_scope: "Conditional on the explicitly supplied finite ordinary-composition physical edge-qubit carrier, BKSF code, real hopping Hamiltonians, initial state, Born/Lueders event model and schedule: native single-site edge-Z events act as fair isometries preserving the surviving CAR state on nonbridges, and as signed component-parity projections on bridges. The updated code and original total number dictionary remain compatible through every history. Uniform live-edge selection gives the exact energy mean and variance bound stated below. A separately supplied positive-energy shared apparatus implements the history with exact total-energy accounting and the same moment bounds; with full initial nonbattery stationarity and independent cap-safe battery preparation it also has the ideal complete-history and conditional energy distributions. This is an alternative to occupation-site deletion, not its implementation or a derivation of formation, covariant carrier selection, nearest-neighbor admissibility, transport, renewal, or autonomous apparatus dynamics."
 upstream_dependencies: []
 runner: scripts/native_edge_record_matter_instrument_2026_09_05.py
 ---
@@ -12,7 +12,7 @@ runner: scripts/native_edge_record_matter_instrument_2026_09_05.py
 
 **Type:** bounded_theorem
 
-**Status:** conditional-support; working draft pending executable review
+**Status:** conditional-support; independent audit unset
 
 **Audit:** unset; the independent audit lane owns any verdict.
 
@@ -52,14 +52,15 @@ degenerate storage; no bound on all controller memory is claimed.
 ## Machine status and premise account
 
 ```yaml
-actual_current_surface_status: bounded-support
+packet_helper_runner: scripts/native_edge_record_matter_instrument_independent_check_2026_09_05.py
+actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 claim_type_reason: "General finite operator proof with conditional physical placement and apparatus, supported by independent finite computations."
-trace_class: frontier_discovery
+trace_class: upstream_support
 target_claim_id: null
-target_blocker_text: null
-source_of_blocker_text: frontier_question
-reachability_to_target: unknown_frontier
+target_blocker_text: "Repeated local Record formation sustaining a viable matter background with consistent energy accounting."
+source_of_blocker_text: user_goal
+reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "Test continuing transport and a physical event/apparatus law on the common Record-matter carrier."
 conditional_surface_status: conditional-support
@@ -478,8 +479,74 @@ used as an authority for this self-contained proof.
 
 ## Executable evidence and independent review
 
-Working draft: primary, independent checker, actual mutation outcomes,
-source hashes, caches, finite case counts and reviewer findings will be
-inserted only after execution and root line-by-line review. No pending
-check is counted as passed. The primary and checker use separate contexts
-of the same model family with disjoint computational machinery.
+The [primary source](../scripts/native_edge_record_matter_instrument_2026_09_05.py)
+and [independent checker](../scripts/native_edge_record_matter_instrument_independent_check_2026_09_05.py)
+were reviewed line by line by the supervising model. The checker used a
+separate context of the same model family and read no primary source, output,
+or cache. It uses direct small Pauli matrices, an independently solved full
+intertwiner, occupation-sign CAR matrices, and an actual retained-battery
+fixture; the primary uses symbolic Pauli words and physical cube code columns.
+This is computational separation within one model family, not external peer
+review or an audit verdict. A separate cold proof review was also completed.
+
+The committed sources each pass nine check groups with zero failures in their
+canonical [primary cache](../logs/runner-cache/native_edge_record_matter_instrument_2026_09_05.txt)
+and [checker cache](../logs/runner-cache/native_edge_record_matter_instrument_independent_check_2026_09_05.txt).
+Both declare a 180-second timeout and one BLAS thread. The primary's canonical
+run reports 111.6 MiB peak RSS; no dense Fock square of axis 4096 is constructed.
+
+| Evidence family | Executed finite scope |
+|---|---|
+| Physical cube dictionary | All 4096 edge masks and 24576 live-edge cases: 16716 bridges and 7860 nonbridges; 10199 fixed-number parity layouts, of which 358 are empty. The 4096-by-128 physical code intertwines every original A/B/T generator with independently constructed CAR matrices, including a six-cycle phase. |
+| Repeated native events | Six physical-versus-CAR histories include sea and complex N=4 inputs, dwells, old boundary signs, deterministic and impossible outcomes, and a 4+4 component split. There are 52 nonzero final branches; maximum reported residual is 1.85e-13. The checker independently follows a full 384-leaf weighted edge/outcome tree, including zero-weight leaves. |
+| Energy and support | Actual branch densities test both moment identities and their uniform weights; q=1 is checked directly. Open cubes of sides 2 and 4 test the finite-volume energy bound. The checker explicitly constructs the 11-site endpoint-star union, radius two and diameter four. These are matter support bounds. |
+| Actual apparatus | On a physical four-edge square with Hamiltonian h_01+h_23 and the other two coefficients zero, one eight-level battery is retained through native Z_01 then Z_23 events. Exact commensurate transfers telescope on the full 8-by-4 code/packet domain. Both prefixes have zero reachable cap refusal and direct matter-plus-battery energy agreement. |
+| Exact comparison and its limit | Ground and degenerate full nonbattery stationary inputs, prepared independently of the cap-safe battery, give the ideal joint history and conditional energy distributions. Independently normalized nonzero first-history matter blocks differ from their ideal counterparts by maximum Frobenius distance 0.5194; battery purity is 0.6. This is an explicit conditional-state distinction, not just a difference between coherent history vectors. |
+
+The finite ladder fixture establishes the declared commensurate case only;
+the continuous cap and arbitrary finite-Hamiltonian statements are proved
+above. It does not simulate a general continuum battery on the cube.
+Twenty primary fiber/defect checks and independent checker fiber moments at
+q=4,3,2 test additional operator identities, including a correlated input.
+
+Eleven primary and eighteen checker final-source scratch mutations exit 1.
+The checker worker executed seventeen; root added the spectral-bound mutation
+on the unchanged checker, isolating that numerical family from its self digest.
+They cover hopping/orientation and loop signs, old Record signs, normalization,
+selector and moment coefficients, number, physical placement, native versus
+occupation projectors, battery shifts, history ordering, complex partial trace,
+fiber phases, commensurability, and integrity/envelope guards. The separate
+[mutation record](../.claude/science/physics-loops/record-matter-block05-20260905/MUTATION_CHECKS.md)
+contains exact defects and failure outputs. One attempted primary particle-hole
+mutation passed on its half-filled fixture and is explicitly excluded from the
+eleven effective mutations; the checker tests the full number dictionary and
+detects that defect. No unexecuted planned mutation is counted.
+
+Final source SHA-256 values are
+`05bc527d2d865acca27f55ce66b909eee8aa136eb7ab8d6d337b210addcfcf56`
+(primary) and
+`ebfef71248595e1cf621ee0464622fbc1d104f8028595d5334a30eab2ad314df`
+(checker). Sources were committed before canonical execution. Root review
+corrected an open-box versus finite-regular-graph conflation and required
+conditional matter blocks to be normalized separately for the coherence
+witness. All reported results use the corrected final source bytes.
+
+## Review record and hard landing condition
+
+The reviewed scope and corrections are recorded above. Outstanding at landing:
+add the following exact claim-scoped helper entry to
+`EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
+`docs/audit/scripts/build_citation_graph.py`:
+
+```python
+"native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05": [
+    "scripts/native_edge_record_matter_instrument_independent_check_2026_09_05.py",
+],
+```
+
+This is a hard landing condition; the author branch does not edit the registry.
+Before publication the complete delta plus this literal mapping is tested in a
+disposable current-main tree. Readiness must name both changed sources and a
+nonempty helper list containing the independent checker. It is a packet
+completeness check, not an audit verdict. The independent audit lane owns any
+scientific grade.

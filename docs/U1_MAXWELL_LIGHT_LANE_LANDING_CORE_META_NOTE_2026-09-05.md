@@ -745,6 +745,17 @@ conditional classification, not an axiom derivation or TOE-status change.");
 the second quotation in that bullet ("The four axioms do not currently select
 that class ...") was verbatim and stands. No other change.
 
+Post-open correction 2 (2026-09-05, from the block-03 primary's quote-fidelity
+check): the pack's supplied-input ledger (row 4) presented "order-independent
+site-level support forcing among corner records" as PR #7893's words; the
+phrase is a science-record précis and appears neither in that PR's body nor
+in the note on its head branch. Replaced in the ledger by the PR body's own
+sentences ("`G_v = (div E)_v - rho_v` is pure `Z`, commutes with the coupled
+hop and with the face ring exchange, and sums to `-Q`." and "Gauss's law is
+then a record-diagonal relation at each corner, i.e. a support condition of
+the law in the axioms' own vocabulary."). This note's own text did not carry
+the précis. No other change.
+
 ## Imports
 
 Every supplied input the chain carries, in plain language. For each: its

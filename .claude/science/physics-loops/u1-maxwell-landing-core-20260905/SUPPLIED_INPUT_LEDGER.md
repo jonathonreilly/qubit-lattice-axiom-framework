@@ -216,9 +216,11 @@ statement and no member exhibits it at the minimal payload.
 with a supplied background (`rho_v = 0` on tori; the staggered convention on
 #7911's ladder).
 
-**Leaned on by.** #7893 ("Gauss operators that commute with the coupled law
-and are implemented as order-independent site-level support forcing among
-corner records"), #7903, #7911, #7936-#7963; #7917's item 5; #7952 ("gauge
+**Leaned on by.** #7893 ("`G_v = (div E)_v - rho_v` is pure `Z`, commutes with
+the coupled hop and with the face ring exchange, and sums to `-Q`." and
+"Gauss's law is then a record-diagonal relation at each corner, i.e. a support
+condition of the law in the axioms' own vocabulary."), #7903, #7911,
+#7936-#7963; #7917's item 5; #7952 ("gauge
 transversality comes from the supplied ice constraint and carrier
 construction").
 
@@ -229,9 +231,9 @@ rather than a supplied constraint.
 **Derivability.** *Partial, shape only* (downgraded on the refuting check).
 Admissibility's reading note: "'available'/'admissible' denotes its support --
 on finite menus, exactly the possibilities of nonzero probability." #7893's
-Gauss operators are "order-independent site-level support forcing among
-corner records" — a restriction on the corner (edge-role) records around a
-vertex, NOT on a vertex's own menu: the vertex-role site carries no payload in
+Gauss's law is "a record-diagonal relation at each corner, i.e. a support
+condition of the law in the axioms' own vocabulary" — a restriction on the
+corner (edge-role) records around a vertex, NOT on a vertex's own menu: the vertex-role site carries no payload in
 any member (#7959; #7917 item 7), so there is no vertex distribution for the
 Admissibility sentence to constrain. The shape match is real (support
 determined by nearest-neighbor conditions) but it inherits the supplied role

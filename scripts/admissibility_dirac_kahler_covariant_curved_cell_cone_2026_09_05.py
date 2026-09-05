@@ -760,7 +760,7 @@ def measure_branches(census: dict) -> dict:
         table[(name, "line rescale 1/4")] = sp.radsimp(1 / (1 - QUARTER ** 2 / (v0 * v1)))
     facts["table"] = table
     facts["all_branches_k_free"] = all(all(kf for _, _, kf in entry[0]) and entry[1] == ()
-                                       for key, entry in table.items() if isinstance(key, tuple) and key[1].startswith("line"))
+                                       for key, entry in table.items() if isinstance(entry, tuple))
     return facts
 
 

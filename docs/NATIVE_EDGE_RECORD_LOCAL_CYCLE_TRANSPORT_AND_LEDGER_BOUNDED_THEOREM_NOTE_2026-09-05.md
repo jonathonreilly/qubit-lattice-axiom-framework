@@ -8,9 +8,9 @@ runner: scripts/native_edge_record_local_cycle_transport_2026_09_05.py
 
 # Native edge Record front: finite local transport and energy ledger
 
-**Date:** 2026-09-05  
-**Type:** bounded_theorem  
-**Status:** conditional-support; independent audit unset  
+**Date:** 2026-09-05
+**Type:** bounded_theorem
+**Status:** conditional-support; independent audit unset
 **Audit:** unset; the independent audit lane owns any verdict.
 
 ## Target and scope

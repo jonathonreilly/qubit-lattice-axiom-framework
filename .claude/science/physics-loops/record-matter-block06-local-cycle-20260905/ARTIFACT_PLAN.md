@@ -2,9 +2,9 @@
 
 ## Canonical claim
 
-Claim ID: native_edge_record_local_cycle_transport_and_ledger_bounded_theorem_note_2026-09-05  
-Claim type: bounded_theorem  
-Current surface: conditional-support  
+Claim ID: native_edge_record_local_cycle_transport_and_ledger_bounded_theorem_note_2026-09-05
+Claim type: bounded_theorem
+Current surface: conditional-support
 Audit: unset; the independent audit lane owns any verdict.
 
 | Surface | Role |

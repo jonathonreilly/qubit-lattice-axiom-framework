@@ -54,14 +54,14 @@ science.
 
 ## Value gate V1-V5
 
-V1 target: the user's repeated local Record formation blocker.  
+V1 target: the user's repeated local Record formation blocker.
 V2 connection: one local front now tests histories, continuity, transport,
-matter and a persistent ledger together.  
+matter and a persistent ledger together.
 V3 assumption reduction: the native-edge route avoids the separate
 occupation-to-Record compiler and an extra clean pointer, while retaining its
-explicit finite fixtures.  
+explicit finite fixtures.
 V4 falsifiability: each support condition is an executable fail gate in both
-runners.  
+runners.
 V5 non-relabeling: local-front and ledger checks are new surfaces relative to
 the parent native-edge theorem; no status promotion is claimed.
 

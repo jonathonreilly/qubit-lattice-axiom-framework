@@ -319,12 +319,12 @@ zero parameters: sixteen charpolys of degree 16, every one with **Bloch union
 | :---: | --- | --- | --- | --- |
 | L+− (mask 2) | `λ⁸ · (55296λ⁴ − 388672λ³ + 698656λ² − 422145λ + 69984)²` (irreducible quartic) | `{0×8, 9/8×2, 16/11×2, 18/11×4}` | `{0×8, 36481/55296×4, 89401/55296×4}` | `{0×8, 1×8}` |
 | all-plus `W1` | `λ⁸ · (129600λ⁴ − 647676λ³ + 1086353λ² − 711440λ + 147456)²` | `λ⁸ (15λ − 16)² · (4801335λ³ − 18293776λ² + 22913024λ − 9437184)²` | `{0×8, 116281/147456×4, 4844401/3686400×4}` = Block 214's | `{0×8, 1×8}` |
-| flat | irreducible factors (measured, not declared) | `{0×8, 1×2, 16/15×6}` | `{0×8, 1×8}` | `{0×8, 1×8}` |
+| flat | `λ⁸ (4λ² − 9λ + 4)² (16λ² − 33λ + 16)²` (measured, not declared) | `{0×8, 1×2, 16/15×6}` | `{0×8, 1×8}` | `{0×8, 1×8}` |
 
 The overlap charpolys at the line point **equal** those at zero parameters at
 both curved cells, and the overlap pencil is R5's `{0×8, 1×8}` everywhere
 (Block 213's statement, unchanged by the parameters). The timings: every
-direct charpoly under `0.2 s`, every Bloch union under `0.5 s` — the whole
+direct charpoly under `0.25 s`, every Bloch union under `0.35 s` — the whole
 bench phase `4 s`. Mutations `break_bench_multisets`, `break_bloch_equals_direct`,
 `break_bench_control`.
 

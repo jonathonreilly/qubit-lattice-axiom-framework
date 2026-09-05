@@ -74,6 +74,14 @@ temporary final-byte mutation copies all exit nonzero as recorded in
 MUTATION_CHECKS.md. The finite output is unchanged from the prototype
 receipt. No additional experiment or claim was added during packaging.
 
+## Publication
+
+The branch is published as open PR #7996 against the exact parent head branch
+of PR #7983. The PR is intentionally unmerged and carries no audit verdict.
+The final delta is limited to this block's note, two runners, two canonical
+receipts, packet bookkeeping, and the one zero-dependency citation-manifest
+node.
+
 ## Stop condition
 
 After the stacked PR is opened and the branch is clean, this block stops. Any

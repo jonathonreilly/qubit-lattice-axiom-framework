@@ -2,7 +2,7 @@
 
 ## Block06
 
-Open one stacked PR from
+Opened PR #7996 from
 physics-loop/record-matter-block06-local-cycle-20260905 against the exact
 head branch of PR #7983:
 
@@ -11,6 +11,8 @@ head branch of PR #7983:
 * surface enum: conditional-support
 * scope: finite local front, transport, matter-range diagnostics and scalar
   energy ledger
+
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7996
 
 Do not merge from this block. The audit lane owns any verdict or retained
 status.

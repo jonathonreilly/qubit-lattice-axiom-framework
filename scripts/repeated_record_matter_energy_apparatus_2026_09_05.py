@@ -110,6 +110,18 @@ def energy(hamiltonian: np.ndarray, covariance: np.ndarray) -> float:
     return float(np.real(np.sum(hamiltonian * covariance.T)))
 
 
+def gaussian_energy_second_moment(
+    hamiltonian: np.ndarray, covariance: np.ndarray
+) -> float:
+    """Return <dGamma(h)^2> from a number-conserving Gaussian covariance."""
+    identity = np.eye(len(covariance), dtype=np.complex128)
+    mean = energy(hamiltonian, covariance)
+    variance = np.trace(
+        covariance @ hamiltonian @ (identity - covariance) @ hamiltonian
+    )
+    return mean**2 + float(np.real(variance))
+
+
 def projector_residual(covariance: np.ndarray) -> float:
     hermitian = float(np.max(np.abs(covariance - covariance.conj().T)))
     idempotent = float(np.max(np.abs(covariance @ covariance - covariance)))
@@ -584,6 +596,146 @@ def complex_gaussian_fixture() -> dict[str, float]:
         "mean_number": enumeration["number_residual"],
         "branch_selection": enumeration["branch_selection_max"],
         "live": enumeration["live"],
+    }
+
+
+def phase_rotated_uniform_probe() -> dict[str, float]:
+    """Enumerate unconditional events after common complex-H dwell at three phases."""
+    size, particles = 7, 3
+    rng = np.random.default_rng(2026090529)
+    raw = rng.normal(size=(size, particles)) + 1j * rng.normal(
+        size=(size, particles)
+    )
+    orbitals, _ = np.linalg.qr(raw)
+    covariance = orbitals @ orbitals.conj().T
+    raw_h = rng.normal(size=(size, size)) + 1j * rng.normal(size=(size, size))
+    hamiltonian = (raw_h + raw_h.conj().T) / 2.0
+    np.fill_diagonal(hamiltonian, 0.0)
+    hamiltonian *= 0.8 / np.max(np.abs(hamiltonian))
+
+    records: dict[int, int] = {}
+    for site in (1, 5):
+        _probability_one, branches = occupation_branches(covariance, site)
+        outcome, _probability, covariance = max(branches, key=lambda branch: branch[1])
+        records[site] = outcome
+        hamiltonian = delete_site(hamiltonian, site)
+
+    live_sites = np.array([site for site in range(size) if site not in records], dtype=int)
+    live_count = len(live_sites)
+    uniform_weights = np.ones(live_count, dtype=float)
+    uniform_weights /= np.sum(uniform_weights)
+    values, vectors = np.linalg.eigh(hamiltonian)
+    initial_energy = energy(hamiltonian, covariance)
+    initial_live_number = float(
+        np.trace(covariance[np.ix_(live_sites, live_sites)]).real
+    )
+    max_energy_residual = 0.0
+    max_number_residual = 0.0
+    max_branch_identity = 0.0
+    max_record_residual = 0.0
+    max_second_residual = 0.0
+    max_second_conservation = 0.0
+    max_star_bound_residual = 0.0
+    max_variance_budget_residual = 0.0
+    max_star_square_bound = 0.0
+    initial_second = gaussian_energy_second_moment(hamiltonian, covariance)
+    initial_variance = initial_second - initial_energy**2
+    for tau in (0.0, 0.23, 0.71):
+        phases = np.exp(-1j * tau * values)
+        unitary = (vectors * phases[None, :]) @ vectors.conj().T
+        rotated = unitary @ covariance @ unitary.conj().T
+        expected_energies: list[float] = []
+        expected_numbers: list[float] = []
+        expected_seconds: list[float] = []
+        star_seconds: list[float] = []
+        star_square_bounds: list[float] = []
+        max_second_conservation = max(
+            max_second_conservation,
+            abs(gaussian_energy_second_moment(hamiltonian, rotated) - initial_second),
+        )
+        for site in live_sites:
+            probability_one, branches = occupation_branches(rotated, int(site))
+            post_hamiltonian = delete_site(hamiltonian, int(site))
+            direct_energy = energy(post_hamiltonian, rotated)
+            weighted_energy = sum(
+                probability * energy(post_hamiltonian, candidate)
+                for _outcome, probability, candidate in branches
+            )
+            max_branch_identity = max(
+                max_branch_identity, abs(weighted_energy - direct_energy)
+            )
+            direct_second = gaussian_energy_second_moment(post_hamiltonian, rotated)
+            weighted_second = sum(
+                probability
+                * gaussian_energy_second_moment(post_hamiltonian, candidate)
+                for _outcome, probability, candidate in branches
+            )
+            max_branch_identity = max(
+                max_branch_identity, abs(weighted_second - direct_second)
+            )
+            star = hamiltonian - post_hamiltonian
+            star_second = gaussian_energy_second_moment(star, rotated)
+            star_spectrum = np.linalg.eigvalsh(star)
+            star_operator_norm = max(
+                float(np.sum(star_spectrum[star_spectrum > 0.0])),
+                float(-np.sum(star_spectrum[star_spectrum < 0.0])),
+            )
+            star_square_bound = star_operator_norm**2
+            max_star_square_bound = max(max_star_square_bound, star_square_bound)
+            max_star_bound_residual = max(
+                max_star_bound_residual, max(0.0, star_second - star_square_bound)
+            )
+            expected_energies.append(weighted_energy)
+            expected_numbers.append(initial_live_number - probability_one)
+            expected_seconds.append(weighted_second)
+            star_seconds.append(star_second)
+            star_square_bounds.append(star_square_bound)
+        mean_energy = float(np.dot(uniform_weights, expected_energies))
+        mean_number = float(np.dot(uniform_weights, expected_numbers))
+        mean_second = float(np.dot(uniform_weights, expected_seconds))
+        second_reference = (
+            (1.0 - 4.0 / live_count) * initial_second
+            + float(np.dot(uniform_weights, star_seconds))
+        )
+        post_variance = mean_second - mean_energy**2
+        variance_budget = initial_variance + float(
+            np.dot(uniform_weights, star_square_bounds)
+        )
+        max_second_residual = max(
+            max_second_residual, abs(mean_second - second_reference)
+        )
+        max_variance_budget_residual = max(
+            max_variance_budget_residual, max(0.0, post_variance - variance_budget)
+        )
+        max_energy_residual = max(
+            max_energy_residual,
+            abs(mean_energy - (1.0 - 2.0 / live_count) * initial_energy),
+        )
+        max_number_residual = max(
+            max_number_residual,
+            abs(mean_number - (1.0 - 1.0 / live_count) * initial_live_number),
+        )
+        for site, outcome in records.items():
+            row = rotated[site, :].copy()
+            row[site] = 0.0
+            max_record_residual = max(
+                max_record_residual,
+                abs(float(rotated[site, site].real) - outcome),
+                max_abs(row),
+            )
+    return {
+        "energy": max_energy_residual,
+        "number": max_number_residual,
+        "branch": max_branch_identity,
+        "record": max_record_residual,
+        "second": max_second_residual,
+        "second_conservation": max_second_conservation,
+        "star_bound": max_star_bound_residual,
+        "variance_budget": max_variance_budget_residual,
+        "max_star_square": max_star_square_bound,
+        "live": float(live_count),
+        "records": float(len(records)),
+        "phases": 3.0,
     }
 
 
@@ -1207,6 +1359,27 @@ def main() -> int:
         f"max_branch_selection={complex_fixture['branch_selection']:.6f}",
     )
 
+    phase_probe = phase_rotated_uniform_probe()
+    phase_residual = max(
+        phase_probe["energy"],
+        phase_probe["number"],
+        phase_probe["branch"],
+        phase_probe["record"],
+        phase_probe["second"],
+        phase_probe["second_conservation"],
+        phase_probe["star_bound"],
+        phase_probe["variance_budget"],
+    )
+    report.check(
+        "G1",
+        "phase-rotated uniform-live E, N, and H^2 laws after previous Records",
+        phase_residual < TOL_ENERGY,
+        f"phases={int(phase_probe['phases'])} live={int(phase_probe['live'])} "
+        f"prior_records={int(phase_probe['records'])} "
+        f"max_res={phase_residual:.3e} H2_res={phase_probe['second']:.3e} "
+        f"star_square_bound={phase_probe['max_star_square']:.6f}",
+    )
+
     hamiltonian = build_pi_flux_hamiltonian()
     eigenvalues, eigenvectors = np.linalg.eigh(hamiltonian)
     negative = eigenvalues < 0.0
@@ -1327,6 +1500,7 @@ def main() -> int:
     finite_density_energy = control_pre * fraction / N_SITES
     finite_density_bound = -0.5 * fraction
     exact_live_number = N_PARTICLES * (N_SITES - N_EVENTS) / N_SITES
+    variance_growth_budget = float(np.max(np.diag(hamiltonian @ hamiltonian))) * N_EVENTS
     report.check(
         "G3",
         "regular half-filled finite-density arithmetic",
@@ -1336,7 +1510,8 @@ def main() -> int:
         and abs(exact_live_number / (N_SITES - N_EVENTS) - 0.5) < TOL_NUMBER,
         f"E0/M={control_pre/N_SITES:+.9f} K={N_EVENTS} "
         f"EmeanK/M={finite_density_energy:+.9f} bound={finite_density_bound:+.9f} "
-        f"E[Nlive]/live={exact_live_number/(N_SITES-N_EVENTS):.6f}",
+        f"E[Nlive]/live={exact_live_number/(N_SITES-N_EVENTS):.6f} "
+        f"variance_increment_bound={variance_growth_budget:.3f}",
     )
 
     report.lines.append(

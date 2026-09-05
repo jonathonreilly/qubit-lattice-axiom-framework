@@ -32,7 +32,7 @@ import numpy as np
 from scipy.linalg import expm
 
 
-AUDIT_TIMEOUT_SEC = 180.0
+AUDIT_TIMEOUT_SEC = 180
 # The primary runner imports the native edge carrier from the stacked parent
 # block; pin that dependency in the canonical cache envelope as well.
 AUDIT_INPUT_PATHS = ("scripts/native_edge_record_matter_instrument_2026_09_05.py",)

@@ -463,3 +463,431 @@ def axis_type(rotation: sp.Matrix) -> str:
         return "identity"
     vector = space[0]
     return {1: "face", 2: "edge", 3: "body"}[sum(1 for x in vector if x != 0)]
+
+
+# ---------------------------------------------------------------------------
+# the group: multiplication table, subgroups, conjugacy classes -- COMPUTED
+# ---------------------------------------------------------------------------
+def group_table(lifts: tuple) -> tuple:
+    """The 24 x 24 multiplication table of the lifted matrices (closure and
+    the identity are measured, not assumed)."""
+    index = {m: i for i, m in enumerate(lifts)}
+    table = []
+    for a in lifts:
+        row = []
+        for b in lifts:
+            product = sp.ImmutableMatrix(a * b)
+            row.append(index.get(product, -1))
+        table.append(tuple(row))
+    return tuple(table)
+
+
+def closure(table: tuple, generators: frozenset, identity: int) -> frozenset:
+    elements = {identity} | set(generators)
+    frontier = list(elements)
+    while frontier:
+        g = frontier.pop()
+        for h in list(elements):
+            for product in (table[g][h], table[h][g]):
+                if product not in elements:
+                    elements.add(product)
+                    frontier.append(product)
+    return frozenset(elements)
+
+
+def all_subgroups(table: tuple, identity: int) -> tuple:
+    """Closures of every pair of elements, deduplicated; then the completeness
+    certificate: adjoining any element to any listed subgroup and closing gives
+    a listed subgroup (so every subgroup, generated element by element, is
+    listed)."""
+    n = len(table)
+    found = set()
+    for i in range(n):
+        for j in range(n):
+            found.add(closure(table, frozenset((i, j)), identity))
+    complete = all(closure(table, s | {g}, identity) in found for s in found for g in range(n))
+    return tuple(sorted(found, key=lambda s: (len(s), sorted(s)))), complete
+
+
+def inverse_of(table: tuple, g: int, identity: int) -> int:
+    return [h for h in range(len(table)) if table[g][h] == identity][0]
+
+
+def conjugacy_classes(table: tuple, subgroups: tuple, identity: int) -> tuple:
+    n = len(table)
+    classes, seen = [], set()
+    for s in subgroups:
+        if s in seen:
+            continue
+        orbit = set()
+        for g in range(n):
+            ginv = inverse_of(table, g, identity)
+            orbit.add(frozenset(table[table[g][h]][ginv] for h in s))
+        seen |= orbit
+        classes.append(tuple(sorted(orbit, key=sorted)))
+    return tuple(classes)
+
+
+def class_signature(subgroup: frozenset, orders: tuple, axes: tuple) -> tuple:
+    """The multiset of (element order, axis type) -- the geometric label of a
+    subgroup class, computed from its elements."""
+    return tuple(sorted((orders[g], axes[g]) for g in subgroup))
+
+
+SIGNATURE_NAMES = {
+    ((1, "identity"),): "1",
+    ((1, "identity"), (2, "face")): "C2_face",
+    ((1, "identity"), (2, "edge")): "C2_edge",
+    ((1, "identity"), (3, "body"), (3, "body")): "C3_body",
+    ((1, "identity"), (2, "face"), (4, "face"), (4, "face")): "C4_face",
+    ((1, "identity"), (2, "face"), (2, "face"), (2, "face")): "V4_faces",
+    ((1, "identity"), (2, "edge"), (2, "edge"), (2, "face")): "V4_face_edges",
+    ((1, "identity"), (2, "edge"), (2, "edge"), (2, "edge"), (3, "body"), (3, "body")): "S3_body",
+    ((1, "identity"), (2, "edge"), (2, "edge"), (2, "face"), (2, "face"), (2, "face"), (4, "face"), (4, "face")): "D4_face",
+    tuple(sorted([(1, "identity")] + [(2, "face")] * 3 + [(3, "body")] * 8)): "T",
+    tuple(sorted([(1, "identity")] + [(2, "face")] * 3 + [(3, "body")] * 8 + [(2, "edge")] * 6 + [(4, "face")] * 6)): "O",
+}
+
+
+# ---------------------------------------------------------------------------
+# D. THE STAR, derived from the lane's wedge
+# ---------------------------------------------------------------------------
+def hodge_star() -> sp.Matrix:
+    """* e_c = sign e_{c-bar} with the sign fixed by e_c ^ (* e_c) = e_{txy}
+    (the volume form = the full corner with coefficient +1), the wedge being
+    the products of the lane's D(e_mu) -- no sign is assumed."""
+    unit = [unit_raising(mu) for mu in range(3)]
+    star = sp.zeros(8, 8)
+    for c in CORNERS:
+        complement = tuple(1 - x for x in c)
+        vector = sp.zeros(8, 1)
+        vector[corner_index(complement), 0] = 1
+        for mu in reversed([mu for mu in range(3) if c[mu] == 1]):
+            vector = unit[mu] * vector
+        star[corner_index(complement), corner_index(c)] = vector[7, 0]
+    return sp.ImmutableMatrix(star)
+
+
+def degree_projector(degree: int) -> sp.Matrix:
+    p = sp.zeros(8, 8)
+    for i in DEGREE_INDICES[degree]:
+        p[i, i] = 1
+    return p
+
+
+def star_facts(lifts: tuple) -> dict:
+    star = hodge_star()
+    dk = raising_matrix()
+    facts: dict = {"star_signs": tuple(int(star[corner_index(tuple(1 - x for x in c)), corner_index(c)]) for c in CORNERS)}
+    facts["star_squares"] = tuple(int((star * star * degree_projector(k))[DEGREE_INDICES[k][0], DEGREE_INDICES[k][0]]) for k in range(4))
+    facts["star_square_is_scalar"] = residual_count(star * star - sp.diag(*[facts["star_squares"][b209.CORNER_DEGREE[i]] for i in range(8)])) == 0
+    # * D(kappa) = eps_k D(kappa)^T * on k-forms, the sign measured per degree
+    adjoint_signs = []
+    for k in range(3):
+        left = (star * dk * degree_projector(k)).applyfunc(sp.expand)
+        right = (dk.T * star * degree_projector(k)).applyfunc(sp.expand)
+        sign = [e for e in (1, -1) if residual_count((left - e * right).applyfunc(sp.expand)) == 0]
+        adjoint_signs.append(sign[0] if sign else 0)
+    facts["star_adjoint_signs"] = tuple(adjoint_signs)
+    facts["star_commutes_with_every_lift"] = all(residual_count(L * star - star * L) == 0 for L in lifts)
+    p111 = b214.hodge_complement_permutation()
+    facts["p111_is_unsigned_star"] = residual_count(p111 - star.applyfunc(abs)) == 0
+    twists = []
+    for L in lifts:
+        twist = L * p111 * L.T
+        diagonal = (twist * p111).applyfunc(sp.expand)
+        twists.append(tuple(int(diagonal[i, i]) for i in range(8)) if residual_count(twist.applyfunc(abs) - p111) == 0 else None)
+    facts["p111_twists"] = tuple(twists)
+    facts["p111_commutes_with_lift_count"] = sum(1 for t in twists if t == (1,) * 8)
+    facts["p111_commutes_with_unsigned_permutation"] = all(
+        residual_count(P * p111 - p111 * P) == 0 for P in (L.applyfunc(abs) for L in lifts))
+    # the 1 <-> 2 block of the star on the duality pairs (1,6), (2,5), (4,3)
+    facts["star_pair_signs"] = tuple(int(star[j, i]) for i, j in PAIRS)
+    return facts
+
+
+# ---------------------------------------------------------------------------
+# the family, the gauge, the locus machinery
+# ---------------------------------------------------------------------------
+def family(class_key: tuple, params: tuple, moduli: tuple = MODULI) -> sp.Matrix:
+    g0, g1, v0, v1 = moduli
+    return b214.formal_cell(b211.REPRESENTATIVES[class_key], g0, g1, v0, v1, params)
+
+
+def sign_vectors() -> tuple:
+    """Block 211's 64 corner-sign vectors: the six middle corners free, the
+    empty and the full corner fixed at +1."""
+    out = []
+    for signs in itertools.product((1, -1), repeat=6):
+        e = [1] * 8
+        for k, i in enumerate((1, 2, 4, 3, 5, 6)):
+            e[i] = signs[k]
+        out.append(tuple(e))
+    return tuple(out)
+
+
+def canonical_subspace(rows: list, unknowns: tuple):
+    """The linear ideal generated by the rows, as the RREF of the coefficient
+    matrix -- a canonical form, so equal subspaces compare equal."""
+    if not rows:
+        return ()
+    matrix = sp.Matrix(rows)
+    reduced, pivots = matrix.rref()
+    return tuple(tuple(reduced[i, j] for j in range(len(unknowns))) for i in range(len(pivots)))
+
+
+def subspace_contains(inner, outer) -> bool:
+    """V(inner) is a subset of V(outer): every generator of `outer` lies in the
+    row space of `inner`."""
+    if not outer:
+        return True
+    if not inner:
+        return False
+    a = sp.Matrix(list(inner))
+    b = sp.Matrix(list(inner) + list(outer))
+    return a.rank() == b.rank()
+
+
+def constraints(h: sp.Matrix, lift: sp.Matrix, e: tuple, unknowns: tuple) -> tuple:
+    """(forced moduli conditions, parameter subspace) for T = E L: the entries
+    of T H T^T - H, each either a parameter-linear form (collected) or a
+    moduli-only expression (which forces a condition on the moduli)."""
+    # T = E L is a signed permutation: T e_i = eps_i e_{p(i)} with eps_i the
+    # lift's sign at column i times e at the target, so (T H T^T)[p(i), p(j)]
+    # = eps_i eps_j H[i, j] -- the congruence entry by entry, no products.
+    p = [next(r for r in range(8) if lift[r, i] != 0) for i in range(8)]
+    eps = [int(lift[p[i], i]) * e[p[i]] for i in range(8)]
+    rows, forced = [], set()
+    for i in range(8):
+        for j in range(i, 8):
+            if h[i, j] == 0 and h[p[i], p[j]] == 0:
+                continue
+            entry = sp.expand(eps[i] * eps[j] * h[i, j] - h[p[i], p[j]])
+            if entry == 0:
+                continue
+            if not (entry.free_symbols & set(unknowns)):
+                forced.add(str(sp.factor(entry)))
+                continue
+            poly = sp.Poly(entry, *unknowns)
+            if poly.total_degree() != 1 or (poly.free_symbols - set(unknowns)):
+                forced.add("NONLINEAR:" + str(entry))
+                continue
+            rows.append([poly.coeff_monomial(u) for u in unknowns])
+    return frozenset(forced), canonical_subspace(rows, unknowns)
+
+
+def irredundant(components: list) -> tuple:
+    """Drop every component contained in another: (F, V) is inside (F', V')
+    when F' is a subset of F and V is a subset of V'."""
+    kept = []
+    for f, v in components:
+        dominated = any((f2 <= f and subspace_contains(v, v2)) and (f2, v2) != (f, v)
+                        for f2, v2 in components)
+        if not dominated and (f, v) not in kept:
+            kept.append((f, v))
+    return tuple(sorted(kept, key=lambda fv: (sorted(fv[0]), fv[1])))
+
+
+def intersect(left: tuple, right: tuple, unknowns: tuple) -> tuple:
+    out = []
+    for f1, v1 in left:
+        for f2, v2 in right:
+            out.append((f1 | f2, canonical_subspace([list(r) for r in v1 + v2], unknowns)))
+    return irredundant(out)
+
+
+def per_rotation_loci(h: sp.Matrix, lifts: tuple, unknowns: tuple, twisted: bool) -> tuple:
+    """For every rotation, the union of components over the admissible sign
+    vectors (twisted) or over E = 1 alone (strict)."""
+    vectors = sign_vectors() if twisted else ((1,) * 8,)
+    return tuple(irredundant([constraints(h, L, e, unknowns) for e in vectors]) for L in lifts)
+
+
+def subgroup_locus(per_rotation: tuple, subgroup: frozenset, unknowns: tuple) -> tuple:
+    result = ((frozenset(), ()),)
+    for g in sorted(subgroup):
+        result = intersect(result, per_rotation[g], unknowns)
+    return result
+
+
+def describe(components: tuple, unknowns: tuple) -> tuple:
+    """A printable literal: each component as (forced conditions, generators)."""
+    out = []
+    for f, v in components:
+        generators = tuple(str(sp.expand(sum(coefficient * u for coefficient, u in zip(row, unknowns)))) for row in v)
+        out.append((tuple(sorted(f)), generators))
+    return tuple(out)
+
+
+# ---------------------------------------------------------------------------
+# THE MEASUREMENTS -- every fact once, before any mutation flag is read
+# ---------------------------------------------------------------------------
+def measure_group() -> dict:
+    """C: the 24 rotations, the corner action as a representation, the sign
+    rule measured, the intertwining, the subgroup classes computed."""
+    rots = rotations()
+    lifts = tuple(corner_action(R) for R in rots)
+    facts: dict = {"rotation_count": len(rots), "all_det_one": all(R.det() == 1 for R in rots)}
+    facts["distinct_lifts"] = len(set(lifts))
+    table = group_table(lifts)
+    facts["closed"] = all(x >= 0 for row in table for x in row)
+    identity = lifts.index(sp.ImmutableMatrix(sp.eye(8)))
+    facts["identity_index"] = identity
+    orders = tuple(matrix_order(L) for L in lifts)
+    facts["order_counts"] = tuple((n, orders.count(n)) for n in (1, 2, 3, 4))
+    facts["homomorphism"] = all(
+        table[i][j] == lifts.index(sp.ImmutableMatrix(corner_action(rots[i] * rots[j])))
+        for i in range(24) for j in range(24))
+    facts["sign_rule_matches_wedge"] = all(orientation_lift(R) == L for R, L in zip(rots, lifts))
+    facts["lift_on_empty_and_full_corner"] = tuple(sorted(set((int(L[0, 0]), int(L[7, 7])) for L in lifts)))
+    dk = raising_matrix()
+    facts["intertwines"] = all(
+        residual_count((L * dk * L.T - dk.subs(
+            {k: sum(R[i, j] * KAPPA[j] for j in range(3)) for i, k in enumerate(KAPPA)}, simultaneous=True)
+        ).applyfunc(sp.expand)) == 0 for R, L in zip(rots, lifts))
+    facts["lift_orthogonal"] = all(residual_count(L * L.T - sp.eye(8)) == 0 for L in lifts)
+    # the sign rule MEASURED: the intertwining monomial lifts are exactly +-L(R)
+    measured = tuple(monomial_intertwiners(R) for R in rots)
+    facts["monomial_intertwiner_count"] = tuple(sorted(set(len(m) for m in measured)))
+    facts["monomial_intertwiners_are_plus_minus_lift"] = all(
+        set(m) == {L, sp.ImmutableMatrix(-L)} for m, L in zip(measured, lifts))
+    # the wedge rule read off D versus the ordered-monomial sign
+    rule = wedge_rule()
+    facts["wedge_is_ordered_monomial"] = all(v == ordered_monomial_sign(mu, c) for (mu, c), v in rule.items())
+    facts["wedge_rule_count"] = len(rule)
+    # subgroups and their conjugacy classes, from the table
+    subgroups, complete = all_subgroups(table, identity)
+    classes = conjugacy_classes(table, subgroups, identity)
+    axes = tuple(axis_type(R) for R in rots)
+    labelled = []
+    for cls in classes:
+        signature = class_signature(cls[0], orders, axes)
+        labelled.append((SIGNATURE_NAMES.get(signature, "UNNAMED:" + str(signature)), len(cls[0]), len(cls), cls[0]))
+    labelled.sort(key=lambda x: (x[1], x[0]))
+    facts["subgroup_count"] = len(subgroups)
+    facts["subgroups_complete"] = complete
+    facts["class_table"] = tuple((name, order, size) for name, order, size, _ in labelled)
+    facts["representatives"] = {name: rep for name, _, _, rep in labelled}
+    facts["lifts"] = lifts
+    facts["rotations"] = rots
+    facts["table"] = table
+    facts["axes"] = axes
+    facts["orders"] = orders
+    return facts
+
+
+def measure_star(group: dict) -> dict:
+    facts = star_facts(group["lifts"])
+    # THE STAR LINE: the 1 <-> 2 cross block of the family is proportional to
+    # the star exactly when (D16, D25, D34) is proportional to the star's pair
+    # signs; the linear ideal of that line, canonical.
+    sy, sx, st = facts["star_pair_signs"][1:]
+    lam = sp.Symbol("lam")
+    line = canonical_subspace([[0, 1, 0, -sy * st], [0, 0, 1, -sx * st]], PARAMETER_SYMBOLS)
+    facts["star_line_generators"] = describe(((frozenset(), line),), PARAMETER_SYMBOLS)[0][1]
+    facts["star_line_is_block214_plane"] = tuple(sorted(facts["star_line_generators"])) == tuple(sorted(b214.PLANE))
+    # the cross block on the line IS lam * star (1 -> 2) with D07 the free 0 <-> 3 multiple
+    star = hodge_star()
+    h = family((1, 1), (A07, lam * sy, lam * sx, lam * st))
+    even, odd = b213.even_odd(3)
+    ones, twos = DEGREE_INDICES[1], DEGREE_INDICES[2]
+    cross = h.extract(list(twos), list(ones))
+    facts["cross_block_is_lam_star_on_line"] = residual_count(cross - lam * star.extract(list(twos), list(ones))) == 0
+    facts["d07_is_zero_three_star_multiple"] = h[7, 0] == A07 * star[7, 0]
+    # the mechanism: the onsite M_oo vanishes on the star line and not off it
+    hs = family((1, 1), PARAMETER_SYMBOLS)
+    _, m, _ = b214.principal_part(hs, "onsite")
+    m_oo = m.extract(odd, odd)
+    on_line = m_oo.subs({B16: lam * sy, C25: lam * sx, D34: lam * st})
+    facts["m_oo_zero_on_star_line"] = residual_count(on_line.applyfunc(sp.expand)) == 0
+    facts["m_oo_nonzero_off_line"] = residual_count(m_oo.subs({B16: lam, C25: lam, D34: lam}).applyfunc(sp.expand)) > 0
+    # the star-line ideal equals the coefficient ideal of M_oo in the parameters
+    entries = [sp.expand(m_oo[i, j]) for i in range(4) for j in range(4) if sp.expand(m_oo[i, j]) != 0]
+    rows = []
+    for entry in entries:
+        for coefficient in sp.Poly(entry, *KAPPA).coeffs():
+            rows.append([sp.Poly(coefficient, *PARAMETER_SYMBOLS).coeff_monomial(u) for u in PARAMETER_SYMBOLS])
+    facts["m_oo_ideal_is_star_line"] = canonical_subspace(rows, PARAMETER_SYMBOLS) == line
+    return facts
+
+
+def measure_census(group: dict) -> dict:
+    """E: per gauge class, per subgroup class: the twisted and the strict
+    loci with the fate of the shears, from the per-rotation data."""
+    lifts = group["lifts"]
+    facts: dict = {"twisted": {}, "strict": {}, "per_rotation_twisted_shears_survive": {},
+                   "per_rotation_strict_shears_survive": {}}
+    for key in GAUGE_CLASSES:
+        h = family(key, PARAMETER_SYMBOLS)
+        print(f"[census] gauge class {key}", file=sys.stderr)
+        twisted = per_rotation_loci(h, lifts, PARAMETER_SYMBOLS, True)
+        strict = per_rotation_loci(h, lifts, PARAMETER_SYMBOLS, False)
+        facts["per_rotation_twisted_shears_survive"][key] = tuple(any(not f for f, _ in comps) for comps in twisted)
+        facts["per_rotation_strict_shears_survive"][key] = tuple(any(not f for f, _ in comps) for comps in strict)
+        for name, rep in group["representatives"].items():
+            facts["twisted"][(key, name)] = describe(subgroup_locus(twisted, rep, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS)
+            facts["strict"][(key, name)] = describe(subgroup_locus(strict, rep, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS)
+    return facts
+
+
+def measure_overlap(group: dict) -> dict:
+    """F: the overlap fold sees the sum only; its parity; its loci in s."""
+    lifts = group["lifts"]
+    h_full, _, _ = b214.principal_part(family((1, 1), PARAMETER_SYMBOLS), "overlap")
+    h_sum, _, _ = b214.principal_part(family((1, 1), (SUM, 0, 0, 0)), "overlap")
+    facts: dict = {"overlap_sees_sum_only": residual_count(
+        (h_full - h_sum.subs(SUM, sum(PARAMETER_SYMBOLS))).applyfunc(sp.expand)) == 0}
+    even, odd = b213.even_odd(3)
+    p111 = b214.hodge_complement_permutation()
+    facts["overlap_parity_block_is_sum_over_four_p111"] = residual_count(
+        (h_sum.extract(even, odd) - SUM / 4 * p111.extract(even, odd)).applyfunc(sp.expand)) == 0
+    facts["twisted"], facts["strict"] = {}, {}
+    for key in GAUGE_CLASSES:
+        h, _, _ = b214.principal_part(family(key, (SUM, 0, 0, 0)), "overlap")
+        print(f"[overlap] gauge class {key}", file=sys.stderr)
+        twisted = per_rotation_loci(h, lifts, (SUM,), True)
+        strict = per_rotation_loci(h, lifts, (SUM,), False)
+        for name, rep in group["representatives"].items():
+            facts["twisted"][(key, name)] = describe(subgroup_locus(twisted, rep, (SUM,)), (SUM,))
+            facts["strict"][(key, name)] = describe(subgroup_locus(strict, rep, (SUM,)), (SUM,))
+    return facts
+
+
+def measure_controls(group: dict) -> dict:
+    """G: positivity off the plane, onsite parity, the flat cell, the gauge
+    congruence in the field, the reconciliation with Block 214's cell."""
+    lifts = group["lifts"]
+    facts: dict = {}
+    w1 = (sp.Rational(1, 4), sp.Rational(1, 4), sp.Rational(15, 16), sp.Integer(1))   # (g0, g1, v0, v1) at W1
+    witness = family((1, 1), (0, QUARTER, 0, 0), w1)
+    minors = tuple(witness[:k, :k].det() for k in range(1, 9))
+    facts["positivity_witness_minors"] = minors
+    facts["positivity_witness_is_pd"] = all(m > 0 for m in minors)
+    plane = [sp.sympify(g) for g in b214.PLANE]
+    facts["positivity_witness_off_plane"] = any(
+        g.subs({B16: QUARTER, C25: 0, D34: 0}) != 0 for g in plane)
+    h = family((1, 1), PARAMETER_SYMBOLS)
+    even, odd = b213.even_odd(3)
+    h_eo = h.extract(even, odd)
+    facts["onsite_parity_block_entries"] = tuple(sorted(str(x) for x in h_eo if x != 0))
+    facts["onsite_parity_preserved_iff_all_zero"] = set(h_eo.free_symbols) == set(PARAMETER_SYMBOLS) and all(
+        residual_count(h_eo.subs({p: 0 for p in PARAMETER_SYMBOLS if p != q})) == 1 for q in PARAMETER_SYMBOLS)
+    flat = family((1, 1), PARAMETER_SYMBOLS, (sp.Integer(0), sp.Integer(0), sp.Integer(1), sp.Integer(1)))
+    facts["flat_zero_is_identity"] = residual_count(flat.subs({p: 0 for p in PARAMETER_SYMBOLS}) - sp.eye(8)) == 0
+    twisted = per_rotation_loci(flat, lifts, PARAMETER_SYMBOLS, True)
+    strict = per_rotation_loci(flat, lifts, PARAMETER_SYMBOLS, False)
+    facts["flat_twisted"] = {name: describe(subgroup_locus(twisted, rep, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS)
+                             for name, rep in group["representatives"].items()}
+    facts["flat_strict"] = {name: describe(subgroup_locus(strict, rep, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS)
+                            for name, rep in group["representatives"].items()}
+    zero = {p: 0 for p in PARAMETER_SYMBOLS}
+    base = family((1, 1), PARAMETER_SYMBOLS).subs(zero)
+    facts["gauge_congruence_in_field"] = all(
+        any(residual_count((sp.diag(*e) * base * sp.diag(*e) - family(key, PARAMETER_SYMBOLS).subs(zero)).applyfunc(sp.expand)) == 0
+            for e in sign_vectors()) for key in GAUGE_CLASSES)
+    cell, free, _ = b214.cell_with_parameters("W1")
+    renamed = cell.subs({s: dict(zip(PARAMETER_NAMES, PARAMETER_SYMBOLS))[str(s)] for s in cell.free_symbols
+                         if str(s) in PARAMETER_NAMES})
+    facts["family_is_block214_cell_at_w1"] = residual_count((renamed - family((1, 1), PARAMETER_SYMBOLS, w1)).applyfunc(sp.cancel)) == 0 \
+        and free == PARAMETER_NAMES
+    return facts

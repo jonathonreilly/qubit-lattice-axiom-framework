@@ -18,7 +18,7 @@ target_blocker_text: "The duality parameters are switched on. The graded-cone th
 source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "Decide whether any framework principle prefers the plane D16 = D34 = -D25 (on which the cone is parameter-free) or the sum s = 0 (overlap); run the refuting checker on disjoint machinery against the parity mechanism, the D07 congruence, the union-locus Groebner bases and the single-quadric systems; then carry the parameter-dependent volume registration into the #7970 tension record."
+next_trace_action: "Decide whether any framework principle prefers the plane D16 = D34 = -D25 (on which the cone is parameter-free) or the sum s = 0 (overlap); the refuting checker has run on disjoint machinery (FIX FIRST, folded: the parity mechanism, the D07 congruence, the union-locus ideals and the single-quadric systems all confirmed); carry the parameter-dependent volume registration into the #7970 tension record."
 conditional_surface_status: "conditional on the unlanded stack: Blocks 201-213 are landed in this branch history and not on origin/main; the content is exact at the stated instance and remains audit-required; no audit verdict is anticipated here"
 hypothetical_axiom_status: null
 admitted_observation_status: null
@@ -267,8 +267,9 @@ ideal in `s` has radical `(s)`. Gate `F-4`, mutation `break_union_locus`.
 At symbolic parameters, under both assemblies at `W1`,
 `det M = Q²` with `Q` a single irreducible factor over `QQ(parameters)` (over
 `QQ(√6)(parameters)` at the locus witnesses), of total degree 4 in `κ` and of
-degree **exactly 2 and even** in the parameters: `Q = Q0 + Q2`, `Q0 = ±det B`
-the degree-diagonal product of the two Hodge quadrics, `Q2` a quadratic form in
+degree **exactly 2 and even** in the parameters: `Q = Q0 + Q2`, `Q0 = ±` the
+degree-diagonal product of the two Hodge quadrics (at `W1` that is `±(45/8) det B`;
+the rational content sits in front, `det M = (8/45)² Q²` — checker `CK-07`), `Q2` a quadratic form in
 `(D16, D25, D34)` (in `s` under overlap) with quartic coefficients. At `W1`,
 `D16` alone: `Q = Q0 + D16² (6 kt² ky² − 3 kt kx ky² + 6 kx² ky²)`, the
 checker's quartic recovered. Gate `F-5`.
@@ -379,7 +380,7 @@ shear. Recorded here; no bridge is supplied (`G-1`, `G-2`).
 | 1 | free names, carriers, reconciliation at zero | `D07, D16, D25, D34`; eight antidiagonal entries; equal to Block 213's cells | `C` |
 | 2 | onsite `H0 = D`; overlap `H0 = H0(0) + (s/4) P111` | identities at the formal family | `C` |
 | 3 | flat control at zero parameters | `H = I`, `{0×8, 1×8}`, `Q = |k|⁴` | `D` |
-| 4 | deformed flat cell | `Q = |k|⁴ + Q2_flat`, `D07` absent, plane restores | `D` |
+| 4 | deformed flat cell | `Q = −|k|⁴ + Q2_flat`, `D07` absent, plane restores | `D` |
 | 5 | Bloch union = direct bench at `W1 + D16`, `W1 + D07` | both assemblies, both readings | `E` |
 | 6 | `M_ee`, `M_oo` | `u`, `N` as displayed | `F-1` |
 | 7 | `D07` congruence | `Uᵀ M U = M|₀`, `D0 → D0 − D07²/D3` | `F-2` |
@@ -453,7 +454,7 @@ shear. Recorded here; no bridge is supplied (`G-1`, `G-2`).
 > whole plane and the system is inconsistent at `D16 = 1/4`;
 > under overlap `H0 = H0(0) + (s/4) P₁₁₁` and `M` depends on `s` alone, with
 > the union at `s = 0` only; the flat cell with a parameter on has `H ≠ I`, its
-> `det M` is `Q²` with `Q = |k|⁴ + Q2`, `D07` absent, `Q = |k|⁴` restored on
+> `det M` is `Q²` with `Q = −|k|⁴ + Q2_flat`, `D07` absent, `Q = −|k|⁴` restored on
 > the plane; the pencil branches at the four declared points are the recorded
 > literals, the `D07` rescaling of the 0-form branch exact; the shears register
 > with the parameters on and no parameter point cancels either (coefficient
@@ -580,7 +581,7 @@ changes sign. Echoes, noted, not interpreted.
 ## N5 — the fence
 
 ```text
-N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS PARAMETER, PARITY, CONE, LOCUS AND BRANCH ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the kernel, the two assemblies, the principal part M = H0 D + D^T H0, Block 211's cell form with D07, D16, D25, D34 FREE and Block 213's witnesses are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'PARAMETER' NAMES A FREE COORDINATE OF ONE SOLVED LINEAR SYSTEM AND NO VALUE IS SELECTED. 'CONE' NAMES THE ZERO SET OF det M(kappa), NO LIGHT CONE; 'BRANCH' AN EIGENVALUE OF AN EXACT 8 x 8 MATRIX, NO PROPAGATOR.\nper_site: The four names sit on the eight antidiagonal entries and at zero the cell IS Block 213's at all eight cells; onsite the folded H0 IS the cell; overlap H0 = H0(0) + (s/4) P111 with s the sum of the four; the flat cell at zero parameters is the identity with R5's multisets {0 x8, 1 x8}; with a parameter on it is NOT the identity: det M = Q^2, Q = |k|^4 + Q2, D07 absent, |k|^4 restored on the plane.\nper_mode: AT SYMBOLIC MODULI AND PARAMETERS: M_eo = B is parameter-free; M_ee borders corner 0 by u = ((D07 + D34) kt, (D25 - D07) kx, (D07 + D16) ky); M_oo is the zero-diagonal [(D16 + D25) kt, (D34 - D16) kx, -(D25 + D34) ky] on the 1-forms with corner 7 empty, since row 0 of the raising part is zero: U = I - (D07/D3) E_70 gives U^T M U = M at D07 = 0 and U^T H0 U = H0 at D07 = 0 with D0 -> D0 - D07^2/D3.\nper_block: det M = det B^2 identically in kappa IFF D16 = D34 = -D25 (onsite, any D07) and IFF s = 0 (overlap), by lex Groebner bases at W1 and the two locus witnesses; off the plane det M is ONE IRREDUCIBLE QUARTIC SQUARED at symbolic parameters at W1, Q = Q0 + Q2 with Q2 an even quadratic in the parameters; at W1 the two-quadric eliminant on the slices D16, D25, D34 alone and D16 = D25 = D34 is s^2; the line-factor test and the full eliminant off the slices are NOT computed.\nlattice_wide: No parameter point makes the cone one quadric squared at W1 under either assembly; at L+- and L-+ (onsite) det M is (k^T G1 k)^4 along the plane (s, -s, s) and not at D16 = 1/4: Block 213's locus persists on the plane and dies off it. At W1 with D16 = 1/4 the pencil branches are the roots of one irreducible quartic, doubled; with D07 = 1/4 the 0-form branch is k^T D1 k / (D0 - D07^2/D3) and the others are Block 213's; at L+- with D07 = 1/4 the constants are {128/119, 32/27, 4/3, 4/3}: STILL NOT SCALAR.\nper_scope: REGISTRATION. The shears move det M with the parameters on and NO parameter point cancels either (coefficient ideal (1)); det M is proportional to its unit-volume value at zero parameters and NOT with them on: the volumes enter the cone through the parameters (formal family; #7970 record carried, not resolved). OPEN: a principle preferring the plane or the sum; the assembly and the reading; the locus off the slices; no dynamics, continuum or gravity is supplied.\nRESULT: EACH DUALITY PARAMETER BREAKS THE GRADE PARITY OF THE FOLDED ONSITE H0; D07 IS REMOVED FROM THE PRINCIPAL PART BY AN EXACT UNIPOTENT CONGRUENCE; THE CONE IS THE UNION OF THE TWO HODGE CONES EXACTLY ON THE PLANE D16 = D34 = -D25 (OVERLAP: s = 0) AND ONE IRREDUCIBLE QUARTIC SQUARED OFF IT; NO PARAMETER POINT RESTORES A SINGLE METRIC'S CONE OR A SCALAR SYMBOL OFF BLOCK 213's LOCUS, WHICH PERSISTS EXACTLY ON THE PLANE; THE DEFORMED FLAT CELL IS NOT THE IDENTITY; THE VOLUMES ENTER THE CONE THROUGH THE PARAMETERS. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-213 STAND; Block 213's REOPEN item 7 is ANSWERED. Fable primary relaunched; refuting checker PENDING.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero.
+N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS PARAMETER, PARITY, CONE, LOCUS AND BRANCH ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the kernel, the two assemblies, the principal part M = H0 D + D^T H0, Block 211's cell form with D07, D16, D25, D34 FREE and Block 213's witnesses are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'PARAMETER' NAMES A FREE COORDINATE OF ONE SOLVED LINEAR SYSTEM AND NO VALUE IS SELECTED. 'CONE' NAMES THE ZERO SET OF det M(kappa), NO LIGHT CONE; 'BRANCH' AN EIGENVALUE OF AN EXACT 8 x 8 MATRIX, NO PROPAGATOR.\nper_site: The four names sit on the eight antidiagonal entries and at zero the cell IS Block 213's at all eight cells; onsite the folded H0 IS the cell; overlap H0 = H0(0) + (s/4) P111 with s the sum of the four; the flat cell at zero parameters is the identity with R5's multisets {0 x8, 1 x8}; with a parameter on it is NOT the identity: det M = Q^2, Q = -|k|^4 + Q2, D07 absent, Q2 = 0 on the plane where det M = |k|^8 is restored.\nper_mode: AT SYMBOLIC MODULI AND PARAMETERS: M_eo = B is parameter-free; M_ee borders corner 0 by u = ((D07 + D34) kt, (D25 - D07) kx, (D07 + D16) ky); M_oo is the zero-diagonal [(D16 + D25) kt, (D34 - D16) kx, -(D25 + D34) ky] on the 1-forms with corner 7 empty, since row 0 of the raising part is zero: U = I - (D07/D3) E_70 gives U^T M U = M at D07 = 0 and U^T H0 U = H0 at D07 = 0 with D0 -> D0 - D07^2/D3.\nper_block: det M = det B^2 identically in kappa IFF D16 = D34 = -D25 (onsite, any D07) and IFF s = 0 (overlap), by lex Groebner bases at W1 and the two locus witnesses; off the plane det M is ONE IRREDUCIBLE QUARTIC SQUARED at symbolic parameters at W1, Q = Q0 + Q2 with Q2 an even quadratic in the parameters; at W1 the two-quadric eliminant on the slices D16, D25, D34 alone and D16 = D25 = D34 is s^2; the line-factor test and the full eliminant off the slices are NOT computed.\nlattice_wide: No parameter point makes the cone one quadric squared at W1 under either assembly; at L+- and L-+ (onsite) det M is (k^T G1 k)^4 along the plane (s, -s, s) and not at D16 = 1/4: Block 213's locus persists on the plane and dies off it. At W1 with D16 = 1/4 the pencil branches are the roots of one irreducible quartic, doubled; with D07 = 1/4 the 0-form branch is k^T D1 k / (D0 - D07^2/D3) and the others are Block 213's; at L+- with D07 = 1/4 the constants are {128/119, 32/27, 4/3, 4/3}: STILL NOT SCALAR.\nper_scope: REGISTRATION. The shears move det M with the parameters on and NO parameter point cancels either (coefficient ideal (1)); det M is proportional to its unit-volume value at zero parameters and NOT with them on: the volumes enter the cone through the parameters (formal family; #7970 record carried, not resolved). OPEN: a principle preferring the plane or the sum; the assembly and the reading; the locus off the slices; no dynamics, continuum or gravity is supplied.\nRESULT: EACH DUALITY PARAMETER BREAKS THE GRADE PARITY OF THE FOLDED ONSITE H0; D07 IS REMOVED FROM THE PRINCIPAL PART BY AN EXACT UNIPOTENT CONGRUENCE; THE CONE IS THE UNION OF THE TWO HODGE CONES EXACTLY ON THE PLANE D16 = D34 = -D25 (OVERLAP: s = 0) AND ONE IRREDUCIBLE QUARTIC SQUARED OFF IT; NO PARAMETER POINT RESTORES A SINGLE METRIC'S CONE OR A SCALAR SYMBOL OFF BLOCK 213's LOCUS, WHICH PERSISTS EXACTLY ON THE PLANE; THE DEFORMED FLAT CELL IS NOT THE IDENTITY; THE VOLUMES ENTER THE CONE THROUGH THE PARAMETERS. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-213 STAND; Block 213's REOPEN item 7 is ANSWERED. Fable primary relaunched; Opus refuting checker (third seat) FIX FIRST with no blocker, one sign restatement corrected, folded.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero.
 ```
 
 ---
@@ -665,9 +666,34 @@ can cascade into another.
   seat died by emitting a single response over the output limit; nothing of
   that seat's work existed on the branch, so nothing was inherited or audited.
   Block 213's runner is imported read-only and never edited.
-- **Refuting checker:** pending (to be run on disjoint machinery by the
-  supervisor's schedule); no checker finding is folded here.
-- **Independence class:** to be filled by the supervisor.
+- **Refuting checker:** Opus 5, third seat (the first seat died at a session
+  limit before writing; the second hung on an unanswerable permission prompt and
+  was stopped with nothing written). Disjoint sympy machinery built from Block
+  213's landed objects; this runner read for its literals, never imported.
+  Verdict **FIX FIRST, no blocker**: `CK-01`–`CK-09`, `CK-11`, `CK-12` CONFIRM
+  (the raising part and its zero row; the carriers; the parity blocks sign for
+  sign; the `D07` congruence at symbolic moduli with `det U = 1`, so `det M` is
+  `D07`-free identically; the overlap fold; the union-locus ideal at `W1` by a
+  change of variables with no Gröbner basis, exactly `(a², ab, b²)`; `det M =
+  (64/2025) Q²` with `Q` irreducible and squarefree; `128/119` and `5/36`; the
+  single-quadric residual systems; the overlap ideal `(s²)`). `CK-10` CORRECTS
+  one sign in three restatements of the deformed flat quartic (claim-register
+  row 4, the narrowest true statement, the `N5` fence): `Q = −|k|⁴ + Q2_flat`,
+  as `N4` and gate `D-2` state — applied. `CK-07`'s scale caveat applied (`Q0`
+  is the bare product of the two Hodge quadrics, `(45/8) det B` at `W1`, the
+  content `8/45` sitting in the prefactor). `CK-09` extra, recorded here and
+  not claimed in `N4`: at `L−+` the same tuning expression is `−5/36 < 0`, so
+  no real `D07` ties the two constants there. `CK-13` COULD NOT TEST (time):
+  the bench multisets, the branch tables beyond the two constants, the
+  registration, the `F-8` eliminant, the planted defects — these rest on the
+  runner's gates and the 26-mutation census. Record:
+  `CHECKER_block214_findings.md` in the block pack.
+- **Independence class:** single family (Claude), cross-model — two Fable
+  primary seats, three Opus 5 refuting-checker seats (the third delivered),
+  supervisor line-by-line review with hand verification (the block identity,
+  the direction of the `D07` bordering, the union determinant identity, the
+  plane with the `M_ee = 0` line inside it, `128/119`, `5/36`) and the full
+  mutation census (26 of 26, each failing exactly its own family).
 - **Runs recorded:** the first measurement run (literals pinned from it), the
   certified baseline and the declared mutations, recorded in
   `RESULTS_block214.md`.
@@ -678,4 +704,5 @@ Block 213's `REOPEN` item 7, run exactly on the four-parameter box: the parity
 mechanism and the `D07` congruence at symbolic moduli and parameters, the union
 locus and the factorization type by Gröbner bases at every witness, the fate of
 the coincidence locus, the pencil branches, the deformed flat cell and the
-registration under the parameters — with the refuting checker pending.
+registration under the parameters — with the refuting checker's findings folded
+(one sign restatement corrected; no load-bearing result changed).

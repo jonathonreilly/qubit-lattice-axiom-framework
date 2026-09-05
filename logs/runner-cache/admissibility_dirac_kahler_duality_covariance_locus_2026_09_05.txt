@@ -1,0 +1,291 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.py
+runner_sha256: 94c114dff527f4ed1b62e79ecdd020a03aead45665cf52191fd4a953e847c6a5
+input_fingerprint_sha256: 8f0bf02f7647fa7d38b92f9f619e6ebc4b986f0fb48b4f890477137c15760520
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 117.66
+status: ok
+----- stdout -----
+[phase] authority: 586 ms
+[phase] group: 11869 ms
+[phase] star: 104 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 28505 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 44014 ms
+[phase] controls: 30123 ms
+== BLOCK 215: the covariance locus of the four duality parameters -- measured facts ==
+authority: AuthorityCertificate(fixed_authority=True, parent_pin_is_commit=True, parent_is_ancestor=True, parent_artifact_blobs=True, stale_is_real_ancestor=True, stale_carries_neither_artifact=True, machinery_import_landed=True, inputs_readable=7)
+group rotation_count: 24
+group distinct_lifts: 24
+group closed: True
+group homomorphism: True
+group order_counts: ((1, 1), (2, 9), (3, 8), (4, 6))
+group sign_rule_matches_wedge: True
+group monomial_intertwiner_count: (2,)
+group intertwines: True
+group wedge_is_ordered_monomial: True
+group subgroup_count: 30
+group subgroups_complete: True
+group class_table: (('1', 1, 1), ('C2_edge', 2, 6), ('C2_face', 2, 3), ('C3_body', 3, 4), ('C4_face', 4, 3), ('V4_face_edges', 4, 3), ('V4_faces', 4, 1), ('S3_body', 6, 4), ('D4_face', 8, 3), ('T', 12, 1), ('O', 24, 1))
+star star_signs: (1, 1, -1, 1, 1, -1, 1, 1)
+star star_squares: (1, 1, 1, 1)
+star star_square_is_scalar: True
+star star_adjoint_signs: (1, -1, 1)
+star star_commutes_with_every_lift: True
+star p111_is_unsigned_star: True
+star p111_twists: ((1, 1, 1, 1, 1, 1, 1, 1), (1, 1, 1, 1, 1, 1, 1, 1), (1, 1, 1, 1, 1, 1, 1, 1), (1, 1, 1, 1, 1, 1, 1, 1), (1, -1, -1, 1, 1, -1, -1, 1), (1, -1, -1, 1, 1, -1, -1, 1), (1, -1, -1, 1, 1, -1, -1, 1), (1, -1, -1, 1, 1, -1, -1, 1), (1, 1, -1, -1, -1, -1, 1, 1), (1, 1, -1, -1, -1, -1, 1, 1), (1, 1, -1, -1, -1, -1, 1, 1), (1, 1, -1, -1, -1, -1, 1, 1), (1, 1, -1, -1, -1, -1, 1, 1), (1, 1, -1, -1, -1, -1, 1, 1), (1, 1, -1, -1, -1, -1, 1, 1), (1, 1, -1, -1, -1, -1, 1, 1), (1, -1, -1, 1, 1, -1, -1, 1), (1, -1, -1, 1, 1, -1, -1, 1), (1, -1, -1, 1, 1, -1, -1, 1), (1, -1, -1, 1, 1, -1, -1, 1), (1, 1, 1, 1, 1, 1, 1, 1), (1, 1, 1, 1, 1, 1, 1, 1), (1, 1, 1, 1, 1, 1, 1, 1), (1, 1, 1, 1, 1, 1, 1, 1))
+star p111_commutes_with_lift_count: 8
+star p111_commutes_with_unsigned_permutation: True
+star star_pair_signs: (1, 1, -1, 1)
+star star_line_generators: ('D16 - D34', 'D25 + D34')
+star star_line_is_block214_plane: True
+star cross_block_is_lam_star_on_line: True
+star d07_is_zero_three_star_multiple: True
+star m_oo_zero_on_star_line: True
+star m_oo_nonzero_off_line: True
+star m_oo_ideal_is_star_line: True
+census per_rotation_twisted_shears_survive: {(1, 1): (True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True), (1, -1): (True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True), (-1, 1): (True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True), (-1, -1): (True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True)}
+census per_rotation_strict_shears_survive: {(1, 1): (True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True), (1, -1): (True, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False), (-1, 1): (True, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False), (-1, -1): (True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False)}
+census twisted ((-1, -1), '1'): (((), ()),)
+census twisted ((-1, -1), 'C2_edge'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((-1, -1), 'C2_face'): (((), ()),)
+census twisted ((-1, -1), 'C3_body'): (((), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g0',), ('D16 + D34', 'D25 + D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 + D34', 'D25 + D34')))
+census twisted ((-1, -1), 'C4_face'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((-1, -1), 'D4_face'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((-1, -1), 'O'): (((), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g0',), ('D16 + D34', 'D25 + D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 + D34', 'D25 + D34')))
+census twisted ((-1, -1), 'S3_body'): (((), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g0',), ('D16 + D34', 'D25 + D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 + D34', 'D25 + D34')))
+census twisted ((-1, -1), 'T'): (((), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g0',), ('D16 + D34', 'D25 + D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 + D34', 'D25 + D34')))
+census twisted ((-1, -1), 'V4_face_edges'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((-1, -1), 'V4_faces'): (((), ()),)
+census twisted ((-1, 1), '1'): (((), ()),)
+census twisted ((-1, 1), 'C2_edge'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((-1, 1), 'C2_face'): (((), ()),)
+census twisted ((-1, 1), 'C3_body'): (((), ('D16 + D34', 'D25 + D34')), (('g0',), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')))
+census twisted ((-1, 1), 'C4_face'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((-1, 1), 'D4_face'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((-1, 1), 'O'): (((), ('D16 + D34', 'D25 + D34')), (('g0',), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')))
+census twisted ((-1, 1), 'S3_body'): (((), ('D16 + D34', 'D25 + D34')), (('g0',), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')))
+census twisted ((-1, 1), 'T'): (((), ('D16 + D34', 'D25 + D34')), (('g0',), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')))
+census twisted ((-1, 1), 'V4_face_edges'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((-1, 1), 'V4_faces'): (((), ()),)
+census twisted ((1, -1), '1'): (((), ()),)
+census twisted ((1, -1), 'C2_edge'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((1, -1), 'C2_face'): (((), ()),)
+census twisted ((1, -1), 'C3_body'): (((), ('D16 + D34', 'D25 + D34')), (('g0',), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')))
+census twisted ((1, -1), 'C4_face'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((1, -1), 'D4_face'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((1, -1), 'O'): (((), ('D16 + D34', 'D25 + D34')), (('g0',), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')))
+census twisted ((1, -1), 'S3_body'): (((), ('D16 + D34', 'D25 + D34')), (('g0',), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')))
+census twisted ((1, -1), 'T'): (((), ('D16 + D34', 'D25 + D34')), (('g0',), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')))
+census twisted ((1, -1), 'V4_face_edges'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((1, -1), 'V4_faces'): (((), ()),)
+census twisted ((1, 1), '1'): (((), ()),)
+census twisted ((1, 1), 'C2_edge'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((1, 1), 'C2_face'): (((), ()),)
+census twisted ((1, 1), 'C3_body'): (((), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g0',), ('D16 + D34', 'D25 + D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 + D34', 'D25 + D34')))
+census twisted ((1, 1), 'C4_face'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((1, 1), 'D4_face'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((1, 1), 'O'): (((), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g0',), ('D16 + D34', 'D25 + D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 + D34', 'D25 + D34')))
+census twisted ((1, 1), 'S3_body'): (((), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g0',), ('D16 + D34', 'D25 + D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 + D34', 'D25 + D34')))
+census twisted ((1, 1), 'T'): (((), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g0',), ('D16 + D34', 'D25 + D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 + D34', 'D25 + D34')))
+census twisted ((1, 1), 'V4_face_edges'): (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+census twisted ((1, 1), 'V4_faces'): (((), ()),)
+census twisted_distinct_per_class: {((1, 1), '1'): 1, ((1, 1), 'C2_face'): 1, ((1, 1), 'C2_edge'): 3, ((1, 1), 'C3_body'): 1, ((1, 1), 'V4_faces'): 1, ((1, 1), 'C4_face'): 3, ((1, 1), 'V4_face_edges'): 3, ((1, 1), 'S3_body'): 1, ((1, 1), 'D4_face'): 3, ((1, 1), 'T'): 1, ((1, 1), 'O'): 1, ((1, -1), '1'): 1, ((1, -1), 'C2_face'): 1, ((1, -1), 'C2_edge'): 3, ((1, -1), 'C3_body'): 1, ((1, -1), 'V4_faces'): 1, ((1, -1), 'C4_face'): 3, ((1, -1), 'V4_face_edges'): 3, ((1, -1), 'S3_body'): 1, ((1, -1), 'D4_face'): 3, ((1, -1), 'T'): 1, ((1, -1), 'O'): 1, ((-1, 1), '1'): 1, ((-1, 1), 'C2_face'): 1, ((-1, 1), 'C2_edge'): 3, ((-1, 1), 'C3_body'): 1, ((-1, 1), 'V4_faces'): 1, ((-1, 1), 'C4_face'): 3, ((-1, 1), 'V4_face_edges'): 3, ((-1, 1), 'S3_body'): 1, ((-1, 1), 'D4_face'): 3, ((-1, 1), 'T'): 1, ((-1, 1), 'O'): 1, ((-1, -1), '1'): 1, ((-1, -1), 'C2_face'): 1, ((-1, -1), 'C2_edge'): 3, ((-1, -1), 'C3_body'): 1, ((-1, -1), 'V4_faces'): 1, ((-1, -1), 'C4_face'): 3, ((-1, -1), 'V4_face_edges'): 3, ((-1, -1), 'S3_body'): 1, ((-1, -1), 'D4_face'): 3, ((-1, -1), 'T'): 1, ((-1, -1), 'O'): 1}
+census strict ((-1, -1), '1'): (((), ()),)
+census strict ((-1, -1), 'C2_edge'): ((('g0',), ('D16 + D25',)),)
+census strict ((-1, -1), 'C2_face'): ((('g0', 'g1'), ()),)
+census strict ((-1, -1), 'C3_body'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((-1, -1), 'C4_face'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((-1, -1), 'D4_face'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((-1, -1), 'O'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((-1, -1), 'S3_body'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((-1, -1), 'T'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((-1, -1), 'V4_face_edges'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((-1, -1), 'V4_faces'): ((('g0', 'g1'), ()),)
+census strict ((-1, 1), '1'): (((), ()),)
+census strict ((-1, 1), 'C2_edge'): ((('g0',), ('D16 + D25',)),)
+census strict ((-1, 1), 'C2_face'): ((('g0', 'g1'), ()),)
+census strict ((-1, 1), 'C3_body'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((-1, 1), 'C4_face'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((-1, 1), 'D4_face'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((-1, 1), 'O'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((-1, 1), 'S3_body'): ((('g0',), ('D16 - D34', 'D25 + D34')),)
+census strict ((-1, 1), 'T'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((-1, 1), 'V4_face_edges'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((-1, 1), 'V4_faces'): ((('g0', 'g1'), ()),)
+census strict ((1, -1), '1'): (((), ()),)
+census strict ((1, -1), 'C2_edge'): ((('g0',), ('D16 + D25',)),)
+census strict ((1, -1), 'C2_face'): ((('g0', 'g1'), ()),)
+census strict ((1, -1), 'C3_body'): ((('g1',), ('D16 - D34', 'D25 + D34')),)
+census strict ((1, -1), 'C4_face'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((1, -1), 'D4_face'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((1, -1), 'O'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((1, -1), 'S3_body'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((1, -1), 'T'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((1, -1), 'V4_face_edges'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((1, -1), 'V4_faces'): ((('g0', 'g1'), ()),)
+census strict ((1, 1), '1'): (((), ()),)
+census strict ((1, 1), 'C2_edge'): ((('g0',), ('D16 + D25',)),)
+census strict ((1, 1), 'C2_face'): ((('g0', 'g1'), ()),)
+census strict ((1, 1), 'C3_body'): ((('g1',), ('D16 - D34', 'D25 + D34')),)
+census strict ((1, 1), 'C4_face'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((1, 1), 'D4_face'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((1, 1), 'O'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((1, 1), 'S3_body'): ((('g0',), ('D16 - D34', 'D25 + D34')),)
+census strict ((1, 1), 'T'): ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+census strict ((1, 1), 'V4_face_edges'): ((('g0', 'g1'), ('D16 + D25',)),)
+census strict ((1, 1), 'V4_faces'): ((('g0', 'g1'), ()),)
+census strict_distinct_per_class: {((1, 1), '1'): 1, ((1, 1), 'C2_face'): 1, ((1, 1), 'C2_edge'): 6, ((1, 1), 'C3_body'): 3, ((1, 1), 'V4_faces'): 1, ((1, 1), 'C4_face'): 3, ((1, 1), 'V4_face_edges'): 3, ((1, 1), 'S3_body'): 3, ((1, 1), 'D4_face'): 3, ((1, 1), 'T'): 1, ((1, 1), 'O'): 1, ((1, -1), '1'): 1, ((1, -1), 'C2_face'): 1, ((1, -1), 'C2_edge'): 6, ((1, -1), 'C3_body'): 3, ((1, -1), 'V4_faces'): 1, ((1, -1), 'C4_face'): 3, ((1, -1), 'V4_face_edges'): 3, ((1, -1), 'S3_body'): 3, ((1, -1), 'D4_face'): 3, ((1, -1), 'T'): 1, ((1, -1), 'O'): 1, ((-1, 1), '1'): 1, ((-1, 1), 'C2_face'): 1, ((-1, 1), 'C2_edge'): 6, ((-1, 1), 'C3_body'): 3, ((-1, 1), 'V4_faces'): 1, ((-1, 1), 'C4_face'): 3, ((-1, 1), 'V4_face_edges'): 3, ((-1, 1), 'S3_body'): 3, ((-1, 1), 'D4_face'): 3, ((-1, 1), 'T'): 1, ((-1, 1), 'O'): 1, ((-1, -1), '1'): 1, ((-1, -1), 'C2_face'): 1, ((-1, -1), 'C2_edge'): 6, ((-1, -1), 'C3_body'): 3, ((-1, -1), 'V4_faces'): 1, ((-1, -1), 'C4_face'): 3, ((-1, -1), 'V4_face_edges'): 3, ((-1, -1), 'S3_body'): 3, ((-1, -1), 'D4_face'): 3, ((-1, -1), 'T'): 1, ((-1, -1), 'O'): 1}
+overlap sees_sum_only=True parity_block=True
+overlap twisted ((-1, -1), '1'): (((), ()),)
+overlap twisted ((-1, -1), 'C2_edge'): (((), ()),)
+overlap twisted ((-1, -1), 'C2_face'): (((), ()),)
+overlap twisted ((-1, -1), 'C3_body'): (((), ()),)
+overlap twisted ((-1, -1), 'C4_face'): (((), ()),)
+overlap twisted ((-1, -1), 'D4_face'): (((), ()),)
+overlap twisted ((-1, -1), 'O'): (((), ()),)
+overlap twisted ((-1, -1), 'S3_body'): (((), ()),)
+overlap twisted ((-1, -1), 'T'): (((), ()),)
+overlap twisted ((-1, -1), 'V4_face_edges'): (((), ()),)
+overlap twisted ((-1, -1), 'V4_faces'): (((), ()),)
+overlap twisted ((-1, 1), '1'): (((), ()),)
+overlap twisted ((-1, 1), 'C2_edge'): (((), ()),)
+overlap twisted ((-1, 1), 'C2_face'): (((), ()),)
+overlap twisted ((-1, 1), 'C3_body'): ((('g0',), ()), (('g1',), ()))
+overlap twisted ((-1, 1), 'C4_face'): (((), ()),)
+overlap twisted ((-1, 1), 'D4_face'): (((), ()),)
+overlap twisted ((-1, 1), 'O'): ((('g0',), ()), (('g1',), ()))
+overlap twisted ((-1, 1), 'S3_body'): ((('g0',), ()), (('g1',), ()))
+overlap twisted ((-1, 1), 'T'): ((('g0',), ()), (('g1',), ()))
+overlap twisted ((-1, 1), 'V4_face_edges'): (((), ()),)
+overlap twisted ((-1, 1), 'V4_faces'): (((), ()),)
+overlap twisted ((1, -1), '1'): (((), ()),)
+overlap twisted ((1, -1), 'C2_edge'): (((), ()),)
+overlap twisted ((1, -1), 'C2_face'): (((), ()),)
+overlap twisted ((1, -1), 'C3_body'): ((('g0',), ()), (('g1',), ()))
+overlap twisted ((1, -1), 'C4_face'): (((), ()),)
+overlap twisted ((1, -1), 'D4_face'): (((), ()),)
+overlap twisted ((1, -1), 'O'): ((('g0',), ()), (('g1',), ()))
+overlap twisted ((1, -1), 'S3_body'): ((('g0',), ()), (('g1',), ()))
+overlap twisted ((1, -1), 'T'): ((('g0',), ()), (('g1',), ()))
+overlap twisted ((1, -1), 'V4_face_edges'): (((), ()),)
+overlap twisted ((1, -1), 'V4_faces'): (((), ()),)
+overlap twisted ((1, 1), '1'): (((), ()),)
+overlap twisted ((1, 1), 'C2_edge'): (((), ()),)
+overlap twisted ((1, 1), 'C2_face'): (((), ()),)
+overlap twisted ((1, 1), 'C3_body'): (((), ()),)
+overlap twisted ((1, 1), 'C4_face'): (((), ()),)
+overlap twisted ((1, 1), 'D4_face'): (((), ()),)
+overlap twisted ((1, 1), 'O'): (((), ()),)
+overlap twisted ((1, 1), 'S3_body'): (((), ()),)
+overlap twisted ((1, 1), 'T'): (((), ()),)
+overlap twisted ((1, 1), 'V4_face_edges'): (((), ()),)
+overlap twisted ((1, 1), 'V4_faces'): (((), ()),)
+overlap strict ((-1, -1), '1'): (((), ()),)
+overlap strict ((-1, -1), 'C2_edge'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((-1, -1), 'C2_face'): ((('g0*v0*v1 + g1',), ()),)
+overlap strict ((-1, -1), 'C3_body'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((-1, -1), 'C4_face'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((-1, -1), 'D4_face'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((-1, -1), 'O'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((-1, -1), 'S3_body'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((-1, -1), 'T'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((-1, -1), 'V4_face_edges'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((-1, -1), 'V4_faces'): ((('g0*v0*v1 + g1',), ()),)
+overlap strict ((-1, 1), '1'): (((), ()),)
+overlap strict ((-1, 1), 'C2_edge'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ('s',)),)
+overlap strict ((-1, 1), 'C2_face'): ((('g0*v0*v1 + g1',), ()),)
+overlap strict ((-1, 1), 'C3_body'): ((('g0', 'g0*v0*v1 + g1', 'g1'), ('s',)),)
+overlap strict ((-1, 1), 'C4_face'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ('s',)),)
+overlap strict ((-1, 1), 'D4_face'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ('s',)),)
+overlap strict ((-1, 1), 'O'): ((('g0', 'g0*v0*v1 + g1', 'g0*v0*v1 - g1', 'g1'), ('s',)),)
+overlap strict ((-1, 1), 'S3_body'): ((('g0', 'g0*v0*v1 + g1', 'g0*v0*v1 - g1', 'g1'), ('s',)),)
+overlap strict ((-1, 1), 'T'): ((('g0', 'g0*v0*v1 + g1', 'g0*v0*v1 - g1', 'g1'), ('s',)),)
+overlap strict ((-1, 1), 'V4_face_edges'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ('s',)),)
+overlap strict ((-1, 1), 'V4_faces'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ()),)
+overlap strict ((1, -1), '1'): (((), ()),)
+overlap strict ((1, -1), 'C2_edge'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ('s',)),)
+overlap strict ((1, -1), 'C2_face'): ((('g0*v0*v1 + g1',), ()),)
+overlap strict ((1, -1), 'C3_body'): ((('g0', 'g0*v0*v1 + g1', 'g1'), ('s',)),)
+overlap strict ((1, -1), 'C4_face'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ('s',)),)
+overlap strict ((1, -1), 'D4_face'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ('s',)),)
+overlap strict ((1, -1), 'O'): ((('g0', 'g0*v0*v1 + g1', 'g0*v0*v1 - g1', 'g1'), ('s',)),)
+overlap strict ((1, -1), 'S3_body'): ((('g0', 'g0*v0*v1 + g1', 'g0*v0*v1 - g1', 'g1'), ('s',)),)
+overlap strict ((1, -1), 'T'): ((('g0', 'g0*v0*v1 + g1', 'g0*v0*v1 - g1', 'g1'), ('s',)),)
+overlap strict ((1, -1), 'V4_face_edges'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ('s',)),)
+overlap strict ((1, -1), 'V4_faces'): ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ()),)
+overlap strict ((1, 1), '1'): (((), ()),)
+overlap strict ((1, 1), 'C2_edge'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((1, 1), 'C2_face'): ((('g0*v0*v1 + g1',), ()),)
+overlap strict ((1, 1), 'C3_body'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((1, 1), 'C4_face'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((1, 1), 'D4_face'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((1, 1), 'O'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((1, 1), 'S3_body'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((1, 1), 'T'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((1, 1), 'V4_face_edges'): ((('g0*v0*v1 + g1',), ('s',)),)
+overlap strict ((1, 1), 'V4_faces'): ((('g0*v0*v1 + g1',), ()),)
+controls positivity_witness_minors: (15/16, 15/16, 225/256, 15/16, 25/32, 25/32, 1465/2304, 1465/2304)
+controls positivity_witness_is_pd: True
+controls positivity_witness_off_plane: True
+controls onsite_parity_block_entries: ('D07', 'D16', 'D25', 'D34')
+controls onsite_parity_preserved_iff_all_zero: True
+controls flat_zero_is_identity: True
+controls flat_twisted: {'1': (((), ()),), 'C2_edge': (((), ('D16 - D25',)), ((), ('D16 + D25',))), 'C2_face': (((), ()),), 'C3_body': (((), ('D16 - D34', 'D25 - D34')), ((), ('D16 - D34', 'D25 + D34')), ((), ('D16 + D34', 'D25 - D34')), ((), ('D16 + D34', 'D25 + D34'))), 'C4_face': (((), ('D16 - D25',)), ((), ('D16 + D25',))), 'V4_face_edges': (((), ('D16 - D25',)), ((), ('D16 + D25',))), 'V4_faces': (((), ()),), 'S3_body': (((), ('D16 - D34', 'D25 - D34')), ((), ('D16 - D34', 'D25 + D34')), ((), ('D16 + D34', 'D25 - D34')), ((), ('D16 + D34', 'D25 + D34'))), 'D4_face': (((), ('D16 - D25',)), ((), ('D16 + D25',))), 'T': (((), ('D16 - D34', 'D25 - D34')), ((), ('D16 - D34', 'D25 + D34')), ((), ('D16 + D34', 'D25 - D34')), ((), ('D16 + D34', 'D25 + D34'))), 'O': (((), ('D16 - D34', 'D25 - D34')), ((), ('D16 - D34', 'D25 + D34')), ((), ('D16 + D34', 'D25 - D34')), ((), ('D16 + D34', 'D25 + D34')))}
+controls flat_strict: {'1': (((), ()),), 'C2_edge': (((), ('D16 + D25',)),), 'C2_face': (((), ()),), 'C3_body': (((), ('D16 - D34', 'D25 + D34')),), 'C4_face': (((), ('D16 + D25',)),), 'V4_face_edges': (((), ('D16 + D25',)),), 'V4_faces': (((), ()),), 'S3_body': (((), ('D16 - D34', 'D25 + D34')),), 'D4_face': (((), ('D16 + D25',)),), 'T': (((), ('D16 - D34', 'D25 + D34')),), 'O': (((), ('D16 - D34', 'D25 + D34')),)}
+controls gauge_congruence_in_field: True
+controls generators_generate_o: True
+controls cell_scan_alive_component_counts: (1,)
+controls cell_scan_star_line_cells: 16
+controls cell_scan_distinct_alive_loci: ((((), ('D16 + D34', 'D25 + D34')),), (((), ('D16 + D34', 'D25 - D34')),), (((), ('D16 - D34', 'D25 + D34')),), (((), ('D16 - D34', 'D25 - D34')),))
+controls cell_scan_all_plus: (((), ('D16 - D34', 'D25 - D34')),)
+controls cell_scan_strict_s3_alive_cells: 16
+controls cell_scan_strict_s3_alive_is_star_line: True
+controls cell_scan_strict_s3_cells_are_star_line_cells: True
+controls cell_scan_strict_t_alive_cells: 0
+controls family_is_block214_cell_at_w1: True
+timings_ms: {'authority': 586, 'group': 11869, 'star': 104, 'census': 28505, 'overlap': 44014, 'controls': 30123}  elapsed_ms: 115205
+[PASS] A-1: FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree
+[PASS] A-2: PARENT PIN IS THE BLOCK 214 TIP, an ancestor of HEAD, with its note and runner content-bound by blob
+[PASS] A-3: STALE PARENT (the Block 213 tip) is a real ancestor carrying NEITHER Block 214 artifact; machinery imported; inputs readable
+[PASS] B-1: NOTHING REGISTERED, NOTHING ADOPTED: six imposed objects, zero registered, zero adopted
+[PASS] B-2: NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied
+[PASS] B-3: THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)
+[PASS] B-4: NO SUBGROUP IS SELECTED AS 'THE' SYMMETRY, NO ASSEMBLY DECIDED, NO PARAMETER VALUE SELECTED
+[PASS] B-5: THE WORDS COVARIANCE, LOCUS, STAR, GAUGE AND PLANE ARE SCOPED; six readings enumerated, none licensed; no continuum, no spacetime cone
+[PASS] C-1: THE CORNER ACTION IS A REPRESENTATION OF THE 24 PROPER ROTATIONS: Block 201's det = +1 signed permutations are 24; the lifts are 24 distinct orthogonal matrices, closed, containing the identity, L(R1 R2) = L(R1) L(R2), element orders 1/2/3/4 in counts 1/9/8/6
+[PASS] C-2: THE SIGN RULE IS DERIVED, NOT GUESSED: the lane's D(kappa) is the ordered-monomial wedge (12 signs); the lift built through that wedge equals the orientation-sign rule; the only monomial intertwiners are +-L(R); every lift is +1 on the empty and on the full corner (det R = +1)
+[PASS] C-3: THE LIFT INTERTWINES THE RAISING PART: L(R) D(kappa) L(R)^-1 = D(R kappa) for every R
+[PASS] C-4: THE SUBGROUP CLASSES ARE COMPUTED FROM THE GROUP: 30 subgroups with a completeness certificate, 11 conjugacy classes with the declared (name, order, size) table
+[PASS] C-5: THE FAMILY IS BLOCK 214's CELL: at W1 it equals cell_with_parameters with the four free names; the gauge congruence E D E holds in the field for same-class two-face flips and fails for one-face flips
+[PASS] D-1: THE STAR FROM THE WEDGE: * e_c = sign e_{c-bar} with the declared signs, ** = +1 on every degree, * D(kappa) = eps_k D(kappa)^T * with eps = (+1, -1, +1) on 0-, 1-, 2-forms, and * commutes with every lift
+[PASS] D-2: THE STAR LEMMA: the 1 <-> 2 cross block is lam * exactly on the line D16 = D34 = -D25 (the star's pair signs (+, -, +) on (y, x, t)), which IS Block 214's plane; D07 is the free 0 <-> 3 star multiple; the onsite M_oo vanishes exactly there (its coefficient ideal is the line)
+[PASS] E-1: THE SHEARS SURVIVE TWISTED COVARIANCE UNDER EVERY ROTATION in all four gauge classes; strictly they survive only the identity and one edge rotation per class
+[PASS] E-2: THE TWISTED CENSUS at the four class representatives is the declared table: O, T, S3, C3 force ONE shear-alive line (the diagonal D16 = D25 = D34 at all-plus and at (-1,-1); D16 = D25 = -D34 at the two mixed classes), never the star line; the star line appears only with a shear killed
+[PASS] E-3: THE STRICT CENSUS is the declared table: O and T force the star line WITH g0 = g1 = 0 (the flat cell); C3 (S3) force the star line with one shear killed; the minimal strict class forcing the star line is C3
+[PASS] E-4: EVERY MEMBER OF EVERY CLASS (30 subgroups): the loci at a fixed cell are not conjugation-invariant except for the normal subgroups; the distinct-locus counts per class are the declared literals
+[PASS] E-5: D07 IS FREE UNDER EVERY SUBGROUP, twisted and strict: no locus generator carries D07
+[PASS] F-1: P111 IS THE UNSIGNED STAR: it commutes with the unsigned corner permutation of every rotation but with only 8 of the 24 signed lifts (the twist is diag(s_c s_{R^-1 c})); the STAR commutes with all 24
+[PASS] F-2: THE OVERLAP FOLD sees only s = D07 + D16 + D25 + D34, its parity block is (s/4) P111, and NO subgroup's TWISTED covariance forces s = 0 in any class (declared table); strict covariance forces s = 0 together with a shear relation (declared table)
+[PASS] G-1: POSITIVITY DOES NOT SELECT THE PLANE: Block 214's witness W1 + D16 = 1/4 is off the plane and positive definite by exact leading minors
+[PASS] G-2: ONSITE PARITY DOES NOT SELECT THE PLANE: the folded onsite parity block carries exactly the four parameters and vanishes iff all four vanish (the origin)
+[PASS] G-3: THE FLAT CELL: strict O-covariance of the flat cell forces exactly the star line; twisted, the four sign lines (declared tables); the 64-cell scan under two generators of O finds ONE shear-alive line at every cell, the star line at exactly 16 cells and the diagonal at all-plus
+[PASS] G-4: STRICT S3-COVARIANT CURVED CELLS: at exactly 16 of the 64 sign cells some S3_body keeps both shears alive under strict (E = 1) covariance, the shear-alive strict-S3 locus there is the star line, those 16 cells are exactly the cells whose twisted-O line is the star line, and strict T keeps the shears alive at no cell
+[PASS] H-1: SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213 and 214
+[PASS] H-2: THE INSTANCE SCOPE IS ENUMERATED: six restrictions
+[PASS] I-1: THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY
+[PASS] I-2: NO nsimplify, NO float literal, NO float call in this runner's source
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
+N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, LOCUS, STAR, GAUGE AND PLANE ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its gauge and its four free parameters, the 24 proper rotations with the corner action BUILT HERE, Block 105's two assemblies and Block 214's plane are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.\nper_site: The lane's D(kappa) is the ordered-monomial wedge kappa ^; the lift L(R) is its multiplicative extension, the only monomial intertwiners are +-L(R), and L(R) is a representation (orders 1/2/3/4 in counts 1/9/8/6) with L D(kappa) L^-1 = D(R kappa); the star from that wedge has pair signs (+, +, -, +) on (0,7), (1,6), (2,5), (4,3), squares to +1 on every degree and satisfies * D = eps_k D^T * with eps = (+1, -1, +1); the 30 subgroups and 11 classes are computed from the table.\nper_mode: THE STAR LEMMA: the 1 <-> 2 cross block is lam * exactly on D16 = D34 = -D25, Block 214's plane literal for literal, with D07 the free 0 <-> 3 multiple; the onsite M_oo's coefficient ideal is exactly that line.\nper_block: THE CENSUS AT THE FOUR REPRESENTATIVES: twisted covariance leaves both shears alive under every rotation; O, T, S3, C3 force ONE shear-alive line -- the diagonal D16 = D25 = D34 at all-plus and (-1,-1), D16 = D25 = -D34 at the mixed classes -- which meets the star line only at the origin, and the star line appears only with a shear killed; strict covariance forces the star line with g1 = 0 (C3, all-plus), with g0 = 0 (S3, all-plus) and with g0 = g1 = 0 (T, O): THE STAR LINE AND THE FLAT CELL TOGETHER; C2_edge, C4, V4_face_edges, D4 force D16 = +-D25 planes; the trivial group, C2_face and V4_faces force nothing; D07 is free under everything; the 64-cell scan finds one shear-alive twisted-O line at every cell, the star line at exactly 16 cells; strict S3 keeps both shears alive at exactly those 16 cells and forces the star line there, strict T at none.\nlattice_wide: OVERLAP: the fold sees only s = D07 + D16 + D25 + D34, its parity block is (s/4) P111, P111 is the unsigned star and commutes with 8 of the 24 signed lifts (the star with all 24); NO subgroup's twisted covariance forces s = 0 in any class; strict covariance forces s = 0 only together with a shear relation (g0 v0 v1 + g1 = 0 at all-plus, its variants elsewhere). CONTROLS: W1 + D16 = 1/4 is positive definite off the plane; the onsite parity block is exactly the four parameters, so parity selects the origin and not the plane; the flat cell's strict O locus is the star line alone and its twisted O locus the four sign lines.\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under G THEN the parameters lie on L(G) and the shears on S(G); the antecedent is a reading. OPEN: whether Block 214's union locus at a non-representative cell is that cell's twisted line; the assembly and the reading; no dynamics, continuum or gravity is supplied.\nRESULT: THE PLANE IS THE STAR LINE OF THE LANE'S OWN HODGE STAR AND THE PROPER CUBIC ROTATIONS DO NOT PREFER IT ON THE CURVED FAMILY: TWISTED COVARIANCE KEEPS THE SHEARS AND FORCES A DIFFERENT SIGN LINE AT EVERY REPRESENTATIVE (THE STAR LINE AT 16 OF 64 CELLS); STRICT COVARIANCE REACHES THE STAR LINE ONLY WITH A SHEAR KILLED OR THE FLAT CELL; D07 IS FREE; THE OVERLAP SUM IS NEVER FORCED TO ZERO BY TWISTED COVARIANCE; POSITIVITY AND PARITY SELECT NOTHING. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-214 STAND; Block 214's REOPEN item 1 is ANSWERED for the axiom's named symmetry as a conditional, in the negative on the curved family. Fable primary seat; refuting checker PENDING.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero.
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

@@ -140,6 +140,7 @@ MUTATIONS = (
     "claim_positivity_selects_plane",
     "claim_parity_selects_plane",
     "break_flat_cell_loci",
+    "break_strict_s3_cells",
     "break_scout_grade_fence",
     "break_instance_scope",
     "drop_n5_fence",
@@ -157,7 +158,7 @@ MUTATION_GATE = {
     "claim_shears_killed_by_twisted_covariance": "E",
     "break_p111_commutation": "F", "break_overlap_locus": "F",
     "claim_positivity_selects_plane": "G", "claim_parity_selects_plane": "G",
-    "break_flat_cell_loci": "G",
+    "break_flat_cell_loci": "G", "break_strict_s3_cells": "G",
     "break_scout_grade_fence": "H", "break_instance_scope": "H",
     "drop_n5_fence": "I", "break_float_absence": "I",
 }
@@ -923,7 +924,7 @@ def measure_controls(group: dict) -> dict:
     g4 = next(i for i in range(24) if orders[i] == 4 and len(closure(table, frozenset((g3, i)), group["identity_index"])) == 24)
     facts["generators_generate_o"] = len(closure(table, frozenset((g3, g4)), group["identity_index"])) == 24
     star_line = canonical_subspace([[0, 1, 0, -1], [0, 0, 1, 1]], PARAMETER_SYMBOLS)
-    scan = {}
+    scan, strict_scan = {}, {}
     for values in itertools.product((1, -1), repeat=6):
         signs = dict(zip(b211.GAUGE_FACE_ORDER, (sp.Integer(v) for v in values)))
         cell = b214.formal_cell(signs, G0, G1, V0, V1, PARAMETER_SYMBOLS)
@@ -931,10 +932,22 @@ def measure_controls(group: dict) -> dict:
         locus = intersect(per[0], per[1], PARAMETER_SYMBOLS)
         alive = tuple(v for f, v in locus if not f)
         scan[values] = (len(alive), alive == (star_line,), describe(tuple((frozenset(), v) for v in alive), PARAMETER_SYMBOLS))
+        # STRICT (E = 1) covariance at this cell under every S3_body and under T: the
+        # shear-alive components, if any (the sealed blind seat predicted that a curved
+        # cell is strictly S3-covariant at exactly the 16 star-line cells; measured here)
+        strict_per = tuple(irredundant([constraints(cell, lifts[g], (1,) * 8, PARAMETER_SYMBOLS)]) for g in range(24))
+        s3_alive = tuple(tuple(v for f, v in subgroup_locus(strict_per, member, PARAMETER_SYMBOLS) if not f)
+                         for member in group["classes"]["S3_body"])
+        t_alive = tuple(v for f, v in subgroup_locus(strict_per, group["representatives"]["T"], PARAMETER_SYMBOLS) if not f)
+        strict_scan[values] = (any(s3_alive), all(a in ((), (star_line,)) for a in s3_alive), bool(t_alive))
     facts["cell_scan_alive_component_counts"] = tuple(sorted(set(v[0] for v in scan.values())))
     facts["cell_scan_star_line_cells"] = sum(1 for v in scan.values() if v[1])
     facts["cell_scan_distinct_alive_loci"] = tuple(sorted(set(v[2] for v in scan.values())))
     facts["cell_scan_all_plus"] = scan[(1,) * 6][2]
+    facts["cell_scan_strict_s3_alive_cells"] = sum(1 for v in strict_scan.values() if v[0])
+    facts["cell_scan_strict_s3_alive_is_star_line"] = all(v[1] for v in strict_scan.values())
+    facts["cell_scan_strict_s3_cells_are_star_line_cells"] = all(strict_scan[k][0] == scan[k][1] for k in scan)
+    facts["cell_scan_strict_t_alive_cells"] = sum(1 for v in strict_scan.values() if v[2])
     cell, free, _ = b214.cell_with_parameters("W1")
     renamed = cell.subs({s: dict(zip(PARAMETER_NAMES, PARAMETER_SYMBOLS))[str(s)] for s in cell.free_symbols
                          if str(s) in PARAMETER_NAMES})
@@ -1004,6 +1017,8 @@ P111_COMMUTING_LIFTS = 8
 STRICT_SHEAR_SURVIVING_ROTATIONS = {(1, 1): 2, (1, -1): 2, (-1, 1): 2, (-1, -1): 2}
 CELL_SCAN_STAR_LINE_CELLS = 16
 CELL_SCAN_ALIVE_COUNTS = (1,)
+STRICT_S3_ALIVE_CELLS = 16
+STRICT_T_ALIVE_CELLS = 0
 POSITIVITY_WITNESS_MINORS = (sp.Rational(15, 16), sp.Rational(15, 16), sp.Rational(225, 256), sp.Rational(15, 16),
                              sp.Rational(25, 32), sp.Rational(25, 32), sp.Rational(1465, 2304), sp.Rational(1465, 2304))
 SCOUT_GRADE_FENCE = ("scout-grade finite exact linear algebra on one cell form, "
@@ -1053,6 +1068,7 @@ def build_claims(mutation: str) -> dict:
         "twisted_loci": TWISTED_LOCI, "strict_loci": STRICT_LOCI, "twisted_shears_survive": True,
         "p111_commuting_lifts": P111_COMMUTING_LIFTS, "overlap_twisted_loci": OVERLAP_TWISTED_LOCI,
         "positivity_selects_plane": False, "parity_selects_plane": False, "flat_strict_loci": FLAT_STRICT_LOCI,
+        "strict_s3_alive_cells": STRICT_S3_ALIVE_CELLS,
         "scout_grade": SCOUT_GRADE_FENCE, "instance_scope_count": INSTANCE_SCOPE_COUNT,
         "n5_verbatim": True, "float_absent": True,
     }
@@ -1078,6 +1094,7 @@ def build_claims(mutation: str) -> dict:
         "claim_positivity_selects_plane": ("positivity_selects_plane", True),
         "claim_parity_selects_plane": ("parity_selects_plane", True),
         "break_flat_cell_loci": ("flat_strict_loci", wrong_flat),
+        "break_strict_s3_cells": ("strict_s3_alive_cells", 0),
         "break_scout_grade_fence": ("scout_grade", "a spacetime and a dynamics"),
         "break_instance_scope": ("instance_scope_count", 2),
         "drop_n5_fence": ("n5_verbatim", False),
@@ -1171,6 +1188,10 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
                  ct["flat_zero_is_identity"] and ct["flat_strict"] == claims["flat_strict_loci"] and ct["flat_twisted"] == FLAT_TWISTED_LOCI
                  and ct["generators_generate_o"] and ct["cell_scan_alive_component_counts"] == CELL_SCAN_ALIVE_COUNTS
                  and ct["cell_scan_star_line_cells"] == CELL_SCAN_STAR_LINE_CELLS and ct["cell_scan_all_plus"] == (((), DIAGONAL_LINE),))
+    checks.check("G-4", "STRICT S3-COVARIANT CURVED CELLS: at exactly 16 of the 64 sign cells some S3_body keeps both shears alive under strict (E = 1) covariance, the shear-alive strict-S3 locus there is the star line, those 16 cells are exactly the cells whose twisted-O line is the star line, and strict T keeps the shears alive at no cell",
+                 ct["cell_scan_strict_s3_alive_cells"] == claims["strict_s3_alive_cells"] == STRICT_S3_ALIVE_CELLS
+                 and ct["cell_scan_strict_s3_alive_is_star_line"] and ct["cell_scan_strict_s3_cells_are_star_line_cells"]
+                 and ct["cell_scan_strict_t_alive_cells"] == STRICT_T_ALIVE_CELLS)
     checks.check("H-1", "SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213 and 214",
                  claims["scout_grade"] == SCOUT_GRADE_FENCE and SCOUT_GRADE_ONLY)
     checks.check("H-2", "THE INSTANCE SCOPE IS ENUMERATED: six restrictions",
@@ -1239,7 +1260,7 @@ def main() -> int:
     return checks.finish()
 
 
-N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, LOCUS, STAR, GAUGE AND PLANE ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its gauge and its four free parameters, the 24 proper rotations with the corner action BUILT HERE, Block 105's two assemblies and Block 214's plane are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.\\nper_site: The lane's D(kappa) is the ordered-monomial wedge kappa ^; the lift L(R) is its multiplicative extension, the only monomial intertwiners are +-L(R), and L(R) is a representation (orders 1/2/3/4 in counts 1/9/8/6) with L D(kappa) L^-1 = D(R kappa); the star from that wedge has pair signs (+, +, -, +) on (0,7), (1,6), (2,5), (4,3), squares to +1 on every degree and satisfies * D = eps_k D^T * with eps = (+1, -1, +1); the 30 subgroups and 11 classes are computed from the table.\\nper_mode: THE STAR LEMMA: the 1 <-> 2 cross block is lam * exactly on D16 = D34 = -D25, Block 214's plane literal for literal, with D07 the free 0 <-> 3 multiple; the onsite M_oo's coefficient ideal is exactly that line.\\nper_block: THE CENSUS AT THE FOUR REPRESENTATIVES: twisted covariance leaves both shears alive under every rotation; O, T, S3, C3 force ONE shear-alive line -- the diagonal D16 = D25 = D34 at all-plus and (-1,-1), D16 = D25 = -D34 at the mixed classes -- which meets the star line only at the origin, and the star line appears only with a shear killed; strict covariance forces the star line with g1 = 0 (C3, all-plus), with g0 = 0 (S3, all-plus) and with g0 = g1 = 0 (T, O): THE STAR LINE AND THE FLAT CELL TOGETHER; C2_edge, C4, V4_face_edges, D4 force D16 = +-D25 planes; the trivial group, C2_face and V4_faces force nothing; D07 is free under everything; the 64-cell scan finds one shear-alive twisted-O line at every cell, the star line at exactly 16 cells.\\nlattice_wide: OVERLAP: the fold sees only s = D07 + D16 + D25 + D34, its parity block is (s/4) P111, P111 is the unsigned star and commutes with 8 of the 24 signed lifts (the star with all 24); NO subgroup's twisted covariance forces s = 0 in any class; strict covariance forces s = 0 only together with a shear relation (g0 v0 v1 + g1 = 0 at all-plus, its variants elsewhere). CONTROLS: W1 + D16 = 1/4 is positive definite off the plane; the onsite parity block is exactly the four parameters, so parity selects the origin and not the plane; the flat cell's strict O locus is the star line alone and its twisted O locus the four sign lines.\\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under G THEN the parameters lie on L(G) and the shears on S(G); the antecedent is a reading. OPEN: whether Block 214's union locus at a non-representative cell is that cell's twisted line; the assembly and the reading; no dynamics, continuum or gravity is supplied.\\nRESULT: THE PLANE IS THE STAR LINE OF THE LANE'S OWN HODGE STAR AND THE PROPER CUBIC ROTATIONS DO NOT PREFER IT ON THE CURVED FAMILY: TWISTED COVARIANCE KEEPS THE SHEARS AND FORCES A DIFFERENT SIGN LINE AT EVERY REPRESENTATIVE (THE STAR LINE AT 16 OF 64 CELLS); STRICT COVARIANCE REACHES THE STAR LINE ONLY WITH A SHEAR KILLED OR THE FLAT CELL; D07 IS FREE; THE OVERLAP SUM IS NEVER FORCED TO ZERO BY TWISTED COVARIANCE; POSITIVITY AND PARITY SELECT NOTHING. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-214 STAND; Block 214's REOPEN item 1 is ANSWERED for the axiom's named symmetry as a conditional, in the negative on the curved family. Fable primary seat; refuting checker PENDING.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero."
+N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, LOCUS, STAR, GAUGE AND PLANE ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its gauge and its four free parameters, the 24 proper rotations with the corner action BUILT HERE, Block 105's two assemblies and Block 214's plane are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.\\nper_site: The lane's D(kappa) is the ordered-monomial wedge kappa ^; the lift L(R) is its multiplicative extension, the only monomial intertwiners are +-L(R), and L(R) is a representation (orders 1/2/3/4 in counts 1/9/8/6) with L D(kappa) L^-1 = D(R kappa); the star from that wedge has pair signs (+, +, -, +) on (0,7), (1,6), (2,5), (4,3), squares to +1 on every degree and satisfies * D = eps_k D^T * with eps = (+1, -1, +1); the 30 subgroups and 11 classes are computed from the table.\\nper_mode: THE STAR LEMMA: the 1 <-> 2 cross block is lam * exactly on D16 = D34 = -D25, Block 214's plane literal for literal, with D07 the free 0 <-> 3 multiple; the onsite M_oo's coefficient ideal is exactly that line.\\nper_block: THE CENSUS AT THE FOUR REPRESENTATIVES: twisted covariance leaves both shears alive under every rotation; O, T, S3, C3 force ONE shear-alive line -- the diagonal D16 = D25 = D34 at all-plus and (-1,-1), D16 = D25 = -D34 at the mixed classes -- which meets the star line only at the origin, and the star line appears only with a shear killed; strict covariance forces the star line with g1 = 0 (C3, all-plus), with g0 = 0 (S3, all-plus) and with g0 = g1 = 0 (T, O): THE STAR LINE AND THE FLAT CELL TOGETHER; C2_edge, C4, V4_face_edges, D4 force D16 = +-D25 planes; the trivial group, C2_face and V4_faces force nothing; D07 is free under everything; the 64-cell scan finds one shear-alive twisted-O line at every cell, the star line at exactly 16 cells; strict S3 keeps both shears alive at exactly those 16 cells and forces the star line there, strict T at none.\\nlattice_wide: OVERLAP: the fold sees only s = D07 + D16 + D25 + D34, its parity block is (s/4) P111, P111 is the unsigned star and commutes with 8 of the 24 signed lifts (the star with all 24); NO subgroup's twisted covariance forces s = 0 in any class; strict covariance forces s = 0 only together with a shear relation (g0 v0 v1 + g1 = 0 at all-plus, its variants elsewhere). CONTROLS: W1 + D16 = 1/4 is positive definite off the plane; the onsite parity block is exactly the four parameters, so parity selects the origin and not the plane; the flat cell's strict O locus is the star line alone and its twisted O locus the four sign lines.\\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under G THEN the parameters lie on L(G) and the shears on S(G); the antecedent is a reading. OPEN: whether Block 214's union locus at a non-representative cell is that cell's twisted line; the assembly and the reading; no dynamics, continuum or gravity is supplied.\\nRESULT: THE PLANE IS THE STAR LINE OF THE LANE'S OWN HODGE STAR AND THE PROPER CUBIC ROTATIONS DO NOT PREFER IT ON THE CURVED FAMILY: TWISTED COVARIANCE KEEPS THE SHEARS AND FORCES A DIFFERENT SIGN LINE AT EVERY REPRESENTATIVE (THE STAR LINE AT 16 OF 64 CELLS); STRICT COVARIANCE REACHES THE STAR LINE ONLY WITH A SHEAR KILLED OR THE FLAT CELL; D07 IS FREE; THE OVERLAP SUM IS NEVER FORCED TO ZERO BY TWISTED COVARIANCE; POSITIVITY AND PARITY SELECT NOTHING. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-214 STAND; Block 214's REOPEN item 1 is ANSWERED for the axiom's named symmetry as a conditional, in the negative on the curved family. Fable primary seat; refuting checker PENDING.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero."
 
 
 # ---------------------------------------------------------------------------

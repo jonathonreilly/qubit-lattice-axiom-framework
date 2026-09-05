@@ -25,3 +25,6 @@ Fable primary delivered in ~27 min (HEAD 7aab34017f, clean): runner 26/0 certifi
 
 ## 2026-09-05T20:02+00:00 block 218 CLOSED (supervisor)
 Opus checker PASS-NO-BLOCKER (19:56Z; two wording precisions, re-computed by the supervisor and applied; the "up to similarity" statement verified by direct similarity). Folded: CHECK_VERDICT, the fence's DECISION_CUT sentence, the note's Review record and next_trace_action; fence synced; recertified 26/0 (37 s) and re-pinned (runner sha f8b31e19...). Census 27/27 verified from the raw outputs. Conformance gate 1-12 PASS; certificate written. PR: stacked on #7994 (opened next). Next: block 219 (the three-direction (4,4,4) bench at the covariant witness; GOAL_block219.md + specs/block219_primary.md) in worktree loop-gravity-b219 cut from this tip.
+
+## 2026-09-05T20:04+00:00 block 218 PR opened; block 219 launched (supervisor)
+Block 218 = PR #7995 (base: the Block 217 branch, #7994; head tip 39b3fd0acb; title verified live). Block 219 branch physics-loop/toe-axiom-closure-block219-three-direction-bench-covariant-witness-20260905 cut from 39b3fd0acb in worktree loop-gravity-b219; Fable primary launched on specs/block219_primary.md (110-min budget); the Opus refuting checker follows delivery. Stack: #7753 → #7981 → #7988 → #7992 → #7993 → #7994 → #7995 → (219).

@@ -597,3 +597,167 @@ def measure_union(census: dict) -> dict:
     facts["class_representative_masks"] = {key: census["cells"][v]["mask"] for key, v in reps.items()}
     facts["one_witness_per_class"] = all(("W1", census["cells"][v]["mask"]) in table for v in reps.values())
     return facts
+
+
+# ---------------------------------------------------------------------------
+# F. THE COVARIANT WITNESS WITH ONE METRIC'S CONE, at every common positive cell
+# ---------------------------------------------------------------------------
+def strict_stabiliser(cell: sp.Matrix, lifts: tuple) -> tuple:
+    """The rotations whose lift preserves the cell with E = 1, exactly."""
+    return tuple(g for g in range(24) if residual_count((lifts[g] * cell * lifts[g].T - cell).applyfunc(sp.radsimp)) == 0)
+
+
+def block211_solve(values: tuple, moduli: tuple) -> tuple:
+    """Block 211's six-face system solved with the parameters free (Block
+    214's cell_with_parameters route) at a transported witness."""
+    v0, g0, v1, g1 = moduli
+    _, matrix, rhs = b211.face_system(b211.branch_moduli(v0, g0, v1, g1, sign_dict(values)))
+    cell, free = b211.solve_pinned(matrix, rhs, at_zero=False)
+    cell = cell.applyfunc(sp.radsimp)
+    names = dict(zip(PARAMETER_NAMES, PARAMETER_SYMBOLS))
+    renamed = cell.subs({s: names[str(s)] for s in cell.free_symbols if str(s) in PARAMETER_NAMES})
+    return renamed, tuple(str(s) for s in free)
+
+
+def measure_witness(group: dict, census: dict) -> dict:
+    """At each of the 8 rule-A star cells: Block 213's curve point over
+    QQ(sqrt 6) transported to the cell -- positive definite, on the curve, on
+    the ties, Block 211's own solve; strictly S3-covariant with both shears
+    alive, the star line its parameter locus, and preserved on the line; the
+    two Hodge readings proportional; the graded cone one quadric squared, and
+    one metric's cone with the parameters on the star line."""
+    lifts, orders = group["lifts"], group["orders"]
+    even, odd = b213.even_odd(3)
+    facts: dict = {}
+    table: dict = {}
+    star_line = b215.canonical_subspace([[0, 1, 0, -1], [0, 0, 1, 1]], PARAMETER_SYMBOLS)
+    for values in star_cells(census):
+        c = census["cells"][values]
+        if not c["rule_a"]:
+            continue
+        pi0 = c["class"][0]
+        moduli = curve_moduli(pi0)
+        v0, g0, v1, g1 = moduli
+        entry: dict = {"class": c["class"], "moduli": moduli}
+        entry["on_curve"] = sp.radsimp(g0 - g1 / (1 + pi0 * g1)) == 0
+        entry["on_ties"] = (sp.radsimp(v0 ** 2 - (1 - g0 ** 2) * (1 - g1 ** 2)) == 0
+                            and sp.radsimp(v1 ** 2 - (1 - g1 ** 2) / (1 - g0 ** 2)) == 0)
+        entry["shears_nonzero"] = g0 != 0 and g1 != 0
+        cell = formal(values, moduli_as_g(moduli), PARAMETER_SYMBOLS)
+        solved, free = block211_solve(values, moduli)
+        entry["is_block211_solve"] = residual_count((solved - cell).applyfunc(sp.radsimp)) == 0 and free == PARAMETER_NAMES
+        zero = cell.subs({p: 0 for p in PARAMETER_SYMBOLS})
+        entry["positive_definite"] = all(sp.radsimp(x) > 0 for x in b211.leading_minors(zero))
+        stabiliser = strict_stabiliser(zero, lifts)
+        entry["stabiliser"] = stabiliser
+        entry["stabiliser_orders"] = tuple(sorted(orders[g] for g in stabiliser))
+        entry["stabiliser_is_s3_body"] = any(frozenset(stabiliser) == member for member in group["classes"]["S3_body"])
+        strict_per = tuple(b215.irredundant([b215.constraints(cell, lifts[g], (1,) * 8, PARAMETER_SYMBOLS)]) for g in stabiliser)
+        locus = b215.subgroup_locus(strict_per, frozenset(stabiliser), PARAMETER_SYMBOLS)
+        entry["strict_locus"] = b215.describe(locus, PARAMETER_SYMBOLS)
+        entry["strict_locus_is_star_line_alive"] = locus == ((frozenset(), star_line),)
+        on_line = cell.subs({B16: LAM_LINE, C25: -LAM_LINE, D34: LAM_LINE, A07: 0})
+        entry["preserved_on_line"] = all(residual_count((lifts[g] * on_line * lifts[g].T - on_line).applyfunc(sp.radsimp)) == 0
+                                         for g in stabiliser)
+        g1_m, g2_m, _, _, _, _ = b213.metric_candidates(zero)
+        g1_m, g2_m = g1_m.applyfunc(sp.radsimp), g2_m.applyfunc(sp.radsimp)
+        mu = sp.radsimp(g2_m[0, 0] / g1_m[0, 0])
+        entry["mu"] = mu
+        entry["readings_proportional"] = residual_count((g2_m - mu * g1_m).applyfunc(sp.radsimp)) == 0
+        form = b213.quadratic_form(g1_m, KAPPA)
+        h0, m, _ = b214.principal_part(zero, "onsite")
+        det_b = sp.expand(sp.radsimp(m.extract(even, odd).det(method="berkowitz")))
+        entry["graded_cone_is_one_quadric_squared"] = b213.proportional(det_b, form ** 2, KAPPA)
+        _, m_line, _ = b214.principal_part(on_line, "onsite")
+        det_m_line = sp.expand(b214.ff_det(m_line, (LAM_LINE,) + KAPPA, algebraic=True))
+        entry["cone_on_line_is_one_metric_cone"] = b213.proportional(det_m_line, form ** 4, KAPPA + (LAM_LINE,))
+        entry["cone_on_line_constant"] = sp.factor(sp.radsimp(sp.cancel(det_m_line / form ** 4)))
+        table[c["mask"]] = entry
+    facts["table"] = table
+    facts["witness_count"] = len(table)
+    keys = ("on_curve", "on_ties", "shears_nonzero", "is_block211_solve", "positive_definite", "stabiliser_is_s3_body",
+            "strict_locus_is_star_line_alive", "preserved_on_line", "readings_proportional",
+            "graded_cone_is_one_quadric_squared", "cone_on_line_is_one_metric_cone")
+    facts["all_witnesses"] = {key: all(entry[key] for entry in table.values()) for key in keys}
+    facts["mu_per_class"] = {key: tuple(sorted(set(entry["mu"] for entry in table.values() if entry["class"] == key)))
+                             for key in ((1, -1), (-1, 1))}
+    facts["stabiliser_orders"] = tuple(sorted(set(entry["stabiliser_orders"] for entry in table.values())))
+    facts["cone_on_line_constants"] = tuple(sorted(set(str(entry["cone_on_line_constant"]) for entry in table.values())))
+    return facts
+
+
+# ---------------------------------------------------------------------------
+# G. THE BRANCHES ON THE COVARIANT LINE, THE D07 CONGRUENCE, THE SYMBOL UNDER S3
+# ---------------------------------------------------------------------------
+def line_branches(cell_on_line: sp.Matrix, form) -> tuple:
+    """The H-pencil charpoly of (H0^-1 M)^2 over QQ(sqrt 6)(lam_line)[kappa],
+    factored: every factor linear in LAM gives a branch, reported as its
+    k-free ratio to k^T G1 k (a rational function of the line multiple)."""
+    from sympy import QQ
+    from sympy.polys.matrices import DomainMatrix
+    h0, m, _ = b214.principal_part(cell_on_line, "onsite")
+    operator = (h0.inv() * m).applyfunc(sp.radsimp)
+    squared = (operator * operator).applyfunc(sp.radsimp)
+    gens = tuple(sorted(squared.free_symbols - {sp.sqrt(6)}, key=str))
+    domain = QQ.algebraic_field(sp.sqrt(6)).frac_field(*gens)
+    coefficients = DomainMatrix.from_Matrix(squared).convert_to(domain).charpoly()
+    lam = b213.LAM
+    charpoly = sum(domain.to_sympy(cf) * lam ** (len(coefficients) - 1 - k) for k, cf in enumerate(coefficients))
+    numerator, _ = sp.fraction(sp.factor(charpoly))
+    _, factors = sp.factor_list(numerator, lam)
+    branches, remainder = [], []
+    for base, power in factors:
+        poly = sp.Poly(base, lam)
+        if poly.degree() == 1:
+            root = sp.cancel(-poly.coeff_monomial(1) / poly.coeff_monomial(lam))
+            ratio = sp.factor(sp.radsimp(sp.cancel(root / form)))
+            branches.append((str(ratio), power, not (ratio.free_symbols & set(KAPPA))))
+        elif poly.degree() > 0:
+            remainder.append((poly.degree(), power))
+    return tuple(sorted(branches)), tuple(sorted(remainder))
+
+
+def measure_branches(census: dict) -> dict:
+    facts: dict = {}
+    even, odd = b213.even_odd(3)
+    # THE D07 CONGRUENCE AT SYMBOLIC FACE SIGNS AND SYMBOLIC MODULI: U = I - (D07/D3) E_70
+    sign_symbols = sp.symbols("s_tx0 s_ty0 s_xy0 s_tx1 s_ty1 s_xy1")
+    generic = b214.formal_cell(dict(zip(FACE_ORDER, sign_symbols)), G0, G1, V0, V1, PARAMETER_SYMBOLS)
+    h0, m, _ = b214.principal_part(generic, "onsite")
+    unipotent = sp.eye(8)
+    unipotent[7, 0] = -A07 / generic[7, 7]
+    facts["d07_congruence_M_symbolic_signs"] = residual_count((unipotent.T * m * unipotent - m.subs(A07, 0)).applyfunc(sp.cancel)) == 0
+    shifted = (unipotent.T * h0 * unipotent - h0.subs(A07, 0)).applyfunc(sp.cancel)
+    facts["d07_shift"] = str(sp.factor(shifted[0, 0]))
+    facts["d07_shift_rest_zero"] = residual_count(shifted) == 1
+    facts["d07_congruence_holds_at_star_cells"] = all(
+        residual_count((unipotent.T * m * unipotent - m.subs(A07, 0)).subs(dict(zip(sign_symbols, values))).applyfunc(sp.cancel)) == 0
+        for values in star_cells(census))
+    # THE BRANCHES ON THE COVARIANT LINE at the two named curve witnesses (their own cells)
+    table: dict = {}
+    for name, pi0 in (("L+-", 1), ("L-+", -1)):
+        values = next(v for v, c in census["cells"].items() if c["rule_a"] and c["class"][0] == pi0
+                      and sign_dict(v) == b213.locus_witness_table()[name][1])
+        moduli = curve_moduli(pi0)
+        v0, g0, v1, g1 = moduli
+        cell = formal(values, moduli_as_g(moduli), PARAMETER_SYMBOLS)
+        zero = cell.subs({p: 0 for p in PARAMETER_SYMBOLS})
+        g1_m = b213.metric_candidates(zero)[0].applyfunc(sp.radsimp)
+        form = b213.quadratic_form(g1_m, KAPPA)
+        print(f"[branches] {name} symbolic line multiple", file=sys.stderr)
+        on_line = cell.subs({B16: LAM_LINE, C25: -LAM_LINE, D34: LAM_LINE, A07: 0})
+        symbolic, remainder = line_branches(on_line, form)
+        table[(name, "line symbolic")] = (symbolic, remainder)
+        for label, point in (("line 1/4", {B16: QUARTER, C25: -QUARTER, D34: QUARTER, A07: 0}),
+                             ("line 1/4 + D07 1/4", {B16: QUARTER, C25: -QUARTER, D34: QUARTER, A07: QUARTER})):
+            print(f"[branches] {name} {label}", file=sys.stderr)
+            branches, remainder = line_branches(cell.subs(point), form)
+            table[(name, label)] = (branches, remainder)
+        table[(name, "v0 v1")] = sp.radsimp(v0 * v1)
+        table[(name, "v1 / v0")] = sp.radsimp(v1 / v0)
+        table[(name, "d07 rescale 1/4")] = sp.radsimp(1 / (1 - QUARTER ** 2 * v1 / v0))
+        table[(name, "line rescale 1/4")] = sp.radsimp(1 / (1 - QUARTER ** 2 / (v0 * v1)))
+    facts["table"] = table
+    facts["all_branches_k_free"] = all(all(kf for _, _, kf in entry[0]) and entry[1] == ()
+                                       for key, entry in table.items() if isinstance(key, tuple) and key[1].startswith("line"))
+    return facts

@@ -223,3 +223,183 @@ constrained to differ within an offset, so every entry above is a genuine family
    pairing; it is odd under parity and even under every proper rotation. (This is the
    representation-theoretic counterpart of Block 214's congruence result at lines 220-234,
    where `D07` also drops out of `det M`, the cone and the signature.)
+
+### Convention validation (this is what makes the rest quotable)
+
+Rebuilding `M = H D(kappa) + D(kappa)^T H` from `eta` alone, at symbolic moduli and
+symbolic parameters in the all-plus class, reproduces Block 214's measured blocks
+**exactly** (COMPUTED, `q_union.py`), in its even/odd order `(0; 3,5,6 | 1,2,4; 7)`:
+
+```text
+M_ee = [[0, u^T],[u, 0]],  u = ( (D07+D34) kt, (D25-D07) kx, (D07+D16) ky )   [line 200]
+M_oo = [[N, 0],[0, 0]],    N = [[0,(D16+D25)kt,(D34-D16)kx],
+                                [(D16+D25)kt,0,-(D25+D34)ky],
+                                [(D34-D16)kx,-(D25+D34)ky,0]]                 [lines 201-203]
+M_eo = B is parameter-free                                                    [line 189]
+```
+
+so the corner order, the `eta` signs, the raising part and the family are all in the
+lane's conventions, and nothing below rests on a re-invented sign.
+
+Two further COMPUTED facts used later: `M_oo` contains no shear at all, so the union locus
+`M_oo = 0` is **the same plane `D16 = D34 = -D25` in all 64 sign cells**; and
+`Gamma P111 Gamma = -P111` while `Gamma H0(0) Gamma = H0(0)`.
+
+---
+
+## Q3 — TWISTED COVARIANCE
+
+Twisted covariance: for each rotation there is a corner-sign gauge `E_R = diag(+-1)` with
+`rho(R) H rho(R)^T = E_R H E_R`, i.e. `(E_R rho(R)) H (E_R rho(R))^T = H`.
+
+**Lemma 1 (PROVED).** The set of rotations admitting some `E_R` is a subgroup: if
+`rho(R1) H rho(R1)^T = E1 H E1` and likewise for `R2`, then, using that a signed
+permutation conjugates a diagonal sign matrix to another diagonal sign matrix
+(`rho E rho^T = E^pi`), `rho(R1R2) H rho(R1R2)^T = (E2' E1) H (E1 E2')` with
+`E2' = rho(R1) E2 rho(R1)^T`. So the question is decidable rotation by rotation.
+
+**Lemma 2 (PROVED).** Twisted covariance is a gauge invariant: for `H' = E H E`,
+`rho H' rho^T = E^pi (E_R H E_R) E^pi = (E^pi E_R E) H' (E E_R E^pi)`. Gauge-equivalent
+cells therefore have gauge-equivalent answers.
+
+**Lemma 3 (PROVED).** If `g0 != 0`, the three `Lambda^1` off-diagonal entries all have
+magnitude `v1 |g0|`, so the twisted condition on that block forces `e_{pi(i)} eps_i = f1`
+(one global sign), i.e.
+
+```text
+E_R rho(R) restricted to Lambda^1 = f1 * (unsigned permutation of the axes),
+```
+
+and likewise `f2 * P` on `Lambda^2`. **The gauge exactly strips the orientation signs of
+the rotation.** That is why curvature can survive.
+
+### Do the shears survive full-`O` twisted covariance? **YES.**
+
+COMPUTED (`q34_twisted.py`, `q3_cells.py`; 24 rotations x 256 gauges x all 64 sign cells,
+exact): with `D07 = D16 = D25 = D34 = 0`, **all 24** rotations are twisted-covariant for
+**every** curved family point in **every** one of the 64 shear-sign cells. A curved cell is
+therefore never excluded by covariance-up-to-gauge. This is the exact counterpart of Block
+211 lines 239-242 ("the individual signs are therefore not content"); relatedly PROVED:
+the product of the three off-diagonal entries of a degree block is invariant under both
+`rho` (the sign factors multiply to `(eps_1 eps_2 eps_4)^2 = 1`) and `E`, so Block 211's
+class labels `(pi0, pi1)` are rotation invariants.
+
+### With the parameters on, the twisted locus is the star line, up to gauge
+
+COMPUTED (`q3_cells.py`, exact, all 64 cells): with `g0, g1` generic and nonzero, the locus
+of `(D07, D16, D25, D34)` twisted-covariant under **all 24** rotations is, in each cell,
+exactly one 2-plane:
+
+```text
+|D16| = |D25| = |D34|,   D07 free,
+signs:  D16 = s_b D34,  D25 = s_c D34,
+        s_b = s_xy0 s_tx0 s_tx1 s_xy1,   s_c = s_xy0 s_ty0 s_ty1 s_xy1.
+```
+
+In the **all-plus** cell that reads `D16 = D25 = D34`; each of the four sign patterns
+occurs in exactly 16 cells. By Lemma 2, and because the pattern is the gauge image of
+`(+, -, +)`, this locus is **the corner-sign-gauge orbit of the Hodge star line of Q1**:
+
+> **TWISTED FULL-`O` COVARIANCE OF A CURVED CELL <=> THE CROSS BLOCK IS THE HODGE STAR, UP
+> TO SCALE AND UP TO THE CORNER-SIGN GAUGE. `D07` STAYS FREE.**
+
+### The largest subgroup under which a curved cell survives *untwisted*
+
+COMPUTED (`q3_cells2.py`, all 64 cells x 24 rotations, exact): the untwisted stabiliser of
+a curved family point is
+
+```text
+order 6  (S3 = D3: element orders 1,2,2,2,3,3)   in exactly 16 of the 64 sign cells,
+order 2                                          in the other 48,
+```
+
+unchanged when the parameters are put on the star line. So **the largest subgroup under
+which a curved cell survives untwisted covariance is the trigonal `D3` of order 6 about a
+cube body diagonal** — never `D4`, `A4` or `O`, which all force `g0 = g1 = 0` (Q2 table).
+The 16 trigonal cells are distributed **4 in each of Block 211's four gauge classes
+`(pi0, pi1)`** (COMPUTED), so every gauge class contains such a point. What that subgroup
+forces on the four parameters (Q2 table, `S3` row):
+
+```text
+D16 = D34 = -D25   (Block 214's union-locus plane),   D07 free.
+```
+
+And the sharpest cross-check in this block (COMPUTED, `q_union.py` + `q_final.py`):
+
+> **THE 16 SIGN CELLS WHOSE CURVED POINTS CARRY THE ORDER-6 TRIGONAL STABILISER ARE
+> *EXACTLY* THE 16 SIGN CELLS IN WHICH THE FULL-`O` TWISTED-COVARIANCE LOCUS COINCIDES
+> WITH BLOCK 214's UNION-LOCUS PLANE `D16 = D34 = -D25`. THE TWO SETS ARE IDENTICAL,
+> 16 = 16, 4 PER GAUGE CLASS.**
+
+In the other 48 cells (the all-plus cell among them) the twisted locus and the union plane
+meet only at `D16 = D25 = D34 = 0`, Block 213's degree-diagonal slice.
+
+---
+
+## Q4 — THE OVERLAP SUM
+
+### `s` is *not* a rotation invariant
+
+COMPUTED (`q34_twisted.py`): each `rho(R)` induces a signed permutation of
+`(D07, D16, D25, D34)` (the antidiagonal positions map to antidiagonal positions because
+corner complementation commutes with the corner permutation). The space of
+rotation-invariant linear functionals of the four parameters is exactly **two**-dimensional:
+
+```text
+invariants:   D07        and        D16 - D25 + D34.
+s = D07 + D16 + D25 + D34  is changed by 16 of the 24 rotations
+(e.g. the axis transposition x <-> y:  s -> D07 - D16 - D25 + D34).
+```
+
+The second invariant is the trace of the star-transported cross block
+`T = X . Star in End(Lambda^1)`, which is `T = diag(D34, -D25, D16)` in axis order
+`(t, x, y)`; `X = lam Star` is exactly `T = lam I`. So the covariant content of the cross
+block is `tr T`, not `s`. **The premise of the question fails: `s` is not protected.**
+
+### Rotation covariance of the fold *does* force `s = 0`
+
+COMPUTED: `rho(R) P111 rho(R)^T = P111` for only **8** of the 24 rotations, and those 8 are
+exactly the `D4` fixing the `x` axis — the *middle* coordinate of the corner order. `P111`
+is not a covariant object; the covariant Hodge-complement operator is `Star` (equivariant
+under all 24, COMPUTED), and `P111 = Star . diag(sigma)` differs from it exactly by the
+orientation signs.
+
+**PROVED.** In `H0 = H0(0) + (s/4) P111` the parameter-free part `H0(0)` is
+grade-block-diagonal, so it has no entry in any antidiagonal position; the mismatch
+`rho P111 rho^T - P111` lives entirely in those positions and cannot be cancelled.
+Therefore, for any rotation outside that `D4`,
+
+```text
+rho H0 rho^T = H0   =>   s = 0.
+```
+
+Rotation covariance of the folded overlap form forces `s = 0` on its own — a second and
+weaker-hypothesis route to Block 214's `s = 0` locus (line 259: "Overlap: the same ideal in
+`s` has radical `(s)`").
+
+### The principle that forces `s = 0`, stated exactly
+
+Let `Gamma = diag((-1)^grade(c))` be the grade-parity involution. Then (COMPUTED):
+
+```text
+Gamma H0(0) Gamma = H0(0),     Gamma P111 Gamma = -P111,
+so   Gamma H0 Gamma = H0   <=>   s = 0.
+```
+
+**The principle is: the folded overlap form preserves grade parity — it is block diagonal
+for `Lambda^even (+) Lambda^odd`, equivalently it commutes with `Gamma`.** Two exact
+remarks:
+
+1. `Gamma = rho(-I)` is precisely the exterior-algebra action of the **lattice inversion**
+   `x -> -x`. Grade-parity preservation of the fold *is* covariance under inversion. The
+   Lattice axiom names "proper cubic rotations" only (`MINIMAL_AXIOMS_2026-06-29.md`
+   line 38), so inversion is **not supplied**, and nothing in the inputs forces `s = 0` by
+   parity. (PROVED, from the axiom text.)
+2. Under the **onsite** assembly (`H0 = D` exactly, Block 214 line 167) the same principle
+   is strictly stronger: `Gamma H0 Gamma = H0` forces `D07 = D16 = D25 = D34 = 0` — the
+   whole degree-diagonal slice, not just `s = 0`. The overlap fold sees the parameters only
+   through `s` (Block 214 lines 238-243), which is why one assembly gives a 4-condition and
+   the other a 1-condition version of the same principle.
+
+On the star line `(D16, D25, D34) = lam(1, -1, 1)`, `s = D07 + lam`: Q2's covariant locus
+does **not** force `s = 0`; only the fold's own covariance, or parity, does.

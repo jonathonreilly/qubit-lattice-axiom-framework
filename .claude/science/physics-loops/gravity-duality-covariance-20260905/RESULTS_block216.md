@@ -168,3 +168,7 @@ TOTAL: PASS=27 FAIL=0
 | `break_float_absence` | I | I-2  | TOTAL: PASS=26 FAIL=1 | 1 |
 
 Summary: 28/28 mutations each fail exactly their own gate family (A 2, B 6, C 4, D 3, E 2, F 3, G 4, H 2, I 2); no mutation changed any other family; no `AssertionError` ("mutation did not fail exactly its own gate") anywhere.
+
+## Fix pass (supervisor fold, 2026-09-05, after the refuting checker's PASS-NO-BLOCKER)
+
+The Opus refuting checker (`CHECKER_block216_findings.md`) reproduced eleven load-bearing items on its own machinery and corrected two editorial points: the reason for `D07`'s absence from the odd–odd block is two-sided (column 7 AND row 0 of `D` are zero — `CK-02`) and the (−1, +1) class representative is mask 11, not 16 (`CK-04`, also the supervisor's F-A216-1). Applied with the supervisor's F-A216-2 (the "now measured" sentence qualified to the sufficiency half), the Review record, `CHECK_VERDICT` and the fence's DECISION_CUT sentence; the fence synced byte-identically. No check, literal or mutation changed, so the 28-mutation census above (certified sha `472c5dd5...`) stands; the baseline was recertified after the fold (`TOTAL: PASS=27 FAIL=0`, 179 s) and the cache re-pinned to runner sha `424df7d6...` because the note is the first fingerprinted input of the receipt.

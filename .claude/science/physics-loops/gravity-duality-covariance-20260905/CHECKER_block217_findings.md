@@ -150,3 +150,128 @@ parameter**, and in fact only the `xy` face survives. At the mask-2 witness with
 differs from `H0(0)` in **16** entries.
 
 DISPOSITION: **CONFIRMS.**
+
+## CK-04 — the union locus in `s` and the cone at masks 2 and 16 — CONFIRMS
+
+Note lines 271-274, verbatim:
+
+> `is exactly `(s)`: **the union locus is`
+> ``s = 0`**, Block 214's all-plus statement now at the covariant cells; `det M``
+> `has degree 4 in `s` and `det B = M_eo` is `s`-free (the `(s/4) P111` block is`
+> `even–odd and `D` changes parity, so it never reaches `M_eo`).`
+
+Note lines 290-292, verbatim:
+
+> `at s = 0:    det M = det B^2,  det B = Q+ Q-,  two DISTINCT quadrics with RATIONAL coefficients (the sqrt 6 cancels), monic in kt^2:`
+> `             Q+- = kt^2 + ky^2 + c_xx kx^2 -+ c_ty kt ky + (signs) c_1 (kt kx, kx ky),  the pair differing in the sign of the kt ky term alone;`
+> `             pi0 = +1:  c_xx = 59701/57109,  c_1 = 24516/57109,  c_ty = 2988/57109      pi0 = -1:  64961/61889, 27664/61889, 2192/61889;`
+
+Note lines 295-296, verbatim:
+
+> `symbolic s:  det M(s) = P(s, kappa)^2 with P ONE irreducible polynomial over QQ(sqrt 6) of degree 2 in s and 4 in kappa, at all 10`
+> `             witnesses: off s = 0 the pair MERGES into an irreducible quartic (squared); on s = 0 it splits into Q+ Q-.`
+
+**What I computed.** `M = H(s) D(κ) + D(κ)^T H(s)` from my own fold and my own grade-raising `D`
+(independently built; it agrees entry-for-entry with `b214.raising_matrix()`), `B = M_eo` the 4×4
+even–odd block, determinants by `sympy`'s `berkowitz` (not `DomainMatrix`/`ff_det`), and the union
+locus by taking the **gcd in `QQ(√6)[s]` of the κ-coefficients of `det M − det B²`** (a PID
+computation, not a Groebner basis).
+
+| | mask 2 (`π0 = +1`) | mask 16 (`π0 = −1`) |
+| --- | --- | --- |
+| `det B` free symbols | `kt, kx, ky` — **`s`-free** | **`s`-free** |
+| `deg_s det M`, `deg_κ det M` | 4, 8 | 4, 8 |
+| gcd of the coefficients of `det M − det B²` in `s` | `s²`, radical **`(s)`** | `s²`, radical **`(s)`** |
+| `det M(0) = det B²` | True | True |
+| `det B(0)` factor shape over `QQ(√6)` | two degree-2 factors, multiplicity 1 each | same |
+| `Q±` monic-in-`kt²` `(c_xx, |c_tx|, |c_ty|, |c_xy|)` | **(59701/57109, 24516/57109, 2988/57109, 24516/57109)**, `c_yy = 1` | **(64961/61889, 27664/61889, 2192/61889, 27664/61889)**, `c_yy = 1` |
+| `Q+ − Q−` | `−5976 kt ky/57109` — **the `kt ky` term alone** | `−4384 kt ky/61889` — **the `kt ky` term alone** |
+| distinct / proportional to each other | distinct / **not** proportional | distinct / **not** proportional |
+| either `Q±` proportional to the onsite `kᵀ G1 k` | **no** | **no** |
+| `det B` proportional to `(kᵀ G1 k)²` | **no** — not one metric's cone | **no** |
+| `det M(s)` factor shape `(deg_s, deg_κ, multiplicity)` | **`[(2, 4, 2)]`** — one factor squared | **`[(2, 4, 2)]`** |
+
+The onsite quadrics I read off `b213.metric_candidates` at zero parameters:
+`kᵀ G1 k = 9/8 kt² − 3/4 kt kx − 3/4 kt ky + 9/8 kx² − 3/4 kx ky + 9/8 ky²` (mask 2) and
+`4/3 (kt² − kt kx + kt ky + kx² − kx ky + ky²)` (mask 16).
+
+DISPOSITION: **CONFIRMS**, every declared coefficient exact, both classes.
+
+## CK-04b — "a pair of distinct rational quadrics related by `ky → −ky`" — CORRECTS
+
+Note line 50, verbatim (the paper's one-sentence summary):
+
+> `quadrics** related by `ky → −ky`, proportional to neither the onsite `kᵀ G1 k``
+
+**What I computed.** `Q+(kt, kx, −ky) − Q−(kt, kx, ky) ≠ 0` at **both** masks. The reason is
+elementary and the note's own `N4` table states it correctly: the two quadrics differ in the
+`kt ky` sign **alone**, while `ky → −ky` flips the `kt ky` **and** the `kx ky` term, and
+`|c_xy| = 24516/57109 ≠ 0` (mask 2), `27664/61889 ≠ 0` (mask 16). No coordinate sign flip can relate
+them, since each flip changes exactly two of the three cross terms.
+
+DISPOSITION: **CORRECTS.** A wording defect in the one-sentence summary only. Line 291
+("the pair differing in the sign of the `kt ky` term alone"), claim register line 450
+("`Q+ Q−`, distinct, rational, `kt ky` sign") and the `N5` fence (line 539, "differing in the sign
+of the kt ky term alone") are all correct and are what the runner gates
+(`pair_differs_in_kt_ky_only`). Recommended fix: drop "related by `ky → −ky`" from line 50 or
+replace it with "differing in the sign of the `kt ky` term alone". **No measured number changes; not
+a blocker.**
+
+## CK-05 — the (4,2,2) bench at mask 2 on the star line — CONFIRMS
+
+Note line 320, verbatim:
+
+> `| L+− (mask 2) | `λ⁸ · (55296λ⁴ − 388672λ³ + 698656λ² − 422145λ + 69984)²` (irreducible quartic) | `{0×8, 9/8×2, 16/11×2, 18/11×4}` | `{0×8, 36481/55296×4, 89401/55296×4}` | `{0×8, 1×8}` |`
+
+Note lines 336-343, verbatim:
+
+> `pencil bench charpoly is **exactly** `λ⁸` times the charpoly of`
+> ``(H0⁻¹ M(e_t))²` — measured as a polynomial identity at the witness, the`
+> `control and the flat cell. At the covariant witness that reads`
+> ```text`
+> `{9/8 x2, 16/11 x2, 18/11 x4} = G1_tt x {1, 128/99, 16/11, 16/11},   G1_tt = 9/8   (Block 216's four branch constants on the line at 1/4);`
+> `the onsite cone at kappa = e_t is the NUMBER det M(e_t) = (64/81) G1_tt^4 (Block 216's c), never zero.`
+
+**What I computed.** My own 16-site `(4,2,2)` bench: my own site indexing, my own periodic assembly
+(aliases add), my own onsite and overlap rule dictionaries, my own lane raising rules (whose bench
+matrix satisfies `dᴮᵀ = (dᵀ)ᴮ`, checked), `K = H d − dᵀ H`, form `= −K²`, pencil `= −(H⁻¹K)²`
+(verified equal to `−(d − H⁻¹dᵀH)²` in every case), charpolys by `sympy Matrix.charpoly` over
+`QQ(√6)`. Cell = mask 2 at L+−'s curve moduli, `(D07, D16, D25, D34) = (0, 1/4, −1/4, 1/4)`.
+
+| reading | my multiset / factorization |
+| --- | --- |
+| onsite form | `λ⁸ (55296λ⁴ − 388672λ³ + 698656λ² − 422145λ + 69984)²` (as a monic charpoly: `/55296²`) — **matches** |
+| onsite pencil | **`{0×8, 9/8×2, 16/11×2, 18/11×4}`** |
+| overlap form | **`{0×8, 36481/55296×4, 89401/55296×4}`** |
+| overlap pencil | **`{0×8, 1×8}`** |
+| the same four at zero parameters | overlap form and pencil **identical** to the line point; onsite pencil moves to `{0×8, 9/8×2, 4/3×2, 3/2×4}` |
+| `λ⁸ · charpoly((H0⁻¹M(e_t))²) == onsite pencil bench charpoly` | **True** (exact polynomial identity) |
+| `charpoly((H0⁻¹M(e_t))²)` | `(8λ − 9)²(11λ − 18)⁴(11λ − 16)²/113379904` |
+| `det M(e_t)`, `G1_tt`, `(64/81) G1_tt⁴` | **81/64**, **9/8**, **81/64** |
+| `G1_tt × {1, 128/99, 16/11, 16/11}` | `{9/8, 16/11, 18/11, 18/11}` — matches the multiset |
+
+**Bloch union = direct (the note's `F-2`), rebuilt independently.** My own bench momenta
+`z ∈ {(1,1,1), (i,1,1)}` (from `exp(2πi m/N)`, `m < N/2`), my own 8×8 Bloch blocks, the product of
+the two degree-8 charpolys against the direct degree-16 charpoly, over `QQ(√6, i)`:
+**onsite form True, onsite pencil True, overlap form True, overlap pencil True.**
+
+DISPOSITION: **CONFIRMS**, including the `κ = e_t` identity and the four-branch-constant reading.
+
+## CK-07 — the two planted defects through the runner's `main()` — COULD NOT TEST (rule conflict)
+
+The hard operating rules forbid importing, calling or copying the block runner
+(`scripts/admissibility_dirac_kahler_overlap_assembly_covariant_cells_2026_09_05.py`); item 7 of the
+attack list would require calling its `main()` in-process. I did not run it. The mutation census was
+also out of scope by instruction (the supervisor verified the 29-mutation census from the raw
+outputs). Every claim in the priority list was instead attacked with independent machinery above.
+
+---
+
+## Scope of the check, stated so it is not over-read
+
+- Attacked at **masks 2 and 16 only** (one witness per rule-A class), plus the symbolic-signs fold
+  lemma and Bloch-fold lemma, which are cell-independent and therefore cover all 8.
+- **Not** re-measured: the other six rule-A cells' stabilisers and cones; the all-plus `W1` and flat
+  controls (stabilisers, cone, bench); the census/star-pattern classification; the authority gate;
+  the float/nsimplify gates; the mutation battery.
+- Every value above was recomputed from scratch; none was read out of the receipt before computing.

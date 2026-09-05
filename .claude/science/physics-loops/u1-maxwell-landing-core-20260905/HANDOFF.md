@@ -21,3 +21,8 @@ the residual is payload+OL, time rule, locality (IP-B), conservation. Not pushed
 block 01 after the checker seat. Proposed weaving (later review): none.
 
 Pipeline gate: pipeline exit=0 (2026-09-05, HEAD cb7e75702b); generated outputs restored. Block 02 complete on the worker side; not pushed.
+
+## 2026-09-05T03:25+00:00 block 02 PR opened; block 03 launched
+PR #7980 — "[physics-loop] u1-maxwell-landing-core block02 — bounded_theorem — bounded-support" — base = the block-01 branch (PR #7976), head = the block-02 branch at 11fdd471a5. Verification chain in REVIEW_HISTORY.md (supervisor review, Opus checker verdict, fix pass) and RESULTS_block02.md. Never merge; review-loop is owner-operated.
+Block 03: worktree .claude/worktrees/loop-u1-block03, branch physics-loop/u1-maxwell-landing-core-block03-gauss-support-20260905 stacked on block 02; contract GOAL_block03.md; Fable primary launched 2026-09-05T03:25+00:00; expected deliverables scripts/u1_gauss_support_forcing_extended_class_2026_09_05.py, docs/U1_GAUSS_SUPPORT_FORCING_EXTENDED_PAYLOAD_CLASS_BOUNDED_NOTE_2026-09-05.md, RESULTS_block03.md, V1-V5 in REVIEW_HISTORY.md. Then: Opus refuting checker, fold, conformance gate, PR stacked on #7980.
+Resume rule for a fresh session: three open PRs #7976 -> #7980 -> (block 03), each stacked on the previous; rebase a stacked branch onto its parent's tip before opening its PR; never merge any of them.

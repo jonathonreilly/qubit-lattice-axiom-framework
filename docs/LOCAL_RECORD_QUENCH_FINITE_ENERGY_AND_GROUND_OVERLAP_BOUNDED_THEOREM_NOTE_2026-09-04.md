@@ -1,5 +1,5 @@
 ---
-claim_id: local_record_quench_finite_energy_and_ground_overlap_2026_09_04
+claim_id: local_record_quench_finite_energy_and_ground_overlap_bounded_theorem_note_2026-09-04
 claim_type: bounded_theorem
 claim_scope: "For a supplied invertible finite bipartite free-fermion Hamiltonian, its filled negative sea, and occupation projections on one sublattice followed by incident-hop deletion: every branch has the stated reduced covariance and the same post-event mean energy; excess above its fixed-number reduced ground energy is nonnegative, vanishes exactly for a reducing deletion, and is bounded by the sum of deleted diagonal entries of sqrt(Q Q-dagger). For one deletion on cubic pi-flux tori of side 2N, N>=2, with physical boundary sign (-1)^(N-1) in each axis: scalar resolvent formulas give excess energy and excitation count; excess has a strictly positive finite thermodynamic limit in hopping units; the matching fixed-number Slater ground-state squared overlap has liminf at least 1-9pi/32. This is one supplied free-fermion quench, not a physical Record-formation mechanism or a many-event vacuum."
 upstream_dependencies: []
@@ -333,7 +333,7 @@ The primary and checker are built in separate contexts of the **same model famil
 ## Review record
 
 For audit packet completeness, a hard landing condition is the claim-scoped helper registration
-`local_record_quench_finite_energy_and_ground_overlap_2026_09_04 -> scripts/local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04.py`
+`local_record_quench_finite_energy_and_ground_overlap_bounded_theorem_note_2026-09-04 -> scripts/local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04.py`
 in the existing `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` mechanism. Both source files and machine caches must land with this note. The author branch does not edit the audit registry or apply a verdict.
 
 ## Prior work and what this result changes

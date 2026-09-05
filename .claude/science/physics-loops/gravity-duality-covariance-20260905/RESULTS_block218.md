@@ -160,3 +160,17 @@ Disclosed: the first table generator read the failing-check column from the cens
 | `break_float_absence` | I | I-2 | TOTAL: PASS=25 FAIL=1 | 1 |
 
 Summary: 27/27 mutations each fail exactly their own gate family (A 2 B 7 C 3 D 3 E 3 F 2 G 3 H 2 I 2); no mutation changed any other family; every run `TOTAL: PASS=25 FAIL=1`, exit 1, zero assertion errors. Under 4-way contention each run took about 50 s (bench phase 27 s against 17.7 s alone); the census finished at 15:47:29 local, 6 min 10 s after launch.
+
+## Probe 2 (scratch, after the supervisor's review checkpoint `0f27bb7d0b`; evidence for the checker, NOT in the certified runner)
+
+The supervisor's F-A218-1 (the N2 mechanism's sign bookkeeping) and F-A218-2 ("up to similarity" is stronger than the
+gated charpoly equality) were measured directly in a scratch probe (`probe2.py`, 2.3 s, exit 0) without touching the
+certified runner, note or receipt: at the witness, the all-plus `W1` and the flat cell, at all four Bloch points,
+(i) the Hermitian-transpose raising block is exactly `-i D(kappa_z)^T`; (ii) `Z op Z^-1 = -(D - H0^-1 D^T H0)` with
+`op = d_B - H_B^-1 d_B^dagger H_B` and `Z = diag(z^c)` — the note's bookkeeping, sign for sign; (iii) the DIRECT
+similarity `Z S_B(z) Z^-1 = (H0^-1 M(kappa_z))^2` holds as an `8 x 8` matrix identity (`S_B = -op^2`), the mixed point
+included — twelve (cell, point) pairs, all True. So the statement "up to similarity" is the measured truth and the
+gated charpoly equality (`E-3`) is its consequence; the checker's item 3 (direct similarity) is expected to CONFIRM.
+Run record line: probe 2 (scratch, 19:50Z) | `probe2.py` | 12/12 direct similarities True, 12/12 operator identities
+True, 12/12 dagger blocks `-i D^T` | exit 0. Not promoted into the runner: the certified sha, receipt and 27-mutation
+census are left untouched after the supervisor's review; promotion (an `E-4` check) is a one-line fold if wanted.

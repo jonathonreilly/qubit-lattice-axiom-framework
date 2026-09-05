@@ -275,3 +275,42 @@ Note: the witness table's overlap-form entry at (i,i,1) names the field (irreduc
 11 sourced facts/counts — PASS: every number in the note is measured by the runner or quoted from Blocks 213-217 and the axiom memo at scope; the checker's two precisions applied; the checker's extra values (the generic-cell fold, det M's quadric, W1's two quadrics) attributed to it in the Review record and claimed nowhere else.
 12 pre-review gates — vocab_lint --report-only 0 new (one pre-existing human-review filename notice outside this block); audit_lint --strict OK; git diff --check clean; py_compile ok; post-fold baseline TOTAL PASS=26 FAIL=0 (re-pinned); explicit-path staging; cold read of the complete note and runner by the supervisor.
 Independence class disclosed: single family (Claude), cross-model — Fable primary seat, Opus 5 refuting checker, supervisor hand-verification and the census re-verified from the raw outputs.
+
+## block 219 — V1-V5 (primary)
+
+Recorded by the Fable primary seat at block delivery; not an audit certificate.
+Runs: see RESULTS_block219.md (certified baseline summary line and the mutation table).
+
+- **V1 — specific verdict-identified obstruction.** Block 218's `N6` `REOPEN` item 1, quoted verbatim in the note's
+  `W1`: a bench sampling the `y` direction (extent `N_y = 4`, 64 sites) at the witness, so that the six entries of
+  `G1` are read off the bench and the shape seen in all three directions. Behind it Block 218's `F-2` (the plane
+  restriction `(9/8, -3/8, 9/8)` read; `G1_ty`, `G1_xy`, `G1_yy` unread) and its `H-2` (the `y` direction unsampled).
+  Computed exactly on Block 213's `bench_matrix` at extent `(4,4,4)`, the direct `64 x 64` charpoly timed first as
+  the spec required (under one second for the onsite pencil).
+- **V2 — genuinely new content.** (i) The Bloch-point lemma with `z_y` live: the raising block `i D(kappa_z)` at all
+  eight points and `D(kappa_z)^2 = 0` at each, the onsite similarity at five cells, and the identity with
+  `(H0^-1 M(kappa_z))^2` at the triply-mixed point `(i,i,i)` — the body diagonal — at five cells. (ii) The first bench
+  data with three fine momenta at a covariant witness: the triply-mixed multiset equals the pure one, `Q(e_t+e_x+e_y)
+  = 9/8` computed, and the shape holds at all seven nonzero points. (iii) `G1` read off a bench in all six entries,
+  with the seventh point as an over-determined check that passes (`9/8 = 9/8`). (iv) Block 216's two rescalings seen
+  on a bench for the first time: `{1, 16/9, 2 x2}` at `lambda = 1/2` (the cell's positivity checked by leading minors
+  first) and `{128/119, 128/99, 16/11 x2}` at `D07 = 1/4`, at all seven points each, with the finding that the `D07`
+  rescaling rescales the bench read-off of `G1` by `128/119`. (v) The control at eight points: the rational branch reads
+  W1's `G1` consistently while the rest is an irreducible cubic or a linear times an irreducible quadratic — at
+  `(i,i,i)` the latter, not the cubic the goal guessed. (vi) The overlap fold's three signed sums at the three
+  doubly-mixed points and its parameter-freeness at the triply-mixed point, with the mechanism (odd weight cancels,
+  even weight adds), and the overlap bench's `t`/`y` identification against the onsite bench's three-way one. None of
+  this exists in Blocks 105-218.
+- **V3 — audit lane could NOT already complete this.** It needs Block 213's bench machinery at a new extent, Block
+  214's principal part, Block 216's witnesses, constants and rescalings, Block 217's algebraic-field bench and Block
+  218's Bloch-point helpers; the audit lane carries none of these.
+- **V4 — no observed target, fit, literature constant or continuum equation is load-bearing.** Every number is an
+  integer, a rational, a symbol or an element of `QQ(sqrt 6)` or `QQ(sqrt 6, i)`; gate `I-2` measures zero
+  `nsimplify`, zero float literals and zero float calls; the identity is exact at the fine momentum `pi/2` and given
+  no small-`k`, dispersion, Lorentzian or continuum reading; Block 216's constants at `lambda = 1/2` are read from its
+  own symbolic table, not fitted.
+- **V5 — materially changes rather than relabels.** Block 218 read one plane and left three entries of `G1` and both
+  rescalings unread on any bench; this block reads all six entries with a check that could have failed and did not,
+  sees both rescalings at seven points each, and finds the `D07` read-off rescaled — while Blocks 213, 214, 216, 217
+  and 218 reproduce unchanged (`C-2`, `C-3`, `E-3` at the old points, `G-3`'s two `det M` values). Nothing is
+  relabelled; the could-nots (the overlap direct charpolys, the similarity as a matrix identity) are listed as such.

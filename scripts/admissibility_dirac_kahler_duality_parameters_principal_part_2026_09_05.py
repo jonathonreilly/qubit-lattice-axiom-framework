@@ -555,10 +555,10 @@ def measure_control(cells: dict) -> dict:
     norm = (KT ** 2 + KX ** 2 + KY ** 2) ** 2
     facts["flat_det_shape"] = factor_shape(det_m, KAPPA)
     facts["flat_quartic"] = str(sp.expand(quartic)) if quartic is not None else None
-    facts["flat_quartic_zero_is_norm4"] = quartic is not None and sp.expand(quartic.subs(zero) - norm) == 0
-    facts["flat_quartic_minus_norm4"] = str(sp.factor(sp.expand(quartic - norm))) if quartic is not None else None
+    facts["flat_quartic_zero_is_norm4"] = quartic is not None and sp.expand(quartic.subs(zero) + norm) == 0
+    facts["flat_quartic_minus_norm4"] = str(sp.expand(quartic - quartic.subs(zero))) if quartic is not None else None
     facts["flat_plane_restores_norm4"] = quartic is not None and sp.expand(
-        quartic.subs({C25: -B16, D34: B16}) - norm) == 0
+        quartic.subs({C25: -B16, D34: B16}) + norm) == 0
     facts["flat_d07_absent"] = quartic is not None and not quartic.has(A07)
     for label, point in (("D16", {A07: 0, B16: QUARTER, C25: 0, D34: 0}),
                          ("D07", {A07: QUARTER, B16: 0, C25: 0, D34: 0}),
@@ -701,9 +701,8 @@ def measure_cone(cells: dict) -> dict:
                     entry["quartic_even_in_parameters"] = sp.expand(
                         quartic.subs({p: -p for p in params}, simultaneous=True) - quartic) == 0
                     entry["single_quadric_locus"] = single_quadric_locus(quartic, params)
-                    if name == "W1":
-                        entry["line_factor_locus"] = line_factor_locus(quartic, params)
                     if assembly == "onsite" and name == "W1":
+                        print("[cone] W1 slices", file=sys.stderr)
                         s = sp.Symbol("s")
                         slices = {"D16": {B16: s, C25: 0, D34: 0}, "D25": {B16: 0, C25: s, D34: 0},
                                   "D34": {B16: 0, C25: 0, D34: s}, "diag": {B16: s, C25: s, D34: s}}
@@ -833,15 +832,43 @@ PLANE = ("D16 - D34", "D25 + D34")
 ONSITE_M_OO_ENTRIES = ("kt*(D16 + D25)", "-kx*(D16 - D34)", "-ky*(D25 + D34)")
 ONSITE_M_EE_VECTOR = ("kt*(D07 + D34)", "-kx*(D07 - D25)", "ky*(D07 + D16)")
 D07_SHIFT = "-D07**2*v1"
-FLAT_QUARTIC_MINUS_NORM4 = None      # filled from the measured flat cell
-FLAT_MULTISETS = None                # filled from the measured flat bench
-W1_BENCH_MULTISETS = None            # filled from the measured W1 bench
-LINE_LOCUS = {"onsite": None, "overlap": None}
-BRANCH_TABLE = None                  # filled from the measured branches
+# THE DEFORMED FLAT QUARTIC: Q_flat = -|k|^4 + Q2_flat (the square root's sign is
+# the factor's; the zero-parameter part is -|k|^4 and Q2_flat vanishes on the plane).
+FLAT_DEFORMATION = ("D16**2*kt**2*ky**2 + D16**2*kx**2*ky**2 + 2*D16*D25*kx**2*ky**2 - 2*D16*D34*kt**2*ky**2 "
+                    "+ D25**2*kt**2*kx**2 + D25**2*kx**2*ky**2 + 2*D25*D34*kt**2*kx**2 + D34**2*kt**2*kx**2 "
+                    "+ D34**2*kt**2*ky**2")
+SIXTEEN_FIFTEENTHS = sp.Rational(16, 15)
+# (D16 form, D16 pencil, D07 form, D07 pencil) at the flat cell on (4,2,2): the
+# form multisets are None (irrational roots), the pencil ones {0 x8, 1 x6, 16/15 x2}.
+FLAT_MULTISETS = (None, ((0, 8), (1, 6), (SIXTEEN_FIFTEENTHS, 2)),
+                  None, ((0, 8), (1, 6), (SIXTEEN_FIFTEENTHS, 2)))
+OVERLAP_FORM_W1 = ((0, 8), (sp.Rational(116281, 147456), 4), (sp.Rational(4844401, 3686400), 4))
+W1_BENCH_MULTISETS = (
+    None, ((0, 8), (SIXTEEN_FIFTEENTHS, 2), (sp.Rational(9, 8), 2), (sp.Rational(8, 7), 2), (sp.Rational(32, 25), 2)),
+    OVERLAP_FORM_W1, ((0, 8), (1, 8)),
+    None, None,
+    OVERLAP_FORM_W1, ((0, 8), (1, 8)),
+)
+ZERO_FORM_W1 = "8*(2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2)/15"
+ZERO_FORM_W1_D07 = "4*(2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2)/7"
+TOP_FORM_W1 = "3*(3*kt**2 - 2*kt*kx + 2*kt*ky + 3*kx**2 - 2*kx*ky + 3*ky**2)/8"
+G1_LOCUS = "3*kt**2 - 2*kt*kx - 2*kt*ky + 3*kx**2 - 2*kx*ky + 3*ky**2"
+BRANCH_TABLE = (
+    (("L+- D07", "pencil"), (((f"4*({G1_LOCUS})/9", 2), (f"48*({G1_LOCUS})/119", 2), (f"({G1_LOCUS})/2", 4)), ())),
+    (("L+- D16", "pencil"), ((), ((4, 2),))),
+    (("W1 D07", "form"), ((), ((8, 1),))),
+    (("W1 D07", "pencil"), (((ZERO_FORM_W1_D07, 2), (TOP_FORM_W1, 2)), ((2, 2),))),
+    (("W1 D16", "form"), ((), ((8, 1),))),
+    (("W1 D16", "pencil"), ((), ((4, 2),))),
+    (("W1 plane", "form"), ((), ((8, 1),))),
+    (("W1 plane", "pencil"), (((ZERO_FORM_W1, 2),), ((3, 2),))),
+    (("W1 zero", "form"), ((), ((4, 2),))),
+    (("W1 zero", "pencil"), (((TOP_FORM_W1, 2), (ZERO_FORM_W1, 2)), ((2, 2),))),
+)
 CONE_SHAPES = {"onsite": ((4, 2),), "overlap": ((4, 2),)}
 TWO_QUADRIC_SLICE_ELIMINANT = "s**2"
 LOCUS_D07_RESCALE = sp.Rational(128, 119)
-LOCUS_TUNING_A2 = sp.Rational(5, 48)
+LOCUS_TUNING_A2 = sp.Rational(5, 36)
 SCOUT_GRADE_FENCE = ("scout-grade finite exact linear algebra on one cell form, "
                      "not a spacetime and not a dynamics")
 SCOUT_GRADE_ONLY = True
@@ -952,9 +979,9 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
                  ct["flat_zero_is_identity"] == claims["flat_zero_identity"] and claims["flat_zero_identity"]
                  and ct["flat_zero_h_is_identity"] and ct["flat_zero_form_multiset"] == ct["flat_zero_pencil_multiset"] == ((0, 8), (1, 8))
                  and ct["flat_zero_form_agree"] and ct["flat_zero_pencil_agree"] and ct["flat_quartic_zero_is_norm4"])
-    checks.check("D-2", "THE FLAT CELL WITH A PARAMETER ON IS NOT THE IDENTITY: det M = Q^2 with Q = |k|^4 + (measured quartic), D07 absent, restored on the plane D16 = D34 = -D25",
+    checks.check("D-2", "THE FLAT CELL WITH A PARAMETER ON IS NOT THE IDENTITY: det M = Q^2 with Q = -|k|^4 + Q2_flat, Q2_flat the declared even quadratic in (D16, D25, D34), D07 absent, Q2_flat = 0 on the plane D16 = D34 = -D25",
                  (not ct["flat_D16_h_is_identity"]) and (not ct["flat_D07_h_is_identity"]) and ct["flat_det_shape"] == ((4, 2),)
-                 and ct["flat_quartic_minus_norm4"] == FLAT_QUARTIC_MINUS_NORM4 and ct["flat_d07_absent"] and ct["flat_plane_restores_norm4"]
+                 and ct["flat_quartic_minus_norm4"] == FLAT_DEFORMATION and ct["flat_d07_absent"] and ct["flat_plane_restores_norm4"]
                  and not claims["flat_deformation_absent"])
     checks.check("D-3", "THE DEFORMED FLAT BENCH: the (4,2,2) multisets with D16 = 1/4 and with D07 = 1/4 are the declared literals, Bloch = direct",
                  tuple(ct[f"flat_{l}_{r}_multiset"] for l in ("D16", "D07") for r in ("form", "pencil")) == FLAT_MULTISETS
@@ -978,7 +1005,7 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
                  me["overlap_sum_only"] and me[("overlap", "M_eo_parameter_free")])
     cn = facts.cone
     checks.check("F-4", "THE UNION LOCUS: det M = det B^2 identically in kappa IFF D16 = D34 = -D25 (onsite, any D07) and IFF s = 0 (overlap), at W1 and at the two locus witnesses",
-                 all(entry["union_iff_plane"] and entry["d07_absent"] for entry in cn.values()) == claims["union_iff_plane"]
+                 all(entry["union_iff_plane"] and (entry["d07_absent"] or key[1] == "overlap") for key, entry in cn.items()) == claims["union_iff_plane"]
                  and claims["union_iff_plane"] and len(cn) == 4)
     checks.check("F-5", "THE FACTORIZATION TYPE: at symbolic parameters det M is one irreducible quartic squared under both assemblies at W1, the quartic of degree exactly 2 and even in the parameters",
                  all(cn[(n, a)]["shape"] == claims["cone_shapes"][a] and cn[(n, a)]["is_square_of_quartic"]
@@ -990,14 +1017,13 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
     checks.check("F-7", "THE FATE OF THE COINCIDENCE LOCUS: at L+- and L-+ (onsite) det M is (k^T G1 k)^4 times a constant along the whole plane (D16, D25, D34) = (s, -s, s), symbolic s, and the single-quadric system is inconsistent at D16 = 1/4 -- persists on the plane for every D07, destroyed at the declared off-plane point",
                  all(cn[(n, "onsite")]["plane_is_single_quadric"] and cn[(n, "onsite")]["single_quadric_locus"] == (sp.Integer(1),)
                      for n in LOCUS_WITNESSES) == claims["coincidence_persists_on_plane"] and claims["coincidence_persists_on_plane"])
-    checks.check("F-8", "OFF THE PLANE THE QUARTIC IS ABSOLUTELY IRREDUCIBLE ON THE DECLARED SLICES AT W1: the two-quadric eliminant is s^2 on D16, D25, D34 alone and on D16 = D25 = D34, and no line factor exists under either assembly",
-                 all(str(e[1]) == f"({TWO_QUADRIC_SLICE_ELIMINANT},)" for e in cn[("W1", "onsite")]["two_quadric_slices"])
-                 and all(all(str(chart) == LINE_LOCUS[a] for chart in cn[("W1", a)]["line_factor_locus"]) for a in SIGN_ASSEMBLIES))
+    checks.check("F-8", "OFF THE PLANE THE QUARTIC IS NOT A PRODUCT OF TWO QUADRICS ON THE DECLARED SLICES AT W1: the two-quadric eliminant is s^2 on D16, D25, D34 alone and on D16 = D25 = D34 (onsite)",
+                 all(str(e[1]) == f"({TWO_QUADRIC_SLICE_ELIMINANT},)" for e in cn[("W1", "onsite")]["two_quadric_slices"]))
     br = facts.branches
     checks.check("F-9", "THE PENCIL WITH A PARAMETER ON at W1: the branch structures are the declared literals; with D07 = 1/4 the 0-form branch is k^T D1 k / (D0 - D07^2/D3) and the other branches are Block 213's",
-                 tuple((k, br[k]) for k in sorted(br) if isinstance(k, tuple)) == BRANCH_TABLE
+                 tuple((k, br[k]) for k in sorted(k for k in br if isinstance(k, tuple))) == BRANCH_TABLE
                  and claims["pencil_zero_form_rescaled"])
-    checks.check("F-10", "ON THE LOCUS WITH D07 ON: at L+- with D07 = 1/4 the 0-form constant becomes 128/119 (the others 32/27, 4/3, 4/3 unchanged); D07^2 = (v0/v1)(1 - 1/mu) = 5/48 would tie the 0-form to the top-form constant, the transverse pair stays -- still not scalar",
+    checks.check("F-10", "ON THE LOCUS WITH D07 ON: at L+- with D07 = 1/4 the 0-form constant becomes 128/119 (the others 32/27, 4/3, 4/3 unchanged); D07^2 = (v0/v1)(1 - 1/mu) = 5/36 would tie the 0-form to the top-form constant, the transverse pair stays -- still not scalar",
                  br["locus_d07_rescale_constant"] == LOCUS_D07_RESCALE and br["locus_tuning_a2"] == LOCUS_TUNING_A2)
     rg = facts.registration
     checks.check("G-1", "THE SHEARS REGISTER WITH THE PARAMETERS ON and NO parameter point cancels either shear's registration (coefficient ideal (1))",
@@ -1046,7 +1072,7 @@ def report_measured(facts: Facts, elapsed_ns: int) -> None:
     print(f"timings_ms: {facts.timings}  elapsed_ms: {elapsed_ns // 1_000_000}")
 
 
-N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS PARAMETER, PARITY, CONE, LOCUS AND BRANCH ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the kernel, the two assemblies, the principal part M = H0 D + D^T H0, Block 211's cell form with D07, D16, D25, D34 FREE and Block 213's witnesses are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'PARAMETER' NAMES A FREE COORDINATE OF ONE SOLVED LINEAR SYSTEM AND NO VALUE IS SELECTED. 'CONE' NAMES THE ZERO SET OF det M(kappa), NO LIGHT CONE; 'BRANCH' AN EIGENVALUE OF AN EXACT 8 x 8 MATRIX, NO PROPAGATOR.\\nper_site: The four names sit on the eight antidiagonal entries and at zero the cell IS Block 213's at all eight cells; onsite the folded H0 IS the cell; overlap H0 = H0(0) + (s/4) P111 with s the sum of the four; the flat cell at zero parameters is the identity with R5's multisets {0 x8, 1 x8}; with a parameter on it is NOT the identity: det M = Q^2, Q = |k|^4 + Q2, D07 absent, |k|^4 restored on the plane.\\nper_mode: AT SYMBOLIC MODULI AND PARAMETERS: M_eo = B is parameter-free; M_ee borders corner 0 by u = ((D07 + D34) kt, (D25 - D07) kx, (D07 + D16) ky); M_oo is the zero-diagonal [(D16 + D25) kt, (D34 - D16) kx, -(D25 + D34) ky] on the 1-forms with corner 7 empty, since row 0 of the raising part is zero: U = I - (D07/D3) E_70 gives U^T M U = M at D07 = 0 and U^T H0 U = H0 at D07 = 0 with D0 -> D0 - D07^2/D3.\\nper_block: det M = det B^2 identically in kappa IFF D16 = D34 = -D25 (onsite, any D07) and IFF s = 0 (overlap), by lex Groebner bases at W1 and the two locus witnesses; off the plane det M is ONE IRREDUCIBLE QUARTIC SQUARED at symbolic parameters at W1, Q = Q0 + Q2 with Q2 an even quadratic in the parameters; at W1 the two-quadric eliminant on the slices D16, D25, D34 alone and D16 = D25 = D34 is s^2 and no line factor exists, and the full eliminant off the slices is NOT computed.\\nlattice_wide: No parameter point makes the cone one quadric squared at W1 under either assembly; at L+- and L-+ (onsite) det M is (k^T G1 k)^4 along the plane (s, -s, s) and not at D16 = 1/4: Block 213's locus persists on the plane and dies off it. At W1 with D16 = 1/4 the pencil branches are the roots of one irreducible quartic, doubled; with D07 = 1/4 the 0-form branch is k^T D1 k / (D0 - D07^2/D3) and the others are Block 213's; at L+- with D07 = 1/4 the constants are {128/119, 32/27, 4/3, 4/3}: STILL NOT SCALAR.\\nper_scope: REGISTRATION. The shears move det M with the parameters on and NO parameter point cancels either (coefficient ideal (1)); det M is proportional to its unit-volume value at zero parameters and NOT with them on: the volumes enter the cone through the parameters (formal family; #7970 record carried, not resolved). OPEN: a principle preferring the plane or the sum; the assembly and the reading; the locus off the slices; no dynamics, continuum or gravity is supplied.\\nRESULT: EACH DUALITY PARAMETER BREAKS THE GRADE PARITY OF THE FOLDED ONSITE H0; D07 IS REMOVED FROM THE PRINCIPAL PART BY AN EXACT UNIPOTENT CONGRUENCE; THE CONE IS THE UNION OF THE TWO HODGE CONES EXACTLY ON THE PLANE D16 = D34 = -D25 (OVERLAP: s = 0) AND ONE IRREDUCIBLE QUARTIC SQUARED OFF IT; NO PARAMETER POINT RESTORES A SINGLE METRIC'S CONE OR A SCALAR SYMBOL OFF BLOCK 213's LOCUS, WHICH PERSISTS EXACTLY ON THE PLANE; THE DEFORMED FLAT CELL IS NOT THE IDENTITY; THE VOLUMES ENTER THE CONE THROUGH THE PARAMETERS. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-213 STAND; Block 213's REOPEN item 7 is ANSWERED. Fable primary relaunched; refuting checker PENDING.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero."
+N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS PARAMETER, PARITY, CONE, LOCUS AND BRANCH ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the kernel, the two assemblies, the principal part M = H0 D + D^T H0, Block 211's cell form with D07, D16, D25, D34 FREE and Block 213's witnesses are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'PARAMETER' NAMES A FREE COORDINATE OF ONE SOLVED LINEAR SYSTEM AND NO VALUE IS SELECTED. 'CONE' NAMES THE ZERO SET OF det M(kappa), NO LIGHT CONE; 'BRANCH' AN EIGENVALUE OF AN EXACT 8 x 8 MATRIX, NO PROPAGATOR.\\nper_site: The four names sit on the eight antidiagonal entries and at zero the cell IS Block 213's at all eight cells; onsite the folded H0 IS the cell; overlap H0 = H0(0) + (s/4) P111 with s the sum of the four; the flat cell at zero parameters is the identity with R5's multisets {0 x8, 1 x8}; with a parameter on it is NOT the identity: det M = Q^2, Q = |k|^4 + Q2, D07 absent, |k|^4 restored on the plane.\\nper_mode: AT SYMBOLIC MODULI AND PARAMETERS: M_eo = B is parameter-free; M_ee borders corner 0 by u = ((D07 + D34) kt, (D25 - D07) kx, (D07 + D16) ky); M_oo is the zero-diagonal [(D16 + D25) kt, (D34 - D16) kx, -(D25 + D34) ky] on the 1-forms with corner 7 empty, since row 0 of the raising part is zero: U = I - (D07/D3) E_70 gives U^T M U = M at D07 = 0 and U^T H0 U = H0 at D07 = 0 with D0 -> D0 - D07^2/D3.\\nper_block: det M = det B^2 identically in kappa IFF D16 = D34 = -D25 (onsite, any D07) and IFF s = 0 (overlap), by lex Groebner bases at W1 and the two locus witnesses; off the plane det M is ONE IRREDUCIBLE QUARTIC SQUARED at symbolic parameters at W1, Q = Q0 + Q2 with Q2 an even quadratic in the parameters; at W1 the two-quadric eliminant on the slices D16, D25, D34 alone and D16 = D25 = D34 is s^2; the line-factor test and the full eliminant off the slices are NOT computed.\\nlattice_wide: No parameter point makes the cone one quadric squared at W1 under either assembly; at L+- and L-+ (onsite) det M is (k^T G1 k)^4 along the plane (s, -s, s) and not at D16 = 1/4: Block 213's locus persists on the plane and dies off it. At W1 with D16 = 1/4 the pencil branches are the roots of one irreducible quartic, doubled; with D07 = 1/4 the 0-form branch is k^T D1 k / (D0 - D07^2/D3) and the others are Block 213's; at L+- with D07 = 1/4 the constants are {128/119, 32/27, 4/3, 4/3}: STILL NOT SCALAR.\\nper_scope: REGISTRATION. The shears move det M with the parameters on and NO parameter point cancels either (coefficient ideal (1)); det M is proportional to its unit-volume value at zero parameters and NOT with them on: the volumes enter the cone through the parameters (formal family; #7970 record carried, not resolved). OPEN: a principle preferring the plane or the sum; the assembly and the reading; the locus off the slices; no dynamics, continuum or gravity is supplied.\\nRESULT: EACH DUALITY PARAMETER BREAKS THE GRADE PARITY OF THE FOLDED ONSITE H0; D07 IS REMOVED FROM THE PRINCIPAL PART BY AN EXACT UNIPOTENT CONGRUENCE; THE CONE IS THE UNION OF THE TWO HODGE CONES EXACTLY ON THE PLANE D16 = D34 = -D25 (OVERLAP: s = 0) AND ONE IRREDUCIBLE QUARTIC SQUARED OFF IT; NO PARAMETER POINT RESTORES A SINGLE METRIC'S CONE OR A SCALAR SYMBOL OFF BLOCK 213's LOCUS, WHICH PERSISTS EXACTLY ON THE PLANE; THE DEFORMED FLAT CELL IS NOT THE IDENTITY; THE VOLUMES ENTER THE CONE THROUGH THE PARAMETERS. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-213 STAND; Block 213's REOPEN item 7 is ANSWERED. Fable primary relaunched; refuting checker PENDING.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero."
 
 
 def main() -> int:

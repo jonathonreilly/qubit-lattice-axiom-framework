@@ -466,3 +466,163 @@ def measure_bench(cells: dict) -> dict:
     facts["timings_ms"] = {key: (e["direct_ms"], e["union_ms"]) for key, e in table.items()}
     facts["max_direct_ms"] = max(e["direct_ms"] for e in table.values())
     return facts
+
+
+# ---------------------------------------------------------------------------
+# C. CONSTRUCTION FIDELITY: the bench is Block 213's at extent (4,4,2), the
+# witness and the control are Blocks 216/217's, the mixed point exists
+# ---------------------------------------------------------------------------
+def measure_construction(census: dict, cells: dict) -> dict:
+    facts: dict = {}
+    momenta = b213.bench_momenta(BENCH_EXTENT)
+    facts["momenta"] = tuple(momentum_literal(z) for z in momenta)
+    facts["kappas"] = tuple(kappa_of(z) for z in momenta)
+    facts["mixed_point_present"] = ("I", "I", "1") in facts["momenta"]
+    facts["site_count"] = len(b213.bench_sites(BENCH_EXTENT))
+    lifted = b213.bench_matrix(raising_rules(), BENCH_EXTENT)
+    sites = b213.bench_sites(BENCH_EXTENT)
+    facts["y_link_entries"] = sum(
+        1 for a in sites for b in sites
+        if a[:2] == b[:2] and a != b and lifted[b213.site_index(a, BENCH_EXTENT), b213.site_index(b, BENCH_EXTENT)] != 0)
+    facts["raising_bench_nnz"] = residual_count(lifted)
+    facts["parent_momenta"] = tuple(momentum_literal(z) for z in b213.bench_momenta(PARENT_EXTENT))
+    # the witness: Block 216's mask-2 rule-A cell carries Block 213's L+- face signs
+    witness_values = tuple(v for v in census["cells"] if census["cells"][v]["mask"] == 2)
+    facts["witness_values"] = witness_values
+    facts["witness_is_rule_a"] = all(census["cells"][v]["rule_a"] for v in witness_values)
+    facts["l_plus_minus_signs"] = tuple(b213.locus_witness_table()["L+-"][1][f] for f in b213.FACES)
+    facts["face_orders_agree"] = tuple(FACE_ORDER) == tuple(b213.FACES)
+    cell = cells["witness line"]
+    facts["line_point_entries"] = tuple(cell[i, j] for i, j in ((0, 7), (1, 6), (2, 5), (3, 4)))
+    facts["witness_moduli"] = b217.curve_moduli(1)
+    facts["w1_moduli_is_block211"] = tuple(W1_MODULI) == tuple(b211.W1_MODULI)
+    # Block 213's smaller-extent check as the consistency gate: Block 217's (4,2,2) identity at the witness
+    started = time.monotonic_ns()
+    direct, union, _, _ = b217.bench_charpolys(cell, "onsite", "pencil")
+    facts["parent_bench_multiset"] = b213.multiset_of(direct)
+    facts["parent_bench_agrees"] = sp.expand(direct - union) == 0
+    facts["parent_bench_ms"] = (time.monotonic_ns() - started) // 1_000_000
+    g1 = b213.metric_candidates(cells["witness zero"])[0].applyfunc(sp.radsimp)
+    facts["g1_tt_witness"] = g1[0, 0]
+    return facts
+
+
+# ---------------------------------------------------------------------------
+# E. THE BLOCH-POINT IDENTITIES: the raising block is i D(kappa_z) (measured
+# first, at symbolic z), the onsite Hodge block is Z^-1 H0 Z, d^2 = 0, and
+# hence the onsite pencil block charpoly is the principal part's at every
+# point -- the mixed point included
+# ---------------------------------------------------------------------------
+def principal_square(cell: sp.Matrix, assembly: str, reading: str) -> sp.Matrix:
+    """(H0^-1 M(kappa))^2 (pencil) or M(kappa)^2 (form), symbolic in kappa."""
+    h0, m, _ = b214.principal_part(cell, assembly)
+    if reading == "pencil":
+        operator = (h0.inv() * m).applyfunc(sp.radsimp)
+        return (operator * operator).applyfunc(sp.radsimp)
+    return (m * m).applyfunc(sp.expand)
+
+
+def principal_charpoly(square: sp.Matrix, kappa: tuple):
+    at = square.subs(dict(zip(KAPPA, kappa)))
+    return b217.alg_charpoly(DomainMatrix.from_Matrix(at).convert_to(REAL_FIELD), REAL_FIELD)
+
+
+def measure_identities(cells: dict, bench: dict) -> dict:
+    facts: dict = {}
+    raising = raising_rules()
+    momenta = b213.bench_momenta(BENCH_EXTENT)
+    facts["raising_block_is_i_d"] = {
+        momentum_literal(z): is_zero_matrix(b213.bloch_matrix(raising, z, 3) - sp.I * raising_operator(kappa_of(z)))
+        for z in momenta}
+    symbolic = b213.bloch_matrix(raising, Z_SYMBOLS, 3)
+    predicted = sum((((zz - 1 / zz) / 2) * raising_operator(UNIT_KAPPAS[mu]) for mu, zz in enumerate(Z_SYMBOLS)),
+                    sp.zeros(8, 8))
+    facts["raising_block_additive_symbolic"] = residual_count((symbolic - predicted).applyfunc(sp.simplify)) == 0
+    units = tuple(raising_operator(k) for k in UNIT_KAPPAS)
+    facts["d_mu_squared_zero"] = all(is_zero_matrix(d * d) for d in units)
+    facts["d_mu_anticommute"] = all(is_zero_matrix(units[a] * units[b] + units[b] * units[a])
+                                    for a in range(3) for b in range(a + 1, 3))
+    facts["d_mixed_squared_zero"] = is_zero_matrix((units[0] + units[1]) * (units[0] + units[1]))
+    facts["onsite_similarity"] = {}
+    for label in ("witness line", "W1 line", "flat line"):
+        rules = b213.onsite_rules(cells[label], b209.CORNERS, 3)
+        h0 = b213.folded_matrix(rules, 3)
+        facts["onsite_similarity"][label] = all(
+            is_zero_matrix(b213.bloch_matrix(rules, z, 3) - phase_matrix(z).inv() * h0 * phase_matrix(z)) for z in momenta)
+    facts["onsite_similarity_everywhere"] = all(facts["onsite_similarity"].values())
+    table: dict = {}
+    for label in ("witness line", "W1 line", "flat line"):
+        for assembly in ("onsite", "overlap"):
+            for reading in ("form", "pencil"):
+                square = principal_square(cells[label], assembly, reading)
+                blocks = bench["table"][(label, assembly, reading)]["blocks"]
+                table[(label, assembly, reading)] = {
+                    momentum_literal(z): sp.expand(blocks[momentum_literal(z)] - principal_charpoly(square, kappa_of(z))) == 0
+                    for z in momenta}
+    facts["identity_table"] = table
+    nonzero = tuple(momentum_literal(z) for z in momenta if kappa_of(z) != (0, 0, 0))
+    facts["nonzero_points"] = nonzero
+    facts["onsite_pencil_identity_everywhere"] = all(
+        all(table[(label, "onsite", "pencil")].values()) for label in ("witness line", "W1 line", "flat line"))
+    facts["mixed_point_identity"] = {label: table[(label, "onsite", "pencil")][("I", "I", "1")]
+                                     for label in ("witness line", "W1 line", "flat line")}
+    facts["form_fails_at_every_nonzero_point"] = not any(
+        table[(label, assembly, "form")][z] for label in ("witness line", "W1 line")
+        for assembly in ("onsite", "overlap") for z in nonzero)
+    facts["overlap_fails_at_every_nonzero_point"] = not any(
+        table[(label, "overlap", reading)][z] for label in ("witness line", "W1 line")
+        for reading in ("form", "pencil") for z in nonzero)
+    facts["flat_overlap_table"] = {reading: table[("flat line", "overlap", reading)] for reading in ("form", "pencil")}
+    return facts
+
+
+# ---------------------------------------------------------------------------
+# F. THE CONE'S SHAPE FROM THE BENCH at the witness: every nonzero eigenvalue
+# at the three nonzero points is a branch constant times k^T G1 k at kappa_z,
+# and the cross term G1_tx is isolated from the three points
+# ---------------------------------------------------------------------------
+def branch_constants() -> tuple:
+    return tuple((sp.Rational(ratio), power) for ratio, power, _ in b216.BRANCH_TABLE[("L+-", "line 1/4")][0])
+
+
+def quadric_values(g1: sp.Matrix, points: tuple) -> dict:
+    return {z: sp.radsimp(b213.quadratic_form(g1, kappa_of(tuple(sp.sympify(e) for e in z)))) for z in points}
+
+
+def cross_term_from_bench(multisets: dict, points: tuple):
+    """G1_tx read from the bench alone: the smallest nonzero eigenvalue at each
+    point is the constant-1 branch, Q(kappa_z); then (Q_mixed - Q_t - Q_x)/2."""
+    smallest = {z: min(root for root, _ in multisets[z] if root != 0) for z in points}
+    return sp.radsimp((smallest[("I", "I", "1")] - smallest[("I", "1", "1")] - smallest[("1", "I", "1")]) / 2), smallest
+
+
+def measure_shape(cells: dict, bench: dict) -> dict:
+    facts: dict = {}
+    g1 = b213.metric_candidates(cells["witness zero"])[0].applyfunc(sp.radsimp)
+    facts["g1_plane"] = (g1[0, 0], g1[0, 1], g1[1, 1])
+    facts["g1_full"] = tuple(tuple(g1[i, j] for j in range(3)) for i in range(3))
+    points = (("I", "1", "1"), ("1", "I", "1"), ("I", "I", "1"))
+    facts["points"] = points
+    facts["constants"] = branch_constants()
+    facts["quadric_values"] = quadric_values(g1, points)
+    multisets = bench["block_multisets"][("witness line", "onsite", "pencil")]
+    facts["multisets"] = {z: multisets[z] for z in points}
+    facts["ratios"] = {z: None if multisets[z] is None else tuple(sorted(
+        ((sp.radsimp(root / facts["quadric_values"][z]), mult) for root, mult in multisets[z] if root != 0),
+        key=lambda t: t[0])) for z in points}
+    facts["shape_visible"] = all(facts["ratios"][z] == facts["constants"] for z in points)
+    facts["predicted_multisets"] = {z: tuple(sorted(((sp.radsimp(c * facts["quadric_values"][z]), m)
+                                                     for c, m in facts["constants"]), key=lambda t: t[0])) for z in points}
+    facts["predicted_equal_measured"] = all(facts["predicted_multisets"][z] == multisets[z] for z in points)
+    facts["cross_term_bench"], facts["smallest_eigenvalues"] = cross_term_from_bench(multisets, points)
+    facts["cross_term_equals_g1"] = facts["cross_term_bench"] == g1[0, 1]
+    facts["pure_points_coincide"] = multisets[("I", "1", "1")] == multisets[("1", "I", "1")]
+    h0, m, _ = b214.principal_part(cells["witness line"], "onsite")
+    det = sp.radsimp(m.det(method="berkowitz"))
+    constant, factors = sp.factor_list(det, *KAPPA, extension=sp.sqrt(6))
+    facts["det_m_shape"] = tuple(sorted((sp.Poly(f, *KAPPA).total_degree(), p) for f, p in factors))
+    facts["det_m_values"] = (det.subs({KT: 1, KX: 0, KY: 0}), det.subs({KT: 0, KX: 1, KY: 0}), det.subs({KT: 1, KX: 1, KY: 0}))
+    facts["det_m_ratio_is_quadric_ratio_fourth"] = sp.radsimp(
+        facts["det_m_values"][2] / facts["det_m_values"][0]
+        - (facts["quadric_values"][("I", "I", "1")] / facts["quadric_values"][("I", "1", "1")]) ** 4) == 0
+    return facts

@@ -1,5 +1,5 @@
 # PR backlog
 
-This coherent block passed its publication gates and is ready for PR creation. Intended base: main. Intended title: [physics-loop] record-matter block03 — bounded_theorem — conditional-support — local quench energy and ground overlap.
+Published PR #7978 against main: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7978. Verified open and mergeable with the intended 23-file delta. No merge or audit verdict was applied.
 
-Publish the proof, both source/cache pairs, this complete pack, and the regenerated citation-graph manifest after gates pass. The hard helper mapping in the science note must be carried out by the landing lane. Do not merge or apply audit verdicts from this author branch.
+The hard helper mapping in the source note remains an integration condition for the landing lane. Source, both runner/cache pairs, the complete pack and the intended regenerated manifest are included. Publication gates and the final separate-context pack review passed.

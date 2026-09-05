@@ -183,7 +183,7 @@ witnesses   W1's moduli (v0, g0, v1, g1) = (15/16, 1/4, 1, 1/4), positive defini
 ```text
 star-pattern masks  {2, 5, 11, 12, 16, 23, 25, 30, 33, 38, 40, 47, 51, 52, 58, 61}   (Block 215's G-5 rule, re-measured; = CK-11's list)
 class (+1, +1): 5, 30, 40, 51      class (+1, -1): 2, 25, 47, 52      class (-1, +1): 11, 16, 38, 61      class (-1, -1): 12, 23, 33, 58
-class representatives (the least mask): 5, 2, 16, 12 -- masks 2 and 16 are the cells of Block 213's L+- and L-+ themselves.
+class representatives (the least mask): 5, 2, 11, 12 -- and masks 2 and 16 are the cells of Block 213's L+- and L-+ themselves.
 ```
 
 At every one of the 16 (and not at the all-plus control, whose line is the

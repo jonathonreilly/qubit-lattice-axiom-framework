@@ -1045,3 +1045,158 @@ def build_claims(mutation: str) -> dict:
         key, value = flips[mutation]
         claims[key] = value
     return claims
+
+
+def build_checks(facts: Facts, claims: dict) -> Checks:
+    checks = Checks()
+    au = facts.authority
+    checks.check("A-1", "FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree",
+                 au.fixed_authority and claims["current_main"] == CURRENT_MAIN)
+    checks.check("A-2", "PARENT PIN IS THE BLOCK 215 TIP, an ancestor of HEAD, with its note and runner content-bound by blob",
+                 au.parent_pin_is_commit and au.parent_is_ancestor and au.parent_artifact_blobs
+                 and claims["parent_commit"] == PARENT_COMMIT)
+    checks.check("A-3", "STALE PARENT (the Block 214 tip) is a real ancestor carrying NEITHER Block 215 artifact; machinery imported; inputs readable",
+                 au.stale_is_real_ancestor and au.stale_carries_neither_artifact
+                 and au.machinery_import_landed and au.inputs_readable == len(AUDIT_INPUT_PATHS) - 1)
+    checks.check("B-1", "NOTHING REGISTERED, NOTHING ADOPTED: six imposed objects, zero registered, zero adopted",
+                 len(IMPOSED_OBJECTS) == 6 and claims["registered"] == REGISTERED_OBJECTS == () and ADOPTED_OBJECTS == ())
+    checks.check("B-2", "NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied",
+                 not claims["gravity_supplied"] and not GRAVITY_SUPPLIED_CLAIMED and len(UNSUPPLIED_GRAVITY_STRUCTURES) == 9)
+    checks.check("B-3", "THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)",
+                 AXIOM_COVARIANCE_CLAUSE in facts.axiom_text and not claims["covariance_inherited"] and not COVARIANCE_INHERITED_CLAIMED)
+    checks.check("B-4", "NO CELL, NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED, AND NO METRIC IS SUPPLIED: 'one metric's cone' names Block 213's statement only",
+                 not claims["cell_selected"] and not CELL_SELECTED_CLAIMED and not claims["assembly_decided"] and not ASSEMBLY_DECIDED_CLAIMED
+                 and not claims["metric_supplied"] and not METRIC_SUPPLIED_CLAIMED and not SUBGROUP_SELECTED_CLAIMED
+                 and not PARAMETER_VALUE_SELECTED_CLAIMED)
+    checks.check("B-5", "THE WORDS COVARIANCE, CONE, CELL, LOCUS AND METRIC ARE SCOPED; six readings enumerated, none licensed; no continuum, no spacetime cone",
+                 len(SCOPED_HEADLINE_WORDS) == 5 and len(READINGS) == 6 and not READINGS_LICENSED_CLAIMED
+                 and not CONTINUUM_LIMIT_CLAIMED and not CONE_IS_SPACETIME_CONE_CLAIMED)
+    ce, cv, un, wi, br, sy = facts.census, facts.covariance, facts.union, facts.witness, facts.branches, facts.symbol
+    checks.check("C-1", "THE TWO 64-CELL INDEXINGS AGREE: Block 213's FACES and Block 211's GAUGE_FACE_ORDER are the same declared tuple (tx0, ty0, xy0, tx1, ty1, xy1); both predicates are evaluated from the sign dictionary",
+                 ce["indexing_agrees"] and ce["face_order"] == claims["face_order"] == FACE_ORDER_LITERAL)
+    checks.check("C-2", "THE 16 STAR-PATTERN CELLS REPRODUCE BLOCK 215's G-5 RULE (the declared masks, four per gauge class, the checker's list) AND BLOCK 213's COINCIDENCE CENSUS REPRODUCES LITERAL FOR LITERAL (48 + 4 x 4 cells; rule A and rule B masks declared)",
+                 ce["star_masks"] == claims["star_masks"] == STAR_MASKS and len(STAR_MASKS) == 16
+                 and ce["star_per_class"] == STAR_PER_CLASS and ce["census"] == tuple(sorted(claims["coincidence_census"]))
+                 and ce["census_matches_block213"] and ce["rule_a_masks"] == RULE_A_MASKS and ce["rule_b_masks"] == RULE_B_MASKS
+                 and ce["curve_is_rule_a_or_b"])
+    checks.check("C-3", "THE COVARIANCE AT THE 16 CELLS, RE-MEASURED: the shear-alive twisted-O line is the star line at every star cell (one component), exactly one S3_body keeps both shears alive strictly there with the star line; at the all-plus control the line is the diagonal and no S3 keeps the shears alive",
+                 cv["generators_generate_o"] and cv["twisted_line_is_star_line_at_every_star_cell"]
+                 and cv["strict_s3_alive_count_per_star_cell"] == (1,) and cv["strict_s3_star_line_at_every_star_cell"]
+                 and cv["all_plus_twisted_line"] == (((), DIAGONAL_LINE),) and not cv["strict_s3_alive_at_all_plus"])
+    checks.check("C-4", "THE WITNESSES ARE BLOCK 211's OWN SOLVES: at every rule-A cell the transported curve point solves Block 211's six-face system with the four parameters free, is on the curve and on both ties, has both shears nonzero and is positive definite; every union witness is positive definite",
+                 claims["witness_solves"] and wi["all_witnesses"]["is_block211_solve"] and wi["all_witnesses"]["on_curve"]
+                 and wi["all_witnesses"]["on_ties"] and wi["all_witnesses"]["shears_nonzero"]
+                 and wi["all_witnesses"]["positive_definite"] and un["witnesses_positive_definite"])
+    checks.check("D-1", "THE M_oo LEMMA AT SYMBOLIC FACE SIGNS: the onsite H0 is the cell; the odd-odd block of M carries exactly Block 214's three entries, no shear, no volume, no face sign, no D07; its coefficient ideal is the star line; the block identity holds at generic symbolic blocks; det M = det B^2 on the line with the multiple symbolic at every witness",
+                 un["onsite_h0_is_the_cell"] and un["m_oo_entries"] == claims["m_oo_entries"] == b214.ONSITE_M_OO_ENTRIES
+                 and un["m_oo_free_symbols"] == M_OO_FREE_SYMBOLS and un["m_oo_row7_zero"] and un["m_oo_zero_on_star_line"]
+                 and un["m_oo_ideal_is_star_line"] and un["block_identity_generic"] and un["sufficiency_everywhere"])
+    checks.check("D-2", "THE NECESSITY HALF IS MEASURED, NOT ASSERTED FROM THE IDENTITY: at all 26 positive-definite witnesses (W1's moduli at the 16 star cells, the all-plus control and the flat cell; the curve moduli over QQ(sqrt 6) at the 8 rule-A cells) the radical of the coefficient ideal of det M - det B^2 is exactly the star line",
+                 claims["union_necessity_measured"] and un["necessity_is_plane_everywhere"] == claims["union_necessity_plane"]
+                 and claims["union_necessity_plane"]
+                 and (un["witness_count"], un["rational_witness_count"], un["curve_witness_count"]) == UNION_WITNESS_COUNTS
+                 and all(entry[0] == tuple(sorted(STAR_LINE)) for entry in un["table"].values()))
+    checks.check("D-3", "ONE WITNESS IN EVERY GAUGE CLASS AMONG THE 16: the class representatives are the declared masks and each carries a rational union witness",
+                 un["one_witness_per_class"] and un["class_representative_masks"] == CLASS_REPRESENTATIVE_MASKS)
+    checks.check("E-1", "THE INTERSECTION WITH BLOCK 213's COINCIDENCE CELLS IS ALL 16: the star-pattern cells ARE the coincidence-curve cells; rule A iff (P_tx, P_ty, P_xy) = (+, -, +), rule B iff (-, +, -), and that pattern is -E_i E_j = E_k, the star's pair signs",
+                 ce["intersection_count"] == claims["intersection_count"] == INTERSECTION_COUNT and ce["star_equals_curve"]
+                 and ce["intersection_masks"] == STAR_MASKS and ce["rule_a_iff_star_pattern_plus"] and ce["rule_b_iff_star_pattern_minus"]
+                 and ce["star_pattern_is_minus_e_i_e_j"] and ce["star_pair_signs_block215"] == STAR_PATTERN[0])
+    checks.check("E-2", "THE POSITIVE SUBSET IS ALL 8 RULE-A CELLS, four in each mixed gauge class; the 8 rule-B star cells lie in the (+,+) and (-,-) classes, 3 face flips from the nearest rule-A cell",
+                 ce["positive_subset_count"] == claims["positive_subset_count"] == POSITIVE_SUBSET_COUNT
+                 and ce["positive_subset_masks"] == RULE_A_MASKS and ce["rule_a_classes"] == RULE_A_CLASSES and ce["rule_b_classes"] == RULE_B_CLASSES
+                 and tuple(sorted((d, sum(1 for _, x in ce["star_to_rule_a_distance"] if x == d)) for d in {x for _, x in ce["star_to_rule_a_distance"]})) == STAR_TO_RULE_A_DISTANCES)
+    checks.check("F-1", "THE COVARIANT WITNESS EXISTS AT EVERY ONE OF THE 8 RULE-A CELLS: positive definite, its strict stabiliser IS an S3_body (orders 1,2,2,2,3,3) so both shears are alive without any gauge, the star line is its parameter locus with no forced condition, and the cell with the parameters on the line is preserved",
+                 claims["covariant_cell_exists"] and wi["witness_count"] == claims["covariant_witness_count"] == COVARIANT_WITNESS_COUNT
+                 and wi["all_witnesses"]["positive_definite"] and wi["all_witnesses"]["stabiliser_is_s3_body"]
+                 and wi["stabiliser_orders"] == STABILISER_ORDERS and wi["all_witnesses"]["strict_locus_is_star_line_alive"]
+                 and wi["all_witnesses"]["preserved_on_line"])
+    checks.check("F-2", "ONE METRIC'S CONE AT THE COVARIANT WITNESS: the two readings are proportional (mu = 32/27 in class (+,-), 27/32 in class (-,+)), the graded cone is one quadric squared, and det M = c (k^T G1 k)^4 on the star line with the multiple symbolic, c = 64/81 and 9/16 -- for every line multiple, and by the D07 congruence for every D07",
+                 wi["all_witnesses"]["readings_proportional"] and wi["mu_per_class"] == MU_PER_CLASS
+                 and wi["all_witnesses"]["graded_cone_is_one_quadric_squared"] and wi["all_witnesses"]["cone_on_line_is_one_metric_cone"]
+                 and wi["cone_on_line_constants"] == claims["cone_on_line_constants"] == CONE_ON_LINE_CONSTANTS
+                 and br["d07_congruence_M_symbolic_signs"])
+    checks.check("G-1", "THE BRANCHES ON THE COVARIANT LINE at L+- and L-+ are the declared table: with the multiple symbolic all four pencil branches are k-free constants times k^T G1 k; at lam = 1/4 the constants {1, 128/99, 16/11 x2} and {1, 108/119, 144/119 x2}; with D07 = 1/4 the 0-form constant alone moves (128/119, 12/11)",
+                 br["all_branches_k_free"] and all(br["table"][key] == value for key, value in claims["branch_table"].items()))
+    checks.check("G-2", "THE TWO RESCALINGS: the line multiple rescales the top-form and transverse constants by 1/(1 - lam^2/(v0 v1)) (v0 v1 = 3/4, 8/9; 12/11 and 128/119 at lam = 1/4) and D07 rescales the 0-form constant by 1/(1 - D07^2 v1/v0) (v1/v0 = 9/8, 4/3; 128/119 and 12/11 at D07 = 1/4) -- Block 214's 128/119 re-measured on the covariant line",
+                 all(br["table"][(name, "v0 v1")] == VOLUME_PRODUCTS[name] and br["table"][(name, "v1 / v0")] == VOLUME_RATIOS[name]
+                     and br["table"][(name, "d07 rescale 1/4")] == claims["d07_rescale"][name] == D07_RESCALE[name]
+                     and br["table"][(name, "line rescale 1/4")] == LINE_RESCALE[name] for name in ("L+-", "L-+"))
+                 and sp.Rational(128, 119) == D07_RESCALE["L+-"] == b214.LOCUS_D07_RESCALE)
+    checks.check("G-3", "THE D07 CONGRUENCE AT SYMBOLIC FACE SIGNS AND SYMBOLIC MODULI: U^T M U = M|_{D07 = 0} with U = I - (D07/D3) E_70, the H0 shift is -D07^2 v1 on the (0,0) entry and nothing else; holds at every star cell",
+                 br["d07_congruence_M_symbolic_signs"] and br["d07_shift"] == claims["d07_shift"] == D07_SHIFT == b214.D07_SHIFT
+                 and br["d07_shift_rest_zero"] and br["d07_congruence_holds_at_star_cells"])
+    checks.check("G-4", "THE SYMBOL UNDER S3 AND UNDER A TWISTED ROTATION: Block 213's identity holds at every witness; the two quadrics and det B are invariant under kappa -> R kappa for exactly the strict S3; each quadric lies in the 2-dimensional S3-invariant space (the O-invariant space is 1-dimensional; the flat quadrics are |k|^2); the four body-diagonal axes occur; a twisted rotation maps det M to the gauged raising part's symbol (det B up to the twisted lift's sign) and det M moves",
+                 sy["identity_everywhere"] and sy["invariance_is_exactly_s3_everywhere"] and sy["quadrics_in_s3_span_everywhere"]
+                 and sy["invariant_dimensions"] == claims["invariant_dimensions"] == INVARIANT_DIMENSIONS and sy["axes"] == AXES
+                 and sy["flat_quadrics_are_k2"] and sy["twist_count_order4"] == TWIST_COUNT_ORDER4 and sy["twisted_conjugation_identity"]
+                 and sy["twisted_symbol_is_gauged_symbol"] and sy["twisted_block_is_gauged_block_up_to_sign"]
+                 and sy["twisted_symbol_moves"] and sy["gauged_raising_differs"])
+    checks.check("H-1", "SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213, 214 and 215",
+                 claims["scout_grade"] == SCOUT_GRADE_FENCE == b215.SCOUT_GRADE_FENCE and SCOUT_GRADE_ONLY)
+    checks.check("H-2", "THE INSTANCE SCOPE IS ENUMERATED: six restrictions",
+                 claims["instance_scope_count"] == len(INSTANCE_SCOPE) == 6)
+    sc = scope_certificate(facts.note_text)
+    checks.check("I-1", "THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY",
+                 bool(facts.note_text) and sc["n5_verbatim"] == claims["n5_verbatim"] and claims["n5_verbatim"])
+    checks.check("I-2", "NO nsimplify, NO float literal, NO float call in this runner's source",
+                 nsimplify_occurrences() == 0 and float_literal_occurrences() == 0 and float_call_sites() == 0
+                 and claims["float_absent"])
+    return checks
+
+
+def report_measured(facts: Facts, elapsed_ns: int) -> None:
+    print("== BLOCK 216: the covariant curved cell and its cone -- measured facts ==")
+    print(f"authority: {facts.authority}")
+    for name in ("census", "covariance", "union", "witness", "branches", "symbol"):
+        section = getattr(facts, name)
+        for key in sorted(section, key=str):
+            if key == "cells":
+                continue
+            value = section[key]
+            if isinstance(value, dict):
+                for inner in sorted(value, key=str):
+                    print(f"{name} {key} {inner}: {value[inner]}")
+            else:
+                print(f"{name} {key}: {value}")
+    print(f"timings_ms: {facts.timings}  elapsed_ms: {elapsed_ns // 1_000_000}")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mutation", choices=MUTATIONS, default="")
+    parser.add_argument("--list-mutations", action="store_true")
+    arguments = parser.parse_args()
+    if arguments.list_mutations:
+        for name in MUTATIONS:
+            print(name)
+        return 0
+    mutation = arguments.mutation
+    started_ns = time.monotonic_ns()
+    # Every measurement happens once, before any mutation flag is consulted.
+    facts = measure()
+    elapsed_ns = time.monotonic_ns() - started_ns
+    checks = build_checks(facts, build_claims(""))
+    if mutation:
+        raw = checks.families()
+        checks = build_checks(facts, build_claims(mutation))
+        mutated = checks.families()
+        target = MUTATION_GATE[mutation]
+        changed = {family for family in raw if raw[family] != mutated[family]}
+        if changed - {target} or mutated[target]:
+            raise AssertionError("mutation did not fail exactly its own gate")
+    report_measured(facts, elapsed_ns)
+    checks.report()
+    print(N5_FENCE)
+    return checks.finish()
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except SystemExit:
+        raise
+    except Exception as error:
+        print(f"[FAIL] INTERNAL-EXCEPTION: {type(error).__name__}: {error}")
+        print("TOTAL: PASS=0 FAIL=1")
+        raise

@@ -1,0 +1,83 @@
+# RESULTS — block 216, the covariant curved cell and its cone (Fable primary seat)
+
+Runner: `scripts/admissibility_dirac_kahler_covariant_curved_cell_cone_2026_09_05.py`
+Note: `docs/ADMISSIBILITY_DIRAC_KAHLER_COVARIANT_CURVED_CELL_CONE_BOUNDED_THEOREM_NOTE_2026-09-05.md`
+Exact arithmetic only (SymPy integers, rationals, symbols and `QQ(sqrt 6)`; fraction-free determinants; lex Groebner
+bases with their radicals; signed permutation matrices; exact charpolys over `QQ(sqrt 6)(lam_line)[kappa]`); gate I
+measures zero `sp.nsimplify`, zero float literals and zero float call sites in the runner's own source.
+
+## Headline
+
+At every one of Block 215's 16 star-pattern cells the union locus of the cone (`det M = det B^2` as an identity in
+`kappa`) is EXACTLY the star line `D16 = D34 = -D25` — the line twisted-`O` and strict-`S3` covariance select there
+with both shears alive — so covariance and the cone agree at exactly those 16 cells. Sufficiency is a lemma at every
+cell: with the six face signs SYMBOLIC the odd-odd block of the onsite principal part carries no shear, no volume, no
+face sign and no `D07` (its three entries are Block 214's `(D16 + D25) kt, (D34 - D16) kx, -(D25 + D34) ky`), and the
+block identity `det [[A, B], [B^T, 0]] = det(B)^2` is verified at generic symbolic blocks; necessity is the measured
+radical of the coefficient ideal of `det M - det B^2` at 26 positive-definite witnesses (W1's moduli at all 16 star
+cells, at the all-plus control — where the union locus is still the star line while the covariant line is the diagonal
+— and at the flat cell; Block 213's curve moduli over `QQ(sqrt 6)` at the 8 rule-A cells). The two 64-cell indexings
+(Block 213's `FACES`, Block 211's `GAUGE_FACE_ORDER`) are the same tuple and both predicates are re-evaluated from the
+sign dictionary; Block 213's Groebner census reproduces literal for literal. THE 16 STAR-PATTERN CELLS ARE EXACTLY
+BLOCK 213's 16 COINCIDENCE-CURVE CELLS: rule A (`S1 = -E S0 E`) holds iff `(P_tx, P_ty, P_xy) = (+, -, +)` and rule B
+iff `(-, +, -)`, because `P_f = -+ E_i E_j = +-E_k` and Block 213's `E = diag(1, -1, 1)` is the star's pair-sign
+pattern; the intersection is all 16, the positive subset all 8 rule-A cells (four in each mixed gauge class; the 8
+rule-B star cells are 3 face flips from the nearest rule-A cell). At each of the 8 rule-A cells Block 213's curve
+point (L+-'s moduli for `pi0 = +1`, L-+'s for `pi0 = -1`) transported to the cell is positive definite, is Block 211's
+own solve, and is strictly `S3`-covariant with both shears alive — its strict stabiliser IS an `S3_body`
+(orders 1,2,2,2,3,3), the star line is its parameter locus with no forced condition, and the cell with the parameters
+on the line is preserved — while the two readings are proportional (`mu = 32/27` / `27/32`), the graded cone is one
+quadric squared and `det M = c(lam) (k^T G1 k)^4` on the star line with the multiple symbolic: ONE METRIC'S CONE FOR
+EVERY LINE MULTIPLE AND, by the `D07` congruence at symbolic signs, EVERY `D07`. On the covariant line all four
+pencil branches are `k`-free constants times `k^T G1 k`: the line multiple rescales the top-form and the transverse
+constants and leaves the 0-form constant, `D07` rescales the 0-form constant only (Block 214's `128/119` re-measured
+on the line). Block 213's symbol identity holds at every witness and its two quadrics and `det B` are invariant under
+exactly the strict `S3` (each quadric in the two-dimensional `S3`-invariant space `span(|k|^2, (n.k)^2)`; the
+`O`-invariant space is one-dimensional, the flat cone); a twisted rotation maps `det B` to the symbol of the GAUGED
+raising part `E' D E'`, not to itself. Nothing selected; the covariance antecedent stays a reading.
+
+## Run record (every run's summary line)
+
+| run | command | summary | exit |
+| --- | --- | --- | :---: |
+| probe 1 (scratch, 16:40Z) | `probe1.py` | indexing `FACES == GAUGE_FACE_ORDER`; the 16 star masks = CK-11's list; rule A/B masks; `M_oo` lemma at symbolic signs; necessity 1 s per rational witness, 4.7 s over `QQ(sqrt 6)`; strict `S3` / twisted `O` at a star cell; the branches on the line at L+- (6 s each) | 0 |
+| probe 2 (scratch, 16:45Z) | `probe2.py` | Block 213's Groebner census reproduced (1.3 s); Block 211's solve at a transported witness = `formal_cell`; the `D07` congruence at symbolic signs; the block identity at generic blocks (2.2 s); symbol invariance sets = the stabiliser; the symbolic-multiple pencil at L+- (33 s) | 0 |
+| harness 1a (scratch, 16:49Z) | `harness1.py` (full `measure()`) | `IndexError` in `measure_witness` — the strict per-rotation table was built over the stabiliser only (defect 1); phases authority 0.5 s, group 12 s, census 1.4 s, covariance 6 s, union 59 s | 1 |
+| harness 1b (scratch, 16:51Z) | `harness1.py` | `TypeError` in `measure_branches` — the `k`-free filter picked up the rescale Rationals (defect 2); witness phase 4 s | 1 |
+| harness 2 / 1c (scratch, 16:55Z) | `harness2.py` (branches + symbol), `harness1.py` | see below | see below |
+
+## Defects found in this seat's own drafts (before certification) and fixed
+
+1. `measure_witness` built the strict per-rotation locus table over the stabiliser's six members only, while Block
+   215's `subgroup_locus` indexes that table by rotation index (0..23) — `IndexError`. Built over all 24.
+2. `measure_branches` stored the rescale factors (Rationals) in the same table as the branch tuples and the
+   `all_branches_k_free` filter selected keys by prefix, so it subscripted a Rational — `TypeError`. The filter now
+   selects tuple entries.
+
+## Modelling choices not forced by the landed chain
+
+- The witness moduli: W1's `(15/16, 1/4, 1, 1/4)` at every star cell (positive definite in every sign cell because
+  both triangles have `|g| = 1/4 < 1/2`); the curve points are Block 213's own two, transported by class of `pi0`.
+- The line multiple: `(D16, D25, D34) = (lam, -lam, lam)` with `lam` symbolic; `D07 = 0` for the cone (the congruence
+  makes `det M` `D07`-free) and `D07 = 1/4` at the declared branch points; the numeric line point is `lam = 1/4`.
+- Masks: the enumeration index of `itertools.product((1, -1), repeat=6)` over `GAUGE_FACE_ORDER` (bit `5 - k` set
+  when face `k` is `-1`) — the refuting checker's convention; the star pattern is symmetric under offset swap, so
+  the other convention gives the same 16-set.
+- The strict stabiliser is computed directly (`L H L^T = H` at zero parameters) rather than through the class table,
+  then matched against Block 215's `S3_body` members.
+- The symbol's invariance is tested as a function of `kappa` under `kappa -> R kappa` for all 24 rotations; the
+  twisted statement is the identity `det B(R kappa) = det B_{E'}(kappa)` with `E' = L^T E L`, at one witness and one
+  order-4 rotation, for every admissible twist.
+
+## What could NOT be established (honest list)
+
+- The overlap assembly at the 16 cells (its union locus `s = 0`, its cone on the covariant line): not computed —
+  onsite only, as the contract scopes.
+- The necessity half symbolically in the moduli (the coefficient ideal over `QQ[g0, g1, v0, v1]`): not attempted in
+  the budget; the 26 witnesses are exact points, and the lemma half is symbolic in everything.
+- The branch constants as functions of the line multiple are measured at the two named witnesses only (L+- and
+  L-+ at their own cells); at the other six rule-A cells the cone on the line is measured (`det M = c (k^T G1 k)^4`)
+  but the pencil is not factored.
+- The bench, the dispersion, the `(4,2,2)` spectra with the parameters on the line: not computed.
+- Any cell outside the 16 (other than the all-plus and flat controls): the union locus there is Block 214's at
+  all-plus witnesses and the `M_oo` lemma everywhere; the necessity half at the other 47 cells is not run.

@@ -264,3 +264,205 @@ def authority_certificate(main_head: str) -> AuthorityCertificate:
         not any(is_hash(v) for v in stale_blobs),
         MACHINERY_IMPORT_LANDED,
         readable)
+
+
+# ---------------------------------------------------------------------------
+# B. the imposed objects and the NOT-CLAIMED keys, as measured literals
+# ---------------------------------------------------------------------------
+IMPOSED_OBJECTS = (
+    "the cube complex, corners, degree indices and wedge signature (Block 209; Block 213's eta/lane_rules/raising_rules)",
+    "Block 211's six-face-compatible cell-form family with its ties, 64 face-sign cells, four gauge classes and four free duality parameters",
+    "Block 213's curve witnesses L+- and L-+ over QQ(sqrt 6), its bench_matrix and bench_momenta at any extent, and its Bloch reduction",
+    "Block 214's principal part M = H0 D + D^T H0 under both assemblies and its first-order raising matrix D(kappa)",
+    "Block 216's 8 rule-A covariant witnesses, their strict S3_body stabilisers under the onsite assembly and their four pencil branch constants on the star line",
+    "Block 217's algebraic-field bench (Bloch union = direct over QQ(sqrt 6) and QQ(sqrt 6, i)), its cells and its (4,2,2) identity at kappa = e_t",
+    "Block 105's two assemblies (onsite at even anchors; overlap at every anchor with weight 2^-3)",
+)
+REGISTERED_OBJECTS = ()
+ADOPTED_OBJECTS = ()
+GRAVITY_SUPPLIED_CLAIMED = False
+COVARIANCE_INHERITED_CLAIMED = False
+CELL_SELECTED_CLAIMED = False
+SUBGROUP_SELECTED_CLAIMED = False
+ASSEMBLY_DECIDED_CLAIMED = False
+METRIC_SUPPLIED_CLAIMED = False
+PARAMETER_VALUE_SELECTED_CLAIMED = False
+READING_SELECTED_CLAIMED = False
+READINGS_LICENSED_CLAIMED = False
+CONTINUUM_LIMIT_CLAIMED = False
+DISPERSION_LAW_CLAIMED = False
+LORENTZIAN_CLAIMED = False
+LIGHT_CONE_CLAIMED = False
+CONE_IS_SPACETIME_CONE_CLAIMED = False
+UNSUPPLIED_GRAVITY_STRUCTURES = (
+    "lapse function", "shift vector", "ADM phase space", "Hamiltonian constraint",
+    "momentum/diffeomorphism constraint", "first-class constraint algebra",
+    "Dirac closure", "Dirac observable", "gauge orbit and its quotient",
+)
+SCOPED_HEADLINE_WORDS = ("COVARIANCE", "CONE", "CELL", "ASSEMBLY", "BENCH", "SHAPE")
+AXIOM_COVARIANCE_CLAUSE = ("There is one fixed nearest-neighbor admissibility rule, covariant under lattice\n"
+                           "translations and proper cubic rotations.")
+READINGS = (
+    "R1 the cell form inherits the Admissibility axiom's proper-cubic-rotation covariance (the antecedent; not established, not asserted)",
+    "R2 the bench's seeing the cone's shape under the onsite assembly and not under the overlap assembly decides the assembly (not established: both are measured, neither is selected)",
+    "R3 'one metric's cone' or 'the cone's shape' is a metric, a cone or a shape of anything physical (not established: Block 213's polynomial statement, restricted here to the (t, x) plane)",
+    "R4 the bench multisets are a dispersion law, a Lorentzian light cone or a continuum limit (not established: thirty-two exact eigenvalues of one finite matrix at four Bloch points, the y direction unsampled)",
+    "R5 the Bloch-point identity with the principal part is a small-k limit (not established: an exact finite identity resting on d^2 = 0 and the onsite similarity, at fine momenta pi/2)",
+    "R6 the covariant witness is a vacuum, a background or a spacetime (not established: a positive-definite point on one cell form)",
+)
+CHECK_VERDICT = "FABLE-PRIMARY-REFUTING-CHECKER-PENDING"
+
+# the parameters, the moduli, the directions, the cells, the witnesses
+PARAMETER_NAMES = ("D07", "D16", "D25", "D34")
+PARAMETER_SYMBOLS = b217.PARAMETER_SYMBOLS
+G0, G1, V0, V1 = b217.MODULI
+MODULI = (G0, G1, V0, V1)
+KT, KX, KY = b217.KAPPA
+KAPPA = (KT, KX, KY)
+LAM = b213.LAM
+FACE_ORDER = b211.GAUGE_FACE_ORDER        # (tx0, ty0, xy0, tx1, ty1, xy1)
+QUARTER = sp.Rational(1, 4)
+BENCH_EXTENT = (4, 4, 2)                  # the two-direction bench of the three-direction chain: 32 sites
+PARENT_EXTENT = (4, 2, 2)                 # Block 213's three-direction bench, Block 217's (one direction sampled)
+LINE_POINT = b217.LINE_POINT              # (D07, D16, D25, D34) = (0, 1/4, -1/4, 1/4) on the star line
+ZERO_POINT = (sp.Integer(0),) * 4
+ALL_PLUS_CELL = b216.ALL_PLUS_CELL
+W1_MODULI = b216.W1_MODULI                # (v0, g0, v1, g1) = (15/16, 1/4, 1, 1/4)
+FLAT_MODULI = b216.FLAT_MODULI
+REAL_FIELD = QQ.algebraic_field(sp.sqrt(6))
+COMPLEX_FIELD = QQ.algebraic_field(sp.sqrt(6), sp.I)
+UNIT_KAPPAS = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
+Z_SYMBOLS = sp.symbols("z_t z_x z_y")
+SIGN_SYMBOLS = sp.symbols("s_tx0 s_ty0 s_xy0 s_tx1 s_ty1 s_xy1")
+
+# ---------------------------------------------------------------------------
+# exact helpers -- no float, no tolerance and NO nsimplify anywhere
+# ---------------------------------------------------------------------------
+NSIMPLIFY_TOKEN = "sp." + "nsimplify("
+
+
+def nsimplify_occurrences() -> int:
+    return Path(__file__).read_text(encoding="utf-8").count(NSIMPLIFY_TOKEN)
+
+
+def float_literal_occurrences() -> int:
+    tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    return sum(1 for node in ast.walk(tree)
+               if isinstance(node, ast.Constant) and isinstance(node.value, float))
+
+
+def float_call_sites() -> int:
+    tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    return sum(1 for node in ast.walk(tree)
+               if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id == "float")
+
+
+def residual_count(matrix) -> int:
+    return sum(1 for entry in matrix if entry != 0)
+
+
+def is_zero_matrix(matrix) -> bool:
+    return residual_count(matrix.applyfunc(sp.expand)) == 0
+
+
+def kappa_of(z: tuple) -> tuple:
+    """kappa_z = e_t [z_t = i] + e_x [z_x = i] + e_y [z_y = i]: the direction the fine momentum pi/2 samples."""
+    return tuple(1 if entry == sp.I else 0 for entry in z)
+
+
+def momentum_literal(z: tuple) -> tuple:
+    return tuple(str(entry) for entry in z)
+
+
+def raising_operator(kappa: tuple) -> sp.Matrix:
+    """Block 214's first-order raising matrix D(kappa) at a numeric kappa."""
+    return b214.raising_matrix().subs(dict(zip(KAPPA, kappa)))
+
+
+def phase_matrix(z: tuple) -> sp.Matrix:
+    """Z = diag(z^c) over Block 209's corners: the onsite similarity H_B(z) = Z^-1 H0 Z."""
+    return sp.diag(*[sp.prod([z[k] ** c[k] for k in range(3)]) for c in b209.CORNERS])
+
+
+def bench_cells(census: dict) -> dict:
+    """Block 217's bench cells (the same function: L+-'s own cell at mask 2 with
+    the curve moduli, the all-plus W1 control and the flat cell at the line
+    point; the first two at zero parameters) plus the flat cell at zero
+    parameters, the R5 control of the bench construction."""
+    cells = dict(b217.bench_cells(census))
+    cells["flat zero"] = b217.formal(ALL_PLUS_CELL, b217.moduli_as_g(FLAT_MODULI), ZERO_POINT)
+    return cells
+
+
+# ---------------------------------------------------------------------------
+# C/D. THE BENCH at extent (4,4,2) over QQ(sqrt 6) and QQ(sqrt 6, i): both
+# assemblies, both readings, the direct 32 x 32 charpoly and the four 8 x 8
+# Bloch blocks, Bloch union = direct
+# ---------------------------------------------------------------------------
+def raising_rules() -> dict:
+    return b213.raising_rules(b213.lane_rules(3))
+
+
+def bench_charpolys(cell: sp.Matrix, assembly: str, reading: str) -> tuple:
+    """(direct 32 x 32 charpoly over QQ(sqrt 6), Bloch union over QQ(sqrt 6, i),
+    the 8 x 8 block charpoly per momentum, seconds direct, seconds union)."""
+    rules = (b213.onsite_rules if assembly == "onsite" else b213.overlap_rules)(cell, b209.CORNERS, 3)
+    raising = raising_rules()
+    started = time.monotonic_ns()
+    hodge = DomainMatrix.from_Matrix(b213.bench_matrix(rules, BENCH_EXTENT)).convert_to(REAL_FIELD)
+    lifted = DomainMatrix.from_Matrix(b213.bench_matrix(raising, BENCH_EXTENT)).convert_to(REAL_FIELD)
+    direct = b217.alg_charpoly(b217.symbol_matrix(hodge, lifted, lifted.transpose(), reading), REAL_FIELD)
+    direct_ms = (time.monotonic_ns() - started) // 1_000_000
+    started = time.monotonic_ns()
+    blocks: dict = {}
+    transposed = b213.transpose_rules(raising)
+    for z in b213.bench_momenta(BENCH_EXTENT):
+        h_b = DomainMatrix.from_Matrix(b213.bloch_matrix(rules, z, 3)).convert_to(COMPLEX_FIELD)
+        d_b = DomainMatrix.from_Matrix(b213.bloch_matrix(raising, z, 3)).convert_to(COMPLEX_FIELD)
+        dt_b = DomainMatrix.from_Matrix(b213.bloch_matrix(transposed, z, 3)).convert_to(COMPLEX_FIELD)
+        blocks[momentum_literal(z)] = b217.alg_charpoly(b217.symbol_matrix(h_b, d_b, dt_b, reading), COMPLEX_FIELD)
+    union = sp.expand(sp.prod(list(blocks.values())))
+    return direct, union, blocks, direct_ms, (time.monotonic_ns() - started) // 1_000_000
+
+
+def rational_roots(charpoly) -> tuple:
+    return tuple(sorted(((root, mult) for root, mult in sp.roots(sp.Poly(charpoly, LAM)).items() if root.is_rational),
+                        key=lambda t: t[0]))
+
+
+def measure_bench(cells: dict) -> dict:
+    """D: every (cell, assembly, reading) charpoly of degree 32 on (4,4,2):
+    Bloch union = direct bench, the multiset or the factor shape, the same per
+    8 x 8 Bloch block, the two timings."""
+    facts: dict = {}
+    table: dict = {}
+    for label, cell in cells.items():
+        assemblies = ("onsite", "overlap") if label.endswith("line") or label == "flat zero" else ("overlap",)
+        for assembly in assemblies:
+            for reading in ("form", "pencil"):
+                print(f"[bench] {label} {assembly} {reading}", file=sys.stderr)
+                direct, union, blocks, direct_ms, union_ms = bench_charpolys(cell, assembly, reading)
+                table[(label, assembly, reading)] = {
+                    "agree": sp.expand(direct - union) == 0, "multiset": b213.multiset_of(direct),
+                    "shape": b217.charpoly_shape(direct), "degree": sp.Poly(direct, LAM).degree(),
+                    "block_multisets": {z: b213.multiset_of(cp) for z, cp in blocks.items()},
+                    "block_shapes": {z: b217.charpoly_shape(cp) for z, cp in blocks.items()},
+                    "block_rational_roots": {z: rational_roots(cp) for z, cp in blocks.items()},
+                    "direct_ms": direct_ms, "union_ms": union_ms, "charpoly": direct, "blocks": blocks,
+                }
+    facts["table"] = table
+    facts["charpoly_count"] = len(table)
+    facts["all_agree"] = all(e["agree"] for e in table.values())
+    facts["all_degree_32"] = all(e["degree"] == 32 for e in table.values())
+    facts["zero_point_is_eight_zeros"] = all(e["block_multisets"][("1", "1", "1")] == ((0, 8),) for e in table.values())
+    facts["block_multisets"] = {key: e["block_multisets"] for key, e in table.items()}
+    facts["block_shapes"] = {key: e["block_shapes"] for key, e in table.items()}
+    facts["multisets"] = {key: e["multiset"] for key, e in table.items()}
+    facts["shapes"] = {key: e["shape"] for key, e in table.items()}
+    expected = b213.expected_flat_multiset(BENCH_EXTENT)
+    facts["flat_expected"] = expected
+    facts["flat_zero_is_r5"] = all(table[("flat zero", a, r)]["multiset"] == expected
+                                   for a in ("onsite", "overlap") for r in ("form", "pencil"))
+    facts["timings_ms"] = {key: (e["direct_ms"], e["union_ms"]) for key, e in table.items()}
+    facts["max_direct_ms"] = max(e["direct_ms"] for e in table.values())
+    return facts

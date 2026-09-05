@@ -93,3 +93,42 @@ stays a reading; no continuum or light-cone reading of the bench.
   `OVERLAP_CONE_PLUS/MINUS` in `h0, h_f`): not compared symbolically; the rational coefficients are declared per class.
 - The refuting checker: pending (`CHECK_VERDICT = "FABLE-PRIMARY-REFUTING-CHECKER-PENDING"`); the independence class
   is left to the supervisor.
+
+## Certified baseline (cache receipt ``, exit 0, status ok, 180.74 s wall — the first 90 s of the group phase under the transient 29-way contention disclosed in the run record, 87 s alone in harness runs 1 and 2; runner sha256 `60bb268ae73c068d...`, git blob `25b0714ef9`; input fingerprint `644e1595561de3e0...` over the ten declared `AUDIT_INPUT_PATHS`, this note first; timeout 600)
+
+Header pins (runner sha256, input fingerprint, timeout 600, exit 0, status ok) are in the receipt; the full stdout (measured facts, 29 checks, the N5 fence) is its stdout section. The check lines, the gate line and the total:
+
+```text
+timings_ms: {'authority': 629, 'group': 89745, 'census': 11070, 'fold': 489, 'loci': 39448, 'cone': 30248, 'bench': 4143, 'smallk': 1116}  elapsed_ms: 176893
+[PASS] A-1: FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree
+[PASS] A-2: PARENT PIN IS THE BLOCK 216 TIP, an ancestor of HEAD, with its note and runner content-bound by blob
+[PASS] A-3: STALE PARENT (the Block 215 tip) is a real ancestor carrying NEITHER Block 216 artifact; machinery imported; inputs readable
+[PASS] B-1: NOTHING REGISTERED, NOTHING ADOPTED: six imposed objects, zero registered, zero adopted
+[PASS] B-2: NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied
+[PASS] B-3: THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)
+[PASS] B-4: NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED, AND NO METRIC IS SUPPLIED: the difference between the assemblies is measured, not a selector
+[PASS] B-5: THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY AND BENCH ARE SCOPED; six readings enumerated, none licensed; no continuum, no light cone, no spacetime cone
+[PASS] C-1: THE CELLS ARE BLOCK 216's: the census reproduces its 8 rule-A masks (2, 11, 16, 25, 38, 47, 52, 61) among its 16 star-pattern cells, indexings agreeing
+[PASS] C-2: THE WITNESSES ARE BLOCK 216's: at every rule-A cell the transported curve point has the S3_body as onsite strict stabiliser, both shears nonzero, v0 v1 = 3/4 or 8/9
+[PASS] C-3: THE FOLD LEMMA AT SYMBOLIC FACE SIGNS AND MODULI: the overlap H0 sees the parameters only through s at every cell, its parity block is (s/4) P111, it is linear in s, and at s = 0 it is h0 I plus twelve two-flip couplings -(s_f0 g0 v0 v1 + s_f1 g1)/(4 v0), one magnitude per face
+[PASS] C-4: THE FLAT CONTROL: both assemblies give H = I at zero parameters (Block 213's D-1) and the flat fold is I + (s/4) P111
+[PASS] D-1: THE UNION LOCUS IN s IS EXACTLY s = 0 at all 10 witnesses (the 8 rule-A curve witnesses over QQ(sqrt 6), the all-plus W1 and the flat cell): det M has degree 4 in s and det B is s-free
+[PASS] D-2: THE STRICT STABILISER OF THE OVERLAP FOLD IS TRIVIAL at every rule-A witness for every s (the identity is the only feasible rotation); at the all-plus W1 control it is trivial too
+[PASS] D-3: THE TWISTED STABILISER OF THE OVERLAP FOLD IS A D4_face OF ORDER 8 ABOUT THE x AXIS FOR EVERY s at every rule-A witness, the S3_body is not inside it, the two assemblies share exactly one twisted C2_edge; the all-plus W1 fold is twisted-O for every s; the flat fold is strictly D4_face for every s and strictly covariant under the other 16 only at s = 0, twisted-O for every s
+[PASS] D-4: THE SHEAR RELATION AT SYMBOLIC MODULI under each cell's own S3_body: the order-3 elements force g0 = g1 = 0, the order-2 elements force g0 v0 v1 + g1 = 0 with g0 = g1 = 0 or with g0 v0 v1 - g1 = 0 -- the same at all 8 cells; no shear-alive strict locus exists
+[PASS] D-5: THE CURVE VIOLATES EVERY VARIANT: g0 v0 v1 + g1 = 3/4 and g0 v0 v1 - g1 = -1/4 where pi0 = +1, 7/9 and 1/9 where pi0 = -1, both shears nonzero -- the overlap fold at a rule-A witness is NOT strictly S3-covariant, and the two assemblies differ in covariance at the covariant cells
+[PASS] E-1: THE OVERLAP CONE AT s = 0 IS A NON-HODGE PAIR at every rule-A witness: det M(0) = det B(0)^2, det B(0) = Q+ Q- with two DISTINCT rational quadrics differing in the sign of the kt ky term alone, the declared coefficient magnitudes per class; the same shape at the all-plus W1, one quadric squared at the flat cell
+[PASS] E-2: THE OVERLAP CONE IS NOT THE ONSITE CONE: at no rule-A witness is det B(0) proportional to (k^T G1 k)^2, and neither quadric is proportional to k^T G1 k -- not one metric's cone
+[PASS] E-3: THE OVERLAP CONE AT SYMBOLIC s IS ONE IRREDUCIBLE POLYNOMIAL SQUARED, of degree 2 in s and 4 in kappa, at all 10 witnesses -- the pair merges into an irreducible quartic off s = 0
+[PASS] F-1: THE BENCH AT THE COVARIANT WITNESS (L+-'s cell, line point 1/4): onsite pencil {0 x8, 9/8 x2, 16/11 x2, 18/11 x4}, onsite form lam^8 times an irreducible quartic squared, overlap form {0 x8, 36481/55296 x4, 89401/55296 x4}, overlap pencil R5's
+[PASS] F-2: BLOCH UNION = DIRECT BENCH at every one of the 16 degree-16 charpolys (Block 213's E-gate over QQ(sqrt 6) and QQ(sqrt 6, i))
+[PASS] F-3: THE CONTROLS ON THE BENCH: at the all-plus W1 the onsite pencil is lam^8 (15 lam - 16)^2 times an irreducible cubic squared, the onsite form lam^8 times an irreducible quartic squared, the overlap form Block 214's OVERLAP_FORM_W1; at the flat cell the onsite pencil is {0 x8, 1 x2, 16/15 x6}; the overlap pencil is R5's everywhere
+[PASS] G-1: THE BENCH READS THE PRINCIPAL PART AT ONE DIRECTION, EXACTLY: the bench momenta are z = (1,1,1) and (i,1,1); the onsite pencil bench charpoly equals lam^8 times the charpoly of (H0^-1 M(e_t))^2 at the witness, the control and the flat cell; at the witness that is G1_tt = 9/8 times Block 216's four branch constants; the onsite cone at e_t is the number 64/81 G1_tt^4; the identity fails for the form reading and for the overlap assembly -- no continuum reading
+[PASS] G-2: THE BENCH DOES NOT SEE THE OVERLAP SUM: the overlap Bloch fold at z = (i,1,1) is parameter-free at symbolic signs, moduli and parameters, differs from H0 in 16 entries at the witness, and the overlap bench charpolys at the line point equal those at zero parameters
+[PASS] H-1: SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213, 214, 215 and 216
+[PASS] H-2: THE INSTANCE SCOPE IS ENUMERATED: six restrictions
+[PASS] I-1: THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY
+[PASS] I-2: NO nsimplify, NO float literal, NO float call in this runner's source
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
+TOTAL: PASS=29 FAIL=0
+```

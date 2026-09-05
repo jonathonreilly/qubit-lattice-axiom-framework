@@ -84,6 +84,18 @@ raising part `E' D E'`, not to itself. Nothing selected; the covariance antecede
 - The bench, the dispersion, the `(4,2,2)` spectra with the parameters on the line: not computed.
 - Any cell outside the 16 (other than the all-plus and flat controls): the union locus there is Block 214's at
   all-plus witnesses and the `M_oo` lemma everywhere; the necessity half at the other 47 cells is not run.
+- The note is 603 lines against the spec's 600 (Block 214's format needs its sections); the runner is 1,202
+  lines against 1,300 — recorded, not hidden; the note was not trimmed after certification because it is the
+  first fingerprinted input of the receipt.
+- The rescaling factors `1/(1 - lam^2/(v0 v1))` and `1/(1 - D07^2 v1/v0)` are stated as measured at the two
+  named witnesses (their `v0 v1`, `v1/v0` declared) — not as a theorem along the curve.
+
+## Defect found after the first complete harness run (disclosed with the two above)
+
+3. The twisted-symbol identity compared `det B(R kappa)` with `det B_{E'}(kappa)` without the sign
+   `det(T_e) det(T_o) = +-1` of the twisted lift's degree blocks, so it read False; probe 3 verified
+   `T^T M(kappa) T = M_{E'}(R^-1 kappa)` entry by entry and `det M(R kappa) = det M_{E'}(kappa)` exactly, and
+   the gate now compares `det M` exactly and `det B` up to that measured sign (gate `G-4`).
 
 ## Certified baseline (cache receipt `logs/runner-cache/admissibility_dirac_kahler_covariant_curved_cell_cone_2026_09_05.txt`, exit 0, 269 s under 5-way census contention — 176 s alone; runner sha `472c5dd5b52f3360...`, git blob `b8568c8dab`; input fingerprint `616c767d375d7262...` over the nine declared `AUDIT_INPUT_PATHS`, this note first)
 

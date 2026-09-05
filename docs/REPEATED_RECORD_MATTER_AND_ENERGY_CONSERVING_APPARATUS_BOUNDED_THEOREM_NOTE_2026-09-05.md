@@ -1,7 +1,7 @@
 ---
 claim_id: repeated_record_matter_and_energy_conserving_apparatus_bounded_theorem_note_2026-09-05
 claim_type: bounded_theorem
-claim_scope: "For a supplied finite one-species hopping carrier of M sites and degree at most six with sharp total particle number N0, uniform live-site selection and history-preserving dwell, repeated energy-conserving occupation-Record events with one shared positive continuous battery have exact ensemble energy survival and hypergeometric live-particle count laws, independently of packet coherence width. Energy variance after K events is at most its initial value plus 6t^2 K. From a half-filled regular bipartite degree-six negative sea, live filling and negative energy density concentrate at fixed deletion fraction below one. A symmetric compact packet of width t can be prepared with mean battery energy 6tM+t/2. Alternatively a broader sine packet of mean Mt(6+3pi/sqrt(epsilon)) approximates the complete ideal history instrument within half-diamond epsilon. For energy-stationary initial matter, all complete Record-history probabilities and conditional final energy distributions agree exactly with the ideal instrument. Old Records and total number are preserved exactly, and cap refusal is zero on reachable states. The carrier, scheduler, spectral gates, resource preparation and readout are supplied."
+claim_scope: "For a supplied finite one-species hopping carrier of M sites and degree at most six with sharp total particle number N0, uniform live-site selection and history-preserving dwell, repeated energy-conserving occupation-Record events with one shared positive continuous battery have exact ensemble energy survival and hypergeometric live-particle count laws, independently of packet coherence width. Energy variance after K events is at most its initial value plus 6t^2 K. From a half-filled regular bipartite degree-six negative sea, live filling and negative energy density concentrate at fixed deletion fraction below one. A symmetric compact packet of width t can be prepared with mean battery energy 6tM+t/2. Alternatively a broader sine packet of mean Mt(6+3pi/sqrt(epsilon)) approximates the complete ideal history instrument within half-diamond epsilon. For an initial full nonbattery state commuting with H0, prepared independently of a packet on the declared zero-refusal support, all complete Record-history probabilities and conditional final energy distributions agree exactly with the ideal instrument. Old Records and total number are preserved exactly, and cap refusal is zero on reachable states. The carrier, scheduler, spectral gates, resource preparation and readout are supplied."
 upstream_dependencies: []
 runner: scripts/repeated_record_matter_energy_apparatus_2026_09_05.py
 ---
@@ -26,7 +26,8 @@ audit remains required to assign effective status.
 We prove that the specified implemented occupation-Record process preserves
 exact bulk particle and energy laws, with fluctuations controlled over a finite
 deletion fraction, while one supplied battery accounts exactly for energy.
-For stationary initial matter, its complete Record-history and energy
+For a stationary full nonbattery input prepared independently of a packet
+on the declared zero-refusal support, complete Record-history and energy
 statistics coincide exactly with the ideal process. A separately stated
 broader packet approximates the entire ideal history state for general inputs.
 

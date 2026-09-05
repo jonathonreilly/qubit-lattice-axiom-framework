@@ -211,3 +211,38 @@ Note: the one-sentence summary's "related by `ky → −ky`" replaced by "differ
 11 sourced facts/counts — PASS: every number in the note is measured by the runner or quoted from Blocks 213-216 and the axiom memo at scope; the checker's wording correction applied; the checker's extra values (Q+(kt, kx, -ky) - Q-, det M(e_t) = 81/64) attributed to it in the Review record and claimed nowhere else.
 12 pre-review gates — vocab_lint --report-only 0; audit_lint --strict OK; git diff --check clean; py_compile ok; post-fold baseline TOTAL PASS=29 FAIL=0 (re-pinned); explicit-path staging; cold read of the complete note and runner by the supervisor.
 Independence class disclosed: single family (Claude), cross-model — Fable primary seat, Opus 5 refuting checker, supervisor hand-verification and the census re-verified from the raw outputs.
+
+## block 218 — V1-V5 (primary)
+
+Recorded by the Fable primary seat at block delivery; not an audit certificate.
+Runs: see RESULTS_block218.md (certified baseline summary line and the mutation table).
+
+- **V1 — specific verdict-identified obstruction.** Block 217's `N6` `REOPEN` items 3 and 4, quoted verbatim in the
+  note's `W1`: a bench with a fine momentum in more than one direction at a covariant witness (the cone's shape
+  visible?) and the two-direction bench's test of the overlap `x`-axis distinction. Behind them Block 217's `G-1`
+  (one direction sampled: `lam^8` times the charpoly of `(H0^-1 M(e_t))^2`, the shape invisible) and the mainline's
+  dispersion item. Computed exactly on Block 213's `bench_matrix` at extent `(4,4,2)` — declared first, with the
+  contract's `(4,4)` and `128 x 128` counts corrected to the machinery's 32 sites — with the raising Bloch block at
+  the mixed point MEASURED at symbolic `z` before any identity was asserted.
+- **V2 — genuinely new content.** (i) The raising-block lemma `d_B(z) = sum_mu (z_mu - 1/z_mu)/2 D(e_mu)` at symbolic
+  `z`, so the fine momenta enter additively and the mixed-point block is `i D(e_t + e_x)`. (ii) The onsite similarity
+  `H_B(z) = Z^-1 H0 Z` and, with `d^2 = 0`, the identity of every onsite pencil Bloch block with `(H0^-1 M(kappa_z))^2`
+  — at the mixed point included, at three cells (Block 217 had one direction). (iii) The first bench data with two
+  fine momenta at a covariant witness: twenty degree-32 charpolys with Bloch union = direct; the mixed-point multiset
+  `{3/2 x2, 64/33 x2, 24/11 x4}`. (iv) The cone's shape read off a bench: every nonzero eigenvalue at three points a
+  Block 216 constant times `k^T G1 k` at `kappa_z`, the cross term `G1_tx = -3/8` isolated. (v) The exact failure at
+  the all-plus control (one rational branch, an irreducible cubic or a linear times an irreducible quadratic). (vi)
+  The overlap fold's mixed-point parameter dependence through the signed sum `(-D07 - D16 + D25 + D34)/4` at symbolic
+  everything, and the overlap bench's `t`/`x` distinction at the witness. None of this exists in Blocks 105-217.
+- **V3 — audit lane could NOT already complete this.** It needs Block 213's bench machinery at a new extent, Block
+  214's principal part, Block 216's witnesses and branch constants and Block 217's algebraic-field bench; the audit
+  lane carries none of these.
+- **V4 — no observed target, fit, literature constant or continuum equation is load-bearing.** Every number is an
+  integer, a rational, a symbol or an element of `QQ(sqrt 6)` or `QQ(sqrt 6, i)`; gate `I-2` measures zero
+  `nsimplify`, zero float literals and zero float calls; the identity is exact at the fine momentum `pi/2` and given
+  no small-`k`, dispersion, Lorentzian or continuum reading.
+- **V5 — materially changes rather than relabels.** Block 217 sampled one direction and reported the shape invisible;
+  this block samples two, finds the mixed-point identity exact, and reads the shape on the sampled plane — an
+  affirmative answer where Block 217 recorded a limitation — while showing exactly where it fails (the control) and
+  what the other assembly sees (the signed sum, the `x`-axis distinction). Nothing is relabelled: Blocks 213, 214,
+  216 and 217 reproduce unchanged (`C-2`, `C-3`, `D-3`'s `OVERLAP_FORM_W1`, `E-3` at `e_t`).

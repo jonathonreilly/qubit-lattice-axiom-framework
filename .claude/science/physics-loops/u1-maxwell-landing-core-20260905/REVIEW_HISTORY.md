@@ -128,3 +128,51 @@ Checker deliverable: CHECKER_block02_findings.md (disjoint machinery: own d0 sig
 - CK-07 (minor) VERIFIED: the capacity check was a tautology on literals. Fix: dim_R M_2(C) computed as the rank of the real coordinate basis; component counts read off the constructed generators.
 - CK-08 (minor) VERIFIED and adopted: the side-6 gauge-plus-chain nullspace is now solved in full generality (324 unknowns) in the runner; section 4 states sides 4 and 6 in full generality.
 Fix-pass runner: TOTAL: PASS=100 FAIL=0 (95 + 5 executed checks; the section-M check rewritten, not added); cache re-pinned on the final runner. The note's Review record now discloses the independence class as cross-model (Fable primary / Opus 5 refuting checker / supervisor hand verification) and records the checker's mutations. Disposition: pass after the fix pass.
+
+# Review history — block 03 (the Gauss rows as support forcing on the extended payload class)
+
+## block 03 — V1-V5 (primary)
+V1 (obstruction closed). No verdict-identified obstruction is closed: the members are unlanded open PRs with no audit row, so there
+is no `verdict_rationale` to quote; the obstruction attacked is block 02's residual wall W_P (the payload, item 7 of the declared
+class), quoted verbatim from block 02's note: "The exact residual supply of the terminal relative to the four axioms is therefore:
+payload and its transformation law, deterministic real linear continuous time, nearest-neighbor locality (unless the
+identification premise IP-B is granted), and positive diagonal energy conservation." This block tests whether the class's own
+supplied Gauss rows (item 5) buy the vertex/cube half of item 7 — they do, DERIVED-CONDITIONAL-ON(SF-all, EC, CONS): frozen and
+decoupled payloads, in every charge sector — and whether they buy the coin/hidden-time half — they do not (six-parameter
+conservative coin family cut to four, never to zero; two exact witnesses each). Trace class upstream_support, consumer = the
+light lane's terminal via block 02's residual; the payload wall is split, not closed.
+V2 (new content + the search). New: (i) the exact ten-dimensional covariant nearest-neighbor class on the four-role payload with
+the cube payload (56 patterns; sides 4 and 6) and its three-speed conservative cut; (ii) the Gauss rates as exact linear
+functionals coefficient by coefficient (the coupling blocks d0^T C^T and d2 C vanish identically); (iii) the collapse theorem
+with its exact iff (a2 = 0 and u_E rho_V = 0; b = 0 and u_B rho_C = 0) and the frozen-payload corollary under conservation;
+(iv) the exact maximal invariant subspace of a non-preserving member (connectedness lever: phi, psi constant) and the sector
+branch count (52 = 2 x 26 transverse; longitudinal 26 = 6 + 12 + 8 absent); (v) the emptiness of every invariant subset of a
+charged surface under a vertex-coupled conservative member; (vi) the odd-shift self-duality (d0, C, d2) -> (-d2^T, C^T, -d0^T);
+(vii) the sixteen-dimensional coin class, its six-parameter cut and the rows' cut to four; (viii) the kernel-dimension
+certificate (0 against 116) that the complex law is not decoupled by any real change of basis, and the finding that it preserves
+the rows at zero charge only; (ix) the second-order hidden-time identity. Search: origin/main
+e249016f759f224d9b429932cd0d1db4d452dc1a; the commands, the twenty-six statement patterns, the title sweep, all hits and their
+classification are in ROUTE_PORTFOLIO.md under "Block 03 prior-art sweep"; every matched hit is context or a method precedent
+on a different object; target state OPEN.
+V3 (framework sentences needed). Yes: Admissibility's support reading note ("'available'/'admissible' denotes its support")
+is what makes a Gauss row a constraint on the admissible set rather than a dynamics, and the memo's "Admissibility is not a
+dynamics axiom" is why "preserves" has to be defined as invariance of that set under a separately supplied flow; Lattice's
+nearest-neighbor adjacency and standard translations give the connectedness lever (ker of the Laplacians = constants) and the
+odd-shift duality (a standard translation that changes the sector); Lattice's rotations define the class; the Qualification's
+"Further physical structure requires a retained derivation or bridge" is why the rows' content and charges stay supplied;
+Record's "locks exactly one admissible local possibility" with Qubit's M_2(C) decide the coin steelman (one record is one point
+of an eight-real-dimensional domain, not one real number). Linear algebra alone would produce the class and the multiplicities
+but not the two readings of support forcing, the adjudication, or the coin disposition.
+V4 (non-trivial). Yes: an exact class with the cube payload; a constraint-dynamics computation (rate functionals, invariant
+subspaces, affine consistency) that no member performs; the charged-surface emptiness and the coin cut are structural facts about
+the terminal's payload item that no member states; witnesses are explicit laws checked exactly.
+V5 (not a one-step variant). No. Closest landed: TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE (Record-side operator invariance
+under Gauss generators — different object); SIGNED_GRAVITY_CONTINUUM_GRADED_EINSTEIN_LOCALIZATION (a constraint surface preserved
+under formal jet transport — same notion, different object and mechanism); AXIOM_FIRST_REEH_SCHLIEDER (a maximal invariant
+subspace of a commutant — same tool, different object). Closest campaign cycle: block 02 (the vertex witness with its Hodge
+multiplicities and two speeds; no constraint analysis, no cube payload, no coin class, the complex law's row preservation asserted
+in the contract but not executed). Closest member: #7917 (item 5 and item 7 declared side by side; never composed); #7893
+(the row as a support condition among records on a different carrier; no field dynamics). Structural distinction: this block
+composes the class with its own constraint, splits item 7 into a conditional half and a supplied half, and finds that a
+background charge makes a vertex coupling inconsistent with the row rather than merely invisible.
+Gate: PASS on V2-V5; V1 answered honestly as upstream support (the PR is a bounded_theorem, not a promotion).

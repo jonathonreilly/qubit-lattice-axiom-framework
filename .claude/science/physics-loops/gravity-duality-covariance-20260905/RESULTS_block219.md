@@ -187,3 +187,12 @@ The table is built from the RAW per-mutation stdout files (`mut_<name>.out`) by 
 Summary: 30/30 mutations each fail exactly their own gate family (A 2 B 7 C 4 D 3 E 3 F 3 G 4 H 2 I 2); problems: none
 
 Under 4-way contention each batch of four took about 112 s (each run ~110 s against 78 s alone); the census log's start and end lines: `CENSUS START 20:28:47Z` ... `CENSUS DONE 20:43:32Z`.
+
+## Supervisor fold note (2026-09-05, after the refuting checker)
+
+The checker's CK-10 correction is applied: the overlap fold's parameter-free points are FOUR (the three pure points and
+the triply-mixed point); the line = zero charpoly agreement holds at five points because the zero point has `d_B = 0`
+(both symbols `lam^8` at every parameter value). The headline's phrase "the five parameter-free points" above reads,
+corrected, "the four parameter-free points and the zero point"; the note, the `G-4` statement and the `N5` fence carry
+the corrected wording, and the baseline was recertified after the fold (`TOTAL: PASS=29 FAIL=0`, runner sha `2c82b721...`).
+No literal, check logic or mutation changed, so the census table above stands at the pre-fold sha `e96b329d...`.

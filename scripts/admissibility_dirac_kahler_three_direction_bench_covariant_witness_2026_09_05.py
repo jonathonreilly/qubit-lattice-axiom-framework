@@ -834,3 +834,79 @@ def measure() -> Facts:
     axiom_text = (ROOT / AXIOM_PATH).read_text(encoding="utf-8") if (ROOT / AXIOM_PATH).is_file() else ""
     note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
     return Facts(authority, construction, bench, identities, shape, rescalings, control, axiom_text, note_text, timings)
+
+
+# ---------------------------------------------------------------------------
+# THE DECLARED LITERALS -- every claim is a constant compared against a
+# measurement; a mutation rewrites exactly one claim.
+# ---------------------------------------------------------------------------
+BENCH_MOMENTA = (("1", "1", "1"), ("1", "1", "I"), ("1", "I", "1"), ("1", "I", "I"),
+                 ("I", "1", "1"), ("I", "1", "I"), ("I", "I", "1"), ("I", "I", "I"))   # Block 213's bench_momenta((4,4,4))
+BENCH_KAPPAS = ((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1))
+SITE_COUNT = 64
+Y_LINK_ENTRIES = 64                                                                   # the y direction now carries its link
+RAISING_BENCH_NNZ = 192
+WITNESS_SIGNS = (1, 1, 1, 1, -1, 1)                                                   # Block 213's L+- cell = Block 216's mask 2
+LINE_POINT_ENTRIES = (sp.Integer(0), R(1, 4), R(-1, 4), R(1, 4))
+HALF_POINT_ENTRIES = (sp.Integer(0), R(1, 2), R(-1, 2), R(1, 2))
+D07_POINT_ENTRIES = (R(1, 4), R(1, 4), R(-1, 4), R(1, 4))
+G1_TT_WITNESS = R(9, 8)
+FLAT_R5 = ((0, 8), (1, 24), (2, 24), (3, 8))                                          # Block 213's expected_flat_multiset((4,4,4))
+SQRT6 = sp.sqrt(6)
+HALF_LEADING_MINORS = (SQRT6 / 3, R(3, 4), SQRT6 / 4, R(3, 4), SQRT6 / 8, R(3, 16), SQRT6 / 24, R(1, 9))
+VOLUME_PRODUCT = R(3, 4)                                                              # v0 v1 at L+-, Block 216's VOLUME_PRODUCTS
+CHARPOLY_COUNT = 14
+DIRECT_COUNT = 10
+WITNESS_PURE_PENCIL = ((R(9, 8), 2), (R(16, 11), 2), (R(18, 11), 4))                  # Block 218's, now at three pure points AND the triply-mixed point
+WITNESS_MIXED_PENCIL = ((R(3, 2), 2), (R(64, 33), 2), (R(24, 11), 4))                 # Block 218's, now at three doubly-mixed points
+WITNESS_DIRECT_PENCIL = ((0, 8), (R(9, 8), 8), (R(16, 11), 8), (R(3, 2), 6), (R(18, 11), 16), (R(64, 33), 6), (R(24, 11), 12))
+W1_TRIPLY_SHAPE = ((1, 2, (5, -8)), (1, 2, (165, -256)), (2, 2, (4157, -26952, 43008)))
+W1_TRIPLY_RATIONAL_ROOTS = ((R(256, 165), 2), (R(8, 5), 2))
+W1_IRREDUCIBLE_DEGREES = {PURE_T: (3,), PURE_X: (2,), PURE_Y: (3,), MIXED_TX: (3,), MIXED_TY: (2,), MIXED_XY: (3,), TRIPLY: (2,)}
+W1_QUADRIC_VALUES = {PURE_T: R(16, 15), PURE_X: R(16, 15), PURE_Y: R(16, 15),
+                     MIXED_TX: R(8, 5), MIXED_TY: R(8, 5), MIXED_XY: R(8, 5), TRIPLY: R(8, 5)}
+W1_G1_FULL = ((R(16, 15), R(-4, 15), R(-4, 15)), (R(-4, 15), R(16, 15), R(-4, 15)), (R(-4, 15), R(-4, 15), R(16, 15)))
+W1_DET_M_SHAPE = ((2, 2), (2, 2))
+W1_DET_M_KNOWN = {PURE_T: R(256, 225), MIXED_TX: R(1024, 225)}                        # Block 218's two values
+BRANCH_CONSTANTS = ((1, 2), (R(128, 99), 2), (R(16, 11), 4))                          # Block 216's L+- line 1/4
+QUADRIC_VALUES = {PURE_T: R(9, 8), PURE_X: R(9, 8), PURE_Y: R(9, 8),
+                  MIXED_TX: R(3, 2), MIXED_TY: R(3, 2), MIXED_XY: R(3, 2), TRIPLY: R(9, 8)}
+G1_FULL = ((R(9, 8), R(-3, 8), R(-3, 8)), (R(-3, 8), R(9, 8), R(-3, 8)), (R(-3, 8), R(-3, 8), R(9, 8)))
+G1_BENCH = {"tt": R(9, 8), "xx": R(9, 8), "yy": R(9, 8), "tx": R(-3, 8), "ty": R(-3, 8), "xy": R(-3, 8)}
+TRIPLY_Q = R(9, 8)
+DET_M_SHAPE = ((2, 4),)
+DET_M_VALUES = {PURE_T: R(81, 64), PURE_X: R(81, 64), PURE_Y: R(81, 64),
+                MIXED_TX: sp.Integer(4), MIXED_TY: sp.Integer(4), MIXED_XY: sp.Integer(4), TRIPLY: R(81, 64)}
+LINE_RESCALE_HALF = R(3, 2)                                                           # 1/(1 - (1/2)^2 / (3/4))
+HALF_CONSTANTS = ((1, 2), (R(16, 9), 2), (2, 4))                                      # Block 216's symbolic constants at lam_line = 1/2
+HALF_PURE_T = ((R(9, 8), 2), (2, 2), (R(9, 4), 4))
+D07_CONSTANTS = ((R(128, 119), 2), (R(128, 99), 2), (R(16, 11), 4))                   # Block 216's line 1/4 + D07 1/4
+D07_PURE_T = ((R(144, 119), 2), (R(16, 11), 2), (R(18, 11), 4))
+OVERLAP_FOLD_ZERO_PARITY = ("D07/4 + D16/4 + D25/4 + D34/4",)                         # Block 217's (s/4) P111
+OVERLAP_FOLD_PARITY = {MIXED_TX: ("-D07/4 - D16/4 + D25/4 + D34/4",),                 # Block 218's signed sum at (i,i,1)
+                       MIXED_TY: ("-D07/4 + D16/4 - D25/4 + D34/4",),
+                       MIXED_XY: ("-D07/4 + D16/4 + D25/4 - D34/4",)}
+OVERLAP_FOLD_PARAMETER_FREE = (PURE_Y, PURE_X, PURE_T, TRIPLY)
+OVERLAP_STAR_LINE = {MIXED_TX: (R(-1, 16),), MIXED_TY: (R(3, 16),), MIXED_XY: (R(-1, 16),)}
+OVERLAP_LINE_EQUALS_ZERO = (("1", "1", "1"), PURE_Y, PURE_X, PURE_T, TRIPLY)
+OVERLAP_LINE_DIFFERS = (MIXED_XY, MIXED_TY, MIXED_TX)
+OVERLAP_TRIPLY_PENCIL = ((R(825, 371), 4), (R(537, 227), 4))
+OVERLAP_TY_PENCIL = ((R(25774, 13445), 4), (R(22246, 9917), 4))
+SCOUT_GRADE_FENCE = ("scout-grade finite exact linear algebra on one cell form, "
+                     "not a spacetime and not a dynamics")
+SCOUT_GRADE_ONLY = True
+INSTANCE_SCOPE = (
+    "one cell form: Block 211's family at L+-'s rule-A cell (mask 2) with Block 213's curve moduli, the all-plus W1 and the flat cell as controls; no other cell",
+    "two assemblies, two readings, all four run at the witness; neither assembly decided, neither reading selected; the parameters at three numeric points on and beside the star line and at zero",
+    "one bench, Block 213's bench_matrix at extent (4,4,4): all three directions sampled at the fine momentum pi/2 and at nothing else; no other extent",
+    "the cone's shape in three directions: seven Bloch points fix the six entries of G1 with one consistency check; the direct degree-64 check certified for ten constructions, the overlap direct charpolys probed only",
+    "the covariance notion: Block 215's (E_R R) H (E_R R)^T = H on the folded H0, inherited through Block 216's witnesses; the antecedent a reading",
+    "no dispersion law, no Lorentzian or light-cone reading, no continuum limit, no metric of anything physical; the identity with the principal part is exact and finite, not a limit",
+)
+INSTANCE_SCOPE_COUNT = 6
+
+N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY, BENCH AND SHAPE ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its 64 face-sign cells and its four free parameters, Block 213's curve witnesses, bench_matrix and Bloch reduction, Block 214's principal part under both assemblies, Block 216's 8 covariant witnesses, their branch constants and their two rescalings, Block 217's algebraic-field bench, Block 218's (4,4,2) bench with its Bloch-point lemma and mixed-point identity, and Block 105's assemblies are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H ON THE FOLDED H0 AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; 'ONE METRIC'S CONE' NAMES BLOCK 213'S EXACT STATEMENT det B = c (k^T G1 k)^2 AND 'THE CONE'S SHAPE' NAMES THE PROPORTIONALITY OF EVERY PENCIL BRANCH TO ONE QUADRIC, NOW IN ALL THREE DIRECTIONS, AND NOTHING PHYSICAL; 'BENCH' NAMES SIXTY-FOUR EXACT EIGENVALUES OF ONE FINITE MATRIX AT EIGHT BLOCH POINTS; NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED.\\nper_site: THE BENCH is Block 213's bench_matrix at extent (4,4,4) -- the three-direction bench, 64 sites, every direction at extent 4 carrying its link (64 y-link entries, 192 nonzero raising entries), its eight Bloch momenta (z_t, z_x, z_y) in {1, i}^3: the zero point, the three pure points, the three doubly-mixed points and the TRIPLY-MIXED point (i,i,i) -- at L+-'s own cell (Block 216's mask 2, Block 213's face signs (+,+,+,+,-,+), the curve moduli (sqrt6/3, 1/3, 3 sqrt6/8, 1/2)) with the parameters at the star-line point (0, 1/4, -1/4, 1/4), at the second line multiple (0, 1/2, -1/2, 1/2) (positive definite by its eight leading minors, checked before use; 1/4 < v0 v1 = 3/4), at D07 = 1/4 on the line (1/4, 1/4, -1/4, 1/4), and at the all-plus W1 control (15/16, 1/4, 1, 1/4) with the line parameters; Block 218's (4,4,2) block multisets and Block 217's (4,2,2) multiset {0 x8, 9/8 x2, 16/11 x2, 18/11 x4} reproduce at the witness with Bloch = direct as the smaller-extent gates, G1_tt = 9/8; the flat cell at zero parameters gives R5's {0 x8, 1 x24, 2 x24, 3 x8} = Block 213's expected_flat_multiset((4,4,4)) under both assemblies and both readings.\\nper_mode: THE BLOCH-POINT LEMMA IN THREE DIRECTIONS: d_B(z) = sum_mu (z_mu - 1/z_mu)/2 D(e_mu) at symbolic z with z_y live, so the raising Bloch block at every one of the eight points is i D(kappa_z) with kappa_z = e_t [z_t = i] + e_x [z_x = i] + e_y [z_y = i], at the triply-mixed point i D(e_t + e_x + e_y); D(kappa_z)^2 = 0 at all eight points; the onsite Hodge Bloch block is Z^-1 H0 Z with Z = diag(z^c) at every point at the witness, the control, the flat cell and the two rescaled points; hence the onsite pencil block charpoly at EVERY point equals the charpoly of (H0^-1 M(kappa_z))^2 -- the triply-mixed point with (H0^-1 M(e_t + e_x + e_y))^2 included -- an exact finite identity resting on d^2 = 0 and not a limit; the identity FAILS for the form reading and for the overlap assembly at every nonzero point of the witness.\\nper_block: THE CONE'S SHAPE IS VISIBLE IN ALL THREE DIRECTIONS at the covariant witness: under the onsite pencil the nonzero eigenvalues are {9/8 x2, 16/11 x2, 18/11 x4} at the three pure points AND at the triply-mixed point and {3/2 x2, 64/33 x2, 24/11 x4} at the three doubly-mixed points -- at each of the seven points EVERY nonzero eigenvalue is a Block 216 branch constant {1, 128/99, 16/11 x2} times k^T G1 k at kappa_z, the quadric values computed from G1 = D1/D0 = (3/8)[[3,-1,-1],[-1,3,-1],[-1,-1,3]] being 9/8, 9/8, 9/8, 3/2, 3/2, 3/2 and 9/8; G1 IS READ OFF THE BENCH: the six entries (9/8, 9/8, 9/8; -3/8, -3/8, -3/8) from the three pure and three doubly-mixed points equal the entries of D1/D0, and the triply-mixed point is the over-determined consistency check, predicted 3(9/8) + 6(-3/8) = 9/8 against measured 9/8; det M on the line is (64/81) Q^4 at all seven points (81/64 at the pure and triply-mixed points, 4 at the doubly-mixed); the ten direct degree-64 charpolys (the onsite pencil at five cells, the onsite form at the witness, the flat cell under four constructions) all have Bloch union = direct.\\nlattice_wide: BLOCK 216's TWO RESCALINGS SEEN ON THE BENCH: at the second line multiple lambda = 1/2 the block multisets at all seven points are {1, 16/9, 2 x2} times Q -- Block 216's symbolic line constants at lam_line = 1/2, the top-form and transverse constants 32/27 and 4/3 rescaled by 1/(1 - lambda^2/(v0 v1)) = 3/2 (12/11 = LINE_RESCALE at 1/4) -- the pure-t multiset {9/8 x2, 2 x2, 9/4 x4}; at D07 = 1/4 they are {128/119, 128/99, 16/11 x2} times Q, the 0-form constant rescaled by 1/(1 - D07^2 v1/v0) = 128/119 = D07_RESCALE, the pure-t multiset {144/119 x2, 16/11 x2, 18/11 x4}; G1 is parameter-free at all three points. THE CONTROL: at the all-plus W1 the identity holds at all eight points but the shape fails at every nonzero point -- the rational branch k^T G1 k (16/15 at the pure points, 8/5 at the doubly- and triply-mixed points; W1's six entries read off and its triply-mixed check consistent) and otherwise an irreducible cubic at (i,1,1), (1,1,i), (i,i,1), (1,i,i) or a linear times an irreducible quadratic at (1,i,1), (i,1,i), (i,i,i), the triply-mixed block (5 lam - 8)^2 (165 lam - 256)^2 times an irreducible quadratic squared with 256/165 no branch constant times 8/5. THE OVERLAP FOLD at symbolic signs, moduli and parameters is parameter-free at the three pure points AND at the triply-mixed point and sees all four parameters at the three doubly-mixed points through three signed sums on the parity block, (-D07 - D16 + D25 + D34)/4 at (i,i,1), (-D07 + D16 - D25 + D34)/4 at (i,1,i), (-D07 + D16 + D25 - D34)/4 at (1,i,i) -- on the star line -1/16, 3/16, -1/16 -- so the overlap bench at the line point equals the zero-parameter one exactly at the five parameter-free points and differs at the three doubly-mixed points; the overlap bench identifies t with y and distinguishes x at the witness where the onsite bench identifies all three.\\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under the group THEN at the covariant witness the three-direction bench reads the cone's shape in all three directions exactly under the onsite pencil, reads G1's six entries off seven Bloch points with one consistency check, and sees Block 216's two rescalings; the antecedent is a reading. OPEN: the overlap direct degree-64 charpolys (measured in a probe, not certified), the other seven rule-A cells, symbolic parameters and symbolic line multiples on the bench, the constraint quotient; no dispersion law, no Lorentzian or light-cone reading, no continuum, no dynamics and no gravity is supplied.\\nRESULT: ON THE THREE-DIRECTION (4,4,4) BENCH AT THE COVARIANT WITNESS THE BLOCH-POINT LEMMA HOLDS AT ALL EIGHT POINTS -- THE RAISING BLOCK IS i D(kappa_z) AND THE ONSITE PENCIL BLOCK HAS THE CHARPOLY OF (H0^-1 M(kappa_z))^2, THE TRIPLY-MIXED POINT INCLUDED -- AND EVERY NONZERO EIGENVALUE AT THE SEVEN NONZERO POINTS IS A BRANCH CONSTANT TIMES ONE QUADRIC: THE CONE'S SHAPE IS VISIBLE IN ALL THREE DIRECTIONS, G1's SIX ENTRIES ARE READ OFF THE BENCH WITH THE TRIPLY-MIXED CHECK CONSISTENT, AND BLOCK 216's TWO RESCALINGS ARE SEEN ON A BENCH; AT THE ALL-PLUS CONTROL THE SHAPE FAILS AT EVERY POINT, AND THE OVERLAP FOLD SEES THE PARAMETERS ONLY AT THE DOUBLY-MIXED POINTS, THROUGH THREE SIGNED SUMS. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-218 STAND; Block 218's REOPEN item 1 is ANSWERED at one covariant witness as a conditional: the six entries of G1 are read off the three-direction bench and the shape is seen in all three directions, with Block 216's two rescalings seen on the bench. Fable primary seat; refuting checker PENDING.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero."
+
+
+def scope_certificate(text: str) -> dict:
+    return {"n5_verbatim": N5_FENCE in text}

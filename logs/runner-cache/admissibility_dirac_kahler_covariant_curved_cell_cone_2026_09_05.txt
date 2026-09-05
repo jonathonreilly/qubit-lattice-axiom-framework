@@ -1,0 +1,274 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_covariant_curved_cell_cone_2026_09_05.py
+runner_sha256: 424df7d69066af27022c5f02035791eabb5fb2add2806a676bb03d641929cc92
+input_fingerprint_sha256: 8d25e61b6bda47fd5ba77d3b9f0160a1d54392211d6bd951abd8184ba28d11bc
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 178.91
+status: ok
+----- stdout -----
+[phase] authority: 477 ms
+[phase] group: 12213 ms
+[phase] census: 1369 ms
+[phase] covariance: 6005 ms
+[union] W1 moduli at cell 2
+[union] W1 moduli at cell 5
+[union] W1 moduli at cell 11
+[union] W1 moduli at cell 12
+[union] W1 moduli at cell 16
+[union] W1 moduli at cell 23
+[union] W1 moduli at cell 25
+[union] W1 moduli at cell 30
+[union] W1 moduli at cell 33
+[union] W1 moduli at cell 38
+[union] W1 moduli at cell 40
+[union] W1 moduli at cell 47
+[union] W1 moduli at cell 51
+[union] W1 moduli at cell 52
+[union] W1 moduli at cell 58
+[union] W1 moduli at cell 61
+[union] W1 moduli at cell 0
+[union] curve moduli at cell 2
+[union] curve moduli at cell 11
+[union] curve moduli at cell 16
+[union] curve moduli at cell 25
+[union] curve moduli at cell 38
+[union] curve moduli at cell 47
+[union] curve moduli at cell 52
+[union] curve moduli at cell 61
+[phase] union: 60286 ms
+[phase] witness: 4018 ms
+[branches] L+- symbolic line multiple
+[branches] L+- line 1/4
+[branches] L+- line 1/4 + D07 1/4
+[branches] L-+ symbolic line multiple
+[branches] L-+ line 1/4
+[branches] L-+ line 1/4 + D07 1/4
+[phase] branches: 85946 ms
+[phase] symbol: 4211 ms
+== BLOCK 216: the covariant curved cell and its cone -- measured facts ==
+authority: AuthorityCertificate(fixed_authority=True, parent_pin_is_commit=True, parent_is_ancestor=True, parent_artifact_blobs=True, stale_is_real_ancestor=True, stale_carries_neither_artifact=True, machinery_import_landed=True, inputs_readable=8)
+census census: (('(g0*g1 + g0 + g1,)', 4, ((-1, -1),)), ('(g0*g1 + g0 - g1,)', 4, ((1, -1),)), ('(g0*g1 - g0 + g1,)', 4, ((-1, 1),)), ('(g0*g1 - g0 - g1,)', 4, ((1, 1),)), ('(g0, g1)', 48, ((-1, -1), (-1, 1), (1, -1), (1, 1))))
+census census_matches_block213: True
+census curve_is_rule_a_or_b: True
+census curve_masks: (2, 5, 11, 12, 16, 23, 25, 30, 33, 38, 40, 47, 51, 52, 58, 61)
+census face_order: (('tx', 0), ('ty', 0), ('xy', 0), ('tx', 1), ('ty', 1), ('xy', 1))
+census indexing_agrees: True
+census intersection_count: 16
+census intersection_masks: (2, 5, 11, 12, 16, 23, 25, 30, 33, 38, 40, 47, 51, 52, 58, 61)
+census positive_subset_count: 8
+census positive_subset_masks: (2, 11, 16, 25, 38, 47, 52, 61)
+census rule_a_classes: ((-1, 1), (1, -1))
+census rule_a_iff_star_pattern_plus: True
+census rule_a_masks: (2, 11, 16, 25, 38, 47, 52, 61)
+census rule_b_classes: ((-1, -1), (1, 1))
+census rule_b_iff_star_pattern_minus: True
+census rule_b_masks: (5, 12, 23, 30, 33, 40, 51, 58)
+census star_equals_curve: True
+census star_masks: (2, 5, 11, 12, 16, 23, 25, 30, 33, 38, 40, 47, 51, 52, 58, 61)
+census star_pair_signs_block215: (1, -1, 1)
+census star_pattern_is_minus_e_i_e_j: True
+census star_per_class (-1, -1): (12, 23, 33, 58)
+census star_per_class (-1, 1): (11, 16, 38, 61)
+census star_per_class (1, -1): (2, 25, 47, 52)
+census star_per_class (1, 1): (5, 30, 40, 51)
+census star_to_rule_a_distance: ((2, 0), (5, 3), (11, 0), (12, 3), (16, 0), (23, 3), (25, 0), (30, 3), (33, 3), (38, 0), (40, 3), (47, 0), (51, 3), (52, 0), (58, 3), (61, 0))
+covariance all_plus_twisted_line: (((), ('D16 - D34', 'D25 - D34')),)
+covariance generator_indices: (12, 4)
+covariance generators_generate_o: True
+covariance star_line: ((0, 1, 0, -1), (0, 0, 1, 1))
+covariance strict_s3 (-1, -1, -1, -1, 1, -1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), True, 1))
+covariance strict_s3 (-1, -1, -1, 1, -1, 1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), True, 1))
+covariance strict_s3 (-1, -1, 1, -1, 1, 1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), True, 1), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (-1, -1, 1, 1, -1, -1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), True, 1), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (-1, 1, -1, -1, -1, -1): (((0, 6, 8, 15, 17, 23), True, 1), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (-1, 1, -1, 1, 1, 1): (((0, 6, 8, 15, 17, 23), True, 1), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (-1, 1, 1, -1, -1, 1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), True, 1), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (-1, 1, 1, 1, 1, -1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), True, 1), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (1, -1, -1, -1, -1, 1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), True, 1), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (1, -1, -1, 1, 1, -1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), True, 1), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (1, -1, 1, -1, -1, -1): (((0, 6, 8, 15, 17, 23), True, 1), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (1, -1, 1, 1, 1, 1): (((0, 6, 8, 15, 17, 23), True, 1), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (1, 1, -1, -1, 1, 1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), True, 1), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (1, 1, -1, 1, -1, -1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), True, 1), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3 (1, 1, 1, -1, 1, -1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), True, 1))
+covariance strict_s3 (1, 1, 1, 1, -1, 1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), True, 1))
+covariance strict_s3 (1, 1, 1, 1, 1, 1): (((0, 6, 8, 15, 17, 23), False, 0), ((0, 6, 11, 13, 18, 21), False, 0), ((0, 7, 8, 14, 19, 21), False, 0), ((0, 7, 11, 12, 16, 23), False, 0))
+covariance strict_s3_alive_at_all_plus: False
+covariance strict_s3_alive_count_per_star_cell: (1,)
+covariance strict_s3_member_per_star_cell 11: (0, 7, 8, 14, 19, 21)
+covariance strict_s3_member_per_star_cell 12: (0, 7, 8, 14, 19, 21)
+covariance strict_s3_member_per_star_cell 16: (0, 6, 8, 15, 17, 23)
+covariance strict_s3_member_per_star_cell 2: (0, 7, 11, 12, 16, 23)
+covariance strict_s3_member_per_star_cell 23: (0, 6, 8, 15, 17, 23)
+covariance strict_s3_member_per_star_cell 25: (0, 6, 11, 13, 18, 21)
+covariance strict_s3_member_per_star_cell 30: (0, 6, 11, 13, 18, 21)
+covariance strict_s3_member_per_star_cell 33: (0, 6, 11, 13, 18, 21)
+covariance strict_s3_member_per_star_cell 38: (0, 6, 11, 13, 18, 21)
+covariance strict_s3_member_per_star_cell 40: (0, 6, 8, 15, 17, 23)
+covariance strict_s3_member_per_star_cell 47: (0, 6, 8, 15, 17, 23)
+covariance strict_s3_member_per_star_cell 5: (0, 7, 11, 12, 16, 23)
+covariance strict_s3_member_per_star_cell 51: (0, 7, 8, 14, 19, 21)
+covariance strict_s3_member_per_star_cell 52: (0, 7, 8, 14, 19, 21)
+covariance strict_s3_member_per_star_cell 58: (0, 7, 11, 12, 16, 23)
+covariance strict_s3_member_per_star_cell 61: (0, 7, 11, 12, 16, 23)
+covariance strict_s3_star_line_at_every_star_cell: True
+covariance twisted (-1, -1, -1, -1, 1, -1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (-1, -1, -1, 1, -1, 1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (-1, -1, 1, -1, 1, 1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (-1, -1, 1, 1, -1, -1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (-1, 1, -1, -1, -1, -1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (-1, 1, -1, 1, 1, 1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (-1, 1, 1, -1, -1, 1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (-1, 1, 1, 1, 1, -1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (1, -1, -1, -1, -1, 1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (1, -1, -1, 1, 1, -1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (1, -1, 1, -1, -1, -1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (1, -1, 1, 1, 1, 1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (1, 1, -1, -1, 1, 1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (1, 1, -1, 1, -1, -1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (1, 1, 1, -1, 1, -1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (1, 1, 1, 1, -1, 1): (1, True, (((), ('D16 - D34', 'D25 + D34')),))
+covariance twisted (1, 1, 1, 1, 1, 1): (1, False, (((), ('D16 - D34', 'D25 - D34')),))
+covariance twisted_line_is_star_line_at_every_star_cell: True
+union block_identity_generic: True
+union class_representative_masks (-1, -1): 12
+union class_representative_masks (-1, 1): 11
+union class_representative_masks (1, -1): 2
+union class_representative_masks (1, 1): 5
+union curve_witness_count: 8
+union m_oo_entries: ('kt*(D16 + D25)', '-kx*(D16 - D34)', '-ky*(D25 + D34)')
+union m_oo_free_symbols: ('D16', 'D25', 'D34', 'kt', 'kx', 'ky')
+union m_oo_ideal_is_star_line: True
+union m_oo_row7_zero: True
+union m_oo_zero_on_star_line: True
+union necessity_is_plane_everywhere: True
+union one_witness_per_class: True
+union onsite_h0_is_the_cell: True
+union rational_witness_count: 18
+union sufficiency_everywhere: True
+union table ('W1', 0): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 11): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 12): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 16): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 2): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 23): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 25): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 30): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 33): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 38): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 40): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 47): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 5): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 51): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 52): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 58): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('W1', 61): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('curve', 11): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('curve', 16): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('curve', 2): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('curve', 25): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('curve', 38): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('curve', 47): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('curve', 52): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('curve', 61): (('D16 - D34', 'D25 + D34'), True, True)
+union table ('flat', 0): (('D16 - D34', 'D25 + D34'), True, True)
+union witness_count: 26
+union witnesses_positive_definite: True
+witness all_witnesses cone_on_line_is_one_metric_cone: True
+witness all_witnesses graded_cone_is_one_quadric_squared: True
+witness all_witnesses is_block211_solve: True
+witness all_witnesses on_curve: True
+witness all_witnesses on_ties: True
+witness all_witnesses positive_definite: True
+witness all_witnesses preserved_on_line: True
+witness all_witnesses readings_proportional: True
+witness all_witnesses shears_nonzero: True
+witness all_witnesses stabiliser_is_s3_body: True
+witness all_witnesses strict_locus_is_star_line_alive: True
+witness cone_on_line_constants: ('64/81', '9/16')
+witness mu_per_class (-1, 1): (27/32,)
+witness mu_per_class (1, -1): (32/27,)
+witness stabiliser_orders: ((1, 2, 2, 2, 3, 3),)
+witness table 11: {'class': (-1, 1), 'moduli': (sqrt(6)/3, 1/2, 4*sqrt(6)/9, 1/3), 'on_curve': True, 'on_ties': True, 'shears_nonzero': True, 'is_block211_solve': True, 'positive_definite': True, 'stabiliser': (0, 7, 8, 14, 19, 21), 'stabiliser_orders': (1, 2, 2, 2, 3, 3), 'stabiliser_is_s3_body': True, 'strict_locus': (((), ('D16 - D34', 'D25 + D34')),), 'strict_locus_is_star_line_alive': True, 'preserved_on_line': True, 'mu': 27/32, 'readings_proportional': True, 'graded_cone_is_one_quadric_squared': True, 'cone_on_line_is_one_metric_cone': True, 'cone_on_line_constant': 9/16}
+witness table 16: {'class': (-1, 1), 'moduli': (sqrt(6)/3, 1/2, 4*sqrt(6)/9, 1/3), 'on_curve': True, 'on_ties': True, 'shears_nonzero': True, 'is_block211_solve': True, 'positive_definite': True, 'stabiliser': (0, 6, 8, 15, 17, 23), 'stabiliser_orders': (1, 2, 2, 2, 3, 3), 'stabiliser_is_s3_body': True, 'strict_locus': (((), ('D16 - D34', 'D25 + D34')),), 'strict_locus_is_star_line_alive': True, 'preserved_on_line': True, 'mu': 27/32, 'readings_proportional': True, 'graded_cone_is_one_quadric_squared': True, 'cone_on_line_is_one_metric_cone': True, 'cone_on_line_constant': 9/16}
+witness table 2: {'class': (1, -1), 'moduli': (sqrt(6)/3, 1/3, 3*sqrt(6)/8, 1/2), 'on_curve': True, 'on_ties': True, 'shears_nonzero': True, 'is_block211_solve': True, 'positive_definite': True, 'stabiliser': (0, 7, 11, 12, 16, 23), 'stabiliser_orders': (1, 2, 2, 2, 3, 3), 'stabiliser_is_s3_body': True, 'strict_locus': (((), ('D16 - D34', 'D25 + D34')),), 'strict_locus_is_star_line_alive': True, 'preserved_on_line': True, 'mu': 32/27, 'readings_proportional': True, 'graded_cone_is_one_quadric_squared': True, 'cone_on_line_is_one_metric_cone': True, 'cone_on_line_constant': 64/81}
+witness table 25: {'class': (1, -1), 'moduli': (sqrt(6)/3, 1/3, 3*sqrt(6)/8, 1/2), 'on_curve': True, 'on_ties': True, 'shears_nonzero': True, 'is_block211_solve': True, 'positive_definite': True, 'stabiliser': (0, 6, 11, 13, 18, 21), 'stabiliser_orders': (1, 2, 2, 2, 3, 3), 'stabiliser_is_s3_body': True, 'strict_locus': (((), ('D16 - D34', 'D25 + D34')),), 'strict_locus_is_star_line_alive': True, 'preserved_on_line': True, 'mu': 32/27, 'readings_proportional': True, 'graded_cone_is_one_quadric_squared': True, 'cone_on_line_is_one_metric_cone': True, 'cone_on_line_constant': 64/81}
+witness table 38: {'class': (-1, 1), 'moduli': (sqrt(6)/3, 1/2, 4*sqrt(6)/9, 1/3), 'on_curve': True, 'on_ties': True, 'shears_nonzero': True, 'is_block211_solve': True, 'positive_definite': True, 'stabiliser': (0, 6, 11, 13, 18, 21), 'stabiliser_orders': (1, 2, 2, 2, 3, 3), 'stabiliser_is_s3_body': True, 'strict_locus': (((), ('D16 - D34', 'D25 + D34')),), 'strict_locus_is_star_line_alive': True, 'preserved_on_line': True, 'mu': 27/32, 'readings_proportional': True, 'graded_cone_is_one_quadric_squared': True, 'cone_on_line_is_one_metric_cone': True, 'cone_on_line_constant': 9/16}
+witness table 47: {'class': (1, -1), 'moduli': (sqrt(6)/3, 1/3, 3*sqrt(6)/8, 1/2), 'on_curve': True, 'on_ties': True, 'shears_nonzero': True, 'is_block211_solve': True, 'positive_definite': True, 'stabiliser': (0, 6, 8, 15, 17, 23), 'stabiliser_orders': (1, 2, 2, 2, 3, 3), 'stabiliser_is_s3_body': True, 'strict_locus': (((), ('D16 - D34', 'D25 + D34')),), 'strict_locus_is_star_line_alive': True, 'preserved_on_line': True, 'mu': 32/27, 'readings_proportional': True, 'graded_cone_is_one_quadric_squared': True, 'cone_on_line_is_one_metric_cone': True, 'cone_on_line_constant': 64/81}
+witness table 52: {'class': (1, -1), 'moduli': (sqrt(6)/3, 1/3, 3*sqrt(6)/8, 1/2), 'on_curve': True, 'on_ties': True, 'shears_nonzero': True, 'is_block211_solve': True, 'positive_definite': True, 'stabiliser': (0, 7, 8, 14, 19, 21), 'stabiliser_orders': (1, 2, 2, 2, 3, 3), 'stabiliser_is_s3_body': True, 'strict_locus': (((), ('D16 - D34', 'D25 + D34')),), 'strict_locus_is_star_line_alive': True, 'preserved_on_line': True, 'mu': 32/27, 'readings_proportional': True, 'graded_cone_is_one_quadric_squared': True, 'cone_on_line_is_one_metric_cone': True, 'cone_on_line_constant': 64/81}
+witness table 61: {'class': (-1, 1), 'moduli': (sqrt(6)/3, 1/2, 4*sqrt(6)/9, 1/3), 'on_curve': True, 'on_ties': True, 'shears_nonzero': True, 'is_block211_solve': True, 'positive_definite': True, 'stabiliser': (0, 7, 11, 12, 16, 23), 'stabiliser_orders': (1, 2, 2, 2, 3, 3), 'stabiliser_is_s3_body': True, 'strict_locus': (((), ('D16 - D34', 'D25 + D34')),), 'strict_locus_is_star_line_alive': True, 'preserved_on_line': True, 'mu': 27/32, 'readings_proportional': True, 'graded_cone_is_one_quadric_squared': True, 'cone_on_line_is_one_metric_cone': True, 'cone_on_line_constant': 9/16}
+witness witness_count: 8
+branches all_branches_k_free: True
+branches d07_congruence_M_symbolic_signs: True
+branches d07_congruence_holds_at_star_cells: True
+branches d07_shift: -D07**2*v1
+branches d07_shift_rest_zero: True
+branches table ('L+-', 'd07 rescale 1/4'): 128/119
+branches table ('L+-', 'line 1/4 + D07 1/4'): ((('128/119', 2, True), ('128/99', 2, True), ('16/11', 4, True)), ())
+branches table ('L+-', 'line 1/4'): ((('1', 2, True), ('128/99', 2, True), ('16/11', 4, True)), ())
+branches table ('L+-', 'line rescale 1/4'): 12/11
+branches table ('L+-', 'line symbolic'): ((('-32/(9*(4*lam_line**2 - 3))', 2, True), ('-4/(4*lam_line**2 - 3)', 4, True), ('1', 2, True)), ())
+branches table ('L+-', 'v0 v1'): 3/4
+branches table ('L+-', 'v1 / v0'): 9/8
+branches table ('L-+', 'd07 rescale 1/4'): 12/11
+branches table ('L-+', 'line 1/4 + D07 1/4'): ((('108/119', 2, True), ('12/11', 2, True), ('144/119', 4, True)), ())
+branches table ('L-+', 'line 1/4'): ((('1', 2, True), ('108/119', 2, True), ('144/119', 4, True)), ())
+branches table ('L-+', 'line rescale 1/4'): 128/119
+branches table ('L-+', 'line symbolic'): ((('-27/(4*(9*lam_line**2 - 8))', 2, True), ('-9/(9*lam_line**2 - 8)', 4, True), ('1', 2, True)), ())
+branches table ('L-+', 'v0 v1'): 8/9
+branches table ('L-+', 'v1 / v0'): 4/3
+symbol axes: ((-1, -1, 1), (-1, 1, 1), (1, -1, 1), (1, 1, 1))
+symbol flat_quadrics_are_k2: True
+symbol gauged_raising_differs: True
+symbol identity_everywhere: True
+symbol invariance_is_exactly_s3_everywhere: True
+symbol invariant_dimensions: ((2, 1),)
+symbol quadrics_in_s3_span_everywhere: True
+symbol table 11: {'identity': True, 'stabiliser': (0, 7, 8, 14, 19, 21), 'q1_invariance_set': (0, 7, 8, 14, 19, 21), 'q2_invariance_set': (0, 7, 8, 14, 19, 21), 'detB_invariance_set': (0, 7, 8, 14, 19, 21), 'invariance_sets_are_the_stabiliser': True, 'axis': (-1, 1, 1), 'span_coefficients': ((2*sqrt(6)/9, 2*sqrt(6)/9), (2/3, 2/3)), 'in_invariant_span': True, 'invariant_quadric_dimension_s3': 2, 'invariant_quadric_dimension_o': 1}
+symbol table 16: {'identity': True, 'stabiliser': (0, 6, 8, 15, 17, 23), 'q1_invariance_set': (0, 6, 8, 15, 17, 23), 'q2_invariance_set': (0, 6, 8, 15, 17, 23), 'detB_invariance_set': (0, 6, 8, 15, 17, 23), 'invariance_sets_are_the_stabiliser': True, 'axis': (1, -1, 1), 'span_coefficients': ((2*sqrt(6)/9, 2*sqrt(6)/9), (2/3, 2/3)), 'in_invariant_span': True, 'invariant_quadric_dimension_s3': 2, 'invariant_quadric_dimension_o': 1}
+symbol table 2: {'identity': True, 'stabiliser': (0, 7, 11, 12, 16, 23), 'q1_invariance_set': (0, 7, 11, 12, 16, 23), 'q2_invariance_set': (0, 7, 11, 12, 16, 23), 'detB_invariance_set': (0, 7, 11, 12, 16, 23), 'invariance_sets_are_the_stabiliser': True, 'axis': (1, 1, 1), 'span_coefficients': ((sqrt(6)/2, -sqrt(6)/8), (3/2, -3/8)), 'in_invariant_span': True, 'invariant_quadric_dimension_s3': 2, 'invariant_quadric_dimension_o': 1}
+symbol table 25: {'identity': True, 'stabiliser': (0, 6, 11, 13, 18, 21), 'q1_invariance_set': (0, 6, 11, 13, 18, 21), 'q2_invariance_set': (0, 6, 11, 13, 18, 21), 'detB_invariance_set': (0, 6, 11, 13, 18, 21), 'invariance_sets_are_the_stabiliser': True, 'axis': (-1, -1, 1), 'span_coefficients': ((sqrt(6)/2, -sqrt(6)/8), (3/2, -3/8)), 'in_invariant_span': True, 'invariant_quadric_dimension_s3': 2, 'invariant_quadric_dimension_o': 1}
+symbol table 38: {'identity': True, 'stabiliser': (0, 6, 11, 13, 18, 21), 'q1_invariance_set': (0, 6, 11, 13, 18, 21), 'q2_invariance_set': (0, 6, 11, 13, 18, 21), 'detB_invariance_set': (0, 6, 11, 13, 18, 21), 'invariance_sets_are_the_stabiliser': True, 'axis': (-1, -1, 1), 'span_coefficients': ((2*sqrt(6)/9, 2*sqrt(6)/9), (2/3, 2/3)), 'in_invariant_span': True, 'invariant_quadric_dimension_s3': 2, 'invariant_quadric_dimension_o': 1}
+symbol table 47: {'identity': True, 'stabiliser': (0, 6, 8, 15, 17, 23), 'q1_invariance_set': (0, 6, 8, 15, 17, 23), 'q2_invariance_set': (0, 6, 8, 15, 17, 23), 'detB_invariance_set': (0, 6, 8, 15, 17, 23), 'invariance_sets_are_the_stabiliser': True, 'axis': (1, -1, 1), 'span_coefficients': ((sqrt(6)/2, -sqrt(6)/8), (3/2, -3/8)), 'in_invariant_span': True, 'invariant_quadric_dimension_s3': 2, 'invariant_quadric_dimension_o': 1}
+symbol table 52: {'identity': True, 'stabiliser': (0, 7, 8, 14, 19, 21), 'q1_invariance_set': (0, 7, 8, 14, 19, 21), 'q2_invariance_set': (0, 7, 8, 14, 19, 21), 'detB_invariance_set': (0, 7, 8, 14, 19, 21), 'invariance_sets_are_the_stabiliser': True, 'axis': (-1, 1, 1), 'span_coefficients': ((sqrt(6)/2, -sqrt(6)/8), (3/2, -3/8)), 'in_invariant_span': True, 'invariant_quadric_dimension_s3': 2, 'invariant_quadric_dimension_o': 1}
+symbol table 61: {'identity': True, 'stabiliser': (0, 7, 11, 12, 16, 23), 'q1_invariance_set': (0, 7, 11, 12, 16, 23), 'q2_invariance_set': (0, 7, 11, 12, 16, 23), 'detB_invariance_set': (0, 7, 11, 12, 16, 23), 'invariance_sets_are_the_stabiliser': True, 'axis': (1, 1, 1), 'span_coefficients': ((2*sqrt(6)/9, 2*sqrt(6)/9), (2/3, 2/3)), 'in_invariant_span': True, 'invariant_quadric_dimension_s3': 2, 'invariant_quadric_dimension_o': 1}
+symbol twist_count_order4: 4
+symbol twisted_block_is_gauged_block_up_to_sign: True
+symbol twisted_conjugation_identity: True
+symbol twisted_symbol_is_gauged_symbol: True
+symbol twisted_symbol_moves: True
+timings_ms: {'authority': 477, 'group': 12213, 'census': 1369, 'covariance': 6005, 'union': 60286, 'witness': 4018, 'branches': 85946, 'symbol': 4211}  elapsed_ms: 174531
+[PASS] A-1: FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree
+[PASS] A-2: PARENT PIN IS THE BLOCK 215 TIP, an ancestor of HEAD, with its note and runner content-bound by blob
+[PASS] A-3: STALE PARENT (the Block 214 tip) is a real ancestor carrying NEITHER Block 215 artifact; machinery imported; inputs readable
+[PASS] B-1: NOTHING REGISTERED, NOTHING ADOPTED: six imposed objects, zero registered, zero adopted
+[PASS] B-2: NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied
+[PASS] B-3: THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)
+[PASS] B-4: NO CELL, NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED, AND NO METRIC IS SUPPLIED: 'one metric's cone' names Block 213's statement only
+[PASS] B-5: THE WORDS COVARIANCE, CONE, CELL, LOCUS AND METRIC ARE SCOPED; six readings enumerated, none licensed; no continuum, no spacetime cone
+[PASS] C-1: THE TWO 64-CELL INDEXINGS AGREE: Block 213's FACES and Block 211's GAUGE_FACE_ORDER are the same declared tuple (tx0, ty0, xy0, tx1, ty1, xy1); both predicates are evaluated from the sign dictionary
+[PASS] C-2: THE 16 STAR-PATTERN CELLS REPRODUCE BLOCK 215's G-5 RULE (the declared masks, four per gauge class, the checker's list) AND BLOCK 213's COINCIDENCE CENSUS REPRODUCES LITERAL FOR LITERAL (48 + 4 x 4 cells; rule A and rule B masks declared)
+[PASS] C-3: THE COVARIANCE AT THE 16 CELLS, RE-MEASURED: the shear-alive twisted-O line is the star line at every star cell (one component), exactly one S3_body keeps both shears alive strictly there with the star line; at the all-plus control the line is the diagonal and no S3 keeps the shears alive
+[PASS] C-4: THE WITNESSES ARE BLOCK 211's OWN SOLVES: at every rule-A cell the transported curve point solves Block 211's six-face system with the four parameters free, is on the curve and on both ties, has both shears nonzero and is positive definite; every union witness is positive definite
+[PASS] D-1: THE M_oo LEMMA AT SYMBOLIC FACE SIGNS: the onsite H0 is the cell; the odd-odd block of M carries exactly Block 214's three entries, no shear, no volume, no face sign, no D07; its coefficient ideal is the star line; the block identity holds at generic symbolic blocks; det M = det B^2 on the line with the multiple symbolic at every witness
+[PASS] D-2: THE NECESSITY HALF IS MEASURED, NOT ASSERTED FROM THE IDENTITY: at all 26 positive-definite witnesses (W1's moduli at the 16 star cells, the all-plus control and the flat cell; the curve moduli over QQ(sqrt 6) at the 8 rule-A cells) the radical of the coefficient ideal of det M - det B^2 is exactly the star line
+[PASS] D-3: ONE WITNESS IN EVERY GAUGE CLASS AMONG THE 16: the class representatives are the declared masks and each carries a rational union witness
+[PASS] E-1: THE INTERSECTION WITH BLOCK 213's COINCIDENCE CELLS IS ALL 16: the star-pattern cells ARE the coincidence-curve cells; rule A iff (P_tx, P_ty, P_xy) = (+, -, +), rule B iff (-, +, -), and that pattern is -E_i E_j = E_k, the star's pair signs
+[PASS] E-2: THE POSITIVE SUBSET IS ALL 8 RULE-A CELLS, four in each mixed gauge class; the 8 rule-B star cells lie in the (+,+) and (-,-) classes, 3 face flips from the nearest rule-A cell
+[PASS] F-1: THE COVARIANT WITNESS EXISTS AT EVERY ONE OF THE 8 RULE-A CELLS: positive definite, its strict stabiliser IS an S3_body (orders 1,2,2,2,3,3) so both shears are alive without any gauge, the star line is its parameter locus with no forced condition, and the cell with the parameters on the line is preserved
+[PASS] F-2: ONE METRIC'S CONE AT THE COVARIANT WITNESS: the two readings are proportional (mu = 32/27 in class (+,-), 27/32 in class (-,+)), the graded cone is one quadric squared, and det M = c (k^T G1 k)^4 on the star line with the multiple symbolic, c = 64/81 and 9/16 -- for every line multiple, and by the D07 congruence for every D07
+[PASS] G-1: THE BRANCHES ON THE COVARIANT LINE at L+- and L-+ are the declared table: with the multiple symbolic all four pencil branches are k-free constants times k^T G1 k; at lam = 1/4 the constants {1, 128/99, 16/11 x2} and {1, 108/119, 144/119 x2}; with D07 = 1/4 the 0-form constant alone moves (128/119, 12/11)
+[PASS] G-2: THE TWO RESCALINGS: the line multiple rescales the top-form and transverse constants by 1/(1 - lam^2/(v0 v1)) (v0 v1 = 3/4, 8/9; 12/11 and 128/119 at lam = 1/4) and D07 rescales the 0-form constant by 1/(1 - D07^2 v1/v0) (v1/v0 = 9/8, 4/3; 128/119 and 12/11 at D07 = 1/4) -- Block 214's 128/119 re-measured on the covariant line
+[PASS] G-3: THE D07 CONGRUENCE AT SYMBOLIC FACE SIGNS AND SYMBOLIC MODULI: U^T M U = M|_{D07 = 0} with U = I - (D07/D3) E_70, the H0 shift is -D07^2 v1 on the (0,0) entry and nothing else; holds at every star cell
+[PASS] G-4: THE SYMBOL UNDER S3 AND UNDER A TWISTED ROTATION: Block 213's identity holds at every witness; the two quadrics and det B are invariant under kappa -> R kappa for exactly the strict S3; each quadric lies in the 2-dimensional S3-invariant space (the O-invariant space is 1-dimensional; the flat quadrics are |k|^2); the four body-diagonal axes occur; a twisted rotation maps det M to the gauged raising part's symbol (det B up to the twisted lift's sign) and det M moves
+[PASS] H-1: SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213, 214 and 215
+[PASS] H-2: THE INSTANCE SCOPE IS ENUMERATED: six restrictions
+[PASS] I-1: THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY
+[PASS] I-2: NO nsimplify, NO float literal, NO float call in this runner's source
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
+N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, CONE, CELL, LOCUS AND METRIC ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its 64 face-sign cells and its four free parameters, Block 213's coincidence census and curve witnesses, Block 214's principal part and plane, Block 215's lift and star-pattern cells, and Block 105's assemblies are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; 'ONE METRIC'S CONE' NAMES BLOCK 213'S EXACT STATEMENT det B = c (k^T G1 k)^2 AND NOTHING PHYSICAL; NO CELL, NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.\nper_site: The two 64-cell indexings (Block 213's FACES, Block 211's GAUGE_FACE_ORDER) are the same tuple (tx0, ty0, xy0, tx1, ty1, xy1) and both predicates are re-evaluated from the sign dictionary; Block 213's Groebner census reproduces literal for literal; Block 215's twisted-O line is the star line and exactly one S3_body keeps both shears alive strictly at every one of the 16 star-pattern cells, the diagonal and no alive S3 at the all-plus control; every witness used is Block 211's own solve and positive definite.\nper_mode: THE M_oo LEMMA: at SYMBOLIC face signs the odd-odd block of the onsite principal part is (D16 + D25) kt, (D34 - D16) kx, -(D25 + D34) ky with no shear, no volume, no face sign and no D07, so its coefficient ideal is the star line at every cell and det M = det B^2 there by the block identity det [[A, B], [B^T, 0]] = det(B)^2 (verified at generic symbolic blocks); THE NECESSITY HALF: the radical of the coefficient ideal of det M - det B^2 in (D16, D25, D34) is exactly (D16 - D34, D25 + D34) at all 26 positive-definite witnesses -- W1's moduli at the 16 star cells, at the all-plus control and at the flat cell, and Block 213's curve moduli over QQ(sqrt 6) at the 8 rule-A cells; at least one witness in each of the four gauge classes among the 16.\nper_block: THE CENSUS: Block 213's 16 coincidence-curve cells ARE Block 215's 16 star-pattern cells -- rule A (S1 = -E S0 E) iff (P_tx, P_ty, P_xy) = (+, -, +), rule B iff (-, +, -), because P_f = -+E_i E_j = +-E_k and Block 213's E = diag(1, -1, 1) is the star's pair-sign pattern; the intersection is all 16, the positive subset all 8 rule-A cells (four in each mixed class), the 8 rule-B star cells 3 face flips from the nearest rule-A cell. THE COVARIANT WITNESS: at each of the 8 rule-A cells Block 213's curve point transported to the cell is positive definite, strictly S3-covariant with both shears alive (its strict stabiliser IS an S3_body, the star line its parameter locus, preserved on the line), the readings proportional with mu = 32/27 or 27/32, the graded cone one quadric squared, and det M = c (k^T G1 k)^4 on the star line with the multiple symbolic (c = 64/81, 9/16): ONE METRIC'S CONE FOR EVERY LINE MULTIPLE AND EVERY D07.\nlattice_wide: THE BRANCHES ON THE COVARIANT LINE at L+- and L-+: all four pencil branches are k-free constants times k^T G1 k -- {1, (32/27)/(1 - lam^2/(v0 v1)), (4/3)/(1 - lam^2/(v0 v1)) twice} at L+- with v0 v1 = 3/4 and {1, (27/32)/(1 - lam^2/(v0 v1)), (9/8)/(1 - lam^2/(v0 v1)) twice} at L-+ with v0 v1 = 8/9, the line multiple rescaling the top-form and transverse constants and D07 the 0-form constant alone (128/119 at L+-, 12/11 at L-+ at D07 = 1/4); the D07 congruence U^T M U = M|_{D07 = 0} holds at symbolic face signs with the H0 shift -D07^2 v1. THE SYMBOL: Block 213's identity det B = D3 (k^T D1 k)(k^T E adj(D2) E k) holds at every witness; both quadrics and det B are invariant under kappa -> R kappa for EXACTLY the strict S3, each quadric lies in the two-dimensional S3-invariant space span(|k|^2, (n . k)^2), the O-invariant space is one-dimensional (the flat cell's |k|^2), and a twisted rotation maps det M to the symbol of the GAUGED raising part E' D E' (det B up to the twisted lift's sign), never to itself.\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under the group THEN at the 16 cells the parameters lie on the star line and the cone is the union of the readings' cones there; the antecedent is a reading. OPEN: the overlap assembly at the 16 cells; the necessity half symbolically in the moduli; the pencil at the other six rule-A cells; the bench; no dynamics, continuum or gravity is supplied.\nRESULT: AT EVERY ONE OF THE 16 STAR-PATTERN CELLS THE UNION LOCUS OF THE CONE IS THE STAR LINE, THE LINE COVARIANCE SELECTS THERE WITH THE SHEARS ALIVE; THE 16 CELLS ARE EXACTLY BLOCK 213'S 16 COINCIDENCE CELLS AND EACH OF THE 8 POSITIVE ONES CARRIES A STRICTLY S3-COVARIANT POSITIVE-DEFINITE WITNESS WITH ONE METRIC'S CONE FOR EVERY LINE MULTIPLE AND EVERY D07; THE SYMBOL IS EXACTLY S3-INVARIANT. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-215 STAND; Block 215's REOPEN item 2 is ANSWERED at the 16 cells as a conditional, in the affirmative: covariance and the cone agree there with the shears alive. Fable primary seat; Opus refuting checker PASS-NO-BLOCKER (two editorial corrections applied), folded.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero.
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

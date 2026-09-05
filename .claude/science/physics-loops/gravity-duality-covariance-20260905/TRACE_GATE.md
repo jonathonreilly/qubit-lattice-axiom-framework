@@ -1,11 +1,11 @@
-# Trace gate — block 215 (close)
+# Trace gate — block 216 (close)
 
 ```yaml
 trace_class: upstream_support
 target_claim_id: null
-target_blocker_text: "A framework principle prefers the plane D16 = D34 = −D25 (onsite) or s = 0 (overlap). The cone would then be Block 213's union everywhere on the box, and Block 213's coincidence theorem would hold verbatim there."
+target_blocker_text: "The union locus is computed at a cell where the twisted line is the star line and found to be that line: covariance and the cone would then agree there with the shears alive — new content."
 source_of_blocker_text: handoff
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "ANSWERED for the axiom's named symmetry, as a conditional: the plane is the star line of the lane's Hodge star; strict proper-cubic covariance prefers it only with a shear killed (C3, S3) or the flat cell (T, O); twisted covariance keeps the shears and prefers a sign line that is the star line exactly at the 16 cells whose face signs carry the star's pattern (= the strictly S3-covariant curved cells); D07 is free; the overlap sum is never forced by twisted covariance; the antecedent (that the cell form inherits the rule's covariance) stays a reading with three unsupplied items. Downstream consumer: block 216 — at the 16 cells, does Block 214's cone dichotomy meet covariance with the shears alive (the union locus there; the intersection with Block 213's coincidence cells); then the gravity constraint quotient, unreached."
+next_trace_action: "ANSWERED at the 16 cells, as a conditional and in the affirmative: the union locus is the star line at every star-pattern cell (sufficiency a lemma at every cell, necessity measured at 26 witnesses); the 16 cells are Block 213's 16 coincidence cells and the 8 positive ones carry strictly S3-covariant positive-definite witnesses with one metric's cone for every line multiple and every D07; the symbol is exactly S3-invariant. The antecedent stays a reading. Downstream consumer: block 217 — the other assembly at the same cells (the overlap fold's s = 0 locus, its cone and its stabiliser at the rule-A witnesses) and the bench dispersion at a covariant witness; then the gravity constraint quotient, unreached."
 ```

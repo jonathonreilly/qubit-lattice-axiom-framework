@@ -796,14 +796,10 @@ def measure_smallk(cells: dict, bench: dict) -> dict:
     g1_m = b213.metric_candidates(cells["witness zero"])[0].applyfunc(sp.radsimp)
     g1_tt = sp.radsimp(g1_m[0, 0])
     facts["g1_tt_witness"] = g1_tt
-    constants = []
-    for ratio, power, _ in b216.BRANCH_TABLE[("L+-", "line 1/4")][0]:
-        constants += [sp.Rational(ratio)] * power
-    predicted = tuple(sorted(((sp.radsimp(g1_tt * c), 2 * constants.count(c) // 1) for c in set(constants)), key=lambda t: t[0]))
-    predicted = tuple((value, sum(2 for c in constants if sp.radsimp(g1_tt * c) == value) // 2) for value, _ in predicted)
+    predicted = tuple(sorted(((sp.radsimp(g1_tt * sp.Rational(ratio)), power)
+                              for ratio, power, _ in b216.BRANCH_TABLE[("L+-", "line 1/4")][0]), key=lambda t: t[0]))
     bench_multiset = bench["table"][("witness line", "onsite", "pencil")]["multiset"]
-    facts["witness_multiset_is_g1tt_times_constants"] = bench_multiset == ((0, 8),) + tuple((v, 2 * n // 2 * 2 // 2) for v, n in predicted) \
-        and bench_multiset is not None
+    facts["witness_multiset_is_g1tt_times_constants"] = bench_multiset is not None and bench_multiset == ((0, 8),) + predicted
     facts["predicted_nonzero"] = predicted
     # the overlap Bloch fold at the bench's nonzero point versus the fold at s = 0, at the witness
     rules = b213.overlap_rules(cells["witness line"], b209.CORNERS, 3)
@@ -814,7 +810,7 @@ def measure_smallk(cells: dict, bench: dict) -> dict:
         b213.overlap_rules(cells["witness zero"], b209.CORNERS, 3), (sp.I, 1, 1), 3)).applyfunc(sp.expand)) == 0
     # the onsite cone at kappa = e_t is a number: det M(e_t) = c G1_tt^4 (Block 216's constant), no zero
     h0, m, _ = b214.principal_part(cells["witness line"], "onsite")
-    det_et = sp.radsimp(b214.ff_det(m.subs({KT: 1, KX: 0, KY: 0}), (), algebraic=True))
+    det_et = sp.radsimp(m.subs({KT: 1, KX: 0, KY: 0}).det(method="berkowitz"))
     facts["onsite_cone_at_et"] = sp.radsimp(det_et / g1_tt ** 4)
     return facts
 
@@ -866,3 +862,287 @@ def measure() -> Facts:
     axiom_text = (ROOT / AXIOM_PATH).read_text(encoding="utf-8") if (ROOT / AXIOM_PATH).is_file() else ""
     note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
     return Facts(authority, group, census, fold, loci, cone, bench, smallk, axiom_text, note_text, timings)
+
+
+# ---------------------------------------------------------------------------
+# THE DECLARED LITERALS -- every claim is a constant compared against a
+# measurement; a mutation rewrites exactly one claim.
+# ---------------------------------------------------------------------------
+RULE_A_MASKS = (2, 11, 16, 25, 38, 47, 52, 61)                  # = Block 216's RULE_A_MASKS
+FOLD_DIAGONAL = "(v0 + 3*v1)*(v0*v1 + 1)/(8*v0*v1)"               # h0 = (v0 + 3 v1 + 3/v0 + 1/v1)/8, Block 213's
+FOLD_COUPLING_LITERALS = ("-(g0*s_tx0*v0*v1 + g1*s_tx1)/(4*v0)",  # 2 h_f, h_f = -(s_f0 v1 g0 + s_f1 g1/v0)/8
+                          "-(g0*s_ty0*v0*v1 + g1*s_ty1)/(4*v0)",
+                          "-(g0*s_xy0*v0*v1 + g1*s_xy1)/(4*v0)")
+FOLD_COUPLING_COUNT = 12                                          # four two-flip pairs per face
+FOLD_ZERO_FREE_SYMBOLS = ("g0", "g1", "s_tx0", "s_tx1", "s_ty0", "s_ty1", "s_xy0", "s_xy1", "v0", "v1")
+BENCH_MOMENTA = (("1", "1", "1"), ("I", "1", "1"))                 # Block 213's bench_momenta((4,2,2))
+ONSITE_STABILISER_CLASS = "S3_body"
+OVERLAP_STRICT_FEASIBLE = (0,)                                    # the identity alone, at every s
+OVERLAP_TWISTED_CLASSES = ("D4_face",)
+OVERLAP_TWISTED_ORDERS = (8,)
+OVERLAP_TWISTED_AXES = (((1, 0, 0),),)                            # the x axis: the face with the odd sign product is ty
+COMMON_CLASSES = ("C2_edge",)
+FORCED_BY_ORDER = ((2, (("g0",), ("g0*v0*v1 + g1",), ("g1",))),
+                   (2, (("g0*v0*v1 + g1",), ("g0*v0*v1 - g1",))),
+                   (3, (("g0",), ("g1",))))
+FORCED_UNION = ("g0", "g0*v0*v1 + g1", "g0*v0*v1 - g1", "g1")
+SHEAR_RELATIONS_ON_CURVE = {(1, -1): ((sp.Rational(3, 4), sp.Rational(-1, 4)),),
+                            (-1, 1): ((sp.Rational(7, 9), sp.Rational(1, 9)),)}
+UNION_LOCUS = (("s",),)
+DET_DEGREES_S = ((4, 0),)
+LOCI_WITNESS_COUNT = 10
+W1_TWISTED_CLASS = "O"
+W1_STRICT_FEASIBLE = (0,)
+FLAT_STRICT_ALL_S_CLASS = "D4_face"
+FLAT_STRICT_ONLY_AT_ZERO_COUNT = 16
+FLAT_TWISTED_CLASS = "O"
+DET_M_SHAPES = ((((2, 4, 4, 4), 2),),)                            # one irreducible factor, degree 2 in s and 4 in kappa, squared
+DET_B_ZERO_SHAPES_RULE_A = (((2, 1), (2, 1)),)
+DET_B_ZERO_SHAPE_W1 = ((2, 1), (2, 1))
+DET_B_ZERO_SHAPE_FLAT = ((2, 2),)
+OVERLAP_CONE_COEFFICIENTS = {                                     # (c_xx, |c_tx|, |c_ty|, |c_xy|, c_yy), kt^2 monic
+    (1, -1): ((sp.Rational(59701, 57109), sp.Rational(24516, 57109), sp.Rational(2988, 57109), sp.Rational(24516, 57109), sp.Integer(1)),),
+    (-1, 1): ((sp.Rational(64961, 61889), sp.Rational(27664, 61889), sp.Rational(2192, 61889), sp.Rational(27664, 61889), sp.Integer(1)),),
+}
+R5_MULTISET = ((0, 8), (1, 8))
+WITNESS_ONSITE_PENCIL = ((0, 8), (sp.Rational(9, 8), 2), (sp.Rational(16, 11), 2), (sp.Rational(18, 11), 4))
+WITNESS_OVERLAP_FORM = ((0, 8), (sp.Rational(36481, 55296), 4), (sp.Rational(89401, 55296), 4))
+W1_OVERLAP_FORM = ((0, 8), (sp.Rational(116281, 147456), 4), (sp.Rational(4844401, 3686400), 4))   # = Block 214's OVERLAP_FORM_W1
+FLAT_ONSITE_PENCIL = ((0, 8), (1, 2), (sp.Rational(16, 15), 6))
+WITNESS_ONSITE_FORM_SHAPE = ((1, 8, (1, 0)), (4, 2, (55296, -388672, 698656, -422145, 69984)))
+W1_ONSITE_PENCIL_SHAPE = ((1, 2, (15, -16)), (1, 8, (1, 0)), (3, 2, (4801335, -18293776, 22913024, -9437184)))
+W1_ONSITE_FORM_SHAPE = ((1, 8, (1, 0)), (4, 2, (129600, -647676, 1086353, -711440, 147456)))
+BENCH_CHARPOLY_COUNT = 16
+G1_TT_WITNESS = sp.Rational(9, 8)
+PREDICTED_NONZERO = ((sp.Rational(9, 8), 2), (sp.Rational(16, 11), 2), (sp.Rational(18, 11), 4))
+BLOCH_FOLD_DIFFERS_ENTRIES = 16
+ONSITE_CONE_AT_ET = sp.Rational(64, 81)                            # Block 216's c at pi0 = +1
+SCOUT_GRADE_FENCE = ("scout-grade finite exact linear algebra on one cell form, "
+                     "not a spacetime and not a dynamics")
+SCOUT_GRADE_ONLY = True
+INSTANCE_SCOPE = (
+    "one cell form: Block 211's family at the 8 rule-A star-pattern cells with Block 216's curve witnesses, the all-plus W1 and flat cells as controls",
+    "two assemblies measured (onsite through Block 216's facts, overlap here); neither decided; two readings on the bench, neither selected",
+    "the overlap parameter s symbolic for the loci and the cone; the bench at the numeric line point (1/4, -1/4, 1/4), D07 = 0, and at zero parameters",
+    "one bench, (4,2,2), at one covariant witness (L+-'s cell, mask 2), one all-plus control and the flat cell; no other extent, witness or point",
+    "the covariance notion: Block 215's (E_R R) H (E_R R)^T = H on the folded H0, twisted over its 64 sign vectors or strict; no other twist",
+    "no continuum, no light cone, no dispersion law, no metric of anything physical; 'one metric's cone' and 'non-Hodge pair' name Block 213's statements only",
+)
+INSTANCE_SCOPE_COUNT = 6
+
+N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY AND BENCH ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its 64 face-sign cells and its four free parameters, Block 213's census, curve witnesses and (4,2,2) bench, Block 214's principal part under both assemblies, Block 215's lift and sign vectors, Block 216's 16 cells and 8 covariant witnesses, and Block 105's assemblies are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H ON THE FOLDED H0 AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; 'ONE METRIC'S CONE' AND 'NON-HODGE PAIR' NAME BLOCK 213'S EXACT POLYNOMIAL STATEMENTS AND NOTHING PHYSICAL; 'BENCH' NAMES SIXTEEN EXACT EIGENVALUES OF ONE FINITE MATRIX; NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED.\\nper_site: THE FOLD LEMMA at SYMBOLIC face signs and moduli: the overlap H0 depends on the four parameters only through s = D07 + D16 + D25 + D34 at every cell, its parity block is (s/4) P111, it is linear in s, and at s = 0 it is h0 I with h0 = (v0 + 3 v1)(v0 v1 + 1)/(8 v0 v1) plus the twelve two-flip couplings -(s_f0 g0 v0 v1 + s_f1 g1)/(4 v0), one magnitude per face; at the flat cell both assemblies give H = I at zero parameters and the fold is I + (s/4) P111; the overlap Bloch fold at the bench's nonzero point z = (i, 1, 1) is parameter-free at symbolic everything.\\nper_mode: THE LOCI AT THE 8 RULE-A WITNESSES: the onsite strict stabiliser is Block 216's S3_body; the overlap fold's strict stabiliser is the identity alone at every s, its twisted stabiliser a D4_face of order 8 about the x axis for EVERY s (no s is forced), the S3_body is not inside it, and the two assemblies share exactly one twisted C2_edge; THE SHEAR RELATION at symbolic moduli under the cell's own S3_body: the order-3 elements force g0 = 0 and g1 = 0, the order-2 elements force g0 v0 v1 + g1 = 0 with g0 = g1 = 0 or with g0 v0 v1 - g1 = 0 -- no shear-alive strict locus exists, and on the curve g0 v0 v1 + g1 = 3/4, g0 v0 v1 - g1 = -1/4 (pi0 = +1) and 7/9, 1/9 (pi0 = -1), so the curve violates every variant; THE UNION LOCUS in s is exactly s = 0 at all 10 witnesses (det M of degree 4 in s, det B s-free); the all-plus W1 fold is twisted-O-covariant for every s with a trivial strict stabiliser, the flat fold strictly D4_face-covariant for every s and under the other 16 rotations at s = 0 only.\\nper_block: THE OVERLAP CONE at every rule-A witness: det M(s) is ONE irreducible polynomial of degree 2 in s and 4 in kappa, SQUARED, over QQ(sqrt 6); at s = 0 it is det B^2 with det B = Q+ Q- a pair of DISTINCT rational quadrics related by ky -> -ky, kt^2 + ky^2 + (59701/57109) kx^2 with |c_tx| = |c_xy| = 24516/57109, |c_ty| = 2988/57109 (pi0 = +1) and 64961/61889, 27664/61889, 2192/61889 (pi0 = -1), neither quadric proportional to the onsite k^T G1 k: NOT ONE METRIC'S CONE, NOT THE ONSITE CONE -- Block 213's non-Hodge pair, now at the covariant cells; the same shapes at the all-plus W1, one quadric squared at the flat cell.\\nlattice_wide: THE BENCH (4,2,2), sixteen exact degree-16 charpolys over QQ(sqrt 6) with Bloch union = direct at every one: at L+-'s cell on the line point the onsite pencil multiset is {0 x8, 9/8 x2, 16/11 x2, 18/11 x4} = G1_tt (9/8) times Block 216's four branch constants {1, 128/99, 16/11 x2}, the onsite form lam^8 times an irreducible quartic squared, the overlap form {0 x8, 36481/55296 x4, 89401/55296 x4}, the overlap pencil R5's {0 x8, 1 x8}; at the all-plus W1 control the onsite pencil is lam^8 (15 lam - 16)^2 times an irreducible cubic squared, the overlap form Block 214's {116281/147456 x4, 4844401/3686400 x4}; the overlap charpolys at the line point EQUAL those at zero parameters; THE SMALL-k STRUCTURE: the onsite pencil bench charpoly is EXACTLY lam^8 times the charpoly of (H0^-1 M(e_t))^2 at the witness, the control and the flat cell -- the bench reads the principal part at one direction kappa = e_t, where the cone is the number c G1_tt^4 (c = 64/81) and its shape is invisible; the identity fails for the form reading and for the overlap assembly, whose Bloch fold at z = (i, 1, 1) differs from H0 in 16 entries and sees no parameter.\\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under the group THEN under the overlap assembly at the covariant cells the fold's covariance is the twisted D4_face with s free, never the strict S3 with the shears alive; the antecedent is a reading. THE TWO ASSEMBLIES DIFFER IN COVARIANCE AT THE COVARIANT CELLS, AS A MEASURED FACT AND NOT AS A SELECTOR. OPEN: the assembly, the reading, the other seven rule-A cells on the bench, symbolic parameters on the bench, any other extent; no dynamics, continuum or gravity is supplied.\\nRESULT: AT THE 8 COVARIANT CELLS THE OVERLAP FOLD IS NEVER STRICTLY S3-COVARIANT WITH THE SHEARS ALIVE -- ITS STRICT STABILISER IS TRIVIAL, ITS TWISTED STABILISER A D4_face FOR EVERY s, ITS UNION LOCUS s = 0 AND ITS CONE A NON-HODGE PAIR OF DISTINCT QUADRICS THAT IS NOT THE ONSITE CONE; THE (4,2,2) BENCH AT A COVARIANT WITNESS READS THE ONSITE PENCIL CONSTANTS AT ONE DIRECTION EXACTLY AND DOES NOT SEE THE OVERLAP SUM. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-216 STAND; Block 216's REOPEN item 2 is ANSWERED at the 8 rule-A cells as a conditional, in the negative for the overlap assembly: its s = 0 locus does not meet covariance there the way the onsite plane does. Fable primary seat; refuting checker PENDING.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero."
+
+
+def scope_certificate(text: str) -> dict:
+    return {"n5_verbatim": N5_FENCE in text}
+
+
+def build_claims(mutation: str) -> dict:
+    claims = {
+        "current_main": CURRENT_MAIN, "parent_commit": PARENT_COMMIT,
+        "registered": (), "gravity_supplied": False, "covariance_inherited": False,
+        "assembly_decided": False, "cell_selected": False, "metric_supplied": False,
+        "rule_a_masks": RULE_A_MASKS, "onsite_stabiliser_class": ONSITE_STABILISER_CLASS,
+        "fold_coupling_literals": FOLD_COUPLING_LITERALS, "flat_control": True,
+        "union_locus": UNION_LOCUS, "overlap_strict_feasible": OVERLAP_STRICT_FEASIBLE,
+        "overlap_twisted_classes": OVERLAP_TWISTED_CLASSES, "forced_by_order": FORCED_BY_ORDER,
+        "curve_violates_relations": True,
+        "det_b_zero_shapes_rule_a": DET_B_ZERO_SHAPES_RULE_A, "overlap_cone_is_onsite_cone": False,
+        "det_m_shapes": DET_M_SHAPES,
+        "witness_onsite_pencil": WITNESS_ONSITE_PENCIL, "all_agree": True, "w1_overlap_form": W1_OVERLAP_FORM,
+        "onsite_pencil_identity": True, "bloch_fold_parameter_free": True,
+        "scout_grade": SCOUT_GRADE_FENCE, "instance_scope_count": INSTANCE_SCOPE_COUNT,
+        "n5_verbatim": True, "float_absent": True,
+    }
+    flips = {
+        "stale_main_authority": ("current_main", STALE_MAIN),
+        "stale_parent_authority": ("parent_commit", STALE_PARENT_COMMIT),
+        "claim_objects_registered": ("registered", ("the overlap fold's D4",)),
+        "claim_gravity_supplied": ("gravity_supplied", True),
+        "claim_covariance_inherited": ("covariance_inherited", True),
+        "claim_assembly_decided": ("assembly_decided", True),
+        "claim_cell_selected": ("cell_selected", True),
+        "claim_metric_supplied": ("metric_supplied", True),
+        "break_cell_census": ("rule_a_masks", RULE_A_MASKS[:4]),
+        "break_witness_reproduction": ("onsite_stabiliser_class", "C3_body"),
+        "break_fold_sees_sum": ("fold_coupling_literals", FOLD_COUPLING_LITERALS[:2]),
+        "break_flat_control": ("flat_control", False),
+        "break_union_locus_s": ("union_locus", ((),)),
+        "break_strict_stabiliser": ("overlap_strict_feasible", (0, 23)),
+        "break_twisted_stabiliser": ("overlap_twisted_classes", ("S3_body",)),
+        "break_shear_relation": ("forced_by_order", FORCED_BY_ORDER[:2]),
+        "claim_curve_satisfies_shear_relation": ("curve_violates_relations", False),
+        "break_overlap_cone_pair": ("det_b_zero_shapes_rule_a", (((2, 2),),)),
+        "claim_overlap_cone_is_onsite_cone": ("overlap_cone_is_onsite_cone", True),
+        "break_overlap_cone_symbolic_s": ("det_m_shapes", ((((2, 2, 2, 2), 4),),)),
+        "break_bench_multisets": ("witness_onsite_pencil", R5_MULTISET),
+        "break_bloch_equals_direct": ("all_agree", False),
+        "break_bench_control": ("w1_overlap_form", R5_MULTISET),
+        "break_bench_reads_principal_part": ("onsite_pencil_identity", False),
+        "break_bloch_fold_sees_parameters": ("bloch_fold_parameter_free", False),
+        "break_scout_grade_fence": ("scout_grade", "a spacetime and a dynamics"),
+        "break_instance_scope": ("instance_scope_count", 2),
+        "drop_n5_fence": ("n5_verbatim", False),
+        "break_float_absence": ("float_absent", False),
+    }
+    if mutation:
+        key, value = flips[mutation]
+        claims[key] = value
+    return claims
+
+
+def build_checks(facts: Facts, claims: dict) -> Checks:
+    checks = Checks()
+    au = facts.authority
+    checks.check("A-1", "FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree",
+                 au.fixed_authority and claims["current_main"] == CURRENT_MAIN)
+    checks.check("A-2", "PARENT PIN IS THE BLOCK 216 TIP, an ancestor of HEAD, with its note and runner content-bound by blob",
+                 au.parent_pin_is_commit and au.parent_is_ancestor and au.parent_artifact_blobs and claims["parent_commit"] == PARENT_COMMIT)
+    checks.check("A-3", "STALE PARENT (the Block 215 tip) is a real ancestor carrying NEITHER Block 216 artifact; machinery imported; inputs readable",
+                 au.stale_is_real_ancestor and au.stale_carries_neither_artifact and au.machinery_import_landed
+                 and au.inputs_readable == len(AUDIT_INPUT_PATHS) - 1)
+    checks.check("B-1", "NOTHING REGISTERED, NOTHING ADOPTED: six imposed objects, zero registered, zero adopted",
+                 len(IMPOSED_OBJECTS) == 6 and claims["registered"] == REGISTERED_OBJECTS == () and ADOPTED_OBJECTS == ())
+    checks.check("B-2", "NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied",
+                 not claims["gravity_supplied"] and not GRAVITY_SUPPLIED_CLAIMED and len(UNSUPPLIED_GRAVITY_STRUCTURES) == 9)
+    checks.check("B-3", "THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)",
+                 AXIOM_COVARIANCE_CLAUSE in facts.axiom_text and not claims["covariance_inherited"] and not COVARIANCE_INHERITED_CLAIMED)
+    checks.check("B-4", "NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED, AND NO METRIC IS SUPPLIED: the difference between the assemblies is measured, not a selector",
+                 not claims["cell_selected"] and not CELL_SELECTED_CLAIMED and not claims["assembly_decided"] and not ASSEMBLY_DECIDED_CLAIMED
+                 and not claims["metric_supplied"] and not METRIC_SUPPLIED_CLAIMED and not SUBGROUP_SELECTED_CLAIMED
+                 and not PARAMETER_VALUE_SELECTED_CLAIMED and not READING_SELECTED_CLAIMED)
+    checks.check("B-5", "THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY AND BENCH ARE SCOPED; six readings enumerated, none licensed; no continuum, no light cone, no spacetime cone",
+                 len(SCOPED_HEADLINE_WORDS) == 5 and len(READINGS) == 6 and not READINGS_LICENSED_CLAIMED
+                 and not CONTINUUM_LIMIT_CLAIMED and not LIGHT_CONE_CLAIMED and not CONE_IS_SPACETIME_CONE_CLAIMED)
+    ce, fo, lo, co, be, sk = facts.census, facts.fold, facts.loci, facts.cone, facts.bench, facts.smallk
+    checks.check("C-1", "THE CELLS ARE BLOCK 216's: the census reproduces its 8 rule-A masks (2, 11, 16, 25, 38, 47, 52, 61) among its 16 star-pattern cells, indexings agreeing",
+                 ce["indexing_agrees"] and ce["rule_a_masks"] == claims["rule_a_masks"] == RULE_A_MASKS == b216.RULE_A_MASKS
+                 and ce["star_masks"] == b216.STAR_MASKS and lo["rule_a_count"] == 8)
+    checks.check("C-2", "THE WITNESSES ARE BLOCK 216's: at every rule-A cell the transported curve point has the S3_body as onsite strict stabiliser, both shears nonzero, v0 v1 = 3/4 or 8/9",
+                 claims["onsite_stabiliser_class"] == ONSITE_STABILISER_CLASS and lo["onsite_stabiliser_is_s3_everywhere"]
+                 and all(lo["table"][k]["shears_nonzero"] and lo["table"][k]["volume_product"] in (sp.Rational(3, 4), sp.Rational(8, 9))
+                         for k in lo["table"] if isinstance(k, int)))
+    checks.check("C-3", "THE FOLD LEMMA AT SYMBOLIC FACE SIGNS AND MODULI: the overlap H0 sees the parameters only through s at every cell, its parity block is (s/4) P111, it is linear in s, and at s = 0 it is h0 I plus twelve two-flip couplings -(s_f0 g0 v0 v1 + s_f1 g1)/(4 v0), one magnitude per face",
+                 fo["fold_sees_sum_only_symbolic_signs"] and fo["parity_block_is_sum_over_four_p111"] and fo["fold_linear_in_s"]
+                 and fo["fold_diagonal"] == FOLD_DIAGONAL and fo["fold_diagonal_scalar"] and fo["coupling_count"] == FOLD_COUPLING_COUNT
+                 and fo["coupling_literals"] == claims["fold_coupling_literals"] == FOLD_COUPLING_LITERALS
+                 and fo["couplings_are_two_flip_pairs"] and fo["fold_zero_free_symbols"] == FOLD_ZERO_FREE_SYMBOLS)
+    checks.check("C-4", "THE FLAT CONTROL: both assemblies give H = I at zero parameters (Block 213's D-1) and the flat fold is I + (s/4) P111",
+                 claims["flat_control"] and fo["flat_both_assemblies_identity"] and fo["flat_fold_is_identity_plus_sum_p111"])
+    checks.check("D-1", "THE UNION LOCUS IN s IS EXACTLY s = 0 at all 10 witnesses (the 8 rule-A curve witnesses over QQ(sqrt 6), the all-plus W1 and the flat cell): det M has degree 4 in s and det B is s-free",
+                 lo["union_locus_everywhere"] == claims["union_locus"] == UNION_LOCUS and lo["det_degrees_s"] == DET_DEGREES_S
+                 and lo["witness_count"] == LOCI_WITNESS_COUNT)
+    checks.check("D-2", "THE STRICT STABILISER OF THE OVERLAP FOLD IS TRIVIAL at every rule-A witness for every s (the identity is the only feasible rotation); at the all-plus W1 control it is trivial too",
+                 lo["overlap_strict_trivial_everywhere"] and claims["overlap_strict_feasible"] == OVERLAP_STRICT_FEASIBLE
+                 and all(lo["table"][k]["strict_feasible"] == OVERLAP_STRICT_FEASIBLE for k in lo["table"] if isinstance(k, int))
+                 and lo["w1_strict_feasible"] == W1_STRICT_FEASIBLE)
+    checks.check("D-3", "THE TWISTED STABILISER OF THE OVERLAP FOLD IS A D4_face OF ORDER 8 ABOUT THE x AXIS FOR EVERY s at every rule-A witness, the S3_body is not inside it, the two assemblies share exactly one twisted C2_edge; the all-plus W1 fold is twisted-O for every s; the flat fold is strictly D4_face for every s and strictly covariant under the other 16 only at s = 0, twisted-O for every s",
+                 lo["overlap_twisted_classes"] == claims["overlap_twisted_classes"] == OVERLAP_TWISTED_CLASSES
+                 and lo["overlap_twisted_is_all_s"] and lo["overlap_twisted_orders"] == OVERLAP_TWISTED_ORDERS
+                 and lo["overlap_twisted_axes"] == OVERLAP_TWISTED_AXES and not lo["s3_in_twisted_anywhere"]
+                 and lo["common_classes"] == COMMON_CLASSES and lo["w1_twisted_class"] == W1_TWISTED_CLASS
+                 and lo["flat_strict_all_s_class"] == FLAT_STRICT_ALL_S_CLASS
+                 and lo["flat_strict_only_at_zero_count"] == FLAT_STRICT_ONLY_AT_ZERO_COUNT and lo["flat_twisted_class"] == FLAT_TWISTED_CLASS)
+    checks.check("D-4", "THE SHEAR RELATION AT SYMBOLIC MODULI under each cell's own S3_body: the order-3 elements force g0 = g1 = 0, the order-2 elements force g0 v0 v1 + g1 = 0 with g0 = g1 = 0 or with g0 v0 v1 - g1 = 0 -- the same at all 8 cells; no shear-alive strict locus exists",
+                 lo["forced_by_order"] == (claims["forced_by_order"],) and claims["forced_by_order"] == FORCED_BY_ORDER
+                 and lo["forced_union"] == (FORCED_UNION,))
+    checks.check("D-5", "THE CURVE VIOLATES EVERY VARIANT: g0 v0 v1 + g1 = 3/4 and g0 v0 v1 - g1 = -1/4 where pi0 = +1, 7/9 and 1/9 where pi0 = -1, both shears nonzero -- the overlap fold at a rule-A witness is NOT strictly S3-covariant, and the two assemblies differ in covariance at the covariant cells",
+                 claims["curve_violates_relations"] and lo["curve_violates_every_relation"]
+                 and lo["shear_relations_on_curve"] == SHEAR_RELATIONS_ON_CURVE)
+    checks.check("E-1", "THE OVERLAP CONE AT s = 0 IS A NON-HODGE PAIR at every rule-A witness: det M(0) = det B(0)^2, det B(0) = Q+ Q- with two DISTINCT rational quadrics related by ky -> -ky, the declared coefficient magnitudes per class; the same shape at the all-plus W1, one quadric squared at the flat cell",
+                 co["det_m_zero_is_det_b_squared_everywhere"] and co["det_b_zero_shapes_rule_a"] == claims["det_b_zero_shapes_rule_a"] == DET_B_ZERO_SHAPES_RULE_A
+                 and co["pair_distinct_everywhere"] and co["pair_ky_flip_everywhere"] and co["quadrics_rational_everywhere"]
+                 and co["coefficients_per_class"] == OVERLAP_CONE_COEFFICIENTS and co["det_b_zero_shape_w1"] == DET_B_ZERO_SHAPE_W1
+                 and co["det_b_zero_shape_flat"] == DET_B_ZERO_SHAPE_FLAT)
+    checks.check("E-2", "THE OVERLAP CONE IS NOT THE ONSITE CONE: at no rule-A witness is det B(0) proportional to (k^T G1 k)^2, and neither quadric is proportional to k^T G1 k -- not one metric's cone",
+                 not claims["overlap_cone_is_onsite_cone"] and not co["overlap_cone_is_onsite_cone_anywhere"]
+                 and not co["quadric_proportional_to_onsite_anywhere"])
+    checks.check("E-3", "THE OVERLAP CONE AT SYMBOLIC s IS ONE IRREDUCIBLE POLYNOMIAL SQUARED, of degree 2 in s and 4 in kappa, at all 10 witnesses -- the pair merges into an irreducible quartic off s = 0",
+                 co["det_m_shapes"] == claims["det_m_shapes"] == DET_M_SHAPES)
+    checks.check("F-1", "THE BENCH AT THE COVARIANT WITNESS (L+-'s cell, line point 1/4): onsite pencil {0 x8, 9/8 x2, 16/11 x2, 18/11 x4}, onsite form lam^8 times an irreducible quartic squared, overlap form {0 x8, 36481/55296 x4, 89401/55296 x4}, overlap pencil R5's",
+                 be["multisets"][("witness line", "onsite", "pencil")] == claims["witness_onsite_pencil"] == WITNESS_ONSITE_PENCIL
+                 and be["shapes"][("witness line", "onsite", "form")] == WITNESS_ONSITE_FORM_SHAPE
+                 and be["multisets"][("witness line", "overlap", "form")] == WITNESS_OVERLAP_FORM
+                 and be["multisets"][("witness line", "overlap", "pencil")] == R5_MULTISET)
+    checks.check("F-2", "BLOCH UNION = DIRECT BENCH at every one of the 16 degree-16 charpolys (Block 213's E-gate over QQ(sqrt 6) and QQ(sqrt 6, i))",
+                 claims["all_agree"] and be["all_agree"] and be["all_degree_16"] and be["charpoly_count"] == BENCH_CHARPOLY_COUNT)
+    checks.check("F-3", "THE CONTROLS ON THE BENCH: at the all-plus W1 the onsite pencil is lam^8 (15 lam - 16)^2 times an irreducible cubic squared, the onsite form lam^8 times an irreducible quartic squared, the overlap form Block 214's OVERLAP_FORM_W1; at the flat cell the onsite pencil is {0 x8, 1 x2, 16/15 x6}; the overlap pencil is R5's everywhere",
+                 be["shapes"][("W1 line", "onsite", "pencil")] == W1_ONSITE_PENCIL_SHAPE and be["shapes"][("W1 line", "onsite", "form")] == W1_ONSITE_FORM_SHAPE
+                 and be["multisets"][("W1 line", "overlap", "form")] == claims["w1_overlap_form"] == W1_OVERLAP_FORM == b214.OVERLAP_FORM_W1
+                 and be["multisets"][("flat line", "onsite", "pencil")] == FLAT_ONSITE_PENCIL and be["overlap_pencil_is_r5_everywhere"])
+    checks.check("G-1", "THE BENCH READS THE PRINCIPAL PART AT ONE DIRECTION, EXACTLY: the bench momenta are z = (1,1,1) and (i,1,1); the onsite pencil bench charpoly equals lam^8 times the charpoly of (H0^-1 M(e_t))^2 at the witness, the control and the flat cell; at the witness that is G1_tt = 9/8 times Block 216's four branch constants; the onsite cone at e_t is the number 64/81 G1_tt^4; the identity fails for the form reading and for the overlap assembly -- no continuum reading",
+                 fo["bloch_momenta"] == BENCH_MOMENTA and claims["onsite_pencil_identity"] and sk["onsite_pencil_identity_everywhere"]
+                 and sk["identity_fails_form_and_overlap"] and sk["g1_tt_witness"] == G1_TT_WITNESS
+                 and sk["witness_multiset_is_g1tt_times_constants"] and sk["predicted_nonzero"] == PREDICTED_NONZERO
+                 and sk["onsite_cone_at_et"] == ONSITE_CONE_AT_ET)
+    checks.check("G-2", "THE BENCH DOES NOT SEE THE OVERLAP SUM: the overlap Bloch fold at z = (i,1,1) is parameter-free at symbolic signs, moduli and parameters, differs from H0 in 16 entries at the witness, and the overlap bench charpolys at the line point equal those at zero parameters",
+                 claims["bloch_fold_parameter_free"] and fo["bloch_fold_at_i_parameter_free"] and sk["bloch_fold_parameter_free_at_witness"]
+                 and sk["bloch_fold_differs_from_h0_entries"] == BLOCH_FOLD_DIFFERS_ENTRIES and be["overlap_line_equals_zero"])
+    checks.check("H-1", "SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213, 214, 215 and 216",
+                 claims["scout_grade"] == SCOUT_GRADE_FENCE == b216.SCOUT_GRADE_FENCE and SCOUT_GRADE_ONLY)
+    checks.check("H-2", "THE INSTANCE SCOPE IS ENUMERATED: six restrictions",
+                 claims["instance_scope_count"] == len(INSTANCE_SCOPE) == 6)
+    sc = scope_certificate(facts.note_text)
+    checks.check("I-1", "THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY",
+                 bool(facts.note_text) and sc["n5_verbatim"] == claims["n5_verbatim"] and claims["n5_verbatim"])
+    checks.check("I-2", "NO nsimplify, NO float literal, NO float call in this runner's source",
+                 nsimplify_occurrences() == 0 and float_literal_occurrences() == 0 and float_call_sites() == 0 and claims["float_absent"])
+    return checks
+
+
+def report_measured(facts: Facts, elapsed_ns: int) -> None:
+    print("== BLOCK 217: the other assembly at the covariant cells, and the bench -- measured facts ==")
+    print(f"authority: {facts.authority}")
+    for name in ("fold", "loci", "cone", "bench", "smallk"):
+        section = getattr(facts, name)
+        for key in sorted(section, key=str):
+            value = section[key]
+            if isinstance(value, dict):
+                for inner in sorted(value, key=str):
+                    item = value[inner]
+                    if isinstance(item, dict):
+                        item = {k: v for k, v in item.items() if k != "charpoly"}
+                    print(f"{name} {key} {inner}: {item}")
+            else:
+                print(f"{name} {key}: {value}")
+    print(f"timings_ms: {facts.timings}  elapsed_ms: {elapsed_ns // 1_000_000}")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mutation", choices=MUTATIONS, default="")
+    parser.add_argument("--list-mutations", action="store_true")
+    arguments = parser.parse_args()
+    if arguments.list_mutations:
+        for name in MUTATIONS:
+            print(name)
+        return 0
+    mutation = arguments.mutation
+    started_ns = time.monotonic_ns()
+    # Every measurement happens once, before any mutation flag is consulted.
+    facts = measure()
+    elapsed_ns = time.monotonic_ns() - started_ns
+    checks = build_checks(facts, build_claims(""))
+    if mutation:
+        raw = checks.families()
+        checks = build_checks(facts, build_claims(mutation))
+        mutated = checks.families()
+        target = MUTATION_GATE[mutation]
+        changed = {family for family in raw if raw[family] != mutated[family]}
+        if changed - {target} or mutated[target]:
+            raise AssertionError("mutation did not fail exactly its own gate")
+    report_measured(facts, elapsed_ns)
+    checks.report()
+    print(N5_FENCE)
+    return checks.finish()
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except SystemExit:
+        raise
+    except Exception as error:
+        print(f"[FAIL] INTERNAL-EXCEPTION: {type(error).__name__}: {error}")
+        print("TOTAL: PASS=0 FAIL=1")
+        raise

@@ -1161,6 +1161,16 @@ def shared_battery_native_history_check() -> str:
     coherence_distance = float(np.linalg.norm(coherent_reduced - coherent_ideal))
     require(coherence_distance > 1.0e-3, "fixture does not witness conditional coherence change")
     battery_density = reduced_battery_from_vector(coherent_first, 32, battery_dimension)
+    explicit_battery_density = np.zeros((battery_dimension, battery_dimension), dtype=complex)
+    coefficient_rows = coherent_first.reshape((32, battery_dimension))
+    for system_row in coefficient_rows:
+        explicit_battery_density = explicit_battery_density + np.outer(
+            system_row, system_row.conj()
+        )
+    close(battery_density, explicit_battery_density, "battery partial trace conjugation")
+    close(battery_density, battery_density.conj().T, "battery reduced Hermiticity")
+    require(abs(float(np.trace(battery_density).real) - 1.0) <= 4.0e-9, "battery reduced trace")
+    require(max_abs(battery_density.imag) > 1.0e-3, "complex partial-trace control is inactive")
     battery_purity = float(np.trace(battery_density @ battery_density).real)
     require(battery_purity < 1.0 - 1.0e-4, "first event did not retain system-battery correlation")
 

@@ -211,6 +211,26 @@ rule forbids importing or calling the block runner, and the mutation census is t
 verify from the primary's raw outputs. Not attempted. The `break_*` mutation names are therefore
 unexercised here; every family they guard was instead re-derived independently above.
 
+### CK-13 — the flat control and the (4,2,2) consistency gate  — CONFIRMS
+
+Note lines 194-197, verbatim:
+> `at the witness reproduces its landed `{0 ×8, 9/8 ×2, 16/11 ×2, 18/11 ×4}` with`
+> `Bloch = direct (`C-2`, mutation `break_witness_reproduction`); the flat cell at`
+> `zero parameters gives R5's `{0 ×8, 1 ×16, 2 ×8}` = Block 213's`
+> ``expected_flat_multiset((4,4,2))` under both assemblies and both readings`
+
+Computed on my own benches, direct `32 x 32` charpolys: the flat cell at zero parameters gives
+`{0 x8, 1 x16, 2 x8}` under **all four** constructions (onsite/overlap x form/pencil), equal to
+`b213.expected_flat_multiset((4,4,2))`. My own `(4,2,2)` bench at the witness, onsite pencil, gives
+`{0 x8, 9/8 x2, 16/11 x2, 18/11 x4}` = `b217.WITNESS_ONSITE_PENCIL`. Both gates hold.
+
+### CK-14 — what I did NOT test  — COULD NOT TEST (scope/time)
+
+Not exercised: the note's full count of twenty degree-32 charpolys (I checked the Bloch = direct
+gate on the two the spec named plus the four flat ones and the `(4,2,2)` gate, seven in all); the
+27-mutation census (the supervisor's, by instruction); the authority/blob gates `A`-`B` and the
+`N5` byte gate `I-1`; the axiom-registry read. No contradiction was found in anything I did reach.
+
 ---
 
 ### One defect found, and it was mine

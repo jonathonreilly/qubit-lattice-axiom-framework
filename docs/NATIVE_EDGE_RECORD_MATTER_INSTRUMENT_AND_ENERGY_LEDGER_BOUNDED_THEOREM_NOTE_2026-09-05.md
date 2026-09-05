@@ -322,22 +322,30 @@ bound how much matter remains on connected, propagating components.
 Energy spectral distributions here are model diagnostics; no physical
 energy-readout compiler is derived merely by calculating them.
 
-For a supplied degree-six regular bipartite graph with all $|a_e|=t$,
+For a supplied bipartite graph of maximum degree at most $d$ with all $|a_e|=t$,
 let $h$ be the one-particle hopping matrix and initialize a sharp
 half-filled ground sea in the allowed even sector. Its paired spectrum,
-$\|h\|\le6t$, and $\operatorname{tr}h^2=6Mt^2$ imply
-$E_0=-\operatorname{tr}|h|/2\le-Mt/2$; zero modes may be filled to
-reach half number. With $L=3M$, $V_0=0$ and $K<L$, Chebyshev gives
+$\|h\|\le dt$, and $\operatorname{tr}h^2=2Lt^2$ imply
+$E_0=-\operatorname{tr}|h|/2\le-Lt/d$; here
+$|\lambda|\ge\lambda^2/(dt)$ for every eigenvalue, and zero modes
+may be filled to reach half number. With $V_0=0$ and $K<L$, Chebyshev gives
 
 \[
 \mathbb P(H_K\ge0)
-\le\min\left(1,\frac{4K}{M^2(1-K/L)^2}\right).
+\le\min\left(1,\frac{d^2K}{(L-K)^2}\right).
 \tag{12}
 \]
 
-At fixed recorded-edge fraction below one, number density is exactly
-$1/2$ and negative energy density concentrates in a growing sequence of
-these supplied graphs. This does not prove transport, uniform component
+This has a physical finite-volume realization without a periodic quotient.
+For open cubic boxes of even side $\ell\ge2$, $M=\ell^3$,
+$L=3\ell^2(\ell-1)$ and $d=6$ are valid. Thus
+$E_0/M\le-(t/2)(1-1/\ell)$. At fixed recorded-edge fraction below one,
+number density is exactly $1/2$, the mean energy density stays bounded
+away from zero on its negative side, and $V_K/M^2$ tends to zero.
+For an abstract degree-six regular graph, $L=3M$ recovers the equivalent
+bound $4K/[M^2(1-K/L)^2]$; such a finite graph is not asserted to be
+an open nearest-neighbor subgraph of $\mathbb Z^3$.
+This does not prove transport, uniform component
 density, a stationary state, or renewal of available edge sites.
 
 ## Theorem 4: shared energy apparatus and exact comparison

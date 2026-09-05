@@ -26,13 +26,13 @@
     "observable_principle_from_axiom_note",
     "universal_gr_a1_invariant_section_note"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.959,
+  "load_bearing_score": 8.129,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -184,6 +184,6 @@
   },
   "runner_path": "scripts/frontier_universal_gr_isotropic_schur_localization.py",
   "title": "Universal GR Isotropic Schur Localization on `PL S^3 x R`",
-  "transitive_descendants": 175,
+  "transitive_descendants": 139,
   "verdict_rationale": null
 }

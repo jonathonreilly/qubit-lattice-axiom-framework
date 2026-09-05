@@ -22,16 +22,8 @@
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "wave_direct_dm_h025_high_band_boundary_note",
-    "wave_direct_dm_h025_low_band_retention_note",
-    "wave_direct_dm_h025_two_point_synthesis_note",
-    "wave_direct_dm_h025_fam2_seed0_boundary_note",
-    "wave_direct_dm_h025_fam2_seed0_control_note",
-    "wave_direct_dm_h025_fam2_seed1_control_note",
-    "wave_direct_dm_h025_fam2_two_point_synthesis_note"
-  ],
-  "direct_in_degree": 3,
+  "deps": [],
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -40,7 +32,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.959,
+  "load_bearing_score": 3.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -166,6 +158,6 @@
   },
   "runner_path": "scripts/wave_direct_dm_portability_batch.py",
   "title": "Wave Direct-dM Portability Batch",
-  "transitive_descendants": 10,
+  "transitive_descendants": 5,
   "verdict_rationale": null
 }

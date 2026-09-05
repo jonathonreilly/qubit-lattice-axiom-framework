@@ -26,8 +26,7 @@
     "causal_propagating_field_live_packet_note_2026-06-05",
     "causal_field_portability_note",
     "moving_source_retarded_portability_note",
-    "moving_source_cross_family_note",
-    "moving_source_cross_family_replay_note"
+    "moving_source_cross_family_note"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",

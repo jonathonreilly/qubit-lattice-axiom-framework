@@ -27,13 +27,13 @@
     "yt_color_projection_correction_note",
     "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.807,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -291,6 +291,6 @@
   },
   "runner_path": "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py",
   "title": "Y_T Source-Higgs Pole-Row Normalization No-Go",
-  "transitive_descendants": 6,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

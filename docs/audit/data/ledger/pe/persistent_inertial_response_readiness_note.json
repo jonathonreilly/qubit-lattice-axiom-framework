@@ -32,13 +32,13 @@
     "mesoscopic_surrogate_backreaction_note",
     "mesoscopic_surrogate_multistage_note"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 1,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 5.907,
+  "load_bearing_score": 5.144,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -343,7 +343,7 @@
   },
   "runner_path": null,
   "title": "Persistent Inertial-Response Readiness Note",
-  "transitive_descendants": 29,
+  "transitive_descendants": 24,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

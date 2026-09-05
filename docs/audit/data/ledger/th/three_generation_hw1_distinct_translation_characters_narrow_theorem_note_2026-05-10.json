@@ -25,13 +25,13 @@
   "deps": [
     "site_phase_cube_shift_intertwiner_note"
   ],
-  "direct_in_degree": 16,
+  "direct_in_degree": 15,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 17.704,
+  "load_bearing_score": 16.93,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -207,6 +207,6 @@
   },
   "runner_path": "scripts/audit_companion_three_generation_hw1_distinct_characters_exact.py",
   "title": "Three-Generation `hw=1` Distinct Translation Characters Narrow Theorem",
-  "transitive_descendants": 833,
+  "transitive_descendants": 689,
   "verdict_rationale": null
 }

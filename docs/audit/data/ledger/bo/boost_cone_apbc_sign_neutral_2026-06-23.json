@@ -25,7 +25,6 @@
   "deps": [
     "record_tick_signature_neutral_2026-06-23",
     "lattice_nn_light_cone_note",
-    "axiom_first_microcausality_lieb_robinson_note_2026-05-17",
     "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
     "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16",
     "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",

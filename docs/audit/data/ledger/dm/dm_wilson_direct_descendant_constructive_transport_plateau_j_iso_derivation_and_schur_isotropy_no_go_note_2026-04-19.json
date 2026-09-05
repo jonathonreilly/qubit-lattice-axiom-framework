@@ -23,8 +23,6 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "dm_wilson_direct_descendant_constructive_transport_plateau_schur_spectral_isotropy_selector_note_2026-04-19",
-    "dm_wilson_direct_descendant_constructive_transport_plateau_normalized_schur_determinant_selector_note_2026-04-19",
     "dm_wilson_direct_descendant_transport_fiber_spectral_completion_theorem_note_2026-04-19",
     "dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_note_2026-04-19"
   ],

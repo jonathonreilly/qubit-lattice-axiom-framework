@@ -22,12 +22,7 @@
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "source_resolved_generated_discriminator_probe_note",
-    "source_resolved_generated_wavefield_transfer_v2_note",
-    "source_resolved_geometry_rule_repair_note",
-    "source_resolved_radical_geometry_probe_note"
-  ],
+  "deps": [],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",

@@ -26,7 +26,7 @@
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20",
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -76,11 +76,11 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
-  "max_descendant_status": "meta",
-  "max_descendant_status_rank": 25,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "7af71d9843ac57ed4b9a6076dc164c7e56f130bd7ba549f68d252c7f418ad419",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_CLOSURE_ENDPOINT_NOTE_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
@@ -140,6 +140,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20.py",
   "title": "Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3d+1` Line Closure Endpoint",
-  "transitive_descendants": 1,
+  "transitive_descendants": 0,
   "verdict_rationale": null
 }

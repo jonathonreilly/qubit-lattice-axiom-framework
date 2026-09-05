@@ -28,13 +28,13 @@
     "graph_first_su3_integration_note",
     "native_gauge_closure_note"
   ],
-  "direct_in_degree": 22,
+  "direct_in_degree": 13,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 20.57,
+  "load_bearing_score": 15.774,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -353,6 +353,6 @@
   },
   "runner_path": "scripts/frontier_r_base_group_theory_derivation.py",
   "title": "R_base = 31/9 Group-Theory Derivation Theorem",
-  "transitive_descendants": 759,
+  "transitive_descendants": 618,
   "verdict_rationale": null
 }

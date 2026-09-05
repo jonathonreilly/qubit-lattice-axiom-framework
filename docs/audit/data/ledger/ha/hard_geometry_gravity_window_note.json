@@ -23,7 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 1,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -40,11 +40,11 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
-  "max_descendant_status": "meta",
-  "max_descendant_status_rank": 25,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "d9ebe10929687e3d7ed6b157d33dcc9834f0da8b2d5feac53ec4de8976de5595",
   "note_path": "docs/HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md",
   "notes_for_re_audit_if_any": null,
@@ -282,6 +282,6 @@
   },
   "runner_path": "scripts/hard_geometry_gravity_window.py",
   "title": "Hard-Geometry Direct Gravity Window Note",
-  "transitive_descendants": 1,
+  "transitive_descendants": 0,
   "verdict_rationale": null
 }

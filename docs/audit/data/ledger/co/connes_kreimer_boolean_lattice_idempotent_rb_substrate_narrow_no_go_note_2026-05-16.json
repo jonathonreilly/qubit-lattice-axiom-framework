@@ -23,7 +23,6 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10",
     "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
     "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
     "plaquette_self_consistency_note",

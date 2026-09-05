@@ -19,19 +19,19 @@
   "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "cl3_color_automorphism_theorem"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.555,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -454,7 +454,7 @@
   },
   "runner_path": "scripts/gellmann_completeness_check.py",
   "title": "Gell-Mann Completeness: {T^a} Is an R-Basis for su(3)",
-  "transitive_descendants": 46,
+  "transitive_descendants": 1,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "meta",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "high",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -61,13 +61,13 @@
     "neutrino_sole_axiom_full_closure_boundary_note",
     "neutrino_retained_observable_bounds_theorem_note_2026-04-24"
   ],
-  "direct_in_degree": 9,
+  "direct_in_degree": 4,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 10.172,
+  "load_bearing_score": 6.459,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -88,6 +88,6 @@
   },
   "runner_path": null,
   "title": "Neutrino Retained Status Note (2026-04-16)",
-  "transitive_descendants": 50,
+  "transitive_descendants": 21,
   "verdict_rationale": null
 }

@@ -31,13 +31,13 @@
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2"
   ],
-  "direct_in_degree": 7,
+  "direct_in_degree": 6,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.228,
+  "load_bearing_score": 8.644,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": "scripts/cl3_exact_tier_path_integral_2026_05_07_exact.py",
   "title": "Path-Integral W1 Bounded-Tier Tightening Note",
-  "transitive_descendants": 52,
+  "transitive_descendants": 49,
   "verdict_rationale": null
 }

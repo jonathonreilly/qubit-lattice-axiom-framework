@@ -23,7 +23,6 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "gate_b_grown_wavefield_companion_note",
     "source_resolved_wavefield_green_pocket_note",
     "source_resolved_wavefield_escalation_note"
   ],

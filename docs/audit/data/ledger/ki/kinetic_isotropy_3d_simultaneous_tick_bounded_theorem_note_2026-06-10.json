@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "high",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -29,13 +29,13 @@
     "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
     "staggered_scheme_forced_by_one_qubit_per_site_locality_narrow_theorem_note_2026-06-06"
   ],
-  "direct_in_degree": 5,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.085,
+  "load_bearing_score": 4.322,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/kinetic_isotropy_3d_simultaneous_tick_2026_06_10.py",
   "title": "Kinetic-Isotropy 3D Simultaneous-Tick Bounded Theorem",
-  "transitive_descendants": 5,
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

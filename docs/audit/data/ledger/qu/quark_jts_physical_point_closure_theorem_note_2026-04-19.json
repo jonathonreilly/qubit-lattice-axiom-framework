@@ -19,20 +19,20 @@
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "migration_hint",
-  "criticality": "medium",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "quark_bimodule_lo_shell_normalization_theorem_note_2026-04-19",
     "quark_issr1_bicac_forcing_theorem_note_2026-04-19"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.024,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -132,6 +132,6 @@
   },
   "runner_path": "scripts/frontier_quark_jts_physical_point_closure_theorem.py",
   "title": "Quark JTS Physical-Point Closure Theorem",
-  "transitive_descendants": 45,
+  "transitive_descendants": 0,
   "verdict_rationale": null
 }

@@ -26,13 +26,13 @@
     "universal_qg_smooth_gravitational_global_solution_class_note",
     "universal_gr_discrete_global_closure_note"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.229,
+  "load_bearing_score": 6.992,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -249,7 +249,7 @@
   },
   "runner_path": "scripts/frontier_dark_energy_eos.py",
   "title": "Decoration: Numerical / Lattice / Evolution-Model Companion to the Retained Dark-Energy EOS Corollary",
-  "transitive_descendants": 74,
+  "transitive_descendants": 44,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

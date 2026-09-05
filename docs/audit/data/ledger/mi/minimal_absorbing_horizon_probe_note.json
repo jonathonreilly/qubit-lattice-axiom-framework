@@ -28,13 +28,13 @@
     "gate_b_nonlabel_connectivity_v1_joint_note",
     "gate_b_farfield_note"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.407,
+  "load_bearing_score": 4.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -227,6 +227,6 @@
   },
   "runner_path": "scripts/minimal_absorbing_horizon_probe.py",
   "title": "Minimal Absorbing Horizon Probe",
-  "transitive_descendants": 14,
+  "transitive_descendants": 7,
   "verdict_rationale": null
 }

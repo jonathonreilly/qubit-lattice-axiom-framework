@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "staggered_dirac_realization_gate_note_2026-05-03",
     "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -118,6 +118,6 @@
   },
   "runner_path": "scripts/frontier_species_bridge_minimum_decomposition_2026_06_13.py",
   "title": "The Species Bridge Decomposes into Derived Support + Two Vacuities + One C\u2083-Grade Contentless Identification: AC_\u03c6\u03bb(iii) in Minimum Form (Bounded Theorem)",
-  "transitive_descendants": 2,
+  "transitive_descendants": 0,
   "verdict_rationale": null
 }

@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.5,
+  "load_bearing_score": 4.307,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -63,6 +63,6 @@
   },
   "runner_path": "scripts/audit_companion_observable_principle_det_multiplicative_character_form_selection_2026_05_28.py",
   "title": "Observable Principle \u2014 `det` Unique by Multiplicative-Character Form Selection Narrow Theorem Note",
-  "transitive_descendants": 7,
+  "transitive_descendants": 6,
   "verdict_rationale": null
 }

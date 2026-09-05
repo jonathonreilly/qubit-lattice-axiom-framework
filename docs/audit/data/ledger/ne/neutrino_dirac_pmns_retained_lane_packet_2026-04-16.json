@@ -41,13 +41,13 @@
     "pmns_branch_conditioned_quadratic_sheet_closure_note",
     "pmns_right_polar_section_note"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 3,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 8.409,
+  "load_bearing_score": 7.255,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -68,6 +68,6 @@
   },
   "runner_path": "scripts/frontier_lepton_single_higgs_pmns_triviality.py",
   "title": "Neutrino Dirac / PMNS Retained Lane Packet (2026-04-16)",
-  "transitive_descendants": 84,
+  "transitive_descendants": 53,
   "verdict_rationale": null
 }

@@ -40,7 +40,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.672,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -61,6 +61,6 @@
   },
   "runner_path": "scripts/cl3_g_newton_weak_field_response_2026_05_10_gnewtonG3.py",
   "title": "G_Newton Weak-Field Response Form \u2014 Bounded Conditional Support (gnewtonG3 probe)",
-  "transitive_descendants": 50,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

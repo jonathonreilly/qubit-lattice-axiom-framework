@@ -23,9 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "erosion_exact_recurrence_path_product_threshold_obstruction_bounded_theorem_note_2026-06-12",
-    "erosion_mobius_derivative_chain_rule_law_bounded_theorem_note_2026-06-12",
-    "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12"
+    "erosion_exact_recurrence_path_product_threshold_obstruction_bounded_theorem_note_2026-06-12"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",

@@ -29,13 +29,13 @@
     "anomaly_forces_time_theorem",
     "hw1_second_order_return_shape_theorem_note"
   ],
-  "direct_in_degree": 30,
+  "direct_in_degree": 25,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 24.662,
+  "load_bearing_score": 21.884,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -107,6 +107,6 @@
   },
   "runner_path": "scripts/frontier_charged_lepton_observable_curvature.py",
   "title": "Charged-Lepton Mass Hierarchy and Koide's Relation on the Cl(3)/Z^3 Framework",
-  "transitive_descendants": 809,
+  "transitive_descendants": 667,
   "verdict_rationale": null
 }

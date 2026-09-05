@@ -25,7 +25,6 @@
   "deps": [
     "dm_wilson_direct_descendant_transport_fiber_spectral_completion_theorem_note_2026-04-19",
     "dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_note_2026-04-19",
-    "dm_wilson_direct_descendant_constructive_transport_plateau_normalized_schur_determinant_selector_note_2026-04-19",
     "dm_wilson_direct_descendant_constructive_transport_plateau_j_iso_derivation_and_schur_isotropy_no_go_note_2026-04-19",
     "dm_wilson_direct_descendant_constructive_transport_plateau_observable_affine_no_go_note_2026-04-19",
     "dm_wilson_direct_descendant_canonical_fiber_mixed_spectral_branch_weight_no_go_note_2026-04-19",

@@ -26,7 +26,7 @@
     "lensing_long_path_test_note",
     "lensing_beta_sweep_note"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -34,7 +34,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.144,
+  "load_bearing_score": 3.322,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -138,6 +138,6 @@
   },
   "runner_path": "scripts/lensing_adjoint_kernel_probe.py",
   "title": "Lensing Adjoint Kernel Probe \u2014 Why The Slope Is Not A Ray-Deflection Law",
-  "transitive_descendants": 49,
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

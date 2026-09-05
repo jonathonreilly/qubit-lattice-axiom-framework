@@ -25,11 +25,7 @@
   "deps": [
     "quark_route2_exact_readout_map_note_2026-04-19",
     "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
-    "quark_route2_e_center_lift_derivation_attempt_bounded_note_2026-06-12",
-    "quark_route2_rconn_typed_bridge_derivation_bounded_note_2026-06-12",
-    "quark_route2_qe_kappa_squared_covariance_sharper_no_go_narrow_note_2026-06-10",
     "quark_route2_qe_covariance_schur_quadratic_no_go_narrow_note_2026-06-14",
-    "quark_route2_qe_box_size_scan_closes_bulk_limit_hatch_narrow_theorem_note_2026-06-10",
     "minimal_axioms"
   ],
   "direct_in_degree": 0,

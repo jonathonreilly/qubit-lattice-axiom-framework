@@ -19,19 +19,19 @@
   "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "staggered_dirac_realization_gate_note_2026-05-03"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.555,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -257,6 +257,6 @@
   },
   "runner_path": "scripts/frontier_quark_bicac_endpoint_obstruction_theorem.py",
   "title": "Quark BICAC Endpoint Obstruction Theorem",
-  "transitive_descendants": 46,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

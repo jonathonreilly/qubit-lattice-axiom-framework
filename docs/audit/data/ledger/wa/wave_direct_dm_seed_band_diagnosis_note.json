@@ -23,16 +23,15 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "wave_direct_dm_portability_batch_note",
-    "wave_direct_dm_h025_two_point_synthesis_note"
+    "wave_direct_dm_portability_batch_note"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.0,
+  "load_bearing_score": 3.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -163,6 +162,6 @@
   },
   "runner_path": "scripts/wave_direct_dm_seed_band_diagnosis.py",
   "title": "Wave Direct-dM Seed-Band Diagnosis",
-  "transitive_descendants": 7,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

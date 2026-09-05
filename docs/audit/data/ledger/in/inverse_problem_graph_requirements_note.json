@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.807,
+  "load_bearing_score": 5.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -110,6 +110,6 @@
   },
   "runner_path": "scripts/inverse_problem_graph_requirements.py",
   "title": "Inverse Problem Graph Requirements Note",
-  "transitive_descendants": 27,
+  "transitive_descendants": 23,
   "verdict_rationale": null
 }

@@ -25,13 +25,13 @@
   "deps": [
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
   ],
-  "direct_in_degree": 8,
+  "direct_in_degree": 6,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.209,
+  "load_bearing_score": 7.644,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -430,6 +430,6 @@
   },
   "runner_path": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py",
   "title": "Observable-Principle P1 Bridge \u2014 Shannon/Khinchin External Narrow Bounded Note",
-  "transitive_descendants": 36,
+  "transitive_descendants": 24,
   "verdict_rationale": null
 }

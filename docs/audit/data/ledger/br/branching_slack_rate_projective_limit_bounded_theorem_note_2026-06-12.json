@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.5,
+  "load_bearing_score": 3.085,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -99,6 +99,6 @@
   },
   "runner_path": "scripts/frontier_branching_slack_rate_eps_2026_06_12.py",
   "title": "The Branching Slack Increases on the \u03b5 = 0.3/0.6/0.9 Grid and Its Per-Step Rate Trends to the Projective Endpoint (max |rate\u22121|: 0.81 \u2192 0.48 \u2192 0.014 \u2192 0.0036 \u2192 0.00015 Across \u03b5 = 0.3\u20260.99, With the \u03b5 = 1 Endpoint Exact): Near-Projective Branching Consumes the Budget Recordlessly (Bounded)",
-  "transitive_descendants": 7,
+  "transitive_descendants": 5,
   "verdict_rationale": null
 }

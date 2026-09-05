@@ -28,7 +28,7 @@
     "oh_schur_boundary_action_note",
     "anomaly_forces_time_fb_note_2026-05-17"
   ],
-  "direct_in_degree": 5,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -54,7 +54,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.655,
+  "load_bearing_score": 11.935,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -195,6 +195,6 @@
   },
   "runner_path": "scripts/frontier_s3_time_spacetime_tensor_primitive.py",
   "title": "Route 2 Spacetime Tensor Carrier Candidate on `PL S^3 x R`",
-  "transitive_descendants": 1139,
+  "transitive_descendants": 978,
   "verdict_rationale": null
 }

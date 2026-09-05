@@ -26,7 +26,7 @@
     "asymmetry_persistence_collapse_note",
     "asymmetry_persistence_joint_card_note"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -38,11 +38,11 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
-  "max_descendant_status": "meta",
-  "max_descendant_status_rank": 25,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "8264a24e2320068c2e41e62ef6cdbf7fe508261bea0cf6fe7a902e446ff12f06",
   "note_path": "docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md",
   "notes_for_re_audit_if_any": null,
@@ -301,6 +301,6 @@
   },
   "runner_path": "scripts/asymmetry_persistence_born_calibration.py",
   "title": "Asymmetry Persistence Born Calibration Note",
-  "transitive_descendants": 1,
+  "transitive_descendants": 0,
   "verdict_rationale": null
 }

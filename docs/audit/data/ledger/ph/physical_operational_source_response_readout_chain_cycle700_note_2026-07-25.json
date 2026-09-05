@@ -23,15 +23,8 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "physical_pair_kernel_minimal_position_extension_cycle698_note_2026-07-25",
-    "physical_content_pair_kernel_channel_census_cycle699_note_2026-07-25",
-    "physical_record_readout_carrier_three_way_split_cycle693_note_2026-07-25",
-    "physical_proper_cubic_covariance_ceiling_cycle690_note_2026-07-24",
-    "physical_direction_set_vs_triangulation_covariance_cycle695_note_2026-07-25",
-    "finite_source_insertion_algebra_carrier_label_support_cycle572_bounded_theorem_note_2026-07-22",
     "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
     "minimal_axioms",
-    "finite_regge_plaquette_scattering_diagnostics_cycle576_bounded_theorem_note_2026-07-22",
     "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
   ],
   "direct_in_degree": 8,

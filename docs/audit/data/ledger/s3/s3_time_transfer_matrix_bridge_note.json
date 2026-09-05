@@ -30,13 +30,13 @@
     "oh_schur_boundary_action_note",
     "anomaly_forces_time_fb_note_2026-05-17"
   ],
-  "direct_in_degree": 5,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.636,
+  "load_bearing_score": 11.804,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -176,6 +176,6 @@
   },
   "runner_path": "scripts/frontier_s3_time_transfer_matrix_bridge.py",
   "title": "`S^3` + Anomaly-Forced Time: Transfer-Matrix Bridge Candidate",
-  "transitive_descendants": 1124,
+  "transitive_descendants": 893,
   "verdict_rationale": null
 }

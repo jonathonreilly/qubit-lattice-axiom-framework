@@ -19,20 +19,20 @@
   "claim_type_author_hint_raw": "no_go",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "high",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25",
     "cl3_color_automorphism_theorem"
   ],
-  "direct_in_degree": 10,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.728,
+  "load_bearing_score": 6.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/frontier_dm_su3_gauge_loop_derivation_attempt.py",
   "title": "SU(3) Gauge-Loop Derivation of the 8/3 Enhancement -- Obstruction Note",
-  "transitive_descendants": 52,
+  "transitive_descendants": 17,
   "verdict_rationale": null
 }

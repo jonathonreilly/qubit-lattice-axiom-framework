@@ -27,13 +27,13 @@
     "gate_b_grown_distance_law_note",
     "gate_b_grown_joint_package_note"
   ],
-  "direct_in_degree": 6,
+  "direct_in_degree": 5,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.672,
+  "load_bearing_score": 7.785,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -206,6 +206,6 @@
   },
   "runner_path": "scripts/gate_b_weak_connectivity_harness.py",
   "title": "Gate B Weak-Connectivity Note",
-  "transitive_descendants": 50,
+  "transitive_descendants": 38,
   "verdict_rationale": null
 }

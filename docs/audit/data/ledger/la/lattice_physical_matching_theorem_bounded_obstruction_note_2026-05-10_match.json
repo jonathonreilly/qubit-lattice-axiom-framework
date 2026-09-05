@@ -23,7 +23,6 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "bridge_lanes_promotion_proposal_note_2026-05-10_lanes",
     "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
     "higgs_mass_from_axiom_note",
     "axiom_first_reflection_positivity_theorem_note_2026-04-29",

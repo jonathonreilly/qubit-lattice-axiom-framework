@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.822,
+  "load_bearing_score": 3.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1418,6 +1418,6 @@
   },
   "runner_path": "scripts/frontier_universal_gr_so3_isotypic_orbit_flat_narrow.py",
   "title": "SO(3) Isotypic Orbit-Flat Narrow Theorem on `Sym^2(R^4)`",
-  "transitive_descendants": 4,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

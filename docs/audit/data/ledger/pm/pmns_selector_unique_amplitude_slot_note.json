@@ -25,13 +25,13 @@
   "deps": [
     "pmns_selector_class_space_uniqueness_note"
   ],
-  "direct_in_degree": 10,
+  "direct_in_degree": 8,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.646,
+  "load_bearing_score": 13.362,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -177,7 +177,7 @@
   },
   "runner_path": "scripts/frontier_pmns_selector_unique_amplitude_slot.py",
   "title": "PMNS Selector Unique Amplitude Slot",
-  "transitive_descendants": 800,
+  "transitive_descendants": 657,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

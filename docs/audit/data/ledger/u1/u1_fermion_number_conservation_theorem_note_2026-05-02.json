@@ -19,20 +19,20 @@
   "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "axiom_first_lattice_noether_theorem_note_2026-04-29",
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.024,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -220,7 +220,7 @@
   },
   "runner_path": "scripts/u1_fermion_number_conservation_check.py",
   "title": "U(1) Fermion-Number Conservation from Cited Lattice Noether N2",
-  "transitive_descendants": 45,
+  "transitive_descendants": 0,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

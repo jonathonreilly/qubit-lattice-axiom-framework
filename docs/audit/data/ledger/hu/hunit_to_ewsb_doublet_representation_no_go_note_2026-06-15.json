@@ -26,13 +26,13 @@
     "yt_ward_identity_derivation_theorem",
     "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.5,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -286,7 +286,7 @@
   },
   "runner_path": "scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py",
   "title": "H_unit to EWSB Doublet Representation No-Go",
-  "transitive_descendants": 3,
+  "transitive_descendants": 2,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

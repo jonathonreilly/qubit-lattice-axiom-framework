@@ -30,13 +30,13 @@
     "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
     "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.085,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -204,6 +204,6 @@
   },
   "runner_path": "scripts/frontier_max_record_entropy_sector_blind_2026_06_15.py",
   "title": "Max-record-entropy is sector-blind: it cannot derive the Koide dial (narrow no-go)",
-  "transitive_descendants": 2,
+  "transitive_descendants": 0,
   "verdict_rationale": null
 }

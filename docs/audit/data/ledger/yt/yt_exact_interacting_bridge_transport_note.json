@@ -32,13 +32,13 @@
     "yt_bridge_action_invariant_note",
     "yt_bridge_moment_closure_note"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.615,
+  "load_bearing_score": 3.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -139,6 +139,6 @@
   },
   "runner_path": "scripts/frontier_yt_exact_interacting_bridge_transport.py",
   "title": "Exact Interacting Bridge Transport Note",
-  "transitive_descendants": 48,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

@@ -23,8 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "staggered_graph_portability_note",
-    "staggered_layered_gauge_engineering_note"
+    "staggered_graph_portability_note"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",

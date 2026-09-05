@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "needs_reaudit_after_invalidation",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "universal_qg_uv_finite_partition_note",
     "universal_qg_projective_schur_closure_note"
   ],
-  "direct_in_degree": 18,
+  "direct_in_degree": 12,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 16.209,
+  "load_bearing_score": 12.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -321,6 +321,6 @@
   },
   "runner_path": "scripts/frontier_universal_qg_canonical_refinement_net.py",
   "title": "Universal QG Canonical Geometric Refinement Net on `PL S^3 x R`",
-  "transitive_descendants": 147,
+  "transitive_descendants": 111,
   "verdict_rationale": null
 }

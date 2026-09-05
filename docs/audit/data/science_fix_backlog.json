@@ -6,22 +6,23 @@
   "by_verdict": {}
  },
  "archived_advisory": {
-  "total": 954,
+  "total": 862,
   "by_verdict": {
-   "audited_conditional": 721,
-   "audited_failed": 121,
+   "audited_conditional": 643,
+   "audited_failed": 110,
    "audited_numerical_match": 34,
-   "audited_renaming": 78
+   "audited_renaming": 75
   },
-  "unmapped_category_records": 302,
+  "unmapped_category_records": 287,
   "incomplete_records": 1
  },
  "evidence_repair": {
   "queue_available": true,
-  "total": 485,
+  "total": 422,
   "by_gate_family": {
-   "forensic_runner_cache_not_fresh": 422,
-   "forensic_n5_execution_certificate_incomplete": 49,
+   "forensic_runner_cache_not_fresh": 357,
+   "forensic_n5_execution_certificate_incomplete": 30,
+   "runner_declared_input_missing": 21,
    "runner_declared_inputs_invalid": 9,
    "forensic_n5_runner_missing": 5
   },

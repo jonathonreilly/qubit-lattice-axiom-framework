@@ -23,12 +23,9 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "wave_direct_dm_h025_fam3_seed0_control_note",
-    "wave_direct_dm_h025_fam3_seed1_control_note",
     "wave_direct_dm_h025_three_family_transfer_note",
     "wave_direct_dm_transfer_diagnostic_note",
-    "wave_direct_dm_seed_band_diagnosis_note",
-    "wave_direct_dm_next_widening_recommendation"
+    "wave_direct_dm_seed_band_diagnosis_note"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",

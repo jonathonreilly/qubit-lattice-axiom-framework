@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.858,
+  "load_bearing_score": 5.644,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -156,6 +156,6 @@
   },
   "runner_path": "scripts/gate_b_nonlabel_connectivity_v3.py",
   "title": "Gate B Non-Label Connectivity V3 Note",
-  "transitive_descendants": 28,
+  "transitive_descendants": 24,
   "verdict_rationale": null
 }

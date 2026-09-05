@@ -23,9 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-    "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
-    "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04"
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",

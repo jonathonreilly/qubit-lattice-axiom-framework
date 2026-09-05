@@ -34,13 +34,13 @@
     "planck_orientation_principle_bounded_note_2026-05-10_planckp3",
     "planck_from_structure_path_opening_meta_note_2026-05-10"
   ],
-  "direct_in_degree": 9,
+  "direct_in_degree": 5,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.587,
+  "load_bearing_score": 7.785,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -136,6 +136,6 @@
   },
   "runner_path": "scripts/frontier_planck_conditional_completion_audit.py",
   "title": "Planck-Scale Conditional Completion Note",
-  "transitive_descendants": 67,
+  "transitive_descendants": 38,
   "verdict_rationale": null
 }

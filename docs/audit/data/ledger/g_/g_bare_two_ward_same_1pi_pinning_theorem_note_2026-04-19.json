@@ -27,13 +27,13 @@
     "lepton_block_scalar_singlet_composite_uniqueness_d17_prime_theorem_note_2026-05-10",
     "yt_ward_identity_derivation_theorem"
   ],
-  "direct_in_degree": 12,
+  "direct_in_degree": 9,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 15.607,
+  "load_bearing_score": 13.82,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -347,7 +347,7 @@
   },
   "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
   "title": "Off-Surface Same-1PI Conditional Map and Residue-Normalization Obstruction for the Two-Ward `g_bare` Route",
-  "transitive_descendants": 779,
+  "transitive_descendants": 638,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

@@ -24,8 +24,7 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_note_2026-08-02",
-    "physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_note_2026-08-02",
-    "finite_regge_plaquette_scattering_diagnostics_cycle576_bounded_theorem_note_2026-07-22"
+    "physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_note_2026-08-02"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",

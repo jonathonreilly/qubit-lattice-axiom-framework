@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.67,
+  "load_bearing_score": 4.407,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -254,6 +254,6 @@
   },
   "runner_path": "scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py",
   "title": "Y_T EW Neutral-Projector Same-Surface Carrier Theorem",
-  "transitive_descendants": 17,
+  "transitive_descendants": 14,
   "verdict_rationale": null
 }

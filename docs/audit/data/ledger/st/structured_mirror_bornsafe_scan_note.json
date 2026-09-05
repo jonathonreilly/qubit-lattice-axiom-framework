@@ -23,7 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 2,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -33,7 +33,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.459,
+  "load_bearing_score": 3.67,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -555,6 +555,6 @@
   },
   "runner_path": "scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py",
   "title": "Structured Mirror Corrected Born Slice Note",
-  "transitive_descendants": 10,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

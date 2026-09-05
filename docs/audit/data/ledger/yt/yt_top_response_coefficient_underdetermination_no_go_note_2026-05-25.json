@@ -27,13 +27,13 @@
     "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
     "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.585,
+  "load_bearing_score": 3.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/frontier_yt_top_response_coefficient_underdetermination_no_go.py",
   "title": "Y_T Top-Response Coefficient Underdetermination No-Go",
-  "transitive_descendants": 5,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

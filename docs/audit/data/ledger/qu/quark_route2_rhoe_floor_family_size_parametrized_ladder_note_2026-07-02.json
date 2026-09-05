@@ -25,8 +25,7 @@
   "deps": [
     "quark_route2_honest_gravity_metric_rhoe_characterization_note_2026-07-02",
     "quark_route2_exact_readout_map_note_2026-04-19",
-    "tensor_support_center_excess_law_note",
-    "cte_rconn_spatial_tensor_color_bridge_is_a_cross_domain_coincidence_narrow_no_go_note_2026-06-08"
+    "tensor_support_center_excess_law_note"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",

@@ -23,8 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "bmv_entanglement_note_2026-04-11",
-    "bmv_threebody_note_2026-04-11"
+    "bmv_entanglement_note_2026-04-11"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",

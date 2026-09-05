@@ -19,20 +19,20 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.5,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -167,6 +167,6 @@
   },
   "runner_path": "scripts/frontier_koide_occupancy_kernel_coefficient_not_fixed_2026_06_12.py",
   "title": "Koide Occupancy Kernel Coefficient Not Fixed by the Retained Corner Measure",
-  "transitive_descendants": 7,
+  "transitive_descendants": 0,
   "verdict_rationale": null
 }

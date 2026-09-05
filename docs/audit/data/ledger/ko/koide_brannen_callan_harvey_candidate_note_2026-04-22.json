@@ -27,13 +27,13 @@
     "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
     "koide_brannen_phase_reduction_theorem_note_2026-04-20"
   ],
-  "direct_in_degree": 10,
+  "direct_in_degree": 6,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.56,
+  "load_bearing_score": 12.262,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -89,6 +89,6 @@
   },
   "runner_path": "scripts/frontier_koide_brannen_callan_harvey_candidate.py",
   "title": "Koide Brannen Callan-Harvey Candidate Note (2026-04-22)",
-  "transitive_descendants": 754,
+  "transitive_descendants": 613,
   "verdict_rationale": null
 }

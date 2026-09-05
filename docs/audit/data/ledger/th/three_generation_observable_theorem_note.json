@@ -30,13 +30,13 @@
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
     "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
   ],
-  "direct_in_degree": 104,
+  "direct_in_degree": 94,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 62.372,
+  "load_bearing_score": 57.091,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -388,6 +388,6 @@
   },
   "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
   "title": "Three-Generation Observable Theorem Note",
-  "transitive_descendants": 1324,
+  "transitive_descendants": 1090,
   "verdict_rationale": null
 }

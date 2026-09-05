@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.807,
+  "load_bearing_score": 3.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -118,6 +118,6 @@
   },
   "runner_path": "scripts/frontier_hubble_c1_a4_parity_gate_no_go.py",
   "title": "Lane 5 `(C1)` Gate \u2014 A4 Parity-Gate-from-A_min No-Go",
-  "transitive_descendants": 6,
+  "transitive_descendants": 5,
   "verdict_rationale": null
 }

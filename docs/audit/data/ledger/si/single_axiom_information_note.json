@@ -19,19 +19,19 @@
   "claim_type_author_hint_raw": "meta",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "high",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms_2026-04-11"
   ],
-  "direct_in_degree": 6,
+  "direct_in_degree": 3,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 8.644,
+  "load_bearing_score": 6.144,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -161,6 +161,6 @@
   },
   "runner_path": "scripts/frontier_single_axiom_information.py",
   "title": "Sparse Hermitian H + Hermitian-Exponentiation Readout + Locality Empirical Probe: Operational Reduction Note",
-  "transitive_descendants": 49,
+  "transitive_descendants": 24,
   "verdict_rationale": null
 }

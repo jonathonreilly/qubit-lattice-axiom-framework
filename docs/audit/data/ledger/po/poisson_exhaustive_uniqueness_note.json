@@ -27,13 +27,13 @@
     "poisson_self_gravity_loop_note",
     "self_consistency_forces_poisson_note"
   ],
-  "direct_in_degree": 11,
+  "direct_in_degree": 5,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 15.158,
+  "load_bearing_score": 11.916,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -357,6 +357,6 @@
   },
   "runner_path": "scripts/frontier_poisson_exhaustive_uniqueness.py",
   "title": "Poisson Exhaustive Uniqueness",
-  "transitive_descendants": 807,
+  "transitive_descendants": 682,
   "verdict_rationale": null
 }

@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "migration_hint",
-  "criticality": "medium",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -36,7 +36,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.085,
+  "load_bearing_score": 2.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -96,6 +96,6 @@
   },
   "runner_path": "scripts/frontier_hubble_c1_a2_action_unit_no_go.py",
   "title": "Lane 5 `(C1)` Gate \u2014 A2 g_bare-Action-Unit No-Go",
-  "transitive_descendants": 5,
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

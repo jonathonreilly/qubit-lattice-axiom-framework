@@ -24,8 +24,6 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "cubic_coxeter_regge_3plus1_tick_extension_second_variation_narrow_theorem_note_2026-06-09",
-    "physical_proper_cubic_covariance_ceiling_cycle690_note_2026-07-24",
-    "physical_direction_set_vs_triangulation_covariance_cycle695_note_2026-07-25",
     "minimal_axioms",
     "physical_stencil_derived_centrality_cycle721_note_2026-08-02",
     "physical_oriented_diagonal_stencil_orbit_cycle722_note_2026-08-02"

@@ -19,19 +19,19 @@
   "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.024,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -245,6 +245,6 @@
   },
   "runner_path": "scripts/pauli_group_order_check.py",
   "title": "Pauli Group P_1 = \u27e8\u03c3_i\u27e9 Has Order 16 on Per-Site Cl(3) Hilbert",
-  "transitive_descendants": 45,
+  "transitive_descendants": 0,
   "verdict_rationale": null
 }

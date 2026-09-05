@@ -25,7 +25,6 @@
   "deps": [
     "diamond_ideal_lockin_detector_theorem_note_2026-06-17",
     "diamond_signal_budget_hardening_note",
-    "diamond_nv_phase_ramp_signal_budget_note",
     "diamond_sensor_protocol_note",
     "diamond_sensor_prediction_note",
     "causal_propagating_field_live_packet_note_2026-06-05",

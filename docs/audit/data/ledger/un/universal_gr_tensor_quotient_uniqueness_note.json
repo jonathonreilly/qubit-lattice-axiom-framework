@@ -27,13 +27,13 @@
     "s3_time_spacetime_tensor_primitive_note",
     "universal_gr_tensor_variational_candidate_note"
   ],
-  "direct_in_degree": 8,
+  "direct_in_degree": 7,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.867,
+  "load_bearing_score": 13.118,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -149,6 +149,6 @@
   },
   "runner_path": "scripts/frontier_universal_gr_tensor_quotient_uniqueness.py",
   "title": "Universal GR Tensor Quotient Uniqueness Candidate on `PL S^3 x R`",
-  "transitive_descendants": 933,
+  "transitive_descendants": 785,
   "verdict_rationale": null
 }

@@ -24,8 +24,7 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "joint_two_cell_full_update_physical_m2_compiler_cycle712_bounded_theorem_note_2026-07-26",
-    "physical_m2_endpoint_instrument_cycle704_cycle612_bridge_cycle713_bounded_theorem_note_2026-07-26",
-    "finite_proper_cubic_admission_table_discriminator_bounded_theorem_note_2026-07-23"
+    "physical_m2_endpoint_instrument_cycle704_cycle612_bridge_cycle713_bounded_theorem_note_2026-07-26"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",

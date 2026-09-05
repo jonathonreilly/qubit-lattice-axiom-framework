@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "migration_hint",
-  "criticality": "high",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -31,13 +31,13 @@
     "cosmology_frw_kinematic_reduction_theorem_note_2026-04-24",
     "cosmology_single_ratio_inverse_reconstruction_theorem_note_2026-04-25"
   ],
-  "direct_in_degree": 11,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.407,
+  "load_bearing_score": 7.044,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": "scripts/frontier_hubble_tension_structural_lock.py",
   "title": "Hubble Tension Structural Lock Theorem: Late-Time `H_0` Is a Single Scalar on the Retained Surface",
-  "transitive_descendants": 59,
+  "transitive_descendants": 32,
   "verdict_rationale": null
 }

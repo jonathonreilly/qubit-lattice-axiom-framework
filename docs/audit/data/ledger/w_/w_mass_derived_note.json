@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "migration_hint",
-  "criticality": "high",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "observable_principle_from_axiom_note",
     "alpha_s_derived_note"
   ],
-  "direct_in_degree": 7,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.115,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -116,6 +116,6 @@
   },
   "runner_path": "scripts/frontier_w_mass_prediction.py",
   "title": "`M_W` Same-Surface Consistency Probe on the Conditional EW Lane",
-  "transitive_descendants": 48,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

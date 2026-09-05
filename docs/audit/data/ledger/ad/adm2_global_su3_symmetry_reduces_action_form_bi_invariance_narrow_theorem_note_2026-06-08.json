@@ -27,13 +27,13 @@
     "record_classical_semigroup_boundary_2026-06-06",
     "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.7,
+  "load_bearing_score": 4.892,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -113,6 +113,6 @@
   },
   "runner_path": "scripts/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.py",
   "title": "ADM-2 Reduces to Global SU(3) Equivariance Plus an Annealed Regime",
-  "transitive_descendants": 25,
+  "transitive_descendants": 20,
   "verdict_rationale": null
 }

@@ -26,13 +26,13 @@
     "lattice_3d_l2_tail_stats_note",
     "lattice_kernel_transfer_norm_note"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.7,
+  "load_bearing_score": 4.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -122,6 +122,6 @@
   },
   "runner_path": null,
   "title": "Continuum Convergence Note",
-  "transitive_descendants": 12,
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

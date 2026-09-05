@@ -25,13 +25,13 @@
   "deps": [
     "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
   ],
-  "direct_in_degree": 7,
+  "direct_in_degree": 6,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.262,
+  "load_bearing_score": 12.476,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -502,6 +502,6 @@
   },
   "runner_path": "scripts/hopping_bilinear_hermiticity_check.py",
   "title": "Hopping Bilinear H_{xy} = a_x^dag a_y + h.c. Is Hermitian and Translation-Covariant",
-  "transitive_descendants": 867,
+  "transitive_descendants": 711,
   "verdict_rationale": null
 }

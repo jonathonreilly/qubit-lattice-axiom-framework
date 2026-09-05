@@ -19,19 +19,19 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "record_erosion_branch_vs_ensemble_persistence_bounded_theorem_note_2026-06-12"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.322,
+  "load_bearing_score": 2.085,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/frontier_erosion_rate_table_no_closed_form_2026_06_12.py",
   "title": "The Erosion-Rate Envelope Is Geometric at Moderate \u03b5 (0.5\u20130.8, 5% Gate) and Non-Geometric Near the Projective Endpoint (0.9\u20130.99); No Tested Closed Form Matches; the Threshold Time Is Censored-Nonincreasing; the Ensemble Record Persists (Bounded)",
-  "transitive_descendants": 4,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

@@ -29,13 +29,13 @@
     "universal_gr_a1_invariant_section_note",
     "universal_gr_polarization_frame_bundle_blocker_note"
   ],
-  "direct_in_degree": 6,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.685,
+  "load_bearing_score": 11.409,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -120,6 +120,6 @@
   },
   "runner_path": "scripts/frontier_pmns_sector_orientation_orbit.py",
   "title": "PMNS Sector-Orientation Orbit Reduction",
-  "transitive_descendants": 822,
+  "transitive_descendants": 679,
   "verdict_rationale": null
 }

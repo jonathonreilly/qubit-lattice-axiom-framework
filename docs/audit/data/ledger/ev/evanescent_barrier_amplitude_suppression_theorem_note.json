@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "migration_hint",
-  "criticality": "high",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -28,13 +28,13 @@
     "oh_schur_boundary_action_note",
     "star_supported_bridge_class_note"
   ],
-  "direct_in_degree": 7,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.144,
+  "load_bearing_score": 4.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -81,6 +81,6 @@
   },
   "runner_path": "scripts/frontier_evanescent_barrier_amplitude_suppression.py",
   "title": "Discrete Evanescent-Barrier Amplitude Suppression on `Cl(3)/Z^3`",
-  "transitive_descendants": 49,
+  "transitive_descendants": 13,
   "verdict_rationale": null
 }

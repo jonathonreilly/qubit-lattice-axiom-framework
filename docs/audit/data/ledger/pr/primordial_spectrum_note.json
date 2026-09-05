@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "migration_hint",
-  "criticality": "high",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "cosmological_constant_spectral_gap_identity_theorem_note",
     "emergent_geometry_growth_note_2026-04-10"
   ],
-  "direct_in_degree": 8,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.833,
+  "load_bearing_score": 6.858,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -163,6 +163,6 @@
   },
   "runner_path": "scripts/frontier_primordial_spectrum.py",
   "title": "Primordial Power Spectrum from Graph Growth",
-  "transitive_descendants": 56,
+  "transitive_descendants": 28,
   "verdict_rationale": null
 }

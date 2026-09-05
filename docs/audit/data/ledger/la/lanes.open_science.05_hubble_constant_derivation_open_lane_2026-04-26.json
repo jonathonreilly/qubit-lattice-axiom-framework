@@ -30,7 +30,6 @@
     "hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29",
     "hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29",
     "hubble_lane5_c1_carrier_metrology_axiom_audit_note_2026-04-29",
-    "publication.ci3_z3.inputs_and_qualifiers_note",
     "hubble_tension_structural_lock_theorem_note_2026-04-26",
     "primordial_spectrum_note",
     "cosmological_constant_spectral_gap_identity_theorem_note",
@@ -54,7 +53,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.524,
+  "load_bearing_score": 5.248,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -151,6 +150,6 @@
   },
   "runner_path": null,
   "title": "Lane 5 \u2014 Hubble Constant H_0 Derivation",
-  "transitive_descendants": 22,
+  "transitive_descendants": 18,
   "verdict_rationale": null
 }

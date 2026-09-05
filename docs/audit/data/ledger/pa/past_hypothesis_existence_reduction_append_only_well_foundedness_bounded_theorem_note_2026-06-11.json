@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.822,
+  "load_bearing_score": 3.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/frontier_past_hypothesis_existence_reduction_append_only_2026_06_11.py",
   "title": "The Record-Arrow Low-Record-Boundary Existence Sub-Clause Reduces to History Non-Emptiness in the Append-Only Single-Chain Sector (Thermodynamic Past Hypothesis Untouched) \u2014 Bounded",
-  "transitive_descendants": 9,
+  "transitive_descendants": 7,
   "verdict_rationale": null
 }

@@ -25,7 +25,6 @@
   "deps": [
     "assumption_derivation_ledger",
     "dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25",
-    "publication.ci3_z3.derivation_atlas",
     "dm_wilson_direct_descendant_canonical_path_selector_theorem_note_2026-04-19",
     "dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_note_2026-04-19",
     "dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_note_2026-04-18",
@@ -54,7 +53,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "cfd6956b10fca4c1ca6f3558837721db7ac07adf0398f11821df0cdcd55a62eb",
+  "note_hash": "f7570c733805e447ea429d5ee571f583bc9fc35c88bd5de1d4d5683fe026ad6e",
   "note_path": "docs/DM_WILSON_DIRECT_DESCENDANT_BATCH_AUTHORITY_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -26,13 +26,13 @@
     "cl3_complexification_split_narrow_theorem_note_2026-05-10",
     "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
   ],
-  "direct_in_degree": 19,
+  "direct_in_degree": 18,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 20.318,
+  "load_bearing_score": 19.576,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -656,6 +656,6 @@
   },
   "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
   "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
-  "transitive_descendants": 1804,
+  "transitive_descendants": 1525,
   "verdict_rationale": null
 }

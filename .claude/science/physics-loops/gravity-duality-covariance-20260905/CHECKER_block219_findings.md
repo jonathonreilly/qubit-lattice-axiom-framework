@@ -1,7 +1,14 @@
-CHECKER VERDICT: PENDING
+CHECKER VERDICT: FIX FIRST
 
-Independent refuting checker (Opus 5) for block 219 — the three-direction (4,4,4) bench at
-the covariant witness. Work in progress; the verdict line is rewritten when the run closes.
+Every mathematical claim I attacked reproduces exactly on independently built machinery — the
+bench, the lemma with `z_y` live, the identity (which I strengthened from charpoly equality to a
+direct `Z`-conjugation similarity at all eight points and five cells), the seven quadric values,
+the six-entry read-off with its seventh-point check, both of Block 216's rescalings, the control's
+every factor shape and the overlap fold's three signed sums — but the note's prose calls
+`(1,1,1)` a parameter-free point of the overlap fold in three places, one of them inside the
+byte-gated `N5` fence, contradicting the note's own fold table and claim register: the fold is
+parameter-free at **four** points, and the fifth line-equals-zero agreement is the zero point,
+where the block vanishes identically. One phrase to repair; nothing is refuted (CK-10).
 
 Machinery: Block 213's `bench_matrix` / `bloch_matrix` / `raising_rules` / `transpose_rules`,
 Block 214's `raising_matrix` / `principal_part`, Block 216's `measure_census` / `BRANCH_TABLE`,
@@ -392,3 +399,108 @@ and factored in this seat under all four constructions (onsite/overlap × form/p
 - `b213.expected_flat_multiset((4,4,4))` = `((0,8),(1,24),(2,24),(3,8))` — identical.
 
 Disposition: **CONFIRMS**.
+
+---
+
+## CK-12 — det M is ONE quadric to the fourth power, symbolically, at all three parameter points
+
+Note line 305, verbatim:
+
+> det M on the line:  ONE quadric to the fourth power over QQ(sqrt 6), (64/81) Q^4 at all seven points: 81/64 (pure), 4 (doubly-mixed), 81/64 (triply-mixed).
+
+The note reports `det M` only as seven numbers. I tested the stronger symbolic statement.
+
+Computed: `det M(κ_t, κ_x, κ_y)` by Berkowitz on Block 214's principal part, then
+`sp.factor_list(..., extension=sqrt(6))`:
+
+- at the line point, at `λ = 1/2` and at `D07 = 1/4`, identically:
+  `det M = (81/64) · (κ_t² + κ_x² + κ_y² − (2/3)(κ_tκ_x + κ_tκ_y + κ_xκ_y))⁴` —
+  a single irreducible quadratic to the **fourth** power, with no other factor. The quadratic is
+  `(8/9) Q` exactly, so `det M / Q⁴ = (81/64)(8/9)⁴ = 64/81` identically in `κ`, not merely at the
+  seven sampled points. The seven numeric values `81/64, 81/64, 81/64, 4, 4, 4, 81/64` follow.
+- It factors over `QQ`; the `√6` extension is not needed for this determinant.
+
+Disposition: **CONFIRMS**, and strengthens: the note's seven-point statement is a specialisation of
+an identity in `κ` that holds at all three parameter points.
+
+---
+
+## CK-13 — Bloch union = direct on ten degree-64 charpolys, not nine
+
+Note lines 261-266, verbatim:
+
+> Nine direct degree-64 charpolys over `QQ(√6)` — the onsite pencil at the
+> witness, at `λ = 1/2`, at `D07 = 1/4`, at `W1` and at the flat cell, the onsite
+> form at the witness, and the flat cell under its other three constructions —
+> have **Bloch union = direct** against the product of the eight `8 × 8` block
+> charpolys over `QQ(√6, i)`; every Bloch union of the fourteen constructions has
+> degree 64, and the zero point contributes eight zeros everywhere.
+
+Computed, all in this seat, by sympy's `Matrix.charpoly` on the explicit 64 × 64 (not the runner's
+`DomainMatrix` route), each against the product of my own eight 8 × 8 block charpolys:
+
+| construction | degree | union = direct | zero point |
+| --- | :---: | :---: | :---: |
+| witness line, onsite pencil | 64 | True | `0 ×8` |
+| witness line, onsite form | 64 | True | `0 ×8` |
+| witness λ=1/2, onsite pencil | 64 | True | `0 ×8` |
+| witness D07=1/4, onsite pencil | 64 | True | `0 ×8` |
+| W1 line, onsite pencil | 64 | True | `0 ×8` |
+| flat line, onsite pencil | 64 | True | `0 ×8` |
+| flat zero, onsite form / onsite pencil / overlap form / overlap pencil | 64 | True | `0 ×8` |
+
+Ten of ten, root multiplicities summing to 64 in every case, and eight zeros at `(1,1,1)` in every
+case. Timings on this machine: 0.2 s to 0.7 s each except the witness onsite **form**, whose
+charpoly has non-solvable-looking irrational branches and took 38 s — still far inside the 600 s
+baseline. The nine the note certifies are a subset of the ten I checked.
+
+Disposition: **CONFIRMS**.
+
+---
+
+## COULD NOT TEST
+
+- **Planted defects through the runner's own `main()`** — skipped by the operating spec's own
+  no-import rule (the block-219 runner may be read for its literals but never imported or called),
+  and the mutation census is the supervisor's to verify from the raw outputs. COULD NOT TEST
+  (rule), not (time).
+- **The two overlap direct degree-64 charpolys** the note itself records as probed-not-certified.
+  I did not attempt them; the note books them as a could-not in `RESULTS_block219.md` and I have no
+  disagreement to record. COULD NOT TEST (out of scope of the attack list).
+
+---
+
+## Two scope observations, offered, not findings against the note
+
+1. **The seven-point over-determination is real, not a symmetry artefact.** Note line 308 says
+   "Seven Bloch points over-determine the six coefficients of a quadratic form in three variables
+   by one". The seven points supply only two distinct numbers (`9/8` and `3/2`), because the three
+   pure blocks coincide and the three doubly-mixed blocks coincide — so the arithmetic content is
+   thinner than "seven points" suggests. But the coincidence is **measured, not forced**: the
+   *same* cell under the overlap assembly distinguishes `x` from `t` and `y` (I confirmed the
+   overlap charpolys at `(i,1,1)` and `(1,1,i)` are equal and both differ from `(1,i,1)`), and the
+   star line's `E = diag(1,−1,1)` does single out `x` elsewhere in the note. So the onsite bench's
+   identification of all three directions is a fact about the onsite pencil, not a symmetry of the
+   cell that would make the check vacuous. The note's framing survives; the caveat is only that the
+   "over-determination by one" counts equations, not independent measurements.
+2. **The bench samples `κ ∈ {0,1}³` only.** At extent 4 the fine momentum is `π/2` in each
+   direction, so `Q` takes exactly two nonzero values. Every "shape in three directions" statement
+   here is a statement about those seven directions (three axes, three face diagonals, one body
+   diagonal). The note fences this correctly at `R4`/`R5` and at note line 416; I record it because
+   it bounds what "the cone's shape is visible in all three directions" can be taken to mean.
+
+---
+
+## What I could not break
+
+I attacked, in the spec's priority order: the bench construction and its link counts; the symbolic
+lemma with `z_y` live; the identity by direct similarity rather than the note's weaker charpoly
+comparison, at three cells plus the two rescaled ones, all eight points; the seven quadric values
+computed from `G1` rather than assumed; every nonzero eigenvalue's ratio to `Q` at all seven
+points; the six-entry read-off and the seventh-point check; the leading minors before use; both
+rescalings including Block 216's symbolic table evaluated at `λ = 1/2`; the `(128/119) G1` read-off
+and the premise that the constant-1 branch is still the smallest; the control's every factor shape
+and `det M` values; the overlap fold's parity block at symbolic signs, moduli and parameters; and
+Bloch union = direct on ten explicit 64 × 64 matrices by a different charpoly engine.
+
+Nothing in the mathematics moved. The single defect is a descriptive phrase (CK-10).

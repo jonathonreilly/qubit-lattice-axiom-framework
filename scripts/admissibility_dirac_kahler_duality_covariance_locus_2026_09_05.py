@@ -666,7 +666,11 @@ def constraints(h: sp.Matrix, lift: sp.Matrix, e: tuple, unknowns: tuple) -> tup
             if entry == 0:
                 continue
             if not (entry.free_symbols & set(unknowns)):
-                forced.add(str(sp.factor(entry)))
+                # a moduli-only entry forces its numerator's non-numeric
+                # factors to vanish (the denominators are volumes, nonzero)
+                numerator, _ = sp.fraction(sp.factor(entry))
+                _, factors = sp.factor_list(numerator)
+                forced.add("*".join(sorted(str(base) for base, _ in factors)))
                 continue
             poly = sp.Poly(entry, *unknowns)
             if poly.total_degree() != 1 or (poly.free_symbols - set(unknowns)):
@@ -894,10 +898,13 @@ def measure_controls(group: dict) -> dict:
     # class) IS E D E for one of the 64 sign vectors at symbolic moduli; a
     # one-face flip (the other class) is NOT -- the per-offset product is the
     # invariant.
-    base = family((1, 1), PARAMETER_SYMBOLS)
+    # (the parameters are set to zero for this check: the gauge also flips
+    # D16, D25, D34 by e_i e_j, which is the twist the census uses).
+    zeros = (sp.Integer(0),) * 4
+    base = family((1, 1), zeros)
 
     def reachable(signs: dict) -> bool:
-        target = b214.formal_cell(signs, G0, G1, V0, V1, PARAMETER_SYMBOLS)
+        target = b214.formal_cell(signs, G0, G1, V0, V1, zeros)
         return any(residual_count((sp.diag(*e) * base * sp.diag(*e) - target).applyfunc(sp.expand)) == 0
                    for e in sign_vectors())
     facts["gauge_congruence_in_field"] = (
@@ -929,3 +936,310 @@ def measure_controls(group: dict) -> dict:
     facts["family_is_block214_cell_at_w1"] = residual_count((renamed - family((1, 1), PARAMETER_SYMBOLS, w1)).applyfunc(sp.cancel)) == 0 \
         and free == PARAMETER_NAMES
     return facts
+
+
+@dataclass(frozen=True)
+class Facts:
+    authority: AuthorityCertificate
+    group: dict
+    star: dict
+    census: dict
+    overlap: dict
+    controls: dict
+    axiom_text: str
+    note_text: str
+    timings: dict
+
+
+def measure() -> Facts:
+    timings: dict = {}
+    started = time.monotonic_ns()
+
+    def lap(label: str) -> None:
+        nonlocal started
+        now = time.monotonic_ns()
+        timings[label] = (now - started) // 1_000_000
+        started = now
+        print(f"[phase] {label}: {timings[label]} ms", file=sys.stderr)
+
+    git_maybe("fetch", "origin", "main", "--quiet")
+    authority = authority_certificate(git_maybe("rev-parse", "origin/main"))
+    lap("authority")
+    group = measure_group()
+    lap("group")
+    star = measure_star(group)
+    lap("star")
+    census = measure_census(group)
+    lap("census")
+    overlap = measure_overlap(group)
+    lap("overlap")
+    controls = measure_controls(group)
+    lap("controls")
+    axiom_text = (ROOT / AXIOM_PATH).read_text(encoding="utf-8") if (ROOT / AXIOM_PATH).is_file() else ""
+    note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
+    return Facts(authority, group, star, census, overlap, controls, axiom_text, note_text, timings)
+
+
+# ---------------------------------------------------------------------------
+# THE DECLARED LITERALS -- every claim is a constant compared against a
+# measurement; a mutation rewrites exactly one claim.
+# ---------------------------------------------------------------------------
+ORDER_COUNTS = ((1, 1), (2, 9), (3, 8), (4, 6))
+CLASS_TABLE = (("1", 1, 1), ("C2_edge", 2, 6), ("C2_face", 2, 3), ("C3_body", 3, 4), ("C4_face", 4, 3),
+               ("V4_face_edges", 4, 3), ("V4_faces", 4, 1), ("S3_body", 6, 4), ("D4_face", 8, 3), ("T", 12, 1), ("O", 24, 1))
+SUBGROUP_COUNT = 30
+# * e_c = STAR_SIGNS[c] e_{c-bar} in Block 209's corner order; on the duality
+# pairs (0,7), (1,6), (2,5), (4,3) the signs are (+, +, -, +): t -> +xy, x -> -ty, y -> +tx.
+STAR_SIGNS = (1, 1, -1, 1, 1, -1, 1, 1)
+STAR_PAIR_SIGNS = (1, 1, -1, 1)
+STAR_ADJOINT_SIGNS = (1, -1, 1)          # * D(kappa) = eps_k D(kappa)^T * on k-forms
+STAR_LINE = ("D16 - D34", "D25 + D34")   # = Block 214's PLANE literal
+DIAGONAL_LINE = ("D16 - D34", "D25 - D34")
+P111_COMMUTING_LIFTS = 8
+STRICT_SHEAR_SURVIVING_ROTATIONS = {(1, 1): 2, (1, -1): 2, (-1, 1): 2, (-1, -1): 2}
+CELL_SCAN_STAR_LINE_CELLS = 16
+CELL_SCAN_ALIVE_COUNTS = (1,)
+POSITIVITY_WITNESS_MINORS = (sp.Rational(15, 16), sp.Rational(15, 16), sp.Rational(225, 256), sp.Rational(15, 16),
+                             sp.Rational(25, 32), sp.Rational(25, 32), sp.Rational(1465, 2304), sp.Rational(1465, 2304))
+SCOUT_GRADE_FENCE = ("scout-grade finite exact linear algebra on one cell form, "
+                     "not a spacetime and not a dynamics")
+SCOUT_GRADE_ONLY = True
+INSTANCE_SCOPE = (
+    "one cell form: Block 211's six-face-compatible family at symbolic moduli on its ties, the four class representatives and the 64 sign cells (full group only)",
+    "the covariance notion: (E_R R) H (E_R R)^T = H with E_R among Block 211's 64 sign vectors (twisted) or E_R = 1 (strict); no other twist",
+    "the group: the 24 proper cubic rotations lifted through the lane's wedge; no improper element, no translation, no continuum rotation",
+    "the loci are linear varieties at symbolic moduli; no cone, no dispersion and no bench is computed here (Block 214's loci are imported as literals)",
+    "both assemblies run; neither decided; no Hodge reading, no subgroup, no parameter value selected",
+    "the union-locus statement on the twisted lines at sign cells other than Block 214's witnesses is NOT computed",
+)
+INSTANCE_SCOPE_COUNT = 6
+
+
+def scope_certificate(text: str) -> dict:
+    return {"n5_verbatim": N5_FENCE in text}
+
+
+def alive(components: tuple) -> tuple:
+    """The shear-surviving components of a described locus."""
+    return tuple(generators for forced, generators in components if not forced)
+
+
+def star_line_only_with_shear_killed(table: dict) -> bool:
+    return all(forced for entry in table.values() for forced, generators in entry
+               if tuple(sorted(generators)) == tuple(sorted(STAR_LINE)))
+
+
+def build_claims(mutation: str) -> dict:
+    wrong_twisted = dict(TWISTED_LOCI)
+    wrong_twisted[((1, 1), "O")] = (((), STAR_LINE),)
+    wrong_strict = dict(STRICT_LOCI)
+    wrong_strict[((1, 1), "O")] = (((), STAR_LINE),)
+    wrong_overlap = dict(OVERLAP_TWISTED_LOCI)
+    wrong_overlap[((1, 1), "O")] = (((), ("s",)),)
+    wrong_flat = dict(FLAT_STRICT_LOCI)
+    wrong_flat["O"] = (((), DIAGONAL_LINE),)
+    claims = {
+        "current_main": CURRENT_MAIN, "parent_commit": PARENT_COMMIT,
+        "registered": (), "gravity_supplied": False, "covariance_inherited": False,
+        "subgroup_selected": False, "assembly_decided": False,
+        "order_counts": ORDER_COUNTS, "intertwines": True, "class_table": CLASS_TABLE,
+        "gauge_congruence": True,
+        "star_adjoint_signs": STAR_ADJOINT_SIGNS, "star_line": STAR_LINE,
+        "twisted_loci": TWISTED_LOCI, "strict_loci": STRICT_LOCI, "twisted_shears_survive": True,
+        "p111_commuting_lifts": P111_COMMUTING_LIFTS, "overlap_twisted_loci": OVERLAP_TWISTED_LOCI,
+        "positivity_selects_plane": False, "parity_selects_plane": False, "flat_strict_loci": FLAT_STRICT_LOCI,
+        "scout_grade": SCOUT_GRADE_FENCE, "instance_scope_count": INSTANCE_SCOPE_COUNT,
+        "n5_verbatim": True, "float_absent": True,
+    }
+    flips = {
+        "stale_main_authority": ("current_main", STALE_MAIN),
+        "stale_parent_authority": ("parent_commit", STALE_PARENT_COMMIT),
+        "claim_objects_registered": ("registered", ("the corner action",)),
+        "claim_gravity_supplied": ("gravity_supplied", True),
+        "claim_covariance_inherited": ("covariance_inherited", True),
+        "claim_subgroup_selected": ("subgroup_selected", True),
+        "claim_assembly_decided": ("assembly_decided", True),
+        "break_representation_orders": ("order_counts", ((1, 1), (2, 7), (3, 8), (4, 8))),
+        "break_intertwining": ("intertwines", False),
+        "break_subgroup_class_count": ("class_table", CLASS_TABLE[:-1]),
+        "break_gauge_congruence": ("gauge_congruence", False),
+        "break_star_signs": ("star_adjoint_signs", (1, 1, 1)),
+        "break_star_line": ("star_line", DIAGONAL_LINE),
+        "break_twisted_census": ("twisted_loci", wrong_twisted),
+        "break_strict_census": ("strict_loci", wrong_strict),
+        "claim_shears_killed_by_twisted_covariance": ("twisted_shears_survive", False),
+        "break_p111_commutation": ("p111_commuting_lifts", 24),
+        "break_overlap_locus": ("overlap_twisted_loci", wrong_overlap),
+        "claim_positivity_selects_plane": ("positivity_selects_plane", True),
+        "claim_parity_selects_plane": ("parity_selects_plane", True),
+        "break_flat_cell_loci": ("flat_strict_loci", wrong_flat),
+        "break_scout_grade_fence": ("scout_grade", "a spacetime and a dynamics"),
+        "break_instance_scope": ("instance_scope_count", 2),
+        "drop_n5_fence": ("n5_verbatim", False),
+        "break_float_absence": ("float_absent", False),
+    }
+    if mutation:
+        key, value = flips[mutation]
+        claims[key] = value
+    return claims
+
+
+def build_checks(facts: Facts, claims: dict) -> Checks:
+    checks = Checks()
+    au = facts.authority
+    checks.check("A-1", "FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree",
+                 au.fixed_authority and claims["current_main"] == CURRENT_MAIN)
+    checks.check("A-2", "PARENT PIN IS THE BLOCK 214 TIP, an ancestor of HEAD, with its note and runner content-bound by blob",
+                 au.parent_pin_is_commit and au.parent_is_ancestor and au.parent_artifact_blobs
+                 and claims["parent_commit"] == PARENT_COMMIT)
+    checks.check("A-3", "STALE PARENT (the Block 213 tip) is a real ancestor carrying NEITHER Block 214 artifact; machinery imported; inputs readable",
+                 au.stale_is_real_ancestor and au.stale_carries_neither_artifact
+                 and au.machinery_import_landed and au.inputs_readable == len(AUDIT_INPUT_PATHS) - 1)
+    checks.check("B-1", "NOTHING REGISTERED, NOTHING ADOPTED: six imposed objects, zero registered, zero adopted",
+                 len(IMPOSED_OBJECTS) == 6 and claims["registered"] == REGISTERED_OBJECTS == () and ADOPTED_OBJECTS == ())
+    checks.check("B-2", "NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied",
+                 not claims["gravity_supplied"] and not GRAVITY_SUPPLIED_CLAIMED and len(UNSUPPLIED_GRAVITY_STRUCTURES) == 9)
+    checks.check("B-3", "THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)",
+                 AXIOM_COVARIANCE_CLAUSE in facts.axiom_text and not claims["covariance_inherited"] and not COVARIANCE_INHERITED_CLAIMED)
+    checks.check("B-4", "NO SUBGROUP IS SELECTED AS 'THE' SYMMETRY, NO ASSEMBLY DECIDED, NO PARAMETER VALUE SELECTED",
+                 not claims["subgroup_selected"] and not SUBGROUP_SELECTED_CLAIMED and not claims["assembly_decided"]
+                 and not ASSEMBLY_DECIDED_CLAIMED and not PARAMETER_VALUE_SELECTED_CLAIMED)
+    checks.check("B-5", "THE WORDS COVARIANCE, LOCUS, STAR, GAUGE AND PLANE ARE SCOPED; six readings enumerated, none licensed; no continuum, no spacetime cone",
+                 len(SCOPED_HEADLINE_WORDS) == 5 and len(READINGS) == 6 and not READINGS_LICENSED_CLAIMED
+                 and not CONTINUUM_LIMIT_CLAIMED and not CONE_IS_SPACETIME_CONE_CLAIMED)
+    gr = facts.group
+    checks.check("C-1", "THE CORNER ACTION IS A REPRESENTATION OF THE 24 PROPER ROTATIONS: Block 201's det = +1 signed permutations are 24; the lifts are 24 distinct orthogonal matrices, closed, containing the identity, L(R1 R2) = L(R1) L(R2), element orders 1/2/3/4 in counts 1/9/8/6",
+                 gr["rotation_count"] == 24 and gr["all_det_one"] and gr["distinct_lifts"] == 24 and gr["closed"]
+                 and gr["homomorphism"] and gr["lift_orthogonal"] and gr["order_counts"] == claims["order_counts"])
+    checks.check("C-2", "THE SIGN RULE IS DERIVED, NOT GUESSED: the lane's D(kappa) is the ordered-monomial wedge (12 signs); the lift built through that wedge equals the orientation-sign rule; the only monomial intertwiners are +-L(R); every lift is +1 on the empty and on the full corner (det R = +1)",
+                 gr["wedge_is_ordered_monomial"] and gr["wedge_rule_count"] == 12 and gr["sign_rule_matches_wedge"]
+                 and gr["monomial_intertwiner_count"] == (2,) and gr["monomial_intertwiners_are_plus_minus_lift"]
+                 and gr["lift_on_empty_and_full_corner"] == ((1, 1),))
+    checks.check("C-3", "THE LIFT INTERTWINES THE RAISING PART: L(R) D(kappa) L(R)^-1 = D(R kappa) for every R",
+                 gr["intertwines"] == claims["intertwines"] and claims["intertwines"])
+    checks.check("C-4", "THE SUBGROUP CLASSES ARE COMPUTED FROM THE GROUP: 30 subgroups with a completeness certificate, 11 conjugacy classes with the declared (name, order, size) table",
+                 gr["subgroup_count"] == SUBGROUP_COUNT and gr["subgroups_complete"] and gr["class_table"] == claims["class_table"]
+                 and len(claims["class_table"]) == 11)
+    ct = facts.controls
+    checks.check("C-5", "THE FAMILY IS BLOCK 214's CELL: at W1 it equals cell_with_parameters with the four free names; the gauge congruence E D E holds in the field for same-class two-face flips and fails for one-face flips",
+                 ct["family_is_block214_cell_at_w1"] and ct["gauge_congruence_in_field"] == claims["gauge_congruence"] and claims["gauge_congruence"])
+    st = facts.star
+    checks.check("D-1", "THE STAR FROM THE WEDGE: * e_c = sign e_{c-bar} with the declared signs, ** = +1 on every degree, * D(kappa) = eps_k D(kappa)^T * with eps = (+1, -1, +1) on 0-, 1-, 2-forms, and * commutes with every lift",
+                 st["star_signs"] == STAR_SIGNS and st["star_squares"] == (1, 1, 1, 1) and st["star_square_is_scalar"]
+                 and st["star_adjoint_signs"] == claims["star_adjoint_signs"] and st["star_commutes_with_every_lift"])
+    checks.check("D-2", "THE STAR LEMMA: the 1 <-> 2 cross block is lam * exactly on the line D16 = D34 = -D25 (the star's pair signs (+, -, +) on (y, x, t)), which IS Block 214's plane; D07 is the free 0 <-> 3 star multiple; the onsite M_oo vanishes exactly there (its coefficient ideal is the line)",
+                 st["star_pair_signs"] == STAR_PAIR_SIGNS and tuple(sorted(st["star_line_generators"])) == tuple(sorted(claims["star_line"]))
+                 and st["star_line_is_block214_plane"] and st["cross_block_is_lam_star_on_line"] and st["d07_is_zero_three_star_multiple"]
+                 and st["m_oo_zero_on_star_line"] and st["m_oo_nonzero_off_line"] and st["m_oo_ideal_is_star_line"])
+    ce = facts.census
+    checks.check("E-1", "THE SHEARS SURVIVE TWISTED COVARIANCE UNDER EVERY ROTATION in all four gauge classes; strictly they survive only the identity and one edge rotation per class",
+                 all(all(v) for v in ce["per_rotation_twisted_shears_survive"].values()) == claims["twisted_shears_survive"]
+                 and claims["twisted_shears_survive"]
+                 and {k: sum(v) for k, v in ce["per_rotation_strict_shears_survive"].items()} == STRICT_SHEAR_SURVIVING_ROTATIONS)
+    checks.check("E-2", "THE TWISTED CENSUS at the four class representatives is the declared table: O, T, S3, C3 force ONE shear-alive line (the diagonal D16 = D25 = D34 at all-plus and at (-1,-1); D16 = D25 = -D34 at the two mixed classes), never the star line; the star line appears only with a shear killed",
+                 ce["twisted"] == claims["twisted_loci"] and star_line_only_with_shear_killed(claims["twisted_loci"])
+                 and alive(claims["twisted_loci"][((1, 1), "O")]) == (DIAGONAL_LINE,))
+    checks.check("E-3", "THE STRICT CENSUS is the declared table: O and T force the star line WITH g0 = g1 = 0 (the flat cell); C3 (S3) force the star line with one shear killed; the minimal strict class forcing the star line is C3",
+                 ce["strict"] == claims["strict_loci"]
+                 and all(claims["strict_loci"][(key, "O")][0][1] == STAR_LINE and len(claims["strict_loci"][(key, "O")][0][0]) >= 2
+                         for key in GAUGE_CLASSES)
+                 and claims["strict_loci"][((1, 1), "C3_body")] == ((("2*g1/v0",), STAR_LINE),))
+    checks.check("E-4", "EVERY MEMBER OF EVERY CLASS (30 subgroups): the loci at a fixed cell are not conjugation-invariant except for the normal subgroups; the distinct-locus counts per class are the declared literals",
+                 ce["twisted_distinct_per_class"] == TWISTED_DISTINCT_PER_CLASS and ce["strict_distinct_per_class"] == STRICT_DISTINCT_PER_CLASS
+                 and all(ce["twisted_normal_single"].values()) and all(ce["strict_normal_single"].values()))
+    checks.check("E-5", "D07 IS FREE UNDER EVERY SUBGROUP, twisted and strict: no locus generator carries D07",
+                 not any("D07" in g for table in (ce["twisted"], ce["strict"]) for entry in table.values() for _, gens in entry for g in gens))
+    ov = facts.overlap
+    checks.check("F-1", "P111 IS THE UNSIGNED STAR: it commutes with the unsigned corner permutation of every rotation but with only 8 of the 24 signed lifts (the twist is diag(s_c s_{R^-1 c})); the STAR commutes with all 24",
+                 st["p111_is_unsigned_star"] and st["p111_commutes_with_unsigned_permutation"]
+                 and st["p111_commutes_with_lift_count"] == claims["p111_commuting_lifts"] and st["star_commutes_with_every_lift"])
+    checks.check("F-2", "THE OVERLAP FOLD sees only s = D07 + D16 + D25 + D34, its parity block is (s/4) P111, and NO subgroup's TWISTED covariance forces s = 0 in any class (declared table); strict covariance forces s = 0 together with a shear relation (declared table)",
+                 ov["overlap_sees_sum_only"] and ov["overlap_parity_block_is_sum_over_four_p111"]
+                 and ov["twisted"] == claims["overlap_twisted_loci"] and ov["strict"] == OVERLAP_STRICT_LOCI
+                 and not any("s" in gens for entry in claims["overlap_twisted_loci"].values() for _, gens in entry))
+    checks.check("G-1", "POSITIVITY DOES NOT SELECT THE PLANE: Block 214's witness W1 + D16 = 1/4 is off the plane and positive definite by exact leading minors",
+                 ct["positivity_witness_is_pd"] and ct["positivity_witness_off_plane"] and ct["positivity_witness_minors"] == POSITIVITY_WITNESS_MINORS
+                 and not claims["positivity_selects_plane"])
+    checks.check("G-2", "ONSITE PARITY DOES NOT SELECT THE PLANE: the folded onsite parity block carries exactly the four parameters and vanishes iff all four vanish (the origin)",
+                 ct["onsite_parity_block_entries"] == PARAMETER_NAMES and ct["onsite_parity_preserved_iff_all_zero"] and not claims["parity_selects_plane"])
+    checks.check("G-3", "THE FLAT CELL: strict O-covariance of the flat cell forces exactly the star line; twisted, the four sign lines (declared tables); the 64-cell scan under two generators of O finds ONE shear-alive line at every cell, the star line at exactly 16 cells and the diagonal at all-plus",
+                 ct["flat_zero_is_identity"] and ct["flat_strict"] == claims["flat_strict_loci"] and ct["flat_twisted"] == FLAT_TWISTED_LOCI
+                 and ct["generators_generate_o"] and ct["cell_scan_alive_component_counts"] == CELL_SCAN_ALIVE_COUNTS
+                 and ct["cell_scan_star_line_cells"] == CELL_SCAN_STAR_LINE_CELLS and ct["cell_scan_all_plus"] == (((), DIAGONAL_LINE),))
+    checks.check("H-1", "SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213 and 214",
+                 claims["scout_grade"] == SCOUT_GRADE_FENCE and SCOUT_GRADE_ONLY)
+    checks.check("H-2", "THE INSTANCE SCOPE IS ENUMERATED: six restrictions",
+                 claims["instance_scope_count"] == len(INSTANCE_SCOPE) == 6)
+    sc = scope_certificate(facts.note_text)
+    checks.check("I-1", "THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY",
+                 bool(facts.note_text) and sc["n5_verbatim"] == claims["n5_verbatim"] and claims["n5_verbatim"])
+    checks.check("I-2", "NO nsimplify, NO float literal, NO float call in this runner's source",
+                 nsimplify_occurrences() == 0 and float_literal_occurrences() == 0 and float_call_sites() == 0
+                 and claims["float_absent"])
+    return checks
+
+
+def report_measured(facts: Facts, elapsed_ns: int) -> None:
+    print("== BLOCK 215: the covariance locus of the four duality parameters -- measured facts ==")
+    print(f"authority: {facts.authority}")
+    gr = facts.group
+    for key in ("rotation_count", "distinct_lifts", "closed", "homomorphism", "order_counts", "sign_rule_matches_wedge",
+                "monomial_intertwiner_count", "intertwines", "wedge_is_ordered_monomial", "subgroup_count", "subgroups_complete", "class_table"):
+        print(f"group {key}: {gr[key]}")
+    for key, value in facts.star.items():
+        print(f"star {key}: {value}")
+    ce = facts.census
+    for key in ("per_rotation_twisted_shears_survive", "per_rotation_strict_shears_survive"):
+        print(f"census {key}: {ce[key]}")
+    for kind in ("twisted", "strict"):
+        for key in sorted(ce[kind], key=str):
+            print(f"census {kind} {key}: {ce[kind][key]}")
+        print(f"census {kind}_distinct_per_class: {ce[f'{kind}_distinct_per_class']}")
+    ov = facts.overlap
+    print(f"overlap sees_sum_only={ov['overlap_sees_sum_only']} parity_block={ov['overlap_parity_block_is_sum_over_four_p111']}")
+    for kind in ("twisted", "strict"):
+        for key in sorted(ov[kind], key=str):
+            print(f"overlap {kind} {key}: {ov[kind][key]}")
+    for key, value in facts.controls.items():
+        print(f"controls {key}: {value}")
+    print(f"timings_ms: {facts.timings}  elapsed_ms: {elapsed_ns // 1_000_000}")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mutation", choices=MUTATIONS, default="")
+    parser.add_argument("--list-mutations", action="store_true")
+    arguments = parser.parse_args()
+    if arguments.list_mutations:
+        for name in MUTATIONS:
+            print(name)
+        return 0
+    mutation = arguments.mutation
+    started_ns = time.monotonic_ns()
+    # Every measurement happens once, before any mutation flag is consulted.
+    facts = measure()
+    elapsed_ns = time.monotonic_ns() - started_ns
+    checks = build_checks(facts, build_claims(""))
+    if mutation:
+        raw = checks.families()
+        checks = build_checks(facts, build_claims(mutation))
+        mutated = checks.families()
+        target = MUTATION_GATE[mutation]
+        changed = {family for family in raw if raw[family] != mutated[family]}
+        if changed - {target} or mutated[target]:
+            raise AssertionError("mutation did not fail exactly its own gate")
+    report_measured(facts, elapsed_ns)
+    checks.report()
+    print(N5_FENCE)
+    return checks.finish()
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except SystemExit:
+        raise
+    except Exception as error:
+        print(f"[FAIL] INTERNAL-EXCEPTION: {type(error).__name__}: {error}")
+        print("TOTAL: PASS=0 FAIL=1")
+        raise

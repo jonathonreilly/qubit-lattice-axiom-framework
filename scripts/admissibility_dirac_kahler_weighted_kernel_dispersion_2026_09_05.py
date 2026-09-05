@@ -1153,6 +1153,7 @@ class PrincipalFacts:
     lemma_3d_top_form_branch: bool
     lemma_3d_transverse_product: bool
     lemma_d0_absent: bool
+    expansion_exact: bool
     overlap_h0_form_holds: bool
     overlap_cone_3d_holds: bool
     overlap_cone_2d_holds: bool
@@ -1473,6 +1474,28 @@ def measure_principal(cell_matrices: dict) -> PrincipalFacts:
     transverse_product = is_zero(
         sp.cancel(two_form_block.det() / q2) - sp.cancel(D2.det() / D1.det() * q1 * quadratic_form(signature * D2.inv() * signature, kappa3)))
     d0_absent = D0 not in sp.together(objects["detB"]).free_symbols
+    # THE EXPANSION ITSELF, MEASURED AND NOT ASSUMED: K_H,B(z) = i eps M(kappa)
+    # + O(eps^2) with M = H0 D + D^T H0 requires the folded raising part and
+    # the folded K_H to vanish and the first-order coefficient of the COMPOSED
+    # rules H d - d^T H to equal H0 D + D^T H0, which must be symmetric (K_H is
+    # antisymmetric, so its Bloch matrix is anti-Hermitian and i eps M is).
+    # Measured at the fully symbolic cell form under BOTH assemblies.
+    expansion_exact = True
+    dT3 = transpose_rules(d3)
+    dk_symbolic = first_order_matrix(d3, 3, kappa3)
+    for assembly_rules in (onsite_rules, overlap_rules):
+        rules_h_cell = assembly_rules(cell, b209.CORNERS, 3)
+        kh_rules = combine_rules(compose_rules(rules_h_cell, d3),
+                                 compose_rules(dT3, rules_h_cell), -1)
+        h0_cell = folded_matrix(rules_h_cell, 3)
+        m_cell = (h0_cell * dk_symbolic + dk_symbolic.T * h0_cell).applyfunc(sp.expand)
+        expansion_exact = (
+            expansion_exact
+            and residual_count(folded_matrix(d3, 3)) == 0
+            and residual_count(folded_matrix(kh_rules, 3)) == 0
+            and residual_count(first_order_matrix(kh_rules, 3, kappa3) - m_cell) == 0
+            and residual_count(m_cell - m_cell.T) == 0
+            and combine_rules(kh_rules, transpose_rules(kh_rules)) == {})
     # --- THE 2D LEMMA -------------------------------------------------------
     e0, e2 = sp.symbols("e0 e2", positive=True)
     p = sp.symbols("p11 p12 p22", real=True)
@@ -1532,8 +1555,8 @@ def measure_principal(cell_matrices: dict) -> PrincipalFacts:
     local = {"h0": h0s, "htx": htx, "hty": hty, "hxy": hxy, "kt": KT, "kx": KX, "ky": KY}
     q_plus = sp.sympify(OVERLAP_CONE_PLUS, locals=local)
     q_minus = sp.sympify(OVERLAP_CONE_MINUS, locals=local)
-    overlap_cone_3d = (is_zero(overlap_objects["detB"] - q_plus * q_minus)
-                       or is_zero(overlap_objects["detB"] + q_plus * q_minus))
+    # THE SIGN IS PINNED, NOT LEFT AS +-: det B = +Q+ Q- exactly.
+    overlap_cone_3d = is_zero(overlap_objects["detB"] - q_plus * q_minus)
     rules_h2 = {}
     for corner in corners(2):
         rules_h2[(corner, (0, 0))] = h0s
@@ -1680,7 +1703,7 @@ def measure_principal(cell_matrices: dict) -> PrincipalFacts:
         classes += 1
     return PrincipalFacts(
         lemma_3d, lemma_2d, block_diagonal, zero_form_branch, top_form_branch, transverse_product,
-        d0_absent, h0_form_ok, overlap_cone_3d, overlap_cone_2d,
+        d0_absent, expansion_exact, h0_form_ok, overlap_cone_3d, overlap_cone_2d,
         onsite_branches_ok, onsite_form_scalar, onsite_pencil_scalar_generic, onsite_scalar_on_locus,
         overlap_pencil_scalar, overlap_pencil_matches, overlap_cone_matches, overlap_form_scalar,
         effective_ok, discrepancy_ok, str(zero_form_symbol), str(two_form_symbol), str(overlap_scalar_symbol),
@@ -2214,17 +2237,21 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
         f"with the 0-form branch k^T D1 k / D0 ({principal.lemma_3d_zero_form_branch}), "
         f"the eigenvector adj(D2) E k at eigenvalue D3 k^T E D2^-1 E k "
         f"({principal.lemma_3d_top_form_branch}) and transverse product "
-        f"det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k) ({principal.lemma_3d_transverse_product})",
+        f"det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k) ({principal.lemma_3d_transverse_product}); "
+        f"and the expansion K_H,B(z) = i eps M + O(eps^2), M = H0 D + D^T H0 "
+        f"symmetric, is MEASURED from the composed rules at the symbolic cell "
+        f"under both assemblies ({principal.expansion_exact})",
         (principal.lemma_3d_holds and principal.lemma_2d_holds) is claims["onsite_lemma_3d"]
         and claims["onsite_lemma_3d"] is True
         and (principal.lemma_d0_absent and principal.lemma_3d_block_diagonal
              and principal.lemma_3d_zero_form_branch and principal.lemma_3d_top_form_branch
-             and principal.lemma_3d_transverse_product) is claims["onsite_lemma_structure"]
+             and principal.lemma_3d_transverse_product
+             and principal.expansion_exact) is claims["onsite_lemma_structure"]
         and claims["onsite_lemma_structure"] is True)
     checks.check(
         "F-2", f"THE OVERLAP CONE, AT SYMBOLIC h: the folded overlap H0 is "
-        f"{OVERLAP_H0_FORM} ({principal.overlap_h0_form_holds}); det B = +-Q+ Q- "
-        f"with Q+ = {OVERLAP_CONE_PLUS} and Q- = {OVERLAP_CONE_MINUS} "
+        f"{OVERLAP_H0_FORM} ({principal.overlap_h0_form_holds}); det B = +Q+ Q- "
+        f"exactly, sign pinned, with Q+ = {OVERLAP_CONE_PLUS} and Q- = {OVERLAP_CONE_MINUS} "
         f"({principal.overlap_cone_3d_holds}), and in two directions det B = "
         f"-h0 ({OVERLAP_CONE_2D}) ({principal.overlap_cone_2d_holds})",
         principal.overlap_h0_form_holds is claims["overlap_h0_form"]
@@ -2444,7 +2471,8 @@ def report_measured(facts: Facts, elapsed_ns: int) -> None:
     print(f"    onsite lemma 3D {principal.lemma_3d_holds}, 2D {principal.lemma_2d_holds}, "
           f"D0 absent {principal.lemma_d0_absent}, block-diagonal {principal.lemma_3d_block_diagonal}, "
           f"0-form branch {principal.lemma_3d_zero_form_branch}, top-form branch "
-          f"{principal.lemma_3d_top_form_branch}, transverse product {principal.lemma_3d_transverse_product}")
+          f"{principal.lemma_3d_top_form_branch}, transverse product {principal.lemma_3d_transverse_product}, "
+          f"expansion K_H,B = i eps (H0 D + D^T H0) + O(eps^2) measured {principal.expansion_exact}")
     print(f"    overlap H0 form {principal.overlap_h0_form_holds}, overlap cone 3D "
           f"{principal.overlap_cone_3d_holds}, 2D {principal.overlap_cone_2d_holds}")
     print(f"    2D (c, v): onsite branches {principal.two_dim_onsite_branches}, onsite pencil "

@@ -37,30 +37,24 @@ axiom_movement: none
 
 **One sentence.** On Block 213's bench at extent `(4,4,2)` — 32 sites, the `y`
 direction at extent 2 carrying no link, Bloch momenta `(1,1,1)`, `(1,i,1)`,
-`(i,1,1)` and the **mixed** fine point `(i,i,1)` — the raising Bloch block at
-every point is `i D(κ_z)` with `κ_z = e_t [z_t = i] + e_x [z_x = i]`, **measured
-before any identity is asserted** and at symbolic `z` as
-`d_B(z) = Σ_μ (z_μ − 1/z_μ)/2 · D(e_μ)`, so the two fine momenta enter
-additively and at the mixed point the block is `i D(e_t + e_x)`; the onsite
-Hodge Bloch block is `Z⁻¹ H0 Z`; with `d² = 0` the onsite pencil block at
-**every** point is `(H0⁻¹ M(κ_z))²` up to similarity — the mixed point included
-— an exact finite identity and not a limit; at L+−'s covariant cell with the
-parameters on the star line the onsite pencil multisets are
-`{9/8 ×2, 16/11 ×2, 18/11 ×4}` at both pure points and
-`{3/2 ×2, 64/33 ×2, 24/11 ×4}` at the mixed point, **every** nonzero
-eigenvalue a Block 216 branch constant `{1, 128/99, 16/11 ×2}` times
-`kᵀ G1 k` at `κ_z` (`9/8, 9/8, 3/2`), so the cross term `G1_tx = −3/8` is
-isolated from the three points and **the cone's shape restricted to the
-`(t, x)` plane is visible to a bench**; at the all-plus `W1` control the
-identity holds but the shape statement fails exactly (one rational branch,
-the rest the roots of an irreducible cubic or of a linear times an
-irreducible quadratic); the overlap Bloch fold sees the parameters at the
-mixed point alone, through the signed sum `(−D07 − D16 + D25 + D34)/4`, and
-the overlap bench distinguishes `t` from `x` at the witness where the onsite
-bench does not. **Scout-grade finite exact linear algebra on one cell form,
-not a spacetime and not a dynamics** — Block 211's fence, inherited verbatim
-through Blocks 213–217.
-
+`(i,1,1)` and the **mixed** fine point `(i,i,1)` — the raising Bloch block is
+`i D(κ_z)` at every point, **measured before any identity is asserted** and at
+symbolic `z` as `d_B(z) = Σ_μ (z_μ − 1/z_μ)/2 · D(e_μ)` (the fine momenta enter
+additively; at the mixed point `i D(e_t + e_x)`); the onsite Hodge block is
+`Z⁻¹ H0 Z`; with `d² = 0` the onsite pencil block at **every** point is
+`(H0⁻¹ M(κ_z))²` up to similarity — the mixed point included, an exact finite
+identity and not a limit; at L+−'s covariant cell on the star line the pencil
+multisets `{9/8 ×2, 16/11 ×2, 18/11 ×4}` (both pure points) and
+`{3/2 ×2, 64/33 ×2, 24/11 ×4}` (mixed) are Block 216's constants
+`{1, 128/99, 16/11 ×2}` times `kᵀ G1 k` at `κ_z` (`9/8, 9/8, 3/2`), the cross
+term `G1_tx = −3/8` is isolated and **the cone's shape on the `(t, x)` plane is
+visible to a bench**; at the all-plus `W1` the identity holds but the shape fails
+exactly (one rational branch, an irreducible cubic or a linear times an
+irreducible quadratic for the rest); the overlap fold sees the parameters at the
+mixed point alone through `(−D07 − D16 + D25 + D34)/4`, and the overlap bench
+distinguishes `t` from `x` at the witness where the onsite bench does not.
+**Scout-grade finite exact linear algebra on one cell form, not a spacetime and
+not a dynamics** — Block 211's fence, inherited verbatim through Blocks 213–217.
 ---
 
 ## N0 — THE BANNER, and it comes before any numeral
@@ -560,3 +554,55 @@ is non-supply within this formalism, never necessity.
 - **R6** — the covariant witness is a vacuum, a background or a spacetime. Not established.
 
 ---
+
+## N5 — the fence
+```text
+N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY, BENCH AND SHAPE ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its 64 face-sign cells and its four free parameters, Block 213's curve witnesses, bench_matrix and Bloch reduction, Block 214's principal part under both assemblies, Block 216's 8 covariant witnesses and their branch constants, Block 217's algebraic-field bench and its e_t identity, and Block 105's assemblies are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H ON THE FOLDED H0 AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; 'ONE METRIC'S CONE' NAMES BLOCK 213'S EXACT STATEMENT det B = c (k^T G1 k)^2 AND 'THE CONE'S SHAPE' NAMES THE PROPORTIONALITY OF EVERY PENCIL BRANCH TO ONE QUADRIC, RESTRICTED HERE TO THE (t, x) PLANE, AND NOTHING PHYSICAL; 'BENCH' NAMES THIRTY-TWO EXACT EIGENVALUES OF ONE FINITE MATRIX AT FOUR BLOCH POINTS; NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED.\nper_site: THE BENCH is Block 213's bench_matrix at extent (4,4,2) -- the two-direction bench of the three-direction chain, 32 sites, the y direction at extent 2 carrying no link (0 y-link entries, 64 nonzero raising entries), its Bloch momenta (1,1,1), (1,i,1), (i,1,1) and the MIXED fine point (i,i,1) -- at L+-'s own cell (Block 216's mask 2, Block 213's face signs (+,+,+,+,-,+), the curve moduli (sqrt6/3, 1/3, 3 sqrt6/8, 1/2)) with the parameters at the star-line point (0, 1/4, -1/4, 1/4), at the all-plus W1 control (15/16, 1/4, 1, 1/4) with the same parameters, and at the flat cell; Block 217's (4,2,2) onsite pencil multiset {0 x8, 9/8 x2, 16/11 x2, 18/11 x4} reproduces at the witness as the consistency gate, G1_tt = 9/8; the flat cell at zero parameters gives R5's {0 x8, 1 x16, 2 x8} under both assemblies and both readings.\nper_mode: THE BLOCH-POINT DECOMPOSITION, MEASURED BEFORE ANY IDENTITY: the raising Bloch block at every point is i D(kappa_z) with kappa_z = e_t [z_t = i] + e_x [z_x = i], because d_B(z) = sum_mu (z_mu - 1/z_mu)/2 D(e_mu) at symbolic z -- the two fine momenta enter ADDITIVELY, and at the mixed point the block is i D(e_t + e_x) exactly; D(e_mu)^2 = 0, the D(e_mu) anticommute, D(e_t + e_x)^2 = 0; the onsite Hodge Bloch block is Z^-1 H0 Z with Z = diag(z^c) at every point; hence the onsite pencil block charpoly at EVERY point equals the charpoly of (H0^-1 M(kappa_z))^2 -- at the pure points with (H0^-1 M(e_t))^2 and (H0^-1 M(e_x))^2, at the MIXED point with (H0^-1 M(e_t + e_x))^2, at the witness, the control and the flat cell, an exact finite identity resting on d^2 = 0 and not a limit; the identity FAILS for the form reading and for the overlap assembly at every nonzero point of the witness and the control.\nper_block: THE CONE'S SHAPE IS VISIBLE TO THIS BENCH at the covariant witness: under the onsite pencil the nonzero eigenvalues are {9/8 x2, 16/11 x2, 18/11 x4} at (i,1,1) and at (1,i,1) and {3/2 x2, 64/33 x2, 24/11 x4} at (i,i,1) -- at each of the three points EVERY nonzero eigenvalue is a Block 216 branch constant {1, 128/99, 16/11 x2} times k^T G1 k at kappa_z, the quadric values 9/8, 9/8 and 3/2; the cross term G1_tx = (3/2 - 9/8 - 9/8)/2 = -3/8 is isolated from the three points and equals the entry of G1 = D1/D0, so the three points read the (t, x)-plane restriction (9/8, -3/8, 9/8) of one quadric, the ky direction unsampled; det M on the line is one quadric to the fourth power, 81/64 at e_t and 4 at e_t + e_x, the ratio (Q_mixed/Q_t)^4; the twenty degree-32 charpolys (twelve at the line point, eight at zero parameters) all have Bloch union = direct.\nlattice_wide: THE CONTROL AND THE OTHER ASSEMBLY: at the all-plus W1 with the same parameters the Bloch = principal identity still holds under the onsite pencil at every point (it is structural), but the shape statement fails exactly thus -- at every nonzero point one rational branch k^T G1 k (16/15, 16/15, 8/5, reading W1's G1_tx = -4/15) and the other three eigenvalues the roots of an irreducible cubic at (i,1,1) and (i,i,1) and of 256/385 times an irreducible quadratic at (1,i,1), the two pure points differing; det M on the line is two distinct quadrics each squared. Under the OVERLAP assembly the Bloch fold at symbolic face signs, moduli and parameters is parameter-free at both pure points and at the MIXED point sees the parameters through the signed sum (-D07 - D16 + D25 + D34)/4 on the parity block -- not Block 217's s -- so the overlap bench charpolys at the line point EQUAL the zero-parameter ones at the pure points and DIFFER at the mixed point (form and pencil, witness and control); the overlap bench distinguishes the t and x directions at the witness (form {36481/55296 x4, 89401/55296 x4} at (i,1,1) against {51529/55296 x4, 69169/55296 x4} at (1,i,1); pencil R5's {1 x8} against {227/263 x4, 263/227 x4}) where the onsite bench does not -- Block 217's x-axis D4 seen by a bench.\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under the group THEN at the covariant witness the two-direction bench reads the cone's shape restricted to the (t, x) plane exactly under the onsite pencil and reads it under no other assembly or reading; the antecedent is a reading. OPEN: the ky direction and any extent sampling it, the other seven rule-A cells, symbolic parameters on the bench, the transverse branches' meaning; no dispersion law, no Lorentzian or light-cone reading, no continuum, no dynamics and no gravity is supplied.\nRESULT: ON THE TWO-DIRECTION (4,4,2) BENCH AT THE COVARIANT WITNESS THE MIXED-POINT IDENTITY HOLDS EXACTLY -- THE BLOCH RAISING BLOCK IS i D(e_t + e_x) AND THE ONSITE PENCIL BLOCK IS (H0^-1 M(e_t + e_x))^2 UP TO SIMILARITY -- AND EVERY NONZERO EIGENVALUE AT THE THREE NONZERO POINTS IS A BRANCH CONSTANT TIMES ONE QUADRIC, THE CROSS TERM -3/8 ISOLATED: THE CONE'S SHAPE ON THE (t, x) PLANE IS VISIBLE TO A BENCH; AT THE ALL-PLUS CONTROL IT IS NOT, AND THE OVERLAP ASSEMBLY SEES THE PARAMETERS ONLY AT THE MIXED POINT AND ONLY THROUGH A SIGNED SUM. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-217 STAND; Block 217's REOPEN items 3 and 4 are ANSWERED at one covariant witness as a conditional: the cone's shape becomes visible to a two-direction bench on the plane it samples, and the second direction sees the overlap assembly's x-axis distinction. Fable primary seat; refuting checker PENDING.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero.
+```
+
+---
+
+## N6 — STOP AND REOPEN
+
+### STOPPED, and why each is stopped
+
+1. **Selecting an assembly, a reading, a cell or a parameter value.** Stopped: a selector is a principle, not a
+   measurement; that one construction sees the shape is recorded as a difference.
+2. **Asserting that the cell form inherits the axiom's covariance.** Stopped: `R1` is a reading.
+3. **The `y` direction, the other seven rule-A cells, symbolic parameters on the bench.** Stopped: budget; could-nots.
+4. **A dispersion-law, Lorentzian, light-cone or continuum reading of the bench.** Stopped: `R4`, `R5`.
+
+### REOPEN IF
+
+1. A bench sampling the `y` direction (an extent with `N_y = 4`, 64 sites) is affordable at the witness: the six
+   entries of `G1` would then be read off the bench and the shape seen in all three directions.
+2. A framework principle supplies the antecedent with the assembly and the reading: the conditional then fires
+   with the shape read exactly on the sampled plane.
+3. The signed sum `−D07 − D16 + D25 + D34` is met by a principle tying the overlap fold's mixed-point parity block
+   to the star line, where it equals `−λ`.
+
+---
+
+## N7 — THE RECORD
+
+**THE LEDGER CONTINUES FROM BLOCK 217. NO CORRECTION IS LANDED BY THIS BLOCK AGAINST ANY LANDED NUMBER.** Block
+217's `(4,2,2)` multiset, its `e_t` identity, its quartic and cubic, Block 216's constants and Block 214's
+`OVERLAP_FORM_W1` reproduce here and are **connected**, not corrected. This block's own draft defect (a mutation
+flip built with `dict(**{tuple: ...})`, no mathematics touched) was fixed before certification and is disclosed in
+`RESULTS_block218.md`.
+
+```text
+python3 scripts/admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05.py
+python3 ... --mutation break_mixed_point_identity
+```
+
+### Review record
+
+- **Worker provenance:** Fable primary seat (`claude-fable-5-1`), single seat, launched 2026-09-05T19:13Z on the
+  block-218 spec; Blocks 209–217 imported read-only and never edited; the `(4,4,2)` bench, the raising-block
+  measurement at symbolic `z`, the similarity, the identities at three directions, the ratio test, the cross term,
+  the control's shapes and the per-point overlap fold were built and measured in this seat.
+- **Refuting checker:** pending (`CHECK_VERDICT = "FABLE-PRIMARY-REFUTING-CHECKER-PENDING"`).
+- **Independence class:** to be filled by the supervisor.
+- **Runs recorded:** the probe, the harness runs, the certified baseline and the declared mutations, in
+  `RESULTS_block218.md`.

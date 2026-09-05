@@ -2,9 +2,11 @@
 """BLOCK 213 -- THE WEIGHTED-KERNEL DISPERSION: THE DIRAC-KAHLER LANE KERNEL
 COMPLETED BY THE CURVED CELL FORM, ITS EXACT SQUARED SYMBOL ON THE PERIODIC
 (4,4) AND (4,2,2) BENCHES, AND THE CONE = THE METRIC'S CONE HYPOTHESIS TESTED
-EXACTLY -- THE CONE IS THE UNION OF THE TWO HODGE READINGS OF THE CELL FORM
-UNDER THE GRADED ASSEMBLY, AND A NON-HODGE PAIR OF CONES UNDER THE OVERLAP
-ASSEMBLY; NEITHER IS ONE METRIC'S CONE OFF THE FLAT POINT.
+EXACTLY -- UNDER THE GRADED ASSEMBLY THE CONE IS THE UNION OF THE TWO HODGE
+READINGS OF THE CELL FORM, WHICH COINCIDE EXACTLY ON A CODIMENSION-ONE LOCUS
+IN EIGHT OF THE SIXTY-FOUR SIGN CELLS (WHERE THE CONE IS ONE METRIC'S CONE
+AND THE SYMBOL IS STILL NOT SCALAR) AND NOWHERE ELSE OFF FLAT; UNDER THE
+OVERLAP ASSEMBLY IT IS A NON-HODGE PAIR OF CONES AT EVERY POINT MEASURED.
 
 WHAT THIS BLOCK IS.  R5 named the weighted-kernel construction as the design
 task: complete the lane kernel K = d - d^T by the curved cell form H in Block
@@ -29,7 +31,7 @@ the direct bench matrices.
       H_e^-1 B H_o^-1 B^T.
 
  (ii) THE ONSITE CONE LEMMA (general, symbolic D).  For any block-diagonal
-      cell form D = diag(D0, D1, D2, D3), det B = -D3 (k^T D1 k)(k^T E adj(D2) E k)
+      cell form D = diag(D0, D1, D2, D3), det B = +D3 (k^T D1 k)(k^T E adj(D2) E k)
       in three directions and det B = -D2 (k^T D1 k) in two.  The pencil
       principal symbol is block-diagonal by form degree with the EXACT
       branches k^T G1 k (G1 = D1/D0) and k^T G2 k (G2 = D3 E D2^-1 E) --
@@ -47,16 +49,28 @@ the direct bench matrices.
       c_K = 2 c v^2 / (3 v^2 + 1 - c^2 (v^2 + 1)) -- the same sign as, but a
       different magnitude from, the Hodge reading's shear c.
 
- (iv) THE HYPOTHESIS, ANSWERED.  On the Block 211 per-offset-isotropic family
-      G1 and G2 are proportional ONLY at the flat point, in every gauge class
-      (exact solve on the (t, u) chart).  Hence under the graded assembly the
-      cone equals the union of the two metric cones the cell form carries and
-      never one metric's cone off flat; under the overlap assembly the cone is
-      a non-Hodge pair.  The symbol is a quadratic form times the identity
-      only in two directions on the honest-volume locus v^2 = 1 - c^2 of the
-      graded assembly; everywhere else it is matrix-valued and its branches
-      are not all quadratic forms.  The exact discrepancy polynomials are
-      the result.
+ (iv) THE HYPOTHESIS, ANSWERED -- AND THE FIRST DRAFT's ANSWER CORRECTED.
+      On the four class representatives' (t, u) chart the proportionality
+      ideal of (G1, G2) has lex Groebner basis {t (u^2 + 1), u (u^2 + 1)}, so
+      there G1 ~ G2 only at flat.  But the weighted kernel is NOT invariant
+      under Block 211's corner-sign gauge (E d E is not d), so the four
+      representatives do not speak for the sixty-four sign cells.  The census
+      over all sixty-four at symbolic (v0, g0, v1, g1) finds forty-eight cells
+      coinciding only at flat and SIXTEEN carrying a coincidence CURVE, in
+      closed form: with M1 = I - g0 S0, M2 = I - g1 S1 and E = diag(1,-1,1),
+      G1 ~ G2 iff P = M1 E M2 E ~ I, and P = (1 - 2 g0 g1) I + (g1 - g0 -
+      pi0 g0 g1) S0 when S1 = -E S0 E (rule A: curve g0 = g1/(1 + pi0 g1),
+      positive and PD-solvable in all eight rule-A cells), P = (1 + 2 g0 g1) I
+      - (g0 + g1 - pi0 g0 g1) S0 when S1 = +E S0 E (rule B: no positive
+      point).  ON THE LOCUS THE GRADED CONE IS ONE METRIC's CONE, (k^T G1 k)^2,
+      and every H-pencil branch is a constant multiple of k^T G1 k with the
+      constants {1, mu, 1/(1 - g1^2) x2}, mu = (1 + 2 pi0 g1)/((1 - pi0 g1)
+      (1 + pi0 g1)^3) never 1 off flat -- so the symbol is still not scalar.
+      Off the locus the graded cone is the union of two DISTINCT quadrics and
+      the exact discrepancy is the closed form above; under the overlap
+      assembly the cone is a non-Hodge pair at every point measured, the
+      locus included.  Two witnesses over QQ(sqrt 6) realise the locus on the
+      family with every cone, reading and branch constant RATIONAL.
 
   (v) SHEAR REGISTRATION (the #7970 question).  The shears g0, g1 enter the
       cone in both assemblies (exact nonzero derivatives); the diagonal moduli
@@ -96,23 +110,24 @@ GATES
   E  THE EXACT SPECTRA AT THE WITNESSES: Bloch union = direct bench, all four
      constructions, both benches; translation covariance measured; the PD
      boundary edge case.
-  F  THE PRINCIPAL PART AND THE CONE: the onsite lemma and the overlap cone,
-     symbolic; the two-direction branches, symbolic in (c, v); the
-     three-direction branch identification at every witness; scalar-or-not;
-     the metric identifications and their exact discrepancies; coincidence
-     only at flat.
+  F  THE PRINCIPAL PART AND THE CONE: the expansion and the onsite lemma and
+     the overlap cone, symbolic; the two-direction branches, symbolic in
+     (c, v); the three-direction branch identification at every witness;
+     scalar-or-not, on and off the locus; the coincidence theorem (chart
+     fail-closed, sixty-four-cell census, closed form); the locus witnessed
+     over QQ(sqrt 6) and proved along the curve.
   G  SHEAR REGISTRATION: exact, separately for shear and for the diagonal
      moduli, and the tension recorded.
   H  THE SCOPE FENCES, EACH A MEASURED CONSTANT.
   I  the note at its final path, the N5 fence byte-identical, nsimplify and
      float-literal and float-call counts all ZERO in this file's own source.
 
-BASELINE EXPECTATION: A through I PASS, 35 checks, exit 0.
+BASELINE EXPECTATION: A through I PASS, 36 checks, exit 0.
 
 MUTATIONS
-  THIRTY-FIVE declared mutations, each rewriting ONE CLAIM and flipping EXACTLY
+  THIRTY-SIX declared mutations, each rewriting ONE CLAIM and flipping EXACTLY
   ONE FAMILY; every measurement happens once, before any mutation flag is
-  read.  Per-family census A 2, B 6, C 5, D 2, E 3, F 7, G 3, H 4, I 3, for
+  read.  Per-family census A 2, B 6, C 5, D 2, E 3, F 8, G 3, H 4, I 3, for
   both checks and mutations.
 
 RUNNING
@@ -258,7 +273,8 @@ MUTATIONS = (
     "break_three_dim_branch_identification",
     "claim_principal_part_scalar",
     "claim_cone_is_metric_cone",
-    "break_coincidence_only_at_flat",
+    "break_coincidence_census",
+    "break_coincidence_locus",
     "break_shear_registration",
     "claim_volume_registration",
     "drop_tension_record",
@@ -296,7 +312,8 @@ MUTATION_GATE = {
     "break_three_dim_branch_identification": "F",
     "claim_principal_part_scalar": "F",
     "claim_cone_is_metric_cone": "F",
-    "break_coincidence_only_at_flat": "F",
+    "break_coincidence_census": "F",
+    "break_coincidence_locus": "F",
     "break_shear_registration": "G",
     "claim_volume_registration": "G",
     "drop_tension_record": "G",
@@ -453,8 +470,8 @@ IMPOSED_OBJECTS = (
     "THE TWO LANDED ASSEMBLIES OF ONE CELL FORM INTO H: Block 105's onsite_hodge (cells anchored at even sites, weight 1, the grade-diagonal assembly) and Block 105's overlap_hodge (cells anchored at every site, weight 2^-d, Block 191's rule as used by Block 201's fork_hodge), extended from two to three directions by the same anchoring rule",
     "THE TWO SQUARED-SYMBOL READINGS: the Euclidean form -K_H^2 and the H-pencil -(H^-1 K_H)^2 = d delta + delta d with delta = H^-1 d^T H, which share the generalized eigenproblem K_H v = mu H v and therefore the characteristic cone",
     "THE PERIOD-2 BLOCH REDUCTION: the 2^d x 2^d Bloch matrix A_B(z)[c, c'] = sum_delta A[c, delta] z^delta of every period-2 operator, evaluated at exact roots of unity z_d = exp(2 pi i m_d / N_d), m_d < N_d / 2, whose union over supercell momenta is the bench spectrum; the first-order matrix D(kappa) and the bipartite block B(kappa) = H_e D_eo + D_oe^T H_o whose determinant's zero set is the cone",
-    "THE TWO CANDIDATE CELL METRICS, READ OFF THE DEGREE BLOCKS BY BLOCK 209's HONEST-LIFT PATTERN D3(g, V) = diag(V, V g^-1, E g E / V, 1/V): G1 = D1 / D0 (the degree-0/1 reading) and G2 = D3 E D2^-1 E (the degree-2/3 reading), with E = diag(1, -1, 1) Block 209's wedge signature; equal at the flat point and, on the Block 211 family, nowhere else",
-    "BLOCK 211's LANDED FAMILY AND WITNESSES READ THROUGH ITS OWN RUNNER (face_system, solve_pinned, branch_moduli, diagonal_point, W1, W2, W3, the four class representatives, the (t, u) chart) and BLOCK 105's LANDED shear_hodge(c, v) READ THROUGH BLOCK 128's IMPORT, BLOCK 201's lane_kernel, covariant_kernel, site_sign_equivalent, raising_part and fork_hodge, and BLOCK 209's omega, GENERATORS, CORNERS and DEGREE_INDICES: no line of this block edits any of them",
+    "THE TWO CANDIDATE CELL METRICS, READ OFF THE DEGREE BLOCKS BY BLOCK 209's HONEST-LIFT PATTERN D3(g, V) = diag(V, V g^-1, E g E / V, 1/V): G1 = D1 / D0 (the degree-0/1 reading) and G2 = D3 E D2^-1 E (the degree-2/3 reading), with E = diag(1, -1, 1) Block 209's wedge signature; equal at the flat point and, on the Block 211 family, on an explicit codimension-one locus of eight sign cells and nowhere else",
+    "BLOCK 211's LANDED FAMILY AND WITNESSES READ THROUGH ITS OWN RUNNER (face_system, solve_pinned, branch_moduli, diagonal_point, W1, W2, W3, the four class representatives, the (t, u) chart, and all sixty-four sign cells of its degree-block formulas) and BLOCK 105's LANDED shear_hodge(c, v) READ THROUGH BLOCK 128's IMPORT, BLOCK 201's lane_kernel, covariant_kernel, site_sign_equivalent, raising_part and fork_hodge, and BLOCK 209's omega, GENERATORS, CORNERS and DEGREE_INDICES: no line of this block edits any of them",
 )
 REGISTERED_OBJECTS = ()
 ADOPTED_OBJECTS = ()
@@ -485,7 +502,8 @@ READINGS = (
     "R3: that the assembly is decided.  Measured: Block 105 lands BOTH the onsite and the overlap assembly, Block 201's completion uses the overlap one, and no premise here chooses; the two give different cones and both are reported.  Reading.",
     "R4: that kernel-side shear registration is a gravitational shear response.  Measured: exact nonzero derivatives of a polynomial with respect to two rational parameters of one cell form.  The matter-side result it stands in tension with is itself conditional (PR #7970).  Reading.",
     "R5: that Block 201's completion is corrected.  Measured: Block 201's fork Hodge is reproduced digit for digit and its overlap assembly is one of the two landed assemblies run here; nothing landed is touched.  Reading.",
-    "R6: that any of it generalises past this instance.  Measured: two periodic benches, one cell family, eight witnesses, two assemblies, two readings, one rule.  Reading.",
+    "R6: that any of it generalises past this instance.  Measured: two periodic benches, one cell family, ten witnesses, two assemblies, two readings, one rule.  Reading.",
+    "R7: that the coincidence locus is selected, preferred or physical.  Measured: a codimension-one algebraic locus in eight of sixty-four sign cells on which two DECLARED readings of one cell form agree; no premise here prefers it, the overlap assembly does not see it, and the symbol is not scalar on it.  Reading.",
 )
 CHECK_VERDICT = "DEGRADED-WORKER-MODE-FABLE-PRIMARY-REFUTING-CHECKER-PENDING"
 
@@ -509,9 +527,9 @@ FLAT_H_IS_IDENTITY = True
 FLAT_KERNEL_IS_R5 = True
 WITNESS_NAMES = ("flat", "W1", "W2", "W3", "mixed", "near_boundary",
                  "boundary", "honest_face")
-WITNESS_COUNT = 8
+WITNESS_COUNT = 10                      # eight rational + two QQ(sqrt 6) locus witnesses
 PD_WITNESSES = ("flat", "W1", "W2", "W3", "mixed", "near_boundary",
-                "honest_face")
+                "honest_face", "L+-", "L-+")
 COMPATIBLE_RANKS = (32, 32)
 
 # --- D: THE R5 CONTROL --------------------------------------------------------
@@ -524,10 +542,19 @@ ASSEMBLIES = ("onsite", "overlap")
 READINGS_NAMES = ("form", "pencil")
 # W1's own (4,4) spectra, the overlap assembly, declared exactly.
 W1_OVERLAP_PENCIL_2D = ((0, 4), (1, 8), (sp.Rational(1922, 1081), 4))
-BOUNDARY_ONSITE_H_SINGULAR = True
+# THE PD BOUNDARY IS A THREE-DIRECTION BOUNDARY: at g0 = g1 = 1/2 all-plus the
+# triangle determinant (1 + g)^2 (1 - 2g) vanishes, so the onsite H on (4,2,2)
+# is singular; the (4,4) bench carries the origin tx FACE, Block 105's
+# shear_hodge at c = 1/2, whose 2 x 2 block has determinant v0^2/(1 - c^2) and
+# is REGULAR (the two-direction PD condition is |c| < 1).  The first draft
+# declared it singular on both benches, and its gate would have failed.
+BOUNDARY_ONSITE_H_SINGULAR_3D = True
+BOUNDARY_ONSITE_H_SINGULAR_2D = False
 
 # --- F: THE PRINCIPAL PART AND THE CONE ---------------------------------------
-ONSITE_CONE_LEMMA_3D = "det B = -D3 * (k^T D1 k) * (k^T E adj(D2) E k)"
+# THE SIGN IS +D3 IN THREE DIRECTIONS AND -D2 IN TWO: the first draft declared
+# -D3 and its gate would have failed had its baseline ever finished.
+ONSITE_CONE_LEMMA_3D = "det B = +D3 * (k^T D1 k) * (k^T E adj(D2) E k)"
 ONSITE_CONE_LEMMA_2D = "det B = -D2 * (k^T D1 k)"
 ONSITE_PENCIL_BRANCHES_3D = ("k^T G1 k  (0-form sector, G1 = D1/D0)",
                              "k^T G2 k  (3-form sector, G2 = D3 E D2^-1 E)",
@@ -553,9 +580,61 @@ W1_ONSITE_CONES = ("2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2",
 W1_OVERLAP_CONES = ("55*kt**2 - 16*kt*kx - 16*kt*ky + 55*kx**2 - 16*kx*ky + 55*ky**2",
                     "55*kt**2 - 16*kt*kx + 16*kt*ky + 55*kx**2 - 16*kx*ky + 55*ky**2")
 PRINCIPAL_PART_SCALAR_ANYWHERE_CURVED_3D = False
-CONE_IS_ONE_METRIC_CONE_OFF_FLAT = False
+# THE COINCIDENCE THEOREM, IN THREE PARTS.  (1) On the four class
+# representatives' (t, u) chart the ideal of the 2 x 2 minors of (vec G1,
+# vec G2) has the lex Groebner basis below, whose only REAL zero is the flat
+# point.  (2) BUT the weighted kernel is NOT invariant under Block 211's
+# corner-sign gauge (E d E != d), so four representatives do not speak for the
+# sixty-four sign cells: the census over all of them, at symbolic (v0, g0, v1,
+# g1), finds forty-eight cells with coincidence only at flat and SIXTEEN cells
+# carrying a coincidence CURVE.  (3) Closed form: with S0, S1 the two signed
+# off-diagonal patterns (M1 = I - g0 S0, M2 = I - g1 S1) and E = diag(1, -1, 1),
+# G1 ~ G2 iff P := M1(g0) E M2(g1) E ~ I, and
+#     P = (1 - 2 g0 g1) I + (g1 - g0 - pi0 g0 g1) S0   when S1 = -E S0 E  (rule A),
+#     P = (1 + 2 g0 g1) I - (g0 + g1 - pi0 g0 g1) S0   when S1 = +E S0 E  (rule B),
+# so rule A gives the curve g0 = g1/(1 + pi0 g1), positive on the magnitude
+# domain, and rule B the curve g0 = -g1/(1 - pi0 g1), with no positive point.
+# Eight of the sixty-four cells therefore carry a positive-definite-solvable
+# curve on which the graded cone IS one metric's cone.
+COINCIDENCE_CHART_GROEBNER = ("t*(u**2 + 1)", "u*(u**2 + 1)")
 COINCIDENCE_SOLUTIONS = ((0, 0),)
 COINCIDENCE_CLASSES = 4
+SIGN_CELLS = 64
+COINCIDENCE_CENSUS = (                     # (lex Groebner basis in (g0, g1), cells, classes)
+    ("(g0, g1)", 48, ((-1, -1), (-1, 1), (1, -1), (1, 1))),
+    ("(g0*g1 + g0 - g1,)", 4, ((1, -1),)),
+    ("(g0*g1 - g0 + g1,)", 4, ((-1, 1),)),
+    ("(g0*g1 - g0 - g1,)", 4, ((1, 1),)),
+    ("(g0*g1 + g0 + g1,)", 4, ((-1, -1),)),
+)
+COINCIDENCE_FLAT_ONLY_CELLS = 48
+COINCIDENCE_CURVE_CELLS = 16
+LOCUS_RULE_A = "S1 = -E S0 E (so pi1 = -pi0): g0 (1 + pi0 g1) = g1, i.e. g0 = g1/(1 + pi0 g1), positive on the magnitude domain"
+LOCUS_RULE_B = "S1 = +E S0 E (so pi1 = pi0): g0 + g1 = pi0 g0 g1, i.e. g0 = -g1/(1 - pi0 g1) < 0: no positive point"
+LOCUS_RULE_A_CELLS = 8
+LOCUS_RULE_B_CELLS = 8
+LOCUS_POSITIVE_CELLS = 8
+COINCIDENCE_ONLY_AT_FLAT_IN_EVERY_CELL = False
+CONE_IS_ONE_METRIC_CONE_EVERYWHERE = False
+CONE_IS_ONE_METRIC_CONE_ON_LOCUS = True
+# THE TWO LOCUS WITNESSES, ONE PER POSITIVE RULE-A CLASS, over QQ(sqrt 6): no
+# rational point with rational volumes exists on either curve below height
+# 120, so the witnesses carry sqrt 6 in the volumes -- and every cone, every
+# metric reading and every branch constant at them is RATIONAL.
+LOCUS_WITNESS_NAMES = ("L+-", "L-+")
+LOCUS_MU = (sp.Rational(32, 27), sp.Rational(27, 32))
+LOCUS_BRANCH_CONSTANTS = ((sp.Integer(1), sp.Rational(32, 27), sp.Rational(4, 3), sp.Rational(4, 3)),
+                          (sp.Integer(1), sp.Rational(27, 32), sp.Rational(9, 8), sp.Rational(9, 8)))
+LOCUS_BRANCH_CONSTANTS_SYMBOLIC = ("1", "(1 + 2 pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3)",
+                                   "1/(1 - g1^2)", "1/(1 - g1^2)")
+LOCUS_MU_MINUS_ONE = "pi0 g1^3 (2 + pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3)"
+LOCUS_SYMBOL_SCALAR = False
+# THE TRANSVERSE PAIR SPLITS INTO TWO QUADRATIC-FORM BRANCHES AT EXACTLY ONE
+# CURVED RATIONAL WITNESS -- honest_face, where the offset-1 shear is zero and
+# D2 is isotropic -- and stays an irreducible quadratic at the other five; the
+# first draft declared it split nowhere, and its gate would have failed.
+TRANSVERSE_SPLIT_RATIONAL_WITNESSES = ("honest_face",)
+TRANSVERSE_SPLITS_ON_LOCUS = True
 
 # --- G: SHEAR REGISTRATION ----------------------------------------------------
 SHEAR_ENTERS_CONE_ONSITE = True
@@ -577,7 +656,7 @@ ASSEMBLY_DECIDED = False
 HODGE_READING_SELECTED = False
 INSTANCE_SCOPE = (
     "two periodic benches, (4,4) with Block 105's 2D face form and (4,2,2) with Block 211's 3D cell form, and no other extent",
-    "one cell family, Block 211's per-offset-isotropic variety at the degree-diagonal representative, and eight witnesses",
+    "one cell family, Block 211's per-offset-isotropic variety at the degree-diagonal representative, eight rational witnesses and two QQ(sqrt 6) locus witnesses, with the sixty-four-cell census taken on the degree-block formulas at symbolic moduli",
     "two assemblies, Block 105's onsite and overlap, and two squared-symbol readings, the Euclidean form and the H-pencil",
     "one rule, Block 201's A = sx, B = -sz shadow and its Block 209 three-direction shadow, at the periodic closure and m = 0",
     "the principal part at k = 0 of the eight-fold degenerate zero; no continuum limit, no lattice-spacing statement",
@@ -654,10 +733,55 @@ def proportional(first, second, variables) -> bool:
     return not (ratio.free_symbols & set(variables))
 
 
+def proportionality_minors(first: sp.Matrix, second: sp.Matrix) -> list:
+    """The nonzero 2 x 2 minors of the two vectorised symmetric 3 x 3 matrices:
+    their common zero set is EXACTLY the locus where the matrices are
+    proportional.  Numerators only, so the ideal is polynomial."""
+    vec1 = [first[i, j] for i in range(3) for j in range(i, 3)]
+    vec2 = [second[i, j] for i in range(3) for j in range(i, 3)]
+    minors = set()
+    for i in range(6):
+        for j in range(i + 1, 6):
+            minor = sp.numer(sp.together(sp.cancel(vec1[i] * vec2[j] - vec1[j] * vec2[i])))
+            if minor != 0:
+                minors.add(sp.expand(minor))
+    return sorted(minors, key=str)
+
+
+def real_solutions_lex(basis: list, first, second) -> tuple:
+    """THE REAL ZEROS OF A LEX GROEBNER BASIS IN (first, second), EXACTLY AND
+    FAIL-CLOSED.  The basis contains a univariate element in `second`; its
+    real roots are taken exactly; each is substituted and the real roots of
+    the gcd of what remains in `first` are taken.  A substitution that kills
+    every remaining element is a positive-dimensional real component and is
+    returned as a marker rather than dropped -- sp.solve would drop it."""
+    univariate = [g for g in basis if not g.has(first)]
+    if not univariate:
+        return ("NO-UNIVARIATE-ELEMENT",)
+    solutions = set()
+    for second_root in sp.Poly(univariate[-1], second).real_roots():
+        rest = [sp.expand(g.subs(second, second_root)) for g in basis]
+        rest = [g for g in rest if g != 0]
+        if not rest:
+            return ("POSITIVE-DIMENSIONAL", second_root)
+        common = rest[0]
+        for g in rest[1:]:
+            common = sp.gcd(common, g)
+        if common.has(first):
+            for first_root in sp.Poly(common, first).real_roots():
+                solutions.add((first_root, second_root))
+    return tuple(sorted(solutions, key=lambda s: (str(s[0]), str(s[1]))))
+
+
 def primitive_factors(expression, variables) -> tuple:
     """The irreducible factors over QQ that involve the listed variables, as
-    expanded primitive polynomials with their multiplicities."""
-    _, factors = sp.factor_list(sp.together(sp.expand(expression)))
+    expanded primitive polynomials with their multiplicities.  A rational
+    function is reduced to its numerator; its denominator must be free of the
+    listed variables (it is a moduli scale), else the call fails closed."""
+    numerator, denominator = sp.fraction(sp.together(sp.expand(expression)))
+    if denominator.free_symbols & set(variables):
+        raise ValueError("cone denominator carries a formal variable")
+    _, factors = sp.factor_list(sp.expand(numerator))
     out = []
     for base, power in factors:
         if base.free_symbols & set(variables):
@@ -1015,6 +1139,41 @@ def quadratic_form(matrix: sp.Matrix, kappa: tuple):
 # ---------------------------------------------------------------------------
 # THE WITNESSES, READ THROUGH BLOCK 211's OWN OBJECTS
 # ---------------------------------------------------------------------------
+SQRT6 = sp.sqrt(6)
+FACES = (("tx", 0), ("ty", 0), ("xy", 0), ("tx", 1), ("ty", 1), ("xy", 1))
+
+
+def locus_witness_table() -> dict:
+    """THE TWO COINCIDENCE-LOCUS WITNESSES, on the family (both ties exact),
+    in rule-A cells: s1 = (s_tx0, -s_ty0, s_xy0) = -E s0 E."""
+    return {
+        # class (+1, -1): s0 = (+, +, +), s1 = (+, -, +); g1 = 1/2, g0 = g1/(1 + g1) = 1/3;
+        # v0^2 = (1 - g0^2)(1 - g1^2) = 2/3, v1^2 = (1 - g1^2)/(1 - g0^2) = 27/32.
+        "L+-": ((SQRT6 / 3, sp.Rational(1, 3), 3 * SQRT6 / 8, HALF),
+                dict(zip(FACES, (1, 1, 1, 1, -1, 1)))),
+        # class (-1, +1): s0 = (+, -, +), s1 = (+, +, +); g1 = 1/3, g0 = g1/(1 - g1) = 1/2;
+        # v0^2 = 2/3, v1^2 = 32/27.
+        "L-+": ((SQRT6 / 3, HALF, 4 * SQRT6 / 9, sp.Rational(1, 3)),
+                dict(zip(FACES, (1, -1, 1, 1, 1, 1)))),
+    }
+
+
+def formal_family(class_signs: dict, g0, g1, v0, v1) -> sp.Matrix:
+    """BLOCK 211's DEGREE-BLOCK FORMULAS AS A FORMAL 8 x 8 CELL FORM at the given
+    (possibly symbolic, possibly untied) moduli: [v0], v1 M1(g0; signs),
+    M2(g1; signs)/v0, [1/v1] on Block 209's degree indices."""
+    family = sp.zeros(8, 8)
+    family[0, 0], family[7, 7] = v0, 1 / v1
+    first = v1 * first_block(g0, class_signs)
+    second = second_block(g1, class_signs) / v0
+    ones, twos = b209.DEGREE_INDICES[1], b209.DEGREE_INDICES[2]
+    for i in range(3):
+        for j in range(3):
+            family[ones[i], ones[j]] = first[i, j]
+            family[twos[i], twos[j]] = second[i, j]
+    return family
+
+
 def witness_table() -> dict:
     flipped_both = b211.flipped(("xy", 0), ("xy", 1))
     return {
@@ -1056,6 +1215,10 @@ def solve_witness(name: str, moduli: tuple, signs: dict) -> tuple:
     _, matrix, rhs = b211.face_system(b211.branch_moduli(volume0, gamma0, volume1, gamma1, signs))
     ranks = (matrix.rank(), matrix.row_join(rhs).rank())
     cell, free = b211.solve_pinned(matrix, rhs)
+    # radsimp is the identity on rationals and puts the QQ(sqrt 6) locus
+    # witnesses' entries into the canonical a + b sqrt(6) form so that every
+    # exact sign test below is decidable.
+    cell = cell.applyfunc(sp.radsimp)
     # THE DEGREE-BLOCK FORMULAS OF BLOCK 211, RE-VERIFIED AT THE POINT.
     first = volume1 * b211.signed_triangle((signs[("xy", 0)] * gamma0,
                                             signs[("ty", 0)] * gamma0,
@@ -1075,8 +1238,11 @@ def solve_witness(name: str, moduli: tuple, signs: dict) -> tuple:
     face = sp.Matrix(4, 4, lambda i, j: cell[face_indices[i], face_indices[j]])
     face_moduli = (signs[("tx", 0)] * gamma0, volume0)
     face_ok = residual_count(face - sp.Matrix(b211.LANDED_SHEAR_HODGE(*face_moduli))) == 0
-    minors = b211.leading_minors(cell)
+    minors = tuple(sp.radsimp(m) for m in b211.leading_minors(cell))
     g1, g2, d0, d1, d2, d3 = metric_candidates(cell)
+    if g2 is not None:
+        g2 = g2.applyfunc(sp.radsimp)
+    g1 = g1.applyfunc(sp.radsimp)
     prop = None
     if g2 is not None:
         vec1 = [g1[i, j] for i in range(3) for j in range(i, 3)]
@@ -1177,9 +1343,32 @@ class PrincipalFacts:
     onsite_branches_g1_g2_everywhere: bool
     overlap_cones_never_g1_g2: bool
     principal_scalar_anywhere_curved_3d: bool
-    transverse_branches_quadratic_anywhere: bool
+    transverse_split_witnesses: tuple
+    coincidence_chart_bases: tuple
+    coincidence_chart_bases_equal: bool
     coincidence_solutions: tuple
     coincidence_classes: int
+    census: tuple                  # ((groebner key, cells, classes), ...)
+    census_cells: int
+    rule_a_cells: int
+    rule_b_cells: int
+    rules_cover_curve_cells: bool
+    closed_form_ok: bool
+    curve_solutions_ok: bool
+    locus_pd: bool
+    locus_proportional: bool
+    locus_mu: tuple
+    locus_one_cone_squared: bool
+    locus_constants: tuple
+    locus_transverse_split: bool
+    locus_overlap_factor_counts: tuple
+    locus_overlap_never_g1: bool
+    locus_symbolic_one_cone: bool
+    locus_symbolic_branches_k_free: bool
+    locus_symbolic_constants: tuple
+    locus_symbolic_constants_match: bool
+    locus_mu_minus_one: tuple
+    locus_mu_minus_one_matches: bool
     w1_zero_form_symbol: str
 
 
@@ -1288,9 +1477,10 @@ def measure_construction(witnesses: dict) -> tuple:
         and residual_count(bench_matrix(overlap_rules(w1_face, b201.CELL_CORNERS, 2), BENCH_2D)
                            - bench_assembly(BENCH_2D, b201.CELL_CORNERS, lambda a: w1_face,
                                             bench_sites(BENCH_2D), sp.Rational(1, 4))) == 0)
-    # (5) THE CELL FORMS, SOLVED THROUGH BLOCK 211.
+    # (5) THE CELL FORMS, SOLVED THROUGH BLOCK 211: the eight rational witnesses
+    # and the two QQ(sqrt 6) locus witnesses.
     cells, cell_matrices = [], {}
-    for name in WITNESS_NAMES:
+    for name in WITNESS_NAMES + LOCUS_WITNESS_NAMES:
         moduli, signs = witnesses[name]
         facts, cell = solve_witness(name, moduli, signs)
         cells.append(facts)
@@ -1399,13 +1589,16 @@ def measure_spectra(cell_matrices: dict) -> SpectrumFacts:
 
 
 def principal_objects(rules_h: dict, raising: dict, dim: int, kappa: tuple,
-                      with_pencil: bool = True) -> dict:
+                      with_pencil: bool = True, factor_det: bool = True) -> dict:
     """THE PRINCIPAL-PART OBJECTS OF ONE CONSTRUCTION: H0, D(kappa), B, det B,
-    the form block B B^T and the pencil block H_e^-1 B H_o^-1 B^T."""
+    the form block B B^T and the pencil block H_e^-1 B H_o^-1 B^T.  At the
+    fully symbolic cell form det B is left EXPANDED rather than factored
+    (factor_det=False): the identity gates below compare expanded polynomials."""
     h0 = folded_matrix(rules_h, dim)
     dk = first_order_matrix(raising, dim, kappa)
     block, h_e, h_o, parity = bipartite_block(h0, dk, dim)
-    det_b = sp.factor(sp.cancel(block.det(method="berkowitz")))
+    raw_det = block.det(method="berkowitz")
+    det_b = sp.factor(sp.cancel(raw_det)) if factor_det else sp.expand(raw_det)
     form_block = (block * block.T).applyfunc(sp.cancel)
     pencil_block = None
     if with_pencil and sp.cancel(h_e.det()) != 0 and sp.cancel(h_o.det()) != 0:
@@ -1452,28 +1645,81 @@ def measure_principal(cell_matrices: dict) -> PrincipalFacts:
         for j in range(3):
             cell[unit[i], unit[j]] = D1[i, j]
             cell[complement[i], complement[j]] = D2[i, j]
-    objects = principal_objects(onsite_rules(cell, b209.CORNERS, 3), d3, 3, kappa3)
+    # FRACTION-FREE, BECAUSE THE FIRST DRAFT's GENERIC 4 x 4 PENCIL WITH
+    # SYMBOLIC 3 x 3 INVERSES RAN THE BASELINE PAST THE CACHE TIMEOUT: every
+    # identity below is an exact polynomial identity in the seventeen symbols,
+    # with adjugates in place of inverses, and the transverse product is taken
+    # on the symbolic Block 211 family, where the inverses are small.
+    objects = principal_objects(onsite_rules(cell, b209.CORNERS, 3), d3, 3, kappa3,
+                                with_pencil=False, factor_det=False)
     q1 = quadratic_form(D1, kappa3)
     q2_adj = quadratic_form(signature * D2.adjugate() * signature, kappa3)
-    lemma_3d = is_zero(objects["detB"] + D3 * q1 * q2_adj)
-    pencil = objects["pencil"]
-    # BLOCK-DIAGONALITY BY FORM DEGREE, the 0-form branch, the top-form
-    # eigenvector adj(D2) E k with eigenvalue D3 k^T E D2^-1 E k, and the
-    # product of the two transverse branches.
-    even, _ = even_odd(3)
-    zero_form_position = even.index(0)
-    block_diagonal = all(is_zero(pencil[zero_form_position, j]) and is_zero(pencil[j, zero_form_position])
-                         for j in range(4) if j != zero_form_position)
-    zero_form_branch = is_zero(pencil[zero_form_position, zero_form_position] - q1 / D0)
+    lemma_3d = sp.expand(objects["detB"] - D3 * q1 * q2_adj) == 0
+    d0_absent = D0 not in objects["detB"].free_symbols
+    # THE BLOCK STRUCTURE OF B: rows (0-form | three 2-forms), columns (three
+    # 1-forms | 3-form).  B = [[k^T D1, 0], [D2 W, D3 E k]] with W the wedge
+    # block of D(kappa) and, because d^2 = 0, W k = 0 and (E k)^T W = 0.  The
+    # 1-form corners in odd-corner order are (y, x, t), so D1 and k are read
+    # in that order there; the 2-form corners in even order are (t, x, y).
+    block = objects["B"]
+    even, odd = even_odd(3)
+    cs = corners(3)
+    zero_form_position = even.index(cs.index((0, 0, 0)))
     two_form_positions = [j for j in range(4) if j != zero_form_position]
-    two_form_block = pencil.extract(two_form_positions, two_form_positions)
-    # the 2-form corners in even order (3, 5, 6) are the complement order (t, x, y)
-    eigenvector = D2.adjugate() * signature * sp.Matrix(kappa3)
-    q2 = sp.cancel(D3 * quadratic_form(signature * D2.inv() * signature, kappa3))
-    top_form_branch = residual_count((two_form_block * eigenvector - q2 * eigenvector).applyfunc(sp.cancel)) == 0
-    transverse_product = is_zero(
-        sp.cancel(two_form_block.det() / q2) - sp.cancel(D2.det() / D1.det() * q1 * quadratic_form(signature * D2.inv() * signature, kappa3)))
-    d0_absent = D0 not in sp.together(objects["detB"]).free_symbols
+    top_form_position = odd.index(cs.index((1, 1, 1)))
+    one_form_positions = [j for j in range(4) if j != top_form_position]
+    d1_odd = objects["H_o"].extract(one_form_positions, one_form_positions)
+    d2_even = objects["H_e"].extract(two_form_positions, two_form_positions)
+    k_odd = sp.Matrix([kappa3[[c for c in range(3) if cs[odd[p]][c] == 1][0]]
+                       for p in one_form_positions])
+    e_k = signature * sp.Matrix(kappa3)
+    wedge = objects["dk"].extract([even[p] for p in two_form_positions],
+                                  [odd[p] for p in one_form_positions])
+    structure = (
+        residual_count(block.extract([zero_form_position], one_form_positions) - k_odd.T * d1_odd) == 0
+        and block[zero_form_position, top_form_position] == 0
+        and residual_count(block.extract(two_form_positions, one_form_positions) - d2_even * wedge) == 0
+        and residual_count(block.extract(two_form_positions, [top_form_position]) - D3 * e_k) == 0
+        and residual_count(wedge * k_odd) == 0
+        and residual_count(e_k.T * wedge) == 0)
+    # THE PENCIL BLOCK BY BLOCK.  P = H_e^-1 B H_o^-1 B^T = diag(q1/D0, T) with
+    # T = W D1^-1 W^T D2 + D3 D2^-1 (Ek)(Ek)^T.  Fraction-free:
+    #   det(D1) . k^T D1 adj(D1) D1 k = det(D1)^2 q1      (the 0-form entry),
+    #   the off-diagonal blocks carry (W k)^T and W k, hence vanish,
+    #   T' = det(D1) det(D2) T = det(D2) W adj(D1) W^T D2 + D3 det(D1) adj(D2)(Ek)(Ek)^T,
+    #   T' adj(D2) E k = D3 det(D1) (k^T E adj(D2) E k) adj(D2) E k     (the top form).
+    det1, det2 = sp.expand(d1_odd.det()), sp.expand(d2_even.det())
+    adj1, adj2 = d1_odd.adjugate(), d2_even.adjugate()
+    zero_form_branch = sp.expand((k_odd.T * d1_odd * adj1 * d1_odd * k_odd)[0, 0] - det1 * q1) == 0
+    block_diagonal = (structure
+                      and residual_count((k_odd.T * d1_odd * adj1 * wedge.T * d2_even).applyfunc(sp.expand)) == 0
+                      and residual_count((d2_even * wedge * k_odd).applyfunc(sp.expand)) == 0)
+    t_prime = (det2 * wedge * adj1 * wedge.T * d2_even
+               + D3 * det1 * adj2 * e_k * e_k.T).applyfunc(sp.expand)
+    eigenvector = adj2 * e_k
+    top_form_branch = residual_count(
+        (t_prime * eigenvector - D3 * det1 * q2_adj * eigenvector).applyfunc(sp.expand)) == 0
+    # THE TRANSVERSE PRODUCT, on the symbolic Block 211 family (all-plus class):
+    # det(T)/q2 = det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k).
+    g0f, g1f, v0f, v1f = sp.symbols("g0 g1 v0 v1", positive=True)
+    family_plus = formal_family(b211.ALL_PLUS, g0f, g1f, v0f, v1f)
+    objects_f = principal_objects(onsite_rules(family_plus, b209.CORNERS, 3), d3, 3, kappa3)
+    pencil_f = objects_f["pencil"]
+    _, d1_f, d2_f = objects_f["H_e"][zero_form_position, zero_form_position], \
+        objects_f["H_o"].extract(one_form_positions, one_form_positions), \
+        objects_f["H_e"].extract(two_form_positions, two_form_positions)
+    q1_f = quadratic_form(d1_f, k_odd)
+    q2_f = sp.cancel(objects_f["H_o"][top_form_position, top_form_position]
+                     * quadratic_form(signature * d2_f.inv() * signature, kappa3))
+    two_form_f = pencil_f.extract(two_form_positions, two_form_positions)
+    transverse_product = (
+        all(is_zero(pencil_f[zero_form_position, j]) and is_zero(pencil_f[j, zero_form_position])
+            for j in two_form_positions)
+        and is_zero(pencil_f[zero_form_position, zero_form_position]
+                    - q1_f / objects_f["H_e"][zero_form_position, zero_form_position])
+        and is_zero(sp.cancel(two_form_f.det() / q2_f)
+                    - sp.cancel(d2_f.det() / d1_f.det() * q1_f
+                                * quadratic_form(signature * d2_f.inv() * signature, kappa3))))
     # THE EXPANSION ITSELF, MEASURED AND NOT ASSUMED: K_H,B(z) = i eps M(kappa)
     # + O(eps^2) with M = H0 D + D^T H0 requires the folded raising part and
     # the folded K_H to vanish and the first-order coefficient of the COMPOSED
@@ -1579,7 +1825,10 @@ def measure_principal(cell_matrices: dict) -> PrincipalFacts:
              or (is_zero(pencil2[0, 0] - branch_targets[1]) and is_zero(pencil2[1, 1] - branch_targets[0]))))
     onsite_form_scalar = is_scalar_matrix(on2["form"])
     onsite_pencil_scalar_generic = is_scalar_matrix(pencil2)
-    onsite_scalar_on_locus = is_scalar_matrix(pencil2.subs(v, sp.sqrt(1 - c ** 2)).applyfunc(sp.simplify))
+    # THE HONEST-VOLUME LOCUS v^2 = 1 - c^2, substituted exactly: the pencil
+    # entries are even in v, so the substitution leaves rational functions of c.
+    onsite_scalar_on_locus = is_scalar_matrix(
+        pencil2.applyfunc(lambda entry: sp.radsimp(sp.cancel(entry.subs(v, sp.sqrt(1 - c ** 2))))))
     ov2 = principal_objects(overlap_rules(face, b201.CELL_CORNERS, 2), d2, 2, kappa2)
     pencil_ov2 = ov2["pencil"]
     overlap_pencil_scalar = is_scalar_matrix(pencil_ov2)
@@ -1615,7 +1864,7 @@ def measure_principal(cell_matrices: dict) -> PrincipalFacts:
     # --- THREE DIRECTIONS AT THE WITNESSES ----------------------------------
     witness_records = []
     onsite_cones_ok, onsite_branches_ok3, overlap_never = True, True, True
-    scalar_anywhere, transverse_quadratic_anywhere = False, False
+    scalar_anywhere, transverse_split_names = False, []
     w1_onsite_ok = w1_overlap_ok = False
     w1_zero_form = ""
     local3 = {"kt": KT, "kx": KX, "ky": KY}
@@ -1654,10 +1903,11 @@ def measure_principal(cell_matrices: dict) -> PrincipalFacts:
                     onsite_cones_ok = onsite_cones_ok and bool(cones_are_g1_g2)
                     if pencil_w is not None:
                         onsite_branches_ok3 = onsite_branches_ok3 and bool(branches_are_g1_g2)
-                        # THE TRANSVERSE PAIR: the remaining factor is quadratic in lam;
-                        # it is a pair of quadratic forms only if it splits.
-                        if any(degree == 1 for degree, _ in remainder) or len(branches) > 2:
-                            transverse_quadratic_anywhere = True
+                        # THE TRANSVERSE PAIR: it is a pair of quadratic-form
+                        # branches only where the remaining quadratic factor
+                        # SPLITS over QQ, which is recorded by witness name.
+                        if len(branches) > 2:
+                            transverse_split_names.append(name)
                 else:
                     overlap_never = overlap_never and not any(
                         proportional(base, cone1, kappa3) or proportional(base, cone2, kappa3)
@@ -1682,25 +1932,145 @@ def measure_principal(cell_matrices: dict) -> PrincipalFacts:
                                     scalar_pencil, scalar_form, cones_are_g1_g2, branches_are_g1_g2,
                                     objects_w["parity"], str(cone1), str(cone2)))
 
-    # --- COINCIDENCE OF THE TWO HODGE READINGS ON THE FAMILY -----------------
+    # --- COINCIDENCE OF THE TWO HODGE READINGS, (1) THE CHART, FAIL-CLOSED ----
+    # The ideal of the proportionality minors on each class representative's
+    # (t, u) chart is reduced to a lex Groebner basis and its REAL zeros are
+    # taken exactly; a positive-dimensional real component would come back as
+    # a marker and fail the gate, where sp.solve would have dropped it.
     t, u = b211.CHART_T, b211.CHART_U
-    solutions, classes = set(), 0
+    chart_bases, solutions, classes = [], set(), 0
     for orientation, class_signs in b211.REPRESENTATIVES.items():
         _, matrix, rhs = b211.face_system(b211.chart_moduli(class_signs))
         chart_cell, _ = b211.solve_pinned(matrix, rhs)
         g1_c, g2_c, _, _, _, _ = metric_candidates(chart_cell)
-        vec1 = [g1_c[i, j] for i in range(3) for j in range(i, 3)]
-        vec2 = [g2_c[i, j] for i in range(3) for j in range(i, 3)]
-        minors = set()
-        for i in range(6):
-            for j in range(i + 1, 6):
-                minor = sp.numer(sp.together(sp.cancel(vec1[i] * vec2[j] - vec1[j] * vec2[i])))
-                if minor != 0:
-                    minors.add(sp.expand(minor))
-        for solution in sp.solve(list(minors), [t, u], dict=True):
-            if all(value.is_real for value in solution.values()) and set(solution) == {t, u}:
-                solutions.add((solution[t], solution[u]))
+        basis = sp.groebner(proportionality_minors(g1_c, g2_c), t, u, order="lex")
+        chart_bases.append(tuple(str(sp.factor(g)) for g in basis.exprs))
+        for solution in real_solutions_lex(list(basis.exprs), t, u):
+            solutions.add(solution)
         classes += 1
+    chart_bases_equal = len(set(chart_bases)) == 1
+
+    # --- (2) THE SIXTY-FOUR-CELL CENSUS AT SYMBOLIC MODULI, AND (3) THE CLOSED FORM
+    # The weighted kernel is not invariant under Block 211's corner-sign gauge
+    # (E d E is not d), so the four representatives do not speak for the
+    # sixty-four sign cells.  Every cell is run at symbolic (v0, g0, v1, g1)
+    # on Block 211's degree-block formulas, and the closed form of
+    # P = M1(g0) E M2(g1) E is verified in the cells where S1 = -+ E S0 E.
+    g0s, g1s, v0s, v1s = sp.symbols("g0 g1 v0 v1", positive=True)
+    census: dict = {}
+    rule_a_cells, rule_b_cells, curve_cells = [], [], []
+    closed_form_ok, curve_solutions_ok = True, True
+    for bits in itertools.product((1, -1), repeat=6):
+        cell_signs = dict(zip(FACES, bits))
+        pi0 = bits[0] * bits[1] * bits[2]
+        pi1 = bits[3] * bits[4] * bits[5]
+        fam = formal_family(cell_signs, g0s, g1s, v0s, v1s)
+        g1_f, g2_f, _, d1_f, d2_f, _ = metric_candidates(fam)
+        basis = sp.groebner(proportionality_minors(g1_f, g2_f), g0s, g1s, order="lex")
+        elements = [str(sp.factor(g)) for g in basis.exprs]
+        key = "(" + ", ".join(elements) + (",)" if len(elements) == 1 else ")")
+        entry = census.setdefault(key, [0, set()])
+        entry[0] += 1
+        entry[1].add((pi0, pi1))
+        if key != "(g0, g1)":
+            curve_cells.append(bits)
+        m1 = (d1_f / v1s).applyfunc(sp.cancel)
+        m2 = (d2_f * v0s).applyfunc(sp.cancel)
+        s0 = ((sp.eye(3) - m1) / g0s).applyfunc(sp.cancel)
+        s1 = ((sp.eye(3) - m2) / g1s).applyfunc(sp.cancel)
+        p = (m1 * signature * m2 * signature).applyfunc(sp.expand)
+        if residual_count(s1 + signature * s0 * signature) == 0:
+            rule_a_cells.append(bits)
+            target = (1 - 2 * g0s * g1s) * sp.eye(3) + (g1s - g0s - pi0 * g0s * g1s) * s0
+            closed_form_ok = closed_form_ok and residual_count(p - target) == 0
+            # THE CURVE, SOLVED WITHOUT sp.solve: it is degree one in g0, so its
+            # root is unique, and the root is verified by exact substitution
+            # (sp.solve would silently drop a root that violates the symbols'
+            # positivity assumptions -- which is exactly rule B's root).
+            curve = g1s - g0s - pi0 * g0s * g1s
+            curve_solutions_ok = (curve_solutions_ok and sp.Poly(curve, g0s).degree() == 1
+                                  and is_zero(curve.subs(g0s, g1s / (1 + pi0 * g1s))))
+        elif residual_count(s1 - signature * s0 * signature) == 0:
+            rule_b_cells.append(bits)
+            target = (1 + 2 * g0s * g1s) * sp.eye(3) - (g0s + g1s - pi0 * g0s * g1s) * s0
+            closed_form_ok = closed_form_ok and residual_count(p - target) == 0
+            curve = g0s + g1s - pi0 * g0s * g1s
+            curve_solutions_ok = (curve_solutions_ok and sp.Poly(curve, g0s).degree() == 1
+                                  and is_zero(curve.subs(g0s, -g1s / (1 - pi0 * g1s))))
+    census_tuple = tuple(sorted(
+        (key, count, tuple(sorted(cls))) for key, (count, cls) in census.items()))
+    rules_cover_curves = set(curve_cells) == set(rule_a_cells) | set(rule_b_cells)
+
+    # --- (4) THE LOCUS WITNESSES over QQ(sqrt 6), through Block 211's solve ---
+    locus_pd, locus_prop, locus_one_cone, locus_split, locus_ov_never = True, True, True, True, True
+    locus_mu, locus_constants, locus_ov_counts = [], [], []
+    for name in LOCUS_WITNESS_NAMES:
+        cell_l = cell_matrices[name]
+        locus_pd = locus_pd and all(sp.radsimp(m) > 0 for m in b211.leading_minors(cell_l))
+        g1_l, g2_l, _, _, _, _ = metric_candidates(cell_l)
+        g1_l, g2_l = g1_l.applyfunc(sp.radsimp), g2_l.applyfunc(sp.radsimp)
+        cone_l = quadratic_form(g1_l, kappa3)
+        mu = sp.radsimp(g2_l[0, 0] / g1_l[0, 0])
+        locus_mu.append(mu)
+        locus_prop = locus_prop and residual_count((g2_l - mu * g1_l).applyfunc(sp.radsimp)) == 0
+        on_l = principal_objects(onsite_rules(cell_l, b209.CORNERS, 3), d3, 3, kappa3)
+        factors_l = primitive_factors(sp.radsimp(sp.expand(on_l["detB"])), kappa3)
+        locus_one_cone = (locus_one_cone and len(factors_l) == 1 and factors_l[0][1] == 2
+                          and proportional(factors_l[0][0], cone_l, kappa3))
+        pencil_l = on_l["pencil"].applyfunc(sp.radsimp)
+        branches_l, remainder_l = linear_branches(charpoly_expr(pencil_l), kappa3)
+        constants = []
+        for value, power in branches_l:
+            constants.extend([sp.radsimp(sp.cancel(value / cone_l))] * power)
+        locus_constants.append(tuple(sorted(constants)))
+        locus_split = locus_split and remainder_l == () and len(constants) == 4
+        ov_l = principal_objects(overlap_rules(cell_l, b209.CORNERS, 3), d3, 3, kappa3, False)
+        ov_factors = primitive_factors(sp.radsimp(sp.expand(ov_l["detB"])), kappa3)
+        locus_ov_counts.append(len(ov_factors))
+        locus_ov_never = (locus_ov_never and len(ov_factors) == 2
+                          and all(power == 1 for _, power in ov_factors)
+                          and not any(proportional(base, cone_l, kappa3) for base, _ in ov_factors))
+
+    # --- (5) THE LOCUS, SYMBOLICALLY ALONG THE CURVE, with free volumes then the ties
+    symbolic_one_cone, symbolic_k_free, symbolic_match, mu_match = True, True, True, True
+    symbolic_constants, mu_minus_one = [], []
+    locus_signs = locus_witness_table()
+    for name, pi0 in (("L+-", 1), ("L-+", -1)):
+        _, signs_l = locus_signs[name]
+        g0_curve = g1s / (1 + pi0 * g1s)
+        fam = formal_family(signs_l, g0_curve, g1s, v0s, v1s)
+        g1_f, _, _, _, _, _ = metric_candidates(fam)
+        cone_f = quadratic_form(g1_f, kappa3)
+        on_f = principal_objects(onsite_rules(fam, b209.CORNERS, 3), d3, 3, kappa3)
+        fac_f = primitive_factors(on_f["detB"], kappa3)
+        symbolic_one_cone = (symbolic_one_cone and len(fac_f) == 1 and fac_f[0][1] == 2
+                             and proportional(fac_f[0][0], cone_f, kappa3))
+        branches_f, remainder_f = linear_branches(charpoly_expr(on_f["pencil"]), kappa3)
+        ties = {v0s: sp.sqrt((1 - g0_curve ** 2) * (1 - g1s ** 2)),
+                v1s: sp.sqrt((1 - g1s ** 2) / (1 - g0_curve ** 2))}
+        tied = []
+        for value, power in branches_f:
+            ratio = sp.cancel(value / cone_f)
+            symbolic_k_free = symbolic_k_free and not (ratio.free_symbols & set(kappa3))
+            tied.extend([sp.factor(sp.cancel(ratio.subs(ties)))] * power)
+        symbolic_k_free = symbolic_k_free and remainder_f == () and len(tied) == 4
+        expected = [sp.Integer(1),
+                    (1 + 2 * pi0 * g1s) / ((1 - pi0 * g1s) * (1 + pi0 * g1s) ** 3),
+                    1 / (1 - g1s ** 2), 1 / (1 - g1s ** 2)]
+        remaining = list(tied)
+        for target in expected:
+            hit = next((c for c in remaining if is_zero(c - target)), None)
+            if hit is None:
+                symbolic_match = False
+            else:
+                remaining.remove(hit)
+        symbolic_constants.append(tuple(str(c) for c in tied))
+        mu_f = expected[1]
+        difference = sp.factor(mu_f - 1)
+        mu_minus_one.append(str(difference))
+        mu_match = mu_match and is_zero(
+            difference - pi0 * g1s ** 3 * (2 + pi0 * g1s) / ((1 - pi0 * g1s) * (1 + pi0 * g1s) ** 3)) \
+            and not is_zero(difference)
     return PrincipalFacts(
         lemma_3d, lemma_2d, block_diagonal, zero_form_branch, top_form_branch, transverse_product,
         d0_absent, expansion_exact, h0_form_ok, overlap_cone_3d, overlap_cone_2d,
@@ -1708,8 +2078,16 @@ def measure_principal(cell_matrices: dict) -> PrincipalFacts:
         overlap_pencil_scalar, overlap_pencil_matches, overlap_cone_matches, overlap_form_scalar,
         effective_ok, discrepancy_ok, str(zero_form_symbol), str(two_form_symbol), str(overlap_scalar_symbol),
         tuple(witness_records), w1_onsite_ok, w1_overlap_ok, onsite_cones_ok, onsite_branches_ok3,
-        overlap_never, scalar_anywhere, transverse_quadratic_anywhere,
-        tuple(sorted(solutions)), classes, w1_zero_form)
+        overlap_never, scalar_anywhere, tuple(transverse_split_names),
+        tuple(chart_bases), chart_bases_equal,
+        tuple(sorted(solutions, key=lambda s: (str(s[0]), str(s[1])))), classes,
+        census_tuple, sum(count for _, count, _ in census_tuple),
+        len(rule_a_cells), len(rule_b_cells), rules_cover_curves, closed_form_ok, curve_solutions_ok,
+        locus_pd, locus_prop, tuple(locus_mu), locus_one_cone, tuple(locus_constants), locus_split,
+        tuple(locus_ov_counts), locus_ov_never,
+        symbolic_one_cone, symbolic_k_free, tuple(symbolic_constants), symbolic_match,
+        tuple(mu_minus_one), mu_match,
+        w1_zero_form)
 
 
 def measure_registration() -> RegistrationFacts:
@@ -1788,7 +2166,8 @@ def second_block(g1, class_signs):
 def measure() -> Facts:
     main_head = resolve_ref("origin/main")
     note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
-    witnesses = witness_table()
+    witnesses = dict(witness_table())
+    witnesses.update(locus_witness_table())
     construction, cell_matrices = measure_construction(witnesses)
     return Facts(
         main_head,
@@ -1856,7 +2235,8 @@ def build_claims(mutation: str) -> dict:
         # E
         "bloch_equals_bench": True,
         "w1_overlap_pencil_2d": W1_OVERLAP_PENCIL_2D,
-        "boundary_onsite_singular": BOUNDARY_ONSITE_H_SINGULAR,
+        "boundary_onsite_singular_3d": BOUNDARY_ONSITE_H_SINGULAR_3D,
+        "boundary_onsite_singular_2d": BOUNDARY_ONSITE_H_SINGULAR_2D,
         # F
         "onsite_lemma_3d": True,
         "onsite_lemma_2d": True,
@@ -1873,12 +2253,25 @@ def build_claims(mutation: str) -> dict:
         "three_dim_branches": True,
         "w1_cones": True,
         "principal_scalar_curved_3d": PRINCIPAL_PART_SCALAR_ANYWHERE_CURVED_3D,
-        "transverse_quadratic_anywhere": False,
+        "locus_symbol_scalar": LOCUS_SYMBOL_SCALAR,
+        "transverse_split_witnesses": TRANSVERSE_SPLIT_RATIONAL_WITNESSES,
+        "transverse_splits_on_locus": TRANSVERSE_SPLITS_ON_LOCUS,
         "onsite_cones_g1_g2": True,
         "overlap_cones_never_g1_g2": True,
-        "cone_is_one_metric_cone": CONE_IS_ONE_METRIC_CONE_OFF_FLAT,
+        "coincidence_chart_groebner": COINCIDENCE_CHART_GROEBNER,
         "coincidence_solutions": COINCIDENCE_SOLUTIONS,
         "coincidence_classes": COINCIDENCE_CLASSES,
+        "sign_cells": SIGN_CELLS,
+        "coincidence_census": COINCIDENCE_CENSUS,
+        "locus_rule_a_cells": LOCUS_RULE_A_CELLS,
+        "locus_rule_b_cells": LOCUS_RULE_B_CELLS,
+        "locus_positive_cells": LOCUS_POSITIVE_CELLS,
+        "coincidence_only_at_flat_everywhere": COINCIDENCE_ONLY_AT_FLAT_IN_EVERY_CELL,
+        "cone_is_one_metric_cone_everywhere": CONE_IS_ONE_METRIC_CONE_EVERYWHERE,
+        "cone_is_one_metric_cone_on_locus": CONE_IS_ONE_METRIC_CONE_ON_LOCUS,
+        "locus_mu": LOCUS_MU,
+        "locus_branch_constants": LOCUS_BRANCH_CONSTANTS,
+        "locus_symbolic": True,
         # G
         "shear_enters_onsite": SHEAR_ENTERS_CONE_ONSITE,
         "shear_enters_overlap": SHEAR_ENTERS_CONE_OVERLAP,
@@ -1956,7 +2349,8 @@ def build_claims(mutation: str) -> dict:
     elif mutation == "break_witness_spectra":
         claims["w1_overlap_pencil_2d"] = ((0, 4), (1, 8), (2, 4))
     elif mutation == "break_boundary_edge_case":
-        claims["boundary_onsite_singular"] = False
+        # THE FIRST DRAFT's CLAIM, ASSERTED: singular on BOTH benches.
+        claims["boundary_onsite_singular_2d"] = True
     # --- F ----------------------------------------------------------------
     elif mutation == "break_onsite_cone_lemma":
         # THE LEMMA DENIED: det B is asserted to depend on D0 and not to
@@ -1974,18 +2368,34 @@ def build_claims(mutation: str) -> dict:
         claims["w1_cones"] = False
     elif mutation == "claim_principal_part_scalar":
         # THE QUADRATIC-FORM READING: the curved principal symbol is asserted
-        # to be a quadratic form times the identity in three directions.
-        # It never is; only the two-direction graded symbol on the honest
-        # locus v^2 = 1 - c^2 is.
+        # to be a quadratic form times the identity in three directions --
+        # even on the coincidence locus, where the cone IS one quadric but
+        # the four branch constants still differ.  It never is; only the
+        # two-direction graded symbol on the honest locus v^2 = 1 - c^2 is.
         claims["principal_scalar_curved_3d"] = True
         claims["two_dim_onsite_scalar_generic"] = True
+        claims["locus_symbol_scalar"] = True
     elif mutation == "claim_cone_is_metric_cone":
         # R5's HYPOTHESIS AS STATED: the cone is asserted to be ONE metric's
-        # cone at curved points.  It is the union of two, or a non-Hodge pair.
-        claims["cone_is_one_metric_cone"] = True
+        # cone at EVERY curved point.  It is that only on the locus; elsewhere
+        # the union of two distinct cones, and under the overlap assembly a
+        # non-Hodge pair everywhere measured.
+        claims["cone_is_one_metric_cone_everywhere"] = True
         claims["overlap_cones_never_g1_g2"] = False
-    elif mutation == "break_coincidence_only_at_flat":
-        claims["coincidence_solutions"] = ((0, 0), (sp.Rational(1, 3), HALF))
+    elif mutation == "break_coincidence_census":
+        # THE PREDECESSOR SEAT's OVERREACH, ASSERTED: coincidence only at flat
+        # in EVERY sign cell.  The census finds sixteen curve cells, eight of
+        # them positive.
+        claims["coincidence_only_at_flat_everywhere"] = True
+        claims["coincidence_census"] = (("(g0, g1)", 64, ((-1, -1), (-1, 1), (1, -1), (1, 1))),)
+        claims["locus_positive_cells"] = 0
+    elif mutation == "break_coincidence_locus":
+        # THE LOCUS DENIED: the two locus witnesses are asserted to carry the
+        # union of two distinct cones with equal readings (mu = 1).
+        claims["cone_is_one_metric_cone_on_locus"] = False
+        claims["locus_mu"] = (sp.Integer(1), sp.Integer(1))
+        claims["locus_branch_constants"] = ((1, 1, 1, 1), (1, 1, 1, 1))
+        claims["transverse_splits_on_locus"] = False
     # --- G ----------------------------------------------------------------
     elif mutation == "break_shear_registration":
         claims["shear_enters_onsite"] = False
@@ -2156,7 +2566,8 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
         f"degree blocks equal Block 211's formulas [v0], v1 M1, M2/v0, [1/v1] "
         f"with zero cross-degree entries, the origin tx face equals Block 105's "
         f"shear_hodge(s_tx0 g0, v0), and PD holds exactly at "
-        f"{PD_WITNESSES} and fails at the boundary",
+        f"{PD_WITNESSES} -- the two QQ(sqrt 6) locus witnesses included -- and "
+        f"fails at the boundary",
         len(build.cells) == claims["witness_count"]
         and all(cell.ranks == claims["compatible_ranks"] for cell in build.cells)
         and all(cell.free_names == ("D07", "D16", "D25", "D34") for cell in build.cells)
@@ -2216,15 +2627,19 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
         spectra.w1_overlap_pencil_2d == tuple(
             (sp.sympify(a), b) for a, b in claims["w1_overlap_pencil_2d"]))
     checks.check(
-        "E-3", f"THE PD BOUNDARY IS AN EDGE CASE, MEASURED: at gamma0 = gamma1 = "
-        f"1/2 all-plus the onsite H is SINGULAR on both benches "
-        f"({spectra.boundary_onsite_singular_2d}, {spectra.boundary_onsite_singular_3d}) "
-        f"so the H-pencil reading is undefined there while the form reading "
-        f"stays defined; the overlap H stays regular "
-        f"({spectra.boundary_overlap_regular})",
-        (spectra.boundary_onsite_singular_2d and spectra.boundary_onsite_singular_3d)
-        is claims["boundary_onsite_singular"]
-        and claims["boundary_onsite_singular"] is True
+        "E-3", f"THE PD BOUNDARY IS A THREE-DIRECTION EDGE CASE, MEASURED: at "
+        f"gamma0 = gamma1 = 1/2 all-plus the onsite H is SINGULAR on (4,2,2) "
+        f"({spectra.boundary_onsite_singular_3d}; the triangle determinant "
+        f"(1 + g)^2 (1 - 2g) vanishes) so the H-pencil reading is undefined there "
+        f"while the form reading stays defined, and REGULAR on (4,4) "
+        f"({spectra.boundary_onsite_singular_2d} singular; the origin tx face is "
+        f"Block 105's shear_hodge at c = 1/2 with 2 x 2 block determinant "
+        f"v0^2/(1 - c^2), the two-direction PD condition being |c| < 1); the "
+        f"overlap H stays regular on both ({spectra.boundary_overlap_regular})",
+        spectra.boundary_onsite_singular_3d is claims["boundary_onsite_singular_3d"]
+        and claims["boundary_onsite_singular_3d"] is True
+        and spectra.boundary_onsite_singular_2d is claims["boundary_onsite_singular_2d"]
+        and claims["boundary_onsite_singular_2d"] is False
         and spectra.boundary_overlap_regular)
 
     # --- F: THE PRINCIPAL PART AND THE CONE ------------------------------------
@@ -2232,12 +2647,15 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
         "F-1", f"THE ONSITE CONE LEMMA, AT FULLY SYMBOLIC D: {ONSITE_CONE_LEMMA_3D} "
         f"({principal.lemma_3d_holds}) and in two directions {ONSITE_CONE_LEMMA_2D} "
         f"({principal.lemma_2d_holds}); D0 is absent from det B "
-        f"({principal.lemma_d0_absent}); the pencil principal block is "
-        f"block-diagonal by form degree ({principal.lemma_3d_block_diagonal}) "
-        f"with the 0-form branch k^T D1 k / D0 ({principal.lemma_3d_zero_form_branch}), "
-        f"the eigenvector adj(D2) E k at eigenvalue D3 k^T E D2^-1 E k "
-        f"({principal.lemma_3d_top_form_branch}) and transverse product "
-        f"det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k) ({principal.lemma_3d_transverse_product}); "
+        f"({principal.lemma_d0_absent}); B = [[k^T D1, 0], [D2 W, D3 E k]] with "
+        f"W k = 0 and (E k)^T W = 0 so the pencil principal block is block-diagonal "
+        f"by form degree ({principal.lemma_3d_block_diagonal}) with the 0-form "
+        f"branch k^T D1 k / D0 ({principal.lemma_3d_zero_form_branch}) and the "
+        f"eigenvector adj(D2) E k at eigenvalue D3 k^T E D2^-1 E k "
+        f"({principal.lemma_3d_top_form_branch}), all as fraction-free polynomial "
+        f"identities in the seventeen symbols; and on the symbolic Block 211 "
+        f"family the transverse product is det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k) "
+        f"({principal.lemma_3d_transverse_product}); "
         f"and the expansion K_H,B(z) = i eps M + O(eps^2), M = H0 D + D^T H0 "
         f"symmetric, is MEASURED from the composed rules at the symbolic cell "
         f"under both assemblies ({principal.expansion_exact})",
@@ -2289,47 +2707,106 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
         f"k^T G1 k and k^T G2 k ({principal.onsite_cones_are_g1_g2_everywhere}) "
         f"and both are exact H-pencil branches ({principal.onsite_branches_g1_g2_everywhere}); "
         f"at W1 the cones are {W1_ONSITE_CONES} ({principal.w1_onsite_cones}) "
-        f"and under the overlap assembly {W1_OVERLAP_CONES} ({principal.w1_overlap_cones})",
+        f"and under the overlap assembly {W1_OVERLAP_CONES} ({principal.w1_overlap_cones}); "
+        f"the overlap cones are proportional to NEITHER reading at any curved "
+        f"rational witness ({principal.overlap_cones_never_g1_g2})",
         (principal.onsite_cones_are_g1_g2_everywhere and principal.onsite_branches_g1_g2_everywhere)
         is claims["three_dim_branches"]
         and claims["three_dim_branches"] is True
         and (principal.w1_onsite_cones and principal.w1_overlap_cones) is claims["w1_cones"]
-        and claims["w1_cones"] is True)
+        and claims["w1_cones"] is True
+        and principal.overlap_cones_never_g1_g2 is claims["overlap_cones_never_g1_g2"]
+        and claims["overlap_cones_never_g1_g2"] is True)
     checks.check(
         "F-6", f"THE SYMBOL IS NOT A QUADRATIC FORM TIMES THE IDENTITY: at no "
         f"curved three-direction witness, under either assembly or reading, is "
         f"the principal symbol scalar (principal_scalar_curved_3d = "
-        f"{claims['principal_scalar_curved_3d']}); the transverse 2-form "
-        f"branches are quadratic forms nowhere ({principal.transverse_branches_quadratic_anywhere}); "
-        f"in two directions the graded symbol is scalar exactly on "
+        f"{claims['principal_scalar_curved_3d']}); the transverse 2-form pair "
+        f"splits into two quadratic-form branches at exactly the curved rational "
+        f"witnesses {claims['transverse_split_witnesses']} -- honest_face, offset-1 "
+        f"shear zero, D2 isotropic -- and is an irreducible quadratic at the other "
+        f"five (measured {principal.transverse_split_witnesses}); ON the "
+        f"coincidence locus the cone is one quadric but the symbol is STILL not "
+        f"scalar, because mu - 1 = {LOCUS_MU_MINUS_ONE} is a nonzero rational "
+        f"function of g1 ({principal.locus_mu_minus_one_matches}; measured "
+        f"{principal.locus_mu_minus_one}), locus_symbol_scalar = "
+        f"{claims['locus_symbol_scalar']}; in two directions the graded symbol is scalar exactly on "
         f"{TWO_DIM_ONSITE_SCALAR_LOCUS} ({principal.two_dim_onsite_scalar_on_locus}) "
         f"and not generically ({principal.two_dim_onsite_pencil_scalar_generic}); "
         f"the form readings are scalar nowhere ({principal.two_dim_onsite_form_scalar}, "
         f"{principal.two_dim_overlap_form_scalar})",
         principal.principal_scalar_anywhere_curved_3d is claims["principal_scalar_curved_3d"]
         and claims["principal_scalar_curved_3d"] is False
-        and principal.transverse_branches_quadratic_anywhere is claims["transverse_quadratic_anywhere"]
+        and principal.transverse_split_witnesses == tuple(claims["transverse_split_witnesses"])
+        and principal.locus_mu_minus_one_matches
+        and claims["locus_symbol_scalar"] is False
         and principal.two_dim_onsite_scalar_on_locus is claims["two_dim_onsite_scalar_on_locus"]
         and principal.two_dim_onsite_pencil_scalar_generic is claims["two_dim_onsite_scalar_generic"]
         and claims["two_dim_onsite_scalar_generic"] is False
         and not principal.two_dim_onsite_form_scalar
         and not principal.two_dim_overlap_form_scalar)
     checks.check(
-        "F-7", f"THE HYPOTHESIS, ANSWERED: on the Block 211 family the two Hodge "
-        f"readings G1 and G2 are proportional ONLY at the chart points "
-        f"{claims['coincidence_solutions']} -- the flat point -- in all "
-        f"{claims['coincidence_classes']} gauge classes, so the graded cone is "
-        f"the UNION of two distinct metric cones at every curved point; the "
-        f"overlap cones are proportional to neither reading at any curved "
-        f"witness ({principal.overlap_cones_never_g1_g2}); cone_is_one_metric_cone = "
-        f"{claims['cone_is_one_metric_cone']}",
-        principal.coincidence_solutions == tuple(
+        "F-7", f"THE COINCIDENCE THEOREM: on the four class representatives' (t, u) "
+        f"chart the proportionality ideal of (G1, G2) has the lex Groebner basis "
+        f"{claims['coincidence_chart_groebner']} in every class "
+        f"({principal.coincidence_chart_bases_equal}) with real zeros EXACTLY "
+        f"{claims['coincidence_solutions']} -- the flat point -- taken fail-closed over "
+        f"{claims['coincidence_classes']} classes; BUT the weighted kernel is not "
+        f"corner-sign-gauge invariant, and the census over all {claims['sign_cells']} "
+        f"sign cells at symbolic moduli is {claims['coincidence_census']}: "
+        f"{COINCIDENCE_FLAT_ONLY_CELLS} cells coincide only at flat and "
+        f"{COINCIDENCE_CURVE_CELLS} carry a curve, exactly the {claims['locus_rule_a_cells']} "
+        f"rule-A cells [{LOCUS_RULE_A}] and the {claims['locus_rule_b_cells']} rule-B cells "
+        f"[{LOCUS_RULE_B}] ({principal.rules_cover_curve_cells}), with the closed form of "
+        f"M1 E M2 E verified in each ({principal.closed_form_ok}) and both curves solved "
+        f"exactly ({principal.curve_solutions_ok}); {claims['locus_positive_cells']} cells carry "
+        f"a positive-definite-solvable coincidence curve; coincidence_only_at_flat_everywhere = "
+        f"{claims['coincidence_only_at_flat_everywhere']}, cone_is_one_metric_cone_everywhere = "
+        f"{claims['cone_is_one_metric_cone_everywhere']}",
+        principal.coincidence_chart_bases_equal
+        and principal.coincidence_chart_bases[0] == claims["coincidence_chart_groebner"]
+        and principal.coincidence_solutions == tuple(
             (sp.sympify(a), sp.sympify(b)) for a, b in claims["coincidence_solutions"])
         and principal.coincidence_classes == claims["coincidence_classes"]
-        and principal.overlap_cones_never_g1_g2 is claims["overlap_cones_never_g1_g2"]
-        and claims["overlap_cones_never_g1_g2"] is True
-        and claims["cone_is_one_metric_cone"] is False
+        and principal.census_cells == claims["sign_cells"]
+        and principal.census == tuple(sorted(claims["coincidence_census"]))
+        and principal.rule_a_cells == claims["locus_rule_a_cells"]
+        and principal.rule_b_cells == claims["locus_rule_b_cells"]
+        and principal.rules_cover_curve_cells
+        and principal.closed_form_ok and principal.curve_solutions_ok
+        and claims["locus_positive_cells"] == principal.rule_a_cells
+        and claims["coincidence_only_at_flat_everywhere"] is False
+        and claims["cone_is_one_metric_cone_everywhere"] is False
         and principal.onsite_cones_are_g1_g2_everywhere)
+    checks.check(
+        "F-8", f"THE LOCUS, WITNESSED AND THEN PROVED ALONG THE CURVE: the two "
+        f"QQ(sqrt 6) witnesses {LOCUS_WITNESS_NAMES} are on the family and positive "
+        f"definite ({principal.locus_pd}); G2 = mu G1 EXACTLY with mu = "
+        f"{claims['locus_mu']} ({principal.locus_proportional}); the graded det B is "
+        f"ONE quadric squared, (k^T G1 k)^2 ({principal.locus_one_cone_squared}) -- "
+        f"the cone IS one metric's cone there -- with all four H-pencil branches "
+        f"constant multiples {claims['locus_branch_constants']} of k^T G1 k and the "
+        f"transverse pair SPLIT ({principal.locus_transverse_split}), while the "
+        f"overlap cone stays a non-Hodge pair with factor counts "
+        f"{principal.locus_overlap_factor_counts} ({principal.locus_overlap_never_g1}); "
+        f"symbolically along g0 = g1/(1 + pi0 g1) with free volumes det B is one "
+        f"quadric squared ({principal.locus_symbolic_one_cone}), every branch is "
+        f"k-free times k^T G1 k ({principal.locus_symbolic_branches_k_free}), and "
+        f"with the ties the constants are {LOCUS_BRANCH_CONSTANTS_SYMBOLIC} "
+        f"({principal.locus_symbolic_constants_match}); cone_is_one_metric_cone_on_locus = "
+        f"{claims['cone_is_one_metric_cone_on_locus']}",
+        principal.locus_pd and principal.locus_proportional
+        and principal.locus_mu == tuple(sp.sympify(m) for m in claims["locus_mu"])
+        and principal.locus_one_cone_squared is claims["cone_is_one_metric_cone_on_locus"]
+        and claims["cone_is_one_metric_cone_on_locus"] is True
+        and principal.locus_constants == tuple(
+            tuple(sorted(sp.sympify(c) for c in row)) for row in claims["locus_branch_constants"])
+        and principal.locus_transverse_split is claims["transverse_splits_on_locus"]
+        and claims["transverse_splits_on_locus"] is True
+        and principal.locus_overlap_never_g1
+        and (principal.locus_symbolic_one_cone and principal.locus_symbolic_branches_k_free
+             and principal.locus_symbolic_constants_match) is claims["locus_symbolic"]
+        and claims["locus_symbolic"] is True)
 
     # --- G: SHEAR REGISTRATION ------------------------------------------------
     checks.check(
@@ -2500,10 +2977,25 @@ def report_measured(facts: Facts, elapsed_ns: int) -> None:
           f"onsite cones = G1, G2 everywhere {principal.onsite_cones_are_g1_g2_everywhere}; "
           f"branches everywhere {principal.onsite_branches_g1_g2_everywhere}; overlap cones "
           f"never G1, G2 {principal.overlap_cones_never_g1_g2}; scalar anywhere curved 3D "
-          f"{principal.principal_scalar_anywhere_curved_3d}; transverse quadratic anywhere "
-          f"{principal.transverse_branches_quadratic_anywhere}")
-    print(f"    G1 ~ G2 on the family: chart solutions {principal.coincidence_solutions} "
-          f"over {principal.coincidence_classes} classes")
+          f"{principal.principal_scalar_anywhere_curved_3d}; transverse pair splits at "
+          f"{principal.transverse_split_witnesses}")
+    print(f"    G1 ~ G2 on the chart: Groebner bases {principal.coincidence_chart_bases} "
+          f"(all equal {principal.coincidence_chart_bases_equal}), real solutions "
+          f"{principal.coincidence_solutions} over {principal.coincidence_classes} classes")
+    print(f"    THE SIXTY-FOUR-CELL CENSUS ({principal.census_cells} cells): {principal.census}")
+    print(f"      rule-A cells (S1 = -E S0 E) {principal.rule_a_cells}, rule-B cells (S1 = +E S0 E) "
+          f"{principal.rule_b_cells}, rules cover the curve cells {principal.rules_cover_curve_cells}, "
+          f"closed form of M1 E M2 E verified {principal.closed_form_ok}, curves solved "
+          f"{principal.curve_solutions_ok}")
+    print(f"    THE LOCUS WITNESSES {LOCUS_WITNESS_NAMES}: PD {principal.locus_pd}, G2 = mu G1 "
+          f"{principal.locus_proportional} with mu {principal.locus_mu}, graded det B = (k^T G1 k)^2 "
+          f"{principal.locus_one_cone_squared}, branch constants {principal.locus_constants}, "
+          f"transverse split {principal.locus_transverse_split}, overlap factor counts "
+          f"{principal.locus_overlap_factor_counts}, overlap never G1 {principal.locus_overlap_never_g1}")
+    print(f"    THE LOCUS SYMBOLICALLY: one quadric squared {principal.locus_symbolic_one_cone}, "
+          f"branches k-free {principal.locus_symbolic_branches_k_free}, tied constants "
+          f"{principal.locus_symbolic_constants} match {principal.locus_symbolic_constants_match}, "
+          f"mu - 1 = {principal.locus_mu_minus_one} matches {principal.locus_mu_minus_one_matches}")
     registration = facts.registration
     print("  SHEAR REGISTRATION")
     print(f"    onsite: shear moves the cone {registration.onsite_cone_shear_derivative_nonzero}, "
@@ -2526,7 +3018,7 @@ def report_measured(facts: Facts, elapsed_ns: int) -> None:
     print()
 
 
-N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER, FIRST AND WITH TEETH, AND THE WORDS SYMBOL, CONE, METRIC AND DISPERSION ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- THE WEIGHTED KERNEL K_H = H d - d^T H (Block 107's / Block 201's completion at m = 0 and periodic closure, with d Block 201's graded raising part of the eta-staggered lane kernel and Block 209's three-direction shadow), THE TWO LANDED ASSEMBLIES (Block 105's onsite_hodge at even anchors and its overlap_hodge at every anchor with weight 2^-d, Block 191's rule as used by Block 201's fork_hodge), THE TWO SQUARED-SYMBOL READINGS (the Euclidean form -K_H^2 and the H-pencil -(H^-1 K_H)^2), THE PERIOD-2 BLOCH REDUCTION with its bipartite block B(kappa), THE TWO CANDIDATE CELL METRICS G1 = D1/D0 and G2 = D3 E D2^-1 E read off the degree blocks by Block 209's honest-lift pattern, and BLOCK 211's FAMILY AND WITNESSES with BLOCK 105's shear_hodge READ THROUGH THEIR OWN RUNNERS, are IMPOSED MEASURED OBJECTS OF THIS BLOCK, built from the landed primary bodies and from NOTHING in any scratchpad. NO GRAVITY IS SUPPLIED: this block supplies NO lapse variable in an ADM phase space, NO shift vector, NO Hamiltonian constraint, NO momentum constraint, NO first-class constraint algebra, NO Dirac closure, NO Dirac observable, NO gauge orbit and NO diffeomorphism quotient. 'SYMBOL' NAMES THE EXACT 2^d x 2^d BLOCH MATRIX OF A FINITE ANTISYMMETRIC KERNEL ON A PERIODIC BENCH AND NAMES NO DYNAMICS AND NO PROPAGATOR. 'CONE' NAMES THE ZERO SET OF det B(kappa), A HOMOGENEOUS POLYNOMIAL, AND NAMES NO LIGHT CONE, NO CAUSAL STRUCTURE AND NO SPACETIME. 'METRIC' NAMES ONE OF TWO DECLARED RATIONAL READINGS OF THE CELL FORM'S DEGREE BLOCKS. 'DISPERSION' NAMES THE EIGENVALUE BRANCHES OF AN EXACT 4 x 4 OR 8 x 8 MATRIX. THE WORDS SPACETIME, LIGHT CONE, PROPAGATOR AND EINSTEIN NAME NOTHING ESTABLISHED HERE. NOTHING IS REGISTERED, NOTHING IS ADOPTED, AND NO AXIOM AMENDMENT IS JUSTIFIED.\\nper_site: THE CONSTRUCTION IS THE CHAIN'S AND THE CONTROL IS R5's. The 2D lane kernel equals Block 201's lane_kernel exactly and is site-sign-equivalent to its spin-diagonalised covariant kernel with zero non-scalar blocks; the 3D lane kernel is Block 209's shadow link by link (48 links, 0 bad, every scalar eta_d / 2), and on (4,2,2) the extent-2 directions carry NO antisymmetric link; K = d - d^T with d^2 = 0 in Block 201's grading in both dimensions; the assemblers reproduce Block 201's fork_hodge and Block 105's onsite_hodge and overlap_hodge digit for digit; the eight cell forms are Block 211's solved D at ranks (32, 32) with its degree-block formulas and its origin tx face equal to Block 105's shear_hodge; at the flat cell both assemblies give H = I and K_H = K on both benches; and -K_B(z)^2 = sum_d -(z_d - 1/z_d)^2 / 4 times the identity is an exact polynomial identity in two and three directions, whose bench multisets are {0 x4, 1 x8, 2 x4} on (4,4) and {0 x8, 1 x8} on (4,2,2), exactly R5's.\\nper_mode: THE EXACT SPECTRA AND THE PRINCIPAL PART. Every (witness, bench, assembly, reading) charpoly of degree 16 agrees exactly between the Bloch union over exact roots of unity and the direct bench matrix; at W1 on (4,4) the overlap H-pencil multiset is {0 x4, 1 x8, 1922/1081 x4} against R5's {0 x4, 1 x8, 2 x4}; at the PD boundary the onsite H is singular on both benches and the H-pencil reading is undefined there while the form reading and the overlap assembly remain defined. With K_H,B(exp(i eps kappa)) = i eps M(kappa) + O(eps^2) and M = H0 D(kappa) + D(kappa)^T H0, both assemblies preserve grade parity, M = [[0, B], [B^T, 0]] with B = H_e D_eo + D_oe^T H_o, the characteristic cone {det B = 0} is reading-independent, and the principal symbols are B B^T (form) and H_e^-1 B H_o^-1 B^T (pencil) on the even sector with the same spectra on the odd sector.\\nper_block: THE TWO LEMMAS, AT SYMBOLIC ARGUMENTS. Graded assembly, any block-diagonal cell form: det B = -D3 (k^T D1 k)(k^T E adj(D2) E k) in three directions and -D2 (k^T D1 k) in two; D0 is absent; the pencil principal symbol is block-diagonal by form degree with the EXACT branches k^T (D1/D0) k on 0-forms and D3 k^T E D2^-1 E k on top forms, the transverse 2-form pair being the roots of a quadratic whose product is det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k). Overlap assembly: the folded H0 is h0 I + two-flip couplings 2 h_f with h0 = (v0 + 3 v1 + 3/v0 + 1/v1)/8 and h_f = -(s_f0 v1 g0 + s_f1 g1 / v0)/8, and det B = +-Q+ Q- with the two displayed quadratic cones differing by the sign of the t-y plane terms; in two directions the single cone h0 (kt^2 + kx^2) + 4 h_tx kt kx.\\nlattice_wide: THE HYPOTHESIS, ANSWERED EXACTLY. In two directions at symbolic (c, v) the graded H-pencil branches are k^T g^-1 k and (det g / v^2) k^T g^-1 k with g = [[1, c], [c, 1]] = (D1/D0)^-1, so the cone IS the cell metric's cone and the symbol is a quadratic form times the identity exactly on the honest-volume locus v^2 = 1 - c^2; the overlap cone has the effective shear c_K = 2 c v^2 / (3 v^2 + 1 - c^2 (v^2 + 1)) with the exact discrepancy c_K - c = -c (1 - c^2)(v^2 + 1) / (3 v^2 + 1 - c^2 (v^2 + 1)). In three directions, at every curved witness the graded cone is EXACTLY the union of the two Hodge readings' cones k^T (D1/D0) k = 0 and k^T (D3 E D2^-1 E) k = 0, both exact H-pencil branches, and on the Block 211 family those two readings are proportional ONLY at the flat point in all four gauge classes; the overlap cones are proportional to neither reading; no curved three-direction principal symbol is scalar under either assembly or reading, and the transverse branches are quadratic forms nowhere. THE CONE IS NEVER ONE METRIC'S CONE OFF THE FLAT POINT, AND THE EXACT DISCREPANCIES ARE THE RESULT.\\nper_scope: SHEAR REGISTRATION, SEPARATELY. The shears g0 and g1 move the cone under both assemblies (exact nonzero derivatives, exact non-proportionality to the zero-shear cone, and the sign class moves the overlap cone at fixed magnitudes); the diagonal moduli do not move the graded cone (det B is proportional to its unit-volume value) and enter only the branch scales v1/v0 and v0/v1; under the overlap assembly the Bloch H at zero shear is h0 times the identity, the zero-shear H-pencil symbol is R5's for EVERY volume pair and the zero-shear form symbol is h0^2 times R5's. THIS IS A NAMED TENSION WITH THE MATTER-SIDE NO-SHEAR-RESPONSE RESULT OF PR #7970 (itself conditional): kernel side registers the shear and not the diagonal, matter side the diagonal and not the shear -- RECORDED, NOT RESOLVED HERE. WHAT REMAINS OPEN: which assembly, if either, the framework selects; which Hodge reading, if either, is 'the' metric; the transverse branches' meaning; every extent, witness and convention not run; and no energy, no mass, no measurement postulate, no Born rule, no dynamics, no continuum and no gravity is supplied by any line of this block.\\nRESULT: THE WEIGHTED KERNEL K_H = H d - d^T H REPRODUCES R5's FLAT SYMBOL EXACTLY AT THE FLAT CELL IN ALL FOUR CONSTRUCTIONS; ITS CHARACTERISTIC CONE IS, UNDER THE GRADED ASSEMBLY, THE UNION OF THE TWO HODGE READINGS' CONES k^T (D1/D0) k = 0 AND k^T (D3 E D2^-1 E) k = 0 -- ONE METRIC'S CONE ONLY AT THE FLAT POINT -- AND, UNDER THE OVERLAP ASSEMBLY, A NON-HODGE PAIR OF CONES; THE PRINCIPAL SYMBOL IS A QUADRATIC FORM TIMES THE IDENTITY ONLY IN TWO DIRECTIONS ON v^2 = 1 - c^2; AND THE SHEAR, NOT THE DIAGONAL METRIC, IS WHAT THE KERNEL REGISTERS. THESE ARE SCOUT-GRADE FINITE EXACT LINEAR-ALGEBRA FACTS ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY -- the CYCLE913 CAUTION, CARRIED VERBATIM -- and EVERY POSITIVE HERE IS CANDIDACY WITHIN THIS FORMALISM AND NEVER A CLAIM ABOUT NATURE.\\nDECISION_CUT: NOTHING IS REGISTERED AND NOTHING IS ADOPTED. No premise-class change is registered; no landed note is EDITED; no landed number is touched; Blocks 105, 107, 128, 171, 190, 191, 201, 209, 210, 211 and 212 STAND EXACTLY AS LANDED. BLOCK 201 IS NOT CORRECTED: its fork_hodge is reproduced digit for digit and its overlap assembly is one of the two landed assemblies run here. BLOCK 211 IS NOT CORRECTED: its witnesses, ranks, block formulas and minors are reproduced through its own runner. THIS BLOCK's OWN DEFECTS ARE DISCLOSED: two benches, one cell family, eight witnesses, two assemblies and two readings, one rule, the principal part at one degenerate zero -- not a parameter space and not a limit; the assembly fork is supplied and not decided; the two Hodge readings are declared candidates and neither is selected; the transverse 2-form branches are exhibited and not interpreted. DEGRADED WORKER MODE IS DISCLOSED: drafted on Fable worker seats after the gpt-5.6-sol seats died at the account limit, with the refuting checker pending. PROVENANCE: the R5 weighted-kernel design task of this lane, at TOTAL PASS=35 FAIL=0 across nine families.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero."
+N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER, FIRST AND WITH TEETH, AND THE WORDS SYMBOL, CONE, METRIC AND DISPERSION ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- THE WEIGHTED KERNEL K_H = H d - d^T H (Block 107's / Block 201's completion at m = 0 and periodic closure, with d Block 201's graded raising part of the eta-staggered lane kernel and Block 209's three-direction shadow), THE TWO LANDED ASSEMBLIES (Block 105's onsite_hodge at even anchors and its overlap_hodge at every anchor with weight 2^-d, Block 191's rule as used by Block 201's fork_hodge), THE TWO SQUARED-SYMBOL READINGS (the Euclidean form -K_H^2 and the H-pencil -(H^-1 K_H)^2), THE PERIOD-2 BLOCH REDUCTION with its bipartite block B(kappa), THE TWO CANDIDATE CELL METRICS G1 = D1/D0 and G2 = D3 E D2^-1 E read off the degree blocks by Block 209's honest-lift pattern, and BLOCK 211's FAMILY, ITS SIXTY-FOUR SIGN CELLS AND ITS WITNESSES with BLOCK 105's shear_hodge READ THROUGH THEIR OWN RUNNERS, are IMPOSED MEASURED OBJECTS OF THIS BLOCK, built from the landed primary bodies and from NOTHING in any scratchpad. NO GRAVITY IS SUPPLIED: this block supplies NO lapse variable in an ADM phase space, NO shift vector, NO Hamiltonian constraint, NO momentum constraint, NO first-class constraint algebra, NO Dirac closure, NO Dirac observable, NO gauge orbit and NO diffeomorphism quotient. 'SYMBOL' NAMES THE EXACT 2^d x 2^d BLOCH MATRIX OF A FINITE ANTISYMMETRIC KERNEL ON A PERIODIC BENCH AND NAMES NO DYNAMICS AND NO PROPAGATOR. 'CONE' NAMES THE ZERO SET OF det B(kappa), A HOMOGENEOUS POLYNOMIAL, READ AS A POLYNOMIAL IDENTITY (proportionality of quadratic forms) BECAUSE OVER THE REALS A POSITIVE DEFINITE FORM'S NULL CONE IS THE ORIGIN, AND NAMES NO LIGHT CONE, NO CAUSAL STRUCTURE AND NO SPACETIME. 'METRIC' NAMES ONE OF TWO DECLARED RATIONAL READINGS OF THE CELL FORM'S DEGREE BLOCKS. 'DISPERSION' NAMES THE EIGENVALUE BRANCHES OF AN EXACT 4 x 4 OR 8 x 8 MATRIX. THE WORDS SPACETIME, LIGHT CONE, PROPAGATOR AND EINSTEIN NAME NOTHING ESTABLISHED HERE. NOTHING IS REGISTERED, NOTHING IS ADOPTED, AND NO AXIOM AMENDMENT IS JUSTIFIED.\\nper_site: THE CONSTRUCTION IS THE CHAIN'S AND THE CONTROL IS R5's. The 2D lane kernel equals Block 201's lane_kernel exactly and is site-sign-equivalent to its spin-diagonalised covariant kernel with zero non-scalar blocks; the 3D lane kernel is Block 209's shadow link by link (48 links, 0 bad, every scalar eta_d / 2), and on (4,2,2) the extent-2 directions carry NO antisymmetric link; K = d - d^T with d^2 = 0 in Block 201's grading in both dimensions; the assemblers reproduce Block 201's fork_hodge and Block 105's onsite_hodge and overlap_hodge digit for digit; the ten cell forms -- eight rational witnesses and two QQ(sqrt 6) locus witnesses -- are Block 211's solved D at ranks (32, 32) with its degree-block formulas and its origin tx face equal to Block 105's shear_hodge; at the flat cell both assemblies give H = I and K_H = K on both benches; and -K_B(z)^2 = sum_d -(z_d - 1/z_d)^2 / 4 times the identity is an exact polynomial identity in two and three directions, whose bench multisets are {0 x4, 1 x8, 2 x4} on (4,4) and {0 x8, 1 x8} on (4,2,2), exactly R5's.\\nper_mode: THE EXACT SPECTRA AND THE PRINCIPAL PART. Every (witness, bench, assembly, reading) charpoly of degree 16 at the eight rational witnesses agrees exactly between the Bloch union over exact roots of unity and the direct bench matrix; at W1 on (4,4) the overlap H-pencil multiset is {0 x4, 1 x8, 1922/1081 x4} against R5's {0 x4, 1 x8, 2 x4}; at the PD boundary g0 = g1 = 1/2 the onsite H is singular on (4,2,2), where the triangle determinant (1 + g)^2 (1 - 2g) vanishes and the H-pencil reading is undefined while the form reading remains defined, and REGULAR on (4,4), whose origin tx face is Block 105's shear_hodge at c = 1/2 with two-direction PD condition |c| < 1; the overlap assembly remains regular on both. The expansion K_H,B(exp(i eps kappa)) = i eps M(kappa) + O(eps^2) with M = H0 D(kappa) + D(kappa)^T H0 symmetric is MEASURED from the composed rules at the fully symbolic cell form under both assemblies; both assemblies preserve grade parity, M = [[0, B], [B^T, 0]] with B = H_e D_eo + D_oe^T H_o, the characteristic cone {det B = 0} is reading-independent, and the principal symbols are B B^T (form) and H_e^-1 B H_o^-1 B^T (pencil) on the even sector with the same spectra on the odd sector.\\nper_block: THE TWO LEMMAS, AT SYMBOLIC ARGUMENTS. Graded assembly, any block-diagonal cell form, as fraction-free polynomial identities in seventeen symbols: B = [[k^T D1, 0], [D2 W, D3 E k]] with W k = 0 and (E k)^T W = 0 from d^2 = 0; det B = +D3 (k^T D1 k)(k^T E adj(D2) E k) in three directions and -D2 (k^T D1 k) in two; D0 is absent; the pencil principal symbol is block-diagonal by form degree with the EXACT branches k^T (D1/D0) k on 0-forms and D3 k^T E D2^-1 E k on top forms (eigenvector adj(D2) E k), the transverse 2-form pair being the roots of a quadratic whose product is det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k), the product taken on the symbolic Block 211 family. Overlap assembly: the folded H0 is h0 I + two-flip couplings 2 h_f with h0 = (v0 + 3 v1 + 3/v0 + 1/v1)/8 and h_f = -(s_f0 v1 g0 + s_f1 g1 / v0)/8, and det B = Q+ Q- exactly, sign pinned, with the two displayed quadratic cones differing by the sign of the t-y plane terms; in two directions the single cone h0 (kt^2 + kx^2) + 4 h_tx kt kx.\\nlattice_wide: THE HYPOTHESIS, ANSWERED EXACTLY, AND THE FIRST DRAFT's ANSWER CORRECTED. In two directions at symbolic (c, v) the graded H-pencil branches are k^T g^-1 k and (det g / v^2) k^T g^-1 k with g = [[1, c], [c, 1]] = (D1/D0)^-1, so the cone IS the cell metric's cone and the symbol is a quadratic form times the identity exactly on the honest-volume locus v^2 = 1 - c^2; the overlap cone has the effective shear c_K = 2 c v^2 / (3 v^2 + 1 - c^2 (v^2 + 1)) with the exact discrepancy c_K - c = -c (1 - c^2)(v^2 + 1) / (3 v^2 + 1 - c^2 (v^2 + 1)). In three directions the graded cone is EXACTLY the union of the two Hodge readings' cones k^T (D1/D0) k = 0 and k^T (D3 E D2^-1 E) k = 0, both exact H-pencil branches. THE COINCIDENCE THEOREM: on the four class representatives' (t, u) chart the proportionality ideal has lex Groebner basis {t (u^2 + 1), u (u^2 + 1)} with the flat point its only real zero, taken fail-closed; BUT the weighted kernel is not invariant under Block 211's corner-sign gauge, and the census over all sixty-four sign cells at symbolic moduli finds forty-eight cells coinciding only at flat and sixteen carrying a coincidence CURVE, in closed form: with M1 = I - g0 S0, M2 = I - g1 S1, G1 ~ G2 iff P = M1 E M2 E ~ I, and P = (1 - 2 g0 g1) I + (g1 - g0 - pi0 g0 g1) S0 when S1 = -E S0 E (rule A, curve g0 = g1/(1 + pi0 g1), positive and PD-solvable in all eight rule-A cells: four of class (+1, -1), four of class (-1, +1)), P = (1 + 2 g0 g1) I - (g0 + g1 - pi0 g0 g1) S0 when S1 = +E S0 E (rule B, no positive point). ON THE LOCUS THE GRADED CONE IS ONE METRIC'S CONE, (k^T G1 k)^2, every H-pencil branch is a constant multiple of k^T G1 k with constants {1, mu, 1/(1 - g1^2), 1/(1 - g1^2)}, mu = (1 + 2 pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3), and mu - 1 = pi0 g1^3 (2 + pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3) is nonzero off flat, so the symbol is STILL NOT SCALAR there; the two QQ(sqrt 6) witnesses L+- (g1 = 1/2, g0 = 1/3, mu = 32/27, constants 1, 32/27, 4/3, 4/3) and L-+ (g1 = 1/3, g0 = 1/2, mu = 27/32, constants 1, 27/32, 9/8, 9/8) realise it on the family with every cone, reading and constant rational, and the transverse pair SPLITS there. OFF THE LOCUS the graded cone is the union of two DISTINCT quadrics, the overlap cones are proportional to neither reading at every curved witness including the locus, no curved three-direction principal symbol is scalar under either assembly or reading, and the transverse pair splits into two quadratic-form branches at exactly one curved rational witness, honest_face (offset-1 shear zero, D2 isotropic), staying an irreducible quadratic at the other five. THE CONE IS ONE METRIC'S CONE EXACTLY ON THE LOCUS AND NOWHERE ELSE OFF FLAT, AND THE EXACT DISCREPANCY IS THE CLOSED FORM ABOVE.\\nper_scope: SHEAR REGISTRATION, SEPARATELY. The shears g0 and g1 move the cone under both assemblies (exact nonzero derivatives, exact non-proportionality to the zero-shear cone, and the sign class moves the overlap cone at fixed magnitudes); the diagonal moduli do not move the graded cone (det B is proportional to its unit-volume value, a statement on the formal four-parameter block family in which volumes and shears are independent) and enter only the branch scales v1/v0 and v0/v1; under the overlap assembly the Bloch H at zero shear is h0 times the identity, the zero-shear H-pencil symbol is R5's for EVERY volume pair and the zero-shear form symbol is h0^2 times R5's. THIS IS A NAMED TENSION WITH THE MATTER-SIDE NO-SHEAR-RESPONSE RESULT OF PR #7970 (itself conditional): kernel side registers the shear and not the diagonal, matter side the diagonal and not the shear -- RECORDED, NOT RESOLVED HERE. WHAT REMAINS OPEN: which assembly, if either, the framework selects; which Hodge reading, if either, is 'the' metric; whether anything in the framework prefers the coincidence locus; the transverse branches' meaning; every extent, witness and convention not run; and no energy, no mass, no measurement postulate, no Born rule, no dynamics, no continuum and no gravity is supplied by any line of this block.\\nRESULT: THE WEIGHTED KERNEL K_H = H d - d^T H REPRODUCES R5's FLAT SYMBOL EXACTLY AT THE FLAT CELL IN ALL FOUR CONSTRUCTIONS; ITS CHARACTERISTIC CONE IS, UNDER THE GRADED ASSEMBLY, THE UNION OF THE TWO HODGE READINGS' CONES k^T (D1/D0) k = 0 AND k^T (D3 E D2^-1 E) k = 0, WHICH COINCIDE EXACTLY ON THE CODIMENSION-ONE LOCUS g0 = g1/(1 + pi0 g1) OF THE EIGHT SIGN CELLS WITH S1 = -E S0 E -- ONE METRIC'S CONE THERE, WITH A NON-SCALAR SYMBOL -- AND NOWHERE ELSE OFF FLAT; UNDER THE OVERLAP ASSEMBLY IT IS A NON-HODGE PAIR OF CONES AT EVERY POINT MEASURED; THE PRINCIPAL SYMBOL IS A QUADRATIC FORM TIMES THE IDENTITY ONLY IN TWO DIRECTIONS ON v^2 = 1 - c^2; AND THE SHEAR, NOT THE DIAGONAL METRIC, IS WHAT THE KERNEL REGISTERS. THESE ARE SCOUT-GRADE FINITE EXACT LINEAR-ALGEBRA FACTS ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY -- the CYCLE913 CAUTION, CARRIED VERBATIM -- and EVERY POSITIVE HERE IS CANDIDACY WITHIN THIS FORMALISM AND NEVER A CLAIM ABOUT NATURE.\\nDECISION_CUT: NOTHING IS REGISTERED AND NOTHING IS ADOPTED. No premise-class change is registered; no landed note is EDITED; no landed number is touched; Blocks 105, 107, 128, 171, 190, 191, 201, 209, 210, 211 and 212 STAND EXACTLY AS LANDED. BLOCK 201 IS NOT CORRECTED: its fork_hodge is reproduced digit for digit and its overlap assembly is one of the two landed assemblies run here. BLOCK 211 IS NOT CORRECTED: its witnesses, ranks, block formulas and minors are reproduced through its own runner; its corner-sign gauge is a symmetry of the cell form's positivity and NOT of the weighted kernel, which is why its four class representatives do not speak for its sixty-four sign cells here. THIS BLOCK's OWN FIRST DRAFT IS CORRECTED, AS CORRECTION 113: the dead seat's headline 'never one metric's cone off flat' was true on the four representatives it tested and false on the family, refuted by the census and by two explicit witnesses; nothing landed is touched by that correction. THIS BLOCK's OWN DEFECTS ARE DISCLOSED: two benches, one cell family, ten witnesses, two assemblies and two readings, one rule, the principal part at one degenerate zero -- not a parameter space and not a limit; the assembly fork is supplied and not decided; the two Hodge readings are declared candidates and neither is selected; the coincidence locus is exhibited and not preferred; the transverse 2-form branches are exhibited and not interpreted; m = 0 and the periodic closure are this block's choices, not the chain's. DEGRADED WORKER MODE IS DISCLOSED: drafted on Fable worker seats after the gpt-5.6-sol seats died at the account limit, resumed by a second Fable seat after the first died mid-block, with the refuting checker pending. PROVENANCE: the R5 weighted-kernel design task of this lane, at TOTAL PASS=36 FAIL=0 across nine families.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero."
 
 
 def main() -> int:

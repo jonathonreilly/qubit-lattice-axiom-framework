@@ -89,3 +89,135 @@ flat: {1 x2, 16/15 x6} at both pure points, {2 x2, 32/15 x6} at the mixed point
 
 The form reading fails at every nonzero point (witness and `W1`): its charpoly differs from the
 principal part's at each of `(1,i,1)`, `(i,1,1)`, `(i,i,1)`. Overlap: see CK-09.
+
+### CK-06 — the cone's shape: `G1`, `Q`, and the branch constants  — CONFIRMS
+
+Note lines 283-284, verbatim:
+> ``G1 = D1/D0` at the witness is `(3/8)·[[3, −1, −1], [−1, 3, −1], [−1, −1, 3]]`,`
+> `so `Q(κ) = κᵀ G1 κ` takes the values `9/8`, `9/8`, `3/2` at `e_t`, `e_x`,`
+
+and lines 288-290, verbatim:
+> `(i,1,1):  {9/8, 16/11, 18/11} / (9/8) = {1 x2, 128/99 x2, 16/11 x4}`
+> `(1,i,1):  {9/8, 16/11, 18/11} / (9/8) = {1 x2, 128/99 x2, 16/11 x4}`
+> `(i,i,1):  {3/2, 64/33, 24/11} / (3/2) = {1 x2, 128/99 x2, 16/11 x4}       = Block 216's BRANCH_TABLE[("L+-", "line 1/4")] at every point.`
+
+Computed with Block 213's `metric_candidates` on my own witness cell at **zero** parameters and at
+the line point (they agree — `G1` is parameter-free here, since the four duality entries sit off the
+unit-corner block): `G1 = [[9/8, -3/8, -3/8], [-3/8, 9/8, -3/8], [-3/8, -3/8, 9/8]]`, i.e. exactly
+`(3/8)[[3,-1,-1],[-1,3,-1],[-1,-1,3]]`. `Q(e_t) = Q(e_x) = 9/8`, `Q(e_t + e_x) = 3/2`. Dividing my
+own pencil multisets by `Q` at each of the three points gives `{1 x2, 128/99 x2, 16/11 x4}` at all
+three, identical to `b216.BRANCH_TABLE[("L+-", "line 1/4")] = (('1',2,True), ('128/99',2,True),
+('16/11',4,True))`. Every nonzero eigenvalue at the three points is a branch constant times one
+quadric value: CONFIRMED.
+
+### CK-07 — the cross term and `det M` at the witness  — CONFIRMS
+
+Note lines 306-308, verbatim:
+> `G1_tx(bench) = (Q(e_t + e_x) - Q(e_t) - Q(e_x))/2 = (3/2 - 9/8 - 9/8)/2 = -3/8  =  G1[t, x]  (the entry of D1/D0);`
+> `the plane restriction read off the bench: (G1_tt, G1_tx, G1_xx) = (9/8, -3/8, 9/8);   the pure points coincide (Q(e_t) = Q(e_x));`
+> `det M on the line: ONE quadric to the fourth power over QQ(sqrt 6), 81/64 at e_t, 81/64 at e_x, 4 at e_t + e_x,  4 / (81/64) = (4/3)^4 = (Q_mixed / Q_t)^4.`
+
+Computed: `(Q_mixed - Q_t - Q_x)/2 = (3/2 - 9/8 - 9/8)/2 = -3/8`, equal to `G1[0,1]`. Plane
+restriction `(9/8, -3/8, 9/8)`. My own `det M(kappa)` (symbolic `kt, kx, ky`, `M = H0 D + D^T H0`)
+factors over `QQ(sqrt 6)` as `(81/64) * ((3kt^2 - 2kt kx - 2kt ky + 3kx^2 - 2kx ky + 3ky^2)/3)^4` —
+**factor shape `[(2, 4)]`, one quadric to the fourth**; the quadric is `(8/9) Q(kappa)`, so
+`det M = (64/81) Q^4`, Block 216's `CONE_ON_LINE_CONSTANTS` value. Values `81/64`, `81/64`, `4` at
+`e_t`, `e_x`, `e_t + e_x`; `4/(81/64) = 256/81 = (4/3)^4 = (Q_mixed/Q_t)^4`.
+
+### CK-08 — the all-plus `W1` control  — CONFIRMS
+
+Note lines 332-334 and 339, verbatim:
+> `W1, onsite pencil blocks:   (i,1,1): (15 lam - 16)^2 (4801335 lam^3 - 18293776 lam^2 + 22913024 lam - 9437184)^2     -- Block 217's cubic`
+> `                            (1,i,1): (15 lam - 16)^2 (385 lam - 256)^2 (12471 lam^2 - 45584 lam + 36864)^2`
+> `                            (i,i,1): (5 lam - 8)^2 (4801335 lam^3 - 27171928 lam^2 + 46940160 lam - 25165824)^2`
+> `det M on the line at W1:    TWO DISTINCT QUADRICS, each squared (256/225 at e_t, 1024/225 at e_t + e_x) -- a union of two, Block 217's F-3.`
+
+Computed with my own charpolys and `factor_list` over `QQ`: the three factor shapes reproduce
+coefficient for coefficient — `(15,-16)^2 (4801335,-18293776,22913024,-9437184)^2` at `(i,1,1)`;
+`(15,-16)^2 (385,-256)^2 (12471,-45584,36864)^2` at `(1,i,1)`; `(5,-8)^2 (4801335,-27171928,
+46940160,-25165824)^2` at `(i,i,1)`. The rational roots are `16/15, 16/15, 8/5` = `W1`'s
+`Q(kappa_z)` with `G1 = [[16/15,-4/15,-4/15],...]` and `(8/5 - 16/15 - 16/15)/2 = -4/15 = G1_tx`.
+The cubics and the quadratic are irreducible over `QQ` (they are `factor_list` irreducibles), the
+two pure points differ, no branch constant exists. `det M` at `W1` factors as two **distinct**
+quadrics each squared, `2kt^2 - kt kx - kt ky + 2kx^2 - kx ky + 2ky^2` and
+`3kt^2 - 2kt kx + 2kt ky + 3kx^2 - 2kx ky + 3ky^2`, constant `64/2025`; values `256/225` at `e_t`
+and `1024/225` at `e_t + e_x`.
+
+### CK-09 — the overlap fold per point  — CONFIRMS (strengthened)
+
+Note lines 352-354, verbatim:
+> `(1,1,1):  parity block (D07 + D16 + D25 + D34)/4 . P111          -- Block 217's (s/4) P111`
+> `(1,i,1):  parameter-free           (i,1,1):  parameter-free       -- Block 217's G-2 at both pure points`
+> `(i,i,1):  parity block (-D07 - D16 + D25 + D34)/4 . P111        -- ALL FOUR parameters, through a SIGNED sum`
+
+Computed on a **fully generic symmetric 8 x 8 cell** (36 free symbols — strictly more general than
+symbolic face signs, moduli and parameters, so it subsumes the note's test): the part of the overlap
+Bloch fold that depends on the four complement-pair entries `a07, a16, a25, a34` is
+`0` at `(1,i,1)` and `(i,1,1)` (parameter-free); equals `((a07 + a16 + a25 + a34)/4) * P111` at
+`(1,1,1)`; and equals `((-a07 - a16 + a25 + a34)/4) * P111` at `(i,i,1)`, with `P111` the
+complement permutation. The signed sum and its sign pattern are exactly as claimed. The overlap
+fold is **not** a similarity `Z^-1 H0 Z` at any nonzero point (checked), and the overlap block
+charpoly differs from the principal part's under both readings at all three nonzero points, at the
+witness and at `W1` — the note's `False` row is reproduced.
+
+### CK-10 — line vs zero parameters, and the `t`/`x` distinction  — CONFIRMS, with one wording precision (CORRECTS)
+
+Note lines 374-376, verbatim:
+> `overlap, witness:   (i,1,1) and (1,i,1) DIFFER:  form {36481/55296 x4, 89401/55296 x4} against {51529/55296 x4, 69169/55296 x4};`
+> `                                                 pencil R5's {1 x8} against {227/263 x4, 263/227 x4}`
+> `overlap, W1:        form coincides (Block 214's OVERLAP_FORM_W1 at both);  pencil differs: {1 x8} against {55/71 x4, 71/55 x4}`
+
+Reproduced exactly, all eight literals: witness `(i,1,1)` form `{36481/55296 x4, 89401/55296 x4}`,
+pencil `{1 x8}`; witness `(1,i,1)` form `{51529/55296 x4, 69169/55296 x4}`, pencil
+`{227/263 x4, 263/227 x4}`; `W1` form `{116281/147456 x4, 4844401/3686400 x4}` at both pure points
+(= `b214.OVERLAP_FORM_W1`'s nonzero part), pencil `{1 x8}` at `(i,1,1)` against
+`{55/71 x4, 71/55 x4}` at `(1,i,1)`. Onsite at the witness: the two pure points coincide.
+Also reproduced: witness `(i,i,1)` overlap pencil `{490/299 x8}` at zero parameters and the
+quadratic-to-the-fourth `(17837 lam^2 - 58604 lam + 48020)^4` on the line (its roots
+`29302/17837 +- 588 sqrt 6 /17837`, each multiplicity 4); the `(i,i,1)` overlap **form** on the line
+is an irreducible quartic squared **over QQ** and an irreducible quadratic squared, twice (a
+`sqrt 6`-conjugate pair), over `QQ(sqrt 6)` — the note's table entry at line 276 says "an
+irreducible quartic squared" without naming the field, and the note's own scope line says the
+charpolys are taken over `QQ(sqrt 6)`; the shape is field-dependent here and only the `QQ` reading
+is the true one. **CORRECTS (wording, no number affected).**
+
+Second precision. Note line 363-364 reads "the overlap bench charpolys at the line point **equal**
+the zero-parameter ones at both pure points and **differ** at the mixed point". True as stated for
+charpolys. But at the **zero Bloch point** `(1,1,1)` the overlap fold matrices at the line point and
+at zero parameters are **not** equal (the parity block `(s/4) P111` is nonzero on the line, where
+`s = 1/4`); their charpolys both collapse to `lam^8` because `d_B(1,1,1) = 0`, which is why the bench
+charpoly claim survives. The spec's phrasing "the overlap bench **blocks** at the line point equal
+the zero-parameter ones at the pure points" holds at the two pure fine points and must not be read
+as covering `(1,1,1)`. **CORRECTS (scope of a word, no number affected).**
+
+### CK-11 — Bloch union = direct on the explicit `32 x 32`  — CONFIRMS
+
+Note lines 267-269, verbatim:
+> `**Bloch union = direct** (Block 213's E-gate: the direct `32 × 32` charpoly over`
+> ``QQ(√6)` against the product of the four `8 × 8` block charpolys over`
+> ``QQ(√6, i)`), and the zero Bloch point contributes eight zeros everywhere. Per`
+
+Computed by a different route from the runner's `DomainMatrix` charpolys: sympy's `charpoly` on my
+own explicit `32 x 32` bench pencil symbol `-(d - H^-1 d^T H)^2`, against the product of my four
+`8 x 8` block charpolys. Both requested cases agree exactly and are degree 32:
+**witness onsite pencil** (direct multiset `{0 x8, 9/8 x4, 16/11 x4, 3/2 x2, 18/11 x8, 64/33 x2,
+24/11 x4}` — the four blocks' union, eight zeros from `(1,1,1)`) and **`W1` onsite pencil**
+(irrational, agreement checked at the polynomial level). Both charpolys finished in under a second.
+
+### CK-12 — planted defects through the runner's `main()`  — COULD NOT TEST
+
+Spec item 8 requires monkeypatching the runner in-process, which requires importing it; the hard
+rule forbids importing or calling the block runner, and the mutation census is the supervisor's to
+verify from the primary's raw outputs. Not attempted. The `break_*` mutation names are therefore
+unexercised here; every family they guard was instead re-derived independently above.
+
+---
+
+### One defect found, and it was mine
+
+My first pass reported the `Z`-conjugation identity as **False** at the witness and at `W1`. The
+cause was in my own checker code, not in the block: passing Python `int` `1` as a Bloch phase makes
+`1 ** -1` a Python **float**, which silently floated the whole fold. After sympifying the phases the
+identity is exact everywhere. Recorded because it is exactly the failure mode the note's `I-2`
+no-float gate exists to catch, and the block's own runner is clean of it (its phases come from
+`b213.bench_momenta`, which are sympy objects).

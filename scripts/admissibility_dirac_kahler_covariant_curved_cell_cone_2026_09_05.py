@@ -761,3 +761,153 @@ def measure_branches(census: dict) -> dict:
     facts["all_branches_k_free"] = all(all(kf for _, _, kf in entry[0]) and entry[1] == ()
                                        for key, entry in table.items() if isinstance(key, tuple) and key[1].startswith("line"))
     return facts
+
+
+def invariant_quadric_dimension(rotations: tuple, members: tuple) -> int:
+    """dim { G symmetric 3 x 3 : R^T G R = G for every R in the members }."""
+    g = sp.Matrix(3, 3, lambda i, j: sp.Symbol(f"q{min(i, j)}{max(i, j)}"))
+    unknowns = tuple(g[i, j] for i in range(3) for j in range(i, 3))
+    rows = []
+    for index in members:
+        r = rotations[index]
+        residual = (r.T * g * r - g).applyfunc(sp.expand)
+        for i in range(3):
+            for j in range(i, 3):
+                rows.append([sp.Poly(residual[i, j], *unknowns).coeff_monomial(u) for u in unknowns])
+    return 6 - sp.Matrix(rows).rank()
+
+
+def measure_symbol(group: dict, census: dict) -> dict:
+    """(e): at each rule-A witness the two quadrics of Block 213's symbol
+    identity det B = D3 (k^T D1 k)(k^T E adj(D2) E k) and det B itself are
+    invariant under kappa -> R kappa EXACTLY for the strict stabiliser (an
+    S3_body), each quadric lies in the two-dimensional S3-invariant space
+    span(|k|^2, (n . k)^2) with n the 3-fold axis; the full group would leave
+    only |k|^2 (the flat cell); a twisted rotation maps the symbol to the
+    symbol of the GAUGED raising part E' D E', not to itself."""
+    lifts, rots, orders = group["lifts"], group["rotations"], group["orders"]
+    even, odd = b213.even_odd(3)
+    facts: dict = {}
+    table: dict = {}
+    k2 = KT ** 2 + KX ** 2 + KY ** 2
+    a, b = sp.symbols("a_inv b_inv")
+    for values in star_cells(census):
+        c = census["cells"][values]
+        if not c["rule_a"]:
+            continue
+        zero = formal(values, moduli_as_g(curve_moduli(c["class"][0])), (0, 0, 0, 0))
+        _, _, _, d1, d2, d3 = b213.metric_candidates(zero)
+        q1 = b213.quadratic_form(d1, KAPPA)
+        q2 = b213.quadratic_form(SIGNATURE * d2.adjugate() * SIGNATURE, KAPPA)
+        _, m, _ = b214.principal_part(zero, "onsite")
+        det_b = sp.expand(sp.radsimp(m.extract(even, odd).det(method="berkowitz")))
+        entry: dict = {"identity": is_zero_alg(det_b - d3 * q1 * q2)}
+        stabiliser = strict_stabiliser(zero, lifts)
+        entry["stabiliser"] = stabiliser
+        for label, expression in (("q1", q1), ("q2", q2), ("detB", det_b)):
+            entry[label + "_invariance_set"] = tuple(g for g in range(24) if is_zero_alg(rotate_kappa(expression, rots[g]) - expression))
+        entry["invariance_sets_are_the_stabiliser"] = all(entry[label + "_invariance_set"] == stabiliser for label in ("q1", "q2", "detB"))
+        three_cycle = next(g for g in stabiliser if orders[g] == 3)
+        axis = (rots[three_cycle] - sp.eye(3)).nullspace()[0]
+        axis = axis / sp.gcd(list(axis))
+        entry["axis"] = tuple(axis)
+        nk = (axis.T * sp.Matrix(KAPPA))[0, 0]
+        spans = []
+        for expression in (q1, q2):
+            equations = sp.Poly(sp.expand(sp.radsimp(expression - a * k2 - b * nk ** 2)), *KAPPA).coeffs()
+            solution = sp.linsolve(equations, (a, b))
+            spans.append(tuple(sp.radsimp(x) for x in next(iter(solution))) if solution else None)
+        entry["span_coefficients"] = tuple(spans)
+        entry["in_invariant_span"] = all(s is not None for s in spans)
+        entry["invariant_quadric_dimension_s3"] = invariant_quadric_dimension(rots, stabiliser)
+        entry["invariant_quadric_dimension_o"] = invariant_quadric_dimension(rots, tuple(range(24)))
+        table[c["mask"]] = entry
+    facts["table"] = table
+    facts["identity_everywhere"] = all(e["identity"] for e in table.values())
+    facts["invariance_is_exactly_s3_everywhere"] = all(e["invariance_sets_are_the_stabiliser"] and len(e["stabiliser"]) == 6
+                                                       for e in table.values())
+    facts["quadrics_in_s3_span_everywhere"] = all(e["in_invariant_span"] for e in table.values())
+    facts["invariant_dimensions"] = tuple(sorted(set((e["invariant_quadric_dimension_s3"], e["invariant_quadric_dimension_o"])
+                                                     for e in table.values())))
+    facts["axes"] = tuple(sorted(set(e["axis"] for e in table.values())))
+    # THE FLAT CELL: both quadrics are |k|^2, invariant under all 24
+    flat = formal(ALL_PLUS_CELL, moduli_as_g(FLAT_MODULI), (0, 0, 0, 0))
+    _, _, _, d1f, d2f, _ = b213.metric_candidates(flat)
+    facts["flat_quadrics_are_k2"] = (sp.expand(b213.quadratic_form(d1f, KAPPA) - k2) == 0
+                                     and sp.expand(b213.quadratic_form(SIGNATURE * d2f.adjugate() * SIGNATURE, KAPPA) - k2) == 0)
+    # THE TWISTED IDENTITY at L+-'s own cell for the order-4 generator: with
+    # T = E L preserving H (E != 1), T^T M(kappa) T = M_{E'}(R^-1 kappa) where
+    # E' = L^T E L and M_{E'} is the principal part of the gauged raising part
+    # E' D E' -- so det B(R kappa) = det B_{E'}(kappa), and det B itself moves.
+    lpm = b213.locus_witness_table()["L+-"]
+    zero = b214.formal_cell(lpm[1], lpm[0][1], lpm[0][3], lpm[0][0], lpm[0][2], (0, 0, 0, 0))
+    _, m0, _ = b214.principal_part(zero, "onsite")
+    det_b0 = sp.expand(sp.radsimp(m0.extract(even, odd).det(method="berkowitz")))
+    dk = b214.raising_matrix()
+    g4 = next(g for g in range(24) if orders[g] == 4)
+    lift = lifts[g4]
+    twists = [e for e in b215.sign_vectors()
+              if residual_count((sp.diag(*e) * lift * zero * lift.T * sp.diag(*e) - zero).applyfunc(sp.radsimp)) == 0]
+    facts["twist_count_order4"] = len(twists)
+    gauged_identity, moves = [], []
+    for e in twists:
+        e_prime = (lift.T * sp.diag(*e) * lift).applyfunc(sp.expand)
+        dk_gauged = (e_prime * dk * e_prime).applyfunc(sp.expand)
+        m_gauged = (zero * dk_gauged + dk_gauged.T * zero).applyfunc(sp.expand)
+        det_b_gauged = sp.expand(sp.radsimp(m_gauged.extract(even, odd).det(method="berkowitz")))
+        rotated = rotate_kappa(det_b0, rots[g4])
+        gauged_identity.append(is_zero_alg(rotated - det_b_gauged))
+        moves.append(not is_zero_alg(rotated - det_b0))
+    facts["twisted_symbol_is_gauged_symbol"] = bool(twists) and all(gauged_identity)
+    facts["twisted_symbol_moves"] = bool(twists) and all(moves)
+    facts["gauged_raising_differs"] = bool(twists) and all(
+        residual_count(((lift.T * sp.diag(*e) * lift) * dk * (lift.T * sp.diag(*e) * lift) - dk).applyfunc(sp.expand)) > 0 for e in twists)
+    return facts
+
+
+@dataclass(frozen=True)
+class Facts:
+    authority: AuthorityCertificate
+    group: dict
+    census: dict
+    covariance: dict
+    union: dict
+    witness: dict
+    branches: dict
+    symbol: dict
+    axiom_text: str
+    note_text: str
+    timings: dict
+
+
+def measure() -> Facts:
+    timings: dict = {}
+    started = time.monotonic_ns()
+
+    def lap(label: str) -> None:
+        nonlocal started
+        now = time.monotonic_ns()
+        timings[label] = (now - started) // 1_000_000
+        started = now
+        print(f"[phase] {label}: {timings[label]} ms", file=sys.stderr)
+
+    git_maybe("fetch", "origin", "main", "--quiet")
+    authority = authority_certificate(git_maybe("rev-parse", "origin/main"))
+    lap("authority")
+    group = b215.measure_group()
+    lap("group")
+    census = measure_census()
+    lap("census")
+    covariance = measure_covariance(group, census)
+    lap("covariance")
+    union = measure_union(census)
+    lap("union")
+    witness = measure_witness(group, census)
+    lap("witness")
+    branches = measure_branches(census)
+    lap("branches")
+    symbol = measure_symbol(group, census)
+    lap("symbol")
+    axiom_text = (ROOT / AXIOM_PATH).read_text(encoding="utf-8") if (ROOT / AXIOM_PATH).is_file() else ""
+    note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
+    return Facts(authority, group, census, covariance, union, witness, branches, symbol, axiom_text, note_text, timings)

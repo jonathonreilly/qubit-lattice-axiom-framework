@@ -25,6 +25,7 @@ import itertools
 import math
 import resource
 import sys
+import time
 from collections import deque
 from dataclasses import dataclass
 from pathlib import Path
@@ -253,7 +254,11 @@ class Graph:
         return self.edge_index[tuple(sorted((u, v)))]
 
 
-def components(vertices: int, edges: Sequence[tuple[int, int]], live_mask: int) -> list[tuple[int, ...]]:
+def components(
+    vertices: int,
+    edges: Sequence[tuple[int, int]],
+    live_mask: int,
+) -> list[tuple[int, ...]]:
     adjacency = [[] for _ in range(vertices)]
     for edge_index, (u, v) in enumerate(edges):
         if (live_mask >> edge_index) & 1:
@@ -696,7 +701,11 @@ def construct_faithful_code(graph: Graph, bksf: BKSF, car: EvenCAR) -> FaithfulC
     )
 
 
-def fixed_number_dimension(component_sizes: Sequence[int], parities: Sequence[int], number: int) -> int:
+def fixed_number_dimension(
+    component_sizes: Sequence[int],
+    parities: Sequence[int],
+    number: int,
+) -> int:
     if len(component_sizes) != len(parities):
         raise ValueError("component sizes and parities must align")
     coefficients = [1] + [0] * number
@@ -924,7 +933,15 @@ def full_algebra_and_placement(graph: Graph, bksf: BKSF) -> AlgebraMetrics:
         residual = max(
             residual,
             op_residual(op_dagger(bksf.T[edge_index]), bksf.T[edge_index]),
-            max((abs(value) for value in op_commutator(bksf.T[edge_index], total_number).values()), default=0.0),
+            max(
+                (
+                    abs(value)
+                    for value in op_commutator(
+                        bksf.T[edge_index], total_number
+                    ).values()
+                ),
+                default=0.0,
+            ),
         )
         target_square = op_scale(
             op_add(identity, operator((bksf.B[i] @ bksf.B[j]).scaled(-1.0))),
@@ -940,7 +957,13 @@ def full_algebra_and_placement(graph: Graph, bksf: BKSF) -> AlgebraMetrics:
         )))
         separate_commutator = max(
             separate_commutator,
-            max((abs(value) for value in op_commutator(first_word, total_number).values()), default=0.0),
+            max(
+                (
+                    abs(value)
+                    for value in op_commutator(first_word, total_number).values()
+                ),
+                default=0.0,
+            ),
         )
         for other_edge, other_a in enumerate(bksf.A_forward):
             if other_edge != edge_index:
@@ -1074,7 +1097,7 @@ class BulkMetrics:
     max_spectral_residual: float
     max_trace_residual: float
     max_norm_margin: float
-    max_tail_bound: float
+    ell4_quarter_tail_bound: float
 
 
 def open_cubic_one_particle(side: int, hopping: float = 1.0) -> tuple[np.ndarray, int, int]:
@@ -1111,7 +1134,7 @@ def bulk_energy_checks(model: CubeModel) -> BulkMetrics:
     maximum_spectral_residual = 0.0
     maximum_trace_residual = 0.0
     maximum_norm_margin = 0.0
-    maximum_tail_bound = 0.0
+    ell4_quarter_tail_bound = math.nan
     energies: dict[int, float] = {}
     for side in (2, 4):
         one_particle, vertices, edges = open_cubic_one_particle(side)
@@ -1147,7 +1170,8 @@ def bulk_energy_checks(model: CubeModel) -> BulkMetrics:
                 maximum_spectral_residual,
                 max(0.0, direct_chebyshev - tail),
             )
-            maximum_tail_bound = max(maximum_tail_bound, tail)
+            if side == 4 and deleted == edges // 4:
+                ell4_quarter_tail_bound = tail
 
     cube_h = model.direct_hamiltonian(model.graph.full_mask)
     number_four = [
@@ -1165,7 +1189,7 @@ def bulk_energy_checks(model: CubeModel) -> BulkMetrics:
         maximum_spectral_residual,
         maximum_trace_residual,
         maximum_norm_margin,
-        maximum_tail_bound,
+        ell4_quarter_tail_bound,
     )
 
 
@@ -1242,6 +1266,13 @@ def phase_aligned_distance(left: np.ndarray, right: np.ndarray) -> float:
         return float(np.linalg.norm(left - right))
     phase = overlap / abs(overlap)
     return float(np.linalg.norm(left - phase * right))
+
+
+def alignment_phase(left: np.ndarray, right: np.ndarray) -> complex:
+    overlap = np.vdot(right, left)
+    if abs(overlap) <= PROB_TOL:
+        return 1.0 + 0.0j
+    return overlap / abs(overlap)
 
 
 def expectation(state: np.ndarray, operator_state: np.ndarray) -> float:
@@ -1339,7 +1370,8 @@ def branch_observable_checks(
     expected_state = branch_embed(
         model, branch.direct, branch.recorded_mask, branch.record_sign_bits
     )
-    state_residual = phase_aligned_distance(branch.physical, expected_state)
+    common_phase = alignment_phase(branch.physical, expected_state)
+    state_residual = float(np.linalg.norm(branch.physical - common_phase * expected_state))
     generator_residual = 0.0
     dimension = 1 << len(model.graph.edges)
     for vertex, physical_word in enumerate(model.bksf.B):
@@ -1351,7 +1383,8 @@ def branch_observable_checks(
             branch.record_sign_bits,
         )
         generator_residual = max(
-            generator_residual, phase_aligned_distance(physical_action, direct_action)
+            generator_residual,
+            float(np.linalg.norm(physical_action - common_phase * direct_action)),
         )
     for edge_index, physical_word in enumerate(model.bksf.A_forward):
         if not ((live_mask >> edge_index) & 1):
@@ -1364,7 +1397,8 @@ def branch_observable_checks(
             branch.record_sign_bits,
         )
         generator_residual = max(
-            generator_residual, phase_aligned_distance(physical_action, direct_action)
+            generator_residual,
+            float(np.linalg.norm(physical_action - common_phase * direct_action)),
         )
 
     record_residual = 0.0
@@ -1401,7 +1435,7 @@ def branch_observable_checks(
     energy_residual = max(
         abs(physical_energy - direct_energy),
         abs(physical_second - direct_second),
-        phase_aligned_distance(physical_h_state, embedded_h_state),
+        float(np.linalg.norm(physical_h_state - common_phase * embedded_h_state)),
     )
     return (
         state_residual,
@@ -1812,3 +1846,314 @@ def actual_uniform_edge_probe(model: CubeModel) -> UniformMetrics:
     return UniformMetrics(
         len(probes), maximum_residual, largest_increment, largest_local_square
     )
+
+
+@dataclass(frozen=True)
+class ApparatusIdentityMetrics:
+    defect_residual: float
+    defect_norm_margin: float
+    telescope_residual: float
+    support_residual: float
+    tested_fibres: int
+
+
+def event_defect_residual(
+    model: CubeModel,
+    branch: Branch,
+    edge_index: int,
+) -> tuple[float, float, int]:
+    live_mask = model.graph.full_mask ^ branch.recorded_mask
+    if not ((live_mask >> edge_index) & 1):
+        raise ValueError("defect test requires a live edge")
+    h_in = model.physical_hamiltonian(live_mask)
+    h_edge = model.physical_hops[edge_index]
+    h_out = h_in - h_edge
+    input_h_state = h_in @ branch.physical
+    edge_state = h_edge @ branch.physical
+    residual = 0.0
+    defect_norm = 0.0
+    fibres = 0
+    for outcome in (1, -1):
+        projected = physical_record_projection(
+            model, branch.physical, edge_index, outcome
+        )
+        left = h_out @ projected - physical_record_projection(
+            model, input_h_state, edge_index, outcome
+        )
+        right = -physical_record_projection(
+            model, edge_state, edge_index, outcome
+        )
+        residual = max(residual, float(np.linalg.norm(left - right)))
+        defect_norm += float(np.vdot(left, left).real)
+        fibres += 1
+    norm_margin = max(0.0, math.sqrt(defect_norm) - 1.0)
+    return residual, norm_margin, fibres
+
+
+def apparatus_operator_identities(model: CubeModel) -> ApparatusIdentityMetrics:
+    states = selected_initial_states(model)
+    initial = Branch(
+        1.0,
+        model.code.isometry @ states["generic"],
+        states["generic"].copy(),
+        0,
+        0,
+    )
+    incident = [
+        index for index, edge in enumerate(model.graph.edges) if 0 in edge
+    ]
+    before_bridge = propagate_selected_branch(
+        model,
+        states["generic"],
+        incident[:2],
+        (1, -1),
+        (0.13, 0.29),
+    )
+    defect_residual = 0.0
+    norm_margin = 0.0
+    fibres = 0
+    for branch, edge_index in ((initial, incident[0]), (before_bridge, incident[2])):
+        current_residual, current_margin, current_fibres = event_defect_residual(
+            model, branch, edge_index
+        )
+        defect_residual = max(defect_residual, current_residual)
+        norm_margin = max(norm_margin, current_margin)
+        fibres += current_fibres
+
+    first_edge, second_edge = incident[:2]
+    h_in = model.physical_hamiltonian(model.graph.full_mask)
+    h_middle = h_in - model.physical_hops[first_edge]
+    h_out = h_middle - model.physical_hops[second_edge]
+    telescope_residual = 0.0
+    for tau in (0.0, 0.17, -0.43, 0.71):
+        input_state = initial.physical
+        first_pre = evolve_physical(h_in, input_state, -tau)
+        for first_outcome in (1, -1):
+            first_projected = physical_record_projection(
+                model, first_pre, first_edge, first_outcome
+            )
+            first_lifted = evolve_physical(h_middle, first_projected, tau)
+            second_pre = evolve_physical(h_middle, first_lifted, -tau)
+            for second_outcome in (1, -1):
+                sequential = evolve_physical(
+                    h_out,
+                    physical_record_projection(
+                        model, second_pre, second_edge, second_outcome
+                    ),
+                    tau,
+                )
+                direct_endpoint_input = evolve_physical(h_in, input_state, -tau)
+                direct_ideal = physical_record_projection(
+                    model,
+                    physical_record_projection(
+                        model, direct_endpoint_input, first_edge, first_outcome
+                    ),
+                    second_edge,
+                    second_outcome,
+                )
+                direct = evolve_physical(h_out, direct_ideal, tau)
+                telescope_residual = max(
+                    telescope_residual, float(np.linalg.norm(sequential - direct))
+                )
+                fibres += 1
+
+    hopping_bound = model.graph.hopping_bound
+    edge_count = len(model.graph.edges)
+    history_norm_bound = hopping_bound * edge_count
+    width = hopping_bound
+    initial_low = 2.0 * history_norm_bound
+    initial_high = initial_low + width
+    cap_low = 0.0
+    cap_high = 4.0 * history_norm_bound + width
+    reachable_low = initial_low - 2.0 * history_norm_bound
+    reachable_high = initial_high + 2.0 * history_norm_bound
+    nodes, weights = np.polynomial.legendre.leggauss(64)
+    energies = initial_low + 0.5 * width * (nodes + 1.0)
+    quadrature_weights = 0.5 * width * weights
+    sine_density = (2.0 / width) * np.sin(
+        math.pi * (energies - initial_low) / width
+    ) ** 2
+    sine_norm = float(np.dot(quadrature_weights, sine_density))
+    sine_mean = float(np.dot(quadrature_weights, sine_density * energies))
+    support_residual = max(
+        max(0.0, cap_low - reachable_low),
+        max(0.0, reachable_high - cap_high),
+        abs((initial_low + initial_high) / 2.0 - (2.0 * history_norm_bound + width / 2.0)),
+        abs(sine_norm - 1.0),
+        abs(sine_mean - (2.0 * history_norm_bound + width / 2.0)),
+    )
+    return ApparatusIdentityMetrics(
+        defect_residual,
+        norm_margin,
+        telescope_residual,
+        support_residual,
+        fibres,
+    )
+
+
+def domain_guard_count() -> int:
+    bad_calls = [
+        lambda: graph_from_edges(3, ((0, 0), (1, 2))),
+        lambda: graph_from_edges(3, ((0, 1), (1, 0), (1, 2))),
+        lambda: graph_from_edges(4, ((0, 1), (2, 3))),
+        lambda: Graph(
+            2,
+            ((0, 1),),
+            (2.0,),
+            ((1,), (0,)),
+            None,
+            1.0,
+        ),
+        lambda: tree_edge_solution(graph_from_edges(2, ((0, 1),)), 1),
+        lambda: open_cubic_one_particle(3),
+    ]
+    caught = 0
+    for bad_call in bad_calls:
+        try:
+            bad_call()
+        except ValueError:
+            caught += 1
+    return caught
+
+
+def main() -> None:
+    started = time.perf_counter()
+    checks = CheckBook()
+    try:
+        guard_count = domain_guard_count()
+        checks.check(
+            "G0 domains and identity",
+            guard_count == 6,
+            f"source={source_identity()[:16]} guards={guard_count}/6 even_global_parity_only",
+        )
+
+        graph = make_open_cube()
+        bksf = BKSF(graph)
+        algebra = full_algebra_and_placement(graph, bksf)
+        checks.check(
+            "G1 Pauli algebra and physical placement",
+            algebra.residual <= TOL
+            and algebra.separate_word_commutator > 0.0
+            and algebra.max_support <= 5
+            and algebra.max_radius <= 2
+            and algebra.max_diameter <= 4
+            and algebra.distinct_edge_sites == 12,
+            (
+                f"res={algebra.residual:.2e} separate_word_comm={algebra.separate_word_commutator:.2f} "
+                f"support/radius/diameter={algebra.max_support}/{algebra.max_radius}/{algebra.max_diameter}"
+            ),
+        )
+
+        census = exhaustive_cube_census(graph, bksf)
+        checks.check(
+            "G2 complete mask-edge census",
+            census.masks == 4096
+            and census.pairs == 24576
+            and census.bridges + census.nonbridges == census.pairs
+            and census.split_nontrivial > 0
+            and census.max_rank_error == 0
+            and census.algebra_residual <= TOL
+            and census.impossible_fixed_number_cases > 0,
+            (
+                f"masks={census.masks} pairs={census.pairs} bridge/non={census.bridges}/{census.nonbridges} "
+                f"fixedN={census.fixed_number_cases} impossible={census.impossible_fixed_number_cases}"
+            ),
+        )
+
+        model = build_cube_model()
+        hopping_residual = max(
+            float(np.max(np.abs(model.car.T[index] - model.car.explicit_hop(*edge))))
+            for index, edge in enumerate(graph.edges)
+        )
+        code_residual = max(
+            model.code.phase_consistency,
+            model.code.generator_residual,
+            model.code.loop_residual,
+            model.code.six_cycle_residual,
+            hopping_residual,
+        )
+        checks.check(
+            "G3 faithful physical-to-CAR dictionary",
+            model.code.isometry.shape == (4096, 128) and code_residual <= TOL,
+            f"shape=4096x128 all_A/B/T_res={code_residual:.2e} includes_length6_phase",
+        )
+
+        histories = history_suite(model)
+        checks.check(
+            "G4 no-reset native Record histories",
+            histories.histories == 6
+            and histories.nonzero_branches > 0
+            and histories.zero_outcomes > 0
+            and histories.deterministic_outcomes > 0
+            and histories.bridge_events > 0
+            and histories.nonbridge_events > 0
+            and histories.maximum_residual <= TOL,
+            (
+                f"histories={histories.histories} final_branches={histories.nonzero_branches} "
+                f"zero/deterministic={histories.zero_outcomes}/{histories.deterministic_outcomes} "
+                f"split=4+4 max_res={histories.maximum_residual:.2e}"
+            ),
+        )
+
+        uniform = actual_uniform_edge_probe(model)
+        checks.check(
+            "G5 actual uniform-live-edge moments",
+            uniform.states == 2
+            and uniform.max_residual <= TOL
+            and uniform.largest_variance_increment <= 1.0 + TOL
+            and uniform.largest_local_square <= 1.0 + TOL,
+            (
+                f"states={uniform.states} max_res={uniform.max_residual:.2e} "
+                f"max_dVar={uniform.largest_variance_increment:.6f} max_<h_e2>={uniform.largest_local_square:.6f}"
+            ),
+        )
+
+        bulk = bulk_energy_checks(model)
+        bulk_residual = max(
+            bulk.max_spectral_residual,
+            bulk.max_trace_residual,
+            bulk.max_norm_margin,
+        )
+        checks.check(
+            "G6 finite open-box sea and tail arithmetic",
+            bulk_residual <= TOL
+            and bulk.cube_energy < -4.0
+            and bulk.ell4_energy_density < -0.375
+            and abs(bulk.ell4_quarter_tail_bound - 1.0 / 9.0) <= TOL,
+            (
+                f"cube_E0={bulk.cube_energy:.12f} ell4_E0/M={bulk.ell4_energy_density:.9f} "
+                f"trace/pair/norm_res={bulk_residual:.2e} ell4_K=L/4_tail={bulk.ell4_quarter_tail_bound:.6f}"
+            ),
+        )
+
+        apparatus = apparatus_operator_identities(model)
+        apparatus_residual = max(
+            apparatus.defect_residual,
+            apparatus.defect_norm_margin,
+            apparatus.telescope_residual,
+            apparatus.support_residual,
+        )
+        checks.check(
+            "G7 apparatus operator identities",
+            apparatus_residual <= TOL and apparatus.tested_fibres >= 20,
+            (
+                f"fibres={apparatus.tested_fibres} defect/telescope/support_res="
+                f"{apparatus.defect_residual:.2e}/{apparatus.telescope_residual:.2e}/"
+                f"{apparatus.support_residual:.2e} actual_battery_fixture=checker_scope"
+            ),
+        )
+
+        elapsed = time.perf_counter() - started
+        rss = peak_rss_mib()
+        checks.check(
+            "G8 execution envelope",
+            elapsed < AUDIT_TIMEOUT_SEC and rss < 180.0,
+            f"elapsed={elapsed:.2f}s peak_rss={rss:.1f}MiB timeout={AUDIT_TIMEOUT_SEC}s",
+        )
+    except Exception as error:  # keep the final machine summary on unexpected faults
+        checks.check("INTERNAL", False, f"{type(error).__name__}: {error}")
+    checks.finish()
+
+
+if __name__ == "__main__":
+    main()

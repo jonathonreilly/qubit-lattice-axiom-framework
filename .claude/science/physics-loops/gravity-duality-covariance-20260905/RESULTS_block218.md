@@ -124,3 +124,39 @@ TOTAL: PASS=26 FAIL=0
 ```
 
 The baseline is under the 600 s budget by a factor of sixteen with all twenty direct `32 x 32` charpolys included (the slowest direct charpoly 1.6 s, the slowest Bloch union 0.9 s; bench phase 17.7 s).
+
+## Mutation census (27 declared mutations at the certified runner sha `765d7389...` / blob `89f1d01ffe`; one helper invocation per mutation (`run_mutation.sh <name>`), batches of four (at most 4 concurrent, `census_driver.sh`), launched after the recertification finished (`CERT2 DONE 15:41:19` local); every run exits 1 through `main()`'s own-gate assertion path, i.e. each mutation fails EXACTLY its declared family and no other; no `AssertionError` ("mutation did not fail exactly its own gate") anywhere)
+
+Disclosed: the first table generator read the failing-check column from the census log, where the helper's `tr -d '[]FAIL '` had stripped the letters A, F, I and L from the check keys (`A-1` logged as `-1`); the table below is rebuilt from the raw per-mutation stdout files (`mut_<name>.out`), with exit codes and assertion counts from the log. A driver-parsing artefact; no run was repeated and no runner output changed.
+
+| mutation | declared gate | failing check(s) | TOTAL | exit |
+| --- | :---: | --- | --- | :---: |
+| `stale_main_authority` | A | A-1 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `stale_parent_authority` | A | A-2 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `claim_objects_registered` | B | B-1 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `claim_gravity_supplied` | B | B-2 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `claim_covariance_inherited` | B | B-3 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `claim_assembly_decided` | B | B-4 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `claim_cell_selected` | B | B-4 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `claim_reading_selected` | B | B-4 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `claim_continuum_read` | B | B-5 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_bench_momenta` | C | C-1 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_witness_reproduction` | C | C-2 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_flat_control` | C | C-3 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_bloch_equals_direct` | D | D-1 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_witness_multisets` | D | D-2 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_control_multisets` | D | D-3 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_raising_block_additivity` | E | E-1 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_onsite_similarity` | E | E-2 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_mixed_point_identity` | E | E-3 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_cone_shape_visible` | F | F-1 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_cross_term` | F | F-2 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_control_failure` | G | G-1 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_overlap_fold_dependence` | G | G-2 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_direction_distinction` | G | G-3 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_scout_grade_fence` | H | H-1 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_instance_scope` | H | H-2 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `drop_n5_fence` | I | I-1 | TOTAL: PASS=25 FAIL=1 | 1 |
+| `break_float_absence` | I | I-2 | TOTAL: PASS=25 FAIL=1 | 1 |
+
+Summary: 27/27 mutations each fail exactly their own gate family (A 2 B 7 C 3 D 3 E 3 F 2 G 3 H 2 I 2); no mutation changed any other family; every run `TOTAL: PASS=25 FAIL=1`, exit 1, zero assertion errors. Under 4-way contention each run took about 50 s (bench phase 27 s against 17.7 s alone); the census finished at 15:47:29 local, 6 min 10 s after launch.

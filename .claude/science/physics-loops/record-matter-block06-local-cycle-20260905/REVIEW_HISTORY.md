@@ -25,7 +25,7 @@ committed:
 * both canonical caches have status ok and exit code 0;
 * both sources compile and committed-delta whitespace is clean;
 * source/cache hashes and the imported-parent fingerprint are recorded in the
-  final publication update.
+  ARTIFACT_PLAN.md;
 
 Mutation smoke checks are limited to fail-gate integrity and are documented in
 MUTATION_CHECKS.md. They are validation of this existing block, not additional
@@ -65,8 +65,16 @@ runners.
 V5 non-relabeling: local-front and ledger checks are new surfaces relative to
 the parent native-edge theorem; no status promotion is claimed.
 
+## Final frozen validation
+
+The final source-bound cache refresh reports primary TOTAL PASS=8 FAIL=0 and
+checker TOTAL PASS=5 FAIL=0. The primary cache uses timeout 180 seconds and
+the imported-parent fingerprint; the checker cache is input-free. Four
+temporary final-byte mutation copies all exit nonzero as recorded in
+MUTATION_CHECKS.md. The finite output is unchanged from the prototype
+receipt. No additional experiment or claim was added during packaging.
+
 ## Stop condition
 
 After the stacked PR is opened and the branch is clean, this block stops. Any
 formation/renewal or physical-battery work belongs to a later block.
-

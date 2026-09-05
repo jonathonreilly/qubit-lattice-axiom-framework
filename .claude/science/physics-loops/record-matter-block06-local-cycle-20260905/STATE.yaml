@@ -19,7 +19,7 @@ artifact_role: theorem
 target_claim_id: null
 target_blocker_text: Repeated local Record formation sustaining a viable matter background with consistent energy accounting.
 source_of_blocker_text: user_goal
-runner_status: primary_8_pass_checker_5_pass
+runner_status: primary_8_pass_checker_5_pass_caches_fresh
 pr_status: pending
 pr_number: null
 pr_url: null
@@ -34,4 +34,3 @@ no_new_axioms_or_primitives: true
 photons: reserved_for_other_worker
 next_action: Derive an autonomous formation/renewal mechanism and replace the scalar ledger with a physical finite or continuous apparatus.
 stop_condition: Package this completed finite block in an open stacked PR; do not add further science in this turn.
-

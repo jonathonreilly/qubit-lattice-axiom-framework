@@ -13,3 +13,19 @@ review_loop_disposition: pass (after the FIX FIRST fix pass; see REVIEW_HISTORY.
 independence_class: "single family cross-model: Fable primary, Opus refuting checker + Opus blind ledger, supervisor hand-verification"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+
+# Claim status certificate — block 02
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: "exact on the compiled tori of sides 4, 6, 8 and by two size-free arguments; conditional on the named premises LR, IP-B, OL, SI where stated; no derivation of the class from the axioms"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite classification and nullspace theorems plus exact existence witnesses; every conditional premise named; no class selected; no infinite-volume, continuum, readout or electromagnetic statement"
+dependency_classes: "one load-bearing dependency: the axiom memo (premise node); the compilation is a named supply rebuilt in the runner; PR numbers are evidence addresses only"
+open_imports: "the role compilation; the named premises LR, IP-A, IP-B, OL, SI (each shown load-bearing by a witness)"
+review_loop_disposition: pending (self-review complete; checker seat next)
+independence_class: "single family cross-context: Fable primary; hand derivations against the exhaustive runner; twelve mutation checks detected"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

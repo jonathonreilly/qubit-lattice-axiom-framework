@@ -1,6 +1,6 @@
 {
- "edge_count": 11860,
- "node_count": 4761,
+ "edge_count": 11861,
+ "node_count": 4762,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17069,6 +17069,10 @@
   "u1_det_sector_bi_orbit_quotient_step_law_baseline_decomposition_bounded_theorem_note_2026-06-10": {
    "deps_hash": "2c3aa3968ee1",
    "out_degree": 4
+  },
+  "u1_dynamics_class_axiom_adjudication_bounded_note_2026-09-05": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "u1_fermion_number_conservation_theorem_note_2026-05-02": {
    "deps_hash": "45b34f1904c9",

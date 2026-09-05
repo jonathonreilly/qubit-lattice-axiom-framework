@@ -11,3 +11,13 @@ Deliverables: LANDING_CORE.md, docs/U1_MAXWELL_LIGHT_LANE_LANDING_CORE_META_NOTE
 PR #7976 — "[physics-loop] u1-maxwell-landing-core block01 — meta — open" — base main, head this branch (f4503630df + this checkpoint). Pipeline gate: full rerun on the final tree exit 0; manifest byte-identical on regeneration (4761 nodes / 11860 edges). The raw codex seat log was dropped from the branch tip at close (salvage narration kept; history retains the stream at 75b4ad0649).
 Block 02: worktree .claude/worktrees/loop-u1-block02, branch physics-loop/u1-maxwell-landing-core-block02-dynamics-class-20260905 stacked on this branch at 7bcb2d6764 (one commit behind this tip: the close commit + this checkpoint — rebase onto this branch before the block-02 PR). Contract: GOAL_block02.md (be4fa51f32). Fable primary launched 2026-09-04T22:20+00:00; expected deliverables: scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py, docs/U1_DYNAMICS_CLASS_AXIOM_ADJUDICATION_BOUNDED_NOTE_2026-09-05.md, RESULTS_block02.md, ROUTE_PORTFOLIO.md prior-art sweep. Then: Opus refuting checker, fold, V1-V5 (and N1-N8 if any family-level negative), conformance gate, PR stacked on #7976.
 Resume rule for a fresh session: never merge #7976; review-loop is owner-operated. The lock (owner fable-supervisor) expires 2026-09-05T10:24+00:00; campaign budget ends 2026-09-05T09:04+00:00.
+
+## 2026-09-05 block 02 (Fable primary) — deliverables written; awaiting supervisor/checker
+Deliverables: scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py (95 exact checks; 12 mutations detected),
+docs/U1_DYNAMICS_CLASS_AXIOM_ADJUDICATION_BOUNDED_NOTE_2026-09-05.md (seven-row table; N1-N8 landed), RESULTS_block02.md,
+ROUTE_PORTFOLIO.md sweep, REVIEW_HISTORY.md V1-V5 + conformance record. Findings: items 4 and 5 of the #7917 class are mutually
+redundant (5 from 1,3,4,7+OL; 4 from 1,3,5,6,7); the sampling identification of the dynamics with Admissibility is dissipative;
+the residual is payload+OL, time rule, locality (IP-B), conservation. Not pushed; PR to be opened by the supervisor stacked on
+block 01 after the checker seat. Proposed weaving (later review): none.
+
+Pipeline gate: pipeline exit=0 (2026-09-05, HEAD cb7e75702b); generated outputs restored. Block 02 complete on the worker side; not pushed.

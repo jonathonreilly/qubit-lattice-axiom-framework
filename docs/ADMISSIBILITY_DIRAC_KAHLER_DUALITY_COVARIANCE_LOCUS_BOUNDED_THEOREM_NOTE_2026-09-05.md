@@ -530,3 +530,139 @@ flat cell together.
   `signed_permutations()` only.
 - **Axioms and registry**: read in full; the covariance clause quoted verbatim
   and gated against the file; no axiom or primitive used as content.
+
+---
+
+## No-Go Discipline Gate (N1–N8, at family level)
+
+Every negative below — "twisted `O`-covariance does not force the plane at any
+representative", "no subgroup's twisted covariance forces `s = 0`", "positivity
+and parity select nothing" — is non-supply within this formalism, never necessity.
+
+- **N1 — Alternative routes.** The plane could be forced by a subgroup smaller
+  than `O`: refuted, every class is tabled and the minimal twisted class (`C3`)
+  already forces the non-plane line. A different twist (beyond Block 211's 64
+  sign vectors, e.g. `e0 e7 = −1`) could change the loci: it can only add the
+  sub-locus `D07 = 0`, contained in every component (the lift is `+1` on corners
+  0 and 7). The star could carry a staggering phase beyond the ordering sign:
+  refuted by the measured `±L(R)` uniqueness and the twelve wedge signs.
+- **N2 — Wall independence.** The wall is Block 214's `REOPEN` item 1, quoted;
+  the answer uses the lifted group and the family's entries only; no number of
+  Block 214 is a premise (its plane literal is compared, not used).
+- **N3 — Hidden-wall scan.** A float would let a sign mismatch pass: gate `I-2`
+  counts zero `nsimplify`, zero float literals, zero float calls. A wrong
+  canonical form would merge distinct loci: every subspace is row-reduced and
+  containment is a rank test.
+- **N4 — Residual matching.** `C-1..C-3` ↔ `break_representation_orders`,
+  `break_intertwining`; `C-4` ↔ `break_subgroup_class_count`; `C-5` ↔
+  `break_gauge_congruence`; `D` ↔ `break_star_signs`, `break_star_line`; `E` ↔
+  `break_twisted_census`, `break_strict_census`,
+  `claim_shears_killed_by_twisted_covariance`; `F` ↔ `break_p111_commutation`,
+  `break_overlap_locus`; `G` ↔ `claim_positivity_selects_plane`,
+  `claim_parity_selects_plane`, `break_flat_cell_loci`.
+- **N5 — Rhetoric audit.** The fence below is byte-gated (`I-1`, `drop_n5_fence`).
+- **N6 — Partial-closure paths and the primitive scan.** No primitive supplies a
+  symmetry of the cell form, a subgroup, an assembly or a parameter value;
+  registry check performed before the wall sentence.
+- **N7 — Steelman.** *"The axiom's rotations act on the cell form, so twisted
+  covariance is forced and the diagonal is selected."* Nothing here establishes
+  that the cell form inherits the rule's covariance (`R1`); and even granted, the
+  line selected depends on the sign cell (16 of 64 cells give the star line).
+- **N8 — Cross-cycle echo.** Block 211's gauge invariant (the per-offset sign
+  product) reappears as the reason the shears survive twisted covariance; Block
+  214's `F-1` mechanism (row 0 of `D` is zero) reappears as `* 1 = +txy` with
+  `D07` free. Echoes, noted, not interpreted.
+
+---
+
+## READINGS — six of them, and each is a reading
+
+`READINGS_LICENSED_CLAIMED = False` is a declared constant with a gate (`B-5`).
+
+- **R1** — the cell form inherits the Admissibility axiom's proper-cubic-rotation
+  covariance (the antecedent). Not established, not asserted: the clause
+  governs the rule; **the covariance reading is enumerated here and gated, not
+  licensed** (`B-3`, mutation `claim_covariance_inherited`).
+- **R2** — the plane is preferred because it is the star line. Not established:
+  the conditional selects it only strictly and only with a shear killed.
+- **R3** — `O` is "the" symmetry of the cell form. Not established: no subgroup
+  is selected.
+- **R4** — the sign gauge is a physical gauge symmetry. Not established.
+- **R5** — the star line is a light-cone or a metric statement. Not established.
+- **R6** — strict covariance killing the shears means the curved family is
+  unphysical. Not established: no dynamics, no selection.
+
+---
+
+## N5 — the fence
+
+```text
+N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, LOCUS, STAR, GAUGE AND PLANE ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its gauge and its four free parameters, the 24 proper rotations with the corner action BUILT HERE, Block 105's two assemblies and Block 214's plane are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.\nper_site: The lane's D(kappa) is the ordered-monomial wedge kappa ^; the lift L(R) is its multiplicative extension, the only monomial intertwiners are +-L(R), and L(R) is a representation (orders 1/2/3/4 in counts 1/9/8/6) with L D(kappa) L^-1 = D(R kappa); the star from that wedge has pair signs (+, +, -, +) on (0,7), (1,6), (2,5), (4,3), squares to +1 on every degree and satisfies * D = eps_k D^T * with eps = (+1, -1, +1); the 30 subgroups and 11 classes are computed from the table.\nper_mode: THE STAR LEMMA: the 1 <-> 2 cross block is lam * exactly on D16 = D34 = -D25, Block 214's plane literal for literal, with D07 the free 0 <-> 3 multiple; the onsite M_oo's coefficient ideal is exactly that line.\nper_block: THE CENSUS AT THE FOUR REPRESENTATIVES: twisted covariance leaves both shears alive under every rotation; O, T, S3, C3 force ONE shear-alive line -- the diagonal D16 = D25 = D34 at all-plus and (-1,-1), D16 = D25 = -D34 at the mixed classes -- which meets the star line only at the origin, and the star line appears only with a shear killed; strict covariance forces the star line with g1 = 0 (C3, all-plus), with g0 = 0 (S3, all-plus) and with g0 = g1 = 0 (T, O): THE STAR LINE AND THE FLAT CELL TOGETHER; C2_edge, C4, V4_face_edges, D4 force D16 = +-D25 planes; the trivial group, C2_face and V4_faces force nothing; D07 is free under everything; the 64-cell scan finds one shear-alive twisted-O line at every cell, the star line at exactly 16 cells.\nlattice_wide: OVERLAP: the fold sees only s = D07 + D16 + D25 + D34, its parity block is (s/4) P111, P111 is the unsigned star and commutes with 8 of the 24 signed lifts (the star with all 24); NO subgroup's twisted covariance forces s = 0 in any class; strict covariance forces s = 0 only together with a shear relation (g0 v0 v1 + g1 = 0 at all-plus, its variants elsewhere). CONTROLS: W1 + D16 = 1/4 is positive definite off the plane; the onsite parity block is exactly the four parameters, so parity selects the origin and not the plane; the flat cell's strict O locus is the star line alone and its twisted O locus the four sign lines.\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under G THEN the parameters lie on L(G) and the shears on S(G); the antecedent is a reading. OPEN: whether Block 214's union locus at a non-representative cell is that cell's twisted line; the assembly and the reading; no dynamics, continuum or gravity is supplied.\nRESULT: THE PLANE IS THE STAR LINE OF THE LANE'S OWN HODGE STAR AND THE PROPER CUBIC ROTATIONS DO NOT PREFER IT ON THE CURVED FAMILY: TWISTED COVARIANCE KEEPS THE SHEARS AND FORCES A DIFFERENT SIGN LINE AT EVERY REPRESENTATIVE (THE STAR LINE AT 16 OF 64 CELLS); STRICT COVARIANCE REACHES THE STAR LINE ONLY WITH A SHEAR KILLED OR THE FLAT CELL; D07 IS FREE; THE OVERLAP SUM IS NEVER FORCED TO ZERO BY TWISTED COVARIANCE; POSITIVITY AND PARITY SELECT NOTHING. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-214 STAND; Block 214's REOPEN item 1 is ANSWERED for the axiom's named symmetry as a conditional, in the negative on the curved family. Fable primary seat; refuting checker PENDING.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero.
+```
+
+---
+
+## N6 — STOP AND REOPEN
+
+### STOPPED, and why each is stopped
+
+1. **Selecting a subgroup, an assembly, a reading or a parameter value.**
+   Stopped: a selector is a principle, not a measurement.
+2. **Asserting that the cell form inherits the axiom's covariance.** Stopped:
+   the clause governs the rule; `R1` is a reading.
+3. **Transporting Block 214's union locus to the 16 cells where the twisted
+   line is the star line.** Stopped: no cone is computed here and the cone's
+   behaviour under the sign gauge is not established.
+4. **Twists beyond Block 211's 64 sign vectors, improper elements, translations.**
+   Stopped: recorded as counterfactuals in the pack's assumptions file.
+5. **Any physical reading.** Stopped: `R1`–`R6` are readings.
+
+### REOPEN IF
+
+1. A framework principle supplies the antecedent — that the cell form inherits
+   the rule's covariance — together with the sign cell. The conditional then
+   fires: twisted, a sign line with the shears alive (the star line at 16 cells);
+   strict, the star line with the flat cell.
+2. The union locus is computed at a cell where the twisted line is the star
+   line and found to be that line: covariance and the cone would then agree
+   there with the shears alive — new content.
+3. A different lift of the rotations (a projective or staggered one) is landed
+   with its own intertwining check; the census would be rerun on it.
+4. A principle ties the parameters to the moduli: the shear-killed components
+   would then have to be re-read on the tied family.
+
+---
+
+## N7 — THE RECORD
+
+**THE LEDGER CONTINUES FROM BLOCK 214. NO CORRECTION IS LANDED BY THIS BLOCK
+AGAINST ANY LANDED NUMBER.** Block 214's plane, `F-1`, `F-3`, `F-4` and its
+witness `W1 + D16 = 1/4` reproduce here (the plane as the star line, the parity
+block, the sum, the minors); they are **named and explained**, not corrected.
+Every Block 104–214 number stands as landed. This block's own draft defects
+were corrected before any run was certified and are disclosed in
+`RESULTS_block215.md`.
+
+```text
+python3 scripts/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.py
+python3 ... --list-mutations
+python3 ... --mutation break_twisted_census
+```
+
+### Review record
+
+- **Worker provenance:** Fable primary seat (`claude-fable-5-1`), single seat,
+  launched 2026-09-05T11:14Z on the block-215 spec; Blocks 201/211/213/214 are
+  imported read-only and never edited; the corner action was built and its sign
+  rule measured in this seat.
+- **Refuting checker:** pending.
+- **Independence class:** to be filled by the supervisor.
+- **Runs recorded:** the exploration probes (literals pinned from them), the
+  certified baseline and the declared mutations, in `RESULTS_block215.md`.
+
+### Provenance
+
+Block 214's `REOPEN` item 1, run exactly on the axiom's named symmetry: the
+lift built through the lane's wedge, the star lemma, the twisted and strict
+census for every subgroup class in every gauge class with the shears first, the
+overlap sum and the controls — a conditional, with the antecedent fenced.

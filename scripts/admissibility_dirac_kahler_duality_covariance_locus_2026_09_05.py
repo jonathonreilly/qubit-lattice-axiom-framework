@@ -1252,3 +1252,61 @@ if __name__ == "__main__":
         print(f"[FAIL] INTERNAL-EXCEPTION: {type(error).__name__}: {error}")
         print("TOTAL: PASS=0 FAIL=1")
         raise
+
+
+N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, LOCUS, STAR, GAUGE AND PLANE ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its gauge and its four free parameters, the 24 proper rotations with the corner action BUILT HERE, Block 105's two assemblies and Block 214's plane are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.\\nper_site: The lane's D(kappa) is the ordered-monomial wedge kappa ^; the lift L(R) is its multiplicative extension, the only monomial intertwiners are +-L(R), and L(R) is a representation (orders 1/2/3/4 in counts 1/9/8/6) with L D(kappa) L^-1 = D(R kappa); the star from that wedge has pair signs (+, +, -, +) on (0,7), (1,6), (2,5), (4,3), squares to +1 on every degree and satisfies * D = eps_k D^T * with eps = (+1, -1, +1); the 30 subgroups and 11 classes are computed from the table.\\nper_mode: THE STAR LEMMA: the 1 <-> 2 cross block is lam * exactly on D16 = D34 = -D25, Block 214's plane literal for literal, with D07 the free 0 <-> 3 multiple; the onsite M_oo's coefficient ideal is exactly that line.\\nper_block: THE CENSUS AT THE FOUR REPRESENTATIVES: twisted covariance leaves both shears alive under every rotation; O, T, S3, C3 force ONE shear-alive line -- the diagonal D16 = D25 = D34 at all-plus and (-1,-1), D16 = D25 = -D34 at the mixed classes -- which meets the star line only at the origin, and the star line appears only with a shear killed; strict covariance forces the star line with g1 = 0 (C3, all-plus), with g0 = 0 (S3, all-plus) and with g0 = g1 = 0 (T, O): THE STAR LINE AND THE FLAT CELL TOGETHER; C2_edge, C4, V4_face_edges, D4 force D16 = +-D25 planes; the trivial group, C2_face and V4_faces force nothing; D07 is free under everything; the 64-cell scan finds one shear-alive twisted-O line at every cell, the star line at exactly 16 cells.\\nlattice_wide: OVERLAP: the fold sees only s = D07 + D16 + D25 + D34, its parity block is (s/4) P111, P111 is the unsigned star and commutes with 8 of the 24 signed lifts (the star with all 24); NO subgroup's twisted covariance forces s = 0 in any class; strict covariance forces s = 0 only together with a shear relation (g0 v0 v1 + g1 = 0 at all-plus, its variants elsewhere). CONTROLS: W1 + D16 = 1/4 is positive definite off the plane; the onsite parity block is exactly the four parameters, so parity selects the origin and not the plane; the flat cell's strict O locus is the star line alone and its twisted O locus the four sign lines.\\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under G THEN the parameters lie on L(G) and the shears on S(G); the antecedent is a reading. OPEN: whether Block 214's union locus at a non-representative cell is that cell's twisted line; the assembly and the reading; no dynamics, continuum or gravity is supplied.\\nRESULT: THE PLANE IS THE STAR LINE OF THE LANE'S OWN HODGE STAR AND THE PROPER CUBIC ROTATIONS DO NOT PREFER IT ON THE CURVED FAMILY: TWISTED COVARIANCE KEEPS THE SHEARS AND FORCES A DIFFERENT SIGN LINE AT EVERY REPRESENTATIVE (THE STAR LINE AT 16 OF 64 CELLS); STRICT COVARIANCE REACHES THE STAR LINE ONLY WITH A SHEAR KILLED OR THE FLAT CELL; D07 IS FREE; THE OVERLAP SUM IS NEVER FORCED TO ZERO BY TWISTED COVARIANCE; POSITIVITY AND PARITY SELECT NOTHING. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-214 STAND; Block 214's REOPEN item 1 is ANSWERED for the axiom's named symmetry as a conditional, in the negative on the curved family. Fable primary seat; refuting checker PENDING.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero."
+
+
+# ---------------------------------------------------------------------------
+# THE DECLARED CENSUS TABLES (compact): one 4-character pattern per subgroup
+# class in CLASS_TABLE order, one character per gauge class in GAUGE_CLASSES
+# order, indexing the value tuple (1-based: 1..9, A..).
+# ---------------------------------------------------------------------------
+def expand_table(patterns: str, values: tuple) -> dict:
+    digits = "123456789ABCDEFGHIJ"
+    out = {}
+    for (name, _, _), pattern in zip(CLASS_TABLE, patterns.split()):
+        for key, ch in zip(GAUGE_CLASSES, pattern):
+            out[(key, name)] = values[digits.index(ch)]
+    return out
+
+
+def expand_flat(patterns: str, values: tuple) -> dict:
+    digits = "123456789ABCDEFGHIJ"
+    return {name: values[digits.index(ch)] for (name, _, _), ch in zip(CLASS_TABLE, patterns.split())}
+
+
+TW1 = (((), ()),)
+TW2 = (((), ('D16 - D25',)), ((), ('D16 + D25', 'D34')), (('g0',), ('D16 + D25',)), (('g1',), ('D16 + D25',)))
+TW3 = (((), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g0',), ('D16 + D34', 'D25 + D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 + D34', 'D25 + D34')))
+TW4 = (((), ('D16 + D34', 'D25 + D34')), (('g0',), ('D16 - D34', 'D25 - D34')), (('g0',), ('D16 - D34', 'D25 + D34')), (('g0',), ('D16 + D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 - D34')), (('g1',), ('D16 - D34', 'D25 + D34')), (('g1',), ('D16 + D34', 'D25 - D34')))
+TWISTED_LOCI = expand_table("1111 2222 1111 3443 2222 2222 1111 3443 2222 3443 3443", (TW1, TW2, TW3, TW4))
+ST1 = (((), ()),)
+ST2 = ((('g0',), ('D16 + D25',)),)
+ST3 = ((('g0', 'g1'), ()),)
+ST4 = ((('g0', 'g1'), ('D16 - D34', 'D25 + D34')),)
+ST5 = ((('g0', 'g1'), ('D16 + D25',)),)
+ST6 = ((('g0',), ('D16 - D34', 'D25 + D34')),)
+ST7 = ((('g1',), ('D16 - D34', 'D25 + D34')),)
+STRICT_LOCI = expand_table("1111 2222 3333 7744 5555 5555 3333 6464 5555 4444 4444", (ST1, ST2, ST3, ST4, ST5, ST6, ST7))
+OT1 = (((), ()),)
+OT2 = ((('g0',), ()), (('g1',), ()))
+OVERLAP_TWISTED_LOCI = expand_table("1111 1111 1111 1221 1111 1111 1111 1221 1111 1221 1221", (OT1, OT2))
+OS1 = (((), ()),)
+OS2 = ((('g0*v0*v1 + g1',), ('s',)),)
+OS3 = ((('g0*v0*v1 + g1',), ()),)
+OS4 = ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ('s',)),)
+OS5 = ((('g0', 'g0*v0*v1 + g1', 'g1'), ('s',)),)
+OS6 = ((('g0', 'g0*v0*v1 + g1', 'g0*v0*v1 - g1', 'g1'), ('s',)),)
+OS7 = ((('g0*v0*v1 + g1', 'g0*v0*v1 - g1'), ()),)
+OVERLAP_STRICT_LOCI = expand_table("1111 2442 3333 2552 2442 2442 3773 2662 2442 2662 2662", (OS1, OS2, OS3, OS4, OS5, OS6, OS7))
+FT1 = (((), ()),)
+FT2 = (((), ('D16 - D25',)), ((), ('D16 + D25',)))
+FT3 = (((), ('D16 - D34', 'D25 - D34')), ((), ('D16 - D34', 'D25 + D34')), ((), ('D16 + D34', 'D25 - D34')), ((), ('D16 + D34', 'D25 + D34')))
+FLAT_TWISTED_LOCI = expand_flat("1 2 1 3 2 2 1 3 2 3 3", (FT1, FT2, FT3))
+FS1 = (((), ()),)
+FS2 = (((), ('D16 + D25',)),)
+FS3 = (((), ('D16 - D34', 'D25 + D34')),)
+FLAT_STRICT_LOCI = expand_flat("1 2 1 3 2 2 1 3 2 3 3", (FS1, FS2, FS3))
+TWISTED_DISTINCT_PER_CLASS = expand_table("1111 3333 1111 1111 3333 3333 1111 1111 3333 1111 1111", (1, 2, 3, 4, 5, 6, 7, 8, 9))
+STRICT_DISTINCT_PER_CLASS = expand_table("1111 6666 1111 3333 3333 3333 1111 3333 3333 1111 1111", (1, 2, 3, 4, 5, 6, 7, 8, 9))

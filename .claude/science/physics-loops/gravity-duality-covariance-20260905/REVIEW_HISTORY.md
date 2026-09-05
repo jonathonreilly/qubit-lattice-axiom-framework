@@ -140,3 +140,45 @@ Note: N2 line 212 (the two-sided reason for D07's absence from M_oo, CK-02); N2 
 11 sourced facts/counts — PASS: every number in the note is measured by the runner or quoted from Blocks 211/213/214/215 and the axiom memo at scope; the checker's two editorial corrections applied; the checker's extra values (the leading minors on the line, D07 symbolic in the cone constant) are attributed to it in the Review record and claimed nowhere else.
 12 pre-review gates — vocab_lint --report-only 0; audit_lint --strict OK; git diff --check clean; py_compile ok; post-fold baseline TOTAL PASS=27 FAIL=0 (re-pinned); explicit-path staging; cold read of the complete note and runner by the supervisor.
 Independence class disclosed: single family (Claude), cross-model — Fable primary seat, Opus 5 refuting checker, supervisor hand-verification and the census re-verified from the raw outputs.
+
+## block 217 — V1-V5 (primary)
+
+Recorded by the Fable primary seat at block delivery; not an audit certificate.
+Runs: see RESULTS_block217.md (certified baseline summary line and the mutation table).
+
+- **V1 — specific verdict-identified obstruction.** Block 216's `N6` `REOPEN` item 2, quoted verbatim in the
+  note's front matter: the overlap assembly run at the 16 cells, whether its `s = 0` locus meets covariance there
+  the way the onsite plane does. Behind it Block 213's `N6` route ("derive the assembly from the rule's covariance")
+  and Block 215's F-2 (the overlap fold sees only `s`; strict covariance forces `s = 0` only with a shear relation,
+  at the four class representatives). Computed exactly at the 8 rule-A cells with Block 216's witnesses and at the
+  all-plus and flat controls, with the fold's parameter dependence measured at symbolic face signs BEFORE `s` alone
+  was used, and the shear relation derived at symbolic moduli under each cell's own `S3_body` before it was
+  evaluated on the curve.
+- **V2 — genuinely new content.** (i) The fold lemma at SYMBOLIC face signs and moduli: the overlap `H0` sees the
+  parameters only through `s` at every cell, its parity block is `(s/4) P111`, and at `s = 0` it is `h0 I` plus twelve
+  two-flip couplings `-(s_f0 g0 v0 v1 + s_f1 g1)/(4 v0)` (Block 215 had the `s`-only statement at one class
+  representative). (ii) The stabilisers of the fold in `s` at the covariant witnesses: strict = the identity alone at
+  every `s`; twisted = a `D4_face` about the `x` axis for every `s`, the `S3_body` not inside it, one common `C2_edge`
+  — the two assemblies differ in covariance at the covariant cells. (iii) The shear relation at symbolic moduli under
+  the cell's own `S3_body`: the order-3 elements force `g0 = g1 = 0`, so no shear-alive strict locus exists, and the
+  curve violates every variant (`3/4, -1/4`; `7/9, 1/9`). (iv) The union locus `s = 0` at all 10 witnesses. (v) The
+  overlap cone at the covariant cells: a pair of distinct rational quadrics differing in the `kt ky` sign alone,
+  proportional to neither the onsite `k^T G1 k` nor each other, merging into one irreducible quartic squared off
+  `s = 0`. (vi) The first bench data on a covariant curved cell: sixteen exact `(4,2,2)` charpolys over `QQ(sqrt 6)`
+  with Bloch union = direct (Block 213 ran its bench at rational witnesses only), the onsite pencil multiset
+  `{0 x8, 9/8 x2, 16/11 x2, 18/11 x4}` = `G1_tt` times Block 216's four branch constants. (vii) The exact identity
+  "onsite pencil bench charpoly = `lam^8` times the charpoly of `(H0^-1 M(e_t))^2`" at three cells, and the
+  parameter-free overlap Bloch fold at the bench's nonzero point. None of this exists in Blocks 105-216.
+- **V3 — audit lane could NOT already complete this.** It needs Block 216's cells and witnesses, Block 215's lift and
+  sign vectors, Block 214's overlap principal part and fraction-free cone machinery, Block 213's rules, Bloch
+  reduction and bench, and Block 211's family; the audit lane carries none of these.
+- **V4 — no observed target, fit, literature constant or continuum equation is load-bearing.** Every number is an
+  integer, a rational, a symbol or an element of `QQ(sqrt 6)` or `QQ(sqrt 6, i)`; gate `I-2` measures zero
+  `nsimplify`, zero float literals and zero float calls; the bench is read as sixteen exact eigenvalues at two Bloch
+  points and given no continuum, dispersion or light-cone reading.
+- **V5 — materially changes rather than relabels.** Block 216 measured the onsite assembly only and no bench; Block
+  215's overlap statements were at the four class representatives with the moduli symbolic and no cone; Block 213's
+  overlap cone statements were at all-plus rational witnesses and its bench never saw a curve witness. This block
+  finds the two assemblies differing in covariance and in the cone at the covariant cells, and shows exactly what
+  the bench reads there. Nothing is relabelled: Blocks 213, 214, 215 and 216 reproduce unchanged (`C-1`..`C-4`,
+  `F-3`'s `OVERLAP_FORM_W1`, `D-3`'s all-plus twisted-`O`).

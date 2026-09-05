@@ -204,3 +204,191 @@ zero parameters gives R5's `{0 ×8, 1 ×16, 2 ×8}` = Block 213's
 (`C-3`, mutation `break_flat_control`).
 
 ---
+
+## N2 — THE BLOCH-POINT LEMMA: the raising block measured first, then the identity (`E-1`, `E-2`, `E-3`)
+
+### The raising block at the mixed point, before anything is asserted (`E-1`)
+
+The contract's crux: is the Bloch raising block at `(i, i, 1)` the matrix
+`i D(e_t + e_x)`, or something else? Measured at the four points, and at
+symbolic `z = (z_t, z_x, z_y)`:
+
+```text
+d_B(z) = sum_mu (z_mu - 1/z_mu)/2 * D(e_mu)      an exact 8 x 8 identity at symbolic z (the lane's forward +eta/2 and backward -eta/2
+                                                  links along mu add to (eta/2)(z_mu - 1/z_mu) on the graded entries; D(e_mu) = eta);
+at z_mu = i:  (i - (-i))/2 = i;   at z_mu = 1:  0;   so d_B(z) = i D(kappa_z),  kappa_z = e_t [z_t = i] + e_x [z_x = i]:
+(1,1,1): 0        (1,i,1): i D(e_x)        (i,1,1): i D(e_t)        (i,i,1): i D(e_t + e_x)      -- all four True;
+D(e_t)^2 = D(e_x)^2 = D(e_y)^2 = 0,  D(e_mu) D(e_nu) + D(e_nu) D(e_mu) = 0,  D(e_t + e_x)^2 = 0      (d^2 = 0 in Block 201's grading).
+```
+
+So the two fine momenta enter **additively** — the raising Bloch block is
+linear in the "sines" `(z_μ − 1/z_μ)/2` direction by direction, because every
+graded link is a single-direction step. Mutation `break_raising_block_additivity`.
+
+### The onsite Hodge block is a similarity (`E-2`)
+
+Under the onsite assembly every Hodge entry `[c_i, c_j]` carries the phase
+`z^{c_j − c_i}`, so `H_B(z) = Z⁻¹ H0 Z` with `Z = diag(z^c)` — measured True at
+all four points at the witness, the control and the flat cell. Mutation
+`break_onsite_similarity`.
+
+### The identity, at every point (`E-3`)
+
+Conjugating the onsite pencil operator `d_B − H_B⁻¹ d_B^† H_B` by `Z`: the
+graded entries of `D(κ_z)` all step a coordinate of `κ_z`'s support from `1`
+to `0` (the row grade is one higher), so `Z D Z⁻¹ = i D` and
+`Z Dᵀ Z⁻¹ = −i Dᵀ`, and the conjugated operator is `−(D − H0⁻¹ Dᵀ H0)` with
+`D = D(κ_z)`; its negative square is `−(D − H0⁻¹ Dᵀ H0)² = (D + H0⁻¹ Dᵀ H0)²
+= (H0⁻¹ M(κ_z))²` **because `D² = 0` and `(Dᵀ)² = 0`**. That is the
+mechanism; the measurement is the charpoly identity itself:
+
+| cell, `(4,4,2)` | assembly, reading | `(1,1,1)` | `(1,i,1)`: `M(e_x)` | `(i,1,1)`: `M(e_t)` | `(i,i,1)`: `M(e_t + e_x)` |
+| --- | --- | :---: | :---: | :---: | :---: |
+| witness, `W1`, flat | onsite pencil | True | True | True | **True** |
+| witness, `W1`, flat | onsite form | True | False | False | False |
+| witness, `W1` | overlap form, overlap pencil | True | False | False | False |
+
+**The mixed-point identity holds exactly**: the onsite pencil Bloch block at
+`(i, i, 1)` has the charpoly of `(H0⁻¹ M(e_t + e_x))²` at the witness, the
+control and the flat cell. It fails for the form reading (`−K²` is not
+similarity-invariant under the Bloch phase: `−(Dᵀ H0 − H0 D)² ≠ (H0 D + Dᵀ H0)²`
+since `H0 D H0 D ≠ 0`) and for the overlap assembly (whose Bloch fold at a
+nonzero point is not a similarity of `H0`, Block 217's `G-2`). The flat
+overlap table is recorded as measured (True at `(1,i,1)` and `(i,i,1)` for the
+form, at `(i,i,1)` for the pencil) and claimed nowhere. Mutation
+`break_mixed_point_identity`.
+
+> **THE BENCH READS THE PRINCIPAL PART AT THREE DIRECTIONS, `e_t`, `e_x` AND
+> `e_t + e_x`, EXACTLY — NOT AS A SMALL-`k` LIMIT BUT AS A FINITE IDENTITY AT
+> THE FINE MOMENTUM `π/2`, RESTING ON `d² = 0` AND THE ONSITE SIMILARITY.**
+
+---
+
+## N3 — THE CONE'S SHAPE FROM THE BENCH at the covariant witness (`D-1`, `D-2`, `F-1`, `F-2`)
+
+### The twenty charpolys (`D-1`, `D-2`)
+
+Every `(cell, assembly, reading)` charpoly of degree 32 on `(4,4,2)` — twelve
+at the line point (witness, `W1`, flat; both assemblies; both readings) and
+eight at zero parameters (witness and `W1` overlap; flat both assemblies) — has
+**Bloch union = direct** (Block 213's E-gate: the direct `32 × 32` charpoly over
+`QQ(√6)` against the product of the four `8 × 8` block charpolys over
+`QQ(√6, i)`), and the zero Bloch point contributes eight zeros everywhere. Per
+block at the witness:
+
+| witness, line point | `(1,i,1)` | `(i,1,1)` | `(i,i,1)` |
+| --- | --- | --- | --- |
+| onsite pencil | `{9/8 ×2, 16/11 ×2, 18/11 ×4}` | `{9/8 ×2, 16/11 ×2, 18/11 ×4}` | `{3/2 ×2, 64/33 ×2, 24/11 ×4}` |
+| onsite form | `(55296λ⁴ − 388672λ³ + 698656λ² − 422145λ + 69984)²` | the same quartic squared | `(864λ⁴ − 8096λ³ + 19891λ² − 15870λ + 3456)²` |
+| overlap form | `{51529/55296 ×4, 69169/55296 ×4}` | `{36481/55296 ×4, 89401/55296 ×4}` | an irreducible quartic squared (line); an irreducible quadratic⁴ (zero) |
+| overlap pencil | `{227/263 ×4, 263/227 ×4}` | `{1 ×8}` (R5's) | `(17837λ² − 58604λ + 48020)⁴` (line); `{490/299 ×8}` (zero) |
+
+Mutations `break_bloch_equals_direct`, `break_witness_multisets`.
+
+### Every nonzero eigenvalue is a branch constant times one quadric (`F-1`)
+
+`G1 = D1/D0` at the witness is `(3/8)·[[3, −1, −1], [−1, 3, −1], [−1, −1, 3]]`,
+so `Q(κ) = κᵀ G1 κ` takes the values `9/8`, `9/8`, `3/2` at `e_t`, `e_x`,
+`e_t + e_x`. Dividing each onsite pencil block multiset by its `Q`:
+
+```text
+(i,1,1):  {9/8, 16/11, 18/11} / (9/8) = {1 x2, 128/99 x2, 16/11 x4}
+(1,i,1):  {9/8, 16/11, 18/11} / (9/8) = {1 x2, 128/99 x2, 16/11 x4}
+(i,i,1):  {3/2, 64/33, 24/11} / (3/2) = {1 x2, 128/99 x2, 16/11 x4}       = Block 216's BRANCH_TABLE[("L+-", "line 1/4")] at every point.
+```
+
+At each of the three points **every** nonzero eigenvalue is one of Block 216's
+four branch constants times the quadric's value at `κ_z` — the predicted
+multisets `{c_i Q(κ_z)}` equal the measured ones. This is what "the cone's
+shape" means and what Block 217's one-direction bench could not see: a single
+direction reads `G1_tt` times the constants, and any four numbers are "some
+constant times `G1_tt`". Mutation `break_cone_shape_visible`.
+
+### The cross term, isolated from the three points (`F-2`)
+
+Reading the bench alone — the smallest nonzero eigenvalue at each point is the
+constant-1 branch `Q(κ_z)`:
+
+```text
+G1_tx(bench) = (Q(e_t + e_x) - Q(e_t) - Q(e_x))/2 = (3/2 - 9/8 - 9/8)/2 = -3/8  =  G1[t, x]  (the entry of D1/D0);
+the plane restriction read off the bench: (G1_tt, G1_tx, G1_xx) = (9/8, -3/8, 9/8);   the pure points coincide (Q(e_t) = Q(e_x));
+det M on the line: ONE quadric to the fourth power over QQ(sqrt 6), 81/64 at e_t, 81/64 at e_x, 4 at e_t + e_x,  4 / (81/64) = (4/3)^4 = (Q_mixed / Q_t)^4.
+```
+
+Three Bloch points fix the three coefficients of a quadratic form on the
+`(t, x)` plane; that all four branches at all three points are the same
+constants times one such form is the cone's shape **on the plane the bench
+samples**. `G1_ty`, `G1_xy`, `G1_yy` are not read: the `y` direction carries no
+link at extent 2 (`H-2`). Mutation `break_cross_term`.
+
+> **BLOCK 217's REOPEN ITEM 3, ANSWERED AT ONE COVARIANT WITNESS: WITH A FINE
+> MOMENTUM IN TWO DIRECTIONS THE CONE'S SHAPE ON THAT PLANE IS VISIBLE TO THE
+> BENCH — THE MIXED POINT SUPPLIES THE CROSS TERM.**
+
+---
+
+## N4 — THE CONTROL, THE OTHER ASSEMBLY, AND THE SECOND DIRECTION (`D-3`, `G-1`, `G-2`, `G-3`)
+
+### The all-plus `W1` control fails exactly thus (`D-3`, `G-1`)
+
+The Bloch = principal identity holds at `W1` at every point (it is structural:
+`E-3` needs only the onsite similarity and `d² = 0`), but the shape statement
+fails:
+
+```text
+W1, onsite pencil blocks:   (i,1,1): (15 lam - 16)^2 (4801335 lam^3 - 18293776 lam^2 + 22913024 lam - 9437184)^2     -- Block 217's cubic
+                            (1,i,1): (15 lam - 16)^2 (385 lam - 256)^2 (12471 lam^2 - 45584 lam + 36864)^2
+                            (i,i,1): (5 lam - 8)^2 (4801335 lam^3 - 27171928 lam^2 + 46940160 lam - 25165824)^2
+W1's G1 = D1/D0:            (16/15, -4/15, 16/15) on the plane; Q = 16/15, 16/15, 8/5 -- the rational branch (multiplicity 2) at every point,
+                            and (8/5 - 16/15 - 16/15)/2 = -4/15 = G1_tx: the rational branch reads W1's G1 exactly;
+the other three branches:   the roots of an IRREDUCIBLE CUBIC at the pure t and mixed points, and 256/385 times an irreducible quadratic
+                            at the pure x point -- no multiset is rational, the two pure points DIFFER, no branch constant exists;
+det M on the line at W1:    TWO DISTINCT QUADRICS, each squared (256/225 at e_t, 1024/225 at e_t + e_x) -- a union of two, Block 217's F-3.
+```
+
+So at the control the bench reads one quadric's plane restriction through its
+rational branch and reads *no* shape for the rest: the cone there is a union
+of two quadrics and the pencil's non-`G1` branches are not proportional to
+either. Mutations `break_control_multisets`, `break_control_failure`.
+
+### The overlap assembly at the same points (`G-2`)
+
+At symbolic face signs, moduli and parameters the overlap Bloch fold is
+
+```text
+(1,1,1):  parity block (D07 + D16 + D25 + D34)/4 . P111          -- Block 217's (s/4) P111
+(1,i,1):  parameter-free           (i,1,1):  parameter-free       -- Block 217's G-2 at both pure points
+(i,i,1):  parity block (-D07 - D16 + D25 + D34)/4 . P111        -- ALL FOUR parameters, through a SIGNED sum
+```
+
+The mechanism: each parameter sits on one complement pair with displacement
+`δ ∈ {±1}³`, and the average over the eight anchors puts `z^δ + z^{−δ}` on the
+parity block; at a pure point that is `i + (−i) = 0`, at the mixed point it is
+`2 i^{δ_t + δ_x} = −2` when `δ_t = δ_x` (pairs `(0,7)`, `(1,6)`) and `+2` when
+`δ_t = −δ_x` (pairs `(2,5)`, `(3,4)`). On the star line
+`(0, λ, −λ, λ)` the signed sum is `−λ` where Block 217's `s` is `λ`.
+Consequently the overlap bench charpolys at the line point **equal** the
+zero-parameter ones at both pure points and **differ** at the mixed point —
+form and pencil, witness and control — and the identity with the principal
+part fails at every nonzero point. Mutation `break_overlap_fold_dependence`.
+
+### The second direction sees the `x`-axis distinction (`G-3`)
+
+Block 217's `REOPEN` item 4 asked whether the second direction tests the
+`x`-axis distinction of the overlap `D4` against the onsite `S3`. On this bench:
+
+```text
+onsite, witness:    (i,1,1) and (1,i,1) COINCIDE, form and pencil            (Q(e_t) = Q(e_x), the constants direction-free: the S3's plane)
+overlap, witness:   (i,1,1) and (1,i,1) DIFFER:  form {36481/55296 x4, 89401/55296 x4} against {51529/55296 x4, 69169/55296 x4};
+                                                 pencil R5's {1 x8} against {227/263 x4, 263/227 x4}
+overlap, W1:        form coincides (Block 214's OVERLAP_FORM_W1 at both);  pencil differs: {1 x8} against {55/71 x4, 71/55 x4}
+onsite, W1:         the pure points differ (an irreducible cubic against a linear times a quadratic) -- the all-plus cell on the line is not covariant.
+```
+
+The overlap fold's `D4_face` about the `x` axis (Block 217's `D-3`) is what a
+bench sees when it samples `x` separately from `t`: the pure-`x` block is not
+the pure-`t` block. Under the onsite assembly at the covariant witness the two
+are the same, as the `S3`-invariant quadric requires on this plane. Mutation
+`break_direction_distinction`.
+
+---

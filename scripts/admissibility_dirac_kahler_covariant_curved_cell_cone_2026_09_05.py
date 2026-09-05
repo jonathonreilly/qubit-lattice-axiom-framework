@@ -844,22 +844,33 @@ def measure_symbol(group: dict, census: dict) -> dict:
     zero = b214.formal_cell(lpm[1], lpm[0][1], lpm[0][3], lpm[0][0], lpm[0][2], (0, 0, 0, 0))
     _, m0, _ = b214.principal_part(zero, "onsite")
     det_b0 = sp.expand(sp.radsimp(m0.extract(even, odd).det(method="berkowitz")))
+    det_m0 = sp.expand(b214.ff_det(m0, KAPPA, algebraic=True))
     dk = b214.raising_matrix()
     g4 = next(g for g in range(24) if orders[g] == 4)
     lift = lifts[g4]
     twists = [e for e in b215.sign_vectors()
               if residual_count((sp.diag(*e) * lift * zero * lift.T * sp.diag(*e) - zero).applyfunc(sp.radsimp)) == 0]
     facts["twist_count_order4"] = len(twists)
-    gauged_identity, moves = [], []
+    gauged_identity, gauged_block, moves, conjugation = [], [], [], []
     for e in twists:
+        twisted_lift = sp.diag(*e) * lift
         e_prime = (lift.T * sp.diag(*e) * lift).applyfunc(sp.expand)
         dk_gauged = (e_prime * dk * e_prime).applyfunc(sp.expand)
         m_gauged = (zero * dk_gauged + dk_gauged.T * zero).applyfunc(sp.expand)
+        # T^T M(kappa) T = M_{E'}(R^-1 kappa) entry by entry, hence det M(R kappa) = det M_{E'}(kappa)
+        conjugation.append(residual_count(((twisted_lift.T * m0 * twisted_lift) - m_gauged.subs(
+            {k: sum(rots[g4].T[i, j] * KAPPA[j] for j in range(3)) for i, k in enumerate(KAPPA)}, simultaneous=True)
+        ).applyfunc(sp.radsimp)) == 0)
+        det_m_gauged = sp.expand(b214.ff_det(m_gauged, KAPPA, algebraic=True))
+        gauged_identity.append(is_zero_alg(rotate_kappa(det_m0, rots[g4]) - det_m_gauged))
+        # the even-odd block picks up the sign det(T_e) det(T_o) = +-1 of the twisted lift
+        sign = twisted_lift.extract(even, even).det() * twisted_lift.extract(odd, odd).det()
         det_b_gauged = sp.expand(sp.radsimp(m_gauged.extract(even, odd).det(method="berkowitz")))
-        rotated = rotate_kappa(det_b0, rots[g4])
-        gauged_identity.append(is_zero_alg(rotated - det_b_gauged))
-        moves.append(not is_zero_alg(rotated - det_b0))
+        gauged_block.append(is_zero_alg(rotate_kappa(det_b0, rots[g4]) - sign * det_b_gauged))
+        moves.append(not is_zero_alg(rotate_kappa(det_m0, rots[g4]) - det_m0))
+    facts["twisted_conjugation_identity"] = bool(twists) and all(conjugation)
     facts["twisted_symbol_is_gauged_symbol"] = bool(twists) and all(gauged_identity)
+    facts["twisted_block_is_gauged_block_up_to_sign"] = bool(twists) and all(gauged_block)
     facts["twisted_symbol_moves"] = bool(twists) and all(moves)
     facts["gauged_raising_differs"] = bool(twists) and all(
         residual_count(((lift.T * sp.diag(*e) * lift) * dk * (lift.T * sp.diag(*e) * lift) - dk).applyfunc(sp.expand)) > 0 for e in twists)

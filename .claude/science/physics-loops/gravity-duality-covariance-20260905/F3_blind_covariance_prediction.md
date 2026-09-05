@@ -17,9 +17,12 @@ read. The only sources are the four listed inputs:
 - `scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py`
   lines 802-870 and 1161-1200 (imported, not re-read elsewhere).
 
-Scripts backing every COMPUTED claim are in
-`S = <scratch>/b215blind/`: `q1_star.py`, `q23_rotations.py`, `q34_twisted.py`,
-`q3_refine.py`, `q3_cells.py`.
+Scripts backing every COMPUTED claim are in `S = <scratch>/b215blind/`:
+`q1_star.py` (star and cross block), `q23_rotations.py` (representation, subgroups,
+untwisted commutants), `q34_twisted.py` and `q3_refine.py` (twisted covariance, parameter
+action), `q3_cells.py`, `q3_cells2.py`, `q34_extra.py` (all 64 sign cells), `q_union.py`
+and `q_final.py` (`M_ee`/`M_oo` validation against Block 214 and the union locus). All
+computations are exact (sympy, rationals and symbols; no floats anywhere).
 
 ---
 

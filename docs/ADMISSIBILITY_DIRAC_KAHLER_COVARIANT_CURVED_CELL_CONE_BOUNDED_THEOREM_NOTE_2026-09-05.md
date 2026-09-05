@@ -465,3 +465,139 @@ positive cell and carries one metric's cone along a whole line.**
 | 15 | the symbol | identity; invariance = `S3`; dims `(2, 1)`; twisted = gauged | `G-4` |
 
 ---
+
+## Imports
+
+- **Block 215** (`scripts/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.py`, read-only,
+  content-bound by blob at `d386a1be41`): `measure_group` (the lift as a representation, the classes),
+  `sign_vectors`, `constraints`, `irredundant`, `intersect`, `subgroup_locus`, `describe`, `canonical_subspace`,
+  `closure`, `STAR_PAIR_SIGNS`, `SCOUT_GRADE_FENCE`; through it **Block 214** (`formal_cell`, `principal_part`,
+  `raising_matrix`, `ff_det`, `coefficient_ideal`, `radical_generators`, `reduced_generators`, `PLANE`,
+  `ONSITE_M_OO_ENTRIES`, `D07_SHIFT`, `LOCUS_D07_RESCALE`), **Block 213** (`formal_family`, `metric_candidates`,
+  `proportionality_minors`, `quadratic_form`, `proportional`, `even_odd`, `residual_count`, `locus_witness_table`,
+  `COINCIDENCE_CENSUS`, `FACES`, `KT, KX, KY`, `LAM`), **Block 211** (`GAUGE_FACE_ORDER`, `W1_MODULI`,
+  `face_system`, `solve_pinned`, `branch_moduli`, `leading_minors`) and **Block 209** (`CORNERS`).
+- **Axioms and registry**: read in full; the covariance clause quoted verbatim and gated against the file; no axiom
+  or primitive used as content.
+
+---
+
+## No-Go Discipline Gate (N1–N8, at family level)
+
+Every negative below — "the covariant line is not the union locus at the all-plus cell", "no `S3` keeps the
+shears alive at the all-plus cell", "rule B has no positive point", "the symbol is invariant under no rotation
+outside the `S3`", "twisted covariance is not an invariance of the symbol" — is non-supply within this
+formalism, never necessity.
+
+- **N1 — Alternative routes.** The union locus could be larger than the star line at a cell where the
+  readings coincide (extra parameter points with `det M = (kᵀG1k)⁴`): refuted at the 8 curve witnesses, where
+  the radical is still the line. The two censuses could agree by index and not by cell: refuted, both
+  indexings are one tuple and both predicates are evaluated from the sign dictionary. A larger symmetry of
+  the symbol at a covariant witness: refuted, the invariance sets are exactly the stabiliser.
+- **N2 — Wall independence.** The wall is Block 215's `REOPEN` item 2, quoted; the answer uses Block 214's
+  cone machinery and Block 215's lift on Block 211's cells; no number of Block 215 is a premise (its
+  star-pattern rule and its lines are re-measured, not used).
+- **N3 — Hidden-wall scan.** A float would let a radical pass: gate `I-2`. A wrong indexing would intersect the
+  wrong cells: gate `C-1`. A witness off Block 211's family would make the cone statements vacuous: gate
+  `C-4` (Block 211's solve, the curve, the ties, positivity).
+- **N4 — Residual matching.** `C-1` ↔ `break_indexing_agreement`; `C-2` ↔ `break_star_pattern_masks`,
+  `break_coincidence_census`; `C-4` ↔ `break_witness_solves`; `D-1` ↔ `break_m_oo_lemma`; `D-2` ↔
+  `break_union_necessity`, `claim_union_from_identity_alone`; `E` ↔ `break_intersection`,
+  `break_positive_subset`; `F` ↔ `break_covariant_witness`, `claim_covariant_cell_empty`,
+  `break_one_metric_cone`; `G` ↔ `break_branch_table`, `break_d07_rescale`, `break_d07_congruence`,
+  `break_symbol_invariance`.
+- **N5 — Rhetoric audit.** The fence below is byte-gated (`I-1`, `drop_n5_fence`).
+- **N6 — Partial-closure paths and the primitive scan.** No primitive supplies a cell, a symmetry of the cell
+  form, an assembly or a parameter value; registry check performed before the wall sentence.
+- **N7 — Steelman.** *"At the 16 cells covariance selects the star line and the cone is one metric's cone
+  there, so the framework has selected its metric."* Nothing here establishes the antecedent (`R1`); no
+  cell is selected among the 64; the cone is a polynomial identity; 'one metric's cone' is Block 213's
+  statement about two `3 × 3` matrices read off a cell form.
+- **N8 — Cross-cycle echo.** Block 213's `E = diag(1, −1, 1)` (its two-order signature) reappears as Block
+  215's star pair signs, which is why its coincidence rule is Block 215's covariance rule; Block 214's
+  `D07` rescaling `1/(1 − D07² v1/v0)` reappears beside a line rescaling `1/(1 − λ²/(v0 v1))` on the
+  complementary branches. Echoes, noted, not interpreted.
+
+---
+
+## READINGS — six of them, and each is a reading
+
+`READINGS_LICENSED_CLAIMED = False` is a declared constant with a gate (`B-5`).
+
+- **R1** — the cell form inherits the Admissibility axiom's proper-cubic-rotation covariance (the antecedent).
+  Not established, not asserted (`B-3`, mutation `claim_covariance_inherited`).
+- **R2** — the 16 covariant cells are preferred, physical or selected. Not established: counted, not chosen.
+- **R3** — 'one metric's cone' is a metric of anything physical. Not established: Block 213's statement.
+- **R4** — the coincidence of the two rules is a dynamical or geometric principle. Not established: a sign
+  identity `P_f = ±E_k`.
+- **R5** — the covariant witness is a vacuum, a background or a spacetime. Not established: a positive-definite
+  point on one cell form.
+- **R6** — the `S3`-invariance of the symbol is a dispersion law or a light cone. Not established: a
+  polynomial identity in `κ` on one cell.
+
+---
+
+## N5 — the fence
+
+```text
+N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, CONE, CELL, LOCUS AND METRIC ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its 64 face-sign cells and its four free parameters, Block 213's coincidence census and curve witnesses, Block 214's principal part and plane, Block 215's lift and star-pattern cells, and Block 105's assemblies are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; 'ONE METRIC'S CONE' NAMES BLOCK 213'S EXACT STATEMENT det B = c (k^T G1 k)^2 AND NOTHING PHYSICAL; NO CELL, NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.\nper_site: The two 64-cell indexings (Block 213's FACES, Block 211's GAUGE_FACE_ORDER) are the same tuple (tx0, ty0, xy0, tx1, ty1, xy1) and both predicates are re-evaluated from the sign dictionary; Block 213's Groebner census reproduces literal for literal; Block 215's twisted-O line is the star line and exactly one S3_body keeps both shears alive strictly at every one of the 16 star-pattern cells, the diagonal and no alive S3 at the all-plus control; every witness used is Block 211's own solve and positive definite.\nper_mode: THE M_oo LEMMA: at SYMBOLIC face signs the odd-odd block of the onsite principal part is (D16 + D25) kt, (D34 - D16) kx, -(D25 + D34) ky with no shear, no volume, no face sign and no D07, so its coefficient ideal is the star line at every cell and det M = det B^2 there by the block identity det [[A, B], [B^T, 0]] = det(B)^2 (verified at generic symbolic blocks); THE NECESSITY HALF: the radical of the coefficient ideal of det M - det B^2 in (D16, D25, D34) is exactly (D16 - D34, D25 + D34) at all 26 positive-definite witnesses -- W1's moduli at the 16 star cells, at the all-plus control and at the flat cell, and Block 213's curve moduli over QQ(sqrt 6) at the 8 rule-A cells; at least one witness in each of the four gauge classes among the 16.\nper_block: THE CENSUS: Block 213's 16 coincidence-curve cells ARE Block 215's 16 star-pattern cells -- rule A (S1 = -E S0 E) iff (P_tx, P_ty, P_xy) = (+, -, +), rule B iff (-, +, -), because P_f = -+E_i E_j = +-E_k and Block 213's E = diag(1, -1, 1) is the star's pair-sign pattern; the intersection is all 16, the positive subset all 8 rule-A cells (four in each mixed class), the 8 rule-B star cells 3 face flips from the nearest rule-A cell. THE COVARIANT WITNESS: at each of the 8 rule-A cells Block 213's curve point transported to the cell is positive definite, strictly S3-covariant with both shears alive (its strict stabiliser IS an S3_body, the star line its parameter locus, preserved on the line), the readings proportional with mu = 32/27 or 27/32, the graded cone one quadric squared, and det M = c (k^T G1 k)^4 on the star line with the multiple symbolic (c = 64/81, 9/16): ONE METRIC'S CONE FOR EVERY LINE MULTIPLE AND EVERY D07.\nlattice_wide: THE BRANCHES ON THE COVARIANT LINE at L+- and L-+: all four pencil branches are k-free constants times k^T G1 k -- {1, (32/27)/(1 - lam^2/(v0 v1)), (4/3)/(1 - lam^2/(v0 v1)) twice} at L+- with v0 v1 = 3/4 and {1, (27/32)/(1 - lam^2/(v0 v1)), (9/8)/(1 - lam^2/(v0 v1)) twice} at L-+ with v0 v1 = 8/9, the line multiple rescaling the top-form and transverse constants and D07 the 0-form constant alone (128/119 at L+-, 12/11 at L-+ at D07 = 1/4); the D07 congruence U^T M U = M|_{D07 = 0} holds at symbolic face signs with the H0 shift -D07^2 v1. THE SYMBOL: Block 213's identity det B = D3 (k^T D1 k)(k^T E adj(D2) E k) holds at every witness; both quadrics and det B are invariant under kappa -> R kappa for EXACTLY the strict S3, each quadric lies in the two-dimensional S3-invariant space span(|k|^2, (n . k)^2), the O-invariant space is one-dimensional (the flat cell's |k|^2), and a twisted rotation maps det M to the symbol of the GAUGED raising part E' D E' (det B up to the twisted lift's sign), never to itself.\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under the group THEN at the 16 cells the parameters lie on the star line and the cone is the union of the readings' cones there; the antecedent is a reading. OPEN: the overlap assembly at the 16 cells; the necessity half symbolically in the moduli; the pencil at the other six rule-A cells; the bench; no dynamics, continuum or gravity is supplied.\nRESULT: AT EVERY ONE OF THE 16 STAR-PATTERN CELLS THE UNION LOCUS OF THE CONE IS THE STAR LINE, THE LINE COVARIANCE SELECTS THERE WITH THE SHEARS ALIVE; THE 16 CELLS ARE EXACTLY BLOCK 213'S 16 COINCIDENCE CELLS AND EACH OF THE 8 POSITIVE ONES CARRIES A STRICTLY S3-COVARIANT POSITIVE-DEFINITE WITNESS WITH ONE METRIC'S CONE FOR EVERY LINE MULTIPLE AND EVERY D07; THE SYMBOL IS EXACTLY S3-INVARIANT. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-215 STAND; Block 215's REOPEN item 2 is ANSWERED at the 16 cells as a conditional, in the affirmative: covariance and the cone agree there with the shears alive. Fable primary seat; refuting checker PENDING.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero.
+```
+
+---
+
+## N6 — STOP AND REOPEN
+
+### STOPPED, and why each is stopped
+
+1. **Selecting a cell, a subgroup, an assembly, a reading or a parameter value.** Stopped: a selector is a
+   principle, not a measurement.
+2. **Asserting that the cell form inherits the axiom's covariance.** Stopped: `R1` is a reading.
+3. **The overlap assembly at the 16 cells.** Stopped: not computed here (onsite only, as contracted).
+4. **The necessity half symbolically in the moduli, and the pencil at the other six rule-A cells.** Stopped:
+   budget; recorded as could-nots.
+5. **Any physical reading.** Stopped: `R1`–`R6` are readings.
+
+### REOPEN IF
+
+1. A framework principle supplies the antecedent together with the sign cell: the conditional then fires at
+   the 16 cells with the cone in hand — the star line, one metric's cone on the rule-A curve.
+2. The overlap assembly is run at the 16 cells: whether its `s = 0` locus meets covariance there the way the
+   onsite plane does.
+3. A principle ties the line multiple or `D07` to the moduli: the two rescalings would then be read on the
+   tied family.
+4. The rule-B star cells acquire a positive coincidence point under some other tie: they are covariant with
+   the union locus the star line but Block 213's curve has no positive point there.
+
+---
+
+## N7 — THE RECORD
+
+**THE LEDGER CONTINUES FROM BLOCK 215. NO CORRECTION IS LANDED BY THIS BLOCK AGAINST ANY LANDED NUMBER.**
+Block 213's census, `L+−`/`L−+` and its symbol identity, Block 214's plane, `M_oo` entries, `D07` shift and
+`128/119`, and Block 215's 16 cells and lines reproduce here and are **connected**, not corrected; every Block
+104–215 number stands. This block's own draft defects were corrected before certification and are disclosed
+in `RESULTS_block216.md`.
+
+```text
+python3 scripts/admissibility_dirac_kahler_covariant_curved_cell_cone_2026_09_05.py
+python3 ... --list-mutations
+python3 ... --mutation break_union_necessity
+```
+
+### Review record
+
+- **Worker provenance:** Fable primary seat (`claude-fable-5-1`), single seat, launched 2026-09-05T16:33Z on
+  the block-216 spec; Blocks 201/209/211/213/214/215 are imported read-only and never edited; the union locus,
+  the census identity, the covariant witnesses, the branches on the line and the symbol statements were built
+  and measured in this seat. Draft defects (two, both `IndexError`/`TypeError` bookkeeping in the witness and
+  branch phases) fixed before the first complete run.
+- **Refuting checker:** pending.
+- **Independence class:** to be filled by the supervisor.
+- **Runs recorded:** the probes (literals pinned from them), the harness runs, the certified baseline and the
+  declared mutations, in `RESULTS_block216.md`.
+
+### Provenance
+
+Block 215's `REOPEN` item 2, run exactly at its 16 cells: the union locus both halves, the census identity,
+the covariant witness with one metric's cone, the branches on the covariant line, the symbol under `S3` — a
+conditional, with the antecedent fenced.

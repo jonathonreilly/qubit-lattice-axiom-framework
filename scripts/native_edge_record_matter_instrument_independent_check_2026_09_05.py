@@ -35,7 +35,7 @@ AUDIT_TIMEOUT_SEC = 180
 DENSE_MATRIX_AXIS_LIMIT = 600
 ATOL = 3.0e-10
 RANK_TOL = 2.0e-9
-SOURCE_INTEGRITY_SHA256 = "f89d9f28c8955caaccb20718757efdcee7c2ae3b03304a6afeee4fd605dd6608"
+SOURCE_INTEGRITY_SHA256 = "03abb51917e8830210de90f2021ed2cb2baec9230e28f3b35221ea2358d39e77"
 EXPECTED_CHECK_NAMES = (
     "direct_dictionary",
     "nonbridge_instrument",
@@ -1173,8 +1173,38 @@ def shared_battery_native_history_check() -> str:
     coherent_reduced = reduced_system_from_vector(coherent_first, 32, battery_dimension)
     coherent_ideal_state = first_instrument @ coherent_physical
     coherent_ideal = np.outer(coherent_ideal_state, coherent_ideal_state.conj())
-    coherence_distance = float(np.linalg.norm(coherent_reduced - coherent_ideal))
-    require(coherence_distance > 1.0e-3, "fixture does not witness conditional coherence change")
+    full_history_distance = float(np.linalg.norm(coherent_reduced - coherent_ideal))
+    conditional_distances = []
+    for history in range(2):
+        history_slice = slice(16 * history, 16 * (history + 1))
+        actual_block = coherent_reduced[history_slice, history_slice]
+        ideal_block = coherent_ideal[history_slice, history_slice]
+        actual_probability = float(np.trace(actual_block).real)
+        ideal_probability = float(np.trace(ideal_block).real)
+        require(actual_probability > 1.0e-8, f"actual conditional history {history} is zero")
+        require(ideal_probability > 1.0e-8, f"ideal conditional history {history} is zero")
+        require(
+            abs(actual_probability - ideal_probability) <= 4.0e-9,
+            f"conditional history probability {history}",
+        )
+        actual_conditional_matter = actual_block / actual_probability
+        ideal_conditional_matter = ideal_block / ideal_probability
+        require(
+            abs(float(np.trace(actual_conditional_matter).real) - 1.0) <= 4.0e-9,
+            f"actual conditional normalization {history}",
+        )
+        require(
+            abs(float(np.trace(ideal_conditional_matter).real) - 1.0) <= 4.0e-9,
+            f"ideal conditional normalization {history}",
+        )
+        conditional_distances.append(
+            float(np.linalg.norm(actual_conditional_matter - ideal_conditional_matter))
+        )
+    conditional_matter_distance = max(conditional_distances)
+    require(
+        conditional_matter_distance > 1.0e-3,
+        "fixture does not witness conditional physical-matter coherence change",
+    )
     battery_density = reduced_battery_from_vector(coherent_first, 32, battery_dimension)
     explicit_battery_density = np.zeros((battery_dimension, battery_dimension), dtype=complex)
     coefficient_rows = coherent_first.reshape((32, battery_dimension))
@@ -1253,7 +1283,8 @@ def shared_battery_native_history_check() -> str:
         )
     return (
         "integer native square lift reuses one correlated battery for two events; "
-        f"stationary coherence_distance={coherence_distance:.3e}, purity={battery_purity:.6f}"
+        f"conditional_matter_distance={conditional_matter_distance:.3e}, "
+        f"full_history_distance={full_history_distance:.3e}, purity={battery_purity:.6f}"
     )
 
 

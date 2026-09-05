@@ -923,3 +923,125 @@ def measure() -> Facts:
     axiom_text = (ROOT / AXIOM_PATH).read_text(encoding="utf-8") if (ROOT / AXIOM_PATH).is_file() else ""
     note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
     return Facts(authority, group, census, covariance, union, witness, branches, symbol, axiom_text, note_text, timings)
+
+
+# ---------------------------------------------------------------------------
+# THE DECLARED LITERALS -- every claim is a constant compared against a
+# measurement; a mutation rewrites exactly one claim.
+# ---------------------------------------------------------------------------
+FACE_ORDER_LITERAL = (("tx", 0), ("ty", 0), ("xy", 0), ("tx", 1), ("ty", 1), ("xy", 1))
+STAR_MASKS = (2, 5, 11, 12, 16, 23, 25, 30, 33, 38, 40, 47, 51, 52, 58, 61)     # = the refuting checker's CK-11 list
+RULE_A_MASKS = (2, 11, 16, 25, 38, 47, 52, 61)
+RULE_B_MASKS = (5, 12, 23, 30, 33, 40, 51, 58)
+COINCIDENCE_CENSUS = (                    # Block 213's literal, re-declared here and compared to both
+    ("(g0*g1 + g0 + g1,)", 4, ((-1, -1),)),
+    ("(g0*g1 + g0 - g1,)", 4, ((1, -1),)),
+    ("(g0*g1 - g0 + g1,)", 4, ((-1, 1),)),
+    ("(g0*g1 - g0 - g1,)", 4, ((1, 1),)),
+    ("(g0, g1)", 48, ((-1, -1), (-1, 1), (1, -1), (1, 1))),
+)
+STAR_PER_CLASS = {(1, 1): (5, 30, 40, 51), (1, -1): (2, 25, 47, 52), (-1, 1): (11, 16, 38, 61), (-1, -1): (12, 23, 33, 58)}
+CLASS_REPRESENTATIVE_MASKS = {(1, 1): 5, (1, -1): 2, (-1, 1): 11, (-1, -1): 12}
+INTERSECTION_COUNT = 16
+POSITIVE_SUBSET_COUNT = 8
+RULE_A_CLASSES = ((-1, 1), (1, -1))
+RULE_B_CLASSES = ((-1, -1), (1, 1))
+STAR_TO_RULE_A_DISTANCES = ((0, 8), (3, 8))       # (face flips to the nearest rule-A cell, number of star cells)
+STAR_LINE = ("D16 - D34", "D25 + D34")            # = Block 214's PLANE = Block 215's STAR_LINE
+DIAGONAL_LINE = ("D16 - D34", "D25 - D34")
+M_OO_ENTRIES = ("kt*(D16 + D25)", "-kx*(D16 - D34)", "-ky*(D25 + D34)")   # = Block 214's ONSITE_M_OO_ENTRIES
+M_OO_FREE_SYMBOLS = ("D16", "D25", "D34", "kt", "kx", "ky")
+UNION_WITNESS_COUNTS = (26, 18, 8)                 # (all, rational, on the curve over QQ(sqrt 6))
+COVARIANT_WITNESS_COUNT = 8
+MU_PER_CLASS = {(1, -1): (sp.Rational(32, 27),), (-1, 1): (sp.Rational(27, 32),)}
+STABILISER_ORDERS = ((1, 2, 2, 2, 3, 3),)
+CONE_ON_LINE_CONSTANTS = ("64/81", "9/16")         # det M = c (k^T G1 k)^4 on the star line, per class of pi0
+BRANCH_TABLE = {
+    ("L+-", "line symbolic"): ((("-32/(9*(4*lam_line**2 - 3))", 2, True), ("-4/(4*lam_line**2 - 3)", 4, True), ("1", 2, True)), ()),
+    ("L+-", "line 1/4"): ((("1", 2, True), ("128/99", 2, True), ("16/11", 4, True)), ()),
+    ("L+-", "line 1/4 + D07 1/4"): ((("128/119", 2, True), ("128/99", 2, True), ("16/11", 4, True)), ()),
+    ("L-+", "line symbolic"): ((("-27/(4*(9*lam_line**2 - 8))", 2, True), ("-9/(9*lam_line**2 - 8)", 4, True), ("1", 2, True)), ()),
+    ("L-+", "line 1/4"): ((("1", 2, True), ("108/119", 2, True), ("144/119", 4, True)), ()),
+    ("L-+", "line 1/4 + D07 1/4"): ((("108/119", 2, True), ("12/11", 2, True), ("144/119", 4, True)), ()),
+}
+VOLUME_PRODUCTS = {"L+-": sp.Rational(3, 4), "L-+": sp.Rational(8, 9)}          # v0 v1
+VOLUME_RATIOS = {"L+-": sp.Rational(9, 8), "L-+": sp.Rational(4, 3)}            # v1 / v0
+D07_RESCALE = {"L+-": sp.Rational(128, 119), "L-+": sp.Rational(12, 11)}       # 1/(1 - D07^2 v1/v0) at D07 = 1/4
+LINE_RESCALE = {"L+-": sp.Rational(12, 11), "L-+": sp.Rational(128, 119)}      # 1/(1 - lam^2/(v0 v1)) at lam = 1/4
+D07_SHIFT = "-D07**2*v1"                                                        # = Block 214's D07_SHIFT
+INVARIANT_DIMENSIONS = ((2, 1),)                   # (dim of S3-invariant quadrics, dim of O-invariant quadrics)
+AXES = ((-1, -1, 1), (-1, 1, 1), (1, -1, 1), (1, 1, 1))
+TWIST_COUNT_ORDER4 = 4
+SCOUT_GRADE_FENCE = ("scout-grade finite exact linear algebra on one cell form, "
+                     "not a spacetime and not a dynamics")
+SCOUT_GRADE_ONLY = True
+INSTANCE_SCOPE = (
+    "one cell form: Block 211's family at the 16 star-pattern cells, with the all-plus and flat cells as controls; no other cell's necessity half is run",
+    "one assembly measured (onsite); the overlap assembly at the 16 cells is not computed; neither assembly decided",
+    "the witnesses: W1's moduli, the flat moduli and Block 213's two curve points transported by class; the parameters symbolic, the line multiple symbolic, D07 at 1/4",
+    "the pencil factored with the multiple symbolic at the two named curve witnesses only; the cone on the line at all eight",
+    "the covariance notion: Block 215's (E_R R) H (E_R R)^T = H, twisted over its 64 sign vectors or strict; its lift, its generators; no other twist",
+    "no bench, no dispersion, no continuum, no metric of anything physical; 'one metric's cone' names Block 213's statement only",
+)
+INSTANCE_SCOPE_COUNT = 6
+
+N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS COVARIANCE, CONE, CELL, LOCUS AND METRIC ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the cube complex and its wedge, Block 211's family with its 64 face-sign cells and its four free parameters, Block 213's coincidence census and curve witnesses, Block 214's principal part and plane, Block 215's lift and star-pattern cells, and Block 105's assemblies are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'COVARIANCE' NAMES THE MATRIX IDENTITY (E_R R) H (E_R R)^T = H AND WHETHER THE CELL FORM INHERITS THE AXIOM'S COVARIANCE IS A READING ASSERTED NOWHERE; 'ONE METRIC'S CONE' NAMES BLOCK 213'S EXACT STATEMENT det B = c (k^T G1 k)^2 AND NOTHING PHYSICAL; NO CELL, NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.\\nper_site: The two 64-cell indexings (Block 213's FACES, Block 211's GAUGE_FACE_ORDER) are the same tuple (tx0, ty0, xy0, tx1, ty1, xy1) and both predicates are re-evaluated from the sign dictionary; Block 213's Groebner census reproduces literal for literal; Block 215's twisted-O line is the star line and exactly one S3_body keeps both shears alive strictly at every one of the 16 star-pattern cells, the diagonal and no alive S3 at the all-plus control; every witness used is Block 211's own solve and positive definite.\\nper_mode: THE M_oo LEMMA: at SYMBOLIC face signs the odd-odd block of the onsite principal part is (D16 + D25) kt, (D34 - D16) kx, -(D25 + D34) ky with no shear, no volume, no face sign and no D07, so its coefficient ideal is the star line at every cell and det M = det B^2 there by the block identity det [[A, B], [B^T, 0]] = det(B)^2 (verified at generic symbolic blocks); THE NECESSITY HALF: the radical of the coefficient ideal of det M - det B^2 in (D16, D25, D34) is exactly (D16 - D34, D25 + D34) at all 26 positive-definite witnesses -- W1's moduli at the 16 star cells, at the all-plus control and at the flat cell, and Block 213's curve moduli over QQ(sqrt 6) at the 8 rule-A cells; at least one witness in each of the four gauge classes among the 16.\\nper_block: THE CENSUS: Block 213's 16 coincidence-curve cells ARE Block 215's 16 star-pattern cells -- rule A (S1 = -E S0 E) iff (P_tx, P_ty, P_xy) = (+, -, +), rule B iff (-, +, -), because P_f = -+E_i E_j = +-E_k and Block 213's E = diag(1, -1, 1) is the star's pair-sign pattern; the intersection is all 16, the positive subset all 8 rule-A cells (four in each mixed class), the 8 rule-B star cells 3 face flips from the nearest rule-A cell. THE COVARIANT WITNESS: at each of the 8 rule-A cells Block 213's curve point transported to the cell is positive definite, strictly S3-covariant with both shears alive (its strict stabiliser IS an S3_body, the star line its parameter locus, preserved on the line), the readings proportional with mu = 32/27 or 27/32, the graded cone one quadric squared, and det M = c (k^T G1 k)^4 on the star line with the multiple symbolic (c = 64/81, 9/16): ONE METRIC'S CONE FOR EVERY LINE MULTIPLE AND EVERY D07.\\nlattice_wide: THE BRANCHES ON THE COVARIANT LINE at L+- and L-+: all four pencil branches are k-free constants times k^T G1 k -- {1, (32/27)/(1 - lam^2/(v0 v1)), (4/3)/(1 - lam^2/(v0 v1)) twice} at L+- with v0 v1 = 3/4 and {1, (27/32)/(1 - lam^2/(v0 v1)), (9/8)/(1 - lam^2/(v0 v1)) twice} at L-+ with v0 v1 = 8/9, the line multiple rescaling the top-form and transverse constants and D07 the 0-form constant alone (128/119 at L+-, 12/11 at L-+ at D07 = 1/4); the D07 congruence U^T M U = M|_{D07 = 0} holds at symbolic face signs with the H0 shift -D07^2 v1. THE SYMBOL: Block 213's identity det B = D3 (k^T D1 k)(k^T E adj(D2) E k) holds at every witness; both quadrics and det B are invariant under kappa -> R kappa for EXACTLY the strict S3, each quadric lies in the two-dimensional S3-invariant space span(|k|^2, (n . k)^2), the O-invariant space is one-dimensional (the flat cell's |k|^2), and a twisted rotation maps det M to the symbol of the GAUGED raising part E' D E' (det B up to the twisted lift's sign), never to itself.\\nper_scope: THE THEOREM IS THE CONDITIONAL: IF the cell form is (twisted-)covariant under the group THEN at the 16 cells the parameters lie on the star line and the cone is the union of the readings' cones there; the antecedent is a reading. OPEN: the overlap assembly at the 16 cells; the necessity half symbolically in the moduli; the pencil at the other six rule-A cells; the bench; no dynamics, continuum or gravity is supplied.\\nRESULT: AT EVERY ONE OF THE 16 STAR-PATTERN CELLS THE UNION LOCUS OF THE CONE IS THE STAR LINE, THE LINE COVARIANCE SELECTS THERE WITH THE SHEARS ALIVE; THE 16 CELLS ARE EXACTLY BLOCK 213'S 16 COINCIDENCE CELLS AND EACH OF THE 8 POSITIVE ONES CARRIES A STRICTLY S3-COVARIANT POSITIVE-DEFINITE WITNESS WITH ONE METRIC'S CONE FOR EVERY LINE MULTIPLE AND EVERY D07; THE SYMBOL IS EXACTLY S3-INVARIANT. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-215 STAND; Block 215's REOPEN item 2 is ANSWERED at the 16 cells as a conditional, in the affirmative: covariance and the cone agree there with the shears alive. Fable primary seat; refuting checker PENDING.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero."
+
+
+def scope_certificate(text: str) -> dict:
+    return {"n5_verbatim": N5_FENCE in text}
+
+
+def build_claims(mutation: str) -> dict:
+    wrong_census = COINCIDENCE_CENSUS[:-1] + (("(g0, g1)", 64, ((-1, -1), (-1, 1), (1, -1), (1, 1))),)
+    wrong_branches = dict(BRANCH_TABLE)
+    wrong_branches[("L+-", "line 1/4")] = ((("1", 2, True), ("32/27", 2, True), ("4/3", 4, True)), ())
+    claims = {
+        "current_main": CURRENT_MAIN, "parent_commit": PARENT_COMMIT,
+        "registered": (), "gravity_supplied": False, "covariance_inherited": False,
+        "assembly_decided": False, "cell_selected": False, "metric_supplied": False,
+        "face_order": FACE_ORDER_LITERAL, "star_masks": STAR_MASKS, "coincidence_census": COINCIDENCE_CENSUS,
+        "witness_solves": True,
+        "m_oo_entries": M_OO_ENTRIES, "union_necessity_plane": True, "union_necessity_measured": True,
+        "intersection_count": INTERSECTION_COUNT, "positive_subset_count": POSITIVE_SUBSET_COUNT,
+        "covariant_witness_count": COVARIANT_WITNESS_COUNT, "covariant_cell_exists": True,
+        "cone_on_line_constants": CONE_ON_LINE_CONSTANTS,
+        "branch_table": BRANCH_TABLE, "d07_rescale": D07_RESCALE, "d07_shift": D07_SHIFT,
+        "invariant_dimensions": INVARIANT_DIMENSIONS,
+        "scout_grade": SCOUT_GRADE_FENCE, "instance_scope_count": INSTANCE_SCOPE_COUNT,
+        "n5_verbatim": True, "float_absent": True,
+    }
+    flips = {
+        "stale_main_authority": ("current_main", STALE_MAIN),
+        "stale_parent_authority": ("parent_commit", STALE_PARENT_COMMIT),
+        "claim_objects_registered": ("registered", ("the covariant witness",)),
+        "claim_gravity_supplied": ("gravity_supplied", True),
+        "claim_covariance_inherited": ("covariance_inherited", True),
+        "claim_assembly_decided": ("assembly_decided", True),
+        "claim_cell_selected": ("cell_selected", True),
+        "claim_metric_supplied": ("metric_supplied", True),
+        "break_indexing_agreement": ("face_order", FACE_ORDER_LITERAL[3:] + FACE_ORDER_LITERAL[:3]),
+        "break_star_pattern_masks": ("star_masks", STAR_MASKS[:8]),
+        "break_coincidence_census": ("coincidence_census", wrong_census),
+        "break_witness_solves": ("witness_solves", False),
+        "break_m_oo_lemma": ("m_oo_entries", ("kt*(D16 + D25)", "-kx*(D16 - D34)", "-ky*(D25 - D34)")),
+        "break_union_necessity": ("union_necessity_plane", False),
+        "claim_union_from_identity_alone": ("union_necessity_measured", False),
+        "break_intersection": ("intersection_count", 0),
+        "break_positive_subset": ("positive_subset_count", 4),
+        "break_covariant_witness": ("covariant_witness_count", 2),
+        "claim_covariant_cell_empty": ("covariant_cell_exists", False),
+        "break_one_metric_cone": ("cone_on_line_constants", ("1", "1")),
+        "break_branch_table": ("branch_table", wrong_branches),
+        "break_d07_rescale": ("d07_rescale", {"L+-": sp.Integer(1), "L-+": sp.Integer(1)}),
+        "break_d07_congruence": ("d07_shift", "0"),
+        "break_symbol_invariance": ("invariant_dimensions", ((1, 1),)),
+        "break_scout_grade_fence": ("scout_grade", "a spacetime and a dynamics"),
+        "break_instance_scope": ("instance_scope_count", 2),
+        "drop_n5_fence": ("n5_verbatim", False),
+        "break_float_absence": ("float_absent", False),
+    }
+    if mutation:
+        key, value = flips[mutation]
+        claims[key] = value
+    return claims

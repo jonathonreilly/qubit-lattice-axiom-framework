@@ -202,12 +202,32 @@ L+− with `n = (1, 1, 1)` come out `q1 = (√6/2)|k|² − (√6/8)(n·k)²` an
 the note's numbers exactly; at L−+ with `n = (1, -1, 1)`, `q1 = (2√6/9)(|k|² + (n·k)²)`,
 `q2 = (2/3)(|k|² + (n·k)²)`. `q1/q2` is κ-free at both (the coincidence). CONFIRMS.
 
-CK-10 — THE BRANCHES ON THE COVARIANT LINE. CONFIRMS (see below for the symbolic-λ case).
+CK-10 — THE BRANCHES ON THE COVARIANT LINE. CONFIRMS.
 
-Note line 326, verbatim:
+Note line 326-327, verbatim:
 > | `L+−` (`v0 v1 = 3/4`, `v1/v0 = 9/8`) | `1` (×2), `(32/27)/(1 − 4λ²/3)` (×2), `(4/3)/(1 − 4λ²/3)` (×4) | `1, 128/99, 16/11, 16/11` | `128/119, 128/99, 16/11, 16/11` |
+> | `L−+` (`v0 v1 = 8/9`, `v1/v0 = 4/3`) | `1` (×2), `(27/32)/(1 − 9λ²/8)` (×2), `(9/8)/(1 − 9λ²/8)` (×4) | `1, 108/119, 144/119, 144/119` | `108/119, 12/11, 144/119, 144/119` |
 
-CK-11 — THE TWO RESCALINGS AND THE POSITIVITY BOUNDS. (see below)
+My route is the pencil `det(M − t H0)` factored over `QQ(√6)[κ][t]`, NOT the runner's `(H0⁻¹M)²`
+DomainMatrix charpoly. At L+− (mask 2), `λ = 1/4`, `D07 = 0`, `κ` fully symbolic, the pencil factors into
+quadratics in `t` only:
+
+    (33t² − 48kt² − 48kx² − 48ky² + 32ktkx + 32ktky + 32kxky)
+        · (11t² − 18kt² − 18kx² − 18ky² + 12ktkx + 12ktky + 12kxky)²
+        · (8t² − 9kt² − 9kx² − 9ky² + 6ktkx + 6ktky + 6kxky) / 110592
+
+i.e. `t² = c · (kᵀ G1 k)` with `c ∈ {1, 128/99, 16/11 (twice)}` — every branch `k`-free times `Q`, and in
+eigenvalues of `(H0⁻¹M)²` that is `1 (×2), 128/99 (×2), 16/11 (×4)`, the note's multiplicities. Symbolic
+`λ`: L+− gives `-32/(36λ² − 27) = (32/27)/(1 − 4λ²/3)` (×2) and `-4/(4λ² − 3) = (4/3)/(1 − 4λ²/3)` (×4)
+beside `1` (×2); L−+ gives `-27/(36λ² − 32) = (27/32)/(1 − 9λ²/8)` (×2) and
+`-9/(9λ² − 8) = (9/8)/(1 − 9λ²/8)` (×4) beside `1` (×2). Both rows of the table, exactly.
+At `λ = 1/4`: L+− `{1, 128/99, 16/11 ×2}`, with `D07 = 1/4` `{128/119, 128/99, 16/11 ×2}`; L−+
+`{1, 108/119, 144/119 ×2}`, with `D07 = 1/4` `{108/119, 12/11, 144/119 ×2}`. (The `λ = 1/4` L−+ rows were
+cross-checked at three rational `κ` points, `(1,2,3)`, `(1,-1,2)`, `(2,3,5)`; where my factoriser split a
+quadratic further it was only because `c·Q` was a perfect square there — e.g. `t² − 36` at `(2,3,5)` with
+`Q = 36`, `c = 1`, and `t² − 16` at `(1,-1,2)` with `Q = 44/3`, `c = 12/11`. Same constants.) CONFIRMS.
+
+CK-11 — THE TWO RESCALINGS AND THE POSITIVITY BOUNDS. CONFIRMS.
 
 Note line 332-337, verbatim:
 > rescales the top-form constant `μ` and the transverse pair by the same factor
@@ -218,8 +238,87 @@ Note line 332-337, verbatim:
 > The transverse pair stays a degenerate pair (multiplicity 4) on the line. The
 > denominators are the line's positivity bounds: `λ² < v0 v1` and `D07² < v0/v1`.
 
-CK-12 — THE TWISTED IDENTITY. (see below)
+Arithmetic checked against MY branch constants of CK-10. Line factor `1/(1 − λ²/(v0 v1))` at `λ = 1/4`:
+L+− has `v0 v1 = (√6/3)(3√6/8) = 3/4` → `12/11`, and `(32/27)(12/11) = 128/99` (top form),
+`(4/3)(12/11) = 16/11` (transverse pair, where `4/3 = 1/(1 − g1²)` at `g1 = 1/2`); L−+ has
+`v0 v1 = (√6/3)(4√6/9) = 8/9` → `128/119`, and `(27/32)(128/119) = 108/119`,
+`(9/8)(128/119) = 144/119` (with `9/8 = 1/(1 − g1²)` at `g1 = 1/3`). `D07` factor `1/(1 − D07² v1/v0)` at
+`D07 = 1/4`: L+− `v1/v0 = 9/8` → `128/119`, and the 0-form constant `1 → 128/119` while the others do not
+move; L−+ `v1/v0 = 4/3` → `12/11`, and `1 → 12/11`. All four measured constants match the note, and the
+two rescalings do act on complementary branches. The multiplicity-4 transverse pair persists on the line
+(CK-10's squared factor).
 
-Note line 366-368, verbatim:
+The positivity claim is measured, not asserted: at mask 2 with `(D07, λ, -λ, λ)` symbolic, the exact
+leading minors of the cell are
+
+    √6/3, 3/4, √6/4, 3/4, -√6(4λ² - 3)/16, 3(4λ² - 3)²/64, -√6(4λ² - 3)³/192, (9D07² - 8)(4λ² - 3)³/576
+
+Minor 5 is positive iff `λ² < 3/4 = v0 v1`; given that, `(4λ² - 3)³ < 0`, so minor 8 is positive iff
+`9D07² - 8 < 0`, i.e. `D07² < 8/9 = v0/v1`. So the pencil denominators ARE exactly the line's positivity
+bounds at this witness — the note's sentence is right and now has a proof rather than a coincidence of
+denominators. CONFIRMS.
+
+CK-12 — THE TWISTED IDENTITY. CONFIRMS.
+
+Note line 366-370, verbatim:
 > rotation `T = E L` (four admissible twists for the order-4 generator at L+−)
 > the symbol is not invariant: `Tᵀ M(κ) T = M_{E'}(R⁻¹κ)` with `E' = Lᵀ E L`,
+> so `det M(Rκ) = det M_{E'}(κ)` is the symbol of the **gauged** raising part
+> `E' D E'` (which differs from `D`), `det B` matching up to the twisted lift's
+> sign `det T_e det T_o`, and `det M(Rκ) ≠ det M(κ)`.
+
+At mask 2's witness (zero parameters) I took the first order-4 rotation among the 24 (there are 6 of order
+4), scanned Block 215's 64 sign vectors for admissible twists `T = E L` with `T H Tᵀ = H`, and found
+exactly **4**. For the first of them: `E' = Lᵀ E L` is diagonal; `Tᵀ M(κ) T − M_{E'}(R⁻¹κ) = 0` identically
+in `κ`, where `M_{E'}(κ') := H0 (E' D(κ') E') + (E' D(κ') E')ᵀ H0`; `E' D E' ≠ D` (the gauged raising part
+really differs); and `det M(Rκ) ≠ det M(κ)`. So twisted covariance is an identity between two kernels'
+symbols and not an invariance of one — the note's statement, reproduced. CONFIRMS.
+
+CK-13 — THE D07 CONGRUENCE. COULD NOT TEST (time).
+
+Note line 343-346, verbatim:
+> `U = I − (D07/D3) E_70` gives `Uᵀ M U = M|_{D07 = 0}` with the six face signs,
+> the four moduli and the three other parameters all symbolic, and
+> `Uᵀ H0 U − H0|_{D07=0}` is `−D07² v1` on the `(0, 0)` entry and zero
+> elsewhere — Block 214's `N2` now at every cell at once.
+
+Not rebuilt inside the budget. Two indirect confirmations, both measured here: `det M / (kᵀ G1 k)⁴` on the
+star line is `64/81` (mask 2) and `9/16` (mask 16) with `D07` **symbolic** as well as with `D07 = 0`
+(CK-08), which is the congruence's consequence `det M` is `D07`-free; and `M_oo` carries no `D07` at
+symbolic face signs (CK-01). Nothing contradicts the sentence; I simply did not build `U`.
+
+CK-14 — WHAT I DID NOT TEST. COULD NOT TEST (time / out of scope by the spec).
+
+Not attempted: the 28-mutation census (excluded by the spec — the supervisor verified it from the raw
+outputs); the necessity radical at the remaining 20 of the 26 witnesses (I did 5 W1 cells covering all four
+gauge classes plus mask 16, and 1 curve witness; the six I did are representative and all agree); the
+covariant witness at the other six rule-A cells (masks 11, 25, 38, 47, 52, 61 — the receipt's own table has
+them and their stabilisers are the same four `S3_body`s permuted by class, which is consistent with the two
+I measured); the flat-cell and all-plus controls; the authority/gate/fence families (`A`, `B`, `H`, `I`);
+the planted-defect monkeypatch (item 7 of the spec, skipped for budget). None of these is a gap I found; they
+are simply untested by me.
+
+---
+
+## VERDICT
+
+PASS-NO-BLOCKER. Twelve items rebuilt on independent machinery reproduce the note's numbers exactly:
+the `M_oo` entries and free symbols, the block identity at 26 generic symbols, the necessity radical
+(proved here Gröbner-free, by pure powers of the two line forms sitting in the coefficient ideal), the
+64-cell census literal for literal, the star = curve identity and the `P_f = ∓E_iE_j` sign identity, the
+`3`-flip distances, the two stabilisers with orders `(1,2,2,2,3,3)` and their body-diagonal axes, the
+empty forced-condition star-line loci, `μ = 32/27` and `27/32`, `det B/Q² = 8/9` and `3/4`,
+`det M/Q⁴ = 64/81` and `9/16` for symbolic `λ` AND symbolic `D07`, all four pencil branch constants at both
+witnesses symbolically in `λ` and at `λ = 1/4` with and without `D07`, both rescalings, the positivity
+bounds, the symbol identity, the invariance sets `= the stabiliser` exactly, the invariant dimensions
+`(2, 1)`, the span coefficients, and the twisted identity with its four admissible twists.
+
+Two defects, both non-blocking and both editorial:
+- `CK-04` (line 236): "the class representatives `5, 2, 16, 12`" contradicts the note's own line 186 and
+  claim-register row 7 and the receipt; the `(-1, +1)` least mask is **11**. Fix the digit.
+- `CK-02` (line 212): "`D07` sits on corner 7, which nothing raises" is a one-sided reason — the zero
+  column 7 of `D` kills the `(i, 7)` half and the zero row 0 of `D` kills the `(7, j)` half. The
+  conclusion is unaffected; widen the clause.
+
+I found nothing that refutes a measured number, a locus, a constant or a count.
+

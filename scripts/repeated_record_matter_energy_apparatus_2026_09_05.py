@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Finite-matrix primary checks for repeated Records, matter, and apparatus energy.
 
-The runner checks a supplied Gaussian deletion process and two finite apparatus
-fixtures.  It does not derive a Record compiler, clock, battery preparation,
-renewal law, stationary matter state, continuum limit, or physical scale.
+The 216-mode Gaussian trajectories use the ideal occupation/deletion instrument.
+Energy-conserving battery lifts are exercised only by separate four-mode fixtures.
+The runner does not derive a Record compiler, clock, battery preparation, renewal
+law, stationary matter state, continuum limit, or physical scale.
 """
 
 from __future__ import annotations
@@ -155,7 +156,7 @@ def occupation_candidates(
 def occupation_branches(
     covariance: np.ndarray, site: int
 ) -> tuple[float, list[tuple[int, float, np.ndarray]]]:
-    """Return only nonzero Born branches, including deterministic p=0 or p=1."""
+    """Discard Born branches whose weights are numerically zero at PROB_TOL."""
     if covariance.ndim != 2 or covariance.shape[0] != covariance.shape[1]:
         raise ValueError("covariance must be square")
     if not 0 <= site < len(covariance):
@@ -292,8 +293,9 @@ def enumerate_live_vertex_expectation(
     max_local_identity = 0.0
     max_branch_selection = 0.0
     for site in live_sites:
-        probability_one, branches = occupation_branches(covariance, int(site))
+        _probability_one, branches = occupation_branches(covariance, int(site))
         post_hamiltonian = delete_site(hamiltonian, int(site))
+        post_live_sites = live_sites[live_sites != site]
         direct_post = energy(post_hamiltonian, covariance)
         post_energies = [energy(post_hamiltonian, branch[2]) for branch in branches]
         expected_post = sum(
@@ -305,7 +307,15 @@ def enumerate_live_vertex_expectation(
             *(abs(post - direct_post) for post in post_energies),
         )
         expected_posts.append(expected_post)
-        expected_live_numbers.append(current_live_number - probability_one)
+        expected_live_numbers.append(
+            sum(
+                probability
+                * float(
+                    np.trace(candidate[np.ix_(post_live_sites, post_live_sites)]).real
+                )
+                for _outcome, probability, candidate in branches
+            )
+        )
     live_count = len(live_sites)
     enumerated_mean = float(np.mean(expected_posts))
     exact_target = (1.0 - 2.0 / live_count) * current_energy
@@ -344,7 +354,7 @@ def run_scenario(
         measured_sites: list[int] = []
         measured_outcomes: list[int] = []
         eigenvalues, eigenvectors = np.linalg.eigh(hamiltonian)
-        cumulative_work = 0.0
+        cumulative_system_energy_change = 0.0
         trajectory_rows: list[dict[str, float]] = []
 
         for step, site in enumerate(site_schedules[trajectory], start=1):
@@ -413,10 +423,11 @@ def run_scenario(
             outcome = sampled_outcome if sampled_outcome in branch_values else branches[0][0]
             _chosen_probability, covariance, post_energy = branch_values[outcome]
             selection = post_energy - reference_post
-            event_work = post_energy - pre_energy
-            cumulative_work += event_work
+            system_energy_change = post_energy - pre_energy
+            cumulative_system_energy_change += system_energy_change
             diag.max_ledger = max(
-                diag.max_ledger, abs(event_work - (selection - deleted_star))
+                diag.max_ledger,
+                abs(system_energy_change - (selection - deleted_star)),
             )
 
             hamiltonian = post_hamiltonian
@@ -461,8 +472,8 @@ def run_scenario(
                     "post": post_energy,
                     "deleted": deleted_star,
                     "selection": selection,
-                    "work": event_work,
-                    "cumulative_work": cumulative_work,
+                    "system_energy_change": system_energy_change,
+                    "cumulative_system_energy_change": cumulative_system_energy_change,
                     "ground": ground_energy,
                     "excess_per_live": excess / len(live_sites),
                     "bonds": float(surviving_bonds),
@@ -654,8 +665,9 @@ def phase_rotated_uniform_probe() -> dict[str, float]:
             abs(gaussian_energy_second_moment(hamiltonian, rotated) - initial_second),
         )
         for site in live_sites:
-            probability_one, branches = occupation_branches(rotated, int(site))
+            _probability_one, branches = occupation_branches(rotated, int(site))
             post_hamiltonian = delete_site(hamiltonian, int(site))
+            post_live_sites = live_sites[live_sites != site]
             direct_energy = energy(post_hamiltonian, rotated)
             weighted_energy = sum(
                 probability * energy(post_hamiltonian, candidate)
@@ -686,7 +698,17 @@ def phase_rotated_uniform_probe() -> dict[str, float]:
                 max_star_bound_residual, max(0.0, star_second - star_square_bound)
             )
             expected_energies.append(weighted_energy)
-            expected_numbers.append(initial_live_number - probability_one)
+            expected_numbers.append(
+                sum(
+                    probability
+                    * float(
+                        np.trace(
+                            candidate[np.ix_(post_live_sites, post_live_sites)]
+                        ).real
+                    )
+                    for _outcome, probability, candidate in branches
+                )
+            )
             expected_seconds.append(weighted_second)
             star_seconds.append(star_second)
             star_square_bounds.append(star_square_bound)
@@ -1307,7 +1329,6 @@ def sine_and_budget_probes() -> dict[str, float]:
         "shared_error": shared_error,
         "shared_mean": shared_mean,
         "shared_formula_residual": abs(shared_mean - shared_formula),
-        "density_error": 6.0 * hopping * epsilon,
         "ground_excess_error": 12.0 * hopping * epsilon,
         "bad_calls": float(bad_calls),
     }
@@ -1428,7 +1449,8 @@ def main() -> int:
         and abs(control_e0 - control_e1) < TOL_ENERGY
         and abs(control_weighted - control_reference) < TOL_ENERGY,
         f"p1={control_p:.9f} Epre={control_pre:.9f} Epost0={control_e0:.9f} "
-        f"Epost1={control_e1:.9f} mean_work={control_reference-control_pre:+.9f}",
+        f"Epost1={control_e1:.9f} "
+        f"mean_system_energy_change={control_reference-control_pre:+.9f}",
     )
 
     scenarios = {
@@ -1461,7 +1483,7 @@ def main() -> int:
         )
         report.check(
             "G2" if dwell == 0.0 else "G3",
-            f"repeated exact Gaussian events tau={dwell:g}",
+            f"repeated ideal Gaussian occupation/deletion events tau={dwell:g}",
             invariant_max < TOL_MATRIX
             and identity_max < TOL_ENERGY
             and diag.min_excess >= -TOL_ENERGY,
@@ -1528,12 +1550,12 @@ def main() -> int:
     report.lines.append(
         "INFO ledger: D=Tr[(H_before-H_after)C_before], "
         "S_n=Tr[H_after C_n]-Tr[H_after C_before], "
-        "W_n=Epost_n-Epre=S_n-D; sum_n p_n S_n=0"
+        "DeltaE_sys,n=Epost_n-Epre=S_n-D; sum_n p_n S_n=0"
     )
     report.lines.append(
         "MC step exact_Emean tau0_mean tau0_SE tau05_mean tau05_SE "
         "exact_Nlive tau05_Nlive tau05_Nlive_SE "
-        "(finite sample comparator; not a deterministic gate)"
+        "(ideal-instrument finite-sample comparator; not a deterministic gate)"
     )
     for step in (1, 2, 5, 10, 18, 27):
         zero = scenarios[0.0]
@@ -1554,8 +1576,8 @@ def main() -> int:
         )
 
     report.lines.append(
-        "LEDGER tau step Epre Epost deleted_star selection work cumulative_work "
-        "fixedN_ground excess/live surviving_bonds"
+        "LEDGER tau step Epre Epost deleted_star selection delta_system_energy "
+        "cumulative_delta_system_energy fixedN_ground excess/live surviving_bonds"
     )
     for step in (1, 10, 27):
         for dwell in DWELLS:
@@ -1566,8 +1588,8 @@ def main() -> int:
                 f"{mean_at(scenario,step,'post'):+.6f} "
                 f"{mean_at(scenario,step,'deleted'):+.6f} "
                 f"{mean_at(scenario,step,'selection'):+.6f} "
-                f"{mean_at(scenario,step,'work'):+.6f} "
-                f"{mean_at(scenario,step,'cumulative_work'):+.6f} "
+                f"{mean_at(scenario,step,'system_energy_change'):+.6f} "
+                f"{mean_at(scenario,step,'cumulative_system_energy_change'):+.6f} "
                 f"{mean_at(scenario,step,'ground'):+.6f} "
                 f"{mean_at(scenario,step,'excess_per_live'):.8f} "
                 f"{mean_at(scenario,step,'bonds'):.2f}"
@@ -1575,7 +1597,9 @@ def main() -> int:
 
     for dwell in DWELLS:
         scenario = scenarios[dwell]
-        cumulative_mean, cumulative_se = final_mean_and_se(scenario, "cumulative_work")
+        cumulative_mean, cumulative_se = final_mean_and_se(
+            scenario, "cumulative_system_energy_change"
+        )
         excess_mean, excess_se = final_mean_and_se(scenario, "excess_per_live")
         ground_mean, ground_se = final_mean_and_se(scenario, "ground")
         selection_values = np.array(
@@ -1585,7 +1609,9 @@ def main() -> int:
             [row["deleted"] for trajectory in scenario.rows for row in trajectory]
         )
         report.lines.append(
-            f"SUMMARY tau={dwell:g} final_cum_work={cumulative_mean:+.6f}+/-{cumulative_se:.6f} "
+            f"SUMMARY tau={dwell:g} "
+            f"final_cumulative_delta_system_energy={cumulative_mean:+.6f}"
+            f"+/-{cumulative_se:.6f} "
             f"final_ground={ground_mean:+.6f}+/-{ground_se:.6f} "
             f"final_excess/live={excess_mean:.8f}+/-{excess_se:.8f} "
             f"sample_selection_mean={np.mean(selection_values):+.6f} "
@@ -1682,14 +1708,19 @@ def main() -> int:
         f"shared=(err={probes['shared_error']:.3f},meanE={probes['shared_mean']:.3f})",
     )
     report.lines.append(
-        f"PROBE error_to_density epsilon=0.08 energy/M<={probes['density_error']:.3f} "
-        f"ground_excess/M<={probes['ground_excess_error']:.3f}; arithmetic_only=no_proof"
+        f"PROBE generic_continuity_bound epsilon=0.08 "
+        f"broad_history_ground_excess_difference/M"
+        f"<={probes['ground_excess_error']:.3f}; arithmetic_only=no_proof"
     )
 
     report.lines.append(
-        "SCOPE supplied finite consumptive process; MC +/- are trajectory standard errors, "
-        "not pass windows; dimer spectra are commensurate; normalized Choi distances are "
-        "not diamond bounds; sine/scaling rows are arithmetic probes, not continuum proofs"
+        "SCOPE 216-mode Gaussian rows use the ideal occupation/deletion instrument; "
+        "energy-conserving battery lifts run only in separate four-mode dimer fixtures"
+    )
+    report.lines.append(
+        "SCOPE MC +/- are trajectory standard errors, not pass windows; dimer spectra are "
+        "commensurate; normalized Choi distances are not diamond bounds; sine/scaling "
+        "rows are arithmetic probes, not continuum proofs"
     )
     report.lines.append(
         "SCOPE no physical clock/rate, Record compiler, local spectral-gate compiler, "

@@ -150,6 +150,13 @@ class FockCarrier:
     number: np.ndarray
 
 
+@dataclass(frozen=True)
+class WeightedHistory:
+    live_edges: tuple[tuple[int, int], ...]
+    records: tuple[tuple[tuple[int, int], int], ...]
+    density: np.ndarray
+
+
 def direct_even_fock(mode_count: int) -> FockCarrier:
     full_dimension = 2**mode_count
     annihilators = []
@@ -510,11 +517,192 @@ def bridge_and_history_check() -> str:
     return "2+2, 1+3, deterministic, zero, and signed old-boundary branches verified"
 
 
+def history_hamiltonian(
+    live_edges: tuple[tuple[int, int], ...],
+    terms: dict[tuple[int, int], np.ndarray],
+) -> np.ndarray:
+    dimension = next(iter(terms.values())).shape[0]
+    result = np.zeros((dimension, dimension), dtype=complex)
+    for edge in live_edges:
+        result = result + terms[edge]
+    return result
+
+
+def history_statistics(
+    histories: list[WeightedHistory],
+    terms: dict[tuple[int, int], np.ndarray],
+    number: np.ndarray,
+    sharp_number: int,
+    edge_z: dict[tuple[int, int], np.ndarray],
+) -> tuple[float, float, float, float]:
+    weight = 0.0
+    mean = 0.0
+    second = 0.0
+    number_residual = 0.0
+    identity = np.eye(number.shape[0], dtype=complex)
+    for history in histories:
+        rho = history.density
+        hamiltonian = history_hamiltonian(history.live_edges, terms)
+        branch_weight = float(np.trace(rho).real)
+        weight += branch_weight
+        mean += float(np.trace(rho @ hamiltonian).real)
+        second += float(np.trace(rho @ hamiltonian @ hamiltonian).real)
+        number_residual += float(
+            np.trace(rho @ (number - sharp_number * identity) @ (number - sharp_number * identity)).real
+        )
+        for edge, sign in history.records:
+            record_residual = float(
+                np.trace(rho @ (edge_z[edge] - sign * identity) @ (edge_z[edge] - sign * identity)).real
+            )
+            require(abs(record_residual) <= 2.0e-9, f"old Record lost edge={edge} sign={sign}")
+    return weight, mean, second, number_residual
+
+
+def dwell_time(records: tuple[tuple[tuple[int, int], int], ...], edge_order: dict[tuple[int, int], int]) -> float:
+    signed_history = sum((edge_order[edge] + 1) * sign for edge, sign in records)
+    return 0.061 * (len(records) + 1) + 0.007 * signed_history
+
+
+def uniform_history_moments_check() -> str:
+    square = SmallGraph(4, ((0, 1), (1, 2), (2, 3), (0, 3)))
+    fock = direct_even_fock(4)
+    cycle = (0, 1, 2, 3, 0)
+    isometry = code_isometry(square, fock, (cycle,))
+    coefficients = {
+        (0, 1): 0.83,
+        (1, 2): -0.61,
+        (2, 3): 1.0,
+        (0, 3): -0.74,
+    }
+    terms = {
+        edge: coefficients[edge] * square.hopping_generator(edge)
+        for edge in square.edges
+    }
+    edge_z = {edge: square.edge_z(edge) for edge in square.edges}
+    number = physical_number(square)
+    state = isometry @ fixed_number_vector(fock, 2)
+    initial_density = np.outer(state, state.conj())
+    histories = [WeightedHistory(square.edges, (), initial_density)]
+    edge_order = {edge: position for position, edge in enumerate(square.edges)}
+    initial_hamiltonian = history_hamiltonian(square.edges, terms)
+    initial_mean = float(np.vdot(state, initial_hamiltonian @ state).real)
+    previous_second = float(np.vdot(state, initial_hamiltonian @ initial_hamiltonian @ state).real)
+    previous_variance = previous_second - initial_mean**2
+    largest_coefficient = max(abs(value) for value in coefficients.values())
+    observed_branch_counts = []
+
+    for event_index in range(square.edge_count + 1):
+        weight, mean, second, number_residual = history_statistics(
+            histories, terms, number, 2, edge_z
+        )
+        require(abs(weight - 1.0) <= 3.0e-9, f"history normalization event={event_index}")
+        require(abs(number_residual) <= 3.0e-9, f"sharp N lost event={event_index}")
+        target_mean = initial_mean * (square.edge_count - event_index) / square.edge_count
+        require(abs(mean - target_mean) <= 5.0e-9, f"uniform mean law event={event_index}")
+        variance = second - mean**2
+        require(
+            variance <= previous_variance + event_index * largest_coefficient**2 + 3.0e-9,
+            f"variance accumulation bound event={event_index}",
+        )
+        observed_branch_counts.append(len(histories))
+        if event_index == square.edge_count:
+            require(abs(second) <= ATOL, "q=0 final Hamiltonian is not zero")
+            break
+
+        q = square.edge_count - event_index
+        next_histories: list[WeightedHistory] = []
+        correction = 0.0
+        for history in histories:
+            hamiltonian = history_hamiltonian(history.live_edges, terms)
+            tau = dwell_time(history.records, edge_order)
+            unitary = scipy.linalg.expm(-1j * tau * hamiltonian)
+            dwelled = unitary @ history.density @ unitary.conj().T
+            require(len(history.live_edges) == q, "live-edge count is history dependent")
+            average_square = np.zeros_like(hamiltonian)
+            for edge in history.live_edges:
+                output_hamiltonian = hamiltonian - terms[edge]
+                average_square = average_square + output_hamiltonian @ output_hamiltonian / q
+                correction += float(np.trace(dwelled @ terms[edge] @ terms[edge]).real) / q
+                for sign in (-1, 1):
+                    projector = projector_from_involution(edge_z[edge], sign)
+                    close(
+                        output_hamiltonian @ projector,
+                        projector @ output_hamiltonian,
+                        f"outgoing Hamiltonian commutes native Record edge={edge}",
+                    )
+                    next_density = projector @ dwelled @ projector / q
+                    next_live = tuple(candidate for candidate in history.live_edges if candidate != edge)
+                    next_records = history.records + ((edge, sign),)
+                    next_histories.append(WeightedHistory(next_live, next_records, next_density))
+            expected_average_square = (
+                (1.0 - 2.0 / q) * hamiltonian @ hamiltonian
+                + sum(terms[edge] @ terms[edge] for edge in history.live_edges) / q
+            )
+            close(average_square, expected_average_square, f"second-moment operator q={q}")
+
+        next_weight, next_mean, next_second, _ = history_statistics(
+            next_histories, terms, number, 2, edge_z
+        )
+        require(abs(next_weight - 1.0) <= 3.0e-9, "weighted outcome sum")
+        require(abs(next_mean - (1.0 - 1.0 / q) * mean) <= 5.0e-9, "actual first-moment recursion")
+        predicted_second = (1.0 - 2.0 / q) * second + correction
+        require(abs(next_second - predicted_second) <= 6.0e-9, "actual second-moment recursion")
+        next_variance = next_second - next_mean**2
+        if q >= 2:
+            predicted_variance = (1.0 - 2.0 / q) * variance - mean**2 / q**2 + correction
+            require(abs(next_variance - predicted_variance) <= 7.0e-9, "actual variance recursion")
+            require(next_variance <= variance + largest_coefficient**2 + 3.0e-9, "one-event variance bound")
+        else:
+            require(abs(next_second) <= ATOL and abs(next_variance) <= ATOL, "q=1 zero output")
+        histories = next_histories
+
+    first_dwell = scipy.linalg.expm(-1j * dwell_time((), edge_order) * initial_hamiltonian)
+    first_density = first_dwell @ initial_density @ first_dwell.conj().T
+    uniform_candidate = sum(
+        float(np.trace(first_density @ (initial_hamiltonian - terms[edge])).real)
+        for edge in square.edges
+    ) / 4.0
+    biased_weights = np.array([abs(coefficients[edge]) for edge in square.edges], dtype=float)
+    biased_weights /= np.sum(biased_weights)
+    biased_candidate = sum(
+        weight * float(np.trace(first_density @ (initial_hamiltonian - terms[edge])).real)
+        for weight, edge in zip(biased_weights, square.edges)
+    )
+    require(abs(uniform_candidate - biased_candidate) > 1.0e-4, "fixture cannot distinguish biased edge choice")
+    require(observed_branch_counts == [1, 8, 48, 192, 384], "unexpected history-tree census")
+    return "384 actual edge/outcome histories obey uniform mean, second moment, variance, N, and Records"
+
+
+def bipartite_energy_bound_check() -> str:
+    fixtures = (
+        (4, ((0, 1), (1, 2), (2, 3), (0, 3)), 2),
+        (4, ((0, 1), (1, 2), (2, 3)), 2),
+    )
+    margins = []
+    for vertex_count, edges, max_degree in fixtures:
+        one_particle = np.zeros((vertex_count, vertex_count), dtype=float)
+        for i, j in edges:
+            one_particle[i, j] = 1.0
+            one_particle[j, i] = 1.0
+        eigenvalues = np.linalg.eigvalsh(one_particle)
+        close(eigenvalues, -eigenvalues[::-1], "bipartite spectral pairing")
+        require(abs(float(np.trace(one_particle @ one_particle)) - 2.0 * len(edges)) <= ATOL, "trace h^2")
+        require(float(np.linalg.norm(one_particle, ord=2)) <= max_degree + ATOL, "row-sum norm bound")
+        ground_energy = float(np.sum(eigenvalues[: vertex_count // 2]))
+        derived_bound = -len(edges) / max_degree
+        require(ground_energy <= derived_bound + ATOL, "general max-degree sea bound")
+        margins.append(derived_bound - ground_energy)
+    require(min(margins) >= -ATOL, "negative energy-bound margin")
+    return "square/path verify E0<=-L t/d from pairing, trace square, and row-sum norm"
+
+
 def run_checks() -> int:
     checks = [
         ("direct_dictionary", direct_dictionary_check),
         ("nonbridge_instrument", nonbridge_instrument_check),
         ("bridge_and_history", bridge_and_history_check),
+        ("uniform_history_moments", uniform_history_moments_check),
+        ("bipartite_energy_bound", bipartite_energy_bound_check),
     ]
     passed = 0
     failed = 0

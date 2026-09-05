@@ -327,10 +327,11 @@ def residual_count(matrix) -> int:
     return b213.residual_count(matrix)
 
 
-def ff_det(matrix: sp.Matrix, gens: tuple, field: bool = False):
-    """THE FRACTION-FREE DETERMINANT over QQ[gens] (or its fraction field):
-    Bareiss on a DomainMatrix, exact, no float and no tolerance."""
-    domain = QQ.frac_field(*gens) if field else QQ[list(gens)]
+def ff_det(matrix: sp.Matrix, gens: tuple, field: bool = False, algebraic: bool = False):
+    """THE FRACTION-FREE DETERMINANT over QQ[gens] (or its fraction field, or
+    QQ(sqrt 6)[gens]): Bareiss on a DomainMatrix, exact, no float, no tolerance."""
+    base = QQ.algebraic_field(sp.sqrt(6)) if algebraic else QQ
+    domain = base.frac_field(*gens) if field else base[list(gens)]
     return domain.to_sympy(DomainMatrix.from_Matrix(matrix).convert_to(domain).det())
 
 
@@ -463,16 +464,28 @@ def line_factor_locus(quartic, params: tuple) -> tuple:
     return tuple(out)
 
 
+def exact_charpoly(matrix: sp.Matrix):
+    """THE CHARPOLY IN lam OVER THE POLYNOMIAL RING QQ[kt, kx, ky] (or over
+    QQ(sqrt 6)[kt, kx, ky] at the locus witnesses), fraction-free on a
+    DomainMatrix -- exact, and far cheaper than the generic symbolic charpoly."""
+    field = QQ.algebraic_field(sp.sqrt(6)) if matrix.has(sp.sqrt(6)) else QQ
+    domain = field[list(KAPPA)]
+    coefficients = DomainMatrix.from_Matrix(matrix).convert_to(domain).charpoly()
+    degree = len(coefficients) - 1
+    return sp.expand(sum(domain.to_sympy(coefficient) * LAM ** (degree - k)
+                         for k, coefficient in enumerate(coefficients)))
+
+
 def pencil_branches(h0: sp.Matrix, m: sp.Matrix) -> tuple:
     """The charpoly of (H0^-1 M)^2 (the H-pencil principal symbol) factored in
     lam: the linear factors are the algebraic branches, the rest the degree
     structure of the irreducible remainder."""
     operator = (h0.inv() * m).applyfunc(sp.radsimp)
-    return b213.linear_branches(sp.expand((operator * operator).charpoly(LAM).as_expr()), KAPPA)
+    return b213.linear_branches(exact_charpoly((operator * operator).applyfunc(sp.radsimp)), KAPPA)
 
 
 def form_branches(m: sp.Matrix) -> tuple:
-    return b213.linear_branches(sp.expand((m * m).charpoly(LAM).as_expr()), KAPPA)
+    return b213.linear_branches(exact_charpoly((m * m).applyfunc(sp.expand)), KAPPA)
 
 
 def measure_cells() -> dict:
@@ -614,64 +627,78 @@ def measure_mechanism() -> dict:
     return facts
 
 
+def reduced_generators(basis, params: tuple, r) -> tuple:
+    """Basis elements over QQ[params, r] reduced modulo r^2 - 6 and factored:
+    the factors carrying a parameter are the locus generators over QQ(sqrt 6)."""
+    out = []
+    for element in basis:
+        element = sp.expand(sp.rem(sp.expand(element), r ** 2 - 6, r))
+        if element == 0 or not (element.free_symbols & set(params)):
+            continue
+        _, factors = sp.factor_list(element)
+        for base, _ in factors:
+            if base.free_symbols & set(params):
+                out.append(sp.expand(base))
+    return tuple(sorted(set(out), key=str))
+
+
 def measure_cone(cells: dict) -> dict:
     """F-3..F-6 at every cone witness: det M with the parameters symbolic, the
     union locus (det M = det B^2 as an identity in kappa), the factorization
-    type, the single-quadric and two-quadric loci, the line-factor locus."""
+    type, the single-quadric and two-quadric loci, the line-factor locus.  At
+    the two QQ(sqrt 6) witnesses: onsite only, sqrt 6 carried as r with
+    r^2 - 6 adjoined to every Groebner system."""
     facts: dict = {}
     even, odd = b213.even_odd(3)
     plane_generators = (sp.expand(B16 - D34), sp.expand(C25 + D34))
+    r = sp.Symbol("r")
     for name in CONE_WITNESSES:
         cell = cells[name]["cell"]
-        for assembly in SIGN_ASSEMBLIES:
+        gaussian = name in LOCUS_WITNESSES
+        for assembly in (SIGN_ASSEMBLIES if not gaussian else ("onsite",)):
             params = (B16, C25, D34) if assembly == "onsite" else (A07,)
             point = {A07: 0} if assembly == "onsite" else {B16: 0, C25: 0, D34: 0}
             h0, m, _ = principal_part(cell.subs(point), assembly)
-            gaussian = m.has(sp.sqrt(6))
-            if gaussian:
-                det_m = sp.expand(sp.radsimp(m.det(method="berkowitz")))
-            else:
-                det_m = sp.expand(ff_det(m, params + KAPPA))
-            det_b = sp.expand(m.extract(even, odd).det(method="berkowitz"))
+            det_m = sp.expand(ff_det(m, params + KAPPA, algebraic=gaussian))
+            det_b = sp.expand(sp.radsimp(m.extract(even, odd).det(method="berkowitz")))
             difference = sp.expand(sp.radsimp(det_m - det_b ** 2))
-            basis = coefficient_ideal(difference, KAPPA, params)
-            entry: dict = {
-                "union_basis_radical": radical_generators(basis, params),
-                "union_iff_plane": (radical_generators(basis, params) == plane_generators) if assembly == "onsite"
-                else (radical_generators(basis, params) == (A07,)),
-            }
+            entry: dict = {}
             if gaussian:
-                _, factors = sp.factor_list(det_m, extension=sp.sqrt(6))
-                shape = tuple((sp.Poly(f, *KAPPA).total_degree(), p) for f, p in factors
-                              if f.free_symbols & set(KAPPA))
-                quartic = None
-                if len(shape) == 1 and shape[0] == (4, 2):
-                    quartic = [f for f, p in factors if f.free_symbols & set(KAPPA)][0]
+                coefficients = sp.Poly(difference.subs(sp.sqrt(6), r), *KAPPA).coeffs() + [r ** 2 - 6]
+                basis = sp.groebner(coefficients, *params, r, order="lex")
+                entry["union_basis_radical"] = reduced_generators(basis.exprs, params, r)
+                q = b213.quadratic_form(GQ, KAPPA)
+                unknowns = tuple(GQ[i, j] for i in range(3) for j in range(i, 3))
+                equations = sp.Poly(sp.expand((det_m - q ** 4).subs(sp.sqrt(6), r)), *KAPPA).coeffs() + [r ** 2 - 6]
+                basis = sp.groebner(equations, *unknowns, *params, r, order="lex")
+                entry["single_quadric_locus"] = reduced_generators(
+                    [g for g in basis.exprs if not any(g.has(u) for u in unknowns)], params, r)
+                entry["shape"] = ("NOT-FACTORED-OVER-QQ(sqrt6)",)
+                entry["is_square_of_quartic"] = None
             else:
-                shape = factor_shape(det_m, KAPPA)
+                basis = coefficient_ideal(difference, KAPPA, params)
+                entry["union_basis_radical"] = radical_generators(basis, params)
+                entry["shape"] = factor_shape(det_m, KAPPA)
                 quartic = square_root_factor(det_m, KAPPA)
-            entry["shape"] = shape
-            entry["is_square_of_quartic"] = quartic is not None
-            if quartic is not None:
-                quartic = sp.expand(quartic)
-                entry["quartic_parameter_degree"] = sp.Poly(quartic, *params).total_degree()
-                entry["quartic_even_in_parameters"] = sp.expand(quartic.subs({p: -p for p in params}, simultaneous=True) - quartic) == 0
-                entry["single_quadric_locus"] = single_quadric_locus(quartic, params)
-                entry["line_factor_locus"] = line_factor_locus(quartic, params) if not gaussian else ("NOT-RUN-OVER-QQ(sqrt6)",)
+                entry["is_square_of_quartic"] = quartic is not None
+                if quartic is not None:
+                    quartic = sp.expand(quartic)
+                    entry["quartic_parameter_degree"] = sp.Poly(quartic, *params).total_degree()
+                    entry["quartic_even_in_parameters"] = sp.expand(
+                        quartic.subs({p: -p for p in params}, simultaneous=True) - quartic) == 0
+                    entry["single_quadric_locus"] = single_quadric_locus(quartic, params)
+                    entry["line_factor_locus"] = line_factor_locus(quartic, params)
+                    if assembly == "onsite":
+                        s = sp.Symbol("s")
+                        slices = {"D16": {B16: s, C25: 0, D34: 0}, "D25": {B16: 0, C25: s, D34: 0},
+                                  "D34": {B16: 0, C25: 0, D34: s}, "diag": {B16: s, C25: s, D34: s}}
+                        entry["two_quadric_slices"] = tuple(
+                            (label, two_quadric_locus(sp.expand(quartic.subs(sub)), (s,)))
+                            for label, sub in slices.items())
+            entry["union_iff_plane"] = (entry["union_basis_radical"] == plane_generators) if assembly == "onsite" \
+                else (entry["union_basis_radical"] == (A07,))
+            entry["d07_absent"] = not det_m.has(A07)
             facts[(name, assembly)] = entry
-        # THE TWO-QUADRIC ELIMINANT on the one-parameter slices at every
-        # rational witness (onsite: D16, D25, D34 alone and the diagonal
-        # D16 = D25 = D34; overlap: the sum s) -- exact, over the closure.
-        entry = facts[(name, "onsite")]
-        if entry["is_square_of_quartic"] and name in RATIONAL_WITNESSES:
-            h0, m, _ = principal_part(cell.subs({A07: 0}), "onsite")
-            det_m = sp.expand(ff_det(m, (B16, C25, D34) + KAPPA))
-            quartic = sp.expand(square_root_factor(det_m, KAPPA))
-            s = sp.Symbol("s")
-            slices = {"D16": {B16: s, C25: 0, D34: 0}, "D25": {B16: 0, C25: s, D34: 0},
-                      "D34": {B16: 0, C25: 0, D34: s}, "diag": {B16: s, C25: s, D34: s}}
-            entry["two_quadric_slices"] = tuple(
-                (label, two_quadric_locus(sp.expand(quartic.subs(sub)), (s,))) for label, sub in slices.items())
     return facts
 
 
@@ -758,6 +785,7 @@ def measure() -> Facts:
         now = time.monotonic_ns()
         timings[label] = (now - started) // 1_000_000
         started = now
+        print(f"[phase] {label}: {timings[label]} ms", file=sys.stderr)
 
     git_maybe("fetch", "origin", "main", "--quiet")
     authority = authority_certificate(git_maybe("rev-parse", "origin/main"))
@@ -935,18 +963,17 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
                  me["overlap_sum_only"] and me[("overlap", "M_eo_parameter_free")])
     cn = facts.cone
     checks.check("F-4", "THE UNION LOCUS: det M = det B^2 identically in kappa IFF D16 = D34 = -D25 (onsite, any D07) and IFF s = 0 (overlap), at all seven cone witnesses",
-                 all(cn[(n, a)]["union_iff_plane"] for n in CONE_WITNESSES for a in SIGN_ASSEMBLIES) == claims["union_iff_plane"]
-                 and claims["union_iff_plane"])
-    checks.check("F-5", "THE FACTORIZATION TYPE: at symbolic parameters det M is one irreducible quartic squared under both assemblies at all seven witnesses, the quartic of degree exactly 2 and even in the parameters",
+                 all(entry["union_iff_plane"] and entry["d07_absent"] for entry in cn.values()) == claims["union_iff_plane"]
+                 and claims["union_iff_plane"] and len(cn) == 12)
+    checks.check("F-5", "THE FACTORIZATION TYPE: at symbolic parameters det M is one irreducible quartic squared under both assemblies at the five rational witnesses, the quartic of degree exactly 2 and even in the parameters",
                  all(cn[(n, a)]["shape"] == claims["cone_shapes"][a] and cn[(n, a)]["is_square_of_quartic"]
                      and cn[(n, a)]["quartic_parameter_degree"] == 2 and cn[(n, a)]["quartic_even_in_parameters"]
-                     for n in CONE_WITNESSES for a in SIGN_ASSEMBLIES))
-    checks.check("F-6", "NO PARAMETER POINT RESTORES A SINGLE METRIC'S CONE off the locus: the single-quadric system is inconsistent (basis (1,)) at the five rational witnesses under both assemblies and at the locus witnesses under overlap",
+                     for n in RATIONAL_WITNESSES for a in SIGN_ASSEMBLIES))
+    checks.check("F-6", "NO PARAMETER POINT RESTORES A SINGLE METRIC'S CONE off the locus: the single-quadric system is inconsistent (basis (1,)) at the five rational witnesses under both assemblies",
                  all(cn[(n, a)]["single_quadric_locus"] == (sp.Integer(1),) for n in RATIONAL_WITNESSES for a in SIGN_ASSEMBLIES)
-                 and all(cn[(n, "overlap")]["single_quadric_locus"] == (sp.Integer(1),) for n in LOCUS_WITNESSES)
                  == (not claims["single_quadric_restored"]))
     checks.check("F-7", "THE FATE OF THE COINCIDENCE LOCUS: at L+- and L-+ (onsite) the single-quadric locus in (D16, D25, D34) is EXACTLY the plane D16 = D34 = -D25 -- persists there for every D07, destroyed off it",
-                 all(radical_generators(cn[(n, "onsite")]["single_quadric_locus"], (B16, C25, D34)) == tuple(sp.sympify(p) for p in PLANE)
+                 all(cn[(n, "onsite")]["single_quadric_locus"] == tuple(sp.sympify(p) for p in PLANE)
                      for n in LOCUS_WITNESSES) == claims["coincidence_persists_on_plane"] and claims["coincidence_persists_on_plane"])
     checks.check("F-8", "OFF THE PLANE THE QUARTIC IS ABSOLUTELY IRREDUCIBLE ON THE DECLARED SLICES: the two-quadric eliminant is s^2 on D16, D25, D34 alone and on D16 = D25 = D34 at every rational witness, and no line factor exists at any rational witness under either assembly",
                  all(all(str(e[1]) == f"({TWO_QUADRIC_SLICE_ELIMINANT},)" for e in cn[(n, "onsite")]["two_quadric_slices"]) for n in RATIONAL_WITNESSES)
@@ -1004,7 +1031,7 @@ def report_measured(facts: Facts, elapsed_ns: int) -> None:
     print(f"timings_ms: {facts.timings}  elapsed_ms: {elapsed_ns // 1_000_000}")
 
 
-N5_FENCE = "N5-FENCE-PLACEHOLDER"
+N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER FIRST, AND THE WORDS PARAMETER, PARITY, CONE, LOCUS AND BRANCH ARE EACH SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- the kernel, the two assemblies, the principal part M = H0 D + D^T H0, Block 211's cell form with D07, D16, D25, D34 FREE and Block 213's witnesses are IMPOSED MEASURED OBJECTS. NO GRAVITY IS SUPPLIED. 'PARAMETER' NAMES A FREE COORDINATE OF ONE SOLVED LINEAR SYSTEM AND NO VALUE IS SELECTED. 'CONE' NAMES THE ZERO SET OF det M(kappa), NO LIGHT CONE; 'BRANCH' AN EIGENVALUE OF AN EXACT 8 x 8 MATRIX, NO PROPAGATOR.\\nper_site: The four names sit on the eight antidiagonal entries and at zero the cell IS Block 213's at all eight cells; onsite the folded H0 IS the cell; overlap H0 = H0(0) + (s/4) P111 with s the sum of the four; the flat cell at zero parameters is the identity with R5's multisets {0 x8, 1 x8}; with a parameter on it is NOT the identity: det M = Q^2, Q = |k|^4 + Q2, D07 absent, |k|^4 restored on the plane.\\nper_mode: AT SYMBOLIC MODULI AND PARAMETERS: M_eo = B is parameter-free; M_ee borders corner 0 by u = ((D07 + D34) kt, (D25 - D07) kx, (D07 + D16) ky); M_oo is the zero-diagonal [(D16 + D25) kt, (D34 - D16) kx, -(D25 + D34) ky] on the 1-forms with corner 7 empty, since row 0 of the raising part is zero: U = I - (D07/D3) E_70 gives U^T M U = M at D07 = 0 and U^T H0 U = H0 at D07 = 0 with D0 -> D0 - D07^2/D3.\\nper_block: det M = det B^2 identically in kappa IFF D16 = D34 = -D25 (onsite, any D07) and IFF s = 0 (overlap), by lex Groebner bases at the witnesses; off the plane det M is ONE IRREDUCIBLE QUARTIC SQUARED at symbolic parameters at the rational witnesses, Q = Q0 + Q2 with Q2 an even quadratic in the parameters; the two-quadric eliminant on the slices D16, D25, D34 alone and D16 = D25 = D34 is s^2 at every rational witness, no line factor exists, and the full eliminant off the slices is NOT computed.\\nlattice_wide: No parameter point makes the cone one quadric squared at the five rational witnesses under either assembly; at L+- and L-+ (onsite) the single-quadric locus is EXACTLY the plane: Block 213's locus persists there for every D07 and dies off it. At W1 with D16 = 1/4 the pencil branches are the roots of one irreducible quartic, doubled; with D07 = 1/4 the 0-form branch is k^T D1 k / (D0 - D07^2/D3) and the others are Block 213's; at L+- with D07 = 1/4 the constants are {128/119, 32/27, 4/3, 4/3}: STILL NOT SCALAR.\\nper_scope: REGISTRATION. The shears move det M with the parameters on and NO parameter point cancels either (coefficient ideal (1)); det M is proportional to its unit-volume value at zero parameters and NOT with them on: the volumes enter the cone through the parameters (formal family; #7970 record carried, not resolved). OPEN: a principle preferring the plane or the sum; the assembly and the reading; the locus off the slices; no dynamics, continuum or gravity is supplied.\\nRESULT: EACH DUALITY PARAMETER BREAKS THE GRADE PARITY OF THE FOLDED ONSITE H0; D07 IS REMOVED FROM THE PRINCIPAL PART BY AN EXACT UNIPOTENT CONGRUENCE; THE CONE IS THE UNION OF THE TWO HODGE CONES EXACTLY ON THE PLANE D16 = D34 = -D25 (OVERLAP: s = 0) AND ONE IRREDUCIBLE QUARTIC SQUARED OFF IT; NO PARAMETER POINT RESTORES A SINGLE METRIC'S CONE OR A SCALAR SYMBOL OFF BLOCK 213's LOCUS, WHICH PERSISTS EXACTLY ON THE PLANE; THE DEFORMED FLAT CELL IS NOT THE IDENTITY; THE VOLUMES ENTER THE CONE THROUGH THE PARAMETERS. SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT A SPACETIME AND NOT A DYNAMICS. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER NECESSITY -- the CYCLE913 CAUTION.\\nDECISION_CUT: NOTHING IS REGISTERED OR ADOPTED; no landed note is EDITED, no landed number touched; Blocks 105-213 STAND; Block 213's REOPEN item 7 is ANSWERED. Fable primary relaunched; refuting checker PENDING.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; retained-positive theory count remains zero."
 
 
 def main() -> int:

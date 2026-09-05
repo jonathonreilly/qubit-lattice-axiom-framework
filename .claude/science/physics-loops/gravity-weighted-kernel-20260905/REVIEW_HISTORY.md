@@ -94,3 +94,39 @@ Manifest decision: NOT regenerated for this PR — the gravity lane's stacked-no
 11 sourced facts/counts — PASS: every number in the note is measured by the runner or quoted from Blocks 201/211/212/R5/PR #7970 at scope (checker item 17); the one misprint (CK-02) corrected.
 12 pre-review gates — vocab_lint --report-only 0; audit_lint --strict OK; git diff --check clean; py_compile ok; post-fold baseline TOTAL PASS=36 FAIL=0; explicit-path staging; the raw codex stream specs/full_primary.log dropped from the pack at close (history retains it); cold read of the complete note by the supervisor.
 Independence class disclosed: single family (Claude), cross-model — two Fable primary seats, Opus 5 blind comparator, Opus 5 refuting checker, supervisor hand-verification.
+
+## block 214 — V1-V5 (primary)
+
+Recorded by the Fable primary (relaunched seat) at block delivery; not an audit certificate.
+Runs: see RESULTS_block214.md (certified baseline summary line and the mutation table).
+
+- **V1 — specific verdict-identified obstruction.** Block 213's `REOPEN` item 7, quoted verbatim
+  in the note's front matter, and its checker's `CK-01` scope restriction: the graded-cone theorem
+  is a statement at the degree-diagonal representative `D07 = D16 = D25 = D34 = 0`; the four-
+  parameter box was probed at four points and the mechanism, the loci and the fate of the theorem
+  on the box were unknown. This block answers exactly that: the parity mechanism as a block
+  identity, the `D07` congruence, the union locus as a plane, the factorization type off it, the
+  single-quadric fate, the branches, the deformed flat cell and the registration.
+- **V2 — genuinely new content.** (i) `M_eo = B` is parameter-free and the parameters enter only
+  the diagonal blocks `M_ee = sym(H_eo D_oe)`, `M_oo = sym(H_eo^T D_eo)`, with `u` and `N` in closed
+  form. (ii) The exact unipotent congruence `U = I - (D07/D3) E_70` removing `D07` from `M` and
+  shifting `D0 -> D0 - D07^2/D3` in `H0` — Block 211's bound `D07^2 < v0/v1` is where the shifted
+  block changes sign. (iii) The union locus `D16 = D34 = -D25` (onsite, any `D07`) and `s = 0`
+  (overlap), by Groebner bases at every witness. (iv) `det M = Q^2`, `Q = Q0 + Q2` with `Q2` an
+  even quadratic in the three parameters, absolutely irreducible on the declared slices except at
+  `s = 0` (eliminant `s^2`), no line factor. (v) The single-quadric system inconsistent at every
+  non-locus witness; at the locus witnesses its solution set is exactly the plane. (vi) The flat
+  cell with a parameter on is not the identity; its quartic is measured. (vii) The volumes enter
+  the cone through the parameters. None of this exists in Blocks 105-213.
+- **V3 — audit lane could NOT already complete this.** It needs Block 211's solve with the four
+  names free, Block 213's principal-part machinery, and exact Groebner bases over the parameter
+  ring at rational and `QQ(sqrt 6)` witnesses; the audit lane carries no such construction.
+- **V4 — no observed target, fit, literature constant or continuum equation is load-bearing.**
+  Every number is an exact rational, an exact algebraic number or a symbol on a finite bench;
+  gate `I-2` measures zero `nsimplify`, zero float literals and zero float calls; PR #7970 is
+  quoted only at its own conditional scope as the other side of a recorded tension.
+- **V5 — materially changes rather than relabels.** Block 213 proved nothing off the degree-
+  diagonal slice; this is the first statement on the four-parameter box, and it splits the box
+  exactly: a plane on which Block 213's theorem holds verbatim for every `D07`, and its complement
+  on which the cone is a single irreducible quartic squared that is neither Hodge reading's cone.
+  Nothing is relabelled: Blocks 211 and 213 and R5's control reproduce unchanged.

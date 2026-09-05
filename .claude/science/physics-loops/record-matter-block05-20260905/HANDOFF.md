@@ -1,6 +1,6 @@
 # Handoff
 
-The native physical edge Record/matter/energy theorem and both implementations have completed root every-line review. Canonical runs pass 9 primary and 9 independent checker groups; 11 primary and 18 checker effective final-source mutations fail as intended. The final note and pack passed their cold consistency check and all frozen-tree publication gates. The complete 23-file submission is ready for a review PR.
+The native physical edge Record/matter/energy theorem and both implementations have completed root every-line review. Canonical runs pass 9 primary and 9 independent checker groups; 11 primary and 18 checker effective final-source mutations fail as intended. The final note and pack passed their cold consistency check and all frozen-tree publication gates. The complete 23-file submission is published as PR #7983 against main, verified OPEN and MERGEABLE.
 
 The note and co-landing sources/caches are listed in ARTIFACT_PLAN.md. Separate-context checker work uses the same model family; no external peer review or audit verdict is claimed. The instrument is an alternative to occupation-site deletion. It preserves original total number, including inactive isolated vertices; transport and local/autonomous formation remain open.
 

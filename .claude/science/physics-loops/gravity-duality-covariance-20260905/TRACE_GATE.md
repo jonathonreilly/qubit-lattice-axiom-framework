@@ -1,11 +1,11 @@
-# Trace gate — block 216 (close)
+# Trace gate — block 217 (close)
 
 ```yaml
 trace_class: upstream_support
 target_claim_id: null
-target_blocker_text: "The union locus is computed at a cell where the twisted line is the star line and found to be that line: covariance and the cone would then agree there with the shears alive — new content."
+target_blocker_text: "The overlap assembly is run at the 16 cells: whether its s = 0 locus meets covariance there the way the onsite plane does."
 source_of_blocker_text: handoff
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "ANSWERED at the 16 cells, as a conditional and in the affirmative: the union locus is the star line at every star-pattern cell (sufficiency a lemma at every cell, necessity measured at 26 witnesses); the 16 cells are Block 213's 16 coincidence cells and the 8 positive ones carry strictly S3-covariant positive-definite witnesses with one metric's cone for every line multiple and every D07; the symbol is exactly S3-invariant. The antecedent stays a reading. Downstream consumer: block 217 — the other assembly at the same cells (the overlap fold's s = 0 locus, its cone and its stabiliser at the rule-A witnesses) and the bench dispersion at a covariant witness; then the gravity constraint quotient, unreached."
+next_trace_action: "ANSWERED at the 8 rule-A cells, as a conditional and in the negative for the overlap assembly: its s = 0 locus is the union locus there but covariance does not meet it (strict stabiliser trivial at every s; twisted stabiliser a D4_face for every s; the curve violates every shear-relation variant); the overlap cone there is Block 213's non-Hodge pair, not the onsite cone; the two assemblies differ in covariance and in the cone at the covariant cells — a measured difference, not a selector. The bench at a covariant witness reads the onsite pencil constants at one direction exactly. Downstream consumer: block 218 — a two-direction bench at the covariant witness (does the cone's shape become visible); then the assembly question as a supplied principle, and the constraint quotient, unreached."
 ```

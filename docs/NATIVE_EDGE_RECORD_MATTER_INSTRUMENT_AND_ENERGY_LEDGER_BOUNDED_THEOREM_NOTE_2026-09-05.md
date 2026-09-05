@@ -373,6 +373,10 @@ the same battery for every step cancels adjacent Fourier factors, so
 $\widetilde W_K\cdots\widetilde W_1=\widetilde{W_K\cdots W_1}$.
 This is an operator identity and retains intermediate matter-battery
 correlations.
+Each incoming Hamiltonian preserves its remaining-cycle and old-Record
+code, the ideal $W$ maps to the updated code, and each outgoing
+Hamiltonian preserves that code. Hence every fiber, and the lifted
+instrument, has the claimed updated code and sharp old Record outputs.
 
 Prepare a normalized battery packet supported in $[2B,2B+w]$, cap its
 physical energy domain to $[0,4B+w]$, and retain it. Initial total energy

@@ -17,8 +17,9 @@ by the exact unipotent congruence `U = I - (D07/D3) E_70`, which shifts `D0 -> D
 cone never sees `D07`, and the 0-form pencil branch is rescaled by `1/(1 - D07^2 v1/v0)` (diverging at
 Block 211's bound). `det M = det B^2` — the union of the two Hodge cones — holds exactly on the plane
 `D16 = D34 = -D25` (any `D07`; overlap: `s = D07+D16+D25+D34 = 0`) and nowhere else at every witness;
-off it `det M = Q^2` with `Q = Q0 + Q2` one irreducible quartic, `Q2` an even quadratic in the
-parameters, absolutely irreducible on the declared slices except at `s = 0`, with no line factor. No
+off it `det M = Q^2` with `Q = Q0 + Q2` one irreducible quartic (over `QQ` in the parameters and `kappa`), `Q2` an even
+quadratic in the parameters, and not a product of two quadrics on the declared slices at `W1` except at `s = 0` (the
+line-factor test was not run; see the could-not list). No
 parameter point restores a single metric's cone at any non-locus witness; at the locus witnesses the
 single-quadric cone persists exactly on the plane. The flat cell with a parameter on is not the identity.
 The shears register with the parameters on and no parameter cancels either; the volumes enter the
@@ -123,12 +124,33 @@ TOTAL: PASS=33 FAIL=0
 
 ## Mutation results (26 declared; each must fail exactly its own family and exit nonzero)
 
-The 9-way parallel batch driver failed at launch (xargs: command line too long) and was only discovered at the 87-minute mark; three mutations were then run directly in parallel. **23 of the 26 declared mutations were NOT run within the budget** (each is a 154 s run; the supervisor's next step is `for m in $(python3 <runner> --list-mutations); do python3 <runner> --mutation $m; done`).
+The primary's 9-way parallel batch driver failed at launch (xargs: command line too long) and was only discovered at the 87-minute mark; the primary then ran three mutations directly in parallel (`break_union_locus`, `break_d07_congruence`, `drop_n5_fence`). The supervisor ran the remaining 23 after delivery (2026-09-05, one helper script per mutation, 4-way parallel; the first attempt at a 4-way census also died on the xargs command-line length after two mutations, so those two — `stale_main_authority`, `stale_parent_authority` — come from that first batch and the other 21 from the second). Every run is at the certified runner sha (`1d1e3ecc...`). **All 26 declared mutations were run; each fails exactly its own family, `TOTAL: PASS=32 FAIL=1`, exit 1; no run raised.**
 
-| mutation | target family | result | exit |
-| --- | :---: | --- | :---: |
-| `break_union_locus` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 |
-| `break_d07_congruence` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 |
-| `drop_n5_fence` | `I` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F G H I=FAIL` | 1 |
-
-All other 23 declared mutations: NOT RUN (budget).
+| mutation | target family | result | exit | run by |
+| --- | :---: | --- | :---: | --- |
+| `stale_main_authority` | `A` | `TOTAL: PASS=32 FAIL=1`, `GATES A=FAIL B C D E F G H I` | 1 | supervisor census 1 |
+| `stale_parent_authority` | `A` | `TOTAL: PASS=32 FAIL=1`, `GATES A=FAIL B C D E F G H I` | 1 | supervisor census 1 |
+| `claim_objects_registered` | `B` | `TOTAL: PASS=32 FAIL=1`, `GATES A B=FAIL C D E F G H I` | 1 | supervisor census 2 |
+| `claim_gravity_supplied` | `B` | `TOTAL: PASS=32 FAIL=1`, `GATES A B=FAIL C D E F G H I` | 1 | supervisor census 2 |
+| `claim_parameter_value_selected` | `B` | `TOTAL: PASS=32 FAIL=1`, `GATES A B=FAIL C D E F G H I` | 1 | supervisor census 2 |
+| `claim_readings_licensed` | `B` | `TOTAL: PASS=32 FAIL=1`, `GATES A B=FAIL C D E F G H I` | 1 | supervisor census 2 |
+| `break_parameter_carriers` | `C` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C=FAIL D E F G H I` | 1 | supervisor census 2 |
+| `break_degree_diagonal_reconciliation` | `C` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C=FAIL D E F G H I` | 1 | supervisor census 2 |
+| `break_overlap_folded_structure` | `C` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C=FAIL D E F G H I` | 1 | supervisor census 2 |
+| `break_flat_control` | `D` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D=FAIL E F G H I` | 1 | supervisor census 2 |
+| `break_flat_deformation` | `D` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D=FAIL E F G H I` | 1 | supervisor census 2 |
+| `break_bloch_bench_agreement` | `E` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E=FAIL F G H I` | 1 | supervisor census 2 |
+| `break_parity_mechanism` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 | supervisor census 2 |
+| `break_d07_congruence` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 | primary |
+| `break_union_locus` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 | primary |
+| `break_factorization_type` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 | supervisor census 2 |
+| `claim_single_metric_cone_restored` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 | supervisor census 2 |
+| `break_coincidence_fate` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 | supervisor census 2 |
+| `break_pencil_branches` | `F` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F=FAIL G H I` | 1 | supervisor census 2 |
+| `break_shear_registration` | `G` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F G=FAIL H I` | 1 | supervisor census 2 |
+| `claim_volume_blind_under_parameters` | `G` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F G=FAIL H I` | 1 | supervisor census 2 |
+| `break_scout_grade_fence` | `H` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F G H=FAIL I` | 1 | supervisor census 2 |
+| `claim_assembly_decided` | `H` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F G H=FAIL I` | 1 | supervisor census 2 |
+| `break_instance_scope` | `H` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F G H=FAIL I` | 1 | supervisor census 2 |
+| `drop_n5_fence` | `I` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F G H I=FAIL` | 1 | primary |
+| `break_float_absence` | `I` | `TOTAL: PASS=32 FAIL=1`, `GATES A B C D E F G H I=FAIL` | 1 | supervisor census 2 |

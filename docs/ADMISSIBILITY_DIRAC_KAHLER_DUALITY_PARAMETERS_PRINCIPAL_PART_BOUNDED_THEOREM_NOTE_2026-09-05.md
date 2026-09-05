@@ -206,8 +206,10 @@ M_oo  =  [[N, 0], [0, 0]],       N = [[0, (D16 + D25) kt, (D34 - D16) kx],
 **Why `D07` is different.** Each parameter `p` on the pair `(e, o)` contributes
 `p (E_o D[e, :] + E_e D[o, :] + transposes)`: two borderings, of corner `o` by
 row `e` of `D` and of corner `e` by row `o` of `D`. For `(0, 7)` the first
-bordering vanishes because **row 0 of `D` is zero** — nothing is raised out of
-the empty corner — so `M_oo` gets nothing from `D07`; and the second bordering
+bordering vanishes because **row 0 of `D` is zero** — nothing is raised *into*
+the empty corner, the 0-form being the bottom of the grading (column 0, the
+raising out of it, is not zero) — so `M_oo` gets nothing from `D07`; and the
+second bordering
 is `D07 · (row 7 of D)`, which is already present in `M` as row and column 7
 scaled by `D3` (`M[7, ·] = D3 D[7, ·]`, `M[0, 7] = M[7, 7] = 0`). For the three
 grade 1–2 pairs both borderings are nonzero (`D[1,·], D[2,·], D[4,·]` and

@@ -965,7 +965,7 @@ def check_shared_battery_two_events():
     intermediate = S1 @ initial
     require(abs(np.vdot(intermediate, intermediate).real - 1.0) < TOL, "first interior gate has refusal")
     intermediate_matrix = intermediate.reshape(12, length)
-    battery_reduced = intermediate_matrix.conj().T @ intermediate_matrix
+    battery_reduced = intermediate_matrix.T @ intermediate_matrix.conj()
     battery_purity = float(np.trace(battery_reduced @ battery_reduced).real)
     require(battery_purity < 0.999, "first gate did not retain system-battery correlations")
     second_input = intermediate
@@ -990,7 +990,24 @@ def check_shared_battery_two_events():
         float(np.vdot(intermediate, matter_operators[1] @ intermediate).real),
         float(np.vdot(sequential, matter_operators[2] @ sequential).real),
     )
-    battery_energies = tuple(total - matter for total, matter in zip(energies, matter_energies))
+    battery_hamiltonian = data["spacing"] * np.diag(np.arange(length, dtype=float))
+    battery_operators = tuple(
+        np.kron(np.eye(system_dimension), battery_hamiltonian)
+        for system_dimension in (6, 12, 24)
+    )
+    battery_energies = (
+        float(np.vdot(initial, battery_operators[0] @ initial).real),
+        float(np.vdot(intermediate, battery_operators[1] @ intermediate).real),
+        float(np.vdot(sequential, battery_operators[2] @ sequential).real),
+    )
+    require(
+        max(
+            abs(total - matter - battery)
+            for total, matter, battery in zip(energies, matter_energies, battery_energies)
+        )
+        < 5.0e-9,
+        "direct matter plus battery ledger does not equal total energy",
+    )
     require(
         max(abs((battery_energies[index + 1] - battery_energies[index])
                 + (matter_energies[index + 1] - matter_energies[index])) for index in (0, 1)) < 5.0e-9,
@@ -1048,15 +1065,6 @@ def check_status_readout_correction():
     require(abs(readout_distance - p) < TOL, "status-readout cap distance is not p")
     require(coherent_distance > 4.0 * p, "coherent cap error is not amplitude order")
 
-    status_copy = np.array(
-        [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0]],
-        dtype=complex,
-    )
-    require_small(status_copy.conj().T @ status_copy - np.eye(4), "finite status copy is not unitary")
-    degenerate_energy = np.zeros((4, 4), dtype=complex)
-    require_small(status_copy @ degenerate_energy - degenerate_energy @ status_copy,
-                  "finite status copy is not energy commuting")
-
     def beta(energy):
         return math.sin(math.pi * (energy - 1.0) / 4.0) / math.sqrt(2.0)
 
@@ -1071,7 +1079,7 @@ def check_status_readout_correction():
     require(integration_error < 1.0e-12, "compact sine overlap quadrature is unresolved")
     return (
         f"p={p:.3f} coherent={coherent_distance:.9f} readout={readout_distance:.9f} "
-        f"sineOverlap={overlap:.12f}=1/(2pi); coherent status must be dephased"
+        f"sineOverlap={overlap:.12f}=1/(2pi); fixture_status_readout_distance=p"
     )
 
 

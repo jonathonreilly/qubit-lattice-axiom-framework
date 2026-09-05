@@ -9,3 +9,5 @@ Selection: #7974's actual local-star/gravity and exact-sea interface motivated t
 #7976 is the U(1)-Maxwell landing-core packet and remains in the other worker's photon lane. #7977 is a finite supplied role-alphabet readability/fibre result; it has no quench Hamiltonian, excitation or energy law. Its growing-torus tables show a shrinking total blind count and a persistent reciprocal-obstruction core; this intake does not repeat its broader blind-set wording. Neither new PR displaces the repeated Record/matter/energy priority.
 
 The immutable full corpus and identity receipts live in the campaign assessment directory. They are provenance for this selection record, not required scientific inputs to either runner. The source hash permits matching the dated local inventory; no generator that merely repeats these counts is presented as a science test.
+
+A final refresh and terminal recapture at 2026-09-05 00:05 UTC were byte-identical to that 229-row inventory, with no new, changed or closed PR and all 229 receipts still matching. No duplicate reading receipts were created for unchanged text.

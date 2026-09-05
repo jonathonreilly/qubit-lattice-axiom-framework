@@ -4,4 +4,4 @@ The landing set contains the self-contained science note `docs/LOCAL_RECORD_QUEN
 
 This pack carries the target, import/proof search history, conformance and mutation record, and dated all-open-PR head inventory. Only the deterministically regenerated citation-graph manifest may accompany it from generated audit data. The helper registry mapping is a reviewed hard landing condition, not an author-branch registry edit.
 
-Source and cache review is complete. Pipeline, strict lint, changed-evidence, helper-tree, links, vocabulary, compilation and final delta checks are recorded in REVIEW_HISTORY.md when actually completed.
+Source and cache review and the required publication gates are complete. Pipeline, strict lint, changed-evidence, helper-tree, links, vocabulary, compilation and final delta checks passed; their actual validation scope is recorded in REVIEW_HISTORY.md.

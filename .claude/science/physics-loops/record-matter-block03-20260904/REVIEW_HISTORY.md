@@ -26,3 +26,17 @@ The new mathematical conjunction is the arbitrary-deletion energy identity, sing
 10. Propose/ratify: independent audit remains required; no verdict, ledger, registry or effective grade authored.
 11. Facts: current results read from final caches. All 229 matching intake receipts certify declared reading only; pinned head inventory and source snapshot hash are preserved.
 12. Pre-review execution gates: pending below. Unrun pipeline/helper/link checks are not passes.
+
+## Completed publication validation
+
+Science commit `84161a501e` passed the full pipeline (checkpoint `100f18c102e0`, exit 0), then strict lint (exit 0, no errors), and changed-science evidence readiness (exit 0, one affected row ready). The logs are `block03-pipeline-frozen.txt`, `block03-strictlint.txt`, and `block03-changed-evidence.json` in the campaign assessment. They are validation provenance, not runner inputs.
+
+The first helper-tree attempt exposed a real metadata defect: the proposed short claim identifier differed from the citation graph's path-derived identifier. The process exited zero but its empty helper_runner_paths was not accepted as completeness. Both the source-note declaration and hard mapping were corrected to `local_record_quench_finite_energy_and_ground_overlap_bounded_theorem_note_2026-09-04`, followed by the frozen full validation above. No theorem or runner byte changed in that repair.
+
+The disposable tree contains current main plus the complete source delta and exactly the corrected literal helper mapping. Fresh graph/seed/readiness checks show forensic_evidence_ready true, both runner source paths in changed_surfaces, and the independent checker in helper_runner_paths. Root parsed and asserted those fields directly. The literal claim-scoped registry is excluded from governed extraction-policy bytes at this base; no registry or extraction-policy edit ships here.
+
+Conformance sections 7 and 8 are now complete at that reviewed hard landing condition. The graph delta is exactly the intended new zero-dependency note: 4760 to 4761 nodes, with 11859 edges unchanged. The generated manifest was read and staged before the successful pipeline. Both local Markdown links resolve to tracked regular files. No other generated audit output ships.
+
+Conformance section 12 is now complete: vocabulary zero findings, both Python sources compile, all required commands above exit zero, and the 23-file committed delta has no whitespace errors. Root restored 2257 generated tracked paths to this branch's own HEAD and removed exactly seven newly generated ledger shards. This final report changes only pack bookkeeping and receives vocabulary and committed-delta checks before push. The scientific note, sources and caches stay at the validated bytes.
+
+Final all-open intake at 2026-09-05 00:05 UTC remains byte-identical with 229 matched declared reading receipts and no new, changed or closed PR. This count is reading provenance and not an audit grade. The completed root and separate-context reviews support only the conditional scope stated in this packet.

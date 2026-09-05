@@ -4,7 +4,7 @@ This block supplies a local occupation-quench energy theorem and a positive sing
 
 The primary and checker were built in separate contexts of the same model family. Root reviewed every source line and the central proof; exact Fock and scalar machinery differs from the primary eigensea/conditioning and lattice construction. Both machine caches are current: 14 and 7 PASS, zero FAIL. All thirteen substantive corrupted scratch copies exited nonzero. No independent audit verdict is claimed.
 
-The source note records the exact helper registry mapping as a hard landing condition. Verify that integration includes both sources/caches and the current-tree citation-graph manifest. Other generated audit outputs must not land. Publication validation remains to be recorded in REVIEW_HISTORY.md before PR creation.
+The source note records the exact helper registry mapping as a hard landing condition. Verify that integration includes both sources/caches and the current-tree citation-graph manifest. Other generated audit outputs must not land. Full pipeline, subsequent strict lint, changed-evidence, the exact helper mapping in a disposable tree, links, vocabulary, compilation and committed-delta whitespace checks passed. REVIEW_HISTORY.md records the corrected claim identity and final validation scope.
 
 The next user-prioritized target is repeated local Record formation with continuing matter and an explicit apparatus energy ledger. The present one-event theorem removes a mathematical reducing-set restriction; it does not derive the supplied Hamiltonian, Born prescription, preparation, rate or switch. Do not infer many-event overlap, thermal stability or apparatus energy closure from it.
 

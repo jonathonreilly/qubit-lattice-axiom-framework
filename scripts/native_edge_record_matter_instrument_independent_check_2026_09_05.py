@@ -35,7 +35,7 @@ AUDIT_TIMEOUT_SEC = 180
 DENSE_MATRIX_AXIS_LIMIT = 600
 ATOL = 3.0e-10
 RANK_TOL = 2.0e-9
-SOURCE_INTEGRITY_SHA256 = "15dd499a7af8517a75d356aac880ee1da1b74e58f77fcd1839888e27f7f057b1"
+SOURCE_INTEGRITY_SHA256 = "f89d9f28c8955caaccb20718757efdcee7c2ae3b03304a6afeee4fd605dd6608"
 EXPECTED_CHECK_NAMES = (
     "direct_dictionary",
     "nonbridge_instrument",
@@ -266,11 +266,10 @@ def normalized(vector: np.ndarray) -> np.ndarray:
 
 def fixed_number_vector(fock: FockCarrier, particle_number: int) -> np.ndarray:
     vector = np.zeros(len(fock.masks), dtype=complex)
+    rng = np.random.default_rng(20260905 + particle_number)
     for position, mask in enumerate(fock.masks):
         if mask.bit_count() == particle_number:
-            real_part = 1.0 + 0.17 * (position + 1)
-            imaginary_part = 0.11 * ((position + 2) ** 2 % 7)
-            vector[position] = real_part + 1j * imaginary_part
+            vector[position] = rng.normal() + 1j * rng.normal()
     return normalized(vector)
 
 
@@ -321,12 +320,18 @@ def direct_dictionary_check() -> str:
     square_isometry = code_isometry(square, fock, (square_cycle,))
     path_isometry = code_isometry(path, fock, ())
     for graph, isometry in ((square, square_isometry), (path, path_isometry)):
+        global_parity = np.eye(graph.dimension, dtype=complex)
         for vertex in range(4):
+            physical_b = graph.vertex_parity(vertex)
+            close(physical_b, physical_b.conj().T, f"B Hermiticity vertex={vertex}")
+            close(physical_b @ physical_b, np.eye(graph.dimension), f"B square vertex={vertex}")
+            global_parity = global_parity @ physical_b
             close(
-                graph.vertex_parity(vertex) @ isometry,
+                physical_b @ isometry,
                 isometry @ fock.vertex_parities[vertex],
                 f"B dictionary graph_edges={graph.edge_count} vertex={vertex}",
             )
+        close(global_parity, np.eye(graph.dimension), "unaugmented carrier has even global parity")
         for edge in graph.edges:
             physical_a = graph.edge_generator(*edge)
             physical_t = graph.hopping_generator(edge)
@@ -336,6 +341,9 @@ def direct_dictionary_check() -> str:
                 * fock_a
                 @ (fock.vertex_parities[edge[0]] - fock.vertex_parities[edge[1]])
             )
+            close(physical_a, physical_a.conj().T, f"A Hermiticity edge={edge}")
+            close(physical_a @ physical_a, np.eye(graph.dimension), f"A square edge={edge}")
+            close(physical_t, physical_t.conj().T, f"T Hermiticity edge={edge}")
             close(physical_a @ isometry, isometry @ fock_a, f"A dictionary edge={edge}")
             close(fock_t_from_dictionary, fock.hoppings[edge], f"direct CAR hopping edge={edge}")
             close(physical_t @ isometry, isometry @ fock.hoppings[edge], f"T dictionary edge={edge}")
@@ -385,8 +393,12 @@ def nonbridge_instrument_check() -> str:
     ]
     require(commutant_nullity(fock_generators) == 1, "nonbridge surviving algebra commutant")
     branch_states = []
+    branch_projectors = []
     for sign in (-1, 1):
         projector = projector_from_involution(record_z, sign)
+        close(projector, projector.conj().T, f"native Q Hermiticity sign={sign}")
+        close(projector @ projector, projector, f"native Q idempotence sign={sign}")
+        branch_projectors.append(projector)
         branch_map = math.sqrt(2.0) * projector @ isometry
         close(branch_map.conj().T @ branch_map, np.eye(8), f"nonbridge J_{sign} isometry")
         require(matrix_rank(projector) == 8, f"updated nonbridge code rank sign={sign}")
@@ -407,6 +419,8 @@ def nonbridge_instrument_check() -> str:
         branch_state = branch_map @ state
         close(record_z @ branch_state, sign * branch_state, f"sharp nonbridge Record {sign}")
         branch_states.append(branch_state)
+    close(branch_projectors[0] + branch_projectors[1], np.eye(16), "native Q normalization")
+    close(branch_projectors[0] @ branch_projectors[1], np.zeros((16, 16)), "native Q orthogonality")
     require(abs(np.vdot(branch_states[0], branch_states[1])) <= ATOL, "raw branches not orthogonal")
     return "fair physical Z branches and faithful full surviving CAR algebra verified"
 

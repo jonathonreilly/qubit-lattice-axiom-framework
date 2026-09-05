@@ -347,3 +347,186 @@ the four sign lines `D16 = ±D34, D25 = ±D34`; it is the **star line at exactly
 covariance names Block 214's plane or a sign image of it is a property of the
 sign cell, not of the class; the census above is at Block 211's representatives,
 and Block 214's union-locus statements are at all-plus cells (`W1`, `L±`).
+
+---
+
+## N4 — THE OVERLAP SUM AND THE CONTROLS
+
+### The overlap fold (`F-1`, `F-2`)
+
+Block 214's `F-3` is re-measured: the overlap `H0` depends on the four
+parameters only through `s = D07 + D16 + D25 + D34`, and its parity (even–odd)
+block is `(s/4) P₁₁₁`, so the fold preserves grade parity **iff `s = 0`**. On
+`P₁₁₁` the expected commutation had to be derived rather than assumed:
+
+```text
+P111 = |*|  (the star with its signs stripped);  P111 commutes with the UNSIGNED corner permutation of every R (trivially),
+but with the lane's signed lift L(R) only for 8 of the 24:  L(R) P111 L(R)^-1 = E_R P111,  E_R = diag(sigma_c sigma_{R^-1 c});
+the STAR commutes with all 24.
+```
+
+So the sum term is star-equivariant only up to the sign twist, and the census on
+the overlap fold (same machinery, unknown `s`) gives:
+
+- **Twisted**: in every gauge class and for every subgroup class, **`s` is free**
+  (no component forces `s = 0`); in the two mixed classes the `C3`-containing
+  subgroups force a moduli condition (`g0 = 0` or `g1 = 0`) on some components
+  but never `s`.
+- **Strict**: `s = 0` is forced for every class except `1`, `C2_face`,
+  `V4_faces`, and always together with a relation between the shears —
+  `g0 v0 v1 + g1 = 0` in the all-plus class (the fold averages the two offsets'
+  shears into one entry, `−(v1 g0 ± g1/v0)/4`, which a sign-flipping rotation
+  can preserve strictly only if it vanishes), with its sign variants and
+  `g0 = g1 = 0` in the other classes.
+
+> **NO SUBGROUP's TWISTED COVARIANCE FORCES `s = 0`.** `s = 0` is exactly the
+> parity-preserving fold, and strict covariance reaches it only through a shear
+> relation. Both tables are declared literals (`F-2`, mutation
+> `break_overlap_locus`; `F-1`, mutation `break_p111_commutation`).
+
+### Positivity does not select the plane (`G-1`)
+
+Block 214's inherited witness `W1 + D16 = 1/4` (moduli `(v0, g0, v1, g1) =
+(15/16, 1/4, 1, 1/4)`, all-plus) is **off** the plane (`D16 − D34 = 1/4 ≠ 0`) and
+positive definite by exact leading minors
+`(15/16, 15/16, 225/256, 15/16, 25/32, 25/32, 1465/2304, 1465/2304)`.
+
+### Onsite parity does not select the plane (`G-2`) — a lemma
+
+The folded onsite `H0` **is** the cell, so its even–odd block carries exactly
+the four parameter entries `D07, D16, D25, D34` and nothing else: grade parity is
+preserved **iff all four vanish**. Parity selects the origin (the
+degree-diagonal representative), never the plane. Block 214's `F-1` restated as
+a selector's failure.
+
+### The flat cell (`G-3`)
+
+At `g0 = g1 = 0`, `v0 = v1 = 1` the cell is the identity plus the parameter
+entries, every sign vector preserves the degree blocks, and:
+
+```text
+strict:   O, T, S3, C3 -> the star line alone;  C2_edge, C4, V4_face_edges, D4 -> D16 = -D25;  1, C2_face, V4_faces -> everything
+twisted:  O, T, S3, C3 -> the four sign lines D16 = +-D34, D25 = +-D34 (the star line among them);
+          C2_edge, C4, V4_face_edges, D4 -> D16 = +-D25;  1, C2_face, V4_faces -> everything
+```
+
+**This is the dichotomy stated positively.** The star line is what strict
+`O`-covariance selects on the **flat** cell (Schur: `Hom_O(Λ¹, Λ²)` is one
+line); on the curved family strict covariance selects it only by flattening,
+and twisted covariance selects a different line.
+
+---
+
+## N4g — THE INTERPRETATIONS FENCE (required section)
+
+### The words, and what each of them actually names here
+
+- **COVARIANCE** names the identity `(E_R R) H (E_R R)^T = H`. Not an invariance
+  of a law.
+- **LOCUS** names a union of linear subspaces with forced moduli conditions.
+- **STAR** names `* e_c = σ_c e_{c̄}` in the lane's wedge. Not a metric duality.
+- **GAUGE** names Block 211's congruence `E D E`. Not a gauge field.
+- **PLANE** names Block 214's `D16 = D34 = −D25`. Not preferred here.
+- **SHEAR**, **VOLUME** name Block 211's moduli `g0, g1`, `v0, v1`. Not strain,
+  not geometry.
+
+### The six scope qualifications, carried as content — each a gated constant, a fence and a mutation
+
+1. **ALL OF IT IS SCOUT-GRADE FINITE EXACT LINEAR ALGEBRA ON ONE CELL FORM, NOT
+   A SPACETIME AND NOT A DYNAMICS** — Block 211's fence, inherited verbatim.
+   Gate `H-1`, mutation `break_scout_grade_fence`.
+2. **THE THEOREM IS A CONDITIONAL.** The antecedent — that the cell form
+   inherits the axiom's covariance — is reading `R1`, asserted nowhere. Gate
+   `B-3`, mutation `claim_covariance_inherited`.
+3. **NO SUBGROUP, NO ASSEMBLY, NO PARAMETER VALUE IS SELECTED.** Gate `B-4`,
+   mutations `claim_subgroup_selected`, `claim_assembly_decided`.
+4. **THE INSTANCE SCOPE, ENUMERATED.** One family at symbolic moduli on its
+   ties; the four class representatives (all 64 cells for `O` only); one
+   covariance notion in two strengths with Block 211's 64 sign vectors as the
+   only twist; the 24 proper rotations and no improper element, translation or
+   continuum rotation; the loci linear at symbolic moduli with no cone, dispersion
+   or bench computed here; the union locus on the twisted lines at cells other
+   than Block 214's witnesses NOT computed. Gate `H-2`, mutation
+   `break_instance_scope`.
+5. **THE LOCI AT A FIXED CELL ARE NOT CONJUGATION-INVARIANT** except for the
+   normal subgroups; the tables quote representatives and the distinct-locus
+   counts over every member are gated (`E-4`).
+6. **THE READINGS ARE READINGS**, six of them, none licensed. Gate `B-5`.
+
+### The narrowest true statement, written out so it cannot be paraphrased upward
+
+> On Block 211's six-face-compatible family at symbolic moduli on its ties, at
+> the four class representatives: the lane's `D(κ)` is the ordered-monomial
+> wedge; the lift `L(R)` built through it is a representation of the 24 proper
+> rotations intertwining `D(κ)`, with `±L(R)` the only monomial intertwiners;
+> the star from that wedge has pair signs `(+, +, −, +)`, squares to `+1`, and
+> satisfies `* D = ε_k Dᵀ *` with `ε = (+, −, +)`; the `1 ↔ 2` cross block is
+> `λ *` exactly on `D16 = D34 = −D25` (Block 214's plane) with `D07` the `0 ↔ 3`
+> multiple, and the onsite `M_oo`'s coefficient ideal is that line; twisted
+> covariance leaves both shears alive under every rotation, and under `C3`,
+> `S3`, `T`, `O` forces one shear-alive line — `D16 = D25 = D34` at the all-plus
+> and `(−1,−1)` representatives, `D16 = D25 = −D34` at the mixed ones — meeting
+> the star line only at the origin, the star line occurring only with a shear
+> killed; strict covariance forces the star line with `g1 = 0` (`C3`, all-plus),
+> `g0 = 0` (`S3`, all-plus) and `g0 = g1 = 0` (`T`, `O`, every class); `D07` is
+> free everywhere; under `O` the shear-alive twisted line is one sign line at
+> every one of the 64 cells and the star line at exactly 16; the overlap fold
+> sees `s` only, `P₁₁₁` commutes with 8 of 24 lifts and the star with all 24,
+> twisted covariance never forces `s = 0` and strict covariance forces it only
+> with a shear relation; `W1 + D16 = 1/4` is positive definite off the plane; the
+> onsite parity block is exactly the four parameters; the flat cell's strict `O`
+> locus is the star line and its twisted `O` locus the four sign lines.
+
+### What IS established, stated positively so the fence is not mistaken for a retreat
+
+**The star lemma is symbolic in everything** — the plane has a name, and the
+name explains Block 214's `F-1`/`F-4` mechanism. **The census is exact and
+complete at the representatives** — every subgroup, both strengths, every class,
+the shears' fate first. **The conditional is closed**: whoever imposes twisted
+`O`-covariance on the curved family gets a sign line that is not the plane at
+any representative; whoever imposes strict `O`-covariance gets the plane and the
+flat cell together.
+
+---
+
+## CLAIM REGISTER — formulas, and the family that gates each
+
+| # | claim | value | gate |
+| :---: | --- | --- | :---: |
+| 1 | the 24 rotations, the lift as a representation | orders `1/2/3/4` in counts `1/9/8/6` | `C-1` |
+| 2 | the sign rule | ordered-monomial wedge; `±L(R)` the only monomial intertwiners | `C-2` |
+| 3 | intertwining | `L D(κ) L⁻¹ = D(Rκ)` | `C-3` |
+| 4 | subgroups and classes | 30 with certificate; 11 classes as tabled | `C-4` |
+| 5 | the family and the gauge | `= cell_with_parameters("W1")`; `E D E` in the field | `C-5` |
+| 6 | the star | signs `(+,+,−,+,+,−,+,+)`, `** = 1`, `ε = (+,−,+)`, commutes with all 24 | `D-1` |
+| 7 | the star line | `("D16 - D34", "D25 + D34")` = Block 214's `PLANE`; `M_oo` ideal | `D-2` |
+| 8 | shears' fate | twisted: alive under all 24; strict: identity + one edge half-turn | `E-1` |
+| 9 | twisted census | the declared table; `O` all-plus alive line = the diagonal | `E-2` |
+| 10 | strict census | the declared table; `O` = star line with `g0 = g1 = 0`; `C3` = star line with `g1 = 0` | `E-3` |
+| 11 | every member | distinct-locus counts; normal subgroups single | `E-4` |
+| 12 | `D07` | free under everything | `E-5` |
+| 13 | `P111` | unsigned star; 8 of 24 lifts; the star all 24 | `F-1` |
+| 14 | overlap | sum only; parity `(s/4) P111`; `s` never forced twisted | `F-2` |
+| 15 | positivity | minors as displayed, off the plane | `G-1` |
+| 16 | onsite parity | exactly the four parameters | `G-2` |
+| 17 | flat cell and the 64 cells | declared tables; star line at 16 of 64 | `G-3` |
+
+---
+
+## Imports
+
+- **Block 214** (`scripts/admissibility_dirac_kahler_duality_parameters_principal_part_2026_09_05.py`,
+  imported read-only, content-bound by blob at `1dc2ae2557`): `raising_matrix`,
+  `cell_with_parameters`, `principal_part`, `hodge_complement_permutation`,
+  `formal_cell`, `PLANE`.
+- **Block 213** through Block 214: `eta`/`lane_rules`/`raising_rules`/
+  `first_order_matrix` (through `raising_matrix`), `formal_family`, `even_odd`,
+  `residual_count`, `KT, KX, KY`.
+- **Block 211** through Block 214: `REPRESENTATIVES`, `flipped`,
+  `GAUGE_FACE_ORDER`, `face_system`/`solve_pinned`/`branch_moduli` (through
+  `cell_with_parameters`); **Block 209**: `CORNERS`, `DEGREE_INDICES`,
+  `CORNER_DEGREE`.
+- **Block 201** (`scripts/admissibility_dirac_kahler_covariant_rule_identification_2026_08_26.py`):
+  `signed_permutations()` only.
+- **Axioms and registry**: read in full; the covariance clause quoted verbatim
+  and gated against the file; no axiom or primitive used as content.

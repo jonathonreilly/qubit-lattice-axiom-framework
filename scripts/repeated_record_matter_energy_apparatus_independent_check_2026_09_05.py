@@ -1047,6 +1047,173 @@ def status_dephase(density):
     return np.diag(np.diag(density))
 
 
+def check_stationary_input_statistics():
+    data = pi_flux_stages()
+    length = BATTERY_TOP + 1
+    S1 = capped_lift(data["groups1"], length)
+    S2 = capped_lift(data["groups2"], length)
+    S_direct = capped_lift(data["groups_composite"], length)
+    H_initial = data["H0"]
+    energy_scale = 2.0 * data["spacing"]
+    ground_projector = (
+        H_initial @ H_initial - energy_scale * H_initial
+    ) / (2.0 * energy_scale**2)
+    zero_projector = np.eye(6) - H_initial @ H_initial / energy_scale**2
+    require_small(ground_projector @ ground_projector - ground_projector,
+                  "polynomial ground projector is not idempotent")
+    require_small(zero_projector @ zero_projector - zero_projector,
+                  "polynomial zero-energy projector is not idempotent")
+    require(round(np.trace(ground_projector).real) == 1, "ground projector rank changed")
+    require(round(np.trace(zero_projector).real) == 4, "zero-energy projector rank changed")
+
+    basis_vectors = np.eye(6, dtype=complex)
+    ground_state = ground_projector @ basis_vectors[:, 0]
+    ground_state /= np.linalg.norm(ground_state)
+    zero_state = zero_projector @ basis_vectors[:, 1]
+    zero_state /= np.linalg.norm(zero_state)
+    stationary_inputs = (("ground", ground_state), ("zero", zero_state))
+    packet = discrete_sine(length, 3)
+    packet_overlap = float(np.vdot(packet[1:], packet[:-1]).real)
+    require(0.6 < packet_overlap < 0.8, "stationary-input packet lacks finite translation sensitivity")
+
+    first_energy_projectors = spectral_projectors(
+        data["H1_records"],
+        (-1, 0, 1),
+        data["spacing"],
+    )
+    first_record_projectors = tuple(
+        np.kron(
+            np.diag([float(outcome == 0), float(outcome == 1)]),
+            np.eye(6),
+        )
+        for outcome in (0, 1)
+    )
+    final_history_projectors = {
+        (old_outcome, new_outcome): np.kron(
+            np.diag([float(old_outcome == 0), float(old_outcome == 1)]),
+            np.kron(
+                np.diag([float(new_outcome == 0), float(new_outcome == 1)]),
+                np.eye(6),
+            ),
+        )
+        for old_outcome in (0, 1)
+        for new_outcome in (0, 1)
+    }
+
+    maximum_joint_error = 0.0
+    maximum_conditional_excess_error = 0.0
+    maximum_history_error = 0.0
+    maximum_final_state_distance = 0.0
+    first_state_distances = {}
+    zero_noncommuting_residual = 0.0
+    for label, matter_state in stationary_inputs:
+        initial_density = np.outer(matter_state, matter_state.conj())
+        require_small(H_initial @ initial_density - initial_density @ H_initial,
+                      f"{label} input is not energy stationary")
+        initial_joint = np.kron(matter_state, packet)
+        actual_first_joint = S1 @ initial_joint
+        require(abs(np.vdot(actual_first_joint, actual_first_joint).real - 1.0) < TOL,
+                f"{label} first stationary lift reaches a battery cap")
+        actual_first_amplitudes = actual_first_joint.reshape(12, length)
+        actual_first_density = partial_trace_battery(actual_first_amplitudes)
+        ideal_first_state = data["W1"] @ matter_state
+        ideal_first_density = np.outer(ideal_first_state, ideal_first_state.conj())
+        first_difference = actual_first_density - ideal_first_density
+        first_state_distances[label] = trace_distance(actual_first_density, ideal_first_density)
+
+        joint_probabilities = {"actual": {}, "ideal": {}}
+        for outcome, record_projector in enumerate(first_record_projectors):
+            require_small(
+                record_projector @ data["H1_records"]
+                - data["H1_records"] @ record_projector,
+                "first Record projector does not commute with output energy",
+            )
+            for energy_label, energy_projector in first_energy_projectors.items():
+                effect = record_projector @ energy_projector
+                require_small(effect @ data["H1_records"] - data["H1_records"] @ effect,
+                              "joint first Record-energy effect is not stationary")
+                actual_probability = trace_real(actual_first_density, effect)
+                ideal_probability = trace_real(ideal_first_density, effect)
+                joint_probabilities["actual"][(outcome, energy_label)] = actual_probability
+                joint_probabilities["ideal"][(outcome, energy_label)] = ideal_probability
+                maximum_joint_error = max(
+                    maximum_joint_error,
+                    abs(actual_probability - ideal_probability),
+                )
+        for outcome in (0, 1):
+            actual_probability = sum(
+                joint_probabilities["actual"][(outcome, energy_label)]
+                for energy_label in (-1, 0, 1)
+            )
+            ideal_probability = sum(
+                joint_probabilities["ideal"][(outcome, energy_label)]
+                for energy_label in (-1, 0, 1)
+            )
+            require(actual_probability > 0.1 and ideal_probability > 0.1,
+                    f"{label} stationary branch is probability zero")
+            actual_excess = sum(
+                data["spacing"] * (energy_label + 1)
+                * joint_probabilities["actual"][(outcome, energy_label)]
+                for energy_label in (-1, 0, 1)
+            ) / actual_probability
+            ideal_excess = sum(
+                data["spacing"] * (energy_label + 1)
+                * joint_probabilities["ideal"][(outcome, energy_label)]
+                for energy_label in (-1, 0, 1)
+            ) / ideal_probability
+            maximum_conditional_excess_error = max(
+                maximum_conditional_excess_error,
+                abs(actual_excess - ideal_excess),
+            )
+
+        actual_final_joint = S2 @ actual_first_joint
+        direct_final_joint = S_direct @ initial_joint
+        require_small(actual_final_joint - direct_final_joint,
+                      f"{label} stationary history did not reuse the correlated battery")
+        require(abs(np.vdot(actual_final_joint, actual_final_joint).real - 1.0) < TOL,
+                f"{label} complete stationary lift reaches a battery cap")
+        actual_final_density = partial_trace_battery(actual_final_joint.reshape(24, length))
+        ideal_final_state = data["W_composite"] @ matter_state
+        ideal_final_density = np.outer(ideal_final_state, ideal_final_state.conj())
+        maximum_final_state_distance = max(
+            maximum_final_state_distance,
+            trace_distance(actual_final_density, ideal_final_density),
+        )
+        for history_projector in final_history_projectors.values():
+            actual_probability = trace_real(actual_final_density, history_projector)
+            ideal_probability = trace_real(ideal_final_density, history_projector)
+            maximum_history_error = max(
+                maximum_history_error,
+                abs(actual_probability - ideal_probability),
+            )
+
+        if label == "zero":
+            zero_noncommuting_residual = frobenius(
+                data["H1_records"] @ first_difference
+                - first_difference @ data["H1_records"]
+            )
+
+    require(maximum_joint_error < TOL,
+            "stationary first Record-energy probabilities differ from ideal")
+    require(maximum_conditional_excess_error < TOL,
+            "stationary conditional ground excess differs from ideal")
+    require(maximum_history_error < TOL,
+            "stationary complete Record-history probabilities differ from ideal")
+    require(first_state_distances["ground"] < TOL,
+            "ground control unexpectedly has first-stage energy coherence")
+    require(first_state_distances["zero"] > 0.3 and zero_noncommuting_residual > 1.0,
+            "stationary zero-energy input lacks a noncommuting state difference")
+    require(maximum_final_state_distance < TOL,
+            "zero final Hamiltonian did not close the stationary fixture state comparison")
+    return (
+        f"betaShiftOverlap={packet_overlap:.9f} "
+        f"jointErr={maximum_joint_error:.2e} condExcessErr={maximum_conditional_excess_error:.2e} "
+        f"historyErr={maximum_history_error:.2e} "
+        f"firstDistance(ground={first_state_distances['ground']:.2e},zero={first_state_distances['zero']:.9f}) "
+        f"zeroNoncomm={zero_noncommuting_residual:.9f} finalStateErr={maximum_final_state_distance:.2e}"
+    )
+
+
 def check_status_readout_correction():
     p = 0.04
     physical = np.zeros((3, 2), dtype=complex)
@@ -1136,6 +1303,7 @@ CHECKS = (
     ("uniform_fibre_identities", check_uniform_fibre_operator_identities),
     ("local_defects", check_local_defects),
     ("shared_battery_two_events", check_shared_battery_two_events),
+    ("stationary_input_statistics", check_stationary_input_statistics),
     ("status_readout_correction", check_status_readout_correction),
 )
 

@@ -84,3 +84,62 @@ G4 the germ from the Record overlap law — object: #7886/#7887's kappa > 0;
    (partially covered).
 Block 01 is meta (landing core + ledger); the value gate V1-V5 is applied to
 block 02's candidate before any science PR.
+
+## Block 03 prior-art sweep — origin/main @ e249016f759f224d9b429932cd0d1db4d452dc1a (fetched 2026-09-05, before any block-03 science)
+Commands (all run from the block-03 worktree):
+  git fetch origin main; git rev-parse origin/main
+  git grep -n -iE "<pattern>" origin/main -- 'docs/*.md'   for each of the statement patterns (the six required ones first):
+    gauss.*(support|forcing|constraint).*(preserv|invariant|frozen|collapse) | vertex.*payload |
+    longitudinal.*(branch|mode).*(kill|remove|constraint) | constraint surface.*(flow|preserv) | cube.*payload |
+    harmonic.*constant.*(torus|connected) | gauss.*(row|law|sector).*(invariant|preserv|flow) |
+    (maximal|largest).*invariant.*(subspace|subset|sector) | unobservable | (extra|internal).*coin | hidden.*time.*payload |
+    two.component.*(law|payload|field) | background charge | support forcing | support.*clause.*(gauss|constraint|ice) |
+    ice rule | constant of motion.*(vertex|scalar|payload|frozen) | frozen.*(payload|scalar|vertex|cube) |
+    invariant.*(surface|manifold|subspace).*(dynamics|flow|law|generator) |
+    constraint.*(commut|preserv|invariant).*(dynamics|hamiltonian|generator|evolution) |
+    (graph|vertex|cube).*laplacian.*(kernel|constant|connected) | longitudinal | gauss.*(sector|constraint).*(dynamic|evolution|flow|commut) |
+    coin.*(payload|component|index|degree) | extended payload|enlarged payload|payload class | first.order.*enlarged|second.order.*(hidden|auxiliary|enlarged)
+  git ls-tree -r --name-only origin/main -- docs/ | grep -iE "GAUSS|CONSTRAINT_SURFACE|LONGITUDINAL|PAYLOAD|COIN|HIDDEN_TIME|INVARIANT_SUBSPACE"
+Zero hits on origin/main docs for: "gauss ... (support|forcing|constraint) ... (preserv|invariant|frozen|collapse)", "vertex ... payload",
+"longitudinal ... (branch|mode) ... (kill|remove|constraint)", "cube ... payload", "harmonic ... constant ... (torus|connected)",
+"background charge", "support forcing", "hidden ... time ... payload", "constant of motion ... (vertex|scalar|payload|frozen)",
+"gauss ... (sector|constraint) ... (dynamic|evolution|flow|commut)", "extended|enlarged payload", "invariant ... (surface|manifold|subspace)
+... (dynamics|flow|law|generator)", "constraint ... (commut|preserv|invariant) ... (dynamics|hamiltonian|generator|evolution)".
+Hits read at their statement, with ledger status at origin/main (docs/audit/data/ledger/<xx>/<id>.json); none retained:
+- SIGNED_GRAVITY_CONTINUUM_GRADED_EINSTEIN_LOCALIZATION_NOTE (bounded_theorem, unaudited): runner line "Ward/Bianchi-compatible
+  constraint surface is preserved at every graded jet" — a formal continuum jet transport in the gravity lane; the phrase
+  "constraint surface preserved" is the same NOTION (a constraint set left invariant by an evolution) on a different object
+  and by a different mechanism (formal jets, no lattice, no Gauss row). Method precedent for the notion only; non-matching result.
+- AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01 (bounded_theorem, unaudited): "the largest ad_H-invariant subspace of A(O)'
+  collapses 256 -> 64 -> 16 -> 4 -> 1" — an operator-algebra commutant computation. Same linear-algebra TOOL (a maximal invariant
+  subspace computed by iterated intersection) on a different object; method precedent, non-matching.
+- TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05 (bounded_theorem, unaudited): endpoint invariance
+  counts of link-transport operators under U(1)/SU(2) endpoint Gauss generators on a four-qubit model — a Record-side operator
+  invariance profile, no dynamics, no payload class. Non-matching (as block 01 already recorded).
+- energy_gauss_constraint_obstruction_route_b_note_2026-07-08 (no_go, unaudited; ledger title "Adjacent Cell-Energy Obstruction For A
+  Commuting-Auxiliary Constraint Ansatz"; its docs surface is archived at archive/notes/docs/, not under docs/ on origin/main): an
+  energy/constraint obstruction for an auxiliary-variable ansatz in another lane. Context only; non-matching object.
+- CHIRAL_3PLUS1D_COUPLED_COIN_NOTE (bounded_theorem, unaudited; the coin-walks lane README marks the family "historical blocked"):
+  a quantum-walk coin (a 2x2 / 6x6 unitary on a walker), not a second real field component on the compiled payload. Non-matching
+  object; the word "coin" is shared, the meaning is not.
+- The "ice rule" pattern matched only "branch-choice rule" (DM lane, PMNS basin selection) — non-matching; "two.component" matched a
+  Koide measure note and the supplied-readout two-component decomposition note (bounded_theorem, unaudited; a readout-context
+  decomposition, not a field payload) — non-matching; "longitudinal" matched gauge-vacuum plaquette-ladder notes (longitudinal LINKS
+  of a strip, not a longitudinal mode) and the ABJ anomaly bridge (continuum longitudinal gauge-boson modes as an external premise) —
+  non-matching; "graph laplacian ... kernel" matched the Z^3 Green-kernel notes (a resolvent normalization, not the kernel-equals-
+  constants lever) — non-matching.
+- Block 02's own surfaces (this branch's history, not origin/main): the vertex-scalar witness with its Hodge multiplicities and the
+  two-speed conservative family are the direct antecedent; block 02 did not test Gauss-surface invariance on the extended payload,
+  did not include the cube payload, did not classify the coin class, and asserted (in GOAL_block03's framing) that the complex law
+  "preserves both Gauss rows" without executing it — this block executes it and finds the statement true at zero charge and false on
+  a charged surface (the charge rotates).
+No landed statement was found for: a Gauss row read as an invariant constraint surface of a field law on the compiled payload; a
+vertex or cube payload on the compiled lattice; the collapse of an extended conservative class on a Gauss sector; the empty
+invariant subset of a charged surface under a vertex-coupled member; the kernel-of-the-Laplacian (connectedness) lever; the
+coin class on the compiled payload or its Gauss cut; a hidden-time (second-order) reading of the complex law. Target state: OPEN
+after the matched-hit review.
+Quote-fidelity finding carried to the supervisor (not a block-03 file): the ledger's row 4 and GOAL_block03.md attribute the phrase
+"order-independent site-level support forcing among corner records" to open PR #7893; the live PR body (gh pr view 7893, 2026-09-05)
+does not contain it — its sentence is "Gauss's law is then a record-diagonal relation at each corner, i.e. a support condition of
+the law in the axioms' own vocabulary." — and the head-branch note's grep for "support forcing" / "order-independent" / "corner
+records" returns nothing. The phrase is a précis (the same failure mode as block 02's CK-01/CK-02). This block quotes the body.

@@ -880,3 +880,159 @@ def build_claims(mutation: str) -> dict:
         key, value = flips[mutation]
         claims[key] = value
     return claims
+
+
+def degree_shape(shape: tuple) -> tuple:
+    return tuple((degree, power) for degree, power, _ in shape)
+
+
+def build_checks(facts: Facts, claims: dict) -> Checks:
+    checks = Checks()
+    au = facts.authority
+    checks.check("A-1", "FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree",
+                 au.fixed_authority and claims["current_main"] == CURRENT_MAIN)
+    checks.check("A-2", "PARENT PIN IS THE BLOCK 217 TIP, an ancestor of HEAD, with its note and runner content-bound by blob",
+                 au.parent_pin_is_commit and au.parent_is_ancestor and au.parent_artifact_blobs and claims["parent_commit"] == PARENT_COMMIT)
+    checks.check("A-3", "STALE PARENT (the Block 216 tip) is a real ancestor carrying NEITHER Block 217 artifact; machinery imported; inputs readable",
+                 au.stale_is_real_ancestor and au.stale_carries_neither_artifact and au.machinery_import_landed
+                 and au.inputs_readable == len(AUDIT_INPUT_PATHS) - 1)
+    checks.check("B-1", "NOTHING REGISTERED, NOTHING ADOPTED: seven imposed objects, zero registered, zero adopted",
+                 len(IMPOSED_OBJECTS) == 7 and claims["registered"] == REGISTERED_OBJECTS == () and ADOPTED_OBJECTS == ())
+    checks.check("B-2", "NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied",
+                 not claims["gravity_supplied"] and not GRAVITY_SUPPLIED_CLAIMED and len(UNSUPPLIED_GRAVITY_STRUCTURES) == 9)
+    checks.check("B-3", "THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)",
+                 AXIOM_COVARIANCE_CLAUSE in facts.axiom_text and not claims["covariance_inherited"] and not COVARIANCE_INHERITED_CLAIMED)
+    checks.check("B-4", "NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED, AND NO METRIC IS SUPPLIED: that one assembly and one reading see the shape is measured, not a selector",
+                 not claims["cell_selected"] and not CELL_SELECTED_CLAIMED and not claims["assembly_decided"] and not ASSEMBLY_DECIDED_CLAIMED
+                 and not claims["reading_selected"] and not READING_SELECTED_CLAIMED and not METRIC_SUPPLIED_CLAIMED
+                 and not SUBGROUP_SELECTED_CLAIMED and not PARAMETER_VALUE_SELECTED_CLAIMED)
+    checks.check("B-5", "THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY, BENCH AND SHAPE ARE SCOPED; six readings enumerated, none licensed; no dispersion law, no Lorentzian or light-cone reading, no continuum, no spacetime cone",
+                 len(SCOPED_HEADLINE_WORDS) == 6 and len(READINGS) == 6 and not READINGS_LICENSED_CLAIMED
+                 and not claims["continuum_read"] and not CONTINUUM_LIMIT_CLAIMED and not DISPERSION_LAW_CLAIMED
+                 and not LORENTZIAN_CLAIMED and not LIGHT_CONE_CLAIMED and not CONE_IS_SPACETIME_CONE_CLAIMED)
+    co, be, id_, sh, ct = facts.construction, facts.bench, facts.identities, facts.shape, facts.control
+    bm, bs = be["block_multisets"], be["block_shapes"]
+    checks.check("C-1", "THE BENCH IS BLOCK 213's bench_matrix AT EXTENT (4,4,2): 32 sites, the y direction carrying no link (0 y-link entries, 64 raising entries), Bloch momenta (1,1,1), (1,i,1), (i,1,1), (i,i,1) -- the MIXED fine point exists; Block 217's (4,2,2) momenta are (1,1,1), (i,1,1)",
+                 co["momenta"] == claims["bench_momenta"] == BENCH_MOMENTA and co["kappas"] == BENCH_KAPPAS and co["mixed_point_present"]
+                 and co["site_count"] == SITE_COUNT and co["y_link_entries"] == Y_LINK_ENTRIES and co["raising_bench_nnz"] == RAISING_BENCH_NNZ
+                 and co["parent_momenta"] == PARENT_MOMENTA == b217.BENCH_MOMENTA)
+    checks.check("C-2", "THE WITNESS AND THE CONTROL ARE BLOCKS 216/217's: Block 216's mask-2 rule-A cell carries Block 213's L+- signs (+,+,+,+,-,+), the parameters sit at (0, 1/4, -1/4, 1/4), Block 217's (4,2,2) onsite pencil multiset reproduces with Bloch = direct (the smaller-extent consistency gate), G1_tt = 9/8, W1's moduli are Block 211's",
+                 co["witness_values"] == (WITNESS_SIGNS,) and co["witness_is_rule_a"] and co["l_plus_minus_signs"] == WITNESS_SIGNS
+                 and co["face_orders_agree"] and co["line_point_entries"] == LINE_POINT_ENTRIES == tuple(LINE_POINT)
+                 and co["parent_bench_multiset"] == claims["parent_witness_pencil"] == b217.WITNESS_ONSITE_PENCIL and co["parent_bench_agrees"]
+                 and co["g1_tt_witness"] == G1_TT_WITNESS == b217.G1_TT_WITNESS and co["w1_moduli_is_block211"])
+    checks.check("C-3", "THE FLAT CONTROL AT ZERO PARAMETERS GIVES R5's MULTISET {0 x8, 1 x16, 2 x8} = Block 213's expected_flat_multiset((4,4,2)) under both assemblies and both readings",
+                 be["flat_zero_is_r5"] and be["flat_expected"] == claims["flat_r5"] == FLAT_R5)
+    checks.check("D-1", "BLOCH UNION = DIRECT BENCH at every one of the 20 degree-32 charpolys over QQ(sqrt 6) and QQ(sqrt 6, i); the zero Bloch point contributes eight zeros everywhere",
+                 claims["all_agree"] and be["all_agree"] and be["all_degree_32"] and be["charpoly_count"] == CHARPOLY_COUNT and be["zero_point_is_eight_zeros"])
+    checks.check("D-2", "THE WITNESS BLOCKS: onsite pencil {9/8 x2, 16/11 x2, 18/11 x4} at both pure points and {3/2 x2, 64/33 x2, 24/11 x4} at the mixed point; onsite form Block 217's irreducible quartic squared at the pure points and another at the mixed point; the overlap form and pencil at the pure points as declared; the overlap mixed-point shapes as declared",
+                 bm[("witness line", "onsite", "pencil")][PURE_T] == bm[("witness line", "onsite", "pencil")][PURE_X] == WITNESS_PURE_PENCIL
+                 and bm[("witness line", "onsite", "pencil")][MIXED] == claims["witness_mixed_pencil"] == WITNESS_MIXED_PENCIL
+                 and bs[("witness line", "onsite", "form")][PURE_T] == bs[("witness line", "onsite", "form")][PURE_X] == WITNESS_FORM_PURE_SHAPE
+                 and bs[("witness line", "onsite", "form")][MIXED] == WITNESS_FORM_MIXED_SHAPE
+                 and {z: bm[("witness line", "overlap", "form")][z] for z in (PURE_T, PURE_X)} == WITNESS_OVERLAP_FORM_PURE
+                 and {z: bm[("witness line", "overlap", "pencil")][z] for z in (PURE_T, PURE_X)} == WITNESS_OVERLAP_PENCIL_PURE
+                 and {k: degree_shape(v) for k, v in ct["overlap_witness_mixed_shapes"].items()} == WITNESS_OVERLAP_MIXED_SHAPES
+                 and bs[("witness line", "overlap", "pencil")][MIXED] == WITNESS_OVERLAP_MIXED_PENCIL_LINE
+                 and ct["overlap_witness_mixed_zero_pencil"] == WITNESS_OVERLAP_MIXED_ZERO_PENCIL)
+    checks.check("D-3", "THE CONTROL BLOCKS at the all-plus W1: onsite pencil (15 lam - 16)^2 times Block 217's irreducible cubic squared at (i,1,1), (15 lam - 16)^2 (385 lam - 256)^2 times an irreducible quadratic squared at (1,i,1), (5 lam - 8)^2 times an irreducible cubic squared at (i,i,1); overlap form Block 214's OVERLAP_FORM_W1 at both pure points; overlap pencil R5's at (i,1,1) and {55/71 x4, 71/55 x4} at (1,i,1)",
+                 ct["w1_shapes"] == claims["w1_pencil_shapes"] == W1_PENCIL_SHAPES
+                 and bm[("W1 line", "overlap", "form")][PURE_T] == bm[("W1 line", "overlap", "form")][PURE_X] == W1_OVERLAP_FORM_PURE == b214.OVERLAP_FORM_W1[1:]
+                 and ct["overlap_w1_pencil_pure_multisets"] == W1_OVERLAP_PENCIL_PURE)
+    checks.check("E-1", "THE RAISING BLOCH BLOCK IS i D(kappa_z) AT EVERY POINT, MEASURED FIRST: d_B(z) = sum_mu (z_mu - 1/z_mu)/2 D(e_mu) at symbolic z (the fine momenta enter additively; at the mixed point i D(e_t + e_x)); D(e_mu)^2 = 0, the D(e_mu) anticommute, D(e_t + e_x)^2 = 0",
+                 all(id_["raising_block_is_i_d"].values()) and claims["raising_additive"] and id_["raising_block_additive_symbolic"]
+                 and id_["d_mu_squared_zero"] and id_["d_mu_anticommute"] and id_["d_mixed_squared_zero"])
+    checks.check("E-2", "THE ONSITE HODGE BLOCH BLOCK IS Z^-1 H0 Z with Z = diag(z^c) at every point, at the witness, the control and the flat cell",
+                 claims["onsite_similarity"] and id_["onsite_similarity_everywhere"])
+    checks.check("E-3", "THE IDENTITY WITH THE PRINCIPAL PART: the onsite pencil block charpoly equals the charpoly of (H0^-1 M(kappa_z))^2 at EVERY point -- the MIXED point with kappa = e_t + e_x included -- at the witness, the control and the flat cell; it fails for the form reading and for the overlap assembly at every nonzero point of the witness and the control",
+                 claims["mixed_point_identity"] and id_["onsite_pencil_identity_everywhere"] and all(id_["mixed_point_identity"].values())
+                 and id_["form_fails_at_every_nonzero_point"] and id_["overlap_fails_at_every_nonzero_point"])
+    checks.check("F-1", "THE CONE'S SHAPE IS VISIBLE at the witness: at each of the three nonzero points every nonzero eigenvalue is a Block 216 branch constant {1, 128/99, 16/11 x2} times k^T G1 k at kappa_z, the quadric values 9/8, 9/8, 3/2; G1's (t, x)-plane restriction is (9/8, -3/8, 9/8)",
+                 claims["shape_visible"] and sh["shape_visible"] and sh["predicted_equal_measured"] and sh["constants"] == BRANCH_CONSTANTS
+                 and sh["quadric_values"] == QUADRIC_VALUES and sh["g1_plane"] == G1_PLANE)
+    checks.check("F-2", "THE CROSS TERM IS ISOLATED FROM THE THREE POINTS: (Q_mixed - Q_t - Q_x)/2 = -3/8 = G1_tx read from the bench alone; the pure points coincide; det M on the line is one quadric to the fourth power with 81/64, 81/64, 4 at e_t, e_x, e_t + e_x, the ratio (Q_mixed/Q_t)^4",
+                 sh["cross_term_bench"] == claims["cross_term"] == CROSS_TERM and sh["cross_term_equals_g1"] and sh["pure_points_coincide"]
+                 and sh["det_m_shape"] == DET_M_SHAPE and sh["det_m_values"] == DET_M_VALUES and sh["det_m_ratio_is_quadric_ratio_fourth"])
+    checks.check("G-1", "THE CONTROL FAILS EXACTLY THUS: at the all-plus W1 the Bloch = principal identity holds at the mixed point too, but at every nonzero point only the rational branch k^T G1 k (16/15, 16/15, 8/5; G1_tx = -4/15 read from it) is a constant times the quadric -- the other three eigenvalues are the roots of an irreducible cubic at the pure t and mixed points and of a linear times an irreducible quadratic at the pure x point, the pure points differ, and det M on the line is two distinct quadrics each squared (256/225, 1024/225)",
+                 id_["mixed_point_identity"]["W1 line"] and ct["w1_multisets_none"] and ct["w1_rational_branch_is_quadric"]
+                 and ct["w1_irreducible_degrees"] == claims["w1_irreducible_degrees"] == W1_IRREDUCIBLE_DEGREES
+                 and ct["w1_quadric_values"] == W1_QUADRIC_VALUES and ct["w1_g1_plane"] == W1_G1_PLANE and ct["w1_rational_branch_reads_g1_tx"]
+                 and ct["w1_pure_points_differ"] and ct["w1_det_m_shape"] == W1_DET_M_SHAPE and ct["w1_det_m_values"] == W1_DET_M_VALUES)
+    checks.check("G-2", "THE OVERLAP FOLD'S PARAMETER DEPENDENCE, POINT BY POINT, at symbolic signs, moduli and parameters: parameter-free at both pure points; at the mixed point all four parameters through the signed sum (-D07 - D16 + D25 + D34)/4 on the parity block (Block 217's (D07 + D16 + D25 + D34)/4 at the zero point); the overlap bench at the line point equals the zero-parameter one at the pure points and differs at the mixed point, form and pencil, witness and control",
+                 ct["overlap_fold_parameter_free_at_pure_points"] and ct["overlap_fold_mixed_parameters"] == OVERLAP_FOLD_MIXED_PARAMETERS
+                 and ct["overlap_fold_mixed_parity_block"] == claims["overlap_mixed_parity"] == OVERLAP_FOLD_MIXED_PARITY
+                 and ct["overlap_fold_zero_parity_block"] == OVERLAP_FOLD_ZERO_PARITY
+                 and ct["overlap_line_equals_zero_at_pure_points"] and ct["overlap_line_differs_at_mixed_point"])
+    checks.check("G-3", "THE SECOND DIRECTION SEES THE x-AXIS DISTINCTION: at the witness the onsite blocks at (i,1,1) and (1,i,1) coincide while the overlap blocks differ (form {36481/55296, 89401/55296} against {51529/55296, 69169/55296}; pencil R5's against {227/263, 263/227}); at W1 the overlap form coincides and the overlap pencil differs",
+                 ct["onsite_witness_pure_points_coincide"] and claims["overlap_witness_pure_points_differ"] and ct["overlap_witness_pure_points_differ"]
+                 and ct["overlap_witness_pure_multisets"] == {("form", PURE_T): WITNESS_OVERLAP_FORM_PURE[PURE_T], ("form", PURE_X): WITNESS_OVERLAP_FORM_PURE[PURE_X],
+                                                              ("pencil", PURE_T): WITNESS_OVERLAP_PENCIL_PURE[PURE_T], ("pencil", PURE_X): WITNESS_OVERLAP_PENCIL_PURE[PURE_X]}
+                 and ct["overlap_w1_form_pure_points_coincide"] and ct["overlap_w1_pencil_pure_points_differ"])
+    checks.check("H-1", "SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213, 214, 215, 216 and 217",
+                 claims["scout_grade"] == SCOUT_GRADE_FENCE == b217.SCOUT_GRADE_FENCE and SCOUT_GRADE_ONLY)
+    checks.check("H-2", "THE INSTANCE SCOPE IS ENUMERATED: six restrictions",
+                 claims["instance_scope_count"] == len(INSTANCE_SCOPE) == 6)
+    sc = scope_certificate(facts.note_text)
+    checks.check("I-1", "THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY",
+                 bool(facts.note_text) and sc["n5_verbatim"] == claims["n5_verbatim"] and claims["n5_verbatim"])
+    checks.check("I-2", "NO nsimplify, NO float literal, NO float call in this runner's source",
+                 nsimplify_occurrences() == 0 and float_literal_occurrences() == 0 and float_call_sites() == 0 and claims["float_absent"])
+    return checks
+
+
+def report_measured(facts: Facts, elapsed_ns: int) -> None:
+    print("== BLOCK 218: the cone's shape on a two-direction bench at the covariant witness -- measured facts ==")
+    print(f"authority: {facts.authority}")
+    for name in ("construction", "bench", "identities", "shape", "control"):
+        section = getattr(facts, name)
+        for key in sorted(section, key=str):
+            value = section[key]
+            if isinstance(value, dict):
+                for inner in sorted(value, key=str):
+                    item = value[inner]
+                    if isinstance(item, dict):
+                        item = {k: v for k, v in item.items() if k not in ("charpoly", "blocks")}
+                    print(f"{name} {key} {inner}: {item}")
+            else:
+                print(f"{name} {key}: {value}")
+    print(f"timings_ms: {facts.timings}  elapsed_ms: {elapsed_ns // 1_000_000}")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mutation", choices=MUTATIONS, default="")
+    parser.add_argument("--list-mutations", action="store_true")
+    arguments = parser.parse_args()
+    if arguments.list_mutations:
+        for name in MUTATIONS:
+            print(name)
+        return 0
+    mutation = arguments.mutation
+    started_ns = time.monotonic_ns()
+    # Every measurement happens once, before any mutation flag is consulted.
+    facts = measure()
+    elapsed_ns = time.monotonic_ns() - started_ns
+    checks = build_checks(facts, build_claims(""))
+    if mutation:
+        raw = checks.families()
+        checks = build_checks(facts, build_claims(mutation))
+        mutated = checks.families()
+        target = MUTATION_GATE[mutation]
+        changed = {family for family in raw if raw[family] != mutated[family]}
+        if changed - {target} or mutated[target]:
+            raise AssertionError("mutation did not fail exactly its own gate")
+    report_measured(facts, elapsed_ns)
+    checks.report()
+    print(N5_FENCE)
+    return checks.finish()
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except SystemExit:
+        raise
+    except Exception as error:
+        print(f"[FAIL] INTERNAL-EXCEPTION: {type(error).__name__}: {error}")
+        print("TOTAL: PASS=0 FAIL=1")
+        raise

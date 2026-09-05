@@ -10,7 +10,11 @@ from each shared trajectory.  A separate join owns every physics decision.
 from __future__ import annotations
 
 import argparse
-from concurrent.futures import ProcessPoolExecutor, as_completed
+from concurrent.futures import (
+    ProcessPoolExecutor,
+    ThreadPoolExecutor,
+    as_completed,
+)
 from dataclasses import dataclass
 import multiprocessing as mp
 
@@ -395,54 +399,90 @@ def run_row(
     )
 
 
+def emit_row(row: PairedRow) -> None:
+    """Emit one row in the stable receipt format after it closes."""
+    for window in WINDOWS:
+        errors = np.sqrt(np.diag(row.covariances[window]))
+        print(
+            "PAIRED_ROW",
+            f"V={1.0 + row.delta_v:.2f}",
+            f"L={row.length}",
+            f"window={window[0]}-{window[1]}",
+            "gaps="
+            + ",".join(
+                f"{forward}:{row.gaps[window][index]:.8f}"
+                f"+/-{errors[index]:.8f}"
+                for index, forward in enumerate(FORWARD_LENGTHS)
+            ),
+            "cov="
+            + ",".join(
+                f"{value:.12e}" for value in row.covariances[window].ravel()
+            ),
+            flush=True,
+        )
+    print(
+        "ROW_HEALTH",
+        f"V={1.0 + row.delta_v:.2f}",
+        f"L={row.length}",
+        f"min_ess={row.minimum_effective_fraction:.6f}",
+        f"min_origin_tau16={row.minimum_origin_tau16_count:.0f}",
+        f"min_forward={row.minimum_forward_count:.0f}",
+        flush=True,
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--workers", type=int, default=2)
+    parser.add_argument(
+        "--parallel-rows",
+        action="store_true",
+        help="run the four independent coupling/volume rows concurrently",
+    )
     arguments = parser.parse_args()
     if not 1 <= arguments.workers <= 2:
         raise SystemExit("--workers must be 1 or 2 on the 8 GiB host")
 
-    rows = []
-    for coupling_index, delta_v in enumerate((-0.05, 0.0)):
-        population = DETUNED_POPULATION if delta_v else RK_POPULATION
-        for length in LENGTHS:
+    row_specs = [
+        (
+            coupling_index,
+            delta_v,
+            LENGTHS[length_index],
+            DETUNED_POPULATION if delta_v else RK_POPULATION,
+            41_000_000 + 1_000_000 * coupling_index,
+        )
+        for coupling_index, delta_v in enumerate((-0.05, 0.0))
+        for length_index in range(len(LENGTHS))
+    ]
+    rows_by_key: dict[tuple[int, int], PairedRow] = {}
+    if arguments.parallel_rows:
+        with ThreadPoolExecutor(max_workers=len(row_specs)) as executor:
+            futures = {
+                executor.submit(
+                    run_row, length, delta_v, population, seed_root, arguments.workers
+                ): (coupling_index, length)
+                for coupling_index, delta_v, length, population, seed_root in row_specs
+            }
+            for future in as_completed(futures):
+                key = futures[future]
+                row = future.result()
+                rows_by_key[key] = row
+                emit_row(row)
+    else:
+        for coupling_index, delta_v, length, population, seed_root in row_specs:
             row = run_row(
                 length,
                 delta_v,
                 population,
-                41_000_000 + 1_000_000 * coupling_index,
+                seed_root,
                 arguments.workers,
             )
-            rows.append(row)
-            for window in WINDOWS:
-                errors = np.sqrt(np.diag(row.covariances[window]))
-                print(
-                    "PAIRED_ROW",
-                    f"V={1.0 + delta_v:.2f}",
-                    f"L={length}",
-                    f"window={window[0]}-{window[1]}",
-                    "gaps="
-                    + ",".join(
-                        f"{forward}:{row.gaps[window][index]:.8f}"
-                        f"+/-{errors[index]:.8f}"
-                        for index, forward in enumerate(FORWARD_LENGTHS)
-                    ),
-                    "cov="
-                    + ",".join(
-                        f"{value:.12e}"
-                        for value in row.covariances[window].ravel()
-                    ),
-                    flush=True,
-                )
-            print(
-                "ROW_HEALTH",
-                f"V={1.0 + delta_v:.2f}",
-                f"L={length}",
-                f"min_ess={row.minimum_effective_fraction:.6f}",
-                f"min_origin_tau16={row.minimum_origin_tau16_count:.0f}",
-                f"min_forward={row.minimum_forward_count:.0f}",
-                flush=True,
-            )
+            rows_by_key[(coupling_index, length)] = row
+            emit_row(row)
+    rows = [
+        rows_by_key[(coupling_index, length)]
+        for coupling_index, _delta_v, length, _population, _seed_root in row_specs
+    ]
 
     checks = Checks()
     checks.check(

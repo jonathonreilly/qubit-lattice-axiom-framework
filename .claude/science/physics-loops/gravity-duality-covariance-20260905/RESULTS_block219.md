@@ -106,3 +106,44 @@ Lorentzian, light-cone or continuum reading.
   declared, not explained.
 - The refuting checker: pending (`CHECK_VERDICT = "FABLE-PRIMARY-REFUTING-CHECKER-PENDING"`); the independence class
   is left to the supervisor.
+
+## Certified baseline (cache receipt `logs/runner-cache/admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05.txt`, exit 0, status ok, 80.39 s wall, `elapsed_ms: 77593`; runner sha256 `e96b329dd2d3ff7c...`, git blob `5aab28a027`; input fingerprint `bf983f8c974186ab...` over the twelve declared `AUDIT_INPUT_PATHS`, this note first; timeout 600; certified at 20:28Z on the final note (599 lines) and the final runner (1,129 lines); the runner was committed before certification)
+
+Header pins (runner sha256, input fingerprint, timeout 600, exit 0, status ok) are in the receipt; the full stdout (measured facts, 29 checks, the N5 fence) is its stdout section. The phase timings, the check lines, the gate line and the total:
+
+```text
+timings_ms: {'authority': 508, 'census': 1435, 'construction': 1406, 'bench': 56327, 'identities': 4735, 'shape': 6958, 'rescalings': 9, 'control': 6211}  elapsed_ms: 77593
+[PASS] A-1: SIX PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree, the timeout
+[PASS] A-2: PARENT PIN IS THE BLOCK 218 TIP, an ancestor of HEAD, with its note and runner content-bound by blob
+[PASS] A-3: STALE PARENT (the Block 217 tip) is a real ancestor carrying NEITHER Block 218 artifact; machinery imported; inputs readable
+[PASS] B-1: NOTHING REGISTERED, NOTHING ADOPTED: seven imposed objects, zero registered, zero adopted
+[PASS] B-2: NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied
+[PASS] B-3: THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)
+[PASS] B-4: NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED, AND NO METRIC IS SUPPLIED: that one assembly and one reading see the shape is measured, not a selector
+[PASS] B-5: THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY, BENCH AND SHAPE ARE SCOPED; six readings enumerated, none licensed; no dispersion law, no Lorentzian or light-cone reading, no continuum, no spacetime cone
+[PASS] C-1: THE BENCH IS BLOCK 213's bench_matrix AT EXTENT (4,4,4): 64 sites, every direction carrying its link (64 y-link entries, 192 raising entries), the eight Bloch momenta {1, i}^3 with the triply-mixed point (i,i,i); Block 218's four and Block 217's two momenta are the smaller extents'
+[PASS] C-2: THE WITNESS AND THE CONTROL ARE BLOCKS 216-218's: mask 2 = L+-'s signs (+,+,+,+,-,+); the three parameter points as declared; Block 218's (4,4,2) block multisets and Block 217's (4,2,2) multiset reproduce with Bloch = direct (the smaller-extent gates); G1_tt = 9/8; W1's moduli are Block 211's
+[PASS] C-3: THE FLAT CONTROL AT ZERO PARAMETERS GIVES R5's MULTISET {0 x8, 1 x24, 2 x24, 3 x8} = Block 213's expected_flat_multiset((4,4,4)) under both assemblies and both readings, direct
+[PASS] C-4: THE SECOND LINE MULTIPLE IS POSITIVE DEFINITE BEFORE USE: the eight leading minors of the cell at (0, 1/2, -1/2, 1/2) are positive (sqrt6/3, 3/4, sqrt6/4, 3/4, sqrt6/8, 3/16, sqrt6/24, 1/9), lambda^2 = 1/4 < v0 v1 = 3/4; the D07 point and the line point are positive definite too
+[PASS] D-1: BLOCH UNION = DIRECT BENCH at every one of the nine declared direct degree-64 charpolys over QQ(sqrt 6) and QQ(sqrt 6, i) (fourteen constructions, nine direct); every Bloch union has degree 64; the zero Bloch point contributes eight zeros everywhere
+[PASS] D-2: THE WITNESS BLOCKS: onsite pencil {9/8 x2, 16/11 x2, 18/11 x4} at the three pure points AND at the triply-mixed point, {3/2 x2, 64/33 x2, 24/11 x4} at the three doubly-mixed points; the direct degree-64 multiset {0 x8, 9/8 x8, 16/11 x8, 3/2 x6, 18/11 x16, 64/33 x6, 24/11 x12}
+[PASS] D-3: THE CONTROL BLOCK AT THE TRIPLY-MIXED POINT at the all-plus W1: (5 lam - 8)^2 (165 lam - 256)^2 times an irreducible quadratic squared, the rational roots 8/5 and 256/165; no W1 block multiset is rational; the W1 direct degree-64 charpoly has Bloch union = direct
+[PASS] E-1: THE RAISING BLOCH BLOCK IS i D(kappa_z) AT ALL EIGHT POINTS, MEASURED FIRST: d_B(z) = sum_mu (z_mu - 1/z_mu)/2 D(e_mu) at symbolic z with z_y live; D(e_mu)^2 = 0, the D(e_mu) anticommute, D(kappa_z)^2 = 0 at every point incl. e_t + e_x + e_y
+[PASS] E-2: THE ONSITE HODGE BLOCH BLOCK IS Z^-1 H0 Z with Z = diag(z^c) at all eight points, at the witness, the control, the flat cell and the two rescaled points
+[PASS] E-3: THE IDENTITY WITH THE PRINCIPAL PART AT ALL EIGHT POINTS: the onsite pencil block charpoly equals the charpoly of (H0^-1 M(kappa_z))^2 -- the TRIPLY-MIXED point with kappa = e_t + e_x + e_y included -- at the witness, the control, the flat cell and the two rescaled points; it fails for the form reading and for the overlap assembly at every nonzero point of the witness
+[PASS] F-1: THE SHAPE IN THREE DIRECTIONS: at each of the seven nonzero points every nonzero eigenvalue is a Block 216 branch constant {1, 128/99, 16/11 x2} times k^T G1 k at kappa_z, the quadric values 9/8 (pure), 3/2 (doubly-mixed), 9/8 (triply-mixed) computed from G1 = D1/D0 = (3/8)[[3,-1,-1],[-1,3,-1],[-1,-1,3]], parameter-free
+[PASS] F-2: G1 READ OFF THE BENCH: the six entries (9/8, 9/8, 9/8; -3/8, -3/8, -3/8) from the three pure and three doubly-mixed points equal the entries of D1/D0; the pure points coincide and the doubly-mixed points coincide
+[PASS] F-3: THE TRIPLY-MIXED CONSISTENCY CHECK: Q(e_t + e_x + e_y) predicted from the six entries, 3(9/8) + 6(-3/8) = 9/8, equals the measured constant-1 branch 9/8, so the triply-mixed multiset is the pure one; det M on the line is one quadric to the fourth, (64/81) Q^4 at all seven points (81/64, 81/64, 81/64, 4, 4, 4, 81/64)
+[PASS] G-1: THE LINE RESCALING SEEN ON THE BENCH: at lambda = 1/2 the block multisets at all seven points are Block 216's symbolic constants at lam_line = 1/2, {1, 16/9, 2 x2} = {1, (32/27) r, (4/3) r x2} with r = 1/(1 - lambda^2/(v0 v1)) = 3/2 (12/11 = LINE_RESCALE at 1/4), times Q; the pure-t multiset {9/8 x2, 2 x2, 9/4 x4}; Bloch = direct; G1 read off unchanged
+[PASS] G-2: THE D07 RESCALING SEEN ON THE BENCH: at D07 = 1/4 the block multisets at all seven points are Block 216's {128/119, 128/99, 16/11 x2} times Q, the 0-form constant rescaled by 1/(1 - D07^2 v1/v0) = 128/119 = D07_RESCALE; the pure-t multiset {144/119 x2, 16/11 x2, 18/11 x4}; Bloch = direct; the bench read-off of G1 is (128/119) G1 exactly, the constant-1 branch carrying the rescaling
+[PASS] G-3: THE CONTROL FAILS AT EVERY NONZERO POINT: at the all-plus W1 the identity holds at the triply-mixed point too, the rational branch k^T G1 k (16/15 pure, 8/5 mixed and triply-mixed) reads W1's G1 = (16/15)[[1,-1/4,-1/4],...] in all six entries consistently, but the other eigenvalues are an irreducible cubic at t, y, tx, xy and a linear times an irreducible quadratic at x, ty, txy (256/165 no constant times 8/5); det M on the line is two distinct quadrics each squared (256/225 at the pure points, 1024/225 at tx and xy, 4096/225 at ty, 3136/225 at txy)
+[PASS] G-4: THE OVERLAP FOLD AT THE NEW POINTS, at symbolic signs, moduli and parameters: parameter-free at the three pure points AND at the triply-mixed point; all four parameters at the three doubly-mixed points through the signed sums (-D07 - D16 + D25 + D34)/4, (-D07 + D16 - D25 + D34)/4, (-D07 + D16 + D25 - D34)/4 (-1/16, 3/16, -1/16 on the star line); the overlap bench at the line point equals the zero-parameter one at the five parameter-free points and differs at the three doubly-mixed points; the overlap bench identifies t with y and distinguishes x where the onsite bench identifies all three; the declared triply-mixed and (i,1,i) overlap pencil multisets
+[PASS] H-1: SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213, 214, 215, 216, 217 and 218
+[PASS] H-2: THE INSTANCE SCOPE IS ENUMERATED: six restrictions
+[PASS] I-1: THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY
+[PASS] I-2: NO nsimplify, NO float literal, NO float call in this runner's source
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
+TOTAL: PASS=29 FAIL=0
+```
+
+The baseline is under the 600 s budget by a factor of seven with the nine direct `64 x 64` charpolys included (the slowest direct charpoly the witness onsite form at 20.2 s, then W1's onsite pencil at 13.2 s; the fourteen Bloch unions 0.5-2.4 s each; bench phase 56.3 s of 77.6 s).

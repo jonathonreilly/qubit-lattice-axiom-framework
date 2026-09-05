@@ -626,3 +626,138 @@ def measure_shape(cells: dict, bench: dict) -> dict:
         facts["det_m_values"][2] / facts["det_m_values"][0]
         - (facts["quadric_values"][("I", "I", "1")] / facts["quadric_values"][("I", "1", "1")]) ** 4) == 0
     return facts
+
+
+# ---------------------------------------------------------------------------
+# G. THE CONTROL AND THE OVERLAP ASSEMBLY: where the shape statement fails and
+# exactly how; the overlap Bloch fold's parameter dependence at every point;
+# the x-axis distinction seen by the bench
+# ---------------------------------------------------------------------------
+def generic_cell(params: tuple) -> sp.Matrix:
+    """Block 214's formal cell at symbolic face signs, moduli and parameters."""
+    return b214.formal_cell(dict(zip(FACE_ORDER, SIGN_SYMBOLS)), G0, G1, V0, V1, params)
+
+
+def parity_block_literals(matrix: sp.Matrix) -> tuple:
+    even, odd = b213.even_odd(3)
+    entries = matrix.extract(even, odd).applyfunc(sp.expand)
+    return tuple(sorted(str(e) for e in set(entries) if e != 0))
+
+
+def measure_control_overlap(cells: dict, bench: dict) -> dict:
+    facts: dict = {}
+    points = (("I", "1", "1"), ("1", "I", "1"), ("I", "I", "1"))
+    # the all-plus W1 control under the onsite pencil: the rational branch and the irreducible rest
+    g1 = b213.metric_candidates(cells["W1 zero"])[0].applyfunc(sp.radsimp)
+    facts["w1_g1_plane"] = (g1[0, 0], g1[0, 1], g1[1, 1])
+    facts["w1_quadric_values"] = quadric_values(g1, points)
+    entry = bench["table"][("W1 line", "onsite", "pencil")]
+    facts["w1_shapes"] = {z: entry["block_shapes"][z] for z in points}
+    facts["w1_rational_roots"] = {z: entry["block_rational_roots"][z] for z in points}
+    facts["w1_multisets_none"] = all(entry["block_multisets"][z] is None for z in points)
+    facts["w1_rational_branch_is_quadric"] = all((facts["w1_quadric_values"][z], 2) in facts["w1_rational_roots"][z] for z in points)
+    facts["w1_irreducible_degrees"] = {z: tuple(sorted(d for d, _, _ in entry["block_shapes"][z] if d > 1)) for z in points}
+    smallest = {z: min(root for root, _ in facts["w1_rational_roots"][z]) for z in points}
+    facts["w1_cross_term_from_rational_branch"] = sp.radsimp(
+        (facts["w1_quadric_values"][("I", "I", "1")] - facts["w1_quadric_values"][("I", "1", "1")]
+         - facts["w1_quadric_values"][("1", "I", "1")]) / 2)
+    facts["w1_rational_branch_reads_g1_tx"] = facts["w1_cross_term_from_rational_branch"] == g1[0, 1]
+    facts["w1_pure_points_differ"] = entry["block_shapes"][("I", "1", "1")] != entry["block_shapes"][("1", "I", "1")]
+    h0, m, _ = b214.principal_part(cells["W1 line"], "onsite")
+    det = sp.radsimp(m.det(method="berkowitz"))
+    _, factors = sp.factor_list(det, *KAPPA, extension=sp.sqrt(6))
+    facts["w1_det_m_shape"] = tuple(sorted((sp.Poly(f, *KAPPA).total_degree(), p) for f, p in factors))
+    facts["w1_det_m_values"] = (det.subs({KT: 1, KX: 0, KY: 0}), det.subs({KT: 1, KX: 1, KY: 0}))
+    # the overlap Bloch fold at symbolic face signs, moduli and parameters, at every point
+    rules = b213.overlap_rules(generic_cell(PARAMETER_SYMBOLS), b209.CORNERS, 3)
+    fold: dict = {}
+    for z in b213.bench_momenta(BENCH_EXTENT):
+        matrix = b213.bloch_matrix(rules, z, 3)
+        fold[momentum_literal(z)] = {
+            "parameters_present": tuple(str(p) for p in PARAMETER_SYMBOLS if p in matrix.free_symbols),
+            "parity_block": parity_block_literals(matrix),
+        }
+    facts["overlap_fold"] = fold
+    facts["overlap_fold_parameter_free_at_pure_points"] = all(
+        fold[z]["parameters_present"] == () for z in (("I", "1", "1"), ("1", "I", "1")))
+    facts["overlap_fold_mixed_parameters"] = fold[("I", "I", "1")]["parameters_present"]
+    facts["overlap_fold_mixed_parity_block"] = fold[("I", "I", "1")]["parity_block"]
+    facts["overlap_fold_zero_parity_block"] = fold[("1", "1", "1")]["parity_block"]
+    # the overlap bench at the line point against zero parameters, point by point
+    comparison: dict = {}
+    for label in ("witness", "W1"):
+        for reading in ("form", "pencil"):
+            line = bench["table"][(f"{label} line", "overlap", reading)]["blocks"]
+            zero = bench["table"][(f"{label} zero", "overlap", reading)]["blocks"]
+            comparison[(label, reading)] = {z: sp.expand(line[z] - zero[z]) == 0 for z in line}
+    facts["overlap_line_vs_zero"] = comparison
+    facts["overlap_line_equals_zero_at_pure_points"] = all(
+        comparison[key][z] for key in comparison for z in (("1", "1", "1"), ("I", "1", "1"), ("1", "I", "1")))
+    facts["overlap_line_differs_at_mixed_point"] = not any(comparison[key][("I", "I", "1")] for key in comparison)
+    # the x-axis distinction: the two pure points against each other
+    ms = bench["block_multisets"]
+    facts["onsite_witness_pure_points_coincide"] = all(
+        ms[("witness line", "onsite", r)][("I", "1", "1")] == ms[("witness line", "onsite", r)][("1", "I", "1")]
+        and bench["block_shapes"][("witness line", "onsite", r)][("I", "1", "1")]
+        == bench["block_shapes"][("witness line", "onsite", r)][("1", "I", "1")] for r in ("form", "pencil"))
+    facts["overlap_witness_pure_points_differ"] = all(
+        ms[("witness line", "overlap", r)][("I", "1", "1")] != ms[("witness line", "overlap", r)][("1", "I", "1")]
+        for r in ("form", "pencil"))
+    facts["overlap_witness_pure_multisets"] = {
+        (r, z): ms[("witness line", "overlap", r)][z] for r in ("form", "pencil") for z in (("I", "1", "1"), ("1", "I", "1"))}
+    facts["overlap_w1_form_pure_points_coincide"] = (
+        ms[("W1 line", "overlap", "form")][("I", "1", "1")] == ms[("W1 line", "overlap", "form")][("1", "I", "1")])
+    facts["overlap_w1_pencil_pure_points_differ"] = (
+        ms[("W1 line", "overlap", "pencil")][("I", "1", "1")] != ms[("W1 line", "overlap", "pencil")][("1", "I", "1")])
+    facts["overlap_w1_pencil_pure_multisets"] = {
+        z: ms[("W1 line", "overlap", "pencil")][z] for z in (("I", "1", "1"), ("1", "I", "1"))}
+    facts["overlap_witness_mixed_shapes"] = {
+        (r, p): bench["block_shapes"][(f"witness {p}", "overlap", r)][("I", "I", "1")]
+        for r in ("form", "pencil") for p in ("line", "zero")}
+    facts["overlap_witness_mixed_zero_pencil"] = ms[("witness zero", "overlap", "pencil")][("I", "I", "1")]
+    return facts
+
+
+@dataclass(frozen=True)
+class Facts:
+    authority: AuthorityCertificate
+    construction: dict
+    bench: dict
+    identities: dict
+    shape: dict
+    control: dict
+    axiom_text: str
+    note_text: str
+    timings: dict
+
+
+def measure() -> Facts:
+    timings: dict = {}
+    started = time.monotonic_ns()
+
+    def lap(label: str) -> None:
+        nonlocal started
+        now = time.monotonic_ns()
+        timings[label] = (now - started) // 1_000_000
+        started = now
+        print(f"[phase] {label}: {timings[label]} ms", file=sys.stderr)
+
+    git_maybe("fetch", "origin", "main", "--quiet")
+    authority = authority_certificate(git_maybe("rev-parse", "origin/main"))
+    lap("authority")
+    census = b216.measure_census()
+    cells = bench_cells(census)
+    lap("census")
+    construction = measure_construction(census, cells)
+    lap("construction")
+    bench = measure_bench(cells)
+    lap("bench")
+    identities = measure_identities(cells, bench)
+    lap("identities")
+    shape = measure_shape(cells, bench)
+    lap("shape")
+    control = measure_control_overlap(cells, bench)
+    lap("control")
+    axiom_text = (ROOT / AXIOM_PATH).read_text(encoding="utf-8") if (ROOT / AXIOM_PATH).is_file() else ""
+    note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
+    return Facts(authority, construction, bench, identities, shape, control, axiom_text, note_text, timings)

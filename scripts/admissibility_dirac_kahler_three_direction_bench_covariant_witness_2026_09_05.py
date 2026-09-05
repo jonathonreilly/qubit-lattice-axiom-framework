@@ -269,3 +269,222 @@ def authority_certificate(main_head: str) -> AuthorityCertificate:
         not any(is_hash(v) for v in stale_blobs),
         MACHINERY_IMPORT_LANDED,
         readable)
+
+
+# ---------------------------------------------------------------------------
+# B. the imposed objects and the NOT-CLAIMED keys, as measured literals
+# ---------------------------------------------------------------------------
+IMPOSED_OBJECTS = (
+    "the cube complex, corners, degree indices and wedge signature (Block 209; Block 213's eta/lane_rules/raising_rules)",
+    "Block 211's six-face-compatible cell-form family with its ties, 64 face-sign cells, four gauge classes and four free duality parameters",
+    "Block 213's curve witnesses L+- and L-+ over QQ(sqrt 6), its bench_matrix and bench_momenta at any extent, and its Bloch reduction",
+    "Block 214's principal part M = H0 D + D^T H0 under both assemblies and its first-order raising matrix D(kappa)",
+    "Block 216's 8 rule-A covariant witnesses, their four pencil branch constants on the star line and its two rescalings LINE_RESCALE and D07_RESCALE",
+    "Block 217's algebraic-field bench and Block 218's (4,4,2) bench with its Bloch-point lemma, onsite similarity and mixed-point identity",
+    "Block 105's two assemblies (onsite at even anchors; overlap at every anchor with weight 2^-3)",
+)
+REGISTERED_OBJECTS = ()
+ADOPTED_OBJECTS = ()
+GRAVITY_SUPPLIED_CLAIMED = False
+COVARIANCE_INHERITED_CLAIMED = False
+CELL_SELECTED_CLAIMED = False
+SUBGROUP_SELECTED_CLAIMED = False
+ASSEMBLY_DECIDED_CLAIMED = False
+METRIC_SUPPLIED_CLAIMED = False
+PARAMETER_VALUE_SELECTED_CLAIMED = False
+READING_SELECTED_CLAIMED = False
+READINGS_LICENSED_CLAIMED = False
+CONTINUUM_LIMIT_CLAIMED = False
+DISPERSION_LAW_CLAIMED = False
+LORENTZIAN_CLAIMED = False
+LIGHT_CONE_CLAIMED = False
+CONE_IS_SPACETIME_CONE_CLAIMED = False
+UNSUPPLIED_GRAVITY_STRUCTURES = (
+    "lapse function", "shift vector", "ADM phase space", "Hamiltonian constraint",
+    "momentum/diffeomorphism constraint", "first-class constraint algebra",
+    "Dirac closure", "Dirac observable", "gauge orbit and its quotient",
+)
+SCOPED_HEADLINE_WORDS = ("COVARIANCE", "CONE", "CELL", "ASSEMBLY", "BENCH", "SHAPE")
+AXIOM_COVARIANCE_CLAUSE = ("There is one fixed nearest-neighbor admissibility rule, covariant under lattice\n"
+                           "translations and proper cubic rotations.")
+READINGS = (
+    "R1 the cell form inherits the Admissibility axiom's proper-cubic-rotation covariance (the antecedent; not established, not asserted)",
+    "R2 the bench's seeing the cone's shape under the onsite pencil and under no other construction decides the assembly or the reading (not established: all four are measured, none is selected)",
+    "R3 'one metric's cone', 'the cone's shape' or 'G1 read off the bench' is a metric, a cone or a shape of anything physical (not established: Block 213's polynomial statement and one 3 x 3 matrix of rationals)",
+    "R4 the bench multisets are a dispersion law, a Lorentzian light cone or a continuum limit (not established: sixty-four exact eigenvalues of one finite matrix at eight Bloch points)",
+    "R5 the Bloch-point identity with the principal part is a small-k limit (not established: an exact finite identity resting on d^2 = 0 and the onsite similarity, at fine momenta pi/2)",
+    "R6 the covariant witness is a vacuum, a background or a spacetime (not established: a positive-definite point on one cell form)",
+)
+CHECK_VERDICT = "FABLE-PRIMARY-REFUTING-CHECKER-PENDING"
+
+# the parameters, the moduli, the directions, the cells, the witnesses
+PARAMETER_NAMES = ("D07", "D16", "D25", "D34")
+PARAMETER_SYMBOLS = b217.PARAMETER_SYMBOLS
+G0, G1, V0, V1 = b217.MODULI
+MODULI = (G0, G1, V0, V1)
+KT, KX, KY = b217.KAPPA
+KAPPA = (KT, KX, KY)
+LAM = b213.LAM
+FACE_ORDER = b211.GAUGE_FACE_ORDER        # (tx0, ty0, xy0, tx1, ty1, xy1)
+R = sp.Rational
+QUARTER = R(1, 4)
+HALF = R(1, 2)
+BENCH_EXTENT = (4, 4, 4)                  # the three-direction bench: 64 sites, eight Bloch points
+PARENT_EXTENT = (4, 4, 2)                 # Block 218's two-direction bench
+GRANDPARENT_EXTENT = (4, 2, 2)            # Block 217's one-direction bench
+LINE_POINT = b217.LINE_POINT              # (D07, D16, D25, D34) = (0, 1/4, -1/4, 1/4) on the star line
+HALF_LINE_POINT = (sp.Integer(0), HALF, -HALF, HALF)        # the second line multiple, lambda = 1/2
+D07_LINE_POINT = (QUARTER, QUARTER, -QUARTER, QUARTER)      # D07 = 1/4 on the line at lambda = 1/4
+ZERO_POINT = (sp.Integer(0),) * 4
+ALL_PLUS_CELL = b216.ALL_PLUS_CELL
+W1_MODULI = b216.W1_MODULI                # (v0, g0, v1, g1) = (15/16, 1/4, 1, 1/4)
+FLAT_MODULI = b216.FLAT_MODULI
+REAL_FIELD = b218.REAL_FIELD              # QQ(sqrt 6)
+COMPLEX_FIELD = b218.COMPLEX_FIELD        # QQ(sqrt 6, i)
+UNIT_KAPPAS = b218.UNIT_KAPPAS
+Z_SYMBOLS = b218.Z_SYMBOLS                # (z_t, z_x, z_y), all three live
+LAM_LINE = sp.Symbol("lam_line")          # Block 216's symbolic line multiple
+
+# the helpers of the parent, read-only
+kappa_of = b218.kappa_of
+momentum_literal = b218.momentum_literal
+raising_operator = b218.raising_operator
+phase_matrix = b218.phase_matrix
+is_zero_matrix = b218.is_zero_matrix
+residual_count = b218.residual_count
+rational_roots = b218.rational_roots
+principal_square = b218.principal_square
+principal_charpoly = b218.principal_charpoly
+branch_constants = b218.branch_constants
+generic_cell = b218.generic_cell
+parity_block_literals = b218.parity_block_literals
+raising_rules = b218.raising_rules
+
+# ---------------------------------------------------------------------------
+# exact helpers -- no float, no tolerance and NO nsimplify anywhere
+# ---------------------------------------------------------------------------
+NSIMPLIFY_TOKEN = "sp." + "nsimplify("
+
+
+def nsimplify_occurrences() -> int:
+    return Path(__file__).read_text(encoding="utf-8").count(NSIMPLIFY_TOKEN)
+
+
+def float_literal_occurrences() -> int:
+    tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    return sum(1 for node in ast.walk(tree)
+               if isinstance(node, ast.Constant) and isinstance(node.value, float))
+
+
+def float_call_sites() -> int:
+    tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    return sum(1 for node in ast.walk(tree)
+               if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id == "float")
+
+
+def bench_cells(census: dict) -> dict:
+    """Block 218's bench cells (Block 217's five plus the flat cell at zero
+    parameters) plus L+-'s cell at the second line multiple lambda = 1/2 and
+    at D07 = 1/4 on the line -- Block 216's two rescalings, on the bench."""
+    cells = dict(b218.bench_cells(census))
+    witness = next(v for v in b217.rule_a_cells(census) if census["cells"][v]["mask"] == 2)
+    cells["witness half"] = b217.formal(witness, b217.moduli_as_g(b217.curve_moduli(1)), HALF_LINE_POINT)
+    cells["witness d07"] = b217.formal(witness, b217.moduli_as_g(b217.curve_moduli(1)), D07_LINE_POINT)
+    return cells
+
+
+def quadric_values(g1: sp.Matrix, points: tuple) -> dict:
+    return {z: sp.radsimp(b213.quadratic_form(g1, kappa_of(tuple(sp.sympify(e) for e in z)))) for z in points}
+
+
+# ---------------------------------------------------------------------------
+# C/D. THE BENCH at extent (4,4,4) over QQ(sqrt 6) and QQ(sqrt 6, i): the
+# eight 8 x 8 Bloch blocks always; the direct 64 x 64 charpoly where declared
+# (the onsite pencil at every cell, the flat cell under every construction)
+# ---------------------------------------------------------------------------
+# (cell label, assembly, reading, direct 64 x 64 check?)
+BENCH_PLAN = (
+    ("witness line", "onsite", "pencil", True),
+    ("witness line", "onsite", "form", True),
+    ("witness line", "overlap", "form", False),
+    ("witness line", "overlap", "pencil", False),
+    ("witness half", "onsite", "pencil", True),
+    ("witness d07", "onsite", "pencil", True),
+    ("W1 line", "onsite", "pencil", True),
+    ("flat line", "onsite", "pencil", False),
+    ("witness zero", "overlap", "form", False),
+    ("witness zero", "overlap", "pencil", False),
+    ("flat zero", "onsite", "form", True),
+    ("flat zero", "onsite", "pencil", True),
+    ("flat zero", "overlap", "form", True),
+    ("flat zero", "overlap", "pencil", True),
+)
+
+
+def bloch_blocks(cell: sp.Matrix, assembly: str, reading: str, extent: tuple) -> dict:
+    """The 8 x 8 Bloch block charpoly per momentum over QQ(sqrt 6, i)."""
+    rules = (b213.onsite_rules if assembly == "onsite" else b213.overlap_rules)(cell, b209.CORNERS, 3)
+    raising = raising_rules()
+    transposed = b213.transpose_rules(raising)
+    blocks: dict = {}
+    for z in b213.bench_momenta(extent):
+        h_b = DomainMatrix.from_Matrix(b213.bloch_matrix(rules, z, 3)).convert_to(COMPLEX_FIELD)
+        d_b = DomainMatrix.from_Matrix(b213.bloch_matrix(raising, z, 3)).convert_to(COMPLEX_FIELD)
+        dt_b = DomainMatrix.from_Matrix(b213.bloch_matrix(transposed, z, 3)).convert_to(COMPLEX_FIELD)
+        blocks[momentum_literal(z)] = b217.alg_charpoly(b217.symbol_matrix(h_b, d_b, dt_b, reading), COMPLEX_FIELD)
+    return blocks
+
+
+def direct_charpoly(cell: sp.Matrix, assembly: str, reading: str, extent: tuple):
+    """The direct bench charpoly over QQ(sqrt 6) of the periodic bench matrix."""
+    rules = (b213.onsite_rules if assembly == "onsite" else b213.overlap_rules)(cell, b209.CORNERS, 3)
+    raising = raising_rules()
+    hodge = DomainMatrix.from_Matrix(b213.bench_matrix(rules, extent)).convert_to(REAL_FIELD)
+    lifted = DomainMatrix.from_Matrix(b213.bench_matrix(raising, extent)).convert_to(REAL_FIELD)
+    return b217.alg_charpoly(b217.symbol_matrix(hodge, lifted, lifted.transpose(), reading), REAL_FIELD)
+
+
+def measure_bench(cells: dict) -> dict:
+    """D: every planned (cell, assembly, reading) on (4,4,4): the eight Bloch
+    block charpolys, their multisets and factor shapes, and -- where planned --
+    the direct degree-64 charpoly with Bloch union = direct."""
+    facts: dict = {}
+    table: dict = {}
+    for label, assembly, reading, direct_planned in BENCH_PLAN:
+        print(f"[bench] {label} {assembly} {reading}", file=sys.stderr)
+        started = time.monotonic_ns()
+        blocks = bloch_blocks(cells[label], assembly, reading, BENCH_EXTENT)
+        union = sp.expand(sp.prod(list(blocks.values())))
+        union_ms = (time.monotonic_ns() - started) // 1_000_000
+        entry = {
+            "direct_planned": direct_planned, "agree": None, "multiset": None, "degree": None, "direct_ms": None,
+            "block_multisets": {z: b213.multiset_of(cp) for z, cp in blocks.items()},
+            "block_shapes": {z: b217.charpoly_shape(cp) for z, cp in blocks.items()},
+            "block_rational_roots": {z: rational_roots(cp) for z, cp in blocks.items()},
+            "union_ms": union_ms, "blocks": blocks, "union_degree": sp.Poly(union, LAM).degree(),
+        }
+        if direct_planned:
+            started = time.monotonic_ns()
+            direct = direct_charpoly(cells[label], assembly, reading, BENCH_EXTENT)
+            entry["direct_ms"] = (time.monotonic_ns() - started) // 1_000_000
+            entry["agree"] = sp.expand(direct - union) == 0
+            entry["multiset"] = b213.multiset_of(direct)
+            entry["degree"] = sp.Poly(direct, LAM).degree()
+        table[(label, assembly, reading)] = entry
+    facts["table"] = table
+    facts["charpoly_count"] = len(table)
+    facts["direct_count"] = sum(1 for e in table.values() if e["direct_planned"])
+    facts["all_direct_agree"] = all(e["agree"] for e in table.values() if e["direct_planned"])
+    facts["all_direct_degree_64"] = all(e["degree"] == 64 for e in table.values() if e["direct_planned"])
+    facts["all_union_degree_64"] = all(e["union_degree"] == 64 for e in table.values())
+    facts["zero_point_is_eight_zeros"] = all(e["block_multisets"][("1", "1", "1")] == ((0, 8),) for e in table.values())
+    facts["block_multisets"] = {key: e["block_multisets"] for key, e in table.items()}
+    facts["block_shapes"] = {key: e["block_shapes"] for key, e in table.items()}
+    facts["multisets"] = {key: e["multiset"] for key, e in table.items() if e["direct_planned"]}
+    expected = b213.expected_flat_multiset(BENCH_EXTENT)
+    facts["flat_expected"] = expected
+    facts["flat_zero_is_r5"] = all(table[("flat zero", a, r)]["multiset"] == expected
+                                   for a in ("onsite", "overlap") for r in ("form", "pencil"))
+    facts["timings_ms"] = {key: (e["direct_ms"], e["union_ms"]) for key, e in table.items()}
+    facts["max_direct_ms"] = max(e["direct_ms"] for e in table.values() if e["direct_planned"])
+    return facts

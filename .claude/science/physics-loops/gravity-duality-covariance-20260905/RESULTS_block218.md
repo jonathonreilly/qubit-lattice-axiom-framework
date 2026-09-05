@@ -86,3 +86,41 @@ dispersion-law, Lorentzian, light-cone or continuum reading.
   `(17837 lam^2 - 58604 lam + 48020)^4` for the pencil): declared by shape; no closed form in the signed sum.
 - The refuting checker: pending (`CHECK_VERDICT = "FABLE-PRIMARY-REFUTING-CHECKER-PENDING"`); the independence class
   is left to the supervisor.
+
+## Certified baseline (cache receipt `logs/runner-cache/admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05.txt`, exit 0, status ok, 36.65 s wall, `elapsed_ms: 33968`; runner sha256 `765d7389d8e69d4c...`, git blob `89f1d01ffe`; input fingerprint `58d8c71da4c51a3c...` over the eleven declared `AUDIT_INPUT_PATHS`, this note first; timeout 600; recertified after the note was trimmed under the 600-line cap — certification 1 on the 608-line note had the same runner sha, `TOTAL: PASS=26 FAIL=0`, 36.17 s, fingerprint `a954f6e5...`, and is superseded)
+
+Header pins (runner sha256, input fingerprint, timeout 600, exit 0, status ok) are in the receipt; the full stdout (measured facts, 26 checks, the N5 fence) is its stdout section. The phase timings, the check lines, the gate line and the total:
+
+```text
+timings_ms: {'authority': 793, 'census': 1348, 'construction': 442, 'bench': 17668, 'identities': 2184, 'shape': 5724, 'control': 5804}  elapsed_ms: 33968
+[PASS] A-1: FIVE PINS RE-RESOLVED LIVE: origin/main, axiom and registry blobs on origin/main and in the worktree
+[PASS] A-2: PARENT PIN IS THE BLOCK 217 TIP, an ancestor of HEAD, with its note and runner content-bound by blob
+[PASS] A-3: STALE PARENT (the Block 216 tip) is a real ancestor carrying NEITHER Block 217 artifact; machinery imported; inputs readable
+[PASS] B-1: NOTHING REGISTERED, NOTHING ADOPTED: seven imposed objects, zero registered, zero adopted
+[PASS] B-2: NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied
+[PASS] B-3: THE AXIOM CLAUSE IS QUOTED VERBATIM AND GOVERNS THE RULE; that the cell form inherits it is a READING, asserted nowhere (the theorem is the conditional)
+[PASS] B-4: NO CELL, NO SUBGROUP, NO ASSEMBLY, NO READING, NO PARAMETER VALUE IS SELECTED, AND NO METRIC IS SUPPLIED: that one assembly and one reading see the shape is measured, not a selector
+[PASS] B-5: THE WORDS COVARIANCE, CONE, CELL, ASSEMBLY, BENCH AND SHAPE ARE SCOPED; six readings enumerated, none licensed; no dispersion law, no Lorentzian or light-cone reading, no continuum, no spacetime cone
+[PASS] C-1: THE BENCH IS BLOCK 213's bench_matrix AT EXTENT (4,4,2): 32 sites, the y direction carrying no link (0 y-link entries, 64 raising entries), Bloch momenta (1,1,1), (1,i,1), (i,1,1), (i,i,1) -- the MIXED fine point exists; Block 217's (4,2,2) momenta are (1,1,1), (i,1,1)
+[PASS] C-2: THE WITNESS AND THE CONTROL ARE BLOCKS 216/217's: Block 216's mask-2 rule-A cell carries Block 213's L+- signs (+,+,+,+,-,+), the parameters sit at (0, 1/4, -1/4, 1/4), Block 217's (4,2,2) onsite pencil multiset reproduces with Bloch = direct (the smaller-extent consistency gate), G1_tt = 9/8, W1's moduli are Block 211's
+[PASS] C-3: THE FLAT CONTROL AT ZERO PARAMETERS GIVES R5's MULTISET {0 x8, 1 x16, 2 x8} = Block 213's expected_flat_multiset((4,4,2)) under both assemblies and both readings
+[PASS] D-1: BLOCH UNION = DIRECT BENCH at every one of the 20 degree-32 charpolys over QQ(sqrt 6) and QQ(sqrt 6, i); the zero Bloch point contributes eight zeros everywhere
+[PASS] D-2: THE WITNESS BLOCKS: onsite pencil {9/8 x2, 16/11 x2, 18/11 x4} at both pure points and {3/2 x2, 64/33 x2, 24/11 x4} at the mixed point; onsite form Block 217's irreducible quartic squared at the pure points and another at the mixed point; the overlap form and pencil at the pure points as declared; the overlap mixed-point shapes as declared
+[PASS] D-3: THE CONTROL BLOCKS at the all-plus W1: onsite pencil (15 lam - 16)^2 times Block 217's irreducible cubic squared at (i,1,1), (15 lam - 16)^2 (385 lam - 256)^2 times an irreducible quadratic squared at (1,i,1), (5 lam - 8)^2 times an irreducible cubic squared at (i,i,1); overlap form Block 214's OVERLAP_FORM_W1 at both pure points; overlap pencil R5's at (i,1,1) and {55/71 x4, 71/55 x4} at (1,i,1)
+[PASS] E-1: THE RAISING BLOCH BLOCK IS i D(kappa_z) AT EVERY POINT, MEASURED FIRST: d_B(z) = sum_mu (z_mu - 1/z_mu)/2 D(e_mu) at symbolic z (the fine momenta enter additively; at the mixed point i D(e_t + e_x)); D(e_mu)^2 = 0, the D(e_mu) anticommute, D(e_t + e_x)^2 = 0
+[PASS] E-2: THE ONSITE HODGE BLOCH BLOCK IS Z^-1 H0 Z with Z = diag(z^c) at every point, at the witness, the control and the flat cell
+[PASS] E-3: THE IDENTITY WITH THE PRINCIPAL PART: the onsite pencil block charpoly equals the charpoly of (H0^-1 M(kappa_z))^2 at EVERY point -- the MIXED point with kappa = e_t + e_x included -- at the witness, the control and the flat cell; it fails for the form reading and for the overlap assembly at every nonzero point of the witness and the control
+[PASS] F-1: THE CONE'S SHAPE IS VISIBLE at the witness: at each of the three nonzero points every nonzero eigenvalue is a Block 216 branch constant {1, 128/99, 16/11 x2} times k^T G1 k at kappa_z, the quadric values 9/8, 9/8, 3/2; G1's (t, x)-plane restriction is (9/8, -3/8, 9/8)
+[PASS] F-2: THE CROSS TERM IS ISOLATED FROM THE THREE POINTS: (Q_mixed - Q_t - Q_x)/2 = -3/8 = G1_tx read from the bench alone; the pure points coincide; det M on the line is one quadric to the fourth power with 81/64, 81/64, 4 at e_t, e_x, e_t + e_x, the ratio (Q_mixed/Q_t)^4
+[PASS] G-1: THE CONTROL FAILS EXACTLY THUS: at the all-plus W1 the Bloch = principal identity holds at the mixed point too, but at every nonzero point only the rational branch k^T G1 k (16/15, 16/15, 8/5; G1_tx = -4/15 read from it) is a constant times the quadric -- the other three eigenvalues are the roots of an irreducible cubic at the pure t and mixed points and of a linear times an irreducible quadratic at the pure x point, the pure points differ, and det M on the line is two distinct quadrics each squared (256/225, 1024/225)
+[PASS] G-2: THE OVERLAP FOLD'S PARAMETER DEPENDENCE, POINT BY POINT, at symbolic signs, moduli and parameters: parameter-free at both pure points; at the mixed point all four parameters through the signed sum (-D07 - D16 + D25 + D34)/4 on the parity block (Block 217's (D07 + D16 + D25 + D34)/4 at the zero point); the overlap bench at the line point equals the zero-parameter one at the pure points and differs at the mixed point, form and pencil, witness and control
+[PASS] G-3: THE SECOND DIRECTION SEES THE x-AXIS DISTINCTION: at the witness the onsite blocks at (i,1,1) and (1,i,1) coincide while the overlap blocks differ (form {36481/55296, 89401/55296} against {51529/55296, 69169/55296}; pencil R5's against {227/263, 263/227}); at W1 the overlap form coincides and the overlap pencil differs
+[PASS] H-1: SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213, 214, 215, 216 and 217
+[PASS] H-2: THE INSTANCE SCOPE IS ENUMERATED: six restrictions
+[PASS] I-1: THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY
+[PASS] I-2: NO nsimplify, NO float literal, NO float call in this runner's source
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
+TOTAL: PASS=26 FAIL=0
+```
+
+The baseline is under the 600 s budget by a factor of sixteen with all twenty direct `32 x 32` charpolys included (the slowest direct charpoly 1.6 s, the slowest Bloch union 0.9 s; bench phase 17.7 s).

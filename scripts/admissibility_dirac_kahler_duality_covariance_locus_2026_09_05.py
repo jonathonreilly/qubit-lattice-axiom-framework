@@ -830,8 +830,16 @@ def measure_census(group: dict) -> dict:
         facts["per_rotation_twisted_shears_survive"][key] = tuple(any(not f for f, _ in comps) for comps in twisted)
         facts["per_rotation_strict_shears_survive"][key] = tuple(any(not f for f, _ in comps) for comps in strict)
         for name, rep in group["representatives"].items():
-            facts["twisted"][(key, name)] = describe(subgroup_locus(twisted, rep, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS)
+            locus = subgroup_locus(twisted, rep, PARAMETER_SYMBOLS)
+            facts["twisted"][(key, name)] = describe(locus, PARAMETER_SYMBOLS)
             facts["strict"][(key, name)] = describe(subgroup_locus(strict, rep, PARAMETER_SYMBOLS), PARAMETER_SYMBOLS)
+            if name == "O":
+                # the shear-alive twisted line meets the star line only at the
+                # origin D16 = D25 = D34 = 0 (D07 free) -- measured per class
+                star = [[0, 1, 0, -1], [0, 0, 1, 1]]
+                origin = canonical_subspace([[0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]], PARAMETER_SYMBOLS)
+                facts.setdefault("twisted_o_line_meets_star_line_at_origin", {})[key] = all(
+                    canonical_subspace(star + [list(r) for r in v], PARAMETER_SYMBOLS) == origin for f, v in locus if not f)
         # EVERY member of every class (30 subgroups): the loci at a FIXED cell are
         # not conjugation-invariant, so the number of distinct loci per class is
         # measured (1 for the normal subgroups; sign images otherwise).
@@ -1138,7 +1146,8 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
                  and {k: sum(v) for k, v in ce["per_rotation_strict_shears_survive"].items()} == STRICT_SHEAR_SURVIVING_ROTATIONS)
     checks.check("E-2", "THE TWISTED CENSUS at the four class representatives is the declared table: O, T, S3, C3 force ONE shear-alive line (the diagonal D16 = D25 = D34 at all-plus and at (-1,-1); D16 = D25 = -D34 at the two mixed classes), never the star line; the star line appears only with a shear killed",
                  ce["twisted"] == claims["twisted_loci"] and star_line_only_with_shear_killed(claims["twisted_loci"])
-                 and alive(claims["twisted_loci"][((1, 1), "O")]) == (DIAGONAL_LINE,))
+                 and alive(claims["twisted_loci"][((1, 1), "O")]) == (DIAGONAL_LINE,)
+                 and all(ce["twisted_o_line_meets_star_line_at_origin"].values()))
     checks.check("E-3", "THE STRICT CENSUS is the declared table: O and T force the star line WITH g0 = g1 = 0 (the flat cell); C3 (S3) force the star line with one shear killed; the minimal strict class forcing the star line is C3",
                  ce["strict"] == claims["strict_loci"]
                  and all(claims["strict_loci"][(key, "O")][0][1] == STAR_LINE and len(claims["strict_loci"][(key, "O")][0][0]) >= 2

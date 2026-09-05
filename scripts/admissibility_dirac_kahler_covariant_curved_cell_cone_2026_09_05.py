@@ -652,7 +652,8 @@ def measure_witness(group: dict, census: dict) -> dict:
         entry["stabiliser"] = stabiliser
         entry["stabiliser_orders"] = tuple(sorted(orders[g] for g in stabiliser))
         entry["stabiliser_is_s3_body"] = any(frozenset(stabiliser) == member for member in group["classes"]["S3_body"])
-        strict_per = tuple(b215.irredundant([b215.constraints(cell, lifts[g], (1,) * 8, PARAMETER_SYMBOLS)]) for g in stabiliser)
+        # (indexed by rotation, as Block 215's subgroup_locus expects: all 24)
+        strict_per = tuple(b215.irredundant([b215.constraints(cell, lifts[g], (1,) * 8, PARAMETER_SYMBOLS)]) for g in range(24))
         locus = b215.subgroup_locus(strict_per, frozenset(stabiliser), PARAMETER_SYMBOLS)
         entry["strict_locus"] = b215.describe(locus, PARAMETER_SYMBOLS)
         entry["strict_locus_is_star_line_alive"] = locus == ((frozenset(), star_line),)

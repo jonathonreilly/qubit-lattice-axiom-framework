@@ -3,7 +3,7 @@
 | Priority | Opportunity | Present boundary | Completion evidence needed |
 |---|---|---|---|
 | Complete | Primary and independent checker execution | Root reviewed all final source lines; 9+9 PASS and 11+18 effective mutations | Canonical committed-source caches co-land |
-| Gate | Freeze and validate the publication pack | Evidence complete; final pack review and publication gates pending | Cold final note/pack review, full pipeline, strict lint, changed-evidence, links, vocabulary, compilation, whitespace, and nonempty helper mapping |
+| Complete | Freeze and validate the publication pack | Final cold review and all publication gates pass | Full pipeline, strict lint, changed evidence, links, vocabulary, compilation, whitespace, and populated helper mapping |
 | Next science | Test continuing transport on the same native Record/matter carrier | Sharp total number and negative energy do not imply propagation | A declared transport observable with branch and ensemble bounds under repeated events |
 | Next science | Construct a physical local formation/apparatus law | Event occurrence, selector, clock, and apparatus locality are supplied | Explicit local dynamics and resource account compatible with permanent edge Records |
 | Follow-up | Replace or instantiate the continuous battery | General bounded-energy carrier is infinite-dimensional; an eight-level two-active-term square fixture is already checked | Extend beyond that narrow commensurate fixture to general spectra, with a controlled approximation and stated error |

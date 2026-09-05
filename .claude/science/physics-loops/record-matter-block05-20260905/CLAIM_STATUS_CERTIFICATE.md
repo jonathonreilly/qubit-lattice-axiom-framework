@@ -10,7 +10,7 @@
 | Artifact role | theorem |
 | Audit | unset; independent audit lane owns any verdict |
 | Repository evidence | Root proof and source review complete; 9 primary and 9 checker PASS, 29 effective failing mutations, canonical source-bound caches |
-| Publication | final pack review complete; publication gates pending |
+| Publication | final pack review and all publication gates complete; ready for PR |
 
 The current blocker is repeated local Record formation sustaining a viable
 matter background with consistent energy accounting. This block supplies one
@@ -51,5 +51,5 @@ for its two-active-term square with two zero coefficients; that narrow
 commensurate fixture is separate from the continuous general construction.
 
 Final source identities and finite scopes are in the note and ARTIFACT_PLAN.md.
-No completed publication pipeline, audit status, or effective retained grade is
-certified at this pre-publication-gate checkpoint.
+Publication checks are complete as recorded in REVIEW_HISTORY.md. No audit
+status or effective retained grade is certified.

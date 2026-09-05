@@ -12,4 +12,4 @@ next_trace_action: publish the reviewed native physical edge instrument, then te
 
 The candidate connects existing physical edge projectors to a faithful matter dictionary through every history. Nonbridges preserve its state functional; bridges project component parity that becomes readable from boundary Record content. Number and energy share this carrier. The physical edge process is an alternative to the previous occupation-site-deletion instrument; it does not implement that instrument.
 
-Bulk conserved number includes particles on inactive isolated vertices. Negative bulk energy and number do not establish propagating matter, renewal or a framework dynamics. Root proof/source review and both canonical executions are complete; final pack and publication gates remain.
+Bulk conserved number includes particles on inactive isolated vertices. Negative bulk energy and number do not establish propagating matter, renewal or a framework dynamics. Root proof/source review and both canonical executions are complete; final pack and publication gates also pass.

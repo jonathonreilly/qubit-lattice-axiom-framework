@@ -38,6 +38,6 @@ case and are not identified with finite open `Z^3` subgraphs.
 
 This is an exact positive result under named inputs, not a general no-go and not
 a TOE closure. Root-reviewed executions, effective failing mutations and canonical caches are
-complete. Final pack, pipeline, helper and publication checks remain pending.
+complete. Final pack, pipeline, helper and publication checks also pass.
 Primary and checker are separate-context agents from the same model family;
 that independence limit is disclosed. Audit remains unset.

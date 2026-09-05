@@ -5,7 +5,7 @@ base: e249016f759f224d9b429932cd0d1db4d452dc1a
 campaign_start_utc: 2026-09-04T19:41:09Z
 campaign_deadline_utc: 2026-09-05T19:41:09Z
 checkpoint_minutes: 15
-phase: frozen_science_publication_gates
+phase: ready_for_pr
 claim_type: bounded_theorem
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
@@ -19,8 +19,8 @@ target_claim_id: null
 target_blocker_text: Repeated local Record formation sustaining a viable matter background with consistent energy accounting.
 source_of_blocker_text: user_goal
 runner_status: primary_9_pass_checker_9_pass
-pr_status: awaiting_publication_gates
+pr_status: ready_for_pr
 open_pr_intake_count: 232
 photons: reserved_for_other_worker
-next_action: frozen full gates, then PR
+next_action: push and open PR; then continue the pulse-propagation-Record detector frontier
 stop_condition: fixed campaign deadline; preserve outputs, report, release owned lock and pause heartbeat

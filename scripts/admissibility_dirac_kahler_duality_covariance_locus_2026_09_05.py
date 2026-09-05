@@ -251,3 +251,215 @@ def authority_certificate(main_head: str) -> AuthorityCertificate:
         not any(is_hash(v) for v in stale_blobs),
         MACHINERY_IMPORT_LANDED,
         readable)
+
+
+# ---------------------------------------------------------------------------
+# B. the imposed objects and the NOT-CLAIMED keys, as measured literals
+# ---------------------------------------------------------------------------
+IMPOSED_OBJECTS = (
+    "the cube complex, corners, degree indices and wedge signature (Block 209; Block 213's eta/lane_rules/raising_rules)",
+    "Block 211's six-face-compatible cell-form family with its ties, four gauge classes and four free duality parameters",
+    "Block 211's corner-sign gauge D -> E D E (64 sign vectors, four classes)",
+    "the 24 proper cubic rotations (Block 201's signed permutations, det = +1) and the corner action BUILT HERE",
+    "Block 105's two assemblies (onsite, overlap) through Block 213/214's rules",
+    "Block 214's plane D16 = D34 = -D25 and its facts F-1..F-4 (the loci whose name is sought)",
+)
+REGISTERED_OBJECTS = ()
+ADOPTED_OBJECTS = ()
+GRAVITY_SUPPLIED_CLAIMED = False
+COVARIANCE_INHERITED_CLAIMED = False
+SUBGROUP_SELECTED_CLAIMED = False
+ASSEMBLY_DECIDED_CLAIMED = False
+PARAMETER_VALUE_SELECTED_CLAIMED = False
+READINGS_LICENSED_CLAIMED = False
+CONTINUUM_LIMIT_CLAIMED = False
+CONE_IS_SPACETIME_CONE_CLAIMED = False
+UNSUPPLIED_GRAVITY_STRUCTURES = (
+    "lapse function", "shift vector", "ADM phase space", "Hamiltonian constraint",
+    "momentum/diffeomorphism constraint", "first-class constraint algebra",
+    "Dirac closure", "Dirac observable", "gauge orbit and its quotient",
+)
+SCOPED_HEADLINE_WORDS = ("COVARIANCE", "LOCUS", "STAR", "GAUGE", "PLANE")
+AXIOM_COVARIANCE_CLAUSE = ("There is one fixed nearest-neighbor admissibility rule, covariant under lattice\n"
+                           "translations and proper cubic rotations.")
+READINGS = (
+    "R1 the cell form inherits the Admissibility axiom's proper-cubic-rotation covariance (the antecedent; not established, not asserted)",
+    "R2 the plane D16 = D34 = -D25 is preferred because it is the star line (not established: only the conditional is claimed)",
+    "R3 the full group O is 'the' symmetry of the cell form (not established: no subgroup is selected)",
+    "R4 the sign gauge is a physical gauge symmetry (not established: it is Block 211's congruence of one solved system)",
+    "R5 the star line is a light-cone or a metric statement (not established: the cone is a polynomial identity)",
+    "R6 strict covariance killing the shears means the curved family is unphysical (not established: no dynamics, no selection)",
+)
+CHECK_VERDICT = "FABLE-PRIMARY-REFUTING-CHECKER-PENDING"
+
+# the parameters, the corners and the moduli
+PARAMETER_NAMES = ("D07", "D16", "D25", "D34")
+PARAMETER_SYMBOLS = sp.symbols(" ".join(PARAMETER_NAMES))
+A07, B16, C25, D34 = PARAMETER_SYMBOLS
+G0, G1, V0, V1 = sp.symbols("g0 g1 v0 v1")
+MODULI = (G0, G1, V0, V1)
+SUM = sp.Symbol("s")
+KT, KX, KY = b213.KT, b213.KX, b213.KY
+KAPPA = (KT, KX, KY)
+CORNERS = b209.CORNERS
+DEGREE_INDICES = b209.DEGREE_INDICES
+PAIRS = ((0, 7), (1, 6), (2, 5), (4, 3))
+DIRECTION_NAMES = ("t", "x", "y")
+GAUGE_CLASSES = ((1, 1), (1, -1), (-1, 1), (-1, -1))
+QUARTER = sp.Rational(1, 4)
+
+# ---------------------------------------------------------------------------
+# exact helpers -- no float, no tolerance and NO nsimplify anywhere
+# ---------------------------------------------------------------------------
+NSIMPLIFY_TOKEN = "sp." + "nsimplify("
+
+
+def nsimplify_occurrences() -> int:
+    return Path(__file__).read_text(encoding="utf-8").count(NSIMPLIFY_TOKEN)
+
+
+def float_literal_occurrences() -> int:
+    tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    return sum(1 for node in ast.walk(tree)
+               if isinstance(node, ast.Constant) and type(node.value) is float)
+
+
+def float_call_sites() -> int:
+    tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    return sum(1 for node in ast.walk(tree)
+               if isinstance(node, ast.Call)
+               and isinstance(node.func, ast.Name) and node.func.id == "float")
+
+
+def residual_count(matrix) -> int:
+    return b213.residual_count(matrix)
+
+
+def corner_index(corner: tuple) -> int:
+    return CORNERS.index(tuple(corner))
+
+
+# ---------------------------------------------------------------------------
+# C. THE ROTATIONS, THE WEDGE, THE CORNER ACTION -- built here, then verified
+# ---------------------------------------------------------------------------
+def rotations() -> tuple:
+    """Block 201's signed 3 x 3 permutation matrices with det = +1: the
+    proper cubic rotations of the direction space (t, x, y)."""
+    return tuple(sp.ImmutableMatrix(m) for m in b201.signed_permutations())
+
+
+def raising_matrix() -> sp.Matrix:
+    return b214.raising_matrix()
+
+
+def unit_raising(direction: int) -> sp.Matrix:
+    """D(e_mu): the raising part at the unit vector kappa = e_mu -- left
+    multiplication by the basis 1-form of that direction, read off the lane's
+    own D(kappa) and nothing else."""
+    point = {k: (1 if i == direction else 0) for i, k in enumerate(KAPPA)}
+    return raising_matrix().subs(point)
+
+
+def wedge_rule() -> dict:
+    """THE LANE'S WEDGE SIGNATURE, MEASURED FROM D: for each direction mu and
+    each corner c without mu, the sign of D(e_mu)[c + e_mu, c]."""
+    rule = {}
+    for mu in range(3):
+        d = unit_raising(mu)
+        for c in CORNERS:
+            if c[mu] == 1:
+                continue
+            target = tuple(c[k] + (1 if k == mu else 0) for k in range(3))
+            rule[(mu, c)] = d[corner_index(target), corner_index(c)]
+    return rule
+
+
+def ordered_monomial_sign(mu: int, c: tuple) -> int:
+    """The sign of e_mu ^ e_c in the ORDERED monomial basis t < x < y: minus
+    one for every occupied direction of c before mu."""
+    return (-1) ** sum(c[:mu])
+
+
+def corner_action(rotation: sp.Matrix) -> sp.Matrix:
+    """L(R) e_c = (R e_mu1) ^ (R e_mu2) ^ ... for c = {mu1 < mu2 < ...}: the
+    multiplicative extension of the direction action THROUGH THE LANE'S WEDGE
+    (products of D(e_mu) applied to the empty corner), so every sign is the
+    lane's own."""
+    unit = [unit_raising(mu) for mu in range(3)]
+    images = [sum((rotation[nu, mu] * unit[nu] for nu in range(3)), sp.zeros(8, 8)) for mu in range(3)]
+    lifted = sp.zeros(8, 8)
+    vacuum = sp.zeros(8, 1)
+    vacuum[0, 0] = 1
+    for c in CORNERS:
+        vector = vacuum
+        for mu in reversed([mu for mu in range(3) if c[mu] == 1]):
+            vector = images[mu] * vector
+        lifted[:, corner_index(c)] = vector
+    return sp.ImmutableMatrix(lifted)
+
+
+def direction_map(rotation: sp.Matrix) -> tuple:
+    """(pi, s): column mu of R has its nonzero at row pi(mu) with sign s_mu."""
+    pi, signs = [], []
+    for mu in range(3):
+        nu = [n for n in range(3) if rotation[n, mu] != 0][0]
+        pi.append(nu)
+        signs.append(int(rotation[nu, mu]))
+    return tuple(pi), tuple(signs)
+
+
+def orientation_lift(rotation: sp.Matrix) -> sp.Matrix:
+    """THE SIGN RULE, STATED: L(R) e_c = (prod of the direction signs on c) x
+    (sign of the permutation sorting the image directions) e_{R c}.  Compared
+    against the wedge construction at gate C-2."""
+    pi, signs = direction_map(rotation)
+    lifted = sp.zeros(8, 8)
+    for c in CORNERS:
+        occupied = [mu for mu in range(3) if c[mu] == 1]
+        image = [pi[mu] for mu in occupied]
+        sign = 1
+        for mu in occupied:
+            sign *= signs[mu]
+        for i in range(len(image)):
+            for j in range(i + 1, len(image)):
+                if image[i] > image[j]:
+                    sign = -sign
+        target = tuple(1 if nu in image else 0 for nu in range(3))
+        lifted[corner_index(target), corner_index(c)] = sign
+    return sp.ImmutableMatrix(lifted)
+
+
+def monomial_intertwiners(rotation: sp.Matrix) -> tuple:
+    """MEASURE the sign rule instead of guessing it: among the 256 signed
+    versions of the corner permutation of R, exactly those satisfying
+    T D(kappa) T^-1 = D(R kappa) -- expected to be +-L(R) and nothing else."""
+    lifted = corner_action(rotation)
+    permutation = lifted.applyfunc(abs)
+    dk = raising_matrix()
+    rotated = dk.subs({k: sum(rotation[i, j] * KAPPA[j] for j in range(3)) for i, k in enumerate(KAPPA)},
+                      simultaneous=True)
+    found = []
+    for signs in itertools.product((1, -1), repeat=8):
+        t = sp.diag(*signs) * permutation
+        if residual_count((t * dk * t.T - rotated).applyfunc(sp.expand)) == 0:
+            found.append(sp.ImmutableMatrix(t))
+    return tuple(found)
+
+
+def matrix_order(matrix: sp.Matrix) -> int:
+    power = matrix
+    for n in range(1, 25):
+        if power == sp.eye(8):
+            return n
+        power = power * matrix
+    return 0
+
+
+def axis_type(rotation: sp.Matrix) -> str:
+    """The rotation axis from the +1 eigenspace: face (a coordinate axis),
+    edge (two nonzero coordinates) or body (the diagonal)."""
+    space = (rotation - sp.eye(3)).nullspace()
+    if len(space) == 3:
+        return "identity"
+    vector = space[0]
+    return {1: "face", 2: "edge", 3: "body"}[sum(1 for x in vector if x != 0)]

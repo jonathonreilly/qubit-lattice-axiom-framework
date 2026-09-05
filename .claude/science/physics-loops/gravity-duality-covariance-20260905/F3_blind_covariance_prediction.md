@@ -403,3 +403,117 @@ remarks:
 
 On the star line `(D16, D25, D34) = lam(1, -1, 1)`, `s = D07 + lam`: Q2's covariant locus
 does **not** force `s = 0`; only the fold's own covariance, or parity, does.
+
+---
+
+## Q5 — THE PRINCIPLE
+
+### The covariance clause, verbatim
+
+`docs/MINIMAL_AXIOMS_2026-06-29.md`, Admissibility / Local Constraint, lines 56-57:
+
+> "There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+> translations and proper cubic rotations."
+
+and the sentence it governs, lines 59-61:
+
+> "For each site, the probability distribution over the possibilities is
+> determined by, and varies with, the nearest-neighbor conditions."
+
+### What the clause attaches to
+
+The clause is about **the rule** — a map from nearest-neighbour conditions to a probability
+distribution on the one-site domain `M_2(C)`. It is not about any matrix. Three separate
+things would have to be **supplied** before the cell form `H` could inherit it:
+
+1. **An identification bridge.** A retained derivation identifying `H` (or the pencil
+   `(M, H0)`) with content of that rule. Nothing in the inputs does this: Block 214's own
+   charter says (line 139) "Every object below is an **imposed measured object** of the
+   landed chain, read through its own runner", and the axiom memo says explicitly that
+   Admissibility "does not ... choose a Hamiltonian or transfer operator, supply
+   transition-probability or weight values" (lines 118-121). A weight is exactly what `H`
+   is. **NOT SUPPLIED.**
+2. **An action on the eight corners.** The Lattice axiom supplies rotations of `Z^3`
+   (line 38); it does not supply an action on the corner index. Q2's `rho` is the exterior
+   power, and it is the *unique* choice that intertwines the imposed raising part
+   (`rho D(kappa) rho^-1 = D(R kappa)`, COMPUTED) — but that uniqueness is a property of
+   the imposed kernel, not of the axiom. Reading the corner index as a form index is itself
+   a bridge. **NOT SUPPLIED** (though pinned by the lane's own construction, which is why
+   Q2's answer is stable).
+3. **An action on the conditions.** Covariance of a rule is
+   `rule(R . condition) = R . rule(condition)`; **invariance** `R H R^T = H` of a single
+   form follows only for conditions fixed by `R`. So one needs the rotation action on the
+   nearest-neighbour conditions (which moduli/sign data `R` produces). **NOT SUPPLIED.**
+
+**The one thing the inputs do let me say about item 3 (PROVED).** Block 211's variety is
+*per-offset isotropic* (line 214-215: "the six-face-compatible moduli variety is exactly
+the per-offset-isotropic family"), so the conditions carry no direction labels except the
+six shear signs, whose content is only `(pi0, pi1)` (Block 211 lines 239-242) — and
+`(pi0, pi1)` is rotation invariant (Q3, PROVED). **If** the natural action is used, every
+rotation therefore fixes every condition of the family, and covariance-of-the-rule
+collapses to *invariance up to the corner-sign gauge* of each cell form — precisely Q3's
+twisted covariance, not Q2's untwisted covariance. That is the sharpest statement the
+inputs support, and it is conditional on items 1-3.
+
+### Classification
+
+**OPEN / NOT SUPPLIED — a bridge obligation, not a theorem.** It is exactly the case the
+axiom memo's Qualification names (lines 86-89): "Further physical structure requires a
+retained derivation or bridge, or explicit approved-primitive registration, before use as
+a premise. A choice not fixed by the supplied structure remains a named conditional or open
+dependency." I do not decide it. I note only that it is *decidable in either direction by
+supplying item 1 alone*, and that the two available readings give different answers:
+
+```text
+reading A  (H must be rotation-INVARIANT):        flat cell, X = gamma Star, D07 free.
+reading B  (H must be invariant UP TO GAUGE):     any curved cell, X = Star up to gauge
+                                                  and scale, D07 free.
+neither reading constrains D07; only parity (not supplied) does.
+```
+
+### One corollary worth recording (PROVED)
+
+If `rho H rho^T = H` then `M(R kappa) = rho M(kappa) rho^T`, because
+`rho D(kappa) rho^T = D(R kappa)`. Hence for a covariant cell form the principal part's
+`det M`, its factorization type and its cone are **cubic-rotation-invariant functions of
+`kappa`**. Block 214's off-plane quartic at `W1` with `D16` alone (line 274),
+`6 kt^2 ky^2 - 3 kt kx ky^2 + 6 kx^2 ky^2`, is manifestly not such a function (it carries
+`kt kx ky^2` and no `ky^4`), which is consistent: that slice is off both covariance loci.
+
+---
+
+## SUMMARY OF PREDICTIONS
+
+```text
+Q1  star signs sigma = (+,+,-,+,+,-,+,+); 1-form block (+,-,+);
+    X = lam Star  <=>  D16 = D34 = -D25.  The star line IS Block 214's plane.  PROVED.
+Q2  rho = exterior power; 24, closed, orders 1/9/8/6, intertwines D.  Full O forces the
+    flat cell AND the plane; the plane is forced by exactly the subgroups with a 3-fold
+    axis (C3, S3, A4, O); nothing forces D16=D25=D34=0; D07 is never constrained.
+Q3  curvature survives full-O twisted covariance for every sign cell; with parameters on,
+    the twisted locus is the gauge orbit of the star line (all-plus: D16=D25=D34).
+    Largest untwisted subgroup with curvature = trigonal D3, order 6, in 16 of 64 cells,
+    and it forces exactly the plane.  Those 16 cells = the cells where twisted locus =
+    union plane.
+Q4  s is NOT invariant (invariants: D07 and D16-D25+D34); P111 is covariant under only 8
+    of 24; rotation covariance of the folded overlap forces s = 0; the exact principle is
+    Gamma H0 Gamma = H0 with Gamma = diag((-1)^grade) = rho(-I), i.e. inversion covariance,
+    which the Lattice axiom does not supply.
+Q5  the clause governs the RULE; three items (identification bridge, corner action,
+    condition action) would have to be supplied; none is.  OPEN / NOT SUPPLIED.
+```
+
+## COULD NOT TEST / declared dependencies
+
+- **Q4 depends on one property of `H0(0)` I could not read**: that the parameter-free
+  overlap fold has no entry in the four antidiagonal positions (it is how Block 214 writes
+  the fold at lines 168-169 — all parameter content sits in `P111`). If `H0(0)` did carry a
+  parameter-free antidiagonal part `A0`, covariance would read
+  `rho(A0 + (s/4)P111) rho^T = A0 + (s/4)P111` and would fix `s` to some constant rather
+  than necessarily `0`. Stated as a dependency, not paraphrased away.
+- I did not compute the covariance of the *pencil branches*, the coincidence locus, or the
+  positivity region under rotations; nothing here touches Block 211's `N3`/`N4` bounds.
+- I did not enumerate improper elements beyond the inversion `Gamma`; since
+  `O_h = O x {1, -I}`, that is complete for the full cubic group (`O_h` covariance =
+  Q2's `O` answer plus `Gamma`, which kills all four parameters).
+- No claim is made about which reading (A or B of Q5) the lane should adopt.

@@ -224,7 +224,7 @@ def family_b(checks: Checks) -> None:
     cols_one = all(sp.simplify(sum(K[a][s] for a in range(M)) - 1) == 0 for s in range(M))
     checks.check("B1", sym and rows_one and cols_one and sp.expand(z1 - (p + q + 4 * r)) == 0, "K = phi/Z_1 symmetric, rows and columns sum to one (symbolic), Z_1 = p+q+4r")
     power = 3 if mut("z2_identity_wrong_power") else 2
-    e1 = all(sp.expand(sum(phi[s][a] * phi[s][b] for s in range(M)) - z1**power * sum(K[a][s] * K[s][b] for s in range(M))) == 0 for a in range(M) for b in range(M))
+    e1 = all(sp.cancel(sum(phi[s][a] * phi[s][b] for s in range(M)) - z1**power * sum(K[a][s] * K[s][b] for s in range(M))) == 0 for a in range(M) for b in range(M))
     checks.check("B2", e1, "E1: Z_2(a,b) = Z_1^2 (K^2)(a,b) symbolic for all 36 pairs")
     unif = all(sp.simplify(sum(sp.Rational(1, 6) * K[a][s] for a in range(M)) - sp.Rational(1, 6)) == 0 for s in range(M))
     checks.check("B3", unif, "the uniform law is K-invariant (symbolic)")
@@ -341,8 +341,8 @@ def family_c(checks: Checks) -> None:
     checks.check("C4", all(res[("cycle", t)][2][0] for t in TRIPLES), "plaquette edge with exterior (P(e_x), P(-e_y)): all 36 complements, both triples")
     checks.check("C5", all(res[("cycle", t)][1][0] for t in TRIPLES), "plaquette site with exterior: all 216 complements, both triples")
     grp = res[("cube", TRIPLES[0])]
-    fr = grp[2][1] == 6 ** 4 and grp[2][2] == 2 and grp[1][1] == 6 ** 3 and grp[1][2] == 3 and res[("cycle", TRIPLES[0])][1][2] == 1
-    checks.check("C6", fr, "finite range: cube edge 1296 adjacent-record classes (2 non-adjacent sites), site 216 classes (3), plaquette site (1)")
+    fr = grp[2][1] == 6 ** 4 and grp[2][2] == 2 and grp[1][1] == 6 ** 3 and grp[1][2] == 4 and res[("cycle", TRIPLES[0])][1][2] == 1
+    checks.check("C6", fr, "finite range: cube edge 1296 adjacent-record classes (2 non-adjacent sites), site 216 classes (4), plaquette site (1)")
 
 
 # ==================================================================== family D
@@ -550,11 +550,13 @@ def rat_of(x: Fraction):
     return sp.Rational(x.numerator, x.denominator)
 
 
-def dec(x: Fraction, digits: int) -> str:
-    """Exact truncated decimal expansion of a rational (integer arithmetic; a label, not evidence)."""
+def dec(x: Fraction, digits: int, up: bool = False) -> str:
+    """Exact decimal expansion of a rational rounded down (or up when up=True); integer arithmetic; a label, not evidence."""
     sign = "-" if x < 0 else ""
     x = abs(x)
     scaled = (x.numerator * 10 ** digits) // x.denominator
+    if up and scaled * x.denominator != x.numerator * 10 ** digits:
+        scaled += 1
     s = str(scaled).rjust(digits + 1, "0")
     return f"{sign}{s[:-digits]}.{s[-digits:]}"
 
@@ -697,3 +699,255 @@ def perron_data(Q, K):
         return cp, factors, mp, lo, hi
     lo, hi = bisect_root(mp, lo, hi, Fraction(1, 10 ** 30))
     return cp, factors, mp, lo, hi
+
+
+CHARPOLY_312_W3 = lam**5 * (lam**3 - 7312 * lam**2 + 2578432 * lam - 221134848)
+
+
+def center_row_value(rows, T, Avec, n: int) -> Fraction:
+    """Center-row pair-parallel probability of the n-row static strip: w = (A T^c)(rho) (T^(n-1-c) 1)(rho)."""
+    R = len(rows)
+    c = n // 2
+    left = list(Avec)
+    for _ in range(c):
+        left = [sum(left[i] * T[i][k] for i in range(R)) for k in range(R)]
+    right = [1] * R
+    for _ in range(n - 1 - c):
+        right = [sum(T[i][k] * right[k] for k in range(R)) for i in range(R)]
+    w = [left[k] * right[k] for k in range(R)]
+    return Fraction(sum(w[k] for k in range(R) if rows[k][0] == rows[k][1]), sum(w))
+
+
+def static_strip(checks: Checks, report: dict, W: int, triple, exact: bool) -> dict:
+    phi = phi_table(triple)
+    rows = strip_rows(W)
+    R = len(rows)
+    A, V = transfer_pieces(W, phi)
+    orbits, seen = row_orbits(rows)
+    Kn = len(orbits)
+    reps = [O[0] for O in orbits] if W == 3 else rows
+    T = [[V(r, r2) * A(r2) for r2 in rows] for r in rows]
+    Q = [[sum(V(orbits[a][0], r2) * A(r2) for r2 in orbits[b]) for b in range(Kn)] for a in range(Kn)]
+    out = {"orbits": Kn, "commutes": commutes(rows, A, V, reps)}
+    cp, factors, mp, lo, hi = perron_data(Q, Kn)
+    out["cp"] = cp
+    out["cp_literal_ok"] = sp.expand(cp.as_expr() - CHARPOLY_312_W3) == 0 if (W == 3 and triple == (3, 1, 2)) else True
+    if mut("charpoly_coefficient_off") and W == 3 and triple == (3, 1, 2):
+        out["cp_literal_ok"] = sp.expand(cp.as_expr() - (CHARPOLY_312_W3 + lam**7)) == 0
+    out["mp_degree"] = mp.degree()
+    out["lam_interval"] = (lo, hi)
+    F = Field(mp)
+    d = F.d
+    lam1 = F.el([0, 1])
+    n = Kn - 1
+    Mx = [[F.sub(F.el([Q[i][j]]), lam1 if i == j else F.el([0])) for j in range(1, Kn)] + [F.scal(Fraction(-1), F.el([Q[i][0]]))] for i in range(1, Kn)]
+    for col in range(n):
+        piv = next(r for r in range(col, n) if not F.is_zero(Mx[r][col]))
+        Mx[col], Mx[piv] = Mx[piv], Mx[col]
+        pinv = F.inv(Mx[col][col])
+        Mx[col] = [F.mul(pinv, x) for x in Mx[col]]
+        for r in range(n):
+            if r != col and not F.is_zero(Mx[r][col]):
+                f_ = Mx[r][col]
+                Mx[r] = [F.sub(a_, F.mul(f_, b_)) for a_, b_ in zip(Mx[r], Mx[col])]
+    x = [F.el([1])] + [Mx[i][n] for i in range(n)]
+    qx_ok = all(F.is_zero(F.sub([sum(Q[i][j] * x[j][k] for j in range(Kn)) for k in range(d)], F.mul(lam1, x[i]))) for i in range(Kn))
+    positive = all(horner_interval(x[i], lo, hi)[0] > 0 for i in range(Kn))
+    out["perron_vector_ok"] = qx_ok and positive
+    rho1 = [list(x[seen[r]]) for r in rows]
+    if mut("eigvec_residual_nonzero"):
+        rho1[1] = F.add(rho1[1], F.el([1]))
+    t_ok = True
+    left_ok = True
+    for i in range(R):
+        acc = [sum(T[i][j] * rho1[j][k] for j in range(R)) for k in range(d)]
+        if not F.is_zero(F.sub(acc, F.mul(lam1, rho1[i]))):
+            t_ok = False
+            break
+    Avec = [A(r) for r in rows]
+    for j in range(R):
+        acc = [sum(Avec[i] * rho1[i][k] * T[i][j] for i in range(R)) for k in range(d)]
+        if not F.is_zero(F.sub(acc, F.scal(Fraction(Avec[j]), F.mul(lam1, rho1[j])))):
+            left_ok = False
+            break
+    out["lift_ok"] = t_ok and left_ok
+    num = F.el([0])
+    den = F.el([0])
+    for k, r in enumerate(rows):
+        sq = rho1[k] if mut("limit_law_uses_rho_not_squared") else F.mul(rho1[k], rho1[k])
+        t = F.scal(Fraction(Avec[k]), sq)
+        den = F.add(den, t)
+        if r[0] == r[1]:
+            num = F.add(num, t)
+    s = F.mul(num, F.inv(den))
+    res = sp.Poly(sp.resultant(mp.as_expr(), yy - F.to_poly(s).as_expr(), lam), yy, domain="QQ")
+    rfactors = [sp.Poly(f, yy, domain="QQ") for f, _m in sp.factor_list(res.as_expr())[1]]
+    glo, ghi = horner_interval(s, lo, hi)
+    while ghi - glo >= Fraction(1, 10 ** 30):
+        lo, hi = bisect_root(mp, lo, hi, (hi - lo) / 2)
+        glo, ghi = horner_interval(s, lo, hi)
+    if mut("s_inf_enclosure_contains_formation_value"):
+        glo, ghi = glo - Fraction(1, 10), ghi + Fraction(1, 10)
+    minpolys = [P_ for P_ in rfactors if P_.count_roots(rat_of(glo), rat_of(ghi)) >= 1]
+    out["s_minpoly"] = minpolys[0] if len(minpolys) == 1 else None
+    out["s_identified"] = len(minpolys) == 1 and minpolys[0].count_roots(rat_of(glo), rat_of(ghi)) == 1 and ghi - glo < Fraction(1, 10 ** 30)
+    out["s_enclosure"] = (glo, ghi)
+    form = Fraction(triple[0], triple[0] + triple[1] + 4 * triple[2])
+    out["excludes_formation"] = not (glo <= form <= ghi)
+    seq = [(n_, center_row_value(rows, T, Avec, n_)) for n_ in (3, 5, 7, 9, 11, 13)]
+    if mut("finite_n_sequence_shuffled"):
+        seq[0], seq[-1] = (seq[0][0], seq[-1][1]), (seq[-1][0], seq[0][1])
+    dist = [max(glo - v, v - ghi, Fraction(0)) for _n, v in seq]
+    out["finite_n"] = seq
+    out["finite_n_ok"] = all(dist[i + 1] < dist[i] for i in range(len(dist) - 1)) and dist[-1] < Fraction(1, 10 ** 6)
+    # second eigenvalue: every root of every factor real; m = max modulus of the non-Perron roots (exact rational bound)
+    all_real = all(P_.count_roots() == P_.degree() for P_, _m in factors)
+    bounds = []
+    for P_, _m in factors:
+        for (a, b), _k in P_.intervals():
+            a, b = frac_of(a), frac_of(b)
+            if a != b:
+                a, b = bisect_root(P_, a, b, Fraction(1, 10 ** 20))
+            if not (P_ == mp and b >= lo):
+                bounds.append(max(abs(a), abs(b)))
+    m_bound = max(bounds) / (2 if mut("second_eigenvalue_bound_too_small") else 1)
+    inside = all(P_.count_roots(rat_of(-m_bound), rat_of(m_bound)) == P_.degree() - (1 if P_ == mp else 0) for P_, _m in factors)
+    out["second_ok"] = all_real and inside and m_bound < lo
+    out["m_bound"] = m_bound
+    out["ratio_bound"] = m_bound / lo
+    if exact:
+        print(f"exact W={W} {triple}: charpoly={cp.as_expr()}")
+        print(f"exact W={W} {triple}: lam1 in [{lo}, {hi}]")
+        print(f"exact W={W} {triple}: s_inf minimal polynomial = {out['s_minpoly'].as_expr() if out['s_minpoly'] is not None else None}")
+        print(f"exact W={W} {triple}: s_inf in [{glo}, {ghi}]")
+        print(f"exact W={W} {triple}: finite n: {[(n_, str(v)) for n_, v in seq]}")
+        print(f"exact W={W} {triple}: m = {m_bound}; ratio bound = {out['ratio_bound']}")
+    return out
+
+
+def family_e(checks: Checks, report: dict, exact: bool) -> None:
+    res = {(W, t): static_strip(checks, report, W, t, exact) for W in (3, 2) for t in TRIPLES}
+    n3 = 9 if mut("orbit_count_wrong") else 8
+    checks.check("E1", all(res[(3, t)]["orbits"] == n3 for t in TRIPLES) and all(res[(2, t)]["orbits"] == 3 for t in TRIPLES), f"row orbits under G: {res[(3, TRIPLES[0])]['orbits']} at W = 3, {res[(2, TRIPLES[0])]['orbits']} at W = 2")
+    checks.check("E2", all(r["commutes"] for r in res.values()), "T(g rho, g rho') = T(rho, rho') for all 48 g: exhaustive at W = 2, orbit representatives x all rows at W = 3")
+    checks.check("E3", all(r["cp_literal_ok"] for r in res.values()), "charpoly of Q at W = 3, (3,1,2) = lam^5 (lam^3 - 7312 lam^2 + 2578432 lam - 221134848)")
+    degs = {(W, t): res[(W, t)]["mp_degree"] for W in (3, 2) for t in TRIPLES}
+    checks.check("E4", all(r["lam_interval"][1] - r["lam_interval"][0] < Fraction(1, 10 ** 30) and r["lam_interval"][0] > 0 for r in res.values()), f"Perron root: minimal polynomial degrees W3 {degs[(3, TRIPLES[0])]},{degs[(3, TRIPLES[1])]} W2 {degs[(2, TRIPLES[0])]},{degs[(2, TRIPLES[1])]}; isolating widths < 10^-30")
+    checks.check("E5", all(r["perron_vector_ok"] for r in res.values()), "Perron vector of Q over Q(lam_1): Q x = lam_1 x on every row, all entries positive on the interval")
+    checks.check("E6", all(r["lift_ok"] for r in res.values()), "lift: T rho_1 = lam_1 rho_1 and (A rho_1)^T T = lam_1 (A rho_1)^T exactly in Q(lam_1), 216 and 36 rows")
+    checks.check("E7", all(r["s_identified"] for r in res.values()), "s_inf: one irreducible factor of the resultant has exactly one root in the enclosure; width < 10^-30")
+    for t in TRIPLES:
+        r = res[(3, t)]
+        glo, ghi = r["s_enclosure"]
+        print(f"info W=3 {t}: lam_1 = {dec(r['lam_interval'][0], 12)}..; s_inf in [{dec(glo, 22)}, {dec(ghi, 22, True)}] (rounded outward), formation value {Fraction(t[0], t[0] + t[1] + 4 * t[2])}")
+        print(f"info W=3 {t}: finite n center row: " + ", ".join(f"n={n_} {dec(v, 10)}" for n_, v in r["finite_n"]))
+        print(f"info W=3 {t}: |lam_j| <= m = {dec(r['m_bound'], 6, True)} for all non-Perron roots (all roots real); |lam_2/lam_1| <= {dec(r['ratio_bound'], 10, True)}")
+    for t in TRIPLES:
+        r = res[(2, t)]
+        print(f"info W=2 {t}: s_inf in [{dec(r['s_enclosure'][0], 18)}, {dec(r['s_enclosure'][1], 18, True)}]; |lam_2/lam_1| <= {dec(r['ratio_bound'], 8, True)}; min poly degree {r['mp_degree']}")
+    checks.check("E8", all(r["excludes_formation"] for r in res.values()), "the enclosure of s_inf excludes the formation value p/(p+q+4r) at W = 2, 3, both triples")
+    checks.check("E9", all(r["finite_n_ok"] for r in res.values()), "finite-n center-row values n = 3..13: distance to the enclosure strictly decreasing, final < 10^-6")
+    checks.check("E10", all(r["second_ok"] for r in res.values()), "second eigenvalue: all charpoly roots real; every non-Perron root in [-m, m] with rational m < lam_1 (Sturm)")
+    report["E"] = res
+
+
+# ==================================================================== family F
+FENCES = (
+    "This note selects no physical formation order; the row sweep is a declared order whose exact solvability is a property of two-recorded-neighbor sweeps on two-dimensional windows.",
+    "No statement is made about the static law of the plane, about uniqueness of an infinite-volume static law on the cubic lattice, or about any three-recorded-neighbor sweep; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+    "This note does not derive, explain, bear on or decide the parked statistical bridge, the Born form, or the gravity lane's action.",
+    "Every negative sentence in this note is an exact statement on the declared strips and windows or a corollary of Theorems E and F at their stated scope; none is a route no-go beyond that scope.",
+)
+FORBIDDEN = (
+    "selects the physical rule", "derives the Born", "explains the gate", "bears on the gate",
+    "infinite-lattice law", "the framework's action is", "the order is physical", "certified",
+    "closed the gate", "axiom is amended", "fires wake condition",
+    "distinct orders give distinct laws", "witnesses the variation clause",
+    "washes out", "the physical order", "unique on the lattice", "Dobrushin", "the plane's static law is",
+)
+CLAIM_INJECTIONS = {
+    "claim_order_selected": "Therefore the row sweep is the physical order.",
+    "claim_plane_static": "The plane's static law is the limit law computed here.",
+    "claim_z3_uniqueness": "The infinite-volume static law is unique on the lattice.",
+    "claim_washout": "Along the sweep the normalizer history washes out.",
+    "claim_gate_fired": "This note fires wake condition 1 of the parked decision.",
+}
+SCAN_MARKER = "float-scan-marker-line"
+
+
+def family_f(checks: Checks, note_text: str) -> None:
+    text = note_text
+    for name, phrase in CLAIM_INJECTIONS.items():
+        if mut(name):
+            text = text + "\n" + phrase
+    flat = normalize_text(text)
+    checks.check("F1", all(f in flat for f in FENCES), "the note carries the four fence sentences verbatim")
+    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
+    checks.check("F2", not hits, f"the note contains no forbidden phrase (hits: {hits})")
+    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
+    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
+    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
+    conversion = "flo" + "at("  # float-scan-marker-line
+    evalf = "eva" + "lf("  # float-scan-marker-line
+    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln]
+    checks.check("F3", not bad and len(scan) > 500, f"runner source: no floating-point literal, conversion or evaluation call ({len(bad)} hits)")
+
+
+# ==================================================================== family G
+N5_LINES = (
+    "per_element: executed — every row state of the width-2, 3 and 4 strips, every configuration of the cube and plaquette sub-window checks, both triples, exact",
+    "per_site: executed — the sub-window conditional at every site class (face, edge, site) of the cube and the plaquette; every column of every row of the strip pair laws",
+    "per_mode: executed — the quotient transfer matrix's characteristic polynomial, its Perron root, eigenvector and second-eigenvalue bound, all exact (Sturm, resultant, Q(lam_1))",
+    "per_block: executed — the row-to-row kernel block by block for widths 2, 3, 4; the finite-n center-row values for n = 3..13; the cube's three-neighbor witness",
+    "lattice_wide: checked and not executed — strips of widths 2 and 3 only for the static law; the plane and the cubic lattice's infinite-volume law are named, not computed",
+)
+
+
+def family_g(checks: Checks) -> None:
+    for line in N5_LINES:
+        print(line)
+    checks.check("G1", all(len(l) >= 40 for l in N5_LINES) and len(N5_LINES) == 5, "the five N5 resolution lines are printed (each >= 40 characters)")
+
+
+# ======================================================================= main
+def main(argv) -> int:
+    global ACTIVE_MUTATION
+    if "--list-mutations" in argv:
+        for name, fam in MUTATION_GATE.items():
+            print(f"{name} {fam}")
+        return 0
+    if "--mutation" in argv:
+        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
+        if ACTIVE_MUTATION not in MUTATION_GATE:
+            print(f"unknown mutation {ACTIVE_MUTATION}")
+            return 2
+    exact = "--exact" in argv
+    checks = Checks()
+    note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
+    axiom_text = AXIOM_PATH.read_text(encoding="utf-8") if AXIOM_PATH.is_file() else ""
+    parent_text = PARENT_NOTE_PATH.read_text(encoding="utf-8") if PARENT_NOTE_PATH.is_file() else ""
+    print("AUDIT_INPUT_PATHS:")
+    for p in AUDIT_INPUT_PATHS:
+        print(f"  {p}")
+    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
+    print("scope: the six-projector menu, the product rule at two exact triples; strips of widths 2, 3, 4 (sweep) and 2, 3 (static); exact arithmetic; no plane, no cubic-lattice uniqueness, no order selected")
+    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
+    report: dict = {}
+    family_a(checks, note_text, axiom_text, parent_text)
+    family_b(checks)
+    family_c(checks)
+    family_d(checks, report)
+    family_d_controls(checks, report)
+    family_e(checks, report, exact)
+    family_f(checks, note_text)
+    family_g(checks)
+    if ACTIVE_MUTATION:
+        observed = "".join(sorted(set(checks.failed_families))) or "none"
+        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
+        print(f"mutation_family_observed: {observed}")
+    failed = checks.finish()
+    return 1 if failed else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv[1:]))

@@ -6,8 +6,8 @@ The one-neighbor interdependence coefficient `c_1(p, q, r)` of the covariant pro
 
 ## Run record
 
-- Runner `scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py` (806 lines): `TOTAL: PASS=36 FAIL=0`, 26 declared mutations, unmutated stdout 5,962 characters, baseline 19 s standalone (27.25 s inside the cache run, which overlapped the 4-parallel census).
-- Cache: `logs/runner-cache/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.txt`, runner sha256 `fcab74e1e237e985bcd4f828cd62a84fea95577c98efb9d9657dacfcd4954848`, input fingerprint `ce06982009fcead609fe22ce95fb887aed358076c94a1cb8f42f52f5690ccfdd`, exit 0, written by `runner_cache.execute_and_write_cache` after the last note edit.
+- Runner `scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py` (807 lines): `TOTAL: PASS=36 FAIL=0`, 26 declared mutations, unmutated stdout 5,962 characters, baseline 19.10 s (the cache run).
+- Cache: `logs/runner-cache/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.txt`, runner sha256 `b20b895254b915b05ce1ebd4f262b62d639ca1651ad731cd8828833d0f25470c`, input fingerprint `ce06982009fcead609fe22ce95fb887aed358076c94a1cb8f42f52f5690ccfdd`, exit 0, elapsed 19.10 s, written by `runner_cache.execute_and_write_cache` after the last runner and note edits (re-pinned once, after the guard below).
 - Note `docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md`: 650 lines (cap 650); `vocab_lint --report-only` 0 violations.
 - Timing decision (contract: time the grid and the plaquette family first and cut to what fits 400 s): in scratch, one coefficient evaluation costs 0.06 s with the integer hot loop (the contract expected 0.7 s with Fractions), the `1..8` grid 4.4 s, the plaquette family 1.6 s per triple, the `3×3` row transfer 0.01 s; so the grid was EXTENDED to `1..12` (144 points, 9 s) and nothing was cut.
 - Control reproduction before any theorem sentence (own code, `scratchpad/primary03/control03.py`): `c_1(3,1,2) = 270/989`, `c_1(2,1,2) = 2/13`, the `(t,1,1)` crossing between `3/2` and `13/8` with pattern three `+x` two `−x` and pair `+x ↔ −x`, the `3×3` TV at `(2,1,2)` `= 691410442136477999520/76730168638463067377251` against `1/56`; also `8650000/40615109`, `2079/15566`, `4000000/61385721`, `98241110000/4544062780611` and the four-neighbor coefficients `1/8`, `1404/11431`, `10000/175641`. All equal to the supervisor's controls; nothing differed.
@@ -18,6 +18,7 @@ The one-neighbor interdependence coefficient `c_1(p, q, r)` of the covariant pro
 - Unmutated stdout was 7,879 characters on the first run; check messages, info lines and the N5 lines were compressed in four passes to 5,962.
 - The note was 684 lines after the first draft; six compression passes brought it to 650 without removing any proof step (deletions: repeated sentences in N-gate intros, the Falsifiers list, the `Further` paragraph, the Review record, two obligation rows merged, one N8 row).
 - The author-name section rule (F3) caught the full `WILSON_STAGGERED_..._DOBRUSHIN_...` filename inside the N4 table; the table now uses the short name and the full name stays under Prior art.
+- First census: `sign_pattern_not_fixed` crashed (IndexError: with one sign flipped the numerator has no positive root and the isolating-interval list is empty) instead of failing in family C; guarded (`have_root`), the mutation now fails C5–C9, the runner was recommitted, the cache re-pinned at the final sha and the census re-run in full.
 
 ## Could-not list
 
@@ -110,3 +111,125 @@ exact region points (t,t,1): t=9/8 c_1=419904/9393713, t=5/4 c_1=36125/402234, t
 exact region points (1,1,t): t=3/4 c_1=8896/74555, t=7/8 c_1=200704/3920631, t=1 c_1=0
 ```
 
+## Certified stdout (the pinned cache, verbatim)
+
+```text
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py
+runner_sha256: b20b895254b915b05ce1ebd4f262b62d639ca1651ad731cd8828833d0f25470c
+input_fingerprint_sha256: ce06982009fcead609fe22ce95fb887aed358076c94a1cb8f42f52f5690ccfdd
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 19.10
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
+AUDIT_TIMEOUT_SEC: 900
+scope: six-projector menu, covariant product rule; c_1 exactly; the coupling bound on two windows; the corollary's arithmetic; uniqueness only where 6c_1 < 1; silent at (3,1,2), (5,2,4)
+mutation: none
+PASS: A1 the four declared audit inputs exist
+PASS: A2 axiom memo: both Admissibility sentences verbatim
+PASS: A3 axiom memo: the four Record sentences verbatim
+PASS: A4 block 01's note: claim id and the finite-window uniqueness fragment
+PASS: A5 block 02's note: claim id and the existence fragment
+PASS: A6 this note carries its claim id
+PASS: B1 G1: the same coefficient 270/989 with the flipped neighbor in each of the six directions, (3,1,2)
+PASS: B2 G2: c_1(3,1,2) = c_1(1,3,2) and c_1(5,2,4) = c_1(2,5,4) exactly
+PASS: B3 G2: r_(3,1,2)(-s | eta) = r_(1,3,2)(s | eta) on all 46656 shells and six values
+PASS: B4 G3: c_1 = 0 at (2,2,2); c_1 > 0 at the six non-constant triples
+PASS: C1 G4: exact c_1 at the seven triples equals the literals
+info c_1(3, 1, 2)=270/989 6c_1=1.638018 max eta=00023 pair=01
+info c_1(5, 2, 4)=8650000/40615109 6c_1=1.277849 max eta=00000 pair=01
+info c_1(2, 1, 2)=2/13 6c_1=0.923076 max eta=00123 pair=45
+info c_1(3, 2, 2)=2079/15566 6c_1=0.801361 max eta=00011 pair=01
+info c_1(5, 4, 4)=4000000/61385721 6c_1=0.390970 max eta=00000 pair=01
+info c_1(11, 10, 10)=98241110000/4544062780611 6c_1=0.129717 max eta=00000 pair=01
+PASS: C2 G4: 6c_1 < 1 at the four region triples; >= 1 at (3,1,2), (5,2,4)
+PASS: C3 G2/G4: c_1(p,q,4) = c_1(q,p,4) on all 144 grid points, p, q in 1..12
+PASS: C4 G4: the r = 4 grid's 6c_1 < 1 cells are the diamond (15 cells)
+info line (t,1,1): crossing 3/2..13/8; eta=00011 pair=01; t* in [1.60970232778584910813, 1.60970232778584910814]
+info line (t,t,1): crossing 11/8..3/2; eta=00022 pair=02; t* in [1.47753945492134830313, 1.47753945492134830314]
+info line (1,1,t): crossing 5/8..3/4; eta=00022 pair=02; t* in [0.67680087774930621901, 0.67680087774930621903]
+PASS: C5 G5: crossings at the declared brackets; sign pattern of the six differences fixed at both
+PASS: C6 G5: numerator of 6TV(t) - 1 at the pattern = the contract's degree-7 polynomial up to a constant
+PASS: C7 G5: Sturm: one positive root each, isolated to width < 10^-20, sign change at the rational endpoints
+PASS: C8 G5: at both endpoints the sup over all 7776 x 15 choices is the displayed pattern's value
+PASS: C9 G5: 6c_1 - 1 negative below, positive above t* on (t,1,1), (t,t,1); reversed on (1,1,t)
+PASS: D1 H1: plaquette one-step inequality TV <= c_1^(4) sum[differ] + b_x, 223616 pairs x 4 sites
+PASS: D2 H1: maximal coupling: sum_s min(a_s, b_s) = 1 - TV on all 5184 distinct instances, four triples
+PASS: D3 H2: c_1^(4) = 1/8, 1404/11431, 10000/175641, 918/3431; 3x3 row sums < 1 at region triples, >= 1 at (3,1,2)
+PASS: D4 H2: D = (I - C)^{-1} exact: D(I - C) = I, D >= 0, three region triples
+PASS: D5 H2: damped iterates from u^0 = 1 nonincreasing, >= u* = D b, within 10^-4 at step 200
+PASS: D6 H2: fixed-point identity u* = (8/9) u* + (1/9)(C u* + b) exact
+info 3x3 (2, 1, 2): c_1^(4)=1/8 TV(center)=0.0090109 <= (D b)_c=1/56=0.0178571
+info 3x3 (3, 2, 2): c_1^(4)=1404/11431 TV(center)=0.0073929 <= (D b)_c=1971216/114898033=0.0171562
+info 3x3 (5, 4, 4): c_1^(4)=10000/175641 TV(center)=0.0016901 <= (D b)_c=100000000/30049760881=0.0033278
+PASS: D7 H3: center-site TV <= (D b)_center at the three region triples; values equal the contract's literals
+info 3x3 (3, 1, 2): 4c_1^(4)=3672/3431 >= 1; bound not asserted; TV(center)=0.0346753 recorded only
+PASS: D8 H3: (3,1,2): row sum > 1; TV printed, window bound not asserted
+PASS: E1 I: sum_y N_n(0,y) = 6^n on Z^3, n = 1..4, by path enumeration
+info tbl(2, 1, 2): a=0.923076 L1=12.000000 L12=4.975057 <10^-3 from L=119
+info tbl(3, 2, 2): a=0.801361 L1=4.034282 L12=0.353087 <10^-3 from L=39
+info tbl(5, 4, 4): a=0.390970 L1=0.641956 L12=0.000020 <10^-3 from L=8
+info tbl(11, 10, 10): a=0.129717 L1=0.149052 L12=0.000000 <10^-3 from L=4
+PASS: E2 I: table alpha^L/(1-alpha), L = 1..12, exact at the four region triples
+PASS: E3 I: least L with alpha^L/(1-alpha) < 10^-3 (>= at L-1): L=119, L=39, L=8, L=4
+info pts (t,1,1): 9/8:0.17005 5/4:0.39097 11/8:0.59997 3/2:0.80136
+info pts (t,t,1): 9/8:0.26820 5/4:0.53886 11/8:0.80125
+info pts (1,1,t): 3/4:0.71592 7/8:0.30715 1:0.00000
+PASS: E4 region: 6c_1 < 1 at the four region triples and the declared line points; >= 1 at (3,1,2), (5,2,4)
+PASS: F1 the note carries the four fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (hits: [])
+PASS: F3 the criterion's author is named only in the Prior art and Imports sections (violations: [])
+PASS: F4 runner source: no floating-point literal or conversion call (0 hits)
+per_element: executed — all 7776 x 15 pattern-and-pair choices at every triple, grid point, scan point and endpoint; every plaquette pair
+per_site: executed — the flipped neighbor in each of six directions; the plaquette inequality at each site; the 3x3 window's row sums and center marginals
+per_mode: executed — D = (I - C)^{-1} exactly with the damped fixed-point iterates; Sturm isolation of each threshold as the unique positive root
+per_block: executed — the 3x3 window by integer row transfer under two exterior assignments; path counts n <= 4; the table alpha^L/(1-alpha)
+lattice_wide: proved, not executed — uniqueness on Z^3 where 6c_1 < 1 is the corollary of the window bound and the path-count bound; the silent triples are named, not decided
+PASS: G1 the five N5 resolution lines are printed (each >= 40 chars)
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+```
+
+## Mutation census (26 mutations, one helper invocation each, 4 in parallel; expected/observed read from raw stdout at the final runner sha)
+
+census: 26 mutations; runner sha256 b20b895254b915b05ce1ebd4f262b62d639ca1651ad731cd8828833d0f25470c
+
+| mutation | expected | observed | total | failing checks | exit |
+|---|---|---|---|---|---|
+| `coefficient_direction_dependent` | B | B | TOTAL: PASS=35 FAIL=1 | B1 | 1 |
+| `relabeling_identity_broken` | B | B | TOTAL: PASS=35 FAIL=1 | B3 | 1 |
+| `constant_rule_nonzero` | B | B | TOTAL: PASS=35 FAIL=1 | B4 | 1 |
+| `c1_literal_off` | C | C | TOTAL: PASS=35 FAIL=1 | C1 | 1 |
+| `region_triple_misclassified` | C | C | TOTAL: PASS=35 FAIL=1 | C2 | 1 |
+| `grid_symmetry_broken` | C | C | TOTAL: PASS=35 FAIL=1 | C3 | 1 |
+| `grid_region_cells_wrong` | C | C | TOTAL: PASS=35 FAIL=1 | C4 | 1 |
+| `sign_pattern_not_fixed` | C | C | TOTAL: PASS=31 FAIL=5 | C5 C6 C7 C8 C9 | 1 |
+| `line_polynomial_wrong_coefficient` | C | C | TOTAL: PASS=35 FAIL=1 | C6 | 1 |
+| `threshold_wrong_root` | C | C | TOTAL: PASS=34 FAIL=2 | C7 C9 | 1 |
+| `endpoint_sup_pattern_forged` | C | C | TOTAL: PASS=35 FAIL=1 | C8 | 1 |
+| `one_step_inequality_drops_b` | D | D | TOTAL: PASS=35 FAIL=1 | D1 | 1 |
+| `one_step_inequality_wrong_coefficient` | D | D | TOTAL: PASS=35 FAIL=1 | D1 | 1 |
+| `maximal_coupling_identity_broken` | D | D | TOTAL: PASS=35 FAIL=1 | D2 | 1 |
+| `row_sum_ignored` | D | D | TOTAL: PASS=35 FAIL=1 | D3 | 1 |
+| `D_matrix_wrong_inverse` | D | D | TOTAL: PASS=32 FAIL=4 | D4 D5 D6 D7 | 1 |
+| `fixed_point_not_fixed` | D | D | TOTAL: PASS=35 FAIL=1 | D6 | 1 |
+| `center_tv_exceeds_bound_forged` | D | D | TOTAL: PASS=35 FAIL=1 | D7 | 1 |
+| `path_count_wrong` | E | E | TOTAL: PASS=35 FAIL=1 | E1 | 1 |
+| `alpha_table_wrong_exponent` | E | E | TOTAL: PASS=35 FAIL=1 | E2 | 1 |
+| `line_points_misclassified` | E | E | TOTAL: PASS=35 FAIL=1 | E4 | 1 |
+| `claim_nonunique_at_silent` | F | F | TOTAL: PASS=35 FAIL=1 | F2 | 1 |
+| `claim_unique_at_silent` | F | F | TOTAL: PASS=35 FAIL=1 | F2 | 1 |
+| `claim_phase_transition` | F | F | TOTAL: PASS=35 FAIL=1 | F2 | 1 |
+| `claim_physical_rule` | F | F | TOTAL: PASS=35 FAIL=1 | F2 | 1 |
+| `claim_author_in_theorem` | F | F | TOTAL: PASS=35 FAIL=1 | F3 | 1 |
+
+all in-family and exit 1: True
+
+Every mutation fails in exactly its declared family and no other; the unmutated runner passes 36/36. Family sizes: A 6, B 4, C 9, D 8, E 4, F 4, G 1. Per-mutation raw stdout kept in the seat's scratch directory (`primary03/census2/<mutation>.txt`).

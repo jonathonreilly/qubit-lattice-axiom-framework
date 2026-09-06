@@ -19,3 +19,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "consumers: the parked bridge decision material (not fired), the record-matter lane's formation-order supply; next targets: the Dobrushin uniqueness region on Z^3 (block 03) and the plane's static law"
 ```
+
+# Trace gate — block 03
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 02's next target: uniqueness of the infinite-volume static law on Z^3; the owner's gate: what the rule induces on the infinite lattice — one law or several"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "consumers: the parked bridge decision material (not fired); the gravity lane's action question (a unique static law in the region); next: the silent triples by a sharper criterion; the Pickard column theorem; widths 4-5 toward the plane"
+```

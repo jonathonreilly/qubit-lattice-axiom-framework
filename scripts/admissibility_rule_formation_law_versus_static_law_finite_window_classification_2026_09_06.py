@@ -320,20 +320,20 @@ def family_a(checks: Checks, note_text: str, axiom_text: str) -> None:
     checks.check(
         "A1",
         all((ROOT / p).is_file() for p in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 2,
-        "both declared audit inputs (the note and the axiom memo) exist as files",
+        "both declared audit inputs exist",
     )
     flat = normalize_text(axiom_text)
     for k, needle in enumerate(AXIOM_NEEDLES, start=2):
         checks.check(
             f"A{k}",
             needle in flat,
-            f"the axiom memo contains verbatim: {needle[:60]}",
+            f"axiom memo contains: {needle[:38]}",
         )
     checks.check("A8", CLAIM_ID in note_text, "the note carries its claim id")
     checks.check(
         "A9",
         (ROOT / UPSTREAM_BINARY_NOTE).is_file(),
-        "the upstream binary static-half note exists (presence only, no content read)",
+        "upstream binary note exists (presence only)",
     )
 
 
@@ -366,7 +366,7 @@ def family_b(checks: Checks) -> None:
     checks.check(
         "B1",
         all(sp.simplify(p - p.H) == sp.zeros(2) and sp.simplify(p * p - p) == sp.zeros(2) and sp.simplify(p.trace()) == 1 for p in P),
-        "the six Bloch-axis projectors are Hermitian, idempotent and of trace one (sympy exact)",
+        "six projectors Hermitian, idempotent, trace one (sympy exact)",
     )
     menu_b = list(range(M if not mut("menu_drop_projector") else M - 1))
     census = {}
@@ -383,7 +383,7 @@ def family_b(checks: Checks) -> None:
         "B2",
         census == {PAR: 6, ANTI: 6, ORTH: 24}
         and trace_by_orbit == {PAR: {1}, ANTI: {0}, ORTH: {sp.Rational(1, 2)}},
-        f"ordered pairs fall into three orbits labelled by Tr(PP') in (1, 0, 1/2): census {tuple(census.get(o, 0) for o in (PAR, ANTI, ORTH))}",
+        f"pair orbits by Tr(PP') in (1, 0, 1/2): census {tuple(census.get(o, 0) for o in (PAR, ANTI, ORTH))}",
     )
     rots_b = signed_permutations(not mut("rotation_improper"))
     dets = {permutation_sign(pm) * s[0] * s[1] * s[2] for pm, s in rots_b}
@@ -391,14 +391,14 @@ def family_b(checks: Checks) -> None:
     checks.check(
         "B3",
         len(rots_b) == 24 and len(set(rots_b)) == 24 and dets == {1} and closed,
-        "the 24 signed axis permutations of determinant +1 form a closed set of order 24",
+        "24 proper signed axis permutations: det +1, closed, order 24",
     )
     images = {a: {rotate_menu(r, a) for r in rots_b} for a in menu_b}
     checks.check(
         "B4",
         all({rotate_menu(r, a) for a in menu_b} == set(menu_b) for r in rots_b)
         and all(images[a] == set(range(M)) for a in menu_b),
-        "every proper rotation permutes the menu and the action is transitive",
+        "every rotation permutes the menu; action transitive",
     )
     Uz = sp.diag(sp.exp(-sp.I * sp.pi / 4), sp.exp(sp.I * sp.pi / 4))
     checks.check(
@@ -406,14 +406,14 @@ def family_b(checks: Checks) -> None:
         conj_map(Uz, P[0]) == P[2] and conj_map(Uz, P[2]) == P[1]
         and conj_map(Uz, P[4]) == P[4] and conj_map(Uz, P[5]) == P[5]
         and sp.simplify(Uz * Uz.H) == ident,
-        "U_z = diag(e^{-i pi/4}, e^{i pi/4}) maps P(e_x)->P(e_y), P(e_y)->P(-e_x) and fixes P(+-e_z)",
+        "U_z spinor: P(e_x)->P(e_y), P(e_y)->P(-e_x), fixes P(+-e_z)",
     )
     U3 = (ident - sp.I * (sx + sy + sz)) / 2
     checks.check(
         "B6",
         conj_map(U3, P[0]) == P[2] and conj_map(U3, P[2]) == P[4] and conj_map(U3, P[4]) == P[0]
         and sp.simplify(U3 * U3.H) == ident,
-        "U_3 = (I - i(sx+sy+sz))/2 is unitary and cycles P(e_x)->P(e_y)->P(e_z)->P(e_x)",
+        "U_3 = (I - i(sx+sy+sz))/2 unitary, cycles P(e_x)->P(e_y)->P(e_z)",
     )
     rots_psi = rots_b[:1] if mut("psi_nonconstant_passes") else rots_b
     rows = []
@@ -427,7 +427,7 @@ def family_b(checks: Checks) -> None:
     checks.check(
         "B7",
         nullity_of_equations(rows, M) == 1,
-        "the covariance equations psi(s) = psi(R s) have a one-dimensional solution space: the site weight is constant",
+        "covariant site weight: solution space dimension 1 (constant)",
     )
     idx = {(a, b): a * M + b for a in range(M) for b in range(M)}
     rows = []
@@ -449,7 +449,7 @@ def family_b(checks: Checks) -> None:
     checks.check(
         "B8",
         nullity_of_equations(rows, M * M) == 3,
-        "a covariant symmetric pair weight has exactly three free orbit values (solution space dimension 3)",
+        "covariant symmetric pair weight: exactly three orbit values",
     )
     R_flip = ((0, 1, 2), (-1, 1, -1)) if not mut("edge_flip_not_in_group") else ((0, 1, 2), (-1, 1, 1))
     e1 = (1, 0, 0)
@@ -465,7 +465,7 @@ def family_b(checks: Checks) -> None:
     checks.check(
         "B9",
         R_flip in ROTATIONS and g0 == e1 and g1 == (0, 0, 0) and sym_ok,
-        "the edge flip t_{e1} o R_{e2,pi} lies in the group, swaps 0 and e1, and forces phi(a,b) = phi(rho b, rho a) = phi(b,a) on all 36 pairs",
+        "edge flip t_{e1} o R_{e2,pi} is in the group, swaps 0 and e1; phi(a,b) = phi(rho b, rho a) = phi(b,a) on 36 pairs",
     )
     positive = True
     for triple in TRIPLES:
@@ -484,7 +484,7 @@ def family_b(checks: Checks) -> None:
     checks.check(
         "B10",
         positive,
-        "positivity premise: every r(s | eta) > 0 for every partial recorded set eta at the declared triples",
+        "positivity: every r(s | eta) > 0 for every partial eta at the declared triples",
     )
 
 
@@ -593,7 +593,7 @@ def family_c(checks: Checks) -> None:
     checks.check(
         "C1",
         ok_exh,
-        "Theorem A instance: the static law's full conditionals equal the product rule on path3, P4, star4, cycle4 (every configuration, site, s; both triples)",
+        "Theorem A: full conditionals of the static law equal the rule on path3/P4/star4/cycle4 (all v, x, s; both triples)",
     )
     ok_ext = True
     for triple in TRIPLES:
@@ -607,7 +607,7 @@ def family_c(checks: Checks) -> None:
     checks.check(
         "C2",
         ok_ext,
-        "the boundary-conditioned static law on cycle4 (exterior records P(+e_x), P(-e_y) at every site) has full conditionals equal to the rule with exterior records included",
+        "cycle4 with exterior records P(+e_x), P(-e_y): full conditionals equal the rule with exterior records",
     )
     ok_cube = True
     for triple in TRIPLES:
@@ -617,7 +617,7 @@ def family_c(checks: Checks) -> None:
     checks.check(
         "C3",
         ok_cube and len(cube_family) == 1041,
-        "cube8: the full-conditional identity holds on the declared configuration family (741 near-reference + 300 LCG) with and without the exterior assignment",
+        "cube8: full-conditional identity on the family (741 near-reference + 300 LCG), with and without exterior",
     )
     ok_pos = True
     for triple in TRIPLES:
@@ -625,7 +625,7 @@ def family_c(checks: Checks) -> None:
         for name in ("path3", "P4", "star4", "cycle4"):
             ok_pos = ok_pos and all(static_weight(v, WINDOWS[name], phi) > 0 for v in product(range(M), repeat=SIZES[name]))
         ok_pos = ok_pos and all(static_weight(v, WINDOWS["cube8"], phi) > 0 for v in cube_family)
-    checks.check("C4", ok_pos, "positive rule => positive static law: every mu(v) > 0 on the declared windows (cube8 on its family)")
+    checks.check("C4", ok_pos, "positive rule => positive static law on the declared windows (cube8 on its family)")
     phi = phi_table(TRIPLES[0])
     rows, configs = compat_rows(WINDOWS["path3"], 3, lambda rec: rule_numerators(range(M), rec, phi))
     if mut("compat_rank_off_by_one"):
@@ -636,7 +636,7 @@ def family_c(checks: Checks) -> None:
     checks.check(
         "C5",
         len(rows) >= 648 and len(configs) == 216 and rank == 215 and in_null and all(w > 0 for w in witness),
-        f"Brook uniqueness instance on path3 at (3,1,2): the compatibility system ({len(rows)} equations, 216 unknowns) has exact rank {rank} by fraction-free elimination and mu spans its nullspace with all entries positive",
+        f"Brook uniqueness on path3 (3,1,2): {len(rows)}x216 compatibility system, exact rank {rank} (Bareiss), mu spans the nullspace, positive",
     )
     ranks = {}
     for lam in ((1, 4), (-1, 8)):
@@ -646,7 +646,7 @@ def family_c(checks: Checks) -> None:
     checks.check(
         "C6",
         ranks == {(1, 4): 216, (-1, 8): 216},
-        f"the sum rule is not consistent on path3: the compatibility system has full rank 216 at lambda = 1/4 and -1/8 (positivity bound |lambda| < 1/deg, deg 2), ranks {tuple(ranks.values())}",
+        f"sum rule inconsistent on path3: compatibility rank {tuple(ranks.values())} = 216 at lambda 1/4, -1/8 (|lambda| < 1/deg)",
     )
     ok_edge = True
     for lam in ((1, 4), (-1, 8)):
@@ -659,7 +659,7 @@ def family_c(checks: Checks) -> None:
     checks.check(
         "C7",
         ok_edge,
-        "single-edge control: the sum rule is consistent on one edge (nullity 1) with the explicit law (1 + lambda<s,t>)/36 at both couplings; the obstruction needs degree >= 2",
+        "single edge: the sum rule is consistent (nullity 1, law (1 + lambda<s,t>)/36) at both couplings",
     )
     lam = sp.symbols("lambda")
 
@@ -677,7 +677,7 @@ def family_c(checks: Checks) -> None:
         and sp.rem(poly, sp.Poly(lam ** 2, lam)).is_zero
         and all(abs(rt) >= sp.Rational(1, 6) for rt in other_roots)
         and denom.subs(lam, sp.Rational(1, 4)) != 0,
-        f"the symbolic Brook cycle of the sum rule at sites 1-2 of path3 gives R(1/4) = 27/25 and R - 1 = {sp.factor(Rl - 1)}: lambda^2 divides the numerator and no other root lies in |lambda| < 1/6",
+        f"sum-rule Brook cycle: R(1/4) = 27/25, R - 1 = {sp.factor(Rl - 1)}; lambda^2 divides, no other root in |lambda| < 1/6",
     )
     P_, Q_, R_ = sp.symbols("p q r", positive=True)
     phis = [[(P_, Q_, R_)[orbit(a, b)] for b in range(M)] for a in range(M)]
@@ -780,11 +780,11 @@ def family_d(checks: Checks, report: dict) -> None:
             sizes = sorted((len(v) for v in classes.values()), reverse=True)
             census_lines.append(f"{name}{triple}: {len(equal_orders)} equal, {len(classes)} laws, class sizes {sizes}")
             report.setdefault("classes", {})[(name, triple)] = sorted(classes.values(), key=len, reverse=True)
-    checks.check("D1", ok_ident, "B1 identity mu_sigma * prod Z_k = mu * Z_W for every order, configuration, window, triple")
+    checks.check("D1", ok_ident, "B1 identity mu_sigma prod Z_k = mu Z_W for every order, v, window, triple")
     checks.check("D2", ok_norm, "every formation law sums to one")
     checks.check("D3", ok_cons, "consistency line Z_W = sum_v mu_sigma prod Z_k (not a theorem)")
-    checks.check("D4", ok_class, f"B2 classification: mu_sigma = mu iff max|A_k| <= 1; equal orders path3/P4/star4/cycle4 = {tuple(EXPECTED_EQUAL.values())}")
-    checks.check("D5", ok_census, "B5 census of distinct formation laws path3/P4/star4/cycle4 = (2, 3, 5, 4); " + "; ".join(census_lines[:4]))
+    checks.check("D4", ok_class, f"B2: mu_sigma = mu iff max|A_k| <= 1; equal orders path3/P4/star4/cycle4 = {tuple(EXPECTED_EQUAL.values())}")
+    checks.check("D5", ok_census, "B5 census of distinct formation laws path3/P4/star4/cycle4 = (2, 3, 5, 4); class sizes " + "; ".join(l.split("class sizes ")[1] for l in census_lines[:4]))
     report["census_lines"] = census_lines
     P_, Q_, R_ = sp.symbols("p q r", positive=True)
     ok_fj = True
@@ -800,7 +800,7 @@ def family_d(checks: Checks, report: dict) -> None:
         ok_fj = ok_fj and all(sp.expand(f[o] - pred[o]) == 0 for o in (PAR, ANTI, ORTH))
         ok_fj = ok_fj and sp.expand(f[PAR] - f[ANTI] - fac1) == 0 and sp.expand(f[ANTI] - f[ORTH] - fac2) == 0
         ok_fj = ok_fj and sp.expand((f[ANTI] - f[ORTH]).subs(Q_, P_) - 2 * (P_ - R_) * (P_ ** j - R_ ** j)) == 0
-    checks.check("D6", ok_fj, "f_j formulas and both factorizations symbolic for j = 1..5; at p = q the second is 2(p-r)(p^j-r^j)")
+    checks.check("D6", ok_fj, "f_j formulas and factorizations symbolic, j = 1..5; at p = q: 2(p-r)(p^j-r^j)")
     phis = [[(P_, Q_, R_)[orbit(a, b)] for b in range(M)] for a in range(M)]
     if mut("one_neighbor_normalizer_wrong"):
         phis[4][0] = Q_
@@ -811,7 +811,7 @@ def family_d(checks: Checks, report: dict) -> None:
     for order in permutations(range(8)):
         mx = max_recorded(edges8, 8, order, skip_previous=mut("plaquette_lemma_skips_order"))
         dist[mx] = dist.get(mx, 0) + 1
-    checks.check("D8", dist == {3: 40320}, f"cube8: every one of the 40320 orders has some |A_k| >= 2; distribution of max|A_k| = {dist}")
+    checks.check("D8", dist == {3: 40320}, f"cube8: all 40320 orders have some |A_k| >= 2; max|A_k| distribution {dist}")
     report["cube_dist"] = dist
     family = cube_configuration_family()
     orders8 = cube_order_family()
@@ -861,7 +861,7 @@ def family_d(checks: Checks, report: dict) -> None:
             ok_var = ok_var and distinct == 3 and all(Fraction(values[o]) == predicted[o] for o in values)
             var_lines.append(f"{oname}{triple}: m={m_site} y={y_site} js={js} values={tuple(values[o] for o in (PAR, ANTI, ORTH))}")
     report["var_lines"] = var_lines
-    checks.check("D9", ok_cube_ident and ok_var, "cube8 declared orders: identity on the family; single-site variation gives exactly three values matching const * prod f_j")
+    checks.check("D9", ok_cube_ident and ok_var, "cube8 six declared orders: identity on the family; single-site variation: three values = const * prod f_j")
     ctriple = CONSTANT_TRIPLE if not mut("constant_rule_varies") else (2, 2, 3)
     phic = phi_table(ctriple)
     uniform = True
@@ -876,7 +876,7 @@ def family_d(checks: Checks, report: dict) -> None:
         ZW = sum(static_weight(v, edges, phic) for v in configs)
         mu = {v: Fraction(static_weight(v, edges, phic), ZW) for v in configs}
         all_equal = all_equal and all(formation_law(edges, n, phic, order) == mu for order in permutations(range(n)))
-    checks.check("D10", uniform and all_equal, "B4 constant rule (2,2,2): uniform output under every one- and two-neighbor condition; mu_sigma = mu for every order of path3 and cycle4")
+    checks.check("D10", uniform and all_equal, "B4 constant rule (2,2,2): uniform under every 1- and 2-neighbor condition; mu_sigma = mu for all orders of path3, cycle4")
 
     def f_witness(x):
         val = 1 + x * x * (1 - x * x)
@@ -891,7 +891,7 @@ def family_d(checks: Checks, report: dict) -> None:
         configs = list(product(range(M), repeat=4))
         mu1 = {v: Fraction(1, 6 ** 4) for v in configs}
         ok_menu = all(formation_law(WINDOWS["cycle4"], 4, phi1, order) == mu1 for order in permutations(range(4)))
-    checks.check("D11", ok_menu, f"menu-restriction witness f(x) = 1 + x^2(1-x^2): values at (1,-1,0,1/2) = {vals}, at x^2 = 1/2: {half_sq}; induced (1,1,1); mu_sigma = mu on cycle4 for every order")
+    checks.check("D11", ok_menu, f"menu witness f(x) = 1 + x^2(1-x^2) at (1,-1,0,1/2) = {tuple(str(v) for v in vals)}, x^2 = 1/2: {half_sq}; induced (1,1,1); mu_sigma = mu on cycle4")
     phi_a = [[phi_table(TRIPLES[0])[a][b] + (1 if a < b else 0) for b in range(M)] for a in range(M)]
     if mut("asymmetric_identity_holds"):
         phi_a = [list(r) for r in phi_table(TRIPLES[0])]
@@ -1004,7 +1004,7 @@ def family_e(checks: Checks, report: dict) -> None:
                 if any(row):
                     rows.append(row)
         ranks.append(bareiss_rank(rows, M) if rows else 0)
-    checks.check("E2", breaks and ranks == [6, 6], f"route 2: a non-constant site weight breaks covariance; 'Z_2 constant' as a linear system in psi has rank {ranks} at the declared triples")
+    checks.check("E2", breaks and ranks == [6, 6], f"route 2: non-constant psi breaks covariance; Z_2-constant system in psi has rank {ranks} (both triples)")
     rots = ROTATIONS[:1] if mut("absence_blind_nonconstant_passes") else ROTATIONS
     rows = []
     for r in rots:
@@ -1014,7 +1014,7 @@ def family_e(checks: Checks, report: dict) -> None:
             row[rotate_menu(r, a)] -= 1
             if any(row):
                 rows.append(row)
-    checks.check("E3", nullity_of_equations(rows, M) == 1, "route 3: a direction-blind absence factor phi_abs(s) is forced constant by covariance (solution space dimension 1)")
+    checks.check("E3", nullity_of_equations(rows, M) == 1, "route 3: a direction-blind absence factor is forced constant by covariance (dimension 1)")
     P_, Q_, R_, A_, B_, C_ = sp.symbols("p q r a b c", positive=True)
     phis = [[(P_, Q_, R_)[orbit(a, b)] for b in range(M)] for a in range(M)]
     ZW3 = sp.expand(sum(sp.Mul(*[phis[v[i]][v[j]] for i, j in WINDOWS["path3"]]) for v in product(range(M), repeat=3)))
@@ -1035,7 +1035,7 @@ def family_e(checks: Checks, report: dict) -> None:
     checks.check(
         "E4a",
         len(eqs1) >= 8 and contained and verified,
-        f"route 4 on path3 order (0,2,1): {len(eqs1)} equations in (a,b,p,q) after r=c=1; the Groebner basis contains (a-1)u, (b-1)u, (p-q)^2 u, (q-1)^3 u with u=(p+q+4)^2>0, so the solution set is a=b=c, p=q=r; verified on every configuration",
+        f"route 4 path3 (0,2,1): {len(eqs1)} eqs, r=c=1; Groebner basis contains (a-1)u,(b-1)u,(p-q)^2u,(q-1)^3u, u=(p+q+4)^2: a=b=c, p=q=r; verified",
     )
     alpha0 = [sp.Mul(absence_factor(s, (1, 0, 0), A_, B_, C_), absence_factor(s, (0, 1, 0), A_, B_, C_)) for s in range(M)]
     marg = {}
@@ -1054,7 +1054,7 @@ def family_e(checks: Checks, report: dict) -> None:
     checks.check(
         "E4b",
         uniform and reduced_ok and sol_pq == [{P_: 1, Q_: 1}] and verified4 and ronly_same,
-        f"route 4 on cycle4 order (0,1,2,3): the static site marginal is uniform, the first-formed site's marginal (ac,bc,ac,bc,c^2,c^2) forces a=b=c; a constant absence factor cancels; the reduced system ({len(eqs4)} equations) gives p=q=r; verified on every configuration",
+        f"route 4 cycle4 (0,1,2,3): uniform static marginal vs first-site marginal (ac,bc,ac,bc,c^2,c^2) forces a=b=c; reduced {len(eqs4)} eqs give p=q=r; verified",
     )
     ranks2 = []
     for triple in TRIPLES:
@@ -1074,7 +1074,7 @@ def family_e(checks: Checks, report: dict) -> None:
     Phi = sp.Matrix(6, 6, lambda a, b: phis[a][b])
     detPhi = sp.factor(Phi.det())
     det_ok = sp.expand(detPhi - (P_ + Q_ + 4 * R_) * (P_ + Q_ - 2 * R_) ** 2 * (P_ - Q_) ** 3) == 0
-    checks.check("E4c", ranks2 == [4, 6] and det_ok and m1 and m2, f"route 4 (any factorized absence weight): Z_2 = Phi^2 has rank {ranks2} at (3,1,2), (5,2,4) (det Phi = (p+q+4r)(p+q-2r)^2(p-q)^3, zero at 3+1-4); the two 2x2 minors hold symbolically, so rank >= 2 > 1 whenever (p,q,r) are not all equal")
+    checks.check("E4c", ranks2 == [4, 6] and det_ok and m1 and m2, f"route 4 factorized: rank Z_2 = {ranks2} at (3,1,2),(5,2,4); det Phi = (p+q+4r)(p+q-2r)^2(p-q)^3; minors symbolic: rank >= 2 unless p=q=r")
     diffs = {}
     for triple in TRIPLES + ((2, 3, 5),):
         ph = phi_table(triple)
@@ -1087,7 +1087,7 @@ def family_e(checks: Checks, report: dict) -> None:
                 acc[v] += law[v]
         diffs[triple] = max(abs(acc[v] / 24 - mu[v]) for v in configs)
     report["mixture"] = diffs
-    checks.check("E5", all(d > 0 for d in diffs.values()) and diffs[(2, 3, 5)] == Fraction(1585133, 10007780364), f"route 5: uniform mixture over the 24 orders of cycle4 differs from mu; max |avg - mu| = {diffs[TRIPLES[0]]} at (3,1,2), {diffs[TRIPLES[1]]} at (5,2,4); control (2,3,5) = 1585133/10007780364")
+    checks.check("E5", all(d > 0 for d in diffs.values()) and diffs[(2, 3, 5)] == Fraction(1585133, 10007780364), f"route 5 cycle4 mixture: max |avg - mu| = {diffs[TRIPLES[0]]} (3,1,2), {diffs[TRIPLES[1]]} (5,2,4); control (2,3,5) 1585133/10007780364")
     mu_p = static_law("path3", phi)
     mu_c = static_law("cycle4", phi)
 
@@ -1106,7 +1106,7 @@ def family_e(checks: Checks, report: dict) -> None:
     cond_p = one_nbr_cond(mu_p, 3)
     cond_c = dict(cond_p) if mut("marginal_reading_is_fixed_rule") else one_nbr_cond(mu_c, 4)
     expected_c = (Fraction(219, 866), Fraction(71, 866)) + (Fraction(72, 433),) * 4
-    checks.check("E6a", cond_p == rule_one and cond_c != rule_one and cond_c[0] == expected_c and rule_one[0] == (Fraction(1, 4), Fraction(1, 12)) + (Fraction(1, 6),) * 4, "route 6: the static one-neighbor conditional equals the rule on path3 but not on cycle4 (219/866, 71/866, 72/433 x4 against 1/4, 1/12, 1/6 x4)")
+    checks.check("E6a", cond_p == rule_one and cond_c != rule_one and cond_c[0] == expected_c and rule_one[0] == (Fraction(1, 4), Fraction(1, 12)) + (Fraction(1, 6),) * 4, "route 6: static one-neighbor conditional = rule on path3, not on cycle4 (219/866, 71/866, 72/433 x4 vs 1/4, 1/12, 1/6 x4)")
     configs4 = list(mu_c)
     marginals = {}
     for mask in range(16):
@@ -1135,7 +1135,7 @@ def family_e(checks: Checks, report: dict) -> None:
 
     chain_all = all(chain_product(order, v, True, mut("marginal_chain_rule_broken")) == mu_c[v] for order in permutations(range(4)) for v in configs4)
     orders_nbr_only = sum(1 for order in permutations(range(4)) if all(chain_product(order, v, False, False) == mu_c[v] for v in configs4))
-    checks.check("E6b", chain_all and orders_nbr_only == 0, f"route 6: with the static conditional given ALL earlier records the chain rule gives mu_sigma = mu for all 24 orders of cycle4; given only the recorded neighbors it does so for {orders_nbr_only} of 24")
+    checks.check("E6b", chain_all and orders_nbr_only == 0, f"route 6 chain rule on cycle4: given all earlier records mu_sigma = mu for 24/24 orders; given recorded neighbors only {orders_nbr_only}/24")
 
 
 # ==================================================================== family F
@@ -1177,15 +1177,15 @@ def family_f(checks: Checks, note_text: str) -> None:
     float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
     conversion = "flo" + "at("  # float-scan-marker-line
     bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln]
-    checks.check("F3", not bad and len(scan) > 500, f"the runner source has no floating-point literal and no floating-point conversion call ({len(bad)} hits)")
+    checks.check("F3", not bad and len(scan) > 500, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
 
 
 # ==================================================================== family G
 N5_LINES = (
     "per_element: executed — every menu value, every configuration of path3/P4/star4/cycle4, every order, both triples, exact",
     "per_site: executed — the full conditional at every site of every declared window; cube8 on the declared configuration family",
-    "per_mode: checked and not executed — the theorem has no spectral or normal-mode decomposition; Phi's eigenvalue factorization is symbolic",
-    "per_block: executed — every formation order's normalizer history block by block; cube8 orders combinatorially (40320) and six declared orders exactly",
+    "per_mode: checked and not executed — no spectral decomposition in the theorem; det Phi factorization is symbolic",
+    "per_block: executed — every order's normalizer history block by block; cube8: 40320 orders combinatorially, six exactly",
     "lattice_wide: checked and not executed — finite windows only; the infinite-volume specification is named, not computed",
 )
 
@@ -1215,7 +1215,7 @@ def main(argv) -> int:
     for p in AUDIT_INPUT_PATHS:
         print(f"  {p}")
     print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
-    print("scope: finite windows path3/P4/star4/cycle4/cube8, six-projector menu, exact arithmetic; no infinite-volume claim")
+    print("scope: finite windows, six-projector menu, exact arithmetic; no infinite-volume claim")
     print(f"mutation: {ACTIVE_MUTATION or 'none'}")
     report: dict = {}
     family_a(checks, note_text, axiom_text)

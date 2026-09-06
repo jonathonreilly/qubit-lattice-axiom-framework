@@ -1,0 +1,26 @@
+slug: admissibility-induced-law-20260906
+block: 1
+branch: physics-loop/admissibility-induced-law-static-vs-formation-20260906
+base_commit: 341511a74e (origin/main)
+mode: run
+runtime: one interactive session (target: one block with PR)
+start_time: "2026-09-06T17:30+00:00"
+checkpoint_interval: 30m
+deep_block: 90m
+target_status: best-honest-status
+lock: "scripts/automation_lock.py owner=fable-supervisor, ttl 8h from 2026-09-06T17:35+00:00"
+cycle: 1
+active_route: "block 01 = the static law versus the formation law of a nearest-neighbor rule on finite windows (GOAL.md)"
+approach_family_coverage: [F1 static-law existence (Brook + canonical potential) active, F2 non-existence certificates active, F3 positivity necessity active, F4 formation law active, F5 five coincidence routes active, F6 infinite volume queued]
+strongest_unresolved_proof_obligation: "the infinite-volume static specification (existence/uniqueness) — outside the block; the absence-extension route G(3) exact solution set — inside the block, may end as a could-not"
+hard_residual: "what the Admissibility rule induces on the infinite lattice; this block states the two finite-window objects and their exact relation"
+files_touched: [pack files, specs/primary.md, specs/supervisor_control_verify_core.py]
+open_imports: [records-only extension (named premise); formation order (unsupplied, quantified over); positivity (named hypothesis)]
+no_go_routes: [see NO_GO_LEDGER.md]
+trace_class: upstream_support
+review_findings: "panel pending; primary pending; checker pending"
+pr_status: not opened
+next_exact_action: "synthesize the four panel lenses; amend GOAL.md/specs/primary.md if a lens finds a defect; launch the Fable primary on specs/primary.md (120 min); on delivery: supervisor line-by-line review with the control script; Opus refuting checker on disjoint machinery; fold; V1-V5 and N1-N8 in the note; conformance gate 1-12; cache re-pin; manifest; PR off main"
+stop_condition: "block 01 PR opened, or a defect the panel/checker finds that the supervisor cannot repair in-session (then a documented stop with the pack checkpointed)"
+
+# 2026-09-06 block 01 CLOSED — primary (Fable, 26 min) delivered runner 53/0 (7.8 s) + note 643 lines + RESULTS + V1-V5; 41 mutations 41/41; supervisor line-by-line review (F-S1..F-S4 applied); Opus refuting checker PASS-NO-BLOCKER (CK-01..CK-12 confirmed; five editorial findings folded); cache re-pinned (runner sha 48272bc7d58cadfd5aa59d8631021825b12dfae4b81f3282d6565c7e68065b61, input fingerprint fe6d62e4e8fad0112fa0dae849b45f27b9233899c98d2649f3670918ae2ad328); conformance gate 1-12 PASS; pipeline exit 0; manifest +1 node; PR #7998 opened off main (https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7998; never merged by the campaign). pr_status: OPENED — hand-off to the owner-operated review-loop. Next block candidates in OPPORTUNITY_QUEUE.md (refresh 2026-09-06).

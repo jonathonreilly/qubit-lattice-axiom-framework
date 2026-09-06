@@ -1,0 +1,112 @@
+# RESULTS — block 03 (primary seat, Fable), 2026-09-06
+
+## Headline
+
+The one-neighbor interdependence coefficient `c_1(p, q, r)` of the covariant product rule on the six-neighbor shell is computed exactly, is direction-independent, `p ↔ q` symmetric and zero exactly at the constant rule, and the crossing `6c_1 = 1` along each of the three lines `(t,1,1)`, `(t,t,1)`, `(1,1,t)` is the unique positive root of an explicit irreducible degree-7 polynomial, isolated to width `10^-20` with the maximizing shell pattern re-executed at both isolating endpoints. The finite-window comparison bound is re-proved by a random-scan coupling (every step written in the note) and executed on the plaquette (`223,616` configuration pairs, four triples) and on the `3×3` planar window (`D_Λ` exact over the rationals, `200` damped iterates, the exact center-site total variation against `(D_Λ b)_center` at the three region triples). Hence the specification on `Z^3` has exactly one infinite-volume static law at `(2,1,2)`, `(3,2,2)`, `(5,4,4)`, `(11,10,10)` and at the ten executed rational line points; at `(3,1,2)` and `(5,2,4)` the criterion is silent and nothing is stated about one law or several.
+
+## Run record
+
+- Runner `scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py` (806 lines): `TOTAL: PASS=36 FAIL=0`, 26 declared mutations, unmutated stdout 5,962 characters, baseline 19 s standalone (27.25 s inside the cache run, which overlapped the 4-parallel census).
+- Cache: `logs/runner-cache/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.txt`, runner sha256 `fcab74e1e237e985bcd4f828cd62a84fea95577c98efb9d9657dacfcd4954848`, input fingerprint `ce06982009fcead609fe22ce95fb887aed358076c94a1cb8f42f52f5690ccfdd`, exit 0, written by `runner_cache.execute_and_write_cache` after the last note edit.
+- Note `docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md`: 650 lines (cap 650); `vocab_lint --report-only` 0 violations.
+- Timing decision (contract: time the grid and the plaquette family first and cut to what fits 400 s): in scratch, one coefficient evaluation costs 0.06 s with the integer hot loop (the contract expected 0.7 s with Fractions), the `1..8` grid 4.4 s, the plaquette family 1.6 s per triple, the `3×3` row transfer 0.01 s; so the grid was EXTENDED to `1..12` (144 points, 9 s) and nothing was cut.
+- Control reproduction before any theorem sentence (own code, `scratchpad/primary03/control03.py`): `c_1(3,1,2) = 270/989`, `c_1(2,1,2) = 2/13`, the `(t,1,1)` crossing between `3/2` and `13/8` with pattern three `+x` two `−x` and pair `+x ↔ −x`, the `3×3` TV at `(2,1,2)` `= 691410442136477999520/76730168638463067377251` against `1/56`; also `8650000/40615109`, `2079/15566`, `4000000/61385721`, `98241110000/4544062780611` and the four-neighbor coefficients `1/8`, `1404/11431`, `10000/175641`. All equal to the supervisor's controls; nothing differed.
+
+## Defects fixed while executing
+
+- The decimal label strings `"0.0090109"` etc. tripped the textual float scan (F4); stored as digit strings and compared to `"0." + label`.
+- Unmutated stdout was 7,879 characters on the first run; check messages, info lines and the N5 lines were compressed in four passes to 5,962.
+- The note was 684 lines after the first draft; six compression passes brought it to 650 without removing any proof step (deletions: repeated sentences in N-gate intros, the Falsifiers list, the `Further` paragraph, the Review record, two obligation rows merged, one N8 row).
+- The author-name section rule (F3) caught the full `WILSON_STAGGERED_..._DOBRUSHIN_...` filename inside the N4 table; the table now uses the short name and the full name stays under Prior art.
+
+## Could-not list
+
+- None of the contracted computations was cut; the grid was extended to `1..12`.
+- The region is stated at the executed rational points only, not on the open interval below the threshold: monotonicity of `c_1` along a line is not proved (contract sentence "for every rational t strictly between 1 and the isolating interval's lower endpoint" is not claimed in the note).
+- Whether the displayed pattern attains the supremum at every interior point of the `10^-20` isolating interval is not executed; the executed content is the sign change and the endpoint suprema (stated in G5 and Boundaries).
+- The `3×3` window bound at `(3,1,2)` is not asserted (row sum `3672/3431 ≥ 1`); the TV `0.0346753` is recorded only.
+- No sharper criterion attempted (five routes named with obligations in N1).
+- The monotone decrease of the damped iterates needs `C_Λ 1 + b ≤ 1` in addition to the contraction; stated in H2 (the contract's H2 sentence omitted it).
+
+## Modelling choices (declared, not physics)
+
+- Menu order `P(+e_x), P(−e_x), P(+e_y), P(−e_y), P(+e_z), P(−e_z)`; patterns are printed as the other five slot values (digits in this order) and the flipped pair; the maximizer is the lexicographically first over the `7776 × 15` choices, ties not excluded.
+- Rational triples are scaled to integers by the common denominator (the conditional is homogeneous of degree zero in `φ`).
+- Lines: scan `t = 1 + k/8` on `(t,1,1)` and `(t,t,1)`, `t = k/8` on `(1,1,t)`, `k = 1..8`; the pattern at the upper bracket point; the sign pattern from the exact conditionals at both bracket points; isolation width `10^-20` (`sympy` `Poly.intervals`); the endpoint checks use the exact rational endpoints scaled to integers.
+- Plaquette: sites `0-1-2-3-0`; base exterior all `P(e_x)`; flipped exterior: slot (site 0, left) `= P(−e_x)`; family = all ordered pairs differing at ≤ 2 sites (`221,616`) + `2,000` LCG pairs (seed `20260906`, multiplier `1103515245`, increment `12345`, modulus `2^31`, eight draws per pair, `(state >> 16) mod 6`); coefficient `c_1^{(4)}` for every slot; `b_x = c_1^{(4)}[x = 0]`; executed at `(2,1,2)`, `(3,2,2)`, `(5,4,4)`, `(3,1,2)`.
+- `3×3` window: sites `(i,j)`, twelve exterior slots `L/R/B/T`; base all `P(e_x)`; flipped `(1,0,'L') = P(−e_x)`; `C_Λ = c_1^{(4)} ·` adjacency; `b = c_1^{(4)}` at `(1,0)`; `D_Λ` by `sympy` `Matrix.inv` over `QQ`, verified `D(I − C) = I`; damped map `u ↦ (8/9)u + (1/9)(Cu + b)`, `200` iterations, tolerance `10^-4`.
+- Corollary arithmetic: path counts by enumerating all `6^n` direction sequences, `n ≤ 4`; the table `α^L/(1−α)` for `L = 1..12`; the least `L` with the bound below `10^-3` by an exact loop.
+- Region points: `(t,1,1)`: `9/8, 5/4, 11/8, 3/2`; `(t,t,1)`: `9/8, 5/4, 11/8`; `(1,1,t)`: `3/4, 7/8, 1`.
+
+## Exact coefficients, patterns, polynomials and thresholds (runner `--exact` and unmutated stdout, verbatim lines)
+
+```text
+info c_1(3, 1, 2)=270/989 6c_1=1.638018 max eta=00023 pair=01
+info c_1(5, 2, 4)=8650000/40615109 6c_1=1.277849 max eta=00000 pair=01
+info c_1(2, 1, 2)=2/13 6c_1=0.923076 max eta=00123 pair=45
+info c_1(3, 2, 2)=2079/15566 6c_1=0.801361 max eta=00011 pair=01
+info c_1(5, 4, 4)=4000000/61385721 6c_1=0.390970 max eta=00000 pair=01
+info c_1(11, 10, 10)=98241110000/4544062780611 6c_1=0.129717 max eta=00000 pair=01
+info line (t,1,1): crossing 3/2..13/8; eta=00011 pair=01; t* in [1.60970232778584910813, 1.60970232778584910814]
+info line (t,t,1): crossing 11/8..3/2; eta=00022 pair=02; t* in [1.47753945492134830313, 1.47753945492134830314]
+info line (1,1,t): crossing 5/8..3/4; eta=00022 pair=02; t* in [0.67680087774930621901, 0.67680087774930621903]
+info 3x3 (2, 1, 2): c_1^(4)=1/8 TV(center)=0.0090109 <= (D b)_c=1/56=0.0178571
+info 3x3 (3, 2, 2): c_1^(4)=1404/11431 TV(center)=0.0073929 <= (D b)_c=1971216/114898033=0.0171562
+info 3x3 (5, 4, 4): c_1^(4)=10000/175641 TV(center)=0.0016901 <= (D b)_c=100000000/30049760881=0.0033278
+info 3x3 (3, 1, 2): 4c_1^(4)=3672/3431 >= 1; bound not asserted; TV(center)=0.0346753 recorded only
+info tbl(2, 1, 2): a=0.923076 L1=12.000000 L12=4.975057 <10^-3 from L=119
+info tbl(3, 2, 2): a=0.801361 L1=4.034282 L12=0.353087 <10^-3 from L=39
+info tbl(5, 4, 4): a=0.390970 L1=0.641956 L12=0.000020 <10^-3 from L=8
+info tbl(11, 10, 10): a=0.129717 L1=0.149052 L12=0.000000 <10^-3 from L=4
+info pts (t,1,1): 9/8:0.17005 5/4:0.39097 11/8:0.59997 3/2:0.80136
+info pts (t,t,1): 9/8:0.26820 5/4:0.53886 11/8:0.80125
+info pts (1,1,t): 3/4:0.71592 7/8:0.30715 1:0.00000
+```
+
+Grid map `r = 4`, `p` rows and `q` columns `1..12` (`U` = `6c_1 < 1`):
+
+```text
+exact grid p= 1: . . . . . . . . . . . .
+exact grid p= 2: . . . U . . . . . . . .
+exact grid p= 3: . . U U U . . . . . . .
+exact grid p= 4: . U U U U U . . . . . .
+exact grid p= 5: . . U U U U . . . . . .
+exact grid p= 6: . . . U U . . . . . . .
+exact grid p= 7: . . . . . . . . . . . .
+exact grid p= 8: . . . . . . . . . . . .
+exact grid p= 9: . . . . . . . . . . . .
+exact grid p=10: . . . . . . . . . . . .
+exact grid p=11: . . . . . . . . . . . .
+exact grid p=12: . . . . . . . . . . . .
+```
+
+Lines (numerator of `6TV − 1` at the displayed pattern, sign pattern, exact isolating interval, Sturm counts):
+
+```text
+exact line (t,1,1): numerator of 6TV-1 = 2*(t**7 - 2*t**5 + 5*t**4 - 8*t**3 - t**2 - 4); signs (1, -1, -1, -1, -1, -1); interval [49164167869/30542397200, 47982574521/29808352571]; real roots 3, positive 1
+exact line (t,t,1): numerator of 6TV-1 = 4*t**7 - 8*t**5 + 5*t**4 - 8*t**3 - t**2 - 1; signs (1, 1, -1, -1, -1, -1); interval [39169651467/26510054494, 8570324974/5800403465]; real roots 3, positive 1
+exact line (1,1,t): numerator of 6TV-1 = -t**7 - t**5 - 8*t**4 + 5*t**3 - 8*t**2 + 4; signs (1, 1, -1, -1, -1, -1); interval [5800403465/8570324974, 9108844099/13458676545]; real roots 3, positive 1
+```
+
+Thresholds as decimal labels (the exact endpoints are above): `(t,1,1)`: `t* ∈ [1.60970232778584910813, 1.60970232778584910814]`; `(t,t,1)`: `t* ∈ [1.47753945492134830313, 1.47753945492134830314]`; `(1,1,t)`: `t* ∈ [0.67680087774930621901, 0.67680087774930621903]`. Each polynomial is irreducible over `Q` with three real roots and exactly one positive root.
+
+## Window bounds (`3×3`, exact; `u*` indexed by site `3i + j`, center index 4; `D_Λ` center row)
+
+```text
+exact 3x3 (2, 1, 2): TV = 691410442136477999520/76730168638463067377251; u* = ['59/3472', '1/224', '3/3472', '913/6944', '1/56', '17/6944', '59/3472', '1/224', '3/3472']; D center row = ['1/28', '1/7', '1/28', '1/7', '15/14', '1/7', '1/28', '1/7', '1/28']
+exact 3x3 (3, 2, 2): TV = 33371823530478793013606992/4514027923287489693489918949; u* = ['238145918574096/14560491033377857', '5535174528/1313399415223', '11657077555968/14560491033377857', '21462366556785182652/166440973002542283367', '1971216/114898033', '383456480343768000/166440973002542283367', '238145918574096/14560491033377857', '5535174528/1313399415223', '11657077555968/14560491033377857']; D center row = ['3942432/114898033', '16049124/114898033', '3942432/114898033', '16049124/114898033', '122782897/114898033', '16049124/114898033', '3942432/114898033', '16049124/114898033', '3942432/114898033']
+exact 3x3 (5, 4, 4): TV = 1731753640209702882755284603119966790400/1024620776654359492500695152066016873791443; u* = ['3034976088100000000/921017985533877896161', '2000000000000/5277970050899721', '30000000000000000/921017985533877896161', '9301529137981778961610000/161768519997155847559614201', '100000000/30049760881', '31249760881000000000000/161768519997155847559614201', '3034976088100000000/921017985533877896161', '2000000000000/5277970050899721', '30000000000000000/921017985533877896161']; D center row = ['200000000/30049760881', '1756410000/30049760881', '200000000/30049760881', '1756410000/30049760881', '30449760881/30049760881', '1756410000/30049760881', '200000000/30049760881', '1756410000/30049760881', '200000000/30049760881']
+```
+
+## The table `α^L/(1 − α)` and the region points (exact)
+
+```text
+exact table (2, 1, 2): alpha = 12/13; L=1 12; L=2 144/13; L=3 1728/169; L=4 20736/2197; L=5 248832/28561; L=6 2985984/371293; L=7 35831808/4826809; L=8 429981696/62748517; L=9 5159780352/815730721; L=10 61917364224/10604499373; L=11 743008370688/137858491849; L=12 8916100448256/1792160394037
+exact table (3, 2, 2): alpha = 6237/7783; L=1 6237/1546; L=2 38900169/12032518; L=3 242620354053/93649087594; L=4 1513223148228561/728870848744102; L=5 9437972775501534957/5672801815775345866; L=6 58864636200803073526809/44151416532179516875078; L=7 367138735984408769586707733/343630474869953179838732074; L=8 2289844296334757495912296130721/2674475985912845598684851731942; L=9 14281758876239882502004990967306877/20815446598359677294564201029704586; L=10 89075330111108147165005128663092991849/162006620875033368383593176614190792838; L=11 555562833902981513868136987471710990162213/1260897530270384706129505693588246940658154; L=12 3465045395052895701995570390861061445641722481/9813565478094404167805942813197325939142412582
+exact table (5, 4, 4): alpha = 8000000/20461907; L=1 8000000/12461907; L=2 64000000000000/254994382076649; L=3 512000000000000000000/5217671331574858709643; L=4 4096000000000000000000000000/106763505543250922454855069201; L=5 32768000000000000000000000000000000/2184584921419984852935456124469426307; L=6 262144000000000000000000000000000000000000/44700773495698038002173980221473825437187449; L=7 2097152000000000000000000000000000000000000000000/914663070097038153682949781111636819029963923005243; L=8 16777216000000000000000000000000000000000000000000000000/18715750676660075676112225906776669208766952005888442778401; L=9 134217728000000000000000000000000000000000000000000000000000000/382959949781005539097570488067454875119552956617952768506462870707; L=10 1073741824000000000000000000000000000000000000000000000000000000000000/7836090877143605707499351252780871381392906479891584079571772159359658249; L=11 8589934592000000000000000000000000000000000000000000000000000000000000000000/160341362771660885631520927894735681585023182851238963518878201750006506642820843; L=12 68719476736000000000000000000000000000000000000000000000000000000000000000000000000/3280890053286987277329817495135787306174356960346046506299678508535870388320282307127601
+exact table (11, 10, 10): alpha = 196482220000/1514687593537; L=1 196482220000/1318205373537; L=2 38605262776128400000000/1996669325030300712030369; L=3 7585247733937071037048000000000000/3024330255019292265112737245872125153; L=4 1490366314013925057656893286560000000000000000/4580915516036313316552489798957038334825657936161; L=5 292830481990673106242054391246404963200000000000000000000/6938655899181347950154238082727977327825733479766431062191457; L=6 57535983185197471208734704152842214188554304000000000000000000000000/10509896006312304814974990709509000702867855992969348546425784788889813409; L=7 11304797706110270281478278062993657553482648240474880000000000000000000000000000/15919209090125311941866486718625120497468554368501406140788260884450171046331164337633; L=8 2221191749947453469704876955594293682028039457767598276633600000000000000000000000000000000/24112628507734244094997197207983055403547296916755643580391245099327176805555384643336603336677921; L=9 436424686075360541074316969062008241976843294909773953461143854592000000000000000000000000000000000000/36523099248231645580579057059719669474671599580201825588246497640443025973430808538187924750300204767530196577; L=10 85749691182889926410682983064974697041907359175987086074222228289593354240000000000000000000000000000000000000000/55321085308817005047176773160767397052415362141494362629035276942571195698250298284484060506704258777648647968196684722849; L=11 16848289687928638756807624228828632718621390965235313363194268187686105138321612800000000000000000000000000000000000000000000/83794161578267113863211769694723697861530411935470471023625068276023507361475430710017601034534174582865939754249500892353643608626913; L=12 3310389361087326144515602121406037756119366236337377191996076104791942600730837556924416000000000000000000000000000000000000000000000000/126921976953435960576054606832716103040007372702478070286698543741157367640995624523907147389912330530707841079046197676122474521524839504823061281
+exact region points (t,1,1): t=9/8 c_1=11851370496/418142914585, t=5/4 c_1=4000000/61385721, t=11/8 c_1=145238720/1452454739, t=3/2 c_1=2079/15566
+exact region points (t,t,1): t=9/8 c_1=419904/9393713, t=5/4 c_1=36125/402234, t=11/8 c_1=1247147/9338966
+exact region points (1,1,t): t=3/4 c_1=8896/74555, t=7/8 c_1=200704/3920631, t=1 c_1=0
+```
+

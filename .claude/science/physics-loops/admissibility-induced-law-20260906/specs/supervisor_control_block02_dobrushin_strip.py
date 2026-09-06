@@ -36,7 +36,7 @@ W=3
 rows=list(product(range(M), repeat=W)); R=len(rows); idx={r:i for i,r in enumerate(rows)}
 def strip(tr):
     phi=phi_of(tr)
-    def A(r): 
+    def A(r):
         w=1
         for j in range(W-1): w*=phi[r[j]][r[j+1]]
         return w
@@ -45,7 +45,7 @@ def strip(tr):
         for j in range(W): w*=phi[r[j]][r2[j]]
         return w
     # formation chain: first row law and row-to-row kernel under the row sweep (left to right), records-only
-    def rule(s, rec): 
+    def rule(s, rec):
         w=[1]*M
         for t in range(M):
             for e in rec: w[t]*=phi[t][e]

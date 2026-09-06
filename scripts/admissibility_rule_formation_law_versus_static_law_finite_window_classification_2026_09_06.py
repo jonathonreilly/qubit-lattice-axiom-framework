@@ -486,3 +486,208 @@ def family_b(checks: Checks) -> None:
         positive,
         "positivity premise: every r(s | eta) > 0 for every partial recorded set eta at the declared triples",
     )
+
+
+# ==================================================================== family C
+def full_conditionals_match(name, phi, configs, exterior_mu=None, exterior_rule=None, two_hops=False, bad_edge=False):
+    edges = WINDOWS[name]
+    n = SIZES[name]
+    N = neighbors(edges, n)
+    N2 = {x: tuple(sorted({z for y in N[x] for z in N[y] if z != x} | set(N[x]))) for x in range(n)}
+    for v in configs:
+        for x in range(n):
+            ws = []
+            for s in range(M):
+                vs = v[:x] + (s,) + v[x + 1:]
+                w = static_weight(vs, edges, phi, exterior_mu)
+                if bad_edge:
+                    i, j = edges[0]
+                    w *= phi[vs[i]][vs[j]]
+                ws.append(w)
+            recorded = [v[y] for y in (N2[x] if two_hops else N[x])]
+            if exterior_rule:
+                recorded += list(exterior_rule[x])
+            nums = rule_numerators(range(M), recorded, phi)
+            Zs, Zr = sum(ws), sum(nums)
+            for s in range(M):
+                if Fraction(ws[s], Zs) != Fraction(nums[s], Zr):
+                    return False
+    return True
+
+
+def cube_configuration_family():
+    fam = {(REF,) * 8}
+    for i in range(8):
+        for s in range(M):
+            if s != REF:
+                v = [REF] * 8
+                v[i] = s
+                fam.add(tuple(v))
+    for i in range(8):
+        for j in range(i + 1, 8):
+            for s in range(M):
+                for t in range(M):
+                    if s != REF and t != REF:
+                        v = [REF] * 8
+                        v[i], v[j] = s, t
+                        fam.add(tuple(v))
+    state = 20260906
+    sample = []
+    for _ in range(300):
+        v = []
+        for _k in range(8):
+            state = (1103515245 * state + 12345) % (2 ** 31)
+            v.append((state >> 16) % M)
+        sample.append(tuple(v))
+    return tuple(sorted(fam)) + tuple(sample)
+
+
+def compat_rows(edges, n, numerators_of):
+    """Rows of the homogeneous system mu(v) Z_x - num_x(v) sum_t mu(v^{x->t}) = 0."""
+    N = neighbors(edges, n)
+    configs = list(product(range(M), repeat=n))
+    idx = {v: i for i, v in enumerate(configs)}
+    rows = []
+    for v in configs:
+        for x in range(n):
+            nums = numerators_of([v[y] for y in N[x]])
+            Z = sum(nums)
+            row = [0] * len(configs)
+            row[idx[v]] += Z
+            for t in range(M):
+                row[idx[v[:x] + (t,) + v[x + 1:]]] -= nums[v[x]]
+            rows.append(row)
+    return rows, configs
+
+
+def sum_rule_numerators(lam_num, lam_den):
+    def f(recorded):
+        nums = [lam_den + lam_num * sum(vdot(s, y) for y in recorded) for s in range(M)]
+        assert all(t > 0 for t in nums), "sum rule positivity bound |lambda| < 1/deg violated"
+        return nums
+    return f
+
+
+def brook_cycle(rule):
+    """Brook cycle at sites 1-2 of path3: a=P(e_x)->a'=P(-e_x) at the end site, b=P(e_x)->b'=P(-e_x) at the middle, c=P(e_x)."""
+    a, a2, b, b2, c = 0, 1, 0, 1, 0
+    num = rule(a2, [b]) * rule(b2, [a2, c]) * rule(a, [b2]) * rule(b, [a, c])
+    den = rule(a, [b]) * rule(b, [a2, c]) * rule(a2, [b2]) * rule(b2, [a, c])
+    if mut("brook_cycle_sign_flip"):
+        num, den = num * rule(a, [b]) ** 2, den * rule(a2, [b]) ** 2
+    return sp.cancel(num / den)
+
+
+def family_c(checks: Checks) -> None:
+    cube_family = cube_configuration_family()
+    ok_exh = True
+    for triple in TRIPLES:
+        phi = phi_table(triple)
+        for name in ("path3", "P4", "star4", "cycle4"):
+            configs = list(product(range(M), repeat=SIZES[name]))
+            ok_exh = ok_exh and full_conditionals_match(
+                name, phi, configs,
+                two_hops=mut("static_conditional_uses_two_hops"),
+                bad_edge=mut("static_mu_wrong_edge_weight"),
+            )
+    checks.check(
+        "C1",
+        ok_exh,
+        "Theorem A instance: the static law's full conditionals equal the product rule on path3, P4, star4, cycle4 (every configuration, site, s; both triples)",
+    )
+    ok_ext = True
+    for triple in TRIPLES:
+        phi = phi_table(triple)
+        configs = list(product(range(M), repeat=4))
+        ok_ext = ok_ext and full_conditionals_match(
+            "cycle4", phi, configs,
+            exterior_mu=None if mut("exterior_factor_dropped") else CYCLE4_EXTERIOR,
+            exterior_rule=CYCLE4_EXTERIOR,
+        )
+    checks.check(
+        "C2",
+        ok_ext,
+        "the boundary-conditioned static law on cycle4 (exterior records P(+e_x), P(-e_y) at every site) has full conditionals equal to the rule with exterior records included",
+    )
+    ok_cube = True
+    for triple in TRIPLES:
+        phi = phi_table(triple)
+        ok_cube = ok_cube and full_conditionals_match("cube8", phi, cube_family)
+        ok_cube = ok_cube and full_conditionals_match("cube8", phi, cube_family, exterior_mu=CUBE8_EXTERIOR, exterior_rule=CUBE8_EXTERIOR)
+    checks.check(
+        "C3",
+        ok_cube and len(cube_family) == 1041,
+        "cube8: the full-conditional identity holds on the declared configuration family (741 near-reference + 300 LCG) with and without the exterior assignment",
+    )
+    ok_pos = True
+    for triple in TRIPLES:
+        phi = phi_table(triple)
+        for name in ("path3", "P4", "star4", "cycle4"):
+            ok_pos = ok_pos and all(static_weight(v, WINDOWS[name], phi) > 0 for v in product(range(M), repeat=SIZES[name]))
+        ok_pos = ok_pos and all(static_weight(v, WINDOWS["cube8"], phi) > 0 for v in cube_family)
+    checks.check("C4", ok_pos, "positive rule => positive static law: every mu(v) > 0 on the declared windows (cube8 on its family)")
+    phi = phi_table(TRIPLES[0])
+    rows, configs = compat_rows(WINDOWS["path3"], 3, lambda rec: rule_numerators(range(M), rec, phi))
+    if mut("compat_rank_off_by_one"):
+        rows.append([1] + [0] * (len(configs) - 1))
+    witness = [static_weight(v, WINDOWS["path3"], phi) for v in configs]
+    rank = bareiss_rank(rows, len(configs))
+    in_null = all(sum(a * b for a, b in zip(row, witness)) == 0 for row in rows)
+    checks.check(
+        "C5",
+        len(rows) >= 648 and len(configs) == 216 and rank == 215 and in_null and all(w > 0 for w in witness),
+        f"Brook uniqueness instance on path3 at (3,1,2): the compatibility system ({len(rows)} equations, 216 unknowns) has exact rank {rank} by fraction-free elimination and mu spans its nullspace with all entries positive",
+    )
+    ranks = {}
+    for lam in ((1, 4), (-1, 8)):
+        f = (lambda rec: rule_numerators(range(M), rec, phi)) if mut("sum_rule_pretends_consistent") else sum_rule_numerators(*lam)
+        rows_s, _ = compat_rows(WINDOWS["path3"], 3, f)
+        ranks[lam] = bareiss_rank(rows_s, 216)
+    checks.check(
+        "C6",
+        ranks == {(1, 4): 216, (-1, 8): 216},
+        f"the sum rule is not consistent on path3: the compatibility system has full rank 216 at lambda = 1/4 and -1/8 (positivity bound |lambda| < 1/deg, deg 2), ranks {tuple(ranks.values())}",
+    )
+    ok_edge = True
+    for lam in ((1, 4), (-1, 8)):
+        edges, n = (WINDOWS["path3"], 3) if mut("single_edge_sum_rule_inconsistent") else (((0, 1),), 2)
+        rows_e, configs_e = compat_rows(edges, n, sum_rule_numerators(*lam))
+        nullity = len(configs_e) - bareiss_rank(rows_e, len(configs_e))
+        law = [lam[1] + lam[0] * vdot(v[0], v[1]) for v in configs_e]
+        in_null_e = all(sum(a * b for a, b in zip(row, law)) == 0 for row in rows_e)
+        ok_edge = ok_edge and nullity == 1 and in_null_e and sum(law) == 36 * lam[1]
+    checks.check(
+        "C7",
+        ok_edge,
+        "single-edge control: the sum rule is consistent on one edge (nullity 1) with the explicit law (1 + lambda<s,t>)/36 at both couplings; the obstruction needs degree >= 2",
+    )
+    lam = sp.symbols("lambda")
+
+    def rule_sum(s, rec):
+        w = [1 + lam * sum(vdot(t, y) for y in rec) for t in range(M)]
+        return w[s] / sum(w)
+
+    Rl = brook_cycle(rule_sum)
+    numer, denom = sp.fraction(sp.factor(Rl - 1))
+    poly = sp.Poly(numer, lam)
+    other_roots = [rt for rt in sp.roots(poly, lam) if rt != 0]
+    checks.check(
+        "C8",
+        Rl.subs(lam, sp.Rational(1, 4)) == sp.Rational(27, 25)
+        and sp.rem(poly, sp.Poly(lam ** 2, lam)).is_zero
+        and all(abs(rt) >= sp.Rational(1, 6) for rt in other_roots)
+        and denom.subs(lam, sp.Rational(1, 4)) != 0,
+        f"the symbolic Brook cycle of the sum rule at sites 1-2 of path3 gives R(1/4) = 27/25 and R - 1 = {sp.factor(Rl - 1)}: lambda^2 divides the numerator and no other root lies in |lambda| < 1/6",
+    )
+    P_, Q_, R_ = sp.symbols("p q r", positive=True)
+    phis = [[(P_, Q_, R_)[orbit(a, b)] for b in range(M)] for a in range(M)]
+
+    def rule_prod(s, rec):
+        w = [sp.Mul(*[phis[t][y] for y in rec]) if rec else sp.Integer(1) for t in range(M)]
+        return w[s] / sum(w)
+
+    checks.check(
+        "C9",
+        sp.simplify(brook_cycle(rule_prod) - 1) == 0,
+        "the same Brook cycle for the product rule with symbolic (p, q, r) is exactly 1",
+    )

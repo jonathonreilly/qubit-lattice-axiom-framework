@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_infinite_strip_row_sweep_formation_versus_static_law_2026_09_06.py
-runner_sha256: 1cd8762aba6c5582332c6455ca4a70ba84946690849c871abe5b0bec3374817a
-input_fingerprint_sha256: 5545a1a6503b235b4e895328d80fa0cea89cb3c22ba81d244d57553fb14240ea
+runner_sha256: abbd76127f42d3d5e9b895c451d0f2c31899e0afeb949c7a8f812bb1f65f98c2
+input_fingerprint_sha256: 9ac6e0846636b72e1ccb6ab28df2efc123feac25cb978b26010b27fd7418eaf3
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 37.14
+elapsed_sec: 26.91
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -29,6 +29,7 @@ PASS: C3 cube site 0: all 6^7 complements, both triples
 PASS: C4 plaquette edge with exterior (P(e_x), P(-e_y)): all 36 complements, both triples
 PASS: C5 plaquette site with exterior: all 216 complements, both triples
 PASS: C6 finite range: cube edge 1296 adjacent-record classes (2 non-adjacent sites), site 216 classes (4), plaquette site (1)
+PASS: D9 restriction lemma: width-3 two-row joint on columns 0,1 equals the width-2 joint, both triples
 PASS: D1 E2 row kernel from the formula equals the kernel from the definition entrywise, W = 2, 3, both triples; rows sum to one
 PASS: D2 E3: p_0 P = p_0 exactly for W = 2, 3, both triples (all 6^W row states)
 PASS: D3 E4: every vertical and horizontal nearest-neighbor pair has law (1/6) K; the diagonal pair (alpha_0, beta_1) has law (1/6) K^2
@@ -55,6 +56,7 @@ info W=2 (5, 2, 4): s_inf in [0.219874176124090031, 0.219874176124090032]; |lam_
 PASS: E8 the enclosure of s_inf excludes the formation value p/(p+q+4r) at W = 2, 3, both triples
 PASS: E9 finite-n center-row values n = 3..13: distance to the enclosure strictly decreasing, final < 10^-6
 PASS: E10 second eigenvalue: all charpoly roots real; every non-Perron root in [-m, m] with rational m < lam_1 (Sturm)
+PASS: E11 boundary independence: end records P(e_y) on both end rows, n = 13 center-row value within 10^-6 of the enclosure, W = 2, 3, both triples
 PASS: F1 the note carries the four fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (hits: [])
 PASS: F3 runner source: no floating-point literal, conversion or evaluation call (0 hits)
@@ -64,7 +66,7 @@ per_mode: executed — the quotient transfer matrix's characteristic polynomial,
 per_block: executed — the row-to-row kernel block by block for widths 2, 3, 4; the finite-n center-row values for n = 3..13; the cube's three-neighbor witness
 lattice_wide: checked and not executed — strips of widths 2 and 3 only for the static law; the plane and the cubic lattice's infinite-volume law are named, not computed
 PASS: G1 the five N5 resolution lines are printed (each >= 40 characters)
-TOTAL: PASS=37 FAIL=0
+TOTAL: PASS=39 FAIL=0
 
 ----- stderr -----
 

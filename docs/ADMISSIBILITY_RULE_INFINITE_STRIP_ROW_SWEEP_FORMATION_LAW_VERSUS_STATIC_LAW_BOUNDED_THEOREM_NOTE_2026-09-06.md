@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06
 claim_type: bounded_theorem
-claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule at the declared exact weight triples (3, 1, 2) and (5, 2, 4): the specification consistency of the finite-window static laws with exterior records, executed on the open 2x2x2 cube and the plaquette (Theorem C1); existence of an infinite-volume static law on Z^3 for the finite menu by compactness and the finite-window conditional identity, with a translation-invariant limit (Theorem C2, proved, no uniqueness); the row sweep's exact solvability on strips of every width and length including the infinite strip and the half-plane under the records-only reading (Theorem E: every row is the path static chain p_0; every horizontal and vertical nearest-neighbor pair has the single-edge law with pair-parallel probability p/(p+q+4r)), executed at widths 2, 3 and 4; the static law of the width-2 and width-3 strips: an exactly enclosed center-row pair-parallel probability s_inf as an algebraic number (Theorem F) and its separation from the formation value (F5). No uniqueness on Z^3, no static law of the plane, no three-recorded-neighbor sweep, no order selected as physical; exact arithmetic throughout."
+claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule at the declared exact weight triples (3, 1, 2) and (5, 2, 4): the specification consistency of the finite-window static laws with exterior records, executed on the open 2x2x2 cube and the plaquette (Theorem C1); existence of an infinite-volume static law on Z^3 for the finite menu by compactness and the finite-window conditional identity, with a translation-invariant limit (Theorem C2, proved, no uniqueness); the row sweep's exact solvability on strips of every width and length including the infinite strip (rows indexed by N) and the quadrant (the half-plane swept row by row from its left end) under the records-only reading (Theorem E: every row is the path static chain p_0; every horizontal and vertical nearest-neighbor pair has the single-edge law with pair-parallel probability p/(p+q+4r)), executed at widths 2, 3 and 4; the static law of the width-2 and width-3 strips: an exactly enclosed center-row pair-parallel probability s_inf as an algebraic number (Theorem F) and its separation from the formation value (F5). No uniqueness on Z^3, no static law of the plane, no three-recorded-neighbor sweep, no order selected as physical; exact arithmetic throughout."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
@@ -52,7 +52,7 @@ endpoints rounded outward), which exclude `1/4` and `5/23` (Theorem F, F4–F5).
 The finite-window static laws with exterior records form a specification
 (Theorem C1, executed on the cube and the plaquette) and an infinite-volume
 static law on `Z^3` exists for the finite menu (Theorem C2, proved; nothing
-about uniqueness). Executed with exact arithmetic: 37 checks, 28 mutations.
+about uniqueness). Executed with exact arithmetic: 39 checks, 30 mutations.
 
 ## Machine status and trace
 
@@ -120,8 +120,12 @@ assignment (the exterior neighbor along axis `a` carries `P(e_a)`; site
 `(P(e_x), P(−e_y))` at every site.
 
 **Strips and the sweep.** `S_{W,n}` is the `W × n` grid (rows `i = 0..n−1`,
-columns `j = 0..W−1`, nearest-neighbor edges, open boundary); `S_W` is the
-infinite strip (rows indexed by `N`); the half-plane is the quadrant with
+columns `j = 0..W−1`, nearest-neighbor edges, open boundary: as a window of
+`Z^3` every strip site also has out-of-plane and out-of-strip neighbors, and
+they carry no records on either side of the comparison — under the
+records-only reading they contribute nothing to the formation law, and the
+static law is the open-boundary one); `S_W` is the infinite strip (rows
+indexed by `N`; a two-sided strip is not needed, see F5); the half-plane is the quadrant with
 rows and columns both indexed by `N`, swept row by row, each row from its
 left end (Theorem E treats it through its finite-width marginals). The row sweep
 `σ_row`: rows in order, each row left to right; under the records-only
@@ -152,9 +156,12 @@ positive entries (Wielandt's maximin argument, Theorem F2); compactness of a
 countable product of finite sets by a diagonal argument and the passage of
 finite-window conditional identities to a limit (Theorem C2). One classical
 observation is referenced only, as `classical: certain sequential lattice
-processes have product-form or Markov-chain invariant row measures`; no
-author claim is made and nothing is taken from it — Theorem E is proved here
-from transitivity and `Z_2 = Z_1^2 K^2`. The prior-art sweep is recorded in
+processes have product-form or Markov-chain invariant row measures — the
+Pickard / Markov-mesh construction`; no author claim is made and nothing is
+taken from it — Theorem E is proved here
+from the symmetry of `φ` and the constancy of `Z_1` (on this menu a consequence
+of transitivity; a symmetric pair weight with constant row sums on a
+non-transitive menu satisfies the same two hypotheses), through `Z_2 = Z_1^2 K^2`. The prior-art sweep is recorded in
 the pack's `ROUTE_PORTFOLIO.md` (block 02 section); no landed note states any
 of the objects below.
 
@@ -177,13 +184,13 @@ probability `s_∞` lies in an exact rational interval that excludes it.
 |---|---|
 | the static law's full conditionals are the rule with all neighbors recorded (Theorem A of block 01) | cited; C1 re-executes the cancellation with exterior records |
 | specification consistency C1 on the cube (face, edge, site) and the plaquette (edge, site) | executed (C1–C5); finite range by grouping (C6) |
-| compactness of `M^{Z^3}`, the cylinder-limit measure, the limit identity, a translation-invariant limit | proved here (C2), no choice principle |
+| compactness of `M^{Z^3}`, the cylinder-limit measure, the limit identity, a translation-invariant limit | proved here (C2) with dependent choice only; the Carathéodory extension cited |
 | `Z_1` constant; `Z_2 = Z_1^2 K^2` (E1); the row kernel formula (E2) | proved here; executed symbolically (B1, B2) and entrywise (D1) |
-| `p_0 P = p_0` (E3) by telescoping; the pair laws (E4) | proved here for every `W`; executed `W = 2, 3, 4` (D2, D5) and (D3) |
+| `p_0 P = p_0` (E3) by telescoping; the pair laws (E4); the width restriction lemma | proved here for every `W`; executed `W = 2, 3, 4` (D2, D5), (D3) and (D9) |
 | the finite-strip formation law is `p_0 P^{n−1}` on rows and row pairs | executed from block 01's definition (D4) |
 | `T` commutes with `G`; the Perron vector is `G`-invariant; the quotient (F1) | proved here; executed (E1, E2, E5, E6) |
 | Perron–Frobenius for positive matrices (F2) | re-proved here (Wielandt) |
-| the center-row law formula and its limit (F3) | proved here; executed for `n ≤ 13` (E9) |
+| the center-row law formula, its limit and its boundary independence (F3) | proved here; executed for `n ≤ 13` (E9) and with end records (E11) |
 | the exact enclosure of `s_∞` and the second-eigenvalue bound (F4) | executed (E3–E10) |
 | uniqueness of the infinite-volume static law; the static law of the plane; a three-neighbor sweep | open; not this note |
 
@@ -224,15 +231,20 @@ events (a finite set of sites and an assignment on it) are countable; list
 them `C_1, C_2, …`. Since `μ_n(C_1) ∈ [0, 1]`, a subsequence converges; from
 it a further subsequence converges on `C_2`; and so on; the diagonal
 subsequence converges on every `C_k` (bounded sequences of rationals in
-`[0, 1]` have convergent subsequences by bisection — no choice principle is
-used beyond countable selection along an explicit rule). The limits
+`[0, 1]` have convergent subsequences by bisection; the countable diagonal
+extraction uses only dependent choice along an explicit rule, never the full
+axiom of choice). The limits
 `m(C)` are finitely additive on the algebra generated by cylinders and
 `m(M^{Z^3}) = 1`. Each cylinder set is compact-open in the product topology
 of the finite menu — the compactness of `M^{Z^3}` is the same diagonal
-argument applied to a sequence of configurations — so a countable disjoint
+argument applied to a sequence of configurations, and a countable product of
+finite sets is metrizable, so sequential compactness is compactness — so a
+countable disjoint
 union of cylinders that equals a cylinder is a finite union, and `m` is
-countably additive on the algebra; the Carathéodory extension gives a
-probability measure `μ` on the product σ-algebra. For a finite `Δ` take `n`
+countably additive on the algebra; the Carathéodory extension theorem (cited,
+not re-proved: the definition-level step from a countably additive set
+function on the cylinder algebra to a measure on the product σ-algebra; listed
+under Imports) gives a probability measure `μ` on the product σ-algebra. For a finite `Δ` take `n`
 with `Δ ∪ ∂Δ ⊂ Λ_n` and any cylinder event `B` determined by finitely many
 sites outside `Δ`. By C1 applied inside `Λ_n`,
 `μ_n(v_Δ = a, B) = Σ_b μ_Δ^{b}(a) μ_n(v_{∂Δ} = b, B)`, a finite identity
@@ -246,7 +258,9 @@ unit shift `e` and any cylinder `C`, `|μ̄_L(τ_e C) − μ̄_L(C)| ≤ 2 L^2 /
 (the two boxes `B_L` and `B_L + e` differ in `2 L^2` sites); a diagonal
 subsequence in `L` converges on every cylinder to a measure `μ̄` that is
 translation invariant and satisfies the identity by the same passage to the
-limit. ∎ Nothing is claimed about whether different exhaustions or boundary
+limit (the identity is preserved under convex combinations and under
+cylinder-wise limits, and the boxes `B_L` have boundary-to-volume ratio
+`2L^2/L^3 → 0`). ∎ Nothing is claimed about whether different exhaustions or boundary
 records give the same limit.
 
 ## Theorem E — the row sweep is exactly solvable
@@ -296,9 +310,12 @@ laws (the law of the first `n` rows is `μ_{σ_row}` on `S_{W,n}`, since later
 rows do not enter earlier conditionals), which exists on the countable
 product `M^{S_W}` by the cylinder-algebra argument of C2; its row marginals
 are `p_0` without any limit. On the quadrant (the half-plane swept row by row
-from the left end), the law of the first `J + 1` sites of row `i` depends
-only on the first `J + 1` sites of row `i − 1`, so it is the width-`(J + 1)`
-statement: every finite-width marginal of every row is the path chain. ∎
+from the left end), the restriction lemma holds: every site's recorded
+neighbors lie in its own column or to its left, so the formation law of width
+`W` restricted to the first `W'` columns is the width-`W'` formation law
+(executed at `3 → 2` on the two-row joint, D9), the finite-width marginals are
+consistent, and the Kolmogorov extension on the countable product gives the
+quadrant's law, whose every finite-width row marginal is the path chain. ∎
 Executed: `p_0 P = p_0` on all `6^W` row states for `W = 2, 3` at both
 triples (D2) and for `W = 4` (`1296` row states; integer numerators over a
 common denominator; both triples; 0.5 s) (D5).
@@ -400,7 +417,15 @@ nonzero roots are distinct, E10), and the zero eigenvalue (multiplicity 5 at
 `‖R_k‖ / λ_1^k ≤ C |λ_2/λ_1|^k`. Hence
 `(A T^c)(ρ) (T^{n−1−c} 1)(ρ) / λ_1^{n−1} → const · A(ρ) ρ_1(ρ) · ρ_1(ρ)`,
 and the center-row law converges to `w(ρ) ∝ A(ρ) ρ_1(ρ)^2`, geometrically
-with ratio `|λ_2/λ_1|`.
+with ratio `|λ_2/λ_1|` taken in `Q`'s spectrum. The limit does not depend on
+the records at the two ends of the strip: for any nonnegative nonzero boundary
+vectors `b_L`, `b_R` (any exterior records on the first and last rows),
+`b_L T^c / λ_1^c` and `T^{n−1−c} b_R / λ_1^{n−1−c}` converge in direction to
+`A ρ_1` and `ρ_1` because their Perron components `b_L · ρ_1` and
+`(A ρ_1) · b_R` are positive, so the deep-row law is `w` whatever the end
+records (executed with `P(e_y)` records on both end rows at `n = 13`, E11);
+the same argument gives `w` as the law of row `i` of the one-sided strip
+(rows indexed by `N`) as `i → ∞`, which is the object F5 compares with.
 
 **F4 (exact enclosure, executed; `W = 3`, both triples; `W = 2` likewise).**
 (a) The characteristic polynomial of `Q` at `(3, 1, 2)` is
@@ -476,7 +501,7 @@ their stated scope; it is not a route no-go beyond that scope.
 
 | route | what it would attempt | why it fails here, or its obligation | marker |
 |---|---|---|---|
-| 1 a different order family on the strip | choose an order whose formation law has the static pair statistic | row sweeps with any per-row direction and any row order are covered by Theorem E (each row is still a path swept from an end with one recorded neighbor below; `p_0` is reversal-invariant since `K` is symmetric); diagonal or random sweeps in which some site forms with two recorded neighbors that have no common earlier neighbor are not covered by E and are not executed — their obligation is a separate solvability argument | ATTEMPTED (row sweeps); not executed (diagonal, random) |
+| 1 a different order family on the strip | choose an order whose formation law has the static pair statistic | row sweeps with the rows formed in increasing or decreasing order, each row swept from either end, are covered by Theorem E (the strip reflection maps a right-to-left row onto a left-to-right one and `p_0` is reflection-invariant since `K` is symmetric), and column sweeps by the transposed argument; orders in which some site forms with recorded neighbors above and below, or with two recorded neighbors that have no common earlier neighbor, are not covered by E and are not executed here — the panel's exact grid survey (pack `REVIEW_HISTORY.md`) found the row law kept by diagonal sweeps and by the snake order and broken by a scrambled order and by the ends-inward path order; those are leads for the next block, not claims of this note | ATTEMPTED (row sweeps); not executed (diagonal, random) |
 | 2 the static law of the plane | let the plane's static law, not the strip's, be the comparator | not computed; the formation side is width-independent (E4 for every `W`), so the comparison on the plane would need only the plane's pair statistic, which this note does not compute | not executed; obligation named |
 | 3 a three-recorded-neighbor sweep | a sweep on a three-dimensional window whose normalizers telescope | Theorem E's premise (the two-neighbor normalizer is the two-step kernel of a common earlier neighbor) fails at three neighbors: the cube witness D8 (`210/216` triples off) | ATTEMPTED (witness only; no theorem) |
 | 4 a different exhaustion for the infinite-volume limit | take the formation law along growing squares rather than strips | the formation side is exhaustion-independent: every row of every `W × n` strip has law `p_0` and every nearest-neighbor pair the single-edge law (E3, E4 for every `W`, `n`); the static side along squares is the plane (route 2) | ATTEMPTED (formation side); static side not computed |
@@ -593,7 +618,7 @@ approaching the enclosure; a non-Perron root of modulus above `m`.
 
 ## Boundaries and non-claims
 
-This note selects no physical formation order; the row sweep is a declared order whose exact solvability is a property of two-recorded-neighbor sweeps on two-dimensional windows.
+This note selects no physical formation order; the row sweep is a declared order whose exact solvability is a property of sweeps in which each site forms with one in-row predecessor and the site below it as its recorded neighbors, on two-dimensional windows with an unrecorded exterior.
 
 No statement is made about the static law of the plane, about uniqueness of an infinite-volume static law on the cubic lattice, or about any three-recorded-neighbor sweep; this note does not fire wake condition 1 of the parked statistical-bridge decision.
 
@@ -601,7 +626,12 @@ This note does not derive, explain, bear on or decide the parked statistical bri
 
 Every negative sentence in this note is an exact statement on the declared strips and windows or a corollary of Theorems E and F at their stated scope; none is a route no-go beyond that scope.
 
-Further: Theorem C2 is existence only, along a subsequence, for the finite
+Further: the infinite strip and the quadrant have rows indexed by `N` (a
+first row exists; the formation law is defined without any limit); the
+exactly solvable order class is the one in the first fence, not every order
+with at most two recorded neighbors (the ends-inward path order of block 01
+has two recorded neighbors at its last site and its formation law is not the
+path chain); Theorem C2 is existence only, along a subsequence, for the finite
 menu; whether different exhaustions or boundary records give the same limit
 is undecided here; the static enclosure is executed at widths 2 and 3 only;
 the finite-`n` monotonicity is an executed fact for `n ≤ 13`; the convergence
@@ -612,6 +642,9 @@ is supplied; no axiom or primitive is changed.
 
 References, re-proved at scope, never authority, no values imported:
 Perron–Frobenius for positive matrices (Wielandt's maximin argument, F2);
+the Carathéodory extension theorem (cited, not re-proved; used in C2 only as
+the definition-level passage from the cylinder algebra to the product
+σ-algebra);
 compactness of a countable product of finite sets and the passage of
 finite-window conditional identities to the limit (C2); Sturm's theorem and
 resultants as implemented in `sympy` (exact rational arithmetic; the runner
@@ -624,8 +657,13 @@ No observation, fitted value or literature constant enters.
 ## Review record
 
 Fable primary seat (own 28-mutation census, read from raw per-mutation
-stdout); refuting checker: pending; independence class: to be filled by the
-supervisor. Contract facts settled while executing: the second eigenvalue at
+stdout; two checks and two mutations added by the supervisor at the fold, D9
+and E11, census re-run at 30); a hostile refuter lens on the contract before
+the build (Opus 5; exact order survey on finite grids; the fence's order class
+and the transitivity sentence corrected on its findings); refuting checker
+(Opus 5, disjoint machinery): FIX FIRST with nothing refuted — CK-01 to CK-08 all confirmed with the numbers reproduced independently (a different menu encoding, base-6 row codes, the kernel from the definition, its own orbit reduction, elimination over `Q(λ)` with exact interval evaluation instead of a resultant; all 28 mutations run, each in its family; an undeclared opposite-corner sub-window of the cube also consistent); its two required fixes (the route-1 order class, with its own counterexample: row order `0, 2, 1` at width 3 gives row 1 three recorded neighbors and a marginal off `p_0` on all 216 states; the Carathéodory extension named as a cited import) and its recommendations (metrizability; the obligation table's choice wording; the quadrant named in the claim scope) folded here; supervisor line-by-line review of
+the runner and the note with three exact control scripts. Independence class:
+single family (Claude), cross-model. Contract facts settled while executing: the second eigenvalue at
 `(5, 2, 4)`, left numeric in the contract, is exact by Sturm isolation since
 every root of the octic is real; the contract's `next_trace_action` named the
 uniqueness region by a proper name the fence list forbids, so the region is
@@ -643,8 +681,8 @@ python3 scripts/admissibility_rule_infinite_strip_row_sweep_formation_versus_sta
 
 Families: A authority and inputs; B the kernel; C the specification; D the
 sweep; E the static infinite strip; F fences and the floating-point
-self-scan; G the resolution certificate. Each of the 28 declared mutations
+self-scan; G the resolution certificate. Each of the 30 declared mutations
 perturbs one object at construction time and fails in exactly one family
 (`mutation_family_expected:` / `mutation_family_observed:` lines); `--exact`
 prints the exact rational endpoints and polynomials. Expected final line:
-`TOTAL: PASS=37 FAIL=0`.
+`TOTAL: PASS=39 FAIL=0`.

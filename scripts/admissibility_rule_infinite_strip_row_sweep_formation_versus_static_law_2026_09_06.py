@@ -86,6 +86,8 @@ MUTATION_GATE = {
     "s_inf_enclosure_contains_formation_value": "E",
     "finite_n_sequence_shuffled": "E",
     "second_eigenvalue_bound_too_small": "E",
+    "boundary_dependence_forged": "E",
+    "restriction_lemma_broken": "D",
     "claim_order_selected": "F",
     "claim_plane_static": "F",
     "claim_z3_uniqueness": "F",
@@ -461,6 +463,19 @@ def family_d(checks: Checks, report: dict) -> None:
                 for i in range(n):
                     d4 = d4 and all(marg[i][rows[k]] == chain_rows[i][k] for k in range(R))
                 d4 = d4 and all(pair[(rows[a], rows[k])] == chain_rows[n - 2][a] * P[a][k] for a in range(R) for k in range(R))
+    d9 = True
+    for triple in TRIPLES:
+        rows3, p03, P3 = report[("P", triple, 3)]
+        rows2, p02, P2 = report[("P", triple, 2)]
+        cols = (0, 2) if mut("restriction_lemma_broken") else (0, 1)
+        restricted: dict = {}
+        for i, b in enumerate(rows3):
+            for k, a in enumerate(rows3):
+                key = (tuple(b[c] for c in cols), tuple(a[c] for c in cols))
+                restricted[key] = restricted.get(key, Fraction(0)) + p03[i] * P3[i][k]
+        idx2 = {r: i for i, r in enumerate(rows2)}
+        d9 = d9 and all(restricted[(b, a)] == p02[idx2[b]] * P2[idx2[b]][idx2[a]] for b in rows2 for a in rows2)
+    checks.check("D9", d9, "restriction lemma: width-3 two-row joint on columns 0,1 equals the width-2 joint, both triples")
     checks.check("D1", d1, "E2 row kernel from the formula equals the kernel from the definition entrywise, W = 2, 3, both triples; rows sum to one")
     checks.check("D2", d2, "E3: p_0 P = p_0 exactly for W = 2, 3, both triples (all 6^W row states)")
     checks.check("D3", d3, "E4: every vertical and horizontal nearest-neighbor pair has law (1/6) K; the diagonal pair (alpha_0, beta_1) has law (1/6) K^2")
@@ -704,14 +719,14 @@ def perron_data(Q, K):
 CHARPOLY_312_W3 = lam**5 * (lam**3 - 7312 * lam**2 + 2578432 * lam - 221134848)
 
 
-def center_row_value(rows, T, Avec, n: int) -> Fraction:
-    """Center-row pair-parallel probability of the n-row static strip: w = (A T^c)(rho) (T^(n-1-c) 1)(rho)."""
+def center_row_value(rows, T, Avec, n: int, left0=None, right0=None) -> Fraction:
+    """Center-row pair-parallel probability of the n-row static strip: w = (b_L T^c)(rho) (T^(n-1-c) b_R)(rho); default b_L = A, b_R = 1 (open ends)."""
     R = len(rows)
     c = n // 2
-    left = list(Avec)
+    left = list(Avec) if left0 is None else list(left0)
     for _ in range(c):
         left = [sum(left[i] * T[i][k] for i in range(R)) for k in range(R)]
-    right = [1] * R
+    right = [1] * R if right0 is None else list(right0)
     for _ in range(n - 1 - c):
         right = [sum(T[i][k] * right[k] for k in range(R)) for i in range(R)]
     w = [left[k] * right[k] for k in range(R)]
@@ -800,6 +815,13 @@ def static_strip(checks: Checks, report: dict, W: int, triple, exact: bool) -> d
     dist = [max(glo - v, v - ghi, Fraction(0)) for _n, v in seq]
     out["finite_n"] = seq
     out["finite_n_ok"] = all(dist[i + 1] < dist[i] for i in range(len(dist) - 1)) and dist[-1] < Fraction(1, 10 ** 6)
+    # boundary independence of the deep-row limit: exterior records P(e_y) on the first and last rows (a positive boundary vector h)
+    hvec = [prod(phi[r[j]][2] for j in range(W)) for r in rows]
+    bval = center_row_value(rows, T, Avec, 13, left0=[Avec[k] * hvec[k] for k in range(R)], right0=hvec)
+    if mut("boundary_dependence_forged"):
+        bval = bval + Fraction(1, 100)
+    out["boundary_ok"] = max(glo - bval, bval - ghi, Fraction(0)) < Fraction(1, 10 ** 6)
+    out["boundary_value"] = bval
     # second eigenvalue: every root of every factor real; m = max modulus of the non-Perron roots (exact rational bound)
     all_real = all(P_.count_roots() == P_.degree() for P_, _m in factors)
     bounds = []
@@ -848,12 +870,13 @@ def family_e(checks: Checks, report: dict, exact: bool) -> None:
     checks.check("E8", all(r["excludes_formation"] for r in res.values()), "the enclosure of s_inf excludes the formation value p/(p+q+4r) at W = 2, 3, both triples")
     checks.check("E9", all(r["finite_n_ok"] for r in res.values()), "finite-n center-row values n = 3..13: distance to the enclosure strictly decreasing, final < 10^-6")
     checks.check("E10", all(r["second_ok"] for r in res.values()), "second eigenvalue: all charpoly roots real; every non-Perron root in [-m, m] with rational m < lam_1 (Sturm)")
+    checks.check("E11", all(r["boundary_ok"] for r in res.values()), "boundary independence: end records P(e_y) on both end rows, n = 13 center-row value within 10^-6 of the enclosure, W = 2, 3, both triples")
     report["E"] = res
 
 
 # ==================================================================== family F
 FENCES = (
-    "This note selects no physical formation order; the row sweep is a declared order whose exact solvability is a property of two-recorded-neighbor sweeps on two-dimensional windows.",
+    "This note selects no physical formation order; the row sweep is a declared order whose exact solvability is a property of sweeps in which each site forms with one in-row predecessor and the site below it as its recorded neighbors, on two-dimensional windows with an unrecorded exterior.",
     "No statement is made about the static law of the plane, about uniqueness of an infinite-volume static law on the cubic lattice, or about any three-recorded-neighbor sweep; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
     "This note does not derive, explain, bear on or decide the parked statistical bridge, the Born form, or the gravity lane's action.",
     "Every negative sentence in this note is an exact statement on the declared strips and windows or a corollary of Theorems E and F at their stated scope; none is a route no-go beyond that scope.",

@@ -242,3 +242,42 @@ TOTAL: PASS=37 FAIL=0
 census: 28 mutations; all in-family: True
 
 Every mutation fails in exactly its declared family and no other; the unmutated runner passes 37/37. Family sizes: A 5, B 4, C 6, D 8, E 10, F 3, G 1.
+
+## Supervisor fold (2026-09-06, after the refuting checker)
+
+Two checks and two mutations added at the fold: D9 (the width restriction lemma: the width-3 two-row formation joint on columns 0,1 equals the width-2 two-row joint; mutation `restriction_lemma_broken` restricts to the non-adjacent columns 0,2, whose pair carries `K^2`) and E11 (boundary independence of the deep-row limit: with exterior records `P(e_y)` on both end rows the `n = 13` center-row value lies within `10^-6` of the enclosure; mutation `boundary_dependence_forged`). Observation found while designing the D9 mutation: restricting the width-3 joint to the ADJACENT columns 1,2 also equals the width-2 joint (the restriction property holds on any adjacent column pair; the non-adjacent pair 0,2 does not) — recorded, not claimed. The first fence sentence was rewritten to the staircase-past order class (the checker's counterexample: row order 0,2,1 at width 3 gives row 1 three recorded neighbors and a marginal off `p_0` on all 216 states). Two check messages shortened to keep the unmutated stdout under 6,000 characters (5,994).
+
+Final runner: `TOTAL: PASS=39 FAIL=0` (26.9 s); runner sha `abbd76127f42d3d5e9b895c451d0f2c31899e0afeb949c7a8f812bb1f65f98c2`, input fingerprint `9ac6e0846636b72e1ccb6ab28df2efc123feac25cb978b26010b27fd7418eaf3`. Census re-run at the final sha, 30 mutations, one helper invocation each, 4 in parallel, expected/observed read from raw stdout: 30 of 30 in family.
+
+| mutation | expected | observed | total | failing checks | exit |
+|---|---|---|---|---|---|
+| `kernel_not_doubly_stochastic` | B | B | TOTAL: PASS=36 FAIL=3 | B1 B2 B3  | 1 |
+| `z2_identity_wrong_power` | B | B | TOTAL: PASS=38 FAIL=1 | B2  | 1 |
+| `path_law_not_formation` | B | B | TOTAL: PASS=38 FAIL=1 | B4  | 1 |
+| `spec_conditional_ignores_exterior` | C | C | TOTAL: PASS=33 FAIL=6 | C1 C2 C3 C4 C5 C6  | 1 |
+| `spec_conditional_two_hop` | C | C | TOTAL: PASS=33 FAIL=6 | C1 C2 C3 C4 C5 C6  | 1 |
+| `spec_face_wrong_subwindow` | C | C | TOTAL: PASS=38 FAIL=1 | C1  | 1 |
+| `row_kernel_formula_wrong_denominator` | D | D | TOTAL: PASS=38 FAIL=1 | D1  | 1 |
+| `row_kernel_drops_left_neighbor` | D | D | TOTAL: PASS=35 FAIL=4 | D1 D2 D3 D4  | 1 |
+| `invariance_forced_true` | D | D | TOTAL: PASS=38 FAIL=1 | D7  | 1 |
+| `pair_law_wrong_column` | D | D | TOTAL: PASS=38 FAIL=1 | D3  | 1 |
+| `direct_strip_law_mismatch` | D | D | TOTAL: PASS=38 FAIL=1 | D4  | 1 |
+| `asymmetric_control_passes` | D | D | TOTAL: PASS=38 FAIL=1 | D7  | 1 |
+| `constant_rule_not_uniform` | D | D | TOTAL: PASS=38 FAIL=1 | D6  | 1 |
+| `three_neighbor_witness_forced` | D | D | TOTAL: PASS=38 FAIL=1 | D8  | 1 |
+| `orbit_count_wrong` | E | E | TOTAL: PASS=38 FAIL=1 | E1  | 1 |
+| `quotient_not_commuting` | E | E | TOTAL: PASS=38 FAIL=1 | E2  | 1 |
+| `charpoly_coefficient_off` | E | E | TOTAL: PASS=38 FAIL=1 | E3  | 1 |
+| `perron_interval_wrong_root` | E | E | TOTAL: PASS=35 FAIL=4 | E5 E9 E10 E11  | 1 |
+| `eigvec_residual_nonzero` | E | E | TOTAL: PASS=36 FAIL=3 | E6 E9 E11  | 1 |
+| `limit_law_uses_rho_not_squared` | E | E | TOTAL: PASS=37 FAIL=2 | E9 E11  | 1 |
+| `s_inf_enclosure_contains_formation_value` | E | E | TOTAL: PASS=36 FAIL=3 | E7 E8 E9  | 1 |
+| `finite_n_sequence_shuffled` | E | E | TOTAL: PASS=38 FAIL=1 | E9  | 1 |
+| `second_eigenvalue_bound_too_small` | E | E | TOTAL: PASS=38 FAIL=1 | E10  | 1 |
+| `boundary_dependence_forged` | E | E | TOTAL: PASS=38 FAIL=1 | E11  | 1 |
+| `restriction_lemma_broken` | D | D | TOTAL: PASS=38 FAIL=1 | D9  | 1 |
+| `claim_order_selected` | F | F | TOTAL: PASS=38 FAIL=1 | F2  | 1 |
+| `claim_plane_static` | F | F | TOTAL: PASS=38 FAIL=1 | F2  | 1 |
+| `claim_z3_uniqueness` | F | F | TOTAL: PASS=38 FAIL=1 | F2  | 1 |
+| `claim_washout` | F | F | TOTAL: PASS=38 FAIL=1 | F2  | 1 |
+| `claim_gate_fired` | F | F | TOTAL: PASS=38 FAIL=1 | F2  | 1 |

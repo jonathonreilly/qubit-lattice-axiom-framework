@@ -606,8 +606,7 @@ one-site contraction criterion of Dobrushin (1968–1970) with its
 comparison-theorem form — re-proved above by the random-scan coupling
 (Theorem H) and the path-count corollary (Theorem I); the coupling method
 (maximal coupling of two laws on a finite set, the coupling inequality) —
-proved above where used.
-Cited, not re-proved: uniqueness of the Carathéodory extension from the
+proved above where used. Cited, not re-proved: uniqueness of the Carathéodory extension from the
 cylinder algebra (the last step of Theorem I; block 02 cites the existence
 half). Declared mathematical scaffolding: Sturm's theorem, real-root
 isolation and exact rational matrix inversion as implemented in `sympy`
@@ -648,5 +647,4 @@ at construction time and fails in exactly one family
 (`mutation_family_expected:` / `mutation_family_observed:` lines); `--exact`
 prints the exact rationals, the grid map, the polynomials, the isolating
 endpoints, `u*` and the center row of `D_Λ`.
-Expected final line:
-`TOTAL: PASS=36 FAIL=0`.
+Expected final line: `TOTAL: PASS=36 FAIL=0`.

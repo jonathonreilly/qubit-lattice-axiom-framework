@@ -130,16 +130,15 @@ reading site `(i, j)` forms with the recorded neighbors `(i, j−1)` (if
 `μ_σ(v) = Π_k r(v_{x_k} | v restricted to A_k)`.
 
 **Row objects.** Row states `ρ ∈ M^W`; the path static law
-`p_0(ρ) = (1/6) Π_{j≥1} K(ρ_{j−1} → ρ_j)`, which is the formation law of the
-path swept from an end (block 01, Theorem B: every site forms with at most one
-recorded neighbor; runner B4 re-executes it for `W = 2, 3`); the row-to-row
-formation kernel `P(β → α)` (row `β` recorded, row `α` forming); the row
-transfer matrix `T(ρ, ρ') = V(ρ, ρ') A(ρ')` with `A(ρ) = Π_j φ(ρ_j, ρ_{j+1})`
-(row-internal edges) and `V(ρ, ρ') = Π_j φ(ρ_j, ρ'_j)` (vertical edges), so
-the static weight of the `n`-row strip is `A(ρ^0) Π_{i≥1} T(ρ^{i−1}, ρ^i)`;
-the row symmetry group `G` = the 24 rotations acting diagonally on the
-entries, times the strip reflection `ρ ↦ ρ^{rev}` (order 48 as a set of
-maps; the runner uses all 48 pairs).
+`p_0(ρ) = (1/6) Π_{j≥1} K(ρ_{j−1} → ρ_j)`, the formation law of the path
+swept from an end (block 01, Theorem B; runner B4 re-executes it for
+`W = 2, 3`); the row-to-row formation kernel `P(β → α)` (row `β` recorded,
+row `α` forming); the row transfer matrix `T(ρ, ρ') = V(ρ, ρ') A(ρ')` with
+`A(ρ) = Π_j φ(ρ_j, ρ_{j+1})` (row-internal edges) and
+`V(ρ, ρ') = Π_j φ(ρ_j, ρ'_j)` (vertical edges), so the static weight of the
+`n`-row strip is `A(ρ^0) Π_{i≥1} T(ρ^{i−1}, ρ^i)`; the row symmetry group
+`G` = the 24 rotations acting diagonally on the entries, times the strip
+reflection `ρ ↦ ρ^{rev}` (the runner uses all 48 pairs).
 
 ## Prior art and what is new
 
@@ -152,11 +151,10 @@ are used and never imported as authority: Perron–Frobenius for a matrix with
 positive entries (Wielandt's maximin argument, Theorem F2); compactness of a
 countable product of finite sets by a diagonal argument and the passage of
 finite-window conditional identities to a limit (Theorem C2). One classical
-observation is referenced only, in the form `classical: certain sequential
-lattice processes with nearest-neighbor updates have product-form or
-Markov-chain invariant row measures`; no author claim is made and nothing is
-taken from it — Theorem E is proved here from the menu's transitivity and the
-identity `Z_2 = Z_1^2 K^2`. The prior-art sweep for this block is recorded in
+observation is referenced only, as `classical: certain sequential lattice
+processes have product-form or Markov-chain invariant row measures`; no
+author claim is made and nothing is taken from it — Theorem E is proved here
+from transitivity and `Z_2 = Z_1^2 K^2`. The prior-art sweep is recorded in
 the pack's `ROUTE_PORTFOLIO.md` (block 02 section); no landed note states any
 of the objects below.
 
@@ -179,12 +177,9 @@ probability `s_∞` lies in an exact rational interval that excludes it.
 |---|---|
 | the static law's full conditionals are the rule with all neighbors recorded (Theorem A of block 01) | cited; C1 re-executes the cancellation with exterior records |
 | specification consistency C1 on the cube (face, edge, site) and the plaquette (edge, site) | executed (C1–C5); finite range by grouping (C6) |
-| compactness of `M^{Z^3}` and the extension of cylinder limits to a measure | proved here (C2), no choice principle |
-| the finite-window identity passes to the limit; a translation-invariant limit | proved here (C2) |
-| `Z_1` constant; `Z_2(a, b) = Z_1^2 (K^2)(a, b)` (E1) | proved here; executed symbolically (B1, B2) |
-| the row kernel formula (E2) equals the definition | proved here; executed entrywise (D1) |
-| `p_0 P = p_0` (E3) by telescoping | proved here for every `W`; executed `W = 2, 3, 4` (D2, D5) |
-| the pair laws (E4) | proved here; executed (D3) |
+| compactness of `M^{Z^3}`, the cylinder-limit measure, the limit identity, a translation-invariant limit | proved here (C2), no choice principle |
+| `Z_1` constant; `Z_2 = Z_1^2 K^2` (E1); the row kernel formula (E2) | proved here; executed symbolically (B1, B2) and entrywise (D1) |
+| `p_0 P = p_0` (E3) by telescoping; the pair laws (E4) | proved here for every `W`; executed `W = 2, 3, 4` (D2, D5) and (D3) |
 | the finite-strip formation law is `p_0 P^{n−1}` on rows and row pairs | executed from block 01's definition (D4) |
 | `T` commutes with `G`; the Perron vector is `G`-invariant; the quotient (F1) | proved here; executed (E1, E2, E5, E6) |
 | Perron–Frobenius for positive matrices (F2) | re-proved here (Wielandt) |
@@ -200,9 +195,9 @@ the target, which is a statement about strips.
 
 **C1 (consistency, executed).** Let `Λ` be a finite window with exterior
 records `ω`, `Δ ⊂ Λ` a sub-window, and fix the records on `Λ ∖ Δ`. The
-conditional law of `v_Δ` under `μ_Λ^ω` equals `μ_Δ^{ω'}`, where `ω'` assigns
-to each site of `Δ` its exterior records from `ω` together with the records
-on the sites of `Λ ∖ Δ` adjacent to it. *Proof.* In the ratio
+conditional law of `v_Δ` under `μ_Λ^ω` equals `μ_Δ^{ω'}`, where `ω'` gives
+each site of `Δ` its exterior records from `ω` and the records on the sites
+of `Λ ∖ Δ` adjacent to it. *Proof.* In the ratio
 `μ_Λ^ω(v_Δ, v_{Λ∖Δ}) / Σ_{u} μ_Λ^ω(u, v_{Λ∖Δ})` every factor not containing a
 site of `Δ` is common to numerator and denominator and cancels; what remains
 is `Π_{xy∈E(Δ)} φ(v_x, v_y) Π_{x∈Δ} Π_{y adjacent to x, y∉Δ} φ(v_x, ω'_y)`
@@ -450,11 +445,11 @@ is real (Sturm count equals the degree of each irreducible factor); the
 non-Perron roots are isolated to width `10^{-20}` and `m` is the largest
 modulus of their interval endpoints; the count of roots in `[−m, m]` equals
 the degree minus one, so every non-Perron eigenvalue has modulus at most the
-rational `m < λ_1` (E10): `m = 225.413931…` and `|λ_2/λ_1| ≤ 0.0324554307`
-at `(3, 1, 2)`; `m = 3376.351457…` and `|λ_2/λ_1| ≤ 0.0188509850` at
-`(5, 2, 4)` (decimals rounded up; the exact rationals are in the cache under
-`--exact`). At `W = 2`: `|λ_2/λ_1| ≤ 0.02534243` and `≤ 0.01491178`. Nothing
-about the second eigenvalue remains numeric.
+rational `m < λ_1` (E10): `m ≤ 225.413932` and `|λ_2/λ_1| ≤ 0.0324554308`
+at `(3, 1, 2)`; `m ≤ 3376.351458` and `|λ_2/λ_1| ≤ 0.0188509851` at
+`(5, 2, 4)` (decimals rounded up from the exact rationals, which the runner
+prints under `--exact`). At `W = 2`: `|λ_2/λ_1| ≤ 0.02534244` and
+`≤ 0.01491179`. Nothing about the second eigenvalue remains numeric.
 
 ## The separation (F5)
 
@@ -533,9 +528,8 @@ witnesses, Theorems E and F, which is what it needs.
 |---|---|---|---|---|---|
 | "the normalizer history does not wash out along the sweep on the infinite strip" | executed: every row state at `W = 2, 3, 4`, every pair, both triples | executed: every column's vertical and horizontal pair; every sub-window site class of the cube and plaquette | executed: `Q`'s spectrum exactly (Perron root, vector, second-eigenvalue bound) | executed: the row kernel block by block; the finite-`n` center rows `n ≤ 13`; the cube witness | checked and not executed: strips only; the plane and `Z^3` uniqueness are named, not computed |
 
-The runner prints matching `per_element:`, `per_site:`, `per_mode:`,
-`per_block:`, `lattice_wide:` lines. The narrowest form is used: the negative
-is "on the declared strips at the declared triples", never "on the lattice".
+The runner prints matching `per_element:` … `lattice_wide:` lines. The
+narrowest form is used: "on the declared strips at the declared triples".
 
 ### N6 — Partial-closure paths and primitive scan
 
@@ -544,30 +538,28 @@ The registered approved primitives in `docs/audit/data/axiom_premise_nodes.json`
 `realized_state_primitive`) supply a length reference, a graining ratio and a
 realized-state notion; none supplies a formation order, a reading of a
 partially recorded neighborhood or a pair weight, and none is a wall here.
-Reframing paths: (i) adopting the marginal reading (route 6) makes the two
-laws coincide by convention at the price of a window-dependent non-local
-rule; (ii) `docs/repo/DEFERRED_DECISIONS.md` parks six owner decisions; entry
-1 wakes on the committed-action identification, which this note does not
-supply — it identifies what the rule induces on strips, not on the lattice.
+Reframing paths: (i) the marginal reading (route 6) makes the two laws
+coincide by convention at the price of a window-dependent non-local rule;
+(ii) `docs/repo/DEFERRED_DECISIONS.md` entry 1 wakes on the committed-action
+identification, which this note does not supply (strips, not the lattice).
 No path removes the separation without changing the reading; this note does
 not say a new axiom is required.
 
 ### N7 — Steelman
 
-Hostile reviewer: "A strip is not the lattice. On `Z^3` every site has six
-neighbors and any sweep reaching the bulk forms sites with three recorded
-neighbors, where Theorem E does not apply; the static specification there
-may have a unique infinite-volume law that the formation law of some
-physical process — not a total order at all, perhaps a continuous-time
-process with the static law as its stationary measure — reproduces. The
-strip separation is an artifact of a two-dimensional window and a declared
-order." The gap in each: the three-neighbor case is exactly what this note
-does not claim (the cube witness shows E's premise fails there and nothing
-more); uniqueness on `Z^3` is the next block's object and is not asserted in
-either direction; a continuous-time process needs a rate supply the axioms
-do not give (block 01, N7). The steelman defeats any claim about the lattice,
-which this note does not make; it does not defeat the exact separation on the
-declared strips, which is a theorem about an infinite window of the lattice.
+Hostile reviewer: "A strip is not the lattice. On `Z^3` any sweep reaching
+the bulk forms sites with three recorded neighbors, where Theorem E does not
+apply; the static specification there may have a unique infinite-volume law
+that some physical process — not a total order, perhaps a continuous-time
+process with the static law as its stationary measure — reproduces. The strip
+separation is an artifact of a two-dimensional window and a declared order."
+The gap in each: the three-neighbor case is exactly what this note does not
+claim (the cube witness shows E's premise fails there, nothing more);
+uniqueness on `Z^3` is the next block's object, asserted in neither direction;
+a continuous-time process needs a rate supply the axioms do not give (block
+01, N7). The steelman defeats any claim about the lattice, which this note
+does not make; it does not defeat the exact separation on the declared
+strips, a theorem about an infinite window of the lattice.
 
 ### N8 — Cross-cycle echo
 
@@ -635,16 +627,13 @@ No observation, fitted value or literature constant enters.
 
 Fable primary seat (own 28-mutation census, read from raw per-mutation
 stdout); refuting checker: pending; independence class: to be filled by the
-supervisor. Contract facts corrected while executing: the contract's second
-eigenvalue at `(5, 2, 4)` was left numeric in advance; every root of the
-degree-8 characteristic polynomial is real, so the bound is exact by Sturm
-isolation at both triples; the contract's `next_trace_action` wording named
-the uniqueness region by a proper name that the fence list forbids, so the
-region is described instead. Width 4 fits the budget (0.5 s per triple) and
-is executed. The supervisor's control numbers (`p_0 P = p_0` at width 3, the
-pair values `1/4` and `5/23`, the eight orbits, the width-3 characteristic
-polynomial at `(3, 1, 2)`) were reproduced in the seat's own code before any
-theorem sentence was written.
+supervisor. Contract facts settled while executing: the second eigenvalue at
+`(5, 2, 4)`, left numeric in the contract, is exact by Sturm isolation since
+every root of the octic is real; the contract's `next_trace_action` named the
+uniqueness region by a proper name the fence list forbids, so the region is
+described instead; width 4 fits the budget (0.5 s per triple). The
+supervisor's control numbers were reproduced in the seat's own code before
+any theorem sentence was written.
 
 ## Verification
 

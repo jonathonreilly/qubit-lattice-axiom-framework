@@ -1123,7 +1123,7 @@ def family_e(checks: Checks, report: dict) -> None:
         formed = []
         for k, x in enumerate(order):
             E_set = tuple(sorted(formed)) if condition_on_all_records else tuple(sorted(y for y in N4[x] if y in formed))
-            if break_last and k == len(order) - 1:
+            if break_last and k == 1:
                 A = tuple(sorted(y for y in N4[x] if y in formed))
                 nums = rule_numerators(range(M), tuple(v[y] for y in A), phi)
                 prob *= Fraction(nums[v[x]], sum(nums))
@@ -1133,7 +1133,7 @@ def family_e(checks: Checks, report: dict) -> None:
             formed.append(x)
         return prob
 
-    chain_all = all(chain_product(order, v, True, mut("marginal_chain_rule_broken")) == mu_c[v] for order in permutations(range(4)) for v in configs4)
+    chain_all = all(chain_product(order, v, True, mut("marginal_chain_rule_broken")) == mu_c[v] for order in permutations(range(4)) for v in configs4)  # the mutation swaps the second step for the R-only rule (the last step would be vacuous by Theorem A)
     orders_nbr_only = sum(1 for order in permutations(range(4)) if all(chain_product(order, v, False, False) == mu_c[v] for v in configs4))
     checks.check("E6b", chain_all and orders_nbr_only == 0, f"route 6 chain rule on cycle4: given all earlier records mu_sigma = mu for 24/24 orders; given recorded neighbors only {orders_nbr_only}/24")
 
@@ -1170,7 +1170,7 @@ def family_f(checks: Checks, note_text: str) -> None:
             text = text + "\n" + phrase
     flat = normalize_text(text)
     checks.check("F1", all(f in flat for f in FENCES), "the note carries the four fence sentences verbatim")
-    hits = [ph for ph in FORBIDDEN if ph in flat.lower()]
+    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
     checks.check("F2", not hits, f"the note contains no forbidden phrase (hits: {hits})")
     source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
     scan = [ln for ln in source_lines if SCAN_MARKER not in ln]

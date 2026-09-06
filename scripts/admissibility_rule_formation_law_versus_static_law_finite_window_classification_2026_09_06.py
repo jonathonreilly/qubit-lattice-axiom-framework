@@ -691,3 +691,216 @@ def family_c(checks: Checks) -> None:
         sp.simplify(brook_cycle(rule_prod) - 1) == 0,
         "the same Brook cycle for the product rule with symbolic (p, q, r) is exactly 1",
     )
+
+
+# ==================================================================== family D
+FAMILY_D_WINDOWS = ("path3", "P4", "star4", "cycle4")
+EXPECTED_EQUAL = {"path3": 4, "P4": 8, "star4": 12, "cycle4": 0}
+EXPECTED_CLASSES = {"path3": 2, "P4": 3, "star4": 5, "cycle4": 4}
+
+
+def fj_symbolic(j, P_, Q_, R_):
+    phis = [[(P_, Q_, R_)[orbit(a, b)] for b in range(M)] for a in range(M)]
+    out = {}
+    for v in range(M):
+        expo = j + 2 if (mut("fj_j4_wrong") and j == 4) else j
+        out.setdefault(orbit(v, REF), sp.expand(sum(phis[s][v] * phis[s][REF] ** expo for s in range(M))))
+    return out
+
+
+def cube_order_family():
+    N = neighbors(WINDOWS["cube8"], 8)
+    bfs, seen, queue = [], {0}, [0]
+    while queue:
+        x = queue.pop(0)
+        bfs.append(x)
+        for y in N[x]:
+            if y not in seen:
+                seen.add(y)
+                queue.append(y)
+    dfs, seen = [], set()
+
+    def visit(x):
+        seen.add(x)
+        dfs.append(x)
+        for y in N[x]:
+            if y not in seen:
+                visit(y)
+
+    visit(0)
+    return {
+        "identity": tuple(range(8)),
+        "reverse": tuple(range(7, -1, -1)),
+        "bfs0": tuple(bfs),
+        "dfs0": tuple(dfs),
+        "declared_a": (0, 3, 5, 6, 1, 2, 4, 7),
+        "declared_b": (0, 7, 1, 6, 2, 5, 3, 4),
+    }
+
+
+def family_d(checks: Checks, report: dict) -> None:
+    triples = TRIPLES if not mut("weights_collapsed_to_constant") else (CONSTANT_TRIPLE, TRIPLES[1])
+    windows = dict(WINDOWS)
+    if mut("p4_census_wrong"):
+        windows["P4"] = ((0, 1), (1, 2), (1, 3))
+    ok_ident = ok_norm = ok_cons = ok_class = ok_census = True
+    census_lines = []
+    for triple in triples:
+        phi = phi_table(triple)
+        for name in FAMILY_D_WINDOWS:
+            edges, n = windows[name], SIZES[name]
+            configs = list(product(range(M), repeat=n))
+            ZW = sum(static_weight(v, edges, phi) for v in configs)
+            mu = {v: Fraction(static_weight(v, edges, phi), ZW) for v in configs}
+            classes: dict = {}
+            equal_orders = []
+            for order in permutations(range(n)):
+                law = formation_law(edges, n, phi, order, all_neighbors=mut("formation_uses_all_neighbors"), drop_Zk=mut("formation_identity_drop_Zk"))
+                if mut("formation_equals_static_on_cycle") and name == "cycle4":
+                    law = dict(mu)
+                prods = {v: normalizer_product(edges, n, phi, order, v) for v in configs}
+                ok_ident = ok_ident and all(law[v] * prods[v] == mu[v] * ZW for v in configs)
+                ok_norm = ok_norm and sum(law.values()) == 1
+                ok_cons = ok_cons and sum(law[v] * prods[v] for v in configs) == ZW
+                equal = law == mu
+                ok_class = ok_class and (equal == (max_recorded(edges, n, order) <= 1))
+                if equal:
+                    equal_orders.append(order)
+                key = sum(law.values()) if mut("distinct_law_count_wrong") else tuple(law[v] for v in configs)
+                classes.setdefault(key, []).append(order)
+            expected_orders = None
+            if name == "path3":
+                expected_orders = [(0, 1, 2), (1, 0, 2), (1, 2, 0), (2, 1, 0)]
+            if name == "star4":
+                expected_orders = [o for o in permutations(range(4)) if o.index(0) <= 1]
+            ok_class = ok_class and len(equal_orders) == EXPECTED_EQUAL[name]
+            if expected_orders is not None:
+                ok_class = ok_class and sorted(equal_orders) == sorted(expected_orders)
+            ok_census = ok_census and len(classes) == EXPECTED_CLASSES[name]
+            sizes = sorted((len(v) for v in classes.values()), reverse=True)
+            census_lines.append(f"{name}{triple}: {len(equal_orders)} equal, {len(classes)} laws, class sizes {sizes}")
+            report.setdefault("classes", {})[(name, triple)] = sorted(classes.values(), key=len, reverse=True)
+    checks.check("D1", ok_ident, "B1 identity mu_sigma * prod Z_k = mu * Z_W for every order, configuration, window, triple")
+    checks.check("D2", ok_norm, "every formation law sums to one")
+    checks.check("D3", ok_cons, "consistency line Z_W = sum_v mu_sigma prod Z_k (not a theorem)")
+    checks.check("D4", ok_class, f"B2 classification: mu_sigma = mu iff max|A_k| <= 1; equal orders path3/P4/star4/cycle4 = {tuple(EXPECTED_EQUAL.values())}")
+    checks.check("D5", ok_census, "B5 census of distinct formation laws path3/P4/star4/cycle4 = (2, 3, 5, 4); " + "; ".join(census_lines[:4]))
+    report["census_lines"] = census_lines
+    P_, Q_, R_ = sp.symbols("p q r", positive=True)
+    ok_fj = True
+    for j in range(1, 6):
+        f = fj_symbolic(j, P_, Q_, R_)
+        pred = {
+            PAR: P_ ** (j + 1) + Q_ ** (j + 1) + 4 * R_ ** (j + 1),
+            ANTI: P_ * Q_ ** j + Q_ * P_ ** j + 4 * R_ ** (j + 1),
+            ORTH: (P_ + Q_) * R_ ** j + R_ * (P_ ** j + Q_ ** j) + 2 * R_ ** (j + 1),
+        }
+        fac1 = (P_ - Q_) * (P_ ** j - Q_ ** j) if not mut("fj_factorization_wrong") else (P_ - Q_) * (P_ ** j + Q_ ** j)
+        fac2 = (P_ - R_) * (Q_ ** j - R_ ** j) + (Q_ - R_) * (P_ ** j - R_ ** j)
+        ok_fj = ok_fj and all(sp.expand(f[o] - pred[o]) == 0 for o in (PAR, ANTI, ORTH))
+        ok_fj = ok_fj and sp.expand(f[PAR] - f[ANTI] - fac1) == 0 and sp.expand(f[ANTI] - f[ORTH] - fac2) == 0
+        ok_fj = ok_fj and sp.expand((f[ANTI] - f[ORTH]).subs(Q_, P_) - 2 * (P_ - R_) * (P_ ** j - R_ ** j)) == 0
+    checks.check("D6", ok_fj, "f_j formulas and both factorizations symbolic for j = 1..5; at p = q the second is 2(p-r)(p^j-r^j)")
+    phis = [[(P_, Q_, R_)[orbit(a, b)] for b in range(M)] for a in range(M)]
+    if mut("one_neighbor_normalizer_wrong"):
+        phis[4][0] = Q_
+    Z1 = {sp.expand(sum(phis[s][t] for s in range(M))) for t in range(M)}
+    checks.check("D7", Z1 == {P_ + Q_ + 4 * R_}, "one-neighbor normalizer p + q + 4r for every menu value (symbolic)")
+    edges8, N8 = WINDOWS["cube8"], neighbors(WINDOWS["cube8"], 8)
+    dist: dict = {}
+    for order in permutations(range(8)):
+        mx = max_recorded(edges8, 8, order, skip_previous=mut("plaquette_lemma_skips_order"))
+        dist[mx] = dist.get(mx, 0) + 1
+    checks.check("D8", dist == {3: 40320}, f"cube8: every one of the 40320 orders has some |A_k| >= 2; distribution of max|A_k| = {dist}")
+    report["cube_dist"] = dist
+    family = cube_configuration_family()
+    orders8 = cube_order_family()
+    ok_cube_ident = ok_var = True
+    var_lines = []
+    for triple in TRIPLES:
+        phi = phi_table(triple)
+        ZW8 = None
+        for oname, order in orders8.items():
+            for v in family:
+                law_num = 1
+                formed = set()
+                for x in order:
+                    vals = tuple(v[y] for y in N8[x] if y in formed)
+                    law_num *= rule_numerators((v[x],), vals, phi)[0]
+                    formed.add(x)
+                ok_cube_ident = ok_cube_ident and law_num == static_weight(v, edges8, phi)
+            formed, m_site, y_site, js = [], None, None, []
+            for x in order:
+                A = tuple(yy for yy in N8[x] if yy in formed)
+                if len(A) >= 2 and m_site is None:
+                    m_site, y_site = x, A[0]
+                formed.append(x)
+            formed = []
+            for x in order:
+                A = tuple(yy for yy in N8[x] if yy in formed)
+                if y_site in A and len(A) >= 2:
+                    js.append(len(A) - 1)
+                formed.append(x)
+            values = {}
+            for t in range(M):
+                v = [REF] * 8
+                v[y_site] = REF if mut("single_site_variation_constant") else t
+                values[orbit(t, REF)] = normalizer_product(edges8, 8, phi, order, tuple(v))
+            v0 = [REF] * 8
+            base = normalizer_product(edges8, 8, phi, order, tuple(v0))
+            fj_num = {}
+            for o in (PAR, ANTI, ORTH):
+                tot = 1
+                for j in js:
+                    f = fj_symbolic(j, P_, Q_, R_)[o]
+                    tot *= f.subs({P_: triple[0], Q_: triple[1], R_: triple[2]})
+                fj_num[o] = tot
+            const = Fraction(base, int(fj_num[PAR]))
+            predicted = {o: const * int(fj_num[o]) for o in (PAR, ANTI, ORTH)}
+            distinct = len(set(values.values()))
+            ok_var = ok_var and distinct == 3 and all(Fraction(values[o]) == predicted[o] for o in values)
+            var_lines.append(f"{oname}{triple}: m={m_site} y={y_site} js={js} values={tuple(values[o] for o in (PAR, ANTI, ORTH))}")
+    report["var_lines"] = var_lines
+    checks.check("D9", ok_cube_ident and ok_var, "cube8 declared orders: identity on the family; single-site variation gives exactly three values matching const * prod f_j")
+    ctriple = CONSTANT_TRIPLE if not mut("constant_rule_varies") else (2, 2, 3)
+    phic = phi_table(ctriple)
+    uniform = True
+    for k in (1, 2):
+        for eta in product(range(M), repeat=k):
+            nums = rule_numerators(range(M), eta, phic)
+            uniform = uniform and len(set(nums)) == 1
+    all_equal = True
+    for name in ("path3", "cycle4"):
+        edges, n = WINDOWS[name], SIZES[name]
+        configs = list(product(range(M), repeat=n))
+        ZW = sum(static_weight(v, edges, phic) for v in configs)
+        mu = {v: Fraction(static_weight(v, edges, phic), ZW) for v in configs}
+        all_equal = all_equal and all(formation_law(edges, n, phic, order) == mu for order in permutations(range(n)))
+    checks.check("D10", uniform and all_equal, "B4 constant rule (2,2,2): uniform output under every one- and two-neighbor condition; mu_sigma = mu for every order of path3 and cycle4")
+
+    def f_witness(x):
+        val = 1 + x * x * (1 - x * x)
+        return val + x * x if mut("menu_witness_varies_on_menu") else val
+
+    vals = tuple(f_witness(Fraction(x)) for x in (1, -1, 0)) + (f_witness(Fraction(1, 2)),)
+    half_sq = 1 + Fraction(1, 2) * (1 - Fraction(1, 2))
+    induced = tuple(int(v) for v in vals[:3]) if all(v.denominator == 1 for v in vals[:3]) else vals[:3]
+    ok_menu = vals == (1, 1, 1, Fraction(19, 16)) and half_sq == Fraction(5, 4) and induced == (1, 1, 1)
+    if ok_menu:
+        phi1 = phi_table(induced)
+        configs = list(product(range(M), repeat=4))
+        mu1 = {v: Fraction(1, 6 ** 4) for v in configs}
+        ok_menu = all(formation_law(WINDOWS["cycle4"], 4, phi1, order) == mu1 for order in permutations(range(4)))
+    checks.check("D11", ok_menu, f"menu-restriction witness f(x) = 1 + x^2(1-x^2): values at (1,-1,0,1/2) = {vals}, at x^2 = 1/2: {half_sq}; induced (1,1,1); mu_sigma = mu on cycle4 for every order")
+    phi_a = [[phi_table(TRIPLES[0])[a][b] + (1 if a < b else 0) for b in range(M)] for a in range(M)]
+    if mut("asymmetric_identity_holds"):
+        phi_a = [list(r) for r in phi_table(TRIPLES[0])]
+    edges, n = WINDOWS["path3"], 3
+    configs = list(product(range(M), repeat=n))
+    ZWa = sum(static_weight(v, edges, phi_a) for v in configs)
+    fails = 0
+    for order in permutations(range(n)):
+        law = formation_law(edges, n, phi_a, order)
+        if any(law[v] * normalizer_product(edges, n, phi_a, order, v) != Fraction(static_weight(v, edges, phi_a), ZWa) * ZWa for v in configs):
+            fails += 1
+    checks.check("D12", fails > 0 and any(phi_a[a][b] != phi_a[b][a] for a in range(M) for b in range(M)), f"asymmetric pair weight on path3: the identity fails for {fails} of 6 orders")

@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06
 claim_type: bounded_theorem
-claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r): the one-neighbor interdependence coefficient c_1(p, q, r) of the one-site conditional on the six-neighbor shell of Z^3, exactly, at the declared triples (3,1,2), (5,2,4), (2,1,2), (3,2,2), (5,4,4), (11,10,10), (2,2,2), on the grid r = 4, p, q in 1..12, and along the three lines (t,1,1), (t,t,1), (1,1,t) with the crossing 6c_1 = 1 isolated as the unique positive root of an explicit degree-7 polynomial and the maximizing shell pattern identified (Theorem G); the finite-window comparison bound by coupling, proved for every finite window and executed on the plaquette with eight exterior slots and on the 3x3 planar window with twelve exterior slots (Theorem H); uniqueness of the infinite-volume static law on Z^3 when 6c_1 < 1, proved as a corollary of Theorem H and a path-count bound (Theorem I); the region stated at the four region triples and at declared rational points on the three lines; the criterion silent at (3,1,2) and (5,2,4), where nothing is stated about one law or several; no formation order, plane, bridge, Born or gravity statement; exact arithmetic throughout."
+claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r): the one-neighbor interdependence coefficient c_1(p, q, r) of the one-site conditional on the six-neighbor shell of Z^3, exactly, at the declared triples (3,1,2), (5,2,4), (2,1,2), (3,2,2), (5,4,4), (11,10,10), (2,2,2), on the grid r = 4, p, q in 1..12, and along the three lines (t,1,1), (t,t,1), (1,1,t), each of which crosses 6c_1 = 1 twice, both thresholds isolated as the unique positive roots of explicit polynomials with the maximizing shell patterns identified and verified against every competitor, and 6c_1 < 1 verified for every real t between them by an exact Lipschitz bound (Theorem G); the finite-window comparison bound by coupling, proved for every finite window and executed on the plaquette with eight exterior slots and on the 3x3 planar window with twelve exterior slots (Theorem H); uniqueness of the infinite-volume static law on Z^3 when 6c_1 < 1, proved as a corollary of Theorem H and a walk-count bound (Theorem I); the region stated at the four region triples and on the verified open interval of each line; the criterion silent at (3,1,2), (5,2,4) and (7,3,5), where nothing is stated about one law or several; no formation order, plane, bridge, Born or gravity statement; exact arithmetic throughout."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
@@ -30,10 +30,10 @@ one, the whole lattice carries exactly one static pattern law: the influence of
 a far-away record fades by that factor with every step of distance, faster than
 the number of far-away records grows, so any two candidate laws must agree on
 every local question. We computed that total exactly. It is less than one for
-weak couplings — four named examples and every rational point we tried on three
-lines through the constant rule up to a threshold located as a root of an
-explicit polynomial — and more than one for the two couplings used in the
-earlier blocks, where this test simply says nothing.
+weak couplings — four named examples, and on three lines through the constant
+rule the whole stretch between two thresholds, each located as a root of an
+explicit polynomial and verified with no gaps — and more than one for the two
+couplings used in the earlier blocks, where this test simply says nothing.
 
 Exactly: for the covariant product rule with orbit weights `(p, q, r)`, the
 interdependence coefficient `c_1(p, q, r)` — the supremum over shells `η, η'`
@@ -54,7 +54,18 @@ the unique positive root `t* ∈ [1.47753945492134830313, 1.47753945492134830314
 of `4t^7 − 8t^5 + 5t^4 − 8t^3 − t^2 − 1`, pattern three `+x`, two `+y`,
 flipped `+x ↔ +y`; along `(1, 1, t)` it is the unique positive root
 `t* ∈ [0.67680087774930621901, 0.67680087774930621903]` of
-`t^7 + t^5 + 8t^4 − 5t^3 + 8t^2 − 4`, the same pattern. Theorem H, proved by a
+`t^7 + t^5 + 8t^4 − 5t^3 + 8t^2 − 4`, the same pattern. Each line crosses
+`6c_1 = 1` a second time: on `(t, 1, 1)` at `t_2 = √30 − 5`, the positive root
+of `t^2 + 10t − 5` (`0.47722557505166113456…`), attained by `(+x, +x, −x, +y,
+−y)` with the flipped neighbor `+z ↔ −z`; on `(t, t, 1)` at the positive root
+of `t^5 + 7t − 5` (`0.69167061103656469380…`) and on `(1, 1, t)` at the
+positive root of `5t^5 − 7t^4 − 1` (`1.44577488770465582773…`), both attained
+by five `+x` with the flipped neighbor `+y ↔ +z`. On each isolating interval
+every one of the `252 × 15` shell-and-pair choices is verified below one by an
+exact Lipschitz bound or is a copy of the displayed maximizer, and `6c_1 < 1`
+is verified for every real `t` between the two thresholds (G5–G6); the
+`(1, 1, t)` line is the `(t, t, 1)` line under scale invariance, with
+reciprocal polynomials. Theorem H, proved by a
 random-scan coupling, bounds the disagreement of the static laws of two
 exterior assignments on any finite window with row sums below one by `D_Λ b`,
 `D_Λ = (I − C_Λ)^{-1}`; on the `3×3` planar window at `(2, 1, 2)` the center-
@@ -62,9 +73,9 @@ site marginal moves by total variation
 `691410442136477999520/76730168638463067377251 ≈ 0.0090109` when one exterior
 slot flips, against the bound `1/56`. Hence (Theorem I) the specification of
 the product rule on `Z^3` has exactly one infinite-volume static law wherever
-`6c_1 < 1`: at the four region triples and at the declared rational points of
-the three lines. At `(3, 1, 2)` and `(5, 2, 4)` the criterion is silent.
-Executed with exact arithmetic: 36 checks, 26 mutations.
+`6c_1 < 1`: at the four region triples and at every point of the verified
+open interval of each line. At `(3, 1, 2)`, `(5, 2, 4)` and `(7, 3, 5)` the
+criterion is silent. Executed with exact arithmetic: 41 checks, 31 mutations.
 
 ## Machine status and trace
 
@@ -78,12 +89,12 @@ source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "next question: the two silent triples (3,1,2) and (5,2,4) under a sharper criterion — the two-site block condition, disagreement percolation, a transfer-matrix or cluster-expansion route — each with its own obligation; consumers: the parked statistical-bridge decision material (docs/repo/DEFERRED_DECISIONS.md entry 1, read-only), the gravity lane's action question (in the region the static law is a single object), the record-matter lane's formation-order supply"
-conditional_surface_status: "exact on the declared triples, grid, lines and windows; Theorem H is proved for every finite window with row sums below one; Theorem I is proved on Z^3 for 6c_1 < 1; the region statement is executed pointwise; nothing at the silent triples; no plane, no formation law, no bridge"
+conditional_surface_status: "exact on the declared triples, grid, lines and windows; Theorem H is proved for every finite window with row sums below one; Theorem I is proved on Z^3 for 6c_1 < 1; the region statement is executed pointwise and verified on the lines' intervals; nothing at the silent triples; no plane, no formation law, no bridge"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-claim_type_reason: "Theorem G's structural parts are proved and its values are exact executed computations with the thresholds isolated by Sturm's theorem and the maximizing patterns re-executed at the isolating endpoints; Theorem H is a native coupling proof executed on two exact windows; Theorem I is a corollary with its path-count arithmetic executed; the region is stated only at executed points; nothing about several laws, the silent triples, a physical rule, the plane, the bridge, the Born form or gravity is claimed."
+claim_type_reason: "Theorem G's structural parts are proved and its values are exact executed computations with the thresholds isolated by Sturm's theorem and the maximizing patterns re-executed at the isolating endpoints; Theorem H is a native coupling proof executed on two exact windows; Theorem I is a corollary with its walk-count arithmetic executed; the region is stated at executed points and on the verified intervals of the three lines; nothing about several laws, the silent triples, a physical rule, the plane, the bridge, the Born form or gravity is claimed."
 ```
 
 ## Premises and declared objects
@@ -118,8 +129,8 @@ into the parallel, antiparallel and orthogonal orbits with pair weight `φ(s, t)
 Π_{y ∈ A} φ(s, η_y)` over the recorded neighbors `A` (block 01, B7: the site
 weight is constant on the transitive menu). Declared triples: the region
 triples `(2, 1, 2)`, `(3, 2, 2)`, `(5, 4, 4)`, `(11, 10, 10)`; the silent
-triples `(3, 1, 2)`, `(5, 2, 4)`; the constant triple `(2, 2, 2)` as the
-boundary. A rational triple is scaled to integers by its common denominator
+triples `(3, 1, 2)`, `(5, 2, 4)` and, added after the contract lens, `(7, 3,
+5)` with all weights distinct; the constant triple `(2, 2, 2)` as the boundary. A rational triple is scaled to integers by its common denominator
 before any computation (the conditional is homogeneous of degree zero in `φ`,
 so `c_1` is unchanged).
 
@@ -148,7 +159,10 @@ number `c_1^{(d)}(p, q, r)` for every slot of a `d`-slot shell: `c_1 =
 c_1^{(6)}` on the `Z^3` shell, `α = 6c_1`, and `c_1^{(4)}` on the planar
 windows below, where every site has four slots. Executed as the supremum over
 all `6^{d−1}` values of the other slots and all `15` unordered pairs of values
-at `y`.
+at `y`. The window coefficient is not bounded by the shell coefficient:
+`c_1^{(4)}(2, 5, 3) = 14250/59251 > c_1(2, 5, 3) = 1629375/6780002` (C14), so
+`C_Λ` and `b` are always defined from the window's own conditional; on the
+boxes of Theorem I every site has six slots and `C_{xy} = c_1`.
 
 **Windows.** (a) The plaquette: sites `0-1-2-3-0`, each with two interior
 neighbors and two exterior slots (eight slots); the base exterior carries
@@ -193,15 +207,15 @@ structural properties (Theorem G); the exact region on the grid and the three
 algebraic thresholds with their maximizing patterns, isolated and re-executed
 at the isolating endpoints; the coupling proof of the finite-window comparison
 bound written in full and executed on two exact windows (Theorem H); the
-corollary on `Z^3` with its path-count arithmetic executed (Theorem I); the
+corollary on `Z^3` with its walk-count arithmetic executed (Theorem I); the
 region stated pointwise.
 
 ## Exact target and obligation graph
 
 **Target.** If `6c_1(p, q, r) < 1` then the specification of the covariant
 product rule on `Z^3` has exactly one infinite-volume static law; and
-`6c_1 < 1` holds exactly at the four region triples and the declared rational
-points of the three lines.
+`6c_1 < 1` holds exactly at the four region triples and on the verified open
+interval of each of the three lines.
 
 | obligation | disposition |
 |---|---|
@@ -210,10 +224,11 @@ points of the three lines.
 | the coefficient is direction-independent, `p ↔ q` symmetric, zero iff constant (G1–G3) | proved here; executed (B1–B4) |
 | the exact values, the grid, the maximizing patterns (G4) | executed (C1–C4) |
 | the three thresholds: sign pattern fixed, the rational function, Sturm isolation, the supremum at the endpoints (G5) | executed (C5–C9) |
+| the second crossings, the Lipschitz lemma along a line, the competitor and region certificates, reciprocity (G5′–G6) | proved here (the lemma); executed (C10–C14) |
 | the maximal coupling on a finite set and the triangle inequality along a path of single-slot changes (H1) | proved here; executed on the plaquette family (D1, D2) |
 | the disagreement recursion, the monotone affine map and its fixed point (H1–H2); stationarity under single-site resampling (H3) | proved here (stationarity from Theorem A's full-conditional property); the fixed point and iterates executed (D3–D6) |
 | the subsequence limit on a finite state space and the telescoping bound (H3) | proved here; the center-site bound executed (D7, D8) |
-| the path-count bound `(C_Λ^n)_{xy} ≤ c_1^n N_n(x, y)` and `Σ_y N_n = 6^n` (I) | proved here; executed for `n ≤ 4` (E1) |
+| the walk-count bound `(C_Λ^n)_{xy} ≤ c_1^n N_n(x, y)` and `Σ_y N_n = 6^n` (I) | proved here; executed for `n ≤ 4` (E1) |
 | the tail `Σ_{n ≥ L−ℓ} α^n = α^{L−ℓ}/(1 − α) → 0` (I) | proved here; the table executed (E2, E3) |
 | two probability measures agreeing on every cylinder event coincide | cited (uniqueness of the Carathéodory extension from the cylinder algebra; Imports) |
 | a sharper criterion at the silent triples | open; not this note |
@@ -264,7 +279,11 @@ other five slot values in menu order and the flipped pair; ties are not
 excluded, the value is the supremum — is `(+x, +x, +x, +y, −y)` with pair `+x ↔
 −x` at `(3, 1, 2)`; five `+x` with pair `+x ↔ −x` at `(5, 2, 4)`, `(5, 4, 4)`,
 `(11, 10, 10)`; `(+x, +x, −x, +y, −y)` with pair `+z ↔ −z` at `(2, 1, 2)`;
-`(+x, +x, +x, −x, −x)` with pair `+x ↔ −x` at `(3, 2, 2)`. On the grid `r = 4`,
+`(+x, +x, +x, −x, −x)` with pair `+x ↔ −x` at `(3, 2, 2)`. At `(7, 3, 5)`,
+`c_1 = 6391462/29948925`, `6c_1 ≈ 1.2805`: silent (C14). The maximizer is not
+unique; the tie counts over the `252 × 15` multiset-and-pair choices are `12,
+6, 60, 30, 30, 30, 24` in the order of the seven non-constant triples (under
+`--exact`). On the grid `r = 4`,
 `p, q ∈ 1..12` (`144` points, `9` s) the cells with `6c_1 < 1` are exactly the
 fifteen-cell diamond of Result up front (C4), and every cell is `p ↔ q`
 symmetric (C3).
@@ -286,11 +305,58 @@ rational function's value there, so the sign pattern holds at the endpoints
 (C8); and `6c_1 − 1 < 0` at `a`, `> 0` at `b` on the first two lines, reversed
 on the third (C9). Since `c_1(t)` is a maximum of finitely many continuous
 functions of `t`, the crossing `6c_1 = 1` lies in `[a, b]`; the threshold is
-stated as the root `t*` of the displayed polynomial, the executed content being
-the sign change and the endpoint suprema; whether the displayed pattern attains
-the supremum at every interior point of `[a, b]` is not executed. Patterns:
+stated as the root `t*` of the displayed polynomial; that no other choice
+crosses inside `[a, b]` is verified in G6 (C11). Patterns:
 `(t, 1, 1)`: three `+x`, two `−x`, pair `+x ↔ −x`; `(t, t, 1)` and `(1, 1, t)`:
 three `+x`, two `+y`, pair `+x ↔ +y`.
+
+**G5′ (the second crossing on each line, executed).** Each line crosses
+`6c_1 = 1` a second time, found on the declared descending scan `t = 1 − k/40`
+(`(t, 1, 1)`, `(t, t, 1)`) or ascending scan `t = 1 + k/20` (`(1, 1, t)`) at
+the brackets `1/2..19/40`, `7/10..27/40`, `7/5..29/20`, and treated exactly as
+the first (C10): on `(t, 1, 1)` the numerator of `6 TV − 1` at the pattern
+`(+x, +x, −x, +y, −y)`, pair `+z ↔ −z`, is `−(t^2 + 10t − 5)`, whose positive
+root is `t_2 = √30 − 5 ∈ [0.47722557505166113456, 0.47722557505166113458]`; on
+`(t, t, 1)` the pattern five `+x`, pair `+y ↔ +z`, gives `−(t^5 + 7t − 5)` (one
+real root, `t_2 ∈ [0.69167061103656469380, 0.69167061103656469382]`); on
+`(1, 1, t)` the same pattern gives `5t^5 − 7t^4 − 1` (one real root, `t_2 ∈
+[1.44577488770465582773, 1.44577488770465582774]`). Below `t_2` on the first
+two lines and above it on the third, `6c_1 > 1` at the scanned points. So the
+set `{t > 0 : 6c_1 < 1}` on a line is not a half-line: read as one, the first
+threshold alone would have implied uniqueness at `(1, 1, 2)`, where `6c_1 ≈
+1.959` (the contract lens's finding, folded).
+
+**G6 (the Lipschitz lemma along a line; the certificates).** On any of the
+three lines every pair weight is `t` or `1`, so for a fixed shell the
+unnormalized weight of the value `s` is the monomial `t^{k_s}` with an integer
+`0 ≤ k_s ≤ 6` (the number of slots whose orbit with `s` carries `t`). Writing
+`a_s(t) = t^{k_s}/Z(t)`, `Z = Σ_s t^{k_s}`, one has `t a_s'(t) = a_s(t) (k_s −
+k̄(t))` with `k̄ = Σ_s k_s a_s`, hence `Σ_s |a_s'(t)| ≤ (1/t) Σ_s a_s |k_s − k̄|
+≤ 6/t`. For a fixed shell and pair, `TV(t) = (1/2) Σ_s |a_s(t) − b_s(t)|` is
+therefore Lipschitz on `[u, v]` (`u > 0`) with constant `6/u`, and so is
+`c_1(t)`, a maximum of finitely many such functions. Two exact certificates
+follow (C11, C12). (i) On the isolating interval `[a, b]` of each of the six
+thresholds, every one of the `252 × 15` shell-multiset-and-pair choices (the
+`7776 × 15` choices up to the slot symmetry) either satisfies `max(6 TV(a),
+6 TV(b)) − 1 + 36 (b − a)/a < 0`, hence stays below one on all of `[a, b]`, or
+has, with its sign pattern at `a`, the same rational function as the displayed
+maximizer (a copy: `30, 288, 288` copies at the first thresholds, `60, 72, 72`
+at the second; no distinct choice is left unverified). Since `6c_1 − 1` is the
+maximum of these functions, it crosses zero on `[a, b]` exactly where the
+displayed function does: the threshold is the displayed root. (ii) On each
+line, with `u` the upper endpoint of the lower threshold's isolating interval
+and `v` the lower endpoint of the upper one, `6c_1(t) < 1` holds for every real
+`t ∈ [u, v]`: a subinterval `[a', b']` is verified by `max(6c_1(a'), 6c_1(b'))
+− 1 + 36 (b' − a')/a' < 0` from the exact endpoint values, and otherwise
+bisected at a dyadic midpoint (`2395`, `1782`, `1715` verified subintervals on
+the three lines). Hence the set `{t > 0 : 6c_1 < 1}` on each line contains the
+open interval between its two thresholds; monotonicity of `c_1` is neither
+proved nor needed. Finally, `c_1` is homogeneous of degree zero, so
+`c_1(t, t, 1) = c_1(1, 1, 1/t)` (executed at `t = 5/4, 3/2, 7/10`, and
+`c_1(2, 1, 2) = c_1(4, 2, 4)`), and the `(1, 1, t)` polynomials are the
+reciprocals of the `(t, t, 1)` polynomials (C13): the third line is the second
+under scale invariance, and its two thresholds are the reciprocals of the
+second line's.
 
 ## Theorem H — the finite-window comparison bound by coupling (re-proved at scope)
 
@@ -435,10 +501,10 @@ records), so by G1 every coefficient is `c_1`, `C_Λ = c_1 · (adjacency of
 Λ_L)` has row sums at most `6c_1 = α < 1`, Theorem H applies, and
 `b_y ≤ c_1 · #{exterior neighbors of y} ≤ 6c_1 · 1[y ∈ ∂_in Λ_L]`. Hence
 `|μ_{Λ_L}^b(f) − μ_{Λ_L}^{b'}(f)| ≤ 6c_1 Σ_{x ∈ Δ_ℓ} δ_x(f) Σ_{y ∈ ∂_in Λ_L} (D_Λ)_{xy}`.
-Now `(C_Λ^k)_{xy} = c_1^k · #{nearest-neighbor paths of length k from x to y inside Λ_L} ≤ c_1^k N_k(x, y)`,
-`N_k` the count of such paths in `Z^3`, and `Σ_y N_k(x, y) = 6^k` because
+Now `(C_Λ^k)_{xy} = c_1^k · #{nearest-neighbor walks of length k from x to y inside Λ_L} ≤ c_1^k N_k(x, y)`,
+`N_k` the count of such walks in `Z^3` (sites may repeat), and `Σ_y N_k(x, y) = 6^k` because
 every one of the `6^k` direction sequences ends somewhere (executed for
-`k ≤ 4`, E1). A path from `x ∈ Δ_ℓ` to `y ∈ ∂_in Λ_L` has length at least
+`k ≤ 4`, E1). A walk from `x ∈ Δ_ℓ` to `y ∈ ∂_in Λ_L` has length at least
 `L − ℓ`, so
 `Σ_{y ∈ ∂_in Λ_L} (D_Λ)_{xy} = Σ_k Σ_{y ∈ ∂_in Λ_L} (C_Λ^k)_{xy} ≤ Σ_{k ≥ L − ℓ} (6c_1)^k = α^{L − ℓ}/(1 − α)`.
 Therefore `|μ(f) − ν(f)| ≤ 6c_1 (Σ_x δ_x(f)) α^{L − ℓ}/(1 − α)`, which tends
@@ -456,15 +522,20 @@ at the four region triples (E2); the least `L` with `α^L/(1 − α) < 10^{-3}`:
 For the covariant product rule at `(2, 1, 2)`, `(3, 2, 2)`, `(5, 4, 4)` and
 `(11, 10, 10)` — `6c_1 = 12/13, 6237/7783, 8000000/20461907, 196482220000/1514687593537`
 — the rule induces exactly one static law on `Z^3` (Theorem I with C2). On
-the three lines the same holds at every executed rational point (E4; `6c_1`
-as a decimal label): `(t, 1, 1)`: `t = 9/8` (`0.17005`), `5/4` (`0.39097`;
-this is `(5, 4, 4)`), `11/8` (`0.59997`), `3/2` (`0.80136`; this is
-`(3, 2, 2)`); `(t, t, 1)`: `9/8` (`0.26820`), `5/4` (`0.53886`), `11/8`
-(`0.80125`); `(1, 1, t)`: `3/4` (`0.71592`), `7/8` (`0.30715`), `1` (`0`,
-the constant rule). No statement is made at rational points that were not
-executed: monotonicity of `c_1` along a line is not proved here. At
-`(3, 1, 2)` (`6c_1 = 1620/989`) and `(5, 2, 4)` (`6c_1 ≈ 1.2778`) the
-criterion is silent; nothing is stated about one law or several.
+the three lines the same holds for every real `t` strictly between the two
+thresholds (G6, C12): on `(t, 1, 1)` for `√30 − 5 < t < t*`, `t* ≈ 1.6097`;
+on `(t, t, 1)` for `t_2 < t < t*`, `t_2 ≈ 0.6917`, `t* ≈ 1.4775`; on
+`(1, 1, t)` for `t* < t < t_2`, `t* ≈ 0.6768`, `t_2 ≈ 1.4458`, the reciprocal
+of the previous interval. The executed rational points (E4; `6c_1` as a
+decimal label) lie inside: `(t, 1, 1)`: `t = 9/8` (`0.1700`), `5/4` (`0.3909`;
+this is `(5, 4, 4)`), `11/8` (`0.5999`), `3/2` (`0.8013`; this is
+`(3, 2, 2)`); `(t, t, 1)`: `9/8` (`0.2682`), `5/4` (`0.5388`), `11/8`
+(`0.8012`); `(1, 1, t)`: `3/4` (`0.7159`), `7/8` (`0.3071`), `1` (`0`, the
+constant rule). Beyond the thresholds on each line, at the scanned points,
+`6c_1 > 1` and the criterion is silent; nothing is stated there. At
+`(3, 1, 2)` (`6c_1 = 1620/989`), `(5, 2, 4)` (`6c_1 ≈ 1.2778`) and `(7, 3, 5)`
+(`6c_1 ≈ 1.2805`) the criterion is silent; nothing is stated about one law or
+several.
 
 ## No-Go Discipline Gate
 
@@ -571,7 +642,11 @@ classification, a grid symmetry or the diamond differing; a crossing outside
 its bracket, a sign pattern not fixed, a numerator not a constant multiple of
 the displayed polynomial, a positive-root count other than one, no sign change
 on the isolating interval, an endpoint supremum not attained by the displayed
-pattern; the plaquette inequality or the coupling identity failing; a
+pattern; a second crossing outside its bracket or with a numerator not a
+constant multiple of its displayed polynomial; a distinct choice unverified on
+an isolating interval or a copy count differing; a region certificate failing;
+a reciprocity or scale-invariance identity failing; `c_1^{(4)}(2,5,3) ≤
+c_1(2,5,3)`; `6c_1(7,3,5) < 1`; the plaquette inequality or the coupling identity failing; a
 `c_1^{(4)}` literal or row-sum classification differing; `D_Λ (I − C_Λ) ≠ I`, a
 negative entry of `D_Λ`, non-monotone iterates, a broken fixed-point identity,
 a center-site total variation above `(D_Λ b)_c`; `Σ_y N_n(0, y) ≠ 6^n` for some
@@ -587,11 +662,12 @@ The criterion and the coupling method are classical references re-proved here at
 
 Every negative sentence in this note is an exact statement on the declared windows, triples and lines or the scope sentence about the silent triples; none is a route no-go beyond that scope.
 
-Further: the region is stated pointwise at executed rational points, not as an
-interval (monotonicity of `c_1` along a line is not proved); the thresholds are
-roots of the displayed polynomials, the executed content being the sign change
-and the endpoint suprema; the maximizing patterns are lexicographically first,
-ties not excluded; Theorem H is executed on planar windows with four slots per
+Further: the region on each line is the verified open interval between its
+two thresholds, monotonicity of `c_1` neither proved nor used, and nothing is
+stated on a line beyond the scanned points outside the thresholds; the
+thresholds are roots of the displayed polynomials, verified against every
+competitor on their isolating intervals; the maximizing patterns are
+lexicographically first, ties counted, not excluded; Theorem H is executed on planar windows with four slots per
 site (`c_1^{(4)}`) while Theorem I uses the six-slot shell (`c_1`); the
 monotone decrease of the iterates needs `C_Λ 1 + b ≤ 1`, satisfied on the
 executed windows; the `3×3` bound at `(3,1,2)` is not asserted; no sharper
@@ -604,15 +680,17 @@ is changed.
 References, re-proved at scope, never authority, no values imported: the
 one-site contraction criterion of Dobrushin (1968–1970) with its
 comparison-theorem form — re-proved above by the random-scan coupling
-(Theorem H) and the path-count corollary (Theorem I); the coupling method
+(Theorem H) and the walk-count corollary (Theorem I); the coupling method
 (maximal coupling of two laws on a finite set, the coupling inequality) —
 proved above where used. Cited, not re-proved: uniqueness of the Carathéodory extension from the
 cylinder algebra (the last step of Theorem I; block 02 cites the existence
-half). Declared mathematical scaffolding: Sturm's theorem, real-root
+half). The Lipschitz lemma of G6 is native.
+Declared mathematical scaffolding: Sturm's theorem, real-root
 isolation and exact rational matrix inversion as implemented in `sympy`
 (exact rational arithmetic; the runner checks each root count, each sign
 change and the inverse identity itself); the exact weight triples, the
-scan rationals `1 + k/8` and `k/8`, the isolation width `10^{-20}`, the
+scan rationals `1 + k/8`, `k/8`, `1 − k/40` and `1 + k/20`, the isolation width
+`10^{-20}`, the dyadic bisection of G6, the
 window exterior assignments, the configuration family with block 01's linear
 congruential generator, `200` damped iterations with tolerance `10^{-4}`,
 the table length `L = 1..12`. No observation, fitted value or literature
@@ -631,20 +709,31 @@ was cut); the monotone decrease of the damped iterates needs `C_Λ 1 + b ≤ 1`,
 stated in H2; the least `L` with `α^L/(1 − α) < 10^{-3}` is `119` at `(2,1,2)`,
 beyond the table's `L = 12`, so both are printed.
 
+Supervisor fold (2026-09-06, after the Opus 5 contract refuter lens): the lens
+reproduced every control number on its own code and found in the contract the
+"second real root" (each polynomial has three real roots; the positive one),
+a second crossing of `6c_1 = 1` on each line, the window coefficient not
+bounded by `c_1` (`(2, 5, 3)`), the endpoint-only dominance gap, the pointwise
+line statement, "paths" for "walks", the maximizer not being unique, the `(7, 3, 5)`
+silent triple, and the iterate-decrease step needing `C_Λ 1 + b ≤ 1` (already
+stated by the primary in H2); folded as G5′, G6, C10–C14, five mutations and
+the wording above. The fold's certificates were prototyped in the supervisor's
+control before the runner was patched.
+
 ## Verification
 
 ```bash
 python3 scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py
 python3 scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py --list-mutations
-python3 scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py --mutation endpoint_sup_pattern_forged
+python3 scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py --mutation region_certificate_forged
 ```
 
 Families: A authority and inputs; B menu, rule and symmetry (G1–G3); C the
-coefficient (G4–G5); D the coupling (H1–H3); E the corollary (I); F fences,
+coefficient (G4–G6); D the coupling (H1–H3); E the corollary (I); F fences,
 the author-name section rule and the floating-point self-scan; G the
-resolution certificate. Each of the 26 declared mutations perturbs one object
+resolution certificate. Each of the 31 declared mutations perturbs one object
 at construction time and fails in exactly one family
 (`mutation_family_expected:` / `mutation_family_observed:` lines); `--exact`
 prints the exact rationals, the grid map, the polynomials, the isolating
 endpoints, `u*` and the center row of `D_Λ`.
-Expected final line: `TOTAL: PASS=36 FAIL=0`.
+Expected final line: `TOTAL: PASS=41 FAIL=0`.

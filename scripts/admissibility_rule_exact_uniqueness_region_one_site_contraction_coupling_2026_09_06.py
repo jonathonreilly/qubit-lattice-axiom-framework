@@ -11,7 +11,12 @@ and along the three lines (t,1,1), (t,t,1), (1,1,t), where the crossing
 6 c_1 = 1 is isolated by Sturm's theorem as the unique positive root of an
 explicit degree-7 polynomial, with the maximizing shell pattern identified and
 the supremum over all 7776 x 15 pattern-and-pair choices re-executed at both
-endpoints of the isolating interval.  (H) The finite-window comparison bound
+endpoints of the isolating interval; each line crosses 6 c_1 = 1 a second time
+(t^2 + 10t - 5, t^5 + 7t - 5, 5t^5 - 7t^4 - 1), and on each isolating interval
+every competitor is certified below by an exact Lipschitz bound (constant 6/t
+along a line) or is identical to the displayed maximizer, while 6 c_1 < 1 is
+certified for every real t between the two thresholds (G6); the (1,1,t) line
+is the (t,t,1) line under scale invariance (reciprocal polynomials).  (H) The finite-window comparison bound
 proved by coupling in the note and executed here on the plaquette with eight
 exterior slots (the one-step inequality and the maximal-coupling identity on a
 declared configuration family) and on the 3x3 planar window with twelve
@@ -32,7 +37,7 @@ from __future__ import annotations
 import re
 import sys
 from fractions import Fraction
-from itertools import product
+from itertools import combinations_with_replacement, product
 from math import lcm
 from pathlib import Path
 
@@ -77,6 +82,11 @@ MUTATION_GATE = {
     "line_polynomial_wrong_coefficient": "C",
     "threshold_wrong_root": "C",
     "endpoint_sup_pattern_forged": "C",
+    "second_crossing_wrong_root": "C",
+    "competitor_identity_forged": "C",
+    "region_certificate_forged": "C",
+    "reciprocity_broken": "C",
+    "c4_c1_inversion_denied": "C",
     "one_step_inequality_drops_b": "D",
     "one_step_inequality_wrong_coefficient": "D",
     "maximal_coupling_identity_broken": "D",
@@ -152,8 +162,11 @@ C1_LITERALS = {
     (3, 2, 2): Fraction(2079, 15566),
     (5, 4, 4): Fraction(4000000, 61385721),
     (11, 10, 10): Fraction(98241110000, 4544062780611),
+    (7, 3, 5): Fraction(6391462, 29948925),
     (2, 2, 2): Fraction(0),
 }
+C1_253 = Fraction(1629375, 6780002)
+C4_253 = Fraction(14250, 59251)
 DIAMOND = frozenset({(2, 4), (3, 3), (3, 4), (3, 5), (4, 2), (4, 3), (4, 4), (4, 5), (4, 6), (5, 3), (5, 4), (5, 5), (5, 6), (6, 4), (6, 5)})
 GRID_MAX = 12
 
@@ -212,6 +225,28 @@ def coefficient(triple, deg: int):
             if n * best_d > best_n * d:
                 best_n, best_d, arg = n, d, (eta, t, t2)
     return Fraction(best_n, best_d), arg
+
+
+SHELL_MULTISETS = tuple(combinations_with_replacement(range(M), 5))
+
+
+def coefficient_multiset(triple, deg: int = 6):
+    """The same supremum over the 252 shell multisets x 15 pairs (the conditional is a symmetric function of the shell,
+    so the 7776 x 15 choices collapse to these); returns (Fraction, lexicographically first maximizer, tie count)."""
+    phi = phi_table(triple)
+    shells = SHELL_MULTISETS if deg == 6 else tuple(combinations_with_replacement(range(M), deg - 1))
+    best_n, best_d, arg, ties = 0, 1, None, 0
+    for eta in shells:
+        base = weights(phi, eta)
+        w = [[base[s] * phi[s][t] for s in range(M)] for t in range(M)]
+        Z = [sum(w[t]) for t in range(M)]
+        for t, t2 in PAIRS:
+            n, d = tv_int(w[t], Z[t], w[t2], Z[t2])
+            if n * best_d > best_n * d:
+                best_n, best_d, arg, ties = n, d, (eta, t, t2), 1
+            elif n * best_d == best_n * d:
+                ties += 1
+    return Fraction(best_n, best_d), arg, ties
 
 
 def coefficient_at_slot(triple, deg: int, slot: int):
@@ -302,6 +337,87 @@ LINES = (
      T ** 7 + T ** 5 + 8 * T ** 4 - 5 * T ** 3 + 8 * T ** 2 - 4),
 )
 ISOLATION_WIDTH = Fraction(1, 10 ** 20)
+# the second crossing on each line: the descending scan t = 1 - k/40 on (t,1,1) and (t,t,1); the ascending scan t = 1 + k/20 on (1,1,t)
+LINES2 = (
+    ("(t,1,1)", (T, sp.Integer(1), sp.Integer(1)), tuple(1 - Fraction(k, 40) for k in range(1, 40)), (Fraction(1, 2), Fraction(19, 40)), -1,
+     T ** 2 + 10 * T - 5),
+    ("(t,t,1)", (T, T, sp.Integer(1)), tuple(1 - Fraction(k, 40) for k in range(1, 40)), (Fraction(7, 10), Fraction(27, 40)), -1,
+     T ** 5 + 7 * T - 5),
+    ("(1,1,t)", (sp.Integer(1), sp.Integer(1), T), tuple(1 + Fraction(k, 20) for k in range(1, 20)), (Fraction(7, 5), Fraction(29, 20)), 1,
+     5 * T ** 5 - 7 * T ** 4 - 1),
+)
+COPIES_EXPECTED = (30, 288, 288, 60, 72, 72)
+
+
+def dyadic_mid(a: Fraction, b: Fraction) -> Fraction:
+    k = 0
+    while True:
+        m = Fraction(int(((a + b) / 2) * 2 ** k), 2 ** k)
+        if a < m < b:
+            return m
+        k += 1
+
+
+def region_certificate(line_sym, u: Fraction, v: Fraction) -> int:
+    """Certify 6 c_1(t) - 1 < 0 for every real t in [u, v] (G6).  On a line every weight is t or 1, so the one-site weights
+    are monomials t^{k_s}, 0 <= k_s <= 6, t a_s'(t) = a_s (k_s - sum_s' k_s' a_s'), hence sum_s |a_s'| <= 6/t; the total
+    variation of any shell-and-pair and its maximum c_1 are Lipschitz with constant 6/u on [u, v].  Exact endpoint values
+    plus 6 * (6/a) * (b - a) certify a subinterval [a, b]; bisection at dyadic midpoints otherwise.  Returns the number of
+    certified subintervals, or -1."""
+    cache: dict = {}
+
+    def val(tval: Fraction) -> Fraction:
+        if tval not in cache:
+            cache[tval] = 6 * coefficient_multiset(line_triple(line_sym, tval))[0] - 1
+        return cache[tval]
+
+    stack, count = [(u, v)], 0
+    while stack:
+        a, b = stack.pop()
+        va, vb = val(a), val(b)
+        if va >= 0 or vb >= 0:
+            return -1
+        if max(va, vb) + 36 * (b - a) / a < 0:
+            count += 1
+            continue
+        if b - a < Fraction(1, 10 ** 40):
+            return -1
+        m = dyadic_mid(a, b)
+        stack.append((a, m))
+        stack.append((m, b))
+    return count
+
+
+def competitor_sweep(line_sym, a: Fraction, b: Fraction, displayed: sp.Poly):
+    """On the isolating interval [a, b] of a threshold: each of the 252 x 15 shell-multiset-and-pair choices is either certified
+    below (6 TV - 1 < 0 on [a, b] by the endpoint values and the Lipschitz constant 6/a) or has the same rational function as the
+    displayed maximizer (with its sign pattern at a); returns (certified, identical, distinct)."""
+    tra, trb = line_triple(line_sym, a), line_triple(line_sym, b)
+    certified = identical = distinct = 0
+    for eta in SHELL_MULTISETS:
+        for t, t2 in PAIRS:
+            va = 6 * tv_of_pattern(tra, eta, t, t2) - 1
+            vb = 6 * tv_of_pattern(trb, eta, t, t2) - 1
+            if max(va, vb) + 36 * (b - a) / a < 0:
+                certified += 1
+                continue
+            signs = sign_pattern(tra, eta, t, t2)
+            num, _den = sp.fraction(sp.cancel(6 * tv_symbolic(line_sym, eta, t, t2, signs) - 1))
+            Pq = sp.Poly(num, T, domain="QQ")
+            target = displayed + sp.Poly(T, T, domain="QQ") if mut("competitor_identity_forged") else displayed
+            if Pq.degree() == target.degree() and (Pq * target.LC() - target * Pq.LC()).is_zero:
+                identical += 1
+            else:
+                distinct += 1
+    return certified, identical, distinct
+
+
+def reciprocal(P: sp.Poly) -> sp.Poly:
+    return sp.Poly(sp.expand(T ** P.degree() * P.as_expr().subs(T, 1 / T)), T, domain="QQ")
+
+
+def proportional(P: sp.Poly, Q: sp.Poly) -> bool:
+    return P.degree() == Q.degree() and (P * Q.LC() - Q * P.LC()).is_zero
 
 
 def rat(x: Fraction):
@@ -330,7 +446,7 @@ def tv_symbolic(line_sym, eta, ta, tb, signs):
     return sp.cancel(sum(signs[s] * (wa[s] / Za - wb[s] / Zb) for s in range(M)) / 2)
 
 
-def analyze_line(index: int, name, line_sym, scan, bracket, sign_above, contract_poly) -> dict:
+def analyze_line(index: int, name, line_sym, scan, bracket, sign_above, contract_poly, second: bool = False) -> dict:
     out: dict = {"name": name}
     prev = None
     for tval in scan:
@@ -344,28 +460,29 @@ def analyze_line(index: int, name, line_sym, scan, bracket, sign_above, contract
     eta, ta, tb = out["pattern"]
     signs_lo = sign_pattern(line_triple(line_sym, lo), eta, ta, tb)
     signs_hi = sign_pattern(line_triple(line_sym, hi), eta, ta, tb)
-    if mut("sign_pattern_not_fixed"):
+    if mut("sign_pattern_not_fixed") and not second:
         signs_hi = (-signs_hi[0],) + signs_hi[1:]
     out["signs_fixed"] = signs_lo == signs_hi and out["bracket"] == bracket
     out["signs"] = signs_hi
     expr = tv_symbolic(line_sym, eta, ta, tb, signs_hi)
     num, den = sp.fraction(sp.cancel(6 * expr - 1))
     P = sp.Poly(num, T, domain="QQ")
-    contract = contract_poly + (T ** 2 if (mut("line_polynomial_wrong_coefficient") and index == 0) else 0)
+    contract = contract_poly + (T ** 2 if (mut("line_polynomial_wrong_coefficient") and index == 0 and not second) else 0)
     Pc = sp.Poly(contract, T, domain="QQ")
     out["numerator"] = sp.factor(num)
+    out["P"] = P
     out["poly_match"] = P.degree() == Pc.degree() and (P * Pc.LC() - Pc * P.LC()).is_zero
     out["positive_roots"] = P.count_roots(inf=0)
     out["real_roots"] = P.count_roots()
     ivs = P.intervals(eps=rat(ISOLATION_WIDTH), inf=0)
     have_root = len(ivs) >= 1
     a, b = (frac(ivs[0][0][0]), frac(ivs[0][0][1])) if have_root else (Fraction(1), Fraction(1))
-    if mut("threshold_wrong_root"):
+    if mut("second_crossing_wrong_root" if second else "threshold_wrong_root"):
         a, b = a + Fraction(1, 8), b + Fraction(1, 8)
     pa, pb = frac(P.eval(rat(a))), frac(P.eval(rat(b)))
     out["interval"] = (a, b)
     out["isolated"] = have_root and len(ivs) == 1 and out["positive_roots"] == 1 and a > 0 and b - a < ISOLATION_WIDTH and pa * pb < 0
-    pattern = ((0, 0, 0, 0, 0), 0, 1) if mut("endpoint_sup_pattern_forged") else (eta, ta, tb)
+    pattern = ((0, 0, 0, 0, 0), 0, 1) if (mut("endpoint_sup_pattern_forged") and not second) else (eta, ta, tb)
     sup_ok, sign_ok = True, True
     for end, expected_sign in ((a, -sign_above), (b, sign_above)):
         tr_end = line_triple(line_sym, end)
@@ -385,10 +502,16 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
     literals = dict(C1_LITERALS)
     if mut("c1_literal_off"):
         literals[(3, 1, 2)] = Fraction(271, 989)
-    checks.check("C1", all(vals[tr][0] == literals[tr] for tr in literals), "G4: exact c_1 at the seven triples equals the literals")
-    for tr in ((3, 1, 2), (5, 2, 4), (2, 1, 2), (3, 2, 2), (5, 4, 4), (11, 10, 10)):
+    multiset_same = all(coefficient_multiset(tr)[0] == vals[tr][0] for tr in literals)
+    checks.check("C1", all(vals[tr][0] == literals[tr] for tr in literals) and multiset_same, "G4: exact c_1 at the eight triples = the literals; the 252-multiset supremum agrees")
+    order = ((3, 1, 2), (5, 2, 4), (2, 1, 2), (3, 2, 2), (5, 4, 4), (11, 10, 10), (7, 3, 5))
+    print("info c_1: " + " ".join(f"({tr[0]},{tr[1]},{tr[2]})={vals[tr][0]}" for tr in order[:4]))
+    print("info c_1: " + " ".join(f"({tr[0]},{tr[1]},{tr[2]})={vals[tr][0]}" for tr in order[4:]))
+    for tr in order:
         c, arg = vals[tr]
-        print(f"info c_1{tr}={c} 6c_1={dec(6 * c, 6)} max eta={''.join(map(str, arg[0]))} pair={arg[1]}{arg[2]}")
+        ties = coefficient_multiset(tr)[2]
+        if exact:
+            print(f"exact c_1{tr}={c} 6c_1={dec(6 * c, 6)} max eta={''.join(map(str, arg[0]))} pair={arg[1]}{arg[2]} multiset ties={ties}")
     region_expected = set(REGION_TRIPLES)
     silent_expected = set(SILENT_TRIPLES)
     if mut("region_triple_misclassified"):
@@ -412,15 +535,42 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
     lines = [analyze_line(i, *spec) for i, spec in enumerate(LINES)]
     for ln in lines:
         a, b = ln["interval"]
-        print(f"info line {ln['name']}: crossing {ln['bracket'][0]}..{ln['bracket'][1]}; eta={''.join(map(str, ln['pattern'][0]))} pair={ln['pattern'][1]}{ln['pattern'][2]}; t* in [{dec(a, 20)}, {dec(b, 20, True)}]")
+        print(f"info line {ln['name']}: {ln['bracket'][0]}..{ln['bracket'][1]} eta={''.join(map(str, ln['pattern'][0]))} pair={ln['pattern'][1]}{ln['pattern'][2]} t*=[{dec(a, 14)},{dec(b, 14, True)}]")
         if exact:
             print(f"exact line {ln['name']}: numerator of 6TV-1 = {ln['numerator']}; signs {ln['signs']}; interval [{a}, {b}]; real roots {ln['real_roots']}, positive {ln['positive_roots']}")
     checks.check("C5", all(ln["signs_fixed"] for ln in lines), "G5: crossings at the declared brackets; sign pattern of the six differences fixed at both")
     checks.check("C6", all(ln["poly_match"] for ln in lines), "G5: numerator of 6TV(t) - 1 at the pattern = the contract's degree-7 polynomial up to a constant")
-    checks.check("C7", all(ln["isolated"] for ln in lines), "G5: Sturm: one positive root each, isolated to width < 10^-20, sign change at the rational endpoints")
+    checks.check("C7", all(ln["isolated"] for ln in lines), "G5: Sturm: one positive root each, isolated to width < 10^-20, sign change at the endpoints")
     checks.check("C8", all(ln["endpoint_sup_ok"] for ln in lines), "G5: at both endpoints the sup over all 7776 x 15 choices is the displayed pattern's value")
     checks.check("C9", all(ln["sign_change_ok"] for ln in lines), "G5: 6c_1 - 1 negative below, positive above t* on (t,1,1), (t,t,1); reversed on (1,1,t)")
-    report["C"] = {"vals": vals, "grid": grid, "lines": lines}
+    lines2 = [analyze_line(i, *spec, second=True) for i, spec in enumerate(LINES2)]
+    for ln in lines2:
+        a, b = ln["interval"]
+        print(f"info line2 {ln['name']}: {ln['bracket'][0]}..{ln['bracket'][1]} eta={''.join(map(str, ln['pattern'][0]))} pair={ln['pattern'][1]}{ln['pattern'][2]} t2=[{dec(a, 14)},{dec(b, 14, True)}]")
+        if exact:
+            print(f"exact line2 {ln['name']}: numerator of 6TV-1 = {ln['numerator']}; signs {ln['signs']}; interval [{a}, {b}]; real roots {ln['real_roots']}, positive {ln['positive_roots']}")
+    keys = ("signs_fixed", "poly_match", "isolated", "endpoint_sup_ok", "sign_change_ok")
+    checks.check("C10", all(ln[k] for ln in lines2 for k in keys), "G5: second crossing per line at its bracket; numerator = the displayed polynomial; one positive root isolated to width < 10^-20; endpoint suprema; sign change")
+    sweeps = [competitor_sweep(spec[1], ln["interval"][0], ln["interval"][1], ln["P"]) for spec, ln in zip(LINES + LINES2, lines + lines2)]
+    copies = tuple(s[1] for s in sweeps)
+    checks.check("C11", all(s[2] == 0 and s[0] + s[1] == len(SHELL_MULTISETS) * len(PAIRS) for s in sweeps) and copies == COPIES_EXPECTED, f"G5: six isolating intervals: every 252 x 15 choice verified below (Lipschitz) or identical to the displayed maximizer (copies {list(copies)})")
+    regions = []
+    for spec, ln1, ln2 in zip(LINES, lines, lines2):
+        lo, hi = sorted([ln1["interval"], ln2["interval"]])
+        u, v = lo[1], hi[0]
+        if mut("region_certificate_forged"):
+            v = hi[1] + Fraction(1, 100)
+        regions.append(region_certificate(spec[1], u, v))
+    checks.check("C12", all(n > 0 for n in regions), f"G6: 6c_1 < 1 verified for every real t between the two thresholds, each line (subintervals {regions})")
+    P3a = LINES[2][5] + (T if mut("reciprocity_broken") else 0)
+    recip_ok = proportional(reciprocal(sp.Poly(LINES[1][5], T, domain="QQ")), sp.Poly(P3a, T, domain="QQ")) and proportional(reciprocal(sp.Poly(LINES2[1][5], T, domain="QQ")), sp.Poly(LINES2[2][5], T, domain="QQ"))
+    scale_ok = all(coefficient_multiset(line_triple(LINES[1][1], tv_))[0] == coefficient_multiset(line_triple(LINES[2][1], 1 / tv_))[0] for tv_ in (Fraction(5, 4), Fraction(3, 2), Fraction(7, 10))) and vals[(2, 1, 2)][0] == coefficient((4, 2, 4), 6)[0]
+    checks.check("C13", recip_ok and scale_ok, "G2/G6: c_1(t,t,1) = c_1(1,1,1/t) executed; the (1,1,t) polynomials are the (t,t,1) reciprocals")
+    c1_253, c4_253 = coefficient((2, 5, 3), 6)[0], coefficient((2, 5, 3), 4)[0]
+    inversion = (c4_253 <= c1_253) if mut("c4_c1_inversion_denied") else (c4_253 > c1_253)
+    silent735 = 6 * vals[(7, 3, 5)][0] >= 1
+    checks.check("C14", inversion and c1_253 == C1_253 and c4_253 == C4_253 and silent735, f"c_1^(4)(2,5,3) = {c4_253} > c_1(2,5,3) = {c1_253}: a window coefficient can exceed c_1; (7,3,5) silent")
+    report["C"] = {"vals": vals, "grid": grid, "lines": lines, "lines2": lines2, "sweeps": sweeps, "regions": regions}
 
 
 # ==================================================================== family D
@@ -606,7 +756,7 @@ def family_d(checks: Checks, report: dict, exact: bool) -> None:
     fam = plaquette_family()
     plaq = {tr: plaquette_checks(tr, fam) for tr in WINDOW_TRIPLES}
     checks.check("D1", all(p["ineq_ok"] for p in plaq.values()), f"H1: plaquette one-step inequality TV <= c_1^(4) sum[differ] + b_x, {len(fam)} pairs x 4 sites")
-    checks.check("D2", all(p["coupling_ok"] for p in plaq.values()), f"H1: maximal coupling: sum_s min(a_s, b_s) = 1 - TV on all {plaq[(2, 1, 2)]['instances']} distinct instances, four triples")
+    checks.check("D2", all(p["coupling_ok"] for p in plaq.values()), f"H1: maximal coupling identity sum_s min(a_s,b_s) = 1 - TV on {plaq[(2, 1, 2)]['instances']} instances, four triples")
     win = {tr: window_analysis(tr) for tr in WINDOW_TRIPLES}
     c4_ok = all(win[tr]["c4"] == C4_LITERALS[tr] for tr in WINDOW_TRIPLES)
     rs312 = win[(3, 1, 2)]["row_max"] / 4 if mut("row_sum_ignored") else win[(3, 1, 2)]["row_max"]
@@ -616,14 +766,13 @@ def family_d(checks: Checks, report: dict, exact: bool) -> None:
     checks.check("D6", all(win[tr]["fixed_ok"] for tr in WINDOW_REGION), "H2: fixed-point identity u* = (8/9) u* + (1/9)(C u* + b) exact")
     tv_ok = win[(2, 1, 2)]["tv"] == CENTER_TV_LITERAL_212 and all(dec(win[tr]["tv"], 7) == "0." + CENTER_TV_LABELS[tr] for tr in WINDOW_REGION)
     bound_ok = all(win[tr]["bound"] == CENTER_BOUND_LITERALS[tr] and win[tr]["tv"] <= win[tr]["bound"] for tr in WINDOW_REGION)
+    print("info 3x3 TV<=bound: " + "; ".join(f"({tr[0]},{tr[1]},{tr[2]}) {dec(win[tr]['tv'], 7)}<={win[tr]['bound']}" for tr in WINDOW_REGION))
     for tr in WINDOW_REGION:
-        print(f"info 3x3 {tr}: c_1^(4)={win[tr]['c4']} TV(center)={dec(win[tr]['tv'], 7)} <= (D b)_c={win[tr]['bound']}={dec(win[tr]['bound'], 7)}")
         if exact:
             print(f"exact 3x3 {tr}: TV = {win[tr]['tv']}; u* = {[str(x) for x in win[tr]['ustar']]}; D center row = {[str(x) for x in win[tr]['D_center_row']]}")
-    checks.check("D7", tv_ok and bound_ok, "H3: center-site TV <= (D b)_center at the three region triples; values equal the contract's literals")
+    checks.check("D7", tv_ok and bound_ok, "H3: center-site TV <= (D b)_center at the three region triples; the literals")
     w = win[(3, 1, 2)]
-    print(f"info 3x3 (3, 1, 2): 4c_1^(4)={4 * w['c4']} >= 1; bound not asserted; TV(center)={dec(w['tv'], 7)} recorded only")
-    checks.check("D8", w["row_max"] >= 1 and 0 < w["tv"] < 1, "H3: (3,1,2): row sum > 1; TV printed, window bound not asserted")
+    checks.check("D8", w["row_max"] >= 1 and 0 < w["tv"] < 1, f"H3: (3,1,2): 4c_1^(4) = {4 * w['c4']} > 1; window bound not asserted; TV(center)={dec(w['tv'], 7)} recorded only")
     report["D"] = {"plaquette": plaq, "window": win, "family_size": len(fam)}
 
 
@@ -651,9 +800,9 @@ def path_counts(n: int, directions: int):
 def family_e(checks: Checks, report: dict, exact: bool) -> None:
     directions = 5 if mut("path_count_wrong") else 6
     sums = {n: sum(path_counts(n, directions).values()) for n in range(1, 5)}
-    checks.check("E1", all(sums[n] == 6 ** n for n in range(1, 5)), "I: sum_y N_n(0,y) = 6^n on Z^3, n = 1..4, by path enumeration")
+    checks.check("E1", all(sums[n] == 6 ** n for n in range(1, 5)), "I: sum_y N_n(0,y) = 6^n on Z^3, n = 1..4, by walk enumeration")
     vals = report["C"]["vals"]
-    table_ok, least = True, {}
+    table_ok, least, tbl_parts = True, {}, []
     shift = 1 if mut("alpha_table_wrong_exponent") else 0
     for tr in REGION_TRIPLES:
         alpha = 6 * vals[tr][0]
@@ -664,24 +813,28 @@ def family_e(checks: Checks, report: dict, exact: bool) -> None:
             power *= alpha
             L += 1
         least[tr] = (L, power / (1 - alpha), (power / alpha) / (1 - alpha))
-        print(f"info tbl{tr}: a={dec(alpha, 6)} L1={dec(table[0], 6)} L12={dec(table[11], 6)} <10^-3 from L={L}")
+        tbl_parts.append(f"({tr[0]},{tr[1]},{tr[2]}) a={dec(alpha, 4)} L12={dec(table[11], 6)} L={L}")
         if exact:
             print(f"exact table {tr}: alpha = {alpha}; " + "; ".join(f"L={L_ + 1} {v}" for L_, v in enumerate(table)))
+    if exact:
+        print("exact tbl a, L12, least L<10^-3: " + "; ".join(tbl_parts))
     checks.check("E2", table_ok, f"I: table alpha^L/(1-alpha), L = 1..{TABLE_L}, exact at the four region triples")
     checks.check("E3", all(v[1] < SMALL <= v[2] for v in least.values()), "I: least L with alpha^L/(1-alpha) < 10^-3 (>= at L-1): " + ", ".join(f"L={v[0]}" for v in least.values()))
     points_ok = True
-    lines_out = []
+    lines_out, pts_parts = [], []
     for name, line_sym, pts in LINE_POINTS:
         if mut("line_points_misclassified") and name == "(t,1,1)":
             pts = pts + (Fraction(13, 8),)
         vals_line = [(tval, coefficient(line_triple(line_sym, tval), 6)[0]) for tval in pts]
         points_ok = points_ok and all(6 * c < 1 for _, c in vals_line)
         lines_out.append((name, vals_line))
-        print(f"info pts {name}: " + " ".join(f"{tval}:{dec(6 * c, 5)}" for tval, c in vals_line))
+        pts_parts.append(f"{name} " + " ".join(f"{tval}:{dec(6 * c, 4)}" for tval, c in vals_line))
         if exact:
             print(f"exact region points {name}: " + ", ".join(f"t={tval} c_1={c}" for tval, c in vals_line))
+    if exact:
+        print("exact pts 6c_1: " + "; ".join(pts_parts))
     region_ok = all(6 * vals[tr][0] < 1 for tr in REGION_TRIPLES) and all(6 * vals[tr][0] >= 1 for tr in SILENT_TRIPLES)
-    checks.check("E4", points_ok and region_ok, "region: 6c_1 < 1 at the four region triples and the declared line points; >= 1 at (3,1,2), (5,2,4)")
+    checks.check("E4", points_ok and region_ok, "region: 6c_1 < 1 at the region triples and the line points; >= 1 at (3,1,2), (5,2,4)")
     report["E"] = {"least": least, "points": lines_out}
 
 
@@ -749,11 +902,11 @@ def family_f(checks: Checks, note_text: str) -> None:
 
 # ==================================================================== family G
 N5_LINES = (
-    "per_element: executed — all 7776 x 15 pattern-and-pair choices at every triple, grid point, scan point and endpoint; every plaquette pair",
-    "per_site: executed — the flipped neighbor in each of six directions; the plaquette inequality at each site; the 3x3 window's row sums and center marginals",
-    "per_mode: executed — D = (I - C)^{-1} exactly with the damped fixed-point iterates; Sturm isolation of each threshold as the unique positive root",
-    "per_block: executed — the 3x3 window by integer row transfer under two exterior assignments; path counts n <= 4; the table alpha^L/(1-alpha)",
-    "lattice_wide: proved, not executed — uniqueness on Z^3 where 6c_1 < 1 is the corollary of the window bound and the path-count bound; the silent triples are named, not decided",
+    "per_element: executed — all 7776 x 15 pattern-and-pair choices at every triple, grid point, scan point and endpoint (252 multisets x 15 pairs in the certificates); every plaquette pair",
+    "per_site: executed — the flipped neighbor in each of six directions; the plaquette inequality at each site; the 3x3 row sums and center marginals",
+    "per_mode: executed — D = (I - C)^{-1} exactly with the damped iterates; Sturm isolation of each threshold as the unique positive root",
+    "per_block: executed — the 3x3 window by integer row transfer under two exterior assignments; walk counts n <= 4; the table alpha^L/(1-alpha)",
+    "lattice_wide: proved, not executed — uniqueness on Z^3 where 6c_1 < 1 is the corollary of the window and walk-count bounds; the silent triples are named, not decided",
 )
 
 
@@ -785,7 +938,7 @@ def main(argv) -> int:
     for p in AUDIT_INPUT_PATHS:
         print(f"  {p}")
     print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
-    print("scope: six-projector menu, covariant product rule; c_1 exactly; the coupling bound on two windows; the corollary's arithmetic; uniqueness only where 6c_1 < 1; silent at (3,1,2), (5,2,4)")
+    print("scope: six-projector menu, covariant product rule; c_1 exactly, the lines' two thresholds with certificates; the coupling bound on two windows; uniqueness only where 6c_1 < 1; silent at (3,1,2), (5,2,4)")
     print(f"mutation: {ACTIVE_MUTATION or 'none'}")
     report: dict = {}
     family_a(checks, note_text, axiom_text, b01_text, b02_text)

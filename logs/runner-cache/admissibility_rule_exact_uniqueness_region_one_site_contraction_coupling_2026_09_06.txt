@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py
-runner_sha256: fcab74e1e237e985bcd4f828cd62a84fea95577c98efb9d9657dacfcd4954848
+runner_sha256: b20b895254b915b05ce1ebd4f262b62d639ca1651ad731cd8828833d0f25470c
 input_fingerprint_sha256: ce06982009fcead609fe22ce95fb887aed358076c94a1cb8f42f52f5690ccfdd
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 27.25
+elapsed_sec: 19.10
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

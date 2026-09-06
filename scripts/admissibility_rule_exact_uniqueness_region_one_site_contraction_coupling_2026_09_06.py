@@ -358,12 +358,13 @@ def analyze_line(index: int, name, line_sym, scan, bracket, sign_above, contract
     out["positive_roots"] = P.count_roots(inf=0)
     out["real_roots"] = P.count_roots()
     ivs = P.intervals(eps=rat(ISOLATION_WIDTH), inf=0)
-    a, b = frac(ivs[0][0][0]), frac(ivs[0][0][1])
+    have_root = len(ivs) >= 1
+    a, b = (frac(ivs[0][0][0]), frac(ivs[0][0][1])) if have_root else (Fraction(1), Fraction(1))
     if mut("threshold_wrong_root"):
         a, b = a + Fraction(1, 8), b + Fraction(1, 8)
     pa, pb = frac(P.eval(rat(a))), frac(P.eval(rat(b)))
     out["interval"] = (a, b)
-    out["isolated"] = len(ivs) == 1 and out["positive_roots"] == 1 and a > 0 and b - a < ISOLATION_WIDTH and pa * pb < 0
+    out["isolated"] = have_root and len(ivs) == 1 and out["positive_roots"] == 1 and a > 0 and b - a < ISOLATION_WIDTH and pa * pb < 0
     pattern = ((0, 0, 0, 0, 0), 0, 1) if mut("endpoint_sup_pattern_forged") else (eta, ta, tb)
     sup_ok, sign_ok = True, True
     for end, expected_sign in ((a, -sign_above), (b, sign_above)):
@@ -374,8 +375,8 @@ def analyze_line(index: int, name, line_sym, scan, bracket, sign_above, contract
         sup_ok = sup_ok and sup_end == tv_pat and rf_val == tv_of_pattern(tr_end, eta, ta, tb)
         v = 6 * sup_end - 1
         sign_ok = sign_ok and ((v < 0) if expected_sign < 0 else (v > 0))
-    out["endpoint_sup_ok"] = sup_ok
-    out["sign_change_ok"] = sign_ok
+    out["endpoint_sup_ok"] = sup_ok and have_root
+    out["sign_change_ok"] = sign_ok and have_root
     return out
 
 

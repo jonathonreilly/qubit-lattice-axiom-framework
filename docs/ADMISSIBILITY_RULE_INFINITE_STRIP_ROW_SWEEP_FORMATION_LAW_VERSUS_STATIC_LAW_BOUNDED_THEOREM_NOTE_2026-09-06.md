@@ -438,9 +438,8 @@ give `0.2559429133, 0.2561061627, 0.2561108435, 0.2561109828, 0.2561109871, 0.25
 (`n = 3` is `578647/2260844`); at `(5, 2, 4)`,
 `0.2198741514, 0.2199144959, 0.2199151505, 0.2199151614, 0.2199151616, 0.2199151616`
 (`n = 3` is `3731173618465/16969587349457`). Their distances to the
-enclosure strictly decrease along the sequence and the last is below
-`10^{-6}` (E9); monotonicity is an executed fact for these `n`, not a
-theorem. (f) Second eigenvalue: every root of the characteristic polynomial
+enclosure strictly decrease and the last is below `10^{-6}` (E9); this is an
+executed fact for these `n`, not a theorem. (f) Second eigenvalue: every root of the characteristic polynomial
 is real (Sturm count equals the degree of each irreducible factor); the
 non-Perron roots are isolated to width `10^{-20}` and `m` is the largest
 modulus of their interval endpoints; the count of roots in `[−m, m]` equals
@@ -603,12 +602,11 @@ This note does not derive, explain, bear on or decide the parked statistical bri
 Every negative sentence in this note is an exact statement on the declared strips and windows or a corollary of Theorems E and F at their stated scope; none is a route no-go beyond that scope.
 
 Further: Theorem C2 is existence only, along a subsequence, for the finite
-menu, and nothing here decides whether different exhaustions or boundary
-records give the same limit; the static enclosure is executed at widths 2
-and 3 only; the finite-`n` monotonicity is an executed fact for `n ≤ 13`; the
-convergence ratio is `Q`'s on the orbit sector, where the center-row law
-lives; no formation site, probability or rate is supplied; no axiom or
-primitive is changed.
+menu; whether different exhaustions or boundary records give the same limit
+is undecided here; the static enclosure is executed at widths 2 and 3 only;
+the finite-`n` monotonicity is an executed fact for `n ≤ 13`; the convergence
+ratio is `Q`'s on the orbit sector; no formation site, probability or rate
+is supplied; no axiom or primitive is changed.
 
 ## Imports
 

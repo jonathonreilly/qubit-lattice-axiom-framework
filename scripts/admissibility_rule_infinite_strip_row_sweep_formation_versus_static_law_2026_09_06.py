@@ -465,3 +465,235 @@ def family_d(checks: Checks, report: dict) -> None:
     checks.check("D2", d2, "E3: p_0 P = p_0 exactly for W = 2, 3, both triples (all 6^W row states)")
     checks.check("D3", d3, "E4: every vertical and horizontal nearest-neighbor pair has law (1/6) K; the diagonal pair (alpha_0, beta_1) has law (1/6) K^2")
     checks.check("D4", d4, "direct finite-strip formation law (W=2: n=2,3; W=3: n=2) = p_0 P^(n-1) on every row marginal and row-pair joint")
+
+
+def width4_invariance(triple) -> bool:
+    """p_0 P = p_0 at W = 4 with integer numerators over a common denominator (1296 x 1296 kernel, from the definition)."""
+    phi = phi_table(triple)
+    W = 4
+    z1 = sum(phi[0])
+    z2 = {(a, b): sum(phi[s][a] * phi[s][b] for s in range(M)) for a in range(M) for b in range(M)}
+    L = lcm(*set(z2.values()))
+    rows = strip_rows(W)
+    p0n = [prod(phi[r[j - 1]][r[j]] for j in range(1, W)) for r in rows]  # p_0 = p0n / (6 Z_1^(W-1))
+    ok = True
+    for ia, a in enumerate(rows):
+        tot = 0
+        for ib, b in enumerate(rows):
+            x = p0n[ib] * phi[a[0]][b[0]]
+            for j in range(1, W):
+                x *= phi[a[j]][a[j - 1]] * phi[a[j]][b[j]] * (L // z2[(a[j - 1], b[j])])
+            tot += x
+        # (p_0 P)(a) = tot / (6 Z_1^(W-1) Z_1 L^(W-1)); equality with p_0(a) iff tot == p0n(a) Z_1 L^(W-1)
+        if tot != p0n[ia] * z1 * L ** (W - 1):
+            ok = False
+            break
+    return ok
+
+
+def family_d_controls(checks: Checks, report: dict) -> None:
+    checks.check("D5", all(width4_invariance(t) for t in TRIPLES), "width 4: p_0 P = p_0 exactly on all 1296 row states (integer numerators), both triples")
+    # constant rule: K uniform, p_0 uniform, invariance trivial
+    ctr = (2, 2, 3) if mut("constant_rule_not_uniform") else CONSTANT_TRIPLE
+    phi_c = phi_table(ctr)
+    Kc = one_edge_kernel(phi_c)
+    okc = True
+    for W in (2, 3):
+        rows = strip_rows(W)
+        p0 = row_law_p0(rows, Kc)
+        okc = okc and all(x == Fraction(1, M ** W) for x in p0) and invariant(p0, row_kernel_definition(rows, phi_c)) == 0
+    checks.check("D6", okc, "constant rule (2,2,2): K uniform, p_0 uniform on 6^W states, p_0 P = p_0, W = 2, 3")
+    # asymmetric control: phi(a,b) = weights + [a < b]; K(a -> s) = phi(s,a)/sum_t phi(t,a)
+    base = phi_table(TRIPLES[0])
+    phi_asym = tuple(tuple(base[a][b] + (0 if mut("asymmetric_control_passes") else (1 if a < b else 0)) for b in range(M)) for a in range(M))
+    viol = {}
+    for W in (2, 3):
+        rows = strip_rows(W)
+        Ka = [[Fraction(phi_asym[s][a], sum(phi_asym[t][a] for t in range(M))) for s in range(M)] for a in range(M)]
+        p0 = row_law_p0(rows, Ka)
+        viol[W] = invariant(p0, row_kernel_definition(rows, phi_asym))
+    report["asym_violations"] = viol
+    checks.check("D7", viol[2] > 0 and viol[3] > 0, f"asymmetric-weight control: p_0 P != p_0 on {viol[2]}/36 (W=2) and {viol[3]}/216 (W=3) row states")
+    # three-recorded-neighbor remark: cube, order 0..7, last site 7 has recorded neighbors 3, 5, 6
+    phi = phi_table(TRIPLES[0])
+    nbrs = neighbors_of(CUBE_EDGES, 8)
+    marg: dict = {}
+    for v in product(range(M), repeat=7):
+        num = 1
+        den = 1
+        for x in range(7):
+            rec = tuple(v[y] for y in nbrs[x] if y < x)
+            num *= prod(phi[v[x]][e] for e in rec)
+            den *= sum(prod(phi[t][e] for e in rec) for t in range(M))
+        key = (v[3], v[5], v[6])
+        marg[key] = marg.get(key, Fraction(0)) + Fraction(num, den)
+    z3 = {k: sum(phi[s][k[0]] * phi[s][k[1]] * phi[s][k[2]] for s in range(M)) for k in marg}
+    if mut("three_neighbor_witness_forced"):
+        marg = {k: Fraction(z3[k]) for k in marg}
+    keys = sorted(marg)
+    k0 = keys[0]
+    proportional = all(marg[k] * z3[k0] == marg[k0] * z3[k] for k in keys)
+    n_bad = sum(1 for k in keys if marg[k] * z3[k0] != marg[k0] * z3[k])
+    checks.check("D8", not proportional and n_bad > 0, f"cube sweep 0..7 at (3,1,2): joint law of the last site's three recorded neighbors is not proportional to Z_3 ({n_bad}/216 triples off)")
+
+
+# ==================================================================== family E
+lam, yy = sp.symbols("lam y")
+
+
+def frac_of(x) -> Fraction:
+    x = sp.Rational(x)
+    return Fraction(int(x.p), int(x.q))
+
+
+def rat_of(x: Fraction):
+    return sp.Rational(x.numerator, x.denominator)
+
+
+def dec(x: Fraction, digits: int) -> str:
+    """Exact truncated decimal expansion of a rational (integer arithmetic; a label, not evidence)."""
+    sign = "-" if x < 0 else ""
+    x = abs(x)
+    scaled = (x.numerator * 10 ** digits) // x.denominator
+    s = str(scaled).rjust(digits + 1, "0")
+    return f"{sign}{s[:-digits]}.{s[-digits:]}"
+
+
+class Field:
+    """Q(lam_1) = Q[lam]/(m) for a monic irreducible m; elements are coefficient lists of Fractions."""
+
+    def __init__(self, m_poly: sp.Poly) -> None:
+        self.m = m_poly
+        self.d = m_poly.degree()
+        self.mc = [frac_of(c) for c in m_poly.all_coeffs()]
+        assert self.mc[0] == 1
+
+    def el(self, coeffs):
+        return [Fraction(c) for c in coeffs] + [Fraction(0)] * (self.d - len(coeffs))
+
+    def add(self, a, b):
+        return [x + y for x, y in zip(a, b)]
+
+    def sub(self, a, b):
+        return [x - y for x, y in zip(a, b)]
+
+    def scal(self, c, a):
+        return [c * x for x in a]
+
+    def mul(self, a, b):
+        d = self.d
+        r = [Fraction(0)] * (2 * d - 1)
+        for i, x in enumerate(a):
+            if x:
+                for j, z in enumerate(b):
+                    if z:
+                        r[i + j] += x * z
+        for k in range(2 * d - 2, d - 1, -1):
+            c = r[k]
+            if c:
+                r[k] = Fraction(0)
+                for i in range(1, d + 1):
+                    r[k - i] -= c * self.mc[i]
+        return r[:d]
+
+    def to_poly(self, a) -> sp.Poly:
+        return sp.Poly(sum(rat_of(x) * lam ** i for i, x in enumerate(a)) + sp.Integer(0), lam, domain="QQ")
+
+    def from_poly(self, p: sp.Poly):
+        return self.el([frac_of(c) for c in p.all_coeffs()[::-1]])
+
+    def inv(self, a):
+        return self.from_poly(self.to_poly(a).invert(self.m))
+
+    def is_zero(self, a) -> bool:
+        return all(x == 0 for x in a)
+
+
+def horner_interval(coeffs, lo: Fraction, hi: Fraction):
+    """Rigorous rational bounds of g(t) = sum c_k t^k over t in [lo, hi] with 0 < lo (monotone powers)."""
+    glo = Fraction(0)
+    ghi = Fraction(0)
+    for k, c in enumerate(coeffs):
+        if c > 0:
+            glo += c * lo ** k
+            ghi += c * hi ** k
+        elif c < 0:
+            glo += c * hi ** k
+            ghi += c * lo ** k
+    return glo, ghi
+
+
+def bisect_root(poly: sp.Poly, lo: Fraction, hi: Fraction, width: Fraction):
+    """Bisect a sign-change interval of a simple real root down to the given width (exact rationals)."""
+    flo = poly.eval(rat_of(lo))
+    assert flo != 0 and poly.eval(rat_of(hi)) != 0 and (flo > 0) != (poly.eval(rat_of(hi)) > 0)
+    while hi - lo >= width:
+        mid = (lo + hi) / 2
+        fm = poly.eval(rat_of(mid))
+        if fm == 0:
+            return mid, mid
+        if (fm > 0) == (flo > 0):
+            lo, flo = mid, fm
+        else:
+            hi = mid
+    return lo, hi
+
+
+def row_orbits(rows):
+    seen: dict = {}
+    orbits = []
+    for r in rows:
+        if r in seen:
+            continue
+        O = set()
+        for g in ROTATIONS:
+            rr = tuple(rotate_menu(g, a) for a in r)
+            O.add(rr)
+            O.add(rr[::-1])
+        for x in O:
+            seen[x] = len(orbits)
+        orbits.append(sorted(O))
+    return orbits, seen
+
+
+def transfer_pieces(W, phi):
+    def A(r):
+        return prod((phi[r[j]][r[j + 1]] for j in range(W - 1)), start=1)
+
+    def V(r, r2):
+        return prod(phi[r[j]][r2[j]] for j in range(W))
+
+    return A, V
+
+
+def commutes(rows, A, V, reps) -> bool:
+    """T(g rho, g rho') = T(rho, rho') for every g in G (24 rotations x reflection) on the declared row sample."""
+    gens = [(g, flip) for g in ROTATIONS for flip in (False, True)]
+
+    def act(g, flip, r):
+        rr = tuple(rotate_menu(g, a) for a in r)
+        return rr[::-1] if flip else rr
+
+    def T(r, r2):
+        base = V(r, r2) * A(r2)
+        if mut("quotient_not_commuting") and r == rows[0] and r2 == rows[1]:
+            base += 1
+        return base
+
+    return all(T(act(g, f, r), act(g, f, r2)) == T(r, r2) for r in reps for r2 in rows for g, f in gens)
+
+
+def perron_data(Q, K):
+    """Characteristic polynomial (factored), the Perron factor, an isolating interval of width < 10^-30."""
+    cp = sp.Poly(sp.Matrix(Q).charpoly(lam).as_expr(), lam, domain="QQ")
+    factors = [(sp.Poly(f, lam, domain="QQ"), m) for f, m in sp.factor_list(cp.as_expr())[1]]
+    cands = []
+    for P_, _m in factors:
+        for (a, b), _k in P_.intervals():
+            cands.append((frac_of(a), frac_of(b), P_))
+    cands.sort(key=lambda c: c[1])
+    lo, hi, mp = cands[-2] if mut("perron_interval_wrong_root") else cands[-1]
+    if lo == hi:
+        return cp, factors, mp, lo, hi
+    lo, hi = bisect_root(mp, lo, hi, Fraction(1, 10 ** 30))
+    return cp, factors, mp, lo, hi

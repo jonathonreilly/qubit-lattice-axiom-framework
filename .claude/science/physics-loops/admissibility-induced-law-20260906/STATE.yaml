@@ -24,3 +24,21 @@ next_exact_action: "synthesize the four panel lenses; amend GOAL.md/specs/primar
 stop_condition: "block 01 PR opened, or a defect the panel/checker finds that the supervisor cannot repair in-session (then a documented stop with the pack checkpointed)"
 
 # 2026-09-06 block 01 CLOSED — primary (Fable, 26 min) delivered runner 53/0 (7.8 s) + note 643 lines + RESULTS + V1-V5; 41 mutations 41/41; supervisor line-by-line review (F-S1..F-S4 applied); Opus refuting checker PASS-NO-BLOCKER (CK-01..CK-12 confirmed; five editorial findings folded); cache re-pinned (runner sha 48272bc7d58cadfd5aa59d8631021825b12dfae4b81f3282d6565c7e68065b61, input fingerprint fe6d62e4e8fad0112fa0dae849b45f27b9233899c98d2649f3670918ae2ad328); conformance gate 1-12 PASS; pipeline exit 0; manifest +1 node; PR #7998 opened off main (https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7998; never merged by the campaign). pr_status: OPENED — hand-off to the owner-operated review-loop. Next block candidates in OPPORTUNITY_QUEUE.md (refresh 2026-09-06).
+
+# ---------------------------------------------------------------- block 02 (2026-09-06)
+# block: 2
+# branch: physics-loop/admissibility-induced-law-block02-infinite-strip-sweep-20260906 (stacked on block 01, PR #7998, tip 8b26a1c59a)
+# base_commit: 341511a74e (origin/main)
+# lock: owner fable-supervisor, ttl 6h from 2026-09-06T21:20+00:00
+# active_route: "block 02 = the specification, an infinite-volume static law, the exactly solvable row sweep on strips, the static infinite strip enclosed (GOAL_block02.md)"
+# approach_family_coverage: [C1 specification consistency executed, C2 existence proved (compactness), E row-sweep solvability proved (telescoping) + executed widths 2-3(4), F transfer-matrix enclosure executed widths 2-3 with Perron-Frobenius re-proved; Dobrushin uniqueness region deferred to block 03]
+# strongest_unresolved_proof_obligation: "uniqueness of the infinite-volume static law on Z^3 (block 03: the exact Dobrushin region — control values 6C = 1620/989 at (3,1,2), 51900000/40615109 at (5,2,4), 12/13 at (2,1,2)); the plane's static law"
+# hard_residual: "what the rule induces on the infinite lattice: a specification with at least one static law; on an infinite window the formation law is exactly not that law"
+# files_touched: [GOAL_block02.md, specs/primary_block02.md, specs/supervisor_control_block02_*, ROUTE_PORTFOLIO.md, STATE.yaml, HANDOFF.md]
+# open_imports: [carried from block 01; the row sweep as a declared order]
+# trace_class: upstream_support
+# review_findings: "supervisor controls done (row-law invariance exact; 8 orbits; the cubic Perron polynomial; s_inf numeric 0.256111/0.219915); one Opus refuter lens on the contract launched in parallel with the primary"
+# pr_status: not opened
+# next_exact_action: "Fable primary on specs/primary_block02.md (150 min); on delivery: supervisor line-by-line review; Opus refuting checker; fold; conformance gate; PR stacked on #7998"
+
+# 2026-09-06 block 02 CLOSED — primary (Fable, 28 min) delivered runner 37/0 + note 650 lines + RESULTS_block02 + V1-V5; contract refuter lens (Opus) before the build, 11 scoping findings folded; supervisor review (F-S1..F-S4 applied; D9/E11 added; the adjacent-column restriction observation); Opus refuting checker FIX FIRST with nothing refuted (both fixes and all recommendations folded); final runner 39/0 (26.9 s), 30 mutations 30/30; cache re-pinned (runner sha abbd76127f42d3d5e9b895c451d0f2c31899e0afeb949c7a8f812bb1f65f98c2, fingerprint 9ac6e0846636b72e1ccb6ab28df2efc123feac25cb978b26010b27fd7418eaf3); conformance gate 1-12 PASS; pipeline exit 0; manifest +1 node; PR #7999 opened, stacked on #7998 (https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7999; never merged by the campaign). pr_status: OPENED — hand-off to the owner-operated review-loop. Next: OPPORTUNITY_QUEUE.md refresh (block 02 closing) — the exact contraction region on Z^3 first.

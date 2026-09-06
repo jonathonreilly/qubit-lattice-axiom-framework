@@ -41,3 +41,24 @@ Target state after the matched-hit review: **open**. The static half is a genera
 | The five attempted coincidence routes as exact computations (family G) | runner certificate + N-gate section | active (block 01) |
 | Infinite-volume (DLR) existence/uniqueness of the static specification | open; not this block | queued (OPPORTUNITY_QUEUE.md) |
 | The Gaussian (gravity-lane) instance of the static/formation distinction on the lane's own fixture | open; not this block | queued |
+
+## Block 02 prior-art sweep, searched commit origin/main 341511a74e (2026-09-06, after block 01)
+
+```bash
+git grep -l -iE "dobrushin" origin/main -- 'docs/*.md'                                  # 11 hits
+git grep -l -iE "\bDLR\b|Dobrushin-Lanford-Ruelle" origin/main -- 'docs/*.md'          # 0
+git grep -l -iE "transfer matrix.*strip|strip.*transfer matrix" origin/main -- 'docs/*.md'   # 0
+git grep -l -iE "probabilistic cellular automat|PCA\b" origin/main -- 'docs/*.md'      # 0
+git grep -l -iE "stationary (row|law|distribution).*(sweep|sequential)|sequential.*stationary" origin/main -- 'docs/*.md'   # 1
+git grep -l -iE "uniqueness.*(Gibbs|infinite.volume)|infinite.volume.*unique" origin/main -- 'docs/*.md'   # 3
+git grep -l -iE "specification.*(quasilocal|Feller|kernel)" origin/main -- 'docs/*.md' # 1
+```
+
+| Hit | Classification | Disposition |
+|---|---|---|
+| the six `WILSON_STAGGERED_*` notes of 2026-07-12 naming Dobrushin (e.g. `docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md`) | context-only | Dobrushin-type contraction controls on the Wilson-staggered polymer/RG fibers — a different carrier, a different specification, no nearest-neighbor menu rule; relevant to block 03 (uniqueness) as prior use of the Dobrushin idea in-repo, not to block 02 |
+| `docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md` | non-matching | the regex hit is incidental (seam packets); no sequential stationary row law |
+| `docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md`, `docs/GL_F_RECORD_VALUE_DICTIONARY_COMMUTING_LOCK_BOUNDED_THEOREM_NOTE_2026-09-01.md`, `docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md` | non-matching | KMS/Gibbs-state uniqueness in an operator-algebraic or max-entropy sense; not the menu rule's specification |
+| `docs/work_history/repo/review_feedback/INVARIANT_FIRST_SEED_HARD_CORE_CYCLE18_NOTE_2026-07-14.md` | context-only | a "specification" in the law-type sense of the 2026-07 tournament, not a DLR specification |
+
+Target state after the matched-hit review: **open** — no note on `origin/main` states a DLR specification for the menu rule, an infinite-volume existence argument on the finite menu, a formation law on an infinite window, a row-sweep invariance theorem, or a transfer-matrix enclosure of a static strip statistic.

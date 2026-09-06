@@ -1,6 +1,6 @@
 {
- "edge_count": 11861,
- "node_count": 4761,
+ "edge_count": 11863,
+ "node_count": 4762,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -284,6 +284,10 @@
   },
   "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06": {
    "deps_hash": "e54933eecd76",
+   "out_degree": 2
+  },
+  "admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06": {
+   "deps_hash": "0447028c8504",
    "out_degree": 2
   },
   "admissibility_support_constrains_content_not_formation_site_bounded_theorem_note_2026-08-13": {

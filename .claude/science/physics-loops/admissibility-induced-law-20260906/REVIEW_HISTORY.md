@@ -26,3 +26,15 @@ Defects found and their disposition:
 Ranking (all four lenses): this block, amended, first; the record-matter formation-law lane second or third; the U(1) time-selection fork next; the gravity queue last. L3's V1–V5 reading: passes as upstream support/falsifier, not closure; T2 is the headline.
 
 Misses by the cheaper tier, recorded per the worker-tier rule: none of the four lenses found the general product-level proof (L1 reached arity ≤ 2; L4 searched 40,320 cube orders for a counterexample); the supervisor's Fable thread supplied it. No lens missed a defect the supervisor had found.
+
+## block 01 — V1-V5 (primary)
+
+Primary seat (Fable), 2026-09-06, after executing the runner and writing the note; where an answer differs from `GOAL.md`'s advance answer the difference is stated.
+
+- V1 (blocker named by a verdict?): agrees with `GOAL.md` — no `verdict_rationale` names this; the obstruction is the owner's 2026-08-26 sequencing gate (identify what the rule induces before any statistical bridge). The note is `trace_class: upstream_support` with consumers named (the parked bridge material, read-only; the record-matter formation-order supply; the Born-form lane); it closes nothing. Difference: none.
+- V2 (new?): agrees — the formation law as an object, B1, B2 with the single-site variation proof, the forest/plaquette corollary, the exact census, the six routes. Two additions not in `GOAL.md`'s list, found while executing: (a) the marginal reading's chain rule needs the conditional given ALL earlier records — given the recorded neighbors only it reproduces `μ` for 0 of 24 cycle4 orders, so that reading is non-local as well as window-dependent (E6b); (b) the `6 × 6` normalizer matrix `Z_2 = Φ²` has `det Φ = (p+q+4r)(p+q−2r)²(p−q)³`, rank 4 at `(3,1,2)` (not 6 as the contract expected) and 6 at `(5,2,4)`; the route needs only rank ≠ 1, which the symbolic minors give for every not-all-equal triple (E4c).
+- V3 (could the audit lane have found it?): agrees — the static half is standard machinery, cited and re-proved at scope; the classification needs the orbit structure and the `f_j` lemma. Difference: the `Φ` eigenvalue factorization is a further piece the audit lane does not have, and it corrects a number in the contract.
+- V4 (non-trivial?): agrees — B2 is a classification; B1 alone is the tool; the partition identity is a runner consistency line (D3). Difference: none. One honesty note: the cube8 combinatorial fact is weaker than it sounds — the last-formed site always has all three neighbors recorded, so `max_k |A_k| = 3` for all 40,320 orders; the note says so.
+- V5 (prior comparison of a formation-ordered law with a static law?): agrees — none landed or archived; the binary note is static-only and `R136` is the static reading in floats. Difference: none.
+
+Could-nots recorded in `RESULTS.md`: the raw `sympy.solve` of the cycle4 absence-factor system on the declared configuration set exceeded the 10-minute line (the runner executes the exact two-step route instead); the general converse of Theorem A and the infinite-volume specification are open by contract.

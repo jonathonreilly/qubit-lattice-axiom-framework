@@ -242,3 +242,226 @@ def family_b(checks: Checks) -> None:
                 if law[rho] != p0:
                     ok = False
     checks.check("B4", ok, "p_0 = (1/6) prod K equals the end-swept path formation law, W = 2, 3, both triples")
+
+
+# ==================================================================== family C
+def cube_edges():
+    return tuple((a, b) for a in range(8) for b in range(a + 1, 8) if bin(a ^ b).count("1") == 1)
+
+
+CUBE_EDGES = cube_edges()
+# site index i = x + 2y + 4z; the exterior neighbor along axis a carries P(+e_a): menu 0, 2, 4
+CUBE_EXTERIOR = {x: (0, 2, 4) for x in range(8)}
+CYCLE_EDGES = ((0, 1), (1, 2), (2, 3), (3, 0))
+CYCLE_EXTERIOR = {x: (0, 3) for x in range(4)}
+
+
+def neighbors_of(edges, n):
+    N = {i: [] for i in range(n)}
+    for i, j in edges:
+        N[i].append(j)
+        N[j].append(i)
+    return {i: tuple(sorted(v)) for i, v in N.items()}
+
+
+def static_table(n, edges, exterior, phi):
+    """Static weight of every configuration, indexed by the base-6 code with site 0 most significant."""
+    out = []
+    for v in product(range(M), repeat=n):
+        out.append(prod(phi[v[i]][v[j]] for i, j in edges) * prod(phi[v[x]][o] for x in range(n) for o in exterior[x]))
+    return out
+
+
+def subwindow_law(delta, edges, exterior, phi, comp_sites, comp_vals, n):
+    """mu_Delta^{omega'}: internal edges of Delta, exterior records of Lambda at Delta, records of Lambda\\Delta adjacent to Delta."""
+    N = neighbors_of(edges, n)
+    dpos = {x: i for i, x in enumerate(delta)}
+    internal = [(dpos[a], dpos[b]) for a, b in edges if a in dpos and b in dpos]
+    if mut("spec_face_wrong_subwindow") and len(delta) == 4:
+        internal = [(0, 1), (1, 2), (2, 3), (3, 0)]
+    cval = dict(zip(comp_sites, comp_vals))
+    ext = {i: [] for i in range(len(delta))}
+    for x in delta:
+        if not mut("spec_conditional_ignores_exterior"):
+            ext[dpos[x]].extend(exterior[x])
+        for y in N[x]:
+            if y in cval:
+                ext[dpos[x]].append(cval[y])
+        if mut("spec_conditional_two_hop"):
+            for y in N[x]:
+                for z in N[y]:
+                    if z in cval and z not in N[x] and z != x:
+                        ext[dpos[x]].append(cval[z])
+    law = []
+    for u in product(range(M), repeat=len(delta)):
+        law.append(prod(phi[u[a]][u[b]] for a, b in internal) * prod(phi[u[i]][o] for i in range(len(delta)) for o in ext[i]))
+    return law
+
+
+def conditional_matches(n, edges, exterior, phi, delta, table):
+    """C1 on one sub-window (Delta = the leading sites 0..k-1 in index order): every complement configuration."""
+    k = len(delta)
+    comp = tuple(range(k, n))
+    block = M ** (n - k)
+    ok = True
+    N = neighbors_of(edges, n)
+    adjacent = tuple(y for y in comp if any(y in N[x] for x in delta))
+    groups: dict = {}
+    for c_code, cv in enumerate(product(range(M), repeat=n - k)):
+        full = [table[d * block + c_code] for d in range(M ** k)]
+        sub = subwindow_law(delta, edges, exterior, phi, comp, cv, n)
+        sf, ss = sum(full), sum(sub)
+        if any(full[d] * ss != sub[d] * sf for d in range(M ** k)):
+            ok = False
+            break
+        key = tuple(cv[comp.index(y)] for y in adjacent)
+        if key in groups:
+            g = groups[key]
+            if any(full[d] * g[1] != g[0][d] * sf for d in range(M ** k)):
+                ok = False
+                break
+        else:
+            groups[key] = (full, sf)
+    return ok, len(groups), len(comp) - len(adjacent)
+
+
+def family_c(checks: Checks) -> None:
+    res = {}
+    for triple in TRIPLES:
+        phi = phi_table(triple)
+        tab = static_table(8, CUBE_EDGES, CUBE_EXTERIOR, phi)
+        res[("cube", triple)] = {k: conditional_matches(8, CUBE_EDGES, CUBE_EXTERIOR, phi, tuple(range(k)), tab) for k in (4, 2, 1)}
+        del tab
+        tab = static_table(4, CYCLE_EDGES, CYCLE_EXTERIOR, phi)
+        res[("cycle", triple)] = {k: conditional_matches(4, CYCLE_EDGES, CYCLE_EXTERIOR, phi, tuple(range(k)), tab) for k in (2, 1)}
+    face = all(res[("cube", t)][4][0] for t in TRIPLES)
+    checks.check("C1", face, "cube face (sites 0-3): conditional = mu_Delta^{omega'} for all 6^4 complements, both triples")
+    checks.check("C2", all(res[("cube", t)][2][0] for t in TRIPLES), "cube edge (sites 0,1): all 6^6 complements, both triples")
+    checks.check("C3", all(res[("cube", t)][1][0] for t in TRIPLES), "cube site 0: all 6^7 complements, both triples")
+    checks.check("C4", all(res[("cycle", t)][2][0] for t in TRIPLES), "plaquette edge with exterior (P(e_x), P(-e_y)): all 36 complements, both triples")
+    checks.check("C5", all(res[("cycle", t)][1][0] for t in TRIPLES), "plaquette site with exterior: all 216 complements, both triples")
+    grp = res[("cube", TRIPLES[0])]
+    fr = grp[2][1] == 6 ** 4 and grp[2][2] == 2 and grp[1][1] == 6 ** 3 and grp[1][2] == 3 and res[("cycle", TRIPLES[0])][1][2] == 1
+    checks.check("C6", fr, "finite range: cube edge 1296 adjacent-record classes (2 non-adjacent sites), site 216 classes (3), plaquette site (1)")
+
+
+# ==================================================================== family D
+def strip_rows(W):
+    return list(product(range(M), repeat=W))
+
+
+def row_law_p0(rows, K):
+    return [Fraction(1, 6) * prod((K[r[j - 1]][r[j]] for j in range(1, len(r))), start=Fraction(1)) for r in rows]
+
+
+def row_kernel_definition(rows, phi, drop_left=False):
+    W = len(rows[0])
+    out = []
+    for b in rows:
+        line = []
+        for a in rows:
+            w = Fraction(1)
+            for j in range(W):
+                rec = (b[j],) + (() if (j == 0 or drop_left) else (a[j - 1],))
+                w *= rule(a[j], rec, phi)
+            line.append(w)
+        out.append(line)
+    return out
+
+
+def row_kernel_formula(rows, K, wrong_den=False):
+    W = len(rows[0])
+    K2 = [[sum(K[a][s] * K[s][b] for s in range(M)) for b in range(M)] for a in range(M)]
+    out = []
+    for b in rows:
+        line = []
+        for a in rows:
+            w = K[b[0]][a[0]]
+            for j in range(1, W):
+                den = K2[a[j - 1]][a[j]] if wrong_den else K2[a[j - 1]][b[j]]
+                w *= K[a[j - 1]][a[j]] * K[a[j]][b[j]] / den
+            line.append(w)
+        out.append(line)
+    return out
+
+
+def invariant(p0, P) -> int:
+    """Number of row states alpha with (p0 P)(alpha) != p0(alpha)."""
+    if mut("invariance_forced_true"):
+        return 0
+    R = len(p0)
+    return sum(1 for k in range(R) if sum(p0[i] * P[i][k] for i in range(R)) != p0[k])
+
+
+def strip_edges(W, n):
+    edges = []
+    for i in range(n):
+        for j in range(W):
+            if j + 1 < W:
+                edges.append((i * W + j, i * W + j + 1))
+            if i + 1 < n:
+                edges.append((i * W + j, (i + 1) * W + j))
+    return tuple(edges)
+
+
+def family_d(checks: Checks, report: dict) -> None:
+    d1 = d2 = d3 = d4 = True
+    for triple in TRIPLES:
+        phi = phi_table(triple)
+        K = one_edge_kernel(phi)
+        K2 = [[sum(K[a][s] * K[s][b] for s in range(M)) for b in range(M)] for a in range(M)]
+        for W in (2, 3):
+            rows = strip_rows(W)
+            R = len(rows)
+            p0 = row_law_p0(rows, K)
+            P = row_kernel_definition(rows, phi, drop_left=mut("row_kernel_drops_left_neighbor"))
+            Pf = row_kernel_formula(rows, K, wrong_den=mut("row_kernel_formula_wrong_denominator"))
+            d1 = d1 and P == Pf and all(sum(P[i]) == 1 for i in range(R))
+            d2 = d2 and invariant(p0, P) == 0
+            report[("P", triple, W)] = (rows, p0, P)
+            joint = {(i, k): p0[i] * P[i][k] for i in range(R) for k in range(R)}
+            for j in range(W):
+                jj = j + 1 if (mut("pair_law_wrong_column") and j + 1 < W) else j
+                vert = {}
+                for (i, k), w in joint.items():
+                    key = (rows[i][j], rows[k][jj])
+                    vert[key] = vert.get(key, Fraction(0)) + w
+                d3 = d3 and all(vert[(a, b)] == Fraction(1, 6) * K[a][b] for a in range(M) for b in range(M))
+                if j >= 1:
+                    hor = {}
+                    for (i, k), w in joint.items():
+                        key = (rows[k][j - 1], rows[k][j])
+                        hor[key] = hor.get(key, Fraction(0)) + w
+                    d3 = d3 and all(hor[(a, b)] == Fraction(1, 6) * K[a][b] for a in range(M) for b in range(M))
+            # the telescoping premise on the strip: joint law of (alpha_0, beta_1) is (1/6) K^2
+            if W >= 2:
+                diag = {}
+                for (i, k), w in joint.items():
+                    key = (rows[k][0], rows[i][1])
+                    diag[key] = diag.get(key, Fraction(0)) + w
+                d3 = d3 and all(diag[(a, b)] == Fraction(1, 6) * K2[a][b] for a in range(M) for b in range(M))
+            # direct finite-strip formation law from block 01's definition versus p0 P^(n-1)
+            for n in ((2, 3) if W == 2 else (2,)):
+                edges = strip_edges(W, n)
+                nbrs = neighbors_of(edges, W * n)
+                law = formation_law_on_graph(W * n, nbrs, tuple(range(W * n)), phi, all_neighbors=mut("direct_strip_law_mismatch"))
+                marg = [dict() for _ in range(n)]
+                pair = {}
+                for v, w in law.items():
+                    for i in range(n):
+                        key = v[i * W:(i + 1) * W]
+                        marg[i][key] = marg[i].get(key, Fraction(0)) + w
+                    key = (v[(n - 2) * W:(n - 1) * W], v[(n - 1) * W:])
+                    pair[key] = pair.get(key, Fraction(0)) + w
+                law_i = list(p0)
+                chain_rows = [law_i]
+                for i in range(1, n):
+                    law_i = [sum(law_i[a] * P[a][k] for a in range(R)) for k in range(R)]
+                    chain_rows.append(law_i)
+                for i in range(n):
+                    d4 = d4 and all(marg[i][rows[k]] == chain_rows[i][k] for k in range(R))
+                d4 = d4 and all(pair[(rows[a], rows[k])] == chain_rows[n - 2][a] * P[a][k] for a in range(R) for k in range(R))
+    checks.check("D1", d1, "E2 row kernel from the formula equals the kernel from the definition entrywise, W = 2, 3, both triples; rows sum to one")
+    checks.check("D2", d2, "E3: p_0 P = p_0 exactly for W = 2, 3, both triples (all 6^W row states)")
+    checks.check("D3", d3, "E4: every vertical and horizontal nearest-neighbor pair has law (1/6) K; the diagonal pair (alpha_0, beta_1) has law (1/6) K^2")
+    checks.check("D4", d4, "direct finite-strip formation law (W=2: n=2,3; W=3: n=2) = p_0 P^(n-1) on every row marginal and row-pair joint")

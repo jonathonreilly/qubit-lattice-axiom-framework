@@ -546,7 +546,7 @@ normalizer history so that the local statistics of records agree with the
 static specification. Finally, the marginal reading exists and coincides." The
 gap in each: simultaneous formation needs a joint conditional for several
 sites that the axiom does not state (its terminal obligation is a supplied
-multi-site rule — named, not closed here); the infinite-volume claim is a
+multi-site rule — named, not discharged here); the infinite-volume claim is a
 statement this note does not make in either direction (the limit of `μ_σ`
 along growing windows is the next block's object, and B5's exact order
 dependence on every plaquette is a finite fact the limit must contend with);

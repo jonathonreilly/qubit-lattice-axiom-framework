@@ -904,3 +904,334 @@ def family_d(checks: Checks, report: dict) -> None:
         if any(law[v] * normalizer_product(edges, n, phi_a, order, v) != Fraction(static_weight(v, edges, phi_a), ZWa) * ZWa for v in configs):
             fails += 1
     checks.check("D12", fails > 0 and any(phi_a[a][b] != phi_a[b][a] for a in range(M) for b in range(M)), f"asymmetric pair weight on path3: the identity fails for {fails} of 6 orders")
+
+
+# ==================================================================== family E
+PLAQUETTE_POS = {0: (0, 0, 0), 1: (1, 0, 0), 2: (1, 1, 0), 3: (0, 1, 0)}
+PATH3_POS = {0: (0, 0, 0), 1: (1, 0, 0), 2: (2, 0, 0)}
+
+
+def absence_factor(s, d, A_, B_, C_):
+    dd = sum(x * y for x, y in zip(MENU_VECTORS[s], d))
+    return A_ if dd == 1 else (B_ if dd == -1 else C_)
+
+
+def absence_ratio_equations(name, pos, order, phis, absym, ZW):
+    """Equations Z_W * prod alpha_k - prod Z_k = 0 for mu_sigma = mu on the declared configuration set."""
+    edges, n = WINDOWS[name], SIZES[name]
+    N = neighbors(edges, n)
+    A_, B_, C_ = absym
+    configs = set()
+    for s in range(M):
+        for t in range(M):
+            v = [REF] * n
+            v[order[0]], v[order[1]] = s, t
+            configs.add(tuple(v))
+    for i in range(n):
+        for s in range(M):
+            v = [REF] * n
+            v[i] = s
+            configs.add(tuple(v))
+    eqs = set()
+    for v in sorted(configs):
+        formed = set()
+        num = sp.Integer(1)
+        den = sp.Integer(1)
+        for x in order:
+            rec = [y for y in N[x] if y in formed]
+            dirs = [tuple(pos[y][i] - pos[x][i] for i in range(3)) for y in N[x] if y not in formed]
+            num *= sp.Mul(*[absence_factor(v[x], d, A_, B_, C_) for d in dirs])
+            den *= sum(sp.Mul(*[phis[s][v[y]] for y in rec]) * sp.Mul(*[absence_factor(s, d, A_, B_, C_) for d in dirs]) for s in range(M))
+            formed.add(x)
+        e = sp.expand(ZW * num - den)
+        if e != 0:
+            eqs.add(e)
+    return sorted(eqs, key=sp.default_sort_key), sorted(configs)
+
+
+def formation_law_absence(name, pos, phi, order, abc):
+    edges, n = WINDOWS[name], SIZES[name]
+    N = neighbors(edges, n)
+    law = {}
+    for v in product(range(M), repeat=n):
+        num, den, formed = 1, 1, set()
+        for x in order:
+            rec = [y for y in N[x] if y in formed]
+            dirs = [tuple(pos[y][i] - pos[x][i] for i in range(3)) for y in N[x] if y not in formed]
+            terms = []
+            for s in range(M):
+                t = 1
+                for y in rec:
+                    t *= phi[s][v[y]]
+                for d in dirs:
+                    t *= absence_factor(s, d, *abc)
+                terms.append(t)
+            num *= terms[v[x]]
+            den *= sum(terms)
+            formed.add(x)
+        law[v] = Fraction(num, den)
+    return law
+
+
+def static_law(name, phi):
+    edges, n = WINDOWS[name], SIZES[name]
+    configs = list(product(range(M), repeat=n))
+    ZW = sum(static_weight(v, edges, phi) for v in configs)
+    return {v: Fraction(static_weight(v, edges, phi), ZW) for v in configs}
+
+
+def family_e(checks: Checks, report: dict) -> None:
+    phi = phi_table(TRIPLES[0])
+    r_x = rule_numerators(range(M), (0,), phi)
+    r_y = rule_numerators(range(M), (2,), phi)
+    phic = phi_table(CONSTANT_TRIPLE)
+    checks.check(
+        "E1",
+        [Fraction(t, sum(r_x)) for t in r_x] != [Fraction(t, sum(r_y)) for t in r_y]
+        and rule_numerators(range(M), (0,), phic) == rule_numerators(range(M), (2,), phic),
+        "route 1: the (3,1,2) rule varies between the conditions P(+e_x) and P(+e_y) on the menu; the constant rule does not",
+    )
+    psi_bad = (2, 1, 1, 1, 1, 1)
+    breaks = any(psi_bad[rotate_menu(r, a)] != psi_bad[a] for r in ROTATIONS for a in range(M))
+    ranks = []
+    for triple in TRIPLES:
+        ph = phi_table(CONSTANT_TRIPLE if mut("psi_rank_deficient") else triple)
+        base = [ph[s][0] * ph[s][0] for s in range(M)]
+        rows = []
+        for b in range(M):
+            for c in range(M):
+                row = [ph[s][b] * ph[s][c] - base[s] for s in range(M)]
+                if any(row):
+                    rows.append(row)
+        ranks.append(bareiss_rank(rows, M) if rows else 0)
+    checks.check("E2", breaks and ranks == [6, 6], f"route 2: a non-constant site weight breaks covariance; 'Z_2 constant' as a linear system in psi has rank {ranks} at the declared triples")
+    rots = ROTATIONS[:1] if mut("absence_blind_nonconstant_passes") else ROTATIONS
+    rows = []
+    for r in rots:
+        for a in range(M):
+            row = [0] * M
+            row[a] += 1
+            row[rotate_menu(r, a)] -= 1
+            if any(row):
+                rows.append(row)
+    checks.check("E3", nullity_of_equations(rows, M) == 1, "route 3: a direction-blind absence factor phi_abs(s) is forced constant by covariance (solution space dimension 1)")
+    P_, Q_, R_, A_, B_, C_ = sp.symbols("p q r a b c", positive=True)
+    phis = [[(P_, Q_, R_)[orbit(a, b)] for b in range(M)] for a in range(M)]
+    ZW3 = sp.expand(sum(sp.Mul(*[phis[v[i]][v[j]] for i, j in WINDOWS["path3"]]) for v in product(range(M), repeat=3)))
+    eqs, _ = absence_ratio_equations("path3", PATH3_POS, (0, 2, 1), phis, (A_, B_, C_), ZW3)
+    eqs1 = sorted({sp.expand(e.subs({R_: 1, C_: 1})) for e in eqs} - {sp.Integer(0)}, key=sp.default_sort_key)
+    G = sp.groebner(eqs1, A_, B_, P_, Q_, order="lex")
+    u = (P_ + Q_ + 4) ** 2
+    contained = all(G.contains(sp.expand(g * u)) for g in (A_ - 1, B_ - 1, (P_ - Q_) ** 2, (Q_ - 1) ** 3))
+    solutions = [{A_: 1, B_: 1, P_: 1, Q_: 1}]
+    if mut("absence_extension_solution_forged"):
+        solutions.append({A_: 2, B_: 1, P_: 3, Q_: 1})
+    verified = True
+    for sol in solutions:
+        abc = (int(sol[A_]), int(sol[B_]), 1)
+        trip = (int(sol[P_]), int(sol[Q_]), 1)
+        ph = phi_table(trip)
+        verified = verified and formation_law_absence("path3", PATH3_POS, ph, (0, 2, 1), abc) == static_law("path3", ph)
+    checks.check(
+        "E4a",
+        len(eqs1) >= 8 and contained and verified,
+        f"route 4 on path3 order (0,2,1): {len(eqs1)} equations in (a,b,p,q) after r=c=1; the Groebner basis contains (a-1)u, (b-1)u, (p-q)^2 u, (q-1)^3 u with u=(p+q+4)^2>0, so the solution set is a=b=c, p=q=r; verified on every configuration",
+    )
+    alpha0 = [sp.Mul(absence_factor(s, (1, 0, 0), A_, B_, C_), absence_factor(s, (0, 1, 0), A_, B_, C_)) for s in range(M)]
+    marg = {}
+    for v in product(range(M), repeat=4):
+        marg[v[0]] = marg.get(v[0], 0) + sp.Mul(*[phis[v[i]][v[j]] for i, j in WINDOWS["cycle4"]])
+    uniform = len({sp.expand(m) for m in marg.values()}) == 1
+    sol_abc = sp.solve([alpha0[s] - alpha0[0] for s in range(1, M)], [A_, B_], dict=True)
+    reduced_ok = sol_abc == [{A_: C_, B_: C_}]
+    ZW4 = sp.expand(sum(marg.values()))
+    eqs4, _ = absence_ratio_equations("cycle4", PLAQUETTE_POS, (0, 1, 2, 3), phis, (C_, C_, C_), ZW4)
+    eqs4 = sorted({sp.expand(e.subs({R_: 1, C_: 1})) for e in eqs4} - {sp.Integer(0)}, key=sp.default_sort_key)
+    sol_pq = sp.solve(eqs4, [P_, Q_], dict=True)
+    ph1 = phi_table((1, 1, 1))
+    verified4 = formation_law_absence("cycle4", PLAQUETTE_POS, ph1, (0, 1, 2, 3), (1, 1, 1)) == static_law("cycle4", ph1)
+    ronly_same = formation_law_absence("cycle4", PLAQUETTE_POS, phi, (0, 1, 2, 3), (7, 7, 7)) == formation_law(WINDOWS["cycle4"], 4, phi, (0, 1, 2, 3))
+    checks.check(
+        "E4b",
+        uniform and reduced_ok and sol_pq == [{P_: 1, Q_: 1}] and verified4 and ronly_same,
+        f"route 4 on cycle4 order (0,1,2,3): the static site marginal is uniform, the first-formed site's marginal (ac,bc,ac,bc,c^2,c^2) forces a=b=c; a constant absence factor cancels; the reduced system ({len(eqs4)} equations) gives p=q=r; verified on every configuration",
+    )
+    ranks2 = []
+    for triple in TRIPLES:
+        ph = phi_table(triple)
+        Z2 = [[sum(ph[s][b] * ph[s][c] for s in range(M)) for c in range(M)] for b in range(M)]
+        if mut("z2_rank_one"):
+            Z2 = [[Z2[b][0] * Z2[0][c] for c in range(M)] for b in range(M)]
+        ranks2.append(bareiss_rank(Z2, M))
+    Z2s = {}
+    for b in range(M):
+        for c in range(M):
+            Z2s.setdefault(orbit(b, c), sp.expand(sum(phis[s][b] * phis[s][c] for s in range(M))))
+    minor1 = sp.factor(Z2s[PAR] ** 2 - Z2s[ANTI] ** 2)
+    minor2 = sp.factor(Z2s[PAR] ** 2 - Z2s[ORTH] ** 2)
+    m1 = sp.expand(minor1 - (P_ - Q_) ** 2 * (P_ ** 2 + 2 * P_ * Q_ + Q_ ** 2 + 8 * R_ ** 2)) == 0
+    m2 = sp.expand(minor2 - ((P_ - R_) ** 2 + (Q_ - R_) ** 2) * (P_ ** 2 + 2 * P_ * R_ + Q_ ** 2 + 2 * Q_ * R_ + 6 * R_ ** 2)) == 0
+    Phi = sp.Matrix(6, 6, lambda a, b: phis[a][b])
+    detPhi = sp.factor(Phi.det())
+    det_ok = sp.expand(detPhi - (P_ + Q_ + 4 * R_) * (P_ + Q_ - 2 * R_) ** 2 * (P_ - Q_) ** 3) == 0
+    checks.check("E4c", ranks2 == [4, 6] and det_ok and m1 and m2, f"route 4 (any factorized absence weight): Z_2 = Phi^2 has rank {ranks2} at (3,1,2), (5,2,4) (det Phi = (p+q+4r)(p+q-2r)^2(p-q)^3, zero at 3+1-4); the two 2x2 minors hold symbolically, so rank >= 2 > 1 whenever (p,q,r) are not all equal")
+    diffs = {}
+    for triple in TRIPLES + ((2, 3, 5),):
+        ph = phi_table(triple)
+        mu = static_law("cycle4", ph)
+        configs = list(mu)
+        acc = {v: Fraction(0) for v in configs}
+        for order in permutations(range(4)):
+            law = dict(mu) if mut("order_mixture_equals_static") else formation_law(WINDOWS["cycle4"], 4, ph, order)
+            for v in configs:
+                acc[v] += law[v]
+        diffs[triple] = max(abs(acc[v] / 24 - mu[v]) for v in configs)
+    report["mixture"] = diffs
+    checks.check("E5", all(d > 0 for d in diffs.values()) and diffs[(2, 3, 5)] == Fraction(1585133, 10007780364), f"route 5: uniform mixture over the 24 orders of cycle4 differs from mu; max |avg - mu| = {diffs[TRIPLES[0]]} at (3,1,2), {diffs[TRIPLES[1]]} at (5,2,4); control (2,3,5) = 1585133/10007780364")
+    mu_p = static_law("path3", phi)
+    mu_c = static_law("cycle4", phi)
+
+    def one_nbr_cond(mu, n):
+        out = {}
+        for t in range(M):
+            acc = [Fraction(0)] * M
+            for v, w in mu.items():
+                if v[1] == t:
+                    acc[v[0]] += w
+            tot = sum(acc)
+            out[t] = tuple(x / tot for x in acc)
+        return out
+
+    rule_one = {t: tuple(Fraction(x, sum(rule_numerators(range(M), (t,), phi))) for x in rule_numerators(range(M), (t,), phi)) for t in range(M)}
+    cond_p = one_nbr_cond(mu_p, 3)
+    cond_c = dict(cond_p) if mut("marginal_reading_is_fixed_rule") else one_nbr_cond(mu_c, 4)
+    expected_c = (Fraction(219, 866), Fraction(71, 866)) + (Fraction(72, 433),) * 4
+    checks.check("E6a", cond_p == rule_one and cond_c != rule_one and cond_c[0] == expected_c and rule_one[0] == (Fraction(1, 4), Fraction(1, 12)) + (Fraction(1, 6),) * 4, "route 6: the static one-neighbor conditional equals the rule on path3 but not on cycle4 (219/866, 71/866, 72/433 x4 against 1/4, 1/12, 1/6 x4)")
+    configs4 = list(mu_c)
+    marginals = {}
+    for mask in range(16):
+        S = tuple(i for i in range(4) if mask >> i & 1)
+        acc = {}
+        for v, w in mu_c.items():
+            key = tuple(v[i] for i in S)
+            acc[key] = acc.get(key, Fraction(0)) + w
+        marginals[S] = acc
+    N4 = neighbors(WINDOWS["cycle4"], 4)
+
+    def chain_product(order, v, condition_on_all_records, break_last):
+        prob = Fraction(1)
+        formed = []
+        for k, x in enumerate(order):
+            E_set = tuple(sorted(formed)) if condition_on_all_records else tuple(sorted(y for y in N4[x] if y in formed))
+            if break_last and k == len(order) - 1:
+                A = tuple(sorted(y for y in N4[x] if y in formed))
+                nums = rule_numerators(range(M), tuple(v[y] for y in A), phi)
+                prob *= Fraction(nums[v[x]], sum(nums))
+            else:
+                S_with = tuple(sorted(E_set + (x,)))
+                prob *= marginals[S_with][tuple(v[i] for i in S_with)] / marginals[E_set][tuple(v[i] for i in E_set)]
+            formed.append(x)
+        return prob
+
+    chain_all = all(chain_product(order, v, True, mut("marginal_chain_rule_broken")) == mu_c[v] for order in permutations(range(4)) for v in configs4)
+    orders_nbr_only = sum(1 for order in permutations(range(4)) if all(chain_product(order, v, False, False) == mu_c[v] for v in configs4))
+    checks.check("E6b", chain_all and orders_nbr_only == 0, f"route 6: with the static conditional given ALL earlier records the chain rule gives mu_sigma = mu for all 24 orders of cycle4; given only the recorded neighbors it does so for {orders_nbr_only} of 24")
+
+
+# ==================================================================== family F
+FENCES = (
+    "This note selects no physical rule, no coupling value, no formation order and no reading of the axioms; the records-only reading is a named premise and its two alternatives are computed.",
+    "No statement is made about the infinite lattice beyond naming the specification; existence or uniqueness of an infinite-volume law is outside this note, and this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+    "This note does not derive, explain, bear on or decide the parked statistical bridge, the Born form, or the gravity lane's action; the 2026-08-26 gate measurement is a float measurement on one fixture, cited by path only.",
+    "Every negative sentence in this note is an exact finite statement on the declared windows and menu or a corollary of Theorem B; none is a route no-go beyond that scope.",
+)
+FORBIDDEN = (
+    "selects the physical rule", "derives the Born", "explains the gate", "bears on the gate",
+    "infinite-lattice law", "the framework's action is", "the order is physical", "certified",
+    "closed the gate", "axiom is amended", "fires wake condition",
+    "distinct orders give distinct laws", "witnesses the variation clause",
+)
+CLAIM_INJECTIONS = {
+    "claim_rule_selected": "This note selects the physical rule.",
+    "claim_born_derived": "This note derives the Born form.",
+    "claim_gate_explained": "This note explains the gate measurement.",
+    "claim_infinite_volume": "The infinite-lattice law is identified here.",
+    "claim_action_identified": "The framework's action is the static action.",
+    "claim_axiom_amended": "The Admissibility axiom is amended by this note.",
+    "claim_order_physical": "Therefore the order is physical.",
+}
+SCAN_MARKER = "float-scan-marker-line"
+
+
+def family_f(checks: Checks, note_text: str) -> None:
+    text = note_text
+    for name, phrase in CLAIM_INJECTIONS.items():
+        if mut(name):
+            text = text + "\n" + phrase
+    flat = normalize_text(text)
+    checks.check("F1", all(f in flat for f in FENCES), "the note carries the four fence sentences verbatim")
+    hits = [ph for ph in FORBIDDEN if ph in flat.lower()]
+    checks.check("F2", not hits, f"the note contains no forbidden phrase (hits: {hits})")
+    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
+    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
+    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
+    conversion = "flo" + "at("  # float-scan-marker-line
+    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln]
+    checks.check("F3", not bad and len(scan) > 500, f"the runner source has no floating-point literal and no floating-point conversion call ({len(bad)} hits)")
+
+
+# ==================================================================== family G
+N5_LINES = (
+    "per_element: executed — every menu value, every configuration of path3/P4/star4/cycle4, every order, both triples, exact",
+    "per_site: executed — the full conditional at every site of every declared window; cube8 on the declared configuration family",
+    "per_mode: checked and not executed — the theorem has no spectral or normal-mode decomposition; Phi's eigenvalue factorization is symbolic",
+    "per_block: executed — every formation order's normalizer history block by block; cube8 orders combinatorially (40320) and six declared orders exactly",
+    "lattice_wide: checked and not executed — finite windows only; the infinite-volume specification is named, not computed",
+)
+
+
+def family_g(checks: Checks) -> None:
+    for line in N5_LINES:
+        print(line)
+    checks.check("G1", all(len(l) >= 40 for l in N5_LINES) and len(N5_LINES) == 5, "the five N5 resolution lines are printed (each >= 40 characters)")
+
+
+# ======================================================================= main
+def main(argv) -> int:
+    global ACTIVE_MUTATION
+    if "--list-mutations" in argv:
+        for name, fam in MUTATION_GATE.items():
+            print(f"{name} {fam}")
+        return 0
+    if "--mutation" in argv:
+        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
+        if ACTIVE_MUTATION not in MUTATION_GATE:
+            print(f"unknown mutation {ACTIVE_MUTATION}")
+            return 2
+    checks = Checks()
+    note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
+    axiom_text = AXIOM_PATH.read_text(encoding="utf-8") if AXIOM_PATH.is_file() else ""
+    print("AUDIT_INPUT_PATHS:")
+    for p in AUDIT_INPUT_PATHS:
+        print(f"  {p}")
+    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
+    print("scope: finite windows path3/P4/star4/cycle4/cube8, six-projector menu, exact arithmetic; no infinite-volume claim")
+    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
+    report: dict = {}
+    family_a(checks, note_text, axiom_text)
+    family_b(checks)
+    family_c(checks)
+    family_d(checks, report)
+    family_e(checks, report)
+    family_f(checks, note_text)
+    family_g(checks)
+    if ACTIVE_MUTATION:
+        observed = "".join(sorted(set(checks.failed_families))) or "none"
+        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
+        print(f"mutation_family_observed: {observed}")
+    failed = checks.finish()
+    return 1 if failed else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv[1:]))

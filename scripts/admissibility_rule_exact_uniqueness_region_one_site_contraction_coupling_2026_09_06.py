@@ -388,10 +388,30 @@ def region_certificate(line_sym, u: Fraction, v: Fraction) -> int:
     return count
 
 
+def difference_numerators(line_sym, eta, ta, tb):
+    """The numerator polynomials of a_s(t) - b_s(t), s in M, for the shell eta and the pair (ta, tb) on the line (integer monomials)."""
+    phi = [[line_sym[orbit(x, y)] for y in range(M)] for x in range(M)]
+    base = [sp.Integer(1)] * M
+    for s in range(M):
+        for e in eta:
+            base[s] = base[s] * phi[s][e]
+    wa = [base[s] * phi[s][ta] for s in range(M)]
+    wb = [base[s] * phi[s][tb] for s in range(M)]
+    Za, Zb = sum(wa), sum(wb)
+    return [sp.Poly(sp.expand(wa[s] * Zb - wb[s] * Za), T, domain="QQ") for s in range(M)]
+
+
+def sign_constant(line_sym, eta, ta, tb, a: Fraction, b: Fraction) -> bool:
+    """No difference a_s - b_s changes sign on [a, b]: each nonzero numerator has no root there (Sturm), so the sign pattern at a
+    holds on the whole interval and the signed sum equals the total variation on [a, b]."""
+    return all(d.is_zero or d.count_roots(inf=rat(a), sup=rat(b)) == 0 for d in difference_numerators(line_sym, eta, ta, tb))
+
+
 def competitor_sweep(line_sym, a: Fraction, b: Fraction, displayed: sp.Poly):
-    """On the isolating interval [a, b] of a threshold: each of the 252 x 15 shell-multiset-and-pair choices is either certified
-    below (6 TV - 1 < 0 on [a, b] by the endpoint values and the Lipschitz constant 6/a) or has the same rational function as the
-    displayed maximizer (with its sign pattern at a); returns (certified, identical, distinct)."""
+    """On the isolating interval [a, b] of a threshold: each of the 252 x 15 shell-multiset-and-pair choices is either verified
+    below (6 TV - 1 < 0 on [a, b] by the endpoint values and the Lipschitz constant 6/a) or is a copy of the displayed maximizer:
+    the same rational function with its sign pattern at a, that sign pattern constant on [a, b] (so its total variation equals the
+    displayed function on all of [a, b]); returns (verified, copies, distinct)."""
     tra, trb = line_triple(line_sym, a), line_triple(line_sym, b)
     certified = identical = distinct = 0
     for eta in SHELL_MULTISETS:
@@ -405,7 +425,7 @@ def competitor_sweep(line_sym, a: Fraction, b: Fraction, displayed: sp.Poly):
             num, _den = sp.fraction(sp.cancel(6 * tv_symbolic(line_sym, eta, t, t2, signs) - 1))
             Pq = sp.Poly(num, T, domain="QQ")
             target = displayed + sp.Poly(T, T, domain="QQ") if mut("competitor_identity_forged") else displayed
-            if Pq.degree() == target.degree() and (Pq * target.LC() - target * Pq.LC()).is_zero:
+            if Pq.degree() == target.degree() and (Pq * target.LC() - target * Pq.LC()).is_zero and sign_constant(line_sym, eta, t, t2, a, b):
                 identical += 1
             else:
                 distinct += 1
@@ -553,7 +573,7 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
     checks.check("C10", all(ln[k] for ln in lines2 for k in keys), "G5: second crossing per line at its bracket; numerator = the displayed polynomial; one positive root isolated to width < 10^-20; endpoint suprema; sign change")
     sweeps = [competitor_sweep(spec[1], ln["interval"][0], ln["interval"][1], ln["P"]) for spec, ln in zip(LINES + LINES2, lines + lines2)]
     copies = tuple(s[1] for s in sweeps)
-    checks.check("C11", all(s[2] == 0 and s[0] + s[1] == len(SHELL_MULTISETS) * len(PAIRS) for s in sweeps) and copies == COPIES_EXPECTED, f"G5: six isolating intervals: every 252 x 15 choice verified below (Lipschitz) or identical to the displayed maximizer (copies {list(copies)})")
+    checks.check("C11", all(s[2] == 0 and s[0] + s[1] == len(SHELL_MULTISETS) * len(PAIRS) for s in sweeps) and copies == COPIES_EXPECTED, f"G5: six isolating intervals: every 252 x 15 choice verified below (Lipschitz) or a sign-constant copy of the displayed maximizer ({list(copies)})")
     regions = []
     for spec, ln1, ln2 in zip(LINES, lines, lines2):
         lo, hi = sorted([ln1["interval"], ln2["interval"]])

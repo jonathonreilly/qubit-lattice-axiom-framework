@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py
-runner_sha256: 953de23b62c6388103db089cb3b49da12adf2607119166319bd02ec1655e06d5
-input_fingerprint_sha256: 19543425c15e3b6662b5d805877a51f304578089fd95dd6884a0a92a7d131d83
+runner_sha256: a2da7fbeb2cda37efd444da11c4c2e0f18798a91296478844185f44b48e87843
+input_fingerprint_sha256: be51d2ec3a054cd1a81d6ad9579422123a8f55c842168cd3a5926b2259941ce6
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 86.38
+elapsed_sec: 87.65
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -43,7 +43,7 @@ info line2 (t,1,1): 1/2..19/40 eta=00123 pair=45 t2=[0.47722557505166,0.47722557
 info line2 (t,t,1): 7/10..27/40 eta=00000 pair=24 t2=[0.69167061103656,0.69167061103657]
 info line2 (1,1,t): 7/5..29/20 eta=00000 pair=24 t2=[1.44577488770465,1.44577488770466]
 PASS: C10 G5: second crossing per line at its bracket; numerator = the displayed polynomial; one positive root isolated to width < 10^-20; endpoint suprema; sign change
-PASS: C11 G5: six isolating intervals: every 252 x 15 choice verified below (Lipschitz) or identical to the displayed maximizer (copies [30, 288, 288, 60, 72, 72])
+PASS: C11 G5: six isolating intervals: every 252 x 15 choice verified below (Lipschitz) or a sign-constant copy of the displayed maximizer ([30, 288, 288, 60, 72, 72])
 PASS: C12 G6: 6c_1 < 1 verified for every real t between the two thresholds, each line (subintervals [2395, 1782, 1715])
 PASS: C13 G2/G6: c_1(t,t,1) = c_1(1,1,1/t) executed; the (1,1,t) polynomials are the (t,t,1) reciprocals
 PASS: C14 c_1^(4)(2,5,3) = 14250/59251 > c_1(2,5,3) = 1629375/6780002: a window coefficient can exceed c_1; (7,3,5) silent

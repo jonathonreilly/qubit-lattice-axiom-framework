@@ -340,16 +340,22 @@ thresholds, every one of the `252 × 15` shell-multiset-and-pair choices (the
 `7776 × 15` choices up to the slot symmetry) either satisfies `max(6 TV(a),
 6 TV(b)) − 1 + 36 (b − a)/a < 0`, hence stays below one on all of `[a, b]`, or
 has, with its sign pattern at `a`, the same rational function as the displayed
-maximizer (a copy: `30, 288, 288` copies at the first thresholds, `60, 72, 72`
-at the second; no distinct choice is left unverified). Since `6c_1 − 1` is the
-maximum of these functions, it crosses zero on `[a, b]` exactly where the
-displayed function does: the threshold is the displayed root. (ii) On each
+maximizer and that sign pattern constant on `[a, b]` (no numerator of `a_s −
+b_s` has a root in `[a, b]`, by Sturm's theorem), so that its total variation
+equals the displayed function on all of `[a, b]` (a copy: `30, 288, 288`
+copies at the first thresholds, `60, 72, 72` at the second; no distinct choice
+is left unverified). Since `6c_1 − 1` is the maximum of these functions, on
+`[a, b]` it equals `6f − 1` for the displayed function `f`, which has its
+single root at the threshold: the threshold is the displayed root, and on the
+region side of the threshold within `[a, b]` one has `6c_1 < 1`. (ii) On each
 line, with `u` the upper endpoint of the lower threshold's isolating interval
 and `v` the lower endpoint of the upper one, `6c_1(t) < 1` holds for every real
 `t ∈ [u, v]`: a subinterval `[a', b']` is verified by `max(6c_1(a'), 6c_1(b'))
 − 1 + 36 (b' − a')/a' < 0` from the exact endpoint values, and otherwise
 bisected at a dyadic midpoint (`2395`, `1782`, `1715` verified subintervals on
-the three lines). Hence the set `{t > 0 : 6c_1 < 1}` on each line contains the
+the three lines). Together — (i) covers the parts of the two isolating
+intervals on the region side of their thresholds and (ii) covers `[u, v]`
+between them — the set `{t > 0 : 6c_1 < 1}` on each line contains the whole
 open interval between its two thresholds; monotonicity of `c_1` is neither
 proved nor needed. Finally, `c_1` is homogeneous of degree zero, so
 `c_1(t, t, 1) = c_1(1, 1, 1/t)` (executed at `t = 5/4, 3/2, 7/10`, and
@@ -664,7 +670,9 @@ Every negative sentence in this note is an exact statement on the declared windo
 
 Further: the region on each line is the verified open interval between its
 two thresholds, monotonicity of `c_1` neither proved nor used, and nothing is
-stated on a line beyond the scanned points outside the thresholds; the
+stated on a line beyond the scanned points outside the thresholds; "the exact
+region" of the title is the exact locus of the one-site criterion `6c_1 < 1`,
+not a sharp boundary of uniqueness, which may hold outside it (N7); the
 thresholds are roots of the displayed polynomials, verified against every
 competitor on their isolating intervals; the maximizing patterns are
 lexicographically first, ties counted, not excluded; Theorem H is executed on planar windows with four slots per
@@ -699,7 +707,16 @@ constant enters.
 ## Review record
 
 Fable primary seat (own 26-mutation census from raw per-mutation stdout);
-refuting checker: pending; independence class: to be filled by the supervisor.
+refuting checker (Opus 5, disjoint machinery: brute-force coefficients, own row
+transfer and Gauss–Jordan inverse, own walk counts and hash re-implementation):
+PASS-NO-BLOCKER, nothing refuted — every literal, threshold, copy count, window
+bound and cache hash reproduced; 1,344 rationals between the thresholds and
+1,110 outside scanned without a counterexample; 1,080 window site-checks
+without a bound violation; two presentational findings folded (the sign-
+constancy clause of the copy test, C11; the sentence joining the two
+certificates in G6). Independence class: single family (Claude), cross-model
+— Fable primary, Opus 5 contract lens, Opus 5 refuting checker, supervisor
+hand-verification.
 The supervisor's control numbers (the seven coefficients, the `(t,1,1)`
 crossing between `3/2` and `13/8` with its pattern, the `3×3` total variation
 against `1/56`) were reproduced in the seat's own integer code before any

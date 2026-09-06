@@ -446,3 +446,198 @@ conclusion could be escaped; all are executed.
 - This note does not fire wake condition 1 of
   `docs/repo/DEFERRED_DECISIONS.md` entry 1 (the committed-action
   identification); nothing here identifies the infinite-lattice object.
+
+## No-Go Discipline Gate
+
+The corollary "on every window containing a plaquette, for every order, the
+formation law differs from the static law" (for (P) with `(p, q, r)` not all
+equal on the declared menu, under R-only) is a negative sentence and carries
+the gate. It is a corollary of Theorem B, an exact finite statement; it is not
+a route no-go beyond that scope.
+
+### N1 — Attempted routes (all executed this block)
+
+| route | what it would attempt | why it fails here | marker |
+|---|---|---|---|
+| 1 constant rule | make every normalizer constant by `p = q = r` | coincides, but is excluded by the named variation reading restricted to the menu (D10, E1) | ATTEMPTED |
+| 2 site weight | choose `ψ` so that `Z_2(b, c)` is constant | rank 6 in `ψ` at both triples; and a non-constant `ψ` breaks covariance (E2) | ATTEMPTED |
+| 3 direction-blind absence factor | let an unrecorded neighbor contribute `φ_abs(s)` | covariance forces it constant (E3), so it is R-only | ATTEMPTED |
+| 4 direction-dependent absence factor / any factorized absence weight | let `(a, b, c)` or `χ(v_0)χ(v_2)` absorb the normalizer history | only `a = b = c`, `p = q = r` solves `μ_σ = μ` (E4a, E4b); `Z_2` has rank 4 or 6, never 1 (E4c) | ATTEMPTED |
+| 5 order mixture | average `μ_σ` over all orders | differs from `μ` by exact nonzero amounts (E5) | ATTEMPTED |
+| 6 marginal reading | let the forming site use the static law's own conditional | coincides by the chain rule, but is window-dependent and non-local, so not one fixed nearest-neighbor rule (E6a, E6b) | ATTEMPTED |
+
+### N2 — Wall-independence audit
+
+Walls: `W_var` (not all equal on the declared menu), `W_R` (records-only
+reading), `W_pos` (positivity), `W_sym` (class (P): symmetric isotropic pair
+weight, constant site weight), `W_ord` (a total formation order).
+
+| pair | first closes second? | second closes first? | independent? | witnesses |
+|---|---|---|---|---|
+| `W_var`, `W_R` | no | no | yes | the constant rule under R-only (coincides); the `(3,1,2)` rule under the marginal reading (coincides) |
+| `W_var`, `W_pos` | no | no | yes | `(1,1,1)` is positive and constant; a zero entry with `p ≠ q` (B10 mutation) |
+| `W_var`, `W_sym` | no | no | yes | the asymmetric weight of D12 has non-equal orbit values; the constant rule is symmetric |
+| `W_R`, `W_sym` | no | no | yes | the absence readings keep `φ` symmetric; the asymmetric weight is R-only |
+| `W_ord`, any | no | no | yes | simultaneous formation (N7) is outside every other wall |
+
+No wall collapses into another; the headline uses all five as hypotheses.
+
+### N3 — Hidden-wall scan
+
+Scanned this note for "we assume", "by construction", "as is standard", "the
+framework provides", "naturally", "obviously", "canonical", "registered",
+"background", "bridge context". Hits: "canonical up to a constant" (the gauge
+class on the transitive menu — an executed fact, B7, not a condition);
+"registered" only in N6. The two readings used are explicit premises: the
+extensional reading of "varies with" restricted to the declared menu (B4,
+with the `f` witness as its boundary) and the records-only extension (with
+its two alternatives computed). Nothing else is hidden; no wall was promoted.
+
+### N4 — Per-citation table
+
+| cited surface | residual it attacks | residual claimed here | match |
+|---|---|---|---|
+| the binary compatibility note 2026-08-10 (unaudited) | existence and uniqueness of a static law from positive binary full conditionals | the static half on a six-value menu | yes (generalized; static only) |
+| `R136`, archived, floats, unrefereed | the rule's form under the static reading | none (reference only) | no; not a witness |
+| `docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md` | an append-only record relation; the rule supplies odds, not the site or rate | none | no; context |
+| `docs/R_HALF_OPEN_BACKLOG_FORMATION_LAW_PROBE_BATCH_EXACT_SUPPORT_NOTE_2026-07-13.md` | formation weights across epochs | none | no; context |
+| `docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md` | order independence of partial-map unions | none | no; context |
+
+After dropping non-matches, the corollary rests on this block's own exact
+witnesses and Theorem B, which is what it needs.
+
+### N5 — Resolution audit
+
+| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
+|---|---|---|---|---|---|
+| "no order gives `μ_σ = μ` on a plaquette" | executed: every `v`, every order of cycle4, both triples | executed: every site's `A_k` for every order; cube8 combinatorially | checked and not executed: no spectral decomposition | executed: every order's normalizer history | checked and not executed: finite windows only |
+| "the sum rule is not consistent" | executed: 648 equations | executed: degree 1 vs degree 2 | — | executed: the Brook cycle | checked and not executed |
+
+The runner prints matching `per_element:`, `per_site:`, `per_mode:`,
+`per_block:`, `lattice_wide:` lines. The narrowest forms are used: every
+negative is "on the declared windows and menu" or "a corollary of Theorem B
+for every finite graph"; none is "no route exists".
+
+### N6 — Partial-closure paths and primitive scan
+
+The registered approved primitives in `docs/audit/data/axiom_premise_nodes.json`
+(`scale_reference_primitive`, `kinetic_isotropy_primitive`,
+`realized_state_primitive`) supply a length reference, a graining ratio and a
+realized-state notion; none supplies a formation order, a reading of a
+partially recorded neighborhood or a pair weight, and none is a wall here.
+Reframing paths: (i) adopting the marginal reading closes the corollary by
+convention at the price of a window-dependent, non-local rule (route 6); (ii)
+adopting "records only" for the static side too (an unrecorded site is
+absent, not conditioned on) is the reading already used; (iii)
+`docs/repo/DEFERRED_DECISIONS.md` parks six owner decisions; entry 1 wakes on
+the committed-action identification, which this note does not supply. No
+path closes the corollary without changing the reading; this note does not
+say a new axiom is required.
+
+### N7 — Steelman
+
+Hostile reviewer: "Formation is not a total order. Records may lock
+simultaneously, and the physical process could be a partial order or a
+continuous-time process whose law is the static law's own Glauber-type
+stationary measure; then the normalizer history is an artifact of serializing
+what is not serial. And even if formation is serial on a finite patch, an
+infinite-volume limit taken along growing windows could wash out the
+normalizer history so that the local statistics of records agree with the
+static specification. Finally, the marginal reading exists and coincides." The
+gap in each: simultaneous formation needs a joint conditional for several
+sites that the axiom does not state (its terminal obligation is a supplied
+multi-site rule — named, not closed here); the infinite-volume claim is a
+statement this note does not make in either direction (the limit of `μ_σ`
+along growing windows is the next block's object, and B5's exact order
+dependence on every plaquette is a finite fact the limit must contend with);
+the marginal reading is executed and coincides, at the price of not being one
+fixed nearest-neighbor rule (E6a). The steelman defeats any broader claim
+("the formation reading is the physical one"), which this note does not make;
+it does not defeat the finite corollary.
+
+### N8 — Cross-cycle echo
+
+| similar prior wall | retired? | mechanism | applies here? |
+|---|---|---|---|
+| the binary note's exclusion of "stochastic update dynamics" and "Record formation" from its scope | no | none | this note supplies the formation object it excluded; the static half is unchanged |
+| the archived `R136` static reading | no (archived, unrefereed) | none | superseded here by the named reading and exact arithmetic |
+| the extensional-rule probe's append relation (one record per step, permanence) | no | none | the same one-at-a-time picture; that probe defines no law and compares none |
+
+No structurally similar wall was retired by a mechanism not considered here.
+
+**Gate result:** PASS for the finite corollary as a corollary of Theorem B
+on the declared scope; not shipped for any claim that formation is serial in
+nature, that no reading coincides, or that anything holds on the infinite
+lattice.
+
+## Falsifiers
+
+The theorem fails if any of the following finite statements fails: a
+projector is not Hermitian-idempotent of trace one; the pair census is not
+6/6/24 or the rotation action is not transitive; a covariant site weight is
+not constant; the static law's full conditional differs from the rule at some
+site of some declared window; the path3 compatibility system does not have
+rank 215 with `μ` in its nullspace; the sum rule's system does not have rank
+216 or `R(1/4) ≠ 27/25`; the identity B1 fails for some order; some order
+with `|A_k| ≤ 1` gives `μ_σ ≠ μ` or some order with `|A_k| ≥ 2` gives
+`μ_σ = μ` at a not-all-equal triple; an `f_j` formula or factorization
+fails; the cube census is not `{3: 40320}`; the constant rule is not uniform;
+the menu witness does not give `(1, 1, 1)`; any of the six routes computes
+differently.
+
+## Boundaries and non-claims
+
+This note selects no physical rule, no coupling value, no formation order and no reading of the axioms; the records-only reading is a named premise and its two alternatives are computed.
+
+No statement is made about the infinite lattice beyond naming the specification; existence or uniqueness of an infinite-volume law is outside this note, and this note does not fire wake condition 1 of the parked statistical-bridge decision.
+
+This note does not derive, explain, bear on or decide the parked statistical bridge, the Born form, or the gravity lane's action; the 2026-08-26 gate measurement is a float measurement on one fixture, cited by path only.
+
+Every negative sentence in this note is an exact finite statement on the declared windows and menu or a corollary of Theorem B; none is a route no-go beyond that scope.
+
+Further: no formation site, probability or rate is supplied; the pattern of
+records depends on the order, so the rule alone does not fix the pattern, and
+whatever fixes the order is physics the axioms leave open; no axiom or
+primitive is changed; the general converse of Theorem A is referenced only;
+the positivity counterexample of the literature is not needed and not used;
+Hammersley–Clifford is referenced only.
+
+## Imports
+
+References, re-proved at scope, never authority, no values imported: Brook's
+ratio lemma (1964) — re-proved above for a finite menu; Besag (1974) on the
+consistency of conditionals and Hammersley–Clifford / Grimmett (1973) — the
+factorization converse, referenced only; Moussouris (1974) — the non-positive
+four-cycle example, not used. Declared mathematical scaffolding: the exact
+weight triples, couplings, the exterior assignments, the configuration family
+(all configurations within two sites of the reference plus 300 draws of the
+fixed linear congruential generator, seed 20260906, multiplier 1103515245,
+increment 12345, modulus `2^31`) and the six declared cube orders. No
+observation, fitted value or literature constant enters.
+
+## Review record
+
+Fable primary seat; refuting checker: pending; independence class: to be
+filled by the supervisor. Defects found in the block's own contract while
+executing and corrected here: the `6 × 6` normalizer matrix has rank 4, not
+6, at `(3, 1, 2)` (the route needs rank ≠ 1, which holds); the chain rule of
+the marginal reading needs the conditional given all earlier records, not
+the recorded neighbors only (both executed). The raw `sympy.solve` of the
+cycle4 absence-factor system did not finish inside the time cap; the exact
+two-step route replaces it (E4b).
+
+## Verification
+
+```bash
+python3 scripts/admissibility_rule_formation_law_versus_static_law_finite_window_classification_2026_09_06.py
+python3 scripts/admissibility_rule_formation_law_versus_static_law_finite_window_classification_2026_09_06.py --list-mutations
+python3 scripts/admissibility_rule_formation_law_versus_static_law_finite_window_classification_2026_09_06.py --mutation z2_rank_one
+```
+
+Families: A authority and inputs; B menu and covariance; C the static law
+(Theorem A instances, Brook rank, sum-rule certificate); D the formation law
+and the classification (Theorem B); E the six readings and routes; F fences
+and the floating-point self-scan; G the resolution certificate. Each of the
+41 declared mutations perturbs one object at construction time and fails in
+exactly one family, reported by the runner's `mutation_family_expected:` and
+`mutation_family_observed:` lines. Expected final line: `TOTAL: PASS=53 FAIL=0`.

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_formation_law_versus_static_law_finite_window_classification_2026_09_06.py
 runner_sha256: 48272bc7d58cadfd5aa59d8631021825b12dfae4b81f3282d6565c7e68065b61
-input_fingerprint_sha256: e65ebc4ce948b87eae4cebd2251de143f6f8eebd91e9768127d4e13d07924e68
+input_fingerprint_sha256: fe6d62e4e8fad0112fa0dae849b45f27b9233899c98d2649f3670918ae2ad328
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 7.83
+elapsed_sec: 7.49
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

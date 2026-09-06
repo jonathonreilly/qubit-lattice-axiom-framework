@@ -83,9 +83,9 @@ sentences used, verbatim:
   determined by, and varies with, the nearest-neighbor conditions."
 - Record: "Records form." — "records are permanent" — "Only records are
   readable." — "A site with no record cannot be read."
-- Lattice: sites are the points of `Z^3` with nearest-neighbor adjacency,
-  translations and proper cubic rotations; Qubit: the full one-site domain is
-  `M_2(C)`.
+- Lattice and Qubit, paraphrased (not quoted): sites are the points of `Z^3`
+  with nearest-neighbor adjacency, translations and proper cubic rotations;
+  the full one-site possibility domain has algebraic presentation `M_2(C)`.
 
 **Menu `M`.** The six pure-state projectors `P(±e_a) = (I ± σ_a)/2`,
 `a ∈ {x, y, z}`, in `M_2(C)` (runner B1). The 24 proper cubic rotations act on
@@ -232,7 +232,11 @@ vector spans its nullspace, all entries positive (C5).
 `diag(−1, 1, −1)` about `e_2`, both in the axioms' group) sends `0 ↦ e_1` and
 `e_1 ↦ 0`; covariance of the rule under `g` forces `φ(a, b) = φ(ρ b, ρ a)`
 with `ρ` the induced menu permutation, and isotropy then gives
-`φ(a, b) = φ(b, a)` (B9, executed on all 36 pairs). On the abstract graphs
+`φ(a, b) = φ(b, a)` (B9, executed on all 36 pairs). On this menu the swap
+`(a, b) ↦ (b, a)` is itself realized by a proper rotation for every pair (the
+three ordered-pair orbits are swap-closed), so isotropy alone already gives
+symmetry; the edge-flip element supplies it on any covariant menu, swap-closed
+or not. On the abstract graphs
 path3, P4, star4, cycle4, uniformity and symmetry of `φ` are class-(P)
 hypotheses, not consequences. Symmetry is what makes the formation identity
 hold: with an asymmetric pair weight the sequential product orients every
@@ -247,8 +251,8 @@ compatibility system has full rank 216 at `λ ∈ {1/4, −1/8}` (C6). The
 symbolic Brook cycle at sites 1–2 (`a = P(e_x) → a' = P(−e_x)` at the end
 site, `b = P(e_x) → b' = P(−e_x)` at the middle site, `c = P(e_x)`) gives
 `R(λ) = (−2λ³ + 3λ² − 1)/(2λ³ + 3λ² − 1)`, `R(1/4) = 27/25`, and
-`R(λ) − 1 = −4λ³ / ((λ + 1)²(2λ − 1))`: the numerator carries the factor
-`λ²` and has no other root, so none in `|λ| < 1/6` (C8). The same cycle for
+`R(λ) − 1 = −4λ³ / ((λ + 1)²(2λ − 1))`: the numerator is `−4λ³`, so
+`R(λ) = 1` only at `λ = 0` and at no coupling in `|λ| < 1/6` (C8). The same cycle for
 (P) with symbolic `(p, q, r)` is exactly 1 (C9). The obstruction is
 degree-dependent: it needs a site of degree at least two, and positivity of
 the sum rule holds for `|λ| < 1/deg`.
@@ -306,9 +310,15 @@ at p = q:  f_j(anti) − f_j(orth) = 2 (p − r)(p^j − r^j)             ≥ 0,
 (The first identity is elementary for every `j`; the second is the
 subtraction of the displayed formulas; both are executed symbolically for
 `j = 1, …, 5`, D6.) The multiset of varying factors is nonempty (it contains
-`k = m`) and every factor is positive, so their product takes the same value
-on the three orbits iff each factor does, iff `p = q = r`. As `v_y` runs over
-the menu it meets all three orbits relative to `R`, so under the hypothesis
+`k = m`) and every factor is positive. Suppose the product took the same
+value on the three orbits. Each factor satisfies `f_j(par) ≥ f_j(anti)`, so
+the product does too, with equality only if every factor has equality, i.e.
+`p = q`. At `p = q` each factor satisfies `f_j(anti) ≥ f_j(orth)` with
+equality iff `p = r` (the difference `(p − r)(q^j − r^j) + (q − r)(p^j − r^j)`
+is not sign-definite away from `p = q`, which is why the case split is needed),
+so the product's equality on the second pair forces `p = r`. Hence the product
+is constant across the three orbits iff `p = q = r`. As `v_y` runs over the
+menu it meets all three orbits relative to `R`, so under the hypothesis
 `Π_k Z_k` is not constant and by B1 `μ_σ ≠ μ`. ∎
 Executed: on the six declared cube orders, with all sites but `y` at
 `P(e_x)` (`y` the first recorded neighbor of the first site with
@@ -394,14 +404,18 @@ conclusion could be escaped; all are executed.
    the found solution is verified on every configuration (E4b). Any
    factorized absence weight on path3 `(0, 2, 1)` would need the middle
    site's normalizer to factor as `χ(v_0) χ(v_2)`, i.e. the `6 × 6` matrix
-   `Z_2(b, c) = (Φ²)(b, c)` to have rank 1. Its rank is 4 at `(3, 1, 2)` and
-   6 at `(5, 2, 4)`: `det Φ = (p + q + 4r)(p + q − 2r)²(p − q)³`, and
+   `Z_2(b, c) = (Φ²)(b, c)` to have rank 1. Since `Φ` is real symmetric,
+   `rank Z_2 = rank Φ² = rank Φ`; its rank is 4 at `(3, 1, 2)` and 6 at
+   `(5, 2, 4)`: `det Φ = (p + q + 4r)(p + q − 2r)²(p − q)³` (eigenvalues
+   `p + q + 4r` once, `p + q − 2r` twice, `p − q` three times), and
    `3 + 1 − 2·2 = 0` (the block contract's expectation "rank 6 at both
    triples" was wrong at `(3, 1, 2)`; the route needs only rank ≠ 1). The
    two `2 × 2` minors `(p − q)²(p² + 2pq + q² + 8r²)` and
    `((p − r)² + (q − r)²)(p² + 2pr + q² + 2qr + 6r²)` hold symbolically, so
-   the rank is at least 2 whenever `(p, q, r)` are not all equal (E4c). The
-   same rank fact says the normalizer history couples sites at graph
+   the rank is at least 2 whenever `(p, q, r)` are not all equal (E4c); on
+   path3 with order `(0, 2, 1)` this rank condition is exactly the
+   `μ_σ = μ` condition, and it returns the same solution set as the Gröbner
+   route of E4a. The same rank fact says the normalizer history couples sites at graph
    distance two non-multiplicatively: the formation law is not a
    nearest-neighbor field of the static kind.
 5. **The uniform mixture of `μ_σ` over all 24 orders of cycle4** differs
@@ -410,8 +424,8 @@ conclusion could be escaped; all are executed.
    `1585133/10007780364` at `(2, 3, 5)` is reproduced (E5).
 6. **The marginal reading** makes `μ_σ = μ` for every order by the chain
    rule when the conditional at the forming site is the static law's
-   conditional given all existing records (executed on cycle4 for all 24
-   orders, E6b); given only the recorded neighbors it does so for 0 of 24
+   conditional given all existing records (a telescoping identity that holds
+   for any law; executed on cycle4 for all 24 orders, E6b); given only the recorded neighbors it does so for 0 of 24
    orders, because a partial set of records does not screen off the rest.
    And it is not one fixed nearest-neighbor rule: the one-neighbor
    conditional it assigns on path3 equals the rule's for every `v_1`, while
@@ -617,8 +631,20 @@ observation, fitted value or literature constant enters.
 
 ## Review record
 
-Fable primary seat; refuting checker: pending; independence class: to be
-filled by the supervisor. Defects found in the block's own contract while
+Fable primary seat (26 minutes, own 41-mutation census, re-verified by the
+supervisor from the raw per-mutation stdout); Opus 5 refuting checker on
+disjoint machinery: PASS-NO-BLOCKER, CK-01 to CK-12 all confirmed with the
+numbers reproduced independently (a different menu index order, base-6
+configuration encoding, modular rank at two primes with a sympy nullspace,
+eigen-decomposition of the pair-weight matrix, its own Brook cycle); five
+editorial findings folded here (the case split in the B2 proof; the symmetry
+of `Φ` behind the rank equality; the swap-closed orbits making the edge-flip
+element redundant on this menu; the Lattice and Qubit bullet marked as a
+paraphrase; the Gröbner and rank routes agreeing on path3); supervisor
+line-by-line review of the runner and the note with two exact control scripts
+and the product-level proof; four Opus 5 panel lenses before the build.
+Independence class: single family (Claude), cross-model. Defects found in the
+block's own contract while
 executing and corrected here: the `6 × 6` normalizer matrix has rank 4, not
 6, at `(3, 1, 2)` (the route needs rank ≠ 1, which holds); the chain rule of
 the marginal reading needs the conditional given all earlier records, not

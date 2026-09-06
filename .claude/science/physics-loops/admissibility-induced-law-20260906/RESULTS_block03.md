@@ -242,3 +242,40 @@ Every mutation fails in exactly its declared family and no other; the unmutated 
 - Final certificate: `TOTAL: PASS=41 FAIL=0`; runner sha256 `953de23b62c6388103db089cb3b49da12adf2607119166319bd02ec1655e06d5`; input fingerprint `19543425c15e3b6662b5d805877a51f304578089fd95dd6884a0a92a7d131d83`; exit 0; elapsed 86.38 s; unmutated stdout 5,959 characters; 31 mutations.
 - The second thresholds (runner `--exact`): `(t,1,1)`: numerator `−t^2 − 10t + 5`, signs `(1,1,1,1,−1,1)`, interval `[10527439114/22059670865, 2351330961/4927084976]` (`0.47722557505166113456…458`), real roots 2, positive 1; `(t,t,1)`: `−t^5 − 7t + 5`, signs `(1,1,−1,−1,1,1)`, interval `[6864156352/9924024879, 10832308623/15661079783]` (`0.69167061103656469380…382`), real roots 1; `(1,1,t)`: `5t^5 − 7t^4 − 1`, same signs, interval `[15661079783/10832308623, 25585104662/17696464975]` (`1.44577488770465582773…774`), real roots 1. Copies at the six thresholds: `30, 288, 288, 60, 72, 72`; region-certificate subintervals `2395, 1782, 1715`.
 - Fold census: below (re-run at the final sha, 31 mutations, 4 in parallel, one helper invocation each).
+
+## Fold census (31 mutations, one helper invocation each, 4 in parallel; expected/observed read from raw stdout at the final runner sha 953de23b…)
+
+| mutation | expected | observed | FAIL count | failing checks | exit | in-family |
+|---|---|---|---|---|---|---|
+| `coefficient_direction_dependent` | B | B | 1 | B1 G1: | 1 | yes |
+| `relabeling_identity_broken` | B | B | 1 | B3 G2: | 1 | yes |
+| `constant_rule_nonzero` | B | B | 1 | B4 G3: | 1 | yes |
+| `c1_literal_off` | C | C | 1 | C1 G4: | 1 | yes |
+| `region_triple_misclassified` | C | C | 1 | C2 G4: | 1 | yes |
+| `grid_symmetry_broken` | C | C | 1 | C3 G2/ | 1 | yes |
+| `grid_region_cells_wrong` | C | C | 1 | C4 G4: | 1 | yes |
+| `sign_pattern_not_fixed` | C | C | 7 | C5 G5: C6 G5: C7 G5: C8 G5: C9 G5: C11 G5 C12 G6 | 1 | yes |
+| `line_polynomial_wrong_coefficient` | C | C | 1 | C6 G5: | 1 | yes |
+| `threshold_wrong_root` | C | C | 4 | C7 G5: C9 G5: C11 G5 C12 G6 | 1 | yes |
+| `endpoint_sup_pattern_forged` | C | C | 1 | C8 G5: | 1 | yes |
+| `second_crossing_wrong_root` | C | C | 3 | C10 G5 C11 G5 C12 G6 | 1 | yes |
+| `competitor_identity_forged` | C | C | 1 | C11 G5 | 1 | yes |
+| `region_certificate_forged` | C | C | 1 | C12 G6 | 1 | yes |
+| `reciprocity_broken` | C | C | 1 | C13 G2 | 1 | yes |
+| `c4_c1_inversion_denied` | C | C | 1 | C14 c_ | 1 | yes |
+| `one_step_inequality_drops_b` | D | D | 1 | D1 H1: | 1 | yes |
+| `one_step_inequality_wrong_coefficient` | D | D | 1 | D1 H1: | 1 | yes |
+| `maximal_coupling_identity_broken` | D | D | 1 | D2 H1: | 1 | yes |
+| `row_sum_ignored` | D | D | 1 | D3 H2: | 1 | yes |
+| `D_matrix_wrong_inverse` | D | D | 4 | D4 H2: D5 H2: D6 H2: D7 H3: | 1 | yes |
+| `fixed_point_not_fixed` | D | D | 1 | D6 H2: | 1 | yes |
+| `center_tv_exceeds_bound_forged` | D | D | 1 | D7 H3: | 1 | yes |
+| `path_count_wrong` | E | E | 1 | E1 I: | 1 | yes |
+| `alpha_table_wrong_exponent` | E | E | 1 | E2 I: | 1 | yes |
+| `line_points_misclassified` | E | E | 1 | E4 reg | 1 | yes |
+| `claim_nonunique_at_silent` | F | F | 1 | F2 the | 1 | yes |
+| `claim_unique_at_silent` | F | F | 1 | F2 the | 1 | yes |
+| `claim_phase_transition` | F | F | 1 | F2 the | 1 | yes |
+| `claim_physical_rule` | F | F | 1 | F2 the | 1 | yes |
+| `claim_author_in_theorem` | F | F | 1 | F3 the | 1 | yes |
+in-family: 31/31

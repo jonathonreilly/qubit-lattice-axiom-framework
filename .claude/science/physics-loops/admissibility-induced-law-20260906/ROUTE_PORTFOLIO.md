@@ -62,3 +62,25 @@ git grep -l -iE "specification.*(quasilocal|Feller|kernel)" origin/main -- 'docs
 | `docs/work_history/repo/review_feedback/INVARIANT_FIRST_SEED_HARD_CORE_CYCLE18_NOTE_2026-07-14.md` | context-only | a "specification" in the law-type sense of the 2026-07 tournament, not a DLR specification |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` states a DLR specification for the menu rule, an infinite-volume existence argument on the finite menu, a formation law on an infinite window, a row-sweep invariance theorem, or a transfer-matrix enclosure of a static strip statistic.
+
+## Block 03 prior-art sweep, searched commit origin/main 341511a74e (2026-09-06, after block 02)
+
+```bash
+git grep -l -iE "dobrushin" origin/main -- 'docs/*.md'                                                     # 11
+git grep -l -iE "uniqueness.*(Gibbs|specification|infinite.volume|static law)" origin/main -- 'docs/*.md'  # 2
+git grep -l -iE "glauber|heat.bath dynamics|gibbs sampler" origin/main -- 'docs/*.md'                      # 0
+git grep -l -iE "oscillation.*(lemma|bound)|interdependence" origin/main -- 'docs/*.md'                    # 7
+git grep -l -iE "comparison theorem" origin/main -- 'docs/*.md'                                            # 3
+git grep -l -iE "coupling.*(argument|proof|contraction)|path coupling|maximal coupling" origin/main -- 'docs/*.md'   # 26
+git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phase transition" origin/main -- 'docs/*.md'   # 0
+```
+
+| Hit | Classification | Disposition |
+|---|---|---|
+| `docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md` (and five sibling `WILSON_STAGGERED_*` notes) | context-only; prior in-repo USE of the criterion | applies the one-site contraction criterion (`alpha < 1/2` on a constrained polymer fiber) on the Wilson-staggered carrier and quotes the theorem as authority ("Condition (0.4) now gives Dobrushin uniqueness and boundary comparison"); it does not re-prove it and it is not about the menu rule; cited once in the note's Prior art |
+| `docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md`, `docs/GL_F_RECORD_VALUE_DICTIONARY_COMMUTING_LOCK_BOUNDED_THEOREM_NOTE_2026-09-01.md` | non-matching | KMS/operator-algebraic uniqueness; a record-value dictionary lock; neither concerns the menu rule's specification |
+| the `oscillation`/`interdependence` hits (`PMNS_*`, `SIGMA_MNU_*`, `SM_GSTAR_*`) | non-matching | neutrino/thermal contexts; the word coincidence only |
+| the `comparison theorem` hits (`BEYOND_LATTICE_QCD_NOTE.md`, `QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`, `SYMMETRY_HEAD_TO_HEAD_NOTE.md`) | non-matching | QCD comparison tables, not the Gibbs-measure comparison theorem |
+| the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
+
+Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.

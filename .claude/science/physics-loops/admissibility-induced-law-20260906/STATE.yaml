@@ -42,3 +42,24 @@ stop_condition: "block 01 PR opened, or a defect the panel/checker finds that th
 # next_exact_action: "Fable primary on specs/primary_block02.md (150 min); on delivery: supervisor line-by-line review; Opus refuting checker; fold; conformance gate; PR stacked on #7998"
 
 # 2026-09-06 block 02 CLOSED — primary (Fable, 28 min) delivered runner 37/0 + note 650 lines + RESULTS_block02 + V1-V5; contract refuter lens (Opus) before the build, 11 scoping findings folded; supervisor review (F-S1..F-S4 applied; D9/E11 added; the adjacent-column restriction observation); Opus refuting checker FIX FIRST with nothing refuted (both fixes and all recommendations folded); final runner 39/0 (26.9 s), 30 mutations 30/30; cache re-pinned (runner sha abbd76127f42d3d5e9b895c451d0f2c31899e0afeb949c7a8f812bb1f65f98c2, fingerprint 9ac6e0846636b72e1ccb6ab28df2efc123feac25cb978b26010b27fd7418eaf3); conformance gate 1-12 PASS; pipeline exit 0; manifest +1 node; PR #7999 opened, stacked on #7998 (https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7999; never merged by the campaign). pr_status: OPENED — hand-off to the owner-operated review-loop. Next: OPPORTUNITY_QUEUE.md refresh (block 02 closing) — the exact contraction region on Z^3 first.
+
+# ---------------------------------------------------------------- block 03 (2026-09-06)
+# block: 3
+# branch: physics-loop/admissibility-induced-law-block03-uniqueness-region-20260906 (stacked on block 02, PR #7999, tip bf1710f71f)
+# lock: owner fable-supervisor, ttl 6h
+# active_route: "block 03 = the exact uniqueness region on Z^3 by the one-site contraction criterion, re-proved by coupling (GOAL_block03.md)"
+# approach_family_coverage: [G the coefficient exactly (grid, lines, algebraic thresholds); H finite-window comparison by random-scan coupling, executed on the plaquette and the 3x3 window; I the corollary on Z^3; sharper two-site criteria named as leads]
+# strongest_unresolved_proof_obligation: "uniqueness or not at the silent triples (3,1,2), (5,2,4): needs a sharper criterion (two-site condition, disagreement percolation) or a transfer-matrix/expansion route"
+# hard_residual: "one law or several on Z^3 outside the contraction region"
+# review_findings: "supervisor controls done (coefficient at seven triples; the diamond; three algebraic thresholds; the 3x3 window bound holds with room); Opus contract refuter lens launched in parallel with the Fable primary"
+# pr_status: not opened
+# next_exact_action: "Fable primary on specs/primary_block03.md (150 min); on delivery: supervisor line-by-line review; Opus refuting checker; fold; conformance gate; PR stacked on #7999"
+
+# ---------------------------------------------------------------- block 03 close (2026-09-06)
+# pr_status: opened — PR #8000 (stacked on #7999; base = block 02's branch), hand-off to the owner review-loop; never merged by the campaign
+# final_certificate: "TOTAL: PASS=41 FAIL=0; runner sha a2da7fbe…; 31 mutations, census 31/31 in-family at that sha; note 756 lines; gates: vocab 0, pipeline PASS, audit_lint strict OK, changed-evidence 3/0, diff --check clean"
+# seats: "Fable primary (38.6 min); Opus contract refuter lens (seven contract defects, three false as written; all folded); Opus refuting checker PASS-NO-BLOCKER (two presentational findings, folded exactly)"
+# review_findings: "the contract's 'second real root' was wrong (three real roots); every line crosses 6c_1 = 1 twice — region on a line is a bounded open interval with algebraic ends (√30 − 5 and the roots of t^5 + 7t − 5, 5t^5 − 7t^4 − 1); the window coefficient is not bounded by c_1 ((2,5,3)); a Lipschitz lemma along a line (Σ|a_s'| ≤ 6/t) gives exact certificates"
+# strongest_unresolved_proof_obligation: "one law or several at the silent triples (3,1,2), (5,2,4), (7,3,5): a sharper criterion (two-site block, disagreement percolation) or an expansion/transfer route"
+# next_exact_action: "queue refresh: (1) the two-site block criterion at the silent triples; (2) the Pickard column theorem under the row sweep; (3) static strip widths 4–5 toward the plane; (4) the Gaussian instance on the gravity fixture; (5) formation-law uniqueness on Z^3"
+# lock: released

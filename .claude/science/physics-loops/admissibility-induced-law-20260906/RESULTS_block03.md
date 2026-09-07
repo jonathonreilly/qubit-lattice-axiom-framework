@@ -285,3 +285,40 @@ in-family: 31/31
 - Checker (Opus 5, disjoint machinery; `CHECKER_block03_findings.md`, spec `scratchpad/checker03/checker_spec_block03.md`): **PASS-NO-BLOCKER, nothing refuted**. CK-01..CK-08 and CK-02a all CONFIRM on its own integer/Fraction brute force, own row transfer and Gauss–Jordan inverse, own walk counts and a re-implementation of the cache hash: the eight coefficients, the tie counts, the five maximizing patterns, direction independence by full ordered enumeration at each slot, the fifteen-cell diamond, all six thresholds with polynomials, root counts and endpoint sign changes, the copy counts, the four-neighbor coefficients, the 21-digit centre total variation and the three window bounds, `L = 119, 39, 8, 4`, every decimal label, the cache sha and the input fingerprint. Attacks without a hit: 1,344 rationals strictly between the thresholds (none with `6c_1 ≥ 1`), 1,110 outside (none with `6c_1 < 1`), 1,080 window site-checks over all twelve exterior slots × five flipped values × two triples plus a two-slot flip and a two-site observable (no bound violation; worst ratio 0.809). Theorems H and I: no missing lemma. Runner: `41/41`, twelve mutations run, all in family. Findings: F1 (low) the copy test of C11 verified only the signed rational function, which certifies `TV ≥ f`, not `TV = f`, on `[a, b]`; F2 (low) the region certificate's `[u, v]` omits the two slivers inside the isolating intervals, which need one sentence joining G6(i) and G6(ii); F3/F4 informational (the title's "exact region" readable as sharpness; H3's citation of Theorem A is a proved step). Checker's own gaps: the plaquette family and the LCG draws not re-executed; the copy and sliver checks finite-sample.
 - Second fold: C11's copy test now also requires the sign pattern to be constant on `[a, b]` (no numerator of `a_s − b_s` has a root there, by Sturm; `sign_constant`, `difference_numerators`), so a copy's total variation equals the displayed function on the whole interval — the copy counts are unchanged (`30, 288, 288, 60, 72, 72`); G6 gains the sentence that (i) covers the region side of each isolating interval and (ii) the interval between, so the whole open interval between the thresholds carries `6c_1 < 1`; Boundaries states that "the exact region" is the exact locus of the criterion, not a sharp boundary of uniqueness; the Review record carries the checker's verdict and the independence class.
 - Final certificate: `TOTAL: PASS=41 FAIL=0`; runner sha256 `a2da7fbeb2cda37efd444da11c4c2e0f18798a91296478844185f44b48e87843`; input fingerprint `be51d2ec3a054cd1a81d6ad9579422123a8f55c842168cd3a5926b2259941ce6`; exit 0; elapsed 87.65 s; unmutated stdout 5,963 characters; note 756 lines, vocab lint 0; 31 mutations, census re-run at this sha (table below).
+
+## Final census (31 mutations, one helper invocation each, 4 in parallel; expected/observed read from raw stdout at the final runner sha a2da7fbe…)
+
+| mutation | expected | observed | FAIL count | failing checks | exit | in-family |
+|---|---|---|---|---|---|---|
+| `coefficient_direction_dependent` | B | B | 1 | B1 G1: | 1 | yes |
+| `relabeling_identity_broken` | B | B | 1 | B3 G2: | 1 | yes |
+| `constant_rule_nonzero` | B | B | 1 | B4 G3: | 1 | yes |
+| `c1_literal_off` | C | C | 1 | C1 G4: | 1 | yes |
+| `region_triple_misclassified` | C | C | 1 | C2 G4: | 1 | yes |
+| `grid_symmetry_broken` | C | C | 1 | C3 G2/ | 1 | yes |
+| `grid_region_cells_wrong` | C | C | 1 | C4 G4: | 1 | yes |
+| `sign_pattern_not_fixed` | C | C | 7 | C5 G5: C6 G5: C7 G5: C8 G5: C9 G5: C11 G5 C12 G6 | 1 | yes |
+| `line_polynomial_wrong_coefficient` | C | C | 1 | C6 G5: | 1 | yes |
+| `threshold_wrong_root` | C | C | 4 | C7 G5: C9 G5: C11 G5 C12 G6 | 1 | yes |
+| `endpoint_sup_pattern_forged` | C | C | 1 | C8 G5: | 1 | yes |
+| `second_crossing_wrong_root` | C | C | 3 | C10 G5 C11 G5 C12 G6 | 1 | yes |
+| `competitor_identity_forged` | C | C | 1 | C11 G5 | 1 | yes |
+| `region_certificate_forged` | C | C | 1 | C12 G6 | 1 | yes |
+| `reciprocity_broken` | C | C | 1 | C13 G2 | 1 | yes |
+| `c4_c1_inversion_denied` | C | C | 1 | C14 c_ | 1 | yes |
+| `one_step_inequality_drops_b` | D | D | 1 | D1 H1: | 1 | yes |
+| `one_step_inequality_wrong_coefficient` | D | D | 1 | D1 H1: | 1 | yes |
+| `maximal_coupling_identity_broken` | D | D | 1 | D2 H1: | 1 | yes |
+| `row_sum_ignored` | D | D | 1 | D3 H2: | 1 | yes |
+| `D_matrix_wrong_inverse` | D | D | 4 | D4 H2: D5 H2: D6 H2: D7 H3: | 1 | yes |
+| `fixed_point_not_fixed` | D | D | 1 | D6 H2: | 1 | yes |
+| `center_tv_exceeds_bound_forged` | D | D | 1 | D7 H3: | 1 | yes |
+| `path_count_wrong` | E | E | 1 | E1 I: | 1 | yes |
+| `alpha_table_wrong_exponent` | E | E | 1 | E2 I: | 1 | yes |
+| `line_points_misclassified` | E | E | 1 | E4 reg | 1 | yes |
+| `claim_nonunique_at_silent` | F | F | 1 | F2 the | 1 | yes |
+| `claim_unique_at_silent` | F | F | 1 | F2 the | 1 | yes |
+| `claim_phase_transition` | F | F | 1 | F2 the | 1 | yes |
+| `claim_physical_rule` | F | F | 1 | F2 the | 1 | yes |
+| `claim_author_in_theorem` | F | F | 1 | F3 the | 1 | yes |
+in-family: 31/31

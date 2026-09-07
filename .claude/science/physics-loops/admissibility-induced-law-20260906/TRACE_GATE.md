@@ -30,3 +30,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "consumers: the parked bridge decision material (not fired); the gravity lane's action question (a unique static law in the region); next: the silent triples by a sharper criterion; the Pickard column theorem; widths 4-5 toward the plane"
 ```
+
+# Trace gate — block 03, at landing (PR #8000)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 02's next target: uniqueness of the infinite-volume static law on Z^3; the owner's gate: one law or several on the infinite lattice"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the silent triples (3,1,2), (5,2,4), (7,3,5) by the two-site block criterion (OPPORTUNITY_QUEUE item 1); consumers: the parked bridge decision material (not fired), the gravity lane's action question (in the region the static law is one object)"
+```

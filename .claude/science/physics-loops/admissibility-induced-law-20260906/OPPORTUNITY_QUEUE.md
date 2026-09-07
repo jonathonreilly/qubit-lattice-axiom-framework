@@ -21,3 +21,13 @@ Block 02 DONE (bounded_theorem / bounded-support): the specification (executed) 
 3. **The static law of the plane**: not computable exactly; a bounded route is the width-`W` enclosures for `W = 4, 5` (orbit reduction keeps the quotient small) with the trend in `W`; the plane's static pair statistic versus the width-independent formation value; one block.
 4. **The Gaussian instance on the gravity lane's fixture** (carried from block 01's queue).
 5. **The formation law's own infinite-volume uniqueness on `Z^3`**: for a sweep with three recorded neighbors, whether the sequential chain has a unique invariant law; the cube witness says the telescoping premise fails, nothing more; one block.
+
+## Refresh at block 03 close (2026-09-06)
+
+Block 03 landed (PR #8000): the exact region of the one-site criterion, with the coupling re-proof. Ranked next:
+
+1. **The two-site block criterion at the silent triples.** Contract on a two-site block (ten boundary slots): its exact interdependence coefficients (a supremum over `6^{10}` boundary shells and the block's own static law) and the row sum at `(3,1,2)`, `(5,2,4)`, `(7,3,5)`. Payoff: decides uniqueness at the couplings the earlier blocks used, or records that the two-site test is also silent. Cost: `6^{10} × 45` exact evaluations — needs symmetry reduction; a Fable seat with the supervisor's control first.
+2. **The Pickard column theorem under the row sweep** (from the block-02 refresh; unchanged).
+3. **Static strip widths 4–5 toward the plane** (unchanged; the width-3 algebraic enclosure is the template).
+4. **The Gaussian instance on the gravity fixture** (unchanged).
+5. **Formation-law uniqueness on Z^3** (unchanged; the row-sweep formation law is a Markov chain of rows — its uniqueness is the Perron–Frobenius statement of block 02 extended to the plane).

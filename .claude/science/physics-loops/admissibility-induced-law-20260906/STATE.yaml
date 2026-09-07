@@ -54,3 +54,12 @@ stop_condition: "block 01 PR opened, or a defect the panel/checker finds that th
 # review_findings: "supervisor controls done (coefficient at seven triples; the diamond; three algebraic thresholds; the 3x3 window bound holds with room); Opus contract refuter lens launched in parallel with the Fable primary"
 # pr_status: not opened
 # next_exact_action: "Fable primary on specs/primary_block03.md (150 min); on delivery: supervisor line-by-line review; Opus refuting checker; fold; conformance gate; PR stacked on #7999"
+
+# ---------------------------------------------------------------- block 03 close (2026-09-06)
+# pr_status: opened — PR #8000 (stacked on #7999; base = block 02's branch), hand-off to the owner review-loop; never merged by the campaign
+# final_certificate: "TOTAL: PASS=41 FAIL=0; runner sha a2da7fbe…; 31 mutations, census 31/31 in-family at that sha; note 756 lines; gates: vocab 0, pipeline PASS, audit_lint strict OK, changed-evidence 3/0, diff --check clean"
+# seats: "Fable primary (38.6 min); Opus contract refuter lens (seven contract defects, three false as written; all folded); Opus refuting checker PASS-NO-BLOCKER (two presentational findings, folded exactly)"
+# review_findings: "the contract's 'second real root' was wrong (three real roots); every line crosses 6c_1 = 1 twice — region on a line is a bounded open interval with algebraic ends (√30 − 5 and the roots of t^5 + 7t − 5, 5t^5 − 7t^4 − 1); the window coefficient is not bounded by c_1 ((2,5,3)); a Lipschitz lemma along a line (Σ|a_s'| ≤ 6/t) gives exact certificates"
+# strongest_unresolved_proof_obligation: "one law or several at the silent triples (3,1,2), (5,2,4), (7,3,5): a sharper criterion (two-site block, disagreement percolation) or an expansion/transfer route"
+# next_exact_action: "queue refresh: (1) the two-site block criterion at the silent triples; (2) the Pickard column theorem under the row sweep; (3) static strip widths 4–5 toward the plane; (4) the Gaussian instance on the gravity fixture; (5) formation-law uniqueness on Z^3"
+# lock: released

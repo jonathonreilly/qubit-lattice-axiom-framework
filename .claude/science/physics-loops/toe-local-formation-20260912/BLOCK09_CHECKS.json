@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "scope": "exact constraints, Gaussian spectral algebra and finite polynomial fragments; reduced quantization only",
+  "checks": [
+    "full_mixed_decomposition",
+    "lapse_equation",
+    "first_shift_equation",
+    "second_shift_equation",
+    "remaining_scalar_equation",
+    "wrong_missing_scalar_cross_rejected",
+    "wrong_missing_vector_cross_rejected",
+    "trace_constraint_gauge",
+    "tensor_gauge",
+    "vector_combination_gauge_0",
+    "vector_combination_gauge_1",
+    "scalar_combination_gauge",
+    "explicit_full_constraint_gauge_reduction",
+    "transfer_width_equation",
+    "transfer_generating_quadratic",
+    "transfer_generating_constant",
+    "transfer_trace",
+    "hermite_transfer_eigenfunction_0",
+    "hermite_transfer_eigenfunction_1",
+    "hermite_transfer_eigenfunction_2",
+    "hermite_transfer_eigenfunction_3",
+    "hermite_transfer_eigenfunction_4",
+    "hermite_transfer_eigenfunction_5",
+    "hermite_transfer_eigenfunction_6",
+    "continuum_width_substitution_rejected",
+    "covariance_fourier_all_phases",
+    "polynomial_fragments_no_cutoff_contact",
+    "reflection_site_(0,)",
+    "reflection_site_(1,)",
+    "reflection_site_(2,)",
+    "reflection_site_(0, 1)",
+    "reflection_site_(0, 2)",
+    "reflection_site_(1, 2)",
+    "reflection_site_(0, 1, 2)",
+    "reflection_link_(0,)",
+    "reflection_link_(1,)",
+    "reflection_link_(2,)",
+    "reflection_link_(0, 1)",
+    "reflection_link_(0, 2)",
+    "reflection_link_(1, 2)",
+    "reflection_link_(0, 1, 2)",
+    "negative_transfer_mode_rejected",
+    "exact_vacuum_covariance_0",
+    "exact_vacuum_covariance_1",
+    "exact_vacuum_covariance_2",
+    "exact_vacuum_covariance_5",
+    "group_velocity_identity",
+    "group_velocity_axis_nyquist"
+  ],
+  "count": 48,
+  "transfer_fixture": {
+    "z": "1/2",
+    "width": "3/4",
+    "r_squared": "1/2",
+    "hermite_degrees": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "reflection_gram_site": [
+    [
+      "1/6",
+      "0",
+      "1/6"
+    ],
+    [
+      "0",
+      "1/288",
+      "0"
+    ],
+    [
+      "1/6",
+      "0",
+      "97/576"
+    ]
+  ],
+  "reflection_gram_link": [
+    [
+      "1/12",
+      "0",
+      "1/12"
+    ],
+    [
+      "0",
+      "1/1152",
+      "0"
+    ],
+    [
+      "1/12",
+      "0",
+      "385/4608"
+    ]
+  ],
+  "source_sha256": "4fa9ad6d9ed3833c719276c6386659b08347c6a40f24004facd482449bd588c7",
+  "elapsed_sec": 0.1461915000109002
+}

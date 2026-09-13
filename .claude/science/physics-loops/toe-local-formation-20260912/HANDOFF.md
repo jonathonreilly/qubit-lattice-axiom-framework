@@ -145,3 +145,12 @@ it gauge. ReducedquantizationdoesnotdefinefullconformalReggepathintegral or
 supplyphysicalclock/matter/axiomlaw. No agents; deadline11:38:24UTC.
 Lockrefreshed03:24:58UTCexpires04:24:58UTC. Campaign5f89a4 is pushed; apparatus
 PR8084 e56bca5 remains the only milestone PR, independent review pending.
+
+Block9 complete at03:44UTC:48 exact checks pass in0.15s. Full mixed constraints,
+explicit gauge elimination, positive heat-sandwich transfer, complete Hermite
+spectrum and exact Fourier covariance are derived. Signed trace cleanup and
+coordinate-order clarification are recorded in BLOCK07_09_AUTHOR_RECHECK.
+Final Block7 recheck12+32 named checks also passes in24s, all225Laurent
+entries zero. Main fetch remains cda8b144. Next is a self-contained linear
+Regge/transfer milestone; Block8 remains a separate nonlinear boundary with
+live alternatives. No independent review and no physical graviton claim.

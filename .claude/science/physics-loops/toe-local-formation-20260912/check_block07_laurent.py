@@ -100,7 +100,7 @@ wrong_sign=(Q+proposed).applyfunc(s.expand)
 assert any(x!=0 for x in wrong_sign)
 # An identity component phase is a distinct, wrong metric map.
 # The full signed coefficient comparison is already independent of this construction.
-wrong_E=[h.applyfunc(lambda x:s.expand(x*s.prod([]))) for h in E]
+wrong_E=[h.copy() for h in E]
 for h in wrong_E:
     for a,b in itertools.combinations(range(4),2):h[a,b]=h[b,a]=s.expand(h[a,b]*w[a]*w[b])
 wrong_gauge=[]

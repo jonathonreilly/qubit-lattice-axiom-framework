@@ -1,0 +1,1 @@
+The first cube trial helper completed all its positive-map and plaquette-expectation assertions, then failed JSON serialization because maximum_link_flux was numpy.int64. The exact initial source is preserved compressed. Casting that receipt field to int fixes serialization; it does not change the calculation.

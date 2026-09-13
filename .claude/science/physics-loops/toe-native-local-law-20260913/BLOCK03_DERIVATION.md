@@ -3,7 +3,8 @@
 Working block03 derivation, 2026-09-13. This uses an explicitly supplied
 interacting model and a named external mathematical theorem. It does not
 derive a Hamiltonian, Born rule, physical clock, gauge photon or gravity.
-The finite native bridge and its geometry remain to be independently checked.
+The finite native bridge has author checks against separate ordinary CAR
+matrices. Independent review remains pending.
 
 ## 1. Exact external input and hypothesis match
 
@@ -103,8 +104,11 @@ The model has no offdiagonal z-cell hopping.
 No hopping along a candidate is required. Diagonal terms and the
 counterterm are functions of the two endpoint number operators; the
 interaction is the adjacent-orbital density product.
-An open finite box must contain the routed paths for its chosen interior
-model hops. Boundary hops exiting the model box are omitted. Periodic
+An open model-cell box maps to a virtual rectangular box of x-width at
+least two. At its maximum x boundary, use the -x detour for a candidate
+y hop; otherwise use +x. Both choices flip the required parity. All
+routed paths then stay inside the virtual box, without extra bulk
+fermions. Boundary hops exiting the model box are omitted. Periodic
 wrap bonds are not asserted to be uniformly short in physical Z³.
 
 ## 3. Native protected path identities
@@ -194,6 +198,10 @@ digital neighbor forever, and F gives both projectors positive mass.
 A native Record retains its four program neighbors. Hence all old
 Records remain supported as well as unchanged. Readiness, code, basis,
 roles, occurrence controls and probabilities remain supplied model inputs.
+The candidate's four-neighbor prerequisite implies that a program BIRTH
+never has an older native candidate Record as a neighbor. Once formed,
+its condition can acquire those native neighbors; the same full-multiset
+kernel must still support its locked content. This is checked explicitly.
 
 Independent rate-gamma clocks on newly enabled program sites and native
 candidates give a concrete supplied occurrence law. Enabled sites are at
@@ -222,10 +230,13 @@ there is one spectator parity state for each bulk state.
 A finite physical torus embedding is NOT claimed to have bounded wrap
 paths. Instead use finite marginals of the infinite interacting state
 provided by the external theorem, with open finite Hamiltonians. For
-fixed local even observables and bounded real times, a finite-range
-commutator/propagation bound can control the missing boundary interactions.
-This required estimate remains to be written and checked before claiming
-the full finite-window interacting realization.
+fixed local observables and bounded real times, the companion
+BLOCK03_BOUNDARY_DERIVATION derives the missing-boundary estimate
+2 exp(24e|t|-d). Its Poisson smearing gives a fixed-Euclidean-time error
+2 exp(24eT-d)+2tau/(pi T). Exact finite checks challenge its actual bond
+norms, boundary distance, nonlinear onsite field evolution, parity map,
+Poisson residue and growing-program support. These checks do not replace
+the analytical infinite-volume argument or external review.
 
 The two-point function is even as a whole, though each charged field is
 odd. Its operator/measurement dictionary needs care. An idle ancilla
@@ -236,17 +247,28 @@ At equal times any neutral two-field product has a direct protected-path
 representation. The external Euclidean propagator, real-time finite-window
 approximation and physical readout must not be conflated.
 
-## 6. Checks and value still pending
+## 6. Author checks and remaining scope
 
-Build the exact Fourier coefficient table of h0 and route EVERY term.
-Use a separate ordinary CAR calculation to challenge all path phases,
-real/imaginary hopping signs, quartic interaction and parity embedding.
-Check the literal two-seed program geometry and global Record support.
-Derive the interacting boundary estimate with constants, and distinguish
-its real-time scope from the theorem's Euclidean infrared assertion.
-Complete source review and novelty search before a milestone PR.
+check_block03.py reconstructs the complete Laurent symbol, routes all its
+nonzero terms on a coordinate stencil, and compares native Pauli matrices
+with ordinary CAR matrices on the entire finite even code. It checks the
+real/imaginary signs, genuinely quartic interaction, counterterm and every
+matrix element of the scalar event's interacting intertwiner. It also
+computes each cell bond's many-body norm from its finite Fock spectrum.
+check_block03_boundary.py checks the exact parity marginal, dressed CAR
+fields and neutral correlators, literal two-seed formation and old Record
+support, a bent three-cell interacting boundary fixture, graph-chain
+counts, the Poisson contour residue and exponential-clock transform.
 
-The new contribution, if these obligations pass, is a bounded native
+Two incorrect fixture expectations are preserved in recovery/block03_boundary:
+program births cannot have older adjacent candidate Records, and straight
+Wilson hopping has W1²=0, so its first distance-two boundary term vanishes.
+The corrected bent path has a nonzero distance-two effect. Neither failure
+was removed by weakening the stated propagation or support theorem.
+The paired JSON files record executed checks and exact runner source hashes.
+Neither author checking nor the external RG import is independent review.
+
+The proposed contribution is a bounded native
 implementation that can keep forming supported local Records while carrying
 an actually interacting theorem-matched Weyl model. The external RG
 theorem is an import; this is not a new proof of it, selection from the

@@ -99,6 +99,41 @@ The spectral theorem justifies the identity also for the complex
 cross-spectral measure of distinct fields. The norm bound |f(t)|<=1
 is sufficient for the tail estimate.
 
+The ground-state input can be obtained without assuming a unique full
+infinite state. Finite Gibbs states have weak-* accumulation points on the
+quasi-local CAR algebra. The boundary bound supplies the limiting local
+dynamics. For any local B, define its positive spectral measure by
+omega_beta(tau_t(B*) B)=integral exp(-itE) dmu_(B,beta)(E).
+It has total mass at most ||B||². The finite-volume trace identity exchanges
+the two matrix elements and gives
+mu_(B,beta)((-infinity,-a])<=exp(-beta*a)||B||² for every a>0,
+using the reversed B* measure on the positive side. This estimate is
+uniform in volume. A uniform second-moment bound follows from the finite
+local norm of [H,B], ensuring tightness of these measures. After the
+volume limit followed by beta to infinity,
+every weak spectral limit has support in [0,infinity). Thus the cyclic
+GNS generator is nonnegative. The local weak-* subsequence may be chosen
+first; the unique two-point limit provided by the imported theorem fixes
+the correlations used here, even if other observables have several
+accumulation limits. No full-state uniqueness is inferred from a two-point
+theorem. The finite Gibbs states conserve number, so their finite
+marginals and limits commute with parity as required above.
+
+For fixed tau>0 the finite-temperature Euclidean autocorrelation is the
+same spectral integral with exp(-tau E). Its negative-energy tail below
+-a is bounded by exp(-(beta-tau)*a)||B||² for beta>tau, by the same trace
+identity. The interval [-a,0] is controlled by continuity, then a tends
+to zero. The nonnegative-energy multiplier is bounded. This identifies
+the imported fixed-time Euclidean limit with the ground-state spectral
+integral used here; complex cross-correlations follow by polarization.
+
+For clarity the Poisson Fourier identity follows directly by a contour
+integral: for energy E>0, integrate exp(-itE) tau/[pi(t²+tau²)] in the
+lower half-plane. Its pole at -i tau and clockwise orientation give
+exp(-tau E). E<0 uses the upper half-plane; E=0 is normalization. The
+spectral theorem then applies this scalar identity to the nonnegative
+generator. This is not an assumed Wick rotation of the open marginal.
+
 Define the FINITE observable
 G_(Lambda,T)(tau)=integral_(-T)^T P_tau(t) f_Lambda(t) dt.
 It is not the open marginal's own imaginary-time Gibbs correlator.
@@ -143,6 +178,12 @@ program margin gives finite site resources of order
 (R+T+gamma T+log(1/epsilon))³, with T itself scaling as tau/epsilon in(B.2).
 The native paths have length at most3 and fixed star support, and there
 is one parity spectator. Optional collision storage/control is additional.
+The one-site margin above contains Record LOCATIONS. Finite physical
+operators also require a fixed outer margin for their cycle/star support;
+seven additional physical lattice steps suffice with the chosen routes.
+Boundary candidates whose protected plaquette is incomplete are not enabled.
+The coupling region is chosen inside this margin, so that this convention
+does not affect the comparison on the stated no-escape event.
 No rate, clock, infinite state or preparation procedure is derived.
 
 The support-chain coefficient and every Fourier/path convention still need

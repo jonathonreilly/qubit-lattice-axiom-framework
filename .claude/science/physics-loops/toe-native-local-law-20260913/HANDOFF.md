@@ -12,7 +12,7 @@ campaign survives at163b6970207addfa36d0afbcefd32e0305b6702d and its remote
 branch. No new checked science was lost; startup notes are reconstructed.
 
 Heartbeat toe-derivation-campaign-continuation is ACTIVE and points here.
-Own lock expires14:08:03UTC; refresh before then. Owner
+Own lock expires14:58:16UTC; refresh before then. Owner
 physics-loop-toe-native-local-law-20260913; holder
 01a097f1-c7c7-7b51-8f2e-399bbbf0c311.
 
@@ -53,3 +53,19 @@ Hamiltonian. PR packaging may follow a stronger coherent unit; it does not
 halt discovery. Continue personally through00:14:41UTC.
 
 BLOCK02 exact spectral construction and source review are in BLOCK02_DERIVATION.md; next target is specified in BLOCK03_GOAL.md.
+
+At14:01UTC, BLOCK03 has an analytical protected-path/Wilson-model derivation
+and a separate boundary/Euclidean proof. The current primary finite checker
+passes92 checks, routing2500 stencil terms and108 open-box terms. The second
+passes60 checks including240 formation events,29400 old Record support visits
+and5145 support conditions including later native Records. Two incorrect
+fixture expectations are preserved with exact source hashes and stderr under
+recovery/block03_boundary. The checkers run in under a second each; the
+infinite-volume proof and imported RG theorem are not computational proofs.
+The source RG theorem is Giuliani/Mastropietro/Porta arXiv1907.00682v3,
+with zeta in[1/2,1), an existential small-coupling interval and a tuned
+analytic counterterm. The boundary proof specializes the even-CAR LR
+commutator recursion, then uses ground-state Poisson smearing. It distinguishes
+exact finite marginals from open-box Gibbs states and includes physical
+cycle/star margins. Complete final-source cold review and a self-contained
+milestone PR are next. Continue to a newly ranked campaign afterwards.

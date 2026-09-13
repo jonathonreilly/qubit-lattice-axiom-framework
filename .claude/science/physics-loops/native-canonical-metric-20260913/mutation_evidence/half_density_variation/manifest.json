@@ -1,0 +1,10 @@
+{
+  "name": "half_density_variation",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "b1467f81a3c8b90201215ae6de540b7c8687c36c6b8f46c69e6c0dde39d90547",
+  "old": "spinvar+s.I*sum((dtrace[i]*SP[i]/4",
+  "new": "spinvar+s.I*sum((dtrace[i]*SP[i]/8",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-i0e6ax65/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-i0e6ax65/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 137, in run\n    eq('half_density_trace_gradient_cancellation',spinvar+s.I*sum((dtrace[i]*SP[i]/8 for i in range(3)),s.zeros(2)),s.I*sum((div[i]*SP[i]/4 for i in range(3)),s.zeros(2)))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-i0e6ax65/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-i0e6ax65/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('half_density_trace_gradient_cancellation', {})\n"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "covariant_zero",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "3dd789f9a563bcd904142fa1c2ec2581bd6fd8ca41e0d7e1932f94e149470e00",
+  "old": "+.25j*np.einsum('i,imn->mn',divh,gam)",
+  "new": "+.5j*np.einsum('i,imn->mn',divh,gam)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-zfbvigjl/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-zfbvigjl/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 175, in run\n    near('covariant_Dirac_connection_variation_'+str(trial),covzero,targetzero,tol=3e-9)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-zfbvigjl/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-zfbvigjl/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('covariant_Dirac_connection_variation_0', {'max_residual': 0.2639489790542001, 'tolerance': 3e-09})\n"
+}

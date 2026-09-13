@@ -1,0 +1,10 @@
+{
+  "name": "metric_curvature_scale",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "e6e5595ef52ce69a5f3dc80256484e152624594dbf69c15ba85f8aa6047c21a9",
+  "old": "-(h*k-k*h)/4)",
+  "new": "-(h*k-k*h)/2)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-4tqw3fsj/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-4tqw3fsj/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 152, in run\n    eq('identity_metric_curvature',-((-h/2)*(-k/2)-(-k/2)*(-h/2)),-(h*k-k*h)/2)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-4tqw3fsj/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-4tqw3fsj/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('identity_metric_curvature', {})\n"
+}

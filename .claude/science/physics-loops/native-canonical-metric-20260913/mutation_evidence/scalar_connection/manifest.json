@@ -1,0 +1,10 @@
+{
+  "name": "scalar_connection",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "d63bcaab23baa33fafc0bda72aac924972fc851f7c4a598866ce6399c90137b2",
+  "old": "*inv[cidx,j]/4",
+  "new": "*inv[cidx,j]/8",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-zfg18k6b/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-zfg18k6b/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 161, in run\n    near('scalar_connection_matches_coordinate_geometry_'+str(trial),zero,-1j*sum((gam[i]@geo['hd'][i] for i in range(3)),np.zeros((2,2),complex)),tol=3e-12)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-zfg18k6b/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-zfg18k6b/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_connection_matches_coordinate_geometry_0', {'max_residual': 0.002488818380984713, 'tolerance': 3e-12})\n"
+}

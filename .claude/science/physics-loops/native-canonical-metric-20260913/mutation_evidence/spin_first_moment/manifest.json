@@ -1,0 +1,10 @@
+{
+  "name": "spin_first_moment",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "fa71cf9fca92a2bb86de36476efe3e1f525b2208d45a1e00d713f6a35e3ae186",
+  "old": ",z/v)",
+  "new": ",2*z/v)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-_zldfm3a/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-_zldfm3a/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 293, in run\n    eq('native_spin_first_moment_'+str(chir),s.diff(spin[0],kz).subs(node),2*z/v)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-_zldfm3a/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-_zldfm3a/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_spin_first_moment_-1', {})\n"
+}

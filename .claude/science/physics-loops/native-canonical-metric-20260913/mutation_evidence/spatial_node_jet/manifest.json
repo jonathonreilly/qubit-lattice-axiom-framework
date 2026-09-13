@@ -1,0 +1,10 @@
+{
+  "name": "spatial_node_jet",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "2ce24eb53a46eb179c6181d439ac5e681ac5d570e1541dc1fde0d422e129e8e5",
+  "old": "s.sin(kz)*s.sin(ky)/v,(z-s.cos(kz))/v",
+  "new": "s.sin(kz)*s.sin(ky)/v,(z-s.cos(kz))*v",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-syvjj_fr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-syvjj_fr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 291, in run\n    eq('native_spatial_vertex_jet_'+str((chir,aa0,jj0,ii0)),s.diff(vv[aa0,jj0],[kx,ky,kz][ii0]).subs(node), (chir if aa0==2 else 1)*int(ii0==jj0))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-syvjj_fr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-syvjj_fr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_spatial_vertex_jet_(-1, 2, 2, 2)', {})\n"
+}

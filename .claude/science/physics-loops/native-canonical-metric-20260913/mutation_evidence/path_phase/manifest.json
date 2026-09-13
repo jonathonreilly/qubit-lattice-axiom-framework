@@ -1,0 +1,10 @@
+{
+  "name": "path_phase",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "2179d81dfd4c4b835fd294020eb4822165845f2580c725ab09926fcabc9344b0",
+  "old": "path=(1j)**(length-1)*ap",
+  "new": "path=(-1j)**(length-1)*ap",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-_oa1hgol/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-_oa1hgol/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 85, in run\n    near('ordered_Majorana_path_'+str(length),path,-1j*majors[0]@majors[length])\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-_oa1hgol/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-_oa1hgol/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('ordered_Majorana_path_2', {'max_residual': 2.0, 'tolerance': 3e-08})\n"
+}

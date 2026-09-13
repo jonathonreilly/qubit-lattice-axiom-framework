@@ -1,0 +1,10 @@
+{
+  "name": "Koszul_variation",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "c2c8a2fc82c194174f02b9bb3fb45372827bfebc0fb8381208514e2cda3e5fb7",
+  "old": "(jets[b][i,a]-jets[a][i,b])/2",
+  "new": "(jets[b][i,a]+jets[a][i,b])/2",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dxuwo2qr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dxuwo2qr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 136, in run\n    eq('normal_coordinate_spin_connection_variation',spinvar,-s.I*sum(((dtrace[i]-div[i])*SP[i]/4 for i in range(3)),s.zeros(2)))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dxuwo2qr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dxuwo2qr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('normal_coordinate_spin_connection_variation', {})\n"
+}

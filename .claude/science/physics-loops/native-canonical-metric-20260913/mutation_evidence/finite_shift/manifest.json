@@ -1,0 +1,10 @@
+{
+  "name": "finite_shift",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "ced70f18636301b80ef8baea0506c939f26cddd8b7c42b00d70309d0c5a16658",
+  "old": "zeta*sn(u,2)-sn(u,2,2)/2",
+  "new": "zeta*sn(u,2)+sn(u,2,2)/2",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-ibnyf0ng/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-ibnyf0ng/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 342, in run\n    check('native_time_shift_leading_Taylor_' +str((chir,count)),corrected<.2*spacing**2,error=corrected,spacing=spacing,normalized_error=corrected/spacing**2,leading_norm=float(np.sqrt(np.mean(np.sum(np.abs(leading)**2,axis=-1)))))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-ibnyf0ng/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_time_shift_leading_Taylor_(-1, 12)', {'error': 0.2226595827032165, 'spacing': 0.5235987755982988, 'normalized_error': 0.8121647688767604, 'leading_norm': 0.10263174493635352})\n"
+}

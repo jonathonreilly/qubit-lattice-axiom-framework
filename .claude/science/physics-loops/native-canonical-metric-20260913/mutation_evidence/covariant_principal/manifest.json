@@ -1,0 +1,10 @@
+{
+  "name": "covariant_principal",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "a2913b3f165c7d8c0600eb39de5048fb11c1f7e60ea52426b739b9782b2bbb19",
+  "old": "targetgam=-.5*np.einsum",
+  "new": "targetgam=-.25*np.einsum",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-svb8b7p4/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-svb8b7p4/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 174, in run\n    near('covariant_Dirac_principal_variation_'+str(trial),covgam,targetgam,tol=3e-9)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-svb8b7p4/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-svb8b7p4/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('covariant_Dirac_principal_variation_0', {'max_residual': 0.17606003989906915, 'tolerance': 3e-09})\n"
+}

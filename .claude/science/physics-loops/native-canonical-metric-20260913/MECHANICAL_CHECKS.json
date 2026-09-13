@@ -1,0 +1,49 @@
+{
+  "source_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "note_sha256": "2b78b3a9bf284b518112c022497b119a414186f6a14d33d97b703cb0833e9c1d",
+  "check_count": 274,
+  "effective_mutations": 34,
+  "links": [
+    {
+      "target": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "kind": "tracked_file"
+    },
+    {
+      "target": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "kind": "tracked_file"
+    },
+    {
+      "target": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "kind": "tracked_file"
+    },
+    {
+      "target": "https://arxiv.org/pdf/gr-qc/9808005",
+      "kind": "web"
+    },
+    {
+      "target": "https://arxiv.org/pdf/math/0303095",
+      "kind": "web"
+    },
+    {
+      "target": "https://arxiv.org/pdf/1504.01034",
+      "kind": "web"
+    },
+    {
+      "target": "https://arxiv.org/pdf/1611.08878",
+      "kind": "web"
+    },
+    {
+      "target": "https://arxiv.org/pdf/gr-qc/9801019",
+      "kind": "web"
+    }
+  ],
+  "cache_sha256": "24bf46d5d2a147901e264263adfbbeb37d5a85437ae7497d568ee0ceace83298",
+  "staged_diff_check": 0,
+  "compiled_python": [
+    "scripts/native_weyl_canonical_metric_constraints_2026_09_13.py",
+    ".claude/science/physics-loops/native-canonical-metric-20260913/check_mutations.py"
+  ],
+  "vocab_findings": 0,
+  "integrated_landing_validation": "pending",
+  "independent_review": "pending"
+}

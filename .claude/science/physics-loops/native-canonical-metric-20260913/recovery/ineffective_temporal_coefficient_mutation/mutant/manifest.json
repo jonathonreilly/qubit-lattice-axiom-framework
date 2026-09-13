@@ -1,0 +1,10 @@
+{
+  "name": "finite_time_spin",
+  "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+  "mutated_sha256": "550e25165a962e058539218d07dcda917623c29cf4a6f444dc2885c44c9ba802",
+  "old": "invc@Vt)+ant(invc@Jc@Ec)",
+  "new": "invc@Vt)*2+ant(invc@Jc@Ec)",
+  "returncode": 0,
+  "effective": false,
+  "stderr_tail": ""
+}

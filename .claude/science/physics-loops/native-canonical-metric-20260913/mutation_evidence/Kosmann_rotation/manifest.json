@@ -1,0 +1,10 @@
+{
+  "name": "Kosmann_rotation",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "47452ae84cc4794bd5aa3f92a08308f88195c91e7d5a25f89b05312c7c78a64c",
+  "old": "-.25j*sum((gam[i]@gam[j]*exterior[i,j]",
+  "new": "-.5j*sum((gam[i]@gam[j]*exterior[i,j]",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-u40si04m/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-u40si04m/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 186, in run\n    near('Kosmann_matches_polar_moment_map_'+str(trial),1j*rho(K),kos,tol=3e-12)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-u40si04m/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-u40si04m/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Kosmann_matches_polar_moment_map_0', {'max_residual': 0.670085122352011, 'tolerance': 3e-12})\n"
+}

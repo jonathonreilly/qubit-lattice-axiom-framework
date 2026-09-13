@@ -1,0 +1,10 @@
+{
+  "name": "Darboux_spinor",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "7c1a99d588b495e289fe1fe81b44e6442e3d72ec5e9306e2c7ece51bf98c435d",
+  "old": "s.Matrix([-pb(aval[i],z) for z in psi])",
+  "new": "s.Matrix([pb(aval[i],z) for z in psi])",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-51z0ht0e/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-51z0ht0e/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 144, in run\n    eq('Darboux_momentum_spinor_'+str(i),s.Matrix([pb(aval[i],z) for z in psi]),srho(aa[i])*psi)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-51z0ht0e/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-51z0ht0e/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Darboux_momentum_spinor_0', {})\n"
+}

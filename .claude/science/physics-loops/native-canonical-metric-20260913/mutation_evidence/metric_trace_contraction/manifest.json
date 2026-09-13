@@ -1,0 +1,10 @@
+{
+  "name": "metric_trace_contraction",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "5529104be8e1ba2836a85b395e32065382ff60c31f382897046a84841db970cb",
+  "old": "+(2*lam-1)*s.trace(mom)*s.trace(Hess)",
+  "new": "+(3*lam-1)*s.trace(mom)*s.trace(Hess)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-f65x42fw/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-f65x42fw/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 233, in run\n    eq('metric_curvature_lapse_contraction',s.trace((mom-lam*s.trace(mom)*s.eye(3))*(Hess-s.trace(Hess)*s.eye(3))),s.trace(mom*Hess)+(3*lam-1)*s.trace(mom)*s.trace(Hess))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-f65x42fw/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-f65x42fw/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('metric_curvature_lapse_contraction', {})\n"
+}

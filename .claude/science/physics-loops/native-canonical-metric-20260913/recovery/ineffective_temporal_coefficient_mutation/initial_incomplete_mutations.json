@@ -1,0 +1,332 @@
+[
+  {
+    "name": "CAR_sign",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "2ec200b9e2e47ec378e65b3e26984edae550de1d139df0528eebd83c6e4ce751",
+    "old": "(-1)**((bits&((1<<site)-1)).bit_count())",
+    "new": "1",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dkq526w6/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dkq526w6/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 83, in run\n    near('real_path_hopping_'+str(length),1j*path@(signs[0]-signs[length])/2,real)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dkq526w6/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dkq526w6/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('real_path_hopping_1', {'max_residual': 2.0, 'tolerance': 3e-08})\n"
+  },
+  {
+    "name": "path_phase",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "3b17526cbc483379d0528e5695e0eef793839308603351310b6cb11fdd0e172f",
+    "old": "path=(1j)**(length-1)*ap",
+    "new": "path=(-1j)**(length-1)*ap",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-oe61oc1j/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-oe61oc1j/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 80, in run\n    near('ordered_Majorana_path_'+str(length),path,-1j*majors[0]@majors[length])\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-oe61oc1j/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-oe61oc1j/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('ordered_Majorana_path_2', {'max_residual': 2.0, 'tolerance': 3e-08})\n"
+  },
+  {
+    "name": "path_imaginary",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "da501439325594faad8784396ccee790d6a5e09b67fe337fa5e4e92a3f133461",
+    "old": "-path@(np.eye(dim)-signs[0]@signs[length])/2,imag",
+    "new": "path@(np.eye(dim)-signs[0]@signs[length])/2,imag",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-lz1m0me7/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-lz1m0me7/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 84, in run\n    near('imaginary_path_hopping_'+str(length),path@(np.eye(dim)-signs[0]@signs[length])/2,imag)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-lz1m0me7/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-lz1m0me7/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('imaginary_path_hopping_1', {'max_residual': 2.0, 'tolerance': 3e-08})\n"
+  },
+  {
+    "name": "path_range",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "8b8d754cacb1fbba2fec4bd7085fe15ed03544d66ceaeddf8d179b39aa69aefb",
+    "old": "if d==4:continue",
+    "new": "if d==3:continue",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-3irv0til/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-3irv0til/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 122, in run\n    check('protected_vertex_paths_'+str(box),max(lengths)<=4,hops_checked=len(lengths),maximum_length=max(lengths))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-3irv0til/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('protected_vertex_paths_(1, 3, 3)', {'hops_checked': 296, 'maximum_length': 99})\n"
+  },
+  {
+    "name": "Koszul_variation",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "61a504938473d9ddc193061c35461594cc63e44d74da72478490f3b07526f6ce",
+    "old": "(jets[b][i,a]-jets[a][i,b])/2",
+    "new": "(jets[b][i,a]+jets[a][i,b])/2",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-2ztdrtj3/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-2ztdrtj3/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 131, in run\n    eq('normal_coordinate_spin_connection_variation',spinvar,-s.I*sum(((dtrace[i]-div[i])*SP[i]/4 for i in range(3)),s.zeros(2)))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-2ztdrtj3/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-2ztdrtj3/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('normal_coordinate_spin_connection_variation', {})\n"
+  },
+  {
+    "name": "half_density_variation",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "e09822f67344cc78a61992a6481977438c8bfca76d1fbe35a11c9ce41c5874b3",
+    "old": "spinvar+s.I*sum((dtrace[i]*SP[i]/4",
+    "new": "spinvar+s.I*sum((dtrace[i]*SP[i]/8",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-ndig56wd/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-ndig56wd/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 132, in run\n    eq('half_density_trace_gradient_cancellation',spinvar+s.I*sum((dtrace[i]*SP[i]/8 for i in range(3)),s.zeros(2)),s.I*sum((div[i]*SP[i]/4 for i in range(3)),s.zeros(2)))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-ndig56wd/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-ndig56wd/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('half_density_trace_gradient_cancellation', {})\n"
+  },
+  {
+    "name": "Darboux_spinor",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "bc2c68e0acdf8b3edbf34fbf7f235141facbceb47f29d97dc147851f17095ba2",
+    "old": "s.Matrix([-pb(aval[i],z) for z in psi])",
+    "new": "s.Matrix([pb(aval[i],z) for z in psi])",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-i2tj5r_y/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-i2tj5r_y/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 139, in run\n    eq('Darboux_momentum_spinor_'+str(i),s.Matrix([pb(aval[i],z) for z in psi]),srho(aa[i])*psi)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-i2tj5r_y/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-i2tj5r_y/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Darboux_momentum_spinor_0', {})\n"
+  },
+  {
+    "name": "configuration_curvature",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "06632c126ca20bd600d83eb3d9ebbde1623035717d419ee9279c2a33bbee44a2",
+    "old": "curv=deriv+aa[i]*aa[j]-aa[j]*aa[i]",
+    "new": "curv=deriv-aa[i]*aa[j]+aa[j]*aa[i]",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-vteggas7/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-vteggas7/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 144, in run\n    eq('connection_curvature_'+str((i,j)),curv,expected)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-vteggas7/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-vteggas7/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('connection_curvature_(0, 1)', {})\n"
+  },
+  {
+    "name": "Darboux_curvature",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "9622695635452a4ccc19c1eb8a0917ee8a7781ebfb18f0c34254874b5854abf6",
+    "old": "(s.I*psid*srho(deriv)*psi)[0]+pb(aval[i],aval[j])",
+    "new": "(s.I*psid*srho(deriv)*psi)[0]-pb(aval[i],aval[j])",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-iomwjgdb/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-iomwjgdb/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 145, in run\n    eq('Darboux_momentum_curvature_'+str((i,j)),(s.I*psid*srho(deriv)*psi)[0]-pb(aval[i],aval[j]),(s.I*psid*srho(curv)*psi)[0])\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-iomwjgdb/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-iomwjgdb/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Darboux_momentum_curvature_(0, 1)', {})\n"
+  },
+  {
+    "name": "metric_curvature_scale",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "a64dfc463fdb51cf6d0573fa8c555c55c8dc5a7234691b267f15cc6c505097f8",
+    "old": "-(h*k-k*h)/4)",
+    "new": "-(h*k-k*h)/2)",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-3_wdm7cs/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-3_wdm7cs/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 147, in run\n    eq('identity_metric_curvature',-((-h/2)*(-k/2)-(-k/2)*(-h/2)),-(h*k-k*h)/2)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-3_wdm7cs/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-3_wdm7cs/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('identity_metric_curvature', {})\n"
+  },
+  {
+    "name": "scalar_connection",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "42d0c03bc925cc9fc7926d66fd20be04b0f636c02afcf6c0bd819ddd20e3f67e",
+    "old": "*inv[cidx,j]/4",
+    "new": "*inv[cidx,j]/8",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-o666q9ac/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-o666q9ac/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 156, in run\n    near('scalar_connection_matches_coordinate_geometry_'+str(trial),zero,-1j*sum((gam[i]@geo['hd'][i] for i in range(3)),np.zeros((2,2),complex)),tol=3e-12)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-o666q9ac/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-o666q9ac/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_connection_matches_coordinate_geometry_0', {'max_residual': 0.002488818380984713, 'tolerance': 3e-12})\n"
+  },
+  {
+    "name": "covariant_principal",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "43680aa8cb252cc0f7adc7604d1e323281d3ef209776b0b6f22a3f49783711b4",
+    "old": "targetgam=-.5*np.einsum",
+    "new": "targetgam=-.25*np.einsum",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-khgyt57o/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-khgyt57o/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 169, in run\n    near('covariant_Dirac_principal_variation_'+str(trial),covgam,targetgam,tol=3e-9)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-khgyt57o/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-khgyt57o/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('covariant_Dirac_principal_variation_0', {'max_residual': 0.17606003989906915, 'tolerance': 3e-09})\n"
+  },
+  {
+    "name": "covariant_zero",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "3d2fc42733f6678abb0a43aef7c94f13b0bffe93a283c196f03e9b0d155b89d5",
+    "old": "+.25j*np.einsum('i,imn->mn',divh,gam)",
+    "new": "+.5j*np.einsum('i,imn->mn',divh,gam)",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-5oxc8q6z/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-5oxc8q6z/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 170, in run\n    near('covariant_Dirac_connection_variation_'+str(trial),covzero,targetzero,tol=3e-9)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-5oxc8q6z/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-5oxc8q6z/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('covariant_Dirac_connection_variation_0', {'max_residual': 0.2639489790542001, 'tolerance': 3e-09})\n"
+  },
+  {
+    "name": "polar_rotation",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "f3d1841e62c3e65e69abc850f1c9d7a039a133b253a2e97593a113682446f270",
+    "old": "(ev[:,None]+ev[None,:])",
+    "new": "(2*ev[:,None]+ev[None,:])",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-402ypfxt/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-402ypfxt/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 175, in run\n    near('polar_frame_variation_symmetric_'+str(trial),VE,VE.T,tol=3e-12)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-402ypfxt/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-402ypfxt/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('polar_frame_variation_symmetric_0', {'max_residual': 0.8837076498239271, 'tolerance': 3e-12})\n"
+  },
+  {
+    "name": "polar_connection",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "b087889c04686fee9e5c6ce9b9c4eeeae22745ed15ae9c2bc6f7e88fea9cabeb",
+    "old": "Om+AP,K",
+    "new": "Om-AP,K",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-b_own8dp/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-b_own8dp/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 177, in run\n    near('connection_polar_moment_map_'+str(trial),Om-AP,K,tol=3e-12)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-b_own8dp/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-b_own8dp/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('connection_polar_moment_map_0', {'max_residual': 0.22593231876885211, 'tolerance': 3e-12})\n"
+  },
+  {
+    "name": "Kosmann_rotation",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "66c334862348fae97999260e7304be56661e09df644b48101c739243bd9f5fb0",
+    "old": "-.25j*sum((gam[i]@gam[j]*exterior[i,j]",
+    "new": "-.5j*sum((gam[i]@gam[j]*exterior[i,j]",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-vu6ldtdj/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-vu6ldtdj/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 181, in run\n    near('Kosmann_matches_polar_moment_map_'+str(trial),1j*rho(K),kos,tol=3e-12)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-vu6ldtdj/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-vu6ldtdj/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Kosmann_matches_polar_moment_map_0', {'max_residual': 0.670085122352011, 'tolerance': 3e-12})\n"
+  },
+  {
+    "name": "normal_bracket",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "2f1113ff3f865865f2574340777063a8c1a2af55d311f850abb6009186422f04",
+    "old": "first.append(1j*fij)",
+    "new": "first.append(-1j*fij)",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-2n77_hlv/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-2n77_hlv/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 202, in run\n    near('curved_normal_bracket_principal_'+str(trial),first,-1j*drift[:,None,None]*np.eye(2),tol=3e-11)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-2n77_hlv/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-2n77_hlv/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('curved_normal_bracket_principal_0', {'max_residual': 6.7427262782294815, 'tolerance': 3e-11})\n"
+  },
+  {
+    "name": "normal_bracket_connection",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "100087f78a1ed261fc4770efbe5591d6157d691a1954ffa850d1433e96408913",
+    "old": "targetzero-=.25j*sum",
+    "new": "targetzero-=.5j*sum",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-djk1c50o/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-djk1c50o/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 203, in run\n    near('curved_normal_bracket_zero_order_'+str(trial),1j*zbracket,targetzero,tol=3e-11)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-djk1c50o/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-djk1c50o/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('curved_normal_bracket_zero_order_0', {'max_residual': 1.6941418528914256, 'tolerance': 3e-11})\n"
+  },
+  {
+    "name": "ADM_temporal",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "fa6838e0832b3469ca96ccc05ae5ec40e2130d6ac7ada8ee21429699e95f15d8",
+    "old": "A-E.T@exterior@E",
+    "new": "A+E.T@exterior@E",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-xtdkv5oi/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-xtdkv5oi/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 219, in run\n    near('full_ADM_temporal_rotation_'+str(trial),temporal,A+E.T@exterior@E,tol=3e-11)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-xtdkv5oi/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 30, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-xtdkv5oi/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('full_ADM_temporal_rotation_0', {'max_residual': 2.6803404894080445, 'tolerance': 3e-11})\n"
+  },
+  {
+    "name": "metric_trace_contraction",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "5f4ace9e1337f8b571edc537e22f340aa933f3b2d76a098f4a2b21584db3c5d0",
+    "old": "+(2*lam-1)*s.trace(mom)*s.trace(Hess)",
+    "new": "+(3*lam-1)*s.trace(mom)*s.trace(Hess)",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-hpcefo_3/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-hpcefo_3/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 226, in run\n    eq('metric_curvature_lapse_contraction',s.trace((mom-lam*s.trace(mom)*s.eye(3))*(Hess-s.trace(Hess)*s.eye(3))),s.trace(mom*Hess)+(3*lam-1)*s.trace(mom)*s.trace(Hess))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-hpcefo_3/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-hpcefo_3/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('metric_curvature_lapse_contraction', {})\n"
+  },
+  {
+    "name": "torus_trace",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "4aefb6fb7c26342593c34689d3f59933f1b2e4115337ee919eb4ed00dbb4a016",
+    "old": "trace_witness,s.pi)",
+    "new": "trace_witness,2*s.pi)",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-xjfolle4/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-xjfolle4/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 229, in run\n    eq('trace_witness_nonzero',trace_witness,2*s.pi)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-xjfolle4/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-xjfolle4/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('trace_witness_nonzero', {})\n"
+  },
+  {
+    "name": "product_normal",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "1f825e5026420827b9eb55e9599f824973fa09196eb1d0375a8c052ad62a9b1d",
+    "old": "cvar,s.Rational(1,6)",
+    "new": "cvar,s.Rational(1,3)",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-w70gflw0/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-w70gflw0/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 238, in run\n    eq('normal_product_bracket_scalar_defect',cvar,s.Rational(1,3))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-w70gflw0/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-w70gflw0/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('normal_product_bracket_scalar_defect', {})\n"
+  },
+  {
+    "name": "curvature_Euler",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "a3fe380a134b2f193c5de8a572a0c7847bb8ab0b91c3def93be2a62efab4b6e3",
+    "old": "+gginv*hn*gginv-gginv*lap",
+    "new": "-gginv*hn*gginv-gginv*lap",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-f62t8pwz/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-f62t8pwz/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 253, in run\n    eq('scalar_curvature_Euler_variation_'+str(i),euler,var[i,i])\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-f62t8pwz/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-f62t8pwz/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_curvature_Euler_variation_0', {})\n"
+  },
+  {
+    "name": "Legendre_trace",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "3840ab6920da081ec2c4087e08e3a9c106e0611957bb2dc2bb4ca9a0a258972d",
+    "old": "gm*pp*gm-ptr*gm/2",
+    "new": "gm*pp*gm-ptr*gm/3",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-eu_hk7ag/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-eu_hk7ag/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 259, in run\n    eq('metric_Legendre_inverse',recovered,pp)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-eu_hk7ag/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-eu_hk7ag/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('metric_Legendre_inverse', {})\n"
+  },
+  {
+    "name": "ADM_Lagrangian",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "4a6e007f49525163f4843049172af3e56912b0f0c03774850139e383b5de412a",
+    "old": "-ktr**2+rr-alpha*cc0",
+    "new": "-ktr**2+rr+alpha*cc0",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-l5g8f6eq/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-l5g8f6eq/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 261, in run\n    eq('metric_ADM_Lagrangian',2*s.trace(pp*extr)-ham,sq/alpha*(s.trace(gmi*extr*gmi*extr)-ktr**2+rr+alpha*cc0))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-l5g8f6eq/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-l5g8f6eq/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('metric_ADM_Lagrangian', {})\n"
+  },
+  {
+    "name": "periodic_product",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "df85e85a2f325b652a08cdc05658145e45e01df22f422ade2828a2efd1d61057",
+    "old": "curvature=-s.I*srho(kk)*field",
+    "new": "curvature=s.I*srho(kk)*field",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-bg2efcfr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-bg2efcfr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 273, in run\n    eq('periodic_spatial_joint_constraint_identity',canonical+curvature,-op(bracket,field))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-bg2efcfr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-bg2efcfr/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('periodic_spatial_joint_constraint_identity', {})\n"
+  },
+  {
+    "name": "spatial_node_jet",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "6d7fd01a70be9efa36d8f2cfcc2e856fbb5e51dd276aa2feac9f882c5a3d7dbd",
+    "old": "s.sin(kz)*s.sin(ky)/v,(z-s.cos(kz))/v",
+    "new": "s.sin(kz)*s.sin(ky)/v,(z-s.cos(kz))*v",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-he4hoa70/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-he4hoa70/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 284, in run\n    eq('native_spatial_vertex_jet_'+str((chir,aa0,jj0,ii0)),s.diff(vv[aa0,jj0],[kx,ky,kz][ii0]).subs(node), (chir if aa0==2 else 1)*int(ii0==jj0))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-he4hoa70/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-he4hoa70/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_spatial_vertex_jet_(-1, 2, 2, 2)', {})\n"
+  },
+  {
+    "name": "shift_node_jet",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "7b8cad3837042629389b1551127d926abbc071cd42038e9585bd51f3cf378863",
+    "old": "(z-s.cos(kz))*s.sin(kz)/v]);spin",
+    "new": "(z-s.cos(kz))*s.sin(kz)*v]);spin",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dp1klnnz/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dp1klnnz/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 285, in run\n    eq('native_shift_second_moment_'+str(chir),s.diff(shift[2],kz,2).subs(node),3*chir*z)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dp1klnnz/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-dp1klnnz/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_shift_second_moment_-1', {})\n"
+  },
+  {
+    "name": "spin_node",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "9751a30a2e273d3b95da4a9ff2f506380687ec2f14a4201140284da170fd7447",
+    "old": "spin=s.Matrix([s.sin(kz)/v,s.sin(kz)/v,1])",
+    "new": "spin=s.Matrix([s.sin(kz)/v,s.sin(kz)*v,1])",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-75zjfhsx/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-75zjfhsx/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 292, in run\n    eq('native_temporal_spin_vertex_'+str(chir),native.subs(node).applyfunc(s.simplify),spin_target)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-75zjfhsx/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-75zjfhsx/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_temporal_spin_vertex_-1', {})\n"
+  },
+  {
+    "name": "shift_second_moment",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "4f9722d4df6a59112a495041f62c25db42b05badff5cf9a8d00bf26c00e64be6",
+    "old": ",3*chir*z)",
+    "new": ",2*chir*z)",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-iakthp0z/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-iakthp0z/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 285, in run\n    eq('native_shift_second_moment_'+str(chir),s.diff(shift[2],kz,2).subs(node),2*chir*z)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-iakthp0z/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-iakthp0z/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_shift_second_moment_-1', {})\n"
+  },
+  {
+    "name": "spin_first_moment",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "8b1d1c3444f7a466bf449a3cbc6f2f66b20acab960734590753e7449e96b77fc",
+    "old": ",z/v)",
+    "new": ",2*z/v)",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-tqev1_91/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-tqev1_91/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 286, in run\n    eq('native_spin_first_moment_'+str(chir),s.diff(spin[0],kz).subs(node),2*z/v)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-tqev1_91/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-tqev1_91/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_spin_first_moment_-1', {})\n"
+  },
+  {
+    "name": "finite_shift",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "6a54abc0a9f8be8e53546a26221a358f4aea61169111b64f9c77db1aec65c5e5",
+    "old": "zeta*sn(u,2)-sn(u,2,2)/2",
+    "new": "zeta*sn(u,2)+sn(u,2,2)/2",
+    "returncode": 1,
+    "effective": true,
+    "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-28jdnt97/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 351, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-28jdnt97/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 335, in run\n    check('native_time_shift_leading_Taylor_' +str((chir,count)),corrected<.2*spacing**2,error=corrected,spacing=spacing,normalized_error=corrected/spacing**2,leading_norm=float(np.sqrt(np.mean(np.sum(np.abs(leading)**2,axis=-1)))))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-28jdnt97/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_time_shift_leading_Taylor_(-1, 12)', {'error': 0.2226595827032165, 'spacing': 0.5235987755982988, 'normalized_error': 0.8121647688767604, 'leading_norm': 0.10263174493635352})\n"
+  },
+  {
+    "name": "finite_time_spin",
+    "original_sha256": "8c5a6c7f649041e9b834bf4a6def3ffae6900538fdae9cbc42de31bfbfbbdcb4",
+    "mutated_sha256": "550e25165a962e058539218d07dcda917623c29cf4a6f444dc2885c44c9ba802",
+    "old": "invc@Vt)+ant(invc@Jc@Ec)",
+    "new": "invc@Vt)*2+ant(invc@Jc@Ec)",
+    "returncode": 0,
+    "effective": false,
+    "stderr_tail": ""
+  }
+]

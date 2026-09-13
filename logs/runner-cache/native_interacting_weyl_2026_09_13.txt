@@ -1,0 +1,171 @@
+===== runner cache v1 =====
+runner: scripts/native_interacting_weyl_2026_09_13.py
+runner_sha256: d3bcace05eae5ea904d580a18a0e768246ebac7b2daa392515c20aedc7dd4228
+input_fingerprint_sha256: 2e13aaa35b1da60fba8decf730c353219b0021886a61eac78d45488bb22cebdd
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.78
+status: ok
+----- stdout -----
+PASS model: complete_Laurent_Wilson_symbol
+PASS model: source_inversion_symmetry
+PASS model: source_z_reflection
+PASS model: source_particle_hole_reflection
+PASS model: simple_time_reversal_is_broken
+PASS model: exact_node_-1
+PASS model: node_z_velocity_-1
+PASS model: nonzero_quadratic_source_coefficient_-1
+PASS model: exact_node_1
+PASS model: node_z_velocity_1
+PASS model: nonzero_quadratic_source_coefficient_1
+PASS model: zeta_zero_violates_chosen_quadratic_hypothesis
+PASS model: bond_squared_singular_values_0
+PASS model: bond_squared_singular_values_1
+PASS model: bond_squared_singular_values_2
+PASS model: every_nonzero_Wilson_hop_has_protected_bounded_path
+PASS model: open_box_routes_need_no_extra_bulk_fermions
+PASS model: native_cycle_projector
+PASS model: native_code_dimension
+PASS model: native_vacuum_rank_one
+PASS model: native_CAR_isometry
+PASS model: native_CAR_full_code_range
+PASS model: native_CAR_number_0
+PASS model: native_CAR_number_1
+PASS model: native_CAR_number_2
+PASS model: native_CAR_number_3
+PASS model: path_involution_[0, 1]
+PASS model: path_hermitian_[0, 1]
+PASS model: path_native_CAR_[0, 1]
+PASS model: real_hopping_sign_[0, 1]
+PASS model: imaginary_hopping_sign_[0, 1]
+PASS model: path_involution_[0, 2]
+PASS model: path_hermitian_[0, 2]
+PASS model: path_native_CAR_[0, 2]
+PASS model: real_hopping_sign_[0, 2]
+PASS model: imaginary_hopping_sign_[0, 2]
+PASS model: path_involution_[0, 2, 3]
+PASS model: path_hermitian_[0, 2, 3]
+PASS model: path_native_CAR_[0, 2, 3]
+PASS model: real_hopping_sign_[0, 2, 3]
+PASS model: imaginary_hopping_sign_[0, 2, 3]
+PASS model: path_involution_[1, 0, 2]
+PASS model: path_hermitian_[1, 0, 2]
+PASS model: path_native_CAR_[1, 0, 2]
+PASS model: real_hopping_sign_[1, 0, 2]
+PASS model: imaginary_hopping_sign_[1, 0, 2]
+PASS model: path_involution_[1, 0, 2, 3]
+PASS model: path_hermitian_[1, 0, 2, 3]
+PASS model: path_native_CAR_[1, 0, 2, 3]
+PASS model: real_hopping_sign_[1, 0, 2, 3]
+PASS model: imaginary_hopping_sign_[1, 0, 2, 3]
+PASS model: path_involution_[2, 3]
+PASS model: path_hermitian_[2, 3]
+PASS model: path_native_CAR_[2, 3]
+PASS model: real_hopping_sign_[2, 3]
+PASS model: imaginary_hopping_sign_[2, 3]
+PASS model: quartic_density_interaction_dictionary
+PASS model: quartic_is_not_even_sector_constant
+PASS model: full_complex_interacting_native_CAR_H
+PASS model: interaction_preserves_candidate_Record
+PASS model: interaction_preserves_cycle
+PASS model: pulse_unitarity_polynomial
+PASS model: interaction_preserves_pulse
+PASS model: scalar_branch_full_reference_identity_-1
+PASS model: scalar_branch_interacting_intertwiner_-1
+PASS model: branch_Record_locked_-1
+PASS model: scalar_branch_full_reference_identity_1
+PASS model: scalar_branch_interacting_intertwiner_1
+PASS model: branch_Record_locked_1
+PASS model: actual_four_neighbor_pulse_normalized_-4
+PASS model: actual_four_neighbor_pulse_bias_-4
+PASS model: actual_kernel_branch_probability_(-4, -1)
+PASS model: actual_kernel_branch_probability_(-4, 1)
+PASS model: actual_four_neighbor_pulse_normalized_-2
+PASS model: actual_four_neighbor_pulse_bias_-2
+PASS model: actual_kernel_branch_probability_(-2, -1)
+PASS model: actual_kernel_branch_probability_(-2, 1)
+PASS model: actual_four_neighbor_pulse_normalized_0
+PASS model: actual_four_neighbor_pulse_bias_0
+PASS model: actual_kernel_branch_probability_(0, -1)
+PASS model: actual_kernel_branch_probability_(0, 1)
+PASS model: actual_four_neighbor_pulse_normalized_2
+PASS model: actual_four_neighbor_pulse_bias_2
+PASS model: actual_kernel_branch_probability_(2, -1)
+PASS model: actual_kernel_branch_probability_(2, 1)
+PASS model: actual_four_neighbor_pulse_normalized_4
+PASS model: actual_four_neighbor_pulse_bias_4
+PASS model: actual_kernel_branch_probability_(4, -1)
+PASS model: actual_kernel_branch_probability_(4, 1)
+PASS model: actual_bond_Fock_norm_0
+PASS model: actual_bond_Fock_norm_1
+PASS model: actual_bond_Fock_norm_2
+PASS boundary: extended_state_total_parity_even
+PASS boundary: exact_bulk_marginal_both_parities_and_coherences
+PASS boundary: extended_state_normalized
+PASS boundary: extended_state_positive
+PASS boundary: dressed_field_even_0
+PASS boundary: dressed_CAR_(0, 0)
+PASS boundary: dressed_neutral_pair_(0, 0)
+PASS boundary: dressed_CAR_(0, 1)
+PASS boundary: dressed_neutral_pair_(0, 1)
+PASS boundary: dressed_CAR_(0, 2)
+PASS boundary: dressed_neutral_pair_(0, 2)
+PASS boundary: dressed_CAR_(0, 3)
+PASS boundary: dressed_neutral_pair_(0, 3)
+PASS boundary: dressed_field_square_zero_0
+PASS boundary: dressed_field_even_1
+PASS boundary: dressed_CAR_(1, 0)
+PASS boundary: dressed_neutral_pair_(1, 0)
+PASS boundary: dressed_CAR_(1, 1)
+PASS boundary: dressed_neutral_pair_(1, 1)
+PASS boundary: dressed_CAR_(1, 2)
+PASS boundary: dressed_neutral_pair_(1, 2)
+PASS boundary: dressed_CAR_(1, 3)
+PASS boundary: dressed_neutral_pair_(1, 3)
+PASS boundary: dressed_field_square_zero_1
+PASS boundary: dressed_field_even_2
+PASS boundary: dressed_CAR_(2, 0)
+PASS boundary: dressed_neutral_pair_(2, 0)
+PASS boundary: dressed_CAR_(2, 1)
+PASS boundary: dressed_neutral_pair_(2, 1)
+PASS boundary: dressed_CAR_(2, 2)
+PASS boundary: dressed_neutral_pair_(2, 2)
+PASS boundary: dressed_CAR_(2, 3)
+PASS boundary: dressed_neutral_pair_(2, 3)
+PASS boundary: dressed_field_square_zero_2
+PASS boundary: dressed_field_even_3
+PASS boundary: dressed_CAR_(3, 0)
+PASS boundary: dressed_neutral_pair_(3, 0)
+PASS boundary: dressed_CAR_(3, 1)
+PASS boundary: dressed_neutral_pair_(3, 1)
+PASS boundary: dressed_CAR_(3, 2)
+PASS boundary: dressed_neutral_pair_(3, 2)
+PASS boundary: dressed_CAR_(3, 3)
+PASS boundary: dressed_neutral_pair_(3, 3)
+PASS boundary: dressed_field_square_zero_3
+PASS boundary: interacting_H_leaves_ancilla_idle
+PASS boundary: dressed_correlator_time_derivative
+PASS boundary: initial_seed_Records_supported_before_any_new_event
+PASS boundary: actual_two_seed_supported_growth_prefix
+PASS boundary: candidate_waits_for_all_its_program_neighbors
+PASS boundary: old_program_support_rechecked_with_actual_native_neighbors
+PASS boundary: literal_NN_multisets_under_all_proper_rotations_and_translation
+PASS boundary: straight_Wilson_hopping_is_nilpotent
+PASS boundary: bent_Wilson_hopping_does_not_cancel
+PASS boundary: odd_field_disjoint_boundary_commutator
+PASS boundary: boundary_distance_two_Taylor_order_0
+PASS boundary: boundary_distance_two_Taylor_order_1
+PASS boundary: boundary_difference_really_starts_at_distance_two
+PASS boundary: actual_nonlinear_onsite_field_derivative
+PASS boundary: intersecting_bond_chain_count_from_actual_graph
+PASS boundary: Poisson_positive_energy_contour_residue
+PASS boundary: actual_clock_Laplace_transform
+per_element: Exact finite native Pauli and ordinary CAR matrices check operator phases, quartic terms and event intertwining.
+per_site: Physical midpoint placement, finite protected routes and all actual recorded nearest neighbors are enumerated.
+per_mode: The Wilson symbol and tangent coefficients are exact identities; the interacting RG theorem remains an external import.
+per_block: Finite even-code and parity-extension fixtures check the full stated operator maps, not selected state means alone.
+lattice_wide: Analytical path, support, propagation and probability arguments are in the note; the runner does not enumerate infinity.
+TOTAL: PASS=153 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,5 @@
+{
+  "source_sha256": "0ad49c5e3136e11ae951aaccc09265030805e3104394a091557be90682277b35",
+  "failure": "boundary_difference_really_starts_at_distance_two",
+  "diagnosis": "The straight x-direction Wilson hopping matrix W1 is nilpotent: W1 squared equals zero. The claimed boundary estimate allows delayed propagation; the checker wrongly required a nonzero leading distance-two term for this special path. Use an x-then-y bent cell path, whose W1 W2 is nonzero, to test a nonvanishing distance-two boundary effect."
+}

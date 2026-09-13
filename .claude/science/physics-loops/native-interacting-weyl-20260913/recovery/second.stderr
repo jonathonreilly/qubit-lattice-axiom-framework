@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block03_boundary.py", line 206, in <module>
+    out=run()
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block03_boundary.py", line 165, in run
+    check('boundary_difference_really_starts_at_distance_two',small!=large)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block03_boundary.py", line 20, in check
+    assert bool(truth), name
+           ~~~~^^^^^^^
+AssertionError: boundary_difference_really_starts_at_distance_two

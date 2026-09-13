@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block03_boundary.py", line 201, in <module>
+    out=run()
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block03_boundary.py", line 117, in run
+    check('program_kernel_really_includes_native_neighbors',mixed_program_conditions>0)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block03_boundary.py", line 20, in check
+    assert bool(truth), name
+           ~~~~^^^^^^^
+AssertionError: program_kernel_really_includes_native_neighbors

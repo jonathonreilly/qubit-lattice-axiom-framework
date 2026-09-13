@@ -1,0 +1,146 @@
+{
+  "source_sha256": "d3bcace05eae5ea904d580a18a0e768246ebac7b2daa392515c20aedc7dd4228",
+  "effective_mutations": 14,
+  "mutations": [
+    {
+      "name": "Wilson_imaginary_sign",
+      "family": "model",
+      "old": "W = [(-Z+s.I*X)/2,",
+      "new": "W = [(-Z-s.I*X)/2,",
+      "mutated_sha256": "f1719438a4c8aee063bc11401ae70caedf8845458f843c3225533d00d55a2c16",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/Wilson_imaginary_sign.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_model()\n                                                                                                                                                                                                                                                                         ~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/Wilson_imaginary_sign.py\", line 121, in run_model\n    eq('complete_Laurent_Wilson_symbol', assembled, target)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/Wilson_imaginary_sign.py\", line 109, in eq\n    check(name, all(s.simplify(x) == 0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/Wilson_imaginary_sign.py\", line 104, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: complete_Laurent_Wilson_symbol\n",
+      "expected_failure_text": "complete_Laurent_Wilson_symbol"
+    },
+    {
+      "name": "candidate_path_shortcut",
+      "family": "model",
+      "old": "return [v, add(v, detour), add(w, detour), w]",
+      "new": "return [v,w]",
+      "mutated_sha256": "04d67166eb994c31de11ef971e5802dd087bfc5f0f56dcf6137346c4f085c320",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/candidate_path_shortcut.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_model()\n                                                                                                                                                                                                                                                                           ~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/candidate_path_shortcut.py\", line 156, in run_model\n    assert all(sum(abs(x-y) for x,y in zip(b,c)) == 1\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n               and not candidate(b,c) for b,c in zip(p,p[1:])), p\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [(-4, -2, -2), (-4, -3, -2)]\n",
+      "expected_failure_text": "AssertionError"
+    },
+    {
+      "name": "path_phase",
+      "family": "model",
+      "old": "s.I**(len(vs)-2)*out",
+      "new": "s.I**(len(vs)-1)*out",
+      "mutated_sha256": "71d02bc69f336921e4999dbb5488f31b1c5db261e7493212458eed4190fce034",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/path_phase.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_model()\n                                                                                                                                                                                                                                                              ~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/path_phase.py\", line 225, in run_model\n    eq('path_involution_'+str(p), ap*ap, ident)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/path_phase.py\", line 109, in eq\n    check(name, all(s.simplify(x) == 0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/path_phase.py\", line 104, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: path_involution_[0, 1]\n",
+      "expected_failure_text": "path_involution"
+    },
+    {
+      "name": "real_hopping_sign",
+      "family": "model",
+      "old": "T = s.I*ap*(bv[v]-bv[w])/2",
+      "new": "T = -s.I*ap*(bv[v]-bv[w])/2",
+      "mutated_sha256": "6d0a591b0f33701d02b8c125c92bb41a173879bd4f336972b6f0d834db5a04b3",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/real_hopping_sign.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_model()\n                                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/real_hopping_sign.py\", line 232, in run_model\n    eq('real_hopping_sign_'+str(p), T*V, V*TF.extract(even,even))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/real_hopping_sign.py\", line 109, in eq\n    check(name, all(s.simplify(x) == 0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/real_hopping_sign.py\", line 104, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: real_hopping_sign_[0, 1]\n",
+      "expected_failure_text": "real_hopping_sign"
+    },
+    {
+      "name": "quartic_coefficient",
+      "family": "model",
+      "old": "hn_density = bv[0]*bv[1]/4",
+      "new": "hn_density = bv[0]*bv[1]/2",
+      "mutated_sha256": "f15603c986ac009e89c4e155298dcc6ff7dbdd862d5c45acdad634e4fe103770",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/quartic_coefficient.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_model()\n                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/quartic_coefficient.py\", line 238, in run_model\n    eq('quartic_density_interaction_dictionary', hn_density*V, V*hf_density.extract(even,even))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/quartic_coefficient.py\", line 109, in eq\n    check(name, all(s.simplify(x) == 0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/quartic_coefficient.py\", line 104, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: quartic_density_interaction_dictionary\n",
+      "expected_failure_text": "quartic_density_interaction_dictionary"
+    },
+    {
+      "name": "counterterm_sign",
+      "family": "model",
+      "old": "hnative += lam*hn_density-nu*",
+      "new": "hnative += lam*hn_density+nu*",
+      "mutated_sha256": "e8894b1208f70b89d886635546107feef0664d21b27bf76f2229d0bb6d5c9015",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/counterterm_sign.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_model()\n                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/counterterm_sign.py\", line 243, in run_model\n    eq('full_complex_interacting_native_CAR_H', hnative*V, V*hcar.extract(even,even))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/counterterm_sign.py\", line 109, in eq\n    check(name, all(s.simplify(x) == 0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/counterterm_sign.py\", line 104, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: full_complex_interacting_native_CAR_H\n",
+      "expected_failure_text": "full_complex_interacting_native_CAR_H"
+    },
+    {
+      "name": "cycle_pulse_order",
+      "family": "model",
+      "old": "pulse = u*ident+v*ze[1,3]*cycle",
+      "new": "pulse = u*ident+v*cycle*ze[1,3]",
+      "mutated_sha256": "872ed2bbcded1c3eae5123607fbc87697370362f2b65d41d126c071fba463f89",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/cycle_pulse_order.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_model()\n                                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/cycle_pulse_order.py\", line 253, in run_model\n    eq('scalar_branch_full_reference_identity_'+str(outcome),\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n       branch.H*branch, (u+outcome*v)**2*s.eye(8)/2)\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/cycle_pulse_order.py\", line 109, in eq\n    check(name, all(s.simplify(x) == 0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/cycle_pulse_order.py\", line 104, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: scalar_branch_full_reference_identity_-1\n",
+      "expected_failure_text": "scalar_branch_full_reference_identity"
+    },
+    {
+      "name": "spectator_parity",
+      "family": "boundary",
+      "old": "p = b.bit_count()%2",
+      "new": "p = 0",
+      "mutated_sha256": "e706ed4666644f26069cf6d473f1baf24ec28df90c0f1a6c7782376e91a25232",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/spectator_parity.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_boundary()\n                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/spectator_parity.py\", line 306, in run_boundary\n    eq('extended_state_total_parity_even',totalparity*extension,extension)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/spectator_parity.py\", line 293, in eq\n    check(name, all(s.simplify(x) == 0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/spectator_parity.py\", line 288, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: extended_state_total_parity_even\n",
+      "expected_failure_text": "extended_state_total_parity_even"
+    },
+    {
+      "name": "single_unsupported_seed",
+      "family": "boundary",
+      "old": "records = {seeds[0]:1,seeds[1]:1}",
+      "new": "records = {seeds[0]:1}",
+      "mutated_sha256": "dd7918310e408e2360b36f3a44e122360c22f0e9a1cda1f13a3ef2677d7d18c1",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/single_unsupported_seed.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_boundary()\n                                                                                                                                                                                                                                                                           ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/single_unsupported_seed.py\", line 363, in run_boundary\n    all(kernel_p(seed)[0]>0 for seed in records))\n    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/single_unsupported_seed.py\", line 363, in <genexpr>\n    all(kernel_p(seed)[0]>0 for seed in records))\n        ~~~~~~~~^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/single_unsupported_seed.py\", line 357, in kernel_p\n    assert values\n           ^^^^^^\nAssertionError\n",
+      "expected_failure_text": "AssertionError"
+    },
+    {
+      "name": "kernel_weight",
+      "family": "boundary",
+      "old": "s.Rational(3,4) if a==1 else",
+      "new": "s.Rational(1,2) if a==1 else",
+      "mutated_sha256": "264da167c2d11418e716d9ff1a56ad4a2aea985bc63fc1604d842a7055e8c56d",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/kernel_weight.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_boundary()\n                                                                                                                                                                                                                                                                 ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/kernel_weight.py\", line 363, in run_boundary\n    all(kernel_p(seed)[0]>0 for seed in records))\n    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/kernel_weight.py\", line 363, in <genexpr>\n    all(kernel_p(seed)[0]>0 for seed in records))\n        ~~~~~~~~^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/kernel_weight.py\", line 360, in kernel_p\n    assert p == s.Rational(1,2)+s.Rational(sum(values),4*len(values))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "expected_failure_text": "AssertionError"
+    },
+    {
+      "name": "boundary_omitted",
+      "family": "boundary",
+      "old": "Hlarge = Hsmall+bonds[1]",
+      "new": "Hlarge = Hsmall",
+      "mutated_sha256": "ff636d7a74029373799d662374eca29159e2180060762c543968c38e9d876508",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/boundary_omitted.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_boundary()\n                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/boundary_omitted.py\", line 437, in run_boundary\n    check('boundary_difference_really_starts_at_distance_two',small!=large)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/boundary_omitted.py\", line 288, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: boundary_difference_really_starts_at_distance_two\n",
+      "expected_failure_text": "boundary_difference_really_starts_at_distance_two"
+    },
+    {
+      "name": "bond_chain_count",
+      "family": "boundary",
+      "old": "count == 6*11**(length-1)",
+      "new": "count == 6*12**(length-1)",
+      "mutated_sha256": "220ddb1dc51cb2cbbcb03a850dfb40e2bd6e71f49cda27c314163d863df4b2fa",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/bond_chain_count.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_boundary()\n                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/bond_chain_count.py\", line 451, in run_boundary\n    assert count == 6*12**(length-1)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "expected_failure_text": "AssertionError"
+    },
+    {
+      "name": "Poisson_orientation",
+      "family": "boundary",
+      "old": "-2*s.pi*s.I*s.residue",
+      "new": "2*s.pi*s.I*s.residue",
+      "mutated_sha256": "a4b3f5091686edfdbaf95911c1b4db702bce9c3c43977735e0879299bd8d7f61",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/Poisson_orientation.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_boundary()\n                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/Poisson_orientation.py\", line 465, in run_boundary\n    eq('Poisson_positive_energy_contour_residue',\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n       2*s.pi*s.I*s.residue(integrand,t,-s.I*tau),s.exp(-tau*E))\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/Poisson_orientation.py\", line 293, in eq\n    check(name, all(s.simplify(x) == 0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/Poisson_orientation.py\", line 288, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: Poisson_positive_energy_contour_residue\n",
+      "expected_failure_text": "Poisson_positive_energy_contour_residue"
+    },
+    {
+      "name": "clock_transform",
+      "family": "boundary",
+      "old": "gamma*s.exp(-12*gamma*wait)",
+      "new": "gamma*s.exp(-11*gamma*wait)",
+      "mutated_sha256": "443b42940b416b03add182a90f819e9d4c55d2907baf276373ad88a844edb731",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util; spec=importlib.util.spec_from_file_location('candidate','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/clock_transform.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); mod.run_boundary()\n                                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/clock_transform.py\", line 469, in run_boundary\n    eq('actual_clock_Laplace_transform',\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n       s.integrate(gamma*s.exp(-11*gamma*wait),(wait,0,s.oo)),s.Rational(1,12))\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/clock_transform.py\", line 293, in eq\n    check(name, all(s.simplify(x) == 0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-weyl-mutations-xmft3gtz/clock_transform.py\", line 288, in check\n    assert bool(truth), name\n           ~~~~^^^^^^^\nAssertionError: actual_clock_Laplace_transform\n",
+      "expected_failure_text": "actual_clock_Laplace_transform"
+    }
+  ]
+}

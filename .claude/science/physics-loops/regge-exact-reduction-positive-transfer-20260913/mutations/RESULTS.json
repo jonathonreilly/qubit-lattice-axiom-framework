@@ -1,0 +1,73 @@
+{
+  "status": "six_actual_mutants_rejected",
+  "scope": "same-author proof discriminators; not a negative-route theorem",
+  "mutations": [
+    {
+      "name": "area_normalization",
+      "source": "scripts/regge_local_hessian_check_2026_09_13.py",
+      "old": "local+=s.trace(P*H)*W/4",
+      "new": "local+=s.trace(P*H)*W/8",
+      "original_sha256": "1e172437fca41640f4dc0e90ef4cbee8ce3ca57219327fdedecbe4f588f91188",
+      "mutated_sha256": "03453454a9fb776c4ede43d154ce2563f3310116fe987f02ee376d5f158cc546",
+      "exit_code": 1,
+      "failure": "AssertionError: [(0, 0, '3/4'), (0, 1, 'w0**2*w3**2/8 + w1**2*w3**2/8 + 1/(8*w1**2*w2**2) + 1/(8*w0**2*w2**2)'), (0, 2, '-1/4 - 1/(4*w2**2)')]",
+      "elapsed_sec": 0.8824623749824241
+    },
+    {
+      "name": "body_sign",
+      "source": "scripts/regge_local_hessian_check_2026_09_13.py",
+      "old": "C[i,idx[frozenset((a,b))]]-=(1+z[c])/2",
+      "new": "C[i,idx[frozenset((a,b))]]+=(1+z[c])/2",
+      "original_sha256": "1e172437fca41640f4dc0e90ef4cbee8ce3ca57219327fdedecbe4f588f91188",
+      "mutated_sha256": "59f47c9485d18d8bdd2463413c516e997c03a25a16bbefc86360ae97dbbf020e",
+      "exit_code": 1,
+      "failure": "AssertionError: [(0, 2, 'w0**2/(4*w2**2) + w1**2/(4*w2**2) + 1/2 + 1/(2*w2**2) + 1/(4*w1**2) + 1/(4*w0**2)'), (0, 4, 'w0**2/(4*w1**2) + 1/2 + 1/(4*w2**2) + w2**2/(4*w1**2) + 1/(2*w1**2) + 1/(4*w0**2)'), (0, 5, 'w3**2/(4*w2**2) + 1/(4*w2**2) + w3**2/(4*w1**2) + 1/(4*w1**2)')]",
+      "elapsed_sec": 0.659030792012345
+    },
+    {
+      "name": "metric_phase_removed",
+      "source": "scripts/regge_local_hessian_check_2026_09_13.py",
+      "old": "/(2*w[a]*w[b])",
+      "new": "/s.Integer(2)",
+      "original_sha256": "1e172437fca41640f4dc0e90ef4cbee8ce3ca57219327fdedecbe4f588f91188",
+      "mutated_sha256": "87d7e91214185a9bb00b82e2da4c60a81572a8ebf5563204a42e98800344c21b",
+      "exit_code": 1,
+      "failure": "AssertionError: [(0, 0, '-w0**2/4 + w0**2/(8*w2**2) + w0**2/(8*w1**2) + w0*w1/4 + w0*w2/4 - w0/(4*w2) - w0/(4*w1) - w1**2/4 + w1**2/(8*w2**2) + w1*w2/4 - w1/(4*w2) - w2**2/4 + 3/4 - 1/(4*w2**2) - w2/(4*w1) + 1/(4*w1*w2) + w2**2/(8*w1**2) - 1/(4*w1**2) - w1/(4*w0) - w2/(4*w0) + 1/(4*w0*w2) + 1/(4*w0*w1) + w1**2/(8*w0**2) + w2**2/(8*w0**2) - 1/(4*w0**2)'), (0, 1, '-w0**2*w3**2/4 + w0**2/8 + w0**2/(8*w2**2) + 3*w0*w2/8 + 3*w0*w3/8 - 3*w0/(8*w3) - 3*w0/(8*w2) - w1**2*w3**2/4 + w1**2/8 + w1**2/(8*w2**2) + 3*w1*w2/8 + 3*w1*w3/8 - 3*w1/(8*w3) - 3*w1/(8*w2) + w2*w3/4 - w2/(4*w3) - 1/4 - w3/(4*w2) + 1/(4*w2*w3) + w3**2/(4*w2**2) - 3*w2/(8*w1) - 3*w3/(8*w1) + 3/(8*w1*w3) + 3/(8*w1*w2) + w3**2/(8*w1**2) + 1/(8*w1**2) - 1/(4*w1**2*w2**2) - 3*w2/(8*w0) - 3*w3/(8*w0) + 3/(8*w0*w3) + 3/(8*w0*w2) + w3**2/(8*w0**2) + 1/(8*w0**2) - 1/(4*w0**2*w2**2)'), (0, 2, 'w0**2/8 - w0**2/(8*w2**2) - w0*w2/8 + w0/(8*w2) + w1**2/8 - w1**2/(8*w2**2) - w1*w2/8 + w1/(8*w2) - 1/4 + 1/(4*w2**2) + w2/(8*w1) - 1/(8*w1*w2) + w2/(8*w0) - 1/(8*w0*w2)')]",
+      "elapsed_sec": 0.8393732919939794,
+      "first_attempt": "Preserved in metric_phase_removed_first: plain /2 also introduced Python floats; final mutation removes only the phase while preserving exact rational arithmetic."
+    },
+    {
+      "name": "source_offdiagonal_halved",
+      "source": "scripts/regge_source_rank_check_2026_09_13.py",
+      "old": "J=s.Matrix([s.trace(h.applyfunc(m.minus)*T) for h in Es])",
+      "new": "T=s.Matrix(4,4,lambda i,j:T[i,j] if i==j else T[i,j]/2)\n    J=s.Matrix([s.trace(h.applyfunc(m.minus)*T) for h in Es])",
+      "original_sha256": "ab08cd53644936b9d5169e3db4da170d02b03a1f7df222c7ec3776129071d51f",
+      "mutated_sha256": "cace626c75e550361131d49b6c287c4ad737506d4d161fa0896a9bc5bd7f8e43",
+      "exit_code": 1,
+      "failure": "AssertionError: geometric_all_phase_exponent_source",
+      "elapsed_sec": 0.7587209580233321
+    },
+    {
+      "name": "scalar_cross_removed",
+      "source": "scripts/regge_tensor_transfer_check_2026_09_13.py",
+      "old": "Fs=-D*tau*tau/2-2*tau*(r*r*a+t*t*sigma-2*r*t*b3)",
+      "new": "Fs=-D*tau*tau/2-2*tau*(r*r*a+t*t*sigma)",
+      "original_sha256": "7a94cd98ea09453a5f9fe3b43cd05e8b935284e33b353391f83529f30e9ff278",
+      "mutated_sha256": "38f1125ca4ef0b844b2ab29925417ba7283d0ba82227c0cc65bf9971f7058043",
+      "exit_code": 1,
+      "failure": "AssertionError: full_mixed_decomposition",
+      "elapsed_sec": 0.18986625003162771
+    },
+    {
+      "name": "transfer_width_halved",
+      "source": "scripts/regge_tensor_transfer_check_2026_09_13.py",
+      "old": "alpha=(1/z-z)/2",
+      "new": "alpha=(1/z-z)/4",
+      "original_sha256": "7a94cd98ea09453a5f9fe3b43cd05e8b935284e33b353391f83529f30e9ff278",
+      "mutated_sha256": "a7c6a2573051624522ef1c6c3166e8abbd2d9191c1fffe0d7185ebab279952ff",
+      "exit_code": 1,
+      "failure": "AssertionError: transfer_width_equation",
+      "elapsed_sec": 0.30470924999099225
+    }
+  ]
+}

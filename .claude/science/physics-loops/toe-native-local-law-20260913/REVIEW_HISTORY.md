@@ -41,3 +41,5 @@ PR8088. The next discriminating derivation is the common growth/infrared
 Hamiltonian: calculate the protected-carrier spectrum before composing the
 positive-star infrared conclusions. Finite relay PR packaging is pending a
 coherent value/gate review, not used as a stopping point.
+
+BLOCK02 exact spectral construction and source review are in BLOCK02_DERIVATION.md; next target is specified in BLOCK03_GOAL.md.

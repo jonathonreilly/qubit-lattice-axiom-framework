@@ -12,9 +12,9 @@ execution: supervisor_only_no_subagents
 research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
-campaign: native_local_law
-block: 1
-active_route: native_two_cycle_history_and_projector_relay
+campaign: common_native_formation_and_interacting_carrier
+block: 3
+active_route: theorem_matched_Weyl_model_via_protected_paths
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
@@ -22,7 +22,7 @@ continuation_automation: toe-derivation-campaign-continuation
 continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-lock_expires_utc: 2026-09-13T13:30:01Z
-next_action: Preserve the checked finite relay milestone, then derive the actual protected growth-carrier spectrum and assess compatibility with the infrared carrier.
+lock_expires_utc: 2026-09-13T14:08:03Z
+next_action: Read the complete primary Weyl-model hypotheses and theorem, then derive its bounded protected-path native embedding without importing unmatched hypotheses.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.
-last_checkpoint_utc: 2026-09-13T12:58:07Z
+last_checkpoint_utc: 2026-09-13T13:23:20Z

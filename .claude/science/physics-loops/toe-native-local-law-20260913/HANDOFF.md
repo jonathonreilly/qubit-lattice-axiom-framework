@@ -12,7 +12,7 @@ campaign survives at163b6970207addfa36d0afbcefd32e0305b6702d and its remote
 branch. No new checked science was lost; startup notes are reconstructed.
 
 Heartbeat toe-derivation-campaign-continuation is ACTIVE and points here.
-Own lock expires13:30:01UTC; refresh before then. Owner
+Own lock expires14:08:03UTC; refresh before then. Owner
 physics-loop-toe-native-local-law-20260913; holder
 01a097f1-c7c7-7b51-8f2e-399bbbf0c311.
 
@@ -51,3 +51,5 @@ the history table would add little. Next derive the actual protected growth
 carrier spectrum and test whether the infrared construction can use that SAME
 Hamiltonian. PR packaging may follow a stronger coherent unit; it does not
 halt discovery. Continue personally through00:14:41UTC.
+
+BLOCK02 exact spectral construction and source review are in BLOCK02_DERIVATION.md; next target is specified in BLOCK03_GOAL.md.

@@ -195,3 +195,28 @@ completion, not native matter derivation or an all-order branch. Full force
 verification is next. Primary literature scope records known Regge pseudo-
 constraint and fluid Euler context; no priorityclaim and changed-background
 alternatives remain live. Deadline11:38:24UTC, noagents.
+
+By04:19UTC Block10 complete force result is checked: all15quadratic-force
+classes vanish except x=g_n²/2,y=z=Delta_lat(Phi²)-(g_n²+g_prev²)/4,
+t=3(g_n²+g_prev²)/4. For the previously specified J2=g_n²(1,-1,-1,3)/2,
+let Delta u=g_n²-g_prev²,u mean0. Closed q2 has diagonalH=(0,3u/2,3u/2,
+4P0(Phi²)-5u/2), off0 andq2_A=sumHdiag; bodyresidual0. This gives full
+Qq2+N=J2 for all periods.24exactchecks include symbolicallperiodkernel
+projections and rank24 rational45x45fixture plusclosed/directsolutions.
+Initialnegativecontrolremovedzeroalready; firstsourcepreserved andcorrected
+nonzerostresscontrolrejects. GenericSymPy rank was slow; exactDomainMatrix
+rank andexplicitkernelcontrol give0.15secfinalrun. Separate65digit nonlinear
+full45force check passes8tests, coefficienterrors<6e-10 andcorrectedresidual
+Oepsilon³ vsuncompletedOepsilon². Initialdependent invocation precededJSON;
+checkerrecoveryrecordnamesbothoperationalfailures. No sciencecounterexample
+was discarded. Formalnegativequota/coldscopepassandnative-sourceidentification
+remain open; noaxiomedit, noall-orderbranch.
+
+Next candidate re-ranking: return to physical formation rather than extend
+supplied Regge perturbation indefinitely. Investigate a cycle-only native
+Record schedule with protected local detours: nonbridge Z outcomes may be
+state-independent under surviving cycle stabilizers, avoiding the bridge/leaf
+history collision while retaining hopping at positive deleted-edge density.
+Read current charged-history/prior-art sources first; do not repackage an
+already proved uniform-sign result or hide a supplied schedule/basis.
+Lockrefreshed04:16:59UTCexpires05:16:59UTC. Deadline11:38:24UTC unchanged.

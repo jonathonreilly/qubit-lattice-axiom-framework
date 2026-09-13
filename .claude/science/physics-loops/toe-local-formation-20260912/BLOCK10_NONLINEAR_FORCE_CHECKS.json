@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scope": "all45 exact-stencil coefficients checked against separate nonlinear distance-Gram forces; finite-step diagnostics do not prove the asymptotic theorem",
+  "checks": [
+    "flat_all_forces",
+    "all45_linear_forces",
+    "all45_quadratic_forces",
+    "all_nonaxis_quadratic_forces_zero",
+    "corrected_cubic_residual_scaling_0",
+    "uncompleted_quadratic_residual_scaling_0",
+    "corrected_cubic_residual_scaling_1",
+    "uncompleted_quadratic_residual_scaling_1"
+  ],
+  "count": 8,
+  "linear_max_error": "0.00000000015424055880116441640307317254002672650848956734018165050567674317",
+  "quadratic_max_error": "0.00000000057850010138088797657229286396439852561814179957961288119613114736",
+  "residual_rows": [
+    {
+      "epsilon": "0.002",
+      "corrected_residual": "0.00000033306260652748655715103718420320172469603138363059958054515585394",
+      "corrected_over_epsilon_cubed": "41.632825815935819643879648025400215587003922953824947568144481743",
+      "temporal_only_residual": "0.000054333062606527486557151037184203201724696031383630599580545155854"
+    },
+    {
+      "epsilon": "0.001",
+      "corrected_residual": "0.000000041440648026710279135626546231312766250373716653246100611817107453",
+      "corrected_over_epsilon_cubed": "41.440648026710279135626546231312766250373716653246100611817107453",
+      "temporal_only_residual": "0.000013541440648026710279135626546231312766250373716653246100611817107"
+    },
+    {
+      "epsilon": "0.0005",
+      "corrected_residual": "0.0000000051681417748057015296499378424854707256322099703319162040795214801",
+      "corrected_over_epsilon_cubed": "41.345134198445612237199502739883765805057679762655329632636171841",
+      "temporal_only_residual": "0.0000033801681417748057015296499378424854707256322099703319162040795215"
+    }
+  ],
+  "precision_digits": 65,
+  "source_sha256": "2135b12dd37f72d5a0ad8d082f4b1fca838503af57b1f6dab6da320e9d9b9531",
+  "helper_sha256": "21c799db8788b9b6e2c29f2c04db0795f62d8d053fcad2fe2fc515ddb95b7d54",
+  "force_input_sha256": "4639826cf460e79aa034428e31f98442daf7bceb40a930eb02412a1e4b532236",
+  "elapsed_sec": 2.5725814170436934
+}

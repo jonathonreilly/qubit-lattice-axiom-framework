@@ -245,3 +245,71 @@ missing source work and prevents a false axiom necessity claim.
 
 The all-projection argument and explicit finite solution still need a complete
 source/force check before this candidate repair is treated as established.
+
+## 7. The full quadratic force and a closed second coefficient
+
+The complete local cubic gradient, allowing all15edge classes to vary before
+restricting to the pure plane scalar tangent, is particularly small. With
+P=Phi_(n-1),A=Phi_n,B=Phi_(n+1),g=B-A,g_-=A-P and e=g^2+g_-^2,
+
+N_x=g^2/2,
+N_y=N_z=(B^2+P^2-2A^2)-e/4,
+N_t=3e/4,
+N_edge=0 for every face,body or hyperdiagonal edge.            (7.1)
+
+Here N=grad S3(v), the coefficient of epsilon^2 in the complete force. The
+local-to-global assembly retains each actual edge anchor. Formula(7.1)
+is obtained by differentiating(2.2) in every local squared-edge coordinate,
+then collecting start and end anchors of the24simplices; no constrained
+variation is substituted for the full gradient.
+
+This proves more than a projection count. One possible local axis-source
+completion is J2=N itself, which keeps the linear endpoint field through
+second order. That is a source reconstructed from a chosen geometric path,
+not a native matter derivation. Its nontrivial restriction is the absence of
+any face/body/hyper forces at this order. It is not a prediction of matter.
+
+For the independently specified correction(6.2), define the positive periodic
+Laplacian Delta=2-shift-shift^(-1), and let u be the unique zero-mean solution
+
+Delta u = g_n^2-g_(n-1)^2.
+
+The right-hand side has zero sum. A closed representative for w uses the
+Part A metric coordinates with zero off-diagonal entries and
+
+H_xx(w)=0,
+H_yy(w)=H_zz(w)=3u/2,
+H_tt(w)=4[Phi_n^2-mean(Phi^2)]-5u/2.                          (7.2)
+
+Set w_A=sum_(a in A) H_aa(w) for every edge class, choosing the same sum for
+the free hyperdiagonal. These edge coordinates have zero body residuals and
+zero off-diagonal discrete metric coordinates. For momentum along x the
+reduced equations are T_y=Delta(H_zz+H_tt)/4,
+T_z=Delta(H_yy+H_tt)/4,T_t=Delta(H_yy+H_zz)/4. Substitution of(7.1)-(7.2)
+therefore proves Qw=J2-N at every nonzero mode. All zero modes vanish on both
+sides. This is an explicit all-period finite solution, not only rank-based
+existence. No inverse at zero momentum is taken.
+
+The exact checker verifies all15force stencils, all four arbitrary-period
+gauge divergences and ten constant-metric projections as explicit telescoping
+quadratic fluxes. On a3x15plane-reduced system, the rational Hessian has rank24,
+and both a direct exact linear solve and(7.2) satisfy the full second-order
+source equation. A removed nonzero x stress has nonzero pairing with an exact
+kernel vector. The final24checks pass in0.15seconds. Its first negative-control
+attempt removed a stress that was already zero; that genuine checker failure
+and the corrected control are recorded in BLOCK10_CHECKER_RECOVERY.
+
+For sufficiently small epsilon all perturbed simplices stay nondegenerate,
+so analyticity proves the O(epsilon^3) full-force remainder on each fixed
+finite torus. The construction is a finite perturbative consistency witness;
+it establishes neither a convergent infinite series nor an exact all-order
+source theory, physical stress tensor or dynamical matter clock.
+
+The final separate nonlinear force check covers every one of45plane-reduced
+edge components. Its first and second Taylor coefficients agree with the
+exact stencils within1.6e-10 and5.8e-10 respectively. With(7.2) and the full
+source(6.2), residuals at epsilon .002,.001,.0005 are approximately
+3.3306e-7,4.1441e-8,5.1681e-9; divided by epsilon^3 they are41.633,41.441,
+41.345. Omitting the source completion leaves an epsilon^2 residual instead.
+All8checks passed in2.57seconds. These numerical scalings challenge the
+analytic Taylor argument; they are not an all-order or interval proof.

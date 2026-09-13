@@ -13,8 +13,8 @@ research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
 campaign: native_local_deformation_algebra
-block: 13
-active_route: fixed_finite_link_ground_state_monopole_energy_and_positive_flow_trial
+block: 14
+active_route: exact_Gauss_reduction_and_fixed_volume_weak_coupling_spectrum
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
@@ -22,10 +22,9 @@ continuation_automation: toe-derivation-campaign-continuation
 continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-lock_expires_utc: '2026-09-13T22:55:46.880333+00:00'
-next_action: Prove the positive redundant-plaquette-flow trial bound and derive a
-  volume-uniform weak-coupling ground-state monopole-density estimate. Photon phase
-  remains open.
+lock_expires_utc: '2026-09-13T23:44:37.255448+00:00'
+next_action: Prove affine-flux Gauss reduction, primitive-cycle spectral limit and
+  the fixed-gS boundary discriminator; keep the thermodynamic charged phase open.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking,
   and the next useful campaign until the deadline.
-last_checkpoint_utc: '2026-09-13T22:27:30.403827+00:00'
+last_checkpoint_utc: '2026-09-13T23:08:03.770845+00:00'

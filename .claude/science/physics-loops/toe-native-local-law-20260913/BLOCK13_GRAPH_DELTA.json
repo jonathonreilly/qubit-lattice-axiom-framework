@@ -1,0 +1,39 @@
+{
+  "base_revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "added_nodes": [
+    "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13"
+  ],
+  "removed_nodes": [],
+  "changed_existing_nodes": [],
+  "edge_count_delta": 3,
+  "outgoing_edges": [
+    {
+      "from": "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13",
+      "to": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    },
+    {
+      "from": "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13",
+      "to": "the_fermion_on_compact_u1_links_the_integer_flux_selects_the_staggered_gauss_law_and_joins_the_maxwell_germ_bounded_theorem_note_2026-09-03"
+    }
+  ],
+  "new_node": {
+    "claim_id": "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "minimal_axioms",
+      "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05",
+      "the_fermion_on_compact_u1_links_the_integer_flux_selects_the_staggered_gauss_law_and_joins_the_maxwell_germ_bounded_theorem_note_2026-09-03"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "2a6d5c79513cb92334e64d780d5b8490b6f4e9b781ad24adaafc33e1288d6851",
+    "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "runner_path": "scripts/finite_integer_link_weak_coupling_payload_and_monopole_density_2026_09_13.py",
+    "title": "A fixed finite-link ground-state bound and its weak-coupling payload"
+  }
+}

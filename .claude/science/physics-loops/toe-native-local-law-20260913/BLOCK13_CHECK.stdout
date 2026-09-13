@@ -1,0 +1,1816 @@
+per_element: exact finite shift-chain spectral ceiling and phase-POVM normalization checked
+per_site: onsite neutral filling and the sharper charged-bond CAR norm checked
+per_mode: finite chain eigenmodes and local Fourier-compressed defect operators checked; photon spectrum unproved
+per_block: redundant cube-flow trial, exact overlap, monopole energy and square-compression distinction checked
+lattice_wide: finite periodic incidence and counting checked; uniform-volume bounds are analytic, thermodynamic phase not executed
+{
+  "status": "PASS",
+  "author_check_count": 331,
+  "checks": [
+    {
+      "name": "periodic boundary of plaquette has zero divergence",
+      "error": 0.0,
+      "L": 3
+    },
+    {
+      "name": "periodic cube Bianchi identity",
+      "error": 0.0,
+      "L": 3
+    },
+    {
+      "name": "four plaquettes per link",
+      "error": 0.0,
+      "L": 3
+    },
+    {
+      "name": "four links per plaquette",
+      "error": 0.0,
+      "L": 3
+    },
+    {
+      "name": "two cubes per plaquette",
+      "error": 0.0,
+      "L": 3
+    },
+    {
+      "name": "six plaquettes per cube",
+      "error": 0.0,
+      "L": 3
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 3.3306690738754696e-16,
+      "L": 3,
+      "trial": 0
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 3,
+      "trial": 0
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 3,
+      "trial": 0,
+      "min_slack": 2.094043379747167
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 3,
+      "trial": 0
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 3,
+      "trial": 0
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 5.551115123125783e-16,
+      "L": 3,
+      "trial": 1
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 3,
+      "trial": 1
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 3,
+      "trial": 1,
+      "min_slack": 2.1858712565059486
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 3,
+      "trial": 1
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 3,
+      "trial": 1
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 3.5339496460705744e-16,
+      "L": 3,
+      "trial": 2
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 3,
+      "trial": 2
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 3,
+      "trial": 2,
+      "min_slack": 2.0349732927799584
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 3,
+      "trial": 2
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 3,
+      "trial": 2
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 4.440892098500626e-16,
+      "L": 3,
+      "trial": 3
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 3,
+      "trial": 3
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 3,
+      "trial": 3,
+      "min_slack": 2.6829633556174093
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 3,
+      "trial": 3
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 3,
+      "trial": 3
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 3.3306690738754696e-16,
+      "L": 3,
+      "trial": 4
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 3,
+      "trial": 4
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 3,
+      "trial": 4,
+      "min_slack": 3.214066917200946
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 3,
+      "trial": 4
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 3,
+      "trial": 4
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 4.240739575284689e-16,
+      "L": 3,
+      "trial": 5
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 3,
+      "trial": 5
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 3,
+      "trial": 5,
+      "min_slack": 2.983535292190223
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 3,
+      "trial": 5
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 3,
+      "trial": 5
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 2.220446049250313e-16,
+      "L": 3,
+      "trial": 6
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 3,
+      "trial": 6
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 3,
+      "trial": 6,
+      "min_slack": 2.3805529013533553
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 3,
+      "trial": 6
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 3,
+      "trial": 6
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 4.440892098500626e-16,
+      "L": 3,
+      "trial": 7
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 3,
+      "trial": 7
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 3,
+      "trial": 7,
+      "min_slack": 2.458887012875665
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 3,
+      "trial": 7
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 3,
+      "trial": 7
+    },
+    {
+      "name": "periodic boundary of plaquette has zero divergence",
+      "error": 0.0,
+      "L": 4
+    },
+    {
+      "name": "periodic cube Bianchi identity",
+      "error": 0.0,
+      "L": 4
+    },
+    {
+      "name": "four plaquettes per link",
+      "error": 0.0,
+      "L": 4
+    },
+    {
+      "name": "four links per plaquette",
+      "error": 0.0,
+      "L": 4
+    },
+    {
+      "name": "two cubes per plaquette",
+      "error": 0.0,
+      "L": 4
+    },
+    {
+      "name": "six plaquettes per cube",
+      "error": 0.0,
+      "L": 4
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 5.654319433712919e-16,
+      "L": 4,
+      "trial": 0
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 4,
+      "trial": 0
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 4,
+      "trial": 0,
+      "min_slack": 1.7410413429795009
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 4,
+      "trial": 0
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 4,
+      "trial": 0
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 6.661338147750939e-16,
+      "L": 4,
+      "trial": 1
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 4,
+      "trial": 1
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 4,
+      "trial": 1,
+      "min_slack": 2.3272729645154078
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 4,
+      "trial": 1
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 4,
+      "trial": 1
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 4.947529504498804e-16,
+      "L": 4,
+      "trial": 2
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 4,
+      "trial": 2
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 4,
+      "trial": 2,
+      "min_slack": 2.0558699092248185
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 4,
+      "trial": 2
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 4,
+      "trial": 2
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 3.3306690738754696e-16,
+      "L": 4,
+      "trial": 3
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 4,
+      "trial": 3
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 4,
+      "trial": 3,
+      "min_slack": 1.166098428050845
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 4,
+      "trial": 3
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 4,
+      "trial": 3
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 3.5339496460705744e-16,
+      "L": 4,
+      "trial": 4
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 4,
+      "trial": 4
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 4,
+      "trial": 4,
+      "min_slack": 2.1212834744907365
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 4,
+      "trial": 4
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 4,
+      "trial": 4
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 3.3306690738754696e-16,
+      "L": 4,
+      "trial": 5
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 4,
+      "trial": 5
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 4,
+      "trial": 5,
+      "min_slack": 0.6842971140379819
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 4,
+      "trial": 5
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 4,
+      "trial": 5
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 4.440892098500626e-16,
+      "L": 4,
+      "trial": 6
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 4,
+      "trial": 6
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 4,
+      "trial": 6,
+      "min_slack": 2.0223878028717683
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 4,
+      "trial": 6
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 4,
+      "trial": 6
+    },
+    {
+      "name": "integer cube charge from principal wrapping",
+      "error": 5.551115123125783e-16,
+      "L": 4,
+      "trial": 7
+    },
+    {
+      "name": "total monopole neutrality on torus",
+      "error": 0.0,
+      "L": 4,
+      "trial": 7
+    },
+    {
+      "name": "pointwise cube monopole-energy inequality",
+      "L": 4,
+      "trial": 7,
+      "min_slack": 0.9369463128324599
+    },
+    {
+      "name": "each plaquette counted twice in global bound",
+      "L": 4,
+      "trial": 7
+    },
+    {
+      "name": "monopole indicator below square charge",
+      "L": 4,
+      "trial": 7
+    },
+    {
+      "name": "cube curl rank five"
+    },
+    {
+      "name": "closed oriented cube relation",
+      "error": 0.0
+    },
+    {
+      "name": "exact interior charge-one angle witness"
+    },
+    {
+      "name": "charge-one witness has all outward principal faces pi/3",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "charge-one open region exists",
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "interior charge-two face fixture",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "charge-two fixture challenges cube energy factor",
+      "energy": 7.525905329727995,
+      "q": 2.0000000000000004
+    },
+    {
+      "name": "compressed plaquette maximum chain eigenvalue",
+      "error": 6.123233995736766e-17,
+      "S": 0
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 6.123233995736766e-17,
+      "S": 0,
+      "n": 1
+    },
+    {
+      "name": "maximal neutral plaquette-flow chain saturates bound",
+      "error": 6.123233995736766e-17,
+      "S": 0
+    },
+    {
+      "name": "explicit spectral deficit lower estimate",
+      "S": 0
+    },
+    {
+      "name": "compressed plaquette maximum chain eigenvalue",
+      "error": 2.220446049250313e-16,
+      "S": 1
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 6.123233995736766e-17,
+      "S": 1,
+      "n": 1
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 1.6653345369377348e-16,
+      "S": 1,
+      "n": 2
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 1.1102230246251565e-16,
+      "S": 1,
+      "n": 3
+    },
+    {
+      "name": "maximal neutral plaquette-flow chain saturates bound",
+      "error": 1.1102230246251565e-16,
+      "S": 1
+    },
+    {
+      "name": "explicit spectral deficit lower estimate",
+      "S": 1
+    },
+    {
+      "name": "compressed plaquette maximum chain eigenvalue",
+      "error": 5.551115123125783e-16,
+      "S": 2
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 6.123233995736766e-17,
+      "S": 2,
+      "n": 1
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 1.6653345369377348e-16,
+      "S": 2,
+      "n": 2
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 1.1102230246251565e-16,
+      "S": 2,
+      "n": 3
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 1.1102230246251565e-16,
+      "S": 2,
+      "n": 4
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 2.220446049250313e-16,
+      "S": 2,
+      "n": 5
+    },
+    {
+      "name": "maximal neutral plaquette-flow chain saturates bound",
+      "error": 1.1102230246251565e-16,
+      "S": 2
+    },
+    {
+      "name": "explicit spectral deficit lower estimate",
+      "S": 2
+    },
+    {
+      "name": "compressed plaquette maximum chain eigenvalue",
+      "error": 1.1102230246251565e-16,
+      "S": 4
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 6.123233995736766e-17,
+      "S": 4,
+      "n": 1
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 1.6653345369377348e-16,
+      "S": 4,
+      "n": 2
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 1.1102230246251565e-16,
+      "S": 4,
+      "n": 3
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 1.1102230246251565e-16,
+      "S": 4,
+      "n": 4
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 2.220446049250313e-16,
+      "S": 4,
+      "n": 5
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 3.3306690738754696e-16,
+      "S": 4,
+      "n": 6
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 5.551115123125783e-16,
+      "S": 4,
+      "n": 7
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 2.220446049250313e-16,
+      "S": 4,
+      "n": 8
+    },
+    {
+      "name": "all finite chain eigenvalues",
+      "error": 2.220446049250313e-16,
+      "S": 4,
+      "n": 9
+    },
+    {
+      "name": "maximal neutral plaquette-flow chain saturates bound",
+      "error": 0.0,
+      "S": 4
+    },
+    {
+      "name": "explicit spectral deficit lower estimate",
+      "S": 4
+    },
+    {
+      "name": "positive-flow state nonzero",
+      "M": 0
+    },
+    {
+      "name": "every supported flow obeys Gauss",
+      "error": 0.0,
+      "M": 0
+    },
+    {
+      "name": "volume-local flux support bound",
+      "M": 0
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 0,
+      "plaquette": 0,
+      "minimum_slack": -1.2246467991473532e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 0,
+      "plaquette": 0,
+      "actual": 0.0,
+      "bound": 6.123233995736766e-17
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 0,
+      "plaquette": 1,
+      "minimum_slack": -1.2246467991473532e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 0,
+      "plaquette": 1,
+      "actual": 0.0,
+      "bound": 6.123233995736766e-17
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 0,
+      "plaquette": 2,
+      "minimum_slack": -1.2246467991473532e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 0,
+      "plaquette": 2,
+      "actual": 0.0,
+      "bound": 6.123233995736766e-17
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 0,
+      "plaquette": 3,
+      "minimum_slack": -1.2246467991473532e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 0,
+      "plaquette": 3,
+      "actual": 0.0,
+      "bound": 6.123233995736766e-17
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 0,
+      "plaquette": 4,
+      "minimum_slack": -1.2246467991473532e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 0,
+      "plaquette": 4,
+      "actual": 0.0,
+      "bound": 6.123233995736766e-17
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 0,
+      "plaquette": 5,
+      "minimum_slack": -1.2246467991473532e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 0,
+      "plaquette": 5,
+      "actual": 0.0,
+      "bound": 6.123233995736766e-17
+    },
+    {
+      "name": "positive-flow state nonzero",
+      "M": 1
+    },
+    {
+      "name": "every supported flow obeys Gauss",
+      "error": 0.0,
+      "M": 1
+    },
+    {
+      "name": "volume-local flux support bound",
+      "M": 1
+    },
+    {
+      "name": "redundancy changes product norm",
+      "M": 1,
+      "norm": 80.03125000000003,
+      "product_norm": 64
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 1,
+      "plaquette": 0,
+      "minimum_slack": -2.220446049250313e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 1,
+      "plaquette": 0,
+      "actual": 0.7427244206918453,
+      "bound": 0.7071067811865476
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 1,
+      "plaquette": 1,
+      "minimum_slack": -2.220446049250313e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 1,
+      "plaquette": 1,
+      "actual": 0.7427244206918455,
+      "bound": 0.7071067811865476
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 1,
+      "plaquette": 2,
+      "minimum_slack": -2.220446049250313e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 1,
+      "plaquette": 2,
+      "actual": 0.7427244206918455,
+      "bound": 0.7071067811865476
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 1,
+      "plaquette": 3,
+      "minimum_slack": -2.220446049250313e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 1,
+      "plaquette": 3,
+      "actual": 0.7427244206918454,
+      "bound": 0.7071067811865476
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 1,
+      "plaquette": 4,
+      "minimum_slack": -2.220446049250313e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 1,
+      "plaquette": 4,
+      "actual": 0.7427244206918454,
+      "bound": 0.7071067811865476
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 1,
+      "plaquette": 5,
+      "minimum_slack": -2.220446049250313e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 1,
+      "plaquette": 5,
+      "actual": 0.7427244206918454,
+      "bound": 0.7071067811865476
+    },
+    {
+      "name": "exact redundant-cube norm certificate",
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "exact redundant-cube plaquette certificate",
+      "error": 1.2212453270876722e-15
+    },
+    {
+      "name": "positive-flow state nonzero",
+      "M": 2
+    },
+    {
+      "name": "every supported flow obeys Gauss",
+      "error": 0.0,
+      "M": 2
+    },
+    {
+      "name": "volume-local flux support bound",
+      "M": 2
+    },
+    {
+      "name": "redundancy changes product norm",
+      "M": 2,
+      "norm": 1402.3837890625014,
+      "product_norm": 729
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 2,
+      "plaquette": 0,
+      "minimum_slack": -4.440892098500626e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 2,
+      "plaquette": 0,
+      "actual": 0.8923696751101936,
+      "bound": 0.8660254037844387
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 2,
+      "plaquette": 1,
+      "minimum_slack": -4.440892098500626e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 2,
+      "plaquette": 1,
+      "actual": 0.8923696751101892,
+      "bound": 0.8660254037844387
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 2,
+      "plaquette": 2,
+      "minimum_slack": -4.440892098500626e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 2,
+      "plaquette": 2,
+      "actual": 0.892369675110195,
+      "bound": 0.8660254037844387
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 2,
+      "plaquette": 3,
+      "minimum_slack": -4.440892098500626e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 2,
+      "plaquette": 3,
+      "actual": 0.8923696751101933,
+      "bound": 0.8660254037844387
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 2,
+      "plaquette": 4,
+      "minimum_slack": -4.440892098500626e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 2,
+      "plaquette": 4,
+      "actual": 0.892369675110193,
+      "bound": 0.8660254037844387
+    },
+    {
+      "name": "positive push-forward recurrence despite redundant cycles",
+      "M": 2,
+      "plaquette": 5,
+      "minimum_slack": -4.440892098500626e-16
+    },
+    {
+      "name": "plaquette trial expectation lower bound",
+      "M": 2,
+      "plaquette": 5,
+      "actual": 0.892369675110193,
+      "bound": 0.8660254037844387
+    },
+    {
+      "name": "rational-radical norm independent of float accumulation"
+    },
+    {
+      "name": "exact algebraic plaquette overlap"
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 0,
+      "n": -2
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 0,
+      "n": -1
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 0,
+      "n": 0
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 0,
+      "n": 1
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 0,
+      "n": 2
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 1,
+      "n": -3
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 1,
+      "n": -2
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 1,
+      "n": -1
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 1,
+      "n": 0
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 1,
+      "n": 1
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 1,
+      "n": 2
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 1,
+      "n": 3
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 2,
+      "n": -4
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 2,
+      "n": -3
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 2,
+      "n": -2
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 2,
+      "n": -1
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 2,
+      "n": 0
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 2,
+      "n": 1
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 2,
+      "n": 2
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 2,
+      "n": 3
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 2,
+      "n": 4
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": -7
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": -6
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": -5
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": -4
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": -3
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": -2
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": -1
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": 0
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": 1
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": 2
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": 3
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": 4
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": 5
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": 6
+    },
+    {
+      "name": "auxiliary cosine recurrence has only positive outer residual",
+      "M": 5,
+      "n": 7
+    },
+    {
+      "name": "onsite product filling is two negative orbitals"
+    },
+    {
+      "name": "actual carrier bond nuclear norm",
+      "error": 4.440892098500626e-16,
+      "axis": 0
+    },
+    {
+      "name": "Hermitian CAR bond norm equals nuclear norm",
+      "error": 4.884981308350689e-15,
+      "axis": 0
+    },
+    {
+      "name": "controlled unitary shift proves bond comparison",
+      "axis": 0
+    },
+    {
+      "name": "hard-cutoff Hermitian bond norm bounded by full rotor",
+      "axis": 0,
+      "cutoff": 0,
+      "actual": 0.0
+    },
+    {
+      "name": "hard-cutoff Hermitian bond norm bounded by full rotor",
+      "axis": 0,
+      "cutoff": 1,
+      "actual": 2.000000000000005
+    },
+    {
+      "name": "hard-cutoff Hermitian bond norm bounded by full rotor",
+      "axis": 0,
+      "cutoff": 2,
+      "actual": 1.9999999999999998
+    },
+    {
+      "name": "actual carrier bond nuclear norm",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "Hermitian CAR bond norm equals nuclear norm",
+      "error": 3.552713678800501e-15,
+      "axis": 1
+    },
+    {
+      "name": "controlled unitary shift proves bond comparison",
+      "axis": 1
+    },
+    {
+      "name": "hard-cutoff Hermitian bond norm bounded by full rotor",
+      "axis": 1,
+      "cutoff": 0,
+      "actual": 0.0
+    },
+    {
+      "name": "hard-cutoff Hermitian bond norm bounded by full rotor",
+      "axis": 1,
+      "cutoff": 1,
+      "actual": 2.0000000000000036
+    },
+    {
+      "name": "hard-cutoff Hermitian bond norm bounded by full rotor",
+      "axis": 1,
+      "cutoff": 2,
+      "actual": 2.0000000000000027
+    },
+    {
+      "name": "actual carrier bond nuclear norm",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "Hermitian CAR bond norm equals nuclear norm",
+      "error": 4.440892098500626e-16,
+      "axis": 2
+    },
+    {
+      "name": "controlled unitary shift proves bond comparison",
+      "axis": 2
+    },
+    {
+      "name": "hard-cutoff Hermitian bond norm bounded by full rotor",
+      "axis": 2,
+      "cutoff": 0,
+      "actual": 0.0
+    },
+    {
+      "name": "hard-cutoff Hermitian bond norm bounded by full rotor",
+      "axis": 2,
+      "cutoff": 1,
+      "actual": 1.7320508075688819
+    },
+    {
+      "name": "hard-cutoff Hermitian bond norm bounded by full rotor",
+      "axis": 2,
+      "cutoff": 2,
+      "actual": 1.9999999999999964
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.216895411148671e-17,
+      "m": -2,
+      "n": -2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": -2,
+      "n": -2
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": -2,
+      "n": -1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 6.6364844475645165e-19,
+      "m": -2,
+      "n": -1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.3971225592684054e-17,
+      "m": -2,
+      "n": 0
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 1.3877787807814457e-17,
+      "m": -2,
+      "n": 0
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": -2,
+      "n": 1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 1.4797381256802312e-17,
+      "m": -2,
+      "n": 1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 3.769882983807054e-18,
+      "m": -2,
+      "n": 2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 9.921505516410133e-18,
+      "m": -2,
+      "n": 2
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": -1,
+      "n": -2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 2.3507131430502525e-17,
+      "m": -1,
+      "n": -2
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": -1,
+      "n": -1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": -1,
+      "n": -1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": -1,
+      "n": 0
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 2.7755575615628914e-17,
+      "m": -1,
+      "n": 0
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": -1,
+      "n": 1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 1.7634292504026155e-17,
+      "m": -1,
+      "n": 1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.3877787807814457e-17,
+      "m": -1,
+      "n": 2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 8.27136622695613e-18,
+      "m": -1,
+      "n": 2
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.7733253949506722e-17,
+      "m": 0,
+      "n": -2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 1.3877787807814457e-17,
+      "m": 0,
+      "n": -2
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.3877787807814457e-17,
+      "m": 0,
+      "n": -1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 0,
+      "n": -1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 5.551115123125783e-17,
+      "m": 0,
+      "n": 0
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 0,
+      "n": 0
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.3877787807814457e-17,
+      "m": 0,
+      "n": 1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 0,
+      "n": 1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.7733253949506722e-17,
+      "m": 0,
+      "n": 2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 1.3877787807814457e-17,
+      "m": 0,
+      "n": 2
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.3877787807814457e-17,
+      "m": 1,
+      "n": -2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 8.27136622695613e-18,
+      "m": 1,
+      "n": -2
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 1,
+      "n": -1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 1.7634292504026155e-17,
+      "m": 1,
+      "n": -1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 1,
+      "n": 0
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 2.7755575615628914e-17,
+      "m": 1,
+      "n": 0
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 1,
+      "n": 1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 1,
+      "n": 1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 1,
+      "n": 2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 2.3507131430502525e-17,
+      "m": 1,
+      "n": 2
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 3.769882983807054e-18,
+      "m": 2,
+      "n": -2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 9.921505516410133e-18,
+      "m": 2,
+      "n": -2
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 2,
+      "n": -1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 1.4797381256802312e-17,
+      "m": 2,
+      "n": -1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.3971225592684054e-17,
+      "m": 2,
+      "n": 0
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 1.3877787807814457e-17,
+      "m": 2,
+      "n": 0
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 2,
+      "n": 1
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 6.6364844475645165e-19,
+      "m": 2,
+      "n": 1
+    },
+    {
+      "name": "exact monopole-square Fourier coefficient versus integration",
+      "error": 1.216895411148671e-17,
+      "m": 2,
+      "n": 2
+    },
+    {
+      "name": "exact signed monopole Fourier coefficient versus integration",
+      "error": 0.0,
+      "m": 2,
+      "n": 2
+    },
+    {
+      "name": "finite angle monopole effect positive definite in section",
+      "cutoff": 0,
+      "minimum_eigenvalue": 0.25
+    },
+    {
+      "name": "compression preserves monopole-energy inequality",
+      "cutoff": 0
+    },
+    {
+      "name": "compressing square exceeds square of compression",
+      "cutoff": 0
+    },
+    {
+      "name": "mean-square POVM trace normalization",
+      "error": 0.0,
+      "cutoff": 0
+    },
+    {
+      "name": "finite angle monopole effect positive definite in section",
+      "cutoff": 1,
+      "minimum_eigenvalue": 0.0010808039564137264
+    },
+    {
+      "name": "compression preserves monopole-energy inequality",
+      "cutoff": 1
+    },
+    {
+      "name": "compressing square exceeds square of compression",
+      "cutoff": 1
+    },
+    {
+      "name": "mean-square POVM trace normalization",
+      "error": 0.0,
+      "cutoff": 1
+    },
+    {
+      "name": "finite angle monopole effect positive definite in section",
+      "cutoff": 2,
+      "minimum_eigenvalue": 1.416830736220743e-06
+    },
+    {
+      "name": "compression preserves monopole-energy inequality",
+      "cutoff": 2
+    },
+    {
+      "name": "compressing square exceeds square of compression",
+      "cutoff": 2
+    },
+    {
+      "name": "mean-square POVM trace normalization",
+      "error": 0.0,
+      "cutoff": 2
+    },
+    {
+      "name": "finite phase POVM integrates to identity",
+      "error": 0.0,
+      "cutoff": 0
+    },
+    {
+      "name": "finite phase POVM integrates to identity",
+      "error": 3.3917873657517335e-16,
+      "cutoff": 1
+    },
+    {
+      "name": "finite phase POVM integrates to identity",
+      "error": 1.678147936940253e-16,
+      "cutoff": 3
+    },
+    {
+      "name": "uniform positive-flow ground-state constant",
+      "g": 1.0,
+      "M": 1,
+      "constant": 30.878679656440355,
+      "coarse": 105.7011016504085
+    },
+    {
+      "name": "necessary and sufficient deficit windows compatible",
+      "g": 1.0,
+      "cutoff": 4,
+      "lower": 0.1468304511145394,
+      "upper": 30.878679656440355
+    },
+    {
+      "name": "encoding payload logarithmic at chosen cutoff",
+      "g": 1.0,
+      "S": 4
+    },
+    {
+      "name": "monopole density coefficient follows plaquette counting",
+      "error": 0.0,
+      "g": 1.0
+    },
+    {
+      "name": "uniform positive-flow ground-state constant",
+      "g": 0.3,
+      "M": 4,
+      "constant": 47.02335769963291,
+      "coarse": 121.11795192547659
+    },
+    {
+      "name": "necessary and sufficient deficit windows compatible",
+      "g": 0.3,
+      "cutoff": 16,
+      "lower": 0.014930382967379363,
+      "upper": 4.232102192966962
+    },
+    {
+      "name": "encoding payload logarithmic at chosen cutoff",
+      "g": 0.3,
+      "S": 16
+    },
+    {
+      "name": "monopole density coefficient follows plaquette counting",
+      "error": 0.0,
+      "g": 0.3
+    },
+    {
+      "name": "uniform positive-flow ground-state constant",
+      "g": 0.03,
+      "M": 34,
+      "constant": 34.326044862284334,
+      "coarse": 105.7011016504085
+    },
+    {
+      "name": "necessary and sufficient deficit windows compatible",
+      "g": 0.03,
+      "cutoff": 136,
+      "lower": 0.0001971901062682857,
+      "upper": 0.0308934403760559
+    },
+    {
+      "name": "encoding payload logarithmic at chosen cutoff",
+      "g": 0.03,
+      "S": 136
+    },
+    {
+      "name": "monopole density coefficient follows plaquette counting",
+      "error": 0.0,
+      "g": 0.03
+    },
+    {
+      "name": "uniform positive-flow ground-state constant",
+      "g": 0.001,
+      "M": 1000,
+      "constant": 39.69370977770789,
+      "coarse": 111.7011016504085
+    },
+    {
+      "name": "necessary and sufficient deficit windows compatible",
+      "g": 0.001,
+      "cutoff": 4000,
+      "lower": 2.312032342244308e-07,
+      "upper": 3.969370977770789e-05
+    },
+    {
+      "name": "encoding payload logarithmic at chosen cutoff",
+      "g": 0.001,
+      "S": 4000
+    },
+    {
+      "name": "monopole density coefficient follows plaquette counting",
+      "error": 2.710505431213761e-20,
+      "g": 0.001
+    },
+    {
+      "name": "phase-averaged counterexample preserves number symmetry",
+      "error": 2.0212827687932015e-17
+    },
+    {
+      "name": "arbitrarily small local density",
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "small density retains separated-site order",
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "phase-averaged counterexample preserves number symmetry",
+      "error": 5.700967370455938e-18
+    },
+    {
+      "name": "arbitrarily small local density",
+      "error": 3.5772507427070987e-35
+    },
+    {
+      "name": "small density retains separated-site order",
+      "error": 3.4640980945137995e-35
+    },
+    {
+      "name": "phase-averaged counterexample preserves number symmetry",
+      "error": 1.8123102037751161e-19
+    },
+    {
+      "name": "arbitrarily small local density",
+      "error": 2.0494220598510317e-38
+    },
+    {
+      "name": "small density retains separated-site order",
+      "error": 2.0494371477728915e-38
+    },
+    {
+      "name": "thermal energy excess bounded by entropy dimension",
+      "beta": 0.01
+    },
+    {
+      "name": "Gibbs energy-free-energy-entropy identity",
+      "error": 0.0
+    },
+    {
+      "name": "thermal energy excess bounded by entropy dimension",
+      "beta": 0.4
+    },
+    {
+      "name": "Gibbs energy-free-energy-entropy identity",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "thermal energy excess bounded by entropy dimension",
+      "beta": 3.0
+    },
+    {
+      "name": "Gibbs energy-free-energy-entropy identity",
+      "error": 0.0
+    }
+  ],
+  "elapsed_seconds": 0.44489987497217953,
+  "source_sha256": "fa3ec371e2c9ab7c035ef6568ffb3582a2903e1853c6d74da3f5fafb7a4e1423",
+  "claim_limit": "Ground-state plaquette deficit and specified monopole-POVM bounds in the supplied hard integer-link family; no photon phase, charged spectrum or axiom update."
+}

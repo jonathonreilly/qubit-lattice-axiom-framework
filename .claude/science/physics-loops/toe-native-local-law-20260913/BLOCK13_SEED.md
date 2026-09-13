@@ -92,3 +92,35 @@ product of sqrt(1-rho)|0>+sqrt(rho)|1> has density rho and nonzero constant
 creation-annihilation correlation at separated sites; its global phase
 average retains that correlation. This logical counterexample must prevent
 an unwarranted no-condensation/photon claim.
+
+A sharper central result emerged: each compressed plaquette W_p decomposes
+into finite open shift chains in electric-flux space. Every chain has length
+at most 2S+1; maximal chains exist even in the Gauss-neutral space, by taking
+E_l=n*b_p,l. Therefore max eigenvalue Re W_p is exactly
+cos(pi/(2S+2)). Consequently every state has weighted plaquette deficit
+D=(1/V)sum_p w_p <1-Re W_p> >= w_sum[1-cos(pi/(2S+2))]
+>=w_sum/[2(S+1)^2]. This is an exact local spectral statement, not a
+thermodynamic photon assertion.
+
+The variational/ground-state estimate above gives D_ground <=g^2 B(g,M),
+B=w_sum[8g^2M^2+(1-cos(pi/(2M+2)))/g^2]+6r.
+Thus to attain a uniform D<=K g^2 as g->0 within this hard integer-flux
+family, S+1>=sqrt(w_sum/(2K))/g is NECESSARY. Taking M=ceil(1/g),
+S>=4M is SUFFICIENT for the physical ground-state deficit to be O(g^2),
+uniformly in spatial volume. This matches the cutoff scaling S=Theta(1/g)
+for the stated deficit target; the binary link payload is log2(1/g)+O(1).
+Do not reframe this as an absolute vacuum-energy requirement, since an
+additive energy convention could obscure it: the plaquette deficit is the
+explicit bounded observable. It says nothing about every other finite-spin
+encoding or an emergent photon at fixed arbitrary g,S.
+
+Additional optional exact scope fact: the local finite Fourier angle-POVM
+monopole indicator is positive definite, with smallest eigenvalue epsilon_S>0,
+because a nonzero finite Fourier polynomial cannot vanish on a nonempty open
+monopole-angle region. Such a region exists: take outward raw face angles
+(-5pi/3,pi/3,pi/3,pi/3,pi/3,pi/3), which sum to zero and lie in the cube
+curl range, and principal-wrap them to charge +1. This gives a local defect
+floor at each finite S, not monopole condensation or a photon no-go. If used,
+show explicitly that P Q^2 P differs from (P Q P)^2. The global phase-average
+low-density ordered-state counterexample remains a guard against overclaiming
+one-point density as a gap/correlation theorem.

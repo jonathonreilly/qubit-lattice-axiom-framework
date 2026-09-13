@@ -613,3 +613,8 @@ precedes50 exact matrix checks, allpass in0.196s. Watrous Theorem3.51 and
 proof were checked for the finite Hermitian-preserving map hypothesis.
 No physical program decoder, controller or rare-branch normalized-state
 bound is claimed. This remains a campaign checkpoint, not a seventh PR.
+
+Synthesis committed at c489526577. Full campaign whitespace check found
+only original Block05 source snapshot formatting; archive bytes were kept
+unchanged, diagnostic saved. The new commit and the campaign diff excluding
+that source-snapshot directory pass. Source milestone PR checks are unchanged.

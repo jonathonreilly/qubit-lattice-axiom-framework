@@ -232,3 +232,10 @@ integration pipeline, strict lint and changed-evidence ledger gate remain
 pending before landing. The branch citation manifests must be regenerated
 on the eventual combined integration state. No audit verdict was applied,
 no science was merged into main, and no editable prompt file was changed.
+
+The full campaign archive additionally retains original Markdown trailing
+spaces and an end blank line in four pinned Block05 source snapshots. Those
+bytes were left intact to preserve their source identity. The new synthesis
+commit and the campaign diff excluding that source-snapshot directory pass
+whitespace checks; [the diagnostic](CAMPAIGN_ARCHIVE_WHITESPACE_CHECK.txt)
+records the distinction. This does not change the six source PR checks.

@@ -1,0 +1,1 @@
+The initial exploration isolated the exchange graph. The final native shell includes the two-photon Peierls tadpole in the inverse-fermion derivative as well. It changes only the O(radius^2) finite-shell error, not the logarithmic coefficient. No failed numerical criterion was discarded.

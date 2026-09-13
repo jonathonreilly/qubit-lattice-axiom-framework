@@ -1,0 +1,886 @@
+{
+  "status": "ok",
+  "check_count": 191,
+  "checks": [
+    {
+      "name": "normal_coordinate_spin_connection_variation"
+    },
+    {
+      "name": "half_density_trace_gradient_cancellation"
+    },
+    {
+      "name": "Darboux_momentum_spinor_0"
+    },
+    {
+      "name": "connection_curvature_(0, 1)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(0, 1)"
+    },
+    {
+      "name": "connection_curvature_(0, 2)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(0, 2)"
+    },
+    {
+      "name": "connection_curvature_(0, 3)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(0, 3)"
+    },
+    {
+      "name": "connection_curvature_(0, 4)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(0, 4)"
+    },
+    {
+      "name": "connection_curvature_(0, 5)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(0, 5)"
+    },
+    {
+      "name": "Darboux_momentum_spinor_1"
+    },
+    {
+      "name": "connection_curvature_(1, 2)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(1, 2)"
+    },
+    {
+      "name": "connection_curvature_(1, 3)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(1, 3)"
+    },
+    {
+      "name": "connection_curvature_(1, 4)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(1, 4)"
+    },
+    {
+      "name": "connection_curvature_(1, 5)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(1, 5)"
+    },
+    {
+      "name": "Darboux_momentum_spinor_2"
+    },
+    {
+      "name": "connection_curvature_(2, 3)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(2, 3)"
+    },
+    {
+      "name": "connection_curvature_(2, 4)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(2, 4)"
+    },
+    {
+      "name": "connection_curvature_(2, 5)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(2, 5)"
+    },
+    {
+      "name": "Darboux_momentum_spinor_3"
+    },
+    {
+      "name": "connection_curvature_(3, 4)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(3, 4)"
+    },
+    {
+      "name": "connection_curvature_(3, 5)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(3, 5)"
+    },
+    {
+      "name": "Darboux_momentum_spinor_4"
+    },
+    {
+      "name": "connection_curvature_(4, 5)"
+    },
+    {
+      "name": "Darboux_momentum_curvature_(4, 5)"
+    },
+    {
+      "name": "Darboux_momentum_spinor_5"
+    },
+    {
+      "name": "identity_metric_curvature"
+    },
+    {
+      "name": "Levi_Civita_frame_skew_0",
+      "max_residual": 1.1071455350175102e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "scalar_connection_matches_coordinate_geometry_0",
+      "max_residual": 2.7755575615628914e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "covariant_Dirac_principal_variation_0",
+      "max_residual": 3.4786087461110487e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "covariant_Dirac_connection_variation_0",
+      "max_residual": 3.0116343691713238e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "polar_frame_variation_symmetric_0",
+      "max_residual": 1.7763568394002505e-15,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "connection_polar_moment_map_0",
+      "max_residual": 3.3306690738754696e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "Kosmann_matches_polar_moment_map_0",
+      "max_residual": 1.2412670766236366e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "curved_normal_bracket_principal_0",
+      "max_residual": 5.525032997054198e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "curved_normal_bracket_zero_order_0",
+      "max_residual": 2.7755575615628914e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "spacetime_temporal_connection_0",
+      "max_residual": 6.938893903907228e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "full_ADM_temporal_rotation_0",
+      "max_residual": 6.661338147750939e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(0, 0)",
+      "max_residual": 1.1102230246251565e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(0, 1)",
+      "max_residual": 5.639840063863022e-17,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(0, 2)",
+      "max_residual": 2.7755575615628914e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "Levi_Civita_frame_skew_1",
+      "max_residual": 2.220446049250313e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "scalar_connection_matches_coordinate_geometry_1",
+      "max_residual": 1.1150912609939193e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "covariant_Dirac_principal_variation_1",
+      "max_residual": 5.0586757005532945e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "covariant_Dirac_connection_variation_1",
+      "max_residual": 1.9809993944739906e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "polar_frame_variation_symmetric_1",
+      "max_residual": 4.6629367034256575e-15,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "connection_polar_moment_map_1",
+      "max_residual": 4.440892098500626e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "Kosmann_matches_polar_moment_map_1",
+      "max_residual": 1.139486317120639e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "curved_normal_bracket_principal_1",
+      "max_residual": 3.3952753089216265e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "curved_normal_bracket_zero_order_1",
+      "max_residual": 3.1401849173675503e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "spacetime_temporal_connection_1",
+      "max_residual": 5.811323644522304e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "full_ADM_temporal_rotation_1",
+      "max_residual": 4.440892098500626e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(1, 0)",
+      "max_residual": 3.3306690738754696e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(1, 1)",
+      "max_residual": 1.1102230246251565e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(1, 2)",
+      "max_residual": 5.551115123125783e-17,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "Levi_Civita_frame_skew_2",
+      "max_residual": 1.1796119636642288e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "scalar_connection_matches_coordinate_geometry_2",
+      "max_residual": 9.396474428154619e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "covariant_Dirac_principal_variation_2",
+      "max_residual": 4.585453399165882e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "covariant_Dirac_connection_variation_2",
+      "max_residual": 1.0841208417126807e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "polar_frame_variation_symmetric_2",
+      "max_residual": 6.661338147750939e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "connection_polar_moment_map_2",
+      "max_residual": 2.220446049250313e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "Kosmann_matches_polar_moment_map_2",
+      "max_residual": 1.6243534171511178e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "curved_normal_bracket_principal_2",
+      "max_residual": 2.6737711109153337e-15,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "curved_normal_bracket_zero_order_2",
+      "max_residual": 5.329070518200751e-15,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "spacetime_temporal_connection_2",
+      "max_residual": 6.245004513516506e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "full_ADM_temporal_rotation_2",
+      "max_residual": 2.7755575615628914e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(2, 0)",
+      "max_residual": 1.3377457338525484e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(2, 1)",
+      "max_residual": 1.2364207862187947e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(2, 2)",
+      "max_residual": 2.3592239273284576e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "Levi_Civita_frame_skew_3",
+      "max_residual": 2.9426044826836407e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "scalar_connection_matches_coordinate_geometry_3",
+      "max_residual": 1.4946834900704541e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "covariant_Dirac_principal_variation_3",
+      "max_residual": 1.0616535428553675e-11,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "covariant_Dirac_connection_variation_3",
+      "max_residual": 2.2612957359397742e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "polar_frame_variation_symmetric_3",
+      "max_residual": 3.9968028886505635e-15,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "connection_polar_moment_map_3",
+      "max_residual": 2.498001805406602e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "Kosmann_matches_polar_moment_map_3",
+      "max_residual": 4.273266147306073e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "curved_normal_bracket_principal_3",
+      "max_residual": 3.583003205628631e-15,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "curved_normal_bracket_zero_order_3",
+      "max_residual": 2.6737711109153337e-15,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "spacetime_temporal_connection_3",
+      "max_residual": 4.758245796647952e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "full_ADM_temporal_rotation_3",
+      "max_residual": 6.661338147750939e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(3, 0)",
+      "max_residual": 2.220446049250313e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(3, 1)",
+      "max_residual": 1.6653345369377348e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(3, 2)",
+      "max_residual": 2.46311963464374e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "Levi_Civita_frame_skew_4",
+      "max_residual": 2.4506140079777043e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "scalar_connection_matches_coordinate_geometry_4",
+      "max_residual": 6.059128614320848e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "covariant_Dirac_principal_variation_4",
+      "max_residual": 4.794670478514496e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "covariant_Dirac_connection_variation_4",
+      "max_residual": 1.756278169226568e-13,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "polar_frame_variation_symmetric_4",
+      "max_residual": 2.4424906541753444e-15,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "connection_polar_moment_map_4",
+      "max_residual": 2.220446049250313e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "Kosmann_matches_polar_moment_map_4",
+      "max_residual": 2.2887833992611187e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "curved_normal_bracket_principal_4",
+      "max_residual": 1.7798229048217483e-15,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "curved_normal_bracket_zero_order_4",
+      "max_residual": 1.8610729195778454e-15,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "spacetime_temporal_connection_4",
+      "max_residual": 4.3503612170980865e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "full_ADM_temporal_rotation_4",
+      "max_residual": 4.440892098500626e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(4, 0)",
+      "max_residual": 9.108492101419342e-17,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(4, 1)",
+      "max_residual": 3.3306690738754696e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(4, 2)",
+      "max_residual": 2.3651765054390064e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "Levi_Civita_frame_skew_5",
+      "max_residual": 1.1330658227783644e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "scalar_connection_matches_coordinate_geometry_5",
+      "max_residual": 8.777083671441753e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "covariant_Dirac_principal_variation_5",
+      "max_residual": 5.093758752971078e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "covariant_Dirac_connection_variation_5",
+      "max_residual": 5.872292257199739e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "polar_frame_variation_symmetric_5",
+      "max_residual": 6.661338147750939e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "connection_polar_moment_map_5",
+      "max_residual": 1.1102230246251565e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "Kosmann_matches_polar_moment_map_5",
+      "max_residual": 5.553519564326529e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "curved_normal_bracket_principal_5",
+      "max_residual": 1.779403545242401e-15,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "curved_normal_bracket_zero_order_5",
+      "max_residual": 8.95090418262362e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "spacetime_temporal_connection_5",
+      "max_residual": 6.549022122311588e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "full_ADM_temporal_rotation_5",
+      "max_residual": 6.661338147750939e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(5, 0)",
+      "max_residual": 1.503808882470126e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(5, 1)",
+      "max_residual": 3.608224830031759e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(5, 2)",
+      "max_residual": 2.498001805406602e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "Levi_Civita_frame_skew_6",
+      "max_residual": 3.0296492129958513e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "scalar_connection_matches_coordinate_geometry_6",
+      "max_residual": 8.886119947416683e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "covariant_Dirac_principal_variation_6",
+      "max_residual": 5.049486669897858e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "covariant_Dirac_connection_variation_6",
+      "max_residual": 1.5993024477757572e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "polar_frame_variation_symmetric_6",
+      "max_residual": 2.220446049250313e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "connection_polar_moment_map_6",
+      "max_residual": 1.734723475976807e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "Kosmann_matches_polar_moment_map_6",
+      "max_residual": 2.423651445728339e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "curved_normal_bracket_principal_6",
+      "max_residual": 2.331162770223186e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "curved_normal_bracket_zero_order_6",
+      "max_residual": 6.661338147750939e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "spacetime_temporal_connection_6",
+      "max_residual": 3.1605998621979896e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "full_ADM_temporal_rotation_6",
+      "max_residual": 6.661338147750939e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(6, 0)",
+      "max_residual": 1.3877787807814457e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(6, 1)",
+      "max_residual": 2.220446049250313e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(6, 2)",
+      "max_residual": 1.3877787807814457e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "Levi_Civita_frame_skew_7",
+      "max_residual": 2.220446049250313e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "scalar_connection_matches_coordinate_geometry_7",
+      "max_residual": 1.6711069443220838e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "covariant_Dirac_principal_variation_7",
+      "max_residual": 3.703673483154548e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "covariant_Dirac_connection_variation_7",
+      "max_residual": 1.9129780570942934e-12,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "polar_frame_variation_symmetric_7",
+      "max_residual": 2.220446049250313e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "connection_polar_moment_map_7",
+      "max_residual": 2.220446049250313e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "Kosmann_matches_polar_moment_map_7",
+      "max_residual": 1.3092278833360675e-16,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "curved_normal_bracket_principal_7",
+      "max_residual": 4.442295966062276e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "curved_normal_bracket_zero_order_7",
+      "max_residual": 8.671119018262734e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "spacetime_temporal_connection_7",
+      "max_residual": 4.163336342344337e-17,
+      "tolerance": 3e-12
+    },
+    {
+      "name": "full_ADM_temporal_rotation_7",
+      "max_residual": 3.7814155942293186e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(7, 0)",
+      "max_residual": 3.3306690738754696e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(7, 1)",
+      "max_residual": 1.3877787807814457e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "full_ADM_intrinsic_connection_(7, 2)",
+      "max_residual": 2.1700279302590107e-16,
+      "tolerance": 3e-11
+    },
+    {
+      "name": "metric_curvature_lapse_contraction"
+    },
+    {
+      "name": "trace_witness_nonzero"
+    },
+    {
+      "name": "divergence_witness_coefficient"
+    },
+    {
+      "name": "spatial_product_bracket_defect"
+    },
+    {
+      "name": "spatial_connection_cancels_defect"
+    },
+    {
+      "name": "normal_product_bracket_scalar_defect"
+    },
+    {
+      "name": "normal_product_bracket_covariant_formula"
+    },
+    {
+      "name": "scalar_curvature_Euler_variation_0"
+    },
+    {
+      "name": "scalar_curvature_Euler_variation_1"
+    },
+    {
+      "name": "scalar_curvature_Euler_variation_2"
+    },
+    {
+      "name": "metric_Legendre_inverse"
+    },
+    {
+      "name": "metric_ADM_Lagrangian"
+    },
+    {
+      "name": "periodic_spatial_joint_constraint_identity"
+    },
+    {
+      "name": "periodic_spatial_product_bracket_defect"
+    },
+    {
+      "name": "native_shift_node_-1"
+    },
+    {
+      "name": "native_shift_jet_-1"
+    },
+    {
+      "name": "native_temporal_spin_vertex_-1"
+    },
+    {
+      "name": "native_shift_node_1"
+    },
+    {
+      "name": "native_shift_jet_1"
+    },
+    {
+      "name": "native_temporal_spin_vertex_1"
+    },
+    {
+      "name": "native_time_shift_leading_Taylor_(-1, 12)",
+      "error": 0.018605210954485113,
+      "spacing": 0.5235987755982988,
+      "normalized_error": 0.06786367184965755,
+      "leading_norm": 0.10263174493635352
+    },
+    {
+      "name": "native_time_shift_test_spinor_(-1, 12)",
+      "error": 0.05312318443933303,
+      "spacing": 0.5235987755982988,
+      "normalized_error": 0.10145780875562771
+    },
+    {
+      "name": "native_time_shift_leading_Taylor_(1, 12)",
+      "error": 0.03304812160940937,
+      "spacing": 0.5235987755982988,
+      "normalized_error": 0.12054509275036604,
+      "leading_norm": 0.10264274784404659
+    },
+    {
+      "name": "native_time_shift_test_spinor_(1, 12)",
+      "error": 0.03619542019349215,
+      "spacing": 0.5235987755982988,
+      "normalized_error": 0.0691281604929898
+    },
+    {
+      "name": "native_time_shift_leading_Taylor_(-1, 24)",
+      "error": 0.004923360227828845,
+      "spacing": 0.2617993877991494,
+      "normalized_error": 0.0718330587524969,
+      "leading_norm": 0.10263174493635352
+    },
+    {
+      "name": "native_time_shift_test_spinor_(-1, 24)",
+      "error": 0.028261251535028467,
+      "spacing": 0.2617993877991494,
+      "normalized_error": 0.1079500291143167
+    },
+    {
+      "name": "native_time_shift_leading_Taylor_(1, 24)",
+      "error": 0.007318696388552505,
+      "spacing": 0.2617993877991494,
+      "normalized_error": 0.10678161323621416,
+      "leading_norm": 0.10264274784404658
+    },
+    {
+      "name": "native_time_shift_test_spinor_(1, 24)",
+      "error": 0.022588435781596323,
+      "spacing": 0.2617993877991494,
+      "normalized_error": 0.08628146907251749
+    },
+    {
+      "name": "native_time_shift_leading_Taylor_(-1, 48)",
+      "error": 0.0013448546646279418,
+      "spacing": 0.1308996938995747,
+      "normalized_error": 0.07848706547348484,
+      "leading_norm": 0.10263174493635352
+    },
+    {
+      "name": "native_time_shift_test_spinor_(-1, 48)",
+      "error": 0.013997999052206483,
+      "spacing": 0.1308996938995747,
+      "normalized_error": 0.10693683564260774
+    },
+    {
+      "name": "native_time_shift_leading_Taylor_(1, 48)",
+      "error": 0.0016674886930692857,
+      "spacing": 0.1308996938995747,
+      "normalized_error": 0.09731631058098908,
+      "leading_norm": 0.10264274784404658
+    },
+    {
+      "name": "native_time_shift_test_spinor_(1, 48)",
+      "error": 0.012489817586942882,
+      "spacing": 0.1308996938995747,
+      "normalized_error": 0.09541517794934631
+    },
+    {
+      "name": "native_time_shift_leading_Taylor_(-1, 96)",
+      "error": 0.00035446006902501576,
+      "spacing": 0.06544984694978735,
+      "normalized_error": 0.08274657887437675,
+      "leading_norm": 0.10263174493635352
+    },
+    {
+      "name": "native_time_shift_test_spinor_(-1, 96)",
+      "error": 0.006884464995641741,
+      "spacing": 0.06544984694978735,
+      "normalized_error": 0.10518687692155265
+    },
+    {
+      "name": "native_time_shift_leading_Taylor_(1, 96)",
+      "error": 0.0003956225699688878,
+      "spacing": 0.06544984694978735,
+      "normalized_error": 0.09235571803746351,
+      "leading_norm": 0.10264274784404659
+    },
+    {
+      "name": "native_time_shift_test_spinor_(1, 96)",
+      "error": 0.006502129869157114,
+      "spacing": 0.06544984694978735,
+      "normalized_error": 0.09934522649297409
+    },
+    {
+      "name": "native_time_shift_asymptotic_refinement_-1",
+      "errors": [
+        0.05312318443933303,
+        0.028261251535028467,
+        0.013997999052206483,
+        0.006884464995641741
+      ]
+    },
+    {
+      "name": "native_time_shift_Taylor_remainder_refinement_-1",
+      "errors": [
+        0.018605210954485113,
+        0.004923360227828845,
+        0.0013448546646279418,
+        0.00035446006902501576
+      ]
+    },
+    {
+      "name": "native_time_shift_asymptotic_refinement_1",
+      "errors": [
+        0.03619542019349215,
+        0.022588435781596323,
+        0.012489817586942882,
+        0.006502129869157114
+      ]
+    },
+    {
+      "name": "native_time_shift_Taylor_remainder_refinement_1",
+      "errors": [
+        0.03304812160940937,
+        0.007318696388552505,
+        0.0016674886930692857,
+        0.0003956225699688878
+      ]
+    }
+  ],
+  "source_sha256": "c63d4a5a1e6c9c0b39cdceb9bc1e82c6aaf692fe0cf05a6710ae1543c54d7c47",
+  "elapsed_seconds": 5.458104958990589,
+  "scope": "Author exact algebra and finite-jet challenges; classical conditional closure is a written argument. No quantum constraint or axiom-selection claim."
+}

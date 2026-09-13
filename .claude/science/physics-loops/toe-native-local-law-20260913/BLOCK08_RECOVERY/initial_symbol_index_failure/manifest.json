@@ -1,0 +1,4 @@
+{
+  "source_sha256": "29c4b0c1b25e1d949fcca5c6141ea8448bcba9a044fa615bc5a3c1d7e1220b18",
+  "failure": "SymPy range names collided with numerical prefixes; initial harness IndexError before checks."
+}

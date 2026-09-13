@@ -23,6 +23,6 @@ continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
 lock_expires_utc: 2026-09-13T19:17:36Z
-next_action: Derive the joint metric/spinor symplectic and constraint structure; begin with the explicit canonical metric ansatz and read the primary spinor constraint treatment.
+next_action: Package the classical connection and metric-ansatz derivation with native moving-frame sources; then derive local-interaction closure criteria with the actual fermionic algebra.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.
-last_checkpoint_utc: 2026-09-13T18:20:09Z
+last_checkpoint_utc: 2026-09-13T19:00:00Z

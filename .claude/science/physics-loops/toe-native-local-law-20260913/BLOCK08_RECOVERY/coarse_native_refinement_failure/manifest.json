@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-13T18:47:07.727734+00:00",
+  "files": {
+    "check_block08.py": "e8e4913c805feab55c258c5e8f6d1798441334ee36d8dd221be62c4def3065a2",
+    "BLOCK08_CHECKS.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BLOCK08_CHECKS.stderr": "7cae978e2c0205451cd5ed9c2caed1ac14933ac546a8ed0ff6914b719fad98c3",
+    "BLOCK08_CHECKS.json": "2ec80f115d93d60cce2fe9152434283e7f7993ed8a1746f1dd1c2f0a510ac6b8"
+  },
+  "failure": "positive-chirality refinement 12->24 ratio .624 exceeds .58; all .12*a error bounds passed. JSON is stale prior success and not evidence of this failed run.",
+  "disposition": "preserved before diagnosis; do not loosen threshold to conceal failure"
+}

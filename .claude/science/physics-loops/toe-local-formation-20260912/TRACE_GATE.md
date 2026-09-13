@@ -23,3 +23,12 @@ source_of_blocker_text: frontier_question
 reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: Review the rank-two relative metric and all-time singular-value comparison; use only after a focused check for further native scalar work.
+
+# Protected growing formation (Block11)
+trace_class: upstream_support
+target_claim_id: native_charged_record_histories_note_2026-09-09
+target_blocker_text: "The exact next positive target is a specified native state/dwell family for which that conditional locality and a physical formation mechanism can both be proved."
+source_of_blocker_text: frontier_question
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: Review the conditional local content/history proof and growing finite current windows; address matter-information readout and the supplied occurrence/controller assumptions before any stronger formation claim.

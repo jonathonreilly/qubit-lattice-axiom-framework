@@ -1,0 +1,14 @@
+{
+  "main_revision": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "proof_dependency": {
+    "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+    "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "used": "Definitions (1)-(4), Theorems1-2 finite code and fair nonbridge dictionary; Theorem3 support/number context",
+    "reading": "definitions and Theorems1-3 fully reread for Block11; later energy apparatus sections read earlier in campaign"
+  },
+  "comparison_only": [
+    "current-main local-cycle transport five-event note",
+    "PR8065 charged-history note at b20fb72faf9fb793487a664fb927296c65f7d493"
+  ],
+  "scope": "No unmerged scientific result from an earlier campaign block is a proof dependency."
+}

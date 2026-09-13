@@ -1,0 +1,342 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "code_projector",
+      "max_residual": 0.0
+    },
+    {
+      "name": "code_dimension_32",
+      "max_residual": 0.0
+    },
+    {
+      "name": "protected_number_conservation",
+      "max_residual": 0.0
+    },
+    {
+      "name": "cycle_0_involution",
+      "max_residual": 0.0
+    },
+    {
+      "name": "cycle_0_code",
+      "max_residual": 0.0
+    },
+    {
+      "name": "pulse_0_Hermitian",
+      "max_residual": 0.0
+    },
+    {
+      "name": "pulse_0_involution",
+      "max_residual": 0.0
+    },
+    {
+      "name": "unitarity_0_-0.5235987755982988",
+      "max_residual": 1.2253002782949126e-17
+    },
+    {
+      "name": "branch_amplitude_0_-0.5235987755982988_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_0_-0.5235987755982988_-1",
+      "max_residual": 2.7755575615628914e-17
+    },
+    {
+      "name": "protected_algebra_0_-0.5235987755982988_-1",
+      "max_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "branch_amplitude_0_-0.5235987755982988_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_0_-0.5235987755982988_1",
+      "max_residual": 1.3877787807814457e-17
+    },
+    {
+      "name": "protected_algebra_0_-0.5235987755982988_1",
+      "max_residual": 5.551115123125783e-17
+    },
+    {
+      "name": "unitarity_0_0",
+      "max_residual": 0.0
+    },
+    {
+      "name": "branch_amplitude_0_0_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_0_0_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "protected_algebra_0_0_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "branch_amplitude_0_0_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_0_0_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "protected_algebra_0_0_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "unitarity_0_0.5235987755982988",
+      "max_residual": 1.2253002782949126e-17
+    },
+    {
+      "name": "branch_amplitude_0_0.5235987755982988_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_0_0.5235987755982988_-1",
+      "max_residual": 1.3877787807814457e-17
+    },
+    {
+      "name": "protected_algebra_0_0.5235987755982988_-1",
+      "max_residual": 5.551115123125783e-17
+    },
+    {
+      "name": "branch_amplitude_0_0.5235987755982988_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_0_0.5235987755982988_1",
+      "max_residual": 2.7755575615628914e-17
+    },
+    {
+      "name": "protected_algebra_0_0.5235987755982988_1",
+      "max_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "wrong_sign_0",
+      "negative_control_residual": 0.12499999999999999
+    },
+    {
+      "name": "missing_cycle_agrees_on_code_0",
+      "max_residual": 0.0
+    },
+    {
+      "name": "missing_cycle_not_unitary_0",
+      "negative_control_residual": 0.4999999999999999
+    },
+    {
+      "name": "retired_hop_breaks_energy_0",
+      "negative_control_residual": 2.0
+    },
+    {
+      "name": "cycle_1_involution",
+      "max_residual": 0.0
+    },
+    {
+      "name": "cycle_1_code",
+      "max_residual": 0.0
+    },
+    {
+      "name": "pulse_1_Hermitian",
+      "max_residual": 0.0
+    },
+    {
+      "name": "pulse_1_involution",
+      "max_residual": 0.0
+    },
+    {
+      "name": "unitarity_1_-0.5235987755982988",
+      "max_residual": 1.2253002782949126e-17
+    },
+    {
+      "name": "branch_amplitude_1_-0.5235987755982988_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_1_-0.5235987755982988_-1",
+      "max_residual": 2.7755575615628914e-17
+    },
+    {
+      "name": "protected_algebra_1_-0.5235987755982988_-1",
+      "max_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "branch_amplitude_1_-0.5235987755982988_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_1_-0.5235987755982988_1",
+      "max_residual": 1.3877787807814457e-17
+    },
+    {
+      "name": "protected_algebra_1_-0.5235987755982988_1",
+      "max_residual": 5.551115123125783e-17
+    },
+    {
+      "name": "unitarity_1_0",
+      "max_residual": 0.0
+    },
+    {
+      "name": "branch_amplitude_1_0_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_1_0_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "protected_algebra_1_0_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "branch_amplitude_1_0_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_1_0_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "protected_algebra_1_0_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "unitarity_1_0.5235987755982988",
+      "max_residual": 1.2253002782949126e-17
+    },
+    {
+      "name": "branch_amplitude_1_0.5235987755982988_-1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_1_0.5235987755982988_-1",
+      "max_residual": 1.3877787807814457e-17
+    },
+    {
+      "name": "protected_algebra_1_0.5235987755982988_-1",
+      "max_residual": 5.551115123125783e-17
+    },
+    {
+      "name": "branch_amplitude_1_0.5235987755982988_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "scalar_effect_1_0.5235987755982988_1",
+      "max_residual": 2.7755575615628914e-17
+    },
+    {
+      "name": "protected_algebra_1_0.5235987755982988_1",
+      "max_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "wrong_sign_1",
+      "negative_control_residual": 0.125
+    },
+    {
+      "name": "missing_cycle_agrees_on_code_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "missing_cycle_not_unitary_1",
+      "negative_control_residual": 0.4999999999999999
+    },
+    {
+      "name": "retired_hop_breaks_energy_1",
+      "negative_control_residual": 2.0
+    },
+    {
+      "name": "physical_history_commutation_0_0",
+      "max_residual": 0.0
+    },
+    {
+      "name": "history_Record_0_0_2",
+      "max_residual": 0.0
+    },
+    {
+      "name": "history_Record_0_0_5",
+      "max_residual": 0.0
+    },
+    {
+      "name": "physical_history_commutation_0_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "history_Record_0_1_2",
+      "max_residual": 0.0
+    },
+    {
+      "name": "history_Record_0_1_5",
+      "max_residual": 0.0
+    },
+    {
+      "name": "physical_history_commutation_1_0",
+      "max_residual": 0.0
+    },
+    {
+      "name": "history_Record_1_0_2",
+      "max_residual": 0.0
+    },
+    {
+      "name": "history_Record_1_0_5",
+      "max_residual": 0.0
+    },
+    {
+      "name": "physical_history_commutation_1_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "history_Record_1_1_2",
+      "max_residual": 0.0
+    },
+    {
+      "name": "history_Record_1_1_5",
+      "max_residual": 0.0
+    },
+    {
+      "name": "complete_history_protected_algebra",
+      "max_residual": 5.551115123125783e-17
+    },
+    {
+      "name": "star_partial_isometry",
+      "max_residual": 1.2253002782949126e-17
+    },
+    {
+      "name": "star_nilpotent",
+      "max_residual": 0.0
+    },
+    {
+      "name": "star_cubic",
+      "max_residual": 0.0
+    },
+    {
+      "name": "star_unitarity",
+      "max_residual": 2.220446049250313e-16
+    },
+    {
+      "name": "channel_idle",
+      "max_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "channel_jump_0",
+      "max_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "channel_jump_1",
+      "max_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "collision_protected_energy",
+      "max_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "same_collision_can_reverse_a_used_environment",
+      "negative_control_residual": 0.5561165969134938
+    }
+  ],
+  "count": 83,
+  "seconds": 0.12440495798364282,
+  "source_sha256": "0d9387567557f2c5ceb8df30df93582744fb269a594006e1c539bded02d10cbb",
+  "note_sha256": "c258d141e0bbaf047b9b7e5be3c2f9b092c6b833155a509824b402f1241bb6a9",
+  "scope": "same-author finite sign, history and dilation checks; no independent audit"
+}

@@ -1,0 +1,1326 @@
+{
+  "status": "passed",
+  "count": 325,
+  "checks": [
+    {
+      "name": "physical_Bloch_phase_00",
+      "exact": true
+    },
+    {
+      "name": "physical_y_current_00",
+      "exact": true
+    },
+    {
+      "name": "physical_Bloch_phase_01",
+      "exact": true
+    },
+    {
+      "name": "physical_y_current_01",
+      "exact": true
+    },
+    {
+      "name": "physical_Bloch_phase_10",
+      "exact": true
+    },
+    {
+      "name": "physical_y_current_10",
+      "exact": true
+    },
+    {
+      "name": "physical_Bloch_phase_11",
+      "exact": true
+    },
+    {
+      "name": "physical_y_current_11",
+      "exact": true
+    },
+    {
+      "name": "omitted_internal_position_changes_current_operator",
+      "rejected": true
+    },
+    {
+      "name": "characteristic_polynomial",
+      "exact": true
+    },
+    {
+      "name": "patch_modes_per_vertex",
+      "exact": true
+    },
+    {
+      "name": "literal_mode_2_0",
+      "max_residual": 4.163336342344337e-17
+    },
+    {
+      "name": "literal_mode_2_1",
+      "max_residual": 5.551115123125783e-17
+    },
+    {
+      "name": "literal_mode_4_0",
+      "max_residual": 7.165058972546719e-17
+    },
+    {
+      "name": "literal_mode_4_1",
+      "max_residual": 1.1631705747361534e-16
+    },
+    {
+      "name": "literal_mode_6_0",
+      "max_residual": 1.2738115944464653e-16
+    },
+    {
+      "name": "literal_mode_6_1",
+      "max_residual": 1.5218182408308984e-16
+    },
+    {
+      "name": "literal_mode_8_0",
+      "max_residual": 5.902086844557842e-17
+    },
+    {
+      "name": "literal_mode_8_1",
+      "max_residual": 5.390439619135067e-17
+    },
+    {
+      "name": "literal_mode_10_0",
+      "max_residual": 3.1031676915590914e-16
+    },
+    {
+      "name": "literal_mode_10_1",
+      "max_residual": 2.387624894196368e-16
+    },
+    {
+      "name": "literal_mode_12_0",
+      "max_residual": 1.1934342793740772e-16
+    },
+    {
+      "name": "literal_mode_12_1",
+      "max_residual": 1.2118257228641695e-16
+    },
+    {
+      "name": "literal_mode_14_0",
+      "max_residual": 1.5515838457795457e-17
+    },
+    {
+      "name": "literal_mode_14_1",
+      "max_residual": 5.594315114139762e-17
+    },
+    {
+      "name": "literal_mode_16_0",
+      "max_residual": 1.2203628619423782e-16
+    },
+    {
+      "name": "literal_mode_16_1",
+      "max_residual": 1.5515838457795457e-16
+    },
+    {
+      "name": "literal_mode_18_0",
+      "max_residual": 2.2887833992611187e-16
+    },
+    {
+      "name": "literal_mode_18_1",
+      "max_residual": 1.6883057536160646e-16
+    },
+    {
+      "name": "literal_mode_20_0",
+      "max_residual": 4.0978826348654606e-16
+    },
+    {
+      "name": "literal_mode_20_1",
+      "max_residual": 3.009894408363891e-16
+    },
+    {
+      "name": "literal_mode_22_0",
+      "max_residual": 3.882061541865368e-16
+    },
+    {
+      "name": "literal_mode_22_1",
+      "max_residual": 4.213387094136756e-16
+    },
+    {
+      "name": "literal_mode_24_0",
+      "max_residual": 1.9634012289776712e-16
+    },
+    {
+      "name": "literal_mode_24_1",
+      "max_residual": 2.5589376332604516e-16
+    },
+    {
+      "name": "literal_mode_26_0",
+      "max_residual": 3.061616997868383e-17
+    },
+    {
+      "name": "literal_mode_26_1",
+      "max_residual": 3.0616169978683824e-17
+    },
+    {
+      "name": "literal_mode_28_0",
+      "max_residual": 1.12772719393135e-16
+    },
+    {
+      "name": "literal_mode_28_1",
+      "max_residual": 1.1857187100668868e-16
+    },
+    {
+      "name": "literal_mode_30_0",
+      "max_residual": 2.959651895582885e-16
+    },
+    {
+      "name": "literal_mode_30_1",
+      "max_residual": 1.9451597974997743e-16
+    },
+    {
+      "name": "literal_mode_32_0",
+      "max_residual": 5.9211894646675e-16
+    },
+    {
+      "name": "literal_mode_32_1",
+      "max_residual": 6.123233995736767e-17
+    },
+    {
+      "name": "literal_mode_34_0",
+      "max_residual": 4.969187675080721e-16
+    },
+    {
+      "name": "literal_mode_34_1",
+      "max_residual": 3.11864493316497e-16
+    },
+    {
+      "name": "literal_mode_36_0",
+      "max_residual": 3.2083017756578025e-16
+    },
+    {
+      "name": "literal_mode_36_1",
+      "max_residual": 3.0467987022359185e-16
+    },
+    {
+      "name": "literal_mode_38_0",
+      "max_residual": 7.686611497583147e-17
+    },
+    {
+      "name": "literal_mode_38_1",
+      "max_residual": 1.1103074221624714e-16
+    },
+    {
+      "name": "literal_mode_40_0",
+      "max_residual": 2.6736838850931897e-16
+    },
+    {
+      "name": "literal_mode_40_1",
+      "max_residual": 3.5497037427302993e-16
+    },
+    {
+      "name": "literal_mode_42_0",
+      "max_residual": 3.3594567230594303e-16
+    },
+    {
+      "name": "literal_mode_42_1",
+      "max_residual": 2.6945789820192466e-16
+    },
+    {
+      "name": "literal_mode_44_0",
+      "max_residual": 7.550332863779066e-16
+    },
+    {
+      "name": "literal_mode_44_1",
+      "max_residual": 4.3382870954300763e-16
+    },
+    {
+      "name": "literal_mode_46_0",
+      "max_residual": 7.264329320467944e-16
+    },
+    {
+      "name": "literal_mode_46_1",
+      "max_residual": 4.631939073484647e-16
+    },
+    {
+      "name": "literal_mode_48_0",
+      "max_residual": 4.588105842142954e-16
+    },
+    {
+      "name": "literal_mode_48_1",
+      "max_residual": 6.396215040447424e-16
+    },
+    {
+      "name": "literal_mode_50_0",
+      "max_residual": 4.1777673608052095e-17
+    },
+    {
+      "name": "literal_mode_50_1",
+      "max_residual": 6.206335383118183e-17
+    },
+    {
+      "name": "literal_mode_52_0",
+      "max_residual": 1.2149258193159488e-16
+    },
+    {
+      "name": "literal_mode_52_1",
+      "max_residual": 1.716587549445839e-16
+    },
+    {
+      "name": "literal_mode_54_0",
+      "max_residual": 1.8875832159447664e-16
+    },
+    {
+      "name": "literal_mode_54_1",
+      "max_residual": 1.7010907505015192e-16
+    },
+    {
+      "name": "literal_mode_56_0",
+      "max_residual": 4.163336342344337e-16
+    },
+    {
+      "name": "literal_mode_56_1",
+      "max_residual": 3.1358215827540143e-16
+    },
+    {
+      "name": "literal_mode_58_0",
+      "max_residual": 3.3306690738754696e-16
+    },
+    {
+      "name": "literal_mode_58_1",
+      "max_residual": 3.342213888644167e-16
+    },
+    {
+      "name": "literal_mode_60_0",
+      "max_residual": 2.3389836998737276e-16
+    },
+    {
+      "name": "literal_mode_60_1",
+      "max_residual": 3.203936111033422e-16
+    },
+    {
+      "name": "literal_mode_62_0",
+      "max_residual": 1.1258341994493904e-16
+    },
+    {
+      "name": "literal_mode_62_1",
+      "max_residual": 1.2412670766236366e-16
+    },
+    {
+      "name": "literal_mode_64_0",
+      "max_residual": 2.6124954373719865e-16
+    },
+    {
+      "name": "literal_mode_64_1",
+      "max_residual": 3.11864493316497e-16
+    },
+    {
+      "name": "literal_current_1.0471975511965976_0.7853981633974483_1.0471975511965976_0",
+      "max_residual": 2.2204834277217706e-16
+    },
+    {
+      "name": "literal_current_1.0471975511965976_0.7853981633974483_1.0471975511965976_1",
+      "max_residual": 8.88178453953299e-16
+    },
+    {
+      "name": "literal_current_1.0471975511965976_0.7853981633974483_1.0471975511965976_2",
+      "max_residual": 8.881784807495684e-16
+    },
+    {
+      "name": "literal_mode_66_0",
+      "max_residual": 3.8659043403122315e-16
+    },
+    {
+      "name": "literal_mode_66_1",
+      "max_residual": 3.469446951953614e-16
+    },
+    {
+      "name": "literal_current_1.0471975511965976_0.7853981633974483_2.0943951023931953_0",
+      "max_residual": 2.220454218961126e-16
+    },
+    {
+      "name": "literal_current_1.0471975511965976_0.7853981633974483_2.0943951023931953_1",
+      "max_residual": 4.441115714830274e-16
+    },
+    {
+      "name": "literal_current_1.0471975511965976_0.7853981633974483_2.0943951023931953_2",
+      "max_residual": 2.220478908262604e-16
+    },
+    {
+      "name": "literal_mode_68_0",
+      "max_residual": 6.093992464111427e-16
+    },
+    {
+      "name": "literal_mode_68_1",
+      "max_residual": 2.659960676773342e-16
+    },
+    {
+      "name": "literal_mode_70_0",
+      "max_residual": 4.922214816562908e-16
+    },
+    {
+      "name": "literal_mode_70_1",
+      "max_residual": 4.602340039745779e-16
+    },
+    {
+      "name": "literal_mode_72_0",
+      "max_residual": 4.2610119076017304e-16
+    },
+    {
+      "name": "literal_mode_72_1",
+      "max_residual": 8.715724226945101e-16
+    },
+    {
+      "name": "literal_mode_74_0",
+      "max_residual": 6.938893903907228e-17
+    },
+    {
+      "name": "literal_mode_74_1",
+      "max_residual": 1.2412670766236366e-16
+    },
+    {
+      "name": "literal_mode_76_0",
+      "max_residual": 2.858540832404804e-16
+    },
+    {
+      "name": "literal_mode_76_1",
+      "max_residual": 3.7238012298709097e-16
+    },
+    {
+      "name": "literal_mode_78_0",
+      "max_residual": 3.2368285245694683e-16
+    },
+    {
+      "name": "literal_mode_78_1",
+      "max_residual": 5.627261618861785e-16
+    },
+    {
+      "name": "literal_mode_80_0",
+      "max_residual": 5.9211894646675e-16
+    },
+    {
+      "name": "literal_mode_80_1",
+      "max_residual": 6.195464776079161e-16
+    },
+    {
+      "name": "literal_mode_82_0",
+      "max_residual": 5.71395899374721e-16
+    },
+    {
+      "name": "literal_mode_82_1",
+      "max_residual": 4.992471030961519e-16
+    },
+    {
+      "name": "literal_mode_84_0",
+      "max_residual": 4.2099133379706923e-16
+    },
+    {
+      "name": "literal_mode_84_1",
+      "max_residual": 9.074842391027969e-16
+    },
+    {
+      "name": "literal_mode_86_0",
+      "max_residual": 2.5018537765542007e-16
+    },
+    {
+      "name": "literal_mode_86_1",
+      "max_residual": 2.558937633260452e-16
+    },
+    {
+      "name": "literal_mode_88_0",
+      "max_residual": 4.699860481963431e-16
+    },
+    {
+      "name": "literal_mode_88_1",
+      "max_residual": 5.440730028703117e-16
+    },
+    {
+      "name": "literal_mode_90_0",
+      "max_residual": 6.579886408580703e-16
+    },
+    {
+      "name": "literal_mode_90_1",
+      "max_residual": 5.655092105929845e-16
+    },
+    {
+      "name": "literal_mode_92_0",
+      "max_residual": 1.0168025090427727e-15
+    },
+    {
+      "name": "literal_mode_92_1",
+      "max_residual": 5.622724227595713e-16
+    },
+    {
+      "name": "literal_mode_94_0",
+      "max_residual": 7.689659557974535e-16
+    },
+    {
+      "name": "literal_mode_94_1",
+      "max_residual": 6.220283963191678e-16
+    },
+    {
+      "name": "literal_mode_96_0",
+      "max_residual": 6.197372488554928e-16
+    },
+    {
+      "name": "literal_mode_96_1",
+      "max_residual": 1.1921980955184335e-15
+    },
+    {
+      "name": "literal_mode_98_0",
+      "max_residual": 1.4898437035160061e-16
+    },
+    {
+      "name": "literal_mode_98_1",
+      "max_residual": 1.2118257228641695e-16
+    },
+    {
+      "name": "literal_mode_100_0",
+      "max_residual": 1.8041124150158794e-16
+    },
+    {
+      "name": "literal_mode_100_1",
+      "max_residual": 1.5515838457795457e-16
+    },
+    {
+      "name": "literal_mode_102_0",
+      "max_residual": 2.8609792490763985e-16
+    },
+    {
+      "name": "literal_mode_102_1",
+      "max_residual": 2.2618026913899003e-16
+    },
+    {
+      "name": "literal_mode_104_0",
+      "max_residual": 5.900916318210353e-16
+    },
+    {
+      "name": "literal_mode_104_1",
+      "max_residual": 4.74519013200431e-16
+    },
+    {
+      "name": "literal_mode_106_0",
+      "max_residual": 4.621532547029658e-16
+    },
+    {
+      "name": "literal_mode_106_1",
+      "max_residual": 4.0531694296714425e-16
+    },
+    {
+      "name": "literal_mode_108_0",
+      "max_residual": 3.331605951866314e-16
+    },
+    {
+      "name": "literal_mode_108_1",
+      "max_residual": 3.130971641029511e-16
+    },
+    {
+      "name": "literal_mode_110_0",
+      "max_residual": 1.5026519671295096e-16
+    },
+    {
+      "name": "literal_mode_110_1",
+      "max_residual": 1.6883057536160646e-16
+    },
+    {
+      "name": "literal_mode_112_0",
+      "max_residual": 3.356589068483857e-16
+    },
+    {
+      "name": "literal_mode_112_1",
+      "max_residual": 4.475544956049091e-16
+    },
+    {
+      "name": "literal_current_2.0943951023931953_0.7853981633974483_1.0471975511965976_0",
+      "max_residual": 1.4486902833048534e-19
+    },
+    {
+      "name": "literal_current_2.0943951023931953_0.7853981633974483_1.0471975511965976_1",
+      "max_residual": 4.964163623302594e-18
+    },
+    {
+      "name": "literal_current_2.0943951023931953_0.7853981633974483_1.0471975511965976_2",
+      "max_residual": 4.441735292381276e-16
+    },
+    {
+      "name": "literal_mode_114_0",
+      "max_residual": 5.747232187430761e-16
+    },
+    {
+      "name": "literal_mode_114_1",
+      "max_residual": 6.274010947468885e-16
+    },
+    {
+      "name": "literal_current_2.0943951023931953_0.7853981633974483_2.0943951023931953_0",
+      "max_residual": 8.076367414566443e-19
+    },
+    {
+      "name": "literal_current_2.0943951023931953_0.7853981633974483_2.0943951023931953_1",
+      "max_residual": 2.2222264725092817e-16
+    },
+    {
+      "name": "literal_current_2.0943951023931953_0.7853981633974483_2.0943951023931953_2",
+      "max_residual": 6.661426416941529e-16
+    },
+    {
+      "name": "literal_mode_116_0",
+      "max_residual": 8.459761032879693e-16
+    },
+    {
+      "name": "literal_mode_116_1",
+      "max_residual": 3.608224830031759e-16
+    },
+    {
+      "name": "literal_mode_118_0",
+      "max_residual": 8.93798490114984e-16
+    },
+    {
+      "name": "literal_mode_118_1",
+      "max_residual": 5.440855976001004e-16
+    },
+    {
+      "name": "literal_mode_120_0",
+      "max_residual": 6.713178136967714e-16
+    },
+    {
+      "name": "literal_mode_120_1",
+      "max_residual": 5.750497121565129e-16
+    },
+    {
+      "name": "literal_mode_122_0",
+      "max_residual": 1.9451597974997743e-16
+    },
+    {
+      "name": "literal_mode_122_1",
+      "max_residual": 2.8576114088871287e-16
+    },
+    {
+      "name": "literal_mode_124_0",
+      "max_residual": 4.2499345902880405e-16
+    },
+    {
+      "name": "literal_mode_124_1",
+      "max_residual": 3.4586419865953925e-16
+    },
+    {
+      "name": "literal_mode_126_0",
+      "max_residual": 6.403362282114314e-16
+    },
+    {
+      "name": "literal_mode_126_1",
+      "max_residual": 3.296522366252803e-16
+    },
+    {
+      "name": "literal_mode_128_0",
+      "max_residual": 8.252325904466731e-16
+    },
+    {
+      "name": "literal_mode_128_1",
+      "max_residual": 6.473657049138937e-16
+    },
+    {
+      "name": "literal_mode_130_0",
+      "max_residual": 7.71185559270127e-16
+    },
+    {
+      "name": "literal_mode_130_1",
+      "max_residual": 5.71395899374721e-16
+    },
+    {
+      "name": "literal_mode_132_0",
+      "max_residual": 7.493747221907888e-16
+    },
+    {
+      "name": "literal_mode_132_1",
+      "max_residual": 4.847302891456678e-16
+    },
+    {
+      "name": "literal_mode_134_0",
+      "max_residual": 3.579440240851112e-16
+    },
+    {
+      "name": "literal_mode_134_1",
+      "max_residual": 1.8556562896439023e-16
+    },
+    {
+      "name": "literal_mode_136_0",
+      "max_residual": 5.68354290845375e-16
+    },
+    {
+      "name": "literal_mode_136_1",
+      "max_residual": 3.9160205798978334e-16
+    },
+    {
+      "name": "literal_mode_138_0",
+      "max_residual": 9.192452540260068e-16
+    },
+    {
+      "name": "literal_mode_138_1",
+      "max_residual": 4.824012219386366e-16
+    },
+    {
+      "name": "literal_mode_140_0",
+      "max_residual": 1.247457973265988e-15
+    },
+    {
+      "name": "literal_mode_140_1",
+      "max_residual": 5.312333970709034e-16
+    },
+    {
+      "name": "literal_mode_142_0",
+      "max_residual": 1.1278637897670841e-15
+    },
+    {
+      "name": "literal_mode_142_1",
+      "max_residual": 5.957464140271439e-16
+    },
+    {
+      "name": "literal_mode_144_0",
+      "max_residual": 7.318091523463332e-16
+    },
+    {
+      "name": "literal_mode_144_1",
+      "max_residual": 8.455206652451151e-16
+    },
+    {
+      "name": "literal_mode_146_0",
+      "max_residual": 5.902086844557842e-17
+    },
+    {
+      "name": "literal_mode_146_1",
+      "max_residual": 4.25050644052466e-17
+    },
+    {
+      "name": "literal_mode_148_0",
+      "max_residual": 3.030954607830199e-16
+    },
+    {
+      "name": "literal_mode_148_1",
+      "max_residual": 1.9329521701561158e-16
+    },
+    {
+      "name": "literal_mode_150_0",
+      "max_residual": 6.894341957538586e-16
+    },
+    {
+      "name": "literal_mode_150_1",
+      "max_residual": 4.1385517960171997e-16
+    },
+    {
+      "name": "literal_mode_152_0",
+      "max_residual": 1.180417368911568e-16
+    },
+    {
+      "name": "literal_mode_152_1",
+      "max_residual": 7.313644990426517e-17
+    },
+    {
+      "name": "literal_mode_154_0",
+      "max_residual": 1.0026641665932502e-15
+    },
+    {
+      "name": "literal_mode_154_1",
+      "max_residual": 6.134939766467765e-16
+    },
+    {
+      "name": "literal_mode_156_0",
+      "max_residual": 5.319014089382401e-16
+    },
+    {
+      "name": "literal_mode_156_1",
+      "max_residual": 3.4021815010030383e-16
+    },
+    {
+      "name": "literal_mode_158_0",
+      "max_residual": 5.00717329682987e-16
+    },
+    {
+      "name": "literal_mode_158_1",
+      "max_residual": 1.3136284816341379e-16
+    },
+    {
+      "name": "literal_mode_160_0",
+      "max_residual": 5.772225570600925e-16
+    },
+    {
+      "name": "literal_mode_160_1",
+      "max_residual": 3.787898901196402e-16
+    },
+    {
+      "name": "literal_mode_162_0",
+      "max_residual": 8.93798490114984e-16
+    },
+    {
+      "name": "literal_mode_162_1",
+      "max_residual": 4.414283309767472e-16
+    },
+    {
+      "name": "literal_mode_164_0",
+      "max_residual": 1.3530441987843078e-15
+    },
+    {
+      "name": "literal_mode_164_1",
+      "max_residual": 5.625734393037708e-16
+    },
+    {
+      "name": "literal_mode_166_0",
+      "max_residual": 1.217454592664719e-15
+    },
+    {
+      "name": "literal_mode_166_1",
+      "max_residual": 5.452774268452087e-16
+    },
+    {
+      "name": "literal_mode_168_0",
+      "max_residual": 7.852915179681957e-16
+    },
+    {
+      "name": "literal_mode_168_1",
+      "max_residual": 5.525468708028185e-16
+    },
+    {
+      "name": "literal_mode_170_0",
+      "max_residual": 6.123233995736767e-17
+    },
+    {
+      "name": "literal_mode_170_1",
+      "max_residual": 2.96059473233375e-16
+    },
+    {
+      "name": "literal_mode_172_0",
+      "max_residual": 4.859703277263795e-16
+    },
+    {
+      "name": "literal_mode_172_1",
+      "max_residual": 3.4586419865953925e-16
+    },
+    {
+      "name": "literal_mode_174_0",
+      "max_residual": 9.786546690961896e-16
+    },
+    {
+      "name": "literal_mode_174_1",
+      "max_residual": 5.973900055198069e-16
+    },
+    {
+      "name": "literal_mode_176_0",
+      "max_residual": 1.3067025728482356e-15
+    },
+    {
+      "name": "literal_mode_176_1",
+      "max_residual": 8.983838096930198e-16
+    },
+    {
+      "name": "literal_mode_178_0",
+      "max_residual": 1.1620938331323894e-15
+    },
+    {
+      "name": "literal_mode_178_1",
+      "max_residual": 8.521006918398717e-16
+    },
+    {
+      "name": "literal_mode_180_0",
+      "max_residual": 6.752153479335822e-16
+    },
+    {
+      "name": "literal_mode_180_1",
+      "max_residual": 8.918512268109019e-16
+    },
+    {
+      "name": "literal_mode_182_0",
+      "max_residual": 6.624184772142403e-16
+    },
+    {
+      "name": "literal_mode_182_1",
+      "max_residual": 3.254103647560402e-16
+    },
+    {
+      "name": "literal_mode_184_0",
+      "max_residual": 7.911556306605241e-16
+    },
+    {
+      "name": "literal_mode_184_1",
+      "max_residual": 7.021666937153402e-16
+    },
+    {
+      "name": "literal_mode_186_0",
+      "max_residual": 1.415262216750919e-15
+    },
+    {
+      "name": "literal_mode_186_1",
+      "max_residual": 6.374843249785811e-16
+    },
+    {
+      "name": "literal_mode_188_0",
+      "max_residual": 2.0174352718600007e-15
+    },
+    {
+      "name": "literal_mode_188_1",
+      "max_residual": 7.980552038002546e-16
+    },
+    {
+      "name": "literal_mode_190_0",
+      "max_residual": 1.7628614688236971e-15
+    },
+    {
+      "name": "literal_mode_190_1",
+      "max_residual": 6.052395267065679e-16
+    },
+    {
+      "name": "literal_mode_192_0",
+      "max_residual": 1.4724849511594846e-15
+    },
+    {
+      "name": "literal_mode_192_1",
+      "max_residual": 7.57325516167598e-16
+    },
+    {
+      "name": "literal_mode_194_0",
+      "max_residual": 2.392661020640212e-16
+    },
+    {
+      "name": "literal_mode_194_1",
+      "max_residual": 2.1420849872268348e-16
+    },
+    {
+      "name": "literal_mode_196_0",
+      "max_residual": 3.3306690738754696e-16
+    },
+    {
+      "name": "literal_mode_196_1",
+      "max_residual": 2.7755575615628914e-16
+    },
+    {
+      "name": "literal_mode_198_0",
+      "max_residual": 4.520411121784011e-16
+    },
+    {
+      "name": "literal_mode_198_1",
+      "max_residual": 3.4779367097414353e-16
+    },
+    {
+      "name": "literal_mode_200_0",
+      "max_residual": 8.886119947416683e-16
+    },
+    {
+      "name": "literal_mode_200_1",
+      "max_residual": 6.898269189236012e-16
+    },
+    {
+      "name": "literal_mode_202_0",
+      "max_residual": 5.33167196845001e-16
+    },
+    {
+      "name": "literal_mode_202_1",
+      "max_residual": 4.1181326917117243e-16
+    },
+    {
+      "name": "literal_mode_204_0",
+      "max_residual": 5.344750312233835e-16
+    },
+    {
+      "name": "literal_mode_204_1",
+      "max_residual": 4.1656486648454873e-16
+    },
+    {
+      "name": "literal_mode_206_0",
+      "max_residual": 4.669156023538214e-16
+    },
+    {
+      "name": "literal_mode_206_1",
+      "max_residual": 3.0531133177191805e-16
+    },
+    {
+      "name": "literal_mode_208_0",
+      "max_residual": 5.368569792575578e-16
+    },
+    {
+      "name": "literal_mode_208_1",
+      "max_residual": 4.282483846487626e-16
+    },
+    {
+      "name": "literal_mode_210_0",
+      "max_residual": 1.0698137626234984e-15
+    },
+    {
+      "name": "literal_mode_210_1",
+      "max_residual": 5.464571446693442e-16
+    },
+    {
+      "name": "literal_mode_212_0",
+      "max_residual": 1.3611556143588143e-15
+    },
+    {
+      "name": "literal_mode_212_1",
+      "max_residual": 5.852771868758543e-16
+    },
+    {
+      "name": "literal_mode_214_0",
+      "max_residual": 1.0235750533041808e-15
+    },
+    {
+      "name": "literal_mode_214_1",
+      "max_residual": 7.43692760169701e-16
+    },
+    {
+      "name": "literal_mode_216_0",
+      "max_residual": 1.0162341189061925e-15
+    },
+    {
+      "name": "literal_mode_216_1",
+      "max_residual": 6.407872222066845e-16
+    },
+    {
+      "name": "literal_mode_218_0",
+      "max_residual": 3.11864493316497e-16
+    },
+    {
+      "name": "literal_mode_218_1",
+      "max_residual": 3.296522366252803e-16
+    },
+    {
+      "name": "literal_mode_220_0",
+      "max_residual": 4.779784928769662e-16
+    },
+    {
+      "name": "literal_mode_220_1",
+      "max_residual": 6.325808965040145e-16
+    },
+    {
+      "name": "literal_mode_222_0",
+      "max_residual": 7.71185559270127e-16
+    },
+    {
+      "name": "literal_mode_222_1",
+      "max_residual": 8.983838096930198e-16
+    },
+    {
+      "name": "literal_mode_224_0",
+      "max_residual": 1.1620938331323894e-15
+    },
+    {
+      "name": "literal_mode_224_1",
+      "max_residual": 8.983838096930198e-16
+    },
+    {
+      "name": "literal_mode_226_0",
+      "max_residual": 1.2496945994536461e-15
+    },
+    {
+      "name": "literal_mode_226_1",
+      "max_residual": 8.983838096930198e-16
+    },
+    {
+      "name": "literal_mode_228_0",
+      "max_residual": 7.996839384123562e-16
+    },
+    {
+      "name": "literal_mode_228_1",
+      "max_residual": 8.918512268109017e-16
+    },
+    {
+      "name": "literal_mode_230_0",
+      "max_residual": 5.178818254839186e-16
+    },
+    {
+      "name": "literal_mode_230_1",
+      "max_residual": 5.613217783960923e-16
+    },
+    {
+      "name": "literal_mode_232_0",
+      "max_residual": 7.669910700347697e-16
+    },
+    {
+      "name": "literal_mode_232_1",
+      "max_residual": 7.836036080310378e-16
+    },
+    {
+      "name": "literal_mode_234_0",
+      "max_residual": 1.3051496454824036e-15
+    },
+    {
+      "name": "literal_mode_234_1",
+      "max_residual": 7.825165134196698e-16
+    },
+    {
+      "name": "literal_mode_236_0",
+      "max_residual": 1.5700924586837751e-15
+    },
+    {
+      "name": "literal_mode_236_1",
+      "max_residual": 7.774426035788603e-16
+    },
+    {
+      "name": "literal_mode_238_0",
+      "max_residual": 1.233562827366468e-15
+    },
+    {
+      "name": "literal_mode_238_1",
+      "max_residual": 9.985070492053649e-16
+    },
+    {
+      "name": "literal_mode_240_0",
+      "max_residual": 1.1464252722681708e-15
+    },
+    {
+      "name": "literal_mode_240_1",
+      "max_residual": 8.194066919802401e-16
+    },
+    {
+      "name": "literal_mode_242_0",
+      "max_residual": 9.526775353142767e-17
+    },
+    {
+      "name": "literal_mode_242_1",
+      "max_residual": 1.1857187100668868e-16
+    },
+    {
+      "name": "literal_mode_244_0",
+      "max_residual": 2.300586061945776e-16
+    },
+    {
+      "name": "literal_mode_244_1",
+      "max_residual": 3.203936111033422e-16
+    },
+    {
+      "name": "literal_mode_246_0",
+      "max_residual": 2.7928509224031823e-16
+    },
+    {
+      "name": "literal_mode_246_1",
+      "max_residual": 3.6087198921135867e-16
+    },
+    {
+      "name": "literal_mode_248_0",
+      "max_residual": 5.095246377785861e-16
+    },
+    {
+      "name": "literal_mode_248_1",
+      "max_residual": 4.599602204440487e-16
+    },
+    {
+      "name": "literal_mode_250_0",
+      "max_residual": 4.996197234993978e-16
+    },
+    {
+      "name": "literal_mode_250_1",
+      "max_residual": 5.465893180652819e-16
+    },
+    {
+      "name": "literal_mode_252_0",
+      "max_residual": 2.5687968919236815e-16
+    },
+    {
+      "name": "literal_mode_252_1",
+      "max_residual": 3.1646225226420963e-16
+    },
+    {
+      "name": "literal_mode_254_0",
+      "max_residual": 1.9689203659959242e-16
+    },
+    {
+      "name": "literal_mode_254_1",
+      "max_residual": 2.9504581591051765e-16
+    },
+    {
+      "name": "literal_mode_256_0",
+      "max_residual": 6.878722495899594e-16
+    },
+    {
+      "name": "literal_mode_256_1",
+      "max_residual": 9.94951250773142e-16
+    },
+    {
+      "name": "literal_mode_258_0",
+      "max_residual": 5.725311396414648e-16
+    },
+    {
+      "name": "literal_mode_258_1",
+      "max_residual": 6.582812753581314e-16
+    },
+    {
+      "name": "literal_mode_260_0",
+      "max_residual": 7.473417450352271e-16
+    },
+    {
+      "name": "literal_mode_260_1",
+      "max_residual": 7.043507825246415e-16
+    },
+    {
+      "name": "literal_mode_262_0",
+      "max_residual": 7.473417450352271e-16
+    },
+    {
+      "name": "literal_mode_262_1",
+      "max_residual": 6.973502068242161e-16
+    },
+    {
+      "name": "literal_mode_264_0",
+      "max_residual": 6.6743012593733415e-16
+    },
+    {
+      "name": "literal_mode_264_1",
+      "max_residual": 9.828068956733855e-16
+    },
+    {
+      "name": "literal_mode_266_0",
+      "max_residual": 3.1070442298494913e-16
+    },
+    {
+      "name": "literal_mode_266_1",
+      "max_residual": 3.0467987022359185e-16
+    },
+    {
+      "name": "literal_mode_268_0",
+      "max_residual": 8.890724365456008e-16
+    },
+    {
+      "name": "literal_mode_268_1",
+      "max_residual": 8.759399035402024e-16
+    },
+    {
+      "name": "literal_mode_270_0",
+      "max_residual": 8.918512268109019e-16
+    },
+    {
+      "name": "literal_mode_270_1",
+      "max_residual": 6.144283326091185e-16
+    },
+    {
+      "name": "literal_mode_272_0",
+      "max_residual": 9.020562075079397e-16
+    },
+    {
+      "name": "literal_mode_272_1",
+      "max_residual": 9.011216415125475e-16
+    },
+    {
+      "name": "literal_mode_274_0",
+      "max_residual": 8.4735685972854685e-16
+    },
+    {
+      "name": "literal_mode_274_1",
+      "max_residual": 8.918512268109019e-16
+    },
+    {
+      "name": "literal_mode_276_0",
+      "max_residual": 9.020562075079397e-16
+    },
+    {
+      "name": "literal_mode_276_1",
+      "max_residual": 9.78525611683957e-16
+    },
+    {
+      "name": "literal_mode_278_0",
+      "max_residual": 4.1130351017808437e-16
+    },
+    {
+      "name": "literal_mode_278_1",
+      "max_residual": 5.003707553108401e-16
+    },
+    {
+      "name": "literal_mode_280_0",
+      "max_residual": 1.0186419644963073e-15
+    },
+    {
+      "name": "literal_mode_280_1",
+      "max_residual": 1.187990514796716e-15
+    },
+    {
+      "name": "literal_mode_282_0",
+      "max_residual": 8.882868333007367e-16
+    },
+    {
+      "name": "literal_mode_282_1",
+      "max_residual": 7.833577908787165e-16
+    },
+    {
+      "name": "literal_mode_284_0",
+      "max_residual": 1.053707081184919e-15
+    },
+    {
+      "name": "literal_mode_284_1",
+      "max_residual": 7.898459902976962e-16
+    },
+    {
+      "name": "literal_mode_286_0",
+      "max_residual": 9.798347193670152e-16
+    },
+    {
+      "name": "literal_mode_286_1",
+      "max_residual": 7.632839597081257e-16
+    },
+    {
+      "name": "literal_mode_288_0",
+      "max_residual": 9.84601671448706e-16
+    },
+    {
+      "name": "literal_mode_288_1",
+      "max_residual": 1.0412040941600139e-15
+    },
+    {
+      "name": "entire_literal_spectrum",
+      "max_residual": 1.2878587085651816e-14
+    },
+    {
+      "name": "stationary_finite_comparator",
+      "max_residual": 5.815852873680767e-17
+    },
+    {
+      "name": "comparator_covariance_between_quarter_and_three_quarters",
+      "passed": true
+    },
+    {
+      "name": "even_parity_probability",
+      "max_residual": 0.0
+    },
+    {
+      "name": "explicit_even_covariance",
+      "max_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "even_parity_operator_bound",
+      "actual_error": 0.0026696329254727313
+    },
+    {
+      "name": "missing_parity_normalization_rejected",
+      "rejected": true
+    },
+    {
+      "name": "boundary_path_powers_116_0",
+      "max_residual": 0.0
+    },
+    {
+      "name": "boundary_path_powers_116_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "boundary_path_powers_117_0",
+      "max_residual": 0.0
+    },
+    {
+      "name": "boundary_path_powers_117_1",
+      "max_residual": 0.0
+    },
+    {
+      "name": "boundary_first_omitted_power_is_nonzero",
+      "rejected_shortcut": true
+    },
+    {
+      "name": "finite_boundary_evolution_bound",
+      "results": [
+        {
+          "duration": 0.01,
+          "actual_covariance_error": 7.306425991136789e-09,
+          "derived_bound": 0.007346186181438491
+        },
+        {
+          "duration": 0.02,
+          "actual_covariance_error": 5.809166970204005e-08,
+          "derived_bound": 0.02998740631750268
+        },
+        {
+          "duration": 0.04,
+          "actual_covariance_error": 4.588143955571236e-07,
+          "derived_bound": 0.12499660128561878
+        }
+      ]
+    },
+    {
+      "name": "factorial_tail_bound",
+      "passed": true
+    }
+  ],
+  "seconds": 0.17596404202049598,
+  "source_sha256": "2327451ca17e51ea59100ac7c00b2d62b61e06bcce05249eca0e57cf03d97b27",
+  "note_sha256": "c258d141e0bbaf047b9b7e5be3c2f9b092c6b833155a509824b402f1241bb6a9",
+  "scope": "same-author finite comparators; no numerical integral defines the transport theorem"
+}

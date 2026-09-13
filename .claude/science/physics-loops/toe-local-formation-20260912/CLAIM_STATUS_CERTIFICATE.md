@@ -35,3 +35,37 @@ literal16-dimensional Fock graph identities, exact projection rank doubling,
 and small Gaussian SVD tail checks. Four source notes are copied and
 hash-bound. Independent review and formal audit remain pending. No axiom,
 primitive, physical law selection, native alpha calculation or phase claim.
+
+## Blocks7–10 companion milestones
+
+Blocks7/9 are the author exact Regge reduction, source/readout identities,
+and positive reduced tensor transfer unit in PR8085, conditional-support.
+Block8 is a scoped nonlinear hyperdiagonal obstruction, with wider curved
+tangents still live and no formal no-go packet pass. Block10 derives a
+temporal-only plane-source obstruction and, separately, explicit spatial
+source stresses and a second-order solution. The latter is a supplied
+source-family result, not an all-order matter/geometry or axiom closure.
+Details and preserved failures are in their block notes and HANDOFF.
+
+## Block11 protected formation and transport
+
+Author conditional construction, intended bounded_theorem. A local cycle
+pulse implements a varying nearest-neighbor digital Record content law
+while preserving the entire connected protected matter algebra at every
+supported history. Candidate hopping is zero; all other supplied hopping
+continues. Explicit Bloch velocities, normalized even-parity preparation,
+and factorial boundary estimates give arbitrarily long finite current
+windows without event-count error. A disjoint program graph permits the
+same content law at all events from one supplied seed, with nonexplosive
+exponential clocks and analytical linear front bounds. Finite required
+carrier volume scales cubically in observation size and duration.
+
+The native channels admit a finite fresh-environment collision dilation;
+the complete growing occurrence rule is a supplied hybrid Record process.
+No extra program fuel factor, infinite native code, autonomous controller,
+physical clock, covariant preparation, nonzero candidate coupling, or
+matter readout is claimed. The full Record history is provably blind to
+protected matter.83 native,325 mostly mode-enumeration transport, and62
+growth geometry/probability predicates pass as same-author checks.
+Independent review and any formal audit remain pending. Canonical milestone
+packaging has not yet been completed. No axiom or primitive edits.

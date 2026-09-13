@@ -220,3 +220,12 @@ history collision while retaining hopping at positive deleted-edge density.
 Read current charged-history/prior-art sources first; do not repackage an
 already proved uniform-sign result or hide a supplied schedule/basis.
 Lockrefreshed04:16:59UTCexpires05:16:59UTC. Deadline11:38:24UTC unchanged.
+
+
+Block11 checkpoint after05:03:25UTC: BLOCK11_DERIVATION and CAUSAL_PROGRAM_DERIVATION give a supplied native state/dwell/event family with a varying actual nearest-neighbor Record content kernel and arbitrarily long finite protected-current windows. Y=iZS, U=cI+sZS gives p_z=(1+z sin theta)/2 and the unchanged fair CAR isometry. Candidate x edges on odd virtual-y rows have zero hopping and protected plaquette witnesses; all other hopping remains. This zero-coupling restriction is essential and Record histories are blind to protected matter.
+
+The connected protected graph has a two-row Bloch symbol with nonzero three-direction current on a fixed momentum patch. C=I/4+(1/2)chi_W Pplus has eigenvalues[1/4,3/4]; even-parity conditioning changes covariance by at most2^-M/(1-2^-M). Boundary Taylor tails with normh<=6t give covariance error<=4sum_(n>=d)(6tT)^n/n!+delta_M. Choose d>=max(12e tT,log2(16/epsilon)) for finite current windows. Every formation preserves the protected algebra, so event count adds no error.
+
+The causal alternative uses physical program sites with at least2oddcoordinates and moves native fuel to all-even tails. One supplied seed grows through Exp(gamma) enabled-site clocks. One F(eta)=mean[3/4delta_rho+1/4delta_(I-rho)] applies to both program and native events. Native targets wait for all4program neighbors. Nonexplosion follows from rate<=12gamma N; a fixed-path Chernoff bound gives a filled radius floor(gamma T/(8ln2))-1 with failure bounded by(2n+1)^3(exp(-gamma T/8)+exp(-gamma T/2)). Upper radius n>=12e gamma T fails with probability<=2^-n. Carrier finite-window volumeO((R+(gamma+t)T+log1/epsilon)^3). This is a supplied hybrid occurrence process, not an autonomous finite quantum controller or an infinite native-code theorem.
+
+83native,325transport(mainly288modechecks),62growth predicates pass. Same-author cold scope pass is BLOCK11_AUTHOR_RECHECK; source is main native instrument theorem, not Block5/6. Canonical PR packaging remains pending. Block10 helper trailing blank removed and nonlinear output rebound with unchanged8passing checks. Continue personally without agents to11:38:24UTC. Lock refreshed04:53:23UTC, expires05:53:23UTC. Heartbeat remains active for interruption recovery.

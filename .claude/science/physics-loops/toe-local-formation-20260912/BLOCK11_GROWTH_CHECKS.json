@@ -1,0 +1,234 @@
+{
+  "status": "passed",
+  "count": 62,
+  "checks": [
+    {
+      "name": "periodic_role_counts"
+    },
+    {
+      "name": "program_native_fuel_disjoint"
+    },
+    {
+      "name": "all_four_native_transverse_neighbors_programs"
+    },
+    {
+      "name": "program_degrees_two_or_six"
+    },
+    {
+      "name": "old_transverse_fuel_would_collide_with_program"
+    },
+    {
+      "name": "program_geodesics_equal_Manhattan",
+      "vertices": 2673
+    },
+    {
+      "name": "candidate_cube_lower_count_7",
+      "actual": 6,
+      "lower_bound": 4
+    },
+    {
+      "name": "candidate_cube_lower_count_8",
+      "actual": 6,
+      "lower_bound": 4
+    },
+    {
+      "name": "candidate_cube_lower_count_9",
+      "actual": 6,
+      "lower_bound": 4
+    },
+    {
+      "name": "candidate_cube_lower_count_10",
+      "actual": 24,
+      "lower_bound": 9
+    },
+    {
+      "name": "candidate_cube_lower_count_11",
+      "actual": 24,
+      "lower_bound": 9
+    },
+    {
+      "name": "candidate_cube_lower_count_12",
+      "actual": 24,
+      "lower_bound": 9
+    },
+    {
+      "name": "candidate_cube_lower_count_13",
+      "actual": 40,
+      "lower_bound": 32
+    },
+    {
+      "name": "candidate_cube_lower_count_14",
+      "actual": 40,
+      "lower_bound": 32
+    },
+    {
+      "name": "candidate_cube_lower_count_15",
+      "actual": 40,
+      "lower_bound": 32
+    },
+    {
+      "name": "candidate_cube_lower_count_16",
+      "actual": 90,
+      "lower_bound": 50
+    },
+    {
+      "name": "candidate_cube_lower_count_17",
+      "actual": 90,
+      "lower_bound": 50
+    },
+    {
+      "name": "candidate_cube_lower_count_18",
+      "actual": 90,
+      "lower_bound": 50
+    },
+    {
+      "name": "candidate_cube_lower_count_19",
+      "actual": 126,
+      "lower_bound": 108
+    },
+    {
+      "name": "candidate_cube_lower_count_20",
+      "actual": 126,
+      "lower_bound": 108
+    },
+    {
+      "name": "candidate_cube_lower_count_21",
+      "actual": 126,
+      "lower_bound": 108
+    },
+    {
+      "name": "candidate_cube_lower_count_22",
+      "actual": 224,
+      "lower_bound": 147
+    },
+    {
+      "name": "candidate_cube_lower_count_23",
+      "actual": 224,
+      "lower_bound": 147
+    },
+    {
+      "name": "candidate_cube_lower_count_24",
+      "actual": 224,
+      "lower_bound": 147
+    },
+    {
+      "name": "program_rotation_Born_identity"
+    },
+    {
+      "name": "wrong_program_rotation_sign_rejected"
+    },
+    {
+      "name": "common_kernel_n1_positive0"
+    },
+    {
+      "name": "common_kernel_n1_positive1"
+    },
+    {
+      "name": "common_kernel_n2_positive0"
+    },
+    {
+      "name": "common_kernel_n2_positive1"
+    },
+    {
+      "name": "common_kernel_n2_positive2"
+    },
+    {
+      "name": "common_kernel_n3_positive0"
+    },
+    {
+      "name": "common_kernel_n3_positive1"
+    },
+    {
+      "name": "common_kernel_n3_positive2"
+    },
+    {
+      "name": "common_kernel_n3_positive3"
+    },
+    {
+      "name": "common_kernel_n4_positive0"
+    },
+    {
+      "name": "common_kernel_n4_positive1"
+    },
+    {
+      "name": "common_kernel_n4_positive2"
+    },
+    {
+      "name": "common_kernel_n4_positive3"
+    },
+    {
+      "name": "common_kernel_n4_positive4"
+    },
+    {
+      "name": "common_kernel_n5_positive0"
+    },
+    {
+      "name": "common_kernel_n5_positive1"
+    },
+    {
+      "name": "common_kernel_n5_positive2"
+    },
+    {
+      "name": "common_kernel_n5_positive3"
+    },
+    {
+      "name": "common_kernel_n5_positive4"
+    },
+    {
+      "name": "common_kernel_n5_positive5"
+    },
+    {
+      "name": "common_kernel_n6_positive0"
+    },
+    {
+      "name": "common_kernel_n6_positive1"
+    },
+    {
+      "name": "common_kernel_n6_positive2"
+    },
+    {
+      "name": "common_kernel_n6_positive3"
+    },
+    {
+      "name": "common_kernel_n6_positive4"
+    },
+    {
+      "name": "common_kernel_n6_positive5"
+    },
+    {
+      "name": "common_kernel_n6_positive6"
+    },
+    {
+      "name": "premature_native_activation_rejected",
+      "gap": "1/16"
+    },
+    {
+      "name": "lower_front_exponent_1.0"
+    },
+    {
+      "name": "upper_front_base_1.0"
+    },
+    {
+      "name": "lower_front_exponent_10.0"
+    },
+    {
+      "name": "upper_front_base_10.0"
+    },
+    {
+      "name": "lower_front_exponent_100.0"
+    },
+    {
+      "name": "upper_front_base_100.0"
+    },
+    {
+      "name": "lower_front_exponent_1000.0"
+    },
+    {
+      "name": "upper_front_base_1000.0"
+    }
+  ],
+  "seconds": 0.09744133398635313,
+  "source_sha256": "e586521e1ca5beea6ac5d2e910ec8201b8e52d599c53e9bf996c1fe9d03ef4ff",
+  "note_sha256": "2b90ffdf276610111557117e22ca34360d87ddde5cc986e87d1275fa890d4a06",
+  "scope": "same-author exact finite role/probability checks; front bounds are analytical"
+}

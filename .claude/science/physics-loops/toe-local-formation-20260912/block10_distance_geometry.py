@@ -82,4 +82,3 @@ def cubic_target(fields,xis,lambdas):
         j=(n+1)%L;g=fields[j]-fields[n];ds=[xis[i][j]-xis[i][n] for i in range(4)];la=lambdas[n]
         value+=(2*(fields[n]+fields[j])+ds[0])*g*g+la*la*sum(ds[1:])/4+la**3/8
     return value
-

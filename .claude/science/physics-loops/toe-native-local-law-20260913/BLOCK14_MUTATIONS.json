@@ -1,0 +1,118 @@
+{
+  "base_sha256": "7b284b83243201d2d6630720c62f94d75ed37416903af79654875f7cc995b080",
+  "elapsed_seconds": 9.964412208995782,
+  "mutations": [
+    {
+      "name": "root_flow_sign",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "b34e8acc88f54d2940114dfb2a9f9892ec010bfaaeb4eb2b6d867898cad355c5",
+      "failure_tail": "/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.py\", line 350, in <module>\n    geometry_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.py\", line 94, in geometry_checks\n    close(D @ R, target, 'integer rooted right inverse')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: integer rooted right inverse\n"
+    },
+    {
+      "name": "cycle_sign",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "5478abb8021eeb31420182a37989240cdff7f825a10c8efa0bd22200e2f91fc5",
+      "failure_tail": "):\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.py\", line 350, in <module>\n    geometry_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.py\", line 95, in geometry_checks\n    close(D @ C, 0, 'exact divergence-free cycle basis')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: exact divergence-free cycle basis\n"
+    },
+    {
+      "name": "plaquette_orientation",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "fde270458fe53a7d6aec72d04b3488606f7b82d533c1cb904a7845fc061b8127",
+      "failure_tail": "File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.py\", line 350, in <module>\n    geometry_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.py\", line 97, in geometry_checks\n    close(D @ F, 0, 'boundary of boundary')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: boundary of boundary\n"
+    },
+    {
+      "name": "weighted_coulomb",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "63772d51937e80844914cfa4c864aef222739734a972cbe1283642ca1261df99",
+      "failure_tail": "nts/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.py\", line 350, in <module>\n    geometry_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.py\", line 121, in geometry_checks\n    close(D @ transverse, 0, 'weighted transverse divergence')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: weighted transverse divergence\n"
+    },
+    {
+      "name": "charged_chord_translation",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "807de6519a73e8f7a626666793c6969d0ff2ffaed7746aba9ea14289fad574b9",
+      "failure_tail": "^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_chord_translation.py\", line 281, in spectral_checks\n    close(reduced.toarray(), direct[np.ix_(order, order)],\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          'full direct CAR/link Hamiltonian equals reduced charged Hamiltonian')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_chord_translation.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_chord_translation.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: full direct CAR/link Hamiltonian equals reduced charged Hamiltonian\n"
+    },
+    {
+      "name": "charged_domain_product",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "2d3c60e57fcd7debd8d9ae9521823b0d2d0b740519fc317ea00558d17c2c8535",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_domain_product.py\", line 351, in <module>\n    spectral_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_domain_product.py\", line 277, in spectral_checks\n    check(all((f, tuple(E0[f]+n)) in lookup for f, n in rb),\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          'every reduced label lies in the direct physical cutoff domain')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_domain_product.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: every reduced label lies in the direct physical cutoff domain\n"
+    },
+    {
+      "name": "charged_electric_factor",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "8a6b738f880eacf19f018d26185f857a8b7f60f70e9bcf630f451fb340736e67",
+      "failure_tail": "~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_electric_factor.py\", line 281, in spectral_checks\n    close(reduced.toarray(), direct[np.ix_(order, order)],\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          'full direct CAR/link Hamiltonian equals reduced charged Hamiltonian')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_electric_factor.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_electric_factor.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: full direct CAR/link Hamiltonian equals reduced charged Hamiltonian\n"
+    },
+    {
+      "name": "charged_magnetic_factor",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "4d6455cd924d980958d259edc843b2d96d88e5cf3203010e5d9ef05bf846902b",
+      "failure_tail": "~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_magnetic_factor.py\", line 281, in spectral_checks\n    close(reduced.toarray(), direct[np.ix_(order, order)],\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          'full direct CAR/link Hamiltonian equals reduced charged Hamiltonian')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_magnetic_factor.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_magnetic_factor.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: full direct CAR/link Hamiltonian equals reduced charged Hamiltonian\n"
+    },
+    {
+      "name": "car_annihilation_sign",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "f437f47da91c83f8b182ef0a92bc7842b0bad8e5696b19dd8b8e39798988483f",
+      "failure_tail": "~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/car_annihilation_sign.py\", line 281, in spectral_checks\n    close(reduced.toarray(), direct[np.ix_(order, order)],\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          'full direct CAR/link Hamiltonian equals reduced charged Hamiltonian')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/car_annihilation_sign.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/car_annihilation_sign.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: full direct CAR/link Hamiltonian equals reduced charged Hamiltonian\n"
+    },
+    {
+      "name": "pure_magnetic_factor",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "1e1d7ca575f6e7b8b7a1347d6e09c71783fc3a675bdfd959f285137a85d80c9b",
+      "failure_tail": "hysics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.py\", line 351, in <module>\n    spectral_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.py\", line 324, in spectral_checks\n    close(doubles[-1][:2], [2, 2], 'nonprimitive doubled ground cluster', tol=.002)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: nonprimitive doubled ground cluster\n"
+    },
+    {
+      "name": "harmonic_rank",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "4e4d9d3262c4f908e64b6c5cb2f98f4be3a6a053d0cd06cbaf445d4a08748063",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/harmonic_rank.py\", line 350, in <module>\n    geometry_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/harmonic_rank.py\", line 136, in geometry_checks\n    check(np.linalg.matrix_rank(F) == D.shape[1]-D.shape[0]+1,\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          'periodic three harmonic directions remain')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/harmonic_rank.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: periodic three harmonic directions remain\n"
+    },
+    {
+      "name": "cube_frequency",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "3b6a6ee669decd3664df26949fac3eb63d426a00a42349dce0a84608babedba9",
+      "failure_tail": "ed-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.py\", line 350, in <module>\n    geometry_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.py\", line 133, in geometry_checks\n    close(vals[-5:], [4, 4, 4, 4, 4], 'open cube exact squared frequencies')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: open cube exact squared frequencies\n"
+    },
+    {
+      "name": "box_ode_coefficient",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "12ff7027fe96f4e8a1af76f56995cdaf7ed7f988928b7d0385a54342450f3336",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_ode_coefficient.py\", line 351, in <module>\n    spectral_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_ode_coefficient.py\", line 335, in spectral_checks\n    check(sy.factor(residual.coeff(x, degree)) == 0, 'box ODE exact recurrence')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_ode_coefficient.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: box ODE exact recurrence\n"
+    },
+    {
+      "name": "box_hypergeom_parameter",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "1daa6bf1fcc793e9f6d098fa09301299ead6b03f3fa2e62df6e34d3ba6e3eb1f",
+      "failure_tail": "cience/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.py\", line 351, in <module>\n    spectral_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.py\", line 294, in spectral_checks\n    close(fd, reference, 'independent continuum box reference', tol=5e-6)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: independent continuum box reference\n"
+    },
+    {
+      "name": "boundary_form_factor",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "4b878bb661b34dc566279f3b8f94c9ab352a4ca53e1aded790ff2787fb125338",
+      "failure_tail": "le \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/boundary_form_factor.py\", line 265, in spectral_checks\n    close(v @ kinetic @ v, np.sum(np.diff(np.r_[0., v, 0.])**2)/(g*g),\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          'compressed magnetic form retains two zero-extension boundary terms')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/boundary_form_factor.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/boundary_form_factor.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: compressed magnetic form retains two zero-extension boundary terms\n"
+    },
+    {
+      "name": "double_copy_erasure",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "35cab487fe138522ed000c23f893189b93aea40fa0c1418f181ad65d717bb1b7",
+      "failure_tail": "ce/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.py\", line 351, in <module>\n    spectral_checks()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.py\", line 324, in spectral_checks\n    close(doubles[-1][:2], [2, 2], 'nonprimitive doubled ground cluster', tol=.002)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.py\", line 27, in close\n    check(np.allclose(left, right, atol=tol, rtol=tol), label)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-gauss-reduced-spectrum-20260913/.claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.py\", line 22, in check\n    assert bool(condition), label\n           ~~~~^^^^^^^^^^^\nAssertionError: nonprimitive doubled ground cluster\n"
+    }
+  ]
+}

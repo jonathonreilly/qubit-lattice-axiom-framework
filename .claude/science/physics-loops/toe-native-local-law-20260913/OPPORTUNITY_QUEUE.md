@@ -1,20 +1,24 @@
-# Ranked opportunities after the mixed Hall-free quartet
+# Ranked opportunities after the exact physical spectrum milestone
 
-1. Native charged quantum gauge phase. Construct the finite-link Hamiltonian
-for the actual mixed carrier, control its finite-payload approximation and
-identify the precise gap between local dynamics and a fixed-law photon phase.
-Read charged versus pure-gauge phase hypotheses before composing them.
-2. Native dynamical geometry. The classical constraint algebra assumes metric
-variables and a selected Hamiltonian ansatz; derive reciprocal native dynamics.
-3. Informative autonomous formation. Retire the prepared relay controls with
-one local many-body law that also carries the tested matter dynamics.
-4. Metric protection or attraction in the actual charged phase. PR8099 gives
-a common bare metric by a coupling relation, not generic radiative protection.
-5. Chiral gauge content beyond the vectorlike quartet, with anomalies and
-physical multiplet identification kept separate.
-6. Record calibration and the operational preparation/readout bridge.
+1. Periodic flat holonomies and the charged low-energy spectrum. Exact ring
+min-max and loop concentration now have a derivation; the periodic normal
+oscillator and matter-energy minimum need focused verification. A global
+flat coordinate must not be erased when transferring an open-box theorem.
+2. Uniform charged phase control as volume grows: distinguish soft holonomy
+levels, transverse modes and charged poles; control compact defects and
+ordering. Existing finite-time, ground-deficit and fixed-volume spectral
+results remain conditional and do not settle this limit.
+3. Native dynamical geometry and reciprocal matter backreaction. Classical
+constraint closure still supplies geometry variables and Hamiltonian ansatz.
+4. Autonomous formation under the same native local law, with prepared
+controls and comparator assumptions retired by a physical construction.
+5. Protection or attraction of the common metric in the actual interacting
+charged phase; bare alignment is a supplied coupling relation.
+6. Chiral gauge content, anomalies, physical multiplets and operational
+preparation/readout calibration.
 
-PR8099 closes the selected bare Hall-cancellation and aligned-metric
-construction target conditionally. It is not an established native quantum
-gauge phase. No axiom-forcing wall has been proved. Continue personally
-without subagents through 2026-09-14T00:14:41Z.
+PR8100, PR8101 and PR8103 respectively address charged finite-time dynamics,
+actual ground-state deficit/payload, and exact Gauss-reduced fixed-volume
+spectra. Each is proposed and awaits independent review. No axiom-forcing
+wall has been proved. Continue personally without subagents through
+2026-09-14T00:14:41Z, then preserve all work and remove the parent checkout.

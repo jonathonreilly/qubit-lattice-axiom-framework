@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/original_free_replaced/native_feedback_collision_check_2026_09_13.py", line 245, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/original_free_replaced/native_feedback_collision_check_2026_09_13.py", line 160, in run
+    check(tag+'_original_free_does_not_commute', commutator > .1)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/original_free_replaced/native_feedback_collision_check_2026_09_13.py", line 39, in check
+    raise AssertionError(name)
+AssertionError: initial_cycle_original_free_does_not_commute

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/dissipator_factor_two/native_feedback_cap_check_2026_09_13.py", line 189, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/dissipator_factor_two/native_feedback_cap_check_2026_09_13.py", line 173, in run
+    check('four_factor_dissipator_bound', norm_change <= comparison_multiplier*weighted_error)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/dissipator_factor_two/native_feedback_cap_check_2026_09_13.py", line 31, in check
+    raise AssertionError(name)
+AssertionError: four_factor_dissipator_bound

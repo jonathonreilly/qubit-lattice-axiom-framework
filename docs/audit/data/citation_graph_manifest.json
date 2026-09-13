@@ -1,6 +1,6 @@
 {
- "edge_count": 12519,
- "node_count": 5041,
+ "edge_count": 12524,
+ "node_count": 5042,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5277,6 +5277,10 @@
   "fm_transfer_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "formation_order_covariance_and_isotropic_binary_order_blind_classification_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "8a36f31932c1",
+   "out_degree": 5
   },
   "formation_weight_energy_dictionary_underdetermination_bounded_theorem_note_2026-08-13": {
    "deps_hash": "35b37fce2461",

@@ -1,0 +1,56 @@
+[
+  {
+    "M": 0,
+    "auxiliary_count": 1,
+    "physical_count": 1,
+    "norm": 1.0,
+    "product_norm": 1,
+    "plaquette_expectations": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "lower_bound": 6.123233995736766e-17,
+    "electric_sum_square": 0.0,
+    "maximum_link_flux": 0
+  },
+  {
+    "M": 1,
+    "auxiliary_count": 729,
+    "physical_count": 665,
+    "norm": 80.03125000000003,
+    "product_norm": 64,
+    "plaquette_expectations": [
+      0.7427244206918442,
+      0.7427244206918442,
+      0.7427244206918442,
+      0.7427244206918442,
+      0.7427244206918442,
+      0.7427244206918442
+    ],
+    "lower_bound": 0.7071067811865476,
+    "electric_sum_square": 10.795782897305738,
+    "maximum_link_flux": 2
+  },
+  {
+    "M": 2,
+    "auxiliary_count": 15625,
+    "physical_count": 11529,
+    "norm": 1402.3837890625014,
+    "product_norm": 729,
+    "plaquette_expectations": [
+      0.8923696751102012,
+      0.8923696751102012,
+      0.8923696751102012,
+      0.8923696751102012,
+      0.8923696751102012,
+      0.8923696751102012
+    ],
+    "lower_bound": 0.8660254037844387,
+    "electric_sum_square": 24.769933448975323,
+    "maximum_link_flux": 4
+  }
+]

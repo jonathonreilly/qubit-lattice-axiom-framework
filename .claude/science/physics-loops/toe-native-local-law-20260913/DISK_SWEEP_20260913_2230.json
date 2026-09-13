@@ -1,0 +1,38 @@
+{
+  "time": "2026-09-13T22:31:00.626309+00:00",
+  "main": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "worktrees": [
+    {
+      "path": "/Users/jonreilly/Projects/Physics",
+      "action": "excluded main or active parent"
+    },
+    {
+      "path": "/private/tmp/toe-formation-menu-20260913-wt",
+      "head": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "landed": true,
+      "dirty": true,
+      "action": "preserved dirty or unlanded"
+    },
+    {
+      "path": "/private/tmp/toe-formation-order-20260913-wt",
+      "head": "d57291602d909246756f30975f0d862a08e8f836",
+      "landed": false,
+      "dirty": false,
+      "action": "preserved dirty or unlanded"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913",
+      "action": "excluded main or active parent"
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "landed": false,
+      "dirty": false,
+      "action": "preserved dirty or unlanded"
+    }
+  ],
+  "free_GiB": 160.00101470947266,
+  "no_git_gc": true,
+  "protected_archives_untouched": true
+}

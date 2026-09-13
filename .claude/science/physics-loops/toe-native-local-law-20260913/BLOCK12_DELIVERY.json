@@ -1,0 +1,12 @@
+{
+  "pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8100",
+  "head": "da3f41192f4d4cbe94b741e1decbbfeae4cf9545",
+  "branch": "physics-loop/charged-finite-link-dynamics-20260913",
+  "remote_head_verified": true,
+  "clean_before_removal": true,
+  "removed_worktree": "/Users/jonreilly/Documents/Codex/toe-charged-finite-link-dynamics-20260913",
+  "removed_utc": "2026-09-13T22:30:18.165500+00:00",
+  "science_preserved_on_pushed_branch": true,
+  "no_git_gc": true,
+  "protected_archives_untouched": true
+}

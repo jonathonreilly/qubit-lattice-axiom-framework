@@ -14,4 +14,24 @@ Next: reassess and attack the native higher-order matter/gauge return problem; t
 
 ## Block5 candidate milestone
 
-Author conditional theorem: entire sixth vacuum nonscalar return is a spectator bilinear; complete mixed histories have uniformly bounded l2 operator norm under the supplied canonical pi/AP Gaussian and uniform wrong-flux stiffness hypotheses. Higher-odd singleton boundedness is inherited. The actual smooth star node alpha therefore gives complete Hermitian symbol iB6=-4alpha^2 h/omega^2+bounded. Alpha!=0 implies an uncancellable inverse-momentum singularity and finite normsTheta(L); alpha=0 gives a bounded infinite multiplier, without a new finite-size convergence rate. No alpha value, phase, uniform nonzero-coupling expansion, Hamiltonian selection, physical formation or axiom revision is proved.29geometry+53algebra check groups support sensitive steps; all same-agent. Independent review/audit pending. Source copies/pins remain to be assembled before canonical publication.
+Author conditional theorem: entire sixth vacuum nonscalar return is a spectator bilinear; complete mixed histories have uniformly bounded l2 operator norm under the supplied canonical pi/AP Gaussian and uniform wrong-flux stiffness hypotheses. Higher-odd singleton boundedness is inherited. The actual smooth star node alpha therefore gives complete Hermitian symbol iB6=-4alpha^2 h/omega^2+bounded. Alpha!=0 implies an uncancellable inverse-momentum singularity and finite normsTheta(L); alpha=0 gives a bounded infinite multiplier, without a new finite-size convergence rate. No alpha value, phase, uniform nonzero-coupling expansion, Hamiltonian selection, physical formation or axiom revision is proved.29geometry+53algebra check groups support sensitive steps; all same-agent. Independent review/audit pending. Eleven primary source notes are copied and hash-bound; canonical publication still needs source-closure and conformance work.
+
+## Block6 analytical extension
+
+Author conditional theorem, intended bounded_theorem. Exact rank-two relative
+skew metric plus the unchanged N32 combinatorial bound gives native all-time
+reference pairing norm<=7/9 instead of.99. Stationary-frame singular-value
+contraction gives uniform trace norm<111 and HS norm squared<86. Normalized
+mixed overlaps exceed exp(-152); two/four unit-Majorana transition ratios
+are bounded by8/192. A rank-k stationary nuclear approximation with error
+eta<1 implies, at each time, a normalized original-reference approximation
+on at most k+1 complex modes with Fock error<=eta/sqrt2. Its subspace may
+depend on time. Neither a fixed basis nor normalized propagation stability
+for arbitrary approximate inputs is proved. The actual alpha remains open.
+
+Complement/incidence algebra is same-agent checked by193 groups; the new
+chart/compression theorem by43 groups, including exact noncommuting forms,
+literal16-dimensional Fock graph identities, exact projection rank doubling,
+and small Gaussian SVD tail checks. Four source notes are copied and
+hash-bound. Independent review and formal audit remain pending. No axiom,
+primitive, physical law selection, native alpha calculation or phase claim.

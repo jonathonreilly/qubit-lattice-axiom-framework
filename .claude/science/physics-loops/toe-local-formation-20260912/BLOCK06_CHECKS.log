@@ -1,0 +1,24 @@
+{
+  "scope": "same-agent algebra support, no native alpha or sign certificate",
+  "check_groups": 193,
+  "data": {
+    "toy": {
+      "Majoranas": 8,
+      "Fock_dimension": 16,
+      "pairs": 15,
+      "matchings": 15,
+      "strict_D_lower_bound": 4,
+      "reference_vacuum_used": false,
+      "scope": "synthetic shared-center quadratic matrices; no native scalar"
+    },
+    "native_identity_fixture": {
+      "L": 4,
+      "one_particle_sites": 64,
+      "Fock_space_constructed": false,
+      "arithmetic": "exact polynomial CAR and rational one-particle matrix",
+      "native_alpha_evaluated": false,
+      "uniform_spectral_gap_checked": false
+    }
+  },
+  "seconds": 13.1323010000051
+}

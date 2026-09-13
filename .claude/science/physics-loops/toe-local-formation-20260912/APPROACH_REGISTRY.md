@@ -7,11 +7,14 @@
 | Local program Records | Covariant encoding of event projector and attenuation in M2 content | Single local law on same actual apparatus | finite supplied programme/bridge candidate complete; renewal open |
 | Causal schedule/transport | Carry sufficient preparation information to fresh targets | Domain closed under noncommuting dwell and permanent Records | unexplored |
 | Global joint-history law | Prefix-consistent coupled cylinders | Local event marginals versus sequential posterior distinction | unexplored |
-| Effective return | Resolvent expansion plus infrared bounds | Complete linear/mixed sixth-order terms | unexplored |
+| Effective return | Resolvent expansion plus cocycle factorization and graded Gram bounds | Complete linear/mixed sixth-order terms | author conditional candidate complete, Block5; alpha open |
 | Quadratic history response | Rank-one covariance transport and path exponential | General two-event response and precise approximation price | candidate-complete, conditional |
 | Gaussian selective history | Exterior powers and Wick minors | Every positive branch update with explicit non-Gaussian boundary | candidate-complete, conditional |
 | Autonomous permanence/renewal | Static controller or supplied irreversible head, fresh-site supply | Permanent formation with nonzero live-matter activity | active |
 | Retained-battery spatial truncation | Actual ambient local conjugation plus Fourier tail and one-head channel bounds | Finite-neighborhood capped complete/feedback generator approximation | candidate-complete, conditional |
-| Finite energy carrier | Complete finite total-energy fibers and irregular battery levels | Finite-dimensional native energy instrument and compatibility with spatial truncation | active |
+| Finite energy carrier | Rounded finite ladder and actual non-scalar collision loss | Finite-dimensional feedback energy instrument | author conditional candidate complete, Block4; irregular fibers deferred |
+| Native Ward complement/incidence | Exact CAR and Kneser incidence commutators | Signed complete alpha | identities checked; positivity without a new mechanism is blocked-equivalent |
+| Rank-two Gaussian metric | Joint symmetric/skew congruence and positive Lyapunov forcing | Sharper uniform native chart | author conditional candidate complete, Block6 |
+| Normalized quench compression | Singular-value contraction in the stationary frame and principal-angle tails | Uniform finite-mode existence in original reference frame | author conditional candidate complete, Block6; no fixed basis or alpha |
 
 The full physical occurrence/selection problem is target-equivalent to the larger campaign goal, not a nearly-completed technical lemma.

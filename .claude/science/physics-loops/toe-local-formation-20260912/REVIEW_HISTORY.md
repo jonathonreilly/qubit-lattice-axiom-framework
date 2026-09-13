@@ -17,3 +17,7 @@ At the Block4 dependency read, current-main NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINI
 Block4 author proof extends the actual source packet/free evolution to feedback and its finite collision approximation.100 small checks include original-free noncommutation, actual feedback/dark loss, old Records and exact rational resource counts. They do not give an independent audit, empirical diamond norm, sustained-transport result or axiom closure. The apparatus route now has a coherent conditional milestone; reassess substantive matter/gauge theory before expanding apparatus variants.
 
 Block5 author proof review completed sensitive topology, closure, filtered cocycle, graded Gram and node-limit steps.29literalgeometry and53algebra groups passed once; all same-agent. No independent review or formal audit; candidate milestone requires a later external review handoff. Supplied source pins and copies are hashed in BLOCK05_SOURCE_MANIFEST.
+
+## Block6 author checkpoint
+
+Personal exercise and mathematical checks, not independent review. Source pins in BLOCK06_SOURCE_MANIFEST.json. The complement route remains open for alpha; the rank-two chart/compression result is a separate conditional positive theorem. Exact sign/congruence checks, literal Fock graph identification and nontrivial singular-tail controls passed with the limits in CHECK_NOTES. Preserved fixture failures were corrected without altering the claimed native model. Canonical source closure and section-by-section PR conformance are still pending; no pre-review conformance PASS is asserted.

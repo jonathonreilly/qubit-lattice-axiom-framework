@@ -1,0 +1,34 @@
+{
+  "scope": "same-agent exact metric and finite Gaussian support; no native alpha, phase, or actual propagation",
+  "check_groups": 43,
+  "data": {
+    "native_scalar_bound": {
+      "N": 32,
+      "summands": 33,
+      "exact_upper": "1039679023115954089616608500511118001063925856327669538094192737345369782641059746250899/2262719648139349808394009154153210030306745675118474344647728944289840269984621666500608",
+      "upper_decimal_for_display": 0.45948203259333936,
+      "relative_k_squared": "3511/239",
+      "r": "7/9",
+      "physical_C0_or_alpha_evaluated": false
+    },
+    "rank_doubling": {
+      "complex_modes": 4,
+      "initial_projection_rank": 4,
+      "later_reference_projection_rank": 8,
+      "literal_Fock_dimension": 16,
+      "scope": "synthetic positive contraction, not native evolution"
+    },
+    "normalized_tail": {
+      "complex_modes": 8,
+      "Fock_matrix_constructed": false,
+      "k": 4,
+      "eta_exact": "312156868/429889661",
+      "eta": 0.7261325319475408,
+      "actual_paired_Fock_error": 0.01926512867207795,
+      "proved_error_bound": 0.5134532373802634,
+      "ref_projection_tail": 0.09179553741924742,
+      "scope": "small rational Gaussian fixture, float SVD cross-check only"
+    }
+  },
+  "seconds": 0.03909279202343896
+}

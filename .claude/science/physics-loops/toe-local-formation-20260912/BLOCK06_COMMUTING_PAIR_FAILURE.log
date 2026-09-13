@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/check_block06.py", line 41, in <module>
+    req('toy_noncommuting_cavity_'+str(A),not same(cavity*b,b*cavity))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/check_block06.py", line 8, in req
+    if not p: raise AssertionError(name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: toy_noncommuting_cavity_(2, 4)

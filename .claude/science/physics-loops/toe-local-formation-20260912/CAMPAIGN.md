@@ -4,7 +4,7 @@ Design date: 2026-09-12. Main synchronized from b657ae9a1b9431c046db2be217d6fbc1
 
 **Decision:** attack the missing local formation interface of the strongest native matter/Record construction first. Then compose a persistent, repeatable process with surviving matter dynamics. Test the complete effective gauge return and reciprocal gravity only against that same candidate. Run an axiom-pressure analysis alongside each construction, keeping failed implementations distinct from actual axiom obstructions.
 
-The user requested personal execution after this review and design. All workhorse readers have finished. Subsequent research, computation, proof checking and writing are performed by the supervising agent without subagents. The authorized 12-hour run starts at 2026-09-12 23:38:24 UTC and ends at 2026-09-13 11:38:24 UTC. No repeated automation has been created.
+The user requested personal execution after this review and design. All workhorse readers have finished. Subsequent research, computation, proof checking and writing are performed by the supervising agent without subagents. The authorized 12-hour run starts at 2026-09-12 23:38:24 UTC and ends at 2026-09-13 11:38:24 UTC. The same-task recovery heartbeat toe-derivation-campaign-continuation is active for interruption recovery and must be paused at the deadline; it is instructed not to duplicate active work.
 
 Owner steering during execution: prioritize analytical derivations over compute-driven proofs. Derive quantified families and mechanisms first; use small exact calculations to challenge the derivation. Large sweeps are secondary and require a named question that analysis cannot already decide.
 

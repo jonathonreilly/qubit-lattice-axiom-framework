@@ -35,3 +35,11 @@ Explicit288-dimensional collision unitaries agree with their Kraus formula. Spar
 ## Block5 sixth return,2026-09-13
 
 Analytical proof written before controls. check_block05_geometry.py:29 named groups,349920 literal L8 words across far/adjacent supports;16200singleton each,145800far mixed,171720adjacent mixed. All actual noncut prefixes havebadfaces; no spectral solve. check_block05_algebra.py:53groups, exactCAR sign/Gram/cocycle jets plus tiny numerical exponentials and synthetic8cell symbol. Both fixed first runs passed. No failure erased or rerun. Main proof review clarified the complement-graph connectivity and replaced a terse near-prefix argument by the direct order5 incidence exclusion. The zero-alpha finite-size rate is explicitly not supplied by local convergence. Both checks remain same-agent support, not an independent theorem/audit certificate.
+
+## Block6 analytical controls
+
+`python3 check_block06.py` (from its packet directory) passes193 groups in13.13seconds. First structural-SymPy-equality failure and second commuting-pair assertion failure are retained with their exact checker versions/logs. Final identities use canonical exact expansion and require the actual mixed commuting/noncommuting pattern. Neither failure changes the theorem premises. Synthetic16x16 complement matrices and literal64-site L4 AP polynomialCAR are separate identity checks; no native scalar was evaluated.
+
+`python3 check_block06_chart.py` passes43 groups on the first fixed run. The analytical proof precedes the checks. Exact N32 integer sums, joint metric congruences and Lyapunov identities are followed by literal16-dimensional Fock graph checks and small rational Gaussian projection matrices with float SVD cross-checks. The actual paired-state truncation error.0192651287 is below the derived.5134532374 bound in that synthetic fixture. It is not a physical alpha interval.
+
+Block5 prior whitespace check reported trailing Markdown spaces/blank EOF in byte-identical primary source copies. That whole-delta check did not pass; source bytes were preserved. Authored-file whitespace is checked separately at subsequent checkpoints. No independent reviewer or audit ran.

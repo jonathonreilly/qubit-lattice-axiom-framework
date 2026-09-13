@@ -465,3 +465,28 @@ Next cold-review the full argument, refresh its changed-note hash, preserve
 source/check bindings and decide whether this positive conditional process
 is a coherent new source milestone. No execution agents; continue until
 11:38:24UTC. The lock from09:01 expires10:01UTC and must be refreshed.
+
+
+## Exact projector-history embedding, around09:44UTC
+
+Block16 is committed/pushed at75094571675065c3149001f75d5c0ccd2b8e6ab0.
+Block17 replaces its noisy sign-only output with exact matching projector
+Records. The all-N proof precedes checking: one intrinsic empirical content
+law with buddy-supported preparations, four-leaf physical combs, trace-weighted
+nonlocal occurrence, current-Record density reconstruction and deterministic
+repeated projector appends. There are24N+16 prepared and at most56N+16 final
+Records; joint/refined kernels use at most16N/17N transitions respectively.
+First data sites depend on outcomes; fixed terminal registers repeat earlier
+commitments. It does not derive Born weights or the common-first-target local
+marginal, physical calibration or native apparatus. Same first-round content
+law also admits supplied CHSH0 and4 comparisons; the trace choice gives2sqrt2.
+
+Final29 exact checks pass in21.73s. They compare240 density/ensemble prefixes,
+exclude32 zero children, preserve2682 repeated projector layers, reconstruct
+224 final calculators from actual site maps, and check literal geometry/
+continued support at horizons1,2,7. No failed math predicate or tolerance.
+The full selected finite-projective parent and all current axioms were read.
+Cold author review is in BLOCK17_COLD_AUTHOR_REVIEW. Next package one coherent
+positive source note/runner with actual mutation evidence, fresh cache and
+focused mechanical checks, then continue personally until11:38:24UTC.
+The own lock still expires10:01UTC and needs refresh before then.

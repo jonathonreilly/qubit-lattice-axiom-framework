@@ -1,0 +1,10 @@
+{
+  "name": "noncommuting_H_squared_sign",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "4c424f2de4e8ef18deffb51622120d8cfe741efca4beb8c5788a2ff4718e4a32",
+  "old": "+2*(b1*m3-d*m1)*np.kron(SIG[1],SIG[1])",
+  "new": "-2*(b1*m3-d*m1)*np.kron(SIG[1],SIG[1])",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-r9ldz3rv/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-r9ldz3rv/primary.py\", line 174, in run\n    close(f'full_H_squared_{num}_{trial}',H@H,square,2e-10)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-r9ldz3rv/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-r9ldz3rv/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('full_H_squared_1_0', {'error': 0.28125824736837685})\n"
+}

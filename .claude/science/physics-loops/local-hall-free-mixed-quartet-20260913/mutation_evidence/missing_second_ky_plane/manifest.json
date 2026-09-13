@@ -1,0 +1,10 @@
+{
+  "name": "missing_second_ky_plane",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "d3f65dc0932575a9751d8c9fe6b5dd9f2ca65b9c1d0eb78d7289ec3699ae7a58",
+  "old": "for y in [0,np.pi]:",
+  "new": "for y in [0]:",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-unhpvv44/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-unhpvv44/primary.py\", line 181, in run\n    nodes=roots_formula(*parameters);check(f'four_nodes_{num}',len(nodes)==4)\n                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-unhpvv44/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('four_nodes_7', {})\n"
+}

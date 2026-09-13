@@ -1,0 +1,10 @@
+{
+  "name": "gauge_charge_normalization",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "2b0fc98d9b3f120f6eaff78acca15297bd6399e61737979f0899fbd6e48a1e1a",
+  "old": "np.repeat(np.exp(-.37j*chi.ravel()),4)",
+  "new": "np.repeat(np.exp(-.74j*chi.ravel()),4)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p8dt19q2/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p8dt19q2/primary.py\", line 222, in run\n    gauge=gauge_fixture(parameters,seed=331+num);close(f'finite_gauge_covariance_{num}',gauge['covariance_error'],0);close(f'finite_gauge_spectrum_{num}',gauge['spectrum_error'],0);close(f'finite_gauge_contact_cancellation_{num}',gauge['hessian'],0,1e-9,contact=gauge['contact'],bubble=gauge['bubble']);check(f'neutral_filling_{num}',gauge['filled']==gauge['neutral_background'] and gauge['gap']>.01);check(f'contact_is_substantive_{num}',abs(gauge['contact'])>1)\n                                                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p8dt19q2/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p8dt19q2/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_gauge_covariance_0', {'error': 0.562381255742223})\n"
+}

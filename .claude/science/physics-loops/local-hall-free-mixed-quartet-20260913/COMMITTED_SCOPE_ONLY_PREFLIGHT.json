@@ -1,0 +1,9 @@
+{
+  "base": "origin/main",
+  "changed_path_count": 0,
+  "checked": [],
+  "control_failures": [],
+  "diff_scope": "committed",
+  "failures": [],
+  "schema": "changed_audit_evidence_readiness_v1"
+}

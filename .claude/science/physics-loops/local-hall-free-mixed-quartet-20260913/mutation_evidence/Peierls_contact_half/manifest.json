@@ -1,0 +1,10 @@
+{
+  "name": "Peierls_contact_half",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "36e98ba01055e59670ec40fd4e9be8f95c4a26d34b104c20b4091a99fa37329f",
+  "old": "val=(1j*dc)**power*hop[axis]",
+  "new": "val=(1j*dc)**power*hop[axis]*(.5 if power==2 else 1)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mn6bgzet/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mn6bgzet/primary.py\", line 222, in run\n    gauge=gauge_fixture(parameters,seed=331+num);close(f'finite_gauge_covariance_{num}',gauge['covariance_error'],0);close(f'finite_gauge_spectrum_{num}',gauge['spectrum_error'],0);close(f'finite_gauge_contact_cancellation_{num}',gauge['hessian'],0,1e-9,contact=gauge['contact'],bubble=gauge['bubble']);check(f'neutral_filling_{num}',gauge['filled']==gauge['neutral_background'] and gauge['gap']>.01);check(f'contact_is_substantive_{num}',abs(gauge['contact'])>1)\n                                                                                                                                                                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mn6bgzet/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mn6bgzet/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_gauge_contact_cancellation_0', {'error': 29.579818640313526, 'contact': 29.579818640313533, 'bubble': -59.15963728062706})\n"
+}

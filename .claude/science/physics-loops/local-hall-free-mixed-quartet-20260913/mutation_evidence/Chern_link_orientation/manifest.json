@@ -1,0 +1,10 @@
+{
+  "name": "Chern_link_orientation",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "7c5135dca85df0ea3bd427304202f4c1455540dd3f6abb887caf5ee3a52daa32",
+  "old": "return d/abs(d)",
+  "new": "return d.conjugate()/abs(d)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-md65h8bb/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-md65h8bb/primary.py\", line 198, in run\n    C,overlap=cube_charge(k,parameters);target=-np.sign(np.cos(k[1])*np.sin(k[0])*np.sin(k[2]));close(f'occupied_cube_charge_{num}_{index}',C,target,2e-10,min_overlap=overlap);check(f'cube_overlap_{num}_{index}',overlap>.95)\n                                                                                                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-md65h8bb/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-md65h8bb/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('occupied_cube_charge_0_0', {'error': 1.9999999999999996, 'min_overlap': np.float64(0.987603430389753)})\n"
+}

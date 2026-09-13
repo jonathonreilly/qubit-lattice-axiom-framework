@@ -1,0 +1,10 @@
+{
+  "name": "perturbation_breaks_T",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "f7bc7460f069e89cc7282888bf7f0e4841bffc85c944e3f03432d418a5c6d589",
+  "old": "p=np.kron(SIG[1],SIG[2])+.31",
+  "new": "p=np.kron(SIG[1],SIG[1])+.31",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-pid47o_u/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-pid47o_u/primary.py\", line 223, in run\n    pert=perturb_fixture(parameters);check(f'generic_perturbation_symmetries_{num}',pert['TR']<1e-12 and pert['Mz']<1e-12 and pert['PH_defect']>.001,**pert)\n                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-pid47o_u/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('generic_perturbation_symmetries_0', {'nodes': [{'node': [-0.3482491170255085, 0.003460501588021158, -0.7666317653867478], 'residual': 5.168388586121738e-17, 'energy': 0.011745520153819404, 'det': 0.5830308292973332, 'type_I_norm': 1.6131730320594932e-05}, {'node': [-0.3482491170255085, 0.003460501588021159, 0.7666317653867477], 'residual': 5.227471429417567e-17, 'energy': 0.011745520153819404, 'det': -0.5830308292973971, 'type_I_norm': 1.6131730307735766e-05}, {'node': [0.3482491170255085, -0.00346050158802116, -0.7666317653867478], 'residual': 4.8163797720930964e-17, 'energy': 0.0071936600866719, 'det': -0.5830308292971069, 'type_I_norm': 1.67593369300493e-05}, {'node': [0.3482491170255085, -0.0034605015880211595, 0.7666317653867478], 'residual': 5.0821666486772405e-17, 'energy': 0.007193660086671903, 'det': 0.5830308292970657, 'type_I_norm': 1.67593369341761e-05}], 'TR': 0.026000000000000023, 'Mz': 0.0, 'PH_defect': 0.06363678117540598})\n"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "spectator_gap_factor",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "3e1f812800639dce9edc7acfa91ae712226a2e8ba5e9efa1bbbc01bee372c68b",
+  "old": "gap2=4*(np.sin(b)**2+mu*mu*np.cos(theta)**2)",
+  "new": "gap2=2*(np.sin(b)**2+mu*mu*np.cos(theta)**2)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-7uh5dvs7/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-7uh5dvs7/primary.py\", line 185, in run\n    close(f'node_zeros_{num}_{index}',e[1:3],np.zeros(2));close(f'node_spectators_{num}_{index}',e[[0,3]],[-np.sqrt(gap2),np.sqrt(gap2)])\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-7uh5dvs7/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-7uh5dvs7/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('node_spectators_0_0', {'error': 0.2281159834875588})\n"
+}

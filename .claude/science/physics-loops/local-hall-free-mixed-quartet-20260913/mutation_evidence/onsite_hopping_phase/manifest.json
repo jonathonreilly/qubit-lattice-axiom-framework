@@ -1,0 +1,10 @@
+{
+  "name": "onsite_hopping_phase",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "93959195e207dc36817deef97d11f117b0a84161b11838430905a2ce59c912be",
+  "old": "[(c-1j*a)/2 for c,a in zip(C,A)]",
+  "new": "[(c+1j*a)/2 for c,a in zip(C,A)]",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-rxbyjski/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-rxbyjski/primary.py\", line 175, in run\n    close(f'finite_range_symbol_{num}_{trial}',H,onsite+sum((v*np.exp(1j*k[j])+v.conj().T*np.exp(-1j*k[j]) for j,v in enumerate(hop)),np.zeros((4,4),complex)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-rxbyjski/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-rxbyjski/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_range_symbol_0_0', {'error': 2.176154189746792})\n"
+}

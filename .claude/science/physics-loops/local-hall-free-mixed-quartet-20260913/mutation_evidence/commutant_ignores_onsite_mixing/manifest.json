@@ -1,0 +1,10 @@
+{
+  "name": "commutant_ignores_onsite_mixing",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "4cc6ef9b8a56c297c5f4e68a30214ddc2228bfcf6beefb31352870b49c96f4e8",
+  "old": "coeffs=[onsite,",
+  "new": "coeffs=[0*onsite,",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4p2hsjs/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4p2hsjs/primary.py\", line 193, in run\n    nullity,singular=commutant(parameters);check(f'onsite_commutant_{num}',nullity==(2 if mu==0 else 1),nullity=nullity,smallest_nonzero=singular[-(nullity+1)])\n                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4p2hsjs/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('onsite_commutant_1', {'nullity': 2, 'smallest_nonzero': 4.000000000000001})\n"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "spinless_TRIM_real_linear_terms",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "6eca34063b62637a0b5290f8fbb1e418afa5c75189c3042a5fdf937d3f362d16",
+  "old": "np.max(abs(s.conj()+s))<1e-12",
+  "new": "np.max(abs(s.conj()-s))<1e-12",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-v73btdke/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-v73btdke/primary.py\", line 229, in run\n    check('spinless_TRIM_linear_rank_bound',len(allowed)==1)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-v73btdke/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('spinless_TRIM_linear_rank_bound', {})\n"
+}

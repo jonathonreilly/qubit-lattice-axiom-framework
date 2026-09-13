@@ -1,0 +1,268 @@
+{
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "count": 26,
+  "all_effective": true,
+  "elapsed_seconds": 23.086145624984056,
+  "mutations": [
+    {
+      "name": "mixing_spin_direction",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "c0dda72afb81976af0f17436207b041c69da2f59ec3e2d98da8c0960c0315aa7",
+      "old": "m1*XX+m3*ZX",
+      "new": "m1*ZX+m3*XX",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ikklz8rl/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ikklz8rl/primary.py\", line 171, in run\n    close(f'spectrum_{num}_{trial}',np.linalg.eigvalsh(H),expected,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ikklz8rl/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ikklz8rl/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('spectrum_1_0', {'error': 0.06467064560581282})\n"
+    },
+    {
+      "name": "onsite_hopping_phase",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "93959195e207dc36817deef97d11f117b0a84161b11838430905a2ce59c912be",
+      "old": "[(c-1j*a)/2 for c,a in zip(C,A)]",
+      "new": "[(c+1j*a)/2 for c,a in zip(C,A)]",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-rxbyjski/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-rxbyjski/primary.py\", line 175, in run\n    close(f'finite_range_symbol_{num}_{trial}',H,onsite+sum((v*np.exp(1j*k[j])+v.conj().T*np.exp(-1j*k[j]) for j,v in enumerate(hop)),np.zeros((4,4),complex)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-rxbyjski/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-rxbyjski/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_range_symbol_0_0', {'error': 2.176154189746792})\n"
+    },
+    {
+      "name": "squared_spectral_split",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "4cbf1818d90e4203fd350a638475043ea549f04046a21412cca63d286fd12022",
+      "old": "split=2*np.sqrt((a*b1+c*d)**2",
+      "new": "split=np.sqrt((a*b1+c*d)**2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-a8sjwebw/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-a8sjwebw/primary.py\", line 171, in run\n    close(f'spectrum_{num}_{trial}',np.linalg.eigvalsh(H),expected,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-a8sjwebw/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-a8sjwebw/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('spectrum_0_0', {'error': 0.16876930866844608})\n"
+    },
+    {
+      "name": "noncommuting_H_squared_sign",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "4c424f2de4e8ef18deffb51622120d8cfe741efca4beb8c5788a2ff4718e4a32",
+      "old": "+2*(b1*m3-d*m1)*np.kron(SIG[1],SIG[1])",
+      "new": "-2*(b1*m3-d*m1)*np.kron(SIG[1],SIG[1])",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-r9ldz3rv/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-r9ldz3rv/primary.py\", line 174, in run\n    close(f'full_H_squared_{num}_{trial}',H@H,square,2e-10)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-r9ldz3rv/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-r9ldz3rv/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('full_H_squared_1_0', {'error': 0.28125824736837685})\n"
+    },
+    {
+      "name": "node_R_sign",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "cebef684758516ff746a9a1078a1add38f749b28941e8c6927a445de75cd0aa8",
+      "old": "R2=1-mu*mu*np.sin(2*theta-b)/np.sin(b)",
+      "new": "R2=1+mu*mu*np.sin(2*theta-b)/np.sin(b)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-yfjd8vj7/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-yfjd8vj7/primary.py\", line 185, in run\n    close(f'node_zeros_{num}_{index}',e[1:3],np.zeros(2));close(f'node_spectators_{num}_{index}',e[[0,3]],[-np.sqrt(gap2),np.sqrt(gap2)])\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-yfjd8vj7/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-yfjd8vj7/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('node_zeros_1_0', {'error': 0.09187849471234773})\n"
+    },
+    {
+      "name": "node_X_half_factor",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "92e411c89774504afed2b0c10044287031d928c3a96c2eaf28d35cf3d3ccca17",
+      "old": "mu*mu*np.sin(2*theta)/(2*np.sin(b))",
+      "new": "mu*mu*np.sin(2*theta)/np.sin(b)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-sesxqobp/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-sesxqobp/primary.py\", line 185, in run\n    close(f'node_zeros_{num}_{index}',e[1:3],np.zeros(2));close(f'node_spectators_{num}_{index}',e[[0,3]],[-np.sqrt(gap2),np.sqrt(gap2)])\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-sesxqobp/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-sesxqobp/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('node_zeros_2_0', {'error': 0.07891543829696168})\n"
+    },
+    {
+      "name": "missing_second_ky_plane",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "d3f65dc0932575a9751d8c9fe6b5dd9f2ca65b9c1d0eb78d7289ec3699ae7a58",
+      "old": "for y in [0,np.pi]:",
+      "new": "for y in [0]:",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-unhpvv44/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-unhpvv44/primary.py\", line 181, in run\n    nodes=roots_formula(*parameters);check(f'four_nodes_{num}',len(nodes)==4)\n                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-unhpvv44/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('four_nodes_7', {})\n"
+    },
+    {
+      "name": "spectator_gap_factor",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "3e1f812800639dce9edc7acfa91ae712226a2e8ba5e9efa1bbbc01bee372c68b",
+      "old": "gap2=4*(np.sin(b)**2+mu*mu*np.cos(theta)**2)",
+      "new": "gap2=2*(np.sin(b)**2+mu*mu*np.cos(theta)**2)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-7uh5dvs7/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-7uh5dvs7/primary.py\", line 185, in run\n    close(f'node_zeros_{num}_{index}',e[1:3],np.zeros(2));close(f'node_spectators_{num}_{index}',e[[0,3]],[-np.sqrt(gap2),np.sqrt(gap2)])\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-7uh5dvs7/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-7uh5dvs7/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('node_spectators_0_0', {'error': 0.2281159834875588})\n"
+    },
+    {
+      "name": "determinant_metric_phase",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "1ac37345879267faaad8f8c610fc26fffe49e41939ea977c5dcfda3d0fa75fee",
+      "old": "qz=2*(c-1j*t*np.sin(b))*np.sin(z)",
+      "new": "qz=2*(c+1j*t*np.sin(b))*np.sin(z)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mzgpn2n3/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mzgpn2n3/primary.py\", line 186, in run\n    close(f'projected_metric_{num}_{index}',J.T@J,G);close(f'projected_chirality_{num}_{index}',np.linalg.det(J),detJ);close(f'zero_tilt_{num}_{index}',tilt,np.zeros(3));check(f'simple_node_{num}_{index}',np.linalg.eigvalsh(G).min()>.001)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mzgpn2n3/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mzgpn2n3/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('projected_metric_0_0', {'error': 0.5122947180938218})\n"
+    },
+    {
+      "name": "metric_y_normalization",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "10b2fec2dc800048265a746eea622bccbc4f7a5a71edbfa1e0ea6dedc8b427db",
+      "old": "G[1,1]=1",
+      "new": "G[1,1]=.5",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-1unehf02/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-1unehf02/primary.py\", line 186, in run\n    close(f'projected_metric_{num}_{index}',J.T@J,G);close(f'projected_chirality_{num}_{index}',np.linalg.det(J),detJ);close(f'zero_tilt_{num}_{index}',tilt,np.zeros(3));check(f'simple_node_{num}_{index}',np.linalg.eigvalsh(G).min()>.001)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-1unehf02/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-1unehf02/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('projected_metric_0_0', {'error': 0.5000000000000004})\n"
+    },
+    {
+      "name": "occupied_Weyl_orientation",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "92d3e310b9fe079f5f15dbf685fccc8b50c6a9d19c6a4962efbb43c673fd9a1f",
+      "old": "detJ=-np.cos(y)*np.imag(qx.conjugate()*qz)/gap2",
+      "new": "detJ=np.cos(y)*np.imag(qx.conjugate()*qz)/gap2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4lmaptl/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4lmaptl/primary.py\", line 186, in run\n    close(f'projected_metric_{num}_{index}',J.T@J,G);close(f'projected_chirality_{num}_{index}',np.linalg.det(J),detJ);close(f'zero_tilt_{num}_{index}',tilt,np.zeros(3));check(f'simple_node_{num}_{index}',np.linalg.eigvalsh(G).min()>.001)\n                                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4lmaptl/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4lmaptl/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('projected_chirality_0_0', {'error': 1.4282856857085697})\n"
+    },
+    {
+      "name": "second_plane_chirality",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "0e6b2d6bdacae354499ebe2731abcbe38e9d51023fdd2df16e67daf9c819145a",
+      "old": "detJ=-np.cos(y)*np.imag",
+      "new": "detJ=-np.imag",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-2cj8ueh6/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-2cj8ueh6/primary.py\", line 186, in run\n    close(f'projected_metric_{num}_{index}',J.T@J,G);close(f'projected_chirality_{num}_{index}',np.linalg.det(J),detJ);close(f'zero_tilt_{num}_{index}',tilt,np.zeros(3));check(f'simple_node_{num}_{index}',np.linalg.eigvalsh(G).min()>.001)\n                                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-2cj8ueh6/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-2cj8ueh6/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('projected_chirality_7_0', {'error': 0.8844265382853596})\n"
+    },
+    {
+      "name": "aligned_common_metric_speed",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "98f2fe087e32ca3ce755346fe18c09be5f25753da502378d156a4c449b23ffc5",
+      "old": "common=np.diag([R*R,1,",
+      "new": "common=np.diag([R**4,1,",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-5bdj3gfv/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-5bdj3gfv/primary.py\", line 190, in run\n    close(f'aligned_common_metric_{num}',allmetrics,np.broadcast_to(common,(4,3,3)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-5bdj3gfv/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-5bdj3gfv/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('aligned_common_metric_2', {'error': 0.038399999999999435})\n"
+    },
+    {
+      "name": "Kubo_factor_two",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "202faea64da9b1d1f4a583b0ba28de35aed39b916698035bccf261a4296a3d6b",
+      "old": "return float(2*np.imag(np.sum(A[:2,2:]",
+      "new": "return float(np.imag(np.sum(A[:2,2:]",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-2ugex3g9/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-2ugex3g9/primary.py\", line 208, in run\n    close(f'Kubo_projector_normalization_{num}_{i}_{j}',curvature(k,parameters,i,j),projector,2e-8)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-2ugex3g9/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-2ugex3g9/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Kubo_projector_normalization_0_0_1', {'error': 0.1767357253903436})\n"
+    },
+    {
+      "name": "Kubo_occupied_band_count",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "b68f163b52036ffaef9a0f0ad1b29bf149cdedc5604a08c4323b6eab0df0d323",
+      "old": "A[:2,2:]*B[2:,:2].T/(e[:2,None]-e[None,2:])**2",
+      "new": "A[:1,2:]*B[2:,:1].T/(e[:1,None]-e[None,2:])**2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-11la16yu/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-11la16yu/primary.py\", line 208, in run\n    close(f'Kubo_projector_normalization_{num}_{i}_{j}',curvature(k,parameters,i,j),projector,2e-8)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-11la16yu/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-11la16yu/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Kubo_projector_normalization_0_0_1', {'error': 0.34349471632319456})\n"
+    },
+    {
+      "name": "Kubo_gap_power",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "9f594409432e9f3f0dc185d522dff77d6d892b008669fde2cfbb2e0f18349198",
+      "old": "/(e[:2,None]-e[None,2:])**2",
+      "new": "/(e[:2,None]-e[None,2:])**3",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-uibt86qh/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-uibt86qh/primary.py\", line 208, in run\n    close(f'Kubo_projector_normalization_{num}_{i}_{j}',curvature(k,parameters,i,j),projector,2e-8)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-uibt86qh/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-uibt86qh/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Kubo_projector_normalization_0_0_1', {'error': 0.6388019495494561})\n"
+    },
+    {
+      "name": "wrong_occupied_projector",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "16cc395fa5ae86235ab5423fbbcf61b6757c5290c8f460641e04cbb1028e7fbe",
+      "old": "np.linalg.eigh(h(k,*parameters))[1][:,:2]",
+      "new": "np.linalg.eigh(h(k,*parameters))[1][:,2:]",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-b802btk9/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-b802btk9/primary.py\", line 198, in run\n    C,overlap=cube_charge(k,parameters);target=-np.sign(np.cos(k[1])*np.sin(k[0])*np.sin(k[2]));close(f'occupied_cube_charge_{num}_{index}',C,target,2e-10,min_overlap=overlap);check(f'cube_overlap_{num}_{index}',overlap>.95)\n                                                                                                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-b802btk9/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-b802btk9/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('occupied_cube_charge_0_0', {'error': 1.9999999999999996, 'min_overlap': np.float64(0.9876034303897531)})\n"
+    },
+    {
+      "name": "Chern_link_orientation",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "7c5135dca85df0ea3bd427304202f4c1455540dd3f6abb887caf5ee3a52daa32",
+      "old": "return d/abs(d)",
+      "new": "return d.conjugate()/abs(d)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-md65h8bb/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-md65h8bb/primary.py\", line 198, in run\n    C,overlap=cube_charge(k,parameters);target=-np.sign(np.cos(k[1])*np.sin(k[0])*np.sin(k[2]));close(f'occupied_cube_charge_{num}_{index}',C,target,2e-10,min_overlap=overlap);check(f'cube_overlap_{num}_{index}',overlap>.95)\n                                                                                                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-md65h8bb/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-md65h8bb/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('occupied_cube_charge_0_0', {'error': 1.9999999999999996, 'min_overlap': np.float64(0.987603430389753)})\n"
+    },
+    {
+      "name": "commutant_ignores_onsite_mixing",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "4cc6ef9b8a56c297c5f4e68a30214ddc2228bfcf6beefb31352870b49c96f4e8",
+      "old": "coeffs=[onsite,",
+      "new": "coeffs=[0*onsite,",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4p2hsjs/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4p2hsjs/primary.py\", line 193, in run\n    nullity,singular=commutant(parameters);check(f'onsite_commutant_{num}',nullity==(2 if mu==0 else 1),nullity=nullity,smallest_nonzero=singular[-(nullity+1)])\n                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p4p2hsjs/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('onsite_commutant_1', {'nullity': 2, 'smallest_nonzero': 4.000000000000001})\n"
+    },
+    {
+      "name": "Peierls_Ward_incidence",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "714fb1316a275b3db5d0a5468a0b3702415e644424dd1cf5c6d25589eb42c2e7",
+      "old": "2*np.sin(qmom[j]/2)*derivative(mid,b,j)",
+      "new": "np.sin(qmom[j]/2)*derivative(mid,b,j)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ns2f30o1/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ns2f30o1/primary.py\", line 179, in run\n    close(f'Peierls_Ward_{num}_{trial}',ward,h(k+qmom,*parameters)-H)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ns2f30o1/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ns2f30o1/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Peierls_Ward_0_0', {'error': 0.05477083222189948})\n"
+    },
+    {
+      "name": "Peierls_contact_half",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "36e98ba01055e59670ec40fd4e9be8f95c4a26d34b104c20b4091a99fa37329f",
+      "old": "val=(1j*dc)**power*hop[axis]",
+      "new": "val=(1j*dc)**power*hop[axis]*(.5 if power==2 else 1)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mn6bgzet/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mn6bgzet/primary.py\", line 222, in run\n    gauge=gauge_fixture(parameters,seed=331+num);close(f'finite_gauge_covariance_{num}',gauge['covariance_error'],0);close(f'finite_gauge_spectrum_{num}',gauge['spectrum_error'],0);close(f'finite_gauge_contact_cancellation_{num}',gauge['hessian'],0,1e-9,contact=gauge['contact'],bubble=gauge['bubble']);check(f'neutral_filling_{num}',gauge['filled']==gauge['neutral_background'] and gauge['gap']>.01);check(f'contact_is_substantive_{num}',abs(gauge['contact'])>1)\n                                                                                                                                                                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mn6bgzet/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mn6bgzet/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_gauge_contact_cancellation_0', {'error': 29.579818640313526, 'contact': 29.579818640313533, 'bubble': -59.15963728062706})\n"
+    },
+    {
+      "name": "gauge_hessian_bubble_factor",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "110fb2b337f20867968e74f36176a42986af3286e14930f92f5feb5be11afd5d",
+      "old": "bubble=2*np.sum(abs(A[np.ix_(occ,~occ)])",
+      "new": "bubble=np.sum(abs(A[np.ix_(occ,~occ)])",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-0w24ylsp/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-0w24ylsp/primary.py\", line 222, in run\n    gauge=gauge_fixture(parameters,seed=331+num);close(f'finite_gauge_covariance_{num}',gauge['covariance_error'],0);close(f'finite_gauge_spectrum_{num}',gauge['spectrum_error'],0);close(f'finite_gauge_contact_cancellation_{num}',gauge['hessian'],0,1e-9,contact=gauge['contact'],bubble=gauge['bubble']);check(f'neutral_filling_{num}',gauge['filled']==gauge['neutral_background'] and gauge['gap']>.01);check(f'contact_is_substantive_{num}',abs(gauge['contact'])>1)\n                                                                                                                                                                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-0w24ylsp/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-0w24ylsp/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_gauge_contact_cancellation_0', {'error': 29.579818640313537, 'contact': 59.15963728062707, 'bubble': -29.57981864031353})\n"
+    },
+    {
+      "name": "gauge_charge_normalization",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "2b0fc98d9b3f120f6eaff78acca15297bd6399e61737979f0899fbd6e48a1e1a",
+      "old": "np.repeat(np.exp(-.37j*chi.ravel()),4)",
+      "new": "np.repeat(np.exp(-.74j*chi.ravel()),4)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p8dt19q2/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p8dt19q2/primary.py\", line 222, in run\n    gauge=gauge_fixture(parameters,seed=331+num);close(f'finite_gauge_covariance_{num}',gauge['covariance_error'],0);close(f'finite_gauge_spectrum_{num}',gauge['spectrum_error'],0);close(f'finite_gauge_contact_cancellation_{num}',gauge['hessian'],0,1e-9,contact=gauge['contact'],bubble=gauge['bubble']);check(f'neutral_filling_{num}',gauge['filled']==gauge['neutral_background'] and gauge['gap']>.01);check(f'contact_is_substantive_{num}',abs(gauge['contact'])>1)\n                                                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p8dt19q2/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-p8dt19q2/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_gauge_covariance_0', {'error': 0.562381255742223})\n"
+    },
+    {
+      "name": "perturbation_breaks_T",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "f7bc7460f069e89cc7282888bf7f0e4841bffc85c944e3f03432d418a5c6d589",
+      "old": "p=np.kron(SIG[1],SIG[2])+.31",
+      "new": "p=np.kron(SIG[1],SIG[1])+.31",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-pid47o_u/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-pid47o_u/primary.py\", line 223, in run\n    pert=perturb_fixture(parameters);check(f'generic_perturbation_symmetries_{num}',pert['TR']<1e-12 and pert['Mz']<1e-12 and pert['PH_defect']>.001,**pert)\n                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-pid47o_u/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('generic_perturbation_symmetries_0', {'nodes': [{'node': [-0.3482491170255085, 0.003460501588021158, -0.7666317653867478], 'residual': 5.168388586121738e-17, 'energy': 0.011745520153819404, 'det': 0.5830308292973332, 'type_I_norm': 1.6131730320594932e-05}, {'node': [-0.3482491170255085, 0.003460501588021159, 0.7666317653867477], 'residual': 5.227471429417567e-17, 'energy': 0.011745520153819404, 'det': -0.5830308292973971, 'type_I_norm': 1.6131730307735766e-05}, {'node': [0.3482491170255085, -0.00346050158802116, -0.7666317653867478], 'residual': 4.8163797720930964e-17, 'energy': 0.0071936600866719, 'det': -0.5830308292971069, 'type_I_norm': 1.67593369300493e-05}, {'node': [0.3482491170255085, -0.0034605015880211595, 0.7666317653867478], 'residual': 5.0821666486772405e-17, 'energy': 0.007193660086671903, 'det': 0.5830308292970657, 'type_I_norm': 1.67593369341761e-05}], 'TR': 0.026000000000000023, 'Mz': 0.0, 'PH_defect': 0.06363678117540598})\n"
+    },
+    {
+      "name": "silently_fixed_node_energy",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "87c621470f278b174d8ba4e1d09c17a6b4f24c35d4ee00d63b94153dec98789e",
+      "old": "return np.array([np.trace(A@s).real/2 for s in SIG]),np.trace(A).real/2",
+      "new": "return np.array([np.trace(A@s).real/2 for s in SIG]),0.",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-xnzml298/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-xnzml298/primary.py\", line 224, in run\n    energies=[n['energy'] for n in pert['nodes']];close(f'common_shifted_node_energy_{num}',energies,np.mean(energies),1e-10);check(f'PH_not_required_{num}',abs(np.mean(energies))>.001)\n                                                                                                                              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-xnzml298/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('PH_not_required_0', {})\n"
+    },
+    {
+      "name": "spinless_TRIM_real_linear_terms",
+      "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+      "mutated_sha256": "6eca34063b62637a0b5290f8fbb1e418afa5c75189c3042a5fdf937d3f362d16",
+      "old": "np.max(abs(s.conj()+s))<1e-12",
+      "new": "np.max(abs(s.conj()-s))<1e-12",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-v73btdke/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-v73btdke/primary.py\", line 229, in run\n    check('spinless_TRIM_linear_rank_bound',len(allowed)==1)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-v73btdke/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('spinless_TRIM_linear_rank_bound', {})\n"
+    }
+  ]
+}

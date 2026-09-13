@@ -1,0 +1,10 @@
+{
+  "name": "Peierls_Ward_incidence",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "714fb1316a275b3db5d0a5468a0b3702415e644424dd1cf5c6d25589eb42c2e7",
+  "old": "2*np.sin(qmom[j]/2)*derivative(mid,b,j)",
+  "new": "np.sin(qmom[j]/2)*derivative(mid,b,j)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ns2f30o1/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ns2f30o1/primary.py\", line 179, in run\n    close(f'Peierls_Ward_{num}_{trial}',ward,h(k+qmom,*parameters)-H)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ns2f30o1/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-ns2f30o1/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Peierls_Ward_0_0', {'error': 0.05477083222189948})\n"
+}

@@ -1,0 +1,25 @@
+{
+  "base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "added": [
+    "local_hall_free_mixed_weyl_quartet_and_common_metric_bounded_theorem_note_2026-09-13"
+  ],
+  "removed": [],
+  "changed_existing": [],
+  "node_delta": 1,
+  "edge_delta": 3,
+  "note_hash": "4b4e13fd79132f4dfdb3205e3c1ee9086e0dc357335ab9b4ebf2a13815e992fb",
+  "outgoing_citation_edges": [
+    {
+      "from": "local_hall_free_mixed_weyl_quartet_and_common_metric_bounded_theorem_note_2026-09-13",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "local_hall_free_mixed_weyl_quartet_and_common_metric_bounded_theorem_note_2026-09-13",
+      "to": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    },
+    {
+      "from": "local_hall_free_mixed_weyl_quartet_and_common_metric_bounded_theorem_note_2026-09-13",
+      "to": "discrete_symmetries_p_t_and_cpt_of_the_emergent_fermion_bounded_theorem_note_2026-09-03"
+    }
+  ]
+}

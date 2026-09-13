@@ -1,0 +1,10 @@
+{
+  "name": "Kubo_occupied_band_count",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "b68f163b52036ffaef9a0f0ad1b29bf149cdedc5604a08c4323b6eab0df0d323",
+  "old": "A[:2,2:]*B[2:,:2].T/(e[:2,None]-e[None,2:])**2",
+  "new": "A[:1,2:]*B[2:,:1].T/(e[:1,None]-e[None,2:])**2",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-11la16yu/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-11la16yu/primary.py\", line 208, in run\n    close(f'Kubo_projector_normalization_{num}_{i}_{j}',curvature(k,parameters,i,j),projector,2e-8)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-11la16yu/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-11la16yu/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Kubo_projector_normalization_0_0_1', {'error': 0.34349471632319456})\n"
+}

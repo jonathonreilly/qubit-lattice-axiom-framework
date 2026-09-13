@@ -1,0 +1,10 @@
+{
+  "name": "node_X_half_factor",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "92e411c89774504afed2b0c10044287031d928c3a96c2eaf28d35cf3d3ccca17",
+  "old": "mu*mu*np.sin(2*theta)/(2*np.sin(b))",
+  "new": "mu*mu*np.sin(2*theta)/np.sin(b)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-sesxqobp/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-sesxqobp/primary.py\", line 185, in run\n    close(f'node_zeros_{num}_{index}',e[1:3],np.zeros(2));close(f'node_spectators_{num}_{index}',e[[0,3]],[-np.sqrt(gap2),np.sqrt(gap2)])\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-sesxqobp/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-sesxqobp/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('node_zeros_2_0', {'error': 0.07891543829696168})\n"
+}

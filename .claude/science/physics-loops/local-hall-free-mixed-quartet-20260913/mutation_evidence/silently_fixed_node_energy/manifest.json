@@ -1,0 +1,10 @@
+{
+  "name": "silently_fixed_node_energy",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "87c621470f278b174d8ba4e1d09c17a6b4f24c35d4ee00d63b94153dec98789e",
+  "old": "return np.array([np.trace(A@s).real/2 for s in SIG]),np.trace(A).real/2",
+  "new": "return np.array([np.trace(A@s).real/2 for s in SIG]),0.",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-xnzml298/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-xnzml298/primary.py\", line 224, in run\n    energies=[n['energy'] for n in pert['nodes']];close(f'common_shifted_node_energy_{num}',energies,np.mean(energies),1e-10);check(f'PH_not_required_{num}',abs(np.mean(energies))>.001)\n                                                                                                                              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-xnzml298/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('PH_not_required_0', {})\n"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "determinant_metric_phase",
+  "source_sha256": "3908876e7e24016bc364125e665da54b3f0277e79f0850f30bcf4a104eb875ee",
+  "mutated_sha256": "1ac37345879267faaad8f8c610fc26fffe49e41939ea977c5dcfda3d0fa75fee",
+  "old": "qz=2*(c-1j*t*np.sin(b))*np.sin(z)",
+  "new": "qz=2*(c+1j*t*np.sin(b))*np.sin(z)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mzgpn2n3/primary.py\", line 238, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mzgpn2n3/primary.py\", line 186, in run\n    close(f'projected_metric_{num}_{index}',J.T@J,G);close(f'projected_chirality_{num}_{index}',np.linalg.det(J),detJ);close(f'zero_tilt_{num}_{index}',tilt,np.zeros(3));check(f'simple_node_{num}_{index}',np.linalg.eigvalsh(G).min()>.001)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mzgpn2n3/primary.py\", line 22, in close\n    error=float(np.max(abs(np.asarray(a)-np.asarray(b))));check(name,error<tol,error=error,**detail)\n                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartet-mutation-mzgpn2n3/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('projected_metric_0_0', {'error': 0.5122947180938218})\n"
+}

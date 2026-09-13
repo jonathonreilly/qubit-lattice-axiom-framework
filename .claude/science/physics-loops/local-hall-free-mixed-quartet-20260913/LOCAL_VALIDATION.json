@@ -1,0 +1,17 @@
+{
+  "compiled": true,
+  "relative_links": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+    "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "scripts/local_hall_free_mixed_weyl_quartet_and_common_metric_2026_09_13.py",
+    ".claude/science/physics-loops/local-hall-free-mixed-quartet-20260913/REVIEW_HISTORY.md"
+  ],
+  "trailing_whitespace": false,
+  "pending": [
+    "independent review",
+    "full integrated pipeline",
+    "strict integrated lint",
+    "formal audit"
+  ]
+}

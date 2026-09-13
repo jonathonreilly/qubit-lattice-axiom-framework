@@ -1,0 +1,10 @@
+{
+  "name": "CAR_anticommutation_sign",
+  "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+  "mutated_sha256": "a131a51710979a619de41c5309af432fe5568565723af658fe863d3221beda4a",
+  "old": "(-1)**((k&((1<<j)-1)).bit_count())",
+  "new": "1",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-i1hdpczs/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-i1hdpczs/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 125, in run\n    check('CAR_bilinear_'+str(trial),np.max(np.abs(operator(br,ann)+1j*(ma@mh-mh@ma)))<1e-12)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-i1hdpczs/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('CAR_bilinear_0', {})\n"
+}

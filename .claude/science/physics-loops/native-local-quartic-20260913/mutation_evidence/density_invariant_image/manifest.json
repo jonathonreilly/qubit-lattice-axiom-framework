@@ -1,0 +1,10 @@
+{
+  "name": "density_invariant_image",
+  "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+  "mutated_sha256": "c1837bdaf830943dfbe1ecad7ebc0a79b2dd08a16207533a4a789f602131914b",
+  "old": "scale(bq/2,cross)",
+  "new": "scale(bq,cross)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-r86nos3k/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-r86nos3k/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 173, in run\n    eq('density_kernel_invariant_image',tidy({m:c.subs(imposed) for m,c in density.items()}),scale(bq,cross))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-r86nos3k/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-r86nos3k/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('density_kernel_invariant_image', {})\n"
+}

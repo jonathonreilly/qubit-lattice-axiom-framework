@@ -1,0 +1,10 @@
+{
+  "name": "native_density_stencil",
+  "original_sha256": "3e1da500540a427fdfe095da9caa788a2b63317e9a4a454193b19c273918ec14",
+  "mutated_sha256": "56dede27062eabd3ab7eb69f789e8bb8f25a8f62eb18b9a6fc2f70acc223ee38",
+  "old": "for disp,coef in [(1,.5),(2,-.5)]",
+  "new": "for disp,coef in [(1,.25),(2,-.5)]",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-rlf5jq4s/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-rlf5jq4s/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 237, in run\n    check('two_particle_density_vertex_'+str((count,idx)),abs(scaled-exact)<2e-12,actual=float(scaled),exact=float(exact),continuum_limit=float(limit))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-rlf5jq4s/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('two_particle_density_vertex_(16, 0)', {'actual': -0.003986500966504716, 'exact': -0.0031066211932611154, 'continuum_limit': -0.0028506598376733493})\n"
+}

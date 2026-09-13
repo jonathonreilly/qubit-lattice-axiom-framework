@@ -1,0 +1,10 @@
+{
+  "name": "native_valley_spinor",
+  "original_sha256": "3e1da500540a427fdfe095da9caa788a2b63317e9a4a454193b19c273918ec14",
+  "mutated_sha256": "26cea8b77429fd88c4f7274dcb069dfcd327c5a3274aab918dc9399cb593bc30",
+  "old": "*(np.array([1,-1])*vl)",
+  "new": "*(np.array([1,1])*vl)",
+  "returncode": 0,
+  "effective": false,
+  "stderr_tail": ""
+}

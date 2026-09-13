@@ -1,0 +1,10 @@
+{
+  "name": "native_Wilson_symbol",
+  "original_sha256": "3e1da500540a427fdfe095da9caa788a2b63317e9a4a454193b19c273918ec14",
+  "mutated_sha256": "1a907e0a72759057f23e641c723d962865cf9a99248e019884b32c35c887f42e",
+  "old": "2+zeta-s.cos(k1)-s.cos(k2)-s.cos(k3)",
+  "new": "2+zeta-s.cos(k1)-s.cos(k2)+s.cos(k3)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-5lu28gf7/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-5lu28gf7/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 115, in run\n    check('Wilson_node_'+str(chir),all(s.simplify(x)==0 for x in h0.subs(node)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-5lu28gf7/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Wilson_node_-1', {})\n"
+}

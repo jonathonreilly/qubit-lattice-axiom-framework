@@ -1,0 +1,17 @@
+goal: "formation-order covariance and isotropic binary order-blind classification"
+delivery_mode: milestone
+target_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+active_route: "exchange-characterization-plus-path3-polynomial"
+cycle: 1
+hard_residual: "whether a later clause selects order-blindness, joint covariant formation, a covariant order-law, or registered order"
+open_imports: []
+provisional_dependencies: []
+next_milestone: "possibility-covariance / Cl(3,0) soldering fork"
+stop_condition: "first science block is review-ready"
+actual_current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/formation-order-covariance-20260913
+baseline: origin/main b8c9d9d819

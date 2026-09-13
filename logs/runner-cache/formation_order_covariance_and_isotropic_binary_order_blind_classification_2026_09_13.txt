@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.py
+runner_sha256: f29d7caf00e609812393c08798d127550172274831d1cf27094fb7067c802d97
+input_fingerprint_sha256: 24f222b6878a3c2df06b6e89dc9948d63bad5c4d530a9bc3a33b23dbba79f569
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scientific_dependency: current minimal_axioms Lattice/Admissibility/Record clauses and realized_state_primitive
+declared_math: proper cubic rotations, finite sequential formation products, isotropic binary kernels
+PASS: audit-input-paths the note, axiom memo, and realized-state primitive are the declared source packet
+PASS: lattice-sites-clause Lattice supplies Z^3, nearest-neighbor adjacency, and proper cubic rotations
+PASS: admissibility-covariance-clause Admissibility requires one covariant nearest-neighbor rule
+PASS: admissibility-distribution-clause Admissibility supplies a local distribution that varies with neighbour conditions
+PASS: record-form-and-unreadability Record supplies formation, readability of records only, and unreadable absence
+PASS: admissibility-no-order-or-rate Admissibility supplies no record-production process, order, or rate
+PASS: realized-state-no-average the realized-state primitive supplies no measure over alternative orders
+PASS: note-contract the note states the bounded classification and witness target
+PASS: note-dependency scientific authorities are the axiom memo and the realized-state primitive; no order is selected
+PASS: proper-cubic-group the determinant-positive signed-permutation group has 24 elements
+PASS: identity-in-group the identity is a proper cubic rotation
+PASS: lemma-C-no-invariant-total-order every non-identity proper cubic rotation moves a lattice point, so an invariant total order would require x < Rx < ... < x
+PASS: ninety-degree-about-z a order-4 rotation about the z axis exists in the proper cubic group
+PASS: path3-masses every executed formation law is a probability law
+PASS: path3-ising-two-laws the six orders on the three-site path collapse to two Ising formation laws
+PASS: path3-ising-witness chain versus ends-first differs on all eight configurations, TV 9/50, all-minus 8/25 versus 4/17
+PASS: path3-constant-order-blind the constant rule gives one formation law on every path3 order
+PASS: constancy-polynomial-on-ising the path3 matching identity's residual is (pminus-pplus)^2 and is nonzero for the Ising kernel
+PASS: constancy-polynomial-identity for every sampled one-neighbour kernel, the path3 residual equals (pminus-pplus)^2 exactly
+PASS: interior-constancy the residual vanishes if and only if the one-neighbour kernel is independent of the neighbour value
+PASS: ell-shape-same-graph the perpendicular L-window is the same path graph and carries the same two Ising laws
+PASS: exchange-constant the constant kernel satisfies the adjacent-pair exchange identity through five recorded neighbours
+PASS: exchange-ising-fails the Ising kernel fails twenty-four exchange identities already at recorded-neighbour cardinalities 0 and 1
+PASS: non-two-neighbour-swap-ising swapping the first two sites of the chain keeps every recorded set of size at most one, so the Ising law is unchanged
+PASS: non-adjacent-consecutive-swap swapping two consecutive non-neighbours leaves the formation product unchanged
+PASS: cycle4-ising-four-laws the twenty-four plaquette orders collapse to four Ising formation laws of sizes 4, 4, 8, 8
+PASS: cycle4-snake-versus-opposite cyclic order versus opposite-corners differs on all sixteen configurations, TV 9/50
+PASS: cycle4-constant-one-law the constant rule is order-blind on the plaquette
+PASS: lemma-C2-pushforward the Ising formation law of a rotated order is the pushforward of the original law, and a 90-degree cyclic shift of the snake order is a different law
+PASS: rectangle-2x3-ising-twenty-eight-laws the 720 orders on the 2x3 window give twenty-eight distinct Ising formation laws
+PASS: rectangle-opposite-corners-coincide row-major and its reverse, a pair of opposite-corner monotone classes, give the same Ising law
+PASS: rectangle-corners-versus-row corners-first versus row-major differs on 44 of 64 configurations, TV 135/578
+PASS: rectangle-constant-one-law the constant rule is order-blind on the 2x3 window
+PASS: ising-varies-with-neighbours the declared Ising kernel varies with the recorded-neighbour values
+PASS: constant-does-not-vary the independent kernel is insensitive to nearest-neighbour conditions
+PASS: note-quotes-witness-numbers the note quotes the exact path3, plaquette, and 2x3 witness numbers
+PASS: note-no-order-selected the note selects neither a physical order nor a physical rule
+PASS: note-separating-clauses-not-adopted separating clauses are recorded as owner decisions and not adopted
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,17 @@
+{
+  "pr": {
+    "headRefOid": "387cffa600b3dfb319b2975a2b1ec8f6b87ddf22",
+    "isDraft": false,
+    "mergeable": "MERGEABLE",
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8099"
+  },
+  "head": "387cffa600b3dfb319b2975a2b1ec8f6b87ddf22",
+  "remote_branch": "physics-loop/local-hall-free-mixed-quartet-20260913",
+  "remote_verified": true,
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-local-hall-free-mixed-quartet-20260913",
+  "worktree_clean_before_removal": true,
+  "canonical_untracked_cache_preserved_byte_identical": true,
+  "removed": true,
+  "removed_at": "2026-09-13T21:43:54.002806+00:00"
+}

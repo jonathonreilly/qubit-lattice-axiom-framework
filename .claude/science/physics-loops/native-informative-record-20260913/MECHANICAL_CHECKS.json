@@ -1,0 +1,50 @@
+{
+  "claim_id": "native_informative_edge_record_and_disturbance_bounded_theorem_note_2026-09-13",
+  "readiness_issue": null,
+  "cache_status": "fresh",
+  "helper_runner_paths": [],
+  "input_count": 6,
+  "relative_links": 7,
+  "actual_mutants_rejected": 13,
+  "prior_mutation_diagnostic_recovered": true,
+  "manifest_delta": {
+    "added": [
+      "native_informative_edge_record_and_disturbance_bounded_theorem_note_2026-09-13"
+    ],
+    "deleted": [],
+    "modified": [],
+    "nodes": 5042,
+    "edges": 12521
+  },
+  "compiled_python_paths": [
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/Slater_normalizing_Gram/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/Slater_right_filter/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/complex_Slater_adjoint/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/full_carrier_normalization/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/general_pulse_sign/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/incident_energy_support/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/matter_control_omitted/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/noncommuting_history_order/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/old_record_preservation/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/parity_effect_orientation/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/physical_current_sign/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/selective_current_attenuation/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/mutations/zero_branch_orientation/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/FIRST_PRIMARY.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/Slater_normalizing_Gram/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/Slater_right_filter/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/complex_Slater_adjoint/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/full_carrier_normalization/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/general_pulse_sign/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/incident_energy_support/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/matter_control_omitted/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/noncommuting_history_order/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/old_record_preservation/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/parity_effect_orientation/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/physical_current_sign/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/selective_current_attenuation/mutant.py",
+    ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/zero_branch_orientation/mutant.py",
+    "scripts/native_informative_edge_record_2026_09_13.py"
+  ],
+  "validation_limits": "Focused graph-derived source/input checks only. Independent source review and the exact combined integration pipeline, strict lint and ledger-based changed-evidence gate remain pending."
+}

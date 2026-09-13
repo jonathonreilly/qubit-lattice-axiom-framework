@@ -1,5 +1,16 @@
 # Spatial truncation of native energy dressing with a retained battery
 
+**Prior-art correction after deeper dependency reading:** current main already
+contains NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md.
+It proves a sharper legal-CAR complete-law local-quench bound, full-line
+mean-energy bound, complete-law capped comparison and finite positive ladder,
+and a local feedback fiber bound. The complete-law portions below are
+rederivation/support, not newly retired obligations. The candidate extension
+here is the capped FEEDBACK generator comparison with its non-scalar loss
+and separately controlled adjoint term, plus an ambient-operator locality
+route under the supplied finite-cell assumptions. The earlier scalar-CAR
+bound should be used where its stronger hypotheses and smaller constants fit.
+
 Author derivation, 2026-09-13. Conditional-support; small exact author checks
 cover the native/Fourier core and capped algebra; independent review remains
 pending. This answers a specified approximation question
@@ -353,8 +364,10 @@ its arbitrary-volume assertions. All scientific conclusions remain
 conditional and author-proposed pending independent review.
 
 This result addresses the ambient note's named spatial-truncation step.
-Remaining work includes a finite-dimensional battery realization,
-physical battery routing and bath, renewed fuel and blank sites, a continuing
+The existing complete-law finite ladder and finite collision notes already
+address finite-time storage/bath approximation conditionally. The next step
+is to extend those results to feedback using its actual capped loss, then
+address physical battery routing, renewed fuel and blank sites, a continuing
 matter regime, and a consistent nearest-neighbor Record-content law. It does
 not decide whether a global coupled-history interpretation or local messages
 are the appropriate framework interface identified in Blocks1-2. No axiom

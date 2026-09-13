@@ -1,0 +1,73 @@
+Completed initial_cycle
+Completed old_Record_bridge
+{
+  "status": "small_native_feedback_checks_passed",
+  "author_check_only": true,
+  "source_sha256": "ba8be2e64d9f126623da49a9a14205b0256d24b7db880abfd7c8d2667ee434f0",
+  "fixtures": {
+    "initial_cycle": {
+      "system_dimension": 96,
+      "explicit_unitary_dimension": 288,
+      "original_free_jump_commutator": 0.47140452079103173,
+      "initial_hazard": 0.3333333333333334,
+      "rows": [
+        {
+          "h": 0.04,
+          "original_free_trace_norm_error": 0.00035115416428026453,
+          "dissipative_trace_norm_error": 0.00023784136120813467,
+          "wrong_free_trace_norm_error": 0.02640226406065241
+        },
+        {
+          "h": 0.02,
+          "original_free_trace_norm_error": 8.833725726584368e-05,
+          "dissipative_trace_norm_error": 6.0082359833572564e-05,
+          "wrong_free_trace_norm_error": 0.01326695076188531
+        },
+        {
+          "h": 0.01,
+          "original_free_trace_norm_error": 2.215317729686785e-05,
+          "dissipative_trace_norm_error": 1.5099077696680836e-05,
+          "wrong_free_trace_norm_error": 0.006650035579989333
+        }
+      ]
+    },
+    "old_Record_bridge": {
+      "system_dimension": 96,
+      "explicit_unitary_dimension": 288,
+      "original_free_jump_commutator": 0.47140452079103173,
+      "initial_hazard": 0.3333333333333333,
+      "rows": [
+        {
+          "h": 0.04,
+          "original_free_trace_norm_error": 0.0003511541642802028,
+          "dissipative_trace_norm_error": 0.00023784136120813448,
+          "wrong_free_trace_norm_error": 0.026402264060652277
+        },
+        {
+          "h": 0.02,
+          "original_free_trace_norm_error": 8.833725726589123e-05,
+          "dissipative_trace_norm_error": 6.0082359833573384e-05,
+          "wrong_free_trace_norm_error": 0.013266950761885325
+        },
+        {
+          "h": 0.01,
+          "original_free_trace_norm_error": 2.2153177296855968e-05,
+          "dissipative_trace_norm_error": 1.5099077696680828e-05,
+          "wrong_free_trace_norm_error": 0.006650035579989281
+        }
+      ]
+    }
+  },
+  "check_count": 100,
+  "maximum_equality_residual": 1.776547415467855e-15,
+  "runtime_seconds": 0.09715970797697082,
+  "peak_RSS_MiB": 79.75,
+  "resources": {
+    "finite_battery_levels": 124160,
+    "storage_qubits": 49,
+    "collision_count": 5401,
+    "retained_qubits_total": 32455,
+    "combined_trace_norm_upper_bound": "379/6400"
+  },
+  "scope": "Small state-specific native witnesses and exact resource arithmetic; general channel proof is analytical."
+}

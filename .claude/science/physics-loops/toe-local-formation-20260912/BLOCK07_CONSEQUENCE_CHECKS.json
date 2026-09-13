@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "scope": "exact Laurent static identities and finite algebraic rank fixtures; same author, no physical graviton conclusion",
+  "checks": [
+    "all_phase_exponent_body",
+    "all_phase_exponent_gauge",
+    "geometric_all_phase_exponent_source",
+    "geometric_all_phase_static_poisson",
+    "wrong_poisson_sign_rejected",
+    "constant_mode_any_exponent",
+    "phi_gauge_annihilation_all_phases",
+    "psi_gauge_annihilation_all_phases",
+    "phi_endpoint_mean",
+    "psi_endpoint_mean",
+    "hyperdiagonal_readout_zero",
+    "scalar_seam_periodicity_0",
+    "scalar_seam_periodicity_1",
+    "scalar_seam_periodicity_2",
+    "exact_rank_origin",
+    "exact_rank_static_axis_nyquist",
+    "exact_rank_static_two_components",
+    "exact_rank_complex_axis_shell",
+    "exact_rank_complex_axis_off_shell",
+    "direct_fierz_operator_rank_nonnull",
+    "direct_fierz_gauge_nonnull_0",
+    "direct_fierz_gauge_nonnull_1",
+    "direct_fierz_gauge_nonnull_2",
+    "direct_fierz_gauge_nonnull_3",
+    "direct_fierz_operator_rank_null",
+    "direct_fierz_gauge_null_0",
+    "direct_fierz_gauge_null_1",
+    "direct_fierz_gauge_null_2",
+    "direct_fierz_gauge_null_3",
+    "source_inverse_normalization",
+    "source_reciprocity",
+    "missing_offdiagonal_source_factor_rejected"
+  ],
+  "count": 32,
+  "rank_fixtures": [
+    {
+      "fixture": "origin",
+      "rank": 4,
+      "expected": 4
+    },
+    {
+      "fixture": "static_axis_nyquist",
+      "rank": 10,
+      "expected": 10
+    },
+    {
+      "fixture": "static_two_components",
+      "rank": 10,
+      "expected": 10
+    },
+    {
+      "fixture": "complex_axis_shell",
+      "rank": 8,
+      "expected": 8
+    },
+    {
+      "fixture": "complex_axis_off_shell",
+      "rank": 10,
+      "expected": 10
+    }
+  ],
+  "source_sha256": "52731f30755c8f4d7c4c403e59a2bc23f494eca2412aaf9d80f4114563e17c08",
+  "local_derivation_sha256": "b743b0548c9d6cc2c0c794d2ca0bac832be1705d9e2b2da6291910ead99cc770",
+  "elapsed_sec": 23.975204709044192
+}

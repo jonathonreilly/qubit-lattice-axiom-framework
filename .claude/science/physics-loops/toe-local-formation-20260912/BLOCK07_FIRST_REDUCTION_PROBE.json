@@ -1,0 +1,53 @@
+{
+  "scope": "four floating-point fixtures, not a global proof",
+  "rows": [
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_residual": 2.220446049250313e-16,
+      "body_block_residual": 0.0,
+      "body_constraint_residual": 0.5000000000000001,
+      "gauge_constraint_residual": 0.0
+    },
+    {
+      "k": [
+        0.37,
+        -0.81,
+        0.22,
+        0.29
+      ],
+      "full_residual": 6.661421308126934e-16,
+      "body_block_residual": 1.1102812021079894e-16,
+      "body_constraint_residual": 0.5000000000000001,
+      "gauge_constraint_residual": 5.117875266520904e-16
+    },
+    {
+      "k": [
+        0.013,
+        0.007,
+        -0.02,
+        0.0
+      ],
+      "full_residual": 4.440896205953783e-16,
+      "body_block_residual": 1.1102231762538373e-16,
+      "body_constraint_residual": 0.5000000000000001,
+      "gauge_constraint_residual": 2.2556285108204317e-16
+    },
+    {
+      "k": [
+        3.141592653589793,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_residual": 2.220446049250313e-16,
+      "body_block_residual": 8.154361219414259e-34,
+      "body_constraint_residual": 0.5000000000000001,
+      "gauge_constraint_residual": 0.0
+    }
+  ]
+}

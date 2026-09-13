@@ -1,0 +1,41 @@
+{
+  "main_revision": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "sources": [
+    {
+      "path": "docs/THE_REGGE_SECOND_VARIATION_ON_THE_4D_CUBIC_COXETER_COMPLEX_CARRIES_A_NATIVE_LINEARISED_GRAVITON_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "aad9fa7b70fe00a18ea627248270c4d47250ff214e98d2ae2466760ad2084bf8",
+      "role": "main context or independently constructed geometry comparator; historical broad status not inherited",
+      "coverage": "notes fully read; geometry callable closure through box_action read, main not called"
+    },
+    {
+      "path": "docs/THE_FORMATION_RATE_DEFINES_THE_STATIC_REGGE_EDGE_LENGTHS_EXACTLY_REGGE_IS_THE_LATTICE_POISSON_EQUATION_AND_FORCES_NU_R_EQUAL_ONE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "45105f11c6691355252339d7886f842cf2d49288cff0dfd39d0f1beb7b042fd6",
+      "role": "main context or independently constructed geometry comparator; historical broad status not inherited",
+      "coverage": "notes fully read; geometry callable closure through box_action read, main not called"
+    },
+    {
+      "path": "docs/THE_SPATIAL_HALF_OF_THE_METRIC_IS_ONE_DECLARED_WEIGHT_ON_THE_HOP_TERM_FREE_FALL_AND_LIGHT_BENDING_AT_FACTOR_TWO_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "c27e83f4d8f3fe21113a4f09d2f816591679854a31ba93d8d8c5ad8e23f81324",
+      "role": "main context or independently constructed geometry comparator; historical broad status not inherited",
+      "coverage": "notes fully read; geometry callable closure through box_action read, main not called"
+    },
+    {
+      "path": "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+      "sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+      "role": "main context or independently constructed geometry comparator; historical broad status not inherited",
+      "coverage": "notes fully read; geometry callable closure through box_action read, main not called"
+    }
+  ],
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/html/1011.3667v2",
+      "coverage": "section 6.1 through 6.11 and Appendix A through A.12 read; not full paper",
+      "role": "prior art for discrete metric and Regge reduction"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2105.10808",
+      "coverage": "section IV.B.5 read, PDF pp9-10; not full paper",
+      "role": "prior art for hyperdiagonal/body elimination; action convention rederived locally"
+    }
+  ]
+}

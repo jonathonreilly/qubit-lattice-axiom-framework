@@ -51,3 +51,58 @@ check_block06_chart.py passed43 groups on its first fixed run, exact noncommutin
 Next: prepare a coherent milestone, starting feedback apparatus Blocks3–4 whose parents are on main, and perform a separate author proof pass on Block5. Do not deepen an unreviewed large consequence chain. Then choose a genuinely new reciprocal source/geometry residual from the campaign, not another relabelled Gaussian bound. Current-main SCIENCE_WORKFLOW and full PR_CONFORMANCE_SPEC have been reread for packaging: focused source checks per unit; full mechanical pipeline is shared at integration, not a mandatory per-unit run. No PR, push, merge, formal audit or editable prompt change yet. The status spec's old proposed_retained-only wording must be reconciled with current owner workflow/status authorities; do not silently promote conditional work.
 
 Lock refreshed01:58:08UTC, expires02:58:08UTC. Deadline remains11:38:24UTC. Recovery heartbeat remains active; no subagents. Continue personally.
+
+
+Milestone handoff at 02:48 UTC: PR8084 is OPEN and ready for independent source
+review, head e56bca5c4edc48d279de8d13edb3884e7b8d8479, base main cda8b144.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8084
+Focused worktree /Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913
+contains the finite occupation-feedback apparatus theorem and 152 checks.
+An author loss regrouping improves 6 ell e to 4 ell e; delta 1/1280, n2161
+now suffice for trace-norm error <15/256 and 13015 stored qubits. Original free
+A is preserved; collision ancillas are traced in the compared channel. Seven
+actual mutations fail, both helpers are graph-attached, the manifest adds only
+one node/four intended edges, cache binding is current, and focused checks pass.
+Full integration and independent review remain pending. No agents, audit or
+main merge occurred. Campaign branch a30bf0 and focused branch e56bca5 are pushed.
+
+Next: separate author proof pass on Block5, then fresh reciprocal matter/geometry
+source. Current-main Regge notes have been located but not newly read yet.
+Lock refreshed 02:44:50 UTC, expires 03:44:50 UTC. Deadline 11:38:24 UTC unchanged.
+
+
+Block7 author milestone at 03:08 UTC: BLOCK07_DERIVATION.md derives an exact
+Regge reduction in squared-edge variables, with a rational 10x10 single-simplex
+Hessian (1/48 integer table), summed over 24 anchored paths. Four body variables
+r_A=q_A-1/2 sum_pairs(1+z_complement)q_pair+1/2 sum_i(z_j+z_k)q_i have block
+-I/2; hyperdiagonal is exactly zero. Ten axis/face coordinates, with explicit
+half-phase correction, give the ordinary Fierz–Pauli quadratic at p=2sin(k/2).
+This reduction is established prior art; new repo-facing work supplies exact
+normalization and the missing source/readout identities. No discovery priority
+is claimed. Primary sections and main source hashes are in BLOCK07_SOURCE_MANIFEST.
+
+Full ranks: 10 for Delta!=0, 8 for nonzero complex-null p, 4 at origin. Thus
+for real spatial k and positive imaginary-time frequency, exactly one rank-drop
+branch 4sinh²(omega/2)=sum_i4sin²(k_i/2), with origin exception explicit. This
+is algebraic, not a physical Hilbert-space/OS graviton. The dynamical metric
+lift differs from the disproved old line-map intersection; that finding stays.
+
+The endpoint-mean field has r=0 and is gauge-equivalent in the new coordinates
+to diag(-2Phi,-2Phi,-2Phi,2Phi). Therefore Q_l dl=2 Delta_lat Phi e_t holds
+at every static momentum/periodized stencil. Exact kernel-invariant readouts
+Phi=Htt/2 and Psi=-tr(Psp Hsp)/4 agree on every solution, including arbitrary
+gauge/hyperdiagonal additions. They use the new metric coordinates, not the
+old pinv(M_AM). The generalized nu family has Ttt=-nu Delta Phi and
+Tij=(1-nu)Phi(Delta deltaij-pipj)/2; no spatial stress at any nonzero field
+mode forces nu1. Constant/zero fields and balancing stress remain exceptions.
+
+check_block07_laurent.py passes the full 225-entry exact Laurent identity plus
+12 named checks; maximum global entry has four monomials. Its independent local
+barycentric-normal derivation uses no floating angles. check_block07_consequences.py
+passes 32 checks in23.98s, including all-phase source/exponent/readout identities,
+seam invariance, five full exact ranks and a separate tensor-operator construction.
+A four-point comparison to the original geometric helper agrees below7e-16.
+The first body-row-only probe had reverse index order and reported1/2; original
+probe/JSON are preserved, corrected ordering agrees below3e-16 without formula
+changes. These are author checks, no external review. Cold proof pass/package
+is next; physical matter-source selection, clocks and nonlinear closure stay open.

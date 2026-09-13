@@ -366,8 +366,8 @@
       "name": "finite_solution_nonzero"
     }
   ],
-  "elapsed_seconds": 0.506729541986715,
-  "source_sha256": "4c65dd1e18aaebceb65f0b6f68f39fe594952a5bd4dac4b196ffc250c50553eb",
+  "elapsed_seconds": 0.5409422920201905,
+  "source_sha256": "f79af92cdf140eb099140a61e26b3bc0eff592a2b6f12f62d2a4e7ecd623d77e",
   "momentum_rows": [
     {
       "q_over_2pi": [

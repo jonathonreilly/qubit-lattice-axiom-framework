@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": 91,
+  "elapsed_seconds": 0.5409422920201905,
+  "source_sha256": "f79af92cdf140eb099140a61e26b3bc0eff592a2b6f12f62d2a4e7ecd623d77e",
+  "curvature": {
+    "A": {
+      "finite_difference": -0.6819722624971679,
+      "spectral": -0.6819722585939432
+    },
+    "C": {
+      "finite_difference": 2.015048409678802,
+      "spectral": 2.015048408464571
+    }
+  },
+  "bond_means": [
+    -0.2501750459440926,
+    -0.2501750459440926,
+    -0.1106872020501117
+  ],
+  "I1_finite": 0.49617184293692085,
+  "static_solution": {
+    "norm": 0.0024470669472923716,
+    "min_lapse": 0.9998667985469489,
+    "objective": -8.99109857454854e-06,
+    "gradient_max": 5.473105980957822e-11
+  },
+  "scope": "Finite free author challenges. Interacting finite Kato and code checks still separate. IR and convexity are analytical proofs, not proved by these finite cases."
+}

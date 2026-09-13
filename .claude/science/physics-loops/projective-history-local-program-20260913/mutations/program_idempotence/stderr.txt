@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_program_idempotence.py", line 351, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_program_idempotence.py", line 221, in run
+    checked('malformed_program_is_not_accepted',decode(3*I) is None and decode(T) is None and decode(X) is None)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_program_idempotence.py", line 157, in checked
+    assert bool(condition),name
+           ~~~~^^^^^^^^^^^
+AssertionError: malformed_program_is_not_accepted

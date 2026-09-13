@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_complement_probability.py", line 351, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_complement_probability.py", line 219, in run
+    checked('program_local_law_'+str(p),mu=={q:w for q,w in ((P,p),(clean(I-P),1-p)) if w!=0})
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_complement_probability.py", line 157, in checked
+    assert bool(condition),name
+           ~~~~^^^^^^^^^^^
+AssertionError: program_local_law_0

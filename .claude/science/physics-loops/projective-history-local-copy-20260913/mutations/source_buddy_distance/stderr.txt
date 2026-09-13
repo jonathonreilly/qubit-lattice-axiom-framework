@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_source_buddy_distance.py", line 449, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_source_buddy_distance.py", line 300, in run
+    checked('all_prepared_records_have_current_support', all(value in support(site, prepared) for site, value in prepared.items()))
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_source_buddy_distance.py", line 109, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: all_prepared_records_have_current_support

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_neighbor_multiplicity.py", line 449, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_neighbor_multiplicity.py", line 297, in run
+    checked('empirical_measure_retains_neighbor_multiplicity', measure((0, 0, 0), duplicate_fixture) ==
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            {proj(Z, 1): sp.Rational(2, 3), proj(Z, -1): sp.Rational(1, 3)})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_neighbor_multiplicity.py", line 109, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: empirical_measure_retains_neighbor_multiplicity

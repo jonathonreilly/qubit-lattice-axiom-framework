@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/check_block19_programs.py", line 309, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/check_block19_programs.py", line 282, in run
+    _,_,physical=simulate(name+('_reverse' if reverse else '_forward'),programs,4,independent)
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/check_block19_programs.py", line 181, in simulate
+    p,P=decode(value);outcome=P if bits[j-1]==0 else clean(I-P)
+    ^^^
+TypeError: cannot unpack non-iterable NoneType object

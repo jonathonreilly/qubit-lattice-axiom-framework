@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_content_readout_axis.py", line 449, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_content_readout_axis.py", line 250, in run
+    checked('fixed_content_only_readout_for_all_Bell_projectors',
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            all(sp.sign(scalar(sp.trace(comparison_readout * projectors[0, w, a, s]))) == s
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                for w, a, s in product(range(2), range(2), SIGNS)))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_content_readout_axis.py", line 109, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: fixed_content_only_readout_for_all_Bell_projectors

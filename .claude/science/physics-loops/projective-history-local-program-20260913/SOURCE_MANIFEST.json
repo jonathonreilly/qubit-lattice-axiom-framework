@@ -1,0 +1,25 @@
+{
+  "campaign_revision": "66324ae6bf80434d376a48f32656dabafb74a41b",
+  "base_main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "existing_projective_pr_head": "cead7eefc97b7d6884ca280599e53165ffcd8da5",
+  "role": "Recoverable discovery provenance only; all proof and runtime inputs are on main or in this delta.",
+  "sources": [
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK19_DERIVATION.md",
+      "sha256": "8f7710c8920aca9cb3a8dc78b139b461e6b82aed570eb457e84a2d91adf04145"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/check_block19_programs.py",
+      "sha256": "ed2bc77bc08701849855a74fe5cc803a4dc258461e2a46109a317a768d352dfb"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK19_PROGRAM_CHECKS.json",
+      "sha256": "a54465b4af347c6a6a6b287eb27cea71c2232710779bb158aeea513ad9853d79"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK19_COLD_AUTHOR_REVIEW.md",
+      "sha256": "445853271777a07e11d9a54eb74823eede0830d4ed13eed7a56ae51d4813d692"
+    }
+  ],
+  "parent_source_sha256": "3a86afdafa20f79080a3b0b225cf52eb23cc628ec2810683ea7cba5c468a74c8"
+}

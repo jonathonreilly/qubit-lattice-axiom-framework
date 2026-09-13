@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_trigger_buddy.py", line 351, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_trigger_buddy.py", line 239, in run
+    ready,last,weights=simulate('adaptive_five_event',generic,N)
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_trigger_buddy.py", line 174, in simulate
+    checked(name+'_all_initial_support',all(supported(site,ready) for site in ready))
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_trigger_buddy.py", line 157, in checked
+    assert bool(condition),name
+           ~~~~^^^^^^^^^^^
+AssertionError: adaptive_five_event_all_initial_support

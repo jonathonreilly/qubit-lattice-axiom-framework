@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_complex_amplitude_adjoint.py", line 351, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_complex_amplitude_adjoint.py", line 296, in run
+    _,_,physical=simulate(name+('_reverse' if reverse else '_forward'),programs,4,independent)
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_complex_amplitude_adjoint.py", line 207, in simulate
+    if expected is not None:assert scalar(mass-expected(bits))==0,'independent_cylinder_weight'
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: independent_cylinder_weight

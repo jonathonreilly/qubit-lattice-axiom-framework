@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_complex_adjoint.py", line 449, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_complex_adjoint.py", line 170, in run
+    assert direct_density == child
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

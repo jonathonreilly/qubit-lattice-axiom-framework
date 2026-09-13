@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_preparation_block_index.py", line 449, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_preparation_block_index.py", line 305, in run
+    checked('four_physical_record_blocks_reconstruct_preparation', reconstructed == rho)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_preparation_block_index.py", line 109, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: four_physical_record_blocks_reconstruct_preparation

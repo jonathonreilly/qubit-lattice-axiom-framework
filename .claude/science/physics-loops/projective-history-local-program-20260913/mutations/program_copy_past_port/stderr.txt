@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_program_copy_past_port.py", line 351, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_program_copy_past_port.py", line 239, in run
+    ready,last,weights=simulate('adaptive_five_event',generic,N)
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_program_copy_past_port.py", line 183, in simulate
+    assert target==site and mu=={value:1},'actual_single_predecessor_copy_measure'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: actual_single_predecessor_copy_measure

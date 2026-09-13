@@ -1,0 +1,104 @@
+{
+  "base_sha256": "2ab609e5f2d06c60e051763ba1eeb9c2d680578a002ec0b066456d78be71800a",
+  "elapsed_seconds": 7.630292000016198,
+  "mutations": [
+    {
+      "name": "ring_chord_shift",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "9dced369967df7a18a09038f152ec6e9ddf05e0fab2eb348192b6ee0e78f07cd",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.py\", line 202, in run_checks\n    check(abs(samples[-1]['correction_over_g']-2**(-5/4))<.004,'formal ground coefficient numerical challenge only')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: formal ground coefficient numerical challenge only\n"
+    },
+    {
+      "name": "ring_electric_factor",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "60003452c1605bc1152c869e7b14ad57ff16ad00b2a8f8e81205f68b1c6f370d",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.py\", line 199, in run_checks\n    check(abs(samples[-1]['levels'][0]+2*np.sqrt(2))<.005,'sampled ring minimum limit')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: sampled ring minimum limit\n"
+    },
+    {
+      "name": "ring_car_sign",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "22f3cac9616171e2e9a6cacedafdca8db9da11493508ceded1875e9db5d8f3b2",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.py\", line 199, in run_checks\n    check(abs(samples[-1]['levels'][0]+2*np.sqrt(2))<.005,'sampled ring minimum limit')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: sampled ring minimum limit\n"
+    },
+    {
+      "name": "twist_removed",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "4994c02fda8de770371bc79f7d14b420a5ec17c8898e2d0a6abb0cc42dfd16ce",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.py\", line 168, in run_checks\n    check(difference[1]<Q(-14424,10000),'strict actual-carrier twist improvement')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: strict actual-carrier twist improvement\n"
+    },
+    {
+      "name": "radical_sine_square",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "0c5362e093a57a888e740bbaf9d1f3b4f85cce7bc4b10c2c4fb4f4e910c6d132",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.py\", line 168, in run_checks\n    check(difference[1]<Q(-14424,10000),'strict actual-carrier twist improvement')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: strict actual-carrier twist improvement\n"
+    },
+    {
+      "name": "radical_inner_coefficient",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "a8fa0501e6267cc3529859ce79f4b27ad22b49ac065666540d0b107c123d5852",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.py\", line 168, in run_checks\n    check(difference[1]<Q(-14424,10000),'strict actual-carrier twist improvement')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: strict actual-carrier twist improvement\n"
+    },
+    {
+      "name": "root_lower_shift",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "303899a87862d2f51f4736d07b99192a756b7bef30b023ebb80407fbeae715a7",
+      "failure_tail": "     ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.py\", line 166, in run_checks\n    zero=energy_interval(False);twist=energy_interval(True)\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.py\", line 39, in energy_interval\n    ulo,uhi=sqrt_interval(U)\n            ~~~~~~~~~~~~~^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.py\", line 24, in sqrt_interval\n    check(lo*lo<=value<=hi*hi,'integer-certified square-root enclosure')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: integer-certified square-root enclosure\n"
+    },
+    {
+      "name": "root_upper_shift",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "6e5b48d559a8b1ee63951c0ce337dc827e1bc4c92abc7575244eedc5032278d5",
+      "failure_tail": "uments/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.py\", line 166, in run_checks\n    zero=energy_interval(False);twist=energy_interval(True)\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.py\", line 40, in energy_interval\n    pluslo,_=sqrt_interval(S+2*ulo);_,plushi=sqrt_interval(S+2*uhi)\n             ~~~~~~~~~~~~~^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.py\", line 24, in sqrt_interval\n    check(lo*lo<=value<=hi*hi,'integer-certified square-root enclosure')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: integer-certified square-root enclosure\n"
+    },
+    {
+      "name": "bloch_twist_factor",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "9ad1e320e05db7d21336f84c38eab03e2e78a94d4785a924cd7d96e323c76adc",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.py\", line 172, in run_checks\n    check(abs(direct-bloch_value)<1e-10,'independent full site versus Bloch spectrum')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: independent full site versus Bloch spectrum\n"
+    },
+    {
+      "name": "site_twist_factor",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "8c1c24537c96945c3f4bd1951263a52e95135deda2d7fffe1e81d364a3e1f729",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.py\", line 172, in run_checks\n    check(abs(direct-bloch_value)<1e-10,'independent full site versus Bloch spectrum')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: independent full site versus Bloch spectrum\n"
+    },
+    {
+      "name": "clifford_cross_sign",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "0e83025a9a6d6c0d77ec13630ccc51a9da48b0e79c2bba5e212d9dde4cdd3132",
+      "failure_tail": "r-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.py\", line 165, in run_checks\n    square_and_metric_checks()\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.py\", line 152, in square_and_metric_checks\n    check((h*h-expected).applyfunc(sy.expand)==sy.zeros(4),'exact symbolic mixed-carrier square')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: exact symbolic mixed-carrier square\n"
+    },
+    {
+      "name": "normal_metric",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "f130b9b448e159d2adcbc1b78fd3d768a7df6648e53d27752cf4a1a60363272e",
+      "failure_tail": "onreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.py\", line 165, in run_checks\n    square_and_metric_checks()\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.py\", line 159, in square_and_metric_checks\n    check(L*K*L.T==4*sy.eye(2),'mixed normal/tangent metric diagonalization')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: mixed normal/tangent metric diagonalization\n"
+    },
+    {
+      "name": "filled_ring_formula",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "93903aa939bf52e4670bdd25540d9d64e9528e504bbbede8c4cd004c464d0267",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.py\", line 175, in run_checks\n    check(abs(free(theta)+2*(np.cos(theta/4)-np.sin(theta/4)))<2e-12,\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          'direct ring one-particle matrix versus analytic filled-band energy')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: direct ring one-particle matrix versus analytic filled-band energy\n"
+    },
+    {
+      "name": "slow_gap_normalization",
+      "effective_mathematical_failure": true,
+      "returncode": 1,
+      "source_sha256": "15638ce9b8b1ef33131ca8524d4659e7d447a8c51ce6fb5d8a31ffae69ea7d45",
+      "failure_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.py\", line 215, in <module>\n    if __name__=='__main__':run_checks()\n                            ~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.py\", line 203, in run_checks\n    check(abs(samples[-1]['gap_over_g']-2**(1/4))<.001,'formal slow-gap coefficient numerical challenge only')\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913/.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.py\", line 16, in check\n    assert ok,label\n           ^^\nAssertionError: formal slow-gap coefficient numerical challenge only\n"
+    }
+  ]
+}

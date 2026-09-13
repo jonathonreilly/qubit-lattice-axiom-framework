@@ -1,0 +1,172 @@
+from pathlib import Path
+import shutil,json,gzip
+cp=Path('/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913')
+wt=Path('/Users/jonreilly/Documents/Codex/toe-flat-holonomy-spectral-floor-20260913')
+p=wt/'.claude/science/physics-loops/flat-holonomy-spectral-floor-20260913';p.mkdir(parents=True,exist_ok=True)
+note=wt/'docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md'
+front='''---
+claim_id: flat_holonomy_minimization_and_periodic_spectral_floor_bounded_theorem_note_2026-09-13
+claim_type: bounded_theorem
+claim_scope: "For supplied charged rotor Hamiltonians, derive a ring holonomy-minimization limit and loop concentration, and propose the leading fixed-volume periodic spectral floor from normal oscillators and flat-connection matter energies. An exact rational certificate shows a nonidentity flat twist lowers the specified 3-cubed mixed-carrier free energy. Ring joint cutoff convergence and periodic iterated cutoff recovery are distinguished. No thermodynamic charged phase, uniform finite-payload rate, common interacting cone, Hamiltonian selection or axiom update is claimed."
+upstream_dependencies:
+  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
+runner: scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py
+---
+
+# Flat holonomies and the finite-volume spectral floor
+
+**Date:** 2026-09-13
+**Type:** bounded_theorem
+**Status:** proposed_retained
+
+Flat global holonomies survive local plaquette constraints and can change
+the weak-coupling matter vacuum. An exact charged-ring argument gives
+convergence of every fixed low eigenvalue to the minimum over holonomies,
+with loop concentration at pi in the stated example. The periodic rotor
+extension below adds normal gauge oscillators and gives a proposed leading
+spectral floor. A strict finite-box comparison in the actual mixed carrier
+demonstrates why the identity comparator cannot be assumed to minimize it.
+
+~~~yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+claim_type_reason: "Exact ring min-max and concentration, proposed finite-volume localization theorem, and rationally certified flat-twist comparison."
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "Retain global flat gauge degrees of freedom when identifying the charged periodic weak-coupling vacuum."
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "Derive the slow holonomy Hamiltonian and its volume dependence, then separate those levels from transverse and charged excitation observables."
+conditional_surface_status: conditional-support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+~~~
+
+The [minimal framework memo](MINIMAL_AXIOMS_2026-06-29.md),
+[edge matter construction](NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md)
+and [current integer-link source](THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md)
+are conditional comparison context. Graph, CAR representation, reference
+charge, time and Hamiltonian coefficients remain supplied. All operators
+and the relevant proofs are stated below; unmerged campaign notes are not
+theorem premises. No axiom, approved primitive or audit verdict is changed.
+
+Flux minimization is an established problem. [Nakano](https://arxiv.org/pdf/math-ph/0006022),
+sections 1-2, studies a spinful Hubbard ring using occupation-graph fluxes.
+Its particle-count formula is not imported into the spinless two-particle
+example below, which is diagonalized directly. Semiclassical localization
+near manifolds of minima is also established methodology; the present
+fixed-graph argument spells out its normal metric, constant connection and
+partition estimates instead of importing a differently scoped phase theorem.
+
+'''
+body=(cp/'BLOCK15_DERIVATION.md').read_text().split('\n',1)[1]
+tail='''
+
+## No-Go Discipline Gate
+
+These are constructive finite-volume comparisons with narrow exclusions of
+particular vacuum identifications. The broader charged phase remains open.
+
+**N1 — Distinct actual attack routes.**
+
+| Route | Mechanism and actual disposition | Marker |
+|---|---|---|
+| Exact ring Gauss/Fourier representation | Retains the global angle and occupation-dependent connection; the identity comparator alone omits a physical degree of freedom. | ATTEMPTED |
+| Variational spectral and concentration argument | Gives every fixed ring level's limiting floor and loop concentration with an explicit finite-cutoff core argument. | ATTEMPTED |
+| Normal/tangent localization of the periodic rotor | Gives the proposed normal-oscillator plus minimum-matter floor; slow effective dynamics and growing-volume control are not derived. | ATTEMPTED |
+| Mixed-cycle kinetic-coordinate test | An exact transformed wedge model distinguishes the correct normal frequency from a wrongly used Schur complement. | ATTEMPTED |
+| Algebraic mixed-carrier twist certificate | Exact rational square-root enclosures certify a strict nonidentity improvement at L=3; they do not locate the global minimum. | ATTEMPTED |
+| Separate real-space, Bloch and finite charged spectra | Independent matrix constructions challenge the algebra and sampled limiting behavior; samples do not establish arbitrary-volume rates. | ATTEMPTED |
+
+These formulations differ in object and proof mechanism. Their count is a
+procedural record, not an exhaustive search against alternative phases.
+
+**N2 — Implication audit.**
+
+| Results or targets | Established relation | Unresolved relation |
+|---|---|---|
+| Ring limit and periodic floor | The ring shows why a flat direction changes fixed-index comparison; the periodic argument additionally controls normal modes. | A ring calculation alone does not establish that additional control. |
+| Periodic floor and strict carrier comparison | Together they exclude the identity twist as the automatic matter-energy minimum for the specified 3-cubed comparator. | They do not determine the global minimizing twist or slow spectrum. |
+| Finite-volume floor and thermodynamic charged phase | No uniform growing-volume estimate is supplied. | Neither equivalence nor independence is asserted. |
+| Thermodynamic phase and common interacting cone | Both remain research targets in the specified model. | No implication in either direction is established here. |
+
+No independent-wall count is assigned to unknown relations or downstream
+corollaries.
+
+**N3 — Hidden-premise scan.** The graph topology, nonempty fixed-number
+sector, rotor family, charge offsets, weights, Hamiltonian time and matter
+matrices are explicit. The ring has no magnetic plaquette; its loop is a
+global variable. The periodic theorem uses untruncated rotors and an iterated
+finite-cutoff recovery, while the ring admits the stronger stated joint
+sequence. Fixed volume, finite-dimensional matter, compact angle space,
+primitive topological characterization and positive normal Hessian are
+load-bearing. No isolated matter band on the full flat torus is assumed.
+Formal slow-gap coefficients are labeled as unproved asymptotics.
+
+**N4 — Residual matching.** Framework sources provide comparison context,
+not no-go witnesses against other encodings. Nakano's spinful Hubbard formula
+is not a premise for the spinless ring or the mixed four-orbital torus.
+The strict twist witness compares two free flat backgrounds, not two complete
+interacting ground states. Its use in the latter limit is conditional on the
+periodic localization argument. No historical obstruction is promoted to an
+axiom-level impossibility result.
+
+**N5 — Resolution audit.** Per element, integer square-root enclosures and
+unit link phases are checked. Per site, separate CAR and full site matrices
+are checked. Per mode, analytic ring branches and the normal kinetic factor
+are checked; slow coefficients receive numerical challenges only. Per block,
+the actual 3-cubed strict energy difference is certified. Lattice wide, the
+periodic theorem quantifies over a fixed finite box; thermodynamic charged
+correlations, common-cone attraction and a uniform payload rate remain open.
+
+**N6 — Partial closure and conventions.** Choosing a different energy zero
+does not remove the difference between two flat matter backgrounds or change
+loop concentration. Keeping the holonomy variable resolves the comparator
+omission without adding a framework axiom. Fixing a holonomy externally,
+changing boundary conditions or encoding a different gauge model changes
+the declared comparison domain; those remain possible research routes.
+
+**N7 — Steelman.** Global holonomy effects can be finite-size effects in
+local observables, and a charged Coulomb phase can coexist with slow global
+levels. The present result makes that separation a proof obligation rather
+than arguing against the phase. A successful uniform correlation or effective
+Hamiltonian derivation could close a broader target without contradicting
+any ring or finite-box witness here.
+
+**N8 — Cross-cycle echo.** The open-box campaign obtained a discrete
+oscillator/matter spectrum after exact Gauss reduction. This note restores
+the periodic topological sector and identifies its different limiting
+observable. It does not count the same thermodynamic gap again as a new wall
+or treat multiple author artifacts as independent acceptance.
+
+## Checks and review boundary
+
+The primary checks the mixed-carrier square symbolically, the three Clifford
+coefficients and spectral anti-symmetry. Integer arithmetic certifies the
+nested-radical energy interval and its strict difference. Separate 108-by-108
+site and four-by-four Bloch matrices challenge the identification. Separate
+six-state CAR matrices challenge the ring Fourier potential. Charged finite
+ring spectra and loop expectations challenge the rate-free limit and the
+explicitly formal next-order coefficients. An exact mixed-coordinate metric
+fixture challenges the normal kinetic reduction.
+
+These checks do not prove localization, min-max, the global twist minimum,
+all matrix dimensions, an asymptotic rate or a thermodynamic phase. The proof
+and its exact hypotheses carry those proposed analytic statements. Raw
+exploration, certificate endpoints, source history and deliberate incorrect
+formula checks are preserved in the branch packet. All development and
+source review were personal author work. Independent review, full integrated
+validation and formal audit remain pending.
+'''
+note.write_text('\n'.join(x.rstrip() for x in (front+body+tail).splitlines())+'\n')
+for f in cp.iterdir():
+ if f.name.startswith(('BLOCK15_','block15_','check_block15_')) and f.is_file():shutil.copy2(f,p/f.name)
+shutil.copy2('/tmp/make_block15_primary.py',p/'make_primary.py')
+shutil.copy2('/tmp/package_block15.py',p/'package_source.py')
+(p/'FIRST_PRIMARY.stdout').write_bytes(Path('/tmp/block15_primary.stdout').read_bytes())
+(p/'FIRST_PRIMARY.stderr').write_bytes(Path('/tmp/block15_primary.stderr').read_bytes())
+(p/'LITERATURE_SCOPE.md').write_text('Nakano math-ph/0006022v2: sections1-2 and theorem/remarks displayed in full and read; spinful conventions are explicitly not transferred to the spinless ring. Deleporte/Vu Ngoc, Uniform spectral asymptotics for semiclassical wells on phase space loops: abstract and opening introduction read only; its one-degree-of-freedom theorem is not invoked. Flux minimization and semiclassical localization are credited as established methodology, not discoveries of this campaign.\n')
+print(note)

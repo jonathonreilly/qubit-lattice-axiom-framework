@@ -1,0 +1,24 @@
+{
+  "added_nodes": [
+    "flat_holonomy_minimization_and_periodic_spectral_floor_bounded_theorem_note_2026-09-13"
+  ],
+  "changed_existing_nodes": [],
+  "node_delta": 1,
+  "edge_delta": 3,
+  "node": {
+    "claim_id": "flat_holonomy_minimization_and_periodic_spectral_floor_bounded_theorem_note_2026-09-13",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "minimal_axioms",
+      "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05",
+      "the_fermion_on_compact_u1_links_the_integer_flux_selects_the_staggered_gauss_law_and_joins_the_maxwell_germ_bounded_theorem_note_2026-09-03"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268",
+    "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "runner_path": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+    "title": "Flat holonomies and the finite-volume spectral floor"
+  }
+}

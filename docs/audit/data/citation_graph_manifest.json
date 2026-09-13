@@ -1,6 +1,6 @@
 {
- "edge_count": 12519,
- "node_count": 5041,
+ "edge_count": 12522,
+ "node_count": 5042,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4977,6 +4977,10 @@
   "fixed_target_x_cnot_preparation_count_cycle753_bounded_theorem_note_2026-07-28": {
    "deps_hash": "b57520e0b473",
    "out_degree": 4
+  },
+  "flat_holonomy_minimization_and_periodic_spectral_floor_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "9c83fb5042d9",
+   "out_degree": 3
   },
   "flavor_a1prime_debt_and_data_note_2026-05-30": {
    "deps_hash": "e3b0c44298fc",

@@ -106,3 +106,42 @@ The first body-row-only probe had reverse index order and reported1/2; original
 probe/JSON are preserved, corrected ordering agrees below3e-16 without formula
 changes. These are author checks, no external review. Cold proof pass/package
 is next; physical matter-source selection, clocks and nonlinear closure stay open.
+
+
+Block8 completed author derivation/checks around03:20UTC: BLOCK08_DERIVATION.
+For independent hyperdiagonal squared-length excess lambda_x with other edges
+flat, each simplex metric is I+(lambda/2)(e_first e_last^T+reverse), |lambda|<2.
+Eight 1+3 hinges and six2+2 hinges yield exact angles and Schlaefli derivative
+f'=-lambda[8d1/A1+6d2/A2]/16, so f=lambda³/8+lambda⁴/32+O(lambda⁵).
+Cube additivity is exact. The hyperdiagonal Hessian row is zero in every
+first-order direction, so no nonzero pure-hyper tangent belongs to even a
+merely differentiable stationary family. Strengthened mixed result: with
+constant flat metric H and hyper excess mu_x, S3=sum[mu³/8+mu² sum_off H/4].
+The uniform-shear projection sum mu_x²/4 excludes every real nonzero hyper
+excess even after an arbitrary constant-metric first derivative. Arbitrary
+nonconstant curved first derivatives are outside that theorem.
+
+31 checks passed in2.55s, first fixed run: exact Taylor, literal triangle area
+and normal planes, six-split mixed coefficient;65-digit projected-leg cell
+action vs integrated derivative at+/-0.2 agreeswithin1.4e-63; three mixed cubic
+rays agree within1.3e-12 after finite-step extrapolation. No interval remainder
+certificate. The C1 strengthening is analytical: first derivative of projected
+equation iszero, so anyo(epsilon) correction leaves leadingepsilon²term.
+BLOCK08_SCOPE_STRESS_TEST records N1–N8 honestly: one mechanism, formal
+five-failed-route quota NOT claimed met, broader routeslive. No axiom,no
+Lorentzian energy instability,no tensor-branch failure or historical priority.
+
+Block9 plan written beforechecks in BLOCK09_WORKING_PLAN. Goal: exact scalar/
+vector constraints of the Block7 Fierz form, then a positive reduced TT transfer
+operator. Manual decomposition forp=(r e3,t): F_TT=(r²+t²)||TT||²;
+Fvec=2sum(t v-r b)²; Fscalar=-(r²+t²)tau²/2-2tau(r²a+t²sigma-2rtb3).
+Lapse/shift equations plusgauge remove scalar/vector forr>0. Withchosen -S_R
+orientation andH_TT=2X, transferK=(2pi)^-1/2 exp[-(x-y)²/2-r²(x²+y²)/4]
+ispositiveM heat M, traceclassr>0, exactE=2asinh(r/2), widtha=sinhE,
+eigenvaluesexp[-E(n+1/2)], covarianceexp[-E|n|]/(2sinhE). This remains a
+working derivation; verify fully beforeclaiming. Start odd finite spatial
+tori,k0removed,realmomentumpairs. Fixhypercoordinateexplicitlyratherthancall
+it gauge. ReducedquantizationdoesnotdefinefullconformalReggepathintegral or
+supplyphysicalclock/matter/axiomlaw. No agents; deadline11:38:24UTC.
+Lockrefreshed03:24:58UTCexpires04:24:58UTC. Campaign5f89a4 is pushed; apparatus
+PR8084 e56bca5 remains the only milestone PR, independent review pending.

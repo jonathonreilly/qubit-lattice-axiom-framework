@@ -1,0 +1,75 @@
+{
+  "scope": "one exact local family and constant-metric/hyperdiagonal tangents; no general curved-tangent or physical instability theorem",
+  "status": "passed",
+  "checks": [
+    "first_deficit_series",
+    "second_deficit_series",
+    "action_derivative_series",
+    "wrong_cubic_sign_rejected",
+    "hinge_normal_area_01",
+    "hinge_normal_plane_01",
+    "hinge_normal_area_02",
+    "hinge_normal_plane_02",
+    "hinge_normal_area_03",
+    "hinge_normal_plane_03",
+    "hinge_normal_area_04",
+    "hinge_normal_plane_04",
+    "hinge_normal_area_12",
+    "hinge_normal_plane_12",
+    "hinge_normal_area_13",
+    "hinge_normal_plane_13",
+    "hinge_normal_area_14",
+    "hinge_normal_plane_14",
+    "hinge_normal_area_23",
+    "hinge_normal_plane_23",
+    "hinge_normal_area_24",
+    "hinge_normal_plane_24",
+    "hinge_normal_area_34",
+    "hinge_normal_plane_34",
+    "uniform_shear_mixed_coefficient",
+    "literal_flat_cell_action",
+    "nonlinear_action_integral_0.2",
+    "nonlinear_action_integral_-0.2",
+    "uniform_shear_cubic_0",
+    "uniform_shear_cubic_1",
+    "uniform_shear_cubic_-1"
+  ],
+  "count": 31,
+  "nonlinear_comparisons": [
+    {
+      "mu": "0.2",
+      "literal_action": "0.0010542688428882386342514563539318077708062998526491841060718883621",
+      "integrated_derivative": "0.0010542688428882386342514563539318077708062998526491841060718869676",
+      "error": "1.3944621428278709921356493775716042714023608502060711856559608353e-63"
+    },
+    {
+      "mu": "-0.2",
+      "literal_action": "-0.00095376632947786757833690812419039210959688047222847169769960486204",
+      "integrated_derivative": "-0.00095376632947786757833690812419039210959688047222847169769960533603",
+      "error": "4.7398786272712468069082803740048051703976182943752449410659119559e-64"
+    }
+  ],
+  "cubic_ray_diagnostics": [
+    {
+      "shear_ratio": 0,
+      "expected": "0.125",
+      "two_step_extrapolate": "0.12499999999999453124665178380305187527598063268008435806670876122",
+      "error": "0.0000000000000054687533482161969481247240193673199156419332912387763845860084886"
+    },
+    {
+      "shear_ratio": 1,
+      "expected": "0.375",
+      "two_step_extrapolate": "0.37499999999877681517843382180187340062799015520725342911306251162",
+      "error": "0.0000000000012231848215661781981265993720098447927465708869374883795865032271"
+    },
+    {
+      "shear_ratio": -1,
+      "expected": "-0.125",
+      "two_step_extrapolate": "-0.12499999999991276020470581793603839543672056193262469414280776734",
+      "error": "0.000000000000087239795294182063961604563279438067375305857192232657977473589856"
+    }
+  ],
+  "numerical_limit": "high precision and finite-step extrapolation support the separately derived exact coefficients; no interval remainder certificate",
+  "source_sha256": "6c6dd712c9a6159d9b3c17a1210c9f643d43b584f4c78770a8ca93d7e0e3e08c",
+  "elapsed_sec": 2.550687208015006
+}

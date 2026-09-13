@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-content_mixture_weight-ngerbvx2/scripts/native_growing_formation_current_2026_09_13.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-content_mixture_weight-ngerbvx2/scripts/native_growing_formation_current_2026_09_13.py", line 14, in main
+    rows={name:check() for name,check in (('native',native_check),('transport',transport_check),('growth',growth_check))}
+               ~~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-content_mixture_weight-ngerbvx2/scripts/native_formation_growth_checks_2026_09_13.py", line 70, in run
+    checked(f"common_kernel_n{count}_positive{positives}",mixture==s.Rational(1,2)+s.Rational(b,4*count))
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-content_mixture_weight-ngerbvx2/scripts/native_formation_growth_checks_2026_09_13.py", line 34, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: common_kernel_n1_positive1

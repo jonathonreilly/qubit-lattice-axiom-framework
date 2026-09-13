@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-retired_hopping-vz3c2soz/scripts/native_growing_formation_current_2026_09_13.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-retired_hopping-vz3c2soz/scripts/native_growing_formation_current_2026_09_13.py", line 14, in main
+    rows={name:check() for name,check in (('native',native_check),('transport',transport_check),('growth',growth_check))}
+               ~~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-retired_hopping-vz3c2soz/scripts/native_formation_native_checks_2026_09_13.py", line 116, in run
+    assert residual<TOL
+           ^^^^^^^^^^^^
+AssertionError

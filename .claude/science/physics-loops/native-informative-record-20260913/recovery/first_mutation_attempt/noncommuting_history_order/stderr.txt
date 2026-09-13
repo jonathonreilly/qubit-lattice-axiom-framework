@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_noncommuting_history_order.py", line 326, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_noncommuting_history_order.py", line 237, in run
+    equal(f'ordered_history_effect_{z1}_{z2}', actual.H * actual,
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          pe * f2 * f1 * f1 * f2 * pe)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_noncommuting_history_order.py", line 93, in equal
+    checked(name, condition)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_noncommuting_history_order.py", line 84, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: ordered_history_effect_1_1

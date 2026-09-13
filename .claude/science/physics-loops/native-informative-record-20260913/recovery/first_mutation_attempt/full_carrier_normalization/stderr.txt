@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_full_carrier_normalization.py", line 326, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_full_carrier_normalization.py", line 131, in run
+    equal('general_effect_unitary_full_carrier', U.H * U, eye)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_full_carrier_normalization.py", line 93, in equal
+    checked(name, condition)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_full_carrier_normalization.py", line 84, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: general_effect_unitary_full_carrier

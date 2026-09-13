@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_matter_control_omitted.py", line 326, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_matter_control_omitted.py", line 170, in run
+    equal(f'parity_native_map_{idx}_{sign}', K, J * F * P)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_matter_control_omitted.py", line 93, in equal
+    checked(name, condition)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_matter_control_omitted.py", line 84, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: parity_native_map_1_1

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_Slater_normalizing_Gram.py", line 326, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_Slater_normalizing_Gram.py", line 276, in run
+    equal(f'Slater_filter_CAR_vs_Gram_{sign}', covariance(updated, ann), formula)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_Slater_normalizing_Gram.py", line 93, in equal
+    checked(name, condition)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_Slater_normalizing_Gram.py", line 84, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: Slater_filter_CAR_vs_Gram_1

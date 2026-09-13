@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_selective_current_attenuation.py", line 326, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_selective_current_attenuation.py", line 176, in run
+    equal(f'selective_incident_current_{idx}_{sign}', sp.trace(unnorm * currents[0, 3]), mean(currents[0, 3]) / 2)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_selective_current_attenuation.py", line 93, in equal
+    checked(name, condition)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/scripts/_native_informative_mutation_selective_current_attenuation.py", line 84, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: selective_incident_current_1_1

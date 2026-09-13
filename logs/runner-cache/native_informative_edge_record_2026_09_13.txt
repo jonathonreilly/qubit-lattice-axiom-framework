@@ -1,0 +1,596 @@
+===== runner cache v1 =====
+runner: scripts/native_informative_edge_record_2026_09_13.py
+runner_sha256: 166ed0fdd970ba981756f4e5163d1f29a28e72b7e17a7c7720d3744f9f50780e
+input_fingerprint_sha256: f27310f32d274b3c381b02846c126e693ffe1f78d10120f88bb0343992ba4e23
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.54
+status: ok
+----- stdout -----
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "physical_current_continuity_0_3"
+    },
+    {
+      "name": "physical_current_continuity_1_2"
+    },
+    {
+      "name": "physical_current_continuity_2_3"
+    },
+    {
+      "name": "native_incident_energy_split"
+    },
+    {
+      "name": "native_cycle_hermitian_involution"
+    },
+    {
+      "name": "native_cycle_is_hermitian"
+    },
+    {
+      "name": "native_cycle_anticommutes_record_Z"
+    },
+    {
+      "name": "native_incoming_even_code_rank"
+    },
+    {
+      "name": "full_native_vertex_product_even"
+    },
+    {
+      "name": "protected_generators_commute_cycle_and_Record"
+    },
+    {
+      "name": "noncommuting_effect_involution"
+    },
+    {
+      "name": "effect_physical_square_root"
+    },
+    {
+      "name": "complement_physical_square_root"
+    },
+    {
+      "name": "general_effect_unitary_full_carrier"
+    },
+    {
+      "name": "general_native_Lueders_map_1"
+    },
+    {
+      "name": "general_native_effect_1"
+    },
+    {
+      "name": "general_protected_noncommuting_observable_1"
+    },
+    {
+      "name": "general_next_code_surjectivity_1"
+    },
+    {
+      "name": "general_native_Lueders_map_-1"
+    },
+    {
+      "name": "general_native_effect_-1"
+    },
+    {
+      "name": "general_protected_noncommuting_observable_-1"
+    },
+    {
+      "name": "general_next_code_surjectivity_-1"
+    },
+    {
+      "name": "general_effect_is_matter_informative"
+    },
+    {
+      "name": "constant_effect_endpoint_unitary_1"
+    },
+    {
+      "name": "constant_effect_zero_branch_1"
+    },
+    {
+      "name": "constant_effect_endpoint_unitary_-1"
+    },
+    {
+      "name": "constant_effect_zero_branch_-1"
+    },
+    {
+      "name": "native_fixture_positive_normalized",
+      "sufficient_perturbation_bound": "1/4+1/5+1/7<1"
+    },
+    {
+      "name": "native_fixture_has_current_and_energy"
+    },
+    {
+      "name": "parity_physical_unitary_0"
+    },
+    {
+      "name": "parity_native_map_0_1"
+    },
+    {
+      "name": "parity_effect_0_1"
+    },
+    {
+      "name": "parity_probability_0_1"
+    },
+    {
+      "name": "selective_parity_mean_0_1"
+    },
+    {
+      "name": "selective_incident_current_0_1"
+    },
+    {
+      "name": "normalized_selective_parity_0_1"
+    },
+    {
+      "name": "normalized_selective_current_0_1"
+    },
+    {
+      "name": "selective_number_commutation_0_1"
+    },
+    {
+      "name": "parity_native_map_0_-1"
+    },
+    {
+      "name": "parity_effect_0_-1"
+    },
+    {
+      "name": "parity_probability_0_-1"
+    },
+    {
+      "name": "selective_parity_mean_0_-1"
+    },
+    {
+      "name": "selective_incident_current_0_-1"
+    },
+    {
+      "name": "normalized_selective_parity_0_-1"
+    },
+    {
+      "name": "normalized_selective_current_0_-1"
+    },
+    {
+      "name": "selective_number_commutation_0_-1"
+    },
+    {
+      "name": "nonselective_channel_0"
+    },
+    {
+      "name": "nonselective_energy_change_0"
+    },
+    {
+      "name": "nonselective_current_0_(0, 3)"
+    },
+    {
+      "name": "nonselective_current_0_(1, 2)"
+    },
+    {
+      "name": "nonselective_current_0_(2, 3)"
+    },
+    {
+      "name": "diamond_lower_witness_0"
+    },
+    {
+      "name": "contrast_disturbance_saturation_0"
+    },
+    {
+      "name": "parity_physical_unitary_1"
+    },
+    {
+      "name": "parity_native_map_1_1"
+    },
+    {
+      "name": "parity_effect_1_1"
+    },
+    {
+      "name": "parity_probability_1_1"
+    },
+    {
+      "name": "selective_parity_mean_1_1"
+    },
+    {
+      "name": "selective_incident_current_1_1"
+    },
+    {
+      "name": "normalized_selective_parity_1_1"
+    },
+    {
+      "name": "normalized_selective_current_1_1"
+    },
+    {
+      "name": "selective_number_commutation_1_1"
+    },
+    {
+      "name": "parity_native_map_1_-1"
+    },
+    {
+      "name": "parity_effect_1_-1"
+    },
+    {
+      "name": "parity_probability_1_-1"
+    },
+    {
+      "name": "selective_parity_mean_1_-1"
+    },
+    {
+      "name": "selective_incident_current_1_-1"
+    },
+    {
+      "name": "normalized_selective_parity_1_-1"
+    },
+    {
+      "name": "normalized_selective_current_1_-1"
+    },
+    {
+      "name": "selective_number_commutation_1_-1"
+    },
+    {
+      "name": "nonselective_channel_1"
+    },
+    {
+      "name": "nonselective_energy_change_1"
+    },
+    {
+      "name": "nonselective_current_1_(0, 3)"
+    },
+    {
+      "name": "nonselective_current_1_(1, 2)"
+    },
+    {
+      "name": "nonselective_current_1_(2, 3)"
+    },
+    {
+      "name": "diamond_lower_witness_1"
+    },
+    {
+      "name": "contrast_disturbance_saturation_1"
+    },
+    {
+      "name": "parity_physical_unitary_2"
+    },
+    {
+      "name": "parity_native_map_2_1"
+    },
+    {
+      "name": "parity_effect_2_1"
+    },
+    {
+      "name": "parity_probability_2_1"
+    },
+    {
+      "name": "selective_parity_mean_2_1"
+    },
+    {
+      "name": "selective_incident_current_2_1"
+    },
+    {
+      "name": "normalized_selective_parity_2_1"
+    },
+    {
+      "name": "normalized_selective_current_2_1"
+    },
+    {
+      "name": "selective_number_commutation_2_1"
+    },
+    {
+      "name": "parity_native_map_2_-1"
+    },
+    {
+      "name": "parity_effect_2_-1"
+    },
+    {
+      "name": "parity_probability_2_-1"
+    },
+    {
+      "name": "selective_parity_mean_2_-1"
+    },
+    {
+      "name": "selective_incident_current_2_-1"
+    },
+    {
+      "name": "normalized_selective_parity_2_-1"
+    },
+    {
+      "name": "normalized_selective_current_2_-1"
+    },
+    {
+      "name": "selective_number_commutation_2_-1"
+    },
+    {
+      "name": "nonselective_channel_2"
+    },
+    {
+      "name": "nonselective_energy_change_2"
+    },
+    {
+      "name": "nonselective_current_2_(0, 3)"
+    },
+    {
+      "name": "nonselective_current_2_(1, 2)"
+    },
+    {
+      "name": "nonselective_current_2_(2, 3)"
+    },
+    {
+      "name": "diamond_lower_witness_2"
+    },
+    {
+      "name": "contrast_disturbance_saturation_2"
+    },
+    {
+      "name": "parity_physical_unitary_3"
+    },
+    {
+      "name": "parity_native_map_3_1"
+    },
+    {
+      "name": "parity_effect_3_1"
+    },
+    {
+      "name": "parity_probability_3_1"
+    },
+    {
+      "name": "selective_parity_mean_3_1"
+    },
+    {
+      "name": "selective_incident_current_3_1"
+    },
+    {
+      "name": "normalized_selective_parity_3_1"
+    },
+    {
+      "name": "normalized_selective_current_3_1"
+    },
+    {
+      "name": "selective_number_commutation_3_1"
+    },
+    {
+      "name": "parity_native_map_3_-1"
+    },
+    {
+      "name": "parity_effect_3_-1"
+    },
+    {
+      "name": "parity_probability_3_-1"
+    },
+    {
+      "name": "selective_parity_mean_3_-1"
+    },
+    {
+      "name": "selective_incident_current_3_-1"
+    },
+    {
+      "name": "normalized_selective_parity_3_-1"
+    },
+    {
+      "name": "normalized_selective_current_3_-1"
+    },
+    {
+      "name": "selective_number_commutation_3_-1"
+    },
+    {
+      "name": "nonselective_channel_3"
+    },
+    {
+      "name": "nonselective_energy_change_3"
+    },
+    {
+      "name": "nonselective_current_3_(0, 3)"
+    },
+    {
+      "name": "nonselective_current_3_(1, 2)"
+    },
+    {
+      "name": "nonselective_current_3_(2, 3)"
+    },
+    {
+      "name": "diamond_lower_witness_3"
+    },
+    {
+      "name": "contrast_disturbance_saturation_3"
+    },
+    {
+      "name": "parity_physical_unitary_4"
+    },
+    {
+      "name": "parity_native_map_4_1"
+    },
+    {
+      "name": "parity_effect_4_1"
+    },
+    {
+      "name": "parity_probability_4_1"
+    },
+    {
+      "name": "selective_parity_mean_4_1"
+    },
+    {
+      "name": "selective_incident_current_4_1"
+    },
+    {
+      "name": "normalized_selective_parity_4_1"
+    },
+    {
+      "name": "normalized_selective_current_4_1"
+    },
+    {
+      "name": "selective_number_commutation_4_1"
+    },
+    {
+      "name": "parity_native_map_4_-1"
+    },
+    {
+      "name": "parity_effect_4_-1"
+    },
+    {
+      "name": "parity_probability_4_-1"
+    },
+    {
+      "name": "selective_parity_mean_4_-1"
+    },
+    {
+      "name": "selective_incident_current_4_-1"
+    },
+    {
+      "name": "normalized_selective_parity_4_-1"
+    },
+    {
+      "name": "normalized_selective_current_4_-1"
+    },
+    {
+      "name": "selective_number_commutation_4_-1"
+    },
+    {
+      "name": "nonselective_channel_4"
+    },
+    {
+      "name": "nonselective_energy_change_4"
+    },
+    {
+      "name": "nonselective_current_4_(0, 3)"
+    },
+    {
+      "name": "nonselective_current_4_(1, 2)"
+    },
+    {
+      "name": "nonselective_current_4_(2, 3)"
+    },
+    {
+      "name": "diamond_lower_witness_4"
+    },
+    {
+      "name": "contrast_disturbance_saturation_4"
+    },
+    {
+      "name": "literal_plaquette_star_support",
+      "factors": 20,
+      "radius": 4
+    },
+    {
+      "name": "two_event_effects_really_noncommute"
+    },
+    {
+      "name": "two_event_native_code_dimension"
+    },
+    {
+      "name": "unused_cycle_survives_first_pulse"
+    },
+    {
+      "name": "old_Record_commutes_next_pulse"
+    },
+    {
+      "name": "two_native_noncommuting_events_1_1"
+    },
+    {
+      "name": "permanent_Record_final_code_1_1"
+    },
+    {
+      "name": "ordered_history_effect_1_1"
+    },
+    {
+      "name": "two_native_noncommuting_events_1_-1"
+    },
+    {
+      "name": "permanent_Record_final_code_1_-1"
+    },
+    {
+      "name": "ordered_history_effect_1_-1"
+    },
+    {
+      "name": "two_native_noncommuting_events_-1_1"
+    },
+    {
+      "name": "permanent_Record_final_code_-1_1"
+    },
+    {
+      "name": "ordered_history_effect_-1_1"
+    },
+    {
+      "name": "two_native_noncommuting_events_-1_-1"
+    },
+    {
+      "name": "permanent_Record_final_code_-1_-1"
+    },
+    {
+      "name": "ordered_history_effect_-1_-1"
+    },
+    {
+      "name": "independent_CAR_relations"
+    },
+    {
+      "name": "CAR_native_current_dictionary_0_1"
+    },
+    {
+      "name": "CAR_native_current_dictionary_0_3"
+    },
+    {
+      "name": "CAR_native_current_dictionary_2_3"
+    },
+    {
+      "name": "initial_even_Slater_covariance"
+    },
+    {
+      "name": "initial_even_Slater_two_particles"
+    },
+    {
+      "name": "Slater_filter_probability_1"
+    },
+    {
+      "name": "Slater_filter_CAR_vs_Gram_1"
+    },
+    {
+      "name": "Slater_filtered_projector_1"
+    },
+    {
+      "name": "Slater_filtered_particle_number_1"
+    },
+    {
+      "name": "free_dwell_CAR_vs_orbitals_1"
+    },
+    {
+      "name": "interleaved_two_event_Slater_history_1_1"
+    },
+    {
+      "name": "interleaved_two_event_Slater_history_1_-1"
+    },
+    {
+      "name": "Slater_filter_probability_-1"
+    },
+    {
+      "name": "Slater_filter_CAR_vs_Gram_-1"
+    },
+    {
+      "name": "Slater_filtered_projector_-1"
+    },
+    {
+      "name": "Slater_filtered_particle_number_-1"
+    },
+    {
+      "name": "free_dwell_CAR_vs_orbitals_-1"
+    },
+    {
+      "name": "interleaved_two_event_Slater_history_-1_1"
+    },
+    {
+      "name": "interleaved_two_event_Slater_history_-1_-1"
+    },
+    {
+      "name": "selective_number_distribution_is_not_preserved",
+      "before": "1",
+      "after": "2/5"
+    },
+    {
+      "name": "same_condition_pair_minimax"
+    }
+  ],
+  "total_pass": 188,
+  "total_fail": 0,
+  "elapsed_seconds": 1.22159270796692,
+  "runner_sha256": "166ed0fdd970ba981756f4e5163d1f29a28e72b7e17a7c7720d3744f9f50780e"
+}
+per_element: Full physical effect, square-root and Kraus identities are checked exactly, including zero branches.
+per_site: Native edge Record, twenty-factor plaquette support and physical radius four are checked.
+per_mode: Four independently constructed CAR modes verify current signs and complex Slater updates.
+per_block: Two noncommuting native events and interleaved Slater histories preserve their declared code conditions.
+lattice_wide: checked and not executed — the finite-graph theorem follows from the written algebra; no thermodynamic or complete local-law result is claimed.
+TOTAL: PASS=188 FAIL=0
+
+----- stderr -----
+

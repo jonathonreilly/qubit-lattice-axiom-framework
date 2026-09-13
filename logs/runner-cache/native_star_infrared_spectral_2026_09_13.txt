@@ -1,0 +1,166 @@
+===== runner cache v1 =====
+runner: scripts/native_star_infrared_spectral_2026_09_13.py
+runner_sha256: a059824718610e377736bd630202780317e8d2ac7d9514ea65e0a7927ee4eb33
+input_fingerprint_sha256: 0ea9e2946f9c2e86c839ab5b6a765ac505edc369c4f33ddaa346136176936ad9
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.65
+status: ok
+----- stdout -----
+{
+  "status": "passed",
+  "count": 34,
+  "checks": [
+    {
+      "name": "recomputed_parent_scalar_and_gap"
+    },
+    {
+      "name": "pull_through_constants"
+    },
+    {
+      "name": "inner_ball_in_positive_amplitude_window"
+    },
+    {
+      "name": "complete_nonlinear_ratio_bound",
+      "rational": "192650212941879825/7964819170103124435400386412544",
+      "decimal": 2.418764429266829e-14
+    },
+    {
+      "name": "four_band_DOS_upper_coefficient"
+    },
+    {
+      "name": "one_source_inner_ball_coefficient"
+    },
+    {
+      "name": "nine_power_laplace_coefficient"
+    },
+    {
+      "name": "native_cell_square"
+    },
+    {
+      "name": "native_zero_diagonal"
+    },
+    {
+      "name": "native_skew_adjoint_symbol"
+    },
+    {
+      "name": "literal_native_reflection_gauges",
+      "edge_comparisons": 2250
+    },
+    {
+      "name": "zero_cell_functional_only_origin_component"
+    },
+    {
+      "name": "literal_native_positive_z_projector_sign"
+    },
+    {
+      "name": "three_column_native_cone_Gram"
+    },
+    {
+      "name": "comparator_all_defects_positive",
+      "minimum": 3.807417596432748,
+      "scope": "shifted four-mode comparator only"
+    },
+    {
+      "name": "full_matrix_shifted_pull_through",
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "name": "omitted_frequency_shift_rejected",
+      "residual": 0.14514285714285713
+    },
+    {
+      "name": "three_annihilator_word_recursion",
+      "absolute_error": 2.5752030534132526e-19,
+      "word_counts": [
+        39,
+        33,
+        24,
+        44
+      ]
+    },
+    {
+      "name": "paired_half_Ward_terms_match_defined_scalar",
+      "absolute_error": 2.6645361414262163e-15
+    },
+    {
+      "name": "omitted_half_Ward_factors_rejected",
+      "residual": 0.42653190419909226
+    },
+    {
+      "name": "nonlinear_comparator_is_nonvacuous",
+      "weight": 3.405093517210556e-08
+    },
+    {
+      "name": "star_odd_particle_sectors",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "positive_energy_projector_domination_2"
+    },
+    {
+      "name": "ordered_factorial_moment_2",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "positive_energy_projector_domination_4"
+    },
+    {
+      "name": "ordered_factorial_moment_4",
+      "absolute_error": 1.6543612251060553e-24
+    },
+    {
+      "name": "positive_energy_projector_domination_8"
+    },
+    {
+      "name": "ordered_factorial_moment_8",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "positive_energy_projector_domination_13"
+    },
+    {
+      "name": "ordered_factorial_moment_13",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "missing_factorial_normalization_rejected",
+      "residual": 1.7025467586052782e-07
+    },
+    {
+      "name": "Wick_order_removes_one_particle",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "Wick_order_has_nonzero_three_particle_component"
+    },
+    {
+      "name": "omitted_Wick_subtractions_rejected"
+    }
+  ],
+  "seconds": 0.2805064169806428,
+  "source_sha256": "a059824718610e377736bd630202780317e8d2ac7d9514ea65e0a7927ee4eb33",
+  "derivation_sha256": "6be9e2653f79129cf85f6793e02ebe9708c2e5b6c497066f6f631366f1d25f1b",
+  "parent_arithmetic": {
+    "coarse_interval": [
+      "7",
+      "330"
+    ],
+    "source_sha256": "f932113ee631ca82a3d64e80425e2a295ca7ac05e91ebd7d4ba4efcf06325579",
+    "dependencies_sha256": {
+      "WITNESS.json": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c",
+      "MOMENT_FORMULAS.json": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5",
+      "TRIAL_FORMULAS.json": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a"
+    }
+  },
+  "scope": "exact arithmetic/native cell checks and a distinct shifted finite-Fock comparator; no native spectral fit, infinite proof by enumeration or independent source review"
+}
+per_element: Exact native cell entries, signed local fields and the complete half-Ward pairing are checked.
+per_site: Native reflection gauges are checked against literal nearest-neighbor entries; local labels are explicit.
+per_mode: Four positive native bands set the DOS normalization; the shifted Fock comparator is separately identified.
+per_block: Full three-annihilator words and ordered factorial moments retain all remaining sectors.
+lattice_wide: checked and not executed — infinite estimates follow from the number-domain, resolvent and spectral proofs, not a lattice-size extrapolation.
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

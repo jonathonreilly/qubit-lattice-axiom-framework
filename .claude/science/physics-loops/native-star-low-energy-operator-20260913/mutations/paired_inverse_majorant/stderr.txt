@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_paired_inverse_majorant.py", line 223, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_paired_inverse_majorant.py", line 68, in run
+    checked('Neumann_majorant_matches_two_inverse_word_series',sp.diff(scalar_majorant(x),x,3).subs(x,0)/6==cubic)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_paired_inverse_majorant.py", line 44, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: Neumann_majorant_matches_two_inverse_word_series

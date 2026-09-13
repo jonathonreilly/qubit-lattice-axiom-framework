@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_projector_sign.py", line 205, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_projector_sign.py", line 90, in run
+    checked('literal_native_positive_z_projector_sign',ray_derivative==Gz and 2*P-s.eye(8)==-ray_derivative)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_projector_sign.py", line 29, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: literal_native_positive_z_projector_sign

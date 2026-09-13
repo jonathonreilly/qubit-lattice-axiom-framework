@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_Hermitian_linear_reconstruction.py", line 223, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_Hermitian_linear_reconstruction.py", line 167, in run
+    close('zero_low_energy_coefficient_is_linear',bar,reconstructed)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_Hermitian_linear_reconstruction.py", line 48, in close
+    checked(name,error<tol,error=error)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_Hermitian_linear_reconstruction.py", line 44, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: zero_low_energy_coefficient_is_linear

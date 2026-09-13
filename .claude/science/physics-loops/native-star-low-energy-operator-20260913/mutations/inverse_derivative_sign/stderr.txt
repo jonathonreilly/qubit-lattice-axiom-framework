@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_inverse_derivative_sign.py", line 223, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_inverse_derivative_sign.py", line 153, in run
+    close('analytic_first_coefficient_vs_direct_inverse',derivative,F1,tol=3e-9)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_inverse_derivative_sign.py", line 48, in close
+    checked(name,error<tol,error=error)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_inverse_derivative_sign.py", line 44, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: analytic_first_coefficient_vs_direct_inverse

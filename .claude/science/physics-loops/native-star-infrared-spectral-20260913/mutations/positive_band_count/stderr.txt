@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_band_count.py", line 205, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_band_count.py", line 53, in run
+    checked('four_band_DOS_upper_coefficient',s.simplify(volume/(2*pi)**3-pi*E**3/(12*h**3))==0)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_band_count.py", line 29, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: four_band_DOS_upper_coefficient

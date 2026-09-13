@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_inner_ball_measure.py", line 205, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_inner_ball_measure.py", line 54, in run
+    checked('one_source_inner_ball_coefficient',s.simplify(s.Rational(1,4)*(s.Rational(4,3)*pi*(E/h)**3)/(pi)**3-E**3/(24*pi*pi*h**3))==0)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_inner_ball_measure.py", line 29, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: one_source_inner_ball_coefficient

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_half_Ward_corrections.py", line 205, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_half_Ward_corrections.py", line 169, in run
+    close('paired_half_Ward_terms_match_defined_scalar',soft,scalar)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_half_Ward_corrections.py", line 33, in close
+    checked(name,error<tol,absolute_error=error)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_half_Ward_corrections.py", line 29, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: paired_half_Ward_terms_match_defined_scalar

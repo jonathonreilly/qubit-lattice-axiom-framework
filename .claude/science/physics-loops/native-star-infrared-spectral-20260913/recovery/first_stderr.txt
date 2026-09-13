@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/native_star_infrared_spectral_2026_09_13.py", line 204, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/native_star_infrared_spectral_2026_09_13.py", line 197, in run
+    'parent_arithmetic':{'coarse_interval':scalar['coarse_interval'],'source_sha256':scalar['source_sha256'],'dependencies_sha256':scalar['dependencies_sha256']},
+                                           ~~~~~~^^^^^^^^^^^^^^^^^^^
+IndexError: invalid index to scalar variable.

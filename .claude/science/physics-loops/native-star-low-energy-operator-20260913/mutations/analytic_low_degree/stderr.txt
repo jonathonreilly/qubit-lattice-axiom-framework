@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_analytic_low_degree.py", line 223, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_analytic_low_degree.py", line 150, in run
+    for s in (1.,.5,.3j):close('operator_analytic_oddness_'+str(s),EH(family(s))+EH(family(-s)),np.zeros((ldim,ldim)))
+                         ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_analytic_low_degree.py", line 48, in close
+    checked(name,error<tol,error=error)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_analytic_low_degree.py", line 44, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: operator_analytic_oddness_1.0

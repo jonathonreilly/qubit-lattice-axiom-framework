@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-native_Fock_defect-w_gdrtp5/scripts/native_positive_ward_scalar_2026_09_13.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-native_Fock_defect-w_gdrtp5/scripts/native_positive_ward_scalar_2026_09_13.py", line 27, in main
+    covariance=covariance_check();fock=fock_moment_check();gap=gap_fixture_check()
+                                       ~~~~~~~~~~~~~~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-native_Fock_defect-w_gdrtp5/scripts/native_ward_scalar_native_checks_2026_09_13.py", line 178, in fock_moment_check
+    assert error<2e-8,(kind,source,n,error,actual,expected)
+           ^^^^^^^^^^
+AssertionError: ('P', 'vacuum', 1, np.float64(0.22158840972978938), np.complex128(0.39795112249947556-1.082818046337257e-16j), 0.7959022449989519)

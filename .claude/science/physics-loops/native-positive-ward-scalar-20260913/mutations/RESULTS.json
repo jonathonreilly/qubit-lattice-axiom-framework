@@ -1,0 +1,111 @@
+{
+  "status": "all_actual_mutants_rejected",
+  "cases": [
+    {
+      "name": "return_count_normalization",
+      "target_path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+      "reason": "Remove the central binomial factor in the actual return probabilities.",
+      "before": "comb(2*n,n)*sum(comb(n,j)**2*comb(2*j,j)",
+      "after": "sum(comb(n,j)**2*comb(2*j,j)",
+      "source_sha256": "f932113ee631ca82a3d64e80425e2a295ca7ac05e91ebd7d4ba4efcf06325579",
+      "mutant_sha256": "12f5774bbf0ebb468f5e725c5d7d0917cf5a933f0b65a022f080567a9dba842b",
+      "returncode": 1,
+      "detected_by_assertion": true,
+      "stdout": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/stdout.txt",
+      "stderr": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/stderr.txt"
+    },
+    {
+      "name": "radial_frequency_power",
+      "target_path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+      "reason": "Remove the physical frequency power from half-integer moment suppliers.",
+      "before": "prefactor=F(6)**((r-1)//2)",
+      "after": "prefactor=F(1)",
+      "source_sha256": "f932113ee631ca82a3d64e80425e2a295ca7ac05e91ebd7d4ba4efcf06325579",
+      "mutant_sha256": "2b173af51e28502cb62639a2cbc03206b5b028a67a71b0e739a58240aa304b3f",
+      "returncode": 1,
+      "detected_by_assertion": true,
+      "stdout": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/stdout.txt",
+      "stderr": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/stderr.txt"
+    },
+    {
+      "name": "Ward_free_commutator",
+      "target_path": "scripts/native_ward_scalar_algebra_2026_09_13.py",
+      "reason": "Halve the free Ward-source commutator in the actual moment recurrence.",
+      "before": "factor=6*s.I if typ=='w' else s.I",
+      "after": "factor=3*s.I if typ=='w' else s.I",
+      "source_sha256": "60e00d75daa9389ffa3bc406e32daf040e6cb05f182776036dc6ea2d0cd42632",
+      "mutant_sha256": "940ad003bb5ee3d0a6dcfc024a6acb7eb41312e6915ec2293b84db2ff115fe3d",
+      "returncode": 1,
+      "detected_by_assertion": true,
+      "stdout": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/stdout.txt",
+      "stderr": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/stderr.txt"
+    },
+    {
+      "name": "Ward_polynomial_difference",
+      "target_path": "scripts/native_ward_scalar_algebra_2026_09_13.py",
+      "reason": "Drop the W(p-q) correction from the actual separate-source trial.",
+      "before": "difference=self.collect(list(xq.items())+[(w,-c) for w,c in xp.items()])",
+      "after": "difference={}",
+      "source_sha256": "60e00d75daa9389ffa3bc406e32daf040e6cb05f182776036dc6ea2d0cd42632",
+      "mutant_sha256": "7d6430f3637003fdb98889e5df0edd20f40b95f7fc19e135b34871648d5464f2",
+      "returncode": 1,
+      "detected_by_assertion": true,
+      "stdout": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/stdout.txt",
+      "stderr": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/stderr.txt"
+    },
+    {
+      "name": "gap_positive_tail",
+      "target_path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+      "reason": "Discard the positive logarithmic tail needed by the gap certificate.",
+      "before": "total=local+tail;assert total>F(1,4)",
+      "after": "total=local;assert total>F(1,4)",
+      "source_sha256": "f932113ee631ca82a3d64e80425e2a295ca7ac05e91ebd7d4ba4efcf06325579",
+      "mutant_sha256": "006ddfa53d5e5b22f90a0de8b56234676b3cd8dcedcf7b44c99a422b57eb59cf",
+      "returncode": 1,
+      "detected_by_assertion": true,
+      "stdout": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/stdout.txt",
+      "stderr": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/stderr.txt"
+    },
+    {
+      "name": "native_Fock_defect",
+      "target_path": "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+      "reason": "Halve the physical impurity in the separately implemented Fock action.",
+      "before": "energy*state+1j*majorana(Z[:,0],majorana(Z[:,1],state))",
+      "after": "energy*state+0.5j*majorana(Z[:,0],majorana(Z[:,1],state))",
+      "source_sha256": "79c7028e4bc3333a7d55d0faa96ccab276979d407cfa5319408cc5af724436f0",
+      "mutant_sha256": "3b032a94f154c2341619c9adcce6a10a71577affa2800eb368e4d00d4ce93eb0",
+      "returncode": 1,
+      "detected_by_assertion": true,
+      "stdout": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/stdout.txt",
+      "stderr": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/stderr.txt"
+    },
+    {
+      "name": "native_energy_factor",
+      "target_path": "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+      "reason": "Halve the actual full-skew trace energy shift.",
+      "before": "shift=(sum(abs(old))-sum(abs(new)))/4",
+      "after": "shift=(sum(abs(old))-sum(abs(new)))/8",
+      "source_sha256": "79c7028e4bc3333a7d55d0faa96ccab276979d407cfa5319408cc5af724436f0",
+      "mutant_sha256": "60477704959f975fc3853a2f4b7f8fbb8b736a31447dde6653c622aaeb89f119",
+      "returncode": 1,
+      "detected_by_assertion": true,
+      "stdout": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/stdout.txt",
+      "stderr": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/stderr.txt"
+    },
+    {
+      "name": "interval_cross_products",
+      "target_path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+      "reason": "Omit the cross endpoints in rational interval multiplication.",
+      "before": "values=[x*y for x in a for y in b]",
+      "after": "values=[a[0]*b[0],a[1]*b[1]]",
+      "source_sha256": "f932113ee631ca82a3d64e80425e2a295ca7ac05e91ebd7d4ba4efcf06325579",
+      "mutant_sha256": "5fc644e1bb7024f6fef420c60a0cbbed1cca362d6944868477f1adff82c9c2c9",
+      "returncode": 1,
+      "detected_by_assertion": true,
+      "stdout": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/stdout.txt",
+      "stderr": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/stderr.txt"
+    }
+  ],
+  "seconds": 18.025588167016394,
+  "scope": "mutation sensitivity of changed check families; not an independent source review"
+}

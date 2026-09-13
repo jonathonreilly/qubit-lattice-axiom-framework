@@ -23,6 +23,6 @@ continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
 lock_expires_utc: 2026-09-13T18:14:40Z
-next_action: Derive the full native symmetric-strain vacuum Hessian, its geometric contact and infrared tensor; see BLOCK07_GOAL.md.
+next_action: Cold-review the self-contained native stress logarithm, exact spectral density and contact family; prepare a coherent milestone only after final evidence/conformance. Continue to metric-law selection afterwards.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.
-last_checkpoint_utc: 2026-09-13T17:14:40Z
+last_checkpoint_utc: 2026-09-13T17:40:41Z

@@ -34,3 +34,11 @@ term. This partially closes a specified-carrier compatibility obligation.
 It remains upstream_support: the scalar/frame fields are supplied, and no
 native dynamical metric or full gravitational constraint representation has
 been derived. No live audit row or retained status changes here.
+
+BLOCK07 is upstream_support for the actual native metric-source/action
+obligation. It gives the full strain response, joint mixed lapse contact,
+universal infrared tensor and an explicit local-contact family. The
+strongest new mathematical gain is the native-to-continuum stress
+logarithm with two coefficient derivations; the physical next action is a
+principle or dynamics selecting the local metric action and its sources.
+No new axiom, field equation, Newton constant or formal status is supplied.

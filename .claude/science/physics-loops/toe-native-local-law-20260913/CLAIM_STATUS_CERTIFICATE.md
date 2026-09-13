@@ -36,3 +36,12 @@ not claimed as new spin geometry. The naive opposite-shear witness is
 repaired within the note, not presented as an axiom no-go. No interacting
 frame theorem, physical metric selection or gravity constraints are proved.
 Independent review and formal audit remain pending.
+
+BLOCK07 target_claim_type: bounded_theorem; actual current surface status:
+conditional-support. The source family, free state, Hamiltonian time and
+frame interpretation are supplied. Author proofs propose a full seven-source
+even response with mixed contacts and a uniform logarithmic stress tensor,
+plus an exact continuum spectral density and native contact family. This
+restricts the four-dimensional projector to lapse and spatial strains,
+without deriving shift response, all geometric time contacts, nonlinear
+constraints or Einstein coefficients. Independent review and audit pending.

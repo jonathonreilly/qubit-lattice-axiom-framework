@@ -169,3 +169,14 @@ Hessian note and its entire runner were read; avoid confusing that 3D
 Euclidean source with this 3+1 Hamiltonian two-node carrier. An internal
 algebra issue in the older Sakharov summary is recorded, not silently
 inherited or audited. Continue personally through00:14:41UTC.
+
+At17:40UTC BLOCK07 has analytical full-strain Kato response, the mixed
+contact for H[N,S]={N,h_F}/2, a uniform native four-momentum logarithm,
+and a separate exact two-particle spectral/dispersion derivation. The
+local density-contact family changes finite physical gradient coefficients
+while its one-particle operator tends to zero. Read all BLOCK07 notes and
+BLOCK07_AUTHOR_REVIEW.md. The checker passes130 in0.560seconds at source
+d27f0fea3ac839261efb7ea2cc5af46aada05dd901d2c7838cada38a63acaa7e.
+Independent review, final canonical cache/mutations and milestone packaging
+remain pending. Main was fetched and unchanged. Disk128GiB before any new
+checkout. Continue personally through00:14:41UTC; no execution subagents.

@@ -1,0 +1,19 @@
+{
+  "pr": {
+    "headRefOid": "066bdf07bb4d8780c89c540fa4f06ad8215c7d8f",
+    "isDraft": false,
+    "mergeable": "MERGEABLE",
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8097"
+  },
+  "branch": "physics-loop/native-local-quartic-20260913",
+  "head": "066bdf07bb4d8780c89c540fa4f06ad8215c7d8f",
+  "remote_head_verified": true,
+  "clean_including_untracked_verified": true,
+  "cache_preserved": ".claude/science/physics-loops/native-local-quartic-20260913/canonical_cache.txt.gz",
+  "scratch_path": "/Users/jonreilly/Documents/Codex/toe-native-local-quartic-20260913",
+  "before_removal_utc": "2026-09-13T19:50:00.919038+00:00",
+  "base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "scratch_removed": true,
+  "after_removal_utc": "2026-09-13T19:50:03.161341+00:00"
+}

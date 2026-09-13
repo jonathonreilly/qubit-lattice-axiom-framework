@@ -320,7 +320,7 @@ invariant leading interaction within the same rigorously studied weak-
 coupling model class, while leaving the finite-interaction continuum and
 native quantum geometry problems open.
 
-## Smooth-source vertex limit and a physical two-particle check
+## Smooth-source vertex limit and an even-parity two-particle check
 
 Take smooth compactly supported envelopes (or compatible periodic ones),
 and a fixed zeta away from node merger. Insert the two-node expansion into
@@ -384,3 +384,26 @@ ran 115 author checks in .43117995792999864 seconds. These finite checks
 challenge the written representation, bracket and scaling derivations.
 Independent review, loop corrections to the four-leg vertex, gravitational
 quantum constraints and native metric dynamics remain open.
+
+## Cold-review distinctions retained for any public milestone
+
+The two-particle matrix-element test uses the empty Fock vacuum to define
+an even Slater state. This is a valid finite CAR-sector test state, not the
+half-filled interacting ground state of the Weyl theorem. The canonical
+quartic symbol is a bare interaction coefficient. The imported theorem
+instead controls a dressed ground-state two-point function after tuning
+nu(lambda), with renormalized velocities and Z. Those statements concern
+different objects. In particular, the bare common metric used to identify
+the quartic boost generators cannot be silently equated with the dressed
+metric in a claim about renormalized four-point functions. No such
+four-point or gravitational Ward theorem is imported.
+
+Current-main source comparisons read in full at this checkpoint:
+INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md
+concerns a different supplied finite staggered/gauge RP construction and
+explicitly leaves the Lorentz continuum limit outside its scope.
+QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md
+separates the local M2 algebra from a physical boost identification. Here
+the Weyl action and its boosts are supplied through the specified kinetic
+symbol; this note does not derive that identification from the local algebra.
+No effective audit status or universal no-go is inherited from either source.

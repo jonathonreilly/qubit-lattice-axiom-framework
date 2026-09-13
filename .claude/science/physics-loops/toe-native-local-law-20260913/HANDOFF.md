@@ -123,3 +123,9 @@ The active campaign stays here. At this checkpoint disk free space is131GiB;
 no further worktree may be spawned below20GiB. Do not touch archive or
 archive_unlanded and do not run git gc. Own lock now expires16:37:12UTC.
 Continue personally until00:14:41UTC, even after milestone delivery.
+
+At the next checkpoint, BLOCK05 is delivered as PR8091, verified OPEN and
+MERGEABLE at final head28dd88687270388140ad45fbfac9b145f6f8972f. Its worktree
+is removed after clean-state/remote verification under owner disk discipline.
+Read BLOCK05_REVIEW_AND_LEARNING.md for the result and next-source review.
+The active campaign remains here; no execution subagents; deadline00:14:41UTC.

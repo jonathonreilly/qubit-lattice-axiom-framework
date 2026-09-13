@@ -91,3 +91,15 @@ its arbitrary-neighbor carrier and physical calibration remain explicit
 questions. Do not confuse general M2 Record labels with density states of a
 finite-dimensional program register, or infer an axiom wall from that
 additional interpretation. Continue without subagents through00:14:41UTC.
+
+At14:48UTC BLOCK04 is a checked research checkpoint: pure nonorthogonal
+programs with exact return cannot select different quantum channels; permanent
+orthogonal banks and consumable spin references are positive alternatives.
+BLOCK04_DERIVATION.md proves exact labelled Lüders distance and the full
+spin-reference instrument diamond error, and BLOCK04_CHECKS.json records265
+finite author checks in1.290seconds. No independent review or axiom no-go.
+BLOCK04_REVIEW_AND_LEARNING.md explains the decision to avoid a thin standalone
+PR and pursue reciprocal native matter/geometry next. Read PR8085 at
+c63f5b991044328ad9b13223c8a25849aa0ef574 and current source notes before writing
+the next target contract. The shared carrier must be kept explicit; do not
+silently identify prior different scalar, Weyl, Regge or quantum-clock models.

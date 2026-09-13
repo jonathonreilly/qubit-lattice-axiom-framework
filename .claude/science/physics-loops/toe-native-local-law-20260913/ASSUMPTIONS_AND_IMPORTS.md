@@ -30,3 +30,11 @@ ontology. Quantum states can describe a conditional event-boundary
 instrument calculation, whose physical selection remains a separate issue.
 Prepared classical M2 metadata and a fixed Pauli/readout frame must be named.
 No axiom, primitive, audit verdict or editable prompt is changed here.
+
+BLOCK04 additionally studies ordinary CPTP programs and labelled Lüders
+instruments with supplied apparatuses and input quantum states. Quantum
+program return is an extra interpretation, not the framework Record axiom.
+Theorems about no-programming, spin-reference measurements and diamond norms
+are named primary-source mathematical imports in BLOCK04_DERIVATION.md.
+The new instrument-distance calculations are author proofs with finite
+checks; they have no independent review and no main/audit authority.

@@ -1,0 +1,846 @@
+{
+  "status": "PASS",
+  "checks": 265,
+  "details": [
+    {
+      "name": "sharp_projector_0"
+    },
+    {
+      "name": "Choi_overlap_0"
+    },
+    {
+      "name": "Choi_cubic_0"
+    },
+    {
+      "name": "sharp_projector_1"
+    },
+    {
+      "name": "Choi_overlap_1"
+    },
+    {
+      "name": "Choi_cubic_1"
+    },
+    {
+      "name": "Choi_absolute_partial_trace_squared"
+    },
+    {
+      "name": "complex_axes_partial_trace"
+    },
+    {
+      "name": "antipodal_entangled_trace_norm"
+    },
+    {
+      "name": "spin_channel_trace_preserving_difference"
+    },
+    {
+      "name": "ellipse_discriminant"
+    },
+    {
+      "name": "ellipse_endpoint_derivative"
+    },
+    {
+      "name": "ellipse_second_derivative"
+    },
+    {
+      "name": "Kraus_completeness_1"
+    },
+    {
+      "name": "plus_effect_1"
+    },
+    {
+      "name": "plus_Choi_formula_1"
+    },
+    {
+      "name": "minus_Choi_formula_1"
+    },
+    {
+      "name": "optimizer_inside_1"
+    },
+    {
+      "name": "ellipse_optimizer_value_1"
+    },
+    {
+      "name": "finite_grid_below_proved_max_1"
+    },
+    {
+      "name": "reference_improves_over_down_input_1"
+    },
+    {
+      "name": "Kraus_completeness_2"
+    },
+    {
+      "name": "plus_effect_2"
+    },
+    {
+      "name": "plus_Choi_formula_2"
+    },
+    {
+      "name": "minus_Choi_formula_2"
+    },
+    {
+      "name": "optimizer_inside_2"
+    },
+    {
+      "name": "ellipse_optimizer_value_2"
+    },
+    {
+      "name": "finite_grid_below_proved_max_2"
+    },
+    {
+      "name": "reference_improves_over_down_input_2"
+    },
+    {
+      "name": "Kraus_completeness_3"
+    },
+    {
+      "name": "plus_effect_3"
+    },
+    {
+      "name": "plus_Choi_formula_3"
+    },
+    {
+      "name": "minus_Choi_formula_3"
+    },
+    {
+      "name": "optimizer_inside_3"
+    },
+    {
+      "name": "ellipse_optimizer_value_3"
+    },
+    {
+      "name": "finite_grid_below_proved_max_3"
+    },
+    {
+      "name": "reference_improves_over_down_input_3"
+    },
+    {
+      "name": "Kraus_completeness_6"
+    },
+    {
+      "name": "plus_effect_6"
+    },
+    {
+      "name": "plus_Choi_formula_6"
+    },
+    {
+      "name": "minus_Choi_formula_6"
+    },
+    {
+      "name": "optimizer_inside_6"
+    },
+    {
+      "name": "ellipse_optimizer_value_6"
+    },
+    {
+      "name": "finite_grid_below_proved_max_6"
+    },
+    {
+      "name": "reference_improves_over_down_input_6"
+    },
+    {
+      "name": "Kraus_completeness_15"
+    },
+    {
+      "name": "plus_effect_15"
+    },
+    {
+      "name": "plus_Choi_formula_15"
+    },
+    {
+      "name": "minus_Choi_formula_15"
+    },
+    {
+      "name": "optimizer_inside_15"
+    },
+    {
+      "name": "ellipse_optimizer_value_15"
+    },
+    {
+      "name": "finite_grid_below_proved_max_15"
+    },
+    {
+      "name": "reference_improves_over_down_input_15"
+    },
+    {
+      "name": "literal_joint_completeness_1"
+    },
+    {
+      "name": "literal_joint_outcome_orthogonality_1"
+    },
+    {
+      "name": "literal_symmetric_plus_Choi_1"
+    },
+    {
+      "name": "literal_symmetric_minus_Choi_1"
+    },
+    {
+      "name": "literal_program_disturbance_1"
+    },
+    {
+      "name": "literal_joint_completeness_2"
+    },
+    {
+      "name": "literal_joint_outcome_orthogonality_2"
+    },
+    {
+      "name": "literal_symmetric_plus_Choi_2"
+    },
+    {
+      "name": "literal_symmetric_minus_Choi_2"
+    },
+    {
+      "name": "literal_program_disturbance_2"
+    },
+    {
+      "name": "literal_joint_completeness_3"
+    },
+    {
+      "name": "literal_joint_outcome_orthogonality_3"
+    },
+    {
+      "name": "literal_symmetric_plus_Choi_3"
+    },
+    {
+      "name": "literal_symmetric_minus_Choi_3"
+    },
+    {
+      "name": "literal_program_disturbance_3"
+    },
+    {
+      "name": "literal_joint_completeness_6"
+    },
+    {
+      "name": "literal_joint_outcome_orthogonality_6"
+    },
+    {
+      "name": "literal_symmetric_plus_Choi_6"
+    },
+    {
+      "name": "literal_symmetric_minus_Choi_6"
+    },
+    {
+      "name": "literal_program_disturbance_6"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_0"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_0"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_0"
+    },
+    {
+      "name": "spin_reference_attains_bound_1"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_1"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_1"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_1"
+    },
+    {
+      "name": "spin_reference_attains_bound_2"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_2"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_2"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_2"
+    },
+    {
+      "name": "spin_reference_attains_bound_3"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_3"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_3"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_3"
+    },
+    {
+      "name": "spin_reference_attains_bound_6"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_4"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_4"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_4"
+    },
+    {
+      "name": "spin_reference_attains_bound_15"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_5"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_5"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_5"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_6"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_6"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_6"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_7"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_7"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_7"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_8"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_8"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_8"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_9"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_9"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_9"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_10"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_10"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_10"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_11"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_11"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_11"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_12"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_12"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_12"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_13"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_13"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_13"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_14"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_14"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_14"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_15"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_15"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_15"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_16"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_16"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_16"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_17"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_17"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_17"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_18"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_18"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_18"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_19"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_19"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_19"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_20"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_20"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_20"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_21"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_21"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_21"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_22"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_22"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_22"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_23"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_23"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_23"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_24"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_24"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_24"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_25"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_25"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_25"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_26"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_26"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_26"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_27"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_27"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_27"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_28"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_28"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_28"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_29"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_29"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_29"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_30"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_30"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_30"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_31"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_31"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_31"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_32"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_32"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_32"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_33"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_33"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_33"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_34"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_34"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_34"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_35"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_35"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_35"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_36"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_36"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_36"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_37"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_37"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_37"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_38"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_38"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_38"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_39"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_39"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_39"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_40"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_40"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_40"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_41"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_41"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_41"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_42"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_42"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_42"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_43"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_43"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_43"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_44"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_44"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_44"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_45"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_45"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_45"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_46"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_46"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_46"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_47"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_47"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_47"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_48"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_48"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_48"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_49"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_49"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_49"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_50"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_50"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_50"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_51"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_51"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_51"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_52"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_52"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_52"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_53"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_53"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_53"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_54"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_54"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_54"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_55"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_55"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_55"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_56"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_56"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_56"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_57"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_57"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_57"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_58"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_58"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_58"
+    },
+    {
+      "name": "arbitrary_axis_reference_input_59"
+    },
+    {
+      "name": "arbitrary_axis_lower_witness_59"
+    },
+    {
+      "name": "spin_arbitrary_reference_input_59"
+    },
+    {
+      "name": "cap_boundary_exact_1/10"
+    },
+    {
+      "name": "net_error_squared_1/10"
+    },
+    {
+      "name": "cap_boundary_exact_1/2"
+    },
+    {
+      "name": "net_error_squared_1/2"
+    },
+    {
+      "name": "cap_boundary_exact_1"
+    },
+    {
+      "name": "net_error_squared_1"
+    },
+    {
+      "name": "six_qubit_bank_bound"
+    }
+  ],
+  "samples": [
+    {
+      "k": 1,
+      "diamond": 1.5099407093782344,
+      "down_input": 1.5,
+      "outcome_L1": 1.0,
+      "program_max_infidelity": 0.5,
+      "optimal_down_weight": 0.9549703546891173
+    },
+    {
+      "k": 2,
+      "diamond": 1.1297331208153718,
+      "down_input": 1.1111111111111112,
+      "outcome_L1": 0.6666666666666666,
+      "program_max_infidelity": 0.4444444444444444,
+      "optimal_down_weight": 0.94403778263832
+    },
+    {
+      "k": 3,
+      "diamond": 0.8962395622770736,
+      "down_input": 0.875,
+      "outcome_L1": 0.5,
+      "program_max_infidelity": 0.375,
+      "optimal_down_weight": 0.9414561592828935
+    },
+    {
+      "k": 6,
+      "diamond": 0.5501091500159252,
+      "down_input": 0.5306122448979592,
+      "outcome_L1": 0.2857142857142857,
+      "program_max_infidelity": 0.24489795918367346,
+      "optimal_down_weight": 0.941321596060376
+    },
+    {
+      "k": 15,
+      "diamond": 0.25391339478179914,
+      "down_input": 0.2421875,
+      "outcome_L1": 0.125,
+      "program_max_infidelity": 0.1171875,
+      "optimal_down_weight": 0.9437418998550959
+    }
+  ],
+  "elapsed_seconds": 1.2898843750008382,
+  "source_sha256": "61b6efe7825d9aedf4443ce3a5f0a92fc015e0d7616863be66ecbbc13a789c77",
+  "limitations": "Finite author checks; quantified diamond and permanence proofs are in BLOCK04_DERIVATION.md; no independent review or axiom no-go."
+}

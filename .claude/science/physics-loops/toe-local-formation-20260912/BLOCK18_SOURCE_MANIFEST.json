@@ -1,0 +1,35 @@
+{
+  "base_main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK18_WORKING_PLAN.md",
+      "sha256": "34ce98d2958ed8a33a868c9c380c559ed2ebce1d7d7ab32299e24185299d9448"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK18_DERIVATION.md",
+      "sha256": "7c1974d2b16afb0b195e4af95e83a7a8dac749bb01a561a5794ee8e602ca5f1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/check_block18_instrument.py",
+      "sha256": "9e53ca7ef41a4961bac7e77c565e49097a1b165c2285b51821c468b81664040e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK18_INSTRUMENT_CHECKS.json",
+      "sha256": "117d79ce4d460886cccb6d72feef7db386e0aba50cd42d6c0644cd47126effb8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK18_COLD_AUTHOR_REVIEW.md",
+      "sha256": "1f38d2be34b1a7150f26512e94cbace9d6d38ea274761c5fdc7cb8ffee3bbfad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/recovery/block18/INITIAL_DERIVATION.md",
+      "sha256": "4729b6bfa2349608f612d3587ac12f0604e876b12c25127785d8568052e01968"
+    }
+  ],
+  "parent": {
+    "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+    "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+  },
+  "status": "conditional-support",
+  "independent_review": "pending"
+}

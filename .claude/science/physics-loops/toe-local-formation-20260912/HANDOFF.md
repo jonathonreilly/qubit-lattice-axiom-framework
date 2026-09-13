@@ -490,3 +490,58 @@ Cold author review is in BLOCK17_COLD_AUTHOR_REVIEW. Next package one coherent
 positive source note/runner with actual mutation evidence, fresh cache and
 focused mechanical checks, then continue personally until11:38:24UTC.
 The own lock still expires10:01UTC and needs refresh before then.
+
+
+## Projective milestone and native matter-sensitive target,10:07UTC
+
+PR8088 is open at cead7eefc97b7d6884ca280599e53165ffcd8da5. It packages the
+Block17 all-N finite projector-history construction in one443-line note,
+primary31checks, twelve actual rejected mutants, fresh6-input cache,27 Python
+sources compiled and a manifest adding one node/two edges. Full branch
+whitespace passes; worktree is clean and pushed. Independent review and
+combined integration gates remain pending. Original comb mutation raised
+KeyError before a fixed-terminal assertion; original sources/outputs were
+preserved and the final assertion catches it. A cache wrapper expected pass
+instead of the actual ok enum after writing a successful cache; this wrapper
+is preserved too. No scientific tolerance was changed.
+
+New target Block18: the existing native nonbridge cycle pulse can carry a
+protected-operator angle. For any physical effect0<=E<=I in the protected
+algebra, define a=(sqrtE+sqrt(I-E))/sqrt2,b=(sqrtE-sqrt(I-E))/sqrt2 and
+U=a+b Z_e S_e. Since E commutes with Z_e,S_e, U is unitary and
+Q_z U P=J_z sqrt(E_z) P, J_z=sqrt2 Q_z P. This realizes a matter-sensitive
+binary Luders instrument at the actual edge Record, conditional on the
+chosen physical effect/pulse and the parent's Born/code/carrier assumptions.
+
+Specialize E_z=(I+z kappa B_v)/2, B_v=product incident Z=1-2n_v, with v an
+endpoint of the candidate. The generator B_v(iZ_eS_e) remains inside the
+same plaquette-star support. Decoded channel is c²rho+s²B_vrhoB_v,
+kappa=sin theta,eta=cos theta, disturbance diamond=1-eta. Incident currents
+attenuate byeta and total number survives; mean matter energy changes by
+-(1-eta)<H_incident>. The nearest-Record law residual becomes exact: for
+fixed nonzero kappa, the native parity mean <B_v> must factor through the
+complete nearest-neighbor Record condition. This is not yet that carrier.
+
+Also derive the sharp generic instrument contrast bound
+D<=sqrt(2epsilon-epsilon²) for epsilon<=1, equivalently
+epsilon>=1-sqrt(1-D²), via Kraus coherence and classical Bhattacharyya overlap;
+the parity pulse saturates it. KSW2006 primary first4 pages were read for
+information-disturbance context; no theorem is imported without its own proof.
+Englert1996 abstract was read, PDF open failed. The main native-edge parent
+through definitions and Theorems1-2 was reread; growth source sections1-3
+were reread. Next write the complete proof, then an independently assembled
+physical Pauli/CAR checker. No execution agents. Deadline11:38:24UTC.
+Own lock refreshed09:45:31UTC, now expires10:45:31UTC.
+
+
+Block18 at10:27UTC: proof and cold author review complete, final185 exact
+checks pass in1.28s. Any full-carrier protected binary effect has native
+U=a+bZS and decoded Lueders branches; parity pulses give exact current,
+energy and sharp contrast/disturbance formulas, plus even-Slater histories.
+Two noncommuting native events preserve old Records and the next cycle.
+Cold review narrowed nearest-condition sufficiency to finite/countable
+families; arbitrary uncountable families additionally need measurable
+factorization. Original proof preserved under recovery/block18. No failed
+math predicate or numeric tolerance. Main still cda8b1445e2. Next package a
+self-contained main-based milestone, then continue personally until11:38:24.
+Own lock refreshed10:26:45UTC, expires11:26:45UTC. No agents.

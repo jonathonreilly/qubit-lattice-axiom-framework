@@ -21,7 +21,12 @@
     "sha:check_block21_precision.py": true,
     "sha:BLOCK21_INSTRUMENT_PRECISION_CHECKS.json": true,
     "sha:BLOCK21_COLD_AUTHOR_REVIEW.md": true,
-    "precision_checker_compiles": true
+    "precision_checker_compiles": true,
+    "final_synthesis_links": true,
+    "six_final_heads_and_29_source_hashes_unchanged": true,
+    "nine_final_cache_bytes_unchanged": true
   },
-  "updated_utc": "2026-09-13T11:34:02.450430+00:00"
+  "updated_utc": "2026-09-13T11:34:02.450430+00:00",
+  "final_synthesis_sha256": "dc3c7d01994b8d76a4a3b8e612c6a4773fe34c24d07e3970a92debe016739dd7",
+  "whitespace_scope": "Six source PRs passed; campaign copied Block05 source snapshots retain original formatting; diagnostic saved; new synthesis commits pass."
 }

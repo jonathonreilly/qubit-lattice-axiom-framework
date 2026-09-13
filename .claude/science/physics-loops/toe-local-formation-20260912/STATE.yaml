@@ -1,6 +1,6 @@
 loop: toe-local-formation-20260912
 mode: campaign
-status: running
+status: completed_timebox
 main_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
 branch: physics-loop/toe-local-formation-20260912
 start_utc: 2026-09-12T23:38:24Z
@@ -12,13 +12,13 @@ execution: supervisor_only_no_subagents
 independent_review: pending_external_handoff
 formal_audit: deferred
 block: 21
-active_route: final_campaign_synthesis
+active_route: completed_timebox
 actual_current_surface_status: conditional-support
 hard_residual: Factor the native complete leaf event law through physical nearest-neighbor Records on its specified ready family.
-next_action: Complete synthesis checks, checkpoint, and pause the continuation and release the campaign lock at 11:38:24 UTC.
+next_action: Await independent source review or new owner authorization; use NEXT_DECISIVE_TESTS.md for the next campaign.
 research_emphasis: analytical_derivation_first_small_exact_refutation_checks
 continuation_automation: toe-derivation-campaign-continuation
-last_checkpoint_utc: 2026-09-13T11:28:50Z
+last_checkpoint_utc: 2026-09-13T11:39:01Z
 apparatus_milestone_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8084
 apparatus_milestone_head: e56bca5c4edc48d279de8d13edb3884e7b8d8479
 apparatus_milestone_worktree: /Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913
@@ -38,3 +38,11 @@ projective_history_milestone_worktree: /Users/jonreilly/Projects/Physics-worktre
 
 native_informative_record_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8089
 native_informative_record_head: 0b00d351b4c6d4ef6fd737925f5ae403e086cc95
+research_end_utc: 2026-09-13T11:38:24Z
+completion_checkpoint_utc: 2026-09-13T11:39:01Z
+continuation_status: PAUSED
+campaign_lock_status: released
+toe_achieved: false
+axiom_forcing_wall_established: false
+synthesis: CAMPAIGN_SYNTHESIS.md
+source_index: FINAL_SOURCE_INDEX.json

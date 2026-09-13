@@ -618,3 +618,17 @@ Synthesis committed at c489526577. Full campaign whitespace check found
 only original Block05 source snapshot formatting; archive bytes were kept
 unchanged, diagnostic saved. The new commit and the campaign diff excluding
 that source-snapshot directory pass. Source milestone PR checks are unchanged.
+
+
+## Authorized timebox completed
+
+The research window ended at2026-09-13T11:38:24Z. Safe final checkpoint at2026-09-13T11:39:01Z.
+The continuation automation is PAUSED, verified from its persisted config.
+The campaign-worktree lock was released with the exact owner and holder id.
+All six milestone PRs remain OPEN and pending independent review, with no
+source-author landing. The final read-only check matched29 science-source
+hashes and9 evidence-cache hashes at the six clean, pushed milestone heads.
+The campaign has21 blocks, six source PRs, and the final synthesis/next-test
+packet. The authorized12-hour timebox is complete; the TOE and an
+axiom-forcing wall are not established. Further research requires a new
+owner instruction. No source axioms, primitives or editable prompts changed.

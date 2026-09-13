@@ -1,0 +1,10 @@
+{
+  "name": "birefringent_self_insertion",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "dc767673be9d6d34b53b72c53d5c6fd8cbc53a9a44f1e080e5b79b2aa45212be",
+  "old": "actual,2*slash(K[j])",
+  "new": "actual,slash(K[j])",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-fv5b_1ts/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-fv5b_1ts/primary.py\", line 213, in run\n    close('birefringent_Clifford_insertion_'+str((idx,trial,j)),actual,slash(K[j]),2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-fv5b_1ts/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-fv5b_1ts/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('birefringent_Clifford_insertion_(0, 0, 0)', {'error': 0.3588046395290549})\n"
+}

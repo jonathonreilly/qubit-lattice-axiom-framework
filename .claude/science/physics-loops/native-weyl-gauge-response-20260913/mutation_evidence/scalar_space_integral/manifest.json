@@ -1,0 +1,10 @@
+{
+  "name": "scalar_space_integral",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "ff3bba0c6c5aa6596f85c8dde4c83cc0b28787e38e4403785490f93de8c27d96",
+  "old": "Is-2*(2+r)/(3*r*(1+r)**2)",
+  "new": "Is-2*(2+r)/(3*(1+r)**2)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yzy4f6n2/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yzy4f6n2/primary.py\", line 151, in run\n    check('space_parameter_integral',s.factor(Is-2*(2+r)/(3*(1+r)**2))==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yzy4f6n2/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('space_parameter_integral', {})\n"
+}

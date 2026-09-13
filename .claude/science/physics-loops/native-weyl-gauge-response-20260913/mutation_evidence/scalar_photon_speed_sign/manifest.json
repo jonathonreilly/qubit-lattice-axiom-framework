@@ -1,0 +1,10 @@
+{
+  "name": "scalar_photon_speed_sign",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "54e39b2dc0d7d5e035dd0c1e6169c0336531ed6f9e11070822f68b3aa7dc0191",
+  "old": "cd=(r-1/r)/12",
+  "new": "cd=(1/r-r)/12",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-8qse84lz/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-8qse84lz/primary.py\", line 155, in run\n    check('scalar_ratio_flow',s.factor(rd+(r-1)*(r**3+11*r*r+9*r+3)/(12*(r+1)**2))==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-8qse84lz/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_ratio_flow', {})\n"
+}

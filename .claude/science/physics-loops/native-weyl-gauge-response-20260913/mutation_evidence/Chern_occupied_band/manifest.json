@@ -1,0 +1,10 @@
+{
+  "name": "Chern_occupied_band",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "39eaad171c17a46b56243ee7ba36dfff1c9264fd576fe7e813102066e0c98de8",
+  "old": "u=U[...,0]",
+  "new": "u=U[...,1]",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-e47fkhyt/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-e47fkhyt/primary.py\", line 306, in run\n    check('native_slice_Chern_links_'+str((mass,count)),abs(row['link_C']-index)<1e-11 and row['min_overlap']>.8,**row)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-e47fkhyt/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_slice_Chern_links_(0.7, 24)', {'M': 0.7, 'N': 24, 'link_C': -1.0, 'Kubo_C': 1.0000090127491708, 'min_overlap': 0.9828724668664769, 'gap': 0.7})\n"
+}

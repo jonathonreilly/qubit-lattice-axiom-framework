@@ -1,0 +1,10 @@
+{
+  "name": "native_photon_node_count",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "36cba1537f94e3c971aff0f844184f8dcba936c728e8ad56a7bbf0646ae9dadc",
+  "old": " for chir in [-1,1]:\n  node=np.array([0,0,chir*np.arccos(zeta)])",
+  "new": " for chir in [1]:\n  node=np.array([0,0,chir*np.arccos(zeta)])",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-zst3tv48/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-zst3tv48/primary.py\", line 296, in run\n    check('native_logarithmic_shell_'+str((ratio,radius)),np.max(errs)<3*radius**2,errors=errs.tolist(),self_coefficients=sf.real.tolist(),electric=el.real.tolist(),magnetic=mag.real.tolist())\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-zst3tv48/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_logarithmic_shell_(0.8, 0.2)', {'errors': [0.051977000665885065, 0.8590233694005625, 0.5568030097532229], 'self_coefficients': [[0.5677598770796175, 1.1596870236199437, 1.1596870236199437, 1.1290929581818512]], 'electric': [0.872989125049969, 0.872989125049969, 0.8076432972661041], 'magnetic': [[0.0, 0.5682540741821834, 0.5098636569134437], [0.5682540741821834, 0.0, 0.5098636569134438], [0.5257986618496535, 0.5257986618496535, 0.0]]})\n"
+}

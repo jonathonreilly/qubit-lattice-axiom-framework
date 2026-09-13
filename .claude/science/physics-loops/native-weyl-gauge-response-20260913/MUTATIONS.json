@@ -1,0 +1,338 @@
+{
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "count": 33,
+  "all_effective": true,
+  "elapsed_seconds": 36.482938374974765,
+  "mutations": [
+    {
+      "name": "parameter_determinant",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "fd42260095c7d26f27f5e2e12f01b25f34ed8fa614ad586d930fd86cb4f2d341",
+      "old": "np.sqrt(np.prod(A,axis=1))",
+      "new": "np.prod(A,axis=1)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rrqeqhsx/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rrqeqhsx/primary.py\", line 160, in run\n    close('scalar_parameter_matrix_'+str(ratio),m,expected,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rrqeqhsx/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rrqeqhsx/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_parameter_matrix_0.6', {'error': 0.884104938271607})\n"
+    },
+    {
+      "name": "parameter_vertex_contraction",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "e43492ad5acb7e88289f6a698b06356abd73828bf15f646689b4a9fab17b542b",
+      "old": "(2*square-np.sum(square))",
+      "new": "(3*square-np.sum(square))",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yfdlvkdg/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yfdlvkdg/primary.py\", line 160, in run\n    close('scalar_parameter_matrix_'+str(ratio),m,expected,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yfdlvkdg/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yfdlvkdg/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_parameter_matrix_0.6', {'error': 0.7812500000000002})\n"
+    },
+    {
+      "name": "angular_radial_power",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "c9e6c454aebba3355899549b69830a931b89759d7dddb15ecb3c9a7f314d4376",
+      "old": "w/q2**2,n,n",
+      "new": "w/q2,n,n",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-kdfsjn6g/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-kdfsjn6g/primary.py\", line 161, in run\n    close('scalar_angular_matrix_'+str(ratio),angular_matrix(E,n,w),m,2e-8)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-kdfsjn6g/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-kdfsjn6g/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_angular_matrix_0.6', {'error': 0.44766666666667987})\n"
+    },
+    {
+      "name": "angular_numerator",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "3e6bfa07db681e3a82cc8c0f079182764a40d22bde4867c006722b98bc0eb393",
+      "old": "inside=E*np.sum(w/q2)-2*E@avg@metric",
+      "new": "inside=E*np.sum(w/q2)-E@avg@metric",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-9_ulyjs3/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-9_ulyjs3/primary.py\", line 161, in run\n    close('scalar_angular_matrix_'+str(ratio),angular_matrix(E,n,w),m,2e-8)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-9_ulyjs3/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-9_ulyjs3/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_angular_matrix_0.6', {'error': 0.3895833333333508})\n"
+    },
+    {
+      "name": "coframe_linear_coefficient",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "befc95adbffa020737a6dabed2f730ee5059cbbcc3d4e2bb3d18e830d31fc5c6",
+      "old": "derivative=-5*C/3+2*np.trace(C)*np.eye(4)/3",
+      "new": "derivative=-4*C/3+2*np.trace(C)*np.eye(4)/3",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ir8l5clu/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ir8l5clu/primary.py\", line 170, in run\n    check('generic_coframe_derivative_'+str(trial),errs[2]<1e-5 and errs[1]<.27*errs[0] and errs[2]<.27*errs[1],errors=errs)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ir8l5clu/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('generic_coframe_derivative_0', {'errors': [0.33330747172537434, 0.3333268679808568, 0.3333317169981749]})\n"
+    },
+    {
+      "name": "scalar_space_integral",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "ff3bba0c6c5aa6596f85c8dde4c83cc0b28787e38e4403785490f93de8c27d96",
+      "old": "Is-2*(2+r)/(3*r*(1+r)**2)",
+      "new": "Is-2*(2+r)/(3*(1+r)**2)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yzy4f6n2/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yzy4f6n2/primary.py\", line 151, in run\n    check('space_parameter_integral',s.factor(Is-2*(2+r)/(3*(1+r)**2))==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-yzy4f6n2/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('space_parameter_integral', {})\n"
+    },
+    {
+      "name": "scalar_photon_speed_sign",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "54e39b2dc0d7d5e035dd0c1e6169c0336531ed6f9e11070822f68b3aa7dc0191",
+      "old": "cd=(r-1/r)/12",
+      "new": "cd=(1/r-r)/12",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-8qse84lz/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-8qse84lz/primary.py\", line 155, in run\n    check('scalar_ratio_flow',s.factor(rd+(r-1)*(r**3+11*r*r+9*r+3)/(12*(r+1)**2))==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-8qse84lz/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_ratio_flow', {})\n"
+    },
+    {
+      "name": "polarization_loop_factor",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "dd5507beb47834dd77268263136d8cb44570d91f3c439842a061aed702c04b31",
+      "old": "8*s.integrate(x*(1-x),(x,0,1))/8",
+      "new": "4*s.integrate(x*(1-x),(x,0,1))/8",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ijpl7p2e/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ijpl7p2e/primary.py\", line 183, in run\n    check('bubble_transverse_coefficient',4*s.integrate(x*(1-x),(x,0,1))/8==s.Rational(1,6))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ijpl7p2e/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('bubble_transverse_coefficient', {})\n"
+    },
+    {
+      "name": "four_component_trace",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "6de35d04eb7351eab009fe5f1fd73973f1846c6fe05d51fe95a12b8ed6e2ee6f",
+      "old": "trace,4*(np.outer(q,q+p)",
+      "new": "trace,2*(np.outer(q,q+p)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-5sc21_t9/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-5sc21_t9/primary.py\", line 187, in run\n    close('bubble_gamma_trace_'+str(trial),trace,2*(np.outer(q,q+p)+np.outer(q+p,q)-np.eye(4)*np.dot(q,q+p)),2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-5sc21_t9/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-5sc21_t9/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('bubble_gamma_trace_0', {'error': 2.585475654710512})\n"
+    },
+    {
+      "name": "longitudinal_Ward_sign",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "18915a675e324c72a405651b3684feda27daca585def9625827ce48ef909de46",
+      "old": "qs@deriv@qs,-slash(E[:,j])",
+      "new": "qs@deriv@qs,slash(E[:,j])",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-7bvuljxi/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-7bvuljxi/primary.py\", line 176, in run\n    close('longitudinal_Ward_'+str((trial,j)),qs@deriv@qs,slash(E[:,j]),2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-7bvuljxi/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-7bvuljxi/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('longitudinal_Ward_(0, 0)', {'error': 1.9613785031376294})\n"
+    },
+    {
+      "name": "metric_medium_volume",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "b6c7357c8ce99cc1fcfb242f38d25501565ad8c757ef25a13aefc7ed161c2b93",
+      "old": "return M/det,det*np.linalg.inv(M)",
+      "new": "return M*det,det*np.linalg.inv(M)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-kh4jfjfk/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-kh4jfjfk/primary.py\", line 192, in run\n    close('induced_metric_medium_'+str(trial),direct,medium,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-kh4jfjfk/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-kh4jfjfk/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('induced_metric_medium_0', {'error': 4.475588749153168})\n"
+    },
+    {
+      "name": "birefringent_magnetic_kernel",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "01766979826017dc3de6b78c0669125ec60a635e8d18d55e97daf5344dd62d66",
+      "old": "n[0]**2*W+C.T@W@C",
+      "new": "n[0]**2*W-C.T@W@C",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-mrx7zfgs/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-mrx7zfgs/primary.py\", line 206, in run\n    close('birefringent_trace_'+str((idx,a)),np.trace(K),0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-mrx7zfgs/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-mrx7zfgs/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('birefringent_trace_(0, 1)', {'error': 2.0})\n"
+    },
+    {
+      "name": "birefringent_time_kernel",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "4edf8be8695d45e60898c3719e6b284bbdec8fb000f66855b268a9a7991096ba",
+      "old": "out[0,0]=k@W@k",
+      "new": "out[0,0]=k@W@k/2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-k3xf68fi/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-k3xf68fi/primary.py\", line 206, in run\n    close('birefringent_trace_'+str((idx,a)),np.trace(K),0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-k3xf68fi/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-k3xf68fi/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('birefringent_trace_(0, 1)', {'error': 0.5})\n"
+    },
+    {
+      "name": "birefringent_self_insertion",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "dc767673be9d6d34b53b72c53d5c6fd8cbc53a9a44f1e080e5b79b2aa45212be",
+      "old": "actual,2*slash(K[j])",
+      "new": "actual,slash(K[j])",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-fv5b_1ts/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-fv5b_1ts/primary.py\", line 213, in run\n    close('birefringent_Clifford_insertion_'+str((idx,trial,j)),actual,slash(K[j]),2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-fv5b_1ts/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-fv5b_1ts/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('birefringent_Clifford_insertion_(0, 0, 0)', {'error': 0.3588046395290549})\n"
+    },
+    {
+      "name": "relative_metric_running_power",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "ebcf189e4a3e83b63508508238f9c359147a6ba01b16872fb96f18caa55ef576",
+      "old": "R=z**-3;W=",
+      "new": "R=z**-2;W=",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-j5vlnil8/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-j5vlnil8/primary.py\", line 229, in run\n    check('running_relative_metric_equation',s.simplify(s.diff(R,ell)+charge*R/(2*s.pi**2))==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-j5vlnil8/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('running_relative_metric_equation', {})\n"
+    },
+    {
+      "name": "quadratic_memory_factor",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "01dd21de2be5184a9d93162a2e75add5cef3f048cdca6bf2edbf115d0254da49",
+      "old": "W=s.Rational(2,5)*(z**-1-z**-6)",
+      "new": "W=s.Rational(1,5)*(z**-1-z**-6)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-f897rf9x/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-f897rf9x/primary.py\", line 231, in run\n    check('generated_shear_memory_equation',s.simplify(s.diff(W,ell)+charge*W/(6*s.pi**2)-2*charge*R**2/(6*s.pi**2))==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-f897rf9x/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('generated_shear_memory_equation', {})\n"
+    },
+    {
+      "name": "accumulated_metric",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "5a3d2825da72c2697d7378665e3d3e0e3c928f108a1873ce5658d1e52d2f6434",
+      "old": "f=(1+2*tt**-3)/3",
+      "new": "f=(1+3*tt**-3)/3",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rlw_txxo/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rlw_txxo/primary.py\", line 263, in run\n    check('integrated_photon_metric_mean',s.simplify(mean-(1-zz**-3)/3)==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rlw_txxo/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('integrated_photon_metric_mean', {})\n"
+    },
+    {
+      "name": "native_incidence_symbol",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "0b2ec136ca9aab8c247d81f79e4fb9fa7b583adc4ce0dd45b5970b6aa48dec43",
+      "old": "(2*D[i]/a*np.sin(qmom[i]/2))",
+      "new": "(D[i]/a*np.sin(qmom[i]/2))",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmfulhcx/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmfulhcx/primary.py\", line 238, in run\n    close('native_Peierls_Ward_'+str(trial),contraction,(native_h(k+qmom/2)-native_h(k-qmom/2))/a,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmfulhcx/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmfulhcx/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_Peierls_Ward_0', {'error': 2.338629446601872})\n"
+    },
+    {
+      "name": "Peierls_second_contact",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "666e13859026137631d7a6b1b210ce4839f8cc7d945193e3e33b05fe221e57b9",
+      "old": "val=(1j*delta)**j*hop[axis]",
+      "new": "val=(1j*delta)**j*hop[axis]*(.5 if j==2 else 1)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-_w85vki_/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-_w85vki_/primary.py\", line 277, in run\n    check('finite_Peierls_gauge_curvature_'+str(seed),abs(g['sum'])<2e-10 and abs(g['contact'])>1 and abs(g['bubble'])>1,**g)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-_w85vki_/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_Peierls_gauge_curvature_73', {'seed': 73, 'gap': np.float64(0.29999999999999755), 'contact': np.float64(21.130339358638693), 'bubble': np.float64(-42.260678717277386), 'sum': np.float64(-21.130339358638693), 'spectrum_error': 5.6066262743570405e-15, 'matrix_hermiticity': 0.0})\n"
+    },
+    {
+      "name": "gauge_curvature_bubble_factor",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "d2c53630dcc2988b779ac019c0b4f11b91e8498c33b17e34a66b8ac374e5c30e",
+      "old": "bubble=2*np.sum(abs(pert",
+      "new": "bubble=np.sum(abs(pert",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-hn_vtu4n/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-hn_vtu4n/primary.py\", line 277, in run\n    check('finite_Peierls_gauge_curvature_'+str(seed),abs(g['sum'])<2e-10 and abs(g['contact'])>1 and abs(g['bubble'])>1,**g)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-hn_vtu4n/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_Peierls_gauge_curvature_73', {'seed': 73, 'gap': np.float64(0.29999999999999755), 'contact': np.float64(42.260678717277386), 'bubble': np.float64(-21.130339358638693), 'sum': np.float64(21.130339358638693), 'spectrum_error': 5.6066262743570405e-15, 'matrix_hermiticity': 0.0})\n"
+    },
+    {
+      "name": "native_current_derivative",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "83792678d7ce4e8df066a7460a01ad004108f0b34e2b342823694e08125e6380",
+      "old": "out[...,axis]=np.cos(k[...,axis])",
+      "new": "out[...,axis]=-np.cos(k[...,axis])",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bzo0xq0v/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bzo0xq0v/primary.py\", line 296, in run\n    check('native_logarithmic_shell_'+str((ratio,radius)),np.max(errs)<3*radius**2,errors=errs.tolist(),self_coefficients=sf.real.tolist(),electric=el.real.tolist(),magnetic=mag.real.tolist())\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bzo0xq0v/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_logarithmic_shell_(0.8, 0.2)', {'errors': [2.3770307567497184, 0.07434386984340424, 0.03650013271568375], 'self_coefficients': [[0.5677598770796175, -1.1959607979019817, -1.1959607979019817, 1.104482243484096], [0.5677598770796175, -1.1959607979019822, -1.1959607979019817, 1.104482243484096]], 'electric': [1.7410105365100708, 1.7410105365100708, 1.6152865945322081], 'magnetic': [[0.0, 1.0976735354206066, 1.0373702177317399], [1.0976735354206069, 0.0, 1.0373702177317399], [1.1031667993823504, 1.1031667993823504, 0.0]]})\n"
+    },
+    {
+      "name": "native_shell_time_sign",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "6837e020eca776070fb37fc2eeef9881f42b4192238d397f8b482cd0d4cb08d3",
+      "old": "V@G@(1j*G)@V",
+      "new": "V@G@(-1j*G)@V",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-vifvdhr8/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-vifvdhr8/primary.py\", line 296, in run\n    check('native_logarithmic_shell_'+str((ratio,radius)),np.max(errs)<3*radius**2,errors=errs.tolist(),self_coefficients=sf.real.tolist(),electric=el.real.tolist(),magnetic=mag.real.tolist())\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-vifvdhr8/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_logarithmic_shell_(0.8, 0.2)', {'errors': [1.135661111647519, 0.07931158343327138, 0.06984148169770021], 'self_coefficients': [[-0.5677598770796175, 1.1596870236199437, 1.1596870236199437, 1.1290929581818512], [-0.5677598770796175, 1.1596870236199437, 1.1596870236199437, 1.1290929581818512]], 'electric': [1.745978250099938, 1.745978250099938, 1.6152865945322081], 'magnetic': [[0.0, 1.1365081483643669, 1.0197273138268876], [1.1365081483643669, 0.0, 1.0197273138268876], [1.051597323699307, 1.051597323699307, 0.0]]})\n"
+    },
+    {
+      "name": "native_photon_node_count",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "36cba1537f94e3c971aff0f844184f8dcba936c728e8ad56a7bbf0646ae9dadc",
+      "old": " for chir in [-1,1]:\n  node=np.array([0,0,chir*np.arccos(zeta)])",
+      "new": " for chir in [1]:\n  node=np.array([0,0,chir*np.arccos(zeta)])",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-zst3tv48/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-zst3tv48/primary.py\", line 296, in run\n    check('native_logarithmic_shell_'+str((ratio,radius)),np.max(errs)<3*radius**2,errors=errs.tolist(),self_coefficients=sf.real.tolist(),electric=el.real.tolist(),magnetic=mag.real.tolist())\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-zst3tv48/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_logarithmic_shell_(0.8, 0.2)', {'errors': [0.051977000665885065, 0.8590233694005625, 0.5568030097532229], 'self_coefficients': [[0.5677598770796175, 1.1596870236199437, 1.1596870236199437, 1.1290929581818512]], 'electric': [0.872989125049969, 0.872989125049969, 0.8076432972661041], 'magnetic': [[0.0, 0.5682540741821834, 0.5098636569134437], [0.5682540741821834, 0.0, 0.5098636569134438], [0.5257986618496535, 0.5257986618496535, 0.0]]})\n"
+    },
+    {
+      "name": "native_photon_electric_sign",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "ce2c9d49b8e137e6c9457423925625dce3bd3713554749bcd463ac9048c7fcf0",
+      "old": "(-np.trace(Vi@G@Vi@G@G@G",
+      "new": "(np.trace(Vi@G@Vi@G@G@G",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-1s7j5cdi/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-1s7j5cdi/primary.py\", line 296, in run\n    check('native_logarithmic_shell_'+str((ratio,radius)),np.max(errs)<3*radius**2,errors=errs.tolist(),self_coefficients=sf.real.tolist(),electric=el.real.tolist(),magnetic=mag.real.tolist())\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-1s7j5cdi/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_logarithmic_shell_(0.8, 0.2)', {'errors': [0.051977000665885065, 3.412644916766604, 0.06984148169770021], 'self_coefficients': [[0.5677598770796175, 1.1596870236199437, 1.1596870236199437, 1.1290929581818512], [0.5677598770796175, 1.1596870236199437, 1.1596870236199437, 1.1290929581818512]], 'electric': [-1.745978250099938, -1.745978250099938, -1.6152865945322081], 'magnetic': [[0.0, 1.1365081483643669, 1.0197273138268876], [1.1365081483643669, 0.0, 1.0197273138268876], [1.051597323699307, 1.051597323699307, 0.0]]})\n"
+    },
+    {
+      "name": "common_coframe_opposite_node",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "c114111896b9378085faeec2a5f53d4cb7f03e7ec3ab02cb8ff3878e482d3748",
+      "old": "value=np.sin(k[2])*np.sin(k[j])/vel",
+      "new": "value=np.sin(k[j])/vel",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-v2vwj71a/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-v2vwj71a/primary.py\", line 288, in run\n    close('native_coframe_node_jet_'+str((chir,a,j,i)),fd,target,2e-9)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-v2vwj71a/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-v2vwj71a/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_coframe_node_jet_(-1, 2, 0, 0)', {'error': 2.400280083934658})\n"
+    },
+    {
+      "name": "Chern_corner_orientation",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "71d5c274f03927ba09a7b99ded0750061e1ace959518ed4e26636abc8985ad1a",
+      "old": "orientation=np.array([1,-1,-1,1])",
+      "new": "orientation=np.array([-1,-1,-1,1])",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-6sl8fp1z/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-6sl8fp1z/primary.py\", line 303, in run\n    check('slice_corner_degree_'+str(mass),index==int(mass<2),degree=int(degree),index=int(index))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-6sl8fp1z/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('slice_corner_degree_2.2', {'degree': -2, 'index': 2})\n"
+    },
+    {
+      "name": "Chern_occupied_band",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "39eaad171c17a46b56243ee7ba36dfff1c9264fd576fe7e813102066e0c98de8",
+      "old": "u=U[...,0]",
+      "new": "u=U[...,1]",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-e47fkhyt/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-e47fkhyt/primary.py\", line 306, in run\n    check('native_slice_Chern_links_'+str((mass,count)),abs(row['link_C']-index)<1e-11 and row['min_overlap']>.8,**row)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-e47fkhyt/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_slice_Chern_links_(0.7, 24)', {'M': 0.7, 'N': 24, 'link_C': -1.0, 'Kubo_C': 1.0000090127491708, 'min_overlap': 0.9828724668664769, 'gap': 0.7})\n"
+    },
+    {
+      "name": "Chern_projector_curvature",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "00229a0c274a7d2d82ce8cda57dabfc4515486eb76d8e4bc99404afa1cdd2553",
+      "old": "/(2*np.linalg.norm(d,axis=-1)**3)",
+      "new": "/(np.linalg.norm(d,axis=-1)**3)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-acx6qi78/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-acx6qi78/primary.py\", line 307, in run\n    if count==96:check('native_slice_Kubo_integral_'+str(mass),abs(row['Kubo_C']-index)<5e-8,**row)\n                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-acx6qi78/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_slice_Kubo_integral_0.7', {'M': 0.7, 'N': 96, 'link_C': 1.0, 'Kubo_C': 1.9999999999999998, 'min_overlap': 0.9989086617806109, 'gap': 0.7})\n"
+    },
+    {
+      "name": "Kubo_energy_denominator",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "f5ec9376fdec770a23d9b5f9ffdefecd5378c027657e560fa6a9317357792446",
+      "old": "/(energy[1]-energy[0])**2",
+      "new": "/(energy[1]-energy[0])**3",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rac0p98p/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rac0p98p/primary.py\", line 314, in run\n    close('spectral_Kubo_projector_'+str(trial),spectral,geometric,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rac0p98p/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rac0p98p/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('spectral_Kubo_projector_0', {'error': 0.03206656577142899})\n"
+    },
+    {
+      "name": "Hall_physical_measure",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "51d2d8239d3b7060a2a13916c5ba545016abe8d652da115f73c0099f5164f344",
+      "old": "H=charge2*kappa*vel/(2*np.pi**2*spacing)",
+      "new": "H=charge2*kappa*vel/(np.pi**2*spacing)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-jhk9nvz2/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-jhk9nvz2/primary.py\", line 320, in run\n    close('physical_Hall_slice_measure_'+str(zeta),H,integrated)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-jhk9nvz2/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-jhk9nvz2/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('physical_Hall_slice_measure_0.51', {'error': 0.017841613133250965})\n"
+    },
+    {
+      "name": "Hall_wave_contact_factor",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "f89680db7a802fee6d89af081a21a6ca3d5630bc94fcabb7d7be69d0f2a06d3b",
+      "old": "+s.I*om*H*Cz",
+      "new": "+s.I*om*H*Cz/2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-3zge1753/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-3zge1753/primary.py\", line 327, in run\n    check('Maxwell_Hall_physical_polynomial',s.factor(det-om**2*physical)==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-3zge1753/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Maxwell_Hall_physical_polynomial', {})\n"
+    },
+    {
+      "name": "Hall_Gauss_reduction",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "3c384e0cb61f00392e553db188eecf64dc4ad95b47a4212ea0de7e9141d55894",
+      "old": "matrix=(om**2-k2)*s.eye(3)+kk*kk.T",
+      "new": "matrix=(om**2-k2)*s.eye(3)-kk*kk.T",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmk8k5x6/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmk8k5x6/primary.py\", line 327, in run\n    check('Maxwell_Hall_physical_polynomial',s.factor(det-om**2*physical)==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmk8k5x6/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Maxwell_Hall_physical_polynomial', {})\n"
+    },
+    {
+      "name": "opposite_Hall_copy",
+      "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+      "mutated_sha256": "cca8f8066469a4194bcee5e9d713598582701b30caceb51becddf970a28091b8",
+      "old": "reversed_copy=curvature(native_h(-k).conj(),-first(-k,0).conj(),-first(-k,1).conj())",
+      "new": "reversed_copy=curvature(native_h(k),first(k,0),first(k,1))",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-z9rr053f/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-z9rr053f/primary.py\", line 346, in run\n    close('time_reversed_copy_Hall_cancellation_'+str(trial),original+reversed_copy,0,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-z9rr053f/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-z9rr053f/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('time_reversed_copy_Hall_cancellation_0', {'error': 0.0506370532516883})\n"
+    }
+  ]
+}

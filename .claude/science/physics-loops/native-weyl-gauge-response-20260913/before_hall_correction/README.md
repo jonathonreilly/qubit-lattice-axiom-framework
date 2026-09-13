@@ -1,0 +1,1 @@
+The 378-check Maxwell coefficient pass preceded recognition of the native Hall response. All checks passed, but they did not establish the assumed complete photon action. Preserve this limitation: the Hall correction changes the physical applicability, not those formal coefficients.

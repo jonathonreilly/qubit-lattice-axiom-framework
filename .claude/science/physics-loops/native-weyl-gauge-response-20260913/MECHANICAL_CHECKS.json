@@ -1,0 +1,75 @@
+{
+  "compile": "pass",
+  "markdown_links": [
+    {
+      "target": "MINIMAL_AXIOMS_2026-06-29.md",
+      "exists": true,
+      "tracked_or_included": true
+    },
+    {
+      "target": "NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "exists": true,
+      "tracked_or_included": true
+    },
+    {
+      "target": "https://link.aps.org/accepted/10.1103/PhysRevB.107.035131",
+      "scope": "primary URL already consulted"
+    },
+    {
+      "target": "https://arxiv.org/pdf/1102.0789",
+      "scope": "primary URL already consulted"
+    },
+    {
+      "target": "https://arxiv.org/pdf/1205.2427",
+      "scope": "primary URL already consulted"
+    },
+    {
+      "target": "https://arxiv.org/pdf/hep-th/0111123",
+      "scope": "primary URL already consulted"
+    },
+    {
+      "target": "EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md",
+      "exists": true,
+      "tracked_or_included": true
+    },
+    {
+      "target": "COMPACT_U1_QUADRATIC_BASIN_SOURCE_FREE_MAXWELL_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "exists": true,
+      "tracked_or_included": true
+    },
+    {
+      "target": "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "exists": true,
+      "tracked_or_included": true
+    },
+    {
+      "target": "EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "exists": true,
+      "tracked_or_included": true
+    },
+    {
+      "target": "../scripts/native_weyl_gauge_hall_and_cone_flow_2026_09_13.py",
+      "exists": true,
+      "tracked_or_included": true
+    },
+    {
+      "target": "../.claude/science/physics-loops/native-weyl-gauge-response-20260913/REVIEW_HISTORY.md",
+      "exists": true,
+      "tracked_or_included": true
+    },
+    {
+      "target": "https://arxiv.org/pdf/1303.5784",
+      "scope": "primary URL already consulted"
+    },
+    {
+      "target": "https://arxiv.org/pdf/1210.6352",
+      "scope": "primary URL already consulted"
+    }
+  ],
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "note_sha256": "02dce79ac9032150525cb77355e5f21db94dd3beea543315ea784ab74a2902f1",
+  "vocabulary": "no violations",
+  "integrated_pipeline": "pending",
+  "strict_lint": "pending",
+  "independent_review": "pending"
+}

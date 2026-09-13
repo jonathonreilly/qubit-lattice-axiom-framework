@@ -1,0 +1,1 @@
+The first comparison attempted git show origin/main:docs/audit/data/citation_graph.json and received exit128 because that generated graph is untracked. The owning build itself succeeded. The corrected comparison uses the tracked citation_graph_manifest.json and verifies the new generated node note_hash against final note bytes. No scientific source or threshold changed.

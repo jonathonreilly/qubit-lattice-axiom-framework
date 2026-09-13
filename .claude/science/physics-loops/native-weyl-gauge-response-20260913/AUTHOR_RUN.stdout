@@ -1,0 +1,2450 @@
+per_element: Clifford, constitutive and occupied-projector identities are executed with independent matrix and integration paths.
+per_site: finite Peierls link vertices, node jets and pure-gauge contact curvature are executed on the selected band model.
+per_mode: physical Hall and birefringent polarization roots and native logarithmic shells are executed; no full interacting spectrum is claimed.
+per_block: occupied and empty band blocks and both native Weyl-node contributions are executed with their declared trace factors.
+lattice_wide: gapped Brillouin-slice Chern numbers and a finite torus gauge spectrum are executed; thermodynamic gauge-phase existence is not established.
+{
+  "status": "ok",
+  "check_count": 462,
+  "checks": [
+    {
+      "name": "sphere_measure",
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "sphere_second_moments",
+      "error": 1.0602629885170245e-14
+    },
+    {
+      "name": "sphere_fourth_moments",
+      "error": 3.5041414214731503e-15
+    },
+    {
+      "name": "Clifford_(0, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(0, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(1, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(1, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(2, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(2, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(3, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(3, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(3, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "Clifford_(3, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "time_parameter_integral"
+    },
+    {
+      "name": "space_parameter_integral"
+    },
+    {
+      "name": "scalar_speed_coefficient"
+    },
+    {
+      "name": "scalar_ratio_flow"
+    },
+    {
+      "name": "scalar_relative_eigenvalue"
+    },
+    {
+      "name": "scalar_parameter_matrix_0.6",
+      "error": 6.661338147750939e-16
+    },
+    {
+      "name": "scalar_angular_matrix_0.6",
+      "error": 3.630429290524262e-14
+    },
+    {
+      "name": "scalar_parameter_matrix_0.8",
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "scalar_angular_matrix_0.8",
+      "error": 1.4099832412739488e-14
+    },
+    {
+      "name": "scalar_parameter_matrix_1.0",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "scalar_angular_matrix_1.0",
+      "error": 4.285460875053104e-14
+    },
+    {
+      "name": "scalar_parameter_matrix_1.3",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "scalar_angular_matrix_1.3",
+      "error": 5.3734794391857577e-14
+    },
+    {
+      "name": "scalar_parameter_matrix_1.8",
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "scalar_angular_matrix_1.8",
+      "error": 2.375877272697835e-14
+    },
+    {
+      "name": "generic_parameter_angular_0",
+      "error": 3.8219427622721014e-14
+    },
+    {
+      "name": "generic_coframe_derivative_0",
+      "errors": [
+        2.7281945420814723e-05,
+        6.820414874837151e-06,
+        1.7050993683471501e-06
+      ]
+    },
+    {
+      "name": "longitudinal_Ward_(0, 0)",
+      "error": 3.433175098891678e-16
+    },
+    {
+      "name": "longitudinal_Ward_(0, 1)",
+      "error": 2.5648108051662706e-16
+    },
+    {
+      "name": "longitudinal_Ward_(0, 2)",
+      "error": 4.484587321511725e-16
+    },
+    {
+      "name": "longitudinal_Ward_(0, 3)",
+      "error": 3.510833468576701e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(0, 0)",
+      "error": 2.2887833992611187e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(0, 1)",
+      "error": 6.206335383118183e-17
+    },
+    {
+      "name": "coframe_Clifford_map_(0, 2)",
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "coframe_Clifford_map_(0, 3)",
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "generic_parameter_angular_1",
+      "error": 5.773159728050814e-15
+    },
+    {
+      "name": "generic_coframe_derivative_1",
+      "errors": [
+        3.11607391017386e-05,
+        7.790091908750603e-06,
+        1.9475172260668013e-06
+      ]
+    },
+    {
+      "name": "longitudinal_Ward_(1, 0)",
+      "error": 4.0412728104402656e-16
+    },
+    {
+      "name": "longitudinal_Ward_(1, 1)",
+      "error": 1.6966821791158453e-16
+    },
+    {
+      "name": "longitudinal_Ward_(1, 2)",
+      "error": 5.984795992119984e-17
+    },
+    {
+      "name": "longitudinal_Ward_(1, 3)",
+      "error": 1.3877787807814457e-15
+    },
+    {
+      "name": "coframe_Clifford_map_(1, 0)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(1, 1)",
+      "error": 8.673617379884035e-18
+    },
+    {
+      "name": "coframe_Clifford_map_(1, 2)",
+      "error": 5.204170427930421e-18
+    },
+    {
+      "name": "coframe_Clifford_map_(1, 3)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "generic_parameter_angular_2",
+      "error": 3.4416913763379853e-15
+    },
+    {
+      "name": "generic_coframe_derivative_2",
+      "errors": [
+        2.909127984680024e-05,
+        7.2727208081400645e-06,
+        1.8181740769759897e-06
+      ]
+    },
+    {
+      "name": "longitudinal_Ward_(2, 0)",
+      "error": 2.1000903724951385e-16
+    },
+    {
+      "name": "longitudinal_Ward_(2, 1)",
+      "error": 1.665695898455916e-16
+    },
+    {
+      "name": "longitudinal_Ward_(2, 2)",
+      "error": 8.582937747229195e-17
+    },
+    {
+      "name": "longitudinal_Ward_(2, 3)",
+      "error": 1.153297605929378e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(2, 0)",
+      "error": 2.2301825219878386e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "coframe_Clifford_map_(2, 2)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(2, 3)",
+      "error": 4.441434166503682e-16
+    },
+    {
+      "name": "generic_parameter_angular_3",
+      "error": 7.327471962526033e-15
+    },
+    {
+      "name": "generic_coframe_derivative_3",
+      "errors": [
+        2.1991647072426894e-05,
+        5.497868597553559e-06,
+        1.3744645480061773e-06
+      ]
+    },
+    {
+      "name": "longitudinal_Ward_(3, 0)",
+      "error": 1.5265566588595902e-16
+    },
+    {
+      "name": "longitudinal_Ward_(3, 1)",
+      "error": 1.492492406327019e-16
+    },
+    {
+      "name": "longitudinal_Ward_(3, 2)",
+      "error": 5.297535633376956e-16
+    },
+    {
+      "name": "longitudinal_Ward_(3, 3)",
+      "error": 1.3092278833360675e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(3, 0)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(3, 1)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(3, 2)",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(3, 3)",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "generic_parameter_angular_4",
+      "error": 5.10702591327572e-15
+    },
+    {
+      "name": "generic_coframe_derivative_4",
+      "errors": [
+        1.6032092171089708e-05,
+        4.0079700936855066e-06,
+        1.0019893378222433e-06
+      ]
+    },
+    {
+      "name": "longitudinal_Ward_(4, 0)",
+      "error": 4.443059973708341e-16
+    },
+    {
+      "name": "longitudinal_Ward_(4, 1)",
+      "error": 1.1443916996305594e-16
+    },
+    {
+      "name": "longitudinal_Ward_(4, 2)",
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "longitudinal_Ward_(4, 3)",
+      "error": 4.654751537338637e-17
+    },
+    {
+      "name": "coframe_Clifford_map_(4, 0)",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(4, 1)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(4, 2)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(4, 3)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "generic_parameter_angular_5",
+      "error": 6.5503158452884236e-15
+    },
+    {
+      "name": "generic_coframe_derivative_5",
+      "errors": [
+        2.4081758980944e-05,
+        6.0204023122724235e-06,
+        1.5050983005620019e-06
+      ]
+    },
+    {
+      "name": "longitudinal_Ward_(5, 0)",
+      "error": 2.2247786310271853e-16
+    },
+    {
+      "name": "longitudinal_Ward_(5, 1)",
+      "error": 1.1857187100668868e-16
+    },
+    {
+      "name": "longitudinal_Ward_(5, 2)",
+      "error": 1.2566871346510768e-16
+    },
+    {
+      "name": "longitudinal_Ward_(5, 3)",
+      "error": 1.2494826774185e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(5, 0)",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(5, 1)",
+      "error": 8.886119947416683e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(5, 2)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(5, 3)",
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "generic_parameter_angular_6",
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "generic_coframe_derivative_6",
+      "errors": [
+        1.8768973357227955e-05,
+        4.692224973994239e-06,
+        1.1730551507205758e-06
+      ]
+    },
+    {
+      "name": "longitudinal_Ward_(6, 0)",
+      "error": 2.2591401799415137e-16
+    },
+    {
+      "name": "longitudinal_Ward_(6, 1)",
+      "error": 3.5000168788904525e-16
+    },
+    {
+      "name": "longitudinal_Ward_(6, 2)",
+      "error": 2.316229393072649e-16
+    },
+    {
+      "name": "longitudinal_Ward_(6, 3)",
+      "error": 2.2247786310271853e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(6, 0)",
+      "error": 5.553824967135427e-17
+    },
+    {
+      "name": "coframe_Clifford_map_(6, 1)",
+      "error": 8.882868333007365e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(6, 2)",
+      "error": 4.443059973708341e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(6, 3)",
+      "error": 6.661338147750939e-16
+    },
+    {
+      "name": "generic_parameter_angular_7",
+      "error": 5.10702591327572e-15
+    },
+    {
+      "name": "generic_coframe_derivative_7",
+      "errors": [
+        1.7077101171219872e-05,
+        4.26925209581801e-06,
+        1.0673117849882479e-06
+      ]
+    },
+    {
+      "name": "longitudinal_Ward_(7, 0)",
+      "error": 1.2339850919897386e-15
+    },
+    {
+      "name": "longitudinal_Ward_(7, 1)",
+      "error": 3.48951172420846e-16
+    },
+    {
+      "name": "longitudinal_Ward_(7, 2)",
+      "error": 2.7344877050525285e-16
+    },
+    {
+      "name": "longitudinal_Ward_(7, 3)",
+      "error": 5.619493387789089e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(7, 0)",
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "coframe_Clifford_map_(7, 1)",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(7, 2)",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "coframe_Clifford_map_(7, 3)",
+      "error": 6.661360735257903e-16
+    },
+    {
+      "name": "bubble_radial_cancellation"
+    },
+    {
+      "name": "bubble_transverse_coefficient"
+    },
+    {
+      "name": "bubble_gamma_trace_0",
+      "error": 6.661338147750939e-16
+    },
+    {
+      "name": "induced_metric_medium_0",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "single_metric_no_birefringence_0",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "bubble_gamma_trace_1",
+      "error": 6.280369834735101e-16
+    },
+    {
+      "name": "induced_metric_medium_1",
+      "error": 0.0
+    },
+    {
+      "name": "single_metric_no_birefringence_1",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "bubble_gamma_trace_2",
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "name": "induced_metric_medium_2",
+      "error": 0.0
+    },
+    {
+      "name": "single_metric_no_birefringence_2",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "bubble_gamma_trace_3",
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "name": "induced_metric_medium_3",
+      "error": 1.1102230246251565e-15
+    },
+    {
+      "name": "single_metric_no_birefringence_3",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "bubble_gamma_trace_4",
+      "error": 3.552822097363439e-15
+    },
+    {
+      "name": "induced_metric_medium_4",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "single_metric_no_birefringence_4",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "bubble_gamma_trace_5",
+      "error": 7.136584070361083e-15
+    },
+    {
+      "name": "induced_metric_medium_5",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "single_metric_no_birefringence_5",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "birefringent_transverse_(0, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(0, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(0, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(0, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_kernel_mean_0",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(0, 0, 0)",
+      "error": 2.0014830212433607e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(0, 0, 1)",
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(0, 0, 2)",
+      "error": 7.850462293418876e-17
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(0, 0, 3)",
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(0, 1, 0)",
+      "error": 9.020562075079397e-17
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(0, 1, 1)",
+      "error": 2.2215987736365685e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(0, 1, 2)",
+      "error": 2.2208282399757777e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(0, 1, 3)",
+      "error": 1.1443916996305594e-16
+    },
+    {
+      "name": "birefringent_transverse_(1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(1, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(1, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(1, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(1, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_kernel_mean_1",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(1, 0, 0)",
+      "error": 4.0497527310531634e-17
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(1, 0, 1)",
+      "error": 4.443059973708341e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(1, 0, 2)",
+      "error": 2.2247786310271853e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(1, 0, 3)",
+      "error": 2.3714374201337736e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(1, 1, 0)",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(1, 1, 1)",
+      "error": 1.2412670766236366e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(1, 1, 2)",
+      "error": 1.5700924586837752e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(1, 1, 3)",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "birefringent_transverse_(2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(2, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(2, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(2, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(2, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_kernel_mean_2",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(2, 0, 0)",
+      "error": 4.449557262054371e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(2, 0, 1)",
+      "error": 2.482534153247273e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(2, 0, 2)",
+      "error": 2.482534153247273e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(2, 0, 3)",
+      "error": 2.2591401799415137e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(2, 1, 0)",
+      "error": 5.553824967135427e-17
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(2, 1, 1)",
+      "error": 3.469446951953614e-18
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(2, 1, 2)",
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(2, 1, 3)",
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "birefringent_transverse_(3, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(3, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(3, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(3, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(3, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(3, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(3, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(3, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_kernel_mean_3",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(3, 0, 0)",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(3, 0, 1)",
+      "error": 1.1857187100668868e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(3, 0, 2)",
+      "error": 1.8875832159447664e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(3, 0, 3)",
+      "error": 2.2887833992611187e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(3, 1, 0)",
+      "error": 6.206335383118183e-17
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(3, 1, 1)",
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(3, 1, 2)",
+      "error": 1.1443916996305594e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(3, 1, 3)",
+      "error": 5.594315114139762e-17
+    },
+    {
+      "name": "birefringent_transverse_(4, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(4, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(4, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(4, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(4, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(4, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_transverse_(4, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_trace_(4, 3)",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_kernel_mean_4",
+      "error": 0.0
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(4, 0, 0)",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(4, 0, 1)",
+      "error": 2.2591401799415137e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(4, 0, 2)",
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(4, 0, 3)",
+      "error": 1.7772239894833365e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(4, 1, 0)",
+      "error": 1.1188630228279524e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(4, 1, 1)",
+      "error": 4.449557262054371e-16
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(4, 1, 2)",
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "birefringent_Clifford_insertion_(4, 1, 3)",
+      "error": 2.2247786310271853e-16
+    },
+    {
+      "name": "induced_birefringence_exact_split"
+    },
+    {
+      "name": "physical_photon_polarizations_0.1",
+      "error": 0.0
+    },
+    {
+      "name": "physical_photon_split_0.1",
+      "squared_speeds": [
+        1.005031055900621,
+        1.0061764705882352
+      ]
+    },
+    {
+      "name": "physical_photon_polarizations_0.2",
+      "error": 0.0
+    },
+    {
+      "name": "physical_photon_split_0.2",
+      "squared_speeds": [
+        1.008627450980392,
+        1.0133333333333332
+      ]
+    },
+    {
+      "name": "physical_photon_polarizations_0.4",
+      "error": 0.0
+    },
+    {
+      "name": "physical_photon_split_0.4",
+      "squared_speeds": [
+        1.0121861777150916,
+        1.033103448275862
+      ]
+    },
+    {
+      "name": "running_charge_equation"
+    },
+    {
+      "name": "running_relative_metric_equation"
+    },
+    {
+      "name": "running_birefringence_equation"
+    },
+    {
+      "name": "generated_shear_memory_equation"
+    },
+    {
+      "name": "native_Peierls_Ward_0",
+      "error": 4.965068306494546e-16
+    },
+    {
+      "name": "native_Peierls_Ward_1",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "native_Peierls_Ward_2",
+      "error": 9.155133597044475e-16
+    },
+    {
+      "name": "native_Peierls_Ward_3",
+      "error": 1.1102230246251565e-15
+    },
+    {
+      "name": "native_Peierls_Ward_4",
+      "error": 1.3322676295501878e-15
+    },
+    {
+      "name": "native_Peierls_Ward_5",
+      "error": 1.4217791915866692e-15
+    },
+    {
+      "name": "native_Peierls_Ward_6",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "native_Peierls_Ward_7",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "native_Peierls_Ward_8",
+      "error": 1.3322676295501878e-15
+    },
+    {
+      "name": "native_Peierls_Ward_9",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "native_quadratic_Peierls_contact_0",
+      "error": 2.008831168076597e-08
+    },
+    {
+      "name": "native_quadratic_Peierls_contact_1",
+      "error": 1.992716069931788e-08
+    },
+    {
+      "name": "native_quadratic_Peierls_contact_2",
+      "error": 7.310420491180025e-08
+    },
+    {
+      "name": "exact_metric_mixture_escape_(0, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(0, 'scalar')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(0, 'scalar')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "escape_degenerate_polarizations_(0, 'scalar')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "exact_metric_mixture_escape_(0, 'rank_one')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(0, 'rank_one')",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(0, 'rank_one')",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "escape_degenerate_polarizations_(0, 'rank_one')",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "exact_metric_mixture_escape_(1, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(1, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(1, 'scalar')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "escape_degenerate_polarizations_(1, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "exact_metric_mixture_escape_(1, 'rank_one')",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(1, 'rank_one')",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(1, 'rank_one')",
+      "error": 6.661338147750939e-16
+    },
+    {
+      "name": "escape_degenerate_polarizations_(1, 'rank_one')",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "exact_metric_mixture_escape_(2, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(2, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(2, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "escape_degenerate_polarizations_(2, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "exact_metric_mixture_escape_(2, 'rank_one')",
+      "error": 7.683987727773561e-17
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(2, 'rank_one')",
+      "error": 6.661338147750939e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(2, 'rank_one')",
+      "error": 1.1102230246251565e-15
+    },
+    {
+      "name": "escape_degenerate_polarizations_(2, 'rank_one')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "exact_metric_mixture_escape_(3, 'scalar')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(3, 'scalar')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(3, 'scalar')",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "escape_degenerate_polarizations_(3, 'scalar')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "exact_metric_mixture_escape_(3, 'rank_one')",
+      "error": 2.0068689607034825e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(3, 'rank_one')",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(3, 'rank_one')",
+      "error": 1.1102230246251565e-15
+    },
+    {
+      "name": "escape_degenerate_polarizations_(3, 'rank_one')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "exact_metric_mixture_escape_(4, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(4, 'scalar')",
+      "error": 0.0
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(4, 'scalar')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "escape_degenerate_polarizations_(4, 'scalar')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "exact_metric_mixture_escape_(4, 'rank_one')",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_electric_(4, 'rank_one')",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "escape_metric_reconstruction_magnetic_(4, 'rank_one')",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "escape_degenerate_polarizations_(4, 'rank_one')",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "integrated_photon_metric_mean"
+    },
+    {
+      "name": "quadratic_shear_memory_from_Maxwell_variance"
+    },
+    {
+      "name": "constitutive_quadratic_shear_source"
+    },
+    {
+      "name": "finite_Peierls_gauge_curvature_73",
+      "seed": 73,
+      "gap": 0.29999999999999755,
+      "contact": 42.260678717277386,
+      "bubble": -42.260678717277386,
+      "sum": 0.0,
+      "spectrum_error": 5.6066262743570405e-15,
+      "matrix_hermiticity": 0.0
+    },
+    {
+      "name": "finite_Peierls_gauge_spectrum_73",
+      "seed": 73,
+      "gap": 0.29999999999999755,
+      "contact": 42.260678717277386,
+      "bubble": -42.260678717277386,
+      "sum": 0.0,
+      "spectrum_error": 5.6066262743570405e-15,
+      "matrix_hermiticity": 0.0
+    },
+    {
+      "name": "finite_Peierls_gauge_curvature_91",
+      "seed": 91,
+      "gap": 0.29999999999999755,
+      "contact": 14.675221186558934,
+      "bubble": -14.675221186558938,
+      "sum": -3.552713678800501e-15,
+      "spectrum_error": 5.329070518200751e-15,
+      "matrix_hermiticity": 0.0
+    },
+    {
+      "name": "finite_Peierls_gauge_spectrum_91",
+      "seed": 91,
+      "gap": 0.29999999999999755,
+      "contact": 14.675221186558934,
+      "bubble": -14.675221186558938,
+      "sum": -3.552713678800501e-15,
+      "spectrum_error": 5.329070518200751e-15,
+      "matrix_hermiticity": 0.0
+    },
+    {
+      "name": "finite_Peierls_gauge_curvature_127",
+      "seed": 127,
+      "gap": 0.29999999999999755,
+      "contact": 30.860581993108596,
+      "bubble": -30.860581993108582,
+      "sum": 1.4210854715202004e-14,
+      "spectrum_error": 6.050715484207103e-15,
+      "matrix_hermiticity": 0.0
+    },
+    {
+      "name": "finite_Peierls_gauge_spectrum_127",
+      "seed": 127,
+      "gap": 0.29999999999999755,
+      "contact": 30.860581993108596,
+      "bubble": -30.860581993108582,
+      "sum": 1.4210854715202004e-14,
+      "spectrum_error": 6.050715484207103e-15,
+      "matrix_hermiticity": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(-1, 0, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 0, 0, 0)",
+      "error": 6.666678320499386e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 0, 0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 0, 0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(-1, 0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 0, 1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 0, 1, 1)",
+      "error": 6.666678320499386e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 0, 1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(-1, 0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 0, 2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 0, 2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 0, 2, 2)",
+      "error": 1.4483003685228368e-10
+    },
+    {
+      "name": "native_coframe_node_value_(-1, 1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 1, 0, 0)",
+      "error": 6.666678320499386e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 1, 0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 1, 0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(-1, 1, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 1, 1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 1, 1, 1)",
+      "error": 6.666678320499386e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 1, 1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(-1, 1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 1, 2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 1, 2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 1, 2, 2)",
+      "error": 1.4483003685228368e-10
+    },
+    {
+      "name": "native_coframe_node_value_(-1, 2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 2, 0, 0)",
+      "error": 6.66666721826914e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 2, 0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 2, 0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(-1, 2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 2, 1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 2, 1, 1)",
+      "error": 6.66666721826914e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 2, 1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(-1, 2, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 2, 2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 2, 2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(-1, 2, 2, 2)",
+      "error": 1.2945122751517602e-10
+    },
+    {
+      "name": "native_coframe_node_value_(1, 0, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 0, 0, 0)",
+      "error": 6.666678320499386e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 0, 0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 0, 0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(1, 0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 0, 1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 0, 1, 1)",
+      "error": 6.666678320499386e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 0, 1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(1, 0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 0, 2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 0, 2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 0, 2, 2)",
+      "error": 1.4483003685228368e-10
+    },
+    {
+      "name": "native_coframe_node_value_(1, 1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 1, 0, 0)",
+      "error": 6.666678320499386e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 1, 0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 1, 0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(1, 1, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 1, 1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 1, 1, 1)",
+      "error": 6.666678320499386e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 1, 1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(1, 1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 1, 2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 1, 2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 1, 2, 2)",
+      "error": 1.4483003685228368e-10
+    },
+    {
+      "name": "native_coframe_node_value_(1, 2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 2, 0, 0)",
+      "error": 6.66666721826914e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 2, 0, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 2, 0, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(1, 2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 2, 1, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 2, 1, 1)",
+      "error": 6.66666721826914e-11
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 2, 1, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_value_(1, 2, 2)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 2, 2, 0)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 2, 2, 1)",
+      "error": 0.0
+    },
+    {
+      "name": "native_coframe_node_jet_(1, 2, 2, 2)",
+      "error": 1.2945122751517602e-10
+    },
+    {
+      "name": "native_logarithmic_shell_(0.8, 0.2)",
+      "errors": [
+        0.051977000665885065,
+        0.07931158343327138,
+        0.06984148169770021
+      ],
+      "self_coefficients": [
+        [
+          0.5677598770796175,
+          1.1596870236199437,
+          1.1596870236199437,
+          1.1290929581818512
+        ],
+        [
+          0.5677598770796175,
+          1.1596870236199437,
+          1.1596870236199437,
+          1.1290929581818512
+        ]
+      ],
+      "electric": [
+        1.745978250099938,
+        1.745978250099938,
+        1.6152865945322081
+      ],
+      "magnetic": [
+        [
+          0.0,
+          1.1365081483643669,
+          1.0197273138268876
+        ],
+        [
+          1.1365081483643669,
+          0.0,
+          1.0197273138268876
+        ],
+        [
+          1.051597323699307,
+          1.051597323699307,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "native_logarithmic_shell_(0.8, 0.1)",
+      "errors": [
+        0.012797695028079037,
+        0.019393768601392747,
+        0.017142321669004756
+      ],
+      "self_coefficients": [
+        [
+          0.5678657711121466,
+          1.1757524127244119,
+          1.1757524127244119,
+          1.1682722638196572
+        ],
+        [
+          0.5678657711121466,
+          1.1757524127244119,
+          1.1757524127244119,
+          1.1682722638196572
+        ]
+      ],
+      "electric": [
+        1.6860604352680593,
+        1.6860604352680593,
+        1.6540114065808682
+      ],
+      "magnetic": [
+        [
+          0.0,
+          1.0838089883356714,
+          1.0549978892031795
+        ],
+        [
+          1.0838089883356714,
+          0.0,
+          1.0549978892031793
+        ],
+        [
+          1.0629984324124093,
+          1.0629984324124093,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "native_shell_refinement_(0.8, 0.1)",
+      "ratios": [
+        0.24621842091936563,
+        0.24452630702688782,
+        0.2454461339065381
+      ]
+    },
+    {
+      "name": "native_logarithmic_shell_(0.8, 0.05)",
+      "errors": [
+        0.0031873956710803952,
+        0.004822011653919489,
+        0.004266275419063659
+      ],
+      "self_coefficients": [
+        [
+          0.5678923631428048,
+          1.1797422992354856,
+          1.1797422992354856,
+          1.1778825631766559
+        ],
+        [
+          0.5678923631428048,
+          1.1797422992354856,
+          1.1797422992354856,
+          1.1778825631766559
+        ]
+      ],
+      "electric": [
+        1.671488678320586,
+        1.671488678320586,
+        1.6635150798089593
+      ],
+      "magnetic": [
+        [
+          0.0,
+          1.0709329420857303,
+          1.0637540121896119
+        ],
+        [
+          1.0709329420857303,
+          0.0,
+          1.0637540121896119
+        ],
+        [
+          1.0657557187786912,
+          1.0657557187786912,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "native_shell_refinement_(0.8, 0.05)",
+      "ratios": [
+        0.24906013653919917,
+        0.24863716552610618,
+        0.24887383992901987
+      ]
+    },
+    {
+      "name": "native_logarithmic_shell_(0.8, 0.025)",
+      "errors": [
+        0.000796101102373381,
+        0.001203861692536723,
+        0.001065371021698791
+      ],
+      "self_coefficients": [
+        [
+          0.5678990163979674,
+          1.1807381513421507,
+          1.1807381513421507,
+          1.1802738577453629
+        ],
+        [
+          0.5678990163979674,
+          1.1807381513421507,
+          1.1807381513421507,
+          1.1802738577453629
+        ]
+      ],
+      "electric": [
+        1.667870528359203,
+        1.6678705283592032,
+        1.6658795395649872
+      ],
+      "magnetic": [
+        [
+          0.0,
+          1.0677320376883654,
+          1.0659387927904787
+        ],
+        [
+          1.0677320376883652,
+          0.0,
+          1.0659387927904787
+        ],
+        [
+          1.0664393101687528,
+          1.0664393101687528,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "native_shell_refinement_(0.8, 0.025)",
+      "ratios": [
+        0.24976538356894226,
+        0.2496596397808754,
+        0.2497192321288562
+      ]
+    },
+    {
+      "name": "native_logarithmic_shell_(1.2, 0.2)",
+      "errors": [
+        0.04364344591286451,
+        0.05249262316817549,
+        0.095188428358848
+      ],
+      "self_coefficients": [
+        [
+          1.3775163269380366,
+          0.8741571812822522,
+          0.8741571812822522,
+          0.8525916321403954
+        ],
+        [
+          1.3775163269380364,
+          0.8741571812822522,
+          0.8741571812822522,
+          0.8525916321403954
+        ]
+      ],
+      "electric": [
+        1.1636037342792867,
+        1.1636037342792867,
+        1.0812282023924769
+      ],
+      "magnetic": [
+        [
+          0.0,
+          1.6951884283588479,
+          1.541877427621277
+        ],
+        [
+          1.6951884283588479,
+          0.0,
+          1.541877427621277
+        ],
+        [
+          1.5801255926380289,
+          1.5801255926380287,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "native_logarithmic_shell_(1.2, 0.1)",
+      "errors": [
+        0.010748981047151274,
+        0.012830421727733299,
+        0.023353398400622227
+      ],
+      "self_coefficients": [
+        [
+          1.3732982973536736,
+          0.8907443514183132,
+          0.8907443514183131,
+          0.8854860970061086
+        ],
+        [
+          1.3732982973536738,
+          0.8907443514183132,
+          0.8907443514183132,
+          0.8854860970061086
+        ]
+      ],
+      "electric": [
+        1.1239415328388445,
+        1.123941532838844,
+        1.1037977492730566
+      ],
+      "magnetic": [
+        [
+          0.0,
+          1.623353398400622,
+          1.5855993586208998
+        ],
+        [
+          1.623353398400622,
+          0.0,
+          1.5855993586208998
+        ],
+        [
+          1.595157906669043,
+          1.595157906669043,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "native_shell_refinement_(1.2, 0.1)",
+      "ratios": [
+        0.2462908421258016,
+        0.24442332947673973,
+        0.2453386278485758
+      ]
+    },
+    {
+      "name": "native_logarithmic_shell_(1.2, 0.05)",
+      "errors": [
+        0.002677365245557284,
+        0.003189793447358147,
+        0.005811433742290983
+      ],
+      "self_coefficients": [
+        [
+          1.3722497942694032,
+          0.8948641617266395,
+          0.8948641617266395,
+          0.8935577128077026
+        ],
+        [
+          1.3722497942694034,
+          0.8948641617266395,
+          0.8948641617266395,
+          0.8935577128077026
+        ]
+      ],
+      "electric": [
+        1.1143009045584693,
+        1.114300904558469,
+        1.1092927124327927
+      ],
+      "magnetic": [
+        [
+          0.0,
+          1.6058114337422909,
+          1.5964083443318557
+        ],
+        [
+          1.6058114337422909,
+          0.0,
+          1.5964083443318557
+        ],
+        [
+          1.5987972434459454,
+          1.5987972434459454,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "native_shell_refinement_(1.2, 0.05)",
+      "ratios": [
+        0.24908084159910646,
+        0.2486117381834241,
+        0.24884745434463806
+      ]
+    },
+    {
+      "name": "native_logarithmic_shell_(1.2, 0.025)",
+      "errors": [
+        0.000668727445986006,
+        0.0007963424718542278,
+        0.0014511886072610114
+      ],
+      "self_coefficients": [
+        [
+          1.3719880434157683,
+          0.8958924588218024,
+          0.8958924588218024,
+          0.8955663506072739
+        ],
+        [
+          1.3719880434157683,
+          0.8958924588218025,
+          0.8958924588218024,
+          0.895566350607274
+        ]
+      ],
+      "electric": [
+        1.1119074535829654,
+        1.1119074535829654,
+        1.1106571342498959
+      ],
+      "magnetic": [
+        [
+          0.0,
+          1.6014511886072609,
+          1.5991026230772354
+        ],
+        [
+          1.6014511886072609,
+          0.0,
+          1.5991026230772354
+        ],
+        [
+          1.5996997939603095,
+          1.5996997939603095,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "native_shell_refinement_(1.2, 0.025)",
+      "ratios": [
+        0.249770720336221,
+        0.2496533035748052,
+        0.24971266500044856
+      ]
+    },
+    {
+      "name": "slice_corner_degree_0.7",
+      "degree": -1,
+      "index": 1
+    },
+    {
+      "name": "native_slice_Chern_links_(0.7, 24)",
+      "M": 0.7,
+      "N": 24,
+      "link_C": 1.0000000000000002,
+      "Kubo_C": 1.0000090127491708,
+      "min_overlap": 0.9828724668664769,
+      "gap": 0.7
+    },
+    {
+      "name": "native_slice_Chern_links_(0.7, 48)",
+      "M": 0.7,
+      "N": 48,
+      "link_C": 1.0,
+      "Kubo_C": 1.0000000000263045,
+      "min_overlap": 0.9956517579467492,
+      "gap": 0.7
+    },
+    {
+      "name": "native_slice_Chern_links_(0.7, 96)",
+      "M": 0.7,
+      "N": 96,
+      "link_C": 1.0,
+      "Kubo_C": 0.9999999999999999,
+      "min_overlap": 0.9989086617806109,
+      "gap": 0.7
+    },
+    {
+      "name": "native_slice_Kubo_integral_0.7",
+      "M": 0.7,
+      "N": 96,
+      "link_C": 1.0,
+      "Kubo_C": 0.9999999999999999,
+      "min_overlap": 0.9989086617806109,
+      "gap": 0.7
+    },
+    {
+      "name": "slice_corner_degree_1.4",
+      "degree": -1,
+      "index": 1
+    },
+    {
+      "name": "native_slice_Chern_links_(1.4, 24)",
+      "M": 1.4,
+      "N": 24,
+      "link_C": 1.0,
+      "Kubo_C": 1.000000012921218,
+      "min_overlap": 0.9770894450671362,
+      "gap": 0.6000000000000001
+    },
+    {
+      "name": "native_slice_Chern_links_(1.4, 48)",
+      "M": 1.4,
+      "N": 48,
+      "link_C": 1.0,
+      "Kubo_C": 1.0,
+      "min_overlap": 0.9941083409116774,
+      "gap": 0.6000000000000001
+    },
+    {
+      "name": "native_slice_Chern_links_(1.4, 96)",
+      "M": 1.4,
+      "N": 96,
+      "link_C": 1.0000000000000002,
+      "Kubo_C": 0.9999999999999999,
+      "min_overlap": 0.9985162691243413,
+      "gap": 0.6000000000000001
+    },
+    {
+      "name": "native_slice_Kubo_integral_1.4",
+      "M": 1.4,
+      "N": 96,
+      "link_C": 1.0000000000000002,
+      "Kubo_C": 0.9999999999999999,
+      "min_overlap": 0.9985162691243413,
+      "gap": 0.6000000000000001
+    },
+    {
+      "name": "slice_corner_degree_1.8",
+      "degree": -1,
+      "index": 1
+    },
+    {
+      "name": "native_slice_Chern_links_(1.8, 24)",
+      "M": 1.8,
+      "N": 24,
+      "link_C": 1.0,
+      "Kubo_C": 1.012195948988508,
+      "min_overlap": 0.8774119385084345,
+      "gap": 0.19999999999999996
+    },
+    {
+      "name": "native_slice_Chern_links_(1.8, 48)",
+      "M": 1.8,
+      "N": 48,
+      "link_C": 1.0,
+      "Kubo_C": 1.000051834338046,
+      "min_overlap": 0.9555721247949931,
+      "gap": 0.19999999999999996
+    },
+    {
+      "name": "native_slice_Chern_links_(1.8, 96)",
+      "M": 1.8,
+      "N": 96,
+      "link_C": 1.0,
+      "Kubo_C": 1.0000000011368035,
+      "min_overlap": 0.9872871653616332,
+      "gap": 0.19999999999999996
+    },
+    {
+      "name": "native_slice_Kubo_integral_1.8",
+      "M": 1.8,
+      "N": 96,
+      "link_C": 1.0,
+      "Kubo_C": 1.0000000011368035,
+      "min_overlap": 0.9872871653616332,
+      "gap": 0.19999999999999996
+    },
+    {
+      "name": "slice_corner_degree_2.2",
+      "degree": 0,
+      "index": 0
+    },
+    {
+      "name": "native_slice_Chern_links_(2.2, 24)",
+      "M": 2.2,
+      "N": 24,
+      "link_C": 1.3252311172764654e-16,
+      "Kubo_C": -0.026777379661438953,
+      "min_overlap": 0.9139920474296052,
+      "gap": 0.20000000000000018
+    },
+    {
+      "name": "native_slice_Chern_links_(2.2, 48)",
+      "M": 2.2,
+      "N": 48,
+      "link_C": 2.2087185287941088e-16,
+      "Kubo_C": -0.0002953313733419836,
+      "min_overlap": 0.9611635487467669,
+      "gap": 0.20000000000000018
+    },
+    {
+      "name": "native_slice_Chern_links_(2.2, 96)",
+      "M": 2.2,
+      "N": 96,
+      "link_C": 1.5461029701558762e-16,
+      "Kubo_C": -4.582327408700743e-08,
+      "min_overlap": 0.9877849594640232,
+      "gap": 0.20000000000000018
+    },
+    {
+      "name": "native_slice_Kubo_integral_2.2",
+      "M": 2.2,
+      "N": 96,
+      "link_C": 1.5461029701558762e-16,
+      "Kubo_C": -4.582327408700743e-08,
+      "min_overlap": 0.9877849594640232,
+      "gap": 0.20000000000000018
+    },
+    {
+      "name": "slice_corner_degree_2.8",
+      "degree": 0,
+      "index": 0
+    },
+    {
+      "name": "native_slice_Chern_links_(2.8, 24)",
+      "M": 2.8,
+      "N": 24,
+      "link_C": -9.055745968055847e-17,
+      "Kubo_C": -1.142869581675698e-06,
+      "min_overlap": 0.988704800862302,
+      "gap": 0.7999999999999998
+    },
+    {
+      "name": "native_slice_Chern_links_(2.8, 48)",
+      "M": 2.8,
+      "N": 48,
+      "link_C": -9.718361526694079e-17,
+      "Kubo_C": -8.650107645533519e-13,
+      "min_overlap": 0.9967996831188654,
+      "gap": 0.7999999999999998
+    },
+    {
+      "name": "native_slice_Chern_links_(2.8, 96)",
+      "M": 2.8,
+      "N": 96,
+      "link_C": -5.521796321985272e-17,
+      "Kubo_C": 2.0588112661856505e-17,
+      "min_overlap": 0.9991727698046282,
+      "gap": 0.7999999999999998
+    },
+    {
+      "name": "native_slice_Kubo_integral_2.8",
+      "M": 2.8,
+      "N": 96,
+      "link_C": -5.521796321985272e-17,
+      "Kubo_C": 2.0588112661856505e-17,
+      "min_overlap": 0.9991727698046282,
+      "gap": 0.7999999999999998
+    },
+    {
+      "name": "slice_corner_degree_3.7",
+      "degree": 0,
+      "index": 0
+    },
+    {
+      "name": "native_slice_Chern_links_(3.7, 24)",
+      "M": 3.7,
+      "N": 24,
+      "link_C": 4.803962800127187e-17,
+      "Kubo_C": -5.782700616131082e-11,
+      "min_overlap": 0.997257288815744,
+      "gap": 1.7000000000000002
+    },
+    {
+      "name": "native_slice_Chern_links_(3.7, 48)",
+      "M": 3.7,
+      "N": 48,
+      "link_C": -4.5278729840279234e-17,
+      "Kubo_C": 0.0,
+      "min_overlap": 0.9992733768532875,
+      "gap": 1.7000000000000002
+    },
+    {
+      "name": "native_slice_Chern_links_(3.7, 96)",
+      "M": 3.7,
+      "N": 96,
+      "link_C": 9.607925600254374e-17,
+      "Kubo_C": 1.8165981760461622e-18,
+      "min_overlap": 0.9998156362945163,
+      "gap": 1.7000000000000002
+    },
+    {
+      "name": "native_slice_Kubo_integral_3.7",
+      "M": 3.7,
+      "N": 96,
+      "link_C": 9.607925600254374e-17,
+      "Kubo_C": 1.8165981760461622e-18,
+      "min_overlap": 0.9998156362945163,
+      "gap": 1.7000000000000002
+    },
+    {
+      "name": "spectral_Kubo_projector_0",
+      "error": 1.3877787807814457e-17
+    },
+    {
+      "name": "native_inversion_symmetry_0",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_1",
+      "error": 9.540979117872439e-18
+    },
+    {
+      "name": "native_inversion_symmetry_1",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_2",
+      "error": 2.0816681711721685e-17
+    },
+    {
+      "name": "native_inversion_symmetry_2",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_3",
+      "error": 1.0408340855860843e-17
+    },
+    {
+      "name": "native_inversion_symmetry_3",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_4",
+      "error": 4.163336342344337e-17
+    },
+    {
+      "name": "native_inversion_symmetry_4",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_5",
+      "error": 1.734723475976807e-17
+    },
+    {
+      "name": "native_inversion_symmetry_5",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_6",
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "native_inversion_symmetry_6",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_7",
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "native_inversion_symmetry_7",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_8",
+      "error": 3.469446951953614e-18
+    },
+    {
+      "name": "native_inversion_symmetry_8",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_9",
+      "error": 6.938893903907228e-18
+    },
+    {
+      "name": "native_inversion_symmetry_9",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_10",
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "native_inversion_symmetry_10",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_11",
+      "error": 6.938893903907228e-18
+    },
+    {
+      "name": "native_inversion_symmetry_11",
+      "error": 0.0
+    },
+    {
+      "name": "physical_Hall_slice_measure_0.51",
+      "error": 0.0
+    },
+    {
+      "name": "gapped_integer_stack_cannot_cancel_0.51",
+      "fraction": 0.32964539032007795
+    },
+    {
+      "name": "physical_Hall_slice_measure_0.7",
+      "error": 1.734723475976807e-18
+    },
+    {
+      "name": "gapped_integer_stack_cannot_cancel_0.7",
+      "fraction": 0.253183311106635
+    },
+    {
+      "name": "physical_Hall_slice_measure_0.9",
+      "error": 8.673617379884035e-19
+    },
+    {
+      "name": "gapped_integer_stack_cannot_cancel_0.9",
+      "fraction": 0.14356629312870625
+    },
+    {
+      "name": "physical_Hall_slice_measure_0.99",
+      "error": 0.0
+    },
+    {
+      "name": "gapped_integer_stack_cannot_cancel_0.99",
+      "fraction": 0.04505341364441213
+    },
+    {
+      "name": "Maxwell_Hall_physical_polynomial"
+    },
+    {
+      "name": "Hall_axis_soft_quadratic"
+    },
+    {
+      "name": "Hall_axis_hard_gap"
+    },
+    {
+      "name": "Hall_axis_polarization_roots"
+    },
+    {
+      "name": "physical_Hall_wave_mode_(0, 0)",
+      "squared_frequency": 0.04601448992112067,
+      "singular_values": [
+        0.088379475997233,
+        0.06883372789437824,
+        4.9042824721607715e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(0, 1)",
+      "squared_frequency": 0.2015747279450961,
+      "singular_values": [
+        0.28315312861068953,
+        0.16398183735838198,
+        2.5533767154437855e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(1, 0)",
+      "squared_frequency": 0.12430250992051692,
+      "singular_values": [
+        0.20510860851716137,
+        0.11762777668512335,
+        1.4884445824244831e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(1, 1)",
+      "squared_frequency": 0.3211241880089959,
+      "singular_values": [
+        0.479926898202129,
+        0.19801896789534595,
+        1.1894307251839788e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(2, 0)",
+      "squared_frequency": 0.07195325961953664,
+      "singular_values": [
+        0.21440761242203346,
+        0.10654070889578456,
+        1.5727986259498487e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(2, 1)",
+      "squared_frequency": 0.5017734227653221,
+      "singular_values": [
+        0.7243245150827098,
+        0.457269070828398,
+        1.5584180909919276e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(3, 0)",
+      "squared_frequency": 0.10797052127960935,
+      "singular_values": [
+        0.25787260156777675,
+        0.15132462444465064,
+        1.7840657891769803e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(3, 1)",
+      "squared_frequency": 0.4693930654360926,
+      "singular_values": [
+        0.8293919843655658,
+        0.3614236252270101,
+        4.22593065280143e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(4, 0)",
+      "squared_frequency": 0.1337965309142033,
+      "singular_values": [
+        0.3249819896596726,
+        0.20871627421689373,
+        5.9490228637244605e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(4, 1)",
+      "squared_frequency": 0.6413273463856276,
+      "singular_values": [
+        1.1312041530917367,
+        0.5076540087653151,
+        8.203849384289086e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(5, 0)",
+      "squared_frequency": 0.01464522125415324,
+      "singular_values": [
+        0.09835734460194828,
+        0.09702494835960977,
+        3.297003729532592e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(5, 1)",
+      "squared_frequency": 0.6706228387506451,
+      "singular_values": [
+        1.3105253346825074,
+        0.6560751215646302,
+        1.2970711766022003e-16
+      ]
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_0",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_1",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_2",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_3",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_4",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_5",
+      "error": 0.0
+    }
+  ],
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "elapsed_seconds": 2.545273374998942,
+  "scope": "Native free-band Hall response, leading Maxwell/Hall dispersion, and conditional Hall-subtracted one-loop coefficients. No full gauge phase, higher-loop or axiom-selection theorem."
+}

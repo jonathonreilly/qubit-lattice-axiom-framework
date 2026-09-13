@@ -1,0 +1,9 @@
+loop: native-weyl-gauge-response-20260913
+status: author_proposal_ready_for_review
+execution: supervisor_only_no_subagents
+branch: physics-loop/native-weyl-gauge-response-20260913
+main_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
+actual_current_surface_status: conditional-support
+independent_review: pending
+formal_audit: pending
+next_action: Independent review of Hall matching, conditional loop coefficients and native regulator hypotheses.

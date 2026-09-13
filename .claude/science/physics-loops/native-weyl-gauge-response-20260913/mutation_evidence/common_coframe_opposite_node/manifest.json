@@ -1,0 +1,10 @@
+{
+  "name": "common_coframe_opposite_node",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "c114111896b9378085faeec2a5f53d4cb7f03e7ec3ab02cb8ff3878e482d3748",
+  "old": "value=np.sin(k[2])*np.sin(k[j])/vel",
+  "new": "value=np.sin(k[j])/vel",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-v2vwj71a/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-v2vwj71a/primary.py\", line 288, in run\n    close('native_coframe_node_jet_'+str((chir,a,j,i)),fd,target,2e-9)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-v2vwj71a/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-v2vwj71a/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_coframe_node_jet_(-1, 2, 0, 0)', {'error': 2.400280083934658})\n"
+}

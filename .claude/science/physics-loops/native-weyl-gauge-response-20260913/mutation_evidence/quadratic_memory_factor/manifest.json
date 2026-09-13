@@ -1,0 +1,10 @@
+{
+  "name": "quadratic_memory_factor",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "01dd21de2be5184a9d93162a2e75add5cef3f048cdca6bf2edbf115d0254da49",
+  "old": "W=s.Rational(2,5)*(z**-1-z**-6)",
+  "new": "W=s.Rational(1,5)*(z**-1-z**-6)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-f897rf9x/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-f897rf9x/primary.py\", line 231, in run\n    check('generated_shear_memory_equation',s.simplify(s.diff(W,ell)+charge*W/(6*s.pi**2)-2*charge*R**2/(6*s.pi**2))==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-f897rf9x/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('generated_shear_memory_equation', {})\n"
+}

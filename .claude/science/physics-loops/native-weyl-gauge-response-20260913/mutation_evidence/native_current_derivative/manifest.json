@@ -1,0 +1,10 @@
+{
+  "name": "native_current_derivative",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "83792678d7ce4e8df066a7460a01ad004108f0b34e2b342823694e08125e6380",
+  "old": "out[...,axis]=np.cos(k[...,axis])",
+  "new": "out[...,axis]=-np.cos(k[...,axis])",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bzo0xq0v/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bzo0xq0v/primary.py\", line 296, in run\n    check('native_logarithmic_shell_'+str((ratio,radius)),np.max(errs)<3*radius**2,errors=errs.tolist(),self_coefficients=sf.real.tolist(),electric=el.real.tolist(),magnetic=mag.real.tolist())\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bzo0xq0v/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_logarithmic_shell_(0.8, 0.2)', {'errors': [2.3770307567497184, 0.07434386984340424, 0.03650013271568375], 'self_coefficients': [[0.5677598770796175, -1.1959607979019817, -1.1959607979019817, 1.104482243484096], [0.5677598770796175, -1.1959607979019822, -1.1959607979019817, 1.104482243484096]], 'electric': [1.7410105365100708, 1.7410105365100708, 1.6152865945322081], 'magnetic': [[0.0, 1.0976735354206066, 1.0373702177317399], [1.0976735354206069, 0.0, 1.0373702177317399], [1.1031667993823504, 1.1031667993823504, 0.0]]})\n"
+}

@@ -1,0 +1,17 @@
+{
+  "base": "origin/main",
+  "changed_path_count": 184,
+  "checked": [],
+  "control_failures": [
+    {
+      "changed_surfaces": [
+        ".claude/science/physics-loops/native-weyl-gauge-response-20260913/CHANGED_EVIDENCE.json"
+      ],
+      "control": "mixed_candidate_versions",
+      "issue": "paths_have_conflicting_staged_and_working_versions; readiness reads working-copy bytes, not a different index version. Stage the intended bytes or unstage these paths for working-copy review, then rerun the gate"
+    }
+  ],
+  "diff_scope": "committed_and_worktree",
+  "failures": [],
+  "schema": "changed_audit_evidence_readiness_v1"
+}

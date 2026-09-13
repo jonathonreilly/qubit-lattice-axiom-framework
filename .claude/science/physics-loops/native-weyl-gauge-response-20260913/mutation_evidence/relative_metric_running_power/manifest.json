@@ -1,0 +1,10 @@
+{
+  "name": "relative_metric_running_power",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "ebcf189e4a3e83b63508508238f9c359147a6ba01b16872fb96f18caa55ef576",
+  "old": "R=z**-3;W=",
+  "new": "R=z**-2;W=",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-j5vlnil8/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-j5vlnil8/primary.py\", line 229, in run\n    check('running_relative_metric_equation',s.simplify(s.diff(R,ell)+charge*R/(2*s.pi**2))==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-j5vlnil8/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('running_relative_metric_equation', {})\n"
+}

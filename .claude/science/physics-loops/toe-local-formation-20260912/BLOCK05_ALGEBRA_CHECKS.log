@@ -1,0 +1,66 @@
+{
+  "check_groups": 53,
+  "seconds": 0.16489570797421038,
+  "data": {
+    "singleton": {
+      "omega": "7/3",
+      "alpha": "5/4",
+      "coefficient_b": "-75/56",
+      "B01": "-75/28"
+    },
+    "cocycle_exact": {
+      "first_coupled_error_order": 3,
+      "third_order_norm_squared_Frobenius": "16/2025"
+    },
+    "cocycle_numerical": [
+      {
+        "t": 0.2,
+        "error": 0.000351391958727762,
+        "universal_bound": 0.002666666666666667
+      },
+      {
+        "t": 0.1,
+        "error": 4.4313694846469405e-05,
+        "universal_bound": 0.0006666666666666668
+      },
+      {
+        "t": -0.1,
+        "error": 4.4313694846469405e-05,
+        "universal_bound": 0.0006666666666666668
+      },
+      {
+        "t": -0.2,
+        "error": 0.000351391958727762,
+        "universal_bound": 0.002666666666666667
+      }
+    ],
+    "five_cocycle": {
+      "correct_residual": 2.2213267888428437e-16,
+      "omitted_dynamics_error": 0.03433011328841327,
+      "prefix_time_error": 0.011163782830946304
+    },
+    "node": {
+      "scope": "symbolic arbitrary smooth form factor, not the actual native alpha",
+      "singular_iB_coefficient": "-4 alpha^2 h/omega^2",
+      "zero_alpha_order": "O(e)"
+    }
+  }
+}
+        0.87 real         0.44 user         0.09 sys
+            95502336  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7701  page reclaims
+                1137  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1399  voluntary context switches
+                1220  involuntary context switches
+          5651077785  instructions retired
+          2076958716  cycles elapsed
+            79774176  peak memory footprint

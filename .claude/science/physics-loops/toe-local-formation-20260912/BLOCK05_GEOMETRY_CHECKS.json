@@ -1,0 +1,131 @@
+{
+  "scope": "same-agent exact L8 incidence support; no native resolvent or infinite-volume enumeration",
+  "L": 8,
+  "far": {
+    "centers": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ]
+    ],
+    "boundary_size": 12,
+    "families": [
+      {
+        "label": "boundary",
+        "pair_sets": 225,
+        "singleton": 16200,
+        "mixed": 145800
+      }
+    ],
+    "word_counts": {
+      "singleton": 16200,
+      "mixed": 145800
+    },
+    "proper_masks": 1022,
+    "proper_masks_sha256": "b439eee433bf02c5d4d469aba105ec652c1d47fa428130b274688add1924abd9",
+    "noncut_prefix_bad_face_counts": {
+      "6": 362880,
+      "8": 90720,
+      "12": 217728,
+      "14": 108864,
+      "16": 13608
+    }
+  },
+  "adjacent": {
+    "centers": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "boundary_size": 10,
+    "families": [
+      {
+        "label": "((0, 0, 0), (1, 0, 0))",
+        "pair_sets": 225,
+        "singleton": 16200,
+        "mixed": 145800
+      },
+      {
+        "label": "((0, 0, 1), (1, 0, 1))",
+        "pair_sets": 9,
+        "mixed": 6480
+      },
+      {
+        "label": "((0, 0, 7), (1, 0, 7))",
+        "pair_sets": 9,
+        "mixed": 6480
+      },
+      {
+        "label": "((0, 1, 0), (1, 1, 0))",
+        "pair_sets": 9,
+        "mixed": 6480
+      },
+      {
+        "label": "((0, 7, 0), (1, 7, 0))",
+        "pair_sets": 9,
+        "mixed": 6480
+      }
+    ],
+    "word_counts": {
+      "singleton": 16200,
+      "mixed": 171720
+    },
+    "proper_masks": 1534,
+    "proper_masks_sha256": "62c50d8ceac8c634c125d788b4edff682489fc69b16a9ab6d43d81a8b89da825",
+    "noncut_prefix_bad_face_counts": {
+      "6": 427968,
+      "8": 167304,
+      "10": 148128,
+      "12": 153168,
+      "14": 21504,
+      "16": 5040,
+      "18": 288
+    }
+  },
+  "check_groups": 29,
+  "checks": [
+    "far_far_pairsets",
+    "far_singleton_count",
+    "far_word_count",
+    "far_mixed_count",
+    "far_every_mixed_prefix_has_bad_face",
+    "far_proper_subset_count",
+    "far_dropping_mixed_loses_actual_words",
+    "adjacent_five_literal_bridges",
+    "adjacent_bridge_pairsets_((0, 0, 0), (1, 0, 0))",
+    "adjacent_bridge_pairsets_((0, 0, 1), (1, 0, 1))",
+    "adjacent_bridge_pairsets_((0, 0, 7), (1, 0, 7))",
+    "adjacent_bridge_pairsets_((0, 1, 0), (1, 1, 0))",
+    "adjacent_bridge_pairsets_((0, 7, 0), (1, 7, 0))",
+    "adjacent_triple_boundary_impossible_((0, 0, 0), (0, 0, 1))",
+    "adjacent_triple_boundary_impossible_((0, 0, 0), (0, 0, 7))",
+    "adjacent_triple_boundary_impossible_((0, 0, 0), (0, 1, 0))",
+    "adjacent_triple_boundary_impossible_((0, 0, 0), (0, 7, 0))",
+    "adjacent_triple_boundary_impossible_((0, 0, 0), (7, 0, 0))",
+    "adjacent_triple_boundary_impossible_((1, 0, 0), (1, 0, 1))",
+    "adjacent_triple_boundary_impossible_((1, 0, 0), (1, 0, 7))",
+    "adjacent_triple_boundary_impossible_((1, 0, 0), (1, 1, 0))",
+    "adjacent_triple_boundary_impossible_((1, 0, 0), (1, 7, 0))",
+    "adjacent_triple_boundary_impossible_((1, 0, 0), (2, 0, 0))",
+    "adjacent_singleton_count",
+    "adjacent_word_count",
+    "adjacent_mixed_count",
+    "adjacent_every_mixed_prefix_has_bad_face",
+    "adjacent_dropping_mixed_loses_actual_words",
+    "integer_projection_product_max8"
+  ],
+  "seconds": 0.4492004159837961
+}

@@ -1,0 +1,39 @@
+{
+  "scope": "same-agent exact L8 incidence support; no native resolvent or infinite-volume enumeration",
+  "check_groups": 29,
+  "seconds": 0.4492004159837961
+}
+{
+  "far": {
+    "word_counts": {
+      "singleton": 16200,
+      "mixed": 145800
+    },
+    "proper_masks": 1022
+  },
+  "adjacent": {
+    "word_counts": {
+      "singleton": 16200,
+      "mixed": 171720
+    },
+    "proper_masks": 1534
+  }
+}
+        0.51 real         0.46 user         0.01 sys
+            20414464  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1566  page reclaims
+                 469  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  88  voluntary context switches
+                 439  involuntary context switches
+          9436132070  instructions retired
+          1893834711  cycles elapsed
+            10404272  peak memory footprint

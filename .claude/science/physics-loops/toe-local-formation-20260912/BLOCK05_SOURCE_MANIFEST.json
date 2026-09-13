@@ -1,0 +1,103 @@
+{
+  "sources": [
+    {
+      "pr_or_tree": "8038",
+      "revision": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+      "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "copy": "block05_sources/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8058",
+      "revision": "a814da6cc1178ac015914c9088fc04b2e635963e",
+      "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+      "copy": "block05_sources/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+      "sha256": "bbddcf8229a92a19408caa0a829ef716c44767985f8402af334c95c155b230f8",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8058_tree",
+      "revision": "a814da6cc1178ac015914c9088fc04b2e635963e",
+      "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+      "copy": "block05_sources/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+      "sha256": "31f26e16ed3b57157655d62473eb764dcaa6af85a7e85bba2a2e7ea0fb04e0cb",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8059",
+      "revision": "fa9764acc0b90ce35a9b09cd918737ed933aff76",
+      "path": "docs/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md",
+      "copy": "block05_sources/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md",
+      "sha256": "e057aa73cd23477a46c67e4f15aabc15f220727319db9710c12a29ce0c8dfb80",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8060",
+      "revision": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+      "path": "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+      "copy": "block05_sources/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+      "sha256": "883c62e72a9471d063a5acf723a7810c640b92228f09332267260b199f512392",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8062",
+      "revision": "df8112d1642bec7aaaacd380036087b03cdb0173",
+      "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "copy": "block05_sources/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "sha256": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8063",
+      "revision": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+      "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "copy": "block05_sources/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "sha256": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8064",
+      "revision": "70d0f3c793ff8eb835b1661c710cb42ea2b46879",
+      "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+      "copy": "block05_sources/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+      "sha256": "4365a7cb5621e3cc7f678263255f443cf997acdabb9490c7997c95cfefdd2e0c",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8066",
+      "revision": "64c1efc6984b16cf95c61e7ac148add85d741606",
+      "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "copy": "block05_sources/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "sha256": "8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8056",
+      "revision": "38f9a320fad026016303d79987d790c4b5bb7a51",
+      "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "copy": "block05_sources/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "sha256": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
+      "read_coverage": "full primary note; initially truncated historical middle was subsequently read in bounded chunks; source numerical certificate not replayed",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    },
+    {
+      "pr_or_tree": "8071",
+      "revision": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+      "path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+      "copy": "block05_sources/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+      "sha256": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
+      "read_coverage": "full",
+      "role": "conditional mathematical supplier; not independently audited in this campaign"
+    }
+  ]
+}

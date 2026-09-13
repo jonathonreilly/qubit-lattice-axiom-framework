@@ -1,0 +1,325 @@
+===== runner cache v1 =====
+runner: scripts/native_star_low_energy_operator_2026_09_13.py
+runner_sha256: c93c6e788e55e21c104735b8a3897c0f161f7e6506167bbf2ad20ce680e43839
+input_fingerprint_sha256: cdd3ebe13b853cc9a4fcc7edfd569c8cbed86893072290ed7f35b4f8a0a1c4cb
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.17
+status: ok
+----- stdout -----
+{
+  "operator": {
+    "status": "passed",
+    "count": 35,
+    "checks": [
+      {
+        "name": "high_gap_after_real_parameter"
+      },
+      {
+        "name": "complex_disk_inverse_bound"
+      },
+      {
+        "name": "Cauchy_and_telescoping_constants"
+      },
+      {
+        "name": "independent_Neumann_odd_tail",
+        "rational": "1622982593539803709440/16028065902833",
+        "decimal": 101258792.13242675
+      },
+      {
+        "name": "Neumann_majorant_matches_two_inverse_word_series"
+      },
+      {
+        "name": "window_meets_low_cutoff_and_zeta_conditions"
+      },
+      {
+        "name": "uniform_relative_half_bound",
+        "rational": "14530459168373/6597069766656",
+        "decimal": 2.202562604660519,
+        "relative_upper": 0.3146518006657884
+      },
+      {
+        "name": "graded_low_high_CAR",
+        "maximum": 0.0
+      },
+      {
+        "name": "orthonormal_center_and_six_legs",
+        "error": 8.136001259696808e-16
+      },
+      {
+        "name": "center_neighbors_separate_under_cutoff",
+        "error": 0.0
+      },
+      {
+        "name": "complete_finite_star_pairs"
+      },
+      {
+        "name": "exact_low_high_defect_split",
+        "error": 7.827939685345342e-17
+      },
+      {
+        "name": "linear_quadratic_low_field_bounds"
+      },
+      {
+        "name": "comparator_positive_gap_and_high_gap",
+        "full_min": 6.859864200680717,
+        "high_min": 6.8604395508751255,
+        "scope": "shifted seven-mode comparator, not a native gap estimate"
+      },
+      {
+        "name": "low_vacuum_compression_keeps_quadratic_scalar",
+        "error": 0.0
+      },
+      {
+        "name": "nonzero_low_vacuum_quadratic_scalar",
+        "value": "(-0.0004+0j)"
+      },
+      {
+        "name": "high_parity_of_insertions"
+      },
+      {
+        "name": "operator_analytic_oddness_1.0",
+        "error": 0.0
+      },
+      {
+        "name": "operator_analytic_oddness_0.5",
+        "error": 0.0
+      },
+      {
+        "name": "operator_analytic_oddness_0.3j",
+        "error": 0.0
+      },
+      {
+        "name": "analytic_first_coefficient_vs_direct_inverse",
+        "error": 1.573435765688608e-11
+      },
+      {
+        "name": "wrong_inverse_derivative_sign_rejected"
+      },
+      {
+        "name": "whole_soft_Fock_Cauchy_tail",
+        "tail": 1.5738746091586867e-07,
+        "bound": 5.689297481729559e-05
+      },
+      {
+        "name": "zero_low_energy_coefficient_is_linear",
+        "error": 8.676745695068463e-19
+      },
+      {
+        "name": "Hermitian_linear_field_vacuum_isometry",
+        "error": 8.673617379884035e-19
+      },
+      {
+        "name": "energy_removal_bound_nonvacuous",
+        "error": 3.934841205133602e-06,
+        "bound": 4.5976700571015826e-05
+      },
+      {
+        "name": "exact_vacuum_calibration_bound"
+      },
+      {
+        "name": "real_spectral_parameter_matches_full_unsplit_operator",
+        "error": 4.345024466993507e-19
+      },
+      {
+        "name": "real_parameter_first_coefficient",
+        "error": 1.5757940022517503e-11
+      },
+      {
+        "name": "operator_comparison_on_all_low_particle_numbers",
+        "error": 2.940207603953081e-06,
+        "bound": 0.00019445161116162944,
+        "low_particle_numbers": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "three_low_particle_input_is_in_energy_domain",
+        "energy": 0.0045000000000000005,
+        "difference": 4.896484510517445e-07
+      },
+      {
+        "name": "one_field_intermediate_energy_support",
+        "maximum": 0.0
+      },
+      {
+        "name": "omitted_creation_energy_margin_rejected",
+        "residual": 1.0
+      },
+      {
+        "name": "compressed_local_field_norm_attained",
+        "error": 0.0
+      },
+      {
+        "name": "unrestricted_operator_replacement_is_false",
+        "global_error": 0.1274810694103622,
+        "filled_error": 0.12744822966366523,
+        "scope": "finite comparator counterexample only; original native L4 counterexample is a separate source"
+      }
+    ],
+    "seconds": 0.5603172910050489,
+    "source_sha256": "c93c6e788e55e21c104735b8a3897c0f161f7e6506167bbf2ad20ce680e43839",
+    "derivation_sha256": "00dbd9479df330bacaf992d9add9f56c39214c4811f0be683a650c6de4a1ec58",
+    "scope": "exact proof constants and an independently assembled shifted finite CAR comparator; not a native infrared fit, full interacting proof or independent source review"
+  },
+  "spectral_parent": {
+    "status": "passed",
+    "count": 34,
+    "checks": [
+      {
+        "name": "recomputed_parent_scalar_and_gap"
+      },
+      {
+        "name": "pull_through_constants"
+      },
+      {
+        "name": "inner_ball_in_positive_amplitude_window"
+      },
+      {
+        "name": "complete_nonlinear_ratio_bound",
+        "rational": "192650212941879825/7964819170103124435400386412544",
+        "decimal": 2.418764429266829e-14
+      },
+      {
+        "name": "four_band_DOS_upper_coefficient"
+      },
+      {
+        "name": "one_source_inner_ball_coefficient"
+      },
+      {
+        "name": "nine_power_laplace_coefficient"
+      },
+      {
+        "name": "native_cell_square"
+      },
+      {
+        "name": "native_zero_diagonal"
+      },
+      {
+        "name": "native_skew_adjoint_symbol"
+      },
+      {
+        "name": "literal_native_reflection_gauges",
+        "edge_comparisons": 2250
+      },
+      {
+        "name": "zero_cell_functional_only_origin_component"
+      },
+      {
+        "name": "literal_native_positive_z_projector_sign"
+      },
+      {
+        "name": "three_column_native_cone_Gram"
+      },
+      {
+        "name": "comparator_all_defects_positive",
+        "minimum": 3.807417596432748,
+        "scope": "shifted four-mode comparator only"
+      },
+      {
+        "name": "full_matrix_shifted_pull_through",
+        "absolute_error": 8.326672684688674e-17
+      },
+      {
+        "name": "omitted_frequency_shift_rejected",
+        "residual": 0.14514285714285713
+      },
+      {
+        "name": "three_annihilator_word_recursion",
+        "absolute_error": 2.5752030534132526e-19,
+        "word_counts": [
+          39,
+          33,
+          24,
+          44
+        ]
+      },
+      {
+        "name": "paired_half_Ward_terms_match_defined_scalar",
+        "absolute_error": 2.6645361414262163e-15
+      },
+      {
+        "name": "omitted_half_Ward_factors_rejected",
+        "residual": 0.42653190419909226
+      },
+      {
+        "name": "nonlinear_comparator_is_nonvacuous",
+        "weight": 3.405093517210556e-08
+      },
+      {
+        "name": "star_odd_particle_sectors",
+        "absolute_error": 0.0
+      },
+      {
+        "name": "positive_energy_projector_domination_2"
+      },
+      {
+        "name": "ordered_factorial_moment_2",
+        "absolute_error": 0.0
+      },
+      {
+        "name": "positive_energy_projector_domination_4"
+      },
+      {
+        "name": "ordered_factorial_moment_4",
+        "absolute_error": 1.6543612251060553e-24
+      },
+      {
+        "name": "positive_energy_projector_domination_8"
+      },
+      {
+        "name": "ordered_factorial_moment_8",
+        "absolute_error": 0.0
+      },
+      {
+        "name": "positive_energy_projector_domination_13"
+      },
+      {
+        "name": "ordered_factorial_moment_13",
+        "absolute_error": 0.0
+      },
+      {
+        "name": "missing_factorial_normalization_rejected",
+        "residual": 1.7025467586052782e-07
+      },
+      {
+        "name": "Wick_order_removes_one_particle",
+        "absolute_error": 0.0
+      },
+      {
+        "name": "Wick_order_has_nonzero_three_particle_component"
+      },
+      {
+        "name": "omitted_Wick_subtractions_rejected"
+      }
+    ],
+    "seconds": 0.2836330839782022,
+    "source_sha256": "a059824718610e377736bd630202780317e8d2ac7d9514ea65e0a7927ee4eb33",
+    "derivation_sha256": "6be9e2653f79129cf85f6793e02ebe9708c2e5b6c497066f6f631366f1d25f1b",
+    "parent_arithmetic": {
+      "coarse_interval": [
+        "7",
+        "330"
+      ],
+      "source_sha256": "f932113ee631ca82a3d64e80425e2a295ca7ac05e91ebd7d4ba4efcf06325579",
+      "dependencies_sha256": {
+        "WITNESS.json": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c",
+        "MOMENT_FORMULAS.json": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5",
+        "TRIAL_FORMULAS.json": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a"
+      }
+    },
+    "scope": "exact arithmetic/native cell checks and a distinct shifted finite-Fock comparator; no native spectral fit, infinite proof by enumeration or independent source review"
+  }
+}
+per_element: The real high/low field split, graded defect terms and inverse derivative signs are checked.
+per_site: Center/neighbor orthogonality and native cutoff normalization are explicit; the finite comparator is separately labelled.
+per_mode: Low-field energy support and CAR norm isometry are checked on all three soft modes.
+per_block: Complete soft-Fock operators and a three-particle input challenge the analytical compression estimate.
+lattice_wide: checked and not executed — the infinite operator statement follows from the analytical split and positive-gap expansion, not a size extrapolation.
+TOTAL: PASS=69 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_mixed_field_placement.py", line 223, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_mixed_field_placement.py", line 115, in run
+    checked('exact_low_high_defect_split',error<1e-13,error=error)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_mixed_field_placement.py", line 44, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: exact_low_high_defect_split

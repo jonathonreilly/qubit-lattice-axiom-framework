@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_real_spectral_shift.py", line 223, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_real_spectral_shift.py", line 183, in run
+    close('real_spectral_parameter_matches_full_unsplit_operator',opz,EH(direct_op))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_real_spectral_shift.py", line 48, in close
+    checked(name,error<tol,error=error)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_real_spectral_shift.py", line 44, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: real_spectral_parameter_matches_full_unsplit_operator

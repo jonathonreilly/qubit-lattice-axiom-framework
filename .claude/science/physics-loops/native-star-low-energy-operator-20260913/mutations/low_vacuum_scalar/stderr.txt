@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_low_vacuum_scalar.py", line 223, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_low_vacuum_scalar.py", line 127, in run
+    close('low_vacuum_compression_keeps_quadratic_scalar',compression,high_only)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_low_vacuum_scalar.py", line 48, in close
+    checked(name,error<tol,error=error)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_low_vacuum_scalar.py", line 44, in checked
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: low_vacuum_compression_keeps_quadratic_scalar

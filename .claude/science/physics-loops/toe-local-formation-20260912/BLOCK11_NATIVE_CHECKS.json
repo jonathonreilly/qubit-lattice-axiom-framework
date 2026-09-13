@@ -335,8 +335,8 @@
     }
   ],
   "count": 83,
-  "seconds": 0.12440495798364282,
+  "seconds": 0.11316437501227483,
   "source_sha256": "0d9387567557f2c5ceb8df30df93582744fb269a594006e1c539bded02d10cbb",
-  "note_sha256": "c258d141e0bbaf047b9b7e5be3c2f9b092c6b833155a509824b402f1241bb6a9",
+  "note_sha256": "7129b3289618f3102594af9d046122899788d69130c9608f9b2fd4ed5569e121",
   "scope": "same-author finite sign, history and dilation checks; no independent audit"
 }

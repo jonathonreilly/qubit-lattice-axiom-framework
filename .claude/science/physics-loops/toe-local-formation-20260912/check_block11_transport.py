@@ -45,6 +45,15 @@ def run():
     exact("characteristic_polynomial",(h-lam*s.eye(2)).det()-((lam-center)**2-s.cos(kx)**2-4*s.cos(ky)**2))
     exact("patch_modes_per_vertex",(s.pi**3/54)/(4*s.pi**3)/2-s.Rational(1,432))
 
+    # The current-window tolerance must preserve half the weakest x current.
+    epsilon=s.Rational(1,8192);error_bound=2*epsilon
+    half_bounds=(s.sqrt(3)/6912,s.Rational(1,3456),s.sqrt(3)/1728)
+    assert all(s.simplify(bound**2-error_bound**2)>0 for bound in half_bounds)
+    checks.append({"name":"exact_all_direction_half_current_margin","epsilon":str(epsilon)})
+    old_error=2*s.Rational(1,6912)
+    assert s.simplify(half_bounds[0]**2-old_error**2)<0
+    checks.append({"name":"old_tolerance_fails_claimed_half_x_margin","rejected":True})
+
     # Full periodic hopping matrix from literal graph edges, no Bloch construction.
     shape=(6,8,6)
     points=list(itertools.product(*(range(n) for n in shape)))

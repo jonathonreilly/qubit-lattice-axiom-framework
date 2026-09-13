@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "count": 30,
+  "checks": [
+    {
+      "name": "pull_through_constants"
+    },
+    {
+      "name": "inner_ball_in_positive_amplitude_window"
+    },
+    {
+      "name": "complete_nonlinear_ratio_bound",
+      "rational": "192650212941879825/7964819170103124435400386412544",
+      "decimal": 2.418764429266829e-14
+    },
+    {
+      "name": "four_band_DOS_upper_coefficient"
+    },
+    {
+      "name": "one_source_inner_ball_coefficient"
+    },
+    {
+      "name": "nine_power_laplace_coefficient"
+    },
+    {
+      "name": "native_cell_square"
+    },
+    {
+      "name": "native_zero_diagonal"
+    },
+    {
+      "name": "native_skew_adjoint_symbol"
+    },
+    {
+      "name": "literal_native_reflection_gauges",
+      "edge_comparisons": 2250
+    },
+    {
+      "name": "zero_cell_functional_only_origin_component"
+    },
+    {
+      "name": "three_column_native_cone_Gram"
+    },
+    {
+      "name": "comparator_all_defects_positive",
+      "minimum": 3.807417596432748,
+      "scope": "shifted four-mode comparator only"
+    },
+    {
+      "name": "full_matrix_shifted_pull_through",
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "name": "omitted_frequency_shift_rejected",
+      "residual": 0.14514285714285713
+    },
+    {
+      "name": "three_annihilator_word_recursion",
+      "absolute_error": 2.5752030534132526e-19,
+      "word_counts": [
+        39,
+        33,
+        24,
+        44
+      ]
+    },
+    {
+      "name": "nonlinear_comparator_is_nonvacuous",
+      "weight": 3.405093517210556e-08
+    },
+    {
+      "name": "star_odd_particle_sectors",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "positive_energy_projector_domination_2"
+    },
+    {
+      "name": "ordered_factorial_moment_2",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "positive_energy_projector_domination_4"
+    },
+    {
+      "name": "ordered_factorial_moment_4",
+      "absolute_error": 1.6543612251060553e-24
+    },
+    {
+      "name": "positive_energy_projector_domination_8"
+    },
+    {
+      "name": "ordered_factorial_moment_8",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "positive_energy_projector_domination_13"
+    },
+    {
+      "name": "ordered_factorial_moment_13",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "missing_factorial_normalization_rejected",
+      "residual": 1.7025467586052782e-07
+    },
+    {
+      "name": "Wick_order_removes_one_particle",
+      "absolute_error": 0.0
+    },
+    {
+      "name": "Wick_order_has_nonzero_three_particle_component"
+    },
+    {
+      "name": "omitted_Wick_subtractions_rejected"
+    }
+  ],
+  "seconds": 0.09433675004402176,
+  "source_sha256": "48c95ef2f08f5d6d626e8d2e35b81074fa4f9b082c03aee7f5bef0f8422cd3f5",
+  "derivation_sha256": "8b1c336a0e77cb66a7597d79258f24d7cf010c3f9b4d8156fceccebe409625df",
+  "scope": "exact arithmetic/native cell checks and a distinct shifted finite-Fock comparator; no native spectral fit, infinite proof by enumeration or independent source review"
+}

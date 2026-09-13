@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "count": 325,
+  "count": 327,
   "checks": [
     {
       "name": "physical_Bloch_phase_00",
@@ -45,6 +45,14 @@
     {
       "name": "patch_modes_per_vertex",
       "exact": true
+    },
+    {
+      "name": "exact_all_direction_half_current_margin",
+      "epsilon": "1/8192"
+    },
+    {
+      "name": "old_tolerance_fails_claimed_half_x_margin",
+      "rejected": true
     },
     {
       "name": "literal_mode_2_0",
@@ -1319,8 +1327,8 @@
       "passed": true
     }
   ],
-  "seconds": 0.17596404202049598,
-  "source_sha256": "2327451ca17e51ea59100ac7c00b2d62b61e06bcce05249eca0e57cf03d97b27",
-  "note_sha256": "c258d141e0bbaf047b9b7e5be3c2f9b092c6b833155a509824b402f1241bb6a9",
+  "seconds": 0.17597633303375915,
+  "source_sha256": "d2628287cfe575155e1c359369f7008069b8a26597ccb36eec7b411ed663451e",
+  "note_sha256": "7129b3289618f3102594af9d046122899788d69130c9608f9b2fd4ed5569e121",
   "scope": "same-author finite comparators; no numerical integral defines the transport theorem"
 }

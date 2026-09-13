@@ -1,0 +1,17 @@
+{
+  "mathematical_input": {
+    "revision": "6e0541d4e6717c938c1bef380d0ed90a3438e228",
+    "pr": 8086,
+    "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "sha256": "0d256f075b0cee3e9c455877cce073fff34015c6f4ef32833cad24b1f76abdad",
+    "used": "supplied native model, reconstructed all-parity D_A>=h/4, defined bounded Ward scalar and elementary7<h\u00b2alpha<330 witness",
+    "status": "same-author milestone, independent source review pending"
+  },
+  "comparison_source": {
+    "revision": "64c1efc6984b16cf95c61e7ac148add85d741606",
+    "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+    "reading": "full note reread in this block",
+    "role": "prior node-bridge comparison; new pull-through proof reconstructs needed projected identification without importing its quasi-local creator result"
+  },
+  "source_domain": "the explicitly defined star vector in the supplied Gaussian bath; deriving it as the actual electric perturbation coefficient or from axioms retains the separate physical bridge"
+}

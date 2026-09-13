@@ -292,8 +292,8 @@ so R_d(a)<=2(ea/d)^d. For 0<epsilon<=1, it suffices to choose
     d >= ceil(max(12 e tT, log_2(16/epsilon),1)),
     M >= ceil(log_2(4/epsilon))                         (11.13)
 
-to make (11.12) at most epsilon. In particular epsilon<=1/6912 preserves
-at least half the weakest nonzero current bound in (11.10), throughout
+to make (11.12) at most epsilon. In particular epsilon<=1/8192 preserves
+at least half every nonzero current bound in (11.10), throughout
 the observation region and 0<=s<=T. A finite physical carrier enclosing
 a virtual observation box of side R therefore has size
 O((R+tT+log(1/epsilon))³); the constants include the midpoint placement,

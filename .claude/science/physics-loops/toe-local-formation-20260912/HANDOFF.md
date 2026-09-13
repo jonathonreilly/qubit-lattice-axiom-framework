@@ -332,3 +332,49 @@ source review, formal audit or source landing is claimed.
 Return to personal discovery: Block10 cold-scope review and Block11 canonical
 packaging. Full combined integration gates remain pending for all3 open
 milestone PRs8084,8085,8086. Continue until11:38:24UTC without agents.
+
+
+## Formation/current milestone and Block14, 2026-09-13 around07:47UTC
+
+PR8087 is open non-draft, head d568433b0fb323b8d72cc76f362ed3ead6b0b8d8,
+worktree native-growing-formation-current-20260913. Its fresh-main canonical
+unit combines the native pulse/history, finite protected current and
+single-seed growth proofs. The cold packaging review found a real constant
+error: epsilon1/6912 preserves nonzero current but not the claimed half-margin
+in x. The final1/8192 tolerance is exactly checked and the old one rejected.
+Original note/helper/470-check baseline are preserved in its recovery packet.
+The final primary cache passes472 checks in0.94s; ten actual mutations were
+rejected. Parent/hash/helper/link/cache checks pass; manifest adds1 node and
+2 parents; full branch whitespace clean; no source-author landing or audit.
+Campaign Block11 source and transport helper are corrected; native83 and
+transport327 outputs have been refreshed against their current sources.
+
+Block10 cold author scope review is complete and committed a08a917065. The
+nonlinear source completion works through orderepsilon²; its broader negative
+packet is deliberately not submitted as an N1-N8 PASS or axiom-forcing wall.
+
+NEW Block14: direct annihilator pull-through estimates for the defined native
+star vector. The preliminary general quasi-local route is retained in the
+working plan, but direct gapped resolvents give explicit constants. For m
+annihilators C_m=(180/h²)prod_j(43+23j), henceC3=45,464,760/h². A factorial
+low-mode count bounds ALL N>=3 spectral weight by K E9, with
+K=45,464,760² pi³/(10368 h13). Reflection gauges identify the bounded soft
+functional with alpha times the origin cell component; paired half terms
+match exactly the scalar in PR8086. A direct Lipschitz estimate yields the
+E3 one-particle lower/asymptotic weight. AtE/h<=1/32768 the full nonlinear/
+one-particle ratio is bounded below10^-12 (rational upper2.4188e-14).
+This is a free-reference spectral theorem, not an interacting phase or
+physical clock. The star's interpretation as an actual electric perturbation
+coefficient remains a separate physical-source bridge.
+
+BLOCK14_DERIVATION was written before its checker. The first30 checks pass
+in0.095s: exact constants/native-cell square/reflection algebra, a DIFFERENT
+shifted four-mode Fock comparator for full-matrix pull-through and triple
+word recursion, nonvacuous factorial moments, and Wick subtraction. No native
+scalar was fitted in that comparator. Optional E9 sharpness proof and a cold
+source pass remain to complete. Domain handling uses norm-smooth conjugation
+byN to establish chi in every finite number domain before distributional
+annihilator estimates. Read the derivation/working plan before continuing.
+
+Own lock refreshed07:25:40UTC, expires08:25:40UTC. Deadline11:38:24UTC;
+continue personally without agents, heartbeat quiet recovery remains active.

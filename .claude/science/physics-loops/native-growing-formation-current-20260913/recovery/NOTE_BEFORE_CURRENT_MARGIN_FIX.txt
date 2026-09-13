@@ -1,0 +1,615 @@
+---
+claim_id: native_growing_formation_current_bounded_theorem_note_2026-09-13
+claim_type: bounded_theorem
+claim_scope: "Prepared native edge-qubit carrier: an explicit varying nearest-neighbor Record content law, protected three-direction matter current, and a single-seed growing formation process with finite carrier windows. All state, control, Born-event and occurrence assumptions remain supplied."
+upstream_dependencies:
+  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
+  - minimal_axioms
+runner: scripts/native_growing_formation_current_2026_09_13.py
+---
+
+# Growing native formation with protected matter current
+
+**Date:** 2026-09-13
+**Type:** bounded_theorem
+**Status:** proposed_retained
+
+An explicit prepared native carrier supports a varying nearest-neighbor Record
+content law and nonzero protected matter current through arbitrarily large
+finite formation histories. A single supplied seed and a specified occurrence
+process give analytical growing-front bounds. The construction does not derive
+its state, controls, Born events, rates or clock from the framework axioms.
+Its actual current-surface status is conditional-support; independent source
+review and formal audit remain pending.
+
+~~~yaml
+actual_current_surface_status: conditional-support
+conditional_surface_status: conditional-support
+target_claim_type: bounded_theorem
+claim_type_reason: "Analytical operator, spectral and probability construction with explicit finite carrier resources and targeted finite comparators."
+trace_class: upstream_support
+target_claim_id: native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
+target_blocker_text: "Continuing local formation with a varying nearest-neighbor content law on a carrier sustaining matter transport."
+source_of_blocker_text: frontier_question
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "Derive a matter-dependent readable Record interface and retire the supplied preparation, occurrence/control and clock assumptions."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+~~~
+
+## Theorem and proof obligations
+
+For every finite observation horizon T and a finite observation box, the
+specified finite native construction has the following properties. Every
+supported event history follows the same explicit content kernel F on its
+prepared digital nearest-neighbor domain, leaves every older Record fixed,
+and preserves the protected matter state functional under its event-free
+Hamiltonian evolution. There is a finite initial even-parity state with
+nonzero cell-averaged current in all three directions throughout the horizon.
+The single-seed version has the formation probability bounds in section 10
+and a carrier window of order (R+(gamma+t)T+log(1/epsilon))³, with collision
+storage accounted separately. Here R encloses both the seed and observation
+box; rates and hopping use the supplied time convention.
+
+The Record-history distribution is the one explicitly constructed from the
+program conditions and independent clocks. A readable matter-current
+interface is an additional task; the current observable here belongs to the
+supplied CAR representation. This theorem supplies neither an interacting
+phase nor an empirical prediction or completed TOE.
+
+| Premise or obligation | Role and disposition |
+|---|---|
+| Finite native ordered-star algebra, cycle code and even-CAR dictionary | Mathematical parent on pinned main; its physical carrier and event assumptions remain conditional |
+| Protected/candidate roles, Pauli context, code and ready-state preparation | Supplied conditions, stated explicitly below |
+| Biased cycle pulse and complete conditional instrument | Derived in sections 1–3 |
+| Absorbing finite collision channel | Derived in section 4, with fresh environment and supplied control |
+| Protected spectral current and finite parity/boundary window | Derived in sections 5–6 |
+| Program roles, seed, Born pulse and hybrid occurrence rule | Explicit conditions in sections 7–9 |
+| Nonexplosion and front bounds | Analytical probability proof in sections 9–10 |
+| Common finite physical realization over the requested window | Derived in section 11; no infinite physical cycle-code state presumed |
+| Native matter readout, preparation selection, autonomous controller and physical clock | Open physical interface obligations, with no asserted independence count |
+
+The [current axiom memo](MINIMAL_AXIOMS_2026-06-29.md) supplies the named
+Lattice, Qubit, Admissibility and Record premises. The unrecorded ready/fuel
+states below are supplied quantum preparations, not readout values assigned
+to absent Records. The full model and the digital domain are additional
+conditions. No axiom, primitive or editable prompt is changed.
+
+## 1. Exact target and imported dictionary
+
+Use the finite native edge-qubit algebra and code of main's
+[native edge instrument](NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md),
+equations (1)–(4) and Theorems 1–2. These supply an ordinary tensor carrier,
+ordered-star Pauli operators A_ij,B_i, central cycle involutions S_C, and
+the faithful even-CAR dictionary on each connected surviving graph. This
+unit does not reclassify that dictionary or its already proved fair
+nonbridge event as new. Born projectors, Hamiltonian dwell, initial code,
+Pauli context, and physical roles remain supplied.
+
+Split edges into a protected connected graph B and candidates R. Every
+candidate e has a chosen cycle C_e consisting of e and protected edges.
+Only candidates can become Records. Their hopping coefficients are zero
+from the beginning. The constant Hamiltonian is
+
+    H_B = sum_(f in B) a_f T_f.
+
+The protected algebra A_B is generated by all vertex parities B_v and all
+A_f for f in B. Connectivity implies that it represents the full even
+matter matrix algebra in the current code, before and after every event.
+For every finite candidate history h, write P_h for the remaining-cycle
+and old-Record code projector. Each unused S_e obeys S_e P_h=P_h.
+
+## 2. A biased gauge pulse and its complete conditional instrument
+
+Let Z=Z_e, S=S_e. The cycle algebra gives S*=S, S²=Z²=I,
+SZ=-ZS. Thus Y=iZS is a Hermitian involution. For real theta put
+
+    U(theta)=exp(-i theta Y/2)=c I+s ZS,
+    c=cos(theta/2), s=sin(theta/2), Q_z=(I+zZ)/2.
+
+This is a physical bounded-support unitary: its generator is the cycle
+Pauli operator times the local Z. No global code projector is used as a
+control. For the plaquette witnesses below, its support lies in the four
+vertex stars, with at most twenty native factors and physical radius four
+from the target. Up to four nearest-neighbor program controls make at most
+twenty-four factors. A spatial synthesis into two-site gates is not supplied.
+On the incoming code,
+
+    K_z P_h := Q_z U P_h = (c+z s) Q_z P_h.                 (11.1)
+
+Because P_h Z P_h=0,
+
+    P_h K_z* K_z P_h = p_z P_h,
+    p_z=(1+z sin(theta))/2.                               (11.2)
+
+For |theta|<=pi/2 the branch is sqrt(p_z) times the original fair
+isometry sqrt(2)Q_z P_h. If p_z=0 that branch is absent. For every state
+on P_h, including states entangled with an arbitrary reference, the
+normalized surviving matter state therefore equals its pre-event state.
+This is equality of the corresponding state functional/dictionary, not
+equality of the orthogonal physical Record branches.
+
+Every O in A_B commutes with S and with Z: its generators have X support
+only on protected edges. Consequently [O,U]=[O,Q_z]=0. Combining this
+commutation with the scalar effect (11.2) gives the stronger operator identity
+
+    P_h K_z* O K_z P_h = p_z P_h O P_h.                  (11.3)
+
+The entire protected energy distribution and its correlations with a
+reference survive each branch. Also [U,H_B]=[Q_z,H_B]=0 as full-carrier
+operator identities. A nonzero hopping coefficient on the candidate
+generally violates these identities; zero candidate hopping is essential.
+
+For distinct unused e,f, Z_e commutes with S_f, because f's cycle contains
+only f and protected edges. All S_e commute. Therefore all Y_e commute,
+all cross-edge K_e,z commute, and their coefficients may be any functions
+of already fixed commuting program Records. The surviving S_f and all old
+Z Records commute with the next instrument. Induction proves (11.1)–(11.3)
+for every supported history. Arbitrary interleaved H_B dwell adds only the
+same matter evolution that would occur without the events. There is no
+error accumulating with the number of formations.
+
+Equation (11.2) gives the same conditional Record probabilities for every
+protected matter input with the same program history. The present construction
+therefore specifies no matter-dependent Record readout.
+
+## 3. Literal nearest neighbors and a varying content law
+
+Use virtual vertices v in Z³, physical vertex sites 2v, and native qubits
+at edge centers 2v+e_a. Let R be x-oriented edges whose tail has odd y.
+Protect all other edges. Each candidate has a plaquette detour through
+the adjacent even-y row. No detour uses another candidate. The protected
+graph is connected: all y,z edges remain and every even-y row retains x
+edges. R has density 1/2 per virtual vertex, or 1/6 of virtual edges and
+1/16 of physical sites. In a finite open box include only candidates whose
+selected detour is present; protect the other boundary edges.
+
+For the first, static-program construction, all physical vertex sites carry
+supplied permanent digital program Records Z=z_v. The two endpoints of a
+native edge are its literal nearest neighbors; none of its four transverse
+neighbors carries a Record. Old native edge Records are never nearest
+neighbors of another native edge center. Fuel below remains unrecorded.
+Choose
+
+    theta = pi(z_L+z_R)/12,
+    p_+ = 1/2+(z_L+z_R)/8 in {1/4,1/2,3/4}.             (11.4)
+
+The controlled unitary is exp[-i pi(Z_L+Z_R)Y_e/24]. It preserves its
+digital program registers. Only the angle depends on the nearest-neighbor
+conditions; the physical pulse support includes the bounded cycle stars.
+
+A single content kernel on a specified nonempty finite family eta of
+rank-one neighbor Records is
+
+    F(eta) = (1/|eta|) sum_(rho in eta)
+             [(3/4) delta_rho + (1/4) delta_(I-rho)].    (11.5)
+
+Here the site matrix algebras have the supplied common identification.
+F is invariant under neighbor permutations and equivariant under simultaneous
+unitary conjugation. On the prepared commuting two-symbol domain (11.4)
+is exactly F, including all conditional histories and arbitrary matter
+states in the code. It varies between actually realized program conditions.
+There is no claim of universal quantum programming for nonorthogonal
+unknown states, or a physical implementation of (11.5) outside this digital
+domain. An empty conditioning domain is outside this construction.
+
+The periodic role pattern and its common basis are state/control conditions.
+Translations and rotations of the prepared construction obey the same F;
+selection of a covariant preparation or an autonomous controller is open.
+The program Records are initial data here; their own formation is not yet
+provided by this static-program version.
+
+## 4. A supplied absorbing event process and finite collision dilation
+
+Put one distinct fuel qubit at the spectator site x_e+e_z for each candidate
+center x_e, initially |1>. These sites have two odd coordinates and are
+disjoint from native qubits and endpoint programs. For a supplied rate
+gamma>0 define trajectory jump operators
+
+    J_z = sqrt(gamma) K_z tensor |0><1|_fuel.
+
+Since sum_z K_z* K_z=I on the full carrier, sum_z J_z*J_z=gamma P_1.
+The first jump has an exponential waiting time, gives law (11.2), empties
+the fuel, and makes the edge a permanent Z Record in this forward process.
+All other operations preserve this Z. Ready-site clocks are independent;
+the content law is conditioned on the actual local program Records.
+The GKSL generator, jump unraveling, clock, and the identification of a
+jump with formation are conditions, not deductions from the axioms.
+
+Its exact duration-h channel has Kraus operators
+
+    A_0 = I tensor(P_0+exp(-gamma h/2)P_1),
+    A_z = sqrt(1-exp(-gamma h)) K_z tensor |0><1|.
+
+For a three-state environment with labels idle,+,- initially idle, define
+
+    B = sum_z K_z tensor |0><1| tensor |z><idle|,
+    V=B+B*, beta=arccos(exp(-gamma h/2)).
+
+B*B=I tensor P_1 tensor |idle><idle|, B²=0, BB* is a projector
+orthogonal to B*B. Thus V³=V, and exp(-i beta V) supplies the displayed
+Kraus operators up to the harmless common jump phase -i. Fuel-zero with
+an idle environment is dark. Each time bin requires a fresh environment
+which is never recoupled. Two qubits embed its three labels; for n bins
+and m candidates the storage cost is at most 2nm environment qubits plus
+m fuel qubits, in addition to the physical native and program carriers.
+Environment placement and routing are additional implementation tasks.
+With zero assigned fuel/environment energy the collision commutes exactly
+with H_B. This conditional energy statement does not price controller
+preparation, timing, or spatial synthesis.
+
+At supplied elapsed time tau, the ideal process has candidate formed
+fraction 1-exp(-gamma tau), hence bulk formed density
+(1-exp(-gamma tau))/16 per physical site. A fixed finite
+region saturates. The late-time formation rate there tends to zero.
+Fresh environments are essential for intermediate permanent histories:
+one finite reversible environment reused indefinitely can reverse a jump.
+An exact channel at a single final time alone is not an autonomous
+permanent-formation theorem.
+
+## 5. A nonzero three-direction current in the protected graph
+
+Now take all protected hopping coefficients equal to t>0. Write a virtual
+site as (x,2m+s,z), s=0,1. Both sublattices have z hopping, only s=0 has
+x hopping, and each s=0 site has y neighbors at offsets +1 and -1.
+For a Bloch vector exp[i(k_x x+2k_y m+k_z z)] in the cell convention, the
+off-diagonal matrix element is t(1+exp(-2ik_y)). Moving the internal s=1
+phase into the basis makes it 2t cos(k_y). Thus the physical-position
+Bloch symbol and its two eigenvalues are
+
+    h(k)=2t cos(k_z) I + [[2t cos(k_x),2t cos(k_y)],
+                          [2t cos(k_y),0]],
+    E_±=2t cos(k_z)+t cos(k_x)±t D,
+    D=sqrt(cos²(k_x)+4cos²(k_y)).                         (11.6)
+
+Use k_x,k_z in [-pi,pi) and k_y in [-pi/2,pi/2). The upper-band patch
+
+    W=[pi/3,2pi/3] × [pi/6,pi/3] × [pi/3,2pi/3]
+
+is away from degeneracies. On W, 1<=D<2, |cos(k_x)|<=1/2,
+sin(k_x),sin(k_z)>=sqrt(3)/2, and cos(k_y),sin(k_y)>=1/2. Differentiating
+(11.6) gives the uniform velocity bounds
+
+    v_x=-t sin(k_x)(1+cos(k_x)/D) <= -sqrt(3)t/4,
+    v_y=-4t cos(k_y)sin(k_y)/D    <= -t/2,
+    v_z=-2t sin(k_z)              <= -sqrt(3)t.            (11.7)
+
+These are group velocities in supplied virtual-lattice/time units, not
+an emergent relativistic cone or a clock match. The patch volume is
+pi³/54, while the two-site Brillouin zone has volume 4pi³. There is one
+upper-band mode per cell, hence W contains 1/432 modes per virtual vertex.
+
+Define the infinite number-conserving quasifree CAR state by
+
+    C = I/4 + (1/2) 1_W(k) P_+(k).                       (11.8)
+
+Its covariance lies between I/4 and 3I/4 and commutes with h. The uniform
+I/4 part has zero bond current. For the oriented protected bond v→v+e_a,
+use j_v,a=i t(c_v* c_(v+e_a)-c_(v+e_a)* c_v), with zero on a missing bond.
+Its spatial average is the one-particle velocity i[h,X_a]. The Bloch
+Hellmann–Feynman identity then gives current per virtual vertex
+
+    J_a = (1/(16pi³)) integral_W v_a(k) d³k.             (11.9)
+
+The factor is (two vertices per cell)^(-1), covariance weight 1/2, and
+Brillouin-zone measure (4pi³)^(-1). Equations (11.7)–(11.9) imply
+
+    J_x <= -sqrt(3)t/3456,
+    J_y <= -t/1728,
+    J_z <= -sqrt(3)t/864.                               (11.10)
+
+Cell averaging means averaging the oriented bonds rooted at the two y
+sublattices. The off-diagonal phase change above does not remove the
+physical internal-position term from the current: (11.9) follows either
+in the physical-position basis or from i[h,X] before the phase change.
+This is a supplied CAR current observable. The blind Record signs alone
+do not measure it.
+
+## 6. Finite native preparation and an arbitrarily long current window
+
+No restriction of an infinite physical cycle-code state is assumed. Let
+Omega be a finite open virtual box with its y interval starting at an even
+integer. Every odd-y x candidate has its detour in the adjacent lower
+even-y row. Then the protected finite graph is connected and its hopping
+matrix h_Omega is the compression of the infinite protected h. Let
+C_Omega be the compression of (11.8). Its spectrum nu_j stays in [1/4,3/4].
+Construct the finite quasifree density with these occupations and condition
+on even total fermion parity. Its preparation succeeds with probability
+
+    (1+product_j(1-2nu_j))/2 >= (1-2^(-M))/2,
+
+where M=|Omega|. In the occupation eigenbasis the conditioned covariance
+remains diagonal. Direct summation over the other independent occupations
+gives
+
+    nu_j^(even)-nu_j =
+      -2nu_j(1-nu_j) product_(l!=j)(1-2nu_l)
+       / [1+product_l(1-2nu_l)].
+
+Consequently
+
+    ||C_Omega^(even)-C_Omega|| <= delta_M,
+    delta_M=2^(-M)/(1-2^(-M)).                           (11.11)
+
+Parity conditioning need not preserve Gaussianity. Only the covariance
+bound is used. Map this even finite density into the original connected
+native cycle code by the imported faithful finite dictionary. This gives
+an actual finite physical initial state and avoids a boundary/parity
+compatibility shortcut. Its protected two-point function evolves by h_Omega
+even though its higher correlations need not be Gaussian.
+
+For each observed bond endpoint at graph distance at least d from the
+outside of Omega, the vectors h_Omega^n delta_v and h^n delta_v agree for
+n<d, with the finite vector extended by zero. Both Hamiltonian norms are
+at most 6t. For 0<=s<=T define a=6tT and R_d(a)=sum_(n>=d) a^n/n!.
+The exponential series gives
+
+    ||exp(i s h_Omega)delta_v-exp(i s h)delta_v|| <= 2R_d(a).
+
+The norm of C is at most one. Applying this bound to the two vectors in
+each covariance entry and adding (11.11) yields the uniform entry error
+
+    |C_finite(s)_(v,w)-C_infinite_(v,w)| <= 4R_d(a)+delta_M.
+                                                               (11.12)
+
+This comparison includes arbitrary times up to T, not just a selected
+momentum eigenstate in a periodic finite box. An oriented bond-current
+error is at most 2t times the right side of (11.12). The same bound holds
+for the two-site cell average in each direction.
+
+For d>=2a, ratios of successive tail terms are at most 1/2 and d!>=(d/e)^d,
+so R_d(a)<=2(ea/d)^d. For 0<epsilon<=1, it suffices to choose
+
+    d >= ceil(max(12 e tT, log_2(16/epsilon),1)),
+    M >= ceil(log_2(4/epsilon))                         (11.13)
+
+to make (11.12) at most epsilon. In particular epsilon<=1/6912 preserves
+at least half the weakest nonzero current bound in (11.10), throughout
+the observation region and 0<=s<=T. A finite physical carrier enclosing
+a virtual observation box of side R therefore has size
+O((R+tT+log(1/epsilon))³); the constants include the midpoint placement,
+native edges, static programs and fuel. Collision storage is additional
+and was priced separately in section 4.
+
+Every supported formation history preserves all protected matter
+observables by (11.3). Thus the current/window bound holds on every such
+history, with no event-count error. Increasing R permits an unbounded
+number of distinct formations during the same protected evolution. This
+is a finite growing-region construction with explicit preparation and
+resources; it does not assert a completed infinite physical code model.
+
+
+## 7. Disjoint physical roles and one conditional content law
+
+Keep native qubits at one-odd-coordinate edge centers, and the same candidate
+x edges with odd virtual y. Define the program graph P to consist of physical
+sites having at least two odd coordinates, with literal nearest-neighbor
+edges. Its three-odd sites are the vertices of a cubic graph of spacing two;
+its two-odd sites subdivide each edge once. P is connected, with degree six
+at a coarse vertex and degree two at an edge interior. It is disjoint from
+all native edge qubits and all all-even physical vertex sites.
+
+Place an optional native fuel qubit at the all-even tail 2v of each candidate
+edge (v,v+e_x), initially unrecorded in |1>. Candidate tails are distinct.
+This replaces the static version's transverse fuel location; it does not
+add a second qubit at a program site. The four transverse nearest neighbors
+of a candidate native qubit belong to P. Its two endpoint neighbors are
+unrecorded fuel/spectator sites.
+
+Initially one three-odd program site o is a supplied digital Record. Every
+other program qubit is prepared in |+x>. Program sites are not rotated or
+otherwise used as controls until they themselves are already Records, except
+for their own single formation pulse. No static endpoint program Records
+are present. Existing Records serve only as digital Z controls.
+
+The content law at every new program or native event is exactly
+
+    F(eta)=(1/n) sum_(rho in eta)
+            [(3/4)delta_rho+(1/4)delta_(I-rho)], n=|eta|>0.       (C.1)
+
+Eta lists all actual nearest-neighbor Record contents. In the common
+digital context let their signs sum to b. Then p_+=1/2+b/(4n). The common
+law is covariant under neighbor permutations and simultaneous conjugation,
+and varies with the supplied conditions. All digital event probabilities
+lie in [1/4,3/4]. From the same fixed seed, finite birth orders and all-plus
+or all-minus signs at a candidate's four neighbors therefore have positive
+probability. The different candidate probabilities 3/4 and 1/4 occur within
+one prepared history family, not only after changing the preparation.
+The role pattern and initial
+Pauli/preparation context are additional conditions, as before.
+
+An unrecorded program site becomes enabled when at least one of its program
+neighbors has formed. It uses (C.1), including any already formed native
+neighbors in eta. In fact a native candidate adjacent to an unrecorded
+program target cannot yet have formed, because its four-neighbor enabling
+condition includes that target. Thus those native contributions are absent
+at the program site's actual first event. Its ready |+x> factor is rotated by
+
+    U_program=exp(+i theta sigma_y/2), theta=arcsin(b/(2n)),
+
+then measured in Z. The sign of this rotation matters: its final Z mean is
+sin(theta)=b/(2n). All its controls are fixed Records. A native candidate
+becomes enabled after its four program neighbors have formed. It then uses
+the cycle pulse of the preceding construction with theta=arcsin(b/8). Its n is
+exactly four, so its probabilities are again (C.1).
+
+This is a forward process whose supplied occurrence rule uses the Record
+configuration to select enabled unrecorded targets. It does not define a
+readout value for an absent Record. It also does not implement the presence
+guard as a reversible quantum operation on an otherwise unspecified ready
+space. Program occurrence, initial readiness, and the single seed remain
+conditions. The optional native fuel realizes a native absorbing channel;
+no extra per-program fuel factor has been silently allocated.
+
+## 8. Full finite-history closure
+
+Take an initial product of the program ready/seed factors, native fuel,
+and any native matter code state (possibly with a matter reference).
+The program instruments commute with the protected matter algebra: their
+targets are disjoint, and every native control is a candidate Z which
+commutes with that algebra. Their scalar effect on the still untouched
+|+x> target gives (C.1), independently of the matter state.
+
+Every native event is the scalar-effect isometry in the preceding construction.
+It leaves all program Records unchanged. Any unused candidate's cycle
+check survives all earlier events because its witness contains no other
+candidate edge. Program events preserve those checks as well, including
+when a native Z is used as a control: that control is already a fixed
+Record and its cycle check was removed earlier. Therefore induction over
+every supported finite history proves:
+
+* every new content law equals F of the actual nearest-neighbor Records;
+* every old Record is unchanged;
+* every still-unrecorded program target is ready for its stated pulse;
+* the protected matter state functional equals its event-free H_B dwell.
+
+Shared controls need not make all abstract program event operators commute.
+Events use their actual causal histories; the induction does not reorder
+events whose condition sets change. This distinction avoids extending the
+static commuting-instrument statement beyond its hypotheses.
+
+All Record histories, including occurrence times below, have the explicit
+program-dependent law just derived for every initial protected matter state
+on the same code and program preparation.
+
+## 9. A supplied nonexplosive clock process
+
+Each program site receives an independent Exp(gamma) waiting time when it
+first becomes enabled; each candidate native site likewise receives one
+when all four program neighbors have formed. Enabling is permanent. Content
+draws use independent uniform random variables with the probabilities (C.1).
+The waiting times do not depend on those draws or on matter.
+
+If N_P program sites have formed, at most 6N_P unformed program sites are
+enabled. At most 6N_P native candidates could yet have been activated, since
+activation requires adjacency to a formed program site. Thus the total
+event rate is at most 12 gamma N_P, and hence at most 12 gamma N_total.
+Comparison with the linear pure-birth process proves nonexplosion. More
+explicitly, its successive mean holding times are (12 gamma n)^(-1);
+the centered independent holding-time series has summable variances while
+the sum of the means diverges. The comparison process has no finite-time
+accumulation, so neither does this one.
+
+Assign each program site v≠o an independent Exp(gamma) variable E_v at the
+start; unused clocks may be sampled in advance. Its formation time satisfies
+
+    T_P(o)=0,
+    T_P(v)=E_v+min_(u adjacent to v in P) T_P(u).                (C.2)
+
+It is the minimum sum of site waiting times along a path from o to v.
+Positive weights allow minimizing paths to be simple. Native events do not
+alter program enabling, so their content dependence does not change (C.2).
+Every fixed program vertex is reached almost surely by bounding (C.2) with
+the finite waiting-time sum along one fixed path. Countability makes this
+true simultaneously for all sites. Every candidate is subsequently enabled
+and forms almost surely. The infinite program process thus produces
+unboundedly many Records without explosion.
+
+This infinite statement concerns the supplied classical Record/time law and
+its local instruments. The preceding construction supplies finite physical native
+states for arbitrarily large regions, not an unproved global infinite
+native cycle-code state. The finite-window conclusion below uses only
+finite carriers and finite portions of this process.
+
+## 10. Explicit growing front bounds without simulated growth
+
+Distance in P from a three-odd o equals the physical Manhattan distance:
+one may change coordinates that end odd by even steps through subdivided
+coarse edges, then, if necessary, make the final step to the one even
+coordinate. Thus B_P(n) lies in a physical cube with at most (2n+1)^3 sites.
+For each v in B_P(n), fix one path of length at most n. The exponential
+moment at gamma/2 gives
+
+    Pr[T_P(v)>s] <= 2^n exp(-gamma s/2).
+
+A union bound, requiring no independence between these path sums, yields
+
+    Pr[B_P(n) not all formed by s]
+      <= (2n+1)^3 exp(n log(2)-gamma s/2).                     (C.3)
+
+Set n=floor(gamma T/(8 log(2))). All candidates at physical Manhattan
+distance at most n-1 from o have their four program neighbors in B_P(n).
+Applying (C.3) at s=T/2 and the remaining native exponential waits gives
+
+    Pr[one such candidate is unformed at T]
+      <= (2n+1)^3 [exp(-gamma T/8)+exp(-gamma T/2)].            (C.4)
+
+For small T the right side may exceed one; (C.4) is then a valid but
+uninformative bound. It is not a probability estimate fitted from growth
+simulations. For n>=7, let m=floor((n-1)/3). The contained cube of coordinate
+radius m has at least m² floor(m/2) candidates: odd x and even z each occur
+at least m times, and physical y congruent to 2 modulo 4 occurs at least
+floor(m/2) times. Thus (C.4) gives a positive constant times T³ native
+formations with probability tending to one. No constant continuing rate
+inside an already saturated fixed region follows.
+
+For an upper front, reaching program distance at least n before time T
+requires a simple ancestry path whose first n waiting times sum to at
+most T. There are at most 6^n such path prefixes. When n>gamma T, the
+optimized exponential lower-tail bound for a sum of n independent waits is
+
+    Pr[sum_(j=1)^n E_j<=T] <= (e gamma T/n)^n.
+
+Therefore
+
+    Pr[program distance >= n reached by T]
+       <= (6 e gamma T/n)^n <= 2^(-n),
+       if n>=12 e gamma T.                                  (C.5)
+
+A formed native candidate is adjacent to a formed program site, so its
+physical radius exceeds the program radius by at most one. The constants
+are deliberately loose analytical bounds, not a claimed limiting shape
+or a relativistic propagation speed.
+
+## 11. Joining the front to finite native transport
+
+For any prescribed finite T and observation region, choose the finite
+native box and even-parity preparation by equations (11.11)–
+(11.13). Include the candidate ball used in (C.4), every corresponding
+protected witness cycle, its program paths, and the current observation
+region. Program paths chosen for (C.3) stay inside that ball. A finite
+program domain containing it satisfies the same lower bound even if the
+domain boundary blocks external paths. Take the native boundary farther
+out by the current margin d=O(tT+log(1/epsilon)).
+
+This supplies arbitrarily large finite histories, a growing number of
+genuine native one-site Z Records with a varying nearest-neighbor content
+law, and nonzero protected current throughout the requested finite window.
+The required physical region scales as
+O((R+(gamma+t)T+log(1/epsilon))³), up to the explicit role and boundary
+constants. This counts carrier sites, programs, and optional native fuel;
+it does not include a full coherent controller for the hybrid occurrence
+rule or its fresh collision storage. It does not derive gamma/t, a physical
+clock, role preparation, or matter readout from the axioms.
+
+The advance over a finite list of scheduled fair edge deletions is the
+explicit varying local content law, complete supported-history closure,
+and a finite growing-window construction. A matter-dependent readable interface remains to be constructed.
+
+## 12. Verification and source review
+
+The three helpers are directly imported by the primary runner and included
+in its declared input closure. Native ordered-star matrices are built by
+computational-basis bit actions. A separate collision matrix exponential
+checks the partial-isometry dilation. Literal periodic graph edges check the
+Bloch spectrum and physical current, an explicit finite occupation sum checks
+parity conditioning, and open-boundary evolution challenges the Taylor bound.
+Finite role and Born-probability checks challenge the program construction.
+No simulated growth or numerical momentum integral supplies the front or
+current theorem. The infinite probability statement concerns the supplied
+classical law; the physical native construction used in the theorem is finite.
+
+These are different checks by the same executing author, not independent
+source-review or audit verdicts. Parent definitions and Theorems 1–3 were
+reread at the pinned main revision. The [source manifest](../.claude/science/physics-loops/native-growing-formation-current-20260913/SOURCE_MANIFEST.json)
+records recovery paths; the [review record](../.claude/science/physics-loops/native-growing-formation-current-20260913/REVIEW_HISTORY.md)
+records final findings, checks and their limits. The [scope record](../.claude/science/physics-loops/native-growing-formation-current-20260913/NO_GO_DISCIPLINE_CHECKLIST.md)
+distinguishes this explicit positive construction from a negative theorem.
+
+Independent source review and the exact combined current-main integration
+pipeline, strict lint and changed-evidence gates remain required before
+landing. Formal audit is deferred under the campaign cadence. The author
+proposes the bounded theorem and does not land it or write audit-owned fields.

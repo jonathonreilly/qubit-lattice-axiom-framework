@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-collision_half_amplitude-q39_jtig/scripts/native_growing_formation_current_2026_09_13.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-collision_half_amplitude-q39_jtig/scripts/native_growing_formation_current_2026_09_13.py", line 14, in main
+    rows={name:check() for name,check in (('native',native_check),('transport',transport_check),('growth',growth_check))}
+               ~~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-collision_half_amplitude-q39_jtig/scripts/native_formation_native_checks_2026_09_13.py", line 154, in run
+    close("star_cubic",V@V@V,V)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-collision_half_amplitude-q39_jtig/scripts/native_formation_native_checks_2026_09_13.py", line 77, in close
+    assert residual < TOL, (name, residual)
+           ^^^^^^^^^^^^^^
+AssertionError: ('star_cubic', 0.36222218485840063)

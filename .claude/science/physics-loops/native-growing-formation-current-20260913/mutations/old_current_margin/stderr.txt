@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-old_current_margin-4wobks9x/scripts/native_growing_formation_current_2026_09_13.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-old_current_margin-4wobks9x/scripts/native_growing_formation_current_2026_09_13.py", line 14, in main
+    rows={name:check() for name,check in (('native',native_check),('transport',transport_check),('growth',growth_check))}
+               ~~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-formation-old_current_margin-4wobks9x/scripts/native_formation_transport_checks_2026_09_13.py", line 52, in run
+    assert all(s.simplify(bound**2-error_bound**2)>0 for bound in half_bounds)
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

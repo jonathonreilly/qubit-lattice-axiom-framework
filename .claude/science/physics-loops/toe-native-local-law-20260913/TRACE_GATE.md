@@ -26,3 +26,11 @@ model and identifies second-order contact data that first-order source
 matching leaves undetermined. The free mathematical subtarget is met at
 author level. Physical lapse selection, interacting stress response and a
 full dynamical metric coupling remain unproved; no direct TOE closure.
+
+BLOCK06 targets the common matter/metric interface left open by the native
+Hamiltonian and lapse-response milestones. The nine vertices give the same
+principal metric at both nodes, with a controlled nonuniform connection
+term. This partially closes a specified-carrier compatibility obligation.
+It remains upstream_support: the scalar/frame fields are supplied, and no
+native dynamical metric or full gravitational constraint representation has
+been derived. No live audit row or retained status changes here.

@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "checks": 103,
+  "reports": [
+    {
+      "frame": "xy_shear",
+      "node": -1,
+      "values": [
+        {
+          "spacing": 0.12,
+          "m": 4,
+          "error": 0.07102703158554183,
+          "bound": 4.326684096176537
+        },
+        {
+          "spacing": 0.06,
+          "m": 4,
+          "error": 0.0350132876715102,
+          "bound": 1.9313537714659674
+        },
+        {
+          "spacing": 0.03,
+          "m": 4,
+          "error": 0.017379119295023726,
+          "bound": 0.9076842963399192
+        },
+        {
+          "spacing": 0.015,
+          "m": 4,
+          "error": 0.008657378308167677,
+          "bound": 0.43934456179858306
+        },
+        {
+          "spacing": 1e-06,
+          "m": 6,
+          "error": 5.751450499899124e-07,
+          "bound": 4.589472139422917e-05
+        }
+      ]
+    },
+    {
+      "frame": "xy_shear",
+      "node": 1,
+      "values": [
+        {
+          "spacing": 0.12,
+          "m": 4,
+          "error": 0.07102703158554174,
+          "bound": 4.326684096176537
+        },
+        {
+          "spacing": 0.06,
+          "m": 4,
+          "error": 0.035013287671510164,
+          "bound": 1.9313537714659674
+        },
+        {
+          "spacing": 0.03,
+          "m": 4,
+          "error": 0.017379119295023702,
+          "bound": 0.9076842963399192
+        },
+        {
+          "spacing": 0.015,
+          "m": 4,
+          "error": 0.008657378308167662,
+          "bound": 0.43934456179858306
+        },
+        {
+          "spacing": 1e-06,
+          "m": 6,
+          "error": 5.751450499949468e-07,
+          "bound": 4.589472139422917e-05
+        }
+      ]
+    },
+    {
+      "frame": "all_shears",
+      "node": -1,
+      "values": [
+        {
+          "spacing": 0.12,
+          "m": 4,
+          "error": 0.07107608697158099,
+          "bound": 4.703229394546337
+        },
+        {
+          "spacing": 0.06,
+          "m": 4,
+          "error": 0.03503597108364901,
+          "bound": 2.1196065458857993
+        },
+        {
+          "spacing": 0.03,
+          "m": 4,
+          "error": 0.01738992513630662,
+          "bound": 1.0018072140365548
+        },
+        {
+          "spacing": 0.015,
+          "m": 4,
+          "error": 0.00866263903263388,
+          "bound": 0.4864053430618695
+        },
+        {
+          "spacing": 1e-06,
+          "m": 6,
+          "error": 5.754860698886342e-07,
+          "bound": 5.095253825710842e-05
+        }
+      ]
+    },
+    {
+      "frame": "all_shears",
+      "node": 1,
+      "values": [
+        {
+          "spacing": 0.12,
+          "m": 4,
+          "error": 0.0710756696667348,
+          "bound": 4.703229394546337
+        },
+        {
+          "spacing": 0.06,
+          "m": 4,
+          "error": 0.03503587559309974,
+          "bound": 2.1196065458857993
+        },
+        {
+          "spacing": 0.03,
+          "m": 4,
+          "error": 0.017389904537605836,
+          "bound": 1.0018072140365548
+        },
+        {
+          "spacing": 0.015,
+          "m": 4,
+          "error": 0.008662635329867847,
+          "bound": 0.4864053430618695
+        },
+        {
+          "spacing": 1e-06,
+          "m": 6,
+          "error": 5.754858836084549e-07,
+          "bound": 5.095253825710842e-05
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.03542504197685048,
+  "source_sha256": "3110bf2b712989a80dad908c9bd165efd5b26929a97b0fd68a190b021dfafb7b",
+  "scope": "Finite Fourier operator challenges on variable frames. Exact continuum connection is enclosed by an analytical Neumann tail; no sampled proof of the general theorem or long-time claim."
+}

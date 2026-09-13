@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": 1417,
+  "routed_hoppings": 1328,
+  "max_path_length": 4,
+  "numerical_challenges": [
+    {
+      "zeta": 0.5,
+      "samples": 668,
+      "max_relative": 0.05247802301696665
+    },
+    {
+      "zeta": 0.8,
+      "samples": 668,
+      "max_relative": 0.025365090997356652
+    },
+    {
+      "zeta": 0.99,
+      "samples": 668,
+      "max_relative": 0.01320113397256445
+    }
+  ],
+  "elapsed_seconds": 0.14085308299399912,
+  "source_sha256": "0e46acdc57de76cd635c8e46a208513371f63a774d56a3bc1a6e63fc7106bb4f",
+  "scope": "Exact symbolic node/metric identities and literal finite protected routes; global preservation is the analytical relative-bound theorem, not inferred from samples."
+}

@@ -14,7 +14,7 @@ delivery: milestone
 checkpoint_interval_minutes: 30
 campaign: native_local_deformation_algebra
 block: 6
-active_route: continuum_spin_commutator_and_native_Wilson_control
+active_route: common_two_cone_frame_spin_connection_and_variable_frame_bound
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
@@ -22,7 +22,7 @@ continuation_automation: toe-derivation-campaign-continuation
 continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-lock_expires_utc: 2026-09-13T16:37:12Z
-next_action: Derive and challenge the arbitrary-spinor normal/normal commutator and explicit low-frequency Wilson error bound; inspect the remaining deformation brackets before claiming any constraint closure.
+lock_expires_utc: 2026-09-13T17:23:40Z
+next_action: Challenge the nonuniform common-frame approximation bound and curved normal commutator; cold-review the completed native coupling before deciding on milestone delivery. Metric dynamics and interacting validity remain open.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.
-last_checkpoint_utc: 2026-09-13T16:00:00Z
+last_checkpoint_utc: 2026-09-13T16:32:00Z

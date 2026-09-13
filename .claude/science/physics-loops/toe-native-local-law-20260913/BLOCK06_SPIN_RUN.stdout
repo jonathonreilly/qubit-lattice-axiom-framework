@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": 160,
+  "elapsed_seconds": 53.18510362500092,
+  "source_sha256": "9ab3118e8e27ef539f3df2d8dd4cef3d2192f62aecb9cabb4b2c754cc6f98ef5",
+  "scope": "Exact connection comparisons on rational frame jets, generic symbolic strain cancellation, explicit nonuniform frames, and finite polar-map challenges. Author checks, not independent review or dynamical gravity."
+}

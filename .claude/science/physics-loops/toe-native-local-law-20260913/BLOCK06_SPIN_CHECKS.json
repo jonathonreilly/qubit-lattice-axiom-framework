@@ -1,0 +1,502 @@
+{
+  "status": "PASS",
+  "checks": 160,
+  "details": [
+    {
+      "name": "rational_jet_0_connection_antisymmetric_0"
+    },
+    {
+      "name": "rational_jet_0_connection_antisymmetric_1"
+    },
+    {
+      "name": "rational_jet_0_connection_antisymmetric_2"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(-1, 0, 0)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(-1, 0, 1)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(-1, 0, 2)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(-1, 1, 0)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(-1, 1, 1)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(-1, 1, 2)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(-1, 2, 0)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(-1, 2, 1)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(-1, 2, 2)"
+    },
+    {
+      "name": "rational_jet_0_full_half_density_connection_-1"
+    },
+    {
+      "name": "rational_jet_0_curved_normal_commutator_drift_(-1, 0)"
+    },
+    {
+      "name": "rational_jet_0_curved_normal_commutator_drift_(-1, 1)"
+    },
+    {
+      "name": "rational_jet_0_curved_normal_commutator_drift_(-1, 2)"
+    },
+    {
+      "name": "rational_jet_0_curved_normal_commutator_spin_-1"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(1, 0, 0)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(1, 0, 1)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(1, 0, 2)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(1, 1, 0)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(1, 1, 1)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(1, 1, 2)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(1, 2, 0)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(1, 2, 1)"
+    },
+    {
+      "name": "rational_jet_0_Clifford_compatibility_(1, 2, 2)"
+    },
+    {
+      "name": "rational_jet_0_full_half_density_connection_1"
+    },
+    {
+      "name": "rational_jet_0_curved_normal_commutator_drift_(1, 0)"
+    },
+    {
+      "name": "rational_jet_0_curved_normal_commutator_drift_(1, 1)"
+    },
+    {
+      "name": "rational_jet_0_curved_normal_commutator_drift_(1, 2)"
+    },
+    {
+      "name": "rational_jet_0_curved_normal_commutator_spin_1"
+    },
+    {
+      "name": "nonzero_scalar_on_positive_frame_0",
+      "value": "-17347/341280"
+    },
+    {
+      "name": "rational_jet_1_connection_antisymmetric_0"
+    },
+    {
+      "name": "rational_jet_1_connection_antisymmetric_1"
+    },
+    {
+      "name": "rational_jet_1_connection_antisymmetric_2"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(-1, 0, 0)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(-1, 0, 1)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(-1, 0, 2)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(-1, 1, 0)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(-1, 1, 1)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(-1, 1, 2)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(-1, 2, 0)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(-1, 2, 1)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(-1, 2, 2)"
+    },
+    {
+      "name": "rational_jet_1_full_half_density_connection_-1"
+    },
+    {
+      "name": "rational_jet_1_curved_normal_commutator_drift_(-1, 0)"
+    },
+    {
+      "name": "rational_jet_1_curved_normal_commutator_drift_(-1, 1)"
+    },
+    {
+      "name": "rational_jet_1_curved_normal_commutator_drift_(-1, 2)"
+    },
+    {
+      "name": "rational_jet_1_curved_normal_commutator_spin_-1"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(1, 0, 0)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(1, 0, 1)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(1, 0, 2)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(1, 1, 0)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(1, 1, 1)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(1, 1, 2)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(1, 2, 0)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(1, 2, 1)"
+    },
+    {
+      "name": "rational_jet_1_Clifford_compatibility_(1, 2, 2)"
+    },
+    {
+      "name": "rational_jet_1_full_half_density_connection_1"
+    },
+    {
+      "name": "rational_jet_1_curved_normal_commutator_drift_(1, 0)"
+    },
+    {
+      "name": "rational_jet_1_curved_normal_commutator_drift_(1, 1)"
+    },
+    {
+      "name": "rational_jet_1_curved_normal_commutator_drift_(1, 2)"
+    },
+    {
+      "name": "rational_jet_1_curved_normal_commutator_spin_1"
+    },
+    {
+      "name": "nonzero_scalar_on_positive_frame_1",
+      "value": "143/3400"
+    },
+    {
+      "name": "rational_jet_2_connection_antisymmetric_0"
+    },
+    {
+      "name": "rational_jet_2_connection_antisymmetric_1"
+    },
+    {
+      "name": "rational_jet_2_connection_antisymmetric_2"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(-1, 0, 0)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(-1, 0, 1)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(-1, 0, 2)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(-1, 1, 0)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(-1, 1, 1)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(-1, 1, 2)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(-1, 2, 0)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(-1, 2, 1)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(-1, 2, 2)"
+    },
+    {
+      "name": "rational_jet_2_full_half_density_connection_-1"
+    },
+    {
+      "name": "rational_jet_2_curved_normal_commutator_drift_(-1, 0)"
+    },
+    {
+      "name": "rational_jet_2_curved_normal_commutator_drift_(-1, 1)"
+    },
+    {
+      "name": "rational_jet_2_curved_normal_commutator_drift_(-1, 2)"
+    },
+    {
+      "name": "rational_jet_2_curved_normal_commutator_spin_-1"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(1, 0, 0)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(1, 0, 1)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(1, 0, 2)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(1, 1, 0)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(1, 1, 1)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(1, 1, 2)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(1, 2, 0)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(1, 2, 1)"
+    },
+    {
+      "name": "rational_jet_2_Clifford_compatibility_(1, 2, 2)"
+    },
+    {
+      "name": "rational_jet_2_full_half_density_connection_1"
+    },
+    {
+      "name": "rational_jet_2_curved_normal_commutator_drift_(1, 0)"
+    },
+    {
+      "name": "rational_jet_2_curved_normal_commutator_drift_(1, 1)"
+    },
+    {
+      "name": "rational_jet_2_curved_normal_commutator_drift_(1, 2)"
+    },
+    {
+      "name": "rational_jet_2_curved_normal_commutator_spin_1"
+    },
+    {
+      "name": "nonzero_scalar_on_positive_frame_2",
+      "value": "3527/66160"
+    },
+    {
+      "name": "rational_jet_3_connection_antisymmetric_0"
+    },
+    {
+      "name": "rational_jet_3_connection_antisymmetric_1"
+    },
+    {
+      "name": "rational_jet_3_connection_antisymmetric_2"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(-1, 0, 0)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(-1, 0, 1)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(-1, 0, 2)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(-1, 1, 0)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(-1, 1, 1)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(-1, 1, 2)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(-1, 2, 0)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(-1, 2, 1)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(-1, 2, 2)"
+    },
+    {
+      "name": "rational_jet_3_full_half_density_connection_-1"
+    },
+    {
+      "name": "rational_jet_3_curved_normal_commutator_drift_(-1, 0)"
+    },
+    {
+      "name": "rational_jet_3_curved_normal_commutator_drift_(-1, 1)"
+    },
+    {
+      "name": "rational_jet_3_curved_normal_commutator_drift_(-1, 2)"
+    },
+    {
+      "name": "rational_jet_3_curved_normal_commutator_spin_-1"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(1, 0, 0)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(1, 0, 1)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(1, 0, 2)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(1, 1, 0)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(1, 1, 1)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(1, 1, 2)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(1, 2, 0)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(1, 2, 1)"
+    },
+    {
+      "name": "rational_jet_3_Clifford_compatibility_(1, 2, 2)"
+    },
+    {
+      "name": "rational_jet_3_full_half_density_connection_1"
+    },
+    {
+      "name": "rational_jet_3_curved_normal_commutator_drift_(1, 0)"
+    },
+    {
+      "name": "rational_jet_3_curved_normal_commutator_drift_(1, 1)"
+    },
+    {
+      "name": "rational_jet_3_curved_normal_commutator_drift_(1, 2)"
+    },
+    {
+      "name": "rational_jet_3_curved_normal_commutator_spin_1"
+    },
+    {
+      "name": "rotating_frame_scalar_sign"
+    },
+    {
+      "name": "unitary_conjugation_scalar_sign"
+    },
+    {
+      "name": "nonuniform_positive_frame_formula"
+    },
+    {
+      "name": "positive_frame_scalar_witness"
+    },
+    {
+      "name": "flat_symmetric_first_variation_zero"
+    },
+    {
+      "name": "polar_rotation_metric_derivative"
+    },
+    {
+      "name": "polar_rotation_antisymmetrized_derivative"
+    },
+    {
+      "name": "field_rotation_cancels_frozen_spin_residual"
+    },
+    {
+      "name": "finite_polar_frame_composition_0"
+    },
+    {
+      "name": "finite_polar_rotation_cocycle_0"
+    },
+    {
+      "name": "finite_polar_SO3_0"
+    },
+    {
+      "name": "nonflat_polar_frame_derivative_0",
+      "error": 9.3660615994614e-11
+    },
+    {
+      "name": "nonflat_polar_rotation_derivative_0",
+      "error": 8.763357674153798e-11
+    },
+    {
+      "name": "finite_polar_frame_composition_1"
+    },
+    {
+      "name": "finite_polar_rotation_cocycle_1"
+    },
+    {
+      "name": "finite_polar_SO3_1"
+    },
+    {
+      "name": "nonflat_polar_frame_derivative_1",
+      "error": 7.975210862233795e-11
+    },
+    {
+      "name": "nonflat_polar_rotation_derivative_1",
+      "error": 4.1265992064694374e-11
+    },
+    {
+      "name": "finite_polar_frame_composition_2"
+    },
+    {
+      "name": "finite_polar_rotation_cocycle_2"
+    },
+    {
+      "name": "finite_polar_SO3_2"
+    },
+    {
+      "name": "nonflat_polar_frame_derivative_2",
+      "error": 1.0882535147832148e-10
+    },
+    {
+      "name": "nonflat_polar_rotation_derivative_2",
+      "error": 7.187001408672818e-11
+    },
+    {
+      "name": "finite_polar_frame_composition_3"
+    },
+    {
+      "name": "finite_polar_rotation_cocycle_3"
+    },
+    {
+      "name": "finite_polar_SO3_3"
+    },
+    {
+      "name": "nonflat_polar_frame_derivative_3",
+      "error": 1.5620698954957682e-10
+    },
+    {
+      "name": "nonflat_polar_rotation_derivative_3",
+      "error": 1.0725515772468912e-10
+    },
+    {
+      "name": "finite_polar_frame_composition_4"
+    },
+    {
+      "name": "finite_polar_rotation_cocycle_4"
+    },
+    {
+      "name": "finite_polar_SO3_4"
+    },
+    {
+      "name": "nonflat_polar_frame_derivative_4",
+      "error": 8.321764487253166e-11
+    },
+    {
+      "name": "nonflat_polar_rotation_derivative_4",
+      "error": 5.570654014198925e-11
+    }
+  ],
+  "elapsed_seconds": 53.18510362500092,
+  "source_sha256": "9ab3118e8e27ef539f3df2d8dd4cef3d2192f62aecb9cabb4b2c754cc6f98ef5",
+  "scope": "Exact connection comparisons on rational frame jets, generic symbolic strain cancellation, explicit nonuniform frames, and finite polar-map challenges. Author checks, not independent review or dynamical gravity."
+}

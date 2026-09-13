@@ -25,3 +25,14 @@ An exact strong-interaction canonical midpoint witness is an existence
 statement in one declared sector. Selected lapse/geometry/Hamiltonian/state
 inputs remain explicit; no interacting IR extrapolation or axiom wall.
 Author proof/checks completed; independent review and formal audit pending.
+
+BLOCK06 target_claim_type: bounded_theorem, actual current status:
+conditional-support. Author derivations now give a common finite-range
+frame coupling for both native Weyl nodes, a uniform small-frame zero-set
+bound, the required geometric spin connection, and an explicit slowly
+varying operator estimate with a local polynomial connection stencil.
+The established continuum spin identities are support for this construction,
+not claimed as new spin geometry. The naive opposite-shear witness is
+repaired within the note, not presented as an axiom no-go. No interacting
+frame theorem, physical metric selection or gravity constraints are proved.
+Independent review and formal audit remain pending.

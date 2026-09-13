@@ -143,3 +143,20 @@ opposite Weyl nodes see the SAME sheared metric under an explicit native
 frame coupling. A naive coefficient deformation can give opposite xz/yz
 shears at the two nodes; this has not yet been checked or claimed as a result.
 Do not confuse a single normal/normal identity with full gravity closure.
+
+At16:37UTC the common-frame and spin-connection stretch has analytical
+proofs and finite author checks. Read BLOCK06_COMMON_FRAME.md,
+BLOCK06_SPIN_GEOMETRY.md and BLOCK06_VARIABLE_FRAME_BOUND.md. Common frame:
+1417 checks include1328 enumerated physical hopping routes (not independent
+proofs); maximum path length4. Spin checker160PASS with exact rational
+connection comparisons, full curved normal/normal identity and polar-action
+checks. Variable-frame checker103PASS; at spacing1e-6 completed operator
+errors are about5.75e-7, while omission of the connection retains a nonzero
+error. The rigorous bound is analytical, not inferred from these samples.
+Cold review and milestone value/conformance decision are next. Do not infer
+interacting validity from the earlier flat Wilson RG bridge, or full gravity
+from one-particle commutators. Frame dynamics and selection remain open.
+The main campaign is active until00:14:41UTC. No subagents. Lock expires
+17:23:40UTC. Completed PR worktrees8090/8091 have already been removed after
+preserving all science; the active campaign checkout must remain until its
+work is durably delivered and the full authorized run is finished.

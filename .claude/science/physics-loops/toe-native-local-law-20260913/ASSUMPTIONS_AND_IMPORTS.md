@@ -38,3 +38,26 @@ Theorems about no-programming, spin-reference measurements and diamond norms
 are named primary-source mathematical imports in BLOCK04_DERIVATION.md.
 The new instrument-distance calculations are author proofs with finite
 checks; they have no independent review and no main/audit authority.
+
+## BLOCK06 common frame and local deformation algebra
+
+A_min remains Lattice, Qubit, Admissibility and Record. No primitive or axiom
+is added. The constructed matter operator still assumes the native code,
+ordinary quantum composition, the selected free Wilson Hamiltonian, external
+frame values, a lattice scale and smooth continuum envelopes. The nine
+frame vertices and the derivative-dependent scalar connection are specified
+choices, not consequences of axiom selection. The field can be approximated
+with bounded local polynomial controls; no physical metric register or
+canonical gravitational momentum is supplied.
+
+The common-frame two-node estimate is an analytical native-model result.
+The spinor metric connection, local Spin lift, and standard differential
+geometry are explicit mathematical inputs to the geometric interpretation.
+Godina--Matteucci math/0504366 supplies primary context for the fixed-metric
+Kosmann residual; Chervova--Downes--Vassiliev1209.3510v2 and
+Dąbrowski--Dossena1209.2021 supply context and convention checks for the
+half-density Dirac operator and changing-metric covariance. Exact portions
+read are recorded in BLOCK06_SPIN_GEOMETRY.md. No spectral characterization,
+quantized metric, or interacting curved-space RG theorem is imported.
+The operator approximation concerns band-limited initial envelopes; it is
+not a long-time propagation or field-theoretic anomaly theorem.

@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "check_count": 76,
+  "check_count": 115,
   "checks": [
     {
       "name": "graded_bilinear_0"
@@ -200,6 +200,36 @@
       "nonzero_monomials": 2
     },
     {
+      "name": "density_kernel_classification"
+    },
+    {
+      "name": "density_kernel_invariant_image"
+    },
+    {
+      "name": "mean_zero_orbital_density_scalar"
+    },
+    {
+      "name": "mean_zero_density_generator_0"
+    },
+    {
+      "name": "mean_zero_density_generator_1"
+    },
+    {
+      "name": "mean_zero_density_generator_2"
+    },
+    {
+      "name": "mean_zero_density_generator_3"
+    },
+    {
+      "name": "mean_zero_density_generator_4"
+    },
+    {
+      "name": "mean_zero_density_generator_5"
+    },
+    {
+      "name": "orbital_blind_invariant_coefficient_family"
+    },
+    {
       "name": "native_phase_CAR"
     },
     {
@@ -240,6 +270,138 @@
     },
     {
       "name": "quartic_even_bilinear_dictionary_(0, 1, 1, 0)"
+    },
+    {
+      "name": "mean_zero_stencil_transfer"
+    },
+    {
+      "name": "density_stencil_Hermitian_parity"
+    },
+    {
+      "name": "two_particle_normalization_(16, 0)"
+    },
+    {
+      "name": "two_particle_density_vertex_(16, 0)",
+      "actual": -0.0031066211932611154,
+      "exact": -0.0031066211932611154,
+      "continuum_limit": -0.0028506598376733493
+    },
+    {
+      "name": "two_particle_continuum_bound_(16, 0)",
+      "error": 0.0002559613555877661,
+      "spacing": 0.39269908169872414
+    },
+    {
+      "name": "two_particle_normalization_(16, 1)"
+    },
+    {
+      "name": "two_particle_density_vertex_(16, 1)",
+      "actual": 0.0,
+      "exact": -0.0,
+      "continuum_limit": -0.0
+    },
+    {
+      "name": "two_particle_continuum_bound_(16, 1)",
+      "error": 0.0,
+      "spacing": 0.39269908169872414
+    },
+    {
+      "name": "two_particle_normalization_(16, 2)"
+    },
+    {
+      "name": "two_particle_density_vertex_(16, 2)",
+      "actual": -0.0015533105966305577,
+      "exact": -0.0015533105966305575,
+      "continuum_limit": -0.0014253299188366744
+    },
+    {
+      "name": "two_particle_continuum_bound_(16, 2)",
+      "error": 0.00012798067779388328,
+      "spacing": 0.39269908169872414
+    },
+    {
+      "name": "two_particle_normalization_(32, 0)"
+    },
+    {
+      "name": "two_particle_density_vertex_(32, 0)",
+      "actual": -0.0031898024238684913,
+      "exact": -0.0031898024238684927,
+      "continuum_limit": -0.0028506598376733493
+    },
+    {
+      "name": "two_particle_continuum_bound_(32, 0)",
+      "error": 0.0003391425861951421,
+      "spacing": 0.19634954084936207
+    },
+    {
+      "name": "two_particle_normalization_(32, 1)"
+    },
+    {
+      "name": "two_particle_density_vertex_(32, 1)",
+      "actual": 0.0,
+      "exact": -0.0,
+      "continuum_limit": -0.0
+    },
+    {
+      "name": "two_particle_continuum_bound_(32, 1)",
+      "error": 0.0,
+      "spacing": 0.19634954084936207
+    },
+    {
+      "name": "two_particle_normalization_(32, 2)"
+    },
+    {
+      "name": "two_particle_density_vertex_(32, 2)",
+      "actual": -0.0015949012119342455,
+      "exact": -0.0015949012119342461,
+      "continuum_limit": -0.0014253299188366744
+    },
+    {
+      "name": "two_particle_continuum_bound_(32, 2)",
+      "error": 0.00016957129309757104,
+      "spacing": 0.19634954084936207
+    },
+    {
+      "name": "two_particle_normalization_(64, 0)"
+    },
+    {
+      "name": "two_particle_density_vertex_(64, 0)",
+      "actual": -0.0030752987335677553,
+      "exact": -0.0030752987335677553,
+      "continuum_limit": -0.0028506598376733493
+    },
+    {
+      "name": "two_particle_continuum_bound_(64, 0)",
+      "error": 0.00022463889589440606,
+      "spacing": 0.09817477042468103
+    },
+    {
+      "name": "two_particle_normalization_(64, 1)"
+    },
+    {
+      "name": "two_particle_density_vertex_(64, 1)",
+      "actual": 0.0,
+      "exact": -0.0,
+      "continuum_limit": -0.0
+    },
+    {
+      "name": "two_particle_continuum_bound_(64, 1)",
+      "error": 0.0,
+      "spacing": 0.09817477042468103
+    },
+    {
+      "name": "two_particle_normalization_(64, 2)"
+    },
+    {
+      "name": "two_particle_density_vertex_(64, 2)",
+      "actual": -0.001537649366783877,
+      "exact": -0.0015376493667838774,
+      "continuum_limit": -0.0014253299188366744
+    },
+    {
+      "name": "two_particle_continuum_bound_(64, 2)",
+      "error": 0.0001123194479472026,
+      "spacing": 0.09817477042468103
     }
   ],
   "native_variations": {
@@ -291,7 +453,7 @@
       "(1, 2, 4, 7)": "-2"
     }
   ],
-  "source_sha256": "a022e701585b3b6b215a6850bbcf81d7ff465859609d7520dd572ee96a8d4358",
-  "elapsed_seconds": 0.3816970409825444,
+  "source_sha256": "0d179de7c0555f42afec447df58da0d3ee23f398fc58642fe8ed7703235dcda6",
+  "elapsed_seconds": 0.43117995792999864,
   "scope": "Exact component and finite-CAR challenges. No quantum interacting constraint or continuum existence theorem."
 }

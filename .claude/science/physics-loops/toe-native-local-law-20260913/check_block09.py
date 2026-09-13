@@ -127,6 +127,30 @@ def run():
   for i,G in enumerate(gens):
    out=action(zero,G);variations[name+str(i)]={str(k):str(v) for k,v in out.items()}
    check('native_'+name+'_variation_'+str(i),bool(out)==(i<2 if name=='rotation' else i==2),nonzero_monomials=len(out))
+ # General orbital-density kernels at zero and intervalley transfer.
+ a0,b0,c0,aq,bq,cq=s.symbols('a0 b0 c0 aq bq cq',real=True)
+ forward=s.Matrix([[a0,b0],[b0,c0]]);exchange=s.Matrix([[aq,bq],[bq,cq]])
+ dens=[add(mul(bar[i],q[i]),mul(bar[i+2],q[i+2])) for i in range(2)]
+ inter=[scale(1 if i==0 else -1,mul(bar[i],q[i+2])) for i in range(2)]
+ density=add(*(scale(forward[i,j]/2,mul(dens[i],dens[j])) for i,j in product(range(2),repeat=2)),*(scale(exchange[i,j],mul(inter[i],dag(inter[j]))) for i,j in product(range(2),repeat=2)))
+ equations=[]
+ for G in boosts+rots:equations.extend(action(density,G).values())
+ sol=s.linsolve(equations,[a0,b0,c0,aq,bq,cq])
+ check('density_kernel_classification',sol==s.FiniteSet((aq+bq,0,bq+cq,aq,bq,cq)))
+ imposed={a0:aq+bq,b0:0,c0:bq+cq}
+ eq('density_kernel_invariant_image',tidy({m:c.subs(imposed) for m,c in density.items()}),scale(bq/2,cross))
+ # Mean-zero interaction of the orbital density difference has only a scalar
+ # intervalley channel at leading order.
+ zero_mean={a0:0,b0:0,c0:0,aq:1,bq:-1,cq:1}
+ tuned=tidy({m:c.subs(zero_mean) for m,c in density.items()})
+ eq('mean_zero_orbital_density_scalar',tuned,scale(-s.Rational(1,2),cross))
+ for i,G in enumerate(boosts+rots):eq('mean_zero_density_generator_'+str(i),action(tuned,G),{})
+ # Orbital-blind density kernels form a separate restricted family.
+ f0,fq=s.symbols('f0 fq',real=True);blind={a0:f0,b0:f0,c0:f0,aq:fq,bq:fq,cq:fq}
+ blindpoly=tidy({m:c.subs(blind) for m,c in density.items()});be=[]
+ for G in boosts+rots:be.extend(action(blindpoly,G).values())
+ bsol=s.linsolve(be,[f0,fq])
+ check('orbital_blind_invariant_coefficient_family',bsol==s.FiniteSet((0,0)))
  # Exact CAR evaluation of the same phase average, by direct operator products.
  avg=np.zeros((16,16),complex)
  for phase in np.exp(2j*np.pi*np.arange(9)/9):
@@ -154,6 +178,35 @@ def run():
   direct=sites[i].conj().T@sites[j].conj().T@sites[k]@sites[l0]
   coded=(int(j==k)*sites[i].conj().T@sites[l0]-(sites[i].conj().T@sites[k])@(sites[j].conj().T@sites[l0]))
   check('quartic_even_bilinear_dictionary_'+str((i,j,k,l0)),np.max(np.abs(direct-coded))<2e-12)
+ # A direct two-particle position-space matrix element of the simple
+ # mean-zero density stencil checks its sign, coefficient and scaling.
+ kap=s.symbols('kappa',real=True);qtransfer=s.symbols('Q',real=True)
+ check('mean_zero_stencil_transfer',s.trigsimp(s.cos(2*kap)-s.cos(4*kap)-2*s.sin(3*kap)*s.sin(kap))==0)
+ cellmodes=car(6);dens3=[cellmodes[2*j].conj().T@cellmodes[2*j]-cellmodes[2*j+1].conj().T@cellmodes[2*j+1] for j in range(3)]
+ W3=(dens3[0]@dens3[1]-dens3[0]@dens3[2])/2
+ check('density_stencil_Hermitian_parity',np.max(np.abs(W3-W3.conj().T))<1e-12 and np.max(np.abs(W3@parity-parity@W3))<1e-12)
+ pairs=[(np.array([1.,0]),np.array([1.,0])),(np.array([1.,0]),np.array([0.,1.])),(np.array([1.,1j])/np.sqrt(2),np.array([np.cos(.37),np.sin(.37)]))]
+ errors={i:[] for i in range(3)};vel0=1/np.sqrt(2);kap0=np.pi/4
+ for count in [16,32,64]:
+  spacing=2*np.pi/count;volume=count**3;n=np.arange(count)
+  for idx,(ur,vl) in enumerate(pairs):
+   u=np.exp(1j*(kap0+spacing)*n)[:,None]*ur/np.sqrt(volume)
+   vv=np.exp(1j*(-kap0+2*spacing)*n)[:,None]*(np.array([1,-1])*vl)/np.sqrt(volume)
+   check('two_particle_normalization_'+str((count,idx)),abs(count**2*np.sum(abs(u)**2)-1)<2e-12 and abs(count**2*np.sum(abs(vv)**2)-1)<2e-12 and abs(count**2*np.sum(u.conj()*vv))<2e-12)
+   W=0.
+   for disp,coef in [(1,.5),(2,-.5)]:
+    ush=np.roll(u,-disp,axis=0);vsh=np.roll(vv,-disp,axis=0)
+    amplitude=u[:,:,None]*vsh[:,None,:]-vv[:,:,None]*ush[:,None,:]
+    W+=coef*count**2*np.sum(abs(amplitude)**2*np.array([[1,-1],[-1,1]])[None,:,:])
+   scaled=vel0*W/spacing**3
+   overlap=abs(np.vdot(ur,vl))**2;transfer=2*kap0-spacing
+   exact=-vel0*overlap*(np.cos(transfer)-np.cos(2*transfer))/(2*np.pi)**3
+   limit=-vel0*overlap/(2*np.pi)**3
+   check('two_particle_density_vertex_'+str((count,idx)),abs(scaled-exact)<2e-12,actual=float(scaled),exact=float(exact),continuum_limit=float(limit))
+   err=abs(scaled-limit);errors[idx].append(float(err))
+   check('two_particle_continuum_bound_'+str((count,idx)),err<.01*spacing,error=float(err),spacing=spacing)
+ # These finite matrix elements do not control repeated interactions or the
+ # interacting ground state at lambda proportional to a^-2.
  result={'status':'ok','check_count':len(rows),'checks':rows,'native_variations':variations,'invariants':[{str(m):str(c) for m,c in p.items()} for p in invariants],'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'elapsed_seconds':time.monotonic()-start,'scope':'Exact component and finite-CAR challenges. No quantum interacting constraint or continuum existence theorem.'}
  (HERE/'BLOCK09_CHECKS.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__':run()

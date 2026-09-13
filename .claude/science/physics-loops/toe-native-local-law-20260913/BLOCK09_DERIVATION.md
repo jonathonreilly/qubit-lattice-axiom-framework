@@ -232,3 +232,155 @@ four-leg vertex of these normal-ordered operators is therefore the intended
 continuum invariant, with derivative-suppressed corrections. A proof of
 renormalized interacting fields or the quantum constraint algebra does not
 follow from this tree-level statement.
+
+## A simpler covariant interaction inside the density-potential class
+
+The finite-filter construction is not the only escape. The general real
+symmetric orbital-density interaction can be classified at its two relevant
+momentum transfers. Write its Fourier kernel at zero and at Q=2 kappa e3 as
+
+    V(0)=[[a0,b0],[b0,c0]], V(Q)=[[aQ,bQ],[bQ,cQ]],
+    W=(1/2) sum_(n,m,r,s) V_rs(n-m) :n_nr n_ms:.
+
+The node density components are
+rho_r,0=Rbar_r R_r+Lbar_r L_r and
+rho_r,+Q=s_r Rbar_r L_r, s=(1,-1), with the conjugate at -Q.
+Phase averaging gives
+
+    U_V=(1/2) sum_rs V_rs(0) rho_r,0 rho_s,0
+                      +sum_rs V_rs(Q) rho_r,+Q rho_s,-Q.
+
+Expanding in the fixed exterior monomial order, its coefficients are
+(aQ-a0) on Rbar0 Lbar0 r0 l0, (cQ-c0) on Rbar1 Lbar1 r1 l1,
+-bQ on each mixed exchange monomial, and -b0 on each same-valley pair
+monomial and each opposite-spin diagonal mixed-pair monomial. Comparing
+with the five invariant basis polynomials proves, without a numerical fit,
+
+    b0=0, a0=aQ+bQ, c0=cQ+bQ,
+    U_V=(bQ/2) U_cross.
+
+The three-dimensional kernel in the six Fourier values has a one-dimensional
+nonzero quartic image; its two other directions have zero local quartic
+symbol. The exterior-generator calculation gives exactly those equations.
+An orbital-blind kernel has a0=b0=c0 and aQ=bQ=cQ. Its invariant local
+quartic occurs only at V(0)=V(Q)=0. This is a classification of that explicit
+six-parameter leading vertex, not a claim that every orbital-blind
+interacting lattice model lacks an acceptable infrared limit.
+
+A useful concrete choice needs no valley filters. Let rho3_n=n_n0-n_n1 and
+choose the real even finite-range potential
+
+    u(+e3)=u(-e3)=t/2,
+    u(+2e3)=u(-2e3)=-t/2,
+    u(0)=0, all other values zero,
+    uhat(q)=t(cos q3-cos 2q3).
+
+Set V_rs=s_r s_s u. Then V(0)=0 and V(Q)=uhat(Q) [[1,-1],[-1,1]],
+so the leading interaction is
+
+    U_V=-uhat(Q) U_cross/2,
+    uhat(Q)=2t sin(3 kappa) sin(kappa).
+
+For zeta in (1/2,1), kappa in (0,pi/3), this coefficient is nonzero when
+t is nonzero. The endpoint zeta=1/2 is excluded for this particular stencil;
+it makes uhat(Q)=0. The source-selection freedom is explicit: t, the stencil
+and the orbital-density-difference channel are chosen inputs.
+
+The full microscopic interaction is simply
+
+    W=(t/2) sum_n [rho3_n rho3_(n+e3)-rho3_n rho3_(n+2e3)].
+
+It has bounded native support, is Hermitian, translation invariant and
+invariant under all coordinate reflections and orbital exchange. Since it
+couples distinct cells and u(0)=0, its vacuum normal ordering creates no
+onsite CAR contraction. The subtractions by 1/2 in the two orbital densities
+cancel in rho3 itself. Thus the full centered density interaction has the
+same explicit quartic operator, not an unreported chemical-potential term.
+The four-leg continuum coefficient is
+
+    g_cross=-lambda a^2 uhat(Q)/(2v)
+
+when the physical Hamiltonian is (H0+lambda W-nu N_staggered)/a.
+
+This interaction lies in the density-potential form of Giuliani–Mastropietro–
+Porta 1907.00682v3, equation 2.19: w_rs=s_r s_s u/2. Section 2.3 was reread
+for this match. The potential is real, even, finite range, periodicizable,
+independent of volume, and has the required reflection symmetries. Its
+orbital-exchange symmetry is also explicit. The unchanged Wilson kinetic
+symbol meets the previously reconstructed two-node hypotheses. For each
+fixed such potential and fixed zeta, the theorem's EXISTENTIAL small-coupling
+bound and analytic staggered counterterm therefore apply to its stated
+Weyl two-point/current results. Their values are not computed here.
+
+That import does not prove the gravitational constraint algebra for the
+interacting quantum model or preserve the tree-level quartic ratios under
+renormalization. It also does not apply to lambda proportional to a^-2 on
+an indefinitely fine lattice. The construction supplies a nonzero Lorentz-
+invariant leading interaction within the same rigorously studied weak-
+coupling model class, while leaving the finite-interaction continuum and
+native quantum geometry problems open.
+
+## Smooth-source vertex limit and a physical two-particle check
+
+Take smooth compactly supported envelopes (or compatible periodic ones),
+and a fixed zeta away from node merger. Insert the two-node expansion into
+the finite normal-ordered quartic. The zero-phase terms give the polynomial
+above. For the others, discrete summation by parts uses
+exp(i m kappa)-1, m=2 or 4, which is nonzero in the stated parameter range.
+Repeated differences of a fixed smooth envelope give arbitrary powers of a;
+these oscillatory terms therefore disappear. The finite stencil shifts the
+remaining envelopes by a D^-1 ell. Taylor expansion and a Riemann-sum bound
+then give the leading four-leg matrix element with an O(a) remainder when
+lambda a^2 is bounded. The estimate is on fixed smooth few-particle test
+states, not on the norm of the many-body interaction or its ground state.
+
+On a curved supplied metric, multiply a bond interaction by the endpoint
+average of f=N/sqrt(det g_cone). Since q=g^-1/4 psi, the continuum local
+potential is N sqrt(g) U(q)=N U(psi)/sqrt(g). The same finite-stencil proof
+matches this source. Its coefficient and classical geometry are supplied;
+this does not establish a microscopic geometric transformation law.
+
+For a direct even-parity check, choose kappa=pi/4, v=1/sqrt(2), and a
+periodic cube with L=16,32,64, a=2pi/L. Two normalized one-particle waves
+have native spinors u and sigma3 vspin and z momenta kappa+a and -kappa+2a.
+Their momenta are different allowed grid points, so the two-particle Slater
+state is normalized even when the internal spinors overlap. For a nonzero
+separation ell, direct evaluation gives
+
+    <rho3_n rho3_(n+ell e3)>
+      =2/L^6 [(u^dagger sigma3 u)(vspin^dagger sigma3 vspin)
+                     -|u^dagger vspin|^2 cos((2 kappa-a) ell)].
+
+The first term cancels between ell=1 and ell=2 in W. Thus, at t=1,
+
+    <W>=-|u^dagger vspin|^2
+                [cos(2 kappa-a)-cos(4 kappa-2a)]/L^3.
+
+Multiplying by lambda/a with the diagnostic scaling lambda=v/a^2 gives
+
+    <lambda W/a> -> -v |u^dagger vspin|^2/(2pi)^3.
+
+This equals the continuum matrix element of -U_cross/2 with the derived
+field normalization. The primary evaluates the antisymmetrized position-
+space amplitudes directly for three choices of spinors; it does not insert
+this expected cosine expression into that calculation. It also checks
+normalization and overlaps. The actual and analytical finite values agree
+to roundoff, and the predeclared O(a) errors pass. The coarse errors are not
+assumed to decrease monotonically. The displayed diagnostic scaling does
+not enter the imported small-coupling theorem and does not establish a
+strong-interaction continuum limit.
+
+A more explicit version of the graded sign calculation uses one spatial
+direction: H_N=-i/2 int N(qbar alpha q'-qbar' alpha q). Its left Euler
+derivatives give {q,H_N}=-(N alpha q'+N' alpha q/2) and
+{qbar,H_N}=-(N qbar' alpha+N' qbar alpha/2). Applying this even flow to U
+then yields the normal-bracket difference stated at the beginning, including
+its minus sign. No commuting-spinor chain rule is substituted for the odd
+Euler derivatives; the product transformation is even and uses the ordinary
+Leibniz rule only after those derivatives have been taken.
+
+Current check source 0d179de7c0555f42afec447df58da0d3ee23f398fc58642fe8ed7703235dcda6
+ran 115 author checks in .43117995792999864 seconds. These finite checks
+challenge the written representation, bracket and scaling derivations.
+Independent review, loop corrections to the four-leg vertex, gravitational
+quantum constraints and native metric dynamics remain open.

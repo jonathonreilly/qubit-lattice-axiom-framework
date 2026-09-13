@@ -1,0 +1,153 @@
+{
+  "claim_status": "conditional author derivation checked on stated finite fixtures",
+  "independence": "same-agent native bit-action and occupation-transition routes",
+  "source_sha256": "b5c480fa89f14d78a6fef899c4f74c19a1bbad5f51b43ee718aa870822e2b553",
+  "source_pr8036": "6067254e3bca867aa6e737f7aa2bb6078e5d622d",
+  "physical_centers": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "fixtures": [
+    {
+      "r0": "3/5",
+      "r1": "3/5",
+      "dwell_cosine": "1",
+      "joint_law": {
+        "(0, 0)": "136/625",
+        "(0, 1)": "289/625",
+        "(1, 0)": "64/625",
+        "(1, 1)": "136/625"
+      },
+      "conditional_second_one": {
+        "0": "17/25",
+        "1": "17/25"
+      },
+      "difference": "0",
+      "post_first_matter_occupation": {
+        "0": "9/34",
+        "1": "0"
+      }
+    },
+    {
+      "r0": "3/5",
+      "r1": "3/5",
+      "dwell_cosine": "sqrt(2)/2",
+      "joint_law": {
+        "(0, 0)": "168/625",
+        "(0, 1)": "257/625",
+        "(1, 0)": "96/625",
+        "(1, 1)": "104/625"
+      },
+      "conditional_second_one": {
+        "0": "257/425",
+        "1": "13/25"
+      },
+      "difference": "36/425",
+      "post_first_matter_occupation": {
+        "0": "9/34",
+        "1": "0"
+      }
+    },
+    {
+      "r0": "3/5",
+      "r1": "5/13",
+      "dwell_cosine": "3/5",
+      "joint_law": {
+        "(0, 0)": "39816/105625",
+        "(0, 1)": "32009/105625",
+        "(1, 0)": "23616/105625",
+        "(1, 1)": "10184/105625"
+      },
+      "conditional_second_one": {
+        "0": "32009/71825",
+        "1": "1273/4225"
+      },
+      "difference": "10368/71825",
+      "post_first_matter_occupation": {
+        "0": "9/34",
+        "1": "0"
+      }
+    },
+    {
+      "r0": "0",
+      "r1": "3/5",
+      "dwell_cosine": "0",
+      "joint_law": {
+        "(0, 0)": "8/25",
+        "(0, 1)": "9/50",
+        "(1, 0)": "8/25",
+        "(1, 1)": "9/50"
+      },
+      "conditional_second_one": {
+        "0": "9/25",
+        "1": "9/25"
+      },
+      "difference": "0",
+      "post_first_matter_occupation": {
+        "0": "0",
+        "1": "0"
+      }
+    },
+    {
+      "r0": "3/5",
+      "r1": "1",
+      "dwell_cosine": "0",
+      "joint_law": {
+        "(0, 0)": "0",
+        "(0, 1)": "17/25",
+        "(1, 0)": "0",
+        "(1, 1)": "8/25"
+      },
+      "conditional_second_one": {
+        "0": "1",
+        "1": "1"
+      },
+      "difference": "0",
+      "post_first_matter_occupation": {
+        "0": "9/34",
+        "1": "0"
+      }
+    },
+    {
+      "r0": "1",
+      "r1": "3/5",
+      "dwell_cosine": "3/5",
+      "joint_law": {
+        "(0, 0)": "8/25",
+        "(0, 1)": "17/25",
+        "(1, 0)": "0",
+        "(1, 1)": "0"
+      },
+      "conditional_second_one": {
+        "0": "17/25"
+      },
+      "difference": "undefined: one prefix has zero probability",
+      "post_first_matter_occupation": {
+        "0": "1/2"
+      }
+    }
+  ],
+  "TOTAL": {
+    "PASS": 143,
+    "FAIL": 0
+  },
+  "limits": "No physical occurrence, program genesis, control selection, infinite renewal or independent review is proved."
+}

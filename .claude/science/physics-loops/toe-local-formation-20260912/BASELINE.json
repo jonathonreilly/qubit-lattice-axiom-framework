@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-09-12T23:33:38.620894+00:00",
+  "repository": "/Users/jonreilly/Projects/Physics",
+  "main_before_sync": "b657ae9a1b9431c046db2be217d6fbc11afada1a",
+  "main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "origin_main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "planning_revision": "9cff766069e8f66b4cc5c36888b1e71600b8888e",
+  "status": "",
+  "tracked_ledger_effective_status_counts": {
+    "unaudited": 4380,
+    "meta": 375
+  },
+  "tracked_ledger_audit_status_counts": {
+    "unaudited": 4755
+  },
+  "source_sha256": {
+    "AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "docs/ai_methodology/skills/physics-loop/SKILL.md": "d7ee071464e8e782fbec3eb9b54a242cae445dcd3824ceeb1c423b439360b3f0",
+    "docs/ai_methodology/skills/workhorse/SKILL.md": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+    "docs/ai_methodology/skills/no-go-discipline/SKILL.md": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/repo/DEFERRED_DECISIONS.md": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+    "docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md": "a0dc4fe907360e00a6d9ceb5e392066d4b09f0c3d751163010b4122244dd7199",
+    "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md": "3a86afdafa20f79080a3b0b225cf52eb23cc628ec2810683ea7cba5c468a74c8",
+    "docs/MATTER_RECORD_GRADING_SAME_CARRIER_COMPATIBILITY_TWO_MODE_EVEN_REPAIR_AXIOM_DECISION_BOUNDED_THEOREM_NOTE_2026-09-01.md": "26e2d92ddf1858856adcb3520478b60dbde09a6bf6b5d51572baa95e4f1ab8ff",
+    "docs/THE_FORMATION_RATE_DEFINES_THE_STATIC_REGGE_EDGE_LENGTHS_EXACTLY_REGGE_IS_THE_LATTICE_POISSON_EQUATION_AND_FORCES_NU_R_EQUAL_ONE_BOUNDED_THEOREM_NOTE_2026-09-03.md": "45105f11c6691355252339d7886f842cf2d49288cff0dfd39d0f1beb7b042fd6",
+    "docs/THE_REGGE_SECOND_VARIATION_ON_THE_4D_CUBIC_COXETER_COMPLEX_CARRIES_A_NATIVE_LINEARISED_GRAVITON_BOUNDED_THEOREM_NOTE_2026-09-03.md": "aad9fa7b70fe00a18ea627248270c4d47250ff214e98d2ae2466760ad2084bf8"
+  },
+  "science_executed": false,
+  "audit_run": false
+}

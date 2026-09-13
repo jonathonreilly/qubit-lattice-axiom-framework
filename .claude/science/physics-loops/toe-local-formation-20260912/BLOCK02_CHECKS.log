@@ -1,0 +1,16 @@
+Four branches, complex covariances, pure/mixed boundaries and null support checked.
+Complete event depth 1: 2 supported histories.
+Complete event depth 2: 4 supported histories.
+Complete event depth 3: 8 supported histories.
+{
+  "status": "all_small_exact_checks_passed",
+  "author_check_only": true,
+  "proof": "BLOCK02_DERIVATION.md",
+  "source_sha256": "74909ff729236c1e1ff9a39186d51ead13b2b2bdf9955d5cfd53c153985c4fe2",
+  "check_count": 192,
+  "nonGaussian_counterexample": {
+    "actual_other_occupation_after_same": "9/34",
+    "Gaussian_formula_wrongly_predicts": "1/2",
+    "interpretation": "The Gaussian restriction is necessary for the general covariance update."
+  }
+}

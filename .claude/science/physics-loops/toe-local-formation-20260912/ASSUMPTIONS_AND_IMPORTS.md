@@ -1,0 +1,9 @@
+# Premises and counterfactuals
+
+Foundation: exact current four axioms and registered scale-reference, kinetic-isotropy and realized-state primitives. No extra authority is drawn from those primitives.
+
+Supplied for block 1: finite native edge/CAR carrier; physical midpoint apparatus roles; ordinary tensor composition; initial product readiness with pure unrecorded leaf values and maximally mixed remaining edges; phase/hopping controls and schedule; Born/Lueders leaf instrument; selected h and beta. Exact source pins are in NATIVE_REVIEW.md and FORMATION_REVIEW.md. Any added preparation/program Record is supplied apparatus data, not a newly approved primitive.
+
+Counterfactuals: arbitrary ready inputs may destroy local outcome sufficiency; interleaved noncommuting dwell may destroy modal factorization; r=1 erases outcome information; r=0 is the limiting full-information attenuation; a supplied program Record may resolve an empty-neighborhood alias but does not create readiness or control. Complete quantum poststate and scalar outcome-law claims are separate.
+
+Block2 uses the same finite native interface plus supplied number-conserving quadratic dwells. Its general history recursion additionally assumes a gauge-invariant Gaussian matter state; the rank-one two-event result starts from the exact source uniform ready state. The infinite uniform path is only a bounded-operator mathematical comparator. Historywise conditional-law reproduction is an explicit stronger matching target, not silently equated with every possible global-joint reading of Admissibility. No local scheduler, finite propagation speed for occurrence, physical clock, Born-value derivation or arbitrary interacting Gaussian closure is imported. Any approximate multi-history extension must control positive branch normalization or use a proved unconditioned distance bound.

@@ -1,0 +1,20 @@
+[
+  {
+    "mutation": "remove_actual_hopping_dwell",
+    "returncode": 1,
+    "last_error": "AssertionError: native_vs_occupation_3/5_3/5_sqrt(2)/2",
+    "source_sha256": "6d6d7f5c0b051ef53a457f97063e1d3e911d5ae189dbee3a85c4423ea1a04cc0"
+  },
+  {
+    "mutation": "replace_actual_first_attenuation",
+    "returncode": 1,
+    "last_error": "AssertionError: native_vs_occupation_3/5_3/5_1",
+    "source_sha256": "44d794f7a9bea5fbaa41473161db1066a545df4657ec06babf29dc41992ba473"
+  },
+  {
+    "mutation": "wrong_failure_poststate",
+    "returncode": 1,
+    "last_error": "AssertionError: conditional_formula_3/5_3/5_sqrt(2)/2_1",
+    "source_sha256": "589889608dd22a6d758ad47f4973c8fec14c5b3c4bfdb74e0d81cd782e4f6c45"
+  }
+]

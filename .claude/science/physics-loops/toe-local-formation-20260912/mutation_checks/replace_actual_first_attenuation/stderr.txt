@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/mutation_checks/replace_actual_first_attenuation/mutant.py", line 140, in <module>
+    check(f"native_vs_occupation_{r0}_{r1}_{ct}",
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          all(eq(law[k], other[k]) for k in law))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/mutation_checks/replace_actual_first_attenuation/mutant.py", line 33, in check
+    raise AssertionError(name)
+AssertionError: native_vs_occupation_3/5_3/5_1

@@ -1,0 +1,21 @@
+loop: toe-local-formation-20260912
+mode: campaign
+status: running
+main_revision: cda8b1445e21b3908a0a520710e0dae57b7bc3a3
+branch: physics-loop/toe-local-formation-20260912
+start_utc: 2026-09-12T23:38:24Z
+deadline_utc: 2026-09-13T11:38:24Z
+runtime_hours: 12
+delivery: milestone
+checkpoint_interval_minutes: 30
+execution: supervisor_only_no_subagents
+independent_review: pending_external_handoff
+formal_audit: deferred
+block: 3
+active_route: sustained_permanent_formation_with_live_matter
+actual_current_surface_status: conditional-support
+hard_residual: Factor the native complete leaf event law through physical nearest-neighbor Records on its specified ready family.
+next_action: Derive a renewed formation construction or a sharply scoped mechanism limit from the actual native clock/head interfaces, preserving live alternatives.
+research_emphasis: analytical_derivation_first_small_exact_refutation_checks
+continuation_automation: toe-derivation-campaign-continuation
+last_checkpoint_utc: 2026-09-13T00:10:00Z

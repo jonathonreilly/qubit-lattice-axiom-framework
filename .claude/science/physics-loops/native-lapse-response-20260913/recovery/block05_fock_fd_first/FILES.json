@@ -1,0 +1,14 @@
+{
+  "check_block05_fock.py": {
+    "sha256": "1c24f247f77ace1ebd9acc10462219d6f6ca5d58cc4374bb80a29c6adf9ef22b",
+    "bytes": 7268
+  },
+  "BLOCK05_FOCK_RUN.stdout": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "BLOCK05_FOCK_RUN.stderr": {
+    "sha256": "2ff5727fe3b4d4c94479fe6347634877c9e9206c52d4136879cdc7fee5b4ba80",
+    "bytes": 1273
+  }
+}

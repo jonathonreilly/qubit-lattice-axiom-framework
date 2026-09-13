@@ -1,0 +1,29 @@
+{
+  "node": {
+    "claim_id": "native_lapse_source_contact_response_bounded_theorem_note_2026-09-13",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "minimal_axioms",
+      "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "1be74ba3daeb2693d0d3a2fa80dfa51f6c6e388a7b9b021d3719b60405f71054",
+    "path": "docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "runner_path": "scripts/native_lapse_source_contact_response_2026_09_13.py",
+    "title": "Native lapse sources, contact response and a free static variational solution"
+  },
+  "edges": [
+    {
+      "from": "native_lapse_source_contact_response_bounded_theorem_note_2026-09-13",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "native_lapse_source_contact_response_bounded_theorem_note_2026-09-13",
+      "to": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    }
+  ],
+  "added_nodes": 1,
+  "added_edges": 2
+}

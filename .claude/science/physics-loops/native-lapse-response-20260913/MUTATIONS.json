@@ -1,0 +1,265 @@
+{
+  "rows": [
+    {
+      "name": "Wilson_hopping_sign",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "456e3c3b51fa21ba1321c17e2ca39ecaffbfbec98d919ce0f321f41e51e3da86",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('all_Bloch_blocks_vs_stencil', {'max_residual': 1.7320508075688776, 'tolerance': 2e-11})"
+      ]
+    },
+    {
+      "name": "energy_vertex_factor",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "2c177ffc7f86bd18f1110d3711a0567005bbc1d51780de9c194a267f93d61f0a",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('exact_interband_energy_vertex', {})"
+      ]
+    },
+    {
+      "name": "contact_second_derivative",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "0f3048b9aba123054ff1ed60e4eae21ca36002b12929f231e2952b6aab524f52",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('geometric_contact_derivative', {})"
+      ]
+    },
+    {
+      "name": "cone_coefficient",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "e0d3e39d5a60babdec853e99140cc865153abc2a24594bf70161c9a348e613e7",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('exact_cone_fourth_order', {})"
+      ]
+    },
+    {
+      "name": "prolate_jacobian",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "db4ccdc0111ab35baa2777620f736c28c73ddd4060d08bb5e49a1375c41db3c3",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('independent_prolate_integrand', {})"
+      ]
+    },
+    {
+      "name": "arithmetic_Kato_factor",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "3894bb0d68681631c12668ea4888504e6a60f424e62141d4cb579a471dc63c71",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('full_contact_identity', {'max_residual': 0.037568714761962496, 'tolerance': 2e-11})"
+      ]
+    },
+    {
+      "name": "congruence_spectral_sign",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "b659bb33ac4d98298998fda56ea2aa63a62c329d2289786bf939734799d25c3e",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('full_contact_identity', {'max_residual': 0.4607624348904489, 'tolerance': 2e-11})"
+      ]
+    },
+    {
+      "name": "bond_contact_factor",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "b30df8b122c194b29715d5ce965c7cb206992d4d1afa40dcc974511a4b0f6e11",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('full_contact_identity', {'max_residual': 0.30551864696914877, 'tolerance': 2e-11})"
+      ]
+    },
+    {
+      "name": "all_momentum_arithmetic_factor",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "65bf694453c9e5ca4cf3c6dab7cfab806f1b73380e0681227dc03291021f469c",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('all_momentum_arithmetic_vs_position_Hessian', {'max_residual': 0.06951971457343578, 'tolerance': 2e-11})"
+      ]
+    },
+    {
+      "name": "finite_global_bound",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "5502650553137e832a844a6bf26b76c74b8acd6000da900baac0545981de0074",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('finite_global_bound_1', {})"
+      ]
+    },
+    {
+      "name": "actual_geometric_Hamiltonian",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "b879cf1f48f20f97db8628288f0a70d929447730d1abceb518dab1ffe767e497",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('actual_energy_second_derivative_C', {'max_residual': 2.697020670961739, 'tolerance': 3e-07})"
+      ]
+    },
+    {
+      "name": "inhomogeneous_source_lapse",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "56851553e22fe318056d30e729a1edd12e61d21e8e54febbc92a7c32bf542ead",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 91, in check",
+        "    assert bool(ok), (name,detail)",
+        "           ~~~~^^^^",
+        "AssertionError: ('inhomogeneous_source_derivative_C_0', {'max_residual': 0.42924167657092926, 'tolerance': 2e-08})"
+      ]
+    },
+    {
+      "name": "native_imaginary_hop",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "7276c7188b2c802c6f1bdd2ff3ef34a258e56c7332a8e920cd36dbdf82ad57d8",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 337, in check",
+        "    assert bool(ok),(name,details)",
+        "           ~~~~^^^^",
+        "AssertionError: ('exact_native_imaginary_hopping_dictionary', {})"
+      ]
+    },
+    {
+      "name": "current_nonzero_guard",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "aa3da2c98f875b7e87044b46368905fae9487fab13dd8545dacb3ba4e26043b1",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 337, in check",
+        "    assert bool(ok),(name,details)",
+        "           ~~~~^^^^",
+        "AssertionError: ('current_is_nonzero', {})"
+      ]
+    },
+    {
+      "name": "Fock_CAR_sign",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "a434436080a9584204b540f4c410784988f6a8a54d7c03e92a0d789fdf0d263c",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 337, in check",
+        "    assert bool(ok),(name,details)",
+        "           ~~~~^^^^",
+        "AssertionError: ('exact_native_imaginary_hopping_dictionary', {})"
+      ]
+    },
+    {
+      "name": "candidate_protection",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "2938e70a48c6fae4e1f1377ec2e7f9a4bb72c17d456d031add3ff522a720b897",
+      "stderr_tail": [
+        "          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 337, in check",
+        "    assert bool(ok),(name,details)",
+        "           ~~~~^^^^",
+        "AssertionError: ('native_generator_candidate_Z_3', {})"
+      ]
+    },
+    {
+      "name": "exact_ground_lower_bound",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "963f3968f23dec8086611210f629611d7c38d7fc0cfc7ba40a93402541212b33",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 493, in check",
+        "    assert bool(condition), name",
+        "           ~~~~^^^^^^^^^^^",
+        "AssertionError: strict_positive_rational_pivot_14"
+      ]
+    },
+    {
+      "name": "direct_CAR_sign",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "2bd27e09600f84388e00a90d13c46863837b03e7727ffa99ec4471e4d22f6e1a",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 493, in check",
+        "    assert bool(condition), name",
+        "           ~~~~^^^^^^^^^^^",
+        "AssertionError: strict_midpoint_convexity_violation"
+      ]
+    },
+    {
+      "name": "sqrt_bracket",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "83edd18bd2b10489c768778d049739c9ec8ab4841c1b038ed81d790363a28a8f",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 493, in check",
+        "    assert bool(condition), name",
+        "           ~~~~^^^^^^^^^^^",
+        "AssertionError: exact_sqrt_bracket_-1"
+      ]
+    },
+    {
+      "name": "midpoint_trial_data",
+      "exit_code": 1,
+      "primary_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+      "mutant_sha256": "9f0e0fececd0d6a0f8f8d6ca66df0fd1e56a3e6a306cc2f7c9f7912b337f53e4",
+      "stderr_tail": [
+        "    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-native-lapse-response-20260913/lapse_mutation_h1w07222/runner.py\", line 493, in check",
+        "    assert bool(condition), name",
+        "           ~~~~^^^^^^^^^^^",
+        "AssertionError: both_opposite_trials"
+      ]
+    }
+  ],
+  "seconds": 20.82666312501533
+}

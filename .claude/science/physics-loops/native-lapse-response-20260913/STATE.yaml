@@ -1,0 +1,19 @@
+loop: native-lapse-response-20260913
+mode: milestone
+status: pr_open
+branch: physics-loop/native-lapse-response-20260913
+main_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
+parent_campaign: toe-native-local-law-20260913
+execution: supervisor_only_no_subagents
+delivery: milestone
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: partially_closes
+independent_review: pending
+formal_audit: deferred
+strongest_open_obligation: Physical selection of a complete metric coupling with interacting stress and dynamical constraints.
+next_action: Commit and push the checked milestone, open and verify its PR, preserve remaining residue and remove the completed checkout; continue the parent campaign until its deadline.
+parent_deadline_utc: 2026-09-14T00:14:41Z
+pr_number: 8091
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8091

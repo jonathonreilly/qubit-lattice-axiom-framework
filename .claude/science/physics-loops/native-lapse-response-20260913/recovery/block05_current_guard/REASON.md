@@ -1,0 +1,1 @@
+The current_is_nonzero guard compared a 64-by-64 commutator with a 16-by-16 zero matrix, so it could pass for a zero commutator. The actual exact continuity identity and interacting response checks were separate. Correct the zero matrix to 64-by-64 and rerun; this recovery preserves the original source and evidence.

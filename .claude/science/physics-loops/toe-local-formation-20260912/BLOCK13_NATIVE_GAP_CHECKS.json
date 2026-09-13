@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "count": 13,
+  "checks": [
+    {
+      "name": "P_finite_full_skew_energy",
+      "gap": 0.44948974278317166
+    },
+    {
+      "name": "P_finite_determinant",
+      "s": 0.0,
+      "absolute_error": 5.273559366969494e-16
+    },
+    {
+      "name": "P_finite_determinant",
+      "s": 0.5,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "name": "P_finite_determinant",
+      "s": 1.0,
+      "absolute_error": 2.1649348980190553e-15
+    },
+    {
+      "name": "P_finite_determinant",
+      "s": 2.0,
+      "absolute_error": 1.176836406102666e-14
+    },
+    {
+      "name": "P_finite_determinant",
+      "s": 4.0,
+      "absolute_error": 1.3322676295501878e-14
+    },
+    {
+      "name": "O_finite_full_skew_energy",
+      "gap": 0.44948974278317166
+    },
+    {
+      "name": "O_finite_determinant",
+      "s": 0.0,
+      "absolute_error": 3.191891195797325e-16
+    },
+    {
+      "name": "O_finite_determinant",
+      "s": 0.5,
+      "absolute_error": 2.6922908347160046e-15
+    },
+    {
+      "name": "O_finite_determinant",
+      "s": 1.0,
+      "absolute_error": 5.162537064506978e-15
+    },
+    {
+      "name": "O_finite_determinant",
+      "s": 2.0,
+      "absolute_error": 1.7430501486614958e-14
+    },
+    {
+      "name": "O_finite_determinant",
+      "s": 4.0,
+      "absolute_error": 2.653433028854124e-14
+    },
+    {
+      "name": "independent_small_Fock_minimum",
+      "exact": "sqrt6-2",
+      "wrong_half_energy_rejected": true
+    }
+  ],
+  "half_bond_reversal_mutant_rejected": true,
+  "seconds": 0.0658957909909077,
+  "source_sha256": "7cf39f83e9c6ed4ab60b6c3d1b6c0eb6ab5e863a45397aaffe95b1210b291a59",
+  "scope": "finite native determinant/Fock normalization checks; no extrapolated infinite gap"
+}

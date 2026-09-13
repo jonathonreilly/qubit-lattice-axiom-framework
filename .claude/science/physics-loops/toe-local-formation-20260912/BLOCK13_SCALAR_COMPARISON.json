@@ -1,0 +1,72 @@
+{
+  "status": "all_old_supplier_intervals_overlap",
+  "rows": [
+    {
+      "scalar": "A0",
+      "new_interval": [
+        0.24787789718266584,
+        0.26871123051599916
+      ],
+      "old_interval_contained": true,
+      "old_interval_overlaps": true
+    },
+    {
+      "scalar": "C0",
+      "new_interval": [
+        0.4551960476803299,
+        0.4564656633551403
+      ],
+      "old_interval_contained": false,
+      "old_interval_overlaps": true
+    },
+    {
+      "scalar": "L1",
+      "new_interval": [
+        2.3875952583533038,
+        2.387602675776915
+      ],
+      "old_interval_contained": true,
+      "old_interval_overlaps": true
+    },
+    {
+      "scalar": "L3",
+      "new_interval": [
+        15.645621630236096,
+        15.645621760493292
+      ],
+      "old_interval_contained": true,
+      "old_interval_overlaps": true
+    },
+    {
+      "scalar": "L5",
+      "new_interval": [
+        115.47717593345597,
+        115.47717593727582
+      ],
+      "old_interval_contained": true,
+      "old_interval_overlaps": true
+    },
+    {
+      "scalar": "L7",
+      "new_interval": [
+        925.0948250031912,
+        925.0948250033483
+      ],
+      "old_interval_contained": true,
+      "old_interval_overlaps": true
+    },
+    {
+      "scalar": "L9",
+      "new_interval": [
+        7880.913692457924,
+        7880.9136924579325
+      ],
+      "old_interval_contained": true,
+      "old_interval_overlaps": true
+    }
+  ],
+  "scope": "historical comparison only; the elementary proof does not depend on old scalar truth",
+  "initial_comparison_failure": "Full containment of C0 was an overly strong check: the identical finite-part lower bound used two differently rounded square-root expressions, differing by less than2^-120. The six other old intervals are contained; C0 overlaps with its old upper inside the new upper.",
+  "old_result_sha256": "18d7eb1d498ecddc095d3f82c19f8a48031294dfbde997ae785dbb13af9207bb",
+  "new_source_sha256": "ae081b808539f46e7c2b160c572795f3332b3f8a51c1da00e9b637b48c5f0c3f"
+}

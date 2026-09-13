@@ -273,3 +273,42 @@ Block5 would now imply a nonzero complete-sixth infrared pole, conditional on
 its separate decomposition; do not claim a fixed-coupling phase. Block10 cold
 scope review and Block11 packaging still pending. Continue personally without
 subagents until11:38:24 UTC. Own lock refreshed06:07:40, expires07:07:40 UTC.
+
+
+## Block13 elementary certificate (2026-09-13 06:30UTC)
+
+To avoid a canonical PR depending on inherited unmerged scalar conclusions,
+derived every radial supplier from cubic return probabilities. At fixed N256,
+p_(2n)<n^-3/2 gives return tail<=1/8; A0 lies in[P_N/6,(P_N+1/8)/6]. For
+r=-1,1,3,5,7,9 use6^(r/2)sum binom(r/2,2n)p_(2n), with fixed-sign tail bounded
+by its first omitted coefficient times1/8. No old scalar data is a premise.
+Rounded the earlier variational p and separate q ONCE to nearest1/1000 before
+new evaluation. Same quartic delta1/4,t4,u8; all90 terms andWard(p-q) retained.
+The first fixed result is positive:[7.40692207,329.05339815]; the coarse proof
+is7<h²alpha<330, using a<9.355,b<21.792,E<1.473,F<14.088,N in(1345,1347),
+comparison error1286.244234<1287. Coefficients are inBLOCK13_DERIVATION.md.
+
+Also reconstructed the infinite native impurity gap without the older finite
+inverse-square supplier. Rank-two determinant ratio>=1/9; near0 upper1+8/s²
+gives integrable logarithmic domination; atlarge s unchangedTr K² gives
+uniform O(s^-4). Finite all-parity Fock minimum-energy inequality then passes
+by local-polynomial Gaussian form convergence and the free Fock core.
+Exact source-style positive log/rectangle inequalities yieldPgap>0.265541,
+Ogap>=177/686>1/4. The entire new argument is inBLOCK13_DERIVATION.md;
+its finite rational inequalities pass. This avoids an impurity-vacuum overlap
+or ground-vector assumption. Keep this analytical argument under author review.
+
+Historical scalar comparison finds all seven old/new intervals overlap, with
+six old intervals contained. The first attempted full-containment C0 check
+was too strong: the two versions round the same finite-part square root
+differently by less than2^-120. That refused comparison is recorded in the
+comparison JSON; neither scalar certificate or alpha result was modified.
+
+Canonical packaging should now need only the explicit native model, displayed
+moment/CAR identities, elementary coefficient data and fresh runners. The
+physical identification of the bounded Ward scalar with the original star
+Dirac-node coefficient is a separate named source bridge; either reconstruct
+its needed hypotheses or explicitly retain that conditional interpretation.
+Do not copy unreviewed numerical conclusions into a purportedly self-contained
+unit. No phase/TOE/axiom-wall conclusion. CurrentBlock13 files are uncommitted;
+Block12 committed/pushed7d301498ab. Deadline11:38:24UTC; no execution agents.

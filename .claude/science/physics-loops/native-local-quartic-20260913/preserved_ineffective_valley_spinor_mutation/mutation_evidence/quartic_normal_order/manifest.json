@@ -1,0 +1,10 @@
+{
+  "name": "quartic_normal_order",
+  "original_sha256": "3e1da500540a427fdfe095da9caa788a2b63317e9a4a454193b19c273918ec14",
+  "mutated_sha256": "40ee6392ea2c65abcf053e5994ce1ed73f57a90d8463bbe62a30de9a8c284a3e",
+  "old": "-(sites[i].conj().T@sites[k])@",
+  "new": "+(sites[i].conj().T@sites[k])@",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-eq8fwszr/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-eq8fwszr/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 212, in run\n    check('quartic_even_bilinear_dictionary_'+str((i,j,k,l0)),np.max(np.abs(direct-coded))<2e-12)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-eq8fwszr/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('quartic_even_bilinear_dictionary_(0, 1, 2, 3)', {})\n"
+}

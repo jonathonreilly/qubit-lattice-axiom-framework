@@ -1,0 +1,10 @@
+{
+  "name": "native_relative_orbital_phase",
+  "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+  "mutated_sha256": "4466ce9e89be91d5ca299c07d36316bdd5b02c19efe82dac6daa3166df5814bb",
+  "old": "scale(-1/z,q[3])",
+  "new": "scale(1/z,q[3])",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0fsegfee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0fsegfee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 156, in run\n    eq('native_phase_zero',zero,predicted)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0fsegfee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0fsegfee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_phase_zero', {})\n"
+}

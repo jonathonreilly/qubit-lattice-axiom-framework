@@ -1,0 +1,10 @@
+{
+  "name": "native_valley_spinor",
+  "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+  "mutated_sha256": "23046a06aedf7eadb044915e698d5860c20eb83b0f2f31855eb39002cd2cdd50",
+  "old": "*(np.array([1,-1])*vl)",
+  "new": "*(np.array([1,1])*vl)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-9flmp4k5/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-9flmp4k5/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 237, in run\n    check('two_particle_density_vertex_'+str((count,idx)),abs(scaled-exact)<2e-12,actual=float(scaled),exact=float(exact),continuum_limit=float(limit))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-9flmp4k5/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('two_particle_density_vertex_(16, 3)', {'actual': -0.0005059320383186708, 'exact': -0.0026006891549424436, 'continuum_limit': -0.002386412653190169})\n"
+}

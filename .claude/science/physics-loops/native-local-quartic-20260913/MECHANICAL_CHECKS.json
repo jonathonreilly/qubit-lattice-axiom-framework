@@ -1,0 +1,27 @@
+{
+  "compile": "pass",
+  "markdown_links": [
+    {
+      "target": "MINIMAL_AXIOMS_2026-06-29.md",
+      "exists_tracked": true
+    },
+    {
+      "target": "NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "exists_tracked": true
+    },
+    {
+      "target": "https://arxiv.org/pdf/1907.00682v3",
+      "scope": "primary URL; already consulted"
+    },
+    {
+      "target": "https://arxiv.org/pdf/0812.1594v6",
+      "scope": "primary URL; already consulted"
+    }
+  ],
+  "vocabulary": "no violations",
+  "source_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+  "note_sha256": "15f33fc2ece19e60e3a577d01d2aea26091c0c88f6ac5c522ae71bc94f548ebf",
+  "integrated_pipeline": "pending",
+  "strict_lint": "pending",
+  "independent_review": "pending"
+}

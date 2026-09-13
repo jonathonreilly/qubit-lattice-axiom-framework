@@ -1,0 +1,35 @@
+{
+  "node_delta": 1,
+  "edge_delta": 2,
+  "added_nodes": [
+    "native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13"
+  ],
+  "removed_nodes": [],
+  "changed_existing_nodes": [],
+  "node": {
+    "claim_id": "native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "minimal_axioms",
+      "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "15f33fc2ece19e60e3a577d01d2aea26091c0c88f6ac5c522ae71bc94f548ebf",
+    "path": "docs/NATIVE_WEYL_LOCAL_INTERACTION_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "runner_path": "scripts/native_weyl_local_interaction_covariance_2026_09_13.py",
+    "title": "Native Weyl local interactions and their covariance condition"
+  },
+  "edges": [
+    {
+      "from": "native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13",
+      "to": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    }
+  ],
+  "final_note_sha256": "15f33fc2ece19e60e3a577d01d2aea26091c0c88f6ac5c522ae71bc94f548ebf"
+}

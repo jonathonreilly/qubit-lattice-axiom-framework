@@ -1,0 +1,10 @@
+{
+  "name": "filtered_CAR_overlap",
+  "original_sha256": "3e1da500540a427fdfe095da9caa788a2b63317e9a4a454193b19c273918ec14",
+  "mutated_sha256": "9ac805f104837f5338cf99b412a2e15e0e619b001f3b5286c0f1d40cfe2e74b4",
+  "old": "Fplus=[1j/(4*v),.5,-1j/(4*v)]",
+  "new": "Fplus=[1j/(4*v),.4,-1j/(4*v)]",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-84shvuuq/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-84shvuuq/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 202, in run\n    check('filtered_CAR_overlap',np.max(np.abs(ov-(.25-1/(8*v*v))*np.eye(64)))<2e-12 and abs(.25-1/(8*v*v))>.01)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-84shvuuq/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('filtered_CAR_overlap', {})\n"
+}

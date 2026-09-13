@@ -1,0 +1,8 @@
+status: ready_for_independent_review
+branch: physics-loop/native-local-quartic-20260913
+base: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
+actual_current_surface_status: conditional-support
+independent_review: pending
+formal_audit: deferred
+execution: personal_without_subagents
+next_action: Push the milestone, verify remote durability, remove the scratch checkout, then continue the parent campaign.

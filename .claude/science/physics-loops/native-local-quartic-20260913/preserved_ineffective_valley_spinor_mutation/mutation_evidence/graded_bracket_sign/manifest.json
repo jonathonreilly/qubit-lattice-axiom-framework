@@ -1,0 +1,10 @@
+{
+  "name": "graded_bracket_sign",
+  "original_sha256": "3e1da500540a427fdfe095da9caa788a2b63317e9a4a454193b19c273918ec14",
+  "mutated_sha256": "92d241e2c659c1b610c085a1db08e14f0d37c7eaf51abe76bfbcdbd1f8614a98",
+  "old": "def pb(a,b):return scale(-s.I,",
+  "new": "def pb(a,b):return scale(s.I,",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-tl69dfjh/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-tl69dfjh/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 123, in run\n    f,h=bil(A),bil(B);br=pb(f,h);eq('graded_bilinear_'+str(trial),br,scale(-s.I,bil(A*B-B*A)))\n                                 ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-tl69dfjh/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-tl69dfjh/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('graded_bilinear_0', {})\n"
+}

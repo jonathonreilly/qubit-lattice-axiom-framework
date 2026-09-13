@@ -1,0 +1,606 @@
+{
+  "status": "ok",
+  "check_count": 157,
+  "checks": [
+    {
+      "name": "Euler_lapse_q_(0, 0)"
+    },
+    {
+      "name": "Euler_lapse_bar_(0, 0)"
+    },
+    {
+      "name": "Euler_lapse_q_(0, 1)"
+    },
+    {
+      "name": "Euler_lapse_bar_(0, 1)"
+    },
+    {
+      "name": "Euler_lapse_q_(0, 2)"
+    },
+    {
+      "name": "Euler_lapse_bar_(0, 2)"
+    },
+    {
+      "name": "Euler_lapse_q_(0, 3)"
+    },
+    {
+      "name": "Euler_lapse_bar_(0, 3)"
+    },
+    {
+      "name": "Euler_lapse_q_(1, 0)"
+    },
+    {
+      "name": "Euler_lapse_bar_(1, 0)"
+    },
+    {
+      "name": "Euler_lapse_q_(1, 1)"
+    },
+    {
+      "name": "Euler_lapse_bar_(1, 1)"
+    },
+    {
+      "name": "Euler_lapse_q_(1, 2)"
+    },
+    {
+      "name": "Euler_lapse_bar_(1, 2)"
+    },
+    {
+      "name": "Euler_lapse_q_(1, 3)"
+    },
+    {
+      "name": "Euler_lapse_bar_(1, 3)"
+    },
+    {
+      "name": "Euler_lapse_q_(2, 0)"
+    },
+    {
+      "name": "Euler_lapse_bar_(2, 0)"
+    },
+    {
+      "name": "Euler_lapse_q_(2, 1)"
+    },
+    {
+      "name": "Euler_lapse_bar_(2, 1)"
+    },
+    {
+      "name": "Euler_lapse_q_(2, 2)"
+    },
+    {
+      "name": "Euler_lapse_bar_(2, 2)"
+    },
+    {
+      "name": "Euler_lapse_q_(2, 3)"
+    },
+    {
+      "name": "Euler_lapse_bar_(2, 3)"
+    },
+    {
+      "name": "Wilson_inversion"
+    },
+    {
+      "name": "Wilson_z_reflection"
+    },
+    {
+      "name": "Wilson_orbital_x_reflection"
+    },
+    {
+      "name": "Wilson_node_-1"
+    },
+    {
+      "name": "Wilson_node_jet_-1"
+    },
+    {
+      "name": "Wilson_quadratic_-1"
+    },
+    {
+      "name": "Wilson_node_1"
+    },
+    {
+      "name": "Wilson_node_jet_1"
+    },
+    {
+      "name": "Wilson_quadratic_1"
+    },
+    {
+      "name": "graded_bilinear_0"
+    },
+    {
+      "name": "CAR_bilinear_0"
+    },
+    {
+      "name": "graded_bilinear_1"
+    },
+    {
+      "name": "CAR_bilinear_1"
+    },
+    {
+      "name": "graded_bilinear_2"
+    },
+    {
+      "name": "CAR_bilinear_2"
+    },
+    {
+      "name": "graded_bilinear_3"
+    },
+    {
+      "name": "CAR_bilinear_3"
+    },
+    {
+      "name": "graded_bilinear_4"
+    },
+    {
+      "name": "CAR_bilinear_4"
+    },
+    {
+      "name": "single_Weyl_density_current_0"
+    },
+    {
+      "name": "single_Weyl_density_current_1"
+    },
+    {
+      "name": "single_Weyl_density_current_2"
+    },
+    {
+      "name": "single_Weyl_density_pair"
+    },
+    {
+      "name": "single_Weyl_current_norm"
+    },
+    {
+      "name": "cross_scalar_Fierz"
+    },
+    {
+      "name": "invariant_generator_(0, 0)"
+    },
+    {
+      "name": "invariant_generator_(0, 1)"
+    },
+    {
+      "name": "invariant_generator_(0, 2)"
+    },
+    {
+      "name": "invariant_generator_(0, 3)"
+    },
+    {
+      "name": "invariant_generator_(0, 4)"
+    },
+    {
+      "name": "invariant_generator_(0, 5)"
+    },
+    {
+      "name": "invariant_generator_(1, 0)"
+    },
+    {
+      "name": "invariant_generator_(1, 1)"
+    },
+    {
+      "name": "invariant_generator_(1, 2)"
+    },
+    {
+      "name": "invariant_generator_(1, 3)"
+    },
+    {
+      "name": "invariant_generator_(1, 4)"
+    },
+    {
+      "name": "invariant_generator_(1, 5)"
+    },
+    {
+      "name": "invariant_generator_(2, 0)"
+    },
+    {
+      "name": "invariant_generator_(2, 1)"
+    },
+    {
+      "name": "invariant_generator_(2, 2)"
+    },
+    {
+      "name": "invariant_generator_(2, 3)"
+    },
+    {
+      "name": "invariant_generator_(2, 4)"
+    },
+    {
+      "name": "invariant_generator_(2, 5)"
+    },
+    {
+      "name": "invariant_generator_(3, 0)"
+    },
+    {
+      "name": "invariant_generator_(3, 1)"
+    },
+    {
+      "name": "invariant_generator_(3, 2)"
+    },
+    {
+      "name": "invariant_generator_(3, 3)"
+    },
+    {
+      "name": "invariant_generator_(3, 4)"
+    },
+    {
+      "name": "invariant_generator_(3, 5)"
+    },
+    {
+      "name": "invariant_generator_(4, 0)"
+    },
+    {
+      "name": "invariant_generator_(4, 1)"
+    },
+    {
+      "name": "invariant_generator_(4, 2)"
+    },
+    {
+      "name": "invariant_generator_(4, 3)"
+    },
+    {
+      "name": "invariant_generator_(4, 4)"
+    },
+    {
+      "name": "invariant_generator_(4, 5)"
+    },
+    {
+      "name": "full_invariant_dimension",
+      "dimension": 5,
+      "domain_dimension": 36,
+      "constraint_rank": 31
+    },
+    {
+      "name": "explicit_invariant_span"
+    },
+    {
+      "name": "rotation_only_dimension",
+      "dimension": 10
+    },
+    {
+      "name": "Hermitian_invariant_0"
+    },
+    {
+      "name": "Hermitian_invariant_1"
+    },
+    {
+      "name": "Hermitian_invariant_2"
+    },
+    {
+      "name": "Hermitian_invariant_3"
+    },
+    {
+      "name": "Hermitian_invariant_4"
+    },
+    {
+      "name": "valley_preserving_dimension",
+      "dimension": 3
+    },
+    {
+      "name": "native_phase_zero"
+    },
+    {
+      "name": "native_rotation_variation_0",
+      "nonzero_monomials": 8
+    },
+    {
+      "name": "native_rotation_variation_1",
+      "nonzero_monomials": 8
+    },
+    {
+      "name": "native_rotation_variation_2",
+      "nonzero_monomials": 0
+    },
+    {
+      "name": "native_boost_variation_0",
+      "nonzero_monomials": 0
+    },
+    {
+      "name": "native_boost_variation_1",
+      "nonzero_monomials": 0
+    },
+    {
+      "name": "native_boost_variation_2",
+      "nonzero_monomials": 2
+    },
+    {
+      "name": "density_kernel_classification"
+    },
+    {
+      "name": "density_kernel_invariant_image"
+    },
+    {
+      "name": "mean_zero_orbital_density_scalar"
+    },
+    {
+      "name": "mean_zero_density_generator_0"
+    },
+    {
+      "name": "mean_zero_density_generator_1"
+    },
+    {
+      "name": "mean_zero_density_generator_2"
+    },
+    {
+      "name": "mean_zero_density_generator_3"
+    },
+    {
+      "name": "mean_zero_density_generator_4"
+    },
+    {
+      "name": "mean_zero_density_generator_5"
+    },
+    {
+      "name": "orbital_blind_invariant_coefficient_family"
+    },
+    {
+      "name": "native_phase_CAR"
+    },
+    {
+      "name": "filter_node_-1"
+    },
+    {
+      "name": "filter_node_1"
+    },
+    {
+      "name": "filtered_CAR_overlap"
+    },
+    {
+      "name": "filtered_quartic_Hermitian_0"
+    },
+    {
+      "name": "filtered_quartic_parity_0"
+    },
+    {
+      "name": "filtered_quartic_Hermitian_1"
+    },
+    {
+      "name": "filtered_quartic_parity_1"
+    },
+    {
+      "name": "filtered_quartic_Hermitian_2"
+    },
+    {
+      "name": "filtered_quartic_parity_2"
+    },
+    {
+      "name": "quartic_even_bilinear_dictionary_(0, 1, 2, 3)"
+    },
+    {
+      "name": "quartic_even_bilinear_dictionary_(0, 2, 2, 4)"
+    },
+    {
+      "name": "quartic_even_bilinear_dictionary_(1, 3, 5, 1)"
+    },
+    {
+      "name": "quartic_even_bilinear_dictionary_(0, 1, 1, 0)"
+    },
+    {
+      "name": "mean_zero_stencil_transfer"
+    },
+    {
+      "name": "density_stencil_Hermitian_parity"
+    },
+    {
+      "name": "two_particle_normalization_(16, 0)"
+    },
+    {
+      "name": "two_particle_density_vertex_(16, 0)",
+      "actual": -0.0031066211932611154,
+      "exact": -0.0031066211932611154,
+      "continuum_limit": -0.0028506598376733493
+    },
+    {
+      "name": "two_particle_continuum_bound_(16, 0)",
+      "error": 0.0002559613555877661,
+      "spacing": 0.39269908169872414
+    },
+    {
+      "name": "two_particle_normalization_(16, 1)"
+    },
+    {
+      "name": "two_particle_density_vertex_(16, 1)",
+      "actual": 0.0,
+      "exact": -0.0,
+      "continuum_limit": -0.0
+    },
+    {
+      "name": "two_particle_continuum_bound_(16, 1)",
+      "error": 0.0,
+      "spacing": 0.39269908169872414
+    },
+    {
+      "name": "two_particle_normalization_(16, 2)"
+    },
+    {
+      "name": "two_particle_density_vertex_(16, 2)",
+      "actual": -0.0015533105966305577,
+      "exact": -0.0015533105966305575,
+      "continuum_limit": -0.0014253299188366744
+    },
+    {
+      "name": "two_particle_continuum_bound_(16, 2)",
+      "error": 0.00012798067779388328,
+      "spacing": 0.39269908169872414
+    },
+    {
+      "name": "two_particle_normalization_(16, 3)"
+    },
+    {
+      "name": "two_particle_density_vertex_(16, 3)",
+      "actual": -0.002600689154942444,
+      "exact": -0.0026006891549424436,
+      "continuum_limit": -0.002386412653190169
+    },
+    {
+      "name": "two_particle_continuum_bound_(16, 3)",
+      "error": 0.00021427650175227493,
+      "spacing": 0.39269908169872414
+    },
+    {
+      "name": "two_particle_normalization_(32, 0)"
+    },
+    {
+      "name": "two_particle_density_vertex_(32, 0)",
+      "actual": -0.0031898024238684913,
+      "exact": -0.0031898024238684927,
+      "continuum_limit": -0.0028506598376733493
+    },
+    {
+      "name": "two_particle_continuum_bound_(32, 0)",
+      "error": 0.0003391425861951421,
+      "spacing": 0.19634954084936207
+    },
+    {
+      "name": "two_particle_normalization_(32, 1)"
+    },
+    {
+      "name": "two_particle_density_vertex_(32, 1)",
+      "actual": 0.0,
+      "exact": -0.0,
+      "continuum_limit": -0.0
+    },
+    {
+      "name": "two_particle_continuum_bound_(32, 1)",
+      "error": 0.0,
+      "spacing": 0.19634954084936207
+    },
+    {
+      "name": "two_particle_normalization_(32, 2)"
+    },
+    {
+      "name": "two_particle_density_vertex_(32, 2)",
+      "actual": -0.0015949012119342455,
+      "exact": -0.0015949012119342461,
+      "continuum_limit": -0.0014253299188366744
+    },
+    {
+      "name": "two_particle_continuum_bound_(32, 2)",
+      "error": 0.00016957129309757104,
+      "spacing": 0.19634954084936207
+    },
+    {
+      "name": "two_particle_normalization_(32, 3)"
+    },
+    {
+      "name": "two_particle_density_vertex_(32, 3)",
+      "actual": -0.002670323819382585,
+      "exact": -0.0026703238193825866,
+      "continuum_limit": -0.002386412653190169
+    },
+    {
+      "name": "two_particle_continuum_bound_(32, 3)",
+      "error": 0.0002839111661924157,
+      "spacing": 0.19634954084936207
+    },
+    {
+      "name": "two_particle_normalization_(64, 0)"
+    },
+    {
+      "name": "two_particle_density_vertex_(64, 0)",
+      "actual": -0.0030752987335677553,
+      "exact": -0.0030752987335677553,
+      "continuum_limit": -0.0028506598376733493
+    },
+    {
+      "name": "two_particle_continuum_bound_(64, 0)",
+      "error": 0.00022463889589440606,
+      "spacing": 0.09817477042468103
+    },
+    {
+      "name": "two_particle_normalization_(64, 1)"
+    },
+    {
+      "name": "two_particle_density_vertex_(64, 1)",
+      "actual": 0.0,
+      "exact": -0.0,
+      "continuum_limit": -0.0
+    },
+    {
+      "name": "two_particle_continuum_bound_(64, 1)",
+      "error": 0.0,
+      "spacing": 0.09817477042468103
+    },
+    {
+      "name": "two_particle_normalization_(64, 2)"
+    },
+    {
+      "name": "two_particle_density_vertex_(64, 2)",
+      "actual": -0.001537649366783877,
+      "exact": -0.0015376493667838774,
+      "continuum_limit": -0.0014253299188366744
+    },
+    {
+      "name": "two_particle_continuum_bound_(64, 2)",
+      "error": 0.0001123194479472026,
+      "spacing": 0.09817477042468103
+    },
+    {
+      "name": "two_particle_normalization_(64, 3)"
+    },
+    {
+      "name": "two_particle_density_vertex_(64, 3)",
+      "actual": -0.0025744677471289173,
+      "exact": -0.0025744677471289177,
+      "continuum_limit": -0.002386412653190169
+    },
+    {
+      "name": "two_particle_continuum_bound_(64, 3)",
+      "error": 0.00018805509393874818,
+      "spacing": 0.09817477042468103
+    }
+  ],
+  "native_variations": {
+    "rotation0": {
+      "(1, 3, 5, 6)": "-I",
+      "(0, 2, 5, 6)": "-I",
+      "(0, 3, 4, 6)": "I",
+      "(0, 3, 5, 7)": "I",
+      "(1, 3, 4, 7)": "-I",
+      "(0, 2, 4, 7)": "-I",
+      "(1, 2, 4, 6)": "I",
+      "(1, 2, 5, 7)": "I"
+    },
+    "rotation1": {
+      "(1, 3, 5, 6)": "1",
+      "(0, 2, 5, 6)": "-1",
+      "(0, 3, 4, 6)": "-1",
+      "(0, 3, 5, 7)": "1",
+      "(1, 3, 4, 7)": "1",
+      "(0, 2, 4, 7)": "-1",
+      "(1, 2, 4, 6)": "-1",
+      "(1, 2, 5, 7)": "1"
+    },
+    "rotation2": {},
+    "boost0": {},
+    "boost1": {},
+    "boost2": {
+      "(0, 3, 4, 7)": "-2",
+      "(1, 2, 5, 6)": "2"
+    }
+  },
+  "invariants": [
+    {
+      "(0, 1, 4, 5)": "-1"
+    },
+    {
+      "(2, 3, 6, 7)": "-1"
+    },
+    {
+      "(0, 1, 6, 7)": "-1"
+    },
+    {
+      "(2, 3, 4, 5)": "-1"
+    },
+    {
+      "(0, 2, 4, 6)": "-2",
+      "(1, 3, 5, 7)": "-2",
+      "(0, 3, 5, 6)": "-2",
+      "(1, 2, 4, 7)": "-2"
+    }
+  ],
+  "source_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+  "elapsed_seconds": 0.4990054580848664,
+  "scope": "Exact component and finite-CAR challenges. No quantum interacting constraint or continuum existence theorem."
+}
+per_element: exact Grassmann signs and invariant coefficients checked; no axiom selection follows.
+per_site: actual CAR products, normal ordering and even parity checked; filtered fields are not exact species.
+per_mode: native node phases and leading density vertex checked; dressed four-point identities remain open.
+per_block: even two-particle amplitudes checked on three finite tori; these are not interacting ground states.
+lattice_wide: smooth few-particle vertex proof supplied; no finite-coupling quantum continuum is established.
+TOTAL: PASS=157 FAIL=0

@@ -1,0 +1,10 @@
+{
+  "name": "density_intervalley_sign",
+  "original_sha256": "3e1da500540a427fdfe095da9caa788a2b63317e9a4a454193b19c273918ec14",
+  "mutated_sha256": "7ca8973182043365713d99f55e99df18ec47d5b4f611c74c90758f21607e14db",
+  "old": "scale(exchange[i,j],",
+  "new": "scale(-exchange[i,j],",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-kr_4m08h/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-kr_4m08h/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 171, in run\n    check('density_kernel_classification',sol==s.FiniteSet((aq+bq,0,bq+cq,aq,bq,cq)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-kr_4m08h/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('density_kernel_classification', {})\n"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "cross_current_sign",
+  "original_sha256": "3e1da500540a427fdfe095da9caa788a2b63317e9a4a454193b19c273918ec14",
+  "mutated_sha256": "feeba00aad123eae9c25a5d7c59bdd7ce88b8016105b8b0bbac90a5efb29e691",
+  "old": "*(mul(a,b) for a,b in zip(jR,jL))",
+  "new": "*(scale(-1,mul(a,b)) for a,b in zip(jR,jL))",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0k_wxxtc/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0k_wxxtc/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 134, in run\n    eq('cross_scalar_Fierz',cross,scale(-2,mul(S,dag(S))))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0k_wxxtc/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0k_wxxtc/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('cross_scalar_Fierz', {})\n"
+}

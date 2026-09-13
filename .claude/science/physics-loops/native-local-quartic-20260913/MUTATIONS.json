@@ -1,0 +1,208 @@
+{
+  "source_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+  "mutation_count": 20,
+  "all_effective": true,
+  "elapsed_seconds": 9.605290333041921,
+  "mutations": [
+    {
+      "name": "graded_bracket_sign",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "0bf28738ba92be05c4e99c0fdc2d9a3f864c0333d8d29a213ea94a8a8da01e39",
+      "old": "def pb(a,b):return scale(-s.I,",
+      "new": "def pb(a,b):return scale(s.I,",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-92jn8mox/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-92jn8mox/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 123, in run\n    f,h=bil(A),bil(B);br=pb(f,h);eq('graded_bilinear_'+str(trial),br,scale(-s.I,bil(A*B-B*A)))\n                                 ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-92jn8mox/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-92jn8mox/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('graded_bilinear_0', {})\n"
+    },
+    {
+      "name": "right_odd_derivative",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "da41e284f9e4845f97ddbdf190bdd36535fc6ee9bd44e3ab241a9055cbd74bd5",
+      "old": "(-1)**(len(m)-1-k)*c",
+      "new": "(-1)**(len(m)-k)*c",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-g5pfrvn1/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-g5pfrvn1/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 123, in run\n    f,h=bil(A),bil(B);br=pb(f,h);eq('graded_bilinear_'+str(trial),br,scale(-s.I,bil(A*B-B*A)))\n                                 ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-g5pfrvn1/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-g5pfrvn1/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('graded_bilinear_0', {})\n"
+    },
+    {
+      "name": "pair_conjugation_order",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "023f351376d0044d12d805f29541920e16faecf38e00d0e4796a83418602251f",
+      "old": "for i in reversed(m)",
+      "new": "for i in m",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-icff779f/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-icff779f/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 131, in run\n    eq('single_Weyl_density_pair',mul(nR,nR),scale(2,mul(dag(r),r)))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-icff779f/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-icff779f/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('single_Weyl_density_pair', {})\n"
+    },
+    {
+      "name": "kinetic_lapse_coefficient",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "d0e57fdb8573fc5fd762047fc5fe313585bf8714c450cb38f71f298082c2de92",
+      "old": "kinetic=scale(-s.I*N/2,",
+      "new": "kinetic=scale(-s.I*N/4,",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-lr8jkn5u/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-lr8jkn5u/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 106, in run\n    eq('Euler_lapse_q_'+str((axis,component)),flow(component),scale(-s.Rational(1,2),add(*(scale(alpha[component,j],q[j]) for j in range(4)))))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-lr8jkn5u/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-lr8jkn5u/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Euler_lapse_q_(0, 0)', {})\n"
+    },
+    {
+      "name": "Euler_integration_by_parts",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "c71c2f3c2eb37c09386d5103ca63e45c5b2f923814c77941892690bcf7353355",
+      "old": "scale(-1,total_x(left(kinetic,index+8)))",
+      "new": "scale(1,total_x(left(kinetic,index+8)))",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-qlpwsptw/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-qlpwsptw/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 106, in run\n    eq('Euler_lapse_q_'+str((axis,component)),flow(component),scale(-s.Rational(1,2),add(*(scale(alpha[component,j],q[j]) for j in range(4)))))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-qlpwsptw/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-qlpwsptw/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Euler_lapse_q_(0, 0)', {})\n"
+    },
+    {
+      "name": "native_Wilson_symbol",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "309fadcfdfe909c4e963277ec0b479b1d304f9e5bf3328cc1aca9eeac874e8a5",
+      "old": "2+zeta-s.cos(k1)-s.cos(k2)-s.cos(k3)",
+      "new": "2+zeta-s.cos(k1)-s.cos(k2)+s.cos(k3)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-j_nmdbyx/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-j_nmdbyx/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 115, in run\n    check('Wilson_node_'+str(chir),all(s.simplify(x)==0 for x in h0.subs(node)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-j_nmdbyx/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Wilson_node_-1', {})\n"
+    },
+    {
+      "name": "left_Weyl_boost",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "fdc801b8685e0afda569a26b6a53bd03d45c38191fc720ca8627bdb4e1500329",
+      "old": "boost=s.diag(sig/2,-sig/2)",
+      "new": "boost=s.diag(sig/2,sig/2)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-4dpba49u/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-4dpba49u/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 141, in run\n    for i,G in enumerate(boosts+rots):eq('invariant_generator_'+str((idx,i)),action(p,G),{})\n                                      ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-4dpba49u/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-4dpba49u/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('invariant_generator_(4, 0)', {})\n"
+    },
+    {
+      "name": "cross_current_sign",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "8e88b7bbf5901d7f70236da9791983a3000682f22f39495c0537d33d098b8186",
+      "old": "*(mul(a,b) for a,b in zip(jR,jL))",
+      "new": "*(scale(-1,mul(a,b)) for a,b in zip(jR,jL))",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-o4w3newn/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-o4w3newn/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 134, in run\n    eq('cross_scalar_Fierz',cross,scale(-2,mul(S,dag(S))))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-o4w3newn/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-o4w3newn/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('cross_scalar_Fierz', {})\n"
+    },
+    {
+      "name": "native_relative_orbital_phase",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "4466ce9e89be91d5ca299c07d36316bdd5b02c19efe82dac6daa3166df5814bb",
+      "old": "scale(-1/z,q[3])",
+      "new": "scale(1/z,q[3])",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0fsegfee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0fsegfee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 156, in run\n    eq('native_phase_zero',zero,predicted)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0fsegfee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-0fsegfee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_phase_zero', {})\n"
+    },
+    {
+      "name": "density_forward_factor",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "ffaa65719d3f0fe7e68bf62723fe5f3613d7370967980b293e149c6e6aa81a06",
+      "old": "scale(forward[i,j]/2,",
+      "new": "scale(forward[i,j],",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-1imig4ee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-1imig4ee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 171, in run\n    check('density_kernel_classification',sol==s.FiniteSet((aq+bq,0,bq+cq,aq,bq,cq)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-1imig4ee/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('density_kernel_classification', {})\n"
+    },
+    {
+      "name": "density_intervalley_sign",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "1658e7c057b35a5925b183263cad9b410dee4ab32e5daec940bcfdbdb4a7fa4c",
+      "old": "scale(exchange[i,j],",
+      "new": "scale(-exchange[i,j],",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-adrk6kwm/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-adrk6kwm/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 171, in run\n    check('density_kernel_classification',sol==s.FiniteSet((aq+bq,0,bq+cq,aq,bq,cq)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-adrk6kwm/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('density_kernel_classification', {})\n"
+    },
+    {
+      "name": "density_mean_zero_choice",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "f0abd8fb707e913b318d9d96be86869af5526b363940589db6614cbf1624349c",
+      "old": "aq:1,bq:-1,cq:1",
+      "new": "aq:1,bq:0,cq:1",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-5m_ngsrh/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-5m_ngsrh/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 178, in run\n    eq('mean_zero_orbital_density_scalar',tuned,scale(-s.Rational(1,2),cross))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-5m_ngsrh/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-5m_ngsrh/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('mean_zero_orbital_density_scalar', {})\n"
+    },
+    {
+      "name": "density_invariant_image",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "c1837bdaf830943dfbe1ecad7ebc0a79b2dd08a16207533a4a789f602131914b",
+      "old": "scale(bq/2,cross)",
+      "new": "scale(bq,cross)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-r86nos3k/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-r86nos3k/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 173, in run\n    eq('density_kernel_invariant_image',tidy({m:c.subs(imposed) for m,c in density.items()}),scale(bq,cross))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-r86nos3k/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 32, in eq\n    def eq(name,a,b):check(name,not add(a,scale(-1,b)))\n                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-r86nos3k/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('density_kernel_invariant_image', {})\n"
+    },
+    {
+      "name": "CAR_anticommutation_sign",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "a131a51710979a619de41c5309af432fe5568565723af658fe863d3221beda4a",
+      "old": "(-1)**((k&((1<<j)-1)).bit_count())",
+      "new": "1",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-i1hdpczs/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-i1hdpczs/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 125, in run\n    check('CAR_bilinear_'+str(trial),np.max(np.abs(operator(br,ann)+1j*(ma@mh-mh@ma)))<1e-12)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-i1hdpczs/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('CAR_bilinear_0', {})\n"
+    },
+    {
+      "name": "filtered_CAR_overlap",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "01768dc3b369c381b24d9844587ceee45fe309323708740af535e6ce63a6fee0",
+      "old": "Fplus=[1j/(4*v),.5,-1j/(4*v)]",
+      "new": "Fplus=[1j/(4*v),.4,-1j/(4*v)]",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-somozy96/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-somozy96/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 202, in run\n    check('filtered_CAR_overlap',np.max(np.abs(ov-(.25-1/(8*v*v))*np.eye(64)))<2e-12 and abs(.25-1/(8*v*v))>.01)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-somozy96/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('filtered_CAR_overlap', {})\n"
+    },
+    {
+      "name": "quartic_normal_order",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "cc3be6041d84aaf21af246ea33c60a67e410a95e3f0cc2afad6abf78a528e7bd",
+      "old": "-(sites[i].conj().T@sites[k])@",
+      "new": "+(sites[i].conj().T@sites[k])@",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-n4eib7z5/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-n4eib7z5/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 212, in run\n    check('quartic_even_bilinear_dictionary_'+str((i,j,k,l0)),np.max(np.abs(direct-coded))<2e-12)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-n4eib7z5/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('quartic_even_bilinear_dictionary_(0, 1, 2, 3)', {})\n"
+    },
+    {
+      "name": "native_density_stencil",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "bf597cd6f2a0fc9e28dbf5c9aeaa786c2c569feeaf7944077d34a5c8de81e8a7",
+      "old": "for disp,coef in [(1,.5),(2,-.5)]",
+      "new": "for disp,coef in [(1,.25),(2,-.5)]",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-qd97u56w/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-qd97u56w/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 237, in run\n    check('two_particle_density_vertex_'+str((count,idx)),abs(scaled-exact)<2e-12,actual=float(scaled),exact=float(exact),continuum_limit=float(limit))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-qd97u56w/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('two_particle_density_vertex_(16, 0)', {'actual': -0.003986500966504716, 'exact': -0.0031066211932611154, 'continuum_limit': -0.0028506598376733493})\n"
+    },
+    {
+      "name": "native_valley_spinor",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "23046a06aedf7eadb044915e698d5860c20eb83b0f2f31855eb39002cd2cdd50",
+      "old": "*(np.array([1,-1])*vl)",
+      "new": "*(np.array([1,1])*vl)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-9flmp4k5/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-9flmp4k5/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 237, in run\n    check('two_particle_density_vertex_'+str((count,idx)),abs(scaled-exact)<2e-12,actual=float(scaled),exact=float(exact),continuum_limit=float(limit))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-9flmp4k5/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('two_particle_density_vertex_(16, 3)', {'actual': -0.0005059320383186708, 'exact': -0.0026006891549424436, 'continuum_limit': -0.002386412653190169})\n"
+    },
+    {
+      "name": "physical_spacing_power",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "5f11036decfbbd851891a9b89a4868f2801db2f7b153971c562138e5a7708187",
+      "old": "scaled=vel0*W/spacing**3",
+      "new": "scaled=vel0*W/spacing**2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-lhqehl9c/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-lhqehl9c/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 237, in run\n    check('two_particle_density_vertex_'+str((count,idx)),abs(scaled-exact)<2e-12,actual=float(scaled),exact=float(exact),continuum_limit=float(limit))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-lhqehl9c/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('two_particle_density_vertex_(16, 0)', {'actual': -0.0012199672897794346, 'exact': -0.0031066211932611154, 'continuum_limit': -0.0028506598376733493})\n"
+    },
+    {
+      "name": "native_two_particle_exchange",
+      "original_sha256": "6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e",
+      "mutated_sha256": "05e4f6f22f832ecf1b70abfc6c429234d82dc8f1c8dac8835f94fcdbfe116eb9",
+      "old": "-vv[:,:,None]*ush[:,None,:]",
+      "new": "+vv[:,:,None]*ush[:,None,:]",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-y2st7imc/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 251, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-y2st7imc/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 237, in run\n    check('two_particle_density_vertex_'+str((count,idx)),abs(scaled-exact)<2e-12,actual=float(scaled),exact=float(exact),continuum_limit=float(limit))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-quartic-mutation-y2st7imc/scripts/native_weyl_local_interaction_covariance_2026_09_13.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('two_particle_density_vertex_(16, 0)', {'actual': 0.0031066211932611145, 'exact': -0.0031066211932611154, 'continuum_limit': -0.0028506598376733493})\n"
+    }
+  ]
+}

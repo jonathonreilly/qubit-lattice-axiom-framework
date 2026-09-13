@@ -1,0 +1,58 @@
+{
+  "native_positive_ward_scalar_bounded_theorem_note_2026-09-13": {
+    "readiness_issue": null,
+    "cache_status": "fresh",
+    "helper_runner_paths": [
+      "scripts/native_ward_scalar_algebra_2026_09_13.py",
+      "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+      "scripts/native_ward_scalar_native_checks_2026_09_13.py"
+    ],
+    "input_count": 10,
+    "relative_links": 5
+  },
+  "native_star_infrared_spectral_dominance_bounded_theorem_note_2026-09-13": {
+    "readiness_issue": null,
+    "cache_status": "fresh",
+    "helper_runner_paths": [
+      "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+    ],
+    "input_count": 9,
+    "relative_links": 4
+  },
+  "manifest_delta": {
+    "added": [
+      "native_star_infrared_spectral_dominance_bounded_theorem_note_2026-09-13"
+    ],
+    "deleted": [],
+    "modified": [],
+    "nodes": 5043,
+    "edges": 12520
+  },
+  "compiled_python_paths": [
+    ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/native_ward_scalar_algebra_2026_09_13.py",
+    ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/native_ward_scalar_algebra_2026_09_13.py",
+    ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/native_ward_scalar_arithmetic_2026_09_13.py",
+    ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/native_ward_scalar_arithmetic_2026_09_13.py",
+    ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/native_ward_scalar_native_checks_2026_09_13.py",
+    ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/native_ward_scalar_native_checks_2026_09_13.py",
+    ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/native_ward_scalar_arithmetic_2026_09_13.py",
+    ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/native_ward_scalar_arithmetic_2026_09_13.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/mutant.py",
+    ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_packaged_runner.py",
+    "scripts/native_positive_ward_scalar_2026_09_13.py",
+    "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "scripts/native_ward_scalar_algebra_2026_09_13.py",
+    "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+    "scripts/native_ward_scalar_native_checks_2026_09_13.py"
+  ],
+  "validation_limits": "Focused graph-derived source/input checks only; independent source review and combined pipeline/lint/ledger-based changed-evidence gate remain pending."
+}

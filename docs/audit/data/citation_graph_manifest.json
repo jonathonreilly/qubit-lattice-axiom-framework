@@ -1,6 +1,6 @@
 {
- "edge_count": 12519,
- "node_count": 5042,
+ "edge_count": 12520,
+ "node_count": 5043,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12881,6 +12881,10 @@
   "native_positive_ward_scalar_bounded_theorem_note_2026-09-13": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "native_star_infrared_spectral_dominance_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "ba1290897089",
+   "out_degree": 1
   },
   "nature_discovery_directions_2026-04-11": {
    "deps_hash": "e3b0c44298fc",

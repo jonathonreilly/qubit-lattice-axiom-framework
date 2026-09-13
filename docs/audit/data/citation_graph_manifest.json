@@ -1,6 +1,6 @@
 {
- "edge_count": 12519,
- "node_count": 5041,
+ "edge_count": 12522,
+ "node_count": 5042,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2097,6 +2097,10 @@
   "charge_row_enforcement_cycle730_bounded_theorem_note_2026-07-28": {
    "deps_hash": "2f7b0933d9fd",
    "out_degree": 4
+  },
+  "charged_finite_link_local_dynamics_and_phase_bridge_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "9c83fb5042d9",
+   "out_degree": 3
   },
   "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30": {
    "deps_hash": "a50118a3664b",

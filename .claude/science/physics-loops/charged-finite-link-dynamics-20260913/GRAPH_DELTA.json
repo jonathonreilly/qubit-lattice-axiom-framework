@@ -1,0 +1,39 @@
+{
+  "base_revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "added_nodes": [
+    "charged_finite_link_local_dynamics_and_phase_bridge_bounded_theorem_note_2026-09-13"
+  ],
+  "removed_nodes": [],
+  "changed_existing_nodes": [],
+  "edge_count_delta": 3,
+  "outgoing_edges": [
+    {
+      "from": "charged_finite_link_local_dynamics_and_phase_bridge_bounded_theorem_note_2026-09-13",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "charged_finite_link_local_dynamics_and_phase_bridge_bounded_theorem_note_2026-09-13",
+      "to": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    },
+    {
+      "from": "charged_finite_link_local_dynamics_and_phase_bridge_bounded_theorem_note_2026-09-13",
+      "to": "the_fermion_on_compact_u1_links_the_integer_flux_selects_the_staggered_gauss_law_and_joins_the_maxwell_germ_bounded_theorem_note_2026-09-03"
+    }
+  ],
+  "new_node": {
+    "claim_id": "charged_finite_link_local_dynamics_and_phase_bridge_bounded_theorem_note_2026-09-13",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "minimal_axioms",
+      "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05",
+      "the_fermion_on_compact_u1_links_the_integer_flux_selects_the_staggered_gauss_law_and_joins_the_maxwell_germ_bounded_theorem_note_2026-09-03"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4",
+    "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "runner_path": "scripts/charged_finite_link_local_dynamics_and_phase_bridge_2026_09_13.py",
+    "title": "Finite charged links: controlled local dynamics and the remaining phase argument"
+  }
+}

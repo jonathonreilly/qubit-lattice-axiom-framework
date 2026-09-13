@@ -1,0 +1,13 @@
+{
+  "primary_compile": "passed",
+  "relative_source_links": [
+    "MINIMAL_AXIOMS_2026-06-29.md",
+    "NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+    "THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+  ],
+  "all_relative_source_links_exist": true,
+  "full_integrated_pipeline": "pending",
+  "strict_integrated_lint": "pending",
+  "independent_review": "pending",
+  "formal_audit": "pending"
+}

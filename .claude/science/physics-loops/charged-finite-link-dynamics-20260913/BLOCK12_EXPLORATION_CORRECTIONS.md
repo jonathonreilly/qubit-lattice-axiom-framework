@@ -1,0 +1,1 @@
+The first exact-witness helper failed before any scientific check because SymPy kronecker_product returned an immutable matrix and h() assigned a hopping block. The traceback was TypeError: Cannot set values of ImmutableDenseMatrix. The correction explicitly constructs a mutable Matrix. No computed negative finding was discarded.

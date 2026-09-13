@@ -1,0 +1,297 @@
+{
+  "status": "ok",
+  "check_count": 76,
+  "checks": [
+    {
+      "name": "graded_bilinear_0"
+    },
+    {
+      "name": "CAR_bilinear_0"
+    },
+    {
+      "name": "graded_bilinear_1"
+    },
+    {
+      "name": "CAR_bilinear_1"
+    },
+    {
+      "name": "graded_bilinear_2"
+    },
+    {
+      "name": "CAR_bilinear_2"
+    },
+    {
+      "name": "graded_bilinear_3"
+    },
+    {
+      "name": "CAR_bilinear_3"
+    },
+    {
+      "name": "graded_bilinear_4"
+    },
+    {
+      "name": "CAR_bilinear_4"
+    },
+    {
+      "name": "single_Weyl_density_current_0"
+    },
+    {
+      "name": "single_Weyl_density_current_1"
+    },
+    {
+      "name": "single_Weyl_density_current_2"
+    },
+    {
+      "name": "single_Weyl_density_pair"
+    },
+    {
+      "name": "single_Weyl_current_norm"
+    },
+    {
+      "name": "cross_scalar_Fierz"
+    },
+    {
+      "name": "invariant_generator_(0, 0)"
+    },
+    {
+      "name": "invariant_generator_(0, 1)"
+    },
+    {
+      "name": "invariant_generator_(0, 2)"
+    },
+    {
+      "name": "invariant_generator_(0, 3)"
+    },
+    {
+      "name": "invariant_generator_(0, 4)"
+    },
+    {
+      "name": "invariant_generator_(0, 5)"
+    },
+    {
+      "name": "invariant_generator_(1, 0)"
+    },
+    {
+      "name": "invariant_generator_(1, 1)"
+    },
+    {
+      "name": "invariant_generator_(1, 2)"
+    },
+    {
+      "name": "invariant_generator_(1, 3)"
+    },
+    {
+      "name": "invariant_generator_(1, 4)"
+    },
+    {
+      "name": "invariant_generator_(1, 5)"
+    },
+    {
+      "name": "invariant_generator_(2, 0)"
+    },
+    {
+      "name": "invariant_generator_(2, 1)"
+    },
+    {
+      "name": "invariant_generator_(2, 2)"
+    },
+    {
+      "name": "invariant_generator_(2, 3)"
+    },
+    {
+      "name": "invariant_generator_(2, 4)"
+    },
+    {
+      "name": "invariant_generator_(2, 5)"
+    },
+    {
+      "name": "invariant_generator_(3, 0)"
+    },
+    {
+      "name": "invariant_generator_(3, 1)"
+    },
+    {
+      "name": "invariant_generator_(3, 2)"
+    },
+    {
+      "name": "invariant_generator_(3, 3)"
+    },
+    {
+      "name": "invariant_generator_(3, 4)"
+    },
+    {
+      "name": "invariant_generator_(3, 5)"
+    },
+    {
+      "name": "invariant_generator_(4, 0)"
+    },
+    {
+      "name": "invariant_generator_(4, 1)"
+    },
+    {
+      "name": "invariant_generator_(4, 2)"
+    },
+    {
+      "name": "invariant_generator_(4, 3)"
+    },
+    {
+      "name": "invariant_generator_(4, 4)"
+    },
+    {
+      "name": "invariant_generator_(4, 5)"
+    },
+    {
+      "name": "full_invariant_dimension",
+      "dimension": 5,
+      "domain_dimension": 36,
+      "constraint_rank": 31
+    },
+    {
+      "name": "explicit_invariant_span"
+    },
+    {
+      "name": "rotation_only_dimension",
+      "dimension": 10
+    },
+    {
+      "name": "Hermitian_invariant_0"
+    },
+    {
+      "name": "Hermitian_invariant_1"
+    },
+    {
+      "name": "Hermitian_invariant_2"
+    },
+    {
+      "name": "Hermitian_invariant_3"
+    },
+    {
+      "name": "Hermitian_invariant_4"
+    },
+    {
+      "name": "valley_preserving_dimension",
+      "dimension": 3
+    },
+    {
+      "name": "native_phase_zero"
+    },
+    {
+      "name": "native_rotation_variation_0",
+      "nonzero_monomials": 8
+    },
+    {
+      "name": "native_rotation_variation_1",
+      "nonzero_monomials": 8
+    },
+    {
+      "name": "native_rotation_variation_2",
+      "nonzero_monomials": 0
+    },
+    {
+      "name": "native_boost_variation_0",
+      "nonzero_monomials": 0
+    },
+    {
+      "name": "native_boost_variation_1",
+      "nonzero_monomials": 0
+    },
+    {
+      "name": "native_boost_variation_2",
+      "nonzero_monomials": 2
+    },
+    {
+      "name": "native_phase_CAR"
+    },
+    {
+      "name": "filter_node_-1"
+    },
+    {
+      "name": "filter_node_1"
+    },
+    {
+      "name": "filtered_CAR_overlap"
+    },
+    {
+      "name": "filtered_quartic_Hermitian_0"
+    },
+    {
+      "name": "filtered_quartic_parity_0"
+    },
+    {
+      "name": "filtered_quartic_Hermitian_1"
+    },
+    {
+      "name": "filtered_quartic_parity_1"
+    },
+    {
+      "name": "filtered_quartic_Hermitian_2"
+    },
+    {
+      "name": "filtered_quartic_parity_2"
+    },
+    {
+      "name": "quartic_even_bilinear_dictionary_(0, 1, 2, 3)"
+    },
+    {
+      "name": "quartic_even_bilinear_dictionary_(0, 2, 2, 4)"
+    },
+    {
+      "name": "quartic_even_bilinear_dictionary_(1, 3, 5, 1)"
+    },
+    {
+      "name": "quartic_even_bilinear_dictionary_(0, 1, 1, 0)"
+    }
+  ],
+  "native_variations": {
+    "rotation0": {
+      "(1, 3, 5, 6)": "-I",
+      "(0, 2, 5, 6)": "-I",
+      "(0, 3, 4, 6)": "I",
+      "(0, 3, 5, 7)": "I",
+      "(1, 3, 4, 7)": "-I",
+      "(0, 2, 4, 7)": "-I",
+      "(1, 2, 4, 6)": "I",
+      "(1, 2, 5, 7)": "I"
+    },
+    "rotation1": {
+      "(1, 3, 5, 6)": "1",
+      "(0, 2, 5, 6)": "-1",
+      "(0, 3, 4, 6)": "-1",
+      "(0, 3, 5, 7)": "1",
+      "(1, 3, 4, 7)": "1",
+      "(0, 2, 4, 7)": "-1",
+      "(1, 2, 4, 6)": "-1",
+      "(1, 2, 5, 7)": "1"
+    },
+    "rotation2": {},
+    "boost0": {},
+    "boost1": {},
+    "boost2": {
+      "(0, 3, 4, 7)": "-2",
+      "(1, 2, 5, 6)": "2"
+    }
+  },
+  "invariants": [
+    {
+      "(0, 1, 4, 5)": "-1"
+    },
+    {
+      "(2, 3, 6, 7)": "-1"
+    },
+    {
+      "(0, 1, 6, 7)": "-1"
+    },
+    {
+      "(2, 3, 4, 5)": "-1"
+    },
+    {
+      "(0, 2, 4, 6)": "-2",
+      "(1, 3, 5, 7)": "-2",
+      "(0, 3, 5, 6)": "-2",
+      "(1, 2, 4, 7)": "-2"
+    }
+  ],
+  "source_sha256": "a022e701585b3b6b215a6850bbcf81d7ff465859609d7520dd572ee96a8d4358",
+  "elapsed_seconds": 0.3816970409825444,
+  "scope": "Exact component and finite-CAR challenges. No quantum interacting constraint or continuum existence theorem."
+}

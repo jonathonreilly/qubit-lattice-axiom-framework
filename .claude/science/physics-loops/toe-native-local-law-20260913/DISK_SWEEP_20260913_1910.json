@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-13T19:10:59.752521+00:00",
+  "main": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "rows": [
+    {
+      "path": "/private/tmp/toe-formation-order-20260913-wt",
+      "head": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "contained_in_main": true,
+      "clean_including_untracked": false,
+      "disposition": "preserved",
+      "reason": "uncommitted or untracked files retained; no claim that all untracked files are disposable runner output"
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "contained_in_main": false,
+      "clean_including_untracked": true,
+      "disposition": "preserved"
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/formation-order-wt",
+      "head": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "contained_in_main": true,
+      "clean_including_untracked": true,
+      "disposition": "removed_clean_head_contained_in_main"
+    }
+  ],
+  "archives_touched": false,
+  "git_gc_run": false
+}

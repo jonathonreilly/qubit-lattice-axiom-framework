@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-13T19:10:13.312302+00:00",
+  "pr": {
+    "headRefOid": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+    "isDraft": false,
+    "mergeable": "MERGEABLE",
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8095"
+  },
+  "branch": "physics-loop/native-canonical-metric-20260913",
+  "head": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+  "remote_head_verified": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+  "clean_including_untracked": true,
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-native-canonical-metric-20260913",
+  "preserved_failures": "committed author packet, including full ineffective-mutant source/stdout/stderr",
+  "canonical_cache_sha256": "24bf46d5d2a147901e264263adfbbeb37d5a85437ae7497d568ee0ceace83298",
+  "canonical_cache_preservation": "verified byte-identical to committed gzip before removing untracked duplicate",
+  "worktree_removed": true,
+  "removal_utc": "2026-09-13T19:10:15.601195+00:00"
+}

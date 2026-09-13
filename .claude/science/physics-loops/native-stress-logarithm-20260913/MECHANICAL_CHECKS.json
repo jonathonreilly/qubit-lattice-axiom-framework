@@ -1,0 +1,27 @@
+{
+  "source_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "links": [
+    {
+      "target": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "kind": "tracked_file"
+    },
+    {
+      "target": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "kind": "tracked_file"
+    },
+    {
+      "target": "https://arxiv.org/pdf/hep-th/9307010",
+      "kind": "web"
+    }
+  ],
+  "preserved_effective_mutations": 31,
+  "staged_diff_check": 0,
+  "compiled_python": [
+    "scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py",
+    ".claude/science/physics-loops/native-stress-logarithm-20260913/check_mutations.py"
+  ],
+  "vocab_findings": 0,
+  "combined_landing_gates": "pending",
+  "independent_review": "pending",
+  "link_check_correction": "Initial broad regex misread three indented mathematical expressions as Markdown links; corrected to exclude indented code and require a Markdown label. No scientific source was changed."
+}

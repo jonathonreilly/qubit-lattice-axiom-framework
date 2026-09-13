@@ -1,0 +1,15 @@
+loop: native-stress-logarithm-20260913
+mode: milestone
+status: review_ready
+branch: physics-loop/native-stress-logarithm-20260913
+base_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
+parent_campaign_branch: physics-loop/toe-native-local-law-20260913
+parent_checkpoint: cf902a49c4
+execution: supervisor_only_no_subagents
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+independent_review: pending
+formal_audit: deferred
+next_action: Push the reviewed author packet, open one milestone PR, verify remote durability, record delivery in the parent campaign and remove this checkout.
+campaign_deadline_utc: 2026-09-14T00:14:41Z
+campaign_continuation: Return to the active parent checkout and pursue the next selected metric-law or physical-source derivation.

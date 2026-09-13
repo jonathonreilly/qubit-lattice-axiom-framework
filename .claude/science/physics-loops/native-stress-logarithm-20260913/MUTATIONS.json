@@ -1,0 +1,318 @@
+{
+  "source_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutation_count": 31,
+  "all_effective": true,
+  "elapsed_seconds": 16.394691208028235,
+  "mutations": [
+    {
+      "name": "pauli_overlap",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "4881ce5f311d4cdaec569c7c7853d9f624b29cbdefabe64d788a4d79df14827f",
+      "old": "jj=(1+n.dot(m))*u.dot(vv)",
+      "new": "jj=(1-n.dot(m))*u.dot(vv)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-yp1ittv_/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-yp1ittv_/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 44, in run\n    eq('Pauli_trace_real_arbitrary_components',2*s.re(tr.expand()),jj)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-yp1ittv_/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-yp1ittv_/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Pauli_trace_real_arbitrary_components', {})\n"
+    },
+    {
+      "name": "pauli_imaginary",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "cb73620691da15def4e6606987b05c8e7c5de54e09165c255acff1e104e6d1bc",
+      "old": "-(n+m).dot(u.cross(vv))/2)",
+      "new": "-(n+m).dot(u.cross(vv))/3)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-96sze5w7/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-96sze5w7/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 45, in run\n    eq('Pauli_trace_imaginary_arbitrary_components',s.im(tr.expand()),-(n+m).dot(u.cross(vv))/3)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-96sze5w7/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-96sze5w7/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Pauli_trace_imaginary_arbitrary_components', {})\n"
+    },
+    {
+      "name": "occupation_sign",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "534031c2ac4996401455e9e510c6a5b1bdb4067927210e26b7ad1fcfc972d31e",
+      "old": "(-1)**((bits&((1<<site)-1)).bit_count())",
+      "new": "1",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-0r10rcsh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-0r10rcsh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 65, in run\n    near('real_path_hopping_'+str(length),1j*path@(signs[0]-signs[length])/2,real)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-0r10rcsh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-0r10rcsh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('real_path_hopping_1', {'max_residual': 2.0, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "path_phase",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "d1d4ea236b3107d03ceda988cb4801c7743e7e3fa525b64420b6a892c743f1df",
+      "old": "path=(1j)**(length-1)*ap",
+      "new": "path=(-1j)**(length-1)*ap",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-mb_urfbv/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-mb_urfbv/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 62, in run\n    near('ordered_Majorana_path_'+str(length),path,-1j*majors[0]@majors[length])\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-mb_urfbv/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-mb_urfbv/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('ordered_Majorana_path_2', {'max_residual': 2.0, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "imaginary_hopping",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "af1cd2f124687ccd4e5ba830d0479f5f07ed8d5ddd0938e49b28a62f819a801d",
+      "old": "-path@(np.eye(dim)-signs[0]@signs[length])/2,imag",
+      "new": "path@(np.eye(dim)-signs[0]@signs[length])/2,imag",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-l1__hssy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-l1__hssy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 66, in run\n    near('imaginary_path_hopping_'+str(length),path@(np.eye(dim)-signs[0]@signs[length])/2,imag)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-l1__hssy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-l1__hssy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('imaginary_path_hopping_1', {'max_residual': 2.0, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "path_range",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "1669fbf772088b34cdf231f783b8942f30f146a7c8b96c9b2796a5e3d29c5c36",
+      "old": "if d==4:continue",
+      "new": "if d==3:continue",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-priyk7gc/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-priyk7gc/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 101, in run\n    check('protected_vertex_paths_'+str(box),max(lengths)<=4,hops_checked=len(lengths),maximum_length=max(lengths))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-priyk7gc/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('protected_vertex_paths_(1, 3, 3)', {'hops_checked': 194, 'maximum_length': 99})\n"
+    },
+    {
+      "name": "connection_quadratic",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "3fef7117b75796a886f1cb7bb957be8e91cd7d527c50030b64fc0b44e2dd65e2",
+      "old": "for a,b,c,j in product(range(3),repeat=4))/4",
+      "new": "for a,b,c,j in product(range(3),repeat=4))/8",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ou15e3la/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ou15e3la/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 117, in run\n    eq('connection_quadratic_term_generic',s.expand(cc).coeff(t,2),c2)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ou15e3la/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ou15e3la/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('connection_quadratic_term_generic', {})\n"
+    },
+    {
+      "name": "koszul_sign",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "04f07a2ee85ff14306b149ba3c2f788bf946f15d8039c24e08a25076b5c0d477",
+      "old": "structure[a,c,b]-structure[c,b,a]+structure[b,a,c]",
+      "new": "structure[a,c,b]+structure[c,b,a]+structure[b,a,c]",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8qqgok07/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8qqgok07/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 130, in run\n    eq('Koszul_axial_contraction',sum(s.LeviCivita(a,b,c)*omega[a,b,c]\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                    for a,b,c in product(range(3),repeat=3)),-axial/2)\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8qqgok07/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8qqgok07/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Koszul_axial_contraction', {})\n"
+    },
+    {
+      "name": "geometric_scalar",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "817d1e99fa351b5d2035be40cf1b065a6d751e61af22d5ba0fa15e6d8b462352",
+      "old": "spin,vector-axial*s.eye(2)/8",
+      "new": "spin,vector+axial*s.eye(2)/8",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-s6c2hgsd/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-s6c2hgsd/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 135, in run\n    eq('geometric_scalar_and_vector_parts',spin,vector+axial*s.eye(2)/8)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-s6c2hgsd/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-s6c2hgsd/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('geometric_scalar_and_vector_parts', {})\n"
+    },
+    {
+      "name": "native_nodes",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "fd1cd9d0e756cfca86ebe3f72335b36e998ed08ea0fccff8a7597999b3c29d04",
+      "old": "2+zeta_s-s.cos(kx)",
+      "new": "2-zeta_s-s.cos(kx)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-vsebszkt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-vsebszkt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 147, in run\n    eq('native_zero_'+str(sign),native.subs(sub),s.zeros(3,1))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-vsebszkt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-vsebszkt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_zero_-1', {})\n"
+    },
+    {
+      "name": "frame_jet",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "05c1a47fa2217aac39c8b89e36d32bf2dc426d998e7333d87e78876c431741f6",
+      "old": "s.sin(kz)*s.sin(ky)/v_s,b_s/v_s",
+      "new": "s.sin(kz)*s.sin(ky)/v_s,b_s*v_s",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ex52e6li/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ex52e6li/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 152, in run\n    eq('frame_vertex_jet_'+str((sign,j)),vertices.diff(k).subs(sub),target)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ex52e6li/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ex52e6li/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('frame_vertex_jet_(-1, 2)', {})\n"
+    },
+    {
+      "name": "annulus_frequency",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "1cabb7463b3b6749eabfd3544c6b7ec94d20cca5253fb04cc43d3f546cb49456",
+      "old": "w*w*t*t+ss*ss",
+      "new": "2*w*w*t*t+ss*ss",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-b18720r8/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-b18720r8/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 170, in run\n    for i in range(3):eq('annulus_coefficient_'+str(i),coeff[i],proposed[i])\n                      ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-b18720r8/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-b18720r8/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('annulus_coefficient_0', {})\n"
+    },
+    {
+      "name": "sphere_moment",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "7faf768270b826ac960f29ace934a4c7b86047fc18d7e7e9f42d9f49605e3082",
+      "old": "s.factorial2(sum(powers)+1)",
+      "new": "s.factorial2(sum(powers)+3)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-p913l4pg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-p913l4pg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 181, in run\n    eq('all_symmetric_polarizations_all_frequency_ratios',mean,tensor/80)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-p913l4pg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-p913l4pg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('all_symmetric_polarizations_all_frequency_ratios', {})\n"
+    },
+    {
+      "name": "stress_trace",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "66cadfeaf249c9e5040c97c23bdd53dd16993f1b7ab4f925c82e18d5aae654db",
+      "old": "tensor=s.trace(R*A4*R*B4)-s.trace(R*A4)*s.trace(R*B4)/3",
+      "new": "tensor=s.trace(R*A4*R*B4)-s.trace(R*A4)*s.trace(R*B4)/2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-nezzopc6/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-nezzopc6/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 181, in run\n    eq('all_symmetric_polarizations_all_frequency_ratios',mean,tensor/80)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-nezzopc6/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-nezzopc6/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('all_symmetric_polarizations_all_frequency_ratios', {})\n"
+    },
+    {
+      "name": "node_multiplicity",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "4ec46e858a770ff1fbe873fed64301471d7e8c542905fe1e8f0b688832fa2ca1",
+      "old": "2*4*s.pi/((2*s.pi)**3*80*vel)",
+      "new": "4*s.pi/((2*s.pi)**3*80*vel)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ssp9q0vy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ssp9q0vy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 184, in run\n    eq('two_node_measure_coefficient',4*s.pi/((2*s.pi)**3*80*vel),1/(80*s.pi*s.pi*vel))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ssp9q0vy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ssp9q0vy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('two_node_measure_coefficient', {})\n"
+    },
+    {
+      "name": "dirac_normalization",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "bed42b09af5ff93d8be62db0eea2f1329ed029bb565ae3954d1733d49858fe42",
+      "old": "2/s.pi**4/320*s.pi**2*2",
+      "new": "2/s.pi**4/160*s.pi**2*2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-0zr_1fcy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-0zr_1fcy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 185, in run\n    eq('Dirac_primary_source_normalization',2/s.pi**4/160*s.pi**2*2,1/(80*s.pi**2))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-0zr_1fcy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-0zr_1fcy/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Dirac_primary_source_normalization', {})\n"
+    },
+    {
+      "name": "ellipsoid_fourth_moment",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "f333b2ce625841b359f0afd7c7606541044bf597e2cfd62c6f3213d06283b56e",
+      "old": "shell4=-(s.trace(A*L)*s.trace(B*L)+2*s.trace(A*L*B*L))/120",
+      "new": "shell4=-(s.trace(A*L)*s.trace(B*L)+2*s.trace(A*L*B*L))/60",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-33upfzva/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-33upfzva/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 193, in run\n    eq('ellipsoid_fourth_moment_contraction',shell2+shell4,shelltensor/40)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-33upfzva/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-33upfzva/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('ellipsoid_fourth_moment_contraction', {})\n"
+    },
+    {
+      "name": "ellipsoid_measure",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "470dcf89d204ef8e947ccba602b40c7b2c9d5ad17f6a21a3b23105e3f6e0e1f4",
+      "old": "2*4*s.pi/(4*(2*s.pi)**3*40)",
+      "new": "2*4*s.pi/(8*(2*s.pi)**3*40)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-316cljmr/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-316cljmr/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 194, in run\n    eq('ellipsoid_measure_two_nodes',2*4*s.pi/(8*(2*s.pi)**3*40),1/(160*s.pi**2))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-316cljmr/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-316cljmr/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('ellipsoid_measure_two_nodes', {})\n"
+    },
+    {
+      "name": "dispersion_division",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "8bcc000a4126a53a8abb3bd4c19176ea3bad00cc21961a3dc2fc49e10afd0c3b",
+      "old": "(xx+ww)*(aa*xx+bb-aa*ww)",
+      "new": "(xx+ww)*(aa*xx+bb+aa*ww)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-1c25ybdd/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-1c25ybdd/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 198, in run\n    eq('dispersion_polynomial_division',pp,(xx+ww)*(aa*xx+bb+aa*ww)+pp.subs(xx,-ww))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-1c25ybdd/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-1c25ybdd/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('dispersion_polynomial_division', {})\n"
+    },
+    {
+      "name": "fierz_pauli_divergence",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "201afe7c2b227423b9c1cca32d78767f9da2ce868bce178f16beff2baf7263d9",
+      "old": "qq*qq*s.trace(A*B)-2*(A*Q).dot(B*Q)",
+      "new": "qq*qq*s.trace(A*B)-(A*Q).dot(B*Q)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-rjunwola/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-rjunwola/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 202, in run\n    eq('spatial_Fierz_Pauli_tensor',fp,qq*qq*(s.trace(P3*A*P3*B)-s.trace(P3*A)*s.trace(P3*B)))\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-rjunwola/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-rjunwola/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('spatial_Fierz_Pauli_tensor', {})\n"
+    },
+    {
+      "name": "finite_contact_scale",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "8a5ed480160e855c4af994681b62323c316bd841f6c707e0d86b3bec581d3939",
+      "old": "8*cR*s.sin(space*qq/2)**2/space**2",
+      "new": "4*cR*s.sin(space*qq/2)**2/space**2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-r4daa0fx/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-r4daa0fx/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 204, in run\n    eq('finite_physical_gradient_contact_limit',s.limit(4*cR*s.sin(space*qq/2)**2/space**2,space,0),2*cR*qq*qq)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-r4daa0fx/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-r4daa0fx/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_physical_gradient_contact_limit', {})\n"
+    },
+    {
+      "name": "one_particle_scale",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "ec630e5e121e165fd191ccf4969befb1a79b02f25bb6c291d60dab339f1023ca",
+      "old": "s.limit(space**3*cR*qq*qq,space,0)",
+      "new": "s.limit(cR*qq*qq,space,0)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-tx7r4iyt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-tx7r4iyt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 205, in run\n    eq('vanishing_one_particle_contact_bound',s.limit(cR*qq*qq,space,0),0)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-tx7r4iyt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-tx7r4iyt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('vanishing_one_particle_contact_bound', {})\n"
+    },
+    {
+      "name": "pair_shell",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "5e402fcbae9edb06da3044924e1b6085a291be5a631d45039ea68dfbfe828da9",
+      "old": "p=sphere@root.T/2;pm=p-Q/2",
+      "new": "p=sphere@root.T/3;pm=p-Q/2",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-i1ozh994/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-i1ozh994/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 226, in run\n    near('pair_shell_energy_'+str((Q.tolist(),Omega)),em+ep,Omega)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-i1ozh994/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-i1ozh994/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('pair_shell_energy_([0.0, 0.0, 0.3], np.float64(0.37))', {'max_residual': 0.06530756946707916, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "spectral_density",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "8a3822e034074f4d3d799be93d6dac48308051d383c291227788137ca3bb6f98",
+      "old": "np.dot(weights,J*em*ep)/(4*np.pi**2)",
+      "new": "np.dot(weights,J*em*ep)/(8*np.pi**2)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4zz69eje/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4zz69eje/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 235, in run\n    near('full_shell_projector_density_'+str((Q.tolist(),Omega)),actual,target)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4zz69eje/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4zz69eje/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('full_shell_projector_density_([0.0, 0.0, 0.3], np.float64(0.37))', {'max_residual': 3.956087726173068e-06, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "twisted_boundary",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "ed0b32e78545feed11aaa22305cfdc3dbcdb5ae4bbb2d42b7629d5f394fa0789",
+      "old": "np.exp(2j*np.pi*twist[j]) if",
+      "new": "np.exp(1j*np.pi*twist[j]) if",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4tgm83ty/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4tgm83ty/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 253, in run\n    for j in range(3):near('shift_symbol_'+str(j),shifts[j]@plane,plane*np.exp(1j*moms[:,j]))\n                      ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4tgm83ty/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4tgm83ty/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('shift_symbol_0', {'max_residual': 0.05513629102625654, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "native_finite_vertex",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "1847dbbd75a735ea0966346816d7e1e85e837bfbc9d63607d7cb0f50a2474e91",
+      "old": "vertices[:,2,2]=bb/vel",
+      "new": "vertices[:,2,2]=bb*vel",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-fmn40li6/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-fmn40li6/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 305, in run\n    near('full_seven_source_position_response_'+str((zeta,qn,omega)),poschi,factor*momchi)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-fmn40li6/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-fmn40li6/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('full_seven_source_position_response_(0.5, (0, 0, 0), 0.0)', {'max_residual': 0.017715746941376186, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "finite_frequency",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "4ef8237ab9c283cf03188343b2d82854d145438ba3b9bbfc2e114932d2fe9840",
+      "old": "momchi[a,b]=-np.mean(gap*jj/(gap*gap+omega*omega))",
+      "new": "momchi[a,b]=-np.mean(gap*jj/(gap*gap+4*omega*omega))",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-n8iirqb5/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-n8iirqb5/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 305, in run\n    near('full_seven_source_position_response_'+str((zeta,qn,omega)),poschi,factor*momchi)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-n8iirqb5/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-n8iirqb5/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('full_seven_source_position_response_(0.5, (0, 0, 0), 0.47)', {'max_residual': 0.006825550826511734, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "mixed_lapse_contact",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "8e9c6d86a1cb76c3cac679b8a1d990875a35e1035d9f54ba3ea8b81060b3c2fd",
+      "old": "contact_mom.append(-np.mean(np.sum(nm*vec,axis=1))/4)",
+      "new": "contact_mom.append(-np.mean(np.sum(nm*vec,axis=1))/8)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-o5w_0ru9/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-o5w_0ru9/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 316, in run\n    near('joint_lapse_frame_mixed_contacts_'+str((zeta,qn)),contact_pos,factor*np.array(contact_mom))\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-o5w_0ru9/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-o5w_0ru9/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('joint_lapse_frame_mixed_contacts_(0.5, (0, 0, 0))', {'max_residual': 0.24893560104239376, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "joint_hamiltonian_contact",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "bd15a29cd2b89428baccba392fd83e6105b620cb3e142af8cce0cb77e8eb13cb",
+      "old": "+sum(aa[j]*pos[j] for j in range(6))@Phi)/2",
+      "new": "+sum(aa[j]*pos[j] for j in range(6))@Phi)/3",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ti67cuwg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ti67cuwg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 327, in run\n    near('joint_contact_from_mixed_hessian_'+str(zeta),2*np.trace(pminus@joint2).real/vol,\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n         2*aa[6]*np.dot(aa[:6],contact_pos))\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ti67cuwg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ti67cuwg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('joint_contact_from_mixed_hessian_0.5', {'max_residual': 0.0061440416558408185, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "native_density_contact",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "c6a5cef221ca5c0b6fff5afa01882abe90556919bf131a7599e1cf5e4f7301d9",
+      "old": "onsite=np.diag(np.repeat(coef*diff,2))",
+      "new": "onsite=np.diag(np.repeat(coef*diff/2,2))",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-7gd83j2z/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-7gd83j2z/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 339, in run\n    near('on_site_contact_exact_'+str(zeta),contact,coef*dc.sum())\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-7gd83j2z/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-7gd83j2z/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('on_site_contact_exact_0.5', {'max_residual': 0.6256637120812691, 'tolerance': 2e-11})\n"
+    },
+    {
+      "name": "geometric_mixed_contact",
+      "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+      "mutated_sha256": "fb4365229100a1ad554b350a52e420471cb54fc6389d834360e8dd0c0e1af0be",
+      "old": "C2=-vel*qz/4*np.ones(vol)",
+      "new": "C2=vel*qz/4*np.ones(vol)",
+      "returncode": 1,
+      "effective": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8msxl6gh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8msxl6gh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 358, in run\n    check('geometric_contact_quadratic_limit_'+str((zeta,eps)),err<eps*vel*qz,\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          normalized_error=float(err))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8msxl6gh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('geometric_contact_quadratic_limit_(0.5, 0.03)', {'normalized_error': 0.5509962232336936})\n"
+    }
+  ]
+}

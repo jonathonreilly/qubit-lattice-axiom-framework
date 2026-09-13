@@ -1,0 +1,10 @@
+{
+  "name": "finite_frequency",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "4ef8237ab9c283cf03188343b2d82854d145438ba3b9bbfc2e114932d2fe9840",
+  "old": "momchi[a,b]=-np.mean(gap*jj/(gap*gap+omega*omega))",
+  "new": "momchi[a,b]=-np.mean(gap*jj/(gap*gap+4*omega*omega))",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-n8iirqb5/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-n8iirqb5/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 305, in run\n    near('full_seven_source_position_response_'+str((zeta,qn,omega)),poschi,factor*momchi)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-n8iirqb5/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-n8iirqb5/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('full_seven_source_position_response_(0.5, (0, 0, 0), 0.47)', {'max_residual': 0.006825550826511734, 'tolerance': 2e-11})\n"
+}

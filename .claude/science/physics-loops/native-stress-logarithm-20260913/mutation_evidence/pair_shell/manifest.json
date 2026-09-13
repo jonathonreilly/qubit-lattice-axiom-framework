@@ -1,0 +1,10 @@
+{
+  "name": "pair_shell",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "5e402fcbae9edb06da3044924e1b6085a291be5a631d45039ea68dfbfe828da9",
+  "old": "p=sphere@root.T/2;pm=p-Q/2",
+  "new": "p=sphere@root.T/3;pm=p-Q/2",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-i1ozh994/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-i1ozh994/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 226, in run\n    near('pair_shell_energy_'+str((Q.tolist(),Omega)),em+ep,Omega)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-i1ozh994/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-i1ozh994/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('pair_shell_energy_([0.0, 0.0, 0.3], np.float64(0.37))', {'max_residual': 0.06530756946707916, 'tolerance': 2e-11})\n"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "one_particle_scale",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "ec630e5e121e165fd191ccf4969befb1a79b02f25bb6c291d60dab339f1023ca",
+  "old": "s.limit(space**3*cR*qq*qq,space,0)",
+  "new": "s.limit(cR*qq*qq,space,0)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-tx7r4iyt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-tx7r4iyt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 205, in run\n    eq('vanishing_one_particle_contact_bound',s.limit(cR*qq*qq,space,0),0)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-tx7r4iyt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-tx7r4iyt/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('vanishing_one_particle_contact_bound', {})\n"
+}

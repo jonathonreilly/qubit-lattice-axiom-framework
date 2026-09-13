@@ -1,0 +1,10 @@
+{
+  "name": "joint_hamiltonian_contact",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "bd15a29cd2b89428baccba392fd83e6105b620cb3e142af8cce0cb77e8eb13cb",
+  "old": "+sum(aa[j]*pos[j] for j in range(6))@Phi)/2",
+  "new": "+sum(aa[j]*pos[j] for j in range(6))@Phi)/3",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ti67cuwg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ti67cuwg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 327, in run\n    near('joint_contact_from_mixed_hessian_'+str(zeta),2*np.trace(pminus@joint2).real/vol,\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n         2*aa[6]*np.dot(aa[:6],contact_pos))\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ti67cuwg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ti67cuwg/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('joint_contact_from_mixed_hessian_0.5', {'max_residual': 0.0061440416558408185, 'tolerance': 2e-11})\n"
+}

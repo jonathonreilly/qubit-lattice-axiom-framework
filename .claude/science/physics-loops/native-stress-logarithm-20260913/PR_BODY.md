@@ -1,0 +1,9 @@
+The arithmetic lapse/common-frame source has a mixed contact that an affine stress calculation misses. This derives its seven-source even-frequency response, proves the uniform native infrared stress logarithm, and obtains the same coefficient from exact continuum two-particle phase space. An explicit native density-contact family preserves the flat spectrum and continuum matter operator while varying local spatial gradient vacuum coefficients.
+
+The Hamiltonian, free state, source prescription and time are supplied. This is conditional support, with no dynamical Einstein action, Newton normalization, axiom update or formal retention claim. It is self-contained on current main and does not require an unmerged sibling theorem.
+
+- [Theorem](docs/NATIVE_WEYL_STRESS_LOGARITHM_AND_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md)
+- [Primary](scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py) and [canonical cache](logs/runner-cache/native_weyl_stress_logarithm_contact_response_2026_09_13.txt)
+- [Trace](.claude/science/physics-loops/native-stress-logarithm-20260913/TRACE_GATE.md) and [review/handoff](.claude/science/physics-loops/native-stress-logarithm-20260913/HANDOFF.md)
+
+Validation: 133 author checks; 31 mathematical mutations fail by AssertionError, covering the algebra, node jets, angular coefficient, spectral density, finite source Hessian, geometry and contacts. Final canonical execution: 0.902 seconds with declared 60-second timeout and fresh source/input binding. Different analytical and implementation paths are recorded; the author knew the anticipated continuum tensor. Independent review remains pending. The integrated current-main candidate still needs the shared full pipeline, strict lint and changed-evidence landing checks. No author landing or audit verdict is requested. The bounded_theorem proposal requires the independent audit path before effective retained status.

@@ -1,0 +1,10 @@
+{
+  "name": "connection_quadratic",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "3fef7117b75796a886f1cb7bb957be8e91cd7d527c50030b64fc0b44e2dd65e2",
+  "old": "for a,b,c,j in product(range(3),repeat=4))/4",
+  "new": "for a,b,c,j in product(range(3),repeat=4))/8",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ou15e3la/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ou15e3la/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 117, in run\n    eq('connection_quadratic_term_generic',s.expand(cc).coeff(t,2),c2)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ou15e3la/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-ou15e3la/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('connection_quadratic_term_generic', {})\n"
+}

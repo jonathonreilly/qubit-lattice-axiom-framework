@@ -1,0 +1,10 @@
+{
+  "name": "pauli_imaginary",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "cb73620691da15def4e6606987b05c8e7c5de54e09165c255acff1e104e6d1bc",
+  "old": "-(n+m).dot(u.cross(vv))/2)",
+  "new": "-(n+m).dot(u.cross(vv))/3)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-96sze5w7/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-96sze5w7/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 45, in run\n    eq('Pauli_trace_imaginary_arbitrary_components',s.im(tr.expand()),-(n+m).dot(u.cross(vv))/3)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-96sze5w7/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-96sze5w7/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Pauli_trace_imaginary_arbitrary_components', {})\n"
+}

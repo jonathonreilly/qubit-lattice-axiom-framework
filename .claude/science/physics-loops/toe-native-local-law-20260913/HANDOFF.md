@@ -103,3 +103,23 @@ PR and pursue reciprocal native matter/geometry next. Read PR8085 at
 c63f5b991044328ad9b13223c8a25849aa0ef574 and current source notes before writing
 the next target contract. The shared carrier must be kept explicit; do not
 silently identify prior different scalar, Weyl, Regge or quantum-clock models.
+
+At15:46UTC BLOCK05 has completed author derivations of the actual native
+lapse source, all-momentum free response, uniform zero mode, quartic-log
+infrared coefficient with a uniform remainder, and global free congruence
+convexity. Arithmetic and geometric-mean lapse laws have the same first-order
+vertex but opposite free response signs; the contact difference is a local
+Laplacian. A supplied finite static functional has a unique positive-lapse
+solution under the stated small-source bound. These are conditional results,
+not physical gravity or axiom selection. Free, interacting finite, and exact
+canonical witness checkers are separate. The finite strong-attraction witness
+is certified by rational positive LDL and Rayleigh upper bounds; no numerical
+eigensolver is used in its verification. The current guard typo was found
+in cold review and repaired, with original source/output preserved.
+PR8090's completed worktree is ready for deletion under the owner's new disk
+instructions; HEAD and remote were verified equal, and its only three
+untracked artifacts are preserved in recovery/pr8090_checkout_removal.
+The active campaign stays here. At this checkpoint disk free space is131GiB;
+no further worktree may be spawned below20GiB. Do not touch archive or
+archive_unlanded and do not run git gc. Own lock now expires16:37:12UTC.
+Continue personally until00:14:41UTC, even after milestone delivery.

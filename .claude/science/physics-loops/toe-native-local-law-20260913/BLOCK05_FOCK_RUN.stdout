@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "checks": 85,
+  "finite_interacting_probes": [
+    {
+      "lambda": -20,
+      "gap": 0.004772271347352586,
+      "ground_number": 3.0000000000000004,
+      "chiA_direction": -165.50708249564977,
+      "chiC_direction": -163.28011704708646,
+      "bond_energy": [
+        -0.49488121079184844,
+        -0.4948812107918486
+      ]
+    },
+    {
+      "lambda": -5,
+      "gap": 0.3586389637321421,
+      "ground_number": 3.0000000000000058,
+      "chiA_direction": -0.19693139720445713,
+      "chiC_direction": 2.938675179337448,
+      "bond_energy": [
+        -0.6968014614537567,
+        -0.6968014614537565
+      ]
+    },
+    {
+      "lambda": -1,
+      "gap": 3.0060167613087714,
+      "ground_number": 3.000000000000006,
+      "chiA_direction": -0.03104004415352739,
+      "chiC_direction": 1.0805482992584245,
+      "bond_energy": [
+        -0.24701963186932266,
+        -0.24701963186932263
+      ]
+    },
+    {
+      "lambda": -0.2,
+      "gap": 3.5710895692964706,
+      "ground_number": 3.0000000000000013,
+      "chiA_direction": -0.018932311643851923,
+      "chiC_direction": 0.9161249118395545,
+      "bond_energy": [
+        -0.20779049410742367,
+        -0.20779049410742362
+      ]
+    },
+    {
+      "lambda": 0,
+      "gap": 3.696112800409912,
+      "ground_number": 3.000000000000001,
+      "chiA_direction": -0.016911017120212143,
+      "chiC_direction": 0.8820657670520266,
+      "bond_energy": [
+        -0.19977261870494198,
+        -0.19977261870494192
+      ]
+    },
+    {
+      "lambda": 0.2,
+      "gap": 3.812957712220973,
+      "ground_number": 2.999999999999996,
+      "chiA_direction": -0.015164638660934551,
+      "chiC_direction": 0.8503083124014736,
+      "bond_energy": [
+        -0.19232732245831297,
+        -0.1923273224583129
+      ]
+    },
+    {
+      "lambda": 1,
+      "gap": 4.190479242437149,
+      "ground_number": 3.0000000000000036,
+      "chiA_direction": -0.010158817242429969,
+      "chiC_direction": 0.7424131285733181,
+      "bond_energy": [
+        -0.16723821018127735,
+        -0.1672382101812773
+      ]
+    },
+    {
+      "lambda": 5,
+      "gap": 4.788442633908032,
+      "ground_number": 2.999999999999998,
+      "chiA_direction": -0.0024308736902465817,
+      "chiC_direction": 0.4505335242018287,
+      "bond_energy": [
+        -0.1006587550871278,
+        -0.10065875508712788
+      ]
+    },
+    {
+      "lambda": 20,
+      "gap": 4.957142916675949,
+      "ground_number": 2.9999999999999996,
+      "chiA_direction": -0.00019878195517779537,
+      "chiC_direction": 0.1804734040443439,
+      "bond_energy": [
+        -0.040149374666560364,
+        -0.040149374666560385
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.4273478339891881,
+  "source_sha256": "1de9830a439e8e828714facb42804bbef8e0c09d5b3e3b908079f448aba011aa",
+  "scope": "Finite three-cell, three-particle-sector author checks; large couplings are outside any claimed Weyl RG interval. No interacting thermodynamic convexity, infrared coefficient or quantum gravity claimed."
+}

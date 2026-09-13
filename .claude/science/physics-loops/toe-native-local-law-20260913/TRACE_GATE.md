@@ -18,3 +18,11 @@ errors; the infrared limit follows only after region convergence.
 This reduces the common-carrier compatibility question. It does not select
 the Hamiltonian, Born rule, state or formation controls from the axioms, or
 supply a dynamical photon or gravity. Independent review remains pending.
+
+BLOCK05 adds upstream support for the current-main vacuum-response note's
+open full susceptibility action and physical source interface. It replaces
+axial fitting with an all-momentum derivation for the specified native Weyl
+model and identifies second-order contact data that first-order source
+matching leaves undetermined. The free mathematical subtarget is met at
+author level. Physical lapse selection, interacting stress response and a
+full dynamical metric coupling remain unproved; no direct TOE closure.

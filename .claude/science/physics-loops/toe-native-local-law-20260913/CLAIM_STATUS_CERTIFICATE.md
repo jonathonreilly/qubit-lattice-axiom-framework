@@ -16,3 +16,12 @@ certificate. Proof and finite author checks remain proposals.
 
 Earlier BLOCK01 finite informative relay and BLOCK02 free matching spectrum
 remain branch-local proposals; no new retained status is assigned to them.
+
+BLOCK05 target_claim_type: bounded_theorem; actual current surface status:
+conditional-support. The mathematical claims are finite variational source
+identities, free all-momentum response, an analytical thermodynamic IR
+asymptotic, free congruence convexity and a finite static existence theorem.
+An exact strong-interaction canonical midpoint witness is an existence
+statement in one declared sector. Selected lapse/geometry/Hamiltonian/state
+inputs remain explicit; no interacting IR extrapolation or axiom wall.
+Author proof/checks completed; independent review and formal audit pending.

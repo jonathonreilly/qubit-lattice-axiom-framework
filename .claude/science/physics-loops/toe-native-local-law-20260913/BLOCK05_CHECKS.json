@@ -1,0 +1,666 @@
+{
+  "status": "PASS",
+  "checks": 91,
+  "details": [
+    {
+      "name": "exact_interband_energy_vertex"
+    },
+    {
+      "name": "exact_overlap"
+    },
+    {
+      "name": "exact_congruence_sign_after_contact"
+    },
+    {
+      "name": "first_bond_derivatives_equal"
+    },
+    {
+      "name": "geometric_contact_derivative"
+    },
+    {
+      "name": "exact_cone_fourth_order"
+    },
+    {
+      "name": "angular_log_coefficient"
+    },
+    {
+      "name": "independent_prolate_integrand"
+    },
+    {
+      "name": "square_integral_bound"
+    },
+    {
+      "name": "finite_band_gap",
+      "gap": 0.49999999999999906
+    },
+    {
+      "name": "filled_negative_count"
+    },
+    {
+      "name": "cell_energy_vs_variation_0",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_1",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_2",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_3",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_4",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_5",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_6",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_7",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_8",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_9",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_10",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_11",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_12",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_13",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_14",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_15",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_16",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_17",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_18",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_19",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_20",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_21",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_22",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_23",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_24",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_25",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_vs_variation_26",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "cell_energy_sum",
+      "max_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "full_contact_identity",
+      "max_residual": 3.885780586188048e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "arithmetic_uniform_null",
+      "max_residual": 1.5959455978986625e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "congruence_uniform_null",
+      "max_residual": 3.2612801348363973e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "arithmetic_negative_semidefinite"
+    },
+    {
+      "name": "congruence_positive_semidefinite"
+    },
+    {
+      "name": "translated_bond_means_0",
+      "max_residual": 4.996003610813204e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "translated_bond_means_1",
+      "max_residual": 7.216449660063518e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "translated_bond_means_2",
+      "max_residual": 2.3592239273284576e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "finite_global_bound_0"
+    },
+    {
+      "name": "finite_global_bound_1"
+    },
+    {
+      "name": "finite_global_bound_2"
+    },
+    {
+      "name": "finite_global_bound_3"
+    },
+    {
+      "name": "finite_global_bound_4"
+    },
+    {
+      "name": "finite_global_bound_5"
+    },
+    {
+      "name": "finite_global_bound_6"
+    },
+    {
+      "name": "finite_global_bound_7"
+    },
+    {
+      "name": "finite_global_bound_8"
+    },
+    {
+      "name": "finite_global_bound_9"
+    },
+    {
+      "name": "finite_global_bound_10"
+    },
+    {
+      "name": "finite_global_bound_11"
+    },
+    {
+      "name": "finite_global_bound_12"
+    },
+    {
+      "name": "finite_global_bound_13"
+    },
+    {
+      "name": "finite_global_bound_14"
+    },
+    {
+      "name": "finite_global_bound_15"
+    },
+    {
+      "name": "finite_global_bound_16"
+    },
+    {
+      "name": "finite_global_bound_17"
+    },
+    {
+      "name": "finite_global_bound_18"
+    },
+    {
+      "name": "finite_global_bound_19"
+    },
+    {
+      "name": "finite_global_bound_20"
+    },
+    {
+      "name": "finite_global_bound_21"
+    },
+    {
+      "name": "finite_global_bound_22"
+    },
+    {
+      "name": "finite_global_bound_23"
+    },
+    {
+      "name": "finite_global_bound_24"
+    },
+    {
+      "name": "finite_global_bound_25"
+    },
+    {
+      "name": "finite_global_bound_26"
+    },
+    {
+      "name": "all_momentum_arithmetic_vs_position_Hessian",
+      "max_residual": 8.336956254519375e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "all_momentum_congruence_vs_position_Hessian",
+      "max_residual": 1.66554981563918e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "all_Bloch_blocks_vs_stencil",
+      "max_residual": 1.7763777650215196e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "actual_energy_second_derivative_A",
+      "max_residual": 3.903224743417866e-09,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "actual_energy_second_derivative_C",
+      "max_residual": 1.2142313821073003e-09,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "global_curvature_challenge_A",
+      "chord_residual": 0.010335277973496204
+    },
+    {
+      "name": "global_curvature_challenge_C",
+      "chord_residual": -0.031121951849996776
+    },
+    {
+      "name": "geometric_mean_is_congruence",
+      "max_residual": 8.881784197001252e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "congruence_inertia_preserved"
+    },
+    {
+      "name": "congruence_gap_bound"
+    },
+    {
+      "name": "fidelity_energy_identity",
+      "max_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "uniform_source_not_energy_readout",
+      "max_residual": 3.1086244689504383e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "uniform_readout_changes"
+    },
+    {
+      "name": "finite_existence_hypothesis"
+    },
+    {
+      "name": "finite_reciprocal_stationary_solution",
+      "gradient_max": 5.473105980957822e-11,
+      "iterations": 1,
+      "solver_success": true
+    },
+    {
+      "name": "finite_solution_bound"
+    },
+    {
+      "name": "finite_solution_nonzero"
+    }
+  ],
+  "elapsed_seconds": 0.506729541986715,
+  "source_sha256": "4c65dd1e18aaebceb65f0b6f68f39fe594952a5bd4dac4b196ffc250c50553eb",
+  "momentum_rows": [
+    {
+      "q_over_2pi": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "chiA": -0.0,
+      "chiC": 4.58808271511076e-17,
+      "laplacian": 0.0
+    },
+    {
+      "q_over_2pi": [
+        0.0,
+        0.0,
+        0.3333333333333333
+      ],
+      "chiA": -0.008766650137149497,
+      "chiC": 0.0742487514004343,
+      "laplacian": 2.9999999999999996
+    },
+    {
+      "q_over_2pi": [
+        0.0,
+        0.0,
+        0.6666666666666666
+      ],
+      "chiA": -0.008766650137149497,
+      "chiC": 0.07424875140043428,
+      "laplacian": 3.0000000000000004
+    },
+    {
+      "q_over_2pi": [
+        0.0,
+        0.3333333333333333,
+        0.0
+      ],
+      "chiA": -0.016593286526547485,
+      "chiC": 0.17103799793152202,
+      "laplacian": 2.9999999999999996
+    },
+    {
+      "q_over_2pi": [
+        0.0,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "chiA": -0.06740231012265892,
+      "chiC": 0.20324437587299438,
+      "laplacian": 5.999999999999999
+    },
+    {
+      "q_over_2pi": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "chiA": -0.0674023101226589,
+      "chiC": 0.20324437587299435,
+      "laplacian": 6.0
+    },
+    {
+      "q_over_2pi": [
+        0.0,
+        0.6666666666666666,
+        0.0
+      ],
+      "chiA": -0.01659328652654749,
+      "chiC": 0.17103799793152208,
+      "laplacian": 3.0000000000000004
+    },
+    {
+      "q_over_2pi": [
+        0.0,
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "chiA": -0.0674023101226589,
+      "chiC": 0.20324437587299446,
+      "laplacian": 6.0
+    },
+    {
+      "q_over_2pi": [
+        0.0,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "chiA": -0.0674023101226589,
+      "chiC": 0.20324437587299446,
+      "laplacian": 6.000000000000001
+    },
+    {
+      "q_over_2pi": [
+        0.3333333333333333,
+        0.0,
+        0.0
+      ],
+      "chiA": -0.016593286526547485,
+      "chiC": 0.171037997931522,
+      "laplacian": 2.9999999999999996
+    },
+    {
+      "q_over_2pi": [
+        0.3333333333333333,
+        0.0,
+        0.3333333333333333
+      ],
+      "chiA": -0.06740231012265892,
+      "chiC": 0.20324437587299435,
+      "laplacian": 5.999999999999999
+    },
+    {
+      "q_over_2pi": [
+        0.3333333333333333,
+        0.0,
+        0.6666666666666666
+      ],
+      "chiA": -0.0674023101226589,
+      "chiC": 0.20324437587299435,
+      "laplacian": 6.0
+    },
+    {
+      "q_over_2pi": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.0
+      ],
+      "chiA": -0.07331755915230637,
+      "chiC": 0.30194500976383265,
+      "laplacian": 5.999999999999999
+    },
+    {
+      "q_over_2pi": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "chiA": -0.13903942914687167,
+      "chiC": 0.3192385413068511,
+      "laplacian": 8.999999999999998
+    },
+    {
+      "q_over_2pi": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "chiA": -0.13903942914687167,
+      "chiC": 0.31923854130685114,
+      "laplacian": 9.0
+    },
+    {
+      "q_over_2pi": [
+        0.3333333333333333,
+        0.6666666666666666,
+        0.0
+      ],
+      "chiA": -0.07331755915230638,
+      "chiC": 0.3019450097638327,
+      "laplacian": 6.0
+    },
+    {
+      "q_over_2pi": [
+        0.3333333333333333,
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "chiA": -0.13903942914687167,
+      "chiC": 0.3192385413068512,
+      "laplacian": 9.0
+    },
+    {
+      "q_over_2pi": [
+        0.3333333333333333,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "chiA": -0.13903942914687167,
+      "chiC": 0.3192385413068512,
+      "laplacian": 9.0
+    },
+    {
+      "q_over_2pi": [
+        0.6666666666666666,
+        0.0,
+        0.0
+      ],
+      "chiA": -0.016593286526547495,
+      "chiC": 0.17103799793152208,
+      "laplacian": 3.0000000000000004
+    },
+    {
+      "q_over_2pi": [
+        0.6666666666666666,
+        0.0,
+        0.3333333333333333
+      ],
+      "chiA": -0.06740231012265892,
+      "chiC": 0.20324437587299446,
+      "laplacian": 6.0
+    },
+    {
+      "q_over_2pi": [
+        0.6666666666666666,
+        0.0,
+        0.6666666666666666
+      ],
+      "chiA": -0.06740231012265892,
+      "chiC": 0.20324437587299446,
+      "laplacian": 6.000000000000001
+    },
+    {
+      "q_over_2pi": [
+        0.6666666666666666,
+        0.3333333333333333,
+        0.0
+      ],
+      "chiA": -0.0733175591523064,
+      "chiC": 0.3019450097638327,
+      "laplacian": 6.0
+    },
+    {
+      "q_over_2pi": [
+        0.6666666666666666,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "chiA": -0.13903942914687167,
+      "chiC": 0.3192385413068512,
+      "laplacian": 9.0
+    },
+    {
+      "q_over_2pi": [
+        0.6666666666666666,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "chiA": -0.13903942914687167,
+      "chiC": 0.3192385413068512,
+      "laplacian": 9.0
+    },
+    {
+      "q_over_2pi": [
+        0.6666666666666666,
+        0.6666666666666666,
+        0.0
+      ],
+      "chiA": -0.07331755915230638,
+      "chiC": 0.30194500976383276,
+      "laplacian": 6.000000000000001
+    },
+    {
+      "q_over_2pi": [
+        0.6666666666666666,
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "chiA": -0.1390394291468717,
+      "chiC": 0.31923854130685114,
+      "laplacian": 9.0
+    },
+    {
+      "q_over_2pi": [
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "chiA": -0.1390394291468717,
+      "chiC": 0.3192385413068513,
+      "laplacian": 9.000000000000002
+    }
+  ],
+  "curvature": {
+    "A": {
+      "finite_difference": -0.6819722624971679,
+      "spectral": -0.6819722585939432
+    },
+    "C": {
+      "finite_difference": 2.015048409678802,
+      "spectral": 2.015048408464571
+    }
+  },
+  "bond_means": [
+    -0.2501750459440926,
+    -0.2501750459440926,
+    -0.1106872020501117
+  ],
+  "I1_finite": 0.49617184293692085,
+  "static_solution": {
+    "norm": 0.0024470669472923716,
+    "min_lapse": 0.9998667985469489,
+    "objective": -8.99109857454854e-06,
+    "gradient_max": 5.473105980957822e-11
+  },
+  "scope": "Finite free author challenges. Interacting finite Kato and code checks still separate. IR and convexity are analytical proofs, not proved by these finite cases."
+}

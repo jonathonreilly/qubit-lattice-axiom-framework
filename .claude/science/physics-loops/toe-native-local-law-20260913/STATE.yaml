@@ -14,7 +14,7 @@ delivery: milestone
 checkpoint_interval_minutes: 30
 campaign: reciprocal_native_matter_geometry
 block: 5
-active_route: source_review_and_variational_contract
+active_route: exact_response_contact_term_milestone_review
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
@@ -22,7 +22,7 @@ continuation_automation: toe-derivation-campaign-continuation
 continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-lock_expires_utc: 2026-09-13T15:46:39Z
-next_action: Read pinned Regge PR8085 and current native matter/geometry source notes, identify one genuinely missing reciprocal variation or constraint, and write BLOCK05_GOAL before deriving it.
+lock_expires_utc: 2026-09-13T16:37:12Z
+next_action: Complete cold review and a self-contained source-response milestone; retain exact interacting midpoint witness; then rerank next TOE campaign. Remove completed PR worktrees after all science is durable; preflight requires at least 20 GiB free.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.
-last_checkpoint_utc: 2026-09-13T14:48:00Z
+last_checkpoint_utc: 2026-09-13T15:46:00Z

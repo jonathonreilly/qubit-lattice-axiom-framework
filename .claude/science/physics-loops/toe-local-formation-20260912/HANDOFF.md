@@ -400,3 +400,41 @@ coarse lower bound, plus the Block14 independent finite checks. Preserve all
 parent input closure and author/independent-review boundaries; then update
 PR8086 title/body around the complete final unit. Do not create a redundant
 source PR unless scope requires it. Continue personally to11:38:24UTC.
+
+
+## Spectral milestone and Block15, 2026-09-13 around08:30UTC
+
+PR8086 is updated and pushed at7b03ad8d4b160c002f0a0c9bedeba10f8eab02c7.
+It now contains the original unchanged scalar unit plus the new complete
+infrared spectral theorem. New primary34 checks pass in0.65s, ten actual
+mutants fail, both caches fresh, all24 changed Python sources compile,
+helper/input/link and topology checks pass, full branch whitespace clean.
+The manifest adds one node/one parent relative to the earlier PR head.
+Original packaging variable collision and actual failure are preserved.
+No independent review, audit or source-author landing.
+
+Next target is BLOCK15_WORKING_PLAN: a norm approximation of the ACTUAL
+nonlinear star operator by its linear part on all sufficiently low-energy
+inputs, using a high/low Fock split and analytic parity expansion. The simple
+quadratic hybridization spectrum is already in the original star source and
+will not be repackaged as new progress. The source's high-energy nonlinear
+counterexample remains valid. No agents; continue until11:38:24UTC.
+
+
+Block15 around08:43UTC: the complete low/high operator proof and cold author
+review are written. Final32 checks pass, including a separate exact positive
+Neumann-tail bound and a seven-mode graded CAR comparator with a three-soft-
+particle input. The actual double-compressed star obeys
+||P_E(O(zeta)-alpha gamma0)P_E||<=h^-2 t(E)[(4C+47520pi)E/h+2B t(E)^2],
+B2030043136,C1117440,t²=v(E)<=pi(E/h)^3/48. For|zeta|<=E and E/h<=2^-21
+the relative bound is below1/2 (coarse0.314652). This is an O(E^(5/2))
+operator remainder against an E^(3/2) leading norm, over all low-energy
+particle numbers. BOTH sides are energy projected; high-energy leakage and
+extensive interacting ground-state control remain open. The filled-state
+global nonlinearity counterexample is not contradicted. No agents or failed
+mathematical predicates. Source hashes are in BLOCK15_SOURCE_MANIFEST.json.
+
+Next consider adding this tightly connected final operator theorem to the
+existing PR8086 unit. Keep its old scalar and spectral sources/cache bindings
+unchanged and the new source parent explicit. Then return to the remaining
+axiom-facing process/physical-state gap. Deadline11:38:24UTC.

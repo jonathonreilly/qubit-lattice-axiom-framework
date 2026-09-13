@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "count": 32,
+  "checks": [
+    {
+      "name": "high_gap_after_real_parameter"
+    },
+    {
+      "name": "complex_disk_inverse_bound"
+    },
+    {
+      "name": "Cauchy_and_telescoping_constants"
+    },
+    {
+      "name": "independent_Neumann_odd_tail",
+      "rational": "1622982593539803709440/16028065902833",
+      "decimal": 101258792.13242675
+    },
+    {
+      "name": "window_meets_low_cutoff_and_zeta_conditions"
+    },
+    {
+      "name": "uniform_relative_half_bound",
+      "rational": "14530459168373/6597069766656",
+      "decimal": 2.202562604660519,
+      "relative_upper": 0.3146518006657884
+    },
+    {
+      "name": "graded_low_high_CAR",
+      "maximum": 0.0
+    },
+    {
+      "name": "orthonormal_center_and_six_legs",
+      "error": 8.136001259696808e-16
+    },
+    {
+      "name": "center_neighbors_separate_under_cutoff",
+      "error": 0.0
+    },
+    {
+      "name": "complete_finite_star_pairs"
+    },
+    {
+      "name": "exact_low_high_defect_split",
+      "error": 7.827939685345342e-17
+    },
+    {
+      "name": "linear_quadratic_low_field_bounds"
+    },
+    {
+      "name": "comparator_positive_gap_and_high_gap",
+      "full_min": 6.859864200680717,
+      "high_min": 6.8604395508751255,
+      "scope": "shifted seven-mode comparator, not a native gap estimate"
+    },
+    {
+      "name": "low_vacuum_compression_keeps_quadratic_scalar",
+      "error": 0.0
+    },
+    {
+      "name": "nonzero_low_vacuum_quadratic_scalar",
+      "value": "(-0.0004+0j)"
+    },
+    {
+      "name": "high_parity_of_insertions"
+    },
+    {
+      "name": "operator_analytic_oddness_1.0",
+      "error": 0.0
+    },
+    {
+      "name": "operator_analytic_oddness_0.5",
+      "error": 0.0
+    },
+    {
+      "name": "operator_analytic_oddness_0.3j",
+      "error": 0.0
+    },
+    {
+      "name": "analytic_first_coefficient_vs_direct_inverse",
+      "error": 1.573435765688608e-11
+    },
+    {
+      "name": "wrong_inverse_derivative_sign_rejected"
+    },
+    {
+      "name": "whole_soft_Fock_Cauchy_tail",
+      "tail": 1.5738746091586867e-07,
+      "bound": 5.689297481729559e-05
+    },
+    {
+      "name": "zero_low_energy_coefficient_is_linear",
+      "error": 8.676745695068463e-19
+    },
+    {
+      "name": "Hermitian_linear_field_vacuum_isometry",
+      "error": 8.673617379884035e-19
+    },
+    {
+      "name": "energy_removal_bound_nonvacuous",
+      "error": 3.934841205133602e-06,
+      "bound": 4.5976700571015826e-05
+    },
+    {
+      "name": "exact_vacuum_calibration_bound"
+    },
+    {
+      "name": "operator_comparison_on_all_low_particle_numbers",
+      "error": 2.940207603953081e-06,
+      "bound": 0.00019445161116162944,
+      "low_particle_numbers": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "three_low_particle_input_is_in_energy_domain",
+      "energy": 0.0045000000000000005,
+      "difference": 4.896484510517445e-07
+    },
+    {
+      "name": "one_field_intermediate_energy_support",
+      "maximum": 0.0
+    },
+    {
+      "name": "omitted_creation_energy_margin_rejected",
+      "residual": 1.0
+    },
+    {
+      "name": "compressed_local_field_norm_attained",
+      "error": 0.0
+    },
+    {
+      "name": "unrestricted_operator_replacement_is_false",
+      "global_error": 0.1274810694103622,
+      "filled_error": 0.12744822966366523,
+      "scope": "finite comparator counterexample only; original native L4 counterexample is a separate source"
+    }
+  ],
+  "seconds": 0.8593598330044188,
+  "source_sha256": "1e573169e9f7189aaa8761b926a46daf0fb51f39f65a11990db8f48553a23e26",
+  "derivation_sha256": "4ffdda4f591c976879ed2dc3fc1b7dc8f29d07b0eca2bf3288d38a9d3fab8275",
+  "scope": "exact proof constants and an independently assembled shifted finite CAR comparator; not a native infrared fit, full interacting proof or independent source review"
+}

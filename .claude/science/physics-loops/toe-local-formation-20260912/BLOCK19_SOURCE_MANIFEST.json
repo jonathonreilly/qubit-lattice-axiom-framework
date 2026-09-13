@@ -1,0 +1,47 @@
+{
+  "base_main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK19_WORKING_PLAN.md",
+      "sha256": "df2db81b85ac45b1c3a33f67232b72a8da0a05af2b952ded9f2781e37e56eaec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK19_DERIVATION.md",
+      "sha256": "8f7710c8920aca9cb3a8dc78b139b461e6b82aed570eb457e84a2d91adf04145"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/check_block19_programs.py",
+      "sha256": "ed2bc77bc08701849855a74fe5cc803a4dc258461e2a46109a317a768d352dfb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK19_PROGRAM_CHECKS.json",
+      "sha256": "a54465b4af347c6a6a6b287eb27cea71c2232710779bb158aeea513ad9853d79"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK19_COLD_AUTHOR_REVIEW.md",
+      "sha256": "445853271777a07e11d9a54eb74823eede0830d4ed13eed7a56ae51d4813d692"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/recovery/block19/FIRST_CHECKER.py",
+      "sha256": "fac076f960b24ff375d366983079ec2554f4564a02ac66decafce4cb1b0849da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/recovery/block19/FIRST_STDOUT.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/recovery/block19/FIRST_STDERR.txt",
+      "sha256": "4fc1f91d5c9032ac78be7a2247d0e0c46e071a2b1d73fb3af569f9ab0c8e1f6e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/recovery/block19/INITIAL_DERIVATION.md",
+      "sha256": "b8a58a3f97c1193637ccd5ca569ee1f5fec1af33bb27156364b00ab738e08258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/recovery/block19/README.md",
+      "sha256": "f5a87109b19803bbe86b04b84cf9620c373f85661bb490163a6408ab19f121bb"
+    }
+  ],
+  "actual_current_surface_status": "conditional-support",
+  "independent_review": "pending"
+}

@@ -545,3 +545,28 @@ factorization. Original proof preserved under recovery/block18. No failed
 math predicate or numeric tolerance. Main still cda8b1445e2. Next package a
 self-contained main-based milestone, then continue personally until11:38:24.
 Own lock refreshed10:26:45UTC, expires11:26:45UTC. No agents.
+
+
+At10:58UTC, PR8089 is OPEN non-draft at0b00d351b4c6d4ef6fd737925f5ae403e086cc95,
+with188 exact checks, thirteen actual mutants, fresh6-input cache and
+focused mechanical validation. Worktree native-informative-record-20260913
+is clean and pushed. Independent review/integration gates remain pending.
+
+Block19 now derives a fixed FIRST-event target from one complete local
+M2 probability-program rule, for every finite binary history horizon.
+Programs X=(2+p)I+P are copied from a supplied exponential prefix bank to
+c_j-e1 before the data event at c_j, with trigger10I atc_j+e1. Current
+outcomes are drawn by F itself; routing depends only on previous Records.
+Initial2(2^N-1)+2N+8 Records, at most3(2^N-1)+3N added. Same kernel and
+nested preparations acrossN; Born values/preparation/cause remain supplied.
+Final107 exact checks pass in38.43s; literal local-law paths agree with
+independent pure-ensemble cylinders, Bell/product/no-signaling controls
+and repeated complex histories. The first radical-program recognizer bug
+and initial precision-domain wording are preserved in recovery/block19.
+Off-code matrix sensitivity is explicitly exhibited; scalar precision
+bound is only within the declared code and only on projected data histories.
+
+Next package as a second closely related note/runner in the existing PR8088
+worktree, leaving its original proof and cache unchanged. Then continue
+connected campaign synthesis to11:38:24UTC. No agents. Own lock expires
+11:26:45UTC and needs refresh before then. Heartbeat remains quiet recovery.

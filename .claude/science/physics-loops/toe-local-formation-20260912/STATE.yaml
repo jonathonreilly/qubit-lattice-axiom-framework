@@ -11,14 +11,14 @@ checkpoint_interval_minutes: 30
 execution: supervisor_only_no_subagents
 independent_review: pending_external_handoff
 formal_audit: deferred
-block: 18
-active_route: native_matter_sensitive_cycle_instrument
+block: 19
+active_route: fixed_first_target_local_probability_programs
 actual_current_surface_status: conditional-support
 hard_residual: Factor the native complete leaf event law through physical nearest-neighbor Records on its specified ready family.
-next_action: Package the native matter-sensitive instrument proof with actual mutation checks and a fresh cache, then continue on the remaining physical-law bridge.
+next_action: Add the local-program fixed-first-target theorem to PR8088, then synthesize the complete campaign with its physical selection and native integration obligations.
 research_emphasis: analytical_derivation_first_small_exact_refutation_checks
 continuation_automation: toe-derivation-campaign-continuation
-last_checkpoint_utc: 2026-09-13T10:26:45Z
+last_checkpoint_utc: 2026-09-13T10:58:18Z
 apparatus_milestone_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8084
 apparatus_milestone_head: e56bca5c4edc48d279de8d13edb3884e7b8d8479
 apparatus_milestone_worktree: /Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913
@@ -35,3 +35,6 @@ formation_current_milestone_worktree: /Users/jonreilly/Projects/Physics-worktree
 projective_history_milestone_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8088
 projective_history_milestone_head: cead7eefc97b7d6884ca280599e53165ffcd8da5
 projective_history_milestone_worktree: /Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913
+
+native_informative_record_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8089
+native_informative_record_head: 0b00d351b4c6d4ef6fd737925f5ae403e086cc95

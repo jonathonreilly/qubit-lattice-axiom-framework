@@ -1,0 +1,344 @@
+{
+  "status": "pass",
+  "total_pass": 107,
+  "total_fail": 0,
+  "checks": [
+    {
+      "name": "empty_law"
+    },
+    {
+      "name": "empirical_multiplicity"
+    },
+    {
+      "name": "program_decode_0"
+    },
+    {
+      "name": "program_local_law_0"
+    },
+    {
+      "name": "program_decode_1/5"
+    },
+    {
+      "name": "program_local_law_1/5"
+    },
+    {
+      "name": "program_decode_1/2"
+    },
+    {
+      "name": "program_local_law_1/2"
+    },
+    {
+      "name": "program_decode_1"
+    },
+    {
+      "name": "program_local_law_1"
+    },
+    {
+      "name": "radical_program_idempotence_normalized"
+    },
+    {
+      "name": "malformed_program_is_not_accepted"
+    },
+    {
+      "name": "program_occurrences_not_deduplicated"
+    },
+    {
+      "name": "nonunitary_similarity_covariance"
+    },
+    {
+      "name": "complex_conjugation_covariance"
+    },
+    {
+      "name": "explicit_off_code_matrix_comparison"
+    },
+    {
+      "name": "adaptive_five_event_prepared_count"
+    },
+    {
+      "name": "adaptive_five_event_all_initial_support"
+    },
+    {
+      "name": "adaptive_five_event_initial_frame"
+    },
+    {
+      "name": "adaptive_five_event_normalization"
+    },
+    {
+      "name": "adaptive_five_event_tree_vs_physical_cylinders"
+    },
+    {
+      "name": "nested_preparation"
+    },
+    {
+      "name": "prefix_cylinder_consistency"
+    },
+    {
+      "name": "finite_probability_precision_data_bound",
+      "exact_total_variation": "36095/248832",
+      "uniform_probability_error": "1/12"
+    },
+    {
+      "name": "rotation_frame_and_transition_0"
+    },
+    {
+      "name": "rotation_frame_and_transition_1"
+    },
+    {
+      "name": "rotation_frame_and_transition_2"
+    },
+    {
+      "name": "rotation_frame_and_transition_3"
+    },
+    {
+      "name": "rotation_frame_and_transition_4"
+    },
+    {
+      "name": "rotation_frame_and_transition_5"
+    },
+    {
+      "name": "rotation_frame_and_transition_6"
+    },
+    {
+      "name": "rotation_frame_and_transition_7"
+    },
+    {
+      "name": "rotation_frame_and_transition_8"
+    },
+    {
+      "name": "rotation_frame_and_transition_9"
+    },
+    {
+      "name": "rotation_frame_and_transition_10"
+    },
+    {
+      "name": "rotation_frame_and_transition_11"
+    },
+    {
+      "name": "rotation_frame_and_transition_12"
+    },
+    {
+      "name": "rotation_frame_and_transition_13"
+    },
+    {
+      "name": "rotation_frame_and_transition_14"
+    },
+    {
+      "name": "rotation_frame_and_transition_15"
+    },
+    {
+      "name": "rotation_frame_and_transition_16"
+    },
+    {
+      "name": "rotation_frame_and_transition_17"
+    },
+    {
+      "name": "rotation_frame_and_transition_18"
+    },
+    {
+      "name": "rotation_frame_and_transition_19"
+    },
+    {
+      "name": "rotation_frame_and_transition_20"
+    },
+    {
+      "name": "rotation_frame_and_transition_21"
+    },
+    {
+      "name": "rotation_frame_and_transition_22"
+    },
+    {
+      "name": "rotation_frame_and_transition_23"
+    },
+    {
+      "name": "singlet_forward_prepared_count"
+    },
+    {
+      "name": "singlet_forward_all_initial_support"
+    },
+    {
+      "name": "singlet_forward_initial_frame"
+    },
+    {
+      "name": "singlet_forward_normalization"
+    },
+    {
+      "name": "singlet_forward_tree_vs_physical_cylinders"
+    },
+    {
+      "name": "singlet_reverse_prepared_count"
+    },
+    {
+      "name": "singlet_reverse_all_initial_support"
+    },
+    {
+      "name": "singlet_reverse_initial_frame"
+    },
+    {
+      "name": "singlet_reverse_normalization"
+    },
+    {
+      "name": "singlet_reverse_tree_vs_physical_cylinders"
+    },
+    {
+      "name": "singlet_opposite_wing_order_same_logical_law"
+    },
+    {
+      "name": "singlet_conditional_setting_normalization_0_0"
+    },
+    {
+      "name": "singlet_conditional_setting_normalization_0_1"
+    },
+    {
+      "name": "singlet_conditional_setting_normalization_1_0"
+    },
+    {
+      "name": "singlet_conditional_setting_normalization_1_1"
+    },
+    {
+      "name": "singlet_both_no_signaling_marginals"
+    },
+    {
+      "name": "supplied_singlet_CHSH"
+    },
+    {
+      "name": "mixed_forward_prepared_count"
+    },
+    {
+      "name": "mixed_forward_all_initial_support"
+    },
+    {
+      "name": "mixed_forward_initial_frame"
+    },
+    {
+      "name": "mixed_forward_normalization"
+    },
+    {
+      "name": "mixed_forward_tree_vs_physical_cylinders"
+    },
+    {
+      "name": "mixed_reverse_prepared_count"
+    },
+    {
+      "name": "mixed_reverse_all_initial_support"
+    },
+    {
+      "name": "mixed_reverse_initial_frame"
+    },
+    {
+      "name": "mixed_reverse_normalization"
+    },
+    {
+      "name": "mixed_reverse_tree_vs_physical_cylinders"
+    },
+    {
+      "name": "mixed_opposite_wing_order_same_logical_law"
+    },
+    {
+      "name": "mixed_conditional_setting_normalization_0_0"
+    },
+    {
+      "name": "mixed_conditional_setting_normalization_0_1"
+    },
+    {
+      "name": "mixed_conditional_setting_normalization_1_0"
+    },
+    {
+      "name": "mixed_conditional_setting_normalization_1_1"
+    },
+    {
+      "name": "mixed_both_no_signaling_marginals"
+    },
+    {
+      "name": "supplied_mixed_CHSH"
+    },
+    {
+      "name": "product_forward_prepared_count"
+    },
+    {
+      "name": "product_forward_all_initial_support"
+    },
+    {
+      "name": "product_forward_initial_frame"
+    },
+    {
+      "name": "product_forward_normalization"
+    },
+    {
+      "name": "product_forward_tree_vs_physical_cylinders"
+    },
+    {
+      "name": "product_reverse_prepared_count"
+    },
+    {
+      "name": "product_reverse_all_initial_support"
+    },
+    {
+      "name": "product_reverse_initial_frame"
+    },
+    {
+      "name": "product_reverse_normalization"
+    },
+    {
+      "name": "product_reverse_tree_vs_physical_cylinders"
+    },
+    {
+      "name": "product_opposite_wing_order_same_logical_law"
+    },
+    {
+      "name": "product_conditional_setting_normalization_0_0"
+    },
+    {
+      "name": "product_conditional_setting_normalization_0_1"
+    },
+    {
+      "name": "product_conditional_setting_normalization_1_0"
+    },
+    {
+      "name": "product_conditional_setting_normalization_1_1"
+    },
+    {
+      "name": "product_both_no_signaling_marginals"
+    },
+    {
+      "name": "product_state_factorization"
+    },
+    {
+      "name": "noncommuting_repeated_quantum_history_prepared_count"
+    },
+    {
+      "name": "noncommuting_repeated_quantum_history_all_initial_support"
+    },
+    {
+      "name": "noncommuting_repeated_quantum_history_initial_frame"
+    },
+    {
+      "name": "noncommuting_repeated_quantum_history_normalization"
+    },
+    {
+      "name": "noncommuting_repeated_quantum_history_tree_vs_physical_cylinders"
+    },
+    {
+      "name": "repeated_B_Record_zero_children"
+    },
+    {
+      "name": "noncommuting_complex_program_actually_present"
+    },
+    {
+      "name": "zero_branches_exercised",
+      "program_appends": 5818,
+      "data_appends": 561,
+      "affected_support_conditions": 13319,
+      "zero_branches": 29,
+      "decoded_prefixes": 561
+    }
+  ],
+  "stats": {
+    "program_appends": 5818,
+    "data_appends": 561,
+    "affected_support_conditions": 13319,
+    "zero_branches": 29,
+    "decoded_prefixes": 561
+  },
+  "seconds": 38.431960833026096,
+  "runner_sha256": "ed2bc77bc08701849855a74fe5cc803a4dc258461e2a46109a317a768d352dfb"
+}

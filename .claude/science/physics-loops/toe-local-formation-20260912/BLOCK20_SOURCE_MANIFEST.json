@@ -1,0 +1,24 @@
+{
+  "status": "conditional-support",
+  "source_parent_pr": 8089,
+  "source_parent_head": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK20_ASSEMBLY_DERIVATION.md",
+      "sha256": "a176c24061b8425ebd19114682acbdb5f36a687bbb75f21a9bfd8755c7627443"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/check_block20_assembly.py",
+      "sha256": "ea092c975ca8c6c7a8d61552e1101f7faff348695b2707572f4263c92a8551f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK20_ASSEMBLY_CHECKS.json",
+      "sha256": "5522ef4f0a9320a960ae9fb99ad7115f3d2bb3166969e9c2469bcf6cb5821713"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK20_COLD_AUTHOR_REVIEW.md",
+      "sha256": "21633639b1d0df76f7fe92d473a64b26c30b65c7352e0d0fc3658f29b1feb104"
+    }
+  ],
+  "independent_review": "pending"
+}

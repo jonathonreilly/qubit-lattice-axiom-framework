@@ -1,0 +1,479 @@
+{
+  "snapshot_utc": "2026-09-13T11:25:22.211067+00:00",
+  "initial_main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "final_main": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "planning_revision": "9cff766069e8f66b4cc5c36888b1e71600b8888e",
+  "campaign_checkpoint_before_synthesis": "66324ae6bf80434d376a48f32656dabafb74a41b",
+  "review_status": "Author checks only; independent source review pending; no retained status granted",
+  "integration_status": "Exact combined current-main pipeline, strict lint and changed-evidence ledger gate pending",
+  "final_main_change": "Only dispatch_shadow_state.json as_of_date changed from 2026-09-12 to 2026-09-13",
+  "milestones": [
+    {
+      "headRefOid": "e56bca5c4edc48d279de8d13edb3884e7b8d8479",
+      "isDraft": false,
+      "number": 8084,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "title": "[physics-loop] Native feedback finite apparatus bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8084",
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913",
+      "branch": "physics-loop/native-feedback-finite-apparatus-20260913",
+      "local_head": "e56bca5c4edc48d279de8d13edb3884e7b8d8479",
+      "worktree_porcelain": "",
+      "science_sources": [
+        {
+          "path": "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "12cf9e6071c4fdb68cfc50825def0f95867a5769d060d78ce3eb04f87a9570f2"
+        },
+        {
+          "path": "scripts/native_feedback_cap_check_2026_09_13.py",
+          "sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d"
+        },
+        {
+          "path": "scripts/native_feedback_collision_check_2026_09_13.py",
+          "sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19"
+        },
+        {
+          "path": "scripts/native_feedback_finite_apparatus_2026_09_13.py",
+          "sha256": "ad97ebd1105547bf406286e2b8e0ac242707d9181bab19bfa50499118ad7fb7a"
+        }
+      ],
+      "caches": [
+        {
+          "runner": "scripts/native_feedback_finite_apparatus_2026_09_13.py",
+          "cache_path": "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/logs/runner-cache/native_feedback_finite_apparatus_2026_09_13.txt",
+          "cache_sha256": "5b31924ef0962ce28b5416a1ad58663233921bea456879c0967875c50ba94224",
+          "freshness": "fresh",
+          "header": {
+            "runner_path": "scripts/native_feedback_finite_apparatus_2026_09_13.py",
+            "runner_sha256": "ad97ebd1105547bf406286e2b8e0ac242707d9181bab19bfa50499118ad7fb7a",
+            "input_fingerprint_sha256": "76e9fb959c640f52217a27dd4bfe20d714bd8bd8d9c2ecd89c4d37d81b2c6af6",
+            "status": "ok",
+            "exit_code": "0"
+          },
+          "declared_inputs": [
+            "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "scripts/native_feedback_cap_check_2026_09_13.py",
+            "scripts/native_feedback_collision_check_2026_09_13.py",
+            ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/RESULTS.json"
+          ]
+        }
+      ]
+    },
+    {
+      "headRefOid": "c63f5b991044328ad9b13223c8a25849aa0ef574",
+      "isDraft": false,
+      "number": 8085,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "title": "[physics-loop] Exact Regge reduction and positive tensor transfer bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8085",
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913",
+      "branch": "physics-loop/regge-exact-reduction-positive-transfer-20260913",
+      "local_head": "c63f5b991044328ad9b13223c8a25849aa0ef574",
+      "worktree_porcelain": "",
+      "science_sources": [
+        {
+          "path": "docs/REGGE_EXACT_REDUCTION_POSITIVE_TENSOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "ae56815e04d905b6c6b697d512f43a664c537591776f610f78a25ae45a2d0199"
+        },
+        {
+          "path": "scripts/regge_exact_reduction_positive_transfer_2026_09_13.py",
+          "sha256": "1a76056c5fcaa58bcc9c2d5d3c6a340919c446376616d4aa3685c55ad28750cb"
+        },
+        {
+          "path": "scripts/regge_local_hessian_check_2026_09_13.py",
+          "sha256": "1e172437fca41640f4dc0e90ef4cbee8ce3ca57219327fdedecbe4f588f91188"
+        },
+        {
+          "path": "scripts/regge_source_rank_check_2026_09_13.py",
+          "sha256": "ab08cd53644936b9d5169e3db4da170d02b03a1f7df222c7ec3776129071d51f"
+        },
+        {
+          "path": "scripts/regge_tensor_transfer_check_2026_09_13.py",
+          "sha256": "7a94cd98ea09453a5f9fe3b43cd05e8b935284e33b353391f83529f30e9ff278"
+        }
+      ],
+      "caches": [
+        {
+          "runner": "scripts/regge_exact_reduction_positive_transfer_2026_09_13.py",
+          "cache_path": "/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913/logs/runner-cache/regge_exact_reduction_positive_transfer_2026_09_13.txt",
+          "cache_sha256": "06cda9667bedf9e27d59322cc85c401562fac4984e76cf47c64b4d997d922bb7",
+          "freshness": "fresh",
+          "header": {
+            "runner_path": "scripts/regge_exact_reduction_positive_transfer_2026_09_13.py",
+            "runner_sha256": "1a76056c5fcaa58bcc9c2d5d3c6a340919c446376616d4aa3685c55ad28750cb",
+            "input_fingerprint_sha256": "b23ad787278efbdd7acbbc128f2ed515248cbe8fed69043b810944b29f7c5c12",
+            "status": "ok",
+            "exit_code": "0"
+          },
+          "declared_inputs": [
+            "docs/REGGE_EXACT_REDUCTION_POSITIVE_TENSOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "scripts/regge_local_hessian_check_2026_09_13.py",
+            "scripts/regge_source_rank_check_2026_09_13.py",
+            "scripts/regge_tensor_transfer_check_2026_09_13.py",
+            ".claude/science/physics-loops/regge-exact-reduction-positive-transfer-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/regge-exact-reduction-positive-transfer-20260913/mutations/RESULTS.json"
+          ]
+        }
+      ]
+    },
+    {
+      "headRefOid": "a3e5529b4d74f618df416747c39bf150b885e495",
+      "isDraft": false,
+      "number": 8086,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "title": "[physics-loop] Positive native star coefficient and low-energy control",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8086",
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913",
+      "branch": "physics-loop/native-positive-ward-scalar-20260913",
+      "local_head": "a3e5529b4d74f618df416747c39bf150b885e495",
+      "worktree_porcelain": "",
+      "science_sources": [
+        {
+          "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "0d256f075b0cee3e9c455877cce073fff34015c6f4ef32833cad24b1f76abdad"
+        },
+        {
+          "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "6be9e2653f79129cf85f6793e02ebe9708c2e5b6c497066f6f631366f1d25f1b"
+        },
+        {
+          "path": "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "00dbd9479df330bacaf992d9add9f56c39214c4811f0be683a650c6de4a1ec58"
+        },
+        {
+          "path": "scripts/native_positive_ward_scalar_2026_09_13.py",
+          "sha256": "5bc26663dc6710b5814a623bcd462b09901d3539bb3aa4051baffae0a52eef2d"
+        },
+        {
+          "path": "scripts/native_star_infrared_spectral_2026_09_13.py",
+          "sha256": "a059824718610e377736bd630202780317e8d2ac7d9514ea65e0a7927ee4eb33"
+        },
+        {
+          "path": "scripts/native_star_low_energy_operator_2026_09_13.py",
+          "sha256": "c93c6e788e55e21c104735b8a3897c0f161f7e6506167bbf2ad20ce680e43839"
+        },
+        {
+          "path": "scripts/native_ward_scalar_algebra_2026_09_13.py",
+          "sha256": "60e00d75daa9389ffa3bc406e32daf040e6cb05f182776036dc6ea2d0cd42632"
+        },
+        {
+          "path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+          "sha256": "f932113ee631ca82a3d64e80425e2a295ca7ac05e91ebd7d4ba4efcf06325579"
+        },
+        {
+          "path": "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+          "sha256": "79c7028e4bc3333a7d55d0faa96ccab276979d407cfa5319408cc5af724436f0"
+        }
+      ],
+      "caches": [
+        {
+          "runner": "scripts/native_positive_ward_scalar_2026_09_13.py",
+          "cache_path": "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/logs/runner-cache/native_positive_ward_scalar_2026_09_13.txt",
+          "cache_sha256": "78ef976153e49a639479e35385e35e25cd3816a5c61071084162222439c284db",
+          "freshness": "fresh",
+          "header": {
+            "runner_path": "scripts/native_positive_ward_scalar_2026_09_13.py",
+            "runner_sha256": "5bc26663dc6710b5814a623bcd462b09901d3539bb3aa4051baffae0a52eef2d",
+            "input_fingerprint_sha256": "e74825729856884df9556510115cb0c6042674c54facf1cebd5b10656dd88d35",
+            "status": "ok",
+            "exit_code": "0"
+          },
+          "declared_inputs": [
+            "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "scripts/native_ward_scalar_algebra_2026_09_13.py",
+            "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+            "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/MOMENT_FORMULAS.json",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/TRIAL_FORMULAS.json",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/WITNESS.json",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/SOURCE_MANIFEST.json",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/RESULTS.json"
+          ]
+        },
+        {
+          "runner": "scripts/native_star_infrared_spectral_2026_09_13.py",
+          "cache_path": "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/logs/runner-cache/native_star_infrared_spectral_2026_09_13.txt",
+          "cache_sha256": "01365348d21e56e88ad69c96ee1f70c9840f0685e2b585288b82dc0645fc970b",
+          "freshness": "fresh",
+          "header": {
+            "runner_path": "scripts/native_star_infrared_spectral_2026_09_13.py",
+            "runner_sha256": "a059824718610e377736bd630202780317e8d2ac7d9514ea65e0a7927ee4eb33",
+            "input_fingerprint_sha256": "0ea9e2946f9c2e86c839ab5b6a765ac505edc369c4f33ddaa346136176936ad9",
+            "status": "ok",
+            "exit_code": "0"
+          },
+          "declared_inputs": [
+            "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/MOMENT_FORMULAS.json",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/TRIAL_FORMULAS.json",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/WITNESS.json",
+            ".claude/science/physics-loops/native-star-infrared-spectral-20260913/SOURCE_MANIFEST.json",
+            ".claude/science/physics-loops/native-star-infrared-spectral-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/RESULTS.json"
+          ]
+        },
+        {
+          "runner": "scripts/native_star_low_energy_operator_2026_09_13.py",
+          "cache_path": "/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/logs/runner-cache/native_star_low_energy_operator_2026_09_13.txt",
+          "cache_sha256": "329cc95a9c46c690d416f694420d8438823b92ffba8571fb845628692db70ebf",
+          "freshness": "fresh",
+          "header": {
+            "runner_path": "scripts/native_star_low_energy_operator_2026_09_13.py",
+            "runner_sha256": "c93c6e788e55e21c104735b8a3897c0f161f7e6506167bbf2ad20ce680e43839",
+            "input_fingerprint_sha256": "cdd3ebe13b853cc9a4fcc7edfd569c8cbed86893072290ed7f35b4f8a0a1c4cb",
+            "status": "ok",
+            "exit_code": "0"
+          },
+          "declared_inputs": [
+            "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "scripts/native_star_infrared_spectral_2026_09_13.py",
+            "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/MOMENT_FORMULAS.json",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/TRIAL_FORMULAS.json",
+            ".claude/science/physics-loops/native-positive-ward-scalar-20260913/WITNESS.json",
+            ".claude/science/physics-loops/native-star-infrared-spectral-20260913/SOURCE_MANIFEST.json",
+            ".claude/science/physics-loops/native-star-infrared-spectral-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/RESULTS.json",
+            ".claude/science/physics-loops/native-star-low-energy-operator-20260913/SOURCE_MANIFEST.json",
+            ".claude/science/physics-loops/native-star-low-energy-operator-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/RESULTS.json"
+          ]
+        }
+      ]
+    },
+    {
+      "headRefOid": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+      "isDraft": false,
+      "number": 8087,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "title": "[physics-loop] Growing native formation and current bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8087",
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/native-growing-formation-current-20260913",
+      "branch": "physics-loop/native-growing-formation-current-20260913",
+      "local_head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+      "worktree_porcelain": "",
+      "science_sources": [
+        {
+          "path": "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "190f0f61d21da3ed46bf8063f4084047b36909e28f12378223e88e52696134cc"
+        },
+        {
+          "path": "scripts/native_formation_growth_checks_2026_09_13.py",
+          "sha256": "9cfddfa27bb296cbed8a745893b9ee25b50ff95ca4c275b9948a8f8884175891"
+        },
+        {
+          "path": "scripts/native_formation_native_checks_2026_09_13.py",
+          "sha256": "7eaa03e39b66140ecdcfc37c37556acfbe8d5dad0229da1dcb099d3805c6c96b"
+        },
+        {
+          "path": "scripts/native_formation_transport_checks_2026_09_13.py",
+          "sha256": "5a321d1cc5d6ce6db8978b780158673c344e1ce666787cb56ec81ce6c2eecfd6"
+        },
+        {
+          "path": "scripts/native_growing_formation_current_2026_09_13.py",
+          "sha256": "d027c46dffab5d52200f6da6dfb988b23a4f5d9b30b53241ca7280777c08433f"
+        }
+      ],
+      "caches": [
+        {
+          "runner": "scripts/native_growing_formation_current_2026_09_13.py",
+          "cache_path": "/Users/jonreilly/Projects/Physics-worktrees/native-growing-formation-current-20260913/logs/runner-cache/native_growing_formation_current_2026_09_13.txt",
+          "cache_sha256": "58877c0f1158d98c1a1e1ba1878e1c446a229720c9893f57317ba0e389baad75",
+          "freshness": "fresh",
+          "header": {
+            "runner_path": "scripts/native_growing_formation_current_2026_09_13.py",
+            "runner_sha256": "d027c46dffab5d52200f6da6dfb988b23a4f5d9b30b53241ca7280777c08433f",
+            "input_fingerprint_sha256": "eec07a2bf0e05ce0c066125dbf19110b4bd8c5df5fbaa547b50ef0d3b31b4fe5",
+            "status": "ok",
+            "exit_code": "0"
+          },
+          "declared_inputs": [
+            "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "scripts/native_formation_native_checks_2026_09_13.py",
+            "scripts/native_formation_transport_checks_2026_09_13.py",
+            "scripts/native_formation_growth_checks_2026_09_13.py",
+            ".claude/science/physics-loops/native-growing-formation-current-20260913/SOURCE_MANIFEST.json",
+            ".claude/science/physics-loops/native-growing-formation-current-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/RESULTS.json"
+          ]
+        }
+      ]
+    },
+    {
+      "headRefOid": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+      "isDraft": false,
+      "number": 8088,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "title": "[physics-loop] Finite projector histories with local Record laws",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8088",
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913",
+      "branch": "physics-loop/projective-history-local-copy-20260913",
+      "local_head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+      "worktree_porcelain": "",
+      "science_sources": [
+        {
+          "path": "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "f6901922a9571c8a699b7276346bb4cc7fddc0722b066640da35d7c66715c9e5"
+        },
+        {
+          "path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "1263140139d365e071d2646367ea91e7a263d1bbba37e9826590b1d695e28417"
+        },
+        {
+          "path": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+          "sha256": "bd5fc8623e27483fbc73f2bcbbd47609c4307594eebaee7244a8038b955527d5"
+        },
+        {
+          "path": "scripts/projective_history_local_program_2026_09_13.py",
+          "sha256": "4e43d3e977121c211cf72acca96dfa3548cb950b13b8ddddbc4e411c8c293d1b"
+        }
+      ],
+      "caches": [
+        {
+          "runner": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+          "cache_path": "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/logs/runner-cache/projective_history_local_copy_record_process_2026_09_13.txt",
+          "cache_sha256": "4a944cfbebb657253904eb7097f63d262255898cb5e3a37026342b075dbd3065",
+          "freshness": "fresh",
+          "header": {
+            "runner_path": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+            "runner_sha256": "bd5fc8623e27483fbc73f2bcbbd47609c4307594eebaee7244a8038b955527d5",
+            "input_fingerprint_sha256": "613673665b614c4ca6ee4e19f304d9d9ecb469a89af91fe6beb946b5068fea99",
+            "status": "ok",
+            "exit_code": "0"
+          },
+          "declared_inputs": [
+            "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
+            ".claude/science/physics-loops/projective-history-local-copy-20260913/SOURCE_MANIFEST.json",
+            ".claude/science/physics-loops/projective-history-local-copy-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/RESULTS.json"
+          ]
+        },
+        {
+          "runner": "scripts/projective_history_local_program_2026_09_13.py",
+          "cache_path": "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/logs/runner-cache/projective_history_local_program_2026_09_13.txt",
+          "cache_sha256": "1ca6c9a16f7b003c0431b533aea82ebed364adf73314b7a326236cccf29923e1",
+          "freshness": "fresh",
+          "header": {
+            "runner_path": "scripts/projective_history_local_program_2026_09_13.py",
+            "runner_sha256": "4e43d3e977121c211cf72acca96dfa3548cb950b13b8ddddbc4e411c8c293d1b",
+            "input_fingerprint_sha256": "0706dcbe8836b4a41e62b5a9ad8988538ba187421cc0d8eebac95574ffbe874b",
+            "status": "ok",
+            "exit_code": "0"
+          },
+          "declared_inputs": [
+            "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
+            ".claude/science/physics-loops/projective-history-local-program-20260913/SOURCE_MANIFEST.json",
+            ".claude/science/physics-loops/projective-history-local-program-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/RESULTS.json"
+          ]
+        }
+      ]
+    },
+    {
+      "headRefOid": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+      "isDraft": false,
+      "number": 8089,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "title": "[physics-loop] Native informative edge Records and matter disturbance",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8089",
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913",
+      "branch": "physics-loop/native-informative-record-20260913",
+      "local_head": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+      "worktree_porcelain": "",
+      "science_sources": [
+        {
+          "path": "docs/NATIVE_INFORMATIVE_EDGE_RECORD_AND_DISTURBANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "bdbb2e7b478abb5735b294bbf50babec62ef57491ca8b59ea7705af7987023e5"
+        },
+        {
+          "path": "scripts/native_informative_edge_record_2026_09_13.py",
+          "sha256": "166ed0fdd970ba981756f4e5163d1f29a28e72b7e17a7c7720d3744f9f50780e"
+        }
+      ],
+      "caches": [
+        {
+          "runner": "scripts/native_informative_edge_record_2026_09_13.py",
+          "cache_path": "/Users/jonreilly/Projects/Physics-worktrees/native-informative-record-20260913/logs/runner-cache/native_informative_edge_record_2026_09_13.txt",
+          "cache_sha256": "2fbc62524912a2defee4901e65028697d054565994007639ec5469cc3b6087e7",
+          "freshness": "fresh",
+          "header": {
+            "runner_path": "scripts/native_informative_edge_record_2026_09_13.py",
+            "runner_sha256": "166ed0fdd970ba981756f4e5163d1f29a28e72b7e17a7c7720d3744f9f50780e",
+            "input_fingerprint_sha256": "f27310f32d274b3c381b02846c126e693ffe1f78d10120f88bb0343992ba4e23",
+            "status": "ok",
+            "exit_code": "0"
+          },
+          "declared_inputs": [
+            "docs/NATIVE_INFORMATIVE_EDGE_RECORD_AND_DISTURBANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+            "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ".claude/science/physics-loops/native-informative-record-20260913/SOURCE_MANIFEST.json",
+            ".claude/science/physics-loops/native-informative-record-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+            ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json"
+          ]
+        }
+      ]
+    }
+  ],
+  "assembly_sources": [
+    {
+      "path": "BLOCK20_ASSEMBLY_CHECKS.json",
+      "sha256": "5522ef4f0a9320a960ae9fb99ad7115f3d2bb3166969e9c2469bcf6cb5821713"
+    },
+    {
+      "path": "BLOCK20_ASSEMBLY_DERIVATION.md",
+      "sha256": "a176c24061b8425ebd19114682acbdb5f36a687bbb75f21a9bfd8755c7627443"
+    },
+    {
+      "path": "BLOCK20_COLD_AUTHOR_REVIEW.md",
+      "sha256": "21633639b1d0df76f7fe92d473a64b26c30b65c7352e0d0fc3658f29b1feb104"
+    },
+    {
+      "path": "BLOCK20_SOURCE_MANIFEST.json",
+      "sha256": "363b1707ac55eee9bcb76eb61d81e8952ba02f17ec33855594dea3ade905ac69"
+    },
+    {
+      "path": "check_block20_assembly.py",
+      "sha256": "ea092c975ca8c6c7a8d61552e1101f7faff348695b2707572f4263c92a8551f9"
+    }
+  ],
+  "final_precision_sources": [
+    {
+      "path": "BLOCK21_INSTRUMENT_PRECISION_DERIVATION.md",
+      "sha256": "bbd6e0450f9fccad80c666a1ce8267db14b944207bc770b371bf4c8ae08940cc"
+    },
+    {
+      "path": "check_block21_precision.py",
+      "sha256": "61b0eb18f67f77997c440000c66cd705c4c75e98908ba725c9a9631cc99eb6b2"
+    },
+    {
+      "path": "BLOCK21_INSTRUMENT_PRECISION_CHECKS.json",
+      "sha256": "9c513c552dd4e22cda7cdf986e2709fe39a7c80a9d0bf458becace023c1ecab5"
+    },
+    {
+      "path": "BLOCK21_COLD_AUTHOR_REVIEW.md",
+      "sha256": "4e1f1e6fafb75c060ca6a011d4b60588e14072916ded49cfa0dfca2ec9cfd1c2"
+    }
+  ],
+  "final_precision_sources_root": ".claude/science/physics-loops/toe-local-formation-20260912"
+}

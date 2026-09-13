@@ -570,3 +570,46 @@ Next package as a second closely related note/runner in the existing PR8088
 worktree, leaving its original proof and cache unchanged. Then continue
 connected campaign synthesis to11:38:24UTC. No agents. Own lock expires
 11:26:45UTC and needs refresh before then. Heartbeat remains quiet recovery.
+
+
+## Final assembly and source snapshot, around 11:30 UTC
+
+PR8088 now has both local-copy and fixed-first-target local-program notes at
+af8fc05509d69c46c0113c7eaa240caaff3439db. Both caches are fresh; the original
+source/cache bytes remain unchanged. PR8089 remains at
+0b00d351b4c6d4ef6fd737925f5ae403e086cc95. FINAL_SOURCE_INDEX.json captures all
+six OPEN non-draft review PRs, their clean/pushed worktrees, primary sources
+and nine fresh caches. All still require independent source review.
+
+Block20 derives informative marks with matter-independent waiting clocks
+from full-carrier jump completeness, a legal-code mean matter-energy bound
+and a finite collision representation. The 21-check abstract comparator
+retains the nonzero uncompressed cross term. It is not a new native spatial
+embedding, an autonomous energy-conserving controller or a current theorem.
+Its proof and author review are in BLOCK20_ASSEMBLY_DERIVATION.md and
+BLOCK20_COLD_AUTHOR_REVIEW.md.
+
+CAMPAIGN_SYNTHESIS.md assembles the scientific outcomes without treating the
+separate models as a TOE. NEXT_DECISIVE_TESTS.md prioritizes the physical
+local-condition interface, a common growth/infrared Hamiltonian, informative
+formation resources and reciprocal sourcing. The no-axiom-change conclusion
+is only that this campaign has established no axiom-forcing contradiction.
+
+Main was clean and fast-forwarded to b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf;
+its only new change is the dispatcher date. Exact combined current-main
+integration gates remain pending. A lock refresh first used the main
+checkout, which correctly returned not-owned; the campaign-worktree lock
+was then refreshed at11:23:56UTC and expires12:23:56UTC. Only that owned
+lock is to be released at completion. The heartbeat remains ACTIVE until
+the authorized deadline11:38:24UTC. No execution agents, axiom edits,
+editable prompt changes, source-author landing or applied audit verdicts.
+
+
+At11:33UTC, Block21 completes a final calibration distinction. The full
+flagged parity instrument has diamond distance2sin(|theta-phi|/2), saturated
+when B has both signs. Adaptive histories telescope with shared controls;
+contrast error epsilon has sharp endpoint bound sqrt(2epsilon). Proof
+precedes50 exact matrix checks, allpass in0.196s. Watrous Theorem3.51 and
+proof were checked for the finite Hermitian-preserving map hypothesis.
+No physical program decoder, controller or rare-branch normalized-state
+bound is claimed. This remains a campaign checkpoint, not a seventh PR.

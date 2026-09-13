@@ -1,0 +1,24 @@
+{
+  "status": "conditional-support",
+  "parent_pr": 8089,
+  "parent_head": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+  "independent_review": "pending",
+  "sources": [
+    {
+      "path": "BLOCK21_INSTRUMENT_PRECISION_DERIVATION.md",
+      "sha256": "bbd6e0450f9fccad80c666a1ce8267db14b944207bc770b371bf4c8ae08940cc"
+    },
+    {
+      "path": "check_block21_precision.py",
+      "sha256": "61b0eb18f67f77997c440000c66cd705c4c75e98908ba725c9a9631cc99eb6b2"
+    },
+    {
+      "path": "BLOCK21_INSTRUMENT_PRECISION_CHECKS.json",
+      "sha256": "9c513c552dd4e22cda7cdf986e2709fe39a7c80a9d0bf458becace023c1ecab5"
+    },
+    {
+      "path": "BLOCK21_COLD_AUTHOR_REVIEW.md",
+      "sha256": "4e1f1e6fafb75c060ca6a011d4b60588e14072916ded49cfa0dfca2ec9cfd1c2"
+    }
+  ]
+}

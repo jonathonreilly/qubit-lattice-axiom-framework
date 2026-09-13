@@ -1,7 +1,7 @@
 loop: toe-local-formation-20260912
 mode: campaign
 status: running
-main_revision: cda8b1445e21b3908a0a520710e0dae57b7bc3a3
+main_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
 branch: physics-loop/toe-local-formation-20260912
 start_utc: 2026-09-12T23:38:24Z
 deadline_utc: 2026-09-13T11:38:24Z
@@ -11,14 +11,14 @@ checkpoint_interval_minutes: 30
 execution: supervisor_only_no_subagents
 independent_review: pending_external_handoff
 formal_audit: deferred
-block: 19
-active_route: fixed_first_target_local_probability_programs
+block: 21
+active_route: final_campaign_synthesis
 actual_current_surface_status: conditional-support
 hard_residual: Factor the native complete leaf event law through physical nearest-neighbor Records on its specified ready family.
-next_action: Add the local-program fixed-first-target theorem to PR8088, then synthesize the complete campaign with its physical selection and native integration obligations.
+next_action: Complete synthesis checks, checkpoint, and pause the continuation and release the campaign lock at 11:38:24 UTC.
 research_emphasis: analytical_derivation_first_small_exact_refutation_checks
 continuation_automation: toe-derivation-campaign-continuation
-last_checkpoint_utc: 2026-09-13T10:58:18Z
+last_checkpoint_utc: 2026-09-13T11:28:50Z
 apparatus_milestone_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8084
 apparatus_milestone_head: e56bca5c4edc48d279de8d13edb3884e7b8d8479
 apparatus_milestone_worktree: /Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913
@@ -33,7 +33,7 @@ formation_current_milestone_head: d568433b0fb323b8d72cc76f362ed3ead6b0b8d8
 formation_current_milestone_worktree: /Users/jonreilly/Projects/Physics-worktrees/native-growing-formation-current-20260913
 
 projective_history_milestone_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8088
-projective_history_milestone_head: cead7eefc97b7d6884ca280599e53165ffcd8da5
+projective_history_milestone_head: af8fc05509d69c46c0113c7eaa240caaff3439db
 projective_history_milestone_worktree: /Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913
 
 native_informative_record_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8089

@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "checks": [
+    "full_pulse_unitary",
+    "complete_full_physical_instrument",
+    "full_fuel_loss_identity",
+    "compressed_mean_energy_generator",
+    "full_carrier_cross_term_retained",
+    "mean_energy_rate_on_ready_state",
+    "matter_independent_total_jump_rate",
+    "native_mark_rate_1",
+    "fuel_absorbs_after_jump_1",
+    "physical_Record_after_jump_1",
+    "no_second_jump_(1, 1)",
+    "no_second_jump_(1, -1)",
+    "native_mark_rate_-1",
+    "fuel_absorbs_after_jump_-1",
+    "physical_Record_after_jump_-1",
+    "no_second_jump_(-1, 1)",
+    "no_second_jump_(-1, -1)",
+    "Record_retention_under_dwell",
+    "finite_collision_completeness",
+    "finite_collision_fuel_probability",
+    "finite_collision_mean_energy"
+  ],
+  "total_pass": 21,
+  "total_fail": 0,
+  "seconds": 0.035147415997926146,
+  "runner_sha256": "ea092c975ca8c6c7a8d61552e1101f7faff348695b2707572f4263c92a8551f9"
+}

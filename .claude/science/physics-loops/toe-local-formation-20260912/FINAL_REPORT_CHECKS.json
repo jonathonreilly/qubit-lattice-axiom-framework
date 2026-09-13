@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "scope": "Source hashes, report links and declared milestone snapshot only; not new science or independent review",
+  "checks": {
+    ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK20_ASSEMBLY_DERIVATION.md": true,
+    ".claude/science/physics-loops/toe-local-formation-20260912/check_block20_assembly.py": true,
+    ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK20_ASSEMBLY_CHECKS.json": true,
+    ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK20_COLD_AUTHOR_REVIEW.md": true,
+    "CAMPAIGN_SYNTHESIS.md:STATE.yaml": true,
+    "CAMPAIGN_SYNTHESIS.md:HANDOFF.md": true,
+    "CAMPAIGN_SYNTHESIS.md:FINAL_SOURCE_INDEX.json": true,
+    "CAMPAIGN_SYNTHESIS.md:CAMPAIGN.md": true,
+    "CAMPAIGN_SYNTHESIS.md:BLOCK20_ASSEMBLY_DERIVATION.md": true,
+    "CAMPAIGN_SYNTHESIS.md:NEXT_DECISIVE_TESTS.md": true,
+    "new_checker_compiles": true,
+    "six_open_review_milestones": true,
+    "nine_fresh_caches": true,
+    "main_science_unchanged": true,
+    "CAMPAIGN_SYNTHESIS.md:BLOCK21_INSTRUMENT_PRECISION_DERIVATION.md": true,
+    "sha:BLOCK21_INSTRUMENT_PRECISION_DERIVATION.md": true,
+    "sha:check_block21_precision.py": true,
+    "sha:BLOCK21_INSTRUMENT_PRECISION_CHECKS.json": true,
+    "sha:BLOCK21_COLD_AUTHOR_REVIEW.md": true,
+    "precision_checker_compiles": true
+  },
+  "updated_utc": "2026-09-13T11:34:02.450430+00:00"
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/check_block03.py", line 126, in <module>
+    check(tag+'_genuine_truncation_change', bool(nonzero))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/check_block03.py", line 27, in check
+    raise AssertionError(name)
+AssertionError: feedback_1_genuine_truncation_change

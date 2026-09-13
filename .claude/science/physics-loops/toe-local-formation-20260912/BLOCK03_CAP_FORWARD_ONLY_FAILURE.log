@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/check_block03_cap.py", line 112, in <module>
+    check(law+'_adjoint_weighted_bound', hs2(adjoint_error) <= e2)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/toe-local-formation-20260912/.claude/science/physics-loops/toe-local-formation-20260912/check_block03_cap.py", line 27, in check
+    raise AssertionError(name)
+AssertionError: feedback_adjoint_weighted_bound

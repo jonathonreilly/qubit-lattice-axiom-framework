@@ -11,5 +11,7 @@
 | Quadratic history response | Rank-one covariance transport and path exponential | General two-event response and precise approximation price | candidate-complete, conditional |
 | Gaussian selective history | Exterior powers and Wick minors | Every positive branch update with explicit non-Gaussian boundary | candidate-complete, conditional |
 | Autonomous permanence/renewal | Static controller or supplied irreversible head, fresh-site supply | Permanent formation with nonzero live-matter activity | active |
+| Retained-battery spatial truncation | Actual ambient local conjugation plus Fourier tail and one-head channel bounds | Finite-neighborhood capped complete/feedback generator approximation | candidate-complete, conditional |
+| Finite energy carrier | Complete finite total-energy fibers and irregular battery levels | Finite-dimensional native energy instrument and compatibility with spatial truncation | active |
 
 The full physical occurrence/selection problem is target-equivalent to the larger campaign goal, not a nearly-completed technical lemma.

@@ -1,0 +1,32 @@
+{
+  "status": "all_small_exact_cap_checks_passed",
+  "author_check_only": true,
+  "source_sha256": "7ec75d324dcfdd0633f092929a00e036546f277857198e325918a7b5881b3b9b",
+  "check_count": 47,
+  "results": {
+    "complete": {
+      "exact_source_rate": "1",
+      "uncapped_local_rate": "1",
+      "capped_local_rate": "16/25",
+      "local_cap_leakage": "9/25",
+      "uncapped_column_difference_squared": "2",
+      "capped_column_difference_squared": "41/25",
+      "adjoint_error_squared": "2",
+      "common_bound_from_two_separate_premises_squared": "2",
+      "loss_error_squared": "9/25",
+      "actual_refusal_mass": "9/25"
+    },
+    "feedback": {
+      "exact_source_rate": "1/2",
+      "uncapped_local_rate": "17/50",
+      "capped_local_rate": "8/25",
+      "local_cap_leakage": "1/50",
+      "uncapped_column_difference_squared": "21/25",
+      "capped_column_difference_squared": "41/50",
+      "adjoint_error_squared": "1",
+      "common_bound_from_two_separate_premises_squared": "1",
+      "loss_error_squared": "1/2"
+    }
+  },
+  "scope": "Commensurate finite native cap algebra; not a metric-radius or sine-packet error certificate."
+}

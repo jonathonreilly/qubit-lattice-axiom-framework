@@ -1,0 +1,37 @@
+{
+  "status": "all_small_exact_checks_passed",
+  "author_check_only": true,
+  "proof": "BLOCK03_DERIVATION.md",
+  "source_sha256": "923c543a54405eb3096762d1d8b2de36cf3312e0c84bb5ad349827cc87e149a0",
+  "check_count": 126,
+  "first_changed_Taylor_order": {
+    "complete_0": 3,
+    "complete_1": 3,
+    "feedback_0": 2,
+    "feedback_1": null
+  },
+  "native_matrix_witnesses": {
+    "complete_0": {
+      "order": 3,
+      "row": 4,
+      "column": 19,
+      "coefficient": "1/15"
+    },
+    "complete_1": {
+      "order": 3,
+      "row": 1,
+      "column": 22,
+      "coefficient": "1/15"
+    },
+    "feedback_0": {
+      "order": 2,
+      "row": 4,
+      "column": 19,
+      "coefficient": "-I/5"
+    },
+    "feedback_1": {
+      "status": "identically_zero_bridge_branch"
+    }
+  },
+  "scope": "Finite exact operator and scalar counterchecks; general estimates are analytical."
+}

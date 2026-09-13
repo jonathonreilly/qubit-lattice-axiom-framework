@@ -1,6 +1,6 @@
 {
- "edge_count": 12519,
- "node_count": 5041,
+ "edge_count": 12522,
+ "node_count": 5042,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4809,6 +4809,10 @@
   "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "9c83fb5042d9",
+   "out_degree": 3
   },
   "exact_tier_ewitness_bounded_note_2026-05-07_ewitness": {
    "deps_hash": "382ffbe3c6b3",

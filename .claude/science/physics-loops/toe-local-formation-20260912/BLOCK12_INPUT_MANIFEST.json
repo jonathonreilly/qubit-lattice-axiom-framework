@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "revision": "a2aca4bcf2d6c0c3868b852017de327f888f270a",
+      "original_path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/INPUTS.json",
+      "copy": "block12_inputs/quartic_inputs.json",
+      "sha256": "0c92fc10c297526cb14073f1f58d63e71da2889b677bd00b48cd41ce87575980"
+    },
+    {
+      "revision": "a2aca4bcf2d6c0c3868b852017de327f888f270a",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_RESULT.json",
+      "copy": "block12_inputs/omega5_result.json",
+      "sha256": "e07e28eb7703f6f04fecd6694b1e0db43e32c14b7546a2d6fb15b6bec33d010b"
+    },
+    {
+      "revision": "a2aca4bcf2d6c0c3868b852017de327f888f270a",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/RESULT.json",
+      "copy": "block12_inputs/omega79_result.json",
+      "sha256": "32952a5c24c679d23326688a114e7213fb3f2a8c6da58daf435acc9fa2a88df9"
+    }
+  ],
+  "status": "pinned source copies; physical scalar/moment certificate truth inherited from source notes",
+  "independent_replay": "not performed; new Clifford identities and arithmetic checked separately"
+}

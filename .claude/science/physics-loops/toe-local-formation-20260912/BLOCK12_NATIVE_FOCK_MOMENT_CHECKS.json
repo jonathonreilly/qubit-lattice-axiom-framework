@@ -1,0 +1,253 @@
+{
+  "status": "passed",
+  "finite_AP_L": 16,
+  "moment_checks": 44,
+  "rows": [
+    {
+      "class": "P",
+      "modes": 13,
+      "Fock_dimension": 8192,
+      "Gram_reconstruction_error": 3.221000241661895e-15,
+      "free_generator_hermiticity_error": 1.8788885331293437e-15,
+      "free_commutator_error": 8.187111419380858e-15,
+      "max_moment_scaled_error": 4.897522353960173e-14,
+      "checks": [
+        {
+          "source": "vacuum",
+          "order": 0,
+          "scaled_error": 0.0
+        },
+        {
+          "source": "vacuum",
+          "order": 1,
+          "scaled_error": 4.492260268651973e-16
+        },
+        {
+          "source": "vacuum",
+          "order": 2,
+          "scaled_error": 3.6267285471088444e-15
+        },
+        {
+          "source": "vacuum",
+          "order": 3,
+          "scaled_error": 1.0013041770749197e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 4,
+          "scaled_error": 1.521033454792753e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 5,
+          "scaled_error": 1.9548021935202018e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 6,
+          "scaled_error": 2.406845391808005e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 7,
+          "scaled_error": 2.8905212228357717e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 8,
+          "scaled_error": 3.4196826520442954e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 9,
+          "scaled_error": 3.8929147721118996e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 10,
+          "scaled_error": 4.4889434063056706e-14
+        },
+        {
+          "source": "ward",
+          "order": 0,
+          "scaled_error": 4.954231453137711e-15
+        },
+        {
+          "source": "ward",
+          "order": 1,
+          "scaled_error": 1.0791522138830974e-14
+        },
+        {
+          "source": "ward",
+          "order": 2,
+          "scaled_error": 2.3421031328829872e-14
+        },
+        {
+          "source": "ward",
+          "order": 3,
+          "scaled_error": 3.4785128274533783e-14
+        },
+        {
+          "source": "ward",
+          "order": 4,
+          "scaled_error": 4.1498463571745096e-14
+        },
+        {
+          "source": "ward",
+          "order": 5,
+          "scaled_error": 4.6393254800086686e-14
+        },
+        {
+          "source": "ward",
+          "order": 6,
+          "scaled_error": 4.8367136550029326e-14
+        },
+        {
+          "source": "ward",
+          "order": 7,
+          "scaled_error": 4.897522353960173e-14
+        },
+        {
+          "source": "ward",
+          "order": 8,
+          "scaled_error": 4.789926924814049e-14
+        },
+        {
+          "source": "ward",
+          "order": 9,
+          "scaled_error": 4.5070466320309115e-14
+        },
+        {
+          "source": "ward",
+          "order": 10,
+          "scaled_error": 4.441518050117877e-14
+        }
+      ]
+    },
+    {
+      "class": "O",
+      "modes": 13,
+      "Fock_dimension": 8192,
+      "Gram_reconstruction_error": 2.4912721836499718e-15,
+      "free_generator_hermiticity_error": 1.2793363857672586e-15,
+      "free_commutator_error": 5.2909780794499164e-15,
+      "max_moment_scaled_error": 1.9598239663375445e-14,
+      "checks": [
+        {
+          "source": "vacuum",
+          "order": 0,
+          "scaled_error": 0.0
+        },
+        {
+          "source": "vacuum",
+          "order": 1,
+          "scaled_error": 1.6099911096057026e-15
+        },
+        {
+          "source": "vacuum",
+          "order": 2,
+          "scaled_error": 2.9605947323337506e-16
+        },
+        {
+          "source": "vacuum",
+          "order": 3,
+          "scaled_error": 4.536093455430673e-15
+        },
+        {
+          "source": "vacuum",
+          "order": 4,
+          "scaled_error": 8.791369594807318e-15
+        },
+        {
+          "source": "vacuum",
+          "order": 5,
+          "scaled_error": 1.1776309963176989e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 6,
+          "scaled_error": 1.404225886444141e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 7,
+          "scaled_error": 1.6260284351969223e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 8,
+          "scaled_error": 1.755610964922888e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 9,
+          "scaled_error": 1.791134064484998e-14
+        },
+        {
+          "source": "vacuum",
+          "order": 10,
+          "scaled_error": 1.5900787774121062e-14
+        },
+        {
+          "source": "ward",
+          "order": 0,
+          "scaled_error": 1.7763568394002505e-15
+        },
+        {
+          "source": "ward",
+          "order": 1,
+          "scaled_error": 7.070195261244738e-15
+        },
+        {
+          "source": "ward",
+          "order": 2,
+          "scaled_error": 1.3195793664116147e-14
+        },
+        {
+          "source": "ward",
+          "order": 3,
+          "scaled_error": 1.7637400979550758e-14
+        },
+        {
+          "source": "ward",
+          "order": 4,
+          "scaled_error": 1.9420189938599764e-14
+        },
+        {
+          "source": "ward",
+          "order": 5,
+          "scaled_error": 1.9598239663375445e-14
+        },
+        {
+          "source": "ward",
+          "order": 6,
+          "scaled_error": 1.7855874867156553e-14
+        },
+        {
+          "source": "ward",
+          "order": 7,
+          "scaled_error": 1.4228970269589026e-14
+        },
+        {
+          "source": "ward",
+          "order": 8,
+          "scaled_error": 6.7713863594683066e-15
+        },
+        {
+          "source": "ward",
+          "order": 9,
+          "scaled_error": 4.3971559654576196e-15
+        },
+        {
+          "source": "ward",
+          "order": 10,
+          "scaled_error": 1.943967292083719e-14
+        }
+      ]
+    }
+  ],
+  "seconds": 0.14312899997457862,
+  "source_sha256": "a63672b3021b955eade21eef9ed5bf23f1a72b7bca4653fdecd8b7655ce2f3d1",
+  "formula_sha256": "5e207a291ab5fffa1aa386b77a927e8b7ac341308e3dc891569506692d5585d3",
+  "scope": "different finite native Fock implementation checks the moment identities; infinite gap/scalar truth remains conditional, independent human/source review pending"
+}

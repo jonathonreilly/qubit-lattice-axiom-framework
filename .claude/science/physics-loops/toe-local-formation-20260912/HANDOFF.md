@@ -229,3 +229,47 @@ The connected protected graph has a two-row Bloch symbol with nonzero three-dire
 The causal alternative uses physical program sites with at least2oddcoordinates and moves native fuel to all-even tails. One supplied seed grows through Exp(gamma) enabled-site clocks. One F(eta)=mean[3/4delta_rho+1/4delta_(I-rho)] applies to both program and native events. Native targets wait for all4program neighbors. Nonexplosion follows from rate<=12gamma N; a fixed-path Chernoff bound gives a filled radius floor(gamma T/(8ln2))-1 with failure bounded by(2n+1)^3(exp(-gamma T/8)+exp(-gamma T/2)). Upper radius n>=12e gamma T fails with probability<=2^-n. Carrier finite-window volumeO((R+(gamma+t)T+log1/epsilon)^3). This is a supplied hybrid occurrence process, not an autonomous finite quantum controller or an infinite native-code theorem.
 
 83native,325transport(mainly288modechecks),62growth predicates pass. Same-author cold scope pass is BLOCK11_AUTHOR_RECHECK; source is main native instrument theorem, not Block5/6. Canonical PR packaging remains pending. Block10 helper trailing blank removed and nonlinear output rebound with unchanged8passing checks. Continue personally without agents to11:38:24UTC. Lock refreshed04:53:23UTC, expires05:53:23UTC. Heartbeat remains active for interruption recovery.
+
+
+Block12 working checkpoint after05:27:15UTC. All Block11 artifacts are committed/pushed as5abd365975. BLOCK12_WORKING_PLAN and BLOCK12_DERIVATION now preserve a NEW two-source Ward approximation: v=R W Omega-W R Omega, giving F_A<=Y_A+||W_A||E_A instead of the nested j/delta amplification, conditional on a separately certified Ward-source error Y. For quadraticp the new trial vhat=[W,p(D)]Omega=-2ip1 gamma(d)Omega+2p2 gamma(Kd)Omega is exactly linear. A literalL8AP one-particle covariance table and small Fock identities pass9groups; the false full-operator anticommutator shortcut is rejected. The note derives the full finite source table in a_j,d_j,W, requiring only additionalA0=Eomega^-2,C0=Eomega^-1 scalar types. No native error value or sign is claimed.
+
+A separate finite S6 two-frequency soft-mode diagnostic has9exactchecks and positivekernel18/a²+27/(ab)+18/b²+6a/b³; it is explicitlynotnativealpha andnotPRmaterialalone. The ordinaryvacuumcoefficient differs, so it is a useful adversecontrolagainstconflatingtargets. Fullcopies/codefromearlierprimaryWardchain arealreadyread; lateststronger/correlated/quarticnoteswererereadcompletely. Their existingintervalsremainindeterminate. Nextimplementationdetails, exactsourcepaths,andfiniteCliffordalgorithmareinBLOCK12_WORKING_PLAN. CurrentBlock12filesareuncommitted. Noagentexecution. Lockrefreshed05:27:15UTCexpires06:27:15UTC. Deadline11:38:24UTC; stillabout6hremain.
+
+
+## Block12 positive native scalar checkpoint (2026-09-13 06:07–06:12 UTC)
+
+The common-p two-source Ward approximation improved the earlier envelopes but
+remained inconclusive. Its first interval implementation also unnecessarily
+split affine A0,C0 coefficients, widening errors; that conservative but
+nonconforming result is preserved separately. Fixed affine evaluation and
+positive return-series C0 refinement are saved before the next route.
+
+The NEW separate-source quadratic trial retains W(p-q)(D)Omega and recomputes
+all90 signed terms. All needed moments reduce to A0,C0 and supplied odd radial
+moments through9. Two fixed3-by-3 midpoint Gram solves per envelope produce
+trial coefficients only; actual scalar intervals certify the resulting error.
+The resulting native alpha intervals are positive under the supplied native
+model, infinite gap and scalar certificates. The conservative standalone
+rational witness proves56<h²alpha<280. It imports no diagnostic-star value.
+
+Different verification machinery: actual L8 covariance contracts all90 terms
+and30 norms, including a rejected omitted-W(p-q) mutant; an L16 AP Fourier/SVD
+construction realizes the13-mode source span in a Fock space and checks all44
+vacuum/Ward moments through10 with scaled errors<5e-14; a standard-library
+rational polynomial verifier, with no SymPy/NumPy/optimizer, checks the frozen
+sign witness and complete pair census. These are same-author checks, not an
+independent source audit. Scalar/gap truth remains inherited conditionally.
+
+The first enlarged table fixture misidentified distinct pair slots as a self
+pair; corrected self-slot coverage and failure are preserved. The Fock check
+first refused two ill-conditioned Gram compression attempts, then passed with
+a thin SVD of actual positive-frequency vectors and unchanged gates. No failed
+check is counted as passing. The physical formulas did not change for these
+fixture/conditioning corrections.
+
+Next: finish explicit sign theorem/source/prose author review and commit/push
+Block12; consider canonical milestone PR with recoverable conditional parents.
+Block5 would now imply a nonzero complete-sixth infrared pole, conditional on
+its separate decomposition; do not claim a fixed-coupling phase. Block10 cold
+scope review and Block11 packaging still pending. Continue personally without
+subagents until11:38:24 UTC. Own lock refreshed06:07:40, expires07:07:40 UTC.

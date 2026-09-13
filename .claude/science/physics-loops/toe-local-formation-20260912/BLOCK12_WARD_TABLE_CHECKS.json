@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "count": 9,
+  "checks": [
+    {
+      "name": "literal_native_P_full_source_table",
+      "entries": 81,
+      "max_scaled_residual": 9.806954016004332e-15
+    },
+    {
+      "name": "literal_native_O_full_source_table",
+      "entries": 81,
+      "max_scaled_residual": 2.398970349663164e-14
+    },
+    {
+      "name": "small_Fock_native_Ward",
+      "exact": true
+    },
+    {
+      "name": "small_Fock_two_source_identity",
+      "exact": true
+    },
+    {
+      "name": "anticommutator_on_original_vacuum",
+      "exact": true
+    },
+    {
+      "name": "false_full_operator_anticommutator_rejected",
+      "rejected": true
+    },
+    {
+      "name": "local_linear_polynomial_trial",
+      "exact": true
+    },
+    {
+      "name": "Ward_source_norm",
+      "exact": true
+    },
+    {
+      "name": "Ward_first_source_moment",
+      "exact": true
+    }
+  ],
+  "seconds": 0.168096583976876,
+  "scope": "finite AP table test and synthetic paired CAR identity; no infinite native alpha or gap inference",
+  "source_sha256": "49aab9e8740a04518d65b06f95261a8b17ef06c7e33156ca017f22982e1447ea",
+  "helper_sha256": "2e028f08ede9a84b358ef85e87076d393840a94b30c6857373b77774ced2b9ca",
+  "note_sha256": "0ea1fd784f419249a1c7286d6f74b356cb58bd92db21d9601477e1944faffc10"
+}

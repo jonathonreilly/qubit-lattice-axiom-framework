@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "ordered_pairs": 90,
+  "channel_norm_checks": 30,
+  "max_kernel_absolute_error": 3.552713678800501e-15,
+  "max_norm_absolute_error": 2.6677091636748997e-15,
+  "signed_nominal_direct": 705.8661533497992,
+  "signed_nominal_formula": 705.8661533497992,
+  "omitted_opposite_match_mutant_rejected": true,
+  "seconds": 0.2869979999959469,
+  "scope": "finite native AP covariance identity check; no infinite native scalar sign or independent source review",
+  "source_sha256": "5fbfba0e11b9c5db67021c67d255dcb61f550fbf487438d2a25c8181ef7a5e09",
+  "helper_sha256": {
+    "block12_clifford.py": "e0f205be6006ffbcb297842fe57abd720e095a90c4bd5f76ce2ef3bebd346479",
+    "block12_nominal.py": "1176f94c6c34a67b5b08abd33079a6c9e2c31e3cf41d2017b8621daf7dc792f7"
+  }
+}

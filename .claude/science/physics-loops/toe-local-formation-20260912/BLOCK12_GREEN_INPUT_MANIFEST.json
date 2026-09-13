@@ -1,0 +1,7 @@
+{
+  "revision": "281dbe3fde49512baa2c4005e15985c4fbfb4cde",
+  "original_path": ".claude/science/physics-loops/native-certified-local-green-scalars-20260909/verification/root-isolated/disjoint_methods/elliptic_RESULT.json",
+  "copy": "block12_inputs/elliptic_result.json",
+  "sha256": "4df3258f320c5c8ea854fc1186735a60a51bee490f53ae356675c3f034f3faf0",
+  "source_truth": "inherited conditional source certificate, not independently replayed"
+}

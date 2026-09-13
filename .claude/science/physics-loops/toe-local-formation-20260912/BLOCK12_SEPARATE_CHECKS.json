@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "ordered_pairs": 90,
+  "norm_checks": 30,
+  "table_fixture_classes": 7,
+  "max_table_absolute_error": 2.3092638912203256e-14,
+  "max_kernel_absolute_error": 1.2434497875801753e-14,
+  "max_norm_absolute_error": 3.552981199783465e-14,
+  "complete_nominal_direct": 993.4628032947937,
+  "complete_nominal_formula": 993.462803294794,
+  "omitted_W_p_minus_q_mutant_rejected": true,
+  "seconds": 0.9546303329989314,
+  "source_sha256": "a7de3b0378958df4a18d73fd021158a696e94b7f55e4f028c1f2543d6de7c9ba",
+  "helper_sha256": {
+    "block12_clifford.py": "e0f205be6006ffbcb297842fe57abd720e095a90c4bd5f76ce2ef3bebd346479",
+    "block12_nominal.py": "1176f94c6c34a67b5b08abd33079a6c9e2c31e3cf41d2017b8621daf7dc792f7",
+    "block12_separate.py": "109667a5fb582621d9b2cf16aafcbb1a7def7614ed08f5e46286629340806988"
+  },
+  "scope": "finite native covariance algebra check; no infinite alpha sign or source re-audit"
+}

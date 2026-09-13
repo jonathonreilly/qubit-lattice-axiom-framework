@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    "literal_first_inverse_state",
+    "literal_inner_inverse_source",
+    "literal_disjoint_Ward_kernel",
+    "distinct_regular_vacuum_kernel",
+    "even_determinant",
+    "odd_determinant",
+    "literal_soft_mode_vertex_derivative",
+    "reference_zero_mode",
+    "omitted_impurity_derivatives_rejected"
+  ],
+  "count": 9,
+  "seconds": 0.5265657920390368,
+  "ordered_pair_soft_kernel": "3*(2*a**3 + 6*a**2*b + 9*a*b**2 + 6*b**3)/(a**2*b**3)",
+  "complete_diagnostic_soft_scalar": "135*(2*a**3 + 6*a**2*b + 9*a*b**2 + 6*b**3)/(4*a**2*b**3)",
+  "scope": "finite two-frequency diagnostic only; no native alpha value or sign",
+  "source_sha256": "2e028f08ede9a84b358ef85e87076d393840a94b30c6857373b77774ced2b9ca",
+  "plan_sha256": "d0ed65ca83c0a1154884e0a47993a81336f92c25a9060f231d9b03f4a6a915d4"
+}

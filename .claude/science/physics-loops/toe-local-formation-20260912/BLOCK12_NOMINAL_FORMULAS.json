@@ -1,0 +1,49 @@
+{
+  "kernels": [
+    {
+      "A": "O",
+      "C": "O",
+      "opposites": 0,
+      "multiplicity": 6,
+      "expression": "(L1*p0*q1 - L1*p1*q0 + 2*L1*p1*q2 - 2*L1*p2*q1 + 3*p0*q0 + 6*p0*q2 - 6*p2*q0 - 12*p2*q2)/3"
+    },
+    {
+      "A": "O",
+      "C": "P",
+      "opposites": 0,
+      "multiplicity": 12,
+      "expression": "(L1*p0*q1 - L1*p1*q0 + 2*L1*p1*q2 - 2*L1*p2*q1 + 3*p0*q0 + 6*p0*q2 - 6*p2*q0 - 12*p2*q2)/3"
+    },
+    {
+      "A": "P",
+      "C": "O",
+      "opposites": 0,
+      "multiplicity": 12,
+      "expression": "(L1*p0*q1 - L1*p1*q0 + 2*L1*p1*q2 - 2*L1*p2*q1 + 3*p0*q0 + 6*p0*q2 - 6*p2*q0 - 12*p2*q2)/3"
+    },
+    {
+      "A": "P",
+      "C": "P",
+      "opposites": 2,
+      "multiplicity": 12,
+      "expression": "(L1*p0*q1 - L1*p1*q0 + 8*L1*p1*q2 + 4*L1*p2*q1 - L3*p1*q2 - L3*p2*q1 + 3*p0*q0 + 6*p0*q2 - 6*p2*q0 - 18*p2*q2)/3"
+    },
+    {
+      "A": "P",
+      "C": "P",
+      "opposites": 1,
+      "multiplicity": 48,
+      "expression": "(2*L1*p0*q1 - 2*L1*p1*q0 + 10*L1*p1*q2 + 2*L1*p2*q1 - L3*p1*q2 - L3*p2*q1 + 6*p0*q0 + 12*p0*q2 - 12*p2*q0 - 30*p2*q2)/6"
+    }
+  ],
+  "norms": {
+    "P": [
+      "(36*L1**2*p2**2 - 2*L1*L3*p2**2 + 6*L1*p0*p1 + 60*L1*p1*p2 + 9*p0**2 + 36*p0*p2 + 18*p1**2 + 180*p2**2)/9",
+      "8*(2*L1*p1*p2 + p1**2 + 6*p2**2)"
+    ],
+    "O": [
+      "(4*L1*L3*p2**2 + 6*L1*p0*p1 + 24*L1*p1*p2 + 6*L3*p1*p2 + 9*p0**2 + 36*p0*p2 + 18*p1**2 + 198*p2**2)/9",
+      "8*(L3*p1*p2 + 3*p1**2 + 21*p2**2)/3"
+    ]
+  }
+}

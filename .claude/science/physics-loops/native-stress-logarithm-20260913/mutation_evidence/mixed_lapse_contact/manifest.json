@@ -1,0 +1,10 @@
+{
+  "name": "mixed_lapse_contact",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "8e9c6d86a1cb76c3cac679b8a1d990875a35e1035d9f54ba3ea8b81060b3c2fd",
+  "old": "contact_mom.append(-np.mean(np.sum(nm*vec,axis=1))/4)",
+  "new": "contact_mom.append(-np.mean(np.sum(nm*vec,axis=1))/8)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-o5w_0ru9/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-o5w_0ru9/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 316, in run\n    near('joint_lapse_frame_mixed_contacts_'+str((zeta,qn)),contact_pos,factor*np.array(contact_mom))\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-o5w_0ru9/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-o5w_0ru9/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('joint_lapse_frame_mixed_contacts_(0.5, (0, 0, 0))', {'max_residual': 0.24893560104239376, 'tolerance': 2e-11})\n"
+}

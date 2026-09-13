@@ -1,0 +1,10 @@
+{
+  "name": "finite_contact_scale",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "8a5ed480160e855c4af994681b62323c316bd841f6c707e0d86b3bec581d3939",
+  "old": "8*cR*s.sin(space*qq/2)**2/space**2",
+  "new": "4*cR*s.sin(space*qq/2)**2/space**2",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-r4daa0fx/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-r4daa0fx/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 204, in run\n    eq('finite_physical_gradient_contact_limit',s.limit(4*cR*s.sin(space*qq/2)**2/space**2,space,0),2*cR*qq*qq)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-r4daa0fx/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 35, in eq\n    check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-r4daa0fx/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_physical_gradient_contact_limit', {})\n"
+}

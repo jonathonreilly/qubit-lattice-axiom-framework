@@ -1,0 +1,10 @@
+{
+  "name": "twisted_boundary",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "ed0b32e78545feed11aaa22305cfdc3dbcdb5ae4bbb2d42b7629d5f394fa0789",
+  "old": "np.exp(2j*np.pi*twist[j]) if",
+  "new": "np.exp(1j*np.pi*twist[j]) if",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4tgm83ty/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4tgm83ty/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 253, in run\n    for j in range(3):near('shift_symbol_'+str(j),shifts[j]@plane,plane*np.exp(1j*moms[:,j]))\n                      ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4tgm83ty/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4tgm83ty/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('shift_symbol_0', {'max_residual': 0.05513629102625654, 'tolerance': 2e-11})\n"
+}

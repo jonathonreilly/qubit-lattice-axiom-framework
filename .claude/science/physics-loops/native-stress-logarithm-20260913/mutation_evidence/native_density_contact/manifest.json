@@ -1,0 +1,10 @@
+{
+  "name": "native_density_contact",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "c6a5cef221ca5c0b6fff5afa01882abe90556919bf131a7599e1cf5e4f7301d9",
+  "old": "onsite=np.diag(np.repeat(coef*diff,2))",
+  "new": "onsite=np.diag(np.repeat(coef*diff/2,2))",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-7gd83j2z/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-7gd83j2z/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 339, in run\n    near('on_site_contact_exact_'+str(zeta),contact,coef*dc.sum())\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-7gd83j2z/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-7gd83j2z/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('on_site_contact_exact_0.5', {'max_residual': 0.6256637120812691, 'tolerance': 2e-11})\n"
+}

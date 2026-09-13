@@ -1,0 +1,10 @@
+{
+  "name": "spectral_density",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "8a3822e034074f4d3d799be93d6dac48308051d383c291227788137ca3bb6f98",
+  "old": "np.dot(weights,J*em*ep)/(4*np.pi**2)",
+  "new": "np.dot(weights,J*em*ep)/(8*np.pi**2)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4zz69eje/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4zz69eje/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 235, in run\n    near('full_shell_projector_density_'+str((Q.tolist(),Omega)),actual,target)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4zz69eje/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 38, in near\n    check(name,err<tol,max_residual=err,tolerance=tol)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-4zz69eje/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('full_shell_projector_density_([0.0, 0.0, 0.3], np.float64(0.37))', {'max_residual': 3.956087726173068e-06, 'tolerance': 2e-11})\n"
+}

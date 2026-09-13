@@ -1,0 +1,10 @@
+{
+  "name": "geometric_mixed_contact",
+  "original_sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a",
+  "mutated_sha256": "fb4365229100a1ad554b350a52e420471cb54fc6389d834360e8dd0c0e1af0be",
+  "old": "C2=-vel*qz/4*np.ones(vol)",
+  "new": "C2=vel*qz/4*np.ones(vol)",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8msxl6gh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 375, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8msxl6gh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 358, in run\n    check('geometric_contact_quadratic_limit_'+str((zeta,eps)),err<eps*vel*qz,\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          normalized_error=float(err))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-stress-mutation-8msxl6gh/scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\", line 30, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('geometric_contact_quadratic_limit_(0.5, 0.03)', {'normalized_error': 0.5509962232336936})\n"
+}

@@ -378,3 +378,25 @@ annihilator estimates. Read the derivation/working plan before continuing.
 
 Own lock refreshed07:25:40UTC, expires08:25:40UTC. Deadline11:38:24UTC;
 continue personally without agents, heartbeat quiet recovery remains active.
+
+
+Block14 update around07:58UTC: the full cold source pass is now in
+BLOCK14_COLD_AUTHOR_REVIEW. The exact annihilation-map direct-integral
+argument closes the number/domain issue before bounds; no generalized
+annihilator norm is used. A local Wick-ordered three-Majorana comparison
+proves E9 is sharp in the general local-source class, without claiming a
+nonzero cubic coefficient for this specific star. The literal native
+positive-z projector sign is now fixed to(I-Γ_z)/2 and checked by the cell
+derivative. Final33 finite checks pass; the half-Ward terms are explicitly
+paired and their omitted-half adverse comparison rejected. No mathematical
+predicate failed in Block14.
+
+Next: extend PR8086 in its existing worktree with a new native-star infrared
+spectral note/runner, keeping the original Ward unit in the same main-based
+delta. This closes the needed projected node identification directly for the
+defined star vector, not its full native electric perturbation derivation.
+A new primary can use the existing exact arithmetic helper to derive alpha's
+coarse lower bound, plus the Block14 independent finite checks. Preserve all
+parent input closure and author/independent-review boundaries; then update
+PR8086 title/body around the complete final unit. Do not create a redundant
+source PR unless scope requires it. Continue personally to11:38:24UTC.

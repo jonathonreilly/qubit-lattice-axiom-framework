@@ -71,7 +71,8 @@ def run():
     null=constraints.nullspace()
     checked('zero_cell_functional_only_origin_component',len(null)==1 and null[0]==s.eye(8)[:,0])
     X=s.Matrix([[0,1],[1,0]]);Z=s.diag(1,-1)
-    Gz=s.kronecker_product(Z,Z,X);P=(s.eye(8)+Gz)/2
+    Gz=s.kronecker_product(Z,Z,X);P=(s.eye(8)-Gz)/2
+    checked('literal_native_positive_z_projector_sign',K.diff(z[2]).subs(dict(zip(z,[1,1,1])))==Gz)
     checked('three_column_native_cone_Gram',P.extract([0,2,4],[0,2,4])==s.eye(3)/2)
 
     # Four-mode comparator with a known scalar shift to keep every defect gapped.
@@ -138,6 +139,20 @@ def run():
         maximum=max(maximum,float(np.max(abs(direct-reconstructed))));counts.append(len(terms))
     checked('three_annihilator_word_recursion',maximum<1e-12,absolute_error=maximum,word_counts=counts)
     chi=sum((inverse(C,0)@g@inverse(A,0)@vacuum for A in pairs for C in pairs if not set(A)&set(C)),np.zeros(dim,complex))/8
+    # Direct three-inverse words versus the paired bounded Ward scalar.
+    xs={A:inverse(A,0)@vacuum for A in pairs}
+    Js={A:2j*(legs[A[0]]+legs[A[1]]) for A in pairs}
+    vs={A:inverse(A,0)@Js[A]@inverse(A,0)@vacuum for A in pairs}
+    direct=0j;mixed=0j;soft=0j
+    for A in pairs:
+        for C in pairs:
+            if set(A)&set(C):continue
+            RA,RC=inverse(A,0),inverse(C,0)
+            direct+=np.vdot(xs[C],xs[A]);mixed+=np.vdot(xs[C],g@vs[A])
+            soft+=np.vdot(vacuum,(RC@RA+0.5*RC@Js[C]@RC@g@RA-0.5*RC@g@RA@Js[A]@RA)@vacuum)
+    scalar=np.real(direct-mixed)
+    close('paired_half_Ward_terms_match_defined_scalar',soft,scalar)
+    checked('omitted_half_Ward_factors_rejected',abs(np.real(direct-2*mixed)-scalar)>1e-8,residual=float(abs(np.real(direct-2*mixed)-scalar)))
     nonlinear=float(np.linalg.norm(chi[number>=3])**2)
     checked('nonlinear_comparator_is_nonvacuous',nonlinear>1e-18,weight=nonlinear)
     close('star_odd_particle_sectors',chi[number%2==0],0)

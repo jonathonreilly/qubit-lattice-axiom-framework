@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "count": 30,
+  "count": 33,
   "checks": [
     {
       "name": "pull_through_constants"
@@ -39,6 +39,9 @@
       "name": "zero_cell_functional_only_origin_component"
     },
     {
+      "name": "literal_native_positive_z_projector_sign"
+    },
+    {
       "name": "three_column_native_cone_Gram"
     },
     {
@@ -63,6 +66,14 @@
         24,
         44
       ]
+    },
+    {
+      "name": "paired_half_Ward_terms_match_defined_scalar",
+      "absolute_error": 2.6645361414262163e-15
+    },
+    {
+      "name": "omitted_half_Ward_factors_rejected",
+      "residual": 0.42653190419909226
     },
     {
       "name": "nonlinear_comparator_is_nonvacuous",
@@ -115,8 +126,8 @@
       "name": "omitted_Wick_subtractions_rejected"
     }
   ],
-  "seconds": 0.09433675004402176,
-  "source_sha256": "48c95ef2f08f5d6d626e8d2e35b81074fa4f9b082c03aee7f5bef0f8422cd3f5",
-  "derivation_sha256": "8b1c336a0e77cb66a7597d79258f24d7cf010c3f9b4d8156fceccebe409625df",
+  "seconds": 0.09896249999292195,
+  "source_sha256": "680dc711b1bbc1c91b1633a991edebb52f80a5b8d771f735714b8958fd0b0cfc",
+  "derivation_sha256": "bbfe78e48d8f36b57d428df10a9037ee3c8cc857684aef1e8dca22963aa3dedb",
   "scope": "exact arithmetic/native cell checks and a distinct shifted finite-Fock comparator; no native spectral fit, infinite proof by enumeration or independent source review"
 }

@@ -38,7 +38,7 @@ R_A(z)=-(D_A+z)^-1, z>=0.
 The positive-scalar unit derives the all-parity inequality D_A>=delta=h/4
 and the real scalar7<h²alpha<330 with elementary radial suppliers. These
 are explicit mathematical inputs to the present continuation. Define the
-actual odd star transition vector, with every ordered pair retained, by
+specified odd star transition vector, with every ordered pair retained, by
 
 chi=(1/8)sum_(A∩C=empty) R_C(0) gamma_0 R_A(0) Omega.          (1.1)
 
@@ -88,10 +88,21 @@ a(lambda)R_A(z)=R_A(z+omega_lambda)a(lambda)
              +R_A(z+omega_lambda)L_A(lambda)R_A(z).         (2.2)
 
 This is equivalently the minus-energy shift in the negative-energy
-resolvent convention. It can be justified after smearing by the core
-commutator identity and the bounded inverses; the number-domain result
-then identifies the resulting L² annihilation kernel. No volume-growing
-annihilator norm is inserted into an estimate.
+resolvent convention. More explicitly, the annihilation map A sends a
+smooth number-domain vector psi to the Fock-valued L² function
+(A psi)(lambda)=a(lambda)psi. It obeys
+
+A(D_A+z)psi=(D_A+z+omega_lambda)(A psi)(lambda)
+                                         +L_A(lambda)psi.
+
+Here the first operator on the right is a direct-integral self-adjoint
+operator bounded below by delta. For a smooth psi, integrated graph norms
+are finite because H0<=2sqrt3h N and the necessary number moments are finite.
+Apply the identity to R_A(z)psi, already known to be smooth, and invert that
+direct-integral operator. This proves(2.2) as an L² identity and hence almost
+everywhere, without assigning an operator norm to a generalized annihilator.
+Repeated application is legitimate because each shifted inverse and each
+local linear insertion preserves all finite number domains.
 
 Applying(2.2) twice and using a(lambda)Omega=0 gives the exact vector identity
 
@@ -124,6 +135,8 @@ contraction branch for each field; its final annihilator kills Omega.
 Passing an inverse adds L and one inverse. Passing a field contracts it
 or moves the annihilator with its graded sign. All shifted inverse
 parameters stay nonnegative, hence their norms stay at most1/delta.
+A word bound means its coefficient absolute value times delta^-r and
+the assigned field bounds; it is not the possibly smaller actual word norm.
 The sum of bounds after this operation is at most
 
 [r(5h/delta)+3ell] times the preceding word bound.
@@ -254,7 +267,7 @@ mu_3plus([0,E])/mu_1([0,E])
  <[45,464,760² pi^5/(432*49)] (E/h)^6.                     (5.5)
 
 At E/h<=1/32768 this is less than10^-12, as an exact rational comparison
-using pi<22/7 will check. This is a deliberately conservative free-reference
+using pi<22/7 verifies. This is a deliberately conservative free-reference
 energy window, not an experimentally calibrated crossover or a finite-
 coupling phase claim. The bound applies to the complete higher odd sectors.
 
@@ -293,24 +306,53 @@ for p>=3/2. This follows from the layer-cake integral of the positive
 spectral measure, not from a formal value at the Dirac node. These are
 operator-domain conclusions in the supplied free reference only.
 
-## 7. Optional sharpness check to complete
+## 7. Sharpness in the class of local odd sources
 
-For a genuinely local three-particle comparison, Wick-order a product of
-three same-cell Majoranas with internal labels0,2,4, chosen from distinct
-Γ_z pairs. Its one-particle component is removed by the three ordinary
-Gaussian contractions; its vacuum vector has exactly three particles.
-Along the positive z ray, the three projected columns have Gram I/2, so
-there is a cone on which their exterior product is bounded away from zero.
-Restricting three energies to fixed positive fractions of E whose sum is
-at most E gives a contribution proportional to E^9. This would show that
-the exponent9 is sharp in the class of local odd sources after removal of
-the one-particle sector. The full band-frame and exterior-product proof is
-still to be written and checked; sharpness is not used in sections1–6.
+This comparison concerns the E^9 upper exponent for the class of local odd
+sources after their one-particle part is removed, not a nonzero cubic
+coefficient of the particular star chi. Choose same-cell Majoranas g1,g2,g3
+with internal labels0,2,4, from three distinct Γ_z pairs. Define the bounded
+Wick-ordered operator
+
+Y3=g1 g2 g3-<g1 g2>g3+<g1 g3>g2-<g2 g3>g1.
+
+The Gaussian Wick identity shows that Y3 Omega has exactly three particles;
+its one-particle term is subtracted with all three signs retained. In the cell convention of section2, put Γ_z=Z tensor Z tensor X,
+with the usual two-by-two Pauli matrices. Along the positive z ray the
+literal native iK(k)/omega(k) tends to -Γ_z, so the limiting positive
+projector is (I-Γ_z)/2. Its compression to these three labels is I3/2. Projecting the three coordinate vectors and orthonormalizing them,
+then adding the fourth band vector, gives a continuous band frame on a
+sufficiently small angular cone around this ray and at small positive radius.
+
+At the limiting central ray the matrix of the three selected band
+coefficients sqrt2 conjugate(u_b,s_j) is I3. Therefore, for a fixed smaller
+cone and sufficiently small radii, the determinant formed with any three
+momenta in that cone, assigned respectively to these three bands, has
+modulus at least1/2. This follows by continuity of its nine entries, not
+from a numerical sample of the cone.
+
+The three-particle wave function is precisely that determinant. Its squared
+norm uses the ordered-label integral divided by3!. For small E, restrict
+each of the three momenta to that cone with radius between E/(6h) and E/(4h).
+Each frequency is at most E/4, so the total energy is below E. Each shell
+has a fixed positive multiple of (E/h)^3 measure. The determinant lower
+bound then gives a positive constant times (E/h)^9 spectral weight.
+The corresponding upper E^9 bound follows either from the same bounded
+three-field wave function or the local triple-annihilator estimate.
+
+Thus E^9 is attained by a local comparison source in this native bath.
+Additional symmetries of a specific star can suppress its cubic coefficient;
+sections1–6 require only the upper bound and make no contrary assertion.
 
 ## Author validation state
 
-The derivation above is provisional until its normalization, pull-through
-word recursion, number-domain argument and native little-group step receive
-the planned different finite checks and a cold source pass. The decimal-free
-constants in(3.3),(5.2)–(5.5) also still need exact arithmetic verification.
-No independently retained status, source landing or new axiom is claimed.
+The first32 checks pass: exact constants and native cell/reflection algebra,
+a shifted four-mode Fock comparator for full-matrix pull-through and triple
+word recursion, a nonvacuous factorial moment, the paired half-Ward identity,
+and Wick subtraction. The ratio comparison is at most2.4188e-14 at the
+chosen window, below the stated10^-12 bound. These are same-author checks,
+not an independent source review or an infinite proof by enumeration. The
+number-domain and direct-integral arguments above are the analytical
+justification. The subsequent complete cold source pass is recorded separately.
+Canonical packaging and independent source review remain pending. No independently retained status, source landing or new axiom is
+claimed.

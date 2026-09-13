@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py", line 245, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py", line 154, in run
+    close(tag+'_actual_loss_not_identity', np.trace(R), 8.)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py", line 45, in close
+    check(name, residual < tolerance)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py", line 39, in check
+    raise AssertionError(name)
+AssertionError: initial_cycle_actual_loss_not_identity

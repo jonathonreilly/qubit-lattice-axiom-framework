@@ -27,3 +27,27 @@ The initial analog-probability relay plan is superseded; see REVIEW_HISTORY.
 No native/Born selection, autonomous controller or full TOE is established.
 No independent review, landing or audit verdict. Continue after this target
 to stronger causal programs or the next ranked physical assembly question.
+
+
+At12:48UTC, BLOCK01_DERIVATION.md is written before checking. The direct
+7edge-qubit Pauli and separate6mode CAR checker passes110 exact assertions
+in76.63s. Full connected hopping, N=2, both first branches, physical NN
+projector copying, current signs and the four-dimensional spectral formula
+are checked. A rational Taylor enclosure at t*tau=1/40 gives second plus
+probabilities about0.6677826618251013 and0.3082324509393514; the analytical
+gap lower bound is33/100. Each final branch current has the proved bound
+<=-11t/40. Bipartite-real covariance keeps mean matter energy zero in all
+these histories, with no controller-energy claim.
+
+At12:58UTC the local-law checker passes121 named checks with5050 Record
+support visits across9prefixes,24rotations and endpoint fixtures. Two checker
+defects and their actual reproductions are preserved under recovery/block01_local.
+The author reread the complete proof and both implementations. Independent
+review is pending; no formal status or negative-packet PASS is asserted.
+
+The finite native-to-Record interface is a coherent checkpoint. Prepared
+probability controllers and the schedule remain supplied, so simply increasing
+the history table would add little. Next derive the actual protected growth
+carrier spectrum and test whether the infrared construction can use that SAME
+Hamiltonian. PR packaging may follow a stronger coherent unit; it does not
+halt discovery. Continue personally through00:14:41UTC.

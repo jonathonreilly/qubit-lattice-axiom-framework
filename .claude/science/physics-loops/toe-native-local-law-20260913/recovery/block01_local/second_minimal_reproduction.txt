@@ -1,0 +1,10 @@
+Exact fixture requested p_plus=0, p_minus=0, s0=0
+Actual F weight on P: 1/5
+Matrix([[1, 0], [0, 0]]); basis=None
+Matrix([[200, 0], [0, 200]]); basis=None
+Matrix([[100, 0], [0, 100]]); basis=None
+Matrix([[21.0000000000000, 0], [0, 20.0000000000000]]); basis=None
+Matrix([[10, 0], [0, 10]]); basis=None
+Traceback (most recent call last):
+  File "<stdin>", line 12, in <module>
+AssertionError: rational_controller_(0, 0, 1)

@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block01_local_law.py", line 192, in <module>
+    out=run();(HERE/'BLOCK01_LOCAL_LAW_CHECKS.json').write_text(json.dumps(out,indent=2)+'\n')
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block01_local_law.py", line 125, in run
+    check('initial_law_frame_decoder',decode(R)[0]==sites and decode(R)[2]==s.Rational(1,40))
+                                      ~~~~~~^^^
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block01_local_law.py", line 75, in decode
+    cp=[x for x,a in R.items() if controller(a,100) is not None]
+                                  ~~~~~~~~~~^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block01_local_law.py", line 29, in controller
+    return q if same(a,(tag+q)*I) and in_range(q,0,1) else None
+                                      ~~~~~~~~^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913/.claude/science/physics-loops/toe-native-local-law-20260913/check_block01_local_law.py", line 22, in in_range
+    return bool(q>=low) and bool(q<=high if closed else q<high)
+           ~~~~^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/relational.py", line 519, in __bool__
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: cannot determine truth value of Relational: p_minus + 100 >= 0

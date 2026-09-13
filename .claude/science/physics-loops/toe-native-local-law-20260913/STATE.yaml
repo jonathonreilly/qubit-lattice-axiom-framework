@@ -15,7 +15,7 @@ checkpoint_interval_minutes: 30
 campaign: native_local_law
 block: 1
 active_route: native_two_cycle_history_and_projector_relay
-actual_current_surface_status: open
+actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
@@ -23,5 +23,6 @@ continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
 lock_expires_utc: 2026-09-13T13:30:01Z
-next_action: Derive and check the two-cycle native history, same-condition probability separation, and a physical nearest-neighbor projector relay that repairs this finite protocol.
+next_action: Preserve the checked finite relay milestone, then derive the actual protected growth-carrier spectrum and assess compatibility with the infrared carrier.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.
+last_checkpoint_utc: 2026-09-13T12:58:07Z

@@ -25,3 +25,19 @@ The initial relay plan emitted an analog scalar probability Record and used
 move the probability controllers next to the second native event, use12
 prepared Records, and copy the first actual projector through one strict-NN
 qubit operation. This supplies a clearer physical auxiliary dictionary.
+
+BLOCK01 author check,12:58UTC: complete note, native checker and local-law
+checker reread. Both checking paths now pass. The initially failing symbolic
+cross-tag recognizer and floating endpoint fixture are preserved with actual
+reproductions; no tolerant comparison was substituted. Native nonzero-dwell
+equivalence is proved via the protected intertwiner, with low-order native/CAR
+derivative comparisons and a separate rigorous6mode enclosure as checks.
+No externally independent review has run. This closes only the finite supplied
+interface target. It leaves the law, preparation, timing, control resources and
+arbitrary-history scaling open; it supplies no axiom-forcing result.
+
+Reranking: pursuing an exponentially prepared larger table would mostly repeat
+PR8088. The next discriminating derivation is the common growth/infrared
+Hamiltonian: calculate the protected-carrier spectrum before composing the
+positive-star infrared conclusions. Finite relay PR packaging is pending a
+coherent value/gate review, not used as a stopping point.

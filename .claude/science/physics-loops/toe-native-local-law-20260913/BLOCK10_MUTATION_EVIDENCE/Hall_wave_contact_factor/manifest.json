@@ -1,0 +1,10 @@
+{
+  "name": "Hall_wave_contact_factor",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "f89680db7a802fee6d89af081a21a6ca3d5630bc94fcabb7d7be69d0f2a06d3b",
+  "old": "+s.I*om*H*Cz",
+  "new": "+s.I*om*H*Cz/2",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-3zge1753/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-3zge1753/primary.py\", line 327, in run\n    check('Maxwell_Hall_physical_polynomial',s.factor(det-om**2*physical)==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-3zge1753/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Maxwell_Hall_physical_polynomial', {})\n"
+}

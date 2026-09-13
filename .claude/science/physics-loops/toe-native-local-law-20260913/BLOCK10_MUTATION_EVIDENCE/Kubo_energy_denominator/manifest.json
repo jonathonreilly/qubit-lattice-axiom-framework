@@ -1,0 +1,10 @@
+{
+  "name": "Kubo_energy_denominator",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "f5ec9376fdec770a23d9b5f9ffdefecd5378c027657e560fa6a9317357792446",
+  "old": "/(energy[1]-energy[0])**2",
+  "new": "/(energy[1]-energy[0])**3",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rac0p98p/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rac0p98p/primary.py\", line 314, in run\n    close('spectral_Kubo_projector_'+str(trial),spectral,geometric,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rac0p98p/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-rac0p98p/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('spectral_Kubo_projector_0', {'error': 0.03206656577142899})\n"
+}

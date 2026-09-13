@@ -1,0 +1,10 @@
+{
+  "name": "angular_numerator",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "3e6bfa07db681e3a82cc8c0f079182764a40d22bde4867c006722b98bc0eb393",
+  "old": "inside=E*np.sum(w/q2)-2*E@avg@metric",
+  "new": "inside=E*np.sum(w/q2)-E@avg@metric",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-9_ulyjs3/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-9_ulyjs3/primary.py\", line 161, in run\n    close('scalar_angular_matrix_'+str(ratio),angular_matrix(E,n,w),m,2e-8)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-9_ulyjs3/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-9_ulyjs3/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('scalar_angular_matrix_0.6', {'error': 0.3895833333333508})\n"
+}

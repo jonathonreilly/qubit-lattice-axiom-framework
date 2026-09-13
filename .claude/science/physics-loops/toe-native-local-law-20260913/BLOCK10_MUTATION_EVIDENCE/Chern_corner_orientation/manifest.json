@@ -1,0 +1,10 @@
+{
+  "name": "Chern_corner_orientation",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "71d5c274f03927ba09a7b99ded0750061e1ace959518ed4e26636abc8985ad1a",
+  "old": "orientation=np.array([1,-1,-1,1])",
+  "new": "orientation=np.array([-1,-1,-1,1])",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-6sl8fp1z/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-6sl8fp1z/primary.py\", line 303, in run\n    check('slice_corner_degree_'+str(mass),index==int(mass<2),degree=int(degree),index=int(index))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-6sl8fp1z/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('slice_corner_degree_2.2', {'degree': -2, 'index': 2})\n"
+}

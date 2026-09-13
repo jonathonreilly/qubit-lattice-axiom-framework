@@ -1,0 +1,10 @@
+{
+  "name": "coframe_linear_coefficient",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "befc95adbffa020737a6dabed2f730ee5059cbbcc3d4e2bb3d18e830d31fc5c6",
+  "old": "derivative=-5*C/3+2*np.trace(C)*np.eye(4)/3",
+  "new": "derivative=-4*C/3+2*np.trace(C)*np.eye(4)/3",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ir8l5clu/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ir8l5clu/primary.py\", line 170, in run\n    check('generic_coframe_derivative_'+str(trial),errs[2]<1e-5 and errs[1]<.27*errs[0] and errs[2]<.27*errs[1],errors=errs)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ir8l5clu/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('generic_coframe_derivative_0', {'errors': [0.33330747172537434, 0.3333268679808568, 0.3333317169981749]})\n"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "gauge_curvature_bubble_factor",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "d2c53630dcc2988b779ac019c0b4f11b91e8498c33b17e34a66b8ac374e5c30e",
+  "old": "bubble=2*np.sum(abs(pert",
+  "new": "bubble=np.sum(abs(pert",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-hn_vtu4n/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-hn_vtu4n/primary.py\", line 277, in run\n    check('finite_Peierls_gauge_curvature_'+str(seed),abs(g['sum'])<2e-10 and abs(g['contact'])>1 and abs(g['bubble'])>1,**g)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-hn_vtu4n/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('finite_Peierls_gauge_curvature_73', {'seed': 73, 'gap': np.float64(0.29999999999999755), 'contact': np.float64(42.260678717277386), 'bubble': np.float64(-21.130339358638693), 'sum': np.float64(21.130339358638693), 'spectrum_error': 5.6066262743570405e-15, 'matrix_hermiticity': 0.0})\n"
+}

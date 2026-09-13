@@ -1,0 +1,10 @@
+{
+  "name": "native_incidence_symbol",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "0b2ec136ca9aab8c247d81f79e4fb9fa7b583adc4ce0dd45b5970b6aa48dec43",
+  "old": "(2*D[i]/a*np.sin(qmom[i]/2))",
+  "new": "(D[i]/a*np.sin(qmom[i]/2))",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmfulhcx/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmfulhcx/primary.py\", line 238, in run\n    close('native_Peierls_Ward_'+str(trial),contraction,(native_h(k+qmom/2)-native_h(k-qmom/2))/a,2e-11)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmfulhcx/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmfulhcx/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_Peierls_Ward_0', {'error': 2.338629446601872})\n"
+}

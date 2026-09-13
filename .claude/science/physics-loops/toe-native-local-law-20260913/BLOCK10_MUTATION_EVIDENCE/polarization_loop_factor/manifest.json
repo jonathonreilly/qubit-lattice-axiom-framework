@@ -1,0 +1,10 @@
+{
+  "name": "polarization_loop_factor",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "dd5507beb47834dd77268263136d8cb44570d91f3c439842a061aed702c04b31",
+  "old": "8*s.integrate(x*(1-x),(x,0,1))/8",
+  "new": "4*s.integrate(x*(1-x),(x,0,1))/8",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ijpl7p2e/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ijpl7p2e/primary.py\", line 183, in run\n    check('bubble_transverse_coefficient',4*s.integrate(x*(1-x),(x,0,1))/8==s.Rational(1,6))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-ijpl7p2e/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('bubble_transverse_coefficient', {})\n"
+}

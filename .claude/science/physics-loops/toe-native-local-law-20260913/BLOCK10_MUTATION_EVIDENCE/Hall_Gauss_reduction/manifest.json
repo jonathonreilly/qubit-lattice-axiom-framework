@@ -1,0 +1,10 @@
+{
+  "name": "Hall_Gauss_reduction",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "3c384e0cb61f00392e553db188eecf64dc4ad95b47a4212ea0de7e9141d55894",
+  "old": "matrix=(om**2-k2)*s.eye(3)+kk*kk.T",
+  "new": "matrix=(om**2-k2)*s.eye(3)-kk*kk.T",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmk8k5x6/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmk8k5x6/primary.py\", line 327, in run\n    check('Maxwell_Hall_physical_polynomial',s.factor(det-om**2*physical)==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-bmk8k5x6/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Maxwell_Hall_physical_polynomial', {})\n"
+}

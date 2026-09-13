@@ -22,7 +22,7 @@ continuation_automation: toe-derivation-campaign-continuation
 continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-lock_expires_utc: 2026-09-13T20:59:24Z
-next_action: Derive the specified gauge-coupled one-loop coefficients and native matching, preserving the phase and perturbative boundaries.
+lock_expires_utc: 2026-09-13T21:41:45Z
+next_action: Package the corrected native Hall and conditional cone-flow milestone, then test the mixed Hall-free quartet seed.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.
-last_checkpoint_utc: 2026-09-13T20:21:52.872186+00:00
+last_checkpoint_utc: 2026-09-13T20:44:38.340215+00:00

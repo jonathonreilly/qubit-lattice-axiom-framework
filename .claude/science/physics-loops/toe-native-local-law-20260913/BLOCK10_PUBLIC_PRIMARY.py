@@ -9,6 +9,8 @@ from itertools import product
 import numpy as np
 import sympy as s
 from numpy.polynomial.legendre import leggauss
+AUDIT_TIMEOUT_SEC = 60
+AUDIT_INPUT_PATHS = ("docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",)
 HERE=Path(__file__).resolve().parent
 SIG=[np.array([[0,1],[1,0]],complex),np.array([[0,-1j],[1j,0]],complex),np.diag([1,-1]).astype(complex)]
 GAM=[np.kron(SIG[0],np.eye(2))]+[-np.kron(SIG[1],p) for p in SIG]
@@ -344,5 +346,10 @@ def run():
   close('time_reversed_copy_Hall_cancellation_'+str(trial),original+reversed_copy,0,2e-11)
  result=dict(status='ok',check_count=len(rows),checks=rows,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),elapsed_seconds=time.monotonic()-start,scope='Native free-band Hall response, leading Maxwell/Hall dispersion, and conditional Hall-subtracted one-loop coefficients. No full gauge phase, higher-loop or axiom-selection theorem.')
  assert len({r['name'] for r in rows})==len(rows)
- (HERE/'BLOCK10_CHECKS.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
+ print('per_element: Clifford, constitutive and occupied-projector identities are executed with independent matrix and integration paths.')
+ print('per_site: finite Peierls link vertices, node jets and pure-gauge contact curvature are executed on the selected band model.')
+ print('per_mode: physical Hall and birefringent polarization roots and native logarithmic shells are executed; no full interacting spectrum is claimed.')
+ print('per_block: occupied and empty band blocks and both native Weyl-node contributions are executed with their declared trace factors.')
+ print('lattice_wide: gapped Brillouin-slice Chern numbers and a finite torus gauge spectrum are executed; thermodynamic gauge-phase existence is not established.')
+ print(json.dumps(result,indent=2))
 if __name__=='__main__':run()

@@ -1,3 +1,8 @@
+per_element: Clifford, constitutive and occupied-projector identities are executed with independent matrix and integration paths.
+per_site: finite Peierls link vertices, node jets and pure-gauge contact curvature are executed on the selected band model.
+per_mode: physical Hall and birefringent polarization roots and native logarithmic shells are executed; no full interacting spectrum is claimed.
+per_block: occupied and empty band blocks and both native Weyl-node contributions are executed with their declared trace factors.
+lattice_wide: gapped Brillouin-slice Chern numbers and a finite torus gauge spectrum are executed; thermodynamic gauge-phase existence is not established.
 {
   "status": "ok",
   "check_count": 462,
@@ -2439,7 +2444,7 @@
       "error": 0.0
     }
   ],
-  "source_sha256": "7d1079b36a9b392ff7b00b20bd920b362627c8c8551b43417345fe7b56ada19d",
-  "elapsed_seconds": 2.462999333976768,
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "elapsed_seconds": 2.545273374998942,
   "scope": "Native free-band Hall response, leading Maxwell/Hall dispersion, and conditional Hall-subtracted one-loop coefficients. No full gauge phase, higher-loop or axiom-selection theorem."
 }

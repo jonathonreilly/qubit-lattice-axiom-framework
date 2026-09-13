@@ -1,0 +1,10 @@
+{
+  "name": "birefringent_magnetic_kernel",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "mutated_sha256": "01766979826017dc3de6b78c0669125ec60a635e8d18d55e97daf5344dd62d66",
+  "old": "n[0]**2*W+C.T@W@C",
+  "new": "n[0]**2*W-C.T@W@C",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-mrx7zfgs/primary.py\", line 355, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-mrx7zfgs/primary.py\", line 206, in run\n    close('birefringent_trace_'+str((idx,a)),np.trace(K),0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-mrx7zfgs/primary.py\", line 22, in close\n    err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))));check(name,err<tol,error=err,**detail)\n                                                           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gauge-mutation-mrx7zfgs/primary.py\", line 19, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('birefringent_trace_(0, 1)', {'error': 2.0})\n"
+}

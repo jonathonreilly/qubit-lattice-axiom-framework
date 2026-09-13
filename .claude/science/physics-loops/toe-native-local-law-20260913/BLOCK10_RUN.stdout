@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "check_count": 378,
+  "check_count": 462,
   "checks": [
     {
       "name": "sphere_measure",
@@ -1919,9 +1919,527 @@
         0.2496533035748052,
         0.24971266500044856
       ]
+    },
+    {
+      "name": "slice_corner_degree_0.7",
+      "degree": -1,
+      "index": 1
+    },
+    {
+      "name": "native_slice_Chern_links_(0.7, 24)",
+      "M": 0.7,
+      "N": 24,
+      "link_C": 1.0000000000000002,
+      "Kubo_C": 1.0000090127491708,
+      "min_overlap": 0.9828724668664769,
+      "gap": 0.7
+    },
+    {
+      "name": "native_slice_Chern_links_(0.7, 48)",
+      "M": 0.7,
+      "N": 48,
+      "link_C": 1.0,
+      "Kubo_C": 1.0000000000263045,
+      "min_overlap": 0.9956517579467492,
+      "gap": 0.7
+    },
+    {
+      "name": "native_slice_Chern_links_(0.7, 96)",
+      "M": 0.7,
+      "N": 96,
+      "link_C": 1.0,
+      "Kubo_C": 0.9999999999999999,
+      "min_overlap": 0.9989086617806109,
+      "gap": 0.7
+    },
+    {
+      "name": "native_slice_Kubo_integral_0.7",
+      "M": 0.7,
+      "N": 96,
+      "link_C": 1.0,
+      "Kubo_C": 0.9999999999999999,
+      "min_overlap": 0.9989086617806109,
+      "gap": 0.7
+    },
+    {
+      "name": "slice_corner_degree_1.4",
+      "degree": -1,
+      "index": 1
+    },
+    {
+      "name": "native_slice_Chern_links_(1.4, 24)",
+      "M": 1.4,
+      "N": 24,
+      "link_C": 1.0,
+      "Kubo_C": 1.000000012921218,
+      "min_overlap": 0.9770894450671362,
+      "gap": 0.6000000000000001
+    },
+    {
+      "name": "native_slice_Chern_links_(1.4, 48)",
+      "M": 1.4,
+      "N": 48,
+      "link_C": 1.0,
+      "Kubo_C": 1.0,
+      "min_overlap": 0.9941083409116774,
+      "gap": 0.6000000000000001
+    },
+    {
+      "name": "native_slice_Chern_links_(1.4, 96)",
+      "M": 1.4,
+      "N": 96,
+      "link_C": 1.0000000000000002,
+      "Kubo_C": 0.9999999999999999,
+      "min_overlap": 0.9985162691243413,
+      "gap": 0.6000000000000001
+    },
+    {
+      "name": "native_slice_Kubo_integral_1.4",
+      "M": 1.4,
+      "N": 96,
+      "link_C": 1.0000000000000002,
+      "Kubo_C": 0.9999999999999999,
+      "min_overlap": 0.9985162691243413,
+      "gap": 0.6000000000000001
+    },
+    {
+      "name": "slice_corner_degree_1.8",
+      "degree": -1,
+      "index": 1
+    },
+    {
+      "name": "native_slice_Chern_links_(1.8, 24)",
+      "M": 1.8,
+      "N": 24,
+      "link_C": 1.0,
+      "Kubo_C": 1.012195948988508,
+      "min_overlap": 0.8774119385084345,
+      "gap": 0.19999999999999996
+    },
+    {
+      "name": "native_slice_Chern_links_(1.8, 48)",
+      "M": 1.8,
+      "N": 48,
+      "link_C": 1.0,
+      "Kubo_C": 1.000051834338046,
+      "min_overlap": 0.9555721247949931,
+      "gap": 0.19999999999999996
+    },
+    {
+      "name": "native_slice_Chern_links_(1.8, 96)",
+      "M": 1.8,
+      "N": 96,
+      "link_C": 1.0,
+      "Kubo_C": 1.0000000011368035,
+      "min_overlap": 0.9872871653616332,
+      "gap": 0.19999999999999996
+    },
+    {
+      "name": "native_slice_Kubo_integral_1.8",
+      "M": 1.8,
+      "N": 96,
+      "link_C": 1.0,
+      "Kubo_C": 1.0000000011368035,
+      "min_overlap": 0.9872871653616332,
+      "gap": 0.19999999999999996
+    },
+    {
+      "name": "slice_corner_degree_2.2",
+      "degree": 0,
+      "index": 0
+    },
+    {
+      "name": "native_slice_Chern_links_(2.2, 24)",
+      "M": 2.2,
+      "N": 24,
+      "link_C": 1.3252311172764654e-16,
+      "Kubo_C": -0.026777379661438953,
+      "min_overlap": 0.9139920474296052,
+      "gap": 0.20000000000000018
+    },
+    {
+      "name": "native_slice_Chern_links_(2.2, 48)",
+      "M": 2.2,
+      "N": 48,
+      "link_C": 2.2087185287941088e-16,
+      "Kubo_C": -0.0002953313733419836,
+      "min_overlap": 0.9611635487467669,
+      "gap": 0.20000000000000018
+    },
+    {
+      "name": "native_slice_Chern_links_(2.2, 96)",
+      "M": 2.2,
+      "N": 96,
+      "link_C": 1.5461029701558762e-16,
+      "Kubo_C": -4.582327408700743e-08,
+      "min_overlap": 0.9877849594640232,
+      "gap": 0.20000000000000018
+    },
+    {
+      "name": "native_slice_Kubo_integral_2.2",
+      "M": 2.2,
+      "N": 96,
+      "link_C": 1.5461029701558762e-16,
+      "Kubo_C": -4.582327408700743e-08,
+      "min_overlap": 0.9877849594640232,
+      "gap": 0.20000000000000018
+    },
+    {
+      "name": "slice_corner_degree_2.8",
+      "degree": 0,
+      "index": 0
+    },
+    {
+      "name": "native_slice_Chern_links_(2.8, 24)",
+      "M": 2.8,
+      "N": 24,
+      "link_C": -9.055745968055847e-17,
+      "Kubo_C": -1.142869581675698e-06,
+      "min_overlap": 0.988704800862302,
+      "gap": 0.7999999999999998
+    },
+    {
+      "name": "native_slice_Chern_links_(2.8, 48)",
+      "M": 2.8,
+      "N": 48,
+      "link_C": -9.718361526694079e-17,
+      "Kubo_C": -8.650107645533519e-13,
+      "min_overlap": 0.9967996831188654,
+      "gap": 0.7999999999999998
+    },
+    {
+      "name": "native_slice_Chern_links_(2.8, 96)",
+      "M": 2.8,
+      "N": 96,
+      "link_C": -5.521796321985272e-17,
+      "Kubo_C": 2.0588112661856505e-17,
+      "min_overlap": 0.9991727698046282,
+      "gap": 0.7999999999999998
+    },
+    {
+      "name": "native_slice_Kubo_integral_2.8",
+      "M": 2.8,
+      "N": 96,
+      "link_C": -5.521796321985272e-17,
+      "Kubo_C": 2.0588112661856505e-17,
+      "min_overlap": 0.9991727698046282,
+      "gap": 0.7999999999999998
+    },
+    {
+      "name": "slice_corner_degree_3.7",
+      "degree": 0,
+      "index": 0
+    },
+    {
+      "name": "native_slice_Chern_links_(3.7, 24)",
+      "M": 3.7,
+      "N": 24,
+      "link_C": 4.803962800127187e-17,
+      "Kubo_C": -5.782700616131082e-11,
+      "min_overlap": 0.997257288815744,
+      "gap": 1.7000000000000002
+    },
+    {
+      "name": "native_slice_Chern_links_(3.7, 48)",
+      "M": 3.7,
+      "N": 48,
+      "link_C": -4.5278729840279234e-17,
+      "Kubo_C": 0.0,
+      "min_overlap": 0.9992733768532875,
+      "gap": 1.7000000000000002
+    },
+    {
+      "name": "native_slice_Chern_links_(3.7, 96)",
+      "M": 3.7,
+      "N": 96,
+      "link_C": 9.607925600254374e-17,
+      "Kubo_C": 1.8165981760461622e-18,
+      "min_overlap": 0.9998156362945163,
+      "gap": 1.7000000000000002
+    },
+    {
+      "name": "native_slice_Kubo_integral_3.7",
+      "M": 3.7,
+      "N": 96,
+      "link_C": 9.607925600254374e-17,
+      "Kubo_C": 1.8165981760461622e-18,
+      "min_overlap": 0.9998156362945163,
+      "gap": 1.7000000000000002
+    },
+    {
+      "name": "spectral_Kubo_projector_0",
+      "error": 1.3877787807814457e-17
+    },
+    {
+      "name": "native_inversion_symmetry_0",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_1",
+      "error": 9.540979117872439e-18
+    },
+    {
+      "name": "native_inversion_symmetry_1",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_2",
+      "error": 2.0816681711721685e-17
+    },
+    {
+      "name": "native_inversion_symmetry_2",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_3",
+      "error": 1.0408340855860843e-17
+    },
+    {
+      "name": "native_inversion_symmetry_3",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_4",
+      "error": 4.163336342344337e-17
+    },
+    {
+      "name": "native_inversion_symmetry_4",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_5",
+      "error": 1.734723475976807e-17
+    },
+    {
+      "name": "native_inversion_symmetry_5",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_6",
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "native_inversion_symmetry_6",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_7",
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "native_inversion_symmetry_7",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_8",
+      "error": 3.469446951953614e-18
+    },
+    {
+      "name": "native_inversion_symmetry_8",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_9",
+      "error": 6.938893903907228e-18
+    },
+    {
+      "name": "native_inversion_symmetry_9",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_10",
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "native_inversion_symmetry_10",
+      "error": 0.0
+    },
+    {
+      "name": "spectral_Kubo_projector_11",
+      "error": 6.938893903907228e-18
+    },
+    {
+      "name": "native_inversion_symmetry_11",
+      "error": 0.0
+    },
+    {
+      "name": "physical_Hall_slice_measure_0.51",
+      "error": 0.0
+    },
+    {
+      "name": "gapped_integer_stack_cannot_cancel_0.51",
+      "fraction": 0.32964539032007795
+    },
+    {
+      "name": "physical_Hall_slice_measure_0.7",
+      "error": 1.734723475976807e-18
+    },
+    {
+      "name": "gapped_integer_stack_cannot_cancel_0.7",
+      "fraction": 0.253183311106635
+    },
+    {
+      "name": "physical_Hall_slice_measure_0.9",
+      "error": 8.673617379884035e-19
+    },
+    {
+      "name": "gapped_integer_stack_cannot_cancel_0.9",
+      "fraction": 0.14356629312870625
+    },
+    {
+      "name": "physical_Hall_slice_measure_0.99",
+      "error": 0.0
+    },
+    {
+      "name": "gapped_integer_stack_cannot_cancel_0.99",
+      "fraction": 0.04505341364441213
+    },
+    {
+      "name": "Maxwell_Hall_physical_polynomial"
+    },
+    {
+      "name": "Hall_axis_soft_quadratic"
+    },
+    {
+      "name": "Hall_axis_hard_gap"
+    },
+    {
+      "name": "Hall_axis_polarization_roots"
+    },
+    {
+      "name": "physical_Hall_wave_mode_(0, 0)",
+      "squared_frequency": 0.04601448992112067,
+      "singular_values": [
+        0.088379475997233,
+        0.06883372789437824,
+        4.9042824721607715e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(0, 1)",
+      "squared_frequency": 0.2015747279450961,
+      "singular_values": [
+        0.28315312861068953,
+        0.16398183735838198,
+        2.5533767154437855e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(1, 0)",
+      "squared_frequency": 0.12430250992051692,
+      "singular_values": [
+        0.20510860851716137,
+        0.11762777668512335,
+        1.4884445824244831e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(1, 1)",
+      "squared_frequency": 0.3211241880089959,
+      "singular_values": [
+        0.479926898202129,
+        0.19801896789534595,
+        1.1894307251839788e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(2, 0)",
+      "squared_frequency": 0.07195325961953664,
+      "singular_values": [
+        0.21440761242203346,
+        0.10654070889578456,
+        1.5727986259498487e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(2, 1)",
+      "squared_frequency": 0.5017734227653221,
+      "singular_values": [
+        0.7243245150827098,
+        0.457269070828398,
+        1.5584180909919276e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(3, 0)",
+      "squared_frequency": 0.10797052127960935,
+      "singular_values": [
+        0.25787260156777675,
+        0.15132462444465064,
+        1.7840657891769803e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(3, 1)",
+      "squared_frequency": 0.4693930654360926,
+      "singular_values": [
+        0.8293919843655658,
+        0.3614236252270101,
+        4.22593065280143e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(4, 0)",
+      "squared_frequency": 0.1337965309142033,
+      "singular_values": [
+        0.3249819896596726,
+        0.20871627421689373,
+        5.9490228637244605e-18
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(4, 1)",
+      "squared_frequency": 0.6413273463856276,
+      "singular_values": [
+        1.1312041530917367,
+        0.5076540087653151,
+        8.203849384289086e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(5, 0)",
+      "squared_frequency": 0.01464522125415324,
+      "singular_values": [
+        0.09835734460194828,
+        0.09702494835960977,
+        3.297003729532592e-17
+      ]
+    },
+    {
+      "name": "physical_Hall_wave_mode_(5, 1)",
+      "squared_frequency": 0.6706228387506451,
+      "singular_values": [
+        1.3105253346825074,
+        0.6560751215646302,
+        1.2970711766022003e-16
+      ]
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_0",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_1",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_2",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_3",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_4",
+      "error": 0.0
+    },
+    {
+      "name": "time_reversed_copy_Hall_cancellation_5",
+      "error": 0.0
     }
   ],
-  "source_sha256": "67cac7f44c1064a86be8229eea667d85d0fbf9e56fcd853407086ba5ae5a5f1c",
-  "elapsed_seconds": 2.3981356660369784,
-  "scope": "Formal one-loop coefficients, exact algebra and finite native Ward challenges. No gauge phase, higher-loop or axiom-selection theorem."
+  "source_sha256": "7d1079b36a9b392ff7b00b20bd920b362627c8c8551b43417345fe7b56ada19d",
+  "elapsed_seconds": 2.462999333976768,
+  "scope": "Native free-band Hall response, leading Maxwell/Hall dispersion, and conditional Hall-subtracted one-loop coefficients. No full gauge phase, higher-loop or axiom-selection theorem."
 }

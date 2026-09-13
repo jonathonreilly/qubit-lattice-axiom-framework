@@ -1,0 +1,11 @@
+{
+  "base_main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "status": "author conditional construction; independent review pending",
+  "sources": {
+    "BLOCK16_WORKING_PLAN.md": "1ba6065891d59962e484922f153a25c0c1b32e109580cf1f849f7f3cfec94f63",
+    "BLOCK16_DERIVATION.md": "6a916adf3610fb1ef58530d957d47310806a7ed0878e68dbab5c69a19d969198",
+    "check_block16_occurrence.py": "54785f822d5507ce1c2424f1ab1a4ef09ec5be33aba4cc3853796c4444059f00",
+    "BLOCK16_OCCURRENCE_CHECKS.json": "f023a5010c84406de9fa5a261b825f13696afe03bd505516f0f2d37f6b25f347",
+    "BLOCK16_COLD_AUTHOR_REVIEW.md": "38a54b1ae644536bb271b4a48958acbf7cf9f8bec871db6e15482de3569719f8"
+  }
+}

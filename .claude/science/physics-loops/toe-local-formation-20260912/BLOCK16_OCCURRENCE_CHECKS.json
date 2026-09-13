@@ -1,0 +1,470 @@
+{
+  "status": "passed",
+  "count": 63,
+  "checks": [
+    {
+      "name": "exact_six_draw_attenuation"
+    },
+    {
+      "name": "strict_positive_quantum_arm_table"
+    },
+    {
+      "name": "radical_arithmetic_sign_sanity"
+    },
+    {
+      "name": "one_step_channel"
+    },
+    {
+      "name": "three_step_channel"
+    },
+    {
+      "name": "complete_three_draw_paths_1"
+    },
+    {
+      "name": "path_marginal_matches_matrix_1"
+    },
+    {
+      "name": "complete_three_draw_paths_-1"
+    },
+    {
+      "name": "path_marginal_matches_matrix_-1"
+    },
+    {
+      "name": "independent_00_arm_probability"
+    },
+    {
+      "name": "independent_00_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "independent_00_fixed_output_table"
+    },
+    {
+      "name": "independent_01_arm_probability"
+    },
+    {
+      "name": "independent_01_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "independent_01_fixed_output_table"
+    },
+    {
+      "name": "independent_10_arm_probability"
+    },
+    {
+      "name": "independent_10_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "independent_10_fixed_output_table"
+    },
+    {
+      "name": "independent_11_arm_probability"
+    },
+    {
+      "name": "independent_11_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "independent_11_fixed_output_table"
+    },
+    {
+      "name": "independent_CHSH",
+      "exact": {
+        "rational": "0",
+        "sqrt2_coefficient": "0"
+      }
+    },
+    {
+      "name": "quantum_comparison_00_arm_probability"
+    },
+    {
+      "name": "quantum_comparison_00_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "quantum_comparison_00_fixed_output_table"
+    },
+    {
+      "name": "quantum_comparison_01_arm_probability"
+    },
+    {
+      "name": "quantum_comparison_01_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "quantum_comparison_01_fixed_output_table"
+    },
+    {
+      "name": "quantum_comparison_10_arm_probability"
+    },
+    {
+      "name": "quantum_comparison_10_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "quantum_comparison_10_fixed_output_table"
+    },
+    {
+      "name": "quantum_comparison_11_arm_probability"
+    },
+    {
+      "name": "quantum_comparison_11_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "quantum_comparison_11_fixed_output_table"
+    },
+    {
+      "name": "quantum_comparison_CHSH",
+      "exact": {
+        "rational": "0",
+        "sqrt2_coefficient": "2"
+      }
+    },
+    {
+      "name": "larger_comparison_00_arm_probability"
+    },
+    {
+      "name": "larger_comparison_00_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "larger_comparison_00_fixed_output_table"
+    },
+    {
+      "name": "larger_comparison_01_arm_probability"
+    },
+    {
+      "name": "larger_comparison_01_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "larger_comparison_01_fixed_output_table"
+    },
+    {
+      "name": "larger_comparison_10_arm_probability"
+    },
+    {
+      "name": "larger_comparison_10_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "larger_comparison_10_fixed_output_table"
+    },
+    {
+      "name": "larger_comparison_11_arm_probability"
+    },
+    {
+      "name": "larger_comparison_11_complete_branch_sum",
+      "enumerated_paths": 2916
+    },
+    {
+      "name": "larger_comparison_11_fixed_output_table"
+    },
+    {
+      "name": "larger_comparison_CHSH",
+      "exact": {
+        "rational": "47045881/16000000",
+        "sqrt2_coefficient": "0"
+      }
+    },
+    {
+      "name": "larger_comparison_strictly_exceeds_quantum"
+    },
+    {
+      "name": "settings_independent_fair_and_complete"
+    },
+    {
+      "name": "omitted_noise_step_changes_quantum_target"
+    },
+    {
+      "name": "arm_location_is_not_final_readout"
+    },
+    {
+      "name": "copy_only_postselection_discards_mass_and_changes_output",
+      "retained_mass_if_wrong": "47045881/64000000"
+    },
+    {
+      "name": "twelve_distinct_prepared_records"
+    },
+    {
+      "name": "all_six_neighbor_lists_and_permanence_(1, 1)"
+    },
+    {
+      "name": "all_six_neighbor_lists_and_permanence_(1, -1)"
+    },
+    {
+      "name": "all_six_neighbor_lists_and_permanence_(-1, 1)"
+    },
+    {
+      "name": "all_six_neighbor_lists_and_permanence_(-1, -1)"
+    },
+    {
+      "name": "twenty_four_proper_rotations"
+    },
+    {
+      "name": "literal_translated_rotated_neighbor_covariance",
+      "cases": 768
+    },
+    {
+      "name": "unique_marker_geometry_even_for_exceptional_contents",
+      "total_possible_sites": 24,
+      "frames": 1
+    },
+    {
+      "name": "opposite_nearest_neighbor_contamination_detected"
+    },
+    {
+      "name": "factorized_deterministic_CHSH_vertices",
+      "scope": "separately assumed setting-independent local response factorization"
+    }
+  ],
+  "results": {
+    "independent": {
+      "CHSH": {
+        "rational": "0",
+        "sqrt2_coefficient": "0"
+      },
+      "tables": {
+        "(0, 0)": {
+          "(1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          }
+        },
+        "(0, 1)": {
+          "(1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          }
+        },
+        "(1, 0)": {
+          "(1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          }
+        },
+        "(1, 1)": {
+          "(1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "0"
+          }
+        }
+      }
+    },
+    "quantum_comparison": {
+      "CHSH": {
+        "rational": "0",
+        "sqrt2_coefficient": "2"
+      },
+      "tables": {
+        "(0, 0)": {
+          "(1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "-1/8"
+          },
+          "(1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "1/8"
+          },
+          "(-1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "1/8"
+          },
+          "(-1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "-1/8"
+          }
+        },
+        "(0, 1)": {
+          "(1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "-1/8"
+          },
+          "(1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "1/8"
+          },
+          "(-1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "1/8"
+          },
+          "(-1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "-1/8"
+          }
+        },
+        "(1, 0)": {
+          "(1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "-1/8"
+          },
+          "(1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "1/8"
+          },
+          "(-1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "1/8"
+          },
+          "(-1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "-1/8"
+          }
+        },
+        "(1, 1)": {
+          "(1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "1/8"
+          },
+          "(1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "-1/8"
+          },
+          "(-1, 1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "-1/8"
+          },
+          "(-1, -1)": {
+            "rational": "1/4",
+            "sqrt2_coefficient": "1/8"
+          }
+        }
+      }
+    },
+    "larger_comparison": {
+      "CHSH": {
+        "rational": "47045881/16000000",
+        "sqrt2_coefficient": "0"
+      },
+      "tables": {
+        "(0, 0)": {
+          "(1, 1)": {
+            "rational": "111045881/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(1, -1)": {
+            "rational": "16954119/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, 1)": {
+            "rational": "16954119/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, -1)": {
+            "rational": "111045881/256000000",
+            "sqrt2_coefficient": "0"
+          }
+        },
+        "(0, 1)": {
+          "(1, 1)": {
+            "rational": "111045881/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(1, -1)": {
+            "rational": "16954119/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, 1)": {
+            "rational": "16954119/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, -1)": {
+            "rational": "111045881/256000000",
+            "sqrt2_coefficient": "0"
+          }
+        },
+        "(1, 0)": {
+          "(1, 1)": {
+            "rational": "111045881/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(1, -1)": {
+            "rational": "16954119/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, 1)": {
+            "rational": "16954119/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, -1)": {
+            "rational": "111045881/256000000",
+            "sqrt2_coefficient": "0"
+          }
+        },
+        "(1, 1)": {
+          "(1, 1)": {
+            "rational": "16954119/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(1, -1)": {
+            "rational": "111045881/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, 1)": {
+            "rational": "111045881/256000000",
+            "sqrt2_coefficient": "0"
+          },
+          "(-1, -1)": {
+            "rational": "16954119/256000000",
+            "sqrt2_coefficient": "0"
+          }
+        }
+      }
+    }
+  },
+  "seconds": 0.3256807499565184,
+  "source_sha256": "54785f822d5507ce1c2424f1ab1a4ef09ec5be33aba4cc3853796c4444059f00",
+  "derivation_sha256": "6a916adf3610fb1ef58530d957d47310806a7ed0878e68dbab5c69a19d969198",
+  "scope": "Exact marginal probabilities and physical finite geometry; full-support continuous-kernel and axiom interpretation require the written proof. Supplied occurrence tables, not a Born derivation, causal apparatus, independent review or axiom no-go."
+}

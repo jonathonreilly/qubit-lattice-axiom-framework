@@ -438,3 +438,30 @@ Next consider adding this tightly connected final operator theorem to the
 existing PR8086 unit. Keep its old scalar and spectral sources/cache bindings
 unchanged and the new source parent explicit. Then return to the remaining
 axiom-facing process/physical-state gap. Deadline11:38:24UTC.
+
+## Complete native unit and axiom-facing process, around09:18UTC
+
+PR8086 is complete at a3e5529b4d74f618df416747c39bf150b885e495, title
+"[physics-loop] Positive native star coefficient and low-energy control".
+The final description retry succeeded after the transient GraphQL error.
+Do not expand this PR further: three connected notes, scalar252checks,
+spectral34checks, operator35new+34parentchecks. All three caches fresh,
+28 actual mutants rejected,35 changed Python files compile; graph adds
+three claims/three edges to main. No independent review or author landing.
+
+BLOCK16_DERIVATION was written before its checker. It gives one full-support
+matrix Gaussian/neighbor-copy content law on actual Z3, a finite preparation,
+three noisy relays per wing ending at the SAME fixed outputs, and three
+explicit nonlocal occurrence kernels. Exact output CHSH values are0,2sqrt2,
+4(19/20)^6>2sqrt2. The desired comparison table is supplied in occurrence;
+this is no Born derivation, causal quantum apparatus or axiom wall.
+
+The first checker passed63 checks in0.33s. Independent rational/sqrt2 channel
+powers and complete2916-path sums per setting/table agree. All physical
+neighbor lists, permanence, final20Records and24-rotation covariance pass.
+The unique marker geometry is checked even for exceptional continuous
+contents; its elementary geometric proof was made explicit after the check.
+Next cold-review the full argument, refresh its changed-note hash, preserve
+source/check bindings and decide whether this positive conditional process
+is a coherent new source milestone. No execution agents; continue until
+11:38:24UTC. The lock from09:01 expires10:01UTC and must be refreshed.

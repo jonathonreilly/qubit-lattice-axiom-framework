@@ -69,3 +69,25 @@ commutator recursion, then uses ground-state Poisson smearing. It distinguishes
 exact finite marginals from open-box Gibbs states and includes physical
 cycle/star margins. Complete final-source cold review and a self-contained
 milestone PR are next. Continue to a newly ranked campaign afterwards.
+
+At14:24UTC, milestone PR8090 is OPEN and MERGEABLE against main, head
+004b5c083745f56e0c00cd72294e0efc28a0bece:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8090
+Its isolated worktree is
+/Users/jonreilly/Documents/Codex/toe-native-interacting-weyl-20260913,
+branch physics-loop/native-interacting-weyl-20260913. It carries one scientific
+note, one combined checker, canonical cache, full receipt,14 effective
+mutations and recovery/author-review evidence.153 finite checks pass and the
+cache is fresh. Graph adds one node/two intended dependencies. Direct source
+preflight has no issue; ledger-based preflight checked zero rows, explicitly
+not a readiness PASS. Independent review and integrated landing checks pending.
+The milestone runner adds a seed-support check before the first event relative
+to the branch-local92+60-check draft; authoritative milestone evidence is at
+its own pinned head. No main landing or audit verdict was attempted.
+
+The next campaign is BLOCK04_GOAL.md, physical measurement calibration with
+permanent local programs. The selected sector-Law source was read fully;
+its arbitrary-neighbor carrier and physical calibration remain explicit
+questions. Do not confuse general M2 Record labels with density states of a
+finite-dimensional program register, or infer an axiom wall from that
+additional interpretation. Continue without subagents through00:14:41UTC.

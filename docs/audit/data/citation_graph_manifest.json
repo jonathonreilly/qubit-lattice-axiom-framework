@@ -1,6 +1,6 @@
 {
- "edge_count": 12519,
- "node_count": 5041,
+ "edge_count": 12521,
+ "node_count": 5042,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14888,6 +14888,10 @@
   },
   "program_content_order_attempt_cycle755_bounded_theorem_note_2026-07-28": {
    "deps_hash": "ec452f68be4a",
+   "out_degree": 2
+  },
+  "projective_history_local_copy_record_process_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "f18f4cefcd73",
    "out_degree": 2
   },
   "propagator_family_unification_note": {

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_empty_content_measure.py", line 448, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_empty_content_measure.py", line 295, in run
+    checked('empty_condition_has_intrinsic_zero_measure', measure((10000, 0, 0), prepared) == {ZERO: 1})
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_empty_content_measure.py", line 109, in checked
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: empty_condition_has_intrinsic_zero_measure

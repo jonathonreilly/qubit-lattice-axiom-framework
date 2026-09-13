@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_comb_spine_height.py", line 448, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_comb_spine_height.py", line 336, in run
+    assert recorded[c] == recorded[first_site]
+           ~~~~~~~~^^^
+KeyError: (0, 0, 0)

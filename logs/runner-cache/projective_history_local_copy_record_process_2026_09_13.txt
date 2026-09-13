@@ -1,0 +1,156 @@
+===== runner cache v1 =====
+runner: scripts/projective_history_local_copy_record_process_2026_09_13.py
+runner_sha256: bd5fc8623e27483fbc73f2bcbbd47609c4307594eebaee7244a8038b955527d5
+input_fingerprint_sha256: 613673665b614c4ca6ee4e19f304d9d9ecb469a89af91fe6beb946b5068fea99
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 23.61
+status: ok
+----- stdout -----
+{
+  "status": "passed",
+  "count": 31,
+  "checks": [
+    {
+      "name": "all_exact_rank_one_programs_including_complex_Y",
+      "programs": 8
+    },
+    {
+      "name": "mixed_preparation_from_independent_ensemble"
+    },
+    {
+      "name": "round_1_prefix_mass",
+      "positive_prefixes": 16
+    },
+    {
+      "name": "round_2_prefix_mass",
+      "positive_prefixes": 224
+    },
+    {
+      "name": "complete_two_round_density_amplitude_history_identity",
+      "comparisons": 240
+    },
+    {
+      "name": "supported_conditioning_and_exact_zero_children",
+      "rejected_zero_children": 32
+    },
+    {
+      "name": "all_actual_repeated_projector_layers_preserve_density",
+      "layers": 2682
+    },
+    {
+      "name": "one_event_refinement_confluence_and_order_mixture",
+      "comparisons": 240
+    },
+    {
+      "name": "skipped_earlier_state_update_is_detected",
+      "actual": "0",
+      "omitted_update": "1/4"
+    },
+    {
+      "name": "singlet_CHSH_from_supplied_trace_and_preparation",
+      "correlations": {
+        "(0, 0)": "-sqrt(2)/2",
+        "(0, 1)": "-sqrt(2)/2",
+        "(1, 0)": "-sqrt(2)/2",
+        "(1, 1)": "sqrt(2)/2"
+      }
+    },
+    {
+      "name": "product_preparation_factorizes"
+    },
+    {
+      "name": "marginals_independent_of_remote_program",
+      "preparations": 3
+    },
+    {
+      "name": "fixed_content_only_readout_for_all_Bell_projectors"
+    },
+    {
+      "name": "supplied_alternative_occurrence_uniform",
+      "CHSH": "0",
+      "scope": "comparison law, not the selected trace sector law"
+    },
+    {
+      "name": "supplied_alternative_occurrence_parity",
+      "CHSH": "4",
+      "scope": "comparison law, not the selected trace sector law"
+    },
+    {
+      "name": "empty_condition_has_intrinsic_zero_measure"
+    },
+    {
+      "name": "empirical_measure_retains_neighbor_multiplicity"
+    },
+    {
+      "name": "exact_prepared_record_count"
+    },
+    {
+      "name": "all_prepared_records_have_current_support"
+    },
+    {
+      "name": "four_physical_record_blocks_reconstruct_preparation"
+    },
+    {
+      "name": "bank_indices_biject_all_program_outcomes"
+    },
+    {
+      "name": "current_Record_only_history_reconstruction",
+      "supported_final_histories": 224,
+      "insertion_order": "reversed"
+    },
+    {
+      "name": "literal_six_neighbor_paths_all_program_outcomes",
+      "data_site_checks": 3360,
+      "horizons": [
+        1,
+        2,
+        7
+      ]
+    },
+    {
+      "name": "permanent_support_through_every_checked_append",
+      "record_support_checks": 422016
+    },
+    {
+      "name": "exact_linear_resources_and_fixed_terminal_contents",
+      "supplied_horizons": [
+        1,
+        2,
+        7
+      ]
+    },
+    {
+      "name": "path_length_formula_at_all_four_leaves"
+    },
+    {
+      "name": "missing_prepared_bank_buddy_rejected"
+    },
+    {
+      "name": "nonselected_neighbor_contamination_rejected"
+    },
+    {
+      "name": "all_twenty_four_proper_cubic_frames"
+    },
+    {
+      "name": "unique_recoverable_marker_frame"
+    },
+    {
+      "name": "transported_physical_content_law_covariance",
+      "cases": 720
+    }
+  ],
+  "seconds": 23.200598541996442,
+  "source_sha256": "bd5fc8623e27483fbc73f2bcbbd47609c4307594eebaee7244a8038b955527d5",
+  "derivation_sha256": "1263140139d365e071d2646367ea91e7a263d1bbba37e9826590b1d695e28417",
+  "scope": "Exact finite density/ensemble checks and physical geometry for a separately written all-N conditional trace-history embedding. Trace weights, preparation, projective calibration and nonlocal occurrence remain supplied. Fixed final registers repeat outcomes first committed at outcome-dependent sites. No independent source review or axiom no-go."
+}
+per_element: Exact projector identities, trace updates, zero branches and empirical multiplicities are checked.
+per_site: Actual six-neighbor formation measures, permanent support and fixed terminal contents are checked.
+per_mode: Two programs per wing with noncommuting complex projectors are checked; no field-mode claim.
+per_block: Two-round density, pure-ensemble and physical-Record reconstructions agree on the supported fixture.
+lattice_wide: checked and not executed — the finite-preparation all-N result follows from the written geometry and trace induction, not a thermodynamic extrapolation.
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

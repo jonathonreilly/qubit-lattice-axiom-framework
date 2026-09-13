@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_repeated_matching_projector.py", line 448, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_repeated_matching_projector.py", line 200, in run
+    assert repeated == child
+           ^^^^^^^^^^^^^^^^^
+AssertionError

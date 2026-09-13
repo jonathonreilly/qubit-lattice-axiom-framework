@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_comb_spine_height.py", line 449, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_mutation_comb_spine_height.py", line 336, in run
+    assert c in recorded, "fixed_terminal_register_is_present"
+           ^^^^^^^^^^^^^
+AssertionError: fixed_terminal_register_is_present

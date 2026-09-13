@@ -1,0 +1,49 @@
+{
+  "claim_id": "projective_history_local_copy_record_process_bounded_theorem_note_2026-09-13",
+  "readiness_issue": null,
+  "cache_status": "fresh",
+  "helper_runner_paths": [],
+  "input_count": 6,
+  "relative_links": 6,
+  "actual_mutants_rejected": 12,
+  "prior_mutation_diagnostic_recovered": true,
+  "manifest_delta": {
+    "added": [
+      "projective_history_local_copy_record_process_bounded_theorem_note_2026-09-13"
+    ],
+    "deleted": [],
+    "modified": [],
+    "nodes": 5042,
+    "edges": 12521
+  },
+  "compiled_python_paths": [
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/chronological_projector_order/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/comb_spine_height/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/complex_adjoint/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/content_readout_axis/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/empty_content_measure/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/neighbor_multiplicity/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/one_site_order_weight/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/preparation_block_index/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/program_outcome_bank_index/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/repeated_matching_projector/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/source_buddy_distance/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/trace_conditioning_denominator/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_cache_wrapper.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/chronological_projector_order/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/comb_spine_height/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/complex_adjoint/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/content_readout_axis/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/empty_content_measure/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/neighbor_multiplicity/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/one_site_order_weight/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/preparation_block_index/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/program_outcome_bank_index/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/repeated_matching_projector/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/source_buddy_distance/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/trace_conditioning_denominator/mutant.py",
+    ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_primary.py",
+    "scripts/projective_history_local_copy_record_process_2026_09_13.py"
+  ],
+  "validation_limits": "Focused graph-derived source/input checks only. Independent source review and the exact combined integration pipeline, strict lint and ledger-based changed-evidence gate remain pending."
+}

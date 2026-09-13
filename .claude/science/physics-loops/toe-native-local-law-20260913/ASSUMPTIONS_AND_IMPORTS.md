@@ -1,0 +1,32 @@
+# Foundation and conditional inputs
+
+Main:b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf.
+Planning:9cff766069e8f66b4cc5c36888b1e71600b8888e.
+Prior campaign:163b6970207addfa36d0afbcefd32e0305b6702d.
+
+Lattice, Qubit, Admissibility and Record, plus the approved scale-reference,
+kinetic-isotropy and realized-state primitives, are the supplied foundation.
+They do not select a contingent pulse, state, Hamiltonian or probability tree.
+
+Main native source:
+docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md.
+The ordinary finite edge/CAR code, prepared quantum state, hopping and
+Born/readout schedule remain explicit conditional model inputs. Physical
+vertices2v and edge factors2v+e_a are not interchangeable lattice sites.
+
+PR8089 at0b00d351b4c6d4ef6fd737925f5ae403e086cc95 supplies a protected
+parity instrument and Slater update as an author proposal. Independent
+review is pending. The contested physical/code and probability steps must
+be reconstructed and checked before deep downstream reuse.
+
+PR8088 ataf8fc05509d69c46c0113c7eaa240caaff3439db supplies finite Record
+programs; Born values, physical calibration and causal controller are open.
+PR8086 ata3e5529b4d74f618df416747c39bf150b885e495 and PR8087 at
+d568433b0fb323b8d72cc76f362ed3ead6b0b8d8 use different Hamiltonians.
+Their spectral/growth conclusions cannot be combined without a new proof.
+
+No extra quantum density matrix or hidden clock is added to framework
+ontology. Quantum states can describe a conditional event-boundary
+instrument calculation, whose physical selection remains a separate issue.
+Prepared classical M2 metadata and a fixed Pauli/readout frame must be named.
+No axiom, primitive, audit verdict or editable prompt is changed here.

@@ -1,0 +1,27 @@
+loop: toe-native-local-law-20260913
+mode: campaign
+status: running
+branch: physics-loop/toe-native-local-law-20260913
+worktree: /Users/jonreilly/Documents/Codex/toe-native-local-law-20260913
+main_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
+planning_revision: 9cff766069e8f66b4cc5c36888b1e71600b8888e
+start_utc: 2026-09-13T12:14:41Z
+deadline_utc: 2026-09-14T00:14:41Z
+runtime_hours: 12
+execution: supervisor_only_no_subagents
+research_emphasis: derivations_first_exact_falsification_checks
+delivery: milestone
+checkpoint_interval_minutes: 30
+campaign: native_local_law
+block: 1
+active_route: native_two_cycle_history_and_projector_relay
+actual_current_surface_status: open
+independent_review: pending
+formal_audit: deferred
+continuation_automation: toe-derivation-campaign-continuation
+continuation_status: ACTIVE
+lock_owner: physics-loop-toe-native-local-law-20260913
+lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
+lock_expires_utc: 2026-09-13T13:30:01Z
+next_action: Derive and check the two-cycle native history, same-condition probability separation, and a physical nearest-neighbor projector relay that repairs this finite protocol.
+stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.

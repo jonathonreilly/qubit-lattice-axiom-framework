@@ -1,0 +1,10 @@
+{
+  "name": "path_range",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "f5f48500221e2ac5dd40efd3d0aa69beb88b02c38047b9d0052eec7538116dd7",
+  "old": "if d==4:continue",
+  "new": "if d==3:continue",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-o6guj_5j/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-o6guj_5j/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 127, in run\n    check('protected_vertex_paths_'+str(box),max(lengths)<=4,hops_checked=len(lengths),maximum_length=max(lengths))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-o6guj_5j/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('protected_vertex_paths_(1, 3, 3)', {'hops_checked': 296, 'maximum_length': 99})\n"
+}

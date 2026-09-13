@@ -1,0 +1,10 @@
+{
+  "name": "shift_node_jet",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "4514511fb48ad71e18ec5eb146b92631c9f4cf8e4452d8e7347ce2473da92c49",
+  "old": "(z-s.cos(kz))*s.sin(kz)/v]);spin",
+  "new": "(z-s.cos(kz))*s.sin(kz)*v]);spin",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-7k9yl7f0/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-7k9yl7f0/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 292, in run\n    eq('native_shift_second_moment_'+str(chir),s.diff(shift[2],kz,2).subs(node),3*chir*z)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-7k9yl7f0/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-7k9yl7f0/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('native_shift_second_moment_-1', {})\n"
+}

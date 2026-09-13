@@ -1,0 +1,23 @@
+{
+  "base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "added": [
+    "native_weyl_canonical_metric_constraints_bounded_theorem_note_2026-09-13"
+  ],
+  "removed": [],
+  "rewired": [],
+  "new_edges": [
+    {
+      "from": "native_weyl_canonical_metric_constraints_bounded_theorem_note_2026-09-13",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "native_weyl_canonical_metric_constraints_bounded_theorem_note_2026-09-13",
+      "to": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    }
+  ],
+  "manifest_sha256": "93f84f46e2f006968796c613e99962ee520638dca3761b70e4a4fa6590333e07",
+  "generated_by": [
+    "run_citation_graph_build.py",
+    "write_citation_graph_manifest.py"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Darboux_curvature",
+  "original_sha256": "6ac5bb9201776760bd21885f311e45f826d513a164935f90be0c4d0adbca268e",
+  "mutated_sha256": "81465907c8032cee2dc8bdec0a9e89d9e891d79d20077396d46f37e3231dab8f",
+  "old": "(s.I*psid*srho(deriv)*psi)[0]+pb(aval[i],aval[j])",
+  "new": "(s.I*psid*srho(deriv)*psi)[0]-pb(aval[i],aval[j])",
+  "returncode": 1,
+  "effective": true,
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-8pgls38q/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 358, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-8pgls38q/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 150, in run\n    eq('Darboux_momentum_curvature_'+str((i,j)),(s.I*psid*srho(deriv)*psi)[0]-pb(aval[i],aval[j]),(s.I*psid*srho(curv)*psi)[0])\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-8pgls38q/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 34, in eq\n    check(name,ok)\n    ~~~~~^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-canonical-mutation-8pgls38q/scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\", line 26, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('Darboux_momentum_curvature_(0, 1)', {})\n"
+}

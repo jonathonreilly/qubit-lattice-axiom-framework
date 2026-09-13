@@ -1,0 +1,15 @@
+The current vacuum-response interface leaves the complete susceptibility action open. This change derives the actual matter source and all-momentum free response for two explicit lapse couplings on the native Wilson carrier. They share the flat Hamiltonian and first source derivative but have different second-order contact terms and opposite response signs. A uniform node-chart proof gives the quartic-log infrared term; a finite trace proof gives free congruence-energy convexity and a small-source static existence bound.
+
+An exact rational midpoint witness is confined to a three-cell, three-particle sector at strong attraction. Physical lapse/metric selection, interacting infrared stress response and dynamical gravitational constraints remain open. No axiom update or retained status is asserted. The mathematical unit is self-contained; sibling PRs and external RG response claims are not inputs.
+
+Validation: 218 finite checks (97 free, 86 Fock/native, 35 exact rational), all 20 deliberate mutations rejected by scientific assertions, canonical 60-second envelope completed in 2.225 seconds with fresh source/note fingerprints, Python compilation and vocabulary/diff checks pass. The citation manifest adds one intended node and two source edges. Direct source/cache readiness has no issue; ledger preflight checked zero rows and is not a readiness PASS. Full integrated pipeline, strict lint, changed-evidence validation and independent review/audit remain landing requirements.
+
+- [Source note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/a4deb3feff307bc80d357660b71e89495450083d/docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md)
+- [Primary runner](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/a4deb3feff307bc80d357660b71e89495450083d/scripts/native_lapse_source_contact_response_2026_09_13.py)
+- [Canonical cache](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/a4deb3feff307bc80d357660b71e89495450083d/logs/runner-cache/native_lapse_source_contact_response_2026_09_13.txt)
+- [Handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/a4deb3feff307bc80d357660b71e89495450083d/.claude/science/physics-loops/native-lapse-response-20260913/HANDOFF.md)
+- [Trace gate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/a4deb3feff307bc80d357660b71e89495450083d/.claude/science/physics-loops/native-lapse-response-20260913/TRACE_GATE.md)
+- [Review and conformance](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/a4deb3feff307bc80d357660b71e89495450083d/.claude/science/physics-loops/native-lapse-response-20260913/REVIEW_HISTORY.md)
+- [Mutation evidence](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/a4deb3feff307bc80d357660b71e89495450083d/.claude/science/physics-loops/native-lapse-response-20260913/MUTATIONS.json)
+
+The bounded-theorem source is an author proposal for later independent audit. No audit-owned status or ledger is changed. The completed checkout will be removed after durable push under the owner's disk rules; its branch and all commits remain recoverable.

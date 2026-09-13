@@ -1,0 +1,19 @@
+{
+  "verified_utc": "2026-09-13T18:18:07.331739+00:00",
+  "head": "42dfd4afa0f0cc2f0b46039ff0b1681e5004a62c",
+  "remote_head": "42dfd4afa0f0cc2f0b46039ff0b1681e5004a62c",
+  "branch": "physics-loop/native-stress-logarithm-20260913",
+  "clean_including_untracked": true,
+  "pr": {
+    "baseRefOid": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "headRefOid": "42dfd4afa0f0cc2f0b46039ff0b1681e5004a62c",
+    "isDraft": false,
+    "mergeable": "MERGEABLE",
+    "number": 8094,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8094"
+  },
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-native-stress-logarithm-20260913",
+  "removal": "completed",
+  "path_exists_after": false
+}

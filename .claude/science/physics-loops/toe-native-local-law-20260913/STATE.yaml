@@ -13,8 +13,8 @@ research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
 campaign: native_local_deformation_algebra
-block: 7
-active_route: full_native_frame_vacuum_hessian_and_infrared_tensor
+block: 8
+active_route: canonical_metric_spinor_constraints_and_source_selection
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
@@ -22,7 +22,7 @@ continuation_automation: toe-derivation-campaign-continuation
 continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-lock_expires_utc: 2026-09-13T18:14:40Z
-next_action: Cold-review the self-contained native stress logarithm, exact spectral density and contact family; prepare a coherent milestone only after final evidence/conformance. Continue to metric-law selection afterwards.
+lock_expires_utc: 2026-09-13T19:17:36Z
+next_action: Derive the joint metric/spinor symplectic and constraint structure; begin with the explicit canonical metric ansatz and read the primary spinor constraint treatment.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.
-last_checkpoint_utc: 2026-09-13T17:40:41Z
+last_checkpoint_utc: 2026-09-13T18:20:09Z

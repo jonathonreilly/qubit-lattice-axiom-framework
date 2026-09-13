@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_fixed_first_target.py", line 351, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_fixed_first_target.py", line 239, in run
+    ready,last,weights=simulate('adaptive_five_event',generic,N)
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_fixed_first_target.py", line 186, in simulate
+    assert target==center(j),'fixed_first_data_target'
+           ^^^^^^^^^^^^^^^^^
+AssertionError: fixed_first_data_target

@@ -23,3 +23,14 @@ landing. No independent audit or source-author landing occurred.
 
 The 12-hour campaign continues personally without agents until
 2026-09-13T11:38:24Z. This milestone is not the end of that campaign.
+
+
+At11:14UTC the PR gains a second closely related realization, the fixed
+first-target local-program note. It uses a different explicit content law
+and an exponential prepared probability table. The original source and
+31-check cache remain byte-identical; the new107-check cache is fresh and
+twelve new actual mutants fail assertions. The combined unit has41 changed
+Python paths compiled and two new graph nodes/four edges relative to main.
+Review the two resource/mechanism alternatives together without identifying
+their local laws or promoting either supplied probability tree to physical
+Born-law selection. Independent review/integration gates remain pending.

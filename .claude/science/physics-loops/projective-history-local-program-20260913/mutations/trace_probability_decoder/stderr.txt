@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_trace_probability_decoder.py", line 351, in <module>
+    result=run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_trace_probability_decoder.py", line 217, in run
+    checked('program_decode_'+str(p),decode(value)==(p,P))
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/projective-history-local-copy-20260913/scripts/_projective_program_mutation_trace_probability_decoder.py", line 157, in checked
+    assert bool(condition),name
+           ~~~~^^^^^^^^^^^
+AssertionError: program_decode_1/5

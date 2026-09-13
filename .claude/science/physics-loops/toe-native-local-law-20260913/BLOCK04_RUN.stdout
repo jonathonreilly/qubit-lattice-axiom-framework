@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "checks": 265,
+  "samples": [
+    {
+      "k": 1,
+      "diamond": 1.5099407093782344,
+      "down_input": 1.5,
+      "outcome_L1": 1.0,
+      "program_max_infidelity": 0.5,
+      "optimal_down_weight": 0.9549703546891173
+    },
+    {
+      "k": 2,
+      "diamond": 1.1297331208153718,
+      "down_input": 1.1111111111111112,
+      "outcome_L1": 0.6666666666666666,
+      "program_max_infidelity": 0.4444444444444444,
+      "optimal_down_weight": 0.94403778263832
+    },
+    {
+      "k": 3,
+      "diamond": 0.8962395622770736,
+      "down_input": 0.875,
+      "outcome_L1": 0.5,
+      "program_max_infidelity": 0.375,
+      "optimal_down_weight": 0.9414561592828935
+    },
+    {
+      "k": 6,
+      "diamond": 0.5501091500159252,
+      "down_input": 0.5306122448979592,
+      "outcome_L1": 0.2857142857142857,
+      "program_max_infidelity": 0.24489795918367346,
+      "optimal_down_weight": 0.941321596060376
+    },
+    {
+      "k": 15,
+      "diamond": 0.25391339478179914,
+      "down_input": 0.2421875,
+      "outcome_L1": 0.125,
+      "program_max_infidelity": 0.1171875,
+      "optimal_down_weight": 0.9437418998550959
+    }
+  ],
+  "elapsed_seconds": 1.2898843750008382,
+  "source_sha256": "61b6efe7825d9aedf4443ce3a5f0a92fc015e0d7616863be66ecbbc13a789c77",
+  "limitations": "Finite author checks; quantified diamond and permanence proofs are in BLOCK04_DERIVATION.md; no independent review or axiom no-go."
+}

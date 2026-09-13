@@ -1,0 +1,17 @@
+{
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-native-common-frame-20260913",
+  "preserved_branch": "physics-loop/native-common-frame-20260913",
+  "head": "4ad50beb2237097578815a623d963f3427cdcd78",
+  "remote_head": "4ad50beb2237097578815a623d963f3427cdcd78",
+  "clean": true,
+  "pr": {
+    "headRefOid": "4ad50beb2237097578815a623d963f3427cdcd78",
+    "isDraft": false,
+    "mergeable": "MERGEABLE",
+    "number": 8092,
+    "state": "OPEN",
+    "title": "[physics-loop] Native common frame bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8092"
+  },
+  "checkout_removed": true
+}

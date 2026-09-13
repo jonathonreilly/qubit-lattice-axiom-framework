@@ -1,0 +1,305 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "complete_Laurent_Wilson_symbol"
+    },
+    {
+      "name": "source_inversion_symmetry"
+    },
+    {
+      "name": "source_z_reflection"
+    },
+    {
+      "name": "source_particle_hole_reflection"
+    },
+    {
+      "name": "simple_time_reversal_is_broken"
+    },
+    {
+      "name": "exact_node_-1"
+    },
+    {
+      "name": "node_z_velocity_-1"
+    },
+    {
+      "name": "nonzero_quadratic_source_coefficient_-1"
+    },
+    {
+      "name": "exact_node_1"
+    },
+    {
+      "name": "node_z_velocity_1"
+    },
+    {
+      "name": "nonzero_quadratic_source_coefficient_1"
+    },
+    {
+      "name": "zeta_zero_violates_chosen_quadratic_hypothesis"
+    },
+    {
+      "name": "bond_squared_singular_values_0"
+    },
+    {
+      "name": "bond_squared_singular_values_1"
+    },
+    {
+      "name": "bond_squared_singular_values_2"
+    },
+    {
+      "name": "every_nonzero_Wilson_hop_has_protected_bounded_path",
+      "routed_terms": 2500,
+      "cells": 125
+    },
+    {
+      "name": "open_box_routes_need_no_extra_bulk_fermions",
+      "routed_terms": 108
+    },
+    {
+      "name": "native_cycle_projector"
+    },
+    {
+      "name": "native_code_dimension"
+    },
+    {
+      "name": "native_vacuum_rank_one"
+    },
+    {
+      "name": "native_CAR_isometry"
+    },
+    {
+      "name": "native_CAR_full_code_range"
+    },
+    {
+      "name": "native_CAR_number_0"
+    },
+    {
+      "name": "native_CAR_number_1"
+    },
+    {
+      "name": "native_CAR_number_2"
+    },
+    {
+      "name": "native_CAR_number_3"
+    },
+    {
+      "name": "path_involution_[0, 1]"
+    },
+    {
+      "name": "path_hermitian_[0, 1]"
+    },
+    {
+      "name": "path_native_CAR_[0, 1]"
+    },
+    {
+      "name": "real_hopping_sign_[0, 1]"
+    },
+    {
+      "name": "imaginary_hopping_sign_[0, 1]"
+    },
+    {
+      "name": "path_involution_[0, 2]"
+    },
+    {
+      "name": "path_hermitian_[0, 2]"
+    },
+    {
+      "name": "path_native_CAR_[0, 2]"
+    },
+    {
+      "name": "real_hopping_sign_[0, 2]"
+    },
+    {
+      "name": "imaginary_hopping_sign_[0, 2]"
+    },
+    {
+      "name": "path_involution_[0, 2, 3]"
+    },
+    {
+      "name": "path_hermitian_[0, 2, 3]"
+    },
+    {
+      "name": "path_native_CAR_[0, 2, 3]"
+    },
+    {
+      "name": "real_hopping_sign_[0, 2, 3]"
+    },
+    {
+      "name": "imaginary_hopping_sign_[0, 2, 3]"
+    },
+    {
+      "name": "path_involution_[1, 0, 2]"
+    },
+    {
+      "name": "path_hermitian_[1, 0, 2]"
+    },
+    {
+      "name": "path_native_CAR_[1, 0, 2]"
+    },
+    {
+      "name": "real_hopping_sign_[1, 0, 2]"
+    },
+    {
+      "name": "imaginary_hopping_sign_[1, 0, 2]"
+    },
+    {
+      "name": "path_involution_[1, 0, 2, 3]"
+    },
+    {
+      "name": "path_hermitian_[1, 0, 2, 3]"
+    },
+    {
+      "name": "path_native_CAR_[1, 0, 2, 3]"
+    },
+    {
+      "name": "real_hopping_sign_[1, 0, 2, 3]"
+    },
+    {
+      "name": "imaginary_hopping_sign_[1, 0, 2, 3]"
+    },
+    {
+      "name": "path_involution_[2, 3]"
+    },
+    {
+      "name": "path_hermitian_[2, 3]"
+    },
+    {
+      "name": "path_native_CAR_[2, 3]"
+    },
+    {
+      "name": "real_hopping_sign_[2, 3]"
+    },
+    {
+      "name": "imaginary_hopping_sign_[2, 3]"
+    },
+    {
+      "name": "quartic_density_interaction_dictionary"
+    },
+    {
+      "name": "quartic_is_not_even_sector_constant"
+    },
+    {
+      "name": "full_complex_interacting_native_CAR_H"
+    },
+    {
+      "name": "interaction_preserves_candidate_Record"
+    },
+    {
+      "name": "interaction_preserves_cycle"
+    },
+    {
+      "name": "pulse_unitarity_polynomial"
+    },
+    {
+      "name": "interaction_preserves_pulse"
+    },
+    {
+      "name": "scalar_branch_full_reference_identity_-1"
+    },
+    {
+      "name": "scalar_branch_interacting_intertwiner_-1"
+    },
+    {
+      "name": "branch_Record_locked_-1"
+    },
+    {
+      "name": "scalar_branch_full_reference_identity_1"
+    },
+    {
+      "name": "scalar_branch_interacting_intertwiner_1"
+    },
+    {
+      "name": "branch_Record_locked_1"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_normalized_-4"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_bias_-4"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(-4, -1)"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(-4, 1)"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_normalized_-2"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_bias_-2"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(-2, -1)"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(-2, 1)"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_normalized_0"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_bias_0"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(0, -1)"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(0, 1)"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_normalized_2"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_bias_2"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(2, -1)"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(2, 1)"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_normalized_4"
+    },
+    {
+      "name": "actual_four_neighbor_pulse_bias_4"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(4, -1)"
+    },
+    {
+      "name": "actual_kernel_branch_probability_(4, 1)"
+    },
+    {
+      "name": "actual_bond_Fock_norm_0",
+      "eigenvalues": {
+        "0": 8,
+        "-1": 4,
+        "1": 4
+      }
+    },
+    {
+      "name": "actual_bond_Fock_norm_1",
+      "eigenvalues": {
+        "0": 8,
+        "-1": 4,
+        "1": 4
+      }
+    },
+    {
+      "name": "actual_bond_Fock_norm_2",
+      "eigenvalues": {
+        "0": 6,
+        "-1/2": 4,
+        "1/2": 4,
+        "-1": 1,
+        "1": 1
+      }
+    }
+  ],
+  "total_pass": 92,
+  "total_fail": 0,
+  "seconds": 0.728568832972087,
+  "runner_sha256": "dbe6afc818af315290b80c5196ccca34fe865b47e6b9658df84a7894b86d380e"
+}

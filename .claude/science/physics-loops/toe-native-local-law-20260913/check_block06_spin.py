@@ -18,7 +18,7 @@ def run():
     def eq(name,a,b):
         z=a-b
         vals=list(z) if isinstance(z,s.MatrixBase) else [z]
-        check(name,all(s.simplify(x)==0 for x in vals))
+        check(name,all(s.expand(x)==0 or s.simplify(x)==0 for x in vals))
     def scalar(F,jets):
         inv=F.inv()
         return -sum(s.LeviCivita(a,b,c)*F[a,i]*jets[i][b,j]*inv[j,c]

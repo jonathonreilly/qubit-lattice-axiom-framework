@@ -145,9 +145,11 @@ The derivative defining C may be supplied analytically for sampled smooth
 fields, or approximated by a local frame stencil with its error quantified.
 No exact native diffeomorphism symmetry is claimed.
 
-For constant F, C=0 and the earlier global two-node preservation proof applies.
-For nonuniform F, global momentum and an exact two-node zero set are not
-available; (P12) is a local continuum statement. Interacting RG bounds,
+For constant F, C=0 and the earlier global two-node preservation proof applies
+under its stated smallness bound. For nonuniform F, this note makes no global
+momentum or exact two-node zero-set assertion; (P12) is a local continuum
+statement. Periodic nonuniform frames can admit a Bloch description. The full
+frame source varies both the principal part and C(F). Interacting RG bounds,
 finite-spacing spin covariance and a dynamical origin of F remain open.
 
 ## 4. Planned checks and next proof obligation

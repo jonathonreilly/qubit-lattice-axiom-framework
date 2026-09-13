@@ -51,8 +51,8 @@ Since the original tangent is R_w F0, the deformed tangent is
 
     D_w=R_w F,      D_w^T D_w=F^T F.                    (C2)
 
-Both nodes therefore have the SAME cone metric for every real F; when F is
-invertible their chiralities remain opposite. No coefficient was extracted
+Both nodes therefore have the SAME quadratic form for every real F; when F is
+invertible it is a positive metric and their chiralities remain opposite. No coefficient was extracted
 from a fit. The trigonometric functions are an explicitly supplied constructive
 choice; many higher-order additions could share their node data.
 

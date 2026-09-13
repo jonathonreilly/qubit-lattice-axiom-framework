@@ -1,0 +1,20 @@
+{
+  "main": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "checked_utc": "2026-09-13T17:03:38.100042+00:00",
+  "worktrees": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-native-local-law-20260913",
+      "head": "a197fd3230e4f726efca7952c07e9e8926db2f95",
+      "contained_in_main": false,
+      "disposition": "unlanded commits retained"
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/toe-derivation-campaign-3a97a2",
+      "head": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "contained_in_main": true,
+      "disposition": "clean checkout removed; HEAD contained in main"
+    }
+  ],
+  "archive_directories_touched": false,
+  "git_gc_run": false
+}

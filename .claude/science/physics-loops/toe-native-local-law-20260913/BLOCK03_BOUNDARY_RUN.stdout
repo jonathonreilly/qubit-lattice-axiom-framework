@@ -1,0 +1,205 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "extended_state_total_parity_even"
+    },
+    {
+      "name": "exact_bulk_marginal_both_parities_and_coherences"
+    },
+    {
+      "name": "extended_state_normalized"
+    },
+    {
+      "name": "extended_state_positive"
+    },
+    {
+      "name": "dressed_field_even_0"
+    },
+    {
+      "name": "dressed_CAR_(0, 0)"
+    },
+    {
+      "name": "dressed_neutral_pair_(0, 0)"
+    },
+    {
+      "name": "dressed_CAR_(0, 1)"
+    },
+    {
+      "name": "dressed_neutral_pair_(0, 1)"
+    },
+    {
+      "name": "dressed_CAR_(0, 2)"
+    },
+    {
+      "name": "dressed_neutral_pair_(0, 2)"
+    },
+    {
+      "name": "dressed_CAR_(0, 3)"
+    },
+    {
+      "name": "dressed_neutral_pair_(0, 3)"
+    },
+    {
+      "name": "dressed_field_square_zero_0"
+    },
+    {
+      "name": "dressed_field_even_1"
+    },
+    {
+      "name": "dressed_CAR_(1, 0)"
+    },
+    {
+      "name": "dressed_neutral_pair_(1, 0)"
+    },
+    {
+      "name": "dressed_CAR_(1, 1)"
+    },
+    {
+      "name": "dressed_neutral_pair_(1, 1)"
+    },
+    {
+      "name": "dressed_CAR_(1, 2)"
+    },
+    {
+      "name": "dressed_neutral_pair_(1, 2)"
+    },
+    {
+      "name": "dressed_CAR_(1, 3)"
+    },
+    {
+      "name": "dressed_neutral_pair_(1, 3)"
+    },
+    {
+      "name": "dressed_field_square_zero_1"
+    },
+    {
+      "name": "dressed_field_even_2"
+    },
+    {
+      "name": "dressed_CAR_(2, 0)"
+    },
+    {
+      "name": "dressed_neutral_pair_(2, 0)"
+    },
+    {
+      "name": "dressed_CAR_(2, 1)"
+    },
+    {
+      "name": "dressed_neutral_pair_(2, 1)"
+    },
+    {
+      "name": "dressed_CAR_(2, 2)"
+    },
+    {
+      "name": "dressed_neutral_pair_(2, 2)"
+    },
+    {
+      "name": "dressed_CAR_(2, 3)"
+    },
+    {
+      "name": "dressed_neutral_pair_(2, 3)"
+    },
+    {
+      "name": "dressed_field_square_zero_2"
+    },
+    {
+      "name": "dressed_field_even_3"
+    },
+    {
+      "name": "dressed_CAR_(3, 0)"
+    },
+    {
+      "name": "dressed_neutral_pair_(3, 0)"
+    },
+    {
+      "name": "dressed_CAR_(3, 1)"
+    },
+    {
+      "name": "dressed_neutral_pair_(3, 1)"
+    },
+    {
+      "name": "dressed_CAR_(3, 2)"
+    },
+    {
+      "name": "dressed_neutral_pair_(3, 2)"
+    },
+    {
+      "name": "dressed_CAR_(3, 3)"
+    },
+    {
+      "name": "dressed_neutral_pair_(3, 3)"
+    },
+    {
+      "name": "dressed_field_square_zero_3"
+    },
+    {
+      "name": "interacting_H_leaves_ancilla_idle"
+    },
+    {
+      "name": "dressed_correlator_time_derivative"
+    },
+    {
+      "name": "actual_two_seed_supported_growth_prefix",
+      "events": 240,
+      "support_visits": 29400,
+      "native_events": 16,
+      "program_birth_conditions_with_native_Records": 0,
+      "old_program_conditions_with_native_Records": 5145
+    },
+    {
+      "name": "candidate_waits_for_all_its_program_neighbors"
+    },
+    {
+      "name": "old_program_support_rechecked_with_actual_native_neighbors"
+    },
+    {
+      "name": "literal_NN_multisets_under_all_proper_rotations_and_translation",
+      "rotations": 24,
+      "records": 242
+    },
+    {
+      "name": "straight_Wilson_hopping_is_nilpotent"
+    },
+    {
+      "name": "bent_Wilson_hopping_does_not_cancel"
+    },
+    {
+      "name": "odd_field_disjoint_boundary_commutator"
+    },
+    {
+      "name": "boundary_distance_two_Taylor_order_0"
+    },
+    {
+      "name": "boundary_distance_two_Taylor_order_1"
+    },
+    {
+      "name": "boundary_difference_really_starts_at_distance_two"
+    },
+    {
+      "name": "actual_nonlinear_onsite_field_derivative"
+    },
+    {
+      "name": "intersecting_bond_chain_count_from_actual_graph",
+      "counts": [
+        6,
+        66,
+        726,
+        7986,
+        87846,
+        966306
+      ]
+    },
+    {
+      "name": "Poisson_positive_energy_contour_residue"
+    },
+    {
+      "name": "actual_clock_Laplace_transform"
+    }
+  ],
+  "total_pass": 60,
+  "total_fail": 0,
+  "seconds": 0.7271016669692472,
+  "runner_sha256": "8b66049819fff206c2b7374552a1ded3e1a88806939713b9b1c90dc10e24c510",
+  "helper_sha256": "dbe6afc818af315290b80c5196ccca34fe865b47e6b9658df84a7894b86d380e"
+}

@@ -160,3 +160,12 @@ The main campaign is active until00:14:41UTC. No subagents. Lock expires
 17:23:40UTC. Completed PR worktrees8090/8091 have already been removed after
 preserving all science; the active campaign checkout must remain until its
 work is durably delivered and the full authorized run is finished.
+
+At17:14UTC, PR8092 is delivered and its clean, pushed checkout removed.
+Read BLOCK06_REVIEW_AND_LEARNING.md and PR8092_DELIVERY.json. The current
+block is BLOCK07_GOAL.md: full native frame vacuum Hessian and infrared
+tensor, including the actual spin-connection contact. The June9 full-W
+Hessian note and its entire runner were read; avoid confusing that 3D
+Euclidean source with this 3+1 Hamiltonian two-node carrier. An internal
+algebra issue in the older Sakharov summary is recorded, not silently
+inherited or audited. Continue personally through00:14:41UTC.

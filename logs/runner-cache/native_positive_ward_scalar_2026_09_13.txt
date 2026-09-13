@@ -1,0 +1,538 @@
+===== runner cache v1 =====
+runner: scripts/native_positive_ward_scalar_2026_09_13.py
+runner_sha256: 5bc26663dc6710b5814a623bcd462b09901d3539bb3aa4051baffae0a52eef2d
+input_fingerprint_sha256: e74825729856884df9556510115cb0c6042674c54facf1cebd5b10656dd88d35
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.65
+status: ok
+----- stdout -----
+{
+  "algebra": {
+    "status": "passed",
+    "checks": [
+      "quartic_majorant_coefficient_identity",
+      "P_vacuum_moment_0",
+      "P_vacuum_moment_1",
+      "P_vacuum_moment_2",
+      "P_vacuum_moment_3",
+      "P_vacuum_moment_4",
+      "P_vacuum_moment_5",
+      "P_vacuum_moment_6",
+      "P_vacuum_moment_7",
+      "P_vacuum_moment_8",
+      "P_vacuum_moment_9",
+      "P_vacuum_moment_10",
+      "P_ward_moment_0",
+      "P_ward_moment_1",
+      "P_ward_moment_2",
+      "P_ward_moment_3",
+      "P_ward_moment_4",
+      "P_ward_moment_5",
+      "P_ward_moment_6",
+      "P_ward_moment_7",
+      "P_ward_moment_8",
+      "P_ward_moment_9",
+      "P_ward_moment_10",
+      "O_vacuum_moment_0",
+      "O_vacuum_moment_1",
+      "O_vacuum_moment_2",
+      "O_vacuum_moment_3",
+      "O_vacuum_moment_4",
+      "O_vacuum_moment_5",
+      "O_vacuum_moment_6",
+      "O_vacuum_moment_7",
+      "O_vacuum_moment_8",
+      "O_vacuum_moment_9",
+      "O_vacuum_moment_10",
+      "O_ward_moment_0",
+      "O_ward_moment_1",
+      "O_ward_moment_2",
+      "O_ward_moment_3",
+      "O_ward_moment_4",
+      "O_ward_moment_5",
+      "O_ward_moment_6",
+      "O_ward_moment_7",
+      "O_ward_moment_8",
+      "O_ward_moment_9",
+      "O_ward_moment_10",
+      "OO_0_kernel",
+      "OO_0_common_limit",
+      "OP_0_kernel",
+      "OP_0_common_limit",
+      "PO_0_kernel",
+      "PO_0_common_limit",
+      "PP_2_kernel",
+      "PP_2_common_limit",
+      "PP_1_kernel",
+      "PP_1_common_limit",
+      "complete_signed_nominal",
+      "P_trial_norm_0",
+      "P_trial_norm_1",
+      "P_common_norm_limit",
+      "O_trial_norm_0",
+      "O_trial_norm_1",
+      "O_common_norm_limit"
+    ],
+    "count": 62,
+    "scope": "exact coefficient identities; finite native Fock checks use separate machinery"
+  },
+  "rational_sign": {
+    "interval": [
+      "7",
+      "330"
+    ],
+    "units": "h^2 alpha",
+    "coarse_error": "643122117/500000",
+    "nominal": [
+      1345.2320029239788,
+      1346.4505588561424
+    ],
+    "norm_bounds": {
+      "a": 9.354158926844534,
+      "b": 21.79120096745824,
+      "E": 1.4726510815228122,
+      "F": 14.087166598732924
+    },
+    "return_series_N": 256,
+    "P_gap_lower": 0.2655410478259388,
+    "O_gap_lower": "177/686",
+    "source_sha256": "f932113ee631ca82a3d64e80425e2a295ca7ac05e91ebd7d4ba4efcf06325579",
+    "dependencies_sha256": {
+      "WITNESS.json": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c",
+      "MOMENT_FORMULAS.json": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5",
+      "TRIAL_FORMULAS.json": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a"
+    }
+  },
+  "native_covariance": {
+    "status": "passed",
+    "ordered_pairs": 90,
+    "norm_checks": 30,
+    "table_fixture_classes": 7,
+    "max_table_absolute_error": 2.3092638912203256e-14,
+    "max_kernel_absolute_error": 1.5987211554602254e-14,
+    "max_norm_absolute_error": 3.552958743492366e-14,
+    "complete_nominal_direct": 1335.8112297922653,
+    "complete_nominal_formula": 1335.8112297922655,
+    "omitted_W_p_minus_q_mutant_rejected": true,
+    "seconds": 3.5629265420138836,
+    "source_sha256": "79c7028e4bc3333a7d55d0faa96ccab276979d407cfa5319408cc5af724436f0",
+    "scope": "finite native covariance algebra check; no infinite alpha sign or source re-audit"
+  },
+  "native_Fock": {
+    "status": "passed",
+    "finite_AP_L": 16,
+    "moment_checks": 44,
+    "rows": [
+      {
+        "class": "P",
+        "modes": 13,
+        "Fock_dimension": 8192,
+        "Gram_reconstruction_error": 3.221000241661895e-15,
+        "free_generator_hermiticity_error": 1.8788885331293437e-15,
+        "free_commutator_error": 8.187111419380858e-15,
+        "max_moment_scaled_error": 4.897522353960173e-14,
+        "checks": [
+          {
+            "source": "vacuum",
+            "order": 0,
+            "scaled_error": 0.0
+          },
+          {
+            "source": "vacuum",
+            "order": 1,
+            "scaled_error": 4.492260268651973e-16
+          },
+          {
+            "source": "vacuum",
+            "order": 2,
+            "scaled_error": 3.6267285471088444e-15
+          },
+          {
+            "source": "vacuum",
+            "order": 3,
+            "scaled_error": 1.0013041770749197e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 4,
+            "scaled_error": 1.521033454792753e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 5,
+            "scaled_error": 1.9548021935202018e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 6,
+            "scaled_error": 2.406845391808005e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 7,
+            "scaled_error": 2.8905212228357717e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 8,
+            "scaled_error": 3.4196826520442954e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 9,
+            "scaled_error": 3.8929147721118996e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 10,
+            "scaled_error": 4.4889434063056706e-14
+          },
+          {
+            "source": "ward",
+            "order": 0,
+            "scaled_error": 4.954231453137711e-15
+          },
+          {
+            "source": "ward",
+            "order": 1,
+            "scaled_error": 1.0791522138830974e-14
+          },
+          {
+            "source": "ward",
+            "order": 2,
+            "scaled_error": 2.3421031328829872e-14
+          },
+          {
+            "source": "ward",
+            "order": 3,
+            "scaled_error": 3.4785128274533783e-14
+          },
+          {
+            "source": "ward",
+            "order": 4,
+            "scaled_error": 4.1498463571745096e-14
+          },
+          {
+            "source": "ward",
+            "order": 5,
+            "scaled_error": 4.6393254800086686e-14
+          },
+          {
+            "source": "ward",
+            "order": 6,
+            "scaled_error": 4.8367136550029326e-14
+          },
+          {
+            "source": "ward",
+            "order": 7,
+            "scaled_error": 4.897522353960173e-14
+          },
+          {
+            "source": "ward",
+            "order": 8,
+            "scaled_error": 4.789926924814049e-14
+          },
+          {
+            "source": "ward",
+            "order": 9,
+            "scaled_error": 4.5070466320309115e-14
+          },
+          {
+            "source": "ward",
+            "order": 10,
+            "scaled_error": 4.441518050117877e-14
+          }
+        ]
+      },
+      {
+        "class": "O",
+        "modes": 13,
+        "Fock_dimension": 8192,
+        "Gram_reconstruction_error": 2.4912721836499718e-15,
+        "free_generator_hermiticity_error": 1.2793363857672586e-15,
+        "free_commutator_error": 5.2909780794499164e-15,
+        "max_moment_scaled_error": 1.9598239663375445e-14,
+        "checks": [
+          {
+            "source": "vacuum",
+            "order": 0,
+            "scaled_error": 0.0
+          },
+          {
+            "source": "vacuum",
+            "order": 1,
+            "scaled_error": 1.6099911096057026e-15
+          },
+          {
+            "source": "vacuum",
+            "order": 2,
+            "scaled_error": 2.9605947323337506e-16
+          },
+          {
+            "source": "vacuum",
+            "order": 3,
+            "scaled_error": 4.536093455430673e-15
+          },
+          {
+            "source": "vacuum",
+            "order": 4,
+            "scaled_error": 8.791369594807318e-15
+          },
+          {
+            "source": "vacuum",
+            "order": 5,
+            "scaled_error": 1.1776309963176989e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 6,
+            "scaled_error": 1.404225886444141e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 7,
+            "scaled_error": 1.6260284351969223e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 8,
+            "scaled_error": 1.755610964922888e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 9,
+            "scaled_error": 1.791134064484998e-14
+          },
+          {
+            "source": "vacuum",
+            "order": 10,
+            "scaled_error": 1.5900787774121062e-14
+          },
+          {
+            "source": "ward",
+            "order": 0,
+            "scaled_error": 1.7763568394002505e-15
+          },
+          {
+            "source": "ward",
+            "order": 1,
+            "scaled_error": 7.070195261244738e-15
+          },
+          {
+            "source": "ward",
+            "order": 2,
+            "scaled_error": 1.3195793664116147e-14
+          },
+          {
+            "source": "ward",
+            "order": 3,
+            "scaled_error": 1.7637400979550758e-14
+          },
+          {
+            "source": "ward",
+            "order": 4,
+            "scaled_error": 1.9420189938599764e-14
+          },
+          {
+            "source": "ward",
+            "order": 5,
+            "scaled_error": 1.9598239663375445e-14
+          },
+          {
+            "source": "ward",
+            "order": 6,
+            "scaled_error": 1.7855874867156553e-14
+          },
+          {
+            "source": "ward",
+            "order": 7,
+            "scaled_error": 1.4228970269589026e-14
+          },
+          {
+            "source": "ward",
+            "order": 8,
+            "scaled_error": 6.7713863594683066e-15
+          },
+          {
+            "source": "ward",
+            "order": 9,
+            "scaled_error": 4.3971559654576196e-15
+          },
+          {
+            "source": "ward",
+            "order": 10,
+            "scaled_error": 1.943967292083719e-14
+          }
+        ]
+      }
+    ],
+    "seconds": 0.12429349997546524,
+    "source_sha256": "79c7028e4bc3333a7d55d0faa96ccab276979d407cfa5319408cc5af724436f0",
+    "formula_sha256": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5",
+    "scope": "different finite native Fock implementation checks the moment identities; the infinite gap and scalar bounds are analytical in the note; independent source review pending"
+  },
+  "native_gap_fixture": {
+    "status": "passed",
+    "count": 25,
+    "checks": [
+      {
+        "name": "P_finite_full_skew_energy",
+        "L": 4,
+        "gap": 0.44948974278317166
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 4,
+        "s": 0.0,
+        "absolute_error": 5.273559366969494e-16
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 4,
+        "s": 0.5,
+        "absolute_error": 5.551115123125783e-17
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 4,
+        "s": 1.0,
+        "absolute_error": 2.1649348980190553e-15
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 4,
+        "s": 2.0,
+        "absolute_error": 1.176836406102666e-14
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 4,
+        "s": 4.0,
+        "absolute_error": 1.3322676295501878e-14
+      },
+      {
+        "name": "O_finite_full_skew_energy",
+        "L": 4,
+        "gap": 0.44948974278317166
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 4,
+        "s": 0.0,
+        "absolute_error": 3.191891195797325e-16
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 4,
+        "s": 0.5,
+        "absolute_error": 2.6922908347160046e-15
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 4,
+        "s": 1.0,
+        "absolute_error": 5.162537064506978e-15
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 4,
+        "s": 2.0,
+        "absolute_error": 1.7430501486614958e-14
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 4,
+        "s": 4.0,
+        "absolute_error": 2.653433028854124e-14
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 8,
+        "s": 0.0,
+        "absolute_error": 5.273559366969494e-16
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 8,
+        "s": 0.5,
+        "absolute_error": 2.220446049250313e-15
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 8,
+        "s": 1.0,
+        "absolute_error": 1.042499420123022e-13
+      },
+      {
+        "name": "P_nonflat_geometry_swap_rejected",
+        "difference": 0.039701363592144934
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 8,
+        "s": 2.0,
+        "absolute_error": 1.8995915951336428e-13
+      },
+      {
+        "name": "P_finite_determinant",
+        "L": 8,
+        "s": 4.0,
+        "absolute_error": 8.206768598029157e-13
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 8,
+        "s": 0.0,
+        "absolute_error": 3.11001224773122e-14
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 8,
+        "s": 0.5,
+        "absolute_error": 7.355227538141662e-14
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 8,
+        "s": 1.0,
+        "absolute_error": 5.10702591327572e-14
+      },
+      {
+        "name": "O_nonflat_geometry_swap_rejected",
+        "difference": 0.039701363591989614
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 8,
+        "s": 2.0,
+        "absolute_error": 4.518607710224387e-13
+      },
+      {
+        "name": "O_finite_determinant",
+        "L": 8,
+        "s": 4.0,
+        "absolute_error": 2.091660178393795e-13
+      },
+      {
+        "name": "independent_small_Fock_minimum",
+        "exact": "sqrt6-2",
+        "wrong_half_energy_rejected": true
+      }
+    ],
+    "half_bond_reversal_mutant_rejected": true,
+    "seconds": 0.13161695800954476,
+    "source_sha256": "79c7028e4bc3333a7d55d0faa96ccab276979d407cfa5319408cc5af724436f0",
+    "scope": "finite native determinant/Fock normalization checks; no extrapolated infinite gap"
+  },
+  "seconds": 5.195219207962509
+}
+per_element: Every needed CAR moment and trial polynomial is derived from the displayed covariance table.
+per_site: Actual native center and signed neighboring legs are used in both pair geometries.
+per_mode: The finite Fourier/Fock source span checks all44 moments without truncating their required derivatives.
+per_block: All90 ordered signed kernels and separate-source error terms are retained in the rational certificate.
+lattice_wide: checked and not executed — infinite statements follow from the analytical return bounds and Gaussian form limit, not a full-lattice simulation.
+TOTAL: PASS=252 FAIL=0
+
+----- stderr -----
+

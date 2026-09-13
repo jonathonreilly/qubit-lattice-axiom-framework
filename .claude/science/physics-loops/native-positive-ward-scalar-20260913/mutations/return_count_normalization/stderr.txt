@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-return_count_normalization-7mblz_oj/scripts/native_positive_ward_scalar_2026_09_13.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-return_count_normalization-7mblz_oj/scripts/native_positive_ward_scalar_2026_09_13.py", line 26, in main
+    algebra=algebra_check();arithmetic=rational_check()
+                                       ~~~~~~~~~~~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-return_count_normalization-7mblz_oj/scripts/native_ward_scalar_arithmetic_2026_09_13.py", line 179, in run
+    env,scalar_record=elementary_scalars()
+                      ~~~~~~~~~~~~~~~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-return_count_normalization-7mblz_oj/scripts/native_ward_scalar_arithmetic_2026_09_13.py", line 124, in elementary_scalars
+    assert probabilities[0]==1 and probabilities[1]==F(1,6) and probabilities[2]==F(5,72)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

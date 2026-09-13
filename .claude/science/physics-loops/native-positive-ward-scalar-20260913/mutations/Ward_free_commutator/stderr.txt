@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-Ward_free_commutator-a38xejhf/scripts/native_positive_ward_scalar_2026_09_13.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-Ward_free_commutator-a38xejhf/scripts/native_positive_ward_scalar_2026_09_13.py", line 26, in main
+    algebra=algebra_check();arithmetic=rational_check()
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-Ward_free_commutator-a38xejhf/scripts/native_ward_scalar_algebra_2026_09_13.py", line 251, in run
+    assert s.expand(value-s.sympify(raw[kind][source][n],locals=local))==0,(kind,source,n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('P', 'ward', 1)

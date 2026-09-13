@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-radial_frequency_power-o485r9x7/scripts/native_positive_ward_scalar_2026_09_13.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-radial_frequency_power-o485r9x7/scripts/native_positive_ward_scalar_2026_09_13.py", line 26, in main
+    algebra=algebra_check();arithmetic=rational_check()
+                                       ~~~~~~~~~~~~~~^^
+  File "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-radial_frequency_power-o485r9x7/scripts/native_ward_scalar_arithmetic_2026_09_13.py", line 206, in run
+    assert all(x<y for x,y in zip((a,b,E,FF),coarse))
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

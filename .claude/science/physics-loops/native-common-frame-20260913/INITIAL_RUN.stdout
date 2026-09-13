@@ -1,0 +1,13 @@
+PASS common native frame and spin connection: 423 checks
+flat_spin: 8 PASS
+common_frame: 140 PASS
+spin_connection: 160 PASS
+variable_frame: 103 PASS
+native_paths: 12 PASS
+per_element: Exact symbolic vertex jets and Clifford identities are checked; no physical parameter is fitted.
+per_site: Local rational frame jets and the central frame stencil are checked in their stated finite examples.
+per_mode: Both native nodes, the shear metric and finite Fourier operator errors are explicitly challenged.
+per_block: Protected hopping routes on three open boxes and five-mode even CAR paths are enumerated.
+lattice_wide: The note proves the uniform zero-set and slow-band bounds; the runner does not simulate an infinite system or prove gravity dynamics.
+Source SHA-256: 177470b9d38d4a16757d7d77f891b81811486df8142d2abde296fce90526a327
+Elapsed seconds: 2.9299883330240846

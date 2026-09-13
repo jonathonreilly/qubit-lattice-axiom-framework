@@ -1,0 +1,728 @@
+{
+  "expression": "lambda*(4*d1 + 4*d2 + 4*d3 + 3*lambda)/8",
+  "terms": [
+    {
+      "perm": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "split": 1,
+      "term": "A*B/24 - B**2/24 - B*d1/12 - B*d2/12 - B*d3/12 - B*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "split": 2,
+      "term": "A*d2/16 + A*d3/16 + A*lambda/32 - B*d2/16 - B*d3/16 - B*lambda/32 - d2**2/16 + d3**2/16 + d3*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "split": 3,
+      "term": "-A*d0/48 - A*d1/48 + A*d2/24 + B*d0/48 + B*d1/48 - B*d2/24 - d0*d3/24 - d0*lambda/48 - d1*d3/24 - d1*lambda/48 + d2*d3/12 + d2*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "split": 1,
+      "term": "-A*B/12 + B**2/12 + B*d1/6 + B*d2/6 + B*d3/6 + B*lambda/12"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "split": 2,
+      "term": "-A*d2/16 - A*d3/16 - A*lambda/32 + B*d2/16 + B*d3/16 + B*lambda/32 + d2**2/16 + d2*lambda/16 - d3**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "split": 3,
+      "term": "-A**2/24 + A*B/8 + A*d0/48 + A*d1/48 + A*d2/12 - A*d3/24 + A*lambda/24 - B**2/12 - B*d0/48 - B*d1/48 - B*d2/6 + B*d3/24 - B*lambda/12 - d0*d2/24 - d0*lambda/48 - d1*d2/24 - d1*lambda/48 + d2*d3/12 + d3*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "split": 1,
+      "term": "A*B/24 - B**2/24 - B*d1/12 - B*d2/12 - B*d3/12 - B*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "split": 2,
+      "term": "A*d1/16 + A*d3/16 + A*lambda/32 - B*d1/16 - B*d3/16 - B*lambda/32 - d1**2/16 + d3**2/16 + d3*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "split": 3,
+      "term": "-A*d0/48 + A*d1/24 - A*d2/48 + B*d0/48 - B*d1/24 + B*d2/48 - d0*d3/24 - d0*lambda/48 + d1*d3/12 + d1*lambda/24 - d2*d3/24 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "split": 1,
+      "term": "-A*B/12 + B**2/12 + B*d1/6 + B*d2/6 + B*d3/6 + B*lambda/12"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "split": 2,
+      "term": "-A*d1/16 - A*d3/16 - A*lambda/32 + B*d1/16 + B*d3/16 + B*lambda/32 + d1**2/16 + d1*lambda/16 - d3**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "split": 3,
+      "term": "-A**2/24 + A*B/8 + A*d0/48 + A*d1/12 + A*d2/48 - A*d3/24 + A*lambda/24 - B**2/12 - B*d0/48 - B*d1/6 - B*d2/48 + B*d3/24 - B*lambda/12 - d0*d1/24 - d0*lambda/48 - d1*d2/24 + d1*d3/12 - d2*lambda/48 + d3*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "split": 1,
+      "term": "A*B/24 - B**2/24 - B*d1/12 - B*d2/12 - B*d3/12 - B*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "split": 2,
+      "term": "A*d1/16 - A*d2/16 - A*lambda/32 - B*d1/16 + B*d2/16 + B*lambda/32 - d1**2/16 + d2**2/16 + d2*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "split": 3,
+      "term": "A**2/48 - A*B/8 + A*d0/48 - A*d1/24 - A*d2/24 + A*d3/48 - A*lambda/48 + 5*B**2/48 - B*d0/48 + B*d1/24 + 5*B*d2/24 - B*d3/48 + 5*B*lambda/48 - d0*d2/24 - d0*lambda/48 + d1*d2/12 + d1*lambda/24 - d2*d3/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "split": 1,
+      "term": "A*B/24 - B**2/24 - B*d1/12 - B*d2/12 - B*d3/12 - B*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "split": 2,
+      "term": "-A*d1/16 + A*d2/16 - A*lambda/32 + B*d1/16 - B*d2/16 + B*lambda/32 + d1**2/16 + d1*lambda/16 - d2**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "split": 3,
+      "term": "A**2/48 - A*B/8 + A*d0/48 - A*d1/24 - A*d2/24 + A*d3/48 - A*lambda/48 + 5*B**2/48 - B*d0/48 + 5*B*d1/24 + B*d2/24 - B*d3/48 + 5*B*lambda/48 - d0*d1/24 - d0*lambda/48 + d1*d2/12 - d1*d3/24 + d2*lambda/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "split": 1,
+      "term": "A**2/24 - A*B/8 - A*d0/48 + A*d1/12 - A*d2/48 + A*d3/24 + A*lambda/24 + B**2/12 + B*d0/48 - B*d1/6 + B*d2/48 - B*d3/24 - B*lambda/12 - d0*d1/24 - d0*lambda/48 - d1*d2/24 + d1*d3/12 - d2*lambda/48 + d3*lambda/24"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "split": 2,
+      "term": "-A*d2/16 - A*d3/16 - A*lambda/32 + B*d2/16 + B*d3/16 + B*lambda/32 + d2**2/16 + d2*lambda/16 - d3**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "split": 3,
+      "term": "A*d0/24 - A*d1/48 - A*d2/48 - B*d0/24 + B*d1/48 + B*d2/48 + d0*d3/12 + d0*lambda/24 - d1*d3/24 - d1*lambda/48 - d2*d3/24 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "split": 1,
+      "term": "-A**2/48 + A*B/8 - A*d0/48 - A*d1/24 + A*d2/24 - A*d3/48 - A*lambda/48 - 5*B**2/48 + B*d0/48 + 5*B*d1/24 - B*d2/24 + B*d3/48 + 5*B*lambda/48 - d0*d1/24 - d0*lambda/48 + d1*d2/12 - d1*d3/24 + d2*lambda/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "split": 2,
+      "term": "A*d2/16 + A*d3/16 + A*lambda/32 - B*d2/16 - B*d3/16 - B*lambda/32 - d2**2/16 + d3**2/16 + d3*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "split": 3,
+      "term": "A**2/48 - A*d0/24 + A*d1/48 - A*d2/24 + A*d3/48 - A*lambda/48 - B**2/48 + B*d0/24 - B*d1/48 - B*d2/24 - B*d3/48 - B*lambda/48 + d0*d2/12 + d0*lambda/24 - d1*d2/24 - d1*lambda/48 - d2*d3/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "split": 1,
+      "term": "-A**2/48 + A*d0/24 - A*d1/24 - A*d2/48 - A*d3/48 - A*lambda/48 + B**2/48 - B*d0/24 - B*d1/24 + B*d2/48 + B*d3/48 - B*lambda/48 + d0*d1/12 + d0*lambda/24 - d1*d2/24 - d1*d3/24 - d2*lambda/48 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "split": 2,
+      "term": "-A*d1/16 + A*d2/16 + A*lambda/32 + B*d1/16 - B*d2/16 - B*lambda/32 - d1**2/16 + d2**2/16 + d2*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "split": 3,
+      "term": "-A*d0/48 + A*d1/24 - A*d2/48 + B*d0/48 - B*d1/24 + B*d2/48 - d0*d3/24 - d0*lambda/48 + d1*d3/12 + d1*lambda/24 - d2*d3/24 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "split": 1,
+      "term": "5*A**2/48 - A*B/8 - A*d0/48 + 5*A*d1/24 + A*d2/24 - A*d3/48 + 5*A*lambda/48 + B**2/48 + B*d0/48 - B*d1/24 - B*d2/24 + B*d3/48 - B*lambda/48 - d0*d1/24 - d0*lambda/48 + d1*d2/12 - d1*d3/24 + d2*lambda/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "split": 2,
+      "term": "A*d1/16 - A*d2/16 + A*lambda/32 - B*d1/16 + B*d2/16 - B*lambda/32 + d1**2/16 + d1*lambda/16 - d2**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "split": 3,
+      "term": "-A**2/24 + A*B/24 - A*d1/12 - A*d2/12 - A*d3/12 - A*lambda/24"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "split": 1,
+      "term": "-A**2/48 + A*d0/24 - A*d1/24 - A*d2/48 - A*d3/48 - A*lambda/48 + B**2/48 - B*d0/24 - B*d1/24 + B*d2/48 + B*d3/48 - B*lambda/48 + d0*d1/12 + d0*lambda/24 - d1*d2/24 - d1*d3/24 - d2*lambda/48 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "split": 2,
+      "term": "-A*d1/16 - A*d3/16 - A*lambda/32 + B*d1/16 + B*d3/16 + B*lambda/32 - d1**2/16 + d3**2/16 + d3*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "split": 3,
+      "term": "-5*A**2/48 + A*B/8 + A*d0/48 - A*d1/24 + 5*A*d2/24 + A*d3/48 + 5*A*lambda/48 - B**2/48 - B*d0/48 + B*d1/24 - B*d2/24 - B*d3/48 - B*lambda/48 - d0*d2/24 - d0*lambda/48 + d1*d2/12 + d1*lambda/24 - d2*d3/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "split": 1,
+      "term": "-A**2/12 + A*B/8 - A*d0/48 - A*d1/6 - A*d2/48 + A*d3/24 - A*lambda/12 - B**2/24 + B*d0/48 + B*d1/12 + B*d2/48 - B*d3/24 + B*lambda/24 - d0*d1/24 - d0*lambda/48 - d1*d2/24 + d1*d3/12 - d2*lambda/48 + d3*lambda/24"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "split": 2,
+      "term": "A*d1/16 + A*d3/16 + A*lambda/32 - B*d1/16 - B*d3/16 - B*lambda/32 + d1**2/16 + d1*lambda/16 - d3**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "split": 3,
+      "term": "A**2/12 - A*B/12 + A*d1/6 + A*d2/6 + A*d3/6 + A*lambda/12"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "split": 1,
+      "term": "A**2/24 - A*B/8 - A*d0/48 - A*d1/48 + A*d2/12 + A*d3/24 + A*lambda/24 + B**2/12 + B*d0/48 + B*d1/48 - B*d2/6 - B*d3/24 - B*lambda/12 - d0*d2/24 - d0*lambda/48 - d1*d2/24 - d1*lambda/48 + d2*d3/12 + d3*lambda/24"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "split": 2,
+      "term": "-A*d1/16 - A*d3/16 - A*lambda/32 + B*d1/16 + B*d3/16 + B*lambda/32 + d1**2/16 + d1*lambda/16 - d3**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "split": 3,
+      "term": "A*d0/24 - A*d1/48 - A*d2/48 - B*d0/24 + B*d1/48 + B*d2/48 + d0*d3/12 + d0*lambda/24 - d1*d3/24 - d1*lambda/48 - d2*d3/24 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "split": 1,
+      "term": "-A**2/48 + A*B/8 - A*d0/48 + A*d1/24 - A*d2/24 - A*d3/48 - A*lambda/48 - 5*B**2/48 + B*d0/48 - B*d1/24 + 5*B*d2/24 + B*d3/48 + 5*B*lambda/48 - d0*d2/24 - d0*lambda/48 + d1*d2/12 + d1*lambda/24 - d2*d3/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "split": 2,
+      "term": "A*d1/16 + A*d3/16 + A*lambda/32 - B*d1/16 - B*d3/16 - B*lambda/32 - d1**2/16 + d3**2/16 + d3*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "split": 3,
+      "term": "A**2/48 - A*d0/24 - A*d1/24 + A*d2/48 + A*d3/48 - A*lambda/48 - B**2/48 + B*d0/24 - B*d1/24 - B*d2/48 - B*d3/48 - B*lambda/48 + d0*d1/12 + d0*lambda/24 - d1*d2/24 - d1*d3/24 - d2*lambda/48 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "split": 1,
+      "term": "-A**2/48 + A*d0/24 - A*d1/48 - A*d2/24 - A*d3/48 - A*lambda/48 + B**2/48 - B*d0/24 + B*d1/48 - B*d2/24 + B*d3/48 - B*lambda/48 + d0*d2/12 + d0*lambda/24 - d1*d2/24 - d1*lambda/48 - d2*d3/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "split": 2,
+      "term": "A*d1/16 - A*d2/16 + A*lambda/32 - B*d1/16 + B*d2/16 - B*lambda/32 + d1**2/16 + d1*lambda/16 - d2**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "split": 3,
+      "term": "-A*d0/48 - A*d1/48 + A*d2/24 + B*d0/48 + B*d1/48 - B*d2/24 - d0*d3/24 - d0*lambda/48 - d1*d3/24 - d1*lambda/48 + d2*d3/12 + d2*lambda/24"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "split": 1,
+      "term": "5*A**2/48 - A*B/8 - A*d0/48 + A*d1/24 + 5*A*d2/24 - A*d3/48 + 5*A*lambda/48 + B**2/48 + B*d0/48 - B*d1/24 - B*d2/24 + B*d3/48 - B*lambda/48 - d0*d2/24 - d0*lambda/48 + d1*d2/12 + d1*lambda/24 - d2*d3/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "split": 2,
+      "term": "-A*d1/16 + A*d2/16 + A*lambda/32 + B*d1/16 - B*d2/16 - B*lambda/32 - d1**2/16 + d2**2/16 + d2*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "split": 3,
+      "term": "-A**2/24 + A*B/24 - A*d1/12 - A*d2/12 - A*d3/12 - A*lambda/24"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "split": 1,
+      "term": "-A**2/48 + A*d0/24 - A*d1/48 - A*d2/24 - A*d3/48 - A*lambda/48 + B**2/48 - B*d0/24 + B*d1/48 - B*d2/24 + B*d3/48 - B*lambda/48 + d0*d2/12 + d0*lambda/24 - d1*d2/24 - d1*lambda/48 - d2*d3/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "split": 2,
+      "term": "-A*d2/16 - A*d3/16 - A*lambda/32 + B*d2/16 + B*d3/16 + B*lambda/32 - d2**2/16 + d3**2/16 + d3*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "split": 3,
+      "term": "-5*A**2/48 + A*B/8 + A*d0/48 + 5*A*d1/24 - A*d2/24 + A*d3/48 + 5*A*lambda/48 - B**2/48 - B*d0/48 - B*d1/24 + B*d2/24 - B*d3/48 - B*lambda/48 - d0*d1/24 - d0*lambda/48 + d1*d2/12 - d1*d3/24 + d2*lambda/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "split": 1,
+      "term": "-A**2/12 + A*B/8 - A*d0/48 - A*d1/48 - A*d2/6 + A*d3/24 - A*lambda/12 - B**2/24 + B*d0/48 + B*d1/48 + B*d2/12 - B*d3/24 + B*lambda/24 - d0*d2/24 - d0*lambda/48 - d1*d2/24 - d1*lambda/48 + d2*d3/12 + d3*lambda/24"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "split": 2,
+      "term": "A*d2/16 + A*d3/16 + A*lambda/32 - B*d2/16 - B*d3/16 - B*lambda/32 + d2**2/16 + d2*lambda/16 - d3**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "split": 3,
+      "term": "A**2/12 - A*B/12 + A*d1/6 + A*d2/6 + A*d3/6 + A*lambda/12"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "split": 1,
+      "term": "A*d0/48 + A*d1/48 - A*d2/24 - B*d0/48 - B*d1/48 + B*d2/24 - d0*d3/24 - d0*lambda/48 - d1*d3/24 - d1*lambda/48 + d2*d3/12 + d2*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "split": 2,
+      "term": "-A*d1/16 + A*d2/16 - A*lambda/32 + B*d1/16 - B*d2/16 + B*lambda/32 + d1**2/16 + d1*lambda/16 - d2**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "split": 3,
+      "term": "A**2/48 - A*d0/24 + A*d1/48 - A*d2/24 + A*d3/48 - A*lambda/48 - B**2/48 + B*d0/24 - B*d1/48 - B*d2/24 - B*d3/48 - B*lambda/48 + d0*d2/12 + d0*lambda/24 - d1*d2/24 - d1*lambda/48 - d2*d3/24 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "split": 1,
+      "term": "A*d0/48 - A*d1/24 + A*d2/48 - B*d0/48 + B*d1/24 - B*d2/48 - d0*d3/24 - d0*lambda/48 + d1*d3/12 + d1*lambda/24 - d2*d3/24 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "split": 2,
+      "term": "A*d1/16 - A*d2/16 - A*lambda/32 - B*d1/16 + B*d2/16 + B*lambda/32 - d1**2/16 + d2**2/16 + d2*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "split": 3,
+      "term": "A**2/48 - A*d0/24 - A*d1/24 + A*d2/48 + A*d3/48 - A*lambda/48 - B**2/48 + B*d0/24 - B*d1/24 - B*d2/48 - B*d3/48 - B*lambda/48 + d0*d1/12 + d0*lambda/24 - d1*d2/24 - d1*d3/24 - d2*lambda/48 - d3*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "split": 1,
+      "term": "-A*d0/24 + A*d1/48 + A*d2/48 + B*d0/24 - B*d1/48 - B*d2/48 + d0*d3/12 + d0*lambda/24 - d1*d3/24 - d1*lambda/48 - d2*d3/24 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "split": 2,
+      "term": "A*d1/16 + A*d3/16 + A*lambda/32 - B*d1/16 - B*d3/16 - B*lambda/32 + d1**2/16 + d1*lambda/16 - d3**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "split": 3,
+      "term": "A**2/12 - A*B/8 + A*d0/48 + A*d1/48 - A*d2/6 - A*d3/24 - A*lambda/12 + B**2/24 - B*d0/48 - B*d1/48 + B*d2/12 + B*d3/24 + B*lambda/24 - d0*d2/24 - d0*lambda/48 - d1*d2/24 - d1*lambda/48 + d2*d3/12 + d3*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "split": 1,
+      "term": "A*d0/48 - A*d1/24 + A*d2/48 - B*d0/48 + B*d1/24 - B*d2/48 - d0*d3/24 - d0*lambda/48 + d1*d3/12 + d1*lambda/24 - d2*d3/24 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "split": 2,
+      "term": "-A*d1/16 - A*d3/16 - A*lambda/32 + B*d1/16 + B*d3/16 + B*lambda/32 - d1**2/16 + d3**2/16 + d3*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "split": 3,
+      "term": "-A**2/24 + A*B/24 - A*d1/12 - A*d2/12 - A*d3/12 - A*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "split": 1,
+      "term": "-A*d0/24 + A*d1/48 + A*d2/48 + B*d0/24 - B*d1/48 - B*d2/48 + d0*d3/12 + d0*lambda/24 - d1*d3/24 - d1*lambda/48 - d2*d3/24 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "split": 2,
+      "term": "A*d2/16 + A*d3/16 + A*lambda/32 - B*d2/16 - B*d3/16 - B*lambda/32 + d2**2/16 + d2*lambda/16 - d3**2/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "split": 3,
+      "term": "A**2/12 - A*B/8 + A*d0/48 - A*d1/6 + A*d2/48 - A*d3/24 - A*lambda/12 + B**2/24 - B*d0/48 + B*d1/12 - B*d2/48 + B*d3/24 + B*lambda/24 - d0*d1/24 - d0*lambda/48 - d1*d2/24 + d1*d3/12 - d2*lambda/48 + d3*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "split": 1,
+      "term": "A*d0/48 + A*d1/48 - A*d2/24 - B*d0/48 - B*d1/48 + B*d2/24 - d0*d3/24 - d0*lambda/48 - d1*d3/24 - d1*lambda/48 + d2*d3/12 + d2*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "split": 2,
+      "term": "-A*d2/16 - A*d3/16 - A*lambda/32 + B*d2/16 + B*d3/16 + B*lambda/32 - d2**2/16 + d3**2/16 + d3*lambda/16 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "split": 3,
+      "term": "-A**2/24 + A*B/24 - A*d1/12 - A*d2/12 - A*d3/12 - A*lambda/24"
+    }
+  ],
+  "source_sha256": "4aa01cdee9f64f2140289d0def051d7e7116c8ffa36b8a7e3cd1a63d0a3d7e38",
+  "elapsed_sec": 0.13941025000531226,
+  "scope": "first coefficient extraction, not a proof of nonlinear existence or global failure"
+}

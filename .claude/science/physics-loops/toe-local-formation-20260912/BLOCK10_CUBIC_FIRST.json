@@ -1,0 +1,6 @@
+{
+  "expression": "(8*d0*f0**2 - 16*d0*f0*f1 + 8*d0*f1**2 + 2*d1*lambda**2 + 2*d2*lambda**2 + 2*d3*lambda**2 + 16*f0**3 - 16*f0**2*f1 - 16*f0*f1**2 + 16*f1**3 + lambda**3)/8",
+  "source_sha256": "64fd1a6c45fc4d5300d134f60baa42327d5a941c28a239649176427d185b0f6d",
+  "elapsed_sec": 2.7120111670228653,
+  "scope": "first extraction of a derived rational cubic identity, not nonlinear existence"
+}

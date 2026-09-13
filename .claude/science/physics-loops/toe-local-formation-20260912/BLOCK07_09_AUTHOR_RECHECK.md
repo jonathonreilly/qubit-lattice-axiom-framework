@@ -1,6 +1,6 @@
 # Cold author proof pass: exact Regge reduction and reduced tensor transfer
 
-2026-09-13 03:44 UTC. The complete Block7 and Block9 derivations and their
+2026-09-13, completed by 03:42 UTC. The complete Block7 and Block9 derivations and their
 three exact checkers were reread. This is the same campaign author, not an
 independent source review or retention decision.
 

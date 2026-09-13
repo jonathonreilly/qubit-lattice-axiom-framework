@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "scope": "separate nonlinear distance-Gram geometry and finite-step extrapolation; no interval remainder or nonlinear existence certificate",
+  "checks": [
+    "literal_periodic_cubic_scalar",
+    "literal_periodic_cubic_longitudinal_mesh",
+    "literal_periodic_cubic_mesh_and_hyper",
+    "literal_hyper_quadratic_0.0",
+    "literal_hyper_quadratic_1.0"
+  ],
+  "count": 5,
+  "rows": [
+    {
+      "name": "scalar",
+      "target": "36.0",
+      "extrapolated": "35.999999999326173062265981216610418521396760888509938415068842422",
+      "error": "0.00000000067382693773401878338958147860323911149006158493115757751479418333"
+    },
+    {
+      "name": "longitudinal_mesh",
+      "target": "27.0",
+      "extrapolated": "26.99999999956214865720937534018039404448855627001440262452663593",
+      "error": "0.00000000043785134279062465981960595551144372998559737547336407047098264049"
+    },
+    {
+      "name": "mesh_and_hyper",
+      "target": "25.5",
+      "extrapolated": "25.499999999531969501285673919337422014989146909392651532795179198",
+      "error": "0.00000000046803049871432608066257798501085309060734846720482080152195787413"
+    },
+    {
+      "name": "general_hyper_0.0",
+      "target": "0.0",
+      "extrapolated": "-0.00000000076263827557811229092640387371522339522709989197077187100100268697",
+      "error": "0.00000000076263827557811229092640387371522339522709989197077187100100268697"
+    },
+    {
+      "name": "general_hyper_1.0",
+      "target": "0.95",
+      "extrapolated": "0.94999999846858681418224332103186844464224850496918034555640727352",
+      "error": "0.0000000015314131858177566789681315553577514950308196544435927264853745332"
+    }
+  ],
+  "precision_digits": 65,
+  "steps": [
+    "0.001",
+    "0.0005"
+  ],
+  "source_sha256": "36002bf53c814be9b04de82763d3336e95c75ba88858d7d6ce9e82a3810f1493",
+  "elapsed_sec": 4.1656230830121785
+}

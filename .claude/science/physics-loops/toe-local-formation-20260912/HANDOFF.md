@@ -146,7 +146,7 @@ supplyphysicalclock/matter/axiomlaw. No agents; deadline11:38:24UTC.
 Lockrefreshed03:24:58UTCexpires04:24:58UTC. Campaign5f89a4 is pushed; apparatus
 PR8084 e56bca5 remains the only milestone PR, independent review pending.
 
-Block9 complete at03:44UTC:48 exact checks pass in0.15s. Full mixed constraints,
+Block9 complete by03:42UTC:48 exact checks pass in0.15s. Full mixed constraints,
 explicit gauge elimination, positive heat-sandwich transfer, complete Hermite
 spectrum and exact Fourier covariance are derived. Signed trace cleanup and
 coordinate-order clarification are recorded in BLOCK07_09_AUTHOR_RECHECK.
@@ -154,3 +154,44 @@ Final Block7 recheck12+32 named checks also passes in24s, all225Laurent
 entries zero. Main fetch remains cda8b144. Next is a self-contained linear
 Regge/transfer milestone; Block8 remains a separate nonlinear boundary with
 live alternatives. No independent review and no physical graviton claim.
+
+Timestamp correction at03:42:26UTC: the preceding handoff/recheck were initially
+labelled03:44 by a manual estimate; the clock confirms completion before03:42.
+Use tool clock values for subsequent checkpoints. No scientific content changed.
+
+Linear gravity author milestone PR8085 is open, non-draft, verified head
+c63f5b991044328ad9b13223c8a25849aa0ef574, base main. Focused worktree
+/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913
+is clean and pushed. Exact92checks,6actualmutants,9trackedrelative links,
+source-bound cache and fresh graph-row readiness passed. Graph adds1node2edges,
+3helpers; full shared integration gates and independent review pending.
+No author merge. Campaign still running personally; deadline11:38:24UTC.
+
+Block10 coefficient extraction: for8staticPhi values and32static displacement
+values, Ehyper2=lambda*(3lambda+LPhi+Lxi)/8. LPhi=sum6middlePhi-3endpoints;
+Lxi has explicit4x8integerweights in probe JSON. Therefore lambda0 is always
+a surviving necessary condition, not a scalar-source wall. General1Dsource
+has LPhi0. Full plane-symmetric cubic cell action was then derived from
+second angle and area coefficients, before extraction. The exact result is
+S3cell=[2(A+B)+d0]*(B-A)^2+lambda²(d1+d2+d3)/4+lambda³/8.
+The longitudinal displacement projection thus requires constant squared
+neighbor gradients. Odd plane periods plus telescoping force Phi constant,
+within this stated first-tangent family, even allowing arbitrary lambda and
+plane displacements; higher-order corrections cannot repair a zero-Hessian
+projection. Constant metric and wider transverse tangents require explicit
+scope analysis before strengthening. Independent nonlinear distance-Gram
+geometry checks are running; this is still a candidate derivation, not an
+axiom wall or nonlinear existence theorem. No external reviewer or agents.
+
+By04:06UTC, separate nonlinear distance-Gram checks allpassed: three periodic
+cubic rays36,27,25.5 agreewithin6.8e-10; two general static/gauge hyper coefficients
+0,.95 agreewithin1.6e-9.65digit,two-step extrapolation, nointervalcertificate.
+BLOCK10_DERIVATION now gives the C1 projected-equation argument and exact
+centered rho gradPhi identity. Constant metric projections of the pure scalar
+cubic are g²(1,-1,-1,3)/2 with alloffs0. A candidate supplied second-order
+axis source J2 with those coefficients matches all null projections, so
+Qw=J2-gradS3(v) should be solvable. This is a proposed external stress/mean-energy
+completion, not native matter derivation or an all-order branch. Full force
+verification is next. Primary literature scope records known Regge pseudo-
+constraint and fluid Euler context; no priorityclaim and changed-background
+alternatives remain live. Deadline11:38:24UTC, noagents.

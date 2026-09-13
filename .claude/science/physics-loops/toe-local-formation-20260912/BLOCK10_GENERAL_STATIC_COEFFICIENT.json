@@ -1,0 +1,728 @@
+{
+  "expression": "lambda*(4*d1 + 4*d2 + 4*d3 - 3*f0 + f1 + f2 + f3 + f4 + f5 + f6 - 3*f7 + 3*lambda)/8",
+  "terms": [
+    {
+      "perm": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "split": 1,
+      "term": "d1*f4/12 - d1*f6/8 - d1*f7/24 + d2*f4/12 - d2*f6/8 - d2*f7/24 + d3*f4/12 - d3*f6/8 - d3*f7/24 - f0*f4/24 + f0*f6/16 + f0*f7/48 + f4**2/12 - f4*f6/8 - f4*f7/12 + f4*lambda/24 + f6*f7/16 - f6*lambda/16 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "split": 2,
+      "term": "-d2**2/16 + d2*f0/16 - d2*f4/8 + d2*f7/16 + d3**2/16 + d3*f0/16 - d3*f4/8 + d3*f6/8 - d3*f7/16 + d3*lambda/16 + f0*f6/16 - f0*f7/16 + f0*lambda/32 - f4*f6/8 + f4*f7/8 - f4*lambda/16 + f6**2/16 - f6*f7/16 + f6*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "split": 3,
+      "term": "-d0*d3/24 - d0*f0/48 + d0*f7/48 - d0*lambda/48 - d1*d3/24 - d1*f0/48 + d1*f7/48 - d1*lambda/48 + d2*d3/12 + d2*f0/24 - d2*f7/24 + d2*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "split": 1,
+      "term": "-d1*f4/24 + d1*f6/4 - d1*f7/24 - d2*f4/24 + d2*f6/4 - d2*f7/24 - d3*f4/24 + d3*f6/4 - d3*f7/24 + f0*f4/48 - f0*f6/8 + f0*f7/48 - f4**2/24 + f4*f6/4 - f4*f7/48 - f4*lambda/48 - f6*f7/8 + f6*lambda/8 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "split": 2,
+      "term": "d2**2/16 - d2*f0/16 + d2*f4/8 - d2*f7/16 + d2*lambda/16 - d3**2/16 - d3*f0/16 + d3*f4/8 - d3*f6/8 + d3*f7/16 - f0*f6/16 + f0*f7/16 - f0*lambda/32 + f4*f6/8 - f4*f7/8 + f4*lambda/16 - f6**2/16 + f6*f7/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "split": 3,
+      "term": "-d0*d2/24 + d0*f0/48 - d0*f6/24 + d0*f7/48 - d0*lambda/48 - d1*d2/24 + d1*f0/48 - d1*f6/24 + d1*f7/48 - d1*lambda/48 + d2*d3/12 + d2*f0/12 - d2*f4/8 - d2*f6/24 - d3*f0/24 + d3*f6/12 - d3*f7/24 + d3*lambda/24 - f0**2/24 + f0*f4/16 + 5*f0*f6/48 - f0*f7/24 + f0*lambda/24 - f4*f6/8 + f4*f7/16 - f4*lambda/16 - f6**2/24 + f6*f7/48 - f6*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "split": 1,
+      "term": "d1*f4/12 - d1*f5/8 - d1*f7/24 + d2*f4/12 - d2*f5/8 - d2*f7/24 + d3*f4/12 - d3*f5/8 - d3*f7/24 - f0*f4/24 + f0*f5/16 + f0*f7/48 + f4**2/12 - f4*f5/8 - f4*f7/12 + f4*lambda/24 + f5*f7/16 - f5*lambda/16 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "split": 2,
+      "term": "-d1**2/16 + d1*f0/16 - d1*f4/8 + d1*f7/16 + d3**2/16 + d3*f0/16 - d3*f4/8 + d3*f5/8 - d3*f7/16 + d3*lambda/16 + f0*f5/16 - f0*f7/16 + f0*lambda/32 - f4*f5/8 + f4*f7/8 - f4*lambda/16 + f5**2/16 - f5*f7/16 + f5*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "split": 3,
+      "term": "-d0*d3/24 - d0*f0/48 + d0*f7/48 - d0*lambda/48 + d1*d3/12 + d1*f0/24 - d1*f7/24 + d1*lambda/24 - d2*d3/24 - d2*f0/48 + d2*f7/48 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "split": 1,
+      "term": "-d1*f4/24 + d1*f5/4 - d1*f7/24 - d2*f4/24 + d2*f5/4 - d2*f7/24 - d3*f4/24 + d3*f5/4 - d3*f7/24 + f0*f4/48 - f0*f5/8 + f0*f7/48 - f4**2/24 + f4*f5/4 - f4*f7/48 - f4*lambda/48 - f5*f7/8 + f5*lambda/8 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "split": 2,
+      "term": "d1**2/16 - d1*f0/16 + d1*f4/8 - d1*f7/16 + d1*lambda/16 - d3**2/16 - d3*f0/16 + d3*f4/8 - d3*f5/8 + d3*f7/16 - f0*f5/16 + f0*f7/16 - f0*lambda/32 + f4*f5/8 - f4*f7/8 + f4*lambda/16 - f5**2/16 + f5*f7/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "split": 3,
+      "term": "-d0*d1/24 + d0*f0/48 - d0*f5/24 + d0*f7/48 - d0*lambda/48 - d1*d2/24 + d1*d3/12 + d1*f0/12 - d1*f4/8 - d1*f5/24 + d2*f0/48 - d2*f5/24 + d2*f7/48 - d2*lambda/48 - d3*f0/24 + d3*f5/12 - d3*f7/24 + d3*lambda/24 - f0**2/24 + f0*f4/16 + 5*f0*f5/48 - f0*f7/24 + f0*lambda/24 - f4*f5/8 + f4*f7/16 - f4*lambda/16 - f5**2/24 + f5*f7/48 - f5*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "split": 1,
+      "term": "-d1*f4/24 - d1*f6/8 + d1*f7/12 - d2*f4/24 - d2*f6/8 + d2*f7/12 - d3*f4/24 - d3*f6/8 + d3*f7/12 + f0*f4/48 + f0*f6/16 - f0*f7/24 - f4**2/24 - f4*f6/8 + 5*f4*f7/48 - f4*lambda/48 + f6*f7/16 - f6*lambda/16 - f7**2/24 + f7*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "split": 2,
+      "term": "-d1**2/16 + d1*f0/16 - d1*f4/8 + d1*f6/8 - d1*f7/16 + d2**2/16 - d2*f0/16 + d2*f6/8 - d2*f7/16 + d2*lambda/16 + f0*f4/16 - f0*f6/8 + f0*f7/16 - f0*lambda/32 - f4**2/16 + f4*f6/8 - f4*f7/16 + f6*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "split": 3,
+      "term": "-d0*d2/24 + d0*f0/48 - d0*f6/24 + d0*f7/48 - d0*lambda/48 + d1*d2/12 - d1*f0/24 + d1*f6/12 - d1*f7/24 + d1*lambda/24 - d2*d3/24 - d2*f0/24 + d2*f4/4 - d2*f6/24 + d3*f0/48 - d3*f6/24 + d3*f7/48 - d3*lambda/48 + f0**2/48 - f0*f4/8 - f0*f6/48 + f0*f7/48 - f0*lambda/48 + f4*f6/4 - f4*f7/8 + f4*lambda/8 - f6**2/24 + f6*f7/48 - f6*lambda/48"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "split": 1,
+      "term": "-d1*f4/24 - d1*f5/8 + d1*f7/12 - d2*f4/24 - d2*f5/8 + d2*f7/12 - d3*f4/24 - d3*f5/8 + d3*f7/12 + f0*f4/48 + f0*f5/16 - f0*f7/24 - f4**2/24 - f4*f5/8 + 5*f4*f7/48 - f4*lambda/48 + f5*f7/16 - f5*lambda/16 - f7**2/24 + f7*lambda/24"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "split": 2,
+      "term": "d1**2/16 - d1*f0/16 + d1*f5/8 - d1*f7/16 + d1*lambda/16 - d2**2/16 + d2*f0/16 - d2*f4/8 + d2*f5/8 - d2*f7/16 + f0*f4/16 - f0*f5/8 + f0*f7/16 - f0*lambda/32 - f4**2/16 + f4*f5/8 - f4*f7/16 + f5*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "split": 3,
+      "term": "-d0*d1/24 + d0*f0/48 - d0*f5/24 + d0*f7/48 - d0*lambda/48 + d1*d2/12 - d1*d3/24 - d1*f0/24 + d1*f4/4 - d1*f5/24 - d2*f0/24 + d2*f5/12 - d2*f7/24 + d2*lambda/24 + d3*f0/48 - d3*f5/24 + d3*f7/48 - d3*lambda/48 + f0**2/48 - f0*f4/8 - f0*f5/48 + f0*f7/48 - f0*lambda/48 + f4*f5/4 - f4*f7/8 + f4*lambda/8 - f5**2/24 + f5*f7/48 - f5*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "split": 1,
+      "term": "-d0*d1/24 + d0*f0/48 - d0*f2/24 + d0*f7/48 - d0*lambda/48 - d1*d2/24 + d1*d3/12 + d1*f2/12 - d1*f6/8 - d1*f7/24 + d2*f0/48 - d2*f2/24 + d2*f7/48 - d2*lambda/48 - d3*f0/24 + d3*f2/12 - d3*f7/24 + d3*lambda/24 - f0*f2/24 + f0*f6/16 + f0*f7/48 + f2**2/12 - f2*f6/8 - f2*f7/12 + f2*lambda/24 + f6*f7/16 - f6*lambda/16 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "split": 2,
+      "term": "d2**2/16 + d2*f0/16 - d2*f2/8 + d2*f6/8 - d2*f7/16 + d2*lambda/16 - d3**2/16 + d3*f0/16 - d3*f2/8 + d3*f7/16 + f0*f6/16 - f0*f7/16 + f0*lambda/32 - f2*f6/8 + f2*f7/8 - f2*lambda/16 + f6**2/16 - f6*f7/16 + f6*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "split": 3,
+      "term": "d0*d3/12 + d0*f0/24 - d0*f7/24 + d0*lambda/24 - d1*d3/24 - d1*f0/48 + d1*f7/48 - d1*lambda/48 - d2*d3/24 - d2*f0/48 + d2*f7/48 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "split": 1,
+      "term": "-d0*d1/24 + d0*f0/48 - d0*f2/24 + d0*f7/48 - d0*lambda/48 + d1*d2/12 - d1*d3/24 - d1*f2/24 + d1*f6/4 - d1*f7/24 - d2*f0/24 + d2*f2/12 - d2*f7/24 + d2*lambda/24 + d3*f0/48 - d3*f2/24 + d3*f7/48 - d3*lambda/48 + f0*f2/48 - f0*f6/8 + f0*f7/48 - f2**2/24 + f2*f6/4 - f2*f7/48 - f2*lambda/48 - f6*f7/8 + f6*lambda/8 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "split": 2,
+      "term": "-d2**2/16 - d2*f0/16 + d2*f2/8 - d2*f6/8 + d2*f7/16 + d3**2/16 - d3*f0/16 + d3*f2/8 - d3*f7/16 + d3*lambda/16 - f0*f6/16 + f0*f7/16 - f0*lambda/32 + f2*f6/8 - f2*f7/8 + f2*lambda/16 - f6**2/16 + f6*f7/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "split": 3,
+      "term": "d0*d2/12 - d0*f0/24 + d0*f6/12 - d0*f7/24 + d0*lambda/24 - d1*d2/24 + d1*f0/48 - d1*f6/24 + d1*f7/48 - d1*lambda/48 - d2*d3/24 + d2*f0/12 - d2*f2/8 - d2*f6/24 + d3*f0/48 - d3*f6/24 + d3*f7/48 - d3*lambda/48 - f0**2/24 + f0*f2/16 + 5*f0*f6/48 - f0*f7/24 + f0*lambda/24 - f2*f6/8 + f2*f7/16 - f2*lambda/16 - f6**2/24 + f6*f7/48 - f6*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "split": 1,
+      "term": "d0*d1/12 - d0*f0/24 + d0*f2/12 - d0*f7/24 + d0*lambda/24 - d1*d2/24 - d1*d3/24 + d1*f2/12 - d1*f3/8 - d1*f7/24 + d2*f0/48 - d2*f2/24 + d2*f7/48 - d2*lambda/48 + d3*f0/48 - d3*f2/24 + d3*f7/48 - d3*lambda/48 - f0*f2/24 + f0*f3/16 + f0*f7/48 + f2**2/12 - f2*f3/8 - f2*f7/12 + f2*lambda/24 + f3*f7/16 - f3*lambda/16 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "split": 2,
+      "term": "-d1**2/16 + d1*f0/16 - d1*f2/8 + d1*f7/16 + d2**2/16 + d2*f0/16 - d2*f2/8 + d2*f3/8 - d2*f7/16 + d2*lambda/16 + f0*f3/16 - f0*f7/16 + f0*lambda/32 - f2*f3/8 + f2*f7/8 - f2*lambda/16 + f3**2/16 - f3*f7/16 + f3*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "split": 3,
+      "term": "-d0*d3/24 - d0*f0/48 + d0*f7/48 - d0*lambda/48 + d1*d3/12 + d1*f0/24 - d1*f7/24 + d1*lambda/24 - d2*d3/24 - d2*f0/48 + d2*f7/48 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "split": 1,
+      "term": "-d0*d1/24 + d0*f0/48 - d0*f2/24 + d0*f7/48 - d0*lambda/48 + d1*d2/12 - d1*d3/24 - d1*f2/24 + d1*f3/4 - d1*f7/24 - d2*f0/24 + d2*f2/12 - d2*f7/24 + d2*lambda/24 + d3*f0/48 - d3*f2/24 + d3*f7/48 - d3*lambda/48 + f0*f2/48 - f0*f3/8 + f0*f7/48 - f2**2/24 + f2*f3/4 - f2*f7/48 - f2*lambda/48 - f3*f7/8 + f3*lambda/8 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "split": 2,
+      "term": "d1**2/16 - d1*f0/16 + d1*f2/8 - d1*f7/16 + d1*lambda/16 - d2**2/16 - d2*f0/16 + d2*f2/8 - d2*f3/8 + d2*f7/16 - f0*f3/16 + f0*f7/16 - f0*lambda/32 + f2*f3/8 - f2*f7/8 + f2*lambda/16 - f3**2/16 + f3*f7/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "split": 3,
+      "term": "d1*f0/12 - d1*f2/8 - d1*f3/24 + d2*f0/12 - d2*f2/8 - d2*f3/24 + d3*f0/12 - d3*f2/8 - d3*f3/24 - f0**2/24 + f0*f2/16 + 5*f0*f3/48 - f0*f7/24 + f0*lambda/24 - f2*f3/8 + f2*f7/16 - f2*lambda/16 - f3**2/24 + f3*f7/48 - f3*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "split": 1,
+      "term": "d0*d1/12 - d0*f0/24 + d0*f2/12 - d0*f7/24 + d0*lambda/24 - d1*d2/24 - d1*d3/24 - d1*f2/24 - d1*f6/8 + d1*f7/12 + d2*f0/48 - d2*f2/24 + d2*f7/48 - d2*lambda/48 + d3*f0/48 - d3*f2/24 + d3*f7/48 - d3*lambda/48 + f0*f2/48 + f0*f6/16 - f0*f7/24 - f2**2/24 - f2*f6/8 + 5*f2*f7/48 - f2*lambda/48 + f6*f7/16 - f6*lambda/16 - f7**2/24 + f7*lambda/24"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "split": 2,
+      "term": "-d1**2/16 + d1*f0/16 - d1*f2/8 + d1*f6/8 - d1*f7/16 + d3**2/16 - d3*f0/16 + d3*f6/8 - d3*f7/16 + d3*lambda/16 + f0*f2/16 - f0*f6/8 + f0*f7/16 - f0*lambda/32 - f2**2/16 + f2*f6/8 - f2*f7/16 + f6*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "split": 3,
+      "term": "-d0*d2/24 + d0*f0/48 - d0*f6/24 + d0*f7/48 - d0*lambda/48 + d1*d2/12 - d1*f0/24 + d1*f6/12 - d1*f7/24 + d1*lambda/24 - d2*d3/24 - d2*f0/24 + d2*f2/4 - d2*f6/24 + d3*f0/48 - d3*f6/24 + d3*f7/48 - d3*lambda/48 + f0**2/48 - f0*f2/8 - f0*f6/48 + f0*f7/48 - f0*lambda/48 + f2*f6/4 - f2*f7/8 + f2*lambda/8 - f6**2/24 + f6*f7/48 - f6*lambda/48"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "split": 1,
+      "term": "-d0*d1/24 + d0*f0/48 - d0*f2/24 + d0*f7/48 - d0*lambda/48 - d1*d2/24 + d1*d3/12 - d1*f2/24 - d1*f3/8 + d1*f7/12 + d2*f0/48 - d2*f2/24 + d2*f7/48 - d2*lambda/48 - d3*f0/24 + d3*f2/12 - d3*f7/24 + d3*lambda/24 + f0*f2/48 + f0*f3/16 - f0*f7/24 - f2**2/24 - f2*f3/8 + 5*f2*f7/48 - f2*lambda/48 + f3*f7/16 - f3*lambda/16 - f7**2/24 + f7*lambda/24"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "split": 2,
+      "term": "d1**2/16 - d1*f0/16 + d1*f3/8 - d1*f7/16 + d1*lambda/16 - d3**2/16 + d3*f0/16 - d3*f2/8 + d3*f3/8 - d3*f7/16 + f0*f2/16 - f0*f3/8 + f0*f7/16 - f0*lambda/32 - f2**2/16 + f2*f3/8 - f2*f7/16 + f3*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "split": 3,
+      "term": "-d1*f0/24 + d1*f2/4 - d1*f3/24 - d2*f0/24 + d2*f2/4 - d2*f3/24 - d3*f0/24 + d3*f2/4 - d3*f3/24 + f0**2/48 - f0*f2/8 - f0*f3/48 + f0*f7/48 - f0*lambda/48 + f2*f3/4 - f2*f7/8 + f2*lambda/8 - f3**2/24 + f3*f7/48 - f3*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "split": 1,
+      "term": "-d0*d2/24 + d0*f0/48 - d0*f1/24 + d0*f7/48 - d0*lambda/48 - d1*d2/24 + d1*f0/48 - d1*f1/24 + d1*f7/48 - d1*lambda/48 + d2*d3/12 + d2*f1/12 - d2*f5/8 - d2*f7/24 - d3*f0/24 + d3*f1/12 - d3*f7/24 + d3*lambda/24 - f0*f1/24 + f0*f5/16 + f0*f7/48 + f1**2/12 - f1*f5/8 - f1*f7/12 + f1*lambda/24 + f5*f7/16 - f5*lambda/16 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "split": 2,
+      "term": "d1**2/16 + d1*f0/16 - d1*f1/8 + d1*f5/8 - d1*f7/16 + d1*lambda/16 - d3**2/16 + d3*f0/16 - d3*f1/8 + d3*f7/16 + f0*f5/16 - f0*f7/16 + f0*lambda/32 - f1*f5/8 + f1*f7/8 - f1*lambda/16 + f5**2/16 - f5*f7/16 + f5*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "split": 3,
+      "term": "d0*d3/12 + d0*f0/24 - d0*f7/24 + d0*lambda/24 - d1*d3/24 - d1*f0/48 + d1*f7/48 - d1*lambda/48 - d2*d3/24 - d2*f0/48 + d2*f7/48 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "split": 1,
+      "term": "-d0*d2/24 + d0*f0/48 - d0*f1/24 + d0*f7/48 - d0*lambda/48 + d1*d2/12 - d1*f0/24 + d1*f1/12 - d1*f7/24 + d1*lambda/24 - d2*d3/24 - d2*f1/24 + d2*f5/4 - d2*f7/24 + d3*f0/48 - d3*f1/24 + d3*f7/48 - d3*lambda/48 + f0*f1/48 - f0*f5/8 + f0*f7/48 - f1**2/24 + f1*f5/4 - f1*f7/48 - f1*lambda/48 - f5*f7/8 + f5*lambda/8 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "split": 2,
+      "term": "-d1**2/16 - d1*f0/16 + d1*f1/8 - d1*f5/8 + d1*f7/16 + d3**2/16 - d3*f0/16 + d3*f1/8 - d3*f7/16 + d3*lambda/16 - f0*f5/16 + f0*f7/16 - f0*lambda/32 + f1*f5/8 - f1*f7/8 + f1*lambda/16 - f5**2/16 + f5*f7/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "split": 3,
+      "term": "d0*d1/12 - d0*f0/24 + d0*f5/12 - d0*f7/24 + d0*lambda/24 - d1*d2/24 - d1*d3/24 + d1*f0/12 - d1*f1/8 - d1*f5/24 + d2*f0/48 - d2*f5/24 + d2*f7/48 - d2*lambda/48 + d3*f0/48 - d3*f5/24 + d3*f7/48 - d3*lambda/48 - f0**2/24 + f0*f1/16 + 5*f0*f5/48 - f0*f7/24 + f0*lambda/24 - f1*f5/8 + f1*f7/16 - f1*lambda/16 - f5**2/24 + f5*f7/48 - f5*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "split": 1,
+      "term": "d0*d2/12 - d0*f0/24 + d0*f1/12 - d0*f7/24 + d0*lambda/24 - d1*d2/24 + d1*f0/48 - d1*f1/24 + d1*f7/48 - d1*lambda/48 - d2*d3/24 + d2*f1/12 - d2*f3/8 - d2*f7/24 + d3*f0/48 - d3*f1/24 + d3*f7/48 - d3*lambda/48 - f0*f1/24 + f0*f3/16 + f0*f7/48 + f1**2/12 - f1*f3/8 - f1*f7/12 + f1*lambda/24 + f3*f7/16 - f3*lambda/16 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "split": 2,
+      "term": "d1**2/16 + d1*f0/16 - d1*f1/8 + d1*f3/8 - d1*f7/16 + d1*lambda/16 - d2**2/16 + d2*f0/16 - d2*f1/8 + d2*f7/16 + f0*f3/16 - f0*f7/16 + f0*lambda/32 - f1*f3/8 + f1*f7/8 - f1*lambda/16 + f3**2/16 - f3*f7/16 + f3*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "split": 3,
+      "term": "-d0*d3/24 - d0*f0/48 + d0*f7/48 - d0*lambda/48 - d1*d3/24 - d1*f0/48 + d1*f7/48 - d1*lambda/48 + d2*d3/12 + d2*f0/24 - d2*f7/24 + d2*lambda/24"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "split": 1,
+      "term": "-d0*d2/24 + d0*f0/48 - d0*f1/24 + d0*f7/48 - d0*lambda/48 + d1*d2/12 - d1*f0/24 + d1*f1/12 - d1*f7/24 + d1*lambda/24 - d2*d3/24 - d2*f1/24 + d2*f3/4 - d2*f7/24 + d3*f0/48 - d3*f1/24 + d3*f7/48 - d3*lambda/48 + f0*f1/48 - f0*f3/8 + f0*f7/48 - f1**2/24 + f1*f3/4 - f1*f7/48 - f1*lambda/48 - f3*f7/8 + f3*lambda/8 + f7**2/48 - f7*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "split": 2,
+      "term": "-d1**2/16 - d1*f0/16 + d1*f1/8 - d1*f3/8 + d1*f7/16 + d2**2/16 - d2*f0/16 + d2*f1/8 - d2*f7/16 + d2*lambda/16 - f0*f3/16 + f0*f7/16 - f0*lambda/32 + f1*f3/8 - f1*f7/8 + f1*lambda/16 - f3**2/16 + f3*f7/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "split": 3,
+      "term": "d1*f0/12 - d1*f1/8 - d1*f3/24 + d2*f0/12 - d2*f1/8 - d2*f3/24 + d3*f0/12 - d3*f1/8 - d3*f3/24 - f0**2/24 + f0*f1/16 + 5*f0*f3/48 - f0*f7/24 + f0*lambda/24 - f1*f3/8 + f1*f7/16 - f1*lambda/16 - f3**2/24 + f3*f7/48 - f3*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "split": 1,
+      "term": "d0*d2/12 - d0*f0/24 + d0*f1/12 - d0*f7/24 + d0*lambda/24 - d1*d2/24 + d1*f0/48 - d1*f1/24 + d1*f7/48 - d1*lambda/48 - d2*d3/24 - d2*f1/24 - d2*f5/8 + d2*f7/12 + d3*f0/48 - d3*f1/24 + d3*f7/48 - d3*lambda/48 + f0*f1/48 + f0*f5/16 - f0*f7/24 - f1**2/24 - f1*f5/8 + 5*f1*f7/48 - f1*lambda/48 + f5*f7/16 - f5*lambda/16 - f7**2/24 + f7*lambda/24"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "split": 2,
+      "term": "-d2**2/16 + d2*f0/16 - d2*f1/8 + d2*f5/8 - d2*f7/16 + d3**2/16 - d3*f0/16 + d3*f5/8 - d3*f7/16 + d3*lambda/16 + f0*f1/16 - f0*f5/8 + f0*f7/16 - f0*lambda/32 - f1**2/16 + f1*f5/8 - f1*f7/16 + f5*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "split": 3,
+      "term": "-d0*d1/24 + d0*f0/48 - d0*f5/24 + d0*f7/48 - d0*lambda/48 + d1*d2/12 - d1*d3/24 - d1*f0/24 + d1*f1/4 - d1*f5/24 - d2*f0/24 + d2*f5/12 - d2*f7/24 + d2*lambda/24 + d3*f0/48 - d3*f5/24 + d3*f7/48 - d3*lambda/48 + f0**2/48 - f0*f1/8 - f0*f5/48 + f0*f7/48 - f0*lambda/48 + f1*f5/4 - f1*f7/8 + f1*lambda/8 - f5**2/24 + f5*f7/48 - f5*lambda/48"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "split": 1,
+      "term": "-d0*d2/24 + d0*f0/48 - d0*f1/24 + d0*f7/48 - d0*lambda/48 - d1*d2/24 + d1*f0/48 - d1*f1/24 + d1*f7/48 - d1*lambda/48 + d2*d3/12 - d2*f1/24 - d2*f3/8 + d2*f7/12 - d3*f0/24 + d3*f1/12 - d3*f7/24 + d3*lambda/24 + f0*f1/48 + f0*f3/16 - f0*f7/24 - f1**2/24 - f1*f3/8 + 5*f1*f7/48 - f1*lambda/48 + f3*f7/16 - f3*lambda/16 - f7**2/24 + f7*lambda/24"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "split": 2,
+      "term": "d2**2/16 - d2*f0/16 + d2*f3/8 - d2*f7/16 + d2*lambda/16 - d3**2/16 + d3*f0/16 - d3*f1/8 + d3*f3/8 - d3*f7/16 + f0*f1/16 - f0*f3/8 + f0*f7/16 - f0*lambda/32 - f1**2/16 + f1*f3/8 - f1*f7/16 + f3*lambda/16 - f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "split": 3,
+      "term": "-d1*f0/24 + d1*f1/4 - d1*f3/24 - d2*f0/24 + d2*f1/4 - d2*f3/24 - d3*f0/24 + d3*f1/4 - d3*f3/24 + f0**2/48 - f0*f1/8 - f0*f3/48 + f0*f7/48 - f0*lambda/48 + f1*f3/4 - f1*f7/8 + f1*lambda/8 - f3**2/24 + f3*f7/48 - f3*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "split": 1,
+      "term": "-d0*d3/24 + d0*f0/48 - d0*f7/48 - d0*lambda/48 - d1*d3/24 + d1*f0/48 - d1*f7/48 - d1*lambda/48 + d2*d3/12 - d2*f0/24 + d2*f7/24 + d2*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "split": 2,
+      "term": "d1**2/16 - d1*f0/16 + d1*f4/8 - d1*f6/8 + d1*f7/16 + d1*lambda/16 - d2**2/16 + d2*f0/16 - d2*f6/8 + d2*f7/16 - f0*f4/16 + f0*f6/8 - f0*f7/16 - f0*lambda/32 + f4**2/16 - f4*f6/8 + f4*f7/16 + f4*lambda/16 - f6*lambda/16 + f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "split": 3,
+      "term": "d0*d2/12 - d0*f0/24 + d0*f6/12 - d0*f7/24 + d0*lambda/24 - d1*d2/24 + d1*f0/48 - d1*f6/24 + d1*f7/48 - d1*lambda/48 - d2*d3/24 - d2*f0/24 - d2*f4/8 + d2*f6/12 + d3*f0/48 - d3*f6/24 + d3*f7/48 - d3*lambda/48 + f0**2/48 + f0*f4/16 - f0*f6/12 + f0*f7/48 - f0*lambda/48 - f4*f6/8 + f4*f7/16 - f4*lambda/16 + f6**2/12 - f6*f7/24 + f6*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "split": 1,
+      "term": "-d0*d3/24 + d0*f0/48 - d0*f7/48 - d0*lambda/48 + d1*d3/12 - d1*f0/24 + d1*f7/24 + d1*lambda/24 - d2*d3/24 + d2*f0/48 - d2*f7/48 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "split": 2,
+      "term": "-d1**2/16 + d1*f0/16 - d1*f5/8 + d1*f7/16 + d2**2/16 - d2*f0/16 + d2*f4/8 - d2*f5/8 + d2*f7/16 + d2*lambda/16 - f0*f4/16 + f0*f5/8 - f0*f7/16 - f0*lambda/32 + f4**2/16 - f4*f5/8 + f4*f7/16 + f4*lambda/16 - f5*lambda/16 + f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "split": 3,
+      "term": "d0*d1/12 - d0*f0/24 + d0*f5/12 - d0*f7/24 + d0*lambda/24 - d1*d2/24 - d1*d3/24 - d1*f0/24 - d1*f4/8 + d1*f5/12 + d2*f0/48 - d2*f5/24 + d2*f7/48 - d2*lambda/48 + d3*f0/48 - d3*f5/24 + d3*f7/48 - d3*lambda/48 + f0**2/48 + f0*f4/16 - f0*f5/12 + f0*f7/48 - f0*lambda/48 - f4*f5/8 + f4*f7/16 - f4*lambda/16 + f5**2/12 - f5*f7/24 + f5*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "split": 1,
+      "term": "d0*d3/12 - d0*f0/24 + d0*f7/24 + d0*lambda/24 - d1*d3/24 + d1*f0/48 - d1*f7/48 - d1*lambda/48 - d2*d3/24 + d2*f0/48 - d2*f7/48 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "split": 2,
+      "term": "d1**2/16 - d1*f0/16 + d1*f2/8 - d1*f6/8 + d1*f7/16 + d1*lambda/16 - d3**2/16 + d3*f0/16 - d3*f6/8 + d3*f7/16 - f0*f2/16 + f0*f6/8 - f0*f7/16 - f0*lambda/32 + f2**2/16 - f2*f6/8 + f2*f7/16 + f2*lambda/16 - f6*lambda/16 + f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "split": 3,
+      "term": "-d0*d2/24 + d0*f0/48 - d0*f6/24 + d0*f7/48 - d0*lambda/48 - d1*d2/24 + d1*f0/48 - d1*f6/24 + d1*f7/48 - d1*lambda/48 + d2*d3/12 - d2*f0/24 - d2*f2/8 + d2*f6/12 - d3*f0/24 + d3*f6/12 - d3*f7/24 + d3*lambda/24 + f0**2/48 + f0*f2/16 - f0*f6/12 + f0*f7/48 - f0*lambda/48 - f2*f6/8 + f2*f7/16 - f2*lambda/16 + f6**2/12 - f6*f7/24 + f6*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "split": 1,
+      "term": "-d0*d3/24 + d0*f0/48 - d0*f7/48 - d0*lambda/48 + d1*d3/12 - d1*f0/24 + d1*f7/24 + d1*lambda/24 - d2*d3/24 + d2*f0/48 - d2*f7/48 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "split": 2,
+      "term": "-d1**2/16 + d1*f0/16 - d1*f3/8 + d1*f7/16 + d3**2/16 - d3*f0/16 + d3*f2/8 - d3*f3/8 + d3*f7/16 + d3*lambda/16 - f0*f2/16 + f0*f3/8 - f0*f7/16 - f0*lambda/32 + f2**2/16 - f2*f3/8 + f2*f7/16 + f2*lambda/16 - f3*lambda/16 + f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "split": 3,
+      "term": "-d1*f0/24 - d1*f2/8 + d1*f3/12 - d2*f0/24 - d2*f2/8 + d2*f3/12 - d3*f0/24 - d3*f2/8 + d3*f3/12 + f0**2/48 + f0*f2/16 - f0*f3/12 + f0*f7/48 - f0*lambda/48 - f2*f3/8 + f2*f7/16 - f2*lambda/16 + f3**2/12 - f3*f7/24 + f3*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "split": 1,
+      "term": "d0*d3/12 - d0*f0/24 + d0*f7/24 + d0*lambda/24 - d1*d3/24 + d1*f0/48 - d1*f7/48 - d1*lambda/48 - d2*d3/24 + d2*f0/48 - d2*f7/48 - d2*lambda/48"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "split": 2,
+      "term": "d2**2/16 - d2*f0/16 + d2*f1/8 - d2*f5/8 + d2*f7/16 + d2*lambda/16 - d3**2/16 + d3*f0/16 - d3*f5/8 + d3*f7/16 - f0*f1/16 + f0*f5/8 - f0*f7/16 - f0*lambda/32 + f1**2/16 - f1*f5/8 + f1*f7/16 + f1*lambda/16 - f5*lambda/16 + f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "split": 3,
+      "term": "-d0*d1/24 + d0*f0/48 - d0*f5/24 + d0*f7/48 - d0*lambda/48 - d1*d2/24 + d1*d3/12 - d1*f0/24 - d1*f1/8 + d1*f5/12 + d2*f0/48 - d2*f5/24 + d2*f7/48 - d2*lambda/48 - d3*f0/24 + d3*f5/12 - d3*f7/24 + d3*lambda/24 + f0**2/48 + f0*f1/16 - f0*f5/12 + f0*f7/48 - f0*lambda/48 - f1*f5/8 + f1*f7/16 - f1*lambda/16 + f5**2/12 - f5*f7/24 + f5*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "split": 1,
+      "term": "-d0*d3/24 + d0*f0/48 - d0*f7/48 - d0*lambda/48 - d1*d3/24 + d1*f0/48 - d1*f7/48 - d1*lambda/48 + d2*d3/12 - d2*f0/24 + d2*f7/24 + d2*lambda/24"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "split": 2,
+      "term": "-d2**2/16 + d2*f0/16 - d2*f3/8 + d2*f7/16 + d3**2/16 - d3*f0/16 + d3*f1/8 - d3*f3/8 + d3*f7/16 + d3*lambda/16 - f0*f1/16 + f0*f3/8 - f0*f7/16 - f0*lambda/32 + f1**2/16 - f1*f3/8 + f1*f7/16 + f1*lambda/16 - f3*lambda/16 + f7*lambda/32 + lambda**2/64"
+    },
+    {
+      "perm": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "split": 3,
+      "term": "-d1*f0/24 - d1*f1/8 + d1*f3/12 - d2*f0/24 - d2*f1/8 + d2*f3/12 - d3*f0/24 - d3*f1/8 + d3*f3/12 + f0**2/48 + f0*f1/16 - f0*f3/12 + f0*f7/48 - f0*lambda/48 - f1*f3/8 + f1*f7/16 - f1*lambda/16 + f3**2/12 - f3*f7/24 + f3*lambda/24"
+    }
+  ],
+  "source_sha256": "ab5425d33aabf85318d16b10ebd237e861f6f3172f21aecf8b8fb7907f9b69c1",
+  "elapsed_sec": 0.32149662502342835,
+  "scope": "first coefficient extraction, not a proof of nonlinear existence or global failure"
+}

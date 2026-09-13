@@ -1,0 +1,5 @@
+{
+  "source_sha256": "ce9713b74da6961c6c4551e2490afe5ddff377f71a3f81f13f68276f56f2b45d",
+  "failure": "program_kernel_really_includes_native_neighbors",
+  "diagnosis": "The checker demanded a program birth with an older native Record neighbor. That is impossible under this construction: each candidate waits for all four adjacent program sites before it forms. Older program Record conditions do acquire native neighbors and must be rechecked against the full multiset. Correct the fixture assertion, not the occurrence rule or content kernel."
+}

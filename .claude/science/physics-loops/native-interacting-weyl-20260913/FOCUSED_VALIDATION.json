@@ -1,0 +1,32 @@
+{
+  "main_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "graph_node": {
+    "claim_id": "native_interacting_weyl_protected_paths_bounded_theorem_note_2026-09-13",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "minimal_axioms",
+      "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "cce784c9d124ab76fc0c9a8b42def91720d8cc5376fcfcb6fc79a476abb50e01",
+    "path": "docs/NATIVE_INTERACTING_WEYL_PROTECTED_PATHS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "runner_path": "scripts/native_interacting_weyl_2026_09_13.py",
+    "title": "Interacting Weyl matter on protected native paths with continuing local Records"
+  },
+  "intended_added_nodes": 1,
+  "intended_added_edges": 2,
+  "direct_source_readiness_issue": null,
+  "cache_identity": "fresh",
+  "actual_finite_check_count": 153,
+  "local_links_verified": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+    "scripts/native_interacting_weyl_2026_09_13.py",
+    "logs/runner-cache/native_interacting_weyl_2026_09_13.txt",
+    "outputs/native_interacting_weyl_2026_09_13.json",
+    ".claude/science/physics-loops/native-interacting-weyl-20260913/REVIEW_HISTORY.md"
+  ],
+  "ledger_changed_evidence_scope": "No rows checked: new source has not entered the audit ledger. This direct source/cache check does not claim integrated pipeline or ledger readiness."
+}

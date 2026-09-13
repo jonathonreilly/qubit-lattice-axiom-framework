@@ -1,0 +1,1 @@
+The first harness run correctly rejected the deliberately corrupted path phase at path_involution_[0, 1], before reaching the anticipated native_CAR predicate. The harness was corrected to expect that actual earlier mathematical failure. This was an expected corruption detection, not a surviving mutant or a change to the scientific checker.

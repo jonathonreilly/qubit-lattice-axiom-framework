@@ -1,0 +1,22 @@
+{
+  "pr": 8098,
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8098",
+  "branch": "physics-loop/native-weyl-gauge-response-20260913",
+  "head": "616362e0a07ed5422d040d182ecbba24265941dd",
+  "remote_head": "616362e0a07ed5422d040d182ecbba24265941dd",
+  "state": "OPEN",
+  "mergeable": "MERGEABLE",
+  "note": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+  "runner": "scripts/native_weyl_gauge_hall_and_cone_flow_2026_09_13.py",
+  "note_sha256": "02dce79ac9032150525cb77355e5f21db94dd3beea543315ea784ab74a2902f1",
+  "source_sha256": "e43ae0479176671ec32be1883a1e935833e3ed193a75fb782b35443be76b4028",
+  "checks": 462,
+  "mutations": 33,
+  "canonical_elapsed_sec": 3.2368459701538086,
+  "independent_review": "pending",
+  "audit": "pending",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-native-weyl-gauge-response-20260913",
+  "cleanup": "removed",
+  "untracked_cache_preserved_byte_exact": true,
+  "removed_utc": "2026-09-13T21:04:15.869905+00:00"
+}

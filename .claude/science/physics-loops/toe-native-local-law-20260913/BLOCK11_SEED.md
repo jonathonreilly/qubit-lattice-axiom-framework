@@ -69,3 +69,70 @@ individual contrasts as z^(-2/N), and W as z^-1. For N=2 these are powers
 2,1,1. This is only a proposed extension until re-derived with Weyl traces
 and the actual quartet vertices. Native dynamical gauge phase, finite
 matching, all-orders bounds and the physical multiplet remain open.
+
+## Further analytic simplification and first challenge
+
+At the nodes S=2 sin(b)^2, so the nonzero spectator energies are exactly
++-2 sin(b), independent of m and zeta within the stated node domain.
+The low-energy metric has Gyy=1 and
+Gxx=1-m^2/sin(b)^2,
+Gzz=sin(kz*)^2 [sin(b)^2(1-2m^2)+m^4]/[(1-m^2)sin(b)^2],
+Gxz=-sin(kx*) cos(b) m^2 sin(kz*)/sin(b)^2.
+Its x-z determinant is
+(1-m^2/sin(b)^2)(1-m^2) sin(kz*)^2>0.
+Thus all four nodes are simple in the interior, with chirality
+sign(kx* kz*), by continuation from m=0 and nonzero determinant.
+The factor r/a and any chosen cell-coordinate D transform this metric
+explicitly; do not identify the raw k metric with a unit physical cone.
+
+The first independent projector calculation at b=.4,zeta=.7,m=.2 agrees
+with this determinant-derived metric to1.5e-15. The metric cross term is
++-0.0574795630084294 and does not vanish. The direct spectra agree with the
+H^2 formula to3.6e-15, while full occupied/empty four-band Kubo curvature
+cancels at opposite momenta to4e-16. These are preliminary numerical
+challenges, not the proof of the whole open parameter range.
+
+A possible minimum-content argument must be scoped to spinless T^2=+1,
+only simple isolated Weyl nodes at a common Fermi level, and a regular
+occupied bundle elsewhere. Time reversal pairs non-TRIM nodes of the same
+chirality; the total Weyl charge on the Brillouin torus vanishes by Stokes.
+A simple twofold Weyl node at a TRIM is excluded when T^2=+1: choose T=K in
+its two-dimensional subspace, and the linear Hamiltonian must be purely
+imaginary Hermitian, leaving only sigma2 and rank at most one. Hence there
+must be at least two time-reversal pairs, i.e. four simple nodes in this
+restricted domain. Do NOT extend this to T^2=-1 Kramers-Weyl nodes, higher
+multiplicities, extra Fermi surfaces, interacting topological order or
+non-band settings. The explicit family attains the scoped minimum.
+
+## Local stability target beyond the displayed family
+
+For fixed parameters strictly inside the node domain, permit finite-range
+translation-invariant number-preserving Hermitian four-band perturbations
+small in C2 norm, preserving T=tau_x K and Mz:kz->-kz. The four isolated
+nodes are a single orbit of these symmetries. Their common energy can shift;
+tune the chemical potential to that common energy, rather than assuming
+particle-hole symmetry of every perturbation.
+
+A two-band spectral subspace is smoothly separated from the spectator pair
+near each original node (gap2sin b). Write its exact reduced Hamiltonian as
+d0(k)I+d(k).sigma. Since the unperturbed d derivative is invertible, the
+implicit-function theorem and small C1 bounds give one surviving simple
+node per disjoint neighborhood. Symmetry maps these four nodes into each
+other and forces their energies equal. The tilt is small relative to the
+nonzero minimum cone speed, so the nodes remain type I and no local Fermi
+pockets arise at the common chemical potential. A compact gap away from the
+four neighborhoods excludes other Fermi surfaces for small C0 perturbations.
+This needs explicit estimates/lemma structure, not a blanket claim that
+any time-reversal-symmetric perturbation preserves the phase.
+
+Time reversal makes the occupied-projector curvature odd at opposite
+momenta, so the full free-band Hall vector vanishes. T and Mz together also
+make every gapped constant-kz slice have zero total occupied Chern number:
+T makes C(kz)=-C(-kz), while Mz makes C(kz)=C(-kz). Local individual Weyl
+charges can still be nonzero, because opposite charges lie at distinct kx
+on the same node plane. This cancellation does not gap the nodes.
+
+An unbroken time-reversal-invariant coupled state and regulator forbid a
+local zero-field Hall term in its effective action. This symmetry statement
+does not prove that the interacting native gauge phase exists or preserves T;
+spontaneous breaking and higher-derivative optical activity remain possible.

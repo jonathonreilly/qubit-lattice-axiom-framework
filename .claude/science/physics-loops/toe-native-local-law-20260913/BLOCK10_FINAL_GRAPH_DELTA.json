@@ -1,0 +1,55 @@
+{
+  "node_delta": 1,
+  "edge_delta": 6,
+  "added_nodes": [
+    "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13"
+  ],
+  "removed_nodes": [],
+  "changed_existing_manifest_nodes": [],
+  "node": {
+    "claim_id": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "minimal_axioms",
+      "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05",
+      "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18",
+      "compact_u1_quadratic_basin_source_free_maxwell_universality_bounded_theorem_note_2026-09-03",
+      "kinetic_isotropy_primitive",
+      "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "02dce79ac9032150525cb77355e5f21db94dd3beea543315ea784ab74a2902f1",
+    "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "runner_path": "scripts/native_weyl_gauge_hall_and_cone_flow_2026_09_13.py",
+    "title": "Native Weyl gauge response: the Hall term and conditional cone attraction"
+  },
+  "edges": [
+    {
+      "from": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+      "to": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    },
+    {
+      "from": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+      "to": "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18"
+    },
+    {
+      "from": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+      "to": "compact_u1_quadratic_basin_source_free_maxwell_universality_bounded_theorem_note_2026-09-03"
+    },
+    {
+      "from": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+      "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+    }
+  ],
+  "final_note_sha256": "02dce79ac9032150525cb77355e5f21db94dd3beea543315ea784ab74a2902f1"
+}

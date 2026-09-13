@@ -13,8 +13,8 @@ research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
 campaign: native_local_deformation_algebra
-block: 10
-active_route: derive_coupled_matter_gauge_light_cone_flow
+block: 11
+active_route: robust_Hall_cancellation_with_mixed_native_Weyl_quartet
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
@@ -23,6 +23,6 @@ continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
 lock_expires_utc: 2026-09-13T21:41:45Z
-next_action: Package the corrected native Hall and conditional cone-flow milestone, then test the mixed Hall-free quartet seed.
+next_action: Prove and challenge the mixed four-node zero set, topology, perturbative stability and actual cone metrics.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking, and the next useful campaign until the deadline.
-last_checkpoint_utc: 2026-09-13T20:44:38.340215+00:00
+last_checkpoint_utc: 2026-09-13T21:06:49.072682+00:00

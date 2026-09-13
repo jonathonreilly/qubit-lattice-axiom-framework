@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "checks": 31,
+  "details": [
+    {
+      "name": "arbitrary_function_normal_normal_operator"
+    },
+    {
+      "name": "arbitrary_function_shift_free_Hamiltonian"
+    },
+    {
+      "name": "arbitrary_function_shift_lapse_residual"
+    },
+    {
+      "name": "arbitrary_function_shift_shift_strain"
+    },
+    {
+      "name": "exact_noncommuting_strain_witness"
+    },
+    {
+      "name": "rigid_rotation_has_spin_half"
+    },
+    {
+      "name": "rigid_rotation_has_no_strain"
+    },
+    {
+      "name": "dilation_residual"
+    },
+    {
+      "name": "arbitrary_Dirac_mass_cancels_normal_commutator"
+    },
+    {
+      "name": "separated_node_support_-1_0.16"
+    },
+    {
+      "name": "actual_low_band_commutator_bound_-1_0.16",
+      "error": 0.09749333100238902,
+      "bound": 90.26827110605328
+    },
+    {
+      "name": "separated_node_support_-1_0.08"
+    },
+    {
+      "name": "actual_low_band_commutator_bound_-1_0.08",
+      "error": 0.046967280417374226,
+      "bound": 36.58719568310409
+    },
+    {
+      "name": "separated_node_support_-1_0.04"
+    },
+    {
+      "name": "actual_low_band_commutator_bound_-1_0.04",
+      "error": 0.023018074541072492,
+      "bound": 16.455444826170567
+    },
+    {
+      "name": "separated_node_support_-1_0.02"
+    },
+    {
+      "name": "actual_low_band_commutator_bound_-1_0.02",
+      "error": 0.011406300977812044,
+      "bound": 7.802232263459248
+    },
+    {
+      "name": "lattice_error_is_exercised_-1"
+    },
+    {
+      "name": "lattice_errors_shrink_-1"
+    },
+    {
+      "name": "separated_node_support_1_0.16"
+    },
+    {
+      "name": "actual_low_band_commutator_bound_1_0.16",
+      "error": 0.09749333100238906,
+      "bound": 90.26827110605328
+    },
+    {
+      "name": "separated_node_support_1_0.08"
+    },
+    {
+      "name": "actual_low_band_commutator_bound_1_0.08",
+      "error": 0.04696728041737422,
+      "bound": 36.58719568310409
+    },
+    {
+      "name": "separated_node_support_1_0.04"
+    },
+    {
+      "name": "actual_low_band_commutator_bound_1_0.04",
+      "error": 0.023018074541072485,
+      "bound": 16.455444826170567
+    },
+    {
+      "name": "separated_node_support_1_0.02"
+    },
+    {
+      "name": "actual_low_band_commutator_bound_1_0.02",
+      "error": 0.011406300977812048,
+      "bound": 7.802232263459248
+    },
+    {
+      "name": "lattice_error_is_exercised_1"
+    },
+    {
+      "name": "lattice_errors_shrink_1"
+    },
+    {
+      "name": "finite_filled_band_normal_order_scalar_zero",
+      "residual": 2.366528402048052e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "finite_lapse_commutator_nonzero"
+    }
+  ],
+  "finite_fourier_probes": [
+    {
+      "node": -1,
+      "spacing": 0.16,
+      "error": 0.09749333100238902,
+      "bound": 90.26827110605328
+    },
+    {
+      "node": -1,
+      "spacing": 0.08,
+      "error": 0.046967280417374226,
+      "bound": 36.58719568310409
+    },
+    {
+      "node": -1,
+      "spacing": 0.04,
+      "error": 0.023018074541072492,
+      "bound": 16.455444826170567
+    },
+    {
+      "node": -1,
+      "spacing": 0.02,
+      "error": 0.011406300977812044,
+      "bound": 7.802232263459248
+    },
+    {
+      "node": 1,
+      "spacing": 0.16,
+      "error": 0.09749333100238906,
+      "bound": 90.26827110605328
+    },
+    {
+      "node": 1,
+      "spacing": 0.08,
+      "error": 0.04696728041737422,
+      "bound": 36.58719568310409
+    },
+    {
+      "node": 1,
+      "spacing": 0.04,
+      "error": 0.023018074541072485,
+      "bound": 16.455444826170567
+    },
+    {
+      "node": 1,
+      "spacing": 0.02,
+      "error": 0.011406300977812048,
+      "bound": 7.802232263459248
+    }
+  ],
+  "elapsed_seconds": 2.0087779160239734,
+  "source_sha256": "34b54b7ccc27800b3926e560fe6a7d05e9ebbbdef5832e946cb4a0f8b2f48ccb",
+  "scope": "Arbitrary-function algebra and finite free native Fourier challenges. No interacting or complete gravitational constraint algebra."
+}

@@ -129,3 +129,17 @@ MERGEABLE at final head28dd88687270388140ad45fbfac9b145f6f8972f. Its worktree
 is removed after clean-state/remote verification under owner disk discipline.
 Read BLOCK05_REVIEW_AND_LEARNING.md for the result and next-source review.
 The active campaign remains here; no execution subagents; deadline00:14:41UTC.
+
+BLOCK06_DERIVATION.md now proposes exact arbitrary-spinor normal/normal,
+shift/lapse and shift/shift identities. check_block06.py passes31 checks,
+including generic symbolic functions (not selected states), a nonzero strain
+commutator witness, continuum Dirac mass cancellation, finite native Fourier
+bounds at both nodes, and a finite filled-band scalar-term check. The rigorous
+low-band Wilson bound is analytical and deliberately loose; the finite errors
+are only challenges. Source SHA34b54b7ccc27800b3926e560fe6a7d05e9ebbbdef5832e946cb4a0f8b2f48ccb.
+The stretch now has two concrete avenues: derive the metric-dependent polar
+frame response that cancels the spin-strain residual, and test whether both
+opposite Weyl nodes see the SAME sheared metric under an explicit native
+frame coupling. A naive coefficient deformation can give opposite xz/yz
+shears at the two nodes; this has not yet been checked or claimed as a result.
+Do not confuse a single normal/normal identity with full gravity closure.

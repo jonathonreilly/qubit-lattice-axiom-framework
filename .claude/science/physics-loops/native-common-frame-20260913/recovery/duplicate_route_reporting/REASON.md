@@ -1,0 +1,1 @@
+The first consolidated draft re-reported earlier path groups inside each subsequent box loop. The routes themselves passed, but the display count duplicated groups. The final source reports each box/vertex group once; this is reporting hygiene, not a mathematical counterexample or additional independent evidence.

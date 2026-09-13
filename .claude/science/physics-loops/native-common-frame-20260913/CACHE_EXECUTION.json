@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/native_common_frame_spin_connection_2026_09_13.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS common native frame and spin connection: 423 checks\nflat_spin: 8 PASS\ncommon_frame: 140 PASS\nspin_connection: 160 PASS\nvariable_frame: 103 PASS\nnative_paths: 12 PASS\nper_element: Exact symbolic vertex jets and Clifford identities are checked; no physical parameter is fitted.\nper_site: Local rational frame jets and the central frame stencil are checked in their stated finite examples.\nper_mode: Both native nodes, the shear metric and finite Fourier operator errors are explicitly challenged.\nper_block: Protected hopping routes on three open boxes and five-mode even CAR paths are enumerated.\nlattice_wide: The note proves the uniform zero-set and slow-band bounds; the runner does not simulate an infinite system or prove gravity dynamics.\nSource SHA-256: 177470b9d38d4a16757d7d77f891b81811486df8142d2abde296fce90526a327\nElapsed seconds: 3.157040541002061\n",
+  "stderr": "",
+  "elapsed_sec": 3.7640511989593506,
+  "timeout_sec": 60,
+  "live_log": "/Users/jonreilly/Documents/Codex/toe-native-common-frame-20260913/logs/runner-cache/.in-progress/native_common_frame_spin_connection_2026_09_13.txt"
+}

@@ -1,0 +1,162 @@
+{
+  "primary_sha256": "177470b9d38d4a16757d7d77f891b81811486df8142d2abde296fce90526a327",
+  "mutations": 22,
+  "effective": 22,
+  "rows": [
+    {
+      "name": "common_frame_vertex_sign",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "ddd6781ea1cc0a7cf51fdbc0800f5a5bebf1f5f333248ed8fd860082198f109e",
+      "last_error": "AssertionError: ('exact_common_frame_tangent_-1', {})"
+    },
+    {
+      "name": "naive_node_frame_order",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "03763fc558855fea616278028de1dc72fc5d44e16c1b42406007192726d21085",
+      "last_error": "AssertionError: ('exact_naive_frame_tangent_-1', {})"
+    },
+    {
+      "name": "Laurent_second_neighbor_sign",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "f4afb7103e731049025401d714833842c168fc34369306a91922d4a3a099fc84",
+      "last_error": "AssertionError: ('Laurent_node_(0, 2, -1)', {})"
+    },
+    {
+      "name": "Laurent_Taylor_constant",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "b6d0fdbca2f9d969036cfc8d62cb6f0ac0c9c2423ac0b30e031fecdc08cac2da",
+      "last_error": "AssertionError: ('Laurent_Taylor_constant_(1/2, 0, 2)', {})"
+    },
+    {
+      "name": "relative_bound_coefficient",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "9213fe11b1d505d15f1fbdb1940c4cdffb625f53f7068383f7c7540582e58754",
+      "last_error": "AssertionError: ('global_relative_bound_challenge_0.5', {'max_ratio': 0.05247802301696665, 'proved_upper': 0.25})"
+    },
+    {
+      "name": "protected_y_edges",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "e2e45f77c212389583cab33961dea00d2f017fd0e081a8e24623f7669e27a765",
+      "last_error": "AssertionError: ('protected_path', (3, 3, 3), 0, 1, (0, 0, 0), (0, 1, 0), 0, 1)"
+    },
+    {
+      "name": "flat_spin_rotation_weight",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "e5bc28145213981a7aeea6b66dec4c13e5eb1e8ffe4f1a95c2ae65557bed49b7",
+      "last_error": "AssertionError: ('arbitrary_function_normal_normal_operator', {})"
+    },
+    {
+      "name": "compact_connection_weight",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "c1696181c3d119b75dc2ec4961c01182047251047b6ffb61f914860ed1b5a30d",
+      "last_error": "AssertionError: ('rational_jet_0_full_half_density_connection_-1', {})"
+    },
+    {
+      "name": "metric_frame_order",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "197e3d15b7bfbd1a879643b01f1ec76808c0bba32965f31e9784af393c505679",
+      "last_error": "AssertionError: ('rational_jet_3_connection_antisymmetric_0', {})"
+    },
+    {
+      "name": "density_connection_weight",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "bf6cd2745deba8004ad9dfedb9766e477491125bfa25492c65d8fa049989ee3a",
+      "last_error": "AssertionError: ('rational_jet_0_full_half_density_connection_-1', {})"
+    },
+    {
+      "name": "curved_spin_transport_weight",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "5b082084f2134454958d51b5947485907b933219e33100dc03da356a45fe21b7",
+      "last_error": "AssertionError: ('rational_jet_0_curved_normal_commutator_spin_-1', {})"
+    },
+    {
+      "name": "curved_drift_metric",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "423abce8b67639c2a5fe16d68f1244a36073961d61e342d6effc8dfd0b429055",
+      "last_error": "AssertionError: ('rational_jet_0_curved_normal_commutator_drift_(-1, 0)', {})"
+    },
+    {
+      "name": "polar_metric_power",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "7ac3b3701656148b10c65fcf012df42a5dd451830758a8716c580dd230a2117c",
+      "last_error": "AssertionError: ('finite_polar_frame_composition_0', {})"
+    },
+    {
+      "name": "polar_rotation_variation",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "14526a4023357114bacba30b9d79cec3a7e20666f70327b5abd8238c76e84558",
+      "last_error": "AssertionError: ('polar_rotation_metric_derivative', {})"
+    },
+    {
+      "name": "Neumann_series_sign",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "bba4025ef6c526ecf9fbd13474a8740812c4ffa9b73f2339334ff8a905b9255c",
+      "last_error": "AssertionError: ('xy_shear_reference_connection', {'analytical_tail_bound': 5.464932357140647e-32})"
+    },
+    {
+      "name": "numerical_orientation",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "c9adc1e4d18f2c4284b3b87a8534e16e4c3a018d1adba866d2cf61500367459d",
+      "last_error": "AssertionError: ('exact_xy_connection_formula', {})"
+    },
+    {
+      "name": "central_frame_derivative",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "ee4e57b5fb8e07c7814b96b5e7a742c25bfdf5bbbeb62ce5ba2658fe6f7378db",
+      "last_error": "AssertionError: ('xy_shear_local_connection_bound_(-1, 0.06)', {})"
+    },
+    {
+      "name": "variable_xz_vertex",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "3584863630828307aa932c663b0f2e4d98e3af63290ebda2a419e10e563aaecb",
+      "last_error": "AssertionError: ('all_shears_operator_bound_(-1, 1e-06)', {'error': 0.01212435573360764, 'analytical_bound': np.float64(5.095253825710842e-05), 'reference_tail': 3.6191746487836835e-30})"
+    },
+    {
+      "name": "connection_chirality",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "1e967e8246fc0bcd47cbaa0012b51384d4a4d93d86432073ab8600b88103bb6c",
+      "last_error": "AssertionError: ('xy_shear_operator_bound_(-1, 1e-06)', {'error': 0.00013720725182496117, 'analytical_bound': np.float64(4.589472139422917e-05), 'reference_tail': 5.464932357140647e-32})"
+    },
+    {
+      "name": "operator_bound_coefficient",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "151dc9ecbc0e1aaefb11c973f2c7a3d0c51f4693a908cf49cc05ae79970299c1",
+      "last_error": "AssertionError: ('xy_shear_operator_bound_(-1, 0.12)', {'error': 0.07102703158554183, 'analytical_bound': np.float64(4.326684096176537), 'reference_tail': 5.464932357140647e-32})"
+    },
+    {
+      "name": "native_path_phase",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "a942b5115444b182cbc1bca7df3eee63d4c8c3ff47ae1ce53d59546afe8bd010",
+      "last_error": "AssertionError: native_path_endpoint_2"
+    },
+    {
+      "name": "native_imaginary_hopping_sign",
+      "effective": true,
+      "returncode": 1,
+      "source_sha256": "7487191aa2a9b0624c56340bc7aed21d5b1122989b3010124ae027aa198e03b4",
+      "last_error": "AssertionError: native_imaginary_hopping_1"
+    }
+  ],
+  "elapsed_seconds": 55.4340012500179
+}

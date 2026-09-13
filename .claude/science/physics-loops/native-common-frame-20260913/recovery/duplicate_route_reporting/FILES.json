@@ -1,0 +1,14 @@
+[
+  {
+    "path": "scripts/native_common_frame_spin_connection_2026_09_13.py",
+    "sha256": "37f163b5bf02a166ccfee6ea88c75ee786fa69524d7742d5baa299158c81f125"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-common-frame-20260913/INITIAL_RUN.stdout",
+    "sha256": "a23b60ab5fa8ee2ce3bf952b6a6862df7ef6ff4aa83e5aa1589ad900badcb009"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-common-frame-20260913/INITIAL_RUN.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

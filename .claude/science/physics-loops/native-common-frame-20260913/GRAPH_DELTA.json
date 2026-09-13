@@ -1,0 +1,20 @@
+{
+  "base_revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "added_nodes": [
+    "native_common_frame_spin_connection_bounded_theorem_note_2026-09-13"
+  ],
+  "added_edges": [
+    {
+      "from": "native_common_frame_spin_connection_bounded_theorem_note_2026-09-13",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "native_common_frame_spin_connection_bounded_theorem_note_2026-09-13",
+      "to": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05"
+    }
+  ],
+  "removed_nodes": [],
+  "rewired_existing_nodes": [],
+  "node_count": 5042,
+  "edge_count": 12521
+}

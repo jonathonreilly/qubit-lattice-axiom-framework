@@ -1,0 +1,10 @@
+{
+  "row": {
+    "note_path": "docs/NATIVE_COMMON_FRAME_SPIN_CONNECTION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "runner_path": "scripts/native_common_frame_spin_connection_2026_09_13.py",
+    "claim_type": "bounded_theorem"
+  },
+  "source_readiness_issue": null,
+  "cache_status": "fresh",
+  "scope": "Direct new-source preflight; not an integrated ledger or independent scientific review."
+}

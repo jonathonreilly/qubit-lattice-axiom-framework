@@ -1,6 +1,7 @@
 # Delivery
 
-The common-frame milestone is being prepared for independent review.
-No main landing or audit verdict is authorized here. After push and PR
-verification, preserve all science and remove this scratch worktree under
-the owner's disk rules. Continue the parent campaign afterward.
+PR8092 is OPEN and was verified MERGEABLE at science commit
+cfd1c2365e49f3f43eec75c73d7a58b3c8e2c43e. The source delta is self-contained.
+Independent review and formal audit remain pending; no main landing occurred.
+A final preservation commit records this handoff. Verify it is pushed, then
+remove this checkout. Continue the parent campaign through its deadline.

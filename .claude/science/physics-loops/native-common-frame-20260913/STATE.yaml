@@ -1,6 +1,6 @@
 loop: native-common-frame-20260913
 mode: milestone
-status: preparing_review
+status: delivered
 branch: physics-loop/native-common-frame-20260913
 worktree: /Users/jonreilly/Documents/Codex/toe-native-common-frame-20260913
 main_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
@@ -10,4 +10,6 @@ parent_deadline_utc: 2026-09-14T00:14:41Z
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
-next_action: Finish canonical evidence and graph checks, commit, push, open the review PR, verify durability, then remove this scratch worktree.
+next_action: Verify the preservation commit is on origin, remove this clean scratch checkout, and continue the parent campaign.
+pr: 8092
+science_commit: cfd1c2365e49f3f43eec75c73d7a58b3c8e2c43e

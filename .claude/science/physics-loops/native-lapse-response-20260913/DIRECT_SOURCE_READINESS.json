@@ -1,0 +1,18 @@
+{
+  "source_row": {
+    "claim_id": "native_lapse_source_contact_response_bounded_theorem_note_2026-09-13",
+    "claim_type": "bounded_theorem",
+    "note_path": "docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "runner_path": "scripts/native_lapse_source_contact_response_2026_09_13.py",
+    "helper_runner_paths": []
+  },
+  "readiness_issue": null,
+  "cache_status": "fresh",
+  "runner_sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621",
+  "checks": {
+    "free": 97,
+    "fock": 86,
+    "certificate": 35
+  },
+  "mutations": 20
+}

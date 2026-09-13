@@ -1,0 +1,18 @@
+{
+  "check_block05_fock.py": {
+    "sha256": "bdeab5c50d3e283cef851be69a5498cd49744eaa54392d35b200dc3f68791cd1",
+    "bytes": 6399
+  },
+  "BLOCK05_FOCK_CHECKS.json": {
+    "sha256": "43427f718a2af36d8f8d0ff22464be00b57a75ea9d9d526547150206f4fd39cd",
+    "bytes": 10012
+  },
+  "BLOCK05_FOCK_RUN.stdout": {
+    "sha256": "7aeed01e23ed985c885c039ab0669f5d9d29afafc3ac09b2b7b4334742bb4bdd",
+    "bytes": 2505
+  },
+  "BLOCK05_FOCK_RUN.stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

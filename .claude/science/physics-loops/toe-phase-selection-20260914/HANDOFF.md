@@ -130,3 +130,20 @@ BLOCK5_FORMATION_SEPARATOR_DESIGN.md: a fixed-order, raw-scalar candidate,
 Schur fill criterion, exact C4 example, KL projection and explicit alternative
 resource routes. None is yet a checked theorem in this block. Deadline remains
 01:30:44 UTC; at 16:48 UTC over eight hours remain. Continue personally.
+
+Block 5 update (17:40 UTC): private exact scalar-history criteria and a signed
+C4 cancellation are preserved in BLOCK5_FORMATION_DERIVATIONS.md. A separate
+positive local likelihood protocol now reproduces the actual finite DK row
+map with a common 768-node, 848-edge, degree-three, depth-nine circuit across
+all four arms and both c choices. Proper-prior perturbations and positive
+observation-window accuracy/rarity are explicit. The causal-embedding proof
+uses distinct horizontal ports, scale-ten disjoint detours, and a physical
+DAG level; smaller periodic positive/negative-displacement and doubled-cover
+checks pass. Full DK physical coordinates are not instantiated. The local
+Hodge bound gamma=243/416 yields Q0>=m gamma/(1+m gamma) for the stated
+source family, and determinant-tilt stability cancels common bulk factors.
+All author checks are personal, not independent retained review. Read the
+three new derivation notes and paired block5 runners/JSON. Next finish codec
+and window checks, challenge load-bearing steps, and review a coherent
+positive milestone. Then reassess the most useful hard route and continue
+personally to 2026-09-15 01:30:44 UTC; over seven hours remain.

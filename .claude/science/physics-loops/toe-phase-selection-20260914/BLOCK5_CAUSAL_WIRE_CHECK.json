@@ -1,0 +1,108 @@
+[
+  {
+    "name": "three-axis sum DAG",
+    "coarse_cover": [
+      4,
+      4,
+      4
+    ],
+    "coarse_period": 4,
+    "coarse_side": 356,
+    "final_physical_periods": [
+      14240,
+      14240,
+      14240
+    ],
+    "wires": 192,
+    "gate_sites": 256,
+    "controls": 256,
+    "crossings_removed": 272,
+    "original_crossing_types": {
+      "(0, 0)": 256,
+      "(0, 1)": 16
+    },
+    "maximum_original_internal_load": 2,
+    "final_interval_pieces": 3600,
+    "maximum_path_edges": 9868,
+    "hidden_copy_sites": 1302016,
+    "exact_final_intersection_counts": {
+      "shared_gate": 192,
+      "same_wire_turn": 3360
+    },
+    "vertex_disjoint_foreign_wires": true,
+    "coordinate_sha256": "c020848547ab93b273f4d4f8572a492489ec8ab5a53f35da6ed1aac475a6e205",
+    "cover_independent_role_map": false,
+    "scope": "Supplied periodic type DAG, one complex payload per gate/copy, controls supplied; no autonomous program or state selection"
+  },
+  {
+    "name": "negative-displacement DAG",
+    "coarse_cover": [
+      4,
+      4,
+      4
+    ],
+    "coarse_period": 4,
+    "coarse_side": 356,
+    "final_physical_periods": [
+      14240,
+      14240,
+      14240
+    ],
+    "wires": 192,
+    "gate_sites": 256,
+    "controls": 256,
+    "crossings_removed": 144,
+    "original_crossing_types": {
+      "(0, 1)": 48,
+      "(0, 0)": 84,
+      "(1, 1)": 12
+    },
+    "maximum_original_internal_load": 2,
+    "final_interval_pieces": 2880,
+    "maximum_path_edges": 16364,
+    "hidden_copy_sites": 1859584,
+    "exact_final_intersection_counts": {
+      "shared_gate": 192,
+      "same_wire_turn": 2592
+    },
+    "vertex_disjoint_foreign_wires": true,
+    "coordinate_sha256": "d5bd2ca96b1d630f57c93e960500057aa04a2e4c6ed4f8eb04a606e9463c768c",
+    "cover_independent_role_map": false,
+    "scope": "Supplied periodic type DAG, one complex payload per gate/copy, controls supplied; no autonomous program or state selection"
+  },
+  {
+    "name": "doubled first axis",
+    "coarse_cover": [
+      8,
+      4,
+      4
+    ],
+    "coarse_period": 4,
+    "coarse_side": 356,
+    "final_physical_periods": [
+      28480,
+      14240,
+      14240
+    ],
+    "wires": 384,
+    "gate_sites": 512,
+    "controls": 512,
+    "crossings_removed": 544,
+    "original_crossing_types": {
+      "(0, 0)": 512,
+      "(0, 1)": 32
+    },
+    "maximum_original_internal_load": 2,
+    "final_interval_pieces": 7184,
+    "maximum_path_edges": 9868,
+    "hidden_copy_sites": 2604032,
+    "exact_final_intersection_counts": {
+      "shared_gate": 384,
+      "same_wire_turn": 6720
+    },
+    "vertex_disjoint_foreign_wires": true,
+    "coordinate_sha256": "9ce9b6a03451a1d0bb808a05b2419e938196ff2803c70cc78f8abb1550801040",
+    "cover_independent_role_map": true,
+    "scope": "Supplied periodic type DAG, one complex payload per gate/copy, controls supplied; no autonomous program or state selection"
+  }
+]

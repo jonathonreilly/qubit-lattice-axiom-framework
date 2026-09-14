@@ -1,0 +1,65 @@
+{
+  "hodge_lower_bound": "243/416",
+  "hodge_upper_bound": "71/20",
+  "source_sha256": "8d2e071da05f0e540c8ec061b5dbea6cb996040a33b90efcd2f6e11b73d52cd2",
+  "domain": "v in [5/6,13/6], |shear|<=3/5, same local Hodge/fold/pinning definitions; mass>0, c=mass/2 or mass/3",
+  "claim": "Analytical dimension-independent coercivity of this supplied Gaussian family; no massless estimate or native phase selection",
+  "finite_challenges": [
+    {
+      "cover_t": 12,
+      "width": 4,
+      "pattern": null,
+      "mass": "1",
+      "background_shear": "3/5",
+      "record_shear": "0",
+      "dimension": 63,
+      "smallest_hodge_row_margin": "67/88",
+      "largest_hodge_row_sum": "127/40",
+      "smallest_gram_residual": "23/88",
+      "uniform_precision_lower_bound": "243/659",
+      "numeric_precision_minimum": 0.8222623222865456
+    },
+    {
+      "cover_t": 16,
+      "width": 4,
+      "pattern": [
+        "5/6",
+        "5/6",
+        "5/6",
+        "5/6"
+      ],
+      "mass": "1/10",
+      "background_shear": "-3/5",
+      "record_shear": "3/5",
+      "dimension": 88,
+      "smallest_hodge_row_margin": "123/160",
+      "largest_hodge_row_sum": "31/20",
+      "smallest_gram_residual": "43/1600",
+      "uniform_precision_lower_bound": "243/4403",
+      "numeric_precision_minimum": 0.9630962819822357
+    },
+    {
+      "cover_t": 12,
+      "width": 8,
+      "pattern": [
+        "13/6",
+        "5/6",
+        "13/6",
+        "5/6",
+        "13/6",
+        "5/6",
+        "13/6",
+        "5/6"
+      ],
+      "mass": "7",
+      "background_shear": "3/5",
+      "record_shear": "-3/5",
+      "dimension": 128,
+      "smallest_hodge_row_margin": "989/1248",
+      "largest_hodge_row_sum": "163/60",
+      "smallest_gram_residual": "2555/1248",
+      "uniform_precision_lower_bound": "1701/2117",
+      "numeric_precision_minimum": 0.9303958381071876
+    }
+  ]
+}

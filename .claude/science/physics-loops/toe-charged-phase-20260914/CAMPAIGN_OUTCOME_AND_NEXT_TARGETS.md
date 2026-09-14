@@ -45,6 +45,11 @@ polarizations and interacting charged matter before claiming the target TOE.
    error is bounded, and the remote membrane deformation remains local.
    This is a different candidate model. Its photon phase and any connection
    to an isotropic numerical phase remain open.
+   Its infinite temporal-penalty limit additionally maps an explicitly
+   invariant integer-neutral sector to dual spin-one plaquette flips.
+   The cell-complex and tensor-product constructions agree on a full cube.
+   Selecting that sector at fixed couplings and proving its Coulomb phase
+   remain separate open questions; see BLOCK14_HARD_LIMIT_MAPPING.md.
 
 Every link here remains author-proposed and awaits independent review.
 The two public PRs form an explicit stack: PR8121 is based on PR8120.

@@ -20,3 +20,11 @@ The primary dressing verification is recorded in BLOCK14_VERIFICATION.json;
 additional transfer output in BLOCK14_DEFORMED_TRANSFER_RUN.txt; the new
 kinetic check and three mutations in BLOCK14_KINETIC_VERIFICATION.json.
 Full integration and independent audit are not run or declared passed.
+
+Late hard-limit continuation: read the full new mapping, derivation and
+runner. The sector qualification is load-bearing: integer-neutral is
+invariant, not proved to contain the global ground state at fixed lambda
+uniformly in volume. Added that qualification, its limited finite-box
+threshold, and the fixed-box Duhamel comparison before preservation.
+The exact 243/141-state carrier-to-tensor comparison passes. No phase
+conclusion or retained status follows from that agreement.

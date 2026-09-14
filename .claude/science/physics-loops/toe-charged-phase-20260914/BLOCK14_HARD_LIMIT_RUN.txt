@@ -1,0 +1,1 @@
+One cube: 243 physical mod3 flux states, 141 integer-neutral states; exact tensor-shift mapping, finite-penalty charge changes, rate bound and diagonal potential checked. No phase or stability proof.

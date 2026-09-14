@@ -1,0 +1,11 @@
+{
+  "time_utc": "2026-09-14T13:04:14.226304+00:00",
+  "files": {
+    "BLOCK14_HARD_LIMIT_MAPPING.md": "04954eda0c67ea78a3d35ed30fe38eb962108d1eabe22436bdc7193c1243e833",
+    "block14_hard_limit_check.py": "a3265c41d0fe3e54ee33448e1aae2b10f13d718ff14ac249a3e4e901b9088ac0",
+    "BLOCK14_HARD_LIMIT_RUN.txt": "2279d9cc710fb9716bc5bf167c43b5ecca8f3e06a279f80ed5946d7df5f7a1e7"
+  },
+  "primary_exit": 0,
+  "scope": "Personal direct cell-complex versus tensor-product check, 243 physical and 141 integer-neutral states. Not an independent review.",
+  "open": "Fixed-coupling neutral-ground-sector selection, hard-model Coulomb phase and finite-penalty phase stability."
+}

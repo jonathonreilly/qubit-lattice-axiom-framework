@@ -1,0 +1,23 @@
+loop: toe-charged-phase-20260914
+mode: campaign
+status: active
+branch: physics-loop/toe-charged-phase-20260914
+worktree: /Users/jonreilly/Documents/Codex/toe-charged-phase-20260914
+main_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
+planning_revision: 9cff766069e8f66b4cc5c36888b1e71600b8888e
+start_utc: '2026-09-14T01:09:34Z'
+deadline_utc: '2026-09-14T13:09:34Z'
+runtime_hours: 12
+execution: supervisor_only_no_subagents
+research_emphasis: derivations_first_exact_falsification_checks
+delivery: milestone
+checkpoint_interval_minutes: 30
+block: 1
+active_route: interacting_charged_phase_route_selection
+actual_current_surface_status: open
+independent_review: pending
+formal_audit: deferred
+continuation_automation: toe-derivation-campaign-continuation
+lock_owner: physics-loop-toe-charged-phase-20260914
+lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
+next_action: Read exact prior carrier and phase sources; develop a fixed-payload interacting spectral or stability argument.

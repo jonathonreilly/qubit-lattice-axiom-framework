@@ -248,3 +248,118 @@ decay exponentially in spatial separation. Their small-k limits are1 and
 the linear dispersion survives. But this is a NONCOMPACT Gaussian identity.
 Extending its source-preserving quasilocal control through finite-clock
 wrapping and all charged/monopole defects remains the actual open theorem.
+
+## 7. Exact fixed-step transfer and the unitary disorder observable
+
+The singular continuous-time limit is a requirement of the chosen clock
+Hamiltonian route, not one of the foundation's axioms. A fixed positive
+Euclidean transfer provides a different conditional model. Its exact source
+map can be derived without claiming that its logarithm is spatially local.
+
+On a finite oriented spatial cell complex let a in Z_N^E be the link variables,
+d the cellular coboundary, and
+
+    M(a)=exp[S_s(a)], S_s(a)=beta_s sum_p cos[2pi(da)_p/N].
+
+Let K0(a,b)=product_l w_tau(a_l-b_l), with positive w_tau and strictly positive
+Fourier coefficients (Wilson at positive beta_tau and periodic heat kernels
+have this property). Let P_G average site gauge transformations. K=K0 P_G
+is positive definite on the gauge-invariant space. The symmetric physical
+transfer is T=M^(1/2) K M^(1/2), so T is self-adjoint and strictly positive
+there. In finite volume H=-log(T/lambda_max(T)) exists and is nonnegative.
+This does not prove a volume-uniform quasilocal interaction for H, nor a
+thermodynamic phase. The full Hilbert-space transfer has a kernel on
+nonphysical states; its logarithm is taken only in the physical sector.
+
+For any link cochain v define the UNITARY shift D_v|a>=|a+v>, and, for a
+closed current j, W_j|a>=omega^(j.a)|a>. Both preserve the Gauss sector and
+
+    W_j D_v=omega^(j.v) D_v W_j, omega=exp(2pi i/N).
+
+Consider the Euclidean disorder insertion which twists only the temporal
+plaquettes on the final seam by v. In the symmetrized Hilbert representation
+its operator is
+
+    B_v=M^(-1/2) D_v M^(1/2),
+
+not generally the unitary D_v. Indeed Tr(T^n D_v) is the sum over paths from
+a to a+v with endpoint factor sqrt[M(a) M(a+v)], whereas Tr(T^n B_v) has
+endpoint factor M(a), precisely the temporally twisted Euclidean sum. This
+can also be checked directly by multiplying the n kernels. B_v obeys the
+same Weyl linking algebra because M commutes with W, but need not be unitary.
+The distinction depends on the chosen Hilbert-space weight; an unsymmetrized
+transfer convention can move the factor into the scalar product. It must not
+be silently dropped when invoking norm-one operator bounds.
+
+Since every kernel/path weight is nonnegative, define
+
+    A_v=beta_s sum_p |sin[pi(dv)_p/N]|.
+
+The exact identity for a cosine difference gives
+|log M(a+v)-log M(a)|/2 <= A_v. Consequently
+
+    exp(-A_v) <B_v>_n <= <D_v>_n <= exp(A_v) <B_v>_n,
+    <O>_n=Tr(T^n O)/Tr(T^n).
+
+No complex cancellation is used: the two expectations are positive path sums.
+If v is a membrane shift whose spatial curl is supported on its boundary
+loop C*, the correction is a perimeter factor, independent of membrane area.
+For a unit boundary, A_v=beta_s |sin(pi/N)| |C*|. If dv=0, B_v=D_v exactly,
+including nontrivial flat twists on a torus. Thus a valid Euclidean perimeter
+lower bound can be transferred to the UNITARY Hamiltonian disorder operator
+at a stated cost. This is an exact finite-step observable bridge; it is not
+yet the desired photon or local-Hamiltonian theorem.
+
+For linked loops the tensor-product support of D_v is the membrane, not just
+C*. Every spanning membrane for C* intersects the linked Wilson loop C.
+Ordinary spin-system clustering for disjoint tensor supports therefore cannot
+be applied directly by using dist(C,C*) in place of the actual support
+separation. Gauge equivalence of different membrane representatives does not
+supply that missing clustering estimate by itself. A theorem in a physical
+observable algebra, including its localization assumptions, is needed.
+
+## 8. Quantitative loop-algebra criterion and its unclosed premise
+
+For any state and bounded A,B with AB=omega BA, put a=<A>, b=<B>. If both
+ordered connected expectations satisfy
+
+    |<AB>-ab|<=epsilon, |<BA>-ab|<=epsilon,
+
+then the algebra gives the exact elementary inequality
+
+    |1-omega| |a b| <= 2 epsilon.
+
+This is a useful criterion only with a valid estimate on the actual loop
+operators. If |a|>=exp(-sigma_A P_A), |b|>=exp(-sigma_B P_B) and a hypothetical
+loop-local clustering theorem gave epsilon<=C P^r exp(-mu d), it would imply
+
+    mu d <= sigma_A P_A+sigma_B P_B
+            +log[2 C P^r/|1-omega|].
+
+For geometrically similar linked loops d is at most a constant times their
+perimeters. Sending the size to infinity therefore bounds mu by a positive
+combination of perimeter coefficients; it does NOT force mu=0. To obtain
+such a conclusion one needs additional control, for example thickened
+operators preserving the linking algebra with arbitrarily small perimeter
+cost and adequate clustering. Neither that construction nor its required
+uniform bound is supplied by ordinary exponential clustering. This is the
+precise issue raised by Yaffe, PRD21,1574, sectionIII pp1579-1580.
+Polchinski, PRD25,3325, also stresses matching the full conserved-flux content
+of order parameters; its flux argument assumes a light/heavy dichotomy from
+a mass gap. That dichotomy/source join is not imported here without proof.
+
+A finite algebra-only countercheck makes the logical limitation explicit.
+For N>=3 let U,V be a Weyl pair and choose positive a_L,b_L with
+2a_L+2b_L<1. The density matrix
+
+    rho_L=[I+a_L(U+U*)+b_L(V+V*)]/N
+
+is positive, normalized, and has <U>=a_L, <V>=b_L (up to interchanging the
+names if a different Weyl convention is used). Taking a_L,b_L exponentially
+small in a label L imitates two perimeter laws while the Weyl algebra stays
+exact. Purify rho_L and take H_L=I-|psi_L><psi_L|: its unique ground state has
+gap1. This is NOT a geometrically local gauge-model counterexample; it proves
+only that the algebra and nonzero exponential expectations, without the
+geometric/dynamical hypothesis, do not force a vanishing gap. It must never
+be described as disproving the finite-Z_N Coulomb phase or the literature's
+complete physical argument.

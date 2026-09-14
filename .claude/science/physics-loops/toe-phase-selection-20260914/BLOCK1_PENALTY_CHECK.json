@@ -1,0 +1,128 @@
+{
+  "status": "finite_author_checks_only",
+  "parameters": {
+    "mu": 0.4,
+    "electric_stiffness_3K_over_2": 0.3,
+    "kappa_per_step": 0.7,
+    "T": 1.0
+  },
+  "neutral_energy": 10.743943172479543,
+  "offblock_norm": 7.284656839380127,
+  "finite_spatial_penalties": [
+    {
+      "lambda": 32.0,
+      "energy": 9.673969495584162,
+      "neutral_energy": 10.743943172479543,
+      "energy_lower_bound": 8.247420619019758,
+      "charged_weight": 0.028720931282025814,
+      "charged_weight_bound": 0.1174499378561836
+    },
+    {
+      "lambda": 64.0,
+      "energy": 10.172329530166738,
+      "neutral_energy": 10.743943172479543,
+      "energy_lower_bound": 9.747507678965775,
+      "charged_weight": 0.008383230926212966,
+      "charged_weight_bound": 0.018710275466711866
+    },
+    {
+      "lambda": 128.0,
+      "energy": 10.44973185687246,
+      "neutral_energy": 10.743943172479543,
+      "energy_lower_bound": 10.29137614350648,
+      "charged_weight": 0.00223585410054347,
+      "charged_weight_bound": 0.0038596473497209106
+    },
+    {
+      "lambda": 256.0,
+      "energy": 10.5948942858703,
+      "neutral_energy": 10.743943172479543,
+      "energy_lower_bound": 10.527572470145177,
+      "charged_weight": 0.0005748680568950179,
+      "charged_weight_bound": 0.0008822236854543048
+    },
+    {
+      "lambda": 512.0,
+      "energy": 10.668956869640251,
+      "neutral_energy": 10.743943172479543,
+      "energy_lower_bound": 10.638076670629397,
+      "charged_weight": 0.0001455718765425896,
+      "charged_weight_bound": 0.00021120243916887823
+    }
+  ],
+  "zeno_product_model": "Mhalf exp(-delta A) Mhalf, testing the block lemma",
+  "zeno": [
+    {
+      "steps": 8,
+      "delta": 0.125,
+      "operator_error": 0.0005896160125500445,
+      "block_bound": 1.1164216756773981,
+      "fast_block_norm": 0.11544043686630613
+    },
+    {
+      "steps": 16,
+      "delta": 0.0625,
+      "operator_error": 0.00022171324621052558,
+      "block_bound": 1.4504348314695013,
+      "fast_block_norm": 0.21841244012900252
+    },
+    {
+      "steps": 32,
+      "delta": 0.03125,
+      "operator_error": 7.5984180102501e-05,
+      "block_bound": 1.3404630814989975,
+      "fast_block_norm": 0.3211545534942461
+    },
+    {
+      "steps": 64,
+      "delta": 0.015625,
+      "operator_error": 2.8409556967160376e-05,
+      "block_bound": 0.9773739167357226,
+      "fast_block_norm": 0.39682597712023027
+    },
+    {
+      "steps": 128,
+      "delta": 0.0078125,
+      "operator_error": 1.1959286629287937e-05,
+      "block_bound": 0.6072803674605698,
+      "fast_block_norm": 0.4432131351135702
+    },
+    {
+      "steps": 256,
+      "delta": 0.00390625,
+      "operator_error": 5.456160189686999e-06,
+      "block_bound": 0.3417874501070431,
+      "fast_block_norm": 0.4689570908576975
+    }
+  ],
+  "wrong_model_challenges": {
+    "omitted_second_harmonic_operator_error": 3.27628332005931,
+    "wrong_semigroup_limit_distance": 1.2960525661057784e-05,
+    "bulk_exponent_on_boundary_operator_error": 1.8041543297025289,
+    "unnormalized_spin_raising_operator_error": 16.55764273314526,
+    "modular_instead_of_integer_constraint_witness": {
+      "source_flux": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "destination_flux": [
+        -1,
+        1,
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      "source_charge": [
+        0
+      ],
+      "destination_charge": [
+        1
+      ]
+    }
+  }
+}

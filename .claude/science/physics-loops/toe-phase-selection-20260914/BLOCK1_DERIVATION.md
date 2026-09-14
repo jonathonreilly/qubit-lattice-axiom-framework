@@ -70,3 +70,102 @@ cube runner; enumerate local mismatch patterns; compare the compressed clock
 matrix directly with the normalized spin-one shifts; then compare all charge
 sectors of the temporal-hard Hamiltonian. No ground-sector or phase conclusion
 has yet been drawn from this formula.
+
+## Fixed-volume spectral penalty bound
+
+Write A=H_(mu,lambda=0), N=sum_c Q_c^2, P=P0 and R=I-P. Here A>=0 and
+N>=R. Let e0=min spec(PAP on ran P), and v=||RAP||. For lambda>e0, the
+ground energy e_lambda of A+lambda N obeys
+
+    e0 - v^2/(lambda-e0) <= e_lambda <= e0.
+
+Indeed the upper bound is the neutral variational trial. For a normalized
+ground vector psi=x+y with x=Ppsi, y=Rpsi, the R equation gives
+
+    y = -(R(A+lambda N)R-e_lambda)^(-1) RAP x,
+
+because the inverse has norm at most 1/(lambda-e_lambda). Thus x is nonzero,
+and substituting into the P equation bounds its Schur correction by
+v^2/(lambda-e_lambda). Taking the x expectation proves the lower bound.
+Also
+
+    ||R psi||^2 <= v^2/(lambda-e0)^2.
+
+No gap within the neutral sector is used. These bounds prove fixed-box
+ground-energy convergence and disappearance of the charged component, but
+their stated denominator condition is not uniform in volume: e0 can be
+extensive. They do not settle the fixed-lambda phase question.
+
+The same min-max/Schur argument, or finite-dimensional spectral convergence,
+gives the compressed low-energy operator. The elementary estimates here are
+intentionally stated only for the ground energy and leakage; a claim of
+uniform approximation to every low-energy eigenvector would require its own
+spectral-window and degeneracy conditions.
+
+## Fixed spatial penalty per Euclidean step
+
+There is a second way the hard spatial constraint occurs. Keep a coefficient
+kappa>0 on each spatial cube in every Euclidean time slice as delta tends to
+zero, instead of scaling it as delta lambda. Define M=exp(-kappa N). With
+the same finite-box clock kernel K_delta as the upstream note, set
+
+    T_delta = exp(-2t |E| delta) M^(1/2) exp(-delta V_K/2)
+              K_delta exp(-delta V_K/2) M^(1/2).
+
+All diagonal factors commute. The upstream nonnegative-weight row bound
+gives ||T_delta||<=1. With A the lambda=0 Hamiltonian above,
+
+    T_delta = M - delta M^(1/2) A M^(1/2) + O_box(delta^2).
+
+For fixed positive T, T_delta^(floor(T/delta)) converges in norm to
+
+    P exp(-T PAP on ran P) P.
+
+Here is a direct block proof rather than an assumed interchange of limits.
+Let a=PT_delta P, b=PT_delta R, c=RT_delta R. For sufficiently small delta,
+||a||<=1, ||b||<=delta B, ||c||<=q'<1, with q' chosen strictly between
+exp(-kappa) and 1. Let x_j=P T_delta^j psi and y_j=R T_delta^j psi. The
+recursion and contraction give
+
+    ||y_n|| <= (q')^n ||y_0|| + delta B/(1-q') ||psi||,
+    ||x_n-a^n x_0|| <= delta B/(1-q') ||y_0||
+                         + n delta^2 B^2/(1-q') ||psi||.
+
+Finally ||a-exp(-delta PAP)||<=delta^2 C and telescoping contractions gives
+||a^n-exp(-n delta PAP)||<=n delta^2 C. Combining these inequalities proves
+the limit, with an explicit bound
+
+    (q')^n + 2 delta B/(1-q')
+             + n delta^2 [B^2/(1-q')+C],
+
+plus the time-rounding error at n delta versus T. B and C are finite-box
+constants; the proof is not a uniform infinite-volume bound. At T=0 the
+limit is discontinuous outside P, so the displayed convergence is for T>0.
+
+This trajectory selects the compressed operator with its second harmonic.
+It therefore clarifies the fixed-spatial-penalty option explicitly left open
+in the prior note. It does not prove that the isotropic Euclidean numerical
+model remains in the same phase along this anisotropic trajectory.
+
+## What the finite checks establish
+
+The new runner constructs the oriented cellular boundary from products of
+intervals, then checks DF=0. On a 3x3x3 box its 144 edge stars have sizes
+2, 3 and 4 in counts 36, 72 and 36. Every binary wrap pattern is checked:
+integer closure holds precisely for the two constant patterns on each star.
+
+On one cube, the complete physical mod-three space has 243 states, including
+141 neutral states. On two joined cubes it has 19,683 states, including
+6,651 neutral states. The direct clock compression and integer truncated-shift
+construction agree coefficient by coefficient in exp(-mu), retaining edge
+multiplicities and both boundary exponents 2 and 3. The large box's local
+star calculation checks the bulk exponent 4 without building an exponentially
+large full Hilbert space.
+
+The hard-temporal model was compared across all 5 and 23 nonempty charge
+sectors, respectively, at electric stiffness 3K/2 = 0, 0.05, 0.2, 1, 5 with
+t=1 and lambda=0. In these ten finite comparisons, the neutral sector wins.
+For example at zero stiffness the lowest charged energy lies above it by
+3.328517088... and 3.141917880..., respectively. Residuals are in the JSON
+artifact. These are numerical finite-sector comparisons, not a proof for
+all stiffnesses, all boxes, or the infinite lattice.

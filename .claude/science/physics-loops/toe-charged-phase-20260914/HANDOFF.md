@@ -123,3 +123,5 @@ polarization threshold and nonlinear isotropic ODE checks pass. These are
 private author derivations; no full phase, exact charged pole or main-carrier
 bridge is claimed. Source comparison records a printed KLP integration
 formula discrepancy and uses the rederived differential equations instead.
+
+2026-09-14T05:23:52.914041+00:00: block 4 delivered as PR #8111 at 714c94d0a93977b3ecd7e4b88812c15771541b17. Independent review pending; exact remote verified, all science clean and scratch checkout removed. Block 5 begins a native dynamical-geometry discriminator: compact local tensor constraints versus linear helicity-two propagation. Continue personally until 13:09:34 UTC.

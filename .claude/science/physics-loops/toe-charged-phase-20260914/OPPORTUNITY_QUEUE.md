@@ -23,3 +23,10 @@ phase; that target stays open, with signed-current resummation and direct
 Hamiltonian methods live. Do not turn further sector-bound corollaries into
 new milestones. Native geometry, formation/readout and chiral content remain
 independent high-value alternatives after the velocity discriminator.
+
+## Rerank after block 4
+
+The one-loop metric calculation is delivered in PR8111. Native dynamical
+geometry is now first: derive an actual local tensor mode/constraint mechanism
+and distinguish linear gravity propagation from higher-derivative tensor
+phases. Do not extend the preceding block with easy flow corollaries.

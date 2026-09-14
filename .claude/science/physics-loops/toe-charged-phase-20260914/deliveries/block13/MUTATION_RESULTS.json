@@ -1,0 +1,97 @@
+{
+  "primary_sha256": "b4d5937fb08f7808bc003993e3c946c2977675b796bd423b16197827500393b8",
+  "results": [
+    {
+      "name": "charged_fourier_orientation",
+      "source_sha256": "f056d81aba174bc5bcc881bca41963cbf3094b1acf9393061ea7ead4d1c0e63b",
+      "exit_code": 1,
+      "elapsed_sec": 0.5023711250396445,
+      "detected": true
+    },
+    {
+      "name": "charged_polar_adjoint",
+      "source_sha256": "69f3058c22562c4808f9bc8f265d03025e63cf19aae83b1ba57374864f95c8f7",
+      "exit_code": 1,
+      "elapsed_sec": 0.24182949995156378,
+      "detected": true
+    },
+    {
+      "name": "squared_fidelity_confusion",
+      "source_sha256": "df5f23dbb07b4f179a6af39cd0409e50712140f49b1e5bf915aa678ca44ea44c",
+      "exit_code": 1,
+      "elapsed_sec": 0.2594072089996189,
+      "detected": true
+    },
+    {
+      "name": "wrong_boundary_polar",
+      "source_sha256": "58f851b4948830836f3818a1ce580582821d69cf0aee6f5f8e59af885ab327e6",
+      "exit_code": 1,
+      "elapsed_sec": 0.24693895794916898,
+      "detected": true
+    },
+    {
+      "name": "missing_gauss_projection",
+      "source_sha256": "6e31c9a30d6284bfdb95cb82e7b53e1ef0440767c680856c8c523d3ea83d1364",
+      "exit_code": 1,
+      "elapsed_sec": 0.23640787496697158,
+      "detected": true
+    },
+    {
+      "name": "omitted_strip_end_edges",
+      "source_sha256": "98002c96d54a31160b75febe4598750379390eda330ed87ec8ee95f9797560b8",
+      "exit_code": 1,
+      "elapsed_sec": 0.2502631660318002,
+      "detected": true
+    },
+    {
+      "name": "wrong_electric_twist",
+      "source_sha256": "45cfbae0dd162b3b8fa59f4ac4718a88c74f0f3ffdcd4f721de6d65770b4cf27",
+      "exit_code": 1,
+      "elapsed_sec": 0.2741757499752566,
+      "detected": true
+    },
+    {
+      "name": "lost_zero_mode_string",
+      "source_sha256": "fa2a6bd95df6253d7414ff2f8e1b459eba54d4bbdfca2c0323932b9ae456516d",
+      "exit_code": 1,
+      "elapsed_sec": 0.27443354099523276,
+      "detected": true
+    },
+    {
+      "name": "wrong_zero_mode_normalization",
+      "source_sha256": "d248ec5c160eee5957e77b3262557c780dd5f92711ba8cc45aeab1e855b41a14",
+      "exit_code": 1,
+      "elapsed_sec": 0.2723309580469504,
+      "detected": true
+    },
+    {
+      "name": "wrong_zero_mode_tail",
+      "source_sha256": "ce92da9c39dabc4e0ec74c2557e869335f6dfe1872c9ebf8dbbe019ec4759bc9",
+      "exit_code": 1,
+      "elapsed_sec": 0.2699014999670908,
+      "detected": true
+    },
+    {
+      "name": "majorana_gap_factor",
+      "source_sha256": "6a9a92e49cd701010e6a1fed54a24acf687b97932f7991eb8015a1fdb6745a08",
+      "exit_code": 1,
+      "elapsed_sec": 0.2715322499861941,
+      "detected": true
+    },
+    {
+      "name": "magnetic_path_endpoint_sign",
+      "source_sha256": "f0dde071f564a2bd47a915744e4a30d1d99293ee050ca338dc0051bc4afebf86",
+      "exit_code": 1,
+      "elapsed_sec": 0.30715679191052914,
+      "detected": true
+    },
+    {
+      "name": "dropped_flow_neutrality",
+      "source_sha256": "d62f9ee525d743feb51a40dabaf9aca861091b9e42237297309629d15bf20eec",
+      "exit_code": 1,
+      "elapsed_sec": 0.3090763340005651,
+      "detected": true
+    }
+  ],
+  "independence": "Author falsifiers, not independent scientific review."
+}

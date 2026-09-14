@@ -1,0 +1,12 @@
+OPTIMA N,charged_trace_norm,boundary_overlap,complement_fidelity= [[3, 0.5122791541143245, 0.5365465078023764, 0.5365465078023766], [4, 0.388276129575462, 0.15118213090686944, 0.1511821309068696], [5, 0.45761080422532596, 0.22488563949757023, 0.22488563949757018], [7, 0.34312470955222324, 0.04855484039310553, 0.04855484039310558]]
+PASS optimal_charged_and_dressed
+GAUSS STRIP L,links,physical_dimension= [[1, 4, 2], [2, 7, 4], [3, 10, 8], [4, 13, 16]]
+PASS gauge_strip_reduction
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-charged-phase-20260914/.claude/science/physics-loops/toe-charged-phase-20260914/block13_dressing_check.py", line 150, in <module>
+    f();print('PASS',f.__name__,flush=True)
+    ~^^
+  File "/Users/jonreilly/Documents/Codex/toe-charged-phase-20260914/.claude/science/physics-loops/toe-charged-phase-20260914/block13_dressing_check.py", line 110, in strong_zero_mode
+    assert abs(np.vdot(psi,trial))<2e-9
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

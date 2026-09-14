@@ -1,0 +1,12 @@
+{
+  "pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8121",
+  "branch": "physics-loop/toe-optimized-loop-dressing-20260914",
+  "head": "6f9f79c030fe880cc1aea7c9aaf5fb4f9cc5e14f",
+  "remote_head": "6f9f79c030fe880cc1aea7c9aaf5fb4f9cc5e14f",
+  "base": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
+  "base_branch": "physics-loop/toe-clock-spectral-loops-20260914",
+  "delivered_utc": "2026-09-14T12:11:33.224452+00:00",
+  "status": "open_independent_review_pending",
+  "preservation": "Exact remote HEAD verified and worktree clean including untracked files. Public sources and receipts copied to continuing campaign branch.",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-optimized-loop-dressing-20260914"
+}

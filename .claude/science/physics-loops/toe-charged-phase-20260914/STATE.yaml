@@ -12,14 +12,14 @@ execution: supervisor_only_no_subagents
 research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 12
-active_route: collective_continuous_time_photon_phase
+block: 14
+active_route: positive_partition_dressing_and_same_state_phase_estimate
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Personally investigate collective fixed-payload phase bounds and operator
-  widening after PR8120; continue until 13:09:34 UTC.
-last_checkpoint_utc: '2026-09-14T11:37:25.508914+00:00'
+next_action: Personally derive positive orbit-normalized clock loop contractions and
+  test the remaining same-state expectation obligation; continue until 13:09:34 UTC.
+last_checkpoint_utc: '2026-09-14T12:13:01.363099+00:00'

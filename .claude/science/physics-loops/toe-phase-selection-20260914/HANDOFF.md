@@ -261,3 +261,29 @@ proof does not transfer uniformly by assertion.
 Continue PERSONALLY, no agents, until 2026-09-15 01:30:44 UTC. At 19:55 UTC
 more than five and a half hours remained. Finishing this transfer construction
 must trigger reassessment and the next useful route, not an early stop.
+
+At 20:25 UTC, block8 derives a strictly positive periodized Gaussian kernel
+for the actual principal-flux penalty Hamiltonian. The physical gauge
+projection and periodic-time holonomy are explicit. A new Poisson coupling
+reduces the one-step error from E^2 to E: C_ext<=E[29t^2+t(6K+16lambda)].
+The first logarithmic correction is a sum of single-link and shared-face
+link-pair terms; disjoint terms cancel exactly. Cube checks confirm this
+decomposition and the finite-step expansion, without claiming a uniform phase.
+
+The N=3 principal-Wilson temporal kernel differs by <=6E q^4, so the
+anisotropic Wilson/principal-monopole action shares the same Hamiltonian
+limit. It need not be a positive operator at finite time step: a physical
+27-state three-square strip has a simple factorized integer witness with
+exact form -901886967/55267035185152 at q=9/10, exp(-mu)=1/2. Both full
+lift enumeration and a distinct ten-factor Laurent convolution agree.
+The counterexample does not cover the simulated periodic-4D parameters or
+exclude a phase; even two-step positivity remains available. Full Gaussian
+periodization supplies a positive completion without changing target H.
+
+All derivations and finite checks are personal; no independent review/audit.
+Nguyen et al. arXiv2401.04800v2 and Giansiracusa et al.2505.00079v2 have
+now been read in full extracted text. Their supplied models and numerical/EFT
+phase evidence are distinguished from a uniform actual-Hamiltonian proof.
+Next: author-review the complete block8 proof and package the milestone,
+then continue to the strongest actual-state or native-law question.
+Deadline stays 2026-09-15 01:30:44 UTC; do not finish early.

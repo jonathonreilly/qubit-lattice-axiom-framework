@@ -1,0 +1,246 @@
+{
+  "status": "author_finite_checks_only",
+  "single_square": [
+    {
+      "q": 0.02,
+      "mu": 0.0,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 0.7884426835467452,
+      "max_row_sum": 1.0,
+      "gauge_reduction_error": 5.551115123125783e-16,
+      "gauge_invariance_error": 8.326672684688674e-17,
+      "symmetry_error": 5.421010862427522e-20,
+      "truncation_norm_tail": 5.756066215929043e-287
+    },
+    {
+      "q": 0.02,
+      "mu": 0.4,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 0.781277496488856,
+      "max_row_sum": 0.998628434486528,
+      "gauge_reduction_error": 1.1102230246251565e-16,
+      "gauge_invariance_error": 1.1102230246251565e-16,
+      "symmetry_error": 5.421010862427522e-20,
+      "truncation_norm_tail": 5.756066215929043e-287
+    },
+    {
+      "q": 0.02,
+      "mu": 1.2,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 0.7719046646258659,
+      "max_row_sum": 0.9970927625231438,
+      "gauge_reduction_error": 6.661338147750939e-16,
+      "gauge_invariance_error": 2.7755575615628914e-17,
+      "symmetry_error": 5.421010862427522e-20,
+      "truncation_norm_tail": 5.756066215929043e-287
+    },
+    {
+      "q": 0.08,
+      "mu": 0.0,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 0.3954752709812428,
+      "max_row_sum": 1.0000000000000016,
+      "gauge_reduction_error": 4.440892098500626e-16,
+      "gauge_invariance_error": 8.326672684688674e-17,
+      "symmetry_error": 8.673617379884035e-19,
+      "truncation_norm_tail": 2.8894097252287506e-185
+    },
+    {
+      "q": 0.08,
+      "mu": 0.4,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 0.38325540514719597,
+      "max_row_sum": 0.9851225446208824,
+      "gauge_reduction_error": 5.551115123125783e-16,
+      "gauge_invariance_error": 4.163336342344337e-17,
+      "symmetry_error": 6.938893903907228e-18,
+      "truncation_norm_tail": 2.8894097252287506e-185
+    },
+    {
+      "q": 0.08,
+      "mu": 1.2,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 0.36667536397848327,
+      "max_row_sum": 0.9684650825716542,
+      "gauge_reduction_error": 1.1102230246251565e-16,
+      "gauge_invariance_error": 8.326672684688674e-17,
+      "symmetry_error": 1.3877787807814457e-17,
+      "truncation_norm_tail": 2.8894097252287506e-185
+    },
+    {
+      "q": 0.25,
+      "mu": 0.0,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 0.05995055709985447,
+      "max_row_sum": 0.9999999999999999,
+      "gauge_reduction_error": 2.7755575615628914e-16,
+      "gauge_invariance_error": 6.938893903907228e-17,
+      "symmetry_error": 3.469446951953614e-18,
+      "truncation_norm_tail": 9.475495192091092e-102
+    },
+    {
+      "q": 0.25,
+      "mu": 0.4,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 0.05951509447094355,
+      "max_row_sum": 0.9368775870524304,
+      "gauge_reduction_error": 5.551115123125783e-16,
+      "gauge_invariance_error": 1.1102230246251565e-16,
+      "symmetry_error": 2.0816681711721685e-17,
+      "truncation_norm_tail": 9.475495192091092e-102
+    },
+    {
+      "q": 0.25,
+      "mu": 1.2,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 0.05729101978270973,
+      "max_row_sum": 0.8662837244741524,
+      "gauge_reduction_error": 5.551115123125783e-17,
+      "gauge_invariance_error": 4.163336342344337e-17,
+      "symmetry_error": 3.469446951953614e-17,
+      "truncation_norm_tail": 9.475495192091092e-102
+    },
+    {
+      "q": 0.7,
+      "mu": 0.0,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 4.561347899798355e-06,
+      "max_row_sum": 0.9999999999999981,
+      "gauge_reduction_error": 1.1657341758564144e-15,
+      "gauge_invariance_error": 2.0816681711721685e-16,
+      "symmetry_error": 7.45931094670027e-17,
+      "truncation_norm_tail": 1.7875107130714902e-26
+    },
+    {
+      "q": 0.7,
+      "mu": 0.4,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 7.67709783286492e-05,
+      "max_row_sum": 0.8012056555803306,
+      "gauge_reduction_error": 5.273559366969494e-16,
+      "gauge_invariance_error": 1.3877787807814457e-16,
+      "symmetry_error": 5.724587470723463e-17,
+      "truncation_norm_tail": 1.7875107130714902e-26
+    },
+    {
+      "q": 0.7,
+      "mu": 1.2,
+      "dimension": 81,
+      "physical_dimension": 3,
+      "minimum_eigenvalue": 6.941688667182402e-05,
+      "max_row_sum": 0.6180146376254184,
+      "gauge_reduction_error": 3.0531133177191805e-16,
+      "gauge_invariance_error": 9.71445146547012e-17,
+      "symmetry_error": 1.734723475976807e-17,
+      "truncation_norm_tail": 1.7875107130714902e-26
+    }
+  ],
+  "cube": {
+    "geometry": {
+      "edges": 12,
+      "faces": 6,
+      "physical_flux_states": 243,
+      "clock_surjectivity_columns": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ]
+    },
+    "parameters": {
+      "t": 0.7,
+      "mu": 0.8,
+      "K": 0.4,
+      "lambda_": 1.1
+    },
+    "local_log_coefficient": {
+      "interacting_link_pairs": 36,
+      "disjoint_pair_error": 5.551115123125783e-17,
+      "local_decomposition_error": 7.105427357601002e-15,
+      "norm": 26.51655550327165,
+      "bound": 336
+    },
+    "commutator_norm": 9.514495599757796,
+    "commutator_row_bound": 65.51999999999998,
+    "max_actual_potential_jump": 3.8999999999999995,
+    "universal_cubic_N3_potential_jump_bound": 20.0,
+    "checks": [
+      {
+        "epsilon": 0.01,
+        "logarithm_second_order_residual": 0.02479246930697932,
+        "logarithm_residual_div_epsilon2": 247.9246930697932,
+        "integer_lift_count": 289,
+        "certified_lift_tail": 0.0005274353297879397,
+        "kernel_first_order_error": 0.02442324214784831,
+        "one_step_error": 0.0010610953464116227,
+        "one_step_error_div_epsilon2": 10.610953464116227,
+        "fixed_time": 0.1,
+        "product_error": 0.004325313014569216,
+        "product_bound": 0.1805516010977583,
+        "finite_volume_C": 175.2772477998789,
+        "minimum_truncated_kernel_eigenvalue": 0.798644553368513
+      },
+      {
+        "epsilon": 0.005,
+        "logarithm_second_order_residual": 0.006456836550637935,
+        "logarithm_residual_div_epsilon2": 258.2734620255174,
+        "integer_lift_count": 289,
+        "certified_lift_tail": 7.050956699432492e-05,
+        "kernel_first_order_error": 0.006347698762215875,
+        "one_step_error": 0.0002916574658892938,
+        "one_step_error_div_epsilon2": 11.666298635571751,
+        "fixed_time": 0.1,
+        "product_error": 0.002426132684466244,
+        "product_bound": 0.08904881523982595,
+        "finite_volume_C": 175.2772477998789,
+        "minimum_truncated_kernel_eigenvalue": 0.8934587848313348
+      },
+      {
+        "epsilon": 0.0025,
+        "logarithm_second_order_residual": 0.0016477303954066953,
+        "logarithm_residual_div_epsilon2": 263.6368632650712,
+        "integer_lift_count": 289,
+        "certified_lift_tail": 9.117058258139045e-06,
+        "kernel_first_order_error": 0.001618574501729143,
+        "one_step_error": 7.659604309809422e-05,
+        "one_step_error_div_epsilon2": 12.255366895695076,
+        "fixed_time": 0.1,
+        "product_error": 0.0012831531303301304,
+        "product_bound": 0.04418399428029529,
+        "finite_volume_C": 175.2772477998789,
+        "minimum_truncated_kernel_eigenvalue": 0.9451742266143949
+      },
+      {
+        "epsilon": 0.00125,
+        "logarithm_second_order_residual": 0.00041619706660830826,
+        "logarithm_residual_div_epsilon2": 266.36612262931726,
+        "integer_lift_count": 289,
+        "certified_lift_tail": 1.1591545142562584e-06,
+        "kernel_first_order_error": 0.0004086922197777129,
+        "one_step_error": 1.968107765104478e-05,
+        "one_step_error_div_epsilon2": 12.595889696668658,
+        "fixed_time": 0.1,
+        "product_error": 0.0006596314025374859,
+        "product_bound": 0.022002388336125365,
+        "finite_volume_C": 175.2772477998789,
+        "minimum_truncated_kernel_eigenvalue": 0.9721865457305148
+      }
+    ],
+    "faults": {
+      "row_normalization_changes_target_diagonal": 9.251273402830671,
+      "wrong_mu_scale_generator_difference": 4.061103467514296
+    }
+  }
+}

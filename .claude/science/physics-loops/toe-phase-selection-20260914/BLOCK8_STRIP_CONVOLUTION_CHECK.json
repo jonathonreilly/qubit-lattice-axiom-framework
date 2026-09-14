@@ -1,0 +1,8 @@
+{
+  "method": "Integer Laurent-polynomial convolution with ten factors and factorized 27-state witness",
+  "coefficient_count": 621,
+  "coefficient_sum": 296196766695424,
+  "exact_quadratic_form": "-901886967/55267035185152",
+  "witness_norm_squared": 36,
+  "factorization": "w(b1,b2,b3)=[1,-2,1](b2)*A(b1,b3), A=[[0,1,-1],[-1,0,1],[1,-1,0]]"
+}

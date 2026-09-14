@@ -1,0 +1,35 @@
+{
+  "updated_utc": "2026-09-14T05:36:52.541069+00:00",
+  "main_revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "sources": [
+    {
+      "title": "Gu-Wen 0907.1203v3",
+      "url": "https://arxiv.org/abs/0907.1203v3",
+      "sha256": "3b1af85075e346cf00b0b91824554f6f87bf494f6bfb9737c867f2a8c134fa0c",
+      "read": "Abstract; section IV complete; section V.A-C through constraint Hilbert space; section VII.A-D model definitions and VII.E complete; VIII beginning. Visual PDF pages 11-12.",
+      "role": "Own rederivation of the constrained comparators. Strong-coupling limitation explicit; scalar-defect force sentence not imported."
+    },
+    {
+      "title": "Xu-Horava 1003.0009v1",
+      "url": "https://arxiv.org/abs/1003.0009v1",
+      "sha256": "2c7a0e1ecff91096f35571a39633cb22250f75bea8dcd4364418a25e6806455b",
+      "read": "Intro and microscopic Hamiltonian through equation 4; equations 11-12 discussion and nonlinear/discrete-symmetry boundary; final discussion of linear dispersion and matter-induced route.",
+      "role": "Prior compact tensor-phase and boundary-term comparator; no phase theorem imported."
+    },
+    {
+      "title": "Pretko 1604.05329v3",
+      "url": "https://arxiv.org/abs/1604.05329v3",
+      "sha256": "98e13dd4facd72bdffb94f56d0023166be46fb70ca4fd1afec919671feca6ed2",
+      "read": "Section II.B vector-charge theory and II.C opening trace discussion; preceding scalar charge mobility paragraph.",
+      "role": "Source-mobility and charge-identification comparator; no physical gravity identification accepted."
+    },
+    {
+      "title": "Bravyi-DiVincenzo-Loss 1105.0675",
+      "url": "https://arxiv.org/abs/1105.0675",
+      "sha256": "053f147269c1be30615f72555350444fe5b43fc1ecb01471cee57e88e6e5e78c",
+      "read": "Section 4 introduction and 4.1 assumptions, PDF pages 26-28.",
+      "role": "Displayed many-body locality theorem assumes product low-energy space, absent for the present stabilizer code; not imported."
+    }
+  ],
+  "scope": "Working source reading and independent derivation; no independent review, global phase theorem, no-go for all qubits or axiom contradiction."
+}

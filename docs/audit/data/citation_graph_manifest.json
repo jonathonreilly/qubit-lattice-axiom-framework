@@ -1,6 +1,6 @@
 {
  "edge_count": 12522,
- "node_count": 5048,
+ "node_count": 5049,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16591,6 +16591,10 @@
    "out_degree": 1
   },
   "so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

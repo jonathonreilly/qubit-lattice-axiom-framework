@@ -1,0 +1,454 @@
+===== runner cache v1 =====
+runner: /Users/jonreilly/Documents/Codex/toe-direct-clock-wilson-20260914/scripts/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.py
+runner_sha256: ec590b5791e5bfc460c40c21eaab78608bfa39f6ed1a9b9d2fef1692f1db5aa6
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+finite_check_completed: integral_cochain_and_short_vectors
+finite_check_completed: dimension_dependent_packing
+finite_check_completed: exact_lattice_source_and_coset_mixture
+finite_check_completed: actual_clock_wilson_characters
+finite_check_completed: uniform_shifted_theta_sources
+finite_check_completed: periodic_green_and_disjoint_loops
+finite_check_completed: coulomb_time_and_charge_signs
+finite_check_completed: positive_lift_and_physical_score
+finite_check_completed: midpoint_cell_average
+finite_check_completed: gaussian_os_modes
+{
+  "actual_clock_wilson_characters": [
+    {
+      "N": 128,
+      "beta": 20.0,
+      "gaussian_ratio": 1.3956124250860895,
+      "normalized_ratio": 1.3956124250860902,
+      "q1": 4,
+      "q2": 5
+    },
+    {
+      "N": 256,
+      "beta": 40.0,
+      "gaussian_ratio": 1.338656724353094,
+      "normalized_ratio": 1.3386567243530945,
+      "q1": 5,
+      "q2": 7
+    },
+    {
+      "N": 384,
+      "beta": 60.0,
+      "gaussian_ratio": 1.3498588075760032,
+      "normalized_ratio": 1.349858807576004,
+      "q1": 6,
+      "q2": 9
+    }
+  ],
+  "coulomb_time_and_charge_signs": {
+    "dipole_limits": [
+      {
+        "T": 10.0,
+        "energy": 0.04751676144235829,
+        "target": 0.04661540357225707
+      },
+      {
+        "T": 100.0,
+        "energy": 0.04670883959065195,
+        "target": 0.04661540357225707
+      },
+      {
+        "T": 1000.0,
+        "energy": 0.04662475051725669,
+        "target": 0.04661540357225707
+      }
+    ],
+    "direct_rectangle_quadrature": 0.16054343331980253,
+    "rectangle_formula": 0.1605434333198024,
+    "time_integrals": [
+      {
+        "R": 0.8,
+        "T": 0.5,
+        "coulomb_error": 0.08080362119228343,
+        "integral": 0.009334109120075582
+      },
+      {
+        "R": 1.7,
+        "T": 2.0,
+        "coulomb_error": 0.031997833608166194,
+        "integral": 0.029624887543606055
+      },
+      {
+        "R": 0.8,
+        "T": 10.0,
+        "coulomb_error": 0.017866943424824464,
+        "integral": 0.8160489600761013
+      },
+      {
+        "R": 1.7,
+        "T": 100.0,
+        "coulomb_error": 0.0025708173758499375,
+        "integral": 4.423946000411928
+      }
+    ]
+  },
+  "dimension_dependent_packing": {
+    "packing": [
+      {
+        "bound": 0.4,
+        "finite_theta_tail": 0.08000512000052432,
+        "rank": 1,
+        "shell_majorant": 0.2000179200023593
+      },
+      {
+        "bound": 0.08000000000000002,
+        "finite_theta_tail": 0.0064102400262982875,
+        "rank": 2,
+        "shell_majorant": 0.04000000032112641
+      },
+      {
+        "bound": 0.003200000000000001,
+        "finite_theta_tail": 2.0480157286936886e-05,
+        "rank": 4,
+        "shell_majorant": 0.0016000000000000005
+      }
+    ],
+    "strong_family": [
+      {
+        "L": 4,
+        "N": 131072,
+        "beta": 16384,
+        "log_coset_bound": -10105.781759534942,
+        "log_source_bound": -8191.30685281944,
+        "sigma": 26560.740364736994
+      },
+      {
+        "L": 8,
+        "N": 2097152,
+        "beta": 262144,
+        "log_coset_bound": -161702.90536026747,
+        "log_source_bound": -131071.30685281944,
+        "sigma": 424971.8458357919
+      },
+      {
+        "L": 16,
+        "N": 33554432,
+        "beta": 4194304,
+        "log_coset_bound": -2587256.882971988,
+        "log_source_bound": -2097151.3068528194,
+        "sigma": 6799549.53337267
+      },
+      {
+        "L": 32,
+        "N": 536870912,
+        "beta": 67108864,
+        "log_coset_bound": -41396120.524759516,
+        "log_source_bound": -33554431.30685282,
+        "sigma": 108792792.53396273
+      }
+    ]
+  },
+  "exact_lattice_source_and_coset_mixture": [
+    {
+      "N": 3,
+      "beta": 0.11398633159763,
+      "exact_characteristic": 0.6505090964297011,
+      "full_characteristic": 0.375591604300255,
+      "gaussian": 0.6505090947233202,
+      "nonexact_probability": 0.5113993713025653,
+      "sigma": 2.0
+    },
+    {
+      "N": 8,
+      "beta": 1.6211389382774044,
+      "exact_characteristic": 0.6506609397414808,
+      "full_characteristic": 0.6506016991515482,
+      "gaussian": 0.6505090947233202,
+      "nonexact_probability": 4.661522065611102e-05,
+      "sigma": 1.0
+    },
+    {
+      "N": 128,
+      "beta": 34.58429734991796,
+      "exact_characteristic": 0.6505090947233184,
+      "full_characteristic": 0.6505090947233184,
+      "gaussian": 0.6505090947233202,
+      "nonexact_probability": 2.984749522952105e-99,
+      "sigma": 12.0
+    }
+  ],
+  "gaussian_os_modes": [
+    {
+      "gram_eigenvalues": [
+        -1.853856745794638e-16,
+        3.6669816826032934e-17,
+        1.615903562062627e-16,
+        5.924839338060285e-16,
+        2.0,
+        2.0
+      ],
+      "reflected_kernel_error": 6.938893903907228e-16,
+      "spatial_momentum": [
+        0.7,
+        -0.4,
+        1.2
+      ]
+    },
+    {
+      "gram_eigenvalues": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "reflected_kernel_error": 2.3869795029440866e-15,
+      "spatial_momentum": [
+        0.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "gram_eigenvalues": [
+        -1.9697193314320582e-16,
+        -6.953875073410146e-17,
+        8.304709913907158e-17,
+        4.284501809586403e-16,
+        2.0,
+        2.000000000000001
+      ],
+      "reflected_kernel_error": 8.56259507742152e-15,
+      "spatial_momentum": [
+        1.0,
+        2.0,
+        -3.0
+      ]
+    }
+  ],
+  "integral_cochain_and_short_vectors": {
+    "contraction": [
+      {
+        "degree": 0,
+        "integer_components": 1
+      },
+      {
+        "degree": 1,
+        "integer_components": 4
+      },
+      {
+        "degree": 2,
+        "integer_components": 6
+      },
+      {
+        "degree": 3,
+        "integer_components": 4
+      },
+      {
+        "degree": 4,
+        "integer_components": 1
+      }
+    ],
+    "harmonic_period_norm_squared": 20.0,
+    "spike_vectors": [
+      {
+        "dual_length": 0.7057243619147634,
+        "orientation": [
+          0,
+          1
+        ],
+        "quotient_length": 0.7084865030471647
+      },
+      {
+        "dual_length": 0.7057243619147634,
+        "orientation": [
+          0,
+          2
+        ],
+        "quotient_length": 0.7084865030471647
+      },
+      {
+        "dual_length": 0.7057243619147635,
+        "orientation": [
+          0,
+          3
+        ],
+        "quotient_length": 0.7084865030471647
+      },
+      {
+        "dual_length": 0.7057243619147635,
+        "orientation": [
+          1,
+          2
+        ],
+        "quotient_length": 0.7084865030471647
+      },
+      {
+        "dual_length": 0.7057243619147634,
+        "orientation": [
+          1,
+          3
+        ],
+        "quotient_length": 0.7084865030471647
+      },
+      {
+        "dual_length": 0.7057243619147635,
+        "orientation": [
+          2,
+          3
+        ],
+        "quotient_length": 0.7084865030471647
+      }
+    ]
+  },
+  "midpoint_cell_average": {
+    "cell_average_norm": 0.7582777140326764,
+    "centered_symbol_errors": [
+      0.009827792725308213,
+      0.0024484721223674267,
+      0.000611589361130661,
+      0.0001528643154767083
+    ],
+    "harmonic_unit_source_norm": 1,
+    "one_plaquette_harmonic_norm_squared": 0.0007716049382716049,
+    "projected_pairing": 0.5134793969040177
+  },
+  "periodic_green_and_disjoint_loops": {
+    "disjoint_rectangle_sequence": [
+      {
+        "L": 8,
+        "continuum_cross": 0.041814695524215885,
+        "error": 0.018443872691772743,
+        "loop_cross": 0.06025856821598863,
+        "mesh_inverse": 2,
+        "periodic_correction_scaled": -0.12862230572792877,
+        "scaled_green": 0.02494314185926927
+      },
+      {
+        "L": 18,
+        "continuum_cross": 0.041814695524215885,
+        "error": 0.009348026620992982,
+        "loop_cross": 0.051162722145208867,
+        "mesh_inverse": 3,
+        "periodic_correction_scaled": -0.13625815138473155,
+        "scaled_green": 0.02579538953677906
+      },
+      {
+        "L": 32,
+        "continuum_cross": 0.041814695524215885,
+        "error": 0.004922462685030479,
+        "loop_cross": 0.046737158209246364,
+        "mesh_inverse": 4,
+        "periodic_correction_scaled": -0.13827718076068374,
+        "scaled_green": 0.02537951443079835
+      }
+    ],
+    "fine_infinite_loop_meshes": [
+      {
+        "error": 0.0010535860131056923,
+        "infinite_volume_cross": 0.04286828153732158,
+        "mesh_inverse": 8
+      },
+      {
+        "error": 0.00025405119241343754,
+        "infinite_volume_cross": 0.04206874671662932,
+        "mesh_inverse": 16
+      },
+      {
+        "error": 6.301069941942045e-05,
+        "infinite_volume_cross": 0.041877706223635305,
+        "mesh_inverse": 32
+      }
+    ],
+    "infinite_asymptotics": [
+      {
+        "distance": 2,
+        "error": 0.007651740056680373,
+        "scaled_green": 0.03298203596726482
+      },
+      {
+        "distance": 4,
+        "error": 0.0022097994695995903,
+        "scaled_green": 0.027540095380184034
+      },
+      {
+        "distance": 8,
+        "error": 0.00042544570443239435,
+        "scaled_green": 0.025755741615016838
+      },
+      {
+        "distance": 16,
+        "error": 0.00010054985563683755,
+        "scaled_green": 0.02543084576622128
+      },
+      {
+        "distance": 32,
+        "error": 2.483409540591716e-05,
+        "scaled_green": 0.02535513000599036
+      }
+    ]
+  },
+  "positive_lift_and_physical_score": [
+    {
+      "N": 2,
+      "beta": 0.18,
+      "beta_d": 0.5628954646796543,
+      "constant_lift_fiber": 2,
+      "covariance_duality_error": 3.1086244689504383e-15,
+      "lattice_points": 4631,
+      "score_variance": 1.565659538558174e-33,
+      "source_noise": 1.4434661239107611
+    },
+    {
+      "N": 4,
+      "beta": 0.65,
+      "beta_d": 0.6235149762605402,
+      "constant_lift_fiber": 4,
+      "covariance_duality_error": 6.661338147750939e-16,
+      "lattice_points": 2315,
+      "score_variance": 1.224068141274533,
+      "source_noise": 0.20703034955668476
+    },
+    {
+      "N": 6,
+      "beta": 1.4,
+      "beta_d": 0.6513504662721714,
+      "constant_lift_fiber": 6,
+      "covariance_duality_error": 6.661338147750939e-16,
+      "lattice_points": 2027,
+      "score_variance": 1.4310026929847108,
+      "source_noise": 0.0016345582189112964
+    }
+  ],
+  "uniform_shifted_theta_sources": [
+    {
+      "characteristic_imag": 0.1214679887161233,
+      "characteristic_real": 0.42475673491831106,
+      "sigma": 0.15
+    },
+    {
+      "characteristic_imag": 0.015666561464803636,
+      "characteristic_real": 0.6256362210019604,
+      "sigma": 0.4
+    },
+    {
+      "characteristic_imag": 4.424833914540294e-05,
+      "characteristic_real": 0.6504619155259875,
+      "sigma": 1.0
+    },
+    {
+      "characteristic_imag": -1.9623101504898456e-17,
+      "characteristic_real": 0.6505090947233163,
+      "sigma": 12.0
+    }
+  ]
+}
+per_element: scalar theta tails, integer character lifts, score identities and Coulomb time integrals are checked in their specified finite domains.
+per_site: the side-four integral cochain contraction and Fourier Hodge identities check topology and the shortest-vector mechanisms on actual torus cells.
+per_mode: Fourier Green inverses, cell averages, electric-magnetic contact signs and the rank-two Gaussian reflected kernel are checked personally.
+per_block: finite composite-clock toys, side-four topology, and disjoint-loop Green sums through side thirty-two are checked; no phase simulation is performed.
+lattice_wide: checked and not executed — the volume-dependent theta bound, random-distribution convergence and relative Wilson continuum limits rest on the written derivation.
+TOTAL: PASS=10 FAIL=0
+scope: finite mathematical challenges only; arbitrary-volume proofs and physical identification require independent review, and formal audit remains pending.
+
+----- stderr -----
+

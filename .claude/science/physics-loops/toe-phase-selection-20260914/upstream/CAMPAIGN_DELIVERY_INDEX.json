@@ -1,0 +1,84 @@
+{
+  "as_of_utc": "2026-09-14T13:00:22.637464+00:00",
+  "state": "All thirteen PRs independently refreshed OPEN with their original heads at 12:56 UTC; independent review pending.",
+  "deliveries": [
+    {
+      "block": 1,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8106",
+      "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+      "scope": "Positive finite-clock gauge histories and paired matter; interacting infrared phase open."
+    },
+    {
+      "block": 2,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8108",
+      "head": "de223212ed85f6f71f4a8e932eff4d37289dd580",
+      "scope": "Massive-loop curvature and noncompact covariance bounds; compact current response still missing."
+    },
+    {
+      "block": 3,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8109",
+      "head": "cceb1220b1d89bedc8d24628844afb4b55c61d10",
+      "scope": "Signed determinant-current counterexamples and exact finite-clock time scaling."
+    },
+    {
+      "block": 4,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8111",
+      "head": "714c94d0a93977b3ecd7e4b88812c15771541b17",
+      "scope": "Lattice-matched one-loop relative-cone flow; no selected common speed or full interacting phase."
+    },
+    {
+      "block": 5,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8112",
+      "head": "b5e42b4f9a3a5106b015f7a22aeaa3e94281c48e",
+      "scope": "Finite-clock tensor constraints with two cubic modes; linear gravity not obtained."
+    },
+    {
+      "block": 6,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8113",
+      "head": "e5cd8016d0b5afc46cad42322f49c05846e5c8d1",
+      "scope": "Spin10 atomic gaps and mirror-boundary checks; a chiral phase remains unproved."
+    },
+    {
+      "block": 7,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8115",
+      "head": "36607532327386ca6e1ced470d5aa93a026989d5",
+      "scope": "Local reference-fermion encoding restrictions and graph-isometry construction; native compiler open."
+    },
+    {
+      "block": 8,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8116",
+      "head": "25d3e2aa02ceeeedcce14ec2a57dbff42d3b1d6c",
+      "scope": "Conditional soft spin-two consistency and common-cone implications; gravitational hypotheses supplied."
+    },
+    {
+      "block": 9,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8117",
+      "head": "d8d5e3b26b77e5e950f5aa4b29c534f2337277fb",
+      "scope": "Ice configuration connectivity, frozen sectors and winding response; collective phase estimate open."
+    },
+    {
+      "block": 10,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8118",
+      "head": "9b46a856eea515a2e6127a1de0c38f9eb3472e4e",
+      "scope": "Fixed-clock phase diagnostics; local wrapping curvature can coexist with a proved gapped regime."
+    },
+    {
+      "block": 11,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8119",
+      "head": "51818db1f29e143921340a94dd035609c3f2c6aa",
+      "scope": "Native formation clock with quantified approximate persistence; exact event-law selection open."
+    },
+    {
+      "block": 12,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8120",
+      "head": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
+      "scope": "Local-clock spectral filter and loop-perimeter criterion; same-state infrared estimates open."
+    },
+    {
+      "block": 13,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8121",
+      "head": "6f9f79c030fe880cc1aea7c9aaf5fb4f9cc5e14f",
+      "scope": "Optimized loop dressings, quantum fidelity and defect-path gaps; bulk photon phase open."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "source_revision": "652ea36706f7df14f153f2d40ee900662fe73706",
+    "source_path": ".claude/science/physics-loops/toe-charged-phase-20260914/CAMPAIGN_OUTCOME_AND_NEXT_TARGETS.md",
+    "local_copy": "upstream/CAMPAIGN_OUTCOME_AND_NEXT_TARGETS.md",
+    "sha256": "a27080c826714213747d38a1b1fffd6277562c966469c330ad39f416222ace85",
+    "status": "Author-proposed; independent review pending."
+  },
+  {
+    "source_revision": "652ea36706f7df14f153f2d40ee900662fe73706",
+    "source_path": ".claude/science/physics-loops/toe-charged-phase-20260914/CAMPAIGN_DELIVERY_INDEX.json",
+    "local_copy": "upstream/CAMPAIGN_DELIVERY_INDEX.json",
+    "sha256": "70896faf94fa1f54b0b74ca9f5f14475ebb35f33cec234c0deaac8ecf5cae190",
+    "status": "Author-proposed; independent review pending."
+  },
+  {
+    "source_revision": "652ea36706f7df14f153f2d40ee900662fe73706",
+    "source_path": ".claude/science/physics-loops/toe-charged-phase-20260914/BLOCK14_DERIVATION.md",
+    "local_copy": "upstream/BLOCK14_DERIVATION.md",
+    "sha256": "7cd666e498fcaf7a66cc73b2b78ce2c77de06e924e7fe1a8e687d168d5314ebb",
+    "status": "Author-proposed; independent review pending."
+  },
+  {
+    "source_revision": "652ea36706f7df14f153f2d40ee900662fe73706",
+    "source_path": ".claude/science/physics-loops/toe-charged-phase-20260914/BLOCK14_MONOPOLE_KINETIC_DERIVATION.md",
+    "local_copy": "upstream/BLOCK14_MONOPOLE_KINETIC_DERIVATION.md",
+    "sha256": "7ff96506691da6d5d30b5f68cf5a6d64363eb62bd3239c8bce249313eb3888c6",
+    "status": "Author-proposed; independent review pending."
+  },
+  {
+    "source_revision": "652ea36706f7df14f153f2d40ee900662fe73706",
+    "source_path": ".claude/science/physics-loops/toe-charged-phase-20260914/BLOCK14_HARD_LIMIT_MAPPING.md",
+    "local_copy": "upstream/BLOCK14_HARD_LIMIT_MAPPING.md",
+    "sha256": "59c1f58707f12b2cdfb4bff09ee8d1a01e17622f75e5dabdcb9c85b33b6a10b1",
+    "status": "Author-proposed; independent review pending."
+  },
+  {
+    "source_revision": "652ea36706f7df14f153f2d40ee900662fe73706",
+    "source_path": ".claude/science/physics-loops/toe-charged-phase-20260914/BLOCK14_FINAL_REVIEW.md",
+    "local_copy": "upstream/BLOCK14_FINAL_REVIEW.md",
+    "sha256": "d31c433e8e651a1e34afe4cb89eaa8d8bb154439054f93ec2000dd3dac4ca2a6",
+    "status": "Author-proposed; independent review pending."
+  }
+]

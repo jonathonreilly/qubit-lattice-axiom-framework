@@ -39,3 +39,13 @@ charged low-energy modes, with an exact onsite gap, complete boundary spectrum
 and current response. General endpoint doubling is known; a useful new pair
 must make the actual Spin(10) construction and its quantitative limits concrete.
 Native formation and nonlinear geometry remain next alternatives.
+
+## Rerank after block 6
+
+PR8113 delivers the explicit mirror atom/boundary/current limits. Current-main
+Cycle703 has exact local logical loaders and exact path-dressed hopping, but
+its bounded operand grammar is not a same-encoding multi-cell compiler. The
+next target is an analytic commutator/support discriminator for this precise
+composition. It must cover arbitrary code-equivalent operators, rather than
+repeat finite stabilizer minimization, and preserve ordinary fixed-parity BKSF
+as a live constructive escape. This is not a general bosonization no-go.

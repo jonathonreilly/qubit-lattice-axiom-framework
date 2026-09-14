@@ -12,14 +12,14 @@ execution: supervisor_only_no_subagents
 research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 6
-active_route: chiral_matter_explicit_mirror_gap_and_boundary_response
+block: 7
+active_route: local_reference_encoding_fermion_statistics_and_support_obstruction
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Derive onsite symmetric gap and exact boundary projection, read construction
-  hypotheses, then test whether mirror removal or relocation actually follows.
-last_checkpoint_utc: '2026-09-14T06:06:52.368082+00:00'
+next_action: Derive exact same-encoding locality and exchange tests; compare known
+  fixed-parity BKSF escape without importing a native compiler.
+last_checkpoint_utc: '2026-09-14T06:51:38.277612+00:00'

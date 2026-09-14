@@ -1,0 +1,24 @@
+{
+  "time_utc": "2026-09-14T12:58:32.484578+00:00",
+  "runner_sha256": "b9dec80369868f28ef4a6d5fd443bb844d4a8701efe92185ba704be55d9dadef",
+  "note_sha256": "7ff96506691da6d5d30b5f68cf5a6d64363eb62bd3239c8bce249313eb3888c6",
+  "primary_exit": 0,
+  "mutations": [
+    {
+      "mutation": "missing_temporal_penalty",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "mutation": "wrong_branch_lift",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "mutation": "lost_spatial_step",
+      "exit_code": 1,
+      "detected": true
+    }
+  ],
+  "status": "Private author working result, independent review pending; finite-volume generator, not phase proof."
+}

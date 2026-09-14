@@ -1,0 +1,89 @@
+{
+  "time_utc": "2026-09-14T12:41:06.951234+00:00",
+  "source_sha256": "6a01cc0c60966349cc8d280f6a2a797e01a86d3f8b9634d897c42551fc78b8cc",
+  "note_sha256": "7cd666e498fcaf7a66cc73b2b78ce2c77de06e924e7fe1a8e687d168d5314ebb",
+  "primary_exit": 0,
+  "families": 10,
+  "mutation_results": [
+    {
+      "name": "classical_charge_orientation",
+      "source_sha256": "96d31d4a7f160d6ede7a11a12c26df33ede9317c22a71cc1b735953ab168b658",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "wrong_classical_shift",
+      "source_sha256": "977d068d683b4859e9397ca56b7311558ba3e49ed31d22c8629bc4dc8f5f1451",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "matched_first_instead_second_moment",
+      "source_sha256": "5b5fb4f26b814b4ea1b42d7fe7549b7483196eeb6d20dca5abcfc1c7c9ae3713",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "cycle_fourier_current_missing_edge",
+      "source_sha256": "6aa258c0d939eabd335d130a767c158b376fb5b223808fd1e5ddd20f55a65283",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "shared_edge_orientation",
+      "source_sha256": "4cbf708b74c2ea1f485a3f3e705e37e41065e1a6596d5c148c7bcc4e5944f355",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "quantum_missing_adjoint",
+      "source_sha256": "95192ad2a7de027863cba90b109b115d680760e5ed06b878fe212dc5c4b86fbc",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "quantum_inverse_wrong_power",
+      "source_sha256": "61dc304f46e0ca8bbfa640931508c951318f016c8979605f7701093414fd8c9d",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "compression_wrong_character",
+      "source_sha256": "44f93764bf2783838b3d6dfb5fc796d1d008a5f200e44459ccbfd3e7e5aac6dc",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "positive_purification_wrong_flag",
+      "source_sha256": "dbe54489604587227025e671beb575668e9971f5a4f3ba43dbd7143ae3092075",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "missing_charge_sector",
+      "source_sha256": "8e0e5e4c4b1ded2464d04c0fc44087da375c74ffd0adccb44639f9e71efaa177",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "lost_cnot_target",
+      "source_sha256": "c29716f439e1cdf5609255b15467c108fdfe2a4bf312fd2b483053f8bdded0c2",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "coarse_mixed_fidelity_substitution",
+      "source_sha256": "5b7a45aeb2658a1ba3d0608a7e2e3d535b006182a6403d476af925d1ea9912e8",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "name": "positive_boundary_normalization",
+      "source_sha256": "91ef153a38f9099fe46c520e667d21407d1f8848c88d8da2b4d28aa728e2def3",
+      "exit_code": 1,
+      "detected": true
+    }
+  ],
+  "status": "private author working continuation; independent scientific review pending; not a retained or phase claim",
+  "checks_not_run": "No global pipeline, audit, large-region state computation or independent reviewer."
+}

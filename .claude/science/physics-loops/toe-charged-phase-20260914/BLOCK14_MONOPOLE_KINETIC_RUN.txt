@@ -1,0 +1,6 @@
+mu_t 0.0 one_step_errors [np.float64(0.0026282157327638263), np.float64(0.0006715669171315875), np.float64(0.0001696988492641491), np.float64(4.265005824848456e-05)] ratios [3.9135574813445597, 3.957404072235297, 3.9788655920576343]
+mu_t 0.4 one_step_errors [np.float64(0.0015412495047625757), np.float64(0.0004028435446795014), np.float64(0.00010315330831699499), np.float64(2.611142772686624e-05)] ratios [3.8259257846337826, 3.9052896242701607, 3.950504330747866]
+mu_t 1.0 one_step_errors [np.float64(0.0012437012009250425), np.float64(0.0003353844062386473), np.float64(8.719902992002437e-05), np.float64(2.2239037162953645e-05)] ratios [3.7082857097418835, 3.8461942357185523, 3.920989442172557]
+mu_t 3.0 one_step_errors [np.float64(0.0011320557369139542), np.float64(0.0003110508935459201), np.float64(8.166063804409049e-05), np.float64(2.093077047332327e-05)] ratios [3.6394550229666196, 3.8090676364538867, 3.9014635485190947]
+Direct rates, reversed moves, complete 2187-difference kernel, quadratic one-step errors, finite-time comparison, and undeformed limit checked. No phase result.
+Three-dimensional 5^3 carrier: both incidence identities, Gauss invariance, integer cube charge, reversible bounded rates, and remote membrane support checked.

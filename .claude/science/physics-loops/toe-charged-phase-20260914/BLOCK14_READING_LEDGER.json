@@ -1,0 +1,64 @@
+{
+  "time_utc": "2026-09-14T12:46:24.949352+00:00",
+  "reader": "personal supervisor only; no subagents",
+  "sources": [
+    {
+      "file": "frohlich-marchetti-9812004.pdf",
+      "url": "https://arxiv.org/abs/hep-th/9812004",
+      "sha256": "b8e5a59e1f912187d0461bc63fe577738aaf39fd14deb29cba7a02b59a6ed135",
+      "scope_read": "52-page v1; pp1-6 plus start7, pp21-28 through start29, AppendixA pp43-45; not the entire paper.",
+      "assessment": "Compact fluctuating-string construction has complex Fourier weights; its normalization and long-distance Gaussian treatment remain qualified in the inspected text. No rigorous fixed-clock Hamiltonian estimate imported."
+    },
+    {
+      "file": "cong-led-2209.12428v2.pdf",
+      "url": "https://arxiv.org/abs/2209.12428v2",
+      "sha256": "20e60a32165e4f91bac67e4249b4fe01205f1e826ca8533ace938ee5c6ab7ea2",
+      "scope_read": "31-page v2; pp1-3, selected methods pp9-10, witness statements pp13-14, Theorem1 proof pp21-22. Not full paper or proof of Theorem2.",
+      "assessment": "Decorated Wilson-loop prior work and its locality/ancilla qualifications. No transfer of a toric-code phase theorem to the three-dimensional clock photon state."
+    },
+    {
+      "file": "barnum-knill-0004088v2.pdf",
+      "url": "https://arxiv.org/abs/quant-ph/0004088v2",
+      "sha256": "99ef00741dfeff7b21f88016555a72c10990bf1e616a8035178dd884a5ab7214",
+      "scope_read": "15-page v2 dated18 January2026; pp1-3 and start4, sectionV pp10-11 and startVI.",
+      "assessment": "Equation37 supplies standard square-root normalization. The charged-character square bound is independently derived by Schatten Holder in this working note; the full recovery theorem is not imported."
+    },
+    {
+      "file": "muller-lennert-renyi-1306.3142v4.pdf",
+      "url": "https://arxiv.org/abs/1306.3142v4",
+      "sha256": "71d3b35755a66328f20103a53bea10d11439c17a59c9631b312da37718741dcd",
+      "scope_read": "26-page v4; pp5-10 selected definitions/Theorems5,7/collision specialization; sectionIVE Lemma19 and Theorem7 proof pp22-23. The full26 pages and full order-one-limit proof are not claimed reviewed.",
+      "assessment": "Finite-dimensional Renyi order monotonicity and stated order-one limit used for D<=log(1+R). Hypothesis tau support contains rho checked because tau>=rho/N."
+    },
+    {
+      "file": "entropic-order-2008.11748.pdf",
+      "url": "https://arxiv.org/abs/2008.11748",
+      "sha256": "75fe66d77c6c5c6068b42ade19c4dd76c1ce372d13b77bb6dac95e486a57ff5a",
+      "scope_read": "Additional block14 reading: sections3.1-3.2 selected pp27-32, group-average conditional expectations, relative-entropy difference and certainty hypotheses. Earlier scopes remain in block12 ledger.",
+      "assessment": "Credits existing entropy-based order diagnostics. Full complementary-algebra certainty relation NOT imported without identifying the actual algebra inclusion/index."
+    },
+    {
+      "file": "giansiracusa-photons-2505.00079v2.pdf",
+      "url": "https://arxiv.org/abs/2505.00079v2",
+      "sha256": "a21db42bc705c76cbf3adcaecad1b1ab28b56959b36a5eae9133f61b1f0a0515",
+      "scope_read": "All11 pages of extracted text including supplementary material; figures not independently digitized, Monte Carlo not reanalyzed. Published abstract also read at https://journals.aps.org/prl/abstract/10.1103/h8mn-t4fk.",
+      "assessment": "N7 standard Wilson; N4 second plaquette harmonic; N3 monopole suppression. Numerical evidence on Euclidean tori, not a theorem for the chosen continuous-time local H."
+    },
+    {
+      "file": "garban-sepulveda-spinwave-2107.04021.pdf",
+      "url": "https://arxiv.org/abs/2107.04021v2",
+      "sha256": "c75ac85c38212ca40bb51bcfd7fe5be06253ff023125efc4d787a8b867d51f67",
+      "scope_read": "36-page v2; pp1-6 and start7, Proposition5.2/Claim5.3 full proof and Remark5.4 pp20-22. Not full paper.",
+      "assessment": "Exact continuous U1 Villain spin-wave decoupling uses continuous shift-invariant Lebesgue measure. Authors explicitly distinguish finite-group case; no unchanged finite-clock import."
+    },
+    {
+      "url": "https://arxiv.org/html/2401.04800v2",
+      "scope_read": "Main text sectionsI-IV; appendix HTML corrupted and not used.",
+      "assessment": "Explicit Poincare premise; constrained Villain and proposed Wilson alternatives. No infrared theorem for the derived anisotropic H imported."
+    }
+  ],
+  "retrieval_limits": [
+    "Published Frohlich-Spencer1982 version remains unobtained: ProjectEuclid security-check response; Springer subscription preview; ADS unavailable. Existing IHES/P/81/40 preprint remains the fully scoped source. No conclusion that a preprint typographical issue survives into publication.",
+    "Initial local PDF extraction import pymupdf was unavailable; pypdf extraction succeeded."
+  ]
+}

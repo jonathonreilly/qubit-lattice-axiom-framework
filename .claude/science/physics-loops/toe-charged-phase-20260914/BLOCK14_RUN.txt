@@ -1,0 +1,23 @@
+posterior_identities: exact charge, norm, optimum, matched second moment, robustness and orbit normalization checked
+cycle_partition: direct site-spin sums equal Fourier currents and exact extra perimeter attenuation
+two_plaquette_auxiliary: direct six-site spin sums, gauge transformations, and closed-current partition formula agree
+two_plaquette_ground: actual finite physical clock flux Hamiltonian; (N,K,bare,diagonal_optimum,matched,auxiliary)
+(2, 0.25, 0.031239827480955384, 0.031239827480955405, 0.0009759532087516931, 0.01322580233738982)
+(2, 1.0, 0.12434907041048426, 0.12434907041048418, 0.015469064397875078, 0.05443919154158411)
+(2, 4.0, 0.4596430471588737, 0.4596430471588737, 0.21196820842160718, 0.22370270154113409)
+(3, 0.25, 0.02115630678197855, 0.021156326987327858, 0.0004475959795569802, 0.0031484575027370815)
+(3, 1.0, 0.08834216549639057, 0.08834337938976194, 0.007806391919088312, 0.013463079307261483)
+(3, 4.0, 0.39272664262775947, 0.39277011136245255, 0.1547884878356726, 0.06600092690161521)
+(5, 0.25, 0.045162984859690655, 0.04516392743314507, 0.0020398156325771477, 0.0032041617778107373)
+(5, 1.0, 0.17703920294023684, 0.1770941948507362, 0.03136972372584176, 0.012898423581767234)
+(5, 4.0, 0.5548575288422594, 0.555973792852022, 0.3093130933795585, 0.043167985349409264)
+(7, 0.25, 0.08257495571320729, 0.08258262546693018, 0.006820111911970695, 0.0057399331371927815)
+(7, 1.0, 0.3073732050762418, 0.3077393795722403, 0.09473139412060627, 0.02228679307433347)
+(7, 4.0, 0.6949089150751884, 0.6972395861411698, 0.48619153236083884, 0.053455427786725886)
+fidelity_wrong_direction: identical coordinate probabilities can have orthogonal quantum states; no classical lower bound on quantum fidelity
+quantum_orbit_identities: full-rank and singular inputs, charged contraction, positive-operator compression and alpha squared bounds checked
+positive_purification_control: identical diagonals, exact quantum fidelity 1/r, zero diagonal charged order and full optimum 1-1/r
+all_charge_collision: Fourier orthogonality, entropy-to-collision bound and a charge1-blind Z4 control checked
+blocking_gate: exact CNOT membrane pullback, static lower bounds, positive boundary contraction and mixed-state fidelity counterexample checked
+approximate_blocking_gate: noncovariant erasure noise, exact charge reprojection and quantitative multiplicativity penalties checked
+Ten finite families passed. No large-region interacting phase, native Born law, or independent review is established.

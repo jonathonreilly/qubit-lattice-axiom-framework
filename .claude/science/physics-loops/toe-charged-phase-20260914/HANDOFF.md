@@ -1,3 +1,21 @@
+# Current handoff — personal campaign final block
+
+As of 2026-09-14T13:00:22.637464+00:00, block14 is the active private continuation. Read
+CAMPAIGN_OUTCOME_AND_NEXT_TARGETS.md and CAMPAIGN_DELIVERY_INDEX.json first.
+Thirteen public milestone PRs remain open and independently unreviewed.
+The most useful next obligation is a same-Hamiltonian large-region phase
+estimate, with PR8120/8121 and block14's mathematical gates awaiting review.
+The latest private result is an explicit local N=3 flux-dependent kinetic
+Hamiltonian and finite-volume transfer limit; its photon phase is unproved.
+All checks remain author checks. No axiom update has been forced.
+
+Deadline remains 2026-09-14 13:09:34 UTC. Continue personally until then,
+preserve and verify every tracked/untracked science file, then remove this
+checkout, release the campaign lock and pause the existing heartbeat.
+Use STATE.yaml and the external completion receipt for the final operational
+status. Historical checkpoints below intentionally retain their old dates
+and next actions; they are superseded by this current handoff.
+
 # Personal charged-phase campaign
 
 Run personally without subagents from 2026-09-14 01:09:34 UTC through

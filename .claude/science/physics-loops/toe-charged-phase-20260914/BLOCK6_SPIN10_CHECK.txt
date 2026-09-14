@@ -1,0 +1,6 @@
+tensor Casimir (array([ 9., 21., 25.]), array([ 10, 120, 126]))
+symmetric (array([ 9., 25.]), array([ 10, 126]))
+antisymmetric (array([21.]), array([120]))
+quartic nonzero coefficients 240 first [((0, 1, 14, 15), np.complex128(-4+0j)), ((0, 2, 13, 15), np.complex128(4+0j)), ((0, 3, 13, 14), np.complex128(-4+0j)), ((0, 4, 11, 15), np.complex128(-4+0j)), ((0, 5, 11, 14), np.complex128(4+0j)), ((0, 6, 11, 13), np.complex128(-4+0j)), ((0, 7, 8, 15), np.complex128(2+0j)), ((0, 7, 9, 14), np.complex128(-2+0j))]
+exact intertwiner identities 0.0 exact Casimir multiplicities {9: 10, 21: 120, 25: 126} quartic norm bound 2560.0
+exact exterior fourth-power Spin(10) invariance verified for all 45 generators

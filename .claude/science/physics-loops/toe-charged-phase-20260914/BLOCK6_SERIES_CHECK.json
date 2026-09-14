@@ -1,0 +1,125 @@
+[
+  {
+    "n": 0,
+    "sector_dimension": 66,
+    "t": 0.04,
+    "exact_low": [
+      -0.004880271384808999,
+      -0.004877165940941804
+    ],
+    "fourth_order": -0.0048768,
+    "remainder_over_t6": 847.5060568846316
+  },
+  {
+    "n": 0,
+    "sector_dimension": 66,
+    "t": 0.025,
+    "exact_low": [
+      -0.001886920455211628,
+      -0.0018867411106633523
+    ],
+    "fourth_order": -0.0018867187500000004,
+    "remainder_over_t6": 826.1845468267023
+  },
+  {
+    "n": 0,
+    "sector_dimension": 66,
+    "t": 0.015,
+    "exact_low": [
+      -0.0006765280641600132,
+      -0.000676519803574693
+    ],
+    "fourth_order": -0.0006765187499999999,
+    "remainder_over_t6": 817.7040340850391
+  },
+  {
+    "n": 1,
+    "sector_dimension": 34,
+    "t": 0.04,
+    "exact_low": [
+      -0.0048392288627061575
+    ],
+    "fourth_order": -0.0048384,
+    "remainder_over_t6": 202.35905912056643
+  },
+  {
+    "n": 1,
+    "sector_dimension": 34,
+    "t": 0.025,
+    "exact_low": [
+      -0.0018809081251850825
+    ],
+    "fourth_order": -0.0018808593750000004,
+    "remainder_over_t6": 199.68075809639876
+  },
+  {
+    "n": 1,
+    "sector_dimension": 34,
+    "t": 0.015,
+    "exact_low": [
+      -0.0006757616371992903
+    ],
+    "fourth_order": -0.000675759375,
+    "remainder_over_t6": 198.60185813384984
+  },
+  {
+    "n": 2,
+    "sector_dimension": 20,
+    "t": 0.04,
+    "exact_low": [
+      -0.0048155466396016125
+    ],
+    "fourth_order": -0.004815359999999999,
+    "remainder_over_t6": 45.566308987573706
+  },
+  {
+    "n": 2,
+    "sector_dimension": 20,
+    "t": 0.025,
+    "exact_low": [
+      -0.001877354790342789
+    ],
+    "fourth_order": -0.0018773437500000003,
+    "remainder_over_t6": 45.22124406225457
+  },
+  {
+    "n": 2,
+    "sector_dimension": 20,
+    "t": 0.015,
+    "exact_low": [
+      -0.0006753042634854989
+    ],
+    "fourth_order": -0.00067530375,
+    "remainder_over_t6": 45.07965971248309
+  },
+  {
+    "n": 3,
+    "sector_dimension": 16,
+    "t": 0.04,
+    "exact_low": [
+      -0.004807654504849657
+    ],
+    "fourth_order": -0.00480768,
+    "remainder_over_t6": 6.224401939287476
+  },
+  {
+    "n": 3,
+    "sector_dimension": 16,
+    "t": 0.025,
+    "exact_low": [
+      -0.001876170388685594
+    ],
+    "fourth_order": -0.0018761718750000005,
+    "remainder_over_t6": 6.087943808630311
+  },
+  {
+    "n": 3,
+    "sector_dimension": 16,
+    "t": 0.015,
+    "exact_low": [
+      -0.0006751518062950712
+    ],
+    "fourth_order": -0.0006751518749999999,
+    "remainder_over_t6": 6.031708416529982
+  }
+]

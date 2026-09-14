@@ -30,3 +30,12 @@ The one-loop metric calculation is delivered in PR8111. Native dynamical
 geometry is now first: derive an actual local tensor mode/constraint mechanism
 and distinguish linear gravity propagation from higher-derivative tensor
 phases. Do not extend the preceding block with easy flow corollaries.
+
+## Rerank after block 5
+
+The explicit compact tensor milestone is delivered in PR8112. Chiral matter
+is now first: determine whether a specified mirror interaction removes actual
+charged low-energy modes, with an exact onsite gap, complete boundary spectrum
+and current response. General endpoint doubling is known; a useful new pair
+must make the actual Spin(10) construction and its quantitative limits concrete.
+Native formation and nonlinear geometry remain next alternatives.

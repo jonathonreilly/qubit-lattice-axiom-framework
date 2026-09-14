@@ -1,0 +1,334 @@
+[
+  {
+    "kind": "projected",
+    "L": 3,
+    "D": 1.0,
+    "omega": 0.001,
+    "sum_normalized_optical_slope": 8.000000599998693,
+    "predicted": 8.0,
+    "relative_error": 7.499983656344966e-08,
+    "corners": [
+      {
+        "pi_components": [
+          0,
+          0,
+          0
+        ],
+        "normalized_slope": 1.000000075000015,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          0,
+          0,
+          1
+        ],
+        "normalized_slope": 1.000000075000174,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          0,
+          1,
+          0
+        ],
+        "normalized_slope": 1.0000000749999909,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          0,
+          1,
+          1
+        ],
+        "normalized_slope": 1.0000000749996742,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          1,
+          0,
+          0
+        ],
+        "normalized_slope": 1.0000000750003106,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          1,
+          0,
+          1
+        ],
+        "normalized_slope": 1.000000074999603,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          1,
+          1,
+          0
+        ],
+        "normalized_slope": 1.0000000749992972,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          1,
+          1,
+          1
+        ],
+        "normalized_slope": 1.000000074999628,
+        "expected_inverse_speed": 1.0
+      }
+    ]
+  },
+  {
+    "kind": "projected",
+    "L": 3,
+    "D": 1.0,
+    "omega": 0.0005,
+    "sum_normalized_optical_slope": 8.000000149996138,
+    "predicted": 8.0,
+    "relative_error": 1.8749517272098615e-08,
+    "corners": [
+      {
+        "pi_components": [
+          0,
+          0,
+          0
+        ],
+        "normalized_slope": 1.0000000187500313,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          0,
+          0,
+          1
+        ],
+        "normalized_slope": 1.0000000187495135,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          0,
+          1,
+          0
+        ],
+        "normalized_slope": 1.0000000187495894,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          0,
+          1,
+          1
+        ],
+        "normalized_slope": 1.000000018750081,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          1,
+          0,
+          0
+        ],
+        "normalized_slope": 1.0000000187495541,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          1,
+          0,
+          1
+        ],
+        "normalized_slope": 1.0000000187494873,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          1,
+          1,
+          0
+        ],
+        "normalized_slope": 1.0000000187494738,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          1,
+          1,
+          1
+        ],
+        "normalized_slope": 1.0000000187484082,
+        "expected_inverse_speed": 1.0
+      }
+    ]
+  },
+  {
+    "kind": "quadratic_dilation",
+    "L": 3,
+    "D": 1.0,
+    "omega": 0.001,
+    "sum_normalized_optical_slope": 97.15401612851039,
+    "predicted": 97.15459634139305,
+    "relative_error": -5.972057982917001e-06,
+    "corners": [
+      {
+        "pi_components": [
+          0,
+          0,
+          0
+        ],
+        "normalized_slope": 1.0000000750001146,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          0,
+          0,
+          1
+        ],
+        "normalized_slope": 4.047639558911558,
+        "expected_inverse_speed": 4.0476190476190474
+      },
+      {
+        "pi_components": [
+          0,
+          1,
+          0
+        ],
+        "normalized_slope": 4.0476395588966065,
+        "expected_inverse_speed": 4.0476190476190474
+      },
+      {
+        "pi_components": [
+          0,
+          1,
+          1
+        ],
+        "normalized_slope": 16.00369748996642,
+        "expected_inverse_speed": 16.003663003663004
+      },
+      {
+        "pi_components": [
+          1,
+          0,
+          0
+        ],
+        "normalized_slope": 4.047649188344707,
+        "expected_inverse_speed": 4.0476190476190474
+      },
+      {
+        "pi_components": [
+          1,
+          0,
+          1
+        ],
+        "normalized_slope": 16.00400472568251,
+        "expected_inverse_speed": 16.003663003663004
+      },
+      {
+        "pi_components": [
+          1,
+          1,
+          0
+        ],
+        "normalized_slope": 16.00400472563953,
+        "expected_inverse_speed": 16.003663003663004
+      },
+      {
+        "pi_components": [
+          1,
+          1,
+          1
+        ],
+        "normalized_slope": 35.99938080606895,
+        "expected_inverse_speed": 36.000750187546885
+      }
+    ]
+  },
+  {
+    "kind": "quadratic_dilation",
+    "L": 3,
+    "D": 1.0,
+    "omega": 0.0005,
+    "sum_normalized_optical_slope": 97.15445122630052,
+    "predicted": 97.15459634139305,
+    "relative_error": -1.4936513349494973e-06,
+    "corners": [
+      {
+        "pi_components": [
+          0,
+          0,
+          0
+        ],
+        "normalized_slope": 1.000000018749969,
+        "expected_inverse_speed": 1.0
+      },
+      {
+        "pi_components": [
+          0,
+          0,
+          1
+        ],
+        "normalized_slope": 4.047624175406165,
+        "expected_inverse_speed": 4.0476190476190474
+      },
+      {
+        "pi_components": [
+          0,
+          1,
+          0
+        ],
+        "normalized_slope": 4.047624175412207,
+        "expected_inverse_speed": 4.0476190476190474
+      },
+      {
+        "pi_components": [
+          0,
+          1,
+          1
+        ],
+        "normalized_slope": 16.0036716248883,
+        "expected_inverse_speed": 16.003663003663004
+      },
+      {
+        "pi_components": [
+          1,
+          0,
+          0
+        ],
+        "normalized_slope": 4.047626582748704,
+        "expected_inverse_speed": 4.0476190476190474
+      },
+      {
+        "pi_components": [
+          1,
+          0,
+          1
+        ],
+        "normalized_slope": 16.003748427951017,
+        "expected_inverse_speed": 16.003663003663004
+      },
+      {
+        "pi_components": [
+          1,
+          1,
+          0
+        ],
+        "normalized_slope": 16.003748427945652,
+        "expected_inverse_speed": 16.003663003663004
+      },
+      {
+        "pi_components": [
+          1,
+          1,
+          1
+        ],
+        "normalized_slope": 36.000407793198505,
+        "expected_inverse_speed": 36.000750187546885
+      }
+    ]
+  }
+]

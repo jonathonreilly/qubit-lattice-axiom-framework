@@ -1,10 +1,57 @@
-# Finite-clock Hamiltonian limits, Fourier aliases and anisotropic phase estimates
+# Finite-clock phase diagnostics, local wraps and quantized flux
 
-Working personal derivation. Supplied clock gauge law; no phase or axiom
-conclusion. Prior block3 already derives the fixed-box Villain transfer, and
-Pasztor–Pesznyak 2609.07886v2 derives Wilson logarithmic temporal scaling.
-Do not claim either as new. The new target is the exact resummation and
-uniformity obligation when applying a pure Euclidean phase proof to this law.
+**Status:** proposed_retained
+**Date:** 2026-09-14
+**Claim type:** bounded_theorem
+
+Author-proposed conditional mathematics; actual source status conditional-support.
+Independent scientific review is pending. The finite clock gauge Hamiltonian,
+geometry, source and time normalization are supplied. No native photon phase,
+empirical identification or axiom-forcing conclusion is established.
+
+For every fixed clock order N>=2, a sufficiently weak magnetic coupling gives
+a gapped regime with strictly positive intensive curvature for a continuously
+spread plaquette source. Its leading coefficient is 8t[K/(8t)]^N. This local
+clock-wrap response can mimic a 1/L flux-energy cost while its dynamic kernel
+has no spectral weight below the gap. An exact quantized two-form twist
+removes the local contribution: on volumes coprime to N, its energy cost is
+bounded by L³(24t+6R)(K/R)^(L²)/(1-K/R), for an existential uniform analytic
+radius R and 0<K<R. Thus positive continuous-source curvature alone does not
+establish a photon phase for this supplied model.
+
+The note also matches two positive Euclidean regulators to the same finite
+Hamiltonian, bounds the alias cutoff needed to preserve its generator, and
+locates the nonuniform step in a pointwise complex-shift phase estimate.
+Those observations constrain theorem imports; they do not exclude a Coulomb
+phase at other parameters. The actual phase, source identification, native
+local compiler and physical law selection remain open.
+
+The discrete-twist diagnostic principle is prior art in clock spin models,
+and product-state gap stability is an imported mathematical theorem. The
+new scoped work is the source/homology match for this gauge Hamiltonian,
+its exact ground-energy coefficient and the quantized area-tail bound.
+
+**Runner:** [self-contained primary](../scripts/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.py).
+**Receipt:** [canonical cache](../logs/runner-cache/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.txt).
+**Review:** [author record](../.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/REVIEW_HISTORY.md).
+
+## Premises and theorem boundary
+
+| Supplied object or premise | Consequence | Limit |
+|---|---|---|
+| Fixed finite N, t,K>0, cubic oriented complex and neutral modular Gauss sector | Exact clock Hamiltonian and source identities | No law or physical constants selected by axioms |
+| Matched Wilson or Villain time discretization at fixed box | Same finite generator, with all Fourier aliases retained | Thermodynamic phase does not follow from transfer convergence |
+| Positive closed clock histories | Source harmonic group gcd(N,L²)Z and local N-fold wraps | Integer ice winding needs an additional no-wrap condition |
+| Explicitly mapped Yarotsky small bounded-perturbation hypotheses | Unique uniformly gapped analytic regime | Coupling threshold is existential and depends on fixed N,t |
+| Quantized flat source and gcd(L,N)=1 | Unitary uniform/stack equivalence and area-order response bound | General inhomogeneous all-volume theorem is not imported |
+| Uniform gap, local state convergence and cluster estimates | GNS gap and analytic low-frequency source kernel | No positive photon-phase proof elsewhere |
+
+Ordinary Poisson summation, finite analytic perturbation, cellular incidence,
+Cauchy's coefficient bound and the explicitly cited external gap/cluster
+theorem are the mathematical tools. The self-contained runner has no
+scientific file inputs. Source review used main
+b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf. Unmerged campaign claims are not
+assumed as physical premises.
 
 ## 1. Two positive Euclidean actions, one generator
 
@@ -25,7 +72,7 @@ At N=2 the one nontrivial jump is its own inverse: use x=2delta t to obtain
 the same displayed t(2-X-X†) generator. This edge case must not be silently
 counted twice in the probability normalization.
 
-For the Villain regulator, prior block3 gives the same generator with
+For the Villain regulator, the earlier transfer analysis gives the same generator with
 
  beta_tau=N²/(2pi²) log[1/(delta t)],
  beta_s=1/[2log(2/(delta K))].
@@ -140,7 +187,7 @@ Collective shifts, temporal blocking and source-preserving resummation
 are not ruled out. In particular the exact alias resummation above already
 shows how finite Hamiltonian dynamics survives this singular local limit.
 
-## 6. Live next attacks
+## 6. Remaining direct phase attacks
 
 Derive anisotropic cellular duality with explicit global sectors, and test
 whether a controlled collective or blocked-time estimate supplies the missing
@@ -175,7 +222,7 @@ The trace at positive inverse temperature has a positive history expansion
 at theta=0, so its Fourier harmonics cannot cancel. The primitive positive
 period of the complete trace family is therefore 2pi/gcd(N,L²). This is a
 finite-clock source statement, not a no-go for emergent U(1). The integer
-ice identity A=L²W from block9 does not carry over without the no-wrap premise.
+ice identity A=L²W from the earlier ice analysis does not carry over without the no-wrap premise.
 
 If a history has n<N moves, every component of boundary S has absolute value
 less than N; modular closure implies integer closure. If additionally
@@ -256,7 +303,7 @@ interval as N tends to infinity. A positive curvature or a 1/L energy cost
 for theta=Phi/L² is therefore not alone a photon-phase diagnostic at finite N:
 the same local clock-wrap term produces both scalings in this gapped regime.
 
-## 9. A source-preserving way to remove this local ambiguity (open development)
+## 9. Exact quantized two-form source
 
 A flat Z_N two-form source, with face angles 2pi b_p/N and db=0 mod N,
 assigns phase one to every local N-fold face wrap and to cube boundaries.
@@ -264,9 +311,9 @@ A representative with b_xy=1 at fixed (x,y) in every z layer and zero elsewhere
 has one unit of xy flux. Gauge-equivalent representatives differ by a
 Z_N link coboundary and are unitarily conjugate. Unlike an arbitrary weak
 continuous uniform source at fixed N, this is an exact microscopic twist.
-Work still required: derive its finite-volume response and the uniform
-large-volume estimate without confusing discrete topological sectors with
-a continuous photon stiffness.
+The following section derives a volume-uniform small-coupling bound on a
+stated coprime volume sequence. Discrete topological flux remains distinct
+from a continuous photon stiffness.
 
 ## 10. Quantized flux has no local analytic response and a controlled area tail
 
@@ -290,8 +337,8 @@ put g(x,y)=m_L-delta_(x,0)delta_(y,0), r(y)=sum_x g(x,y),
  lambda_x(x,y)=-delta_(x,L-1)sum_(v=0)^(y-1)r(v), lambda_z=0.
 
 All expressions are modulo N and independent of z. The zero total of g
-makes them periodic, and d lambda=g. Products of link clock translations
-implement this coboundary unitarily and commutes with Gauss projection.
+makes them periodic, and d lambda=g. With ZX=omega XZ, the product U=product_l X_l^(-lambda_l)
+implements this coboundary unitarily and commutes with Gauss projection.
 Thus using the translation-invariant representative here keeps every
 hypothesis of Yarotsky's translation-invariant theorem intact; no unstated
 extension to arbitrary inhomogeneous perturbations is needed.
@@ -366,3 +413,167 @@ low-frequency photon spectral weight, not merely an unexamined finite gap.
 For N=2 there is an especially direct check: W=W† makes J identically zero
 at theta=0, while D=K sum_xy W. Its positive curvature is wholly a contact
 response. No dynamical current pole can be inferred from that number.
+
+
+## 12. Bounded evidence and falsifiers
+
+Eight input-free families check the regulator/alias identities, the actual
+conditional Bessel harmonic, full-link Gauss compression, rational multi-face
+perturbation, high-precision one-face eigenvalues, modular cellular sources
+and periodic sheet coefficients. These are falsifiers of the written
+calculation; they do not numerically prove the external stability theorem.
+
+The full square has dimensions16,81,256 for N=2,3,4; direct Gauss compression
+matches the reduced transfer to below2e-15. Rational two-face and three-face
+corner recursions retain both orientations and all normalization subtractions
+for N=2,3,4,6. They recover the derived coefficient per xy face. An independent
+85-digit spectral route at N=2,3,4,5,6,8 and K=0.1,0.03,0.01 approaches the
+same leading phase dependence at fixed t=0.7.
+
+On actual TWO-dimensional periodic square complexes, separate exact
+Rayleigh-Schrödinger recursion and a subset-weight sum give quantized-twist
+energy differences beginning at area order: coefficient5/512 at L=2 and
+15507/6710886400 at L=3, for N=2,t=1. The latter also matches a uniform
+quantized representative. These bounded geometry checks are not a simulated
+three-dimensional phase; the three-dimensional statement uses the proof.
+
+A claim fails if the full Gauss compression changes the generator, the alias
+bounds miss a residue, the N=2 orientation multiplicity changes the coefficient,
+a lower-order closed history carries nontrivial quantized flux, the explicit
+coboundary fails modulo N, or the mapped gap/analyticity hypotheses fail.
+A failed asymptotic test at ell=5 is preserved: the asymptotic comparison was
+restricted to ell>=10 while the exact conditional bound remains checked at
+all four points. No failed science output was silently discarded.
+
+## 13. Primary sources and prior work
+
+- [Yarotsky, math-ph/0412040v1](https://arxiv.org/abs/math-ph/0412040v1),
+  Theorem1 pp2-4 and its cluster construction pp6-11: explicit load-bearing
+  gap, thermodynamic and analytic import. The proof's analytic coefficient
+  of time in log Z supplies a finite-volume analytic energy branch on the
+  same uniform disk, not an inference from a finite real-axis gap alone.
+- [Kumano et al., 1301.6166v2](https://arxiv.org/abs/1301.6166v2), pp1-2,
+  Eqs2-5: established local discrete-clock contribution and quantized seam
+  diagnostic in the ordinary spin model. No BKT phase result is imported.
+- [Fröhlich-Spencer, IHES/P/81/40](https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf),
+  pp61-64, section3.5: selected-link complex translations. The current
+  anisotropic local estimate is derived explicitly; its failure is not a
+  claim that the complete massless-phase theorem fails in every formulation.
+- [Pasztor-Pesznyak, 2609.07886v2](https://arxiv.org/abs/2609.07886v2):
+  Wilson logarithmic clock scaling is prior art. Its two-spatial-dimensional
+  numerical phase result is not a three-spatial-dimensional theorem here.
+
+The existing finite-clock tame-Maxwell note of2026-09-03 was fully read and
+already distinguishes its Taylor tangent and supplied oscillator from a full
+many-link phase. The exact earlier Villain transfer is recoverable at
+cceb1220b1d89bedc8d24628844afb4b55c61d10. The earlier ice source argument at
+d8d5e3b26b77e5e950f5aa4b29c534f2337277fb has integer closed surfaces; this
+clock law has modular ones. Those distinctions are preserved. Frozen PR8024
+at1c814b95243c5f788f57bab57c67fdc542f1aab4 already applies a related Yarotsky
+result to a supplied SU3 strong-electric regime; the generic gap method is
+not claimed as an invention here. Exact reading scopes are in the packet.
+
+## No-Go Discipline Gate
+
+### N1 — Alternative route enumeration
+
+| Honesty | Distinct route | Outcome |
+|---|---|---|
+| ATTEMPTED | Match Wilson and Villain Euclidean actions to one generator | Positive fixed-box match; bare coupling products differ |
+| ATTEMPTED | Resum temporal Fourier aliases and control truncation | Constructive logarithmic cutoff; fixed truncation gives a false gap |
+| ATTEMPTED | Optimize conditional one-link complex shifts | Exact local suppression tends to one on the singular trajectory |
+| ATTEMPTED | Derive continuous-source ground curvature from local wraps | Positive curvature in a proved small-coupling gapped regime |
+| ATTEMPTED | Quantized two-form source with explicit cohomology representative | Local wraps removed and uniform coprime-volume area tail obtained |
+| ATTEMPTED | Local GNS and dynamic spectral source bridge | Uniform gap excludes low-frequency spectral weight in that regime |
+| OPEN | Collective or blocked-time anisotropic defect estimates | Could establish a direct Hamiltonian Coulomb window |
+| OPEN | Uniform transport in an additive ice carrier | Distinct finite carrier with no local clock wrapping |
+| OPEN | Matched charged spectral phase and native law compilation | Physical TOE obligations remain; not executed by this note |
+
+### N2 — Wall-independence and collapse
+
+A nonuniform one-link bound and a fixed alias truncation are limitations of
+particular representations. They are not two physical phase walls. The local
+continuous-source counterexample closes the single inference “positive static
+curvature implies photon phase”; its source mismatch and absent dynamic pole
+are the same counterexample, not independent no-go counts. The remaining
+Coulomb phase, native compiler and physical law-selection obligations have no
+claimed pairwise independence theorem. No axiom-forcing wall is inferred.
+
+### N3 — Hidden conditions
+
+N, geometry, Gauss sector, t,K, source placement, complex analytic radius,
+coprime volume sequence and source normalization are explicit. The imported
+theorem requires a nondegenerate local ground on its complete interaction
+support; the averaged h_x construction pays that requirement. Translation
+invariance is preserved by the quantized uniform representative. No numerical
+radius, uniform N-limit, generic inhomogeneous theorem or phase stability
+outside the stated weak-coupling interval is assumed.
+
+### N4 — Residual matching
+
+The fixed-box transfer residual is separate from the phase theorem. The
+existing tame-Maxwell note asks for the full low-energy many-link spectrum;
+the present diagnostic counterexample prevents a static response shortcut
+to that target. The integer ice winding result does not absorb modular clock
+wraps. The prior SU3 gap import is methodological context, not a clock source
+or physical electromagnetic conclusion. None of these residuals is declared
+closed merely by referencing another supplied model.
+
+### N5 — Rhetoric and resolution
+
+“Gapped regime” is the explicit imported theorem application. “Positive
+curvature” is the local analytic coefficient with its thermodynamic control.
+“Area tail” is a Cauchy remainder on a declared volume subsequence. “No
+low-frequency weight” uses the uniform gap and local spectral form, not a
+fit to finite eigenvalues. The primary prints five resolution lines and
+explicitly states its unexecuted Coulomb-phase obligation.
+
+### N6 — Partial-closure paths and primitive boundary
+
+Collective anisotropic resummation, exact quantized source measurements,
+charged response with a controlled infrared limit and the additive ice route
+remain viable. No axiom or approved primitive changes. A local Hamiltonian
+and its clock register remain supplied rather than selected by the framework.
+
+### N7 — Steelman
+
+A hostile reader can correctly object that a strong-electric gapped regime
+was already expected and does not exclude an intermediate Coulomb phase.
+The claim agrees: the result is a matched observable counterexample and a
+quantized response bound. The reader can also reject extending a spin-model
+BKT theorem, a finite patch spectrum or a translation-invariant perturbation
+theorem to unexamined domains. None supplies the missing phase here. The
+existential cluster radius and all-volume extension remain explicit limits.
+
+### N8 — Cross-cycle echo
+
+The earlier exact transfer already warned that an inappropriate temporal
+scaling changes the generator. This note adds source and alias distinctions
+without recasting that earlier mismatch as a new physical wall. The ordinary
+clock-spin literature already identified continuous-twist contamination;
+this note credits it and derives the gauge-Hamiltonian coefficient and
+surface-order bound. The ice response remains a distinct additive-source
+construction, and its own volume-uniform transport problem stays open.
+
+Gate disposition: author-completed scoped negative-claim discipline; no
+independent review, audit verdict or formal retained status is conferred.
+
+## Source status and trace
+
+```yaml
+actual_current_surface_status: "conditional-support"
+target_claim_type: "bounded_theorem"
+trace_class: "upstream_support"
+target_claim_id: null
+target_blocker_text: "A selected finite-payload gauge law with a matched charged photon phase, native local realization and physical source/time identification remains open."
+source_of_blocker_text: "physics_loop"
+reachability_to_target: "supports"
+artifact_role: "theorem"
+next_trace_action: "Review the source match, perturbative coefficient and explicit gap/analyticity import before any phase use."
+conditional_surface_status: "Supplied fixed-N clock Hamiltonian, positive couplings, cubic complex, modular Gauss sector, matched continuous or quantized sources and an existential small-coupling stability domain; no Coulomb phase or native-law selection."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Conditional mathematical source diagnostics with an explicit external stability theorem; author checks do not grant retention."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

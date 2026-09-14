@@ -1,0 +1,123 @@
+{
+  "primary_sha256": "95c01d3d1965a153614b80e3cff7f56449bcef10a3d22e097766f7e39d23cd21",
+  "results": [
+    {
+      "name": "Wilson_N2_multiplicity",
+      "source_sha256": "eb2aa9b70563e87667f2f806508dbb74b11ad08606ea485faca53e5da7c5c677",
+      "exit_code": 1,
+      "elapsed_sec": 0.3988018750678748,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "Villain_jump_normalization",
+      "source_sha256": "bb9c7c711fe49bc4f2464ddfb0eb4f10c5786d31834592bc018b008064fe7232",
+      "exit_code": 1,
+      "elapsed_sec": 0.23388320801313967,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "insufficient_alias_cutoff",
+      "source_sha256": "f7521bc935a6a0bb5897e0f6a800f4f4051547a11152bd57329e2429ca878c90",
+      "exit_code": 1,
+      "elapsed_sec": 0.22989879199303687,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "single_spatial_Gaussian",
+      "source_sha256": "7ca0e0cda9751c1b720b0870b15b94b5af591d1016cee57a9fc77314fce2b6d4",
+      "exit_code": 1,
+      "elapsed_sec": 0.4212416249793023,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "wrong_conditional_harmonic",
+      "source_sha256": "17f55d5b08c0f5c1f39675fc8714fcff96dfdd5e42e2858b2c9bbe3e6c8f91ee",
+      "exit_code": 1,
+      "elapsed_sec": 0.4997287909500301,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "Gauss_flux_orientation",
+      "source_sha256": "8fbcc1c9f848951fdcf1845050a1a668ddfaec99380a1bcb49f17b842572bc0c",
+      "exit_code": 1,
+      "elapsed_sec": 0.41347254207357764,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "one_clock_orientation",
+      "source_sha256": "7b8604f7bdc13fbb8eb78095c22b3e3ba2c751c9b66199166a2ba22cfcdd66b9",
+      "exit_code": 1,
+      "elapsed_sec": 0.4148059580475092,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "patch_excitation_energy",
+      "source_sha256": "755794ec1140e82659dae988aeba764c17ba9da68f6428b6401177e416c556c3",
+      "exit_code": 1,
+      "elapsed_sec": 0.41516187507659197,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "wrong_source_period_group",
+      "source_sha256": "b2974d722fd44c6ffb89aa765a30d50b69de376ecf98bb3885595ca0977171a4",
+      "exit_code": 1,
+      "elapsed_sec": 0.4811109589645639,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "coboundary_sign",
+      "source_sha256": "60528efb20fb1bcd12d89aa163bfc3e66223bee977c9214bd79f9f3b0468c538",
+      "exit_code": 1,
+      "elapsed_sec": 0.48473312496207654,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "periodic_last_face_move",
+      "source_sha256": "68e3898c2607642bf7a8fee45e56b6852103733f82360c07a008918134823e70",
+      "exit_code": 1,
+      "elapsed_sec": 0.5248716670321301,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "independent_sheet_denominator",
+      "source_sha256": "c2ae121f6c63e704a247c037db887f14504cd8ce2bae619dfc23514fe5229631",
+      "exit_code": 1,
+      "elapsed_sec": 0.5258706669555977,
+      "detected": true,
+      "expected_detection": true,
+      "disposition": "consequential perturbation detected"
+    },
+    {
+      "name": "phase_independent_counterterms",
+      "source_sha256": "c94a113f1a6fcefdc7ae8d0d6c586cf8f05bdbc3fd2a97c5585d7069f5853f75",
+      "exit_code": 0,
+      "elapsed_sec": 0.6003404160728678,
+      "detected": false,
+      "expected_detection": false,
+      "disposition": "benign for claimed leading phase coefficient; source-independent coefficients are not claimed"
+    }
+  ],
+  "independence": "Author falsifiers; no independent scientific reviewer."
+}

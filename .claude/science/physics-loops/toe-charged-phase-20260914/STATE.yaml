@@ -12,13 +12,13 @@ execution: supervisor_only_no_subagents
 research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 10
-active_route: finite_clock_anisotropic_phase_and_transfer_spectral_bridge
+block: 11
+active_route: native_autonomous_halfline_clock_and_record_persistence
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Reassess direct finite-clock phase routes against the actual anisotropic transfer trajectory and primary phase theorems; derive a matched spectral bridge only if it closes a new obligation.
-last_checkpoint_utc: '2026-09-14T09:23:38.816428+00:00'
+next_action: Derive a semibounded half-line clock for the actual native isometry, compare exact Record permanence and give finite-apparatus horizon bounds.
+last_checkpoint_utc: '2026-09-14T10:07:40.223483+00:00'

@@ -53,6 +53,9 @@ def exact_alias_schedule():
             delta=mp.exp(-ell)/t;x=delta*t;beta=N*N*ell/(2*mp.pi**2)
             M=int(mp.ceil(mp.sqrt(1+eta)*ell/mp.pi+mp.mpf('.5')))
             a=mp.pi**2/ell;tail=2*mp.exp(-a*(M+mp.mpf('.5'))**2)/(1-mp.exp(-a*(2*M+2)))
+            schedule_bound=16*t**(1+eta)*delta**eta/mp.expm1(2*mp.pi*mp.sqrt(1+eta))
+            assert x<=mp.mpf(1)/8 and 2*tail<=mp.mpf(1)/4
+            assert 8*tail/delta<=schedule_bound
             errors=[]
             for k in range(-N//2,N//2+1):
                 dual=mp.fsum(x**(r*r)*mp.cos(2*mp.pi*r*k/N) for r in range(-8,9))/mp.fsum(x**(r*r) for r in range(-8,9))
@@ -65,7 +68,7 @@ def exact_alias_schedule():
                 target=t*(2-2*mp.cos(2*mp.pi*k/N))
                 assert abs(-mp.log(dual)/delta-target)<20*delta
                 errors.append(gap_error)
-            rows.append({'ell':str(ell),'alias_cutoff':M,'max_generator_error':str(max(errors)),'rigorous_bound':str(8*tail/delta)})
+            rows.append({'ell':str(ell),'alias_cutoff':M,'max_generator_error':str(max(errors)),'rigorous_bound':str(8*tail/delta),'uniform_delta_eta_bound':str(schedule_bound)})
         divergence=[]
         for M in [0,2]:
             for ell in map(mp.mpf,[100,1000,10000]):

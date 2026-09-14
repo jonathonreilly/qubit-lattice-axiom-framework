@@ -57,3 +57,14 @@ PR8115 preserves the constructive graph isometry and the fixed-encoding statisti
 ## Rerank after block 8
 
 PR8116 preserves the conditional soft-graviton common-cone chain and the finite-band/source escapes. Do not extend it with corollaries. Current first choice: derive the actual finite-qubit photon response as a configuration-graph conductance and conserved-current diffusion problem, including full relaxation and the physical Cartesian source. The selected new mechanism is a variational/dual-flow representation with a sharp nonzero-curvature criterion and a finite-time error identity. It can replace the current indirect imaginary-source fit by a precisely defined positive stochastic observable, while exposing what uniform bound still separates finite stiffness from a phase. The strongest remaining objective is a volume-uniform lower bound on this transport in the actual cubic-ice component. Exact spectral moments are an independent alternative if homological flow cannot yet be bounded. Native autonomous formation is next; current formation/support PRs remain active, so avoid duplicating their local-law census.
+
+## Rerank after block10
+
+PR8118 closes a concrete finite-clock source diagnostic error: a positive
+continuous-source curvature occurs in a uniformly gapped regime, while an
+exact quantized flux has a controlled area tail. The Coulomb phase remains
+open. Do not extend this with easier phase corollaries. Next target is the
+actual native autonomous clock's finite retention/recurrence limitation, with
+a constructive all-later-times approximate implementation and an honest
+exact-permanence boundary. Active formation/support-law censuses are distinct
+and remain untouched.

@@ -1,0 +1,11 @@
+{
+  "old_nodes": 5042,
+  "new_nodes": 5043,
+  "old_edges": 12519,
+  "new_edges": 12520,
+  "new_node": {
+    "deps_hash": "3ff62434e691",
+    "out_degree": 1
+  },
+  "source_hash": "0a5b8736767660f7b9600516224a8c40e1477cb0b309282e3dedbbb848095c48"
+}

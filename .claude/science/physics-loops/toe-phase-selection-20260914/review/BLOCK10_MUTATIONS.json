@@ -1,0 +1,267 @@
+{
+  "runner": "/Users/jonreilly/Documents/Codex/toe-periodic-clock-phase-20260914/scripts/finite_clock_score_gaussian_maxwell_scaling_limit_2026_09_14.py",
+  "runner_sha256": "383149767aec7c7ad0f5463bf675ec2ad1221022f3e340e2da523a23cdfc76f6",
+  "qualification": "Personal finite mathematical challenges, not independent proof review or universal proof execution.",
+  "faults": [
+    {
+      "fault": "clock_curl_orientation",
+      "function": "clock_lift_and_score",
+      "invoked": "clock_lift_and_score",
+      "old": "[[1,-1,0],[0,1,-1],[-1,0,1]]",
+      "new": "[[1,1,0],[0,1,-1],[-1,0,1]]",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.004505707998760045
+    },
+    {
+      "fault": "dual_temperature_factor",
+      "function": "clock_lift_and_score",
+      "invoked": "clock_lift_and_score",
+      "old": "N*N/(4*np.pi*np.pi*beta)",
+      "new": "N*N/(2*np.pi*np.pi*beta)",
+      "outcome": "AssertionError",
+      "detail": "(array(6.66476165), array(18.81293789))",
+      "seconds": 0.004170333966612816
+    },
+    {
+      "fault": "lose_clock_fiber",
+      "function": "clock_lift_and_score",
+      "invoked": "clock_lift_and_score",
+      "old": "N*math.exp(logZ)",
+      "new": "math.exp(logZ)",
+      "outcome": "AssertionError",
+      "detail": "(array(6.66476165), array(3.33238083))",
+      "seconds": 0.0032117500668391585
+    },
+    {
+      "fault": "score_sign",
+      "function": "clock_lift_and_score",
+      "invoked": "clock_lift_and_score",
+      "old": "Y=-score/math.sqrt(beta)",
+      "new": "Y=score/math.sqrt(beta)",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 0.00000000e+00,  0.00000000e+00,  0.00000000e+00],\n       [ 0.00000000e+00,  1.25814048e+00, -1.25814048e+00],\n       [ 0.00000000e+00,  5.34669571e-16, -5.34669571e-16],\n       [ 0.00000000e+00, -1.25814048e+0",
+      "seconds": 0.0038013330195099115
+    },
+    {
+      "fault": "noise_l1_accumulation",
+      "function": "clock_lift_and_score",
+      "invoked": "clock_lift_and_score",
+      "old": "var@(h*h)",
+      "new": "var@np.full(3,h.sum()**2)",
+      "outcome": "AssertionError",
+      "detail": "(array(1.44346612), array(0.11864105))",
+      "seconds": 0.0019343339372426271
+    },
+    {
+      "fault": "drop_conditional_variance",
+      "function": "clock_lift_and_score",
+      "invoked": "clock_lift_and_score",
+      "old": "+np.diag(config@var)",
+      "new": "+0*np.diag(config@var)",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 9.88675427e-01, -2.09642867e-18,  7.87446992e-18],\n       [-2.09266673e-18,  9.88675427e-01,  8.93536549e-18],\n       [ 7.87559854e-18,  8.93461292e-18,  9.88675427e-01]]), array([[1.79581675e-35, 1.14207062e-3",
+      "seconds": 0.001939500099979341
+    },
+    {
+      "fault": "dual_covariance_sign",
+      "function": "clock_lift_and_score",
+      "invoked": "clock_lift_and_score",
+      "old": "cn/beta+CX,np.eye(3)",
+      "new": "cn/beta-CX,np.eye(3)",
+      "outcome": "AssertionError",
+      "detail": "(array([[-9.77350855e-01,  2.28098974e-18, -7.86007894e-18],\n       [ 2.27722780e-18, -9.77350855e-01, -8.92097472e-18],\n       [-7.86120757e-18, -8.92022215e-18, -9.77350855e-01]]), array([[1., 0., 0.],\n       [0., 1., ",
+      "seconds": 0.00280287500936538
+    },
+    {
+      "fault": "completed_square_source_scale",
+      "function": "centered_theta_and_affine_control",
+      "invoked": "centered_theta_and_affine_control",
+      "old": "z-math.sqrt(sigma)*h",
+      "new": "z-sigma*h",
+      "outcome": "AssertionError",
+      "detail": "(array(0.59600586), array(0.5730952))",
+      "seconds": 0.0005544159794226289
+    },
+    {
+      "fault": "affine_shift_removed",
+      "function": "centered_theta_and_affine_control",
+      "invoked": "centered_theta_and_affine_control",
+      "old": "2*np.arange(-10,11)+1",
+      "new": "2*np.arange(-10,11)",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.00317295896820724
+    },
+    {
+      "fault": "gaussian_source_normalization",
+      "function": "exact_plane_gaussian_approach",
+      "invoked": "exact_plane_gaussian_approach",
+      "old": "source=z@h/math.sqrt(sigma)",
+      "new": "source=z@h/sigma",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.00021837500389665365
+    },
+    {
+      "fault": "drop_between_coset_covariance",
+      "function": "tilted_coset_total_covariance",
+      "invoked": "tilted_coset_total_covariance",
+      "old": "between=mean_second-np.outer(mean,mean)",
+      "new": "between=0*(mean_second-np.outer(mean,mean))",
+      "outcome": "AssertionError",
+      "detail": "(array([[1.00002432e+00, 2.43184578e-05, 2.43188117e-05],\n       [2.43184578e-05, 1.00002432e+00, 2.43187986e-05],\n       [2.43188117e-05, 2.43187986e-05, 1.00002432e+00]]), array([[ 0.66666667, -0.33333333, -0.33333333]",
+      "seconds": 0.010085750021971762
+    },
+    {
+      "fault": "tilted_hessian_source_sign",
+      "function": "tilted_coset_total_covariance",
+      "invoked": "tilted_coset_total_covariance",
+      "old": "exponent=base+tilt*source",
+      "new": "exponent=base-tilt*source",
+      "outcome": "AssertionError",
+      "detail": "(array(-1.86000873), array(1.86000873))",
+      "seconds": 0.01038524997420609
+    },
+    {
+      "fault": "wrong_exterior_orientation",
+      "function": "exterior_one",
+      "invoked": "bianchi_and_contact",
+      "old": "matrix[row,mu]=-p[nu]",
+      "new": "matrix[row,mu]=p[nu]",
+      "outcome": "AssertionError",
+      "detail": "(array([[-4.44089210e-18+0.j, -6.60000000e-01+0.j, -1.33226763e-17+0.j,\n         0.00000000e+00+0.j],\n       [ 0.00000000e+00+0.j,  1.20000000e+00+0.j,  0.00000000e+00+0.j,\n        -1.33226763e-17+0.j],\n       [ 0.000000",
+      "seconds": 0.00018204201478511095
+    },
+    {
+      "fault": "wrong_projector_normalization",
+      "function": "twoform_projection",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "float(np.vdot(p,p).real)",
+      "new": "float(np.vdot(p,p).real)**2",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 0.1220436+0.j, -0.0589176+0.j,  0.1767528+0.j,  0.       +0.j,\n         0.0757512+0.j,  0.0252504+0.j],\n       [-0.0589176+0.j,  0.052605 +0.j, -0.1010016+0.j, -0.0757512+0.j,\n         0.       +0.j,  0.0441882",
+      "seconds": 0.00032774999272078276
+    },
+    {
+      "fault": "missing_midpoint_phase",
+      "function": "midpoint_and_cell_average",
+      "invoked": "midpoint_and_cell_average",
+      "old": "edge_phase=np.diag(np.exp(1j*k/2))",
+      "new": "edge_phase=np.eye(4)",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 0. +0.j       , -0.5+0.8660254j,  0. +0.j       ,\n         0. +0.j       ],\n       [ 0.5+0.8660254j,  0. +0.j       , -0.5+0.8660254j,\n         0. +0.j       ],\n       [ 0.5-0.8660254j,  0. +0.j       ,  0. +0.",
+      "seconds": 0.0002442500554025173
+    },
+    {
+      "fault": "drop_cell_average_factor",
+      "function": "midpoint_and_cell_average",
+      "invoked": "midpoint_and_cell_average",
+      "old": "sinc=float(np.prod(np.sinc(k/(2*np.pi))))",
+      "new": "sinc=1.0",
+      "outcome": "AssertionError",
+      "detail": "(array(0.05442446+1.97734765e-19j), array(0.0625))",
+      "seconds": 0.0002917499514296651
+    },
+    {
+      "fault": "wrong_cell_field_scaling",
+      "function": "midpoint_and_cell_average",
+      "invoked": "midpoint_and_cell_average",
+      "old": "a*a/(ell*ell)",
+      "new": "a/(ell*ell)",
+      "outcome": "AssertionError",
+      "detail": "(array([ 2.30928686e-01+8.61837589e-01j,  1.26181781e+00-2.91296218e-16j,\n        5.46383138e-01-3.15454452e-01j,  1.63914941e-01-9.46363355e-02j,\n       -3.82468196e-01-2.20818116e-01j,  3.43475058e-17+1.26181781e-01j])",
+      "seconds": 0.0007721669971942902
+    },
+    {
+      "fault": "wrong_B_orientation",
+      "function": "os_electric_magnetic_reconstruction",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "change[4,4]=-1",
+      "new": "change[4,4]=1",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 0.26605505+0.j, -0.12844037+0.j,  0.3853211 +0.j,\n         0.        +0.j, -0.16513761+0.j,  0.05504587+0.j],\n       [-0.12844037+0.j,  0.1146789 +0.j, -0.22018349+0.j,\n        -0.16513761+0.j,  0.        +0.j,",
+      "seconds": 0.0002827090211212635
+    },
+    {
+      "fault": "electric_reflection_even",
+      "function": "os_electric_magnetic_reconstruction",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "np.diag([-1,-1,-1,1,1,1])",
+      "new": "np.eye(6)",
+      "outcome": "AssertionError",
+      "detail": "(array([[-0.1926126 +0.j        , -0.03370721+0.j        ,\n         0.10112162+0.j        ,  0.        +0.j        ,\n         0.        -0.20884261j,  0.        -0.0696142j ],\n       [-0.03370721+0.j        , -0.23233895",
+      "seconds": 0.0005945420125499368
+    },
+    {
+      "fault": "cross_residue_sign",
+      "function": "os_electric_magnetic_reconstruction",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "M=-1j*C/r",
+      "new": "M=1j*C/r",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 0.1926126 +0.j        ,  0.03370721+0.j        ,\n        -0.10112162+0.j        ,  0.        +0.j        ,\n         0.        +0.20884261j,  0.        +0.0696142j ],\n       [ 0.03370721+0.j        ,  0.23233895",
+      "seconds": 0.0005536250537261367
+    },
+    {
+      "fault": "drop_electric_magnetic_cross",
+      "function": "os_electric_magnetic_reconstruction",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "gram=np.block([[PT,M],[M,PT]])",
+      "new": "gram=np.block([[PT,0*M],[0*M,PT]])",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 0.1926126 +0.j        ,  0.03370721+0.j        ,\n        -0.10112162+0.j        ,  0.        +0.j        ,\n         0.        +0.20884261j,  0.        +0.0696142j ],\n       [ 0.03370721+0.j        ,  0.23233895",
+      "seconds": 0.0005427500000223517
+    },
+    {
+      "fault": "keep_wrong_EE_noncontact_sign",
+      "function": "os_electric_magnetic_reconstruction",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "[[-r*r*PT*i0,-C*i1]",
+      "new": "[[r*r*PT*i0,-C*i1]",
+      "outcome": "AssertionError",
+      "detail": "(array([[-0.1926126 +0.j        , -0.03370721+0.j        ,\n         0.10112162+0.j        ,  0.        +0.j        ,\n         0.        +0.20884261j,  0.        +0.0696142j ],\n       [-0.03370721+0.j        , -0.23233895",
+      "seconds": 0.0005594169488176703
+    },
+    {
+      "fault": "quadratic_dispersion",
+      "function": "os_electric_magnetic_reconstruction",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "spectral=math.exp(-t*r)",
+      "new": "spectral=math.exp(-t*r*r)",
+      "outcome": "AssertionError",
+      "detail": "(array(2.09), array(1.44568323))",
+      "seconds": 0.00040374998934566975
+    },
+    {
+      "fault": "euclidean_divergence_set_zero",
+      "function": "bianchi_and_contact",
+      "invoked": "bianchi_and_contact",
+      "old": "contact=D.conj().T@P@D",
+      "new": "contact=0*(D.conj().T@P@D)",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 0.+0.j, -0.+0.j,  0.+0.j, -0.+0.j],\n       [-0.+0.j,  0.+0.j,  0.+0.j, -0.+0.j],\n       [ 0.+0.j,  0.+0.j,  0.+0.j,  0.+0.j],\n       [-0.+0.j, -0.+0.j,  0.+0.j,  0.+0.j]]), array([[ 5.7 , -0.21,  0.33, -0.6 ],\n",
+      "seconds": 0.00017216696869581938
+    },
+    {
+      "fault": "tail_factor_four_missing",
+      "function": "tail_constants_and_scaling",
+      "invoked": "tail_constants_and_scaling",
+      "old": "integrated=4*(",
+      "new": "integrated=1*(",
+      "outcome": "AssertionError",
+      "detail": "(array(3.6470669), array(14.5882676))",
+      "seconds": 7.079204078763723e-05
+    },
+    {
+      "fault": "supplied_clock_order_halved",
+      "function": "tail_constants_and_scaling",
+      "invoked": "tail_constants_and_scaling",
+      "old": "N=8*beta",
+      "new": "N=4*beta",
+      "outcome": "AssertionError",
+      "detail": "(array(811.38003861), array(3245.52015443))",
+      "seconds": 0.00013754202518612146
+    }
+  ]
+}

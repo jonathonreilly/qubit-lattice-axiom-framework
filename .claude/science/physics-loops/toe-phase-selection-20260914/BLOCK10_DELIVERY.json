@@ -1,0 +1,77 @@
+{
+  "pr": {
+    "baseRefOid": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+    "headRefOid": "d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee",
+    "mergeable": "MERGEABLE",
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127"
+  },
+  "branch": "physics-loop/periodic-clock-covariance-20260914",
+  "head": "d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee",
+  "remote_head": "d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee",
+  "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-periodic-clock-phase-20260914",
+  "tracked_and_untracked_clean": true,
+  "ignored_files": [
+    {
+      "path": "docs/audit/data/audit_ledger.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 85348652
+    },
+    {
+      "path": "docs/audit/data/citation_graph.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 7431415
+    },
+    {
+      "path": "docs/audit/data/ledger_cache_manifest.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 129
+    },
+    {
+      "path": "docs/audit/data/static_pipeline_checkpoint.lock",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 0
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 6334
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/ledger_io.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 18088
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 217081
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 34045
+    },
+    {
+      "path": "scripts/__pycache__/runner_cache.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 30046
+    }
+  ],
+  "preserved_before_removal": true,
+  "removed": true,
+  "note_sha256": "0a5b8736767660f7b9600516224a8c40e1477cb0b309282e3dedbbb848095c48",
+  "runner_sha256": "383149767aec7c7ad0f5463bf675ec2ad1221022f3e340e2da523a23cdfc76f6",
+  "qualification": "Author delivery receipt. Both linked proofs await independent review and formal audit; no main landing.",
+  "removed_utc": "2026-09-14T22:08:30.804838+00:00"
+}

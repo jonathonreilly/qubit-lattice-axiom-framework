@@ -1,0 +1,83 @@
+{
+  "pr": {
+    "baseRefOid": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+    "headRefOid": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+    "mergeable": "MERGEABLE",
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129"
+  },
+  "branch": "physics-loop/clock-penalty-normal-form-20260914",
+  "head": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+  "remote_head": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+  "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-clock-penalty-normal-form-20260914",
+  "tracked_and_untracked_clean": true,
+  "ignored_files": [
+    {
+      "path": "docs/audit/data/audit_ledger.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 85348652
+    },
+    {
+      "path": "docs/audit/data/citation_graph.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 7430282
+    },
+    {
+      "path": "docs/audit/data/ledger_cache_manifest.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 129
+    },
+    {
+      "path": "docs/audit/data/static_pipeline_checkpoint.lock",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 0
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 6339
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/ledger_io.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 18093
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 217086
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 34050
+    },
+    {
+      "path": "scripts/__pycache__/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 44256
+    },
+    {
+      "path": "scripts/__pycache__/runner_cache.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 30051
+    }
+  ],
+  "preserved_before_removal": true,
+  "removed": true,
+  "note_sha256": "b09dff36b0032b9ae1e7c6fae72f3ba8a457b4031495b1bc8b374152ff1784b6",
+  "runner_sha256": "0ed013c81d5a8788767be3f18cf34b28e3ac04686306431546f9ec1720bb9a76",
+  "qualification": "Author delivery receipt. Independent proof review and formal audit pending; no main landing.",
+  "removed_utc": "2026-09-14T21:37:15.592109+00:00"
+}

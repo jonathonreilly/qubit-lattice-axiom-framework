@@ -23,7 +23,12 @@
       6,
       8
     ],
-    "maximum_observed_charge_change": 1
+    "maximum_observed_charge_change": 1,
+    "nontranslation_invariant_control": {
+      "total_charge_square": 2,
+      "mean_charge_square": 0.03125,
+      "maximum_cube_charge_square": 1
+    }
   },
   "matrix_normal_form": {
     "fiber_certificate": {
@@ -44,6 +49,8 @@
       0,
       1
     ],
+    "conservative_normal_form_penalty_threshold": 8169282.454342356,
+    "finite_matrix_scope": "Moderate penalties below the conservative uniform-theorem threshold; these check identities and coefficients only.",
     "checks": [
       {
         "penalty": 32.0,
@@ -320,6 +327,59 @@
     },
     "qualification": "Controls outside the cubic clock model. Small local rotations and exact constraint conservation do not imply global fidelity or ground-sector selection."
   },
+  "local_algebra": {
+    "lie_schwinger_integral": [
+      {
+        "penalty": 8.0,
+        "integral_identity_error": 3.2176154796243776e-15,
+        "remainder_norm": 0.03315050177570044,
+        "unitary_commutator_bound": 0.05934298125730842
+      },
+      {
+        "penalty": 16.0,
+        "integral_identity_error": 1.41746903758966e-14,
+        "remainder_norm": 0.01649924500901367,
+        "unitary_commutator_bound": 0.02967149062865421
+      },
+      {
+        "penalty": 32.0,
+        "integral_identity_error": 1.2493722451576658e-14,
+        "remainder_norm": 0.008230123726132643,
+        "unitary_commutator_bound": 0.014835745314327105
+      }
+    ],
+    "commutator_interaction_norm": 0.8369552722455121,
+    "commutator_majorant": 26.812076567715593,
+    "exact_overlap_control_norm": 12.0,
+    "local_conjugation_change": 0.0019999993333335003,
+    "local_change_bound": 0.0059672987905650815,
+    "finite_chain_tails": [
+      {
+        "radius": 0,
+        "conditional_expectation_tail": 0.0019999983333342506,
+        "analytic_tail_bound": 0.3310482891746977
+      },
+      {
+        "radius": 1,
+        "conditional_expectation_tail": 1.999998444500782e-06,
+        "analytic_tail_bound": 0.29954487922205514
+      },
+      {
+        "radius": 2,
+        "conditional_expectation_tail": 1.3333324891909807e-09,
+        "analytic_tail_bound": 0.27103941510117774
+      },
+      {
+        "radius": 3,
+        "conditional_expectation_tail": 6.666668983117315e-13,
+        "analytic_tail_bound": 0.24524660454612635
+      }
+    ],
+    "iteration_majorants": [
+      "1/7",
+      "3/7"
+    ]
+  },
   "qualification": "Finite falsifiers and matrix checks. The uniform estimates require the analytic proof; no ground-phase or native-axiom inference.",
-  "seconds": 0.9592098339926451
+  "seconds": 0.9728187499567866
 }

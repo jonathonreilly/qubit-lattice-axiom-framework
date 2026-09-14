@@ -12,17 +12,17 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 9
-active_route: actual_state_phase_and_quasilocal_constraint_dressing
+block: 10
+active_route: physical_finite_clock_gaussian_maxwell_scaling_limit
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Check rigorous local dressing hypotheses and seek a volume-uniform actual-state phase or sector estimate. Distinguish prethermal dynamics from exact ground-state selection.
+next_action: Derive full Gaussian joint-law scaling from the all-shift finite-clock covariance estimates and bounded physical score observables; check continuum and OS polarization limits.
 strongest_unresolved_obligation: Uniform sector-energy comparison or an actual-state Coulomb-phase estimate for the specified Hamiltonian.
-working_result: Six public milestones PR8123-8128 remain pending independent review. Block8 now derives a positive periodized transfer for the actual supplied penalty Hamiltonian, with extensive finite-volume convergence and a narrowly scoped physical principal-step positivity counterexample. Actual Hamiltonian phase and native law selection remain open.
+working_result: Seven public milestones PR8123-8129 remain pending independent review. Block8 now derives a positive periodized transfer for the actual supplied penalty Hamiltonian, with extensive finite-volume convergence and a narrowly scoped physical principal-step positivity counterexample. Actual Hamiltonian phase and native law selection remain open.
 public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
@@ -30,3 +30,4 @@ public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8128
+  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129

@@ -373,3 +373,48 @@ then regenerate and verify the final graph and manifest before delivery.
 Final serialized graph completed before manifest regeneration. The source hash matches f9a7f48025f12b3da542447520c2ed86463be7e9eb25f1277d16d6b9368e055b. Existing nodes are unchanged, the one new node has zero dependencies, and the final manifest is committed. Focused changed-evidence check: four paths, no failures, no existing claim checked. PR8128 exact remote/PR head a103e6f867d1ea3e0a98d7af929fc478ef691ebd verified, clean delivery checkout removed after classifying all ten ignored generated files.
 
 Block9 development checks: the first runner stopped on NumPy rejecting int() of a one-element array; changed to .item(), preserving the mathematical filter. A later exact-conjugation identity check used a fixed3e-12 threshold and observed3.1832e-12 at Hamiltonian norm1027.603. Explicit diagnostics across all four penalties found relative errors1.03e-14 or less. The check now reports absolute error and energy scale and requires relative error below2e-14, consistent with independently accumulated dense-matrix roundoff. All current checks pass; no mathematical target was weakened.
+
+Block9 final author review before delivery:
+- Full public source read in three consecutive chunks; all runner functions
+  read in two chunks. Clarified E/P/C, principal residues, integer charges,
+  mod-three gauge action, the grade projection name, the two uses of D,
+  real time tau, exact star counting and the constrained operator notation.
+- Cold proof review checked graded support closure, both factors in the
+  commutator bound, the factorial majorant, exact BCH cancellation of lambdaN,
+  the separate initial locality loss, finite iteration, and all constant units.
+- The local-observable Dyson argument explicitly forgets grade labels, since
+  a tested local observable need not have a definite grade. The real-time
+  density estimate concerns the dressed total penalty; individual-cube
+  control is qualified by translation invariance.
+- The simultaneous actual-ground limit uses a physical zero-flux trial,
+  Perron uniqueness, compact local states, and the ground-state inequality
+  only on the constrained algebra. The endpoint identity retaining the
+  second harmonic is reproved; no fixed-volume projection estimate is
+  extrapolated into a uniform finite-penalty sector theorem.
+- Fault challenge13 initially survived because its modified search predicate
+  could select a charge-preserving witness. The public runner now rechecks
+  distinct charges independently and solves the exact original-coordinate
+  realization over Z3. All18 faults are now detected against final source.
+  This is a checker repair, not a change of mathematical conclusion.
+V1: The owner-selected actual-state program needs local penalty control and
+    a connection from actual ground states to the constrained Hamiltonian.
+V2: The normal-form method is standard and explicitly attributed to primary
+    literature; the checked overlapping cube support, finite-mu generator
+    and prepared/actual-state separation are the scoped contribution.
+V3: Both bounded target statements are proved internally; the finite-penalty
+    phase and native law are still open, not buried in a terminal lemma.
+V4: Positive hopping, finite mu, strong-penalty threshold, simultaneous limits,
+    and constrained-algebra quantifiers are explicit, with conservative scales.
+V5: Current-main relevant source search and complete open PR inventory were
+    reviewed. Earlier fixed-box projection and positive-transfer sources are
+    exact-revision provenance, not imported unreviewed theorem authority.
+Conformance1-12: single self-contained source/runner; timeout180; proposed
+bounded support; complete N1-N8 and substantive N5 stdout; acyclic proof map;
+source-bound18-fault challenge; no helper/input dependency; only generated
+citation manifest to co-land; explicit trace/import/status fields; no axiom,
+primitive, prompt, audit verdict or main landing; all source counts refreshed;
+focused source/compile/vocabulary/cache checks pass. Serialized graph is now
+running and must finish before manifest regeneration. Independent review,
+full pipeline, strict lint and combined landing gates remain pending.
+
+Block9 serialized graph completed before manifest generation; exact note hashb09dff36 verified. Manifest changes only one new zero-edge node. Focused changed-evidence check has no failures and no existing audited claim checked. Four files committed and pushed; exact PR/remote head and clean tracked/untracked state verified before scratch removal.

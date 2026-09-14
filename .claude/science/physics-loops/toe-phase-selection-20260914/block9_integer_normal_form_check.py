@@ -9,6 +9,7 @@ import json
 import math
 import numpy as np
 from scipy.linalg import expm, eigh, eigvalsh
+from fractions import Fraction
 
 BASE = Path(__file__).resolve().parent
 
@@ -61,6 +62,11 @@ def geometry_and_grade_locality():
         stars.append(star)
     anchor_count=np.bincount(np.concatenate(stars),minlength=len(edges))
     assert np.all(anchor_count==33)
+    # A volume average cannot be read as an individual-cube statement.
+    impulse=np.zeros(len(edges),dtype=np.int16)
+    impulse[np.flatnonzero(F[0]>0)]=1
+    impulse_charge=(D@principal(F@impulse))//3
+    assert np.sum(impulse_charge**2)==2 and max(abs(impulse_charge))==1
     rng=np.random.default_rng(140921)
     a=rng.integers(0,3,size=(768,len(edges)),dtype=np.int16)
     b=principal(a@F.T); Q=(b@D.T)//3
@@ -95,7 +101,8 @@ def geometry_and_grade_locality():
     return dict(torus_shape=[4,4,4],links=len(edges),cubes=len(cubes),star_links=33,
                 stars_per_link=33,cubes_per_link=4,samples_per_update=len(a),
                 tested_updates=len(rows),observed_grades=sorted(grades),
-                maximum_observed_charge_change=max_delta_q)
+                maximum_observed_charge_change=max_delta_q,
+                nontranslation_invariant_control=dict(total_charge_square=2,mean_charge_square=2/len(cubes),maximum_cube_charge_square=1))
 
 
 def cube_model(t=.7,mu=.8,K=.4):
@@ -163,6 +170,8 @@ def matrix_normal_form():
     assert min(observable)==0 and max(observable)==1
     eval0,evec0=eigh(B[np.ix_(p,p)]); phi=np.zeros(len(N));phi[p]=evec0[:,0]
     correction=float(phi[p]@C@phi[p])
+    kinetic=B-np.diag(1.5*.4*np.sum(states*states,axis=1))+2*.7*12*np.eye(len(N))
+    assert eigvalsh(kinetic)[0]>=-1e-13
     rows=[]
     for lam in [32.,64.,128.,256.]:
         H=lam*np.diag(N)+B
@@ -171,6 +180,8 @@ def matrix_normal_form():
         residual=float(np.linalg.norm(projected-B[np.ix_(p,p)]-C/lam,2))
         vals,vec=eigh(H);ground=vec[:,0]
         leakage=float(np.dot(N*ground,ground))
+        assert vals[0]<=1e-13
+        assert leakage<=2*.7*12/lam+1e-13
         uall=np.eye(len(N)); current=H.copy(); offnorm=[]
         for iteration in range(4):
             V=np.where(grades!=0,current,0.)
@@ -205,10 +216,13 @@ def matrix_normal_form():
                          finite_matrix_off_norms=offnorm,prepared_state_times=times))
     assert rows[-1]['first_projected_remainder'] < rows[0]['first_projected_remainder']/40
     assert rows[-1]['ground_charge_square'] < rows[0]['ground_charge_square']/35
+    k0=1/33;g=66*.7*(1+32*math.exp(-.8))*math.exp(33*k0)+6*.4*math.exp(4*k0)
     return dict(fiber_certificate=fiber,nonzero_hopping_grades=[int(r) for r,v in parts.items() if np.any(v)],
                 second_effective_correction_minimum_eigenvalue=float(eigvalsh(C)[0]),
                 projected_harmonic_identity_error=constrained_error,
-                neutral_local_observable_spectrum=sorted(set(map(int,observable))),checks=rows)
+                neutral_local_observable_spectrum=sorted(set(map(int,observable))),
+                conservative_normal_form_penalty_threshold=128*g/k0,
+                finite_matrix_scope='Moderate penalties below the conservative uniform-theorem threshold; these check identities and coefficients only.',checks=rows)
 
 
 def equal_penalty_is_not_equal_charge():
@@ -256,12 +270,82 @@ def logical_controls():
                 qualification='Controls outside the cubic clock model. Small local rotations and exact constraint conservation do not imply global fidelity or ground-sector selection.')
 
 
+def local_algebra_checks():
+    # Independent Lie-Schwinger integral versus full matrix conjugation.
+    rng=np.random.default_rng(92314)
+    N=np.arange(4,dtype=float);grade=N[:,None]-N[None,:]
+    x=rng.normal(size=(4,4))+1j*rng.normal(size=(4,4));B=(x+x.conj().T)/8
+    D=np.diag(np.diag(B));V=B-D
+    nodes,weights=np.polynomial.legendre.leggauss(24)
+    results=[]
+    for lam in [8.,16.,32.]:
+        S=np.divide(V,lam*grade,out=np.zeros_like(V),where=grade!=0)
+        assert np.linalg.norm(S+S.conj().T)<1e-14
+        H=lam*np.diag(N)+B;U=expm(S)
+        R=U@H@U.conj().T-lam*np.diag(N)-D
+        comm=S@V-V@S
+        integral=np.zeros_like(V)
+        for z,w in zip(nodes,weights):
+            u=(z+1)/2;uu=expm(u*S)
+            integral+=w/2*u*(uu@comm@uu.conj().T)
+        independent=U@D@U.conj().T-D+integral
+        error=float(np.linalg.norm(R-independent,2))
+        bound=float(np.linalg.norm(S@D-D@S,2)+.5*np.linalg.norm(comm,2))
+        assert error<3e-14 and np.linalg.norm(R,2)<=bound+1e-14
+        results.append(dict(penalty=lam,integral_identity_error=error,remainder_norm=float(np.linalg.norm(R,2)),unitary_commutator_bound=bound))
+    # Exact endpoint values of the monotone majorants in the analytic proof.
+    assert Fraction(16,128-16)==Fraction(1,7)
+    assert Fraction(4*(2+1),32-4)==Fraction(3,7)<Fraction(1,2)
+    I=np.eye(2);X=np.array([[0,1],[1,0]],complex);Y=np.array([[0,-1j],[1j,0]]);Z=np.diag([1.,-1.])
+    def tensor(ops):
+        out=np.array([[1]],complex)
+        for op in ops:out=np.kron(out,op)
+        return out
+    def local(word,size):return tensor([word.get(i,I) for i in range(size)])
+    def interaction_norm(terms,k,size):
+        return max(sum(math.exp(k*len(support))*np.linalg.norm(value,2) for support,value in terms if i in support) for i in range(size))
+    aa=[({0,1},.7*local({0:X,1:X},3)),({2},.2*local({2:Z},3)),({1,2},.4*local({1:Y,2:Y},3))]
+    bb=[({0},.3*local({0:Z},3)),({1,2},.5*local({1:X,2:Z},3)),({0,1,2},.2*local({0:Y,1:Y,2:X},3))]
+    cc=[(a|b,av@bv-bv@av) for a,av in aa for b,bv in bb if a&b]
+    k,delta=.2,.1
+    lhs=interaction_norm(cc,k-delta,3)
+    rhs=4/(math.e*delta)*interaction_norm(aa,k,3)*interaction_norm(bb,k,3)
+    assert lhs<=rhs
+    # The support factor cannot be deleted: [sum Z_i, product X_i]
+    # has norm 2q. Verify with a separate dense Clifford representation.
+    size=6;sumz=sum(local({i:Z},size) for i in range(size));prodX=tensor([X]*size)
+    exact_norm=float(np.linalg.norm(sumz@prodX-prodX@sumz,2))
+    assert abs(exact_norm-2*size)<1e-13 and exact_norm>4
+    # Local-conjugation and a direct conditional-expectation tail check.
+    alpha=.001
+    ss=[({i,i+1},1j*alpha*local({i:Z,i+1:X},size)) for i in range(size-1)]
+    generator=sum(v for support,v in ss);snorm=interaction_norm(ss,k,size)
+    U=expm(generator);O=local({0:Z},size);rotated=U.conj().T@O@U
+    # Use X at site zero so that the first oriented bond actually acts.
+    O=local({0:X},size);rotated=U.conj().T@O@U
+    change=float(np.linalg.norm(rotated-O,2));assert change<=2*snorm
+    gamma=4*snorm/delta;assert gamma<1
+    tails=[]
+    for radius in range(4):
+        keep=2**(radius+1);rest=2**(size-radius-1)
+        reduced=np.trace(rotated.reshape(keep,rest,keep,rest),axis1=1,axis2=3)/rest
+        localpart=np.kron(reduced,np.eye(rest))
+        error=float(np.linalg.norm(rotated-localpart,2))
+        bound=2*gamma/(1-gamma)*math.exp(k)*math.exp(-(k-delta)*radius)
+        assert error<=bound
+        tails.append(dict(radius=radius,conditional_expectation_tail=error,analytic_tail_bound=bound))
+    assert tails[2]['conditional_expectation_tail']<tails[0]['conditional_expectation_tail']/1e5
+    return dict(lie_schwinger_integral=results,commutator_interaction_norm=lhs,commutator_majorant=rhs,
+                exact_overlap_control_norm=exact_norm,local_conjugation_change=change,local_change_bound=2*snorm,
+                finite_chain_tails=tails,iteration_majorants=['1/7','3/7'])
+
+
 def main():
     import time
     start=time.monotonic()
     result=dict(status='author_finite_checks',geometry_and_grade_locality=geometry_and_grade_locality(),
                 matrix_normal_form=matrix_normal_form(),equal_penalty_control=equal_penalty_is_not_equal_charge(),
-                logical_controls=logical_controls(),qualification='Finite falsifiers and matrix checks. The uniform estimates require the analytic proof; no ground-phase or native-axiom inference.')
+                logical_controls=logical_controls(),local_algebra=local_algebra_checks(),qualification='Finite falsifiers and matrix checks. The uniform estimates require the analytic proof; no ground-phase or native-axiom inference.')
     result['seconds']=time.monotonic()-start
     (BASE/'BLOCK9_INTEGER_NORMAL_FORM_CHECKS.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result,indent=2))

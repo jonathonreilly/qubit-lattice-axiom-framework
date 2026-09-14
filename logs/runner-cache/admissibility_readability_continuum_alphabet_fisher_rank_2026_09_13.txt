@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.py
+runner_sha256: 322ad281ee05f0cd6f7cf67bd6c46146d174f458271612a1d41138c78f3ee99a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.01
+status: ok
+----- stdout -----
+== S1 sphere moments and one-edge Legendre Gram ==
+[PASS] E[z^2]=1/3, E[z^4]=1/5, E[x^2y^2]=1/15, E[x^2y^2z^2]=1/105
+[PASS] one edge: E[P_i(v.w)P_j(v.w)] = delta_ij/(2i+1), i,j<=4
+[PASS] E[P_d(v.w)] = 0 for d=1..4 (zero-mean tangents)
+[PASS] wedge u-v-w: E[P_i(u.v)P_j(v.w)] = 0 for i,j=1..4
+[PASS] one edge soldered Gram [[1/3,1/9],[1/9,1/9]], det 2/81
+[PASS] cubic site term: E[H]=0, E[H^2]=16/525
+   binary_z: one-edge Gram entries over P1,P2: ['0', '1']
+   six_axis: one-edge Gram entries over P1,P2: ['0', '1/2', '1/3']
+== S2 continuum Fisher matrix of the six-parameter family ==
+   2x3: |E|=7 diag=7/3,7/5,1,7/9,7/9,32/175 I[P1,S1]=7/9 rank=6
+[PASS] 2x3 continuum Fisher = analytic prediction
+[PASS] 2x3 continuum Fisher rank 6 of 6 (law readable)
+[PASS] 2x3 continuum: all six tangents have zero mean
+   2x2x2: |E|=12 diag=4,12/5,12/7,4/3,4/3,128/525 I[P1,S1]=4/3 rank=6
+[PASS] 2x2x2 continuum Fisher = analytic prediction
+[PASS] 2x2x2 continuum Fisher rank 6 of 6 (law readable)
+[PASS] 2x2x2 continuum: all six tangents have zero mean
+== S3 finite alphabets: rank collapse and named null directions ==
+   2x3 binary_z: rank=1, null={+1*P2, +1*P4, +1*H, +1*P1 -1*P3, +1*S1}
+[PASS] 2x3 binary_z Fisher rank 1
+[PASS] 2x3 binary_z: named null vectors annihilated and span the null space
+   2x3 six_axis: rank=3, null={+1*H, +1*P1 -1*P3, -5/12*P2 +1*P4}
+[PASS] 2x3 six_axis Fisher rank 3
+[PASS] 2x3 six_axis: named null vectors annihilated and span the null space
+   2x2x2 binary_z: rank=2, null={+1*P2, +1*P4, +1*H, +1*P1 -1*P3}
+[PASS] 2x2x2 binary_z Fisher rank 2
+[PASS] 2x2x2 binary_z: named null vectors annihilated and span the null space
+   2x2x2 six_axis: rank=3, null={+1*H, +1*P1 -1*P3, -5/12*P2 +1*P4}
+[PASS] 2x2x2 six_axis Fisher rank 3
+[PASS] 2x2x2 six_axis: named null vectors annihilated and span the null space
+[PASS] six-axis relations P3=P1, P4=7/12+(5/12)P2 hold in L2 (t in {-1,0,1})
+[PASS] binary relations P3=P1, P2=1 hold in L2 (t in {-1,+1})
+[PASS] continuum: ||P3-P1||^2 = 1/7+1/3 (no relation)
+== S4 first order: the formation order is not in the tangent ==
+[PASS] E_p[P_d(p.q)] = 0 on the sphere, d=1..4 (every conditional normalised)
+[PASS] E_p[(p.q)(p.q')] = (1/3) q.q' (product-class normaliser at second order)
+[PASS] 2x3: order-law tangent = static T_d for all 720 orders, d in [1, 2]
+[PASS] 2x3: apex-latest frequency 1/3 for every wedge over all orders
+[PASS] 2x2x2: order-law tangent = static T_d for all 40320 orders, d in [1]
+[PASS] 2x2x2: apex-latest frequency 1/3 for every wedge over all orders
+== S5 second order: classes, Grams, separations ==
+[PASS] 2x3: E[A] = 0 (static normaliser has no theta^2 term)
+[PASS] 2x3: K-multiset classes 28 = formation-order census 28
+  2x3: wedges 10, arm pairs 6, classes: K 28, pair-vector 26, apex-vector 36
+[PASS] 2x3: apex Gram = 1/9 diag, 1/27 on 8 shared-arm-pair entries, else 0
+[PASS] 2x3: apex Gram rank 10 = #wedges (additive coefficient map injective)
+[PASS] 2x3: arm-pair Gram = (1/3) identity on 6 pairs
+[PASS] 2x3: product-class pair-vector classes 26 distinct
+  2x3: product class min dist^2 = 1/27, max = 18/27 over 325 class pairs
+[PASS] 2x3: additive apex-vector classes 36 distinct (all pairs)
+  2x3: additive min dist^2 = 1/9, max = 38/27 over 630 pairs (all pairs)
+[PASS] 2x2x2: E[A] = 0 (static normaliser has no theta^2 term)
+[PASS] 2x2x2: K-multiset classes 542 = formation-order census 542
+  2x2x2: wedges 24, arm pairs 12, classes: K 542, pair-vector 448, apex-vector 710
+[PASS] 2x2x2: apex Gram = 1/9 diag, 1/27 on 24 shared-arm-pair entries, else 0
+[PASS] 2x2x2: apex Gram rank 24 = #wedges (additive coefficient map injective)
+[PASS] 2x2x2: arm-pair Gram = (1/3) identity on 12 pairs
+[PASS] 2x2x2: product-class pair-vector classes 448 distinct
+  2x2x2: product class min dist^2 = 1/27, max = 48/27 over 100128 class pairs
+[PASS] 2x2x2: additive apex-vector classes 710 distinct (monotone vs all)
+  2x2x2: additive min dist^2 = 1/9, max = 5/3 over 709 pairs (monotone vs all)
+== S6 named order laws: monotone-box, reversed, uniform mixture, static ==
+[PASS] 2x3: 5 linear extensions, one recorded map (monotone-box)
+[PASS] 2x3: monotone-box records x-e_d, reversed records x+e_d
+  2x3 static|uniform: product dist^2 = 2/27, additive dist^2 = 38/243
+  2x3 static|monotone: product dist^2 = 2/27, additive dist^2 = 2/9
+  2x3 monotone|reversed: product dist^2 = 0, additive dist^2 = 8/27
+[PASS] 2x3: static|uniform product dist^2 = sum(mult^2)/243 = 2/27
+[PASS] 2x3: static|monotone product dist^2 = |m|^2/27 = 2/27
+[PASS] 2x3: monotone/reversed pair vectors equal <=> product dist^2 = 0
+[PASS] 2x3: monotone/reversed K-multisets equal True
+[PASS] 2x3: additive monotone|reversed dist^2 = apex Gram form 8/27
+[PASS] 2x3 monotone product: series = [1, T_1, closed-form c], normalised
+[PASS] 2x3 monotone additive: series = [1, T_1, closed-form c], normalised
+[PASS] 2x3 reversed product: series = [1, T_1, closed-form c], normalised
+[PASS] 2x3 reversed additive: series = [1, T_1, closed-form c], normalised
+[PASS] 2x2x2: 48 linear extensions, one recorded map (monotone-box)
+[PASS] 2x2x2: monotone-box records x-e_d, reversed records x+e_d
+  2x2x2 static|uniform: product dist^2 = 16/81, additive dist^2 = 32/81
+  2x2x2 static|monotone: product dist^2 = 2/9, additive dist^2 = 2/3
+  2x2x2 monotone|reversed: product dist^2 = 0, additive dist^2 = 8/9
+[PASS] 2x2x2: static|uniform product dist^2 = sum(mult^2)/243 = 16/81
+[PASS] 2x2x2: static|monotone product dist^2 = |m|^2/27 = 2/9
+[PASS] 2x2x2: monotone/reversed pair vectors equal <=> product dist^2 = 0
+[PASS] 2x2x2: monotone/reversed K-multisets differ True
+[PASS] 2x2x2: additive monotone|reversed dist^2 = apex Gram form 8/9
+[PASS] 2x2x2 monotone product: series = [1, T_1, closed-form c], normalised
+[PASS] 2x2x2 monotone additive: series = [1, T_1, closed-form c], normalised
+elapsed 7.9s
+TOTAL: PASS=63 FAIL=0
+
+----- stderr -----
+

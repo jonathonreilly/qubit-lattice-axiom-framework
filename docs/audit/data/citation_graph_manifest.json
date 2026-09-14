@@ -1,6 +1,6 @@
 {
  "edge_count": 12519,
- "node_count": 5041,
+ "node_count": 5042,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12361,6 +12361,10 @@
   "mass_spectrum_derived_note": {
    "deps_hash": "95ca07898375",
    "out_degree": 6
+  },
+  "massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03": {
    "deps_hash": "e3b0c44298fc",

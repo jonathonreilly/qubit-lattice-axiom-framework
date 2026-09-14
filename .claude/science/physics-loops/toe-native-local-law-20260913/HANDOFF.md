@@ -23,3 +23,5 @@ checkout and prune without git gc. Never touch protected archives. Preserve
 an accessible final summary outside the removed checkout and link pinned
 branches/PRs. Other clean unlanded worktrees belong to separate lanes and
 must remain unless their science is safely preserved under owner rules.
+
+The full authorized window is now complete at 2026-09-14T00:15:53.191857+00:00. Continuation is PAUSED and the cooperative lock was released. The final clean pushed parent checkout is being removed; recovery is through the branch and final external summary.

@@ -131,7 +131,7 @@ M=24 observed numerically is not a rigorous replacement for (3).
 
 ## Fixed local free observables lose the global twist
 
-Let P_-(k) be the occupied one-particle projector. It is bounded and smooth
+Choose holonomy representatives phi in [0,2pi)^3. Let P_-(k) be the occupied one-particle projector. It is bounded and smooth
 away from the finite nodal set. For each fixed site displacement d, the
 finite-volume covariance in the uniform-link-phase convention is
 exp(-i phi dot d/L) times a shifted Riemann sum of

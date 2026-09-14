@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-09-14T00:15:08.785544+00:00",
+  "latest_execution_stderr_empty": true,
+  "source_and_evidence_sha256": {
+    "BLOCK16_AUTHOR_REVIEW.md": "3a2d0022a8f14f0c31388edb7a4924874cd92b4428f3e6309e58f332a0e95ca9",
+    "BLOCK16_BEFORE_TAIL_AND_GAUGE_CLARIFICATION.md.gz": "d62e855217ccef565d0631068ecac4e9b42679b604abb943af18ebfa7b05eaf3",
+    "BLOCK16_CASIMIR.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BLOCK16_CASIMIR.stdout": "9292a00f6a724766f630bb2bace41efe1220e72ae0557f1de104e863b152ecb5",
+    "BLOCK16_CASIMIR_EXPLORATION.json": "9292a00f6a724766f630bb2bace41efe1220e72ae0557f1de104e863b152ecb5",
+    "BLOCK16_CORRECTIONS.md": "213518bb9593f822341aa42629b199c95dd7be8d7a689e8e8bd84d22c0e33bc7",
+    "BLOCK16_CUBIC.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BLOCK16_CUBIC.stdout": "4fe9d6984072043ad35986cd2406878157dd90840b960fe97ce3d55bcc291407",
+    "BLOCK16_CUBIC_CORRECTION.json": "4fe9d6984072043ad35986cd2406878157dd90840b960fe97ce3d55bcc291407",
+    "BLOCK16_CUBIC_MATRIX.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BLOCK16_CUBIC_MATRIX.stdout": "0f8a68e0d05299988b9fdd7e3f3423980a8e69a46dbecb95a02ed4d5fe475220",
+    "BLOCK16_CUBIC_MATRIX_CHALLENGE.json": "0f8a68e0d05299988b9fdd7e3f3423980a8e69a46dbecb95a02ed4d5fe475220",
+    "BLOCK16_DERIVATION.md": "835f0c43a3679c54c348c368126d5f8968e66a6e36657648ef4f24d9048cd9eb",
+    "BLOCK16_FOURIER_DERIVATIVE_CHECK.json": "eb2d8a30ae7f4f03b1570a984a321e10731d166384563c985b65b2ede621391d",
+    "BLOCK16_LOCAL.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BLOCK16_LOCAL.stdout": "7942ed9ee7116cf6842baf5fd77bda19438c26903d90a7ea4654d0a24ff6ca7c",
+    "BLOCK16_LOCAL_COVARIANCE.json": "7942ed9ee7116cf6842baf5fd77bda19438c26903d90a7ea4654d0a24ff6ca7c",
+    "BLOCK16_NEXT_ORDER.md": "b036ea58e20eb5f7ba6b2fd409eb363ee948192f857d86e569056facbe0a1da2",
+    "BLOCK16_TAIL_BOUND.json": "ddb20119a9b37808f7a605a9efe24ad4ce3e5206dddcccdd26f20482213144da",
+    "block16_casimir_check.py": "5c0091f8b98cfb1395b9c9b63f07fa398b688eb7b8373477a8a8df8f061cbd9b",
+    "block16_cubic_correction.py": "8ba5dc032b70ac1dd4967aae7cacc01f69366bcdf96f7aee3417f8373e069479",
+    "block16_cubic_matrix_check.py": "f3efd7c4c60d46186cf78fb333d687f76f0d74a1ef19aad9bb8d121f4216f29b",
+    "block16_local_covariance.py": "77e8112c67781da26ed443e93944de093f8c98f7784277839304f2e18390ff35"
+  },
+  "status": "provisional_author_checked_not_independently_reviewed",
+  "verification_limits": [
+    "No certified numerical asymptotic constant",
+    "No interacting phase",
+    "No final integrated pipeline or audit for block16"
+  ]
+}

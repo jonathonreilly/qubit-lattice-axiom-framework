@@ -1,6 +1,6 @@
 loop: toe-native-local-law-20260913
 mode: campaign
-status: running
+status: completed_authorized_time_window
 branch: physics-loop/toe-native-local-law-20260913
 worktree: /Users/jonreilly/Documents/Codex/toe-native-local-law-20260913
 main_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
@@ -19,13 +19,15 @@ actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
-continuation_status: ACTIVE
+continuation_status: PAUSED
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
 lock_expires_utc: '2026-09-14T00:27:24.280423+00:00'
-next_action: Finish personal review of the provisional nodal Fourier remainder and
-  free local covariance limit; at the deadline preserve the complete campaign, pause
-  continuation, release lock and remove the clean pushed parent checkout.
+next_action: Campaign window complete. Preserve this exact pushed checkpoint and remove
+  its clean checkout. Independent review and the ranked future campaigns remain open;
+  no automatic continuation is active.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking,
   and the next useful campaign until the deadline.
 last_checkpoint_utc: '2026-09-14T00:04:40.810885+00:00'
+completed_utc: '2026-09-14T00:15:53.191857+00:00'
+lock_status: released

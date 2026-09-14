@@ -296,3 +296,78 @@ clock and ice sources leave or import their microscopic phase relation.
    existing audited rows for this new source; that is NOT new-claim audit
    coverage. Full pipeline, strict lint and exact integrated landing gates
    remain shared landing work. No author main push/merge is authorized here.
+
+## Block8: matched principal-flux positive transfer
+
+Personal author review; no independent reviewer or audit. New delivery tree
+is /Users/jonreilly/Documents/Codex/toe-principal-flux-transfer-20260914,
+branch physics-loop/principal-flux-transfer-20260914, based on refreshed main
+5deabeb698a27c2c3f68c5df685af2521ef15307. Disk preflight was 154GiB.
+The complete final note and runner were read in two explicit halves each.
+Small subsequent prose fixes make positive epsilon and the inherited q<=1/8
+logarithm hypothesis explicit, and distinguish the analytic lift tail from
+floating-point roundoff. No mathematical conclusion was enlarged.
+
+V1: The owner's supplied-Hamiltonian phase program needs a matched positive
+transfer, not positivity of an unrelated model. The target is stated before
+its proof and remains narrower than phase or native law selection.
+V2: The new mechanism is Gaussian periodization on the nonlinear principal
+flux graph, with a local Poisson coupling giving an extensive time error.
+The current-main exact-phrase search found no principal-flux or periodized-
+Gaussian source. The complete 200-limit open PR inventory is preserved in
+BLOCK8_OPEN_PR_SNAPSHOT.json; the relevant finite-clock, charged-history,
+transfer and semigroup branches were separated from this penalty law.
+V3: Positivity, gauge projection, finite-step matching, extensive convergence,
+first local correction and exact principal-step negative form are proved
+inside the source. The terminal actual-state phase estimate remains open
+and is not relabeled as a proved transfer lemma.
+V4: Original link multiplicities, fixed diagonal, temporal holonomy, finite
+spatial-penalty scaling and the mismatch factor1/9 are all explicit. The
+principal finite-step kernel differs from the positive completion by a
+quantified O(Eq^4), despite their same Hamiltonian limit.
+V5: Closest prior kinetic proof at652ea367 gave small-step continuity and a
+volume-growing combinatorial remainder. PR8123 at9a84632 handles local
+probabilities and constrained harmonics for the same supplied H. PR8106
+at9030fd24 has different unpenalized charged matter; its positive path
+weights do not prove this operator's spectrum. Their relevant full model
+and boundary passages were read. No unmerged result is a proof premise.
+
+Conformance sections1-12:
+1. Single self-contained note and runner; all imported model assumptions are
+   restated, no mutable scientific input or helper-runner dependency.
+2. Top-level timeout180; canonical runner-cache envelope, fresh final runner
+   execution1.832946sec. Final SHA/cache state in BLOCK8_PREFLIGHT.json.
+3. Supplied model, bounded-support and proposed_retained remain consistent;
+   finite error scales are explicit, no native action or phase identified.
+4. Full N1-N8 lands in the note and all five substantive N5 lines are in
+   primary cached stdout. Six mechanism families include successful changed-
+   target alternatives, not fabricated prior-retained closures. Source has
+   a negative boundary; current development-tier no-go-artifact flag false.
+5. Explicit acyclic proof-obligation table; no open phase lemma is reused as
+   a premise of the operator theorem. Periodic topology retains holonomies.
+6. Eighteen mathematical faults detected against exact final runner bytes.
+   Independent paths include Gaussian Fourier proof, Poisson coupling,
+   direct-coordinate versus reduced convolution, cube cochains versus
+   weighted-event matrices, and lift enumeration versus integer Laurent
+   convolution. Exact rational negative form is independent of float signs.
+7. One primary executable contains every load-bearing finite check; no helper
+   registry or dependency-policy edit.
+8. New zero-edge source node requires serialized graph and generated manifest;
+   final hash/topology check is pending the final build, not assumed from
+   earlier output. Only the manifest may co-land as generated audit data.
+9. Complete controlled machine/trace fields, import table, proof map,
+   executable scope, negative gate and author review record included.
+10. No axioms, primitives, prompt files, audit verdicts or main merge/push.
+11. Counts, polynomial coefficients and constants recomputed on current source;
+   primary papers read in full extracted text and used as comparison context.
+12. Focused vocabulary/diff/source/compile/cache/mutation checks pass. Full
+   pipeline, strict lint and combined integration gates remain pending for
+   authorized landing, along with independent source review.
+
+Block8 graph timing correction: an early manifest-write attempt ran while
+final serialized build session58148 was still active. The explicit source-
+hash check correctly failed on the earlier e82914f5 node hash versus final
+f9a7f480 note. Nothing was staged or pushed. Wait for that build's completion,
+then regenerate and verify the final graph and manifest before delivery.
+
+Final serialized graph completed before manifest regeneration. The source hash matches f9a7f48025f12b3da542447520c2ed86463be7e9eb25f1277d16d6b9368e055b. Existing nodes are unchanged, the one new node has zero dependencies, and the final manifest is committed. Focused changed-evidence check: four paths, no failures, no existing claim checked. PR8128 exact remote/PR head a103e6f867d1ea3e0a98d7af929fc478ef691ebd verified, clean delivery checkout removed after classifying all ten ignored generated files.

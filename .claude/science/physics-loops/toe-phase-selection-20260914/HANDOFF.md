@@ -287,3 +287,5 @@ phase evidence are distinguished from a uniform actual-Hamiltonian proof.
 Next: author-review the complete block8 proof and package the milestone,
 then continue to the strongest actual-state or native-law question.
 Deadline stays 2026-09-15 01:30:44 UTC; do not finish early.
+
+Block8 delivered as PR8128 at a103e6f867d1ea3e0a98d7af929fc478ef691ebd; exact remote and PR head verified, clean delivery scratch removed at20:54:36UTC. Six public milestones remain pending independent review. Block9 begins with actual-state/dressing leverage: Pace-Wen2301.05261 pages1-5 explicitly conjecture the needed exact local dressing/effective description. Yin-Lucas2209.11242v2 instead proves a finite-remainder prethermal transformation. Check hypotheses and proof before importing either into the finite-N3 penalty Hamiltonian. Continue personally until01:30:44UTC.

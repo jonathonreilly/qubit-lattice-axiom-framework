@@ -1,0 +1,187 @@
+{
+  "runner": "/Users/jonreilly/Documents/Codex/toe-principal-flux-transfer-20260914/scripts/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.py",
+  "runner_sha256": "7be0f5094485e928aee98b7546f98759a728a7cc82d72da6379eef4de9f39827",
+  "mutations": [
+    {
+      "fault": "principal_difference_orientation",
+      "changed_function": "single_square_checks",
+      "old": "flux[:, None]-flux[None, :]",
+      "new": "flux[:, None]+flux[None, :]",
+      "invoked": "single_square_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.12969804205931723
+    },
+    {
+      "fault": "drop_periodic_integer_images",
+      "changed_function": "single_square_checks",
+      "old": "q**energy*np.exp(-mu*(db-curl)**2/n**2)",
+      "new": "q**energy*np.exp(-mu*(db-curl)**2/n**2)*np.all(np.abs(lifts)<=1,axis=1)",
+      "invoked": "single_square_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.11196679202839732
+    },
+    {
+      "fault": "wrong_penalty_scale",
+      "changed_function": "single_square_checks",
+      "old": "(db-curl)**2/n**2",
+      "new": "(db-curl)**2",
+      "invoked": "single_square_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.12307595799211413
+    },
+    {
+      "fault": "row_normalize_penalized_kernel",
+      "changed_function": "single_square_checks",
+      "old": "full=lookup[flux_delta+2,residue_delta]",
+      "new": "full=lookup[flux_delta+2,residue_delta]\n            full=full/full.sum(axis=0)[None,:]",
+      "invoked": "single_square_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.11597395793069154
+    },
+    {
+      "fault": "non_gaussian_integer_lift_power",
+      "changed_function": "theta",
+      "old": "q**(j*j)",
+      "new": "q**j",
+      "invoked": "single_square_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.0926928750704974
+    },
+    {
+      "fault": "drop_original_link_multiplicity",
+      "changed_function": "square_generator_multiplicity_check",
+      "old": "a[i,j]+=4*",
+      "new": "a[i,j]+=1*",
+      "invoked": "square_generator_multiplicity_check",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.00018170801922678947
+    },
+    {
+      "fault": "cube_incidence_orientation",
+      "changed_function": "cube_geometry",
+      "old": "d[0,faces.index((axes,tuple(high)))]+=(-1)**axis",
+      "new": "d[0,faces.index((axes,tuple(high)))]+=1",
+      "invoked": "cube_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 4.7708977945148945e-05
+    },
+    {
+      "fault": "fixed_diagonal_normalization",
+      "changed_function": "cube_checks",
+      "old": "he=2*t*e*np.eye(size)",
+      "new": "he=t*e*np.eye(size)",
+      "invoked": "cube_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.36997387500014156
+    },
+    {
+      "fault": "logarithm_coefficient_sign",
+      "changed_function": "cube_checks",
+      "old": "ck=matrices[2]-a@a/2+2*e*np.eye(size)",
+      "new": "ck=matrices[2]+a@a/2+2*e*np.eye(size)",
+      "invoked": "cube_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.9319529159693047
+    },
+    {
+      "fault": "delete_shared_face_interactions",
+      "changed_function": "cube_checks",
+      "old": "if np.any((f[:,l]!=0)&(f[:,r]!=0)):",
+      "new": "if False:",
+      "invoked": "cube_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.979990083957091
+    },
+    {
+      "fault": "logarithm_correction_inferred_sign",
+      "changed_function": "cube_checks",
+      "old": "effective-h+eps*t*t*ck",
+      "new": "effective-h-eps*t*t*ck",
+      "invoked": "cube_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 1.0334679159568623
+    },
+    {
+      "fault": "spatial_half_factor_sign",
+      "changed_function": "cube_checks",
+      "old": "s=np.exp(-eps*v/2)",
+      "new": "s=np.exp(eps*v/2)",
+      "invoked": "cube_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.9282564999302849
+    },
+    {
+      "fault": "product_time_mismatch",
+      "changed_function": "cube_checks",
+      "old": "np.linalg.matrix_power(transfer,steps)",
+      "new": "np.linalg.matrix_power(transfer,2*steps)",
+      "invoked": "cube_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.9370849580736831
+    },
+    {
+      "fault": "strip_mismatch_power",
+      "changed_function": "exact_strip_checks",
+      "old": "penalty=np.sum(mismatch*mismatch,axis=1)",
+      "new": "penalty=np.sum(np.abs(mismatch),axis=1)",
+      "invoked": "exact_strip_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.07032541697844863
+    },
+    {
+      "fault": "strip_laurent_incidence",
+      "changed_function": "exact_strip_checks",
+      "old": "[(-1,1,0),(0,-1,1)]",
+      "new": "[(-1,1,0),(0,1,1)]",
+      "invoked": "exact_strip_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.10479058302007616
+    },
+    {
+      "fault": "wilson_time_scaling",
+      "changed_function": "elementary_scaling_checks",
+      "old": "beta_w=2/3*math.log(1/q)",
+      "new": "beta_w=3/2*math.log(1/q)",
+      "invoked": "elementary_scaling_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 2.8749927878379822e-05
+    },
+    {
+      "fault": "spatial_cosine_scale",
+      "changed_function": "cube_checks",
+      "old": "v=1.5*kappa*",
+      "new": "v=2*kappa*",
+      "invoked": "cube_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.0023229169892147183
+    },
+    {
+      "fault": "wrong_scale_control_collapses",
+      "changed_function": "cube_checks",
+      "old": "hewrong[i,j]-=t*np.exp(-mu*(delta@delta))",
+      "new": "hewrong[i,j]-=t*np.exp(-mu*(delta@delta)/9)",
+      "invoked": "cube_checks",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 1.0598667920567095
+    }
+  ],
+  "qualification": "Personal finite challenge by changed mathematical mechanisms, not independent review or a phase proof."
+}

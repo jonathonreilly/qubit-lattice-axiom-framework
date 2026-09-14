@@ -1,0 +1,83 @@
+{
+  "pr": {
+    "baseRefOid": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+    "headRefOid": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+    "mergeable": "MERGEABLE",
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8128"
+  },
+  "branch": "physics-loop/principal-flux-transfer-20260914",
+  "head": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+  "remote_head": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+  "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-principal-flux-transfer-20260914",
+  "tracked_and_untracked_clean": true,
+  "ignored_files": [
+    {
+      "path": "docs/audit/data/audit_ledger.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 85348652
+    },
+    {
+      "path": "docs/audit/data/citation_graph.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 7430320
+    },
+    {
+      "path": "docs/audit/data/ledger_cache_manifest.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 129
+    },
+    {
+      "path": "docs/audit/data/static_pipeline_checkpoint.lock",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 0
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 6337
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/ledger_io.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 18091
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 217084
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 34048
+    },
+    {
+      "path": "scripts/__pycache__/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 39760
+    },
+    {
+      "path": "scripts/__pycache__/runner_cache.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 30049
+    }
+  ],
+  "preserved_before_removal": true,
+  "removed": true,
+  "note_sha256": "f9a7f48025f12b3da542447520c2ed86463be7e9eb25f1277d16d6b9368e055b",
+  "runner_sha256": "7be0f5094485e928aee98b7546f98759a728a7cc82d72da6379eef4de9f39827",
+  "qualification": "Author delivery receipt. Independent proof review and formal audit pending; no main landing.",
+  "removed_utc": "2026-09-14T20:54:36.247902+00:00"
+}

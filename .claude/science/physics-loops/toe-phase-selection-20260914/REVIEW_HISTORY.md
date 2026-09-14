@@ -62,3 +62,63 @@ Final block-1 source and delivery review, 2026-09-14 14:44 UTC:
   honest finite witnesses and resolution scope, no helper fingerprint debt,
   reviewed graph, correct output locations, one coherent four-file delta,
   no frozen baseline or audit-verdict edits. Review remains author-only.
+
+
+## Block 4 author review and conformance, 2026-09-14 16:43 UTC
+
+Personally read the complete public note and 771-line assembled primary
+runner. Reconstructed the path action by triangular residuals and separately
+by the tridiagonal inverse. Checked all-volume collision/quotient arguments,
+including common-plane type/color separation, upward endpoint columns,
+protected terminal stubs and distinct slots at physical crossings. The
+matrix chart's eight-real Jacobian, ambient star action, support boundary
+and measurable radius completion were reviewed separately. The discontinuous
+completion is not described as smooth or numerically stable. The finite DK
+fixture was read and extracted before historical routing; it is not passed
+off as a periodic source family. Spectral bounds are conditional on a uniform
+source mass, and full Gaussian conditionals are separated from formation.
+
+Eleven actual source faults failed relevant assertions against primary SHA
+6f1c835da1722f7892790e056b14113968e1cf15099bdd6836ed10f8df7a2d57.
+Compressed sources/stdout/stderr and exact faults are in review/block4_mutations/.
+Canonical execution exited zero in 11.927 seconds, envelope 180 seconds,
+fresh pre/post identity binding. Full compiler finite checks use every path
+and seam in the declared covers, not just totals. A later slot-identity
+assertion was included before the final mutations and canonical execution.
+
+Conformance section dispositions:
+1. Self-containment: all mathematical objects and proofs are in the note;
+   the primary embeds its scientific definitions and reads no repo inputs.
+2. Cache/execution: canonical cache fresh, correct output location, declared
+   envelope; no empty AUDIT_INPUT_PATHS declaration or helper.
+3. Scope: bounded-support conditional graph construction, named downstream
+   consumer; no full native/source/process/phase closure or axiom amendment.
+4. Negative claims: source no-go, negative-boundary and current-tier packet
+   classifiers all false. No negative theorem or N1--N8 PASS is claimed.
+5. Proof obligations: explicit conditional source, finite unit cell, eight
+   endpoints, positive precision, divisible covers; each construction step
+   proved. Larger physical source and process obligations remain open.
+6. Runner validity: complete source read; exact Schur checks, independent
+   full action expansion, coordinate/slot checks and eleven source mutations.
+7. Packets: no current-tier negative/helper packet applies. Scientific
+   checks are in the self-contained primary; no frozen-baseline check.
+8. Citation graph: serialized builder finished; final note hash matches the
+   graph. One new node, zero new edges, 5041->5042 nodes and 12519 edges.
+   Correct primary attachment, no helper. Manifest delta reviewed.
+9. Note structure: complete machine status, imports in plain language,
+   review record and reproduction. Trace is support to the named consumer.
+10. Propose/ratify: no ledger verdict, axiom or primitive change; no main
+    merge/push. Independent review and formal audit remain pending.
+11. Provenance: counts recomputed by final runner; main base and actual finite
+    source hashes recorded. Source fixture extraction is private evidence,
+    and the public template is independently stated rather than imported.
+12. Focused gates: vocabulary fix/report zero, Python compilation clean,
+    full changed content read. Commit-to-base whitespace check follows the
+    commit. Full pipeline/strict lint/combined evidence remain pending on
+    the exact integrated landing candidate; not claimed run per PR.
+
+The initial citation build preceded the final prose review receipt and had
+an old note hash. It was rerun after source freeze; the second completed
+graph matches the final note hash exactly. No source changed during final
+runner cache creation or mutations. Vocab was also checked on private block
+files after the earlier checkpoint; zero findings, no private science rewrite.

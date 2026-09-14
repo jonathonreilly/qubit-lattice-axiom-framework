@@ -1,0 +1,184 @@
+{
+  "primary": "/Users/jonreilly/Documents/Codex/toe-periodic-gaussian-codec-20260914/scripts/periodic_gaussian_full_payload_matrix_codec_2026_09_14.py",
+  "primary_sha256": "6f1c835da1722f7892790e056b14113968e1cf15099bdd6836ed10f8df7a2d57",
+  "mutations": [
+    {
+      "mutation": "full_fourth_payload",
+      "old": "rotated = np.r_[z[0], frame@z[1:]]",
+      "new": "rotated = np.r_[0, frame@z[1:]]",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 0.8265923750586808,
+      "stderr_tail": [
+        "                        ~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/full_fourth_payload.py\", line 101, in codec_checks",
+        "    assert max_inverse < 1e-10 and max_covariance < 1e-12 and max_product < 1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "dcf412f9718ef1f3e675339a2f239940102cec5784b8b136cbdc60fd8c7fdfb4"
+    },
+    {
+      "mutation": "payload_frame",
+      "old": "frame@z[1:]",
+      "new": "frame.T@z[1:]",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 0.560690833022818,
+      "stderr_tail": [
+        "                        ~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/payload_frame.py\", line 101, in codec_checks",
+        "    assert max_inverse < 1e-10 and max_covariance < 1e-12 and max_product < 1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "2fdfede2818f24fe0c48ed616f373bfda624edbe07edf9edcc6c6e37b963bb87"
+    },
+    {
+      "mutation": "matrix_measure_jacobian",
+      "old": "2*np.log(EPS)-5*np.log(d)",
+      "new": "2*np.log(EPS)-4*np.log(d)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 0.5179409169359133,
+      "stderr_tail": [
+        "            ~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/matrix_measure_jacobian.py\", line 145, in measure_checks",
+        "    assert abs(mass-1) < 1e-10",
+        "           ^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "c13f3118fb9bc5ea8da626dc7f11dedec8188f361ab587da2e8959865b1ea3b7"
+    },
+    {
+      "mutation": "closed_boundary_assignment",
+      "old": "return CLOSED_EPS if r==1 else ordinary(r-1)",
+      "new": "return ordinary(r) if r==1 else ordinary(r-1)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 0.5792124590370804,
+      "stderr_tail": [
+        "                         ~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/closed_boundary_assignment.py\", line 229, in closed_codec_checks",
+        "    assert s.simplify(back-r)==0",
+        "           ^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "2d0fd286de20961409c74f26390741b8e96e8b6119a5ae88889934916028f71e"
+    },
+    {
+      "mutation": "complex_relay_sign",
+      "old": "cross[1,h-1]=(-1)**h*sp.conjugate(aa)",
+      "new": "cross[1,h-1]=sp.conjugate(aa)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 0.706527707981877,
+      "stderr_tail": [
+        "                ~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/complex_relay_sign.py\", line 179, in relay_checks",
+        "    assert recovered==original",
+        "           ^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "f53d4d1187865a20beed45a16bc0b47464f292fda2d0fbc6339a2561b9ed8d95"
+    },
+    {
+      "mutation": "distinct_edge_type_planes",
+      "old": "e_index*self.colors+self.color_id(n)",
+      "new": "0*self.colors+self.color_id(n)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 3.1417902091052383,
+      "stderr_tail": [
+        "                  ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/distinct_edge_type_planes.py\", line 402, in coordinates",
+        "    assert occupancy[site] <= 4, ('Payload overflow',site,occupancy[site])",
+        "           ^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: ('Payload overflow', (64, 390, 1103), 5)"
+      ],
+      "mutant_sha256": "43493b43d2aeb26b14987ce4718f0371494f37da7b099e4630c85351e9999390"
+    },
+    {
+      "mutation": "coarse_color_columns",
+      "old": "index = self.color_id(n)*len(self.payloads)+h",
+      "new": "index = h",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 0.914193292031996,
+      "stderr_tail": [
+        "    path = self.route(n,e_index)",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/coarse_color_columns.py\", line 359, in route",
+        "    assert len(set(result)) == len(result), 'Lifted path self-intersection'",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: Lifted path self-intersection"
+      ],
+      "mutant_sha256": "bb63483d2ebc4541ced2ce54a9e4009499efaeb54c5f0cef3618462bec957225"
+    },
+    {
+      "mutation": "plane_above_both_endpoints",
+      "old": "max(n[2],destination[2])*self.side",
+      "new": "n[2]*self.side",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 6.18546841701027,
+      "stderr_tail": [
+        "    path = self.route(n,e_index)",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/plane_above_both_endpoints.py\", line 359, in route",
+        "    assert len(set(result)) == len(result), 'Lifted path self-intersection'",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: Lifted path self-intersection"
+      ],
+      "mutant_sha256": "110c4ed42ccfbd39d2bbaddb03b9a515ebc5f6a99b4d54bdc0b3194a2fda9fda"
+    },
+    {
+      "mutation": "crossing_slot_identity",
+      "old": "slot = registry[local_site].index(key)",
+      "new": "slot = 0",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 1.8069170829840004,
+      "stderr_tail": [
+        "               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/crossing_slot_identity.py\", line 412, in coordinates",
+        "    assert (site,slot) not in used_slots, 'Two variables share a physical payload slot'",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: Two variables share a physical payload slot"
+      ],
+      "mutant_sha256": "16a21778078ad2148f793e54aec2809e21f10cd342806f421d3b9ca19dbb641e"
+    },
+    {
+      "mutation": "whole_action_terminal_sign",
+      "old": "z[-1].conjugate()*(-1)**h*a*v",
+      "new": "z[-1].conjugate()*(-1)**(h+1)*a*v",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 3.978790667024441,
+      "stderr_tail": [
+        "                       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/whole_action_terminal_sign.py\", line 513, in whole_graph_energy_check",
+        "    assert largest_path_error < 1e-8",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "f0767b961f6d7a79f8db830945297e333b99f8fbaca90f8b41457dc78e10d65f"
+    },
+    {
+      "mutation": "spectral_lower_bound",
+      "old": "lower=min(mass,1)/(1+h*(1+b))**2",
+      "new": "lower=min(mass,1)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "seconds": 11.044005791074596,
+      "stderr_tail": [
+        "                            ~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-periodic-codec-mutations-o32tuaa2/spectral_lower_bound.py\", line 740, in spectral_checks",
+        "    assert eig[0]>=lower and eig[-1]<=upper",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "1bdbcd53f36959dd65b8cedf02a280875f6bcb3d79b235ce8be9bffd36cb7a83"
+    }
+  ],
+  "finished": true,
+  "all_caught": true
+}

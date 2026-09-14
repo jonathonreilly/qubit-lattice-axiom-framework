@@ -103,6 +103,7 @@ class Compiler:
         result.extend(walk(result[-1],right_arm[-1],2))
         result.extend(reversed(right_arm[:-1]))
         result.append(right)
+        assert len(result)-1 <= (3*self.radius+4)*self.side+16
         assert len(set(result)) == len(result), 'Lifted path self-intersection'
         assert all(sum(abs(a-b) for a,b in zip(x,y))==1 for x,y in zip(result,result[1:]))
         return result
@@ -123,6 +124,7 @@ class Compiler:
                 homes[site] = load
         occupancy = Counter(homes)
         local_roster = defaultdict(set)
+        used_slots = set()
         sizes = []
         seam_edges = 0
         digest = sha256()
@@ -155,6 +157,8 @@ class Compiler:
                         assert key in registry[local_site], 'Larger cover changes local role map'
                         slot = registry[local_site].index(key)
                         assert 0 <= slot < 4
+                        assert (site,slot) not in used_slots, 'Two variables share a physical payload slot'
+                        used_slots.add((site,slot))
                     digest.update(repr((n,e_index,j,site)).encode())
                     route_vertices += 1
         if registry is None:

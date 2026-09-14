@@ -1,11 +1,12 @@
 {
-  "time_utc": "2026-09-14T13:04:14.226304+00:00",
+  "time_utc": "2026-09-14T13:07:21.021710+00:00",
   "files": {
-    "BLOCK14_HARD_LIMIT_MAPPING.md": "04954eda0c67ea78a3d35ed30fe38eb962108d1eabe22436bdc7193c1243e833",
-    "block14_hard_limit_check.py": "a3265c41d0fe3e54ee33448e1aae2b10f13d718ff14ac249a3e4e901b9088ac0",
-    "BLOCK14_HARD_LIMIT_RUN.txt": "2279d9cc710fb9716bc5bf167c43b5ecca8f3e06a279f80ed5946d7df5f7a1e7"
+    "BLOCK14_HARD_LIMIT_MAPPING.md": "59c1f58707f12b2cdfb4bff09ee8d1a01e17622f75e5dabdcb9c85b33b6a10b1",
+    "block14_hard_limit_check.py": "61da48c660e0f6aaec9369ffee5acc5679e5a94929cca5c86dc79e888646ed68",
+    "BLOCK14_HARD_LIMIT_RUN.txt": "aca74d9404b7768ce5f652efaf0121a22f52963c297718ecb7f5e1d7925fdbf5"
   },
   "primary_exit": 0,
   "scope": "Personal direct cell-complex versus tensor-product check, 243 physical and 141 integer-neutral states. Not an independent review.",
-  "open": "Fixed-coupling neutral-ground-sector selection, hard-model Coulomb phase and finite-penalty phase stability."
+  "open": "Fixed-coupling neutral-ground-sector selection, hard-model Coulomb phase and finite-penalty phase stability.",
+  "additional_check": "Two-state neutral variational energy strictly below frozen basis energies; all 243 physical states considered. No infinite-volume sector or phase conclusion."
 }

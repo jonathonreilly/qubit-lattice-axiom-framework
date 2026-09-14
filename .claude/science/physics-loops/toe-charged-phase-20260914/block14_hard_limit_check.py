@@ -40,3 +40,14 @@ zero_all=np.flatnonzero(charges==0)
 assert np.max(abs(tensor[np.ix_(zero_all,zero_all)]-Z[np.ix_(zero,zero)]))<1e-12
 assert np.max(abs(1-np.cos(2*np.pi*allb/3)-1.5*allb**2))<1e-12
 print('One cube: 243 physical mod3 flux states, 141 integer-neutral states; exact tensor-shift mapping, finite-penalty charge changes, rate bound and diagonal potential checked. No phase or stability proof.')
+# Independent two-state variational comparison against the complete physical matrix.
+K=.8;lam=.6;E=len(edges)
+H=2*t*E*np.eye(243)-Z+np.diag(1.5*K*np.sum(physical**2,axis=1)+lam*(q/3)**2)
+i=pi[(0,)*6];j=pi[tuple(F[:,0])];r=np.count_nonzero(F[:,0])
+trial=H[np.ix_([i,j],[i,j])];upper=np.linalg.eigvalsh(trial)[0]
+expected=2*t*E+.75*K*r-np.sqrt((.75*K*r)**2+t*t)
+assert upper<=expected+1e-12 and upper<2*t*E
+frozen=np.flatnonzero(np.sum(abs(Z),axis=1)==0)
+assert len(frozen)>0 and np.min(np.diag(H)[frozen])>=2*t*E
+assert np.linalg.eigvalsh(H)[0]<=upper+1e-12
+print('Two-state neutral variational energy lies strictly below every frozen basis energy; frozen states counted:',len(frozen),'. This does not establish phase or thermodynamic sector selection.')

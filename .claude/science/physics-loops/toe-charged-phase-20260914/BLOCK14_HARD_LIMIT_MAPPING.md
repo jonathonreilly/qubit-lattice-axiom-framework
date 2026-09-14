@@ -84,3 +84,23 @@ in the kinetic note is uniform for mu_t>=0, and Duhamel gives
 Combining the two bounds proves commutation of these two limits at fixed
 box and time. The extensive bound still supplies no interchange with the
 thermodynamic or infrared limits. This is the exact boundary of the mapping.
+
+A useful variational check prevents importing the earlier frozen-ice wall
+into this different Hamiltonian. Assume every active original link has
+nonzero face curl, and choose one link incident on r faces. In the neutral
+sector, b=0 and b=F e_l are both allowed and connected with amplitude at
+least t. Their diagonal energies, after the common constant2t|E|, are
+0 and (3K/2)r. A two-state trial subspace therefore gives
+
+    E_ground <= 2t|E| + 3Kr/4 - sqrt[(3Kr/4)^2+t^2]
+             < 2t|E|.
+
+The off-diagonal amplitude can be larger if multiple original moves have
+the same flux action, which only improves this upper bound. In contrast,
+a frozen flux basis vector, annihilated by every nontrivial hopping term,
+has energy at least2t|E| for K,lambda>=0. Thus such frozen basis vectors
+cannot be global ground states of this specified hard Hamiltonian when
+t>0 and finite K. Disconnected mobile components, gaplessness and the
+infinite-volume neutral-sector question are not settled by this trial.
+The earlier ice wall used a different diagonal interaction; its conclusion
+must not be transplanted merely because both models have plaquette flips.

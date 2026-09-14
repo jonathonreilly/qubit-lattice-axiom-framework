@@ -1,1 +1,2 @@
 One cube: 243 physical mod3 flux states, 141 integer-neutral states; exact tensor-shift mapping, finite-penalty charge changes, rate bound and diagonal potential checked. No phase or stability proof.
+Two-state neutral variational energy lies strictly below every frozen basis energy; frozen states counted: 2 . This does not establish phase or thermodynamic sector selection.

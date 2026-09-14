@@ -28,3 +28,10 @@ uniformly in volume. Added that qualification, its limited finite-box
 threshold, and the fixed-box Duhamel comparison before preservation.
 The exact 243/141-state carrier-to-tensor comparison passes. No phase
 conclusion or retained status follows from that agreement.
+
+Final variational addition: the different electric diagonal matters. A
+neutral two-state trial has energy strictly below every frozen basis
+state for t>0, finite K and nonnegative penalties under the stated
+nonzero-curl condition. Verified against the complete single-cube physical
+matrix. This removes a mistaken transfer of the earlier ice frozen-ground
+wall; mobile-component selection and thermodynamic phase remain open.

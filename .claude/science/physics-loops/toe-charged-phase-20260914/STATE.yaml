@@ -20,7 +20,5 @@ formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Read primary soft-graviton and locality derivations; prove collision-invariant
-  and residue hypotheses explicitly, then test actual lattice dispersions and escape
-  conditions.
-last_checkpoint_utc: '2026-09-14T07:45:32.984705+00:00'
+next_action: Preserve and package the soft-spin2 conditional theorem and explicit lattice/preferred-frame escape tests, then rerank fresh obligations.
+last_checkpoint_utc: '2026-09-14T08:25:50.871957+00:00'

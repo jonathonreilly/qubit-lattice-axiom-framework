@@ -15,8 +15,8 @@ conserved-quantity classification and an unwrapped momentum domain. None is
 silently supplied by the lattice axioms or a finite TT covariance.
 
 Proposed independent derivation: establish collision-invariant completeness
-on a connected strictly convex dispersion domain using elastic collision
-manifolds; derive rank-one soft residues under stated analytic/generic-pole
+on connected momentum domains using rich elastic collision
+manifolds and noncollinear velocity images; derive rank-one soft residues under stated analytic/generic-pole
 conditions; use hard graviton participation to discriminate the relativistic
 and Galilean branches. Challenge actual cubic lattice dispersions, Umklapp,
 extra long-range modes, disconnected sectors and approximate IR identities.
@@ -26,3 +26,7 @@ Earlier campaign PRs motivate the target but are not scientific premises.
 Block 7 PR8115 constructively resolves the signed reference-bond graph map
 and disproves its specified local operand/statistics identification. More
 support-weight search on that code is not the next best TOE obligation.
+
+Progress: the collision proof needs no Hessian invertibility or rotational symmetry. Symmetric residue integrability gives a universal quadratic shell with species affine offsets. Explicit normal lattice collisions, improved stencils, Umklapp menu consistency and local qubit causal tails are checked. A dynamical preferred-frame alternative has an explicitly reconstructed mixed Ward identity and five quadratic modes; it remains a supplied comparator, not a native premise.
+
+08:29 UTC checkpoint: full collision/pole/common-shell proof, analytic-band boundary, constructive high-range approximation, Umklapp menu, XY causal tails and complete Einstein-aether quadratic/source escape are derived. Final source convention and mode-check scope clarified. Eight scientific check families passed. Packaging the coherent conditional milestone; no independent review or axiom conclusion.

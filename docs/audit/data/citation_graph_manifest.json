@@ -1,6 +1,6 @@
 {
- "edge_count": 12526,
- "node_count": 5052,
+ "edge_count": 12527,
+ "node_count": 5053,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4929,6 +4929,10 @@
   "finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_clock_transfer_disorder_and_spectral_gap_perimeter_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "0745c1636c56",
+   "out_degree": 1
   },
   "finite_controller_clean_event_census_cycles863_865_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",

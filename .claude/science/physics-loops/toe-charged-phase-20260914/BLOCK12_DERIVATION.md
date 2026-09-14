@@ -363,3 +363,154 @@ only that the algebra and nonzero exponential expectations, without the
 geometric/dynamical hypothesis, do not force a vanishing gap. It must never
 be described as disproving the finite-Z_N Coulomb phase or the literature's
 complete physical argument.
+
+## 9. A constructive spectral-filter replacement for the clustering shortcut
+
+There is a sharper route-local result than merely identifying missing relative
+clustering. It uses the actual locality of the change of Hamiltonian under a
+membrane shift. It yields a quantitative upper bound on a putative gap; it does
+not by itself force zero gap at fixed N.
+
+Assume a specified bounded finite-range Hamiltonian (or its thermodynamic
+GNS generator), a normalized ground vector Omega whose zero-energy eigenspace
+is one-dimensional, and a spectral gap Delta>0 above it in the sector reached
+by the operators below. Suppose there are unitary loop operators U_L,V_L with
+
+    U_L V_L=omega V_L U_L, |omega|=1, omega!=1,
+    |<U_L><V_L>| >= exp[-s L+o(L)].
+
+Let U_L be tensor-supported on a loop C_L. Require that
+H^V=V_L H V_L* differs from H only in a finite boundary region Y_L separated
+from C_L by d_L>=kappa L-o(L), with kappa>0. Assume an ordinary Lieb-Robinson
+commutator bound on U_L and the local terms of H^V-H, with constants mu,v>0
+and at most polynomial prefactors in L. Duhamel then gives, for real r,
+
+    ||tau_r^H(U_L)-tau_r^(H^V)(U_L)||
+       <= C_L exp[-mu d_L+mu v |r|],
+
+where C_L is polynomial in L. Explicitly, if the local commutator bound has
+prefactor c0 |C_L| ||b|| and J_L is the sum of the norms of terms in H^V-H,
+one may take C_L=c0 |C_L| J_L/(mu v), using
+integral_0^|r| exp(mu v u)du <= exp(mu v |r|)/(mu v).
+The trivial norm bound2 may always be used when this estimate is larger.
+The usual finite-range LR theorem supplies such a bound for finite-dimensional
+clock links; no loop-local clustering theorem for V_L is being assumed.
+
+Because V U V*=omega^-1 U, it follows EXACTLY that
+
+    ||tau_x(U) tau_y(V)-omega tau_y(V) tau_x(U)||
+      =||tau_(x-y)^H(U)-tau_(x-y)^(H^V)(U)||.
+
+The membrane support of V causes no problem here: the perturbation H^V-H is
+localized at its boundary and that is the object used in the LR estimate.
+
+For c>1 let f_n be the n-fold convolution of the uniform probability density
+on [-a,a], with a=c/Delta. This is a nonnegative even density supported on
+[-T,T], T=na, and its Fourier transform is
+
+    fhat_n(E)=[sin(aE)/(aE)]^n.
+
+For every |E|>=Delta, |fhat_n(E)|<=c^-n. Define
+A=integral f_n(x)tau_x(U)dx and B=integral f_n(y)tau_y(V)dy. Then
+<A>=<U>, <B>=<V>, and the gap gives
+
+    ||(A-<U>)Omega||, ||(A* -<U>*)Omega|| <= c^-n,
+
+and likewise for B. Cauchy-Schwarz thus bounds each ordered connected
+expectation by c^(-2n). Averaging the exact twisted commutator and using
+|x-y|<=2T yields the finite inequality
+
+    |1-omega| |<U><V>|
+      <= 2 c^(-2n)+C_L exp[-mu d_L+2 mu v n c/Delta].
+
+This derivation pays the geometric locality and relative-error cost explicitly.
+It does not use a claim that arbitrary averages preserve a group fusion law;
+only the original U,V need satisfy the algebra.
+
+Set n=floor(gamma L). If mu kappa>s, the lower bound on the product is
+incompatible with the upper bound whenever a gamma exists with
+
+    s/(2 log c)<gamma<Delta(mu kappa-s)/(2 mu v c).
+
+Consequently every such gapped realization obeys
+
+    Delta <= [c/log c] mu v s/(mu kappa-s).
+
+Choosing c=e minimizes this elementary constant:
+
+    Delta <= e mu v s/(mu kappa-s), provided mu kappa>s.
+
+Subexponential corrections and polynomial prefactors disappear after taking
+logarithms and dividing by L. For s=0, the same finite inequality rules out
+any positive Delta. For positive fixed s it only provides a positive upper
+bound. This is exactly the remaining distinction needed for the current phase
+campaign. One may optimize over valid LR parameters, but not over parameters
+for which no commutator estimate has been established.
+
+Application of the locality hypothesis to the ACTUAL clock Hamiltonian:
+
+    H=t sum_l(2-X_l-X_l*)
+      +K sum_p[1-(Z_boundary(p)+Z_boundary(p)*)/2].
+
+A membrane product V=product_l X_l^(v_l) leaves every electric term unchanged.
+Only magnetic plaquettes with (dv)_p !=0 mod N change. Each changed term has
+norm at most 2K |sin[pi(dv)_p/N]|. Thus for a unit membrane with boundary
+length P_V, J_L<=2K |sin(pi/N)| P_V. A linked Wilson loop U has its ordinary
+edge support on C_L, well separated from the boundary plaquettes although it
+intersects the membrane itself. Two offset square Hopf loops can have
+P_U=P_V=8L and d_L>=L-O(1) in a fixed lattice metric. Their exact Weyl phase
+is omega=exp(2pi i/N). The LR prefactor grows only polynomially with L.
+This verifies the distinctive geometric hypothesis without making V a
+fictitious tensor-local boundary operator.
+
+What is still missing: perimeter lower bounds for BOTH these unitary loop
+families in the SAME actual continuous-time clock ground state, with coefficients
+strong enough for a useful bound, or a controlled widening/dressing construction
+for which s tends to zero while the geometry and locality constants remain
+adequate. Fixed Euclidean perimeter bounds alone do not supply these hypotheses
+for this H. A finite positive transfer-defined H has the exact observable map
+in section7 but its quasilocal LR estimate is still unproved here. Combining
+one model's perimeter bounds with the other model's locality would be invalid.
+
+Even success at Delta=0 would show gaplessness, not a simple photon pole or a
+native record-derived phase. Ground-space degeneracy also requires a separate
+argument: if the spectral filter projects onto a multidimensional ground space,
+the connected-expectation estimate above need not hold. This boundary is part
+of the theorem, not an ignorable finite-volume detail.
+
+### 9.1 One-filter proof and degenerate ground sectors
+
+An alternative proof filters U alone. It gives
+
+    |1-omega| |<U><V>|
+       <=2 c^-n+C_L exp[-mu d_L+mu v n c/Delta],
+
+and the same optimized asymptotic bound on Delta. Each ordered connected
+expectation is bounded by c^-n using the norm-one V. This proof needs only
+
+    P0 U Omega=<U>Omega, P0 U* Omega=<U>*Omega,
+
+where P0 projects onto the entire zero-energy subspace. V need not act as a
+scalar on that subspace. Thus a one-dimensional ground space is sufficient,
+but not necessary. An exactly locally indistinguishable ground sector can
+also satisfy the condition for the finite contractible Wilson loops. That
+property must be checked; degeneracy alone neither establishes nor refutes it.
+If the two ground-sector remainders instead have norm at most ell_L, the
+right side acquires at most2 ell_L. The same conclusion holds when ell_L
+is exponentially smaller than the perimeter product (decay rate greater
+than s). An unsuppressed ground-sector remainder invalidates this proof.
+
+For an explicit dimension-independent LR source use Nachtergaele-Ogata-Sims,
+math-ph/0603064v1, Theorem2.1, Eqs2.2/2.17, with proof pp3-4 and setup pp1-2.
+Clock links can be treated as sites at their edge centers with the Manhattan
+metric. This set is a finite union of translated cubic lattices, so
+F(r)=(1+r)^-4 has finite uniform sum and convolution constants, as required
+by Eqs1.3-1.4. Every spatial plaquette's four link centers have diameter1.
+After removing identity constants, electric onsite terms have norm<=2t and
+magnetic four-link terms norm<=K. The interaction norm of Eq1.7 is therefore
+bounded by max(2t+4K,16K exp(mu)), independently of N and volume. The theorem
+then supplies a finite velocity and a prefactor polynomial (indeed at most
+linear after summing boundary terms) in L. No exponential N^(2|C|) prefactor
+is hidden in the application. The earlier Nachtergaele-Sims single-site
+bound could alternatively be applied by telescoping the product Wilson loop;
+using its generic many-site prefactor without telescoping would be too weak.

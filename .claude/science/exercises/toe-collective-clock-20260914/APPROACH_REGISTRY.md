@@ -9,6 +9,12 @@
 | 5 | Variational | Higher-form trial excitation | 2,4 | H8 | Actual structure-factor lower bound plus double commutator | Weaker gap upper bound | unexplored | Exact clock commutator | Stop if static lower bound restates Coulomb phase |
 | 6 | Topology | Finite duality anomaly | 4 | H14 | Exclude all gapped/duality-broken alternatives in selected model | Generic anomaly alone weaker than target | unexplored | Prime/composite-N classification | Stop if topological order/first order escape remains |
 
-No route is candidate-complete. Different methods used by this one author do
+Update: a new bounded spectral-filter gap/perimeter theorem is derived in
+BLOCK12_DERIVATION sections9-9.1. It pays the boundary-defect locality step and
+replaces an assumed relative clustering bound. It does not give zero gap at
+fixed positive perimeter coefficients. The full photon-phase route remains
+active; its controlled thickening/source match is still open.
+
+No full-phase route is candidate-complete. Different methods used by this one author do
 not create independent review. A PR is warranted only if a new bounded theorem
 or decisive mechanism is actually established, not merely by this registry.

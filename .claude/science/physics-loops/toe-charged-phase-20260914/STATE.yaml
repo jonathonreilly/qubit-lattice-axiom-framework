@@ -3,7 +3,7 @@ mode: campaign
 status: active
 branch: physics-loop/toe-charged-phase-20260914
 worktree: /Users/jonreilly/Documents/Codex/toe-charged-phase-20260914
-main_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
+main_revision: 5deabeb698a27c2c3f68c5df685af2521ef15307
 planning_revision: 9cff766069e8f66b4cc5c36888b1e71600b8888e
 start_utc: '2026-09-14T01:09:34Z'
 deadline_utc: '2026-09-14T13:09:34Z'
@@ -20,7 +20,6 @@ formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Investigate thickened/entropic complementary loops and source-conditioned
-  temporal blocking after deriving the exact finite-step disorder map; ordinary
-  clustering and the original perturbative literature do not yet close the phase.
-last_checkpoint_utc: '2026-09-14T11:08:59.477442+00:00'
+next_action: Personally investigate collective fixed-payload phase bounds and operator
+  widening after PR8120; continue until 13:09:34 UTC.
+last_checkpoint_utc: '2026-09-14T11:37:25.508914+00:00'

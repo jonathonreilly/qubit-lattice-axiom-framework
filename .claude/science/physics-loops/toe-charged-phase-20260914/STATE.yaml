@@ -20,5 +20,5 @@ formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Derive source-curvature variational and dual-flow identities, read primary stochastic-matrix and ice sources, and test the actual cubic-ice move graph.
-last_checkpoint_utc: '2026-09-14T08:39:50.937071+00:00'
+next_action: Verify positive closed-history winding, complete actual zero-flux census, and seek a volume-uniform flow comparison after explicit finite membrane lower witnesses.
+last_checkpoint_utc: '2026-09-14T09:02:33.473449+00:00'

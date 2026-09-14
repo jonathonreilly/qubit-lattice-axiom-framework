@@ -1,0 +1,33 @@
+{
+  "syntax": "passed",
+  "cache": "fresh",
+  "source_sha256": "93009e775551058256922f967814600e748ea7d39cf7c6184b1a3effb474f423",
+  "local_links": [
+    "scripts/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.py",
+    "logs/runner-cache/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.txt",
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/REVIEW_HISTORY.md"
+  ],
+  "five_resolution_lines_minimum_40_characters": "passed",
+  "vocabulary": {
+    "files": [],
+    "schema_version": 1,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    }
+  },
+  "mutations_detected": 10,
+  "independent_review": "pending",
+  "integration_gate": "deferred section 12",
+  "citation_change": "one intended new note node; no new scientific dependency edge",
+  "citation_graph": {
+    "nodes": 5042,
+    "edges": 12519,
+    "added": [
+      "soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_bounded_theorem_note_2026-09-14"
+    ],
+    "removed": [],
+    "rewired": []
+  }
+}

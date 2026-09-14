@@ -20,6 +20,7 @@ formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Read actual compact tensor models, derive the gauge-invariant operator
-  and constrained spectrum, and test controlled routes to linear helicity-two propagation.
-last_checkpoint_utc: '2026-09-14T05:24:59.346285+00:00'
+next_action: Cold-review the explicit finite-clock tensor Hamiltonian, compact-character
+  bound, scalar penalty and source comparisons; package a milestone only after mathematical
+  and value gates, then rerank.
+last_checkpoint_utc: '2026-09-14T05:48:31.152204+00:00'

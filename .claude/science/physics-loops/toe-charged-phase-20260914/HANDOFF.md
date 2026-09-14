@@ -125,3 +125,5 @@ bridge is claimed. Source comparison records a printed KLP integration
 formula discrepancy and uses the rederived differential equations instead.
 
 2026-09-14T05:23:52.914041+00:00: block 4 delivered as PR #8111 at 714c94d0a93977b3ecd7e4b88812c15771541b17. Independent review pending; exact remote verified, all science clean and scratch checkout removed. Block 5 begins a native dynamical-geometry discriminator: compact local tensor constraints versus linear helicity-two propagation. Continue personally until 13:09:34 UTC.
+
+2026-09-14T05:48:31.152204+00:00: block 5 working derivation has an explicit commuting integer constraint/curvature complex and bounded finite-clock Hamiltonian. The constrained small-field sector has two cubic modes. A regular lifted-character theorem excludes linear dispersion in that class; finite penalties leave a nilpotent indefinite scalar comparator. Independent real-space/Fourier scalar-source minimizations agree. These are author checks, not a ground-state phase proof, independent review or an axiom wall. Continue personally.

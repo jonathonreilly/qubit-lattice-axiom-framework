@@ -1,0 +1,18 @@
+[
+  {
+    "L": 3,
+    "Fourier_vs_real_variational_field_error": 1.366962099069724e-15,
+    "actual_metric_scalar_constraint_error": 4.163336342344337e-17,
+    "L_static_energy_over_g": 0.4999999999999998,
+    "N_static_energy_over_g": -0.08024691358024691,
+    "independent_inverse_Laplacian_value": -0.08024691358024691
+  },
+  {
+    "L": 5,
+    "Fourier_vs_real_variational_field_error": 8.506650245321268e-16,
+    "actual_metric_scalar_constraint_error": 2.220446049250313e-16,
+    "L_static_energy_over_g": 0.5,
+    "N_static_energy_over_g": -0.0826666666666666,
+    "independent_inverse_Laplacian_value": -0.08266666666666664
+  }
+]

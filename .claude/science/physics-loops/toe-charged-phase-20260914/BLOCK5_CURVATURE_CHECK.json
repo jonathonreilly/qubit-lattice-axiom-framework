@@ -1,0 +1,28 @@
+[
+  {
+    "L": 3,
+    "sites": 27,
+    "G_R_zero": true,
+    "R_G_transpose_zero": true,
+    "C_S_transpose_zero": true,
+    "trace_R_equals_2S": true,
+    "R_symmetric": true,
+    "largest_R_character_coefficient": 4,
+    "largest_C_character_coefficient": 2,
+    "maximum_R_row_l1": 24,
+    "maximum_C_row_l1": 10
+  },
+  {
+    "L": 5,
+    "sites": 125,
+    "G_R_zero": true,
+    "R_G_transpose_zero": true,
+    "C_S_transpose_zero": true,
+    "trace_R_equals_2S": true,
+    "R_symmetric": true,
+    "largest_R_character_coefficient": 4,
+    "largest_C_character_coefficient": 2,
+    "maximum_R_row_l1": 24,
+    "maximum_C_row_l1": 10
+  }
+]

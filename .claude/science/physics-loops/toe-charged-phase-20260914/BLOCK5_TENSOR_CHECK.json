@@ -1,0 +1,182 @@
+{
+  "polynomial_spaces": [
+    {
+      "degree": 0,
+      "kind": "vector",
+      "variables": 6,
+      "rank": 6,
+      "nullity": 0
+    },
+    {
+      "degree": 1,
+      "kind": "vector",
+      "variables": 18,
+      "rank": 18,
+      "nullity": 0
+    },
+    {
+      "degree": 2,
+      "kind": "vector",
+      "variables": 36,
+      "rank": 30,
+      "nullity": 6
+    },
+    {
+      "degree": 0,
+      "kind": "scalar",
+      "variables": 6,
+      "rank": 6,
+      "nullity": 0
+    },
+    {
+      "degree": 1,
+      "kind": "scalar",
+      "variables": 18,
+      "rank": 10,
+      "nullity": 8
+    },
+    {
+      "degree": 2,
+      "kind": "vector_trace",
+      "variables": 36,
+      "rank": 36,
+      "nullity": 0
+    },
+    {
+      "degree": 3,
+      "kind": "vector_trace",
+      "variables": 60,
+      "rank": 55,
+      "nullity": 5
+    }
+  ],
+  "mode_spectra": [
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.7
+      ],
+      "physical_pairs": 2,
+      "spectra": [
+        {
+          "model": "L",
+          "frequencies": [
+            0.3272011460860122,
+            0.3272011460860122,
+            0.32720114608601225,
+            0.32720114608601225
+          ],
+          "expected": 0.3272011460860123
+        },
+        {
+          "model": "N",
+          "frequencies": [
+            0.6677574409918623,
+            0.6677574409918623,
+            0.6677574409918627,
+            0.6677574409918627
+          ],
+          "expected": 0.667757440991862
+        }
+      ]
+    },
+    {
+      "k": [
+        0.2,
+        0.7,
+        -1.1
+      ],
+      "physical_pairs": 2,
+      "spectra": [
+        {
+          "model": "L",
+          "frequencies": [
+            2.189498079469356,
+            2.189498079469356,
+            2.189498079469357,
+            2.189498079469357
+          ],
+          "expected": 2.189498079469357
+        },
+        {
+          "model": "N",
+          "frequencies": [
+            1.2583322295800898,
+            1.2583322295800898,
+            1.258332229580091,
+            1.258332229580091
+          ],
+          "expected": 1.25833222958009
+        }
+      ]
+    },
+    {
+      "k": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "physical_pairs": 2,
+      "spectra": [
+        {
+          "model": "L",
+          "frequencies": [
+            49.97039123320926,
+            49.97039123320926,
+            49.97039123320926,
+            49.97039123320926
+          ],
+          "expected": 49.97039123320929
+        },
+        {
+          "model": "N",
+          "frequencies": [
+            3.5693136595149464,
+            3.5693136595149464,
+            3.569313659514949,
+            3.569313659514949
+          ],
+          "expected": 3.5693136595149495
+        }
+      ]
+    }
+  ],
+  "finite_penalty_scalar_block": {
+    "kinetic_determinant": "-J**2/2",
+    "fourth_power_zero": true,
+    "third_power_generic_nonzero": true,
+    "scalar_characteristic_polynomial": "lambda**4",
+    "matrix_exponential_vs_cubic_error": 1.734723475976807e-18
+  },
+  "independent_real_space_source_minimization": [
+    {
+      "L": 3,
+      "sites": 27,
+      "integer_G_S_transpose_zero": true,
+      "scalar_source_sum": 0.0,
+      "minimum_energy_over_g": 0.5000000000000002,
+      "independent_contact_prediction": 0.5,
+      "constraint_residual": 3.462508058049707e-15,
+      "disjoint_neutral_cross_energy_over_g": 5.7462715141731735e-16,
+      "constraint_ranks": [
+        78,
+        26
+      ]
+    },
+    {
+      "L": 5,
+      "sites": 125,
+      "integer_G_S_transpose_zero": true,
+      "scalar_source_sum": 0.0,
+      "minimum_energy_over_g": 0.5,
+      "independent_contact_prediction": 0.5,
+      "constraint_residual": 1.414233313790092e-15,
+      "disjoint_neutral_cross_energy_over_g": -4.111294638065033e-16,
+      "constraint_ranks": [
+        372,
+        124
+      ]
+    }
+  ]
+}

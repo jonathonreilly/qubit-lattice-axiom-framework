@@ -1,0 +1,155 @@
+{
+  "primary_sha256": "cf6de086b1415612b4ce13c8445b5c7bfda81938372466bf6473b42467af0f4c",
+  "results": [
+    {
+      "name": "atomic_composite_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(G - pred))",
+      "elapsed_sec": 4.282402666984126,
+      "source_sha256": "0444c83a04ce550ce377aa53cc6fe33def76e977c76e6909bc861015fa0ac981",
+      "stderr_tail": [
+        "                                                                           ~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/atomic_composite_sign.py\", line 50, in atomic_checks",
+        "    assert np.max(abs(G - pred)) < 2e-14",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "mirror_velocity_orientation",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert abs(sig - (-1) ** r)",
+      "elapsed_sec": 4.167209540959448,
+      "source_sha256": "4cfa9a9bd872ee3fe7afa1ffba7fb35eac804a5ff6849a93da58d5407344ecba",
+      "stderr_tail": [
+        "                                       ~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/mirror_velocity_orientation.py\", line 108, in slab_checks",
+        "    assert abs(sig - (-1) ** r) < 1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "mirror_kernel_recurrence",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(hp @ V - V @ s))",
+      "elapsed_sec": 4.172680541058071,
+      "source_sha256": "f3714f6e4adf2bdafaa0490e14518441c075d816dd978a2ed88d138229d97688",
+      "stderr_tail": [
+        "                                       ~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/mirror_kernel_recurrence.py\", line 89, in slab_checks",
+        "    assert np.max(abs(hp @ V - V @ s)) < 1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "quadratic_auxiliary_weight",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(actual - speed",
+      "elapsed_sec": 4.122914041043259,
+      "source_sha256": "1ac2e112db0950ba628fa70bcf31407627fdef739766995dfb5a95161a02f32b",
+      "stderr_tail": [
+        "                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/quadratic_auxiliary_weight.py\", line 144, in gaussian_dilation_checks",
+        "    assert np.max(abs(actual - speed * np.cos(k[a]) * pauli[a])) < 1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "Feshbach_correction_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert min(abs(np.linalg.eigvalsh(F) - e))",
+      "elapsed_sec": 4.097335124970414,
+      "source_sha256": "80a00007e5d71e51b3b4baf578a3dc6f364f036e39b7610b23d8035899cb3a08",
+      "stderr_tail": [
+        "                                                                                                                                                                      ~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/Feshbach_correction_sign.py\", line 193, in feshbach_checks",
+        "    assert min(abs(np.linalg.eigvalsh(F) - e)) < 1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "fermionic_CAR_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(A-scalar",
+      "elapsed_sec": 4.440466583007947,
+      "source_sha256": "10a375a9061e33467ff3e018958cb17648b6a9ac2245ca750cbdacbcad183a02",
+      "stderr_tail": [
+        "                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/fermionic_CAR_sign.py\", line 404, in complex_second_order_check",
+        "    assert np.max(abs(A-scalar*np.eye(1<<nb)))<1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "optical_phase_space_factor",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert abs(total / expected - 1)",
+      "elapsed_sec": 1.460518333944492,
+      "source_sha256": "198f400893f1aef2ebf66d58b794367f1a423de2c7622c16b48182dc10e4c9a5",
+      "stderr_tail": [
+        "    r=optical(kind,3,1.,omega)",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/optical_phase_space_factor.py\", line 252, in optical",
+        "    assert abs(total / expected - 1) < 0.001",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "quartic_Grassmann_antisymmetry",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert len(omega) == 240",
+      "elapsed_sec": 4.103637624997646,
+      "source_sha256": "c2fafaed94f95b9ddde393f3faf3c4ffbf0e1e450d4af84594ea037ab8e273a2",
+      "stderr_tail": [
+        "                               ~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/quartic_Grassmann_antisymmetry.py\", line 368, in spin10_checks",
+        "    assert len(omega) == 240 and bound == 2560 and omega[0, 1, 14, 15] == 8",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "fourth_order_counterterm",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(H4 - np.diag(pred)))",
+      "elapsed_sec": 4.01121033297386,
+      "source_sha256": "cb6ed92d2428f7f535dfcc6f488d5c572af97b7a4f4e6c4c1af5218a61c99782",
+      "stderr_tail": [
+        "                                                                                          ~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/fourth_order_counterterm.py\", line 168, in fourth_order_checks",
+        "    assert np.max(abs(H4 - np.diag(pred))) < 1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "Spin10_Casimir_normalization",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(cas - 45 / 4",
+      "elapsed_sec": 3.8830614590551704,
+      "source_sha256": "1619e202ae12e6508ead805137fcdaaf9015e917773a0d5daf6ba288f33d6d00",
+      "stderr_tail": [
+        "                               ~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block6-mutations-xtkaexqv/Spin10_Casimir_normalization.py\", line 329, in spin10_checks",
+        "    assert np.max(abs(cas - 45 / 4 * np.eye(16))) < 1e-14",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    }
+  ]
+}

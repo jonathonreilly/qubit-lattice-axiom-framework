@@ -1,6 +1,6 @@
 {
  "edge_count": 12522,
- "node_count": 5047,
+ "node_count": 5048,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12247,6 +12247,10 @@
    "out_degree": 4
   },
   "local_record_quench_finite_energy_and_ground_overlap_bounded_theorem_note_2026-09-04": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

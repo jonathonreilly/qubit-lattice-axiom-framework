@@ -90,15 +90,5 @@
     "Exchange test now decodes the actual directed source/target formulas, including the closing reversed bond, and uses physical onsite A/B hopping rather than lifting the target.",
     "Reference graph map includes explicit incidence CZs and orientation Zs for the sorted-cell target; dimension equality is not used as the isometry proof."
   ],
-  "timestamp_utc": "2026-09-14T07:21:23.972482+00:00",
-  "final_private_check_sources": {
-    "block7_encoding_check.py": "1a2ba94480a9243dd7fc714c8a523365d8588438127f38b09dea76a5aad6e8ee",
-    "block7_graph_isometry_check.py": "8db5ec01979e2587dcd0748f18b8be0641b66944d6f2f2b7cbc466ac1ac6c9c1"
-  },
-  "final_review_refinements": [
-    "Full physical FSWAP polynomial unitarity and constraints, fixed-two-particle spectator control",
-    "Explicit composition notation for the joint projection",
-    "Actual sorted-cell target, incidence CZ and orientation Z conjugations",
-    "Complete minimal controlled-Pauli and CZ dense phase checks"
-  ]
+  "timestamp_utc": "2026-09-14T07:21:23.972482+00:00"
 }

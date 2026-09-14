@@ -1,8 +1,56 @@
-# Block 7 working derivation — local loaders and fermionic hopping
+# Local reference encodings: an exact graph map and a fermionic exchange boundary
 
-Author proposal; current main b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf.
-All conclusions below have supplied Hilbert space, encoding and operator
-identifications. No framework axiom, physical time or native compiler is inferred.
+**Status:** proposed_retained
+**Date:** 2026-09-14
+**Claim type:** bounded_theorem
+
+Author-proposed conditional mathematics; actual source status conditional-support.
+Independent scientific review is pending. This is neither a general obstruction
+to fermions on qubits nor an axiom-forcing result.
+
+A controlled-Pauli circuit explicitly connects the open no-reference-bond and
+reference-bond encodings, preserving every logical phase and returning the
+added ancillas under its inverse. On the square it supplies the previously
+missing map between 76 and 80 edge qubits. Separately, the specified bounded
+local hopping grammar fails an actual six-port two-particle exchange. Changing
+occupation-basis phases or static edge flux cannot fix that grammar. A general
+commutator argument gives support, weight, approximation and perturbation-order
+bounds for any representative under an encoding with local occupation-bit
+loaders. These results separate a constructive preparation transfer from the
+remaining fermionic-operator obligation.
+
+**Runner:** [self-contained primary](../scripts/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.py).
+**Receipt:** [canonical cache](../logs/runner-cache/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.txt).
+**Review:** [author record](../.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/REVIEW_HISTORY.md).
+
+## Premises and quantified claims
+
+| Supplied object | Derived statement | Scope limit |
+|---|---|---|
+| Isometry E and physical Hermitian unitary representatives of occupation-qubit X | Sharp operator-norm support obstruction for a specified CAR hopping | A local representative of a qubit X is an explicit hypothesis, not a property of every fermion encoding |
+| Commuting disjoint local loaders and a fixed cell order | Interaction-weight bound and conditional perturbation-order selection rule | Direct compression or an analytic fixed-box expansion with invariant unperturbed resolvents |
+| Open L^d grid, d>=2, with every nearest-neighbor stream available | An ordering-independent diverging weight/radius lower bound | One dimension and a special indivisible global update word are not excluded |
+| Fixed six-port loop/D code, directed bounded operand grammar and occupation identification | Exact exchange mismatch, invariant under occupation-preserving rephasing | Changing the operator grammar, code constraints or physical identification is a different route |
+| BKSF graph, selected short paths and positive-X ancillas | Signed local Clifford edge-addition isometry with returned ancillas | Bounded-range abstract edge-qubit gates; physical-site routing and autonomous genesis are separate |
+| Ordinary fixed-parity BKSF or one distinguished reference mode | Explicit algebraic alternatives preserving local even matter operators | These are known/supplied encoding architectures, not framework-selected particle constructions |
+
+All Hilbert spaces, CAR operators, graph edges, constraints, occupation maps,
+initial ancilla states and circuit gate sets are supplied model data. Circuit
+layer number is not physical time. No unmerged campaign result is a scientific
+premise. The note gives its own operator proofs and reconstructs all scientific
+checks without importing historical runners. The general Jordan-Wigner/BKSF
+principles and Clifford changes of fermion encoding have prior art; the repo
+review object is the explicit missing graph map and the quantified failure of
+the specified local-loader/operand composition.
+
+The state comparison uses current main
+`b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf`. The closest current notes are
+`CYCLE703_BKSF_PATCH_TABLEAU_COVARIANCE_NOTE_2026-07-25.md`,
+`CYCLE703_LOCAL_GAUSS_HELD_PATCH_GRAMMAR_ADDENDUM_2026-07-25.md`, and
+`CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md`, all under
+`docs/work_history/repo/review_feedback/`. Their relevant graph and logical
+operator definitions are restated below. Their historical PASS counts and
+preparation algorithms are not treated as rerun evidence or scientific authority.
 
 ## 1. A representation-independent commutator test
 
@@ -484,3 +532,154 @@ changed code require their own tests. The explicit exchange witness already
 lies in even particle number, so that particular grammar is not repaired by
 simply declaring parity superselection. None of these statements rules out
 fermions on qubit lattices or forces a framework axiom update.
+
+## Proof obligations and falsification evidence
+
+| Obligation | Proof mechanism | Different check of the load-bearing step |
+|---|---|---|
+| Fermionic hopping and local reference phases | CAR/Jordan-Wigner expansion and explicit even-cell embedding | Dense annihilation matrices; every local reference column for q=1,2,6 |
+| Arbitrary representative obstruction | Compression commutator and norm-contractive joint-odd projection | Full small-matrix unitary commutators, exhaustive low-weight Pauli syndromes and degree-two products |
+| Same code and actual exchange | Signed stabilizer quotient, unique occupation eigenspaces and closed configuration paths | Integer CAR actions versus independently decoded physical A/B words, including actual directed orientation |
+| General support growth | Triangle inequality on a shortest grid path, then lattice volume bound | Several dimensions/sizes/orders and an explicit long snake chord; finite samples do not prove the family theorem |
+| Constructive graph equivalence | Controlled-Pauli conjugation of every A/B, D, new loop and logical loader | All 64 dense Pauli conjugations for a minimal edge addition; exact full signed graph maps through open L4 |
+| Known constructive escape | Fixed-even BKSF and an explicitly marked last reference mode | Dense code isometries, direct hopping intertwining and the reference/global-parity identity |
+
+On the four-cell graph, the exchange and one-particle paths have relative
+fermion/local amplitudes -1 and +1. A fifth pendant cell carrying a stationary
+spectator repeats both paths at fixed particle number two, preserving the
+same relative mismatch and static-flux test. The graph map checks the actual
+76->80, 156->168, 540->594 and 1296->1440 edge-qubit pairs, all logical X/Z
+and D phases, full stabilizer-group images, incidence-order gauges and
+orientation signs. Removing each added controlled-Pauli map loses its required
+cycle character. These are author checks, not an independent review.
+
+## No-Go Discipline Gate
+
+### N1 — examined routes and live alternatives
+
+| Route family | Disposition in this note | Matching mechanism |
+|---|---|---|
+| Stabilizer-coset optimization and arbitrary off-code/non-Pauli completion | ATTEMPTED: excluded for a representative disjoint from the specified loader | Section 1 applies to arbitrary compression, including leakage; it is not a greedy-decoder failure |
+| Low-weight Hamiltonian sums and analytic perturbative generation | ATTEMPTED: direct norm gap and minimum possible perturbation order within stated assumptions | Joint-odd operator sector in Section 2; nonperturbative code changes remain open |
+| Returned-ancilla local circuit synthesis | ATTEMPTED: finite-depth light-cone bound for the named hopping gate | Section 5 allows gates throughout the volume and fixed ancillas |
+| Mode-order optimization | ATTEMPTED: every total cell order has a long index gap on the stated grid | Section 4 uses a general path/volume argument, not a search over selected orders |
+| Static edge flux and occupation-basis rephasing | ATTEMPTED: cannot repair the actual closed exchange ratio | Section 6 uses the same directed moves in exchanged and unexchanged histories |
+| Local reference-bond graph extension | ATTEMPTED: positively constructed; preserves the loaders and transfers preparation | Section 8 closes graph equivalence while preserving the preceding obstruction |
+
+These are author-proposed proofs/tests, not prior ratified no-gos. Ordinary
+fixed-parity BKSF, a distinguished global reference, changed gauge constraints,
+nonlocal odd loaders, a new operand algebra, and a specially composed global
+update remain live alternatives. The table is a packet search record, not a
+claim of exhaustive impossibility.
+
+### N2 — one obstruction and a separate positive obligation
+
+The direct support, weight and finite-depth consequences share the same local
+loader/fermionic-hop incompatibility; they are not counted as independent axiom
+walls. The graph-isometry obligation is constructively closed for the stated
+open graphs. That closure preserves the loader and therefore does not close
+the hopping obligation. No independence claim is made about native selection,
+state formation, metric dynamics or physical clock interpretation.
+
+### N3 — hidden hypotheses
+
+The total occupation order, local physical X representatives, independent
+availability of the specified hopping gates, fixed loop/D sector, directed
+operand formulas, empty spectators in the first exchange witness and the
+stationary spectator in the fixed-number witness are explicit. The perturbative
+claim assumes invariant H0 resolvents and an analytic fixed-box expansion.
+The circuit bound assumes bounded-range unitary gates. The graph map assumes
+available |+> ancillas and prescribed short paths. None is silently selected
+by the axioms or by a numerical agreement.
+
+### N4 — residual matching
+
+The current-main patch note reports growing representatives and an unconstructed
+76/80 graph isometry. The present proof replaces the representative search
+with a general commutator invariant and supplies the signed graph map. The
+held-grammar note tests projector/covariance properties without a global
+matter-state intertwiner; the present exchange tests that missing intertwiner.
+The old Cycle232 uniform-reference parity failure concerns different constraints
+and is not used against the current local-D code. Literature BKSF and two-
+dimensional gLU equivalences are constructive prior art, not negative witnesses.
+
+### N5 — resolution and rhetoric
+
+Per operator, matrix commutators and Pauli phases are exact. Per cell, every
+q=6 local reference column is checked. Per mode, every logical X/Z and every
+stream in the stated finite graphs is compared in a signed stabilizer quotient.
+Per block, the full eight-factor closed paths test actual multi-particle
+composition. The grid, joint-syndrome and controlled-edge proofs supply the
+quantified family statements; finite size/rank counts do not. No thermodynamic
+phase, arbitrary QCA classification or all-encoding no-go is claimed.
+
+### N6 — constructive partial closure
+
+The explicit Clifford map transfers a correctly phased reference-graph
+preparation to the patch graph and returns the extra qubits. The ordinary
+fixed-even encoding and marked-reference construction retain local even CAR
+operators by giving up the problematic local all-parity loader condition.
+These are architectural choices within supplied qubit models. No axiom or
+primitive update is requested or inferred.
+
+### N7 — strongest surviving alternatives
+
+The locality test does not apply when the physical representative of an
+occupation-qubit X is nonlocal, when the low-energy code changes, or when only
+a special whole update word is required and its factors need not separately
+match the stated hopping. The fixed bounded grammar nevertheless fails under
+all occupation-preserving phase choices in its declared code, including an
+even two-particle witness. A successful replacement must exhibit its actual
+state/operator intertwiner; a dimension count or one-particle spectrum is
+insufficient for that particular claim.
+
+### N8 — cross-cycle and novelty boundary
+
+Earlier pair-shadow and global-reference examples already exposed related
+statistics/preparation issues. This result does not rebrand those principles
+as a new universal obstruction. It gives a general same-encoding norm/weight
+bound, an actual six-port exchange discriminator, and the missing signed
+local graph isometry. The native physical realization remains open, and
+independent review is required before these results are used as retained facts.
+
+## Sources, reading limits and reproduction
+
+[Setia, Bravyi, Mezzacapo and Whitfield](https://arxiv.org/abs/1810.05274v2)
+provide the standard superfast encoding and loop-code construction. The ordinary
+encoding section and Appendix A were read. [Chen and Xu](https://arxiv.org/abs/2201.05153v1)
+study finite-depth Clifford/gLU equivalence in two dimensions; the introduction,
+gLU definitions and BKSF comparison were read. Their general classification is
+not imported as a three-dimensional theorem. The present graph addition is
+proved directly. The committed reading ledger records source hashes and exact
+review scope; whole-paper or historical-runner review is not claimed.
+
+Run the paired primary with Python 3, NumPy and SciPy. It consumes no files or
+unmerged scientific dependencies. The general conclusions rest on the proofs
+above; the runner provides consequential falsifiers. Canonical execution uses
+`scripts.runner_cache.execute_and_write_cache` with the declared 90-second
+budget and records stdout, stderr, elapsed time and source hash.
+
+The author ran focused syntax, canonical-cache freshness/hash, link, vocabulary,
+whitespace and mutation checks. Full pipeline, strict global lint and combined
+changed-evidence validation are deferred under conformance section 12 to the
+exact integrated candidate. They are not reported as passed. No audit verdict,
+main merge or effective retained status is written by this science branch.
+
+## Claim-status certificate
+
+```yaml
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+target_claim_id: null
+source_of_blocker_text: frontier_question
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Independently review the graph isometry and exchange/support bounds; construct a changed encoding or operand law with actual fermionic statistics.
+conditional_surface_status: Supplied graph, code, occupation map and gate set; exact conditional mathematics with native selection and formation open.
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: Constructive signed graph equivalence plus quantified same-encoding and fixed-grammar limits; no general fermion-on-qubit or axiom-forcing no-go.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

@@ -4,3 +4,5 @@ CHECK local_Clifford_graph_map cube2 {"cells": 8, "old_qubits": 156, "new_qubits
 CHECK local_Clifford_graph_map cube3 {"cells": 27, "old_qubits": 540, "new_qubits": 594, "returned_plus_inputs": 54, "logical_qubits": 162, "maximum_controlled_Pauli_weight": 13, "colors_used": 54, "incidence_CZ_gates": 36, "orientation_Z_gates": 0, "max_incidence_inversions_at_vertex": 3, "deleted_edge_maps_detected": 54}
 CHECK local_Clifford_graph_map cube4 {"cells": 64, "old_qubits": 1296, "new_qubits": 1440, "returned_plus_inputs": 144, "logical_qubits": 384, "maximum_controlled_Pauli_weight": 13, "colors_used": 81, "incidence_CZ_gates": 108, "orientation_Z_gates": 0, "max_incidence_inversions_at_vertex": 3, "deleted_edge_maps_detected": 144}
 ALL_BLOCK7_GRAPH_ISOMETRY_CHECKS_PASS
+
+--- stderr ---

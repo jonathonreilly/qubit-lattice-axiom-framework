@@ -53,6 +53,11 @@ def edge_add(g,u,v,path):
     return e,S
 
 def dense_checks():
+    CZ=np.diag([1,1,1,-1])
+    for x in range(4):
+        for z in range(4):
+            row=P(0,x,z)
+            assert np.array_equal(CZ@dense(row,2)@CZ,dense(cz_conj(row,0,1),2))
     g=Graph([(0,0,0),(1,0,0),(2,0,0)],q=1,refs=False)
     e,S=edge_add(g,0,2,[0,1,2]);assert e==2
     Id=np.eye(1<<e);Sm=dense(S,e);zero=np.zeros_like(Id);U=np.block([[Id,zero],[zero,Sm]])

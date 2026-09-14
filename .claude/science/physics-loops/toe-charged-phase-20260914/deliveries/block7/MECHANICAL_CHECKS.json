@@ -1,0 +1,22 @@
+{
+  "syntax": "passed",
+  "cache": "fresh",
+  "hash": "6d2323216429296d5a218366e80be5701bfb23112c17fd57d7b694ca1a0d314f",
+  "local_links": 3,
+  "five_resolution_lines_minimum_40_characters": "passed",
+  "vocabulary": {
+    "files": [],
+    "schema_version": 1,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    }
+  },
+  "citation_graph": {
+    "nodes": 5042,
+    "edges": 12519
+  },
+  "independent_review": "pending",
+  "integration_gate": "deferred section 12"
+}

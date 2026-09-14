@@ -49,3 +49,7 @@ next target is an analytic commutator/support discriminator for this precise
 composition. It must cover arbitrary code-equivalent operators, rather than
 repeat finite stabilizer minimization, and preserve ordinary fixed-parity BKSF
 as a live constructive escape. This is not a general bosonization no-go.
+
+## Block 7 review and block 8 choice
+
+PR8115 preserves the constructive graph isometry and the fixed-encoding statistics/support boundary. Next: derive the precise spin-2/common-cone consistency bridge, including collision-invariant and lattice-domain hypotheses. Native formation, physical spin-2 existence and charged chiral phases remain open. No axiom wall or TOE closure follows.

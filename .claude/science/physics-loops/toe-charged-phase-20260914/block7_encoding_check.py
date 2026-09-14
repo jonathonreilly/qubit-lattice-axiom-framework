@@ -156,6 +156,15 @@ def directed_local_stream(g,c,a,d,b):
     spectator=mul(g.B(g.vid[d,k]) for k in range(g.q) if k!=b)
     return P(2)@spectator@core,spectator@g.B(u)@g.B(v)@core
 
+def polynomial_square_is_identity(terms):
+    out={}
+    for a in terms:
+        for b in terms:
+            c=a@b;key=(c.x,c.z)
+            out[key]=out.get(key,0)+(1j**c.p)/4
+    out={key:value for key,value in out.items() if value!=0}
+    return out=={(0,0):1}
+
 def annihilate(n,i,create=False):
     if bool(n>>i&1)==create:return None
     return n^(1<<i),(-1)**((n&((1<<i)-1)).bit_count())
@@ -243,6 +252,12 @@ def graph_checks():
             assert not x.support()&seen;seen|=x.support()
         bad=0;max_between=0
         for c,a,d,b in g.streams:
+            for ucell,ua,vcell,vb in ((c,a,d,b),(d,b,c,a)):
+                words=directed_local_stream(g,ucell,ua,vcell,vb)
+                terms=(g.B(g.vid[ucell,ua]),g.B(g.vid[vcell,vb]))+words
+                assert all(p==p.dag() for p in terms)
+                assert polynomial_square_is_identity(terms)
+                assert all(not p.anti(stab) for p in terms for stab in loops+ds)
             ci,di=sorted((g.cells.index(c),g.cells.index(d)));between=di-ci-1
             max_between=max(max_between,between)
             ij=(6*g.cells.index(c)+a,6*g.cells.index(d)+b)
@@ -290,6 +305,7 @@ def exchange_checks(spectator=False):
             factor=phase[((ci,a),(di,b))];af*=amp*factor;al*=coefficient*factor
             local=expected=nxt
         assert expected==initial and local==initial and abs(closed_rephase-1)<1e-12
+        assert abs((af/al).imag)<1e-12
         results[label]={'fermion_amplitude':[af.real,af.imag],'local_amplitude':[al.real,al.imag],'ratio':float((af/al).real),'moves':len(moves),'particle_number':len(occupied)}
     assert abs(results['exchange']['ratio']+1)<1e-12
     assert abs(results['one_particle']['ratio']-1)<1e-12
@@ -297,11 +313,10 @@ def exchange_checks(spectator=False):
     assert sorted(exchange)==sorted(single)
     return results
 
-def bksf_dense_checks():
-    # Four one-mode cells on a square, no references: 4 edge qubits, 8 even states.
-    cells=((0,0,0),(1,0,0),(1,1,0),(0,1,0));g=Graph(cells,q=1,refs=False);n=len(g.edges);M=len(g.v)
-    loops=g.cycles();I=np.eye(1<<n);vac=np.zeros(1<<n,complex);vac[0]=1
-    for s in loops:vac=(vac+dense(s,n)@vac)/2
+def fixed_even_dense_isometry(g):
+    n=len(g.edges);M=len(g.v);loops=g.cycles()
+    vac=np.zeros(1<<n,complex);vac[0]=1
+    for row in loops:vac=(vac+dense(row,n)@vac)/2
     vac/=np.linalg.norm(vac)
     basis=[b for b in range(1<<M) if b.bit_count()%2==0];columns=[]
     for b in basis:
@@ -309,24 +324,45 @@ def bksf_dense_checks():
         for j in range(1,M):
             if not b>>j&1:continue
             v=dense(g.pathA(0,j),n)@v
-            # -i gamma_0 gamma_j, rightmost gamma_j first.
             amplitude*=-1j*(-1)**((fock&((1<<j)-1)).bit_count());fock^=1<<j
-            amplitude*=(-1)**((fock&0).bit_count());fock^=1
+            fock^=1
         assert fock==b
         columns.append(v/amplitude)
     E=np.column_stack(columns);assert np.max(abs(E.conj().T@E-np.eye(len(basis))))<1e-12
-    cs=[car_matrix(M,j) for j in range(M)]
+    cs=[car_matrix(M,j) for j in range(M)];error=0.
     for u in range(M):
         B=np.eye(1<<M)-2*cs[u].conj().T@cs[u]
         assert np.max(abs(dense(g.B(u),n)@E-E@B[np.ix_(basis,basis)]))<1e-12
     for u,v,_ in g.edges:
         T=cs[u].conj().T@cs[v]+cs[v].conj().T@cs[u]
-        A=dense(g.A(u,v),n);Bt=dense(g.B(u),n)-dense(g.B(v),n)
-        mapped=1j*A@Bt/2
-        assert np.max(abs(mapped@E-E@T[np.ix_(basis,basis)]))<1e-12
-    # Each single occupation bit flip leaves the even target sector.
-    for j in range(M):assert all((b^(1<<j)) not in basis for b in basis)
-    return {'matter_modes':M,'physical_qubits':n,'even_code_dimension':len(basis),'max_hopping_residual':float(np.max(abs(mapped@E-E@T[np.ix_(basis,basis)])))}
+        mapped=1j*dense(g.A(u,v),n)@(dense(g.B(u),n)-dense(g.B(v),n))/2
+        err=float(np.max(abs(mapped@E-E@T[np.ix_(basis,basis)])));assert err<1e-12;error=max(error,err)
+    return E,basis,error
+
+def bksf_dense_checks():
+    cells=((0,0,0),(1,0,0),(1,1,0),(0,1,0));g=Graph(cells,q=1,refs=False)
+    E,basis,error=fixed_even_dense_isometry(g)
+    for j in range(4):assert all((b^(1<<j)) not in basis for b in basis)
+    # One reference vertex, ordered last, keeps all four original matter bits.
+    ref=Graph(cells+((-1,0,0),),q=1,refs=False);F,even,err=fixed_even_dense_isometry(ref)
+    labels=[b|((b.bit_count()%2)<<4) for b in range(16)];V=F[:,[even.index(b) for b in labels]]
+    assert np.max(abs(V.conj().T@V-np.eye(16)))<1e-12
+    parity=np.diag([(-1)**b.bit_count() for b in range(16)])
+    assert np.max(abs(dense(ref.B(4),len(ref.edges))@V-V@parity))<1e-12
+    cs=[car_matrix(4,j) for j in range(4)]
+    for u,v,_ in ref.edges:
+        if max(u,v)==4:continue
+        T=cs[u].conj().T@cs[v]+cs[v].conj().T@cs[u]
+        mapped=1j*dense(ref.A(u,v),len(ref.edges))@(dense(ref.B(u),len(ref.edges))-dense(ref.B(v),len(ref.edges)))/2
+        assert np.max(abs(mapped@V-V@T))<1e-12
+    resources=[]
+    for L in (2,3,4):
+        g6=Graph(list(product(range(L),repeat=3)),refs=False);n=len(g6.edges);M=len(g6.v)
+        assert n==12*L**3+3*(L-1)*L**2 and M==6*L**3
+        assert max(map(len,g6.inc))==5
+        assert len(reduce_rows(g6.cycles(),n))==n-M+1
+        resources.append({'L':L,'edge_qubits':n,'even_logical_qubits':M-1,'maximum_degree':5})
+    return {'matter_modes':4,'physical_qubits':4,'even_code_dimension':8,'max_hopping_residual':error,'one_reference_physical_qubits':len(ref.edges),'all_parity_code_dimension':V.shape[1],'reference_equals_global_matter_parity':True,'resource_examples':resources}
 
 def geometry_checks():
     rng=np.random.default_rng(773);rows=[]

@@ -1,0 +1,155 @@
+{
+  "primary_sha256": "6d2323216429296d5a218366e80be5701bfb23112c17fd57d7b694ca1a0d314f",
+  "results": [
+    {
+      "name": "CAR_occupation_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.array_equal(c[i] @ c[j] + c[j] @ c[i]",
+      "elapsed_sec": 4.095654875040054,
+      "source_sha256": "5fc2bac630e9ff081af11c5dbf3644a6282776af230d9ffa17b0d6de0d6d5fdf",
+      "stderr_tail": [
+        "                      ~~~~~~~~~~~~~~~~~~~~~~~~~^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/CAR_occupation_sign.py\", line 458, in fixed_even_dense_isometry",
+        "    assert err < 1e-12",
+        "           ^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "Jordan_Wigner_intervening_parity",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.array_equal(T, sum(",
+      "elapsed_sec": 3.767754500033334,
+      "source_sha256": "1eff884aa25de2f34eb71d725d136d89ff0f37157ee3bc93f2fe0b4734192682",
+      "stderr_tail": [
+        "                                    ~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/Jordan_Wigner_intervening_parity.py\", line 359, in graph_checks",
+        "    assert remainder(source @ lift(target, xs, zs).dag(), piv, n) == P()",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "local_loader_suffix",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert xs[i] @ xs[i] == P()",
+      "elapsed_sec": 3.554937499924563,
+      "source_sha256": "15a5cf9c4e7c7e0362da3fff57f38381078456e7a91ab4376472e1fb9df44e44",
+      "stderr_tail": [
+        "                                    ~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/local_loader_suffix.py\", line 328, in graph_checks",
+        "    assert xs[i] @ xs[i] == P() and xs[i] == xs[i].dag()",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "physical_complete_cell_string",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert remainder(source @ lift(target",
+      "elapsed_sec": 3.6669087499612942,
+      "source_sha256": "ca559035123780e06f2abbb61c20d3763b1aab031c14869f61ffcda25350bbb1",
+      "stderr_tail": [
+        "                                    ~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/physical_complete_cell_string.py\", line 359, in graph_checks",
+        "    assert remainder(source @ lift(target, xs, zs).dag(), piv, n) == P()",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "target_cell_spectator",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert remainder(source @ lift(target",
+      "elapsed_sec": 3.765539166983217,
+      "source_sha256": "91fc098a76a76a42fb656b21cd506d97e2b1ffe727b6d763c1359c41231c9cb0",
+      "stderr_tail": [
+        "                                    ~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/target_cell_spectator.py\", line 359, in graph_checks",
+        "    assert remainder(source @ lift(target, xs, zs).dag(), piv, n) == P()",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "controlled_Pauli_cross_phase",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.array_equal(U @ dense(row",
+      "elapsed_sec": 4.215494583011605,
+      "source_sha256": "ba4a76d96ff2d3f011b212ade4be32ac5871f1c1fa9033d0c987223567e92e4f",
+      "stderr_tail": [
+        "                                         ~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/controlled_Pauli_cross_phase.py\", line 622, in dense_checks",
+        "    assert np.array_equal(U @ dense(row, e + 1) @ U, dense(controlled_conj(row, e, S), e + 1))",
+        "           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "edge_addition_endpoint_parities",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert all((not S.anti(A)",
+      "elapsed_sec": 0.7612265419447795,
+      "source_sha256": "1a7c20a9a14814c45d7eabe44e96458ff551892b69712b999977197399336e9c",
+      "stderr_tail": [
+        "           ~~~~~~~~^^^^^^^^^^^^^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/edge_addition_endpoint_parities.py\", line 592, in edge_add",
+        "    assert all((not S.anti(A) for A in oldAs))",
+        "           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "incidence_CZ_cross_phase",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.array_equal(CZ@dense(row",
+      "elapsed_sec": 4.229329916997813,
+      "source_sha256": "1546409f60659001bcc27b226750b4148c2d69746316061a2537b5a30c004e52",
+      "stderr_tail": [
+        "                                         ~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/incidence_CZ_cross_phase.py\", line 610, in dense_checks",
+        "    assert np.array_equal(CZ@dense(row,2)@CZ,dense(cz_conj(row,0,1),2))",
+        "           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "graph_orientation_signs",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert gauge(g.A(u, v)) == target.A",
+      "elapsed_sec": 0.741396417026408,
+      "source_sha256": "fb99bf7dacc5f184eb10084b9c236c094e7afab716f574e7f8fc897ed561c43c",
+      "stderr_tail": [
+        "          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/graph_orientation_signs.py\", line 690, in build_map",
+        "    assert gauge(g.A(u, v)) == target.A(vertex_map[u], vertex_map[v])",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "ordinary_BKSF_hopping_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert err < 1e-12",
+      "elapsed_sec": 4.152469417080283,
+      "source_sha256": "fbd5519c161630da24352bdb06047af5a6c299dc8ebfda4a76995a7a2579101c",
+      "stderr_tail": [
+        "                      ~~~~~~~~~~~~~~~~~~~~~~~~~^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block7-mutations-0qognjgw/ordinary_BKSF_hopping_sign.py\", line 458, in fixed_even_dense_isometry",
+        "    assert err < 1e-12",
+        "           ^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    }
+  ]
+}

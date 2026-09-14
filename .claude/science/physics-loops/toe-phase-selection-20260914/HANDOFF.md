@@ -72,3 +72,18 @@ a separate sparse cochain construction both check. No block-2 public PR.
 Next assess the current native finite Gaussian compiler's missing periodic
 resource/selector map and the selected projective-history kernel's local
 carrier/formation distinction. Continue personally until the same deadline.
+
+Block 3 now follows that reassessment. See BLOCK3_TRANSFER_LOG_ROUTE.md and
+block3_transfer_log_check.py / BLOCK3_TRANSFER_LOG_CHECK.json. The inverse
+logarithmic response has an exact integrable real-time kernel and a 1/12
+double-commutator bound. It still needs a noncircular interaction-space
+locality argument for the unknown interacting log. Separately, an exact
+noncompact Gaussian transfer calculation proves exponential canonical
+coefficient locality without a mass gap, with a volume-uniform Weyl
+commutator bound, two transverse modes, a zero-mode qualification, and an
+exact finite static-charge Green-function cost. The Coulomb asymptotic is
+derived analytically, with a separate Bessel heat-kernel check. All finite
+author checks pass. This clears the Gaussian comparison case only; the
+finite-clock phase and native law remain open. Prepare a scoped Gaussian
+milestone if full author review passes, then continue the hard phase route
+or the distinct fixed-periodic-resource native compiler until the deadline.

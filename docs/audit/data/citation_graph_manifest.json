@@ -1,6 +1,6 @@
 {
- "edge_count": 12519,
- "node_count": 5041,
+ "edge_count": 12522,
+ "node_count": 5042,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14669,6 +14669,10 @@
   "portable_package_hierarchy_classifier_note": {
    "deps_hash": "4692e4ec0e97",
    "out_degree": 5
+  },
+  "positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "513215b4fa1c",
+   "out_degree": 3
   },
   "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": {
    "deps_hash": "0c13e845db90",

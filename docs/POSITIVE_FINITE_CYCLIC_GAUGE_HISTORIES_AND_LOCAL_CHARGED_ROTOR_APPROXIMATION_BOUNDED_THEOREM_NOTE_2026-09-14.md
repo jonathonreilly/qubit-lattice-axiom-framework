@@ -1,8 +1,47 @@
-# Conjugate charges and a finite positive gauge-history measure
+# Positive finite cyclic gauge histories and local charged-rotor approximation
 
-Author construction, provisional. The target is a finite-payload interacting
-Hamiltonian and its exact positive representation, not an established phase.
-No framework premise is added. Independent scientific review is pending.
+**Status:** proposed_retained
+**Date:** 2026-09-14
+**Claim type:** bounded_theorem
+
+Author proposal; independent scientific review is pending. No audit verdict,
+axiom, primitive or established TOE status is changed.
+
+A supplied finite cyclic gauge Hamiltonian with opposite-charge conjugate CAR
+matter has a nonnegative, exactly Gauss-projected finite-slice history sum.
+An explicit norm estimate compares this same cyclic regulator with the charged
+compact rotor for initially bounded electric flux. Locality makes the required
+payload independent of the surrounding spatial volume for a fixed observable,
+observation time and tolerance. The interacting ground-state and infrared
+phase problem remains open.
+
+The construction includes a free four-node comparison with matching bare
+metrics and cancelling Hall responses. It also exposes two precise limits:
+positive paired weights need not be of positive Fourier type, and the
+mathematical antiunitary does not forbid a gauge-neutral gapping pair term.
+These are counterexamples to automatic inference rules, not an exclusion of
+a Coulomb phase or an axiom-forcing wall.
+
+**Runner:** [self-contained primary runner](../scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py).
+**Receipt:** [canonical execution cache](../logs/runner-cache/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.txt).
+**Recovery and review:** [campaign handoff](../.claude/science/physics-loops/toe-charged-phase-20260914/HANDOFF.md).
+
+## Premises, imports and proof obligations
+
+| Input or machinery | Provenance and role | Open framework bridge |
+|---|---|---|
+| Finite oriented graph, CAR cells, cyclic links, chosen couplings and modular invariant sector | Supplied model data, explicitly defined below | Selection, physical implementation and identification are not derived |
+| Fock determinant identity and conjugate species | Elementary finite exterior algebra, proved by second quantization below; Wu-Zhang is prior art | No physical time reversal is inferred |
+| Weighted electric estimate, Duhamel comparison and local commutator iteration | Direct bounds below, checked against the named truncation and locality literature | No ground-state or long-time limit is supplied |
+| Four-node Wilson symbol, number symmetry and filling | Supplied free comparison with explicit parameter domain | Interacting stability and observed matter identification remain open |
+| Framework axioms and approved primitives | Current [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md); context only | None selects this Hamiltonian or proves its phase |
+
+The proof chain is finite model -> projected trace, and independently finite
+model -> weighted electric bound -> cyclic comparison -> local approximation.
+The Fourier and pairing counterexamples constrain the proposed phase argument;
+they are not premises of the two positive implications. No unmerged campaign
+PR is a load-bearing dependency. Every general theorem statement below has an
+analytic proof; the finite runner challenges its conventions and constants.
 
 ## Exact finite model
 
@@ -10,13 +49,17 @@ Fix a finite oriented graph without self-links, incidence D with +1 at the
 tail and -1 at the head, and plaquette boundaries B with DB=0. Fix an integer
 N>=3 and omega=exp(2 pi i/N). Each link has basis |q>, q in Z_N, and
 
-    Z|q>=omega^q|q>,       X|q>=|q+1>.
+```text
+Z|q>=omega^q|q>,       X|q>=|q+1>.
+```
 
 Then XZX^dag=omega^(-1) Z. Each vertex has m plus and m minus CAR orbitals.
 Let Q_x=N_{+,x}-N_{-,x}, and define commuting local gauge transformations
 
-    Gamma_x = product_l X_l^(D_xl) exp(2 pi i Q_x/N),
-    P = N^(-|V|) sum_{s in Z_N^V} product_x Gamma_x^(s_x).
+```text
+Gamma_x = product_l X_l^(D_xl) exp(2 pi i Q_x/N),
+P = N^(-|V|) sum_{s in Z_N^V} product_x Gamma_x^(s_x).
+```
 
 Gamma_x^N=I, so P is the orthogonal projection onto the invariant space.
 It is nonzero: zero-occupation matter and all links in the X=1 state are
@@ -28,7 +71,9 @@ Hermitian matrices v_x and nearest-neighbor directed hopping T_l Z_l, with
 its Hermitian reverse. Precisely, h_(tail(l),head(l))=T_l Z_l; multiple
 contributions are added if present. At fixed phases q it becomes h(q). Define
 
-    H_m = c_+^dag h(Z)c_+ + c_-^dag h(Z)^* c_-.
+```text
+H_m = c_+^dag h(Z)c_+ + c_-^dag h(Z)^* c_-.
+```
 
 Here star conjugates numerical coefficients AND sends each Z to Z^dag;
 there is no transpose of the ordering of products. The minus onsite matrix
@@ -38,9 +83,11 @@ for this displayed local realization of the fixed-history conjugation.
 
 Take t_l>=0 and K_p>=0 and
 
-    H_E = sum_l t_l(2-X_l-X_l^dag),
-    H_B = sum_p K_p(1-Re product_l Z_l^(B_lp)),
-    H = H_E+H_B+H_m.
+```text
+H_E = sum_l t_l(2-X_l-X_l^dag),
+H_B = sum_p K_p(1-Re product_l Z_l^(B_lp)),
+H = H_E+H_B+H_m.
+```
 
 All are Hermitian finite matrices, gauge invariant, bounded and local. The
 full finite time evolution and the physical Gibbs operator are well-defined.
@@ -51,8 +98,10 @@ physical identification remain separately supplied obligations.
 
 In the q basis, for tau>=0,
 
-    exp[-tau t(2-X-X^dag)]
-      =exp(-2 tau t) sum_{a,b>=0} (tau t)^(a+b)/(a! b!) X^(a-b).
+```text
+exp[-tau t(2-X-X^dag)]
+  =exp(-2 tau t) sum_{a,b>=0} (tau t)^(a+b)/(a! b!) X^(a-b).
+```
 
 All matrix entries are nonnegative. For tau t>0 they are strictly positive
 because every residue is attained by a walk. The entries sum to one. The
@@ -66,7 +115,9 @@ Take beta>=0 and an integer M>=1, with delta=beta/M.
 Set K_delta=exp(-delta H_E), M_delta(q)=exp(-delta V_B(q)), and
 A_delta(q)=exp(-delta h(q)). A convenient nonsymmetric slice is
 
-    T_delta=exp(-delta H_E) exp(-delta H_B) exp(-delta H_m).
+```text
+T_delta=exp(-delta H_E) exp(-delta H_B) exp(-delta H_m).
+```
 
 Each factor commutes with P. T_delta need not be Hermitian; its projected
 trace still has the positive expansion below. The finite-dimensional Lie
@@ -78,9 +129,11 @@ For histories q_0,...,q_(M-1) and s in Z_N^V, let d_s=D^T s modulo N and
 R_s=diag_x exp(2 pi i s_x/N) tensor I_m. The precise boundary kernel orientation
 is fixed by <q|X^(d_s)=<q-d_s|. With q_M=q_0-d_s, one expansion is
 
-    Z_M = N^(-|V|) sum_s sum_(q_0,...,q_(M-1))
-       [product_(j=0)^(M-1) K_delta(q_(j+1),q_j) M_delta(q_j)]
-       |det(I+R_s A_delta(q_(M-1)) ... A_delta(q_0))|^2.       (1)
+```text
+Z_M = N^(-|V|) sum_s sum_(q_0,...,q_(M-1))
+   [product_(j=0)^(M-1) K_delta(q_(j+1),q_j) M_delta(q_j)]
+   |det(I+R_s A_delta(q_(M-1)) ... A_delta(q_0))|^2.       (1)
+```
 
 The displayed boundary sign and ordering agree with independently constructed
 full Fock projected traces, including the two-orbital Wilson hopping matrices. The
@@ -99,9 +152,11 @@ correlation decay, an efficient sampler, or an infrared-uniform expansion.
 
 Take m=2 and a simple two-node Wilson symbol
 
-    h0(k)=sin kx sigma1+sin ky sigma2
-         +(2+zeta-cos kx-cos ky-cos kz)sigma3,
-    0<zeta<1,  0<b<pi.
+```text
+h0(k)=sin kx sigma1+sin ky sigma2
+     +(2+zeta-cos kx-cos ky-cos kz)sigma3,
+0<zeta<1,  0<b<pi.
+```
 
 Let h_+(k)=h0(k-b xhat) and h_-(k)=h_+(-k)^*. At Z=1, a zero requires
 both sine terms to vanish. The cases with either
@@ -118,7 +173,9 @@ This supplied model conserves N_+ and N_- separately. The gauge symmetry
 alone also allows a neutral pairing term c_+^dag Delta c_-^dag+h.c. Under
 a compatible local identity pairing, the zero-field Nambu block is
 
-    [[h_+(k), Delta I],[Delta I,-h_+(k)]],
+```text
+[[h_+(k), Delta I],[Delta I,-h_+(k)]],
+```
 
 whose square is h_+(k)^2+Delta^2 I. Thus a nonzero real Delta opens a gap in
 this enlarged Hamiltonian family. This pairing also preserves the mathematical
@@ -152,20 +209,26 @@ local polymer estimate. These are the next mathematical questions.
 
 This establishes which rotor is approximated; it does not replace its
 magnetic cosine by a harmonic theory or supply an infrared phase theorem.
-Take odd N=2S+1, representatives n=-S,...,S, and set
+Take a>0, g>0, w_l>=0, odd N=2S+1, representatives n=-S,...,S, and set
 
-    t_l = g^2 w_l N^2/(8 pi^2 a).
+```text
+t_l = g^2 w_l N^2/(8 pi^2 a).
+```
 
 The cyclic electric eigenvalue is
 
-    lambda_N,l(n) = (g^2 w_l/(2a)) n^2 sinc^2(pi n/N).
+```text
+lambda_N,l(n) = (g^2 w_l/(2a)) n^2 sinc^2(pi n/N).
+```
 
 For every real x, 0<=1-sinc^2 x<=x^2/3. One direct proof uses
 sinc^2 x=2 integral_0^1 (1-u)cos(2xu) du and 1-cos y<=y^2/2.
 Consequently, for every representative n,
 
-    0 <= g^2 w_l n^2/(2a)-lambda_N,l(n)
-       <= pi^2 g^2 w_l n^4/(6a N^2).                         (2)
+```text
+0 <= g^2 w_l n^2/(2a)-lambda_N,l(n)
+   <= pi^2 g^2 w_l n^4/(6a N^2).                         (2)
+```
 
 The rotor comparator has identical CAR, hopping and plaquette coefficients,
 untruncated integer E, unitary U|n>=|n+1>, and quadratic electric energy.
@@ -179,13 +242,17 @@ Write J_l=sum_(alpha:l in alpha)||V_alpha||, where H_interaction is the sum
 of V_alpha+V_alpha^dag, each V shifts the participating E_l by +/-1, and a
 link occurs at most once per monomial. For any lambda>0 and T=|t|, put
 
-    C_l(T,lambda)=exp(lambda M0+2 J_l T sinh lambda),
-    A_4(lambda)=(4/(e lambda))^4.
+```text
+C_l(T,lambda)=exp(lambda M0+2 J_l T sinh lambda),
+A_4(lambda)=(4/(e lambda))^4.
+```
 
 For a Hamiltonian with any real diagonal electric energies, including the
 hard finite restrictions used below, the exponential-weight estimate is
 
-    ||exp(lambda |E_l|) exp(-itH)psi|| <= C_l(T,lambda).       (3)
+```text
+||exp(lambda |E_l|) exp(-itH)psi|| <= C_l(T,lambda).       (3)
+```
 
 Indeed conjugate the generator by W=exp(lambda|E_l|). Its anti-Hermitian
 part has norm at most 2J_l sinh lambda, because each allowed matrix element
@@ -203,10 +270,12 @@ telescoping each plaquette product, either comparison has norm error at
 most 2T sum_l J_l e^(-lambda S) C_l. The middle comparison uses (2)-(3).
 Thus the state-norm difference, after the stated embedding, is bounded by
 
-    epsilon_N(T) := min{2,
-       4T sum_l J_l exp[-lambda(S-M0)+2J_l T sinh lambda]
-       + (pi^2 g^2 T/(6a N^2)) A_4(lambda)
-                         sum_l w_l C_l(T,lambda)}.          (4)
+```text
+epsilon_N(T) := min{2,
+   4T sum_l J_l exp[-lambda(S-M0)+2J_l T sinh lambda]
+   + (pi^2 g^2 T/(6a N^2)) A_4(lambda)
+                     sum_l w_l C_l(T,lambda)}.          (4)
+```
 
 This is uniform over the declared initial states and holds for fixed finite
 spatial graphs, all T>=0 and odd N>=2M0+1. At fixed graph, T, g and initial
@@ -227,8 +296,10 @@ by a local one, while retaining its fixed-time quantifiers.
 For the one-orbital four-site ring with real unit hopping and total flux phi,
 let x=beta t>0. Its one-species grand canonical trace is
 
-    d(phi)=4[1+cosh(2x cos(phi/4))]
-             [1+cosh(2x sin(phi/4))],  0<=phi<=2pi.
+```text
+d(phi)=4[1+cosh(2x cos(phi/4))]
+         [1+cosh(2x sin(phi/4))],  0<=phi<=2pi.
+```
 
 In particular d(0)=16 cosh^2 x and d(pi)=16 cosh^4(x/sqrt(2)). The Taylor
 series of cosh^2(x/sqrt(2))-cosh x has vanishing constant and quadratic
@@ -242,7 +313,9 @@ from nonnegative paired determinants, within the broad finite model family;
 it is not a claim about every member or every proof of a Coulomb phase.
 The underlying expansion gives
 
-    log d(phi)=4 log 2+x^2-x^4(1/8+cos phi/24)+O(x^6).
+```text
+log d(phi)=4 log 2+x^2-x^4(1/8+cos phi/24)+O(x^6).
+```
 
 This ring is a separate diagnostic from the three-dimensional two-orbital
 Weyl carrier. It retires an automatic transfer of a positive-type inequality
@@ -258,20 +331,26 @@ of the hopping/plaquette terms Phi(Y) in both regulators; twice the sum of
 raising-half norms on that support is one choice. Put all onsite terms into
 an interaction picture; this changes neither supports nor norms. For mu>0 define
 
-    C_mu = sup_x sum_(Y contains x) |Y| b_Y exp(mu diam Y).
+```text
+C_mu = sup_x sum_(Y contains x) |Y| b_Y exp(mu diam Y).
+```
 
 It is finite on the fixed-degree cubic carrier graph and independent of N,
 including the N-dependent onsite electric energy. Assume A is even, bounded
 and supported on a fixed finite carrier set X. Define R containing X and
 
-    W_R(mu) = sum_(Y crosses R) b_Y exp[-mu dist(X,Y)],
-    B_R(T) = ||A|| |X| [(exp(2 C_mu T)-1)/C_mu] W_R(mu),     (5)
+```text
+W_R(mu) = sum_(Y crosses R) b_Y exp[-mu dist(X,Y)],
+B_R(T) = ||A|| |X| [(exp(2 C_mu T)-1)/C_mu] W_R(mu),     (5)
+```
 
 with the continuous limiting expression if C_mu=0. Only interactions crossing
 R enter; onsite terms outside R commute with the restricted evolved A.
 For either dynamics, full or restricted to terms wholly inside R,
 
-    ||tau_T(A)-tau_T^R(A)|| <= B_R(T).                       (6)
+```text
+||tau_T(A)-tau_T^R(A)|| <= B_R(T).                       (6)
+```
 
 A direct derivation avoids any ground-gap assumption. Set
 M_xy=sum_(Y contains x,y)b_Y. The usual commutator integral inequality,
@@ -294,8 +373,10 @@ support bound; arbitrary entanglement with the exterior is allowed by
 purification. For the local compression A_N=J_N^dag A J_N and the cyclic
 counterpart rho_N, (4)-(6) give
 
-    |Tr rho tau_T(A)-Tr rho_N tau_T^N(A_N)|
-       <= 2 B_R(T)+2||A|| epsilon_(N,R)(T),                 (7)
+```text
+|Tr rho tau_T(A)-Tr rho_N tau_T^N(A_N)|
+   <= 2 B_R(T)+2||A|| epsilon_(N,R)(T),                 (7)
+```
 
 where (4) is evaluated only on links and interactions of R. The bound holds
 uniformly in every finite ambient box containing R and its crossing terms.
@@ -321,13 +402,17 @@ unproved interchange of an infinite weighted operator and its dynamics.
 
 The positive representation also allows the genuine quartic interaction
 
-    H_U = (1/2) sum_x u_x Q_x^2,  u_x>=0.
+```text
+H_U = (1/2) sum_x u_x Q_x^2,  u_x>=0.
+```
 
 For each site and slice,
 
-    exp(-delta u Q^2/2)
-       = integral dphi exp(-phi^2/2)/sqrt(2pi)
-                         exp(i sqrt(delta u) phi Q).        (8)
+```text
+exp(-delta u Q^2/2)
+   = integral dphi exp(-phi^2/2)/sqrt(2pi)
+                     exp(i sqrt(delta u) phi Q).        (8)
+```
 
 Use the slice exp[-delta(H_E+H_U)] exp[-delta(H_B+H_m)]. Each group is
 Hermitian, and its positive exponential makes this slice similar to a
@@ -344,7 +429,9 @@ J_l or the hopping/plaquette C_mu used in (3)-(7).
 For one orbital per species per site, Q is -1,0,1. There is also an exact
 two-point decomposition with cos(theta)=exp(-delta u/2):
 
-    exp(-delta u Q^2/2)=(exp(i theta Q)+exp(-i theta Q))/2.
+```text
+exp(-delta u Q^2/2)=(exp(i theta Q)+exp(-i theta Q))/2.
+```
 
 This last finite sum does not apply unchanged to the two-orbital Weyl cell,
 where |Q| can reach 2. Equation (8) covers that cell without this restriction.
@@ -372,8 +459,9 @@ At N=5 the corresponding dimension is 70 and no such total-charge states
 are available on this small graph. This finite count is not a thermodynamic
 suppression argument. Both populations are included in the projected trace.
 
-The first trace implementation's real dtype discarded complex hopping
-entries and failed its Gauss commutator check. It is preserved as attempt1.
+The first exploratory trace implementation's real dtype discarded complex hopping
+entries and failed its Gauss commutator check. Its failed source and output
+are preserved in the accompanying campaign packet.
 After correcting the dtype, the full-Fock, charge-interaction and Wilson
 carrier comparisons ran successfully with their nonzero finite-slice errors
 reported. Distinct author implementations are not independent review.
@@ -407,5 +495,190 @@ region and coarse gauge-body cumulant theorem do not establish the weakly
 coupled dynamical-photon phase of this Hamiltonian. No failure of that
 particular KP inequality is claimed, and no such theorem is imported here.
 
-The Preskill-hosted PDF request returned HTTP 403; the same Tong et al. paper
-was recovered from arXiv, with exact bytes recorded in READING_LEDGER.json.
+
+## Additional discriminator: the electric-density spectral moment
+
+On the integer-flux rotor or hard-cutoff carrier, take a charge-one directed
+hop V_l with [E_l,V_l]=V_l and
+[rho(h),V_l]=(D^T h)_l V_l. Set h_l=V_l+V_l^dag,
+F=E(f)-rho(h), v=f-D^T h and b=B^T f, with real f,h. Assume the onsite terms
+commute with rho(h). Commuting each monomial twice gives
+
+```text
+[F,[H,F]] = -sum_l v_l^2 h_l + sum_p K_p b_p^2 Re W_p.
+```
+
+Indeed [F,V_l]=v_l V_l and [F,W_p]=b_p W_p, so reversing the inner
+commutator fixes the two displayed signs. In a ground vector, half the
+expectation equals the first spectral moment of F. Gauss gives F=E(v) on
+its physical subspace. For a transverse long-wavelength test, the plaquette
+term has a curl-squared factor but the hopping term generally does not.
+A pure-link variational argument therefore needs a new control of that
+term, together with a lower bound on nonzero-energy spectral weight. This
+identity is not a no-go and is not asserted for a globally additive electric
+operator on cyclic wrap states. The direct analytic calculation is separate
+from the runner's finite trace tests.
+
+## Executable evidence and falsifiers
+
+Run the linked primary runner with Python, NumPy and SciPy. It reads no
+scientific repository files and contains all finite comparison constructions.
+It reports eight check families, with their finite domains printed in the
+receipt. Internal assertions are not independent scientific results.
+
+- Complete one-bond Fock traces at N=3,4,5 and one through four slices match
+  the projected positive history sum; wrong temporal conjugation retains a
+  nonzero complex-weight witness.
+- The actual two-orbital Wilson bond is tested at N=3,5 and one through
+  three slices, including all modular Gauss sectors.
+- A four-link N=3 plaquette uses a separately assembled flux/CAR Hamiltonian.
+  One- and two-slice traces agree to relative error below 7e-15; a full
+  unfixed one-slice sum checks the static gauge-fixing multiplicity.
+- A one-orbital quartic charge interaction is compared with the exact
+  two-point auxiliary-field sum. Its finite-slice error is reported; the
+  two-point identity is not asserted for the two-orbital cell.
+- A charged four-cycle compares N=3 through 65 with a hard rotor reference.
+  The latter's analytic truncation error bound is below 2e-31 at the declared
+  parameters. At N=65 the observed state error is about 8.70e-4, below the
+  derived 2.38e-2 bound; alias probability is counted as error.
+- Noncommuting electric raising blocks challenge the weighted-generator
+  constant. Matrix ring traces challenge the positive-type counterexample;
+  node Jacobians, Nambu spectra and full Fock antiunitaries challenge the
+  pairing and free-symbol statements.
+
+The proposal fails if its exact projected trace differs from the Fock trace,
+if a negative history weight occurs under the stated hypotheses, if the
+weighted or locality estimates fail in their declared domains, or if the
+explicit pairing fails to commute with charge or preserve its stated
+antiunitary. Agreement in finite examples does not exclude an error in a
+general proof. Independent review must check the weight, endpoint,
+commutator-path and limit arguments directly.
+
+## No-Go Discipline Gate
+
+### N1 — Alternative routes actually examined
+
+| Route family | Status | Discriminating result or obligation |
+|---|---|---|
+| Conjugate charged cyclic histories | ATTEMPTED, positive in scope | Exact nonnegative projected trace with noncommuting temporal factors |
+| Hard-box and cyclic rotor approximation | ATTEMPTED, positive in scope | Explicit state and local-observable error bounds; fixed-time quantifiers |
+| Positive-type correlation-inequality transfer | ATTEMPTED, automatic inference refuted | Positive paired ring determinant exceeds its zero-flux value |
+| Symmetry protection of free Weyl nodes | ATTEMPTED, automatic inference refuted | Neutral pairing respects gauge and antiunitary and opens the displayed gap |
+| Direct electric-density variational moment | ATTEMPTED, phase estimate open | Exact charged hopping term survives the proposed long-wavelength test |
+| Controlled massive-fermion expansion and charged infrared RG | OPEN | Exact source hypotheses and infrared-uniform estimates still needed |
+
+These routes differ in their mathematical objects and terminal proof
+obligations. Their count says nothing about completeness of the search.
+
+### N2 — Wall dependence
+
+Vacuum convergence, the interacting photon phase and absence of pairing are
+coupled parts of one infrared problem, not independent exclusion theorems.
+Native Hamiltonian selection and physical identification are other open
+obligations; no pairwise independence theorem or number of necessary axiom
+updates is claimed. Let I denote that collapsed infrared problem, L native
+law selection and P physical identification. Their logical relations are:
+
+| Pair | First closes second? | Second closes first? | Independence proved? |
+|---|---|---|---|
+| I, L | unresolved | unresolved | unresolved |
+| I, P | unresolved | unresolved | unresolved |
+| L, P | unresolved | unresolved | unresolved |
+
+### N3 — Hidden conditions
+
+The carrier, opposite charges, normal-number symmetry, hopping matrices,
+filling, couplings, initial flux cap, fixed observation time and compressed
+observable are supplied explicitly. Locality uses bounded finite-range
+interactions and even observables. The word positive describes weights or
+operators, with neither an efficiency nor a phase implication attached.
+The phrase scan found explicit mathematical assumptions on initial support,
+evenness and onsite commutation, all stated in their theorem domains.
+"Canonical" names the execution cache or the grand canonical trace; those
+uses supply no physical premise. No framework-supplied law or hidden
+background field is asserted.
+
+### N4 — Residual matching
+
+The main finite-clock note leaves the full phase open; this note closes a
+positive charged-history construction and local finite-time comparison only.
+The pure-gauge Frohlich-Spencer source has no light fermion determinant, the
+main KP source is in a different high-mass/small-beta region, and the hard
+truncation literature does not prove this cyclic regulator's ground phase.
+None is cited as if its unmatched hypotheses had been discharged.
+
+### N5 — Resolution and rhetoric
+
+The runner prints per_element, per_site, per_mode, per_block and lattice_wide
+certificates. The lattice-wide statement is uniformity of a fixed local
+finite-time approximation over ambient boxes. No finite trace, mode count,
+cutoff ladder or PASS count is a thermodynamic proof. The two counterexamples
+reject specified inference rules within explicitly supplied model families.
+
+### N6 — Partial-closure routes and primitive boundary
+
+Controlled charged infrared RG, a matched massive-fermion compact-gauge
+expansion, a different symmetry class or an independently established
+finite-payload Coulomb phase could advance the remaining problem. None is
+excluded here. No axiom or primitive update is requested.
+
+### N7 — Hostile steelman
+
+A reviewer should reject an interacting-photon claim inferred from positivity,
+a bare dispersion or a fixed-time norm limit. That objection is accepted and
+sets the boundary throughout the note. A reviewer should also reject reuse
+of the pairing example as a perturbation preserving exact matter-number
+symmetry: it explicitly breaks that symmetry, while spontaneous breaking
+inside the number-conserving model remains an open dynamical question.
+
+### N8 — Cross-cycle echo
+
+Earlier hard-flux work isolates boundary truncation and a nonunitary raising
+operator. The present cyclic regulator keeps exact unitarity and pays modular
+aliasing plus cosine-electric error instead. Both errors are bounded only for
+the stated finite-time comparison. Earlier free-node and ground-energy
+results remain distinct from the present charged phase obligation; they are
+not promoted by this construction.
+
+Gate disposition: author scope review complete for the displayed positive
+and counterexample implications. No broad negative theorem is submitted.
+Independent scientific review is pending.
+
+## References and exact use
+
+- [Wu and Zhang, sufficient condition for absence of the fermion sign problem](https://arxiv.org/abs/cond-mat/0407272), section III: prior art for conjugation and antiunitary criteria.
+- [Tong et al., provably accurate simulation of gauge theories and bosonic systems](https://arxiv.org/abs/2110.06942), sections 2-3: prior art for electric truncation and local quantum-number growth.
+- [Nachtergaele and Sims, dynamics with unbounded onsite terms](https://arxiv.org/abs/1410.8174), section 3: checked commutator-iteration machinery underlying the direct local bound.
+- [Frohlich and Spencer, IHES/P/81/40](https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf), sections 2.11-2.12 and 3: pure-gauge phase-method comparison, not a charged theorem import.
+- [Current main finite-clock gauge-matter note](U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md): matched repository prior art, with its corrected fixed-coupling spectral boundary.
+- [Current main constrained-fiber KP note](WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md): scope comparison only.
+
+## Review record
+
+The author corrected the exploratory real/complex dtype error, stated the
+modular total-charge aliases, separated fixed-time bounds from a phase theorem,
+and checked that the neutral pairing preserves the mathematical antiunitary.
+The self-contained runner combines distinct author implementations; this is
+not independent review. Exact source and failed-attempt preservation are in
+the campaign packet. Formal audit remains deferred to the independent path.
+No editable prompt or workflow files were changed by this science proposal.
+
+## Source status and trace
+
+```yaml
+actual_current_surface_status: "conditional-support"
+target_claim_type: "bounded_theorem"
+trace_class: "upstream_support"
+target_claim_id: null
+target_blocker_text: "A controlled interacting charged gauge phase on the supplied finite-payload carrier, with matched local observables and physical identification."
+source_of_blocker_text: "frontier_question"
+reachability_to_target: "supports"
+artifact_role: "theorem"
+next_trace_action: "Independently review the positive projected trace and explicit local bound, then test a matched interacting vacuum/infrared construction."
+conditional_surface_status: "Supplied cyclic links, conjugate opposite-charge CAR matter, bounded finite-range interactions and initial electric cap; exact positive finite-volume histories and local fixed-time rotor approximation, with the ground-state and infrared phase unproved."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Direct conditional mathematical implications and explicit counterexamples; neither author checks nor provisional source status grants retention."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

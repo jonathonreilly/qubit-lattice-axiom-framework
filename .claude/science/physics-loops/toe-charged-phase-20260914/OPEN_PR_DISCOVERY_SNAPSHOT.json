@@ -1,0 +1,362 @@
+[
+  {
+    "headRefName": "physics-loop/flat-holonomy-spectral-floor-20260913",
+    "headRefOid": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+    "number": 8104,
+    "title": "Retain flat holonomies in the charged periodic spectral limit"
+  },
+  {
+    "headRefName": "physics-loop/gauss-reduced-weak-coupling-spectrum-20260913",
+    "headRefOid": "3201d7c5452e95c69399fbe7671f862e357623c5",
+    "number": 8103,
+    "title": "Derive exact Gauss reduction and finite-volume weak-coupling spectrum"
+  },
+  {
+    "headRefName": "claude/formation-order-menu-mixture-census",
+    "headRefOid": "fe094b01714c5abaa8038a0b136e6577dfaae034",
+    "number": 8102,
+    "title": "science(admissibility): formation-order multiset key and order census"
+  },
+  {
+    "headRefName": "physics-loop/finite-link-weak-coupling-payload-20260913",
+    "headRefOid": "da5b152430bd5a1159a05a586e51e61a7c2c2b7f",
+    "number": 8101,
+    "title": "Derive finite-link payload scaling and physical ground-state deficit bounds"
+  },
+  {
+    "headRefName": "physics-loop/charged-finite-link-dynamics-20260913",
+    "headRefOid": "da3f41192f4d4cbe94b741e1decbbfeae4cf9545",
+    "number": 8100,
+    "title": "Bound charged finite-link dynamics and exact Euclidean weight witnesses"
+  },
+  {
+    "headRefName": "physics-loop/local-hall-free-mixed-quartet-20260913",
+    "headRefOid": "387cffa600b3dfb319b2975a2b1ec8f6b87ddf22",
+    "number": 8099,
+    "title": "Construct a mixed Hall-free Weyl quartet with an aligned common metric"
+  },
+  {
+    "headRefName": "physics-loop/native-weyl-gauge-response-20260913",
+    "headRefOid": "616362e0a07ed5422d040d182ecbba24265941dd",
+    "number": 8098,
+    "title": "Derive native Weyl Hall response and qualify common-cone flow"
+  },
+  {
+    "headRefName": "physics-loop/native-local-quartic-20260913",
+    "headRefOid": "066bdf07bb4d8780c89c540fa4f06ad8215c7d8f",
+    "number": 8097,
+    "title": "Derive a covariant local interaction for the native Weyl pair"
+  },
+  {
+    "headRefName": "physics-loop/formation-order-covariance-20260913",
+    "headRefOid": "d57291602d909246756f30975f0d862a08e8f836",
+    "number": 8096,
+    "title": "[physics-loop] formation-order-covariance bounded_theorem bounded-support"
+  },
+  {
+    "headRefName": "physics-loop/native-canonical-metric-20260913",
+    "headRefOid": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+    "number": 8095,
+    "title": "Derive classical metric constraints with native Weyl moving-frame sources"
+  },
+  {
+    "headRefName": "physics-loop/native-stress-logarithm-20260913",
+    "headRefOid": "42dfd4afa0f0cc2f0b46039ff0b1681e5004a62c",
+    "number": 8094,
+    "title": "[physics-loop] Native Weyl stress bounded_theorem conditional-support"
+  },
+  {
+    "headRefName": "claude/toe-derivation-campaign-3a97a2",
+    "headRefOid": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+    "number": 8093,
+    "title": "docs(campaign): design TOE derivation campaign by underdetermination witnesses"
+  },
+  {
+    "headRefName": "physics-loop/native-common-frame-20260913",
+    "headRefOid": "4ad50beb2237097578815a623d963f3427cdcd78",
+    "number": 8092,
+    "title": "[physics-loop] Native common frame bounded_theorem conditional-support"
+  },
+  {
+    "headRefName": "physics-loop/native-lapse-response-20260913",
+    "headRefOid": "28dd88687270388140ad45fbfac9b145f6f8972f",
+    "number": 8091,
+    "title": "[physics-loop] Native lapse response bounded_theorem conditional-support"
+  },
+  {
+    "headRefName": "physics-loop/native-interacting-weyl-20260913",
+    "headRefOid": "004b5c083745f56e0c00cd72294e0efc28a0bece",
+    "number": 8090,
+    "title": "[physics-loop] Interacting native Weyl carrier bounded_theorem conditional-support"
+  },
+  {
+    "headRefName": "physics-loop/native-informative-record-20260913",
+    "headRefOid": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+    "number": 8089,
+    "title": "[physics-loop] Native informative edge Records and matter disturbance"
+  },
+  {
+    "headRefName": "physics-loop/projective-history-local-copy-20260913",
+    "headRefOid": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+    "number": 8088,
+    "title": "[physics-loop] Finite projector histories with local Record laws"
+  },
+  {
+    "headRefName": "physics-loop/native-growing-formation-current-20260913",
+    "headRefOid": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+    "number": 8087,
+    "title": "[physics-loop] Growing native formation and current bounded_theorem conditional-support"
+  },
+  {
+    "headRefName": "physics-loop/native-positive-ward-scalar-20260913",
+    "headRefOid": "a3e5529b4d74f618df416747c39bf150b885e495",
+    "number": 8086,
+    "title": "[physics-loop] Positive native star coefficient and low-energy control"
+  },
+  {
+    "headRefName": "physics-loop/regge-exact-reduction-positive-transfer-20260913",
+    "headRefOid": "c63f5b991044328ad9b13223c8a25849aa0ef574",
+    "number": 8085,
+    "title": "[physics-loop] Exact Regge reduction and positive tensor transfer bounded_theorem conditional-support"
+  },
+  {
+    "headRefName": "physics-loop/native-feedback-finite-apparatus-20260913",
+    "headRefOid": "e56bca5c4edc48d279de8d13edb3884e7b8d8479",
+    "number": 8084,
+    "title": "[physics-loop] Native feedback finite apparatus bounded_theorem conditional-support"
+  },
+  {
+    "headRefName": "codex/native-quartic-ward-20260910",
+    "headRefOid": "a2aca4bcf2d6c0c3868b852017de327f888f270a",
+    "number": 8083,
+    "title": "[physics-loop] Quartic Ward error bounds (conditional-support)"
+  },
+  {
+    "headRefName": "codex/native-gaussian-moment-jet-20260910",
+    "headRefOid": "dee7f1f07698bc36cfffc4e6495168a9107ff956",
+    "number": 8082,
+    "title": "[physics-loop] Gaussian local moment jets (conditional-support)"
+  },
+  {
+    "headRefName": "codex/native-correlated-ward-20260910",
+    "headRefOid": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+    "number": 8081,
+    "title": "[physics-loop] Correlated native Ward bounds (conditional-support)"
+  },
+  {
+    "headRefName": "codex/native-stronger-ward-20260910",
+    "headRefOid": "ac7bc8d614a67cec5a86d59253be17bf04b98f34",
+    "number": 8080,
+    "title": "[physics-loop] Stronger native Ward bounds (conditional-support)"
+  },
+  {
+    "headRefName": "codex/native-finite-moment-ward-20260910",
+    "headRefOid": "181e182a14d358c8bca434a1eac398b27237ec8f",
+    "number": 8079,
+    "title": "[physics-loop] Finite-moment Ward certificate and fixed-p boundary (conditional-support)"
+  },
+  {
+    "headRefName": "codex/native-ward-direct-overlap-20260910",
+    "headRefOid": "4600d22d47052040aabe090148ec82cb9a1828f5",
+    "number": 8078,
+    "title": "Prove the native direct Ward overlap exceeds 160/h\u00b2"
+  },
+  {
+    "headRefName": "codex/native-global-projector-certificate-20260910",
+    "headRefOid": "5a94383097a5484aa6d4819d3c9843790d6e950d",
+    "number": 8077,
+    "title": "Certify the native global projector descriptor below 2e-13"
+  },
+  {
+    "headRefName": "codex/native-generalized-action-boundary-20260909",
+    "headRefOid": "aa163dfd79252f607b6065435c728c98d67783ea",
+    "number": 8076,
+    "title": "[physics-loop] generalized-action-boundary: bounded-support for paired rank and target exclusion"
+  },
+  {
+    "headRefName": "codex/native-rho4-moment-certificates-20260909",
+    "headRefOid": "64e92035cfd405932bef30bda1ddf6a365430ffe",
+    "number": 8075,
+    "title": "[physics-loop] Bounded native rho4 moment certificates"
+  },
+  {
+    "headRefName": "codex/native-compression-action-boundary-20260909",
+    "headRefOid": "77411cfb9d526622ea259c50ab0d66996fededb7",
+    "number": 8074,
+    "title": "[physics-loop] native-compression-action-boundary bounded-support"
+  },
+  {
+    "headRefName": "codex/native-sparse-first-action-frame-20260909",
+    "headRefOid": "0b80a97dd72b52662f835fa44b2fe803c2ca555e",
+    "number": 8073,
+    "title": "[physics-loop] native-sparse-first-action-frame: bounded-support theorem and pilot evidence"
+  },
+  {
+    "headRefName": "codex/native-gapfree-generator-propagation-20260909",
+    "headRefOid": "7a399a00394fd6997262a6d11e39adee6be51918",
+    "number": 8072,
+    "title": "[physics-loop] native generator and Poisson propagation: bounded-support"
+  },
+  {
+    "headRefName": "codex/native-mixed-gaussian-transition-20260909",
+    "headRefOid": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+    "number": 8071,
+    "title": "[physics-loop] native mixed Gaussian transitions: conditional-support"
+  },
+  {
+    "headRefName": "codex/native-certified-imaginary-time-20260909",
+    "headRefOid": "55c4b53cc2c676ca38f72b0ebe23ecd6bd6f7a60",
+    "number": 8070,
+    "title": "[physics-loop] native-certified-imaginary-time: conditional-support"
+  },
+  {
+    "headRefName": "codex/native-certified-local-green-scalars-20260909",
+    "headRefOid": "281dbe3fde49512baa2c4005e15985c4fbfb4cde",
+    "number": 8069,
+    "title": "[physics-loop] certified native Green scalar inputs: conditional-support"
+  },
+  {
+    "headRefName": "codex/native-pair-vacuum-chart-20260909",
+    "headRefOid": "35cebc55b6bb81c5d0e784cad4e08685ef0d149f",
+    "number": 8068,
+    "title": "[physics-loop] native pair-vacuum chart: bounded-support"
+  },
+  {
+    "headRefName": "codex/native-finite-excitation-ward-20260909",
+    "headRefOid": "109b0a1ba906894a12c9139badfdcc26b0e32a31",
+    "number": 8067,
+    "title": "[physics-loop] finite-excitation Ward approximation: bounded-support"
+  },
+  {
+    "headRefName": "codex/native-infinite-star-node-reduction-20260909",
+    "headRefOid": "64c1efc6984b16cf95c61e7ac148add85d741606",
+    "number": 8066,
+    "title": "[physics-loop] native-infinite-star-node-reduction: exact-support"
+  },
+  {
+    "headRefName": "codex/native-charged-record-histories-20260909",
+    "headRefOid": "b20fb72faf9fb793487a664fb927296c65f7d493",
+    "number": 8065,
+    "title": "[physics-loop] native-charged-record-histories: exact-support"
+  },
+  {
+    "headRefName": "codex/native-full-star-infrared-response-20260909",
+    "headRefOid": "70d0f3c793ff8eb835b1661c710cb42ea2b46879",
+    "number": 8064,
+    "title": "[physics-loop] native-full-star-infrared-response: exact-support"
+  },
+  {
+    "headRefName": "codex/native-star-thermodynamic-limit-20260909",
+    "headRefOid": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+    "number": 8063,
+    "title": "[physics-loop] native-star-thermodynamic-limit: exact-support"
+  },
+  {
+    "headRefName": "codex/native-uniform-quasilocal-star-vertex-20260909",
+    "headRefOid": "df8112d1642bec7aaaacd380036087b03cdb0173",
+    "number": 8062,
+    "title": "[physics-loop] native-uniform-quasilocal-star-vertex: exact-support"
+  },
+  {
+    "headRefName": "codex/native-l6-nonlinear-star-vertex-20260909",
+    "headRefOid": "da572021da3cd5469af0b5bae4f028faf4af3d98",
+    "number": 8061,
+    "title": "[physics-loop] native-l6-nonlinear-star-vertex: exact-support"
+  },
+  {
+    "headRefName": "codex/native-weak-electric-joint-defect-bounds-20260909",
+    "headRefOid": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+    "number": 8060,
+    "title": "[physics-loop] native-weak-electric-joint-defect-bounds: exact-support"
+  },
+  {
+    "headRefName": "codex/native-l6-sixth-prefix-gap-certificate-20260908",
+    "headRefOid": "fa9764acc0b90ce35a9b09cd918737ed933aff76",
+    "number": 8059,
+    "title": "[physics-loop] native-l6-sixth-prefix-gap-certificate: exact-support"
+  },
+  {
+    "headRefName": "codex/native-third-order-star-vertex-20260908",
+    "headRefOid": "a814da6cc1178ac015914c9088fc04b2e635963e",
+    "number": 8058,
+    "title": "[physics-loop] native-third-order-star-vertex: exact-support"
+  },
+  {
+    "headRefName": "codex/native-weak-electric-defect-density-20260908",
+    "headRefOid": "063f73e73724d53e2b84c75f4b634d7f6373cdf3",
+    "number": 8057,
+    "title": "[physics-loop] native-weak-electric-defect-density: exact-support"
+  },
+  {
+    "headRefName": "codex/native-uniform-cubic-flux-defect-stiffness-20260908",
+    "headRefOid": "38f9a320fad026016303d79987d790c4b5bb7a51",
+    "number": 8056,
+    "title": "[physics-loop] native-uniform-cubic-flux-defect-stiffness: exact-support"
+  },
+  {
+    "headRefName": "codex/native-flux-defect-comparison-and-winding-gap-20260908",
+    "headRefOid": "00304d711b630d50d17520d8db83519a492fc28b",
+    "number": 8055,
+    "title": "[physics-loop] native-flux-defect-comparison-and-winding-gap: exact-support"
+  },
+  {
+    "headRefName": "codex/native-even-torus-flux-isolation-20260908",
+    "headRefOid": "396ac64f4f9155892cbf581b58c296346e8ba2c3",
+    "number": 8054,
+    "title": "[physics-loop] native-even-torus-flux-isolation: exact-support"
+  },
+  {
+    "headRefName": "codex/native-weak-electric-spectator-gap-20260908",
+    "headRefOid": "e14737cf0270e845c0b0b61dfc58469790df4eba",
+    "number": 8053,
+    "title": "[physics-loop] native-weak-electric-spectator-gap: exact-support"
+  },
+  {
+    "headRefName": "codex/native-zero-penalty-l4-delayed-splitting-20260908",
+    "headRefOid": "03696e613d72aa16741e3f533b5bd37a70f09512",
+    "number": 8052,
+    "title": "[physics-loop] native-zero-penalty-l4-delayed-splitting: exact-support"
+  },
+  {
+    "headRefName": "codex/native-zero-penalty-optimal-flux-dispersion-20260908",
+    "headRefOid": "116505696042571b2759a8dc5d73368eee727794",
+    "number": 8051,
+    "title": "[physics-loop] native-zero-penalty-optimal-flux-dispersion: exact-support"
+  },
+  {
+    "headRefName": "codex/native-leading-ring-stoquastic-gauge-20260908",
+    "headRefOid": "526431a6f31e73af97b7b3d259945f0f566ed547",
+    "number": 8050,
+    "title": "[physics-loop] native-leading-ring-stoquastic-gauge: exact-support"
+  },
+  {
+    "headRefName": "codex/native-zero-penalty-endpoint-20260908",
+    "headRefOid": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+    "number": 8049,
+    "title": "[physics-loop] zero-penalty-endpoint: conditional-support for exact fixed-flux spectrum"
+  },
+  {
+    "headRefName": "codex/native-sixth-offdiagonal-sign-obstruction-20260908",
+    "headRefOid": "cdb5b89190f51b7a84b554a2a873fe420f8b86d0",
+    "number": 8048,
+    "title": "[physics-loop] native-sixth-sign: conditional-support for full correction and seed-component obstruction"
+  },
+  {
+    "headRefName": "codex/native-eighth-diagonal-cycle-potential-20260908",
+    "headRefOid": "84d38a34314c758f2f94333d52c02492fb1f4d8b",
+    "number": 8047,
+    "title": "Derive the native eighth-order cycle potential and non-RK witness"
+  },
+  {
+    "headRefName": "codex/native-same-hamiltonian-ramp-20260908",
+    "headRefOid": "a463f276238e3b276c9927df01e2c201577af78a",
+    "number": 8046,
+    "title": "Prepare native ring dynamics with a smooth Hamiltonian ramp"
+  },
+  {
+    "headRefName": "codex/native-local-ring-dynamics-20260908",
+    "headRefOid": "31abab83cbec35bac1ad69db1e3e82d1f8e92447",
+    "number": 8045,
+    "title": "Control local native ring dynamics at its natural timescale"
+  }
+]

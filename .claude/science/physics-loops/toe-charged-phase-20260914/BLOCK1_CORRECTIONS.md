@@ -13,3 +13,17 @@ no finite-slice result was called the exact Gibbs trace.
 The displayed history boundary sign and temporal matrix order survived the
 full-Fock check. This is an author check using distinct constructions, not an
 independent review or an audit verdict.
+
+Packaging corrections: an AST extraction first retained a removed write node
+as None and stopped before emitting a primary runner. Filtering removed nodes
+fixed that assembly step. The cache interface rejects an explicitly empty
+AUDIT_INPUT_PATHS tuple; an input-free runner correctly omits that declaration.
+The first cache attempt therefore stopped before running science. No fake
+scientific input was added to satisfy the interface.
+
+The cold author read removed a stale pre-derivation sentence calling the local
+bound uncompleted after its proof had been added. It also made epsilon_N an
+explicitly defined upper bound, fixed the directed hopping matrix block, and
+spelled out exclusion of extra free nodes. The weighted Dyson argument uses
+strong integrals, not unjustified norm continuity of unbounded-electric
+interaction-picture shifts. None of these author fixes grants independent review.

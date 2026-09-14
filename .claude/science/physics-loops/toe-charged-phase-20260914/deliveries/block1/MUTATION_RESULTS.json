@@ -1,0 +1,77 @@
+{
+  "primary_sha256": "06a754703fc8ddc8538ed4b03255ba626210469b669b25fed42438d5c5d9c6c9",
+  "mutations": [
+    {
+      "family": "positive_trace",
+      "change": "remove conjugate determinant pairing",
+      "exit_code": 1,
+      "seconds": 0.3165206670528278,
+      "source_sha256": "9d45b33b2d5c174e91bb2c11357d8e2f65896933c054d19463b28957f9e18cc8",
+      "stdout_tail": "FAIL: positive_trace assertion from exploratory source line 63\n",
+      "stderr_tail": "\"/tmp/toe_block1_mutant_positive_trace.py\", line 98, in check_positive_trace\n    result = [fixture(N) for N in [3, 4, 5]]\n              ~~~~~~~^^^\n  File \"/tmp/toe_block1_mutant_positive_trace.py\", line 95, in fixture\n    require(abs(direct - measure) < 2e-10, 'positive_trace assertion from exploratory source line 63')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/toe_block1_mutant_positive_trace.py\", line 18, in require\n    raise AssertionError(label)\nAssertionError: positive_trace assertion from exploratory source line 63\n"
+    },
+    {
+      "family": "charge_interaction",
+      "change": "double the auxiliary-field interaction strength",
+      "exit_code": 1,
+      "seconds": 0.1853793750051409,
+      "source_sha256": "52cdc848e2b6ba10cc456a2ffff5eae7e9b4f39e9012577141b90fbbf390d207",
+      "stdout_tail": "FAIL: charge_interaction assertion from exploratory source line 20\n",
+      "stderr_tail": "e_interaction\n    require(np.linalg.norm(expm(-dt * u[j] * Q[j] @ Q[j] / 2) - (expm(1j * theta[j] * Q[j]) + expm(-1j * theta[j] * Q[j])) / 2) < 1e-12, 'charge_interaction assertion from exploratory source line 20')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/toe_block1_mutant_charge_interaction.py\", line 18, in require\n    raise AssertionError(label)\nAssertionError: charge_interaction assertion from exploratory source line 20\n"
+    },
+    {
+      "family": "clock_rotor",
+      "change": "double the cyclic electric energy",
+      "exit_code": 1,
+      "seconds": 0.3136325000086799,
+      "source_sha256": "8d84afad6e0e04f6ea314c3b5b1bbce3db55e55b3b1ff6d488019da25c144e48",
+      "stdout_tail": "FAIL: clock_rotor assertion from exploratory source line 61\n",
+      "stderr_tail": "py\", line 626, in <module>\n    main()\n    ~~~~^^\n  File \"/tmp/toe_block1_mutant_clock_rotor.py\", line 615, in main\n    fn()\n    ~~^^\n  File \"/tmp/toe_block1_mutant_clock_rotor.py\", line 256, in check_clock_rotor\n    require(err <= bound + reference_bound + 1e-10, 'clock_rotor assertion from exploratory source line 61')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/toe_block1_mutant_clock_rotor.py\", line 18, in require\n    raise AssertionError(label)\nAssertionError: clock_rotor assertion from exploratory source line 61\n"
+    },
+    {
+      "family": "fourier_pairing",
+      "change": "delete the ring flux from the matrix comparator",
+      "exit_code": 1,
+      "seconds": 0.4498383339960128,
+      "source_sha256": "c688d0e06c0ac99fe3760c099a58991708dc88acc2ce918a6d50c4965f69b0b5",
+      "stdout_tail": "FAIL: fourier_pairing assertion from exploratory source line 23\n",
+      "stderr_tail": "<module>\n    main()\n    ~~~~^^\n  File \"/tmp/toe_block1_mutant_fourier_pairing.py\", line 615, in main\n    fn()\n    ~~^^\n  File \"/tmp/toe_block1_mutant_fourier_pairing.py\", line 285, in check_fourier_pairing\n    require(abs(d - analytic(phi, x)) < 1e-08, 'fourier_pairing assertion from exploratory source line 23')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/toe_block1_mutant_fourier_pairing.py\", line 18, in require\n    raise AssertionError(label)\nAssertionError: fourier_pairing assertion from exploratory source line 23\n"
+    },
+    {
+      "family": "wilson_fock",
+      "change": "remove conjugation from the minus-charge Wilson block",
+      "exit_code": 1,
+      "seconds": 0.19716633297502995,
+      "source_sha256": "193794db59e3eadca2f2b9d4aa0a3ce0fc05c35a0f07fae45ac6c7617a44117d",
+      "stdout_tail": "FAIL: wilson_fock assertion from exploratory source line 40\n",
+      "stderr_tail": "\", line 626, in <module>\n    main()\n    ~~~~^^\n  File \"/tmp/toe_block1_mutant_wilson_fock.py\", line 615, in main\n    fn()\n    ~~^^\n  File \"/tmp/toe_block1_mutant_wilson_fock.py\", line 379, in check_wilson_fock\n    require(np.linalg.norm(Hm @ Q - Q @ mr) < 1e-11, 'wilson_fock assertion from exploratory source line 40')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/toe_block1_mutant_wilson_fock.py\", line 18, in require\n    raise AssertionError(label)\nAssertionError: wilson_fock assertion from exploratory source line 40\n"
+    },
+    {
+      "family": "generator_bound",
+      "change": "replace the weighted-generator bound by an insufficient constant",
+      "exit_code": 1,
+      "seconds": 0.18353933293838054,
+      "source_sha256": "e20a79f71c540607832363b7bff51468422118c6ecf6d2dd7f640a1e596ddf1c",
+      "stdout_tail": "FAIL: generator_bound assertion from exploratory source line 19\n",
+      "stderr_tail": "d.py\", line 626, in <module>\n    main()\n    ~~~~^^\n  File \"/tmp/toe_block1_mutant_generator_bound.py\", line 615, in main\n    fn()\n    ~~^^\n  File \"/tmp/toe_block1_mutant_generator_bound.py\", line 435, in check_generator_bound\n    require(actual <= bound + 1e-12, 'generator_bound assertion from exploratory source line 19')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/toe_block1_mutant_generator_bound.py\", line 18, in require\n    raise AssertionError(label)\nAssertionError: generator_bound assertion from exploratory source line 19\n"
+    },
+    {
+      "family": "plaquette_trace",
+      "change": "drop the initial static gauge-orbit multiplicity",
+      "exit_code": 1,
+      "seconds": 0.19711433292832226,
+      "source_sha256": "56055b674888b7df2eb28e0346c03d222128c8f27f69943e68689d04b491c61e",
+      "stdout_tail": "FAIL: plaquette_trace assertion from exploratory source line 62\n",
+      "stderr_tail": "n()\n    ~~~~^^\n  File \"/tmp/toe_block1_mutant_plaquette_trace.py\", line 615, in main\n    fn()\n    ~~^^\n  File \"/tmp/toe_block1_mutant_plaquette_trace.py\", line 550, in check_plaquette_trace\n    require(abs(direct - total) < 2e-10 * abs(direct), 'plaquette_trace assertion from exploratory source line 62')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/toe_block1_mutant_plaquette_trace.py\", line 18, in require\n    raise AssertionError(label)\nAssertionError: plaquette_trace assertion from exploratory source line 62\n"
+    },
+    {
+      "family": "antiunitary_pairing",
+      "change": "replace neutral pairing with a charged pair",
+      "exit_code": 1,
+      "seconds": 0.17892691597808152,
+      "source_sha256": "8fb341f2af5816618bf7b5cfce9698cd8f45187353d3317c2c661acda6c582f3",
+      "stdout_tail": "FAIL: antiunitary_pairing assertion from exploratory source line 43\n",
+      "stderr_tail": "odule>\n    main()\n    ~~~~^^\n  File \"/tmp/toe_block1_mutant_antiunitary_pairing.py\", line 615, in main\n    fn()\n    ~~^^\n  File \"/tmp/toe_block1_mutant_antiunitary_pairing.py\", line 607, in check_antiunitary_pairing\n    require(metrics[key] < 1e-12, 'antiunitary_pairing assertion from exploratory source line 43')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/toe_block1_mutant_antiunitary_pairing.py\", line 18, in require\n    raise AssertionError(label)\nAssertionError: antiunitary_pairing assertion from exploratory source line 43\n"
+    }
+  ]
+}

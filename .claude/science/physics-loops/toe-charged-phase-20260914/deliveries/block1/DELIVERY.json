@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-14T02:18:47.205667+00:00",
+  "pr": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-positive-charged-histories-20260914",
+    "headRefOid": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+    "isDraft": false,
+    "mergeable": "MERGEABLE",
+    "number": 8106,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8106"
+  },
+  "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+  "remote_head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+  "worktree_clean_before_removal": true,
+  "worktree": "/Users/jonreilly/Projects/Physics-worktrees/toe-positive-charged-histories-20260914",
+  "disk_guard_GiB": 158,
+  "checkout_removed": true
+}

@@ -53,3 +53,17 @@ Next: finish the interacting charge-square trace check; independently challenge
 weighted generator and local commutator constants, then freeze a coherent
 milestone. In parallel with author validation personally inspect the actual
 Frohlich-Spencer proof route and the heavy/gapless fermion loop obligations.
+
+## Block 1 milestone and block 2 pivot
+
+PR #8106 is OPEN and MERGEABLE at 9030fd24ea1c9acf5b2694c23b203355cc66d6c6, verified 2026-09-14T02:18:47.205667+00:00.
+The exact remote branch preserves all milestone science; its clean checkout
+was removed immediately after delivery. See deliveries/block1/DELIVERY.json.
+Independent review remains pending. No author main landing occurred.
+
+Block 2 now targets an explicit massive-fermion closed-loop curvature bound
+relative to the Maxwell curl form, and the resulting gauge-fixed covariance
+inequalities, before testing compactness and Hamiltonian correspondence. It
+is a new direct construction; no conclusion from block 1 is used as reviewed
+physics or silently composed into a long unaudited dependency chain. The
+personal campaign continues until 2026-09-14 13:09:34 UTC.

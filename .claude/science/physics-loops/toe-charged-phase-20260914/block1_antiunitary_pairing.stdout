@@ -1,0 +1,1 @@
+{'fock_antiunitary_square_parity_error': np.float64(0.0), 'normal_antiunitary_error': np.float64(0.0), 'pair_antiunitary_error': np.float64(0.0), 'pair_charge_commutator': np.float64(0.0), 'pair_number_commutator': np.float64(1.8400000000000003)}

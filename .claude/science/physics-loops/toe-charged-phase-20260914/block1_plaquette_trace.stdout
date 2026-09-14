@@ -1,0 +1,3 @@
+physical dimension 258
+{'M': 1, 'flux_CAR_trace': np.float64(74.30400591915969), 'positive_history_trace': np.float64(74.30400591915988), 'relative_difference': np.float64(2.4862874147864692e-15), 'unfixed_full_history_sum': np.float64(74.30400591915296)}
+{'M': 2, 'flux_CAR_trace': np.float64(74.16252378876247), 'positive_history_trace': np.float64(74.16252378876199), 'relative_difference': np.float64(6.515002940207208e-15)}

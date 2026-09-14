@@ -1,0 +1,21 @@
+{
+  "N": 3,
+  "physical_dimension": 258,
+  "beta": 0.41,
+  "magnetic_coupling": 0.73,
+  "cases": [
+    {
+      "M": 1,
+      "flux_CAR_trace": 74.30400591915969,
+      "positive_history_trace": 74.30400591915988,
+      "relative_difference": 2.4862874147864692e-15,
+      "unfixed_full_history_sum": 74.30400591915296
+    },
+    {
+      "M": 2,
+      "flux_CAR_trace": 74.16252378876247,
+      "positive_history_trace": 74.16252378876199,
+      "relative_difference": 6.515002940207208e-15
+    }
+  ]
+}

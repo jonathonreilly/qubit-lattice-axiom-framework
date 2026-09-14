@@ -108,6 +108,7 @@
         "spectrum_max": 9.000000000000037,
         "transverse_modes": 52,
         "symplectic_error": 3.3973783922728897e-13,
+        "symbol_error": 2.6074201648295554e-14,
         "polynomial_tails": [
           {
             "degree": 0,
@@ -159,6 +160,7 @@
         "spectrum_max": 12.000000000000004,
         "transverse_modes": 126,
         "symplectic_error": null,
+        "symbol_error": 7.475556497242208e-14,
         "polynomial_tails": [
           {
             "degree": 0,

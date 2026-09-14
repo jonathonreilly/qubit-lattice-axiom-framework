@@ -1,0 +1,80 @@
+{
+  "time_utc": "2026-09-14T15:49:28.824026+00:00",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-gaussian-transfer-log-20260914",
+  "branch": "physics-loop/gaussian-transfer-canonical-log-20260914",
+  "head": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+  "remote_head": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+  "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "pr": {
+    "baseRefName": "main",
+    "files": [
+      {
+        "path": "docs/FINITE_STEP_GAUSSIAN_GAUGE_CANONICAL_LOGARITHM_AND_COULOMB_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "additions": 442,
+        "deletions": 0
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "additions": 5,
+        "deletions": 1
+      },
+      {
+        "path": "logs/runner-cache/finite_step_gaussian_gauge_canonical_log_2026_09_14.txt",
+        "additions": 367,
+        "deletions": 0
+      },
+      {
+        "path": "scripts/finite_step_gaussian_gauge_canonical_log_2026_09_14.py",
+        "additions": 380,
+        "deletions": 0
+      }
+    ],
+    "headRefOid": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+    "number": 8124,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124"
+  },
+  "files": [
+    {
+      "path": "docs/FINITE_STEP_GAUSSIAN_GAUGE_CANONICAL_LOGARITHM_AND_COULOMB_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "19d10a608f4f05fbb120f103d2cb7f4c4dd5f9efba11f3390845250ca7c9d357"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "990ed8108393602298a99b4fca02f5dd5d76dd88283ed27d8948a10856c5e8a7"
+    },
+    {
+      "path": "logs/runner-cache/finite_step_gaussian_gauge_canonical_log_2026_09_14.txt",
+      "sha256": "f0669f56904c5f3820a897fd2e22c78571d4cca42b03682304217518d27dc4e2"
+    },
+    {
+      "path": "scripts/finite_step_gaussian_gauge_canonical_log_2026_09_14.py",
+      "sha256": "f5a46907dadbc10e944e62bbad1f565879083cde2b3af05249095fe5c2e193be"
+    }
+  ],
+  "tracked_and_untracked_clean": true,
+  "ignored": [
+    "docs/audit/data/audit_ledger.json",
+    "docs/audit/data/citation_graph.json",
+    "docs/audit/data/ledger_cache_manifest.json",
+    "docs/audit/data/static_pipeline_checkpoint.lock",
+    "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/ledger_io.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-313.pyc",
+    "scripts/__pycache__/finite_step_gaussian_gauge_canonical_log_2026_09_14.cpython-313.pyc",
+    "scripts/__pycache__/runner_cache.cpython-313.pyc"
+  ],
+  "ignored_classification": "Generated graph/ledger cache and lock; Python bytecode only. No recovery science.",
+  "cleanup_pending": false,
+  "independent_review": "pending",
+  "audit": "not_applied",
+  "changed_evidence_existing_rows_checked": 0,
+  "source_classifiers": {
+    "no_go": false,
+    "negative_boundary": false,
+    "current_tier_packet": false
+  },
+  "worktree_removed": true,
+  "cleanup_utc": "2026-09-14T15:52:16.283905+00:00"
+}

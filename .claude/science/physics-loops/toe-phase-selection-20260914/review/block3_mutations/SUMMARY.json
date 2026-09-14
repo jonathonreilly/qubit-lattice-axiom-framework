@@ -1,0 +1,142 @@
+{
+  "primary_source": "/Users/jonreilly/Documents/Codex/toe-gaussian-transfer-log-20260914/scripts/finite_step_gaussian_gauge_canonical_log_2026_09_14.py",
+  "primary_sha256": "f5a46907dadbc10e944e62bbad1f565879083cde2b3af05249095fe5c2e193be",
+  "mutations": [
+    {
+      "mutation": "inverse_response_reciprocal",
+      "old": "predicted = -u @ (response_multiplier(gap) * ve) @ u.conj().T",
+      "new": "predicted = -u @ (ve / response_multiplier(gap)) @ u.conj().T",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                                   ~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gaussian-log-mutations-dq3ag7jq/inverse_response_reciprocal.py\", line 71, in inverse_response_checks",
+        "    assert max(err_fd, err_integral, err_time) < 2e-8",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "69ede005c39d5ac9e6a39637de24e73cc246d1104addf2aa6ff287c04f9314c7"
+    },
+    {
+      "mutation": "inverse_kernel_factor",
+      "old": "kernel = -np.log(-np.expm1(-2 * np.pi * tau)) / (2 * np.pi)",
+      "new": "kernel = -np.log(-np.expm1(-2 * np.pi * tau)) / (4 * np.pi)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                                   ~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gaussian-log-mutations-dq3ag7jq/inverse_kernel_factor.py\", line 71, in inverse_response_checks",
+        "    assert max(err_fd, err_integral, err_time) < 2e-8",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "6b90bcc4f7fa9bd7aaa1a10dddf1be8bb10e5678c18b011d3395a1954cf88391"
+    },
+    {
+      "mutation": "gaussian_B_factor",
+      "old": "aa, bb = fg / bt, bs * lam * (1 + r / 4) * fg",
+      "new": "aa, bb = fg / bt, bs * lam * fg",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                      ~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gaussian-log-mutations-dq3ag7jq/gaussian_B_factor.py\", line 110, in oscillator_checks",
+        "    assert abs(aa * bb - omega ** 2) < 1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "e6a40af7a5a76df98262d8d8f9a1d2d1d78e22e25fcfdec1eb5acd1c008c29b2"
+    },
+    {
+      "mutation": "vacuum_scalar",
+      "old": "np.exp(-omega * (n + .5))",
+      "new": "np.exp(-omega * n)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                      ~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gaussian-log-mutations-dq3ag7jq/vacuum_scalar.py\", line 128, in oscillator_checks",
+        "    assert max_error < 1e-11",
+        "           ^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "bc805bbc2a14e69eaf6f532bb041b3bcdf9ac6171bf48ca6f9fd45e45c3468e8"
+    },
+    {
+      "mutation": "curl_orientation",
+      "old": "((step(x, j), i), -1)",
+      "new": "((step(x, j), i), 1)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                  ~~~~~~~~~~~~~~~^^^^^^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gaussian-log-mutations-dq3ag7jq/curl_orientation.py\", line 168, in cubic_incidence",
+        "    assert np.array_equal(f @ g, np.zeros((len(faces), len(vertices))))",
+        "           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "fce67740ce017324c231d3a0ae4998dd1410177fa5248537122ed2c74c5b415e"
+    },
+    {
+      "mutation": "fourier_matrix_orientation",
+      "old": "symbol = lam*np.eye(3)-d[:, None]*d[None, :].conj()",
+      "new": "symbol = lam*np.eye(3)-d[:, None].conj()*d[None, :]",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gaussian-log-mutations-dq3ag7jq/fourier_matrix_orientation.py\", line 191, in cubic_and_locality_checks",
+        "    assert symbol_error < 2e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "1f514f4d96297117eec300e751ffbec44ad6680b69883c05f1de173ac2438e51"
+    },
+    {
+      "mutation": "overstrong_locality_rate",
+      "old": "bound_a = qmax**(degree+1)/bt",
+      "new": "bound_a = qmax**(2*degree+2)/bt",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gaussian-log-mutations-dq3ag7jq/overstrong_locality_rate.py\", line 237, in cubic_and_locality_checks",
+        "    assert err_a <= bound_a+2e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "0bcde8b62238efaee08716b6ab6881e66f3d944650ece834b52466d1f7f14b9d"
+    },
+    {
+      "mutation": "charge_time_normalization",
+      "old": "expected = float(rho @ delta_inverse @ rho / (2*bt))",
+      "new": "expected = float(bt * rho @ delta_inverse @ rho / 2)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                       ~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gaussian-log-mutations-dq3ag7jq/charge_time_normalization.py\", line 287, in charge_and_kernel_checks",
+        "    assert abs(cost-expected) < 1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "c86d5dc2353fec70425dcafa9c9431e443083ce04b95428f2606b239b47f0a14"
+    },
+    {
+      "mutation": "green_heat_clock",
+      "old": "np.prod(ive(np.asarray(x), 2*t))",
+      "new": "np.prod(ive(np.asarray(x), t))",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-gaussian-log-mutations-dq3ag7jq/green_heat_clock.py\", line 343, in green_and_covariance_checks",
+        "    assert abs(6*(g0-g1)-1) < 2e-9",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "0fa7f475b8e0182b34856496b2e389cc0c7621e0b9e1e93593126f494cc94b3a"
+    }
+  ],
+  "all_caught": true
+}

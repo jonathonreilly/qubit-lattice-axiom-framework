@@ -77,6 +77,13 @@ The partial-fraction identity for coth gives
 
     f(x) = 1 + 2 sum_{n>=1} x^2/(x^2+(2 pi n)^2).           (A2)
 
+For a direct derivation, the periodic Green kernel of -partial_t^2+x^2
+on a circle of length one, for x!=0, is
+cosh(x(1/2-|t|))/(2x sinh(x/2)), -1/2<=t<=1/2. Its derivative has jump
+-1 at zero and is periodic at the endpoints, so its Fourier coefficients
+are 1/(x^2+(2 pi n)^2). The series is absolutely convergent. Evaluate at
+t=0 and multiply by x^2 to obtain (A2); x=0 follows continuously.
+
 Writing tau_t(W)=exp(i t H) W exp(-i t H), one useful absolutely integrable
 version is
 
@@ -93,8 +100,10 @@ Thus a dimension-independent finite-matrix estimate is
 
     ||f(ad_H)V - V|| <= ||[H,[H,V]]||/12.                  (A4)
 
-If H is already local and V has fixed support, the double commutator
-has bounded nearby support, and a Lieb-Robinson bound can localize (A3).
+If H is a sum of uniformly bounded finite-range terms on a bounded-degree
+lattice and V is bounded with fixed support, the double commutator has
+bounded nearby support and norm. A volume-uniform Lieb-Robinson bound
+can then localize (A3).
 But using this observation as a proof that the unknown H(s) is local is
 circular. A volume-uniform interaction-space flow, or another noncircular
 construction, remains necessary. This is the explicit stop condition for
@@ -110,8 +119,9 @@ Equation (A3) is preferable for norm estimates and numerical checks.
 ## B. Gaussian test: keep the canonical field algebra
 
 Let x,p be m canonical real coordinates, [x_i,p_j]=i delta_ij, and let
-K be a real symmetric positive semidefinite finite-range matrix. Supply
-positive beta_t,beta_s. Define the positive transfer on L2(R^m):
+K be a real symmetric positive semidefinite finite-range matrix. In a
+family of volumes assume a common finite range and upper bound K<=Lambda I.
+Supply positive beta_t,beta_s, fixed across that family. Define the positive transfer on L2(R^m):
 
     T = exp(-beta_s x.K.x/4)
         exp(-p.p/(2 beta_t))
@@ -156,7 +166,7 @@ This identifies the positive oscillator heat semigroup. At t=1,
 a_1=beta_t+beta_s lambda/2, c_1=beta_t, and
 N_1=sqrt(beta_t/(2 pi)), exactly the original kernel (B1).
 
-The key representation, to be checked independently, is
+The positive integral representation is
 
     f_G(r)= integral_0^1 du/[1+(r/4)(1-u^2)].               (B4)
 
@@ -271,8 +281,8 @@ kernel for A and B.
 
 There are 3 global harmonic link modes on a periodic three-torus as well
 as the gradients. At finite volume the noncompact harmonic free particles
-do not have normalizable zero-momentum ground vectors. One may fix the
-harmonic coordinates in a reduced phase-space construction, use boundary
+do not have normalizable zero-momentum ground vectors. One may remove the
+harmonic canonical pairs by a supplied phase-space reduction, use boundary
 conditions without these modes, or define the infinite-volume Gaussian
 state directly on local gauge-invariant observables. One may not claim a
 unique normalized finite-torus vacuum for the unreduced transfer (B1).
@@ -289,9 +299,12 @@ The two transverse polarizations have these covariances. On the infinite
 cubic lattice their infrared integrals are finite for local test fields
 in three dimensions. For the curl observable, multiply its position
 covariance by F and F*, removing the inverse square-root singularity.
-The resulting positive Gaussian covariance, with the stated Gauss
-relations and zero-mode prescription, defines the free vacuum on the
-gauge-invariant Weyl algebra. It has two gapless transverse modes. This
+These covariances saturate the oscillator uncertainty relation in each
+transverse mode. The corresponding finite reduced Gaussian characteristic
+functions have limits for local gauge-invariant tests; their finite Gram
+matrices remain positive in the limit. This defines the free vacuum on the
+gauge-invariant Weyl algebra with the stated Gauss relations and zero-mode
+prescription. It has two gapless transverse modes. This
 is a property of the explicitly supplied noncompact theory, not a
 finite-clock or Record-law result.
 
@@ -339,8 +352,9 @@ and its boundary values vanish. Therefore
 
     G(x)=1/(4 pi |x|)+O(|x|^-2).                           (D3)
 
-For opposite unit static charges separated by x, (D2) tends to
-[G(0)-G(x)]/beta_t. After subtracting their separation-independent
+For opposite unit static charges separated by fixed x, the torus sums
+in (D2) have bounded integrand (1-cos(k.x))/lambda(k), whose Riemann limit
+is [G(0)-G(x)]/beta_t. After subtracting their separation-independent
 self-energy, the interaction is -1/(4 pi beta_t |x|)+O(|x|^-2).
 This is the electrostatic cost in the supplied Gaussian reduction.
 
@@ -358,7 +372,13 @@ two-step Gaussian convolution; exact cubic incidence and all eigenvalues
 on 3^3 and 4^3 tori; an independent 162-by-162 canonical matrix product;
 and polynomial approximation tails at six degrees. These are finite
 challenges to the displayed proofs, not independent research reviews.
-Equations (C3)–(D2) still need their own adversarial finite checks.
+The completed runner additionally checks weighted spatial kernels, direct
+charge-constrained KKT solves, oscillator covariance/energy identities,
+and the Bessel heat-kernel Green function. Nine public-runner source
+mutations were rejected. PR8124 preserves the self-contained result at
+833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7; BLOCK3_DELIVERY.json records
+verification and delivery-checkout removal. The general interacting
+local-log construction remains open. The campaign continues in block 4.
 
 ## Decisive checks and next step
 

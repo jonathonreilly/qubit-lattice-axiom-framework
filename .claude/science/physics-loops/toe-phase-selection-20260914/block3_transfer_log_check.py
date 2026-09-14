@@ -176,9 +176,18 @@ def cubic_and_locality_checks():
         values, u = eigh(k)
         assert values.min() > -1e-12 and values.max() <= 12 + 1e-12
         predicted = []
+        symbol_error = 0.
+        anchors = np.array([x for x, _ in edges])
+        orientations = np.array([j for _, j in edges])
         for momentum in itertools.product(range(length), repeat=3):
             lam = 4 * sum(np.sin(np.pi*j/length)**2 for j in momentum)
             predicted.extend([0, lam, lam])
+            d = np.exp(2j*np.pi*np.array(momentum)/length)-1
+            symbol = lam*np.eye(3)-d[:, None]*d[None, :].conj()
+            phase = np.exp(2j*np.pi*(anchors@np.array(momentum))/length)
+            embedded = phase[:, None]*np.eye(3)[orientations]
+            symbol_error = max(symbol_error, norm(k@embedded-embedded@symbol, 2))
+        assert symbol_error < 2e-12
         assert np.max(abs(np.sort(predicted) - values)) < 1e-11
         assert np.count_nonzero(values > 1e-8) == 2 * (length**3-1)
         assert np.linalg.matrix_rank(g) == length**3 - 1
@@ -231,7 +240,8 @@ def cubic_and_locality_checks():
             current = current @ shifted
         rows.append(dict(length=length, edges=len(edges), spectrum_max=float(values.max()),
                          transverse_modes=int(np.count_nonzero(values>1e-8)),
-                         symplectic_error=symplectic_error, polynomial_tails=tails))
+                         symplectic_error=symplectic_error, symbol_error=symbol_error,
+                         polynomial_tails=tails))
     # Small momentum behavior: frequency is linear, canonical coefficients are
     # regular even functions. This is a diagnostic, not the analyticity proof.
     sample = []

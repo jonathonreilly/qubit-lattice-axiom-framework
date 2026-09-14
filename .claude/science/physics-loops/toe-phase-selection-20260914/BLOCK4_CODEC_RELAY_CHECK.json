@@ -1,0 +1,194 @@
+{
+  "codec": {
+    "frame_orbit": 24,
+    "role_frame_group_cases": 1728,
+    "frame_min_separation_squared": 6,
+    "inverse_error": 1.0281327922224125e-12,
+    "covariance_error": 8.071195399871655e-15,
+    "algebra_automorphism_error": 4.930190325141863e-15,
+    "jacobians": [
+      {
+        "norm_squared": 0.1012513292506011,
+        "determinant": 9.420801213064647e-06,
+        "analytic_determinant": 9.420801241710547e-06,
+        "relative_error": 3.040707463597414e-09
+      },
+      {
+        "norm_squared": 1.8815101619701105,
+        "determinant": 7.681026999436356e-08,
+        "analytic_determinant": 7.681027001908352e-08,
+        "relative_error": 3.218313393560379e-10
+      },
+      {
+        "norm_squared": 18.76553065492988,
+        "determinant": 5.057986619519149e-12,
+        "analytic_determinant": 5.057986625226462e-12,
+        "relative_error": 1.128376392323105e-09
+      }
+    ]
+  },
+  "measure": {
+    "normalized_mass": 0.9999999999999993,
+    "wrong_constant_jacobian_mass": 0.0032405732667141122,
+    "mean_squared_inverse_differential": 3087.999999999998,
+    "boundary_layer_probabilities": [
+      {
+        "boundary_distance": 0.05,
+        "mass": 0.8948354728334882,
+        "gamma_tail": 0.8948354728334882
+      },
+      {
+        "boundary_distance": 0.02,
+        "mass": 0.2005215455371664,
+        "gamma_tail": 0.20052154553716614
+      },
+      {
+        "boundary_distance": 0.01,
+        "mass": 0.0027673922131834137,
+        "gamma_tail": 0.0027673922131833915
+      }
+    ],
+    "support_boundary": "zero_probability_but_in_measure_support; no finite inverse"
+  },
+  "relay": {
+    "complex_edge": "2/5 + 3*I/7",
+    "cases": [
+      {
+        "path_edges": 2,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 3,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 4,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 5,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 6,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 7,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 8,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 9,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 10,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      }
+    ]
+  },
+  "status": "author_checked_finite_tools; periodic_embedding_not_yet_constructed"
+}

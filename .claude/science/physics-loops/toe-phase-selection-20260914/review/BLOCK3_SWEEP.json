@@ -1,0 +1,27 @@
+{
+  "time_utc": "2026-09-14T15:55:57.041636+00:00",
+  "origin_main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "worktrees": [
+    {
+      "path": "/private/tmp/toe-formation-order-20260913-wt",
+      "head": "d57291602d909246756f30975f0d862a08e8f836",
+      "contained_in_main": false,
+      "status": "",
+      "removed": false
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914",
+      "head": "ed04c85c343f18a9d480116697737eb51b59ce77",
+      "contained_in_main": false,
+      "status": " M .claude/science/physics-loops/toe-phase-selection-20260914/BLOCK3_TRANSFER_LOG_ROUTE.md\n M .claude/science/physics-loops/toe-phase-selection-20260914/block3_transfer_log_check.py\n?? .claude/science/physics-loops/toe-phase-selection-20260914/BLOCK3_DELIVERY.json\n?? .claude/science/physics-loops/toe-phase-selection-20260914/BLOCK4_PERIODIC_COMPILER_DESIGN.md\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/BLOCK3_VOCAB.json\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/SUMMARY.json\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/charge_time_normalization.py.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/charge_time_normalization.stderr.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/charge_time_normalization.stdout.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/curl_orientation.py.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/curl_orientation.stderr.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/curl_orientation.stdout.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/fourier_matrix_orientation.py.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/fourier_matrix_orientation.stderr.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/fourier_matrix_orientation.stdout.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/gaussian_B_factor.py.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/gaussian_B_factor.stderr.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/gaussian_B_factor.stdout.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/green_heat_clock.py.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/green_heat_clock.stderr.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/green_heat_clock.stdout.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/inverse_kernel_factor.py.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/inverse_kernel_factor.stderr.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/inverse_kernel_factor.stdout.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/inverse_response_reciprocal.py.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/inverse_response_reciprocal.stderr.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/inverse_response_reciprocal.stdout.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/overstrong_locality_rate.py.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/overstrong_locality_rate.stderr.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/overstrong_locality_rate.stdout.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/vacuum_scalar.py.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/vacuum_scalar.stderr.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block3_mutations/vacuum_scalar.stdout.gz\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/check_block3_public_mutations.py\n",
+      "removed": false
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "contained_in_main": false,
+      "status": "",
+      "removed": false
+    }
+  ]
+}

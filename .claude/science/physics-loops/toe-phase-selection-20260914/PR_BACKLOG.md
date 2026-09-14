@@ -6,5 +6,15 @@ local-probability theorem and projected generator/limit note, self-contained
 runner, canonical cache, refreshed manifest. Author checked, independent
 review and combined landing gates pending. No main landing or audit verdict.
 
-Block 2 now pursues the unresolved uniform sector and actual-state phase
-questions. No second PR candidate yet.
+Block 2's exact sector/path counterexamples remain private on the campaign
+branch. They do not settle the actual cubic ground phase.
+
+Block 3: PR8124, exact head 833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7,
+against the same main. Four files: exact canonical Gaussian transfer log,
+Weyl propagation and static charge-cost note; self-contained runner;
+canonical cache; one-node manifest update. Nine source mutations rejected.
+Independent review and combined landing gates pending. The delivery checkout
+was removed after preservation. No main landing or audit verdict.
+
+Block 4 now pursues the full-payload finite-tag chart and a fixed periodic
+Gaussian routing map. No public candidate yet.

@@ -87,3 +87,20 @@ author checks pass. This clears the Gaussian comparison case only; the
 finite-clock phase and native law remain open. Prepare a scoped Gaussian
 milestone if full author review passes, then continue the hard phase route
 or the distinct fixed-periodic-resource native compiler until the deadline.
+
+Block 3 delivery is now PR8124, exact head
+833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7. Its four files, nine rejected
+source mutations, fresh cache, author checks and safe scratch removal are
+recorded in BLOCK3_DELIVERY.json and review/block3_mutations/. The source
+independently derives its elementary partial-fraction identity via the
+circle Green function, and qualifies both zero modes and Weyl topology.
+The safe sweep preserved all three surviving worktrees as unlanded.
+
+Block 4's design is BLOCK4_PERIODIC_COMPILER_DESIGN.md. The new codec uses
+disjoint full-dimensional balls in M2 for finite role/frame tags, retaining
+four complex payloads with an explicit radial inverse and Jacobian, and
+using ordinary conjugation for the proper-cubic action. The proposed
+periodic geometry allocates planes per edge type and coarse color instead
+of per edge occurrence. Neither codec nor complete routing has yet been
+checked; source-graph matching and literal Record/formation boundaries
+remain essential. Continue personally, with no agents, to 01:30:44 UTC.

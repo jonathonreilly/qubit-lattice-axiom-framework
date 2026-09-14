@@ -20,6 +20,7 @@ formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Derive exact same-encoding locality and exchange tests; compare known
-  fixed-parity BKSF escape without importing a native compiler.
-last_checkpoint_utc: '2026-09-14T06:51:38.277612+00:00'
+next_action: Complete author review of the same-encoding support obstruction, actual
+  even-sector exchange witness and explicit returned-ancilla graph isometry; package
+  one coherent milestone.
+last_checkpoint_utc: '2026-09-14T07:21:23.974392+00:00'

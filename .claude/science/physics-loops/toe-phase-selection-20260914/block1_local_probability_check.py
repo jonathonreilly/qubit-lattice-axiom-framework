@@ -172,9 +172,23 @@ def dropped_positive_near_counterexample():
     prob = vec[:, 0]**2
     claimed = np.exp(log_lower(C=0., h=1., r=1, tau=1.))
     assert claimed > 1 and np.min(prob) < claimed
-    return {'H': H.tolist(), 'lowest_near_eigenvalue': float(e[0]),
-            'false_bound_if_positive_near_is_dropped': float(claimed),
-            'minimum_actual_probability': float(np.min(prob))}
+    negative = {'H': H.tolist(), 'lowest_near_eigenvalue': float(e[0]),
+                'false_bound_if_positive_near_is_dropped': float(claimed),
+                'minimum_actual_probability': float(np.min(prob))}
+    corrected = np.exp(log_lower(C=101., h=1., r=1, tau=0.01))
+    assert corrected < np.min(prob)
+    negative['valid_bound_after_local_scalar_shift'] = float(corrected)
+    # A second distinct missing premise: an on-R potential cannot be assigned
+    # to H_far. Omitting its local diagonal cost makes the bound false.
+    H2 = 2*np.eye(3)-B+np.diag([0., 100., 100.])
+    _, vec2 = eigh(H2, subset_by_index=(0, 0))
+    false_far = np.exp(log_lower(C=2., h=1., r=1, tau=1.))
+    actual2 = float(np.min(vec2[:, 0]**2))
+    assert false_far > actual2
+    return {'positive_near_dropped_without_changing_C': negative,
+            'on_region_potential_misassigned_to_far': {
+                'H': H2.tolist(), 'false_bound': float(false_far),
+                'minimum_actual_probability': actual2}}
 
 
 def main():

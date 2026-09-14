@@ -102,6 +102,25 @@ intentionally stated only for the ground energy and leakage; a claim of
 uniform approximation to every low-energy eigenvector would require its own
 spectral-window and degeneracy conditions.
 
+There is also a direct norm statement for the whole imaginary-time
+semigroup, requiring only lambda>0. Since A>=0, both PAP and
+R(A+lambda N)R>=lambda R generate contractions. For
+x(T)=P exp[-T(A+lambda N)] psi and y(T)=R exp[-T(A+lambda N)] psi,
+variation of constants gives
+
+    ||y(T)|| <= exp(-lambda T)||y(0)|| + v/lambda ||psi||,
+    ||x(T)-exp(-T PAP)x(0)||
+         <= v/lambda ||y(0)|| + T v^2/lambda ||psi||.
+
+Thus, for fixed T>0,
+
+    ||exp[-T(A+lambda N)]-P exp(-T PAP) P||
+        <= exp(-lambda T) + 2v/lambda + T v^2/lambda.
+
+This proves the fixed-box compressed-semigroup limit without choosing
+individual eigenvectors inside a degenerate neutral subspace. The constant
+v remains a finite-box norm, so no uniform infrared statement follows.
+
 ## Fixed spatial penalty per Euclidean step
 
 There is a second way the hard spatial constraint occurs. Keep a coefficient

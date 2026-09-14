@@ -130,25 +130,49 @@
     ]
   },
   "necessary_hypothesis_counterexample": {
-    "H": [
-      [
-        -100.0,
-        -1.0,
-        -1.0
+    "positive_near_dropped_without_changing_C": {
+      "H": [
+        [
+          -100.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          -1.0,
+          0.0
+        ]
       ],
-      [
-        -1.0,
-        0.0,
-        -1.0
+      "lowest_near_eigenvalue": -100.02019789944299,
+      "false_bound_if_positive_near_is_dropped": 5.477435739940306,
+      "minimum_actual_probability": 0.00010196798629533636,
+      "valid_bound_after_local_scalar_shift": 1.3399872412088446e-05
+    },
+    "on_region_potential_misassigned_to_far": {
+      "H": [
+        [
+          2.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          102.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          -1.0,
+          102.0
+        ]
       ],
-      [
-        -1.0,
-        -1.0,
-        0.0
-      ]
-    ],
-    "lowest_near_eigenvalue": -100.02019789944299,
-    "false_bound_if_positive_near_is_dropped": 5.477435739940306,
-    "minimum_actual_probability": 0.00010196798629533636
+      "false_bound": 0.10032273504899315,
+      "minimum_actual_probability": 0.00010196798629533647
+    }
   }
 }

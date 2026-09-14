@@ -1,0 +1,74 @@
+{
+  "one_flux_covariances": [
+    {
+      "beta": 0.03,
+      "alpha": 0.010208333333333331,
+      "variance_quadrature": 33.336520854135195,
+      "variance_closed_form": 33.33652085413524,
+      "lower_comparison": 24.870466321243523,
+      "upper_comparison": 50.526315789473685,
+      "score_cross": 0.9999999999999993,
+      "score_second_moment": 0.0301012819021469,
+      "expected_action_hessian": 0.03010128190214683
+    },
+    {
+      "beta": 0.1,
+      "alpha": 0.010208333333333331,
+      "variance_quadrature": 10.087333380183937,
+      "variance_closed_form": 10.087333380183935,
+      "lower_comparison": 9.073724007561436,
+      "upper_comparison": 11.1368909512761,
+      "score_cross": 1.0000000000000062,
+      "score_second_moment": 0.09923099610271015,
+      "expected_action_hessian": 0.09923099610271022
+    },
+    {
+      "beta": 0.3,
+      "alpha": 0.010208333333333331,
+      "variance_quadrature": 3.3833485848947458,
+      "variance_closed_form": 3.3833485848947444,
+      "lower_comparison": 3.2236400268636674,
+      "upper_comparison": 3.4507548526240113,
+      "score_cross": 1.0000000000000002,
+      "score_second_moment": 0.2955997267338843,
+      "expected_action_hessian": 0.2955997267338842
+    },
+    {
+      "beta": 1.0,
+      "alpha": 0.010208333333333331,
+      "variance_quadrature": 1.0079971207901555,
+      "variance_closed_form": 1.0079971207901541,
+      "lower_comparison": 0.9898948236749845,
+      "upper_comparison": 1.0103136181856451,
+      "score_cross": 1.0000000000000013,
+      "score_second_moment": 0.9920690063978728,
+      "expected_action_hessian": 0.9920690063978713
+    }
+  ],
+  "symbols": [
+    {
+      "dimension": 2,
+      "momenta_checked": 7,
+      "curl_range_rank": 1,
+      "common_Bianchi_kernel_dimension": 1
+    },
+    {
+      "dimension": 3,
+      "momenta_checked": 10,
+      "curl_range_rank": 2,
+      "common_Bianchi_kernel_dimension": 0
+    },
+    {
+      "dimension": 4,
+      "momenta_checked": 13,
+      "curl_range_rank": 3,
+      "common_Bianchi_kernel_dimension": 0
+    },
+    {
+      "dimension": 5,
+      "momenta_checked": 16,
+      "curl_range_rank": 4,
+      "common_Bianchi_kernel_dimension": 0
+    }
+  ]
+}

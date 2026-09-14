@@ -51,3 +51,48 @@ argument must not silently replace those sectors.
   require visual inspection. The paper's full stated target is a bounded-field,
   massive, noncompact Euclidean RG theorem. Dimock-Hurd 1992 abstract announces
   removal of the field restriction, but its full source has not been recovered.
+
+## New compact-defect probe — derivation not yet checked
+
+Normalize compact matter charge to integer e=1. The chosen integer fillings
+extend the determinant action from exact F=C A to all plaquette fields:
+
+    L_tilde(F)=2 Re sum_(rooted gamma) a_gamma exp(i<s_gamma,F>).
+
+For physical Villain F=C theta+2 pi n, integer n and integer filling
+multiplicities make exp(i<s_gamma,F>)=exp(i gamma.theta). Thus the extension
+reproduces the determinant exactly on every Villain sector; it is not a
+replacement action. The same area/incidence proof bounds its full plaquette
+Hessian by c_d,m(q) I, including non-closed variations. Wilson traces should
+make this extension even; this needs an exact coefficient-level check, not
+only evenness on closed fields. Alternatively use the explicitly evenized
+four-determinant model and double the constant.
+
+If S(F)=beta||F||^2/2-L_tilde(F) is even and its Hessian lies between
+kappa I and K I, integrate over X=range C at fixed orthogonal defect y:
+
+    R(y)=-log integral_X exp[-S(x+y)] dx.
+
+The candidate exact marginal Hessian formula is
+R''=E S_yy-Cov(S_y). Brascamp-Lieb in x and the Schur complement give
+R''>=kappa I; trivially R''<=K I. Evenness gives R'(0)=0, hence the ratio of
+one defect-sector integral to the defect-free integral is bounded by
+
+    exp[-K||y||^2/2] <= Z(y)/Z(0) <= exp[-kappa||y||^2/2].
+
+This avoids a volume factor from comparing two Gaussian partition functions
+separately. For y=2 pi (I-P)n the exponent is the usual Coulomb defect energy,
+with a controlled stiffness interval. Need prove the integer cochain quotient,
+periodization/gauge-volume normalization, marginal identities and evenness
+before claiming a compact result. The internal open-box complex differs from
+the exterior Dirichlet exhaustion used for the noncompact field theorem;
+keep those boundary choices separate.
+
+This sector ratio would still not prove a compact Coulomb phase. Summing
+interacting monopole sectors needs an entropy/interaction or correlation
+argument. The full Villain F has dF=2 pi dn, so the Bianchi identity used in
+the noncompact non-summability proof fails configuration by configuration.
+Projecting to P F restores closure but makes the observable nonlocal; it
+cannot silently replace a local physical field strength. Positive Fourier
+type of a dual measure is also not implied by convexity or phase-weight
+positivity. These are precise next proof obligations, not an axiom no-go.

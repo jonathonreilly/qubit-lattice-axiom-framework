@@ -7,36 +7,6 @@
     "role": "proof-route search, not imported",
     "sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17"
   },
-  "falconi": {
-    "url": "https://www.mfmat.org/other/lqedslides.pdf",
-    "local": "/tmp/toe-charged-reading-20260914/falconi-qed4.pdf",
-    "pages": 30,
-    "read": "slides 1-23",
-    "role": "scope comparison, no theorem import",
-    "sha256": "72214a4d5e20a72a6341451975d4ab2c223e4e5ac18ed8d1bc704f2a5585e872"
-  },
-  "wu_zhang": {
-    "url": "https://arxiv.org/pdf/cond-mat/0407272",
-    "local": "/tmp/toe-charged-reading-20260914/wu-zhang.pdf",
-    "pages": 15,
-    "read": "section II displayed excerpt and full section III theorem/proof through opening page 5",
-    "role": "prior art; determinant conjugation is standard, not a novelty claim",
-    "sha256": "e2ab84e4a344fab110e1c0485dfd82c80e583082d753f6a26e6d0e52ac94e7eb"
-  },
-  "nachtergaele-sims-2014": {
-    "url": "https://arxiv.org/pdf/1410.8174",
-    "local": "/tmp/toe-charged-reading-20260914/nachtergaele-sims-2014.pdf",
-    "sha256": "501af040512f2bdb62344ecbd093664e79ad1861338eabbce2c9791fca4e2fba",
-    "read": "Section 3 theorem and complete proof, PDF pages 7-11; bounds for self-adjoint unbounded onsite terms plus bounded interactions. Direct matrix path majorant in the campaign checked against equations 67-76.",
-    "role": "prior art, direct displayed proof remains in proposed note"
-  },
-  "tong-et-al-2022": {
-    "url": "https://arxiv.org/pdf/2110.06942",
-    "local": "/tmp/toe-charged-reading-20260914/tong-et-al-2022.pdf",
-    "sha256": "9d5adf738860c9aed9f390e6937d54eaf7a19addced3ced4428336d61533094b",
-    "read": "Introduction excerpt and section 2 pages 4-7 through spectral-isolation preview. Existing hard truncation, r=0 gauge-field class and Hamiltonian truncation; no cyclic-clock claim imported. Section 3 main text through both truncation theorem statements and proof outline, pages 7-8, read subsequently; appendices not fully read.",
-    "role": "prior art, direct displayed proof remains in proposed note"
-  },
   "dimock-1988-bounded-fields": {
     "url": "https://numdam.org/item/AIHPA_1988__48_4_355_0.pdf",
     "local": "/tmp/toe-charged-reading-20260914/dimock-1988-bounded-fields.pdf",

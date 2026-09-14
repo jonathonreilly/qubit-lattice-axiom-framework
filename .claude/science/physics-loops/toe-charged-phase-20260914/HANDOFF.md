@@ -79,3 +79,17 @@ insufficient. An exact r=2 Wilson determinant also prevents importing positive
 Fourier type for the entire supplied family. All are pending independent
 review. Continue personally on the actual loop-area response/Hamiltonian
 bridge, and deliver a coherent milestone after source and runner cold review.
+
+## Second milestone and continuing campaign
+
+PR #8108 is OPEN at de223212ed85f6f71f4a8e932eff4d37289dd580. Its exact remote
+head and clean tracked/untracked state were verified before its scratch
+checkout was removed at 2026-09-14T03:37:50.289977+00:00. See deliveries/block2/DELIVERY.json.
+Independent review remains pending. The personal campaign continues.
+
+The next block targets the ACTUAL compact determinant measure: derive its
+character/current representation, retain signed fermion coefficients and
+finite-cyclic alias currents, and look for a volume-uniform source-response
+bound. A matched anisotropic transfer/Hamiltonian limit is the next alternative
+if the representation cannot yet supply the infrared estimate. Do not turn
+the massive noncompact theorem into a massless compact or Hamiltonian claim.

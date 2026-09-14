@@ -209,3 +209,16 @@ settle the special r=1 family, and does not disprove phase stability.
 The source proof in Frohlich-Spencer section 2.12 uses positive Fourier type
 at equation (2.99). Its use for the present family needs replacement or a
 separately verified narrower hypothesis.
+
+A full four-dimensional box gives a second certificate, with all 16 vertices
+of {0,1}^4, the same r=2,t0=2 and M=10000. Change one corner link from +1
+to -1. The length-two trace is unchanged and the exact fourth-power trace
+difference is -1344. Therefore the leading change in log W is +672/M^4.
+Both log-series tails together, starting at length 6 by bipartiteness, are
+bounded by (4*64/6)q^6/(1-q), q=24/M. Exact rational comparison gives
+
+    log W(flipped link)-log W(all links +1)
+       >=672/M^4-(4*64/6)q^6/(1-q)>0.
+
+This verifies the obstruction on a full d=4 box, using an independent finite
+trace/remainder certificate rather than an ill-conditioned float subtraction.

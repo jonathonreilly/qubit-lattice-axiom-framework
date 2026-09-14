@@ -4,7 +4,8 @@
     "exact_one_face_Hessian_bound": 0.0010416666666666667,
     "compact_partition": 1.2615575820036533,
     "unfolded_partition": 1.2615575820036535,
-    "periodization_tail_bound": 4.5727320198406804e-136,
+    "periodization_tail_bound": 4.572732019839933e-136,
+    "periodization_tail_log_estimate": -311.63146180474746,
     "sector_cases": [
       {
         "m": 0,
@@ -43,7 +44,7 @@
       }
     ],
     "current_squared_density": 1.5198355240479067,
-    "density_truncation_error_upper": 4.89394484311286e-116,
+    "density_truncation_error_upper": 4.89394484311279e-116,
     "proved_density_upper": 104.55921145264844
   },
   {
@@ -51,7 +52,8 @@
     "exact_one_face_Hessian_bound": 0.0010416666666666667,
     "compact_partition": 0.5639735721162519,
     "unfolded_partition": 0.5639735721162518,
-    "periodization_tail_bound": 0.0,
+    "periodization_tail_bound": 2.3208225941796005e-287,
+    "periodization_tail_log_estimate": -1546.9401591980945,
     "sector_cases": [
       {
         "m": 0,
@@ -90,7 +92,7 @@
       }
     ],
     "current_squared_density": 0.28601990979272834,
-    "density_truncation_error_upper": 0.0,
+    "density_truncation_error_upper": 2.9846240632117756e-287,
     "proved_density_upper": 4.566321732710343
   },
   {
@@ -98,7 +100,8 @@
     "exact_one_face_Hessian_bound": 0.0010416666666666667,
     "compact_partition": 0.2818661135571345,
     "unfolded_partition": 0.2818661135571345,
-    "periodization_tail_bound": 0.0,
+    "periodization_tail_bound": 2.3208225941796005e-287,
+    "periodization_tail_log_estimate": -6174.703273644983,
     "sector_cases": [
       {
         "m": 0,
@@ -137,7 +140,7 @@
       }
     ],
     "current_squared_density": 0.002769911281562675,
-    "density_truncation_error_upper": 0.0,
+    "density_truncation_error_upper": 2.3272510668657243e-287,
     "proved_density_upper": 0.2367210178806817
   },
   {
@@ -145,7 +148,8 @@
     "exact_one_face_Hessian_bound": 0.0010416666666666667,
     "compact_partition": 0.08911564715815999,
     "unfolded_partition": 0.08911564715816,
-    "periodization_tail_bound": 0.0,
+    "periodization_tail_bound": 2.3208225941796005e-287,
+    "periodization_tail_log_estimate": -61693.530541930646,
     "sector_cases": [
       {
         "m": 0,
@@ -184,7 +188,7 @@
       }
     ],
     "current_squared_density": 5.31887723905392e-29,
-    "density_truncation_error_upper": 0.0,
+    "density_truncation_error_upper": 2.3208225941796005e-287,
     "proved_density_upper": 8.738126214444076e-09
   }
 ]

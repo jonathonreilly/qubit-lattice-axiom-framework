@@ -1,0 +1,89 @@
+{
+  "primary_sha256": "730b1603b36e6031b8a4fcee0285ade3946baf32a5fe368dee8a77b4f049107d",
+  "mutations": [
+    {
+      "mutation": "loop_boundary_sign",
+      "family": "loop_filling",
+      "source_sha256": "612d6f1907e46d022de188217b7c5f1c5898d3b943b38531bd2556ff4aa44714",
+      "returncode": 1,
+      "failed_assertion": "FAIL: loop_filling: original line 55",
+      "intended_mathematical_failure": true,
+      "replacement": {
+        "old": "surface[tuple(anchor), b, a] += -sa * sb",
+        "new": "surface[tuple(anchor), b, a] += sa * sb"
+      }
+    },
+    {
+      "mutation": "logdet_resolvent_sign",
+      "family": "wilson_curvature",
+      "source_sha256": "3597611f0a2c4715a26db51b7910af75a6a86419a8bd1a5f2ec78cf3fe8848d7",
+      "returncode": 1,
+      "failed_assertion": "FAIL: wilson_curvature: original line 70",
+      "intended_mathematical_failure": true,
+      "replacement": {
+        "old": "curvature = 2 * np.trace(inv @ D2 - inv @ D1 @ inv @ D1).real",
+        "new": "curvature = 2 * np.trace(inv @ D2 + inv @ D1 @ inv @ D1).real"
+      }
+    },
+    {
+      "mutation": "curl_orientation",
+      "family": "covariance_projection",
+      "source_sha256": "d78958a9b9b4cf87e70c3dfb6edf8d4a087f7b8c22116c9d62c3c8b9dc867336",
+      "returncode": 1,
+      "failed_assertion": "FAIL: covariance_projection: original line 59",
+      "intended_mathematical_failure": true,
+      "replacement": {
+        "old": "C[r, i] = -q[j]",
+        "new": "C[r, i] = q[j]"
+      }
+    },
+    {
+      "mutation": "integer_lower_face_sign",
+      "family": "integer_cochain",
+      "source_sha256": "0958f0b69e1f3072a2f213d782a284c446264523b134c3ab36016843bb701d4c",
+      "returncode": 1,
+      "failed_assertion": "FAIL: integer_cochain: original line 40",
+      "intended_mathematical_failure": true,
+      "replacement": {
+        "old": "mat[row, index[k][p, R]] -= (-1) ** j",
+        "new": "mat[row, index[k][p, R]] += (-1) ** j"
+      }
+    },
+    {
+      "mutation": "constrained_face_variance",
+      "family": "compact_marginal",
+      "source_sha256": "e06ce7f62400ca6b52276034dd96a8ad34d2d24930b596f4fefe1c456da8fd8d",
+      "returncode": 1,
+      "failed_assertion": "FAIL: compact_marginal: original line 46",
+      "intended_mathematical_failure": true,
+      "replacement": {
+        "old": "sigma2 = 5 / (6 * beta)",
+        "new": "sigma2 = 4 / (6 * beta)"
+      }
+    },
+    {
+      "mutation": "full_box_flux_removed",
+      "family": "compact_response",
+      "source_sha256": "8e798940f262f4309ab768a42a96f0af25456dd7cc17f7649888b110b410af04",
+      "returncode": 1,
+      "failed_assertion": "FAIL: compact_response: original line 61",
+      "intended_mathematical_failure": true,
+      "replacement": {
+        "old": "phase = sign if x == (0, 0, 0, 0) and mu == 0 else 1",
+        "new": "phase = 1"
+      }
+    },
+    {
+      "mutation": "Gaussian_Fourier_attenuation",
+      "family": "signed_source",
+      "source_sha256": "48f4425a0e42c22434f2dcd6e583263c2ef74072b68c4d186919e76214c0c75d",
+      "returncode": 1,
+      "failed_assertion": "FAIL: signed_source: original line 37",
+      "intended_mathematical_failure": true,
+      "replacement": {
+        "old": "coeff = coeff * np.exp(-np.einsum('ni,ij,nj->n', current, np.linalg.inv(Q), current) / 2)",
+        "new": "coeff = coeff * np.exp(-np.einsum('ni,ij,nj->n', current, np.linalg.inv(Q), current))"
+      }
+    }
+  ]
+}

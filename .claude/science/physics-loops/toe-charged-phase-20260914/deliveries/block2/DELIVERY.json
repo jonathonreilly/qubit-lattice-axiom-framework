@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-14T03:37:48.467220+00:00",
+  "pr": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-massive-gauge-covariance-20260914",
+    "headRefOid": "de223212ed85f6f71f4a8e932eff4d37289dd580",
+    "isDraft": false,
+    "mergeable": "MERGEABLE",
+    "number": 8108,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8108"
+  },
+  "head": "de223212ed85f6f71f4a8e932eff4d37289dd580",
+  "remote_head": "de223212ed85f6f71f4a8e932eff4d37289dd580",
+  "worktree_clean_before_removal": true,
+  "worktree": "/Users/jonreilly/Projects/Physics-worktrees/toe-massive-gauge-covariance-20260914",
+  "disk_guard_GiB": 157,
+  "checkout_removed": true,
+  "removed_utc": "2026-09-14T03:37:50.289977+00:00"
+}

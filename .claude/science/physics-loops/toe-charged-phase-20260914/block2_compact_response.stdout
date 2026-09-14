@@ -8,6 +8,16 @@
     "r": 2,
     "t0": 2
   },
+  "full_4d_negative_Fourier_type": {
+    "vertices": 16,
+    "M": 10000,
+    "r": 2,
+    "t0": 2,
+    "trace4_difference": -1344,
+    "leading_logW_difference": "21/312500000000000",
+    "absolute_logW_difference_tail_upper": "972/118923187255859375",
+    "strict_logW_increase_lower": "14376219/243554687500000000000"
+  },
   "closed_current_density_counterexample": [
     {
       "L": 1,

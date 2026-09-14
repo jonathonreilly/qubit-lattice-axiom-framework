@@ -1,0 +1,325 @@
+{
+  "status": "author_finite_checks",
+  "geometry_and_grade_locality": {
+    "torus_shape": [
+      4,
+      4,
+      4
+    ],
+    "links": 192,
+    "cubes": 64,
+    "star_links": 33,
+    "stars_per_link": 33,
+    "cubes_per_link": 4,
+    "samples_per_update": 768,
+    "tested_updates": 12,
+    "observed_grades": [
+      -6,
+      -4,
+      -2,
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "maximum_observed_charge_change": 1
+  },
+  "matrix_normal_form": {
+    "fiber_certificate": {
+      "full_coordinate_count": 531441,
+      "physical_count": 243,
+      "gauge_fiber": 2187
+    },
+    "nonzero_hopping_grades": [
+      -3,
+      -1,
+      0,
+      1,
+      3
+    ],
+    "second_effective_correction_minimum_eigenvalue": -11.683654094243966,
+    "projected_harmonic_identity_error": 0.0,
+    "neutral_local_observable_spectrum": [
+      0,
+      1
+    ],
+    "checks": [
+      {
+        "penalty": 32.0,
+        "neutral_dimension": 141,
+        "first_projected_remainder": 0.027027247182865154,
+        "scaled_projected_remainder": 27.675901115253918,
+        "ground_energy": -8.06446098271637,
+        "ground_first_energy_prediction": -8.083621337808236,
+        "ground_charge_square": 0.006087956411939273,
+        "scaled_ground_charge_square": 6.234067365825815,
+        "rotation_identity_error": 3.623767952376511e-13,
+        "rotation_energy_scale": 131.6240198974223,
+        "finite_matrix_off_norms": [
+          3.6478625277888868,
+          0.35953511623671325,
+          0.060178900143310544,
+          0.0144612619658685,
+          0.004098240963582118
+        ],
+        "prepared_state_times": [
+          {
+            "time": 0.0,
+            "dressed_charge_square": 3.034863328510704e-19,
+            "bare_defect_probability": 0.005869509102012357,
+            "exact_commutator_bound": 0.0
+          },
+          {
+            "time": 0.05,
+            "dressed_charge_square": 2.888251920649565e-08,
+            "bare_defect_probability": 0.005886139138255461,
+            "exact_commutator_bound": 0.0002049398502225899
+          },
+          {
+            "time": 0.2,
+            "dressed_charge_square": 2.7259921791553525e-08,
+            "bare_defect_probability": 0.006023770700406176,
+            "exact_commutator_bound": 0.0008197594008903596
+          },
+          {
+            "time": 1.0,
+            "dressed_charge_square": 3.546557657474913e-08,
+            "bare_defect_probability": 0.005907509071152136,
+            "exact_commutator_bound": 0.004098797004451798
+          }
+        ]
+      },
+      {
+        "penalty": 64.0,
+        "neutral_dimension": 141,
+        "first_projected_remainder": 0.006392245141741963,
+        "scaled_projected_remainder": 26.18263610057508,
+        "ground_energy": -7.962441305626829,
+        "ground_first_energy_prediction": -7.9672770606978744,
+        "ground_charge_square": 0.0016673063748446006,
+        "scaled_ground_charge_square": 6.829286911363484,
+        "rotation_identity_error": 2.6716406864579767e-12,
+        "rotation_energy_scale": 259.61218133241476,
+        "finite_matrix_off_norms": [
+          3.6478625277888868,
+          0.17462993841138763,
+          0.014014210811136614,
+          0.0016687780164683017,
+          0.00023461304397554884
+        ],
+        "prepared_state_times": [
+          {
+            "time": 0.0,
+            "dressed_charge_square": -2.0842298766138857e-19,
+            "bare_defect_probability": 0.0016390993351285557,
+            "exact_commutator_bound": 0.0
+          },
+          {
+            "time": 0.05,
+            "dressed_charge_square": 3.816783859878137e-11,
+            "bare_defect_probability": 0.0016406433518618567,
+            "exact_commutator_bound": 1.1732594236013009e-05
+          },
+          {
+            "time": 0.2,
+            "dressed_charge_square": 3.030540013002088e-11,
+            "bare_defect_probability": 0.001658729637626108,
+            "exact_commutator_bound": 4.6930376944052035e-05
+          },
+          {
+            "time": 1.0,
+            "dressed_charge_square": 3.066691845728746e-11,
+            "bare_defect_probability": 0.0016433586240371728,
+            "exact_commutator_bound": 0.00023465188472026016
+          }
+        ]
+      },
+      {
+        "penalty": 128.0,
+        "neutral_dimension": 141,
+        "first_projected_remainder": 0.0015530364648047017,
+        "scaled_projected_remainder": 25.444949439360233,
+        "ground_energy": -7.907892359445451,
+        "ground_first_energy_prediction": -7.909104922142695,
+        "ground_charge_square": 0.0004355460194494589,
+        "scaled_ground_charge_square": 7.135985982659935,
+        "rotation_identity_error": 1.2789769243681803e-12,
+        "rotation_energy_scale": 515.6061359827326,
+        "finite_matrix_off_norms": [
+          3.6478625277888868,
+          0.0861455739323484,
+          0.0033813280063858682,
+          0.0002006686610359034,
+          1.4063468538872247e-05
+        ],
+        "prepared_state_times": [
+          {
+            "time": 0.0,
+            "dressed_charge_square": 6.398552707837048e-20,
+            "bare_defect_probability": 0.0004319581369854377,
+            "exact_commutator_bound": 0.0
+          },
+          {
+            "time": 0.05,
+            "dressed_charge_square": 3.401180529711421e-15,
+            "bare_defect_probability": 0.0004321381294933518,
+            "exact_commutator_bound": 7.03301126674537e-07
+          },
+          {
+            "time": 0.2,
+            "dressed_charge_square": 3.4815000030652403e-14,
+            "bare_defect_probability": 0.00043444342527730617,
+            "exact_commutator_bound": 2.813204506698148e-06
+          },
+          {
+            "time": 1.0,
+            "dressed_charge_square": 1.2667562556884837e-14,
+            "bare_defect_probability": 0.0004325028757399791,
+            "exact_commutator_bound": 1.4066022533490738e-05
+          }
+        ]
+      },
+      {
+        "penalty": 256.0,
+        "neutral_dimension": 141,
+        "first_projected_remainder": 0.00038267716642032934,
+        "scaled_projected_remainder": 25.079130778522703,
+        "ground_energy": -7.879715400446907,
+        "ground_first_energy_prediction": -7.8800188528651045,
+        "ground_charge_square": 0.00011124776528637209,
+        "scaled_ground_charge_square": 7.290733545807681,
+        "rotation_identity_error": 3.183231456205249e-12,
+        "rotation_energy_scale": 1027.603079651115,
+        "finite_matrix_off_norms": [
+          3.6478625277888868,
+          0.04279659937916337,
+          0.0008305642064651107,
+          2.461361343582199e-05,
+          8.613987531302786e-07
+        ],
+        "prepared_state_times": [
+          {
+            "time": 0.0,
+            "dressed_charge_square": -9.187411545971194e-21,
+            "bare_defect_probability": 0.00011079562208781018,
+            "exact_commutator_bound": 0.0
+          },
+          {
+            "time": 0.05,
+            "dressed_charge_square": 4.842683286613971e-18,
+            "bare_defect_probability": 0.00011081824898194377,
+            "exact_commutator_bound": 4.3078112768002364e-08
+          },
+          {
+            "time": 0.2,
+            "dressed_charge_square": 4.028890797317831e-17,
+            "bare_defect_probability": 0.00011110822300520865,
+            "exact_commutator_bound": 1.7231245107200946e-07
+          },
+          {
+            "time": 1.0,
+            "dressed_charge_square": 1.5656741721267024e-17,
+            "bare_defect_probability": 0.00011086531364537622,
+            "exact_commutator_bound": 8.615622553600473e-07
+          }
+        ]
+      }
+    ]
+  },
+  "equal_penalty_control": {
+    "physical_flux_states": 19683,
+    "witness": {
+      "link": 9,
+      "sign": -1,
+      "before": [
+        -1,
+        -1,
+        -1,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      "after": [
+        1,
+        -1,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "charge_before": [
+        0,
+        -1
+      ],
+      "charge_after": [
+        -1,
+        0
+      ],
+      "penalty": 1,
+      "mismatch": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "qualification": "Grade zero preserves total Q squared, not each cube charge."
+  },
+  "logical_controls": {
+    "false_vacua": [
+      {
+        "length": 22,
+        "penalty": 10,
+        "local_field": 1,
+        "neutral_energy": 0,
+        "exact_ground_energy": -12,
+        "one_wall_trial_energy": -12,
+        "normal_form_remainder": 0
+      },
+      {
+        "length": 202,
+        "penalty": 100,
+        "local_field": 1,
+        "neutral_energy": 0,
+        "exact_ground_energy": -102,
+        "one_wall_trial_energy": -102,
+        "normal_form_remainder": 0
+      },
+      {
+        "length": 2002,
+        "penalty": 1000,
+        "local_field": 1,
+        "neutral_energy": 0,
+        "exact_ground_energy": -1002,
+        "one_wall_trial_energy": -1002,
+        "normal_form_remainder": 0
+      }
+    ],
+    "local_vs_global_rotation": {
+      "single_site_bare_probability": 9.997000999650129e-05,
+      "sites": 1000000,
+      "global_neutral_fidelity": 3.814222185513644e-44
+    },
+    "qualification": "Controls outside the cubic clock model. Small local rotations and exact constraint conservation do not imply global fidelity or ground-sector selection."
+  },
+  "qualification": "Finite falsifiers and matrix checks. The uniform estimates require the analytic proof; no ground-phase or native-axiom inference.",
+  "seconds": 0.9592098339926451
+}

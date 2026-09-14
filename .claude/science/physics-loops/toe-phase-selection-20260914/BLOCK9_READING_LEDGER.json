@@ -1,0 +1,33 @@
+{
+  "updated_utc": "2026-09-14T21:12:06.379933+00:00",
+  "sources": [
+    {
+      "name": "pace-wen-2023",
+      "url": "https://arxiv.org/abs/2301.05261v5",
+      "pdf_sha256": "262a3196f6e6d327ccd86844c523efdca3e1584556760f17a1d78cbf0bea8949",
+      "read_scope": "Pages1-5 in full extracted text; reference64 identified onpage35. Other pages not read.",
+      "use": "Exact local dressing and effective local Hamiltonian are explicitly conjectured in the relevant argument; context only."
+    },
+    {
+      "name": "yin-lucas-2023",
+      "url": "https://arxiv.org/abs/2209.11242v2",
+      "pdf_sha256": "2abeb6400fda11306076ad1df7786ef1ab733ea0cfd799102b97d06d1c1d9bdf",
+      "read_scope": "Pages1-2 and4-16 read in extracted text, page3 partly truncated; pages17-40 not yet read.",
+      "use": "Theorem3/Corollary4 provide prethermal, finite-remainder control; no direct theorem imported."
+    },
+    {
+      "name": "bjornberg-ueltschi-2022",
+      "url": "https://arxiv.org/abs/2204.12896v2",
+      "pdf_sha256": "e0d4ab181887c478e55f4f9432cdae70448c3c32f245333ccfcd59887f4292d1",
+      "read_scope": "Pages1-10 read in extracted text; text extraction has font-encoding corruption. Formula/hypothesis passages legible; no image-checked coefficient imported.",
+      "use": "Pairwise spin coupling assumptions do not directly match the ring Hamiltonian."
+    },
+    {
+      "name": "gallone-2026",
+      "url": "https://arxiv.org/abs/2604.13781v2",
+      "pdf_sha256": "affa372b10f0faa76daf91913a111e32b8cec59abba933ab66d02314d51de5a2",
+      "read_scope": "All16pages read in extracted text.",
+      "use": "Same standard normal-form proof mechanism. Onsite theorem and strong-locality remark compared with our explicitly graded overlapping cube penalties. No general novelty claim."
+    }
+  ]
+}

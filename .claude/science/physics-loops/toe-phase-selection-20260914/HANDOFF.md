@@ -170,3 +170,37 @@ the interacting log is local. Check the actual infinite-volume state and
 observable; non-summable correlations alone can also reflect degeneracy.
 The local Fourier bound may supply temporal clustering to remove that
 ambiguity. Continue personally to the same 01:30:44 UTC deadline.
+
+
+At approximately 18:55 UTC, block 6 has a private full derivation and finite
+checks in BLOCK6_OS_TRANSFER_DERIVATION.md and BLOCK6_TRANSFER_CONTACT_CHECK.json.
+The real-score sign/contact term, slab separation exponent, finite gauge
+transfer, spectral multiplier and degenerate-ground-space issue are checked.
+The compact U(1) application names FS covariance and Chevyrev--Garban Villain
+monotonicity as literature inputs. A monotone free-box argument identifies
+finite-cylinder ground-state limits and yields vanishing compact transfer
+gaps. This is a worked use of established masslessness, not its discovery.
+No block-6 PR was opened while pursuing the harder finite-clock route.
+
+Block 7 now has a promising but UNFINISHED covariance route. Read
+BLOCK7_FINITE_CLOCK_DUAL_COVARIANCE_ROUTE.md and especially
+BLOCK7_CONSTRUCTIVE_ENSEMBLE_AND_BOUNDARY_NOTES.md. Exact lattice duality gives
+Cov_L(n)/beta+Cov_M(m)/beta_dual=I. A uniform lower covariance bound on all
+shifted integer-curl cosets, applied on both sides, could give the angular
+finite-clock covariance sandwich. The positive cosine-ensemble identity,
+phase curvature bound and exact selected-link Gaussian integration are
+being derived with explicit constants. Private finite checks pass at
+N=2,3,4,5,8 and on a 92-edge four-dimensional cochain box. A preprint factor
+and frequency-sign ambiguity was caught and corrected by an independent
+matrix/character derivation; no claim about a published-paper error is made.
+
+The critical unresolved issue is boundary/topology, not a missing PASS count.
+Free primal and relative dual potential graphs cannot be conflated. A torus
+route may handle both integer-curl spaces while keeping harmonic projections
+and winding currents explicit. Work on the local chain contraction, exact
+107-edge neighborhood count, positive ensemble proof, periodic lattice
+cosets, winding-current curvature and limiting covariance. Do not assert a
+fixed-N massless phase until these hypotheses are proved. The selected
+anisotropic continuous-time Hamiltonian remains a separate target even if
+the isotropic clock transfer succeeds. Continue PERSONALLY with no agents
+until 2026-09-15 01:30:44 UTC; roughly six and a half hours remain.

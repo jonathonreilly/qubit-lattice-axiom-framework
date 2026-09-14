@@ -1,0 +1,137 @@
+{
+  "status": "personal_finite_identity_checks_pass",
+  "lattice_duality": [
+    {
+      "N": 2,
+      "beta": 0.7,
+      "beta_dual": 0.14474454806048254,
+      "primal_partition": 2.818831366640373,
+      "dual_partition": 1.0601940161234382,
+      "covariance_identity_error": 2.220446049250313e-16,
+      "primal_covariance_eigenvalues": [
+        0.608090327232283,
+        0.608090327232283,
+        0.608090327232283,
+        0.608090327232283,
+        0.608090327232283,
+        0.608090327232283
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 1.1,
+      "beta_dual": 0.20724787563205455,
+      "primal_partition": 1.7337908652563,
+      "dual_partition": 1.2761018066453436,
+      "covariance_identity_error": 4.440892098500626e-16,
+      "primal_covariance_eigenvalues": [
+        0.6418066945310035,
+        0.6418066945310035,
+        0.6418066945310035,
+        0.6418066945310035,
+        0.6418066945310036,
+        0.9161233517014234
+      ]
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "beta_dual": 0.5066059182116889,
+      "primal_partition": 1.0495339378248298,
+      "dual_partition": 8.46226998364224,
+      "covariance_identity_error": 2.220446049250313e-16,
+      "primal_covariance_eigenvalues": [
+        0.006422692383025576,
+        0.006422692383025598,
+        0.006422692383025598,
+        0.006422692383025599,
+        0.006422692383025602,
+        0.2715843293684512
+      ]
+    },
+    {
+      "N": 5,
+      "beta": 1.7,
+      "beta_dual": 0.37250435162624185,
+      "primal_partition": 1.3819114808790776,
+      "dual_partition": 3.5435933452388166,
+      "covariance_identity_error": 2.220446049250313e-16,
+      "primal_covariance_eigenvalues": [
+        0.11881531444440607,
+        0.11881531444440617,
+        0.11881531444440618,
+        0.11881531444440621,
+        0.11881531444440634,
+        1.5615976946848376
+      ]
+    },
+    {
+      "N": 8,
+      "beta": 2.6,
+      "beta_dual": 0.6235149762605402,
+      "primal_partition": 1.6514006398919663,
+      "dual_partition": 12.412027653822271,
+      "covariance_identity_error": 1.1102230246251565e-16,
+      "primal_covariance_eigenvalues": [
+        0.004534227904802408,
+        0.00453422790480246,
+        0.004534227904802513,
+        0.004534227904802518,
+        0.004534227904802785,
+        2.582862966097634
+      ]
+    }
+  ],
+  "local_gaussian_integration": {
+    "edges": 92,
+    "plaquettes": 78,
+    "rank": 53,
+    "selected_links": [
+      1,
+      61
+    ],
+    "source_integral": 1.04278027907492,
+    "transformed_integral": 1.04278027907492,
+    "error": 0.0,
+    "wrong_double_damping_error": 0.025799864695309704,
+    "wrong_phase_current_error": 0.020099133523822754
+  },
+  "phase_curvature": {
+    "positive_phase_integrals": [
+      {
+        "currents": 1,
+        "lower_curvature_bound": -0.23695694613879448,
+        "smallest_sampled": -0.13866820862717963
+      },
+      {
+        "currents": 3,
+        "lower_curvature_bound": -0.7642887665768622,
+        "smallest_sampled": -0.2969595999455152
+      },
+      {
+        "currents": 5,
+        "lower_curvature_bound": -0.3162975986710728,
+        "smallest_sampled": -0.06877115019702325
+      }
+    ],
+    "negative_mixture_counterexample_curvature": -0.3311036789297655
+  },
+  "affine_cosets": [
+    {
+      "beta": 1.7,
+      "smallest_closed_covariance_ratio": 0.9172910338693758,
+      "largest_closed_covariance_ratio": 1.08395043571619
+    },
+    {
+      "beta": 2.6,
+      "smallest_closed_covariance_ratio": 0.9934046436518094,
+      "largest_closed_covariance_ratio": 1.0066004456669744
+    },
+    {
+      "beta": 5.0,
+      "smallest_closed_covariance_ratio": 0.9999952755577933,
+      "largest_closed_covariance_ratio": 1.0000047244435633
+    }
+  ],
+  "limits": "The finite identities do not prove uniform phase representation, boundary control, thermodynamic covariance bounds or a fixed-clock phase."
+}

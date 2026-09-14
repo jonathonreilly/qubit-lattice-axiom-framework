@@ -126,7 +126,7 @@ transform by a constant and cannot remove a directional discontinuity.
 ## 5. Exact imported estimate and the inference drawn from it
 
 The deep input is Fröhlich--Spencer (IHES P/81/40, pp.44--52, equations
-2.90--2.106; published CMP83 (1982) 411--454): for sufficiently large beta,
+2.90--2.107; published CMP83 (1982) 411--454): for sufficiently large beta,
 there is beta''>0 with a two-sided covariance bound on finitely supported
 coclosed dual one-forms mu,
 
@@ -189,7 +189,77 @@ free-boundary local limit, preserving these inequalities. This supplies both
 site and link reflection positivity needed in section 1. The explicit
 boundary conventions and null-vector argument still require author checks.
 
-## 7. Scope
+## 7. Finite-cylinder state identification and vanishing finite-volume gaps
+
+The state-limit issue has a direct resolution using the same monotonicity.
+Let Lambda_L be a finite spatial box with free boundary, and let the time
+interval grow symmetrically around a fixed observable. The corresponding
+free cylinder partition function has the form (D,T_L^M D), up to a harmless
+normalization, where the endpoint vector D is strictly positive. The
+finite-volume Perron theorem therefore identifies the centered time limit
+with the positive ground-vector state of T_L. Slab insertions obey the
+same bound |K_F|<=C T_L after normalization, including temporal plaquettes.
+
+For every local closed character, the finite free-box expectation is
+monotone in both spatial and temporal box size and bounded by one. Thus
+the two suprema commute. More explicitly, the finite-spatial-cylinder limit
+lies between any contained finite-box expectation and the common all-box
+supremum. As L increases, these bounds converge to the same infinite-volume
+expectation. Nonclosed characters vanish, and approximation by characters
+then proves convergence of every local continuous observable. Consequently
+the finite-cylinder ground states converge to the SAME isotropic state used
+by the FS estimate. No exchange of limits is assumed without this argument.
+
+Write gamma_L=-log(lambda_1(T_L)/lambda_0(T_L)) for the physical transfer
+gap, with lambda_1 the largest eigenvalue below the unique Perron value.
+If some subsequence L_j->infinity had gamma_(L_j)>=gamma>0, the uniform
+bounded-slab estimate would pass to the common local limit for every fixed
+pair of plaquettes. Isotropy and section 3 would make its score covariance
+summable, contradicting section 5. Thus gamma_L->0. This supplies no rate
+and no conclusion about the different continuous-time clock Hamiltonian.
+
+## 8. Independent finite challenges and missing-hypothesis examples
+
+block6_transfer_contact_check.py checks arbitrary complex slab increments
+against the Perron bound on several positive matrices. An exactly solvable
+two-state chain attains the separation-minus-one exponent, rejecting the
+stronger exponent. For a five-state clock on a spatial square, projection
+of a 625-state tensor transfer to its five-dimensional gauge-invariant
+space matches a separate Fourier construction. Matrix correlations agree
+with direct stationary-path enumeration at three separations. These checks
+validate finite identities, not a phase extrapolation.
+
+The score/contact formula is independently compared using original-angle
+quadratures on a cube boundary and the integer closed-surface sum at three
+couplings. The signs and diagonal contact agree; dropping either fails.
+The angular Fourier multiplier and the four-dimensional summation constant
+are checked separately. A centered vector orthogonal to the constant vacuum
+but inside a larger invariant space explicitly rejects incomplete ground-
+space subtraction.
+
+There is also a useful stronger-operator counterexample. On the circle,
+K is heat convolution and K_s has kernel phi' = s phi. In Fourier mode m,
+K has eigenvalue c_m and K_s has eigenvalue i m c_m, so the densely defined
+operator K^(-1/2) K_s K^(-1/2) has eigenvalues i m and is unbounded. The
+score s is nevertheless bounded and its Perron-vector insertion norm is
+bounded by ||s||_infinity. The proof uses only the latter true property.
+
+For the isotropy hypothesis, use a stationary Gaussian spatial field with
+h(x)=(1+|x|^2)^(-1) in three spatial dimensions. Its positive definiteness
+follows by writing it as the positive integral of exp(-u|x|^2) exp(-u) du.
+Apply the Ornstein--Uhlenbeck transition X' = r X + sqrt(1-r^2) eta, with
+eta an independent copy, at each time step. Hermite polynomial density
+shows the nonconstant Gaussian chaos has transfer eigenvalues r^n, n>=1,
+and therefore a gap -log r. For the bounded centered observable sin X_x,
+
+    E[sin X_0(0) sin X_t(x)] = exp(-1) sinh(r^|t| h(x)).
+
+At equal time this is at least exp(-1) h(x), so its spatial absolute sum
+diverges, despite the positive temporal gap and clustering. The measure is
+anisotropic. This is a mathematical missing-premise example, not a claim
+about the isotropic Villain model.
+
+## 9. Scope
 
 This route spells out how the established Villain Euclidean masslessness
 result yields a positive-energy accumulation for a specified reconstructed

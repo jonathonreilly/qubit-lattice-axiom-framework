@@ -1,0 +1,39 @@
+{
+  "recorded_utc": "2026-09-14T09:46:35.850337+00:00",
+  "main_revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "literature": [
+    {
+      "source": "https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf",
+      "pdf_sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17",
+      "scope": "Refreshed introductory pp1-10, selected pp58-83 text. Rendered and visually read pp61-64, section3.5 complex shifts Eqs3.31-3.41. Prior block1-3 readings retained separately. Published Springer URL returned HTML, not a read PDF."
+    },
+    {
+      "source": "https://arxiv.org/abs/2609.07886v2",
+      "pdf_sha256": "5a64a9eec53ae6b24b0677ac6cc857e0d09023c9914c7fea02974840891ca835",
+      "scope": "Refreshed pp1-2 and start p3; prior block3 detailed matched-transfer reading. Wilson logarithmic scaling is prior art; 2+1 numerical phase not imported into 3+1."
+    },
+    {
+      "source": "https://arxiv.org/abs/math-ph/0412040v1",
+      "pdf_sha256": "f0423f368b45e5583911b860c932ba2c2e5564c777b6d5cf6dcf12ac1edcbe39",
+      "scope": "Read pp1-16, Theorem1 and support/gap/boundedness hypotheses pp2-4; theorem1 cluster construction pp6-11 fully read, Theorem2 pp11-16 not used. No AKLT result imported."
+    },
+    {
+      "source": "https://arxiv.org/abs/1301.6166v2",
+      "pdf_sha256": "71a9c63aac4142c73601bc45c88940ca73fe9739774c5d764a1e9186483c3666",
+      "scope": "Read all five pages of text, especially p2 Eqs3-5 local clock-wrap contribution and quantized seam. Figure not visually interpreted and numerical temperatures not imported. Ordinary spin-model diagnostic principle credited explicitly."
+    }
+  ],
+  "repo_reading": [
+    {
+      "path": "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "scope": "Fully read all 671 lines; supplied law, no-wrap premise, corrected many-link phase and spectral comparison limits; no prior clock helicity/quantized-twist result in this note."
+    },
+    {
+      "path": "docs/COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "scope": "Refreshed lines450-555 on exact fixed-N transfer law. Prior block3 result, not new."
+    }
+  ],
+  "search_scope": "Targeted active docs and science-pack search for Kumano, 1301.6166, clock/helicity/twist and quantized twist before adding this working result returned no matches. Not an exhaustive absence claim.",
+  "independence": "Personally derived and checked; independent scientific review pending.",
+  "preserved_failure": "Asymptotic local Bessel comparison incorrectly applied at ell=5; restricted asymptotic check to ell>=10 while retaining exact conditional bound at all four points."
+}

@@ -61,3 +61,14 @@ any own completed scratch checkouts, release the cooperative lock and pause
 the existing continuation. Never touch Physics/archive or archive_unlanded,
 never run git gc, and guard >=20GiB free before another worktree. Keep an
 external report and exact completion receipt before/after cleanup.
+
+Block 2 checkpoint: see BLOCK2_SECTOR_COMPARISON_ATTEMPTS.md. The generic
+sector-ordering premise has an exact rational counterexample outside cubic
+geometry. On the actual cubic geometry, a static neutral midpoint split
+exists, but an exact fourteen-event physical clock witness disproves the
+proposed endpoint-balanced whole-event allocation. This prevents a false
+proof; it does not resolve the ground phase. Original-coordinate lift and
+a separate sparse cochain construction both check. No block-2 public PR.
+Next assess the current native finite Gaussian compiler's missing periodic
+resource/selector map and the selected projective-history kernel's local
+carrier/formation distinction. Continue personally until the same deadline.

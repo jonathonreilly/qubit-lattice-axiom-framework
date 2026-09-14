@@ -22,3 +22,21 @@ Current changes to that ranking:
   formulation until a new estimate controls the actual ground state.
 
 Artifact types (note, runner, cache, PR) are delivery forms, not proof families.
+
+Block 2 update:
+
+- The unrestricted central-fiber energy ordering is refuted by an exact
+  four-coordinate, non-geometric rational example. The actual cubic ordering
+  remains open. Do not reuse symmetric cutoff/positive hopping alone.
+- A positive static midpoint lemma follows from total unimodularity of D,
+  the dual-graph incidence. It supplies no path measure comparison.
+- F has an explicit determinant-minus-two cubic minor. A fourteen-event
+  actual clock path with two integer charges realizes a failure of exact
+  endpoint-balanced binary event allocation. Sparse curl/divergence and
+  dense original Z3 coordinate checks agree. That particular path map is
+  exhausted; more general weighted or operator maps remain open.
+- Reflection sources do not currently match the full plaquette interaction
+  factorization. No sector theorem has been borrowed.
+- Next reassessment reads the current native Gaussian compiler and selected
+  projective-history kernel, looking for a distinct missing construction
+  rather than more small-box energy samples.

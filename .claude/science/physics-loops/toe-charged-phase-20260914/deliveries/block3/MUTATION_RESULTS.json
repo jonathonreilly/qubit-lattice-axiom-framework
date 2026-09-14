@@ -1,0 +1,129 @@
+{
+  "primary_sha256": "1b6d1f65dc894be66590e15c9d7a82a3bd028fa19365f6a28424c70f0e77f6da",
+  "results": [
+    {
+      "name": "character_Gaussian_denominator",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "abs(dn/cn-1)",
+      "elapsed_sec": 0.4631181659642607,
+      "source_sha256": "e0aca9d77e6f691142ca4952a10d835026c126c2d531b2959c79e91790bfafc1",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block3-mutations-1engca0s/character_Gaussian_denominator.py\", line 52, in check_current_sectors",
+        "    assert abs(dn/cn-1)<1e-12",
+        "           ^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "affine_real_minimum_norm",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "lower*(1-1e-12)<=ratio",
+      "elapsed_sec": 0.3657272499985993,
+      "source_sha256": "0afac76beb31c48ac0ee4efd1fcc445585305a93822eb77e1fad6aab85d52519",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block3-mutations-1engca0s/affine_real_minimum_norm.py\", line 71, in check_current_sectors",
+        "    assert lower*(1-1e-12)<=ratio<=upper*(1+1e-12)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "physical_source_factor",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "abs(predicted.imag)",
+      "elapsed_sec": 0.38633641705382615,
+      "source_sha256": "b0c6abf1d3a73d0d7d0f3a4ac8fe1e8dc9e48021fdb74e837f4b5b2f55af1750",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block3-mutations-1engca0s/physical_source_factor.py\", line 147, in check_current_sectors",
+        "    assert abs(predicted.imag)<1e-13 and abs(direct-predicted.real)<1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "temporal_Villain_scaling",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "np.sort(np.linalg.eigvalsh(Q))",
+      "elapsed_sec": 0.5138049999950454,
+      "source_sha256": "c3a3d220357c62a9de00e67bafbf96cc898504a8ce6340b9dd896d7f7c228b17",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block3-mutations-1engca0s/temporal_Villain_scaling.py\", line 176, in check_transfer_scaling",
+        "    assert np.max(abs(np.sort(np.linalg.eigvalsh(Q))-np.sort(lam)))<1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "spatial_Villain_scaling",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "error<=bound",
+      "elapsed_sec": 0.45753145799972117,
+      "source_sha256": "b09cf34528f73c59dffe227a7b21b7cb2a3167a9935638664b51fd8450d248e0",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block3-mutations-1engca0s/spatial_Villain_scaling.py\", line 197, in check_transfer_scaling",
+        "    assert deficit<1 and error<=bound+1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "Clifford_anticommutation",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "trace==F(1,32)",
+      "elapsed_sec": 0.5093596670776606,
+      "source_sha256": "06fac0c3f03cd0ae8722568c95b721b53ff5a461b39db02660e5d8aa012a6d12",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block3-mutations-1engca0s/Clifford_anticommutation.py\", line 293, in check_r1_fourier_sign",
+        "    trace=4*poly.get(0,F(0));assert trace==F(1,32)",
+        "                                    ^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "single_cycle_edge_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "err<3e-14",
+      "elapsed_sec": 0.90441404201556,
+      "source_sha256": "03cc857b045b904e02cf24aa3531edc53dcf1e9a0c60f5ad2e36022214a40899",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block3-final-mutations-_v6w0m3e/single_cycle_edge_sign.py\", line 325, in check_r1_fourier_sign",
+        "    err=abs(direct-predicted);assert err<3e-14",
+        "                                     ^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "full_box_remainder_mass",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "ratio<1",
+      "elapsed_sec": 0.7173648750176653,
+      "source_sha256": "bac50b24bcbaed34a95b01823c82daeb458873c454a9f2a72bd31b6f2876fd13",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block3-final-mutations-_v6w0m3e/full_box_remainder_mass.py\", line 330, in check_r1_fourier_sign",
+        "    ratio=F(16*math.comb(128,11)*4**11,mass-39);assert ratio<1",
+        "                                                       ^^^^^^^",
+        "AssertionError"
+      ]
+    }
+  ],
+  "non_falsifying_trials": [
+    {
+      "name": "cycle_directed_hopping_sign",
+      "exit_code": 0,
+      "intended_assertion_detected": false,
+      "expected_statement": "err<3e-14",
+      "elapsed_sec": 0.7078639999963343,
+      "source_sha256": "692a81bfe387c645c83ba237e66b3cc8cb06228f79db6a9cde0a8c8c3a48d335",
+      "stderr_tail": [],
+      "classification": "not a valid falsifier for this even isolated cycle: all forward hopping signs multiply to +1; all immediate reversals have zero projector product"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "stacked_base": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
+  "upstream_pr": 8120,
+  "personal_no_agents": true,
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/1102.0842",
+      "scope": "relevant setup and proofs pp3-11; not whole31 pages",
+      "pdf_sha256": "ee2493d9a7e910414f082986158c6b360f621db5d3b122134b265103fe202f49"
+    },
+    {
+      "url": "https://arxiv.org/abs/1106.0979v2",
+      "scope": "pp1-5 through amplitude/polar identities",
+      "pdf_sha256": "f840f1157c46a35ba756ed6f49f8d58d47a1b4d89d905535cb9ea3c032bea4e7"
+    },
+    {
+      "url": "https://arxiv.org/abs/cond-mat/0010440v2",
+      "scope": "pp4-8 toy chain, canonical Majoranas, endpoint modes",
+      "pdf_sha256": "a1db2291c4834d9f1d471cfccb36e5b48a9eb4807e11b222728d397c19986f40"
+    },
+    {
+      "url": "https://arxiv.org/abs/1512.03441v1",
+      "scope": "pp1-2 strong-zero-mode definition and Ising prior context; XYZ theorem not imported",
+      "pdf_sha256": "bb0b978c0d1aed504c46aa96c9478c3696e4b3f6098e08e4a73d7126df71d134"
+    },
+    {
+      "url": "https://arxiv.org/abs/0710.0723v2",
+      "scope": "pp1-3 and sectionV theorem statements; proof and optimality not imported",
+      "pdf_sha256": "a521a1f9c0e218d4e3ce3bfd6975801bfccf85752e890753ba973abb8f4acbd1"
+    },
+    {
+      "url": "https://arxiv.org/abs/1501.04571v2",
+      "scope": "pp1-4 with explicit impurity size and unitarity limitations",
+      "pdf_sha256": "c168a7cb36bcf061b020a743f7ff7b5133b2dc70b61506def0352c69cf1db585"
+    }
+  ],
+  "repository_full_read": {
+    "docs/FINITE_CLOCK_TRANSFER_DISORDER_AND_SPECTRAL_GAP_PERIMETER_BOUNDED_THEOREM_NOTE_2026-09-14.md": "4d2ee86d9b9dbcf82a1130315e1215f8baea4cd12a164500c366fb973f635bc3"
+  },
+  "access_correction": "Initial Kitaev PDF request used wrong quant-ph category and returned404; corrected primary cond-mat/0010440 source obtained and inspected."
+}

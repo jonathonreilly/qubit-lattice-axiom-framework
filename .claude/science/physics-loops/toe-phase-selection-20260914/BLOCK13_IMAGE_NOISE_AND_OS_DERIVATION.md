@@ -7,9 +7,13 @@ native probability law or an axiom contradiction.
 
 ## 1. Positive lift and actual score at fixed parameters
 
-Fix beta>0 and finite N>=2. The clock angles have the supplied finite-clock
-Villain law. Its positive image representation has, conditional on all
-angles theta, independent plaquette labels k_p with
+Fix beta>0 and finite N>=2 on the oriented nearest-neighbor four-lattice
+Z^4 or its periodic four-tori. The link angles theta_e are2pi a_e/N with
+a_e in Z/NZ. Define phi_beta(u)=sum_k exp[-beta(u-2pi k)^2/2] and the
+finite-periodic probability law proportional to product_p phi_beta((dtheta)_p).
+Here d is the oriented cochain coboundary and positive plaquette orientations
+are the six ordered pairs mu<nu. Its positive image representation has,
+conditional on all angles theta, independent plaquette labels k_p with
 
  P(k_p=k|theta) proportional to exp[-2pi^2 beta(k-t_p)^2],
  t_p=(dtheta)_p/(2pi).
@@ -20,6 +24,17 @@ Thus Y is an actual bounded local clock observable; X is an auxiliary
 real lift. Let xi_p=X_p-Y_p and v_p(theta)=E[xi_p^2|theta].
 This conditional kernel is periodic in the plaquette angle, so choosing a
 different representative of dtheta changes k labels but not the X law.
+
+For completeness, the centered lattice representation on a finite torus
+requires no phase theorem. Write theta=2pi a/N and z=da-Nk. Its image is
+M=d Z^E+N Z^P, a full-rank lattice since it contains N Z^P. The finite
+group homomorphism d:(Z/NZ)^E->(Z/NZ)^P has constant fiber size on its
+image. Thus every z in M has the same number of clock preimages, and the
+marginal weight of z is proportional to exp(-|z|^2/(2sigma)), with
+sigma=N^2/(4pi^2 beta). Completing the square gives the real MGF as
+exp(||h||^2/2) times a shifted theta divided by its centered value.
+Poisson summation has positive Fourier coefficients and bounds that ratio
+by one. This proves the finite-volume domination used below.
 
 ## 2. Strict conditional variance and uniform image moments
 
@@ -42,7 +57,17 @@ Using Var(K)=1/2 sum_{k,l}p_kp_l(k-l)^2,
  :=4pi^2 beta exp(-2pi^2 beta)/D_beta^2 >0.             (2.2)
 
 This is a deliberately loose uniform lower bound, independent of N and
-the volume. The same relative-weight estimate bounds all conditional
+the volume. Its state average can also be read from the local action
+curvature. For A(u)=-log phi_beta(u), differentiating the conditional mean
+gives Y'(u)=sqrt(beta)(1-v(u)), hence
+
+ v(u)=1-A''(u)/beta.                                  (2.2a)
+
+The variance average is therefore1-E[A'']/beta in each orientation or
+invariant sector. This identity is a single-plaquette derivative of the
+specified image kernel; it uses no integration by parts over clock angles.
+
+The same relative-weight estimate bounds all conditional
 moments of X and xi uniformly over theta at each fixed beta: a polynomial
 in |n| times exp[-c(n^2-|n|)] is summable. These bounds also yield a
 uniform analytic neighborhood of the conditional characteristic function.
@@ -82,8 +107,11 @@ parameters. For the bounds above and tightness conclusions, take mu to be
 a periodic-limit state; the conditional-noise calculation itself only
 needs translation invariance and the specified image kernel.
 
-For smooth compactly supported real two-form tests f, take the same
-four-cell average h=J_a f, with h_p of order a^2, ||h||=O(1), and
+For smooth compactly supported real two-form tests f, define
+(J_a f)_{x,I}=a^-2 integral_{C_{x,I}} f_I, where for each orientation I,
+C_{x,I} are disjoint side-a four-cells centered at the corresponding
+plaquette midpoints and tiling R4. Thus ||J_a f||<=||f||_2. Write h=J_a f,
+with h_p of order a^2, ||h||=O(1), and
 max_p|h_p|=O(a^2). For a fixed finite linear combination of such tests,
 the uniform image moments yield, when max|h| is sufficiently small,
 
@@ -94,8 +122,16 @@ the uniform image moments yield, when max|h| is sufficiently small,
 
 A logarithm branch exists uniformly near one for each single-site factor.
 The centered third-order remainder follows from Taylor's formula and a
-uniform third absolute moment, then the analytic log expansion. Summing
-factor logarithms is valid by conditional independence. It is not an
+uniform third absolute moment, then the analytic log expansion. More
+explicitly, for a centered single-site noise with variance v and third
+absolute moment m3, put zeta=v u^2/2. When zeta<1,
+
+ |log E exp(iu xi)+v u^2/2|
+ <=m3 |u|^3/6+zeta^2/[2(1-zeta)].                     (3.1a)
+
+Here |E exp(iu xi)-1|<=zeta, and the second term bounds the remainder
+of log(1+z). Uniform fixed-beta moment bounds make this uniform in theta.
+Summing factor logarithms is valid by conditional independence. It is not an
 assumption that the conditional field is Gaussian at finite a.
 
 For each positive orientation I, let V_I=E_mu[v_{0,I}|I_inv], where I_inv
@@ -139,8 +175,13 @@ The finite-dimensional assertion follows from(3.3) with
 B_a=exp(i<Y_a,g>+i t dot V); Cramer-Wold then identifies every joint law.
 
 For periodic-limit mu, the inherited uniform L2 test bounds make both X_a
-and Y_a tight in local H^-s for s>2 by the same covariance-trace and compact
-Sobolev embedding argument used earlier. The white-noise limit has that
+and Y_a tight in local H^-s for s>2. Indeed, after multiplication by a
+compact cutoff, an orthonormal Dirichlet Laplacian basis in a bounded
+four-dimensional domain gives E||T_a||_{H^-t}^2 bounded by a constant times
+sum_j(1+lambda_j)^(-t), finite for t>2. Choose2<t<s and use the compact
+embedding H^-t->H^-s, then exhaust space by countably many bounded domains.
+The test variance bound applies to cell-integral projections of all L2
+functions, so its constant is uniform in a. The white-noise limit has that
 regularity too. Hence(3.4) can be promoted to joint local-distribution
 convergence along subsequences, with the explicit assumption that Y_a has
 the named limit. No Gaussianity of F is inferred.
@@ -148,7 +189,8 @@ the named limit. No Gaussianity of F is inferred.
 ## 4. Independent white noise and the strict positive-time OS space
 
 Let F be any real random two-form distribution whose law is reflection
-positive with the tensor reflection: electric components change sign,
+invariant and reflection positive with the tensor reflection: electric
+components change sign,
 magnetic components do not. Assume time-translation invariance and the
 usual OS time-translation action exists. Let W be an independent white
 two-form noise of constant nonnegative diagonal orientation covariance
@@ -203,9 +245,19 @@ For F the current covariance is the differential contact operator d*d,
 so strict positive-time current-only cross-reflection covariances vanish.
 Wick's theorem makes every centered current Wick polynomial a null OS
 vector. The current-only Gaussian OS Hilbert space is the vacuum line.
-The full Maxwell field instead has the two-mode physical space derived
-from its nonlocal tensor covariance. Knowing only the current-sector
-limit therefore cannot by itself identify those modes.
+The full Maxwell field instead has a nonzero physical vector already
+from a magnetic component F_12. At spatial momentum p with p_1^2+p_2^2>0,
+its strict positive-time covariance kernel is
+
+ (p_1^2+p_2^2)/(2|p|) exp[-|p|(t+s)].                 (5.1)
+
+This follows by Fourier integration of
+(p_1^2+p_2^2)/(p_0^2+|p|^2). A smooth spatial Fourier test supported where
+the prefactor is positive and a nonzero positive-time Laplace transform
+has strictly positive OS norm. Thus the full field is not the vacuum
+current-only theory. No full mode-count theorem is needed for this control.
+Knowing only the current-sector limit cannot identify the full physical
+space or its propagating modes.
 
 Driver1987 proves the explicitly restricted current-sector statement for
 continuous U(1) under its specified Gibbs-state hypotheses. Nothing here
@@ -213,6 +265,14 @@ claims an error in that theorem. The finite-clock sum is not the continuous
 Haar integral required in its integration-by-parts identity, and a full
 field phase statement needs additional information even when that identity
 is available.
+
+The finite-clock score itself supplies a separate observable-scope control.
+For N=2 every plaquette angle is0 or pi modulo2pi. Evenness and periodicity
+of phi imply phi'(0)=phi'(pi)=0, so Y is identically zero at every beta.
+The image noise still has the strictly positive variance(2.2). This is an
+exact statement about the chosen score field, not about every observable
+or phase of the N=2 clock theory. At N=3, beta=1 and angle2pi/3 the score
+is nonzero; no universal score-vanishing conclusion is drawn.
 
 ## 6. Next obligation: actual-score connected correlations
 

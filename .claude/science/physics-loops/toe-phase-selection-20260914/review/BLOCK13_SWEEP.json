@@ -1,0 +1,34 @@
+{
+  "utc": "2026-09-14T23:44:18.229169+00:00",
+  "main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "worktrees": [
+    {
+      "worktree": "/Users/jonreilly/Projects/Physics",
+      "head": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "landed": true,
+      "status": "",
+      "action": "preserved_protected"
+    },
+    {
+      "worktree": "/private/tmp/toe-formation-order-20260913-wt",
+      "head": "d57291602d909246756f30975f0d862a08e8f836",
+      "landed": false,
+      "status": "",
+      "action": "preserved_unlanded"
+    },
+    {
+      "worktree": "/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914",
+      "head": "41e0d3aad1884f1c0ac5674d95b6ecbd01051de6",
+      "landed": false,
+      "status": " M .claude/science/physics-loops/toe-phase-selection-20260914/BLOCK13_IMAGE_NOISE_AND_OS_DERIVATION.md\n M .claude/science/physics-loops/toe-phase-selection-20260914/HANDOFF.md\n M .claude/science/physics-loops/toe-phase-selection-20260914/STATE.yaml\n?? .claude/science/physics-loops/toe-phase-selection-20260914/BLOCK13_CHECKS.json\n?? .claude/science/physics-loops/toe-phase-selection-20260914/BLOCK13_DELIVERY.json\n?? .claude/science/physics-loops/toe-phase-selection-20260914/BLOCK13_REVIEW_NOTES.md\n?? .claude/science/physics-loops/toe-phase-selection-20260914/block13_image_noise_os_check.py\n?? .claude/science/physics-loops/toe-phase-selection-20260914/block13_package.py\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/BLOCK13_MUTATIONS.json\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/BLOCK13_PREFLIGHT.json\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block13_mutation_review.py\n?? .claude/science/physics-loops/toe-phase-selection-20260914/review/block13_preflight.py\n",
+      "action": "preserved_protected"
+    },
+    {
+      "worktree": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "landed": false,
+      "status": "",
+      "action": "preserved_unlanded"
+    }
+  ]
+}

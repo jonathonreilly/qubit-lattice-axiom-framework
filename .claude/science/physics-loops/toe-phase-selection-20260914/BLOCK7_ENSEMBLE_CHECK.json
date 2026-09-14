@@ -1,0 +1,271 @@
+{
+  "status": "personal_finite_ensemble_checks_pass",
+  "square": [
+    {
+      "fejer_order": 1,
+      "positive_mixture_leaves": 157,
+      "exact_closed_coefficients": {
+        "1": "1/8"
+      },
+      "product_identity_max_error": 8.881784197001252e-16,
+      "gaussian_identity_max_error": 8.881784197001252e-16,
+      "largest_damped_factor_activity": 0.13324702658897794,
+      "smallest_sampled_component_curvature": -0.11757985987401655,
+      "initial_component_can_be_negative": true
+    },
+    {
+      "fejer_order": 2,
+      "positive_mixture_leaves": 1641,
+      "exact_closed_coefficients": {
+        "1": "32/81",
+        "2": "2/81"
+      },
+      "product_identity_max_error": 2.6645352591003757e-15,
+      "gaussian_identity_max_error": 6.439293542825908e-15,
+      "largest_damped_factor_activity": 0.13324702658897794,
+      "smallest_sampled_component_curvature": -0.11757985987401655,
+      "initial_component_can_be_negative": true
+    }
+  ],
+  "ancestry": {
+    "random_graph_branch_histories": 1500,
+    "largest_amplitude_power": 17,
+    "qualification": "Random finite histories supplement the explicit ancestry proof; they do not establish it."
+  },
+  "affine_source": {
+    "source_identities": [
+      {
+        "beta": 0.13,
+        "shift": 0.0,
+        "variance": 0.0409745517625355,
+        "theta_source_variance": 0.04097455176253548
+      },
+      {
+        "beta": 0.13,
+        "shift": 0.17,
+        "variance": 0.07359610192349864,
+        "theta_source_variance": 0.07359610192349861
+      },
+      {
+        "beta": 0.13,
+        "shift": 0.41,
+        "variance": 0.22342337147254654,
+        "theta_source_variance": 0.2234233714725466
+      },
+      {
+        "beta": 0.13,
+        "shift": 0.5,
+        "variance": 0.2509122320978923,
+        "theta_source_variance": 0.2509122320978923
+      },
+      {
+        "beta": 0.4,
+        "shift": 0.0,
+        "variance": 0.39529960197884373,
+        "theta_source_variance": 0.39529960197884373
+      },
+      {
+        "beta": 0.4,
+        "shift": 0.17,
+        "variance": 0.3977320043262511,
+        "theta_source_variance": 0.3977320043262511
+      },
+      {
+        "beta": 0.4,
+        "shift": 0.41,
+        "variance": 0.40397312455797213,
+        "theta_source_variance": 0.40397312455797213
+      },
+      {
+        "beta": 0.4,
+        "shift": 0.5,
+        "variance": 0.4047074039586594,
+        "theta_source_variance": 0.40470740395865945
+      },
+      {
+        "beta": 0.8,
+        "shift": 0.0,
+        "variance": 0.7999929940663821,
+        "theta_source_variance": 0.7999929940663822
+      },
+      {
+        "beta": 0.8,
+        "shift": 0.17,
+        "variance": 0.7999966248637622,
+        "theta_source_variance": 0.7999966248637623
+      },
+      {
+        "beta": 0.8,
+        "shift": 0.41,
+        "variance": 0.800005915307865,
+        "theta_source_variance": 0.8000059153078651
+      },
+      {
+        "beta": 0.8,
+        "shift": 0.5,
+        "variance": 0.8000070059375031,
+        "theta_source_variance": 0.8000070059375032
+      },
+      {
+        "beta": 1.6,
+        "shift": 0.0,
+        "variance": 1.5999999999961143,
+        "theta_source_variance": 1.5999999999961148
+      },
+      {
+        "beta": 1.6,
+        "shift": 0.17,
+        "variance": 1.5999999999981283,
+        "theta_source_variance": 1.5999999999981283
+      },
+      {
+        "beta": 1.6,
+        "shift": 0.41,
+        "variance": 1.6000000000032806,
+        "theta_source_variance": 1.6000000000032806
+      },
+      {
+        "beta": 1.6,
+        "shift": 0.5,
+        "variance": 1.6000000000038856,
+        "theta_source_variance": 1.6000000000038854
+      }
+    ],
+    "shifted_covariance_exceeds_beta": {
+      "beta": 0.13,
+      "shift": 0.5,
+      "variance": 0.2509122320978923,
+      "theta_source_variance": 0.2509122320978923
+    },
+    "qualification": "The centered covariance upper bound does not extend to arbitrary affine cosets."
+  },
+  "composite_annihilators": [
+    {
+      "N": 2,
+      "matrix": [
+        [
+          2
+        ]
+      ],
+      "kernel_size": 2,
+      "image_size": 1
+    },
+    {
+      "N": 2,
+      "matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ],
+      "kernel_size": 1,
+      "image_size": 4
+    },
+    {
+      "N": 2,
+      "matrix": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "kernel_size": 4,
+      "image_size": 1
+    },
+    {
+      "N": 4,
+      "matrix": [
+        [
+          2
+        ]
+      ],
+      "kernel_size": 2,
+      "image_size": 2
+    },
+    {
+      "N": 4,
+      "matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ],
+      "kernel_size": 1,
+      "image_size": 16
+    },
+    {
+      "N": 4,
+      "matrix": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "kernel_size": 8,
+      "image_size": 2
+    },
+    {
+      "N": 6,
+      "matrix": [
+        [
+          2
+        ]
+      ],
+      "kernel_size": 2,
+      "image_size": 3
+    },
+    {
+      "N": 6,
+      "matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ],
+      "kernel_size": 1,
+      "image_size": 36
+    },
+    {
+      "N": 6,
+      "matrix": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "kernel_size": 12,
+      "image_size": 3
+    }
+  ],
+  "limits": "Finite exact checks of the ensemble construction, not a universal phase proof or an independent review."
+}

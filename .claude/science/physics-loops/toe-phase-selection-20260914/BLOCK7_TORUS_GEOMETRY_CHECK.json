@@ -1,0 +1,41 @@
+{
+  "status": "personal_torus_geometry_checks_pass",
+  "torus": {
+    "side": 4,
+    "cell_counts": {
+      "0": 256,
+      "1": 1024,
+      "2": 1536,
+      "3": 1024,
+      "4": 256
+    },
+    "star_codelta_to_curl_sign": -1,
+    "harmonic_two_form_rank": 6,
+    "complete_hodge_operator_identity": true,
+    "complete_scalar_laplacian_identity": true,
+    "winding_pair_original": 0.9697240333076211,
+    "winding_pair_renormalized": 0.9697240333076211,
+    "surviving_harmonic_terms": 3,
+    "wrong_winding_drop_error": 0.030275966692378864
+  },
+  "homotopy": {
+    "edge_chain_identities": 2000,
+    "box_side": 4,
+    "max_filling_area": 12
+  },
+  "constants": {
+    "neighbor_counts_by_orientation": [
+      23,
+      28,
+      28,
+      28
+    ],
+    "beta1": 3.0127299032238786,
+    "beta_2000_delta_evaluation": 4.4243430754697853e-10,
+    "rigorous_delta_upper": "13695625/412316860416",
+    "rigorous_dual_beta_lower": "262144/125",
+    "N": 16384,
+    "qualification": "The rational inequalities certify the stated constants only conditional on the analytic ensemble and geometry estimates."
+  },
+  "limits": "No universal small-current lifting or packing proof is inferred from these finite checks; the infinite-volume phase remains provisional."
+}

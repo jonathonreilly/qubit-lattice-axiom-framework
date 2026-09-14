@@ -185,3 +185,179 @@ An isotropic periodic-limit OS phase would still not automatically identify
 the selected anisotropic continuous-time clock Hamiltonian or prove finite
 spatial transfer gaps converge without a state-limit argument. Keep those
 claims separate. No public block-6 or block-7 PR has been opened.
+
+
+## Periodic harmonic resolution under development, 19:00 UTC
+
+For a torus, use the connected compact subtorus
+H=(ker d + Z^E)/Z^E of flat potential shifts. Its character annihilator is
+Z^E intersect range(Q). Averaging a shifted Fejer product over H therefore
+produces the theta representation of the integer-curl lattice d Z^E.
+One may first average vertex gauge rotations to remove noncoclosed currents
+factorwise using support separation, then keep the harmonic average of the
+remaining positive product. Individual winding currents MUST remain.
+
+For a term surviving the harmonic average, the TOTAL signed current R lies
+in range Q. The selected-link identity applies to R and the total selected
+u. Disjoint supports and mutually nonadjacent selected links make all cross
+terms vanish. Thus the whole product renormalizes with the same independent
+factors z_rho and unchanged external phases even when individual rho has a
+harmonic component. Terms with nonzero total winding vanish on both sides.
+After renormalization the product is positive, so Gaussian AND harmonic
+integration preserve the phase-curvature bound by the log-expectation
+variance identity. This needs an explicit finite torus check.
+
+The source direction w=Q^+ mu is in range Q and has no harmonic component.
+Split currents at r=L/8 for an equal-side torus of side L. A connected support
+with r<L/8 should have a consistent contractible lift with bounding box
+side <=3r. Prove this using a spanning tree of unit edges and distance-one
+gaps; a possible winding cycle would have length at least L. The local
+surface/packing estimate applies to these small currents.
+
+For r>=L/8, use the global coexact Poincare bound
+||w||^2<=L^2 ||dw||^2/16, since the first nonzero torus Laplacian eigenvalue
+4 sin^2(pi/L)>=16/L^2. There are at most 4L^4/r disjoint currents of a
+given size r. The same activity split therefore gives a total large-current
+curvature contribution bounded by
+
+    L^6/(a e) sum_(r>=L/8) r^-1 exp[-b r]
+    <= 8^6/(a e) sum_(r>=1) r^5 exp[-b r],
+    b=2pi^2 a.
+
+Combined with the small-current term, a prospective uniform constant is
+
+    c(beta) <= [8503056 S_6(exp(-b)) + 262144 S_5(exp(-b))]/(a e),
+    S_j(q)=sum_(r>=1) r^j q^r.
+
+This is a proposed conservative constant pending verification of the lift
+and packing counts. It decays exponentially and beta*c(beta) decreases once
+a=beta/384-beta_1>0. Very large finite beta and N suffice; optimizing the
+threshold is irrelevant to proving existence.
+
+For the full torus Fourier lattice L_N, partition into cosets of delta Z^C;
+for its scaled dual M_N, partition into cosets of d Z^E. No informal
+conditioning on a noninteger harmonic coordinate is necessary. Each affine
+coset is a shifted discrete Gaussian in the relevant real subspace. The law
+of total covariance gives the lower bounds on the coexact and exact
+projectors. These sum to I-P_harm. The finite-rank harmonic projection is
+kept; its fixed local matrix elements vanish as the volume grows. The
+infinite Fourier projector diagonal for a plaquette ij is
+P_exact,ij=(|d_i(k)|^2+|d_j(k)|^2)/|d(k)|^2, with P_coexact=1-P_exact.
+
+Periodic isotropic clock measures have compact local subsequential limits,
+translation/cubic symmetry, charge conjugation and both reflection
+positivities. Uniform covariance bounds could pass to any such limit;
+the harmonic term vanishes and the multiplier bounds imply clustering plus
+a directional discontinuity of the bounded-score spectrum. The block-6 OS
+argument would then establish a gapless reconstructed state. This does not
+yet justify the finite-cylinder gap convergence statement for the clock
+model, nor the selected anisotropic continuous-time Hamiltonian.
+
+
+## Further exact conventions to carry into the proof
+
+Use equal EVEN torus side L>=4 for the concrete transverse-parity coloring
+and for convenient reflection planes. The 32-coloring is not a valid
+periodic coloring at odd L. An alternative finite greedy coloring of the
+maximum-degree-18 plaquette conflict graph works with 19 colors at any
+sufficiently nondegenerate side; it would still imply the weaker 1/32 bound,
+but that alternative has not yet been implemented.
+
+The 107-neighbor count was independently enumerated and agrees with the
+hand count. With the proposed constants, beta_1=3.0127299032238786. At
+beta=2000 the candidate a=2.1956034301094545 and candidate beta*c(beta)
+is 4.424343075e-10. N=16384 gives beta_dual=3399.774766686335. These numbers
+only evaluate the proposed bound; they do NOT certify the phase while the
+proof obligations remain open. A much larger conservative threshold is
+acceptable if a geometric count needs loosening.
+
+The local chain homotopy can be made explicit. Let b be the coordinatewise
+minimum corner and P(x) the path from b to x in coordinate order. For a
+positive edge e=(x,j), define K_1(e) as MINUS the sum of jk plaquettes for
+all k>j along the k-coordinate segment b_k,...,x_k-1. In that strip,
+coordinates below k are fixed at x, coordinates above k at b, and coordinate
+k varies. Then
+
+    boundary K_1(e)=P(x)+e-P(x+e_j).
+
+Summing against a closed current cancels the vertex paths and gives a
+filling. Each strip has at most R plaquettes and there are at most three,
+so ||K_1 rho||_1<=3R||rho||_1. Verify the sign and chain equation on explicit
+integer cochains before using the general bound.
+
+For the theta-function quotient, let S=im d and K=d Z^E. The dual lattice
+K^* consists of y in S with d^T y in Z^E. The bijection
+rho=2pi d^T y identifies K^* with 2pi Z^E intersect range Q, with
+
+    y=d Q^+ rho/(2pi), ||y||^2=rho^T Q^+ rho/(4pi^2).
+
+Poisson summation thus gives the Gaussian Fourier series used by the
+Fejer/harmonic-average construction, up to a positive a-independent factor.
+For a field source f, use potential shift w=Q^+ d^T f. Then
+dw=P_S f and ||dw||^2=||P_S f||^2. The completed-square MGF therefore
+turns the phase curvature bound into Cov_a(field)>=beta(1-beta c)P_S.
+This applies to every affine coset, with its perpendicular part held fixed.
+
+For the full-rank dual-lattice identity at COMPOSITE N, use the perfect
+character pairing on (Z/NZ)^P. The annihilator of ker(delta mod N) is
+im(d mod N). Inclusion is immediate; equality follows because a matrix
+and its transpose have the same image cardinality modulo N, for example
+by integer Smith normal form. No vector-space argument over Z/NZ is used.
+Thus L_N^*=Z^P+(1/N)d Z^E exactly for all positive integers N.
+
+On the four-torus, rank(im d_1)=rank(im delta_2)=3(L^4-1), and the harmonic
+two-form space has rank six. The integer coexact lattice is carried to an
+integer exact lattice on the translated dual torus by the signed Hodge
+map. Its norm and the positive-ensemble proof constants are unchanged.
+These finite cochain ranks, Hodge signs and projector identities still need
+explicit checks in the runner.
+
+The next finite torus test should use two separated winding loops with
+opposite winding. Individually their harmonic averages vanish, but their
+product has a nonzero zero-winding term. Dropping winding factors would
+incorrectly replace that term by one. The selected-link renormalization
+must agree with the original character expansion AFTER harmonic averaging,
+with the original external phase and the corrected half-factor damping.
+
+
+## Small-current lift proof and completed finite torus checks
+
+Connect the r occupied unit edges by at most r-1 extra unit edges, using a
+spanning tree in the distance-one proximity graph. Nearest points of two
+coordinate unit edges with integer endpoints can be chosen as endpoints;
+if their distance is <=1, they either coincide or are joined by one lattice
+edge. The auxiliary connected graph therefore has at most 2r-1 edges.
+If r<L/8, it has fewer than L edges. Every nonzero-winding simple cycle on
+the torus needs at least L edges, so this graph has no such cycle. Its lift
+to Z^4 is consistent. A spanning-tree path between any two lifted vertices
+has length at most 2r-1, so the coordinate bounding side is <=2r-1, safely
+within the previously used 3r bound. Closed-current divergence lifts unchanged.
+This supplies the intended general lifting argument, subject to final review.
+
+The new block7_torus_geometry_check.py passes on an even four-torus L=4:
+256 vertices, 1024 edges, 1536 plaquettes, 1024 cubes, 256 four-cells.
+It checks every chain-composition zero, the componentwise two-form Laplacian,
+the six harmonic two-forms, and the signed translated Hodge identity
+star_2 delta_3 = - d_1 star_3. The two opposite winding loops give a
+nontrivial harmonic-averaged partition 0.9697240333076211 before AND after
+selected-link renormalization. Dropping winding factors incorrectly gives
+one, an error .03027596669238. A separate Fourier potential inverse matches
+the sparse cochain operator on every surviving current. Finally 2000 exact
+edge-chain homotopy identities in a four-dimensional box pass, with maximum
+filling area 12 at side four. See BLOCK7_TORUS_GEOMETRY_CHECK.json.
+
+For the full phase proof, the finite-volume covariance bounds should read
+
+ beta(1-delta_beta) P_coexact <= Cov_L_N(n)
+   <= beta P_coexact + beta delta_dual P_exact + beta P_harm,
+
+with delta_beta=beta c(beta) and delta_dual=beta_dual c(beta_dual).
+The harmonic term is not omitted at finite volume. The separate exact
+Poisson identity also yields Cov_L_N(n)<=beta I, ensuring uniform second
+moments and an absolutely continuous bounded spectral density in a local
+translation-invariant limit. The clock score contact identity then transfers
+clustering and the angular discontinuity to a bounded physical plaquette
+observable. The remaining author work is to write and adversarially review
+the complete positive-ensemble/Fejer/coset proof, fix constants conservatively,
+and test the full finite combinatorial expansion. No phase claim has yet
+been promoted or publicly shipped.

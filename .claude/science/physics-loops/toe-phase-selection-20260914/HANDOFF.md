@@ -204,3 +204,33 @@ fixed-N massless phase until these hypotheses are proved. The selected
 anisotropic continuous-time Hamiltonian remains a separate target even if
 the isotropic clock transfer succeeds. Continue PERSONALLY with no agents
 until 2026-09-15 01:30:44 UTC; roughly six and a half hours remain.
+
+
+At 19:28 UTC, the complete private candidate phase proof is in
+BLOCK7_PERIODIC_FINITE_CLOCK_PHASE_DERIVATION.md. It derives an all-shift
+integer-curl covariance lower bound using a finite positive Fejer/cosine
+mixture, corrected half-factor damping, explicit local filling and packing,
+and a separate estimate for all large/winding currents. Exact duality then
+supplies a finite-clock covariance sandwich. The conservative parameter
+certificate beta>=2000 and beta_dual>=2000 includes beta=2000,N=16384.
+This is a proof draft pending full author review, not a retained phase claim.
+The bounded-score contact term and periodic OS reconstruction are explicit.
+Selected anisotropic continuous-time Hamiltonian identification remains open.
+
+The full finite Fejer expansion now passes exact rational coefficients on
+all 157 and 1641 mixture leaves at orders one and two, respectively. Separate
+random-graph ancestry histories challenge the FINAL-support amplitude bound.
+Affine-source Poisson identities include a shifted variance exceeding beta,
+which rejects extending the CENTERED upper covariance bound to every coset.
+Composite-N annihilator identities are also checked. Periodic Hodge and
+Laplacian checks now compare complete sparse operators, with the Hodge minus
+sign frozen, and rational inequalities certify the displayed constants.
+All checks are PERSONAL, not independent review. The text supplies the
+universal proof; no finite enumeration count establishes it.
+
+Continue personally until 2026-09-15 01:30:44 UTC; nearly six hours remain.
+Next review the full draft and preserve/repair any counterexamples before
+packaging a public milestone. A new primary paper was downloaded for the
+following anisotropic/quantum route: Borsten--Kim arXiv2507.10459v2, 11pp,
+SHA3a25df2f0ed23835c2f9726cce4cc219ec2eb194dadbbc4a24805b4a964a9326.
+Only parts have been read so far; it is NOT a proof input to block7.

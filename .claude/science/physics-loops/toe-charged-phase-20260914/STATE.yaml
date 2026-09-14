@@ -1,0 +1,11 @@
+loop: toe-positive-charged-histories-20260914
+parent_loop: toe-charged-phase-20260914
+mode: milestone
+status: author_checks
+base_revision: b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf
+actual_current_surface_status: conditional-support
+independent_review: pending
+formal_audit: deferred
+primary_runner: scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py
+science_inputs: none
+campaign_deadline_utc: '2026-09-14T13:09:34Z'

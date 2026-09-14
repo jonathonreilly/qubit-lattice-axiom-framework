@@ -1,0 +1,54 @@
+{
+  "recorded_utc": "2026-09-14T14:45:41.472889+00:00",
+  "pr": {
+    "baseRefName": "main",
+    "files": [
+      {
+        "path": "docs/FINITE_CLOCK_LOCAL_GROUND_PROBABILITIES_AND_CHARGE_PROJECTED_PLAQUETTE_HARMONICS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "additions": 444,
+        "deletions": 0
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "additions": 5,
+        "deletions": 1
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_local_probability_and_charge_projection_2026_09_14.txt",
+        "additions": 410,
+        "deletions": 0
+      },
+      {
+        "path": "scripts/finite_clock_local_probability_and_charge_projection_2026_09_14.py",
+        "additions": 449,
+        "deletions": 0
+      }
+    ],
+    "headRefOid": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+    "number": 8123,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123"
+  },
+  "branch": "physics-loop/clock-penalty-local-support-20260914",
+  "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "head": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+  "remote_verified": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+  "tracked_and_untracked_clean": true,
+  "ignored_files": [
+    "docs/audit/data/audit_ledger.json",
+    "docs/audit/data/citation_graph.json",
+    "docs/audit/data/ledger_cache_manifest.json",
+    "docs/audit/data/static_pipeline_checkpoint.lock",
+    "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/ledger_io.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-313.pyc",
+    "scripts/__pycache__/finite_clock_local_probability_and_charge_projection_2026_09_14.cpython-313.pyc",
+    "scripts/__pycache__/runner_cache.cpython-313.pyc"
+  ],
+  "ignored_classification": "Generated graph/ledger cache and lock; Python bytecode only. No recovery science.",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-clock-penalty-support-20260914",
+  "cleanup_status": "removed",
+  "removed_utc": "2026-09-14T14:46:18.236627+00:00",
+  "path_exists_after": false
+}

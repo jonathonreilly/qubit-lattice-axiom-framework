@@ -23,7 +23,7 @@
   term counts, so physical membership and volume dependence are not inferred
   from a desired flux or a finite fit.
 
-Final block-1 source and delivery review, 2026-09-14 14:52 UTC:
+Final block-1 source and delivery review, 2026-09-14 14:44 UTC:
 
 - Read the complete public note and runner; made the general lemma's
   split-specific entrywise hopping assumption explicit. The actual local
@@ -62,4 +62,3 @@ Final block-1 source and delivery review, 2026-09-14 14:52 UTC:
   honest finite witnesses and resolution scope, no helper fingerprint debt,
   reviewed graph, correct output locations, one coherent four-file delta,
   no frozen baseline or audit-verdict edits. Review remains author-only.
-

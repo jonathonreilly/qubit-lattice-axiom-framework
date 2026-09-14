@@ -27,10 +27,17 @@ observables. Its new finite runner passes a noncommuting four-qutrit check,
 cube gauge-orbit probabilities, geometry counts and a missing-hypothesis
 counterexample. These are personal author checks, pending independent review.
 
-Next: stress-test this proof and its exact scope; assess a coherent milestone
-combining the finite-penalty bound with the corrected projected generator.
-Keep working on the harder uniform sector/phase route or reassess after that
-milestone. Do not end the campaign at its first result. No public PR yet.
+Block 1 was packaged in PR 8123 at 9a84632e8b9e4f82969d7b4e22827d0037c51df5,
+with four files and seven source mutations rejected. Canonical cache and
+focused author checks passed; independent review and combined landing gates
+remain pending. The source is self-contained and the general lemma's
+split-specific entrywise condition is explicit. BLOCK1_DELIVERY.json records
+remote verification and scratch cleanup.
+
+Next, block 2: pursue reflection and discrete worldline comparisons for
+uniform sector selection. Continue the harder actual-state phase work or
+reassess when a mechanism is exhausted. This milestone does not end the
+campaign.
 
 Prior science is preserved at 652ea36706f7df14f153f2d40ee900662fe73706;
 selected complete notes are copied with hashes in UPSTREAM_SOURCE_MAP.json.

@@ -68,3 +68,13 @@ actual native autonomous clock's finite retention/recurrence limitation, with
 a constructive all-later-times approximate implementation and an honest
 exact-permanence boundary. Active formation/support-law censuses are distinct
 and remain untouched.
+
+## Rerank after block11
+
+PR8119 gives the actual native half-line coherent operation, a finite horizon
+bound and a conditional exact-permanence bridge obstruction. No Record event
+law or axiom wall follows. Return to the direct photon phase: inspect the full
+collective Fröhlich-Spencer mechanism and whether time blocking, electric-
+magnetic duality or source-preserving comparison can make it uniform for a
+fixed-payload Hamiltonian. Do not package more local-curvature or controller
+corollaries in place of this load-bearing phase obligation.

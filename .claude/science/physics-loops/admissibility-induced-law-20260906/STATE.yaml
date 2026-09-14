@@ -105,3 +105,15 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# ---------------------------------------------------------------- block 06 close (2026-09-07)
+# block: 6
+# branch: physics-loop/admissibility-induced-law-block06-static-strip-widths-4-5-20260907 (originally stacked on block 05's branch at f911b0e73d; rebuilt 2026-09-14 on main 5deabeb698, the owner's corrected integration of blocks 01-05; original tip ce2454caa6)
+# pr_status: opened — PR #8034 (base retargeted to main on 2026-09-14), hand-off to the owner review-loop; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=34 FAIL=0; runner sha 9b05b6d8…; 26 mutations, census 26/26 in-family; note 551 lines; gates: vocab 0, pipeline PASS, audit_lint strict OK, changed-evidence 6/0, diff --check clean"
+# rebase_2026-09-14: "rebuilt on main 5deabeb698 (owner-corrected blocks 01-05); runner sha unchanged 9b05b6d8…; cache re-pinned, input fingerprint 839882c9… (block 02 content changed); baseline TOTAL: PASS=34 FAIL=0; note 581 lines (new section: Rebase onto the corrected parent); census and gates re-run on the rebuilt branch (see REVIEW_HISTORY.md); PR #8034 base -> main"
+# seats: "supervisor controls; Opus contract lens BEFORE the primary (15 findings, all folded; no theorem refuted); Fable primary; Opus refuting checker: PASS-NO-BLOCKER, nothing refuted; three wording findings folded"
+# review_findings: "static strip widths 4-5: rigorous enclosures (self-adjoint residual-gap route, no field) of the deep-row pair statistics, edge and innermost; field degrees 8/30/16/111; the separation from f at every executed width; nothing about the plane"
+# strongest_unresolved_proof_obligation: "the plane's static pair statistic (the W -> infinity limit) and any monotonicity in W — not pursued"
+# next_exact_action: "queue: the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the monotone class; the silent triples by a non-criterion route"
+# lock: released

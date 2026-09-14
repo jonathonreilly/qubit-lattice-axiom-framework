@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 06 close (2026-09-07)
+
+Block 06 opened for review (PR #8034; not a main landing): widths 4 and 5 rigorously enclosed; the separation holds at every executed width; the method scales with the orbit count. Ranked next:
+
+1. **A supplied Hermitian Gaussian comparison** (the corrected `PROBES_gravity_consumer_20260907.md` program): declare a Hermitian positive-definite precision, the record reading, the formation kernels and the order, then derive the formation covariance and compare it with the static one on the smallest window with a plaquette. Block 01's Theorem B has no Gaussian twin (the corrected block-01 note refutes it on one edge); the expected content is the exact separation, not an equality. One small block.
+2. **Formation-law uniqueness on Z^3 for the monotone class**: block 05's quadrant law as a projective limit; the corner classes' laws on the plane (opposite corners coincide on every finite rectangle by the corrected block 05 P7(a)) — one object or two; relation to the static law of the plane; one block.
+3. **Width 6 and the innermost pair two steps in** (the method of block 06 at 46656 states / ~1000 orbits; the first width where an interior pair sits two steps from the boundary); one block, if the orbit count fits.
+4. **The silent triples by a non-criterion route** (unchanged; heavy).

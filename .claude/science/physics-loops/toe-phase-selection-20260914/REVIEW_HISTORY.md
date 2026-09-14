@@ -66,7 +66,7 @@ Final block-1 source and delivery review, 2026-09-14 14:44 UTC:
 
 ## Block 4 author review and conformance, 2026-09-14 16:43 UTC
 
-Personally read the complete public note and 771-line assembled primary
+Personally read the complete public note and 770-line assembled primary
 runner. Reconstructed the path action by triangular residuals and separately
 by the tridiagonal inverse. Checked all-volume collision/quotient arguments,
 including common-plane type/color separation, upward endpoint columns,

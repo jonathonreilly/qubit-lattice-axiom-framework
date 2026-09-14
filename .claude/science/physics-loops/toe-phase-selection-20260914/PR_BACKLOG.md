@@ -18,3 +18,9 @@ was removed after preservation. No main landing or audit verdict.
 
 Block 4 now pursues the full-payload finite-tag chart and a fixed periodic
 Gaussian routing map. No public candidate yet.
+
+- PR8125: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8125
+  Head ffb008d928ee1d5a569c895a583a71a91388e8f9, main base5deabeb698a...,
+  periodic Gaussian/closed-support codec conditional theorem, four files.
+  Eleven faults caught, canonical cache fresh, independent review pending.
+  Scratch checkout removed after exact remote and clean-state verification.

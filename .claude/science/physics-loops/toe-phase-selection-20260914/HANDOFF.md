@@ -119,3 +119,14 @@ no new formal retained status or native formation process. Next: complete
 proof review, decisive mutations and bounded milestone packaging if sound,
 then reassess the formation/process bottleneck. Keep working personally until
 2026-09-15 01:30:44 UTC.
+
+Block 4 delivered as PR8125 at ffb008d928ee1d5a569c895a583a71a91388e8f9,
+four files. Exact remote/PR head, clean tracked/untracked state and classified
+ignored generated files were verified; its delivery checkout was removed.
+See BLOCK4_DELIVERY.json and review/BLOCK4_SWEEP.json. Main remained
+5deabeb698a27c2c3f68c5df685af2521ef15307; all other unlanded science was preserved.
+Block 5 now attacks the full-conditional versus permanent-history gap. Read
+BLOCK5_FORMATION_SEPARATOR_DESIGN.md: a fixed-order, raw-scalar candidate,
+Schur fill criterion, exact C4 example, KL projection and explicit alternative
+resource routes. None is yet a checked theorem in this block. Deadline remains
+01:30:44 UTC; at 16:48 UTC over eight hours remain. Continue personally.

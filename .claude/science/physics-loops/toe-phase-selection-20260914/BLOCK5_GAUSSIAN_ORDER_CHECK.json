@@ -1,0 +1,3091 @@
+{
+  "attractive_cycle4": {
+    "precision": [
+      [
+        "3",
+        "-1",
+        "0",
+        "-1"
+      ],
+      [
+        "-1",
+        "3",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "3",
+        "-1"
+      ],
+      [
+        "-1",
+        "0",
+        "-1",
+        "3"
+      ]
+    ],
+    "covariance": [
+      [
+        "7/15",
+        "1/5",
+        "2/15",
+        "1/5"
+      ],
+      [
+        "1/5",
+        "7/15",
+        "1/5",
+        "2/15"
+      ],
+      [
+        "2/15",
+        "1/5",
+        "7/15",
+        "1/5"
+      ],
+      [
+        "1/5",
+        "2/15",
+        "1/5",
+        "7/15"
+      ]
+    ],
+    "ratio_counts": {
+      "64/63": 16,
+      "49/45": 8
+    },
+    "cases": [
+      {
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [
+              0
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [
+              0
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "exp_twice_minimum_kl": "49/45",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "2/7"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "7/15",
+            "full_regression": [
+              "2/7"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "exp_twice_minimum_kl": "49/45",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "2/7"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "7/15",
+            "full_regression": [
+              "2/7"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [
+              0
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          3,
+          2,
+          1
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [
+              0
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [
+              1
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [
+              1
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [
+              1
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [
+              1
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "exp_twice_minimum_kl": "49/45",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "2/7"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "7/15",
+            "full_regression": [
+              "2/7"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "exp_twice_minimum_kl": "49/45",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "2/7"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "7/15",
+            "full_regression": [
+              "2/7"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "exp_twice_minimum_kl": "49/45",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "2/7"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "7/15",
+            "full_regression": [
+              "2/7"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "exp_twice_minimum_kl": "49/45",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "2/7"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "7/15",
+            "full_regression": [
+              "2/7"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [
+              2
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [
+              2
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          3,
+          0,
+          1
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [
+              2
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          3,
+          1,
+          0
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [
+              2
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [
+              3
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [
+              3
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "exp_twice_minimum_kl": "49/45",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "2/7"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "7/15",
+            "full_regression": [
+              "2/7"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          1,
+          2,
+          0
+        ],
+        "exp_twice_minimum_kl": "49/45",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "2/7"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "7/15",
+            "full_regression": [
+              "2/7"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [
+              3
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "7/15",
+            "local_variance": "7/15",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [
+              3
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/7"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "frustrated_cycle4": {
+    "precision": [
+      [
+        "3",
+        "-1",
+        "0",
+        "1"
+      ],
+      [
+        "-1",
+        "3",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "3",
+        "-1"
+      ],
+      [
+        "1",
+        "0",
+        "-1",
+        "3"
+      ]
+    ],
+    "covariance": [
+      [
+        "3/7",
+        "1/7",
+        "0",
+        "-1/7"
+      ],
+      [
+        "1/7",
+        "3/7",
+        "1/7",
+        "0"
+      ],
+      [
+        "0",
+        "1/7",
+        "3/7",
+        "1/7"
+      ],
+      [
+        "-1/7",
+        "0",
+        "1/7",
+        "3/7"
+      ]
+    ],
+    "ratio_counts": {
+      "64/63": 16,
+      "1": 8
+    },
+    "cases": [
+      {
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "-1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [
+              0
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "-1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [
+              0
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "exp_twice_minimum_kl": "1",
+        "missing_past": [],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": [
+              "0"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "-1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "exp_twice_minimum_kl": "1",
+        "missing_past": [],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": [
+              "0"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "-1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [
+              0
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-1/3"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          0,
+          3,
+          2,
+          1
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [
+              0
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-1/3"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "-1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [
+              1
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "-1/8"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "-1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [
+              1
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              0
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "-3/8"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "-1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [
+              1
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "-1/8"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "-1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "-1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [
+              1
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "-1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "exp_twice_minimum_kl": "1",
+        "missing_past": [],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": [
+              "0"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "-1/3"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "exp_twice_minimum_kl": "1",
+        "missing_past": [],
+        "stages": [
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": [
+              "0"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "-1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "exp_twice_minimum_kl": "1",
+        "missing_past": [],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": [
+              "0"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "-1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "exp_twice_minimum_kl": "1",
+        "missing_past": [],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": [
+              "0"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "-1/3"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "-1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [
+              2
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "-1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 3,
+            "past_nonneighbor": 1,
+            "coefficient": "-1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [
+              2
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 3,
+            "parents": [
+              2
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "-1/8"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              1,
+              3
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "-1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          3,
+          0,
+          1
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [
+              2
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "-3/8"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          2,
+          3,
+          1,
+          0
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "-1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 2,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 3,
+            "parents": [
+              2
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "-1/8"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "-1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [
+              3
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-1/3"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 2,
+            "past_nonneighbor": 0,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 0,
+            "parents": [
+              3
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-1/3"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              0,
+              2
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "exp_twice_minimum_kl": "1",
+        "missing_past": [],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": [
+              "0"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "-1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          1,
+          2,
+          0
+        ],
+        "exp_twice_minimum_kl": "1",
+        "missing_past": [],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 1,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": [
+              "0"
+            ]
+          },
+          {
+            "site": 2,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "1/3",
+              "1/3"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "-1/3",
+              "1/3",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 0,
+            "past_nonneighbor": 2,
+            "coefficient": "1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [
+              3
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-3/8",
+              "1/8"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2,
+              0
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "0",
+              "1/3",
+              "1/3"
+            ]
+          }
+        ]
+      },
+      {
+        "order": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "exp_twice_minimum_kl": "64/63",
+        "missing_past": [
+          {
+            "site": 1,
+            "past_nonneighbor": 3,
+            "coefficient": "-1/8"
+          }
+        ],
+        "stages": [
+          {
+            "site": 3,
+            "parents": [],
+            "full_variance": "3/7",
+            "local_variance": "3/7",
+            "full_regression": []
+          },
+          {
+            "site": 2,
+            "parents": [
+              3
+            ],
+            "full_variance": "8/21",
+            "local_variance": "8/21",
+            "full_regression": [
+              "1/3"
+            ]
+          },
+          {
+            "site": 1,
+            "parents": [
+              2
+            ],
+            "full_variance": "3/8",
+            "local_variance": "8/21",
+            "full_regression": [
+              "-1/8",
+              "3/8"
+            ]
+          },
+          {
+            "site": 0,
+            "parents": [
+              3,
+              1
+            ],
+            "full_variance": "1/3",
+            "local_variance": "1/3",
+            "full_regression": [
+              "-1/3",
+              "0",
+              "1/3"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "signed_sampler": {
+    "regression": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/3",
+        "0",
+        "1/3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1/3",
+        "0",
+        "1/3",
+        "0"
+      ]
+    ],
+    "noise_variances": [
+      "3/7",
+      "1/3",
+      "3/7",
+      "1/3"
+    ],
+    "exact_covariance_match": true
+  },
+  "longer_attractive_cycles": [
+    {
+      "cycle_length": 5,
+      "orders": 120,
+      "minimum_ratio": "3087/3025",
+      "ratio_counts": {
+        "3087/3025": 40,
+        "35/33": 80
+      }
+    },
+    {
+      "cycle_length": 6,
+      "orders": 720,
+      "minimum_ratio": "9150625/8957952",
+      "ratio_counts": {
+        "9150625/8957952": 96,
+        "605/576": 528,
+        "27/25": 96
+      }
+    }
+  ],
+  "scope": "fixed order and raw target scalar histories; messages, adaptive schedules, joint writes and native law selection not excluded"
+}

@@ -232,6 +232,13 @@ weighted graph solve at V=1,.95,.9, yielding approximately .285050028242,
 finite numbers; the new certificate and transport interpretation do not
 relabel its previous computation as a new phase result.
 
+The exact corrector variance is ||phi||_pi^2=5241841/91014192. Thus the
+stationary open-current estimator has an absolute curvature bias at most
+5241841/(45507096 t); divide this by eight for chi_2. Sturm isolation of
+the six roots of P puts every current-coupled decay rate strictly between
+3 and 15. This is a finite current-channel bound, not a lower bound for
+the full graph gap or for any larger volume.
+
 An all-configuration recursive degree census gives 9600 ice states in 937
 move components on L=2. Of these 760 are singleton frozen components.
 The cycle-period criterion detects nonzero xy response on 77 components;
@@ -320,3 +327,62 @@ thermodynamic K. It proves why a finite positive response at every L is
 compatible with the remaining phase uncertainty. The global frozen-state
 result in section 8 continues to apply when the full zero-flux sector, rather
 than Omega_L, is minimized at V>=J.
+
+## 10. The first winding order grows with spatial area
+
+A closed history of n square flips obeys |A_history|<=n, while (9) requires
+A_history=L^2 W. Consequently every history with fewer than L^2 flips has
+zero xy winding. In a trace of H(theta)^n, diagonal insertions do not change
+the configuration or add source. Therefore, for every real V,
+
+    Tr H(theta)^n = Tr H(0)^n for 0<=n<L^2.               (17)
+
+This holds on any component. On Omega_L the constructive cycle in section 9
+attains length L^2. At that minimal order, a nonzero winding history uses
+only off-diagonal xy moves of the same source sign. Its contribution to
+Tr[-H(theta)]^(L^2) has positive weight J^(L^2); no diagonal insertion or
+opposite phase can cancel its positive winding coefficient. Hence the
+finite-temperature curvature on this component has a strictly positive
+leading term of order beta^(L^2-1) as beta decreases to zero. Its coefficient
+counts actual minimal closed move sequences and is independent of V.
+
+This is a statement about the finite-volume Taylor expansion; its remainder
+has not been bounded uniformly in L. It explains why a history expansion
+truncated at a fixed number of local moves cannot see the winding response
+once L^2 exceeds that number. Resummation, a long-history observable or a
+global flow construction remains available. It is not a limitation of every
+method using local mathematics and not an axiom obstruction.
+
+## 11. A precise route for a uniform lower bound
+
+Consider an auxiliary move graph on the same configurations, with positive
+edge weights w'_f and source a'_f. Supply for every oriented auxiliary edge
+f=(x,y) a path gamma_f of actual geometric moves from x to y, with
+
+    a'_f=sum_(e in gamma_f) oriented a_e.
+
+Repeated actual edges count with multiplicity. Cauchy-Schwarz on this path
+gives, for every phi,
+
+ w'_f(a'_f+phi_y-phi_x)^2
+ <= w'_f |gamma_f| sum_(e in gamma_f)(a_e+(B phi)_e)^2.
+
+Thus, if the explicitly defined congestion obeys
+
+ rho=max_e [sum_f w'_f |gamma_f| multiplicity(e,gamma_f)]/w_e,
+
+then the variational responses satisfy C_actual>=C_auxiliary/rho. This
+comparison requires the correct integrated source, not just matching
+endpoints or stationary measures. Different paths may differ by a winding
+period and hence represent different source experiments.
+
+A uniform phase certificate could therefore consist of C_auxiliary>=k L^3
+and rho<=rho0 with k,rho0 positive and independent of L, in a specified
+ground-state component/ensemble and parameter interval. None of those
+uniform bounds is supplied here. The explicit single-sheet paths prove
+finite positivity but their presently controlled packing only gives (16).
+Classical loop samplers with improved mixing cannot be substituted for the
+Hamiltonian dynamics without this comparison or another controlled rate
+conversion. A thermodynamic curvature bound would still need the transverse
+spectrum, electric response, phase stability and native-law identification
+before it establishes the proposed physical photon branch.

@@ -12,17 +12,17 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 11
-active_route: direct_strong_scaling_gaussian_and_charged_wilson_observables
+block: 12
+active_route: logarithmic_coupling_scaling_and_global_defect_boundary
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Derive an elementary dimension-dependent theta bound that removes the affine-covariance dependency on a stronger explicit scaling sequence, then control relative charged Wilson-loop expectations and their continuum Coulomb interaction.
+next_action: Derive local-tail and integer-current theta estimates for logarithmic coupling growth, including uniform Wilson-source potentials and the fixed-coupling failure of global defect removal.
 strongest_unresolved_obligation: Uniform sector-energy comparison or an actual-state Coulomb-phase estimate for the specified Hamiltonian.
-working_result: Seven public PRs8123-8129 contain eight proposed theorem milestones. PR8127 now includes the conditional bounded-score Gaussian Maxwell scaling theorem at d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee, with two transverse linear modes. Its affine-covariance input and all milestones await independent review. Actual fixed-N3 Hamiltonian phase and native law selection remain open.
+working_result: Eight public PRs8123-8130 contain nine proposed theorem milestones. PR8130 at44faa4d4ce09b8634726cef62a84146f940eb233 gives a direct supplied-family Maxwell limit and relative Wilson Coulomb interactions without an affine-covariance premise. All milestones await independent review. Fixed-law phase, native law and charged matter remain open.
 public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
@@ -31,3 +31,4 @@ public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8128
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129
+  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8130

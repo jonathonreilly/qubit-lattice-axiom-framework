@@ -1,0 +1,77 @@
+{
+  "pr": {
+    "baseRefOid": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+    "headRefOid": "44faa4d4ce09b8634726cef62a84146f940eb233",
+    "mergeable": "MERGEABLE",
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8130"
+  },
+  "branch": "physics-loop/direct-clock-wilson-scaling-20260914",
+  "head": "44faa4d4ce09b8634726cef62a84146f940eb233",
+  "remote_head": "44faa4d4ce09b8634726cef62a84146f940eb233",
+  "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-direct-clock-wilson-20260914",
+  "tracked_and_untracked_clean": true,
+  "ignored_files": [
+    {
+      "path": "docs/audit/data/audit_ledger.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 85348652
+    },
+    {
+      "path": "docs/audit/data/citation_graph.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 7430292
+    },
+    {
+      "path": "docs/audit/data/ledger_cache_manifest.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 129
+    },
+    {
+      "path": "docs/audit/data/static_pipeline_checkpoint.lock",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 0
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 6333
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/ledger_io.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 18087
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 217080
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 34044
+    },
+    {
+      "path": "scripts/__pycache__/runner_cache.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "is_symlink": false,
+      "size": 30045
+    }
+  ],
+  "preserved_before_removal": true,
+  "removed": true,
+  "note_sha256": "f65c7cdf9af62fdb14a91695bac6ec1a6c9ebcc64012009a60227577602a023f",
+  "runner_sha256": "ec590b5791e5bfc460c40c21eaab78608bfa39f6ed1a9b9d2fef1692f1db5aa6",
+  "qualification": "Author delivery receipt. Independent proof review and formal audit pending; no main landing.",
+  "removed_utc": "2026-09-14T22:54:40.084119+00:00"
+}

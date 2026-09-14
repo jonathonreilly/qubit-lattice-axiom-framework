@@ -1,0 +1,9 @@
+{
+  "url": "https://math.uchicago.edu/~lawler/srwbook10.pdf",
+  "path": "/tmp/toe-charged-reading-20260914/lawler-limic-srwbook10.pdf",
+  "sha256": "cb10ab9e665913f5041fd12511c2492c41d3e4bbebcf2d6ba7162c78acfbd9ea",
+  "pages_in_author_hosted_draft": 289,
+  "read_scope": "Section 4.3, PDF pages81-83 / zero-based80-82, through web extracted text; theorem4.3.1 normalization and proof read. Screenshot request failed, so no visual verification is claimed. The remainder of the book was not read.",
+  "role": "Primary-source comparison for the standard Green-function normalization; the periodic heat-kernel argument is derived in the new source.",
+  "utc": "2026-09-14T22:35:57.301921+00:00"
+}

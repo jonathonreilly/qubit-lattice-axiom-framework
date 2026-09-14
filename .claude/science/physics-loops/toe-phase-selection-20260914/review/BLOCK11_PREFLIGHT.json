@@ -1,0 +1,13 @@
+{
+  "note": "docs/FINITE_CLOCK_DIRECT_MAXWELL_SCALING_AND_COULOMB_WILSON_INTERACTIONS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+  "note_sha256": "f65c7cdf9af62fdb14a91695bac6ec1a6c9ebcc64012009a60227577602a023f",
+  "runner": "scripts/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.py",
+  "runner_sha256": "ec590b5791e5bfc460c40c21eaab78608bfa39f6ed1a9b9d2fef1692f1db5aa6",
+  "cache_status": "fresh",
+  "declared_timeout_sec": 180,
+  "elapsed_sec": 0.78,
+  "runner_source_issue": null,
+  "n5_live_readiness_issue": null,
+  "detected_mutations": 30,
+  "qualification": "Mechanical source/cache/N5 readiness and personal fault challenges only. Independent proof review and formal audit pending."
+}

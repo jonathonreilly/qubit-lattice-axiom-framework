@@ -1,0 +1,307 @@
+{
+  "runner": "/Users/jonreilly/Documents/Codex/toe-direct-clock-wilson-20260914/scripts/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.py",
+  "runner_sha256": "ec590b5791e5bfc460c40c21eaab78608bfa39f6ed1a9b9d2fef1692f1db5aa6",
+  "faults": [
+    {
+      "fault": "forward_coboundary_direction",
+      "function": "coboundary",
+      "invoked": "integral_cochain_and_short_vectors",
+      "old": "np.roll(field[J],-1,axis=axis)",
+      "new": "np.roll(field[J],1,axis=axis)",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.0015858750557526946
+    },
+    {
+      "fault": "adjoint_difference_sign",
+      "function": "adjoint",
+      "invoked": "integral_cochain_and_short_vectors",
+      "old": "np.roll(values,1,axis=axis)-values",
+      "new": "values-np.roll(values,1,axis=axis)",
+      "outcome": "AssertionError",
+      "detail": "(array([[[[ 1.00000000e+00,  1.38777878e-17, -1.38777878e-17,\n           1.38777878e-17],\n         [-5.55111512e-17, -3.46944695e-18,  4.33680869e-18,\n           0.00000000e+00],\n         [ 1.21430643e-17,  1.51788304e-18,  6.07153217e-18,\n",
+      "seconds": 0.003613209002651274
+    },
+    {
+      "fault": "circle_anchor",
+      "function": "circle_projection",
+      "invoked": "integral_cochain_and_short_vectors",
+      "old": "np.take(values,[0],axis=axis)",
+      "new": "np.take(values,[1],axis=axis)",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.00016058306209743023
+    },
+    {
+      "fault": "period_cocycle_location",
+      "function": "circle_projection",
+      "invoked": "integral_cochain_and_short_vectors",
+      "old": "slice(L-1,L)",
+      "new": "slice(0,1)",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.00048558402340859175
+    },
+    {
+      "fault": "contraction_endpoint",
+      "function": "contraction",
+      "invoked": "integral_cochain_and_short_vectors",
+      "old": "np.cumsum(values,axis=axis)-values",
+      "new": "np.cumsum(values,axis=axis)+values",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.0001580000389367342
+    },
+    {
+      "fault": "tensor_koszul_sign",
+      "function": "contraction",
+      "invoked": "integral_cochain_and_short_vectors",
+      "old": "(-1)**position*shifted",
+      "new": "shifted",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.0004419580800458789
+    },
+    {
+      "fault": "harmonic_volume_factor",
+      "function": "integral_cochain_and_short_vectors",
+      "invoked": "integral_cochain_and_short_vectors",
+      "old": "L**4*float(values.mean())**2",
+      "new": "L**2*float(values.mean())**2",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.001719290972687304
+    },
+    {
+      "fault": "short_vector_operator_bound",
+      "function": "integral_cochain_and_short_vectors",
+      "invoked": "integral_cochain_and_short_vectors",
+      "old": "integernorm/4-1e-12",
+      "new": "integernorm/2-1e-12",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.0023573749931529164
+    },
+    {
+      "fault": "packing_dimension_dropped",
+      "function": "packing_and_parameters",
+      "invoked": "packing_and_parameters",
+      "old": "rank*math.log(2*k+3)",
+      "new": "math.log(2*k+3)",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.0030081659788265824
+    },
+    {
+      "fault": "theta_tail_exponent",
+      "function": "packing_and_parameters",
+      "invoked": "packing_and_parameters",
+      "old": "bound=2*math.exp(-t/2)",
+      "new": "bound=2*math.exp(-2*t)",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 2.0209001377224922e-05
+    },
+    {
+      "fault": "dual_temperature_scale",
+      "function": "packing_and_parameters",
+      "invoked": "packing_and_parameters",
+      "old": "N*N/(4*np.pi*np.pi*beta)",
+      "new": "N*N/(2*np.pi*np.pi*beta)",
+      "outcome": "AssertionError",
+      "detail": "(array(53121.48072947), array(26560.74036474))",
+      "seconds": 0.0029927499126642942
+    },
+    {
+      "fault": "perpendicular_coset_energy",
+      "function": "lattice_source_and_coset_mixture",
+      "invoked": "lattice_source_and_coset_mixture",
+      "old": "zero_log-N*N*k*k/(6*sigma)",
+      "new": "zero_log-N*N*k*k/(3*sigma)",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.003281792043708265
+    },
+    {
+      "fault": "poisson_character_source_factor",
+      "function": "lattice_source_and_coset_mixture",
+      "invoked": "lattice_source_and_coset_mixture",
+      "old": "+2*np.pi*math.sqrt(sigma)*(dualpoints@he)",
+      "new": "+4*np.pi*math.sqrt(sigma)*(dualpoints@he)",
+      "outcome": "AssertionError",
+      "detail": "(array(0.6505091-4.96178625e-18j), array(0.65050981))",
+      "seconds": 0.0033330420264974236
+    },
+    {
+      "fault": "affine_poisson_phase_sign",
+      "function": "shifted_theta_relative_sources",
+      "invoked": "shifted_theta_relative_sources",
+      "old": "np.exp(2j*np.pi*(dualz@b))",
+      "new": "np.exp(-2j*np.pi*(dualz@b))",
+      "outcome": "AssertionError",
+      "detail": "(array(0.42475673+0.12146799j), array(0.42475673-0.12146799j))",
+      "seconds": 0.000321707921102643
+    },
+    {
+      "fault": "omit_affine_theta_denominator",
+      "function": "shifted_theta_relative_sources",
+      "invoked": "shifted_theta_relative_sources",
+      "old": "gaussian*numerator/denominator",
+      "new": "gaussian*numerator",
+      "outcome": "AssertionError",
+      "detail": "(array(0.42475673+0.12146799j), array(0.26190069+0.07489593j))",
+      "seconds": 0.0003106669755652547
+    },
+    {
+      "fault": "fractional_wilson_charge",
+      "function": "clock_wilson_characters",
+      "invoked": "clock_wilson_characters",
+      "old": "q1=round(.8*math.sqrt(beta))",
+      "new": "q1=.8*math.sqrt(beta)",
+      "outcome": "AssertionError",
+      "detail": "(array([ 2.59247216e-01, -1.24900090e-16, -4.37916772e-02]), array(0))",
+      "seconds": 0.0007982500828802586
+    },
+    {
+      "fault": "clock_charge_alias",
+      "function": "clock_wilson_characters",
+      "invoked": "clock_wilson_characters",
+      "old": "np.exp(1j*N*angles[i])",
+      "new": "np.exp(1j*N/2*angles[i])",
+      "outcome": "AssertionError",
+      "detail": "(array(8.67361738e-16+2.60610479e-15j), array(1))",
+      "seconds": 0.0008972500218078494
+    },
+    {
+      "fault": "green_jump_rate",
+      "function": "infinite_green",
+      "invoked": "green_and_disjoint_loops",
+      "old": "ive(abs(n),2*t)",
+      "new": "ive(abs(n),t)",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.009274458047002554
+    },
+    {
+      "fault": "periodic_zero_mode",
+      "function": "periodic_green",
+      "invoked": "green_and_disjoint_loops",
+      "old": "out=np.zeros_like(symbol)",
+      "new": "out=np.ones_like(symbol)",
+      "outcome": "AssertionError",
+      "detail": "(array(1.), array(0))",
+      "seconds": 0.00018870795611292124
+    },
+    {
+      "fault": "heat_zero_mode_subtraction",
+      "function": "green_and_disjoint_loops",
+      "invoked": "green_and_disjoint_loops",
+      "old": "np.prod(terms)-1/4**4",
+      "new": "np.prod(terms)",
+      "outcome": "AssertionError",
+      "detail": "(array(0.33457264), array(0.14707264))",
+      "seconds": 0.003466457943432033
+    },
+    {
+      "fault": "loop_edge_orientation",
+      "function": "rectangle_current",
+      "invoked": "green_and_disjoint_loops",
+      "old": "tuple(x),direction",
+      "new": "tuple(x),abs(direction)",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.05743529088795185
+    },
+    {
+      "fault": "current_component_contraction",
+      "function": "green_and_disjoint_loops",
+      "invoked": "green_and_disjoint_loops",
+      "old": "if mu==nu:cross+=",
+      "new": "if mu!=nu:cross+=",
+      "outcome": "AssertionError",
+      "detail": "",
+      "seconds": 0.044351959018968046
+    },
+    {
+      "fault": "coulomb_kernel_normalization",
+      "function": "time_integral",
+      "invoked": "coulomb_time_and_charge_signs",
+      "old": "/(2*np.pi*np.pi)",
+      "new": "/(4*np.pi*np.pi)",
+      "outcome": "AssertionError",
+      "detail": "(array(0.16054343), array(0.08027172))",
+      "seconds": 0.0006876660045236349
+    },
+    {
+      "fault": "closing_paths_omitted",
+      "function": "coulomb_time_and_charge_signs",
+      "invoked": "coulomb_time_and_charge_signs",
+      "old": "loop_formula+=2*time_integral(A,R)-2*time_integral(A,math.sqrt(T*T+R*R))",
+      "new": "loop_formula+=0",
+      "outcome": "AssertionError",
+      "detail": "(array(0.16054343), array(0.10528388))",
+      "seconds": 0.0005912500200793147
+    },
+    {
+      "fault": "charge_interaction_sign",
+      "function": "coulomb_time_and_charge_signs",
+      "invoked": "coulomb_time_and_charge_signs",
+      "old": "-math.log(joint/separate)",
+      "new": "math.log(joint/separate)",
+      "outcome": "AssertionError",
+      "detail": "(array(-0.252), array(0.252))",
+      "seconds": 0.0007129580480977893
+    },
+    {
+      "fault": "physical_score_sign",
+      "function": "clock_lift_and_score",
+      "invoked": "clock_lift_and_score",
+      "old": "Y=-score/math.sqrt(beta)",
+      "new": "Y=score/math.sqrt(beta)",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 0.00000000e+00,  0.00000000e+00,  0.00000000e+00],\n       [ 0.00000000e+00,  1.25814048e+00, -1.25814048e+00],\n       [ 0.00000000e+00,  5.34669571e-16, -5.34669571e-16],\n       [ 0.00000000e+00, -1.25814048e+00,  1.25814048e+00],",
+      "seconds": 0.003678583074361086
+    },
+    {
+      "fault": "cell_average_factor",
+      "function": "midpoint_and_cell_average",
+      "invoked": "midpoint_and_cell_average",
+      "old": "sinc=float(np.prod(np.sinc(k/(2*np.pi))))",
+      "new": "sinc=1.0",
+      "outcome": "AssertionError",
+      "detail": "(array(0.05442446+1.97734765e-19j), array(0.0625))",
+      "seconds": 0.0004165000282227993
+    },
+    {
+      "fault": "electric_reflection_sign",
+      "function": "os_electric_magnetic_reconstruction",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "np.diag([-1,-1,-1,1,1,1])",
+      "new": "np.eye(6)",
+      "outcome": "AssertionError",
+      "detail": "(array([[-0.1926126 +0.j        , -0.03370721+0.j        ,\n         0.10112162+0.j        ,  0.        +0.j        ,\n         0.        -0.20884261j,  0.        -0.0696142j ],\n       [-0.03370721+0.j        , -0.23233895+0.j        ,\n      ",
+      "seconds": 0.000701459008269012
+    },
+    {
+      "fault": "electric_magnetic_cross_sign",
+      "function": "os_electric_magnetic_reconstruction",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "M=-1j*C/r",
+      "new": "M=1j*C/r",
+      "outcome": "AssertionError",
+      "detail": "(array([[ 0.1926126 +0.j        ,  0.03370721+0.j        ,\n        -0.10112162+0.j        ,  0.        +0.j        ,\n         0.        +0.20884261j,  0.        +0.0696142j ],\n       [ 0.03370721+0.j        ,  0.23233895+0.j        ,\n      ",
+      "seconds": 0.0005891249747946858
+    },
+    {
+      "fault": "quadratic_physical_dispersion",
+      "function": "os_electric_magnetic_reconstruction",
+      "invoked": "os_electric_magnetic_reconstruction",
+      "old": "spectral=math.exp(-t*r)",
+      "new": "spectral=math.exp(-t*r*r)",
+      "outcome": "AssertionError",
+      "detail": "(array(2.09), array(1.44568323))",
+      "seconds": 0.0004737499402835965
+    }
+  ],
+  "qualification": "Personal finite fault challenges. Not independent review or execution of the arbitrary-volume proof."
+}

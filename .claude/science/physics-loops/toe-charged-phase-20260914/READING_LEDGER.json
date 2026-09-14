@@ -3,7 +3,7 @@
     "url": "https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf",
     "local": "/tmp/toe-charged-reading-20260914/frohlich-spencer-1981.pdf",
     "pages": 85,
-    "read": "Introduction pages 1-14 text; sections 2.11-2.12 and 3 text; pages 53-56 visually inspected including formulas. Text extraction misses mathematical images elsewhere, so those equations remain unverified.",
+    "read": "Introduction pages 1-14 text; sections 2.11-2.12 and 3 text; pages 53-56 visually inspected including formulas. Text extraction misses mathematical images elsewhere, so those equations remain unverified. Page 45 visually inspected for covariance/discontinuity equations (2.90)-(2.91). Sections 2.8-2.12 text revisited for the renormalized-current/positive-type hypotheses; remaining image equations not yet fully verified.",
     "role": "proof-route search, not imported",
     "sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17"
   },

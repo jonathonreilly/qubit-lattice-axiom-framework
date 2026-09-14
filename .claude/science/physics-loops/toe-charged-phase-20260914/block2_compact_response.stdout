@@ -1,0 +1,51 @@
+{
+  "Clifford_basis_zero_traces_and_exact_multiplication": true,
+  "actual_r2_Wilson_negative_Fourier_type": {
+    "det_zero": "2793699536637539555790009139456",
+    "det_pi": "2793707190016896642234870398976",
+    "W_pi_over_W_zero": 1.000005479035766,
+    "M": 80,
+    "r": 2,
+    "t0": 2
+  },
+  "closed_current_density_counterexample": [
+    {
+      "L": 1,
+      "component_second_moment": "1/1000000",
+      "infrared_coefficient_exact": "1/2000000",
+      "direct_Fourier_coefficient": 5e-07
+    },
+    {
+      "L": 2,
+      "component_second_moment": "1/1000000",
+      "infrared_coefficient_exact": "1/250000",
+      "direct_Fourier_coefficient": 3.999999999999749e-06
+    },
+    {
+      "L": 4,
+      "component_second_moment": "1/1000000",
+      "infrared_coefficient_exact": "1/31250",
+      "direct_Fourier_coefficient": 3.19999999999975e-05
+    },
+    {
+      "L": 8,
+      "component_second_moment": "1/1000000",
+      "infrared_coefficient_exact": "4/15625",
+      "direct_Fourier_coefficient": 0.0002559999999999789
+    },
+    {
+      "L": 16,
+      "component_second_moment": "1/1000000",
+      "infrared_coefficient_exact": "32/15625",
+      "direct_Fourier_coefficient": 0.002047999999999829
+    },
+    {
+      "L": 32,
+      "component_second_moment": "1/1000000",
+      "infrared_coefficient_exact": "256/15625",
+      "direct_Fourier_coefficient": 0.01638399999999865
+    }
+  ],
+  "strict_compact_density_upper": "4e-27",
+  "density_certificate": "pi>3.14, a>115, exp(57.5)>9e24 by positive rational Taylor partial sum, exp(172.5)>100"
+}

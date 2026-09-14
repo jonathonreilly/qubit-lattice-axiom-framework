@@ -1,0 +1,109 @@
+[
+  {
+    "dimension": 2,
+    "intervals_per_axis": 1,
+    "cell_counts": [
+      4,
+      4,
+      1
+    ],
+    "integer_homotopy_identity": true,
+    "smith_checks": [
+      {
+        "degree": 0,
+        "rank": 3,
+        "nonunit_invariant_factors": []
+      },
+      {
+        "degree": 1,
+        "rank": 1,
+        "nonunit_invariant_factors": []
+      }
+    ]
+  },
+  {
+    "dimension": 2,
+    "intervals_per_axis": 2,
+    "cell_counts": [
+      9,
+      12,
+      4
+    ],
+    "integer_homotopy_identity": true,
+    "smith_checks": []
+  },
+  {
+    "dimension": 3,
+    "intervals_per_axis": 1,
+    "cell_counts": [
+      8,
+      12,
+      6,
+      1
+    ],
+    "integer_homotopy_identity": true,
+    "smith_checks": [
+      {
+        "degree": 0,
+        "rank": 7,
+        "nonunit_invariant_factors": []
+      },
+      {
+        "degree": 1,
+        "rank": 5,
+        "nonunit_invariant_factors": []
+      },
+      {
+        "degree": 2,
+        "rank": 1,
+        "nonunit_invariant_factors": []
+      }
+    ]
+  },
+  {
+    "dimension": 3,
+    "intervals_per_axis": 2,
+    "cell_counts": [
+      27,
+      54,
+      36,
+      8
+    ],
+    "integer_homotopy_identity": true,
+    "smith_checks": []
+  },
+  {
+    "dimension": 4,
+    "intervals_per_axis": 1,
+    "cell_counts": [
+      16,
+      32,
+      24,
+      8,
+      1
+    ],
+    "integer_homotopy_identity": true,
+    "smith_checks": [
+      {
+        "degree": 0,
+        "rank": 15,
+        "nonunit_invariant_factors": []
+      },
+      {
+        "degree": 1,
+        "rank": 17,
+        "nonunit_invariant_factors": []
+      },
+      {
+        "degree": 2,
+        "rank": 7,
+        "nonunit_invariant_factors": []
+      },
+      {
+        "degree": 3,
+        "rank": 1,
+        "nonunit_invariant_factors": []
+      }
+    ]
+  }
+]

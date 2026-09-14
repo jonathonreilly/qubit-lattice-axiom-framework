@@ -96,3 +96,20 @@ Projecting to P F restores closure but makes the observable nonlocal; it
 cannot silently replace a local physical field strength. Positive Fourier
 type of a dual measure is also not implied by convexity or phase-weight
 positivity. These are precise next proof obligations, not an axiom no-go.
+
+## Checkpoint: compact sector bounds and the exact remaining response target
+
+The compact derivation now includes the integer tensor contracting homotopy,
+full-space Wilson trace evenness, normalized Haar periodization and a marginal
+Schur-complement proof. Six exploratory families currently pass; all source,
+stdout, stderr and machine-readable results are retained. A strict example
+bounds mean squared defect density by 4e-27. This is an author-proposed result
+for supplied massive compact U(1) Villain data, not a finite Z_N phase theorem.
+
+Two controls sharpen the phase task: dilute large closed loops can defeat any
+inference from density alone to small infrared susceptibility; and an exact
+r=2 Wilson square determinant fails positive Fourier type. The actual model's
+loop-energy/area response remains available and open. The next scientific
+question is whether the pure-model renormalized-current machinery can be
+adapted with fully checked determinant/complex-shift hypotheses. No new
+axiom is forced by either bounded inference failure.

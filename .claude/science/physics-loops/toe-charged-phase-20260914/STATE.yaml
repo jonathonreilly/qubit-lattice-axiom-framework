@@ -20,5 +20,7 @@ formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Derive a volume-uniform massive-fermion loop curvature bound and its gauge covariance consequence; test exact compact and Hamiltonian bridge requirements.
-last_checkpoint_utc: '2026-09-14T02:19:42.862082+00:00'
+next_action: Cold-review and package the massive noncompact covariance plus compact
+  defect-sector milestone; personally pursue the missing area-weighted infrared current-response
+  estimate and matched Hamiltonian bridge.
+last_checkpoint_utc: '2026-09-14T03:06:51.322174+00:00'

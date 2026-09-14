@@ -67,3 +67,15 @@ inequalities, before testing compactness and Hamiltonian correspondence. It
 is a new direct construction; no conclusion from block 1 is used as reviewed
 physics or silently composed into a long unaudited dependency chain. The
 personal campaign continues until 2026-09-14 13:09:34 UTC.
+
+## Block 2 compact checkpoint
+
+The loop curvature bound now yields an author-proposed noncompact limiting
+field distribution with nonsummable orientation correlations. Its compact
+Villain extension yields exact sector comparison and a volume-uniform density
+bound, including a strict <4e-27 example. It does not prove a compact phase.
+The current-response counterexample isolates why the density estimate is
+insufficient. An exact r=2 Wilson determinant also prevents importing positive
+Fourier type for the entire supplied family. All are pending independent
+review. Continue personally on the actual loop-area response/Hamiltonian
+bridge, and deliver a coherent milestone after source and runner cold review.

@@ -1,6 +1,6 @@
 {
  "edge_count": 12522,
- "node_count": 5049,
+ "node_count": 5050,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3073,6 +3073,10 @@
   "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": {
    "deps_hash": "11bd292c9d93",
    "out_degree": 1
+  },
+  "cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "cubic_nn_condition_domain_separation_bounded_theorem_note_2026-08-13": {
    "deps_hash": "e37282b4e366",

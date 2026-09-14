@@ -74,3 +74,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "widths 4 and 5 rigorously enclosed by a field-free self-adjoint route that scales with the orbit count; next per the queue refresh: the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the monotone class; width 6 with an interior pair two steps in; consumers: the parked bridge material (read-only, not fired), the record-matter lane's formation-order supply"
 ```
+
+# Trace gate — block 07, at PR opening (#8035; stack rebuilt on main 2026-09-14)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the probe record PROBES_gravity_consumer_20260907.md: the Gaussian instance re-scoped to a self-made Hermitian precision; the owner's action-identification gate, not fired"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "no consumer map claimed: a cross-lane comparison with the gravity comparator needs a checked probability and record map (the corrected probe); next per the corrected queue: width 6; the silent triples by a non-criterion route; the plane law is the subject of the concurrent PR #8039"
+```

@@ -87,3 +87,22 @@ Block 06 opened for review (PR #8034; not a main landing): widths 4 and 5 rigoro
 2. **Formation-law uniqueness on Z^3 for the monotone class**: block 05's quadrant law as a projective limit; the corner classes' laws on the plane (opposite corners coincide on every finite rectangle by the corrected block 05 P7(a)) — one object or two; relation to the static law of the plane; one block.
 3. **Width 6 and the innermost pair two steps in** (the method of block 06 at 46656 states / ~1000 orbits; the first width where an interior pair sits two steps from the boundary); one block, if the orbit count fits.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+
+## Refresh at block 07 close (2026-09-08)
+
+Block 07 opened for review (PR #8035; not a main landing): the Hermitian Gaussian instance, exact. Ranked next (superseded by the 2026-09-14 refresh below):
+
+1. **Formation-law uniqueness on Z^3 for the monotone class**: block 05's quadrant law as a projective limit with explicit marginals; the four corner classes on the plane — one object or four; relation to the static law of the plane; one block.
+2. **Width 6 and the innermost pair two steps in** (block 06's method at 46656 states; the orbit count is the only cost); one block if it fits.
+3. **The silent triples by a non-criterion route** (unchanged; heavy).
+4. **The Gaussian instance at larger windows / the 2x2x2 cube** (the fill-in structure in three dimensions); small; low priority.
+
+## Refresh 2026-09-14 (rebase onto the owner's corrected main; concurrent work read)
+
+Blocks 06 (#8034, base now `main`) and 07 (#8035, stacked on #8034) are open hand-offs; blocks 01–05 are on `main` in the owner's corrected form; nothing is landed by the campaign. PR #8039 proves the monotone class's plane law (projective consistency, translation invariance, two diagonal classes, the pair potential with the normalizer-induced diagonal term, the full-neighborhood conditional is not the static rule): the planned block 08 is withdrawn. Ranked next:
+
+1. **Width 6 and the innermost pair two steps in** (block 06's route at 46656 row states; the orbit count is the only cost); the first width at which an interior pair sits two steps from the boundary; one block if the orbit count fits.
+2. **The plane's static pair statistic against the two plane formation laws of #8039**: the formation value `f = p/(p+q+4r)` on every nearest-neighbor pair (rows are chains) against block 06's strip enclosures; whether a pair deep inside a wide strip keeps the gap is exactly the open question; needs a uniform bound or a controlled limit (the owner's corrected queue, item 2 of the block-04 refresh); not a one-block item.
+3. **The silent triples by a non-criterion route** (unchanged; heavy) — and, per the owner's F7, a larger rational block criterion is exactly computable in principle; its cost, not its impossibility, is the obstacle.
+4. **The Gaussian instance in three dimensions** (the `2×2×2` cube's fill-in structure; #8102's 48 monotone-box orders are the finite-menu counterpart); small; low priority.
+5. **A checked probability and record map across carriers** before any gravity-comparator statement (the corrected probe's standing obligation); owner-level, not a campaign block.

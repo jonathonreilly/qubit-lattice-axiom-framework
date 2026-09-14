@@ -1,0 +1,94 @@
+{
+  "source_revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "author_reading": [
+    {
+      "source": "docs/work_history/repo/review_feedback/CYCLE703_BKSF_PATCH_TABLEAU_COVARIANCE_NOTE_2026-07-25.md",
+      "revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "url": null,
+      "sha256": "e356e1828e7343889d49d042fd4cf976a4072704f2601de8573af66a0fb72b25",
+      "read_scope": "Full note",
+      "role": "Closest explicit same-E path-string and graph-equivalence gaps; not imported as an independently re-run result."
+    },
+    {
+      "source": "docs/work_history/repo/review_feedback/CYCLE703_LOCAL_GAUSS_HELD_PATCH_GRAMMAR_ADDENDUM_2026-07-25.md",
+      "revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "url": null,
+      "sha256": "325e19300d93dda124225d5c93e0274adb06705e2282e29ddf196ecb03b44015",
+      "read_scope": "Full note",
+      "role": "Actual bounded directed local-D grammar and declared operator/state boundary."
+    },
+    {
+      "source": "docs/work_history/repo/review_feedback/CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md",
+      "revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "url": null,
+      "sha256": "abee86330380daf21a497f398c7e2e7f1b9e5e5bb826fa82f702cfe85582ca1f",
+      "read_scope": "Full note",
+      "role": "Reference graph, all-B vacuum and suffix-loader state definition; prior preparation runtime/results not re-run."
+    },
+    {
+      "source": "docs/work_history/repo/review_feedback/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_NOTE_2026-07-17.md",
+      "revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "url": null,
+      "sha256": "0a8a768c8b68b151b356f7a4ba88d14dfd5a71a048ca85ade6a0f2febe25e3bf",
+      "read_scope": "Lines 1-280, through start of physical placement",
+      "role": "Prior uniform-reference capacity/parity and pair-shadow failure; distinct from current local-D encoding."
+    },
+    {
+      "source": "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+      "revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "url": null,
+      "sha256": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+      "read_scope": "Lines 1-240: Pauli and graph A/B/cycle definitions, rank and phase elimination",
+      "role": "Source conventions, reconstructed without importing the runner."
+    },
+    {
+      "source": "scripts/frontier_cycle703_bksf_patch_tableau_covariance_2026_07_25.py",
+      "revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "url": null,
+      "sha256": "8240ab7d3cd27f3058a7b44c1cfe35dda638cf011fbdd12ccecc1bc8054043c9",
+      "read_scope": "Constructor edge order, lines 320-365 logical rows, 535-605 hopping and path dressing; function inventory",
+      "role": "Exact load-bearing graph/loader/hop source definitions; not a claim of full runner review."
+    },
+    {
+      "source": "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
+      "revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "url": null,
+      "sha256": "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4",
+      "read_scope": "Lines 800-890 directed_local stream formulas and certificate; function inventory",
+      "role": "Actual source/target orientation retained in the exchange check."
+    },
+    {
+      "source": "scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py",
+      "revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "url": null,
+      "sha256": "833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245",
+      "read_scope": "Lines 1-235 graph/check definitions; lines 560-640 logical loader",
+      "role": "Matched sorted-cell reference graph and phase-oriented X/Z; prior controller is not imported."
+    },
+    {
+      "source": "bksf-superfast-2019.pdf",
+      "revision": null,
+      "url": "https://arxiv.org/abs/1810.05274v2",
+      "sha256": "f5d44e7f6be87b2cbc75e44d15a8431fccb5db7a6c5189dde1a9658405538971",
+      "read_scope": "PDF pp1-3 through ordinary encoding and beginning GSE; complete Appendix A p6; incidental late-main/ref portions p4-5",
+      "role": "Standard fixed-even BKSF prior art and cycle-rank proof. Printed hopping sign is not imported; direct CAR definitions determine the sign used."
+    },
+    {
+      "source": "fermion-clifford-equivalence-2023.pdf",
+      "revision": null,
+      "url": "https://arxiv.org/abs/2201.05153v1",
+      "sha256": "e1a8531a6ec0ecf597c8b28cfc2cd7c8b65d9839304805fddb971649a3758b2a",
+      "read_scope": "PDF pp1-4 through gLU definition; pp9-10 separators/QCA discussion and IV introduction; p11 IV.A BKSF comparison",
+      "role": "Prior finite-depth Clifford/gLU equivalence in two dimensions. No general 3D equivalence classification or QCA theorem is imported."
+    }
+  ],
+  "independent_scientific_review": "pending",
+  "new_derivations": "Self-contained commutator, joint-syndrome, grid-order, exchange-holonomy and controlled-Pauli graph-addition proofs.",
+  "corrections": [
+    "Initial numerical comparison zipped the two hopping summands in opposite orders; corrected to compare canonical XX then YY, with exact phases. This was a checker ordering issue, not a source defect.",
+    "Unitary hopping has a nonzero commutator with an intervening X; it does not anticommute. Working prose corrected before publication.",
+    "Exchange test now decodes the actual directed source/target formulas, including the closing reversed bond, and uses physical onsite A/B hopping rather than lifting the target.",
+    "Reference graph map includes explicit incidence CZs and orientation Zs for the sorted-cell target; dimension equality is not used as the isometry proof."
+  ],
+  "timestamp_utc": "2026-09-14T07:21:23.972482+00:00"
+}

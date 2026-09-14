@@ -1,0 +1,2 @@
+pattern: monopole.{0,35}penalt
+

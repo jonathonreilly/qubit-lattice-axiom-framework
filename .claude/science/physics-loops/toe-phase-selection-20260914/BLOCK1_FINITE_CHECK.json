@@ -1,0 +1,1660 @@
+{
+  "status": "finite_author_check_only",
+  "local_stars": {
+    "box": [
+      3,
+      3,
+      3
+    ],
+    "star_sizes": {
+      "2": 36,
+      "3": 72,
+      "4": 36
+    },
+    "closed_binary_wrap_patterns": 288,
+    "edges": 144
+  },
+  "boxes": [
+    {
+      "box": [
+        1,
+        1,
+        1
+      ],
+      "vertices_edges_faces_cubes": [
+        8,
+        12,
+        6,
+        1
+      ],
+      "physical_dimension": 243,
+      "neutral_dimension": 141,
+      "charge_sectors": 5,
+      "projection_coefficients": [
+        {
+          "exponent": 0,
+          "nonzero_matrix_entries": 1680,
+          "total_integer_multiplicity": 1680
+        },
+        {
+          "exponent": 1,
+          "nonzero_matrix_entries": 0,
+          "total_integer_multiplicity": 0
+        },
+        {
+          "exponent": 2,
+          "nonzero_matrix_entries": 456,
+          "total_integer_multiplicity": 456
+        },
+        {
+          "exponent": 3,
+          "nonzero_matrix_entries": 0,
+          "total_integer_multiplicity": 0
+        },
+        {
+          "exponent": 4,
+          "nonzero_matrix_entries": 0,
+          "total_integer_multiplicity": 0
+        }
+      ],
+      "samples": [
+        {
+          "electric_stiffness_3K_over_2": 0.0,
+          "neutral_energy_without_constant": -13.193977019487706,
+          "lowest_charged": {
+            "charge": [
+              -1
+            ],
+            "size": 50,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": -9.865459931328123,
+            "residual": 8.227644038804674e-15
+          },
+          "charged_minus_neutral": 3.3285170881595825,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 0.0,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -9.865459931328123,
+              "residual": 8.227644038804674e-15
+            },
+            {
+              "charge": [
+                0
+              ],
+              "size": 141,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -13.193977019487706,
+              "residual": 6.866574584646303e-15
+            },
+            {
+              "charge": [
+                1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -9.865459931328115,
+              "residual": 8.39889404975799e-15
+            },
+            {
+              "charge": [
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 0.0,
+              "residual": 0.0
+            }
+          ]
+        },
+        {
+          "electric_stiffness_3K_over_2": 0.05,
+          "neutral_energy_without_constant": -13.050726992659644,
+          "lowest_charged": {
+            "charge": [
+              1
+            ],
+            "size": 50,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": -9.685130859494189,
+            "residual": 9.778159688976012e-15
+          },
+          "charged_minus_neutral": 3.3655961331654556,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 0.30000000000000004,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -9.685130859494176,
+              "residual": 1.0065137682251525e-14
+            },
+            {
+              "charge": [
+                0
+              ],
+              "size": 141,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -13.050726992659644,
+              "residual": 1.2919437843353961e-14
+            },
+            {
+              "charge": [
+                1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -9.685130859494189,
+              "residual": 9.778159688976012e-15
+            },
+            {
+              "charge": [
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 0.30000000000000004,
+              "residual": 0.0
+            }
+          ]
+        },
+        {
+          "electric_stiffness_3K_over_2": 0.2,
+          "neutral_energy_without_constant": -12.626593214511983,
+          "lowest_charged": {
+            "charge": [
+              1
+            ],
+            "size": 50,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": -9.147109101926741,
+            "residual": 1.1523344872980919e-14
+          },
+          "charged_minus_neutral": 3.479484112585242,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 1.2000000000000002,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -9.147109101926732,
+              "residual": 5.6436033744672694e-15
+            },
+            {
+              "charge": [
+                0
+              ],
+              "size": 141,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -12.626593214511983,
+              "residual": 1.0788746120979143e-14
+            },
+            {
+              "charge": [
+                1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -9.147109101926741,
+              "residual": 1.1523344872980919e-14
+            },
+            {
+              "charge": [
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 1.2000000000000002,
+              "residual": 0.0
+            }
+          ]
+        },
+        {
+          "electric_stiffness_3K_over_2": 1.0,
+          "neutral_energy_without_constant": -10.507389500277819,
+          "lowest_charged": {
+            "charge": [
+              -1
+            ],
+            "size": 50,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": -6.345541566646028,
+            "residual": 5.6957795539516896e-15
+          },
+          "charged_minus_neutral": 4.161847933631791,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.0,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -6.345541566646028,
+              "residual": 5.6957795539516896e-15
+            },
+            {
+              "charge": [
+                0
+              ],
+              "size": 141,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -10.507389500277819,
+              "residual": 9.136602624034841e-15
+            },
+            {
+              "charge": [
+                1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -6.345541566646025,
+              "residual": 7.664560361539154e-15
+            },
+            {
+              "charge": [
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.0,
+              "residual": 0.0
+            }
+          ]
+        },
+        {
+          "electric_stiffness_3K_over_2": 5.0,
+          "neutral_energy_without_constant": -3.7140024829065683,
+          "lowest_charged": {
+            "charge": [
+              1
+            ],
+            "size": 50,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": 6.656410168498747,
+            "residual": 1.1452530351177302e-14
+          },
+          "charged_minus_neutral": 10.370412651405315,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 30.0,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.656410168498754,
+              "residual": 1.1120118181984605e-14
+            },
+            {
+              "charge": [
+                0
+              ],
+              "size": 141,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -3.7140024829065683,
+              "residual": 1.675900737377626e-14
+            },
+            {
+              "charge": [
+                1
+              ],
+              "size": 50,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.656410168498747,
+              "residual": 1.1452530351177302e-14
+            },
+            {
+              "charge": [
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 30.0,
+              "residual": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "box": [
+        1,
+        1,
+        2
+      ],
+      "vertices_edges_faces_cubes": [
+        12,
+        20,
+        11,
+        2
+      ],
+      "physical_dimension": 19683,
+      "neutral_dimension": 6651,
+      "charge_sectors": 23,
+      "projection_coefficients": [
+        {
+          "exponent": 0,
+          "nonzero_matrix_entries": 125392,
+          "total_integer_multiplicity": 125392
+        },
+        {
+          "exponent": 1,
+          "nonzero_matrix_entries": 0,
+          "total_integer_multiplicity": 0
+        },
+        {
+          "exponent": 2,
+          "nonzero_matrix_entries": 28704,
+          "total_integer_multiplicity": 28704
+        },
+        {
+          "exponent": 3,
+          "nonzero_matrix_entries": 2888,
+          "total_integer_multiplicity": 2888
+        },
+        {
+          "exponent": 4,
+          "nonzero_matrix_entries": 0,
+          "total_integer_multiplicity": 0
+        }
+      ],
+      "samples": [
+        {
+          "electric_stiffness_3K_over_2": 0.0,
+          "neutral_energy_without_constant": -21.082144333998674,
+          "lowest_charged": {
+            "charge": [
+              -1,
+              0
+            ],
+            "size": 2340,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": -17.94022645438295,
+            "residual": 5.276492079213004e-12
+          },
+          "charged_minus_neutral": 3.141917879615722,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2,
+                -1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -3.236067977499789,
+              "residual": 1.2161883888976235e-15
+            },
+            {
+              "charge": [
+                -2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -8.616918373157803,
+              "residual": 7.529898907871222e-15
+            },
+            {
+              "charge": [
+                -2,
+                1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -7.539625119724967,
+              "residual": 6.644663933494944e-15
+            },
+            {
+              "charge": [
+                -2,
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 0.0,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1,
+                -2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -3.236067977499789,
+              "residual": 1.2161883888976235e-15
+            },
+            {
+              "charge": [
+                -1,
+                -1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -13.492245329382033,
+              "residual": 1.0673633867164573e-14
+            },
+            {
+              "charge": [
+                -1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -17.94022645438295,
+              "residual": 5.276492079213004e-12
+            },
+            {
+              "charge": [
+                -1,
+                1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -15.952567792885269,
+              "residual": 1.0271672559928774e-14
+            },
+            {
+              "charge": [
+                -1,
+                2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -7.539625119724968,
+              "residual": 5.0365472779984065e-15
+            },
+            {
+              "charge": [
+                0,
+                -2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -8.616918373157803,
+              "residual": 7.529898907871222e-15
+            },
+            {
+              "charge": [
+                0,
+                -1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -17.94022645438295,
+              "residual": 5.276203693230828e-12
+            },
+            {
+              "charge": [
+                0,
+                0
+              ],
+              "size": 6651,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -21.082144333998674,
+              "residual": 1.1475228699526061e-13
+            },
+            {
+              "charge": [
+                0,
+                1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -17.940226454382948,
+              "residual": 5.276263623866583e-12
+            },
+            {
+              "charge": [
+                0,
+                2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -8.616918373157802,
+              "residual": 8.710122408399436e-15
+            },
+            {
+              "charge": [
+                1,
+                -2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -7.539625119724967,
+              "residual": 6.644663933494944e-15
+            },
+            {
+              "charge": [
+                1,
+                -1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -15.95256779288527,
+              "residual": 1.0380557450419524e-14
+            },
+            {
+              "charge": [
+                1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -17.940226454382948,
+              "residual": 5.276044452794185e-12
+            },
+            {
+              "charge": [
+                1,
+                1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -13.49224532938203,
+              "residual": 7.992593791215033e-15
+            },
+            {
+              "charge": [
+                1,
+                2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -3.236067977499789,
+              "residual": 1.2161883888976235e-15
+            },
+            {
+              "charge": [
+                2,
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 0.0,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                2,
+                -1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -7.539625119724968,
+              "residual": 5.0365472779984065e-15
+            },
+            {
+              "charge": [
+                2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -8.616918373157802,
+              "residual": 8.710122408399436e-15
+            },
+            {
+              "charge": [
+                2,
+                1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -3.236067977499789,
+              "residual": 1.2161883888976235e-15
+            }
+          ]
+        },
+        {
+          "electric_stiffness_3K_over_2": 0.05,
+          "neutral_energy_without_constant": -20.821173804967266,
+          "lowest_charged": {
+            "charge": [
+              0,
+              -1
+            ],
+            "size": 2340,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": -17.640259866582703,
+            "residual": 5.315844653955419e-12
+          },
+          "charged_minus_neutral": 3.1809139383845633,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2,
+                -1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -2.73606797749979,
+              "residual": 1.1322097734007351e-15
+            },
+            {
+              "charge": [
+                -2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -8.193791622667282,
+              "residual": 8.208145447452307e-15
+            },
+            {
+              "charge": [
+                -2,
+                1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -7.101715006485049,
+              "residual": 6.2380308864540915e-15
+            },
+            {
+              "charge": [
+                -2,
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 0.55,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1,
+                -2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -2.73606797749979,
+              "residual": 1.1322097734007351e-15
+            },
+            {
+              "charge": [
+                -1,
+                -1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -13.141539757085052,
+              "residual": 5.55922770100246e-15
+            },
+            {
+              "charge": [
+                -1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -17.64025986658269,
+              "residual": 5.315675071695676e-12
+            },
+            {
+              "charge": [
+                -1,
+                1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -15.627142035412993,
+              "residual": 1.2816631056197539e-14
+            },
+            {
+              "charge": [
+                -1,
+                2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -7.101715006485045,
+              "residual": 6.0013690691372095e-15
+            },
+            {
+              "charge": [
+                0,
+                -2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -8.193791622667282,
+              "residual": 8.208145447452307e-15
+            },
+            {
+              "charge": [
+                0,
+                -1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -17.640259866582703,
+              "residual": 5.315844653955419e-12
+            },
+            {
+              "charge": [
+                0,
+                0
+              ],
+              "size": 6651,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -20.821173804967266,
+              "residual": 9.669244820102232e-14
+            },
+            {
+              "charge": [
+                0,
+                1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -17.640259866582703,
+              "residual": 5.315366412743921e-12
+            },
+            {
+              "charge": [
+                0,
+                2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -8.19379162266728,
+              "residual": 7.243726675464872e-15
+            },
+            {
+              "charge": [
+                1,
+                -2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -7.101715006485049,
+              "residual": 6.2380308864540915e-15
+            },
+            {
+              "charge": [
+                1,
+                -1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -15.62714203541299,
+              "residual": 1.1756657037220084e-14
+            },
+            {
+              "charge": [
+                1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -17.640259866582696,
+              "residual": 5.315511797464157e-12
+            },
+            {
+              "charge": [
+                1,
+                1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -13.141539757085054,
+              "residual": 5.823910836937022e-15
+            },
+            {
+              "charge": [
+                1,
+                2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -2.73606797749979,
+              "residual": 1.1322097734007351e-15
+            },
+            {
+              "charge": [
+                2,
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 0.55,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                2,
+                -1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -7.101715006485045,
+              "residual": 6.0013690691372095e-15
+            },
+            {
+              "charge": [
+                2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -8.19379162266728,
+              "residual": 7.243726675464872e-15
+            },
+            {
+              "charge": [
+                2,
+                1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -2.73606797749979,
+              "residual": 1.1322097734007351e-15
+            }
+          ]
+        },
+        {
+          "electric_stiffness_3K_over_2": 0.2,
+          "neutral_energy_without_constant": -20.049415382360216,
+          "lowest_charged": {
+            "charge": [
+              1,
+              0
+            ],
+            "size": 2340,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": -16.74861848121591,
+            "residual": 4.641008599519147e-12
+          },
+          "charged_minus_neutral": 3.300796901144306,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2,
+                -1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -1.2360679774997894,
+              "residual": 1.3229834214604202e-15
+            },
+            {
+              "charge": [
+                -2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -6.929868569067502,
+              "residual": 1.0025258585483695e-14
+            },
+            {
+              "charge": [
+                -2,
+                1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -5.792008487163812,
+              "residual": 7.354337211075899e-15
+            },
+            {
+              "charge": [
+                -2,
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 2.2,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1,
+                -2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -1.2360679774997894,
+              "residual": 1.3229834214604202e-15
+            },
+            {
+              "charge": [
+                -1,
+                -1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -12.094936060305429,
+              "residual": 8.711272125282485e-15
+            },
+            {
+              "charge": [
+                -1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -16.748618481215896,
+              "residual": 4.640968409777699e-12
+            },
+            {
+              "charge": [
+                -1,
+                1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -14.65759337668905,
+              "residual": 9.611237258104322e-15
+            },
+            {
+              "charge": [
+                -1,
+                2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -5.792008487163811,
+              "residual": 7.012884360936836e-15
+            },
+            {
+              "charge": [
+                0,
+                -2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -6.929868569067502,
+              "residual": 1.0025258585483695e-14
+            },
+            {
+              "charge": [
+                0,
+                -1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -16.748618481215896,
+              "residual": 4.641079984016396e-12
+            },
+            {
+              "charge": [
+                0,
+                0
+              ],
+              "size": 6651,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -20.049415382360216,
+              "residual": 1.440408480564574e-13
+            },
+            {
+              "charge": [
+                0,
+                1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -16.7486184812159,
+              "residual": 4.640993002373412e-12
+            },
+            {
+              "charge": [
+                0,
+                2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -6.929868569067508,
+              "residual": 1.0290994924006174e-14
+            },
+            {
+              "charge": [
+                1,
+                -2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -5.792008487163812,
+              "residual": 7.354337211075899e-15
+            },
+            {
+              "charge": [
+                1,
+                -1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -14.657593376689046,
+              "residual": 8.39157595023773e-15
+            },
+            {
+              "charge": [
+                1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -16.74861848121591,
+              "residual": 4.641008599519147e-12
+            },
+            {
+              "charge": [
+                1,
+                1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -12.094936060305429,
+              "residual": 9.181979028157158e-15
+            },
+            {
+              "charge": [
+                1,
+                2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -1.2360679774997894,
+              "residual": 1.3229834214604202e-15
+            },
+            {
+              "charge": [
+                2,
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 2.2,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                2,
+                -1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -5.792008487163811,
+              "residual": 7.012884360936836e-15
+            },
+            {
+              "charge": [
+                2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -6.929868569067508,
+              "residual": 1.0290994924006174e-14
+            },
+            {
+              "charge": [
+                2,
+                1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -1.2360679774997894,
+              "residual": 1.3229834214604202e-15
+            }
+          ]
+        },
+        {
+          "electric_stiffness_3K_over_2": 1.0,
+          "neutral_energy_without_constant": -16.218424564202753,
+          "lowest_charged": {
+            "charge": [
+              -1,
+              0
+            ],
+            "size": 2340,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": -12.193158300540771,
+            "residual": 4.433380345228808e-12
+          },
+          "charged_minus_neutral": 4.025266263661981,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2,
+                -1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.76393202250021,
+              "residual": 1.2560739669470201e-15
+            },
+            {
+              "charge": [
+                -2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -0.3241932207331541,
+              "residual": 7.608383652330233e-15
+            },
+            {
+              "charge": [
+                -2,
+                1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 1.099704795972137,
+              "residual": 8.827560356736718e-15
+            },
+            {
+              "charge": [
+                -2,
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 11.0,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1,
+                -2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.76393202250021,
+              "residual": 1.2560739669470201e-15
+            },
+            {
+              "charge": [
+                -1,
+                -1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -6.638273635828364,
+              "residual": 6.36532994278592e-15
+            },
+            {
+              "charge": [
+                -1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -12.193158300540771,
+              "residual": 4.433380345228808e-12
+            },
+            {
+              "charge": [
+                -1,
+                1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -9.643418642077526,
+              "residual": 1.1451298466591115e-14
+            },
+            {
+              "charge": [
+                -1,
+                2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 1.0997047959721413,
+              "residual": 5.616939252828749e-15
+            },
+            {
+              "charge": [
+                0,
+                -2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -0.3241932207331541,
+              "residual": 7.608383652330233e-15
+            },
+            {
+              "charge": [
+                0,
+                -1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -12.193158300540766,
+              "residual": 4.433706651612068e-12
+            },
+            {
+              "charge": [
+                0,
+                0
+              ],
+              "size": 6651,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -16.218424564202753,
+              "residual": 1.092797219280822e-13
+            },
+            {
+              "charge": [
+                0,
+                1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -12.193158300540771,
+              "residual": 4.4337760073749766e-12
+            },
+            {
+              "charge": [
+                0,
+                2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -0.3241932207331543,
+              "residual": 5.5127869022026495e-15
+            },
+            {
+              "charge": [
+                1,
+                -2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 1.099704795972137,
+              "residual": 8.827560356736718e-15
+            },
+            {
+              "charge": [
+                1,
+                -1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -9.643418642077526,
+              "residual": 1.2306300000178941e-14
+            },
+            {
+              "charge": [
+                1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -12.193158300540766,
+              "residual": 4.43370029084132e-12
+            },
+            {
+              "charge": [
+                1,
+                1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -6.638273635828361,
+              "residual": 6.612230707484733e-15
+            },
+            {
+              "charge": [
+                1,
+                2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.76393202250021,
+              "residual": 1.2560739669470201e-15
+            },
+            {
+              "charge": [
+                2,
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 11.0,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                2,
+                -1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 1.0997047959721413,
+              "residual": 5.616939252828749e-15
+            },
+            {
+              "charge": [
+                2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -0.3241932207331543,
+              "residual": 5.5127869022026495e-15
+            },
+            {
+              "charge": [
+                2,
+                1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.76393202250021,
+              "residual": 1.2560739669470201e-15
+            }
+          ]
+        },
+        {
+          "electric_stiffness_3K_over_2": 5.0,
+          "neutral_energy_without_constant": -5.001873698950538,
+          "lowest_charged": {
+            "charge": [
+              0,
+              -1
+            ],
+            "size": 2340,
+            "components": 1,
+            "energy_without_constant_or_charge_penalty": 6.377291378604172,
+            "residual": 2.7338352241877798e-12
+          },
+          "charged_minus_neutral": 11.37916507755471,
+          "finite_box_lambda_threshold": 0.0,
+          "sectors": [
+            {
+              "charge": [
+                -2,
+                -1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 46.7639320225002,
+              "residual": 1.5485919901226005e-14
+            },
+            {
+              "charge": [
+                -2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 30.132193025684895,
+              "residual": 2.086968289934778e-14
+            },
+            {
+              "charge": [
+                -2,
+                1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 34.20732010985706,
+              "residual": 1.879788237361956e-14
+            },
+            {
+              "charge": [
+                -2,
+                2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 55.0,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                -1,
+                -2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 46.7639320225002,
+              "residual": 1.5485919901226005e-14
+            },
+            {
+              "charge": [
+                -1,
+                -1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 18.880624394599188,
+              "residual": 1.0277227991909885e-12
+            },
+            {
+              "charge": [
+                -1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.377291378604181,
+              "residual": 2.7346705301887978e-12
+            },
+            {
+              "charge": [
+                -1,
+                1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 12.932167436855272,
+              "residual": 2.1361071647355026e-14
+            },
+            {
+              "charge": [
+                -1,
+                2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 34.20732010985705,
+              "residual": 1.7771893116037542e-14
+            },
+            {
+              "charge": [
+                0,
+                -2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 30.132193025684895,
+              "residual": 2.086968289934778e-14
+            },
+            {
+              "charge": [
+                0,
+                -1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.377291378604172,
+              "residual": 2.7338352241877798e-12
+            },
+            {
+              "charge": [
+                0,
+                0
+              ],
+              "size": 6651,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": -5.001873698950538,
+              "residual": 3.139727152195171e-14
+            },
+            {
+              "charge": [
+                0,
+                1
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.377291378604178,
+              "residual": 2.732284168272149e-12
+            },
+            {
+              "charge": [
+                0,
+                2
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 30.132193025684877,
+              "residual": 3.06858694991994e-14
+            },
+            {
+              "charge": [
+                1,
+                -2
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 34.20732010985706,
+              "residual": 1.879788237361956e-14
+            },
+            {
+              "charge": [
+                1,
+                -1
+              ],
+              "size": 1150,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 12.932167436855254,
+              "residual": 1.0832010385027249e-14
+            },
+            {
+              "charge": [
+                1,
+                0
+              ],
+              "size": 2340,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 6.377291378604178,
+              "residual": 2.734944994134267e-12
+            },
+            {
+              "charge": [
+                1,
+                1
+              ],
+              "size": 525,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 18.8806243945992,
+              "residual": 1.027338295405183e-12
+            },
+            {
+              "charge": [
+                1,
+                2
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 46.7639320225002,
+              "residual": 1.5485919901226005e-14
+            },
+            {
+              "charge": [
+                2,
+                -2
+              ],
+              "size": 1,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 55.0,
+              "residual": 0.0
+            },
+            {
+              "charge": [
+                2,
+                -1
+              ],
+              "size": 30,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 34.20732010985705,
+              "residual": 1.7771893116037542e-14
+            },
+            {
+              "charge": [
+                2,
+                0
+              ],
+              "size": 45,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 30.132193025684877,
+              "residual": 3.06858694991994e-14
+            },
+            {
+              "charge": [
+                2,
+                1
+              ],
+              "size": 5,
+              "components": 1,
+              "energy_without_constant_or_charge_penalty": 46.7639320225002,
+              "residual": 1.5485919901226005e-14
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.4362572079990059
+}

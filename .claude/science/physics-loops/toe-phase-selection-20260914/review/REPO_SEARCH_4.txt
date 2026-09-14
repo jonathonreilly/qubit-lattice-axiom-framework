@@ -1,0 +1,2 @@
+pattern: charge.sector.{0,35}ground
+

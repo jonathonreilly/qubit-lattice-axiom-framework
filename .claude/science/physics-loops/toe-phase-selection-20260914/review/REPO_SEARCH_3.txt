@@ -1,0 +1,2 @@
+pattern: spin.one.{0,35}plaquette
+

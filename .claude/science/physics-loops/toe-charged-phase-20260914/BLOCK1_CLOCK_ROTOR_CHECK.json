@@ -1,0 +1,91 @@
+{
+  "reference_S": 40,
+  "reference_dimension": 1284,
+  "reference_truncation_bound": 1.852203401331905e-31,
+  "time": 0.65,
+  "g": 0.7,
+  "r": 0.25,
+  "kappa": 2.0408163265306127,
+  "cases": [
+    {
+      "N": 3,
+      "dimension": 48,
+      "state_norm_error": 0.4634592984467335,
+      "N_squared_error": 4.171133686020601,
+      "modulo_alias_probability": 0.03164806484876457,
+      "proved_bound": 2
+    },
+    {
+      "N": 5,
+      "dimension": 80,
+      "state_norm_error": 0.1715941061206248,
+      "N_squared_error": 4.28985265301562,
+      "modulo_alias_probability": 0.0036345547226120326,
+      "proved_bound": 2
+    },
+    {
+      "N": 7,
+      "dimension": 112,
+      "state_norm_error": 0.07195060830353783,
+      "N_squared_error": 3.525579806873354,
+      "modulo_alias_probability": 0.00015920039940660707,
+      "proved_bound": 2
+    },
+    {
+      "N": 9,
+      "dimension": 144,
+      "state_norm_error": 0.0433399973231654,
+      "N_squared_error": 3.5105397831763976,
+      "modulo_alias_probability": 3.2686887270158497e-06,
+      "proved_bound": 2
+    },
+    {
+      "N": 13,
+      "dimension": 208,
+      "state_norm_error": 0.021403029344906736,
+      "N_squared_error": 3.6171119592892382,
+      "modulo_alias_probability": 1.8013393446366463e-10,
+      "proved_bound": 0.9932685873066633
+    },
+    {
+      "N": 17,
+      "dimension": 272,
+      "state_norm_error": 0.012623956162064555,
+      "N_squared_error": 3.6483233308366563,
+      "modulo_alias_probability": 5.516077538499621e-16,
+      "proved_bound": 0.4010814085883011
+    },
+    {
+      "N": 25,
+      "dimension": 400,
+      "state_norm_error": 0.005866490408627567,
+      "N_squared_error": 3.6665565053922293,
+      "modulo_alias_probability": 2.592089648578413e-31,
+      "proved_bound": 0.16142241823547815
+    },
+    {
+      "N": 33,
+      "dimension": 528,
+      "state_norm_error": 0.0033719433656236057,
+      "N_squared_error": 3.6720463251641067,
+      "modulo_alias_probability": 5.516957175009124e-49,
+      "proved_bound": 0.09209289407715844
+    },
+    {
+      "N": 49,
+      "dimension": 784,
+      "state_norm_error": 0.0015308964893298576,
+      "N_squared_error": 3.675682470880988,
+      "modulo_alias_probability": 3.8703089504979426e-88,
+      "proved_bound": 0.04176151691491459
+    },
+    {
+      "N": 65,
+      "dimension": 1040,
+      "state_norm_error": 0.0008702728945618284,
+      "N_squared_error": 3.676902979523725,
+      "modulo_alias_probability": 3.3407882303375513e-130,
+      "proved_bound": 0.023732399407333644
+    }
+  ]
+}

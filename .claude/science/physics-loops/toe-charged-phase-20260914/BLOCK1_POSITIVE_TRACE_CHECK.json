@@ -1,0 +1,179 @@
+[
+  {
+    "N": 3,
+    "physical_dimension": 6,
+    "exact_partition": 8.583664042907401,
+    "slices": [
+      {
+        "M": 1,
+        "operator_trace": 8.6979563267912,
+        "positive_history_sum": 8.697956326791202,
+        "min_summand": 0.028410573122304335,
+        "max_single_species_imaginary_part": 2.7379250471752417,
+        "wrong_temporal_conjugation_max_imaginary_part": 6.854475441235883,
+        "wrong_temporal_conjugation_total": {
+          "real": 3.9767171816454496,
+          "imag": -2.7755575615628914e-17
+        },
+        "trotter_error": 0.11429228388379897
+      },
+      {
+        "M": 2,
+        "operator_trace": 8.614945911966116,
+        "positive_history_sum": 8.614945911966124,
+        "min_summand": 0.0033105779879487695,
+        "max_single_species_imaginary_part": 2.737925047175242,
+        "wrong_temporal_conjugation_max_imaginary_part": 6.854475441235883,
+        "wrong_temporal_conjugation_total": {
+          "real": 4.046398206132635,
+          "imag": 3.885780586188048e-16
+        },
+        "trotter_error": 0.03128186905871466
+      },
+      {
+        "M": 3,
+        "operator_trace": 8.597818786902081,
+        "positive_history_sum": 8.597818786902074,
+        "min_summand": 0.00011413681638572235,
+        "max_single_species_imaginary_part": 2.737925047175242,
+        "wrong_temporal_conjugation_max_imaginary_part": 6.8544754412358815,
+        "wrong_temporal_conjugation_total": {
+          "real": 4.060044974314755,
+          "imag": -2.220446049250313e-16
+        },
+        "trotter_error": 0.01415474399468053
+      },
+      {
+        "M": 4,
+        "operator_trace": 8.591676991026171,
+        "positive_history_sum": 8.591676991026187,
+        "min_summand": 3.687534493488978e-06,
+        "max_single_species_imaginary_part": 2.737925047175243,
+        "wrong_temporal_conjugation_max_imaginary_part": 6.854475441235884,
+        "wrong_temporal_conjugation_total": {
+          "real": 4.064879663461053,
+          "imag": -1.0547118733938987e-15
+        },
+        "trotter_error": 0.008012948118770069
+      }
+    ]
+  },
+  {
+    "N": 4,
+    "physical_dimension": 6,
+    "exact_partition": 9.179418631379054,
+    "slices": [
+      {
+        "M": 1,
+        "operator_trace": 9.237850092027081,
+        "positive_history_sum": 9.23785009202708,
+        "min_summand": 0.001055399837196202,
+        "max_single_species_imaginary_part": 3.1614835260152896,
+        "wrong_temporal_conjugation_max_imaginary_part": 13.2118495416609,
+        "wrong_temporal_conjugation_total": {
+          "real": 1.4916441974609687,
+          "imag": 6.314393452555578e-16
+        },
+        "trotter_error": 0.058431460648026956
+      },
+      {
+        "M": 2,
+        "operator_trace": 9.195286420651858,
+        "positive_history_sum": 9.195286420651854,
+        "min_summand": 2.921062164488596e-07,
+        "max_single_species_imaginary_part": 3.1614835260152896,
+        "wrong_temporal_conjugation_max_imaginary_part": 13.211849541660907,
+        "wrong_temporal_conjugation_total": {
+          "real": 1.491644197460962,
+          "imag": 9.367506770274758e-16
+        },
+        "trotter_error": 0.015867789272803634
+      },
+      {
+        "M": 3,
+        "operator_trace": 9.186589408827725,
+        "positive_history_sum": 9.18658940882772,
+        "min_summand": 1.0360797359706981e-08,
+        "max_single_species_imaginary_part": 3.1614835260152887,
+        "wrong_temporal_conjugation_max_imaginary_part": 13.211849541660902,
+        "wrong_temporal_conjugation_total": {
+          "real": 1.4916441974609675,
+          "imag": 2.248201624865942e-15
+        },
+        "trotter_error": 0.007170777448671117
+      },
+      {
+        "M": 4,
+        "operator_trace": 9.183476221730295,
+        "positive_history_sum": 9.183476221730269,
+        "min_summand": 5.81397267241722e-13,
+        "max_single_species_imaginary_part": 3.1614835260152914,
+        "wrong_temporal_conjugation_max_imaginary_part": 13.21184954166091,
+        "wrong_temporal_conjugation_total": {
+          "real": 1.4916441974610164,
+          "imag": 1.85268467234323e-15
+        },
+        "trotter_error": 0.004057590351241203
+      }
+    ]
+  },
+  {
+    "N": 5,
+    "physical_dimension": 6,
+    "exact_partition": 9.633494635821688,
+    "slices": [
+      {
+        "M": 1,
+        "operator_trace": 9.663984916011369,
+        "positive_history_sum": 9.663984916011362,
+        "min_summand": 0.0015479513598712102,
+        "max_single_species_imaginary_part": 3.49851526051328,
+        "wrong_temporal_conjugation_max_imaginary_part": 17.963726092315213,
+        "wrong_temporal_conjugation_total": {
+          "real": 1.0000000000000018,
+          "imag": 1.0269562977782698e-15
+        },
+        "trotter_error": 0.030490280189681584
+      },
+      {
+        "M": 2,
+        "operator_trace": 9.641742306899477,
+        "positive_history_sum": 9.641742306899497,
+        "min_summand": 1.3146157734624457e-06,
+        "max_single_species_imaginary_part": 3.4985152605132805,
+        "wrong_temporal_conjugation_max_imaginary_part": 17.963726092315216,
+        "wrong_temporal_conjugation_total": {
+          "real": 1.0000000000000013,
+          "imag": -2.4424906541753444e-15
+        },
+        "trotter_error": 0.008247671077789676
+      },
+      {
+        "M": 3,
+        "operator_trace": 9.63721938834835,
+        "positive_history_sum": 9.63721938834846,
+        "min_summand": 1.048459060851675e-09,
+        "max_single_species_imaginary_part": 3.49851526051328,
+        "wrong_temporal_conjugation_max_imaginary_part": 17.96372609231521,
+        "wrong_temporal_conjugation_total": {
+          "real": 1.0000000000000226,
+          "imag": -6.467049118441537e-15
+        },
+        "trotter_error": 0.0037247525266632664
+      },
+      {
+        "M": 4,
+        "operator_trace": 9.635601823450266,
+        "positive_history_sum": 9.6356018234503,
+        "min_summand": 6.051008936398505e-13,
+        "max_single_species_imaginary_part": 3.498515260513281,
+        "wrong_temporal_conjugation_max_imaginary_part": 17.963726092315223,
+        "wrong_temporal_conjugation_total": {
+          "real": 0.9999999999999523,
+          "imag": 1.4516166046973922e-14
+        },
+        "trotter_error": 0.002107187628578089
+      }
+    ]
+  }
+]

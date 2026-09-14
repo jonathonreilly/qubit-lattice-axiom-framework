@@ -1,0 +1,15 @@
+N 3 physical_dimension 6 partition 8.583664042907401
+ slices 1 trace mismatch 1.7763568394002505e-15 trotter error 0.11429228388379897 single phase 2.7379250471752417 wrong temporal phase 6.854475441235883
+ slices 2 trace mismatch 8.881784197001252e-15 trotter error 0.03128186905871466 single phase 2.737925047175242 wrong temporal phase 6.854475441235883
+ slices 3 trace mismatch 7.105427357601002e-15 trotter error 0.01415474399468053 single phase 2.737925047175242 wrong temporal phase 6.8544754412358815
+ slices 4 trace mismatch 1.5987211554602254e-14 trotter error 0.008012948118770069 single phase 2.737925047175243 wrong temporal phase 6.854475441235884
+N 4 physical_dimension 6 partition 9.179418631379054
+ slices 1 trace mismatch 1.7763568394002505e-15 trotter error 0.058431460648026956 single phase 3.1614835260152896 wrong temporal phase 13.2118495416609
+ slices 2 trace mismatch 3.552713678800501e-15 trotter error 0.015867789272803634 single phase 3.1614835260152896 wrong temporal phase 13.211849541660907
+ slices 3 trace mismatch 5.329070518200751e-15 trotter error 0.007170777448671117 single phase 3.1614835260152887 wrong temporal phase 13.211849541660902
+ slices 4 trace mismatch 2.6645352591003757e-14 trotter error 0.004057590351241203 single phase 3.1614835260152914 wrong temporal phase 13.21184954166091
+N 5 physical_dimension 6 partition 9.633494635821688
+ slices 1 trace mismatch 7.105427357601002e-15 trotter error 0.030490280189681584 single phase 3.49851526051328 wrong temporal phase 17.963726092315213
+ slices 2 trace mismatch 1.9539925233402755e-14 trotter error 0.008247671077789676 single phase 3.4985152605132805 wrong temporal phase 17.963726092315216
+ slices 3 trace mismatch 1.0835776720341528e-13 trotter error 0.0037247525266632664 single phase 3.49851526051328 wrong temporal phase 17.96372609231521
+ slices 4 trace mismatch 3.375077994860476e-14 trotter error 0.002107187628578089 single phase 3.498515260513281 wrong temporal phase 17.963726092315223

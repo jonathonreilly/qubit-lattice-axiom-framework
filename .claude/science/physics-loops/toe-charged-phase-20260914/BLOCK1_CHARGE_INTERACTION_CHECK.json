@@ -1,0 +1,33 @@
+{
+  "exact_Gibbs_partition": 5.7709043177697215,
+  "u": [
+    0.7,
+    1.1
+  ],
+  "cases": [
+    {
+      "M": 1,
+      "operator_trace": 5.837792211830401,
+      "positive_HS_sum": 5.8377922118304095,
+      "difference": 8.881797803169178e-15,
+      "minimum_weight": 0.00016831425904726416,
+      "trotter_error": 0.06688789406067919
+    },
+    {
+      "M": 2,
+      "operator_trace": 5.788640598190968,
+      "positive_HS_sum": 5.788640598190934,
+      "difference": 3.375078758028008e-14,
+      "minimum_weight": 2.3552545496867404e-07,
+      "trotter_error": 0.01773628042124642
+    },
+    {
+      "M": 3,
+      "operator_trace": 5.77887355259557,
+      "positive_HS_sum": 5.778873552595397,
+      "difference": 1.7319479308199557e-13,
+      "minimum_weight": 4.2227990867429844e-09,
+      "trotter_error": 0.007969234825848659
+    }
+  ]
+}

@@ -31,3 +31,25 @@ At deadline: checkpoint and push every science file; verify exact remote HEAD
 and clean state including untracked science; remove completed checkouts and this
 parent; prune without git gc. Never touch protected archives. Pause existing
 continuation and release lock. Keep a final summary outside the deleted checkout.
+
+## First substantive checkpoint
+
+BLOCK1_POSITIVE_CARRIER_DERIVATION.md contains a proposed positive finite Z_N
+gauge-history construction with conjugate opposite-charge matter, an explicit
+finite-time rotor comparison, and a local extension uniform in ambient volume.
+The Gauss constraint changes to modulo N; the original mixed charge-one
+carrier is not silently replaced. A paired positive ring weight fails the
+positive-Fourier-coefficient property required by a naive pure-gauge import.
+An explicit neutral pairing mass remains allowed without an extra conserved
+matter number, and spontaneous pairing is not excluded.
+
+Author checks compare full Fock projected traces with determinant-history sums,
+charged flux-basis rotor and clock evolution including modulo alias sectors,
+exact ring formulas with matrix traces, and free node metrics/pairing spectra.
+The first dtype error is preserved. No phase, gapless photon, interacting Weyl
+survival, independent review or axiom-forcing contradiction is established.
+
+Next: finish the interacting charge-square trace check; independently challenge
+weighted generator and local commutator constants, then freeze a coherent
+milestone. In parallel with author validation personally inspect the actual
+Frohlich-Spencer proof route and the heavy/gapless fermion loop obligations.

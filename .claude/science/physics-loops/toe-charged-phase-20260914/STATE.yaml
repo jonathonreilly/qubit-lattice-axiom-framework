@@ -13,11 +13,12 @@ research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
 block: 1
-active_route: interacting_charged_phase_route_selection
-actual_current_surface_status: open
+active_route: positive_finite_gauge_history_and_local_rotor_approximation
+actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Read exact prior carrier and phase sources; develop a fixed-payload interacting spectral or stability argument.
+next_action: Challenge the positive projected trace and local approximation proof; then pursue the interacting infrared phase bridge.
+last_checkpoint_utc: 2026-09-14T01:43:53.907498+00:00

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-14T23:16:53.952051+00:00",
+  "primary_source": {
+    "title": "Convergence of the U(1)_4 Lattice Gauge Theory to Its Continuum Limit",
+    "author": "Bruce K. Driver",
+    "year": 1987,
+    "journal": "Communications in Mathematical Physics 110,479-501",
+    "url": "https://mathweb.ucsd.edu/~bdriver/DRIVER/Papers/Drivers_Papers/A1-U%281%29_4-Lattice.pdf",
+    "pdf_path": "/tmp/toe-fixed-law-reading-20260914/driver-1987.pdf",
+    "pdf_sha256": "4ba9a836d9ba6e7d626aee3407da9dedf6575a2b1c279661d2f31d0ddde965b8",
+    "pages": 23,
+    "read_scope": "All extracted text pages1-23; page6 (journal484) also rendered and visually checked.",
+    "qualification": "Closed-test current-sector results, continuous U(1), specified unique/extreme/invariant states and Wilson-like qualifications. No full-field finite-clock premise imported."
+  },
+  "retrieval_limits": [
+    "web PDF open timed out",
+    "Python urllib certificate verification failed",
+    "curl with normal certificate verification succeeded; no security bypass"
+  ]
+}

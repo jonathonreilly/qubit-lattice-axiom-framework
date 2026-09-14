@@ -1,0 +1,286 @@
+{
+  "runner_sha256": "53b3561ccabf25749c77230e3e5798de19f0a9a42cb283e9c3ea33e7846bd268",
+  "finite_families": {
+    "cochain_quantization": [
+      {
+        "L": 4,
+        "cube_count": 16,
+        "cube_squared_boundary_norm": 6,
+        "harmonic_period": 1.0,
+        "nonclosed_spike_harmonic": 0.0625
+      },
+      {
+        "L": 6,
+        "cube_count": 81,
+        "cube_squared_boundary_norm": 6,
+        "harmonic_period": 1.0,
+        "nonclosed_spike_harmonic": 0.027777777777777776
+      }
+    ],
+    "image_atoms_and_cube_law": {
+      "atoms": [
+        {
+          "beta": 0.03,
+          "max_atom": 0.4341607025655335,
+          "uniform_atom_bound": 0.6438643257844076,
+          "minimum_defect_probability": 0.3561356742155925
+        },
+        {
+          "beta": 0.1,
+          "max_atom": 0.7821256144238106,
+          "uniform_atom_bound": 0.8780316311778619,
+          "minimum_defect_probability": 0.12196836882213806
+        },
+        {
+          "beta": 0.4,
+          "max_atom": 0.9992558595452814,
+          "uniform_atom_bound": 0.9996277912848787,
+          "minimum_defect_probability": 0.000372208715121357
+        },
+        {
+          "beta": 1.0,
+          "max_atom": 0.999999994649424,
+          "uniform_atom_bound": 0.999999997324712,
+          "minimum_defect_probability": 2.6752879839170773e-09
+        }
+      ],
+      "single_cube": [
+        {
+          "N": 2,
+          "beta": 0.08,
+          "sigma": 1.2665147955292222,
+          "p_closed": 0.28944050488637674,
+          "defect_upper": 1.0,
+          "closed_upper": 0.8290822194871973,
+          "omitted_one_axis_gaussian_bound": 2.506569194166112e-116
+        },
+        {
+          "N": 3,
+          "beta": 0.2,
+          "sigma": 1.1398633159763,
+          "p_closed": 0.4576453740924069,
+          "defect_upper": 1.0,
+          "closed_upper": 0.9810689954864859,
+          "omitted_one_axis_gaussian_bound": 3.319595903470549e-129
+        },
+        {
+          "N": 4,
+          "beta": 0.4,
+          "sigma": 1.0132118364233778,
+          "p_closed": 0.646493744311316,
+          "defect_upper": 0.536440260828329,
+          "closed_upper": 0.9996277912848787,
+          "omitted_one_axis_gaussian_bound": 2.6521136023302917e-145
+        },
+        {
+          "N": 5,
+          "beta": 0.6,
+          "sigma": 1.055428996274352,
+          "p_closed": 0.782125644086783,
+          "defect_upper": 0.2778222662856005,
+          "closed_upper": 0.9999928151252174,
+          "omitted_one_axis_gaussian_bound": 1.6545871147258449e-139
+        }
+      ]
+    },
+    "integer_current_map_and_theta": {
+      "gram_eigenvalues": [
+        0.4588695304120803,
+        0.507142857142857,
+        0.5281282374450622
+      ],
+      "projected_theta_lower_bounds": [
+        {
+          "u": 0.1,
+          "projected_finite_theta": 24.460747632949897,
+          "unprojected_product": 22.18033931060528
+        },
+        {
+          "u": 0.5,
+          "projected_finite_theta": 16.76393128089077,
+          "unprojected_product": 10.838778533520546
+        },
+        {
+          "u": 1.0,
+          "projected_finite_theta": 10.881998667619662,
+          "unprojected_product": 5.229596592810918
+        }
+      ],
+      "source_pairing_cases": 5,
+      "saturated_source_exponent": -631.6546816697191,
+      "saturated_integer_bound": -631.6546816697189
+    },
+    "affine_source_relative": [
+      {
+        "sigma": 0.2,
+        "source_norm": 0.28577380332470415,
+        "source_radius": 0.17562036827601815,
+        "relative_characteristic": [
+          1.00669669350284,
+          0.13600343669764697
+        ],
+        "theta_half_tail": 1.7573953859043532
+      },
+      {
+        "sigma": 0.5,
+        "source_norm": 0.28577380332470415,
+        "source_radius": 0.2776801836348979,
+        "relative_characteristic": [
+          1.0004147389011,
+          0.0051721726789684406
+        ],
+        "theta_half_tail": 0.22387447665082044
+      },
+      {
+        "sigma": 1.0,
+        "source_norm": 0.28577380332470415,
+        "source_radius": 0.39269908169872414,
+        "relative_characteristic": [
+          1.0000012476045834,
+          1.1585316973790331e-05
+        ],
+        "theta_half_tail": 0.008329308259324032
+      },
+      {
+        "sigma": 3.0,
+        "source_norm": 0.28577380332470415,
+        "source_radius": 0.6801747615878316,
+        "relative_characteristic": [
+          1.0,
+          1.3814869212601717e-16
+        ],
+        "theta_half_tail": 1.605172794644542e-08
+      }
+    ],
+    "loop_potential_refinement": {
+      "refinements": [
+        {
+          "inverse_mesh": 2,
+          "L": 8,
+          "source_norm": 2.0,
+          "projected_source_norm": 1.1692362655450264,
+          "potential_sup": 0.1708891805832099,
+          "source_l2_radius": 3.0413812651491097,
+          "potential_radius": 0.7603453162872774,
+          "green_envelope_ratio": 0.15042728057696833
+        },
+        {
+          "inverse_mesh": 4,
+          "L": 16,
+          "source_norm": 4.0,
+          "projected_source_norm": 1.8053475653282167,
+          "potential_sup": 0.21674976028233917,
+          "source_l2_radius": 3.464101615137755,
+          "potential_radius": 0.8660254037844387,
+          "green_envelope_ratio": 0.15378621246675336
+        },
+        {
+          "inverse_mesh": 6,
+          "L": 24,
+          "source_norm": 6.0,
+          "projected_source_norm": 2.2806575596483425,
+          "potential_sup": 0.23049577029605606,
+          "source_l2_radius": 3.674234614174767,
+          "potential_radius": 0.9185586535436917,
+          "green_envelope_ratio": 0.15442187368252835
+        },
+        {
+          "inverse_mesh": 8,
+          "L": 32,
+          "source_norm": 8.0,
+          "projected_source_norm": 2.6768738520035495,
+          "potential_sup": 0.2365496016380651,
+          "source_l2_radius": 3.8405728739343044,
+          "potential_radius": 0.9601432184835761,
+          "green_envelope_ratio": 0.15464533669683936
+        }
+      ],
+      "alias_control": {
+        "q": 200,
+        "N": 200,
+        "potential_sup": 4.98046875,
+        "allowed_radius": 0.625,
+        "gaussian_characteristic": 9.13676314413902e-174,
+        "clock_characteristic": 1
+      }
+    },
+    "logarithmic_rates_and_moment_boundary": {
+      "family": [
+        {
+          "L": 4,
+          "beta": 25,
+          "N": 200,
+          "sigma": 40.52847345693511,
+          "theta_tail_bound": 4.2663764463267844e-08,
+          "defect_upper": 3.908773776066987e-33,
+          "log_wrap_upper": -115.33997091934941
+        },
+        {
+          "L": 8,
+          "beta": 37,
+          "N": 296,
+          "sigma": 59.98214071626396,
+          "theta_tail_bound": 4.194163569014519e-12,
+          "defect_upper": 4.476118740406056e-49,
+          "log_wrap_upper": -171.7850086036458
+        },
+        {
+          "L": 16,
+          "beta": 48,
+          "N": 384,
+          "sigma": 77.81466903731541,
+          "theta_tail_bound": 1.1207946399181198e-15,
+          "defect_upper": 1.3757332639329782e-63,
+          "log_wrap_upper": -223.29524408739746
+        },
+        {
+          "L": 64,
+          "beta": 70,
+          "N": 560,
+          "sigma": 113.47972567941831,
+          "theta_tail_bound": 8.003637469977878e-23,
+          "defect_upper": 1.2995695208466921e-92,
+          "log_wrap_upper": -326.31571505490086
+        },
+        {
+          "L": 256,
+          "beta": 92,
+          "N": 736,
+          "sigma": 149.1447823215212,
+          "theta_tail_bound": 5.715428185444726e-30,
+          "defect_upper": 1.2276223769465202e-121,
+          "log_wrap_upper": -429.3361860224042
+        },
+        {
+          "L": 1024,
+          "beta": 114,
+          "N": 912,
+          "sigma": 184.8098389636241,
+          "theta_tail_bound": 4.081409167457741e-37,
+          "defect_upper": 1.1596583916478912e-150,
+          "log_wrap_upper": -532.3566569899076
+        }
+      ],
+      "principal_holder_exponents": {
+        "2": -8.369604401089358,
+        "18": -0.369604401089358,
+        "19": 0.130395598910642,
+        "40": 10.630395598910642
+      },
+      "score_all_moments_from_conditional_jensen": true
+    },
+    "conditional_defect_count": {
+      "conditional_cases": 2,
+      "mixture_mean": 3.6719999999999997,
+      "unconditional_covariance": 0.12250000000000005,
+      "fixed_beta": 0.1,
+      "global_closed_upper": [
+        0.12478505852648765,
+        2.6565812122143105e-05,
+        3.4562201093297336e-15,
+        4.9414118964436776e-36
+      ]
+    }
+  },
+  "qualification": "Mechanical source/cache/N5 readiness and personal fault challenges only. Independent proof review and formal audit pending."
+}

@@ -12,17 +12,17 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 12
-active_route: logarithmic_coupling_scaling_and_global_defect_boundary
+block: 13
+active_route: fixed_law_image_noise_and_actual_score_connected_correlations
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Derive local-tail and integer-current theta estimates for logarithmic coupling growth, including uniform Wilson-source potentials and the fixed-coupling failure of global defect removal.
+next_action: Prove fixed-coupling image-noise/score scaling relation and strict positive-time OS equivalence for independent white contact noise, then attack actual-score connected cumulants.
 strongest_unresolved_obligation: Uniform sector-energy comparison or an actual-state Coulomb-phase estimate for the specified Hamiltonian.
-working_result: Eight public PRs8123-8130 contain nine proposed theorem milestones. PR8130 at44faa4d4ce09b8634726cef62a84146f940eb233 gives a direct supplied-family Maxwell limit and relative Wilson Coulomb interactions without an affine-covariance premise. All milestones await independent review. Fixed-law phase, native law and charged matter remain open.
+working_result: Eight public PRs8123-8130 contain nine proposed theorem milestones. PR8130 at7656dcdb01f32b3d47ecbcda04c89cb3b03996f0 gives the direct Maxwell/Wilson construction and its logarithmic resource improvement, with an explicit global-removal method boundary. All milestones await independent review. Fixed-law phase, native law and charged matter remain open.
 public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124

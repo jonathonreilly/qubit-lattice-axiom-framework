@@ -1,0 +1,33 @@
+{
+  "utc": "2026-09-14T22:55:10.789114+00:00",
+  "main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "worktrees": [
+    {
+      "path": "/Users/jonreilly/Projects/Physics",
+      "removed": false,
+      "disposition": "protected"
+    },
+    {
+      "path": "/private/tmp/toe-formation-order-20260913-wt",
+      "removed": false,
+      "head": "d57291602d909246756f30975f0d862a08e8f836",
+      "contained_in_main": false,
+      "disposition": "unlanded_preserved"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914",
+      "removed": false,
+      "head": "c1084785ea4ad379820290a8c58ee4b52dc25b36",
+      "contained_in_main": false,
+      "disposition": "unlanded_preserved"
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "removed": false,
+      "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "contained_in_main": false,
+      "disposition": "unlanded_preserved"
+    }
+  ],
+  "qualification": "Safety-first owner-authorized landed-worktree sweep; unknown untracked or ignored science preserved; no gc or archive access."
+}

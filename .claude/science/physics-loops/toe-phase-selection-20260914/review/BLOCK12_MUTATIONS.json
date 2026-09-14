@@ -1,0 +1,181 @@
+{
+  "runner_sha256": "53b3561ccabf25749c77230e3e5798de19f0a9a42cb283e9c3ea33e7846bd268",
+  "faults": [
+    {
+      "name": "disjoint_cube_support",
+      "function": "cochain_quantization",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0020946660079061985
+    },
+    {
+      "name": "harmonic_unit_norm",
+      "function": "cochain_quantization",
+      "detected": true,
+      "failure": "(array(4.), array(1))",
+      "elapsed_sec": 0.0032250420190393925
+    },
+    {
+      "name": "lift_normalization",
+      "function": "cochain_quantization",
+      "detected": true,
+      "failure": "(array([[[[-2.62844499e+00, -2.62844499e+00, -7.88533498e+00,\n          -2.62844499e+00],\n         [-2.62844499e+00, -7.88533498e+00,  5.25688999e+00,\n          -5.25688999e+00],\n         [ 2.62844499e+00,  1.77635684e-15,  1.05137800e+01,\n           2.62844499e+00],\n         [ 1.31422250e+01,  7.88533498e+00,  5.25688999e+00,\n          -7.88533498",
+      "elapsed_sec": 0.004014584003016353
+    },
+    {
+      "name": "cube_count",
+      "function": "cochain_quantization",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.002753166016191244
+    },
+    {
+      "name": "atom_probability",
+      "function": "image_atoms_and_cube_law",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0010139580117538571
+    },
+    {
+      "name": "nearest_neighbor_direction",
+      "function": "image_atoms_and_cube_law",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 8.666596841067076e-05
+    },
+    {
+      "name": "clock_lift_variance",
+      "function": "image_atoms_and_cube_law",
+      "detected": true,
+      "failure": "(array(2015.72090207), array(251.9651128))",
+      "elapsed_sec": 0.010392375057563186
+    },
+    {
+      "name": "clock_gaussian_image",
+      "function": "image_atoms_and_cube_law",
+      "detected": true,
+      "failure": "(array(251.9651128), array(31.4970621))",
+      "elapsed_sec": 0.008633957942947745
+    },
+    {
+      "name": "root_of_unity_normalizer",
+      "function": "image_atoms_and_cube_law",
+      "detected": true,
+      "failure": "(array(251.9651128), array(167.97674187))",
+      "elapsed_sec": 0.008552416926249862
+    },
+    {
+      "name": "operator_norm_constant",
+      "function": "integer_current_map_and_theta",
+      "detected": true,
+      "failure": "(array(512.), array(256.))",
+      "elapsed_sec": 0.007493083016015589
+    },
+    {
+      "name": "inverse_current_potential",
+      "function": "integer_current_map_and_theta",
+      "detected": true,
+      "failure": "(array(2.07150906), array(-11.40799673))",
+      "elapsed_sec": 0.0020531669724732637
+    },
+    {
+      "name": "potential_radius_constant",
+      "function": "integer_current_map_and_theta",
+      "detected": true,
+      "failure": "(array(-4.54747351e-13), array(-631.65468167))",
+      "elapsed_sec": 0.005700166919268668
+    },
+    {
+      "name": "real_poisson_source_sign",
+      "function": "affine_source_relative",
+      "detected": true,
+      "failure": "(array(1.00669669+0.13600344j), array(1.00669669-0.13600344j))",
+      "elapsed_sec": 0.0016149580478668213
+    },
+    {
+      "name": "affine_phase_omitted",
+      "function": "affine_source_relative",
+      "detected": true,
+      "failure": "(array(1.00669669+0.13600344j), array(1.03382536))",
+      "elapsed_sec": 0.00046912499237805605
+    },
+    {
+      "name": "imaginary_poisson_source",
+      "function": "affine_source_relative",
+      "detected": true,
+      "failure": "(array(1.00669669+0.13600344j), array(0.87206255+2.98994141e-18j))",
+      "elapsed_sec": 0.0005395410116761923
+    },
+    {
+      "name": "gaussian_characteristic_factor",
+      "function": "affine_source_relative",
+      "detected": true,
+      "failure": "(array(0.9863517+0.13325485j), array(1.00669669+0.13600344j))",
+      "elapsed_sec": 0.0005651670508086681
+    },
+    {
+      "name": "scalar_theta_two_signs",
+      "function": "integer_current_map_and_theta",
+      "detected": true,
+      "failure": "(array(1.3863186), array(1.77254553))",
+      "elapsed_sec": 0.00520212494302541
+    },
+    {
+      "name": "scalar_theta_square",
+      "function": "integer_current_map_and_theta",
+      "detected": true,
+      "failure": "(array(2.16394626), array(1.77263721))",
+      "elapsed_sec": 0.004906375077553093
+    },
+    {
+      "name": "scalar_laplacian_normalization",
+      "function": "integer_current_map_and_theta",
+      "detected": true,
+      "failure": "(array([[[[ 2.00000000e+00,  2.77555756e-17, -2.77555756e-17,\n           2.77555756e-17],\n         [-1.11022302e-16, -6.93889390e-18,  8.67361738e-18,\n           0.00000000e+00],\n         [ 2.42861287e-17,  3.03576608e-18,  1.21430643e-17,\n           3.03576608e-18],\n         [-3.46944695e-17, -1.38777878e-17,  1.04083409e-17,\n          -2.08166817",
+      "elapsed_sec": 0.0013251249911263585
+    },
+    {
+      "name": "green_zero_mode",
+      "function": "loop_potential_refinement",
+      "detected": true,
+      "failure": "(array(0.00024414), array(0))",
+      "elapsed_sec": 0.001422832952812314
+    },
+    {
+      "name": "logarithmic_family_coefficient",
+      "function": "logarithmic_rates_and_moment_boundary",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 2.7542002499103546e-05
+    },
+    {
+      "name": "clock_order_to_variance",
+      "function": "logarithmic_rates_and_moment_boundary",
+      "detected": true,
+      "failure": "(array(6.25), array(25))",
+      "elapsed_sec": 5.579192657023668e-05
+    },
+    {
+      "name": "principal_moment_volume_exponent",
+      "function": "logarithmic_rates_and_moment_boundary",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 2.420798409730196e-05
+    },
+    {
+      "name": "conditional_is_not_unconditional",
+      "function": "conditional_defect_count",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.00020720891188830137
+    },
+    {
+      "name": "charge_alias_scope",
+      "function": "loop_potential_refinement",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.359618499991484
+    }
+  ],
+  "qualification": "Personal selected-family deliberate-fault checks; not an independent review or proof of universal claims."
+}

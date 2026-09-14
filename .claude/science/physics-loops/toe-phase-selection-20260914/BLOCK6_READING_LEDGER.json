@@ -1,0 +1,26 @@
+{
+  "time_utc": "2026-09-14T18:32:13.581062+00:00",
+  "reading": "personal_no_subagents",
+  "sources": [
+    {
+      "source": "Frohlich-Spencer, IHES P/81/40; CMP83 (1982) 411-454",
+      "url": "https://omeka.ihes.fr/document/P_81_40.pdf",
+      "path": "/tmp/toe-charged-reading-20260914/frohlich-spencer-1981.pdf",
+      "read": "Text sections 2.2-2.6, 2.11-2.12, 3; original pp.44-46 visually inspected in this block; earlier block reads retained in campaign context.",
+      "import": "Large-beta U(1) Villain coclosed-current covariance sandwich, equations 2.90-2.106. Deep renormalization input not re-proved here.",
+      "hypotheses": "D=4, sufficiently large beta, free-boundary state, fixed local coclosed dual currents; original real-score sign and contact term checked separately.",
+      "not_imported": "No finite-Z_N local covariance theorem from section 3 loop estimates.",
+      "sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17"
+    },
+    {
+      "source": "Chevyrev-Garban, arXiv:2404.09928v2, 10 March 2025; J Stat Phys192,38",
+      "url": "https://arxiv.org/abs/2404.09928",
+      "path": "/tmp/toe-charged-reading-20260914/chevyrev-garban-2025.pdf",
+      "read": "Introduction through Assumption 2.1 and the complete proof of Corollary 1.6 at end of section 4.",
+      "import": "Villain Wilson-loop monotonicity in nonnegative plaquette couplings, Corollary 1.6.",
+      "hypotheses": "Compact U(1), free finite boxes, arbitrary repeated closed loops, nonnegative plaquette couplings.",
+      "not_imported": "No direct nonnegative-Fourier assertion for log Villain weight; Remark 1.7 expressly contradicts it.",
+      "sha256": "89720d61bd0c0ebc2ac7e27d0d808de7ed8c13fc73f863c79302d38293cb2ae4"
+    }
+  ]
+}

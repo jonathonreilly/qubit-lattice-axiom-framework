@@ -12,18 +12,19 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 5
-active_route: causal_local_likelihood_protocol_and_source_coercivity
+block: 6
+active_route: isotropic_euclidean_covariance_and_transfer_gap
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Review the causal wire proof, matrix codec, proper-prior and finite-window bounds, and source-specific uniform coercivity; package a positive milestone only with explicit conditioning and program costs.
+next_action: Prove the bounded slab insertion and isotropy implication; check the precise Villain observable, invariant state, contact term and ground-space hypotheses against the primary paper.
 strongest_unresolved_obligation: Uniform sector-energy comparison or an actual-state Coulomb-phase estimate for the specified Hamiltonian.
 working_result: PR8123 gives finite-clock local probabilities and projection; PR8124 gives exact canonical Gaussian transfer locality and static Coulomb cost. Compact interacting phase and native law remain open.
 public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8125
+  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126

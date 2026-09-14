@@ -156,3 +156,17 @@ manifest, focused conformance, PR and safe scratch cleanup. Source-level
 no-go classifiers are all false after author-scope clarification; there is
 no public negative claim. Continue the personal campaign after delivery;
 01:30:44 UTC remains the deadline, with over seven hours available.
+
+Block 5 is delivered in PR8126 at
+17484511b5afc6396d4709795b9e14951d3ec3b3. The final note hash is
+42261237f8b78c63e37cc7da02cf92095ff0958cf9d17f540aa6738c37f77f4f;
+third completed graph matches it. Exact remote, PR state and clean tracked/
+untracked state were verified, ignored files classified, and its delivery
+checkout removed. BLOCK5_DELIVERY.json and review/BLOCK5_SWEEP.json preserve
+the receipt. No audit or main landing. Block 6 now explores the route in
+BLOCK6_EUCLIDEAN_TRANSFER_GAP_ROUTE.md. The key idea is to use bounded slab
+insertions and Euclidean isotropy for gap exclusion without first proving
+the interacting log is local. Check the actual infinite-volume state and
+observable; non-summable correlations alone can also reflect degeneracy.
+The local Fourier bound may supply temporal clustering to remove that
+ambiguity. Continue personally to the same 01:30:44 UTC deadline.

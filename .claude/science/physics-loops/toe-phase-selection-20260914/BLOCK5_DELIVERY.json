@@ -1,0 +1,82 @@
+{
+  "time_utc": "2026-09-14T18:19:30.456589+00:00",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-causal-gaussian-likelihood-20260914",
+  "branch": "physics-loop/causal-gaussian-likelihood-20260914",
+  "head": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+  "remote_head": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+  "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "pr": {
+    "baseRefName": "main",
+    "files": [
+      {
+        "path": "docs/PERMANENT_LOCAL_GAUSSIAN_LIKELIHOOD_PROTOCOL_AND_DK_POSTSELECTION_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "additions": 614,
+        "deletions": 0
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "additions": 5,
+        "deletions": 1
+      },
+      {
+        "path": "logs/runner-cache/permanent_local_gaussian_likelihood_protocol_2026_09_14.txt",
+        "additions": 718,
+        "deletions": 0
+      },
+      {
+        "path": "scripts/permanent_local_gaussian_likelihood_protocol_2026_09_14.py",
+        "additions": 860,
+        "deletions": 0
+      }
+    ],
+    "headRefOid": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+    "mergeable": "MERGEABLE",
+    "number": 8126,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126"
+  },
+  "files": [
+    {
+      "path": "docs/PERMANENT_LOCAL_GAUSSIAN_LIKELIHOOD_PROTOCOL_AND_DK_POSTSELECTION_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "42261237f8b78c63e37cc7da02cf92095ff0958cf9d17f540aa6738c37f77f4f"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "b7c9e6d672d101452da700cf4266026f99d281860bca1a65e29350345be41bf6"
+    },
+    {
+      "path": "logs/runner-cache/permanent_local_gaussian_likelihood_protocol_2026_09_14.txt",
+      "sha256": "52529833936cb9c68f92c32a2a8fe420c974ccca48fa64b6ea19f4093c248f07"
+    },
+    {
+      "path": "scripts/permanent_local_gaussian_likelihood_protocol_2026_09_14.py",
+      "sha256": "8c309572e83ef500171c44d93ed6dc992daf034b881b199f054239613e369482"
+    }
+  ],
+  "tracked_and_untracked_clean": true,
+  "ignored": [
+    "docs/audit/data/audit_ledger.json",
+    "docs/audit/data/citation_graph.json",
+    "docs/audit/data/ledger_cache_manifest.json",
+    "docs/audit/data/static_pipeline_checkpoint.lock",
+    "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/ledger_io.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-313.pyc",
+    "scripts/__pycache__/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.cpython-313.pyc",
+    "scripts/__pycache__/admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_released7333_fixture_2026_09_10.cpython-313.pyc",
+    "scripts/__pycache__/runner_cache.cpython-313.pyc"
+  ],
+  "ignored_classification": "Generated graph/ledger cache and lock; Python bytecode only. No recovery science.",
+  "independent_review": "pending",
+  "audit": "not_applied",
+  "changed_evidence_existing_rows_checked": 0,
+  "source_classifiers": {
+    "no_go": false,
+    "negative_boundary": false,
+    "current_tier_packet": false
+  },
+  "cleanup_pending": false,
+  "worktree_removed": true,
+  "cleanup_utc": "2026-09-14T18:19:32.665219+00:00"
+}

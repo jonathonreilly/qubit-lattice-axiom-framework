@@ -24,3 +24,11 @@ Gaussian routing map. No public candidate yet.
   periodic Gaussian/closed-support codec conditional theorem, four files.
   Eleven faults caught, canonical cache fresh, independent review pending.
   Scratch checkout removed after exact remote and clean-state verification.
+
+- PR8126: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126
+  Head 17484511b5afc6396d4709795b9e14951d3ec3b3, same main base,
+  permanent local Gaussian likelihood and finite-window costs, four files.
+  Twelve source faults caught, canonical cache fresh, independent review
+  and integrated landing gates pending. Exact remote and clean-state
+  verification preceded removal of the delivery checkout. The safety sweep
+  preserved all three other unlanded worktrees. See BLOCK5_DELIVERY.json.

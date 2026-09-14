@@ -1,0 +1,120 @@
+{
+  "status": "personal_finite_checks_pass",
+  "finite_transfer": {
+    "random_checks": [
+      {
+        "states": 2,
+        "spectral_ratio": 0.14335578705175223,
+        "largest_bound_fraction": 0.18572675394258972
+      },
+      {
+        "states": 3,
+        "spectral_ratio": 0.21489212494450727,
+        "largest_bound_fraction": 0.1866709568093917
+      },
+      {
+        "states": 7,
+        "spectral_ratio": 0.08755463968745884,
+        "largest_bound_fraction": 0.055376288603652735
+      }
+    ],
+    "sharp_slab_exponent": "separation_minus_one"
+  },
+  "clock_transfer": {
+    "clock_N": 5,
+    "full_states": 625,
+    "physical_states": 5,
+    "beta_temporal": 1.2,
+    "beta_spatial": 0.8,
+    "spectral_ratio": 0.15581122394957875,
+    "insertion_sup_bound": 2.9504439781719474,
+    "path_enumeration_errors": [
+      1.3877787807814457e-17,
+      3.469446951953614e-18,
+      2.2768245622195593e-18
+    ],
+    "fixed_continuous_score_sup": 0.9454549093264507,
+    "inverse_sandwich_norms": [
+      2.0,
+      5.0,
+      9.999999999999998
+    ]
+  },
+  "cube_score_contact": [
+    {
+      "beta": 0.8,
+      "partition": 1.0470361035166638,
+      "integer_variance": 0.044924849078877276,
+      "real_score_offdiagonal": -0.04492484907887729,
+      "real_score_variance": 0.6704831060408356,
+      "contact": 0.7154079551197128,
+      "smallest_covariance_eigenvalue": 0.445858860646449
+    },
+    {
+      "beta": 1.7,
+      "partition": 1.3441941170917586,
+      "integer_variance": 0.25989912626298983,
+      "real_score_offdiagonal": -0.25989912626298983,
+      "real_score_variance": 1.438550138105401,
+      "contact": 1.698449264368391,
+      "smallest_covariance_eigenvalue": 0.13905450679045156
+    },
+    {
+      "beta": 2.6,
+      "partition": 1.6507011282823556,
+      "integer_variance": 0.4304753455824507,
+      "real_score_offdiagonal": -0.43047534558245076,
+      "real_score_variance": 2.169509941718299,
+      "contact": 2.5999852873007487,
+      "smallest_covariance_eigenvalue": 0.017133213806045332
+    }
+  ],
+  "spectral_hypotheses": {
+    "shell_sum": 446.6296296296296,
+    "multiplier_axis_values": [
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "centered_invariant_vector_detected": true,
+    "anisotropic_OU_ratio": 0.3,
+    "anisotropic_examples": [
+      {
+        "distance": 1,
+        "spatial_covariance": 0.19170024978210182,
+        "temporal_covariance": 0.11202675537869845
+      },
+      {
+        "distance": 3,
+        "spatial_covariance": 0.03684928802125978,
+        "temporal_covariance": 0.009933951784125367
+      },
+      {
+        "distance": 10,
+        "spatial_covariance": 0.003642430214986305,
+        "temporal_covariance": 2.1722913121858727e-06
+      },
+      {
+        "distance": 30,
+        "spatial_covariance": 0.0004083013503872068,
+        "temporal_covariance": 7.5743114617135e-17
+      }
+    ]
+  },
+  "limits": "No numerical massless-phase proof; FS and Villain monotonicity are named literature inputs, and the general transfer implication rests on the written proof."
+}

@@ -1,0 +1,138 @@
+{
+  "primary_sha256": "5fd4bec4cfd417bc847e1d424ef7aa34c8b2419bbfdea15aea5cc0890aef7155",
+  "execution": "Affected scientific family invoked from entire preserved mutated source; no unrelated families rerun.",
+  "results": [
+    {
+      "name": "cartesian_epsilon",
+      "family": "exact_rk_certificate",
+      "old": "y=index[dest];a=(-1)**sum(r)*(2*bits[0]-1)",
+      "new": "y=index[dest];a=(2*bits[0]-1)",
+      "replacements": 1,
+      "mutant_sha256": "48e9f01767f0adbdc50c8f4ee751b582c946b073056091cbc10f5c29a31d46f0",
+      "exit_code": 1,
+      "elapsed_sec": 0.7150972919771448,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_cartesian_epsilon.py')['exact_rk_certificate']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_cartesian_epsilon.py\", line 96, in exact_rk_certificate\n    assert all(sum(coeff[j]*vectors[j][x] for j in range(7))==0 for x in range(N))\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "Perron_edge_weight",
+      "family": "spectral_graph_match",
+      "old": "w=psi[x]*psi[y];Lw=",
+      "new": "w=psi[x]*psi[x];Lw=",
+      "replacements": 1,
+      "mutant_sha256": "6afb34502e59fc301d5efcd5c254ef69bfd8ec2d7393ca6d2d56c3a8dc578b43",
+      "exit_code": 1,
+      "elapsed_sec": 0.7826420409837738,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_Perron_edge_weight.py')['spectral_graph_match']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_Perron_edge_weight.py\", line 75, in spectral_graph_match\n    assert abs(variational-spectral)<1e-11\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "relaxation_factor",
+      "family": "spectral_graph_match",
+      "old": "variational=2*np.dot(w,residual*residual)",
+      "new": "variational=np.dot(w,residual*residual)",
+      "replacements": 1,
+      "mutant_sha256": "5357625ff010bfefeca2ad0006c57458fddb8b564db39c465b64a2100e1272c3",
+      "exit_code": 1,
+      "elapsed_sec": 0.4649319580057636,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_relaxation_factor.py')['spectral_graph_match']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_relaxation_factor.py\", line 75, in spectral_graph_match\n    assert abs(variational-spectral)<1e-11\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "exact_Krylov_relation",
+      "family": "exact_rk_certificate",
+      "old": "coeff=[235008,-204608,69072",
+      "new": "coeff=[235008,-204608,69073",
+      "replacements": 1,
+      "mutant_sha256": "03c3ad3f5d4a83ec46a92e9635f1cfdfa6fb66aec1e558bcddb76f01797e425a",
+      "exit_code": 1,
+      "elapsed_sec": 0.33893983298912644,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_exact_Krylov_relation.py')['exact_rk_certificate']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_exact_Krylov_relation.py\", line 96, in exact_rk_certificate\n    assert all(sum(coeff[j]*vectors[j][x] for j in range(7))==0 for x in range(N))\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "Doob_jump_rate",
+      "family": "reversible_toy_transport",
+      "old": "one[xx,yy]+=j*psi[yy]/psi[xx]*a",
+      "new": "one[xx,yy]+=j*psi[xx]/psi[yy]*a",
+      "replacements": 1,
+      "mutant_sha256": "4a9d970c43670d53d3ff1f27aeafea56c56a4b4560f98a28498e4c384c7c41bf",
+      "exit_code": 1,
+      "elapsed_sec": 0.19902208307757974,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_Doob_jump_rate.py')['reversible_toy_transport']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_Doob_jump_rate.py\", line 131, in reversible_toy_transport\n    b=one@np.ones(N);assert abs(pi@b)<1e-14\n                            ^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "current_bias_sign",
+      "family": "reversible_toy_transport",
+      "old": "bias=2/t*np.dot(bb*bb",
+      "new": "bias=-2/t*np.dot(bb*bb",
+      "replacements": 1,
+      "mutant_sha256": "79ea472b2007d8bd90f7137e0b8342c44fc8df0cf64d9e296ac35a6724f10a8a",
+      "exit_code": 1,
+      "elapsed_sec": 0.20884429197758436,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_current_bias_sign.py')['reversible_toy_transport']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_current_bias_sign.py\", line 144, in reversible_toy_transport\n    assert abs(actual-(C+bias))<1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "frozen_field_dependence",
+      "family": "frozen_cubic_states",
+      "old": "(-1)**r[2]/2,(-1)**r[0]/2",
+      "new": "(-1)**r[2]/2,(-1)**r[2]/2",
+      "replacements": 1,
+      "mutant_sha256": "74053ba7666bdc8edf02380e43ea7e75019964cf48d854bb499d9056f76a2be9",
+      "exit_code": 1,
+      "elapsed_sec": 0.2619907079497352,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_frozen_field_dependence.py')['frozen_cubic_states']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_frozen_field_dependence.py\", line 173, in frozen_cubic_states\n    assert div==0 and degree==3\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "membrane_height_order",
+      "family": "explicit_membrane_cycles",
+      "old": "key=lambda f:-levels[f]",
+      "new": "key=lambda f:levels[f]",
+      "replacements": 1,
+      "mutant_sha256": "56cad2e3deebb67e8c024c815b925a1520096f01d7865e1c8f613992fd01d7a8",
+      "exit_code": 1,
+      "elapsed_sec": 0.19715533405542374,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_membrane_height_order.py')['explicit_membrane_cycles']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_membrane_height_order.py\", line 204, in explicit_membrane_cycles\n    coefficient=(-1)**sum(r)*(2*bits[0]-1);assert coefficient==1\n                                                  ^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "thermal_beta_normalization",
+      "family": "positive_history_and_sector_limits",
+      "old": "response=moment/(beta*Z)",
+      "new": "response=moment/Z",
+      "replacements": 1,
+      "mutant_sha256": "6b7df73c1a274fb0085e6d3b7d4952b83017fafb6ce84013d1af785a44219fd3",
+      "exit_code": 1,
+      "elapsed_sec": 0.9787971250480041,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_thermal_beta_normalization.py')['positive_history_and_sector_limits']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_thermal_beta_normalization.py\", line 388, in positive_history_and_sector_limits\n    assert error<1e-20 and abs(response-spectral)<1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "frozen_sector_multiplicity",
+      "family": "positive_history_and_sector_limits",
+      "old": "full=C/8*Z/(Z+16)",
+      "new": "full=C/8*Z/(Z+15)",
+      "replacements": 1,
+      "mutant_sha256": "6064ca2c2b0f1863bd175f9203cebfd92b35dd0da04771d39bc67edf9b15d72a",
+      "exit_code": 1,
+      "elapsed_sec": 2.3297215410275385,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_frozen_sector_multiplicity.py')['positive_history_and_sector_limits']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_frozen_sector_multiplicity.py\", line 402, in positive_history_and_sector_limits\n    assert abs(sector[-1]['full_zero_flux_chi']-target)<1e-11\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "comparison_congestion",
+      "family": "comparison_and_contractible_moves",
+      "old": "original+1e-12>=auxiliary/congestion",
+      "new": "original+1e-12>=auxiliary*congestion",
+      "replacements": 1,
+      "mutant_sha256": "2151c1029a2a887f95d765e498207638f79b3a4f935f369d0b64e4a3ca648cc8",
+      "exit_code": 1,
+      "elapsed_sec": 0.2101195000577718,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_comparison_congestion.py')['comparison_and_contractible_moves']()\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block9_mutant_comparison_congestion.py\", line 299, in comparison_and_contractible_moves\n    assert original+1e-12>=auxiliary*congestion\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

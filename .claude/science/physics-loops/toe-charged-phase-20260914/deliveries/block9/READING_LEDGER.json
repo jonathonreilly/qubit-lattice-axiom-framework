@@ -1,0 +1,60 @@
+{
+  "recorded_utc": "2026-09-14T09:02:33.472372+00:00",
+  "main_revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "literature": [
+    {
+      "source": "https://arxiv.org/abs/cond-mat/0305401v3",
+      "pdf_sha256": "afa65aed4d78ec09923e6df0da96ee355205b8df36b7f4307ea9f94c433d84d6",
+      "scope": "Cubic model and gauge construction pp5\u20136; RK effective-action and adjacent-phase argument pp10\u201311; magnetic trial and mixing qualifications p16; first-order spinon potential p18. Selected passages only; no complete 22-page review. Correct cubic three-dimer geometry verified."
+    },
+    {
+      "source": "https://arxiv.org/abs/cond-mat/0502068v1",
+      "pdf_sha256": "1800cc9ec85cd90731185a07a585b4867eda0c9efcb0d62c439d8a78da164c9c",
+      "scope": "Section3 pp12\u201315: stochastic-matrix form, master equation, detailed balance and rate freedom. v1 read; v2 download failed."
+    },
+    {
+      "source": "https://arxiv.org/abs/cond-mat/0311345v1",
+      "pdf_sha256": "528958edbadf46b0bb2184da0dddd7a93f07fd6a03d45ae5ec791886b8e8773e",
+      "scope": "Core correspondence pp1\u20133; selected examples pp4\u20135. Connected-component and rate/time conventions; not a full eight-page review."
+    },
+    {
+      "source": "https://arxiv.org/abs/1408.5477v1",
+      "pdf_sha256": "fa012c4f895e80d8c90c86b63783b4d180ba98d18f02c474139dd0f5d80ec871",
+      "scope": "Selected introduction pp1\u20133 and section9.2 cellular homology pp19\u201320. No large-deviation theorem imported."
+    },
+    {
+      "source": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.36.8343",
+      "pdf_source": "https://people.physics.illinois.edu/Ceperley/papers/041.pdf",
+      "pdf_sha256": "97d7e9f4d972685423bfdc057145c2315975a59c48444d1c5188ce1b2ef6c4c3",
+      "scope": "Scanned PDF pages1\u20134 rendered and visually read, especially pp2\u20133 sectionIII.A Eqs7\u201328 winding/free-energy/diffusion. Remaining six pages not reviewed. Established principle explicitly credited."
+    }
+  ],
+  "repo_reading": [
+    {
+      "path": "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md",
+      "scope": "Opening source conventions and finite claims; explicit lines120\u2013245; selected later reproduction and review. Primary script lines1\u2013195. No complete primary review claimed."
+    },
+    {
+      "path": "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_RELAXED_MAGNETIC_TWIST_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "scope": "Full short corrected note: historical occupation-sign estimator held."
+    },
+    {
+      "path": "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_CHARGE_COULOMB_FLUX_STIFFNESS_JOIN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "scope": "Full short corrected note; finite outputs and held production/thermodynamic join."
+    },
+    {
+      "path": "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_TRANSVERSE_LINEAR_SPECTRAL_CROSSOVER_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "scope": "Full short corrected note; multi-exponential finite spectrum and held physical Maxwell join."
+    },
+    {
+      "path": "docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "scope": "Opening approximately280 lines and source section390\u2013416; selected later text. Not a complete note review."
+    }
+  ],
+  "independence": "All new science and checks personally executed by the author; independent scientific review pending.",
+  "ledger_search": {
+    "scope": "Word-bounded ice/winding and flippability/magnetic-stiffness search in docs, .claude and grep-only archive ledgers. No central root ledger exists. One related theta-winding ledger read fully.",
+    "path": ".claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+    "disposition": "Finite winding does not establish physical four-dimensional/nonabelian theta assembly; distinct from this source response. No reused retired physical-wall premise."
+  }
+}

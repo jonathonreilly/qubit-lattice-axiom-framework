@@ -128,6 +128,9 @@ def cube_assignment_and_counts():
     assert counts['electric'] <= 13*12
     assert counts['faces'] <= 4*12
     assert counts['cubes'] <= 4*12
+    # Separate analytic classification: twelve cube edges, twenty-four
+    # outward edges, twenty-four opposite edges; 6+24 faces; 1+6+12 cubes.
+    assert counts == {'electric': 60, 'faces': 30, 'cubes': 19}
     return {'two_edge_charge_assignment': witness, 'bulk_cube_region_size': len(R),
             'bulk_near_term_counts': counts}
 
@@ -139,6 +142,7 @@ def physical_cube_probability_check():
     electric = np.sum(b*b, axis=1)
     charge2 = np.sum(q*q, axis=1)
     orbit_size = 3**(len(levels[0])-1)
+    assert len(b)*orbit_size == 3**len(levels[1])
     rows = []
     for mu, K, lam in ((0., 0., 0.), (0.4, 0.2, 2.), (1., 0.5, 5.)):
         adjacency = sum(np.exp(-k*mu)*a.toarray() for k, a in enumerate(coeff))

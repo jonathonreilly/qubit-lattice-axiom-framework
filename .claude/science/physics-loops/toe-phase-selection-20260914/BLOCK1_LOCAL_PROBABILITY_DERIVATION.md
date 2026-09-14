@@ -163,3 +163,14 @@ As mu or lambda tends to infinity, h or the resulting lower bound can tend to
 zero. Thus the result is consistent with the two hard-penalty projections.
 It requires the stated nonnegative hopping and positive-term split; it is
 not a general theorem about all Hamiltonians permitted by the framework.
+
+## Final general-lemma hypothesis clarification
+
+In the public note, the split-specific assumption is now stated entrywise:
+away from the diagonal, -H_touching must dominate h times the two cyclic
+shifts on R. Merely requiring the full H to be stoquastic and H_touching
+to be positive would not establish that comparison if the splitting
+introduced cancellation of outside hops. The actual clock split consists
+of separately stoquastic positive local terms and meets this stronger,
+explicit condition. The four-qutrit runner checks the exact comparison
+-H-G entrywise. No native premise or Hamiltonian parameter changed.

@@ -1,0 +1,112 @@
+{
+  "primary_source": "/Users/jonreilly/Documents/Codex/toe-clock-penalty-support-20260914/scripts/finite_clock_local_probability_and_charge_projection_2026_09_14.py",
+  "primary_sha256": "84dbae9ac1081dc61774a423545d45cde307fd8dfe214180727809d027054fca",
+  "mutations": [
+    {
+      "mutation": "cell_orientation",
+      "old": "sign = (-1)**position",
+      "new": "sign = 1",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                      ~~~~~~~~~~~^^^^^^^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-mutations-uciu13gs/cell_orientation.py\", line 45, in box_complex",
+        "    assert not np.any(b1 @ b2)",
+        "           ^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "39575aae5866c6119ace65f98c068c2ae0a2f6252b1e1674a3f9ae87ba1686c3"
+    },
+    {
+      "mutation": "projected_double_hop",
+      "old": "for jump in (-2, -1, 1, 2):",
+      "new": "for jump in (-1, 1):",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                               ~~~~~~~~~~~~~~~~~^^^^^^^^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-mutations-uciu13gs/projected_double_hop.py\", line 420, in projection_checks",
+        "    assert difference.nnz == 0",
+        "           ^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "f06e1ec681c95bc2a97b1fb4bde6977fc72dfdaa83e8b39df0c6deff29ced4c0"
+    },
+    {
+      "mutation": "penalty_limit_generator",
+      "old": "= expm(-total_time*H0)",
+      "new": "= expm(-0.5*total_time*H0)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                      ~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-mutations-uciu13gs/penalty_limit_generator.py\", line 188, in penalty_checks",
+        "    assert zeno[-1]['operator_error'] < zeno[0]['operator_error']/10",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "995cd19877644c89f29f80ccbc7f8faa71587ee9b19fea1db9a7787e05b57a57"
+    },
+    {
+      "mutation": "probability_energy_sign",
+      "old": "return float(-2*C*tau+2*r*log_k)",
+      "new": "return float(2*C*tau+2*r*log_k)",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                               ~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-mutations-uciu13gs/probability_energy_sign.py\", line 297, in abstract_chain_check",
+        "    assert np.min(probabilities) >= bound",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "f127e383b512a18c179e27eeedfc1cffb809c8f48cade07ad083c678193784dc"
+    },
+    {
+      "mutation": "electric_support_geometry",
+      "old": "electric_supports.append(set().union(*(face_supports[p]\n                                               for p in np.flatnonzero(F[:, l]))))",
+      "new": "electric_supports.append({l})",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                              ~~~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-mutations-uciu13gs/electric_support_geometry.py\", line 346, in cube_assignment_and_counts",
+        "    assert counts == {'electric': 60, 'faces': 30, 'cubes': 19}",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "3db4627535f555be4d12d8bf8cfb13003c9fd117f453f1d3580f0a93b4d49c29"
+    },
+    {
+      "mutation": "gauge_orbit_normalization",
+      "old": "orbit_size = 3**(len(levels[0])-1)",
+      "new": "orbit_size = 3**len(levels[0])",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-mutations-uciu13gs/gauge_orbit_normalization.py\", line 358, in physical_cube_probability_check",
+        "    assert len(b)*orbit_size == 3**len(levels[1])",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "d461deffe641aff9c95371d171e7c776c77283daad39088aba15b31dce79f4ae"
+    },
+    {
+      "mutation": "counterexample_potential",
+      "old": "H2 = 2*np.eye(3)-B+np.diag([0., 100., 100.])",
+      "new": "H2 = 2*np.eye(3)-B+np.diag([0., 0., 0.])",
+      "returncode": 1,
+      "caught_by_assertion": true,
+      "stderr_tail": [
+        "                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-mutations-uciu13gs/counterexample_potential.py\", line 403, in dropped_positive_near_counterexample",
+        "    assert false_far > actual2",
+        "           ^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "mutant_sha256": "b55721dea6629d9b98d689bfe39319a195e34d07f1c1f5e22a3d1612d5a3836e"
+    }
+  ],
+  "all_caught": true
+}

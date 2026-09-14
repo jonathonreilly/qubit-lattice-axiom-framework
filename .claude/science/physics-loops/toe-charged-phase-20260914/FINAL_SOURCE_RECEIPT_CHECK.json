@@ -1,0 +1,42 @@
+{
+  "utc": "2026-09-14T13:05:44.363099+00:00",
+  "checks": [
+    {
+      "file": "block14_positive_dressing_check.py",
+      "sha256": "6a01cc0c60966349cc8d280f6a2a797e01a86d3f8b9634d897c42551fc78b8cc",
+      "receipt_matches": true
+    },
+    {
+      "file": "BLOCK14_DERIVATION.md",
+      "sha256": "7cd666e498fcaf7a66cc73b2b78ce2c77de06e924e7fe1a8e687d168d5314ebb",
+      "receipt_matches": true
+    },
+    {
+      "file": "block14_monopole_kinetic_check.py",
+      "sha256": "b9dec80369868f28ef4a6d5fd443bb844d4a8701efe92185ba704be55d9dadef",
+      "receipt_matches": true
+    },
+    {
+      "file": "BLOCK14_MONOPOLE_KINETIC_DERIVATION.md",
+      "sha256": "7ff96506691da6d5d30b5f68cf5a6d64363eb62bd3239c8bce249313eb3888c6",
+      "receipt_matches": true
+    },
+    {
+      "file": "BLOCK14_HARD_LIMIT_MAPPING.md",
+      "sha256": "04954eda0c67ea78a3d35ed30fe38eb962108d1eabe22436bdc7193c1243e833",
+      "receipt_matches": true
+    },
+    {
+      "file": "block14_hard_limit_check.py",
+      "sha256": "a3265c41d0fe3e54ee33448e1aae2b10f13d718ff14ac249a3e4e901b9088ac0",
+      "receipt_matches": true
+    },
+    {
+      "file": "BLOCK14_HARD_LIMIT_RUN.txt",
+      "sha256": "2279d9cc710fb9716bc5bf167c43b5ecca8f3e06a279f80ed5946d7df5f7a1e7",
+      "receipt_matches": true
+    }
+  ],
+  "editable_prompt_changes": [],
+  "scope": "Source/receipt consistency and prompt-surface inspection; not a new scientific review or audit."
+}

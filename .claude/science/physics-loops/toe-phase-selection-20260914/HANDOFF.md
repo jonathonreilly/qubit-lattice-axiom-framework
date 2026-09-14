@@ -131,7 +131,7 @@ Schur fill criterion, exact C4 example, KL projection and explicit alternative
 resource routes. None is yet a checked theorem in this block. Deadline remains
 01:30:44 UTC; at 16:48 UTC over eight hours remain. Continue personally.
 
-Block 5 update (17:40 UTC): private exact scalar-history criteria and a signed
+Block 5 update (17:38 UTC): private exact scalar-history criteria and a signed
 C4 cancellation are preserved in BLOCK5_FORMATION_DERIVATIONS.md. A separate
 positive local likelihood protocol now reproduces the actual finite DK row
 map with a common 768-node, 848-edge, degree-three, depth-nine circuit across
@@ -147,3 +147,12 @@ three new derivation notes and paired block5 runners/JSON. Next finish codec
 and window checks, challenge load-bearing steps, and review a coherent
 positive milestone. Then reassess the most useful hard route and continue
 personally to 2026-09-15 01:30:44 UTC; over seven hours remain.
+
+At 18:02 UTC the block-5 positive milestone is assembled in the delivery
+checkout recorded in REVIEW_HISTORY.md. Its frozen runner is 8c309572..., all
+12 faults were detected, and the current canonical cache is fresh. The final
+source note is 7690a35d..., with its second graph build running; finish graph,
+manifest, focused conformance, PR and safe scratch cleanup. Source-level
+no-go classifiers are all false after author-scope clarification; there is
+no public negative claim. Continue the personal campaign after delivery;
+01:30:44 UTC remains the deadline, with over seven hours available.

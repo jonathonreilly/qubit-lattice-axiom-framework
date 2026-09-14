@@ -126,7 +126,10 @@ def main():
             # Exact right inverse, including radical cross-block entries.
             assert clean(Q0*c0)==s.eye(d)
             trace=s.cancel(s.trace(c0))
-            lower=1/trace
+            gamma=s.Rational(243,416)
+            margin=min(s.cancel(S[i,i]-sum(s.Abs(S[i,j]) for j in range(n) if i!=j)) for i in range(n))
+            assert margin>=gamma
+            lower=gamma/(1+gamma)
             det0=s.cancel(source.norm2(arm['det_q'])/c**n)
             assert s.cancel(1/det0-arm['raw_mass'])==0
             naive_phi_block=clean(q.H*q/c)
@@ -178,7 +181,7 @@ def main():
                                      covariance_error_bound=float(alpha/lower**2)))
             arm_rows.append(dict(value=str(value),phi_dimension=n,zeta_dimension=k,
                                  complex_dimension=d,trace_target_covariance=str(trace),
-                                 precision_lower_bound=str(lower),target_raw_mass=str(arm['raw_mass']),
+                                 precision_lower_bound=str(lower),finite_trace_lower_bound=str(1/trace),target_raw_mass=str(arm['raw_mass']),
                                  phi_block_nonzero_upper_offdiagonals=phi_off,
                                  naive_two_layer_phi_block_diagonal=(phi_off==0),
                                  logical_likelihood_circuit=arithmetic_circuit(linear,roster),variants=variants))

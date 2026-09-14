@@ -1,0 +1,35 @@
+{
+  "complex_codec_roles": 12,
+  "frames": 24,
+  "star_action_compositions": 576,
+  "maximum_star_action_error": 0.0,
+  "causal_schedules_checked": 192,
+  "same_rule_reads_six_neighbors": true,
+  "records_written_once": true,
+  "default_control_atoms": 96,
+  "algebra_product_and_star_checks": 48,
+  "coherent_four_control_program_probability": "1/84934656",
+  "complex_disk_window_checks": [
+    {
+      "epsilon": "1/100",
+      "acceptance": 2.3935731759205795e-10,
+      "lower_bound": 2.3926597659319174e-10,
+      "upper_bound": 2.3936170212765956e-10
+    },
+    {
+      "epsilon": "1/2",
+      "acceptance": 0.0014293678593561552,
+      "lower_bound": 0.000550351557603554,
+      "upper_bound": 0.0014960106382978723
+    },
+    {
+      "epsilon": "2",
+      "acceptance": 0.19485970776948852,
+      "lower_bound": 4.309857755205668e-08,
+      "upper_bound": 0.3829787234042553
+    }
+  ],
+  "independent_real_complex_kl": "1708/675",
+  "sharp_tilt_bound_attained": "5/7",
+  "scope": "Supplied program and fair schedule; coherent finite controls and later observations are conditioned on, not typical-state or Born selection"
+}

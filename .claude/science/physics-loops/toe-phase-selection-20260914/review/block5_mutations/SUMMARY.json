@@ -1,0 +1,139 @@
+{
+  "primary_sha256": "8c309572e83ef500171c44d93ed6dc992daf034b881b199f054239613e369482",
+  "mutations": [
+    {
+      "name": "axis_only_detour",
+      "family": "causal_wire_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 0.67621612502262,
+      "mutated_source_sha256": "129e6757d226e4f871fe5875cac39034b6991953dd26623ae7e8fe46327d7446",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "d8d5a9bc21c93c9667ffad6c6a19a6605ffd179d0d4eb06259d7d3b8e146295b",
+      "final_error": "AssertionError: ('foreign wire collision', (0, (140, 100, 160), 140, 4100, 0), (2, (342, 100, 158), 158, 162, 1), (342, 100, 160))"
+    },
+    {
+      "name": "shared_terminal_direction",
+      "family": "causal_wire_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 0.3928493749117479,
+      "mutated_source_sha256": "ba033d9fd10433abef28c9d49486c7a3041259a34c5ec0146eb9402768b3a3f7",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ace34793b000d30a86296d02b39025ada3e6d513227d3dc217d8dcec564ce696",
+      "final_error": "AssertionError: ('crossing is not horizontal/vertical', (407, 90, 8), [(0, 503), (85, 529)], (2, 0))"
+    },
+    {
+      "name": "reused_edge_planes",
+      "family": "causal_wire_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 0.34864854102488607,
+      "mutated_source_sha256": "71d6e2415fffc0d96a5880bc96bdc961fd7d0a0be16c43247a4c7c1c9d1c337e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "f9033ae4f02a9d4b14fee9d2b9df36f6bd13e57976b50fce291729da315789c8",
+      "final_error": "AssertionError: ('crossing is not horizontal/vertical', (34, 10, 16), [(0, 34), (1, 14)], (2, 0))"
+    },
+    {
+      "name": "lost_complex_payload",
+      "family": "local_rule_window_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 0.20161500002723187,
+      "mutated_source_sha256": "52e9b2a7e30f48d79dfbe997ed141327faea9e95c1c9509f940d1f6c89c1c6b4",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "a5119b2e2185a5a904a124100daf213ee3f07d1fed0d83e803f2271d5729ef09",
+      "final_error": "AssertionError"
+    },
+    {
+      "name": "transposed_star_rotation",
+      "family": "local_rule_window_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 0.5025489589897916,
+      "mutated_source_sha256": "5a5d7f25cfd315e8b47c2a78b618db60834ed8f349d969926afe947a2fe66281",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3ae71719fef391887da0a3123268190911fb5c4f85083c8e2a6a894e42cac951",
+      "final_error": "AssertionError"
+    },
+    {
+      "name": "wrong_local_observation",
+      "family": "local_rule_window_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 0.19323283398989588,
+      "mutated_source_sha256": "a9f72bb235595f19126066f90307bb94ead4108d3c45ef0bf81585d0bb50697e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "5908f67b892024ab72ac1e2496989a55d7a7a1f937ba400afbd629acd8a403e1",
+      "final_error": "AssertionError"
+    },
+    {
+      "name": "unnormalized_control_atoms",
+      "family": "local_rule_window_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 0.1921118339523673,
+      "mutated_source_sha256": "52367fc6b0f20f19e52b38c69b5bda3a4a5b1add2b33dce2ad74b419dda24643",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "9b5cff43ebb84855215d98a5ce2dcc788591607fffd9a5f321e48d56a84d8f04",
+      "final_error": "AssertionError"
+    },
+    {
+      "name": "real_complex_kl_factor",
+      "family": "local_rule_window_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 0.5244207080686465,
+      "mutated_source_sha256": "e5e3d910ffed847c03105a0447e3683d7431f358842b5fd6c70432c39991b7b4",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "d5a94de3c60f511c00cf89eee74391ae433980f8adc2850e265abc42d77ca276",
+      "final_error": "AssertionError"
+    },
+    {
+      "name": "likelihood_cross_sign",
+      "family": "dk_likelihood_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 8.39271225000266,
+      "mutated_source_sha256": "c1439b3a1e13780e72bee2bde0bfa44ba790c03f1ed8cece26e24f5e44de4dc6",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "d04607381b913f3633306641a0eff4e964734aa4347cd221ff6c53adf279121c",
+      "final_error": "AssertionError"
+    },
+    {
+      "name": "arm_dependent_circuit_roster",
+      "family": "dk_likelihood_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 18.545967374928296,
+      "mutated_source_sha256": "4886f1f9bd3d21b1d2d17d20f27dec8e9c3ec5f9f83f808065bd1b6aee5de6b5",
+      "stdout_sha256": "bdc5c04039821b979688e62aa15db01f4754c40e64dab50b25e48ad9b3b521af",
+      "stderr_sha256": "81a9c2d1a6d58a6f9deac4e290993bca97116cdcbd42d58d5688519ed6ec6b4e",
+      "final_error": "AssertionError"
+    },
+    {
+      "name": "wrong_antiperiodic_compression",
+      "family": "source_coercivity_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 1.9309185839956626,
+      "mutated_source_sha256": "069daa0b9a0eda0c6382ba039cfb79d5b7f83d7d1d66072b31c19909aa272080",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "521b841efad2cbe257e675776d6d46222283fb9b13ee382f91ee6d1009d51449",
+      "final_error": "AssertionError"
+    },
+    {
+      "name": "overstrong_joint_precision_bound",
+      "family": "source_coercivity_checks",
+      "detected": true,
+      "exit_code": 1,
+      "elapsed_seconds": 1.8772869169479236,
+      "mutated_source_sha256": "77158ca9c8358122c7f0ecdc0a62f379fd8de7fe25577865eae12accc446130d",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "b8c9097c46832c2bd9f9709cc7439ddf1ece6b6253986b0d70ae6b7cfd1900dd",
+      "final_error": "AssertionError"
+    }
+  ],
+  "all_detected": true,
+  "scope": "Personal author fault injection; not independent mathematical review or audit"
+}

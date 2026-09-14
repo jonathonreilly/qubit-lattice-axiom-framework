@@ -10,6 +10,9 @@ spatial width and a temporal cover length divisible by four. The latter
 ensures that translation by the half-cover preserves the selected 2x2
 differential tiling, including nonzero temporal coefficient. The actual
 T_cover=12 fixture and the T_cover=16 challenge satisfy this condition.
+An explicit out-of-domain T_cover=10, width-four, nonzero temporal-coefficient
+probe has sixteen nonzero entries in Kq+Kq*: the half-tiling condition is
+substantive, not a cosmetic restriction on the parameter list.
 
 Supply volumes v in [5/6,13/6] and shears |s|<=3/5, with the source's local
 plaquette Hodge entries
@@ -51,8 +54,8 @@ union edge roster. Its onsite residuals obey
     S_ii-c-sum_(j!=i)|S_ij| >= m gamma-c > 0.
 
 Columns for edges absent from a particular arm are simply zero. Hence
-BB*=S-cI exactly throughout this disclosed family. This does not select
-the factorization from the axioms or supply a periodic physical source map.
+BB*=S-cI exactly throughout this disclosed family. Source selection and
+matching an arbitrary-cover physical program are separate research tasks.
 
 ## Uniform coercivity of the joint likelihood precision
 
@@ -103,7 +106,8 @@ of any prior menu w has the sharp universal bound
     TV(w_j t_j/E_w t,w_j) <= (sqrt(b)-sqrt(a))/(sqrt(b)+sqrt(a))
                          = tanh(log(b/a)/4).
 
-To prove it, put mu=E_w t. Convexity bounds E|t-mu| by the chord joining
+If a=b the weights are identical and the bound is zero. Otherwise,
+to prove it, put mu=E_w t. Convexity bounds E|t-mu| by the chord joining
 its values at a,b. Dividing by 2mu gives
 (b-mu)(mu-a)/(mu(b-a)), whose maximum occurs at mu=sqrt(ab).
 This proves the bound for every menu, without knowing the detailed prior.

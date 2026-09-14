@@ -122,3 +122,45 @@ an old note hash. It was rerun after source freeze; the second completed
 graph matches the final note hash exactly. No source changed during final
 runner cache creation or mutations. Vocab was also checked on private block
 files after the earlier checkpoint; zero findings, no private science rewrite.
+
+
+## Block 5 author review in progress, 2026-09-14
+
+Primary source 8c309572e83ef500171c44d93ed6dc992daf034b881b199f054239613e369482
+was fully read after assembly. All 12 deliberate faults in
+review/block5_mutations/SUMMARY.json failed with AssertionError. Canonical
+execution returned ok in 31.463 seconds under the declared 180 seconds;
+cache_status was fresh. New geometry/codec/Gaussian/source claims are derived
+in the same source note, with distinct unit-point/segment, real/complex,
+full-covariance/Schur and cover/quotient checks. Personal checks are not an
+independent reviewer or audit verdict.
+
+Source-note review made the even-half-cover condition explicit after a
+T_cover=10 outside-domain probe found 16 Hermitian kinetic entries; supplied
+source scopes were kept separate from native Record-star/Born/phase claims.
+A common union coefficient roster keeps all eight program topologies fixed.
+The formula for the bootstrap costs uses a normalized 96-atom distribution.
+No further source changes followed the frozen mutation/cache run.
+
+The initial source classifier flagged three author-scope clauses about what
+these particular constructions select. Their wording was clarified as the
+positive finite construction and separate physical research tasks, preserving
+the full premise table and native limitations. The source has no negative
+closure claim: all three classifiers now return false. The private scalar
+history obstruction is not shipped as a negative theorem in this milestone.
+
+First graph generation recorded note hash 076f4bee5a9f5bd991f4338434c23613dafa7aad3512a61043ed18c5ba397589;
+a scope-only edit changed the final note hash to
+7690a35d62938869ca022763e50f4b5b08dcfeb8d2b58a6020f69df1a2901209.
+A second serialized graph generation is running and must complete before the
+manifest is written. The initial topology is one new node, zero claim edges,
+and two helper_runner_paths identifying the declared current source inputs.
+No helper output or ancestral theorem is used as authority; the primary
+executes every new claimed check. Full integrated-tree validation and
+independent review remain pending.
+
+Delivery checkout exists at
+/Users/jonreilly/Documents/Codex/toe-causal-gaussian-likelihood-20260914,
+branch physics-loop/causal-gaussian-likelihood-20260914, base current main.
+The preflight df guard reported 156 GiB available. It contains uncommitted
+science and must not be removed until committed, pushed and verified clean.

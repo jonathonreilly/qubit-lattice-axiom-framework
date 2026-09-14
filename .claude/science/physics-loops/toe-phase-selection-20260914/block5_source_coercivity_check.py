@@ -44,6 +44,20 @@ def main():
                          sx=s.Rational(7,5),st=-s.Rational(2,3))
         assert s.expand(kinetic+kinetic.H)==s.zeros(h.rows)
         assert s.expand(q-kinetic-mass*h)==s.zeros(h.rows)
+        # Rebuild the cover quadratic forms before the half-fold. This uses
+        # the full sparse construction, not the already-quotiented q matrix.
+        substitutions=fixture.substitution(sigma,{source.RECORD_CELL:record},
+                                          s.Rational(7,5),-s.Rational(2,3),mass)
+        pinned=source.ssubs(fixture.fx.H_free,source.region_pin(fixture.fx,(fixture.c-1,fixture.c)))
+        full_h=source.dense(source.ssubs(pinned,substitutions),fixture.fx.SIZE,fixture.fx.SIZE)
+        full_d=source.dense(source.ssubs(fixture.fx.edge_d[(0,0)],substitutions),fixture.fx.SIZE,fixture.fx.SIZE)
+        half=fixture.N
+        compress=lambda A:(A[:half,:half]+A[half:,half:]-A[:half,half:]-A[half:,:half])/2
+        assert full_h[:half,:half]==full_h[half:,half:]
+        assert full_h[:half,half:]==full_h[half:,:half]
+        assert compress(full_h)==h
+        full_k=s.I*(full_h*full_d+full_d.H*full_h)
+        assert s.expand(compress(full_k)-kinetic)==s.zeros(half)
         c=mass/2
         edges=source.edge_union((S,))
         B,residuals=source.signed_edge_factor(S,c,edges)
@@ -69,9 +83,14 @@ def main():
                          dimension=n+k,smallest_hodge_row_margin=str(min(margins)),
                          largest_hodge_row_sum=str(max(upper)),smallest_gram_residual=str(min(residuals)),
                          uniform_precision_lower_bound=str(uniform_lower),numeric_precision_minimum=actual_min))
-    result=dict(hodge_lower_bound=str(gamma),hodge_upper_bound=str(Gamma),
+    outside=source.Fixture(4,cover_t=10,tag="odd-half-cover-challenge")
+    outside_k=outside.q(mass=0,st=s.Rational(2,3))
+    hermitian_entries=sum(value!=0 for value in s.expand(outside_k+outside_k.H))
+    assert hermitian_entries==16
+    result=dict(outside_domain_odd_half_cover_hermitian_entries=hermitian_entries,
+                hodge_lower_bound=str(gamma),hodge_upper_bound=str(Gamma),
                 source_sha256=sha256(Path(source.__file__).read_bytes()).hexdigest(),
-                domain='v in [5/6,13/6], |shear|<=3/5, same local Hodge/fold/pinning definitions; mass>0, c=mass/2 or mass/3',
+                domain='Temporal cover divisible by four, even width, v in [5/6,13/6], |shear|<=3/5, same local Hodge/fold/pinning definitions; mass>0, c=mass/2 or mass/3',
                 claim='Analytical dimension-independent coercivity of this supplied Gaussian family; no massless estimate or native phase selection',
                 finite_challenges=rows)
     Path(__file__).with_name('BLOCK5_SOURCE_COERCIVITY_CHECK.json').write_text(json.dumps(result,indent=2)+'\n')

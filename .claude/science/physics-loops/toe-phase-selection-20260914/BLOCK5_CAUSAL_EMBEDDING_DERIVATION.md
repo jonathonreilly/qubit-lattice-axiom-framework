@@ -13,6 +13,9 @@ is at most four. Supply integer stages s_h such that s_left<s_right for
 every edge. This is stronger than merely acyclic behavior on one finite
 cover: the same type-level DAG works on every cover.
 
+Assume E>=1 in the wire formulas below. An edgeless program needs only
+separated gate/control pairs and no routing or crossing argument.
+
 The construction produces periodic, vertex-disjoint nearest-neighbor wires,
 meeting only at their true gate endpoints. Each internal vertex stores a
 single complex copy. The number of sites and the maximum wire length per
@@ -36,7 +39,7 @@ j=H cid(n)+h, and put the gate at
 Assign incident half-edges distinct directions from +x,-x,+y,-y. From a
 home, its arm goes one step in that direction, one step in -z, then three
 further steps in its horizontal direction. This ends at a port column
-home+4 direction-e_z. Distinct arms meet only at the home. Home neighborhoods
+home+4 direction-e_z. Distinct arms meet only at the home. Home centers
 are separated by at least twenty before scaling, including coarse seams;
 port column coordinates are consequently distinct modulo M.
 
@@ -144,7 +147,7 @@ postselection/infinite-volume interchange is asserted.
 
 ## A single covariant rule and readable matrix carriers
 
-For each finite role r and proper-cubic frame R use
+For each nonnegative integer role r in a finite alphabet and proper-cubic frame R use
 
     M=z I+(8r+1)(R(1,2,3)).sigma.
 
@@ -152,6 +155,9 @@ Trace decodes the one complex value. The traceless vector has norm
 (8r+1)sqrt(14), which decodes r; the free orbit decodes R. These are
 disjoint closed affine complex planes in M2(C). Proper rotations act by
 ordinary Pauli conjugation; coordinates and the supplied frame co-rotate.
+The identity sigma(u)sigma(v)=(u.v)I+i sigma(u cross v) shows directly
+that every proper rotation preserves products and adjoints. Equivalently,
+quarter-turns U_j=(I-i sigma_j)/sqrt(2) generate the required conjugations.
 The codec chooses a downstream instruction representation, not a privileged
 physical spinor or selected action.
 
@@ -174,10 +180,10 @@ roles and all 24 frames, with complex payload zero. Control sites are
 pairwise nonadjacent, so they may form first with independent draws. Any
 specified coherent finite control pattern has positive probability, a
 product of the corresponding atom probabilities. Conditioning on that
-pattern gives the protocol used above. This adds a disclosed rare-program
-conditioning cost; it does not select a typical program, initial state or
-formation schedule from the axioms. No infinite coherent-program event is
-assigned a nonzero probability by this finite observation.
+pattern gives the protocol used above, with an additional rare-program
+conditioning cost. Selecting a typical program, initial state and formation
+schedule is a separate research task. Only finite coherent-program
+probabilities are evaluated here.
 
 ## Application to the supplied DK likelihood circuit
 

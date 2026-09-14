@@ -106,3 +106,10 @@ not cover that limit, while the r=1 operator remains coercive. The general
 finite-group logarithmic mechanism has prior art in arXiv:2609.07886v2;
 no novelty or phase claim is made for that general mechanism. Two exploratory
 runners passed with empty stderr. Continue personally until 13:09:34 UTC.
+
+2026-09-14 04:36 UTC: milestone 3 delivered as PR #8109, exact remote
+cceb1220b1d89bedc8d24628844afb4b55c61d10, OPEN/MERGEABLE, independent review
+pending. Full public pair and review packet preserved here; scratch worktree
+removed after exact remote and tracked/untracked clean verification. Block 4
+now targets an actual lattice-matched one-loop velocity response and coupled
+charge flow. Compact phase remains open; no axiom update forced.

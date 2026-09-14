@@ -1,0 +1,172 @@
+{
+  "word": [
+    -1,
+    -4,
+    3,
+    -2,
+    -3,
+    1,
+    2,
+    3,
+    4,
+    -3
+  ],
+  "cycle_vertices": [
+    [
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      1
+    ]
+  ],
+  "proper_nonempty_closed_subcurrents": 0,
+  "Clifford_trace_exact": "1/32",
+  "explicit_matrix_charpoly": "l**4 - l**3/32 + l**2/1024",
+  "adjoint_and_reverse_trace_equal": true,
+  "leading_full_box_Fourier_coefficient": "-1/(16*M^10)",
+  "certificate_mass": "1267650600228229401496703205376",
+  "remainder_to_leading_upper_exact": "163305431796490541465600/1267650600228229401496703205337",
+  "remainder_to_leading_upper_float": 1.2882527075448773e-07,
+  "negative_real_Fourier_coefficient_certified": true,
+  "isolated_cycle_determinant": "u**40/1048576 - u**30*z/32768 - u**30/(32768*z) + u**20*z**2/1024 + u**20/1024 + u**20/(1024*z**2) - u**10*z/32 - u**10/(32*z) + 1",
+  "independent_cycle_determinant_checks": [
+    {
+      "mass": 2.5,
+      "angle": 0.0,
+      "direct_determinant_real": 0.9999934464322121,
+      "transfer_formula_error": 1.1102230246285696e-16
+    },
+    {
+      "mass": 2.5,
+      "angle": 0.317,
+      "direct_determinant_real": 0.9999937729621761,
+      "transfer_formula_error": 1.1102230246297001e-16
+    },
+    {
+      "mass": 2.5,
+      "angle": 1.1,
+      "direct_determinant_real": 0.9999970273105584,
+      "transfer_formula_error": 4.440892098501415e-16
+    },
+    {
+      "mass": 2.5,
+      "angle": 3.141592653589793,
+      "direct_determinant_real": 1.0000065536322125,
+      "transfer_formula_error": 2.2204460492528976e-16
+    },
+    {
+      "mass": 5.0,
+      "angle": 0.0,
+      "direct_determinant_real": 0.9999999936,
+      "transfer_formula_error": 1.1102230246251565e-16
+    },
+    {
+      "mass": 5.0,
+      "angle": 0.317,
+      "direct_determinant_real": 0.9999999939188813,
+      "transfer_formula_error": 2.220446049250313e-16
+    },
+    {
+      "mass": 5.0,
+      "angle": 1.1,
+      "direct_determinant_real": 0.9999999970969851,
+      "transfer_formula_error": 2.220446049250313e-16
+    },
+    {
+      "mass": 5.0,
+      "angle": 3.141592653589793,
+      "direct_determinant_real": 1.0000000064,
+      "transfer_formula_error": 3.722311048078866e-25
+    },
+    {
+      "mass": 10.0,
+      "angle": 0.0,
+      "direct_determinant_real": 0.9999999999937499,
+      "transfer_formula_error": 2.220446049250313e-16
+    },
+    {
+      "mass": 10.0,
+      "angle": 0.317,
+      "direct_determinant_real": 0.9999999999940613,
+      "transfer_formula_error": 1.1102230246251565e-16
+    },
+    {
+      "mass": 10.0,
+      "angle": 1.1,
+      "direct_determinant_real": 0.9999999999971652,
+      "transfer_formula_error": 2.220446049250313e-16
+    },
+    {
+      "mass": 10.0,
+      "angle": 3.141592653589793,
+      "direct_determinant_real": 1.0000000000062501,
+      "transfer_formula_error": 3.6350710208123282e-28
+    }
+  ],
+  "full_box_random_phase_operator_norms": [
+    2.5240714876840284,
+    2.6513938295890074,
+    2.4691073275429214
+  ],
+  "scope": "pointwise-positive standard r=1 Wilson paired determinant is not universally of positive Fourier type; no phase/no-go conclusion"
+}

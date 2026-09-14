@@ -65,8 +65,19 @@ For any integer closed edge current s define the constrained Gaussian sum
 
 The zero sector is positive and finite. Integer homological exactness of a
 contractible cubical box makes every closed integer edge current fillable.
-A constructive proof is obtained by transposing the integer cochain homotopy
-identity G H1 + H2 C=I on edges: if G^*s=0, then
+Here is the integer cochain contraction used for that assertion. On an
+interval with vertices 0,...,L, let (d f)(t)=f(t+1)-f(t), let
+(h g)(x)=sum_(0<=t<x) g(t), and let p send a zero-cochain to the constant
+f(0), while p is zero on one-cochains. Then dh+hd=I-p and h,p have integer
+matrices. On a d-fold product use the graded tensor differential and
+
+    H=h_1 tensor I + p_1 tensor h_2 tensor I
+        + ... + p_1 tensor ... tensor p_(d-1) tensor h_d.
+
+With the usual graded tensor signs, dH+Hd=I-p_1 tensor ... tensor p_d;
+the intermediate terms telescope. The last product vanishes in positive
+cochain degree. This constructs integer matrices H1,H2 and proves
+G H1 + H2 C=I on edges. Transposing it, if G^*s=0, then
 
     s=C^* H2^* s,
 

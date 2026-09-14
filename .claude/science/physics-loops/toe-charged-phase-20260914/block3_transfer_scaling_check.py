@@ -27,6 +27,8 @@ for N in [2,3,5,9,17]:
         assert error<=bound+1e-14
         generator=-np.log(lam)/delta
         target=2*t*(1-np.cos(ang));ge=float(np.max(abs(generator-target)))
+        deficit=4*x+2*R;generator_bound=(bound+deficit**2/(2*(1-deficit)))/delta
+        assert deficit<1 and ge<=generator_bound+1e-12
         rows.append({'N':N,'delta':delta,'temporal_beta':beta,'generator_error':ge,'transfer_linear_error':error,'proved_linear_error_bound':bound})
     last=[r['generator_error'] for r in rows if r['N']==N]
     assert all(b<a for a,b in zip(last,last[1:]))
@@ -38,6 +40,9 @@ for delta in [.1,.025,.00625,.0015625]:
     K=1.3;y=delta*K/2;phi=np.linspace(-np.pi,np.pi,2049)
     B=spatial(phi,y);assert B.min()>0 and B.max()<=1+1e-14
     error=float(np.max(abs(-np.log(B)/delta-K*(1-np.cos(phi)))))
+    R=2*y**4/(1-y**5);linear=8*y*y+(4*y+2)*R;deficit=4*y+2*R
+    bound=(linear+deficit**2/(2*(1-deficit)))/delta
+    assert deficit<1 and error<=bound+1e-12
     sp.append({'delta':delta,'spatial_beta':1/(2*math.log(1/y)),'generator_sup_grid_error':error})
 assert all(b['generator_sup_grid_error']<a['generator_sup_grid_error'] for a,b in zip(sp,sp[1:]))
 result['spatial_villain_generator']=sp

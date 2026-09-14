@@ -1,0 +1,24 @@
+{
+  "pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8109",
+  "head": "cceb1220b1d89bedc8d24628844afb4b55c61d10",
+  "state": "OPEN",
+  "mergeable": "MERGEABLE",
+  "independent_review": "pending",
+  "exact_remote_head_verified": true,
+  "tracked_and_untracked_clean": true,
+  "manifest_delta": {
+    "nodes": 1,
+    "edges": 0
+  },
+  "checks": {
+    "primary_families": 3,
+    "valid_mutations_rejected": 8,
+    "non_falsifying_trial_preserved": 1,
+    "cache": "fresh",
+    "compile": "passed",
+    "vocabulary": "zero findings",
+    "local_links": "passed",
+    "staged_and_committed_whitespace": "passed"
+  },
+  "worktree_removed_utc": "2026-09-14T04:36:01.509816+00:00"
+}

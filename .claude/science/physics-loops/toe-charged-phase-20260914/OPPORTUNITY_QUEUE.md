@@ -14,3 +14,12 @@
    mixing breaks the free alignment. Then chiral nonabelian/anomaly content.
 
 Choose the next route by new load-bearing evidence, not counts or easy corollaries.
+
+## Rerank after block 3
+
+Current first choice: actual lattice-matched common-velocity response, running
+coupling and threshold limits. Blocks 1-3 did not establish the compact charged
+phase; that target stays open, with signed-current resummation and direct
+Hamiltonian methods live. Do not turn further sector-bound corollaries into
+new milestones. Native geometry, formation/readout and chiral content remain
+independent high-value alternatives after the velocity discriminator.

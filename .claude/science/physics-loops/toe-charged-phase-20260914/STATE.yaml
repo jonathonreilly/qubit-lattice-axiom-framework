@@ -12,15 +12,15 @@ execution: supervisor_only_no_subagents
 research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 3
-active_route: compact_fermion_current_representation_and_infrared_response
+block: 4
+active_route: matched_lattice_velocity_response_and_running_coupling
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Derive the exact compact U(1)/finite-cyclic character-current representation
-  with signed determinant coefficients, then test the source-response and anisotropic
-  transfer bridges.
-last_checkpoint_utc: '2026-09-14T03:40:22.401808+00:00'
+next_action: Derive the actual leading logarithms from a supplied continuous-time
+  spatial lattice carrier, checking the true gauge inverse, Ward identities, cone
+  multiplicity, coupling flow and mass thresholds. Compact phase remains open.
+last_checkpoint_utc: '2026-09-14T04:35:10.471811+00:00'

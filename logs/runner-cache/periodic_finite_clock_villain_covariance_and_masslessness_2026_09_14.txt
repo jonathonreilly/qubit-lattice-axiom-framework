@@ -1,0 +1,631 @@
+===== runner cache v1 =====
+runner: scripts/periodic_finite_clock_villain_covariance_and_masslessness_2026_09_14.py
+runner_sha256: 79c876ced051c573e6829dc40c3de8fd5fca9367e56b6cdb6890eb6c1abc2087
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.63
+status: ok
+----- stdout -----
+finite_check_completed: full_rank_integer_lattice_duality
+finite_check_completed: composite_finite_group_annihilators
+finite_check_completed: selected_link_gaussian_integral
+finite_check_completed: positive_phase_curvature
+finite_check_completed: affine_gaussian_source
+finite_check_completed: complete_finite_fejer_expansion
+finite_check_completed: final_support_amplitude_ancestry
+finite_check_completed: periodic_hodge_and_winding_currents
+finite_check_completed: integer_local_chain_contraction
+finite_check_completed: conservative_geometric_constants
+finite_check_completed: real_score_contact_identity
+finite_check_completed: finite_clock_score_contact
+finite_check_completed: bounded_slab_transfer_estimate
+finite_check_completed: finite_clock_physical_transfer
+finite_check_completed: spectral_and_isotropy_hypotheses
+{
+  "affine_gaussian_source": {
+    "qualification": "The centered covariance upper bound does not extend to arbitrary affine cosets.",
+    "shifted_covariance_exceeds_beta": {
+      "beta": 0.13,
+      "shift": 0.5,
+      "theta_source_variance": 0.2509122320978923,
+      "variance": 0.2509122320978923
+    },
+    "source_identities": [
+      {
+        "beta": 0.13,
+        "shift": 0.0,
+        "theta_source_variance": 0.04097455176253548,
+        "variance": 0.0409745517625355
+      },
+      {
+        "beta": 0.13,
+        "shift": 0.17,
+        "theta_source_variance": 0.07359610192349861,
+        "variance": 0.07359610192349864
+      },
+      {
+        "beta": 0.13,
+        "shift": 0.41,
+        "theta_source_variance": 0.2234233714725466,
+        "variance": 0.22342337147254654
+      },
+      {
+        "beta": 0.13,
+        "shift": 0.5,
+        "theta_source_variance": 0.2509122320978923,
+        "variance": 0.2509122320978923
+      },
+      {
+        "beta": 0.4,
+        "shift": 0.0,
+        "theta_source_variance": 0.39529960197884373,
+        "variance": 0.39529960197884373
+      },
+      {
+        "beta": 0.4,
+        "shift": 0.17,
+        "theta_source_variance": 0.3977320043262511,
+        "variance": 0.3977320043262511
+      },
+      {
+        "beta": 0.4,
+        "shift": 0.41,
+        "theta_source_variance": 0.40397312455797213,
+        "variance": 0.40397312455797213
+      },
+      {
+        "beta": 0.4,
+        "shift": 0.5,
+        "theta_source_variance": 0.40470740395865945,
+        "variance": 0.4047074039586594
+      },
+      {
+        "beta": 0.8,
+        "shift": 0.0,
+        "theta_source_variance": 0.7999929940663822,
+        "variance": 0.7999929940663821
+      },
+      {
+        "beta": 0.8,
+        "shift": 0.17,
+        "theta_source_variance": 0.7999966248637623,
+        "variance": 0.7999966248637622
+      },
+      {
+        "beta": 0.8,
+        "shift": 0.41,
+        "theta_source_variance": 0.8000059153078651,
+        "variance": 0.800005915307865
+      },
+      {
+        "beta": 0.8,
+        "shift": 0.5,
+        "theta_source_variance": 0.8000070059375032,
+        "variance": 0.8000070059375031
+      },
+      {
+        "beta": 1.6,
+        "shift": 0.0,
+        "theta_source_variance": 1.5999999999961148,
+        "variance": 1.5999999999961143
+      },
+      {
+        "beta": 1.6,
+        "shift": 0.17,
+        "theta_source_variance": 1.5999999999981283,
+        "variance": 1.5999999999981283
+      },
+      {
+        "beta": 1.6,
+        "shift": 0.41,
+        "theta_source_variance": 1.6000000000032806,
+        "variance": 1.6000000000032806
+      },
+      {
+        "beta": 1.6,
+        "shift": 0.5,
+        "theta_source_variance": 1.6000000000038854,
+        "variance": 1.6000000000038856
+      }
+    ]
+  },
+  "bounded_slab_transfer_estimate": {
+    "random_checks": [
+      {
+        "largest_bound_fraction": 0.18572675394258972,
+        "spectral_ratio": 0.14335578705175223,
+        "states": 2
+      },
+      {
+        "largest_bound_fraction": 0.1866709568093917,
+        "spectral_ratio": 0.21489212494450727,
+        "states": 3
+      },
+      {
+        "largest_bound_fraction": 0.055376288603652735,
+        "spectral_ratio": 0.08755463968745884,
+        "states": 7
+      }
+    ],
+    "sharp_slab_exponent": "separation_minus_one"
+  },
+  "complete_finite_fejer_expansion": [
+    {
+      "exact_closed_coefficients": {
+        "1": "1/8"
+      },
+      "fejer_order": 1,
+      "gaussian_identity_max_error": 8.881784197001252e-16,
+      "initial_component_can_be_negative": true,
+      "largest_damped_factor_activity": 0.13324702658897794,
+      "positive_mixture_leaves": 157,
+      "product_identity_max_error": 8.881784197001252e-16,
+      "smallest_sampled_component_curvature": -0.11757985987401655
+    },
+    {
+      "exact_closed_coefficients": {
+        "1": "32/81",
+        "2": "2/81"
+      },
+      "fejer_order": 2,
+      "gaussian_identity_max_error": 6.439293542825908e-15,
+      "initial_component_can_be_negative": true,
+      "largest_damped_factor_activity": 0.13324702658897794,
+      "positive_mixture_leaves": 1641,
+      "product_identity_max_error": 2.6645352591003757e-15,
+      "smallest_sampled_component_curvature": -0.11757985987401655
+    }
+  ],
+  "composite_finite_group_annihilators": [
+    {
+      "N": 2,
+      "image_size": 1,
+      "kernel_size": 2,
+      "matrix": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "N": 2,
+      "image_size": 4,
+      "kernel_size": 1,
+      "matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "N": 2,
+      "image_size": 1,
+      "kernel_size": 4,
+      "matrix": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          8
+        ]
+      ]
+    },
+    {
+      "N": 4,
+      "image_size": 2,
+      "kernel_size": 2,
+      "matrix": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "N": 4,
+      "image_size": 16,
+      "kernel_size": 1,
+      "matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "N": 4,
+      "image_size": 2,
+      "kernel_size": 8,
+      "matrix": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          8
+        ]
+      ]
+    },
+    {
+      "N": 6,
+      "image_size": 3,
+      "kernel_size": 2,
+      "matrix": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "N": 6,
+      "image_size": 36,
+      "kernel_size": 1,
+      "matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "N": 6,
+      "image_size": 3,
+      "kernel_size": 12,
+      "matrix": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          8
+        ]
+      ]
+    }
+  ],
+  "conservative_geometric_constants": {
+    "N": 16384,
+    "beta1": 3.0127299032238786,
+    "beta_2000_delta_evaluation": 4.4243430754697853e-10,
+    "neighbor_counts_by_orientation": [
+      23,
+      28,
+      28,
+      28
+    ],
+    "qualification": "The rational inequalities certify the stated constants only conditional on the analytic ensemble and geometry estimates.",
+    "rigorous_delta_upper": "13695625/412316860416",
+    "rigorous_dual_beta_lower": "262144/125"
+  },
+  "final_support_amplitude_ancestry": {
+    "largest_amplitude_power": 17,
+    "qualification": "Random finite histories supplement the explicit ancestry proof; they do not establish it.",
+    "random_graph_branch_histories": 1500
+  },
+  "finite_clock_physical_transfer": {
+    "beta_spatial": 0.8,
+    "beta_temporal": 1.2,
+    "clock_N": 5,
+    "fixed_continuous_score_sup": 0.9454549093264507,
+    "full_states": 625,
+    "insertion_sup_bound": 2.9504439781719474,
+    "inverse_sandwich_norms": [
+      2.0,
+      5.0,
+      9.999999999999998
+    ],
+    "path_enumeration_errors": [
+      1.3877787807814457e-17,
+      3.469446951953614e-18,
+      2.2768245622195593e-18
+    ],
+    "physical_states": 5,
+    "spectral_ratio": 0.15581122394957875
+  },
+  "finite_clock_score_contact": {
+    "cube_clocks": [
+      {
+        "N": 2,
+        "beta": 0.8,
+        "contact": 0.753846437082938,
+        "integer_diagonal": 0.7538464370829382,
+        "integer_offdiagonal": 0.0,
+        "partition": 4.0576085839119,
+        "real_score_diagonal": 3.3343899310989185e-33,
+        "real_score_offdiagonal": 6.7084032633425155e-34
+      },
+      {
+        "N": 3,
+        "beta": 0.8,
+        "contact": 0.7724156777004411,
+        "integer_diagonal": 0.19254702923069067,
+        "integer_offdiagonal": 0.034684926053034776,
+        "partition": 1.154830058675154,
+        "real_score_diagonal": 0.5798686484697506,
+        "real_score_offdiagonal": -0.03468492605303479
+      },
+      {
+        "N": 4,
+        "beta": 1.7,
+        "contact": 1.6972550459090356,
+        "integer_diagonal": 0.8815822183293404,
+        "integer_offdiagonal": 0.144967485733327,
+        "partition": 1.7620147624848552,
+        "real_score_diagonal": 0.8156728275796955,
+        "real_score_offdiagonal": -0.14496748573332693
+      },
+      {
+        "N": 5,
+        "beta": 2.6,
+        "contact": 2.599999355702324,
+        "integer_diagonal": 1.3206640265070138,
+        "integer_offdiagonal": 0.25300558663529504,
+        "partition": 2.120431360803149,
+        "real_score_diagonal": 1.2793353291953105,
+        "real_score_offdiagonal": -0.2530055866352946
+      },
+      {
+        "N": 8,
+        "beta": 0.6,
+        "contact": 0.44312025558445706,
+        "integer_diagonal": 0.013296725173624157,
+        "integer_offdiagonal": 0.013296725173624154,
+        "partition": 1.0134758981204783,
+        "real_score_diagonal": 0.429823530410833,
+        "real_score_offdiagonal": -0.01329672517362414
+      }
+    ],
+    "large_beta": 2000.0,
+    "large_beta_N": 16384,
+    "largest_sampled_clock_score": 6280.877722544434,
+    "qualification": "This stable observable evaluation at the sufficient parameters is not a phase simulation."
+  },
+  "full_rank_integer_lattice_duality": [
+    {
+      "N": 2,
+      "beta": 0.7,
+      "beta_dual": 0.14474454806048254,
+      "covariance_identity_error": 2.220446049250313e-16,
+      "dual_partition": 1.0601940161234382,
+      "primal_covariance_eigenvalues": [
+        0.608090327232283,
+        0.608090327232283,
+        0.608090327232283,
+        0.608090327232283,
+        0.608090327232283,
+        0.608090327232283
+      ],
+      "primal_partition": 2.818831366640373
+    },
+    {
+      "N": 3,
+      "beta": 1.1,
+      "beta_dual": 0.20724787563205455,
+      "covariance_identity_error": 4.440892098500626e-16,
+      "dual_partition": 1.2761018066453436,
+      "primal_covariance_eigenvalues": [
+        0.6418066945310035,
+        0.6418066945310035,
+        0.6418066945310035,
+        0.6418066945310035,
+        0.6418066945310036,
+        0.9161233517014234
+      ],
+      "primal_partition": 1.7337908652563
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "beta_dual": 0.5066059182116889,
+      "covariance_identity_error": 2.220446049250313e-16,
+      "dual_partition": 8.46226998364224,
+      "primal_covariance_eigenvalues": [
+        0.006422692383025576,
+        0.006422692383025598,
+        0.006422692383025598,
+        0.006422692383025599,
+        0.006422692383025602,
+        0.2715843293684512
+      ],
+      "primal_partition": 1.0495339378248298
+    },
+    {
+      "N": 5,
+      "beta": 1.7,
+      "beta_dual": 0.37250435162624185,
+      "covariance_identity_error": 2.220446049250313e-16,
+      "dual_partition": 3.5435933452388166,
+      "primal_covariance_eigenvalues": [
+        0.11881531444440607,
+        0.11881531444440617,
+        0.11881531444440618,
+        0.11881531444440621,
+        0.11881531444440634,
+        1.5615976946848376
+      ],
+      "primal_partition": 1.3819114808790776
+    },
+    {
+      "N": 8,
+      "beta": 2.6,
+      "beta_dual": 0.6235149762605402,
+      "covariance_identity_error": 1.1102230246251565e-16,
+      "dual_partition": 12.412027653822271,
+      "primal_covariance_eigenvalues": [
+        0.004534227904802408,
+        0.00453422790480246,
+        0.004534227904802513,
+        0.004534227904802518,
+        0.004534227904802785,
+        2.582862966097634
+      ],
+      "primal_partition": 1.6514006398919663
+    }
+  ],
+  "integer_local_chain_contraction": {
+    "box_side": 4,
+    "edge_chain_identities": 2000,
+    "max_filling_area": 12
+  },
+  "periodic_hodge_and_winding_currents": {
+    "cell_counts": {
+      "0": 256,
+      "1": 1024,
+      "2": 1536,
+      "3": 1024,
+      "4": 256
+    },
+    "complete_coloring_conflict_check": true,
+    "complete_hodge_operator_identity": true,
+    "complete_one_form_laplacian_identity": true,
+    "complete_scalar_laplacian_identity": true,
+    "harmonic_two_form_rank": 6,
+    "side": 4,
+    "star_codelta_to_curl_sign": -1,
+    "surviving_harmonic_terms": 3,
+    "winding_pair_original": 0.9697240333076211,
+    "winding_pair_renormalized": 0.9697240333076211,
+    "wrong_winding_drop_error": 0.030275966692378864
+  },
+  "positive_phase_curvature": {
+    "negative_mixture_counterexample_curvature": -0.3311036789297655,
+    "positive_phase_integrals": [
+      {
+        "currents": 1,
+        "lower_curvature_bound": -0.23695694613879448,
+        "smallest_sampled": -0.13866820862717963
+      },
+      {
+        "currents": 3,
+        "lower_curvature_bound": -0.7642887665768622,
+        "smallest_sampled": -0.2969595999455152
+      },
+      {
+        "currents": 5,
+        "lower_curvature_bound": -0.3162975986710728,
+        "smallest_sampled": -0.06877115019702325
+      }
+    ]
+  },
+  "real_score_contact_identity": [
+    {
+      "beta": 0.8,
+      "contact": 0.7154079551197128,
+      "integer_variance": 0.044924849078877276,
+      "partition": 1.0470361035166638,
+      "real_score_offdiagonal": -0.04492484907887729,
+      "real_score_variance": 0.6704831060408356,
+      "smallest_covariance_eigenvalue": 0.445858860646449
+    },
+    {
+      "beta": 1.7,
+      "contact": 1.698449264368391,
+      "integer_variance": 0.25989912626298983,
+      "partition": 1.3441941170917586,
+      "real_score_offdiagonal": -0.25989912626298983,
+      "real_score_variance": 1.438550138105401,
+      "smallest_covariance_eigenvalue": 0.13905450679045156
+    },
+    {
+      "beta": 2.6,
+      "contact": 2.5999852873007487,
+      "integer_variance": 0.4304753455824507,
+      "partition": 1.6507011282823556,
+      "real_score_offdiagonal": -0.43047534558245076,
+      "real_score_variance": 2.169509941718299,
+      "smallest_covariance_eigenvalue": 0.017133213806045332
+    }
+  ],
+  "selected_link_gaussian_integral": {
+    "edges": 92,
+    "error": 0.0,
+    "plaquettes": 78,
+    "rank": 53,
+    "selected_links": [
+      1,
+      61
+    ],
+    "source_integral": 1.04278027907492,
+    "transformed_integral": 1.04278027907492,
+    "wrong_double_damping_error": 0.025799864695309704,
+    "wrong_phase_current_error": 0.020099133523822754
+  },
+  "spectral_and_isotropy_hypotheses": {
+    "anisotropic_OU_ratio": 0.3,
+    "anisotropic_examples": [
+      {
+        "distance": 1,
+        "spatial_covariance": 0.19170024978210182,
+        "temporal_covariance": 0.11202675537869845
+      },
+      {
+        "distance": 3,
+        "spatial_covariance": 0.03684928802125978,
+        "temporal_covariance": 0.009933951784125367
+      },
+      {
+        "distance": 10,
+        "spatial_covariance": 0.003642430214986305,
+        "temporal_covariance": 2.1722913121858727e-06
+      },
+      {
+        "distance": 30,
+        "spatial_covariance": 0.0004083013503872068,
+        "temporal_covariance": 7.5743114617135e-17
+      }
+    ],
+    "centered_invariant_vector_detected": true,
+    "multiplier_axis_values": [
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "shell_sum": 446.6296296296296
+  }
+}
+per_element: scalar theta derivatives, cosine factors and exact finite clock Fourier weights are checked; no single factor is treated as a phase proof.
+per_site: finite cochain incidence, gauge constraints, edge coloring and the 107-edge geometric neighborhood are checked in their stated domains.
+per_mode: finite Fourier projectors, exact dual covariance matrices and transfer spectral identities are checked; continuum dispersion is not inferred.
+per_block: exact cube duality, full square Fejer expansions, the even side-four torus and finite physical transfer blocks are checked personally.
+lattice_wide: checked and not executed — the infinite-volume covariance and masslessness statements rest on the uniform written proof, not finite samples.
+TOTAL: PASS=15 FAIL=0
+scope: finite identities and explicit counterexamples only; independent proof review and formal audit remain pending.
+
+----- stderr -----
+

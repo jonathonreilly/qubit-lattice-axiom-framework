@@ -15,7 +15,9 @@ Kubo normalization, stationary open-current versus thermal closed histories,
 integer sheet periods, the explicit height sweep and its weak finite bound,
 and the 864+16 component/thermal/global-minimum distinction. The final narrow
 wording changes remove an ambiguous implication of independent authorship,
-clarify the section heading and wrap the restricted-cube limitation.
+clarify the section heading and wrap the restricted-cube limitation. A final
+edge-case pass states the excited-gap claim only for non-singletons and the
+ratio-form dual equality only for C>0; the quadratic dual includes zero flow.
 
 Exploration preserved an initial restricted cube with no allowed moves: its
 Poisson diagnostic failed because that cube was frozen. Choosing an active

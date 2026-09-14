@@ -67,8 +67,9 @@ For arbitrary real diagonal d_x, define
 Reverse entries are conjugates. H(0) is real stoquastic and irreducible.
 A scalar shift of -H(0) gives a nonnegative irreducible matrix with positive
 diagonal. Perron-Frobenius therefore gives a simple ground energy E0 and a
-strictly positive real normalized vector psi_x, sum psi_x^2=1. Its finite
-excited gap is positive. No lower bound uniform in component/volume follows.
+strictly positive real normalized vector psi_x, sum psi_x^2=1. For a component
+with at least two states, its finite excited gap is positive. No lower bound
+uniform in component/volume follows.
 The simple branch E0(theta) is analytic near theta=0 and even by conjugation.
 A singleton has no source edges and all response formulas below give zero.
 
@@ -128,8 +129,9 @@ For any edge flow j with B^T j=0, Cauchy-Schwarz gives
 
     C(a) >= 2 (a.j)^2 / sum_e j_e^2/w_e.                    (3)
 
-The denominator must be positive; zero j is omitted. Equality is attained
-by j=W(a+B phi) for the minimizing phi. Equivalently,
+The denominator must be positive; zero j is omitted. When C(a)>0, equality
+is attained by j=W(a+B phi) for the minimizing phi. The following dual
+maximum also covers C(a)=0, with the zero flow allowed:
 
     C(a)/2 = max_(B^T j=0) [2 a.j-sum_e j_e^2/w_e].         (4)
 

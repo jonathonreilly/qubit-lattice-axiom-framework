@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://arxiv.org/pdf/2401.04800v2",
+    "local": "/tmp/toe-charged-reading-20260914/nguyen-sulejmanpasic-unsal-2024.pdf",
+    "pages": 11,
+    "sha256": "e80ffa436dd1f557cca23e1359b6615625f6d68dac93c0f1a0e8e2cd4160347b",
+    "read_status": "downloaded_and_extracted_not_yet_read"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2505.00079v2",
+    "local": "/tmp/toe-charged-reading-20260914/giansiracusa-lanners-sulejmanpasic-2025.pdf",
+    "pages": 11,
+    "sha256": "a21db42bc705c76cbf3adcaecad1b1ab28b56959b36a5eae9133f61b1f0a0515",
+    "read_status": "downloaded_and_extracted_not_yet_read"
+  }
+]

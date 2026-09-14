@@ -12,19 +12,20 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 7
-active_route: finite_clock_dual_covariance_and_uniform_coset_curvature
+block: 8
+active_route: matched_principal_flux_gaussian_transfer_and_penalty_hamiltonian
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Adversarially review the complete block-7 finite-clock phase draft, integrate its finite challenges, and package a review milestone only if the proof survives.
+next_action: Prove and test the periodized Gaussian principal-flux kernel, its positivity, normalization and exact penalty-Hamiltonian time limit; then attack its actual-state phase.
 strongest_unresolved_obligation: Uniform sector-energy comparison or an actual-state Coulomb-phase estimate for the specified Hamiltonian.
-working_result: Four public milestones PR8123-8126 remain pending review. Block7 now has a complete private periodic finite-clock masslessness proof draft with conservative parameters; author review, independent review, selected Hamiltonian identification and native law remain open.
+working_result: Five public milestones PR8123-8127 remain pending independent review. PR8127 gives an author-derived periodic finite-clock observable masslessness theorem for supplied parameters. Selected Hamiltonian identification, its phase and native law remain open.
 public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8125
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126
+  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127

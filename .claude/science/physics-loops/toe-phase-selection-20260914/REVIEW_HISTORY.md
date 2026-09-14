@@ -205,3 +205,94 @@ Conformance dispositions (personal author review):
     but checked no existing audit rows, so it is not new-claim audit coverage.
     Full pipeline, strict lint, integrated landing evidence and independent
     review remain pending for the eventual reviewed tree.
+
+
+## Periodic finite-clock Villain phase source: personal review, 2026-09-14
+
+Delivery checkout: /Users/jonreilly/Documents/Codex/toe-periodic-clock-phase-20260914.
+Branch: physics-loop/periodic-clock-covariance-20260914.
+Frozen base: 5deabeb698a27c2c3f68c5df685af2521ef15307, freshly fetched at 19:32 UTC.
+Preflight disk guard: 154 GiB available. The checkout is active scratch with
+unpreserved source until its push; do not remove it prematurely.
+
+The complete 790-line source and 902-line runner were read personally. A
+second pass tightened the OS statement to the single plaquette score whose
+clustering was proved; separated the Fejer cutoff from the harmonic variable;
+derived harmonic nullity from connected scalar incidence and complete Hodge
+operators; and checked every nonzero coloring conflict on the finite torus.
+All derivation obligations for the STATED model have a written argument.
+Independent review is pending; no formal retention, selected Hamiltonian
+phase, native law or axiom update is asserted.
+
+Runner SHA256: 79c876ced051c573e6829dc40c3de8fd5fca9367e56b6cdb6890eb6c1abc2087.
+Source SHA256: bfedf452ec4e5b4b19c7099cb4c5e7ebc69aca4198fbdfba1c8788647ddea237.
+Fresh canonical cache: ok, 2.626566 seconds, declared timeout 180 seconds.
+Eighteen targeted faults all raise AssertionError; see BLOCK7_MUTATIONS.json.
+The first clock-sign driver accidentally changed both comparison paths; it
+was corrected to mutate only the angle calculation, then detected. This is
+recorded in the public source as well, not counted as a successful first test.
+The N1-N8 answers land in the note; all five substantive N5 resolution lines
+are present in the canonical cache. Mechanical N5 readiness has no issue.
+
+### Promotion value, V1–V5
+
+V1: The owner asks for a derivation that advances an actual finite-carrier
+phase or an honest axiom-update boundary. The current finite-clock note's
+sections 5–6 explicitly leave its interacting many-link phase open after a
+separate oscillator comparison. This source targets an actual isotropic
+Euclidean finite-clock state's bounded observable and OS transfer.
+V2: Added a self-contained all-affine-coset covariance argument, finite-group
+Poisson covariance duality, periodic winding/large-current control and the
+bounded-score-to-OS implication. Search on the frozen current-main checkout:
+rg -l -i 'Coulomb phase|massless phase|ground.space.*gap|gap.*ground.space' docs
+and rg -n -i 'villain|fröhlich|froehlich|shifted.*curl|affine.*curl' docs
+with markdown filtering. Closest source hits were the current finite-clock
+and cubic-ice notes, read in their phase/boundary sections. Other Villain hits
+were MONOPOLE_DERIVED_NOTE (configuration versus free-energy distinction),
+VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21 (quadratic propagator proxy),
+and LATTICE_GREEN_FUNCTION_ZERO_ARGUMENT_NARROW_THEOREM_NOTE_2026-05-17
+(finite scalar Green sums). Those relevant sections were read. No matching
+uniform shifted-curl finite-clock actual-state proof was found in that search.
+This is a repo addition, not a worldwide novelty claim; FS method is explicit.
+V3: The specified periodic measure has a complete new proof in sections 2–11.
+The selected continuous-time Hamiltonian and native action are separate open
+identifications, not used as assumptions or relabeled solved lemmas.
+V4: The new distinction is actual interacting-state clustering plus
+nonsummability, as opposed to a supplied Gaussian tangent or finite trial
+expectation. The statistical uniform estimate supplies the mathematical gain.
+V5: Closest current campaign result PR8124 is an exact noncompact Gaussian
+transfer and Coulomb-cost computation. Here the local alphabet is finite and
+the state is interacting; integer-coset mixing, positive Fejer ensembles and
+topological currents are load-bearing new mechanisms. The current-main
+clock and ice sources leave or import their microscopic phase relation.
+
+### Conformance sections 1–12
+
+1. Self-contained note/runner; no scientific input path from private or
+   unlanded work. All needed mathematical arguments are carried in the delta.
+2. Top-level 180-second timeout; canonical envelope cache is fresh against
+   final runner SHA. Source/integrity reads accurately declared absent.
+3. Model/observable/gap scope agrees across title, metadata, prose and output.
+   Proposed source status only; count of fifteen finite families is not proof.
+4. N1–N8 source section and N5 cache lines are included. Five distinct
+   mathematical evasions are addressed, not five phrasings or authority votes.
+5. Quantifiers, explicit model premises, full obligation graph, degenerate
+   invariant space, winding sectors and time-limit boundary are written.
+6. Eighteen independent-path fault injections cover every finite check family.
+   The universal proof is text, not an enumeration claim.
+7. One primary standalone runner; no helper registry change or dependency
+   policy mutation is needed.
+8. Second serialized graph build matches the final note hash. Manifest adds
+   exactly one zero-edge node; existing nodes and all edge counts unchanged.
+   Only the intended four source/evidence/manifest paths are staged.
+9. Full source status/trace/import contract; contextual consumer identified
+   without importing its theorem or audit status.
+10. No auditor-owned verdict, ledger, prompt or effective-status output added.
+11. New finite counts derive from the current runner; date/base/source scopes
+   were re-read on the frozen current-main tree. Primary paper is method
+   provenance, not a substitute for the claimed proof.
+12. Focused vocabulary report zero; Python compilation, staged diff whitespace
+   and explicit file-set checks clean. The changed-evidence checker sees no
+   existing audited rows for this new source; that is NOT new-claim audit
+   coverage. Full pipeline, strict lint and exact integrated landing gates
+   remain shared landing work. No author main push/merge is authorized here.

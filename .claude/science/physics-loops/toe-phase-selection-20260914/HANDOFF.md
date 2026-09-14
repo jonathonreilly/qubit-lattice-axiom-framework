@@ -234,3 +234,30 @@ packaging a public milestone. A new primary paper was downloaded for the
 following anisotropic/quantum route: Borsten--Kim arXiv2507.10459v2, 11pp,
 SHA3a25df2f0ed23835c2f9726cce4cc219ec2eb194dadbbc4a24805b4a964a9326.
 Only parts have been read so far; it is NOT a proof input to block7.
+
+
+PR8127 delivers the periodic-clock covariance and observable-masslessness
+source at 075a47fd49e98bb4c8f4b88ec149dcb78a52b5cd. Exact remote/PR head and
+clean tracked/untracked state were verified; ten ignored generated/cache
+files were classified. Delivery checkout was removed at 19:54:33 UTC.
+See BLOCK7_DELIVERY.json and review/BLOCK7_SWEEP.json. The final public
+note is a tightened successor to the private proof draft; use the public
+commit for its precise single-score OS wording, Fejer cutoff notation and
+complete harmonic/coloring checks. All eighteen faults detected; final
+runner SHA79c876..., source SHAbfedf452..., fresh cache2.626566sec/180.
+No independent audit or main landing. Five public milestones now exist.
+
+Block8 starts from BLOCK8_ANISOTROPIC_ROUTE_NOTES.md. The key candidate is
+an EXACT positive periodized Gaussian kernel restricted to the nonlinear
+principal-flux graph a -> (a,b(a)). It should recover the ACTUAL wrap-penalty
+hopping and fixed diagonal under q=epsilon t, with a separate spatial
+potential factor. Prove Fourier positivity, gauge covariance, finite-volume
+error bounds and physical-sector restriction; compare with direct matrices.
+Do not replace fixed diagonal by a row-normalized escape rate. Phase control
+on the matched anisotropic family remains the hard target. The pure clock
+Villain time scaling is logarithmic; the all-couplings-large isotropic
+proof does not transfer uniformly by assertion.
+
+Continue PERSONALLY, no agents, until 2026-09-15 01:30:44 UTC. At 19:55 UTC
+more than five and a half hours remained. Finishing this transfer construction
+must trigger reassessment and the next useful route, not an early stop.

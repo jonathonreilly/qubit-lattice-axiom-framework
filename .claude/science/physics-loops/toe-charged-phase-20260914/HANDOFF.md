@@ -93,3 +93,16 @@ finite-cyclic alias currents, and look for a volume-uniform source-response
 bound. A matched anisotropic transfer/Hamiltonian limit is the next alternative
 if the representation cannot yet supply the infrared estimate. Do not turn
 the massive noncompact theorem into a massless compact or Hamiltonian claim.
+
+
+Block3 working checkpoint (not delivered): exact finite determinant conserved
+currents, U(1)/Z_N character sums, affine integer-Gaussian comparisons and
+physical-source identity are written and checked. A strict M=5 scalar-square
+witness shows that even the canonical q marginal after summing fermion currents
+can be negative (N=7, beta=1); the original measure is positive. Separately,
+the fixed-N Villain temporal and spatial scalings yield the specified clock
+Hamiltonian on fixed boxes. The massive absolute-path curvature estimate does
+not cover that limit, while the r=1 operator remains coercive. The general
+finite-group logarithmic mechanism has prior art in arXiv:2609.07886v2;
+no novelty or phase claim is made for that general mechanism. Two exploratory
+runners passed with empty stderr. Continue personally until 13:09:34 UTC.

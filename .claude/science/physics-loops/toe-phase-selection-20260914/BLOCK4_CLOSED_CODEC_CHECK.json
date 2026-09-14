@@ -1,0 +1,84 @@
+{
+  "exact_radial_cases": [
+    {
+      "radius": "0",
+      "image": "0",
+      "inverse": "0"
+    },
+    {
+      "radius": "1",
+      "image": "1/4",
+      "inverse": "1"
+    },
+    {
+      "radius": "2",
+      "image": "sqrt(2)/8",
+      "inverse": "2"
+    },
+    {
+      "radius": "3",
+      "image": "sqrt(5)/10",
+      "inverse": "3"
+    },
+    {
+      "radius": "4",
+      "image": "3*sqrt(10)/40",
+      "inverse": "4"
+    },
+    {
+      "radius": "5",
+      "image": "sqrt(17)/17",
+      "inverse": "5"
+    },
+    {
+      "radius": "6",
+      "image": "5*sqrt(26)/104",
+      "inverse": "6"
+    },
+    {
+      "radius": "7",
+      "image": "3*sqrt(37)/74",
+      "inverse": "7"
+    },
+    {
+      "radius": "8",
+      "image": "7*sqrt(2)/40",
+      "inverse": "8"
+    },
+    {
+      "radius": "9",
+      "image": "2*sqrt(65)/65",
+      "inverse": "9"
+    },
+    {
+      "radius": "10",
+      "image": "9*sqrt(82)/328",
+      "inverse": "10"
+    },
+    {
+      "radius": "11",
+      "image": "5*sqrt(101)/202",
+      "inverse": "11"
+    },
+    {
+      "radius": "sqrt(2)",
+      "image": "sqrt(6)/12",
+      "inverse": "sqrt(2)"
+    },
+    {
+      "radius": "7/3",
+      "image": "7*sqrt(58)/232",
+      "inverse": "7/3"
+    },
+    {
+      "radius": "1/100",
+      "image": "sqrt(10001)/40004",
+      "inverse": "1/100"
+    }
+  ],
+  "all_eight_coordinates": true,
+  "boundary_inverse_radius": "1",
+  "jump_at_radius_one": "1/4 - sqrt(2)/8",
+  "measure_argument": "maps differ only on countably many Lebesgue-null spheres",
+  "scope": "Borel equivariant bijection to closed chart; not continuous or finite-precision stable"
+}

@@ -1,0 +1,50 @@
+{
+  "cases": [
+    {
+      "cover": [
+        4,
+        4,
+        4
+      ],
+      "coarse_cells": 64,
+      "active_sites": 265401,
+      "hidden_variables": 266600,
+      "maximum_payload_load": 4,
+      "ordinary_maximum": 2,
+      "path_edges_min": 374,
+      "path_edges_max": 1816,
+      "wrap_steps": 96,
+      "coordinate_sha256": "3533db04472f33edae97b9cc18f492bf54625a6ce3d9fdd64bc6adf4d4f68944",
+      "microcell_side": 360,
+      "source_radius": 1,
+      "home_payloads": [
+        4,
+        3
+      ],
+      "edge_types": 5
+    },
+    {
+      "cover": [
+        6,
+        6,
+        6
+      ],
+      "coarse_cells": 216,
+      "active_sites": 414245,
+      "hidden_variables": 414720,
+      "maximum_payload_load": 2,
+      "ordinary_maximum": 2,
+      "path_edges_min": 1526,
+      "path_edges_max": 2232,
+      "wrap_steps": 180,
+      "coordinate_sha256": "ae1b2e3714fdb3106e518c44b739132083bff4d395dfb7ca73e1a0efc3763688",
+      "microcell_side": 336,
+      "source_radius": 2,
+      "home_payloads": [
+        1
+      ],
+      "edge_types": 1
+    }
+  ],
+  "scope": "additional exact-coordinate finite falsifiers; not a proof by sampling"
+}

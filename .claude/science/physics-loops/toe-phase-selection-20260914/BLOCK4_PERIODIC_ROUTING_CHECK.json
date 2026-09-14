@@ -1,0 +1,57 @@
+{
+  "period": 4,
+  "microcell_side": 296,
+  "edge_types": 4,
+  "home_types": 1,
+  "external_endpoints": 8,
+  "fundamental": {
+    "cover": [
+      4,
+      4,
+      4
+    ],
+    "coarse_cells": 64,
+    "active_sites": 196288,
+    "hidden_variables": 196864,
+    "maximum_payload_load": 4,
+    "ordinary_maximum": 2,
+    "path_edges_min": 366,
+    "path_edges_max": 1522,
+    "wrap_steps": 96,
+    "coordinate_sha256": "9175291daa2dfb1cbb74990c609c9400bc095c3e331985849853c5c91a488384"
+  },
+  "doubled": {
+    "cover": [
+      8,
+      4,
+      4
+    ],
+    "coarse_cells": 128,
+    "active_sites": 392576,
+    "hidden_variables": 393728,
+    "maximum_payload_load": 4,
+    "ordinary_maximum": 2,
+    "path_edges_min": 366,
+    "path_edges_max": 1522,
+    "wrap_steps": 160,
+    "coordinate_sha256": "721c558079758f0c37d65bedf5dfdfc69f9d7cf46339ec83351027564676c03c"
+  },
+  "finite_route_site_roles": 196224,
+  "translated_vertices_checked": 28152,
+  "whole_graph_energy": {
+    "hidden_variables": 196864,
+    "compiled_action": 827559.4773815112,
+    "visible_plus_unit_residual_action": 827559.4773815109,
+    "relative_error": 4.220191720670725e-16,
+    "maximum_path_error": 4.547473508864641e-12,
+    "source_diagonal_dominance_margin": 4.154523166106599,
+    "status": "finite full routed action identity; Gaussian integral follows from proved unit triangular Jacobian"
+  },
+  "covariance": {
+    "rotations": 24,
+    "rotated_vertices": 225216,
+    "carrier_error": 3.8586592426327e-12,
+    "source_representation": "decoded scalar labels fixed; frame and spatial graph co-rotate"
+  },
+  "scope": "generic connected periodic grouped graph; DK matching and Record star remain open"
+}

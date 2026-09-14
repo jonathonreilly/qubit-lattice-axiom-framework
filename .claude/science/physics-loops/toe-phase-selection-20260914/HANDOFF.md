@@ -104,3 +104,18 @@ periodic geometry allocates planes per edge type and coarse color instead
 of per edge occurrence. Neither codec nor complete routing has yet been
 checked; source-graph matching and literal Record/formation boundaries
 remain essential. Continue personally, with no agents, to 01:30:44 UTC.
+
+Block 4 checkpoint in progress: the periodic coordinate map now exists and
+has a general separated-home occupancy proof, exact unit-residual Gaussian
+marginal proof, optional Borel completion to closed matrix chart supports,
+and conditional uniform massive spectral bounds. Finite tests cover 4^3 and
+8x4x4 with all wrap seams; multiple home types and negative/range-two edges;
+and the actual DK fixture's protected cluster demands (8,1,1). The latter
+matches local geometry, not the arbitrary-cover DK source. Read sections
+F--J of BLOCK4_PERIODIC_COMPILER_DESIGN.md and the latest JSONs. The routing
+plane now uses the maximum of both endpoints' coarse z, avoiding downward
+self-retracing in legacy terminal stubs. All science is private/author checked,
+no new formal retained status or native formation process. Next: complete
+proof review, decisive mutations and bounded milestone packaging if sound,
+then reassess the formation/process bottleneck. Keep working personally until
+2026-09-15 01:30:44 UTC.

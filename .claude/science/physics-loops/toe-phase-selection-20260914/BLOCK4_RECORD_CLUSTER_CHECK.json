@@ -1,0 +1,49 @@
+{
+  "source_revision": "b1f7c18aa745b7e490a7cac335bfb84905a70e429d789720a11d9d0ae9071aad",
+  "ports": [
+    8,
+    1,
+    1
+  ],
+  "cluster_payloads": [
+    4,
+    3,
+    2,
+    3
+  ],
+  "blank_neighbors_preserved": true,
+  "microcell_side": 360,
+  "fundamental": {
+    "cover": [
+      4,
+      4,
+      4
+    ],
+    "coarse_cells": 64,
+    "active_sites": 289424,
+    "hidden_variables": 290464,
+    "maximum_payload_load": 4,
+    "ordinary_maximum": 3,
+    "path_edges_min": 424,
+    "path_edges_max": 1520,
+    "wrap_steps": 112,
+    "coordinate_sha256": "7a02a6c97e449ffdf1036bb988a8c179a475e6da0637fa0cfd1855c2b668cc07"
+  },
+  "doubled": {
+    "cover": [
+      8,
+      4,
+      4
+    ],
+    "coarse_cells": 128,
+    "active_sites": 578848,
+    "hidden_variables": 580928,
+    "maximum_payload_load": 4,
+    "ordinary_maximum": 3,
+    "path_edges_min": 424,
+    "path_edges_max": 1520,
+    "wrap_steps": 192,
+    "coordinate_sha256": "340956dc562735692453fb8f2c7738d93241eae61aa8217a65597705a67052d0"
+  },
+  "scope": "actual finite-fixture cluster port/geometry match; periodic DK source still not matched"
+}

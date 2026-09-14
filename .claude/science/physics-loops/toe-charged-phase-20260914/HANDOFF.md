@@ -1,3 +1,11 @@
+# Twelve-hour window complete
+
+The personal campaign has reached its 2026-09-14 13:09:34 UTC deadline.
+No further runtime is inferred. The science remains open and independently
+unreviewed. Use CAMPAIGN_OUTCOME_AND_NEXT_TARGETS.md for the ranked next
+obligations and the external completion receipt for exact recovery and
+cleanup. The historical active instructions below are superseded.
+
 # Current handoff — personal campaign final block
 
 As of 2026-09-14T13:00:22.637464+00:00, block14 is the active private continuation. Read

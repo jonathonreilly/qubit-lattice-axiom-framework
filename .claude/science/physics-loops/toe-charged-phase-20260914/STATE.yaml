@@ -1,6 +1,6 @@
 loop: toe-charged-phase-20260914
 mode: campaign
-status: active
+status: completed_time_window
 branch: physics-loop/toe-charged-phase-20260914
 worktree: /Users/jonreilly/Documents/Codex/toe-charged-phase-20260914
 main_revision: 5deabeb698a27c2c3f68c5df685af2521ef15307
@@ -20,6 +20,9 @@ formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-charged-phase-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Personally derive positive orbit-normalized clock loop contractions and
-  test the remaining same-state expectation obligation; continue until 13:09:34 UTC.
+next_action: Independent review of frozen sources, then the ranked same-Hamiltonian phase obligations. No further autonomous runtime authorized by this window.
 last_checkpoint_utc: '2026-09-14T13:00:22.637464+00:00'
+
+completed_time_window_utc: '2026-09-14T13:09:43.398250+00:00'
+science_objective_status: open_no_toe_or_axiom_forcing_contradiction
+worktree_disposition: remove_after_exact_remote_and_clean_verification

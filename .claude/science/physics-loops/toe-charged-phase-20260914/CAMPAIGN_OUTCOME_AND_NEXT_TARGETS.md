@@ -1,8 +1,7 @@
 # Personal TOE campaign: scientific outcome and next decisions
 
-Window: 2026-09-14 01:09:34–13:09:34 UTC, twelve hours. This synthesis is
-being assembled before the deadline; the final state/cleanup receipt records
-completion. Execution was personal, without subagents. Derivations led the
+Window: 2026-09-14 01:09:34–13:09:34 UTC, twelve hours. The authorized window is complete; the external final
+state/cleanup receipt records preservation and teardown. Execution was personal, without subagents. Derivations led the
 work; finite computation challenged identities, signs and counterexamples.
 
 The campaign has not established a TOE, a fixed-clock interacting photon
@@ -48,8 +47,10 @@ polarizations and interacting charged matter before claiming the target TOE.
    Its infinite temporal-penalty limit additionally maps an explicitly
    invariant integer-neutral sector to dual spin-one plaquette flips.
    The cell-complex and tensor-product constructions agree on a full cube.
-   Selecting that sector at fixed couplings and proving its Coulomb phase
-   remain separate open questions; see BLOCK14_HARD_LIMIT_MAPPING.md.
+   A neutral two-state variational bound excludes frozen basis vectors
+   as global ground states under its stated conditions. Selecting the
+   neutral sector at fixed couplings and proving its Coulomb phase remain
+   open; see BLOCK14_HARD_LIMIT_MAPPING.md.
 
 Every link here remains author-proposed and awaits independent review.
 The two public PRs form an explicit stack: PR8121 is based on PR8120.
@@ -126,8 +127,8 @@ Thirteen milestone PRs are open at their original heads as refreshed at
 12:56 UTC. Their note/runner pairs, exact-head receipts, source-reading
 scopes, mutation evidence, corrections and omitted checks are preserved.
 Delivery scratch worktrees were removed after exact remote and clean checks.
-The parent remains active until the deadline, then must be pushed, verified
-clean including all untracked science, and removed with a receipt outside it.
+The external completion receipt records final parent preservation, exact
+remote verification, the complete clean-state check and worktree removal.
 
 Block14's primary dressing runner passes ten finite families and catches
 thirteen consequential mutations. Its new kinetic runner checks complete

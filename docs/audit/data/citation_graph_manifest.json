@@ -1,6 +1,6 @@
 {
  "edge_count": 12519,
- "node_count": 5041,
+ "node_count": 5042,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4943,6 +4943,10 @@
    "out_degree": 0
   },
   "finite_rank_source_to_metric_theorem_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "finite_step_gaussian_gauge_canonical_logarithm_and_coulomb_cost_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

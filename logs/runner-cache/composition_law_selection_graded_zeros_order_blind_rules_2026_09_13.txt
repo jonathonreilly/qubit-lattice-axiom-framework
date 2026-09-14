@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.py
+runner_sha256: f1e6dcdb3117aad956fa7bfdcd9e88ea46213e89eeefcf750bf66bdc2e9fe158
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 80.71
+status: ok
+----- stdout -----
+PASS grid2x3 N=2: exact graded kernel of H-E is one-dimensional kernel dim 1
+PASS grid2x3 N=2: E is the simple lowest eigenvalue, gap >= 1/4 negative inertia of H-(E+1/4) = 1
+PASS grid2x3 N=2: zero set of the graded ground vector has 3 patterns |Z| = 3 of 15
+PASS grid2x3 N=2: ground vector is a signed-automorphism eigenvector, character +-1 (|Aut| = 4) characters ['-1', '1']
+PASS grid2x3 N=2: chi(sigma) sgn_S(sigma) = -1 predicts 3 of 3 zeros, all genuine predicted 3, actual 3
+PASS grid2x3 N=2: signed components (+,-,0) = (9, 3, 3) got (9, 3, 3)
+PASS grid2x3 N=2: ungraded graph connected, off-diagonal <= 0 (Perron: positive ground vector, no zeros) True
+PASS grid2x3 N=3: exact graded kernel of H-E is one-dimensional kernel dim 1
+PASS grid2x3 N=3: E is the simple lowest eigenvalue, gap >= 1/4 negative inertia of H-(E+1/4) = 1
+PASS grid2x3 N=3: zero set of the graded ground vector has 2 patterns |Z| = 2 of 20
+PASS grid2x3 N=3: ground vector is a signed-automorphism eigenvector, character +-1 (|Aut| = 4) characters ['-1', '1']
+PASS grid2x3 N=3: chi(sigma) sgn_S(sigma) = -1 predicts 0 of 2 zeros, all genuine predicted 0, actual 2
+PASS grid2x3 N=3: ungraded graph connected, off-diagonal <= 0 (Perron: positive ground vector, no zeros) True
+PASS cube N=4: exact graded kernel of H-E is one-dimensional kernel dim 1
+PASS cube N=4: E is the simple lowest eigenvalue, gap >= 1/4 negative inertia of H-(E+1/4) = 1
+PASS cube N=4: zero set of the graded ground vector has 12 patterns |Z| = 12 of 70
+PASS cube N=4: ground vector is a signed-automorphism eigenvector, character +-1 (|Aut| = 48) characters ['-1', '1']
+PASS cube N=4: chi(sigma) sgn_S(sigma) = -1 predicts 12 of 12 zeros, all genuine predicted 12, actual 12
+PASS cube N=4: signed components (+,-,0) = (29, 29, 12) got (29, 29, 12)
+PASS cube N=4: ungraded graph connected, off-diagonal <= 0 (Perron: positive ground vector, no zeros) True
+PASS grid3x3 N=3: exact graded kernel of H-E is one-dimensional kernel dim 1
+PASS grid3x3 N=3: E is the simple lowest eigenvalue, gap >= 1/4 negative inertia of H-(E+1/4) = 1
+PASS grid3x3 N=3: zero set of the graded ground vector has 8 patterns |Z| = 8 of 84
+PASS grid3x3 N=3: ground vector is a signed-automorphism eigenvector, character +-1 (|Aut| = 8) characters ['-1', '1']
+PASS grid3x3 N=3: chi(sigma) sgn_S(sigma) = -1 predicts 4 of 8 zeros, all genuine predicted 4, actual 8
+PASS grid3x3 N=3: ungraded graph connected, off-diagonal <= 0 (Perron: positive ground vector, no zeros) True
+PASS grid2x3 N=2 exterior-unrecorded: 476 rules (16 classes) forced -; never 000
+PASS grid2x3 N=3 exterior-unrecorded: 201 rules (18 classes) forced 031 132; never 032 131
+  grid2x3 N=3 forced forbidden: 031 132
+  grid2x3 N=3 never forbidden: 032 131
+PASS cube N=4 exterior-unrecorded: 8750 rules (20 classes) forced -; never -
+PASS grid3x3 N=3 exterior-unrecorded: 421 rules (26 classes) forced 020 021 131 140 142; never 000 010 022 120 121
+PASS joint over the three discriminator sectors (2x3 N=2, cube N=4, 3x3 N=3): 160 rules
+PASS joint triple: forced forbidden classes 020 021 031 032 100 110 131 140 142
+PASS joint triple: never forbidden classes 000 010 011 022 030 120 121 130 132 141
+  joint triple example rule F = 020 021 031 032 033 040 041 042 043 100 110 111 131 140 142
+PASS pair grid2x3 N=2 + cube N=4: 1021 rules
+PASS pair grid2x3 N=2 + grid3x3 N=3: 384 rules
+PASS pair cube N=4 + grid3x3 N=3: 189 rules
+PASS grid2x3 N=2 and N=3 jointly: no N-blind sequential support rule (0 rules)
+PASS all four sectors jointly: 0 rules
+PASS grid2x3 N=2 exterior-empty: 782 rules (16 classes) forced -; never -
+PASS grid2x3 N=3 exterior-empty: 2607 rules (19 classes) forced -; never -
+PASS cube N=4 exterior-empty: 8750 rules (20 classes) (= exterior-unrecorded count; degree-regular) forced -; never -
+PASS grid3x3 N=3 exterior-empty: 1116 rules (26 classes) forced 020 021 101 102; never 011 130
+PASS exterior-empty: grid2x3 N=2 and N=3 jointly: 39 N-blind rules
+PASS exterior-empty pair: forced 010 020 111 112 130
+PASS exterior-empty pair: never 000 001 002 011 021 101 120 121
+  exterior-empty pair example rule F = 003 010 020 030 100 102 110 111 112 130
+PASS exterior-empty: joint discriminator triple: 0 rules
+PASS exterior-empty: all four sectors jointly: 0 rules
+PASS boundary-state cluster-graph rules: grid2x3 N=2 and N=3 jointly admit a rule (existence, 1 found at cap 1)
+PASS grid2x3 N=2: one fixed order + forbidden classes: 0 of 180 order classes reproduce the zeros
+PASS grid2x3 N=3: one fixed order + forbidden classes: 20 of 180 order classes reproduce the zeros
+PASS cube N=4: one fixed order + forbidden classes: 0 of 840 order classes reproduce the zeros
+PASS grid2x3 N=2: bond-type forbidding rules give zero-set sizes 15,15,7,15,15,15,15, never the graded set
+PASS grid2x3 N=2: star-local rule: maximal forbidden class set has 0 classes and kills 0 of 3 zeros
+PASS grid2x3 N=2: positive bond-product comparator weight on every graded zero (min 1/48)
+PASS grid2x3 N=3: bond-type forbidding rules give zero-set sizes 18,20,18,20,18,20,20, never the graded set
+PASS grid2x3 N=3: star-local rule: maximal forbidden class set has 0 classes and kills 0 of 2 zeros
+PASS grid2x3 N=3: positive bond-product comparator weight on every graded zero (min 1/72)
+PASS cube N=4: bond-type forbidding rules give zero-set sizes 68,70,68,70,68,70,70, never the graded set
+PASS cube N=4: star-local rule: maximal forbidden class set has 0 classes and kills 0 of 12 zeros
+PASS cube N=4: positive bond-product comparator weight on every graded zero (min 1/2304)
+PASS grid3x3 N=3: bond-type forbidding rules give zero-set sizes 84,84,62,84,84,84,84, never the graded set
+PASS grid3x3 N=3: star-local rule: maximal forbidden class set has 0 classes and kills 0 of 8 zeros
+PASS grid3x3 N=3: positive bond-product comparator weight on every graded zero (min 1/576)
+TOTAL: PASS=63 FAIL=0
+
+----- stderr -----
+

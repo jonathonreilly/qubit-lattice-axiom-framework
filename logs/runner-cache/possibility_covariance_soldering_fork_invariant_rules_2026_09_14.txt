@@ -1,0 +1,114 @@
+===== runner cache v1 =====
+runner: scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py
+runner_sha256: ebce549c26e970e9870c118e5163c4d9658ca07495f8146a5b19eaf35394fa33
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 15.12
+status: ok
+----- stdout -----
+1. domain, lattice group, recorded-slot strata
+ ok cubic group has order 24
+ ok every element is a proper rotation
+ ok all group elements distinct
+ ok closed under multiplication
+ ok slot action is faithful
+ ok slot action permutes the six lattice directions
+ ok antipodal slots stay antipodal
+ ok recorded-slot subsets fall into 10 orbits
+ ok orbit sizes sum to 64
+ ok orbit size times stabiliser order is 24
+ ok orbit representatives are the expected ten
+ ok barycentre is nonzero on exactly six strata
+ ok barycentre vanishes on the antipodally closed strata
+2. dimension of the covariant rule space, by reading
+ ok single Bloch vector, unsoldered: one invariant per even degree
+ ok single Bloch vector, soldered: cubic harmonics appear from degree 4
+ ok centre plus one recorded neighbour, unsoldered
+ ok centre plus one recorded neighbour, soldered
+ ok full neighbourhood, unsoldered SO(3)
+ ok full neighbourhood, unsoldered O(3): odd degrees vanish
+ ok full neighbourhood, soldered
+ ok soldering strictly enlarges the rule space at every positive degree
+ ok no covariant rule term is linear in the vectors, unsoldered
+ ok soldered linear terms match an independent Frobenius orbit count
+ ok soldered, one linear term where the barycentre vanishes, more where not
+ ok independent route reproduces the unsoldered full-window counts
+ ok independent route reproduces the soldered full-window counts
+3. per-stratum tables and the independent recomputation
+ ok scalar table, unsoldered SO(3)
+ ok scalar table, unsoldered O(3): every odd degree is empty
+ ok scalar table, soldered
+ ok Bloch-valued table, unsoldered SO(3)
+ ok Bloch-valued table, soldered
+ ok soldering identifies the lattice and internal vector representations
+ ok it does not identify them unsoldered
+ ok no occupancy-only Bloch response, unsoldered SO(3)
+ ok no occupancy-only Bloch response, unsoldered O(3)
+ ok one occupancy-only Bloch response soldered, exactly where d is nonzero
+ ok and none where the barycentre vanishes
+ ok no occupancy-only lattice-frame response, unsoldered
+ ok a lattice-frame response appears at first order on every occupied stratum
+ ok soldered, the empty neighbourhood already carries a frame response
+ ok character sums and derivation kernels agree on all 120 dimensions
+4. explicit covariant rule terms and the frame a record registers
+ ok the axis-weighted sum has one term per lattice axis direction
+ ok it is invariant under the soldered action
+ ok it is not invariant under the unsoldered lattice action
+ ok internal so(3) does not annihilate it
+ ok the handed lattice term has 48 monomials
+ ok it is annihilated by internal so(3)
+ ok it is invariant under the unsoldered lattice action
+ ok it is the unique unsoldered cubic invariant of degree three
+ ok and it is handed: no such invariant survives adding the inversion
+ ok five explicit quadratic terms are unsoldered invariants
+ ok they are linearly independent
+ ok and they span the whole quadratic unsoldered space
+ ok the test internal rotation is a proper rotation
+ ok the recorded frame transforms as a lattice-by-internal bimodule
+ ok the recorded frame is generically invertible
+ ok so a record can register an identification the law does not supply
+5. the law at a site with no recorded neighbour
+ ok unsoldered, the sphere has no invariant past the constant to degree ten
+ ok soldered, a second invariant appears on the sphere at degree four
+ ok neither reading has a linear or a non-constant quadratic sphere invariant
+ ok rotation-invariant even axial moments are 1/3, 1/5, 1/7
+ ok and they match the one-dimensional projection integral
+ ok the rotation-invariant law normalises on the sphere at every order
+ ok every odd moment of the rotation-invariant law vanishes
+ ok the six-axis law is invariant under the lattice rotations
+ ok the six-axis law is not invariant under an internal rotation
+ ok its even axial moments are all 1/3, unlike 1/3, 1/5, 1/7
+ ok and it gives no weight to a mixed even monomial
+ ok both laws give the fair antipodal coin along a lattice axis
+ ok the two laws separate first at the quartic axis sum, 3/5 against 1
+6. two rules that satisfy the axioms and differ on a recorded menu
+ ok the two models disagree on one recorded neighbour, 2/3 against 1/2
+ ok and they agree on the empty neighbourhood, the fair coin
+ ok every menu either model returns is a state on both readings
+ ok model A is covariant under the soldered action, whole group and strata
+ ok that test is not vacuous: the soldered action moves the menu it returns
+ ok model A is not covariant when the cubic rotation moves slots alone
+ ok the internal test rotation is proper and moves the menu direction
+ ok model A is not covariant under an independent internal rotation
+ ok model B is covariant under independent internal rotations
+ ok model B is covariant under the cubic rotation acting on slots alone
+ ok model B is covariant under the soldered action as well
+ ok so the pair is separated by the soldering, not by the lattice symmetry
+7. roles, translations, and where oriented link data can come from
+ ok translations act transitively on the sites of the parity cell
+ ok so a translation-covariant function of one site is constant
+ ok the staggered labelling keeps an index-two subgroup of translations
+ ok translation-invariant functions of the parity class are the constants
+ ok the four-role labelling keeps the identity translation alone
+ ok a nearest-neighbour step has parity weight one and flips the class
+ ok a next-nearest step has parity weight two and preserves the class
+ ok so the roles separate sites the six-neighbour window identifies
+ ok translation-invariant functions of an ordered site pair span eight
+ ok the registered frame inverts exactly
+ ok through it a lattice direction reads as an internal vector, unsoldered
+ ok and that reading is not available from the law alone
+TOTAL: PASS=94 FAIL=0
+elapsed 15.1 s
+
+----- stderr -----
+

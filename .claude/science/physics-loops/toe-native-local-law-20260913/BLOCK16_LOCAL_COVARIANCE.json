@@ -1,0 +1,121 @@
+{
+  "covariance_samples": [
+    {
+      "L": 8,
+      "phi": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "dressed_max_difference": 0.0014002898542593845,
+      "canonical_max_difference": 0.040022707161489667
+    },
+    {
+      "L": 8,
+      "phi": [
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "dressed_max_difference": 0.0018815843210359534,
+      "canonical_max_difference": 0.04107196465167901
+    },
+    {
+      "L": 16,
+      "phi": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "dressed_max_difference": 4.836766446979224e-05,
+      "canonical_max_difference": 0.019971158731087287
+    },
+    {
+      "L": 16,
+      "phi": [
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "dressed_max_difference": 0.00010037407631099948,
+      "canonical_max_difference": 0.01996797824606665
+    },
+    {
+      "L": 32,
+      "phi": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "dressed_max_difference": 5.986253045708878e-06,
+      "canonical_max_difference": 0.009994329106306911
+    },
+    {
+      "L": 32,
+      "phi": [
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "dressed_max_difference": 1.3943654888395884e-05,
+      "canonical_max_difference": 0.009994727472038195
+    }
+  ],
+  "independent_Abel_quadrature": [
+    {
+      "radius": 0.7,
+      "epsilon": 0.2,
+      "quadrature": -3.4793823088858553,
+      "closed_form": -3.4793823088858593,
+      "reported_error": 2.122116585290322e-08,
+      "absolute_tail_bound": 6.273258880502643e-17,
+      "finite_endpoint": 250.0
+    },
+    {
+      "radius": 0.7,
+      "epsilon": 0.05,
+      "quadrature": -5.654661976596522,
+      "closed_form": -5.6546619765968265,
+      "reported_error": 3.227262556531001e-08,
+      "absolute_tail_bound": 4.014885683521691e-15,
+      "finite_endpoint": 1000.0
+    },
+    {
+      "radius": 1.0,
+      "epsilon": 0.2,
+      "quadrature": -1.5646335912608151,
+      "closed_form": -1.56463359126081,
+      "reported_error": 1.4617803068282852e-08,
+      "absolute_tail_bound": 6.273258880502643e-17,
+      "finite_endpoint": 250.0
+    },
+    {
+      "radius": 1.0,
+      "epsilon": 0.05,
+      "quadrature": -1.970186628502816,
+      "closed_form": -1.9701866285027787,
+      "reported_error": 2.85920749393989e-08,
+      "absolute_tail_bound": 4.014885683521691e-15,
+      "finite_endpoint": 1000.0
+    },
+    {
+      "radius": 2.3,
+      "epsilon": 0.2,
+      "quadrature": -0.15706041754734823,
+      "closed_form": -0.15706041754731925,
+      "reported_error": 2.2153198753670657e-09,
+      "absolute_tail_bound": 6.273258880502643e-17,
+      "finite_endpoint": 250.0
+    },
+    {
+      "radius": 2.3,
+      "epsilon": 0.05,
+      "quadrature": -0.16391350512211444,
+      "closed_form": -0.16391350512224698,
+      "reported_error": 1.588761517781806e-09,
+      "absolute_tail_bound": 4.014885683521691e-15,
+      "finite_endpoint": 1000.0
+    }
+  ],
+  "limitation": "Finite free-state checks; no interacting phase, uniform rate or full reciprocal tail certification."
+}

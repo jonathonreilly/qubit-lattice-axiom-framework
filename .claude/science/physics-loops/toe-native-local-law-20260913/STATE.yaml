@@ -13,8 +13,8 @@ research_emphasis: derivations_first_exact_falsification_checks
 delivery: milestone
 checkpoint_interval_minutes: 30
 campaign: native_local_deformation_algebra
-block: 15
-active_route: periodic_flat_holonomy_and_spectral_floor
+block: 16
+active_route: free_carrier_twist_volume_scaling_and_local_bulk_limit
 actual_current_surface_status: conditional-support
 independent_review: pending
 formal_audit: deferred
@@ -23,9 +23,9 @@ continuation_status: ACTIVE
 lock_owner: physics-loop-toe-native-local-law-20260913
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
 lock_expires_utc: '2026-09-14T00:27:24.280423+00:00'
-next_action: Derive and challenge global holonomy minimization, periodic normal-oscillator
-  spectral floor and actual mixed-carrier twist dependence; retain rate and thermodynamic
-  limits as open.
+next_action: Finish personal review of the provisional nodal Fourier remainder and
+  free local covariance limit; at the deadline preserve the complete campaign, pause
+  continuation, release lock and remove the clean pushed parent checkout.
 stop_policy: Campaign completion or local blockage triggers learning review, reranking,
   and the next useful campaign until the deadline.
-last_checkpoint_utc: '2026-09-13T23:41:26.418039+00:00'
+last_checkpoint_utc: '2026-09-14T00:04:40.810885+00:00'

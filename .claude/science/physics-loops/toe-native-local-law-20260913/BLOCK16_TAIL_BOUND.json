@@ -1,0 +1,11 @@
+{
+  "R_lower": "979/1000",
+  "Gz_lower": "147072/255625",
+  "det_G_lower": "3529728/6390625",
+  "sqrt_det_G_lower": "0.74",
+  "maximum_G_eigenvalue_upper": 1,
+  "pi_squared_lower": 9,
+  "coefficient_upper": "1.202",
+  "bound": "1.202*(24/M+2/(3*M^3))/L",
+  "scope": "Absolute omitted leading-series tail; not rounding error or the unquantified asymptotic remainder."
+}

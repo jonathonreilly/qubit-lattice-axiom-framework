@@ -1,0 +1,107 @@
+{
+  "threshold": {
+    "massive_momentum_subtraction": [
+      {
+        "z": 1e-08,
+        "threshold_factor": 1.999999995714285e-09,
+        "screening_loss_integral": 3.333333329761905e-10
+      },
+      {
+        "z": 0.0001,
+        "threshold_factor": 1.9999571438095023e-05,
+        "screening_loss_integral": 3.333297619576711e-06
+      },
+      {
+        "z": 0.1,
+        "threshold_factor": 0.019580740811869727,
+        "screening_loss_integral": 0.0032981392927157616
+      },
+      {
+        "z": 1,
+        "threshold_factor": 0.16490729156804845,
+        "screening_loss_integral": 0.030214771418885525
+      },
+      {
+        "z": 10,
+        "threshold_factor": 0.6513037843776628,
+        "screening_loss_integral": 0.1798058868096897
+      },
+      {
+        "z": 1000.0,
+        "threshold_factor": 0.9940827516893831,
+        "screening_loss_integral": 0.8745073692684926
+      },
+      {
+        "z": 1000000.0,
+        "threshold_factor": 0.9999940000925347,
+        "screening_loss_integral": 2.0248083152086025
+      }
+    ],
+    "remaining_IR_flow_integral": 0.09064431425665659,
+    "independent_integrated_formula": 0.09064431425665657,
+    "proved_upper_bound": 0.1
+  },
+  "nonlinear_isotropic_truncated_ODE": [
+    {
+      "initial_v_c_e": [
+        0.3,
+        1.0,
+        0.4
+      ],
+      "ell": 100000.0,
+      "final_v_c_e": [
+        0.5524845537813845,
+        0.5524872909629163,
+        0.012775375934542964
+      ],
+      "full_vs_reduced_error": 3.284856830987337e-10,
+      "independent_c_of_r_error": 1.2154721673596214e-11
+    },
+    {
+      "initial_v_c_e": [
+        1.7,
+        1.0,
+        0.4
+      ],
+      "ell": 100000.0,
+      "final_v_c_e": [
+        1.311967905949134,
+        1.3119653040383719,
+        0.01969022065461342
+      ],
+      "full_vs_reduced_error": 6.874727453975993e-10,
+      "independent_c_of_r_error": 2.236766327712303e-11
+    },
+    {
+      "initial_v_c_e": [
+        1.0,
+        1.0,
+        0.4
+      ],
+      "ell": 100000.0,
+      "final_v_c_e": [
+        1.0,
+        1.0,
+        0.017191312285906212
+      ],
+      "full_vs_reduced_error": 1.3614437355258246e-10,
+      "independent_c_of_r_error": 0.0
+    },
+    {
+      "initial_v_c_e": [
+        0.8,
+        1.7,
+        0.4
+      ],
+      "ell": 100000.0,
+      "final_v_c_e": [
+        1.1719750129473556,
+        1.1719842363744006,
+        0.018596264820578388
+      ],
+      "full_vs_reduced_error": 5.604949837589857e-10,
+      "independent_c_of_r_error": 1.887601186467691e-11
+    }
+  ],
+  "scope": "supplied massive Dirac polarization and truncated one-loop massless ODE; neither demonstrates a gap in the normal lattice carrier or a full interacting phase"
+}

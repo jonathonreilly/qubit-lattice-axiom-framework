@@ -1,0 +1,147 @@
+{
+  "angular_tensor": {
+    "exact_cubature_points": 24,
+    "exact_second_moments": 16,
+    "exact_fourth_moments": 256,
+    "Clifford_trace_checks": 256,
+    "tensor_checks": [
+      {
+        "case": 0,
+        "tensor": "general",
+        "direct_gamma_vs_Ricci_error": 8.881784197001252e-16
+      },
+      {
+        "case": 0,
+        "tensor": "metric",
+        "direct_gamma_vs_Ricci_error": 0.0
+      },
+      {
+        "case": 0,
+        "tensor": "Weyl",
+        "direct_gamma_vs_Ricci_error": 4.440892098500626e-16
+      },
+      {
+        "case": 1,
+        "tensor": "general",
+        "direct_gamma_vs_Ricci_error": 1.7763568394002505e-15
+      },
+      {
+        "case": 1,
+        "tensor": "metric",
+        "direct_gamma_vs_Ricci_error": 0.0
+      },
+      {
+        "case": 1,
+        "tensor": "Weyl",
+        "direct_gamma_vs_Ricci_error": 0.0
+      },
+      {
+        "case": 2,
+        "tensor": "general",
+        "direct_gamma_vs_Ricci_error": 0.0
+      },
+      {
+        "case": 2,
+        "tensor": "metric",
+        "direct_gamma_vs_Ricci_error": 0.0
+      },
+      {
+        "case": 2,
+        "tensor": "Weyl",
+        "direct_gamma_vs_Ricci_error": 6.661338147750938e-16
+      },
+      {
+        "case": 3,
+        "tensor": "general",
+        "direct_gamma_vs_Ricci_error": 8.881784197001252e-16
+      },
+      {
+        "case": 3,
+        "tensor": "metric",
+        "direct_gamma_vs_Ricci_error": 0.0
+      },
+      {
+        "case": 3,
+        "tensor": "Weyl",
+        "direct_gamma_vs_Ricci_error": 5.921189464667501e-16
+      },
+      {
+        "case": 4,
+        "tensor": "general",
+        "direct_gamma_vs_Ricci_error": 3.552713678800501e-15
+      },
+      {
+        "case": 4,
+        "tensor": "metric",
+        "direct_gamma_vs_Ricci_error": 0.0
+      },
+      {
+        "case": 4,
+        "tensor": "Weyl",
+        "direct_gamma_vs_Ricci_error": 8.881784197001252e-16
+      }
+    ]
+  },
+  "metric_flow": [
+    {
+      "q": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Dirac_multiplicities": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "eigenvalues": [
+        -1.0817540880084164e-16,
+        2.0,
+        2.0,
+        2.0000000000000004,
+        4.0
+      ],
+      "logarithmic_exponents": [
+        -5.408770440042082e-17,
+        1.0,
+        1.0,
+        1.0000000000000002,
+        2.0
+      ],
+      "ODE_vs_matrix_power_max_error": 1.0595968547022494e-12
+    },
+    {
+      "q": [
+        1.0,
+        2.0,
+        0.3
+      ],
+      "Dirac_multiplicities": [
+        1.0,
+        0.5,
+        2.0
+      ],
+      "eigenvalues": [
+        2.188781976713625e-15,
+        0.27784403241949335,
+        2.7621230810692827,
+        10.320032886511228
+      ],
+      "logarithmic_exponents": [
+        6.882962190923348e-16,
+        0.08737233723883438,
+        0.868592163858265,
+        3.245293360538122
+      ],
+      "ODE_vs_matrix_power_max_error": 8.502920589847918e-13
+    },
+    {
+      "decaying_source_matching_increment": 0.0020800000000000003,
+      "closed_form_increment": 0.0020800000000000003,
+      "asymptotic_mode_coefficient": 0.20208
+    }
+  ],
+  "scope": "linearized parity-even marginal kinetic sector and its truncated one-loop flow; no all-orders phase, native carrier selection or finite-scale experimental match"
+}

@@ -113,3 +113,13 @@ pending. Full public pair and review packet preserved here; scratch worktree
 removed after exact remote and tracked/untracked clean verification. Block 4
 now targets an actual lattice-matched one-loop velocity response and coupled
 charge flow. Compact phase remains open; no axiom update forced.
+
+Block 4 checkpoint: actual Peierls self-energy and photon-bubble derivative
+checks reproduce continuum logarithmic residues. A direct angular Clifford
+contraction gives the full traceless metric response and zero response to
+photon Weyl tensors. The weighted multi-cone flow has slower relative-cone
+and photon-polarization modes than its shared-speed restriction. Massive
+polarization threshold and nonlinear isotropic ODE checks pass. These are
+private author derivations; no full phase, exact charged pole or main-carrier
+bridge is claimed. Source comparison records a printed KLP integration
+formula discrepancy and uses the rederived differential equations instead.

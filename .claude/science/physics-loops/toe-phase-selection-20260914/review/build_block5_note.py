@@ -58,14 +58,14 @@ program, and does not claim to reproduce that source's original Record-star
 experiment or its local formation weights. No theorem or audit status from
 that contextual note is imported.
 
-| Input | Role | Provenance and open physical bridge |
-|---|---|---|
-| Finite circuit, stage order and coefficients | Program to be embedded | Defined below; microscopic action selection remains open |
-| Independent complex Gaussian innovations and parameters | Reference probability model | Defined below with complex Lebesgue measure; physical probability selection remains open |
-| Initial controls and fair causal schedule | Formation conditions | Supplied in this construction; finite default-atom bootstrap below, typical program and schedule selection open |
-| Spatial/Pauli frame correspondence and finite instruction alphabet | Encoding | Defined below; physical representation identification remains open |
-| Accepted window and finite-alpha limit | Posterior selection | Chosen here, with quantified accuracy and rarity; typical-state identification remains open |
-| Released source helper and matrix supplier | Finite source definitions | Current-main files linked below and byte-bound by the runner; source selection remains open |
+| Input | Role | Provenance | Open physical bridge |
+|---|---|---|---|
+| Finite circuit, stage order and coefficients | Program to be embedded | Defined below | Microscopic action selection |
+| Independent complex Gaussian innovations and parameters | Reference probability model | Defined below with complex Lebesgue measure | Physical probability selection |
+| Initial controls and fair causal schedule | Formation conditions | Supplied here; finite default-atom bootstrap below | Typical program and schedule selection |
+| Spatial/Pauli frame correspondence and instruction alphabet | Encoding | Defined below | Physical representation identification |
+| Accepted window and finite-alpha limit | Posterior selection | Chosen here, with quantified accuracy and rarity | Typical-state identification |
+| Released source helper and matrix supplier | Finite source definitions | Current-main files linked below and byte-bound by the runner | Source selection |
 
 The payloads are commuting classical complex random variables. The DK name
 identifies a supplied matrix construction, not a fermion or quantum-operator

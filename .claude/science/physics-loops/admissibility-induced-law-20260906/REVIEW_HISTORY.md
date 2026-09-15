@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 20 — V1-V5 (supervisor, 2026-09-15)
+- V1: block 19's location of the gravity node's kernel (PR #8153) and the Lattice axiom's third dimension: is `Z³` load-bearing for the channel?
+- V2: the lens pass in `GOAL_block20.md` ("this is the classical no-order theorem" — re-proved at scope, with the placement as the content; "the `k = 0` term of the sum rule" — dropped in the safe direction; "two dimensions with a discrete menu order" — block 17, the contrast is the point).
+- V3: H1–H3 proved; the skeleton executed exactly (20 checks, 13 mutations); the refuting pass agreed on five routes and caught the line's count at `L = 1` (folded: `L ≥ 2`); the control corrected the contract's first draft on the plane's last shell and the line's small term.
+- V4: no reading, rule, coupling or dimension selected; the halves of H4 that live in blocks 17 and 19 not re-proved; the decay rate not claimed.
+- V5: consumers named — #8093's assembly (the gravity node's dimension dependence); the campaign's queue.
+
+## block 20 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block20.md`): as V2. Control: the wavevector range `{−L+1, …, L}` (the plane's last shell truncated; bound `4H_{L−1}`) and the line's small term (the block of the `2⌊√L⌋` smallest wavevectors) fixed in the contract before the primary. Primary: the note and the runner (20 checks, 13 mutations; one mutation tightened after a 12/13 census). Refuting pass (`CHECKER_block20_findings.md`): the solvable two-site instance; direct plane and line sums to `L = 64` and `L = 400`; a second parametrization; a random field — one finding (the line's count at `L = 1`), folded. Author checks only; independent review pending.
+
+## block 20 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, all on `main` at `2ed54cb83a`; nothing pinned from a branch or PR (PRs #8151/#8152/#8153 are evidence addresses for H4 only; H1 re-proved). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings and the overlap named as supplied; the line statements carry `L ≥ 2`; the decay rate, the Born overlap and the normalization marked open; the standard facts named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

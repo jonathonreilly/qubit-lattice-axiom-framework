@@ -105,3 +105,14 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# ---------------------------------------------------------------- block 20 close (2026-09-15)
+# block: 20
+# branch: physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915 (independent; base origin/main 2ed54cb83a; blocks 06-19 are open PRs #8034, #8035, #8138-#8142, #8146-#8153)
+# pr_status: opened for review — PR #8154 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8154); hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family (one mutation tightened after a 12/13 census); refuting pass consistent on five routes with one finding folded; gates: see HANDOFF.md"
+# seats: "supervisor-run: control (fixed the contract's wavevector range and the line's small term) -> contract with a lens pass -> primary (H1-H4, runner) -> refuting pass (two-site instance; direct sums; second parametrization; random field) -> fold (L >= 2 on the line)"
+# review_findings: "unsoldered sphere static law with e^{beta s.s'} on (Z/2LZ)^d: the zero-field lower bound u(k) >= (M^2/3)^2/(beta E + 4/(3N)) is dimension-free (N bonds per direction); plane: sum_{k != 0} |k|^{-2} >= (N/pi^2) H_(L-1) -> M^4 <= (3 pi^2 beta + 1)/H_(L-1); line: the 2 floor(sqrt L) smallest wavevectors -> M^4 <= (6 pi^2 beta + 4)/sqrt L; no long-range order on any coordinate plane or line at any beta > 0; block 19's Green-function channel needs Z^3; block 17's discrete law orders on the plane, so the menu decides"
+# strongest_unresolved_proof_obligation: "the normalization of the kernel on Z^3; the plane's decay rate; the band below the 3D threshold"
+# next_exact_action: "queue refresh 2026-09-15 (block 20 opening): normalization; the plane's decay rate; the 3D band; X4/S6"
+# lock: held (owner: don't stop; assess the next lane at each conclusion)

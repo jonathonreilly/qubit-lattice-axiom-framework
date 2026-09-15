@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 20, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "#8093's gravity node: block 19 (PR #8153) locates its kernel in the transverse channel of the ordered unsoldered static law on Z^3; the Lattice axiom's third dimension"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "settled for the unsoldered static reading: no long-range order on any coordinate plane or line at any beta > 0 (M^4 <= (3 pi^2 beta + 1)/H_(L-1); (6 pi^2 beta + 4)/sqrt L), so the channel needs Z^3; the discrete six-axis law orders on the plane (block 17), so the menu decides. Next: the normalization; the plane's decay rate; the band below the 3D threshold. Consumers: #8093's assembly; the campaign's queue"
+```

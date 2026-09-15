@@ -1,0 +1,16 @@
+(1) L=2: shell counts ok=True, |n|^2 <= 2j^2 ok=True, sum 1/|n|^2 = 297/40 >= 4 H_(L-1) = 4: True
+(1) L=3: shell counts ok=True, |n|^2 <= 2j^2 ok=True, sum 1/|n|^2 = 1180/117 >= 4 H_(L-1) = 6: True
+(1) L=12: shell counts ok=True, |n|^2 <= 2j^2 ok=True, sum 1/|n|^2 = 54209494770992943772324924220190748985877671/2870737062158310906739193867717929783219500 >= 4 H_(L-1) = 83711/6930: True
+(1) plane: 8j / (4L-1) shell counts, the norm bound and sum >= 4 H_{L-1} for L = 2..12: True
+(1) dyadic: H_{2^m} >= 1 + m/2 for m <= 12: True
+(2) 2(1 - cos u) = 4 sin^2(u/2): True ; u^2 - 2(1 - cos u) >= 0 at 21 sample points: True
+(3) 4/(3 N) = (pi/L)^2/(3 pi^2) at N = 4 L^2: True
+(4) 4 b^2 - (sqrt a + b)^2 = (b - sqrt a)(3b + sqrt a): True ; b >= sqrt a since 4M^2/(3N) >= 0; then (M^2/3)^2/(a + 4M^2/(3N)) >= (M^2/3)^2/(a + 4/(3N)) iff M^2 <= 1
+(5) 9 * pi^2 (beta + 1/(3 pi^2))/(3 H) = (3 pi^2 beta + 1)/H: True
+(6) sphere average of (s^1)^2 = 1/3
+(6) Parseval on the 4x4 torus (symbolic site values): sum_k |s^(k)|^2 - sum_x s_x^2 = 0
+(7) line: 4 floor(sqrt L)^2 >= L for L = 1..400: True
+(7) line: 4/(3N) at N = 2L is 2/(3L): True ; for n^2 <= L: beta pi^2 n^2/L^2 + 2/(3L) <= (beta pi^2 + 2/3)/L  [n^2/L^2 <= 1/L]
+(7) 9 * (beta pi^2 + 2/3)/(3 m) = 3 (beta pi^2 + 2/3)/m; at m = sqrt(L)/2 this is (6 beta pi^2 + 4)/sqrt(L): True
+(8) |1 - e^{-i theta}|^2 = 2(1 - cos theta): True
+(8) bonds: 4x4 torus 32 = 2N; 8-torus 8 = N

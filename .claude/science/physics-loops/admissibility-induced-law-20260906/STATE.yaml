@@ -106,10 +106,10 @@ source_review_correction:
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
 
-# ---------------------------------------------------------------- block 15 opening (2026-09-15)
+# ---------------------------------------------------------------- block 15 close (2026-09-15)
 # block: 15
 # branch: physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915 (independent; base origin/main 0cbc631227; blocks 06-14 are open PRs #8034, #8035, #8138-#8142, #8146-#8148)
-# pr_status: opening — PR number recorded at close-out; hand-off; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8149 (base = main); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=18 FAIL=0; 12 mutations, census 12/12 in-family; refuting pass consistent on four routes; gates: see HANDOFF.md"
 # seats: "supervisor-run: control -> contract with a lens pass -> primary (U1-U5, runner) -> refuting pass (second criterion implementation; tree factorization; order-by-order recursion; integer lemma) -> fold"
 # review_findings: "joint formation = the rule-consistent law (unique by the ratio lemma); sequential = joint iff no site records an inside neighbour with a second recorded neighbour (lemma K_k(b..b) - K_k(-b,b..b) = ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)]); isolated star: equal iff <= 1 leaf before the center (TV 0,0,1/72,5/144,505/10368,575/10368,103375/1492992) -> the campaign's star witness fails in isolation; isolated plaquette: every order differs (455/31176, 37/1299); in an environment every connected multi-site unit differs under every order (last site records all six neighbours); clause reading: whole-window unit = the static reading; recorded, not adopted"

@@ -1,0 +1,25 @@
+{
+  "pr": 8034,
+  "original_head": "f31df16fea66ddf10bd5a9fb173647a71489375e",
+  "branch": "physics-loop/admissibility-induced-law-block06-static-strip-widths-4-5-20260907",
+  "landing": "64402f54b06356cb9acf3e5631046e593cc83978",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T11:29:00Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block06-static-strip-widths-4-5-20260907",
+    "headRefOid": "f31df16fea66ddf10bd5a9fb173647a71489375e",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8034,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8034"
+  },
+  "final_state_verification": {
+    "closedAt": "2026-09-15T11:29:00Z",
+    "headRefOid": "f31df16fea66ddf10bd5a9fb173647a71489375e",
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8034"
+  }
+}

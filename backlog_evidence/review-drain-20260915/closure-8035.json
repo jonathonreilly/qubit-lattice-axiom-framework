@@ -1,0 +1,25 @@
+{
+  "pr": 8035,
+  "original_head": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d",
+  "branch": "physics-loop/admissibility-induced-law-block07-hermitian-gaussian-instance-20260907",
+  "landing": "64402f54b06356cb9acf3e5631046e593cc83978",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "physics-loop/admissibility-induced-law-block06-static-strip-widths-4-5-20260907",
+    "closedAt": null,
+    "headRefName": "physics-loop/admissibility-induced-law-block07-hermitian-gaussian-instance-20260907",
+    "headRefOid": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8035,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8035"
+  },
+  "final_state_verification": {
+    "closedAt": "2026-09-15T11:28:53Z",
+    "headRefOid": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d",
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8035"
+  }
+}

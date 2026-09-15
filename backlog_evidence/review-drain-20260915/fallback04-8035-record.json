@@ -1,0 +1,38 @@
+{
+  "base": "4994b354ed33e28c7b409be7ff0a492394f03a21",
+  "source_head": "2923e94483e1a6df18d302434162cd4d4e3b41db",
+  "source_tree": "1a8247b66a8645af2ea92ff45f60a164aeab1460",
+  "heads": {
+    "8034": "f31df16fea66ddf10bd5a9fb173647a71489375e",
+    "8035": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d"
+  },
+  "source_owners": {
+    "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md": "review-8035",
+    "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md": "review-8035",
+    "logs/runner-cache/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.txt": "review-8035",
+    "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt": "review-8035",
+    "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py": "review-8035",
+    "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py": "review-8035"
+  },
+  "inputs": {
+    "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a",
+    "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md": "41897e6e99b3d6170f85d82d0f832ce0f4fd8e55ba142201fcb5d0aae293fabb",
+    "logs/runner-cache/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.txt": "165de66a9b907d9f218b77a7849849f076f9a8ffeb8aad4853ce9a7464f29ce9",
+    "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt": "5c52e95ead4f1be8eff49f18a6d74aac4b3f8a3897134886d78979e1107ee53e",
+    "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py": "8804f50e2d10d8eeb5172faff5e700f3389c37983ab171731c2c82232033d9f5",
+    "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095",
+    "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md": "6dd105641721dc9b5ca47ed69961e912eec3dc2dae3386cb4a72f4e2ee7ba7e0"
+  },
+  "reports": {
+    "md": "573629424deb02369642684ccead95a8601ffb074e0c47f913bf54e2bd208b37",
+    "json": "287767d3ee62e77c106c335a9fa1a5e468f83795001eca00701fb055eee1ff02"
+  },
+  "addendum": "b0793789416a4223377ea80287930ef864ad25d4d5d0eeb12f80a2f3a58d5a6e",
+  "departure": "Mandatory coherent-unit fallback after train04 claim-type inspection failed",
+  "interaction_check": "Only workflow branch-lifecycle rules changed on main; all six science inputs unchanged; corrected header and cache independently confirmed."
+}

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/native_star_thermodynamic_limit_2026_09_09.py
+runner_sha256: 09648aa4f1627a86ad99f921dfb8ee3b235076716c41722c70de7a7e30c5bd2f
+input_fingerprint_sha256: 729e6e7523f3348ba0eefa22806cd31b43269df107b9deec32b3de6cc57c7d1e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "checks": 267,
+  "physical_runs": 0,
+  "scope": "finite-hop locality, exact CAR and weighted coefficient tails",
+  "input_sha256": {
+    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226",
+    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+    "scripts/native_star_thermodynamic_controls_2026_09_09.py": "7fb42c46bb14395cbce63ca0bfea97865c7a8605afcaf029981b18ab4ec5163d"
+  },
+  "source_sha256": "09648aa4f1627a86ad99f921dfb8ee3b235076716c41722c70de7a7e30c5bd2f",
+  "elapsed_seconds": 0.00573154108133167,
+  "peak_rss_bytes": 23150592,
+  "actual_current_surface_status": "conditional-support"
+}
+TOTAL: PASS=267 FAIL=0
+per_element: exact finite CAR quadratic commutator predicates are executed on the declared three-mode matrices.
+per_site: finite hopping-path boundary independence is executed for L8, L12 and L16 at the declared orders.
+per_mode: finite exact weighted-tail arithmetic is executed; smooth coefficient-symbol convergence is analytical.
+per_block: local Gaussian state and cocycle limits are analytical; no infinite-volume resolvent is numerically evaluated.
+lattice_wide: the GNS core and wrong-pair gap argument is analytical; no interacting phase or nodal value is computed.
+
+----- stderr -----
+

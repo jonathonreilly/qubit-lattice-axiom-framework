@@ -1,0 +1,650 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "254ab1e5230dda69d1d7f4fe45248548fe9c9ad1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ARTIFACT_PLAN.md",
+      "raw_bytes": 302,
+      "raw_sha256": "47039ff362e4cef3ab01489301e8c05b058869ae3596e29c7d78999afdf5177b",
+      "stored_path": "_objects/47039ff362e4cef3ab01489301e8c05b058869ae3596e29c7d78999afdf5177b.gz",
+      "stored_sha256": "485898d0a10a39ebc21d0d19719ef5aad5c45b037e4173fcfc8625f7878b0217"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "72f985e9c6ba5af1478b1bd13aac2e9de061d395",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 391,
+      "raw_sha256": "138dbf400c75e233dd11a6c3a771140c13b90c366aef3dd01a300595f6284428",
+      "stored_path": "_objects/138dbf400c75e233dd11a6c3a771140c13b90c366aef3dd01a300595f6284428.gz",
+      "stored_sha256": "75300db61ac91ecb712d18bf5cfd37b04c4a3e0bca51b18275cf73eb418d1a79"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c8f9b3d0e7c89a035454c60978dd5ff1aceffe76",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 473,
+      "raw_sha256": "855bd725b2ce884157c1f9960dcfc50bb8c75d42bb99d2854ffd23af9c9df9c9",
+      "stored_path": "_objects/855bd725b2ce884157c1f9960dcfc50bb8c75d42bb99d2854ffd23af9c9df9c9.gz",
+      "stored_sha256": "ab8fbe1756dee2633a2c47071f408f96383f462f396165873501d947a9cb2107"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "61491dc50729484fab9b4612a5ab84a644becc9e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "028637148726a546e5db5f01a6db74f953fa48cd5c4dcfb4c4376ea2806011c9",
+      "stored_path": "_objects/028637148726a546e5db5f01a6db74f953fa48cd5c4dcfb4c4376ea2806011c9.gz",
+      "stored_sha256": "9a9c67e78242d5d3f0fc230cb2bc288d28455f9edce2fae85565a7cd5183397c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1896c446981484e3aabb446a23d1c6140902fecf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout",
+      "raw_bytes": 1374,
+      "raw_sha256": "b859a9b870e0892968f0696a052c53bfc4494e18a94ae008e333a971ad280e8f",
+      "stored_path": "_objects/b859a9b870e0892968f0696a052c53bfc4494e18a94ae008e333a971ad280e8f.gz",
+      "stored_sha256": "ccdcd6ea6db6f02dcfe10c988bb8a7597e294a4ed4825432744e8dc409121efe"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "06b462cb0f4746624b6247e82de20d37da713e14",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/REVIEW.md",
+      "raw_bytes": 2494,
+      "raw_sha256": "bdc9d2a2fd0c3bf46524a6b049184f4c06aa6f69a6b391afc370454fb0ebfc76",
+      "stored_path": "_objects/bdc9d2a2fd0c3bf46524a6b049184f4c06aa6f69a6b391afc370454fb0ebfc76.gz",
+      "stored_sha256": "2eb3c0cf4a855fd178b82cca9adf4b744515ace9ad21dcb119de0abd3d5bd364"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9ab00abdd7a7c85687781e9bbb3673a9aba3b747",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ROOT.md",
+      "raw_bytes": 732,
+      "raw_sha256": "7b0837305e11e0fb6a98b279688493f868913e2565660c135ed28d0870337974",
+      "stored_path": "_objects/7b0837305e11e0fb6a98b279688493f868913e2565660c135ed28d0870337974.gz",
+      "stored_sha256": "5b3825f5030ddbd4f58168a3f3d5f90b3c8bce7256007be58eca8a91be1678de"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e66ba1ad27e71d30ccd71eb1a93d1f2893e4ca99",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/GOAL.md",
+      "raw_bytes": 363,
+      "raw_sha256": "7b3c23ea69c5e1f96552784f4b5b9ccdfc2872d0989ce7e6eca8010fd5d3b851",
+      "stored_path": "_objects/7b3c23ea69c5e1f96552784f4b5b9ccdfc2872d0989ce7e6eca8010fd5d3b851.gz",
+      "stored_sha256": "ed0f97df9d81bb447c07894435c68754fb49cb5722559f9c936e9b569d92d142"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "db280ce9e68b7d6b9b11adf4880fda9816a3d3fd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/HANDOFF.md",
+      "raw_bytes": 409,
+      "raw_sha256": "3e352df556a419c02c445477dbd822cd286ffa11534784f6c72f8143561b0655",
+      "stored_path": "kept/pr8062-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "3e352df556a419c02c445477dbd822cd286ffa11534784f6c72f8143561b0655"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9a5c0805251a186f058b092acb052cb3a96a76e4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/LITERATURE_BRIDGES.md",
+      "raw_bytes": 207,
+      "raw_sha256": "ee832b07ba8024482db7d47a3e84d743eab0809a7bda2864104e6bd342ca2e15",
+      "stored_path": "_objects/ee832b07ba8024482db7d47a3e84d743eab0809a7bda2864104e6bd342ca2e15.gz",
+      "stored_sha256": "d90660535c284c6fad4f5671def681d76d8c937f042390dd27ae3eb8dcb10717"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "842f536a18bc15d36261b2a2da65580f410cea0e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/NO_GO_LEDGER.md",
+      "raw_bytes": 247,
+      "raw_sha256": "811a4d3aa20b470b49a3d042de018aa01c2af2f563112589456413a8132809c4",
+      "stored_path": "_objects/811a4d3aa20b470b49a3d042de018aa01c2af2f563112589456413a8132809c4.gz",
+      "stored_sha256": "eadbef98e435daed0db9f00d5652a7ac65828c39c8c92eb55120684d3c143269"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "58c7451345b7b40f733a55063592b1b56dfad1d4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 189,
+      "raw_sha256": "7e64d207a09982478d680f89b8bd1d8f1a2a3bb0e6f48ec4dc14c9ff3e5b62a1",
+      "stored_path": "_objects/7e64d207a09982478d680f89b8bd1d8f1a2a3bb0e6f48ec4dc14c9ff3e5b62a1.gz",
+      "stored_sha256": "47b205bb08f2ab700cf72944254cebd98a28e108b6af1d4896588aedfeeb4143"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d86993bc621ee7e6ddcc78bab6f23a4ab3a70e64",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+      "raw_bytes": 691,
+      "raw_sha256": "23b37d0cf2bf08ff1cde246afd207436cddcab4b6c1c21050cd94f8810031f86",
+      "stored_path": "_objects/23b37d0cf2bf08ff1cde246afd207436cddcab4b6c1c21050cd94f8810031f86.gz",
+      "stored_sha256": "94240deaa19c022f7883467235e119207f06e8373f8719ea48f4da0c76b0d835"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "05d3b4bb8a36d6d79a2aa3f410b9796ad4512440",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+      "raw_bytes": 8300,
+      "raw_sha256": "4da676065b4b6c5aa428bb1d553c093fe46a3cca3827f419474782d217a639b6",
+      "stored_path": "_objects/4da676065b4b6c5aa428bb1d553c093fe46a3cca3827f419474782d217a639b6.gz",
+      "stored_sha256": "875a4d5aea2c561c055cf95a829a11bd27748b9a195b9fbee7d2313b7ff330e6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bc573e787acf59c61a51d3ae2890a723d9a5eced",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/GRAPH_DELTA.json",
+      "raw_bytes": 993,
+      "raw_sha256": "6c1527d5f41f01dfc92cc5f3f779b6cd4814670961c445013efa3c49e9c28443",
+      "stored_path": "_objects/6c1527d5f41f01dfc92cc5f3f779b6cd4814670961c445013efa3c49e9c28443.gz",
+      "stored_sha256": "5e54820b847312c2ddee441386fce08111dc6165389fdf0d1a8b0f9444491071"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d7c82310e3ee13796f521789d6b1c2f151dac144",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stdout",
+      "raw_bytes": 1375,
+      "raw_sha256": "0ca84325c32f9d636162c0518786f342b676b62ac565695fea2b00582af820fa",
+      "stored_path": "_objects/0ca84325c32f9d636162c0518786f342b676b62ac565695fea2b00582af820fa.gz",
+      "stored_sha256": "b3af111da48d0b780e62933d8a74d4f84573fdb08e9fae71608e80c32f4b416d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eb6d45581fd4c1449b97ba60547d939c22fcabca",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip",
+      "raw_bytes": 44214,
+      "raw_sha256": "2c64b374a2848f6147e393d01b90a666084a84aa0bc6f803c7441db9d6033960",
+      "stored_path": "_objects/2c64b374a2848f6147e393d01b90a666084a84aa0bc6f803c7441db9d6033960.gz",
+      "stored_sha256": "dd4566b341284049b16884e537a1168afe39e8bc78f3144430fd6bae2ed6255a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "49b98bc3823ac4c7ed30a21bab158a4ff28ed869",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+      "raw_bytes": 967,
+      "raw_sha256": "481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f",
+      "stored_path": "_objects/481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f.gz",
+      "stored_sha256": "0a1c4d0f30e74f0eb72b5edb16704ebe99d988ddbc2fa71aeab2e6a6c82279d5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "49b98bc3823ac4c7ed30a21bab158a4ff28ed869",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/SOURCE_FREEZE.json",
+      "raw_bytes": 967,
+      "raw_sha256": "481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f",
+      "stored_path": "_objects/481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f.gz",
+      "stored_sha256": "0a1c4d0f30e74f0eb72b5edb16704ebe99d988ddbc2fa71aeab2e6a6c82279d5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d8da558ebd2dd229e1b762237374beef5b78710c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.stderr",
+      "raw_bytes": 947,
+      "raw_sha256": "b2780a3cd710dd2b44e01db1a9b4bf966dcef26ea2dd6991df02ec04ba2b07e8",
+      "stored_path": "_objects/b2780a3cd710dd2b44e01db1a9b4bf966dcef26ea2dd6991df02ec04ba2b07e8.gz",
+      "stored_sha256": "845061f2347042c499029612891da6957158ae7ee032c32a5be59bb7730fc361"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ec9045a11785764a9422fde9897c4a1286a0649a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt",
+      "raw_bytes": 3049,
+      "raw_sha256": "e19c0624f04b2e434b68ae96f61de859e20ca2684520317964b3783228e676b7",
+      "stored_path": "_objects/e19c0624f04b2e434b68ae96f61de859e20ca2684520317964b3783228e676b7.gz",
+      "stored_sha256": "76bf9449c66a99eda9d784c5951c39db1a6157582829ddd99745f5785ee4585b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "948232d7e256c5585df74e5a381c8fbf3036523b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.stderr",
+      "raw_bytes": 959,
+      "raw_sha256": "697ba0292b615b40693ad65d2f98b3b2c5faf4f235a4b4368ad43d86f2b32d0b",
+      "stored_path": "_objects/697ba0292b615b40693ad65d2f98b3b2c5faf4f235a4b4368ad43d86f2b32d0b.gz",
+      "stored_sha256": "09451be610f3cd97f3ac5c2d5d36ed9b08ce03333e850624d480593e3c43b8ac"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "87a55b975b3cb1b040b2ff25c391774a21a08978",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt",
+      "raw_bytes": 3042,
+      "raw_sha256": "f6d4a3197c48bec318e3be5c27d936477d9f2d3f4312d9e13bca84d08a97d3f3",
+      "stored_path": "_objects/f6d4a3197c48bec318e3be5c27d936477d9f2d3f4312d9e13bca84d08a97d3f3.gz",
+      "stored_sha256": "31f84f9a129e76a2ecacb5efc4cd9efbd34f3ecdb8e8ea2f565af4cb306e213a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "71bd8043430c7bc7668c61bd73588f7696f06bb8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.stderr",
+      "raw_bytes": 1061,
+      "raw_sha256": "bdbecd6f2e51633b0ac4412e7ec09fe3ee82d3887c6c1feea18a1af8d05685e3",
+      "stored_path": "_objects/bdbecd6f2e51633b0ac4412e7ec09fe3ee82d3887c6c1feea18a1af8d05685e3.gz",
+      "stored_sha256": "d48627bbc139ccaae0826e325bdc115ec25d3dfed7f3711be1d30160daafd387"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b6627eb13fd2dec3b00d0204d70f415c0e37ae5b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt",
+      "raw_bytes": 3044,
+      "raw_sha256": "8657493ed384e0005a0b85241bb432a50b1268da61e280ef96ab7713ae94bcea",
+      "stored_path": "_objects/8657493ed384e0005a0b85241bb432a50b1268da61e280ef96ab7713ae94bcea.gz",
+      "stored_sha256": "d0bfee2607d1452d79709c73d8e20ef2aa7f5afb5ddbb54450b6c9473daadffa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0b4d3dc70e94a38c3d34fc31f53b6ff96683d055",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PR_BACKLOG.md",
+      "raw_bytes": 90,
+      "raw_sha256": "1043aeefd6cf484f8ba30f65a03e182696514ff2ccae0709ef91df28d9666816",
+      "stored_path": "_objects/1043aeefd6cf484f8ba30f65a03e182696514ff2ccae0709ef91df28d9666816.gz",
+      "stored_sha256": "a3168b069adb190ff9045219f3bddbb2f10db29361f04500aab4cadc97638c0b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c56520f56b688c3d4a9f59140dfb6f994500b98d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/REVIEW_HISTORY.md",
+      "raw_bytes": 249,
+      "raw_sha256": "d9f097fad4f42d4cba209ebe77748095c0518a4dcee1941e2b778651078c2157",
+      "stored_path": "kept/pr8062-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "d9f097fad4f42d4cba209ebe77748095c0518a4dcee1941e2b778651078c2157"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9f0e5e8a3fe637070d34e44624dbc9b3500fa40b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 235,
+      "raw_sha256": "a6359c1e29ad0773205e7f1c5a3cff239bd32969653d4dcbfbcfe533ef03518d",
+      "stored_path": "_objects/a6359c1e29ad0773205e7f1c5a3cff239bd32969653d4dcbfbcfe533ef03518d.gz",
+      "stored_sha256": "091648964ec747fdf40b9d686194152981807b7372e3a77390de8a170fb6c5c3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "aca17bbb6c50d244056371244f36ec21fb44e0e1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/STATE.yaml",
+      "raw_bytes": 235,
+      "raw_sha256": "23e1c9e98734fe7a77399456bead4f1c5a2f7dfadfc2318ef00b94e2d106f03f",
+      "stored_path": "_objects/23e1c9e98734fe7a77399456bead4f1c5a2f7dfadfc2318ef00b94e2d106f03f.gz",
+      "stored_sha256": "54bb15d8c6a35b2db0d04f959df7320e8245ad5b5b68f94c0fc0dc9bb986c4a8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0ed2d37517e4a6e7745aa29db2a8cc0419a9f6a4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/TRACE_GATE.md",
+      "raw_bytes": 338,
+      "raw_sha256": "b746a3673329a0720e46d5242b26ced79d3557e98068495a361e08cfaedf2fea",
+      "stored_path": "_objects/b746a3673329a0720e46d5242b26ced79d3557e98068495a361e08cfaedf2fea.gz",
+      "stored_sha256": "0b5c0ffb63d75a69d3e0e992e2ae334e6dcd2f9a2af6ca42887d16a66a73a8eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fcd97b8472af5e6a98b0eba6835be9e7009ac5c0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-quasilocal-vertex-cold-review/REVIEW.md",
+      "raw_bytes": 7037,
+      "raw_sha256": "72a29a8ed8bffd7abca1b0f353580bfeb2504f0a5ea35c015e1448ec05dfcd6b",
+      "stored_path": "_objects/72a29a8ed8bffd7abca1b0f353580bfeb2504f0a5ea35c015e1448ec05dfcd6b.gz",
+      "stored_sha256": "c5db2618696c103502f0d322aad0dbd1c0a0e2fcb74b7b9e8600015f7d530b58"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e0663e681cb26d4f51b262dfe8be07bdfaad9eeb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/QUASILOCAL_EXTRACTION_REVIEW.md",
+      "raw_bytes": 3168,
+      "raw_sha256": "cc6c7ef4d2244b7bcff15232ea829654cf507b64874d33fa2ad4e9591f972f0d",
+      "stored_path": "_objects/cc6c7ef4d2244b7bcff15232ea829654cf507b64874d33fa2ad4e9591f972f0d.gz",
+      "stored_sha256": "8a6cb3b02c05d104980a33ebeddb4d4a49572e0b3c24de98e96a15646bb664d4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "315c3d5e22584db265427df678e62ec416bc1a06",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/READ_HASHES.json",
+      "raw_bytes": 729,
+      "raw_sha256": "3cd4c6c76c2a477a7c4392c47993083f207fe4f5471e4849045fdae3286a26c7",
+      "stored_path": "_objects/3cd4c6c76c2a477a7c4392c47993083f207fe4f5471e4849045fdae3286a26c7.gz",
+      "stored_sha256": "3b4298b3ef0b4462ea3c753fba70d921d7c03fe2a21031cc58d5738535abcbca"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3553db190e9f48bf01f86cf2c283a6922109a8cd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/RESULT.json",
+      "raw_bytes": 409,
+      "raw_sha256": "6aa47dd9b6ac3cfcf173b6cc2f5c1480f56a985ce8bfdf7c8cdf3aeebf7f9e30",
+      "stored_path": "_objects/6aa47dd9b6ac3cfcf173b6cc2f5c1480f56a985ce8bfdf7c8cdf3aeebf7f9e30.gz",
+      "stored_sha256": "b2d5d45e4b1edb9b0b9f591b60489a41d93b69db691bd8e6334e662c074fd1ae"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e67110eced38aad3d6e537fdacd7f15d108f4b5c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/REVIEW.md",
+      "raw_bytes": 3674,
+      "raw_sha256": "3b8cf086d0cb51017a93b04b5d61780c4be29bcba3eb115ceca4a1af1c107dee",
+      "stored_path": "_objects/3b8cf086d0cb51017a93b04b5d61780c4be29bcba3eb115ceca4a1af1c107dee.gz",
+      "stored_sha256": "aa8256d545b66e5b64e6fbb26b21adabd77d7c845476d4f2f9d66663b19dcefa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4e5971c0147c5f021dcbb26f31dcfb8347a06294",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/ARITHMETIC.json",
+      "raw_bytes": 134,
+      "raw_sha256": "383ae685e49aea8cc4394d4cc4bb55ddc1741b42f93517b9a0413785b2820d3d",
+      "stored_path": "_objects/383ae685e49aea8cc4394d4cc4bb55ddc1741b42f93517b9a0413785b2820d3d.gz",
+      "stored_sha256": "808c45dec3700539b2c3d090a75895063a528bae7c1f588e9e5148c4216235a5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5456a5b16ebdbc3755136fc486052f98f77425e8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION.md",
+      "raw_bytes": 11064,
+      "raw_sha256": "c8984ca370808e8113694f827128d4481dfdd2a1f522a5378f5b1ea2e16ed511",
+      "stored_path": "_objects/c8984ca370808e8113694f827128d4481dfdd2a1f522a5378f5b1ea2e16ed511.gz",
+      "stored_sha256": "eddee8725f363cca004a3800cbbb94f472f2fab9ccfbb1c1fa0d08aeb529a254"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b20138a5bd79ee008489f88cd244e0e9a25ab27",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION_FIRST_9e512.md",
+      "raw_bytes": 7489,
+      "raw_sha256": "9e51221986f26576303e26bd9023240132f180ea650f85b49ba4d2256484db96",
+      "stored_path": "_objects/9e51221986f26576303e26bd9023240132f180ea650f85b49ba4d2256484db96.gz",
+      "stored_sha256": "b5373286fb8a2c6d8866301404b3c741eab368832a7168d6062d3c267b810763"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7f97fb416816d30628601195582a13219dc4df28",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/FREEZE.json",
+      "raw_bytes": 578,
+      "raw_sha256": "fd48b10a06b2ec8be6d1ecf61361b6d855da9be153c226d3bd98d43f3e697228",
+      "stored_path": "_objects/fd48b10a06b2ec8be6d1ecf61361b6d855da9be153c226d3bd98d43f3e697228.gz",
+      "stored_sha256": "04a78a404133b62129ed67e588345b240af89d40a613619088b4e47600574fa6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "09b531b37fd08e82b81aba49da6c240bf361fb9e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/QUASILOCAL_VERTEX_LEMMA.md",
+      "raw_bytes": 6174,
+      "raw_sha256": "c892cdcd2a9c83c26afa19b3305a622188cc1cba082c17cc8b332ac72d7069c6",
+      "stored_path": "_objects/c892cdcd2a9c83c26afa19b3305a622188cc1cba082c17cc8b332ac72d7069c6.gz",
+      "stored_sha256": "6be3da5204e82df704ace6a749c4519044015701d02ee7c5525eed97f615d3f0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2917afbfe3c204c5d9e4e30fdf2208bf1bab3465",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_RETURN_AND_RESUMMATION.md",
+      "raw_bytes": 5238,
+      "raw_sha256": "64c7bd89ca4eecb2a487c4c44b8a88497f3eb17d23b75cb826e465621dbfa768",
+      "stored_path": "_objects/64c7bd89ca4eecb2a487c4c44b8a88497f3eb17d23b75cb826e465621dbfa768.gz",
+      "stored_sha256": "681e1735757d65f278985d63a5f351630824124a0147816bb4d3a4a4d1e36ea1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4dac587f77af5c56fa256af1385a25775d3b6d96",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_TINY_CONTROL.json",
+      "raw_bytes": 157,
+      "raw_sha256": "74794f329377c98f6d3487c0e93086790138ab14a423221ae4524b460701c4b8",
+      "stored_path": "_objects/74794f329377c98f6d3487c0e93086790138ab14a423221ae4524b460701c4b8.gz",
+      "stored_sha256": "5d12b903d36eb19234fb79c3e035b18ff119e6f1338508ad199d124fa6f943e8"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/",
+  "revision": "df8112d1642bec7aaaacd380036087b03cdb0173",
+  "schema_version": 1,
+  "unique_blobs": {
+    "05d3b4bb8a36d6d79a2aa3f410b9796ad4512440": {
+      "occurrences": 1,
+      "raw_bytes": 8300,
+      "raw_sha256": "4da676065b4b6c5aa428bb1d553c093fe46a3cca3827f419474782d217a639b6"
+    },
+    "06b462cb0f4746624b6247e82de20d37da713e14": {
+      "occurrences": 1,
+      "raw_bytes": 2494,
+      "raw_sha256": "bdc9d2a2fd0c3bf46524a6b049184f4c06aa6f69a6b391afc370454fb0ebfc76"
+    },
+    "09b531b37fd08e82b81aba49da6c240bf361fb9e": {
+      "occurrences": 1,
+      "raw_bytes": 6174,
+      "raw_sha256": "c892cdcd2a9c83c26afa19b3305a622188cc1cba082c17cc8b332ac72d7069c6"
+    },
+    "0b4d3dc70e94a38c3d34fc31f53b6ff96683d055": {
+      "occurrences": 1,
+      "raw_bytes": 90,
+      "raw_sha256": "1043aeefd6cf484f8ba30f65a03e182696514ff2ccae0709ef91df28d9666816"
+    },
+    "0ed2d37517e4a6e7745aa29db2a8cc0419a9f6a4": {
+      "occurrences": 1,
+      "raw_bytes": 338,
+      "raw_sha256": "b746a3673329a0720e46d5242b26ced79d3557e98068495a361e08cfaedf2fea"
+    },
+    "1896c446981484e3aabb446a23d1c6140902fecf": {
+      "occurrences": 1,
+      "raw_bytes": 1374,
+      "raw_sha256": "b859a9b870e0892968f0696a052c53bfc4494e18a94ae008e333a971ad280e8f"
+    },
+    "254ab1e5230dda69d1d7f4fe45248548fe9c9ad1": {
+      "occurrences": 1,
+      "raw_bytes": 302,
+      "raw_sha256": "47039ff362e4cef3ab01489301e8c05b058869ae3596e29c7d78999afdf5177b"
+    },
+    "2917afbfe3c204c5d9e4e30fdf2208bf1bab3465": {
+      "occurrences": 1,
+      "raw_bytes": 5238,
+      "raw_sha256": "64c7bd89ca4eecb2a487c4c44b8a88497f3eb17d23b75cb826e465621dbfa768"
+    },
+    "315c3d5e22584db265427df678e62ec416bc1a06": {
+      "occurrences": 1,
+      "raw_bytes": 729,
+      "raw_sha256": "3cd4c6c76c2a477a7c4392c47993083f207fe4f5471e4849045fdae3286a26c7"
+    },
+    "3553db190e9f48bf01f86cf2c283a6922109a8cd": {
+      "occurrences": 1,
+      "raw_bytes": 409,
+      "raw_sha256": "6aa47dd9b6ac3cfcf173b6cc2f5c1480f56a985ce8bfdf7c8cdf3aeebf7f9e30"
+    },
+    "49b98bc3823ac4c7ed30a21bab158a4ff28ed869": {
+      "occurrences": 2,
+      "raw_bytes": 967,
+      "raw_sha256": "481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f"
+    },
+    "4dac587f77af5c56fa256af1385a25775d3b6d96": {
+      "occurrences": 1,
+      "raw_bytes": 157,
+      "raw_sha256": "74794f329377c98f6d3487c0e93086790138ab14a423221ae4524b460701c4b8"
+    },
+    "4e5971c0147c5f021dcbb26f31dcfb8347a06294": {
+      "occurrences": 1,
+      "raw_bytes": 134,
+      "raw_sha256": "383ae685e49aea8cc4394d4cc4bb55ddc1741b42f93517b9a0413785b2820d3d"
+    },
+    "5456a5b16ebdbc3755136fc486052f98f77425e8": {
+      "occurrences": 1,
+      "raw_bytes": 11064,
+      "raw_sha256": "c8984ca370808e8113694f827128d4481dfdd2a1f522a5378f5b1ea2e16ed511"
+    },
+    "58c7451345b7b40f733a55063592b1b56dfad1d4": {
+      "occurrences": 1,
+      "raw_bytes": 189,
+      "raw_sha256": "7e64d207a09982478d680f89b8bd1d8f1a2a3bb0e6f48ec4dc14c9ff3e5b62a1"
+    },
+    "61491dc50729484fab9b4612a5ab84a644becc9e": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "028637148726a546e5db5f01a6db74f953fa48cd5c4dcfb4c4376ea2806011c9"
+    },
+    "71bd8043430c7bc7668c61bd73588f7696f06bb8": {
+      "occurrences": 1,
+      "raw_bytes": 1061,
+      "raw_sha256": "bdbecd6f2e51633b0ac4412e7ec09fe3ee82d3887c6c1feea18a1af8d05685e3"
+    },
+    "72f985e9c6ba5af1478b1bd13aac2e9de061d395": {
+      "occurrences": 1,
+      "raw_bytes": 391,
+      "raw_sha256": "138dbf400c75e233dd11a6c3a771140c13b90c366aef3dd01a300595f6284428"
+    },
+    "7b20138a5bd79ee008489f88cd244e0e9a25ab27": {
+      "occurrences": 1,
+      "raw_bytes": 7489,
+      "raw_sha256": "9e51221986f26576303e26bd9023240132f180ea650f85b49ba4d2256484db96"
+    },
+    "7f97fb416816d30628601195582a13219dc4df28": {
+      "occurrences": 1,
+      "raw_bytes": 578,
+      "raw_sha256": "fd48b10a06b2ec8be6d1ecf61361b6d855da9be153c226d3bd98d43f3e697228"
+    },
+    "842f536a18bc15d36261b2a2da65580f410cea0e": {
+      "occurrences": 1,
+      "raw_bytes": 247,
+      "raw_sha256": "811a4d3aa20b470b49a3d042de018aa01c2af2f563112589456413a8132809c4"
+    },
+    "87a55b975b3cb1b040b2ff25c391774a21a08978": {
+      "occurrences": 1,
+      "raw_bytes": 3042,
+      "raw_sha256": "f6d4a3197c48bec318e3be5c27d936477d9f2d3f4312d9e13bca84d08a97d3f3"
+    },
+    "948232d7e256c5585df74e5a381c8fbf3036523b": {
+      "occurrences": 1,
+      "raw_bytes": 959,
+      "raw_sha256": "697ba0292b615b40693ad65d2f98b3b2c5faf4f235a4b4368ad43d86f2b32d0b"
+    },
+    "9a5c0805251a186f058b092acb052cb3a96a76e4": {
+      "occurrences": 1,
+      "raw_bytes": 207,
+      "raw_sha256": "ee832b07ba8024482db7d47a3e84d743eab0809a7bda2864104e6bd342ca2e15"
+    },
+    "9ab00abdd7a7c85687781e9bbb3673a9aba3b747": {
+      "occurrences": 1,
+      "raw_bytes": 732,
+      "raw_sha256": "7b0837305e11e0fb6a98b279688493f868913e2565660c135ed28d0870337974"
+    },
+    "9f0e5e8a3fe637070d34e44624dbc9b3500fa40b": {
+      "occurrences": 1,
+      "raw_bytes": 235,
+      "raw_sha256": "a6359c1e29ad0773205e7f1c5a3cff239bd32969653d4dcbfbcfe533ef03518d"
+    },
+    "aca17bbb6c50d244056371244f36ec21fb44e0e1": {
+      "occurrences": 1,
+      "raw_bytes": 235,
+      "raw_sha256": "23e1c9e98734fe7a77399456bead4f1c5a2f7dfadfc2318ef00b94e2d106f03f"
+    },
+    "b6627eb13fd2dec3b00d0204d70f415c0e37ae5b": {
+      "occurrences": 1,
+      "raw_bytes": 3044,
+      "raw_sha256": "8657493ed384e0005a0b85241bb432a50b1268da61e280ef96ab7713ae94bcea"
+    },
+    "bc573e787acf59c61a51d3ae2890a723d9a5eced": {
+      "occurrences": 1,
+      "raw_bytes": 993,
+      "raw_sha256": "6c1527d5f41f01dfc92cc5f3f779b6cd4814670961c445013efa3c49e9c28443"
+    },
+    "c56520f56b688c3d4a9f59140dfb6f994500b98d": {
+      "occurrences": 1,
+      "raw_bytes": 249,
+      "raw_sha256": "d9f097fad4f42d4cba209ebe77748095c0518a4dcee1941e2b778651078c2157"
+    },
+    "c8f9b3d0e7c89a035454c60978dd5ff1aceffe76": {
+      "occurrences": 1,
+      "raw_bytes": 473,
+      "raw_sha256": "855bd725b2ce884157c1f9960dcfc50bb8c75d42bb99d2854ffd23af9c9df9c9"
+    },
+    "d7c82310e3ee13796f521789d6b1c2f151dac144": {
+      "occurrences": 1,
+      "raw_bytes": 1375,
+      "raw_sha256": "0ca84325c32f9d636162c0518786f342b676b62ac565695fea2b00582af820fa"
+    },
+    "d86993bc621ee7e6ddcc78bab6f23a4ab3a70e64": {
+      "occurrences": 1,
+      "raw_bytes": 691,
+      "raw_sha256": "23b37d0cf2bf08ff1cde246afd207436cddcab4b6c1c21050cd94f8810031f86"
+    },
+    "d8da558ebd2dd229e1b762237374beef5b78710c": {
+      "occurrences": 1,
+      "raw_bytes": 947,
+      "raw_sha256": "b2780a3cd710dd2b44e01db1a9b4bf966dcef26ea2dd6991df02ec04ba2b07e8"
+    },
+    "db280ce9e68b7d6b9b11adf4880fda9816a3d3fd": {
+      "occurrences": 1,
+      "raw_bytes": 409,
+      "raw_sha256": "3e352df556a419c02c445477dbd822cd286ffa11534784f6c72f8143561b0655"
+    },
+    "e0663e681cb26d4f51b262dfe8be07bdfaad9eeb": {
+      "occurrences": 1,
+      "raw_bytes": 3168,
+      "raw_sha256": "cc6c7ef4d2244b7bcff15232ea829654cf507b64874d33fa2ad4e9591f972f0d"
+    },
+    "e66ba1ad27e71d30ccd71eb1a93d1f2893e4ca99": {
+      "occurrences": 1,
+      "raw_bytes": 363,
+      "raw_sha256": "7b3c23ea69c5e1f96552784f4b5b9ccdfc2872d0989ce7e6eca8010fd5d3b851"
+    },
+    "e67110eced38aad3d6e537fdacd7f15d108f4b5c": {
+      "occurrences": 1,
+      "raw_bytes": 3674,
+      "raw_sha256": "3b8cf086d0cb51017a93b04b5d61780c4be29bcba3eb115ceca4a1af1c107dee"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 1,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "eb6d45581fd4c1449b97ba60547d939c22fcabca": {
+      "occurrences": 1,
+      "raw_bytes": 44214,
+      "raw_sha256": "2c64b374a2848f6147e393d01b90a666084a84aa0bc6f803c7441db9d6033960"
+    },
+    "ec9045a11785764a9422fde9897c4a1286a0649a": {
+      "occurrences": 1,
+      "raw_bytes": 3049,
+      "raw_sha256": "e19c0624f04b2e434b68ae96f61de859e20ca2684520317964b3783228e676b7"
+    },
+    "fcd97b8472af5e6a98b0eba6835be9e7009ac5c0": {
+      "occurrences": 1,
+      "raw_bytes": 7037,
+      "raw_sha256": "72a29a8ed8bffd7abca1b0f353580bfeb2504f0a5ea35c015e1448ec05dfcd6b"
+    }
+  }
+}

@@ -65,3 +65,5 @@ and resummation survive. An all-phase or axiom wall FAILS N1–N8.
 Block16: provisional positive state/regulator theorem, N1-N8 recorded. No phase exclusion or axiom update; broad no-go FAIL/not claimed. Divergent weak-coupling constants are a limitation of this estimate only.
 
 Block17: exact regulator-specific counterexample to inferring an integer Gaussian state or oscillator spectrum from a small plaquette deficit. Cyclic and hard regulators differ at finite scaled payload. N1-N8 recorded; full finite-spin photon and axiom no-go FAIL/not claimed.
+
+Block18: full-class nearest-neighbor optimality only for translation-invariant single-link all-time nonnegative phase kernels at fixed curvature. Signed PSD stencil is a constructive escape. N1-N8 recorded; unrestricted positive representation/phase/axiom no-go FAIL/not claimed.

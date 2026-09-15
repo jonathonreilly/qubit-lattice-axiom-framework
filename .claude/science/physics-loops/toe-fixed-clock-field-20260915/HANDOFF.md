@@ -696,3 +696,26 @@ was solved densely with unchanged residual tolerance. A sparse run also
 missed a third degenerate charged level despite small residuals; conserved
 number blocks now retain all multiplicities. The spectral theorem remains
 fixed-volume and provisional, with no photon or axiom-update claim.
+
+
+## Block18 — positive electric-generator accuracy and a signed escape
+
+All translation-invariant cyclic electric generators with an entrywise
+nonnegative phase heat kernel at every time are nonnegative jump mixtures.
+At a fixed continuous-symbol curvature, the geometric-series inequality
+proves lambda_general<=lambda_nearest pointwise. Longer positive jumps
+cannot cancel the quartic cosine error. This is the full declared cone,
+not an inference from a few sampled stencils.
+
+The standard signed fourth-order stencil remains a positive Hamiltonian
+and removes that quartic error, but has a negative length-two small-time
+heat-kernel entry and a negative closed +2,-1,-1 history in the parent's
+decomposition. For the limiting periodic one-plaquette operator, uniform
+moment bounds and the oscillator variational gap prove
+ell^4(1-E_improved)->pi^4/12, versus nearest-neighbor ell^-2 error.
+Different bases, auxiliaries or representations remain possible escapes;
+there is no unrestricted positivity no-go or axiom update.
+
+Exact symbol/Gaussian checks and finite prime/composite matrix checks pass.
+Fourier refinements agree within5.1e-12. No scientific check failed. This
+is a provisional regulator-design result, not an interacting phase proof.

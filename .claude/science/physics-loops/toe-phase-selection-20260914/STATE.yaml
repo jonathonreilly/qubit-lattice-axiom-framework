@@ -14,22 +14,22 @@ research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
 block: 22
-active_route: fixed_clock_full_flux_image_lattice_and_coupled_defects
+active_route: fixed_clock_defect_localization_and_covariant_physical_flux_repair
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Derive and challenge the exact finite-clock full-flux image-lattice/dual-lattice representation, then
-  test whether it enables fixed-law source and Gaussianity control while preserving both defect species. Continue
-  personally through2026-09-15 13:30:44UTC.
+next_action: Check the physical principal-flux repair and construct a state-dependent covariant choice of local integer
+  filling from finite-energy clock data. Continue the coupled fixed-N Gaussianity search or re-rank to another substantive
+  target through2026-09-15 13:30:44UTC.
 strongest_unresolved_obligation: A fixed-beta, fixed-clock full physical-score Gaussian limit; the actual N=3 Hamiltonian
   phase and native law remain separate open obligations.
-working_result: PR8134 at2d45fc36a80fd8ee887d133bc653d6a658d30ae8 proposes a fixed-beta Haar full-score Gaussian
-  Maxwell limit with an actual mixing Gibbs-state match, uniform cubic source control and environmental spectral
-  response. It is stacked on the provisional carrier/filling source PR8133 atf8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8.
-  All author proposals await independent review; no finite-clock or native-law closure is asserted.
+working_result: PR8134 fixed-beta Haar full-score proposal remains pending independent review. Block22 privately derives
+  fixed-clock defect-component mass tails from exact Gaussian domination, a physical principal-flux cluster bound and
+  an explicit local integer repair preserving all clock Wilson characters. Finite sparse algebra and exact small clock
+  probability checks passed. This does not yet establish fixed-clock Gaussianity or a native physical law.
 public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124

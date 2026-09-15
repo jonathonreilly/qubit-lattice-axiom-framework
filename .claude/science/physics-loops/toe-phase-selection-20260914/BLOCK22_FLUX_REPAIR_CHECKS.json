@@ -1,0 +1,441 @@
+{
+  "status": "finite author checks; proof and independent review remain separate",
+  "geometry": {
+    "bad_plaquette_graph_actual_degree": 72,
+    "used_degree_bound": 92,
+    "charge_graph_degree": 14,
+    "plaquette_incident_3cells": 4,
+    "plaquette_incident_4cells": 4
+  },
+  "bounds": {
+    "beta": 20,
+    "physical_bad_cluster_ratio": 0.2924379482170239,
+    "charge_mass_decay_rate": 0.10245856480529036,
+    "fixed_N_example": 126,
+    "beta_dual": 20.10718889382193,
+    "auxiliary_mass_threshold": 9.680245079134291,
+    "physical_bad_threshold": 17.75765581896069
+  },
+  "algebra": {
+    "integer_fill_fixtures": [
+      {
+        "fixture": 0,
+        "components": 14,
+        "total_charge_mass": 124,
+        "fill_l1": 35
+      },
+      {
+        "fixture": 1,
+        "components": 12,
+        "total_charge_mass": 134,
+        "fill_l1": 34
+      },
+      {
+        "fixture": 2,
+        "components": 16,
+        "total_charge_mass": 160,
+        "fill_l1": 49
+      },
+      {
+        "fixture": 3,
+        "components": 14,
+        "total_charge_mass": 104,
+        "fill_l1": 26
+      },
+      {
+        "fixture": 4,
+        "components": 14,
+        "total_charge_mass": 120,
+        "fill_l1": 30
+      },
+      {
+        "fixture": 5,
+        "components": 13,
+        "total_charge_mass": 112,
+        "fill_l1": 32
+      },
+      {
+        "fixture": 6,
+        "components": 14,
+        "total_charge_mass": 108,
+        "fill_l1": 28
+      },
+      {
+        "fixture": 7,
+        "components": 15,
+        "total_charge_mass": 120,
+        "fill_l1": 36
+      },
+      {
+        "fixture": 8,
+        "components": 15,
+        "total_charge_mass": 120,
+        "fill_l1": 30
+      },
+      {
+        "fixture": 9,
+        "components": 13,
+        "total_charge_mass": 118,
+        "fill_l1": 30
+      },
+      {
+        "fixture": 10,
+        "components": 13,
+        "total_charge_mass": 108,
+        "fill_l1": 27
+      },
+      {
+        "fixture": 11,
+        "components": 14,
+        "total_charge_mass": 86,
+        "fill_l1": 22
+      },
+      {
+        "fixture": 12,
+        "components": 14,
+        "total_charge_mass": 104,
+        "fill_l1": 26
+      },
+      {
+        "fixture": 13,
+        "components": 14,
+        "total_charge_mass": 116,
+        "fill_l1": 29
+      },
+      {
+        "fixture": 14,
+        "components": 13,
+        "total_charge_mass": 96,
+        "fill_l1": 24
+      },
+      {
+        "fixture": 15,
+        "components": 15,
+        "total_charge_mass": 96,
+        "fill_l1": 24
+      },
+      {
+        "fixture": 16,
+        "components": 16,
+        "total_charge_mass": 116,
+        "fill_l1": 29
+      },
+      {
+        "fixture": 17,
+        "components": 15,
+        "total_charge_mass": 116,
+        "fill_l1": 29
+      },
+      {
+        "fixture": 18,
+        "components": 16,
+        "total_charge_mass": 140,
+        "fill_l1": 35
+      },
+      {
+        "fixture": 19,
+        "components": 13,
+        "total_charge_mass": 124,
+        "fill_l1": 31
+      },
+      {
+        "fixture": 20,
+        "components": 12,
+        "total_charge_mass": 112,
+        "fill_l1": 28
+      },
+      {
+        "fixture": 21,
+        "components": 16,
+        "total_charge_mass": 144,
+        "fill_l1": 40
+      },
+      {
+        "fixture": 22,
+        "components": 16,
+        "total_charge_mass": 128,
+        "fill_l1": 32
+      },
+      {
+        "fixture": 23,
+        "components": 15,
+        "total_charge_mass": 116,
+        "fill_l1": 33
+      }
+    ],
+    "actual_clock_flux_fixtures": [
+      {
+        "N": 2,
+        "trial": 0,
+        "charge_mass": 78,
+        "components": 1,
+        "lift_nonzero": 140
+      },
+      {
+        "N": 2,
+        "trial": 1,
+        "charge_mass": 56,
+        "components": 1,
+        "lift_nonzero": 118
+      },
+      {
+        "N": 2,
+        "trial": 2,
+        "charge_mass": 70,
+        "components": 1,
+        "lift_nonzero": 128
+      },
+      {
+        "N": 2,
+        "trial": 3,
+        "charge_mass": 70,
+        "components": 1,
+        "lift_nonzero": 142
+      },
+      {
+        "N": 2,
+        "trial": 4,
+        "charge_mass": 72,
+        "components": 1,
+        "lift_nonzero": 138
+      },
+      {
+        "N": 2,
+        "trial": 5,
+        "charge_mass": 70,
+        "components": 1,
+        "lift_nonzero": 134
+      },
+      {
+        "N": 3,
+        "trial": 0,
+        "charge_mass": 60,
+        "components": 1,
+        "lift_nonzero": 134
+      },
+      {
+        "N": 3,
+        "trial": 1,
+        "charge_mass": 50,
+        "components": 1,
+        "lift_nonzero": 144
+      },
+      {
+        "N": 3,
+        "trial": 2,
+        "charge_mass": 50,
+        "components": 1,
+        "lift_nonzero": 147
+      },
+      {
+        "N": 3,
+        "trial": 3,
+        "charge_mass": 52,
+        "components": 1,
+        "lift_nonzero": 143
+      },
+      {
+        "N": 3,
+        "trial": 4,
+        "charge_mass": 50,
+        "components": 1,
+        "lift_nonzero": 147
+      },
+      {
+        "N": 3,
+        "trial": 5,
+        "charge_mass": 58,
+        "components": 1,
+        "lift_nonzero": 137
+      },
+      {
+        "N": 4,
+        "trial": 0,
+        "charge_mass": 62,
+        "components": 1,
+        "lift_nonzero": 167
+      },
+      {
+        "N": 4,
+        "trial": 1,
+        "charge_mass": 64,
+        "components": 2,
+        "lift_nonzero": 166
+      },
+      {
+        "N": 4,
+        "trial": 2,
+        "charge_mass": 58,
+        "components": 1,
+        "lift_nonzero": 178
+      },
+      {
+        "N": 4,
+        "trial": 3,
+        "charge_mass": 52,
+        "components": 3,
+        "lift_nonzero": 159
+      },
+      {
+        "N": 4,
+        "trial": 4,
+        "charge_mass": 64,
+        "components": 1,
+        "lift_nonzero": 154
+      },
+      {
+        "N": 4,
+        "trial": 5,
+        "charge_mass": 56,
+        "components": 1,
+        "lift_nonzero": 164
+      },
+      {
+        "N": 5,
+        "trial": 0,
+        "charge_mass": 48,
+        "components": 1,
+        "lift_nonzero": 159
+      },
+      {
+        "N": 5,
+        "trial": 1,
+        "charge_mass": 50,
+        "components": 1,
+        "lift_nonzero": 162
+      },
+      {
+        "N": 5,
+        "trial": 2,
+        "charge_mass": 46,
+        "components": 2,
+        "lift_nonzero": 170
+      },
+      {
+        "N": 5,
+        "trial": 3,
+        "charge_mass": 50,
+        "components": 1,
+        "lift_nonzero": 164
+      },
+      {
+        "N": 5,
+        "trial": 4,
+        "charge_mass": 60,
+        "components": 1,
+        "lift_nonzero": 166
+      },
+      {
+        "N": 5,
+        "trial": 5,
+        "charge_mass": 50,
+        "components": 1,
+        "lift_nonzero": 158
+      },
+      {
+        "N": 7,
+        "trial": 0,
+        "charge_mass": 50,
+        "components": 1,
+        "lift_nonzero": 180
+      },
+      {
+        "N": 7,
+        "trial": 1,
+        "charge_mass": 62,
+        "components": 1,
+        "lift_nonzero": 170
+      },
+      {
+        "N": 7,
+        "trial": 2,
+        "charge_mass": 60,
+        "components": 1,
+        "lift_nonzero": 174
+      },
+      {
+        "N": 7,
+        "trial": 3,
+        "charge_mass": 62,
+        "components": 1,
+        "lift_nonzero": 179
+      },
+      {
+        "N": 7,
+        "trial": 4,
+        "charge_mass": 40,
+        "components": 2,
+        "lift_nonzero": 159
+      },
+      {
+        "N": 7,
+        "trial": 5,
+        "charge_mass": 62,
+        "components": 1,
+        "lift_nonzero": 163
+      }
+    ]
+  },
+  "small_actual_clock_probabilities": [
+    {
+      "N": 3,
+      "beta": 2,
+      "states": 243,
+      "all_nonempty_bad_subsets": 63,
+      "max_probability_to_bound": "0.00236700095447473779418841426408312593475474284398198847587188",
+      "physical_magnetic_charge_probability": "0.0000767414234985193799265790120193015938764314610486533875969151"
+    },
+    {
+      "N": 3,
+      "beta": 5,
+      "states": 243,
+      "all_nonempty_bad_subsets": 63,
+      "max_probability_to_bound": "0.0000000359039416068373775847156471733331205394032710939010240588947",
+      "physical_magnetic_charge_probability": "0.000000000000206226381259994736621692991370662350352982200917336748248891"
+    },
+    {
+      "N": 4,
+      "beta": 2,
+      "states": 1024,
+      "all_nonempty_bad_subsets": 63,
+      "max_probability_to_bound": "0.0932393386394164576703850199896774847139031651808565913489943",
+      "physical_magnetic_charge_probability": "0.00131049374961943151443168618150912540361986641934311881524395"
+    },
+    {
+      "N": 5,
+      "beta": 2,
+      "states": 3125,
+      "all_nonempty_bad_subsets": 63,
+      "max_probability_to_bound": "0.332420585514874962289027973982927898736294145075343415739606",
+      "physical_magnetic_charge_probability": "0.00264664488903158242806526296776973182333882948128307069883157"
+    },
+    {
+      "N": 3,
+      "beta": 20,
+      "states": 243,
+      "all_nonempty_bad_subsets": 63,
+      "max_probability_to_bound": "1.32904128284616022645697783974994005072555868689756139878242e-29",
+      "physical_magnetic_charge_probability": "2.82616117041498762840479362409485297814022150463052051716412e-56"
+    }
+  ],
+  "non_finite_range_control": {
+    "radius": 7,
+    "charge_mass": 56,
+    "fill_l1": 196,
+    "interior_cell": [
+      [
+        0,
+        0,
+        -2,
+        -2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "full_fill_value": -1,
+    "radius3_visible_charge_cells": 0,
+    "scope": "generic closed-charge representative; no physical principal-lift claim"
+  }
+}

@@ -40,3 +40,18 @@ Block 2 update:
 - Next reassessment reads the current native Gaussian compiler and selected
   projective-history kernel, looking for a distinct missing construction
   rather than more small-box energy samples.
+
+## Block22 update —2026-09-15 04:17UTC
+
+- Direct full-rank image/Fourier duality: **blocked-equivalent** as a route
+  to fixed-clock Gaussianity. The exact identity was already established in
+  blocks7/10–12/18; re-labelling the dual CLT obligation adds no mechanism.
+- Conditional affine-coset Gaussianity: open at the coupled law of the
+  conditional mean/covariance. Mixture concentration cannot be assumed.
+- Multivariate Gaussian domination plus connected-set counting: new private
+  defect-mass tail proof for both separate exact marginals, with quantization
+  retained. No inference from density alone to Gaussianity.
+- Physical compact-flux repair: a new explicit dual-cycle contraction and
+  exponentially accurate finite-window representative preserve Wilson
+  characters. Frame covariance and the probability passage are under
+  personal scrutiny; a fixed-clock full-score limit is still unproved.

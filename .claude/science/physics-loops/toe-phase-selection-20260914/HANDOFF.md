@@ -1,3 +1,37 @@
+# Current checkpoint — 2026-09-15 04:17 UTC
+
+Continue personally, without subagents, through **2026-09-15 13:30:44UTC**.
+The pushed PR8134 milestone and removed delivery checkout remain as recorded
+below. Campaign commit3ef4199248 was verified pushed; the campaign tree was
+clean before the present block22 files.
+
+Block22 found the proposed image-lattice identity already present in prior
+work; it is not counted as a new discovery. A new multivariate use of its
+centered Gaussian bound gives exponential connected-mass tails for actual
+image-magnetic and Fourier-electric defect marginals at fixed parameters.
+The two positive marginals are not assigned an unproved positive joint law.
+
+The physical principal plaquette flux separately has exponentially small
+bad-plaquette clusters for beta>18 log(2*92²)/pi². A constructive dual-cycle
+contraction then repairs its integer Bianchi defects locally in probability,
+preserving every Wilson character and the finite-clock aliases. The current
+proof is in BLOCK22_FIXED_CLOCK_DEFECT_LOCALIZATION_DERIVATION.md. The
+self-contained private runner checks24 integer filling fixtures,30 actual
+clock-flux fixtures,315 bad-set probability bounds on five fully enumerated
+three-cube laws, the incidence geometry and a generic long-cycle control
+against deterministic finite-range claims. These checks do not prove the
+infinite-volume theorem or constitute independent review.
+
+Next: check the probability/locality proof, then choose the filling frame
+covariantly from the random physical environment. Positive finite-energy
+clock laws may break all affine frame ties almost surely, permitting this
+without changing the original law. The current fixed-axis construction is
+only a mathematical representative. Higher cumulants and covariance under
+the coupled finite-clock law remain open. No new PR is forced by this
+checkpoint, and no axiom update is claimed.
+
+---
+
 # Current checkpoint — 2026-09-15 03:43 UTC
 
 The controlling deadline remains **2026-09-15 13:30:44 UTC**. All work

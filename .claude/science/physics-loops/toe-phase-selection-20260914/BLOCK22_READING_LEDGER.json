@@ -1,0 +1,27 @@
+{
+  "block": 22,
+  "execution": "personally_no_subagents",
+  "sources": [
+    {
+      "title": "Frohlich-Spencer P/81/40 preprint",
+      "source_url": "https://omeka.ihes.fr/document/P_81_40.pdf",
+      "local_pdf": "/tmp/toe-charged-reading-20260914/frohlich-spencer-1981.pdf",
+      "sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17",
+      "reading_this_block": [
+        "Introduction portions; extracted lines300-440",
+        "Masslessness and section3; extracted lines930-1530"
+      ],
+      "scope": "No full Gaussian-limit theorem imported; targeted text reading, not a new complete-paper read."
+    },
+    {
+      "title": "Ukawa-Windey-Guth PRD21(1980)1013-1036",
+      "source_url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.21.1013",
+      "local_pdf": "/tmp/toe-charged-reading-20260914/ukawa-windey-guth-1980.pdf",
+      "sha256": "6265b95792e78f5dac156013c35a2e614ad6137a5fec9edb813db84e962a796d",
+      "reading_this_block": [
+        "SectionsV-VI and portionVII; extracted lines770-1020,1070-1440"
+      ],
+      "scope": "Two-defect representation and explicit limits of the low-density argument are context. No rigorous Gaussian-limit theorem imported."
+    }
+  ]
+}

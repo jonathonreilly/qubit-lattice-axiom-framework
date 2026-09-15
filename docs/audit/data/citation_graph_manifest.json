@@ -1,6 +1,6 @@
 {
- "edge_count": 13381,
- "node_count": 5818,
+ "edge_count": 13383,
+ "node_count": 5821,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13210,6 +13210,10 @@
    "deps_hash": "0f8945ef8d30",
    "out_degree": 3
   },
+  "native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "aece02ce6139",
+   "out_degree": 2
+  },
   "native_weyl_stress_logarithm_and_contact_response_bounded_theorem_note_2026-09-13": {
    "deps_hash": "01920c5e654d",
    "out_degree": 3
@@ -22243,6 +22247,14 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8096-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8097-evidence.kept.pr8097-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8097-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

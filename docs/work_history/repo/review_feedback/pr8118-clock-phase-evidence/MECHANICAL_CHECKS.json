@@ -1,0 +1,34 @@
+{
+  "syntax": "passed",
+  "cache": "fresh",
+  "source_sha256": "95c01d3d1965a153614b80e3cff7f56449bcef10a3d22e097766f7e39d23cd21",
+  "note_sha256": "f1741a861fd7b588162b432b4387d4bd3e0eec0d425aa621e8e9cbf7b3e14f7b",
+  "local_links": [
+    "scripts/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.py",
+    "logs/runner-cache/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.txt",
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/REVIEW_HISTORY.md"
+  ],
+  "five_resolution_lines_minimum_40_characters": "passed",
+  "vocabulary": {
+    "files": [],
+    "schema_version": 1,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    }
+  },
+  "mutations_detected": 12,
+  "benign_scoped_mutation": 1,
+  "independent_review": "pending",
+  "integration_gate": "Full mechanical pipeline, strict global lint and changed-evidence validation deferred under science workflow to exact integrated candidate; not claimed passed.",
+  "citation_graph": {
+    "nodes": 5042,
+    "edges": 12519,
+    "added": [
+      "finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_bounded_theorem_note_2026-09-14"
+    ],
+    "removed": [],
+    "rewired": []
+  }
+}

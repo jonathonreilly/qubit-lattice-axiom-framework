@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "checks": [
+    "all_fixed_target_paths_and_permanent_support_N1",
+    "all_fixed_target_paths_and_permanent_support_N2",
+    "all_fixed_target_paths_and_permanent_support_N3",
+    "all_fixed_target_paths_and_permanent_support_N4",
+    "unique_program_probability_and_projector",
+    "nonunitary_algebra_covariance",
+    "wrong_normalization_rejected",
+    "trace_telescope_independent_amplitudes",
+    "adaptive_data_TV_bound",
+    "off_code_is_not_valid_program"
+  ],
+  "count": 10,
+  "seconds": 0.037296416936442256,
+  "scope": "Independent finite geometry, exact matrix and probability controls only; no primary execution."
+}

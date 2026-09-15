@@ -1,0 +1,178 @@
+phase is imported. t=1 is the explicit control unit. Original source/proof hashes and raw vectors are in evidence and ORIGINAL_HASHES.json. The complete sixth coefficient cited in the historical proof is a comparator only, not an input to the singleton calculation.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/CLAIM_STATUS_CERTIFICATE.md
+# Claim Status Certificate
+
+actual_current_surface_status: conditional-support
+conditional_surface_status: "Exact finite L4 theorem for the supplied native Hamiltonian, flux sector and vacuum."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+review_loop_disposition: "Original independent science reviews passed; final canonical port review pending."
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/GOAL.md
+Establish the exact supplied-model L4 third-order star vacuum transition, distinguish its full operator, and evaluate only its singleton-middle sixth contribution. The canonical note contains the complete Feshbach and two-mode derivations.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/HANDOFF.md
+Author source frozen in SOURCE_FREEZE.json. Read the complete canonical note and all three portable scripts. Live40-group output and11-file isolated execution pass; four actual source mutants fail mathematical predicates. Root owns independent canonical review, graph integration, commit and PR. No graph, parent source or GitHub changes made here. No new physical solve. Scope:315/64 vacuum;2745/172864 filled action;33075/8192 singleton only.
+
+
+## Root final review and delivery boundary
+
+Complete energy-dependent derivation, paired-star two-mode proof, exact filled-state falsifier and both full portable helpers read. Thirty saved residuals are independently reconstructed from literal ordered CAR; direct two-mode inverses agree on vacuum normalization, shifted filled input and singleton coefficient. The fullc comparison is now explicitly sourced to the fourth upstream. Final11file closure cc5efb89 passed40 counted groups and actualsign/offset/normalization mutants; earlier10filefreeze762 is preserved. Orbital canonicalreviewe77b and attributiondelta3290 PASS, unchanged analyticproofreview0bc1 reused. Root confirms finite supplied-model conditional-support; no fullactive SW gap, bulkquadratic replacement or complete sixth coefficient is implied.
+
+Graphmanifest adds1node/4actual upstream links with existingnodesunchanged. Full pipeline/strictlint/changed-audit-evidence integration gates remain deferred to maincandidate. No effective audit verdict or main merge is performed.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/LITERATURE_BRIDGES.md
+# Literature Bridges
+
+Finite-dimensional Feshbach and CAR algebra are standard mathematics. This block derives the actual native operator and coefficients from linked repository sources. No new external numerical value or third-party text is an input; no historical novelty claim.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/NO_GO_LEDGER.md
+# No Go Ledger
+
+The full fixed-frame O0(E0)=alpha gamma0 identity is refuted by the filled six-mode state at the same spectral parameter. This does not refute a dressed low-energy description. Historical pre-solve uncertainty and all available failures are preserved unchanged in evidence. No formal universal no-go is asserted.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/OPPORTUNITY_QUEUE.md
+# Opportunity Queue
+
+1. Certified L6 mixed-prefix Gaussian calculation: actual nonadjacent gaps are a prerequisite.
+2. Energy-dependent vertex spectral-weight bounds beyond flat L4.
+3. Quantitative dressed quadratic approximation with all mixed terms and transformed readouts. None is claimed by this block.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/CANONICAL_ATTRIBUTION_ADDENDUM.md
+PASS on final attribution-only revision: note bbddcf8229a92a19408caa0a829ef716c44767985f8402af334c95c155b230f8 and freeze cc5efb894a06e9cab7c1a6ae232c10fb795d6b98673373675a5d8ce91f011432. The full sixth coefficient now links its actual weak-electric spectator-gap source, declared as fourth upstream and tenth primary input. All eleven frozen hashes match; helper indices and mathematical sources remain unchanged. The fresh isolated40-group receipt binds all ten inputs and reports eleven-file closure/PASS. Prior complete canonical review e77b remains applicable. No execution by this reviewer.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/CANONICAL_REVIEW.md
+# Canonical source review: PASS
+
+Canonical note ee1a86dc065da209149e3bf1277945a38c34e012a5c15ffb1064b6f3f5fe93bc and primary3f33831956d8c6a03db5410280a0f3e819ed77d3574006144879dc9b5cd5c267 pass this port review. Complete note and all three Python sources were read. The prior complete410b Feshbach proof and6c553 identity review0bc1 are explicitly reused; this is a fresh canonical source/provenance review, not an additional physical computation.
+
+The port preserves the real energy window, canonical flux versus active-vacuum distinction, scalar subtraction, native parity sign,90 words, thirty grouped inverses, unequal full-operator filled-state action and exclusion of the648 mixed-middle orders from the singleton result. The repeated historical pending language is explicitly identified as historical. No new general-volume, all-active SW, full-sixth or quadratic bulk claim is introduced.
+
+The replay reconstructs actual sorted-edge K, a rational paired frame, all30 saved residual vectors, CAR ordered signs, metric weights and /48 normalization. Its input hash dictionary is inside the declared closure. The two-mode helper ports this reviewer's exact Q(sqrt2) calculation with only wrapping/count-return changes. The primary actually executes both helpers and checks the residual-derived one-particle norm against alpha², plus zero higher weights. This live cross-check is a norm check; the signed315/64 claim remains supported by the analytic proof and the exact saved-coordinate residual checks, not by a norm alone.
+
+All ten frozen files match SHA256. The isolated output binds exactly the nine declared inputs and the primary source; its scientific payload agrees with the source-bound author output after excluding timing/RSS. The isolation receipt reports exactly ten files and exit0. No local imports or helper alarm resets occur; the main alarm is set once. Strict CLI receipts reject unknown and surplus arguments with exit2. Four actual semantic mutant diffs and traceback receipts were read: CAR sign and vacuum offset fail even residuals, electric normalization fails decomposition, and odd exchange sign fails the independent formula predicate. They test mathematics rather than merely stale source hashes.
+
+The40 count is honestly described as grouped predicates, not scalar equations. Original physical solves are not relabelled as portable replay. No unchanged physical replay was run by this reviewer. Exact source and receipt hashes are recorded in CANONICAL_READ_HASHES.json. No blocker found; graph integration and publication are outside this review.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/REVIEW.md
+# Cold review: PASS within the stated Feshbach scope
+
+Read the complete DERIVATION.md, SHA6c553550b41e2d67a73a5adc2f5caa3e8b211ac04cde8122217b2795a8637f86. This review reuses the earlier full native vertex/Feshbach derivation review and independently checks the newly added two-mode simplification. It does not rerun physical resolvents or claim an independent origin for the post-data identity.
+
+The even denominator has determinant1/3 and its first inverse column is(5,-sqrt2). In wedge-v coordinates this is5 vacuum minus3 u-wedge-v. For six pairs disjoint from C, summing v_A gives3(u-v_C); the CAR action a_u on u-wedge-v_C is v_C-(u.v_C)u. Thus the grouped vector is27u+9v_C, not30u+9v_C. The odd inverse yields45u+54v_C. Summing15 pairs and applying1/(8 omega²) gives945/(8 omega²)=315/64 at |t|=1. Both positive-denominator inverses are legitimate since the two negative Feshbach inverse signs cancel. The other four modes remain in vacuum because the first pair perturbation acts on span(u,v_A), and grouping places the second input in span(u,v_C).
+
+The generic shifted formula was independently reproduced by exact Q(sqrt2) two-by-two inverses at x=0,-6,1,2, rather than substituting the claimed polynomial alone. The absolute coefficients315/64 and2745/172864 both agree. Pair reversal proves O(z) is Hermitian for real z in the Q-resolvent domain. Multiplying the two -i gamma beta vertices, commuting the spectator Majorana through the active factors, and using the negative one-particle inverse gives -2 alpha² K_vw/omega². At K_0,16=-2 this is33075/8192. It is the singleton-middle contribution only, with mixed-middle and scalar pieces still separate.
+
+Particle-hole transformation fixes every a and reverses every b, sending H_F,W to -H_F,W and vacuum to filled. At fixed original energy -3omega, the transformed positive denominator is3omega-H_F,W= -omega(M-6I); two inverse signs cancel. Hence x=-6 is the appropriate shifted vacuum calculation for the filled-source action at the SAME spectral parameter. The W complement can remain in its vacuum. Full W filling changes active particle number by6, so active parity and the spectator-parity constraint are unchanged.
+
+Using that excited retained-sector input is legitimate as an algebraic falsifier: the Feshbach expression is an operator on the whole retained space whenever its eliminated-sector resolvent exists at z. It does not assert that the filled state is low energy, nor that an all-active Schrieffer-Wolff separation exists. The earlier flux-isolation premise supplies the Q-resolvent at E0. No evaluation at the filled state's own energy is being made.
+
+Finally, a Hermitian linear Majorana combination is determined injectively by its vacuum transition: its real a/b coefficients form the real and imaginary parts of the one-particle vector. The vacuum identity therefore forces the candidate alpha(0)gamma0; the different filled action refutes it. This does not refute a low-energy dressed quadratic approximation. No overclaim or sign correction is required in the reviewed source.
+
+Controls are exact standard-library quadratic-field arithmetic and coefficient checks only. No new physical solve was performed.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/PR_BACKLOG.md
+# Pr Backlog
+
+Root coordinator owns milestone PR creation after full canonical review. This worker has not committed or pushed. The branch is codex/native-third-order-star-vertex-20260908.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/REVIEW_HISTORY.md
+# Review History
+
+Original410b Feshbach proof independently reviewed9abd2f91. Original1085 actual30-solve output independently replayed46b202 (complete source/raw preserved). Post-data6c553 exact identity independently reviewed0bc1 (complete two-mode source and review preserved). The port reuses reviewer implementations transparently, changes paths/wrapping only, and adds a live weight-to-inverse comparison. Original proof status wording is historical, not rewritten. Final canonical source review remains pending.
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/ROUTE_PORTFOLIO.md
+# Route Portfolio
+
+Completed:90-term exact Gauss closure;30-solve grouped vacuum transition; independent residual replay; two-mode analytic cancellation; filled-source operator falsifier. Open: L6 Gaussian residual route and mixed-middle coefficients. A full excited-column solve is unnecessary for the proved algebraic witness.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/TRACE_GATE.md
+# Trace Gate
+
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "Use the exact vertex only in its declared singleton channel; retain mixed-prefix obligations."
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-cold-review/REVIEW.md
+# Pre-execution source review: PASS within the proposed external contract
+
+Frozen package SHA2561085e0ac7288428d50d3a2b9505b6b8615784149b46ca414067e7bd36acde536. Complete core.py a054c8d5f32685ee2be6644ce9b0f008c9efced342d2555a06f098f0e525baa4, run.py6024c5b82be981361a1ce6353117a49b6e3de5744663833a9dd7e418d5d79bbd, PROTOCOL and PREREGISTRATION read. Complete410b third-order derivation, rational-metric derivation/check.py and820f reduction DESIGN read. All1881 declared local/runtime/dependency hashes independently verified. No author module was imported and no physical matrix or solve was executed by this reviewer.
+
+The construction starts with e0 and K times the six white neighbors, yielding the black subspace; the prospective rank6 test, orthogonal Gram test, K²r=-24r and endpoint projection norm1 together certify the required12-real-dimensional invariant space. Because K is bipartite/skew and these columns are black, their K images are orthogonal white columns with norm24d. Projection norm1 for each unit endpoint proves containment, not merely a rank lower bound. Flipped-edge perturbations consequently annihilate the complement. The unchanged bath cancels against its vacuum contribution, leaving the6sqrt6 offset. Each parity block has32 states.
+
+The matrix entries reproduce the reviewed diagonal similarity S, S²=W. The base energies2*popcount independently test the offset. Gamma between parity blocks has coefficient sign*r_i(0)/d_i for creation and sign*r_i(0) for annihilation: this is exactly S_target^-1 gamma S_source, not an extra vacuum normalization. The initial vacuum has S=1. The supplied prospective G² and star-gauge intertwining tests check its phase convention against the actual matrices. Weighted Hermiticity is required in both parities.
+
+Fifteen even systems A_A x=e0 and fifteen odd systems A_C y=G sum_disjoint x reproduce90 ordered pair words, with six predecessors per C. R=-S A^-1 S^-1/sqrt6; its two signs cancel and its two scale factors give1/6. Electric factor1/8 therefore gives physical chi=S sum y/48. The weights sum W_b z_b² over odd particle numbers1,3,5, all possible on six modes. These weights refer only to the canonical vacuum transition, not a complete operator linearization, thermodynamic result or the missing mixed-middle sixth-order terms.
+
+Gaussian elimination performs exact Fraction operations and checks every original-system residual. A singular pivot causes failure; no tolerance or replacement is present. Positive invertibility follows from the imported finite wrong-flux isolation, while completed exact residuals would certify the particular answers. The output retains all30 vectors and exact weights. No successful solve or multiparticle conclusion is claimed in this pre-execution review.
+
+Resource disposition: the package is coherent for the stated single fixed external30-second/384-MiB watchdog contract. The29-second alarm and observed-self RSS are supplemental, not an allocation ceiling. SIGALRM can terminate without Python FAILURE.json; the external receipt must preserve timeout/nonzero status. The fixed command must include -I -B as specified (the program explicitly checks isolation, while -B is contractual). The runtime source closure is extensive, with OS/shared-cache exclusion disclosed. No launch is authorized by this memo.
+
+Independent bounded controls:24 rational toy gamma similarity entries,90 unique ordered pair partitions and the1/48 factor checked without importing the implementation. An incorrect always-divide-by-d gamma factor disagrees in12 cases. These are source-algebra adversarial controls, not execution of the actual physical controls. No failed initial attempts occurred in this review. RESULT.json records these scopes. No actionable mathematical blocker found; root external contract and actual prospective controls must still succeed before any result is accepted.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/REVIEW.md
+# Independent exact physical replay: PASS
+
+Checker and input manifest frozen before execution in FREEZE.json. Actual RESULT input66fe5f59eb4ba9c1382966d3d3f829f9eed0fc4f4860c607eea41c87e70d87b2; all saved vector bytes pinned. No author module imported, no new solve performed. Literal64-site K and rational Gram frame reconstructed. Unlike the producer's compressed two-bit formula, this checker builds each matrix through all ordered i*a_i*b_j/2 CAR actions, including diagonal terms and the six-unit vacuum offset.
+
+All15 even and15 odd residuals vanish exactly over Fraction. The actual90-word grouping and cross-parity gamma source were reconstructed. All final coordinates, metric and1/3/5 particle weights match. The independent weights are99225/4096,0,0. Thus this specific finite vacuum transition has only the stated one-particle component; it is not an operator identity or a bulk/thermodynamic claim.
+
+First execution succeeded. /usr/bin/time -lp reports2.35 seconds and19,857,408-byte peak; internal29-second alarm and final384MiB observed-RSS guard were present. No separate polling watchdog was used for this short completed replay; external time/RSS record is retained. No failed execution or replacement occurred. This review certifies exact residual/decomposition arithmetic, not the author's original runtime from these measurements.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/PREREGISTRATION.md
+# L4 third-order vertex — UNLAUNCHED
+
+Before physical solves: build exact rational black frame of one star using literal64-site canonical K, verify Wstar12, metric CAR/Gauss, every pair-prefix weighted Hermiticity and90-word grouping. Prospective actual solve uses30 rational32x32 systems, all15 even pair sources followed by15 odd pair sources, exact residual zero. No float norm, eigenvalue or stochastic input. Every particle-number weight is an exact Fraction. Report any multiparticle weight, including zero; no presumption that linear approximation succeeds. Bound proposed job30s384MiB with external watchdog and internal alarm/RSS guard. No solve authorized yet. Source and input pins must be reviewed before launch.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/PROTOCOL.md
+# Exact source proposal, UNLAUNCHED
+
+This package prepares actual L4 one-star transition chi_0. Neither controls nor solves have executed. Root must authorize a fixed external30s384MiB contract after source review. Strict command is pinned Python3.12 -I -B run.py solve FRESH_EXTERNAL_OUTPUT; controls-only mode is available but likewise unexecuted. Internal29s alarm/observed-RSS guard supplement the required external watchdog.
+
+The literal64-site K follows the canonical sorted-edge sign convention, including seams. Rational Gram–Schmidt spans black endpoint vectors e0 and K e_neighbor, then pairs them with K r to obtain12 real active modes. Weighted coordinates use W_b=product d_i^b_i, physical state S z, S²=W. In each parity block H_F−E0=sqrt6 S A_F S^-1 with A=J+6I; the6sqrt6 offset includes the unchanged bath cancellation. This is the reviewed rational metric formula adapted from10 to6 complex modes, not a new orthonormal float frame.
+
+Gamma_0 is represented between parity blocks by rational G. Controls require G²=I, exact star gauge intertwining, endpoint containment, K²r=−24r, orthogonality, weighted Hermiticity for all15 pair prefixes in both parities, base particle energies2n and90 disjoint pair orderings. They are prospective finite controls, not already successful evidence.
+
+First15 exact Gaussian eliminations solve A_A x_A=e_vac in even parity. Next15 solve A_C y_C=G sum_(A disjoint C)x_A in odd parity. Every solve checks its exact rational residual. With two inverse sqrt6 factors and electric(1/2)^3, chi=S sum_C y_C/48. No numerical gap lower bound is needed for a completed exact solution: existence follows from wrong-flux isolation, while exact nonzero pivots and residuals certify the finite calculation. Failure/singularity/cost overrun is retained without substitution.
+
+Physical n-particle weights are sum_(|b|=n)W_b z_b², n1,3,5. A positive3/5weight would falsify a linear-only vacuum transition; zero weights would establish only this finite vacuum restriction, not an operator identity or bulk hybridization. All vectors and exact weights retained. No sixth mixed-middle terms are calculated.
+
+The source uses only standard-library rational arithmetic, no floating solver/eigensolver. Exact scalar fractions may grow; successful runtime is not assumed. No real semantic mutation outcome is yet claimed. Earlier reviewed rational-metric and third-vertex proofs are source imports, not fresh independent code checks. Runtime pins cover Python source/extensions and interpreter; operating-system/shared-cache libraries outside that closure are explicit.
+
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization-cold-review/REVIEW.md
+# Third-order singleton vertex — PASS, conditional finite energy window
+
+Read full final410b2f916a59b4d4a777f89f181b17ca7a4c3a092fd5bb25ea20c17812a226ca and preserved zero-toggle clarification. Bound source hashes verified; previously reviewed cut selection/native Gauss/flat L4 premises reused explicitly. No physical linear solve or eigenspectrum evaluated.
+
+For real z below the lowest Q-sector energy, the Feshbach resolvent exists on all Q active states even though high-energy P/Q spectra overlap. The stated norm Neumann condition is sufficient. It is not an energy-independent all-active SW gap. Subtracting the scalar electric term also shifts the physical spectral parameter; the note's H0+uV convention consistently refers to that shifted problem.
+
+Three disjoint incident pairs must use exactly a six-edge star for a singleton return. Pair count15 and ordered count90 are correct, and each complement C has exactly six allowed first pairs A. Empty-toggle words separately survive as even-active spectator scalar and are not included in the singleton formula. No proper star prefix is a gauge cut in the declared cubic extents>=4 domain.
+
+Sign checked directly: chr

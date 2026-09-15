@@ -1,0 +1,1015 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "6ecbe41ca5b12bcc806c893850c380152d7b1b6d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ARTIFACT_PLAN.md",
+      "raw_bytes": 75,
+      "raw_sha256": "bb05447bca5d6d1106a748248f42875fdc3f628cf9e3786341d099c3344dbe8b",
+      "stored_path": "_objects/bb05447bca5d6d1106a748248f42875fdc3f628cf9e3786341d099c3344dbe8b.gz",
+      "stored_sha256": "420f45d9c6c2d4c5631587373f1e638ef07ea5781bbe13e72032fb613e099ce4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a5ad151a49ed2b65b918a6ad7ad1fa07a201c741",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 144,
+      "raw_sha256": "637f50bfde4315dbf3718e59a2e9b85fc33f6f8a9bc89527afb8f175643ef655",
+      "stored_path": "_objects/637f50bfde4315dbf3718e59a2e9b85fc33f6f8a9bc89527afb8f175643ef655.gz",
+      "stored_sha256": "7e5971227ab2f385c3ce1028c546562ddd075b788dda2f6bbb30a4f252626d8c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7e26522d559ac1da92b29c4f14f6eec343a69fc9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+      "raw_bytes": 4024,
+      "raw_sha256": "c8ad1a2f71835688af41bc94be8a8ca0da45f4e2d34f8e696da0649b6bdc9cb8",
+      "stored_path": "_objects/c8ad1a2f71835688af41bc94be8a8ca0da45f4e2d34f8e696da0649b6bdc9cb8.gz",
+      "stored_sha256": "d99556aee8e4137a85bccd58515032e3627ba1e5ef3e01bbf7acf63606347cbb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "074695638a04635e69b812c8a103f44335143bb8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 108,
+      "raw_sha256": "55cc6247b7b9d29081535ec4dee0b51fdbc5fe9af884c74be9dbc3bcf0853ee6",
+      "stored_path": "_objects/55cc6247b7b9d29081535ec4dee0b51fdbc5fe9af884c74be9dbc3bcf0853ee6.gz",
+      "stored_sha256": "1791768876bf625ea8096ee8f441ce1b091237d19e5176f3150fcde9ea4bd53d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "03e88306cb47df17e0facd18d332841ade11fa29",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/CONTROL_CONTRACT.md",
+      "raw_bytes": 152,
+      "raw_sha256": "2ca6f7deb44f3a77ab163a84d10f7a62c974cb8d46a477b79086ad75c2754a64",
+      "stored_path": "_objects/2ca6f7deb44f3a77ab163a84d10f7a62c974cb8d46a477b79086ad75c2754a64.gz",
+      "stored_sha256": "7eb5b3e1107477e6d54b3328c6d2682ffbdeaac90bf62e0f8373eb8144ed8020"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2a831d7e39a451190fbe408f183ed36988b6a599",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/GOAL.md",
+      "raw_bytes": 88,
+      "raw_sha256": "687f3dd9f58a65524d77eca1de5783b56fda010c22679ffb9a672d3e41d2a607",
+      "stored_path": "_objects/687f3dd9f58a65524d77eca1de5783b56fda010c22679ffb9a672d3e41d2a607.gz",
+      "stored_sha256": "2b5de6c6fbd691c0ad1d4dec9113f7374dddbb7d396d5a19b59e47d36fe0d046"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1928743f313b289421cf403357d11c440759faa5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/GRAPH_DELTA.json",
+      "raw_bytes": 226,
+      "raw_sha256": "2446df844552112168a8bef3b736c1dc5538a7f48dded14d39d81ef225ae2d48",
+      "stored_path": "_objects/2446df844552112168a8bef3b736c1dc5538a7f48dded14d39d81ef225ae2d48.gz",
+      "stored_sha256": "262f748b72a6e4602541a0b6dc85dd584f40f6f84db87df4f4777124f5bcdfee"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "518693ee3e920a064c855a6f9f741f5209e7a71e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/HANDOFF.md",
+      "raw_bytes": 279,
+      "raw_sha256": "cba4c33bff8b1602b7434fb6b228edf960c5b0bf9d9957fa36a376190a3c5480",
+      "stored_path": "kept/pr8052-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "cba4c33bff8b1602b7434fb6b228edf960c5b0bf9d9957fa36a376190a3c5480"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ISOLATED.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/incorrect_flux_scope.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/odd_active_projection.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/winding_omission.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3452be968bcb79018385a99d41a563660dc49091",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ISOLATED.stdout",
+      "raw_bytes": 6481,
+      "raw_sha256": "9d7aee6868eda4f2a210a3561773dd57d8124f5abe81a1a68d63392b0c378ac0",
+      "stored_path": "_objects/9d7aee6868eda4f2a210a3561773dd57d8124f5abe81a1a68d63392b0c378ac0.gz",
+      "stored_sha256": "155816df2c36b44f47bee41e70ca6929761ba108d6563543fe3cd87135534899"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "40d7d5f1079564bd3e6d1be5fbcded0da3305ff2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ISOLATED_CLOSURE.json",
+      "raw_bytes": 1766,
+      "raw_sha256": "c52aff78ec51c286fc8568d3d9afa9541c81b5984e96b44442bcfcd15be2cf49",
+      "stored_path": "_objects/c52aff78ec51c286fc8568d3d9afa9541c81b5984e96b44442bcfcd15be2cf49.gz",
+      "stored_sha256": "4c302e301dace7aa4b7b8af708fdc6724f109de3c52cc58d2027a31784c27832"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a538275e425ac948e4ba024332913496a25d6057",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/LITERATURE_BRIDGES.md",
+      "raw_bytes": 127,
+      "raw_sha256": "f443ba3e202636086b0ed4e7f6075bc537b156d4beb317b1dee25314e1996f9a",
+      "stored_path": "_objects/f443ba3e202636086b0ed4e7f6075bc537b156d4beb317b1dee25314e1996f9a.gz",
+      "stored_sha256": "e17dadb834e0b8d55886cbd766b75f841f95aba4feeb1930d36d813756cad288"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ef9b9d587abca308f62888dbd309d583c528f349",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/LIVE.stdout",
+      "raw_bytes": 6841,
+      "raw_sha256": "57337500779e65e6876c8378d0b81a659ef23b6a49d4719879a490cdca09eadc",
+      "stored_path": "_objects/57337500779e65e6876c8378d0b81a659ef23b6a49d4719879a490cdca09eadc.gz",
+      "stored_sha256": "6a4b78976a2963627d565a46804d2303700fcd392d2056ab79f8cc472decd965"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ed3ba9755b7ba7b89ae705a1b2643c79ce42fa3f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/MUTATIONS.json",
+      "raw_bytes": 589,
+      "raw_sha256": "a8c32ff9e42ec45a76c5ae5d216d1db332082f9659e0f6c6ae2bc49b2fd1eb19",
+      "stored_path": "_objects/a8c32ff9e42ec45a76c5ae5d216d1db332082f9659e0f6c6ae2bc49b2fd1eb19.gz",
+      "stored_sha256": "9125e3a1ecaf90204a186b0c9c22e6f61320edf8618ced853b8c4045a74e13a7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9a5ada985ecc8dc42d93cefa15008f739b2ab98f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/NO_GO_LEDGER.md",
+      "raw_bytes": 90,
+      "raw_sha256": "cbfe8d52751582298bccdf0081867eedf4ff0063abb3d4ed014f8a0fdce0bc9a",
+      "stored_path": "_objects/cbfe8d52751582298bccdf0081867eedf4ff0063abb3d4ed014f8a0fdce0bc9a.gz",
+      "stored_sha256": "a42f02c3de991fe156a0989bb4c913d930b451138ff78c7d172a5c50e52e05f0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "492298342519f1dd51ea1e6eace03d07fc1821a6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 60,
+      "raw_sha256": "240dcf300feb63dbd5f60803e38aae2dcbaf1aa8c38f9055e64ae24c9523232d",
+      "stored_path": "_objects/240dcf300feb63dbd5f60803e38aae2dcbaf1aa8c38f9055e64ae24c9523232d.gz",
+      "stored_sha256": "6e3a97fe29514e80295006863fe60aab2d57f6847b73ce79dc97bfb3116cabe1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4ac35de4b5df8d776cb20a8a5690951e3c66395c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ORIGINAL_HASHES.json",
+      "raw_bytes": 4009,
+      "raw_sha256": "15995987ed4bdf27e01ee437ac28d43d1082590e8e226faf57043c9c6cf81e87",
+      "stored_path": "_objects/15995987ed4bdf27e01ee437ac28d43d1082590e8e226faf57043c9c6cf81e87.gz",
+      "stored_sha256": "8e0920f36dbb5472d973ff1dab485f23efddee5b818ab37c937e8cd3bcf45cbd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4668fdc6cff31d9f5c73181095a341e9f0c3e73b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/PORT_RECEIPT.json",
+      "raw_bytes": 212,
+      "raw_sha256": "ea593da8b6e39d99bf7b73ea2d3cb5b1d0736b78b119fb32407db9700f760f46",
+      "stored_path": "_objects/ea593da8b6e39d99bf7b73ea2d3cb5b1d0736b78b119fb32407db9700f760f46.gz",
+      "stored_sha256": "8da641032a21eba7ea8111bc7204e4f575980da0c783440699930e9d26ab03c5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "34d3a8d4b235ee7e44ce8ef2891488b834ddfe7c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/PR_BACKLOG.md",
+      "raw_bytes": 43,
+      "raw_sha256": "83a792ed3363a8897d25903f556cc7dd7cac5d2ddd2babc8eb3033c50ca2c84a",
+      "stored_path": "_objects/83a792ed3363a8897d25903f556cc7dd7cac5d2ddd2babc8eb3033c50ca2c84a.gz",
+      "stored_sha256": "b222d75f90a02db09496575406c4a5b2aeb7bd713e93cc6bad9e488dce69d8b1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "874380584cc17b4ed27f32c3a233d661aa27d94e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/REVIEW_HISTORY.md",
+      "raw_bytes": 315,
+      "raw_sha256": "59833bd0185aea9d1d875bc6d616ad83fd03f7c83a5ca9892674941eaf70c014",
+      "stored_path": "_objects/59833bd0185aea9d1d875bc6d616ad83fd03f7c83a5ca9892674941eaf70c014.gz",
+      "stored_sha256": "5938f159e21281c3f11e5c7759f59cee1087019298cda9ad3e6a72f900eee8d1"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "372477d5ab698eb1e439a1d561b52e596352cbd5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ROOT_CANONICAL_REVIEW.md",
+      "raw_bytes": 1435,
+      "raw_sha256": "92b4735645b0eb9bee62ca1108c591eeba03a5161e78d09304df93e36cb1ec84",
+      "stored_path": "kept/pr8052-ROOT_CANONICAL_REVIEW-857933c7e06ad6ff.md",
+      "stored_sha256": "92b4735645b0eb9bee62ca1108c591eeba03a5161e78d09304df93e36cb1ec84"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "187eb4560b8c43fa70d6aef3b0143e9e718e1e7f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 88,
+      "raw_sha256": "370cec2de948f6c7772f06cf8e2905e09843ad336ef765d885b2f2d267c382e3",
+      "stored_path": "_objects/370cec2de948f6c7772f06cf8e2905e09843ad336ef765d885b2f2d267c382e3.gz",
+      "stored_sha256": "74c72bac5127dbd01e3c3f771862b1c6270ddafb7f3e182126af33a3257ba195"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "478f88e6247a669ae04eaf9baae3d68ed116ed37",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/SOURCE_FREEZE.json",
+      "raw_bytes": 1243,
+      "raw_sha256": "8dd8dfb6746a11710436a4e994731b20c8c284b8c23f4fa775b933961cb8273c",
+      "stored_path": "_objects/8dd8dfb6746a11710436a4e994731b20c8c284b8c23f4fa775b933961cb8273c.gz",
+      "stored_sha256": "a4b07b6b56c5a221c52b7067999cccaf31f75995f0fa9f8ad587133dc58b8c7e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6153159abaee125393839713dfbf5128c676aaca",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/STATE.md",
+      "raw_bytes": 214,
+      "raw_sha256": "32b2d1dc8aa9129f8294767884de2f92195fc7fc8c678a7a1ad17fdfdc3d7dca",
+      "stored_path": "_objects/32b2d1dc8aa9129f8294767884de2f92195fc7fc8c678a7a1ad17fdfdc3d7dca.gz",
+      "stored_sha256": "5c81e2538d544eef73fd10b3c3fa389dc4d7608b72ef4063cc6317a866fa49fc"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "fb66cc57a9fc33ab24a101b9d35c52be850e53ef",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/TRACE_GATE.md",
+      "raw_bytes": 55,
+      "raw_sha256": "a3d03cfebabc6572a04f46678fa5ca5bb5279129d11f392ac819273337ab4048",
+      "stored_path": "kept/pr8052-TRACE_GATE-f67515f6cce5b41d.md",
+      "stored_sha256": "a3d03cfebabc6572a04f46678fa5ca5bb5279129d11f392ac819273337ab4048"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a787427c6e7592200bbf39f6304df05eebf8e71e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/VERIFY_BEFORE_EXPECTED_MESSAGE_REPAIR.py",
+      "raw_bytes": 4035,
+      "raw_sha256": "e0c51822e1eb2bb7051f46fbab3dc803e037c032646d35b5420819cfa2fa5e3d",
+      "stored_path": "_objects/e0c51822e1eb2bb7051f46fbab3dc803e037c032646d35b5420819cfa2fa5e3d.gz",
+      "stored_sha256": "fa19181f3a35c0793275c1eefb9e7447cba4674b770ea4e099a928d77e9e501e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8e1f3c13f45ee497ea144a47a606fedcc20e96d6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/VERIFY_MESSAGE_REPAIR.md",
+      "raw_bytes": 244,
+      "raw_sha256": "5bdfb63fbac6f3f5639b88d25d849d31db90851a3bc0134bbb87505224c20cc8",
+      "stored_path": "_objects/5bdfb63fbac6f3f5639b88d25d849d31db90851a3bc0134bbb87505224c20cc8.gz",
+      "stored_sha256": "537965e0547e488b4bf0345e189a63be155c808cb2cf4bae24772a74efd8c088"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "180b09f436b5bec46acce4f86d683593f145f984",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/WRAPPER_CONTROLS.json",
+      "raw_bytes": 89,
+      "raw_sha256": "9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc",
+      "stored_path": "_objects/9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc.gz",
+      "stored_sha256": "0e737acc79892f1a42e0aaef0c2cc3e77e2d2db602688f3ac961499873e5cc07"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8672cf9f4267827b5b22952e3a73aabebce6c802",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/CONTROL.json",
+      "raw_bytes": 718,
+      "raw_sha256": "c8ea654f75d4a4d34726f7319b313dac58b60a972c12883d908e13053a60484a",
+      "stored_path": "_objects/c8ea654f75d4a4d34726f7319b313dac58b60a972c12883d908e13053a60484a.gz",
+      "stored_sha256": "98580c6bfc802de88ea3580ead4cf5761c75f42859b6d30794dec28f05937191"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "462533e421d31c445d1d7f3674e2c3b380cb06ce",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/REVIEW.md",
+      "raw_bytes": 3350,
+      "raw_sha256": "02789f3ddd14b978ad833bc3fdb1efdb7fbf7feac104dc2a76d31a2479c73e65",
+      "stored_path": "_objects/02789f3ddd14b978ad833bc3fdb1efdb7fbf7feac104dc2a76d31a2479c73e65.gz",
+      "stored_sha256": "40041526deb75b26957e2af0a7c820e3d292dd6ed2f3ac5b465a38e9e0f46ca5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4108be5f1e9935d87e5906e2e71a322742d55f86",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/electric.diff",
+      "raw_bytes": 1081,
+      "raw_sha256": "95b480eac2039b58b39a56a80d0773686928c175d1029960560f499f16fe533d",
+      "stored_path": "_objects/95b480eac2039b58b39a56a80d0773686928c175d1029960560f499f16fe533d.gz",
+      "stored_sha256": "8c4ab26b2c02475f985b0617b1dc6ee1991b3d9d108131d22317ee456b2a8576"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fb077430e1fb4da8753b731d0a1a3634558cbd66",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/isolation.diff",
+      "raw_bytes": 1277,
+      "raw_sha256": "be64035757ae7b76eced05ff25f293ee6488c90ef869414cd95eef1a5bbbbd99",
+      "stored_path": "_objects/be64035757ae7b76eced05ff25f293ee6488c90ef869414cd95eef1a5bbbbd99.gz",
+      "stored_sha256": "0bfbe54b2b5c8ab7bfb6a5d812a858e0649d541ca8427fc3afab611134126e32"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8030979f97440e25aa886eb8379d50df77afcc27",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/spectator.diff",
+      "raw_bytes": 1446,
+      "raw_sha256": "b36c85b1c7a0a1f332d28070c80ebc76fb1b3bb6e506cc6f705ecc18c2925282",
+      "stored_path": "_objects/b36c85b1c7a0a1f332d28070c80ebc76fb1b3bb6e506cc6f705ecc18c2925282.gz",
+      "stored_sha256": "70bee91aaab2af15a710e14378c1c3b722d4dcd55f9ef6d177aa33478ab9fee3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "94badcc6373025e88e8186f0bf4a2c5c9c5ad57d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/incorrect_flux_scope.stderr",
+      "raw_bytes": 1094,
+      "raw_sha256": "a37d8a7ceb66188ff928a549a3a488938b6a686055f95449b40dc976203c6f6c",
+      "stored_path": "_objects/a37d8a7ceb66188ff928a549a3a488938b6a686055f95449b40dc976203c6f6c.gz",
+      "stored_sha256": "5ec8baba0cc75601a18be142f6270127e90c692a1fbdea4216820d31b9a4b2f3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "35ba6053b50630b8eeaed8d1d8454686ce387246",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/odd_active_projection.stderr",
+      "raw_bytes": 1206,
+      "raw_sha256": "69bef45be4a4db0724e31e0275c5b6fd6e5323cbca6218569fb3113cad70384e",
+      "stored_path": "_objects/69bef45be4a4db0724e31e0275c5b6fd6e5323cbca6218569fb3113cad70384e.gz",
+      "stored_sha256": "cd4500d7d92ff98cd3b01e5d28c95e99c763de23e6dcda4b05f74f417a873270"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5e31c4751d87d4be32bdde6517cd73c9f6892619",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-first-order-electric-cold-review/READ_HASHES.json",
+      "raw_bytes": 659,
+      "raw_sha256": "5d71ef463a4d19119c520acec85918a5142ee5693c43cdb1fc99182d0df1d681",
+      "stored_path": "_objects/5d71ef463a4d19119c520acec85918a5142ee5693c43cdb1fc99182d0df1d681.gz",
+      "stored_sha256": "2fe84bd05540394d1a4bf874a8d1decc34637b607a42b8ed78e8327e90040fa5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "895ef8b0d84798bc72196a6b4c0d9dd259b03787",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-first-order-electric-cold-review/RESULT.json",
+      "raw_bytes": 402,
+      "raw_sha256": "221e3d600438a636ef4f7379dbee309510ef572f360ccee3196c5dd8b4f2b37d",
+      "stored_path": "_objects/221e3d600438a636ef4f7379dbee309510ef572f360ccee3196c5dd8b4f2b37d.gz",
+      "stored_sha256": "da3383b65b094a687fb31b1cd60906b5b73e51ed56a500d10932d6bf04c512ed"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b2864f11fe0d177e8dba0c626f1a39021ded039a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-first-order-electric-cold-review/REVIEW.md",
+      "raw_bytes": 2649,
+      "raw_sha256": "e99adc84aa6ed58db8414b2fa7cea8b7af39b2d4e42ca9140f1f467920c1550e",
+      "stored_path": "_objects/e99adc84aa6ed58db8414b2fa7cea8b7af39b2d4e42ca9140f1f467920c1550e.gz",
+      "stored_sha256": "0095f16afb36ac8c4d887a3316540493e8608184bc4569f7f64e372fd812816a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3e6fa21e03c11e43d1e7e73ae775ca2dd6853cca",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-first-order-electric-cold-review/check.py",
+      "raw_bytes": 1937,
+      "raw_sha256": "1ec7b6d635a4f6da99f0239536a5d0ae49e4ae42118fcb932e1202c02e8f8868",
+      "stored_path": "_objects/1ec7b6d635a4f6da99f0239536a5d0ae49e4ae42118fcb932e1202c02e8f8868.gz",
+      "stored_sha256": "e23deb4594c477d91681d49642041e9cef88a1574e424587b268300b97d4b3d1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ecd47d2fd9c0d3c8021911788e93a3ccebaedc41",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/DERIVATION.md",
+      "raw_bytes": 4811,
+      "raw_sha256": "b17fbf7ea58ac5d6a2cd227f9d0503a3daa2d8414cde36661304410ce78cb76a",
+      "stored_path": "_objects/b17fbf7ea58ac5d6a2cd227f9d0503a3daa2d8414cde36661304410ce78cb76a.gz",
+      "stored_sha256": "ebc4c7b318840d29e8b4a54cc8a1b58564d3723706a1b812a93eb4fa9b6c2a15"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "02a6ccb51529cfd73f93fa9c3223203211e17481",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/READ_HASHES.json",
+      "raw_bytes": 358,
+      "raw_sha256": "8d4aa892a36b5fc0913229e09a83b638e8ba636037a4a2f68b5dfc9ba93e264d",
+      "stored_path": "_objects/8d4aa892a36b5fc0913229e09a83b638e8ba636037a4a2f68b5dfc9ba93e264d.gz",
+      "stored_sha256": "0f7ba2e8c6fcda5f3a0275434c8d1e65ce1bb22e5597296cef3f99e8d762668a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2290ed6b825e0892bcc5ba46baab19610f5b64b4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/RESULT.json",
+      "raw_bytes": 621,
+      "raw_sha256": "27670523c3b18c5b8d6c2ab9e2141dc542a071786b0842d25fdc791f93c50928",
+      "stored_path": "_objects/27670523c3b18c5b8d6c2ab9e2141dc542a071786b0842d25fdc791f93c50928.gz",
+      "stored_sha256": "e13d56dd01caca749fa1e0c886aa05b50f254d84c286839f9e0fb63c17d3ce41"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c82513f1363388de9363b842b10c3d5cc1450d30",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/check.py",
+      "raw_bytes": 1933,
+      "raw_sha256": "d50952b9723dd8029183f7b7860d70f7233571e22c1ef8122882885c3bfb5b4f",
+      "stored_path": "_objects/d50952b9723dd8029183f7b7860d70f7233571e22c1ef8122882885c3bfb5b4f.gz",
+      "stored_sha256": "a3e3069be09212be9ffaa70f865452bd311b3b64898399e7f71653e1fc771174"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "08758af543d5aa19fc30a3796aee3c0f4cc5fa47",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation-cold-review/PREREGISTRATION.md",
+      "raw_bytes": 531,
+      "raw_sha256": "92cbf3ba5f9c7d395fa11e2ca90a7353648ead9448cdcedf09154dcf35129d5a",
+      "stored_path": "_objects/92cbf3ba5f9c7d395fa11e2ca90a7353648ead9448cdcedf09154dcf35129d5a.gz",
+      "stored_sha256": "0509ffdfae1839f8d0260ae3572e0e988546a9e6aed20f29a5053492a5c24f31"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b57dbf1d619b5fd2e9f122d548a0fd020d04699c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation-cold-review/RESULT.json",
+      "raw_bytes": 138,
+      "raw_sha256": "96910d22d641866d6df3e13f7ba3bd3b3555398b04b39f0173963b0d2c01b09b",
+      "stored_path": "_objects/96910d22d641866d6df3e13f7ba3bd3b3555398b04b39f0173963b0d2c01b09b.gz",
+      "stored_sha256": "a669cd4d832e98aaa368e2f51ca7261aa71ffb394549ca348a0555249d3e39e2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e83c3b680fbd6e79972b8d7497d12b0767e14537",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation-cold-review/REVIEW.md",
+      "raw_bytes": 3737,
+      "raw_sha256": "a103508a146962fbd99e7b6acb851533173399188bdfad7778c6c5a2eb13d459",
+      "stored_path": "_objects/a103508a146962fbd99e7b6acb851533173399188bdfad7778c6c5a2eb13d459.gz",
+      "stored_sha256": "8d92a8441d845553becd3e4c91ca3acc110910551e0e419367e3559d4ee93547"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4806d034a3d93916370a6547cbbf18d110e5e813",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation-cold-review/check.py",
+      "raw_bytes": 1752,
+      "raw_sha256": "08e46fdefb50a931f1d4743895efcdf8aa40f83a35431af48ee1e5332e4df832",
+      "stored_path": "_objects/08e46fdefb50a931f1d4743895efcdf8aa40f83a35431af48ee1e5332e4df832.gz",
+      "stored_sha256": "f28c837dbf2e5d66cc78f1a3ad004dafb8f65a80156924e91104b1ecc7aa8690"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bac441a9fc46b8d6bb899092d58131412e69dde3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/DERIVATION.md",
+      "raw_bytes": 5842,
+      "raw_sha256": "f32b48672d749562a238e458b5bd3518ed8fcfea8af9200968e6c953bba7d796",
+      "stored_path": "_objects/f32b48672d749562a238e458b5bd3518ed8fcfea8af9200968e6c953bba7d796.gz",
+      "stored_sha256": "31e05e87f5d503c85fc92c96c30949938224bcc95c65435c715afe720abb64e6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4e4bff729cecb6dfcd55d630717359f01a7e426d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/HASHES.json",
+      "raw_bytes": 349,
+      "raw_sha256": "0326e121000b24480ddd8859eb2baf1973fc360be73d314727f5bc499c105407",
+      "stored_path": "_objects/0326e121000b24480ddd8859eb2baf1973fc360be73d314727f5bc499c105407.gz",
+      "stored_sha256": "6346e990581b5615418a2c880dab46be1bc4ec61adf37881a9635847e1557e6b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "db599c150162d4011205aa283c08ab40de4ce91f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/PREREGISTRATION.md",
+      "raw_bytes": 561,
+      "raw_sha256": "b644cf228478b0dca1ab7a63ead39e2ff1cfe15dd90f186526e22eb71de4bc58",
+      "stored_path": "_objects/b644cf228478b0dca1ab7a63ead39e2ff1cfe15dd90f186526e22eb71de4bc58.gz",
+      "stored_sha256": "32662acec5984d46ad76be84244bfcd2fea171820b12857106543db499817406"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5f4c008594e0be5dfb54ff5d12af8ed2450f535d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/RESULT.json",
+      "raw_bytes": 2929,
+      "raw_sha256": "d91de50db070fd5d6555578dbc6016569f04c96ceec64f4fa31e79b9e3277590",
+      "stored_path": "_objects/d91de50db070fd5d6555578dbc6016569f04c96ceec64f4fa31e79b9e3277590.gz",
+      "stored_sha256": "4de4ce5dd45fb85b0c9c74bd5ae307b643d760764c031f74addbbc0c431ce17a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a2118f94e6605d38479a5347ffc7fd708a5c7e93",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/check.py",
+      "raw_bytes": 2932,
+      "raw_sha256": "1fa42f29a94cb7c14520fc32a716e75301d89bfebc4c5b5dd022817891b5cfa9",
+      "stored_path": "_objects/1fa42f29a94cb7c14520fc32a716e75301d89bfebc4c5b5dd022817891b5cfa9.gz",
+      "stored_sha256": "c1fc27723ef3c3f5e8ac119ddaaa4390e17649a2d6e31bf6bf517cafcbb6ef3d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "69a057263728a2f5bb0cb15d9d6468ba87cc96f4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/OWN_FAILED_CONTROL.md",
+      "raw_bytes": 390,
+      "raw_sha256": "03efaa3b910ee98625f49e2e44413e58af3240bd589c23b4ef7b0c2668ad9d75",
+      "stored_path": "_objects/03efaa3b910ee98625f49e2e44413e58af3240bd589c23b4ef7b0c2668ad9d75.gz",
+      "stored_sha256": "04ba887c3932a115f2f3a86027216623cca59a3fec63431d75d2f94750908365"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f9df662ccbce481467e939d7619b825991abf13d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/PREREGISTRATION.md",
+      "raw_bytes": 673,
+      "raw_sha256": "b93e08aa48cee5ce6c22cbdcad67a33658c75aed2b666b3e3f15822a7c76924c",
+      "stored_path": "_objects/b93e08aa48cee5ce6c22cbdcad67a33658c75aed2b666b3e3f15822a7c76924c.gz",
+      "stored_sha256": "a9856885a700cabf525b1c041a837f620b7fce0516c288473877ad948f9fe4a8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6a7dc6daf779dce1c2e07de557a05657335d24e9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/RESULT.json",
+      "raw_bytes": 77,
+      "raw_sha256": "a9eb7a8782f99b88170976152b01678663053590eadf74ecd1700ddc06e23961",
+      "stored_path": "_objects/a9eb7a8782f99b88170976152b01678663053590eadf74ecd1700ddc06e23961.gz",
+      "stored_sha256": "10669db6e42d2b253b4aaa5873f23229aae8ddf496aeabbf6edb3308ccc75393"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4e15d3c1d4f0adede04c6bf0990160d6f5feaa69",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/REVIEW.md",
+      "raw_bytes": 3334,
+      "raw_sha256": "24d3d5d202c0badc7e97f73a60e4d86da4a28b87a47037424e2cc10d50075fc1",
+      "stored_path": "_objects/24d3d5d202c0badc7e97f73a60e4d86da4a28b87a47037424e2cc10d50075fc1.gz",
+      "stored_sha256": "9583b4f28ad7b4507370bf50a2ce6dd70eec95a2c5126c0ae3b5dc280bbcad67"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e15b934a9e4cbc4f692bbe67ec89dd1bbab8de82",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/check.py",
+      "raw_bytes": 1633,
+      "raw_sha256": "8718af991044a69e48823925b5a429a1582847b54557f64155ae1c5993b49c85",
+      "stored_path": "_objects/8718af991044a69e48823925b5a429a1582847b54557f64155ae1c5993b49c85.gz",
+      "stored_sha256": "3e91c8b4e63a5fd6e3d7780cb5b56c45f19197e53f529b0363e0494f0f0a01c9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "66bac7f38b3ee81f819224c206afdb3115f06217",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/check_BEFORE_OWN_BOUND_REPAIR.py",
+      "raw_bytes": 1633,
+      "raw_sha256": "c86d25a637d41e1a44486469ed7893cd4855a195b1f2adf56751f17e35187256",
+      "stored_path": "_objects/c86d25a637d41e1a44486469ed7893cd4855a195b1f2adf56751f17e35187256.gz",
+      "stored_sha256": "d1daab382c58875329dad4375bb92a16d52a1880acdd46c1bafc9c039e0ca415"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6503096b6b27717be50b1ce4e82421076ad68f25",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/DERIVATION.md",
+      "raw_bytes": 7861,
+      "raw_sha256": "b1561c3326a62a6a9d045c0380e93bd3eff5c7f22b1bef63238c4ef46487d9b1",
+      "stored_path": "_objects/b1561c3326a62a6a9d045c0380e93bd3eff5c7f22b1bef63238c4ef46487d9b1.gz",
+      "stored_sha256": "f8b5f0fdc1d6a0dbb3c91020bf0d3966cd0a689cdad1e46cf2459da0847f2399"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dd3b4b8798d2c3fa86cbd1c0fc3a9fd12a66557e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/HASHES.json",
+      "raw_bytes": 437,
+      "raw_sha256": "fd7c3e5529d570bda334b0493f0d389a44b78dc4d74e1daf7ba165984639d865",
+      "stored_path": "_objects/fd7c3e5529d570bda334b0493f0d389a44b78dc4d74e1daf7ba165984639d865.gz",
+      "stored_sha256": "72e79ecd29bfac7bd229d21277700026494a3286d0791164ec331d2886dd17b9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7dfb63d4fea0e5eaf55aa88f976910cc07c9a3bf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/PREREGISTRATION.md",
+      "raw_bytes": 1094,
+      "raw_sha256": "46495a2d4632d65043f177785f7c35ba9982f22300f7d09a61f5ac0c6dabe56e",
+      "stored_path": "_objects/46495a2d4632d65043f177785f7c35ba9982f22300f7d09a61f5ac0c6dabe56e.gz",
+      "stored_sha256": "27261a508188f1eb1f999a3527b52214b9fc2b5c02367ce862c722a0ea8496ba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "70d4562d812b483243422eec06cc8fb20d4a014d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/RESULT.json",
+      "raw_bytes": 500,
+      "raw_sha256": "51d5f21aadc5a6c59ace94219e5b6e90304df5f3067a5174ec741d791afc643e",
+      "stored_path": "_objects/51d5f21aadc5a6c59ace94219e5b6e90304df5f3067a5174ec741d791afc643e.gz",
+      "stored_sha256": "a65931392748df1bb23f729c6cf5708c2cb262f6b791382c2ef2819c791135b7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "73c9b5b4055c284c0b7ef066ec042a12fe2ec0af",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/RESULT_MEMO.md",
+      "raw_bytes": 2101,
+      "raw_sha256": "c2e6b9769117f8bc698e8f05ed37aae5d2b28552bd3d312c9ea6543a331b90bc",
+      "stored_path": "_objects/c2e6b9769117f8bc698e8f05ed37aae5d2b28552bd3d312c9ea6543a331b90bc.gz",
+      "stored_sha256": "71ce7fbfb5c540ad41846b45543ff0d223cae986a9bbab3705d0c25b45a9aec4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7dd1b6abedd0d5a008ecf18b475db9bd46319963",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/check.py",
+      "raw_bytes": 3188,
+      "raw_sha256": "86aba8ccf3bb41dae745ede2ec288371fc3dd8d7021d63aa24080e67f4bd28b0",
+      "stored_path": "_objects/86aba8ccf3bb41dae745ede2ec288371fc3dd8d7021d63aa24080e67f4bd28b0.gz",
+      "stored_sha256": "51dbabe80f7f20e0ae2ff88c06e6524e59f490d2765f19474d21f88acc61cb86"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5d3c719bbf1465222a093c68e46b44f7f3703467",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/winding_omission.stderr",
+      "raw_bytes": 1039,
+      "raw_sha256": "c75bbf5ea5966eff0a1a614986073eab072a0fb931e164271a6a7944434764a9",
+      "stored_path": "_objects/c75bbf5ea5966eff0a1a614986073eab072a0fb931e164271a6a7944434764a9.gz",
+      "stored_sha256": "ad12db5d0481f8121005f38c828f17819f79ed22a5624929307cf4efcb6ac234"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/",
+  "revision": "03696e613d72aa16741e3f533b5bd37a70f09512",
+  "schema_version": 1,
+  "unique_blobs": {
+    "02a6ccb51529cfd73f93fa9c3223203211e17481": {
+      "occurrences": 1,
+      "raw_bytes": 358,
+      "raw_sha256": "8d4aa892a36b5fc0913229e09a83b638e8ba636037a4a2f68b5dfc9ba93e264d"
+    },
+    "03e88306cb47df17e0facd18d332841ade11fa29": {
+      "occurrences": 1,
+      "raw_bytes": 152,
+      "raw_sha256": "2ca6f7deb44f3a77ab163a84d10f7a62c974cb8d46a477b79086ad75c2754a64"
+    },
+    "074695638a04635e69b812c8a103f44335143bb8": {
+      "occurrences": 1,
+      "raw_bytes": 108,
+      "raw_sha256": "55cc6247b7b9d29081535ec4dee0b51fdbc5fe9af884c74be9dbc3bcf0853ee6"
+    },
+    "08758af543d5aa19fc30a3796aee3c0f4cc5fa47": {
+      "occurrences": 1,
+      "raw_bytes": 531,
+      "raw_sha256": "92cbf3ba5f9c7d395fa11e2ca90a7353648ead9448cdcedf09154dcf35129d5a"
+    },
+    "180b09f436b5bec46acce4f86d683593f145f984": {
+      "occurrences": 1,
+      "raw_bytes": 89,
+      "raw_sha256": "9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc"
+    },
+    "187eb4560b8c43fa70d6aef3b0143e9e718e1e7f": {
+      "occurrences": 1,
+      "raw_bytes": 88,
+      "raw_sha256": "370cec2de948f6c7772f06cf8e2905e09843ad336ef765d885b2f2d267c382e3"
+    },
+    "1928743f313b289421cf403357d11c440759faa5": {
+      "occurrences": 1,
+      "raw_bytes": 226,
+      "raw_sha256": "2446df844552112168a8bef3b736c1dc5538a7f48dded14d39d81ef225ae2d48"
+    },
+    "2290ed6b825e0892bcc5ba46baab19610f5b64b4": {
+      "occurrences": 1,
+      "raw_bytes": 621,
+      "raw_sha256": "27670523c3b18c5b8d6c2ab9e2141dc542a071786b0842d25fdc791f93c50928"
+    },
+    "2a831d7e39a451190fbe408f183ed36988b6a599": {
+      "occurrences": 1,
+      "raw_bytes": 88,
+      "raw_sha256": "687f3dd9f58a65524d77eca1de5783b56fda010c22679ffb9a672d3e41d2a607"
+    },
+    "3452be968bcb79018385a99d41a563660dc49091": {
+      "occurrences": 1,
+      "raw_bytes": 6481,
+      "raw_sha256": "9d7aee6868eda4f2a210a3561773dd57d8124f5abe81a1a68d63392b0c378ac0"
+    },
+    "34d3a8d4b235ee7e44ce8ef2891488b834ddfe7c": {
+      "occurrences": 1,
+      "raw_bytes": 43,
+      "raw_sha256": "83a792ed3363a8897d25903f556cc7dd7cac5d2ddd2babc8eb3033c50ca2c84a"
+    },
+    "35ba6053b50630b8eeaed8d1d8454686ce387246": {
+      "occurrences": 1,
+      "raw_bytes": 1206,
+      "raw_sha256": "69bef45be4a4db0724e31e0275c5b6fd6e5323cbca6218569fb3113cad70384e"
+    },
+    "372477d5ab698eb1e439a1d561b52e596352cbd5": {
+      "occurrences": 1,
+      "raw_bytes": 1435,
+      "raw_sha256": "92b4735645b0eb9bee62ca1108c591eeba03a5161e78d09304df93e36cb1ec84"
+    },
+    "3e6fa21e03c11e43d1e7e73ae775ca2dd6853cca": {
+      "occurrences": 1,
+      "raw_bytes": 1937,
+      "raw_sha256": "1ec7b6d635a4f6da99f0239536a5d0ae49e4ae42118fcb932e1202c02e8f8868"
+    },
+    "40d7d5f1079564bd3e6d1be5fbcded0da3305ff2": {
+      "occurrences": 1,
+      "raw_bytes": 1766,
+      "raw_sha256": "c52aff78ec51c286fc8568d3d9afa9541c81b5984e96b44442bcfcd15be2cf49"
+    },
+    "4108be5f1e9935d87e5906e2e71a322742d55f86": {
+      "occurrences": 1,
+      "raw_bytes": 1081,
+      "raw_sha256": "95b480eac2039b58b39a56a80d0773686928c175d1029960560f499f16fe533d"
+    },
+    "462533e421d31c445d1d7f3674e2c3b380cb06ce": {
+      "occurrences": 1,
+      "raw_bytes": 3350,
+      "raw_sha256": "02789f3ddd14b978ad833bc3fdb1efdb7fbf7feac104dc2a76d31a2479c73e65"
+    },
+    "4668fdc6cff31d9f5c73181095a341e9f0c3e73b": {
+      "occurrences": 1,
+      "raw_bytes": 212,
+      "raw_sha256": "ea593da8b6e39d99bf7b73ea2d3cb5b1d0736b78b119fb32407db9700f760f46"
+    },
+    "478f88e6247a669ae04eaf9baae3d68ed116ed37": {
+      "occurrences": 1,
+      "raw_bytes": 1243,
+      "raw_sha256": "8dd8dfb6746a11710436a4e994731b20c8c284b8c23f4fa775b933961cb8273c"
+    },
+    "4806d034a3d93916370a6547cbbf18d110e5e813": {
+      "occurrences": 1,
+      "raw_bytes": 1752,
+      "raw_sha256": "08e46fdefb50a931f1d4743895efcdf8aa40f83a35431af48ee1e5332e4df832"
+    },
+    "492298342519f1dd51ea1e6eace03d07fc1821a6": {
+      "occurrences": 1,
+      "raw_bytes": 60,
+      "raw_sha256": "240dcf300feb63dbd5f60803e38aae2dcbaf1aa8c38f9055e64ae24c9523232d"
+    },
+    "4ac35de4b5df8d776cb20a8a5690951e3c66395c": {
+      "occurrences": 1,
+      "raw_bytes": 4009,
+      "raw_sha256": "15995987ed4bdf27e01ee437ac28d43d1082590e8e226faf57043c9c6cf81e87"
+    },
+    "4e15d3c1d4f0adede04c6bf0990160d6f5feaa69": {
+      "occurrences": 1,
+      "raw_bytes": 3334,
+      "raw_sha256": "24d3d5d202c0badc7e97f73a60e4d86da4a28b87a47037424e2cc10d50075fc1"
+    },
+    "4e4bff729cecb6dfcd55d630717359f01a7e426d": {
+      "occurrences": 1,
+      "raw_bytes": 349,
+      "raw_sha256": "0326e121000b24480ddd8859eb2baf1973fc360be73d314727f5bc499c105407"
+    },
+    "518693ee3e920a064c855a6f9f741f5209e7a71e": {
+      "occurrences": 1,
+      "raw_bytes": 279,
+      "raw_sha256": "cba4c33bff8b1602b7434fb6b228edf960c5b0bf9d9957fa36a376190a3c5480"
+    },
+    "5d3c719bbf1465222a093c68e46b44f7f3703467": {
+      "occurrences": 1,
+      "raw_bytes": 1039,
+      "raw_sha256": "c75bbf5ea5966eff0a1a614986073eab072a0fb931e164271a6a7944434764a9"
+    },
+    "5e31c4751d87d4be32bdde6517cd73c9f6892619": {
+      "occurrences": 1,
+      "raw_bytes": 659,
+      "raw_sha256": "5d71ef463a4d19119c520acec85918a5142ee5693c43cdb1fc99182d0df1d681"
+    },
+    "5f4c008594e0be5dfb54ff5d12af8ed2450f535d": {
+      "occurrences": 1,
+      "raw_bytes": 2929,
+      "raw_sha256": "d91de50db070fd5d6555578dbc6016569f04c96ceec64f4fa31e79b9e3277590"
+    },
+    "6153159abaee125393839713dfbf5128c676aaca": {
+      "occurrences": 1,
+      "raw_bytes": 214,
+      "raw_sha256": "32b2d1dc8aa9129f8294767884de2f92195fc7fc8c678a7a1ad17fdfdc3d7dca"
+    },
+    "6503096b6b27717be50b1ce4e82421076ad68f25": {
+      "occurrences": 1,
+      "raw_bytes": 7861,
+      "raw_sha256": "b1561c3326a62a6a9d045c0380e93bd3eff5c7f22b1bef63238c4ef46487d9b1"
+    },
+    "66bac7f38b3ee81f819224c206afdb3115f06217": {
+      "occurrences": 1,
+      "raw_bytes": 1633,
+      "raw_sha256": "c86d25a637d41e1a44486469ed7893cd4855a195b1f2adf56751f17e35187256"
+    },
+    "69a057263728a2f5bb0cb15d9d6468ba87cc96f4": {
+      "occurrences": 1,
+      "raw_bytes": 390,
+      "raw_sha256": "03efaa3b910ee98625f49e2e44413e58af3240bd589c23b4ef7b0c2668ad9d75"
+    },
+    "6a7dc6daf779dce1c2e07de557a05657335d24e9": {
+      "occurrences": 1,
+      "raw_bytes": 77,
+      "raw_sha256": "a9eb7a8782f99b88170976152b01678663053590eadf74ecd1700ddc06e23961"
+    },
+    "6ecbe41ca5b12bcc806c893850c380152d7b1b6d": {
+      "occurrences": 1,
+      "raw_bytes": 75,
+      "raw_sha256": "bb05447bca5d6d1106a748248f42875fdc3f628cf9e3786341d099c3344dbe8b"
+    },
+    "70d4562d812b483243422eec06cc8fb20d4a014d": {
+      "occurrences": 1,
+      "raw_bytes": 500,
+      "raw_sha256": "51d5f21aadc5a6c59ace94219e5b6e90304df5f3067a5174ec741d791afc643e"
+    },
+    "73c9b5b4055c284c0b7ef066ec042a12fe2ec0af": {
+      "occurrences": 1,
+      "raw_bytes": 2101,
+      "raw_sha256": "c2e6b9769117f8bc698e8f05ed37aae5d2b28552bd3d312c9ea6543a331b90bc"
+    },
+    "7dd1b6abedd0d5a008ecf18b475db9bd46319963": {
+      "occurrences": 1,
+      "raw_bytes": 3188,
+      "raw_sha256": "86aba8ccf3bb41dae745ede2ec288371fc3dd8d7021d63aa24080e67f4bd28b0"
+    },
+    "7dfb63d4fea0e5eaf55aa88f976910cc07c9a3bf": {
+      "occurrences": 1,
+      "raw_bytes": 1094,
+      "raw_sha256": "46495a2d4632d65043f177785f7c35ba9982f22300f7d09a61f5ac0c6dabe56e"
+    },
+    "7e26522d559ac1da92b29c4f14f6eec343a69fc9": {
+      "occurrences": 1,
+      "raw_bytes": 4024,
+      "raw_sha256": "c8ad1a2f71835688af41bc94be8a8ca0da45f4e2d34f8e696da0649b6bdc9cb8"
+    },
+    "8030979f97440e25aa886eb8379d50df77afcc27": {
+      "occurrences": 1,
+      "raw_bytes": 1446,
+      "raw_sha256": "b36c85b1c7a0a1f332d28070c80ebc76fb1b3bb6e506cc6f705ecc18c2925282"
+    },
+    "8672cf9f4267827b5b22952e3a73aabebce6c802": {
+      "occurrences": 1,
+      "raw_bytes": 718,
+      "raw_sha256": "c8ea654f75d4a4d34726f7319b313dac58b60a972c12883d908e13053a60484a"
+    },
+    "874380584cc17b4ed27f32c3a233d661aa27d94e": {
+      "occurrences": 1,
+      "raw_bytes": 315,
+      "raw_sha256": "59833bd0185aea9d1d875bc6d616ad83fd03f7c83a5ca9892674941eaf70c014"
+    },
+    "895ef8b0d84798bc72196a6b4c0d9dd259b03787": {
+      "occurrences": 1,
+      "raw_bytes": 402,
+      "raw_sha256": "221e3d600438a636ef4f7379dbee309510ef572f360ccee3196c5dd8b4f2b37d"
+    },
+    "8e1f3c13f45ee497ea144a47a606fedcc20e96d6": {
+      "occurrences": 1,
+      "raw_bytes": 244,
+      "raw_sha256": "5bdfb63fbac6f3f5639b88d25d849d31db90851a3bc0134bbb87505224c20cc8"
+    },
+    "94badcc6373025e88e8186f0bf4a2c5c9c5ad57d": {
+      "occurrences": 1,
+      "raw_bytes": 1094,
+      "raw_sha256": "a37d8a7ceb66188ff928a549a3a488938b6a686055f95449b40dc976203c6f6c"
+    },
+    "9a5ada985ecc8dc42d93cefa15008f739b2ab98f": {
+      "occurrences": 1,
+      "raw_bytes": 90,
+      "raw_sha256": "cbfe8d52751582298bccdf0081867eedf4ff0063abb3d4ed014f8a0fdce0bc9a"
+    },
+    "a2118f94e6605d38479a5347ffc7fd708a5c7e93": {
+      "occurrences": 1,
+      "raw_bytes": 2932,
+      "raw_sha256": "1fa42f29a94cb7c14520fc32a716e75301d89bfebc4c5b5dd022817891b5cfa9"
+    },
+    "a538275e425ac948e4ba024332913496a25d6057": {
+      "occurrences": 1,
+      "raw_bytes": 127,
+      "raw_sha256": "f443ba3e202636086b0ed4e7f6075bc537b156d4beb317b1dee25314e1996f9a"
+    },
+    "a5ad151a49ed2b65b918a6ad7ad1fa07a201c741": {
+      "occurrences": 1,
+      "raw_bytes": 144,
+      "raw_sha256": "637f50bfde4315dbf3718e59a2e9b85fc33f6f8a9bc89527afb8f175643ef655"
+    },
+    "a787427c6e7592200bbf39f6304df05eebf8e71e": {
+      "occurrences": 1,
+      "raw_bytes": 4035,
+      "raw_sha256": "e0c51822e1eb2bb7051f46fbab3dc803e037c032646d35b5420819cfa2fa5e3d"
+    },
+    "b2864f11fe0d177e8dba0c626f1a39021ded039a": {
+      "occurrences": 1,
+      "raw_bytes": 2649,
+      "raw_sha256": "e99adc84aa6ed58db8414b2fa7cea8b7af39b2d4e42ca9140f1f467920c1550e"
+    },
+    "b57dbf1d619b5fd2e9f122d548a0fd020d04699c": {
+      "occurrences": 1,
+      "raw_bytes": 138,
+      "raw_sha256": "96910d22d641866d6df3e13f7ba3bd3b3555398b04b39f0173963b0d2c01b09b"
+    },
+    "bac441a9fc46b8d6bb899092d58131412e69dde3": {
+      "occurrences": 1,
+      "raw_bytes": 5842,
+      "raw_sha256": "f32b48672d749562a238e458b5bd3518ed8fcfea8af9200968e6c953bba7d796"
+    },
+    "c82513f1363388de9363b842b10c3d5cc1450d30": {
+      "occurrences": 1,
+      "raw_bytes": 1933,
+      "raw_sha256": "d50952b9723dd8029183f7b7860d70f7233571e22c1ef8122882885c3bfb5b4f"
+    },
+    "db599c150162d4011205aa283c08ab40de4ce91f": {
+      "occurrences": 1,
+      "raw_bytes": 561,
+      "raw_sha256": "b644cf228478b0dca1ab7a63ead39e2ff1cfe15dd90f186526e22eb71de4bc58"
+    },
+    "dd3b4b8798d2c3fa86cbd1c0fc3a9fd12a66557e": {
+      "occurrences": 1,
+      "raw_bytes": 437,
+      "raw_sha256": "fd7c3e5529d570bda334b0493f0d389a44b78dc4d74e1daf7ba165984639d865"
+    },
+    "e15b934a9e4cbc4f692bbe67ec89dd1bbab8de82": {
+      "occurrences": 1,
+      "raw_bytes": 1633,
+      "raw_sha256": "8718af991044a69e48823925b5a429a1582847b54557f64155ae1c5993b49c85"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 4,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e83c3b680fbd6e79972b8d7497d12b0767e14537": {
+      "occurrences": 1,
+      "raw_bytes": 3737,
+      "raw_sha256": "a103508a146962fbd99e7b6acb851533173399188bdfad7778c6c5a2eb13d459"
+    },
+    "ecd47d2fd9c0d3c8021911788e93a3ccebaedc41": {
+      "occurrences": 1,
+      "raw_bytes": 4811,
+      "raw_sha256": "b17fbf7ea58ac5d6a2cd227f9d0503a3daa2d8414cde36661304410ce78cb76a"
+    },
+    "ed3ba9755b7ba7b89ae705a1b2643c79ce42fa3f": {
+      "occurrences": 1,
+      "raw_bytes": 589,
+      "raw_sha256": "a8c32ff9e42ec45a76c5ae5d216d1db332082f9659e0f6c6ae2bc49b2fd1eb19"
+    },
+    "ef9b9d587abca308f62888dbd309d583c528f349": {
+      "occurrences": 1,
+      "raw_bytes": 6841,
+      "raw_sha256": "57337500779e65e6876c8378d0b81a659ef23b6a49d4719879a490cdca09eadc"
+    },
+    "f9df662ccbce481467e939d7619b825991abf13d": {
+      "occurrences": 1,
+      "raw_bytes": 673,
+      "raw_sha256": "b93e08aa48cee5ce6c22cbdcad67a33658c75aed2b666b3e3f15822a7c76924c"
+    },
+    "fb077430e1fb4da8753b731d0a1a3634558cbd66": {
+      "occurrences": 1,
+      "raw_bytes": 1277,
+      "raw_sha256": "be64035757ae7b76eced05ff25f293ee6488c90ef869414cd95eef1a5bbbbd99"
+    },
+    "fb66cc57a9fc33ab24a101b9d35c52be850e53ef": {
+      "occurrences": 1,
+      "raw_bytes": 55,
+      "raw_sha256": "a3d03cfebabc6572a04f46678fa5ca5bb5279129d11f392ac819273337ab4048"
+    }
+  }
+}

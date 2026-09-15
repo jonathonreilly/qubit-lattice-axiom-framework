@@ -1,0 +1,35 @@
+{
+  "method": "independent signed union-find constraints, no source imports",
+  "orbits": [
+    [
+      192,
+      false,
+      [
+        1
+      ]
+    ],
+    [
+      192,
+      true,
+      [
+        5
+      ]
+    ],
+    [
+      256,
+      true,
+      [
+        3
+      ]
+    ],
+    [
+      384,
+      true,
+      [
+        3
+      ]
+    ]
+  ],
+  "invariant_dimension": 1,
+  "seconds": 0.007735750055871904
+}

@@ -1,0 +1,137 @@
+ow. Its sign, active parity and weighted dual norm were checked against the original derivation and cold algebra review. Every one of the2292 proper states and all194400 words is represented. The final exact interval is strictly inside the stated decimal rational endpoints.
+
+The full physical parity restriction allows the vacuum of −cK0 because there are32 modes and reversing their filling preserves parity. Leading levels have even excitation counts, hence a simple ground and gap2c√24. Analyticity of the isolated finite cluster then gives the stated unique full ground and asymptotic u^6 gap for sufficiently small nonzero real u. There is no explicit radius or thermodynamic conclusion.
+
+The strict decoder checks ZIP membership and duplicate names, binary dtype/order/shape, finite values, canonical metadata and artifact hashes. All actual runtime inputs are declared; provenance-only archived paths are not accessed. The final guarded canonical run reports7960 explicit predicates,47.259 seconds and116.625MiB. Its six scientific payloads match the original independent exact replay. The closing-factor and prefix-omission semantic mutants intentionally update input hashes and fail mathematical checks. Their unchanged code paths remain applicable after the added containment guard, but they are not relabeled as reruns. The separate edge191 support mutant specifically rejects the new containment precondition.
+
+The exact-base graph rebuild adds one claim node and its three actual linked upstream dependencies, with no old-node change or removal. Manifest SHA256 bc69ad2027c6b49c4cc707f0944cf8b8bd7f1c312f50720358d59e415f9694d2. Independent final containment review and an actual isolated input-closure replay are the remaining delivery gates at the time this memo is written. No unchanged certificate rerun is required beyond that portability check.
+
+Final gate resolution: independent canonical review828c0136a2a778b219da2f9755a297692ac3ec3c73367ffb630222f7a4259b11 PASS. One isolated -I -OO run with only primary plus23 declared inputs completed in47.365871333s,112001024 high-water bytes; all six rational payloads,2292 ledgers and magnetic results match exactly. Canonical output unchanged. Scoped delivery gates complete.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/ROUTE_PORTFOLIO.md
+# Route portfolio
+
+The successful route combined exact support selection, a complete six-bridge sum, finite signed symmetry and physical parity. A rational-metric residual certificate avoided dependence on floating solver forward accuracy.
+
+The adjacent coefficient alone initially did not determine the full operator: nonadjacent pair cuts are allowed. The complete magnetic symmetry calculation resolves that issue on uniform L4. A separate distant-factorization attempt is archived in the campaign; it is unnecessary to this proof.
+
+Direct full-H diagonalization would require the full 2^192 carrier. The proved invariant active subspace reduces each required denominator to512 dimensions. No truncated carrier is substituted for the exact reduction.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/TRACE_GATE.md
+# Trace gate
+
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "Does the first support-allowed electric correction split the supplied finite L4 endpoint ground family?"
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "Independently audit the complete finite theorem, then investigate flux isolation and weak-penalty behavior beyond L4."
+```
+
+The block resolves a concrete new supplied-model question. It does not retire the framework's Hamiltonian-selection premise or promote an existing retained lane. Its downstream physical relevance requires larger-volume and model-selection work.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-computation-cold-review/FINAL_DELTA.md
+# Final amended-source review
+
+PASS for prospective freeze ef62e96fb473f7c9e3f61f511edf33c84f4fd03f8274f79696abd446b876a90d. This supplements the full a19d mathematical/source review, not a coefficient execution or result certificate.
+
+Read all three VECTOR_RECEIPT diffs in full and the complete new runtime_binding.py; checked all 18 frozen input hashes and all 167 runtime file hashes against actual bytes. The solver amendment only retains candidate vectors and ledger indices; it changes no solve, incoming recurrence, error propagation, or closing functional. The NPZ records physical orthonormal float64 coordinates, initial vacuum and final target, masks and multiplicities. The unsolved k=6 target is a half-sum of fifth-level vectors and must use power five in rational-coordinate replay; the marker is not a sixth inverse.
+
+The producer refuses existing JSON/NPZ outputs, checks runtime before solver import, hashes the saved NPZ and includes serialization in its resource accounting. The launcher adds external time, process-group termination and observed group RSS monitoring, preserves output hashes, and checks the final aggregate cap. Runtime verification includes NumPy loaded source/cache and native backend files; system shared-cache entries are explicitly identified rather than represented as hashed file bytes. This is an observed resource watchdog, not a mathematical allocation ceiling.
+
+No blocking changed-source issue found. Existing IEEE754/BLAS-model qualifications in REVIEW_A19D.md remain. If a late aggregate failure leaves SUMMARY alongside FAILURE, FAILURE governs disposition. No physical bridge computation was run in this review; independent rational replay is prepared separately and has not been run over all prefixes.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-computation-cold-review/REVIEW_A19D.md
+# Independent complete adjacent-coefficient implementation review
+
+Mathematical/source disposition: PASS for a19d7981b6c09ea02326c2dee2370ba863e7db0f2c0dc30daa275b2e2051e9a7 under its declared IEEE754/BLAS error model. Execution remains unlaunched; root has separately required lossless DP-vector serialization before final production disposition. No coefficient value or exclusion is obtained by this review.
+
+Read complete solver_core.py c7d16f4fc3921aa55f2ebde07cae5c23354da21435b49be0a97fa54098a87e89, run_bridge.py, launch_complete.py, FULL_COMPUTATION_PROPOSAL.md, computation freeze, solver/residual/trace controls, complete DP mock and canonical Riesz mock, and earlier complete frame/design/prefix contracts. REVIEWED_FREEZE.json preserves the exact a19d snapshot. Prior reviews of rational gap and canonical-sixth selection are inputs. No claim to rederive a full nonadjacent sixth operator.
+
+Frame coefficients: the rational black orthogonal basis and C=-K0B/sqrt24 give each edge perturbation numerator2K_vw(r_i(v)K0r_j(w)-r_i(w)K0r_j(v)); algebraic() brackets its exact radical by rational isqrt endpoints and measures exact distance to the dyadic chosen center. Summing half the absolute coefficient errors bounds the quadratic-operator error. The base and complement offset errors are both included. Fock addition bounds use conservative gamma factors and absolute coefficient sums; the closing matrix represents i gamma_0 gamma_16. Thus center=-close·x is the coefficient of ordered i bar_gamma_0 bar_gamma_16, consistent with the Gauss sign and my rational closing formula.
+
+Gap trace: every changed edge endpoint lies in common invariant W. K_F equals K0 on Wperp; hence B_FB_F^T-6I vanishes on the22-dimensional black complement and has rank<=10. Its nonzero characteristic polynomial is reconstructed from ten traces (padding additional zeros when rank<10). Consequently inverse trace equals22/s+q'/q. The integer matrix powers cannot overflow: ||E||<=30, entries of E^k are <=30^k; each dot has at most32 factors bounded by6·30^(k-1), and traces<=32·30^10, all below2^63. The checked192·30^9 is also safely below that threshold; full trace bound is larger but still safe. Singleton cuts use the initial-parity omega gap; other reachable proper masks are not zero/even-return cuts, so the1/432 fallback is legitimate. No merely positive floating SVD is used.
+
+Residual/DP error: A@x+b rounding is bounded through corrected absolute matrix-vector products and gamma514; exact matrix error times||x|| is added. Incoming vectors carry one-half errors plus summation rounding. Upward norm/sum operations and positive downward gaps give outward error propagation. Small absolute allowances cover subnormal operation errors for this fixed bounded dimension; the claim remains conditional on the stated binary64 arithmetic model. Uncontrolled LAPACK forward error is irrelevant because each returned candidate is residual-certified. Initial-parity closure has true norm1, justifying final use of the propagated vector error without an estimated matrix norm factor. Final six interval endpoints are summed outward. Infinite/nonfinite bound or solve is rejected, not accepted as a result.
+
+Each six-step transition has1/2, five solves have the negative resolvent sign, and the target has no extra inverse. Keying by boundary usage plus bridge multiplicity preserves monomial multiplicities; complete count and noncommuting mock controls discriminate an incorrect prefix resolvent. Canonical normalization cannot introduce an earlier nonscalar term, and its exact small chain mock is consistent. All six bridge families are required. No subset result or interval containingzero qualifies as nonzero/cancellation.
+
+Independent actual controls: check.py imports the candidate only for comparison, and separately constructs my rational-metric matrix and closing row from exact raw frame data. All262144 matrix entries of one actual prefix and512 closing entries fall inside the declared algebraic error bounds by exact rational squared comparisons; actual residual bound covers a separate exact metric residual.262659 predicates total,1.56s49.70MiB. No physical coefficient solve or scan occurred. This checks real frame/sign/factor bounds, not only a generic2x2 residual toy.
+
+Budget and closure: six fixed bridges,600s including conservative5s prior charge,180s384MiB/job, one thread, no overwrite/replacement, full next-cell reserve. Source hashes are checked before solver import; NumPy version/init hash is recorded, not a complete shared-library freeze. The prospectively declared numerical model is therefore material. The cost extrapolation is not a guarantee that all cells finish; a failure stops the fixed study. Lossless vectors requested by root will enable an independent exact-residual postcheck and still require narrow review before launch. This report does not authorize launch or claim full sixth-order operator coverage.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/DERIVATION.md
+# Sixth-order full-operator support: root extension in progress
+
+Premises are the supplied uniform finiteL4 endpoint and its isolated single-flux full-rank active vacuum, plus the cut/spectator word selection already proved through five. This extension does not evaluate a coefficient or identify a phase. The checker is calculating one adjacent pair; that quantity alone must not be called the entire sixth-order spectator Hamiltonian.
+
+## Cuts through twelve edges
+
+For every nonempty proper vertex subset S of an even cubic torus with extents>=4, let m_a count mixed coordinate-a lines. If |delta S|<=12 then sum m_a<=6. No m_a is zero: descending to the other two-coordinate torus and lifting produces at least eight mixed lines, as in the earlier arbitrary-subset proof.
+
+If some m_a=1, choose b with the largest of the other two counts, leaving m_c<=2. A nonconstant(a,c) slice perpendicular to b must contain a mixed a-line; otherwise c variation along all at least four a coordinates contradicts m_c<=2. Thus exactly one slice is nonconstant. All constant slices have the same value, else every b-line is mixed. The differing sites T in the exceptional slice have |T|=m_b<=4. S or its complement is T.
+
+The only remaining positive integer triple with sum<=6 and no1 is(2,2,2). Choose any b. At most two perpendicular slices are nonconstant, since each uses a mixed a-line. At least two slices are constant; they share a value, else all b-lines would be mixed. At most m_b=2 b-lines contain sites different from that value, and each has at most two such sites, hence |T|<=4 again.
+
+A three-vertex subset of the simple triangle-free cubic graph has at most two internal edges and boundary>=14. A four-vertex subset has at most four internal edges (triangle-free on four vertices) and boundary>=16. Therefore T has at most two vertices. The complete nontrivial cut classification through12 is singleton/complement (size6), adjacent pair/complement(size10), or nonadjacent pair/complement(size12).
+
+## Consequence and missing supports
+
+At sixth order the returning spectator operator can only be scalar or a bilinear, since odd singleton cuts vanish in the active vacuum and the even cuts are exactly vertex pairs. Adjacent pairs have ten boundary edges and two extra occurrences; their complete six-bridge support has been separately enumerated. Nonadjacent pairs have twelve boundary edges, each occurring once. Six allowed incident-pair insertions can always pair the six edges at each center into three pairs, so they are support-allowed too. Shared outer vertices may permit additional cross-pair matchings; these must be counted rather than silently omitted.
+
+## Same-sublattice vanishing argument, awaiting independent review
+
+In a bipartite active Fock representation choose black active Majoranas real and white active Majoranas purely imaginary. Every real-sign bipartite quadratic active Hamiltonian is then a real matrix, as are its resolvents and spectral projectors. The unique initial active vacuum can be chosen real. Electric-pair insertions change only link signs in an unreduced representative and carry real coefficients. Closing a pair cut introduces gamma_v gamma_w times the spectator product bar-gamma_v bar-gamma_w, up to the fixed real convention sign.
+
+For v,w on the same sublattice the active closing product is real. Therefore its full perturbative coefficient multiplying the spectator product is real. But the spectator product is anti-Hermitian, and the canonical effective Hamiltonian is Hermitian. Distinct spectator bilinears are linearly independent on the allowed spectator-parity space for N=64. Hence that coefficient must also be purely imaginary, forcing it to vanish. Opposite-sublattice closing products are imaginary and have no such obstruction. This applies to the full coefficient after all ordered words/folded terms, not to individual paths.
+
+This uses reality, parity and Hermiticity, not an assertion that each word is symmetric. Exact finite controls and independent review remain pending. The argument must retain the spectator basis convention and global parity restriction explicitly.
+
+## Further connectedness conjecture, NOT proved here
+
+For two separated star supports S_v={v and its neighbors}, let W_v=span{e_s,J e_s:s in S_v}, where J=K0/sqrt24. If graph distance(v,w)>3, then W_v and W_w are orthogonal: endpoint inner products vanish beyond distance2, and cross-J entries require an edge between the two stars, possible only through distance3. Their defect Hamiltonians therefore act on disjoint active Clifford factors. An exact linked-cluster/canonical factorization argument may force the cross spectator coefficient to vanish. This last inference has NOT been established, and no truncation to nearest/third neighbors is claimed.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/PREREGISTRATION.md
+Before controls: verify the arbitrary-subset line-count proof analytically; finite subset census is only geometry support. On actualL4, enumerate all64 singletons and all2016 pairs, classify color/distance/boundary, count actual incident-pair perfect matchings of each twelve-edge nonadjacent boundary without a stochastic probe. Check Wstar cross orthogonality at distances>3 by exact integer K and endpoint vectors, plus explicit real/imag Clifford closure matrices for same/opposite color.180s384MiB limit. No resolvent coefficient or full flux enumeration. Preserve failures.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/RANK_PREREGISTRATION.md
+Prospective rank supplement: fixed displacement representatives (1,0,0),(1,1,1),(2,1,0),(2,2,1), using actualL4 canonical K. Compute exact rational rank of W from both complete stars and cross Gram of the separate star invariant spaces. No eigensolver, coefficient solve or timing extrapolation. This ranks cost/connectedness routes only.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-support-cold-review/REVIEW.md
+# Independent sixth-order support review
+
+PASS for the proved cut classification, support allowance and same-sublattice vanishing. No verdict of proved cancellation is given to the final linked-factorization conjecture. Read complete DERIVATION.md136d4af079bc5d557f72aec5fe5e2dcf68c5f04a8581fb3bef4a6903bcc617bf, check.pyb4c9134bbd0abe4c47c65d69af6f3793b4382cd6280f4b5238cd6ec4e3173efa, HASHES.json and RESULT.json. Original5820 predicates are author evidence, not this review's independent count. Author checker was not imported or rerun.
+
+Cut proof: each mixed periodic fiber contributes at least two cut edges. If a direction has zero mixed fibers, the subset descends to a nontrivial two-dimensional torus subset. Its edge boundary is at least four; lifting across at least four layers yields at least sixteen edges, contradicting twelve. Thus all three m counts are positive. For m_a=1 and m_c<=2, every nonconstant perpendicular-b slice must have an a-mixed line: otherwise variation in c replicates over at least four a coordinates. Exactly one slice is nonconstant, the others share a value (opposite constant slices force all b lines mixed). The exceptional set has m_b<=4 sites. For (2,2,2), at most two slices are nonconstant; their deviations occupy at most two b fibers, hence at most four sites. Three/four-site boundary bounds14/16 exclude them. This handles arbitrary subsets and complements, not merely connected small sets. Extents at least four and simple triangle-free cubic geometry are essential.
+
+At sixth order at most twelve odd-multiplicity edges remain. Returning to the fixed flux requires a cut; the classification yields only scalar, singleton or pair closures. Singleton closure has odd active parity and vanishes. Pair cut support alone does not guarantee a nonzero coefficient. The distance-two extra matchings are real: direct independent edge-set recursion gives234, while other nonadjacent positions give225. Thus discarding nonadjacent supports before symmetry analysis would be unjustified.
+
+Reality argument checked in a concrete tensor convention. Represent the32 black active Majoranas by real JW generators and32 white ones by imaginary JW generators. Every -i gamma_black gamma_white bond is real Hermitian; real link signs, diagonal link electric operations, real-energy resolvents and Riesz-projector/normalization coefficients preserve reality. The simple active vacuum is chosen real. Global even matter parity leaves a fixed spectator parity once that vacuum is fixed. A gauge closure contributes a real convention sign times gamma_v gamma_w times its spectator bilinear; parity strings cancel in this even product. Same-color active products are real, so their spectator-product coefficients are real. Hermiticity requires those coefficients to be imaginary because spectator bilinears are anti-Hermitian. They therefore vanish in the COMPLETE canonical coefficient, including folded terms. This does not say individual ordered terms vanish.
+
+For completeness, distinct spectator bilinears are linearly independent after fixed parity restriction at N=64: their Hilbert-Schmidt pairing is one half the full trace of their product plus/minus its product with total parity. Distinct bilinear products have Clifford grade2 or4, neither0 nor64; both traces vanish. Each diagonal pairing is positive. This is a general argument, not an extrapolation from the author's eight-Majorana fixture. Opposite-color coefficients may be imaginary and are not excluded.
+
+Independent controls in check.py enumerate every L4 subset of sizes1,2,3, all nonadjacent pairs from one origin using direct set pairing, and grade-based parity trace conditions for8 and64 generators. RESULT.json records actual count/resources. These finite controls supplement the arbitrary-subset proof; they do not enumerate all2^64 subsets or evaluate a sixth coefficient.
+
+The distance>3 W-space orthogonality statement is sound under J²=-I: inner products reduce to endpoint overlaps or a single K edge. However orthogonal one-particle subspaces alone is not yet a proof that the full canonical coefficient factors, given global parity, flux closures and canonical normalization. The source correctly labels that inference UNPROVED. Current established scope allows opposite-sublattice nonadjacent coefficients, including distance5 on L4. An adjacent-pair solve alone remains insufficient to claim the full sixth spectator Hamiltonian.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-gap-cold-review/PREREGISTRATION.md
+Independent pre-execution control: reconstruct canonical full64 K directly, extract (-K²)/4 on black sites, and compute inverse trace with exact LDL decomposition and inverse triangular row norms (not author's Gauss-Jordan). Compare one frozen certificate, test one distinct mask and unrestricted star/base; no full scan. Check Newton formula on rational square spectra includingzero and scale conventions. Read full source/proof first.180s384MiB cap; no sampling or coefficient solves.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-gap-cold-review/REVIEW.md
+# Independent rational gap certificate review
+
+PASS for the stated mask-specific exact lower bounds. Complete DERIVATION.md5c04f5e988b199fe1804a893eb9a219a2ef3dbe4675d77a4bac9b8e60a007db7, check.py89defccac1e672b7198c0c7b91489c8509b8a9c8916ad82c9f4133abf1e4f243, export_check.pybc2074c5468abb664db57ec60cd3c10fb2dde76e66a1620cf369500be75cf4c4 and both prospective contracts read. RESULT and EXPORT_RESULT rational fields inspected; exported prefix input is bound to7a154126. No whole-prefix scan or coefficient computation performed.
+
+The full bipartite K has

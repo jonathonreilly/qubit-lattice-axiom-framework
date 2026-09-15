@@ -1,0 +1,194 @@
+[
+  {
+    "name": "trace_probability_decoder",
+    "reason": "Change the program trace-to-probability normalization.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: program_decode_1/5"
+    ]
+  },
+  {
+    "name": "complement_probability",
+    "reason": "Give the complementary outcome the same probability instead of one minus p.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: program_local_law_0"
+    ]
+  },
+  {
+    "name": "trigger_recognition",
+    "reason": "Reverse the actual local trigger condition.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: program_local_law_0"
+    ]
+  },
+  {
+    "name": "neighbor_program_multiplicity",
+    "reason": "Deduplicate repeated program neighbors before selecting the instruction branch.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: program_occurrences_not_deduplicated"
+    ]
+  },
+  {
+    "name": "program_source_buddy",
+    "reason": "Move the source buddy outside the nearest-neighbor shell.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: adaptive_five_event_all_initial_support"
+    ]
+  },
+  {
+    "name": "trigger_buddy",
+    "reason": "Move the trigger buddy out of its support neighborhood.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: adaptive_five_event_all_initial_support"
+    ]
+  },
+  {
+    "name": "program_copy_past_port",
+    "reason": "Continue deterministic program copying into the first data target.",
+    "stderr_tail": [
+      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "AssertionError: actual_single_predecessor_copy_measure"
+    ]
+  },
+  {
+    "name": "Record_prefix_decoder",
+    "reason": "Reverse the decoded previous outcome in the actual Record-only transition selector.",
+    "stderr_tail": [
+      "           ^^^^^^^^^^^^^^^^^^^",
+      "AssertionError: Record_only_prefix_reconstruction"
+    ]
+  },
+  {
+    "name": "conditional_state_update",
+    "reason": "Omit the first-wing conditioning when constructing the second-wing probability program.",
+    "stderr_tail": [
+      "                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "AssertionError: independent_cylinder_weight"
+    ]
+  },
+  {
+    "name": "complex_amplitude_adjoint",
+    "reason": "Use a transpose rather than an adjoint in the independent complex amplitude cylinder.",
+    "stderr_tail": [
+      "                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "AssertionError: independent_cylinder_weight"
+    ]
+  },
+  {
+    "name": "fixed_first_target",
+    "reason": "Move the actual first data formation to a different site in the transition selector.",
+    "stderr_tail": [
+      "           ^^^^^^^^^^^^^^^^^",
+      "AssertionError: fixed_first_data_target"
+    ]
+  },
+  {
+    "name": "program_idempotence",
+    "reason": "Accept trace-one matrices without the required idempotent condition.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: malformed_program_is_not_accepted"
+    ]
+  },
+  {
+    "name": "trace_conditioning_denominator",
+    "reason": "Remove the supported-prefix normalizing trace from the occurrence weight.",
+    "stderr_tail": [
+      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "AssertionError"
+    ]
+  },
+  {
+    "name": "chronological_projector_order",
+    "reason": "Reverse the chronological noncommuting projector composition.",
+    "stderr_tail": [
+      "           ^^^^^^^^^^^^^^^^^^^^^^^",
+      "AssertionError"
+    ]
+  },
+  {
+    "name": "complex_adjoint",
+    "reason": "Replace the complex adjoint by transpose in the full history cylinder.",
+    "stderr_tail": [
+      "           ^^^^^^^^^^^^^^^^^^^^^^^",
+      "AssertionError"
+    ]
+  },
+  {
+    "name": "repeated_matching_projector",
+    "reason": "Copy the orthogonal alternative at an actual subsequent data layer.",
+    "stderr_tail": [
+      "           ^^^^^^^^^^^^^^^^^",
+      "AssertionError"
+    ]
+  },
+  {
+    "name": "one_site_order_weight",
+    "reason": "Omit one order-choice half in the one-site refinement.",
+    "stderr_tail": [
+      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "AssertionError"
+    ]
+  },
+  {
+    "name": "program_outcome_bank_index",
+    "reason": "Shift all physical bank indices to include the forbidden zero leaf.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: bank_indices_biject_all_program_outcomes"
+    ]
+  },
+  {
+    "name": "source_buddy_distance",
+    "reason": "Move source buddies out of the physical nearest-neighbor shell while preserving the prepared count.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: all_prepared_records_have_current_support"
+    ]
+  },
+  {
+    "name": "comb_spine_height",
+    "reason": "Move the shared spine off the specified predecessor path and fixed output register.",
+    "stderr_tail": [
+      "           ^^^^^^^^^^^^^",
+      "AssertionError: fixed_terminal_register_is_present"
+    ]
+  },
+  {
+    "name": "preparation_block_index",
+    "reason": "Reverse the physical preparation block index during matrix reconstruction.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: four_physical_record_blocks_reconstruct_preparation"
+    ]
+  },
+  {
+    "name": "content_readout_axis",
+    "reason": "Discard the component that distinguishes the Z projectors in the fixed content readout.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: fixed_content_only_readout_for_all_Bell_projectors"
+    ]
+  },
+  {
+    "name": "empty_content_measure",
+    "reason": "Change the specified empty-condition probability atom.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: empty_condition_has_intrinsic_zero_measure"
+    ]
+  },
+  {
+    "name": "neighbor_multiplicity",
+    "reason": "Deduplicate repeated neighbor contents instead of retaining their empirical multiplicities.",
+    "stderr_tail": [
+      "           ~~~~^^^^^^^^^^^",
+      "AssertionError: empirical_measure_retains_neighbor_multiplicity"
+    ]
+  }
+]

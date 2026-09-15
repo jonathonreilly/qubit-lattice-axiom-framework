@@ -1,0 +1,14 @@
+{
+  "8053": {
+    "elapsed_sec": 48.41792583465576,
+    "stdout_chars": 1745309,
+    "mathematical_payload_exact_original": true,
+    "inputs_unchanged": true
+  },
+  "8058": {
+    "elapsed_sec": 2.2329649925231934,
+    "stdout_chars": 3071,
+    "mathematical_payload_exact_original": true,
+    "inputs_unchanged": true
+  }
+}

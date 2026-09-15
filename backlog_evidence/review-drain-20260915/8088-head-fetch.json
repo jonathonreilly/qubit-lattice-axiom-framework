@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+  "fetched_ref": "refs/review-loop/fetched/8088-b577586d83424996a38e7aef5833dac0",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/projective-history-local-copy-20260913",
+    "headRefOid": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+    "isDraft": false,
+    "number": 8088,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

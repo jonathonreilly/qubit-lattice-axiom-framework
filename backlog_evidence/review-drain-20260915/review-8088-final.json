@@ -1,0 +1,2142 @@
+{
+  "status": "PASS_WITH_BOUNDED_CLAIMS",
+  "original_head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+  "original_base": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "source_commit": "0641ef197a36124872e898265b0d7fc16422b051",
+  "source_tree": "0ae6892635ede108cb33ceaf3fd3b2b2f0450aa8",
+  "reviewer_session": "/root/review_8011",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "cd137e496c85c22f0f42adbd549b0dbe42a7880d32008b625f7012a747ba85ed",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/CLAIM_STATUS_CERTIFICATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/cd137e496c85c22f0f42adbd549b0dbe42a7880d32008b625f7012a747ba85ed.gz",
+      "final_sha256": "edfa7979a6b46f88d6ac9e2840435e855ef0fdd5425e797a9d5d6db171af8590"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/HANDOFF.md",
+      "original_sha256": "c238ebff5b0dfc66603bbce744feef17057ff4a047f2aabfca3155f876647f9b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/HANDOFF.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/c238ebff5b0dfc66603bbce744feef17057ff4a047f2aabfca3155f876647f9b.gz",
+      "final_sha256": "acf3535e8daf720aac6c308b53df0b8197349a24e03f906e911cd46d803a4394"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/MECHANICAL_CHECKS.json",
+      "original_sha256": "03e19194e93f4142456776496c83408d982bdb14f90810a01a69603bbe44e216",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/MECHANICAL_CHECKS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/03e19194e93f4142456776496c83408d982bdb14f90810a01a69603bbe44e216.gz",
+      "final_sha256": "2a2c73c526e5ddd42e109378bb3669cbf078042fc651215eefacf3475f0a2775"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_sha256": "5ab67009061a95ba733de219e6529f85cc61331ac4a709372f84a47fa04acfa0",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/NO_GO_DISCIPLINE_CHECKLIST.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/kept/pr8088-copy-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "final_sha256": "5ab67009061a95ba733de219e6529f85cc61331ac4a709372f84a47fa04acfa0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/REVIEW_HISTORY.md",
+      "original_sha256": "accda663408ff80fe4fc1b9cb47f16ab8c31009d5173eb08fe72231383f44298",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/REVIEW_HISTORY.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/accda663408ff80fe4fc1b9cb47f16ab8c31009d5173eb08fe72231383f44298.gz",
+      "final_sha256": "adf1f621b72c11b050f8f03c8717de51ad69cca6e91fc6a2e3ba3114ededf9dc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/SOURCE_MANIFEST.json",
+      "original_sha256": "1622a50108074fea920be320bb247951ce1a98940eb828af30658a27e5b01159",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/SOURCE_MANIFEST.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/kept/pr8088-copy-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "final_sha256": "1622a50108074fea920be320bb247951ce1a98940eb828af30658a27e5b01159"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/TRACE_GATE.md",
+      "original_sha256": "5eefc506fcd2d57bc02b8225fbb91d0f31046cf3f889ac836238c795cdd80a9c",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/TRACE_GATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/5eefc506fcd2d57bc02b8225fbb91d0f31046cf3f889ac836238c795cdd80a9c.gz",
+      "final_sha256": "883ed225a95fc40f6342ad63f78d9dabdcca505d2339532b8a31be67348d71e8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/RESULTS.json",
+      "original_sha256": "b9b695e0a6694fa28f5672d3ce5e7a271de272abef206716f4616a9ee7068394",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/RESULTS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/kept/pr8088-copy-RESULTS-1edd1aa7af49c3cd.json",
+      "final_sha256": "b9b695e0a6694fa28f5672d3ce5e7a271de272abef206716f4616a9ee7068394"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/chronological_projector_order/mutant.py",
+      "original_sha256": "831bcb02f2e89fff846b4cc830382d0c12ce1aab42bfcd1d92959453bb50453f",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/chronological_projector_order/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/831bcb02f2e89fff846b4cc830382d0c12ce1aab42bfcd1d92959453bb50453f.gz",
+      "final_sha256": "5de6650fa56972d946dc6cc213536c084cf04f0f3bbe845769ede270e1a4d24b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/chronological_projector_order/stderr.txt",
+      "original_sha256": "5c5ebc4947d65955811e2a5ccd1f88cef603c14c52c18ee2f54153bf2113ad14",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/chronological_projector_order/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/5c5ebc4947d65955811e2a5ccd1f88cef603c14c52c18ee2f54153bf2113ad14.gz",
+      "final_sha256": "0dbeb22db3d5aa47f5b44b588b6cae52704118986170ad810f4067ae702ca4cc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/chronological_projector_order/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/chronological_projector_order/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/comb_spine_height/mutant.py",
+      "original_sha256": "743b2404d63c1d11ece6007a70e5d1090072e80131d512aab6a505dc78f2a301",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/comb_spine_height/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/743b2404d63c1d11ece6007a70e5d1090072e80131d512aab6a505dc78f2a301.gz",
+      "final_sha256": "4ed7b4398a3014e8841db26e1fcc9c86e2eff8fcbb6e5cf7496f7b4f955c3df5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/comb_spine_height/stderr.txt",
+      "original_sha256": "cf9f621b6c4b08fcbed905bd85e24a7cffd35812e547dcc7f1b854b60f4cb427",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/comb_spine_height/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/cf9f621b6c4b08fcbed905bd85e24a7cffd35812e547dcc7f1b854b60f4cb427.gz",
+      "final_sha256": "f4ffb7783b11ecc05456beda2a9b43698900877c49ac43622dd4acb43a11e812"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/comb_spine_height/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/comb_spine_height/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/complex_adjoint/mutant.py",
+      "original_sha256": "c8aa7cbbcf93cabb4e8100052598dc6577209d7f368390ca2fc9ea961da87ae6",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/complex_adjoint/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/c8aa7cbbcf93cabb4e8100052598dc6577209d7f368390ca2fc9ea961da87ae6.gz",
+      "final_sha256": "db17e277146a9afd52edaaf01520ac6e0f091c51204a257a425cc8caa8291f4a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/complex_adjoint/stderr.txt",
+      "original_sha256": "3a2ab4ff37d789296228d6487ca92268491de0358ddf4beabd59122cf65f6b8e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/complex_adjoint/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/3a2ab4ff37d789296228d6487ca92268491de0358ddf4beabd59122cf65f6b8e.gz",
+      "final_sha256": "51c2606793cacf6fbb6b20499936ca58d1bd015b811a1a827fef3c5f81b6ee3a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/complex_adjoint/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/complex_adjoint/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/content_readout_axis/mutant.py",
+      "original_sha256": "4da0350dcc9efd1640bf7bd0057b1912f3425abe8bf21c63c60129ea9525719a",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/content_readout_axis/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/4da0350dcc9efd1640bf7bd0057b1912f3425abe8bf21c63c60129ea9525719a.gz",
+      "final_sha256": "54c65bbf0fea296b83ab4c370f0d416cc96436cbb14bd6e2815c7fa1687e0ddf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/content_readout_axis/stderr.txt",
+      "original_sha256": "b81cc724d3480210fe0641209e605177aad91a2a50645cfc5e2f8e9a2b3f3064",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/content_readout_axis/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/b81cc724d3480210fe0641209e605177aad91a2a50645cfc5e2f8e9a2b3f3064.gz",
+      "final_sha256": "3e5f115d970a9a50f7d4a7e2ec0622198d6360b0918d75fd0aaab023440f8dcf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/content_readout_axis/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/content_readout_axis/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/empty_content_measure/mutant.py",
+      "original_sha256": "442baa68474d8821bd8489e8093f41282b729667ffb529bb42230b7901dab66b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/empty_content_measure/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/442baa68474d8821bd8489e8093f41282b729667ffb529bb42230b7901dab66b.gz",
+      "final_sha256": "3302d24ba2cb14660e0bde6fbe9c807c75d8adb18686e2c982225b74bec4c799"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/empty_content_measure/stderr.txt",
+      "original_sha256": "110346061421f9d406df7e5259beda781a69b73f88b8b075ad51c5873dc7d643",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/empty_content_measure/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/110346061421f9d406df7e5259beda781a69b73f88b8b075ad51c5873dc7d643.gz",
+      "final_sha256": "83ab1507fb139a05d84a5fcc69099355214b2b6c0269f684e33f563b9583df25"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/empty_content_measure/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/empty_content_measure/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/neighbor_multiplicity/mutant.py",
+      "original_sha256": "54e08e9eef3a3676d6c1b34253d3160e253475b86dd1f475007206904980ebac",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/neighbor_multiplicity/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/54e08e9eef3a3676d6c1b34253d3160e253475b86dd1f475007206904980ebac.gz",
+      "final_sha256": "41a86a78272d1b6ad70db59d589fce8790120ccbdf1ea9dd561536a649539614"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/neighbor_multiplicity/stderr.txt",
+      "original_sha256": "d13c6f4fc334ccbaa18a7e1be5009126118f90eab663949a5776e65403bc2cda",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/neighbor_multiplicity/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/d13c6f4fc334ccbaa18a7e1be5009126118f90eab663949a5776e65403bc2cda.gz",
+      "final_sha256": "eeec765eda95d7ede10e2117843f65ee778f328eff3c31a0e74dd9c918db60b9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/neighbor_multiplicity/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/neighbor_multiplicity/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/one_site_order_weight/mutant.py",
+      "original_sha256": "07c555f0d0bda25757e494c74dd6fede5598f791cd2fc41233054c6613986078",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/one_site_order_weight/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/07c555f0d0bda25757e494c74dd6fede5598f791cd2fc41233054c6613986078.gz",
+      "final_sha256": "6edc2b9d0cae19791e2c3e1c93449fba0ee8b532bd7bc142235f3ae0d0be442c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/one_site_order_weight/stderr.txt",
+      "original_sha256": "25bf102c67615e20bc4fbb1331e127437b56a48e070d38a0641b91c21fc894e9",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/one_site_order_weight/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/25bf102c67615e20bc4fbb1331e127437b56a48e070d38a0641b91c21fc894e9.gz",
+      "final_sha256": "a3d0db9ec151dd91ca520eb66d58cd3018e42974e715f321124acaecac402fb1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/one_site_order_weight/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/one_site_order_weight/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/preparation_block_index/mutant.py",
+      "original_sha256": "6aaabcf161104fc0fc1d853e2606e0e044b9c3852e5910a303352cdc14f263dc",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/preparation_block_index/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/6aaabcf161104fc0fc1d853e2606e0e044b9c3852e5910a303352cdc14f263dc.gz",
+      "final_sha256": "96c1abe8c0ab9212c8062d8013fac93aef57a50845ea753f6d0213f3c57aa98b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/preparation_block_index/stderr.txt",
+      "original_sha256": "2c485f7d1ce1b75a5f001f1eb04682e9354b356a6c9701d87a34f49e5051951f",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/preparation_block_index/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/2c485f7d1ce1b75a5f001f1eb04682e9354b356a6c9701d87a34f49e5051951f.gz",
+      "final_sha256": "8eac962817731868c84b30d54a7faffe1e6d325175bc8d5ce733ca864f7cefe7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/preparation_block_index/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/preparation_block_index/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/program_outcome_bank_index/mutant.py",
+      "original_sha256": "a07dc11f649e1f5795b8ff4d7ccb74b8269ce1cda0c47820599bb523307dbd61",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/program_outcome_bank_index/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/a07dc11f649e1f5795b8ff4d7ccb74b8269ce1cda0c47820599bb523307dbd61.gz",
+      "final_sha256": "a86de0b783d697848cd69d0853ff75dd97252b47e5fd697a068fc4f74a644ffc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/program_outcome_bank_index/stderr.txt",
+      "original_sha256": "10a4bfb7d8a44a4277e16bb3be270fc4958bc348d3d0214436ffa17d8970306a",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/program_outcome_bank_index/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/10a4bfb7d8a44a4277e16bb3be270fc4958bc348d3d0214436ffa17d8970306a.gz",
+      "final_sha256": "b4dc43d1afc758346fc6b611080744b88170172a861313f6c29f963204365c7a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/program_outcome_bank_index/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/program_outcome_bank_index/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/repeated_matching_projector/mutant.py",
+      "original_sha256": "056d131e30488b868eb85d132978a3c69deafc9ccc28584b4c60579f5c8dc482",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/repeated_matching_projector/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/056d131e30488b868eb85d132978a3c69deafc9ccc28584b4c60579f5c8dc482.gz",
+      "final_sha256": "14c89f2e306b0b61ecc9e6bb573bece50d06527651dfabbb8aff04e72eada1a8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/repeated_matching_projector/stderr.txt",
+      "original_sha256": "7e08ba1ad23f716b1e004b9bc980dbda35b0a6c3c070cb9352eaf351d6862648",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/repeated_matching_projector/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/7e08ba1ad23f716b1e004b9bc980dbda35b0a6c3c070cb9352eaf351d6862648.gz",
+      "final_sha256": "8a35826c5d851233f4ece64151b5886fc7eef58f746844b9f8f2edde14c859d4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/repeated_matching_projector/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/repeated_matching_projector/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/source_buddy_distance/mutant.py",
+      "original_sha256": "6a6123b27c405b29f5faa633397db4ce736fa597a2a09028171f46ea75863159",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/source_buddy_distance/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/6a6123b27c405b29f5faa633397db4ce736fa597a2a09028171f46ea75863159.gz",
+      "final_sha256": "f4a566cc0e69bfa1fd78d0aec32483c647794c60403c1e0f6dcebfb7eb47bd5a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/source_buddy_distance/stderr.txt",
+      "original_sha256": "4c32bce17e820a72379eda130b07ed09e4ea6f478c281b8d19506c3e26fd4546",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/source_buddy_distance/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/4c32bce17e820a72379eda130b07ed09e4ea6f478c281b8d19506c3e26fd4546.gz",
+      "final_sha256": "6b71433013343cd20b79d6c74d36ffbd9ac3236e109284bd0c29745ffb8d3f5d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/source_buddy_distance/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/source_buddy_distance/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/trace_conditioning_denominator/mutant.py",
+      "original_sha256": "ad47409b42b26ce828f6f51cddbcbe862df53c0f4c9d2d56a3051401e056b508",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/trace_conditioning_denominator/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/ad47409b42b26ce828f6f51cddbcbe862df53c0f4c9d2d56a3051401e056b508.gz",
+      "final_sha256": "8543e23847677777e9f001289a5a6a482a334851f57e4b19676ae489a4ffb866"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/trace_conditioning_denominator/stderr.txt",
+      "original_sha256": "41ce2e7af0e7f93a103028a897630a9cbd6e2994b83fb71cf1d4d9b8e0150f84",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/trace_conditioning_denominator/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/41ce2e7af0e7f93a103028a897630a9cbd6e2994b83fb71cf1d4d9b8e0150f84.gz",
+      "final_sha256": "a979f550252d964436c294643e1f640cc2588031677543d1dd2e65a8692245d5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/trace_conditioning_denominator/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/mutations/trace_conditioning_denominator/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/README.md",
+      "original_sha256": "5f2724f7d4773485ac10f533c37caf41dd50d1855537183309ccad0ddfab625b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/README.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/5f2724f7d4773485ac10f533c37caf41dd50d1855537183309ccad0ddfab625b.gz",
+      "final_sha256": "5a8f12071f6c2026f476baa0fc503810eb2014c3e2bf0b721d899bf7b48eafa9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_cache_wrapper.py",
+      "original_sha256": "523de9a451c849079757e0e893086233d6dc7b2f1510f2486fb5879e8b8376b0",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_cache_wrapper.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/523de9a451c849079757e0e893086233d6dc7b2f1510f2486fb5879e8b8376b0.gz",
+      "final_sha256": "ea475267068be2b36bb1121770721e865c8feccd228ed278005ee12138a3bbae"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/RESULTS.json",
+      "original_sha256": "4795d9243541a8e07b3c9260031dfe92d31068affcc4d8bd2ca73b7e51d2b6ad",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/RESULTS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/4795d9243541a8e07b3c9260031dfe92d31068affcc4d8bd2ca73b7e51d2b6ad.gz",
+      "final_sha256": "f14b277afbc2b5bcad6a4b7ef1c4bf9e3443aeb2b5d43e09c82bca9a48d389a8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/chronological_projector_order/mutant.py",
+      "original_sha256": "fde21105801f9726216c98b249f61b2a2ce2f22c847d2b1b2a4f9c5a944652ad",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/chronological_projector_order/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/fde21105801f9726216c98b249f61b2a2ce2f22c847d2b1b2a4f9c5a944652ad.gz",
+      "final_sha256": "f6f26213106af747b1eec96aa968561c62711607e96e2b88cdc9805d45944d14"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/chronological_projector_order/stderr.txt",
+      "original_sha256": "239c68360aac427eb5ce47050d7425596085a6d9603d2c33bc5dc3defc4904e0",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/chronological_projector_order/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/239c68360aac427eb5ce47050d7425596085a6d9603d2c33bc5dc3defc4904e0.gz",
+      "final_sha256": "7981d4f2f0e7d22e586d71ce7fbe45e59d90d712c2bcf07a8a6a38a1bea89b24"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/chronological_projector_order/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/chronological_projector_order/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/comb_spine_height/mutant.py",
+      "original_sha256": "42c37b9fcfb34342b5e795c5cf0282ac93507063e12cf4c980f76f0a893bc7fc",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/comb_spine_height/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/42c37b9fcfb34342b5e795c5cf0282ac93507063e12cf4c980f76f0a893bc7fc.gz",
+      "final_sha256": "1fae79f58d58c3eae33b7962f4b1b0ca5086d12cb95a55d662678eb3afed1aaa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/comb_spine_height/stderr.txt",
+      "original_sha256": "87444b6ea8bb390cc0bf8d573a90f2e7e757cb4fd360d26a56ebc4b6fb272969",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/comb_spine_height/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/87444b6ea8bb390cc0bf8d573a90f2e7e757cb4fd360d26a56ebc4b6fb272969.gz",
+      "final_sha256": "57605c0056afd476e011a8e018589897f33c73731d36129c699889384be7e2cb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/comb_spine_height/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/comb_spine_height/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/complex_adjoint/mutant.py",
+      "original_sha256": "74e5fbee1240bd0d410eca1fc33fa9aedb9f6506b78d4172ad91e561763a9707",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/complex_adjoint/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/74e5fbee1240bd0d410eca1fc33fa9aedb9f6506b78d4172ad91e561763a9707.gz",
+      "final_sha256": "b2fa875d2b1c248ee2fb485ea6a498c54ef96adf09a7a3ed26300c4286d1834b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/complex_adjoint/stderr.txt",
+      "original_sha256": "27f8da3b36a9306b69aaccc17950ee3f22c4f9b18fc862471dc879f5247d9c22",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/complex_adjoint/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/27f8da3b36a9306b69aaccc17950ee3f22c4f9b18fc862471dc879f5247d9c22.gz",
+      "final_sha256": "cbdff9116130d36ccfbbd19fe0497c1d82790427f40bb245152229f2f0a11920"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/complex_adjoint/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/complex_adjoint/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/content_readout_axis/mutant.py",
+      "original_sha256": "a1f77b161685f4f0cc37b49fcebea610a469ccc95c29432b2fa7297b333f0a46",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/content_readout_axis/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/a1f77b161685f4f0cc37b49fcebea610a469ccc95c29432b2fa7297b333f0a46.gz",
+      "final_sha256": "2e1990a06c6b77c12eaed978d52662fd07734fb4c90860b4445390878527f069"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/content_readout_axis/stderr.txt",
+      "original_sha256": "d6283b67ec08b1425439e423025460eb6ff805c1d8e0e7d022ea25fd8cad4ee4",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/content_readout_axis/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/d6283b67ec08b1425439e423025460eb6ff805c1d8e0e7d022ea25fd8cad4ee4.gz",
+      "final_sha256": "a7604c6b10c0d81f4c435757a1ae137e683979716e8328f99cc0ec06e0c115fd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/content_readout_axis/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/content_readout_axis/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/empty_content_measure/mutant.py",
+      "original_sha256": "634e3d1a4d357a75069c11273f2c75bb459bfc22fc6cb30d47ef906194495979",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/empty_content_measure/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/634e3d1a4d357a75069c11273f2c75bb459bfc22fc6cb30d47ef906194495979.gz",
+      "final_sha256": "c692a7c81afd86c179196a6580feb70cd3c76ee2d91a723e6872422416728ede"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/empty_content_measure/stderr.txt",
+      "original_sha256": "6b4b2c8e87c7f002bdc753ac45d3a140f08622502b2db9f7689fa217b5345824",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/empty_content_measure/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/6b4b2c8e87c7f002bdc753ac45d3a140f08622502b2db9f7689fa217b5345824.gz",
+      "final_sha256": "1d4a5333df8dea569601deae3a5540f0eac3d5aa5d05cc7e7749f40848f8d5a6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/empty_content_measure/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/empty_content_measure/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/neighbor_multiplicity/mutant.py",
+      "original_sha256": "da5696eb626648f04a7d77bd77c66ecad63032973955108e3048d43b3da5d9e5",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/neighbor_multiplicity/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/da5696eb626648f04a7d77bd77c66ecad63032973955108e3048d43b3da5d9e5.gz",
+      "final_sha256": "244c0e604bbd427d51d96c6a25895bba153a635ceb0624ff994e85e31f69fbe0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/neighbor_multiplicity/stderr.txt",
+      "original_sha256": "f4ef938a15c5754d2873f123a3510af387c0e3e92f7e8a79f9928685e314a805",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/neighbor_multiplicity/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/f4ef938a15c5754d2873f123a3510af387c0e3e92f7e8a79f9928685e314a805.gz",
+      "final_sha256": "5b05306d4b60695285761f90862be8a58bec0daf2e240fb6e96a631b576cb524"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/neighbor_multiplicity/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/neighbor_multiplicity/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/one_site_order_weight/mutant.py",
+      "original_sha256": "213fafaa0d908afd163da8b5e9ceb3fe654e044dd184250877d5dc1398131e8e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/one_site_order_weight/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/213fafaa0d908afd163da8b5e9ceb3fe654e044dd184250877d5dc1398131e8e.gz",
+      "final_sha256": "e142c3e170a8c3e613c25f6d1b58578b4da19a9ae384b1ccfe94d0e7ccfedb75"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/one_site_order_weight/stderr.txt",
+      "original_sha256": "826f5eed524e1337acbce92ac6075490812b12e09320b33060aa71aa1c61503e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/one_site_order_weight/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/826f5eed524e1337acbce92ac6075490812b12e09320b33060aa71aa1c61503e.gz",
+      "final_sha256": "1ee1ca939a62120db3fcee8a3b53912e5d2080514673c90c01937f2514b50bbe"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/one_site_order_weight/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/one_site_order_weight/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/preparation_block_index/mutant.py",
+      "original_sha256": "af41c494c61476fc56bc5fb069c60c6bf242238bf5157282bf2bf8b4e5b4f303",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/preparation_block_index/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/af41c494c61476fc56bc5fb069c60c6bf242238bf5157282bf2bf8b4e5b4f303.gz",
+      "final_sha256": "4d0258b54100724591e1c0286d985a486176095b53732d5361e27fef6d722027"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/preparation_block_index/stderr.txt",
+      "original_sha256": "d1b0fca08d846f9b511b1898a09019b246f8b14dac413382b5af40ed117946a9",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/preparation_block_index/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/d1b0fca08d846f9b511b1898a09019b246f8b14dac413382b5af40ed117946a9.gz",
+      "final_sha256": "ea735973deb35e9c42167d8bfe3b7ebc2849d5dde2d55997740382628555b7dd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/preparation_block_index/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/preparation_block_index/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/program_outcome_bank_index/mutant.py",
+      "original_sha256": "44607c686d3d2311a3b05e95673a9d4a17e255840786e2a1f9e36a367511158b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/program_outcome_bank_index/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/44607c686d3d2311a3b05e95673a9d4a17e255840786e2a1f9e36a367511158b.gz",
+      "final_sha256": "0e6aad55cdc319e0ac994cab212a748e2523ba57e2aac4edd8a7bdfbf2a6062c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/program_outcome_bank_index/stderr.txt",
+      "original_sha256": "814f896d00133d611c7ba443e38b463644a8fdd54a327e8ff37da99c2893b336",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/program_outcome_bank_index/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/814f896d00133d611c7ba443e38b463644a8fdd54a327e8ff37da99c2893b336.gz",
+      "final_sha256": "dd1adcc213023e48e3608f0c67086ca3932f91395d7ab19a5fcdbc43369990e5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/program_outcome_bank_index/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/program_outcome_bank_index/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/repeated_matching_projector/mutant.py",
+      "original_sha256": "bc1ec902edb6daba86430fe47aa76f07eabfb28c2fcbd71a40bef5d811a87d4d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/repeated_matching_projector/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/bc1ec902edb6daba86430fe47aa76f07eabfb28c2fcbd71a40bef5d811a87d4d.gz",
+      "final_sha256": "ce157e52bacfbfe120903ccacf2f41e418da44f34843dbeca1d89658ee783c07"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/repeated_matching_projector/stderr.txt",
+      "original_sha256": "4d12b65ef0d68dd9c731ce123a6160b7fc6b7982b1539df9c8d4b9ad7f65ffba",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/repeated_matching_projector/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/4d12b65ef0d68dd9c731ce123a6160b7fc6b7982b1539df9c8d4b9ad7f65ffba.gz",
+      "final_sha256": "626bce0aacaaa93c74fd3be30d9128185f5e7ef2db3dfd05d9a2805197e0ec32"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/repeated_matching_projector/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/repeated_matching_projector/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/source_buddy_distance/mutant.py",
+      "original_sha256": "728e6c3de34bcaf9d3b8dcced98c692601038749cdbfd7551c503e2436a190a1",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/source_buddy_distance/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/728e6c3de34bcaf9d3b8dcced98c692601038749cdbfd7551c503e2436a190a1.gz",
+      "final_sha256": "58ac49b91b0eae7848c4283eca443503d91c9b4afea8ce47293d8bea78219619"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/source_buddy_distance/stderr.txt",
+      "original_sha256": "20daf3e88d3bf279210ec1ee96532ab7d842df015aa2a6f85ce3ca258f707214",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/source_buddy_distance/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/20daf3e88d3bf279210ec1ee96532ab7d842df015aa2a6f85ce3ca258f707214.gz",
+      "final_sha256": "2c31c9b90682c073581420ff4a331ad8e53c8f8710834b022b54e9e76438ad42"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/source_buddy_distance/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/source_buddy_distance/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/trace_conditioning_denominator/mutant.py",
+      "original_sha256": "bd63c1029c4cf0f26f373159161de3928c60de377a6f00a373f47095b2957d4b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/trace_conditioning_denominator/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/bd63c1029c4cf0f26f373159161de3928c60de377a6f00a373f47095b2957d4b.gz",
+      "final_sha256": "2d2825bb1cd2b979a4b28a96c195477ef41d3aaca0d0d80b73994eb365ac3a90"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/trace_conditioning_denominator/stderr.txt",
+      "original_sha256": "39d60f6a1a0064622ff4d9a834ba351cb34bcb490764ed5d41a26433183fef5d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/trace_conditioning_denominator/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/39d60f6a1a0064622ff4d9a834ba351cb34bcb490764ed5d41a26433183fef5d.gz",
+      "final_sha256": "f2436584e423b3065d9caf094fca837ae471e3ba70d860b2717bd04c55754bd3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/trace_conditioning_denominator/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_mutation_attempt/trace_conditioning_denominator/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_primary.py",
+      "original_sha256": "2697ae5176cc387afebd84d5ff643d4bf14b1dee67ab68526e69b2a90f567278",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-copy-20260913/recovery/first_primary.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/2697ae5176cc387afebd84d5ff643d4bf14b1dee67ab68526e69b2a90f567278.gz",
+      "final_sha256": "6265b091dac587476c0774ab3d0e1472ad66b2c9bee580ed6b09e32ea1d0dc24"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "4517afaf0b5f1f0af2a1e505ac5b6f77a0cb5b3cb6c9d9e94a9ad04975d0224f",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/CLAIM_STATUS_CERTIFICATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/4517afaf0b5f1f0af2a1e505ac5b6f77a0cb5b3cb6c9d9e94a9ad04975d0224f.gz",
+      "final_sha256": "2ccb60c4f6460f119a37ead6ea73a4d28590df2f2a802f6f8919b0868d3a0506"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/HANDOFF.md",
+      "original_sha256": "da131345aa763696fd50ceed286e96aa203561529e455bd1b87a781fe0fc5ac6",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/HANDOFF.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/da131345aa763696fd50ceed286e96aa203561529e455bd1b87a781fe0fc5ac6.gz",
+      "final_sha256": "a407fdb352f09fb1f89f435c2b8c08061027e2e52f41e8c814384ef682e8da09"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/MECHANICAL_CHECKS.json",
+      "original_sha256": "0b501550eb28347134a87ea2b184f00bf561a344c45ae02edcf1870b0e0a9ea6",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/MECHANICAL_CHECKS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/0b501550eb28347134a87ea2b184f00bf561a344c45ae02edcf1870b0e0a9ea6.gz",
+      "final_sha256": "6da4b635598947c2af04620b594634a640987ba2a06c5f0dfede9ec98769b3fb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_sha256": "5d08191a1cb3a9cd91adb324b8ddf177729802bb28d345d68502aa6accf0b993",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/NO_GO_DISCIPLINE_CHECKLIST.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "final_sha256": "5d08191a1cb3a9cd91adb324b8ddf177729802bb28d345d68502aa6accf0b993"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/REVIEW_HISTORY.md",
+      "original_sha256": "76e5224cace368cb0e76adfb8bc01bf2d525f2f0e4ac28879853f18eca41fbe6",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/REVIEW_HISTORY.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "final_sha256": "76e5224cace368cb0e76adfb8bc01bf2d525f2f0e4ac28879853f18eca41fbe6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/SOURCE_MANIFEST.json",
+      "original_sha256": "5a6d5992a5cb890eff27dc3cfcab7c493726c6f4d16dd1cc5544c71bd0fe4000",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/SOURCE_MANIFEST.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "final_sha256": "5a6d5992a5cb890eff27dc3cfcab7c493726c6f4d16dd1cc5544c71bd0fe4000"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/TRACE_GATE.md",
+      "original_sha256": "5673b5e1cbab8658ece4afcac074701fd4c21fd87a6a5eab31012e1dbf908473",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/TRACE_GATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/5673b5e1cbab8658ece4afcac074701fd4c21fd87a6a5eab31012e1dbf908473.gz",
+      "final_sha256": "0d3e30b23968ea3c772e08ef785789b0cd074bd5c87cfa13c6ef57acce3365e6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/RESULTS.json",
+      "original_sha256": "ef217f32a50137215df6b66c4260481d2f4801e748e97c5531a8b09911a5c054",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/RESULTS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-RESULTS-1edd1aa7af49c3cd.json",
+      "final_sha256": "ef217f32a50137215df6b66c4260481d2f4801e748e97c5531a8b09911a5c054"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/Record_prefix_decoder/mutant.py",
+      "original_sha256": "f0ea961cff8f5bdd98cc1d3e476c77cb53809f898f5b7d13bcf1a0d5d090b657",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/Record_prefix_decoder/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/f0ea961cff8f5bdd98cc1d3e476c77cb53809f898f5b7d13bcf1a0d5d090b657.gz",
+      "final_sha256": "1c57176941c1db653a9aa6095bf448f313d605eec03af9825e2598e50dc892f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/Record_prefix_decoder/stderr.txt",
+      "original_sha256": "dbc6ae72bf709789ce70c222a16772572a1d6b6d5024e8dbc7f9279fd83093f4",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/Record_prefix_decoder/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/dbc6ae72bf709789ce70c222a16772572a1d6b6d5024e8dbc7f9279fd83093f4.gz",
+      "final_sha256": "0af8b987aab72e279a7eb4f322ed9b48fea25dd09e85c64cfd7f5bfc7e4cb44b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/Record_prefix_decoder/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/Record_prefix_decoder/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complement_probability/mutant.py",
+      "original_sha256": "82384e026c8b219bca6c4c1623e26488b0cf1592de1ecb2eaa333907ddbd0098",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complement_probability/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/82384e026c8b219bca6c4c1623e26488b0cf1592de1ecb2eaa333907ddbd0098.gz",
+      "final_sha256": "cd941b33d8c28f9ec0caee0bdd5081e6c83cc97467d71f31fe1caa431370f2f4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complement_probability/stderr.txt",
+      "original_sha256": "127ba017f73df9f5b62a1b635dca68c31736cc2832d12833d752134b3210d6f2",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complement_probability/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/127ba017f73df9f5b62a1b635dca68c31736cc2832d12833d752134b3210d6f2.gz",
+      "final_sha256": "59f99f43549138a5e7209b89ce2f068200a1992b60a6c19e3de4cf0239e5d082"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complement_probability/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complement_probability/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complex_amplitude_adjoint/mutant.py",
+      "original_sha256": "076d34bd07baf56469e2f515690ef4d76bb0183ac026d73ab858114617444f2d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complex_amplitude_adjoint/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/076d34bd07baf56469e2f515690ef4d76bb0183ac026d73ab858114617444f2d.gz",
+      "final_sha256": "f664a7583dad33aadeac61c73bd9daf91da6398abc94025d3ed5b42a9bfe6de3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complex_amplitude_adjoint/stderr.txt",
+      "original_sha256": "15176846ab4c8ca3db5ad55f02e9db46958649e5428a1625665867683b28f744",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complex_amplitude_adjoint/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/15176846ab4c8ca3db5ad55f02e9db46958649e5428a1625665867683b28f744.gz",
+      "final_sha256": "ca2b909a94d79295bb3fbc09e5f5237eb1e9029806b9c1b83f13a4da5c621967"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complex_amplitude_adjoint/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/complex_amplitude_adjoint/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/conditional_state_update/mutant.py",
+      "original_sha256": "1c07828371dc251cc9ecba4ec31a21cdfc69c6b685ff89eee8960a52d580db06",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/conditional_state_update/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/1c07828371dc251cc9ecba4ec31a21cdfc69c6b685ff89eee8960a52d580db06.gz",
+      "final_sha256": "3d0c632fa3a2349ec219f0cbf56a1136fe19c524bf354cb519bd4dce20b712a1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/conditional_state_update/stderr.txt",
+      "original_sha256": "e5f3f010fc436c568a641c120dfe5adb15b01029147e8652e3149d2d81492ebe",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/conditional_state_update/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e5f3f010fc436c568a641c120dfe5adb15b01029147e8652e3149d2d81492ebe.gz",
+      "final_sha256": "5c1cce986d08f97c9b820deb962bd4123ea02ef63b3d4f7bb00cebb9a274ad7e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/conditional_state_update/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/conditional_state_update/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/fixed_first_target/mutant.py",
+      "original_sha256": "3c8b08be0bebaa323e6cae1c214cb8994d36b8f479fb8688772188bb34d59721",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/fixed_first_target/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/3c8b08be0bebaa323e6cae1c214cb8994d36b8f479fb8688772188bb34d59721.gz",
+      "final_sha256": "ea64f7521f6d30a01f6f627c14f2faa6fb5cb283dd6f7455242b1ba0accd8f95"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/fixed_first_target/stderr.txt",
+      "original_sha256": "8fdbf3babb755ba735b4f57635ca2f3f3b228a3aee51da1e97f60f7bac5d5d01",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/fixed_first_target/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/8fdbf3babb755ba735b4f57635ca2f3f3b228a3aee51da1e97f60f7bac5d5d01.gz",
+      "final_sha256": "bad2d595b513e12779fb91ce3bc505b737ee6475a32d01c91f4391dfc3823974"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/fixed_first_target/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/fixed_first_target/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/neighbor_program_multiplicity/mutant.py",
+      "original_sha256": "47cd86aa9e1cd9288cf24e56826167ee15aad9ad63aee2610f091ec46b92ed54",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/neighbor_program_multiplicity/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/47cd86aa9e1cd9288cf24e56826167ee15aad9ad63aee2610f091ec46b92ed54.gz",
+      "final_sha256": "37bd701c86b43bb338928aba70e0597cc973b12e97c3fc01cb2bb0bd47bae364"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/neighbor_program_multiplicity/stderr.txt",
+      "original_sha256": "2cfac9d32c7bfa290d1ab18d6bcf185a86ae77af10319d09196202c11c1f1fda",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/neighbor_program_multiplicity/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/2cfac9d32c7bfa290d1ab18d6bcf185a86ae77af10319d09196202c11c1f1fda.gz",
+      "final_sha256": "e88ef7c2aac23b94551061acd29b65ec1dc29ee94f0cd8203cda8333fe851ecc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/neighbor_program_multiplicity/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/neighbor_program_multiplicity/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_copy_past_port/mutant.py",
+      "original_sha256": "f0c8839dcf1aae6347465ef91f0e5e2e833eea9e2ff7bf8e95c5a155fb27e0bb",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_copy_past_port/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/f0c8839dcf1aae6347465ef91f0e5e2e833eea9e2ff7bf8e95c5a155fb27e0bb.gz",
+      "final_sha256": "fc56c6454bd87e05fa983397c141298460a068cf9c491b2ed49518f809a7b071"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_copy_past_port/stderr.txt",
+      "original_sha256": "c2425f71b9f5f7d9fa33b8a178f7dfb1a3847539185bafd7f385f3ddd4bf11a5",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_copy_past_port/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/c2425f71b9f5f7d9fa33b8a178f7dfb1a3847539185bafd7f385f3ddd4bf11a5.gz",
+      "final_sha256": "e648de608d87386679fefed14ec28853a3bbcd061c15588c59527a180f4edbbd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_copy_past_port/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_copy_past_port/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_idempotence/mutant.py",
+      "original_sha256": "c58a3da5e9b93f15b438f9336adb16dfff0cacd659af634feaa029c984d0c0fc",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_idempotence/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/c58a3da5e9b93f15b438f9336adb16dfff0cacd659af634feaa029c984d0c0fc.gz",
+      "final_sha256": "95d536cfe2e819b75fa8e8228e6ebe5b0875df15ebe9d85fa7d4589bd2cf75ac"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_idempotence/stderr.txt",
+      "original_sha256": "aca79ec07e913f715606191ef3eb4956616ce41fde01764de5d487fbb6183f5f",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_idempotence/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/aca79ec07e913f715606191ef3eb4956616ce41fde01764de5d487fbb6183f5f.gz",
+      "final_sha256": "e8263a1abfa14b8d1bfb26ed0e5f6b34b51229af6216599713b145c8a83d6301"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_idempotence/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_idempotence/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_source_buddy/mutant.py",
+      "original_sha256": "644f63fb0958aff9283d9014f0430436da0495c31765128afbe95c1299fad24b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_source_buddy/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/644f63fb0958aff9283d9014f0430436da0495c31765128afbe95c1299fad24b.gz",
+      "final_sha256": "4b52c5543f4975a5395ebbc5187cab1fe480b5d1afc7691ce2bec33417ca9e40"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_source_buddy/stderr.txt",
+      "original_sha256": "1a5d8226b1dc2986981966006ef0788216df0e8b65d72668a4a249ef2e40c99c",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_source_buddy/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/1a5d8226b1dc2986981966006ef0788216df0e8b65d72668a4a249ef2e40c99c.gz",
+      "final_sha256": "227fe97977f4c6adecded1a2fd8d1ef8578b1fb402bb5cec5ccc90cabdd0c611"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_source_buddy/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/program_source_buddy/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trace_probability_decoder/mutant.py",
+      "original_sha256": "7ff85bc3f5dfa06f0b5cf8b9cbe1d20b63dcdb4716f5c00397d910e1eb6940f2",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trace_probability_decoder/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/7ff85bc3f5dfa06f0b5cf8b9cbe1d20b63dcdb4716f5c00397d910e1eb6940f2.gz",
+      "final_sha256": "a2784bf26024f282660534f637c007e1d4b1fd4a536939bdc1e58732d90a6326"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trace_probability_decoder/stderr.txt",
+      "original_sha256": "4179f048d7f16881279c7444a10dc29a52b13b166109dfef8dfc014c9516713c",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trace_probability_decoder/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/4179f048d7f16881279c7444a10dc29a52b13b166109dfef8dfc014c9516713c.gz",
+      "final_sha256": "993c4e8d1de8e1b85e0eb0a75faff95ff0473b73beb4d8e45546126742d0b8ab"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trace_probability_decoder/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trace_probability_decoder/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_buddy/mutant.py",
+      "original_sha256": "110c8bcb395ccddff1f51128d745a3e002f5785f31974965fac8bdeb4cfc8e3b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_buddy/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/110c8bcb395ccddff1f51128d745a3e002f5785f31974965fac8bdeb4cfc8e3b.gz",
+      "final_sha256": "f95fd42c66604aeda7e78ff47cc5b639c0cfde4b0a29b4b23f0ca11ac1c37721"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_buddy/stderr.txt",
+      "original_sha256": "4ca6354cc32120144a6c1b2fcd39b880f52ed28f20636a48c22bda72b0cf1e85",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_buddy/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/4ca6354cc32120144a6c1b2fcd39b880f52ed28f20636a48c22bda72b0cf1e85.gz",
+      "final_sha256": "0e632b8607e784215ecf3e296bcf6fda6c0821d5985e58140b33f928dae24597"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_buddy/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_buddy/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_recognition/mutant.py",
+      "original_sha256": "d25db993cf8694f0b998a62528f63e9e44ed02a695c4b22dc766d0ca1d1163d2",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_recognition/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/d25db993cf8694f0b998a62528f63e9e44ed02a695c4b22dc766d0ca1d1163d2.gz",
+      "final_sha256": "5af446e1e09ba465b716941b61b7521452b7bcc8500c0d22242bab0653ca175e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_recognition/stderr.txt",
+      "original_sha256": "920afcc6ce7326f150231a692e9a3e24bbc263135827414988701cbadb688087",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_recognition/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/920afcc6ce7326f150231a692e9a3e24bbc263135827414988701cbadb688087.gz",
+      "final_sha256": "4cb7022e3541f1fc341f9fb8075f77e34a126e36f047aabb079ede97eb62e7ed"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_recognition/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/mutations/trigger_recognition/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/FIRST_CHECKER.py",
+      "original_sha256": "fac076f960b24ff375d366983079ec2554f4564a02ac66decafce4cb1b0849da",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/FIRST_CHECKER.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/fac076f960b24ff375d366983079ec2554f4564a02ac66decafce4cb1b0849da.gz",
+      "final_sha256": "355f52e3ebf6b3a2ffd8947442af617c451e09a2bc0f856e847808f08f882cfc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/FIRST_STDERR.txt",
+      "original_sha256": "4fc1f91d5c9032ac78be7a2247d0e0c46e071a2b1d73fb3af569f9ab0c8e1f6e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/FIRST_STDERR.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/4fc1f91d5c9032ac78be7a2247d0e0c46e071a2b1d73fb3af569f9ab0c8e1f6e.gz",
+      "final_sha256": "8dc3393e5a1ab87000621645aa8a1730d22be467db77f37ec2985e523df2b102"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/FIRST_STDOUT.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/FIRST_STDOUT.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/INITIAL_DERIVATION.md",
+      "original_sha256": "b8a58a3f97c1193637ccd5ca569ee1f5fec1af33bb27156364b00ab738e08258",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/INITIAL_DERIVATION.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/b8a58a3f97c1193637ccd5ca569ee1f5fec1af33bb27156364b00ab738e08258.gz",
+      "final_sha256": "aad066147569b91f49f76bfaebc2560232f7558f44a5304e0c1c75d0136ae6ac"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/PRE_PROJECTOR_QUALIFICATION_NOTE.md",
+      "original_sha256": "546bd581b736548c419770bcf120f8c75963ac5d1ce6e1301514437ab8bd28f4",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/PRE_PROJECTOR_QUALIFICATION_NOTE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/546bd581b736548c419770bcf120f8c75963ac5d1ce6e1301514437ab8bd28f4.gz",
+      "final_sha256": "ab6a58c7ed8904a64de006d5ae24a3217b30c4b320d0ce6747cf5d289218fd10"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/README.md",
+      "original_sha256": "f5a87109b19803bbe86b04b84cf9620c373f85661bb490163a6408ab19f121bb",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": ".claude/science/physics-loops/projective-history-local-program-20260913/recovery/README.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/f5a87109b19803bbe86b04b84cf9620c373f85661bb490163a6408ab19f121bb.gz",
+      "final_sha256": "602897a05d74e27ac293c26d00188ed89a3cb51093ad89165fba1f08a28900e9"
+    },
+    {
+      "original_path": "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "original_sha256": "f6901922a9571c8a699b7276346bb4cc7fddc0722b066640da35d7c66715c9e5",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      },
+      "final_path": "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "final_sha256": "df478a982ec95b2c252a4e1c55c50172807486b2b5a9a901dbbf31d92cad51c5"
+    },
+    {
+      "original_path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "original_sha256": "1263140139d365e071d2646367ea91e7a263d1bbba37e9826590b1d695e28417",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      },
+      "final_path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "final_sha256": "cd462bedb8c56f7faf78e1d2b85513e16061acd31eadcc7479394a6255a56e33"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "25549ccc32e1a535b5fde1fe131f562118446d3f3cfc59dd848b46e93619dadc",
+      "disposition": "Generated citation authority excluded; current-main version retained, combined gate regenerates independently.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": "docs/audit/data/citation_graph_manifest.json"
+      },
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "logs/runner-cache/projective_history_local_copy_record_process_2026_09_13.txt",
+      "original_sha256": "4a944cfbebb657253904eb7097f63d262255898cb5e3a37026342b075dbd3065",
+      "disposition": "Fresh canonical cache from exactly one final bounded capture; original cache preserved at frozen original head.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": "logs/runner-cache/projective_history_local_copy_record_process_2026_09_13.txt"
+      },
+      "final_path": "logs/runner-cache/projective_history_local_copy_record_process_2026_09_13.txt",
+      "final_sha256": "d128f26ae17c7a3a5fda4e87cbd003614c012d125f3a1f9f7cfc4df3087b1964"
+    },
+    {
+      "original_path": "logs/runner-cache/projective_history_local_program_2026_09_13.txt",
+      "original_sha256": "1ca6c9a16f7b003c0431b533aea82ebed364adf73314b7a326236cccf29923e1",
+      "disposition": "Fresh canonical cache from exactly one final bounded capture; original cache preserved at frozen original head.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": "logs/runner-cache/projective_history_local_program_2026_09_13.txt"
+      },
+      "final_path": "logs/runner-cache/projective_history_local_program_2026_09_13.txt",
+      "final_sha256": "b5c59cff1ac1159fabc50a1d8aed58262ff0ad0cf0faf5eec800323a47ec1f1a"
+    },
+    {
+      "original_path": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+      "original_sha256": "bd5fc8623e27483fbc73f2bcbbd47609c4307594eebaee7244a8038b955527d5",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": "scripts/projective_history_local_copy_record_process_2026_09_13.py"
+      },
+      "final_path": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+      "final_sha256": "949790105dc4d6ed4c9ff0f5ca57a11f15fa095eaa2e9bc13c3fd62663d28d54"
+    },
+    {
+      "original_path": "scripts/projective_history_local_program_2026_09_13.py",
+      "original_sha256": "4e43d3e977121c211cf72acca96dfa3548cb950b13b8ddddbc4e411c8c293d1b",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+        "path": "scripts/projective_history_local_program_2026_09_13.py"
+      },
+      "final_path": "scripts/projective_history_local_program_2026_09_13.py",
+      "final_sha256": "7c9e2fb963ceff15d60921d1f480224232c1f7ac625e2fe723270f3594f636cc"
+    }
+  ],
+  "canonical_source_hashes": [
+    {
+      "path": "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "df478a982ec95b2c252a4e1c55c50172807486b2b5a9a901dbbf31d92cad51c5"
+    },
+    {
+      "path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "cd462bedb8c56f7faf78e1d2b85513e16061acd31eadcc7479394a6255a56e33"
+    },
+    {
+      "path": "logs/runner-cache/projective_history_local_copy_record_process_2026_09_13.txt",
+      "sha256": "4a944cfbebb657253904eb7097f63d262255898cb5e3a37026342b075dbd3065"
+    },
+    {
+      "path": "logs/runner-cache/projective_history_local_program_2026_09_13.txt",
+      "sha256": "1ca6c9a16f7b003c0431b533aea82ebed364adf73314b7a326236cccf29923e1"
+    },
+    {
+      "path": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+      "sha256": "949790105dc4d6ed4c9ff0f5ca57a11f15fa095eaa2e9bc13c3fd62663d28d54"
+    },
+    {
+      "path": "scripts/projective_history_local_program_2026_09_13.py",
+      "sha256": "7c9e2fb963ceff15d60921d1f480224232c1f7ac625e2fe723270f3594f636cc"
+    }
+  ],
+  "coverage": "Complete two canonical notes and two runners read. Both historical packets inspected, including initial derivation, pre-Hermitian qualification, initial decoder failure, copy wrapper status error, twelve initial and twenty-four final exact altered-source receipts. Selected-history parent sections on supplied trace Law, local marginals versus global coupling, Record reconstruction, and conditional preparation scope read; current axiom ontology exact prior-read identity reused.",
+  "mathematical_assessment": "No material proof defect found in complete canonical proof/runner reading. Independent coded controls pass10/0: all binary fixed-target paths N1\u20134 and permanent support, rational matrix covariance/decoder, wrong-normalization rejection, trace telescope against amplitudes, adaptive TV coupling and off-code distinction. Manual proof checks cover arbitrary finite horizon and local-copy construction. No primary execution yet.",
+  "draft_confirmation": "Six note URL changes and six historical input-path changes only; all134 historical decoded payloads match immutable originals. No runner mathematical expression or original cache changed.",
+  "runtime_scientific_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "df478a982ec95b2c252a4e1c55c50172807486b2b5a9a901dbbf31d92cad51c5"
+    },
+    {
+      "path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "cd462bedb8c56f7faf78e1d2b85513e16061acd31eadcc7479394a6255a56e33"
+    },
+    {
+      "path": "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
+      "sha256": "3a86afdafa20f79080a3b0b225cf52eb23cc628ec2810683ea7cba5c468a74c8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/kept/pr8088-copy-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "5ab67009061a95ba733de219e6529f85cc61331ac4a709372f84a47fa04acfa0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/kept/pr8088-copy-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "b9b695e0a6694fa28f5672d3ce5e7a271de272abef206716f4616a9ee7068394"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/kept/pr8088-copy-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "1622a50108074fea920be320bb247951ce1a98940eb828af30658a27e5b01159"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "5d08191a1cb3a9cd91adb324b8ddf177729802bb28d345d68502aa6accf0b993"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "ef217f32a50137215df6b66c4260481d2f4801e748e97c5531a8b09911a5c054"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "5a6d5992a5cb890eff27dc3cfcab7c493726c6f4d16dd1cc5544c71bd0fe4000"
+    }
+  ],
+  "runtime_input_boundary": "Final runtime/input binding will be generated from replayed fixed-method source; no empty-dependency conclusion implied by this provisional field.",
+  "external_methods": "Finite-dimensional matrix trace/projector algebra, finite probability coupling and induction; supplied quantum history rule, no derived physical probability selector.",
+  "remaining": [],
+  "source_paths": [
+    {
+      "path": "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "df478a982ec95b2c252a4e1c55c50172807486b2b5a9a901dbbf31d92cad51c5"
+    },
+    {
+      "path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "cd462bedb8c56f7faf78e1d2b85513e16061acd31eadcc7479394a6255a56e33"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/03e19194e93f4142456776496c83408d982bdb14f90810a01a69603bbe44e216.gz",
+      "sha256": "2a2c73c526e5ddd42e109378bb3669cbf078042fc651215eefacf3475f0a2775"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/056d131e30488b868eb85d132978a3c69deafc9ccc28584b4c60579f5c8dc482.gz",
+      "sha256": "14c89f2e306b0b61ecc9e6bb573bece50d06527651dfabbb8aff04e72eada1a8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/07c555f0d0bda25757e494c74dd6fede5598f791cd2fc41233054c6613986078.gz",
+      "sha256": "6edc2b9d0cae19791e2c3e1c93449fba0ee8b532bd7bc142235f3ae0d0be442c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/10a4bfb7d8a44a4277e16bb3be270fc4958bc348d3d0214436ffa17d8970306a.gz",
+      "sha256": "b4dc43d1afc758346fc6b611080744b88170172a861313f6c29f963204365c7a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/110346061421f9d406df7e5259beda781a69b73f88b8b075ad51c5873dc7d643.gz",
+      "sha256": "83ab1507fb139a05d84a5fcc69099355214b2b6c0269f684e33f563b9583df25"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/20daf3e88d3bf279210ec1ee96532ab7d842df015aa2a6f85ce3ca258f707214.gz",
+      "sha256": "2c31c9b90682c073581420ff4a331ad8e53c8f8710834b022b54e9e76438ad42"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/213fafaa0d908afd163da8b5e9ceb3fe654e044dd184250877d5dc1398131e8e.gz",
+      "sha256": "e142c3e170a8c3e613c25f6d1b58578b4da19a9ae384b1ccfe94d0e7ccfedb75"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/239c68360aac427eb5ce47050d7425596085a6d9603d2c33bc5dc3defc4904e0.gz",
+      "sha256": "7981d4f2f0e7d22e586d71ce7fbe45e59d90d712c2bcf07a8a6a38a1bea89b24"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/25bf102c67615e20bc4fbb1331e127437b56a48e070d38a0641b91c21fc894e9.gz",
+      "sha256": "a3d0db9ec151dd91ca520eb66d58cd3018e42974e715f321124acaecac402fb1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/2697ae5176cc387afebd84d5ff643d4bf14b1dee67ab68526e69b2a90f567278.gz",
+      "sha256": "6265b091dac587476c0774ab3d0e1472ad66b2c9bee580ed6b09e32ea1d0dc24"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/27f8da3b36a9306b69aaccc17950ee3f22c4f9b18fc862471dc879f5247d9c22.gz",
+      "sha256": "cbdff9116130d36ccfbbd19fe0497c1d82790427f40bb245152229f2f0a11920"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/2c485f7d1ce1b75a5f001f1eb04682e9354b356a6c9701d87a34f49e5051951f.gz",
+      "sha256": "8eac962817731868c84b30d54a7faffe1e6d325175bc8d5ce733ca864f7cefe7"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/39d60f6a1a0064622ff4d9a834ba351cb34bcb490764ed5d41a26433183fef5d.gz",
+      "sha256": "f2436584e423b3065d9caf094fca837ae471e3ba70d860b2717bd04c55754bd3"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/3a2ab4ff37d789296228d6487ca92268491de0358ddf4beabd59122cf65f6b8e.gz",
+      "sha256": "51c2606793cacf6fbb6b20499936ca58d1bd015b811a1a827fef3c5f81b6ee3a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/41ce2e7af0e7f93a103028a897630a9cbd6e2994b83fb71cf1d4d9b8e0150f84.gz",
+      "sha256": "a979f550252d964436c294643e1f640cc2588031677543d1dd2e65a8692245d5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/42c37b9fcfb34342b5e795c5cf0282ac93507063e12cf4c980f76f0a893bc7fc.gz",
+      "sha256": "1fae79f58d58c3eae33b7962f4b1b0ca5086d12cb95a55d662678eb3afed1aaa"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/442baa68474d8821bd8489e8093f41282b729667ffb529bb42230b7901dab66b.gz",
+      "sha256": "3302d24ba2cb14660e0bde6fbe9c807c75d8adb18686e2c982225b74bec4c799"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/44607c686d3d2311a3b05e95673a9d4a17e255840786e2a1f9e36a367511158b.gz",
+      "sha256": "0e6aad55cdc319e0ac994cab212a748e2523ba57e2aac4edd8a7bdfbf2a6062c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/4795d9243541a8e07b3c9260031dfe92d31068affcc4d8bd2ca73b7e51d2b6ad.gz",
+      "sha256": "f14b277afbc2b5bcad6a4b7ef1c4bf9e3443aeb2b5d43e09c82bca9a48d389a8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/4c32bce17e820a72379eda130b07ed09e4ea6f478c281b8d19506c3e26fd4546.gz",
+      "sha256": "6b71433013343cd20b79d6c74d36ffbd9ac3236e109284bd0c29745ffb8d3f5d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/4d12b65ef0d68dd9c731ce123a6160b7fc6b7982b1539df9c8d4b9ad7f65ffba.gz",
+      "sha256": "626bce0aacaaa93c74fd3be30d9128185f5e7ef2db3dfd05d9a2805197e0ec32"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/4da0350dcc9efd1640bf7bd0057b1912f3425abe8bf21c63c60129ea9525719a.gz",
+      "sha256": "54c65bbf0fea296b83ab4c370f0d416cc96436cbb14bd6e2815c7fa1687e0ddf"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/523de9a451c849079757e0e893086233d6dc7b2f1510f2486fb5879e8b8376b0.gz",
+      "sha256": "ea475267068be2b36bb1121770721e865c8feccd228ed278005ee12138a3bbae"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/54e08e9eef3a3676d6c1b34253d3160e253475b86dd1f475007206904980ebac.gz",
+      "sha256": "41a86a78272d1b6ad70db59d589fce8790120ccbdf1ea9dd561536a649539614"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/5c5ebc4947d65955811e2a5ccd1f88cef603c14c52c18ee2f54153bf2113ad14.gz",
+      "sha256": "0dbeb22db3d5aa47f5b44b588b6cae52704118986170ad810f4067ae702ca4cc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/5eefc506fcd2d57bc02b8225fbb91d0f31046cf3f889ac836238c795cdd80a9c.gz",
+      "sha256": "883ed225a95fc40f6342ad63f78d9dabdcca505d2339532b8a31be67348d71e8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/5f2724f7d4773485ac10f533c37caf41dd50d1855537183309ccad0ddfab625b.gz",
+      "sha256": "5a8f12071f6c2026f476baa0fc503810eb2014c3e2bf0b721d899bf7b48eafa9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/634e3d1a4d357a75069c11273f2c75bb459bfc22fc6cb30d47ef906194495979.gz",
+      "sha256": "c692a7c81afd86c179196a6580feb70cd3c76ee2d91a723e6872422416728ede"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/6a6123b27c405b29f5faa633397db4ce736fa597a2a09028171f46ea75863159.gz",
+      "sha256": "f4a566cc0e69bfa1fd78d0aec32483c647794c60403c1e0f6dcebfb7eb47bd5a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/6aaabcf161104fc0fc1d853e2606e0e044b9c3852e5910a303352cdc14f263dc.gz",
+      "sha256": "96c1abe8c0ab9212c8062d8013fac93aef57a50845ea753f6d0213f3c57aa98b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/6b4b2c8e87c7f002bdc753ac45d3a140f08622502b2db9f7689fa217b5345824.gz",
+      "sha256": "1d4a5333df8dea569601deae3a5540f0eac3d5aa5d05cc7e7749f40848f8d5a6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/728e6c3de34bcaf9d3b8dcced98c692601038749cdbfd7551c503e2436a190a1.gz",
+      "sha256": "58ac49b91b0eae7848c4283eca443503d91c9b4afea8ce47293d8bea78219619"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/743b2404d63c1d11ece6007a70e5d1090072e80131d512aab6a505dc78f2a301.gz",
+      "sha256": "4ed7b4398a3014e8841db26e1fcc9c86e2eff8fcbb6e5cf7496f7b4f955c3df5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/74e5fbee1240bd0d410eca1fc33fa9aedb9f6506b78d4172ad91e561763a9707.gz",
+      "sha256": "b2fa875d2b1c248ee2fb485ea6a498c54ef96adf09a7a3ed26300c4286d1834b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/7e08ba1ad23f716b1e004b9bc980dbda35b0a6c3c070cb9352eaf351d6862648.gz",
+      "sha256": "8a35826c5d851233f4ece64151b5886fc7eef58f746844b9f8f2edde14c859d4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/814f896d00133d611c7ba443e38b463644a8fdd54a327e8ff37da99c2893b336.gz",
+      "sha256": "dd1adcc213023e48e3608f0c67086ca3932f91395d7ab19a5fcdbc43369990e5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/826f5eed524e1337acbce92ac6075490812b12e09320b33060aa71aa1c61503e.gz",
+      "sha256": "1ee1ca939a62120db3fcee8a3b53912e5d2080514673c90c01937f2514b50bbe"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/831bcb02f2e89fff846b4cc830382d0c12ce1aab42bfcd1d92959453bb50453f.gz",
+      "sha256": "5de6650fa56972d946dc6cc213536c084cf04f0f3bbe845769ede270e1a4d24b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/87444b6ea8bb390cc0bf8d573a90f2e7e757cb4fd360d26a56ebc4b6fb272969.gz",
+      "sha256": "57605c0056afd476e011a8e018589897f33c73731d36129c699889384be7e2cb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/a07dc11f649e1f5795b8ff4d7ccb74b8269ce1cda0c47820599bb523307dbd61.gz",
+      "sha256": "a86de0b783d697848cd69d0853ff75dd97252b47e5fd697a068fc4f74a644ffc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/a1f77b161685f4f0cc37b49fcebea610a469ccc95c29432b2fa7297b333f0a46.gz",
+      "sha256": "2e1990a06c6b77c12eaed978d52662fd07734fb4c90860b4445390878527f069"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/accda663408ff80fe4fc1b9cb47f16ab8c31009d5173eb08fe72231383f44298.gz",
+      "sha256": "adf1f621b72c11b050f8f03c8717de51ad69cca6e91fc6a2e3ba3114ededf9dc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/ad47409b42b26ce828f6f51cddbcbe862df53c0f4c9d2d56a3051401e056b508.gz",
+      "sha256": "8543e23847677777e9f001289a5a6a482a334851f57e4b19676ae489a4ffb866"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/af41c494c61476fc56bc5fb069c60c6bf242238bf5157282bf2bf8b4e5b4f303.gz",
+      "sha256": "4d0258b54100724591e1c0286d985a486176095b53732d5361e27fef6d722027"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/b81cc724d3480210fe0641209e605177aad91a2a50645cfc5e2f8e9a2b3f3064.gz",
+      "sha256": "3e5f115d970a9a50f7d4a7e2ec0622198d6360b0918d75fd0aaab023440f8dcf"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/bc1ec902edb6daba86430fe47aa76f07eabfb28c2fcbd71a40bef5d811a87d4d.gz",
+      "sha256": "ce157e52bacfbfe120903ccacf2f41e418da44f34843dbeca1d89658ee783c07"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/bd63c1029c4cf0f26f373159161de3928c60de377a6f00a373f47095b2957d4b.gz",
+      "sha256": "2d2825bb1cd2b979a4b28a96c195477ef41d3aaca0d0d80b73994eb365ac3a90"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/c238ebff5b0dfc66603bbce744feef17057ff4a047f2aabfca3155f876647f9b.gz",
+      "sha256": "acf3535e8daf720aac6c308b53df0b8197349a24e03f906e911cd46d803a4394"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/c8aa7cbbcf93cabb4e8100052598dc6577209d7f368390ca2fc9ea961da87ae6.gz",
+      "sha256": "db17e277146a9afd52edaaf01520ac6e0f091c51204a257a425cc8caa8291f4a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/cd137e496c85c22f0f42adbd549b0dbe42a7880d32008b625f7012a747ba85ed.gz",
+      "sha256": "edfa7979a6b46f88d6ac9e2840435e855ef0fdd5425e797a9d5d6db171af8590"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/cf9f621b6c4b08fcbed905bd85e24a7cffd35812e547dcc7f1b854b60f4cb427.gz",
+      "sha256": "f4ffb7783b11ecc05456beda2a9b43698900877c49ac43622dd4acb43a11e812"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/d13c6f4fc334ccbaa18a7e1be5009126118f90eab663949a5776e65403bc2cda.gz",
+      "sha256": "eeec765eda95d7ede10e2117843f65ee778f328eff3c31a0e74dd9c918db60b9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/d1b0fca08d846f9b511b1898a09019b246f8b14dac413382b5af40ed117946a9.gz",
+      "sha256": "ea735973deb35e9c42167d8bfe3b7ebc2849d5dde2d55997740382628555b7dd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/d6283b67ec08b1425439e423025460eb6ff805c1d8e0e7d022ea25fd8cad4ee4.gz",
+      "sha256": "a7604c6b10c0d81f4c435757a1ae137e683979716e8328f99cc0ec06e0c115fd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/da5696eb626648f04a7d77bd77c66ecad63032973955108e3048d43b3da5d9e5.gz",
+      "sha256": "244c0e604bbd427d51d96c6a25895bba153a635ceb0624ff994e85e31f69fbe0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/f4ef938a15c5754d2873f123a3510af387c0e3e92f7e8a79f9928685e314a805.gz",
+      "sha256": "5b05306d4b60695285761f90862be8a58bec0daf2e240fb6e96a631b576cb524"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/_objects/fde21105801f9726216c98b249f61b2a2ce2f22c847d2b1b2a4f9c5a944652ad.gz",
+      "sha256": "f6f26213106af747b1eec96aa968561c62711607e96e2b88cdc9805d45944d14"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/archive-manifest.json",
+      "sha256": "e948dfeac7f21789265751758aac12e8d1cc7b52181e2f3c93dc775e83e23448"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/kept/pr8088-copy-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "5ab67009061a95ba733de219e6529f85cc61331ac4a709372f84a47fa04acfa0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/kept/pr8088-copy-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "b9b695e0a6694fa28f5672d3ce5e7a271de272abef206716f4616a9ee7068394"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-copy-evidence/kept/pr8088-copy-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "1622a50108074fea920be320bb247951ce1a98940eb828af30658a27e5b01159"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/076d34bd07baf56469e2f515690ef4d76bb0183ac026d73ab858114617444f2d.gz",
+      "sha256": "f664a7583dad33aadeac61c73bd9daf91da6398abc94025d3ed5b42a9bfe6de3"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/0b501550eb28347134a87ea2b184f00bf561a344c45ae02edcf1870b0e0a9ea6.gz",
+      "sha256": "6da4b635598947c2af04620b594634a640987ba2a06c5f0dfede9ec98769b3fb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/110c8bcb395ccddff1f51128d745a3e002f5785f31974965fac8bdeb4cfc8e3b.gz",
+      "sha256": "f95fd42c66604aeda7e78ff47cc5b639c0cfde4b0a29b4b23f0ca11ac1c37721"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/127ba017f73df9f5b62a1b635dca68c31736cc2832d12833d752134b3210d6f2.gz",
+      "sha256": "59f99f43549138a5e7209b89ce2f068200a1992b60a6c19e3de4cf0239e5d082"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/15176846ab4c8ca3db5ad55f02e9db46958649e5428a1625665867683b28f744.gz",
+      "sha256": "ca2b909a94d79295bb3fbc09e5f5237eb1e9029806b9c1b83f13a4da5c621967"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/1a5d8226b1dc2986981966006ef0788216df0e8b65d72668a4a249ef2e40c99c.gz",
+      "sha256": "227fe97977f4c6adecded1a2fd8d1ef8578b1fb402bb5cec5ccc90cabdd0c611"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/1c07828371dc251cc9ecba4ec31a21cdfc69c6b685ff89eee8960a52d580db06.gz",
+      "sha256": "3d0c632fa3a2349ec219f0cbf56a1136fe19c524bf354cb519bd4dce20b712a1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/2cfac9d32c7bfa290d1ab18d6bcf185a86ae77af10319d09196202c11c1f1fda.gz",
+      "sha256": "e88ef7c2aac23b94551061acd29b65ec1dc29ee94f0cd8203cda8333fe851ecc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/3c8b08be0bebaa323e6cae1c214cb8994d36b8f479fb8688772188bb34d59721.gz",
+      "sha256": "ea64f7521f6d30a01f6f627c14f2faa6fb5cb283dd6f7455242b1ba0accd8f95"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/4179f048d7f16881279c7444a10dc29a52b13b166109dfef8dfc014c9516713c.gz",
+      "sha256": "993c4e8d1de8e1b85e0eb0a75faff95ff0473b73beb4d8e45546126742d0b8ab"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/4517afaf0b5f1f0af2a1e505ac5b6f77a0cb5b3cb6c9d9e94a9ad04975d0224f.gz",
+      "sha256": "2ccb60c4f6460f119a37ead6ea73a4d28590df2f2a802f6f8919b0868d3a0506"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/47cd86aa9e1cd9288cf24e56826167ee15aad9ad63aee2610f091ec46b92ed54.gz",
+      "sha256": "37bd701c86b43bb338928aba70e0597cc973b12e97c3fc01cb2bb0bd47bae364"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/4ca6354cc32120144a6c1b2fcd39b880f52ed28f20636a48c22bda72b0cf1e85.gz",
+      "sha256": "0e632b8607e784215ecf3e296bcf6fda6c0821d5985e58140b33f928dae24597"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/4fc1f91d5c9032ac78be7a2247d0e0c46e071a2b1d73fb3af569f9ab0c8e1f6e.gz",
+      "sha256": "8dc3393e5a1ab87000621645aa8a1730d22be467db77f37ec2985e523df2b102"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/546bd581b736548c419770bcf120f8c75963ac5d1ce6e1301514437ab8bd28f4.gz",
+      "sha256": "ab6a58c7ed8904a64de006d5ae24a3217b30c4b320d0ce6747cf5d289218fd10"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/5673b5e1cbab8658ece4afcac074701fd4c21fd87a6a5eab31012e1dbf908473.gz",
+      "sha256": "0d3e30b23968ea3c772e08ef785789b0cd074bd5c87cfa13c6ef57acce3365e6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/644f63fb0958aff9283d9014f0430436da0495c31765128afbe95c1299fad24b.gz",
+      "sha256": "4b52c5543f4975a5395ebbc5187cab1fe480b5d1afc7691ce2bec33417ca9e40"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/7ff85bc3f5dfa06f0b5cf8b9cbe1d20b63dcdb4716f5c00397d910e1eb6940f2.gz",
+      "sha256": "a2784bf26024f282660534f637c007e1d4b1fd4a536939bdc1e58732d90a6326"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/82384e026c8b219bca6c4c1623e26488b0cf1592de1ecb2eaa333907ddbd0098.gz",
+      "sha256": "cd941b33d8c28f9ec0caee0bdd5081e6c83cc97467d71f31fe1caa431370f2f4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/8fdbf3babb755ba735b4f57635ca2f3f3b228a3aee51da1e97f60f7bac5d5d01.gz",
+      "sha256": "bad2d595b513e12779fb91ce3bc505b737ee6475a32d01c91f4391dfc3823974"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/920afcc6ce7326f150231a692e9a3e24bbc263135827414988701cbadb688087.gz",
+      "sha256": "4cb7022e3541f1fc341f9fb8075f77e34a126e36f047aabb079ede97eb62e7ed"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/aca79ec07e913f715606191ef3eb4956616ce41fde01764de5d487fbb6183f5f.gz",
+      "sha256": "e8263a1abfa14b8d1bfb26ed0e5f6b34b51229af6216599713b145c8a83d6301"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/b8a58a3f97c1193637ccd5ca569ee1f5fec1af33bb27156364b00ab738e08258.gz",
+      "sha256": "aad066147569b91f49f76bfaebc2560232f7558f44a5304e0c1c75d0136ae6ac"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/c2425f71b9f5f7d9fa33b8a178f7dfb1a3847539185bafd7f385f3ddd4bf11a5.gz",
+      "sha256": "e648de608d87386679fefed14ec28853a3bbcd061c15588c59527a180f4edbbd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/c58a3da5e9b93f15b438f9336adb16dfff0cacd659af634feaa029c984d0c0fc.gz",
+      "sha256": "95d536cfe2e819b75fa8e8228e6ebe5b0875df15ebe9d85fa7d4589bd2cf75ac"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/d25db993cf8694f0b998a62528f63e9e44ed02a695c4b22dc766d0ca1d1163d2.gz",
+      "sha256": "5af446e1e09ba465b716941b61b7521452b7bcc8500c0d22242bab0653ca175e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/da131345aa763696fd50ceed286e96aa203561529e455bd1b87a781fe0fc5ac6.gz",
+      "sha256": "a407fdb352f09fb1f89f435c2b8c08061027e2e52f41e8c814384ef682e8da09"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/dbc6ae72bf709789ce70c222a16772572a1d6b6d5024e8dbc7f9279fd83093f4.gz",
+      "sha256": "0af8b987aab72e279a7eb4f322ed9b48fea25dd09e85c64cfd7f5bfc7e4cb44b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/e5f3f010fc436c568a641c120dfe5adb15b01029147e8652e3149d2d81492ebe.gz",
+      "sha256": "5c1cce986d08f97c9b820deb962bd4123ea02ef63b3d4f7bb00cebb9a274ad7e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/f0c8839dcf1aae6347465ef91f0e5e2e833eea9e2ff7bf8e95c5a155fb27e0bb.gz",
+      "sha256": "fc56c6454bd87e05fa983397c141298460a068cf9c491b2ed49518f809a7b071"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/f0ea961cff8f5bdd98cc1d3e476c77cb53809f898f5b7d13bcf1a0d5d090b657.gz",
+      "sha256": "1c57176941c1db653a9aa6095bf448f313d605eec03af9825e2598e50dc892f7"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/f5a87109b19803bbe86b04b84cf9620c373f85661bb490163a6408ab19f121bb.gz",
+      "sha256": "602897a05d74e27ac293c26d00188ed89a3cb51093ad89165fba1f08a28900e9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/_objects/fac076f960b24ff375d366983079ec2554f4564a02ac66decafce4cb1b0849da.gz",
+      "sha256": "355f52e3ebf6b3a2ffd8947442af617c451e09a2bc0f856e847808f08f882cfc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/archive-manifest.json",
+      "sha256": "9db69c16bbc071c3e895cf34b15817082e58f386abb454b2278329a9ca2f4f53"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "5d08191a1cb3a9cd91adb324b8ddf177729802bb28d345d68502aa6accf0b993"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "ef217f32a50137215df6b66c4260481d2f4801e748e97c5531a8b09911a5c054"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "sha256": "76e5224cace368cb0e76adfb8bc01bf2d525f2f0e4ac28879853f18eca41fbe6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "5a6d5992a5cb890eff27dc3cfcab7c493726c6f4d16dd1cc5544c71bd0fe4000"
+    },
+    {
+      "path": "logs/runner-cache/projective_history_local_copy_record_process_2026_09_13.txt",
+      "sha256": "d128f26ae17c7a3a5fda4e87cbd003614c012d125f3a1f9f7cfc4df3087b1964"
+    },
+    {
+      "path": "logs/runner-cache/projective_history_local_program_2026_09_13.txt",
+      "sha256": "b5c59cff1ac1159fabc50a1d8aed58262ff0ad0cf0faf5eec800323a47ec1f1a"
+    },
+    {
+      "path": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+      "sha256": "949790105dc4d6ed4c9ff0f5ca57a11f15fa095eaa2e9bc13c3fd62663d28d54"
+    },
+    {
+      "path": "scripts/projective_history_local_program_2026_09_13.py",
+      "sha256": "7c9e2fb963ceff15d60921d1f480224232c1f7ac625e2fe723270f3594f636cc"
+    }
+  ],
+  "notes": [
+    {
+      "path": "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "projective_history_fixed_first_target_local_program_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "projective_history_fixed_first_target_local_program_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/projective_history_local_program_2026_09_13.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
+        "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+        "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md"
+      ],
+      "dependency_rationale": "Current axiom memo supplies Record and lattice ontology. Selected finite-projective parent supplies the trace-history comparison and explicitly conditional global Law; preparation, program tables and routing remain supplied. No physical probability selector is inferred."
+    },
+    {
+      "path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "projective_history_local_copy_record_process_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "projective_history_local_copy_record_process_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md"
+      ],
+      "dependency_rationale": "Current axiom memo supplies Record and lattice ontology. Selected finite-projective parent supplies the trace-history comparison and explicitly conditional global Law; preparation, program tables and routing remain supplied. No physical probability selector is inferred."
+    }
+  ],
+  "correction_confirmation": "All source differences cold-read; unchanged mathematics, thresholds, execution count and caps. Archive134 decoded payloads exact, including original recovery and mutations. Two fresh primary executions and final cache binding pending.",
+  "confirmation_base": "0641ef197a36124872e898265b0d7fc16422b051",
+  "independent_control_attempts": "Initial scratch script failed to parse before computation; exact syntax-error source/stderr preserved. Corrected scratch executed once successfully; no scientific source changed.",
+  "final_verdict": "PASS WITH BOUNDED CLAIMS",
+  "executions": [
+    {
+      "runner": "scripts/projective_history_local_program_2026_09_13.py",
+      "total_pass": 107,
+      "total_fail": 0,
+      "elapsed_sec": 32.516878843307495,
+      "timeout_sec": 180,
+      "cache_sha256": "b5c59cff1ac1159fabc50a1d8aed58262ff0ad0cf0faf5eec800323a47ec1f1a"
+    },
+    {
+      "runner": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+      "total_pass": 31,
+      "total_fail": 0,
+      "elapsed_sec": 20.067681074142456,
+      "timeout_sec": 180,
+      "cache_sha256": "d128f26ae17c7a3a5fda4e87cbd003614c012d125f3a1f9f7cfc4df3087b1964"
+    }
+  ],
+  "current_main_context": {
+    "commit": "db421593400589cbc0dc5f39bbefedff8302c559",
+    "assessment": "Only reviewed8087 native growing-formation source and its historical/generated context have landed since the proposal base. Its supplied native protected current/formation model neither alters the selected trace-history parent nor supplies a missing probability selector or physical program router for8088. All inherited actual inputs match current main exactly; no changed scientific premise or scope interaction.",
+    "related_review": {
+      "path": "/private/tmp/review-drain-20260915/review-8087-final.json",
+      "sha256": "5fb913470c716b248bbbaa9646cb9238b5568c7f7cdd8e812fc0174d4bebc7d3"
+    }
+  },
+  "final_confirmation": "Both canonical captures ran once, with fresh caches. All109 staged paths and all actual runtime/parent/context/tool inputs bound. All134 archives decoded exact; complete141 original dispositions retained. Independent controls passed10/0. Prior intermediate/preexecution evidence remains immutable. No full pipeline or audit verdict generated."
+}

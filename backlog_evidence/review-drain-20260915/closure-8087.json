@@ -1,0 +1,19 @@
+{
+  "pr": 8087,
+  "original_head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+  "branch": "physics-loop/native-growing-formation-current-20260913",
+  "landing": "db421593400589cbc0dc5f39bbefedff8302c559",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/native-growing-formation-current-20260913",
+    "headRefOid": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8087,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8087"
+  }
+}

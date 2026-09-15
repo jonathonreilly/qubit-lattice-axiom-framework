@@ -1,0 +1,360 @@
+tor-gap-20260908/originals/native-sixth-spectrum-cold-review/check.py
+from pathlib import Path
+import json,math,hashlib
+B=Path(__file__).parent;n=0
+def ck(x):
+ global n;n+=1
+ if not x:raise ValueError(n)
+# Independent Clifford bit action, four complex matter modes, active/spectator chirality.
+def maj(s,j):
+ mode=j//2;sgn=(-1)**((s&((1<<mode)-1)).bit_count())
+ return s^(1<<mode),sgn*(1 if j%2==0 else (1j if not(s>>mode&1) else -1j))
+def word(s,js):
+ a=1
+ for j in reversed(js):s,b=maj(s,j);a*=b
+ return s,a
+for s in range(16):
+ out,a=word(s,[0,2,4,6,1,3,5,7]);ck(out==s and a==(-1)**s.bit_count())
+# 64 matter modes: reorder sign and chirality factors.
+ck((-1)**(64*63//2)==1);ck((-1j)**64==1);ck((-1j)**32==1)
+levels=[dict(n=k,energy_in_omega=k-16,multiplicity=math.comb(32,k)) for k in range(0,33,2)]
+ck(sum(z['multiplicity'] for z in levels)==2**31);ck(levels[0]['multiplicity']==1);ck(levels[1]['energy_in_omega']-levels[0]['energy_in_omega']==2)
+ck((-1)**32==1)
+# Two-Majorana block: coefficient b i beta0 beta1 has energies +/-b,
+# standard K01=2b therefore frequency2|b|; K_eff=-cK0.
+for c in (-3,-1,1,4):
+ b=c;ck(2*abs(b)==abs(2*b));ck((-c)*(-2)==2*c)
+files=[B.parent/'native-sixth-spectator-spectrum/DERIVATION.md',B.parent/'native-sixth-spectator-spectrum/EXACT_LEVELS.json',B.parent/'native-sixth-magnetic-symmetry-root/DERIVATION.md',B.parent/'native-sixth-full-operator-support-root/DERIVATION.md']
+(B/'READ_HASHES.json').write_text(json.dumps({str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files},indent=2)+'\n')
+(B/'RESULT.json').write_text(json.dumps(dict(checks=n,levels=levels,scope='finite Clifford parity and exact combinatorics; no coefficient evaluation'),indent=2)+'\n');print(n)
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/canonical_chain_mock.py
+from fractions import Fraction as F
+import json
+# Laurent-series Riesz extraction for a seven-state chain. Endpoint P has
+# dimension2, mirror symmetry makes all lower endpoint corrections scalar.
+# This is independent of DP; every entry and coefficient is exact rational.
+d=[0,1,2,3,2,1,0];N=7;order=6;lo=-7;hi=6
+V=[[F(abs(i-j)==1) for j in range(N)] for i in range(N)]
+R=[]
+for x in d:
+ R.append({-1:F(1)} if x==0 else {k:-F(1,x**(k+1)) for k in range(hi+1)})
+# P entries of (z-H0)^-1[V(z-H0)^-1]^n, polynomial dictionary per entry.
+A=[[[{} for j in range(N)] for i in range(N)]]
+for i in range(N):A[0][i][i]=R[i]
+for n in range(1,order+1):
+ prev=A[-1];cur=[[{} for j in range(N)] for i in range(N)]
+ for i in range(N):
+  for j in range(N):
+   out=cur[i][j]
+   for k in range(N):
+    if V[k][j]:
+     for a,x in prev[i][k].items():
+      for b,y in R[j].items():
+       z=a+b
+       if lo<=z<=hi:out[z]=out.get(z,0)+x*y
+ A.append(cur)
+# C=P H Pi P = contour z resolvent, coefficient z^-2.
+# A=P Pi P = coefficient z^-1; all C<6 offdiagonals vanish,
+# so normalized sixth offdiagonal equals C6 directly.
+c=[a[0][6].get(-2,F(0)) for a in A]
+if any(c[:6]) or c[6]!=-F(1,12):raise RuntimeError(c)
+for n,a in enumerate(A):
+ if a[0][0].get(-1,0)!=a[6][6].get(-1,0):raise RuntimeError('mirror overlap')
+ if a[0][0].get(-2,0)!=a[6][6].get(-2,0):raise RuntimeError('mirror energy')
+print(json.dumps({'PASS':True,'canonical_sixth_offdiagonal':str(c[6]),'raw_chain':str(F(-1,1*2*3*2*1)),'scope':'Exact Riesz canonical-normalization mock, not native coefficient'},indent=2))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/dp_complete_mock.py
+from pathlib import Path
+from fractions import Fraction as F
+from itertools import combinations,permutations
+import json,signal,time
+signal.alarm(180);start=time.monotonic();p=Path(__file__).resolve().parent;r=json.loads((p/'PREFIXES.json').read_text());edges=r['edge_order'];cut=r['boundary_edges'];checks=0
+def need(c,s):
+ global checks
+ checks+=1
+ if not c:raise RuntimeError(s)
+def R(mask,x):
+ a=F(3+mask%3);b=F(5+mask.bit_count()%3);det=a*b-1
+ return ((b*x[0]-x[1])/det,(-x[0]+a*x[1])/det)
+def plus(x,y):return (x[0]+y[0],x[1]+y[1])
+counts=[];mock=None
+for row in r['rows']:
+ bridge=row['bridge_edge'];allowed=sorted(cut+[bridge]);terms=[(a,b) for a,b in combinations(allowed,2) if set(edges[a])&set(edges[b])]
+ keys={(int(x['boundary_used_mask']),x['bridge_count']):x for x in row['prefixes']};zero=(0,0);target=(sum(1<<e for e in cut),2)
+ cnt={zero:1};val={zero:(F(1),F(2))}
+ for k in range(6):
+  nc={};nv={}
+  for key,n in cnt.items():
+   used,c=key
+   for a,b in terms:
+    bd=[e for e in (a,b) if e!=bridge]
+    if any(used>>e&1 for e in bd):continue
+    q=(used|sum(1<<e for e in bd),c+((a==bridge)+(b==bridge)))
+    if q not in keys:continue
+    nc[q]=nc.get(q,0)+n
+    if bridge==r['rows'][1]['bridge_edge']:nv[q]=plus(nv.get(q,(0,0)),tuple(x/2 for x in val[key]))
+  cnt=nc
+  if bridge==r['rows'][1]['bridge_edge']:
+   val={q:(x if k==5 else R(int(keys[q]['full_toggle_mask']),x)) for q,x in nv.items()}
+ need(cnt[target]==row['unordered_pair_sets']*720,'DP full word count');counts.append(cnt[target])
+ if bridge==r['rows'][1]['bridge_edge']:
+  # Independently enumerate distinct occurrence matchings and all permutations.
+  def pairings(es):
+   if not es:return {()}
+   a=es[0];out=set()
+   for j,b in enumerate(es[1:],1):
+    if a==b or not(set(edges[a])&set(edges[b])):continue
+    for q in pairings(es[1:j]+es[j+1:]):out.add(tuple(sorted(q+(tuple(sorted((a,b))),))))
+   return out
+  total=(0,0);wrong=(0,0)
+  for pairset in pairings(sorted(cut+[bridge,bridge])):
+   for order in permutations(pairset):
+    x=(F(1),F(2));y=x;mask=0
+    for j,(a,b) in enumerate(order):
+     prev=mask;mask^=(1<<a)^(1<<b);x=tuple(v/2 for v in x);y=tuple(v/2 for v in y)
+     if j<5:x=R(mask,x);y=R(prev,y)
+    total=plus(total,x);wrong=plus(wrong,y)
+  need(val[target]==total,'complete noncommuting resolvent mock');need(wrong!=total,'wrong prefix-resolvent adverse')
+  mock={'bridge':bridge,'result':list(map(str,total)),'wrong_prefix_differs':True}
+print(json.dumps({'checks':checks,'PASS':True,'word_counts':counts,'mock':mock,'seconds':time.monotonic()-start,'scope':'Exact two-dimensional mock and full incidence-DP count; no physical coefficient'},indent=2))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/launch_complete.py
+import time,os,sys,json,subprocess,hashlib
+from pathlib import Path
+p=Path(__file__).resolve().parent;out=p/'COEFFICIENT_OUTPUT'
+if out.exists():raise RuntimeError('one attempt only')
+out.mkdir();start=time.monotonic();charged=5.0;rows=[];env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',PYTHONDONTWRITEBYTECODE='1')
+for bridge in (0,3,9,12,36,96):
+ if 600-charged-(time.monotonic()-start)<180:raise RuntimeError('insufficient reserved cell budget')
+ t=time.monotonic()
+ try:r=subprocess.run([sys.executable,str(p/'run_bridge.py'),'--bridge',str(bridge),'--output',str(out/('bridge_'+str(bridge)+'.json'))],capture_output=True,text=True,timeout=180,env=env)
+ except subprocess.TimeoutExpired as e:
+  (out/'FAILURE.json').write_text(json.dumps({'bridge':bridge,'timeout':180,'elapsed':time.monotonic()-start,'prior_charge':charged}));raise
+ (out/('bridge_'+str(bridge)+'.stdout')).write_text(r.stdout);(out/('bridge_'+str(bridge)+'.stderr')).write_text(r.stderr);rows.append({'bridge':bridge,'wall_seconds':time.monotonic()-t,'returncode':r.returncode});(out/'LEDGER.json').write_text(json.dumps({'rows':rows,'prior_charge':charged,'total_seconds':charged+time.monotonic()-start},indent=2))
+ if r.returncode:raise RuntimeError('failed bridge '+str(bridge))
+# No fresh physics execution here. Sum certified interval endpoints outward.
+from math import nextafter,inf
+lower=upper=0.0
+for row in rows:
+ f=out/('bridge_'+str(row['bridge'])+'.json');z=json.loads(f.read_text());lower=nextafter(lower+z['interval'][0],-inf);upper=nextafter(upper+z['interval'][1],inf);row['sha256']=hashlib.sha256(f.read_bytes()).hexdigest()
+(out/'SUMMARY.json').write_text(json.dumps({'interval':[lower,upper],'excludes_zero':lower>0 or upper<0,'rows':rows,'seconds_including_prior_charge':charged+time.monotonic()-start,'scope':'Adjacent ordered spectator bilinear only, t=1; IEEE754 certificate assumptions, no full leading operator claim'},indent=2)+'\n')
+print((out/'SUMMARY.json').read_text())
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/residual_controls.py
+from fractions import Fraction as F
+import json,hashlib
+from pathlib import Path
+import solver_core as c
+A=c.np.array([[2.,1.],[1.,3.]]);b=c.np.array([.5,-.25]);target=(F(-7,20),F(1,5));rows=[]
+for x in (c.np.zeros(2),c.np.array([-.35,.2]),c.np.array([10.,-7.])):
+ e,r=c.residual_certificate(A,0.,x,b,0.,1.)
+ sq=sum((F.from_float(float(a))-z)**2 for a,z in zip(x,target))
+ if sq>F.from_float(e)**2:raise RuntimeError('bound misses exact solution')
+ rows.append({'x':x.tolist(),'error_bound':e,'exact_squared_error':str(sq)})
+print(json.dumps({'PASS':True,'rows':rows,'scope':'Exact rational a posteriori controls, including deliberately inaccurate solves','solver_sha256':hashlib.sha256(Path(c.__file__).read_bytes()).hexdigest()},indent=2))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/run_bridge.py
+import time,signal
+START=time.monotonic();signal.alarm(180)
+import os,sys,json,hashlib,argparse,resource
+from pathlib import Path
+p=Path(__file__).resolve().parent
+for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS'):
+ if os.environ.get(key)!='1':raise RuntimeError('one thread required: '+key)
+a=argparse.ArgumentParser();a.add_argument('--bridge',type=int,required=True,choices=(0,3,9,12,36,96));a.add_argument('--output',type=Path,required=True);args=a.parse_args()
+if args.output.exists():raise RuntimeError('refuse output overwrite')
+f=json.loads((p/'COMPUTATION_FREEZE.json').read_text())
+for name,sha in f['inputs'].items():
+ if hashlib.sha256((p/name).read_bytes()).hexdigest()!=sha:raise RuntimeError('changed source '+name)
+import solver_core as c
+raw=json.loads((p/'PREFIXES.json').read_text());model=c.Model(raw);row=next(x for x in raw['rows'] if x['bridge_edge']==args.bridge);result=c.solve_bridge(model,row)
+seconds=time.monotonic()-START;rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024)
+if seconds>=180 or not 0<rss<384:raise RuntimeError('resource cap')
+result.update(seconds=seconds,rss_mib=rss,input_hashes=f['inputs'],numpy_version=c.np.__version__,numpy_init_sha256=hashlib.sha256(Path(c.np.__file__).read_bytes()).hexdigest(),python_executable=sys.executable,freeze_sha256=hashlib.sha256((p/'COMPUTATION_FREEZE.json').read_bytes()).hexdigest())
+args.output.parent.mkdir(parents=True,exist_ok=True)
+with args.output.open('x') as q:json.dump(result,q,indent=2,allow_nan=False);q.write('\n')
+print(json.dumps({'bridge':args.bridge,'coefficient':result['coefficient'],'error':result['absolute_error_bound'],'interval':result['interval'],'seconds':seconds,'rss_mib':rss,'output_sha256':hashlib.sha256(args.output.read_bytes()).hexdigest()},allow_nan=False))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/solver_controls.py
+from pathlib import Path
+from fractions import Fraction as F
+import json,signal,time,hashlib
+import solver_core as c
+signal.alarm(180);start=time.monotonic();p=Path(__file__).resolve().parent;checks=0
+def need(v,s):
+ global checks
+ checks+=1
+ if not v:raise RuntimeError(s)
+for n in range(-10,11):
+ for den in (F(1),F(2),F(5,12),F(24),F(1728,5)):
+  z,e=c.algebraic(n,den);lo=F.from_float(z)-F.from_float(e);hi=F.from_float(z)+F.from_float(e)
+  if n>=0:need(hi>=0 and hi*hi*den>=n*n and (lo<=0 or lo*lo*den<=n*n),'exact sqrt enclosure')
+  else:need(lo<=0 and lo*lo*den>=n*n and (hi>=0 or hi*hi*den<=n*n),'negative exact enclosure')
+raw=json.loads((p/'PREFIXES.json').read_text());m=c.Model(raw);need(m.norms==[F(x) for x in json.loads((p/'FRAME_RESULT.json').read_text())['norms']],'exact frame predecessor')
+A,err=m.matrix(0);expected=c.np.diag([m.omega*int(b).bit_count() for b in m.states]);need(c.np.max(c.np.sum(abs(A-expected),axis=1))<err,'base model with bound')
+# Full literal JW verification of all100 basic cross-Majorana generators.
+def maj(b,i,kind):
+ s=(-1)**((b&((1<<i)-1)).bit_count())
+ if kind:s*=1j*(1-2*((b>>i)&1))
+ return b^(1<<i),s
+idx={int(b):i for i,b in enumerate(m.states)}
+for i in range(10):
+ for j in range(10):
+  M=c.np.zeros((10,10));M[i,j]=2;H,_=m.fock(M)
+  for col,b in enumerate(m.states):
+   q,z=maj(int(b),j,1);q,y=maj(q,i,0);value=1j*y*z
+   need(H[idx[q],col]==value and c.np.count_nonzero(H[:,col])==1,'all literal Clifford columns')
+# Existing independent exact inverse-trace fixtures only; no all-prefix scan.
+a=Path('/private/tmp/toe-24h-probes-20260908/native-sixth-spectator-gap-certificates/RESULT.json');r=json.loads(a.read_text())
+for x in r['rows']:
+ mask=int(x['mask_hex'],16);g=m.gap(mask)
+ if 'gap_lower' in x:need(F(m.gap_records[str(mask)]['gap'])==F(x['gap_lower']),'independent rational certificate equality')
+ need(F.from_float(g)<=F(m.gap_records[str(mask)]['gap']),'downward conversion')
+# Prefix metadata closure and all word support masks.
+for row in raw['rows']:
+ bridge=row['bridge_edge']
+ for x in row['prefixes']:
+  bd=int(x['boundary_used_mask']);bc=x['bridge_count'];mask=bd^((1<<bridge) if bc%2 else 0)
+  need(mask==int(x['full_toggle_mask']) and bd.bit_count()+bc==2*x['k'],'prefix metadata')
+print(json.dumps({'checks':checks,'PASS':True,'seconds':time.monotonic()-start,'scope':'deterministic coefficient enclosures, full JW matrix columns and five existing exact gap fixtures; no coefficient solve','solver_sha256':hashlib.sha256((p/'solver_core.py').read_bytes()).hexdigest()},indent=2))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/solver_core.py
+"""Unlaunched dimensionless t=1 coefficient solver with outward error ledger."""
+from fractions import Fraction as F
+from math import isqrt,nextafter,inf,sqrt,isfinite
+from itertools import combinations
+import numpy as np
+EPS=2.0**-53
+TINY=float.fromhex('0x0.0000000000001p-1022')
+def up(x):
+ if not isfinite(x) or x<0:raise ArithmeticError('nonfinite/negative upper bound')
+ return nextafter(x,inf)
+def plus(a,b):return up(a+b)
+def times(a,b):return up(a*b)
+def divide(a,b):
+ if b<=0:raise ArithmeticError('nonpositive denominator')
+ return up(a/b)
+def sumup(xs):
+ z=0.0
+ for x in xs:z=plus(z,float(x))
+ return z
+def normup(x):return up(sqrt(sumup(times(abs(float(z)),abs(float(z))) for z in x)))
+def gamma(n):return up(float(F(n,2**53-n)))
+def fraction_up(x):return up(float(x))
+def fraction_down(x):
+ y=nextafter(float(x),-inf)
+ if not y>0:raise ArithmeticError('nonpositive lower')
+ return y
+def algebraic(num,den):
+ """Enclose rational num/sqrt(den) by exact integer square-root brackets."""
+ num=F(num);den=F(den)
+ if not num:return 0.0,0.0
+ if den<=0:raise ArithmeticError('sqrt domain')
+ scale=10**80;k=isqrt(den.numerator*scale**2//den.denominator)
+ if not k:raise ArithmeticError('sqrt bracket underflow')
+ lo=num/F(k+1,scale);hi=num/F(k,scale)
+ if lo>hi:lo,hi=hi,lo
+ z=float((lo+hi)/2);fz=F.from_float(z)
+ return z,fraction_up(max(abs(fz-lo),abs(fz-hi)))
+class Model:
+ def __init__(self,raw):
+  self.raw=raw;self.edges=[tuple(x) for x in raw['edge_order']];self.vs=[tuple(x) for x in raw['coordinates']];self.N=64
+  ix={v:i for i,v in enumerate(self.vs)};K=[[0]*64 for _ in range(64)];generated=[]
+  for v in self.vs:
+   for a in range(3):
+    w=list(v);w[a]=(w[a]+1)%4;i,j=sorted((ix[v],ix[tuple(w)]));generated.append((i,j));K[i][j]=-2*(-1)**sum(v[:a]);K[j][i]=-K[i][j]
+  if generated!=self.edges:raise ValueError('edge dictionary')
+  if any(sum(K[i][k]*K[k][j] for k in range(64))!=-24*(i==j) for i in range(64) for j in range(64)):raise ValueError('flat base')
+  self.K=K;self.inc=[sum(1<<e for e,ab in enumerate(self.edges) if v in ab) for v in range(64)]
+  S=sorted({v for e in raw['boundary_edges'] for v in self.edges[e]});black=[i for i,v in enumerate(self.vs) if sum(v)%2==0];self.black=black;self.white=[i for i in range(64) if i not in black]
+  basis=[];norms=[]
+  for s in S:
+   b=[F(i==s) if s in black else F(K[i][s]) for i in range(64)]
+   if s not in black:b=[x if i in black else F(0) for i,x in enumerate(b)]
+   for c,d in zip(basis,norms):
+    q=sum(x*y for x,y in zip(b,c))/d;b=[x-q*y for x,y in zip(b,c)]
+   d=sum(x*x for x in b)
+   if d:basis.append(b);norms.append(d)
+  if len(basis)!=10:raise ValueError('rank10')
+  self.basis=basis;self.norms=norms;KB=[[sum(K[i][j]*b[j] for j in range(64)) for i in range(64)] for b in basis]
+  self.omega,self.omega_error=algebraic(24,24)
+  self.base=np.eye(10)*self.omega;self.base_error=times(5,self.omega_error)
+  support=set(raw['boundary_edges'])|{r['bridge_edge'] for r in raw['rows']};self.delta={}
+  for e in sorted(support):
+   v,w=self.edges[e];M=np.zeros((10,10));err=[]
+   for i in range(10):
+    for j in range(10):
+     num=2*K[v][w]*(basis[i][v]*KB[j][w]-basis[i][w]*KB[j][v]);z,d=algebraic(num,24*norms[i]*norms[j]);M[i,j]=z;err.append(d)
+   self.delta[e]=(M,times(.5,sumup(err)),sumup(abs(float(x)) for x in M.flat))
+  self.states=np.array([b for b in range(1024) if b.bit_count()%2==0],dtype=np.int64);index={int(b):i for i,b in enumerate(self.states)}
+  self.z=np.array([[1-2*((int(b)>>i)&1) for i in range(10)] for b in self.states]);self.pairs=[]
+  for i,j in combinations(range(10),2):
+   targets=np.array([index[int(b)^(1<<i)^(1<<j)] for b in self.states]);sg=np.array([(-1)**((int(b)&((1<<i)-1)).bit_count()+(int(b)&((1<<j)-1)).bit_count()) for b in self.states]);self.pairs.append((i,j,targets,sg))
+  v,w=raw['centers']
+  if v not in black or w in black or v>=w:raise ValueError('closing convention')
+  M=np.zeros((10,10));errs=[]
+  for i in range(10):
+   for j in range(10):
+    z,d=algebraic(-2*basis[i][v]*KB[j][w],24*norms[i]*norms[j]);M[i,j]=z;errs.append(d)
+  H,rounding=self.fock(M);self.close=H[0].copy();self.close_error=plus(times(.5,sumup(errs)),rounding)
+  self.gaps={};self.gap_records={}
+ def fock(self,M):
+  H=np.zeros((512,512));diag=np.sum(-.5*self.z*np.diag(M)[None,:],axis=1);np.fill_diagonal(H,diag)
+  rows=np.arange(512)
+  for i,j,targets,sg in self.pairs:H[targets,rows]=.5*sg*(M[j,i]*self.z[:,i]-M[i,j]*self.z[:,j])
+  diagonal_abs=times(.5,sumup(abs(float(M[i,i])) for i in range(10)));off_abs=times(.5,sumup(abs(float(M[i,j])) for i in range(10) for j in range(10) if i!=j))
+  error=plus(times(gamma(20),diagonal_abs),times(gamma(3),off_abs));error=plus(error,1e-300)
+  return H,error
+ def matrix(self,mask):
+  M=self.base.copy();err=self.base_error;ab=sumup(abs(float(x)) for x in M.flat);n=0
+  for e,(D,de,da) in self.delta.items():
+   if mask>>e&1:M=M+D;err=plus(err,de);ab=plus(ab,da);n+=1
+  err=plus(err,times(.5*gamma(n+1),ab));H,assembly=self.fock(M);offset=5*self.omega;diagmax=max(abs(float(H[i,i])) for i in range(512));H[np.diag_indices(512)]+=offset
+  shift_error=plus(times(5,self.omega_error),times(gamma(3),plus(diagmax,abs(offset))))
+  return H,plus(plus(err,assembly),shift_error)
+ def gap(self,mask):
+  if mask in self.gaps:return self.gaps[mask]
+  ell=F(2449489742783178,10**15)
+  if mask in self.inc:g=2*ell;record={'kind':'odd singleton parity','gap':str(g)}
+  else:
+   if not mask:raise ValueError('zero proper prefix')
+   bi={v:i for i,v in enumerate(self.black)};wi={v:i for i,v in enumerate(self.white)};B=np.zeros((32,32),dtype=np.int64)
+   for e,(v,w) in enumerate(self.edges):
+    k=self.K[v][w]//2*(-1 if mask>>e&1 else 1)
+    if v in bi:B[bi[v],wi[w]]=k
+    else:B[bi[w],wi[v]]=-k
+   E=B@B.T-6*np.eye(32,dtype=np.int64)
+   if int(np.max(abs(E)))>6 or 192*30**9>=2**63:raise ValueError('integer bound')
+   P=np.eye(32,dtype=np.int64);tr=[]
+   for _ in range(10):P=P@E;tr.append(int(np.trace(P)))
+   c=[1]
+   for k in range(1,11):
+    num=sum((-1)**(j-1)*c[k-j]*tr[j-1] for j in range(1,k+1))
+    if num%k:raise ValueError('Newton integrality')
+    c.append(num//k)
+   s=F(49,4);q=sum(F(c[k])*s**(10-k) for k in range(11));qp=sum(F(c[k])*(10-k)*s**(9-k) for k in range(10))
+   if q<=0:raise ValueError('positive determinant')
+   ti=22/s+qp/q;upper=F(196,5)+F(5,2)*(32-F(25,4)*ti)
+   g=32*ell-upper;kind='rational Newton trace'
+   if g<=0:g=F(1,432);kind='prospective global fallback'
+   record={'kind':kind,'gap':str(g),'polynomial':c}
+  self.gaps[mask]=fraction_down(g);self.gap_records[str(mask)]=record;return self.gaps[mask]
+def residual_certificate(A,matrix_error,x,b,incoming_error,gap):
+ xn=normup(x);res=A@x+b;absolute=np.abs(A)@np.abs(x)
+ dotbound=plus(divide(normup(absolute),nextafter(1-gamma(512),-inf)),normup(b))
+ residual=plus(normup(res),times(gamma(514),dotbound));residual=plus(residual,times(matrix_error,xn));residual=plus(residual,1e-300)
+ return divide(plus(incoming_error,residual),gap),residual
+def solve_bridge(model,row):
+ bridge=row['bridge_edge'];boundary=model.raw['boundary_edges'];terms=[(a,b) for a,b in combinations(sorted(boundary+[bridge]),2) if set(model.edges[a])&set(model.edges[b])]
+ keys={(int(x['boundary_used_mask']),x['bridge_count']):x for x in row['prefixes']};target=(sum(1<<e for e in boundary),2);vac=np.zeros(512);vac[0]=1
+ layer={(0,0):(vac,0.0,1.0,1)};ledger=[]
+ for k in range(1,7):
+  incoming={}
+  for key,data in layer.items():
+   used,c=key
+   for a,b in terms:
+    bd=[e for e in (a,b) if e!=bridge]
+    if any(used>>e&1 for e in bd):continue
+    q=(used|sum(1<<e for e in bd),c+int(a==bridge)+int(b==bridge))
+    if q in keys:

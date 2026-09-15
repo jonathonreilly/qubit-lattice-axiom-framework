@@ -1,0 +1,26 @@
+{
+  "reviewer": "/root/review_8012",
+  "scope": "Necessary transitive foundational context of supplied dictionary/instrument proofs; exact prior reads remain applicable. These are context identities, not numerical payloads. No source/execution restamp.",
+  "inputs": {
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+      "role": "Exact same-session previously read foundational/methodological context; no additional mathematical premise or execution inferred."
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "Exact same-session previously read foundational/methodological context; no additional mathematical premise or execution inferred."
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "Exact same-session previously read foundational/methodological context; no additional mathematical premise or execution inferred."
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "Exact same-session previously read foundational/methodological context; no additional mathematical premise or execution inferred."
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "role": "Exact same-session previously read foundational/methodological context; no additional mathematical premise or execution inferred."
+    }
+  }
+}

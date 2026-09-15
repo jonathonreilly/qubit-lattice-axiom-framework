@@ -1,0 +1,44 @@
+{
+  "scope": "Independent complete incident-multiset matching and prefix/cut reconstruction; no candidate vectors or author code imported. Rational analytical constants checked separately.",
+  "rows": [
+    {
+      "bridge": 0,
+      "unordered_pair_sets": 225,
+      "all_keys": 1024,
+      "proper_singleton_returns": 2
+    },
+    {
+      "bridge": 3,
+      "unordered_pair_sets": 9,
+      "all_keys": 256,
+      "proper_singleton_returns": 0
+    },
+    {
+      "bridge": 9,
+      "unordered_pair_sets": 9,
+      "all_keys": 256,
+      "proper_singleton_returns": 0
+    },
+    {
+      "bridge": 12,
+      "unordered_pair_sets": 9,
+      "all_keys": 256,
+      "proper_singleton_returns": 0
+    },
+    {
+      "bridge": 36,
+      "unordered_pair_sets": 9,
+      "all_keys": 256,
+      "proper_singleton_returns": 0
+    },
+    {
+      "bridge": 96,
+      "unordered_pair_sets": 9,
+      "all_keys": 256,
+      "proper_singleton_returns": 0
+    }
+  ],
+  "proper_states": 2292,
+  "words": 194400,
+  "seconds": 0.21613362501375377
+}

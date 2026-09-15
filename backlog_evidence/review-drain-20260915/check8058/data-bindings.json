@@ -1,0 +1,68 @@
+{
+  "8052": {
+    "archive_paths": 68,
+    "manifest_sha256": "bf5aa407997ccb5740d637152c1ecac9fa79327c222ad95e56307df0f0c674fc",
+    "mode_blob_and_all_decoded_bytes_match": true
+  },
+  "8053": {
+    "archive_paths": 234,
+    "manifest_sha256": "ae7dd95f837a16f45116e8b38dd5124957c7cd2d24a81f5860e490d2eecfef51",
+    "mode_blob_and_all_decoded_bytes_match": true
+  },
+  "8058": {
+    "archive_paths": 93,
+    "manifest_sha256": "f1edb1604a31782a58bc6917b983b174f827cc2f41c168d5fdbfa13db3d790dd",
+    "mode_blob_and_all_decoded_bytes_match": true
+  },
+  "candidate_arrays": {
+    "scope": "Actual complete strict decode and all prefix word-count bindings, not a coefficient rerun; canonical decoder imported and source read, independent support control establishes prefix completeness",
+    "rows": [
+      {
+        "bridge": 0,
+        "candidate_rows": 1024,
+        "finite_binary64_values": 524288,
+        "sha256": "ea0b5593de5f738f1430e550ffc805c942b59478c8b5725aa08278cd1277008b"
+      },
+      {
+        "bridge": 3,
+        "candidate_rows": 256,
+        "finite_binary64_values": 131072,
+        "sha256": "fe3ab4ce263095f8fccf57987246a3e3a9f7cb638a20fbc49b530f8f6a030230"
+      },
+      {
+        "bridge": 9,
+        "candidate_rows": 256,
+        "finite_binary64_values": 131072,
+        "sha256": "7db1f1a69c83847c0cb20f145b532435750f3b073095d09bad3ead4dd579e792"
+      },
+      {
+        "bridge": 12,
+        "candidate_rows": 256,
+        "finite_binary64_values": 131072,
+        "sha256": "cff2680feb07ee64e7d064b8e1af33ff19ded446ea5754ee6fee51c9a4675a28"
+      },
+      {
+        "bridge": 36,
+        "candidate_rows": 256,
+        "finite_binary64_values": 131072,
+        "sha256": "352ee562d54521edbd9aa8bc27d3ae34720fc661ae7802edc733fe6da9e07bd6"
+      },
+      {
+        "bridge": 96,
+        "candidate_rows": 256,
+        "finite_binary64_values": 131072,
+        "sha256": "cae0e071253c5edf04c176068c9e53028d89af63e65554e256f9ba1f8ef223b7"
+      }
+    ]
+  },
+  "third_vertex_data": {
+    "exact_rational_entries": 960,
+    "saved_residual_vectors": 30,
+    "pin_membership": {
+      "RESULT.json": "66fe5f59eb4ba9c1382966d3d3f829f9eed0fc4f4860c607eea41c87e70d87b2",
+      "SOLVE_VECTORS.json": "13aadfc2e7940e0bb635868f0309a83252f4a24be66e6060bbff4024636e41e9"
+    },
+    "recorded_weight": "99225/4096",
+    "scope": "parsed all saved exact vectors and result; final live residual replay remains pending"
+  }
+}

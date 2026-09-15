@@ -1,0 +1,1 @@
+First final-binding comparison stopped on expected derivation_sha256 change from note-link packaging. No report/record was written and no science rerun occurred. Added explicit metadata exclusion; source/input hashes independently checked.

@@ -1,0 +1,13 @@
+{
+  "head": "95896d0c781dcdf19f4ec381604dad29dec131c1",
+  "paths": {
+    "docs/audit/scripts/__pycache__/build_citation_graph.cpython-312.pyc": "07aaa8e59d29245d807b930f0cb8f9c51e6645fd6fa1b7ac6ad28f5f74349799",
+    "docs/audit/scripts/__pycache__/ledger_io.cpython-312.pyc": "f63ee51ee304ae44774a912f89f5729d022a3e40e728ee6ceb168c5e8a5deb41",
+    "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-312.pyc": "2cc1b23ea78bb52431f64e30bc8593499cd2e264dbe88fddc56a20450d9b71fe",
+    "scripts/__pycache__/audit_packet_script_deps.cpython-312.pyc": "ed3907762d7b15cd6592eaabf248ceb77a02faedb6bdf78f2bce5a28627228fa",
+    "scripts/__pycache__/runner_cache.cpython-312.pyc": "75a88869fc99116cf45a598b9ae1e23038b2b5762b4c85abee89e567d86e47c7"
+  },
+  "archive": "8058-pool-ignored-bytecode-recovery.tar.gz",
+  "archive_sha256": "5962403c596efdebccded8d5c93282ce9250c8fcf9ac102ddf3229af016f0824",
+  "boundary": "Exact ignored generated Python bytecode preserved and verified before removing only these five files; no source or evidence removed."
+}

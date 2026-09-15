@@ -1,0 +1,158 @@
+ offdiagonal block2B, so positive active frequencies are2sigma(B). Its ground energy is -sum sigma=-Tr sqrt(BB^T), with32 modes and base E0=-32sqrt6 at|t|1. Thus the certificate includes the unaffected vacuum complement automatically. It is not the unshifted ground energy of only ten frame modes. Canonical signs in gram match row black/column white of K/2, including seam orientation.
+
+For x>=0,c>0, y1=(c+x/c)/2>0 and y2=(y1+x/y1)/2 majorizes sqrt(x), includingzero. Algebra gives y2=(x+c²)/(4c)+c(1-c²/(x+c²)); functional calculus and trace give precisely the displayed U2 formula. A+c²I is strictly positive, so its no-pivot exact elimination has positive Schur pivots. The rational lower ell satisfies ell²<6 and ell>0. Therefore32ell-U2 is a valid lower bound on E_ground(F)-E0; whenever positive it bounds every full active energy, hence the fixed-parity inverse denominator as well. Negative output is inconclusive. The separate star-return parity argument remains necessary: gauge-equivalent active vacuum has opposite initial parity, leaving gap sqrt24;2ell is a valid conservative lower bound. The unrestricted star certificate is correctly negative and is never used as a positive gap.
+
+Independent check.py uses no author imports. It constructs the full64 canonical skew matrix, derives A from its squared black block, then evaluates Tr inverse by exact LDL and inverse-triangular row norms instead of Gauss-Jordan. One frozen prefix certificate agrees exactly; a different two-edge mask is positive; star is negative; base Gram is6I. Scalar Newton identities and inequalities are checked with rational square spectra includingzero.145 explicit predicates,0.0841s16.08MiB. This is a bounded independent route, not an all-prefix replay. All five exported rational lower bounds are positive on direct exact inspection, without treating their decimal displays as enclosures.
+
+The code's displayed improvement comparison uses float(gap), but the returned certificate itself is an exact Fraction, and the written inequality follows from that fraction; no tight decision or proof depends on rounding here. These results do not validate a DP residual, matrix metric, closing spectator sign, coefficient sum or nonzero splitting. Future solver use must bind each exact mask and classify same-orbit parity separately. No sampling, large solve or author file mutation.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-cold-review/INDEPENDENT_LIFT.md
+# Independent physical-lift derivation before root prose
+
+Use the enlarged full CAR/link dictionary, with canonical i<j bond A_ij=-i gamma_i gamma_j X_ij and Gauss (-1)^n_i product incident Z=1. A graph automorphism f is implemented by second quantization of the single-particle permutation, link-register permutation, and link Z conjugations for each edge whose canonical endpoint order reverses. This is unitary and conserves total fermion parity. It maps canonical A_ij to canonical A_f(e), while all electric Zs only permute. Hence uniform sum A and the supplied degree penalty D are invariant; Gauss operators permute.
+
+The fixed representative pi link signs are mapped to a gauge-equivalent representative. Exact signed matrix covariance K_f(i),f(j)=g_i g_j K_ij is sufficient for that return: applying the associated vertex gauge transformation to the link representative requires applying the same signs to both active and spectator Majoranas in its CAR coordinates. On the physical constrained space the gauge operation is redundant; on the representative dictionary it implements precisely this coordinate identification. Omitting its action on spectator Majoranas would be incorrect.
+
+The resulting real orthogonal signed permutation O preserves K0. Since K0 is full rank, it preserves its complex structure J and lies in a real representation of U(32); therefore det O=+1. Thus its induced action preserves the active and spectator parity operators separately. The unique active vacuum is preserved up to phase. There is no additional conjugation/antiunitary in this argument. Second quantization and link Z are ordinary unitary operations, even when the site permutation reverses a spatial axis.
+
+The isolated P, perturbed Riesz projection, and canonical positive-overlap polar isometry intertwine these unitaries. Therefore every canonical coefficient is invariant under the signed action on spectator bilinears. Fixed spectator parity does not invalidate coefficient comparison: independent bilinears remain linearly independent for64 spectator Majoranas, as proved by Clifford trace in the previous support review.
+
+My separate signed union-find code constructs the eight geometric generators, solves their gauge signs by union-find constraints, and imposes all antisymmetric pair constraints. It does not import the author checker or read its orbit values. It returns one allowed192-pair nearest-neighbor orbit and three inconsistent-sign orbits (distance3 sizes384/256, distance5 size192). This certifies the finite constraint-space computation. Combined with same-color vanishing, the sixth bilinear is a scalar multiple of the nearest-neighbor magnetic matrix K0; the scalar is not evaluated here. This does not establish a nonzero splitting or any phase.
+
+Pending full root prose review; this independent derivation is not yet a final source-byte verdict.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-cold-review/REVIEW.md
+# Complete physical-lift and signed-orbit cold review
+
+PASS at root DERIVATION444562e2088da5f75f8513b7d6ab412f18aef62489f722fbbbba54cd890dc56f. Full final proof, checker, result and hash manifest read. Independent lift derivation was written in INDEPENDENT_LIFT.md before the final root prose arrived; the root symmetry proposal was known. No source correction required.
+
+The orientation-compensating link Z conjugations are essential and valid: they preserve D, map Gauss operators and cancel the CAR endpoint reordering sign. Returning to the fixed flux representative requires the same gauge sign on active AND spectator Majoranas. The stated K covariance gives precisely that return, including seam edges. The gauge operation is a representative identification, not a new physical coupling. Full-rank K implies the signed orthogonal symmetry preserves the complex structure and has determinant+1; its action therefore preserves the fixed spectator parity. The simple active vacuum is preserved up to phase. These observations close the physical-lift issue, rather than relying only on graph automorphism or spectral equivalence.
+
+The complete canonical polar operator inherits the exact unitary symmetry through Riesz and positive functional calculus. Fixed-parity Clifford trace independence makes bilinear coefficient comparison legitimate. The source explicitly assumes the previously reviewed scalar/bilinear and same-sublattice selection inputs; it does not derive the support claim from the orbit computation alone.
+
+Independent check.py uses signed UNION-FIND for both vertex gauges and antisymmetric pair constraints, rather than the author's breadth-first orbit propagation. It constructs its own integer K and all eight maps, reads no author orbit values, and verifies11,264 constraints. The invariant space is one-dimensional:192 nearest pairs survive; distance-three orbits of384 and256, and distance-five orbit192, are forced zero. RESULT.json preserves the separate actual output. This is a complete finite constraint certificate on L4, not a general-size assertion. K is nonzero and satisfies those constraints, so the proportionality claim follows.
+
+Conclusion: a rigorously certified adjacent coefficient now determines the full NONSCALAR sixth coefficient on this specified uniform L4 endpoint. It does not determine the scalar shift, prove that the coefficient is nonzero, certify numerical solver error, or establish dominance at nonzero penalty. The current exact support bridge does not cure any missing coefficient certification. Larger lattices, altered twists and anisotropy are outside this verdict.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-root/DERIVATION.md
+# FiniteL4 magnetic space-group reduction of the sixth operator
+
+Research proof, awaiting independent review. Inputs: supplied uniform full CAR/Z2 native dictionary, actualL4 unique minimizing flux orbit and isolated full-rank active vacuum; canonical electric correction scalar through5; sixth correction scalar plus opposite-sublattice spectator bilinears. No coefficient is evaluated here. An exact finite signed-orbit certificate below is load-bearing only on64 vertices.
+
+## Lift graph automorphisms to the full physical Hamiltonian
+
+In canonical vertex order i<j the full native hopping is -it gamma_i gamma_j X_{ij}, and D is the degree-centered square in link Z. For any cubic graph automorphism f define kappa_e=+1 if f(i)<f(j) and -1 otherwise. A unitary permutes the complex matter modes c_i to c_{f(i)}, permutes link qubits e to f(e), and conjugates each image link by Z when kappa_e=-1. Thus X_e maps to kappa_e X_{f(e)}, while Z_e merely permutes. The two orientation signs cancel in the hopping term. Uniform t sum A and uD are invariant. Matter parity and vertex Gauss operators permute, so this is a unitary on the physical even-Gauss carrier, not an arbitrary change of Hamiltonian or a symmetry only of its spectrum.
+
+The unique minimizing flux orbit must be preserved by every such symmetry. Fix the pi representative xi and its canonical skew matrix K_ij=-2xi_ij for i<j. For each selected f solve signs g_i such that
+
+K_{f(i),f(j)}=g_i g_j K_{ij}.
+
+After the unitary, the representative on image edge f(e) has sign kappa_e xi_e. The gauge transformation at image vertex f(i) with sign g_i restores xi, since g_i g_j kappa_e xi_e=xi_{f(e)}. In the fixed-representative physical Fock description the induced transformation is therefore c_i -> g_i c_{f(i)}, so both active and spectator Majoranas transform by the SAME signed permutation O. The gauge correction here is the Gauss identification between representatives; it is not a new physical perturbation. A global ambiguity g->-g has no effect on bilinears.
+
+The equation above is precisely invariance of the active quadratic form under O. Its simple active vacuum is preserved up to phase. The full physical unitary preserves total matter parity; the resulting action on the allowed spectator-parity space is well-defined. Equivalently an orthogonal O commuting with the full-rank complex structure lies in its unitary subgroup and has real determinant+1, so it does not flip active or spectator parity individually. No projection onto the wrong parity sector is introduced.
+
+## Canonical effective covariance
+
+The full unitary commutes with H(u)=H0+uD, hence with the isolated contour projector Pi(u) and its u=0 projector P. It commutes with P Pi P, its positive inverse square root and P H Pi P. Consequently the positive-overlap canonical Hamiltonian commutes with the induced spectator representation at every order. At order6 write
+
+K6=cI+sum_{i<j} b_ij (i bar_gamma_i bar_gamma_j),
+
+with real b_ij and antisymmetric extension b_ji=-b_ij. Same-sublattice entries vanish by the separately proved active-reality/Hermiticity selection rule. Covariance imposes
+
+b_{f(i),f(j)}=g_i g_j b_{ij},
+
+with the orientation sign when an image pair is re-sorted. Thus a signed pair-orbit cycle with net minus sign forces its entire orbit coefficient to zero. Distinct bilinears remain linearly independent in the fixed spectator parity space atN64, so these are genuine coefficient constraints.
+
+## Exact finite signed-orbit certificate
+
+check.py constructs the actual64x64 integer K and eight generators: three unit coordinate translations, three coordinate reflections r_a->-r_a, and adjacent coordinate swaps(0,1),(1,2). Each generator's signs are solved from the graph starting g_0=1 and checked on EVERY matrix entry. The complete generator permutations and signs are saved. All1024 opposite-sublattice unordered pairs are propagated through their exact signed orbits; any inconsistent sign cycle is recorded as a forced-zero orbit. This is a finite linear constraint calculation, not an eigensolver, sampling result or extrapolation to larger tori.
+
+5657 exact predicates give four pair orbits:
+
+-192 nearest-neighbor pairs: one free coefficient;
+-384 distance3 pairs of displacement type(2,1,0): forced zero;
+-256 distance3 pairs of type(1,1,1): forced zero;
+-192 distance5 pairs of type(2,2,1): forced zero.
+
+The invariant real antisymmetric opposite-color matrix space has dimension1. The nonzero K itself lies in that space, so b is proportional to K. Therefore a separately certified coefficient of the ordered pair(0,16) determines the entire nonscalar sixth-order operator on this finite uniformL4 endpoint, assuming the reviewed inputs and the lift above. If that coefficient vanishes, symmetry alone cannot establish a nonzero higher-order splitting. No nonzero value is assumed.
+
+This special finite symmetry result does not assert the same one-dimensional space on larger or anisotropic tori, nonuniform couplings or altered boundary sectors. It does not select the Hamiltonian, establish a nonzero-penalty phase, or prove that a formal leading coefficient dominates at a stated finite radius. The checker production remains scoped to its single adjacent coefficient until this bridge is independently reviewed.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-root/PREREGISTRATION.md
+Prospective exact finite symmetry probe: supplied uniformL4 pi endpoint, scalar-through5 and scalar+opposite-sublattice bilinear6 proof are inputs. For coordinate translations, axis permutations and reflections, solve exact vertex Z2 gauge signs mapping the canonical antisymmetric hopping matrix to itself. Determine invariant antisymmetric opposite-color pair-matrix space by signed orbit constraints. Do not infer physical effective covariance merely from a graph automorphism; separately derive lift through full CAR/Gauss dictionary and parity/canonical projector. No coefficient solve, eigenvalue fit or random control.180s384MiB; preserve failures. If invariantspace dimension1, an independently nonzero adjacent coefficient could determine full sixth bilinear under the proved lift, but that conclusion is not presupposed.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-production-root-review/REVIEW.md
+# Root complete pre-computation review and one fixed authorization
+
+Root read complete DESIGN, full frozen solver_core/run_bridge/launcher, all exact-enclosure/residual/trace controls, rational gap proof and independent cost/gap/rational-metric reviews. Root then read complete ef62 lossless-vector/runtime/external-watchdog diffs and new runtime_binding source. Independent complete a19d review plus ef62 changed-source reviewce76b446 PASS; independent262659 actual matrix/closing/residual controls support the implementation. No mathematical defect remains identified under the explicit IEEE754/BLAS residual model. A separate exact-rational residual certificate is being prepared; it is not preclaimed.
+
+Authorize exactly one complete six-bridge calculation at ef62e96fb473f7c9e3f61f511edf33c84f4fd03f8274f79696abd446b876a90d after verified remote archival. Exactly bridges0,3,9,12,36,96,2292properkeys and194400words; no selected partialsum or resampling.600s aggregate including5s prior reserve,180s384MiB/job,oneBLASthread; external shell elapsed/highwater receipts must also pass. All physical vectors including the unsolved final target are losslessly saved and hash-bound for independent replay. An interval containing zero is inconclusive, never a cancellation claim. Failure preserves the complete fixed attempt.
+
+Sign convention checked: fock(M)=i/2 sum Mij ai bj; closing matrix is i gamma0 gamma16, so minus its vacuum contraction gives coefficient of ordered i bar_gamma0 bar_gamma16. Every electric factor1/2 and five negative resolvents are present. Rank-ten trace formula includes22unaffected black modes, exact positive gaps and singleton-parity exception. Matrix/BLAS/incoming/closing errors propagate outward. Nonscalar canonical degree6 equals full irreducible chain by scalar-through5 selection, with no extra final inverse.
+
+Production itself claims only the adjacent coefficient at t=1. The separately reviewed finite magnetic-symmetry theorem may connect it to the full nonscalar sixth operator; no larger-volume phase, explicit radius or physical Hamiltonian selection is inferred. Runtime and source hashes are pinned before production. The original a19d freeze remains preserved.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-metric/DERIVATION.md
+# Rational-coordinate certification for the adjacent sixth-order DP
+
+This is a concrete alternative certification interface, not a coefficient result or authorization to scan prefixes. The supplied exact rational orthogonal black columns r_i and d_i=r_i^T r_i>0 come from the frozen frame construction. Their common span and the canonical K matrices are the earlier design inputs. We retain t=1, full vacuum complement offset and the unreduced initial-parity convention. Root requested an independent route; checker concurrently constructs an orthonormal interval implementation. No completed solver output was used here.
+
+## Remove the frame radicals by a diagonal similarity
+
+Put omega=2sqrt6, B_i=r_i/sqrt(d_i), C_i=-K0 r_i/(2sqrt6 sqrt(d_i)). For each prefix define the exact rational ten-by-ten matrix
+
+q_ij=-r_i^T K_F K0 r_j/12.
+
+Then M_ij=(B^T K_F C)_ij=sqrt6 q_ij/sqrt(d_i d_j). On occupation bits b define s_b=product_i d_i^(b_i/2), S=diag(s_b), W=S²=diag(product_i d_i^b_i). Coordinates represent physical vector S z. In the even512-dimensional block,
+
+S^-1 H_F S=sqrt6 J_F,
+
+where J is entirely rational. Its diagonal is sum_i(q_ii/d_i)(b_i-1/2). For i<j and a=b XOR2^i XOR2^j its entry is
+
+J_ab=sign(b;i,j)/2 [q_ji(1-2b_i)-q_ij(1-2b_j)] d_i^(b_i-1) d_j^(b_j-1),
+
+with sign=(-1)^(popcount(b below i)+popcount(b below j)), exactly the original Fock convention. This follows because s_b/s_a divided by sqrt(d_i d_j) equals the displayed rational powers. Hence WJ=J^T W. The similarity is not unitary in ordinary Euclidean coordinates; omitting W would invalidate residual/error norms.
+
+The reduced starting energy is -5omega=-10sqrt6. Thus H_F-E0,reduced =sqrt6 S A_F S^-1, A_F=J_F+10I rational. No exact extension larger than Q(sqrt6) is necessary, and scaling away sqrt6 makes each linear system rational. At the base q_ij=2d_i delta_ij and J has energy2(popcount(b)-5), which independently checks the vacuum offset.
+
+## Exact residual certification without exact inverses
+
+At levels k=1..5 let z_k=(sqrt6)^k S^-1 x_k, where x_k is the actual partially summed DP vector after k inverses. With electric insertion factor1/2 and R=(E0-H)^-1, the recurrence is
+
+A_s z_s = -1/2 sum_(predecessors) z_prev.
+
+The target has no final resolvent: z_target=1/2 sum z_5. All exact target coordinates are rational. Approximate candidates can be obtained by any floating solver, then converted to exact dyadic rationals; correctness does not depend on that solver or its frame being accurate. Form A and the residual using exact Fraction/integer arithmetic. This removes frame, matrix-assembly, BLAS residual and floating-summation uncertainty from the certificate itself. It does not make an approximate solve exact.
+
+Use ||z||_W²=z^T Wz. If the already proved physical denominator bound is delta_s>0, then ||A_s^-1||_W <= sqrt6/delta_s. Choose a fixed rational upper u6 with u6²>6 and u6>0. If incoming certified coordinate error is e_in and the exact rational residual is r=b_hat-A_s z_hat, the coordinate error obeys
+
+e_s <= (u6/delta_s)(e_in + upper_sqrt(r^T Wr)).
+
+The incoming error is one half the sum of predecessor errors; signs cannot increase that bound. At the target it is likewise half the predecessor sum. This is a valid but potentially pessimistic bound; if it cannot resolve the coefficient, report indeterminate rather than claiming cancellation or increasing tolerances.
+
+Square roots of positive rational p/q can be bounded outward by integers: for chosen D, find n with n²q>=pD² and (n-1)²q<pD²; n/D is an exact upper bound. No floating sqrt is required. Gap certificates and dyadic candidates are source-bound data. A singleton-cut prefix still uses its separately proved initial-parity gap, not the unrestricted ground-distance certificate.
+
+Exact rational inversion is optional. Dense512 rational inverses may be expensive and need not be attempted. Exact residuals use the sparse zero/two-bit transition structure. A floating candidate may be computed in the better-conditioned orthonormal frame and converted to rational coordinates; any conversion error is automatically included when the resulting dyadic vector is checked against the exact A.
+
+## Closing bra and rational coefficient scale
+
+For adjacent black v and white w, define c_wj=-(K0r_j)_w/2, rational. The ordered gamma_v gamma_w has coefficients r_i(v)c_wj/(sqrt6 sqrt(d_i d_j)) multiplying a_i b_j. Therefore
+
+L=-i sqrt6 S^-1 gamma_v gamma_w S
+
+is a real rational matrix. Its vacuum row ell=e0^T L is the actual closing bra in scaled coordinates, not an unweighted physical row copied from another basis. For the fixed ordered adjacent pair, ||ell||_(W^-1)²=6 because gamma_v gamma_w is norm-preserving and e0 has W norm1. The finite control independently verifies this identity on the actual frame.
+
+Five resolvents and the one closing factor give
+
+<vac|gamma_v gamma_w x_target>= i (ell z_target)/6³.
+
+Thus, with the fixed Gauss/cut ordering of the parent and spectator operator i bar_gamma_v bar_gamma_w, the associated real coefficient is rational at t=1. All six factors1/2 and five negative resolvent signs remain in the DP. A different ordered spectator convention changes the corresponding orientation sign; this formula does not license dropping it. For coefficient evaluation a coordinate error e gives absolute error at most u6 e/216. Exact rational evaluation of ell z_hat introduces no new roundoff. Summing bridge families requires retaining their actual closing orientation and adding their certified errors. Nonadjacent-cut classification is outside this packet.
+
+## Bounded controls and limits
+
+check.py verifies the supplied rational Gram directly, independently reconstructs full canonical64 K, and builds one actual512 rational prefix matrix. It checks WJ=J^T W entrywise, base energies, similarity-factor identities and the actual closing-row dual norm6.3357 predicates pass in0.419s22.66Mi

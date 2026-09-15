@@ -1,0 +1,8 @@
+{
+  "head": "ee25b8c2488134d3bd2b9ac75703ce7056359abc",
+  "tree": "ef16576876e1c98f580d20e88336a44f21569399",
+  "base": "ed786389ab015930e745b032b70d9e54b5692205",
+  "patch": "8088-author-draft-before-authority-fix.patch",
+  "sha256": "b08fb845d36f245e897ea0c348bb4d9c03f2b514ef8e541a878c798a63c6a767",
+  "boundary": "Archive/path draft only, original reviewer pending full history/parent closure; no science run and no final source verdict."
+}

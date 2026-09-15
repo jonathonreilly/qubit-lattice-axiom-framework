@@ -1,0 +1,13 @@
+{
+  "role": "author label-only affected source freeze; not verdict",
+  "tree": "01bd51e894c89b3c6f996532b3ff21b94cb8e47a",
+  "changed_path": "scripts/native_zero_penalty_l4_delayed_splitting_2026_09_08.py",
+  "sha256": "cdedf20414196526c66c40143a27762242238963c7cad4ff71e3c81c175150c5",
+  "prior_sha256": "0e6307a255aa08aaa9282def52ee260efa8946e52d87605233c678b9fecaf7c0",
+  "all_other_final_source_input_hashes_unchanged": true,
+  "affected_runner_only": "scripts/native_zero_penalty_l4_delayed_splitting_2026_09_08.py",
+  "unaffected_captures": [
+    8053,
+    8058
+  ]
+}

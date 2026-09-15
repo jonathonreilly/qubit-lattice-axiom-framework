@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "03696e613d72aa16741e3f533b5bd37a70f09512",
+  "fetched_ref": "refs/review-loop/fetched/8052-d20feb9d64aa4f64bf6b0298faabab0b",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "codex/native-zero-penalty-l4-delayed-splitting-20260908",
+    "headRefOid": "03696e613d72aa16741e3f533b5bd37a70f09512",
+    "isDraft": false,
+    "number": 8052,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

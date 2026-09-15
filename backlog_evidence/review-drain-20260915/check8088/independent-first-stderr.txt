@@ -1,0 +1,4 @@
+  File "/private/tmp/review-drain-20260915/check8088/independent.py", line 36
+    assert value in ns if value[0]!='data' else set(ns)=={('trigger',),('program',j if site==c else targets.index(site)+1,1+sum(b*2**(targets.index(site)-1-k) for k,b in enumerate(bits[:targets.index(site)]))))}
+                                                                                                                                                                                                                 ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '{'

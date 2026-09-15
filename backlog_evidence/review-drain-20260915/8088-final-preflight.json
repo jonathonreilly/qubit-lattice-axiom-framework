@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8088-final",
+  "tree": "0ae6892635ede108cb33ceaf3fd3b2b2f0450aa8",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "projective_history_fixed_first_target_local_program_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/projective_history_local_program_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
+        "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+        "docs/work_history/repo/review_feedback/pr8088-program-evidence/kept/pr8088-program-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    },
+    {
+      "path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "projective_history_local_copy_record_process_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/projective_history_local_copy_record_process_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md"
+      ]
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8750,
+      "misses": 4343
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4341
+    },
+    "declared_inputs": {
+      "hits": 8777,
+      "misses": 4474
+    }
+  },
+  "record_sha256": "99bbaedc4e3d3bfd70dd889e10e77d0275b5bf5b09d2ec55a95851d3a634c3dc",
+  "checker_sha256": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187"
+}

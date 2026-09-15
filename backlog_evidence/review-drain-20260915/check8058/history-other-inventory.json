@@ -1,0 +1,650 @@
+[
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ISOLATED.stderr",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ISOLATED.stdout",
+    "bytes": 6481,
+    "lines": 283,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "ation_exact_2026_09_08.py\": \"a5cd08e68673bcb65fadfe99b8f2868d42295199e8e5b1295d0439fa6bf30f85\"\n  },\n  \"scope\": \"Finite supplied L4 isolation and scalar canonical coefficients through five; sixth only support allowed.\"\n}\n"
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/LIVE.stdout",
+    "bytes": 6841,
+    "lines": 290,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "ojection.\nper_block: fixed-flux compression and canonical normalization.\nlattice_wide: L4 constant square, winding sectors and isolation.\nTOTAL: PASS=93564 FAIL=0\nResources: 0.439840s, 24.391MiB; timeout180s, RSS384MiB.\n"
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/electric.diff",
+    "bytes": 1081,
+    "lines": 19,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "s':n,'rows':rows,'seconds':time.monotonic()-start,'scope':'actual L4 all960 incident-pair deletions and exact small-graph gauge-parity compressions; no sampling'}\n+if __name__=='__main__':print(json.dumps(out,indent=2))\n"
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/isolation.diff",
+    "bytes": 1277,
+    "lines": 21,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "e.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024),'scope':'Exact integer square matrices and basic flux controls; no all-sector eigensolver'}\n+if __name__=='__main__':print(json.dumps(out,indent=2))\n"
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/spectator.diff",
+    "bytes": 1446,
+    "lines": 22,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "8576 if sys.platform=='darwin' else 1024),'scope':'Finite support and Clifford controls; no sixth-order coefficient or cubic spectral-isolation test'}\n+out=result\n+if __name__=='__main__':print(json.dumps(out,indent=2))\n"
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/incorrect_flux_scope.stderr",
+    "bytes": 1094,
+    "lines": 14,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "3k5p1lkcgp4r0000gp/T/delayed-isolated-p_9zdeiq/scripts/native_zero_penalty_electric_exact_2026_09_08.py\", line 9, in need\n    if not c:raise RuntimeError(m)\n             ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: K4 scalar E/2\n"
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/incorrect_flux_scope.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/odd_active_projection.stderr",
+    "bytes": 1206,
+    "lines": 14,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "layed-isolated-p_9zdeiq/scripts/native_zero_penalty_spectator_exact_2026_09_08.py\", line 9, in need\n    if not c:raise RuntimeError(msg)\n             ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: odd-cut active parity exclusion\n"
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/odd_active_projection.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/winding_omission.stderr",
+    "bytes": 1039,
+    "lines": 13,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "0000gp/T/delayed-isolated-p_9zdeiq/scripts/native_zero_penalty_isolation_exact_2026_09_08.py\", line 10, in need\n    if not c:raise RuntimeError(s)\n             ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: noncanonical basic flux\n"
+  },
+  {
+    "pr": 8052,
+    "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/winding_omission.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/ISOLATED.stderr",
+    "bytes": 755,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "              16  voluntary context switches\n               10060  involuntary context switches\n       1141833868190  instructions retired\n        187651623449  cycles elapsed\n            79938208  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/ISOLATED.stdout",
+    "bytes": 1744850,
+    "lines": 27518,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "8c9e53028d89af63e65554e256f9ba1f8ef223b7\"\n  },\n  \"scope\": \"Exact supplied L4 adjacent coefficient and magnetic-orbit controls; full finite-gap theorem additionally uses the linked proof and isolation/parity premises.\"\n}\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/CANONICAL.stderr",
+    "bytes": 755,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               8  voluntary context switches\n               10374  involuntary context switches\n       1140959819354  instructions retired\n        188382332441  cycles elapsed\n            86688488  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/CANONICAL.stdout",
+    "bytes": 1744852,
+    "lines": 27518,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "8c9e53028d89af63e65554e256f9ba1f8ef223b7\"\n  },\n  \"scope\": \"Exact supplied L4 adjacent coefficient and magnetic-orbit controls; full finite-gap theorem additionally uses the linked proof and isolation/parity premises.\"\n}\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/CANONICAL.stderr",
+    "bytes": 755,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               0  voluntary context switches\n                8669  involuntary context switches\n       1139701558511  instructions retired\n        187714298577  cycles elapsed\n            89178832  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/CANONICAL.stdout",
+    "bytes": 1744848,
+    "lines": 27518,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "8c9e53028d89af63e65554e256f9ba1f8ef223b7\"\n  },\n  \"scope\": \"Exact supplied L4 adjacent coefficient and magnetic-orbit controls; full finite-gap theorem additionally uses the linked proof and isolation/parity premises.\"\n}\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/CONTAINMENT.diff",
+    "bytes": 1089,
+    "lines": 15,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "rame endpoint containment')\n   for e in self.support:\n    v,w=self.edges[e];Q=[[F(self.K[v][w],6)*(self.r[i][v]*self.kr[j][w]-self.r[i][w]*self.kr[j][v]) for j in range(10)] for i in range(10)]\n    delta[e]=self.fock(Q)\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/INVALID_CLI.stderr",
+    "bytes": 159,
+    "lines": 2,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "usage: native_weak_electric_spectator_gap_2026_09_08.py [-h] [--json]\nnative_weak_electric_spectator_gap_2026_09_08.py: error: unrecognized arguments: --bogus\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/INVALID_CLI.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/source.diff",
+    "bytes": 700,
+    "lines": 9,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "interval=[str(center-radius),str(center+radius)],excludes_zero=center-radius>0 or center+radius<0,ledger=ledger,scope='exact rational residual certificate of arbitrary dyadic candidates; adjacent ordered bilinear only')\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/stderr",
+    "bytes": 1648,
+    "lines": 28,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               0  voluntary context switches\n                8767  involuntary context switches\n       1137658023505  instructions retired\n        187543595163  cycles elapsed\n            81674840  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/source.diff",
+    "bytes": 344,
+    "lines": 15,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "sk\": \"2\",\n-          \"bridge_count\": 1,\n-          \"full_toggle_mask\": \"3\"\n-        },\n-        {\n-          \"k\": 1,\n           \"boundary_used_mask\": \"4\",\n           \"bridge_count\": 1,\n           \"full_toggle_mask\": \"5\"\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/stderr",
+    "bytes": 2504,
+    "lines": 34,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               0  voluntary context switches\n                 190  involuntary context switches\n         34156630673  instructions retired\n          5569321880  cycles elapsed\n            67453480  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/postcheck.diff",
+    "bytes": 3553,
+    "lines": 53,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "e=json.loads((P/'FRAME_RESULT.json').read_text());prefix=json.loads((P/'PREFIXES.json').read_text());result=certify(sys.argv[1],frame,prefix)\n- out.write_text(json.dumps(result,indent=2))\n-if __name__=='__main__':main()\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/STATE.yaml",
+    "bytes": 654,
+    "lines": 13,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "lated closure and actual semantic controls complete\",\n  \"base_pr\": 8052,\n  \"next_action\": \"Open one review PR stacked on8052; no main merge or formal audit verdict\",\n  \"updated_utc\": \"2026-09-08T20:59:03.339423+00:00\"\n}\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-production-root-review/SHELL.stderr",
+    "bytes": 753,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "             114  voluntary context switches\n                3470  involuntary context switches\n          1089827735  instructions retired\n           500507178  cycles elapsed\n            18465368  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-production-root-review/SHELL.stdout",
+    "bytes": 3832,
+    "lines": 90,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "9ba1f8ef223b7\"\n    }\n  ],\n  \"seconds_including_prior_charge\": 11.43717091702274,\n  \"scope\": \"Adjacent ordered spectator bilinear only, t=1; IEEE754/error-model assumptions; vectors permit independent rational replay\"\n}\n\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/DISPATCH.stderr",
+    "bytes": 755,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "             745  voluntary context switches\n               21926  involuntary context switches\n          5449790646  instructions retired\n          3050324072  cycles elapsed\n            15417752  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/DISPATCH.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_0.stderr",
+    "bytes": 755,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               1  voluntary context switches\n                4167  involuntary context switches\n        456239912989  instructions retired\n         76695072798  cycles elapsed\n            73482960  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_0.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_12.stderr",
+    "bytes": 753,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               0  voluntary context switches\n                1817  involuntary context switches\n        138956316450  instructions retired\n         23156804057  cycles elapsed\n            54428368  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_12.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_3.stderr",
+    "bytes": 753,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               0  voluntary context switches\n                1397  involuntary context switches\n        137127048759  instructions retired\n         22835085232  cycles elapsed\n            57606816  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_3.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_36.stderr",
+    "bytes": 753,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               0  voluntary context switches\n                1228  involuntary context switches\n        140008879738  instructions retired\n         23401431877  cycles elapsed\n            57262752  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_36.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_9.stderr",
+    "bytes": 753,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               0  voluntary context switches\n                1316  involuntary context switches\n        139369911744  instructions retired\n         23140519654  cycles elapsed\n            55214704  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_9.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_96.stderr",
+    "bytes": 753,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               0  voluntary context switches\n                2054  involuntary context switches\n        141293980065  instructions retired\n         23693580878  cycles elapsed\n            54755952  peak memory footprint\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_96.stdout",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/launch_complete.py.VECTOR_RECEIPT.diff",
+    "bytes": 5727,
+    "lines": 61,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": " independent rational replay'}\n+(out/'SUMMARY.json').write_text(json.dumps(summary,indent=2)+'\\n');ledger()\n+if elapsed()>=600:fail('final aggregate cap including serialization')\n print((out/'SUMMARY.json').read_text())\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/run_bridge.py.VECTOR_RECEIPT.diff",
+    "bytes": 3117,
+    "lines": 27,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "ficient':result['coefficient'],'error':result['absolute_error_bound'],'interval':result['interval'],'seconds':seconds,'rss_mib':rss,'output_sha256':hashlib.sha256(args.output.read_bytes()).hexdigest()},allow_nan=False))\n"
+  },
+  {
+    "pr": 8053,
+    "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/solver_core.py.VECTOR_RECEIPT.diff",
+    "bytes": 2641,
+    "lines": 26,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "count,'proper_keys':len(ledger),'ledger':ledger,'gap_records':model.gap_records,'_vectors':vectors,'scope':'dimensionless t=1 coefficient of ordered i bar_gamma_0 bar_gamma_16; IEEE754/error-model assumptions explicit'}\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/AUTHOR_TIME.stderr",
+    "bytes": 753,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               1  voluntary context switches\n                 570  involuntary context switches\n         57326577354  instructions retired\n          8972665350  cycles elapsed\n            12157432  peak memory footprint\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/ISOLATED.stderr",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/electric_normalization.diff",
+    "bytes": 1249,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "ndent_direct_CAR_residuals':30,'particle_weights':{k:str(v) for k,v in weights.items()},'seconds':time.monotonic()-start,'rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'author_import':False,'checks':32})\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/electric_normalization.stderr",
+    "bytes": 1123,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "ror('decomposition')\n                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: decomposition\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/native_car_sign.diff",
+    "bytes": 426,
+    "lines": 11,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "-1)\n-     A[index[a]][col]+=-q[i][j]*F(sign,2)*(1-2*((b>>j)&1))*factor\n+     A[index[a]][col]+=q[i][j]*F(sign,2)*(1-2*((b>>j)&1))*factor\n   return A\n  def gamma(x):\n   z=[F(0)]*32;idx={b:i for i,b in enumerate(bits[1])}\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/native_car_sign.stderr",
+    "bytes": 969,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "k\n    if mv(mat(pair,0),xs[pair])!=[F(i==0) for i in range(32)]:raise ValueError('even residual')\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: even residual\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/odd_exchange_sign.diff",
+    "bytes": 396,
+    "lines": 11,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ")),q(x+F(4,3))]]\n+  O=[[q(x+F(2,3)),q(0,F(1,3))],[q(0,F(1,3)),q(x+F(4,3))]]\n   v=mv(inverse(E),[q(1),q(0)])\n   # Six disjoint pairs: perpendicular components sum to -3 times C's.\n   post=[mul(q(6),v[0]),mul(q(-3),v[1])]\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/odd_exchange_sign.stderr",
+    "bytes": 865,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "ed-0i8q06j5/scripts/native_third_order_star_vertex_two_mode_2026_09_08.py\", line 22, in check\n    if alpha!=q(formula):raise ValueError('formula')\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: formula\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/vacuum_offset.diff",
+    "bytes": 554,
+    "lines": 11,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "s=bits[p];index={b:i for i,b in enumerate(bs)};A=[[F(5*int(i==j)) for j in range(32)] for i in range(32)]\n   # Direct ordered CAR action i*a_i*b_j/2; b_j acts first.\n   for col,b in enumerate(bs):\n    for i in range(6):\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/vacuum_offset.stderr",
+    "bytes": 969,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "k\n    if mv(mat(pair,0),xs[pair])!=[F(i==0) for i in range(32)]:raise ValueError('even residual')\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: even residual\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/STATE.yaml",
+    "bytes": 321,
+    "lines": 8,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "_class: frontier_discovery\nreachability_to_target: unknown_frontier\nactive_route: canonical_review\nnext_action: \"Root and independent checker read frozen author package\"\npublication: uncommitted\nphysical_solves_added: 0\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/time.stderr",
+    "bytes": 753,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               5  voluntary context switches\n                5238  involuntary context switches\n         58031229113  instructions retired\n          9054352560  cycles elapsed\n            10076736  peak memory footprint\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-interpretation/stdout.txt",
+    "bytes": 587,
+    "lines": 1,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": " 512, 'forced_zero': True}, {'root': (0, 22), 'size': 768, 'forced_zero': True}, {'root': (0, 26), 'size': 384, 'forced_zero': True}, {'root': (0, 42), 'size': 64, 'forced_zero': True}], 'seconds': 0.008788709004875273}\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-interpretation/time.txt",
+    "bytes": 777,
+    "lines": 18,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               1  voluntary context switches\n                  32  involuntary context switches\n           488180842  instructions retired\n           121306851  cycles elapsed\n            10011104  peak memory footprint\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/AUTHOR_TIME.stderr",
+    "bytes": 753,
+    "lines": 20,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "               3  voluntary context switches\n                 369  involuntary context switches\n         58806448012  instructions retired\n          8945774747  cycles elapsed\n            11796936  peak memory footprint\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/ISOLATED.stderr",
+    "bytes": 0,
+    "lines": 0,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ""
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/electric_normalization.diff",
+    "bytes": 1249,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "ndent_direct_CAR_residuals':30,'particle_weights':{k:str(v) for k,v in weights.items()},'seconds':time.monotonic()-start,'rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'author_import':False,'checks':32})\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/electric_normalization.stderr",
+    "bytes": 1123,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "ror('decomposition')\n                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: decomposition\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/native_car_sign.diff",
+    "bytes": 426,
+    "lines": 11,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "-1)\n-     A[index[a]][col]+=-q[i][j]*F(sign,2)*(1-2*((b>>j)&1))*factor\n+     A[index[a]][col]+=q[i][j]*F(sign,2)*(1-2*((b>>j)&1))*factor\n   return A\n  def gamma(x):\n   z=[F(0)]*32;idx={b:i for i,b in enumerate(bits[1])}\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/native_car_sign.stderr",
+    "bytes": 969,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "k\n    if mv(mat(pair,0),xs[pair])!=[F(i==0) for i in range(32)]:raise ValueError('even residual')\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: even residual\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/odd_exchange_sign.diff",
+    "bytes": 396,
+    "lines": 11,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": ")),q(x+F(4,3))]]\n+  O=[[q(x+F(2,3)),q(0,F(1,3))],[q(0,F(1,3)),q(x+F(4,3))]]\n   v=mv(inverse(E),[q(1),q(0)])\n   # Six disjoint pairs: perpendicular components sum to -3 times C's.\n   post=[mul(q(6),v[0]),mul(q(-3),v[1])]\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/odd_exchange_sign.stderr",
+    "bytes": 865,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "ed-fqzwvnx7/scripts/native_third_order_star_vertex_two_mode_2026_09_08.py\", line 22, in check\n    if alpha!=q(formula):raise ValueError('formula')\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: formula\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/vacuum_offset.diff",
+    "bytes": 554,
+    "lines": 11,
+    "has_failure": false,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "s=bits[p];index={b:i for i,b in enumerate(bs)};A=[[F(5*int(i==j)) for j in range(32)] for i in range(32)]\n   # Direct ordered CAR action i*a_i*b_j/2; b_j acts first.\n   for col,b in enumerate(bs):\n    for i in range(6):\n"
+  },
+  {
+    "pr": 8058,
+    "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/vacuum_offset.stderr",
+    "bytes": 969,
+    "lines": 11,
+    "has_failure": true,
+    "role": "Historical operational/mutation/stream evidence; no current authority",
+    "tail": "k\n    if mv(mat(pair,0),xs[pair])!=[F(i==0) for i in range(32)]:raise ValueError('even residual')\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: even residual\n"
+  }
+]

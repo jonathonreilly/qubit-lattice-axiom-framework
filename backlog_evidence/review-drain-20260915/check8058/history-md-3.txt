@@ -1,0 +1,138 @@
+B. A supplied dyadic test vector yields an exact rational residual without solving. No prefix scan or coefficient computation occurred.
+
+The metric ranges125/1296 to1327104 on this frame, so numerical conditioning must be measured rather than assumed benign. Exact Fraction residual cost and accumulated bounds remain unprofiled. This route is implementable and mathematically certifying if its bound excludes zero, but it has not yet demonstrated that exclusion or exact cancellation. It complements, rather than validates, the checker's independent interval implementation.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-metric/PREREGISTRATION.md
+Before controls: candidate independent rational similarity. Use exact rational orthogonal black columns r_i with norms d_i; paired white columns -K0r_i/sqrt24. Scale Fock basis by S_bb=sqrt(product occupied d_i). Predict S^-1 H S=sqrt6 J with rational J, symmetric in diagonal metric W=S². Check actual512 sparse matrix symmetry and diagonal base on one edge-pair fixture, no inverse/DP scan. Exact dyadic candidate residuals then require no frame/BLAS error: compute r=b-Az rational and use certified gap with metric norm. Closing bra scaling must be explicit. Author frame raw is supplied input and verified exactly, not claimed independently generated. <=180s384MiB, no sampling.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate-cold-review/REVIEW.md
+# Exact rational postcertificate cold review
+
+PASS for the frozen mathematical harness and its declared prospective scope. No physical all-prefix certificate was run by this reviewer. Read full README, core.py, postcheck.py, controls.py, control contract/result, preserved synthetic failure and FREEZE9348c505, plus underlying rational-metric DERIVATION1f5194f70d59cb5d6e943d26cc6152b612bc89aa53b2e666779c34a2ff926737. Exact read hashes are recorded separately.
+
+The coordinate similarity is nonunitary and the supplied W metric is essential. The rational q matrix, base2*popcount, sign-toggle increments, sparse two-bit Fock entries and full vacuum offset agree with the metric derivation. Candidate float conversion may be inaccurate: this does not compromise the certificate because it merely chooses exact dyadics. All such denominators are powers of two, so the maximum-denominator common-multiple shortcuts in candidate/incoming/residual are valid for THIS dataflow. They would not be valid for arbitrary rational-denominator input, which this interface does not admit.
+
+The residual is exactly -half-sum minus A*candidate; the minus sign matches the negative resolvent. Weighted squared norm and outward square-root arithmetic are exact. The inverse bound uses sqrt6/delta, with a rational upper sqrt6. The LDL calculation is on the full32-dimensional bipartite matrix, retaining the unaffected vacuum contribution; trace inverse formula is correct. Taking max with the previously proved1/432 is legitimate. Singleton-cut masks use the distinct fixed-parity gap; zero proper prefixes are rejected. These imported gap/source hypotheses are still required.
+
+DP reconstruction sums predecessor candidates before applying each exact residual. It checks word counts, degree and toggle identity; errors accumulate with half weights and then the inverse bound. Final degree six is reconstructed WITHOUT another inverse or sqrt6 scaling, correctly ignoring its saved marker vector. The exact closing dual norm is6, giving radius upper_sqrt6*error/216; the parent ordered closure convention remains load-bearing. Exact final arithmetic adds no BLAS error. A bound containing zero must remain indeterminate.
+
+Input pins bind frame, prefix census and both executed source files. NPZ SHA binding, nonfinite rejection, key completeness and vacuum checks prevent silently substituting an incomplete candidate table. The bridge JSON hash is included in output, and the vector hash is checked before loading. A production dispatcher must additionally bind the intended candidate JSON in its prospectively fixed manifest; the CLI itself accepts any candidate file by design. This is not a flaw in residual mathematics: arbitrary candidates are certifiable, but provenance must not be inferred from a self-reported filename. No full-runtime/budget launcher is included or claimed; separate external180s384MiB supervision is required.
+
+Independent check.py invokes the actual sparse model/residual functions but independently reconstructs every residual component by Fraction arithmetic and verifies weighted selfadjointness entrywise.3081 predicates pass, including exact gap equality, dual norm and a metric-omission adverse difference. Runtime1.38489s,50.5MiB. The isolated small-denominator residual takes0.0002384s. This is NOT a physical candidate benchmark: saved IEEE vectors have larger dyadic denominators and full error propagation can be more expensive. It must not justify an all-prefix budget by simple multiplication.
+
+Before full use, a fixed, outcome-independent single-candidate cost fixture should time model construction, matrix assembly, exact LDL gap, actual candidate residual and serialization separately. It should report real outer resource use, not treat a tiny arbitrary-vector timing as representative. Cache reuse of equal masks can be priced only if implemented and reviewed. No source changes are requested by this review. A production interval reported during this review did not alter checks, signs, thresholds or scope.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/CONTROL_CONTRACT.md
+Before execution, deterministic only: compare integer common-denominator residual against direct Fraction matrix-vector arithmetic on one actual prefix and arbitrary dyadic candidates. Test exact norm square brackets and one independently reviewed gap; validate NPZ decoder on synthetic full metadata with no physical solves, then actual NaN/hash-updated and missing-key mutants. No all-prefix residual run. Exact endpoint uses the unsolved half-sum at degree6 (scale power5), never sqrt6^6. Future full use requires separate reviewed resource authorization.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/FAILED_SYNTHETIC_CONTROL.md
+Initial decoder control failed with ValueError duplicate key. PREFIXES already includes vacuum; the synthetic fixture prepended another. Preserved predecessor controls_BEFORE_SYNTHETIC_FIX.py. Decoder rejection was correct. No physical solver data or computation was used.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/README.md
+# Independent exact residual replay — prospective harness
+
+This implements the rational metric derivation frozen in native-sixth-rational-metric/DERIVATION.md (1f5194f70d59cb5d6e943d26cc6152b612bc89aa53b2e666779c34a2ff926737). It has not processed physical DP outputs and has not certified a coefficient. Full-prefix execution remains unlaunched pending separate resource authorization.
+
+The saved physical float vectors are converted to arbitrary dyadic candidates in rational coordinates. Their proximity to an exact coordinate conversion is unnecessary: exact sparse rational residuals certify the candidates themselves. Common integer denominators avoid Fraction arithmetic per matrix entry. Weighted residual norms use exact metric weights and outward rational square-root bounds. Exact LDL inverse-trace gap bounds propagate errors through five inverse levels. The unsolved final half-sum is reconstructed from level-five candidates; its saved k=6 marker never introduces another inverse or scale factor.
+
+Closing uses the exact rational dual row and factor 1/216; its weighted dual norm is sqrt(6). Bounds are rational and independent of a BLAS residual estimate. Small denominators and candidate conversion use floating arithmetic solely to choose a candidate, never to justify its residual bound.
+
+The CLI processes one bridge artifact and requires pinned geometry, prefix census and own source. It is not a budget launcher: no full run is authorized by this package. A separately supervised time/memory envelope is required before actual use. The current deterministic tests cover one actual sparse matrix, exact norm enclosure, exact gap, synthetic NPZ schema, NaN and missing-row rejection. They do not certify implementation correctness over every physical prefix. Initial synthetic duplicate-vacuum failure is preserved.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/RUN_CONTRACT_PROPOSAL.md
+# Prospective complete rational replay contract
+
+Prepared before reading physical coefficient values or candidate residuals. Original harness freeze 9348c50517ab0430f93b9fe5b5c16e7f7fa744bf70676088daa3cb88a11d7706 remains unchanged. This proposal does not authorize an all-prefix run.
+
+Membership is all six PREFIXES rows in their frozen order: bridge 0,3,9,12,36,96. They contain respectively 1022,254,254,254,254,254 proper inverse states, total 2292, and 1662 distinct masks. Every saved state is checked; no state, bridge or residual may be selected from numerical coefficient outcomes. Initial and unsolved final target are also validated. The endpoint is reconstructed independently from the fifth-level candidates, not accepted from the saved target value.
+
+Before execution, bind the complete producer freeze and all six immutable JSON/NPZ files by SHA256, verify success receipts and exact membership, and reject missing, duplicate or altered artifacts. Record this input manifest separately from the original prospective harness freeze. Ordinary float coordinate conversion only selects arbitrary dyadic trial vectors; all accepted residual, gap and final enclosure arithmetic is exact rational. No binary64 solver radius is used as a substitute for the rational replay bound.
+
+Proposed resource envelope, subject to the independent fixed synthetic fixture cost gate: six serial bridge jobs, each at most 180 seconds and observed process-group RSS 384 MiB, aggregate 1200 seconds including imports, hash checks, serialization and final aggregation. External wall clock and process-group watchdog, one BLAS thread, exclusive fresh output directory. Reserve a complete 180 seconds before starting a bridge. No automatic retry, replacement, reduced prefix coverage or precision relaxation after a failure. A timeout preserves logs/partial receipts and leaves the complete certificate incomplete; it does not imply coefficient cancellation.
+
+Forecast gate before launch: use independent fixed arbitrary-dyadic fixture timings, separating model construction and exact gap/matrix/residual work. Price each bridge as startup + its proper-state count times the maximum measured per-state cost + serialization allowance, multiply by two for headroom. Require each forecast <=150 seconds and aggregate <=1000 seconds. A single mask is not a reliable upper bound on integer growth or solver gaps: this is a scheduling forecast only. Actual watchdogs govern. If this gate fails or lacks adequate timing decomposition, do not launch; propose deterministic caching/chunking as a new reviewed implementation instead. Do not extrapolate the earlier combined 2.046-second control suite as a per-prefix cost.
+
+Root assigned native reviewer an independent arbitrary-dyadic fixture; this author does not duplicate it. No physical vectors are needed for that timing. Timing cannot certify future Fraction numerator/denominator growth. Any optimization must preserve 9348, be tested against its exact arithmetic on preselected synthetic fixtures, and receive a new source freeze before physical replay.
+
+Complete-success deliverable: six rational intervals with per-prefix residual/gap/error ledger and input hashes; sum their rational endpoints exactly in fixed bridge order. Nonzero is certified only if the final exact interval excludes zero and every intended bridge succeeded. An interval containing zero is inconclusive, not a cancellation proof. A partial result may be reported only as partial. Scope remains the adjacent ordered bilinear and the existing isolation/perturbation premises; no nonadjacent or full sixth-order operator conclusion.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/DERIVATION.md
+# Exact rational prefix-gap certificates
+
+This supplies a frame-independent ground-distance lower certificate for a specified intermediate edge-toggle mask. It does not solve any coefficient or scan all prefixes. The actual L4 canonical uniform endpoint and its unique minimizing orbit are retained premises.
+
+Order the vertices by bipartite parity. At |t|=1, write K=2[[0,B],[-B^T,0]] up to the fixed sign convention, where B is a32x32 integer signed adjacency. Its singular values sigma_j give positive active frequencies2sigma_j. Thus the full active ground energy is -sum sigma_j=-Tr sqrt(A), A=BB^T. At the base flux A=6I, so E0=-32sqrt6. This uses the full32-mode Gram matrix and automatically includes the unaffected complement-vacuum energy. It does not need the checker's20-dimensional frame or any numerical orthogonalization.
+
+For every x>=0 and rational c>0 define y1=(c+x/c)/2 and y2=(y1+x/y1)/2. AM-GM gives y1>=sqrt(x); the identity y2-sqrt(x)=(y1-sqrt(x))²/(2y1) gives y2>=sqrt(x), also at x=0. Therefore functional calculus gives the exact trace upper bound
+
+Tr sqrt(A) <= U2(A,c)
+ = [Tr A+32c²]/(4c)+c[32-c² Tr(A+c²I)^(-1)].
+
+A+c²I is strictly positive, so rational Gaussian elimination is valid. The implemented inverse trace is exact Fraction arithmetic; its positive pivots are explicitly checked. No rounded eigenvalues or SVD enter. Set c=5/2, and ell=2449489742783178/10^15; ell²<6 is checked exactly. Then
+
+Delta_F >= |t| [32ell-U2(A_F,5/2)].
+
+Whenever the bracket is positive, it lower-bounds every energy in this flux representative above E0, including the reduced512-dimensional parity block. Hence its reciprocal bounds the inverse norm. It is conservative; a negative certificate is inconclusive, not evidence of a negative physical gap. Higher Newton iterates could tighten it but were not needed for these fixtures.
+
+For a singleton-cut prefix the unrestricted active ground remains E0, so this formula must not claim a positive gap. Instead the unreduced initial-parity block excludes the gauge-transformed vacuum and has exact distance sqrt24|t|. The separate rational lower bound2ell|t| is valid there. Classifying that case requires the exact cut and active-parity argument, not a numerically small singular value. The implementation explicitly checks that the unrestricted star certificate is negative, preventing accidental misuse of the wrong-space bound.
+
+## Bounded actual results
+
+The independent canonical edge construction agrees exactly with the checker's exported coordinate/edge order at PREFIXES.json7a154126. Four non-star prefixes of one internal-bridge sequence have certified lower bound
+
+999997540876869429/1446265625000000000 |t| >0.6914342176 |t|.
+
+Its order-three singleton prefix has the separate parity bound2ell|t|>4.8989794855|t|. The first prospectively selected order-three prefix in each of the five external bridge families has rational lower bound approximately1.5029004255,1.5029004255,1.0206489524,1.5029004255,1.3828701355, all times|t|. Decimal values are displays of exact lower rational certificates, not floating estimates. Full numerators/denominators and masks are in RESULT and EXPORT_RESULT.
+
+The first run executes180 exact predicates. The external supplement declares its fixed selection before reading numerical bounds, verifies the complete geometry binding, and applies the same exact certificate to five masks. There is no whole-prefix cost forecast or all-prefix validation yet. An implementation interface needs only the full canonical edge-toggle integer and, for same-orbit returns, its exact cut parity classification. Matrix frames and DP vectors are not shared inputs.
+
+These stronger denominator bounds can enter the previously derived residual recursion state by state. They do not certify the DP solution, its metric, its closing spectator sign or a nonzero coefficient by themselves. No large active-space solve or random profile was performed.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/EXPORT_SUPPLEMENT_CONTRACT.md
+After initial internal-bridge certificates were computed, checker supplied exact PREFIXES.json7a154126. Prospectively check exact coordinate/edge equality and certify the first listed k=3 prefix for each external bridge (five fixed representatives), without selecting by resulting bound. No complete-prefix scan or coefficient solve.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/PREREGISTRATION.md
+# Exact prefix-gap certificate before execution
+
+Use full L4 canonical edge signs and a bipartite32x32 signed adjacency B, h frequencies2|t|singular(B). Baseline BB*=6I. For any positive rational c, scalar Newton square-root iterates are upper bounds after the first iterate, including x=0. Compute exact rational trace of second iterate via inverse(A+c²I), A=BB*. Subtract from a rational lower bound to32sqrt6. This certifies the all-active-space ground distance and therefore the fixed-parity inverse distance in a wrong flux. It includes all unaffected modes automatically. Start bounded one-pair and several internal/external bridge prefixes; star-cut gauge-equivalent prefix uses separate opposite-parity gap. No floating SVD, large coefficient solve or all-prefix campaign. Each command180s384MiB.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-spectrum/DERIVATION.md
+# Conditional leading spectator spectrum on uniform L4
+
+Assume the supplied full native Hamiltonian H(u)=H0+uD at the previously proved isolated uniform L4 endpoint, with t normalized as in K0²=-24I. Its entire ground space is a unique active vacuum tensored with the allowed spectator parity space. Assume the reviewed canonical coefficients through order five are scalar, the sixth coefficient is scalar plus bilinear, and the magnetic symmetry proof applies. Let c be the real coefficient of i beta_0 beta_16 in the sixth coefficient, and ASSUME c is nonzero. This note does not calculate or certify c.
+
+Since K0_(0,16)=-2, the antisymmetric bilinear coefficient matrix b=aK0 has a=-c/2. Write the nonscalar sixth operator as Q=sum_(i<j) b_ij i beta_i beta_j. In the convention Q=(i/4) beta^T K_eff beta, K_eff=2b=-cK0. Thus all32 positive Majorana frequencies are omega=|c|sqrt24. This factor of two is essential; the pair coefficient b is not itself the standard skew Hamiltonian matrix.
+
+## Physical parity, including the active vacuum
+
+There are64 complex matter modes. With gamma_i=c_i+c_i† and beta_i=-i(c_i-c_i†), their total parity is product_i(-i gamma_i beta_i). Moving every beta to the right introduces (-1)^(64*63/2)=+1, while (-i)^64=1. Define active and spectator chirality by P_gamma=(-i)^32 product_i gamma_i and P_beta=(-i)^32 product_i beta_i. Both phases equal1, so exactly P_total=P_gamma P_beta. The physical Gauss carrier has P_total=+1, not independently chosen active or spectator parity.
+
+Choose one real orthogonal frame putting K0 into32 canonical two-dimensional skew blocks. Use the SAME frame on gamma and beta. Each chirality changes by the determinant of that frame, so their product and the physical parity relation are unchanged. Let the active vacuum chirality in the original frame be s=±1. If -c>0, the spectator quadratic is a positive multiple of the active quadratic and its unique unconstrained vacuum has the SAME chirality s. If -c<0, every one of the32 block occupations is reversed, changing chirality by (-1)^32=+1. Hence for EITHER sign of nonzero c, the spectator vacuum still has chirality s. It is physically allowed because s*s=+1. This argument does not assume the active vacuum has parity+1 in the original ordering.
+
+The allowed spectator excitations above that vacuum have even occupation count n=0,2,...,32. Their exact leading energies are omega(n-16), with multiplicity binomial(32,n). A scalar sixth coefficient shifts all these equally. The ground is unique, its nonscalar energy is -16omega, and the leading physical gap is2omega. The sum of these multiplicities is2^31, matching the original ground-space dimension. Odd-n states belong to the wrong total parity and cannot supply a smaller physical gap.
+
+## Finite nonzero-penalty consequence
+
+The finite64-site physical matrix has an isolated initial spectral cluster. Its canonical effective matrix is analytic in u for some neighborhood of zero, with the polar branch fixed by the positive overlap convention. Subtract its scalar Taylor polynomial through degree six and divide by u^6. The quotient extends analytically to u=0 and equals Q+O(u) in finite-dimensional operator norm. No thermodynamic bound is asserted.
+
+Since Q has a unique physical ground separated by delta=2|c|sqrt24, continuity (or the elementary eigenvalue norm bound) gives a unique lowest eigenvalue of this cluster for every sufficiently small nonzero real u. Its first gap is
+
+Gap(u)=2|c|sqrt24 u^6+O(|u|^7).
+
+The other unperturbed spectral clusters remain separated by a positive constant for sufficiently small |u|, by finite-dimensional continuity and the original gap. Therefore this cluster's unique lowest state is also the full physical ground, and the displayed gap is the full physical gap near zero. This includes the physically intended positive u; negative u is only a finite analytic statement where the same isolated-cluster argument applies.
+
+The binomial multiplicities are exact for the LEADING coefficient Q. At nonzero u, higher coefficients may split those excited multiplets at order seven or later. They are not asserted to be exact degeneracies of H(u). The ground uniqueness/gap conclusion is conditional on c≠0; if c=0 this proof gives no splitting at sixth order. No explicit radius, practical gap estimate, higher-volume phase, thermal concentration or selected coupling is obtained.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-spectrum/PREREGISTRATION.md
+Conditional target: use reviewed uniform L4 K²=-24I and magnetic b proportional K, with unknown real nonzero adjacent coefficient c. Independently compute CAR total parity and leading spectrum, then finite analytic gap consequenc

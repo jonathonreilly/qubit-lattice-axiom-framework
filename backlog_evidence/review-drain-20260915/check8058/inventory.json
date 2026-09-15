@@ -1,0 +1,2219 @@
+{
+  "review_base": "b94b036ff753d3d2d4654b20a86765735ec81e51",
+  "constituents": [
+    {
+      "pr": 8052,
+      "head": "03696e613d72aa16741e3f533b5bd37a70f09512",
+      "original_base": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+      "merge_base": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+      "paths": [
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ARTIFACT_PLAN.md",
+          "sha256": "bb05447bca5d6d1106a748248f42875fdc3f628cf9e3786341d099c3344dbe8b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+          "sha256": "637f50bfde4315dbf3718e59a2e9b85fc33f6f8a9bc89527afb8f175643ef655"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+          "sha256": "c8ad1a2f71835688af41bc94be8a8ca0da45f4e2d34f8e696da0649b6bdc9cb8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/CLAIM_STATUS_CERTIFICATE.md",
+          "sha256": "55cc6247b7b9d29081535ec4dee0b51fdbc5fe9af884c74be9dbc3bcf0853ee6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/CONTROL_CONTRACT.md",
+          "sha256": "2ca6f7deb44f3a77ab163a84d10f7a62c974cb8d46a477b79086ad75c2754a64"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/GOAL.md",
+          "sha256": "687f3dd9f58a65524d77eca1de5783b56fda010c22679ffb9a672d3e41d2a607"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/GRAPH_DELTA.json",
+          "sha256": "2446df844552112168a8bef3b736c1dc5538a7f48dded14d39d81ef225ae2d48"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/HANDOFF.md",
+          "sha256": "cba4c33bff8b1602b7434fb6b228edf960c5b0bf9d9957fa36a376190a3c5480"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ISOLATED.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ISOLATED.stdout",
+          "sha256": "9d7aee6868eda4f2a210a3561773dd57d8124f5abe81a1a68d63392b0c378ac0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ISOLATED_CLOSURE.json",
+          "sha256": "c52aff78ec51c286fc8568d3d9afa9541c81b5984e96b44442bcfcd15be2cf49"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/LITERATURE_BRIDGES.md",
+          "sha256": "f443ba3e202636086b0ed4e7f6075bc537b156d4beb317b1dee25314e1996f9a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/LIVE.stdout",
+          "sha256": "57337500779e65e6876c8378d0b81a659ef23b6a49d4719879a490cdca09eadc"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/MUTATIONS.json",
+          "sha256": "a8c32ff9e42ec45a76c5ae5d216d1db332082f9659e0f6c6ae2bc49b2fd1eb19"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/NO_GO_LEDGER.md",
+          "sha256": "cbfe8d52751582298bccdf0081867eedf4ff0063abb3d4ed014f8a0fdce0bc9a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/OPPORTUNITY_QUEUE.md",
+          "sha256": "240dcf300feb63dbd5f60803e38aae2dcbaf1aa8c38f9055e64ae24c9523232d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ORIGINAL_HASHES.json",
+          "sha256": "15995987ed4bdf27e01ee437ac28d43d1082590e8e226faf57043c9c6cf81e87"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/PORT_RECEIPT.json",
+          "sha256": "ea593da8b6e39d99bf7b73ea2d3cb5b1d0736b78b119fb32407db9700f760f46"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/PR_BACKLOG.md",
+          "sha256": "83a792ed3363a8897d25903f556cc7dd7cac5d2ddd2babc8eb3033c50ca2c84a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/REVIEW_HISTORY.md",
+          "sha256": "59833bd0185aea9d1d875bc6d616ad83fd03f7c83a5ca9892674941eaf70c014"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ROOT_CANONICAL_REVIEW.md",
+          "sha256": "92b4735645b0eb9bee62ca1108c591eeba03a5161e78d09304df93e36cb1ec84"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/ROUTE_PORTFOLIO.md",
+          "sha256": "370cec2de948f6c7772f06cf8e2905e09843ad336ef765d885b2f2d267c382e3"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/SOURCE_FREEZE.json",
+          "sha256": "8dd8dfb6746a11710436a4e994731b20c8c284b8c23f4fa775b933961cb8273c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/STATE.md",
+          "sha256": "32b2d1dc8aa9129f8294767884de2f92195fc7fc8c678a7a1ad17fdfdc3d7dca"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/TRACE_GATE.md",
+          "sha256": "a3d03cfebabc6572a04f46678fa5ca5bb5279129d11f392ac819273337ab4048"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/VERIFY_BEFORE_EXPECTED_MESSAGE_REPAIR.py",
+          "sha256": "e0c51822e1eb2bb7051f46fbab3dc803e037c032646d35b5420819cfa2fa5e3d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/VERIFY_MESSAGE_REPAIR.md",
+          "sha256": "5bdfb63fbac6f3f5639b88d25d849d31db90851a3bc0134bbb87505224c20cc8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/WRAPPER_CONTROLS.json",
+          "sha256": "9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/CONTROL.json",
+          "sha256": "c8ea654f75d4a4d34726f7319b313dac58b60a972c12883d908e13053a60484a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/REVIEW.md",
+          "sha256": "02789f3ddd14b978ad833bc3fdb1efdb7fbf7feac104dc2a76d31a2479c73e65"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/electric.diff",
+          "sha256": "95b480eac2039b58b39a56a80d0773686928c175d1029960560f499f16fe533d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/isolation.diff",
+          "sha256": "be64035757ae7b76eced05ff25f293ee6488c90ef869414cd95eef1a5bbbbd99"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/canonical-cold-review/spectator.diff",
+          "sha256": "b36c85b1c7a0a1f332d28070c80ebc76fb1b3bb6e506cc6f705ecc18c2925282"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/incorrect_flux_scope.stderr",
+          "sha256": "a37d8a7ceb66188ff928a549a3a488938b6a686055f95449b40dc976203c6f6c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/incorrect_flux_scope.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/odd_active_projection.stderr",
+          "sha256": "69bef45be4a4db0724e31e0275c5b6fd6e5323cbca6218569fb3113cad70384e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/odd_active_projection.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-first-order-electric-cold-review/READ_HASHES.json",
+          "sha256": "5d71ef463a4d19119c520acec85918a5142ee5693c43cdb1fc99182d0df1d681"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-first-order-electric-cold-review/RESULT.json",
+          "sha256": "221e3d600438a636ef4f7379dbee309510ef572f360ccee3196c5dd8b4f2b37d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-first-order-electric-cold-review/REVIEW.md",
+          "sha256": "e99adc84aa6ed58db8414b2fa7cea8b7af39b2d4e42ca9140f1f467920c1550e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-first-order-electric-cold-review/check.py",
+          "sha256": "1ec7b6d635a4f6da99f0239536a5d0ae49e4ae42118fcb932e1202c02e8f8868"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/DERIVATION.md",
+          "sha256": "b17fbf7ea58ac5d6a2cd227f9d0503a3daa2d8414cde36661304410ce78cb76a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/READ_HASHES.json",
+          "sha256": "8d4aa892a36b5fc0913229e09a83b638e8ba636037a4a2f68b5dfc9ba93e264d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/RESULT.json",
+          "sha256": "27670523c3b18c5b8d6c2ab9e2141dc542a071786b0842d25fdc791f93c50928"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/check.py",
+          "sha256": "d50952b9723dd8029183f7b7860d70f7233571e22c1ef8122882885c3bfb5b4f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation-cold-review/PREREGISTRATION.md",
+          "sha256": "92cbf3ba5f9c7d395fa11e2ca90a7353648ead9448cdcedf09154dcf35129d5a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation-cold-review/RESULT.json",
+          "sha256": "96910d22d641866d6df3e13f7ba3bd3b3555398b04b39f0173963b0d2c01b09b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation-cold-review/REVIEW.md",
+          "sha256": "a103508a146962fbd99e7b6acb851533173399188bdfad7778c6c5a2eb13d459"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation-cold-review/check.py",
+          "sha256": "08e46fdefb50a931f1d4743895efcdf8aa40f83a35431af48ee1e5332e4df832"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/DERIVATION.md",
+          "sha256": "f32b48672d749562a238e458b5bd3518ed8fcfea8af9200968e6c953bba7d796"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/HASHES.json",
+          "sha256": "0326e121000b24480ddd8859eb2baf1973fc360be73d314727f5bc499c105407"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/PREREGISTRATION.md",
+          "sha256": "b644cf228478b0dca1ab7a63ead39e2ff1cfe15dd90f186526e22eb71de4bc58"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/RESULT.json",
+          "sha256": "d91de50db070fd5d6555578dbc6016569f04c96ceec64f4fa31e79b9e3277590"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/check.py",
+          "sha256": "1fa42f29a94cb7c14520fc32a716e75301d89bfebc4c5b5dd022817891b5cfa9"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/OWN_FAILED_CONTROL.md",
+          "sha256": "03efaa3b910ee98625f49e2e44413e58af3240bd589c23b4ef7b0c2668ad9d75"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/PREREGISTRATION.md",
+          "sha256": "b93e08aa48cee5ce6c22cbdcad67a33658c75aed2b666b3e3f15822a7c76924c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/RESULT.json",
+          "sha256": "a9eb7a8782f99b88170976152b01678663053590eadf74ecd1700ddc06e23961"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/REVIEW.md",
+          "sha256": "24d3d5d202c0badc7e97f73a60e4d86da4a28b87a47037424e2cc10d50075fc1"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/check.py",
+          "sha256": "8718af991044a69e48823925b5a429a1582847b54557f64155ae1c5993b49c85"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/check_BEFORE_OWN_BOUND_REPAIR.py",
+          "sha256": "c86d25a637d41e1a44486469ed7893cd4855a195b1f2adf56751f17e35187256"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/DERIVATION.md",
+          "sha256": "b1561c3326a62a6a9d045c0380e93bd3eff5c7f22b1bef63238c4ef46487d9b1"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/HASHES.json",
+          "sha256": "fd7c3e5529d570bda334b0493f0d389a44b78dc4d74e1daf7ba165984639d865"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/PREREGISTRATION.md",
+          "sha256": "46495a2d4632d65043f177785f7c35ba9982f22300f7d09a61f5ac0c6dabe56e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/RESULT.json",
+          "sha256": "51d5f21aadc5a6c59ace94219e5b6e90304df5f3067a5174ec741d791afc643e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/RESULT_MEMO.md",
+          "sha256": "c2e6b9769117f8bc698e8f05ed37aae5d2b28552bd3d312c9ea6543a331b90bc"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/check.py",
+          "sha256": "86aba8ccf3bb41dae745ede2ec288371fc3dd8d7021d63aa24080e67f4bd28b0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/winding_omission.stderr",
+          "sha256": "c75bbf5ea5966eff0a1a614986073eab072a0fb931e164271a6a7944434764a9"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/winding_omission.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": "docs/NATIVE_ZERO_PENALTY_L4_DELAYED_SPLITTING_NOTE_2026-09-08.md",
+          "sha256": "08e1ff0b5eb5191678a331340cfe2ead29b7979371a460642c1dbe2c93a3e54c"
+        },
+        {
+          "status": "M",
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "sha256": "c88d7f48dccc0b490377319d07f6ead099353c5ce750b5b10d8341c42ebe7909"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_zero_penalty_l4_delayed_splitting_2026_09_08.json",
+          "sha256": "a749a2003fb5251aa381db3831b890a22bba27d23d71c3adf7f7843bdaeed8c4"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_zero_penalty_electric_exact_2026_09_08.py",
+          "sha256": "bd8570a47e6e199935abf44511f88ff23ca4688cd79a5caef1bc9d50b4c86dc5"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_zero_penalty_isolation_exact_2026_09_08.py",
+          "sha256": "a5cd08e68673bcb65fadfe99b8f2868d42295199e8e5b1295d0439fa6bf30f85"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_zero_penalty_l4_delayed_splitting_2026_09_08.py",
+          "sha256": "4c6dbb596372ecf83b5ede6ac9531884744a204f2480314db115de6dde64824d"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_zero_penalty_spectator_exact_2026_09_08.py",
+          "sha256": "207fbdd997d13ccef5d126914130b7c06ac50d0f1f80de1b17f44514eb826686"
+        }
+      ]
+    },
+    {
+      "pr": 8053,
+      "head": "e14737cf0270e845c0b0b61dfc58469790df4eba",
+      "original_base": "03696e613d72aa16741e3f533b5bd37a70f09512",
+      "merge_base": "03696e613d72aa16741e3f533b5bd37a70f09512",
+      "paths": [
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/ARTIFACT_PLAN.md",
+          "sha256": "4380a6e0e762363369db6385060b9fe093a366f66931a823b9eeb9f284317d2d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+          "sha256": "1a478636fbe8198e4b94222e873aa13bec37bf2f3db0d632e6e1e9648ccdc07f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/ISOLATED.stderr",
+          "sha256": "8585f9b3f610523c2826cfcf93b7b3765e74b950bdc3933a9a6c881dff2d90f5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/ISOLATED.stdout",
+          "sha256": "3e7bf07da9c1771463c02d1da9c816e2d2822ddf934cb107b0aa4598c536e05f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/ISOLATED_INPUT_HASHES.json",
+          "sha256": "125d1f04a3d6fada0b228f88daf60e1ced45b19864bc90678f476bb3fe7ea4a3"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/ISOLATION_RECEIPT.json",
+          "sha256": "175a211e20b863ae7668cb58bc925a4a311161f17ec8996243056da884fe21b3"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/PRE_DELTA_CONTROL.json",
+          "sha256": "9e02382c877a5053f7f8c618d91f02c4c248ed73c6a43b75318315f4c1faa286"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/PRE_DELTA_READ_HASHES.json",
+          "sha256": "43c816f1c456f27574d01080351561ad52f97511b355cbd78c995c1ab96421ad"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/READ_HASHES.json",
+          "sha256": "71ef26bd8bd03d5ba221b7d4aea5fcc81c0db1e445755dc6ebfd4f4ee6b3991b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/REVIEW.md",
+          "sha256": "828c0136a2a778b219da2f9755a297692ac3ec3c73367ffb630222f7a4259b11"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/isolate.py",
+          "sha256": "0e334c0a25e35a7970cb7911844753b652de9199ed7845832ecfba2afb3077bf"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CLAIM_STATUS_CERTIFICATE.md",
+          "sha256": "084fe7792e09a80643900cf5edd7e607b1080a1ace82f728e551168a9a31f7da"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CONTROL_CONTRACT.md",
+          "sha256": "0d8150d912546afc8e33e2b67978c28904e5d3e391ed6fcf3e47663de82913fc"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/GOAL.md",
+          "sha256": "b9027d3ac67af7885d81707e5765121b844371b1bc5c9a8ee6ffd80640fb7965"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/GRAPH_DELTA.json",
+          "sha256": "d09d2fc2a8a4a1b48e90e265a733cf18d8ee873459228f9b364e3a68620ab7ae"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/HANDOFF.md",
+          "sha256": "cd153b14110705e624d540d715dc7e0e9af09671cef385490b5e00f9e5f19b9b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/LITERATURE_BRIDGES.md",
+          "sha256": "7d1393144177a173afbb9936f0ac8fd84d575a30699c185b677ac88e05357e7e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/NO_GO_LEDGER.md",
+          "sha256": "ea3815bb1a15693b3245c40be161b5c40840c8bdd4da5de5b3d0b8332fda12e0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/OPPORTUNITY_QUEUE.md",
+          "sha256": "ce4c81105b2c256b615ad499010d88c93f712095227794eefbcf5460fd0ec275"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/ORIGINAL_HASHES.json",
+          "sha256": "3b60b01010a10ff804f629f81c3c073a1171d77292e8ad53df6096c78f1351e8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ARITHMETIC_PORT_CHECK.json",
+          "sha256": "9d6c9eca05058cbbd8caaa57645b4945f5b501ec6b02b94cca194e2973e18a85"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/ARITHMETIC_PORT_CHECK.json",
+          "sha256": "04444000e2ac5b944c2753d8a67543b840c042e5a91a3250aff9364621846da3"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/CANONICAL.stderr",
+          "sha256": "d77f98aef55aad5ff20abc30507a09d019afba9c2b0e3c93382ff83f9cbf7c63"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/CANONICAL.stdout",
+          "sha256": "32a2ab8961a9b9a75ef00ab6567f180a0d6c0aebcb9e06ae21872939d23c2aad"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/CANONICAL_FREEZE.json",
+          "sha256": "f603e953fa8dba8fa7322feb8ca4b8f079edf8c629a6b7e7efc5cef949b60bcd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/PAYLOAD_COMPARISON.json",
+          "sha256": "fe6cb88f6d298d8bacea858269a70f7230be500f1bc40d2a2084be5d82de9c4e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/PORT_REPORT.md",
+          "sha256": "2396ba2a62188abe140ca1d2df4e6481cd14d73dd77dba4d60947953eb658e7d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/outputs/native_weak_electric_spectator_gap_2026_09_08.json",
+          "sha256": "32a2ab8961a9b9a75ef00ab6567f180a0d6c0aebcb9e06ae21872939d23c2aad"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/INPUT_HASHES.json",
+          "sha256": "a8a47444874edf5232044445a87006bb4b54755993459aa05f9afabaac82004a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/scripts/native_weak_electric_rational_core_2026_09_08.py",
+          "sha256": "a1b077a16cb0afbc64c1b26e12e1440f605c21ef6d07285ad9ea01267ce11608"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/CANONICAL.stderr",
+          "sha256": "abddb0633af5c53bb61ec172b14708bdd32e052e969279effe2a29b1ffb37edb"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/CANONICAL.stdout",
+          "sha256": "e6bee57fd840b675418274d28ec0b106b4e8176e96032e3da2976812ae8c58f2"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/CANONICAL_FREEZE.json",
+          "sha256": "61e5de5bb1aff5b3ab3d1c9c863b5af057d1d4684bf1b2c50ad83d6b4a0506d5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/CONTAINMENT.diff",
+          "sha256": "022db93c3e8283c493d2c4f49188e5178b02974365eacd95c2459b38736dfe0a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/CONTAINMENT_CONTROL.json",
+          "sha256": "610729dac8d16ebbe6748c88c4996c8e3e187b13d0dc7cdcacf367755c1daba0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/DECODER_ORIGINAL/FREEZE.json",
+          "sha256": "d98c3589f29422f2503900deb6cec00a7df00517a06e797e12ed95b9e1e7a693"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/DECODER_ORIGINAL/REPORT.md",
+          "sha256": "4638bef8fd5dde26e9e225b86c71c9c18fb93986457b3d09d49f68aba18e1d01"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/DECODER_ORIGINAL/RESULT.json",
+          "sha256": "4224d2d33462b88e64dea4af33fd2b3c14b7c22f861541fb68919a7259c38825"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/DECODER_ORIGINAL/check.py",
+          "sha256": "aa8e7f3ad28673df7f9d7e20e0bc7b445a29af72d59afc4f74105ac2673a4c03"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/DECODER_ORIGINAL/decoder.py",
+          "sha256": "b385ea980db38d162139f149e362f4577a050c953452b3399e0ee2446bf86967"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/INVALID_CLI.stderr",
+          "sha256": "ea2ee9de58725fb7a0acb82aa0a76d52e1eb5bae509d7c57d42daec0fc9938b6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/INVALID_CLI.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_IDENTICAL_COPY_DEDUPLICATION.json",
+          "sha256": "18edf036db82e8ededde75e110cf9095df364d773853581c5dc7afbd3ecd1681"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_RESULTS.json",
+          "sha256": "b9fe12624c74653473479ee75ff637a6ad9b2331236a2f38c2d190abb2ca0631"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/INPUT_HASHES.json",
+          "sha256": "b4cb84f80c4d362e7089c64ab7c4cff73c8f0983f1814863226feffda5f84c05"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/scripts/native_weak_electric_rational_replay_2026_09_08.py",
+          "sha256": "a3487809ab4a951c6d274eb880d95236f06a3a71c67345d0595963d82076b2bd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/source.diff",
+          "sha256": "78c57a12f3ae85e77afc72951b372fc8281bb3a1dd390760b214cf2c492751d6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/stderr",
+          "sha256": "2e71d148439c97ea7d3eb4beb354b0b32dc9248ac01d12d3c5989278738e3ff5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/INPUT_HASHES.json",
+          "sha256": "14b44dd49af960cc15a7a891fe6f2d7e9ebb9a5a2de20bcecd912db9fcb9adad"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/PREFIXES.json",
+          "sha256": "0ca3f3ef025918034c8e63dede9bdf81eecc3d6b8582e421672e904f28914754"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/source.diff",
+          "sha256": "386ae4b199df9408ef3a4788900d1707aaf0e4092a20eae4e1b2dd5072862365"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/stderr",
+          "sha256": "67d215bc2b8b63148bd6021f5ab973c8618d14466bb2f06a25d226793d510478"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ORIGINAL_FREEZE.json",
+          "sha256": "9348c50517ab0430f93b9fe5b5c16e7f7fa744bf70676088daa3cb88a11d7706"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ORIGINAL_POST_RUN_RECEIPT.json",
+          "sha256": "fdb146e9eaf19515aaeceb059c6d84154a11fd126077b43d00354de855f304d5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ORIGINAL_RESULT_REPORT.md",
+          "sha256": "4bd33bebaed05a86d026a978fa38fbdfc4ad20fd5575921134e0ec2a2e215376"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ORIGINAL_core.py",
+          "sha256": "a1b077a16cb0afbc64c1b26e12e1440f605c21ef6d07285ad9ea01267ce11608"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ORIGINAL_decoder.py",
+          "sha256": "b385ea980db38d162139f149e362f4577a050c953452b3399e0ee2446bf86967"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ORIGINAL_postcheck.py",
+          "sha256": "983fde5492387976f9888bb2aafbbdcb56a0ad8528d50e22de901d3486039489"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/PAYLOAD_COMPARISON.json",
+          "sha256": "0bf4c2b25b4ffa9b057373b9e949b455e9fc124903e94bd8125de9384d7aa378"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/PORT_REPORT.md",
+          "sha256": "877827b589b91b8ecaafee482481fc346f24c3dd6514d32bd1d0558612c4f72a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/containment_control.py",
+          "sha256": "ab39dbdb2c9aaf76f3493046d9ef9dcb7ceb1a785358fea89aecea8cdb4f30d8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/postcheck.diff",
+          "sha256": "a018a2c06c4e8a3c00612bcb0a29654c0e4f9bc54102c230a8012e5d97666351"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/run_mutants.py",
+          "sha256": "92482461ff32b5e25aa81ea4f9fb6c331632b4483148fb1e60c70b413c6577f6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PR_BACKLOG.md",
+          "sha256": "e15a549df6b7cd3bbb587cbd49dea508e4c46b27c0e4690d8dd1a8a030aceb89"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/REVIEW_HISTORY.md",
+          "sha256": "14c8fc216458af7802d231c51a32af8da4b844efd183a8f45c9d592236df697a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/ROOT_CANONICAL_REVIEW.md",
+          "sha256": "5213aa5662ab7fd8f297a5e795c6c9202a455b0a5f0a035d92b67a6fe794541c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/ROUTE_PORTFOLIO.md",
+          "sha256": "44c9b5bfb71daa90e7640c199001d1a0bf639e70ca6cad65f4121639fc28b02d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/STATE.yaml",
+          "sha256": "54eccc380a3ea12a0ea8a2af0df2d369411e532db54301fc20fe4059eeecb5c9"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/TRACE_GATE.md",
+          "sha256": "118da2769b34d25be3b5b62df20594288ed0582f5a5016a89afc2c5c2946757f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-computation-cold-review/FINAL_DELTA.md",
+          "sha256": "ce76b446a63b85f10ed608bd7ec0c8eb3437e8439c983bd9877debe2f231351e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-computation-cold-review/RESULT.json",
+          "sha256": "209baea6610fb47023d5d5d6373cbc026a29523dac627721495366326dac4794"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-computation-cold-review/REVIEWED_FREEZE.json",
+          "sha256": "a19d7981b6c09ea02326c2dee2370ba863e7db0f2c0dc30daa275b2e2051e9a7"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-computation-cold-review/REVIEW_A19D.md",
+          "sha256": "bb8b7588f2401e8967c0622f3b54a752d1fb8cbaaf712a9fa6a1cae0b296472d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-computation-cold-review/check.py",
+          "sha256": "d55029a4f31cc29d77bdb71a2d39efee79b789a3f648258074ad18e42ccdb6e3"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/DERIVATION.md",
+          "sha256": "136d4af079bc5d557f72aec5fe5e2dcf68c5f04a8581fb3bef4a6903bcc617bf"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/HASHES.json",
+          "sha256": "fcf9f0df5c594f7067d3b545da4167d6ff12a0a94f126ea39ce79ab60b59c833"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/PREREGISTRATION.md",
+          "sha256": "a01a7c92c04d9f44c662e9e5012609eb5687185cebb5023d39dbe2e5619f58ff"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/RANK_HASHES.json",
+          "sha256": "a6711d6ef115e566dbdc3b264146fb37779ef2a7f2363edebf35bade1a5ce657"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/RANK_PREREGISTRATION.md",
+          "sha256": "98b35015b4440507cdabe6a38d9fad762a594f48023286b0f20f52b5e9b1145f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/RANK_RESULT.json",
+          "sha256": "7b495f6370953a56697431051b3c83ec5ee862702e09c737b9d6e6aa2febf396"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/RESULT.json",
+          "sha256": "fccf8ffc09a55b757ce3894345436520e54aa53b571242b446bfd24becea3ea3"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/check.py",
+          "sha256": "b4c9134bbd0abe4c47c65d69af6f3793b4382cd6280f4b5238cd6ec4e3173efa"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/rank.py",
+          "sha256": "b840fda894f8235c1f3b507eae57d8ee48fc0339e13df9eb3a1216c2cd8f1f85"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-support-cold-review/READ_HASHES.json",
+          "sha256": "1dfa79be642231eda26bb73f9f5cc1782e62deadc2af97fd8d64c6e35d72f934"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-support-cold-review/RESULT.json",
+          "sha256": "fb1e0484fb7024a699155996adfc85047d0447dece8d2ea83b27130ec0bc1e46"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-support-cold-review/REVIEW.md",
+          "sha256": "1e8d9a305d1b9c55a87b76d7268a4143168bf8828391389382e5c436e648d55f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-support-cold-review/check.py",
+          "sha256": "323bbcc45bc515a441f12ed487528a4b3e413fe5972b934c1b33cd21e2d7f7b3"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-gap-cold-review/PREREGISTRATION.md",
+          "sha256": "a26ee11117195dcf460c06e57f4e24646f1059ab3fcc4bae8243dce4298c3338"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-gap-cold-review/RESULT.json",
+          "sha256": "249076765b3052f9898394f0a57eff1c28581b35cf064e18cd907f9afdcd6d3f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-gap-cold-review/REVIEW.md",
+          "sha256": "a5697787d68f0517295bafa314a340a1efa430e16ad58fd7bfb4320b5eace055"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-gap-cold-review/check.py",
+          "sha256": "7f1477b8022131f0165a4177c5ec9ccd3306c2e5e77946155415369b0a1249af"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-cold-review/INDEPENDENT_LIFT.md",
+          "sha256": "0796332cef3886c54226c5b98dec09ee8ba8c7ea1cd678ce0c9e4678d08fd54e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-cold-review/READ_HASHES.json",
+          "sha256": "93130a5b54e7e849cc6476ea46f75c50998ea980c7e936398a1b4eaa3c0d1ae7"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-cold-review/RESULT.json",
+          "sha256": "ecaa2d5a80b3760244a290e58223c03df7cb62608a8f9dd384d3745a7c4ca6e8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-cold-review/REVIEW.md",
+          "sha256": "3ced5b3a97e1f9ee580c2ae28f481e8a5439e28c8938eea6a3062bfd7bb59cb7"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-cold-review/check.py",
+          "sha256": "68807fc69b054a9348218314ce7b309e3bb351b03a2a07b5667762f8db7dae3c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-root/DERIVATION.md",
+          "sha256": "444562e2088da5f75f8513b7d6ab412f18aef62489f722fbbbba54cd890dc56f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-root/HASHES.json",
+          "sha256": "b9b26e0087055e4083d7f788b88cde9d4cf371aecc70675ceece8369d012efce"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-root/PREREGISTRATION.md",
+          "sha256": "4dd558cda195ea8d6636d42ee68dc9f0da739d4c171d356db48a695e6342f3e6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-root/RESULT.json",
+          "sha256": "623edc31ab8a83a346557d8c5523077cffafccaf7001d1d572b13e8e2a50d888"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-root/check.py",
+          "sha256": "0335ed938fd82bf4750ca7058a8c0975f8b23880ee6a88538bfe931e70bcb4a9"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-production-root-review/AUTHORIZATION.json",
+          "sha256": "9ab7b809a73d74370f3da8ecafa9426c4a18454e13984f6613f92b2858e6b3dd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-production-root-review/REVIEW.md",
+          "sha256": "5da24680e0d868a9bcbf33cc7f0b94f92c145c883e15afdbf49f81295125e055"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-production-root-review/SHELL.stderr",
+          "sha256": "20cbbab84c9d055ef8e4aa643b1f7b4f20e87889cccf5ea47365a308f21d194c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-production-root-review/SHELL.stdout",
+          "sha256": "833dd2e65405acb083d9273a53b2c7e860413bdf117cf6f94947281823ed31c1"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-metric/DERIVATION.md",
+          "sha256": "1f5194f70d59cb5d6e943d26cc6152b612bc89aa53b2e666779c34a2ff926737"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-metric/FREEZE.json",
+          "sha256": "1f9049a01a813950d701deb2a6b623d792006dda4e3b64576c25b67350d93a41"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-metric/PREREGISTRATION.md",
+          "sha256": "623346312048f24b76eb3a197f41a17c61e92739cdc52f77afcd95cefbac7357"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-metric/RESULT.json",
+          "sha256": "a752718fc1e720fb1eaf9675fa26212334fcd8718d9c0507ef2d32aea58d4d26"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-metric/SOURCE_BINDINGS.json",
+          "sha256": "b6ffede1b176156bc4c792cc77ad5a86d9ee884d67314f6c3150a1b3724d9cb6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-metric/check.py",
+          "sha256": "2a6a8dcd61cbd375b601b0dd9293038f1ee9c84932e244e016a787a296672e28"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate-cold-review/READ_HASHES.json",
+          "sha256": "4914fbe200829a134a03218d72a7896b2bfa49202bc5ce11800ab8263ae0156d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate-cold-review/RESULT.json",
+          "sha256": "b907534b90b72604920612d8d274c151b9c7fc267946e15f7efeac06e27438c7"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate-cold-review/REVIEW.md",
+          "sha256": "24157e33738bb48dd8484678f07add8ae650abe3219d9909cf3a960772814a70"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate-cold-review/check.py",
+          "sha256": "f0d2e29ba50689582a364a81b40635684404b4979f16fe8235d5bbd28810efa6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/CONTROL_CONTRACT.md",
+          "sha256": "a13be5825e598c20fc1eee2f086699b769ba49305ced5987103064667a9d660f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/CONTROL_RESULT.json",
+          "sha256": "e8a47d5752643f2120f892e0c79a6dd1d1d35256ae28eb323da2256d0ebd534d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/DISPATCH.stderr",
+          "sha256": "4c85d4d496669e6453d60f6a0879528f151d7a854ec223a29b1e643017ebd535"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/DISPATCH.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/DISPATCH_FREEZE.json",
+          "sha256": "05af39b84d4baa91cf18aa2cff823ddf6486a46677e9334b349862d30e39eeb9"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/FAILED_SYNTHETIC_CONTROL.md",
+          "sha256": "4ec16a44aa757fabee6e13e13e1acd9abdd6e32fe5c3c05b30a0370c14adc330"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/FIXED_COST_CONTRACT.json",
+          "sha256": "881d1e4bdaa73cb899960de3f75c0335eaca3f23627c964bb0537ec3babfd343"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/FIXED_COST_RESULT.json",
+          "sha256": "eba507f3e64cf814791b8b01bdce834a6203bcc233abefe675da104af6d0c3de"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/FREEZE.json",
+          "sha256": "9348c50517ab0430f93b9fe5b5c16e7f7fa744bf70676088daa3cb88a11d7706"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/INPUT_BINDINGS.json",
+          "sha256": "d02ec3ad1d9f1ccd73d71823b8a57116ff0932fbbd2a2a7b830fff12c4ae4942"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/POST_RUN_RECEIPT.json",
+          "sha256": "fdb146e9eaf19515aaeceb059c6d84154a11fd126077b43d00354de855f304d5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/README.md",
+          "sha256": "77a212215849c3c33300ac4bb8a97c2f6ed7e9c45a59088d7c814b285ae710cb"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_INPUTS.json",
+          "sha256": "c85bfa579162ed2f97ead8db02729e329d4b51a450b5aab1d3eb6de16328858a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/SUMMARY.json",
+          "sha256": "562e1f357c8f03955301c3c3975ac2f1fed18911bbb7bd654bd89b1fd783b87b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_0.json",
+          "sha256": "a76c9fd669550aa97db823ab5c084eb021d844b7472db8f12fe11f0260bc70dd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_0.receipt.json",
+          "sha256": "7b07463dd29953fb6cbe0db937b763de05193ccf6460ff73a78bc47849c58a98"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_0.stderr",
+          "sha256": "fa839a5b18342334315e9a0d7d5fa2c715a0f7fe55a1824443dd661d8bd22714"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_0.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_12.json",
+          "sha256": "456df374c104617b01e38187681bf56ee1d481aaad3c9658d5dbb1d7b60a6cff"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_12.receipt.json",
+          "sha256": "847ad59acfe46d0bb99f23598816c813879dc2de2f79f6b10ef6f542fd2e3ce0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_12.stderr",
+          "sha256": "5fbfbaa276857705bb0ce10d8062790b63c1ba6e48d613516df5795c3e895482"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_12.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_3.json",
+          "sha256": "7f92f09abc5463f1bdad45623e9d564f7e4d2d58280a7f035af61074a907443a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_3.receipt.json",
+          "sha256": "ebe80abe37ab27c0110cb7fb969ed424b6ac8ed7bcd08be73751759d8cc940c5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_3.stderr",
+          "sha256": "bfbb486d22c4ba0e83a37560345b21a449950371c93eb644edac94e7291a5321"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_3.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_36.json",
+          "sha256": "d36a620f4b37bc37af2eab9b3d74f875dd4edab196191877c12f2fab12e3b5b8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_36.receipt.json",
+          "sha256": "b3878162bc21247300ba57368025dd6b666600cec610b30b2a7c5a8b3bb76dbb"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_36.stderr",
+          "sha256": "d38aa1a43650ae23aa581dbcbc4b5bb7107073db81f818b327a887e0f9f269c1"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_36.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_9.json",
+          "sha256": "fb92980c3952f2b46479d6bff76d1bb9a3664e610c9b7b18fed9ebe690af1072"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_9.receipt.json",
+          "sha256": "8dc1a65ea6c6c89db883b7191c382928dbbf0501994657cde8d9e83e0711255d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_9.stderr",
+          "sha256": "1cde3d80586fb8856fc123649d2eb5ef20e790821955098ad4fad6b329879e01"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_9.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_96.json",
+          "sha256": "8751ebc8668ddb5642d0ceeb15632dd28dcc37b41fdadfc6d2e71ea34f4feb7a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_96.receipt.json",
+          "sha256": "9834b7fc40f92b06f4fe03dc7c0f98e70d38d667e2c11b2d869c7390042f2d60"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_96.stderr",
+          "sha256": "9041b491b4d3cd46db44a8d1264af3cb828803d6acf18447b9da78b6809e600f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/REPLAY_OUTPUT/bridge_96.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/RESULT_REPORT.md",
+          "sha256": "4bd33bebaed05a86d026a978fa38fbdfc4ad20fd5575921134e0ec2a2e215376"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/RUN_CONTRACT_PROPOSAL.md",
+          "sha256": "bcc87f5b65de7608b656967ae72185f23fed1ec54648070f90c4b052e38c2559"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/controls.py",
+          "sha256": "0af3394c9f386fd11ca6239b3ed4c180c49842ab04d293ac97dfa46b5cdb878d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/controls_BEFORE_SYNTHETIC_FIX.py",
+          "sha256": "464c833a13f5da7d45867da1a0a8482f946db53241f44b837aebb0b8522f39a0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/core.py",
+          "sha256": "a1b077a16cb0afbc64c1b26e12e1440f605c21ef6d07285ad9ea01267ce11608"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/dispatch.py",
+          "sha256": "3d8dd2ee1e48d9d4f177612693bc6f1f3b86ae97e9f382d705bd0ade3262cc3c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/fixed_cost.py",
+          "sha256": "ff88a25e2b9498d8d6156f5b7d0d4bb499f405a2d3e7998ca6d1b8af2d2d4889"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-rational-postcertificate/postcheck.py",
+          "sha256": "983fde5492387976f9888bb2aafbbdcb56a0ad8528d50e22de901d3486039489"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/DERIVATION.md",
+          "sha256": "5c04f5e988b199fe1804a893eb9a219a2ef3dbe4675d77a4bac9b8e60a007db7"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/EXPORT_RESULT.json",
+          "sha256": "763cd2057c9f097b2ae03c4c1e3e25894340a6bb2dc85ef62b200642bb339960"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/EXPORT_SUPPLEMENT_CONTRACT.md",
+          "sha256": "b3bc5ee9518d59286a036868c520a9d6e158bb21d7145a9295c8573ae0c6b845"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/PREREGISTRATION.md",
+          "sha256": "77429373c665cb6a6cc51c4613167f25845014c41e44c75dfc2e0074d3a3709f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/RESULT.json",
+          "sha256": "b9c81acdadf6ccb43de74361a08defe1c819e9512424824f29272868b0f5c977"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/check.py",
+          "sha256": "89defccac1e672b7198c0c7b91489c8509b8a9c8916ad82c9f4133abf1e4f243"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-gap-certificates/export_check.py",
+          "sha256": "bc2074c5468abb664db57ec60cd3c10fb2dde76e66a1620cf369500be75cf4c4"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-spectrum/DERIVATION.md",
+          "sha256": "b1e6558a6e4864d228b54e0f4e9f73b44a6974ed549d17d41636568db50d025b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-spectrum/EXACT_LEVELS.json",
+          "sha256": "34737e15804e81ea510ffa4a44eb8c0de1e64959d1fd678a09974e9e6762ab90"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-spectrum/HASHES.json",
+          "sha256": "b273585c942df840a39980983b18fded2be551d8bf5f72c979e38cb8c8b185cd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectator-spectrum/PREREGISTRATION.md",
+          "sha256": "edd11008c4ca20f29d30fe01ec59a4bad2ed418b35cb50cc22778ee60b754825"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectrum-cold-review/READ_HASHES.json",
+          "sha256": "9c61f791d3f97b25fac6aee4afaeef1badb54e1e50f6d0997c2f093f5fd1464f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectrum-cold-review/RESULT.json",
+          "sha256": "3e8d71ab6216e970b36d0d2bdcfb579af29f78ecb13f9ae53c9d36b9c9f29de1"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectrum-cold-review/REVIEW.md",
+          "sha256": "5caade684d08d93fd77b030d7e2256a34fa788bef8326844eb281311f1750f3b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-spectrum-cold-review/check.py",
+          "sha256": "c7ee175a8cf2b3ba87e8c807aad3eb6d99c09ff954027595252674b235df08f6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/CANONICAL_CHAIN_MOCK_RESULT.json",
+          "sha256": "ac0e5cb296d085fee2872067ee6a9ab47479139553ae2db61e358509495a0204"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/COMPUTATION_FREEZE.json",
+          "sha256": "ef62e96fb473f7c9e3f61f511edf33c84f4fd03f8274f79696abd446b876a90d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/COST_FREEZE.json",
+          "sha256": "465b706a66f1737ccc701ebd699e7189d4eef4d42753264e5c6014cf12fc2750"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/COST_PROPOSAL.md",
+          "sha256": "0bd70c90d122c17ffc6c904e7ab664f66585fdd9690483ec94bf1768431554c4"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/DESIGN.md",
+          "sha256": "820f39d061ff3a9e7afe7a962669f3d81859aaadf774779c7804e64217b155f5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/DESIGN_FREEZE.json",
+          "sha256": "c206a7717dd2a62d990605c76bf91e31777d4910c5e44c4ed713f1e0f8b892d7"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/DESIGN_FREEZE_INITIAL.json",
+          "sha256": "b5a5c746425c78fce0853863befe1dac4943ef5540aed509ac63aaa7d998e42b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/DESIGN_RESULT.json",
+          "sha256": "5b7ee37134e7b0779b3c162e112527e7f85df5aca6cc4c7eafaf53be77e873f2"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/DETERMINISTIC_SUPPLEMENT_HASHES.json",
+          "sha256": "7652fe211bfa439f68c42676d1acd85c90a86cb81090d178743408ddf98efdd1"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/DP_COMPLETE_MOCK_RESULT.json",
+          "sha256": "277010ce878293b5ce3122872c16bfaab5bf3b1b08a008b2c4996f5b1276ce98"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/DP_MOCK_RESULT.json",
+          "sha256": "013febcf4bdeb5777a0f10cf455e0ca1c490497a5bfe960e53396fd7f157f588"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/FAILURE_HISTORY.md",
+          "sha256": "bb76f6b3052115e3eec204299c2ba2a663ed99e4e1519fbc2c500aeccbb824c1"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/FRAME_RESULT.json",
+          "sha256": "577e3004e6fe8ef1a6fa2ab469fa89f8f54be041fb213fcca26145ef9805c9d5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/FULL_COMPUTATION_PROPOSAL.md",
+          "sha256": "39c97e81b4b7c1627aa893b0b2280edaa0fc95eccf73379611ec4028a8e11ea2"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/PREFIXES.json",
+          "sha256": "7a1541264d3af589b03e8f1335d5441370acdf965ad926ce8483f7fe9c17cf8a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/PREFIX_SUMMARY.json",
+          "sha256": "0efa5785f4134452d2964d09c89897c502d33cf941516095a593f0f374ddc65a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/PREREGISTRATION.md",
+          "sha256": "16bf236d5841291890408be4bf3b82eb15fb74457ad3c3724d5d14ed8f51ae49"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/RESIDUAL_CONTROL_RESULT.json",
+          "sha256": "f2a9ca752e7dbe3ca3397e90bec92fddf1a95f4247ce35e862ab8071fd72775e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/RUNTIME.json",
+          "sha256": "3e8b781647aed218e8ada1d49b68cc74ae9174f9eb595121b2eeb743661d0269"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/SOLVER_CONTROL_RESULT.json",
+          "sha256": "7edbcc75272b3cdb0f90a0565a6d46b93c10b4f4e9ff54fdd2c5f1f377a03cbc"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/TRACE_GAP_RESULT.json",
+          "sha256": "56b742acb5753c7b00b7e9882278d271a07620c84251c16577679cb9d9b9729f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/CANONICAL_CHAIN_MOCK_RESULT.json",
+          "sha256": "ac0e5cb296d085fee2872067ee6a9ab47479139553ae2db61e358509495a0204"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/COMPUTATION_FREEZE.json",
+          "sha256": "a19d7981b6c09ea02326c2dee2370ba863e7db0f2c0dc30daa275b2e2051e9a7"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/DESIGN.md",
+          "sha256": "820f39d061ff3a9e7afe7a962669f3d81859aaadf774779c7804e64217b155f5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/DP_COMPLETE_MOCK_RESULT.json",
+          "sha256": "277010ce878293b5ce3122872c16bfaab5bf3b1b08a008b2c4996f5b1276ce98"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/FULL_COMPUTATION_PROPOSAL.md",
+          "sha256": "06313bbe0fcc6c931579f6664329a706376236fdabf27e296aae2d7639625a02"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/PREFIXES.json",
+          "sha256": "7a1541264d3af589b03e8f1335d5441370acdf965ad926ce8483f7fe9c17cf8a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/RESIDUAL_CONTROL_RESULT.json",
+          "sha256": "a9ec4a8d239caefbf2883bf89e65fb54092d0cd035a4fadcec480defdb49037b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/SOLVER_CONTROL_RESULT.json",
+          "sha256": "54b5cd5bc4d56eaf173dc000c7434599920c0331ae3835ede26519bae02d05c9"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/TRACE_GAP_RESULT.json",
+          "sha256": "56b742acb5753c7b00b7e9882278d271a07620c84251c16577679cb9d9b9729f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/canonical_chain_mock.py",
+          "sha256": "5c7792b402a031c5de082338fc7110f6c652973fcbb214c2de8e0f52881f8d3c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/dp_complete_mock.py",
+          "sha256": "8d4d4216c29f3a0a37c477a157b0640da81b0f6e26ebafc5260aec088f2b9154"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/launch_complete.py",
+          "sha256": "b8edd4ab01200f93ed675b6752ad63356d1db789847c2dc95a05187c9a0f1ab8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/residual_controls.py",
+          "sha256": "605e33631c8896712befb534dfd622818395f70a4508fec3b2010862a86f0aeb"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/run_bridge.py",
+          "sha256": "5de42789cb2b204a2944336daa16379e8ee885955e1d46e71cfd1e045fbe1059"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/solver_controls.py",
+          "sha256": "e98233fc270a1ea7dea83bf2ac4f52034528aad3bc376242247b0aefa1491218"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/solver_core.py",
+          "sha256": "c7d16f4fc3921aa55f2ebde07cae5c23354da21435b49be0a97fa54098a87e89"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/trace_gap_control.py",
+          "sha256": "69628bf327c7c06a02495d7da0fb6080678d923d2c4b1cd97229a593560e6941"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/canonical_chain_mock.py",
+          "sha256": "5c7792b402a031c5de082338fc7110f6c652973fcbb214c2de8e0f52881f8d3c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/check_design.py",
+          "sha256": "f3f08f7685b355cab726bd8cf9220973ef89fc1976a816a637b8e865d1377c18"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/cost_fixture.py",
+          "sha256": "14b76ab78b18353fca82f1fba15a19ad3ea7fecbc6256065fe78bac500d1574f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/dp_complete_mock.py",
+          "sha256": "8d4d4216c29f3a0a37c477a157b0640da81b0f6e26ebafc5260aec088f2b9154"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/dp_mock.py",
+          "sha256": "06ef280db4b662e9a3d6353377212643849a8786bcc183ac01937b879d742f04"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/export_prefixes.py",
+          "sha256": "212a30b5fb707c8e09648847d89d212ce8f6817df89e06d287fb4940217ecb8f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/frame_control.py",
+          "sha256": "58df7791ea2ec76d5b070526ec21c4898528040450547acf32888b0f615a4353"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/frame_control_BEFORE_ROUNDING_GUARD.py",
+          "sha256": "464590a783b21b9e8d48dd79175c2eb6b6dd20a9f7749f1ab469983d6dc2391a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/launch_complete.py",
+          "sha256": "eb5f16b541948037776d3d5ae721874cf5c67fea710fd930f9df794e3b2cbfb2"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/launch_complete.py.VECTOR_RECEIPT.diff",
+          "sha256": "a9cb06f0481bbea18a60fc09f429f6cbc99e6cb6d6cb6e7ba8c2347af46acfe2"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/residual_controls.py",
+          "sha256": "605e33631c8896712befb534dfd622818395f70a4508fec3b2010862a86f0aeb"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/run_bridge.py",
+          "sha256": "52d714cc33ebf59dc59f76a048ecdf436783d9dc652222edd9ece18775f358bd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/run_bridge.py.VECTOR_RECEIPT.diff",
+          "sha256": "e322c49157c890922faf6ee38ab7557f3d12fb2f111bdce829a0f4bf3b8fc403"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/runtime_binding.py",
+          "sha256": "2659d97f05e581b1e25f4cfee1f59ad1e31d2a43f8359ed46c7633835fe03506"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/solver_controls.py",
+          "sha256": "e98233fc270a1ea7dea83bf2ac4f52034528aad3bc376242247b0aefa1491218"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/solver_core.py",
+          "sha256": "acf341b6122003348d8ffb9480b84196626705d93cea8a4f0f78c6e386338210"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/solver_core.py.VECTOR_RECEIPT.diff",
+          "sha256": "45417683f69980de3cd65c26baa9fab40d17810ae7389e39d5fd31587c78fa65"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/trace_gap_control.py",
+          "sha256": "69628bf327c7c06a02495d7da0fb6080678d923d2c4b1cd97229a593560e6941"
+        },
+        {
+          "status": "A",
+          "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+          "sha256": "31f26e16ed3b57157655d62473eb764dcaa6af85a7e85bba2a2e7ea0fb04e0cb"
+        },
+        {
+          "status": "M",
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "sha256": "bc69ad2027c6b49c4cc707f0944cf8b8bd7f1c312f50720358d59e415f9694d2"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08.json",
+          "sha256": "e6bee57fd840b675418274d28ec0b106b4e8176e96032e3da2976812ae8c58f2"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/FRAME_RESULT.json",
+          "sha256": "577e3004e6fe8ef1a6fa2ab469fa89f8f54be041fb213fcca26145ef9805c9d5"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/INPUT_HASHES.json",
+          "sha256": "00deffc08c48d702e3d4e8c5d014bfaaca9be459a0508145a56b9eb23592e47d"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/PREFIXES.json",
+          "sha256": "7a1541264d3af589b03e8f1335d5441370acdf965ad926ce8483f7fe9c17cf8a"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_0.json",
+          "sha256": "8c58a92947db602e62a2871d5489defd4c4442e81705bb8ec6e1bddd346aa8e7"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_0.npz",
+          "sha256": "ea0b5593de5f738f1430e550ffc805c942b59478c8b5725aa08278cd1277008b"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_12.json",
+          "sha256": "327274437499694da8ddf9bd7470ba0bf56c3fff73c4689fdf0ff2cc8f1038d7"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_12.npz",
+          "sha256": "cff2680feb07ee64e7d064b8e1af33ff19ded446ea5754ee6fee51c9a4675a28"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_3.json",
+          "sha256": "9fb476b3218939e6b64be05902235fe1bd2f94b600d5c5f3b7f7baa0a8efd03b"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_3.npz",
+          "sha256": "fe3ab4ce263095f8fccf57987246a3e3a9f7cb638a20fbc49b530f8f6a030230"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_36.json",
+          "sha256": "7775581b5957a47327ad9d9459f3c2103c56d59d0af899828a267aa3e8987bd8"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_36.npz",
+          "sha256": "352ee562d54521edbd9aa8bc27d3ae34720fc661ae7802edc733fe6da9e07bd6"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_9.json",
+          "sha256": "f631f9bd2874374d337c20175236cb826da24dde84fa73673ad5797692dd97b5"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_9.npz",
+          "sha256": "7db1f1a69c83847c0cb20f145b532435750f3b073095d09bad3ead4dd579e792"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_96.json",
+          "sha256": "1f0fa6225a80312a9f0c52c81c21112c15d82505c1b4ef2766974192d53b7438"
+        },
+        {
+          "status": "A",
+          "path": "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_96.npz",
+          "sha256": "cae0e071253c5edf04c176068c9e53028d89af63e65554e256f9ba1f8ef223b7"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_weak_electric_candidate_decoder_2026_09_08.py",
+          "sha256": "b385ea980db38d162139f149e362f4577a050c953452b3399e0ee2446bf86967"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_weak_electric_magnetic_symmetry_2026_09_08.py",
+          "sha256": "31dec50c82ef64fd8794639044cee6725f5a3ff9b23c02fa2c3b6a030ca4b734"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_weak_electric_rational_core_2026_09_08.py",
+          "sha256": "3782ca62520afde60217ae5e8e3a1b79dde49678619e6f7eaa72da0fc1bbf72c"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_weak_electric_rational_replay_2026_09_08.py",
+          "sha256": "afd23f16e67608b07fda2f682c53e0eb818914435c5a61bb222d987b0e21b01a"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_weak_electric_spectator_gap_2026_09_08.py",
+          "sha256": "f381eb41493d4e251c2b33e45cebe915b9ccf165f5347b7847a5794023aa2acd"
+        }
+      ]
+    },
+    {
+      "pr": 8058,
+      "head": "a814da6cc1178ac015914c9088fc04b2e635963e",
+      "original_base": "e14737cf0270e845c0b0b61dfc58469790df4eba",
+      "merge_base": "e14737cf0270e845c0b0b61dfc58469790df4eba",
+      "paths": [
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/ARTIFACT_PLAN.md",
+          "sha256": "71dc8a1f39c08033f13d54d4ed6a793fe4d986a5e42d3203f9366af5cbda9dbd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+          "sha256": "6a825b9e97d898d3535f14e550c4d444ed436d3bc8f8507e2f3bbfd3e520633d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/CLAIM_STATUS_CERTIFICATE.md",
+          "sha256": "cd6e1c5cb24fb0c085f01d12ce92ddf1d3eedc7509fe0e6b5052a7afbd4cc503"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/GOAL.md",
+          "sha256": "bdd6b439cb1695ea680227c1da08ca40d65741726dfe4de475652deae54c23de"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/HANDOFF.md",
+          "sha256": "b573407aa1656e7a26f4044984300983ef048637b9a29ec8f936b978f501c789"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/LITERATURE_BRIDGES.md",
+          "sha256": "f81c4c95dd38e5b799dc204cb79a9c39f6616fa88e70a4e614edd94bae1eeb5e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/NO_GO_LEDGER.md",
+          "sha256": "1c6010fe2c232e467927f379ef2ab83651d4e48574c5717fc6fe7bf3f35e6f65"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/OPPORTUNITY_QUEUE.md",
+          "sha256": "7bf19c73dd37c21dcd7f481b30da4ae3e547f8b414eedcfa924c42251a351fdd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/ORIGINAL_HASHES.json",
+          "sha256": "b5302c51df803f73de64215eab3cb80cf94503a143309da725759b13f745d143"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/AUTHOR_TIME.stderr",
+          "sha256": "e945ca2fabe2b6f1da1fb1a41ad7371a8e528b8c6112b3a9d746399d4df55c8c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/CLI.json",
+          "sha256": "fffd168e3000a76830644d9598702ebc598d24ec43ea2d68829125379d55afad"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/GRAPH_REVIEW.json",
+          "sha256": "7362463c9218b706436a921bf3c47eae3b4af28940cd29bd3fefc0671d7f41d5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/ISOLATED.json",
+          "sha256": "d1313da8d64af3a58100d36cadc5d4c1923940c56ec7d19e2d86a8a0485893f2"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/ISOLATED.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/ISOLATION_RECEIPT.json",
+          "sha256": "dda56cf454a836181b8cbfcf79fcb265f75e3b3779a876ec1416dfccaa53a086"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/MUTANTS.json",
+          "sha256": "98e68d18df9f9e422d99f86bbd49751b0cc1e761071e38f80562a0afea3dd9c5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/electric_normalization.diff",
+          "sha256": "3db6e04f261c1efeb5dee92a0efc140619832b1ad906a5c389b9f8be92cdbe95"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/electric_normalization.stderr",
+          "sha256": "4acc4c11a5e7f4b371061398a2d17fea86a946f3dc221dfd8f3eef447fa5f5a4"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/CANONICAL_ATTRIBUTION_ADDENDUM.md",
+          "sha256": "3290f552cfc74c229fd12c0dba5b75ead78abacc7c4aec3492e9e1a04868380d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/CANONICAL_READ_HASHES.json",
+          "sha256": "96856e55c7147e35a045128fb17f05a5168124b490af8f10430d264f134dfec3"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/CANONICAL_REVIEW.md",
+          "sha256": "e77bcea76fcd504f8bd6b12298595aecfeb949f6cb0c4750c908e37ab6c88342"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/HASHES.json",
+          "sha256": "23540ac5da1ea1126be02efc21d50429a148bf4fad505e759e0780031debf2da"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/RESULT.json",
+          "sha256": "27e122fffae649b878010f4ed1768247be01fdc998d838dcf6752a9b9e2ab4ad"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/REVIEW.md",
+          "sha256": "0bc1c8bd76e344210f3c88992eaa3369111ccca9a0422741be210d7a8674f991"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/check.py",
+          "sha256": "f27201104a4ad71ad607b564f2b988d33a5bc4f7a50e1ece07e4ce549f53027c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/native_car_sign.diff",
+          "sha256": "d62a43514ada2d08638c43e6b454fb7d3419ad70515684af54756e6f28830e82"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/native_car_sign.stderr",
+          "sha256": "c0dcc2ce74b1e6c3d3aff26ea5bb40d66a72ab296cb83153177b99a7a5bb2107"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/odd_exchange_sign.diff",
+          "sha256": "e7fb6ccea0680e4090f0b5ce7fff52a818287c15e6778d6ad3f87c5f8ac02e5c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/odd_exchange_sign.stderr",
+          "sha256": "595b7997f5fcbec443c20df44f3525e590a76be206dc7382eeda0d80eb7ffd4b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/vacuum_offset.diff",
+          "sha256": "a67569329946fb530b345e3f9ee6625a6a753c9e056d022cc3974123559c31c6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/vacuum_offset.stderr",
+          "sha256": "c0dcc2ce74b1e6c3d3aff26ea5bb40d66a72ab296cb83153177b99a7a5bb2107"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/PR_BACKLOG.md",
+          "sha256": "2ecf13913395da551748fca9465f68ec4db8b18065d5b023485bcebe82c53026"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/REVIEW_HISTORY.md",
+          "sha256": "e90aaf1e555682a7a9177a9165037508e28f6de9dfbef53688fca923b5455a80"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/ROUTE_PORTFOLIO.md",
+          "sha256": "e817030bf93d8260277f5b1cebe24f124cce8dd9e5d1110738d11e8e646a883b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/SOURCE_FREEZE.json",
+          "sha256": "cc5efb894a06e9cab7c1a6ae232c10fb795d6b98673373675a5d8ce91f011432"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/STATE.yaml",
+          "sha256": "df5737000ddedd11879ec75f60c1d60f7b6bc18361480d752cc2878c12e6639b"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/TRACE_GATE.md",
+          "sha256": "e1a453d4db6494d0dd4c10d9c9f74637040464b23bf46e76026b30165f93d404"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-cold-review/RESULT.json",
+          "sha256": "3a8c83ef65ebadb6463251fbe3427928335e56ff643330c2840c36e105222da0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-cold-review/REVIEW.md",
+          "sha256": "469eab7d2056c8091e7d1687cbd05fc527588f6c6cf410b9dafe471829f65988"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-cold-review/control.py",
+          "sha256": "4ebe4ee1d1a17b8be927f781117dd46b007e0230b9d2ae98d3569ae89d36c71f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/FREEZE.json",
+          "sha256": "2af7284cfe4861426869c42360bbff1bbf571696fd3c12df0ea2f616a18842f5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/INPUTS.json",
+          "sha256": "d747898bd6f2783ceca4542d39a28d1ee2ffbc2cf71ac21d33cf32d1e4c68ac4"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/RESULT.json",
+          "sha256": "8d04a8cfb2e3b7601385e5c983c4c2bb0e19a6147dbc39ab23f6789e2f992fa5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/REVIEW.md",
+          "sha256": "46b202e9cce7534770d4949d4c9e6243d562802a120fc0dc9d17c5afbb4e0bde"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/replay.py",
+          "sha256": "2f64cc5a606a64838e4bba5a1789d217f703a159defb24519a85c8d18e7a14ed"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/time.stderr",
+          "sha256": "c7cb8bbade8b05d481b1054520edf55539a284d54f8f6e52d67d6c94a294f899"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-run-1085/RESULT.json",
+          "sha256": "66fe5f59eb4ba9c1382966d3d3f829f9eed0fc4f4860c607eea41c87e70d87b2"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-run-1085/SOLVE_VECTORS.json",
+          "sha256": "13aadfc2e7940e0bb635868f0309a83252f4a24be66e6060bbff4024636e41e9"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/BEFORE_REUSED_PRODUCTS_FREEZE.json",
+          "sha256": "1418df386b05f43bcd966007925f8829375b0018f359d3bd103c113170c53caf"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/FREEZE.json",
+          "sha256": "1085e0ac7288428d50d3a2b9505b6b8615784149b46ca414067e7bd36acde536"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/PREREGISTRATION.md",
+          "sha256": "321fa99dbf23e9fe97351e19e55380fbabd1797a94bf7a3df0527a545c31224f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/PROTOCOL.md",
+          "sha256": "3a3c57bd07c6bfce6e0069cc190fbc7537f9e26306a57218ffda84e8ed47f592"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/core.py",
+          "sha256": "a054c8d5f32685ee2be6644ce9b0f008c9efced342d2555a06f098f0e525baa4"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/run.py",
+          "sha256": "6024c5b82be981361a1ce6353117a49b6e3de5744663833a9dd7e418d5d79bbd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization-cold-review/PRE_FREEZE.json",
+          "sha256": "de3b4ca67713ad5008ffcb6ba6ba09670b409a924de5233e0f26a5e148b579fa"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization-cold-review/READ_HASHES.json",
+          "sha256": "f6a3786c8f67354b1b7c9edd3bdcdcbac87d5048a93a6f99e0d6bb9b4445dbbb"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization-cold-review/RESULT.json",
+          "sha256": "9220390bff31e67d7e0d336e04c9b0a4a63694487966fdc2658943b1919621a8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization-cold-review/REVIEW.md",
+          "sha256": "9abd2f91eb94da7a0a64bcf7167d1519fd93f1ed28854ec289608820301df9bd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization-cold-review/check.py",
+          "sha256": "0c2d1c72c7108ff1b9f65dd15b51f7d00e624275a271cd0efa9517e6473781bf"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization/BEFORE_ZERO_TOGGLE_CLARIFICATION.md",
+          "sha256": "a8f05a94646c0b5ef97bda9706c2140c94a6ab433498d7b9769b9a1a7b801182"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization/DERIVATION.md",
+          "sha256": "410b2f916a59b4d4a777f89f181b17ca7a4c3a092fd5bb25ea20c17812a226ca"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization/HASHES.json",
+          "sha256": "f6a3786c8f67354b1b7c9edd3bdcdcbac87d5048a93a6f99e0d6bb9b4445dbbb"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-exact-identity-cold-review/HASHES.json",
+          "sha256": "23540ac5da1ea1126be02efc21d50429a148bf4fad505e759e0780031debf2da"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-exact-identity-cold-review/RESULT.json",
+          "sha256": "27e122fffae649b878010f4ed1768247be01fdc998d838dcf6752a9b9e2ab4ad"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-exact-identity-cold-review/REVIEW.md",
+          "sha256": "0bc1c8bd76e344210f3c88992eaa3369111ccca9a0422741be210d7a8674f991"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-exact-identity-cold-review/check.py",
+          "sha256": "f27201104a4ad71ad607b564f2b988d33a5bc4f7a50e1ece07e4ce549f53027c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-exact-identity/ALGEBRA.json",
+          "sha256": "559397046b6d13b1183ebbd7397bcfcf0d46b44e264c501943408d1b291899cf"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-exact-identity/DERIVATION.md",
+          "sha256": "6c553550b41e2d67a73a5adc2f5caa3e8b211ac04cde8122217b2795a8637f86"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-exact-identity/HASHES.json",
+          "sha256": "2cf6d453cac8dc5936e8c8f8c46288bbf0d73160b0f048963ff34dc66f236b59"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-interpretation/COMMUTANT.json",
+          "sha256": "24f2eb50961784f25dc755e4b714d7821a37c72267495a6b05c476d87837f7d4"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-interpretation/DERIVATION.md",
+          "sha256": "5e53247f48a0d7b294161203d5ba59cb2a6db2e362da984b864ac5cc6b76957f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-interpretation/PREREGISTRATION.md",
+          "sha256": "eec62180b205bd5549f26072521359dc85d3ef9144e2d856104654194e20afea"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-interpretation/commutant.py",
+          "sha256": "a99682a3cdb87428c74fb17faf41fdfdc3e907d2caa2af623b15d2bfbf15461a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-interpretation/stdout.txt",
+          "sha256": "c7df8406fcfa3d851209459f7ab3a8e08b7d211802f55d7c955899b2c1418108"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-interpretation/time.txt",
+          "sha256": "c38290af49c7c7eb33bf667433df4264bfeb5121011129c5c76124c1f32cb261"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/AUTHOR_TIME.stderr",
+          "sha256": "399620ef517db3019b07059c886b1caa10e4fb26f10852fb627e51a08e22035d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/CLI.json",
+          "sha256": "fffd168e3000a76830644d9598702ebc598d24ec43ea2d68829125379d55afad"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/ISOLATED.json",
+          "sha256": "fa0d649669c962e5e3fdc7d20e79d53c64acbb20c23630869f1184e8ebb654d7"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/ISOLATED.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/ISOLATION_RECEIPT.json",
+          "sha256": "aa6c1fc489b17da14d1386b06677fac978a2a0a2a92550e7460cdfd9be7953dd"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/MUTANTS.json",
+          "sha256": "98e68d18df9f9e422d99f86bbd49751b0cc1e761071e38f80562a0afea3dd9c5"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/electric_normalization.diff",
+          "sha256": "3db6e04f261c1efeb5dee92a0efc140619832b1ad906a5c389b9f8be92cdbe95"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/electric_normalization.stderr",
+          "sha256": "d16324b7abf4c4f430c3bbca8782d03b7a56a1a0de3558d789bd084cd8185d43"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/native_car_sign.diff",
+          "sha256": "d62a43514ada2d08638c43e6b454fb7d3419ad70515684af54756e6f28830e82"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/native_car_sign.stderr",
+          "sha256": "94f481afd2a99a12e1ad82359c81a7f4227927b89392cf5a145e0fe92c2c2a6c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/odd_exchange_sign.diff",
+          "sha256": "e7fb6ccea0680e4090f0b5ce7fff52a818287c15e6778d6ad3f87c5f8ac02e5c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/odd_exchange_sign.stderr",
+          "sha256": "872aff3cc58351afc300c37fee88e6ca4e50b4c0f46d8848c4add99d5fbf071d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/vacuum_offset.diff",
+          "sha256": "a67569329946fb530b345e3f9ee6625a6a753c9e056d022cc3974123559c31c6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/PORT_RECORDS/vacuum_offset.stderr",
+          "sha256": "94f481afd2a99a12e1ad82359c81a7f4227927b89392cf5a145e0fe92c2c2a6c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/SOURCE_FREEZE.json",
+          "sha256": "762edba40b12debba441a7925a3bbf2fb3a72ec7cc5eab2905eee42df24c353a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+          "sha256": "ee1a86dc065da209149e3bf1277945a38c34e012a5c15ffb1064b6f3f5fe93bc"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/scripts/native_third_order_star_vertex_2026_09_08.json",
+          "sha256": "c6d60c505fcf9a9082e4aa4ae70d4ee3ebd2baaa0d4d5e6a94c6ed980d7acb0a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/scripts/native_third_order_star_vertex_2026_09_08.py",
+          "sha256": "3f33831956d8c6a03db5410280a0f3e819ed77d3574006144879dc9b5cd5c267"
+        },
+        {
+          "status": "A",
+          "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+          "sha256": "bbddcf8229a92a19408caa0a829ef716c44767985f8402af334c95c155b230f8"
+        },
+        {
+          "status": "M",
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "sha256": "8b50c4c01111ec2899d4a8748d0e9b70695e421b2a8d1be51a60c580b6f7352a"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_third_order_star_vertex_2026_09_08.json",
+          "sha256": "4589e566d6d04c0533c98badfac410ac651740be23093db30b0aef9c33689124"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_third_order_star_vertex_2026_09_08.py",
+          "sha256": "5213ed046ffde2094b972444a492e3f8953564b0e2432448da9870901bec0b9b"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_third_order_star_vertex_replay_2026_09_08.py",
+          "sha256": "638755ab1925335e674414cd031c803d098affd92fe49de98d657a5f02f38641"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_third_order_star_vertex_two_mode_2026_09_08.py",
+          "sha256": "928b0c65d6627d558dff687ce1661562690acdfae0cf44f3cf7f9b5f96974d71"
+        }
+      ]
+    }
+  ],
+  "source_paths": [
+    "docs/NATIVE_ZERO_PENALTY_L4_DELAYED_SPLITTING_NOTE_2026-09-08.md",
+    "outputs/native_zero_penalty_l4_delayed_splitting_2026_09_08.json",
+    "scripts/native_zero_penalty_electric_exact_2026_09_08.py",
+    "scripts/native_zero_penalty_isolation_exact_2026_09_08.py",
+    "scripts/native_zero_penalty_l4_delayed_splitting_2026_09_08.py",
+    "scripts/native_zero_penalty_spectator_exact_2026_09_08.py",
+    "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/FRAME_RESULT.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/INPUT_HASHES.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/PREFIXES.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_0.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_0.npz",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_12.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_12.npz",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_3.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_3.npz",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_36.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_36.npz",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_9.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_9.npz",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_96.json",
+    "outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_96.npz",
+    "scripts/native_weak_electric_candidate_decoder_2026_09_08.py",
+    "scripts/native_weak_electric_magnetic_symmetry_2026_09_08.py",
+    "scripts/native_weak_electric_rational_core_2026_09_08.py",
+    "scripts/native_weak_electric_rational_replay_2026_09_08.py",
+    "scripts/native_weak_electric_spectator_gap_2026_09_08.py",
+    "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+    "scripts/native_third_order_star_vertex_2026_09_08.json",
+    "scripts/native_third_order_star_vertex_2026_09_08.py",
+    "scripts/native_third_order_star_vertex_replay_2026_09_08.py",
+    "scripts/native_third_order_star_vertex_two_mode_2026_09_08.py"
+  ]
+}

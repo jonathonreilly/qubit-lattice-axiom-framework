@@ -1,0 +1,358 @@
+()
+ except (ValueError,UnicodeError,SyntaxError):ck(True)
+ else:raise ValueError('mutant survived')
+for bridge in (0,3,9,12,36,96):
+ f=out/f'bridge_{bridge}.npz';pins[str(f)]=hashlib.sha256(f.read_bytes()).hexdigest();a=decoder.arrays(f);z,r,rows=decoder.load(f.with_suffix('.json'),prefix)
+ with np.load(f,allow_pickle=False) as original:
+  for name,(shape,values) in a.items():
+   ck(tuple(original[name].shape)==shape)
+   flat=original[name].ravel()
+   if name=='vectors':ck(b''.join(struct.pack('<d',v) for v in values)==flat.tobytes())
+   else:ck(values==flat.tolist())
+  ck(len(rows)==len(original['k']))
+# Actual candidate NPY mutations with altered headers/payload, bypassing hash gates.
+with zipfile.ZipFile(out/'bridge_0.npz') as z:raw={i.filename:z.read(i) for i in z.infolist()}
+v=raw['vectors.npy'];hlen=struct.unpack('<H',v[8:10])[0];head=v[10:10+hlen];payload=v[10+hlen:]
+def replace_header(old,new):
+ h=head.replace(old,new)
+ return v[:8]+struct.pack('<H',len(h))+h+payload
+reject(lambda:decoder.npy(replace_header(b'512',b'511'),'vectors'))
+reject(lambda:decoder.npy(replace_header(b"'<f8'",b"'|O8'"),'vectors'))
+reject(lambda:decoder.npy(v[:10+hlen]+struct.pack('<d',float('nan'))+payload[8:],'vectors'))
+reject(lambda:decoder.npy(v[:-1],'vectors'))
+mem=io.BytesIO()
+with warnings.catch_warnings():
+ warnings.simplefilter('ignore')
+ with zipfile.ZipFile(mem,'w') as z:
+  for name,data in raw.items():z.writestr(name,data)
+  z.writestr('k.npy',raw['k.npy'])
+mem.seek(0);reject(lambda:decoder.arrays(mem))
+result=dict(checks=n,seconds=time.monotonic()-start,rss_mib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576,npz_sha256=pins,scope='all six array decodings bit-equal; no coefficient replay')
+(B/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/DECODER_ORIGINAL/decoder.py
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/scripts/native_weak_electric_rational_replay_2026_09_08.py
+--- scripts/native_weak_electric_rational_replay_2026_09_08.py
++++ .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_closing_factor/scripts/native_weak_electric_rational_replay_2026_09_08.py
+@@ -32,5 +32,5 @@
+   layer=nxt
+  (v,d),error,count=layer[target]
+  if count!=row['unordered_pair_sets']*720:raise ValueError('final word count')
+- center=sum((a*F(x,d) for a,x in zip(model.ell,v)),F(0))/216;radius=u6*error/216
++ center=sum((a*F(x,d) for a,x in zip(model.ell,v)),F(0))/108;radius=u6*error/108
+  return dict(bridge=bridge,source_json_sha=sha(file),source_vector_sha=z['vector_artifact']['sha256'],center=str(center),radius=str(radius),interval=[str(center-radius),str(center+radius)],excludes_zero=center-radius>0 or center+radius<0,ledger=ledger,scope='exact rational residual certificate of arbitrary dyadic candidates; adjacent ordered bilinear only')
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ORIGINAL_postcheck.py
+--- scripts/native_weak_electric_rational_replay_2026_09_08.py
++++ .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ORIGINAL_postcheck.py
+@@ -1,11 +1,31 @@
+-"""Portable exact rational replay; original certify arithmetic unchanged."""
+-import hashlib
++import json,sys,hashlib,time
+ from pathlib import Path
+ from itertools import combinations
+ from fractions import Fraction as F
+-from native_weak_electric_rational_core_2026_09_08 import ExactModel,candidate,incoming,residual,gap,upper_sqrt
+-from native_weak_electric_candidate_decoder_2026_09_08 import load
++import numpy as np
++from core import ExactModel,candidate,incoming,residual,gap,upper_sqrt
++P=Path('/private/tmp/toe-24h-probes-20260908/native-zero-penalty-sixth-spectator-coefficient')
+ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
++def load(file,prefix):
++ file=Path(file);z=json.loads(file.read_text());vfile=file.parent/z['vector_artifact']['filename']
++ if sha(vfile)!=z['vector_artifact']['sha256']:raise ValueError('vector hash')
++ with np.load(vfile,allow_pickle=False) as n:
++  if set(n.files)!={'vectors','k','boundary_used_hex','bridge_count','toggle_hex','word_count'}:raise ValueError('NPZ membership')
++  if n['vectors'].dtype!=np.dtype('float64') or n['vectors'].ndim!=2 or n['vectors'].shape[1]!=512 or not np.isfinite(n['vectors']).all():raise ValueError('vector dtype/shape/finite')
++  count=len(n['vectors'])
++  if any(n[k].shape!=(count,) for k in n.files if k!='vectors'):raise ValueError('metadata shape')
++  rows={}
++  for i in range(count):
++   key=(int(n['boundary_used_hex'][i],16),int(n['bridge_count'][i]));row=(int(n['k'][i]),int(n['toggle_hex'][i],16),int(n['word_count'][i]),n['vectors'][i].copy())
++   if key in rows:raise ValueError('duplicate key')
++   rows[key]=row
++ r=next(r for r in prefix['rows'] if r['bridge_edge']==z['bridge'])
++ expected={(int(x['boundary_used_mask']),x['bridge_count']):x for x in r['prefixes']}
++ if set(rows)!={(0,0),*expected}:raise ValueError('prefix coverage')
++ if rows[(0,0)][:3]!=(0,0,1) or list(rows[(0,0)][3])!=[1.]+[0.]*511:raise ValueError('vacuum')
++ for key,x in expected.items():
++  if rows[key][:2]!=(x['k'],int(x['full_toggle_mask'])):raise ValueError('prefix identity')
++ return z,r,rows
+ 
+ def certify(file,frame,prefix):
+  model=ExactModel(frame,prefix);z,row,saved=load(file,prefix);bridge=row['bridge_edge'];boundary=prefix['boundary_edges'];terms=[(a,b) for a,b in combinations(sorted(boundary+[bridge]),2) if set(model.edges[a])&set(model.edges[b])]
+@@ -34,3 +54,14 @@
+  if count!=row['unordered_pair_sets']*720:raise ValueError('final word count')
+  center=sum((a*F(x,d) for a,x in zip(model.ell,v)),F(0))/216;radius=u6*error/216
+  return dict(bridge=bridge,source_json_sha=sha(file),source_vector_sha=z['vector_artifact']['sha256'],center=str(center),radius=str(radius),interval=[str(center-radius),str(center+radius)],excludes_zero=center-radius>0 or center+radius<0,ledger=ledger,scope='exact rational residual certificate of arbitrary dyadic candidates; adjacent ordered bilinear only')
++
++def main():
++ if len(sys.argv)!=3:raise ValueError('one saved bridge JSON and fresh result')
++ pins=json.loads((Path(__file__).parent/'INPUT_BINDINGS.json').read_text())
++ for p,h in pins.items():
++  if sha(p)!=h:raise ValueError('input pin '+p)
++ out=Path(sys.argv[2])
++ if out.exists():raise ValueError('no overwrite')
++ frame=json.loads((P/'FRAME_RESULT.json').read_text());prefix=json.loads((P/'PREFIXES.json').read_text());result=certify(sys.argv[1],frame,prefix)
++ out.write_text(json.dumps(result,indent=2))
++if __name__=='__main__':main()
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/containment_control.py
+from pathlib import Path
+import sys,json,copy,time
+P=Path(__file__).resolve().parent
+ROOT=next(p for p in P.parents if (p/'scripts/native_weak_electric_rational_core_2026_09_08.py').exists())
+sys.path.insert(0,str(ROOT/'scripts'))
+from native_weak_electric_rational_core_2026_09_08 import ExactModel
+D=ROOT/'outputs/native_weak_electric_spectator_gap_2026_09_08_inputs';f=json.loads((D/'FRAME_RESULT.json').read_text());p=json.loads((D/'PREFIXES.json').read_text());t=time.monotonic();m=ExactModel(f,p)
+# Fixed far canonical edge191 is additional valid geometric support, but the
+# frozen twenty-dimensional frame does not contain its endpoints.
+bad=copy.deepcopy(p);bad['rows'].append({'bridge_edge':191})
+try:ExactModel(f,bad)
+except ValueError as e:
+ if str(e)!='active frame endpoint containment':raise
+else:raise RuntimeError('wrong support survived')
+print(json.dumps({'baseline_reduction_guards':'pass','actual_wrong_support_mutant':'active frame endpoint containment','fixed_added_edge':191,'seconds':time.monotonic()-t},indent=2))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/run_mutants.py
+"""Two actual mathematical mutations; no baseline source is altered."""
+from pathlib import Path
+import ast,json,hashlib,shutil,subprocess,time,difflib,os
+HERE=Path(__file__).resolve().parent
+ROOT=next(p for p in HERE.parents if (p/'scripts/native_weak_electric_spectator_gap_2026_09_08.py').exists())
+PRIMARY='scripts/native_weak_electric_spectator_gap_2026_09_08.py'
+DATA='outputs/native_weak_electric_spectator_gap_2026_09_08_inputs'
+paths=ast.literal_eval(next(n.value for n in ast.parse((ROOT/PRIMARY).read_text()).body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets)))
+sha=lambda f:hashlib.sha256(f.read_bytes()).hexdigest()
+reports=[]
+for name in ('closing_factor','prefix_omission'):
+ dest=HERE/('MUTANT_'+name)
+ if dest.exists():raise RuntimeError('no overwrite')
+ dest.mkdir()
+ for n in (*paths,PRIMARY):
+  target=dest/n;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/n,target)
+ if name=='closing_factor':
+  f=dest/'scripts/native_weak_electric_rational_replay_2026_09_08.py';old=f.read_text();new=old.replace('))/216;radius=u6*error/216','))/108;radius=u6*error/108')
+  if new==old:raise ValueError('mutation missing')
+  f.write_text(new)
+ else:
+  f=dest/DATA/'PREFIXES.json';old=f.read_text();z=json.loads(old);del z['rows'][0]['prefixes'][1];new=json.dumps(z,indent=2)+'\n';f.write_text(new)
+ (dest/'source.diff').write_text(''.join(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='frozen',tofile=name)))
+ # Rebind intentionally changed input hashes to exercise mathematics, not self-integrity.
+ manifest=dest/DATA/'INPUT_HASHES.json';pins=json.loads(manifest.read_text());manifest.write_text(json.dumps({n:sha(dest/n) for n in pins},indent=2)+'\n')
+ t=time.monotonic()
+ with (dest/'stdout').open('wb') as so,(dest/'stderr').open('wb') as se:
+  r=subprocess.run(['/usr/bin/time','-lp','python3','-OO',str(dest/PRIMARY),'--json'],stdout=so,stderr=se,timeout=180,env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1'))
+ text=(dest/'stderr').read_text();expected='exact coefficient certificate' if name=='closing_factor' else 'prefix coverage'
+ reports.append({'name':name,'returncode':r.returncode,'seconds':time.monotonic()-t,'actual_mathematical_failure':r.returncode!=0 and expected in text,'expected_failure':expected,'stdout_sha':sha(dest/'stdout'),'stderr_sha':sha(dest/'stderr'),'diff_sha':sha(dest/'source.diff')})
+ if not reports[-1]['actual_mathematical_failure']:raise RuntimeError('mutation survived or wrong failure')
+(HERE/'MUTANT_RESULTS.json').write_text(json.dumps(reports,indent=2)+'\n')
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-computation-cold-review/check.py
+import sys,json,runpy,contextlib,io,time,resource
+from pathlib import Path
+from fractions import Fraction as F
+B=Path(__file__).parent;P=B.parent/'native-zero-penalty-sixth-spectator-coefficient';sys.path.insert(0,str(P));import solver_core as c
+start=time.monotonic();n=0
+def ck(v):
+ global n;n+=1
+ if not v:raise ValueError(n)
+with contextlib.redirect_stdout(io.StringIO()):d=runpy.run_path(str(B.parent/'native-sixth-rational-metric/check.py'))
+m=c.Model(json.loads((P/'PREFIXES.json').read_text()));ck(m.norms==d['d'])
+A,ae=m.matrix(3);states=d['states'];W=d['W'];J=d['J'];ell=d['row']
+# Exact radical comparisons using squared rational bounds, no numerical sqrt.
+def contains(num,rad,z,err):
+ lo=F.from_float(float(z))-F.from_float(float(err));hi=F.from_float(float(z))+F.from_float(float(err))
+ if num==0:return lo<=0<=hi
+ if num<0:return contains(-num,rad,-float(z),err)
+ return hi>=0 and hi*hi>=num*num*rad and (lo<=0 or lo*lo<=num*num*rad)
+for ia,a in enumerate(states):
+ for ib,b in enumerate(states):
+  q=J.get((a,b),F(0))+10*(a==b)
+  ck(contains(q,6*W[a]/W[b],A[ia,ib],ae))
+for ib,b in enumerate(states):ck(contains(-ell[b],1/(6*W[b]),m.close[ib],m.close_error))
+x=c.np.zeros(512);x[0]=1;zero=c.np.zeros(512);error,res=c.residual_certificate(A,ae,x,zero,0.,m.gap(3))
+sq=6*sum(W[a]*(J.get((a,0),F(0))+10*(a==0))**2 for a in states)
+ck(F.from_float(res)**2>=sq);ck(error>=1)
+print(json.dumps(dict(checks=n,seconds=time.monotonic()-start,rss_mib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576,scope='one actual matrix/closing enclosure vs independent rational metric; no coefficient solve'),indent=2))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/check.py
+from itertools import product,combinations
+from functools import lru_cache
+from pathlib import Path
+import json,time,signal,resource
+signal.alarm(180);start=time.monotonic();checks=0
+
+def ck(c,s):
+ global checks
+ checks+=1
+ if not c:raise RuntimeError(s)
+vs=list(product(range(4),repeat=3));ix={v:i for i,v in enumerate(vs)};edges=[];K=[[0]*64 for _ in vs]
+for r in vs:
+ for a in range(3):
+  q=list(r);q[a]=(q[a]+1)%4;u,v=sorted((ix[r],ix[tuple(q)]));e=len(edges);edges.append((u,v));xi=(-1)**sum(r[:a]);K[u][v]=-2*xi;K[v][u]=2*xi
+stars=[{e for e,(u,v) in enumerate(edges) if i in (u,v)} for i in range(64)]
+ck(all(len(s)==6 for s in stars),'degree6')
+rows={}
+for v,w in combinations(range(64),2):
+ cut=stars[v]^stars[w];d=sum(min(abs(a-b),4-abs(a-b)) for a,b in zip(vs[v],vs[w]));ck(len(cut)==(10 if d==1 else 12),'paircut')
+ if d==1:continue
+ boundary=sorted(cut);adj=[sum(1<<j for j,f in enumerate(boundary) if i!=j and set(edges[e])&set(edges[f])) for i,e in enumerate(boundary)]
+ @lru_cache(None)
+ def count(mask):
+  if not mask:return 1
+  low=mask&-mask;i=low.bit_length()-1;rest=mask^low;jobs=adj[i]&rest;s=0
+  while jobs:
+   bit=jobs&-jobs;jobs^=bit;s+=count(rest^bit)
+  return s
+ matches=count((1<<12)-1);ck(matches>=225,'center pairings included');key=(d,(sum(vs[v])+sum(vs[w]))%2,matches);rows[key]=rows.get(key,0)+1
+ if d>3:
+  Sv={v}|{j for j in range(64) if K[v][j]};Sw={w}|{j for j in range(64) if K[w][j]}
+  ck(not Sv&Sw and all(K[a][b]==0 for a in Sv for b in Sw),'orthogonal Wstar')
+# Finite exact Clifford representation; Gaussian integer entries only.
+def gamma(j,x):
+ mode=j//2;sgn=(-1)**((x&((1<<mode)-1)).bit_count());return x^(1<<mode),sgn*(1 if j%2==0 else 1j*(-1)**((x>>mode)&1))
+for i,j in combinations(range(8),2):
+ for x in range(16):
+  y,a=gamma(j,x);z,b=gamma(i,y);value=a*b
+  ck(value.imag==0 if i%2==j%2 else value.real==0,'color reality')
+  y,c=gamma(i,x);zz,d=gamma(j,y);ck(zz==z and value==-c*d,'antihermitian Clifford')
+# On even spectator parity, distinct bilinears orthogonal for eight Majoranas.
+even=[x for x in range(16) if x.bit_count()%2==0];pairs=list(combinations(range(8),2));cols={}
+for i,j in pairs:
+ z=[]
+ for x in even:
+  y,a=gamma(j,x);y,b=gamma(i,y);z.append((y,a*b))
+ cols[i,j]=z
+for a,b in combinations(pairs,2):
+ tr=sum(x[1].conjugate()*y[1] for x,y in zip(cols[a],cols[b]) if x[0]==y[0]);ck(tr==0,'spectator independence')
+rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576;ck(rss<384,'rss')
+out=dict(checks=checks,seconds=time.monotonic()-start,rss_mib=rss,nonadjacent_pair_classes=[dict(distance=k[0],opposite_color=bool(k[1]),matchings=k[2],pairs=v) for k,v in sorted(rows.items())],scope='support geometry and exact Clifford controls; no coefficient or linked-cluster cancellation proof')
+Path(__file__).with_name('RESULT.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-operator-support-root/rank.py
+from fractions import Fraction as F
+from itertools import product
+from pathlib import Path
+import time,json,signal
+signal.alarm(180);start=time.monotonic();vs=list(product(range(4),repeat=3));ix={v:i for i,v in enumerate(vs)};K=[[0]*64 for _ in vs]
+for r in vs:
+ for a in range(3):
+  q=list(r);q[a]=(q[a]+1)%4;i,j=sorted((ix[r],ix[tuple(q)]));K[i][j]=-2*(-1)**sum(r[:a]);K[j][i]=-K[i][j]
+def span(S):
+ cols=[]
+ for v in sorted(S):cols.extend([[F(i==v) for i in range(64)],[F(K[i][v]) for i in range(64)]])
+ basis={}
+ for col in cols:
+  for i,b in basis.items():
+   z=col[i]
+   if z:col=[x-z*y for x,y in zip(col,b)]
+  i=next((i for i,x in enumerate(col) if x),None)
+  if i is not None:
+   z=col[i];basis[i]=[x/z for x in col]
+ return list(basis.values())
+rows=[]
+for coord in [(1,0,0),(1,1,1),(2,1,0),(2,2,1)]:
+ v,w=0,ix[coord];Sv={v}|{i for i in range(64) if K[i][v]};Sw={w}|{i for i in range(64) if K[i][w]};a,b=span(Sv),span(Sw);dim=len(span(Sv|Sw));cross=sum(bool(sum(x*y for x,y in zip(c,d))) for c in a for d in b)
+ rows.append(dict(displacement=coord,vertex=w,star_ranks=[len(a),len(b)],union_rank=dim,parity_fock_dimension=2**(dim//2-1),nonzero_cross_gram=cross))
+out=dict(rows=rows,seconds=time.monotonic()-start,scope='exact rank only; no linkedcluster or coefficient inference');Path(__file__).with_name('RANK_RESULT.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-full-support-cold-review/check.py
+from itertools import product,combinations
+from pathlib import Path
+import json,hashlib,signal,time,resource
+signal.alarm(180);t=time.monotonic();n=0
+def ck(x):
+ global n;n+=1
+ if not x:raise ValueError(n)
+v=list(product(range(4),repeat=3));E=set()
+for x in v:
+ for a in range(3):
+  y=list(x);y[a]=(y[a]+1)%4;E.add(tuple(sorted((x,tuple(y)))))
+def boundary(S):return {e for e in E if (e[0] in S)!=(e[1] in S)}
+for k in (1,2,3):
+ for S in combinations(v,k):
+  b=len(boundary(set(S)));ck(b==6 if k==1 else b in (10,12) if k==2 else b>=14)
+def match(es):
+ if not es:return 1
+ e=es[0];return sum(match(es[1:j]+es[j+1:]) for j in range(1,len(es)) if set(e)&set(es[j]))
+classes={}
+for w in v[1:]:
+ d=sum(min(x,4-x) for x in w)
+ if d==1:continue
+ m=match(sorted(boundary({v[0],w})));ck(m==(234 if d==2 else 225));classes[str((d,m))]=classes.get(str((d,m)),0)+1
+# General parity-trace independence: a product of two distinct bilinears
+# has Clifford grade 2 or 4, and complement has grade N-2 or N-4.
+for N in (8,64):
+ for p,q in combinations(list(combinations(range(N),2)),2):
+  grade=len(set(p)^set(q));ck(grade in (2,4) and grade not in (0,N))
+r=Path(__file__).parent;r.joinpath('RESULT.json').write_text(json.dumps(dict(checks=n,classes_from_origin=classes,seconds=time.monotonic()-t,rss_mib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576),indent=2)+'\n')
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-gap-cold-review/check.py
+from fractions import Fraction as F
+from itertools import product
+import json,time,signal,resource
+from pathlib import Path
+signal.alarm(180);start=time.monotonic();checks=0
+def ck(c):
+ global checks;checks+=1
+ if not c:raise ValueError(checks)
+vs=list(product(range(4),repeat=3));ids={v:i for i,v in enumerate(vs)};edges=[]
+for v in vs:
+ for a in range(3):
+  w=list(v);w[a]=(w[a]+1)%4;edges.append((ids[v],ids[tuple(w)],(-1)**sum(v[:a])))
+black=[i for i,v in enumerate(vs) if sum(v)%2==0]
+def gram(mask):
+ K=[[0]*64 for _ in vs]
+ for e,(a,b,s) in enumerate(edges):
+  i,j=sorted((a,b));K[i][j]=-2*s*(-1 if mask>>e&1 else 1);K[j][i]=-K[i][j]
+ return [[F(-sum(K[i][k]*K[k][j] for k in range(64)),4) for j in black] for i in black]
+def trinv(M):
+ n=len(M);L=[[F(i==j) for j in range(n)] for i in range(n)];D=[]
+ for j in range(n):
+  D.append(M[j][j]-sum(L[j][k]**2*D[k] for k in range(j)));ck(D[j]>0)
+  for i in range(j+1,n):L[i][j]=(M[i][j]-sum(L[i][k]*L[j][k]*D[k] for k in range(j)))/D[j]
+ V=[[F(i==j) for j in range(n)] for i in range(n)]
+ for i in range(n):
+  for j in range(i):V[i][j]=-sum(L[i][k]*V[k][j] for k in range(j,i))
+ ck(all(sum(L[i][k]*V[k][j] for k in range(n))==int(i==j) for i in range(n) for j in range(n)))
+ return sum(sum(x*x for x in row)/d for row,d in zip(V,D))
+def cert(mask):
+ A=gram(mask);c=F(5,2);ell=F(2449489742783178,10**15);ck(ell**2<6)
+ ck(sum(A[i][i] for i in range(32))==192)
+ tr=trinv([[x+c*c*(i==j) for j,x in enumerate(row)] for i,row in enumerate(A)])
+ return 32*ell-((192+32*c*c)/(4*c)+c*(32-c*c*tr))
+raw=json.loads((Path(__file__).parents[1]/'native-sixth-spectator-gap-certificates/RESULT.json').read_text());first=raw['rows'][0];mask=int(first['mask_hex'],16)
+ck(cert(mask)==F(first['gap_lower']))
+other=cert((1<<0)|(1<<2));ck(other>0)
+star=sum(1<<e for e,(i,j,s) in enumerate(edges) if i==0 or j==0);ck(cert(star)<0)
+A=gram(0);ck(A==[[F(6*(i==j)) for j in range(32)] for i in range(32)])
+for c in (F(1,3),F(5,2),F(7)):
+ for z in (F(0),F(1,7),F(2),F(11)):
+  x=z*z;y1=(c+x/c)/2;y2=(y1+x/y1)/2;formula=(x+c*c)/(4*c)+c*(1-c*c/(x+c*c))
+  ck(y2==formula);ck(y2-z==(y1-z)**2/(2*y1));ck(y2>=z)
+print(json.dumps(dict(checks=checks,distinct_mask_lower=str(other),seconds=time.monotonic()-start,rss_mib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576),indent=2))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-sixth-magnetic-symmetry-cold-review/check.py
+from itertools import product,combinations
+from pathlib import Path
+import json,time,signal
+signal.alarm(180);t=time.monotonic();V=list(product(range(4),repeat=3));I={v:i for i,v in enumerate(V)};K={}
+for x in V:
+ for d in range(3):
+  y=list(x);y[d]=(y[d]+1)%4;i,j=sorted((I[x],I[tuple(y)]));s=-2*(-1)**sum(x[:d]);K[i,j]=s;K[j,i]=-s
+class UF:
+ def __init__(self,n):self.p=list(range(n));self.s=[1]*n;self.bad=set()
+ def find(self,x):
+  if self.p[x]!=x:
+   p,s=self.find(self.p[x]);self.s[x]*=s;self.p[x]=p
+  return self.p[x],self.s[x]
+ def join(self,a,b,z):
+  ra,sa=self.find(a);rb,sb=self.find(b)
+  if ra==rb:
+   if sa!=z*sb:self.bad.add(ra)
+  else:
+   bad=ra in self.bad or rb in self.bad;self.p[ra]=rb;self.s[ra]=z*sb*sa
+   if bad:self.bad.add(rb)
+pairs=[p for p in combinations(range(64),2) if (sum(V[p[0]])+sum(V[p[1]]))%2];idx={p:i for i,p in enumerate(pairs)};u=UF(len(pairs));checks=0

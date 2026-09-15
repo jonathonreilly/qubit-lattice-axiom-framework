@@ -1,0 +1,313 @@
+FILE 8052 .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/AUTHOR_VERIFICATION_DRIVER.py
+from pathlib import Path
+import ast,hashlib,json,subprocess,shutil,tempfile,os
+w=Path('/private/tmp/toe-native-zero-penalty-l4-delayed-splitting-20260908');p=w/'.claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908';main='scripts/native_zero_penalty_l4_delayed_splitting_2026_09_08.py'
+inputs=next(ast.literal_eval(x.value) for x in ast.parse((w/main).read_text()).body if isinstance(x,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in x.targets));files=[main,*inputs];env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1');root=Path(tempfile.mkdtemp(prefix='delayed-isolated-'))
+for f in files:(root/f).parent.mkdir(parents=True,exist_ok=True);shutil.copy2(w/f,root/f)
+r=subprocess.run(['python3','-OO',str(root/main),'--json'],capture_output=True,text=True,timeout=180,env=env);(p/'ISOLATED.stdout').write_text(r.stdout);(p/'ISOLATED.stderr').write_text(r.stderr)
+if r.returncode:raise RuntimeError(r.stderr)
+out=json.loads(r.stdout)
+for key,name,fields in [('electric','native-zero-penalty-first-order-electric',['rows']),('spectator','native-zero-penalty-spectator-lifting',['five_pair_matching','six_pairs','non_scalar_even_masks']),('isolation','native-zero-penalty-l4-isolation',['fixtures'])]:
+ old=json.loads((p/'originals'/name/'RESULT.json').read_text())
+ for f in fields:
+  if old[f]!=out['parts'][key][f]:raise RuntimeError('payload '+key)
+(p/'ISOLATED_CLOSURE.json').write_text(json.dumps({'files':files,'scientific_payload_equal':True,'sha256':{f:hashlib.sha256((root/f).read_bytes()).hexdigest() for f in files}},indent=2)+'\n')
+mutants=[('odd_active_projection','spectator',[('B=mm(A,P)','B=A')],'odd-cut active parity exclusion'),('incorrect_flux_scope','electric',[('cuts[m]&occ','cuts.get(m,0)&occ'),('for m in pairterms if m in cuts','for m in pairterms')],'K4 scalar E/2'),('winding_omission','isolation',[('for a in range(3):\n for v in vs:','for a in range(0):\n for v in vs:')],'noncanonical basic flux')];records=[]
+for name,key,changes,expected in mutants:
+ f=f'scripts/native_zero_penalty_{key}_exact_2026_09_08.py';s=(root/f).read_text();bad=s
+ for old,new in changes:
+  if bad.count(old)!=1:raise RuntimeError('mutationtarget '+name)
+  bad=bad.replace(old,new)
+ (root/f).write_text(bad);m=subprocess.run(['python3','-OO',str(root/main),'--json'],capture_output=True,text=True,timeout=180,env=env);(p/(name+'.stdout')).write_text(m.stdout);(p/(name+'.stderr')).write_text(m.stderr)
+ if m.returncode==0 or expected not in m.stderr:raise RuntimeError('mutant '+name+' '+m.stderr)
+ records.append({'name':name,'returncode':m.returncode,'expected':expected,'source_sha256':hashlib.sha256(bad.encode()).hexdigest()});(root/f).write_text(s)
+(p/'MUTATIONS.json').write_text(json.dumps(records,indent=2)+'\n')
+u=subprocess.run(['python3','-OO',str(root/main),'--unknown'],capture_output=True,text=True,env=env)
+if u.returncode==0:raise RuntimeError('unknowncli')
+code="import signal,runpy,sys; calls=[]; signal.alarm=lambda x:calls.append(x); sys.argv=[sys.argv[1],'--json']; runpy.run_path(sys.argv[0],run_name='__main__'); print('ALARMS',calls)"
+a=subprocess.run(['python3','-OO','-c',code,str(root/main)],capture_output=True,text=True,env=env,timeout=180)
+if a.returncode or not a.stdout.rstrip().endswith('ALARMS [180]'):raise RuntimeError('alarm')
+(p/'WRAPPER_CONTROLS.json').write_text(json.dumps({'unknown_cli_rejected':True,'alarm_calls':[180],'json_parse':True},indent=2)+'\n')
+(p/'PORT_RECEIPT.json').write_text(json.dumps({'live_count':93564,'parts':[964,87509,5091],'scientific_fields_unchanged':True,'helper_changes':'output dictionaries, standalone alarm guards, platform RSS; no science edits'},indent=2)+'\n');shutil.copy2(__file__,p/'AUTHOR_VERIFICATION_DRIVER.py')
+freeze={f:hashlib.sha256((w/f).read_bytes()).hexdigest() for f in [*files,'outputs/native_zero_penalty_l4_delayed_splitting_2026_09_08.json']};(p/'SOURCE_FREEZE.json').write_text(json.dumps(freeze,indent=2)+'\n');print(json.dumps(freeze,indent=2));shutil.rmtree(root)
+
+FILE 8052 .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/VERIFY_BEFORE_EXPECTED_MESSAGE_REPAIR.py
+--- .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/AUTHOR_VERIFICATION_DRIVER.py
++++ .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/VERIFY_BEFORE_EXPECTED_MESSAGE_REPAIR.py
+@@ -11,7 +11,7 @@
+  for f in fields:
+   if old[f]!=out['parts'][key][f]:raise RuntimeError('payload '+key)
+ (p/'ISOLATED_CLOSURE.json').write_text(json.dumps({'files':files,'scientific_payload_equal':True,'sha256':{f:hashlib.sha256((root/f).read_bytes()).hexdigest() for f in files}},indent=2)+'\n')
+-mutants=[('odd_active_projection','spectator',[('B=mm(A,P)','B=A')],'odd-cut active parity exclusion'),('incorrect_flux_scope','electric',[('cuts[m]&occ','cuts.get(m,0)&occ'),('for m in pairterms if m in cuts','for m in pairterms')],'K4 scalar E/2'),('winding_omission','isolation',[('for a in range(3):\n for v in vs:','for a in range(0):\n for v in vs:')],'noncanonical basic flux')];records=[]
++mutants=[('odd_active_projection','spectator',[('B=mm(A,P)','B=A')],'odd-cut active parity exclusion'),('incorrect_flux_scope','electric',[('cuts[m]&occ','cuts.get(m,0)&occ'),('for m in pairterms if m in cuts','for m in pairterms')],'cut exceptions nonscalar'),('winding_omission','isolation',[('for a in range(3):\n for v in vs:','for a in range(0):\n for v in vs:')],'noncanonical basic flux')];records=[]
+ for name,key,changes,expected in mutants:
+  f=f'scripts/native_zero_penalty_{key}_exact_2026_09_08.py';s=(root/f).read_text();bad=s
+  for old,new in changes:
+
+FILE 8052 .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-first-order-electric-cold-review/check.py
+from itertools import combinations,product
+from fractions import Fraction as F
+import json,time
+from pathlib import Path
+st=time.monotonic();n=0
+def check(c,m):
+ global n
+ if not c:raise RuntimeError(m)
+ n+=1
+rows=[]
+for name,v,edges in [('square',4,[(0,1),(1,2),(2,3),(0,3)]),('K4',4,list(combinations(range(4),2)))]:
+ stars=[sum(1<<e for e,(a,b) in enumerate(edges) if i in (a,b)) for i in range(v)]
+ # Literal normalized Gauss orbit in X-link basis; unnormalized coefficients +/-1, norm2=v-1.
+ vals=[]
+ for occ in range(1<<v):
+  if occ.bit_count()%2:continue
+  state={}
+  for S in range(1<<(v-1)):
+   bits=0
+   for i in range(v-1):
+    if S>>i&1:bits^=stars[i]
+   state[bits]=(-1)**((S&occ).bit_count())
+  check(len(state)==1<<(v-1),'orbit injective')
+  out={b:F(len(edges),2)*a for b,a in state.items()}
+  for i in range(v):
+   for e,f in combinations([e for e in range(len(edges)) if stars[i]>>e&1],2):
+    for b,a in state.items():out[b^(1<<e)^(1<<f)]=out.get(b^(1<<e)^(1<<f),F(0))+F(a,2)
+  val=sum(state.get(b,0)*a for b,a in out.items())/len(state);vals.append(str(val))
+  check(val== (F(3) if name=='K4' else (F(4) if occ==0 else F(0) if occ==15 else F(2))),'literal Gauss D compression')
+ rows.append({'graph':name,'values':vals})
+# Four edge-disjoint detours on unequal even extents, each including seam cases.
+L=(4,6,4);coords=list(product(*(range(l) for l in L)))
+def shift(r,a,k):
+ s=list(r);s[a]=(s[a]+k)%L[a];return tuple(s)
+for r in coords:
+ for a in range(3):
+  end=shift(r,a,1);used=set();direct=frozenset((r,end))
+  for b in range(3):
+   if a==b:continue
+   for sign in [-1,1]:
+    p=[r,shift(r,b,sign),shift(end,b,sign),end]
+    es={frozenset((p[k],p[k+1])) for k in range(3)}
+    check(len(es)==3 and direct not in es and not used.intersection(es),'four disjoint detours');used|=es
+Path(__file__).with_name('RESULT.json').write_text(json.dumps({'checks':n,'rows':rows,'seconds':time.monotonic()-st},indent=2)+'\n')
+
+FILE 8052 .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/check.py
+--- scripts/native_zero_penalty_electric_exact_2026_09_08.py
++++ .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-first-order-electric/check.py
+@@ -2,8 +2,7 @@
+ from itertools import product,combinations
+ from fractions import Fraction as F
+ import json,time,signal
+-if __name__=='__main__':signal.alarm(180)
+-start=time.monotonic();n=0
++signal.alarm(180);start=time.monotonic();n=0
+ def need(c,m):
+  global n
+  if not c:raise RuntimeError(m)
+@@ -36,5 +35,4 @@
+  if name=='K4':need(set(vals)=={F(3)},'K4 scalar E/2')
+  rows.append({'graph':name,'diagonal_fixed_flux_values':list(map(str,vals)),'off_flux_pair_terms':sum(m not in cuts for m in pairterms)})
+ need(rows[1]['off_flux_pair_terms']>0,'not all D scalar')
+-out={'checks':n,'rows':rows,'seconds':time.monotonic()-start,'scope':'actual L4 all960 incident-pair deletions and exact small-graph gauge-parity compressions; no sampling'}
+-if __name__=='__main__':print(json.dumps(out,indent=2))
++out={'checks':n,'rows':rows,'seconds':time.monotonic()-start,'scope':'actual L4 all960 incident-pair deletions and exact small-graph gauge-parity compressions; no sampling'};Path(__file__).with_name('RESULT.json').write_text(json.dumps(out,indent=2)+'\n');print(out)
+
+FILE 8052 .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation-cold-review/check.py
+import itertools,json,time,resource
+from fractions import Fraction as F
+start=time.monotonic();n=0
+def ck(c):
+ global n;n+=1
+ if not c:raise ValueError(n)
+vs=list(itertools.product(range(4),repeat=3));ids={v:i for i,v in enumerate(vs)}
+def mv(v,a):return tuple((x+(a==b))%4 for b,x in enumerate(v))
+es=sorted({tuple(sorted((ids[v],ids[mv(v,a)]))) for v in vs for a in range(3)});ei={e:i for i,e in enumerate(es)}
+def cycle(vs):
+ out=0
+ for a,b in zip(vs,vs[1:]+vs[:1]):out^=1<<ei[tuple(sorted((ids[a],ids[b])))]
+ return out
+def rank(rows):
+ piv={}
+ for x in rows:
+  while x:
+   k=x.bit_length()-1
+   if k not in piv:piv[k]=x;break
+   x^=piv[k]
+ return len(piv)
+plaquettes=[cycle([v,mv(v,a),mv(mv(v,a),b),mv(v,b)]) for v in vs for a,b in itertools.combinations(range(3),2)]
+winds=[]
+for a in range(3):
+ v=(0,0,0);c=[]
+ for _ in range(4):c.append(v);v=mv(v,a)
+ winds.append(cycle(c))
+ck(rank(plaquettes)==126);ck(rank(plaquettes+winds)==129);ck(len(es)-len(vs)+1==129)
+# Every generated vector has even incidence and arbitrary sign assignment is
+# determined modulo a vertex gauge once all129 independent cycles are fixed.
+for c in plaquettes+winds:
+ degrees=[0]*64
+ for k,(a,b) in enumerate(es):
+  if c>>k&1:degrees[a]^=1;degrees[b]^=1
+ ck(not any(degrees))
+ck(F(128,8*144*12)==F(1,108));ck(F(128,8*144*12*4)==F(1,432))
+# Exact factorization for rational sqrt(x)=y, sqrt(mu)=a, sqrt(M)=b.
+for b in (F(1),F(12)):
+ for a in (b/4,b/2,b):
+  for y in (F(0),b/7,b/2,b):
+   tangent=a+(y*y-a*a)/(2*a)-y
+   ck(tangent==(y-a)**2/(2*a))
+   ck(tangent>=(y*y-a*a)**2/(8*b**3))
+print(json.dumps(dict(checks=n,seconds=time.monotonic()-start,rss_mib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576,plaquette_rank=126,with_three_windings_rank=129),indent=2))
+
+FILE 8052 .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/check.py
+--- scripts/native_zero_penalty_isolation_exact_2026_09_08.py
++++ .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-l4-isolation/check.py
+@@ -1,9 +1,8 @@
+ from itertools import product,combinations
+ from fractions import Fraction
+ from pathlib import Path
+-import json,time,signal,resource,sys
+-if __name__=='__main__':signal.alarm(180)
+-start=time.monotonic();checks=0
++import json,time,signal,resource
++signal.alarm(180);start=time.monotonic();checks=0
+ def need(c,s):
+  global checks
+  checks+=1
+@@ -55,5 +54,4 @@
+  fixtures.append({'label':label,'flipped_edges':flips,'wrong_basic_cycles':wrong,'variance':variance,'nonzero_offdiagonal':len(off)})
+ need(Fraction(128,8*144*12)==Fraction(1,108),'concavity slack')
+ need(Fraction(1,108)/4==Fraction(1,432),'native energy factor')
+-out={'checks':checks,'status':'PASS','fixtures':fixtures,'seconds':time.monotonic()-start,'rss_mib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024),'scope':'Exact integer square matrices and basic flux controls; no all-sector eigensolver'}
+-if __name__=='__main__':print(json.dumps(out,indent=2))
++print(json.dumps({'checks':checks,'status':'PASS','fixtures':fixtures,'seconds':time.monotonic()-start,'rss_mib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576,'scope':'Exact integer square matrices and basic flux controls; no all-sector eigensolver'},indent=2))
+
+FILE 8052 .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/check.py
+import itertools,json,time,resource
+start=time.monotonic();n=0
+def ck(c):
+ global n;n+=1
+ if not c:raise ValueError(n)
+for mask in range(1,65535):
+ mixed=sum(len({(mask>>(4*x+y))&1 for x in range(4)})==2 for y in range(4))+sum(len({(mask>>(4*x+y))&1 for y in range(4)})==2 for x in range(4))
+ ck(mixed>=2)
+L=(4,6,8);vs=list(itertools.product(*map(range,L)));ix={v:i for i,v in enumerate(vs)};edges=[]
+for v in vs:
+ for a in range(3):
+  w=list(v);w[a]=(w[a]+1)%L[a];edges.append((ix[v],ix[tuple(w)]))
+inc=[set() for _ in vs]
+for e,(i,j) in enumerate(edges):inc[i].add(e);inc[j].add(e)
+# Tree paths define independent fundamental cycles.
+seen={0};path={0:set()};todo=[0];tree=set()
+while todo:
+ i=todo.pop(0)
+ for e in inc[i]:
+  a,b=edges[e];j=b if a==i else a
+  if j not in seen:seen.add(j);todo.append(j);tree.add(e);path[j]=path[i]^{e}
+cycles=[path[i]^path[j]^{e} for e,(i,j) in enumerate(edges) if e not in tree]
+ck(len(cycles)==len(edges)-len(vs)+1)
+for axis in range(3):
+ for width in range(1,L[axis]):
+  S={i for i,v in enumerate(vs) if v[axis]<width};cut={e for e,(i,j) in enumerate(edges) if (i in S)!=(j in S)}
+  ck(all(len(c&cut)%2==0 for c in cycles));ck(len(cut)==2*len(vs)//L[axis])
+for e,(i,j) in enumerate(edges):
+ a=inc[i]-{e};b=inc[j]-{e};ck(len(a)==len(b)==5)
+ ck(all(not(set(edges[f])&set(edges[g])) for f in a for g in b))
+ pairs=[]
+ for star in (a,b):
+  x=sorted(star);pairs.extend([(e,x[0]),(x[1],x[2]),(x[3],x[4])])
+ cut=set()
+ for f,g in pairs:cut^={f,g}
+ ck(cut==a|b)
+print(json.dumps(dict(checks=n,seconds=time.monotonic()-start,rss_mib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576),indent=2))
+
+FILE 8052 .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/check_BEFORE_OWN_BOUND_REPAIR.py
+--- .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/check.py
++++ .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting-cold-review/check_BEFORE_OWN_BOUND_REPAIR.py
+@@ -5,7 +5,7 @@
+  if not c:raise ValueError(n)
+ for mask in range(1,65535):
+  mixed=sum(len({(mask>>(4*x+y))&1 for x in range(4)})==2 for y in range(4))+sum(len({(mask>>(4*x+y))&1 for y in range(4)})==2 for x in range(4))
+- ck(mixed>=2)
++ ck(mixed>=4)
+ L=(4,6,8);vs=list(itertools.product(*map(range,L)));ix={v:i for i,v in enumerate(vs)};edges=[]
+ for v in vs:
+  for a in range(3):
+
+FILE 8052 .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/check.py
+--- scripts/native_zero_penalty_spectator_exact_2026_09_08.py
++++ .claude/science/physics-loops/native-zero-penalty-l4-delayed-splitting-20260908/originals/native-zero-penalty-spectator-lifting/check.py
+@@ -1,8 +1,7 @@
+ from itertools import product,combinations
+ from pathlib import Path
+-import json,time,signal,resource,sys,hashlib
+-if __name__=='__main__':signal.alarm(180)
+-start=time.monotonic();checks=0
++import json,time,signal,resource,hashlib
++signal.alarm(180);start=time.monotonic();checks=0
+ def need(c,msg):
+  global checks
+  checks+=1
+@@ -63,6 +62,5 @@
+   ratios={B[i][j]/P[i][j] for i in range(dim) for j in range(dim) if P[i][j]}
+   if len(ratios)>1 or any(B[i][j] and not P[i][j] for i in range(dim) for j in range(dim)):non_scalar.append(mask)
+ need(3 in non_scalar,'allowed even cut need not project to scalar')
+-result={'checks':checks,'status':'PASS','five_pair_matching':False,'six_pairs':pairs,'non_scalar_even_masks':non_scalar,'seconds':time.monotonic()-start,'rss_mib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024),'scope':'Finite support and Clifford controls; no sixth-order coefficient or cubic spectral-isolation test'}
+-out=result
+-if __name__=='__main__':print(json.dumps(out,indent=2))
++result={'checks':checks,'status':'PASS','five_pair_matching':False,'six_pairs':pairs,'non_scalar_even_masks':non_scalar,'seconds':time.monotonic()-start,'rss_mib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576,'scope':'Finite support and Clifford controls; no sixth-order coefficient or cubic spectral-isolation test'}
++print(json.dumps(result,indent=2))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/isolate.py
+import ast,json,hashlib,shutil,subprocess,os,time,signal
+from pathlib import Path
+B=Path('/private/tmp/toe-native-weak-electric-spectator-gap-20260908');O=Path(__file__).parent;D=O/'isolated';D.mkdir(exist_ok=False)
+p='scripts/native_weak_electric_spectator_gap_2026_09_08.py';tree=ast.parse((B/p).read_text());inputs=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+pins={}
+for n in (p,*inputs):
+ dst=D/n;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(B/n,dst);pins[n]=hashlib.sha256(dst.read_bytes()).hexdigest()
+(O/'ISOLATED_INPUT_HASHES.json').write_text(json.dumps(pins,indent=2)+'\n')
+start=time.monotonic();cmd=['/usr/bin/time','-lp','/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12','-I','-OO',str(D/p)]
+# -I removes script directory, so use a standard-library runpy wrapper explicitly
+# exposing only this isolated scripts directory, as required by local sibling imports.
+cmd=cmd[:-1]+['-c','import sys,runpy;sys.path.insert(0,sys.argv[1]);sys.argv=[sys.argv[2],"--json"];runpy.run_path(sys.argv[0],run_name="__main__")',str(D/'scripts'),str(D/p)]
+with (O/'ISOLATED.stdout').open('w') as out,(O/'ISOLATED.stderr').open('w') as err:
+ proc=subprocess.Popen(cmd,cwd=D,stdout=out,stderr=err,start_new_session=True,env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1'))
+ try:code=proc.wait(timeout=180)
+ except subprocess.TimeoutExpired:os.killpg(proc.pid,signal.SIGKILL);proc.wait();raise
+elapsed=time.monotonic()-start;stderr=(O/'ISOLATED.stderr').read_text();rss=int(next(x.split()[0] for x in stderr.splitlines() if 'maximum resident set size' in x))
+if code or elapsed>=180 or rss>=384*1048576:raise ValueError((code,elapsed,rss))
+name='outputs/native_weak_electric_spectator_gap_2026_09_08.json';actual=json.loads((D/name).read_text());canonical=json.loads((B/name).read_text())
+for key in ('parts','exact_interval','residual_count','bridge_count','executed_predicates','predicate_breakdown','input_sha256','source_sha256'):
+ if actual[key]!=canonical[key]:raise ValueError('payload '+key)
+for key in ('generators','orbits','invariant_dimension','checks'):
+ if actual['symmetry'][key]!=canonical['symmetry'][key]:raise ValueError('symmetry '+key)
+receipt=dict(returncode=code,seconds=elapsed,rss_bytes=rss,files_copied=len(pins),exact_payload_equal=True,output_sha256=hashlib.sha256((D/name).read_bytes()).hexdigest(),command=cmd)
+(O/'ISOLATION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps(receipt))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/scripts/native_weak_electric_rational_core_2026_09_08.py
+--- scripts/native_weak_electric_rational_core_2026_09_08.py
++++ .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/scripts/native_weak_electric_rational_core_2026_09_08.py
+@@ -27,12 +27,6 @@
+    self.W.append(z)
+   self.Wden=lcm(*(x.denominator for x in self.W));self.Wint=[int(x*self.Wden) for x in self.W]
+   self.support=sorted(set(prefix['boundary_edges'])|{x['bridge_edge'] for x in prefix['rows']});delta={}
+-  # Exact reduction preconditions: the candidate frame must contain every
+-  # endpoint affected by any declared flip, not merely have the right Gram.
+-  if any(sum(self.K[i][k]*self.K[k][j] for k in range(64))!=(-24 if i==j else 0) for i in range(64) for j in range(64)):raise ValueError('canonical complex structure')
+-  for v in sorted({v for e in self.support for v in self.edges[e]}):
+-   projection=[sum(self.r[i][k]*self.r[i][v]/self.d[i]+self.kr[i][k]*self.kr[i][v]/(24*self.d[i]) for i in range(10)) for k in range(64)]
+-   if projection!=[int(k==v) for k in range(64)]:raise ValueError('active frame endpoint containment')
+   for e in self.support:
+    v,w=self.edges[e];Q=[[F(self.K[v][w],6)*(self.r[i][v]*self.kr[j][w]-self.r[i][w]*self.kr[j][v]) for j in range(10)] for i in range(10)]
+    delta[e]=self.fock(Q)
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/DECODER_ORIGINAL/check.py
+import json,hashlib,io,zipfile,struct,warnings,time,resource,signal
+from pathlib import Path
+import numpy as np
+import decoder
+signal.alarm(180);start=time.monotonic();B=Path(__file__).parent;P=B.parent/'native-zero-penalty-sixth-spectator-coefficient';out=P/'COEFFICIENT_OUTPUT';prefix=json.loads((P/'PREFIXES.json').read_text());n=0;pins={}
+def ck(x):
+ global n;n+=1
+ if not x:raise ValueError(n)
+def reject(f):
+ try:f

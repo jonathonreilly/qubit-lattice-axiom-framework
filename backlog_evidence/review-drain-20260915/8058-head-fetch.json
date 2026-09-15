@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "a814da6cc1178ac015914c9088fc04b2e635963e",
+  "fetched_ref": "refs/review-loop/fetched/8058-c7e6119b0e1d4d7d8df2f205f116f448",
+  "metadata": {
+    "baseRefName": "codex/native-weak-electric-spectator-gap-20260908",
+    "headRefName": "codex/native-third-order-star-vertex-20260908",
+    "headRefOid": "a814da6cc1178ac015914c9088fc04b2e635963e",
+    "isDraft": false,
+    "number": 8058,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

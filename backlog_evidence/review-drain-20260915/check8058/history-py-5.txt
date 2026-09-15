@@ -1,0 +1,301 @@
+n/run_bridge.py
++++ .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/run_bridge.py
+@@ -6,15 +6,22 @@
+ for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS'):
+  if os.environ.get(key)!='1':raise RuntimeError('one thread required: '+key)
+ a=argparse.ArgumentParser();a.add_argument('--bridge',type=int,required=True,choices=(0,3,9,12,36,96));a.add_argument('--output',type=Path,required=True);args=a.parse_args()
+-if args.output.exists():raise RuntimeError('refuse output overwrite')
++vector_path=args.output.with_suffix('.npz')
++if args.output.exists() or vector_path.exists():raise RuntimeError('refuse output overwrite')
+ f=json.loads((p/'COMPUTATION_FREEZE.json').read_text())
+ for name,sha in f['inputs'].items():
+  if hashlib.sha256((p/name).read_bytes()).hexdigest()!=sha:raise RuntimeError('changed source '+name)
++import runtime_binding
++runtime_sha=runtime_binding.verify(p/'RUNTIME.json')
+ import solver_core as c
+ raw=json.loads((p/'PREFIXES.json').read_text());model=c.Model(raw);row=next(x for x in raw['rows'] if x['bridge_edge']==args.bridge);result=c.solve_bridge(model,row)
++vectors=result.pop('_vectors');args.output.parent.mkdir(parents=True,exist_ok=True)
++with vector_path.open('xb') as stream:
++ c.np.savez(stream,vectors=c.np.stack([x[5] for x in vectors]),k=c.np.array([x[0] for x in vectors],dtype=c.np.uint8),boundary_used_hex=c.np.array([hex(x[1]) for x in vectors]),bridge_count=c.np.array([x[2] for x in vectors],dtype=c.np.uint8),toggle_hex=c.np.array([hex(x[3]) for x in vectors]),word_count=c.np.array([x[4] for x in vectors],dtype=c.np.uint64))
++result['vector_artifact']={'filename':vector_path.name,'sha256':hashlib.sha256(vector_path.read_bytes()).hexdigest(),'bytes':vector_path.stat().st_size,'shape':[len(vectors),512],'dtype':'float64','coordinates':'physical orthonormal active even-Fock basis; occupation states in ascending even-bit order','includes_initial_and_target':True}
+ seconds=time.monotonic()-START;rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024)
+ if seconds>=180 or not 0<rss<384:raise RuntimeError('resource cap')
+-result.update(seconds=seconds,rss_mib=rss,input_hashes=f['inputs'],numpy_version=c.np.__version__,numpy_init_sha256=hashlib.sha256(Path(c.np.__file__).read_bytes()).hexdigest(),python_executable=sys.executable,freeze_sha256=hashlib.sha256((p/'COMPUTATION_FREEZE.json').read_bytes()).hexdigest())
++result.update(runtime_sha256=runtime_sha,seconds=seconds,rss_mib=rss,input_hashes=f['inputs'],numpy_version=c.np.__version__,numpy_init_sha256=hashlib.sha256(Path(c.np.__file__).read_bytes()).hexdigest(),python_executable=sys.executable,freeze_sha256=hashlib.sha256((p/'COMPUTATION_FREEZE.json').read_bytes()).hexdigest())
+ args.output.parent.mkdir(parents=True,exist_ok=True)
+ with args.output.open('x') as q:json.dump(result,q,indent=2,allow_nan=False);q.write('\n')
+ print(json.dumps({'bridge':args.bridge,'coefficient':result['coefficient'],'error':result['absolute_error_bound'],'interval':result['interval'],'seconds':seconds,'rss_mib':rss,'output_sha256':hashlib.sha256(args.output.read_bytes()).hexdigest()},allow_nan=False))
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/runtime_binding.py
+from pathlib import Path
+import sys,hashlib,json,io,contextlib,os
+import numpy as np
+def current():
+ # Tiny deterministic import exercise only, not a cost fixture or coefficient.
+ np.linalg.solve(np.eye(1),np.ones(1));b=io.BytesIO();np.savez(b,x=np.zeros((1,1)));np.load(io.BytesIO(b.getvalue()),allow_pickle=False).close()
+ files={str(Path(sys.executable).resolve()):hashlib.sha256(Path(sys.executable).resolve().read_bytes()).hexdigest()}
+ modules={}
+ for name,m in sorted(sys.modules.items()):
+  if name=='numpy' or name.startswith('numpy.'):
+   for kind in ('__file__','__cached__'):
+    f=getattr(m,kind,None)
+    if f and Path(f).is_file():
+     f=str(Path(f).resolve());files[f]=hashlib.sha256(Path(f).read_bytes()).hexdigest();modules[name+':'+kind]=f
+ text=io.StringIO()
+ with contextlib.redirect_stdout(text):np.show_config()
+ libraries={}
+ if sys.platform=='darwin':
+  import ctypes
+  dyld=ctypes.CDLL(None);dyld._dyld_image_count.restype=ctypes.c_uint32;dyld._dyld_get_image_name.argtypes=[ctypes.c_uint32];dyld._dyld_get_image_name.restype=ctypes.c_char_p
+  for i in range(dyld._dyld_image_count()):
+   f=dyld._dyld_get_image_name(i).decode()
+   if any(t in f.lower() for t in ('numpy','openblas','accelerate','veclib')):
+    libraries[f]=hashlib.sha256(Path(f).read_bytes()).hexdigest() if Path(f).is_file() else 'system_shared_cache_not_file'
+ return {'files':files,'modules':modules,'libraries':libraries,'numpy_version':np.__version__,'python_version':sys.version,'optimization':sys.flags.optimize,'backend':text.getvalue()}
+def verify(path):
+ expected=json.loads(Path(path).read_text());actual=current()
+ if actual!=expected:raise RuntimeError('runtime closure changed')
+ return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+if __name__=='__main__':
+ Path(__file__).with_name('RUNTIME.json').write_text(json.dumps(current(),indent=2)+'\n')
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/solver_core.py
+--- .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/before-vector-retention/solver_core.py
++++ .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/originals/native-zero-penalty-sixth-spectator-coefficient/solver_core.py
+@@ -126,7 +126,7 @@
+ def solve_bridge(model,row):
+  bridge=row['bridge_edge'];boundary=model.raw['boundary_edges'];terms=[(a,b) for a,b in combinations(sorted(boundary+[bridge]),2) if set(model.edges[a])&set(model.edges[b])]
+  keys={(int(x['boundary_used_mask']),x['bridge_count']):x for x in row['prefixes']};target=(sum(1<<e for e in boundary),2);vac=np.zeros(512);vac[0]=1
+- layer={(0,0):(vac,0.0,1.0,1)};ledger=[]
++ layer={(0,0):(vac,0.0,1.0,1)};ledger=[];vectors=[(0,0,0,0,1,vac.copy())]
+  for k in range(1,7):
+   incoming={}
+   for key,data in layer.items():
+@@ -146,11 +146,12 @@
+     mask=int(keys[q]['full_toggle_mask']);A,ae=model.matrix(mask);gap=model.gap(mask);x=-np.linalg.solve(A,b)
+     if not np.isfinite(x).all():raise ArithmeticError('nonfinite solve')
+     error,residual=residual_certificate(A,ae,x,b,en,gap)
+-    ledger.append({'k':k,'boundary_used_mask':str(q[0]),'bridge_count':q[1],'toggle_mask':str(mask),'gap_lower':gap,'matrix_operator_error':ae,'residual_bound':residual,'incoming_error':en,'solution_error':error,'word_count':count})
++    ledger.append({'k':k,'boundary_used_mask':str(q[0]),'bridge_count':q[1],'toggle_mask':str(mask),'gap_lower':gap,'matrix_operator_error':ae,'residual_bound':residual,'incoming_error':en,'solution_error':error,'word_count':count,'vector_index':len(vectors)})
++   vectors.append((k,q[0],q[1],int(keys[q]['full_toggle_mask']),count,x.copy()))
+    nxt[q]=(x,error,normup(x),count)
+   layer=nxt
+  x,error,xn,count=layer[target]
+  if count!=row['unordered_pair_sets']*720:raise ValueError('word count')
+  center=-float(model.close@x);dotabs=float(np.abs(model.close)@np.abs(x));rounding=times(gamma(512),divide(up(dotabs),nextafter(1-gamma(512),-inf)));radius=plus(error,plus(times(model.close_error,xn),rounding))
+  if not isfinite(center):raise ArithmeticError('nonfinite result')
+- return {'bridge':bridge,'coefficient':center,'absolute_error_bound':radius,'interval':[nextafter(center-radius,-inf),nextafter(center+radius,inf)],'word_count':count,'proper_keys':len(ledger),'ledger':ledger,'gap_records':model.gap_records,'scope':'dimensionless t=1 coefficient of ordered i bar_gamma_0 bar_gamma_16; IEEE754/error-model assumptions explicit'}
++ return {'bridge':bridge,'coefficient':center,'absolute_error_bound':radius,'interval':[nextafter(center-radius,-inf),nextafter(center+radius,inf)],'word_count':count,'proper_keys':len(ledger),'ledger':ledger,'gap_records':model.gap_records,'_vectors':vectors,'scope':'dimensionless t=1 coefficient of ordered i bar_gamma_0 bar_gamma_16; IEEE754/error-model assumptions explicit'}
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/check.py
+--- scripts/native_third_order_star_vertex_two_mode_2026_09_08.py
++++ .claude/science/physics-loops/native-third-order-star-vertex-20260908/PORT_RECORDS/final_cold_review/check.py
+@@ -1,27 +1,25 @@
+-"""Port of independent Q(sqrt2) inverse checks; no physical solves."""
+-def check():
+- from fractions import Fraction as F
+- import json
+- # Quadratic field Q(sqrt2); direct 2x2 inverse, independent of alpha polynomial.
+- def q(a,b=0):return(F(a),F(b))
+- def add(a,b):return(a[0]+b[0],a[1]+b[1])
+- def neg(a):return(-a[0],-a[1])
+- def mul(a,b):return(a[0]*b[0]+2*a[1]*b[1],a[0]*b[1]+a[1]*b[0])
+- def div(a,b):return mul(a,(b[0]/(b[0]**2-2*b[1]**2),-b[1]/(b[0]**2-2*b[1]**2)))
+- def inverse(A):
+-  d=add(mul(A[0][0],A[1][1]),neg(mul(A[0][1],A[1][0])));return [[div(A[1][1],d),div(neg(A[0][1]),d)],[div(neg(A[1][0]),d),div(A[0][0],d)]]
+- def mv(A,v):return [add(mul(r[0],v[0]),mul(r[1],v[1])) for r in A]
+- rows=[]
+- for x in [F(0),F(-6),F(1),F(2)]:
+-  E=[[q(x+F(1,3)),q(0,F(1,3))],[q(0,F(1,3)),q(x+F(5,3))]]
+-  O=[[q(x+F(2,3)),q(0,-F(1,3))],[q(0,-F(1,3)),q(x+F(4,3))]]
+-  v=mv(inverse(E),[q(1),q(0)])
+-  # Six disjoint pairs: perpendicular components sum to -3 times C's.
+-  post=[mul(q(6),v[0]),mul(q(-3),v[1])]
+-  z=mv(inverse(O),post);alpha=mul(q(F(15,8*24)),z[0]);formula=F(15)*(6*x*x+18*x+14)/(8*24*(x*x+2*x+F(1,3))*(x*x+2*x+F(2,3)))
+-  if alpha!=q(formula):raise ValueError('formula')
+-  rows.append({'x':str(x),'alpha':str(alpha[0])})
+- if rows[0]['alpha']!='315/64' or rows[1]['alpha']!='2745/172864':raise ValueError('absolute')
+- b=2*F(315,64)**2*2/24
+- if b!=F(33075,8192):raise ValueError('sixth normalization')
+- return {'status':'PASS','direct_two_mode_cases':rows,'singleton_coefficient':str(b),'checks':7}
++from fractions import Fraction as F
++import json
++# Quadratic field Q(sqrt2); direct 2x2 inverse, independent of alpha polynomial.
++def q(a,b=0):return(F(a),F(b))
++def add(a,b):return(a[0]+b[0],a[1]+b[1])
++def neg(a):return(-a[0],-a[1])
++def mul(a,b):return(a[0]*b[0]+2*a[1]*b[1],a[0]*b[1]+a[1]*b[0])
++def div(a,b):return mul(a,(b[0]/(b[0]**2-2*b[1]**2),-b[1]/(b[0]**2-2*b[1]**2)))
++def inverse(A):
++ d=add(mul(A[0][0],A[1][1]),neg(mul(A[0][1],A[1][0])));return [[div(A[1][1],d),div(neg(A[0][1]),d)],[div(neg(A[1][0]),d),div(A[0][0],d)]]
++def mv(A,v):return [add(mul(r[0],v[0]),mul(r[1],v[1])) for r in A]
++rows=[]
++for x in [F(0),F(-6),F(1),F(2)]:
++ E=[[q(x+F(1,3)),q(0,F(1,3))],[q(0,F(1,3)),q(x+F(5,3))]]
++ O=[[q(x+F(2,3)),q(0,-F(1,3))],[q(0,-F(1,3)),q(x+F(4,3))]]
++ v=mv(inverse(E),[q(1),q(0)])
++ # Six disjoint pairs: perpendicular components sum to -3 times C's.
++ post=[mul(q(6),v[0]),mul(q(-3),v[1])]
++ z=mv(inverse(O),post);alpha=mul(q(F(15,8*24)),z[0]);formula=F(15)*(6*x*x+18*x+14)/(8*24*(x*x+2*x+F(1,3))*(x*x+2*x+F(2,3)))
++ if alpha!=q(formula):raise ValueError('formula')
++ rows.append({'x':str(x),'alpha':str(alpha[0])})
++if rows[0]['alpha']!='315/64' or rows[1]['alpha']!='2745/172864':raise ValueError('absolute')
++b=2*F(315,64)**2*2/24
++if b!=F(33075,8192):raise ValueError('sixth normalization')
++print(json.dumps({'status':'PASS','direct_two_mode_cases':rows,'singleton_coefficient':str(b)},indent=2))
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-cold-review/control.py
+from fractions import Fraction as F
+from pathlib import Path
+import hashlib,json,itertools
+P=Path(__file__).parent;S=P.parent/'native-l4-third-vertex';freeze=S/'FREEZE.json'
+if hashlib.sha256(freeze.read_bytes()).hexdigest()!='1085e0ac7288428d50d3a2b9505b6b8615784149b46ca414067e7bd36acde536':raise ValueError('freeze')
+f=json.loads(freeze.read_text());count=0
+for group,base in [('files',S),('runtime',None),('dependencies',None)]:
+ for path,h in f[group].items():
+  q=base/path if base else Path(path)
+  if hashlib.sha256(q.read_bytes()).hexdigest()!=h:raise ValueError(path)
+  count+=1
+# Independent rational toy: square metric values permit literal diagonal similarity.
+d=[F(4),F(9),F(25)];sqrt=[F(2),F(3),F(5)];N=8
+s=[__import__('functools').reduce(lambda a,i:a*sqrt[i],(i for i in range(3) if b>>i&1),F(1)) for b in range(N)]
+checks=0;wrong=0
+for b in range(N):
+ for i in range(3):
+  a=b^(1<<i);sign=(-1)**((b&((1<<i)-1)).bit_count());rv=F(i+1,7)
+  direct=sign*rv/sqrt[i]*s[b]/s[a]
+  formula=sign*rv*(1 if b>>i&1 else 1/d[i])
+  if direct!=formula:raise ValueError('gamma similarity')
+  checks+=1
+  wrong+=direct!=sign*rv/d[i]
+# Every ordered pair of disjoint pairs determines exactly one middle pair.
+pairs=list(itertools.combinations(range(6),2));words=[]
+for a in pairs:
+ for c in pairs:
+  if set(a).isdisjoint(c):words.append((a,tuple(sorted(set(range(6))-set(a)-set(c))),c))
+if len(words)!=90 or len(set(words))!=90:raise ValueError('word grouping')
+if F(1,8)*F(1,6)!=F(1,48):raise ValueError('resolvent factor')
+if wrong==0:raise ValueError('nondiscriminating mutant')
+out={'source_pins_verified':count,'gamma_similarity_cases':checks,'wrong_vacuum_annihilation_factor_mismatches':wrong,'ordered_words':len(words),'normalization':'1/48','physical_core_imported':False,'physical_solves':0}
+(P/'RESULT.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out))
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/replay.py
+--- scripts/native_third_order_star_vertex_replay_2026_09_08.py
++++ .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/replay.py
+@@ -1,52 +1,50 @@
+-"""Port of independently reviewed ordered-CAR residual replay; no solves."""
+-def check(root):
+- from fractions import Fraction as F
+- from itertools import product,combinations
+- from pathlib import Path
+- import json,hashlib,signal,resource,time
+- start=time.monotonic();D=root/'.claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-run-1085';pins=json.loads((root/'.claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/INPUTS.json').read_text())
+- for name,h in pins.items():
+-  if hashlib.sha256((D/name).read_bytes()).hexdigest()!=h:raise ValueError('input')
+- vs=list(product(range(4),repeat=3));ix={v:i for i,v in enumerate(vs)};K=[[F(0)]*64 for _ in vs];edges=[]
+- for v in vs:
+-  for axis in range(3):
+-   w=list(v);w[axis]=(w[axis]+1)%4;i,j=sorted((ix[v],ix[tuple(w)]));edges.append((i,j));K[i][j]=F(-2*(-1)**sum(v[:axis]));K[j][i]=-K[i][j]
+- def dot(a,b):return sum(x*y for x,y in zip(a,b))
+- def mv(A,x):return [dot(row,x) for row in A]
+- star=[e for e,(i,j) in enumerate(edges) if i==0 or j==0];neighbors=sorted({v for e in star for v in edges[e]}-{0});r=[]
+- for v in [0]+neighbors:
+-  x=[F(i==0) for i in range(64)] if v==0 else [K[i][v] for i in range(64)]
+-  for b in r:
+-   c=dot(x,b)/dot(b,b);x=[u-c*w for u,w in zip(x,b)]
+-  if any(x):r.append(x)
+- d=[dot(x,x) for x in r];kr=[mv(K,x) for x in r];bits={p:[b for b in range(64) if b.bit_count()%2==p] for p in (0,1)}
+- def mat(pair,p):
+-  k=[row[:] for row in K]
+-  for e in pair:
+-   i,j=edges[e];k[i][j]=-k[i][j];k[j][i]=-k[j][i]
+-  q=[[-dot(x,mv(k,y))/12 for y in kr] for x in r];bs=bits[p];index={b:i for i,b in enumerate(bs)};A=[[F(6*int(i==j)) for j in range(32)] for i in range(32)]
+-  # Direct ordered CAR action i*a_i*b_j/2; b_j acts first.
+-  for col,b in enumerate(bs):
+-   for i in range(6):
+-    for j in range(6):
+-     mid=b^(1<<j);a=mid^(1<<i)
+-     sign=(-1)**((b&((1<<j)-1)).bit_count()+(mid&((1<<i)-1)).bit_count())
+-     factor=1/d[i] if i==j else d[i]**(((b>>i)&1)-1)*d[j]**(((b>>j)&1)-1)
+-     A[index[a]][col]+=-q[i][j]*F(sign,2)*(1-2*((b>>j)&1))*factor
+-  return A
+- def gamma(x):
+-  z=[F(0)]*32;idx={b:i for i,b in enumerate(bits[1])}
+-  for col,b in enumerate(bits[0]):
+-   for i in range(6):z[idx[b^(1<<i)]]+=x[col]*(-1)**((b&((1<<i)-1)).bit_count())*r[i][0]*(1 if b>>i&1 else 1/d[i])
+-  return z
+- raw=json.loads((D/'SOLVE_VECTORS.json').read_text());res=json.loads((D/'RESULT.json').read_text());pairs=list(combinations(star,2));xs={tuple(map(int,k.split(','))):list(map(F,v)) for k,v in raw['first'].items()};ys=[list(map(F,v)) for v in raw['second']]
+- if set(xs)!=set(pairs) or len(ys)!=15:raise ValueError('membership')
+- for pair in pairs:
+-  if mv(mat(pair,0),xs[pair])!=[F(i==0) for i in range(32)]:raise ValueError('even residual')
+- for pair,y in zip(pairs,ys):
+-  rhs=gamma([sum(xs[a][i] for a in pairs if set(a).isdisjoint(pair)) for i in range(32)])
+-  if mv(mat(pair,1),y)!=rhs:raise ValueError('odd residual')
+- z=[sum(y[i] for y in ys)/48 for i in range(32)];W=[__import__('functools').reduce(lambda a,i:a*d[i],(i for i in range(6) if b>>i&1),F(1)) for b in bits[1]];weights={str(k):sum(W[i]*z[i]**2 for i,b in enumerate(bits[1]) if b.bit_count()==k) for k in (1,3,5)}
+- if z!=list(map(F,res['coordinates'])) or W!=list(map(F,res['metric'])) or weights!={k:F(v) for k,v in res['particle_weights'].items()}:raise ValueError('decomposition')
+- if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss>384*1048576:raise ValueError('RSS')
+- return ({'status':'PASS','independent_direct_CAR_residuals':30,'particle_weights':{k:str(v) for k,v in weights.items()},'seconds':time.monotonic()-start,'rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'author_import':False,'checks':32})
++from fractions import Fraction as F
++from itertools import product,combinations
++from pathlib import Path
++import json,hashlib,signal,resource,time
++signal.alarm(29);start=time.monotonic();P=Path(__file__).parent;D=P.parent/'native-l4-third-vertex-run-1085';pins=json.loads((P/'INPUTS.json').read_text())
++for name,h in pins.items():
++ if hashlib.sha256((D/name).read_bytes()).hexdigest()!=h:raise ValueError('input')
++vs=list(product(range(4),repeat=3));ix={v:i for i,v in enumerate(vs)};K=[[F(0)]*64 for _ in vs];edges=[]
++for v in vs:
++ for axis in range(3):
++  w=list(v);w[axis]=(w[axis]+1)%4;i,j=sorted((ix[v],ix[tuple(w)]));edges.append((i,j));K[i][j]=F(-2*(-1)**sum(v[:axis]));K[j][i]=-K[i][j]
++def dot(a,b):return sum(x*y for x,y in zip(a,b))
++def mv(A,x):return [dot(row,x) for row in A]
++star=[e for e,(i,j) in enumerate(edges) if i==0 or j==0];neighbors=sorted({v for e in star for v in edges[e]}-{0});r=[]
++for v in [0]+neighbors:
++ x=[F(i==0) for i in range(64)] if v==0 else [K[i][v] for i in range(64)]
++ for b in r:
++  c=dot(x,b)/dot(b,b);x=[u-c*w for u,w in zip(x,b)]
++ if any(x):r.append(x)
++d=[dot(x,x) for x in r];kr=[mv(K,x) for x in r];bits={p:[b for b in range(64) if b.bit_count()%2==p] for p in (0,1)}
++def mat(pair,p):
++ k=[row[:] for row in K]
++ for e in pair:
++  i,j=edges[e];k[i][j]=-k[i][j];k[j][i]=-k[j][i]
++ q=[[-dot(x,mv(k,y))/12 for y in kr] for x in r];bs=bits[p];index={b:i for i,b in enumerate(bs)};A=[[F(6*int(i==j)) for j in range(32)] for i in range(32)]
++ # Direct ordered CAR action i*a_i*b_j/2; b_j acts first.
++ for col,b in enumerate(bs):
++  for i in range(6):
++   for j in range(6):
++    mid=b^(1<<j);a=mid^(1<<i)
++    sign=(-1)**((b&((1<<j)-1)).bit_count()+(mid&((1<<i)-1)).bit_count())
++    factor=1/d[i] if i==j else d[i]**(((b>>i)&1)-1)*d[j]**(((b>>j)&1)-1)
++    A[index[a]][col]+=-q[i][j]*F(sign,2)*(1-2*((b>>j)&1))*factor
++ return A
++def gamma(x):
++ z=[F(0)]*32;idx={b:i for i,b in enumerate(bits[1])}
++ for col,b in enumerate(bits[0]):
++  for i in range(6):z[idx[b^(1<<i)]]+=x[col]*(-1)**((b&((1<<i)-1)).bit_count())*r[i][0]*(1 if b>>i&1 else 1/d[i])
++ return z
++raw=json.loads((D/'SOLVE_VECTORS.json').read_text());res=json.loads((D/'RESULT.json').read_text());pairs=list(combinations(star,2));xs={tuple(map(int,k.split(','))):list(map(F,v)) for k,v in raw['first'].items()};ys=[list(map(F,v)) for v in raw['second']]
++if set(xs)!=set(pairs) or len(ys)!=15:raise ValueError('membership')
++for pair in pairs:
++ if mv(mat(pair,0),xs[pair])!=[F(i==0) for i in range(32)]:raise ValueError('even residual')
++for pair,y in zip(pairs,ys):
++ rhs=gamma([sum(xs[a][i] for a in pairs if set(a).isdisjoint(pair)) for i in range(32)])
++ if mv(mat(pair,1),y)!=rhs:raise ValueError('odd residual')
++z=[sum(y[i] for y in ys)/48 for i in range(32)];W=[__import__('functools').reduce(lambda a,i:a*d[i],(i for i in range(6) if b>>i&1),F(1)) for b in bits[1]];weights={str(k):sum(W[i]*z[i]**2 for i,b in enumerate(bits[1]) if b.bit_count()==k) for k in (1,3,5)}
++if z!=list(map(F,res['coordinates'])) or W!=list(map(F,res['metric'])) or weights!={k:F(v) for k,v in res['particle_weights'].items()}:raise ValueError('decomposition')
++if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss>384*1048576:raise ValueError('RSS')
++print(json.dumps({'status':'PASS','independent_direct_CAR_residuals':30,'particle_weights':{k:str(v) for k,v in weights.items()},'seconds':time.monotonic()-start,'rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'author_import':False}))
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/core.py
+from fractions import Fraction as F
+from itertools import product,combinations
+V=list(product(range(4),repeat=3));vi={x:i for i,x in enumerate(V)};K=[[0]*64 for _ in V];edges=[]
+for r in V:
+ for a in range(3):
+  s=list(r);s[a]=(s[a]+1)%4;i,j=sorted((vi[r],vi[tuple(s)]));val=-2*(-1)**sum(r[:a]);K[i][j]=val;K[j][i]=-val;edges.append((i,j))
+def dot(x,y):return sum(a*b for a,b in zip(x,y))
+def mv(A,x):return [dot(r,x) for r in A]
+star=[e for e,ab in enumerate(edges) if 0 in ab];neighbors=sorted({v for e in star for v in edges[e]}-{0})
+r=[]
+for v in [0]+neighbors:
+ x=[F(int(i==0)) for i in range(64)]

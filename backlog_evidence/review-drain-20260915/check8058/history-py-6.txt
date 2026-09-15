@@ -1,0 +1,156 @@
+ if v==0 else [F(K[i][v]) for i in range(64)]
+ for b in r:
+  c=dot(x,b)/dot(b,b);x=[a-c*z for a,z in zip(x,b)]
+ if any(x):r.append(x)
+d=[dot(x,x) for x in r];n=len(r);kr=[mv(K,x) for x in r]
+bits={p:[b for b in range(1<<n) if b.bit_count()%2==p] for p in (0,1)}
+W={p:[__import__('functools').reduce(lambda x,i:x*d[i],[i for i in range(n) if b>>i&1],F(1)) for b in bits[p]] for p in (0,1)}
+def changed(mask):
+ A=[row[:] for row in K]
+ for e,(i,j) in enumerate(edges):
+  if mask>>e&1:A[i][j]*=-1;A[j][i]*=-1
+ return A
+def matrix(mask,p):
+ KF=changed(mask);kfr=[mv(KF,y) for y in kr];q=[[-dot(x,y)/12 for y in kfr] for x in r];bs=bits[p];ix={b:i for i,b in enumerate(bs)};A=[[F(0) for _ in bs] for _ in bs]
+ for col,b in enumerate(bs):
+  A[col][col]=sum(q[i][i]/d[i]*(F((b>>i)&1)-F(1,2)) for i in range(n))+n
+  for i,j in combinations(range(n),2):
+   target=b^(1<<i)^(1<<j);sgn=(-1)**((b&((1<<i)-1)).bit_count()+(b&((1<<j)-1)).bit_count())
+   A[ix[target]][col]=F(sgn,2)*(q[j][i]*(1-2*((b>>i)&1))-q[i][j]*(1-2*((b>>j)&1)))*d[i]**(((b>>i)&1)-1)*d[j]**(((b>>j)&1)-1)
+ return A
+def gamma(p):
+ G=[[F(0) for _ in bits[p]] for _ in bits[1-p]];ix={b:i for i,b in enumerate(bits[1-p])}
+ for j,b in enumerate(bits[p]):
+  for i in range(n):G[ix[b^(1<<i)]][j]=(-1)**((b&((1<<i)-1)).bit_count())*r[i][0]*(F(1) if b>>i&1 else 1/d[i])
+ return G
+def solve(A,b):
+ M=[row[:]+[x] for row,x in zip(A,b)];N=len(b)
+ for j in range(N):
+  pivot=next(i for i in range(j,N) if M[i][j]);M[j],M[pivot]=M[pivot],M[j];v=M[j][j];M[j]=[x/v for x in M[j]]
+  for i in range(N):
+   if i!=j:
+    v=M[i][j]
+    if v:M[i]=[x-v*y for x,y in zip(M[i],M[j])]
+ x=[row[-1] for row in M]
+ if mv(A,x)!=b:raise ValueError('exact solve residual')
+ return x
+pairs=list(combinations(star,2))
+def mask(pair):return sum(1<<e for e in pair)
+def controls():
+ if n!=6 or len(star)!=6 or len(pairs)!=15:raise ValueError('dimension')
+ for i,x in enumerate(r):
+  if mv(K,mv(K,x))!=[-24*a for a in x]:raise ValueError('canonical flat restriction')
+  for j,y in enumerate(r):
+   if dot(x,y)!=(d[i] if i==j else 0):raise ValueError('orthogonal frame')
+ for v in [0]+neighbors:
+  norm=sum(x[v]**2/dd for x,dd in zip(r,d))+sum(x[v]**2/(24*dd) for x,dd in zip(kr,d))
+  if norm!=1:raise ValueError('endpoint containment')
+ for p in (0,1):
+  A=matrix(0,p)
+  for i,b in enumerate(bits[p]):
+   if A[i]!=[F(2*b.bit_count() if i==j else 0) for j in range(32)]:raise ValueError("base particle energies")
+ G=gamma(0);H=gamma(1)
+ a=matrix(mask(star),1);b=matrix(0,0)
+ for j in range(32):
+  e=[F(int(i==j)) for i in range(32)]
+  if mv(H,mv(G,e))!=e:raise ValueError('gamma square')
+  if mv(a,mv(G,e))!=mv(G,mv(b,e)):raise ValueError('Gauss intertwiner')
+ for pair in pairs:
+  for p in (0,1):
+   A=matrix(mask(pair),p)
+   for i in range(32):
+    for j in range(32):
+     if W[p][i]*A[i][j]!=W[p][j]*A[j][i]:raise ValueError('metric Hermiticity')
+ if sum(not(set(a)&set(c)) for a in pairs for c in pairs)!=90:raise ValueError('90 words')
+ return dict(frame_rank=6,real_active_dimension=12,parity_dimension=32,pairs=15,grouped_words=90)
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex/run.py
+import sys,time,signal,resource,json,hashlib,importlib.util
+from pathlib import Path
+signal.alarm(29);t=time.monotonic();P=Path(__file__).resolve().parent
+if not sys.flags.isolated or len(sys.argv)!=3 or sys.argv[1] not in ('controls','solve'):raise ValueError('-I -B run.py controls|solve FRESH_EXTERNAL_OUTPUT')
+out=Path(sys.argv[2]).resolve()
+if out.exists() or out==P or P in out.parents:raise ValueError('fresh external output')
+f=json.loads((P/'FREEZE.json').read_text())
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+if str(Path(sys.executable).resolve())!=f['interpreter']:raise ValueError('interpreter')
+actual=sorted(str(x.relative_to(P)) for x in P.rglob('*') if x.is_file() and x.suffix in ('.py','.pyc','.so'))
+if actual!=f['executable_membership']:raise ValueError('module membership')
+for group,base in [('files',P),('runtime',None),('dependencies',None)]:
+ for p,h in f[group].items():
+  if sha(base/p if base else p)!=h:raise ValueError('pin '+p)
+out.mkdir(parents=True)
+def guard():
+ if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss>384*1048576:raise RuntimeError('RSS')
+ if time.monotonic()-t>29:raise TimeoutError('29seconds')
+try:
+ spec=importlib.util.spec_from_file_location('vertex_core',P/'core.py');c=importlib.util.module_from_spec(spec);spec.loader.exec_module(c);control=c.controls();guard();result=dict(controls=control,mode=sys.argv[1],freeze=sha(P/'FREEZE.json'))
+ if sys.argv[1]=='solve':
+  e=[c.F(int(i==0)) for i in range(32)];x={};ys=[];timings=[]
+  for pair in c.pairs:
+   guard();start=time.monotonic();x[pair]=c.solve(c.matrix(c.mask(pair),0),e);timings.append(time.monotonic()-start)
+  G=c.gamma(0)
+  for pair in c.pairs:
+   guard();start=time.monotonic();b=[sum(x[a][i] for a in c.pairs if not(set(a)&set(pair))) for i in range(32)];y=c.solve(c.matrix(c.mask(pair),1),c.mv(G,b));ys.append(y);timings.append(time.monotonic()-start)
+  z=[sum(y[i] for y in ys)/48 for i in range(32)]
+  weights={str(k):sum(c.W[1][i]*z[i]**2 for i,b in enumerate(c.bits[1]) if b.bit_count()==k) for k in (1,3,5)}
+  total=sum(weights.values());multi=weights['3']+weights['5']
+  result.update(coordinates=[str(q) for q in z],occupation_bits=c.bits[1],metric=[str(q) for q in c.W[1]],particle_weights={k:str(v) for k,v in weights.items()},total_weight=str(total),multiparticle_weight=str(multi),multiparticle_positive=multi>0,solve_seconds=timings,exact_residuals=30,normalization='chi=(1/48) S sum y_C at |t|=1; two negative resolvents cancel')
+  (out/'SOLVE_VECTORS.json').write_text(json.dumps(dict(first={','.join(map(str,p)):list(map(str,v)) for p,v in x.items()},second=[list(map(str,y)) for y in ys]),indent=2)+'\n')
+ guard();result.update(status='COMPLETE',seconds=time.monotonic()-t,rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
+ (out/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+except BaseException as e:
+ (out/'FAILURE.json').write_text(json.dumps(dict(error=repr(e),seconds=time.monotonic()-t))+'\n');raise
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-order-hybridization-cold-review/check.py
+from itertools import combinations,permutations
+import json
+pairs=list(map(frozenset,combinations(range(6),2)));words=[(a,frozenset(range(6))-a-c,c) for a in pairs for c in pairs if not a&c];n=0
+def ck(x):
+ global n;n+=1
+ if not x:raise ValueError(n)
+ck(len(words)==90);ck(len(set(words))==90)
+for c in pairs:ck(sum(z==c for a,b,z in words)==6)
+ck(sum(len(set(p[:3]))==3 and (set(p[:3])<=set(range(3)) or set(p[:3])<=set(range(3,6))) for p in permutations(range(6)))==72)
+def mat(A,B):return [[sum(a*b for a,b in zip(r,c)) for c in zip(*B)] for r in A]
+def add(A,B):return [[a+b for a,b in zip(r,s)] for r,s in zip(A,B)]
+def scale(c,A):return [[c*x for x in r] for r in A]
+def adj(A):return [[x.conjugate() if isinstance(x,complex) else x for x in r] for r in zip(*A)]
+def kron(A,B):return [[A[i//len(B)][j//len(B[0])]*B[i%len(B)][j%len(B[0])] for j in range(len(A[0])*len(B[0]))] for i in range(len(A)*len(B))]
+I=[[1,0],[0,1]];X=[[0,1],[1,0]];Z=[[1,0],[0,-1]];g=kron(X,I);beta=kron(Z,X);Pv=scale(-1j,mat(g,beta));RA=kron([[-2,0],[0,-3]],I);RC=kron([[-5,0],[0,-7]],I)
+left=mat(mat(Pv,mat(mat(g,RC),g)),RA);right=scale(-1j,mat(mat(mat(RC,g),RA),beta));ck(left==right)
+O=add(mat(mat(RC,g),RA),mat(mat(RA,g),RC));H=scale(-1j,mat(O,beta));ck(O==adj(O));ck(H==adj(H));ck(add(mat(O,beta),mat(beta,O))==[[0]*4 for _ in range(4)])
+ck(left!=scale(1j,mat(mat(mat(RC,g),RA),beta)))
+print(json.dumps({'controls':n,'scope':'90/72 exact combinatorics and Gaussianinteger Clifford sign/Hermiticity, no physical solve'}))
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-third-vertex-interpretation/commutant.py
+from pathlib import Path
+import json,hashlib,time,signal,resource
+signal.alarm(30);t=time.monotonic();P=Path(__file__).parent;S=P.parent/'native-sixth-magnetic-symmetry-root/RESULT.json';source=json.loads(S.read_text());gens=source['generators'];seen=set();orbits=[]
+for root in range(4096):
+ if root in seen:continue
+ val={root:1};todo=[root];bad=False
+ while todo:
+  x=todo.pop();i,j=divmod(x,64)
+  for g in gens:
+   f=g['permutation'];sign=g['gauge'];y=f[i]*64+f[j];z=val[x]*sign[i]*sign[j]
+   if y in val:
+    if val[y]!=z:bad=True
+   else:val[y]=z;todo.append(y)
+ seen.update(val);orbits.append(dict(root=divmod(root,64),size=len(val),forced_zero=bad,values={str(k):v for k,v in val.items()}))
+if len(seen)!=4096:raise ValueError('coverage')
+if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss>384*1048576:raise ValueError('RSS')
+r=dict(status='COMPLETE',source_sha=hashlib.sha256(S.read_bytes()).hexdigest(),dimension=sum(not x['forced_zero'] for x in orbits),orbits=orbits,seconds=time.monotonic()-t)
+(P/'COMMUTANT.json').write_text(json.dumps(r,indent=2)+'\n');print(dict(dimension=r['dimension'],orbits=[{k:v for k,v in x.items() if k!='values'} for x in orbits],seconds=r['seconds']))
+
+FILE 8058 .claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/scripts/native_third_order_star_vertex_2026_09_08.py
+--- scripts/native_third_order_star_vertex_2026_09_08.py
++++ .claude/science/physics-loops/native-third-order-star-vertex-20260908/history/BEFORE_FULL_COEFFICIENT_762/scripts/native_third_order_star_vertex_2026_09_08.py
+@@ -10,7 +10,6 @@
+  '.claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-post-review/INPUTS.json',
+  '.claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-run-1085/RESULT.json',
+  '.claude/science/physics-loops/native-third-order-star-vertex-20260908/evidence/native-l4-third-vertex-run-1085/SOLVE_VECTORS.json',
+- 'docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md',
+ )
+ def main():
+  import argparse,json,hashlib,runpy,signal,time,resource

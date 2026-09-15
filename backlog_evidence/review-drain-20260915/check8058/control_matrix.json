@@ -1,0 +1,7 @@
+{
+  "matrix_entries_compared": 262144,
+  "actual_nonzeros": 3072,
+  "mask": "3",
+  "scope": "Direct ordered CAR versus compressed rational sparse matrix on one actual512-state prefix; exact weighted self-adjointness and Fraction residual against integer implementation. No physical solve or all-prefix execution.",
+  "seconds": 1.9329487499780953
+}

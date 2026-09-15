@@ -1,0 +1,185 @@
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/ARTIFACT_PLAN.md
+# Artifact plan
+
+The canonical note contains the complete proof chain and its supplied-model limits. The primary runner reconstructs all six exact rational certificates and the finite magnetic signed-orbit constraints from declared portable inputs. Candidate NPZ files are decoded using the standard library and are treated only as arbitrary dyadic trial vectors.
+
+Original source, independent reviews, exact replay ledgers, failed controls and hashes are retained in this packet and the remote campaign checkpoints. The numerical candidate-generation runtime is provenance, not a new dependency of the rational certificate. PORT_RECORDS contains the portable source comparison, isolated closure and semantic mutant receipts.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/ASSUMPTIONS_AND_IMPORTS.md
+# Assumptions and imports
+
+The supplied full-native Hamiltonian H(u)=ΣA+uD, uniform t=1, simple periodic 4³ geometry and exact CAR/Z2 Gauss dictionary are premises. PR8052 supplies the unique minimizing flux orbit, full isolation at least1/432, dimension2^31, full-rank active vacuum and scalar canonical coefficients through five. No low-charge truncation is used.
+
+New proofs classify cuts through twelve, exclude same-color bilinears, lift the finite magnetic space group, enumerate its signed pair constraints, and reduce the complete adjacent coefficient to a rational metric. Exact residual certificates use immutable dyadic candidates; their validity does not assume the numerical solver's accuracy. Integer/rational arithmetic and declared finite geometry are load-bearing. No observational value, fit, external flux-minimization theorem or new physical selector is used.
+
+Finite analytic perturbation and eigenvalue norm continuity give an existential small-u neighborhood. No numerical radius, volume-uniform bound or physical choice of u is supplied.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CANONICAL_COLD_REVIEW/REVIEW.md
+# Canonical weak-electric finite-L4 review
+
+Scientific source and port disposition: PASS. The complete canonical note, primary runner, exact rational core, replay, magnetic symmetry helper and standard-library decoder were read. Earlier independent complete reviews of finite-L4 isolation, scalar-through-five selection, adjacent six-bridge reduction, rational metric and gap certificates, and physical spectator parity are reused explicitly. This is canonical consolidation and closure review, not a new independent origin claim for those derivations.
+
+The proof retains the supplied full Hamiltonian, t=1, fixed4³ geometry and existential small-u neighborhood. The all-pair cut classification includes nonadjacent supports before symmetry excludes them. The magnetic transformation is a physical symmetry with the same signed action on active and spectator modes, not an arbitrary spectral basis change. Positive-overlap canonical covariance consequently imposes the signed pair-orbit constraints. The complete orbit certificate supports the one-dimensional antisymmetric matrix space on this particular torus.
+
+The irreducible sixth chain is properly restricted to these monomials: lower returning subwords have scalar/zero spectator content, and proper singleton-cut prefixes have opposite active vacuum parity. The common20-Majorana frame carries the changed edge endpoints and its J-images; the complement vacuum offset remains included. Rational diagonal similarity, exact dyadic-candidate residuals, weighted norms, full32-mode gap bound and final closure/216 retain the signs and normalization. Neither floating candidate generation nor its forward-error estimate is used as the theorem certificate. All six bridges and2292 proper states are included.
+
+The final containment delta was read in full. K0²=-24I is checked exactly. For every declared support endpoint the sum of orthogonal projectors onto r_i and K0 r_i/(sqrt24) is required to fix its coordinate vector. Given the exact Gram and bipartite supports, this establishes the necessary containment and invariant reduction. The added edge191 mutation targets this new precondition. Pre-guard bytes and output remain archived; older closing/prefix mutations are honestly retained as tests of unchanged arithmetic rather than restamped executions.
+
+The exact saved aggregate interval is strictly inside 370.7628915198<c<370.7628915199. The portable coarse370<c<371 predicate suffices for the nonzero theorem; the tighter displayed enclosure is supported by exact rational output. The factor2 conversion from pair coefficients to skew matrix and the even physical spectator occupations give leading gap2c sqrt24. Finite analytic continuity then gives a unique full ground for sufficiently small nonzero u with the stated asymptotic gap. No explicit radius, thermodynamic phase, Hamiltonian selection or finite-u excited degeneracy is asserted.
+
+All declared inputs, decoder identity and replay certify AST identity were independently checked. Complete port and actual mutation receipts were read. The primary alarm is set once; the symmetry helper does not reset it through runpy. The isolated execution and exact payload comparison are recorded in ISOLATION_RECEIPT.json, with ISOLATED_INPUT_HASHES.json, stdout/stderr and a separate output tree. No canonical output was overwritten. Only primary plus23 declared files were copied; the run used isolated Python -I -OO and a standard-library wrapper exposing that scripts directory for sibling imports. No NumPy or campaign module import is required.
+
+This is a branch-local source review, not an audit verdict or repository-wide pipeline result.
+
+Actual isolated closure: exit0,47.365871333 seconds,112001024 high-water bytes,24 copied files. All six rational parts, every residual ledger, exact endpoints and magnetic orbit payload match canonical output.7960 declared predicates passed.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CLAIM_STATUS_CERTIFICATE.md
+# Claim-status certificate
+
+```yaml
+actual_current_surface_status: conditional-support
+conditional_surface_status: "Exact finite theorem for the supplied uniform full-native L4 model at t=1."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+proposal_allowed: false
+proposal_allowed_reason: "The Hamiltonian and finite model remain supplied; this is frontier support, not an existing retained-lane closure."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+The review title uses exact-support for the bounded mathematical result. It does not assert audit-ratified retained status. Independent canonical review and later audit must be recorded separately.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/CONTROL_CONTRACT.md
+# Control contract
+
+Run the canonical primary with --json, including under -OO. A single180s alarm spans helper execution; every explicit predicate remains active. Peak RSS must remain below384MiB. The declared closure includes the note, upstream premises, portable helpers and every immutable candidate/frame/prefix input.
+
+All2292 proper states and194400 ordered-word multiplicities must be represented. Exact interval endpoints must give370<c<371. The signed-orbit certificate must have one free nearest-neighbor orbit and force the other three opposite-color orbits to zero. Mutation controls must fail actual mathematical or coverage predicates, not only a hash mismatch. Archived development counts are not added to live counts.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/GOAL.md
+# Goal
+
+Determine whether the first support-allowed electric correction actually splits the supplied uniform finite L4 endpoint ground family. Deliver a complete coefficient certificate, full operator identification and the resulting physical-parity spectrum. This is a frontier model theorem, not Hamiltonian selection or a thermodynamic phase claim.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/HANDOFF.md
+# Handoff
+
+This branch is stacked on PR8052 (03696e613d72aa16741e3f533b5bd37a70f09512). The new finite supplied-model theorem proves a positive sixth-order spectator interaction and, with exact finite magnetic symmetry and physical parity, a unique full ground for sufficiently small nonzero electric penalty. The exact adjacent coefficient lies between370.7628915198 and370.7628915199 at t=1; the leading full gap is2c√24 u^6+O(|u|^7).
+
+Read the canonical note and primary runner, then PORT_RECORDS and original proof/review hashes. All candidate vectors are immutable inputs to an exact residual proof, not trusted approximate answers. The stronger certificate is independent of the original floating enclosure. Canonical author verification and independent review must complete before the review PR is opened.
+
+No explicit radius, larger-volume phase, Hamiltonian selection, main landing or audit verdict is authorized by this packet. Later integration should consider linking this result from the endpoint frontier after independent audit; no repo-wide authority surface is edited here. Continue the wider48-hour campaign after this science block.
+
+Delivery checks complete: independent canonical and root review PASS; isolated declared-input replay and exact payload identity PASS; actual semantic controls reject. The review PR may now be opened. Existing source note and frozen primary/output remain unchanged.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/LITERATURE_BRIDGES.md
+# Literature and theorem imports
+
+No external flux-phase theorem is needed for this block. Its finite isolation comes from PR8052's elementary constant-square/concavity proof. Finite-dimensional spectral projectors, positive-overlap polar normalization, Clifford algebra and exact rational residual inequalities are explicitly derived or applied in the note. No literature value is fitted to the coefficient.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/NO_GO_LEDGER.md
+# Boundaries and failed shortcuts
+
+- Scalar corrections through five do not prove a nonzero sixth coefficient.
+- One adjacent contribution or the internal bridge alone is incomplete; all six bridge supports are required.
+- Same-color and distant bilinears cannot be omitted before proving their selection rules.
+- A numerical residual without matrix/error bounds is not a certificate. The final rational replay does not rely on that shortcut.
+- Dropping the unaffected vacuum offset, physical parity, closure sign or factor216 changes the answer.
+- The finite L4 constant-square and signed-orbit conclusions do not automatically extend to larger tori.
+- Leading excited multiplicities are not exact finite-u degeneracies, and an existential gap asymptotic is not a practical validity radius.
+
+Failed synthetic decoder/control fixtures are preserved in originals; they were repaired before physical certificate execution and are not hidden as successful science.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/OPPORTUNITY_QUEUE.md
+# Next science opportunities
+
+1. Establish strict minimizing-flux isolation beyond L4, starting with L6. High value, few model imports, difficult equality proof; a candidate is under separate review, not an input here.
+2. Extend the independently calibrated continuous-time sampler to larger lattices with a local event index. Useful numerical discriminator; it requires new fixed protocols and does not certify a phase by itself.
+3. Determine weak-penalty bulk behavior and connect it to the large-penalty ice regime. Highest physical reach, but currently missing volume-uniform isolation and perturbation control.
+
+No additional audit/governance churn is counted as science progress.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/BEFORE_CONTAINMENT/PORT_REPORT.md
+# Portable exact certificate port
+
+The core is byte-identical to the independently reviewed rational core. The certify function has an identical AST to original postcheck.py. Its filesystem/CLI wrapper is replaced and the NumPy decoder is replaced with the independently developed strict standard-library NPZ decoder, itself copied byte-identically. Every six-bridge scientific result including exact endpoints and all residual ledgers matches the original replay exactly.
+
+Actual canonical command: python3 -OO scripts/native_weak_electric_spectator_gap_2026_09_08.py --json, externally timed. Result47.603930209s/115.96875MiB; external47.66s/121602048bytes. All2292 residuals and5659 magnetic predicates run;7960 total explicitly broken down in output. Primary owns the180second alarm; helper does not reset it under runpy. Strict unknown-argument control returns2. No NumPy import or absolute runtime path is needed.
+
+All23 declared paths are bound. INPUT_HASHES binds22 files (itself excluded); source hash binds primary. Upstream notes and all candidate JSON/NPZ, frame/prefix data, helper sources are explicit. Archive metadata inside candidate JSON is provenance only, not read as runtime dependencies. Candidate data are arbitrary dyadic trial inputs, not a hidden numerical oracle for the certificate.
+
+Two actual -OO semantic mutants completed with intentionally updated input hashes: /216→/108 closing factor fails the exact coarse coefficient check after all residuals; first proper prefix omission fails exact coverage. Mutants do not count as additional passed physics checks. Logs/diffs/changed bytes remain; duplicate baseline copies were hash-verified and deduplicated after runs, with a receipt and reproducer retained. Frozen canonical source is unchanged.
+
+This port supplies numerical/exact controls for the linked theorem; full isolation, canonical expansion, magnetic physical lift and parity reasoning remain source proofs. No repository-wide pipeline, commit or push was performed by this worker.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/DECODER_ORIGINAL/REPORT.md
+# Standard-library candidate decoder
+
+Implemented decoder.py using only ast, hashlib, json, math, re, struct, zipfile and pathlib. No NumPy import or coefficient arithmetic occurs in the decoder. load(JSON,prefix) returns the original metadata, matching prefix record and key-indexed rows with ordinary Python float lists in place of NumPy vectors.
+
+The decoder accepts the actual little-endian float64, uint8, uint64 and UTF-32LE hex arrays. It checks six-member ZIP membership without duplicates, bounded uncompressed sizes, NPY version/header syntax and unique keys, C order, exact dtype/shape/payload length, finite floats, canonical hex strings, matching metadata lengths, artifact SHA/byte count/shape, unique DP keys, prefix coverage/identity and the vacuum row. Object arrays are rejected without unpickling.
+
+The independent comparison control decoded all six frozen NPZ artifacts and compared every float bit (including signed zero) and every metadata value against NumPy's allow_pickle=False decoder. All 83 predicates passed in 0.254 seconds, peak 180.422 MiB. Actual malformed shape, object dtype, NaN payload, truncated payload and duplicate ZIP member mutants failed decoding without relying on artifact hash rejection. NPZ hashes are preserved in RESULT.json. No coefficient recurrence, solve or rational certificate was rerun.
+
+This is a strict decoder for this saved schema, not a general NumPy file implementation. Arbitrary NPY formats, endian conventions and shapes intentionally fail. The original postcheck.load source was read to preserve its metadata/row contract; scientific prefix word-count recurrence remains the downstream certificate's responsibility.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/ORIGINAL_RESULT_REPORT.md
+# Exact rational replay completed
+
+All six fixed bridges and all 2292 proper residuals completed once, without replacements. The exact rational interval is strictly positive; a outward decimal enclosure is **[370.7628915198, 370.7628915199]**. Exact rational endpoints remain in REPLAY_OUTPUT/SUMMARY.json. This certificate uses arbitrary dyadic candidate vectors, exact rational sparse residuals, weighted norms and exact gap bounds; it does not rely on the original IEEE residual radius.
+
+All frozen candidate and harness hashes were rechecked after execution. Every per-job external maximum RSS and polled group RSS is below384MiB, and every job below180seconds. Whole-dispatch external wall time49.61seconds; conservatively charged59.62seconds including10seconds prior, below1200seconds. Maximum external RSS119996416bytes; maximum observed group RSS121192448bytes. No FAILURE receipt exists.
+
+Scope is the adjacent ordered spectator bilinear under the reviewed perturbation/isolation premises. It is not a full sixth-order operator, nonadjacent coefficient, finite-coupling radius, or phase result. The numerical center is illustrative; positivity follows from exact rational endpoints.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/PORT_REPORT.md
+The original core port was byte-identical. The final core adds exact K0²=-24I and support-endpoint containment preconditions; all other core function ASTs remain identical. Pre-guard bytes and results are preserved in BEFORE_CONTAINMENT. The certify function has an identical AST to original postcheck.py. Its filesystem/CLI wrapper is replaced and the NumPy decoder is replaced with the independently developed strict standard-library NPZ decoder, itself copied byte-identically. Every six-bridge scientific result including exact endpoints and all residual ledgers matches the original replay exactly.
+
+Actual canonical command: python3 -OO scripts/native_weak_electric_spectator_gap_2026_09_08.py --json, externally timed. Final guarded result 47.259011417s/116.625000MiB; complete external time/RSS retained in CANONICAL.stderr. All2292 residuals and5659 magnetic predicates run;7960 total explicitly broken down in output. Primary owns the180second alarm; helper does not reset it under runpy. Strict unknown-argument control returns2. No NumPy import or absolute runtime path is needed.
+
+This port supplies numerical/exact controls for the linked theorem; full isolation, canonical expansion, magnetic physical lift and parity reasoning remain source proofs. No repository-wide pipeline, commit or push was performed by this worker.
+
+The additional fixed support-edge191 mutant passes geometric-index validity but fails the exact frame endpoint projection, as intended. No coefficient value was used to choose that mutation. The final guarded replay again matches every original rational payload exactly. Historical closing/prefix mutants exercise unchanged arithmetic and coverage code and are not restamped as reruns of the containment revision.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PR_BACKLOG.md
+# Review PR
+
+Pending canonical verification and independent review. Intended base: codex/native-zero-penalty-l4-delayed-splitting-20260908 (PR8052). Intended head: codex/native-weak-electric-spectator-gap-20260908. Open one [physics-loop] exact-support review PR for this coherent block; do not merge it.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/REVIEW_HISTORY.md
+# Review history
+
+Original full-support proof: independent review1e8d9a30 PASS. Magnetic physical lift and signed orbit:3ced5b3a PASS with11264 independent constraints. Conditional physical spectrum:5caade68 PASS. Numerical implementation: full a19d review and ef62 delta ce76b446 PASS. Exact rational metric/harness:24157e33 PASS with3081 independent checks. Exact full replay completed all2292 states and gives a positive rational interval.
+
+Canonical source/closure review is pending after the portable author verification. Formal retained-grade audit is not performed in this science branch.
+
+Final canonical source review828c0136 PASS, root source review PASS, isolated24-file execution47.365871333s/112001024B and exact payload identity. Graph adds one node and three links against03696e613d72aa16741e3f533b5bd37a70f09512; old entries unchanged. The two arithmetic/coverage mutants and added containment mutant reject as recorded. No full-repository pipeline or audit verdict claimed.
+
+
+FILE 8053 .claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/ROOT_CANONICAL_REVIEW.md
+# Root canonical review
+
+The complete canonical note, primary runner, rational core, replay wrapper, strict standard-library NPZ decoder, magnetic symmetry helper, original proof and review packets, final port report, exact payload comparison, semantic mutant receipts and graph delta have been read. No algebraic or implementation blocker was found. This is a scoped source review, not a formal audit verdict or retained-grade promotion.
+
+The finite cut classification includes nonadjacent pairs before symmetry eliminates them. The real bipartite representation excludes same-sublattice bilinears only for the complete Hermitian coefficient. The magnetic transformations are physical symmetries of hopping, electric penalty and Gauss constraints, with orientation compensation on link X and the same gauge-return signs on active and spectator modes. The exact signed-pair census has one free orbit and three contradictory orbits. This proves the complete quadratic form is determined by the adjacent coefficient on the stated finite uniform lattice.
+
+The canonical contour/polar expansion drops only products of lower returning scalar or zero words. The surviving sixth bilinear has five negative resolvents and six insertion factors. All six bridge supports, including the L4 winding bridge, contribute. The reduced active frame is now checked to contain every changed-edge endpoint exactly, in addition to its rational Gram and K0²=-24I checks. These conditions make the common complement invariant and justify its fixed vacuum offset. Singleton returns use the correct initial-parity gap; no zero/even returning proper prefix is silently inverted.
+
+In the replay, saved floating vectors choose arbitrary dyadic candidates. All residuals, metric squared norms, inverse-trace gap bounds, propagated errors and final interval endpoints are exact rationals. The conversion's floating rounding changes the trial vector, not the validity of the certificate. The incoming denominator arithmetic uses powers of two; final incoming sums preserve exact divisibility. The closing factor216 accounts for five inverse-level sqrt6 rescalings plus the closing r

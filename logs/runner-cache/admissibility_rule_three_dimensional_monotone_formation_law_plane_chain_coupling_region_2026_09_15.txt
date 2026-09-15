@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
+runner_sha256: 311e27d7406be6167fc6b17c7b904e9e3879230331ad480103a6b8352fa27a21
+input_fingerprint_sha256: 5903d99627a5e2112468c78512eefcb783204bb4dc0ee4fcb822cf03233bbe4c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 26.66
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md
+AUDIT_TIMEOUT_SEC: 900
+scope: the 3D monotone formation law — the box law and its three-body term; the first plane cannot be summed out (2x2 witness); the plane chain's exact stationary 2x2 law; the sensitivities, the region 3c < 1, the influence bound; exact; no order selected
+mutation: none
+PASS: A1 the four declared inputs exist (this note, the axiom memo, block 02, block 05)
+PASS: A2 the five axiom sentences used are present verbatim in the axiom memo
+PASS: A3 the parents' claim ids and the cited fragments (the row sweep; one law per linear extension) are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: A5 blocks 03, 04, 06, 07 are not inputs
+PASS: B1 Q1a: the 48 linear extensions of the 2x2x2 product order share one recorded-set family, the predecessor sets
+PASS: B2 Q1b: on the cube every one-site marginal is 1/6 and every pair marginal is constant on each of the three pair types (28 pairs x 36 entries)
+PASS: B3 Q1c: the cube's pair marginals are invariant under the six permutations of the axes
+PASS: B4 Q1d: the cube law's marginal on the down-set x3 = 0 is the 2D 2x2 monotone law (all 1296 entries)
+PASS: B5 Q1e: the product form (1/6) prod K / prod K_2 / prod K_3 equals the product of conditionals on all configurations of 1x2x2 and 2x2x1 and on 2000 sampled cube configurations
+PASS: B6 Q1f: the third-difference ratio of K_3 is 2160/2197 at (3,1,2) and 686196/704969 at (5,2,4) (pair-additive would give 1); 1 at the constant rule
+PASS: C1 Q2d: the 2x2 plane transfer moves the 2D law on 1296/1296 states at (3,1,2) and 1296/1296 at (5,2,4)
+PASS: C2 Q2d: TV(mu P, mu) = 356696849/806187919680 = 0.0004424487 at (3,1,2); 0.0002257495 at (5,2,4) (exact literal under --exact)
+PASS: C3 Q2d control: at the constant rule (2,2,2) the transfer leaves the (uniform) 2D law fixed on all 1296 states
+PASS: C4 Q2b: the 2x3 law's marginals on both 2x2 sub-rectangles are the 2x2 law and its second row is the K-chain (translate consistency in two dimensions)
+PASS: C5 Q2d: after one transfer at (3,1,2) the coordinate-line pairs stay (1/6)K-pairs and the one-site marginals uniform, while the interior pairs are not (1/6)K-pairs and the anti-diagonal is not a (1/6)K^2-pair
+PASS: D1 Q3a: P on the 2x2 cross-section is stochastic (all 1296 rows sum to one) and strictly positive (minimal entry 1/486720)
+PASS: D2 Q3e: the internal group (48) with the plane transpose gives 32 orbits of the 1296 plane states; the quotient rows are representative-independent (last member of every orbit) and stochastic
+PASS: D3 Q3a/e: the exact stationary law of the quotient solves pi Q = pi, is positive and sums to one (unique by the strict positivity of P)
+PASS: D4 Q3c: under the stationary 2x2 plane law the two coordinate-line pairs are (1/6)K-pairs and the one-site marginals are uniform
+PASS: D5 Q3e: TV(pi_2, mu_2D) = 0.0004547168 at (3,1,2) (exact literal under --exact); the interior pair ((0,1),(1,1)) has P(+x,+x) = 0.0416936074 against (1/6)K(+x,+x) = 0.0416666666: not a K-pair
+PASS: E1 Q4: c_1, c_2, c_3 at the eight triples equal the note's exact literals; (3, 1, 2): c=27/110; (5, 2, 4): c=10650/63407; (7, 3, 5): c=5782/30885
+PASS: E1b Q4 region: 3c < 1 at all eight triples (3c = 1/3 at (2,1,2)); at the silent triples 3c = 81/110, 31950/63407, 5782/10295
+PASS: E2 Q4a: on the cube at (3,1,2) the exact influence of v_000 on v_111 is 273651254/10658734515 = 0.02567389 <= N c^3 = 6 (27/110)^3 = 59049/665500 = 0.08872877
+PASS: E3 Q4a (two dimensions): on 2x3 at (3,1,2) the exact influence of v_00 on v_12 is 0.01329534 <= N c^3 = 3 (30/143)^3 = 0.02769981
+PASS: E5 Q4c: the maximal TV between rows of the quotient's n-th power is below theta^n (theta = 27/56) for n = 1..6; n=1: 0.072029 <= 0.482142; n=2: 0.002008 <= 0.232461; n=3: 0.000062 <= 0.112079
+PASS: E6 Q4b: every axis-indicator covariance of every cube pair (largest 0.01391494) satisfies |Cov| <= 4 (3c)^(rho-1); the bound is not informative at cube distances and is recorded as such
+PASS: E7 Q4 (two dimensions): 2 max(c_1, c_2) = 60/143 < 1 at (3,1,2): the plane law's correlations decay exponentially there
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
+per_element: executed — every one of the 1296 plane states under the 2x2 transfer at (3,1,2), (5,2,4) and the constant rule; every (s, s') for the cube influence; every axis-indicator pair on the cube; the third-difference ratio
+per_site: executed — the recorded set of every site of every one of the 48 extensions; the one-site marginals of every cube site and of every plane site under mu P and under pi_2
+per_mode: executed — the quotient's 32 orbits and its n-th powers for n = 1..6 against theta^n; the three sensitivities c_1, c_2, c_3 at eight triples over all one-entry changes
+per_block: executed — the 2x2 stationary plane law by orbit reduction; the 2x3 rectangle's sub-rectangle marginals and its second row; the cube's down-set marginal on x3 = 0; the 1x2x2 and 2x2x1 product forms
+lattice_wide: proved for c < 1/3 (Q4e), executed only through the region membership of eight triples; nothing for c >= 1/3 beyond the finite-box bounds; nothing about the static law of Z^3
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

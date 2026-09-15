@@ -105,3 +105,25 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# ---------------------------------------------------------------- block 08 launch (2026-09-15) — 24-hour derivation campaign (owner directive: no subagents; proofs over compute; unworked lanes)
+# block: 8
+# branch: physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915 (cut from origin/main 5deabeb698; independent PR against main; blocks 06/07 are open hand-offs, not inputs)
+# goal: "the three-dimensional formation law of the monotone class: one law per box with a three-body Gibbs term; translate inconsistency (the first plane cannot be removed; exact 2x2 witness); the plane-transfer chain and its unique stationary law per cross-section; the causal coupling theorem (sensitivity c; region 3c < 1; uniform-in-W mixing; half-space existence/uniqueness); the record-dynamics corollary at scope"
+# delivery: milestone (one coherent theorem package per PR); runtime budget 24h from 2026-09-15T09:00Z; checkpoint interval 30m
+# seats: supervisor runs all seats (controls first: specs/supervisor_control_block08_z3.py, _b.py); lens and refuting passes recorded as separate passes
+# controls_2026-09-15: "c=max(c1,c2,c3) at (3,1,2) = 27/110 (3c = 81/110); (5,2,4): 10650/63407; (7,3,5): 5782/30885 — all three silent triples inside c < 1/3; the 2x2 plane transfer moves the 2D law on 1296/1296 states (TV 356696849/806187919680 at (3,1,2)); K_3 not pair-additive (2160/2197); 48 linear extensions of the cube share the recorded sets"
+# trace: upstream_support (owner queue item 4 of the block-04 refresh; block 02 N1 route 3; #8093 record-dynamics block)
+# next_exact_action: "finish control B (exact stationary 2x2 plane law); write the note (proofs); runner (exact certificates); refuting pass; census; gates; PR"
+# lock: fable-supervisor, 8h from 2026-09-15T09:00Z
+
+# ---------------------------------------------------------------- block 08 close (2026-09-15)
+# block: 8
+# branch: physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915 (cut from main 5deabeb698; independent PR against main)
+# pr_status: opened for review — see HANDOFF.md for the PR number; hand-off to the owner review-loop; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=33 FAIL=0; 26 mutations, census 26/26 in-family; stdout 5887 chars; note 780 lines; refuting pass 5/5 equal; gates: see HANDOFF.md"
+# seats: "supervisor-run (owner directive: no subagents): controls -> contract with a four-lens pass -> primary (proofs, runner) -> refuting pass with disjoint machinery -> fold; author checks only; independent review pending"
+# review_findings: "the 3D monotone law: one law per box with an irreducible three-body term; no translate consistency (exact 2x2 witness; mechanism lemma); plane chain with a unique stationary law per cross-section, 2D boundary planes; causal coupling: |Cov| <= 4|g||h|(3c)^(ceil(d/2)-1), sweep rate c/(1-2c), Z^3 law unique and translation-invariant for c < 1/3; c = 27/110, 10650/63407, 5782/30885 at the silent triples; record-dynamics reframing negative at scope"
+# strongest_unresolved_proof_obligation: "the plane transfer moves the 2D law at every nonconstant triple (executed at two); uniqueness of the stationary plane law on the full cross-section for c >= 1/3; the distinctness of the eight corner laws on Z^3"
+# next_exact_action: "queue refresh 2026-09-15 (block 08 opening): the corner family and the random-priority comparison; the region boundary; strong coupling"
+# lock: held (campaign continues)

@@ -1,0 +1,37 @@
+{
+  "original_total": 116,
+  "landed_and_closed": 100,
+  "remaining_original": 16,
+  "fresh_original_heads": "none moved after train49",
+  "main": "1de0b3bcfbc785b12d4587aba3910b69e8af09cc",
+  "train50": {
+    "prs": [
+      8069,
+      8104
+    ],
+    "session": 13992,
+    "state": "two ready independent units in one fullgate"
+  },
+  "8106": {
+    "reviewer": "review_8011",
+    "worktree": "/private/tmp/review-drain-20260915/review-slot-one",
+    "owner": "pr8106-author",
+    "tree": "9d6a6e52260f9ca3c3eb83c126b3056876b3d0eb",
+    "original_cache": "8 check families with internal assertions;2.00s;declared90s;fresh",
+    "source": "primary/cache byte-identical; note recoverylink remapped; no execution"
+  },
+  "8071": {
+    "worktree": "/private/tmp/review-drain-20260915/author-slot-one",
+    "owner": "pr8071-author",
+    "draft_tree": "ca82eb4f33ff78122b64760556153398bbdd9472",
+    "source_count": 47,
+    "original_paths": 44,
+    "state": "metadata discoveryPASS; manifest pins deliberately stale pending independent parent/source confirmation; no execution",
+    "draft": "8071-author-draft-v2.json",
+    "caps": "30seconds384MiB,-I-B-S-OO; original fock29alarm preserved",
+    "next": "review_8011 after8106"
+  },
+  "8072_8073_8074_8076": "authorbacklog+reviewer8012 verify fullconnectedfirstaction argument and original large Gram/data recovery; sourceauthority remains independentreview",
+  "8075": "separatemomentcertificate unit, not8076premise",
+  "remote_provenance": "476f721d12"
+}

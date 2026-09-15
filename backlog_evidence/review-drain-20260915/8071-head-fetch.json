@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+  "fetched_ref": "refs/review-loop/fetched/8071-34b7d6d9c16547628a77fb34a0c83ee1",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "codex/native-mixed-gaussian-transition-20260909",
+    "headRefOid": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+    "isDraft": false,
+    "number": 8071,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

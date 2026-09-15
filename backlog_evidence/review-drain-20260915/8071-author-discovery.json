@@ -1,0 +1,21 @@
+{
+  "graph_helpers": [
+    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py"
+  ],
+  "packet_helpers": [
+    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py"
+  ],
+  "declared_timeouts": {
+    "scripts/native_mixed_gaussian_transition_2026_09_09.py": 30,
+    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": 30,
+    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": 29
+  },
+  "type_hint": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "declared_input_count": 15,
+  "boundary": "Static author metadata check only; no primary execution or source verdict; original manifest remains stale pending independent current-parent confirmation"
+}

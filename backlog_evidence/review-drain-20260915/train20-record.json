@@ -1,0 +1,52 @@
+{
+  "base": "bd2e2b6b0a3c75d61f111b783957229d783ac684",
+  "source_head": "fcf5ba066c60820e322256e313a33390b168b9fd",
+  "source_tree": "a714c3f5955518d098bf5c52d83c9861bd034ba9",
+  "heads": {},
+  "source_owners": {
+    ".claude/commands/review-loop.md": "review-skill-efficiency",
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": "review-skill-efficiency",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "review-skill-efficiency",
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "review-skill-efficiency",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "review-skill-efficiency",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "review-skill-efficiency",
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": "review-skill-efficiency",
+    "docs/audit/scripts/check_review_loop_skill_contract.py": "review-skill-efficiency",
+    "docs/audit/scripts/tests/test_review_loop_skill_contract.py": "review-skill-efficiency",
+    "docs/audit/scripts/tests/test_review_receipt.py": "review-skill-efficiency",
+    "docs/audit/scripts/tests/test_review_workspace.py": "review-skill-efficiency"
+  },
+  "inputs": {
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    ".claude/commands/review-loop.md": "ace9e7a0bfc9904e27225c06a6a0bfffbebc10d1fc6eefb38b10b2ff11065d8b",
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "9184afe4209e7226197bec7318f9522a7d0603e8abd2609de5403318a2b8304f",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf",
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+    "docs/audit/scripts/check_review_loop_skill_contract.py": "a822feb915d832e1455c66c6ec88a9e2c2b4fef7db0f912c49ea983912093310",
+    "docs/audit/scripts/tests/test_review_loop_skill_contract.py": "824ec73f4ccada29ff3611447cadea569f9af7c65e6db38d87bdbdecaf040b3b",
+    "docs/audit/scripts/tests/test_review_receipt.py": "7c6e99b31e870929ec4b6692846759f80904ac8c678dc5689c620f04ba99b59b",
+    "docs/audit/scripts/tests/test_review_workspace.py": "62a003fb1b61c571ff70988941c9b6f1ae93dee5cf77a6919a50704f1c984b2d"
+  },
+  "review_evidence_hashes": {
+    "skill-efficiency-review.md": "5488b9efbf4f2f16540d9d2b32cb893286659122ef8a8de2d6f5d8595d579332",
+    "skill-efficiency-review.json": "6f29a818eb881972f38fc168672efc25621043c7717d698e0749a4efe21313b4",
+    "skill-efficiency-performance-review.md": "d53e5971e23294d8dcdc0feeab167d4dde12925c301815a46aa6d3bb86cdb9f1",
+    "skill-efficiency-performance-review.json": "f1b8cd28692dc6df40f8068066f696ca6f633802941376a4d38d0f27decf3801"
+  },
+  "dependency_expectations": {},
+  "cheap_preflight": {},
+  "units": [
+    "skill-efficiency"
+  ],
+  "departure": "Reviewed skill efficiency source and confirmed performance delta depart as gate lane free.",
+  "current_main_preservation": "Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match."
+}

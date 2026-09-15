@@ -1,0 +1,1229 @@
+{
+  "source_verdict": "FINAL VERDICT: PASS",
+  "original_head": "84d38a34314c758f2f94333d52c02492fb1f4d8b",
+  "original_base": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+  "review_base": "0ded9940cb9fccaf5909d348ea2f03717879e666",
+  "candidate": "/private/tmp/review-drain-20260915/unit8047-author-copy",
+  "candidate_HEAD": "0ded9940cb9fccaf5909d348ea2f03717879e666",
+  "staged_tree": "395ea9e4b853a5676b3a918d91ab077671781136",
+  "original_path_dispositions": {
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ARTIFACT_PLAN.md": {
+      "original_sha256": "abd3704a2d44f169b6c9cc539d47238a692a78137624b573e133ebe20a0c1b26",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ARTIFACT_PLAN.md",
+      "final_sha256": "abd3704a2d44f169b6c9cc539d47238a692a78137624b573e133ebe20a0c1b26",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ASSUMPTIONS_AND_IMPORTS.md": {
+      "original_sha256": "f641d597858f64478af1705eaf7500facc0c21d8b6713f7932f5a82162ed712c",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ASSUMPTIONS_AND_IMPORTS.md",
+      "final_sha256": "f641d597858f64478af1705eaf7500facc0c21d8b6713f7932f5a82162ed712c",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/AUTHOR_VERIFICATION_DRIVER.py": {
+      "original_sha256": "03fb4d14d89ac2a94f6cf9fe053311bea8368c53fa2321272ebd4431dd581808",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/AUTHOR_VERIFICATION_DRIVER.py",
+      "final_sha256": "03fb4d14d89ac2a94f6cf9fe053311bea8368c53fa2321272ebd4431dd581808",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/CLAIM_STATUS_CERTIFICATE.md": {
+      "original_sha256": "b30fdedbb5fb94bf04ec3e5746c526ec62cdeb30c1d8cadaecc71479a494727a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "b30fdedbb5fb94bf04ec3e5746c526ec62cdeb30c1d8cadaecc71479a494727a",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/CONTROL_CONTRACT.md": {
+      "original_sha256": "6993d23696dcedc1aeced87a82e6a630ba9cf43f6278deaa928667ff2840314a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-CONTROL_CONTRACT.md",
+      "final_sha256": "6993d23696dcedc1aeced87a82e6a630ba9cf43f6278deaa928667ff2840314a",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GOAL.md": {
+      "original_sha256": "443c14e5416add72023014fbb3fecd9e2c6ba0b0d7881e8f0da5d1cd9b1fa070",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-GOAL.md",
+      "final_sha256": "443c14e5416add72023014fbb3fecd9e2c6ba0b0d7881e8f0da5d1cd9b1fa070",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH.stderr": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/GRAPH.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH.stdout": {
+      "original_sha256": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/GRAPH.stdout",
+      "final_sha256": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH_CONFIRMATION.md": {
+      "original_sha256": "f08aee0b5423add067b682cde85727db43a9cc5e6c5b049def2fa4289c481b2c",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-GRAPH_CONFIRMATION.md",
+      "final_sha256": "f08aee0b5423add067b682cde85727db43a9cc5e6c5b049def2fa4289c481b2c",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH_DELTA.json": {
+      "original_sha256": "8d8728992b714c9af7454b191759a51516458d2bed09540d237dd91eaa42d59d",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/GRAPH_DELTA.json",
+      "final_sha256": "8d8728992b714c9af7454b191759a51516458d2bed09540d237dd91eaa42d59d",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/HANDOFF.md": {
+      "original_sha256": "fc7d2197e85b8e6243678b99a3105aec8e05c2129dc4a35e8f4c2fd09fe72c84",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-HANDOFF.md",
+      "final_sha256": "fc7d2197e85b8e6243678b99a3105aec8e05c2129dc4a35e8f4c2fd09fe72c84",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ISOLATED.stderr": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ISOLATED.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ISOLATED.stdout": {
+      "original_sha256": "e5b3cb411ffcfab57a9e08d599a148f98be0f6829cd5aca129e691d65d6d7103",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ISOLATED.stdout",
+      "final_sha256": "e5b3cb411ffcfab57a9e08d599a148f98be0f6829cd5aca129e691d65d6d7103",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ISOLATED_CLOSURE.json": {
+      "original_sha256": "aa789200541a87bcaecec6d7e69d9b624a7172a90feae5f28fa4c9e57c6504c3",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ISOLATED_CLOSURE.json",
+      "final_sha256": "aa789200541a87bcaecec6d7e69d9b624a7172a90feae5f28fa4c9e57c6504c3",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/LITERATURE_BRIDGES.md": {
+      "original_sha256": "2b1115e0725899f03fa079eae0169fd5c30f89528d48b05c6bfbae9236219c50",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-LITERATURE_BRIDGES.md",
+      "final_sha256": "2b1115e0725899f03fa079eae0169fd5c30f89528d48b05c6bfbae9236219c50",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/LIVE.stderr": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/LIVE.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/LIVE.stdout": {
+      "original_sha256": "afcf677da3bf856c346aeb10e7ff989e7adccd9204734e8d0f554d680b8a0754",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/LIVE.stdout",
+      "final_sha256": "afcf677da3bf856c346aeb10e7ff989e7adccd9204734e8d0f554d680b8a0754",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/MANIFEST.stderr": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/MANIFEST.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/MANIFEST.stdout": {
+      "original_sha256": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/MANIFEST.stdout",
+      "final_sha256": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/MUTATIONS.json": {
+      "original_sha256": "0c548551723087db8fa444bebd4b7c3ab75c8f72c1322dd3e2d1619e618661b0",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/MUTATIONS.json",
+      "final_sha256": "0c548551723087db8fa444bebd4b7c3ab75c8f72c1322dd3e2d1619e618661b0",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/NO_GO_LEDGER.md": {
+      "original_sha256": "f82a7593100750b15257f5d98b866289e60cc186bf253faf03622b0f33ef98e0",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-NO_GO_LEDGER.md",
+      "final_sha256": "f82a7593100750b15257f5d98b866289e60cc186bf253faf03622b0f33ef98e0",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/OPPORTUNITY_QUEUE.md": {
+      "original_sha256": "dc7abe60848264b1452909e5f5671f6f5051faa734ea2cd9e1642ebfdbdf4fd8",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-OPPORTUNITY_QUEUE.md",
+      "final_sha256": "dc7abe60848264b1452909e5f5671f6f5051faa734ea2cd9e1642ebfdbdf4fd8",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ORIGINAL_HASHES.json": {
+      "original_sha256": "8f7150db63712836d0bdc3efb547de6842a2f2e74c54997d900f1de8e4f86bf4",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ORIGINAL_HASHES.json",
+      "final_sha256": "8f7150db63712836d0bdc3efb547de6842a2f2e74c54997d900f1de8e4f86bf4",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/PORT_RECEIPT.json": {
+      "original_sha256": "f75cfc47c2e00b72a322ffd8647ace2d3a187bede0fd1d95cf52ae60802d64d2",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/PORT_RECEIPT.json",
+      "final_sha256": "f75cfc47c2e00b72a322ffd8647ace2d3a187bede0fd1d95cf52ae60802d64d2",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/PR_BACKLOG.md": {
+      "original_sha256": "164d822dc69a497c47bd47d7592c6b84a0a76bba88db6c662e48db445db72acd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-PR_BACKLOG.md",
+      "final_sha256": "164d822dc69a497c47bd47d7592c6b84a0a76bba88db6c662e48db445db72acd",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/REVIEW_HISTORY.md": {
+      "original_sha256": "f86870fdc5b8601e73570869bfe75d25430c2dd454c22e91d44825ff688875c4",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-REVIEW_HISTORY.md",
+      "final_sha256": "f86870fdc5b8601e73570869bfe75d25430c2dd454c22e91d44825ff688875c4",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ROOT_CANONICAL_REVIEW.md": {
+      "original_sha256": "4c2ce0376ab9e9a84db13f5c7321a1fbc03bb4460fa2418edc05547b382a5f50",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ROOT_CANONICAL_REVIEW.md",
+      "final_sha256": "4c2ce0376ab9e9a84db13f5c7321a1fbc03bb4460fa2418edc05547b382a5f50",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ROUTE_PORTFOLIO.md": {
+      "original_sha256": "e3c782fae609d61c43a956b0af345c450b14a4ce6d6acc626e5646175f8d95f8",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ROUTE_PORTFOLIO.md",
+      "final_sha256": "e3c782fae609d61c43a956b0af345c450b14a4ce6d6acc626e5646175f8d95f8",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/SOURCE_FREEZE.json": {
+      "original_sha256": "e3549287d65517b67d6f9c0f9eda30a72f4350694d4edd1ae9bf6da3e3d06a7f",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/SOURCE_FREEZE.json",
+      "final_sha256": "e3549287d65517b67d6f9c0f9eda30a72f4350694d4edd1ae9bf6da3e3d06a7f",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/STATE.yaml": {
+      "original_sha256": "c66336357111f268290e8d5595ef134aab087e48c40114f570be5b32456fced7",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/STATE.yaml",
+      "final_sha256": "c66336357111f268290e8d5595ef134aab087e48c40114f570be5b32456fced7",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/TRACE_GATE.md": {
+      "original_sha256": "d44cc3013099425ca2824bd18aca720b1e538768326199957aa41566854dd8f1",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-TRACE_GATE.md",
+      "final_sha256": "d44cc3013099425ca2824bd18aca720b1e538768326199957aa41566854dd8f1",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/WRAPPER_CONTROLS.json": {
+      "original_sha256": "baa7548684d211a78a8fdbe05349c5aa611745f92c6718445bd0ed0f53ca0f79",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/WRAPPER_CONTROLS.json",
+      "final_sha256": "baa7548684d211a78a8fdbe05349c5aa611745f92c6718445bd0ed0f53ca0f79",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/bare_X.stderr": {
+      "original_sha256": "57a924331422406f35e66b1ae9be893f770610ddbb51b9304ae57f007a912099",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/bare_X.stderr",
+      "final_sha256": "57a924331422406f35e66b1ae9be893f770610ddbb51b9304ae57f007a912099",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/bare_X.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/bare_X.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/READ_HASHES.json": {
+      "original_sha256": "009c3ad43d9dca468f1d1821b48a1f8f4e139237d28c2261665daadf85dbdacd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/READ_HASHES.json",
+      "final_sha256": "009c3ad43d9dca468f1d1821b48a1f8f4e139237d28c2261665daadf85dbdacd",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/RESULT.json": {
+      "original_sha256": "9268efc8c895c68f495d9edf099c4adc2da4f1d7bede02e03f2ed1896668adc9",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/RESULT.json",
+      "final_sha256": "9268efc8c895c68f495d9edf099c4adc2da4f1d7bede02e03f2ed1896668adc9",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/REVIEW.md": {
+      "original_sha256": "96da72181af79273474a7d631dd2c86994fb24363bb25f309e787c2bb6c08e39",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/pr8047-independent-canonical-review-REVIEW.md",
+      "final_sha256": "96da72181af79273474a7d631dd2c86994fb24363bb25f309e787c2bb6c08e39",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/check_port.py": {
+      "original_sha256": "0f1beb11074ee47cf8006ce0d09d829b4158b57c354c08c82159026e5f4b6bff",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/check_port.py",
+      "final_sha256": "0f1beb11074ee47cf8006ce0d09d829b4158b57c354c08c82159026e5f4b6bff",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/combined.diff": {
+      "original_sha256": "783da2d8260170c86614cd8fb2c25736cc2e6732eed603f92e99584864657f6e",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/combined.diff.gz",
+      "final_sha256": "98c67542a17666d2ef6220073461808c665d8f29ea96db359a729a890015a9c3",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/global.diff": {
+      "original_sha256": "33fcda4541cce0aaf753fe2343b7bb3f9b136df757e5330527133bd61be23cf7",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/global.diff.gz",
+      "final_sha256": "354486807fabb696e3ffb536f2c98b183bee50edaa4bbfdfe9091ee46492871e",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/local.diff": {
+      "original_sha256": "bf3e32270a609aa12761b359beec89cee93e3a46bb809327716e5684df2b4522",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/local.diff.gz",
+      "final_sha256": "eaa94c0f1fd0685298578702e9f952a75e2bacb6fb5edef13185d267151c10ba",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/witness.diff": {
+      "original_sha256": "1fc3381e1af429bf3fcde9f4fe4bc8e9521157f6b07915651b147d60c0498e14",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/witness.diff.gz",
+      "final_sha256": "0331745c73cf192d2ad2a716391d33ce5a242a530b7ae82f20fb308058425c26",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stderr": {
+      "original_sha256": "31d495eb3e654ae4760d533ccad1a40bc03c098e3b319e00339e371723bff8da",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/omit_folds.stderr",
+      "final_sha256": "31d495eb3e654ae4760d533ccad1a40bc03c098e3b319e00339e371723bff8da",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/omit_folds.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/READ_HASHES.json": {
+      "original_sha256": "5771cf4477671083ccd02eba2512e3576e422aa84d79df38d49feb617a37bc48",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/READ_HASHES.json",
+      "final_sha256": "5771cf4477671083ccd02eba2512e3576e422aa84d79df38d49feb617a37bc48",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/RESULT.json": {
+      "original_sha256": "9b66e6f10103b769b99d44f635cc81ad8ac95ef6a20da4e863f4a0c5d2dd9840",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/RESULT.json",
+      "final_sha256": "9b66e6f10103b769b99d44f635cc81ad8ac95ef6a20da4e863f4a0c5d2dd9840",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/REVIEW.md": {
+      "original_sha256": "c5242fad49b86cd86d87560f2eb6db6092bd117b5b4bfddf16fa4da6572a2741",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/pr8047-originals-native-eighth-combined-cold-review-REVIEW.md",
+      "final_sha256": "c5242fad49b86cd86d87560f2eb6db6092bd117b5b4bfddf16fa4da6572a2741",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/check.py": {
+      "original_sha256": "f9902a7e1a6592b31b94c0da858ba80fcf1d1405fcff8587701a7c69890b6926",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/check.py",
+      "final_sha256": "f9902a7e1a6592b31b94c0da858ba80fcf1d1405fcff8587701a7c69890b6926",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/DERIVATION.md": {
+      "original_sha256": "153d8581e281aba54178d6bd32be977d784b32bdaf9b7743a8af5e2cdcabb1c1",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/pr8047-originals-native-eighth-combined-DERIVATION.md",
+      "final_sha256": "153d8581e281aba54178d6bd32be977d784b32bdaf9b7743a8af5e2cdcabb1c1",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/HASHES.json": {
+      "original_sha256": "c037f745e9e989e99f70ea18fb31c8362feaf8117df40f51d1a61a51eb64f103",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/HASHES.json",
+      "final_sha256": "c037f745e9e989e99f70ea18fb31c8362feaf8117df40f51d1a61a51eb64f103",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/RESULT.json": {
+      "original_sha256": "445650cfe08a4246f61239bad2f5b3c68b95a6ce86075fcbcf4f7aae45d0bb5e",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/RESULT.json",
+      "final_sha256": "445650cfe08a4246f61239bad2f5b3c68b95a6ce86075fcbcf4f7aae45d0bb5e",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/check.py": {
+      "original_sha256": "08cfbc64756708cc60e684d262a1f07526cd188f11bf97ad99d87189f416fae8",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/check.py",
+      "final_sha256": "08cfbc64756708cc60e684d262a1f07526cd188f11bf97ad99d87189f416fae8",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-cold-review/REVIEW.md": {
+      "original_sha256": "ce45c502108e4c7a74f4f3960dbc72a068b026b5567bf52ee9f8cf34dbf8a588",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-cold-review/pr8047-originals-native-eighth-global-reduction-cold-review-REVIEW.md",
+      "final_sha256": "ce45c502108e4c7a74f4f3960dbc72a068b026b5567bf52ee9f8cf34dbf8a588",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/CONTRACT.md": {
+      "original_sha256": "fa5e07cc0fa3063645aa0f12b7c8926d12a81b29a445e6a5d457950afc23664d",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/pr8047-originals-native-eighth-global-reduction-root-CONTRACT.md",
+      "final_sha256": "fa5e07cc0fa3063645aa0f12b7c8926d12a81b29a445e6a5d457950afc23664d",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/DERIVATION.md": {
+      "original_sha256": "751543dd407c9ee4ce7eaa3e8540091628a15c5ed2a43b35f56103a10e9ef5ac",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/pr8047-originals-native-eighth-global-reduction-root-DERIVATION.md",
+      "final_sha256": "751543dd407c9ee4ce7eaa3e8540091628a15c5ed2a43b35f56103a10e9ef5ac",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/RESULT.json": {
+      "original_sha256": "63cd05ec59fa321204069d0528733b1d4198c33e046210c5c97257abe81f3959",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/RESULT.json",
+      "final_sha256": "63cd05ec59fa321204069d0528733b1d4198c33e046210c5c97257abe81f3959",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/check.py": {
+      "original_sha256": "4cf2d62afb714b3a3211cdf73a5749065d2301dbae2c193d7517228b20f487ca",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/check.py",
+      "final_sha256": "4cf2d62afb714b3a3211cdf73a5749065d2301dbae2c193d7517228b20f487ca",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/READ_HASHES.json": {
+      "original_sha256": "b173b43712dc16e571d53ce4dfa9081929b562463ee4f7e48598ed4a2a4cbb71",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/READ_HASHES.json",
+      "final_sha256": "b173b43712dc16e571d53ce4dfa9081929b562463ee4f7e48598ed4a2a4cbb71",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/RESULT.json": {
+      "original_sha256": "762505bed72716dc20c282ffdbc5872827d10e6fb669b320ded2ec599ce08ccf",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/RESULT.json",
+      "final_sha256": "762505bed72716dc20c282ffdbc5872827d10e6fb669b320ded2ec599ce08ccf",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/REVIEW.md": {
+      "original_sha256": "01c2242fb9123e927dac8c8f9e380d6e8cc28be3240c5ed05354b754983cd084",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/pr8047-originals-native-eighth-global-witness-cold-review-REVIEW.md",
+      "final_sha256": "01c2242fb9123e927dac8c8f9e380d6e8cc28be3240c5ed05354b754983cd084",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/check.py": {
+      "original_sha256": "912b11af6939511566adba66b26395b0a0d9f7e29b4bf1b5e7a68aadb4fcdf83",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/check.py",
+      "final_sha256": "912b11af6939511566adba66b26395b0a0d9f7e29b4bf1b5e7a68aadb4fcdf83",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/HASHES.json": {
+      "original_sha256": "b173b43712dc16e571d53ce4dfa9081929b562463ee4f7e48598ed4a2a4cbb71",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/HASHES.json",
+      "final_sha256": "b173b43712dc16e571d53ce4dfa9081929b562463ee4f7e48598ed4a2a4cbb71",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/RESULT.json": {
+      "original_sha256": "2d9810c045a82a2f9e19f661aff78c7432a64abc4cc60c07d4616d3d9da8eca4",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/RESULT.json",
+      "final_sha256": "2d9810c045a82a2f9e19f661aff78c7432a64abc4cc60c07d4616d3d9da8eca4",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/REVIEW_AND_WITNESS.md": {
+      "original_sha256": "f2e3029ce1b5b0d9b036caa9c586ef848f55c3eed867c5b1076d64a6a32a1615",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/pr8047-originals-native-eighth-global-witness-REVIEW_AND_WITNESS.md",
+      "final_sha256": "f2e3029ce1b5b0d9b036caa9c586ef848f55c3eed867c5b1076d64a6a32a1615",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/check.py": {
+      "original_sha256": "64a129ff06c46df382bc47bfde709fb36ae59116a6ee2ff005c4d11b841d310c",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/check.py",
+      "final_sha256": "64a129ff06c46df382bc47bfde709fb36ae59116a6ee2ff005c4d11b841d310c",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/READ_HASHES.json": {
+      "original_sha256": "bb0ca1d8be494a15222f98fff80e9585bbf092f98cae74940a5a1ee57b431ccf",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/READ_HASHES.json",
+      "final_sha256": "bb0ca1d8be494a15222f98fff80e9585bbf092f98cae74940a5a1ee57b431ccf",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/RESULT.json": {
+      "original_sha256": "17d6352593a6f034d83295c25d6a0e42d34ad21b5ab4cb0b14c7c32ed0264b08",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/RESULT.json",
+      "final_sha256": "17d6352593a6f034d83295c25d6a0e42d34ad21b5ab4cb0b14c7c32ed0264b08",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/REVIEW.md": {
+      "original_sha256": "80ecc0f3e32f32c3866adb566015b9bb7f3b481cd410b029ca9b84cabf3d81f2",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/pr8047-originals-native-full-eighth-cold-review-REVIEW.md",
+      "final_sha256": "80ecc0f3e32f32c3866adb566015b9bb7f3b481cd410b029ca9b84cabf3d81f2",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/check.py": {
+      "original_sha256": "d35ce979fdaa5d9a9cbbec21347c16d9a6a5bd4c89d3623e4681bdc9e869e180",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/check.py",
+      "final_sha256": "d35ce979fdaa5d9a9cbbec21347c16d9a6a5bd4c89d3623e4681bdc9e869e180",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/check_BEFORE_EXPLICIT_GUARDS.py": {
+      "original_sha256": "835ad29dda540f418435f57eeffa4931754240cff01743b8a0fa7b82e782b758",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/check_BEFORE_EXPLICIT_GUARDS.py",
+      "final_sha256": "835ad29dda540f418435f57eeffa4931754240cff01743b8a0fa7b82e782b758",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/DERIVATION.md": {
+      "original_sha256": "4101404a1464a94837acb79e83120ae0e746b95f45638aed34c5045b22faf0c3",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/pr8047-originals-native-full-eighth-diagonal-DERIVATION.md",
+      "final_sha256": "4101404a1464a94837acb79e83120ae0e746b95f45638aed34c5045b22faf0c3",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/HASHES.json": {
+      "original_sha256": "bb0ca1d8be494a15222f98fff80e9585bbf092f98cae74940a5a1ee57b431ccf",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/HASHES.json",
+      "final_sha256": "bb0ca1d8be494a15222f98fff80e9585bbf092f98cae74940a5a1ee57b431ccf",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/PREREGISTRATION.md": {
+      "original_sha256": "02989e42e7cec8171743ef6bb8cea004dba58c6bb592290cea09f67b1ec65da7",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/pr8047-originals-native-full-eighth-diagonal-PREREGISTRATION.md",
+      "final_sha256": "02989e42e7cec8171743ef6bb8cea004dba58c6bb592290cea09f67b1ec65da7",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/RESULT.json": {
+      "original_sha256": "af417f5cb3d5ceeba756e1af3b7e08d5023088165ef7927ca692767e31549b00",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/RESULT.json",
+      "final_sha256": "af417f5cb3d5ceeba756e1af3b7e08d5023088165ef7927ca692767e31549b00",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/check.py": {
+      "original_sha256": "f0a372e556a64c3a8c8e625c05fd64f7c29c326bd04b786c19bee6d3bc60a334",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/check.py",
+      "final_sha256": "f0a372e556a64c3a8c8e625c05fd64f7c29c326bd04b786c19bee6d3bc60a334",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-virtual-pair-eighth-plan/PLAN.md": {
+      "original_sha256": "f419541950ebccbf65a608120723ab7bfc1197cade3b92f7d1a41da1efc3fbed",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-virtual-pair-eighth-plan/pr8047-originals-native-virtual-pair-eighth-plan-PLAN.md",
+      "final_sha256": "f419541950ebccbf65a608120723ab7bfc1197cade3b92f7d1a41da1efc3fbed",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_path_multiplicity.stderr": {
+      "original_sha256": "6ebec766bf6c0eef0819434e0d689dc2e7e99dd217292e6e5fee3fc2de8465f5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_path_multiplicity.stderr",
+      "final_sha256": "6ebec766bf6c0eef0819434e0d689dc2e7e99dd217292e6e5fee3fc2de8465f5",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_path_multiplicity.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_path_multiplicity.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_rank.stderr": {
+      "original_sha256": "b0eaffd63b2aa2de8611c5e330097909e0ea0e960c5adfc7d72fc30bc2a9c09a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_rank.stderr",
+      "final_sha256": "b0eaffd63b2aa2de8611c5e330097909e0ea0e960c5adfc7d72fc30bc2a9c09a",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_rank.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_rank.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md": {
+      "original_sha256": "7b0fccb377a64700adc14ba8863bb9228ed71bf0a192f9928153135dbcc27163",
+      "final_path": "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md",
+      "final_sha256": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "original_sha256": "036c9d2cb4d5cb606fe2d60e20845ba069737e71545827c8c7740b0fd43a679a",
+      "disposition": "Generated original manifest excluded for integrated regeneration; original blob preserved externally."
+    },
+    "outputs/native_eighth_combined_2026_09_08.json": {
+      "original_sha256": "c04d74217947e526b535cc4b0c4103d779412692c0b8c96e19d8c793b1051415",
+      "final_path": "outputs/native_eighth_combined_2026_09_08.json",
+      "final_sha256": "d0b688281d9e804676a896aa511707d57f22bc5c46c6f965e59a75789826ec91",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "outputs/native_eighth_diagonal_cycle_potential_2026_09_08.json": {
+      "original_sha256": "b38b6b09a854064ace24cfb2ac8763ff6a5c22fb59475d0f0608cf47655bbdfb",
+      "final_path": "outputs/native_eighth_diagonal_cycle_potential_2026_09_08.json",
+      "final_sha256": "adb083459acb408cfa225b8a2009fa2bfa0499fecde7d27e3e5e91091cb500b0",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "outputs/native_eighth_global_2026_09_08.json": {
+      "original_sha256": "bd212874f87420d0ad90296d9e0991807a22352460ba1f202171064a48290d63",
+      "final_path": "outputs/native_eighth_global_2026_09_08.json",
+      "final_sha256": "8117c180c4367964c55a362afa619e59a3edca7b2f817fc8a42e4b4306b85448",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "outputs/native_eighth_local_2026_09_08.json": {
+      "original_sha256": "954446b0bab2a79e72ab821f0e71b2b6e6ca817cc035b306bd38f35ee1ac63f5",
+      "final_path": "outputs/native_eighth_local_2026_09_08.json",
+      "final_sha256": "ae5f2307fb43c55a10f4e153bc77aa73e9b322b9e5ede3fd69809e375aba0e6f",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "outputs/native_eighth_witness_2026_09_08.json": {
+      "original_sha256": "5222734a74da802953c9b7735b138bf3a30e0578261dffc585fd84a937b52f33",
+      "final_path": "outputs/native_eighth_witness_2026_09_08.json",
+      "final_sha256": "f2d3f268a758dea649ab0e89ddba58228fc56708797c498532d1f43b040ca315",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "scripts/native_eighth_combined_2026_09_08.py": {
+      "original_sha256": "6e5fe1fafd1d3724cff61e5fb919322206ce3728d9b3a851a0c45f23403488c8",
+      "final_path": "scripts/native_eighth_combined_2026_09_08.py",
+      "final_sha256": "08bf32c147c728bbe0c0628fc0a27210fb2c84183cfdc30d620c8edd7b8820a0",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "scripts/native_eighth_diagonal_cycle_potential_2026_09_08.py": {
+      "original_sha256": "7f0fdd199e12867e2c77bc73f369f61620627a37d76b2df4f6400fb31f65e056",
+      "final_path": "scripts/native_eighth_diagonal_cycle_potential_2026_09_08.py",
+      "final_sha256": "1e35cc01079589e05850de815397a7c775d8c5fd6b4973542076546cf8c947c5",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "scripts/native_eighth_global_2026_09_08.py": {
+      "original_sha256": "18050807064ae7ea9552440253c13214daf83617682cdca019f19819dd16d7cc",
+      "final_path": "scripts/native_eighth_global_2026_09_08.py",
+      "final_sha256": "8b2a64526d7e68287094fb3deeb1890a100569f3796805dba6b8086f05155b1c",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "scripts/native_eighth_local_2026_09_08.py": {
+      "original_sha256": "f022b6a58f1f5d7931be16e395fc19b01f3184a41c9e2a50865fb647d3292f72",
+      "final_path": "scripts/native_eighth_local_2026_09_08.py",
+      "final_sha256": "c3ef60fd2bd35656eafb3609049768ff4e5cf5a6f22a0fc1db345b2d5c0874d2",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "scripts/native_eighth_witness_2026_09_08.py": {
+      "original_sha256": "117a96b2d344bc80444685144fc920add043153f24c7823d70338129142120e0",
+      "final_path": "scripts/native_eighth_witness_2026_09_08.py",
+      "final_sha256": "d2517865bb373f8f66e959d041562ff2117890d15ff62c4c97b8742f7b120280",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    }
+  },
+  "final_path_sha256": {
+    "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/AUTHOR_VERIFICATION_DRIVER.py": "03fb4d14d89ac2a94f6cf9fe053311bea8368c53fa2321272ebd4431dd581808",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/GRAPH.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/GRAPH.stdout": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/GRAPH_DELTA.json": "8d8728992b714c9af7454b191759a51516458d2bed09540d237dd91eaa42d59d",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ISOLATED.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ISOLATED.stdout": "e5b3cb411ffcfab57a9e08d599a148f98be0f6829cd5aca129e691d65d6d7103",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ISOLATED_CLOSURE.json": "aa789200541a87bcaecec6d7e69d9b624a7172a90feae5f28fa4c9e57c6504c3",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/LIVE.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/LIVE.stdout": "afcf677da3bf856c346aeb10e7ff989e7adccd9204734e8d0f554d680b8a0754",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/MANIFEST.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/MANIFEST.stdout": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/MUTATIONS.json": "0c548551723087db8fa444bebd4b7c3ab75c8f72c1322dd3e2d1619e618661b0",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ORIGINAL_HASHES.json": "8f7150db63712836d0bdc3efb547de6842a2f2e74c54997d900f1de8e4f86bf4",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/PORT_RECEIPT.json": "f75cfc47c2e00b72a322ffd8647ace2d3a187bede0fd1d95cf52ae60802d64d2",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/README.md": "e1518e8fc7fdb56634a42c0b9abfd3256bc1e6dd049cfa05b507a919d776d3c0",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/SOURCE_FREEZE.json": "e3549287d65517b67d6f9c0f9eda30a72f4350694d4edd1ae9bf6da3e3d06a7f",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/STATE.yaml": "c66336357111f268290e8d5595ef134aab087e48c40114f570be5b32456fced7",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/WRAPPER_CONTROLS.json": "baa7548684d211a78a8fdbe05349c5aa611745f92c6718445bd0ed0f53ca0f79",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/bare_X.stderr": "57a924331422406f35e66b1ae9be893f770610ddbb51b9304ae57f007a912099",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/bare_X.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/READ_HASHES.json": "009c3ad43d9dca468f1d1821b48a1f8f4e139237d28c2261665daadf85dbdacd",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/RESULT.json": "9268efc8c895c68f495d9edf099c4adc2da4f1d7bede02e03f2ed1896668adc9",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/check_port.py": "0f1beb11074ee47cf8006ce0d09d829b4158b57c354c08c82159026e5f4b6bff",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/combined.diff.gz": "98c67542a17666d2ef6220073461808c665d8f29ea96db359a729a890015a9c3",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/global.diff.gz": "354486807fabb696e3ffb536f2c98b183bee50edaa4bbfdfe9091ee46492871e",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/local.diff.gz": "eaa94c0f1fd0685298578702e9f952a75e2bacb6fb5edef13185d267151c10ba",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/pr8047-independent-canonical-review-REVIEW.md": "96da72181af79273474a7d631dd2c86994fb24363bb25f309e787c2bb6c08e39",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/witness.diff.gz": "0331745c73cf192d2ad2a716391d33ce5a242a530b7ae82f20fb308058425c26",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/omit_folds.stderr": "31d495eb3e654ae4760d533ccad1a40bc03c098e3b319e00339e371723bff8da",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/omit_folds.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/READ_HASHES.json": "5771cf4477671083ccd02eba2512e3576e422aa84d79df38d49feb617a37bc48",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/RESULT.json": "9b66e6f10103b769b99d44f635cc81ad8ac95ef6a20da4e863f4a0c5d2dd9840",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/check.py": "f9902a7e1a6592b31b94c0da858ba80fcf1d1405fcff8587701a7c69890b6926",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/pr8047-originals-native-eighth-combined-cold-review-REVIEW.md": "c5242fad49b86cd86d87560f2eb6db6092bd117b5b4bfddf16fa4da6572a2741",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/HASHES.json": "c037f745e9e989e99f70ea18fb31c8362feaf8117df40f51d1a61a51eb64f103",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/RESULT.json": "445650cfe08a4246f61239bad2f5b3c68b95a6ce86075fcbcf4f7aae45d0bb5e",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/check.py": "08cfbc64756708cc60e684d262a1f07526cd188f11bf97ad99d87189f416fae8",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/pr8047-originals-native-eighth-combined-DERIVATION.md": "153d8581e281aba54178d6bd32be977d784b32bdaf9b7743a8af5e2cdcabb1c1",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-cold-review/pr8047-originals-native-eighth-global-reduction-cold-review-REVIEW.md": "ce45c502108e4c7a74f4f3960dbc72a068b026b5567bf52ee9f8cf34dbf8a588",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/RESULT.json": "63cd05ec59fa321204069d0528733b1d4198c33e046210c5c97257abe81f3959",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/check.py": "4cf2d62afb714b3a3211cdf73a5749065d2301dbae2c193d7517228b20f487ca",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/pr8047-originals-native-eighth-global-reduction-root-CONTRACT.md": "fa5e07cc0fa3063645aa0f12b7c8926d12a81b29a445e6a5d457950afc23664d",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/pr8047-originals-native-eighth-global-reduction-root-DERIVATION.md": "751543dd407c9ee4ce7eaa3e8540091628a15c5ed2a43b35f56103a10e9ef5ac",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/READ_HASHES.json": "b173b43712dc16e571d53ce4dfa9081929b562463ee4f7e48598ed4a2a4cbb71",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/RESULT.json": "762505bed72716dc20c282ffdbc5872827d10e6fb669b320ded2ec599ce08ccf",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/check.py": "912b11af6939511566adba66b26395b0a0d9f7e29b4bf1b5e7a68aadb4fcdf83",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/pr8047-originals-native-eighth-global-witness-cold-review-REVIEW.md": "01c2242fb9123e927dac8c8f9e380d6e8cc28be3240c5ed05354b754983cd084",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/HASHES.json": "b173b43712dc16e571d53ce4dfa9081929b562463ee4f7e48598ed4a2a4cbb71",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/RESULT.json": "2d9810c045a82a2f9e19f661aff78c7432a64abc4cc60c07d4616d3d9da8eca4",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/check.py": "64a129ff06c46df382bc47bfde709fb36ae59116a6ee2ff005c4d11b841d310c",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/pr8047-originals-native-eighth-global-witness-REVIEW_AND_WITNESS.md": "f2e3029ce1b5b0d9b036caa9c586ef848f55c3eed867c5b1076d64a6a32a1615",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/READ_HASHES.json": "bb0ca1d8be494a15222f98fff80e9585bbf092f98cae74940a5a1ee57b431ccf",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/RESULT.json": "17d6352593a6f034d83295c25d6a0e42d34ad21b5ab4cb0b14c7c32ed0264b08",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/check.py": "d35ce979fdaa5d9a9cbbec21347c16d9a6a5bd4c89d3623e4681bdc9e869e180",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/check_BEFORE_EXPLICIT_GUARDS.py": "835ad29dda540f418435f57eeffa4931754240cff01743b8a0fa7b82e782b758",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/pr8047-originals-native-full-eighth-cold-review-REVIEW.md": "80ecc0f3e32f32c3866adb566015b9bb7f3b481cd410b029ca9b84cabf3d81f2",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/HASHES.json": "bb0ca1d8be494a15222f98fff80e9585bbf092f98cae74940a5a1ee57b431ccf",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/RESULT.json": "af417f5cb3d5ceeba756e1af3b7e08d5023088165ef7927ca692767e31549b00",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/check.py": "f0a372e556a64c3a8c8e625c05fd64f7c29c326bd04b786c19bee6d3bc60a334",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/pr8047-originals-native-full-eighth-diagonal-DERIVATION.md": "4101404a1464a94837acb79e83120ae0e746b95f45638aed34c5045b22faf0c3",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/pr8047-originals-native-full-eighth-diagonal-PREREGISTRATION.md": "02989e42e7cec8171743ef6bb8cea004dba58c6bb592290cea09f67b1ec65da7",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-virtual-pair-eighth-plan/pr8047-originals-native-virtual-pair-eighth-plan-PLAN.md": "f419541950ebccbf65a608120723ab7bfc1197cade3b92f7d1a41da1efc3fbed",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ARTIFACT_PLAN.md": "abd3704a2d44f169b6c9cc539d47238a692a78137624b573e133ebe20a0c1b26",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ASSUMPTIONS_AND_IMPORTS.md": "f641d597858f64478af1705eaf7500facc0c21d8b6713f7932f5a82162ed712c",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-CLAIM_STATUS_CERTIFICATE.md": "b30fdedbb5fb94bf04ec3e5746c526ec62cdeb30c1d8cadaecc71479a494727a",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-CONTROL_CONTRACT.md": "6993d23696dcedc1aeced87a82e6a630ba9cf43f6278deaa928667ff2840314a",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-GOAL.md": "443c14e5416add72023014fbb3fecd9e2c6ba0b0d7881e8f0da5d1cd9b1fa070",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-GRAPH_CONFIRMATION.md": "f08aee0b5423add067b682cde85727db43a9cc5e6c5b049def2fa4289c481b2c",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-HANDOFF.md": "fc7d2197e85b8e6243678b99a3105aec8e05c2129dc4a35e8f4c2fd09fe72c84",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-LITERATURE_BRIDGES.md": "2b1115e0725899f03fa079eae0169fd5c30f89528d48b05c6bfbae9236219c50",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-NO_GO_LEDGER.md": "f82a7593100750b15257f5d98b866289e60cc186bf253faf03622b0f33ef98e0",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-OPPORTUNITY_QUEUE.md": "dc7abe60848264b1452909e5f5671f6f5051faa734ea2cd9e1642ebfdbdf4fd8",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-PR_BACKLOG.md": "164d822dc69a497c47bd47d7592c6b84a0a76bba88db6c662e48db445db72acd",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-REVIEW_HISTORY.md": "f86870fdc5b8601e73570869bfe75d25430c2dd454c22e91d44825ff688875c4",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ROOT_CANONICAL_REVIEW.md": "4c2ce0376ab9e9a84db13f5c7321a1fbc03bb4460fa2418edc05547b382a5f50",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ROUTE_PORTFOLIO.md": "e3c782fae609d61c43a956b0af345c450b14a4ce6d6acc626e5646175f8d95f8",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-TRACE_GATE.md": "d44cc3013099425ca2824bd18aca720b1e538768326199957aa41566854dd8f1",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_path_multiplicity.stderr": "6ebec766bf6c0eef0819434e0d689dc2e7e99dd217292e6e5fee3fc2de8465f5",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_path_multiplicity.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_rank.stderr": "b0eaffd63b2aa2de8611c5e330097909e0ea0e960c5adfc7d72fc30bc2a9c09a",
+    "docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_rank.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/runner-cache/native_eighth_diagonal_cycle_potential_2026_09_08.txt": "368f599f63f528a83d1bb6140e3cea8144b71301099342f1b173066ad865c0db",
+    "outputs/native_eighth_combined_2026_09_08.json": "d0b688281d9e804676a896aa511707d57f22bc5c46c6f965e59a75789826ec91",
+    "outputs/native_eighth_diagonal_cycle_potential_2026_09_08.json": "adb083459acb408cfa225b8a2009fa2bfa0499fecde7d27e3e5e91091cb500b0",
+    "outputs/native_eighth_global_2026_09_08.json": "8117c180c4367964c55a362afa619e59a3edca7b2f817fc8a42e4b4306b85448",
+    "outputs/native_eighth_local_2026_09_08.json": "ae5f2307fb43c55a10f4e153bc77aa73e9b322b9e5ede3fd69809e375aba0e6f",
+    "outputs/native_eighth_witness_2026_09_08.json": "f2d3f268a758dea649ab0e89ddba58228fc56708797c498532d1f43b040ca315",
+    "scripts/native_eighth_combined_2026_09_08.py": "08bf32c147c728bbe0c0628fc0a27210fb2c84183cfdc30d620c8edd7b8820a0",
+    "scripts/native_eighth_diagonal_cycle_potential_2026_09_08.py": "1e35cc01079589e05850de815397a7c775d8c5fd6b4973542076546cf8c947c5",
+    "scripts/native_eighth_global_2026_09_08.py": "8b2a64526d7e68287094fb3deeb1890a100569f3796805dba6b8086f05155b1c",
+    "scripts/native_eighth_local_2026_09_08.py": "c3ef60fd2bd35656eafb3609049768ff4e5cf5a6f22a0fc1db345b2d5c0874d2",
+    "scripts/native_eighth_witness_2026_09_08.py": "d2517865bb373f8f66e959d041562ff2117890d15ff62c4c97b8742f7b120280"
+  },
+  "source_inputs": {
+    "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa",
+    "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md": "df7aa3002efdb12061f5007709a9700e5dca5b43bbbfafaa2af75dc5b983f2e4",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "scripts/native_eighth_local_2026_09_08.py": "c3ef60fd2bd35656eafb3609049768ff4e5cf5a6f22a0fc1db345b2d5c0874d2",
+    "scripts/native_eighth_global_2026_09_08.py": "8b2a64526d7e68287094fb3deeb1890a100569f3796805dba6b8086f05155b1c",
+    "scripts/native_eighth_combined_2026_09_08.py": "08bf32c147c728bbe0c0628fc0a27210fb2c84183cfdc30d620c8edd7b8820a0",
+    "scripts/native_eighth_witness_2026_09_08.py": "d2517865bb373f8f66e959d041562ff2117890d15ff62c4c97b8742f7b120280"
+  },
+  "input_fingerprint_sha256": "9a060a08862f9cf3778f24edd53b80a38bca663b50ea284a564503bea29ff4d2",
+  "helper_discovery": [
+    "scripts/native_eighth_combined_2026_09_08.py",
+    "scripts/native_eighth_global_2026_09_08.py",
+    "scripts/native_eighth_local_2026_09_08.py",
+    "scripts/native_eighth_witness_2026_09_08.py"
+  ],
+  "claim_type": "bounded_theorem",
+  "authority_inputs": {
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "unchanged_from_previously_read8121": true
+    }
+  },
+  "tool_input_sha256": {
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "archive_map_sha256": "99e66557810c28692dbab7b6631de90e1c76d6ec0d9acdd91eb1112bb612f1fb",
+  "archive_duplicate_identity_map": [
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/STATE.yaml",
+      "sha256": "c66336357111f268290e8d5595ef134aab087e48c40114f570be5b32456fced7",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/STATE.yaml"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_path_multiplicity.stderr",
+      "sha256": "6ebec766bf6c0eef0819434e0d689dc2e7e99dd217292e6e5fee3fc2de8465f5",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_path_multiplicity.stderr"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "f641d597858f64478af1705eaf7500facc0c21d8b6713f7932f5a82162ed712c",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/PR_BACKLOG.md",
+      "sha256": "164d822dc69a497c47bd47d7592c6b84a0a76bba88db6c662e48db445db72acd",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/PR_BACKLOG.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+      "sha256": "03fb4d14d89ac2a94f6cf9fe053311bea8368c53fa2321272ebd4431dd581808",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/AUTHOR_VERIFICATION_DRIVER.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "b30fdedbb5fb94bf04ec3e5746c526ec62cdeb30c1d8cadaecc71479a494727a",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH_DELTA.json",
+      "sha256": "8d8728992b714c9af7454b191759a51516458d2bed09540d237dd91eaa42d59d",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH_DELTA.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/NO_GO_LEDGER.md",
+      "sha256": "f82a7593100750b15257f5d98b866289e60cc186bf253faf03622b0f33ef98e0",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/NO_GO_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/WRAPPER_CONTROLS.json",
+      "sha256": "baa7548684d211a78a8fdbe05349c5aa611745f92c6718445bd0ed0f53ca0f79",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/WRAPPER_CONTROLS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/PORT_RECEIPT.json",
+      "sha256": "f75cfc47c2e00b72a322ffd8647ace2d3a187bede0fd1d95cf52ae60802d64d2",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/SOURCE_FREEZE.json",
+      "sha256": "e3549287d65517b67d6f9c0f9eda30a72f4350694d4edd1ae9bf6da3e3d06a7f",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/SOURCE_FREEZE.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/TRACE_GATE.md",
+      "sha256": "d44cc3013099425ca2824bd18aca720b1e538768326199957aa41566854dd8f1",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GOAL.md",
+      "sha256": "443c14e5416add72023014fbb3fecd9e2c6ba0b0d7881e8f0da5d1cd9b1fa070",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GOAL.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/REVIEW_HISTORY.md",
+      "sha256": "f86870fdc5b8601e73570869bfe75d25430c2dd454c22e91d44825ff688875c4",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/OPPORTUNITY_QUEUE.md",
+      "sha256": "dc7abe60848264b1452909e5f5671f6f5051faa734ea2cd9e1642ebfdbdf4fd8",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stderr",
+      "sha256": "31d495eb3e654ae4760d533ccad1a40bc03c098e3b319e00339e371723bff8da",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stderr"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_path_multiplicity.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ISOLATED_CLOSURE.json",
+      "sha256": "aa789200541a87bcaecec6d7e69d9b624a7172a90feae5f28fa4c9e57c6504c3",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ISOLATED_CLOSURE.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/MANIFEST.stdout",
+      "sha256": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/MANIFEST.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_rank.stderr",
+      "sha256": "b0eaffd63b2aa2de8611c5e330097909e0ea0e960c5adfc7d72fc30bc2a9c09a",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_rank.stderr"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/bare_X.stderr",
+      "sha256": "57a924331422406f35e66b1ae9be893f770610ddbb51b9304ae57f007a912099",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/bare_X.stderr"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/LIVE.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/MUTATIONS.json",
+      "sha256": "0c548551723087db8fa444bebd4b7c3ab75c8f72c1322dd3e2d1619e618661b0",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/MUTATIONS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/LITERATURE_BRIDGES.md",
+      "sha256": "2b1115e0725899f03fa079eae0169fd5c30f89528d48b05c6bfbae9236219c50",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/CONTROL_CONTRACT.md",
+      "sha256": "6993d23696dcedc1aeced87a82e6a630ba9cf43f6278deaa928667ff2840314a",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/CONTROL_CONTRACT.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ORIGINAL_HASHES.json",
+      "sha256": "8f7150db63712836d0bdc3efb547de6842a2f2e74c54997d900f1de8e4f86bf4",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ORIGINAL_HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ISOLATED.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ISOLATED.stdout",
+      "sha256": "e5b3cb411ffcfab57a9e08d599a148f98be0f6829cd5aca129e691d65d6d7103",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ISOLATED.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ARTIFACT_PLAN.md",
+      "sha256": "abd3704a2d44f169b6c9cc539d47238a692a78137624b573e133ebe20a0c1b26",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ARTIFACT_PLAN.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/bare_X.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/LIVE.stdout",
+      "sha256": "afcf677da3bf856c346aeb10e7ff989e7adccd9204734e8d0f554d680b8a0754",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/LIVE.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ROOT_CANONICAL_REVIEW.md",
+      "sha256": "4c2ce0376ab9e9a84db13f5c7321a1fbc03bb4460fa2418edc05547b382a5f50",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ROOT_CANONICAL_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/HANDOFF.md",
+      "sha256": "fc7d2197e85b8e6243678b99a3105aec8e05c2129dc4a35e8f4c2fd09fe72c84",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH_CONFIRMATION.md",
+      "sha256": "f08aee0b5423add067b682cde85727db43a9cc5e6c5b049def2fa4289c481b2c",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH_CONFIRMATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ROUTE_PORTFOLIO.md",
+      "sha256": "e3c782fae609d61c43a956b0af345c450b14a4ce6d6acc626e5646175f8d95f8",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH.stdout",
+      "sha256": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/GRAPH.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/wrong_rank.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/MANIFEST.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/omit_folds.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/local.diff",
+      "sha256": "bf3e32270a609aa12761b359beec89cee93e3a46bb809327716e5684df2b4522",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/local.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/RESULT.json",
+      "sha256": "9268efc8c895c68f495d9edf099c4adc2da4f1d7bede02e03f2ed1896668adc9",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/READ_HASHES.json",
+      "sha256": "009c3ad43d9dca468f1d1821b48a1f8f4e139237d28c2261665daadf85dbdacd",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/READ_HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/global.diff",
+      "sha256": "33fcda4541cce0aaf753fe2343b7bb3f9b136df757e5330527133bd61be23cf7",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/global.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/check_port.py",
+      "sha256": "0f1beb11074ee47cf8006ce0d09d829b4158b57c354c08c82159026e5f4b6bff",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/check_port.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/witness.diff",
+      "sha256": "1fc3381e1af429bf3fcde9f4fe4bc8e9521157f6b07915651b147d60c0498e14",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/witness.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/REVIEW.md",
+      "sha256": "96da72181af79273474a7d631dd2c86994fb24363bb25f309e787c2bb6c08e39",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/combined.diff",
+      "sha256": "783da2d8260170c86614cd8fb2c25736cc2e6732eed603f92e99584864657f6e",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/independent-canonical-review/combined.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-virtual-pair-eighth-plan/PLAN.md",
+      "sha256": "f419541950ebccbf65a608120723ab7bfc1197cade3b92f7d1a41da1efc3fbed",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-virtual-pair-eighth-plan/PLAN.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/check.py",
+      "sha256": "4cf2d62afb714b3a3211cdf73a5749065d2301dbae2c193d7517228b20f487ca",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/RESULT.json",
+      "sha256": "63cd05ec59fa321204069d0528733b1d4198c33e046210c5c97257abe81f3959",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/CONTRACT.md",
+      "sha256": "fa5e07cc0fa3063645aa0f12b7c8926d12a81b29a445e6a5d457950afc23664d",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/CONTRACT.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/DERIVATION.md",
+      "sha256": "751543dd407c9ee4ce7eaa3e8540091628a15c5ed2a43b35f56103a10e9ef5ac",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-root/DERIVATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/check.py",
+      "sha256": "912b11af6939511566adba66b26395b0a0d9f7e29b4bf1b5e7a68aadb4fcdf83",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/RESULT.json",
+      "sha256": "762505bed72716dc20c282ffdbc5872827d10e6fb669b320ded2ec599ce08ccf",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/READ_HASHES.json",
+      "sha256": "b173b43712dc16e571d53ce4dfa9081929b562463ee4f7e48598ed4a2a4cbb71",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/READ_HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/REVIEW.md",
+      "sha256": "01c2242fb9123e927dac8c8f9e380d6e8cc28be3240c5ed05354b754983cd084",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/check.py",
+      "sha256": "f9902a7e1a6592b31b94c0da858ba80fcf1d1405fcff8587701a7c69890b6926",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/RESULT.json",
+      "sha256": "9b66e6f10103b769b99d44f635cc81ad8ac95ef6a20da4e863f4a0c5d2dd9840",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/READ_HASHES.json",
+      "sha256": "5771cf4477671083ccd02eba2512e3576e422aa84d79df38d49feb617a37bc48",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/READ_HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/REVIEW.md",
+      "sha256": "c5242fad49b86cd86d87560f2eb6db6092bd117b5b4bfddf16fa4da6572a2741",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined-cold-review/REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/check.py",
+      "sha256": "08cfbc64756708cc60e684d262a1f07526cd188f11bf97ad99d87189f416fae8",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/RESULT.json",
+      "sha256": "445650cfe08a4246f61239bad2f5b3c68b95a6ce86075fcbcf4f7aae45d0bb5e",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/HASHES.json",
+      "sha256": "c037f745e9e989e99f70ea18fb31c8362feaf8117df40f51d1a61a51eb64f103",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/DERIVATION.md",
+      "sha256": "153d8581e281aba54178d6bd32be977d784b32bdaf9b7743a8af5e2cdcabb1c1",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-combined/DERIVATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/check.py",
+      "sha256": "64a129ff06c46df382bc47bfde709fb36ae59116a6ee2ff005c4d11b841d310c",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/RESULT.json",
+      "sha256": "2d9810c045a82a2f9e19f661aff78c7432a64abc4cc60c07d4616d3d9da8eca4",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/HASHES.json",
+      "sha256": "b173b43712dc16e571d53ce4dfa9081929b562463ee4f7e48598ed4a2a4cbb71",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness-cold-review/READ_HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/REVIEW_AND_WITNESS.md",
+      "sha256": "f2e3029ce1b5b0d9b036caa9c586ef848f55c3eed867c5b1076d64a6a32a1615",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-witness/REVIEW_AND_WITNESS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/check.py",
+      "sha256": "d35ce979fdaa5d9a9cbbec21347c16d9a6a5bd4c89d3623e4681bdc9e869e180",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/RESULT.json",
+      "sha256": "17d6352593a6f034d83295c25d6a0e42d34ad21b5ab4cb0b14c7c32ed0264b08",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/READ_HASHES.json",
+      "sha256": "bb0ca1d8be494a15222f98fff80e9585bbf092f98cae74940a5a1ee57b431ccf",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/READ_HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/check_BEFORE_EXPLICIT_GUARDS.py",
+      "sha256": "835ad29dda540f418435f57eeffa4931754240cff01743b8a0fa7b82e782b758",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/check_BEFORE_EXPLICIT_GUARDS.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/REVIEW.md",
+      "sha256": "80ecc0f3e32f32c3866adb566015b9bb7f3b481cd410b029ca9b84cabf3d81f2",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-cold-review/REVIEW.md",
+      "sha256": "ce45c502108e4c7a74f4f3960dbc72a068b026b5567bf52ee9f8cf34dbf8a588",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-eighth-global-reduction-cold-review/REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/PREREGISTRATION.md",
+      "sha256": "02989e42e7cec8171743ef6bb8cea004dba58c6bb592290cea09f67b1ec65da7",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/check.py",
+      "sha256": "f0a372e556a64c3a8c8e625c05fd64f7c29c326bd04b786c19bee6d3bc60a334",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/RESULT.json",
+      "sha256": "af417f5cb3d5ceeba756e1af3b7e08d5023088165ef7927ca692767e31549b00",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/HASHES.json",
+      "sha256": "bb0ca1d8be494a15222f98fff80e9585bbf092f98cae74940a5a1ee57b431ccf",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-cold-review/READ_HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/DERIVATION.md",
+      "sha256": "4101404a1464a94837acb79e83120ae0e746b95f45638aed34c5045b22faf0c3",
+      "first_identical": ".claude/science/physics-loops/native-eighth-diagonal-cycle-potential-20260908/originals/native-full-eighth-diagonal/DERIVATION.md"
+    }
+  ],
+  "archive_data_coverage_sha256": "06f4ff276331b4b46d15cc12fa59d2085781ef66db1e91cf6499e86085c9a86a",
+  "independent_controls": {
+    "pass": true,
+    "method": "Independent integer characteristic-polynomial interpolation and low-cluster Hensel factorization through g8, all local rows; coordinate plaquette/winding reconstruction of supplied full witness states, independent of recursive/slot enumeration. No candidate import.",
+    "local_rows": 90,
+    "coefficient_comparisons": 360,
+    "unique_matrices": 44,
+    "witnesses": [
+      {
+        "L": 4,
+        "features": [
+          [
+            144,
+            240,
+            576
+          ],
+          [
+            136,
+            208,
+            576
+          ],
+          [
+            130,
+            192,
+            576
+          ]
+        ],
+        "determinant": "-1769/3375"
+      },
+      {
+        "L": 6,
+        "features": [
+          [
+            324,
+            648,
+            1296
+          ],
+          [
+            320,
+            624,
+            1304
+          ],
+          [
+            317,
+            612,
+            1310
+          ]
+        ],
+        "determinant": "-1769/9000"
+      }
+    ],
+    "elapsed_sec": 0.7677101249573752,
+    "sympy_version": "1.14.0"
+  },
+  "independent_control_sha256": "37294454dd9945137fe6eff970ea0a06b574e8091f803e4f0805d87fd5100b43",
+  "execution": {
+    "receipt": "/private/tmp/review-drain-20260915/8047-author-final-execution.json",
+    "receipt_sha256": "aac13351c4b6c09aad5a87b01470e5d24772812e561ea392d29754caabcc582d",
+    "wrapper_elapsed_sec": 1.5468499660491943,
+    "internal_elapsed_sec": 1.4630228750174865,
+    "peak_rss_mib": 37.09375,
+    "cap_sec": 180,
+    "cap_mib": 384,
+    "exit_code": 0,
+    "TOTAL": "PASS=542264 FAIL=0",
+    "scientific_payload_unchanged": true,
+    "cache_stdout_scope": "Complete stdout retained and JSON payload equals canonical output",
+    "generated_dataflow": "All four refreshed helper outputs equal primary parts; combined hashes actual freshly generated local JSON and witness hashes actual global helper source."
+  },
+  "claim_dispositions": {
+    "canonical_cluster": "PASS physical Z support parity, native phase gauge equivalence, exact feedback and contour trace, alternating rank-two symmetry, finite canonical gauge",
+    "embedding": "PASS connected support closure, admissible star/fork counts and four rotated path subtraction, all simple fourcycles including extent4 winding",
+    "cycle_potential": "PASS all local exact coefficients, scalar3610233/16000 and four pattern weights/decomposition",
+    "affine_obstruction": "PASS supplied six full ice states, four legal transitions, nonzero determinants within exhibited connected components; L6 excludes short winding artifact",
+    "physical_scope": "No arbitrary-gauge diagonal, full eighth offdiagonal, phase, global spectral radius, selected coupling/action or independent-interaction exclusion"
+  },
+  "current_main_preservation": "All 93 staged paths additions; all corrected8044 source/history and pinned inputs unchanged including inherited8038. Original parent-child delta only; no child absorbed.",
+  "dependency_scope": "Three linked repository mathematical premises:8044 full-carrier mechanism,8038 native dictionary and instrument. Own-note proofidentity plus four executinghelpers; generated local/global payloads freshly produced before combined/witness consumers. All parenttransitive source and authority identities rechecked.",
+  "external_reads": [],
+  "external_math_scope": "Finite-dimensional characteristic polynomial, contour resolvent, canonical covariance and local combinatorics established directly; no external mathematical theorem imported for the new conclusion.",
+  "remaining_findings": [],
+  "full_pipeline_runs": 0,
+  "audit_verdict": null,
+  "helper_input_sha256": {
+    "scripts/native_eighth_combined_2026_09_08.py": {
+      "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa",
+      "scripts/native_eighth_local_2026_09_08.py": "c3ef60fd2bd35656eafb3609049768ff4e5cf5a6f22a0fc1db345b2d5c0874d2"
+    },
+    "scripts/native_eighth_global_2026_09_08.py": {
+      "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa"
+    },
+    "scripts/native_eighth_local_2026_09_08.py": {
+      "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa"
+    },
+    "scripts/native_eighth_witness_2026_09_08.py": {
+      "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa",
+      "scripts/native_eighth_global_2026_09_08.py": "8b2a64526d7e68287094fb3deeb1890a100569f3796805dba6b8086f05155b1c"
+    }
+  },
+  "preexecution_receipt_sha256": "3590989ed2c1e04f88ed699db8213570f021167f1e8761b8fa6b6c3740e81a5e",
+  "review_methodology_sha256": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+  "additional_methodology_inputs": {
+    "docs/ai_methodology/skills/no-go-discipline/SKILL.md": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+  },
+  "additional_independent_control": {
+    "receipt": {
+      "pass": true,
+      "method": "Direct full-state vertex degrees and incidence-defined legal-cycle XOR transitions; scalar star/fork arithmetic via literal six-slot choices, no helper imports.",
+      "vertex_and_transition_checks": 844,
+      "scalar_parts": {
+        "one": "15/128",
+        "pair": "525/64",
+        "path3": "6479/150",
+        "path4_unrestricted": "191387/4000",
+        "star3": "225/8",
+        "star4": "225/16",
+        "fork4": "10091/120"
+      },
+      "elapsed_sec": 0.00204604200553149
+    },
+    "source_sha256": "1982b05da32748efa162c50cff75d8a66676450c5ffae09182368e3c550ae894"
+  },
+  "no_go_discipline": "N1\u2013N8 confirmed for five concrete coefficient/algebra/rank/embedding/admissibility challenges; one affine residual, declared canonical domain, stronger gauge/interaction/phase escapes outside claim."
+}

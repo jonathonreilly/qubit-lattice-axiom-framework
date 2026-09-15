@@ -1,0 +1,24 @@
+{
+  "pr": 8046,
+  "original_head": "a463f276238e3b276c9927df01e2c201577af78a",
+  "branch": "codex/native-same-hamiltonian-ramp-20260908",
+  "landing": "bd2e2b6b0a3c75d61f111b783957229d783ac684",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/native-same-hamiltonian-ramp-20260908",
+    "headRefOid": "a463f276238e3b276c9927df01e2c201577af78a",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8046,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8046"
+  },
+  "final_state_verification": {
+    "headRefOid": "a463f276238e3b276c9927df01e2c201577af78a",
+    "number": 8046,
+    "state": "CLOSED"
+  }
+}

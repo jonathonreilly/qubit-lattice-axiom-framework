@@ -1,0 +1,24 @@
+{
+  "pr": 8084,
+  "original_head": "e56bca5c4edc48d279de8d13edb3884e7b8d8479",
+  "branch": "physics-loop/native-feedback-finite-apparatus-20260913",
+  "landing": "0ded9940cb9fccaf5909d348ea2f03717879e666",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/native-feedback-finite-apparatus-20260913",
+    "headRefOid": "e56bca5c4edc48d279de8d13edb3884e7b8d8479",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8084,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8084"
+  },
+  "final_state_verification": {
+    "headRefOid": "e56bca5c4edc48d279de8d13edb3884e7b8d8479",
+    "number": 8084,
+    "state": "CLOSED"
+  }
+}

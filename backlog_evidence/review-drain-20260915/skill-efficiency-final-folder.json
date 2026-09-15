@@ -1,0 +1,9 @@
+{
+  "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+  "docs/ai_methodology/skills/review-loop/SKILL.md": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+  "docs/ai_methodology/skills/review-loop/agents/openai.yaml": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50",
+  "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+  "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "9184afe4209e7226197bec7318f9522a7d0603e8abd2609de5403318a2b8304f",
+  "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf",
+  "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+}

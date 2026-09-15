@@ -1,0 +1,56 @@
+{
+  "utc": "2026-09-15T13:25:15.639553+00:00",
+  "records": [
+    {
+      "path": "/private/tmp/toe-formation-order-20260913-wt",
+      "head": "d57291602d909246756f30975f0d862a08e8f836",
+      "contained_in_fetched_main": false,
+      "status": []
+    },
+    {
+      "path": "/private/tmp/toe-history-field-20260915-wt",
+      "head": "691f96525772ec0e7d06a528d14ad17324400f22",
+      "contained_in_fetched_main": false,
+      "status": [
+        "A  .claude/science/physics-loops/clock-history-field-20260915/HANDOFF.md",
+        "A  .claude/science/physics-loops/clock-history-field-20260915/MUTATION_CHECKS.json",
+        "A  docs/FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        " M docs/audit/AUDIT_QUEUE.md",
+        "M  docs/audit/data/citation_graph_manifest.json",
+        " M docs/audit/data/dispatch_shadow_state.json",
+        " M docs/audit/data/effective_status_summary.json",
+        " M docs/audit/data/ledger_meta.json",
+        " M docs/audit/data/load_bearing_summary.json",
+        " M docs/repo/FRONT_DOOR_STATUS.md",
+        "A  logs/runner-cache/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.txt",
+        "A  scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py",
+        "?? .claude/science/physics-loops/clock-history-field-20260915/CONFORMANCE.md",
+        "?? docs/audit/data/ledger/ca/carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15.json",
+        "?? docs/audit/data/ledger/fi/finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15.json",
+        "?? docs/audit/data/ledger/fi/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_bounded_theorem_note_2026-09-15.json",
+        "?? docs/audit/data/ledger/fi/finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15.json",
+        "?? docs/audit/data/ledger/fi/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15.json",
+        "?? docs/audit/data/ledger/fr/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15.json",
+        "?? docs/audit/data/ledger/qu/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_bounded_theorem_note_2026-09-15.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/toe-poss-sym-order-20260915-wt",
+      "head": "d15d5d9074e343563700691afcfddb5afc761a21",
+      "contained_in_fetched_main": false,
+      "status": []
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914",
+      "head": "f8fb30b810959b6ad42eed3ad0ad23fe21dfe230",
+      "contained_in_fetched_main": false,
+      "status": []
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "contained_in_fetched_main": false,
+      "status": []
+    }
+  ]
+}

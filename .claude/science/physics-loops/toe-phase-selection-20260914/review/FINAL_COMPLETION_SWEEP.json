@@ -1,0 +1,48 @@
+{
+  "utc": "2026-09-15T13:28:55.474335+00:00",
+  "main": "26bf37ccf50a45233e7354302a07ebe9c45eadc2",
+  "records": [
+    {
+      "path": "/private/tmp/toe-formation-order-20260913-wt",
+      "head": "d57291602d909246756f30975f0d862a08e8f836",
+      "contained_in_main": false,
+      "tracked_dirty_count": 0,
+      "untracked_count": 0,
+      "action": "preserved_unlanded_or_active"
+    },
+    {
+      "path": "/private/tmp/toe-poss-sym-order-20260915-wt",
+      "head": "d15d5d9074e343563700691afcfddb5afc761a21",
+      "contained_in_main": false,
+      "tracked_dirty_count": 0,
+      "untracked_count": 0,
+      "action": "preserved_unlanded_or_active"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914",
+      "head": "f8fb30b810959b6ad42eed3ad0ad23fe21dfe230",
+      "contained_in_main": false,
+      "tracked_dirty_count": 0,
+      "untracked_count": 2,
+      "action": "preserved_unlanded_or_active"
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "contained_in_main": false,
+      "tracked_dirty_count": 0,
+      "untracked_count": 0,
+      "action": "preserved_unlanded_or_active"
+    }
+  ],
+  "removed": [],
+  "free_GiB": 148.28221893310547,
+  "protected_archives_touched": false,
+  "git_gc_run": false,
+  "own_public_checkouts_removed": [
+    "/private/tmp/toe-projective-corridor-20260915-wt",
+    "/private/tmp/toe-static-charge-20260915-wt",
+    "/private/tmp/toe-static-sector-20260915-wt",
+    "/private/tmp/toe-history-field-20260915-wt"
+  ]
+}

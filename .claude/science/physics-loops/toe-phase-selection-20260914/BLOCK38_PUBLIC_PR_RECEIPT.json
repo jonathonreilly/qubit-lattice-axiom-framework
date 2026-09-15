@@ -1,0 +1,55 @@
+{
+  "utc": "2026-09-15T13:28:01.464454+00:00",
+  "exact_remote_verified": true,
+  "pr": {
+    "baseRefName": "physics-loop/static-charge-transfer-sector-20260915",
+    "files": [
+      {
+        "path": ".claude/science/physics-loops/clock-history-field-20260915/CONFORMANCE.md",
+        "additions": 40,
+        "deletions": 0
+      },
+      {
+        "path": ".claude/science/physics-loops/clock-history-field-20260915/HANDOFF.md",
+        "additions": 9,
+        "deletions": 0
+      },
+      {
+        "path": ".claude/science/physics-loops/clock-history-field-20260915/MUTATION_CHECKS.json",
+        "additions": 105,
+        "deletions": 0
+      },
+      {
+        "path": ".claude/science/physics-loops/clock-history-field-20260915/VALIDATION.json",
+        "additions": 103,
+        "deletions": 0
+      },
+      {
+        "path": "docs/FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "additions": 400,
+        "deletions": 0
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "additions": 6,
+        "deletions": 2
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.txt",
+        "additions": 18,
+        "deletions": 0
+      },
+      {
+        "path": "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py",
+        "additions": 309,
+        "deletions": 0
+      }
+    ],
+    "headRefName": "physics-loop/clock-history-field-20260915",
+    "headRefOid": "c5580db2ebe78e4dca71f210539cea1471148483",
+    "number": 8145,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8145"
+  },
+  "independent_review": "pending"
+}

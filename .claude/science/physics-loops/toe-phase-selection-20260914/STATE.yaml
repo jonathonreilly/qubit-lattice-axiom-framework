@@ -1,6 +1,6 @@
 loop: toe-phase-selection-20260914
 mode: campaign
-status: active
+status: campaign_window_complete
 branch: physics-loop/toe-phase-selection-20260914
 worktree: /Users/jonreilly/Documents/Codex/toe-phase-selection-20260914
 main_revision: 018902e8d7570c4ed2800cc4884f0157096da944
@@ -13,24 +13,24 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 37
-active_route: full_history_field_algebra_and_threshold
+block: 38
+active_route: completed_history_reconstruction_and_charge_bounds
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Package the finite-history field algebra and endpoint-filling threshold
-  comparison. Continue personally through2026-09-15 13:30:44UTC; extension is already
-  applied.
+next_action: Independent review of the frozen interacting source unit; next discovery
+  target is the full fixed-clock physical field law, with native selection and mobile
+  matter separately tracked.
 strongest_unresolved_obligation: Fixed-law finite-clock full-flux Gaussian/Maxwell
   scaling with both defect sectors; native law, preparation, clock and interacting
   matter selection remain open.
-working_result: Author proof candidate matches cubic and temporal free-boundary states
-  by clock Ginibre monotonicity, derives an alias-preserving Wilson lower bound by
-  two routes, and bounds the matched path-visible static-charge energy. Three independent-construction
-  finite checker suites agree; none is an independent scientific review.
+working_result: Author proposals construct matched clock free state, static and full-history
+  Hamiltonians, common external-charge thresholds, positive charge-energy floors and
+  conditional Coulomb-form upper bounds. Native prepared projective histories and
+  earlier Maxwell candidates are preserved. Independent review remains pending.
 public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
@@ -49,3 +49,6 @@ public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8140
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8143
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8144
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8145
+completed_utc: '2026-09-15T13:31:26.067646+00:00'
+scientific_goal_status: TOE_not_established_no_axiom_forcing_contradiction

@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
+runner_sha256: c7a2f5f37d1d64bd2fa89c8b001539a8a276323faafbcc234c0a1e941405e013
+input_fingerprint_sha256: 4860fce2c61ee0e5bd7cfa0337441cbc16d7c4ecb976c9f32522a12de246d237
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.35
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+AUDIT_TIMEOUT_SEC: 900
+scope: the recorded-set Gibbs theorem — product form for every order (plaquette, star), mixed differences k = 2..6, the plaquette and star canonical potentials and a direct Markov test; exact; no order selected
+mutation: none
+PASS: A1 the four declared inputs exist (this note, the axiom memo, block 01, block 08)
+PASS: A2 the four axiom sentences used are present verbatim in the axiom memo
+PASS: A3 the parents' claim ids and the cited fragments (block 01's condition; block 08's three-body term) are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 T1: the product form equals the product of conditionals on all 1296 configurations for every one of the 48 orders of the plaquette and the star at (3,1,2)
+PASS: B2 T3: exp of the k-th mixed difference of log Z_k at the witness assignments is not 1 for k = 2..6 at (3,1,2) and (5,2,4); the literals for k <= 5 (k <= 4) match
+PASS: B3 T3 control: at the constant rule every mixed-difference ratio over the {-x, +y}-assignments is 1 for k = 2..6
+PASS: B4 T4: no two neighbors of a site of Z^3 are adjacent (their difference has even coordinate sum)
+PASS: C1 T6: the plaquette law (order a, b, c, d) has a zero canonical term on the never-co-recorded non-edge {a, d} on all 1296 configurations
+PASS: C2 T6: the canonical term on the co-recorded non-adjacent pair {b, c} is nonzero; exp Phi_bc = 12/13 at (a,b,c,d) = (-x,+y,+z,-y)
+PASS: C3 T6: edge terms exp Phi_ab = 3, exp Phi_bd = 3/4; the four-body and the {b,c,d} terms are 1 at the witness
+PASS: C4 T6: the star with its center last has a nonzero three-body term on the leaves: exp Phi = 165/169 at (l1,l2,l3) = (-x,-x,+y)
+PASS: C5 T2/T6 direct Markov test on the plaquette: the conditional of b depends on c (co-recorded with b by d) and the conditional of a never depends on d (all configurations)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
+per_element: executed — every configuration of the plaquette and the star (1296 each) for every one of their 48 orders; the mixed-difference ratios at witness assignments for k = 2..6 at three triples
+per_site: executed — the recorded set of every site in every order; the conditional of b and of a on the plaquette against their non-edge partners
+per_mode: executed — the canonical terms on the edges, the two non-edges, the triple and the quadruple of the plaquette; the leaves' triple of the star
+per_block: executed — the two windows' full potentials at the witnesses; the plaquette's {a, d} term on all 1296 configurations
+lattice_wide: proved on every finite window at triples with nonzero mixed differences (executed at two); infinite volume only by citation of blocks 08–09 for the monotone class
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

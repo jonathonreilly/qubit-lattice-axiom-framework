@@ -1,0 +1,3 @@
+R1 plaquette {b,c} closed form: 12/13 == Möbius value 12/13: True
+R2 star leaves closed form: 165/169 == Möbius value 165/169: True
+R3 nonzero k-body term with vacuum -x, k=2..6: [(2, True), (3, True), (4, True), (5, True), (6, True)]

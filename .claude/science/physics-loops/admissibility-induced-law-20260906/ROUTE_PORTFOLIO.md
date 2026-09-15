@@ -109,3 +109,11 @@ Searched commit: `origin/main` = `7495de3076` (fetched 2026-09-15 before the blo
 - `git grep -n -iE "(reversib|time.revers|detailed balance|arrow).*(formation|sweep|record)|…" origin/main -- 'docs/*.md'` → the time-directed-sweep note of 2026-09-05 (a current's image under a sweep; different object); no reversibility statement for a formation chain.
 - The landed plane-law note (read on main): 2D Gibbs identification, two diagonal classes, the center's conditional not the static rule — the two-dimensional analogue of R1–R2; nothing on Z^3, on eight classes, or on reversibility.
 Classification: **open after the matched-hit review.** Routes: R-A the DLR limit (L1); R-B full-support uniqueness of the specification (L2) — the load-bearing new lemma; R-C dependency-set combinatorics for the corner family; R-D exact 2x2 column computations for the sweep's imprint.
+
+## Block 10 (2026-09-15) — prior-art search and routes
+
+Searched commit: `origin/main` = `7495de3076`.
+- `git grep -n -iE "canonical potential|Möbius|Hammersley|Brook ratio|vacuum potential" origin/main -- 'docs/*.md'` → block 01 (Brook re-proved; Hammersley–Clifford referenced only), an Opus Born-evidence note (Hammersley–Clifford scope remarks); no note computes the canonical potential of a formation law or classifies its Markov graph.
+- `git grep -n -iE "recorded.set graph|recorded-set|Markov graph|k-body|three-body|k-th mixed difference" origin/main -- 'docs/*.md'` → blocks 08/09 (stacked, not on main) are the only prior uses of the three-body term; nothing for arbitrary orders.
+- #8102 (open): the multiset key (the law depends on the order through the recorded sets of size ≥ 2) — consistent with T1; it does not state the Gibbs form or the Markov graph.
+Classification: **open after the matched-hit review.** Routes: T-A regrouping of the product of conditionals (T1–T2); T-B the vacuum-normalized potential's uniqueness and clique property re-proved by Möbius inversion (T3a); T-C the recorded-set terms as mixed differences of `log K_k` (T3b) with the executed irreducibility for `k ≤ 6`; T-D the bipartite obstruction (T4).

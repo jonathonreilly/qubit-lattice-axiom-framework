@@ -18,3 +18,6 @@ Routes read at their proofs, not their headlines.
 - **The Z^3 monotone law is not a static law** (R2): proved from L1–L2 in the region at triples with nonzero third difference; escapes: a longer-range "static" rule (not the declared rule); a nonconstant triple with vanishing third difference (none known); c ≥ 1/3 (not constructed).
 - **No single covariant law in the monotone class** (R3c): the eight corner laws are distinct and permuted transitively; the covariant object is their mixture; escape: adopting the mixture or a covariant random order as the supplied formation law (owner decision).
 - **The plane chain is not reversible** (R4): exact on the 2x2 column; on Z^3 through R3; escape: none within the class (the constant rule is the control).
+
+## Block 10 (2026-09-15) — negative at scope
+- **A formation law with a two-element recorded set is not a nearest-neighbor Markov field** (T4's converse), proved on every finite window at triples with nonzero mixed differences; escapes: a vanishing mixed difference at a nonconstant triple (none known); the constant rule; a non-product rule; a non-bipartite carrier (none on `Z^3`).

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
 runner_sha256: 311e27d7406be6167fc6b17c7b904e9e3879230331ad480103a6b8352fa27a21
-input_fingerprint_sha256: 5903d99627a5e2112468c78512eefcb783204bb4dc0ee4fcb822cf03233bbe4c
+input_fingerprint_sha256: d074b3e891eb3ecc32fdf488acb5c35a91e41ef8d3d29b9de34037f49af93204
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 26.66
+elapsed_sec: 27.29
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

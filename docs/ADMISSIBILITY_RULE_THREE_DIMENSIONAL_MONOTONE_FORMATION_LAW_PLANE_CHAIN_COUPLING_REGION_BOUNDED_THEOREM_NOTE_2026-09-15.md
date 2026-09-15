@@ -152,10 +152,12 @@ Block 02 (on main) proved that the row sweep on a strip preserves the chain law
 its N1 route 3 records a three-recorded-neighbor sweep as attempted by witness
 only. Block 05 (on main) gave the monotone class on rectangles: one law (P1),
 rows and columns as chains (P4), the corner law (P5), the opposite-corner
-identity by the edge/plaquette product (P7(a)). The concurrent PR #8039 (open;
-not an input) extends the rectangle laws to the plane by projective consistency
-using P7(a) and identifies the pair potential; it states that it "does not
-construct an infinite physical formation schedule". The concurrent PR #8102
+identity by the edge/plaquette product (P7(a)). The plane-law note
+[`ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md`](ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md)
+(PR #8039; landed on main on 2026-09-15 after this block's branch was cut;
+unaudited; not an input here) extends the rectangle laws to the plane by
+projective consistency using P7(a) and identifies the pair potential; it states
+that it "does not construct an infinite physical formation schedule". The concurrent PR #8102
 (open; not an input) gives the recorded-set multiset key and finds on the
 `2×2×2` cube that the reversed order's law differs from the row-major one — a
 finite fact consistent with Q2 here. The owner's random-priority formation law
@@ -273,7 +275,8 @@ constant rule the ratio is `1` (B6). Hence the interaction of `μ_B` in the
 bulk is a nearest-neighbor pair term `−log K` plus a genuine three-body term
 `+log K_3` on the predecessor triples `{x − e_1, x − e_2, x − e_3}`, which are
 pairwise at face-diagonal distance; the two-body diagonal terms of the plane
-(block 05, #8039) survive only on the three coordinate planes of the box. ∎
+(block 05; the plane-law note, #8039) survive only on the three coordinate
+planes of the box. ∎
 
 ## Theorem Q2 — the first plane cannot be summed out
 
@@ -301,9 +304,9 @@ identity); in that class the first row consists of last-formed sites, so
 summing it out is down-set consistency for that class and leaves the
 bottom-right law of the smaller rectangle, which by P7(a) again is its
 top-left monotone law. The first column is the same with left-right
-reflection. ∎ This is the projective-consistency argument of the concurrent
-#8039, re-proved here; the one-row case is exactly block 02's `p_0 P = p_0`
-(E3). Executed: the marginals of the `2×3` law on its four `2×2`
+reflection. ∎ This is the projective-consistency argument of the plane-law note
+(#8039, landed on main 2026-09-15), re-proved here; the one-row case is exactly
+block 02's `p_0 P = p_0` (E3). Executed: the marginals of the `2×3` law on its four `2×2`
 sub-rectangles and on its translated `1×3` and `2×2` sub-rectangles are the
 sub-rectangle laws (C4).
 
@@ -556,7 +559,7 @@ along the line `(1, 1, t)` it fails for large `t` (the sensitivity of three
 orthogonal-preferring neighbors to one of them tends to `1/2`), so the region is
 a proper subset of the positive octant; its boundary is not computed here. For
 two dimensions the same proofs with two predecessors give the region
-`2 c_{(2)} < 1`, `c_{(2)} = max(c_1, c_2)`, and the plane law of #8039 (whose
+`2 c_{(2)} < 1`, `c_{(2)} = max(c_1, c_2)`, and the plane law of the plane-law note (#8039; whose
 existence needs no condition) has exponentially decaying correlations there:
 `60/143 < 1` at `(3, 1, 2)`.
 
@@ -623,7 +626,7 @@ the obligation table and under Imports. No wall was promoted.
 | block 05's note (proposed, unaudited): P1, P3, P4, P7(a) | the monotone class on rectangles; the 180-degree identity | Q1a–c one dimension up; Q2b; Q3c | yes (parent; cited and re-proved where used) |
 | block 02's note (proposed, unaudited): E1–E3 | the row transfer preserves the chain law | Q2e (the mechanism that has no analogue); Q1e (`K_2`) | yes (parent; cited) |
 | block 03's note (proposed, unaudited): the coupling method and `6c_1` | uniqueness of the static law by a random-scan coupling | contrast only (Q5); the method re-proved for a different structure | yes (contrast; no value used) |
-| #8039 (open PR; not an input) | the plane law by projective consistency | Q2b re-proves the consistency; Q4's 2D remark applies to its law | yes (concurrent; re-proved) |
+| the plane-law note (#8039; landed on main 2026-09-15; not an input) | the plane law by projective consistency | Q2b re-proves the consistency; Q4's 2D remark applies to its law | yes (re-proved) |
 | #8102 (open PR; not an input) | the multiset key; reversal on the cube | consistent finite fact quoted in Q4e | yes (quoted; not used) |
 | the random-priority note (branch; not an input) | a covariant random-order law on `Z^3` | a different object; N1 route 2 | yes (contrast) |
 

@@ -1,0 +1,120 @@
+===== runner cache v1 =====
+runner: scripts/native_zero_penalty_endpoint_2026_09_08.py
+runner_sha256: 46cea7e2e2aa0619e1f08571435f5ccb26b24d4774fb3929c923d7bf0d6a3db1
+input_fingerprint_sha256: d6bcc51bb64022c62255f752527fab11ae23194e17c906a271f646e301a7dd11
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{
+  "executed_predicates": 80,
+  "parts": {
+    "exact": {
+      "checks": 80,
+      "rows": [
+        {
+          "vertices": 3,
+          "flux": -1,
+          "characteristic_polynomial": [
+            1,
+            0,
+            -12,
+            0
+          ],
+          "moments": [
+            "4",
+            "0",
+            "12",
+            "0",
+            "36"
+          ]
+        },
+        {
+          "vertices": 3,
+          "flux": 1,
+          "characteristic_polynomial": [
+            1,
+            0,
+            -12,
+            0
+          ],
+          "moments": [
+            "4",
+            "0",
+            "12",
+            "0",
+            "36"
+          ]
+        },
+        {
+          "vertices": 4,
+          "flux": -1,
+          "characteristic_polynomial": [
+            1,
+            0,
+            -16,
+            0,
+            0
+          ],
+          "moments": [
+            "8",
+            "0",
+            "32",
+            "0",
+            "128",
+            "0",
+            "512",
+            "0",
+            "2048"
+          ]
+        },
+        {
+          "vertices": 4,
+          "flux": 1,
+          "characteristic_polynomial": [
+            1,
+            0,
+            -16,
+            0,
+            64
+          ],
+          "moments": [
+            "8",
+            "0",
+            "32",
+            "0",
+            "256",
+            "0",
+            "2048",
+            "0",
+            "16384"
+          ]
+        }
+      ],
+      "seconds": 0.04757487494498491,
+      "rss_mib": 22.5,
+      "scope": "Exact Gaussian-rational native/CAR traces and analytic frequency squares; no cubic flux optimum or phase."
+    }
+  },
+  "elapsed_seconds": 0.053673458052799106,
+  "peak_rss_mib": 22.5,
+  "source_sha256": "46cea7e2e2aa0619e1f08571435f5ccb26b24d4774fb3929c923d7bf0d6a3db1",
+  "input_sha256": {
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "scripts/native_zero_penalty_endpoint_exact_2026_09_08.py": "6bc530a28ce00847becb60a221fe605d800475af9e80ce5515d49b55a6fff96a"
+  },
+  "scope": "Exact finite flux-sector and parity controls; no cubic flux optimum or phase."
+}
+per_element: exact Gaussian-rational Pauli and CAR matrices.
+per_site: even matter parity from global Gauss product.
+per_mode: frequency-square polynomials, zero modes and spectator multiplicity.
+per_block: flux-projected traces and total carrier dimension.
+lattice_wide: checked and not executed; the all-graph finite endpoint theorem is analytical, while only the declared triangle and square fixtures were executed; no cubic flux optimization or phase inference.
+TOTAL: PASS=80 FAIL=0
+Resources: 0.053673s, 22.500MiB; timeout180s, RSS384MiB.
+
+----- stderr -----
+

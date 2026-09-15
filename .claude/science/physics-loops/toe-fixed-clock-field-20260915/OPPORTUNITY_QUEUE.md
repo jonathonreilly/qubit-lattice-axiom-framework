@@ -27,3 +27,9 @@ transport, photon background and native action selection remain separate.
 Block9 priority: derive local-source response within the exact word carrier,
 then compare the actual assumptions of newly landed charged/infrared sources.
 An entire-sector spectral floor need not equal a measurable source threshold.
+
+Block10 resolves the polarized local-source question on a symmetry line.
+Further work there should target genuinely different physics (generic
+momentum or different backgrounds), not merely rephrase its selection
+rule. Newly landed native infrared/charged notes deserve comparison before
+choosing the next target. The fixed-clock all-order field limit remains open.

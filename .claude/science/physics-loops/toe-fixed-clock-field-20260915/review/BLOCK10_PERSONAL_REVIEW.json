@@ -1,0 +1,31 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T21:10:33.687485+00:00",
+  "latest_main_seen": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+  "checked": [
+    "closed native parity frame from actual star order",
+    "local Hermitian three-edge source and explicit physical translation action",
+    "conserved color count only on diagonal momentum line",
+    "unique reconstruction of each u-marker swap edge",
+    "endpoint isometry boundaries and telescoping constant",
+    "direct-sum finite-source bound versus full flat infimum",
+    "exact semicircle and special-momentum atom",
+    "J0 marker convolution and threshold density coefficient",
+    "Sylvester source-leakage estimate with norm bound",
+    "finite-mean color-count and word-cutoff corollaries"
+  ],
+  "limits": [
+    "polarized supplied vacuum representation",
+    "no generic-momentum exact spectrum",
+    "no full periodic vacuum spectroscopy",
+    "native operator implementation reused explicitly",
+    "no independent audit"
+  ],
+  "inputs": {
+    "notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md": "19424f17dc8f76c223b53ddf729cb6fca83412f8dfb87fd5afc451a7da10d317",
+    "notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md": "0b86faaa03e20f63c150c07c81457788d73ff4f1be79d8098fa64b1520bcba65",
+    "evidence/block10_local_spectrum_check.py": "06dea89cfb0b73182c7bfa72a9f35f3518b93d93cc9c935660c61e1447781fb6",
+    "evidence/block10_local_spectrum_check.json": "ce7b447f11a69fac6b5d7372ed3daeac447391a8ba0b3bfbe0e9ee806cae5d6c",
+    "evidence/block10_local_spectrum_check.txt": "ce7b447f11a69fac6b5d7372ed3daeac447391a8ba0b3bfbe0e9ee806cae5d6c"
+  }
+}

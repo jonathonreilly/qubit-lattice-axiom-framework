@@ -330,3 +330,10 @@ fetch completed. It adds six native/charged/infrared source notes and
 archival evidence. Initial combined diff was truncated and is NOT a full
 review. Infinite-star node note lines1-120 read; other new sources await
 separate reading. None changes the four Block9 input notes or axioms.
+
+Block10: no new external theorem imported. Exact half-line sine spectra,
+Bessel integrals and the separated-spectrum Sylvester formula are derived
+for the supplied word/source operators. The source mechanism's2012
+precedent remains credited. New main infinite-star node note was completed
+(lines120-228 after the earlier1-120). The combined read of Ward and full-star
+infrared notes truncated, so those full reads are still pending.

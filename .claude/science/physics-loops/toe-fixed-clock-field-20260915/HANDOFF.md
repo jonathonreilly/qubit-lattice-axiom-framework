@@ -507,3 +507,31 @@ dot-product failure is frozen; compensated summation fixes it without a
 tolerance change. Personal N1-N8 review rejects all-vacuum/axiom negatives.
 The2012 quantum-string primary paper was read fully and credited; the
 word idea and shift spectroscopy are not claimed as novel mathematics.
+
+## Block10: actual local sources and exact spectral selection
+
+The native word frame is explicitly epsilon_m for odd length and i for
+even length. A staggered three-edge Pauli-X source therefore maps to the
+uniform one-letter word. The corresponding physical translation is a
+geometric shift plus the specified odd-shift bit-complement/Z action.
+This source needs no nonlocal dressing.
+
+At diagonal momentum k=(theta,theta,theta), the number M of nonuniform
+word colors is conserved. A telescope moves one inserted uniform letter
+past M markers. Every swap energy edge is counted exactly once, giving
+H_M-E_pol>=4sin²(theta/2)/(2/(sqrt(3)|t|)+M/J). Every finite-word source
+therefore misses an interval above the full flat threshold for J>0 and
+nonzero theta. The interval shrinks with source support. Low-energy
+minimizers need mean M of order at least1/energy-excess.
+
+The symmetric local source has an EXACT semicircle spectral measure with
+hopping2sqrt(3)|t||cos(theta/2)|, independently of J. It has a single
+spectral atom at theta=pi, not an isolated lowest particle band. At J=0,
+an orthogonal one-letter source instead has a two-semicircle convolution
+that reaches the full floor. A Sylvester estimate controls source leakage
+near the diagonal line. No all-vacuum or all-particle no-go follows.
+
+Checks:5760 native moves; full363-dimensional color rotation; complete
+M0-3 forms with exact edge-recovery census; untruncated return moments
+through order8 and Bessel integral controls. All pass, with no independent
+review. Native operator functions are explicitly reused from Block9.

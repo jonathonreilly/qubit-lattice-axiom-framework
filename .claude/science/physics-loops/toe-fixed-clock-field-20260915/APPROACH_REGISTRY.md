@@ -116,3 +116,13 @@ and all-momentum essential threshold at nonzero ring coupling. Positive
 ring energy can be made small while coherently matching both complex
 endpoint vectors. Next distinguish the full spectrum from the cyclic
 spectral measure of an explicitly local phase-adapted pair source.
+
+## Block10 — finite-source selection and exact spectroscopy
+
+The full-fiber threshold is now separated from actual local spectroscopy.
+A conserved color count on the diagonal momentum line and an injective
+edge-form telescope give a uniform finite-M lower bound. The elementary
+local source has an exact semicircle and a special-momentum atom. This
+is a source selection rule in the polarized representation, not a
+particle impossibility theorem. Next inspect newly landed native source
+notes for a different bottleneck or a route to the selected background.

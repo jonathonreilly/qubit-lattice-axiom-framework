@@ -44,3 +44,9 @@ Block9 excludes an eigenvector only at the flat threshold of the specified
 polarized finite-excitation sector. The all-vacuum/all-particle conclusion
 FAILS. Periodic energies differ; source-selected spectral subspaces remain
 unclassified. See notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md.
+
+Block10: bounded-length local sources miss a support-dependent interval
+above E_pol on the specified nonzero diagonal momentum line, J>0.
+Generic momentum, theta0, J0 and other backgrounds are not excluded;
+the symmetric source even has a theta=pi atom. Broad no-particle/no-axiom
+conclusion FAIL. See notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md.

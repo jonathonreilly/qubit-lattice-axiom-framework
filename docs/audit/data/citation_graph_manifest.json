@@ -1,6 +1,6 @@
 {
- "edge_count": 12590,
- "node_count": 5085,
+ "edge_count": 12725,
+ "node_count": 5198,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2786,6 +2786,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "aa5ce5e499a9",
+   "out_degree": 2
+  },
   "compact_u1_quadratic_basin_source_free_maxwell_universality_bounded_theorem_note_2026-09-03": {
    "deps_hash": "ba3fd22e4d7e",
    "out_degree": 1
@@ -2857,6 +2861,10 @@
   "composition_discriminator_record_statistics_bounded_theorem_note_2026-09-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "composition_law_selection_graded_zeros_order_blind_rules_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "e47a470d9cfa",
+   "out_degree": 5
   },
   "conditional_law_depth_axis_depth_stable_event_bounded_theorem_note_2026-06-12": {
    "deps_hash": "0bfacef594e2",
@@ -3001,6 +3009,10 @@
   "covariant_law_weight_compatibility_cycle974_theorem_note_2026-08-10": {
    "deps_hash": "910bffe93fd1",
    "out_degree": 3
+  },
+  "covariant_nn_support_rules_gauss_law_as_glued_support_and_hole_statistics_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "39c02e83e488",
+   "out_degree": 5
   },
   "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17": {
    "deps_hash": "381c41107f12",
@@ -6266,6 +6278,18 @@
    "deps_hash": "3ed70a70a8c9",
    "out_degree": 2
   },
+  "gauge_wilson_compact_cube_all_coupling_gap_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "e00a49e2d6f2",
+   "out_degree": 2
+  },
+  "gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "2820c02a4284",
+   "out_degree": 1
+  },
+  "gauge_wilson_cube_slab_anisotropic_central_oscillator_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "ab0791cae14a",
+   "out_degree": 5
+  },
   "gauge_wilson_cube_slab_character_mixing_bounded_theorem_note_2026-09-07": {
    "deps_hash": "d9ed2578fc67",
    "out_degree": 5
@@ -6282,6 +6306,10 @@
    "deps_hash": "65ab6777ac43",
    "out_degree": 3
   },
+  "gauge_wilson_cube_slab_simultaneous_anisotropic_source_semigroup_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "890aacb549b0",
+   "out_degree": 6
+  },
   "gauge_wilson_cube_slab_two_source_cubic_cancellation_rate_bounded_theorem_note_2026-09-07": {
    "deps_hash": "690ffc3f16aa",
    "out_degree": 2
@@ -6289,6 +6317,18 @@
   "gauge_wilson_cube_slab_weak_coupling_window_bounded_theorem_note_2026-09-07": {
    "deps_hash": "6c1f1762b6be",
    "out_degree": 3
+  },
+  "gauge_wilson_full_cube_compact_interacting_hamiltonian_limit_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "2ccb2e4b384d",
+   "out_degree": 1
+  },
+  "gauge_wilson_full_cube_physical_transfer_geometry_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "186883b27cad",
+   "out_degree": 3
+  },
+  "gauge_wilson_full_cube_simultaneous_transfer_limit_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "5544d16547b6",
+   "out_degree": 2
   },
   "gauge_wilson_isotropy_boundary_hygiene_companion_note_2026-06-04": {
    "deps_hash": "02309aacd379",
@@ -12274,6 +12314,10 @@
    "deps_hash": "7c59543ab5ac",
    "out_degree": 1
   },
+  "local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "8ec463c38283",
+   "out_degree": 1
+  },
   "local_frame_orbit_flat_sector_exact_converse_holonomy_frame_unreachable_residual_bounded_theorem_note_2026-06-10": {
    "deps_hash": "902cbaf48a4c",
    "out_degree": 4
@@ -16810,6 +16854,10 @@
    "deps_hash": "75b86a0c6e5e",
    "out_degree": 2
   },
+  "spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "3615cee7c92c",
+   "out_degree": 3
+  },
   "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19": {
    "deps_hash": "0509803eed09",
    "out_degree": 4
@@ -16836,6 +16884,10 @@
   },
   "spider_symmetry_reduction_and_finite_comparisons_cycle937_bounded_theorem_note_2026-07-28": {
    "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "spin10_symmetric_atomic_gaps_mirror_boundary_projection_and_current_response_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "fb4900ceb7c9",
    "out_degree": 1
   },
   "spin_half_cartesian_plaquette_source_note_2026-09-07": {
@@ -19658,6 +19710,326 @@
    "deps_hash": "bc4adb3e6abd",
    "out_degree": 14
   },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.native-fixed.pr8019-original-staging-evidence-native-fixed-composition_scope_clarification": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.native-fixed.pr8019-original-staging-evidence-native-fixed-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.native-fixed.pr8019-original-staging-evidence-native-fixed-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.native-uniform.pr8019-original-staging-evidence-native-uniform-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.native-uniform.pr8019-original-staging-evidence-native-uniform-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.native-uniform.pr8019-original-staging-evidence-native-uniform-scalar_control_failure": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.native-uniform.pr8019-original-staging-evidence-native-uniform-scalar_supplement_preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.primary-fixed-review.pr8019-original-staging-evidence-primary-fixed-review-control_correction": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.primary-fixed-review.pr8019-original-staging-evidence-primary-fixed-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.primary-uniform-reviews.pr8019-original-staging-evidence-primary-uniform-reviews-native_sharper_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.primary-uniform-reviews.pr8019-original-staging-evidence-primary-uniform-reviews-root_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.root-independent98.pr8019-original-staging-evidence-root-independent98-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.root-independent98.pr8019-original-staging-evidence-root-independent98-provenance": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.evidence.root-independent98.pr8019-original-staging-evidence-root-independent98-root_native_sharper_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.original-staging.pr8019-original-staging-pack_index": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.pr8019-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.pr8019-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.pr8019-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.pr8019-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.pr8019-no_go_discipline_checklist": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.pr8019-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.pr8019-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.pr8019-root_final_port_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.pr8019-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8019-anisotropic-evidence.readme": {
+   "deps_hash": "d44e42b0f61b",
+   "out_degree": 24
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.orbital-original.pr8020-evidence-orbital-original-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.orbital-original.pr8020-evidence-orbital-original-failures": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.orbital-original.pr8020-evidence-orbital-original-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.pr8020-evidence-native_derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.pr8020-evidence-native_geometry_code_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.pr8020-evidence-native_geometry_import_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.pr8020-evidence-native_haar_metric_derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.pr8020-evidence-native_preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.pr8020-evidence-native_root_derivation_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.pr8020-evidence-orbital_native_cold_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.pr8020-evidence-orbital_root_metric_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.pr8020-evidence-orbital_supplement_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.root-independent.pr8020-evidence-root-independent-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.root-independent.pr8020-evidence-root-independent-provenance": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.evidence.root-independent.pr8020-evidence-root-independent-root_independent_reviews": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.pr8020-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.pr8020-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.pr8020-no_go_discipline_checklist": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.pr8020-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.pr8020-proof_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.pr8020-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.pr8020-root_final_port_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8020.pr8020-scratch_pack_index": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.evidence.pr8021-evidence-certificate_preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.evidence.pr8021-evidence-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.evidence.pr8021-evidence-derivation_first_freeze_095c3f80": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.evidence.pr8021-evidence-literature_provenance": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.evidence.pr8021-evidence-native_cold_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.evidence.pr8021-evidence-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.evidence.pr8021-evidence-root_cold_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.evidence.pr8021-evidence-root_independent_derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.pr8021-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.pr8021-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.pr8021-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.pr8021-proof_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.pr8021-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.pr8021-root_canonical_port_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.pr8021-root_final_port_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8021.pr8021-scratch_pack_index": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.evidence.compact-all-coupling-gap.pr8022-evidence-compact-all-coupling-gap-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.evidence.compact-all-coupling-gap.pr8022-evidence-compact-all-coupling-gap-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.evidence.compact-electric-gap.pr8022-evidence-compact-electric-gap-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.evidence.compact-electric-gap.pr8022-evidence-compact-electric-gap-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-n1_n8": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-orbital_gap_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-pack_index": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-reporting_repair": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-root_all_coupling_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-root_canonical_port_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.8022.pr8022-root_low_gap_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.readme": {
+   "deps_hash": "c174245ba2ae",
+   "out_degree": 54
+  },
   "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.handoff": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -19673,6 +20045,86 @@
   "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.trace_gate": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8109-compact-current-evidence.pr8109-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8109-compact-current-evidence.pr8109-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8109-compact-current-evidence.pr8109-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8109-compact-current-evidence.pr8109-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8109-compact-current-evidence.readme": {
+   "deps_hash": "ccad5cb4c12b",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8111-lattice-metric-evidence.pr8111-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8111-lattice-metric-evidence.pr8111-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8111-lattice-metric-evidence.pr8111-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8111-lattice-metric-evidence.pr8111-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8111-lattice-metric-evidence.readme": {
+   "deps_hash": "5abaedfcb438",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8112-compact-tensor-evidence.pr8112-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8112-compact-tensor-evidence.pr8112-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8112-compact-tensor-evidence.pr8112-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8112-compact-tensor-evidence.pr8112-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8112-compact-tensor-evidence.readme": {
+   "deps_hash": "286364ea60b8",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8113-spin10-mirror-evidence.pr8113-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8113-spin10-mirror-evidence.pr8113-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8113-spin10-mirror-evidence.pr8113-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8113-spin10-mirror-evidence.pr8113-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8113-spin10-mirror-evidence.readme": {
+   "deps_hash": "b9427b1d574b",
+   "out_degree": 5
   },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
    "deps_hash": "e3b0c44298fc",

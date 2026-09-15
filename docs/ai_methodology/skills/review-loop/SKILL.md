@@ -75,6 +75,10 @@ un-landed work. Never delete a head that still backs another open PR, nor `main`
 or a protected branch. Before deleting a landed branch, list open PRs that
 use it as their base, including drafts and PRs outside the current review unit.
 Freeze each dependent PR's number, head SHA, original base and original delta.
+Fetch newly discovered child heads before computing their deltas and verify
+metadata again after fetching; `references/OPERATIONS.md` provides the guarded
+`scripts/review_workspace.py fetch-head` command. Missing local objects never
+justify skipping a child or substituting a stale base.
 After verifying the parent's complete reviewed source is durable on `main`,
 retarget those dependent PR bases to `main` without changing their heads or
 closing them. This is base maintenance, not review or landing of their content.
@@ -295,9 +299,21 @@ substitutes for complete source/claim accounting or independent scientific reads
 
 Prefer one canonical unit record with immutable evidence references and
 generated handoff/status summaries over several manually repeated packets.
+For new units, use the versioned schema in `references/UNIT_RECEIPT.md` and
+`scripts/review_receipt.py` for shared preflight against actual repository APIs.
+Run the cheap source/publication/input checks before final execution, then the
+cache check against the final frozen evidence. Keep reviewer reports immutable;
+adapt an older valid record once with its original hashes and explicit mappings,
+never infer a scientific verdict or restamp an old execution. Mechanical success
+does not establish proof closure, reviewer authenticity or landing PASS.
 Keep proof explanations, original/current identities, finding dispositions,
 failures, commands and final reviewer bindings explicit in that record.
 Historical success, provisional findings and final confirmation remain distinct.
+For measured historical-payload duplication or size costs, use the exact archive
+mapping and externally pinned manifest checks in `references/OPERATIONS.md`.
+Keep all active proof/runtime/link targets accessible, preserve every original
+path/mode/disposition, and review changed consumers. Equal historical bytes may
+share storage; scientific conclusions still depend on their caller context.
 Schedule bounded contemporary units separately from legacy dependency recovery
 when useful; preserve every legacy obligation and reserved-source boundary.
 File counts do not establish a bounded closure. These scheduling choices do
@@ -389,7 +405,13 @@ review-only flags contradict the drain's land-end-to-end contract).
 
    **Worktree lifecycle (disk discipline — mandatory).** Concurrent reviews
    plus abandoned per-cycle confirm trees have repeatedly exhausted the host
-   disk. Guard on free space and remove each verified-clean worktree on exit:
+   disk. Guard on free space and remove each verified-clean disposable worktree
+   on exit. Alternatively, use the bounded exclusive sequential checkout pool
+   in `references/OPERATIONS.md`: its guarded release preserves the exact HEAD,
+   rejects tracked/untracked/ignored residue and unfinished Git operations, and
+   retains ownership on failure. Install its release handler instead of the
+   disposable removal trap; never concurrently share a slot or force cleanup.
+   The standard disposable lifecycle is:
 
    ```bash
    # POSIX df reports 1 KiB blocks here; check the filesystem that will hold WT.
@@ -433,7 +455,7 @@ review-only flags contradict the drain's land-end-to-end contract).
    Use a normal full worktree; the operational gain comes from prompt cleanup,
    not from counting the shared Git object store as part of every checkout.
 
-   The `trap` is not optional: it removes a verified-clean worktree on normal
+   For disposable worktrees the `trap` is not optional: it removes a verified-clean worktree on normal
    exit and catchable INT/TERM termination. The shared cleanup helper preserves
    dirty work, valuable ignored artifacts, unverifiable trees, and any HEAD not
    yet preserved on main. It prints the recovery path and never force-removes a

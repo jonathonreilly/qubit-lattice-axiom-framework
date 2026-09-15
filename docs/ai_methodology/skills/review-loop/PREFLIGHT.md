@@ -21,6 +21,13 @@ current-main candidate, not a separate full run per constituent or unit.
 Reuse an identical successful base/tree receipt only with the skill's complete
 input/tool/evidence provenance; record pending integration validation honestly.
 These checks confer no scientific verdict or independent reviewer PASS.
+Use `scripts/review_receipt.py` with `references/UNIT_RECEIPT.md` to share one
+versioned source/input/report record and check actual publication, citation,
+canonical-ID and helper/input discovery before final execution. Add its cache
+check after freezing final evidence; preserve earlier receipts after any change.
+For exact historical storage, exclusive sequential checkout reuse and freshly
+fetched child heads, load only the needed section of `references/OPERATIONS.md`.
+These helpers do not replace independent review or the combined landing gate.
 For authorized early repair handoffs, use the skill's overlap-repairs guidance:
 the original review continues on immutable source, and provisional findings do
 not certify the final unit. Check actual publication discovery, citations and

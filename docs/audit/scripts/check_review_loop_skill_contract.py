@@ -271,6 +271,18 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
 # that a real unit's dispositions/receipts are complete. Keep positive clauses
 # visible and anchored; adversarial methodology review still checks behavior.
 UNIT_PROSE_RULES: dict[str, tuple[str, ...]] = {
+    "versioned_mechanical_receipt": (
+        r"For new units, use the versioned schema in `references/UNIT_RECEIPT\.md` and\s+"
+        r"`scripts/review_receipt\.py` for shared preflight against actual repository APIs\.",
+        r"never infer a scientific verdict or restamp an old execution",
+        r"Mechanical success\s+does not establish proof closure, reviewer authenticity or landing PASS",
+    ),
+    "exact_history_and_exclusive_reuse": (
+        r"exact archive\s+mapping and externally pinned manifest checks in `references/OPERATIONS\.md`",
+        r"Keep all active proof/runtime/link targets accessible, preserve every original\s+path/mode/disposition",
+        r"guarded release preserves the exact HEAD,\s+rejects tracked/untracked/ignored residue and unfinished Git operations, and\s+retains ownership on failure",
+        r"never concurrently share a slot or force cleanup",
+    ),
     "coherent_unit_coverage": (
         r"^A review unit is one frozen, reviewable source argument\. It may be one PR or\s+"
         r"several cumulative/dependent PRs",

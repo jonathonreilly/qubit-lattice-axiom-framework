@@ -25,6 +25,11 @@ Mode selection:
 ## Required Behavior
 
 1. Read the skill file above before acting.
+   Use its `references/UNIT_RECEIPT.md` and `scripts/review_receipt.py` for the
+   shared mechanical handoff. Load `references/OPERATIONS.md` only for exact
+   historical storage, exclusive sequential checkout reuse or fresh child-head
+   fetching. Read helpers and references from the same reviewed skill revision;
+   their mechanical checks never create a scientific verdict or landing PASS.
 2. Select the mode per the Invocation section above; focused mode only
    when a `[target]` is named.
 3. Use one independent Astra-low (`gpt-6-astra`, `low`) reviewer per coherent

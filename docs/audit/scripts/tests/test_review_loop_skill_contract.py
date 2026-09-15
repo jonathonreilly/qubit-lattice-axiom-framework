@@ -65,6 +65,21 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
     def test_committed_contract_passes(self):
         self.assertEqual(self.missing(), [])
 
+    def test_receipt_cannot_claim_science_authority(self):
+        self.assert_skill_mutation_fails(
+            'never infer a scientific verdict or restamp an old execution',
+            'versioned_mechanical_receipt')
+
+    def test_history_reuse_requires_anchored_manifest(self):
+        self.assert_skill_mutation_fails(
+            'mapping and externally pinned manifest checks',
+            'exact_history_and_exclusive_reuse')
+
+    def test_pool_release_cannot_discard_residue(self):
+        self.assert_skill_mutation_fails(
+            'rejects tracked/untracked/ignored residue and unfinished Git operations',
+            'exact_history_and_exclusive_reuse')
+
     def test_dependent_base_preservation_is_required(self):
         for needle in (
             "including drafts",

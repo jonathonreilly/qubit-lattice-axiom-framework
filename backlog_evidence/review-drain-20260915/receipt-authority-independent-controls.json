@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "controls": [
+    "actual current minimal_axioms accepted among historical aliases",
+    "superseded singleton rejected: docs/MINIMAL_AXIOMS_2026-05-20.md",
+    "superseded singleton rejected: docs/MINIMAL_AXIOMS_2026-06-04.md",
+    "superseded singleton rejected: docs/MINIMAL_AXIOMS_2026-06-05.md",
+    "ordinary unregistered duplicate ID rejected"
+  ]
+}

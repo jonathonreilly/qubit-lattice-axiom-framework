@@ -1,0 +1,69 @@
+{
+  "units": [
+    {
+      "unit": "receipt-authority-fix",
+      "prs": [],
+      "commits": [
+        "97d34d9ad1a227425537f489fc5d75e14de51450"
+      ],
+      "final_head": "97d34d9ad1a227425537f489fc5d75e14de51450",
+      "source_paths": {
+        "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "240eaa1659578744c8a4d2a1d84836c3120c03fd63df544226a79b5dc8e36174",
+        "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187",
+        "docs/audit/scripts/tests/test_review_receipt.py": "8eb22d642edc677510fed90256861e36b83bd5d93227027ed658cfc6c14fd073"
+      },
+      "inputs": {
+        "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+        "docs/audit/scripts/check_axiom_premise_clean.py": "81acd4c404fe6e7659391669225a609ac15ea69ac667e9214031dcaa4b365844",
+        "docs/audit/scripts/audit_lint.py": "3b2481f82c05c4c03b9e346766dd75174bdcbd08bd08c84e7b676e364c600689",
+        "docs/audit/scripts/audit_science_fingerprint.py": "ab604aa6fad2a1a8697698efda93f758c769203c1dfc16d09b614c3198214250",
+        "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+        "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+        "docs/ai_methodology/skills/review-loop/SKILL.md": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+        "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+        "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+        "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+        "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md": "e0ff722602709ea0dc6cddf813e6289eb8eb1011841f5b444724ea199779a666",
+        "docs/MINIMAL_AXIOMS_2026-06-04.md": "02e787cb6a633e8660b46cc912ecfad32818a632be6f69143066de84c3dd4503",
+        "docs/MINIMAL_AXIOMS_2026-06-05.md": "409cb901d7541d7098396b5247336153cad2a58a6db96aecd90f8cde9b70b42b",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "240eaa1659578744c8a4d2a1d84836c3120c03fd63df544226a79b5dc8e36174",
+        "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187",
+        "docs/audit/scripts/tests/test_review_receipt.py": "8eb22d642edc677510fed90256861e36b83bd5d93227027ed658cfc6c14fd073"
+      },
+      "reports": [
+        "skill-efficiency-review.json",
+        "skill-efficiency-performance-review.json",
+        "receipt-authority-author-final-freeze.json",
+        "receipt-authority-independent-tests.log",
+        "receipt-authority-independent-singleton-test.log",
+        "receipt-authority-independent-controls.py",
+        "receipt-authority-independent-controls.json",
+        "receipt-authority-review.md",
+        "receipt-authority-review.json",
+        "receipt-authority-tests-final.log",
+        "8087-preexecution-preflight.json"
+      ],
+      "review_evidence_hashes": {
+        "skill-efficiency-review.json": "6f29a818eb881972f38fc168672efc25621043c7717d698e0749a4efe21313b4",
+        "skill-efficiency-performance-review.json": "f1b8cd28692dc6df40f8068066f696ca6f633802941376a4d38d0f27decf3801",
+        "receipt-authority-author-final-freeze.json": "362aab7e4df925706df6951504ac9cdf7ffe8dda7aecd34b8aa798a999e8442b",
+        "receipt-authority-independent-tests.log": "15469097ac053101cbc1ee8d41e050cf72aa96361c054c99885c982bf54ad75f",
+        "receipt-authority-independent-singleton-test.log": "ccea5b358223f29b32be535bfd16507589a450618aa330efb3332b51d939561d",
+        "receipt-authority-independent-controls.py": "007d5038dd1e3fce1ff0a0f49e38673fec311643abbd1be8867cf9af6d0d1a83",
+        "receipt-authority-independent-controls.json": "40e559702d82bc091e3e4052f2fb1f227c91d5c51337ba4d4a1ce889b545e6a1",
+        "receipt-authority-review.md": "651b7f99765a40f9210bd6c0233b659abd46723da06a12a53930ea4ec035cf1a",
+        "receipt-authority-review.json": "b03f138bcb62692aae9d3b9750d8bf6d0dfa3347974e91b9dd9e9c0f664dd456",
+        "receipt-authority-tests-final.log": "e1972206408892cb5a178d5c83a34510d9358f2159a535a8c11d184c35cb13eb",
+        "8087-preexecution-preflight.json": "cce79d599c2fe2935e66d16a1b649f067619fe4783437a398c6a73c74cd512d8"
+      },
+      "procedural_only": true,
+      "procedural_review": "receipt-authority-review.json",
+      "validated_source_tree": "2e6a9fc713c72cc9e2d6ab7f1f508ac91b7484cb"
+    }
+  ],
+  "science_notes": 0,
+  "source_count": 3,
+  "collection_closed": "Independently reviewed authority lookup correction is ready and departs when train25 frees the integration gate; science inputs and original failed preflight are preserved."
+}

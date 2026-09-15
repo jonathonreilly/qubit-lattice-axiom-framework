@@ -1,0 +1,82 @@
+{
+  "source_verdict": "PASS",
+  "reviewer_session": "/root/backlog_topology",
+  "scope": "Same-session affected review of registered current-parent identity disambiguation; no scientific claim review or acceptance-criteria change.",
+  "base": "b94b036ff753d3d2d4654b20a86765735ec81e51",
+  "HEAD": "b94b036ff753d3d2d4654b20a86765735ec81e51",
+  "source_paths": {
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "240eaa1659578744c8a4d2a1d84836c3120c03fd63df544226a79b5dc8e36174",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187",
+    "docs/audit/scripts/tests/test_review_receipt.py": "8eb22d642edc677510fed90256861e36b83bd5d93227027ed658cfc6c14fd073"
+  },
+  "inputs": {
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "docs/audit/scripts/check_axiom_premise_clean.py": "81acd4c404fe6e7659391669225a609ac15ea69ac667e9214031dcaa4b365844",
+    "docs/audit/scripts/audit_lint.py": "3b2481f82c05c4c03b9e346766dd75174bdcbd08bd08c84e7b676e364c600689",
+    "docs/audit/scripts/audit_science_fingerprint.py": "ab604aa6fad2a1a8697698efda93f758c769203c1dfc16d09b614c3198214250",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "docs/MINIMAL_AXIOMS_2026-05-20.md": "e0ff722602709ea0dc6cddf813e6289eb8eb1011841f5b444724ea199779a666",
+    "docs/MINIMAL_AXIOMS_2026-06-04.md": "02e787cb6a633e8660b46cc912ecfad32818a632be6f69143066de84c3dd4503",
+    "docs/MINIMAL_AXIOMS_2026-06-05.md": "409cb901d7541d7098396b5247336153cad2a58a6db96aecd90f8cde9b70b42b",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
+  "evidence": [
+    {
+      "path": "/private/tmp/review-drain-20260915/skill-efficiency-review.json",
+      "sha256": "6f29a818eb881972f38fc168672efc25621043c7717d698e0749a4efe21313b4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/skill-efficiency-performance-review.json",
+      "sha256": "f1b8cd28692dc6df40f8068066f696ca6f633802941376a4d38d0f27decf3801"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/receipt-authority-author-final-freeze.json",
+      "sha256": "362aab7e4df925706df6951504ac9cdf7ffe8dda7aecd34b8aa798a999e8442b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/receipt-authority-independent-tests.log",
+      "sha256": "15469097ac053101cbc1ee8d41e050cf72aa96361c054c99885c982bf54ad75f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/receipt-authority-independent-singleton-test.log",
+      "sha256": "ccea5b358223f29b32be535bfd16507589a450618aa330efb3332b51d939561d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/receipt-authority-independent-controls.py",
+      "sha256": "007d5038dd1e3fce1ff0a0f49e38673fec311643abbd1be8867cf9af6d0d1a83"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/receipt-authority-independent-controls.json",
+      "sha256": "40e559702d82bc091e3e4052f2fb1f227c91d5c51337ba4d4a1ce889b545e6a1"
+    }
+  ],
+  "findings": [],
+  "confirmed_behavior": [
+    "Actual graph canonicalization still determines each dependency ID. Only registry-selected current_path can use the registered-alias exception.",
+    "Exact path must occur in exactly one registered alias set; every discovered colliding path must belong to that same set.",
+    "Superseded targets reject before singleton/ordinary fallback; ordinary unregistered duplicate IDs reject.",
+    "Existing linked-source, registry, index/tree, input, reviewer-evidence and final race guards are unchanged.",
+    "No graph/ledger/audit authority data is rewritten; no runner or scientific result is executed/promoted by the fix."
+  ],
+  "validation": {
+    "independent_existing_plus_four_tests": "28 passed in15.244s",
+    "independent_new_singleton_test": "1 passed in0.599s",
+    "independent_actual_registry_controls": "Current minimal_axioms accepted; all three actual superseded aliases rejected as singleton candidates; ordinary nonregistered duplicate rejected.",
+    "author_final_suite": "29 passed15.892s, supporting evidence only"
+  },
+  "limitations": [
+    "No whole-repository8087 forward preflight performed in this reviewer lane; root performs exact updated-tool record check after source integration.",
+    "This procedure delta does not refresh or restamp previous scientific review reports. Source/input/math acceptance and combined integration gates remain required."
+  ],
+  "source_edits_by_reviewer": false,
+  "scientific_runs": 0,
+  "full_pipeline_runs": 0,
+  "source_tree": "2e6a9fc713c72cc9e2d6ab7f1f508ac91b7484cb",
+  "staged_worktree_source_equality": true
+}

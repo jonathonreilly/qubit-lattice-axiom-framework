@@ -1,0 +1,2380 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "e26e3a43cd2de36f0a8de1da525fda0b08d4b42f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/ARTIFACT.md",
+      "raw_bytes": 221,
+      "raw_sha256": "ba677a5519f91ad690d733539dddcdc91b63b8d79977ff88ae1980e628e67faa",
+      "stored_path": "_objects/ba677a5519f91ad690d733539dddcdc91b63b8d79977ff88ae1980e628e67faa.gz",
+      "stored_sha256": "e392876a0a4e91999e7873dcc4a15bf23169b186b594348f8c586847b991613c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e95ca6ff1dc75a248961cf8f4b363d8275387de6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/ASSUMPTIONS.md",
+      "raw_bytes": 327,
+      "raw_sha256": "c8231a92dad07af67fea1dc45d829a512ac1227953a93b3f8dfb77702703c6f6",
+      "stored_path": "_objects/c8231a92dad07af67fea1dc45d829a512ac1227953a93b3f8dfb77702703c6f6.gz",
+      "stored_sha256": "a3e548e9f2f0b2160bc541ba106af8137f9477511004ac380dc8496823919b78"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0c86446d23e1f555d8cdbb821494fd17d7f8d1d3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/CLAIM_STATUS.md",
+      "raw_bytes": 229,
+      "raw_sha256": "28f9e1af6a5ec1f8581980bc3206ae03c22cc3620cfc56ff98957f05d73e74df",
+      "stored_path": "_objects/28f9e1af6a5ec1f8581980bc3206ae03c22cc3620cfc56ff98957f05d73e74df.gz",
+      "stored_sha256": "8490eba4aea396e9601c05ecc8d773281c87992dbb88065dc071e90e6c69521a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "402553b81cddb5c8221b7723ea3972b1d4364cb8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/EVIDENCE_INVENTORY.json",
+      "raw_bytes": 11919,
+      "raw_sha256": "d9d6dd62971de840c02b54b1b62fc725c00660a9bf96b4e62006d7ec36a5394f",
+      "stored_path": "_objects/d9d6dd62971de840c02b54b1b62fc725c00660a9bf96b4e62006d7ec36a5394f.gz",
+      "stored_sha256": "f2b3c8e2ddd06f46e263e3747913a2ae6b7f39364e785dcd11c099192c79786a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eafcaa48f5057dee32e9ac662d05d9c9a08012f6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/GOAL.md",
+      "raw_bytes": 218,
+      "raw_sha256": "892ca5b86cb4c5a31ec06f5538cf909fed74327d01d559e66f0275a128b6fafb",
+      "stored_path": "_objects/892ca5b86cb4c5a31ec06f5538cf909fed74327d01d559e66f0275a128b6fafb.gz",
+      "stored_sha256": "5411d55ea6c19af0d7400ea9552af686bf86a4e88456add2fa5e0d8957ee6acc"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ab61aa8d315267de6a9c8a7e0fbbb9ac3ee36c85",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/HANDOFF.md",
+      "raw_bytes": 1448,
+      "raw_sha256": "f524a831eb23ba3de09c4aa872933a0465cacc2e2e8483d0a2189e86636bdc66",
+      "stored_path": "kept/pr8056-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "f524a831eb23ba3de09c4aa872933a0465cacc2e2e8483d0a2189e86636bdc66"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1d8a76dcdb17f942ae4ea65a350f350fd819bfae",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/LITERATURE.md",
+      "raw_bytes": 272,
+      "raw_sha256": "06e8859a30854bd73acb035aabfd5eefdd9622fa3a78c02ac22ed8284009fe7f",
+      "stored_path": "_objects/06e8859a30854bd73acb035aabfd5eefdd9622fa3a78c02ac22ed8284009fe7f.gz",
+      "stored_sha256": "1b9b0bb2f452b1331b45b4f2b706db0e327d8f668cab93e75315938d376571ba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1c37ab58a87002a17a0f85f2617de4c78e09af47",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/NO_GO.md",
+      "raw_bytes": 287,
+      "raw_sha256": "7b72365b86584c5226f74ca86abdd08469f17a5678f341c68e05d169ee2911cd",
+      "stored_path": "_objects/7b72365b86584c5226f74ca86abdd08469f17a5678f341c68e05d169ee2911cd.gz",
+      "stored_sha256": "37de6af7a071570c81d878d902f10c4927e99b26ffd039f83787904fadf33a79"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3ad47c7aa07fbad942a88a703541553cb055797a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/OPPORTUNITY.md",
+      "raw_bytes": 225,
+      "raw_sha256": "bd42f73c6b1b8ed670cf55c8eada683061bc8b669e7a83e2550aadc21ad0ffa0",
+      "stored_path": "_objects/bd42f73c6b1b8ed670cf55c8eada683061bc8b669e7a83e2550aadc21ad0ffa0.gz",
+      "stored_sha256": "aac60c5a58a3374693f08ae980c51c5cfa929df31b28f0b1a9ba51c4b89603ef"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a0c718959a216a1dddea1f042d9f3476135b8a81",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/DRAFT_SOURCE_HASHES.json",
+      "raw_bytes": 490,
+      "raw_sha256": "59a84d09f5a8340d0ccfba11dcbe9a965585d9f8447751bd2563b158e4c9823d",
+      "stored_path": "_objects/59a84d09f5a8340d0ccfba11dcbe9a965585d9f8447751bd2563b158e4c9823d.gz",
+      "stored_sha256": "c18ad5519314338ae244d66f7baa2be9e8ddcd5eda2b07151541cc24e61fa393"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2ae03076b5daff0d73fe7aea0928e762fb99e21f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/EXECUTION_PROTOCOL.md",
+      "raw_bytes": 3304,
+      "raw_sha256": "d54728e94dc540768408b3fac688808aba62fbf0ec26cbe29473821795c8749f",
+      "stored_path": "_objects/d54728e94dc540768408b3fac688808aba62fbf0ec26cbe29473821795c8749f.gz",
+      "stored_sha256": "30b095358803c2c2676b46b73dff9ba0be5f7e1d7a2f2de3cc567ea2d1480400"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8e3b029a74af2ff19e9234d1f72859407b5ec330",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/GRAPH_REVIEW.json",
+      "raw_bytes": 498,
+      "raw_sha256": "d8f5ce4e5212d373fd739175c7979eeba436be9d4b0d0775669408d23d3b97e7",
+      "stored_path": "_objects/d8f5ce4e5212d373fd739175c7979eeba436be9d4b0d0775669408d23d3b97e7.gz",
+      "stored_sha256": "b1e26595a0b49c4ee97b11a9d2f0ff3219cdd4235631791afcd23699788c228e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cf05bb6ec1679c8a0838efa572e4a87fb5486fbe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/HELPER_PROVENANCE.json",
+      "raw_bytes": 950,
+      "raw_sha256": "e66b7eed381afea0de483645fae875f2034cba733d5a29eff31a813d209608cf",
+      "stored_path": "_objects/e66b7eed381afea0de483645fae875f2034cba733d5a29eff31a813d209608cf.gz",
+      "stored_sha256": "cfca194692aca3cb612ea7de8d77b21c51017b5d8490d8c8ba2fbdc8cc036674"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8d43f9f2e28656b9bb268bd26873cc4d6966e90d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/INDEPENDENT_GRID_FINAL.json",
+      "raw_bytes": 7092,
+      "raw_sha256": "acd0d7dcd73705da6348245f13463e72efc3d25c8c64c4ba70e769d231e240e2",
+      "stored_path": "_objects/acd0d7dcd73705da6348245f13463e72efc3d25c8c64c4ba70e769d231e240e2.gz",
+      "stored_sha256": "8ae61c15505a936e01be2784a4a597a2cdc5f27a5c350558816e9e883ed343c4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "64417dcbfab32c7be007545e4d009e10cbf9b89e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/PROSPECTIVE_PORT.md",
+      "raw_bytes": 2337,
+      "raw_sha256": "93a93e71faf945ba074f0e5a44f292670e60f1aa1db6c9ec0f8d714f7fa01669",
+      "stored_path": "_objects/93a93e71faf945ba074f0e5a44f292670e60f1aa1db6c9ec0f8d714f7fa01669.gz",
+      "stored_sha256": "e430b056c4f99916953087c1c4e081e40ba040bdcad3ad29972bbb5c77cba8a4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9c165309923821f7d676d420f508e3210ac76b08",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/RAW_TRANSPORT_PENDING.json",
+      "raw_bytes": 9395,
+      "raw_sha256": "35a16cc93402532abf18a62d5dd613578323fd0bb6f9360c99a4c06fc6434f64",
+      "stored_path": "_objects/35a16cc93402532abf18a62d5dd613578323fd0bb6f9360c99a4c06fc6434f64.gz",
+      "stored_sha256": "07c14a3de0c75b4a2a597cc160f532a31e6736cb9769489b9f53d753b17fc316"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9c165309923821f7d676d420f508e3210ac76b08",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/MANIFEST_PENDING.json",
+      "raw_bytes": 9395,
+      "raw_sha256": "35a16cc93402532abf18a62d5dd613578323fd0bb6f9360c99a4c06fc6434f64",
+      "stored_path": "_objects/35a16cc93402532abf18a62d5dd613578323fd0bb6f9360c99a4c06fc6434f64.gz",
+      "stored_sha256": "07c14a3de0c75b4a2a597cc160f532a31e6736cb9769489b9f53d753b17fc316"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7c45855143553dc6a84454b8ea0acfcde4f36c2b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/ROOT_GRID_ACCEPTANCE.json",
+      "raw_bytes": 3559,
+      "raw_sha256": "0255f6edc4dc67e1ccb49ee724dedd1d37c6f0558b80ed1f26ec5cea01846df8",
+      "stored_path": "_objects/0255f6edc4dc67e1ccb49ee724dedd1d37c6f0558b80ed1f26ec5cea01846df8.gz",
+      "stored_sha256": "34e5518bca07bb4b48a2967b4f0744766fcf124f67e5ccc1d3ac3f47be00522c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "7c45855143553dc6a84454b8ea0acfcde4f36c2b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/accepted_numerics/ROOT_ACCEPTANCE.json",
+      "raw_bytes": 3559,
+      "raw_sha256": "0255f6edc4dc67e1ccb49ee724dedd1d37c6f0558b80ed1f26ec5cea01846df8",
+      "stored_path": "kept/pr8056-ROOT_ACCEPTANCE-f16bd00811729205.json",
+      "stored_sha256": "0255f6edc4dc67e1ccb49ee724dedd1d37c6f0558b80ed1f26ec5cea01846df8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "db48a9059d684b5721c1df74445a50bc5cafdfa3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/SOURCE_FREEZE.json",
+      "raw_bytes": 6694,
+      "raw_sha256": "cbb782ff7c27b457e63eaca4297500a112180a0957699c9cf6ff2f5feb6033a7",
+      "stored_path": "_objects/cbb782ff7c27b457e63eaca4297500a112180a0957699c9cf6ff2f5feb6033a7.gz",
+      "stored_sha256": "df44f2343296229f130ab0ccbbb047124240b5d3eca315bb16276dc3e8feabba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "422e8d12d63efdeed7ec9e52b09b09018c5d8128",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/native-final-port-driver-review/READ_HASHES.json",
+      "raw_bytes": 454,
+      "raw_sha256": "9c8391846c83fe0c4e516a15acadc3ffdbca560fa5878477a9d254c0aa5f113d",
+      "stored_path": "_objects/9c8391846c83fe0c4e516a15acadc3ffdbca560fa5878477a9d254c0aa5f113d.gz",
+      "stored_sha256": "c78d0fd4b0f975362f334cc10dd7d8698ba863ca653c95f692388e5662b96a04"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "57d7ffde7398f668f84bf52fa13ba524c4fd1edb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/native-final-port-driver-review/ROOT_DRIVER_REVIEW.md",
+      "raw_bytes": 1375,
+      "raw_sha256": "5344e42f11e6b57e05ea8c0732b0d4a60d0d958a3ed210cd3ad98e0fa7d8e91e",
+      "stored_path": "_objects/5344e42f11e6b57e05ea8c0732b0d4a60d0d958a3ed210cd3ad98e0fa7d8e91e.gz",
+      "stored_sha256": "bb80964ca9dcc721216149b00e35ffb6e4d447b4d59bfe5d9c3b912f9a141c3b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d81df61f49c34129bd1bb74e202633fc8842a951",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/native-uniform-stiffness-canonical-cold-review/CONSTANT_RECEIPT.json",
+      "raw_bytes": 1941,
+      "raw_sha256": "ef8a16cea9b0f13e5114700dd898715337821cd789876543534cef341ba0599b",
+      "stored_path": "_objects/ef8a16cea9b0f13e5114700dd898715337821cd789876543534cef341ba0599b.gz",
+      "stored_sha256": "5e21618e9314184c9ae6bcda086c44e42044312086270c4b7017b20b71efdce4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6ee5c896e98eadc6782708e6ad94124382d58aac",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/native-uniform-stiffness-canonical-cold-review/FINAL_CLOSURE_RECEIPT.json",
+      "raw_bytes": 4186,
+      "raw_sha256": "42cc3e0af4ad8424383c4ad8da72dcf7f90f2cff7ab756a71002842cd2c57e3d",
+      "stored_path": "_objects/42cc3e0af4ad8424383c4ad8da72dcf7f90f2cff7ab756a71002842cd2c57e3d.gz",
+      "stored_sha256": "00f588f5fbdf2ab4691444cd8ec631ac0525b90d89de5e5fd101ab3875fb8a72"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "019f274ca8b8172af1d419e0f012fe309cd36cf9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/native-uniform-stiffness-canonical-cold-review/INITIAL_READ_HASHES.json",
+      "raw_bytes": 542,
+      "raw_sha256": "66a3eb1ff846f7c6bfa3cc9409f8f3cbd6c186f33c68b9b225b838f017e5dada",
+      "stored_path": "_objects/66a3eb1ff846f7c6bfa3cc9409f8f3cbd6c186f33c68b9b225b838f017e5dada.gz",
+      "stored_sha256": "cd16fa951fbeba2509bbcd7f472b60a3af043e1c537b8f952676d0643ffce056"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3a2b791fab0afba6fe9de4c6ef6876dd89d5a90c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/native-uniform-stiffness-canonical-cold-review/INITIAL_REVIEW.md",
+      "raw_bytes": 2334,
+      "raw_sha256": "949375e79c47365d21d24d61d162b3ac7c490083ae4e41eac2f66be473326260",
+      "stored_path": "_objects/949375e79c47365d21d24d61d162b3ac7c490083ae4e41eac2f66be473326260.gz",
+      "stored_sha256": "58a44872d420a778f624cc59b83f585492912b99823b93a63708ebb7261d40d3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8e07b0cd11beac24f594115eb179547e935830fb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/native-uniform-stiffness-canonical-cold-review/REVIEW.md",
+      "raw_bytes": 3975,
+      "raw_sha256": "2626766e10c65f9eb3fce23670618219b15ace71cf9a139937335646de44596f",
+      "stored_path": "_objects/2626766e10c65f9eb3fce23670618219b15ace71cf9a139937335646de44596f.gz",
+      "stored_sha256": "6267e1e58da6ee8fea37211029b0d8e48e66fb1749dfc0dc1573ff96013778a9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "44c0d7cddda1c99ce2d86e89292baed3653f045c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/RESULT.json",
+      "raw_bytes": 1230,
+      "raw_sha256": "eef21f2580c7d8f24a9a3593ee38896a348b8ba4bc77bc09d52cac81d9791c63",
+      "stored_path": "_objects/eef21f2580c7d8f24a9a3593ee38896a348b8ba4bc77bc09d52cac81d9791c63.gz",
+      "stored_sha256": "300415767c72fd761301b7f78b30111b348a3b917849bf77f61def219c4b0706"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0b8356a5811bb8982ca8fb378fd8ad3e0167ccd4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/omit_radius.mutation.json",
+      "raw_bytes": 537,
+      "raw_sha256": "8b03f734d1150af860a6375c4910990906a77f91f19f3e9b5f110065cc0351f1",
+      "stored_path": "_objects/8b03f734d1150af860a6375c4910990906a77f91f19f3e9b5f110065cc0351f1.gz",
+      "stored_sha256": "c3f9808b671e30e2b04f32ac35d93b9cdfd0e588b933de9cf3296422ecaf3ad6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "886458199f7e10d0393d117472c6b150affe48f2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/omit_radius.py",
+      "raw_bytes": 2575,
+      "raw_sha256": "1111b810e6e26f7803057c3640565b7dd793db8f4e8cba38b94fd84104285d20",
+      "stored_path": "_objects/1111b810e6e26f7803057c3640565b7dd793db8f4e8cba38b94fd84104285d20.gz",
+      "stored_sha256": "813199d50f9e7c32b08f865066b49b9fceea59bed0487daddc4fcccbb5085cba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a89907f3c8d699c88670b2e4aa72b21163a7e01b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/omit_radius.stderr",
+      "raw_bytes": 1903,
+      "raw_sha256": "74b28de6a613f2759b2b15933a82df9a3baebb221a25e97ef5634d6f3f845cce",
+      "stored_path": "_objects/74b28de6a613f2759b2b15933a82df9a3baebb221a25e97ef5634d6f3f845cce.gz",
+      "stored_sha256": "8bffff8f20278de5f2cbbfffc3fda9bc7243325415edd745f027635e7aaf789c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/omit_radius.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/wrong_density.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/OUTER.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a41d6287a4acbe9e632341ba559e96af2bbcd959",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/strict_cli.stderr",
+      "raw_bytes": 182,
+      "raw_sha256": "b243130833df44f1edec4257edf53abcf12392f4b308a11acc4c2fb8be080d33",
+      "stored_path": "_objects/b243130833df44f1edec4257edf53abcf12392f4b308a11acc4c2fb8be080d33.gz",
+      "stored_sha256": "a8e813a85bb23148e67797f6966a1c94007a248e2ac9f26b8f1e4edc97608350"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5ba73f8ef3e93b9f619d01935efe3c502eb60819",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/wrong_density.mutation.json",
+      "raw_bytes": 496,
+      "raw_sha256": "dab97f223d41eeef8503ee1030b6add148956ff9b2f9e5da1652c78c88cf6f43",
+      "stored_path": "_objects/dab97f223d41eeef8503ee1030b6add148956ff9b2f9e5da1652c78c88cf6f43.gz",
+      "stored_sha256": "0d64f4c3b7ba9f439973a0e8d3f7e663c9d1d3c6f0e8a75bd67bd9ed78190857"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8c084110909155cbb1b4a9c1683113f61864e050",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/wrong_density.py",
+      "raw_bytes": 2588,
+      "raw_sha256": "a74075ccf571fe3663d78edb05045b2767db964031722282123948595234388b",
+      "stored_path": "_objects/a74075ccf571fe3663d78edb05045b2767db964031722282123948595234388b.gz",
+      "stored_sha256": "79561b30fd3a3068a5f5051698880e6bcd03491ed4632e97324153a85541d7f4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d13487bb4d11a66501b3bd9d0cfa51a9d99401d7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/negative_controls/wrong_density.stderr",
+      "raw_bytes": 1909,
+      "raw_sha256": "d300af6e0730e1514ad47f90e4fdd98947ddde0b7f31b5e8d1e73e21e7002aed",
+      "stored_path": "_objects/d300af6e0730e1514ad47f90e4fdd98947ddde0b7f31b5e8d1e73e21e7002aed.gz",
+      "stored_sha256": "ef5b3815f165c49f4baf5695720c106a5eb480f9351fada53c3a7dfe318abf15"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "36b0d20c7e003f3ebd3c235aaf6ca8f21ea6ee92",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/ACCEPTANCE.json",
+      "raw_bytes": 424,
+      "raw_sha256": "27e69930a857aba0a714e37fc91ed63d38387e78cdf7f62bf1de107a92f60f6e",
+      "stored_path": "_objects/27e69930a857aba0a714e37fc91ed63d38387e78cdf7f62bf1de107a92f60f6e.gz",
+      "stored_sha256": "8bc1f8b70e94fb826d605ce4598b1102c02f1351bfbe199b09956907368631ee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0b553321fca8f23c5d070f5c7f6240394c4b4f1e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/FREEZE.json",
+      "raw_bytes": 308,
+      "raw_sha256": "1f5e17d4cb12646ce1a4e8cfcfe19052bf2b43cfbf1d43bed5dfd684e29e31a2",
+      "stored_path": "_objects/1f5e17d4cb12646ce1a4e8cfcfe19052bf2b43cfbf1d43bed5dfd684e29e31a2.gz",
+      "stored_sha256": "8bfe72882e70ba2ff39ab2da433357535613ffe6f45acc5911f384ff2ce8e032"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "92e78e3c3e079801fe968db41f48e308160b3133",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/OUTER.json",
+      "raw_bytes": 322,
+      "raw_sha256": "8db0e1a5f1036c5a04d829162bf3d36010bee3d8c0a85e0dddab12a35bbc3f3f",
+      "stored_path": "_objects/8db0e1a5f1036c5a04d829162bf3d36010bee3d8c0a85e0dddab12a35bbc3f3f.gz",
+      "stored_sha256": "fc9aa1a023b0aa6b33204de1fa4dcc3f87f894c8d12c0786f2d353625ac3c29e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "741741989b29095b4fed7fb93707d44f13304fb7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/OUTER.stdout",
+      "raw_bytes": 19082,
+      "raw_sha256": "11c111fb148055f43edac8a10262c48161362caf96737b262325d12a89ed21b5",
+      "stored_path": "_objects/11c111fb148055f43edac8a10262c48161362caf96737b262325d12a89ed21b5.gz",
+      "stored_sha256": "ba00ab1f536cb72d0ceeecd20a9f138b335f6b48a1e366fb06428ec5e1560c79"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "01eab239938dde345eee56e4bf8577bece177ad4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/REMOTE_PREREGISTRATION.json",
+      "raw_bytes": 697,
+      "raw_sha256": "90163727792e1c5a6387860f989a7151982a39d025eb07e7c420eb9587ef387b",
+      "stored_path": "_objects/90163727792e1c5a6387860f989a7151982a39d025eb07e7c420eb9587ef387b.gz",
+      "stored_sha256": "c03d09251afbe7990c829ef62f7a3f2b11b9422f67db4eaef881f8264001e68e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "beb218afa53c8698cf3c34ee347e2e4a3a9dc038",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/REVIEW.md",
+      "raw_bytes": 1349,
+      "raw_sha256": "a3aa36fbd9d5dc924d66c0ca50e837f3727dbfc1cf227e1d37ef777b3dab11f6",
+      "stored_path": "_objects/a3aa36fbd9d5dc924d66c0ca50e837f3727dbfc1cf227e1d37ef777b3dab11f6.gz",
+      "stored_sha256": "dfbbcbce202ed1124806ae11193f4a7b9eb037cb56858006f71fd83c0b8c02cf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "25a8795efdeca989a714150fc86b95fd057decec",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/SHELL.stderr",
+      "raw_bytes": 756,
+      "raw_sha256": "ddd59c08f13a78ba0af766bff78b5f55624094572552c06c51c78b6a03863e92",
+      "stored_path": "_objects/ddd59c08f13a78ba0af766bff78b5f55624094572552c06c51c78b6a03863e92.gz",
+      "stored_sha256": "3ed8a9a768627ccd8ba824b26a204c92e230115bf7db4f05772309b2d260fefb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "34f3c1ad94e0a973e3fef1f3612730abcc969542",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/SHELL.stdout",
+      "raw_bytes": 304,
+      "raw_sha256": "7e9706690d6726d505a297390b7d293af2a2e075e14f7b1376dd0b9e4f589f3a",
+      "stored_path": "_objects/7e9706690d6726d505a297390b7d293af2a2e075e14f7b1376dd0b9e4f589f3a.gz",
+      "stored_sha256": "9891128a0f741c7ca39897336c4d3205e9634169cdf988f09bb2ea60584ee7c7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ac6803807543606e2eac81b81bdc3125b14d763b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PORT_RECORDS/root_execution/run_once.py",
+      "raw_bytes": 2782,
+      "raw_sha256": "d67912be071e94e31b881905989252bf81c09aae7a55c576323a521cc1d19cfa",
+      "stored_path": "_objects/d67912be071e94e31b881905989252bf81c09aae7a55c576323a521cc1d19cfa.gz",
+      "stored_sha256": "8f00ee0e26f50260e2e1d496e340c2db645beae48b75ebce340fd710d08277b0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3147b871b653db1ad1669ec916fd87e704ece0ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/PR_BACKLOG.md",
+      "raw_bytes": 165,
+      "raw_sha256": "8b527829a4768b8850c004298a2ea32289943627f9ab54a5366b55b23f63cf1f",
+      "stored_path": "_objects/8b527829a4768b8850c004298a2ea32289943627f9ab54a5366b55b23f63cf1f.gz",
+      "stored_sha256": "cff5527702ed5a678fa5c6db6ecfc24e6642af82ebebe9db62ed9e8aef84f329"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4ab8496faec23e810b209550ccc9ddc9fcd31179",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/ACCEPTED_ANALYSIS.json",
+      "raw_bytes": 14452,
+      "raw_sha256": "3c2f4cb0f6a23f6a0cb2d02495d3a61693b5cee1e966095eb0f077fcb42c1148",
+      "stored_path": "kept/pr8056-ACCEPTED_ANALYSIS-bb1eb67529b71878.json",
+      "stored_sha256": "3c2f4cb0f6a23f6a0cb2d02495d3a61693b5cee1e966095eb0f077fcb42c1148"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4ab8496faec23e810b209550ccc9ddc9fcd31179",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/accepted_numerics/ANALYSIS.json",
+      "raw_bytes": 14452,
+      "raw_sha256": "3c2f4cb0f6a23f6a0cb2d02495d3a61693b5cee1e966095eb0f077fcb42c1148",
+      "stored_path": "kept/pr8056-ANALYSIS-1be8bdc594b9ace5.json",
+      "stored_sha256": "3c2f4cb0f6a23f6a0cb2d02495d3a61693b5cee1e966095eb0f077fcb42c1148"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "1e1b5dc6b38dab7440c44f4dbc336375c3120e5d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/CUBE_INPUTS.json",
+      "raw_bytes": 229029,
+      "raw_sha256": "91e619e403cb48c28aeb2edb8548699a3a4ce94cd157f6298f623c297646fd71",
+      "stored_path": "kept/pr8056-CUBE_INPUTS-e349e7d083b342b6.json",
+      "stored_sha256": "91e619e403cb48c28aeb2edb8548699a3a4ce94cd157f6298f623c297646fd71"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "e1685dea644dd8951672ae7dc94e069fcf9b697b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/MANIFEST.json",
+      "raw_bytes": 9600,
+      "raw_sha256": "fd6ba465e9514a4f3445dc295756d08b1678155880eb2cdee510d1d385fb82c8",
+      "stored_path": "kept/pr8056-MANIFEST-9a57f0f91e41ccea.json",
+      "stored_sha256": "fd6ba465e9514a4f3445dc295756d08b1678155880eb2cdee510d1d385fb82c8"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "254de72b1023a9247fab760bc628a6cf4c1fe4d5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/TRIG_INPUTS.json",
+      "raw_bytes": 10697,
+      "raw_sha256": "5a86aeb933f692017a610aa4c4b5e55c5226acf908106d57e6cd951787034db7",
+      "stored_path": "kept/pr8056-TRIG_INPUTS-52f925d4cc781ecd.json",
+      "stored_sha256": "5a86aeb933f692017a610aa4c4b5e55c5226acf908106d57e6cd951787034db7"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "254de72b1023a9247fab760bc628a6cf4c1fe4d5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-rational-trig/INPUTS.json",
+      "raw_bytes": 10697,
+      "raw_sha256": "5a86aeb933f692017a610aa4c4b5e55c5226acf908106d57e6cd951787034db7",
+      "stored_path": "kept/pr8056-INPUTS-48adf9da61fe6c51.json",
+      "stored_sha256": "5a86aeb933f692017a610aa4c4b5e55c5226acf908106d57e6cd951787034db7"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ff731b55de14338de81615f31632b41507a52366",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job00.jsonl.gz",
+      "raw_bytes": 5711066,
+      "raw_sha256": "c4f3b620d3714e687fb2842db42320041710fa4f2a44718ce227a94567c8bc5b",
+      "stored_path": "kept/pr8056-job00.jsonl-ef603010a28476d5.gz",
+      "stored_sha256": "c4f3b620d3714e687fb2842db42320041710fa4f2a44718ce227a94567c8bc5b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c28b60e441e9179262ca6d3eb9b1e0ee380d071c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job01.jsonl.gz",
+      "raw_bytes": 5702900,
+      "raw_sha256": "d269a3060d7f5c2d575a63202348d664c0fd8930012fab943263ea9b2c5c6754",
+      "stored_path": "kept/pr8056-job01.jsonl-fe015586fbabe652.gz",
+      "stored_sha256": "d269a3060d7f5c2d575a63202348d664c0fd8930012fab943263ea9b2c5c6754"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "903547d18e7b33228312417354404920f6885fd2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job02.jsonl.gz",
+      "raw_bytes": 5705613,
+      "raw_sha256": "12c6e88944f8f11d2dd03b07ce017c36e8dcb051ca796c510777daae5740ef32",
+      "stored_path": "kept/pr8056-job02.jsonl-b1cb811d4078993e.gz",
+      "stored_sha256": "12c6e88944f8f11d2dd03b07ce017c36e8dcb051ca796c510777daae5740ef32"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4830d589b48543c0b9d53bfd782f1b0844f824ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job03.jsonl.gz",
+      "raw_bytes": 5704228,
+      "raw_sha256": "1813c02ebc192f3af29699427953a80a6bb9f061bb38607f3fb633f0ffcffc70",
+      "stored_path": "kept/pr8056-job03.jsonl-58733cb10849bf9e.gz",
+      "stored_sha256": "1813c02ebc192f3af29699427953a80a6bb9f061bb38607f3fb633f0ffcffc70"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "3354b5dfc9e4b8ab3382b0f1de9470ba63d98fab",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job04.jsonl.gz",
+      "raw_bytes": 4713471,
+      "raw_sha256": "131b5dd029ff571b9aba59446e220dab564a428aaf836541999369527374a1e2",
+      "stored_path": "kept/pr8056-job04.jsonl-9ad3fb85f9e8cd93.gz",
+      "stored_sha256": "131b5dd029ff571b9aba59446e220dab564a428aaf836541999369527374a1e2"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "2892a45aa7d9f59002e767bd355df04972bf8691",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job05.jsonl.gz",
+      "raw_bytes": 4682421,
+      "raw_sha256": "6cb6342c26aff3553bbbe146741dd9047faa4447c5fec39aa990f3c6b87b8296",
+      "stored_path": "kept/pr8056-job05.jsonl-9f8ffca264884671.gz",
+      "stored_sha256": "6cb6342c26aff3553bbbe146741dd9047faa4447c5fec39aa990f3c6b87b8296"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "8c29d736d5d75a0999ca56f00f9a32c63db11f1d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job06.jsonl.gz",
+      "raw_bytes": 4666242,
+      "raw_sha256": "6a4d9fb5cb1268382b38bf2dc9e087ef3e80c83f3e7dc594148e06a00485b91e",
+      "stored_path": "kept/pr8056-job06.jsonl-80a8ae7a102ae173.gz",
+      "stored_sha256": "6a4d9fb5cb1268382b38bf2dc9e087ef3e80c83f3e7dc594148e06a00485b91e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "9c1f44acc00b68f616b726589b0318b105c6497e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job07.jsonl.gz",
+      "raw_bytes": 4658612,
+      "raw_sha256": "71135bd5e3c475f456bf34fbf7e923d1896e4e83504db0e64a7e145f8b42526c",
+      "stored_path": "kept/pr8056-job07.jsonl-ce36cc0fbd17670a.gz",
+      "stored_sha256": "71135bd5e3c475f456bf34fbf7e923d1896e4e83504db0e64a7e145f8b42526c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "73e155115243c41ab304ee424a3ae4cd1439a592",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job08.jsonl.gz",
+      "raw_bytes": 4807909,
+      "raw_sha256": "989bd6333f6cdc4a9c956157baec37cc90c865904fb566c810cc8cab03e425c4",
+      "stored_path": "kept/pr8056-job08.jsonl-590ecacc668ffe65.gz",
+      "stored_sha256": "989bd6333f6cdc4a9c956157baec37cc90c865904fb566c810cc8cab03e425c4"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "378b55cc3ea0b7df71cda7354676399a77ae3256",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job09.jsonl.gz",
+      "raw_bytes": 4747820,
+      "raw_sha256": "31f556102c48ded86e1ec861f33a9e1c5d1c8d0951d15a798e2bc1aabd3d405b",
+      "stored_path": "kept/pr8056-job09.jsonl-9a686324def89c35.gz",
+      "stored_sha256": "31f556102c48ded86e1ec861f33a9e1c5d1c8d0951d15a798e2bc1aabd3d405b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "9bc46e91c7b47f809f546ffbfbceed82911db40d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job10.jsonl.gz",
+      "raw_bytes": 4750763,
+      "raw_sha256": "098bcb133f20da83c9288d19e7831a5c45715551843aa85887f83aa51fc786c0",
+      "stored_path": "kept/pr8056-job10.jsonl-cb8350c40fbd6143.gz",
+      "stored_sha256": "098bcb133f20da83c9288d19e7831a5c45715551843aa85887f83aa51fc786c0"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "1c48f315c5b973905fe10312afd5b0982dd5b08a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job11.jsonl.gz",
+      "raw_bytes": 4732490,
+      "raw_sha256": "9639216a7476856981ceaa981ee863874c1271a3a7b0d075adccfaece0a5e8fe",
+      "stored_path": "kept/pr8056-job11.jsonl-c56139f8786f79f0.gz",
+      "stored_sha256": "9639216a7476856981ceaa981ee863874c1271a3a7b0d075adccfaece0a5e8fe"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "644caca750b337b69a1236b9ad3630889e7832b4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job12.jsonl.gz",
+      "raw_bytes": 4533959,
+      "raw_sha256": "439fc534d74a0eed312c5d95e7ebd72c36c4f48080159e00b7eb0d06d3529171",
+      "stored_path": "kept/pr8056-job12.jsonl-a0e300a9a069ea6e.gz",
+      "stored_sha256": "439fc534d74a0eed312c5d95e7ebd72c36c4f48080159e00b7eb0d06d3529171"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "b394c012d7a82c8f9aabeca9465e102d7ded1662",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job13.jsonl.gz",
+      "raw_bytes": 4528378,
+      "raw_sha256": "7be3acdd8f2079c7a40b7d93f9e1bbd0738757b2e7088300a1f3ce88f4be9ca5",
+      "stored_path": "kept/pr8056-job13.jsonl-0225b58afe8cc106.gz",
+      "stored_sha256": "7be3acdd8f2079c7a40b7d93f9e1bbd0738757b2e7088300a1f3ce88f4be9ca5"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "92c66b54dabc68c6b855c6006ffc578d7600601c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job14.jsonl.gz",
+      "raw_bytes": 4511442,
+      "raw_sha256": "0ee010697b7574847c4e7d1a7231e625503ce67ad217bf98c459f83bbc1e0a86",
+      "stored_path": "kept/pr8056-job14.jsonl-b11fe7baa733b80e.gz",
+      "stored_sha256": "0ee010697b7574847c4e7d1a7231e625503ce67ad217bf98c459f83bbc1e0a86"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4f4ed0f030b82045b532f68664de2842c2745b1c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job15.jsonl.gz",
+      "raw_bytes": 4516626,
+      "raw_sha256": "6910d2e567f814cb0cea26856a828673bdaf3dc558a1ae1b68a98ebf1997ee3b",
+      "stored_path": "kept/pr8056-job15.jsonl-67846cdf4956d8fc.gz",
+      "stored_sha256": "6910d2e567f814cb0cea26856a828673bdaf3dc558a1ae1b68a98ebf1997ee3b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "7105f6bf4eb6e1b4abba1acdf5cbfc2cae31932d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job16.jsonl.gz",
+      "raw_bytes": 4731626,
+      "raw_sha256": "cc63f08e53100d48c3ed4856af4e0e647a7723ad1e32a53e70271e401956bb36",
+      "stored_path": "kept/pr8056-job16.jsonl-ea04502ec96733ff.gz",
+      "stored_sha256": "cc63f08e53100d48c3ed4856af4e0e647a7723ad1e32a53e70271e401956bb36"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "d7a43876bd730baf4641a65a695ef0158267bdee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job17.jsonl.gz",
+      "raw_bytes": 4644315,
+      "raw_sha256": "9dd1d151d6f5fc2519eb48ac9894c7a33518c64b4c9a03ac75ce72d032d8a453",
+      "stored_path": "kept/pr8056-job17.jsonl-c191b43286e430ad.gz",
+      "stored_sha256": "9dd1d151d6f5fc2519eb48ac9894c7a33518c64b4c9a03ac75ce72d032d8a453"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "b28b4079033c4c50c448da2539334c044c0dd416",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job18.jsonl.gz",
+      "raw_bytes": 4609004,
+      "raw_sha256": "e765a56611f92203fde2cd280dbf486631dbb36fb540a2898e6d9f1fde0c6ae3",
+      "stored_path": "kept/pr8056-job18.jsonl-0d804779daf100e3.gz",
+      "stored_sha256": "e765a56611f92203fde2cd280dbf486631dbb36fb540a2898e6d9f1fde0c6ae3"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "7f7304ff6487991925e5aab86bf88d4a0277be8d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job19.jsonl.gz",
+      "raw_bytes": 4597348,
+      "raw_sha256": "d13aeeef923d061cdb804b399003cb2c10abb65fdc914106c3172dcb8262dbec",
+      "stored_path": "kept/pr8056-job19.jsonl-67a3ca267dc9eac3.gz",
+      "stored_sha256": "d13aeeef923d061cdb804b399003cb2c10abb65fdc914106c3172dcb8262dbec"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "be9189792cdc4d31c42838be752c008202cd71f3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job20.jsonl.gz",
+      "raw_bytes": 3500023,
+      "raw_sha256": "cce0d7a1453c41188eb0b2903716d7e198cba4a28688ba2f798474521be8903c",
+      "stored_path": "kept/pr8056-job20.jsonl-4fdf8e638eff5b57.gz",
+      "stored_sha256": "cce0d7a1453c41188eb0b2903716d7e198cba4a28688ba2f798474521be8903c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "3f72d67037a09cd79b0bf331ec5ec297be71ff42",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job21.jsonl.gz",
+      "raw_bytes": 3482490,
+      "raw_sha256": "af9325f17bbd1139cd082dcaadf9ab3a395e28b6791f6e0c81b9c448a0c7b847",
+      "stored_path": "kept/pr8056-job21.jsonl-416dcb3c69855da9.gz",
+      "stored_sha256": "af9325f17bbd1139cd082dcaadf9ab3a395e28b6791f6e0c81b9c448a0c7b847"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "08b05674c8b81dcdbbef9e72124a655e7be6905b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job22.jsonl.gz",
+      "raw_bytes": 3482532,
+      "raw_sha256": "b4908d32b92265e508b4d7167d8c3103f6b679c0f8f63b67572cf4bdfb051aac",
+      "stored_path": "kept/pr8056-job22.jsonl-3d2523630476198d.gz",
+      "stored_sha256": "b4908d32b92265e508b4d7167d8c3103f6b679c0f8f63b67572cf4bdfb051aac"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ec825c14cea77effd19b345993f9a1c83472018a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/RAW_CANDIDATES/job23.jsonl.gz",
+      "raw_bytes": 3489636,
+      "raw_sha256": "278969d463fc7d1b3f3a78bffbc322946566c1a9aaff32421841f435f7cdbf78",
+      "stored_path": "kept/pr8056-job23.jsonl-a2a48c7bddc9546c.gz",
+      "stored_sha256": "278969d463fc7d1b3f3a78bffbc322946566c1a9aaff32421841f435f7cdbf78"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f9d32e366925482adf1acc50d19cc143535a5d56",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/REVIEW_HISTORY.md",
+      "raw_bytes": 1467,
+      "raw_sha256": "053b5989c7cf4f8ab996d091e6c2142609476b31e23196280c567f1c9cd73097",
+      "stored_path": "_objects/053b5989c7cf4f8ab996d091e6c2142609476b31e23196280c567f1c9cd73097.gz",
+      "stored_sha256": "ef483448c3925cfe3aa52f611f2466abf1153d24fa7401c8c224f678766a9801"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fd0be9916b4ed79d5a761d13be9bf87da2055ce1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/ROUTE.md",
+      "raw_bytes": 267,
+      "raw_sha256": "b431780315a86b95793513215d2a2e471ce015b9b6853e7c470abeea81226223",
+      "stored_path": "_objects/b431780315a86b95793513215d2a2e471ce015b9b6853e7c470abeea81226223.gz",
+      "stored_sha256": "df453384e74bb9ea81c6f2844c87607d1afa66be2ebfa3c616d141859e1122ee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "be1692574e389e004af1dc6705affd75ddb589d3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/SOURCE_PROVENANCE.json",
+      "raw_bytes": 1038,
+      "raw_sha256": "6933dbea3283e049cf064dff681e709b6fd826b7031e9952faf47861373aebc8",
+      "stored_path": "_objects/6933dbea3283e049cf064dff681e709b6fd826b7031e9952faf47861373aebc8.gz",
+      "stored_sha256": "f783616408329ba4d4f2c9228942c0eaec84c1ec3a63cd5091250de58c036b03"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fea7f6480fc00b8e79dd0bcbd8b412dda0975dee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/STATE.md",
+      "raw_bytes": 190,
+      "raw_sha256": "d5df1d457e69e6a51a6b724c6854a69f0d1ea98c38e223016389764d83578b01",
+      "stored_path": "_objects/d5df1d457e69e6a51a6b724c6854a69f0d1ea98c38e223016389764d83578b01.gz",
+      "stored_sha256": "3b2b1786cbe87b432b31e81ac5b5ad7f6f439cc28a175535808130ee39d8be73"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c5286a1a2b753d28f99f8804c07fc0fa45cc8610",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/STATE.yaml",
+      "raw_bytes": 1786,
+      "raw_sha256": "dbba338eed9d0b52063e0ec19f3ea5f5d142515dcbf6cbf220079410db344561",
+      "stored_path": "_objects/dbba338eed9d0b52063e0ec19f3ea5f5d142515dcbf6cbf220079410db344561.gz",
+      "stored_sha256": "870bc900773433604ae078ba4b3fdaf6a8b87ba75f164ffb211b7e8a72e56c83"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "18d4751634f332d99161996f1433bbc23d567d1f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/TRACE.md",
+      "raw_bytes": 276,
+      "raw_sha256": "d3d2d940a5156436a0941d28a2d67b2655d8e67756a5e3c59ddedbf1e12fd55b",
+      "stored_path": "_objects/d3d2d940a5156436a0941d28a2d67b2655d8e67756a5e3c59ddedbf1e12fd55b.gz",
+      "stored_sha256": "df461f99044e72cdab06066f14d67bd94f4167ad9d5e0b742d41d99694a9d060"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7cd179d026129a4ef56a89d75944a8fafb8a40eb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford-cold-review/READ_HASHES.json",
+      "raw_bytes": 1357,
+      "raw_sha256": "ee9805d25335e308924cf9ae3b384ab77b81d943742be9282d01ba8caf177a58",
+      "stored_path": "_objects/ee9805d25335e308924cf9ae3b384ab77b81d943742be9282d01ba8caf177a58.gz",
+      "stored_sha256": "92015fc5c870345702c15131661598addc9a60641ea4975d8ab6f4693e97294f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5af675d4f997a717c8f1cbc6bd993e0cc8bd7e81",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford-cold-review/RESULT.json",
+      "raw_bytes": 243,
+      "raw_sha256": "8b46a6bf45bf4b4330829ca982146f55a53c5b6fc66dcd35c0044c68153b318b",
+      "stored_path": "_objects/8b46a6bf45bf4b4330829ca982146f55a53c5b6fc66dcd35c0044c68153b318b.gz",
+      "stored_sha256": "3f688d1daa46a7d48bfd7793b2a87deb7c41fca52b7d3dc5930a01eac36d038d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "88242fb2cd95cc55150bfaf31f1433b89a6bdfbc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford-cold-review/REVIEW.md",
+      "raw_bytes": 4242,
+      "raw_sha256": "0ec9bd0be0a7928032005768584d5c33c7ca8225e492e7cddae4dee020b9eff3",
+      "stored_path": "_objects/0ec9bd0be0a7928032005768584d5c33c7ca8225e492e7cddae4dee020b9eff3.gz",
+      "stored_sha256": "7dff93d706db0492991ae84ed1ea8c147da1e6e328428ddd485297ed13a24591"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fd7aafdbba648db224d1be5860f7e8a480a1f92c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford-cold-review/check.py",
+      "raw_bytes": 2547,
+      "raw_sha256": "6e6b911636365052a170054b213a0857ff2b300e3320c1729a97d73a8a03d7e7",
+      "stored_path": "_objects/6e6b911636365052a170054b213a0857ff2b300e3320c1729a97d73a8a03d7e7.gz",
+      "stored_sha256": "57976f322f655cb88bc6d72b2d4705e6f1a3dc99dc030997a8c1256602ac18de"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a5806092e0b1d8f0e242febfaa9dcfd0be395014",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/DERIVATION.md",
+      "raw_bytes": 6759,
+      "raw_sha256": "aa2ac5c326a11eb0eeab87d5f00c5bc67b636e056fae202e52f0858ee73ce631",
+      "stored_path": "_objects/aa2ac5c326a11eb0eeab87d5f00c5bc67b636e056fae202e52f0858ee73ce631.gz",
+      "stored_sha256": "a34bea92fb6f2fddd3aa0e05ba2b5dbfc94ac421feb25b45023b90a6eb9e5622"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d30be61bd9406b70543d213b6592d034415899c3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/FREEZE.json",
+      "raw_bytes": 799,
+      "raw_sha256": "45f0ebf419b546ffe2ce3d2374741369587b75fdbd5c333cc172b4af1004c833",
+      "stored_path": "_objects/45f0ebf419b546ffe2ce3d2374741369587b75fdbd5c333cc172b4af1004c833.gz",
+      "stored_sha256": "78effb512eef6a8f65b599fb61dbe87d53811ecfa48e97c12931ef1a1918db8e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "39eae4416b8a19dad775b1af0f786d2b3228488e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/GENERIC_RESULT.json",
+      "raw_bytes": 153,
+      "raw_sha256": "73ac07b6c84aa931fad2a5569be95d17a7fdf0276d8bbb924d24d73d7f6fff66",
+      "stored_path": "_objects/73ac07b6c84aa931fad2a5569be95d17a7fdf0276d8bbb924d24d73d7f6fff66.gz",
+      "stored_sha256": "7397a145591df637b6c830da52f0940daa439b5c4eb258357c77072f97970209"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f914359e955852dc7142def0d3bad59bd43f4e89",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/PREREGISTRATION.md",
+      "raw_bytes": 874,
+      "raw_sha256": "af0d89575876837aa55da86ab6964930e9e471d3d159f252f99e30c2015b3f52",
+      "stored_path": "_objects/af0d89575876837aa55da86ab6964930e9e471d3d159f252f99e30c2015b3f52.gz",
+      "stored_sha256": "f64ea24fa819ada34b965aa90f925dd810851bb082b8dab15af9d68391ff6d8a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "287f1cd7b6287be5c5558897d13f6dd777827720",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/PRE_FREEZE.json",
+      "raw_bytes": 176,
+      "raw_sha256": "f0c495253b2e1f1675ed504d2f17711d825e880b1fa4e50213a19ecc21774a61",
+      "stored_path": "_objects/f0c495253b2e1f1675ed504d2f17711d825e880b1fa4e50213a19ecc21774a61.gz",
+      "stored_sha256": "2c70d2ed43906d8beea4501c70bc825b337fa1f4f0e089cf499e3c457b2f7642"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dff4de26e102cc9453070fe63a994cb79e0056fe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/RESULT.json",
+      "raw_bytes": 265,
+      "raw_sha256": "2df8b7628f4d84fdeb8ebe3752afd773e592b5d3fd1f3d51233618c246ef2a0c",
+      "stored_path": "_objects/2df8b7628f4d84fdeb8ebe3752afd773e592b5d3fd1f3d51233618c246ef2a0c.gz",
+      "stored_sha256": "d9f488f2ac58812b00dfa2cb2275eb5313d22fec6d1950a15998112270d5f6eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "19c21f0cab6ac3eea6a9f29510c58dd15c79ef4f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/SOURCE_BINDINGS.json",
+      "raw_bytes": 635,
+      "raw_sha256": "cb4d85570ed3e32746b005566645e9642ff36ae26deae20b87a08275f89a8f05",
+      "stored_path": "_objects/cb4d85570ed3e32746b005566645e9642ff36ae26deae20b87a08275f89a8f05.gz",
+      "stored_sha256": "1ed0aaaff063c12c790868c25aeb44ddec76f5f2fbd43c4d4294337ef36a6359"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e5f3e017c8afc7d2835eafc679fe036c7ab51a16",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/TIME.txt",
+      "raw_bytes": 753,
+      "raw_sha256": "5b7cc0dd60acd3e617116af6501a17569a62978541f717075366fbfba23e562d",
+      "stored_path": "_objects/5b7cc0dd60acd3e617116af6501a17569a62978541f717075366fbfba23e562d.gz",
+      "stored_sha256": "948e987f9d6ea8336c3ca133d1ce008b7833424b6611659bcf2d0b8231c6466f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6635747a7cf0374f76e18c80817937076ed9eb07",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/check.py",
+      "raw_bytes": 2767,
+      "raw_sha256": "083ff028a1ff88701a3d33ed0c2afd8a8a57201c5789d48149d388df389b7e30",
+      "stored_path": "_objects/083ff028a1ff88701a3d33ed0c2afd8a8a57201c5789d48149d388df389b7e30.gz",
+      "stored_sha256": "b08643479839f9af5449a0c8513110739c1db13931bc946c24c74f2ca89039f1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1455c2435872672ef71f0a65fa63903486d6b3b0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-bloch-clifford/generic_control.py",
+      "raw_bytes": 2241,
+      "raw_sha256": "b5a13ac6c664c1678ecf38bf5aeda599efa208536dc649a2467277e0174853bf",
+      "stored_path": "_objects/b5a13ac6c664c1678ecf38bf5aeda599efa208536dc649a2467277e0174853bf.gz",
+      "stored_sha256": "c7ab018c7b187e9188cff602e26df5a98e9ccf8be9e888ac58698c8603ba9f35"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c4c0dbbb99dcae35e50d7846f85ceb82a114bcf6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-chessboard-cold-review/READ_HASHES.json",
+      "raw_bytes": 316,
+      "raw_sha256": "043df16b51ae7308fc2127a5317b7197cc7463719eb1b8d39a707f19708f0992",
+      "stored_path": "_objects/043df16b51ae7308fc2127a5317b7197cc7463719eb1b8d39a707f19708f0992.gz",
+      "stored_sha256": "6f89d4b81a8cdbd7eb24d74a68da326d3be314e91bf96482fd9cd606d5ff1779"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a960738ff4c122922c78638f36a5715e1d9d953a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-chessboard-cold-review/RESULT.json",
+      "raw_bytes": 149,
+      "raw_sha256": "c9c7bced30d317ee9864a8f892fc2957dee2a66f62fdd641b603f4c59f33148b",
+      "stored_path": "_objects/c9c7bced30d317ee9864a8f892fc2957dee2a66f62fdd641b603f4c59f33148b.gz",
+      "stored_sha256": "402de999bdab957e0a5a38dd1309649691896a0eec5d4e7794101d793d22281b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "af58ad0ca8cc23e0449b277909b4104df0dd51e3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-chessboard-cold-review/REVIEW.md",
+      "raw_bytes": 3956,
+      "raw_sha256": "5973a4c6c32e222627dbdfc0b3955b6222c247bf568870f3f49d25eaee0132a3",
+      "stored_path": "_objects/5973a4c6c32e222627dbdfc0b3955b6222c247bf568870f3f49d25eaee0132a3.gz",
+      "stored_sha256": "c0982b793d7183cd49fbe9bf11bd20de50cfcea9bed69a57d9f6387752a28753"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8b7169e1a6d58d7b0f4041b48e7ac286440665b5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-chessboard-cold-review/check.py",
+      "raw_bytes": 1083,
+      "raw_sha256": "d92c897d893c3253308eedba039885038613da45044c93da41213f879c102406",
+      "stored_path": "_objects/d92c897d893c3253308eedba039885038613da45044c93da41213f879c102406.gz",
+      "stored_sha256": "39fb4b9e730f6208e84205552d3c00d9ee182e7b7ab4011f2fef1e0dda609a6b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "691b7bd73b2603612892f2330f4fad8a494fa061",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-chessboard-dissemination/DERIVATION.md",
+      "raw_bytes": 11807,
+      "raw_sha256": "44877b2cd9733af18357c34ba4793453afe3bbecfb70083b9ca90320eaa3c6e7",
+      "stored_path": "_objects/44877b2cd9733af18357c34ba4793453afe3bbecfb70083b9ca90320eaa3c6e7.gz",
+      "stored_sha256": "4e919bebfb6f9cfd90b6fa9e1a8fbd6dd087addd01bd03199ed280d9d86d2183"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4d234ea1ba34e6f52b8552992bd3ff58feadd0a7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-semiconvex-review/DERIVATION.md",
+      "raw_bytes": 4913,
+      "raw_sha256": "d6a8457b2d778de89ab262d3cd86c74db2d521bdb700356dd066006f8c695695",
+      "stored_path": "_objects/d6a8457b2d778de89ab262d3cd86c74db2d521bdb700356dd066006f8c695695.gz",
+      "stored_sha256": "022daf84e5f896636bfd0e1d086968edd01143f7fe7f7ae319ec76a27032b199"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d48fc38f40edc3b3459e17d40529b9837cae5687",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-semiconvex-review/FREEZE.json",
+      "raw_bytes": 184,
+      "raw_sha256": "ba0e0575d1715eb0bbe218c886728f21d65b594b1b07d5520a3889770a5c641c",
+      "stored_path": "_objects/ba0e0575d1715eb0bbe218c886728f21d65b594b1b07d5520a3889770a5c641c.gz",
+      "stored_sha256": "f3cbbd9f834dce5655aa0ad49e62811e3d7aa62a4c9ed61c692f4cebd107f2f7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9341f443a47f391b54001102559accc33f5dee7a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-semiconvex-review/ROOT_REVIEW.md",
+      "raw_bytes": 1982,
+      "raw_sha256": "ecdda9919a337f8eb35601be2db44eb92313916b3ac62410c071a7fe270868ce",
+      "stored_path": "_objects/ecdda9919a337f8eb35601be2db44eb92313916b3ac62410c071a7fe270868ce.gz",
+      "stored_sha256": "d9a50e6714d91dc23ce5f22584b9c7d39c5f62923c48b02f1a1ba3c048b3ec73"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b45a27c423bb48d965bc8448c9007d492b0179db",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-semiconvex-review/SOURCE_BINDINGS.json",
+      "raw_bytes": 476,
+      "raw_sha256": "1424b7eb2b34bfbb4b5021848ca1f451587e8cb15e5d15d01bc23cd87cddcfe5",
+      "stored_path": "_objects/1424b7eb2b34bfbb4b5021848ca1f451587e8cb15e5d15d01bc23cd87cddcfe5.gz",
+      "stored_sha256": "940f2309b8c9160f8fad8db988cd0ca2a1c355935add3a52d2b696a9c56fe1d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9c9ba1a6209bb6460d8aa2796b6135c064102985",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-spectral-cold-review/FINAL_DELTA.md",
+      "raw_bytes": 1052,
+      "raw_sha256": "a398c3c06c021fe176234622128f36c859a9e12e9efc5f1461bcd56be008f2e6",
+      "stored_path": "_objects/a398c3c06c021fe176234622128f36c859a9e12e9efc5f1461bcd56be008f2e6.gz",
+      "stored_sha256": "900d98b7b060519dec2129fa825f60a59b61dca32fadeebf3882a6b6405c54d5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f752c825890dff89c649f91ed2a7ad6d53e4a01e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-spectral-cold-review/FINAL_PREFLIGHT.json",
+      "raw_bytes": 107,
+      "raw_sha256": "e87854813aa3f38b36173099f5923df6d2d1fa515f7435297a4cf0045ae3481d",
+      "stored_path": "_objects/e87854813aa3f38b36173099f5923df6d2d1fa515f7435297a4cf0045ae3481d.gz",
+      "stored_sha256": "dc829a2ad00ea0948315341fd1950fa54c88b5adc5d620789e48a7b779113b45"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c47b7eb67dc86635ee197bd8f867e7abbc50ccb8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-spectral-cold-review/FINAL_READ_HASHES.json",
+      "raw_bytes": 803,
+      "raw_sha256": "9065776231405f8bc73fd9d543edbd24881be1db09d8c4d59530797a2c607a7d",
+      "stored_path": "_objects/9065776231405f8bc73fd9d543edbd24881be1db09d8c4d59530797a2c607a7d.gz",
+      "stored_sha256": "658a1e260c26226bc3dddcf8b01683d53c5603da6ce8f957c163d384dde22814"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "30152eb6faa4966032ec6bc9156a60f7c1301106",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-spectral-cold-review/READ_HASHES.json",
+      "raw_bytes": 2407,
+      "raw_sha256": "9ec8f5eaa2de1c1a197624f9806b7149eb130f1cfc15e801164f64599630066c",
+      "stored_path": "_objects/9ec8f5eaa2de1c1a197624f9806b7149eb130f1cfc15e801164f64599630066c.gz",
+      "stored_sha256": "2bd0934b557941d526456167adacb597d29b7f9e88d8ca1cff3bf2f294cd67cf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d5a91d6f0d85fc08a8210a8d9378a0f69e87aaeb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-spectral-cold-review/RESULT.json",
+      "raw_bytes": 296,
+      "raw_sha256": "b59e32a4f6ec2200a7cfdd8ac052580b8552ebf4dc5dd4709a111b3ea1710bbb",
+      "stored_path": "_objects/b59e32a4f6ec2200a7cfdd8ac052580b8552ebf4dc5dd4709a111b3ea1710bbb.gz",
+      "stored_sha256": "f662f679f74b2811d8034e4faccef047ccba41a46e3256786ab6aa162f27033c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "68948423485efb409e6557fd0672a13eaf9af1d2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-spectral-cold-review/REVIEW.md",
+      "raw_bytes": 4525,
+      "raw_sha256": "9833e3b3a9bf9bbb94f7390a4e001011c20702870da0e9cf779af60a01802bd2",
+      "stored_path": "_objects/9833e3b3a9bf9bbb94f7390a4e001011c20702870da0e9cf779af60a01802bd2.gz",
+      "stored_sha256": "b0bdca693cd7efbed157142e27901bc1335cfd8c05b307ffebd1e12bb72d009a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c92703882feb357776766f95316ea1625bfb05bf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-spectral-cold-review/TIME.txt",
+      "raw_bytes": 753,
+      "raw_sha256": "fcbbbe69931d9c26c91224105b58ad6dafaa60adaa272be9884dc874fa8147ab",
+      "stored_path": "_objects/fcbbbe69931d9c26c91224105b58ad6dafaa60adaa272be9884dc874fa8147ab.gz",
+      "stored_sha256": "440212f4490fe29cc3d3b9169e4eb2232d208b91d02add5e8a50226edf92201d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3f2c96062b0ceb9e1a6e3a220fe5117a4097753c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-spectral-cold-review/WATCHDOG_DELTA.md",
+      "raw_bytes": 691,
+      "raw_sha256": "e97b1595c892db1127d6fe599a17e4025691c008bf1121fcb533ae65867729b8",
+      "stored_path": "_objects/e97b1595c892db1127d6fe599a17e4025691c008bf1121fcb533ae65867729b8.gz",
+      "stored_sha256": "2f6ed1c5c544aa63f743da6ff75ab7c6f83978828340a96f100407b63bf59d6c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b3b8fbfe7dec96deb9c9383cb67bfd50ed4db09",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-3d-spectral-cold-review/controls.py",
+      "raw_bytes": 3657,
+      "raw_sha256": "3b6708d1d8a2ed78da46075eff731275c19bee0a7109f81c8543e76b59613cdb",
+      "stored_path": "_objects/3b6708d1d8a2ed78da46075eff731275c19bee0a7109f81c8543e76b59613cdb.gz",
+      "stored_sha256": "35d9253f9acc91ee8323bd424e42e2ba746294badc5ebb9b10f4c23f7cc6ba23"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1bda6f98176e08053f09a3b9e8c03dac16679eb7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-chessboard/DERIVATION.md",
+      "raw_bytes": 7909,
+      "raw_sha256": "918d3aae1487e825151478a9b2765fa48e82508a395c10a50fe7315760c7b561",
+      "stored_path": "_objects/918d3aae1487e825151478a9b2765fa48e82508a395c10a50fe7315760c7b561.gz",
+      "stored_sha256": "dfd3cd9343dc995961806d36687ee0a570da8437aec1df075e7483615567d2b5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e12fe4174da186a162616a4069f8e0cbe2f25204",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-cold-review/FREEZE.json",
+      "raw_bytes": 658,
+      "raw_sha256": "3d8fd18a244598d5152fac2efa4e08b20dae79643523b30f57ba844117bedf3e",
+      "stored_path": "_objects/3d8fd18a244598d5152fac2efa4e08b20dae79643523b30f57ba844117bedf3e.gz",
+      "stored_sha256": "4c68986c81c3bb1fe6150cadca9b91203c1acde6b0a9194ade9c7c68d4151aac"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a78f645fced3383e7e860cc4740a36c7ce467318",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-cold-review/INITIAL_CONTROL_FAILURE.txt",
+      "raw_bytes": 308,
+      "raw_sha256": "0290ed5ca818879013936b0222033993c19010f51415533491c8bd2a1b21da64",
+      "stored_path": "_objects/0290ed5ca818879013936b0222033993c19010f51415533491c8bd2a1b21da64.gz",
+      "stored_sha256": "0ebd6eada4dbd5dbcccaea8a3b3c4af3583a96878ea725670c5795a27880a59f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c5e09d56604551a2bdcf63bd029208c17cf7dccd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-cold-review/PREREGISTRATION.md",
+      "raw_bytes": 581,
+      "raw_sha256": "e391912ab366f3e382b3c7eea1690ce0f50c646210647a67a9a8b981f7da0270",
+      "stored_path": "_objects/e391912ab366f3e382b3c7eea1690ce0f50c646210647a67a9a8b981f7da0270.gz",
+      "stored_sha256": "24df1c8caf22777e2a16e114405e99360021d07d4e5f45b3d281da532c408ba6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3d77e1023bec86fdc333d09fbe8f61119850ef71",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-cold-review/READ_HASHES.json",
+      "raw_bytes": 968,
+      "raw_sha256": "0b1d09336ed810a88b9356e7dcdc59a9387ea415d7c9e009884b122e7ac53e9e",
+      "stored_path": "_objects/0b1d09336ed810a88b9356e7dcdc59a9387ea415d7c9e009884b122e7ac53e9e.gz",
+      "stored_sha256": "9faa65e66625151a4a35749974e1d9dbef4cf89ba3e2d7d0555b9d2e3d58b50b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9d06145b61bc5c3006a3437de39683a1866c269e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-cold-review/REVIEW.md",
+      "raw_bytes": 7360,
+      "raw_sha256": "494d5d5316f89efa83230bd32f4d7af07f92740a5063d5d15229a0869cee299e",
+      "stored_path": "_objects/494d5d5316f89efa83230bd32f4d7af07f92740a5063d5d15229a0869cee299e.gz",
+      "stored_sha256": "0d87f988f9d70a2e32a5f350511cc48ecfacc6275aa5f60a2ede55730ed83e21"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d37122ae94df57263946145eae94b36ebbf07995",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-cold-review/SIGN_CONTROL_BEFORE_TRACE_CLOSURE.py",
+      "raw_bytes": 2032,
+      "raw_sha256": "27c1f64fa6b5459c7ff928ef431ae5bef8b004bcbdec6b9d0938f14973c88e87",
+      "stored_path": "_objects/27c1f64fa6b5459c7ff928ef431ae5bef8b004bcbdec6b9d0938f14973c88e87.gz",
+      "stored_sha256": "d1aaaf5cffbf0fe84a313a3190ad650c43b48acc326512134ee38abae6d6d687"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "00b3b9e01bc73abcdb861a06741b3e8e2f601087",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-cold-review/SIGN_RESULT.json",
+      "raw_bytes": 269,
+      "raw_sha256": "d883b1f9e214dbe6dc999403465e603a8cb9594656960702aa2b77c8b23a8921",
+      "stored_path": "_objects/d883b1f9e214dbe6dc999403465e603a8cb9594656960702aa2b77c8b23a8921.gz",
+      "stored_sha256": "281d34a2e9e24860eee1571d5d651813cddc83d42c2210a6eef782aee3f6f1dd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b011ed8b96c4353343fbc3dd848c4886c8bad3fc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-cold-review/sign_control.py",
+      "raw_bytes": 2274,
+      "raw_sha256": "567a3143ecb65871444860c5a4f291a4a296202664c7d4c64a84dc84bcc7f306",
+      "stored_path": "_objects/567a3143ecb65871444860c5a4f291a4a296202664c7d4c64a84dc84bcc7f306.gz",
+      "stored_sha256": "828add8eee5ce46899f6d4f359d558d4455ef6e7dfe6532a0bce13adbed24b99"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "32a9103a93878ed7f8cdbf4dd3fba0eabf54f21a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-flux-stiffness/DERIVATION.md",
+      "raw_bytes": 7270,
+      "raw_sha256": "b8c272d9f4c70152451d73a4cd645401574b3878175683938d3815ada61bcd29",
+      "stored_path": "_objects/b8c272d9f4c70152451d73a4cd645401574b3878175683938d3815ada61bcd29.gz",
+      "stored_sha256": "9421b7e0bc7b3dbebd53bc1fdf417918a36aae6da26772339b3b62780c8eb003"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b5f3a36998e5e540108702d4ce9078754f05e8f2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-rp-controls/BEFORE_DATA_LIMIT_FIX.py",
+      "raw_bytes": 3385,
+      "raw_sha256": "d4f112f9c9df6a95b049b225b68970a13b442c9ea69de170fa3930dbce0e97f8",
+      "stored_path": "_objects/d4f112f9c9df6a95b049b225b68970a13b442c9ea69de170fa3930dbce0e97f8.gz",
+      "stored_sha256": "8bc59147840ce66ee4d661ad64246299c9b2048b39b5363f9858be0d98a80802"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9f8566f8f560c062e7738dedf2f82f31cba4acb3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-rp-controls/BEFORE_PLATFORM_LIMIT_FIX.py",
+      "raw_bytes": 3383,
+      "raw_sha256": "1ab47f6916be5ab732be5c56c5d726fd19c7b5f80b78e8e609ced985cbf6c765",
+      "stored_path": "_objects/1ab47f6916be5ab732be5c56c5d726fd19c7b5f80b78e8e609ced985cbf6c765.gz",
+      "stored_sha256": "40fa750bc9f55590dcdbae77f0e8a609456715a53fe3ce8566e8eded1f8e4f1a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8b6e41f1855cf20439a0676150994f79c8a42252",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-rp-controls/DATA_LIMIT_FAILURE.txt",
+      "raw_bytes": 1045,
+      "raw_sha256": "194444b1de408ff5b26cd536100c6a271fa329309f44d7cac9e9d9f82885dd33",
+      "stored_path": "_objects/194444b1de408ff5b26cd536100c6a271fa329309f44d7cac9e9d9f82885dd33.gz",
+      "stored_sha256": "2074b48c4508b212f1bb879d16593a042ee3b62ed1975254f23fd2eb354764f8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7c18eda67a6b6015dbd04d6a847a2d5b34820aad",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-rp-controls/PREREGISTRATION.md",
+      "raw_bytes": 868,
+      "raw_sha256": "807d26717de555815ef1a6ed3e22a3184b1d3567c0462d05c8a8c262a6aab335",
+      "stored_path": "_objects/807d26717de555815ef1a6ed3e22a3184b1d3567c0462d05c8a8c262a6aab335.gz",
+      "stored_sha256": "cd8888da6c1504e523495a001d0d53e3ae35a190266fb86a74697e6a87ae35f3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e684fb6068f0a39f5530fbd76b23446c4693bffc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-rp-controls/REPORT.md",
+      "raw_bytes": 1911,
+      "raw_sha256": "d04383dabb23a11786ed0a4b79ae37f7afece5b5b3b5203b4187b58bae094b8b",
+      "stored_path": "_objects/d04383dabb23a11786ed0a4b79ae37f7afece5b5b3b5203b4187b58bae094b8b.gz",
+      "stored_sha256": "e0db4b2f0d7a004059d77a5da6be9d82dae13e7a1280ad629b3bfbd12eaea78b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a5c42fd960d61a38ca1684f291e0e354c3734891",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-rp-controls/RESULT.json",
+      "raw_bytes": 402,
+      "raw_sha256": "8c3eff6024ca7a7979615f2dc0812e08cca131ad0c57f2479cb6d3104fc5b43f",
+      "stored_path": "_objects/8c3eff6024ca7a7979615f2dc0812e08cca131ad0c57f2479cb6d3104fc5b43f.gz",
+      "stored_sha256": "24a571728313d844e14c295f3a72965c920f602b828340f494fb2d57f7ae4ccc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "77061ee3ea21ad2e689da8afe3a3bd4d18d58786",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-rp-controls/check.py",
+      "raw_bytes": 3418,
+      "raw_sha256": "4c1571d5bf38c6d13872ca2bd82c9980b7940676f58d5486c2ba8de0bf1e3fa2",
+      "stored_path": "_objects/4c1571d5bf38c6d13872ca2bd82c9980b7940676f58d5486c2ba8de0bf1e3fa2.gz",
+      "stored_sha256": "dbd21cbb11bb7ac55af9cc3985554cd0a01b19739c65e68bd4a003e14f088d63"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1c3a422e07570ef293f4e8462bcea74f28857c09",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-rp-controls/stdout.txt",
+      "raw_bytes": 370,
+      "raw_sha256": "26995ffd0a74ed9e9eea95bd71ae436559fe830d52e8e0be9ab3cf708bc04e80",
+      "stored_path": "_objects/26995ffd0a74ed9e9eea95bd71ae436559fe830d52e8e0be9ab3cf708bc04e80.gz",
+      "stored_sha256": "8edb24ca1d7a20608048b06252ca0166059ab1010cf017b55fdccc31a5b3684d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a9fe478a89843e9871b5659f3fa106081e51f73d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-finite-temperature-rp-controls/time.txt",
+      "raw_bytes": 777,
+      "raw_sha256": "f5d60ceaa2b04f4d0c42a5c1e28cdfef1f7972233abe4fe45e88ec1484fee7d3",
+      "stored_path": "_objects/f5d60ceaa2b04f4d0c42a5c1e28cdfef1f7972233abe4fe45e88ec1484fee7d3.gz",
+      "stored_sha256": "280c36bd8053341f82c9a93a451b901ce3a5c161de9094acb831621ed4817895"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "404caa55309c402e2530c733a7afc2a2dfb9b336",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-arithmetic-certificate/CONTROL_FAILURE.md",
+      "raw_bytes": 294,
+      "raw_sha256": "3542a9c657b0e0125e4ef3a85078e45da7f85cb1bf280f1bd6798e2dc406d52c",
+      "stored_path": "_objects/3542a9c657b0e0125e4ef3a85078e45da7f85cb1bf280f1bd6798e2dc406d52c.gz",
+      "stored_sha256": "93d33bb139119b3fcf12f386bf40aa0a92794da90e8eeb2ca8f649ec7daa473b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "40d8e627924f73dde48a8f3afca31f71cb91f792",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-arithmetic-certificate/CORRECTED_PRE_FREEZE.json",
+      "raw_bytes": 456,
+      "raw_sha256": "644eee434d14d75ce2d88c9f1999c10fa39e83a87cef181aae23d8112857a52f",
+      "stored_path": "_objects/644eee434d14d75ce2d88c9f1999c10fa39e83a87cef181aae23d8112857a52f.gz",
+      "stored_sha256": "4d873550c118a0394864f7d0f447ae68f314e4a295bb3fa87bcface59ec3e893"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4d2cc898404b2c3723110399e22ea6eecb98b0e0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-arithmetic-certificate/DERIVATION.md",
+      "raw_bytes": 7535,
+      "raw_sha256": "6fd23bb6e509d1d38d105cd05cbe9c9d5f25359a101db49f49db0e2bdbfc0a97",
+      "stored_path": "kept/pr8056-DERIVATION-56a9efd9c26e932a.md",
+      "stored_sha256": "6fd23bb6e509d1d38d105cd05cbe9c9d5f25359a101db49f49db0e2bdbfc0a97"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "838fcd1572e132a751ce019c70d94e44025d82c8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-arithmetic-certificate/FINAL_HASHES.json",
+      "raw_bytes": 640,
+      "raw_sha256": "9164e3e7ed87317b520e5acb3dcf778ac6455e7c06d10045df055f1779439d03",
+      "stored_path": "_objects/9164e3e7ed87317b520e5acb3dcf778ac6455e7c06d10045df055f1779439d03.gz",
+      "stored_sha256": "6e1f3e534f80df83f349567f29b184c8422b98c9c2d84e2a1510a64cfcb25549"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fdc519c5e250c5d78a4f6bf8c138d43aaa7ddfb8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-arithmetic-certificate/PRE_FREEZE.json",
+      "raw_bytes": 172,
+      "raw_sha256": "53d2872ef007e2350dd453cdcb89987a3455da927d2c74778a2aa71e46f68cd4",
+      "stored_path": "_objects/53d2872ef007e2350dd453cdcb89987a3455da927d2c74778a2aa71e46f68cd4.gz",
+      "stored_sha256": "e2e483b7c88e23d2cb34cbbbfd3048496e07b180a83f4a72ba46ca3709f1e072"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ce0ecdb9d6af210b643deaace906a33d473bc670",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-arithmetic-certificate/RESULT.json",
+      "raw_bytes": 114,
+      "raw_sha256": "85bc1a66b3dc80fe752b68776a3a92b0d20358220d7a63b4a2d7cc60d28aff50",
+      "stored_path": "_objects/85bc1a66b3dc80fe752b68776a3a92b0d20358220d7a63b4a2d7cc60d28aff50.gz",
+      "stored_sha256": "c12e08699146dbd2d1d7565cf443a68472c15819f42279bd43eadf80aebaa852"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a43a774199d50d30e1ec2ee9ebbd834761d87f8f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-arithmetic-certificate/check.py",
+      "raw_bytes": 1704,
+      "raw_sha256": "6b7c8637788d5d93c147ebb55a24eec2df3eaa1c7098dc60ec8ea41833850726",
+      "stored_path": "_objects/6b7c8637788d5d93c147ebb55a24eec2df3eaa1c7098dc60ec8ea41833850726.gz",
+      "stored_sha256": "3a5db856039c5df0b2c8a721270280acbcd62ee5b5f56ade9e735d5fd0ab0c0a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "16e1cfc77aca56e08b9ee227b03b1270ad168212",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-arithmetic-certificate/check_BEFORE_TRANSPOSE_FIX.py",
+      "raw_bytes": 1703,
+      "raw_sha256": "387af6d7f4843a45f6cc633a0386ed62c737c70a94cf902ebed6169061abbb04",
+      "stored_path": "_objects/387af6d7f4843a45f6cc633a0386ed62c737c70a94cf902ebed6169061abbb04.gz",
+      "stored_sha256": "5b2822131a2486c60b3a799828c677e16f9fafc9175f2f7a2eef65199819d55a"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "651587fb659be300691b0f30c1e0c89617feb261",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-rational-trig/DERIVATION.md",
+      "raw_bytes": 1789,
+      "raw_sha256": "41c6cbb1fb92cbe5c81445a73c03d2ab6f59297769dae03bb4fb3b95ef7ccea9",
+      "stored_path": "kept/pr8056-DERIVATION-d6dd768171696f18.md",
+      "stored_sha256": "41c6cbb1fb92cbe5c81445a73c03d2ab6f59297769dae03bb4fb3b95ef7ccea9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0acfbb7c3d8648d6e63b87bf22e7dd2e4ab2fe8e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-rational-trig/FREEZE.json",
+      "raw_bytes": 411,
+      "raw_sha256": "31ecd687cde5cb664de33f86a4429e59c2992b5ded934cbd47c92b32f2f08deb",
+      "stored_path": "_objects/31ecd687cde5cb664de33f86a4429e59c2992b5ded934cbd47c92b32f2f08deb.gz",
+      "stored_sha256": "40ee3b03d79c6d7eb8deca4eda09393a4a3f6958069d1a8cf9eda3a0c0c5ccd1"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "81709b660244e41d80243b52dbcd6bc4637061d0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-rational-trig/make_inputs.py",
+      "raw_bytes": 2015,
+      "raw_sha256": "0f2c03c0b65d1c684b63024de87a22d4da709e67cf53ef54a69a1050221c3401",
+      "stored_path": "kept/pr8056-make_inputs-4eb3be87e14dbfb6.py",
+      "stored_sha256": "0f2c03c0b65d1c684b63024de87a22d4da709e67cf53ef54a69a1050221c3401"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c4b613aefc517f8c888835abbc04aa268ee6aa8e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-spectral-semiconvex-quadrature/DERIVATION.md",
+      "raw_bytes": 4437,
+      "raw_sha256": "71f73aed45e7edcd33307494eb98d1fa8feebbe8b2fa1d5979d3c51a3678d26a",
+      "stored_path": "_objects/71f73aed45e7edcd33307494eb98d1fa8feebbe8b2fa1d5979d3c51a3678d26a.gz",
+      "stored_sha256": "06c5018cf7ab432e8769df385943efd6ad62b014f3aecc4e7df4089d6f7eab0e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "61efd374890a538f66c093d0f2d66dadbbc9e419",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-uniform-flux-explicit-constants/DERIVATION.md",
+      "raw_bytes": 1286,
+      "raw_sha256": "569e14c1cfb4653111212059ab79e9fb1024eb9c517a0008633738f102631ca7",
+      "stored_path": "_objects/569e14c1cfb4653111212059ab79e9fb1024eb9c517a0008633738f102631ca7.gz",
+      "stored_sha256": "66629151d4d5347d7ef13e7e6c9958685e05c49c4a4f2b486bf0b3509c252b10"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bf32f5e63d37131b8343f3428aa627dc22ac88da",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-uniform-flux-explicit-constants/RESULT.json",
+      "raw_bytes": 933,
+      "raw_sha256": "efb9883e8f89259c10fa4a669e3093387a49cbf3c768695658e8e2ce706655eb",
+      "stored_path": "_objects/efb9883e8f89259c10fa4a669e3093387a49cbf3c768695658e8e2ce706655eb.gz",
+      "stored_sha256": "161655180446b2f0119130e01c4c99bb40ed2f6f5d50ed024f9495c00403cd10"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3493957763adc309f6a78a8e6fb7d6932ca0b130",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/evidence/native-uniform-flux-explicit-constants/check.py",
+      "raw_bytes": 973,
+      "raw_sha256": "488d024ed1869559dc9c42242da8a89ca1223784e6ab8e3b856e97c0ca0f6dab",
+      "stored_path": "_objects/488d024ed1869559dc9c42242da8a89ca1223784e6ab8e3b856e97c0ca0f6dab.gz",
+      "stored_sha256": "8eedb0936ef6918816c14aedea842313ae0b186585ad05c330fc63be75afbfeb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "38116690e0d062e3aaeafb06f680033434ba0b6b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/ASSUMPTIONS.md",
+      "raw_bytes": 318,
+      "raw_sha256": "37ec23d0007117325c108fcbfe671864b79a1bb16ed189ab223053bcce7aa7a9",
+      "stored_path": "_objects/37ec23d0007117325c108fcbfe671864b79a1bb16ed189ab223053bcce7aa7a9.gz",
+      "stored_sha256": "1b016f5b765c86f9c8d35ac418c4fbf24c794f2be26a8b0e5647fe75ae1cbd45"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e24ab016ba6367b123f0e56fa74585f0c4820e62",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/CLAIM_STATUS.md",
+      "raw_bytes": 178,
+      "raw_sha256": "ab1822a9dd04094163578dbf9db731948c2676512016a0740f48e65342eaa50e",
+      "stored_path": "_objects/ab1822a9dd04094163578dbf9db731948c2676512016a0740f48e65342eaa50e.gz",
+      "stored_sha256": "7a6599ca5d9c52e7252023057f3d6ac1e2d9f6873871ced07ad8c318b1c51cbf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ec57518a1d8ca0d3f8364808cbcf3cd8a7ff7d15",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/GOAL.md",
+      "raw_bytes": 208,
+      "raw_sha256": "be179bf2e3270070044edc75a170292fd15ad29f0a19b9f7965eb2b510adae03",
+      "stored_path": "_objects/be179bf2e3270070044edc75a170292fd15ad29f0a19b9f7965eb2b510adae03.gz",
+      "stored_sha256": "5f39033c6e6d42849669ec0c75725606cd7579eeeecd7dd4b48820fc723b3390"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f358a1380dbfb133cf6332ce984591cd6a2f082a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/HANDOFF.md",
+      "raw_bytes": 292,
+      "raw_sha256": "5529d999b4332a29de2310e44b349f2b8db29d2207d1fd1440e3a34be4a7d896",
+      "stored_path": "_objects/5529d999b4332a29de2310e44b349f2b8db29d2207d1fd1440e3a34be4a7d896.gz",
+      "stored_sha256": "5c4c7ea32eed850829e9f7ce55d75da793af24760c18e9ac372e158a44a1b10d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "25153ca78915d3b472525729c47d16499a2497bb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "raw_bytes": 47298,
+      "raw_sha256": "c5d5def78aff87298c31f542347d7a4d01d4113a4195b3575c44205e59512a21",
+      "stored_path": "_objects/c5d5def78aff87298c31f542347d7a4d01d4113a4195b3575c44205e59512a21.gz",
+      "stored_sha256": "26120dc13a45ab715e8f293fafb0d4a7008ae0e343a209aaa96276bca6004dd3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6a1f18adf267f4a8a5abf8f6708f524538886281",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/REVIEW_HISTORY.md",
+      "raw_bytes": 228,
+      "raw_sha256": "63b4d6be6abe9dbf9f16ee5958e4c5fb783bca6d84a5408ff78d40cbf31cac71",
+      "stored_path": "_objects/63b4d6be6abe9dbf9f16ee5958e4c5fb783bca6d84a5408ff78d40cbf31cac71.gz",
+      "stored_sha256": "370293d4da2bbea7d22b4193f744e5dc8d8827c7444bfc259b7bd056d15e0474"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "181d759d82493ee2770774442404cd1e56bd2e1c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/SOURCE_PROVENANCE.json",
+      "raw_bytes": 899,
+      "raw_sha256": "db3daf4a8ace1715e125f354393e838d865c1d86f31d72eaa4f0c365597b89ec",
+      "stored_path": "_objects/db3daf4a8ace1715e125f354393e838d865c1d86f31d72eaa4f0c365597b89ec.gz",
+      "stored_sha256": "362a8b0615c1e7da810cb6b6fd0e30403ebc0b1d5014fc14e04eb7c2045e067d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2ad1935f131f1474e9a52eeaafdef19992b30b2c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/STATE.md",
+      "raw_bytes": 196,
+      "raw_sha256": "70f956edf1e4f1d77457f0a111970f8facbee5807cd27cc88bbcd187d184a3fb",
+      "stored_path": "_objects/70f956edf1e4f1d77457f0a111970f8facbee5807cd27cc88bbcd187d184a3fb.gz",
+      "stored_sha256": "57ec8e37bbc98c0b069bc1172820d9a8d9c5134c34f634f531a62bef4222cd4d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "07f93b5912e667d585f249e8542904f48f4114f8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/STATE.yaml",
+      "raw_bytes": 1378,
+      "raw_sha256": "f981fcb54cff08de5de2aa30a8461d0af59046ef2e1b01fb2d89d362cd735655",
+      "stored_path": "_objects/f981fcb54cff08de5de2aa30a8461d0af59046ef2e1b01fb2d89d362cd735655.gz",
+      "stored_sha256": "83e98af9679f2cca0d33bee827d6fbb3bafa00a10d3a6bc15c9d1c769aacf2bc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "380b5000072746c1177b5aad25e35d549061de58",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/history/BEFORE_NUMERICAL_ACCEPTANCE/TRACE.md",
+      "raw_bytes": 225,
+      "raw_sha256": "261c7f9394f6f39065166c2e5100efe495b23217f7d0e033598b7d832b789782",
+      "stored_path": "_objects/261c7f9394f6f39065166c2e5100efe495b23217f7d0e033598b7d832b789782.gz",
+      "stored_sha256": "62da25db170ae4266ff4ee975c101c16c92c08ff65ae235ef2201ea7d8c0e776"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-uniform-cubic-flux-defect-stiffness-20260908/",
+  "revision": "38f9a320fad026016303d79987d790c4b5bb7a51",
+  "schema_version": 1,
+  "unique_blobs": {
+    "00b3b9e01bc73abcdb861a06741b3e8e2f601087": {
+      "occurrences": 1,
+      "raw_bytes": 269,
+      "raw_sha256": "d883b1f9e214dbe6dc999403465e603a8cb9594656960702aa2b77c8b23a8921"
+    },
+    "019f274ca8b8172af1d419e0f012fe309cd36cf9": {
+      "occurrences": 1,
+      "raw_bytes": 542,
+      "raw_sha256": "66a3eb1ff846f7c6bfa3cc9409f8f3cbd6c186f33c68b9b225b838f017e5dada"
+    },
+    "01eab239938dde345eee56e4bf8577bece177ad4": {
+      "occurrences": 1,
+      "raw_bytes": 697,
+      "raw_sha256": "90163727792e1c5a6387860f989a7151982a39d025eb07e7c420eb9587ef387b"
+    },
+    "07f93b5912e667d585f249e8542904f48f4114f8": {
+      "occurrences": 1,
+      "raw_bytes": 1378,
+      "raw_sha256": "f981fcb54cff08de5de2aa30a8461d0af59046ef2e1b01fb2d89d362cd735655"
+    },
+    "08b05674c8b81dcdbbef9e72124a655e7be6905b": {
+      "occurrences": 1,
+      "raw_bytes": 3482532,
+      "raw_sha256": "b4908d32b92265e508b4d7167d8c3103f6b679c0f8f63b67572cf4bdfb051aac"
+    },
+    "0acfbb7c3d8648d6e63b87bf22e7dd2e4ab2fe8e": {
+      "occurrences": 1,
+      "raw_bytes": 411,
+      "raw_sha256": "31ecd687cde5cb664de33f86a4429e59c2992b5ded934cbd47c92b32f2f08deb"
+    },
+    "0b553321fca8f23c5d070f5c7f6240394c4b4f1e": {
+      "occurrences": 1,
+      "raw_bytes": 308,
+      "raw_sha256": "1f5e17d4cb12646ce1a4e8cfcfe19052bf2b43cfbf1d43bed5dfd684e29e31a2"
+    },
+    "0b8356a5811bb8982ca8fb378fd8ad3e0167ccd4": {
+      "occurrences": 1,
+      "raw_bytes": 537,
+      "raw_sha256": "8b03f734d1150af860a6375c4910990906a77f91f19f3e9b5f110065cc0351f1"
+    },
+    "0c86446d23e1f555d8cdbb821494fd17d7f8d1d3": {
+      "occurrences": 1,
+      "raw_bytes": 229,
+      "raw_sha256": "28f9e1af6a5ec1f8581980bc3206ae03c22cc3620cfc56ff98957f05d73e74df"
+    },
+    "1455c2435872672ef71f0a65fa63903486d6b3b0": {
+      "occurrences": 1,
+      "raw_bytes": 2241,
+      "raw_sha256": "b5a13ac6c664c1678ecf38bf5aeda599efa208536dc649a2467277e0174853bf"
+    },
+    "16e1cfc77aca56e08b9ee227b03b1270ad168212": {
+      "occurrences": 1,
+      "raw_bytes": 1703,
+      "raw_sha256": "387af6d7f4843a45f6cc633a0386ed62c737c70a94cf902ebed6169061abbb04"
+    },
+    "181d759d82493ee2770774442404cd1e56bd2e1c": {
+      "occurrences": 1,
+      "raw_bytes": 899,
+      "raw_sha256": "db3daf4a8ace1715e125f354393e838d865c1d86f31d72eaa4f0c365597b89ec"
+    },
+    "18d4751634f332d99161996f1433bbc23d567d1f": {
+      "occurrences": 1,
+      "raw_bytes": 276,
+      "raw_sha256": "d3d2d940a5156436a0941d28a2d67b2655d8e67756a5e3c59ddedbf1e12fd55b"
+    },
+    "19c21f0cab6ac3eea6a9f29510c58dd15c79ef4f": {
+      "occurrences": 1,
+      "raw_bytes": 635,
+      "raw_sha256": "cb4d85570ed3e32746b005566645e9642ff36ae26deae20b87a08275f89a8f05"
+    },
+    "1bda6f98176e08053f09a3b9e8c03dac16679eb7": {
+      "occurrences": 1,
+      "raw_bytes": 7909,
+      "raw_sha256": "918d3aae1487e825151478a9b2765fa48e82508a395c10a50fe7315760c7b561"
+    },
+    "1c37ab58a87002a17a0f85f2617de4c78e09af47": {
+      "occurrences": 1,
+      "raw_bytes": 287,
+      "raw_sha256": "7b72365b86584c5226f74ca86abdd08469f17a5678f341c68e05d169ee2911cd"
+    },
+    "1c3a422e07570ef293f4e8462bcea74f28857c09": {
+      "occurrences": 1,
+      "raw_bytes": 370,
+      "raw_sha256": "26995ffd0a74ed9e9eea95bd71ae436559fe830d52e8e0be9ab3cf708bc04e80"
+    },
+    "1c48f315c5b973905fe10312afd5b0982dd5b08a": {
+      "occurrences": 1,
+      "raw_bytes": 4732490,
+      "raw_sha256": "9639216a7476856981ceaa981ee863874c1271a3a7b0d075adccfaece0a5e8fe"
+    },
+    "1d8a76dcdb17f942ae4ea65a350f350fd819bfae": {
+      "occurrences": 1,
+      "raw_bytes": 272,
+      "raw_sha256": "06e8859a30854bd73acb035aabfd5eefdd9622fa3a78c02ac22ed8284009fe7f"
+    },
+    "1e1b5dc6b38dab7440c44f4dbc336375c3120e5d": {
+      "occurrences": 1,
+      "raw_bytes": 229029,
+      "raw_sha256": "91e619e403cb48c28aeb2edb8548699a3a4ce94cd157f6298f623c297646fd71"
+    },
+    "25153ca78915d3b472525729c47d16499a2497bb": {
+      "occurrences": 1,
+      "raw_bytes": 47298,
+      "raw_sha256": "c5d5def78aff87298c31f542347d7a4d01d4113a4195b3575c44205e59512a21"
+    },
+    "254de72b1023a9247fab760bc628a6cf4c1fe4d5": {
+      "occurrences": 2,
+      "raw_bytes": 10697,
+      "raw_sha256": "5a86aeb933f692017a610aa4c4b5e55c5226acf908106d57e6cd951787034db7"
+    },
+    "25a8795efdeca989a714150fc86b95fd057decec": {
+      "occurrences": 1,
+      "raw_bytes": 756,
+      "raw_sha256": "ddd59c08f13a78ba0af766bff78b5f55624094572552c06c51c78b6a03863e92"
+    },
+    "287f1cd7b6287be5c5558897d13f6dd777827720": {
+      "occurrences": 1,
+      "raw_bytes": 176,
+      "raw_sha256": "f0c495253b2e1f1675ed504d2f17711d825e880b1fa4e50213a19ecc21774a61"
+    },
+    "2892a45aa7d9f59002e767bd355df04972bf8691": {
+      "occurrences": 1,
+      "raw_bytes": 4682421,
+      "raw_sha256": "6cb6342c26aff3553bbbe146741dd9047faa4447c5fec39aa990f3c6b87b8296"
+    },
+    "2ad1935f131f1474e9a52eeaafdef19992b30b2c": {
+      "occurrences": 1,
+      "raw_bytes": 196,
+      "raw_sha256": "70f956edf1e4f1d77457f0a111970f8facbee5807cd27cc88bbcd187d184a3fb"
+    },
+    "2ae03076b5daff0d73fe7aea0928e762fb99e21f": {
+      "occurrences": 1,
+      "raw_bytes": 3304,
+      "raw_sha256": "d54728e94dc540768408b3fac688808aba62fbf0ec26cbe29473821795c8749f"
+    },
+    "30152eb6faa4966032ec6bc9156a60f7c1301106": {
+      "occurrences": 1,
+      "raw_bytes": 2407,
+      "raw_sha256": "9ec8f5eaa2de1c1a197624f9806b7149eb130f1cfc15e801164f64599630066c"
+    },
+    "3147b871b653db1ad1669ec916fd87e704ece0ee": {
+      "occurrences": 1,
+      "raw_bytes": 165,
+      "raw_sha256": "8b527829a4768b8850c004298a2ea32289943627f9ab54a5366b55b23f63cf1f"
+    },
+    "32a9103a93878ed7f8cdbf4dd3fba0eabf54f21a": {
+      "occurrences": 1,
+      "raw_bytes": 7270,
+      "raw_sha256": "b8c272d9f4c70152451d73a4cd645401574b3878175683938d3815ada61bcd29"
+    },
+    "3354b5dfc9e4b8ab3382b0f1de9470ba63d98fab": {
+      "occurrences": 1,
+      "raw_bytes": 4713471,
+      "raw_sha256": "131b5dd029ff571b9aba59446e220dab564a428aaf836541999369527374a1e2"
+    },
+    "3493957763adc309f6a78a8e6fb7d6932ca0b130": {
+      "occurrences": 1,
+      "raw_bytes": 973,
+      "raw_sha256": "488d024ed1869559dc9c42242da8a89ca1223784e6ab8e3b856e97c0ca0f6dab"
+    },
+    "34f3c1ad94e0a973e3fef1f3612730abcc969542": {
+      "occurrences": 1,
+      "raw_bytes": 304,
+      "raw_sha256": "7e9706690d6726d505a297390b7d293af2a2e075e14f7b1376dd0b9e4f589f3a"
+    },
+    "36b0d20c7e003f3ebd3c235aaf6ca8f21ea6ee92": {
+      "occurrences": 1,
+      "raw_bytes": 424,
+      "raw_sha256": "27e69930a857aba0a714e37fc91ed63d38387e78cdf7f62bf1de107a92f60f6e"
+    },
+    "378b55cc3ea0b7df71cda7354676399a77ae3256": {
+      "occurrences": 1,
+      "raw_bytes": 4747820,
+      "raw_sha256": "31f556102c48ded86e1ec861f33a9e1c5d1c8d0951d15a798e2bc1aabd3d405b"
+    },
+    "380b5000072746c1177b5aad25e35d549061de58": {
+      "occurrences": 1,
+      "raw_bytes": 225,
+      "raw_sha256": "261c7f9394f6f39065166c2e5100efe495b23217f7d0e033598b7d832b789782"
+    },
+    "38116690e0d062e3aaeafb06f680033434ba0b6b": {
+      "occurrences": 1,
+      "raw_bytes": 318,
+      "raw_sha256": "37ec23d0007117325c108fcbfe671864b79a1bb16ed189ab223053bcce7aa7a9"
+    },
+    "39eae4416b8a19dad775b1af0f786d2b3228488e": {
+      "occurrences": 1,
+      "raw_bytes": 153,
+      "raw_sha256": "73ac07b6c84aa931fad2a5569be95d17a7fdf0276d8bbb924d24d73d7f6fff66"
+    },
+    "3a2b791fab0afba6fe9de4c6ef6876dd89d5a90c": {
+      "occurrences": 1,
+      "raw_bytes": 2334,
+      "raw_sha256": "949375e79c47365d21d24d61d162b3ac7c490083ae4e41eac2f66be473326260"
+    },
+    "3ad47c7aa07fbad942a88a703541553cb055797a": {
+      "occurrences": 1,
+      "raw_bytes": 225,
+      "raw_sha256": "bd42f73c6b1b8ed670cf55c8eada683061bc8b669e7a83e2550aadc21ad0ffa0"
+    },
+    "3d77e1023bec86fdc333d09fbe8f61119850ef71": {
+      "occurrences": 1,
+      "raw_bytes": 968,
+      "raw_sha256": "0b1d09336ed810a88b9356e7dcdc59a9387ea415d7c9e009884b122e7ac53e9e"
+    },
+    "3f2c96062b0ceb9e1a6e3a220fe5117a4097753c": {
+      "occurrences": 1,
+      "raw_bytes": 691,
+      "raw_sha256": "e97b1595c892db1127d6fe599a17e4025691c008bf1121fcb533ae65867729b8"
+    },
+    "3f72d67037a09cd79b0bf331ec5ec297be71ff42": {
+      "occurrences": 1,
+      "raw_bytes": 3482490,
+      "raw_sha256": "af9325f17bbd1139cd082dcaadf9ab3a395e28b6791f6e0c81b9c448a0c7b847"
+    },
+    "402553b81cddb5c8221b7723ea3972b1d4364cb8": {
+      "occurrences": 1,
+      "raw_bytes": 11919,
+      "raw_sha256": "d9d6dd62971de840c02b54b1b62fc725c00660a9bf96b4e62006d7ec36a5394f"
+    },
+    "404caa55309c402e2530c733a7afc2a2dfb9b336": {
+      "occurrences": 1,
+      "raw_bytes": 294,
+      "raw_sha256": "3542a9c657b0e0125e4ef3a85078e45da7f85cb1bf280f1bd6798e2dc406d52c"
+    },
+    "40d8e627924f73dde48a8f3afca31f71cb91f792": {
+      "occurrences": 1,
+      "raw_bytes": 456,
+      "raw_sha256": "644eee434d14d75ce2d88c9f1999c10fa39e83a87cef181aae23d8112857a52f"
+    },
+    "422e8d12d63efdeed7ec9e52b09b09018c5d8128": {
+      "occurrences": 1,
+      "raw_bytes": 454,
+      "raw_sha256": "9c8391846c83fe0c4e516a15acadc3ffdbca560fa5878477a9d254c0aa5f113d"
+    },
+    "44c0d7cddda1c99ce2d86e89292baed3653f045c": {
+      "occurrences": 1,
+      "raw_bytes": 1230,
+      "raw_sha256": "eef21f2580c7d8f24a9a3593ee38896a348b8ba4bc77bc09d52cac81d9791c63"
+    },
+    "4830d589b48543c0b9d53bfd782f1b0844f824ee": {
+      "occurrences": 1,
+      "raw_bytes": 5704228,
+      "raw_sha256": "1813c02ebc192f3af29699427953a80a6bb9f061bb38607f3fb633f0ffcffc70"
+    },
+    "4ab8496faec23e810b209550ccc9ddc9fcd31179": {
+      "occurrences": 2,
+      "raw_bytes": 14452,
+      "raw_sha256": "3c2f4cb0f6a23f6a0cb2d02495d3a61693b5cee1e966095eb0f077fcb42c1148"
+    },
+    "4d234ea1ba34e6f52b8552992bd3ff58feadd0a7": {
+      "occurrences": 1,
+      "raw_bytes": 4913,
+      "raw_sha256": "d6a8457b2d778de89ab262d3cd86c74db2d521bdb700356dd066006f8c695695"
+    },
+    "4d2cc898404b2c3723110399e22ea6eecb98b0e0": {
+      "occurrences": 1,
+      "raw_bytes": 7535,
+      "raw_sha256": "6fd23bb6e509d1d38d105cd05cbe9c9d5f25359a101db49f49db0e2bdbfc0a97"
+    },
+    "4f4ed0f030b82045b532f68664de2842c2745b1c": {
+      "occurrences": 1,
+      "raw_bytes": 4516626,
+      "raw_sha256": "6910d2e567f814cb0cea26856a828673bdaf3dc558a1ae1b68a98ebf1997ee3b"
+    },
+    "57d7ffde7398f668f84bf52fa13ba524c4fd1edb": {
+      "occurrences": 1,
+      "raw_bytes": 1375,
+      "raw_sha256": "5344e42f11e6b57e05ea8c0732b0d4a60d0d958a3ed210cd3ad98e0fa7d8e91e"
+    },
+    "5af675d4f997a717c8f1cbc6bd993e0cc8bd7e81": {
+      "occurrences": 1,
+      "raw_bytes": 243,
+      "raw_sha256": "8b46a6bf45bf4b4330829ca982146f55a53c5b6fc66dcd35c0044c68153b318b"
+    },
+    "5ba73f8ef3e93b9f619d01935efe3c502eb60819": {
+      "occurrences": 1,
+      "raw_bytes": 496,
+      "raw_sha256": "dab97f223d41eeef8503ee1030b6add148956ff9b2f9e5da1652c78c88cf6f43"
+    },
+    "61efd374890a538f66c093d0f2d66dadbbc9e419": {
+      "occurrences": 1,
+      "raw_bytes": 1286,
+      "raw_sha256": "569e14c1cfb4653111212059ab79e9fb1024eb9c517a0008633738f102631ca7"
+    },
+    "64417dcbfab32c7be007545e4d009e10cbf9b89e": {
+      "occurrences": 1,
+      "raw_bytes": 2337,
+      "raw_sha256": "93a93e71faf945ba074f0e5a44f292670e60f1aa1db6c9ec0f8d714f7fa01669"
+    },
+    "644caca750b337b69a1236b9ad3630889e7832b4": {
+      "occurrences": 1,
+      "raw_bytes": 4533959,
+      "raw_sha256": "439fc534d74a0eed312c5d95e7ebd72c36c4f48080159e00b7eb0d06d3529171"
+    },
+    "651587fb659be300691b0f30c1e0c89617feb261": {
+      "occurrences": 1,
+      "raw_bytes": 1789,
+      "raw_sha256": "41c6cbb1fb92cbe5c81445a73c03d2ab6f59297769dae03bb4fb3b95ef7ccea9"
+    },
+    "6635747a7cf0374f76e18c80817937076ed9eb07": {
+      "occurrences": 1,
+      "raw_bytes": 2767,
+      "raw_sha256": "083ff028a1ff88701a3d33ed0c2afd8a8a57201c5789d48149d388df389b7e30"
+    },
+    "68948423485efb409e6557fd0672a13eaf9af1d2": {
+      "occurrences": 1,
+      "raw_bytes": 4525,
+      "raw_sha256": "9833e3b3a9bf9bbb94f7390a4e001011c20702870da0e9cf779af60a01802bd2"
+    },
+    "691b7bd73b2603612892f2330f4fad8a494fa061": {
+      "occurrences": 1,
+      "raw_bytes": 11807,
+      "raw_sha256": "44877b2cd9733af18357c34ba4793453afe3bbecfb70083b9ca90320eaa3c6e7"
+    },
+    "6a1f18adf267f4a8a5abf8f6708f524538886281": {
+      "occurrences": 1,
+      "raw_bytes": 228,
+      "raw_sha256": "63b4d6be6abe9dbf9f16ee5958e4c5fb783bca6d84a5408ff78d40cbf31cac71"
+    },
+    "6ee5c896e98eadc6782708e6ad94124382d58aac": {
+      "occurrences": 1,
+      "raw_bytes": 4186,
+      "raw_sha256": "42cc3e0af4ad8424383c4ad8da72dcf7f90f2cff7ab756a71002842cd2c57e3d"
+    },
+    "7105f6bf4eb6e1b4abba1acdf5cbfc2cae31932d": {
+      "occurrences": 1,
+      "raw_bytes": 4731626,
+      "raw_sha256": "cc63f08e53100d48c3ed4856af4e0e647a7723ad1e32a53e70271e401956bb36"
+    },
+    "73e155115243c41ab304ee424a3ae4cd1439a592": {
+      "occurrences": 1,
+      "raw_bytes": 4807909,
+      "raw_sha256": "989bd6333f6cdc4a9c956157baec37cc90c865904fb566c810cc8cab03e425c4"
+    },
+    "741741989b29095b4fed7fb93707d44f13304fb7": {
+      "occurrences": 1,
+      "raw_bytes": 19082,
+      "raw_sha256": "11c111fb148055f43edac8a10262c48161362caf96737b262325d12a89ed21b5"
+    },
+    "77061ee3ea21ad2e689da8afe3a3bd4d18d58786": {
+      "occurrences": 1,
+      "raw_bytes": 3418,
+      "raw_sha256": "4c1571d5bf38c6d13872ca2bd82c9980b7940676f58d5486c2ba8de0bf1e3fa2"
+    },
+    "7b3b8fbfe7dec96deb9c9383cb67bfd50ed4db09": {
+      "occurrences": 1,
+      "raw_bytes": 3657,
+      "raw_sha256": "3b6708d1d8a2ed78da46075eff731275c19bee0a7109f81c8543e76b59613cdb"
+    },
+    "7c18eda67a6b6015dbd04d6a847a2d5b34820aad": {
+      "occurrences": 1,
+      "raw_bytes": 868,
+      "raw_sha256": "807d26717de555815ef1a6ed3e22a3184b1d3567c0462d05c8a8c262a6aab335"
+    },
+    "7c45855143553dc6a84454b8ea0acfcde4f36c2b": {
+      "occurrences": 2,
+      "raw_bytes": 3559,
+      "raw_sha256": "0255f6edc4dc67e1ccb49ee724dedd1d37c6f0558b80ed1f26ec5cea01846df8"
+    },
+    "7cd179d026129a4ef56a89d75944a8fafb8a40eb": {
+      "occurrences": 1,
+      "raw_bytes": 1357,
+      "raw_sha256": "ee9805d25335e308924cf9ae3b384ab77b81d943742be9282d01ba8caf177a58"
+    },
+    "7f7304ff6487991925e5aab86bf88d4a0277be8d": {
+      "occurrences": 1,
+      "raw_bytes": 4597348,
+      "raw_sha256": "d13aeeef923d061cdb804b399003cb2c10abb65fdc914106c3172dcb8262dbec"
+    },
+    "81709b660244e41d80243b52dbcd6bc4637061d0": {
+      "occurrences": 1,
+      "raw_bytes": 2015,
+      "raw_sha256": "0f2c03c0b65d1c684b63024de87a22d4da709e67cf53ef54a69a1050221c3401"
+    },
+    "838fcd1572e132a751ce019c70d94e44025d82c8": {
+      "occurrences": 1,
+      "raw_bytes": 640,
+      "raw_sha256": "9164e3e7ed87317b520e5acb3dcf778ac6455e7c06d10045df055f1779439d03"
+    },
+    "88242fb2cd95cc55150bfaf31f1433b89a6bdfbc": {
+      "occurrences": 1,
+      "raw_bytes": 4242,
+      "raw_sha256": "0ec9bd0be0a7928032005768584d5c33c7ca8225e492e7cddae4dee020b9eff3"
+    },
+    "886458199f7e10d0393d117472c6b150affe48f2": {
+      "occurrences": 1,
+      "raw_bytes": 2575,
+      "raw_sha256": "1111b810e6e26f7803057c3640565b7dd793db8f4e8cba38b94fd84104285d20"
+    },
+    "8b6e41f1855cf20439a0676150994f79c8a42252": {
+      "occurrences": 1,
+      "raw_bytes": 1045,
+      "raw_sha256": "194444b1de408ff5b26cd536100c6a271fa329309f44d7cac9e9d9f82885dd33"
+    },
+    "8b7169e1a6d58d7b0f4041b48e7ac286440665b5": {
+      "occurrences": 1,
+      "raw_bytes": 1083,
+      "raw_sha256": "d92c897d893c3253308eedba039885038613da45044c93da41213f879c102406"
+    },
+    "8c084110909155cbb1b4a9c1683113f61864e050": {
+      "occurrences": 1,
+      "raw_bytes": 2588,
+      "raw_sha256": "a74075ccf571fe3663d78edb05045b2767db964031722282123948595234388b"
+    },
+    "8c29d736d5d75a0999ca56f00f9a32c63db11f1d": {
+      "occurrences": 1,
+      "raw_bytes": 4666242,
+      "raw_sha256": "6a4d9fb5cb1268382b38bf2dc9e087ef3e80c83f3e7dc594148e06a00485b91e"
+    },
+    "8d43f9f2e28656b9bb268bd26873cc4d6966e90d": {
+      "occurrences": 1,
+      "raw_bytes": 7092,
+      "raw_sha256": "acd0d7dcd73705da6348245f13463e72efc3d25c8c64c4ba70e769d231e240e2"
+    },
+    "8e07b0cd11beac24f594115eb179547e935830fb": {
+      "occurrences": 1,
+      "raw_bytes": 3975,
+      "raw_sha256": "2626766e10c65f9eb3fce23670618219b15ace71cf9a139937335646de44596f"
+    },
+    "8e3b029a74af2ff19e9234d1f72859407b5ec330": {
+      "occurrences": 1,
+      "raw_bytes": 498,
+      "raw_sha256": "d8f5ce4e5212d373fd739175c7979eeba436be9d4b0d0775669408d23d3b97e7"
+    },
+    "903547d18e7b33228312417354404920f6885fd2": {
+      "occurrences": 1,
+      "raw_bytes": 5705613,
+      "raw_sha256": "12c6e88944f8f11d2dd03b07ce017c36e8dcb051ca796c510777daae5740ef32"
+    },
+    "92c66b54dabc68c6b855c6006ffc578d7600601c": {
+      "occurrences": 1,
+      "raw_bytes": 4511442,
+      "raw_sha256": "0ee010697b7574847c4e7d1a7231e625503ce67ad217bf98c459f83bbc1e0a86"
+    },
+    "92e78e3c3e079801fe968db41f48e308160b3133": {
+      "occurrences": 1,
+      "raw_bytes": 322,
+      "raw_sha256": "8db0e1a5f1036c5a04d829162bf3d36010bee3d8c0a85e0dddab12a35bbc3f3f"
+    },
+    "9341f443a47f391b54001102559accc33f5dee7a": {
+      "occurrences": 1,
+      "raw_bytes": 1982,
+      "raw_sha256": "ecdda9919a337f8eb35601be2db44eb92313916b3ac62410c071a7fe270868ce"
+    },
+    "9bc46e91c7b47f809f546ffbfbceed82911db40d": {
+      "occurrences": 1,
+      "raw_bytes": 4750763,
+      "raw_sha256": "098bcb133f20da83c9288d19e7831a5c45715551843aa85887f83aa51fc786c0"
+    },
+    "9c165309923821f7d676d420f508e3210ac76b08": {
+      "occurrences": 2,
+      "raw_bytes": 9395,
+      "raw_sha256": "35a16cc93402532abf18a62d5dd613578323fd0bb6f9360c99a4c06fc6434f64"
+    },
+    "9c1f44acc00b68f616b726589b0318b105c6497e": {
+      "occurrences": 1,
+      "raw_bytes": 4658612,
+      "raw_sha256": "71135bd5e3c475f456bf34fbf7e923d1896e4e83504db0e64a7e145f8b42526c"
+    },
+    "9c9ba1a6209bb6460d8aa2796b6135c064102985": {
+      "occurrences": 1,
+      "raw_bytes": 1052,
+      "raw_sha256": "a398c3c06c021fe176234622128f36c859a9e12e9efc5f1461bcd56be008f2e6"
+    },
+    "9d06145b61bc5c3006a3437de39683a1866c269e": {
+      "occurrences": 1,
+      "raw_bytes": 7360,
+      "raw_sha256": "494d5d5316f89efa83230bd32f4d7af07f92740a5063d5d15229a0869cee299e"
+    },
+    "9f8566f8f560c062e7738dedf2f82f31cba4acb3": {
+      "occurrences": 1,
+      "raw_bytes": 3383,
+      "raw_sha256": "1ab47f6916be5ab732be5c56c5d726fd19c7b5f80b78e8e609ced985cbf6c765"
+    },
+    "a0c718959a216a1dddea1f042d9f3476135b8a81": {
+      "occurrences": 1,
+      "raw_bytes": 490,
+      "raw_sha256": "59a84d09f5a8340d0ccfba11dcbe9a965585d9f8447751bd2563b158e4c9823d"
+    },
+    "a41d6287a4acbe9e632341ba559e96af2bbcd959": {
+      "occurrences": 1,
+      "raw_bytes": 182,
+      "raw_sha256": "b243130833df44f1edec4257edf53abcf12392f4b308a11acc4c2fb8be080d33"
+    },
+    "a43a774199d50d30e1ec2ee9ebbd834761d87f8f": {
+      "occurrences": 1,
+      "raw_bytes": 1704,
+      "raw_sha256": "6b7c8637788d5d93c147ebb55a24eec2df3eaa1c7098dc60ec8ea41833850726"
+    },
+    "a5806092e0b1d8f0e242febfaa9dcfd0be395014": {
+      "occurrences": 1,
+      "raw_bytes": 6759,
+      "raw_sha256": "aa2ac5c326a11eb0eeab87d5f00c5bc67b636e056fae202e52f0858ee73ce631"
+    },
+    "a5c42fd960d61a38ca1684f291e0e354c3734891": {
+      "occurrences": 1,
+      "raw_bytes": 402,
+      "raw_sha256": "8c3eff6024ca7a7979615f2dc0812e08cca131ad0c57f2479cb6d3104fc5b43f"
+    },
+    "a78f645fced3383e7e860cc4740a36c7ce467318": {
+      "occurrences": 1,
+      "raw_bytes": 308,
+      "raw_sha256": "0290ed5ca818879013936b0222033993c19010f51415533491c8bd2a1b21da64"
+    },
+    "a89907f3c8d699c88670b2e4aa72b21163a7e01b": {
+      "occurrences": 1,
+      "raw_bytes": 1903,
+      "raw_sha256": "74b28de6a613f2759b2b15933a82df9a3baebb221a25e97ef5634d6f3f845cce"
+    },
+    "a960738ff4c122922c78638f36a5715e1d9d953a": {
+      "occurrences": 1,
+      "raw_bytes": 149,
+      "raw_sha256": "c9c7bced30d317ee9864a8f892fc2957dee2a66f62fdd641b603f4c59f33148b"
+    },
+    "a9fe478a89843e9871b5659f3fa106081e51f73d": {
+      "occurrences": 1,
+      "raw_bytes": 777,
+      "raw_sha256": "f5d60ceaa2b04f4d0c42a5c1e28cdfef1f7972233abe4fe45e88ec1484fee7d3"
+    },
+    "ab61aa8d315267de6a9c8a7e0fbbb9ac3ee36c85": {
+      "occurrences": 1,
+      "raw_bytes": 1448,
+      "raw_sha256": "f524a831eb23ba3de09c4aa872933a0465cacc2e2e8483d0a2189e86636bdc66"
+    },
+    "ac6803807543606e2eac81b81bdc3125b14d763b": {
+      "occurrences": 1,
+      "raw_bytes": 2782,
+      "raw_sha256": "d67912be071e94e31b881905989252bf81c09aae7a55c576323a521cc1d19cfa"
+    },
+    "af58ad0ca8cc23e0449b277909b4104df0dd51e3": {
+      "occurrences": 1,
+      "raw_bytes": 3956,
+      "raw_sha256": "5973a4c6c32e222627dbdfc0b3955b6222c247bf568870f3f49d25eaee0132a3"
+    },
+    "b011ed8b96c4353343fbc3dd848c4886c8bad3fc": {
+      "occurrences": 1,
+      "raw_bytes": 2274,
+      "raw_sha256": "567a3143ecb65871444860c5a4f291a4a296202664c7d4c64a84dc84bcc7f306"
+    },
+    "b28b4079033c4c50c448da2539334c044c0dd416": {
+      "occurrences": 1,
+      "raw_bytes": 4609004,
+      "raw_sha256": "e765a56611f92203fde2cd280dbf486631dbb36fb540a2898e6d9f1fde0c6ae3"
+    },
+    "b394c012d7a82c8f9aabeca9465e102d7ded1662": {
+      "occurrences": 1,
+      "raw_bytes": 4528378,
+      "raw_sha256": "7be3acdd8f2079c7a40b7d93f9e1bbd0738757b2e7088300a1f3ce88f4be9ca5"
+    },
+    "b45a27c423bb48d965bc8448c9007d492b0179db": {
+      "occurrences": 1,
+      "raw_bytes": 476,
+      "raw_sha256": "1424b7eb2b34bfbb4b5021848ca1f451587e8cb15e5d15d01bc23cd87cddcfe5"
+    },
+    "b5f3a36998e5e540108702d4ce9078754f05e8f2": {
+      "occurrences": 1,
+      "raw_bytes": 3385,
+      "raw_sha256": "d4f112f9c9df6a95b049b225b68970a13b442c9ea69de170fa3930dbce0e97f8"
+    },
+    "be1692574e389e004af1dc6705affd75ddb589d3": {
+      "occurrences": 1,
+      "raw_bytes": 1038,
+      "raw_sha256": "6933dbea3283e049cf064dff681e709b6fd826b7031e9952faf47861373aebc8"
+    },
+    "be9189792cdc4d31c42838be752c008202cd71f3": {
+      "occurrences": 1,
+      "raw_bytes": 3500023,
+      "raw_sha256": "cce0d7a1453c41188eb0b2903716d7e198cba4a28688ba2f798474521be8903c"
+    },
+    "beb218afa53c8698cf3c34ee347e2e4a3a9dc038": {
+      "occurrences": 1,
+      "raw_bytes": 1349,
+      "raw_sha256": "a3aa36fbd9d5dc924d66c0ca50e837f3727dbfc1cf227e1d37ef777b3dab11f6"
+    },
+    "bf32f5e63d37131b8343f3428aa627dc22ac88da": {
+      "occurrences": 1,
+      "raw_bytes": 933,
+      "raw_sha256": "efb9883e8f89259c10fa4a669e3093387a49cbf3c768695658e8e2ce706655eb"
+    },
+    "c28b60e441e9179262ca6d3eb9b1e0ee380d071c": {
+      "occurrences": 1,
+      "raw_bytes": 5702900,
+      "raw_sha256": "d269a3060d7f5c2d575a63202348d664c0fd8930012fab943263ea9b2c5c6754"
+    },
+    "c47b7eb67dc86635ee197bd8f867e7abbc50ccb8": {
+      "occurrences": 1,
+      "raw_bytes": 803,
+      "raw_sha256": "9065776231405f8bc73fd9d543edbd24881be1db09d8c4d59530797a2c607a7d"
+    },
+    "c4b613aefc517f8c888835abbc04aa268ee6aa8e": {
+      "occurrences": 1,
+      "raw_bytes": 4437,
+      "raw_sha256": "71f73aed45e7edcd33307494eb98d1fa8feebbe8b2fa1d5979d3c51a3678d26a"
+    },
+    "c4c0dbbb99dcae35e50d7846f85ceb82a114bcf6": {
+      "occurrences": 1,
+      "raw_bytes": 316,
+      "raw_sha256": "043df16b51ae7308fc2127a5317b7197cc7463719eb1b8d39a707f19708f0992"
+    },
+    "c5286a1a2b753d28f99f8804c07fc0fa45cc8610": {
+      "occurrences": 1,
+      "raw_bytes": 1786,
+      "raw_sha256": "dbba338eed9d0b52063e0ec19f3ea5f5d142515dcbf6cbf220079410db344561"
+    },
+    "c5e09d56604551a2bdcf63bd029208c17cf7dccd": {
+      "occurrences": 1,
+      "raw_bytes": 581,
+      "raw_sha256": "e391912ab366f3e382b3c7eea1690ce0f50c646210647a67a9a8b981f7da0270"
+    },
+    "c92703882feb357776766f95316ea1625bfb05bf": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "fcbbbe69931d9c26c91224105b58ad6dafaa60adaa272be9884dc874fa8147ab"
+    },
+    "ce0ecdb9d6af210b643deaace906a33d473bc670": {
+      "occurrences": 1,
+      "raw_bytes": 114,
+      "raw_sha256": "85bc1a66b3dc80fe752b68776a3a92b0d20358220d7a63b4a2d7cc60d28aff50"
+    },
+    "cf05bb6ec1679c8a0838efa572e4a87fb5486fbe": {
+      "occurrences": 1,
+      "raw_bytes": 950,
+      "raw_sha256": "e66b7eed381afea0de483645fae875f2034cba733d5a29eff31a813d209608cf"
+    },
+    "d13487bb4d11a66501b3bd9d0cfa51a9d99401d7": {
+      "occurrences": 1,
+      "raw_bytes": 1909,
+      "raw_sha256": "d300af6e0730e1514ad47f90e4fdd98947ddde0b7f31b5e8d1e73e21e7002aed"
+    },
+    "d30be61bd9406b70543d213b6592d034415899c3": {
+      "occurrences": 1,
+      "raw_bytes": 799,
+      "raw_sha256": "45f0ebf419b546ffe2ce3d2374741369587b75fdbd5c333cc172b4af1004c833"
+    },
+    "d37122ae94df57263946145eae94b36ebbf07995": {
+      "occurrences": 1,
+      "raw_bytes": 2032,
+      "raw_sha256": "27c1f64fa6b5459c7ff928ef431ae5bef8b004bcbdec6b9d0938f14973c88e87"
+    },
+    "d48fc38f40edc3b3459e17d40529b9837cae5687": {
+      "occurrences": 1,
+      "raw_bytes": 184,
+      "raw_sha256": "ba0e0575d1715eb0bbe218c886728f21d65b594b1b07d5520a3889770a5c641c"
+    },
+    "d5a91d6f0d85fc08a8210a8d9378a0f69e87aaeb": {
+      "occurrences": 1,
+      "raw_bytes": 296,
+      "raw_sha256": "b59e32a4f6ec2200a7cfdd8ac052580b8552ebf4dc5dd4709a111b3ea1710bbb"
+    },
+    "d7a43876bd730baf4641a65a695ef0158267bdee": {
+      "occurrences": 1,
+      "raw_bytes": 4644315,
+      "raw_sha256": "9dd1d151d6f5fc2519eb48ac9894c7a33518c64b4c9a03ac75ce72d032d8a453"
+    },
+    "d81df61f49c34129bd1bb74e202633fc8842a951": {
+      "occurrences": 1,
+      "raw_bytes": 1941,
+      "raw_sha256": "ef8a16cea9b0f13e5114700dd898715337821cd789876543534cef341ba0599b"
+    },
+    "db48a9059d684b5721c1df74445a50bc5cafdfa3": {
+      "occurrences": 1,
+      "raw_bytes": 6694,
+      "raw_sha256": "cbb782ff7c27b457e63eaca4297500a112180a0957699c9cf6ff2f5feb6033a7"
+    },
+    "dff4de26e102cc9453070fe63a994cb79e0056fe": {
+      "occurrences": 1,
+      "raw_bytes": 265,
+      "raw_sha256": "2df8b7628f4d84fdeb8ebe3752afd773e592b5d3fd1f3d51233618c246ef2a0c"
+    },
+    "e12fe4174da186a162616a4069f8e0cbe2f25204": {
+      "occurrences": 1,
+      "raw_bytes": 658,
+      "raw_sha256": "3d8fd18a244598d5152fac2efa4e08b20dae79643523b30f57ba844117bedf3e"
+    },
+    "e1685dea644dd8951672ae7dc94e069fcf9b697b": {
+      "occurrences": 1,
+      "raw_bytes": 9600,
+      "raw_sha256": "fd6ba465e9514a4f3445dc295756d08b1678155880eb2cdee510d1d385fb82c8"
+    },
+    "e24ab016ba6367b123f0e56fa74585f0c4820e62": {
+      "occurrences": 1,
+      "raw_bytes": 178,
+      "raw_sha256": "ab1822a9dd04094163578dbf9db731948c2676512016a0740f48e65342eaa50e"
+    },
+    "e26e3a43cd2de36f0a8de1da525fda0b08d4b42f": {
+      "occurrences": 1,
+      "raw_bytes": 221,
+      "raw_sha256": "ba677a5519f91ad690d733539dddcdc91b63b8d79977ff88ae1980e628e67faa"
+    },
+    "e5f3e017c8afc7d2835eafc679fe036c7ab51a16": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "5b7cc0dd60acd3e617116af6501a17569a62978541f717075366fbfba23e562d"
+    },
+    "e684fb6068f0a39f5530fbd76b23446c4693bffc": {
+      "occurrences": 1,
+      "raw_bytes": 1911,
+      "raw_sha256": "d04383dabb23a11786ed0a4b79ae37f7afece5b5b3b5203b4187b58bae094b8b"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 3,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e95ca6ff1dc75a248961cf8f4b363d8275387de6": {
+      "occurrences": 1,
+      "raw_bytes": 327,
+      "raw_sha256": "c8231a92dad07af67fea1dc45d829a512ac1227953a93b3f8dfb77702703c6f6"
+    },
+    "eafcaa48f5057dee32e9ac662d05d9c9a08012f6": {
+      "occurrences": 1,
+      "raw_bytes": 218,
+      "raw_sha256": "892ca5b86cb4c5a31ec06f5538cf909fed74327d01d559e66f0275a128b6fafb"
+    },
+    "ec57518a1d8ca0d3f8364808cbcf3cd8a7ff7d15": {
+      "occurrences": 1,
+      "raw_bytes": 208,
+      "raw_sha256": "be179bf2e3270070044edc75a170292fd15ad29f0a19b9f7965eb2b510adae03"
+    },
+    "ec825c14cea77effd19b345993f9a1c83472018a": {
+      "occurrences": 1,
+      "raw_bytes": 3489636,
+      "raw_sha256": "278969d463fc7d1b3f3a78bffbc322946566c1a9aaff32421841f435f7cdbf78"
+    },
+    "f358a1380dbfb133cf6332ce984591cd6a2f082a": {
+      "occurrences": 1,
+      "raw_bytes": 292,
+      "raw_sha256": "5529d999b4332a29de2310e44b349f2b8db29d2207d1fd1440e3a34be4a7d896"
+    },
+    "f752c825890dff89c649f91ed2a7ad6d53e4a01e": {
+      "occurrences": 1,
+      "raw_bytes": 107,
+      "raw_sha256": "e87854813aa3f38b36173099f5923df6d2d1fa515f7435297a4cf0045ae3481d"
+    },
+    "f914359e955852dc7142def0d3bad59bd43f4e89": {
+      "occurrences": 1,
+      "raw_bytes": 874,
+      "raw_sha256": "af0d89575876837aa55da86ab6964930e9e471d3d159f252f99e30c2015b3f52"
+    },
+    "f9d32e366925482adf1acc50d19cc143535a5d56": {
+      "occurrences": 1,
+      "raw_bytes": 1467,
+      "raw_sha256": "053b5989c7cf4f8ab996d091e6c2142609476b31e23196280c567f1c9cd73097"
+    },
+    "fd0be9916b4ed79d5a761d13be9bf87da2055ce1": {
+      "occurrences": 1,
+      "raw_bytes": 267,
+      "raw_sha256": "b431780315a86b95793513215d2a2e471ce015b9b6853e7c470abeea81226223"
+    },
+    "fd7aafdbba648db224d1be5860f7e8a480a1f92c": {
+      "occurrences": 1,
+      "raw_bytes": 2547,
+      "raw_sha256": "6e6b911636365052a170054b213a0857ff2b300e3320c1729a97d73a8a03d7e7"
+    },
+    "fdc519c5e250c5d78a4f6bf8c138d43aaa7ddfb8": {
+      "occurrences": 1,
+      "raw_bytes": 172,
+      "raw_sha256": "53d2872ef007e2350dd453cdcb89987a3455da927d2c74778a2aa71e46f68cd4"
+    },
+    "fea7f6480fc00b8e79dd0bcbd8b412dda0975dee": {
+      "occurrences": 1,
+      "raw_bytes": 190,
+      "raw_sha256": "d5df1d457e69e6a51a6b724c6854a69f0d1ea98c38e223016389764d83578b01"
+    },
+    "ff731b55de14338de81615f31632b41507a52366": {
+      "occurrences": 1,
+      "raw_bytes": 5711066,
+      "raw_sha256": "c4f3b620d3714e687fb2842db42320041710fa4f2a44718ce227a94567c8bc5b"
+    }
+  }
+}

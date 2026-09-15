@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/native_even_torus_flux_isolation_2026_09_08.py
+runner_sha256: ce911c49659fcc732528f66d622a4b503785d981d0c0e8dfdbaf820eeb5f1953
+input_fingerprint_sha256: 0b7222ece3d7f0de64cbbe1e9f13211e098fd77d8dfa61c6ea3538f2348d1268
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+{
+  "executed_predicates": 5957,
+  "lemma_predicates": 5955,
+  "coverage_guard": 1,
+  "resource_guard": 1,
+  "half_widths": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transverse_extents": [
+    4,
+    6
+  ],
+  "elapsed_seconds": 0.08863237500190735,
+  "peak_rss_mib": 23.484375,
+  "source_sha256": "ce911c49659fcc732528f66d622a4b503785d981d0c0e8dfdbaf820eeb5f1953",
+  "input_sha256": {
+    "docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md": "da1849644f34f729eda9f8fe8c1fc19602d775404f6c85c6ac365e7fa540c7d0",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "scripts/native_even_torus_flux_isolation_controls_2026_09_08.py": "c36f54a436c04143c512526ce38deda4929a7bf10fc8bb0a8676c48781775c99"
+  },
+  "scope": "Exact finite controls for complex SVD equality, paired-channel kernel positivity and structural layer/gauge induction. The linked analytical proof establishes all even sizes; finite tested widths do not prove the theorem by extrapolation."
+}
+per_element: executed exact complex-rational channel and phase controls in the declared finite examples.
+per_site: finite boundary and inward-frontier propagation controls support the separately proved analytical induction.
+per_mode: finite CAR-kernel and reflected-matrix identities are checked with exact arithmetic.
+per_block: the declared rectangular half-slab widths and transverse extents receive finite structural controls.
+lattice_wide: analytical induction in the linked note; finite controls only.
+TOTAL: PASS=5957 FAIL=0
+Resources: 0.088632s, 23.484MiB; timeout180s, RSS384MiB.
+
+----- stderr -----
+

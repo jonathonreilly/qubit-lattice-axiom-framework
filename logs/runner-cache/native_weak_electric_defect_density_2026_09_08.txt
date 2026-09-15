@@ -1,0 +1,194 @@
+===== runner cache v1 =====
+runner: scripts/native_weak_electric_defect_density_2026_09_08.py
+runner_sha256: b0a5dc340fbcf475e8328c3a05ccaef277a55aba1234ed94aeb61623e0f1d41d
+input_fingerprint_sha256: 9769b13542ffd90295ff37a66364764928fd87e02d7bec2dc9ce0620eb9825b3
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{
+  "quadratic_checks": 43,
+  "thermal_checks": 108,
+  "wrong_discriminant_mismatches": 1,
+  "total_checks": 258,
+  "quadratic_coefficient": 75,
+  "status": "PASS",
+  "checks": 107,
+  "local_states": 64,
+  "incident_pairs": 30,
+  "geometric_cases": [
+    {
+      "L": 4,
+      "shared_faces": 0,
+      "flipped_faces": 8
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 0,
+      "flipped_faces": 8
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 4,
+      "shared_faces": 0,
+      "flipped_faces": 8
+    },
+    {
+      "L": 8,
+      "shared_faces": 0,
+      "flipped_faces": 8
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 0,
+      "flipped_faces": 8
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 1,
+      "flipped_faces": 6
+    },
+    {
+      "L": 8,
+      "shared_faces": 0,
+      "flipped_faces": 8
+    }
+  ],
+  "ground_density_coefficient": "102400/387",
+  "thermal_density_coefficient": "800",
+  "scope": "Exact local controls supporting the separate full analytical theorem; no perturbed-state solve or phase claim.",
+  "input_sha256": {
+    "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md": "7b8b4e2c5bca9c0e3bc9e3ac7478f0d852f2c81350fd0bd85a3b9ced61f0bf19",
+    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "scripts/native_weak_electric_defect_density_controls_2026_09_08.py": "28f8de4f10219ee58a234e041be8c34b3aeb4edf41d08c6077d2cbaac2341ff5"
+  },
+  "source_sha256": "b0a5dc340fbcf475e8328c3a05ccaef277a55aba1234ed94aeb61623e0f1d41d",
+  "elapsed_seconds": 0.013483542017638683,
+  "peak_rss_bytes": 24281088
+}
+per_element: executed exact local electric and rational inequality controls on the declared finite states.
+per_site: incident-pair and defect-face multiplicities are checked on the stated local geometries.
+per_mode: finite rational anticommutation-bound and quadratic-root controls are executed without state solves.
+per_block: all258 named local, quadratic and thermal algebra controls are executed as declared.
+lattice_wide: volume-uniform ground/Gibbs density bounds are analytical; no perturbed-state or Gibbs sampling run occurs.
+TOTAL: PASS=258 FAIL=0
+
+----- stderr -----
+

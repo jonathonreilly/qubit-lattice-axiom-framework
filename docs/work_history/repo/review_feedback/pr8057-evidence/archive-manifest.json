@@ -1,0 +1,1545 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "42777d55c6639251f3c5ff186dbb83b08c4db8e6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/ARTIFACT.md",
+      "raw_bytes": 147,
+      "raw_sha256": "2ef5d8e69693a33991f4bf13b5ad2eb05c6e28fa2dec80782d866870c2663bce",
+      "stored_path": "_objects/2ef5d8e69693a33991f4bf13b5ad2eb05c6e28fa2dec80782d866870c2663bce.gz",
+      "stored_sha256": "575eefd0ba5a9be98ca4fa1604a97527e3b852d0799cfa3bd708a2738eca8243"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9a2954bc96d9801b877bbcfe7edb90b0715a5c93",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/ARTIFACT_PLAN.md",
+      "raw_bytes": 694,
+      "raw_sha256": "e6e3b0b07dc8144bd084815765dcb680df4c181db21dc4b32fddf8dfc51734fb",
+      "stored_path": "_objects/e6e3b0b07dc8144bd084815765dcb680df4c181db21dc4b32fddf8dfc51734fb.gz",
+      "stored_sha256": "ebccc3ae937bc82abe29dcbc01f35b4a2866a9c25ca2f09edd658c8b2df77661"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0e24e70c3fe29037b132dbde6a16473cafa60a5b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/ASSUMPTIONS.md",
+      "raw_bytes": 173,
+      "raw_sha256": "094959aa94a05bc8fed832d4c516c0c0a9c88f9300b88d69322000d0d7b2f339",
+      "stored_path": "_objects/094959aa94a05bc8fed832d4c516c0c0a9c88f9300b88d69322000d0d7b2f339.gz",
+      "stored_sha256": "a5db5f784c9da916aaae6fa74620d3e337915268a606020ff6c12e5ff41626d6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3573566a4915ef1d0871ab8e34e278c3ed29c719",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 996,
+      "raw_sha256": "6da42f08b04588a9856c18caa80d8fd89b9079968a8c546b326531a3e2cdec7d",
+      "stored_path": "_objects/6da42f08b04588a9856c18caa80d8fd89b9079968a8c546b326531a3e2cdec7d.gz",
+      "stored_sha256": "39872e901b009582c4adab0a7b281cff9dea2fd3f5ac8177df7d983a8518d8ae"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2638181f3eac5dc051ede28d9a8a9216b9ce35e2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/CLAIM_STATUS.md",
+      "raw_bytes": 210,
+      "raw_sha256": "d643c2c8a1d0849e8ccf4004637c4e2d71410d8f76161904df1e3d1ea2ba7986",
+      "stored_path": "_objects/d643c2c8a1d0849e8ccf4004637c4e2d71410d8f76161904df1e3d1ea2ba7986.gz",
+      "stored_sha256": "3fd3cd4e4a9082a99263fa8e4d672dba4ef5217715dd5fce6d5069b576015d93"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "09418b9144486de22491be6b45ddc5eee8ba3138",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 1313,
+      "raw_sha256": "d53e485c9a10cfae2ccb65a73684cfb88527eb70563046e13402d75a040216cd",
+      "stored_path": "_objects/d53e485c9a10cfae2ccb65a73684cfb88527eb70563046e13402d75a040216cd.gz",
+      "stored_sha256": "3977b3cff38101a5fd445d9b6883fc3e7bacf166514e7ce409e7458776a84e93"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d9a18f8040cfc2bf700f5033141f0508397ce03a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/GOAL.md",
+      "raw_bytes": 258,
+      "raw_sha256": "5e847e9295e72a9ca553c3d1e6d4d6b0a27c3d72f361542afe4d11099b6f065f",
+      "stored_path": "_objects/5e847e9295e72a9ca553c3d1e6d4d6b0a27c3d72f361542afe4d11099b6f065f.gz",
+      "stored_sha256": "d1ab656e27c2e56185f6073c11b67e4a37b504a0d5225506dc7fb01cbf5f65f0"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "83e68fd16345ad8cc08081844be044a2687024a0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/HANDOFF.md",
+      "raw_bytes": 1089,
+      "raw_sha256": "8ca6b16bf3d48223a008cb8efe37cf02aa9d1e106b8979b64d28481dbfcc9462",
+      "stored_path": "kept/pr8057-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "8ca6b16bf3d48223a008cb8efe37cf02aa9d1e106b8979b64d28481dbfcc9462"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e1213f9f5847a3bde8738d7eaf686441b6bae2ea",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/LITERATURE.md",
+      "raw_bytes": 218,
+      "raw_sha256": "f3abd60cedb9dcbb55b35fd07374071a7df2de21b5420853a06bf0a167257207",
+      "stored_path": "_objects/f3abd60cedb9dcbb55b35fd07374071a7df2de21b5420853a06bf0a167257207.gz",
+      "stored_sha256": "e643aaf14c726cc1ab64b631bba8bc698209ac992dababc9a4a0a2223cb0a475"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ae453afcd2f1aa1209859a02990a170029c99e66",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/LITERATURE_BRIDGES.md",
+      "raw_bytes": 765,
+      "raw_sha256": "bcae07183f8db11bb503be3ecf9ffc629068b2ddf5ddf90e1c594867dd944dfe",
+      "stored_path": "_objects/bcae07183f8db11bb503be3ecf9ffc629068b2ddf5ddf90e1c594867dd944dfe.gz",
+      "stored_sha256": "f0e93003808cc0f0e8de4fca119465d394ffda92681448ef85e839826ef01c7f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "99407d7d1a220942983f6abe3459c9b7ece56590",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/NO_GO.md",
+      "raw_bytes": 149,
+      "raw_sha256": "6910588b5fe4548f7da86a9e1c51519f3ffdaa4f2520408adf55817fd6997380",
+      "stored_path": "_objects/6910588b5fe4548f7da86a9e1c51519f3ffdaa4f2520408adf55817fd6997380.gz",
+      "stored_sha256": "f5addfac5dbe77d9a392782979c7fc1666a359315abd01d8971fa5ac4ee96087"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "943d34364ba0e16514eb985631944257269f24dc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/NO_GO_LEDGER.md",
+      "raw_bytes": 696,
+      "raw_sha256": "627dddf71441ef0e41c095069171906256d16c889ef9f9f450b1285dbc6fbe7e",
+      "stored_path": "_objects/627dddf71441ef0e41c095069171906256d16c889ef9f9f450b1285dbc6fbe7e.gz",
+      "stored_sha256": "65b2b9c84f12ddf3a967fdb62515ddfbe0c6816ef5ebce8217006a56f22e1dd6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "177d98092776aa9412ce93193604b1b6bd901699",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/OPPORTUNITY.md",
+      "raw_bytes": 99,
+      "raw_sha256": "1de33ecf658e067d0771208d0fdf67d43c196ad926b2f22e797a464f53625f6f",
+      "stored_path": "_objects/1de33ecf658e067d0771208d0fdf67d43c196ad926b2f22e797a464f53625f6f.gz",
+      "stored_sha256": "408924df79fa4a47f4a8d6d3018c4a1752b2810475e645bf8c38ee261e97e4db"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d022305f9d8fcb48b2f97aee43899f30db9b124b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 1145,
+      "raw_sha256": "e3237f986d6f819c9f3671e17c2e91cb129a75ffdeb600e0c1b1cc9136add828",
+      "stored_path": "_objects/e3237f986d6f819c9f3671e17c2e91cb129a75ffdeb600e0c1b1cc9136add828.gz",
+      "stored_sha256": "6735877931fc20363754adbde8e61a7ceea706057f1bf0c3ad170c30c741000b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "29935c15d49db0176703f775cb9099071bac7365",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/CANONICAL_FINAL_REVIEW.md",
+      "raw_bytes": 1674,
+      "raw_sha256": "457594ae5738a2b450a5cdffcfe4e5309b5cf8356c983221e67f54543a7d7280",
+      "stored_path": "_objects/457594ae5738a2b450a5cdffcfe4e5309b5cf8356c983221e67f54543a7d7280.gz",
+      "stored_sha256": "c52005c374f6dc3a89c110dbc2b505711a9ff57feef59c802aed3e15b6d2cdcd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "37d8ab40c0c06db5a365c291de0e93ac5afadeb9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/GRAPH_REVIEW.json",
+      "raw_bytes": 627,
+      "raw_sha256": "18c78f4290f27577c68f2f72e709d4c1c780030dc9fb1d5fb7b82dfe787298fc",
+      "stored_path": "_objects/18c78f4290f27577c68f2f72e709d4c1c780030dc9fb1d5fb7b82dfe787298fc.gz",
+      "stored_sha256": "36d4629dde7d07b634a07cebd2c8906e41fcea47a87f6753fa5435980099c4bb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6be08aef27783b58f04f2020e87c6653910eed05",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/ISOLATED.json",
+      "raw_bytes": 3652,
+      "raw_sha256": "c2c1f2df35c24e43faff812568ae2f5b5c77584ed0d0949bbaed5592cc47933b",
+      "stored_path": "_objects/c2c1f2df35c24e43faff812568ae2f5b5c77584ed0d0949bbaed5592cc47933b.gz",
+      "stored_sha256": "5bacb52d4b92ec63a5c13d359603b501b00b7c2a97cd155eb1987adaa849b24c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/ISOLATED.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/face_parity_MUTANT.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/ISOLATED.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/ISOLATED.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "42ef0c7c4369822d3fefc3bac30a7c9cde3d7df8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/ISOLATION_RECEIPT.json",
+      "raw_bytes": 590,
+      "raw_sha256": "c6632c4fcab262cdd7b8c7428888a0dd19615d5f7f632449ec7828af03e5693d",
+      "stored_path": "_objects/c6632c4fcab262cdd7b8c7428888a0dd19615d5f7f632449ec7828af03e5693d.gz",
+      "stored_sha256": "24c529ac91f94790e77ae72a846c2d88f7d7be89e8f30c414cc05ec6784bfdd5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cc893af988d921c6b63f9a30f689ca9165d3744b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/MUTANTS.json",
+      "raw_bytes": 503,
+      "raw_sha256": "3b62596853c57c0aeb338c5a31d123bdfd39afc4f634ddcfd16e7a4d3514e84a",
+      "stored_path": "_objects/3b62596853c57c0aeb338c5a31d123bdfd39afc4f634ddcfd16e7a4d3514e84a.gz",
+      "stored_sha256": "d4fafe50bd63ec5c8d68cd32318e9a76c361a58ffa84f58d16f939868d74b43a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d9b854cf1d5fa1c864ca2b446ae234f534d24b9f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/electric_constant.diff",
+      "raw_bytes": 452,
+      "raw_sha256": "0c5712ae81c3fd210acdc024b353cd8fde072960da767d867ee1475c26945183",
+      "stored_path": "_objects/0c5712ae81c3fd210acdc024b353cd8fde072960da767d867ee1475c26945183.gz",
+      "stored_sha256": "f12c2181dc81349461690f46c93918ceccf3aae8bca4472edd832c85830bbe2c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d9b854cf1d5fa1c864ca2b446ae234f534d24b9f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/electric_constant.diff",
+      "raw_bytes": 452,
+      "raw_sha256": "0c5712ae81c3fd210acdc024b353cd8fde072960da767d867ee1475c26945183",
+      "stored_path": "_objects/0c5712ae81c3fd210acdc024b353cd8fde072960da767d867ee1475c26945183.gz",
+      "stored_sha256": "f12c2181dc81349461690f46c93918ceccf3aae8bca4472edd832c85830bbe2c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "774afd69095cb1658ebc7ad20b3079be5458a124",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/electric_constant.stderr",
+      "raw_bytes": 1232,
+      "raw_sha256": "df3e01d98cc551e2b8687d343d5287a0c6d9e868dc6161ec5b11b39d3cf557ec",
+      "stored_path": "_objects/df3e01d98cc551e2b8687d343d5287a0c6d9e868dc6161ec5b11b39d3cf557ec.gz",
+      "stored_sha256": "b1a5baef6b8dad8dd719f54f87bd6edd520f0945087357d29aa5e3b978fcc2da"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a6709fd8bafdba914ad7320ba408eda91faba327",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/face_parity.diff",
+      "raw_bytes": 619,
+      "raw_sha256": "8ff4303ba07085cc78c25f7ce963ad1836dba9f911bd1c23b4205f8f65f983b4",
+      "stored_path": "_objects/8ff4303ba07085cc78c25f7ce963ad1836dba9f911bd1c23b4205f8f65f983b4.gz",
+      "stored_sha256": "7774e6db5bc1445b522bc971a9f266710288982aa5925d0c549bad1f2d02c181"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a6709fd8bafdba914ad7320ba408eda91faba327",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/face_parity.diff",
+      "raw_bytes": 619,
+      "raw_sha256": "8ff4303ba07085cc78c25f7ce963ad1836dba9f911bd1c23b4205f8f65f983b4",
+      "stored_path": "_objects/8ff4303ba07085cc78c25f7ce963ad1836dba9f911bd1c23b4205f8f65f983b4.gz",
+      "stored_sha256": "7774e6db5bc1445b522bc971a9f266710288982aa5925d0c549bad1f2d02c181"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f991f45ae8b019ce295c9b25d6623958b21f9394",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/face_parity.stderr",
+      "raw_bytes": 1214,
+      "raw_sha256": "8641c2e5711e8a6cd0167bf11a2d030db31516d2151aa6ece422e9134ceea1f0",
+      "stored_path": "_objects/8641c2e5711e8a6cd0167bf11a2d030db31516d2151aa6ece422e9134ceea1f0.gz",
+      "stored_sha256": "9907cf174f553555b623d80e3320c63774a7b73b398c13d5d56533d6911fca7e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ba97320dc63f7893c998e399ee970f1ae3ae2de5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/native_half.diff",
+      "raw_bytes": 613,
+      "raw_sha256": "d35abb555bcf34e8a773283ce2df454dfb173340a5857d518bf46c8d1df144c3",
+      "stored_path": "_objects/d35abb555bcf34e8a773283ce2df454dfb173340a5857d518bf46c8d1df144c3.gz",
+      "stored_sha256": "3bdb3045648f7ab72449003fc16419900203ab73d09c691abf45641d701c2ebd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ba97320dc63f7893c998e399ee970f1ae3ae2de5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/native_half.diff",
+      "raw_bytes": 613,
+      "raw_sha256": "d35abb555bcf34e8a773283ce2df454dfb173340a5857d518bf46c8d1df144c3",
+      "stored_path": "_objects/d35abb555bcf34e8a773283ce2df454dfb173340a5857d518bf46c8d1df144c3.gz",
+      "stored_sha256": "3bdb3045648f7ab72449003fc16419900203ab73d09c691abf45641d701c2ebd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f067189f783bc85381b2ca3708de312b001fc006",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/native_half.stderr",
+      "raw_bytes": 1205,
+      "raw_sha256": "0fdc36d15846b50bba767eba02e6b9bb5d2022d2f3947b182e66c0e85f4a2188",
+      "stored_path": "_objects/0fdc36d15846b50bba767eba02e6b9bb5d2022d2f3947b182e66c0e85f4a2188.gz",
+      "stored_sha256": "7b9addbf43d6061b9583f29b4dfcb7c84a87d12b01c139173dd2bd0fa033dc26"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "aca649263d0b3d8fef7608d838c03970ff11429f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/quadratic75.diff",
+      "raw_bytes": 482,
+      "raw_sha256": "a4e355bef054eb492e702f84c3a0e3ad85c0856ce18fb40d036b0e34ec8d957a",
+      "stored_path": "_objects/a4e355bef054eb492e702f84c3a0e3ad85c0856ce18fb40d036b0e34ec8d957a.gz",
+      "stored_sha256": "0b4dd9e518bf1150208a18338c1a16d1f5983a7553b95712876b96075646c75b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "aca649263d0b3d8fef7608d838c03970ff11429f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/quadratic75.diff",
+      "raw_bytes": 482,
+      "raw_sha256": "a4e355bef054eb492e702f84c3a0e3ad85c0856ce18fb40d036b0e34ec8d957a",
+      "stored_path": "_objects/a4e355bef054eb492e702f84c3a0e3ad85c0856ce18fb40d036b0e34ec8d957a.gz",
+      "stored_sha256": "0b4dd9e518bf1150208a18338c1a16d1f5983a7553b95712876b96075646c75b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2440d6eca0e6cb7ffc2a449b2bb55d9ec785b98b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/quadratic75.stderr",
+      "raw_bytes": 1198,
+      "raw_sha256": "3dc5d5a4d94da782c7fe6f3a28cbf8e91317844f91381617c7c6db5715b99193",
+      "stored_path": "_objects/3dc5d5a4d94da782c7fe6f3a28cbf8e91317844f91381617c7c6db5715b99193.gz",
+      "stored_sha256": "14be007b2fcc6cfcb8ad01d2505817b3848a2051d172a410e2a0cceb9a2deba8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "237ebaa65618eb626936211cd54e555ecbdaa603",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/thermal_discriminant.diff",
+      "raw_bytes": 419,
+      "raw_sha256": "753a9ac9cf590f36b569dad973a0293746f225fdf912ed3edab50cc27a318690",
+      "stored_path": "_objects/753a9ac9cf590f36b569dad973a0293746f225fdf912ed3edab50cc27a318690.gz",
+      "stored_sha256": "8a92c24c403fed3304ec0f0ba97a6e490cd335beb3f922ed74f3795ae4ad496a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9c326fcf080780c86687dd0bc6947c4672369ea1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PORT_RECORDS/thermal_discriminant.stderr",
+      "raw_bytes": 1135,
+      "raw_sha256": "59f100abd009f8315d1722b5443d7e3ae7cc3506850b0c9829e1f50bd6d2f9eb",
+      "stored_path": "_objects/59f100abd009f8315d1722b5443d7e3ae7cc3506850b0c9829e1f50bd6d2f9eb.gz",
+      "stored_sha256": "5eb631ac36150d7cf33d6d637491019ae91e69e4a08b30c99ee5b5722615367b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "68abaa39e1794218fdd936113ee42c53ccb3e455",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/PR_BACKLOG.md",
+      "raw_bytes": 98,
+      "raw_sha256": "f6dcb859f9e9afed87261a719f28801cf4a32438c1f555aae658a74a52c58008",
+      "stored_path": "_objects/f6dcb859f9e9afed87261a719f28801cf4a32438c1f555aae658a74a52c58008.gz",
+      "stored_sha256": "b3c00d84aa888e993402d4ee91d3d9ab47cdeadc357f90966946b3b889b5a2cc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f6c719e718a51f6ba5ddd8171297d5f940e17373",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/REVIEW_HISTORY.md",
+      "raw_bytes": 1088,
+      "raw_sha256": "799a5d81c2c8634509880eb79632e203d813e920a32e9a5e5a91254b68a09f16",
+      "stored_path": "_objects/799a5d81c2c8634509880eb79632e203d813e920a32e9a5e5a91254b68a09f16.gz",
+      "stored_sha256": "37c01e7c621fa222601687ba0b87e5a5a862877a3333e48c384d88f54006739b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1d1dbac086aa4276d5e03c40b7b121db538878b8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/ROUTE.md",
+      "raw_bytes": 152,
+      "raw_sha256": "8c8f200adf82d03f31070543cc14a794f03e50bfaea977448829637b140f78ae",
+      "stored_path": "_objects/8c8f200adf82d03f31070543cc14a794f03e50bfaea977448829637b140f78ae.gz",
+      "stored_sha256": "7dfff00c9307c31d542088cfe6086afedc5d7945cd1773465b4ada11e35ee082"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "035eacd2874196050c64115d138e8d382aa12722",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 699,
+      "raw_sha256": "2df1bb66c8ff505cf35b0850ec6e971bc5e5362cbec308bf712c5191a1889856",
+      "stored_path": "_objects/2df1bb66c8ff505cf35b0850ec6e971bc5e5362cbec308bf712c5191a1889856.gz",
+      "stored_sha256": "bbfa4e34af43d564712277425b937c5e392d5447b9b8bef3a4cf4a32a550a135"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e70cab31586b051a6659d78826ce8e187106096c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/SOURCE_FREEZE.json",
+      "raw_bytes": 993,
+      "raw_sha256": "10a67f9eeea58a26ac18844df8a17aa9decd7a49a6796c19c4d92580e27022b5",
+      "stored_path": "_objects/10a67f9eeea58a26ac18844df8a17aa9decd7a49a6796c19c4d92580e27022b5.gz",
+      "stored_sha256": "7fd6d60a966e7b724dc912336440439c99bbce987f6780782506c6374aff4f76"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "77282eddbd5198fe3f6f0a54ce463a193b0653be",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/STATE.yaml",
+      "raw_bytes": 1899,
+      "raw_sha256": "bb5a9fdebd41249920f1f84c1464f3c0bc2459dfacedfc5593dbe360aa205b8a",
+      "stored_path": "_objects/bb5a9fdebd41249920f1f84c1464f3c0bc2459dfacedfc5593dbe360aa205b8a.gz",
+      "stored_sha256": "ca52aeed5554ace2530c69e4c8b902d828ab4866545debf7281d3784f8633683"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e67469313eb7c5208a21793a708eb5c56ff565cc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/TRACE.md",
+      "raw_bytes": 145,
+      "raw_sha256": "6b9aa39e841de14b00146d5c2421427a6ae6ec5db6152e1021260a5d241f036f",
+      "stored_path": "_objects/6b9aa39e841de14b00146d5c2421427a6ae6ec5db6152e1021260a5d241f036f.gz",
+      "stored_sha256": "bcb9088316cb69e20916c9ce7b2de19820fe8b7077dbfc0ab4e0edfb2ff416f7"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "16e03b18e1ff49072c56d81da2961ea86837144b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/TRACE_GATE.md",
+      "raw_bytes": 1146,
+      "raw_sha256": "f6ddab0e90457dc4941b053a7bbe0faab2c8ec38e23386797afa74bec25ede7b",
+      "stored_path": "kept/pr8057-TRACE_GATE-f67515f6cce5b41d.md",
+      "stored_sha256": "f6ddab0e90457dc4941b053a7bbe0faab2c8ec38e23386797afa74bec25ede7b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dff0eee222e8be77e46fe7815756365f0a4bef00",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-cold-review/FINAL_DELTA_HASHES.json",
+      "raw_bytes": 1821,
+      "raw_sha256": "a3fd162dee9c1e0f80cc1848d6e9c81c0b1b967ef560fedaad2e981b6723d6ca",
+      "stored_path": "_objects/a3fd162dee9c1e0f80cc1848d6e9c81c0b1b967ef560fedaad2e981b6723d6ca.gz",
+      "stored_sha256": "e4639ef5a1217c8ea250f012d24ef7bfdb92767c3b977d844bc119192aaac506"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "92a1ff38d0aded90a83dd1eb41a5a5c2891e87f7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-cold-review/FINAL_DELTA_REVIEW.md",
+      "raw_bytes": 2462,
+      "raw_sha256": "03de4ad527b849348b4c36145a292689cec8da75558259b66b11a592543fef0b",
+      "stored_path": "_objects/03de4ad527b849348b4c36145a292689cec8da75558259b66b11a592543fef0b.gz",
+      "stored_sha256": "9e4bd906956ac74f444be20e2178568323cd71c126eeb56203dce7f776f20101"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "92c4287fad03f1e4f13fed3a468f305f986054e5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-cold-review/READ_HASHES.json",
+      "raw_bytes": 662,
+      "raw_sha256": "fede73d02f9abad6c70483a91ffa83858e3aa22780e1c85b82fdacfaba6e1fa9",
+      "stored_path": "_objects/fede73d02f9abad6c70483a91ffa83858e3aa22780e1c85b82fdacfaba6e1fa9.gz",
+      "stored_sha256": "8c72d74e45060a63249ac8252ddd623b08d011f33acebefef5a525d499eb7e47"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "905253d0e52d17acc60678e4e3ca35d0b927b18d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-cold-review/REVIEW.md",
+      "raw_bytes": 3731,
+      "raw_sha256": "608ac9bf0c9fc777c33ace774078a163268dc8a4830f22315307c28c1f23bb77",
+      "stored_path": "_objects/608ac9bf0c9fc777c33ace774078a163268dc8a4830f22315307c28c1f23bb77.gz",
+      "stored_sha256": "08c6595024650f47315ba3a2e7dee57a6cc38cfe0304f372f50d60524cc42290"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b314cbc1e8db89c012d2ef7248e8c176e228c0f3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/DERIVATION.md",
+      "raw_bytes": 9044,
+      "raw_sha256": "8d8e63d96d15e1506c5ce26c9545a48e82cf060c886b38626baca53915a73e75",
+      "stored_path": "_objects/8d8e63d96d15e1506c5ce26c9545a48e82cf060c886b38626baca53915a73e75.gz",
+      "stored_sha256": "db17008fa5aed6c164e319400193f94ef45103882f08900584386c2bae28428c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4814e402c229af42f9f2761d2454642c8a2fe6c6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/MUTANTS.json",
+      "raw_bytes": 238,
+      "raw_sha256": "32b9aaced390c018910ec613d730c86b50c5f1bd4d2142c313de5a15be0cb65f",
+      "stored_path": "_objects/32b9aaced390c018910ec613d730c86b50c5f1bd4d2142c313de5a15be0cb65f.gz",
+      "stored_sha256": "52f63fd0945fd62d5e8de8e3eed4b86a905ed01433eed8d580669c32969930e0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6fcf20df2ce62e3cc30699ff0896402a1d46cf08",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/PARITY_GUARD_CORRECTION.md",
+      "raw_bytes": 315,
+      "raw_sha256": "6bd9b118505699887b570cc57a869fd1870983dd35f618024b7a89119d5ccf31",
+      "stored_path": "_objects/6bd9b118505699887b570cc57a869fd1870983dd35f618024b7a89119d5ccf31.gz",
+      "stored_sha256": "e9af47a61808b9cb85f495abc3dd44dc55d5b8f5856311e7852523d92167a340"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "90c93fa7c1a6f684897351949d432b2e20205b57",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/PORTABLE_BEFORE_PARITY_GUARD.py",
+      "raw_bytes": 2155,
+      "raw_sha256": "886632d94fc2bd8d3038809576b3900e6f874ff2619ac28a3eba620e344dc494",
+      "stored_path": "_objects/886632d94fc2bd8d3038809576b3900e6f874ff2619ac28a3eba620e344dc494.gz",
+      "stored_sha256": "3db7361587c838d5e93c3b00cf64702b9944065964ed10ec2d93bf8f50b4cc31"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "94f766d3e4c3ef8d7b714dd57393ae762cb5adf9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/PORTABLE_RESULT.json",
+      "raw_bytes": 2614,
+      "raw_sha256": "618a17325beb4f66fa59d0db21d292c2f38a415b1c319a12bfd0e7987600403f",
+      "stored_path": "_objects/618a17325beb4f66fa59d0db21d292c2f38a415b1c319a12bfd0e7987600403f.gz",
+      "stored_sha256": "ec83a8ac5583a34db26f96d94d2b5c2beaf3620100bc37e65d42ebb1df4638f9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7be5a7c97a322a8d1a69448846aec0fdfb5204d9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/RESULT.json",
+      "raw_bytes": 188,
+      "raw_sha256": "ad1c028c34d9c094566247fac6318faf403e662326cd6f77d9f489e81a64054a",
+      "stored_path": "_objects/ad1c028c34d9c094566247fac6318faf403e662326cd6f77d9f489e81a64054a.gz",
+      "stored_sha256": "e396f58f88b79f25538dac95bff3ece66752110d1f351acfaacc9c59eea787bf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ae417a9237d5ee733547c91d5f162360e2d42dcc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/SOURCE_BINDINGS.json",
+      "raw_bytes": 585,
+      "raw_sha256": "ab7978fa7a4204fa5beb009a13058203ce637f8f1480c37814851b8b6eff0d21",
+      "stored_path": "_objects/ab7978fa7a4204fa5beb009a13058203ce637f8f1480c37814851b8b6eff0d21.gz",
+      "stored_sha256": "1a9f41af25a9eb7e4f60d5139d85e51a3de1ef5ba0698cb5e6f5e2b96ea92498"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d32cf4cbe9b86bafecefd1c85d65d1b53455f3f7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/check.py",
+      "raw_bytes": 805,
+      "raw_sha256": "9ff0c1d63b1dc8cfb76ae97f6807c0f653aa554b8ec7d8f4c3ab3d83f598aa3f",
+      "stored_path": "_objects/9ff0c1d63b1dc8cfb76ae97f6807c0f653aa554b8ec7d8f4c3ab3d83f598aa3f.gz",
+      "stored_sha256": "44c7cfebba45dc7647ab637f6dfb376fa0cbf03cb4335341a906dfaaab7f75a2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7759465c0c55dfcb6b39ec136b68002e02d9d67f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/electric_constant_MUTANT.py",
+      "raw_bytes": 2155,
+      "raw_sha256": "88e1f12a7ff2bf502be90950c83c509556e9c3099b52138d45bbc416f3df23c4",
+      "stored_path": "_objects/88e1f12a7ff2bf502be90950c83c509556e9c3099b52138d45bbc416f3df23c4.gz",
+      "stored_sha256": "1939f2c6cb985a4920b1ccdd8a7024b0533578f898b858010940caa4d5c6b25b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b59ea0461f3d3e534fe12fa92c82d62e4f69af8b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/electric_constant_MUTANT.stderr",
+      "raw_bytes": 1005,
+      "raw_sha256": "9b01dd7936b5d44217444864d22ba0bd6c7b5e65ec71ffeb9ebb66204389280c",
+      "stored_path": "_objects/9b01dd7936b5d44217444864d22ba0bd6c7b5e65ec71ffeb9ebb66204389280c.gz",
+      "stored_sha256": "57951207176834a4479a68496fde584a3bd5dd1646763f3d3c5e0ae0d1d51380"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "695e754968a10e816c10ad56c98fbdb12b32f4c1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/face_parity_MUTANT.py",
+      "raw_bytes": 2155,
+      "raw_sha256": "d4d56125cf83c494dfe100093b2cb856a4962427d01eda8fa695cfbbd69ae47e",
+      "stored_path": "_objects/d4d56125cf83c494dfe100093b2cb856a4962427d01eda8fa695cfbbd69ae47e.gz",
+      "stored_sha256": "d4a396f0b507641c306e0f74f65291c38e2d11160c363ec7a253d302b0451eec"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5abb83c67f34bf71c615f16ce8802ed72a924c87",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/face_parity_REPAIRED_MUTANT.py",
+      "raw_bytes": 2175,
+      "raw_sha256": "40b78b63da0a1b6f75da802ed1782e54c13595d78d91891815139efdd3ff66a9",
+      "stored_path": "_objects/40b78b63da0a1b6f75da802ed1782e54c13595d78d91891815139efdd3ff66a9.gz",
+      "stored_sha256": "b3f5888bb1b68270d292ec71e96a6b4c1f40d2304e34588e5fc8469ac30827e0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0699768b7afd4cf42a0ca584bb15c59ee9dba85b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/face_parity_REPAIRED_MUTANT.stderr",
+      "raw_bytes": 996,
+      "raw_sha256": "911da7560bb0ed9191e9df411327dbf22e118497697174f7237892055bd4a6bf",
+      "stored_path": "_objects/911da7560bb0ed9191e9df411327dbf22e118497697174f7237892055bd4a6bf.gz",
+      "stored_sha256": "898e8dcff10a9e9d6be16c0999a4eb0c13723e1b615023b6ce8b149d6c2c5af1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b70855a4ecaf2e35f9e743d2867d8819140c184d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/native_half_MUTANT.py",
+      "raw_bytes": 2155,
+      "raw_sha256": "cd164f9aec9ff63ccca7d746d48de586891d19f2e134e5c840127da5005daa7f",
+      "stored_path": "_objects/cd164f9aec9ff63ccca7d746d48de586891d19f2e134e5c840127da5005daa7f.gz",
+      "stored_sha256": "68ddeab13828e8e1e0cf9d582d0cda2e6f8e710fbc172ab40b6a45af3ae6145e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "55f5825a78dc66a10da627b7990444541d172d9d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/native_half_MUTANT.stderr",
+      "raw_bytes": 960,
+      "raw_sha256": "0ce9ae8cdfcbe8cfa66f39777b7a03542cb4e85100e75bd280acdafc72bbc290",
+      "stored_path": "_objects/0ce9ae8cdfcbe8cfa66f39777b7a03542cb4e85100e75bd280acdafc72bbc290.gz",
+      "stored_sha256": "382e1f62ae049446878960937d8dcea996d65b42d489d6bd6e194e609fa9048f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c1c1a5198f917fe8fb1ca6fec578513f769f3ec1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-local-stability-design/portable_check.py",
+      "raw_bytes": 2175,
+      "raw_sha256": "b0d8ff059ecf135a5b8a2a120c3a8b858309e70a6f30610abe8b8f4444368c42",
+      "stored_path": "_objects/b0d8ff059ecf135a5b8a2a120c3a8b858309e70a6f30610abe8b8f4444368c42.gz",
+      "stored_sha256": "728e37c31cfa8ad52279e77151c1c285754a4b10d481f2db30bf8bfde654ef75"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c1c1a5198f917fe8fb1ca6fec578513f769f3ec1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/scripts/native_weak_electric_defect_density_controls_2026_09_08.py",
+      "raw_bytes": 2175,
+      "raw_sha256": "b0d8ff059ecf135a5b8a2a120c3a8b858309e70a6f30610abe8b8f4444368c42",
+      "stored_path": "_objects/b0d8ff059ecf135a5b8a2a120c3a8b858309e70a6f30610abe8b8f4444368c42.gz",
+      "stored_sha256": "728e37c31cfa8ad52279e77151c1c285754a4b10d481f2db30bf8bfde654ef75"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7e864703bd06239b822ecdee63cf006f3158f48f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-quadratic-density-cold-review/DERIVATION.md",
+      "raw_bytes": 3142,
+      "raw_sha256": "6f7083c722de03d247ce9dcde339230aa3901225f5f9219c9026c0fa71c56459",
+      "stored_path": "_objects/6f7083c722de03d247ce9dcde339230aa3901225f5f9219c9026c0fa71c56459.gz",
+      "stored_sha256": "2e737593f062b6b3c9715930f0882f22c4b8457e10d6aeda678c59d7fca20eb1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b8bd1140b30f9418f071fde30e3e4ffded7da108",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-quadratic-density-cold-review/HASHES.json",
+      "raw_bytes": 257,
+      "raw_sha256": "f11bced92e92b2ef072f6ca687e02c545349673cbbba074a600f2d92e3ccbef7",
+      "stored_path": "_objects/f11bced92e92b2ef072f6ca687e02c545349673cbbba074a600f2d92e3ccbef7.gz",
+      "stored_sha256": "9361b844fa68b947e498cf18c7842bb8d0c1c2bb1e5cce044f1e1f8098a25f36"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "173d18c42c751b583293bf7f1aa31b60931fe368",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-quadratic-density-cold-review/RESULT.json",
+      "raw_bytes": 825,
+      "raw_sha256": "0a056b492bc4ddb906a292ebb050b73e26ab431072ff87ca886f87daf812e754",
+      "stored_path": "_objects/0a056b492bc4ddb906a292ebb050b73e26ab431072ff87ca886f87daf812e754.gz",
+      "stored_sha256": "1f3a5cdd6e6d60cbc2e36616256f6be80546aa407d6feac8410fb4085545e3f3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "164511ca80729217f380321153f6de2b83582f67",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-quadratic-density-cold-review/check.py",
+      "raw_bytes": 1268,
+      "raw_sha256": "2540688a477744a76e9f9367b1d6dc99edd1a4bf9a0a27b5ae299953e3ac6638",
+      "stored_path": "_objects/2540688a477744a76e9f9367b1d6dc99edd1a4bf9a0a27b5ae299953e3ac6638.gz",
+      "stored_sha256": "4078f5670a27c31a327aed01ed64fb47794a683e109656da997d1b8cf45a363b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d7e3175095f9ae725fd7f9c9011191244a2bdc0e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-quadratic-density/DERIVATION.md",
+      "raw_bytes": 3410,
+      "raw_sha256": "c1d077595ce20a2693e3ee167abd1d5c06deafd35cab4d0c9c23b3b4655b03fc",
+      "stored_path": "_objects/c1d077595ce20a2693e3ee167abd1d5c06deafd35cab4d0c9c23b3b4655b03fc.gz",
+      "stored_sha256": "265385d42c4084e1576e2226b27d50c67c036deb0bc685c7703d1dd52d0de580"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9ecacdbcc23bf8fdcc1a57632a3f178e70deb04a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-quadratic-density/FREEZE.json",
+      "raw_bytes": 136,
+      "raw_sha256": "99c505a0262ec4207e64068a94b9e45a04c4af70e9d643dc5364ce65e8e155a6",
+      "stored_path": "_objects/99c505a0262ec4207e64068a94b9e45a04c4af70e9d643dc5364ce65e8e155a6.gz",
+      "stored_sha256": "9f73f8ef47c4abbceb6fa2b3c59d13d1b356a18aa11c5d89f71568dec5e5380b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "50ec3bb3f1c4d1008c52e3095ac40f3c14b008a0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-thermal-quadratic-independent/DERIVATION.md",
+      "raw_bytes": 2416,
+      "raw_sha256": "4a312eec4521a6385a1e1c7786aab0d684c4d5d855aa95e92542e44ba7f6ca1f",
+      "stored_path": "_objects/4a312eec4521a6385a1e1c7786aab0d684c4d5d855aa95e92542e44ba7f6ca1f.gz",
+      "stored_sha256": "a6aac4212bcdaa23a3e6af871f7362d1aa3aaa7027bb5169234d4234b3e1b5a9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "201a5e2dd3b5ca7b9a548a0bb6f8d7215ad8fe4d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-thermal-quadratic-independent/RESULT.json",
+      "raw_bytes": 88,
+      "raw_sha256": "32c90d09f19255a7169712e914594c62b123ae6e0093d2ebfa95f52640d6d344",
+      "stored_path": "_objects/32c90d09f19255a7169712e914594c62b123ae6e0093d2ebfa95f52640d6d344.gz",
+      "stored_sha256": "960874ddac7e3f1ba44af569276da631cd3307b2619ddb2bd7595f1a36efe4ee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e8de19206f9e6bc303b0bdd8682c6148ddc9805d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/evidence/native-weak-electric-thermal-quadratic-independent/check.py",
+      "raw_bytes": 816,
+      "raw_sha256": "1d6190cfed159f632a3a0142da20a2f39443137467f3a70445129ac3638c8c82",
+      "stored_path": "_objects/1d6190cfed159f632a3a0142da20a2f39443137467f3a70445129ac3638c8c82.gz",
+      "stored_sha256": "29448ff686d71471dc37151f8d06e23b25c05419739fd1788d45c65e5158d356"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "52aafba1412dae97a3e902748bffc37844e829b2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/ISOLATED.json",
+      "raw_bytes": 3508,
+      "raw_sha256": "9fd8dfc362a485eff6cbd523e64bf117f64e146de017ab00d6ca19c26e6fe6e6",
+      "stored_path": "_objects/9fd8dfc362a485eff6cbd523e64bf117f64e146de017ab00d6ca19c26e6fe6e6.gz",
+      "stored_sha256": "229df17102887a3458336884dd13e50ad1fee7b496be406b6825154f6f5d82c6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e37a70745de3fe57a5b162f9f0704b138446c2d6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/ISOLATION_RECEIPT.json",
+      "raw_bytes": 590,
+      "raw_sha256": "762e8d604921a41fdd2d370eaf8ee451171162d45bbaead171ee28fc83d4f045",
+      "stored_path": "_objects/762e8d604921a41fdd2d370eaf8ee451171162d45bbaead171ee28fc83d4f045.gz",
+      "stored_sha256": "7cc325dac05c2c950d94de51ad3b436f839d008b16f4cc1700c6e1b077a37ef0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c7e148da1c359ff6e37b047fe13c213302c49254",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/MUTANTS.json",
+      "raw_bytes": 300,
+      "raw_sha256": "4ae47e43818561eb3c7b49449065fc2e36cb8fa14648ebb285c9c4e267ef29f2",
+      "stored_path": "_objects/4ae47e43818561eb3c7b49449065fc2e36cb8fa14648ebb285c9c4e267ef29f2.gz",
+      "stored_sha256": "99b45e0fbb791cbbf75d70f2b705f164970fed0bc589b3a34258ce435c286ce8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "55e646cdcd6669eaadc419c3f6487217e285eb35",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/electric_constant.diff",
+      "raw_bytes": 439,
+      "raw_sha256": "769b2de5253f5daa3d2d0ef981516a4930a262d43e0a1e48eb75b9d726d97043",
+      "stored_path": "_objects/769b2de5253f5daa3d2d0ef981516a4930a262d43e0a1e48eb75b9d726d97043.gz",
+      "stored_sha256": "002b802ba43b647fecfa5a91ac66589e50ad74f832d2b83bd968db23ea1859bd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "84976672d53bb17e6a3f3d0994ceb10548962d77",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/electric_constant.stderr",
+      "raw_bytes": 1232,
+      "raw_sha256": "5d2120877a2e31a617c60eec6fc74e439fa8c009a930076ee327df5c4120b7eb",
+      "stored_path": "_objects/5d2120877a2e31a617c60eec6fc74e439fa8c009a930076ee327df5c4120b7eb.gz",
+      "stored_sha256": "5f66720d900bbc67ff890c03db4c96b5a1f636e2219432928be7ed07b2b6ca05"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bb7e3ef645dcdd0c7a611891eb0fe406b21f0c52",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/face_parity.diff",
+      "raw_bytes": 553,
+      "raw_sha256": "f9697a789568a4b52e2ac2eef3f601fbd28e8210d7bc6a82d8d4cc4551562992",
+      "stored_path": "_objects/f9697a789568a4b52e2ac2eef3f601fbd28e8210d7bc6a82d8d4cc4551562992.gz",
+      "stored_sha256": "a366c8bcdca708fe1fb76f9836bc67c80ad6c36d25437171e0e1735271479efb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c9987ee710bf08d1cd13410cf3a25b1e1104c76a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/face_parity.stderr",
+      "raw_bytes": 1214,
+      "raw_sha256": "0d51a55f744f0ccdf78df91e4a7d887b42b2ebfbb98756681060a09d93ffaa8d",
+      "stored_path": "_objects/0d51a55f744f0ccdf78df91e4a7d887b42b2ebfbb98756681060a09d93ffaa8d.gz",
+      "stored_sha256": "dc10c541ec50e9c91ed0cff0bb0e338987b4ee70887b4c040ab487f9718b4911"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cb863df624329329188110a0f9ab5b4bf6ad8379",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/native_half.diff",
+      "raw_bytes": 618,
+      "raw_sha256": "74aa767653e833e17632030ae5daab88dd380dcfa0ca6fbbf87586eed1999712",
+      "stored_path": "_objects/74aa767653e833e17632030ae5daab88dd380dcfa0ca6fbbf87586eed1999712.gz",
+      "stored_sha256": "8c542060be7cd0395f1f003a3f1ebdbb277c9f0ef13ab3eae09854387c874a52"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1806d165e2f9f2fc6ec43eb2691aa6a558e1ee71",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/PORT_RECORDS/native_half.stderr",
+      "raw_bytes": 1205,
+      "raw_sha256": "b2f5366fda38c6cbe80d85d90529d40e461fae22dfb0f694412775f433f9874f",
+      "stored_path": "_objects/b2f5366fda38c6cbe80d85d90529d40e461fae22dfb0f694412775f433f9874f.gz",
+      "stored_sha256": "1aed9d599d096e196aa4405d3e6b2ca9e6fc3ab2afe2e904ba441c0d8a0f7637"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "720648b79f661f2ea3024ebb84f09be548c30f12",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/SOURCE_FREEZE.json",
+      "raw_bytes": 993,
+      "raw_sha256": "8708e816d7cb59b91aaa5a95176054a6ae751f9dede7ac1a9f9908d1ac90a8d4",
+      "stored_path": "_objects/8708e816d7cb59b91aaa5a95176054a6ae751f9dede7ac1a9f9908d1ac90a8d4.gz",
+      "stored_sha256": "d754cafdef1b46135f80c9868aa082211f9b38276c739aeef8908f3702eea2d1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a424e8880974ec1cd5aa1773817a9527c6e86c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "stored_path": "_objects/3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715.gz",
+      "stored_sha256": "1ed8c0db82277768be0b5b2b9d116cdf620ea988d743a3f32cfa40a2310f589d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a424e8880974ec1cd5aa1773817a9527c6e86c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "stored_path": "_objects/3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715.gz",
+      "stored_sha256": "1ed8c0db82277768be0b5b2b9d116cdf620ea988d743a3f32cfa40a2310f589d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5d5058e2b62c22b3aeca65ecd4ba6d831fe5b4d9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "raw_bytes": 47900,
+      "raw_sha256": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
+      "stored_path": "_objects/bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163.gz",
+      "stored_sha256": "29f13fc73c65f1cbe3e8ca89779ddcfb01ebbf65a680327c79d420606e0737dc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5d5058e2b62c22b3aeca65ecd4ba6d831fe5b4d9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "raw_bytes": 47900,
+      "raw_sha256": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
+      "stored_path": "_objects/bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163.gz",
+      "stored_sha256": "29f13fc73c65f1cbe3e8ca89779ddcfb01ebbf65a680327c79d420606e0737dc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8e33a7523f1c3f9caf9d27b8b5df847a136a0f68",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md",
+      "raw_bytes": 11989,
+      "raw_sha256": "3671775148e29aff6018333987cf686fc5023ad0a5534a3aa9ff17768b86eb2e",
+      "stored_path": "_objects/3671775148e29aff6018333987cf686fc5023ad0a5534a3aa9ff17768b86eb2e.gz",
+      "stored_sha256": "6fd46a9dda010b30e057cba41791bb01cd73f669635d838a82e41db9a9d5bbb8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1194992e47f959f55c0bbec5383f86cd80a81f63",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+      "raw_bytes": 9797,
+      "raw_sha256": "c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04",
+      "stored_path": "_objects/c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04.gz",
+      "stored_sha256": "51bee116f463e60801f98d5ed1aeab42d4cd3a8b7f012f0844d2792d4b78534d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1194992e47f959f55c0bbec5383f86cd80a81f63",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+      "raw_bytes": 9797,
+      "raw_sha256": "c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04",
+      "stored_path": "_objects/c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04.gz",
+      "stored_sha256": "51bee116f463e60801f98d5ed1aeab42d4cd3a8b7f012f0844d2792d4b78534d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d0c58f8f8962b6b3031e802936a52d5343d9969f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/outputs/native_weak_electric_defect_density_2026_09_08.json",
+      "raw_bytes": 3509,
+      "raw_sha256": "8eba065b5f39eae1bb15ad4039cb52bf8c2353ab999159f4e9b801c08c3931b0",
+      "stored_path": "_objects/8eba065b5f39eae1bb15ad4039cb52bf8c2353ab999159f4e9b801c08c3931b0.gz",
+      "stored_sha256": "d64ace110074d84a5a4d009e3e8184703f6b8d60565ab6e0b6b1ab2c359fbfc0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6e12329daed5e69749c91fa4f7919ff8826fca09",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_QUADRATIC_8708/scripts/native_weak_electric_defect_density_2026_09_08.py",
+      "raw_bytes": 1528,
+      "raw_sha256": "0943e138495ee9a8aa41e040d623883f415cf84719e8c4ee9ffb6417c88e16db",
+      "stored_path": "_objects/0943e138495ee9a8aa41e040d623883f415cf84719e8c4ee9ffb6417c88e16db.gz",
+      "stored_sha256": "44e002786a3f5beb575ade96a98dab20c160f2fee1cfc703e54291aaf95d758d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0f0051be0da64670e880a2c09ddc58d1fd81e82b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/ISOLATED.json",
+      "raw_bytes": 3589,
+      "raw_sha256": "826c2c5ea9e7acc1de68f2efb762dde5396d4b4703324e5c533f6013380eeddc",
+      "stored_path": "_objects/826c2c5ea9e7acc1de68f2efb762dde5396d4b4703324e5c533f6013380eeddc.gz",
+      "stored_sha256": "c251602c55ddb30cec7125fa8b2fd538b0b201194c6b0b453f6f69f158bd7a8f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "39853452c5e00cca3d56481adbc0736fb6bafbb6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/ISOLATION_RECEIPT.json",
+      "raw_bytes": 590,
+      "raw_sha256": "0965a5ad0ee2b25bf69c66958e04b0130e545f41d1706db7685bf05b5c245f30",
+      "stored_path": "_objects/0965a5ad0ee2b25bf69c66958e04b0130e545f41d1706db7685bf05b5c245f30.gz",
+      "stored_sha256": "753f5d70bafa4ce38b8a69c0846e2047351814b51d91117593904b44775761ba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "984c4dba0b4b117c1ea513922e70c9cfb8df1025",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/MUTANTS.json",
+      "raw_bytes": 397,
+      "raw_sha256": "a8c03195921725260cc7dd3ff0400fdaf509fd5c3f984bb5afee48fb57f57f89",
+      "stored_path": "_objects/a8c03195921725260cc7dd3ff0400fdaf509fd5c3f984bb5afee48fb57f57f89.gz",
+      "stored_sha256": "1332a04c5b9556272e9adb5d1a8783ed3469032e53011fe4072da3e66a48270d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a0a203fb22b30895e152271eb58d30327dedf492",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/electric_constant.stderr",
+      "raw_bytes": 1232,
+      "raw_sha256": "4d26fe7a243bb4f50c01ea6f5843da24457f4e1e127397a043eeeae055e2ca6e",
+      "stored_path": "_objects/4d26fe7a243bb4f50c01ea6f5843da24457f4e1e127397a043eeeae055e2ca6e.gz",
+      "stored_sha256": "bca59aa01504c7822deb0f239c61c62eb8704a0910503de5c0c26386573025da"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2990ba964bc45c9ade3f4f4cbc4fff7c6be5e6af",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/face_parity.stderr",
+      "raw_bytes": 1214,
+      "raw_sha256": "c4a07fb0a699f511a416346a000eabee668f0f2efb9f39ba98db6541f63d0665",
+      "stored_path": "_objects/c4a07fb0a699f511a416346a000eabee668f0f2efb9f39ba98db6541f63d0665.gz",
+      "stored_sha256": "336ced3da579fd4ba084131ef24b368ae853f36d7db68b826e0295aba9e401e2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "415a69b6b24d744efc4d2a20fbb03795195359ca",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/native_half.stderr",
+      "raw_bytes": 1205,
+      "raw_sha256": "6fee4b4f8423941d4bea8dbaff5b938aec6faf9990844d012f468e219b713dfb",
+      "stored_path": "_objects/6fee4b4f8423941d4bea8dbaff5b938aec6faf9990844d012f468e219b713dfb.gz",
+      "stored_sha256": "14de37c91f4d59b3362a8c2fbf850190a4cbafad8c2a6898cf18b930c9c2921a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f5a8a9f1aa00a297144b94f56abd33d17e6faf03",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/PORT_RECORDS/quadratic75.stderr",
+      "raw_bytes": 1198,
+      "raw_sha256": "7ef72d0fe6419091ebe2f7e5226df74c613699f6f47e3a7dcd12e961840a5a8c",
+      "stored_path": "_objects/7ef72d0fe6419091ebe2f7e5226df74c613699f6f47e3a7dcd12e961840a5a8c.gz",
+      "stored_sha256": "ebe348bcf4620c4ba4b431a7b887e3aae3517bf37cbb44edd5855fa886ccbb70"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c595b44756cd0446d44bdc7fb1ab4027897926d2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/SOURCE_FREEZE.json",
+      "raw_bytes": 993,
+      "raw_sha256": "724f7b0f640f08682e5c485ac05e013c7c1668ad7a213c11866616a83b6bea2a",
+      "stored_path": "_objects/724f7b0f640f08682e5c485ac05e013c7c1668ad7a213c11866616a83b6bea2a.gz",
+      "stored_sha256": "e448327233be860841d979449010bfbbb7e8e6ca0e8f4df60e7b633663f10167"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b410f4653e653bf33be91168886bba798b74e47d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md",
+      "raw_bytes": 16151,
+      "raw_sha256": "789e416f4368d0d618f74934f5b6e3b48742ce3cc78992e3f2b2496c83d5f629",
+      "stored_path": "_objects/789e416f4368d0d618f74934f5b6e3b48742ce3cc78992e3f2b2496c83d5f629.gz",
+      "stored_sha256": "0748cd133c08697ca6a086bdcccaad09424c07a37a5791816ea5a4b305867db0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "13e258284f7aef3149eb80e2059d1c19198fdcd4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/outputs/native_weak_electric_defect_density_2026_09_08.json",
+      "raw_bytes": 3589,
+      "raw_sha256": "a43a9f1ec5345d48d6c09fe73691769119948c113887c84384bc313c74b862fd",
+      "stored_path": "_objects/a43a9f1ec5345d48d6c09fe73691769119948c113887c84384bc313c74b862fd.gz",
+      "stored_sha256": "dec733a1e0655e0cb3209462f5fc607f83970db9dc1e72383c60403c4dc2e91c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "80c8a209e4f81690d3b636d295eed36aa23c4c99",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/scripts/native_weak_electric_defect_density_2026_09_08.py",
+      "raw_bytes": 1593,
+      "raw_sha256": "8bd0cc61c2206104f7902ecfb594b7dc016cd59443f4223623fba9f9166aefc4",
+      "stored_path": "_objects/8bd0cc61c2206104f7902ecfb594b7dc016cd59443f4223623fba9f9166aefc4.gz",
+      "stored_sha256": "d44955b038e3378d4aa6bafe8a62250e1fedf81ec4c194ac2ca5005d4c8c7933"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7541e6f243e83bf5d13d3a05a44fbd0a3e64d1c5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/history/BEFORE_THERMAL_724f/scripts/native_weak_electric_defect_density_controls_2026_09_08.py",
+      "raw_bytes": 3440,
+      "raw_sha256": "1581885773f5695abb9bc5ef9e8ab917ef5ebf8fba05ccee9e0afc1bd2df2ea1",
+      "stored_path": "_objects/1581885773f5695abb9bc5ef9e8ab917ef5ebf8fba05ccee9e0afc1bd2df2ea1.gz",
+      "stored_sha256": "a75c040cce5563fbd5c363b6043ad56e25136cc0c6655f2a376b54ee6deecd6d"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-weak-electric-defect-density-20260908/",
+  "revision": "063f73e73724d53e2b84c75f4b634d7f6373cdf3",
+  "schema_version": 1,
+  "unique_blobs": {
+    "035eacd2874196050c64115d138e8d382aa12722": {
+      "occurrences": 1,
+      "raw_bytes": 699,
+      "raw_sha256": "2df1bb66c8ff505cf35b0850ec6e971bc5e5362cbec308bf712c5191a1889856"
+    },
+    "0699768b7afd4cf42a0ca584bb15c59ee9dba85b": {
+      "occurrences": 1,
+      "raw_bytes": 996,
+      "raw_sha256": "911da7560bb0ed9191e9df411327dbf22e118497697174f7237892055bd4a6bf"
+    },
+    "09418b9144486de22491be6b45ddc5eee8ba3138": {
+      "occurrences": 1,
+      "raw_bytes": 1313,
+      "raw_sha256": "d53e485c9a10cfae2ccb65a73684cfb88527eb70563046e13402d75a040216cd"
+    },
+    "0e24e70c3fe29037b132dbde6a16473cafa60a5b": {
+      "occurrences": 1,
+      "raw_bytes": 173,
+      "raw_sha256": "094959aa94a05bc8fed832d4c516c0c0a9c88f9300b88d69322000d0d7b2f339"
+    },
+    "0f0051be0da64670e880a2c09ddc58d1fd81e82b": {
+      "occurrences": 1,
+      "raw_bytes": 3589,
+      "raw_sha256": "826c2c5ea9e7acc1de68f2efb762dde5396d4b4703324e5c533f6013380eeddc"
+    },
+    "1194992e47f959f55c0bbec5383f86cd80a81f63": {
+      "occurrences": 2,
+      "raw_bytes": 9797,
+      "raw_sha256": "c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04"
+    },
+    "13e258284f7aef3149eb80e2059d1c19198fdcd4": {
+      "occurrences": 1,
+      "raw_bytes": 3589,
+      "raw_sha256": "a43a9f1ec5345d48d6c09fe73691769119948c113887c84384bc313c74b862fd"
+    },
+    "164511ca80729217f380321153f6de2b83582f67": {
+      "occurrences": 1,
+      "raw_bytes": 1268,
+      "raw_sha256": "2540688a477744a76e9f9367b1d6dc99edd1a4bf9a0a27b5ae299953e3ac6638"
+    },
+    "16e03b18e1ff49072c56d81da2961ea86837144b": {
+      "occurrences": 1,
+      "raw_bytes": 1146,
+      "raw_sha256": "f6ddab0e90457dc4941b053a7bbe0faab2c8ec38e23386797afa74bec25ede7b"
+    },
+    "173d18c42c751b583293bf7f1aa31b60931fe368": {
+      "occurrences": 1,
+      "raw_bytes": 825,
+      "raw_sha256": "0a056b492bc4ddb906a292ebb050b73e26ab431072ff87ca886f87daf812e754"
+    },
+    "177d98092776aa9412ce93193604b1b6bd901699": {
+      "occurrences": 1,
+      "raw_bytes": 99,
+      "raw_sha256": "1de33ecf658e067d0771208d0fdf67d43c196ad926b2f22e797a464f53625f6f"
+    },
+    "1806d165e2f9f2fc6ec43eb2691aa6a558e1ee71": {
+      "occurrences": 1,
+      "raw_bytes": 1205,
+      "raw_sha256": "b2f5366fda38c6cbe80d85d90529d40e461fae22dfb0f694412775f433f9874f"
+    },
+    "1d1dbac086aa4276d5e03c40b7b121db538878b8": {
+      "occurrences": 1,
+      "raw_bytes": 152,
+      "raw_sha256": "8c8f200adf82d03f31070543cc14a794f03e50bfaea977448829637b140f78ae"
+    },
+    "201a5e2dd3b5ca7b9a548a0bb6f8d7215ad8fe4d": {
+      "occurrences": 1,
+      "raw_bytes": 88,
+      "raw_sha256": "32c90d09f19255a7169712e914594c62b123ae6e0093d2ebfa95f52640d6d344"
+    },
+    "237ebaa65618eb626936211cd54e555ecbdaa603": {
+      "occurrences": 1,
+      "raw_bytes": 419,
+      "raw_sha256": "753a9ac9cf590f36b569dad973a0293746f225fdf912ed3edab50cc27a318690"
+    },
+    "2440d6eca0e6cb7ffc2a449b2bb55d9ec785b98b": {
+      "occurrences": 1,
+      "raw_bytes": 1198,
+      "raw_sha256": "3dc5d5a4d94da782c7fe6f3a28cbf8e91317844f91381617c7c6db5715b99193"
+    },
+    "2638181f3eac5dc051ede28d9a8a9216b9ce35e2": {
+      "occurrences": 1,
+      "raw_bytes": 210,
+      "raw_sha256": "d643c2c8a1d0849e8ccf4004637c4e2d71410d8f76161904df1e3d1ea2ba7986"
+    },
+    "2990ba964bc45c9ade3f4f4cbc4fff7c6be5e6af": {
+      "occurrences": 1,
+      "raw_bytes": 1214,
+      "raw_sha256": "c4a07fb0a699f511a416346a000eabee668f0f2efb9f39ba98db6541f63d0665"
+    },
+    "29935c15d49db0176703f775cb9099071bac7365": {
+      "occurrences": 1,
+      "raw_bytes": 1674,
+      "raw_sha256": "457594ae5738a2b450a5cdffcfe4e5309b5cf8356c983221e67f54543a7d7280"
+    },
+    "3573566a4915ef1d0871ab8e34e278c3ed29c719": {
+      "occurrences": 1,
+      "raw_bytes": 996,
+      "raw_sha256": "6da42f08b04588a9856c18caa80d8fd89b9079968a8c546b326531a3e2cdec7d"
+    },
+    "37d8ab40c0c06db5a365c291de0e93ac5afadeb9": {
+      "occurrences": 1,
+      "raw_bytes": 627,
+      "raw_sha256": "18c78f4290f27577c68f2f72e709d4c1c780030dc9fb1d5fb7b82dfe787298fc"
+    },
+    "39853452c5e00cca3d56481adbc0736fb6bafbb6": {
+      "occurrences": 1,
+      "raw_bytes": 590,
+      "raw_sha256": "0965a5ad0ee2b25bf69c66958e04b0130e545f41d1706db7685bf05b5c245f30"
+    },
+    "415a69b6b24d744efc4d2a20fbb03795195359ca": {
+      "occurrences": 1,
+      "raw_bytes": 1205,
+      "raw_sha256": "6fee4b4f8423941d4bea8dbaff5b938aec6faf9990844d012f468e219b713dfb"
+    },
+    "42777d55c6639251f3c5ff186dbb83b08c4db8e6": {
+      "occurrences": 1,
+      "raw_bytes": 147,
+      "raw_sha256": "2ef5d8e69693a33991f4bf13b5ad2eb05c6e28fa2dec80782d866870c2663bce"
+    },
+    "42ef0c7c4369822d3fefc3bac30a7c9cde3d7df8": {
+      "occurrences": 1,
+      "raw_bytes": 590,
+      "raw_sha256": "c6632c4fcab262cdd7b8c7428888a0dd19615d5f7f632449ec7828af03e5693d"
+    },
+    "4814e402c229af42f9f2761d2454642c8a2fe6c6": {
+      "occurrences": 1,
+      "raw_bytes": 238,
+      "raw_sha256": "32b9aaced390c018910ec613d730c86b50c5f1bd4d2142c313de5a15be0cb65f"
+    },
+    "50ec3bb3f1c4d1008c52e3095ac40f3c14b008a0": {
+      "occurrences": 1,
+      "raw_bytes": 2416,
+      "raw_sha256": "4a312eec4521a6385a1e1c7786aab0d684c4d5d855aa95e92542e44ba7f6ca1f"
+    },
+    "52aafba1412dae97a3e902748bffc37844e829b2": {
+      "occurrences": 1,
+      "raw_bytes": 3508,
+      "raw_sha256": "9fd8dfc362a485eff6cbd523e64bf117f64e146de017ab00d6ca19c26e6fe6e6"
+    },
+    "55e646cdcd6669eaadc419c3f6487217e285eb35": {
+      "occurrences": 1,
+      "raw_bytes": 439,
+      "raw_sha256": "769b2de5253f5daa3d2d0ef981516a4930a262d43e0a1e48eb75b9d726d97043"
+    },
+    "55f5825a78dc66a10da627b7990444541d172d9d": {
+      "occurrences": 1,
+      "raw_bytes": 960,
+      "raw_sha256": "0ce9ae8cdfcbe8cfa66f39777b7a03542cb4e85100e75bd280acdafc72bbc290"
+    },
+    "5abb83c67f34bf71c615f16ce8802ed72a924c87": {
+      "occurrences": 1,
+      "raw_bytes": 2175,
+      "raw_sha256": "40b78b63da0a1b6f75da802ed1782e54c13595d78d91891815139efdd3ff66a9"
+    },
+    "5d5058e2b62c22b3aeca65ecd4ba6d831fe5b4d9": {
+      "occurrences": 2,
+      "raw_bytes": 47900,
+      "raw_sha256": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163"
+    },
+    "63a424e8880974ec1cd5aa1773817a9527c6e86c": {
+      "occurrences": 2,
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715"
+    },
+    "68abaa39e1794218fdd936113ee42c53ccb3e455": {
+      "occurrences": 1,
+      "raw_bytes": 98,
+      "raw_sha256": "f6dcb859f9e9afed87261a719f28801cf4a32438c1f555aae658a74a52c58008"
+    },
+    "695e754968a10e816c10ad56c98fbdb12b32f4c1": {
+      "occurrences": 1,
+      "raw_bytes": 2155,
+      "raw_sha256": "d4d56125cf83c494dfe100093b2cb856a4962427d01eda8fa695cfbbd69ae47e"
+    },
+    "6be08aef27783b58f04f2020e87c6653910eed05": {
+      "occurrences": 1,
+      "raw_bytes": 3652,
+      "raw_sha256": "c2c1f2df35c24e43faff812568ae2f5b5c77584ed0d0949bbaed5592cc47933b"
+    },
+    "6e12329daed5e69749c91fa4f7919ff8826fca09": {
+      "occurrences": 1,
+      "raw_bytes": 1528,
+      "raw_sha256": "0943e138495ee9a8aa41e040d623883f415cf84719e8c4ee9ffb6417c88e16db"
+    },
+    "6fcf20df2ce62e3cc30699ff0896402a1d46cf08": {
+      "occurrences": 1,
+      "raw_bytes": 315,
+      "raw_sha256": "6bd9b118505699887b570cc57a869fd1870983dd35f618024b7a89119d5ccf31"
+    },
+    "720648b79f661f2ea3024ebb84f09be548c30f12": {
+      "occurrences": 1,
+      "raw_bytes": 993,
+      "raw_sha256": "8708e816d7cb59b91aaa5a95176054a6ae751f9dede7ac1a9f9908d1ac90a8d4"
+    },
+    "7541e6f243e83bf5d13d3a05a44fbd0a3e64d1c5": {
+      "occurrences": 1,
+      "raw_bytes": 3440,
+      "raw_sha256": "1581885773f5695abb9bc5ef9e8ab917ef5ebf8fba05ccee9e0afc1bd2df2ea1"
+    },
+    "77282eddbd5198fe3f6f0a54ce463a193b0653be": {
+      "occurrences": 1,
+      "raw_bytes": 1899,
+      "raw_sha256": "bb5a9fdebd41249920f1f84c1464f3c0bc2459dfacedfc5593dbe360aa205b8a"
+    },
+    "774afd69095cb1658ebc7ad20b3079be5458a124": {
+      "occurrences": 1,
+      "raw_bytes": 1232,
+      "raw_sha256": "df3e01d98cc551e2b8687d343d5287a0c6d9e868dc6161ec5b11b39d3cf557ec"
+    },
+    "7759465c0c55dfcb6b39ec136b68002e02d9d67f": {
+      "occurrences": 1,
+      "raw_bytes": 2155,
+      "raw_sha256": "88e1f12a7ff2bf502be90950c83c509556e9c3099b52138d45bbc416f3df23c4"
+    },
+    "7be5a7c97a322a8d1a69448846aec0fdfb5204d9": {
+      "occurrences": 1,
+      "raw_bytes": 188,
+      "raw_sha256": "ad1c028c34d9c094566247fac6318faf403e662326cd6f77d9f489e81a64054a"
+    },
+    "7e864703bd06239b822ecdee63cf006f3158f48f": {
+      "occurrences": 1,
+      "raw_bytes": 3142,
+      "raw_sha256": "6f7083c722de03d247ce9dcde339230aa3901225f5f9219c9026c0fa71c56459"
+    },
+    "80c8a209e4f81690d3b636d295eed36aa23c4c99": {
+      "occurrences": 1,
+      "raw_bytes": 1593,
+      "raw_sha256": "8bd0cc61c2206104f7902ecfb594b7dc016cd59443f4223623fba9f9166aefc4"
+    },
+    "83e68fd16345ad8cc08081844be044a2687024a0": {
+      "occurrences": 1,
+      "raw_bytes": 1089,
+      "raw_sha256": "8ca6b16bf3d48223a008cb8efe37cf02aa9d1e106b8979b64d28481dbfcc9462"
+    },
+    "84976672d53bb17e6a3f3d0994ceb10548962d77": {
+      "occurrences": 1,
+      "raw_bytes": 1232,
+      "raw_sha256": "5d2120877a2e31a617c60eec6fc74e439fa8c009a930076ee327df5c4120b7eb"
+    },
+    "8e33a7523f1c3f9caf9d27b8b5df847a136a0f68": {
+      "occurrences": 1,
+      "raw_bytes": 11989,
+      "raw_sha256": "3671775148e29aff6018333987cf686fc5023ad0a5534a3aa9ff17768b86eb2e"
+    },
+    "905253d0e52d17acc60678e4e3ca35d0b927b18d": {
+      "occurrences": 1,
+      "raw_bytes": 3731,
+      "raw_sha256": "608ac9bf0c9fc777c33ace774078a163268dc8a4830f22315307c28c1f23bb77"
+    },
+    "90c93fa7c1a6f684897351949d432b2e20205b57": {
+      "occurrences": 1,
+      "raw_bytes": 2155,
+      "raw_sha256": "886632d94fc2bd8d3038809576b3900e6f874ff2619ac28a3eba620e344dc494"
+    },
+    "92a1ff38d0aded90a83dd1eb41a5a5c2891e87f7": {
+      "occurrences": 1,
+      "raw_bytes": 2462,
+      "raw_sha256": "03de4ad527b849348b4c36145a292689cec8da75558259b66b11a592543fef0b"
+    },
+    "92c4287fad03f1e4f13fed3a468f305f986054e5": {
+      "occurrences": 1,
+      "raw_bytes": 662,
+      "raw_sha256": "fede73d02f9abad6c70483a91ffa83858e3aa22780e1c85b82fdacfaba6e1fa9"
+    },
+    "943d34364ba0e16514eb985631944257269f24dc": {
+      "occurrences": 1,
+      "raw_bytes": 696,
+      "raw_sha256": "627dddf71441ef0e41c095069171906256d16c889ef9f9f450b1285dbc6fbe7e"
+    },
+    "94f766d3e4c3ef8d7b714dd57393ae762cb5adf9": {
+      "occurrences": 1,
+      "raw_bytes": 2614,
+      "raw_sha256": "618a17325beb4f66fa59d0db21d292c2f38a415b1c319a12bfd0e7987600403f"
+    },
+    "984c4dba0b4b117c1ea513922e70c9cfb8df1025": {
+      "occurrences": 1,
+      "raw_bytes": 397,
+      "raw_sha256": "a8c03195921725260cc7dd3ff0400fdaf509fd5c3f984bb5afee48fb57f57f89"
+    },
+    "99407d7d1a220942983f6abe3459c9b7ece56590": {
+      "occurrences": 1,
+      "raw_bytes": 149,
+      "raw_sha256": "6910588b5fe4548f7da86a9e1c51519f3ffdaa4f2520408adf55817fd6997380"
+    },
+    "9a2954bc96d9801b877bbcfe7edb90b0715a5c93": {
+      "occurrences": 1,
+      "raw_bytes": 694,
+      "raw_sha256": "e6e3b0b07dc8144bd084815765dcb680df4c181db21dc4b32fddf8dfc51734fb"
+    },
+    "9c326fcf080780c86687dd0bc6947c4672369ea1": {
+      "occurrences": 1,
+      "raw_bytes": 1135,
+      "raw_sha256": "59f100abd009f8315d1722b5443d7e3ae7cc3506850b0c9829e1f50bd6d2f9eb"
+    },
+    "9ecacdbcc23bf8fdcc1a57632a3f178e70deb04a": {
+      "occurrences": 1,
+      "raw_bytes": 136,
+      "raw_sha256": "99c505a0262ec4207e64068a94b9e45a04c4af70e9d643dc5364ce65e8e155a6"
+    },
+    "a0a203fb22b30895e152271eb58d30327dedf492": {
+      "occurrences": 1,
+      "raw_bytes": 1232,
+      "raw_sha256": "4d26fe7a243bb4f50c01ea6f5843da24457f4e1e127397a043eeeae055e2ca6e"
+    },
+    "a6709fd8bafdba914ad7320ba408eda91faba327": {
+      "occurrences": 2,
+      "raw_bytes": 619,
+      "raw_sha256": "8ff4303ba07085cc78c25f7ce963ad1836dba9f911bd1c23b4205f8f65f983b4"
+    },
+    "aca649263d0b3d8fef7608d838c03970ff11429f": {
+      "occurrences": 2,
+      "raw_bytes": 482,
+      "raw_sha256": "a4e355bef054eb492e702f84c3a0e3ad85c0856ce18fb40d036b0e34ec8d957a"
+    },
+    "ae417a9237d5ee733547c91d5f162360e2d42dcc": {
+      "occurrences": 1,
+      "raw_bytes": 585,
+      "raw_sha256": "ab7978fa7a4204fa5beb009a13058203ce637f8f1480c37814851b8b6eff0d21"
+    },
+    "ae453afcd2f1aa1209859a02990a170029c99e66": {
+      "occurrences": 1,
+      "raw_bytes": 765,
+      "raw_sha256": "bcae07183f8db11bb503be3ecf9ffc629068b2ddf5ddf90e1c594867dd944dfe"
+    },
+    "b314cbc1e8db89c012d2ef7248e8c176e228c0f3": {
+      "occurrences": 1,
+      "raw_bytes": 9044,
+      "raw_sha256": "8d8e63d96d15e1506c5ce26c9545a48e82cf060c886b38626baca53915a73e75"
+    },
+    "b410f4653e653bf33be91168886bba798b74e47d": {
+      "occurrences": 1,
+      "raw_bytes": 16151,
+      "raw_sha256": "789e416f4368d0d618f74934f5b6e3b48742ce3cc78992e3f2b2496c83d5f629"
+    },
+    "b59ea0461f3d3e534fe12fa92c82d62e4f69af8b": {
+      "occurrences": 1,
+      "raw_bytes": 1005,
+      "raw_sha256": "9b01dd7936b5d44217444864d22ba0bd6c7b5e65ec71ffeb9ebb66204389280c"
+    },
+    "b70855a4ecaf2e35f9e743d2867d8819140c184d": {
+      "occurrences": 1,
+      "raw_bytes": 2155,
+      "raw_sha256": "cd164f9aec9ff63ccca7d746d48de586891d19f2e134e5c840127da5005daa7f"
+    },
+    "b8bd1140b30f9418f071fde30e3e4ffded7da108": {
+      "occurrences": 1,
+      "raw_bytes": 257,
+      "raw_sha256": "f11bced92e92b2ef072f6ca687e02c545349673cbbba074a600f2d92e3ccbef7"
+    },
+    "ba97320dc63f7893c998e399ee970f1ae3ae2de5": {
+      "occurrences": 2,
+      "raw_bytes": 613,
+      "raw_sha256": "d35abb555bcf34e8a773283ce2df454dfb173340a5857d518bf46c8d1df144c3"
+    },
+    "bb7e3ef645dcdd0c7a611891eb0fe406b21f0c52": {
+      "occurrences": 1,
+      "raw_bytes": 553,
+      "raw_sha256": "f9697a789568a4b52e2ac2eef3f601fbd28e8210d7bc6a82d8d4cc4551562992"
+    },
+    "c1c1a5198f917fe8fb1ca6fec578513f769f3ec1": {
+      "occurrences": 2,
+      "raw_bytes": 2175,
+      "raw_sha256": "b0d8ff059ecf135a5b8a2a120c3a8b858309e70a6f30610abe8b8f4444368c42"
+    },
+    "c595b44756cd0446d44bdc7fb1ab4027897926d2": {
+      "occurrences": 1,
+      "raw_bytes": 993,
+      "raw_sha256": "724f7b0f640f08682e5c485ac05e013c7c1668ad7a213c11866616a83b6bea2a"
+    },
+    "c7e148da1c359ff6e37b047fe13c213302c49254": {
+      "occurrences": 1,
+      "raw_bytes": 300,
+      "raw_sha256": "4ae47e43818561eb3c7b49449065fc2e36cb8fa14648ebb285c9c4e267ef29f2"
+    },
+    "c9987ee710bf08d1cd13410cf3a25b1e1104c76a": {
+      "occurrences": 1,
+      "raw_bytes": 1214,
+      "raw_sha256": "0d51a55f744f0ccdf78df91e4a7d887b42b2ebfbb98756681060a09d93ffaa8d"
+    },
+    "cb863df624329329188110a0f9ab5b4bf6ad8379": {
+      "occurrences": 1,
+      "raw_bytes": 618,
+      "raw_sha256": "74aa767653e833e17632030ae5daab88dd380dcfa0ca6fbbf87586eed1999712"
+    },
+    "cc893af988d921c6b63f9a30f689ca9165d3744b": {
+      "occurrences": 1,
+      "raw_bytes": 503,
+      "raw_sha256": "3b62596853c57c0aeb338c5a31d123bdfd39afc4f634ddcfd16e7a4d3514e84a"
+    },
+    "d022305f9d8fcb48b2f97aee43899f30db9b124b": {
+      "occurrences": 1,
+      "raw_bytes": 1145,
+      "raw_sha256": "e3237f986d6f819c9f3671e17c2e91cb129a75ffdeb600e0c1b1cc9136add828"
+    },
+    "d0c58f8f8962b6b3031e802936a52d5343d9969f": {
+      "occurrences": 1,
+      "raw_bytes": 3509,
+      "raw_sha256": "8eba065b5f39eae1bb15ad4039cb52bf8c2353ab999159f4e9b801c08c3931b0"
+    },
+    "d32cf4cbe9b86bafecefd1c85d65d1b53455f3f7": {
+      "occurrences": 1,
+      "raw_bytes": 805,
+      "raw_sha256": "9ff0c1d63b1dc8cfb76ae97f6807c0f653aa554b8ec7d8f4c3ab3d83f598aa3f"
+    },
+    "d7e3175095f9ae725fd7f9c9011191244a2bdc0e": {
+      "occurrences": 1,
+      "raw_bytes": 3410,
+      "raw_sha256": "c1d077595ce20a2693e3ee167abd1d5c06deafd35cab4d0c9c23b3b4655b03fc"
+    },
+    "d9a18f8040cfc2bf700f5033141f0508397ce03a": {
+      "occurrences": 1,
+      "raw_bytes": 258,
+      "raw_sha256": "5e847e9295e72a9ca553c3d1e6d4d6b0a27c3d72f361542afe4d11099b6f065f"
+    },
+    "d9b854cf1d5fa1c864ca2b446ae234f534d24b9f": {
+      "occurrences": 2,
+      "raw_bytes": 452,
+      "raw_sha256": "0c5712ae81c3fd210acdc024b353cd8fde072960da767d867ee1475c26945183"
+    },
+    "dff0eee222e8be77e46fe7815756365f0a4bef00": {
+      "occurrences": 1,
+      "raw_bytes": 1821,
+      "raw_sha256": "a3fd162dee9c1e0f80cc1848d6e9c81c0b1b967ef560fedaad2e981b6723d6ca"
+    },
+    "e1213f9f5847a3bde8738d7eaf686441b6bae2ea": {
+      "occurrences": 1,
+      "raw_bytes": 218,
+      "raw_sha256": "f3abd60cedb9dcbb55b35fd07374071a7df2de21b5420853a06bf0a167257207"
+    },
+    "e37a70745de3fe57a5b162f9f0704b138446c2d6": {
+      "occurrences": 1,
+      "raw_bytes": 590,
+      "raw_sha256": "762e8d604921a41fdd2d370eaf8ee451171162d45bbaead171ee28fc83d4f045"
+    },
+    "e67469313eb7c5208a21793a708eb5c56ff565cc": {
+      "occurrences": 1,
+      "raw_bytes": 145,
+      "raw_sha256": "6b9aa39e841de14b00146d5c2421427a6ae6ec5db6152e1021260a5d241f036f"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 4,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e70cab31586b051a6659d78826ce8e187106096c": {
+      "occurrences": 1,
+      "raw_bytes": 993,
+      "raw_sha256": "10a67f9eeea58a26ac18844df8a17aa9decd7a49a6796c19c4d92580e27022b5"
+    },
+    "e8de19206f9e6bc303b0bdd8682c6148ddc9805d": {
+      "occurrences": 1,
+      "raw_bytes": 816,
+      "raw_sha256": "1d6190cfed159f632a3a0142da20a2f39443137467f3a70445129ac3638c8c82"
+    },
+    "f067189f783bc85381b2ca3708de312b001fc006": {
+      "occurrences": 1,
+      "raw_bytes": 1205,
+      "raw_sha256": "0fdc36d15846b50bba767eba02e6b9bb5d2022d2f3947b182e66c0e85f4a2188"
+    },
+    "f5a8a9f1aa00a297144b94f56abd33d17e6faf03": {
+      "occurrences": 1,
+      "raw_bytes": 1198,
+      "raw_sha256": "7ef72d0fe6419091ebe2f7e5226df74c613699f6f47e3a7dcd12e961840a5a8c"
+    },
+    "f6c719e718a51f6ba5ddd8171297d5f940e17373": {
+      "occurrences": 1,
+      "raw_bytes": 1088,
+      "raw_sha256": "799a5d81c2c8634509880eb79632e203d813e920a32e9a5e5a91254b68a09f16"
+    },
+    "f991f45ae8b019ce295c9b25d6623958b21f9394": {
+      "occurrences": 1,
+      "raw_bytes": 1214,
+      "raw_sha256": "8641c2e5711e8a6cd0167bf11a2d030db31516d2151aa6ece422e9134ceea1f0"
+    }
+  }
+}

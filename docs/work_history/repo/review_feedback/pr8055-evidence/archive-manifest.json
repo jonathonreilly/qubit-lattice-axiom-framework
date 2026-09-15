@@ -1,0 +1,965 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "699179c9769712f34e65b405c1cdd7168e3ec7c4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/ARTIFACT_PLAN.md",
+      "raw_bytes": 250,
+      "raw_sha256": "ec6d886ba78bc463dff1c7ee5fa69ef6ad40e0c84399a0ae3b0835d358633738",
+      "stored_path": "_objects/ec6d886ba78bc463dff1c7ee5fa69ef6ad40e0c84399a0ae3b0835d358633738.gz",
+      "stored_sha256": "90c2bc41c52d364e2c7cfeca479f6f55ca7ae4d33d36d791b3fc6946ff3ed8ff"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "94d63c634442cd0db949b3dd26ba4666d8f8127f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 353,
+      "raw_sha256": "ed4ca47bc88454d77421f7e466d44ca901b6b973cd70708d9f7c318cc219b4a4",
+      "stored_path": "_objects/ed4ca47bc88454d77421f7e466d44ca901b6b973cd70708d9f7c318cc219b4a4.gz",
+      "stored_sha256": "b4a332f2cc5bf6dc7c43eb187d6990f325cb0c30acb69098c9c059959104e8a6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7c186ee979ebb425e3b7b867631817a4e76b941f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/CANONICAL_COLD_REVIEW/RECEIPT_CHECK.json",
+      "raw_bytes": 6673,
+      "raw_sha256": "42397ad5a23ebc6dc3a8fc2a3920aa7216f2e01ed36880f74e17193b40f6e82f",
+      "stored_path": "_objects/42397ad5a23ebc6dc3a8fc2a3920aa7216f2e01ed36880f74e17193b40f6e82f.gz",
+      "stored_sha256": "9e83f07ddf7a2a927c6cf3e27800af226c2946e76b38a91d67e82aa19c81480c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3722d04fa0596fe6a6203fc1f8893a2cdfdfe282",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/CANONICAL_COLD_REVIEW/REVIEW.md",
+      "raw_bytes": 3916,
+      "raw_sha256": "7e2c617a3c8d02205b977db181f8674d9000be40a33229f5e7b0cefd278a9dea",
+      "stored_path": "_objects/7e2c617a3c8d02205b977db181f8674d9000be40a33229f5e7b0cefd278a9dea.gz",
+      "stored_sha256": "ed30b3715e0b2926ce0c52148e0460583b0b7e51de2d5c5a2d1b19fefa86b06e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3c91bf789c88a531c5e2b240e4729569082d9a47",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 252,
+      "raw_sha256": "9b4812f38996e5ca4ab1708a1f25d69d220c8ff506f5e91924cd8ed23684e92d",
+      "stored_path": "_objects/9b4812f38996e5ca4ab1708a1f25d69d220c8ff506f5e91924cd8ed23684e92d.gz",
+      "stored_sha256": "b0db04fd54adce5a4b1e50f582528d907e3651f0b00fa16fe079f0720056a55d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0ab2ec0f0695ea32865050eb2c3ac8c2af84c9c8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/CONTROL_CONTRACT.md",
+      "raw_bytes": 294,
+      "raw_sha256": "8d387ba328ca985df4d79887c4bd1b3a54ae86eaad1152c6c73ce97f281e8646",
+      "stored_path": "_objects/8d387ba328ca985df4d79887c4bd1b3a54ae86eaad1152c6c73ce97f281e8646.gz",
+      "stored_sha256": "1f5e2774dde60e253f911c39ed791c6395e12b3df4f1748b93f49d83d714676c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f409362687f1bc26f92de63c0c01a2735ea3380a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/GOAL.md",
+      "raw_bytes": 138,
+      "raw_sha256": "298e3a04089971e2ee8a2f5ba80e841eba482dd0d36cae11817cb5ca3a1bf52a",
+      "stored_path": "_objects/298e3a04089971e2ee8a2f5ba80e841eba482dd0d36cae11817cb5ca3a1bf52a.gz",
+      "stored_sha256": "43e6da792a75f5d47425efc805c822ff9bcd3160db152137d57e6082c93af872"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "465f1b274fd43ec1fbf77cd1bbc380905cd9facc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/GRAPH_DELTA.json",
+      "raw_bytes": 287,
+      "raw_sha256": "956d6e9d96ef53cf2bac74c3e6aca45964ba12049f70a11a194e07925a03d33a",
+      "stored_path": "_objects/956d6e9d96ef53cf2bac74c3e6aca45964ba12049f70a11a194e07925a03d33a.gz",
+      "stored_sha256": "689f4dfb2aac61ac875b3e0316f4286c6a22679890de7be0d8a3945d0d07360c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "144acfd01430f8f983918d968e1154a19aeb3ddd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/HANDOFF.md",
+      "raw_bytes": 744,
+      "raw_sha256": "41d4d35fbb2f309cdb4b32040f6c07340c60caa0066e5d4e2380509c94d885ee",
+      "stored_path": "kept/pr8055-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "41d4d35fbb2f309cdb4b32040f6c07340c60caa0066e5d4e2380509c94d885ee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b027a512c6daef36bad11bd4ac8b3d2cfe82af24",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/LITERATURE_BRIDGES.md",
+      "raw_bytes": 327,
+      "raw_sha256": "37631d75c0280fce89cf986be5b4187425f5ff9e6d5014864d95e3abed6be7d4",
+      "stored_path": "_objects/37631d75c0280fce89cf986be5b4187425f5ff9e6d5014864d95e3abed6be7d4.gz",
+      "stored_sha256": "655d19ab3dac396f5e0fc713c72e2471110c3c9e72220ed885c7ae51672e1c0d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b759c02d2c0d91e9bf132e90bab65a0a1d45d556",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/NO_GO_LEDGER.md",
+      "raw_bytes": 360,
+      "raw_sha256": "aed5f057dee697f6bd7e38330e1dc8935aa2a01a43dbbafa9503d00984984585",
+      "stored_path": "_objects/aed5f057dee697f6bd7e38330e1dc8935aa2a01a43dbbafa9503d00984984585.gz",
+      "stored_sha256": "7336a135b1248b841e69b9ba543ac894119f25a92d04bb27291d8587934d4a61"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c82af70f57f8fd3cecb61fc9f427256f3fade9c3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 287,
+      "raw_sha256": "f0e64a873b38febba7ec0cc465f5a1e227e591e48de247129962f87fb3bfcb08",
+      "stored_path": "_objects/f0e64a873b38febba7ec0cc465f5a1e227e591e48de247129962f87fb3bfcb08.gz",
+      "stored_sha256": "5e35106d1ece136b64080c4959001e8b69231d2f6ed87fc411e13bbfdca80117"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "07971d7c876c4be7b8417906b6e499eaec460168",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/ORIGINAL_HASHES.json",
+      "raw_bytes": 2484,
+      "raw_sha256": "05ac4156bf22c1603221264e574615832a7b88696667aa3b8efdbe929644a0c5",
+      "stored_path": "_objects/05ac4156bf22c1603221264e574615832a7b88696667aa3b8efdbe929644a0c5.gz",
+      "stored_sha256": "401ed0f333c34e39ac417910c60000cf1935774bde8496e70fb2455e78b579d2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "184fdb67c51094c27835b115dbcd61ffc0f16f5c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/CANONICAL_FREEZE.json",
+      "raw_bytes": 681,
+      "raw_sha256": "b1d7f179aac4e4c0dbc2fa6d3265eaedabfdd5ebabb648a5077e9ff69f827258",
+      "stored_path": "_objects/b1d7f179aac4e4c0dbc2fa6d3265eaedabfdd5ebabb648a5077e9ff69f827258.gz",
+      "stored_sha256": "aa100eb4faa85f03c630f04a3b4fe4149fbf8bc4ed1131a845c3158392965ffc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c37042096d75c2e14611c2778cf46a2a441f195e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/CANONICAL_MUTATION.json",
+      "raw_bytes": 180,
+      "raw_sha256": "9e7d9f1d42ecb36ab599d4bb2c2913d55cdbac009bd11e7e0a99fd643dc8ee46",
+      "stored_path": "_objects/9e7d9f1d42ecb36ab599d4bb2c2913d55cdbac009bd11e7e0a99fd643dc8ee46.gz",
+      "stored_sha256": "c4bff26c31d2b6bf738a9c969a24ddd5c40994f6f08923ca3aa3586ec1706c5b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "016e0eb1f6eda0f8c1c8cad2c50b53e0fb531ae5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/CANONICAL_SEAM_MUTANT.py",
+      "raw_bytes": 3041,
+      "raw_sha256": "c7fe63954c75cc7c29e7d86900395b91438b6a87235650bfcc8d781260f609c3",
+      "stored_path": "_objects/c7fe63954c75cc7c29e7d86900395b91438b6a87235650bfcc8d781260f609c3.gz",
+      "stored_sha256": "5e87610fbae473167d385b5142b751f5e23f3c96f6ac374bf0c3fc3f01958e45"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "016e0eb1f6eda0f8c1c8cad2c50b53e0fb531ae5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/seam_mutant.py",
+      "raw_bytes": 3041,
+      "raw_sha256": "c7fe63954c75cc7c29e7d86900395b91438b6a87235650bfcc8d781260f609c3",
+      "stored_path": "_objects/c7fe63954c75cc7c29e7d86900395b91438b6a87235650bfcc8d781260f609c3.gz",
+      "stored_sha256": "5e87610fbae473167d385b5142b751f5e23f3c96f6ac374bf0c3fc3f01958e45"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "06accb356cc7f55444975a127c6eba78c28a143f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/CANONICAL_SEAM_MUTANT.stderr",
+      "raw_bytes": 1430,
+      "raw_sha256": "626f78114660bee8280f626d0ea66f02a01e41b38c8f694a1a09617d1a9522cd",
+      "stored_path": "_objects/626f78114660bee8280f626d0ea66f02a01e41b38c8f694a1a09617d1a9522cd.gz",
+      "stored_sha256": "2411e65da9a706fc7d65d365d556e787dd816e1a069b12917a786f18a224ea62"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/CANONICAL_SEAM_MUTANT.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/SEAM_MUTANT.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "39fd36fdf4ea58672001014b17fb2b2aa7d5354c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/COMBINATORICS.json",
+      "raw_bytes": 148,
+      "raw_sha256": "e634ef9bb9791d8ef7da34aadc51d8255131848f1ba5f79769605fd8d7a8feaa",
+      "stored_path": "_objects/e634ef9bb9791d8ef7da34aadc51d8255131848f1ba5f79769605fd8d7a8feaa.gz",
+      "stored_sha256": "b377b6293ca7976a76bf51cc2549920fe814d9baf8b622e21521f78bd6295d80"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fa2a01efb840247fc196d614158778b15c2754cd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/GEOMETRY.json",
+      "raw_bytes": 13475,
+      "raw_sha256": "b8374f5609ce263f4e5163bd9e929bafd1f1afa98c5984a54e27a375b76ea0a3",
+      "stored_path": "_objects/b8374f5609ce263f4e5163bd9e929bafd1f1afa98c5984a54e27a375b76ea0a3.gz",
+      "stored_sha256": "24b06ed1b404f18b25c9280b8c1be2821459c679f1d2a3b6829e675b14a0fd06"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f33d9d7bb45d0bab7be41da3ee4d00641a692c70",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/INVALID_CLI.stderr",
+      "raw_bytes": 190,
+      "raw_sha256": "cd48f5510dc011de929d05e488e806f04989667d852aa08deb930b0a5d9ccdd4",
+      "stored_path": "_objects/cd48f5510dc011de929d05e488e806f04989667d852aa08deb930b0a5d9ccdd4.gz",
+      "stored_sha256": "5ebfcdb6db681e576dde955434733fbb0de79600b6db0ec59ea0419d66dddbc9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4831bd848f71dfffe5f8d9c5700682e6b55d7ff3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/ISOLATED.stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "7463f8f6b1dd2d323450c7bf2437eda26ae04ef5647b29fc19322f4790ffa35b",
+      "stored_path": "_objects/7463f8f6b1dd2d323450c7bf2437eda26ae04ef5647b29fc19322f4790ffa35b.gz",
+      "stored_sha256": "98f911e3ff27319b15c8d1b68bac0e21799cc97007dd7f7400850c077f79d9d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "08c882874365110519fdadbe7e5f9ba10108a2ac",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/ISOLATED.stdout",
+      "raw_bytes": 16919,
+      "raw_sha256": "1ba98c4ad3c6d4f44386832185a5d4c3218de170bf7ce1a2c4652e43f113a69b",
+      "stored_path": "_objects/1ba98c4ad3c6d4f44386832185a5d4c3218de170bf7ce1a2c4652e43f113a69b.gz",
+      "stored_sha256": "f5806e8799f7a0ebc095f67ac8f843954252e54b38406f120bd016d32fb055d0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f64eefff6488f22a644327fd463dd167b557105f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/ISOLATED_INPUTS.json",
+      "raw_bytes": 935,
+      "raw_sha256": "3b815701c74823b470f189dd78bb203832a640f5bf456e944c2133e2f45edd4f",
+      "stored_path": "_objects/3b815701c74823b470f189dd78bb203832a640f5bf456e944c2133e2f45edd4f.gz",
+      "stored_sha256": "a543d86ddc73105214cb1b568e98b24c3d02e19066923eeaf97f0f23c65381c2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3a64d4d4ac957a34d082c1b63058ed0a752e4a50",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/ISOLATION_RECEIPT.json",
+      "raw_bytes": 187,
+      "raw_sha256": "d7dd009a1ba5601889040180220b8f463c8f17819202d2781b4a4a4f4e67f901",
+      "stored_path": "_objects/d7dd009a1ba5601889040180220b8f463c8f17819202d2781b4a4a4f4e67f901.gz",
+      "stored_sha256": "badda529cb70f0ff9cbfffaa366e74ccce1cee4f0154a4272496c6fb85b24907"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c20fd6afb717d8767a59d3dcfcb4562303489167",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/MUTATION.json",
+      "raw_bytes": 217,
+      "raw_sha256": "553717d5db423ec067d7762fc4b308a65121d2f6a7a5344f994a9b5b0588d708",
+      "stored_path": "_objects/553717d5db423ec067d7762fc4b308a65121d2f6a7a5344f994a9b5b0588d708.gz",
+      "stored_sha256": "b8447a74172f4212274ed95ceecbc11b0874c289f69addf248d2c5fbc20ffd49"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0375249fde00784aeb960878c5d74be8af2c67f8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/ORIGINAL_HASHES.json",
+      "raw_bytes": 309,
+      "raw_sha256": "6e1942943562db5251719604a34a38f1792f8a0a07697d6fa3cd1b585ca9da84",
+      "stored_path": "_objects/6e1942943562db5251719604a34a38f1792f8a0a07697d6fa3cd1b585ca9da84.gz",
+      "stored_sha256": "fb31e0806a454a8171ada6baa1aeb7dad7a6cfbbe944163a56504a6214cfe810"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1ff85172c56345f6a132ef39452efeccc644219f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/PORT_REPORT.md",
+      "raw_bytes": 1410,
+      "raw_sha256": "2ef61e75538df972dec35b945a2aeb2bdaf7186724d32b73b852a4d31bb69525",
+      "stored_path": "_objects/2ef61e75538df972dec35b945a2aeb2bdaf7186724d32b73b852a4d31bb69525.gz",
+      "stored_sha256": "bbe60bb0e699c5efc021f5e70b530390c295d2f7c15cc2b07ccc0f6e5d33cea7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "daa9bdc42b21c66d73157b96b6ceda9eb7687268",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/SEAM_MUTANT.stderr",
+      "raw_bytes": 526,
+      "raw_sha256": "bce3c1c9215838197653af0b8ab9f678ec19ad5f5cd21dcbf53e970257460f5a",
+      "stored_path": "_objects/bce3c1c9215838197653af0b8ab9f678ec19ad5f5cd21dcbf53e970257460f5a.gz",
+      "stored_sha256": "7a2aa3b74e98d8e156caff8ec8ca4e7812f03dbfb2fe90a1fa19242e30062a1b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cbc4a2ef3cd727513b3bd2e58c313cc057b3e2bc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/STAGING_HASHES.json",
+      "raw_bytes": 1248,
+      "raw_sha256": "cdf9c903071fa607ae6bae69c1da0f74c689f8744ee44ea86b30d684cb3ade54",
+      "stored_path": "_objects/cdf9c903071fa607ae6bae69c1da0f74c689f8744ee44ea86b30d684cb3ade54.gz",
+      "stored_sha256": "cda39937da385f8e39d92c0faa300166d32b7cc2a84c563cec0f5077871e80f1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "465e17e4a593bc137a1b77f73f5baea1af3a3062",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/native_flux_defect_combinatorics_2026_09_08.py",
+      "raw_bytes": 1043,
+      "raw_sha256": "0812172a7a0adb7fcdbe24a8a4abecc0bf92fbb93d4bd8109af6bec5659168a7",
+      "stored_path": "_objects/0812172a7a0adb7fcdbe24a8a4abecc0bf92fbb93d4bd8109af6bec5659168a7.gz",
+      "stored_sha256": "cc3dc6146589c3da9028bccaca7bbfa56dcb6ad05630798bcb63099402d3c2bd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "744b8b1036d7e75c6e5d515f712a62d60c31c943",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/native_flux_defect_combinatorics_2026_09_08.py.diff",
+      "raw_bytes": 539,
+      "raw_sha256": "0e1410791ff6040001269bc8449df00e1c40c3b3e77f80280411d5946779f9c4",
+      "stored_path": "_objects/0e1410791ff6040001269bc8449df00e1c40c3b3e77f80280411d5946779f9c4.gz",
+      "stored_sha256": "002045f34e64b386e591219a8bd47b87e14d333bbb9085d22c85148870955175"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8714064efbae1c6ef1b659c61442f73ffa254798",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/native_flux_defect_comparison_and_winding_gap_2026_09_08.py",
+      "raw_bytes": 2560,
+      "raw_sha256": "665ccbf83a5eca5e52fea93bf0cf04aea6ed9af6362b9e22c3e02c0bf00aa9dc",
+      "stored_path": "_objects/665ccbf83a5eca5e52fea93bf0cf04aea6ed9af6362b9e22c3e02c0bf00aa9dc.gz",
+      "stored_sha256": "78a3e413617735db55591baa204bb5a3e8d8c749f4f2a9049e22986957a918ed"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ae679756f124e9d41f3013fe2d6c06a00e4a0313",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/native_flux_defect_geometry_2026_09_08.py",
+      "raw_bytes": 3060,
+      "raw_sha256": "d86c7f2b95eb513f46fd29b860361d7ce0a0d68ca75b1fabd41fc956892d6a6c",
+      "stored_path": "_objects/d86c7f2b95eb513f46fd29b860361d7ce0a0d68ca75b1fabd41fc956892d6a6c.gz",
+      "stored_sha256": "fd96591a13c3d7d8c40e6e049e283fb4539d4ab5618e5c96a184e5c67fdb0b6d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8ced620a9f2932444eb96da37849b752ff6f92ca",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/native_flux_defect_geometry_2026_09_08.py.diff",
+      "raw_bytes": 624,
+      "raw_sha256": "c119288099118dd56ddffdb03e825283e8e26765e29ee565977e4df87679784d",
+      "stored_path": "_objects/c119288099118dd56ddffdb03e825283e8e26765e29ee565977e4df87679784d.gz",
+      "stored_sha256": "5d591725948d9409279550d067f606e9fd16e058770a303803205b70041ead3e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8b7169e1a6d58d7b0f4041b48e7ac286440665b5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/originals/native_flux_defect_combinatorics_2026_09_08.py",
+      "raw_bytes": 1083,
+      "raw_sha256": "d92c897d893c3253308eedba039885038613da45044c93da41213f879c102406",
+      "stored_path": "_objects/d92c897d893c3253308eedba039885038613da45044c93da41213f879c102406.gz",
+      "stored_sha256": "39fb4b9e730f6208e84205552d3c00d9ee182e7b7ab4011f2fef1e0dda609a6b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8b7169e1a6d58d7b0f4041b48e7ac286440665b5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-3d-chessboard-cold-review/check.py",
+      "raw_bytes": 1083,
+      "raw_sha256": "d92c897d893c3253308eedba039885038613da45044c93da41213f879c102406",
+      "stored_path": "_objects/d92c897d893c3253308eedba039885038613da45044c93da41213f879c102406.gz",
+      "stored_sha256": "39fb4b9e730f6208e84205552d3c00d9ee182e7b7ab4011f2fef1e0dda609a6b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e0ee7a1e9f36def82826159b946db919008df704",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/originals/native_flux_defect_geometry_2026_09_08.py",
+      "raw_bytes": 3036,
+      "raw_sha256": "3d08239828c8e07829f23591c52a268a0151327bb486755e0b0381b6da01c5f8",
+      "stored_path": "_objects/3d08239828c8e07829f23591c52a268a0151327bb486755e0b0381b6da01c5f8.gz",
+      "stored_sha256": "5a7b7db790da9a38243ac1867a2f016db29bd17a80d278b31cb56d985120caf6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e0ee7a1e9f36def82826159b946db919008df704",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-3d-chessboard-dissemination/check.py",
+      "raw_bytes": 3036,
+      "raw_sha256": "3d08239828c8e07829f23591c52a268a0151327bb486755e0b0381b6da01c5f8",
+      "stored_path": "_objects/3d08239828c8e07829f23591c52a268a0151327bb486755e0b0381b6da01c5f8.gz",
+      "stored_sha256": "5a7b7db790da9a38243ac1867a2f016db29bd17a80d278b31cb56d985120caf6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "344d2d323ef52e835ee0220363877afeb79170de",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PORT_RECORDS/port_execute.py",
+      "raw_bytes": 2901,
+      "raw_sha256": "c42e83e8d170dc81fa9959a4e766391eea0339afb072ff755366e008964a31fc",
+      "stored_path": "_objects/c42e83e8d170dc81fa9959a4e766391eea0339afb072ff755366e008964a31fc.gz",
+      "stored_sha256": "e2eb9cb313521847aa22f86d79cb86815132f441295050307a4700b6eed2933d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a9ba2c9a6cc0f3a0fab4ea9414d49ea11a2a1ef9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/PR_BACKLOG.md",
+      "raw_bytes": 213,
+      "raw_sha256": "7583a06ddaf3bc745632692d3b54269c381d3291600785b6f22580b4b8c9dc12",
+      "stored_path": "_objects/7583a06ddaf3bc745632692d3b54269c381d3291600785b6f22580b4b8c9dc12.gz",
+      "stored_sha256": "cfd53b8b930da9705b8ff482329ef388144bbd49415ca72db7cb58267d4a7b9f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3bc1df85e0a402ccf46b6aea10fceaede62c7724",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/REVIEW_HISTORY.md",
+      "raw_bytes": 641,
+      "raw_sha256": "7b2292cc90783305af3e72c87c75546639fe313efeb182f7debf9153464a9d8e",
+      "stored_path": "_objects/7b2292cc90783305af3e72c87c75546639fe313efeb182f7debf9153464a9d8e.gz",
+      "stored_sha256": "50052c0351fc6db4b5109e1e3b63f7549fc9bf494ed2af23e320dbd84eda8d8c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0a1652f2f6ab8ba4d082df3c1d9e8f2a0aa1f414",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/ROOT_REVIEW.md",
+      "raw_bytes": 4503,
+      "raw_sha256": "925395a21f8fc04843f182c73f29a886f4ef4b3f251924c1a8f68e2ceef202ea",
+      "stored_path": "_objects/925395a21f8fc04843f182c73f29a886f4ef4b3f251924c1a8f68e2ceef202ea.gz",
+      "stored_sha256": "b635d921808cb7fa4ef7b7f74736f270423673d571e5ad66a740b3a5536c7f27"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e55e990088c45c4b64669fbc0c4e68e5e8a5e7d1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 358,
+      "raw_sha256": "b1c679c5b133e4524ce24f84c0bd5c10eb72e26794bfde8314ceda7697d714e7",
+      "stored_path": "_objects/b1c679c5b133e4524ce24f84c0bd5c10eb72e26794bfde8314ceda7697d714e7.gz",
+      "stored_sha256": "9b00edbffdc6c4a7a0333bba34d0f3c46b018be37765f0754d692b2d24e180fa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9923ec2ad4f34e46344943273142c74bca4a75af",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/STATE.yaml",
+      "raw_bytes": 642,
+      "raw_sha256": "b2dcd1c782f019e8d1e6dc8a5bb849187d9726dfe8e4945cbef9ab80f1dfe0e4",
+      "stored_path": "_objects/b2dcd1c782f019e8d1e6dc8a5bb849187d9726dfe8e4945cbef9ab80f1dfe0e4.gz",
+      "stored_sha256": "f9096a0d6d0bf1e73b6a3ebec06d91d76ec8a4c6cf2ac5f621def5cf83e129b9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "0ce7bda2a84a06ad59dae82186f627d1d1ac4ff7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/TRACE_GATE.md",
+      "raw_bytes": 341,
+      "raw_sha256": "57b6b5c78b67e82edb90c1b449870b104214b1931e43491c79b9cc5694606179",
+      "stored_path": "kept/pr8055-TRACE_GATE-f67515f6cce5b41d.md",
+      "stored_sha256": "57b6b5c78b67e82edb90c1b449870b104214b1931e43491c79b9cc5694606179"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c4c0dbbb99dcae35e50d7846f85ceb82a114bcf6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-3d-chessboard-cold-review/READ_HASHES.json",
+      "raw_bytes": 316,
+      "raw_sha256": "043df16b51ae7308fc2127a5317b7197cc7463719eb1b8d39a707f19708f0992",
+      "stored_path": "_objects/043df16b51ae7308fc2127a5317b7197cc7463719eb1b8d39a707f19708f0992.gz",
+      "stored_sha256": "6f89d4b81a8cdbd7eb24d74a68da326d3be314e91bf96482fd9cd606d5ff1779"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a960738ff4c122922c78638f36a5715e1d9d953a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-3d-chessboard-cold-review/RESULT.json",
+      "raw_bytes": 149,
+      "raw_sha256": "c9c7bced30d317ee9864a8f892fc2957dee2a66f62fdd641b603f4c59f33148b",
+      "stored_path": "_objects/c9c7bced30d317ee9864a8f892fc2957dee2a66f62fdd641b603f4c59f33148b.gz",
+      "stored_sha256": "402de999bdab957e0a5a38dd1309649691896a0eec5d4e7794101d793d22281b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "af58ad0ca8cc23e0449b277909b4104df0dd51e3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-3d-chessboard-cold-review/REVIEW.md",
+      "raw_bytes": 3956,
+      "raw_sha256": "5973a4c6c32e222627dbdfc0b3955b6222c247bf568870f3f49d25eaee0132a3",
+      "stored_path": "_objects/5973a4c6c32e222627dbdfc0b3955b6222c247bf568870f3f49d25eaee0132a3.gz",
+      "stored_sha256": "c0982b793d7183cd49fbe9bf11bd20de50cfcea9bed69a57d9f6387752a28753"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "691b7bd73b2603612892f2330f4fad8a494fa061",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-3d-chessboard-dissemination/DERIVATION.md",
+      "raw_bytes": 11807,
+      "raw_sha256": "44877b2cd9733af18357c34ba4793453afe3bbecfb70083b9ca90320eaa3c6e7",
+      "stored_path": "_objects/44877b2cd9733af18357c34ba4793453afe3bbecfb70083b9ca90320eaa3c6e7.gz",
+      "stored_sha256": "4e919bebfb6f9cfd90b6fa9e1a8fbd6dd087addd01bd03199ed280d9d86d2183"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7a549278c352a60278e6705ac8e9e4ee47959be0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-3d-chessboard-dissemination/HASHES.json",
+      "raw_bytes": 349,
+      "raw_sha256": "829ad37843a0797d50cb2ce8665bfd9ab2aed86b65dc08450526b23c8f516733",
+      "stored_path": "_objects/829ad37843a0797d50cb2ce8665bfd9ab2aed86b65dc08450526b23c8f516733.gz",
+      "stored_sha256": "f08a092626afe6e61a557c04118be3ed9f1104c38b83bdea01b2c63b3a3c602b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b1bb95fb46d08d3de4f386e6c30fd2c4522e24a1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-3d-chessboard-dissemination/PREREGISTRATION.md",
+      "raw_bytes": 858,
+      "raw_sha256": "71686fc372ba94d6dfe7dd9725d5133b14eef367a7ed24d8eba73fbe5319c700",
+      "stored_path": "_objects/71686fc372ba94d6dfe7dd9725d5133b14eef367a7ed24d8eba73fbe5319c700.gz",
+      "stored_sha256": "30be761b799452bb1f9e8454f155bcdf103fae373f223b588b2110f8ec8cda95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b91d57e4260fffd73a7f6b8e4ef0438ffa1a5a81",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-3d-chessboard-dissemination/RESULT.json",
+      "raw_bytes": 13474,
+      "raw_sha256": "f414a5c2fde2d57df4adc665761359a497d94f7d21e25aea83e9f9369b5949ca",
+      "stored_path": "_objects/f414a5c2fde2d57df4adc665761359a497d94f7d21e25aea83e9f9369b5949ca.gz",
+      "stored_sha256": "ba1681a2e281e7840f47da2aef7e6ebd89f631940f1b3e32614c6744aa1feefe"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dcc3f4dcbc664e807c800312e8f7ecd6737437dd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-goller-porta-bridge/CONTROL_SCOPE.md",
+      "raw_bytes": 386,
+      "raw_sha256": "f5d9f8dce2547307c506124c4a12b2f5c5cf517434996703caaab65e5f904358",
+      "stored_path": "_objects/f5d9f8dce2547307c506124c4a12b2f5c5cf517434996703caaab65e5f904358.gz",
+      "stored_sha256": "9a5f061ee1234e832059a06ad587c163ba8111150705f20aef0c5d7a577d1be2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "82f4a1d4b2d84790c6bc5e4cbade94b325d4eeae",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-goller-porta-bridge/GEOMETRY_RESULT.json",
+      "raw_bytes": 252,
+      "raw_sha256": "cbf44c8c63cf93e2b884dcf03e5c28ebcdc6a20542f92d32e1c76e0576389693",
+      "stored_path": "_objects/cbf44c8c63cf93e2b884dcf03e5c28ebcdc6a20542f92d32e1c76e0576389693.gz",
+      "stored_sha256": "c4c0ae58332d14728063a333a9b29b41925b4f68360cb0f3807aa47e9f8108a0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3a6d6c09aadaa341e5f1c4f7c904cc98693197ea",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-goller-porta-bridge/HASHES.json",
+      "raw_bytes": 473,
+      "raw_sha256": "77bb9a53f20340c91d9cbae58c9cdec36857f3d7d84aac9e0b64d80c99218298",
+      "stored_path": "_objects/77bb9a53f20340c91d9cbae58c9cdec36857f3d7d84aac9e0b64d80c99218298.gz",
+      "stored_sha256": "34a29d2d8d0d682984c9e3189090107178d986c53317079d82572736d4bc6d37"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7ca0a623fa42737908eb2d614e55934ced182a61",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-goller-porta-bridge/NOTES.md",
+      "raw_bytes": 6972,
+      "raw_sha256": "43f06df402f86bfeaae7ab89c32d85545947190b66edfd2a039931e12f1ef5d8",
+      "stored_path": "_objects/43f06df402f86bfeaae7ab89c32d85545947190b66edfd2a039931e12f1ef5d8.gz",
+      "stored_sha256": "59c39ae847571d02d5334e5f95346c9b79bd5276cdaee0c6ca05d62069354aa1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d4b50de82fc8bbe52e9e8d3ec7a18b26b1476e37",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-goller-porta-bridge/check_geometry.py",
+      "raw_bytes": 1382,
+      "raw_sha256": "16cb98f45dccca5bb9e0a174af0d65d0039618885634b5bcf49c7a37056a8475",
+      "stored_path": "_objects/16cb98f45dccca5bb9e0a174af0d65d0039618885634b5bcf49c7a37056a8475.gz",
+      "stored_sha256": "c70a6ae3bd01be0263ffeb140e64a5d850b2b5b78593a929e987f5513391a2ee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "64c34281f0e0b761f0f25d268e29c844b68d6234",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-goller-porta-bridge/check_geometry_before_adverse_repair.py",
+      "raw_bytes": 1166,
+      "raw_sha256": "6818a7df9bad1f4424ef8ba8fc8398d5e4186a15ab23c3df9c92ad9a3b3bd951",
+      "stored_path": "_objects/6818a7df9bad1f4424ef8ba8fc8398d5e4186a15ab23c3df9c92ad9a3b3bd951.gz",
+      "stored_sha256": "1b41aa4b868fc75570250d848ba05d873a39cba630eeedd030169b38fe577b75"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e7e05b6607dd32267e968f57d7888eb0e3962ed3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-winding-gap-asymptotic-cold-review/READ_HASHES.json",
+      "raw_bytes": 474,
+      "raw_sha256": "6f9edca99d00f51fd205c4f9c115875a0eabbbd6cc7c27e4313d9eb5d736fdef",
+      "stored_path": "_objects/6f9edca99d00f51fd205c4f9c115875a0eabbbd6cc7c27e4313d9eb5d736fdef.gz",
+      "stored_sha256": "63e4771c3d83217c0557fd422a3d6b7346f19a8c38c886749a7659ecf0b144ad"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "54df412acf4d43bc906eb241ce031cb78dd80636",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-winding-gap-asymptotic-cold-review/REVIEW.md",
+      "raw_bytes": 3504,
+      "raw_sha256": "04bb74b09d3897cc0d5d475029fdadee55605028e80c57fcf2f810d40dc3540c",
+      "stored_path": "_objects/04bb74b09d3897cc0d5d475029fdadee55605028e80c57fcf2f810d40dc3540c.gz",
+      "stored_sha256": "bc4a671282b1ddfd972b6fd7de1a1c1cf675809e952d4038238c51270a3ae454"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2f583f6bc6bf7799f3de12580f3647ca39f0a0c1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-winding-gap-asymptotic/DERIVATION.md",
+      "raw_bytes": 3647,
+      "raw_sha256": "9804689e4ac81035e5c7c2f7e1c6458d5e9a8da19da4322ac07bd16d71d19de2",
+      "stored_path": "_objects/9804689e4ac81035e5c7c2f7e1c6458d5e9a8da19da4322ac07bd16d71d19de2.gz",
+      "stored_sha256": "1f6d1f50df35e8f75cf4d8a0e7119b6a24f7a20bd21f938063ad2488e2391cb4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "23c6030a87d11035c987fadd93608f60cb682a95",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/originals/native-winding-gap-asymptotic/SOURCE_HASHES.json",
+      "raw_bytes": 161,
+      "raw_sha256": "8ca64a9913eb94cdefabb9b32bdaa3d1e04928fee7bccc1c441cabd820def08c",
+      "stored_path": "_objects/8ca64a9913eb94cdefabb9b32bdaa3d1e04928fee7bccc1c441cabd820def08c.gz",
+      "stored_sha256": "229ef8de35e806ab1525f3554e670685b3c4929e724c25c3607e7f21c782cf76"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-flux-defect-comparison-and-winding-gap-20260908/",
+  "revision": "00304d711b630d50d17520d8db83519a492fc28b",
+  "schema_version": 1,
+  "unique_blobs": {
+    "016e0eb1f6eda0f8c1c8cad2c50b53e0fb531ae5": {
+      "occurrences": 2,
+      "raw_bytes": 3041,
+      "raw_sha256": "c7fe63954c75cc7c29e7d86900395b91438b6a87235650bfcc8d781260f609c3"
+    },
+    "0375249fde00784aeb960878c5d74be8af2c67f8": {
+      "occurrences": 1,
+      "raw_bytes": 309,
+      "raw_sha256": "6e1942943562db5251719604a34a38f1792f8a0a07697d6fa3cd1b585ca9da84"
+    },
+    "06accb356cc7f55444975a127c6eba78c28a143f": {
+      "occurrences": 1,
+      "raw_bytes": 1430,
+      "raw_sha256": "626f78114660bee8280f626d0ea66f02a01e41b38c8f694a1a09617d1a9522cd"
+    },
+    "07971d7c876c4be7b8417906b6e499eaec460168": {
+      "occurrences": 1,
+      "raw_bytes": 2484,
+      "raw_sha256": "05ac4156bf22c1603221264e574615832a7b88696667aa3b8efdbe929644a0c5"
+    },
+    "08c882874365110519fdadbe7e5f9ba10108a2ac": {
+      "occurrences": 1,
+      "raw_bytes": 16919,
+      "raw_sha256": "1ba98c4ad3c6d4f44386832185a5d4c3218de170bf7ce1a2c4652e43f113a69b"
+    },
+    "0a1652f2f6ab8ba4d082df3c1d9e8f2a0aa1f414": {
+      "occurrences": 1,
+      "raw_bytes": 4503,
+      "raw_sha256": "925395a21f8fc04843f182c73f29a886f4ef4b3f251924c1a8f68e2ceef202ea"
+    },
+    "0ab2ec0f0695ea32865050eb2c3ac8c2af84c9c8": {
+      "occurrences": 1,
+      "raw_bytes": 294,
+      "raw_sha256": "8d387ba328ca985df4d79887c4bd1b3a54ae86eaad1152c6c73ce97f281e8646"
+    },
+    "0ce7bda2a84a06ad59dae82186f627d1d1ac4ff7": {
+      "occurrences": 1,
+      "raw_bytes": 341,
+      "raw_sha256": "57b6b5c78b67e82edb90c1b449870b104214b1931e43491c79b9cc5694606179"
+    },
+    "144acfd01430f8f983918d968e1154a19aeb3ddd": {
+      "occurrences": 1,
+      "raw_bytes": 744,
+      "raw_sha256": "41d4d35fbb2f309cdb4b32040f6c07340c60caa0066e5d4e2380509c94d885ee"
+    },
+    "184fdb67c51094c27835b115dbcd61ffc0f16f5c": {
+      "occurrences": 1,
+      "raw_bytes": 681,
+      "raw_sha256": "b1d7f179aac4e4c0dbc2fa6d3265eaedabfdd5ebabb648a5077e9ff69f827258"
+    },
+    "1ff85172c56345f6a132ef39452efeccc644219f": {
+      "occurrences": 1,
+      "raw_bytes": 1410,
+      "raw_sha256": "2ef61e75538df972dec35b945a2aeb2bdaf7186724d32b73b852a4d31bb69525"
+    },
+    "23c6030a87d11035c987fadd93608f60cb682a95": {
+      "occurrences": 1,
+      "raw_bytes": 161,
+      "raw_sha256": "8ca64a9913eb94cdefabb9b32bdaa3d1e04928fee7bccc1c441cabd820def08c"
+    },
+    "2f583f6bc6bf7799f3de12580f3647ca39f0a0c1": {
+      "occurrences": 1,
+      "raw_bytes": 3647,
+      "raw_sha256": "9804689e4ac81035e5c7c2f7e1c6458d5e9a8da19da4322ac07bd16d71d19de2"
+    },
+    "344d2d323ef52e835ee0220363877afeb79170de": {
+      "occurrences": 1,
+      "raw_bytes": 2901,
+      "raw_sha256": "c42e83e8d170dc81fa9959a4e766391eea0339afb072ff755366e008964a31fc"
+    },
+    "3722d04fa0596fe6a6203fc1f8893a2cdfdfe282": {
+      "occurrences": 1,
+      "raw_bytes": 3916,
+      "raw_sha256": "7e2c617a3c8d02205b977db181f8674d9000be40a33229f5e7b0cefd278a9dea"
+    },
+    "39fd36fdf4ea58672001014b17fb2b2aa7d5354c": {
+      "occurrences": 1,
+      "raw_bytes": 148,
+      "raw_sha256": "e634ef9bb9791d8ef7da34aadc51d8255131848f1ba5f79769605fd8d7a8feaa"
+    },
+    "3a64d4d4ac957a34d082c1b63058ed0a752e4a50": {
+      "occurrences": 1,
+      "raw_bytes": 187,
+      "raw_sha256": "d7dd009a1ba5601889040180220b8f463c8f17819202d2781b4a4a4f4e67f901"
+    },
+    "3a6d6c09aadaa341e5f1c4f7c904cc98693197ea": {
+      "occurrences": 1,
+      "raw_bytes": 473,
+      "raw_sha256": "77bb9a53f20340c91d9cbae58c9cdec36857f3d7d84aac9e0b64d80c99218298"
+    },
+    "3bc1df85e0a402ccf46b6aea10fceaede62c7724": {
+      "occurrences": 1,
+      "raw_bytes": 641,
+      "raw_sha256": "7b2292cc90783305af3e72c87c75546639fe313efeb182f7debf9153464a9d8e"
+    },
+    "3c91bf789c88a531c5e2b240e4729569082d9a47": {
+      "occurrences": 1,
+      "raw_bytes": 252,
+      "raw_sha256": "9b4812f38996e5ca4ab1708a1f25d69d220c8ff506f5e91924cd8ed23684e92d"
+    },
+    "465e17e4a593bc137a1b77f73f5baea1af3a3062": {
+      "occurrences": 1,
+      "raw_bytes": 1043,
+      "raw_sha256": "0812172a7a0adb7fcdbe24a8a4abecc0bf92fbb93d4bd8109af6bec5659168a7"
+    },
+    "465f1b274fd43ec1fbf77cd1bbc380905cd9facc": {
+      "occurrences": 1,
+      "raw_bytes": 287,
+      "raw_sha256": "956d6e9d96ef53cf2bac74c3e6aca45964ba12049f70a11a194e07925a03d33a"
+    },
+    "4831bd848f71dfffe5f8d9c5700682e6b55d7ff3": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "7463f8f6b1dd2d323450c7bf2437eda26ae04ef5647b29fc19322f4790ffa35b"
+    },
+    "54df412acf4d43bc906eb241ce031cb78dd80636": {
+      "occurrences": 1,
+      "raw_bytes": 3504,
+      "raw_sha256": "04bb74b09d3897cc0d5d475029fdadee55605028e80c57fcf2f810d40dc3540c"
+    },
+    "64c34281f0e0b761f0f25d268e29c844b68d6234": {
+      "occurrences": 1,
+      "raw_bytes": 1166,
+      "raw_sha256": "6818a7df9bad1f4424ef8ba8fc8398d5e4186a15ab23c3df9c92ad9a3b3bd951"
+    },
+    "691b7bd73b2603612892f2330f4fad8a494fa061": {
+      "occurrences": 1,
+      "raw_bytes": 11807,
+      "raw_sha256": "44877b2cd9733af18357c34ba4793453afe3bbecfb70083b9ca90320eaa3c6e7"
+    },
+    "699179c9769712f34e65b405c1cdd7168e3ec7c4": {
+      "occurrences": 1,
+      "raw_bytes": 250,
+      "raw_sha256": "ec6d886ba78bc463dff1c7ee5fa69ef6ad40e0c84399a0ae3b0835d358633738"
+    },
+    "744b8b1036d7e75c6e5d515f712a62d60c31c943": {
+      "occurrences": 1,
+      "raw_bytes": 539,
+      "raw_sha256": "0e1410791ff6040001269bc8449df00e1c40c3b3e77f80280411d5946779f9c4"
+    },
+    "7a549278c352a60278e6705ac8e9e4ee47959be0": {
+      "occurrences": 1,
+      "raw_bytes": 349,
+      "raw_sha256": "829ad37843a0797d50cb2ce8665bfd9ab2aed86b65dc08450526b23c8f516733"
+    },
+    "7c186ee979ebb425e3b7b867631817a4e76b941f": {
+      "occurrences": 1,
+      "raw_bytes": 6673,
+      "raw_sha256": "42397ad5a23ebc6dc3a8fc2a3920aa7216f2e01ed36880f74e17193b40f6e82f"
+    },
+    "7ca0a623fa42737908eb2d614e55934ced182a61": {
+      "occurrences": 1,
+      "raw_bytes": 6972,
+      "raw_sha256": "43f06df402f86bfeaae7ab89c32d85545947190b66edfd2a039931e12f1ef5d8"
+    },
+    "82f4a1d4b2d84790c6bc5e4cbade94b325d4eeae": {
+      "occurrences": 1,
+      "raw_bytes": 252,
+      "raw_sha256": "cbf44c8c63cf93e2b884dcf03e5c28ebcdc6a20542f92d32e1c76e0576389693"
+    },
+    "8714064efbae1c6ef1b659c61442f73ffa254798": {
+      "occurrences": 1,
+      "raw_bytes": 2560,
+      "raw_sha256": "665ccbf83a5eca5e52fea93bf0cf04aea6ed9af6362b9e22c3e02c0bf00aa9dc"
+    },
+    "8b7169e1a6d58d7b0f4041b48e7ac286440665b5": {
+      "occurrences": 2,
+      "raw_bytes": 1083,
+      "raw_sha256": "d92c897d893c3253308eedba039885038613da45044c93da41213f879c102406"
+    },
+    "8ced620a9f2932444eb96da37849b752ff6f92ca": {
+      "occurrences": 1,
+      "raw_bytes": 624,
+      "raw_sha256": "c119288099118dd56ddffdb03e825283e8e26765e29ee565977e4df87679784d"
+    },
+    "94d63c634442cd0db949b3dd26ba4666d8f8127f": {
+      "occurrences": 1,
+      "raw_bytes": 353,
+      "raw_sha256": "ed4ca47bc88454d77421f7e466d44ca901b6b973cd70708d9f7c318cc219b4a4"
+    },
+    "9923ec2ad4f34e46344943273142c74bca4a75af": {
+      "occurrences": 1,
+      "raw_bytes": 642,
+      "raw_sha256": "b2dcd1c782f019e8d1e6dc8a5bb849187d9726dfe8e4945cbef9ab80f1dfe0e4"
+    },
+    "a960738ff4c122922c78638f36a5715e1d9d953a": {
+      "occurrences": 1,
+      "raw_bytes": 149,
+      "raw_sha256": "c9c7bced30d317ee9864a8f892fc2957dee2a66f62fdd641b603f4c59f33148b"
+    },
+    "a9ba2c9a6cc0f3a0fab4ea9414d49ea11a2a1ef9": {
+      "occurrences": 1,
+      "raw_bytes": 213,
+      "raw_sha256": "7583a06ddaf3bc745632692d3b54269c381d3291600785b6f22580b4b8c9dc12"
+    },
+    "ae679756f124e9d41f3013fe2d6c06a00e4a0313": {
+      "occurrences": 1,
+      "raw_bytes": 3060,
+      "raw_sha256": "d86c7f2b95eb513f46fd29b860361d7ce0a0d68ca75b1fabd41fc956892d6a6c"
+    },
+    "af58ad0ca8cc23e0449b277909b4104df0dd51e3": {
+      "occurrences": 1,
+      "raw_bytes": 3956,
+      "raw_sha256": "5973a4c6c32e222627dbdfc0b3955b6222c247bf568870f3f49d25eaee0132a3"
+    },
+    "b027a512c6daef36bad11bd4ac8b3d2cfe82af24": {
+      "occurrences": 1,
+      "raw_bytes": 327,
+      "raw_sha256": "37631d75c0280fce89cf986be5b4187425f5ff9e6d5014864d95e3abed6be7d4"
+    },
+    "b1bb95fb46d08d3de4f386e6c30fd2c4522e24a1": {
+      "occurrences": 1,
+      "raw_bytes": 858,
+      "raw_sha256": "71686fc372ba94d6dfe7dd9725d5133b14eef367a7ed24d8eba73fbe5319c700"
+    },
+    "b759c02d2c0d91e9bf132e90bab65a0a1d45d556": {
+      "occurrences": 1,
+      "raw_bytes": 360,
+      "raw_sha256": "aed5f057dee697f6bd7e38330e1dc8935aa2a01a43dbbafa9503d00984984585"
+    },
+    "b91d57e4260fffd73a7f6b8e4ef0438ffa1a5a81": {
+      "occurrences": 1,
+      "raw_bytes": 13474,
+      "raw_sha256": "f414a5c2fde2d57df4adc665761359a497d94f7d21e25aea83e9f9369b5949ca"
+    },
+    "c20fd6afb717d8767a59d3dcfcb4562303489167": {
+      "occurrences": 1,
+      "raw_bytes": 217,
+      "raw_sha256": "553717d5db423ec067d7762fc4b308a65121d2f6a7a5344f994a9b5b0588d708"
+    },
+    "c37042096d75c2e14611c2778cf46a2a441f195e": {
+      "occurrences": 1,
+      "raw_bytes": 180,
+      "raw_sha256": "9e7d9f1d42ecb36ab599d4bb2c2913d55cdbac009bd11e7e0a99fd643dc8ee46"
+    },
+    "c4c0dbbb99dcae35e50d7846f85ceb82a114bcf6": {
+      "occurrences": 1,
+      "raw_bytes": 316,
+      "raw_sha256": "043df16b51ae7308fc2127a5317b7197cc7463719eb1b8d39a707f19708f0992"
+    },
+    "c82af70f57f8fd3cecb61fc9f427256f3fade9c3": {
+      "occurrences": 1,
+      "raw_bytes": 287,
+      "raw_sha256": "f0e64a873b38febba7ec0cc465f5a1e227e591e48de247129962f87fb3bfcb08"
+    },
+    "cbc4a2ef3cd727513b3bd2e58c313cc057b3e2bc": {
+      "occurrences": 1,
+      "raw_bytes": 1248,
+      "raw_sha256": "cdf9c903071fa607ae6bae69c1da0f74c689f8744ee44ea86b30d684cb3ade54"
+    },
+    "d4b50de82fc8bbe52e9e8d3ec7a18b26b1476e37": {
+      "occurrences": 1,
+      "raw_bytes": 1382,
+      "raw_sha256": "16cb98f45dccca5bb9e0a174af0d65d0039618885634b5bcf49c7a37056a8475"
+    },
+    "daa9bdc42b21c66d73157b96b6ceda9eb7687268": {
+      "occurrences": 1,
+      "raw_bytes": 526,
+      "raw_sha256": "bce3c1c9215838197653af0b8ab9f678ec19ad5f5cd21dcbf53e970257460f5a"
+    },
+    "dcc3f4dcbc664e807c800312e8f7ecd6737437dd": {
+      "occurrences": 1,
+      "raw_bytes": 386,
+      "raw_sha256": "f5d9f8dce2547307c506124c4a12b2f5c5cf517434996703caaab65e5f904358"
+    },
+    "e0ee7a1e9f36def82826159b946db919008df704": {
+      "occurrences": 2,
+      "raw_bytes": 3036,
+      "raw_sha256": "3d08239828c8e07829f23591c52a268a0151327bb486755e0b0381b6da01c5f8"
+    },
+    "e55e990088c45c4b64669fbc0c4e68e5e8a5e7d1": {
+      "occurrences": 1,
+      "raw_bytes": 358,
+      "raw_sha256": "b1c679c5b133e4524ce24f84c0bd5c10eb72e26794bfde8314ceda7697d714e7"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 2,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e7e05b6607dd32267e968f57d7888eb0e3962ed3": {
+      "occurrences": 1,
+      "raw_bytes": 474,
+      "raw_sha256": "6f9edca99d00f51fd205c4f9c115875a0eabbbd6cc7c27e4313d9eb5d736fdef"
+    },
+    "f33d9d7bb45d0bab7be41da3ee4d00641a692c70": {
+      "occurrences": 1,
+      "raw_bytes": 190,
+      "raw_sha256": "cd48f5510dc011de929d05e488e806f04989667d852aa08deb930b0a5d9ccdd4"
+    },
+    "f409362687f1bc26f92de63c0c01a2735ea3380a": {
+      "occurrences": 1,
+      "raw_bytes": 138,
+      "raw_sha256": "298e3a04089971e2ee8a2f5ba80e841eba482dd0d36cae11817cb5ca3a1bf52a"
+    },
+    "f64eefff6488f22a644327fd463dd167b557105f": {
+      "occurrences": 1,
+      "raw_bytes": 935,
+      "raw_sha256": "3b815701c74823b470f189dd78bb203832a640f5bf456e944c2133e2f45edd4f"
+    },
+    "fa2a01efb840247fc196d614158778b15c2754cd": {
+      "occurrences": 1,
+      "raw_bytes": 13475,
+      "raw_sha256": "b8374f5609ce263f4e5163bd9e929bafd1f1afa98c5984a54e27a375b76ea0a3"
+    }
+  }
+}

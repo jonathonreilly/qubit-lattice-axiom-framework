@@ -1,0 +1,1014 @@
+===== runner cache v1 =====
+runner: scripts/native_flux_defect_comparison_and_winding_gap_2026_09_08.py
+runner_sha256: a42bf36f29e618cd85dcc67306dba3118f6e08627d860180ebd35bd232d47134
+input_fingerprint_sha256: f4889120f72b7f3840d5aa43575048ccd526ef08094dd499a61d7d871f8c01c2
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+{
+  "executed_predicates": 105615,
+  "predicate_breakdown": {
+    "geometry": 91395,
+    "combinatorial": 14218,
+    "coverage": 1,
+    "resource": 1
+  },
+  "geometry": {
+    "status": "PASS",
+    "predicates": 91395,
+    "seconds": 0.29888170899357647,
+    "classes": 32,
+    "rows": [
+      {
+        "class": 0,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 6,
+        "defects": 48
+      },
+      {
+        "class": 0,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 6,
+        "defects": 96
+      },
+      {
+        "class": 0,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 6,
+        "defects": 384
+      },
+      {
+        "class": 1,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 1,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 1,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 2,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 2,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 2,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 3,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 3,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 3,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 4,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 4,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 4,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 5,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 5,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 5,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 6,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 6,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 6,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 7,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 7,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 7,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 8,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 8,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 8,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 9,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 9,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 9,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 10,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 10,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 10,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 11,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 11,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 11,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 12,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 12,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 12,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 13,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 13,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 13,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 14,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 14,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 14,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 15,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 0,
+        "defects": 0
+      },
+      {
+        "class": 15,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 0,
+        "defects": 0
+      },
+      {
+        "class": 15,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 0,
+        "defects": 0
+      },
+      {
+        "class": 16,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 16,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 16,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 17,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 17,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 17,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 18,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 18,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 18,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 19,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 19,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 19,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 20,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 20,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 20,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 21,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 21,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 21,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 22,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 22,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 22,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 23,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 23,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 23,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 24,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 24,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 24,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 25,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 32
+      },
+      {
+        "class": 25,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 4,
+        "defects": 64
+      },
+      {
+        "class": 25,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 4,
+        "defects": 256
+      },
+      {
+        "class": 26,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 26,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 26,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 27,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 27,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 27,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 28,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 28,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 28,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 29,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 29,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 29,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 30,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 30,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 30,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      },
+      {
+        "class": 31,
+        "dims": [
+          4,
+          4,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 16
+      },
+      {
+        "class": 31,
+        "dims": [
+          4,
+          8,
+          4
+        ],
+        "internal_defects": 2,
+        "defects": 32
+      },
+      {
+        "class": 31,
+        "dims": [
+          8,
+          8,
+          8
+        ],
+        "internal_defects": 2,
+        "defects": 128
+      }
+    ],
+    "scope": "exact compatible tiling/Bianchi/winding/counting; analytical energy inequality not numerically tested"
+  },
+  "combinatorics": {
+    "predicates": 14218,
+    "seconds": 0.06332754204049706,
+    "scope": "finite run-extension/empirical-count/twist controls; no energy computation"
+  },
+  "elapsed_seconds": 0.36413362494204193,
+  "peak_rss_mib": 22.03125,
+  "input_sha256": {
+    "docs/NATIVE_FLUX_DEFECT_COMPARISON_AND_WINDING_GAP_NOTE_2026-09-08.md": "b215cd8b596d7fa4a5680331f21a2d86a5965ecaa8a207dff1c87ccff1d164e9",
+    "docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md": "da1849644f34f729eda9f8fe8c1fc19602d775404f6c85c6ac365e7fa540c7d0",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "scripts/native_flux_defect_geometry_2026_09_08.py": "cdf37b7431888c4c401b32fe41558fe49e6506b6b26afe0e5d7f8d81c433c514",
+    "scripts/native_flux_defect_combinatorics_2026_09_08.py": "9c1c7fac29dc8ea2f29c42970a8c52b6b14c461423f764420d339657cce910b5"
+  },
+  "source_sha256": "a42bf36f29e618cd85dcc67306dba3118f6e08627d860180ebd35bd232d47134",
+  "scope": "Finite geometry and chessboard combinatorial controls only; reflection energy inequality and Fourier winding bound are analytical proofs, not numerical validations."
+}
+per_element: cube links and compatible face products.
+per_site: disjoint cube vertices and reflection partitions.
+per_mode: no spectral or Bloch calculation is executed; the energy comparison and Fourier winding bound are analytical.
+per_block:32 cube labels and exact run-extension controls.
+lattice_wide: finite tiling/seams/counts; analytical bounds separately proved.
+TOTAL: PASS=105615 FAIL=0
+Resources: 0.364134s,22.031MiB; timeout180s,RSS384MiB.
+
+----- stderr -----
+

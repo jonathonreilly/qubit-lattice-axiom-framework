@@ -1,0 +1,1255 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "54c4eaacd7e28da481175477afed953a3ceb6953",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/ARTIFACT_PLAN.md",
+      "raw_bytes": 274,
+      "raw_sha256": "25b754b49d7788232b853eec890811595eed2fdc077f8f0ac9623c48a635a6fc",
+      "stored_path": "_objects/25b754b49d7788232b853eec890811595eed2fdc077f8f0ac9623c48a635a6fc.gz",
+      "stored_sha256": "91f72c6dfe89f311a3c451d59880f785e7a0c3efe1736838c863b0dc73e6c7a2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2bfdf44056068e4e01ea4a98b777725e15790622",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 427,
+      "raw_sha256": "835d5e01488073eb31dc8dfeca614d24b2b2ed503a19c2240fece5f126a3cf5b",
+      "stored_path": "_objects/835d5e01488073eb31dc8dfeca614d24b2b2ed503a19c2240fece5f126a3cf5b.gz",
+      "stored_sha256": "38de686dc6fc12e61710771abce0cc6a21099b647acd27ae76db367651fa41d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6d5ca772380d67d3aa96af25a713bacb5cd3d3a1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/CANONICAL_COLD_REVIEW/RECEIPT_CHECK.json",
+      "raw_bytes": 11849,
+      "raw_sha256": "ccac0a1ebdc24f191363dcbad0ca3881382da91c44556c56c8f31fc4fd089157",
+      "stored_path": "_objects/ccac0a1ebdc24f191363dcbad0ca3881382da91c44556c56c8f31fc4fd089157.gz",
+      "stored_sha256": "b890b37d44c3d19009b03d5f2b04c674f0de537cd47c1973c74805e8736cd90a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4b63d9679490b38f8ef4f680176ffe0275cec08a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/CANONICAL_COLD_REVIEW/REVIEW.md",
+      "raw_bytes": 4264,
+      "raw_sha256": "0172b2ac9c9dc82a5fc1668bd3d3e15f51ee53aca93329b47fcaf9726c0b136f",
+      "stored_path": "_objects/0172b2ac9c9dc82a5fc1668bd3d3e15f51ee53aca93329b47fcaf9726c0b136f.gz",
+      "stored_sha256": "f0dfb91820733101ebcae1e3cc586252c00da1983112c12fb56f31d2114f7cfa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "aabc932e1b33e2ea3abad9289640df457a5b5d80",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 369,
+      "raw_sha256": "582f4b78b3dff5cf7e62048ef432d5164e70f85d5f1cd772d57d02edecde0eae",
+      "stored_path": "_objects/582f4b78b3dff5cf7e62048ef432d5164e70f85d5f1cd772d57d02edecde0eae.gz",
+      "stored_sha256": "d35e612abb719e9e84c88b6ed58d7ee21e0c984b44d4c6a5c4b86e77d2af1691"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fc310a23f217243a5e410d367dd5608548f1387e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/CONTROL_CONTRACT.md",
+      "raw_bytes": 383,
+      "raw_sha256": "1e1d0a67530598d7b47b56db00640ad01400e76e6ebe8b61fe6f14abb13c1b83",
+      "stored_path": "_objects/1e1d0a67530598d7b47b56db00640ad01400e76e6ebe8b61fe6f14abb13c1b83.gz",
+      "stored_sha256": "ccd6bdf95c5ff32f615f6182dfb5b92172bddbb9216f3a3e496ef03dda904081"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e70baf008bb12834755a6b5ec7941b59859995ad",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/GOAL.md",
+      "raw_bytes": 198,
+      "raw_sha256": "f43ab1b9b0f7d90098440328923c69f2757aaa086627d43ef72b914bcc24208a",
+      "stored_path": "_objects/f43ab1b9b0f7d90098440328923c69f2757aaa086627d43ef72b914bcc24208a.gz",
+      "stored_sha256": "bf39c87ac842b4402834d9de007a19ff991a5c336dab2f6d651dc48575f858b3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2d558c546dc207313da487a6d7d3548b26d527ea",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/GRAPH_DELTA.json",
+      "raw_bytes": 297,
+      "raw_sha256": "f3968acf578d247525f7c86df9e25ce09cc0a728da664efe2ab703acc582f4cb",
+      "stored_path": "_objects/f3968acf578d247525f7c86df9e25ce09cc0a728da664efe2ab703acc582f4cb.gz",
+      "stored_sha256": "68c0863ed27b203a68f5e80344504cfa4aaf7fe8da1f5418ab6311fc083d59c1"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "9984b09e1dac4acbb6db99c09415abfed51b312a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/HANDOFF.md",
+      "raw_bytes": 785,
+      "raw_sha256": "d2896dda67fc67741a87f0fad18702a42666afd12bdac8d731ffcc31e1b49efa",
+      "stored_path": "kept/pr8054-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "d2896dda67fc67741a87f0fad18702a42666afd12bdac8d731ffcc31e1b49efa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3bf68aedf7fba9e8951752be504ddc345a95198d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/LITERATURE_BRIDGES.md",
+      "raw_bytes": 460,
+      "raw_sha256": "437adc3856cf10587812b13a38efd5f375c61d4ea4454555c056a07dfe5475f4",
+      "stored_path": "_objects/437adc3856cf10587812b13a38efd5f375c61d4ea4454555c056a07dfe5475f4.gz",
+      "stored_sha256": "39fa69a22e8b93480b9ee688f0a9e783330406872a503fe3dc8a30683fbca077"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b83035f3c098c3e8ffbd99fbb48d64595a8a831a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/NO_GO_LEDGER.md",
+      "raw_bytes": 378,
+      "raw_sha256": "4e897ebfe5e242e506bbf2370006d98586de8aae8cbe69ee0e73474dd0b763d1",
+      "stored_path": "_objects/4e897ebfe5e242e506bbf2370006d98586de8aae8cbe69ee0e73474dd0b763d1.gz",
+      "stored_sha256": "b8e927a5abfff0a0027627c1e993c59641033767098b6a839d7430df6ee2cbea"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0cc439a3e19496e951c2915c15575ba23c4f2c00",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 295,
+      "raw_sha256": "8141a39d7a565e131150690239a2d125c30c1bbafa5ba4c2d72aef1ca3992e5d",
+      "stored_path": "_objects/8141a39d7a565e131150690239a2d125c30c1bbafa5ba4c2d72aef1ca3992e5d.gz",
+      "stored_sha256": "80d463f386bddd81515e2fbc5581ccc4a84adcbc096a8a1165e4c1a18a257686"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ff4677c96179b8bcde0035068eed775df604cf1d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/ORIGINAL_HASHES.json",
+      "raw_bytes": 3206,
+      "raw_sha256": "848a5da876b2b5a34b89d9490222ad28ae5079f8e3d690a685784c7e1283ad40",
+      "stored_path": "_objects/848a5da876b2b5a34b89d9490222ad28ae5079f8e3d690a685784c7e1283ad40.gz",
+      "stored_sha256": "ba34daa6817b785b7fc97ac3a9a523c581543ca7c824e913834e8515c55b1c11"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e0db8d1cd4d16bb7745d3410acf0522f87c8ce6c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/CANONICAL.stderr",
+      "raw_bytes": 777,
+      "raw_sha256": "58fbfcb620579fac8885e87133efb35dd51307c9f2c6bfbec7c4e7c93f1c0983",
+      "stored_path": "_objects/58fbfcb620579fac8885e87133efb35dd51307c9f2c6bfbec7c4e7c93f1c0983.gz",
+      "stored_sha256": "493e1c7d8abe09c4aa7e8c4f6a6d424375096f89d61bbecf47b253165f3d9cbf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5bed4a87d389b12502fabd08d918970f5e19c9fc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/CANONICAL.stdout",
+      "raw_bytes": 1343,
+      "raw_sha256": "ca49bc5a2878f872164e57b198b8850c486371aa443276327e609ae596ae09b3",
+      "stored_path": "_objects/ca49bc5a2878f872164e57b198b8850c486371aa443276327e609ae596ae09b3.gz",
+      "stored_sha256": "4fc83ea83b0e85ee3a7564a3648dd8bbd38d4feec045920f5d29263e90d2f325"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "862cd3a3b61e1548db0c74f29f74a0d186578103",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/CANONICAL_FREEZE.json",
+      "raw_bytes": 1030,
+      "raw_sha256": "c5f0e0d7964c2024397d77ffcaec51c49e89107b941eac295cf8ac1711b8b3e5",
+      "stored_path": "_objects/c5f0e0d7964c2024397d77ffcaec51c49e89107b941eac295cf8ac1711b8b3e5.gz",
+      "stored_sha256": "01a3403d1ad8ff4225416793f82460582ce9893e957d733177e4aa94ab051b5f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9d18c15d7f28ad7ac3f0fa0d827249e31b8d5bb3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/CONTROLS.json",
+      "raw_bytes": 3196,
+      "raw_sha256": "2b829e498a410f90eb69e599780bc9a4d47780ac2ef5aeac9dd44727e0f7e646",
+      "stored_path": "_objects/2b829e498a410f90eb69e599780bc9a4d47780ac2ef5aeac9dd44727e0f7e646.gz",
+      "stored_sha256": "26f9a2e65a7951ba56548ff4be77e7bdb3de0c6cf8bb03974a1cf66834cf4819"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "40a84597e4b8adb6d78ef8f6e2c39626c01704f9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/INVALID_CLI.stderr",
+      "raw_bytes": 157,
+      "raw_sha256": "f7a474e003d69540253b3ae29e6a64801eca6fcb91bd18026ba0fdbaa01aaece",
+      "stored_path": "_objects/f7a474e003d69540253b3ae29e6a64801eca6fcb91bd18026ba0fdbaa01aaece.gz",
+      "stored_sha256": "6ef31d9a77cfc178ca5e0912ebb0a9da12e9c5e5410d92b27b7f215ee1e49e42"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a424e8880974ec1cd5aa1773817a9527c6e86c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/ISOLATED/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "stored_path": "_objects/3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715.gz",
+      "stored_sha256": "1ed8c0db82277768be0b5b2b9d116cdf620ea988d743a3f32cfa40a2310f589d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a424e8880974ec1cd5aa1773817a9527c6e86c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "stored_path": "_objects/3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715.gz",
+      "stored_sha256": "1ed8c0db82277768be0b5b2b9d116cdf620ea988d743a3f32cfa40a2310f589d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a424e8880974ec1cd5aa1773817a9527c6e86c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_wrong_conjugation/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "stored_path": "_objects/3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715.gz",
+      "stored_sha256": "1ed8c0db82277768be0b5b2b9d116cdf620ea988d743a3f32cfa40a2310f589d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1a7fed090f0e3d271647869de51d78e66c0e10d9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/ISOLATED/docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md",
+      "raw_bytes": 11792,
+      "raw_sha256": "7cf79e48fd3bc070a95b1f81b52e6c21ae0ca212225b25a5713ca5598f6928e0",
+      "stored_path": "_objects/7cf79e48fd3bc070a95b1f81b52e6c21ae0ca212225b25a5713ca5598f6928e0.gz",
+      "stored_sha256": "ff7d28b04bb2cb1b0490a0a8c5ed1952b5a297126c99724f7d2f7d29ab72ac79"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1a7fed090f0e3d271647869de51d78e66c0e10d9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md",
+      "raw_bytes": 11792,
+      "raw_sha256": "7cf79e48fd3bc070a95b1f81b52e6c21ae0ca212225b25a5713ca5598f6928e0",
+      "stored_path": "_objects/7cf79e48fd3bc070a95b1f81b52e6c21ae0ca212225b25a5713ca5598f6928e0.gz",
+      "stored_sha256": "ff7d28b04bb2cb1b0490a0a8c5ed1952b5a297126c99724f7d2f7d29ab72ac79"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1a7fed090f0e3d271647869de51d78e66c0e10d9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_wrong_conjugation/docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md",
+      "raw_bytes": 11792,
+      "raw_sha256": "7cf79e48fd3bc070a95b1f81b52e6c21ae0ca212225b25a5713ca5598f6928e0",
+      "stored_path": "_objects/7cf79e48fd3bc070a95b1f81b52e6c21ae0ca212225b25a5713ca5598f6928e0.gz",
+      "stored_sha256": "ff7d28b04bb2cb1b0490a0a8c5ed1952b5a297126c99724f7d2f7d29ab72ac79"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1194992e47f959f55c0bbec5383f86cd80a81f63",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/ISOLATED/docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+      "raw_bytes": 9797,
+      "raw_sha256": "c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04",
+      "stored_path": "_objects/c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04.gz",
+      "stored_sha256": "51bee116f463e60801f98d5ed1aeab42d4cd3a8b7f012f0844d2792d4b78534d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1194992e47f959f55c0bbec5383f86cd80a81f63",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+      "raw_bytes": 9797,
+      "raw_sha256": "c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04",
+      "stored_path": "_objects/c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04.gz",
+      "stored_sha256": "51bee116f463e60801f98d5ed1aeab42d4cd3a8b7f012f0844d2792d4b78534d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1194992e47f959f55c0bbec5383f86cd80a81f63",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_wrong_conjugation/docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+      "raw_bytes": 9797,
+      "raw_sha256": "c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04",
+      "stored_path": "_objects/c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04.gz",
+      "stored_sha256": "51bee116f463e60801f98d5ed1aeab42d4cd3a8b7f012f0844d2792d4b78534d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "141e1c895b6e2aa00f3fe57854842288c238105c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/ISOLATED/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+      "stored_path": "_objects/1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042.gz",
+      "stored_sha256": "f1d6898b0d8df7e8839365f120e829ef71d4e46847656de1011597ca93a12422"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "141e1c895b6e2aa00f3fe57854842288c238105c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+      "stored_path": "_objects/1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042.gz",
+      "stored_sha256": "f1d6898b0d8df7e8839365f120e829ef71d4e46847656de1011597ca93a12422"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "141e1c895b6e2aa00f3fe57854842288c238105c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_wrong_conjugation/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+      "stored_path": "_objects/1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042.gz",
+      "stored_sha256": "f1d6898b0d8df7e8839365f120e829ef71d4e46847656de1011597ca93a12422"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "46032ed9e8f45e9f21128ed7c94c933d2d6fa7f4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/ISOLATED/outputs/native_even_torus_flux_isolation_2026_09_08.json",
+      "raw_bytes": 1343,
+      "raw_sha256": "71feec8fbae139facb4ff1a29e43e7ea0ea99c85ef7a9f5e5d88fe2af167d27e",
+      "stored_path": "_objects/71feec8fbae139facb4ff1a29e43e7ea0ea99c85ef7a9f5e5d88fe2af167d27e.gz",
+      "stored_sha256": "66d30d99469ba545e93035e94fba39c5a25cfd806e4b40274018eeec7b8049c3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "46032ed9e8f45e9f21128ed7c94c933d2d6fa7f4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/ISOLATED/stdout",
+      "raw_bytes": 1343,
+      "raw_sha256": "71feec8fbae139facb4ff1a29e43e7ea0ea99c85ef7a9f5e5d88fe2af167d27e",
+      "stored_path": "_objects/71feec8fbae139facb4ff1a29e43e7ea0ea99c85ef7a9f5e5d88fe2af167d27e.gz",
+      "stored_sha256": "66d30d99469ba545e93035e94fba39c5a25cfd806e4b40274018eeec7b8049c3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d3963f24fbe4a53cda32781243c92927fa306a62",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/ISOLATED/scripts/native_even_torus_flux_isolation_2026_09_08.py",
+      "raw_bytes": 3193,
+      "raw_sha256": "e00982e48369aa8e76bb99853d21d20f73ffd7a00690d0b960eda04c76726eea",
+      "stored_path": "_objects/e00982e48369aa8e76bb99853d21d20f73ffd7a00690d0b960eda04c76726eea.gz",
+      "stored_sha256": "1a9ddfa5998e09a2fba4a012f3a76a6c5ce6d0c5281eca2dce20c895422f3606"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c53b45d2e33855c1ffdad1eafb8c3e098073c5db",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/ISOLATED/scripts/native_even_torus_flux_isolation_controls_2026_09_08.py",
+      "raw_bytes": 4330,
+      "raw_sha256": "6c3d404abb80713659819c3bb80daffedf4224ed2533515f07dad001d9e7738e",
+      "stored_path": "_objects/6c3d404abb80713659819c3bb80daffedf4224ed2533515f07dad001d9e7738e.gz",
+      "stored_sha256": "cd320d585f2dbd48022f9689d8958fb58266c43b66e41ee514f32e9ce080db0f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c53b45d2e33855c1ffdad1eafb8c3e098073c5db",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/check.py",
+      "raw_bytes": 4330,
+      "raw_sha256": "6c3d404abb80713659819c3bb80daffedf4224ed2533515f07dad001d9e7738e",
+      "stored_path": "_objects/6c3d404abb80713659819c3bb80daffedf4224ed2533515f07dad001d9e7738e.gz",
+      "stored_sha256": "cd320d585f2dbd48022f9689d8958fb58266c43b66e41ee514f32e9ce080db0f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6550b499dc7c180f0266ed4b2592198862045270",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/ISOLATED/stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "d42db4734c64fd32d8ce0a1c6e9ea6e882f556d8395f1e53f1d45137a9545fea",
+      "stored_path": "_objects/d42db4734c64fd32d8ce0a1c6e9ea6e882f556d8395f1e53f1d45137a9545fea.gz",
+      "stored_sha256": "f5cf1b326c28589345b126338f2a1a3a0aedca3fa0a818b95be02a62199273c1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bd4e00e092ea5ddfeaa197c0fdd29b22996c9d15",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/scripts/native_even_torus_flux_isolation_2026_09_08.py",
+      "raw_bytes": 3193,
+      "raw_sha256": "e23a6753cb768e61f41a60c00e349546f4f317350f0ab789cf844c8a91f63167",
+      "stored_path": "_objects/e23a6753cb768e61f41a60c00e349546f4f317350f0ab789cf844c8a91f63167.gz",
+      "stored_sha256": "573897b6f8545167fc08456b04f26bc2e9741316803aebc3e06f2c4850f9e91e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c24696d40d94c15645cb8d771a60ad54ec38e059",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/scripts/native_even_torus_flux_isolation_controls_2026_09_08.py",
+      "raw_bytes": 4323,
+      "raw_sha256": "705b0c585b31ad4ae2850871b3319fc7813d3b90c971b53235d742c759e00b1f",
+      "stored_path": "_objects/705b0c585b31ad4ae2850871b3319fc7813d3b90c971b53235d742c759e00b1f.gz",
+      "stored_sha256": "237e4f2cbcaee678b3cf2958f2f38dac6763cd8f97b7e80384718f67ec9a4cb1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c24696d40d94c15645cb8d771a60ad54ec38e059",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/missing_channel_pair.py",
+      "raw_bytes": 4323,
+      "raw_sha256": "705b0c585b31ad4ae2850871b3319fc7813d3b90c971b53235d742c759e00b1f",
+      "stored_path": "_objects/705b0c585b31ad4ae2850871b3319fc7813d3b90c971b53235d742c759e00b1f.gz",
+      "stored_sha256": "237e4f2cbcaee678b3cf2958f2f38dac6763cd8f97b7e80384718f67ec9a4cb1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cd217506b2693f7cab3b29143e5237f8613fee25",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/stderr",
+      "raw_bytes": 2271,
+      "raw_sha256": "3f2b319365f15926333d80a9dc714f9b0459385f358409d8c121910b2526eb8f",
+      "stored_path": "_objects/3f2b319365f15926333d80a9dc714f9b0459385f358409d8c121910b2526eb8f.gz",
+      "stored_sha256": "64e57789eac8bdcbde85e92bb85d5fa564206683c171db7e850f33fa17a32024"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_wrong_conjugation/stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/missing_channel_pair.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/wrong_conjugation.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a85958464049ee16d944133904347e2196974709",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_wrong_conjugation/scripts/native_even_torus_flux_isolation_2026_09_08.py",
+      "raw_bytes": 3193,
+      "raw_sha256": "b5f0b9a235dff822fbd52a9a8f2f7c0e0c6ec9e8beea814b685af8f46120b10d",
+      "stored_path": "_objects/b5f0b9a235dff822fbd52a9a8f2f7c0e0c6ec9e8beea814b685af8f46120b10d.gz",
+      "stored_sha256": "bd02ef1ab971249d7b3b8178965c24466f0491359f11e577a8e8690f0a2a9141"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b4cc4783c346f544cabb0c04d4bdd506ccf5258e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_wrong_conjugation/scripts/native_even_torus_flux_isolation_controls_2026_09_08.py",
+      "raw_bytes": 4325,
+      "raw_sha256": "e44704b17b0969ae7a0c2e9de21fa9ebdad95f063fc6ad6e58817aa64bb726a7",
+      "stored_path": "_objects/e44704b17b0969ae7a0c2e9de21fa9ebdad95f063fc6ad6e58817aa64bb726a7.gz",
+      "stored_sha256": "1ab408bb0d156607adf5c76728435642c7f5e6c2bfbb95a412f3a54128d9bbf5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b4cc4783c346f544cabb0c04d4bdd506ccf5258e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/wrong_conjugation.py",
+      "raw_bytes": 4325,
+      "raw_sha256": "e44704b17b0969ae7a0c2e9de21fa9ebdad95f063fc6ad6e58817aa64bb726a7",
+      "stored_path": "_objects/e44704b17b0969ae7a0c2e9de21fa9ebdad95f063fc6ad6e58817aa64bb726a7.gz",
+      "stored_sha256": "1ab408bb0d156607adf5c76728435642c7f5e6c2bfbb95a412f3a54128d9bbf5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "74c82de4790c57cf48a8c3eb39af2898580b6d6c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_wrong_conjugation/stderr",
+      "raw_bytes": 2300,
+      "raw_sha256": "6ce148ee8e81441a247fe6cd61527668bd1e9a30556e4c2c0abf90d4d97a32e4",
+      "stored_path": "_objects/6ce148ee8e81441a247fe6cd61527668bd1e9a30556e4c2c0abf90d4d97a32e4.gz",
+      "stored_sha256": "e74882ee41cbcafc733a6260e7d9ad71c4cefa5d6b690b7d139e0c812fd7e91a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "98aed22866cf2c06cf5363c80e99b2ae19b08cd9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/PORT_REPORT.md",
+      "raw_bytes": 715,
+      "raw_sha256": "63b1ffa4430b348d8dfa859fb9760885c91df5c1657160accd622f161102a5c8",
+      "stored_path": "_objects/63b1ffa4430b348d8dfa859fb9760885c91df5c1657160accd622f161102a5c8.gz",
+      "stored_sha256": "e00b4940d4e905f8411b642a8ee8af2fa1bd5d4a47f9b8bc60b534dc1d754282"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a9f60e183b4fd49c2ad17879854dab18949c5e1a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/PRE_CANONICAL_FREEZE.json",
+      "raw_bytes": 878,
+      "raw_sha256": "d2d01710e0d94c3843653bc956b351d01b9230730c3404cc6993301fcc6ec1a8",
+      "stored_path": "_objects/d2d01710e0d94c3843653bc956b351d01b9230730c3404cc6993301fcc6ec1a8.gz",
+      "stored_sha256": "14fa476cab2ade9adbf80841ab6f1455c423cca9c36e04a5f9c02878bf4fb3a5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d755990993aeb46b595d073662d9972a96c66695",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/FINAL_FREEZE.json",
+      "raw_bytes": 1203,
+      "raw_sha256": "73c860a21e6c0efd6a90808964fefe09fe33b5a6dab0aee203bf566902503120",
+      "stored_path": "_objects/73c860a21e6c0efd6a90808964fefe09fe33b5a6dab0aee203bf566902503120.gz",
+      "stored_sha256": "b3f21abd02423b25e2118501ab1acdf0d6cc9b0af2f3ab49042a43f884b907e4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3db26a9faca221cd38ee00850c9eab48b66bf620",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/INVALID_CLI.stderr",
+      "raw_bytes": 81,
+      "raw_sha256": "6314b4b78e4c87cca5404efb7ffa9e97b12af51ac1cc8d2087b3b26d47691132",
+      "stored_path": "_objects/6314b4b78e4c87cca5404efb7ffa9e97b12af51ac1cc8d2087b3b26d47691132.gz",
+      "stored_sha256": "c0b8143a8c75950449627ff9f65e340e4a4ec8e61452153e687952ebb4f994df"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "066eea5b26854154f584e99f502c6c13d6c7e8c6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/MUTATIONS.json",
+      "raw_bytes": 392,
+      "raw_sha256": "5c4a72e87aa0ff6d470f5b600a441396d0078db66d0a75626d88e6fafc82d0ca",
+      "stored_path": "_objects/5c4a72e87aa0ff6d470f5b600a441396d0078db66d0a75626d88e6fafc82d0ca.gz",
+      "stored_sha256": "e3ba8b2a98a99cea39c8dc767fa22e1763ff704e8a5936121b025e904406fdb4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cb61e9df3230e4dc4c0e8e22ca2c49ebf109c980",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/PREREGISTRATION.md",
+      "raw_bytes": 569,
+      "raw_sha256": "6e6a4f1848d7e87bf747110560a4d5c96d37a89ff34f0545ff6216a0e99596f3",
+      "stored_path": "_objects/6e6a4f1848d7e87bf747110560a4d5c96d37a89ff34f0545ff6216a0e99596f3.gz",
+      "stored_sha256": "51b28aedca20dca0c9dec14bf749d933b9f3b80850a0a4b72062271919d0d997"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6faeb235fb512bc485984fcc801af1e52b18c650",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/PRE_FREEZE.json",
+      "raw_bytes": 177,
+      "raw_sha256": "42b3489d11debe49dbd85706da5e5507bd9a008b242eed6a70eb536130c32073",
+      "stored_path": "_objects/42b3489d11debe49dbd85706da5e5507bd9a008b242eed6a70eb536130c32073.gz",
+      "stored_sha256": "111e2a7397192ad56a3a3f0b3cbac4a6b3006a046ffde631f935b3f3f1ee85ba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1a5b294e4eac38d4b9292ad3c956c53951cc23d2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/REPORT.md",
+      "raw_bytes": 1094,
+      "raw_sha256": "de19fdcff321666e0832c06e147f5a52282e53bfd903a77231bef0070a89db44",
+      "stored_path": "_objects/de19fdcff321666e0832c06e147f5a52282e53bfd903a77231bef0070a89db44.gz",
+      "stored_sha256": "9cceb8432001568be461365f3b4276cbd0a7e3fbf30a1cfbd6dbae2a238c8b2c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "85176c48fc34d61985d0fe62ea88f37e61e41044",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/RESULT.json",
+      "raw_bytes": 137,
+      "raw_sha256": "0da03319ab59d73d05964e44c4acfcc45db0df86760be59edc27a23c0327e971",
+      "stored_path": "_objects/0da03319ab59d73d05964e44c4acfcc45db0df86760be59edc27a23c0327e971.gz",
+      "stored_sha256": "8cf441e3241e8f0aabda361f90d35bbadf11f9ee6a4694d25e020b6aa29cd8c6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "67ac06fcc9890fed519513d39ea1802b6569d85d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/missing_channel_pair.stderr",
+      "raw_bytes": 999,
+      "raw_sha256": "b5a8254117edb8b585b6ef3de580a6b4f319f368eed28181b7a4531342ec0278",
+      "stored_path": "_objects/b5a8254117edb8b585b6ef3de580a6b4f319f368eed28181b7a4531342ec0278.gz",
+      "stored_sha256": "d4efff860d0bfbfc311c7b4bb9c5470ff2ec70ffc6381813188e1b47a1759169"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "61862d6f1ff19b7758d389bc8287390e861ebdbb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/originals/wrong_conjugation.stderr",
+      "raw_bytes": 999,
+      "raw_sha256": "6ee465b8e916833a77ce0bb5bfefa2f17a7ac3dce11a017a094eaf144beed7cc",
+      "stored_path": "_objects/6ee465b8e916833a77ce0bb5bfefa2f17a7ac3dce11a017a094eaf144beed7cc.gz",
+      "stored_sha256": "96eed8479847cd1a6ab3ea7ceede723c7d3b0ed4b7c6fa64c2cad1233edfef54"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0d157763525e0d8704051c046638614cd5ced395",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PR_BACKLOG.md",
+      "raw_bytes": 298,
+      "raw_sha256": "9fca36af696be807b10ba99d015024327453104f6fd361b401b0e69545ec5620",
+      "stored_path": "_objects/9fca36af696be807b10ba99d015024327453104f6fd361b401b0e69545ec5620.gz",
+      "stored_sha256": "f733320271afeaadfcc2e80a0c48b09568950f9ac61c0c84eccadcef1b49a9ef"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f333fac233e1bd27c8e661caf5d306a4e814b6b5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/REVIEW_HISTORY.md",
+      "raw_bytes": 650,
+      "raw_sha256": "181842f29d3f048b9aa2a70c8c120770b724cfba2501d137bdbdaa615650dffc",
+      "stored_path": "_objects/181842f29d3f048b9aa2a70c8c120770b724cfba2501d137bdbdaa615650dffc.gz",
+      "stored_sha256": "08b998fd02c7ccd9dd940cf74e68943e15114f01e176282c988eaa92561ef775"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e8c068aa2000e26d7b1acbba53779984c353c2fb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/ROOT_REVIEW.md",
+      "raw_bytes": 4353,
+      "raw_sha256": "d0354b606c7bf68ffb6fd230aa70c83f28e9f5af52bb1edbdd247158751ce708",
+      "stored_path": "_objects/d0354b606c7bf68ffb6fd230aa70c83f28e9f5af52bb1edbdd247158751ce708.gz",
+      "stored_sha256": "cd018a7924ba0d53fc46023408aeb63d46e0ecde4bb15091983cc3fb9fea4666"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "47e8eda27d906a2bd50092ac20a044bd92b2d489",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 410,
+      "raw_sha256": "f16a731e06f37c8f1b13487e4819a3018f89aaa7fb61cd754342c69c5b99d51c",
+      "stored_path": "_objects/f16a731e06f37c8f1b13487e4819a3018f89aaa7fb61cd754342c69c5b99d51c.gz",
+      "stored_sha256": "1a5a685119d077c6f48fa4f52ae21f5fbc4cb6f970841cea72e145cb1c1a7736"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e9d94e52b828720e7a46c758409e5517793b11a4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/STATE.yaml",
+      "raw_bytes": 648,
+      "raw_sha256": "aa5e127ecccef676a3162dcab12f9b211a87fe4b4eb9acd229f083f9cb32cf22",
+      "stored_path": "_objects/aa5e127ecccef676a3162dcab12f9b211a87fe4b4eb9acd229f083f9cb32cf22.gz",
+      "stored_sha256": "25af0598da434135b43ed0ec55f4957df80cd844550bb44f1add9ef45bd697be"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c941216a548331d0f0c4161c402526b76fe0aec1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/TRACE_GATE.md",
+      "raw_bytes": 364,
+      "raw_sha256": "294fec66711a47352c0098c620592a819916d0072582736d66ff50aeeba3b5eb",
+      "stored_path": "kept/pr8054-TRACE_GATE-f67515f6cce5b41d.md",
+      "stored_sha256": "294fec66711a47352c0098c620592a819916d0072582736d66ff50aeeba3b5eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c94394b567d1b42b49bdebd84a9e495ba1b47572",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-even-torus-flux-strictness-cold-review/READ_HASHES.json",
+      "raw_bytes": 161,
+      "raw_sha256": "f74f43d0dde55e401310a0b820cb2778cd5d73a37ed7c9a96eae3bca1900e702",
+      "stored_path": "_objects/f74f43d0dde55e401310a0b820cb2778cd5d73a37ed7c9a96eae3bca1900e702.gz",
+      "stored_sha256": "5a4408d55a10585359d3ca08067d5cb614f98d7b418dfaecad4a5a346818c226"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "88da9190be07559b932c68a05083c86c9afc2c8c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-even-torus-flux-strictness-cold-review/REVIEW.md",
+      "raw_bytes": 4287,
+      "raw_sha256": "3c8d37b597b97569c94a025a7a203bc1bcf2fc9fd93f6a60842acfd48fce5cec",
+      "stored_path": "_objects/3c8d37b597b97569c94a025a7a203bc1bcf2fc9fd93f6a60842acfd48fce5cec.gz",
+      "stored_sha256": "1b5a53fcba13a3879217006c3c2dff8a5b49a8dd6e9d746a495a08b954c4e474"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d6bad9f9cd9684f40a61e083912965b3c73f6836",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-even-torus-flux-strictness/DERIVATION.md",
+      "raw_bytes": 8837,
+      "raw_sha256": "eccedffb65a9c8ddf908affa52bfdfb2722ed3251da05d059a1688cd3957dc36",
+      "stored_path": "_objects/eccedffb65a9c8ddf908affa52bfdfb2722ed3251da05d059a1688cd3957dc36.gz",
+      "stored_sha256": "7f43ac2a473a6470334736979021c9ac7c5677b7ced6cd3c2a6576b316452165"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "235ba8664afe904d49b1beb9edb72eeab21f480a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-even-torus-flux-strictness/HASHES.json",
+      "raw_bytes": 182,
+      "raw_sha256": "aa69926760b046cca05665c9c03890899174c58ef5d9ee5cb75485b71d2088b2",
+      "stored_path": "_objects/aa69926760b046cca05665c9c03890899174c58ef5d9ee5cb75485b71d2088b2.gz",
+      "stored_sha256": "bd5e6d1d0e967ccdcfeaf57e4dc66053e8d15bda58ee9db21a367285e8b21fb4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4b416ee4f38c26da5350c31380e6618224a7da77",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-even-torus-flux-strictness/PREREGISTRATION.md",
+      "raw_bytes": 483,
+      "raw_sha256": "00added61dbd871d952b77b223d195bc35988ddcd216aa760066350e37bf120a",
+      "stored_path": "_objects/00added61dbd871d952b77b223d195bc35988ddcd216aa760066350e37bf120a.gz",
+      "stored_sha256": "4f514d5cba914c9b8ee913d3836658249c5b439a6ceb834fee791a92c9d8052c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d3c1557e561357f1d348852187c4e5a31ffb1f50",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/EQUALITY_RESULT.json",
+      "raw_bytes": 154,
+      "raw_sha256": "d9ed0db8e621e7a7abe61b0eb7027b35ff9206ca4de4c6cd402d8fb7c3ee71e8",
+      "stored_path": "_objects/d9ed0db8e621e7a7abe61b0eb7027b35ff9206ca4de4c6cd402d8fb7c3ee71e8.gz",
+      "stored_sha256": "9b3e92ce0e09aa41cb59f5cc91d2ecec3c2166b77214dc7fe767c07323f2e628"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7c06f0a9d42013e7d6ab103edf73e471f70657f2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/FIRST_PASS.md",
+      "raw_bytes": 3259,
+      "raw_sha256": "6e3141f900c510f0f9321e0b6bf09981cf2d0f233bd980477823ce51bc0daad1",
+      "stored_path": "_objects/6e3141f900c510f0f9321e0b6bf09981cf2d0f233bd980477823ce51bc0daad1.gz",
+      "stored_sha256": "37e415189af68cb01ba6f0b4402dd8d0399d1778d8528fd2f304ba28efb5e49e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "583bc7f477e4a2364127f6786bffb51009c07992",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/HASHES.json",
+      "raw_bytes": 349,
+      "raw_sha256": "5d77a80cd9e3da9c4d041c975b301d7db6badf9c7407e83364f5ac1a5241bf92",
+      "stored_path": "_objects/5d77a80cd9e3da9c4d041c975b301d7db6badf9c7407e83364f5ac1a5241bf92.gz",
+      "stored_sha256": "dd49e71b99e794dc9d950d39499b760d3d698ba3d0f56a6bb6a40e7ae5a9ebbd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c9c56260e38f31632c39c6c921ea3c9136fe1429",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/PREREGISTRATION.md",
+      "raw_bytes": 384,
+      "raw_sha256": "65757d05f8b9e09c6988f847a9d8bb0b4d8d2b333d1e6060670ac51b63138b76",
+      "stored_path": "_objects/65757d05f8b9e09c6988f847a9d8bb0b4d8d2b333d1e6060670ac51b63138b76.gz",
+      "stored_sha256": "767bdf59cf4add7fcc518b937777990dbc009d375beaebb5ef24dee506c92340"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "13f8e8ff630698cb40df5489a411eed58bc15804",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/RESULT.json",
+      "raw_bytes": 2812,
+      "raw_sha256": "92ba08f345d32d7507456665ad84574c7a284673cda5f6de9122844f17144676",
+      "stored_path": "_objects/92ba08f345d32d7507456665ad84574c7a284673cda5f6de9122844f17144676.gz",
+      "stored_sha256": "44c6b8fd967ec686455f140ecfae41751ff46adf99a0dd29aa266c732d6a1ff2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "39b071805950d08b86c46b2ffce18c319d993865",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/SCHMIDT_CONTRACT.md",
+      "raw_bytes": 531,
+      "raw_sha256": "e125075d38076fafd2463a0de5b71332a99e99c0c8a3822664598d00b939ca7f",
+      "stored_path": "_objects/e125075d38076fafd2463a0de5b71332a99e99c0c8a3822664598d00b939ca7f.gz",
+      "stored_sha256": "a7274bddb2f0a563b3feff92eecc7be6abe41a69b0c9e633f31c4a7951f60d84"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "81b3bfa0d5a3efc812ee8b1346c717eb564e2137",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/SCHMIDT_RESULT.json",
+      "raw_bytes": 144,
+      "raw_sha256": "ccf307c968c3fc26aa9d62235846c6f87c114d8db19dc59fa7c66cb5fda35abc",
+      "stored_path": "_objects/ccf307c968c3fc26aa9d62235846c6f87c114d8db19dc59fa7c66cb5fda35abc.gz",
+      "stored_sha256": "514caec2d83440ee68e7bbe344b31e1ee748ef3c11af7ea52763f1f83e85bcce"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "18ba1283bdab7e6877530758272ddadd54ee7251",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/STRICTNESS_CANDIDATE.md",
+      "raw_bytes": 7967,
+      "raw_sha256": "a92cd462d8cf405c0f0710808a98acc92c22baee8c1940b4a1a66bddd1ba0186",
+      "stored_path": "_objects/a92cd462d8cf405c0f0710808a98acc92c22baee8c1940b4a1a66bddd1ba0186.gz",
+      "stored_sha256": "289566ba0de6a906b145cc32ba05f03f8c7ceb63ba5d237dafb1af3b55d0eb06"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eac4385e23190dc1876cda4ec302f0c6cf7ade32",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/STRICTNESS_FREEZE.json",
+      "raw_bytes": 992,
+      "raw_sha256": "19b163cb1b64eca971a494648a4a2e34615ef0d1f3a868d7f24b1d9d142ad34f",
+      "stored_path": "_objects/19b163cb1b64eca971a494648a4a2e34615ef0d1f3a868d7f24b1d9d142ad34f.gz",
+      "stored_sha256": "a8bd212d31d2943667316498429d2d8622da7ddbb5dd7d9ec65775afb3365c72"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7a616c1c23df88be4b104398cbd60817808f3b21",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/check.py",
+      "raw_bytes": 1012,
+      "raw_sha256": "571c20458ac445872e98ea138e0431bee3cb12b351f9cdc8f3c624c051b5bd74",
+      "stored_path": "_objects/571c20458ac445872e98ea138e0431bee3cb12b351f9cdc8f3c624c051b5bd74.gz",
+      "stored_sha256": "50b1da9cc67d207ef742237a7424e9171bcea83d2cd370da16a694edd7ca7ab4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "db8b8a46444047527584d43f0b6f3c0baf76a83d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/equality_check.py",
+      "raw_bytes": 1275,
+      "raw_sha256": "2d8759c7426f82100cc251295b233cb6fe1a8b49dfd3f41607ac1fefc8292c8a",
+      "stored_path": "_objects/2d8759c7426f82100cc251295b233cb6fe1a8b49dfd3f41607ac1fefc8292c8a.gz",
+      "stored_sha256": "6d6797fbe17ce338a6705aedec72b9f03d4a61688d6a37a7880e10cb27eba433"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cdf61a6f85c503f4da49bf31e609a589443dc2f2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-flux-strictness/schmidt_check.py",
+      "raw_bytes": 1533,
+      "raw_sha256": "9673371d613fcaf4e6adeedcd98e92786de841cca948fc29c42165ff5f953037",
+      "stored_path": "_objects/9673371d613fcaf4e6adeedcd98e92786de841cca948fc29c42165ff5f953037.gz",
+      "stored_sha256": "24e6293c5c996f6ba15820708674b3271580255b5c6439b1dc7401db58d0cd68"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8f93059eca0aeadba9dea745b71bef155a660fd8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-strictness-cold-review/READ_HASHES.json",
+      "raw_bytes": 675,
+      "raw_sha256": "078b0f3a3d74cf166167827ec14f07f586a5dde568d4180897458dc093c077a8",
+      "stored_path": "_objects/078b0f3a3d74cf166167827ec14f07f586a5dde568d4180897458dc093c077a8.gz",
+      "stored_sha256": "73f218216d3026e0886a3c8a6c42b5157bdfc5981e3eb23f626df38773adc338"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5cf08d0e12a3b808e29155a4e0a09d184211449a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-strictness-cold-review/RESULT.json",
+      "raw_bytes": 154,
+      "raw_sha256": "1e9970c8c719f9e77e2aad71814cbc1daea26ad1c3764cd176d63081e0e0e38e",
+      "stored_path": "_objects/1e9970c8c719f9e77e2aad71814cbc1daea26ad1c3764cd176d63081e0e0e38e.gz",
+      "stored_sha256": "b17c1c6ac08ece2d65c0b0baca72daa33ac5d2b9f05e90f1a07c54b54fe8d965"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c7f316382e17a04183fc5619125e0c0f9f057de9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-strictness-cold-review/REVIEW.md",
+      "raw_bytes": 3920,
+      "raw_sha256": "47d6671f7d69a2ebd22d28ffa96d2a0b88b782109897dd603fa3dd454bd3f998",
+      "stored_path": "_objects/47d6671f7d69a2ebd22d28ffa96d2a0b88b782109897dd603fa3dd454bd3f998.gz",
+      "stored_sha256": "62635d49110b04e77bf946e20c6366b8594e9a6958216c7da5e0f5309ee25ccd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "881af56f50f83c245bb239c50cae2f5b894d91f0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-strictness-cold-review/check.py",
+      "raw_bytes": 1769,
+      "raw_sha256": "7c3aa85b19f0dcf5653100553541c25d7d0c43983f2f307c0de98d25127bef3c",
+      "stored_path": "_objects/7c3aa85b19f0dcf5653100553541c25d7d0c43983f2f307c0de98d25127bef3c.gz",
+      "stored_sha256": "3e2782d79f1c5e2d3da6aabac70e611e689c5aa1efe68d816b80ccb6fd18afe2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dc3d72b1a3ede082d5f2caa8e4d0848808b42d1e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-strictness-root-review/READ_HASHES.json",
+      "raw_bytes": 781,
+      "raw_sha256": "935feee605eeb2071ac39b92e1ad53ad775977b3902b0840b49f0bf6324e4307",
+      "stored_path": "_objects/935feee605eeb2071ac39b92e1ad53ad775977b3902b0840b49f0bf6324e4307.gz",
+      "stored_sha256": "61d86966e0925c548a390f04e3de8e7b65f393d7c003d74e7e0fecb807739fd1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7038729358672c37907b09c49850a818767fb02e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/originals/native-zero-penalty-l6-strictness-root-review/REVIEW.md",
+      "raw_bytes": 4282,
+      "raw_sha256": "533e1803861c7058eb3940b58f894fa602ce1c9f61c85b7fb78630dbc6cde475",
+      "stored_path": "_objects/533e1803861c7058eb3940b58f894fa602ce1c9f61c85b7fb78630dbc6cde475.gz",
+      "stored_sha256": "be09db8a89dc8038b406f1a6f740654e4f650415b115f97099f942acb58c809d"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-even-torus-flux-isolation-20260908/",
+  "revision": "396ac64f4f9155892cbf581b58c296346e8ba2c3",
+  "schema_version": 1,
+  "unique_blobs": {
+    "066eea5b26854154f584e99f502c6c13d6c7e8c6": {
+      "occurrences": 1,
+      "raw_bytes": 392,
+      "raw_sha256": "5c4a72e87aa0ff6d470f5b600a441396d0078db66d0a75626d88e6fafc82d0ca"
+    },
+    "0cc439a3e19496e951c2915c15575ba23c4f2c00": {
+      "occurrences": 1,
+      "raw_bytes": 295,
+      "raw_sha256": "8141a39d7a565e131150690239a2d125c30c1bbafa5ba4c2d72aef1ca3992e5d"
+    },
+    "0d157763525e0d8704051c046638614cd5ced395": {
+      "occurrences": 1,
+      "raw_bytes": 298,
+      "raw_sha256": "9fca36af696be807b10ba99d015024327453104f6fd361b401b0e69545ec5620"
+    },
+    "1194992e47f959f55c0bbec5383f86cd80a81f63": {
+      "occurrences": 3,
+      "raw_bytes": 9797,
+      "raw_sha256": "c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04"
+    },
+    "13f8e8ff630698cb40df5489a411eed58bc15804": {
+      "occurrences": 1,
+      "raw_bytes": 2812,
+      "raw_sha256": "92ba08f345d32d7507456665ad84574c7a284673cda5f6de9122844f17144676"
+    },
+    "141e1c895b6e2aa00f3fe57854842288c238105c": {
+      "occurrences": 3,
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042"
+    },
+    "18ba1283bdab7e6877530758272ddadd54ee7251": {
+      "occurrences": 1,
+      "raw_bytes": 7967,
+      "raw_sha256": "a92cd462d8cf405c0f0710808a98acc92c22baee8c1940b4a1a66bddd1ba0186"
+    },
+    "1a5b294e4eac38d4b9292ad3c956c53951cc23d2": {
+      "occurrences": 1,
+      "raw_bytes": 1094,
+      "raw_sha256": "de19fdcff321666e0832c06e147f5a52282e53bfd903a77231bef0070a89db44"
+    },
+    "1a7fed090f0e3d271647869de51d78e66c0e10d9": {
+      "occurrences": 3,
+      "raw_bytes": 11792,
+      "raw_sha256": "7cf79e48fd3bc070a95b1f81b52e6c21ae0ca212225b25a5713ca5598f6928e0"
+    },
+    "235ba8664afe904d49b1beb9edb72eeab21f480a": {
+      "occurrences": 1,
+      "raw_bytes": 182,
+      "raw_sha256": "aa69926760b046cca05665c9c03890899174c58ef5d9ee5cb75485b71d2088b2"
+    },
+    "2bfdf44056068e4e01ea4a98b777725e15790622": {
+      "occurrences": 1,
+      "raw_bytes": 427,
+      "raw_sha256": "835d5e01488073eb31dc8dfeca614d24b2b2ed503a19c2240fece5f126a3cf5b"
+    },
+    "2d558c546dc207313da487a6d7d3548b26d527ea": {
+      "occurrences": 1,
+      "raw_bytes": 297,
+      "raw_sha256": "f3968acf578d247525f7c86df9e25ce09cc0a728da664efe2ab703acc582f4cb"
+    },
+    "39b071805950d08b86c46b2ffce18c319d993865": {
+      "occurrences": 1,
+      "raw_bytes": 531,
+      "raw_sha256": "e125075d38076fafd2463a0de5b71332a99e99c0c8a3822664598d00b939ca7f"
+    },
+    "3bf68aedf7fba9e8951752be504ddc345a95198d": {
+      "occurrences": 1,
+      "raw_bytes": 460,
+      "raw_sha256": "437adc3856cf10587812b13a38efd5f375c61d4ea4454555c056a07dfe5475f4"
+    },
+    "3db26a9faca221cd38ee00850c9eab48b66bf620": {
+      "occurrences": 1,
+      "raw_bytes": 81,
+      "raw_sha256": "6314b4b78e4c87cca5404efb7ffa9e97b12af51ac1cc8d2087b3b26d47691132"
+    },
+    "40a84597e4b8adb6d78ef8f6e2c39626c01704f9": {
+      "occurrences": 1,
+      "raw_bytes": 157,
+      "raw_sha256": "f7a474e003d69540253b3ae29e6a64801eca6fcb91bd18026ba0fdbaa01aaece"
+    },
+    "46032ed9e8f45e9f21128ed7c94c933d2d6fa7f4": {
+      "occurrences": 2,
+      "raw_bytes": 1343,
+      "raw_sha256": "71feec8fbae139facb4ff1a29e43e7ea0ea99c85ef7a9f5e5d88fe2af167d27e"
+    },
+    "47e8eda27d906a2bd50092ac20a044bd92b2d489": {
+      "occurrences": 1,
+      "raw_bytes": 410,
+      "raw_sha256": "f16a731e06f37c8f1b13487e4819a3018f89aaa7fb61cd754342c69c5b99d51c"
+    },
+    "4b416ee4f38c26da5350c31380e6618224a7da77": {
+      "occurrences": 1,
+      "raw_bytes": 483,
+      "raw_sha256": "00added61dbd871d952b77b223d195bc35988ddcd216aa760066350e37bf120a"
+    },
+    "4b63d9679490b38f8ef4f680176ffe0275cec08a": {
+      "occurrences": 1,
+      "raw_bytes": 4264,
+      "raw_sha256": "0172b2ac9c9dc82a5fc1668bd3d3e15f51ee53aca93329b47fcaf9726c0b136f"
+    },
+    "54c4eaacd7e28da481175477afed953a3ceb6953": {
+      "occurrences": 1,
+      "raw_bytes": 274,
+      "raw_sha256": "25b754b49d7788232b853eec890811595eed2fdc077f8f0ac9623c48a635a6fc"
+    },
+    "583bc7f477e4a2364127f6786bffb51009c07992": {
+      "occurrences": 1,
+      "raw_bytes": 349,
+      "raw_sha256": "5d77a80cd9e3da9c4d041c975b301d7db6badf9c7407e83364f5ac1a5241bf92"
+    },
+    "5bed4a87d389b12502fabd08d918970f5e19c9fc": {
+      "occurrences": 1,
+      "raw_bytes": 1343,
+      "raw_sha256": "ca49bc5a2878f872164e57b198b8850c486371aa443276327e609ae596ae09b3"
+    },
+    "5cf08d0e12a3b808e29155a4e0a09d184211449a": {
+      "occurrences": 1,
+      "raw_bytes": 154,
+      "raw_sha256": "1e9970c8c719f9e77e2aad71814cbc1daea26ad1c3764cd176d63081e0e0e38e"
+    },
+    "61862d6f1ff19b7758d389bc8287390e861ebdbb": {
+      "occurrences": 1,
+      "raw_bytes": 999,
+      "raw_sha256": "6ee465b8e916833a77ce0bb5bfefa2f17a7ac3dce11a017a094eaf144beed7cc"
+    },
+    "63a424e8880974ec1cd5aa1773817a9527c6e86c": {
+      "occurrences": 3,
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715"
+    },
+    "6550b499dc7c180f0266ed4b2592198862045270": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "d42db4734c64fd32d8ce0a1c6e9ea6e882f556d8395f1e53f1d45137a9545fea"
+    },
+    "67ac06fcc9890fed519513d39ea1802b6569d85d": {
+      "occurrences": 1,
+      "raw_bytes": 999,
+      "raw_sha256": "b5a8254117edb8b585b6ef3de580a6b4f319f368eed28181b7a4531342ec0278"
+    },
+    "6d5ca772380d67d3aa96af25a713bacb5cd3d3a1": {
+      "occurrences": 1,
+      "raw_bytes": 11849,
+      "raw_sha256": "ccac0a1ebdc24f191363dcbad0ca3881382da91c44556c56c8f31fc4fd089157"
+    },
+    "6faeb235fb512bc485984fcc801af1e52b18c650": {
+      "occurrences": 1,
+      "raw_bytes": 177,
+      "raw_sha256": "42b3489d11debe49dbd85706da5e5507bd9a008b242eed6a70eb536130c32073"
+    },
+    "7038729358672c37907b09c49850a818767fb02e": {
+      "occurrences": 1,
+      "raw_bytes": 4282,
+      "raw_sha256": "533e1803861c7058eb3940b58f894fa602ce1c9f61c85b7fb78630dbc6cde475"
+    },
+    "74c82de4790c57cf48a8c3eb39af2898580b6d6c": {
+      "occurrences": 1,
+      "raw_bytes": 2300,
+      "raw_sha256": "6ce148ee8e81441a247fe6cd61527668bd1e9a30556e4c2c0abf90d4d97a32e4"
+    },
+    "7a616c1c23df88be4b104398cbd60817808f3b21": {
+      "occurrences": 1,
+      "raw_bytes": 1012,
+      "raw_sha256": "571c20458ac445872e98ea138e0431bee3cb12b351f9cdc8f3c624c051b5bd74"
+    },
+    "7c06f0a9d42013e7d6ab103edf73e471f70657f2": {
+      "occurrences": 1,
+      "raw_bytes": 3259,
+      "raw_sha256": "6e3141f900c510f0f9321e0b6bf09981cf2d0f233bd980477823ce51bc0daad1"
+    },
+    "81b3bfa0d5a3efc812ee8b1346c717eb564e2137": {
+      "occurrences": 1,
+      "raw_bytes": 144,
+      "raw_sha256": "ccf307c968c3fc26aa9d62235846c6f87c114d8db19dc59fa7c66cb5fda35abc"
+    },
+    "85176c48fc34d61985d0fe62ea88f37e61e41044": {
+      "occurrences": 1,
+      "raw_bytes": 137,
+      "raw_sha256": "0da03319ab59d73d05964e44c4acfcc45db0df86760be59edc27a23c0327e971"
+    },
+    "862cd3a3b61e1548db0c74f29f74a0d186578103": {
+      "occurrences": 1,
+      "raw_bytes": 1030,
+      "raw_sha256": "c5f0e0d7964c2024397d77ffcaec51c49e89107b941eac295cf8ac1711b8b3e5"
+    },
+    "881af56f50f83c245bb239c50cae2f5b894d91f0": {
+      "occurrences": 1,
+      "raw_bytes": 1769,
+      "raw_sha256": "7c3aa85b19f0dcf5653100553541c25d7d0c43983f2f307c0de98d25127bef3c"
+    },
+    "88da9190be07559b932c68a05083c86c9afc2c8c": {
+      "occurrences": 1,
+      "raw_bytes": 4287,
+      "raw_sha256": "3c8d37b597b97569c94a025a7a203bc1bcf2fc9fd93f6a60842acfd48fce5cec"
+    },
+    "8f93059eca0aeadba9dea745b71bef155a660fd8": {
+      "occurrences": 1,
+      "raw_bytes": 675,
+      "raw_sha256": "078b0f3a3d74cf166167827ec14f07f586a5dde568d4180897458dc093c077a8"
+    },
+    "98aed22866cf2c06cf5363c80e99b2ae19b08cd9": {
+      "occurrences": 1,
+      "raw_bytes": 715,
+      "raw_sha256": "63b1ffa4430b348d8dfa859fb9760885c91df5c1657160accd622f161102a5c8"
+    },
+    "9984b09e1dac4acbb6db99c09415abfed51b312a": {
+      "occurrences": 1,
+      "raw_bytes": 785,
+      "raw_sha256": "d2896dda67fc67741a87f0fad18702a42666afd12bdac8d731ffcc31e1b49efa"
+    },
+    "9d18c15d7f28ad7ac3f0fa0d827249e31b8d5bb3": {
+      "occurrences": 1,
+      "raw_bytes": 3196,
+      "raw_sha256": "2b829e498a410f90eb69e599780bc9a4d47780ac2ef5aeac9dd44727e0f7e646"
+    },
+    "a85958464049ee16d944133904347e2196974709": {
+      "occurrences": 1,
+      "raw_bytes": 3193,
+      "raw_sha256": "b5f0b9a235dff822fbd52a9a8f2f7c0e0c6ec9e8beea814b685af8f46120b10d"
+    },
+    "a9f60e183b4fd49c2ad17879854dab18949c5e1a": {
+      "occurrences": 1,
+      "raw_bytes": 878,
+      "raw_sha256": "d2d01710e0d94c3843653bc956b351d01b9230730c3404cc6993301fcc6ec1a8"
+    },
+    "aabc932e1b33e2ea3abad9289640df457a5b5d80": {
+      "occurrences": 1,
+      "raw_bytes": 369,
+      "raw_sha256": "582f4b78b3dff5cf7e62048ef432d5164e70f85d5f1cd772d57d02edecde0eae"
+    },
+    "b4cc4783c346f544cabb0c04d4bdd506ccf5258e": {
+      "occurrences": 2,
+      "raw_bytes": 4325,
+      "raw_sha256": "e44704b17b0969ae7a0c2e9de21fa9ebdad95f063fc6ad6e58817aa64bb726a7"
+    },
+    "b83035f3c098c3e8ffbd99fbb48d64595a8a831a": {
+      "occurrences": 1,
+      "raw_bytes": 378,
+      "raw_sha256": "4e897ebfe5e242e506bbf2370006d98586de8aae8cbe69ee0e73474dd0b763d1"
+    },
+    "bd4e00e092ea5ddfeaa197c0fdd29b22996c9d15": {
+      "occurrences": 1,
+      "raw_bytes": 3193,
+      "raw_sha256": "e23a6753cb768e61f41a60c00e349546f4f317350f0ab789cf844c8a91f63167"
+    },
+    "c24696d40d94c15645cb8d771a60ad54ec38e059": {
+      "occurrences": 2,
+      "raw_bytes": 4323,
+      "raw_sha256": "705b0c585b31ad4ae2850871b3319fc7813d3b90c971b53235d742c759e00b1f"
+    },
+    "c53b45d2e33855c1ffdad1eafb8c3e098073c5db": {
+      "occurrences": 2,
+      "raw_bytes": 4330,
+      "raw_sha256": "6c3d404abb80713659819c3bb80daffedf4224ed2533515f07dad001d9e7738e"
+    },
+    "c7f316382e17a04183fc5619125e0c0f9f057de9": {
+      "occurrences": 1,
+      "raw_bytes": 3920,
+      "raw_sha256": "47d6671f7d69a2ebd22d28ffa96d2a0b88b782109897dd603fa3dd454bd3f998"
+    },
+    "c941216a548331d0f0c4161c402526b76fe0aec1": {
+      "occurrences": 1,
+      "raw_bytes": 364,
+      "raw_sha256": "294fec66711a47352c0098c620592a819916d0072582736d66ff50aeeba3b5eb"
+    },
+    "c94394b567d1b42b49bdebd84a9e495ba1b47572": {
+      "occurrences": 1,
+      "raw_bytes": 161,
+      "raw_sha256": "f74f43d0dde55e401310a0b820cb2778cd5d73a37ed7c9a96eae3bca1900e702"
+    },
+    "c9c56260e38f31632c39c6c921ea3c9136fe1429": {
+      "occurrences": 1,
+      "raw_bytes": 384,
+      "raw_sha256": "65757d05f8b9e09c6988f847a9d8bb0b4d8d2b333d1e6060670ac51b63138b76"
+    },
+    "cb61e9df3230e4dc4c0e8e22ca2c49ebf109c980": {
+      "occurrences": 1,
+      "raw_bytes": 569,
+      "raw_sha256": "6e6a4f1848d7e87bf747110560a4d5c96d37a89ff34f0545ff6216a0e99596f3"
+    },
+    "cd217506b2693f7cab3b29143e5237f8613fee25": {
+      "occurrences": 1,
+      "raw_bytes": 2271,
+      "raw_sha256": "3f2b319365f15926333d80a9dc714f9b0459385f358409d8c121910b2526eb8f"
+    },
+    "cdf61a6f85c503f4da49bf31e609a589443dc2f2": {
+      "occurrences": 1,
+      "raw_bytes": 1533,
+      "raw_sha256": "9673371d613fcaf4e6adeedcd98e92786de841cca948fc29c42165ff5f953037"
+    },
+    "d3963f24fbe4a53cda32781243c92927fa306a62": {
+      "occurrences": 1,
+      "raw_bytes": 3193,
+      "raw_sha256": "e00982e48369aa8e76bb99853d21d20f73ffd7a00690d0b960eda04c76726eea"
+    },
+    "d3c1557e561357f1d348852187c4e5a31ffb1f50": {
+      "occurrences": 1,
+      "raw_bytes": 154,
+      "raw_sha256": "d9ed0db8e621e7a7abe61b0eb7027b35ff9206ca4de4c6cd402d8fb7c3ee71e8"
+    },
+    "d6bad9f9cd9684f40a61e083912965b3c73f6836": {
+      "occurrences": 1,
+      "raw_bytes": 8837,
+      "raw_sha256": "eccedffb65a9c8ddf908affa52bfdfb2722ed3251da05d059a1688cd3957dc36"
+    },
+    "d755990993aeb46b595d073662d9972a96c66695": {
+      "occurrences": 1,
+      "raw_bytes": 1203,
+      "raw_sha256": "73c860a21e6c0efd6a90808964fefe09fe33b5a6dab0aee203bf566902503120"
+    },
+    "db8b8a46444047527584d43f0b6f3c0baf76a83d": {
+      "occurrences": 1,
+      "raw_bytes": 1275,
+      "raw_sha256": "2d8759c7426f82100cc251295b233cb6fe1a8b49dfd3f41607ac1fefc8292c8a"
+    },
+    "dc3d72b1a3ede082d5f2caa8e4d0848808b42d1e": {
+      "occurrences": 1,
+      "raw_bytes": 781,
+      "raw_sha256": "935feee605eeb2071ac39b92e1ad53ad775977b3902b0840b49f0bf6324e4307"
+    },
+    "e0db8d1cd4d16bb7745d3410acf0522f87c8ce6c": {
+      "occurrences": 1,
+      "raw_bytes": 777,
+      "raw_sha256": "58fbfcb620579fac8885e87133efb35dd51307c9f2c6bfbec7c4e7c93f1c0983"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 4,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e70baf008bb12834755a6b5ec7941b59859995ad": {
+      "occurrences": 1,
+      "raw_bytes": 198,
+      "raw_sha256": "f43ab1b9b0f7d90098440328923c69f2757aaa086627d43ef72b914bcc24208a"
+    },
+    "e8c068aa2000e26d7b1acbba53779984c353c2fb": {
+      "occurrences": 1,
+      "raw_bytes": 4353,
+      "raw_sha256": "d0354b606c7bf68ffb6fd230aa70c83f28e9f5af52bb1edbdd247158751ce708"
+    },
+    "e9d94e52b828720e7a46c758409e5517793b11a4": {
+      "occurrences": 1,
+      "raw_bytes": 648,
+      "raw_sha256": "aa5e127ecccef676a3162dcab12f9b211a87fe4b4eb9acd229f083f9cb32cf22"
+    },
+    "eac4385e23190dc1876cda4ec302f0c6cf7ade32": {
+      "occurrences": 1,
+      "raw_bytes": 992,
+      "raw_sha256": "19b163cb1b64eca971a494648a4a2e34615ef0d1f3a868d7f24b1d9d142ad34f"
+    },
+    "f333fac233e1bd27c8e661caf5d306a4e814b6b5": {
+      "occurrences": 1,
+      "raw_bytes": 650,
+      "raw_sha256": "181842f29d3f048b9aa2a70c8c120770b724cfba2501d137bdbdaa615650dffc"
+    },
+    "fc310a23f217243a5e410d367dd5608548f1387e": {
+      "occurrences": 1,
+      "raw_bytes": 383,
+      "raw_sha256": "1e1d0a67530598d7b47b56db00640ad01400e76e6ebe8b61fe6f14abb13c1b83"
+    },
+    "ff4677c96179b8bcde0035068eed775df604cf1d": {
+      "occurrences": 1,
+      "raw_bytes": 3206,
+      "raw_sha256": "848a5da876b2b5a34b89d9490222ad28ae5079f8e3d690a685784c7e1283ad40"
+    }
+  }
+}

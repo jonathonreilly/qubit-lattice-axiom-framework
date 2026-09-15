@@ -1,0 +1,11 @@
+R1 plaquette+site at (3, 1, 2): TV float = 0.017227016 vs exact 0.017227016: True
+R1 plaquette+site at (5, 2, 4): TV float = 0.010474121 vs exact 0.010474121: True
+R1 plaquette+site at (2, 1, 2): TV float = 0.007373329 vs exact 0.007373329: True
+R1 cube at (3,1,2): TV float = 0.007451921 vs exact 0.007451921
+R2 one-attachment factors on 6 random pendant components (2-4 sites, all bonds to the origin): constant to relative 6.1e-15: True
+R3 two-attachment factors on 6 random bridging components have a nonzero isotypic eigenvalue: True; at p = q = r both vanish: True
+R4 sphere two-attachment factor at v_x.v_y = -1.0: quadrature 12.566370614 closed form 12.566370614
+R4 sphere two-attachment factor at v_x.v_y = 0.0: quadrature 20.942726635 closed form 20.942726635
+R4 sphere two-attachment factor at v_x.v_y = 0.5: quadrature 26.225675565 closed form 26.225675565
+R4 sphere two-attachment factor at v_x.v_y = 1.0: quadrature 32.357110133 closed form 32.357110133
+R5 average identity on the plaquette+site: max |R2 - sum_omega mu(omega) R3(.|omega)| = 8.7e-19

@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 24 (2026-09-15) — unrecorded sites
+- Dependencies: `minimal_axioms` (seven sentences, including "A site with no record cannot be read." and "A state is a configuration of records."); block 01 (on `main`; the static reading); the possibility-covariance note (on `main`; the sphere). The campaign meta note (on `main`) for the seam and the format. PRs #8149–#8151, #8153–#8157 referenced in Q5(b) only.
+- Named premises: the two readings R1 and R2 as declared (and R3 as the object of blocks 17 and 23); value-only covariance of the rule; a finite unrecorded exterior.
+- Scaffolding: pendant paths of two and three sites; the plaquette with one unrecorded site, with two pendant components, and the cube with its top face unrecorded; the triples `(3,1,2)`, `(5,2,4)`, `(2,1,2)`; random components in the refuting pass.
+- Standard mathematical imports at definition level: the commutant of a representation with pairwise inequivalent irreducible constituents; the polar-coordinate sphere integral.
+- References named, not used: the Markov property of Gibbs fields.
+- Counterfactual pass: the constant rule `p = q = r` (every factor constant; R1 = R2 always); a rule without value-only covariance (a soldered rule coupling the bond direction to the values — the one-attachment argument needs value invariance alone and would have to be re-examined); the formation reading (the recorded set grows; block 15's environments).

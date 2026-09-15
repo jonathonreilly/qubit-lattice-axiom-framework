@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 24 opening (2026-09-15)
+
+Block 24 opened for review (independent PR against main): the unrecorded-sites fork is exact (R1 = R2 iff every unrecorded component is pendant), with witnesses and the clause pair recorded. The lane assessment stands: the remaining items are hard (the kernel's normalization; S6; X4) or incremental (the weak side's coefficient; sharper constants); the other lanes are the owner's live integration (light/clock/gauge) or other workers' (record-matter). Ranked next, if the lane continues:
+
+1. **The weak side's sharper coefficient** (`β < 1/3` via the zero-field maximum of the mean absolute deviation) — medium.
+2. **The three-attachment criterion in closed form** (block 24's `|∂C| ≥ 3` case) — small.
+3. **The kernel's normalization on `Z³`** — hard.
+4. **Value-dependent order laws (block 16, X4); the stability theorem (block 12, S6)** — hard; unchanged.

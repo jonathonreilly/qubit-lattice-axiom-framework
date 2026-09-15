@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 24, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the campaign meta note's seam on unrecorded sites: 'the claim that unrecorded sites carry no law-level state is a hypothesis for investigation'; the window convention of blocks 12, 17, 20 and 23"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the hypothesis is an exact fork: R1 = R2 iff every unrecorded component touches one recorded site; phi^2 and phi^{k+2} for bridges; exact witnesses on the plaquette (78621/4563820 at (3,1,2)) and the cube; the clause pair recorded for the owner; the lane's torus results reading-free and its exterior-records results covering R2. Consumers: the campaign's decision record; #8093's assembly"
+```

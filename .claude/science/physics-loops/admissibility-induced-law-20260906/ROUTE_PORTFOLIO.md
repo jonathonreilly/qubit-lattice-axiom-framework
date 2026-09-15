@@ -84,3 +84,8 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 24 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–23 are open PRs #8034, #8035, #8138–#8142, #8146–#8157)
+Searched commit: `origin/main` = `df5316ee81`.
+- `git grep -l -iE "unrecorded site|free window|integrated exterior|marginal on the window" origin/main -- 'docs/*.md'` → the campaign meta note (the seam); block 01 (the free-window static law); blocks 15–16 (recorded environments); nothing on the fork itself.
+Classification: **open after the matched-hit review.** Routes: U-A the factorization with value-covariance constancy (Q1–Q2) — chosen; U-B the spectral decomposition for two-attachment factors and the isotypic criterion (Q3) — chosen; U-C exact enumeration witnesses on the plaquette and the cube (Q4) — chosen; U-D a `3×3` window with pendants — infeasible at `6^{12}`, replaced; U-E infinite unrecorded exteriors (a second infinite-volume notion) — not attempted; U-F the formation reading's version of the fork — not attempted.

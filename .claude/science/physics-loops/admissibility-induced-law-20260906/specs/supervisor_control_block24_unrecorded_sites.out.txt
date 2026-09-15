@@ -1,0 +1,11 @@
+(a) eigenvalues of phi: {p + q + 4*r: 1, p + q - 2*r: 2, p - q: 3}
+(a) phi^2 same-entry minus orth-entry = p**2 - 2*p*r + q**2 - 2*q*r + 2*r**2 ; anti minus orth = 2*(p - r)*(q - r)
+(a) constant iff p = q = r: [{p: r, q: r}]
+(b) one-attachment factor over v_b: {144} (constant: True )
+(b) two-attachment factor values by relation: {'same': 292, 'anti': 284, 'orth': 288} (constant: False )
+(c) plaquette + one exterior site on corners c0,c1 at (3, 1, 2): TV(R1,R2) = 78621/4563820 = 0.01723
+(c) plaquette + one exterior site on corners c0,c1 at (5, 2, 4): TV(R1,R2) = 675203620/64463986907 = 0.01047
+(c) plaquette + one exterior site on corners c0,c1 at (2, 1, 2): TV(R1,R2) = 221667/30063356 = 0.00737
+(d) cube, face vs opposite face integrated out at (3,1,2): TV = 9778807/1312253264 = 0.00745
+(e) sphere one-attachment factor: 4*pi*sinh(beta)/beta (no v-dependence); two-attachment factor derivative in t at t = 0: pi*(2*beta*cosh(sqrt(2)*beta) - sqrt(2)*sinh(sqrt(2)*beta))/beta
+(f) plaquette with two pendant exterior components at (2,1,2): TV(R1,R2) = 0

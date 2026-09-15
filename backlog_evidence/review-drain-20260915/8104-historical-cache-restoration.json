@@ -1,0 +1,11 @@
+{
+  "source_head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+  "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_CACHE.txt.gz",
+  "compressed_sha256": "319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700",
+  "decoded_sha256": "9d244a81b24b235a89a08e3060ec824df72208dc9a48b5be534fc49bd0841e2f",
+  "restored_path": "logs/runner-cache/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.txt",
+  "actual_cache_status": "fresh",
+  "new_execution": false,
+  "metadata_rewritten": false,
+  "requires_independent_scientific_review": true
+}

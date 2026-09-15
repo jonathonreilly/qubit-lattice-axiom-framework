@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+  "fetched_ref": "refs/review-loop/fetched/8104-8e79e10fd55143f2bf6687664968500a",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/flat-holonomy-spectral-floor-20260913",
+    "headRefOid": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+    "isDraft": false,
+    "number": 8104,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

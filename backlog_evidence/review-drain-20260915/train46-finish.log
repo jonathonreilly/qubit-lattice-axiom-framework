@@ -1,0 +1,31 @@
+native_finite_excitation_ward_note_2026-09-09 bounded_theorem unaudited ['scripts/native_finite_excitation_ward_controls_2026_09_09.py']
+native_infinite_star_node_reduction_note_2026-09-09 bounded_theorem unaudited ['scripts/native_infinite_star_node_algebra_2026_09_09.py', 'scripts/native_infinite_star_node_gap_2026_09_09.py', 'scripts/native_infinite_star_node_orbits_tail_2026_09_09.py', 'scripts/native_infinite_star_node_shift_2026_09_09.py']
+docs/audit/data/citation_graph_manifest.json | 40 ++++++++++++++++++++++++++--
+ 1 file changed, 38 insertions(+), 2 deletions(-)
+[detached HEAD 083a58b4e7] Acknowledge reviewed source topology for train46
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 38 insertions(+), 2 deletions(-)
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+remote: Bypassed rule violations for refs/heads/main:        
+remote: 
+remote: - Changes must be made through a pull request.        
+remote: 
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+   3f39a0ed5e..083a58b4e7  HEAD -> main
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+LANDED 083a58b4e7faca5839a7b31fab553f6fa1f2c254

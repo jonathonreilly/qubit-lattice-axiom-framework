@@ -1,3 +1,32 @@
+# Current checkpoint — block27 arbitrary-component coefficient
+
+Continue personally through **2026-09-15 13:30:44UTC**. No subagents.
+Prior exact remote checkpoint:70829e42256e39a9bd17300498c0d808556a4e66.
+
+`BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md` now proposes the first mixed
+coefficient limit for arbitrary finite closed components on Z^4. Explicit
+integer component counts and local-fill bounds give anchored moments when
+beta>=16 and N^2/beta>=512. The real electric source is controlled with
+its Coulomb self-energy rather than an unjustified local complex strip.
+A signed bounded projection handles the linear cross kernel; the remaining
+kernel is absolutely summable. Cubic symmetry and P-Q orthogonality remove
+the mixed term at macroscopic scale. Source powers beyond quadratic vanish
+at this coefficient order.
+
+Finite frames on an actual four-cube challenge the operator factorization,
+Schur bounds, nonquadratic finite-source remainder, large-source energy
+bound and integer-filling invariance. These author checks pass. The proof
+was personally cold-read, including species counts, half-weight moments,
+conditional summation and the limiting symmetry argument. This is not an
+independent scientific review. The finite-free-boundary pressure derivative
+identification and the complete activity expansion remain open.
+
+Next: pursue signed all-order resummation or a matched RG/large-field
+estimate. Do not replace that obligation with further coefficient counts.
+No new public PR or axiom update is claimed for this private stretch.
+
+---
+
 # Current checkpoint — block27 physical mixed coefficient
 
 Continue personally through **2026-09-15 13:30:44UTC**; no subagents.

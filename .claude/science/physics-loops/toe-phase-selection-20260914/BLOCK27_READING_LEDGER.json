@@ -47,7 +47,7 @@
     "families": 4,
     "independent_review": false
   },
-  "latest_checkpoint_utc": "2026-09-15T09:23:08.721578+00:00",
+  "latest_checkpoint_utc": "2026-09-15T09:42:37.059584+00:00",
   "new_primary_reading": [
     {
       "url": "https://www.math.uchicago.edu/~lawler/srwbook.pdf",
@@ -67,6 +67,12 @@
         129
       ],
       "scope": "Green normalization, Theorem4.3.1/Corollary4.3.3 and difference estimates. Sharper angular second-derivative asymptotics not imported; projection discontinuity proof used instead."
+    },
+    {
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/705D764B6C30BFE8383E5E897BC7742A/S0008414X00026092a.pdf/div-class-title-estimates-on-renormalization-group-transformations-div.pdf",
+      "local_pdf": "/tmp/toe-charged-reading-20260914/bdh1998-estimates.pdf",
+      "sha256": "421a4205ce16a4ca53be8f04b8fceb052b3c3a620521e66ab480e050f5e92fa0",
+      "scope": "Published1998,38pages. Opening PDF pages1-6 via web; PDF pages7-8 and32-37 locally read. Lemma3 positivity and Appendix real Gaussian covariance hypotheses checked. No full-paper read or complex two-species theorem imported."
     }
   ],
   "search_only": [
@@ -80,7 +86,7 @@
     },
     {
       "url": "https://ms.mcmaster.ca/tom/mathphys.html",
-      "scope": "Dimock-Hurd source search result, not full theorem read."
+      "scope": "Author page read in full (38extractedlines); publication pointers and historical correction notice, not a theorem read."
     }
   ],
   "additional_finite_evidence": [
@@ -95,6 +101,11 @@
     {
       "path": "review/BLOCK27_INITIAL_PHYSICAL_SOURCE_FAILURE.json",
       "sha256": "4726eaf98649da4be8f73339e898f34eb7283eec6a411a033a88b8840b7b6e7c"
+    },
+    {
+      "path": "BLOCK27_COMPONENT_FRAME_CHECKS.json",
+      "sha256": "a83bb275b6c0b6f1903e5b7dfbe37aad13565afbb04a6a7d9582242f650e016c",
+      "scope": "Finite cochain frames, factorization, source and energy challenges only."
     }
   ]
 }

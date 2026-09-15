@@ -1,0 +1,71 @@
+{
+  "status": "finite_checks_passed",
+  "component_frames": {
+    "shape_counts": {
+      "electric_fills": 14,
+      "magnetic_fills": 14
+    },
+    "factorization_error": 6.505213034913027e-19,
+    "missing_projection_fault": 0.004013013680572543,
+    "schur_bounds": {
+      "Kec": [
+        0.010404662050687966,
+        0.24054937932353854
+      ],
+      "Kmc": [
+        0.013176453249773689,
+        0.2970858925618008
+      ],
+      "Rem": [
+        0.010627075151119976,
+        1.6648307806011975
+      ]
+    },
+    "source_remainders": [
+      {
+        "scale": 1.0,
+        "remainder": -0.0010754181509394917,
+        "divided_by_fourth_power": -0.0010754181509394917
+      },
+      {
+        "scale": 0.5,
+        "remainder": -6.656152289750798e-05,
+        "divided_by_fourth_power": -0.0010649843663601277
+      },
+      {
+        "scale": 0.25,
+        "remainder": -4.1499553533404406e-06,
+        "divided_by_fourth_power": -0.0010623885704551528
+      },
+      {
+        "scale": 0.125,
+        "remainder": -2.592139675981547e-07,
+        "divided_by_fourth_power": -0.0010617404112820417
+      }
+    ],
+    "energy_checks": [
+      {
+        "source_scale": 0.1,
+        "minimum_log_margin": 2.284196450096023
+      },
+      {
+        "source_scale": 1.0,
+        "minimum_log_margin": 2.0319910933799967
+      },
+      {
+        "source_scale": 7.0,
+        "minimum_log_margin": 20.59184529991596
+      },
+      {
+        "source_scale": 40.0,
+        "minimum_log_margin": 734.3370010575311
+      }
+    ],
+    "filling_invariance": {
+      "phase_error": 1.1636175437410705e-14,
+      "source_error": 4.440892098500626e-16,
+      "coefficient_error": 6.938893903907228e-18
+    },
+    "scope": "Finite free four-cube frames; chosen parameters test algebra, not the infinite-shape sufficient regime."
+  }
+}

@@ -21,17 +21,16 @@ formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Extend mixed coefficient to arbitrary closed component shapes with uniform local filling-frame
-  moments. Then attempt a signed quadratic resummation and a genuine nonlinear/large-field estimate. Continue
-  personally to13:30:44UTC.
-strongest_unresolved_obligation: Fixed-law finite-clock full-flux Gaussian/Maxwell scaling with both defect
-  sectors; a small real electric correction alone does not remove the quantized magnetic carrier. The
-  native proposed law also does not select its own coefficients, initial conditions, clock or persistent
-  interacting observable sector.
-working_result: Exact full physical source matched and finitely checked; elementary mixed component coefficient
-  has a proposed quadratic macroscopic limit through Hodge cancellation and an absolutely summable sine
-  remainder. First N=3 fault blind spot explained and preserved. Full-component and all-order convergence
-  remain open; no new PR.
+next_action: Cold-check a signed all-order resummation/large-field route against primary RG hypotheses. The arbitrary-component
+  first mixed functional is now written and finitely challenged, while finite-boundary pressure matching and full
+  activity convergence remain open. Continue personally to13:30:44UTC.
+strongest_unresolved_obligation: Fixed-law finite-clock full-flux Gaussian/Maxwell scaling with both defect sectors;
+  a small real electric correction alone does not remove the quantized magnetic carrier. The native proposed law
+  also does not select its own coefficients, initial conditions, clock or persistent interacting observable sector.
+working_result: Exact physical source plus arbitrary finite closed-component first mixed functional has a proposed
+  macroscopic quadratic limit under beta>=16 and N^2/beta>=512. Anchored moments and signed filling-frame factorization
+  are derived; finite frame and large-source checks pass. No all-order theorem, independently reviewed result, new
+  PR or axiom wall.
 public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124

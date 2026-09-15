@@ -130,3 +130,10 @@ Block27 continuation: the full physical source identity and elementary mixed
 component coefficient limit are personal proof proposals. Direct finite
 source and all-orientation tests pass. General component shapes, activity
 analyticity, all-order convergence and state matching remain open.
+
+Block27 all-shape continuation: a personally checked proof candidate defines
+the infinite-lattice first mixed functional for arbitrary finite components
+and derives its quadratic macroscopic limit in the stated sufficient regime.
+Finite frame challenges pass; independent review, finite-boundary pressure
+matching and complete activity convergence remain open. No public delivery
+or retained status is assigned.

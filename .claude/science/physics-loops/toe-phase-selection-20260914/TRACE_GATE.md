@@ -114,3 +114,8 @@ Block27 continuation: a physical-source match resolves the sign/argument
 ambiguity for the coupled finite sum. The first elementary mixed coefficient
 has a proposed quadratic scaling limit. This remains upstream support,
 not closure of the full fixed-clock Gaussian or native-law target.
+
+Block27 all-shape continuation extends the same coefficient mechanism to all
+finite component shapes using anchored moments. It remains upstream support
+for the fixed-clock scaling problem. It does not sum all orders or select
+the native physical law.

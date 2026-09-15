@@ -1,0 +1,26 @@
+{
+  "checkpoint_utc": "2026-09-15T09:42:37.059584+00:00",
+  "prior_remote_commit": "70829e42256e39a9bd17300498c0d808556a4e66",
+  "personal_cold_read": true,
+  "independent_review": false,
+  "paths": [
+    "BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md",
+    "block27_component_frame_probe.py",
+    "BLOCK27_COMPONENT_FRAME_CHECKS.json"
+  ],
+  "checked": [
+    "degree14/count2*393^(m-1)",
+    "radius12m anchored count4*25^4 m^4",
+    "H<=16 half-weights",
+    "Schur moments4/6/7",
+    "energy completion instead of local complex strip",
+    "signed cutoff factorization, not arbitrary absolute sum",
+    "cubic zero-mode scalar and P-Q cancellation",
+    "limit constants filling-invariant; individual split pieces not asserted invariant"
+  ],
+  "remaining": [
+    "finite-free-boundary pressure derivative identification",
+    "all-order activity convergence",
+    "independent review"
+  ]
+}

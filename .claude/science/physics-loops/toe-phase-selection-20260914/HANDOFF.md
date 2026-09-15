@@ -1,3 +1,14 @@
+# Current checkpoint — history reconstruction
+
+Continue personally, no agents, through2026-09-15 13:30:44UTC.
+PR8144 at691f96525772ec0e7d06a528d14ad17324400f22 is pushed and exact-head
+verified, with8intended paths and all mechanical gates passed. Its scratch
+checkout is being removed. Blocks36-37 extend the common static space to a
+history representation of the local clock field algebra. A finite temporal
+surface comparison identifies the full history charge-sector bottom with the
+static threshold. All finite personal checks pass. Package this coherent
+follow-up; no independent review, mobile matter or TOE closure is claimed.
+
 # Current checkpoint — static transfer extension
 
 Campaign deadline remains2026-09-15 13:30:44UTC. Continue personally; no agents.

@@ -1,0 +1,55 @@
+{
+  "verified_utc": "2026-09-15T13:06:11.392936+00:00",
+  "remote_ref_exact_match": true,
+  "pr": {
+    "baseRefName": "physics-loop/clock-static-charge-20260915",
+    "files": [
+      {
+        "path": ".claude/science/physics-loops/static-charge-transfer-sector-20260915/CONFORMANCE.md",
+        "additions": 34,
+        "deletions": 0
+      },
+      {
+        "path": ".claude/science/physics-loops/static-charge-transfer-sector-20260915/HANDOFF.md",
+        "additions": 11,
+        "deletions": 0
+      },
+      {
+        "path": ".claude/science/physics-loops/static-charge-transfer-sector-20260915/MUTATION_CHECKS.json",
+        "additions": 94,
+        "deletions": 0
+      },
+      {
+        "path": ".claude/science/physics-loops/static-charge-transfer-sector-20260915/VALIDATION.json",
+        "additions": 95,
+        "deletions": 0
+      },
+      {
+        "path": "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "additions": 445,
+        "deletions": 0
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "additions": 6,
+        "deletions": 2
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt",
+        "additions": 18,
+        "deletions": 0
+      },
+      {
+        "path": "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py",
+        "additions": 269,
+        "deletions": 0
+      }
+    ],
+    "headRefName": "physics-loop/static-charge-transfer-sector-20260915",
+    "headRefOid": "691f96525772ec0e7d06a528d14ad17324400f22",
+    "number": 8144,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8144"
+  },
+  "independent_review": "pending"
+}

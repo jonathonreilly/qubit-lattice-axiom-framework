@@ -1,0 +1,592 @@
+{
+  "status": "personal_finite_checks_not_independent_review",
+  "source_sha256": "15cacbb3f31af1e83f44a35c0780fb4f75552ecfb4e85f40b310ca1eae6cf148",
+  "cases": [
+    {
+      "N": 2,
+      "beta": 0.4,
+      "dimension": 16,
+      "histories": [
+        {
+          "word": 0,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 1.0000000000000009,
+          "inverse_moment": 1.7250640375359785,
+          "K_final_insertion": 1.7686089370593776,
+          "temporal_link_discrepancy": 0.0,
+          "wrong_neutral_projector_error": 0.0
+        },
+        {
+          "word": 1,
+          "final_insertion": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "charge": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.37411096883802,
+          "inverse_moment": 1.725064037535978,
+          "K_final_insertion": 9.784243692475865,
+          "temporal_link_discrepancy": 1.401589392046181e-16,
+          "wrong_neutral_projector_error": 0.6116461140545406
+        },
+        {
+          "word": 2,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.4146254822113364,
+          "inverse_moment": 0.711673937244872,
+          "K_final_insertion": 1.7686089370593776,
+          "temporal_link_discrepancy": 1.4063905430216568e-16,
+          "wrong_neutral_projector_error": 1.9913425171992562e-16
+        },
+        {
+          "word": 3,
+          "final_insertion": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.08943884343392111,
+          "inverse_moment": 0.1577420977996057,
+          "K_final_insertion": 1.0,
+          "temporal_link_discrepancy": 7.075072143880054e-17,
+          "wrong_neutral_projector_error": 0.2990632766387761
+        },
+        {
+          "word": 4,
+          "final_insertion": [
+            -1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 1.0000000000000009,
+          "inverse_moment": 1.7250640375359783,
+          "K_final_insertion": 1.7686089370593776,
+          "temporal_link_discrepancy": 1.6839213981091043e-16,
+          "wrong_neutral_projector_error": 2.6950533931229465e-16
+        },
+        {
+          "word": 5,
+          "final_insertion": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 1.0000000000000009,
+          "inverse_moment": 1.0000000000000009,
+          "K_final_insertion": 1.0,
+          "temporal_link_discrepancy": 0.0,
+          "wrong_neutral_projector_error": 0.0
+        },
+        {
+          "word": 6,
+          "final_insertion": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 0.4170810548849659,
+          "inverse_moment": 3.4746956241718365,
+          "K_final_insertion": 9.784243692475865,
+          "temporal_link_discrepancy": 9.182082561503487e-17,
+          "wrong_neutral_projector_error": 1.8565475825259907e-16
+        },
+        {
+          "word": 7,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 0.37411096883802,
+          "inverse_moment": 0.42133027336558365,
+          "K_final_insertion": 1.7686089370593776,
+          "temporal_link_discrepancy": 1.401589392046181e-16,
+          "wrong_neutral_projector_error": 0.6116461140545406
+        },
+        {
+          "word": 8,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 0.14166241322432663,
+          "inverse_moment": 0.16620382309232534,
+          "K_final_insertion": 1.7686089370593776,
+          "temporal_link_discrepancy": 1.1274387096055283e-16,
+          "wrong_neutral_projector_error": 0.3763806759443511
+        }
+      ],
+      "gram_lower_eigenvalues": {
+        "gram": -8.940422490080006e-17,
+        "positive_transfer": -2.649008831311679e-16,
+        "contractive_form": -9.056055545347078e-17,
+        "contractive_norm": -2.0452708417126582e-16
+      },
+      "maximum_distinct_charge_overlap": 1.5564077880434008e-16,
+      "temporal_charge_matrices": 2
+    },
+    {
+      "N": 3,
+      "beta": 0.6,
+      "dimension": 81,
+      "histories": [
+        {
+          "word": 0,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 1.0000000000000022,
+          "inverse_moment": 2.09642106244822,
+          "K_final_insertion": 2.1287729003168256,
+          "temporal_link_discrepancy": 0.0,
+          "wrong_neutral_projector_error": 0.0
+        },
+        {
+          "word": 1,
+          "final_insertion": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "charge": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.24667123817934788,
+          "inverse_moment": 4.437398310613357,
+          "K_final_insertion": 20.53606979625783,
+          "temporal_link_discrepancy": 6.770408525168469e-17,
+          "wrong_neutral_projector_error": 0.49666008313468063
+        },
+        {
+          "word": 2,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.26789002569302256,
+          "inverse_moment": 0.5601436034304454,
+          "K_final_insertion": 2.1287729003168256,
+          "temporal_link_discrepancy": 3.4711406044596416e-16,
+          "wrong_neutral_projector_error": 1.7682284908169067e-15
+        },
+        {
+          "word": 3,
+          "final_insertion": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.025026347420234508,
+          "inverse_moment": 0.06004969550560696,
+          "K_final_insertion": 1.0,
+          "temporal_link_discrepancy": 3.576224061345498e-17,
+          "wrong_neutral_projector_error": 0.15819717892628335
+        },
+        {
+          "word": 4,
+          "final_insertion": [
+            -1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.24667123817934788,
+          "inverse_moment": 0.5168920701957236,
+          "K_final_insertion": 2.1287729003168256,
+          "temporal_link_discrepancy": 7.546360613537825e-17,
+          "wrong_neutral_projector_error": 0.4966600831346807
+        },
+        {
+          "word": 5,
+          "final_insertion": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 1.000000000000002,
+          "inverse_moment": 1.0000000000000027,
+          "K_final_insertion": 1.0,
+          "temporal_link_discrepancy": 0.0,
+          "wrong_neutral_projector_error": 0.0
+        },
+        {
+          "word": 6,
+          "final_insertion": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 0.26916697387127747,
+          "inverse_moment": 4.908026339157077,
+          "K_final_insertion": 20.53606979625783,
+          "temporal_link_discrepancy": 1.2553169746873996e-16,
+          "wrong_neutral_projector_error": 5.452500693996361e-16
+        },
+        {
+          "word": 7,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 0.2466712381793479,
+          "inverse_moment": 0.2797414703340346,
+          "K_final_insertion": 2.1287729003168256,
+          "temporal_link_discrepancy": 7.818218345329569e-17,
+          "wrong_neutral_projector_error": 0.4966600831346807
+        },
+        {
+          "word": 8,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "norm_squared": 0.06134269778064298,
+          "inverse_moment": 0.1300224909535831,
+          "K_final_insertion": 2.1287729003168256,
+          "temporal_link_discrepancy": 1.3125896466967512e-16,
+          "wrong_neutral_projector_error": 0.2476745804087351
+        }
+      ],
+      "gram_lower_eigenvalues": {
+        "gram": -7.832851445962706e-16,
+        "positive_transfer": -3.799634265228823e-17,
+        "contractive_form": -1.3537914624043536e-16,
+        "contractive_norm": -9.532248952270624e-16
+      },
+      "maximum_distinct_charge_overlap": 6.331282834391547e-16,
+      "temporal_charge_matrices": 3
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "dimension": 256,
+      "histories": [
+        {
+          "word": 0,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.9999999999999993,
+          "inverse_moment": 1.8586608164062934,
+          "K_final_insertion": 3.2823790175784278,
+          "temporal_link_discrepancy": 0.0,
+          "wrong_neutral_projector_error": 0.0
+        },
+        {
+          "word": 1,
+          "final_insertion": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "charge": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.3237216638950946,
+          "inverse_moment": 10.825209449889293,
+          "K_final_insertion": 116.07933490020741,
+          "temporal_link_discrepancy": 8.326693865739183e-17,
+          "wrong_neutral_projector_error": 0.5689654329527364
+        },
+        {
+          "word": 2,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.3492660828325243,
+          "inverse_moment": 0.6535262134058609,
+          "K_final_insertion": 3.2823790175784278,
+          "temporal_link_discrepancy": 4.1920778073434006e-17,
+          "wrong_neutral_projector_error": 3.8148707634240766e-16
+        },
+        {
+          "word": 3,
+          "final_insertion": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.04614773647359345,
+          "inverse_moment": 0.09544587937743994,
+          "K_final_insertion": 1.0,
+          "temporal_link_discrepancy": 4.229814605583729e-17,
+          "wrong_neutral_projector_error": 0.214820242234277
+        },
+        {
+          "word": 4,
+          "final_insertion": [
+            -1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "norm_squared": 0.044434279028103596,
+          "inverse_moment": 0.1454530499365503,
+          "K_final_insertion": 3.2823790175784278,
+          "temporal_link_discrepancy": 5.700289747495073e-17,
+          "wrong_neutral_projector_error": 0.21079439989739662
+        },
+        {
+          "word": 5,
+          "final_insertion": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 0.9999999999999999,
+          "inverse_moment": 0.9999999999999997,
+          "K_final_insertion": 1.0,
+          "temporal_link_discrepancy": 0.0,
+          "wrong_neutral_projector_error": 0.0
+        },
+        {
+          "word": 6,
+          "final_insertion": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 0.3515030456565381,
+          "inverse_moment": 3.995060164661391,
+          "K_final_insertion": 116.07933490020741,
+          "temporal_link_discrepancy": 4.2577831273833376e-17,
+          "wrong_neutral_projector_error": 3.6061319563526157e-16
+        },
+        {
+          "word": 7,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "norm_squared": 0.3237216638950948,
+          "inverse_moment": 0.3662018589773426,
+          "K_final_insertion": 3.2823790175784278,
+          "temporal_link_discrepancy": 8.326693865739183e-17,
+          "wrong_neutral_projector_error": 0.5689654329527365
+        },
+        {
+          "word": 8,
+          "final_insertion": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            2,
+            2,
+            0,
+            0
+          ],
+          "norm_squared": 0.10600675685185848,
+          "inverse_moment": 0.573292045376975,
+          "K_final_insertion": 3.2823790175784278,
+          "temporal_link_discrepancy": 4.911416311591839e-17,
+          "wrong_neutral_projector_error": 0.3255867885093903
+        }
+      ],
+      "gram_lower_eigenvalues": {
+        "gram": 8.685452812437339e-16,
+        "positive_transfer": -1.1809369277399904e-16,
+        "contractive_form": -6.107973236892158e-17,
+        "contractive_norm": 5.225851580358055e-16
+      },
+      "maximum_distinct_charge_overlap": 2.760489335857313e-16,
+      "temporal_charge_matrices": 4
+    }
+  ],
+  "limits": "Finite words and explicit temporal sums; no finite check proves cofinal limits, time-zero cyclicity or equality of larger-sector bottoms."
+}

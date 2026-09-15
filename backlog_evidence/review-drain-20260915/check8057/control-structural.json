@@ -1,0 +1,17 @@
+{
+  "scope": "Independent n4 complex dyadic weighted-SVD identity with actual wrong-conjugation alternative; L6 full incidence; rational constants. No canonical imports or physical state solve",
+  "svd_defect": "(53+0j)",
+  "wrong_conjugation": "(39+0j)",
+  "L": 6,
+  "pairs": [
+    2592,
+    648
+  ],
+  "all_faces_counts": [
+    24,
+    8
+  ],
+  "thermal_margin": "4013/128000",
+  "ground_kappa_over_h": "1161/204800",
+  "seconds": 0.006402749917469919
+}

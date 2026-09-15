@@ -1,0 +1,5 @@
+{
+  "url": "https://arxiv.org/html/cond-mat/9604043",
+  "local_capture_error": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'))",
+  "scope_read": "actual prior web tool read; retrieval hash unavailable"
+}

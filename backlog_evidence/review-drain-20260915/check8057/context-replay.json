@@ -1,0 +1,86 @@
+[
+  {
+    "path": "docs/audit/data/axiom_premise_nodes.json",
+    "old_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "current_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "unchanged": true
+  },
+  {
+    "path": "docs/audit/data/doc_authority_registry.json",
+    "old_sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    "current_sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    "unchanged": true
+  },
+  {
+    "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+    "old_sha256": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+    "current_sha256": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+    "unchanged": true
+  },
+  {
+    "path": "docs/audit/scripts/build_citation_graph.py",
+    "old_sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "current_sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "unchanged": true
+  },
+  {
+    "path": "scripts/audit_packet_script_deps.py",
+    "old_sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "current_sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "unchanged": true
+  },
+  {
+    "path": "scripts/runner_cache.py",
+    "old_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "current_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "unchanged": true
+  },
+  {
+    "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "old_sha256": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187",
+    "current_sha256": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187",
+    "unchanged": true
+  },
+  {
+    "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "old_sha256": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "current_sha256": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "unchanged": true
+  },
+  {
+    "path": "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+    "old_sha256": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "current_sha256": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "unchanged": true
+  },
+  {
+    "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "old_sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "current_sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "unchanged": true
+  },
+  {
+    "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+    "old_sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "current_sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "unchanged": true
+  },
+  {
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "old_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "current_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "unchanged": true
+  },
+  {
+    "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "old_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "current_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "unchanged": true
+  },
+  {
+    "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+    "old_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "current_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "unchanged": true
+  }
+]

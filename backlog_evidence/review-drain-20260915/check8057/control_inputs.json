@@ -1,0 +1,52 @@
+{
+  "scope": "Independent exact signed-face orbit census and higher-order rational Machin/sine enclosures; no canonical generator import or physical grid run",
+  "classes": {
+    "0": [
+      0
+    ],
+    "1": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      18,
+      19,
+      21,
+      24,
+      25
+    ],
+    "3": [
+      3,
+      7,
+      9,
+      11,
+      13,
+      14,
+      22,
+      23,
+      26,
+      28,
+      29,
+      31
+    ],
+    "5": [
+      5,
+      27,
+      30
+    ],
+    "10": [
+      10,
+      17,
+      20
+    ],
+    "15": [
+      15
+    ]
+  },
+  "trig_intervals_verified": 32,
+  "pi_verified": true,
+  "seconds": 7.639334375038743
+}

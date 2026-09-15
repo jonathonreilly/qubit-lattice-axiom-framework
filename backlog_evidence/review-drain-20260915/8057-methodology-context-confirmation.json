@@ -1,0 +1,31 @@
+{
+  "scope": "Original-reviewer affected-method confirmation; full three-resource supporting-proof diff read. No science/source/input changes or execution restamp.",
+  "base": "af08577ac4be73c110d82ecebd189e15bc7ed4a6",
+  "tree": "33e7fc46bfe14ad4525b41380bc330fff3e0228f",
+  "resources": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56",
+      "landed_installed_checkout_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671",
+      "landed_installed_checkout_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c",
+      "landed_installed_checkout_equal": true
+    }
+  ],
+  "all412_source_and45_scientific_input_hashes_unchanged": true,
+  "prior_schema_hold": {
+    "path": "/private/tmp/review-drain-20260915/8057-preexecution-schema-hold.json",
+    "sha256": "2d0c3c9aa8f1cc7242c3c5af81b5c84ba1261944b57905e98f060c5d724aabc4"
+  },
+  "mechanical_fixture_result": {
+    "path": "/private/tmp/review-drain-20260915/receipt-support-actual8056-regression-corrected.json",
+    "sha256": "dd2d913612ff25064e44f458d3aa7599762888c60b0dd0ad144333b085468146"
+  }
+}

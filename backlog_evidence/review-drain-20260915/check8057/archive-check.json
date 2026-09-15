@@ -1,0 +1,26 @@
+[
+  {
+    "pr": 8054,
+    "original_paths": 88,
+    "manifest_sha256": "e9071a38c52953f1f43986ef5800a3e10db2c85ee5c5f6f515bde1d29b0925be",
+    "all_original_modes_blobs_and_raw_bytes_exact": true
+  },
+  {
+    "pr": 8055,
+    "original_paths": 65,
+    "manifest_sha256": "4f36392bfadc23f90b81cd1e829b5429ba61ce8b5fb0a15cfc732e90d8238b8e",
+    "all_original_modes_blobs_and_raw_bytes_exact": true
+  },
+  {
+    "pr": 8056,
+    "original_paths": 160,
+    "manifest_sha256": "cc0ee6967dcae1b798ac9073ef51681ac3824c03d97daa083f261ff3a5b178c9",
+    "all_original_modes_blobs_and_raw_bytes_exact": true
+  },
+  {
+    "pr": 8057,
+    "original_paths": 106,
+    "manifest_sha256": "037ad769fbadbe8cca369a0f308e7f726a03ca7e72acfa20f87cc06765be2435",
+    "all_original_modes_blobs_and_raw_bytes_exact": true
+  }
+]

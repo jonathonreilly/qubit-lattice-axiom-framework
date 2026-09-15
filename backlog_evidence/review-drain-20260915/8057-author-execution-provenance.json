@@ -1,0 +1,31 @@
+{
+  "capture_script": "/private/tmp/review-drain-20260915/8057-author-newmethod-capture.py",
+  "capture_script_sha256": "e6aaa81a20686b336b082121f2747fbcd97c9d63913a5c7a444e758427135d87",
+  "preexecution_freeze": "/private/tmp/review-drain-20260915/8057-author-newmethod-preexecution.json",
+  "preexecution_freeze_sha256": "b7a9b5358206b9a3c1d8de3856fd2994c746a3f1f241ffeaac8b2a89f9e898b9",
+  "final_freeze": "/private/tmp/review-drain-20260915/8057-author-final-freeze.json",
+  "final_freeze_sha256": "dad7b8685ab885b8361a4f8a641b5fb63f177f73f713bfe365be98434425fb43",
+  "actual_captures": [
+    {
+      "pr": 8054,
+      "receipt": "/private/tmp/review-drain-20260915/8054-group-author-final-execution.json",
+      "sha256": "60bec93fccba77d2ebcf6db4268fac9e76d693f8f4d60a284158639436f2f22e"
+    },
+    {
+      "pr": 8055,
+      "receipt": "/private/tmp/review-drain-20260915/8055-group-author-final-execution.json",
+      "sha256": "4755373bd60e86cf110aaea5170a35d9eb3a2f224af4765601c943c3bf95aef9"
+    },
+    {
+      "pr": 8056,
+      "receipt": "/private/tmp/review-drain-20260915/8056-group-author-final-execution.json",
+      "sha256": "c457d2761fd49ffcb4a17e89cf325442806262bd0c558482691c660bb6317cd3"
+    },
+    {
+      "pr": 8057,
+      "receipt": "/private/tmp/review-drain-20260915/8057-group-author-final-execution.json",
+      "sha256": "7f5a07fe1d029b7c73ac4495ba19ce246e2d280ca6e6fb877589ac0ed7f22f9a"
+    }
+  ],
+  "shared_final_cache_check": "not invoked; reserved root"
+}

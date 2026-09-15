@@ -1,0 +1,72 @@
+{
+  "scope": "Independent Fraction pair arithmetic, direct bit-action D16, six first-node certificates; no canonical helper imports or eigensolve",
+  "cases": [
+    {
+      "rep": 0,
+      "job": 0,
+      "index": [
+        0,
+        0,
+        0
+      ],
+      "exact_residual_and_gram_bounds": true,
+      "all16_root_enclosures": true
+    },
+    {
+      "rep": 1,
+      "job": 4,
+      "index": [
+        0,
+        0,
+        0
+      ],
+      "exact_residual_and_gram_bounds": true,
+      "all16_root_enclosures": true
+    },
+    {
+      "rep": 3,
+      "job": 8,
+      "index": [
+        0,
+        0,
+        0
+      ],
+      "exact_residual_and_gram_bounds": true,
+      "all16_root_enclosures": true
+    },
+    {
+      "rep": 5,
+      "job": 12,
+      "index": [
+        0,
+        0,
+        0
+      ],
+      "exact_residual_and_gram_bounds": true,
+      "all16_root_enclosures": true
+    },
+    {
+      "rep": 10,
+      "job": 16,
+      "index": [
+        0,
+        0,
+        0
+      ],
+      "exact_residual_and_gram_bounds": true,
+      "all16_root_enclosures": true
+    },
+    {
+      "rep": 15,
+      "job": 20,
+      "index": [
+        0,
+        0,
+        0
+      ],
+      "exact_residual_and_gram_bounds": true,
+      "all16_root_enclosures": true
+    }
+  ],
+  "seconds": 0.3489284160314128
+}

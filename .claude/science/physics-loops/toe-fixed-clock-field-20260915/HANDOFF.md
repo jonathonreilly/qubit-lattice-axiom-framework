@@ -488,3 +488,22 @@ hops and94 gated-ring controls. A separate weighted8-vertex graph checks
 exact curvature independently through eigenvalue perturbation and a
 network minimization; it is not the native ground spectrum. Broad
 immobility/axiom no-go FAIL; N1-N8 review committed. Continue personally.
+
+## Block9: full polarized word sector and a flat essential threshold
+
+Finite electric changes from E=+1 with one charge pair are exactly monotone
+words on three coordinate letters, anchored at the negative charge. Native
+phases give two-ended creation/annihilation and rings give adjacent swaps.
+The entire sector has infimum2U-4sqrt(3)|t|. A sum-of-isometry-defects
+identity excludes an eigenvector there. A complex horizontal slow texture
+proves that same essential threshold in EVERY momentum fiber for every
+fixed uniform J>=0, with explicit O((J+|t|)/N) trial error.
+
+This is one supplied boundary representation, not a selected vacuum. The
+periodic pair-energy upper bound lies strictly below it. Local-source
+spectral weights may differ and are the next task. Native checks240states,
+408ringfaces and tensor/matrix challenges pass. The initial BLAS radial
+dot-product failure is frozen; compensated summation fixes it without a
+tolerance change. Personal N1-N8 review rejects all-vacuum/axiom negatives.
+The2012 quantum-string primary paper was read fully and credited; the
+word idea and shift spectroscopy are not claimed as novel mathematics.

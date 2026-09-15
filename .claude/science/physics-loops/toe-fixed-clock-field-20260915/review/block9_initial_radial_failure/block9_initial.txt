@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.py", line 316, in <module>
+    require(abs(np.vdot(radial, A0 @ radial).real - 4 * math.sqrt(3) * math.cos(math.pi / (N + 1))) < 1e-13,
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            'radial finite word hopping expectation')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.py", line 22, in require
+    raise AssertionError(label)
+AssertionError: radial finite word hopping expectation

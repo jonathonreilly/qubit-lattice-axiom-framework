@@ -9,10 +9,10 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 8
-current_target: native twist response and ground-state winding conductance
+block: 9
+current_target: exact polarized charged sector and flat momentum threshold
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T20:37:51.536263+00:00'
-next_step: examine an actual infinite-volume charged boundary sector and its phase/transport
-  dependence
+last_checkpoint_utc: '2026-09-15T20:59:16.560124+00:00'
+next_step: compute actual local-source spectral measures; inspect newly landed native
+  continuum sources

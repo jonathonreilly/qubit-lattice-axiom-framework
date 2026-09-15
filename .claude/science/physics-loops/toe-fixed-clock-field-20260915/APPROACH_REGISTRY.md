@@ -108,3 +108,11 @@ is a polarization coboundary, species sum has an explicit winding cycle.
 Exact finite curvature equals a ground-state weighted conductance and
 an auxiliary winding-variance rate. Thermodynamic weights and physical
 particle identification remain open. This is not an axiom wall.
+
+## Block9 — boundary representation and complex word textures
+
+Resolved full polarized-sector classification, exact native operator map,
+and all-momentum essential threshold at nonzero ring coupling. Positive
+ring energy can be made small while coherently matching both complex
+endpoint vectors. Next distinguish the full spectrum from the cyclic
+spectral measure of an explicitly local phase-adapted pair source.

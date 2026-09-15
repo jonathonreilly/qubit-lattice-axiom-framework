@@ -23,3 +23,7 @@ notes. Investigate actual unitary charge motion and a momentum-resolved
 charged-sector source bound for that supplied Hamiltonian. These are
 stronger dynamical questions than nonzero hopping support, while long-time
 transport, photon background and native action selection remain separate.
+
+Block9 priority: derive local-source response within the exact word carrier,
+then compare the actual assumptions of newly landed charged/infrared sources.
+An entire-sector spectral floor need not equal a measurable source threshold.

@@ -1,0 +1,33 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T20:59:16.560124+00:00",
+  "latest_main_seen": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+  "checked": [
+    "complete finite-flow classification and absence of cycles",
+    "all native word moves and finite-embedding phase argument",
+    "self-adjoint form domain and pure creation isometries",
+    "marker reduction only used at J=0",
+    "complex horizontal overlap estimate including corner",
+    "positive-ring slow-texture energy bound and weak escape",
+    "finite-rank spectral criterion for essential threshold",
+    "periodic energy comparison not local weak-limit conclusion",
+    "actual native and separate tensor controls",
+    "frozen numeric failure unchanged tolerance"
+  ],
+  "limits": [
+    "specified polarized representation only",
+    "no physical vacuum selected",
+    "no observable spectral theorem yet",
+    "no independent review"
+  ],
+  "inputs": {
+    "notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md": "feebc8e55721f08825e05cad1e6e243e81fdb9f049c1d18e7422707773b091c5",
+    "notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md": "4589fa8ef04027a819dd1322258a85e1065ca352bc34e0cc8f812892e7e8b57d",
+    "evidence/block9_polarized_word_check.txt": "94a0bed419fcc12bd2412b401770e7fbee2d02e0bb6dbe1be914a15b6feaa024",
+    "evidence/block9_polarized_word_check.json": "94a0bed419fcc12bd2412b401770e7fbee2d02e0bb6dbe1be914a15b6feaa024",
+    "evidence/block9_polarized_word_check.py": "54909232c5038ec45348ea64b098754901c4bba898193c2da45206fb40b2ca4c",
+    "review/block9_initial_radial_failure/block9_initial.txt": "b2cd32bf8f13a7e9c4473c87203614d8c52b6595f8c6226ab45f8cdc20ea3c7d",
+    "review/block9_initial_radial_failure/block9_initial.py": "625dbf95e5671328bf6a0f242134af361334fb43c32b738940b7a8b12b5a6c97",
+    "review/block9_initial_radial_failure/diagnosis.json": "48e03d0e541ce7e88e0393c72ee8b1e3f6eb285653ebd9608b31905ef2223bff"
+  }
+}

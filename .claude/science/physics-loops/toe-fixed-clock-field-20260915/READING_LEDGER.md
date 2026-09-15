@@ -319,3 +319,14 @@ search excerpts only, no long-range-order result imported.
 The periodic finite-clock covariance source sections1-10 through the
 opening of11 were reread: its shifted-theta curvature bound is one-sided;
 positive-mixture variance prevents a direct higher-cumulant inference.
+
+Block9: Wan-Tchernyshyov2012 arXiv1201.5314v3 HTML main text and
+Appendices A-C read fully (lines27-247), including explicit effective
+operators and the source-sector restriction. Primary URL:
+https://arxiv.org/html/1201.5314v3 . No theorem imported.
+The native phase and stability parents remain the same as Blocks7-8.
+Latest origin/main is083a58b4e7faca5839a7b31fab553f6fa1f2c254; immutable
+fetch completed. It adds six native/charged/infrared source notes and
+archival evidence. Initial combined diff was truncated and is NOT a full
+review. Infinite-star node note lines1-120 read; other new sources await
+separate reading. None changes the four Block9 input notes or axioms.

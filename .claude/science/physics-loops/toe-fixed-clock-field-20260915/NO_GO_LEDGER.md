@@ -39,3 +39,8 @@ Block8: opposite species twist is exactly removable by actual electric
 polarization. This is one finite operator identity, not a model mobility
 wall. Positive sum twist and real-time motion survive. Broad no-go FAIL.
 See notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md.
+
+Block9 excludes an eigenvector only at the flat threshold of the specified
+polarized finite-excitation sector. The all-vacuum/all-particle conclusion
+FAILS. Periodic energies differ; source-selected spectral subspaces remain
+unclassified. See notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md.

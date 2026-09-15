@@ -151,3 +151,23 @@ The maximum central derivative error is2.18e-8 at step.001 and decreases
 quadratically. Full positive constitutive tensors challenge the quadratic
 response and polarization roots. Personal N1-N8 and vocabulary review
 complete; no independent audit. Next target is the state-level cutoff gap.
+
+
+## Block12 — actual ground states and removal of the link cutoff
+
+For the supplied charged four-orbital Hamiltonian, the exact onsite Fock
+minimum has N=2. Its product with E=0 is physical and gives a variational
+energy bound. Translation-averaged finite-link ground states therefore
+satisfy a local electric second-moment bound independent of volume and S.
+Local projections give trace-norm compactness without global postselection.
+Every joint L,S->infinity sequence has locally normal physical subsequential
+limits. Both an exact compact-core ground inequality and a spectral argument
+show those limits are rotor ground states. No spectral gap is assumed.
+
+The passage uses the finite-time parent's locality plus the derived state
+tail, with care about unbounded onsite phases and off-cutoff Hpsi. It does
+not identify a unique state, pure phase or photon response, and it does not
+prove a fixed-S phase. The charged two-cell loop is explicitly a noncubic
+fixture; independent ambient/direct constructions agree. Actual four-edge
+plaquette checks also pass. Most numerical dynamics bounds are trivial;
+the volume-independent proof is analytic. No independent audit.

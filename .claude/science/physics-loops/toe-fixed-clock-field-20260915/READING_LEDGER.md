@@ -363,3 +363,14 @@ slow logarithmic running are credited. Native coefficients are taken from
 the fully read current source and checked algebraically here. No current
 phenomenological bound is imported. Full charged finite-link source was
 reread before selecting a state-level truncation target.
+
+Block12: Tong et al.2110.06942v2 introduction and Appendices H and I read
+in full from the primary PDF https://arxiv.org/pdf/2110.06942 . Theorem12
+uses spectral isolation for its stronger eigenstate tail; no such theorem
+is imported for a gapless limit. Source comparison and own core/spectral
+proof are explicit. Main083 docs search found no matching ground-cutoff
+tightness note beyond the finite-link parent; this is not exhaustive novelty.
+Next-route searches located short-range Weyl RG (1405.6844, opened but not
+yet read fully), the2022 Giuliani QED4 talk abstract (read), Falconi2023
+slides (located), and Dimock1988/Dimock-Hurd1992 massive-fermion gauge RG
+abstracts (read). These are routing information, not imported phase proofs.

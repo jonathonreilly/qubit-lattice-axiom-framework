@@ -1,0 +1,29 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T22:02:10.393441+00:00",
+  "latest_main_seen": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+  "checked": [
+    "full four-dimensional quadratic parameter expansion",
+    "independent unshifted angular moments through degree six",
+    "temporal subtraction and scalar exact comparator",
+    "photon metric extraction separated from scalar normalization and nonmetric part",
+    "correct Weyl multiplicity in quadratic mean flow",
+    "N2 resonance and N3 source cancellation",
+    "initial second-order mismatch not silently set to zero in native match",
+    "common drift does not modify second-order photon variance",
+    "no uniform infinite-L remainder claimed"
+  ],
+  "limits": [
+    "one-loop and second-order anisotropy expansion",
+    "supplied Hall-free massless phase",
+    "no all-orders or nonperturbative metric attraction",
+    "same author, no independent audit"
+  ],
+  "inputs": {
+    "notes/BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md": "3158c18451fef988b12c5ff6e9d463ee895748c8e67238626d24ede9df48bbe2",
+    "notes/BLOCK13_ROUTE_AND_NO_GO_REVIEW.md": "d9f7562e83fd8d71bb0d8ca8bdbbb36dd80e7852527daae635ea2afcc1fe7539",
+    "evidence/block13_quadratic_coframe_check.py": "67358d628834300d42cc1ff99b4f8431ac149ddde41142f5ede52c880540702e",
+    "evidence/block13_quadratic_coframe_check.json": "fdbd2d86a58a1ee82f621dae96b317bd867b2c0e234a45fb5f377d4edbd20be8",
+    "evidence/block13_quadratic_coframe_check.txt": "fdbd2d86a58a1ee82f621dae96b317bd867b2c0e234a45fb5f377d4edbd20be8"
+  }
+}

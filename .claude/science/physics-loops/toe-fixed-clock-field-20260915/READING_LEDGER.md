@@ -374,3 +374,13 @@ Next-route searches located short-range Weyl RG (1405.6844, opened but not
 yet read fully), the2022 Giuliani QED4 talk abstract (read), Falconi2023
 slides (located), and Dimock1988/Dimock-Hurd1992 massive-fermion gauge RG
 abstracts (read). These are routing information, not imported phase proofs.
+
+Block13: current Hall/cone source sections12-24 and native matching reread.
+Falconi2023 primary slides https://www.mfmat.org/other/lqedslides.pdf were
+read in full, all30pages. They explicitly distinguish all-order truncated
+perturbation from a nonperturbative massless-IR construction; anisotropic
+lattices are listed as further work. No theorem is imported. Mastropietro
+1405.6844 primary PDF opening through section1.3 (pages1-7 opening) read;
+its interaction is exponentially decaying density-density, not a massless
+photon. Remaining pages are not yet read. Vacuum Cherenkov/photon-decay
+primary sources0809.3217 and0809.3442 located; abstracts only so far.

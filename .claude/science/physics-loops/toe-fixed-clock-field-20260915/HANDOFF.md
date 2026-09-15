@@ -580,3 +580,22 @@ prove a fixed-S phase. The charged two-cell loop is explicitly a noncubic
 fixture; independent ambient/direct constructions agree. Actual four-edge
 plaquette checks also pass. Most numerical dynamics bounds are trivial;
 the volume-independent proof is analytic. No independent audit.
+
+
+## Block13 — quadratic mean drift and a quartet resonance
+
+Expanding the full four-dimensional coframe loop integral and independently
+using unshifted S3 moments gives the time-normalized quadratic self-energy
+-2C²+(tr C)C/3 in radial units. Trace-free contrasts source the matter mean
+with coefficient-3/2 and the photon metric with coefficient-1/2 in their
+respective normalized equations. For the actual N=2 quartet,
+R(z)=R(1)/z²-(V/4)log(z)/z² and C_*(z)=C_*(1)-(5/16)V(1-z^-2),
+where V is the initial contrast-square average. Thus the linear conserved
+mean is corrected, while the relative mean still decays in this truncation.
+The actual native V=d²diag(1,0,1) fixes the logarithmic source.
+
+Full positive matrix quadrature, the exact scalar comparator, symbolic
+ODEs and direct constitutive history agree. Prior quadratic polarization
+is unchanged. This is still a formal supplied phase with no uniform
+higher-order remainder. The next useful check is on-shell decay: real
+velocity running alone does not establish particle stability.
